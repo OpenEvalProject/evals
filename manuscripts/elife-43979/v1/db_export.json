@@ -1,0 +1,2376 @@
+{
+  "submission": {
+    "id": "5e55ebb9-6a01-4342-a3b5-464e870597b8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:01:35.761562Z",
+    "updated_at": "2025-12-02T09:01:35.761562Z"
+  },
+  "content": [
+    {
+      "id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "submission_id": "5e55ebb9-6a01-4342-a3b5-464e870597b8",
+      "content_type": "manuscript",
+      "content_text": "# Data science for the scientific life cycle\n\n## Authors\n\n- Daphne Ezer<sup>1</sup> ([ORCID: 0000-0002-1685-6909](https://orcid.org/0000-0002-1685-6909)) \u2020\n- Kirstie Whitaker<sup>1</sup> ([ORCID: 0000-0001-8498-4059](https://orcid.org/0000-0001-8498-4059))\n\n### Affiliations\n\n1. Alan Turing Institute London United Kingdom\n2. Department of Statistics University of Warwick Coventry United Kingdom\n3. Department of Psychiatry University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nData science can be incorporated into every stage of a scientific study. Here we describe how data science can be used to generate hypotheses, to design experiments, to perform experiments, and to analyse data. We also present our vision for how data science techniques will be an integral part of the laboratory of the future.\n\n## Introduction\n\nA key tenet of the scientific method is that we learn from previous work. In principle we observe something about the world and generate a hypothesis. We then design an experiment to test that hypothesis, set up the experiment, collect the data and analyse the results. And when we report our results and interpretation of them in a paper, we make it possible for other researchers to build on our work.\n\nIn practice, there are impediments at every step of the process. In particular, our work depends on published research that often does not contain all the information required to reproduce what was reported. There are too many possible experimental parameters to test under our time and budget constraints, so we make decisions that affect how we interpret the outcomes of our experiments. As researchers, we should not be complacent about these obstacles: rather, we should always look towards new technologies, such as data science, to help us improve the quality and efficiency of scientific research.\n\nData science could easily be dismissed as a simple rebranding of \"science\" \u2013 after all, nearly all scientists analyse data in some form. An alternative definition of a data scientist is someone who develops new computational or statistical analysis techniques that can easily be adapted to a wide range of scenarios, or who can apply these techniques to answer a specific scientific question. While there is no clear dividing line between data science and statistics, data science generally involves larger datasets. Moreover, data scientists often think in terms of training predictive models that can be applied to other datasets, rather than limiting the analysis to an existing dataset.\n\nData science emerged as a discipline largely because the internet led to the creation of incredibly large datasets (such as ImageNet, a database of 14 million annotated images; Krizhevsky et al., 2012). The availability of these datasets enabled researchers to apply a variety of machine learning algorithms which, in turn, led to the development of new techniques for analysing large datasets. One area in which progress has been rapid is the automated annotation and interpretation of images and texts on the internet, and these techniques are now being applied to other data-rich domains, including genetics and genomics (Libbrecht and Noble, 2015) and the study of gravitational waves (Abbott et al., 2016).\n\nIt is clear that data science can inform the analysis of an experiment, either to test a specific hypothesis or to make sense of large datasets that have been collected without a specific hypothesis in mind. What is less obvious, albeit equally important, is how these techniques can improve other aspects of the scientific method, such as the generation of hypotheses and the design of experiments.\n\nData science is an inherently interdisciplinary approach to science. New experimental techniques have revolutionised biology over the years, from DNA sequencing and microarrays in the past to CRISPR and cryo-EM more recently. Data science differs in that it is not a single technique, but rather a framework for solving a whole range of problems. The potential for data science to answer questions in a range of different disciplines is what excites so many researchers. That said, however, there are social challenges that cannot be fixed with a technical solution, and it is all too easy for expertise to be \"lost in translation\" when people from different academic backgrounds come together.\n\nIn October 2018, we brought together statisticians, experimental researchers, and social scientists who study the behaviour of academics in the lab (and in the wild) at a workshop at the Alan Turing Institute in London to discuss how we can harness the power of data science to make each stage of the scientific life cycle more efficient and effective. Here we summarise the key points that emerged from the workshop, and propose a framework for integrating data science techniques into every part of the research process (Figure 1). Statistical methods can optimise the power of an experiment by selecting which observations should be collected. Robotics and software pipelines can automate data collection and analysis, and incorporate machine learning analyses to adaptively update the experimental design based on incoming data. And the traditional output of research, a static PDF manuscript, can be enhanced to include analysis code and well-documented datasets to make the next iteration of the cycle faster and more efficient. We also highlight several of the challenges, both technical and social, that must be overcome to translate theory into practice, and share our vision for the laboratory of the future.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43979/elife-43979-fig1-v1.jpg)\n\n**Figure 1.:** Data science can be used to generate new hypotheses, optimally design which observations should be collected, automate and provide iterative feedback on this design as data are being observed, reproducibly analyse the information, and share all research outputs in a way that is findable, accessible, interoperable and reusable (FAIR).We propose a virtuous cycle through which experiments can effectively and efficiently \"stand on the shoulders\" of previous work in order to generate new scientific insights.\n\n## Data science for planning experiments\n\nHypothesis-driven research usually requires a scientist to change an independent variable and measure a dependent variable. However, there are often too many parameters to take account of. In plant science, for instance, these parameters might include temperature, exposure to light, access to water and nutrients, humidity and so on, and the plant might respond to a change in each of these in a context-dependent way.\n\nData scientists interested in designing optimal experiments must find ways of transforming a scientific question into an optimisation problem. For instance, let us say that a scientist wants to fit a regression model of how temperature and light exposure influence wheat growth. Initially they might measure the height of the wheat at a number of combinations of temperature and light exposure. Then, the scientist could ask: what other combinations of temperature and light exposure should I grow the wheat at in order to improve my ability to predict wheat growth, considering the cost and time constraints of the project?\n\nAt the workshop Stefanie Biedermann (University of Southampton) discussed how to transform a wide range of experimental design questions into optimisation problems. She and her colleagues have applied these methods to find optimal ways of selecting parameters for studies of enzyme kinetics (Dette and Biedermann, 2003) and medical applications (Tompsett et al., 2018). Other researchers have used data science to increase the production of a drug while reducing unwanted by-products (Overstall et al., 2018). The process iteratively builds on small number of initial experiments that are conducted with different choices of experimental parameters (such as reagent concentrations, temperature or timing): new experimental parameters are then suggested until the optimal set are identified.\n\nOptimal experimental design can also help researchers fit parameters of dynamical models, which can help them develop a mechanistic understanding of biological systems. Ozgur Akman (University of Exeter) focuses on dynamic models that can explain how gene expression changes over time and where the model parameters represent molecular properties, such as the transcription rates or mRNA degradation rates. As an example he explained how he had used this approach to find the optimal parameters for a mathematical model for the circadian clock (Aitken and Akman, 2013). Akman also described how it is possible to search for possible gene regulatory networks that can explain existing experimental data (Doherty, 2017), and then select new experiments to help distinguish between these alternative hypotheses (Sverchkov and Craven, 2017). For instance, the algorithm might suggest performing a certain gene knockout experiment, followed by RNA-seq, to gain more information about the network structure.\n\nA clear message from the workshop was that statisticians need to be involved in the experimental design process as early as possible, rather than being asked to analyze the data at the end of a project. Involving statisticians before data collection makes it more likely the scientist will be able to answer the research questions they are interested in. Another clear message was that the data, software, infrastructure and the protocols generated during a research project were just as important as the results and interpretations that constitute a scientific paper.\n\n## Data science for performing experiments\n\nIn order to effectively plan an experiment, it is necessary to have some preliminary data as a starting point. Moreover, ensuring that the data collected during a particular experiment is used to inform the planning process for future experiments will make the whole process more efficient. For standard molecular biology experiments, this kind of feedback loop can be achieved through laboratory automation.\n\nRoss King (University of Manchester) and co-workers have developed the first robot scientists \u2013 laboratory robots that physically perform experiments and use machine learning to generate hypothesis, plan experiments, and perform deductive reasoning to come to scientific conclusions. The first of these robots, Adam, successfully identified the yeast genes encoding orphan enzymes (King et al., 2009), and the second, Eve, intelligently screened drug targets for neglected tropical diseases (Williams et al., 2015). King is convinced that robot scientists improves research productivity, and also helps scientists to develop a better understanding of science as a process (King et al., 2018). For instance, an important step towards building these robotic scientists was the development of a formal language for describing scientific discoveries. Humans might enjoy reading about scientific discoveries that are described in English or some other human language, but such languages are subject to ambiguity and exaggeration. However, translating the deductive logic of research projects into the formal languages of \"robotic scientists\" should lead to a more precise description of our scientific conclusions (Sparkes et al., 2010).\n\nLet\u00a0us imagine that a research team observe that plants with a gene knockout are shorter than wild type plants. Their written report of the experiment will state that this gene knockout results in shorter plants. They are likely to leave unsaid the caveat that this result was only observed under their experimental set-up and, therefore, that this may not be the case under all possible experimental parameters. The mutant might be taller than a wild type plant under certain lighting conditions or temperatures that were not tested in the original study. In the future, researchers may be able to write their research outcomes in an unambiguous way so that it is clear that the evidence came from a very specific experimental set-up. The work done to communicate these conditions in a computer-readable format will benefit the human scientists who extend and replicate the original work.\n\nEven though laboratory automation technology has existed for a number of years, it has yet to be widely incorporated into academic research environments. Laboratory automation is full of complex hardware that is difficult to use, but a few start-ups are beginning to build tools to help researchers communicate with their laboratory robots more effectively. Vishal Sanchania (Synthace) discussed how their software tool Antha enables scientists to easily develop workflows for controlling laboratory automation. Furthermore, these workflows can be iterative: that is, data collected by the laboratory robots can be used within the workflow to plan the next experimental procedure (Fell et al., 2018).\n\nOne benefit of having robotic platforms perform experiments as a service is that researchers are able to publish their experimental protocols as executable code, which any other researcher, from anywhere around the world, can run on another automated laboratory system, improving the reproducibility of experiments.\n\n## Data science for reproducible data analysis\n\nAs the robot scientists (and their creators) realised, there is a lot more information that must be captured and shared for another researcher to reproduce an experiment. It is important that data collection and its analysis are reproducible. All too often, there is no way to verify the results in published papers because the reader does not have access to the data, nor to the information needed to repeat the same, often complex, analyses (Ioannidis et al., 2014). At our workshop Rachael Ainsworth (University of Manchester) highlighted Peng\u2019s description of the reproducibility spectrum, which ranges from \u201cpublication only\u201d to \"full replication\" with linked and executable code and data (Peng, 2011). Software engineering tools and techniques that are commonly applied in data science projects can nudge researchers towards the full replication end of the spectrum. These tools include interactive notebooks (Jupyter, Rmarkdown), version control and collaboration tools (git, GitHub, GitLab), package managers and containers to capture computational environments (Conda, Docker), and workflows to test and continuously integrate updates to the project (Travis CI). See Beaulieu-Jones and Greene, 2017 for an overview of how to repurpose these tools for scientific analyses.\n\nImaging has always been a critical technology for cell and developmental biology (Burel et al., 2015), ever since scientists looked at samples through a microscope and made drawings of what they saw. Photography came next, followed by digital image capture and analysis. S\u00e9bastien Besson (University of Dundee) presented a candidate for the next technology in this series, a set of open-source software and format standards called the Open Microscopy Environment (OME). This technology has already supported projects as diverse as the development a deep learning classifier to identify patients with clinical heart failure (Nirschl et al., 2018), to the generation of ultra-large high resolution electron microscopy maps in human, mouse and zebrafish tissue (Faas et al., 2012).\n\nThe OME project also subscribes to the philosophy that data must be FAIR: findable, accessible, interoperable and reusable (Wilkinson et al., 2016). It does this as follows: i) data are made findable by hosting them online and providing links to the papers the data have been used in; ii) data are made accessible through an open API (application programming interface) and the availability of highly curated metadata; iii) data are made interoperable via the Bio-Formats software, which allows more than 150 proprietary imaging file formats to be converted into a variety of open formats using a common vocabulary (Linkert et al., 2010); iv) data, software and other outputs are made reusable under permissive open licences or through \"copyleft\" licences which require the user to release anything they derive from the resource under the same open licence. (Alternatively, companies can pay for private access through Glencoe Software which provides a commercially licenced version of the OME suite of tools.).\n\nEach group who upload data to be shared through OME's Image Data Resource can choose their own license for sharing their data, although they are strongly encouraged to use the most open of the creative commons licenses (CC-BY or CC0). When shared in this way, these resources open up new avenues for replication and verification studies, methods development, and exploratory work that leads to the generation of new hypotheses.\n\n## Data science for hypothesis generation\n\nA hypothesis is essentially an \"educated guess\" by a researcher about what they think will happen when they do an experiment. A new hypothesis usually comes from theoretical models or from a desire to extend previously published experimental research. However, the traditional process of hypothesis generation is limited by the amount knowledge an individual researcher can hold in their head and the number of papers they can read each year, and it is also susceptible to their personal biases (van Helden, 2013).\n\nIn contrast, machine learning techniques such as text mining of published abstracts or electronic health records (Oquendo et al., 2012), or exploratory meta-analyses of datasets pooled from laboratories around the world, can be used for automated, reproducible and transparent hypothesis generation. For example, teams at IBM Research have mined 100,000 academic papers to identify new protein kinases that interact with a protein tumour suppressor (Spangler, 2014) and predicted hospital re-admissions from the electronic health records of 5,000 patients (Xiao et al., 2018). However, the availability of datasets, ideally datasets that are FAIR, is a prerequisite for automated hypothesis generation (Hall and Pesenti, 2017).\n\n## The challenges of translating theory into practice\n\nWhen we use data science techniques to design and analyse experiments, we need to ensure that the techniques we use are transparent and interpretable. And when we use robot scientists to design, perform and analyse experiments, we need to ensure that science continues to explore a broad range of scientific questions. Other challenges include avoiding positive feedback loops and algorithmic bias, equipping scientists with the skills they need to thrive in this new multidisciplinary environment, and ensuring that scientists in the global south are not left behind. We discuss all these points in more detail below.\n\n### Interpreting experimental outcomes\n\nWhen data science is used to make decisions about how to perform an experiment, we need to ensure that scientists calibrate their level of trust appropriately. On one hand, biologists will need to relinquish some level of control and to trust the computer program to make important decisions for them. On the other hand, we must make sure that scientists do not trust the algorithms so much that they stop thinking critically about the outcomes of their experiments and end up misinterpreting their results. We also want to ensure that scientists remain creative and open to serendipitous discoveries.\n\nWe discussed above the importance of having a formal (machine-readable) language that can be used to describe both scientific ideas and experimental protocols to robots. However, it is equally important that the results and conclusions of these experiments are expressed in a human-understandable format. Ultimately, the goal of science is not just to be able to predict natural phenomenon, but also to give humans a deeper insight into the mechanisms driving the observed processes. Some machine learning methods, such as deep learning, while excellent for predicting an outcome, suffer from a lack of interpretability (Angermueller et al., 2016). How to balance predictability and interpretability for the human reader is an open question in machine learning.\n\n### Positive feedback loops and algorithmic bias\n\nAs with all applications of data science to new disciplines, there are risks related to algorithmic bias (Hajian et al., 2016). Recently there have been some concerns over algorithmic bias related to face-recognition of criminals \u2013 the face-recognition software was more likely to report a false-positive of a black face than a white face due to biases in the dataset that the software was trained on (Snow, 2017; Buolamwini and Gebru, 2018). Societal parameters shape the input data that is fed into machine learning models, and if actions are taken on the basis of their output, these societal biases will only be amplified.\n\nThere are parallel issues with data science for experimental biology \u2013 for instance there are certain research questions that are popular within a community through accidents of history. Many people study model organisms such as roundworms and fruit flies because early genetics researchers studied them, and now there are more experimental tools that have been tried and tested on them \u2013 a positive feedback loop (Stoeger et al., 2018).\n\nWe need to be careful to ensure that any attempt to design experiments has the correct balance between exploring new research ideas and exploiting the existing data and experimental tools available in well-established sub-disciplines.\n\n### Implementation and training\n\nAccording to Chris Mellingwood (University of Edinburgh), some biologists are amphibious and fluidly move between \"wet\" laboratories and \"dry\" computing (Mellingwood, 2017). However, many biologists do not know how to code or do not have the required mathematical background to be able to reframe their research questions as data science problems, so it may be difficult for biologists to find ways of using these new tools to design experiments in their own laboratories. They might not even realise that there is a tool available to help them resolve the experimental design problems that they face. Researchers may need specialised training in order to learn how to interact with data science tools in a efficient and effective way.\n\nReproducible data analysis alone requires an understanding of version control, at least one, if not multiple, programming languages, techniques such as testing, containerisation and continuous integration. Machine learning and optimisation algorithms require detailed statistical knowledge along with the technical expertise \u2013 sometimes including high performance computing skills \u2013 to implement them. Requiring all these skills along with the robotics engineering expertise to build an automated lab is outside of the capacity of most researchers trained by the current system.\n\n### Infrastructure and accessibility\n\nEven once a system is built, it needs to be constantly adapted as science progresses. There is a risk that by the time a platform is developed, it might be out of date. Sarah Abel (University of Iceland) discussed how university incentive systems do not always reward the types of activities that would be required for incorporating data science into a laboratory, such as interdisciplinary collaborations or maintenance of long-term infrastructure.\n\nFurthermore, due to the burden of developing and maintaining the infrastructure needed for this new approach to science, some researchers may be left behind. Louise Bezuidenhout (University of Oxford) explained that even though one of the goals of \"data science for experimental design\" is to have open and \"accessible\" data available around the world, scientists in the global south might not have access to computing resources needed for this approach (Bezuidenhout et al., 2017). Therefore, we need to consider how the benefits of data science and laboratory automation techniques are felt around the world.\n\n### Augmentation, not automation\n\nAs we discuss the role of data science in the cycle of research, we need to be aware that these technologies should be used to augment, not replace, human researchers. These new tools will release researchers from the tasks that a machine can do well, giving them time and space to work on the tasks that only humans can do. Humans are able think \"out-of-the-box\", while the behaviour of any algorithm will inherently be restricted by its code.\n\nPerhaps the last person you might imagine supporting the integration of artificial and human intelligence is Garry Kasparov, chess grand master. Kasparov lost to the IBM supercomputer Deep Blue in 1997 but more than 20 years later he is optimistic about the potential for machines to provide insights into how humans see the world (Kasparov, 2017). An example that is closer to the life sciences is the citizen science game BrainDr, in which participants quickly assess the quality of brain imaging scans by swiping left or right (Keshavan et al., 2018). Over time, there were enough ratings to train an algorithm to automatically assess the quality of the images. The tool saves researchers thousands of hours, permits the quality assessment of very large datasets, improves the reliability of the results, and is really fun!\n\nSo where does this leave the biologist of the future? Experimentalists can continue to do creative research by, for example, designing new protocols that enable them to study new phenomena and measure new variables. There are also many experimental protocols that are performed so rarely that it would be inefficient to automate them. However, humans will not need to carry out standard protocols, using as purifying DNA, but they might still need to know how to perform various specialised tasks, such as dissecting specimens. They will also need to constantly update the robotic platform to incorporate new experimental protocols.\n\nFinally and most crucially, the biologist of the future will need to provide feedback into the cycle of research \u2013 providing insight into what hypotheses are interesting to the community, thinking deeply about how experimental results fit into the theories proposed by the broader community, and finding innovative connections across disciplinary boundaries. Essentially, they will be focused on the varied and interesting parts of science, rather than the mundane and repetitive parts.\n",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ff5e5caa-13d4-4bcf-b5d6-c1c76364ac01",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C1",
+      "claim": "Data science can be incorporated into every stage of a scientific study.",
+      "claim_type": "EXPLICIT",
+      "source": "Data science can be incorporated into every stage of a scientific study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a programmatic statement in the abstract that frames the manuscript's argument.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "a38a8648-07d5-4c41-a5fa-d801aaff7089",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C2",
+      "claim": "Data science can be used to generate hypotheses.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we describe how data science can be used to generate hypotheses, to design experiments, to perform experiments, and to analyse data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by discussion of text mining and meta-analyses later in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "6ed675e2-842b-4e4b-9e0b-c104c83cc83c",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C3",
+      "claim": "Data science can be used to design experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we describe how data science can be used to generate hypotheses, to design experiments, to perform experiments, and to analyse data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by examples of optimal experimental design discussed in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "ae8e4181-9805-4933-b7c1-e8d94cf81f75",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C4",
+      "claim": "Data science can be used to perform experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we describe how data science can be used to generate hypotheses, to design experiments, to perform experiments, and to analyse data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by discussion of robot scientists and laboratory automation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "ccb20956-6807-4e66-9162-a486bb922e67",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C5",
+      "claim": "Data science can be used to analyse data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we describe how data science can be used to generate hypotheses, to design experiments, to perform experiments, and to analyse data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a widely accepted application of data science in research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "9d7394ff-d680-45d9-90e1-0578457f0e95",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C6",
+      "claim": "Published research often does not contain all the information required to reproduce what was reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, there are impediments at every step of the process. In particular, our work depends on published research that often does not contain all the information required to reproduce what was reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-documented problem in scientific research, supported by the reproducibility crisis literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "0278a17e-3b3d-4798-86d2-e4051f92c975",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C7",
+      "claim": "There are too many possible experimental parameters to test under time and budget constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "There are too many possible experimental parameters to test under our time and budget constraints, so we make decisions that affect how we interpret the outcomes of our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical observation about practical constraints in experimental science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "10c235ee-61e2-480d-9df5-773d5493376d",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C8",
+      "claim": "Data science generally involves larger datasets than statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is no clear dividing line between data science and statistics, data science generally involves larger datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional distinction made by the authors based on common usage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "9e6721bb-651a-4bd1-b108-9e5c1b7135a3",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C9",
+      "claim": "Data scientists often think in terms of training predictive models that can be applied to other datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, data scientists often think in terms of training predictive models that can be applied to other datasets, rather than limiting the analysis to an existing dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of data science methodology based on common practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "825276fa-8f4d-4ad3-bebb-2c9c4e5d866f",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C10",
+      "claim": "Data science emerged as a discipline largely because the internet led to the creation of incredibly large datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Data science emerged as a discipline largely because the internet led to the creation of incredibly large datasets (such as ImageNet, a database of 14 million annotated images; Krizhevsky et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This historical claim is supported by citation to ImageNet as an example.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "c612f4d2-9671-4605-a397-a8837b4d73db",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C11",
+      "claim": "ImageNet is a database of 14 million annotated images.",
+      "claim_type": "EXPLICIT",
+      "source": "Data science emerged as a discipline largely because the internet led to the creation of incredibly large datasets (such as ImageNet, a database of 14 million annotated images; Krizhevsky et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This factual description of ImageNet is supported by the citation to Krizhevsky et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "8a99cea6-e28d-475b-95bf-6e8110b33fc0",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C12",
+      "claim": "The availability of large datasets enabled researchers to apply a variety of machine learning algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "The availability of these datasets enabled researchers to apply a variety of machine learning algorithms which, in turn, led to the development of new techniques for analysing large datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical observation about the development of machine learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "7f4ef227-62bb-484b-8442-5d5951af7b67",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C13",
+      "claim": "Progress has been rapid in the automated annotation and interpretation of images and texts on the internet.",
+      "claim_type": "EXPLICIT",
+      "source": "One area in which progress has been rapid is the automated annotation and interpretation of images and texts on the internet, and these techniques are now being applied to other data-rich domains, including genetics and genomics (Libbrecht and Noble, 2015) and the study of gravitational waves (Abbott et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about rapid progress is supported by examples and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "f231bf18-706e-4e43-a05b-38907c97b9f7",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C14",
+      "claim": "Machine learning techniques for image and text annotation are being applied to genetics and genomics.",
+      "claim_type": "EXPLICIT",
+      "source": "One area in which progress has been rapid is the automated annotation and interpretation of images and texts on the internet, and these techniques are now being applied to other data-rich domains, including genetics and genomics (Libbrecht and Noble, 2015) and the study of gravitational waves (Abbott et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Libbrecht and Noble, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "451181df-8d6e-460c-9b92-3fc93760f782",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C15",
+      "claim": "Machine learning techniques for image and text annotation are being applied to the study of gravitational waves.",
+      "claim_type": "EXPLICIT",
+      "source": "One area in which progress has been rapid is the automated annotation and interpretation of images and texts on the internet, and these techniques are now being applied to other data-rich domains, including genetics and genomics (Libbrecht and Noble, 2015) and the study of gravitational waves (Abbott et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Abbott et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "e85c36c4-3a95-478a-b89b-948ab1978775",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C16",
+      "claim": "Data science can inform the analysis of an experiment to test a specific hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that data science can inform the analysis of an experiment, either to test a specific hypothesis or to make sense of large datasets that have been collected without a specific hypothesis in mind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about data science applications in research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "0290e557-6446-4182-b3f4-2a6630b1483c",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C17",
+      "claim": "Data science can make sense of large datasets that have been collected without a specific hypothesis in mind.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that data science can inform the analysis of an experiment, either to test a specific hypothesis or to make sense of large datasets that have been collected without a specific hypothesis in mind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes exploratory data analysis, a common application of data science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "086736a5-785e-4a0a-853f-a586edd77160",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C18",
+      "claim": "Data science techniques can improve the generation of hypotheses and the design of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "What is less obvious, albeit equally important, is how these techniques can improve other aspects of the scientific method, such as the generation of hypotheses and the design of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a central thesis of the manuscript, elaborated in subsequent sections.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "da5e9cf2-4b10-4791-b9df-2e9a42787a87",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C19",
+      "claim": "Data science is an inherently interdisciplinary approach to science.",
+      "claim_type": "EXPLICIT",
+      "source": "Data science is an inherently interdisciplinary approach to science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of data science based on its application across multiple fields.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "b78de29d-3c1e-474e-ae28-fd2bb1456049",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C20",
+      "claim": "New experimental techniques have revolutionised biology over the years, from DNA sequencing and microarrays in the past to CRISPR and cryo-EM more recently.",
+      "claim_type": "EXPLICIT",
+      "source": "New experimental techniques have revolutionised biology over the years, from DNA sequencing and microarrays in the past to CRISPR and cryo-EM more recently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical observation about technological advances in biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "6829f1ce-b4fa-4fb1-8686-68f35fe14ef9",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C21",
+      "claim": "Data science differs from single experimental techniques in that it is a framework for solving a whole range of problems.",
+      "claim_type": "EXPLICIT",
+      "source": "Data science differs in that it is not a single technique, but rather a framework for solving a whole range of problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual distinction made by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "39840c94-3257-4153-9a83-36f80f72ec72",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C23",
+      "claim": "In October 2018, a workshop was held at the Alan Turing Institute in London bringing together statisticians, experimental researchers, and social scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "In October 2018, we brought together statisticians, experimental researchers, and social scientists who study the behaviour of academics in the lab (and in the wild) at a workshop at the Alan Turing Institute in London to discuss how we can harness the power of data science to make each stage of the scientific life cycle more efficient and effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about an event that occurred.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "7298c3ba-a1b8-4847-8b34-7dfe870193cf",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C24",
+      "claim": "Statistical methods can optimise the power of an experiment by selecting which observations should be collected.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical methods can optimise the power of an experiment by selecting which observations should be collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about optimal experimental design, a known statistical methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "a86a2ee8-2bec-4ad2-9f72-e05fe89be492",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C25",
+      "claim": "Robotics and software pipelines can automate data collection and analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Robotics and software pipelines can automate data collection and analysis, and incorporate machine learning analyses to adaptively update the experimental design based on incoming data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes capabilities of laboratory automation systems discussed in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "9c4cec70-18a7-4b76-8e0a-ae11118b1970",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C26",
+      "claim": "Robotics and software pipelines can incorporate machine learning analyses to adaptively update experimental design based on incoming data.",
+      "claim_type": "EXPLICIT",
+      "source": "Robotics and software pipelines can automate data collection and analysis, and incorporate machine learning analyses to adaptively update the experimental design based on incoming data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes adaptive experimental design capabilities discussed in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "813cfbf8-e594-4cb3-b32c-1123eb93fab3",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C27",
+      "claim": "The traditional output of research, a static PDF manuscript, can be enhanced to include analysis code and well-documented datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "And the traditional output of research, a static PDF manuscript, can be enhanced to include analysis code and well-documented datasets to make the next iteration of the cycle faster and more efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes reproducible research practices that are increasingly adopted.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "77fe7dd2-e148-4ac3-a063-156b27928947",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C28",
+      "claim": "In plant science, experimental parameters might include temperature, exposure to light, access to water and nutrients, and humidity.",
+      "claim_type": "EXPLICIT",
+      "source": "In plant science, for instance, these parameters might include temperature, exposure to light, access to water and nutrients, humidity and so on, and the plant might respond to a change in each of these in a context-dependent way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example of experimental parameters in plant science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "9b69868b-14f0-439d-8221-a9f6a7799bfb",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C29",
+      "claim": "Plants might respond to changes in environmental parameters in a context-dependent way.",
+      "claim_type": "EXPLICIT",
+      "source": "In plant science, for instance, these parameters might include temperature, exposure to light, access to water and nutrients, humidity and so on, and the plant might respond to a change in each of these in a context-dependent way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a biological observation about plant responses to environmental factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "5cc5c153-2edf-4010-a0f8-d058b70de028",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C30",
+      "claim": "Stefanie Biedermann (University of Southampton) discussed how to transform a wide range of experimental design questions into optimisation problems at the workshop.",
+      "claim_type": "EXPLICIT",
+      "source": "At the workshop Stefanie Biedermann (University of Southampton) discussed how to transform a wide range of experimental design questions into optimisation problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about a presentation at the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "dfa1fa8a-4510-4f2d-9f9b-c49053412687",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C31",
+      "claim": "Biedermann and colleagues have applied optimal experimental design methods to find optimal ways of selecting parameters for studies of enzyme kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "She and her colleagues have applied these methods to find optimal ways of selecting parameters for studies of enzyme kinetics (Dette and Biedermann, 2003) and medical applications (Tompsett et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dette and Biedermann, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "0272fb43-ed72-40df-b505-5f5c0f1bad4e",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C32",
+      "claim": "Biedermann and colleagues have applied optimal experimental design methods to medical applications.",
+      "claim_type": "EXPLICIT",
+      "source": "She and her colleagues have applied these methods to find optimal ways of selecting parameters for studies of enzyme kinetics (Dette and Biedermann, 2003) and medical applications (Tompsett et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Tompsett et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "cc7c75e1-3d30-4940-ae1d-7e2f2383a8b7",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C33",
+      "claim": "Researchers have used data science to increase the production of a drug while reducing unwanted by-products.",
+      "claim_type": "EXPLICIT",
+      "source": "Other researchers have used data science to increase the production of a drug while reducing unwanted by-products (Overstall et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Overstall et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "ff98dff7-f3f9-4f0f-a32d-b74dbc361feb",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C34",
+      "claim": "Optimal experimental design can help researchers fit parameters of dynamical models.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimal experimental design can also help researchers fit parameters of dynamical models, which can help them develop a mechanistic understanding of biological systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the application of optimal experimental design to systems biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "9599fb84-d430-42f3-9d45-e53dd4b53dea",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C35",
+      "claim": "Ozgur Akman (University of Exeter) focuses on dynamic models that can explain how gene expression changes over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Ozgur Akman (University of Exeter) focuses on dynamic models that can explain how gene expression changes over time and where the model parameters represent molecular properties, such as the transcription rates or mRNA degradation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Akman's research focus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "aacaf811-f990-4361-9fa7-b107c3897e95",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C36",
+      "claim": "Akman used optimal experimental design to find the optimal parameters for a mathematical model for the circadian clock.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example he explained how he had used this approach to find the optimal parameters for a mathematical model for the circadian clock (Aitken and Akman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Aitken and Akman, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "64417fa0-f7ca-421d-9906-dfdc155b177d",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C37",
+      "claim": "It is possible to search for possible gene regulatory networks that can explain existing experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Akman also described how it is possible to search for possible gene regulatory networks that can explain existing experimental data (Doherty, 2017), and then select new experiments to help distinguish between these alternative hypotheses (Sverchkov and Craven, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Doherty, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "037ef98a-d355-4214-b999-f2052f4347f4",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C38",
+      "claim": "It is possible to select new experiments to help distinguish between alternative gene regulatory network hypotheses.",
+      "claim_type": "EXPLICIT",
+      "source": "Akman also described how it is possible to search for possible gene regulatory networks that can explain existing experimental data (Doherty, 2017), and then select new experiments to help distinguish between these alternative hypotheses (Sverchkov and Craven, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sverchkov and Craven, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "04ae77d1-c9d9-436b-8f21-29b0be613321",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C39",
+      "claim": "Statisticians need to be involved in the experimental design process as early as possible.",
+      "claim_type": "EXPLICIT",
+      "source": "A clear message from the workshop was that statisticians need to be involved in the experimental design process as early as possible, rather than being asked to analyze the data at the end of a project.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation that emerged from the workshop discussions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "e5a0b8ca-7fe2-4743-b1e7-e1b8e5afe036",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C40",
+      "claim": "Involving statisticians before data collection makes it more likely the scientist will be able to answer the research questions they are interested in.",
+      "claim_type": "EXPLICIT",
+      "source": "Involving statisticians before data collection makes it more likely the scientist will be able to answer the research questions they are interested in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of early statistical consultation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "321c5e35-9b75-407b-aeed-d18cd60dde73",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C41",
+      "claim": "The data, software, infrastructure and protocols generated during a research project are just as important as the results and interpretations in a scientific paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Another clear message was that the data, software, infrastructure and the protocols generated during a research project were just as important as the results and interpretations that constitute a scientific paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a value statement that emerged from the workshop discussions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "0bf07854-aaad-4dbc-bbf4-13a4c24880e2",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C42",
+      "claim": "Preliminary data is necessary as a starting point to effectively plan an experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to effectively plan an experiment, it is necessary to have some preliminary data as a starting point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical requirement for data-driven experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "29d68a2f-86c6-47c6-9ad9-6112bbdd19d6",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C43",
+      "claim": "Ensuring that data collected during an experiment is used to inform planning for future experiments will make the whole process more efficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ensuring that the data collected during a particular experiment is used to inform the planning process for future experiments will make the whole process more efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about iterative experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "432611fe-d2e4-43b8-af4f-365bd467415f",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C44",
+      "claim": "For standard molecular biology experiments, feedback loops can be achieved through laboratory automation.",
+      "claim_type": "EXPLICIT",
+      "source": "For standard molecular biology experiments, this kind of feedback loop can be achieved through laboratory automation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of laboratory automation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "93feccaf-1769-4506-9c26-0823865b2961",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C45",
+      "claim": "Ross King (University of Manchester) and co-workers have developed the first robot scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Ross King (University of Manchester) and co-workers have developed the first robot scientists \u2013 laboratory robots that physically perform experiments and use machine learning to generate hypothesis, plan experiments, and perform deductive reasoning to come to scientific conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual claim about King's research achievements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "56355a70-7763-4218-98f3-f25916a5976b",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C46",
+      "claim": "Robot scientists are laboratory robots that physically perform experiments and use machine learning to generate hypothesis, plan experiments, and perform deductive reasoning.",
+      "claim_type": "EXPLICIT",
+      "source": "Ross King (University of Manchester) and co-workers have developed the first robot scientists \u2013 laboratory robots that physically perform experiments and use machine learning to generate hypothesis, plan experiments, and perform deductive reasoning to come to scientific conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of robot scientists based on their capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "c14090b8-698b-443c-b353-e8420c2a26d0",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C47",
+      "claim": "Adam, the first robot scientist, successfully identified the yeast genes encoding orphan enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The first of these robots, Adam, successfully identified the yeast genes encoding orphan enzymes (King et al., 2009), and the second, Eve, intelligently screened drug targets for neglected tropical diseases (Williams et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to King et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "a89a3631-f1fd-433d-8a99-d8e52072fef7",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C48",
+      "claim": "Eve, the second robot scientist, intelligently screened drug targets for neglected tropical diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The first of these robots, Adam, successfully identified the yeast genes encoding orphan enzymes (King et al., 2009), and the second, Eve, intelligently screened drug targets for neglected tropical diseases (Williams et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Williams et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "01653755-4918-4768-bb6d-af66acc2c1f7",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C49",
+      "claim": "King is convinced that robot scientists improve research productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "King is convinced that robot scientists improves research productivity, and also helps scientists to develop a better understanding of science as a process (King et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of King's opinion, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "85612076-53dd-4c8b-9533-db994f6eb376",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C50",
+      "claim": "Robot scientists help scientists develop a better understanding of science as a process.",
+      "claim_type": "EXPLICIT",
+      "source": "King is convinced that robot scientists improves research productivity, and also helps scientists to develop a better understanding of science as a process (King et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to King et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "eec99f01-00c2-4024-89f7-3f929f8a93f3",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C51",
+      "claim": "An important step towards building robotic scientists was the development of a formal language for describing scientific discoveries.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, an important step towards building these robotic scientists was the development of a formal language for describing scientific discoveries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the development process of robot scientists.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "2346c2e2-5e42-4a9f-b7e3-7ddf171b8eef",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C52",
+      "claim": "Human languages used to describe scientific discoveries are subject to ambiguity and exaggeration.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans might enjoy reading about scientific discoveries that are described in English or some other human language, but such languages are subject to ambiguity and exaggeration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about limitations of natural language in scientific communication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "e1fb1d6d-6235-4d1a-85d9-8e58d63f0372",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C54",
+      "claim": "Laboratory automation technology has existed for a number of years but has yet to be widely incorporated into academic research environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though laboratory automation technology has existed for a number of years, it has yet to be widely incorporated into academic research environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the adoption of laboratory automation in academia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "6132ac69-f0ff-45d2-8963-4c14f2dd445e",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C55",
+      "claim": "Laboratory automation is full of complex hardware that is difficult to use.",
+      "claim_type": "EXPLICIT",
+      "source": "Laboratory automation is full of complex hardware that is difficult to use, but a few start-ups are beginning to build tools to help researchers communicate with their laboratory robots more effectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about challenges with laboratory automation technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "2113c18e-1feb-4a5b-a221-720ba3fbe52d",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C56",
+      "claim": "Vishal Sanchania (Synthace) discussed how their software tool Antha enables scientists to easily develop workflows for controlling laboratory automation.",
+      "claim_type": "EXPLICIT",
+      "source": "Vishal Sanchania (Synthace) discussed how their software tool Antha enables scientists to easily develop workflows for controlling laboratory automation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about a presentation at the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "db5cd08f-a122-44b4-9643-5c63809a0fbc",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C57",
+      "claim": "Antha workflows can be iterative, with data collected by laboratory robots used to plan the next experimental procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these workflows can be iterative: that is, data collected by the laboratory robots can be used within the workflow to plan the next experimental procedure (Fell et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Fell et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "c44a477a-d993-4a90-a1f2-ff4f95ff80eb",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C58",
+      "claim": "Researchers can publish experimental protocols as executable code that can be run on automated laboratory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "One benefit of having robotic platforms perform experiments as a service is that researchers are able to publish their experimental protocols as executable code, which any other researcher, from anywhere around the world, can run on another automated laboratory system, improving the reproducibility of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a benefit of laboratory automation for reproducibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "519679e4-d0f3-424a-91bb-f290ce071382",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C59",
+      "claim": "Publishing experimental protocols as executable code improves the reproducibility of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "One benefit of having robotic platforms perform experiments as a service is that researchers are able to publish their experimental protocols as executable code, which any other researcher, from anywhere around the world, can run on another automated laboratory system, improving the reproducibility of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of executable protocols.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "9a80526f-e395-471a-a6fa-8357ee6cd748",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C60",
+      "claim": "There is often no way to verify the results in published papers because the reader does not have access to the data or information needed to repeat the analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "All too often, there is no way to verify the results in published papers because the reader does not have access to the data, nor to the information needed to repeat the same, often complex, analyses (Ioannidis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ioannidis et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "df9291de-5c15-4037-b7e2-5a438e9d96ab",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C63",
+      "claim": "Software engineering tools can nudge researchers towards the full replication end of the reproducibility spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Software engineering tools and techniques that are commonly applied in data science projects can nudge researchers towards the full replication end of the spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of software engineering tools for reproducibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "343ab1fc-848e-4685-b4eb-400aefab8a18",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C64",
+      "claim": "Software engineering tools for reproducibility include interactive notebooks (Jupyter, Rmarkdown).",
+      "claim_type": "EXPLICIT",
+      "source": "These tools include interactive notebooks (Jupyter, Rmarkdown), version control and collaboration tools (git, GitHub, GitLab), package managers and containers to capture computational environments (Conda, Docker), and workflows to test and continuously integrate updates to the project (Travis CI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a list of specific software tools for reproducible research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "958bbdca-dd84-4dd5-aa7c-e3932b0311f1",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C65",
+      "claim": "Software engineering tools for reproducibility include version control and collaboration tools (git, GitHub, GitLab).",
+      "claim_type": "EXPLICIT",
+      "source": "These tools include interactive notebooks (Jupyter, Rmarkdown), version control and collaboration tools (git, GitHub, GitLab), package managers and containers to capture computational environments (Conda, Docker), and workflows to test and continuously integrate updates to the project (Travis CI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a list of specific software tools for reproducible research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "e5aa5f2c-9fcc-4e84-858a-5242f3ffef14",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C66",
+      "claim": "Software engineering tools for reproducibility include package managers and containers to capture computational environments (Conda, Docker).",
+      "claim_type": "EXPLICIT",
+      "source": "These tools include interactive notebooks (Jupyter, Rmarkdown), version control and collaboration tools (git, GitHub, GitLab), package managers and containers to capture computational environments (Conda, Docker), and workflows to test and continuously integrate updates to the project (Travis CI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a list of specific software tools for reproducible research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "506f76ef-09d4-4a20-bd98-58a1bdb79bce",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C67",
+      "claim": "Software engineering tools for reproducibility include workflows to test and continuously integrate updates (Travis CI).",
+      "claim_type": "EXPLICIT",
+      "source": "These tools include interactive notebooks (Jupyter, Rmarkdown), version control and collaboration tools (git, GitHub, GitLab), package managers and containers to capture computational environments (Conda, Docker), and workflows to test and continuously integrate updates to the project (Travis CI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a list of specific software tools for reproducible research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "55a239c7-60b7-4c67-bdc0-4ca91bdf3197",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C68",
+      "claim": "Beaulieu-Jones and Greene, 2017 provide an overview of how to repurpose software engineering tools for scientific analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "See Beaulieu-Jones and Greene, 2017 for an overview of how to repurpose these tools for scientific analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to a resource on reproducible research practices.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "e7f98447-7a44-44ff-8cce-a4c631535162",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C69",
+      "claim": "Imaging has always been a critical technology for cell and developmental biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging has always been a critical technology for cell and developmental biology (Burel et al., 2015), ever since scientists looked at samples through a microscope and made drawings of what they saw.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Burel et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "6d499f21-a61e-4479-9b63-b682f5baf1f8",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C70",
+      "claim": "S\u00e9bastien Besson (University of Dundee) presented the Open Microscopy Environment (OME).",
+      "claim_type": "EXPLICIT",
+      "source": "S\u00e9bastien Besson (University of Dundee) presented a candidate for the next technology in this series, a set of open-source software and format standards called the Open Microscopy Environment (OME).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about a presentation at the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "5367bb24-09d0-42d4-8164-fa1de1415f1b",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C71",
+      "claim": "OME is a set of open-source software and format standards.",
+      "claim_type": "EXPLICIT",
+      "source": "S\u00e9bastien Besson (University of Dundee) presented a candidate for the next technology in this series, a set of open-source software and format standards called the Open Microscopy Environment (OME).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of OME based on the presentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "29fe2ac0-4498-4f62-bc16-e74ed97a6f63",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C72",
+      "claim": "OME has supported the development of a deep learning classifier to identify patients with clinical heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "This technology has already supported projects as diverse as the development a deep learning classifier to identify patients with clinical heart failure (Nirschl et al., 2018), to the generation of ultra-large high resolution electron microscopy maps in human, mouse and zebrafish tissue (Faas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nirschl et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "aa5cdfb9-e082-4265-ad46-b12f71e6d905",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C73",
+      "claim": "OME has supported the generation of ultra-large high resolution electron microscopy maps in human, mouse and zebrafish tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "This technology has already supported projects as diverse as the development a deep learning classifier to identify patients with clinical heart failure (Nirschl et al., 2018), to the generation of ultra-large high resolution electron microscopy maps in human, mouse and zebrafish tissue (Faas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Faas et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "09e18d9b-1651-4300-887c-fd1f19a3bc33",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C74",
+      "claim": "The OME project subscribes to the philosophy that data must be FAIR: findable, accessible, interoperable and reusable.",
+      "claim_type": "EXPLICIT",
+      "source": "The OME project also subscribes to the philosophy that data must be FAIR: findable, accessible, interoperable and reusable (Wilkinson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wilkinson et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "003f0b9a-6b94-4b06-937b-4657e370825b",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C75",
+      "claim": "OME makes data findable by hosting them online and providing links to the papers the data have been used in.",
+      "claim_type": "EXPLICIT",
+      "source": "It does this as follows: i) data are made findable by hosting them online and providing links to the papers the data have been used in;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how OME implements the 'findable' aspect of FAIR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "1cf063a0-e65a-4719-a301-bf591547cdf5",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C76",
+      "claim": "OME makes data accessible through an open API and the availability of highly curated metadata.",
+      "claim_type": "EXPLICIT",
+      "source": "ii) data are made accessible through an open API (application programming interface) and the availability of highly curated metadata;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how OME implements the 'accessible' aspect of FAIR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "13bdf199-ada5-44bc-8365-494b1a10e5cc",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C77",
+      "claim": "OME makes data interoperable via the Bio-Formats software, which allows more than 150 proprietary imaging file formats to be converted into a variety of open formats using a common vocabulary.",
+      "claim_type": "EXPLICIT",
+      "source": "iii) data are made interoperable via the Bio-Formats software, which allows more than 150 proprietary imaging file formats to be converted into a variety of open formats using a common vocabulary (Linkert et al., 2010);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Linkert et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "25f827a6-67b0-430c-b6c9-0f340e57b5f4",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C79",
+      "claim": "Companies can pay for private access to OME through Glencoe Software which provides a commercially licenced version of the OME suite of tools.",
+      "claim_type": "EXPLICIT",
+      "source": "(Alternatively, companies can pay for private access through Glencoe Software which provides a commercially licenced version of the OME suite of tools.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about commercial licensing options for OME.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "b41f22a9-ce4d-4f75-8e85-ed94fdd93317",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C80",
+      "claim": "Groups who upload data to OME's Image Data Resource are strongly encouraged to use the most open of the creative commons licenses (CC-BY or CC0).",
+      "claim_type": "EXPLICIT",
+      "source": "Each group who upload data to be shared through OME's Image Data Resource can choose their own license for sharing their data, although they are strongly encouraged to use the most open of the creative commons licenses (CC-BY or CC0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes OME's licensing policy for data sharing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "32a5e3b3-cb58-45c2-a05e-a6c1dae20092",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C81",
+      "claim": "Sharing data through OME opens up new avenues for replication and verification studies, methods development, and exploratory work that leads to the generation of new hypotheses.",
+      "claim_type": "EXPLICIT",
+      "source": "When shared in this way, these resources open up new avenues for replication and verification studies, methods development, and exploratory work that leads to the generation of new hypotheses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of data sharing through OME.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "ef8c9181-4bcc-4d43-93d4-3cd87e1008dd",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C83",
+      "claim": "A new hypothesis usually comes from theoretical models or from a desire to extend previously published experimental research.",
+      "claim_type": "EXPLICIT",
+      "source": "A new hypothesis usually comes from theoretical models or from a desire to extend previously published experimental research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes common sources of scientific hypotheses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "2a51ce81-f53c-44c7-b202-e9e617ea1862",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C84",
+      "claim": "The traditional process of hypothesis generation is limited by the amount of knowledge an individual researcher can hold in their head and the number of papers they can read each year.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the traditional process of hypothesis generation is limited by the amount knowledge an individual researcher can hold in their head and the number of papers they can read each year, and it is also susceptible to their personal biases (van Helden, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to van Helden, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "cc469242-2bf0-464c-b205-868f6e8e4e7b",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C85",
+      "claim": "The traditional process of hypothesis generation is susceptible to personal biases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the traditional process of hypothesis generation is limited by the amount knowledge an individual researcher can hold in their head and the number of papers they can read each year, and it is also susceptible to their personal biases (van Helden, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to van Helden, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "8cc2caf1-ea9f-4b0d-b425-7f88d510677a",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C86",
+      "claim": "Machine learning techniques such as text mining of published abstracts or electronic health records can be used for automated hypothesis generation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, machine learning techniques such as text mining of published abstracts or electronic health records (Oquendo et al., 2012), or exploratory meta-analyses of datasets pooled from laboratories around the world, can be used for automated, reproducible and transparent hypothesis generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Oquendo et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "aec404a0-bd51-4456-b453-3893b52954c5",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C87",
+      "claim": "Exploratory meta-analyses of datasets pooled from laboratories around the world can be used for automated hypothesis generation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, machine learning techniques such as text mining of published abstracts or electronic health records (Oquendo et al., 2012), or exploratory meta-analyses of datasets pooled from laboratories around the world, can be used for automated, reproducible and transparent hypothesis generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a method for automated hypothesis generation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "e2ef86b3-468f-46c5-99b6-53a954efb52a",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C88",
+      "claim": "Teams at IBM Research have mined 100,000 academic papers to identify new protein kinases that interact with a protein tumour suppressor.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, teams at IBM Research have mined 100,000 academic papers to identify new protein kinases that interact with a protein tumour suppressor (Spangler, 2014) and predicted hospital re-admissions from the electronic health records of 5,000 patients (Xiao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Spangler, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "8eb6b4ec-2961-4772-b2a7-7bcc0a94a66d",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C89",
+      "claim": "Teams at IBM Research predicted hospital re-admissions from the electronic health records of 5,000 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, teams at IBM Research have mined 100,000 academic papers to identify new protein kinases that interact with a protein tumour suppressor (Spangler, 2014) and predicted hospital re-admissions from the electronic health records of 5,000 patients (Xiao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Xiao et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "637ff7dd-ad12-41ea-966f-656e8be728b4",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C90",
+      "claim": "The availability of FAIR datasets is a prerequisite for automated hypothesis generation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the availability of datasets, ideally datasets that are FAIR, is a prerequisite for automated hypothesis generation (Hall and Pesenti, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hall and Pesenti, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "0921295b-e9e3-489a-acc2-4f0f3779f13a",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C91",
+      "claim": "When we use data science techniques to design and analyse experiments, we need to ensure that the techniques we use are transparent and interpretable.",
+      "claim_type": "EXPLICIT",
+      "source": "When we use data science techniques to design and analyse experiments, we need to ensure that the techniques we use are transparent and interpretable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about requirements for data science in research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "f3b6475f-e9e8-43c6-950f-5db04b6f2f08",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C92",
+      "claim": "When we use robot scientists to design, perform and analyse experiments, we need to ensure that science continues to explore a broad range of scientific questions.",
+      "claim_type": "EXPLICIT",
+      "source": "And when we use robot scientists to design, perform and analyse experiments, we need to ensure that science continues to explore a broad range of scientific questions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about requirements for robot scientists.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "57ed35d4-82c0-4b4a-9987-e4f7d6af5a08",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C93",
+      "claim": "Biologists will need to relinquish some level of control and trust computer programs to make important decisions for them.",
+      "claim_type": "EXPLICIT",
+      "source": "On one hand, biologists will need to relinquish some level of control and to trust the computer program to make important decisions for them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about how biologists will need to adapt to data science tools.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "81f1d22f-a5ec-4fad-9ef2-a84bf80c9e75",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C94",
+      "claim": "We must ensure that scientists do not trust algorithms so much that they stop thinking critically about the outcomes of their experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we must make sure that scientists do not trust the algorithms so much that they stop thinking critically about the outcomes of their experiments and end up misinterpreting their results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement about over-reliance on algorithms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "7e94e79b-53b8-4208-ae10-41cc490716aa",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C95",
+      "claim": "We want to ensure that scientists remain creative and open to serendipitous discoveries.",
+      "claim_type": "EXPLICIT",
+      "source": "We also want to ensure that scientists remain creative and open to serendipitous discoveries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about preserving scientific creativity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "6a683e18-76ae-42f2-8fb6-5702dee6ce16",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C96",
+      "claim": "The goal of science is not just to be able to predict natural phenomenon, but also to give humans a deeper insight into the mechanisms driving the observed processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the goal of science is not just to be able to predict natural phenomenon, but also to give humans a deeper insight into the mechanisms driving the observed processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a philosophical statement about the goals of science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "00c7693a-1096-41e5-b31f-00e214a8eed7",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C97",
+      "claim": "Some machine learning methods, such as deep learning, while excellent for predicting an outcome, suffer from a lack of interpretability.",
+      "claim_type": "EXPLICIT",
+      "source": "Some machine learning methods, such as deep learning, while excellent for predicting an outcome, suffer from a lack of interpretability (Angermueller et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Angermueller et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "7d13f8ef-15a2-4423-a0b5-0efeea8eb54c",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C98",
+      "claim": "How to balance predictability and interpretability for the human reader is an open question in machine learning.",
+      "claim_type": "EXPLICIT",
+      "source": "How to balance predictability and interpretability for the human reader is an open question in machine learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an ongoing challenge in machine learning research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "306ae6e2-c82e-41ef-90f8-7fe49adf190e",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C99",
+      "claim": "There are risks related to algorithmic bias in all applications of data science to new disciplines.",
+      "claim_type": "EXPLICIT",
+      "source": "As with all applications of data science to new disciplines, there are risks related to algorithmic bias (Hajian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hajian et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "f78f8373-e67b-4a6e-9464-18150744c218",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C100",
+      "claim": "Face-recognition software was more likely to report a false-positive of a black face than a white face due to biases in the training dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently there have been some concerns over algorithmic bias related to face-recognition of criminals \u2013 the face-recognition software was more likely to report a false-positive of a black face than a white face due to biases in the dataset that the software was trained on (Snow, 2017; Buolamwini and Gebru, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Snow, 2017 and Buolamwini and Gebru, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "ac7549b9-62e3-40e4-a563-8d4b4c39d614",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C101",
+      "claim": "Societal parameters shape the input data that is fed into machine learning models.",
+      "claim_type": "EXPLICIT",
+      "source": "Societal parameters shape the input data that is fed into machine learning models, and if actions are taken on the basis of their output, these societal biases will only be amplified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about how societal biases affect machine learning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "95c44625-5e83-4077-a22a-683e676a2fbe",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C102",
+      "claim": "If actions are taken on the basis of machine learning model outputs, societal biases will be amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "Societal parameters shape the input data that is fed into machine learning models, and if actions are taken on the basis of their output, these societal biases will only be amplified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about feedback loops in algorithmic bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "28061614-29b4-4cf4-8792-8b99b3aa3d76",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C103",
+      "claim": "Many people study model organisms such as roundworms and fruit flies because early genetics researchers studied them.",
+      "claim_type": "EXPLICIT",
+      "source": "Many people study model organisms such as roundworms and fruit flies because early genetics researchers studied them, and now there are more experimental tools that have been tried and tested on them \u2013 a positive feedback loop (Stoeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Stoeger et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "4f1fbe41-8852-412d-b85f-7470a7a2fd05",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C104",
+      "claim": "There are more experimental tools that have been tried and tested on model organisms like roundworms and fruit flies, creating a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Many people study model organisms such as roundworms and fruit flies because early genetics researchers studied them, and now there are more experimental tools that have been tried and tested on them \u2013 a positive feedback loop (Stoeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Stoeger et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "f65e5da2-a996-4d36-9e54-5648a164c603",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C105",
+      "claim": "We need to ensure that experimental design has the correct balance between exploring new research ideas and exploiting existing data and experimental tools.",
+      "claim_type": "EXPLICIT",
+      "source": "We need to be careful to ensure that any attempt to design experiments has the correct balance between exploring new research ideas and exploiting the existing data and experimental tools available in well-established sub-disciplines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about experimental design considerations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "ab369578-7820-4198-9f6e-c79e7f6ee782",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C107",
+      "claim": "Many biologists do not know how to code or do not have the required mathematical background to reframe their research questions as data science problems.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many biologists do not know how to code or do not have the required mathematical background to be able to reframe their research questions as data science problems, so it may be difficult for biologists to find ways of using these new tools to design experiments in their own laboratories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about skill gaps in the biological research community.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "c4f26ce7-0ee7-4a3a-8d0b-838e34df7126",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C108",
+      "claim": "Biologists might not realize that there is a tool available to help them resolve the experimental design problems that they face.",
+      "claim_type": "EXPLICIT",
+      "source": "They might not even realise that there is a tool available to help them resolve the experimental design problems that they face.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about awareness gaps among biologists.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "1dfa52c5-2006-47fa-8964-f5abe973cc04",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C109",
+      "claim": "Researchers may need specialised training to learn how to interact with data science tools in an efficient and effective way.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers may need specialised training in order to learn how to interact with data science tools in a efficient and effective way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation about training needs for researchers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "a4d00813-104c-4322-919d-066a9d8dae1e",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C110",
+      "claim": "Reproducible data analysis requires an understanding of version control, at least one programming language, testing, containerisation and continuous integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproducible data analysis alone requires an understanding of version control, at least one, if not multiple, programming languages, techniques such as testing, containerisation and continuous integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical skills required for reproducible research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "3eaf160c-6e1d-434b-b9ba-096a8d8f2ce3",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C111",
+      "claim": "Machine learning and optimisation algorithms require detailed statistical knowledge along with technical expertise to implement them.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning and optimisation algorithms require detailed statistical knowledge along with the technical expertise \u2013 sometimes including high performance computing skills \u2013 to implement them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the skills required for machine learning and optimization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "cc3f405c-6876-4281-9b7a-105bee14022b",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C112",
+      "claim": "Requiring all the skills for data science, machine learning, and robotics engineering is outside the capacity of most researchers trained by the current system.",
+      "claim_type": "EXPLICIT",
+      "source": "Requiring all these skills along with the robotics engineering expertise to build an automated lab is outside of the capacity of most researchers trained by the current system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about limitations of current training systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "dd622001-7f8b-4f96-b0f7-4b673fa97fb0",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C113",
+      "claim": "A system for data science in laboratories needs to be constantly adapted as science progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Even once a system is built, it needs to be constantly adapted as science progresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical observation about the maintenance requirements of scientific infrastructure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "8fb22908-89c1-46f6-976b-d9603e3e184c",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C114",
+      "claim": "There is a risk that by the time a platform is developed, it might be out of date.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a risk that by the time a platform is developed, it might be out of date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concern about the pace of technological development.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "1e8ba28b-685e-45b5-b64f-039bea8ce8aa",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C115",
+      "claim": "Sarah Abel (University of Iceland) discussed how university incentive systems do not always reward the types of activities required for incorporating data science into a laboratory.",
+      "claim_type": "EXPLICIT",
+      "source": "Sarah Abel (University of Iceland) discussed how university incentive systems do not always reward the types of activities that would be required for incorporating data science into a laboratory, such as interdisciplinary collaborations or maintenance of long-term infrastructure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about a presentation at the workshop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "e1e8dd5f-69eb-4cd1-a2ba-bc5172ebb3ed",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C116",
+      "claim": "University incentive systems do not always reward interdisciplinary collaborations or maintenance of long-term infrastructure.",
+      "claim_type": "EXPLICIT",
+      "source": "Sarah Abel (University of Iceland) discussed how university incentive systems do not always reward the types of activities that would be required for incorporating data science into a laboratory, such as interdisciplinary collaborations or maintenance of long-term infrastructure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about academic incentive structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "16061586-ef56-4fcb-9b87-05d3b7bfa6c6",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C117",
+      "claim": "Due to the burden of developing and maintaining infrastructure for data science, some researchers may be left behind.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, due to the burden of developing and maintaining the infrastructure needed for this new approach to science, some researchers may be left behind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concern about equity in access to data science tools.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "54ccfa02-1284-440e-a49a-e3388f4b54b2",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C119",
+      "claim": "We need to consider how the benefits of data science and laboratory automation techniques are felt around the world.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we need to consider how the benefits of data science and laboratory automation techniques are felt around the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about global equity in science.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "25657cbc-944a-4a6b-b22c-88dfdc336990",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C120",
+      "claim": "Data science technologies should be used to augment, not replace, human researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "As we discuss the role of data science in the cycle of research, we need to be aware that these technologies should be used to augment, not replace, human researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about the role of automation in research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "e293d03e-80db-426b-91b7-e76fcdadf377",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C121",
+      "claim": "New tools will release researchers from tasks that a machine can do well, giving them time and space to work on tasks that only humans can do.",
+      "claim_type": "EXPLICIT",
+      "source": "These new tools will release researchers from the tasks that a machine can do well, giving them time and space to work on the tasks that only humans can do.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the impact of automation on research work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "c92d753d-2181-47ce-ba9e-2c7216606268",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C123",
+      "claim": "Garry Kasparov lost to the IBM supercomputer Deep Blue in 1997.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasparov lost to the IBM supercomputer Deep Blue in 1997 but more than 20 years later he is optimistic about the potential for machines to provide insights into how humans see the world (Kasparov, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about the chess match.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "91934178-12c1-4c4f-9f8d-54583275e734",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C124",
+      "claim": "Kasparov is optimistic about the potential for machines to provide insights into how humans see the world.",
+      "claim_type": "EXPLICIT",
+      "source": "Kasparov lost to the IBM supercomputer Deep Blue in 1997 but more than 20 years later he is optimistic about the potential for machines to provide insights into how humans see the world (Kasparov, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kasparov, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "4015bb2f-52f7-4526-89f6-9612d97c48d6",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C125",
+      "claim": "BrainDr is a citizen science game in which participants quickly assess the quality of brain imaging scans by swiping left or right.",
+      "claim_type": "EXPLICIT",
+      "source": "An example that is closer to the life sciences is the citizen science game BrainDr, in which participants quickly assess the quality of brain imaging scans by swiping left or right (Keshavan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Keshavan et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "8c0444d4-93cc-4ea2-a24f-f70d1dd538d0",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C126",
+      "claim": "In BrainDr, over time there were enough ratings to train an algorithm to automatically assess the quality of brain images.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, there were enough ratings to train an algorithm to automatically assess the quality of the images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the outcome of the BrainDr citizen science project.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "4e7ed8b1-ef24-4efa-9f6e-cce74ab2874c",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C127",
+      "claim": "The BrainDr tool saves researchers thousands of hours and permits the quality assessment of very large datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The tool saves researchers thousands of hours, permits the quality assessment of very large datasets, improves the reliability of the results, and is really fun!",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the benefits of the BrainDr tool.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "85f29b95-1c13-45e5-bb17-64d8b9c4ca75",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C128",
+      "claim": "Experimentalists can continue to do creative research by designing new protocols that enable them to study new phenomena and measure new variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentalists can continue to do creative research by, for example, designing new protocols that enable them to study new phenomena and measure new variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about future roles for experimental biologists.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "80f65f76-ecd8-4f40-bf11-6e6dd2e097fd",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C129",
+      "claim": "There are many experimental protocols that are performed so rarely that it would be inefficient to automate them.",
+      "claim_type": "EXPLICIT",
+      "source": "There are also many experimental protocols that are performed so rarely that it would be inefficient to automate them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical observation about the limits of automation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "fe39c2dd-d615-4c8f-a1ad-bfe1252ca9ab",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C130",
+      "claim": "Humans will not need to carry out standard protocols such as purifying DNA in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "However, humans will not need to carry out standard protocols, using as purifying DNA, but they might still need to know how to perform various specialised tasks, such as dissecting specimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about which tasks will be automated.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "7aece57f-77bf-42ea-bdfd-fed8b1e21b81",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C131",
+      "claim": "Humans might still need to know how to perform specialised tasks such as dissecting specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "However, humans will not need to carry out standard protocols, using as purifying DNA, but they might still need to know how to perform various specialised tasks, such as dissecting specimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about which skills will remain important.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "0a2b39e5-41d6-44e8-9bdc-a18a10c19af5",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C132",
+      "claim": "Humans will need to constantly update the robotic platform to incorporate new experimental protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "They will also need to constantly update the robotic platform to incorporate new experimental protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about future human roles in automated laboratories.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "5df69830-d03e-4472-ae3f-d57e1c0bfbcb",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C133",
+      "claim": "The biologist of the future will need to provide feedback into the cycle of research.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally and most crucially, the biologist of the future will need to provide feedback into the cycle of research \u2013 providing insight into what hypotheses are interesting to the community, thinking deeply about how experimental results fit into the theories proposed by the broader community, and finding innovative connections across disciplinary boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about future roles for biologists.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "c934c246-b34d-4a2e-b4e4-cc79b366b6a6",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "claim_id": "C134",
+      "claim": "Biologists will be focused on the varied and interesting parts of science, rather than the mundane and repetitive parts.",
+      "claim_type": "EXPLICIT",
+      "source": "Essentially, they will be focused on the varied and interesting parts of science, rather than the mundane and repetitive parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about how automation will change scientific work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "941117ad-04cb-4179-b44f-8468c0d984e2",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Data science can be incorporated into every stage of the scientific life cycle, including hypothesis generation, experimental design, experiment execution, and data analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching claim is supported by the manuscript's detailed discussion of specific applications at each stage (C2-C5), with concrete examples provided throughout including optimal experimental design (C24, C30-C38), robot scientists (C45-C48), and reproducible analysis tools (C63-C68). The manuscript provides both conceptual framework and empirical evidence from cited work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "670a1bff-6b69-4f3c-a881-ef29df037823",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optimal experimental design methods can be used to select experimental parameters that maximize statistical power and efficiency across diverse applications including enzyme kinetics, medical studies, drug production, and circadian clock modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple cited examples (C31-C33, C36-C38) demonstrate successful applications of optimal experimental design across different domains. The claims are supported by peer-reviewed citations and workshop presentations from domain experts (Biedermann, Akman), providing strong evidence for the utility of these methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "b277b478-09be-4139-a2b7-e953e3e75880",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Robot scientists have been developed that can autonomously generate hypotheses, design experiments, perform experiments, and draw conclusions, with successful applications in identifying yeast genes and screening drug targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims about robot scientists Adam and Eve are supported by specific citations (King et al., 2009; Williams et al., 2015; King et al., 2018). The concrete achievements described (C47, C48) provide empirical validation of the technology's capabilities, though the broader claims about improving understanding of science as a process (C50) are more speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "fee67e81-10d8-4aa6-9715-797df9026450",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Laboratory automation technology exists but has limited adoption in academia; new software tools like Antha enable iterative workflows where data collected by robots informs subsequent experimental procedures, potentially improving reproducibility through executable protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims about limited adoption (C54-C55) reflect observable reality in academic research. The description of Antha's capabilities (C56-C57) is supported by citation (Fell et al., 2018). The logical inference about reproducibility benefits (C58-C59) follows reasonably from the ability to share executable protocols, though empirical validation of improved reproducibility would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "58ab2a4d-bee9-463a-adc2-4167c86c3fa0",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Published research often lacks sufficient information for reproducibility; software engineering tools including version control, containers, and continuous integration can improve reproducibility by enabling full replication of analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reproducibility crisis (C60) is well-documented and supported by citation (Ioannidis et al., 2014). The enumerated tools (C64-C67) are established technologies in software engineering. The reference to Beaulieu-Jones and Greene (2017) provides guidance on applying these tools to scientific analyses, supporting the overall claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Open Microscopy Environment (OME) implements FAIR data principles for imaging data through open-source software and format standards, supporting diverse applications from heart failure classification to electron microscopy mapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The description of OME's implementation of FAIR principles (C74-C77) is detailed and specific. The cited applications (C72-C73) demonstrate real-world utility. The claims about how OME implements each FAIR principle are concrete and verifiable. The inference about benefits for hypothesis generation (C81) is reasonable though somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "75b7fb24-8015-4465-a150-964a9377ce64",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Traditional hypothesis generation is limited by human cognitive constraints and biases; machine learning approaches including text mining and meta-analyses can enable automated, reproducible hypothesis generation, though this requires FAIR datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The limitations of traditional hypothesis generation (C84-C85) are supported by citation (van Helden, 2013). The IBM Research examples (C88-C89) provide concrete demonstrations of automated hypothesis generation with specific citations. The prerequisite of FAIR data (C90) is logically necessary and citation-supported (Hall and Pesenti, 2017).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "57b79418-5d11-4682-9cf7-55980f078347",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Early involvement of statisticians in experimental design improves research outcomes; data, software, infrastructure and protocols are as important as published results; iterative use of experimental data for planning improves efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims emerged as recommendations from the workshop (C39, C41) and represent logical inferences about best practices (C40, C42-C43). While not empirically tested in this manuscript, they reflect established principles in experimental design and are supported by the broader context of optimal experimental design discussed throughout.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "0ca6bfd6-7ba3-41d1-8264-2dfcebde9119",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Data science techniques must be transparent and interpretable to preserve scientific understanding; balancing predictability and interpretability remains an open challenge, particularly for methods like deep learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The tension between predictability and interpretability (C97-C98) is a recognized challenge in machine learning, supported by citation (Angermueller et al., 2016). The normative claims (C91-C95) about preserving human understanding and critical thinking are philosophical positions that follow logically from the goal of science (C96) to provide mechanistic insight, not just prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "06779f5f-e6b6-433e-b67f-21e0e0c9516c",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Algorithmic bias poses risks in data science applications; biases in training data can be amplified through feedback loops, as demonstrated in facial recognition and model organism selection; experimental design must balance exploration and exploitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The facial recognition bias example (C100) is well-documented with citations (Snow, 2017; Buolamwini and Gebru, 2018). The model organism feedback loop (C103-C104) is supported by citation (Stoeger et al., 2018). The logical inference about bias amplification (C101-C102) and the normative recommendation (C105) follow reasonably from these examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "4cda369a-601a-4f33-9d9e-994738d9adcd",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Many biologists lack the coding and mathematical skills needed to apply data science tools; reproducible analysis and machine learning require extensive technical expertise that exceeds the capacity of most current researchers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation about skill gaps (C107) reflects a known challenge in biological research. The enumeration of required skills (C110-C111) accurately describes the technical demands of reproducible research and machine learning. The conclusion about capacity limitations (C112) follows logically, though the manuscript offers no quantitative assessment of the gap.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "deee4e03-96f3-4fc7-8316-d734f60e04b3",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Data science infrastructure requires constant adaptation and maintenance; university incentive systems may not reward necessary activities like interdisciplinary collaboration; infrastructure burden may create inequities in access to these technologies globally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The maintenance requirements (C113) and obsolescence risk (C114) are logical observations about technology infrastructure. The discussion of incentive misalignment (C115-C116) is based on workshop presentation by Abel. The equity concerns (C117, C119) are reasonable inferences about resource disparities, though no specific evidence is provided about global south access.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "deac126f-2976-42a2-918f-a137738d37cb",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Data science should augment rather than replace human researchers; automation can free researchers for uniquely human tasks; examples like BrainDr demonstrate successful human-machine collaboration where citizen science enables algorithm training.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The normative position on augmentation (C120-C121) is a philosophical stance supported by the BrainDr example (C125-C127), which demonstrates practical human-machine collaboration with citation (Keshavan et al., 2018). The Kasparov example (C123-C124) provides additional support for optimism about human-machine collaboration, though it's from a different domain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "90415ed2-dcd4-4e7e-a7ff-8b1f24c51492",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Future biologists will focus on creative tasks like designing new protocols and providing scientific insight, while automation handles routine procedures; humans will maintain specialized skills and update robotic platforms with new protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C128-C134) are speculative predictions about future roles for biologists. While they represent reasonable extrapolations from current trends in automation, they lack empirical support or validation. The predictions about which tasks will be automated versus which require human expertise are logical but untested hypotheses about the future division of labor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "f7a0611d-a52f-43b7-ac87-31a91968496a",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Data science emerged from large internet datasets and differs from statistics in scale and focus on predictive models; it represents an interdisciplinary framework rather than a single technique; machine learning has achieved rapid progress in image/text annotation with applications expanding to genomics and gravitational waves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The historical account of data science emergence (C10-C12) is supported by the ImageNet citation. The definitional distinctions (C8-C9, C21) represent reasonable characterizations of the field. The applications to genomics and gravitational waves (C14-C15) are citation-supported. These claims provide necessary context but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    },
+    {
+      "id": "94305ed4-e9e7-4cca-9be3-f1bcee684de2",
+      "content_id": "c0fb615f-49fb-480c-a04e-8915ad54e3e6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A workshop was held in October 2018 at the Alan Turing Institute; various contextual observations about experimental parameters, natural language limitations, and laboratory automation capabilities are presented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The workshop occurrence (C23) is a factual statement. The other claims in this group (C27-C29, C44, C52) are either examples, general knowledge statements, or observations that provide context but do not constitute primary findings. They are accurate but serve supporting roles in the manuscript's argument.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:01:35.761562Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ff5e5caa-13d4-4bcf-b5d6-c1c76364ac01",
+      "result_id": "941117ad-04cb-4179-b44f-8468c0d984e2"
+    },
+    {
+      "claim_id": "a38a8648-07d5-4c41-a5fa-d801aaff7089",
+      "result_id": "941117ad-04cb-4179-b44f-8468c0d984e2"
+    },
+    {
+      "claim_id": "6ed675e2-842b-4e4b-9e0b-c104c83cc83c",
+      "result_id": "941117ad-04cb-4179-b44f-8468c0d984e2"
+    },
+    {
+      "claim_id": "ae8e4181-9805-4933-b7c1-e8d94cf81f75",
+      "result_id": "941117ad-04cb-4179-b44f-8468c0d984e2"
+    },
+    {
+      "claim_id": "ccb20956-6807-4e66-9162-a486bb922e67",
+      "result_id": "941117ad-04cb-4179-b44f-8468c0d984e2"
+    },
+    {
+      "claim_id": "086736a5-785e-4a0a-853f-a586edd77160",
+      "result_id": "941117ad-04cb-4179-b44f-8468c0d984e2"
+    },
+    {
+      "claim_id": "7298c3ba-a1b8-4847-8b34-7dfe870193cf",
+      "result_id": "670a1bff-6b69-4f3c-a881-ef29df037823"
+    },
+    {
+      "claim_id": "5cc5c153-2edf-4010-a0f8-d058b70de028",
+      "result_id": "670a1bff-6b69-4f3c-a881-ef29df037823"
+    },
+    {
+      "claim_id": "dfa1fa8a-4510-4f2d-9f9b-c49053412687",
+      "result_id": "670a1bff-6b69-4f3c-a881-ef29df037823"
+    },
+    {
+      "claim_id": "0272fb43-ed72-40df-b505-5f5c0f1bad4e",
+      "result_id": "670a1bff-6b69-4f3c-a881-ef29df037823"
+    },
+    {
+      "claim_id": "cc7c75e1-3d30-4940-ae1d-7e2f2383a8b7",
+      "result_id": "670a1bff-6b69-4f3c-a881-ef29df037823"
+    },
+    {
+      "claim_id": "ff98dff7-f3f9-4f0f-a32d-b74dbc361feb",
+      "result_id": "670a1bff-6b69-4f3c-a881-ef29df037823"
+    },
+    {
+      "claim_id": "aacaf811-f990-4361-9fa7-b107c3897e95",
+      "result_id": "670a1bff-6b69-4f3c-a881-ef29df037823"
+    },
+    {
+      "claim_id": "64417fa0-f7ca-421d-9906-dfdc155b177d",
+      "result_id": "670a1bff-6b69-4f3c-a881-ef29df037823"
+    },
+    {
+      "claim_id": "037ef98a-d355-4214-b999-f2052f4347f4",
+      "result_id": "670a1bff-6b69-4f3c-a881-ef29df037823"
+    },
+    {
+      "claim_id": "93feccaf-1769-4506-9c26-0823865b2961",
+      "result_id": "b277b478-09be-4139-a2b7-e953e3e75880"
+    },
+    {
+      "claim_id": "56355a70-7763-4218-98f3-f25916a5976b",
+      "result_id": "b277b478-09be-4139-a2b7-e953e3e75880"
+    },
+    {
+      "claim_id": "c14090b8-698b-443c-b353-e8420c2a26d0",
+      "result_id": "b277b478-09be-4139-a2b7-e953e3e75880"
+    },
+    {
+      "claim_id": "a89a3631-f1fd-433d-8a99-d8e52072fef7",
+      "result_id": "b277b478-09be-4139-a2b7-e953e3e75880"
+    },
+    {
+      "claim_id": "01653755-4918-4768-bb6d-af66acc2c1f7",
+      "result_id": "b277b478-09be-4139-a2b7-e953e3e75880"
+    },
+    {
+      "claim_id": "85612076-53dd-4c8b-9533-db994f6eb376",
+      "result_id": "b277b478-09be-4139-a2b7-e953e3e75880"
+    },
+    {
+      "claim_id": "eec99f01-00c2-4024-89f7-3f929f8a93f3",
+      "result_id": "b277b478-09be-4139-a2b7-e953e3e75880"
+    },
+    {
+      "claim_id": "e1fb1d6d-6235-4d1a-85d9-8e58d63f0372",
+      "result_id": "fee67e81-10d8-4aa6-9715-797df9026450"
+    },
+    {
+      "claim_id": "6132ac69-f0ff-45d2-8963-4c14f2dd445e",
+      "result_id": "fee67e81-10d8-4aa6-9715-797df9026450"
+    },
+    {
+      "claim_id": "2113c18e-1feb-4a5b-a221-720ba3fbe52d",
+      "result_id": "fee67e81-10d8-4aa6-9715-797df9026450"
+    },
+    {
+      "claim_id": "db5cd08f-a122-44b4-9643-5c63809a0fbc",
+      "result_id": "fee67e81-10d8-4aa6-9715-797df9026450"
+    },
+    {
+      "claim_id": "c44a477a-d993-4a90-a1f2-ff4f95ff80eb",
+      "result_id": "fee67e81-10d8-4aa6-9715-797df9026450"
+    },
+    {
+      "claim_id": "519679e4-d0f3-424a-91bb-f290ce071382",
+      "result_id": "fee67e81-10d8-4aa6-9715-797df9026450"
+    },
+    {
+      "claim_id": "9a80526f-e395-471a-a6fa-8357ee6cd748",
+      "result_id": "58ab2a4d-bee9-463a-adc2-4167c86c3fa0"
+    },
+    {
+      "claim_id": "df9291de-5c15-4037-b7e2-5a438e9d96ab",
+      "result_id": "58ab2a4d-bee9-463a-adc2-4167c86c3fa0"
+    },
+    {
+      "claim_id": "343ab1fc-848e-4685-b4eb-400aefab8a18",
+      "result_id": "58ab2a4d-bee9-463a-adc2-4167c86c3fa0"
+    },
+    {
+      "claim_id": "958bbdca-dd84-4dd5-aa7c-e3932b0311f1",
+      "result_id": "58ab2a4d-bee9-463a-adc2-4167c86c3fa0"
+    },
+    {
+      "claim_id": "e5aa5f2c-9fcc-4e84-858a-5242f3ffef14",
+      "result_id": "58ab2a4d-bee9-463a-adc2-4167c86c3fa0"
+    },
+    {
+      "claim_id": "506f76ef-09d4-4a20-bd98-58a1bdb79bce",
+      "result_id": "58ab2a4d-bee9-463a-adc2-4167c86c3fa0"
+    },
+    {
+      "claim_id": "55a239c7-60b7-4c67-bdc0-4ca91bdf3197",
+      "result_id": "58ab2a4d-bee9-463a-adc2-4167c86c3fa0"
+    },
+    {
+      "claim_id": "e7f98447-7a44-44ff-8cce-a4c631535162",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "6d499f21-a61e-4479-9b63-b682f5baf1f8",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "5367bb24-09d0-42d4-8164-fa1de1415f1b",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "29fe2ac0-4498-4f62-bc16-e74ed97a6f63",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "aa5cdfb9-e082-4265-ad46-b12f71e6d905",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "09e18d9b-1651-4300-887c-fd1f19a3bc33",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "003f0b9a-6b94-4b06-937b-4657e370825b",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "1cf063a0-e65a-4719-a301-bf591547cdf5",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "13bdf199-ada5-44bc-8365-494b1a10e5cc",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "b41f22a9-ce4d-4f75-8e85-ed94fdd93317",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "32a5e3b3-cb58-45c2-a05e-a6c1dae20092",
+      "result_id": "b85df76c-ba6d-4b5c-b68f-9fc4978a7108"
+    },
+    {
+      "claim_id": "ef8c9181-4bcc-4d43-93d4-3cd87e1008dd",
+      "result_id": "75b7fb24-8015-4465-a150-964a9377ce64"
+    },
+    {
+      "claim_id": "2a51ce81-f53c-44c7-b202-e9e617ea1862",
+      "result_id": "75b7fb24-8015-4465-a150-964a9377ce64"
+    },
+    {
+      "claim_id": "cc469242-2bf0-464c-b205-868f6e8e4e7b",
+      "result_id": "75b7fb24-8015-4465-a150-964a9377ce64"
+    },
+    {
+      "claim_id": "8cc2caf1-ea9f-4b0d-b425-7f88d510677a",
+      "result_id": "75b7fb24-8015-4465-a150-964a9377ce64"
+    },
+    {
+      "claim_id": "aec404a0-bd51-4456-b453-3893b52954c5",
+      "result_id": "75b7fb24-8015-4465-a150-964a9377ce64"
+    },
+    {
+      "claim_id": "e2ef86b3-468f-46c5-99b6-53a954efb52a",
+      "result_id": "75b7fb24-8015-4465-a150-964a9377ce64"
+    },
+    {
+      "claim_id": "8eb6b4ec-2961-4772-b2a7-7bcc0a94a66d",
+      "result_id": "75b7fb24-8015-4465-a150-964a9377ce64"
+    },
+    {
+      "claim_id": "637ff7dd-ad12-41ea-966f-656e8be728b4",
+      "result_id": "75b7fb24-8015-4465-a150-964a9377ce64"
+    },
+    {
+      "claim_id": "04ae77d1-c9d9-436b-8f21-29b0be613321",
+      "result_id": "57b79418-5d11-4682-9cf7-55980f078347"
+    },
+    {
+      "claim_id": "e5a0b8ca-7fe2-4743-b1e7-e1b8e5afe036",
+      "result_id": "57b79418-5d11-4682-9cf7-55980f078347"
+    },
+    {
+      "claim_id": "321c5e35-9b75-407b-aeed-d18cd60dde73",
+      "result_id": "57b79418-5d11-4682-9cf7-55980f078347"
+    },
+    {
+      "claim_id": "0bf07854-aaad-4dbc-bbf4-13a4c24880e2",
+      "result_id": "57b79418-5d11-4682-9cf7-55980f078347"
+    },
+    {
+      "claim_id": "29d68a2f-86c6-47c6-9ad9-6112bbdd19d6",
+      "result_id": "57b79418-5d11-4682-9cf7-55980f078347"
+    },
+    {
+      "claim_id": "0921295b-e9e3-489a-acc2-4f0f3779f13a",
+      "result_id": "0ca6bfd6-7ba3-41d1-8264-2dfcebde9119"
+    },
+    {
+      "claim_id": "f3b6475f-e9e8-43c6-950f-5db04b6f2f08",
+      "result_id": "0ca6bfd6-7ba3-41d1-8264-2dfcebde9119"
+    },
+    {
+      "claim_id": "57ed35d4-82c0-4b4a-9987-e4f7d6af5a08",
+      "result_id": "0ca6bfd6-7ba3-41d1-8264-2dfcebde9119"
+    },
+    {
+      "claim_id": "81f1d22f-a5ec-4fad-9ef2-a84bf80c9e75",
+      "result_id": "0ca6bfd6-7ba3-41d1-8264-2dfcebde9119"
+    },
+    {
+      "claim_id": "7e94e79b-53b8-4208-ae10-41cc490716aa",
+      "result_id": "0ca6bfd6-7ba3-41d1-8264-2dfcebde9119"
+    },
+    {
+      "claim_id": "6a683e18-76ae-42f2-8fb6-5702dee6ce16",
+      "result_id": "0ca6bfd6-7ba3-41d1-8264-2dfcebde9119"
+    },
+    {
+      "claim_id": "00c7693a-1096-41e5-b31f-00e214a8eed7",
+      "result_id": "0ca6bfd6-7ba3-41d1-8264-2dfcebde9119"
+    },
+    {
+      "claim_id": "7d13f8ef-15a2-4423-a0b5-0efeea8eb54c",
+      "result_id": "0ca6bfd6-7ba3-41d1-8264-2dfcebde9119"
+    },
+    {
+      "claim_id": "306ae6e2-c82e-41ef-90f8-7fe49adf190e",
+      "result_id": "06779f5f-e6b6-433e-b67f-21e0e0c9516c"
+    },
+    {
+      "claim_id": "f78f8373-e67b-4a6e-9464-18150744c218",
+      "result_id": "06779f5f-e6b6-433e-b67f-21e0e0c9516c"
+    },
+    {
+      "claim_id": "ac7549b9-62e3-40e4-a563-8d4b4c39d614",
+      "result_id": "06779f5f-e6b6-433e-b67f-21e0e0c9516c"
+    },
+    {
+      "claim_id": "95c44625-5e83-4077-a22a-683e676a2fbe",
+      "result_id": "06779f5f-e6b6-433e-b67f-21e0e0c9516c"
+    },
+    {
+      "claim_id": "28061614-29b4-4cf4-8792-8b99b3aa3d76",
+      "result_id": "06779f5f-e6b6-433e-b67f-21e0e0c9516c"
+    },
+    {
+      "claim_id": "4f1fbe41-8852-412d-b85f-7470a7a2fd05",
+      "result_id": "06779f5f-e6b6-433e-b67f-21e0e0c9516c"
+    },
+    {
+      "claim_id": "f65e5da2-a996-4d36-9e54-5648a164c603",
+      "result_id": "06779f5f-e6b6-433e-b67f-21e0e0c9516c"
+    },
+    {
+      "claim_id": "ab369578-7820-4198-9f6e-c79e7f6ee782",
+      "result_id": "4cda369a-601a-4f33-9d9e-994738d9adcd"
+    },
+    {
+      "claim_id": "c4f26ce7-0ee7-4a3a-8d0b-838e34df7126",
+      "result_id": "4cda369a-601a-4f33-9d9e-994738d9adcd"
+    },
+    {
+      "claim_id": "1dfa52c5-2006-47fa-8964-f5abe973cc04",
+      "result_id": "4cda369a-601a-4f33-9d9e-994738d9adcd"
+    },
+    {
+      "claim_id": "a4d00813-104c-4322-919d-066a9d8dae1e",
+      "result_id": "4cda369a-601a-4f33-9d9e-994738d9adcd"
+    },
+    {
+      "claim_id": "3eaf160c-6e1d-434b-b9ba-096a8d8f2ce3",
+      "result_id": "4cda369a-601a-4f33-9d9e-994738d9adcd"
+    },
+    {
+      "claim_id": "cc3f405c-6876-4281-9b7a-105bee14022b",
+      "result_id": "4cda369a-601a-4f33-9d9e-994738d9adcd"
+    },
+    {
+      "claim_id": "dd622001-7f8b-4f96-b0f7-4b673fa97fb0",
+      "result_id": "deee4e03-96f3-4fc7-8316-d734f60e04b3"
+    },
+    {
+      "claim_id": "8fb22908-89c1-46f6-976b-d9603e3e184c",
+      "result_id": "deee4e03-96f3-4fc7-8316-d734f60e04b3"
+    },
+    {
+      "claim_id": "1e8ba28b-685e-45b5-b64f-039bea8ce8aa",
+      "result_id": "deee4e03-96f3-4fc7-8316-d734f60e04b3"
+    },
+    {
+      "claim_id": "e1e8dd5f-69eb-4cd1-a2ba-bc5172ebb3ed",
+      "result_id": "deee4e03-96f3-4fc7-8316-d734f60e04b3"
+    },
+    {
+      "claim_id": "16061586-ef56-4fcb-9b87-05d3b7bfa6c6",
+      "result_id": "deee4e03-96f3-4fc7-8316-d734f60e04b3"
+    },
+    {
+      "claim_id": "54ccfa02-1284-440e-a49a-e3388f4b54b2",
+      "result_id": "deee4e03-96f3-4fc7-8316-d734f60e04b3"
+    },
+    {
+      "claim_id": "25657cbc-944a-4a6b-b22c-88dfdc336990",
+      "result_id": "deac126f-2976-42a2-918f-a137738d37cb"
+    },
+    {
+      "claim_id": "e293d03e-80db-426b-91b7-e76fcdadf377",
+      "result_id": "deac126f-2976-42a2-918f-a137738d37cb"
+    },
+    {
+      "claim_id": "c92d753d-2181-47ce-ba9e-2c7216606268",
+      "result_id": "deac126f-2976-42a2-918f-a137738d37cb"
+    },
+    {
+      "claim_id": "91934178-12c1-4c4f-9f8d-54583275e734",
+      "result_id": "deac126f-2976-42a2-918f-a137738d37cb"
+    },
+    {
+      "claim_id": "4015bb2f-52f7-4526-89f6-9612d97c48d6",
+      "result_id": "deac126f-2976-42a2-918f-a137738d37cb"
+    },
+    {
+      "claim_id": "8c0444d4-93cc-4ea2-a24f-f70d1dd538d0",
+      "result_id": "deac126f-2976-42a2-918f-a137738d37cb"
+    },
+    {
+      "claim_id": "4e7ed8b1-ef24-4efa-9f6e-cce74ab2874c",
+      "result_id": "deac126f-2976-42a2-918f-a137738d37cb"
+    },
+    {
+      "claim_id": "85f29b95-1c13-45e5-bb17-64d8b9c4ca75",
+      "result_id": "90415ed2-dcd4-4e7e-a7ff-8b1f24c51492"
+    },
+    {
+      "claim_id": "80f65f76-ecd8-4f40-bf11-6e6dd2e097fd",
+      "result_id": "90415ed2-dcd4-4e7e-a7ff-8b1f24c51492"
+    },
+    {
+      "claim_id": "fe39c2dd-d615-4c8f-a1ad-bfe1252ca9ab",
+      "result_id": "90415ed2-dcd4-4e7e-a7ff-8b1f24c51492"
+    },
+    {
+      "claim_id": "7aece57f-77bf-42ea-bdfd-fed8b1e21b81",
+      "result_id": "90415ed2-dcd4-4e7e-a7ff-8b1f24c51492"
+    },
+    {
+      "claim_id": "0a2b39e5-41d6-44e8-9bdc-a18a10c19af5",
+      "result_id": "90415ed2-dcd4-4e7e-a7ff-8b1f24c51492"
+    },
+    {
+      "claim_id": "5df69830-d03e-4472-ae3f-d57e1c0bfbcb",
+      "result_id": "90415ed2-dcd4-4e7e-a7ff-8b1f24c51492"
+    },
+    {
+      "claim_id": "c934c246-b34d-4a2e-b4e4-cc79b366b6a6",
+      "result_id": "90415ed2-dcd4-4e7e-a7ff-8b1f24c51492"
+    },
+    {
+      "claim_id": "9d7394ff-d680-45d9-90e1-0578457f0e95",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "0278a17e-3b3d-4798-86d2-e4051f92c975",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "10c235ee-61e2-480d-9df5-773d5493376d",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "9e6721bb-651a-4bd1-b108-9e5c1b7135a3",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "825276fa-8f4d-4ad3-bebb-2c9c4e5d866f",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "c612f4d2-9671-4605-a397-a8837b4d73db",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "8a99cea6-e28d-475b-95bf-6e8110b33fc0",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "7f4ef227-62bb-484b-8442-5d5951af7b67",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "f231bf18-706e-4e43-a05b-38907c97b9f7",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "451181df-8d6e-460c-9b92-3fc93760f782",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "e85c36c4-3a95-478a-b89b-948ab1978775",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "0290e557-6446-4182-b3f4-2a6630b1483c",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "da5e9cf2-4b10-4791-b9df-2e9a42787a87",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "b78de29d-3c1e-474e-ae28-fd2bb1456049",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "6829f1ce-b4fa-4fb1-8686-68f35fe14ef9",
+      "result_id": "f7a0611d-a52f-43b7-ac87-31a91968496a"
+    },
+    {
+      "claim_id": "39840c94-3257-4153-9a83-36f80f72ec72",
+      "result_id": "94305ed4-e9e7-4cca-9be3-f1bcee684de2"
+    },
+    {
+      "claim_id": "813cfbf8-e594-4cb3-b32c-1123eb93fab3",
+      "result_id": "94305ed4-e9e7-4cca-9be3-f1bcee684de2"
+    },
+    {
+      "claim_id": "77fe7dd2-e148-4ac3-a063-156b27928947",
+      "result_id": "94305ed4-e9e7-4cca-9be3-f1bcee684de2"
+    },
+    {
+      "claim_id": "9b69868b-14f0-439d-8221-a9f6a7799bfb",
+      "result_id": "94305ed4-e9e7-4cca-9be3-f1bcee684de2"
+    },
+    {
+      "claim_id": "432611fe-d2e4-43b8-af4f-365bd467415f",
+      "result_id": "94305ed4-e9e7-4cca-9be3-f1bcee684de2"
+    },
+    {
+      "claim_id": "2346c2e2-5e42-4a9f-b7e3-7ddf171b8eef",
+      "result_id": "94305ed4-e9e7-4cca-9be3-f1bcee684de2"
+    }
+  ],
+  "comparisons": []
+}

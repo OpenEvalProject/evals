@@ -1,0 +1,2151 @@
+{
+  "submission": {
+    "id": "dba08035-03be-4c52-8d5b-39d6c7490913",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:15:01.536865Z",
+    "updated_at": "2025-12-02T07:15:01.536865Z"
+  },
+  "content": [
+    {
+      "id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "submission_id": "dba08035-03be-4c52-8d5b-39d6c7490913",
+      "content_type": "manuscript",
+      "content_text": "# ASH1-catalyzed H3K36 methylation drives gene repression and marks H3K27me2/3-competent chromatin\n\n## Authors\n\n- Vincent T Bicocca<sup>1</sup> ([ORCID: 0000-0002-5702-4586](https://orcid.org/0000-0002-5702-4586)) \u2020\n- Tereza Ormsby<sup>2</sup>\n- Keyur K Adhvaryu<sup>3</sup>\n- Shinji Honda<sup>4</sup>\n- Eric U Selker<sup>1</sup> ([ORCID: 0000-0001-6465-0094](https://orcid.org/0000-0001-6465-0094)) \u2020\n\n### Affiliations\n\n1. Institute of Molecular Biology University of Oregon Eugene United States\n2. Department of Biochemistry Faculty of Science Charles University Prague Czech Republic\n3. St. George's University School of Medicine Grenada Caribbean\n4. Faculty of Medical Sciences University of Fukui Fukui Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nMethylation of histone H3 at lysine 36 (H3K36me), a widely-distributed chromatin mark, largely results from association of the lysine methyltransferase (KMT) SET-2 with RNA polymerase II (RNAPII), but most eukaryotes also have additional H3K36me KMTs that act independently of RNAPII. These include the orthologs of ASH1, which are conserved in animals, plants, and fungi but whose function and control are poorly understood. We found that Neurospora crassa has just two H3K36 KMTs, ASH1 and SET-2, and were able to explore the function and distribution of each enzyme independently. While H3K36me deposited by SET-2 marks active genes, inactive genes are modified by ASH1 and its activity is critical for their repression. ASH1-marked chromatin can be further modified by methylation of H3K27, and ASH1 catalytic activity modulates the accumulation of H3K27me2/3 both positively and negatively. These findings provide new insight into ASH1 function, H3K27me2/3 establishment, and repression in facultative heterochromatin.\n\n## Introduction\n\nMethylation of histone H3 at lysine 36 (H3K36me) is largely associated with euchromatic regions of eukaryotic genomes (Ho et al., 2014). It serves as a link to transcription, as a H3K36 lysine methyltransferase (KMT; for\u00a0example,\u00a0yeast Set2) is directly associated with RNA polymerase II (RNAPII) elongation, and the mark is enriched along actively transcribed genes (Kizer et al., 2005; Li et al., 2003; Morris et al., 2005). As a result, H3K36me is commonly cited as an indicator of \u2018active\u2019 chromatin and is thought to exist in an antagonistic relationship with heterochromatin (Gaydos et al., 2012). Cohabitation of H3K36me3 with either H3K27me2/3 or H3K9me2/3 on the same histone tail is rare (Jamieson et al., 2016; Voigt et al., 2012; Young et al., 2009), and deposition of one mark can inhibit deposition of the second (Schmitges et al., 2011; Voigt et al., 2012; Yuan et al., 2011). Paradoxically, studies of H3K36me have shown that this modification can recruit chromatin remodelers and modifiers that organize and deacetylate nucleosomes, stabilize histones by inhibiting exchange, and restrict access to DNA \u2013 effectively conferring features of heterochromatin (Carrozza et al., 2005; Fazzio et al., 2001; Lee et al., 2013; Li et al., 2007a; Smolle et al., 2012). In metazoans, these seemingly dissonant functions are resolved by a division of labor within the H3K36me pathway that: 1) links conversion of H3K36me2 to \u2013me3 with transcription elongation by physically tethering the Set2-ortholog to RNAPII, and 2) employs specialized RNAPII-independent KMTs to catalyze H3K36me1/2. The consequence is a complex and poorly understood regulatory network controlling access to and modification of the H3K36 substrate. Though much has been learned about H3K36me3 as a signal, there is little mechanistic understanding of how the RNAPII-independent KMTs are targeted and how their products function.\n\nThe complexity and significance of the H3K36me regulatory pathway is illustrated both in the range of fundamental genomic processes it underlies (e.g. transcription initiation and repression, alternative splicing, and DNA replication, recombination and repair) (Wagner and Carpenter, 2012), and the frequency with which it is disturbed during oncogenesis. The direct or indirect disruption of H3K36me by mutation of histone H3 genes defines distinct subtypes of pediatric chondroblastoma (H3.3K36M) and glioblastoma (H3.3G34R/V) (Fang et al., 2016; Lu et al., 2016; Schwartzentruber et al., 2012). In addition, recurrent mutation or overexpression of genes that methylate (Ash1L, Nsd1/2/3, and Setd2) or demethylate (Kdm2b and Kdm4a) H3K36 have been implicated as drivers of malignant transformation (Black et al., 2013; He et al., 2011; Jaju et al., 2001; Kovac et al., 2015; Liu et al., 2012; Mar et al., 2014; Cancer Genome Atlas Network, 2015). The prevalence of aberrant H3K36me regulation in cancer underscores the value of identifying therapeutic options for targeting this pathway. Unfortunately, the complexity and essential nature of the H3K36me pathway in higher organisms has restricted lines of inquiry and has left fundamental aspects of its function largely unexplored. Instead, much of the functional characterization of H3K36me has been performed in the yeasts S. cerevisiae and S. pombe, where H3K36me is nonessential and performed by a single RNAPII-associated KMT (Strahl et al., 2002). The simplicity of the H3K36me pathway in yeasts has proven valuable but has limited our understanding of the situation in eukaryotes that possess RNAPII-independent H3K36 KMTs, including filamentous fungi, plants, and animals (Janevska et al., 2018; Schuettengruber et al., 2017).\n\nWe present the filamentous fungus Neurospora crassa as an experimental bridge between yeasts and higher organisms, and use it to address unresolved questions concerning H3K36me. As in S. cerevisiae and S. pombe, H3K36me is not essential in N. crassa but unlike the case in the yeasts, we found that H3K36 methylation results from a division of labor between the RNAPII-associated SET-2 enzyme which can catalyze mono-, di-, and tri-methylation (Adhvaryu et al., 2005) and ASH1 (NCU01932). Notably, like higher organisms, Neurospora possesses both facultative heterochromatin \u2013 characterized by Polycomb Repressive Complex 2 (PRC2)-catalyzed H3K27me2/3 (Jamieson et al., 2013) \u2013 and constitutive heterochromatin \u2013 characterized by H3K9me3, HP1, DNA methylation and HDAC recruitment (Freitag et al., 2004; Tamaru and Selker, 2001; Tamaru et al., 2003). Both of these forms of heterochromatin are nonessential in Neurospora, facilitating studies of their interplay in vivo (Jamieson et al., 2016). The study presented here reveals a novel function for ASH1 and elucidates relationships between H3K36me, RNAPII, and facultative heterochromatin.\n\n## Results\n\n### ASH1 and SET-2 differentiate poorly- and robustly-transcribed genes\n\nOur examination of the H3K36me pathway in Neurospora began with analyses of set-2 and ash1 mutant strains. In preliminary work, we found that, unlike set-2, which is dispensable for viability, ash1 appears to be essential, as evidenced by the inability to generate a pure \u0394ash1 strain (Colot et al., 2006). Nevertheless, we found that we could build an ash1 strain that should be catalytically inactive by mutation of Y888, which is required for coordinating the target lysine in SET protein superfamily members (Figure 1A,B) (Dillon et al., 2005). Strains harboring the ash1(Y888F) mutation displayed severely compromised growth but only minor reductions in global H3K36me2 and \u2013me3 (Figure 1C,D,E). \u0394set-2 strains showed a dramatic loss of H3K36me2 but only minor impairment of growth (Figure 1C,D,E). We found that deletion of the \u2018Set2 Rpb1 Interacting\u2019 (SRI) domain of SET-2, which should decouple the enzyme from RNAPII (Youdell et al., 2008), resulted in a loss of H3K36me3 comparable to that seen with a set-2 deletion, suggesting that RNAPII-associated SET-2 is responsible for nearly all H3K36me3 (Figure 1G). Weak H3K36me3 signals remain in each of these backgrounds, raising the possibility that ASH1 is responsible for some H3K36me3. Consistent with this possibility, set-2; ash1(Y888F) double mutants showed additive loss of the H3K36me2 observed in the single mutants and loss of the residual H3K36me3 signal (Figure 1E,F,G). This suggested ASH1 has weak H3K36me3 catalytic activity in vivo \u2013 a surprise given the in vitro activity of its orthologs (An et al., 2011; Yuan et al., 2011) and that the protein has a tyrosine at amino acid position 886 (Figure 1B), the predicted site of the \u2018Y/F-switch,\u2019 which is characteristic of SET domains in mono/di-KMTs (Collins et al., 2005).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of ASH1-orthologs in Neurospora crassa, Drosophila melanogaster, and Homo sapiens. (B) Multiple sequence alignment of the SET domain of ASH1 orthologs. Highlighted: F/Y Switch and Y888. (C) Culture flasks demonstrating growth phenotypes of \u0394set-2 and ash1(Y888F) strains compared to WT. (D) Linear growth rates of \u0394set-2, ash1(Y888F), and WT. Biological replicates of the mutant strains were measured in triplicate. (E) Immunoblot analysis of H3K36me2 and H3K36me3 in WT, \u0394set-2, ash1(Y888F), and \u0394set-2; ash1(Y888F) backgrounds. Sibling replicates are included for each genotype. H3K36me signals were normalized to hH3 levels and compared to WT. (F) Immunoblot analysis of bulk H3K36me3 level in serial diluted extracts of WT, \u0394set-2, and \u0394set-2; ash1(Y888F) strains. (G) Immunoblot analysis of H3K36me3 levels in the set-2 (\u0394SRI) background.\n\nAs a step to identify the functions of ash1 and set-2, we investigated the distribution of their activities across the genome. Our observation that the catalytic activity of ASH1 is not essential provided an opportunity to analyze separately the H3K36me2 and \u2013me3 catalyzed by ASH1 and SET-2 by ChIP-seq in set-2 knockout and ash1(Y888F) strains, respectively. Overall, we found that H3K36me2 and \u2013me3 is associated with gene-rich DNA and excluded from constitutive heterochromatin, which is marked by DNA methylation and H3K9me3 (Figure 2A, Figure 2\u2014figure supplement 1A). H3K36me2 catalyzed by ASH1 or SET-2 was found in distinct domains that apparently together produce the overall pattern of wildtype (WT) H3K36me2 (Figure 2A,C). We found ASH1-catalyzed H3K36me2 was prominent across the promoter and body of the genes that are silent or poorly transcribed in WT (Figure 2B,C, Figure 2\u2014figure supplement 1B). Conversely, SET-2-catalyzed H3K36me2 was found associated predominantly with moderately- and highly-transcribed genes and was depleted from transcriptional start-sites (TSS) but enriched over gene bodies (Figure 2B,C). By this assay, SET-2 was found to mark most (>80%) genes, while ASH1 marked the minority (~20%) of genes that lacked SET-2-catalyzed H3K36me2 (p-value<10\u22124) (Figure 2B, Figure 2\u2014figure supplement 1C). In the ash1 mutant, H3K36me3 was found restricted to sites of SET-2-catalyzed H3K36me2 (Figure 2C), and the intergenic H3K36me3 seen in WT was absent. Similarly, H3K36me3 at domains of ASH1-catalyzed H3K36me2 was lost in the ash1 mutant. Consistent with the results of the western blot (Figure 1E), H3K36me3 was not entirely lost when set-2 was deleted, and signal remained at regions with intense ASH1-catalyzed H3K36me2 (Figure 2C, Figure 2\u2014figure supplement 1D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative IGV tracks of H3K36me2 ChIP-seq in WT, \u0394set-2, and ash1(Y888F) backgrounds. Gene location, DNA methylation (to highlight constitutive heterochromatin), and \u2018input\u2019 tracks are included for reference. All of linkage group (LG) III is shown. (B) H3K36me2 profiles as determined by ChIP-seq in set-2 and ash1(Y888F) backgrounds. Metaplots divide the H3K36me2 profile across gene quartiles determined by WT expression (i.e., \u20181 st\u2019=genes in the lowest 25% of WT expression). Heatmaps were independently sorted by signal intensity in descending order. (C) IGV tracks of H3K36me2 and H3K36me3 ChIP-seq in WT, \u0394set-2, and ash1(Y888F) backgrounds. Gene location, WT RNA abundance, DNA methylation, and input tracks are included for reference. Representative SET-2-rich and ASH1-rich regions are presented in the left and right panels, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Gene location and DNA methylation are included for reference. All of LGIII is shown. (B) Average H3K36me2 signal was determined for each gene in the \u0394set-2 background and the distribution of signal intensity is represented in a histogram (red). Average expression level (RPKM) in WT is overlayed as a Whisker plot (black) for each quintile of H3K36me2 intensity. Pseudo-reads of 1 were assigned to genes with expression values\u00a0<1. Whisker plot shows median, 25th, 75th, and 99th percentiles, and outliers. (C) Average genic H3K36me2 levels (reads/bp) were normalized to \u2018background\u2019 as defined by average H3K36me2 level across each centromere. Log2 values are plotted in the ash1(Y888F) background (X-axis) and \u0394set-2 background (Y-axis). Genes with positive X- or Y-axis values were defined as SET-2-marked or ASH1-marked, respectively. (D) H3K36me3 ChIP results are shown for wt, \u0394set-2, and \u0394set-2; ash1(Y888F) strains (each performed in triplicate) at three genomic regions with distinct H3K36me profiles. 8:G3 is a constitutive heterochromatin region that lacks H3K36me and is used to assess \u2018background\u2019 in the ChIP. hH4 is an actively expressed gene that is marked by SET-2-catalyzed H3K36me but not ASH1-catalyzed H3K36me. NCU07152 in a silent \u2018uncharacterized gene\u2019 that is densely marked by ASH1-catalyzed H3K36me and H3K27me2/3.\n\n### ASH1-catalyzed H3K36me maintains repression of poorly transcribed genes\n\nWe carried out RNAseq analyses to assess the effect of ASH1 and SET-2 activity on gene expression. We found that both ash1 and set-2 mutants have substantial, but distinct, changes in gene expression relative to WT. The set-2 deletion showed a relatively symmetrical distribution of gene expression changes with 916 genes up-regulated and 1222 genes down-regulated (Figure 3A). In contrast, the ash1 mutant predominantly resulted in up-regulation (1261 genes up-regulated; 228 genes down-regulated; Figure 3A). When we limited our analysis to ASH1-marked genes, they were almost exclusively up-regulated in the ash1(Y888F) background, while ASH1-unmarked genes showed no pattern of altered regulation (Figure 3B, Figure 3\u2014figure supplement 1). When ASH1-marked genes were separated into \u2018SET-2-unmarked\u2019 and \u2018SET-2-comarked\u2019 categories, we found that co-marked genes were significantly up-regulated, while SET-2-unmarked genes showed little or no change in expression (Figure 3C). Collectively, these results imply that ASH1 and SET-2 independently catalyze H3K36me2 in a manner that differentiates the genome into regions of poorly- or robustly-transcribed genes. The repressed state of poorly transcribed genes is largely dependent upon ASH1 catalytic activity. Upon inactivation of ASH1, genes that are subject to derepression become co-marked by transcription-coupled SET-2.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig3-v1.jpg)\n\n**Figure 3.:** (A) Gene expression changes are displayed as scatter plots of log2-fold changes vs. mean of normalized counts for ash1(Y888F) and \u0394set-2 strains compared to WT controls. Duplicate biological replicates were analyzed, and points with p values\u00a0<\u00a00.1 are colored red. (B) Metaplot and heatmap illustrating change in RNA abundance as determined by RNAseq. ash1(Y888F) and WT replicates were normalized, averaged, and log2-ratios generated for ASH1-marked genes. The parent strain, N2930 (see Materials and Methods), is included as a control. (C) Frequency distribution of ash1(Y888F)/WT expression-change for genes marked by H3K36me2 in \u0394set-2 strain (\u2018ASH1-marked\u2019; Guassian fit). SET-2-unmarked (blue) and SET-2-comarked (red) compartments are separated and median values highlighted. Statistical significance (two-tailed p-value<10\u22124) was determined by a two sample Mann-Whitney test (Mann and Whitney, 1946).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig3-figsupp1-v1.jpg)\n\n### ASH1-catalyzed H3K36me delineates H3K27me2/3-competent chromatin\n\nThe presence of ASH1-catalyzed H3K36me at silent and poorly transcribed genes prompted us to investigate its relation to PRC2-catalyzed H3K27me2/3, which is also in domains of silent genes (Jamieson et al., 2013). Interestingly, we found nearly all (220/232) annotated domains of H3K27me2/3-marked chromatin (Klocko et al., 2018) are also marked with ASH1-catalyzed H3K36me2 (Figure 4A). When we looked at where the 12 absent domains were located, we saw they were all found in sub-telomere regions characterized by the presence of H3K27me2/3, H3K9me3, and DNA methylation (Jamieson et al., 2018), a finding consistent with ASH1-catalyzed H3K36me2 being excluded from constitutive heterochromatin (Figure 2A). When we examined the promoter region of individual genes, we again saw that the distribution of H3K27me2/3 overlapped with that of ASH1-catalyzed H3K36me2 (Figure 4B). Previous mass spectrometry analyses of N. crassa histone H3 suggested K27 and K36 methylation do not typically occur on the same molecule (Jamieson et al., 2016), implying that these marks exist as \u2018asymmetric\u2019 modifications on the same nucleosome and/or on adjacent nucleosomes (Voigt et al., 2012; Yuan et al., 2011). In all, we found 30% of ASH1-marked genes were co-marked by H3K27me2/3, and this co-marking was predominantly found at domains of ASH1-catalyzed H3K36me2 that lacked appreciable SET-2-catalyzed H3K36me2 (Figure 4C,D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative IGV tracks for H3K27me2/3 in WT and H3K36me2 as catalyzed by ASH1. All of LGIII is shown. (B) Heatmap showing the distribution of average H3K27me2/3 signal intensity in WT (left) and ASH1-catalyzed H3K36me2 (right) across the promoter region of all genes. Genes are sorted by WT H3K27me2/3 intensity. (C) Representative IGV tracks of H3K27me2/3 in WT and H3K36me2 as catalyzed by ASH1 or SET-2. (D) Fraction of ASH1-marked genes co-marked by SET-2, SET-7, or both SET-2 and SET-7. The distribution of SET-7/ASH1-comarked genes (yellow circle) in the SET-2-comarked (red) and SET-2-unmarked (blue) compartments shows that most (411/592) ASH1/SET-7 doubly marked genes are not marked by SET-2. Statistical significance (two-tailed p-value<10\u22124) was determined by the Chi-square test. (E) H3K27me2/3 ChIPseq tracks from WT (black) and\u0394npf (purple) strains are compared to H3K36me2 ChIPseq in \u0394set-2. Depicted regions were selected for their multiple aberrant domains of H3K27me3. (F) H3K27me2/3 ChIPseq track from WT (black) and ectopic telomere-repeat (green) strains are superimposed and compared to H3K36me2 ChIPseq in a \u0394set-2 strain.\n\nThe consistent overlap of ASH1-catalyzed H3K36me with native H3K27me made us question whether the pattern would hold true in mutant backgrounds in which we had observed new domains of H3K27me. To test this, we first re-examined the H3K27me2/3-defects caused by deletion of the Drosophila Nurf55/Caf1 ortholog, Neurospora p55 (NPF) (Jamieson et al., 2013). Though the predominant effect of npf deletion is loss of sub-telomeric H3K27me2/3 (Jamieson et al., 2013), we also found new domains of H3K27me3 and, interestingly, these were limited to regions of ASH1-catalyzed H3K36me2 (Figure 4E). Next, we took advantage of a situation in which H3K27me2/3 was induced in a normally euchromatic region by insertion of telomere repeats in the vicinity (Jamieson et al., 2018). Using an insertion at the csr-1 locus, we found that the discontinuous spread of H3K27me2/3 from the repeats correlated perfectly with the presence of ASH1-catalyzed H3K36me2 (Figure 4F). Altogether, these analyses show that a fraction of ASH1-marked chromatin is asymmetrically modified by PRC2 to generate overlapping profiles of H3K27me and H3K36me at genes that are most refractory to derepression, and that H3K27me-competency is a distinguishing characteristic of ASH1-marked chromatin.\n\n### ASH1 activity influences H3K27me2/3 accumulation\n\nDrosophila Ash1 has previously been reported to inhibit PRC2-mediated repression by preventing H3K27me2/3 accumulation (Papp and M\u00fcller, 2006). Similarly, H3K36me3 has been shown to inhibit catalysis of H3K27me2/3 in vitro (Yuan et al., 2011). We therefore asked if ASH1-catalyzed H3K36me is influenced by loss of H3K27me, and if H3K27me is influenced by loss of ASH1 activity. Immunoblotting and ChIPseq in a double-mutant strain lacking SET-2 and the H3K27 KMT, SET-7, revealed ASH1-catalyzed H3K36me2 was unchanged by loss of H3K27me2/3 across the genome (Figure 5\u2014figure supplement 1), indicating that ASH1-catalyzed H3K36me2 is not dependent on PRC2-catalyzed H3K27me2/3.\n\nWe next asked whether some fraction of normal H3K27me regions depend on H3K36 methylation directed by ASH1. To test this possibility, we performed H3K27me2/3 ChIP in the ash1(Y888F) background. Inactivation of ASH1 showed a striking effect on H3K27me2/3, resulting in reduction or complete loss of the mark across roughly one-third of ASH1/PRC2-comarked genes (Figure 5A,B). The loss of ASH1-catalyzed H3K36me and resultant loss of H3K27me2/3 was accompanied by accumulation of H3K27 acetylation (ac) and derepression of affected genes (Figure 5C,D, Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig5-v1.jpg)\n\n**Figure 5.:** (A) Representative IGV tracks of H3K27me2/3 in WT and ash1(Y888F) are shown for LGVI. Gene locations are included for reference. (B) Heatmap highlighting frequency and intensity of H3K27me2/3 loss over in the ash1(Y888F) background. (C) IGV tracks of H3K27me2/3 and H3K27ac in WT and ash1(Y888F) strains. Regions of H3K27ac accumulation correlating with gene upregulation (\u0394RNA track) are highlighted. (D) Metaplot of H3K27ac accumulation in WT (black) and ash1(Y888F) (blue) strains at either all WT H3K27me2/3-marked genes (dashed line) or genes identified as \u2018ASH1-dependent\u2019 (solid line). (E) Change in H3K27me2/3 signal intensity by ChIPseq in the ash1(Y888F) background. Only genes established as \u2018unmarked\u2019 are included (Figure 4B). (F) ChIPseq tracks demonstrating H3K27me2/3 gains in ash1(Y888F) and comparison to H3K36me2 in the set-2 background. Depicted regions were selected for their multiple aberrant domains of H3K27me3.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** All of LGIV is included in (A) and a zoomed-in segment of LGIII in (B). (C) Immunoblotting H3K36me2 and H3 in WT, set-2, and set-2; set-7 strains.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Results for \u0394set-7 are derived from Klocko et al., 2016.\n\nIn addition to identifying ASH1-dependent H3K27me2/3, we also found domains of H3K27me2/3-competent chromatin where the ASH1 mark prevented H3K27me2/3. In the ash1 mutant, 128 genes gain H3K27me2/3 (defined as\u00a0>2 fold increase over background) (Figure 5E), whereas 180 genes lost the H3K27me2/3 mark (Figure 5B). Importantly, these new domains of PRC2-marked chromatin in the ash1(Y888F) strain are delineated by regions normally marked with ASH1-catalyzed H3K36me2 (Figure 5F). Thus, ASH1 catalyzed H3K36me can both positively and negatively influence H3K27me2/3 accumulation.\n\n## Discussion\n\nWith the notable exception of yeasts, the H3K36me pathway of eukaryotes is divided between Set2 orthologs (SET2D in humans), which can catalyze mono-, di-, and tri-methylation, and a group of specialized KMTs that largely catalyze mono/di-methylation (Wagner and Carpenter, 2012). Study of the functional relationships between Set2-orthologs and the mono/di-KMTs has been limited, in part because numerous dedicated H3K36 mono/di-KMTs are found in higher organisms (e.g. seven in mammals) and these enzymes \u2013 as well as the Set2-ortholog \u2013 are typically essential, making determination of their independent actions difficult or impossible (Wagner and Carpenter, 2012). To address unresolved questions regarding the functional relationship between H3K36 KMTs, we took advantage of the simplified H3K36me pathway of N. crassa, which we showed consists of two H3K36 KMTs, SET-2 and ASH1. Unlike SET-2 (Adhvaryu et al., 2005), ASH1 appears to be essential for viability but we found that the organism tolerates a catalytic null mutation of ash1, allowing us to assess the relative contribution of the two KMTs. By dissecting the roles of these enzymes, we uncovered a previously undescribed pathway that connects ASH1-catalyzed H3K36me to repression of poorly transcribed genes. Curiously, we found that much of ASH1-marked chromatin is characterized by H3K27me2/3-competency. Not only did native domains of H3K27me overlap with domains of ASH1-catalyzed H3K36me, but experimentally-induced domains of H3K27me2/3 selectively spread to ASH1-marked chromatin.\n\nRNAPII-associated SET-2 is generally considered to be the only KMT capable of catalyzing H3K36me3 (Adhvaryu et al., 2005), and based upon biochemical studies with Drosophila and human orthologs (An et al., 2011; Yuan et al., 2011) we expected ASH1 to act as a dedicated H3K36 mono/di-KMT. Conservation of a tyrosine residue at the \u2018F/Y-switch\u2019 of its SET domain (Figure S1A) supported this expectation (Collins et al., 2005). Results of western blotting suggested, however, that ASH1 is responsible for\u00a0~5% of global H3K36me3 (Figure 1) in the absence of SET-2, and the ASH1 homologs of Fusarium fugikuroi and Plasmodium falciparum have also been reported to have H3K36me3 activity (Janevska et al., 2018; Jiang et al., 2013). Although we detected ASH1-catalyzed H3K36me3 in vivo with different, independently validated, antibodies and techniques, it remains possible these antibodies recognized residual H3K36me2 or that ASH1 can convert H3K36me2 to \u2013me3 but only in the absence of SET-2.\n\nNeurospora SET-2 catalyzes H3K36me2/3 across the bodies of active genes, much as in yeast (Krogan et al., 2003; Li et al., 2003), whereas ASH1 is responsible H3K36me2/3 across large domains that encompass multiple genes and intergenic regions. Interestingly, genes marked by ASH1 are silent or poorly transcribed and are largely reliant upon the mark for their repressed state. Genes that were derepressed by inactivation of ASH1 were mostly \u2018SET-2-comarked,\u2019 that\u00a0is, they only lost H3K36me in the absence of both KMTs. It will be interesting to learn how ASH1 is directed to where it acts, that\u00a0is, in domains of lowly transcribed genes. Neurospora ASH1 does not display telling conserved protein domains, but does have an AT-hook that might interact with the minor-groove of A/T-rich DNA. Constitutive heterochromatin in Neurospora is characterized by A/T-rich DNA (Cambareri et al., 1989), but we found no indication that ASH1 functions at constitutive heterochromatin; in fact, H3K36me appears to be normally excluded from such regions.\n\nOur finding that ASH1 has a function in repression is not entirely surprising given prior evidence of H3K36me3 in recruiting repressive chromatin machinery (Fazzio et al., 2001; Keogh et al., 2005; Strahl et al., 2002) but it was striking to see the extent of its repressive influence. When compared to PRC2-catalyzed H3K27me2/3 (Jamieson et al., 2013), ASH1-catalyzed H3K36me appears to be the predominant repressive modification of poorly transcribed genes (H3K27me covers only\u00a0~30% of silent, ASH1-marked, genes). Given the collaborative relationship between H3K36 KMTs, chromatin remodelers, and histone deacetylases (HDACs) described in other organisms (Lee et al., 2013), we predict a role for nucleosome positioning and histone deacetylation in ASH1-mediated repression. Here, we observed an accumulation of H3K27ac following loss of ASH1-dependent H3K27me2/3, but it is unclear if this is a passive product of H3K27me2/3 loss or if there is an active role for H3K27me2/3 in exclusion.\n\nFuture studies should examine the Neurospora counterpart of the yeast HDAC complex, RPD3 Small (RPD3S), which includes the H3K36me3 reader, EAF-3 (Joshi and Struhl, 2005; Keogh et al., 2005). RPD3S activity appears to be dependent upon proper nucleosome spacing established by Isw2 and Chd1, which together apparently organize and stabilize nucleosomes to restrict internal initiation by RNAPII in the wake of transcription (Carrozza et al., 2005; Fazzio et al., 2001; Lee et al., 2013; Li et al., 2007a; Smolle et al., 2012). Importantly, this mechanism is dependent upon transcription, as H3K36me3 deposition by SET-2 is strictly tied to elongating RNAPII (Youdell et al., 2008). Our results support a related transcription-independent mechanism that maintains gene repression at facultative heterochromatin. ASH1\u00a0would establish the H3K36me mark required to recruit RPD3S, while chromatin remodelers would establish proper nucleosome positions to facilitate RPD3S deacetylase activity. To test this hypothesis, further study of the RPD3S HDAC will be required, but it will be challenging as the N. crassa ortholog of Rpd3 (HDA-3) is essential, and other units of the complex \u2013 EAF-3, SIN3, and NPF \u2013 are components of various other chromatin modifying complexes (Jamieson et al., 2013; Sathianathan et al., 2016). Notably, orthologs of EAF-3 and NPF (Mrg15 and Nurf55, respectively) have recently been identified as Ash-1 complex members in Drosophila (Huang et al., 2017; Schm\u00e4hling et al., 2018), further supporting a connection to RPD3.\n\nPerhaps the most surprising observation from our study was the substantial overlap of H3K27me2/3 at ASH1-marked chromatin. Neurospora H3K27me2/3 is catalyzed by a PRC2 complex that is highly similar to those found in metazoans (Jamieson et al., 2013) but N. crassa has no apparent PRC1 components. Even in higher organisms, the mechanism of repression mediated by PRC2 and H3K27me2/3 is far from clear, necessitating additional studies. Interestingly, we observed in Neurospora that loss of ASH1-dependent H3K36 methylation was associated with both losses and gains of H3K27me2/3. Early work with Drosophila gave evidence that ASH1 opposes the action of PRC2 function (Klymenko and M\u00fcller, 2004; Shearn, 1989), consistent with the observation that the presence of H3K36me on a histone tail can inhibit PRC2 activity in cis (Yuan et al., 2011), but our findings suggest the situation is more complicated. We found new domains of H3K27me2/3 at ASH1-regulated regions when ASH1 was inactivated, suggesting the presence of the ASH1 mark prevents H3K27me2/3. In addition, we found that ASH1 drives repression, and derepression associated with ASH1 inactivation is frequently accompanied by H3K27me2/3 loss. These seemingly opposing activities may reflect differential histone modifications and accompanying effector proteins found at those regions. Or perhaps, similar to plants, different forms of PRC2 may exist that respond differently to the presence of H3K36me (Schmitges et al., 2011). These possibilities will be interesting to investigate in the future. Finally, it is important to note that though it was initially surprising to find genome-wide colocalization of H3K27me2/3 with ASH1-catalyzed H3K36me2, this does not appear to be unique to Neurospora and other fungi, as recent work with embryonic stem cells revealed apparent cross-talk of these marks (Streubel et al., 2018).\n\nOur work supports a model in which the genes of N. crassa are separated into two compartments depending upon their source of H3K36me (Figure 6). Actively transcribed genes possess SET-2-catalyzed H3K36me2/3 specific to the gene body, while silent and infrequently transcribed genes are covered in large domains of ASH1-catalyzed H3K36me2/3. In both cases, H3K36me appears to act as a repressive mark, protecting active genes against internal cryptic-transcription (Li et al., 2007b) and blocking general transcription at inactive genes. The repressed state of ASH1-modified chromatin is largely contingent upon the presence of ASH1-catalyzed H3K36me, but can be further modified with H3K27me2/3 catalyzed by the PRC2 complex to support repression.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41497/elife-41497-fig6-v1.jpg)\n\n**Figure 6.:** Neurospora genes can be divided into two groups depending upon their source of H3K36me.\u00a0SET-2 marks the gene body of actively transcribed genes, and conversion to the trimethylated state is tied to transcription. ASH1 establishes large domains of H3K36me that covers silent genes and flanking regions. ASH1 predominantly deposits H3K36me2, but also appears to have the capacity to produce H3K36me3; the significance of di- versus tri-methylation remains unclear. In both cases, H3K36me appears to have a repressive function, protecting active genes from cryptic transcription and maintaining general repression of inactive genes. Genes marked by ASH1 can be co-modified by PRC2 with H3K27me2/3. Genes marked by both ASH1 and PRC2 appear \u2018locked\u2019 in a dormant state (i.e., they are less likely to be activated in the absence of ASH1).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>WT</td>\n      <td>FGSC#6103</td>\n      <td>N623</td>\n      <td>mat A; his-3</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>WT</td>\n      <td>Honda and Selker, 2008</td>\n      <td>N2930</td>\n      <td>mat A; his-3;  \u2206mus-52::bar</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>WT</td>\n      <td>FGSC#2489</td>\n      <td>N3752</td>\n      <td>mat A</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>WT</td>\n      <td>FGSC#4200</td>\n      <td>N3753</td>\n      <td>mat a</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>ash1-3xFLAG</td>\n      <td>this study</td>\n      <td>N4865</td>\n      <td>mat A; his-3; ash1- 3xFLAG::hph</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>ash1(Y888F)</td>\n      <td>this study</td>\n      <td>N4877</td>\n      <td>mat A; his-3; ash1(Y888F)\u2212 3xFLAG::hph;  \u2206mus-52::bar</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>ash1(Y888F)</td>\n      <td>this study</td>\n      <td>N4878</td>\n      <td>mat A; his-3; ash1(Y888F) \u22123xFLAG::hph</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>ash1(Y888F)</td>\n      <td>this study</td>\n      <td>N6268</td>\n      <td>mat A; his-3; ash1(Y888F) \u22123xFLAG::hph</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>ash1(Y888F)</td>\n      <td>this study</td>\n      <td>N6269</td>\n      <td>mat A; his-3; ash1(Y888F) \u22123xFLAG::hph</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>ash1(Y888F)</td>\n      <td>this study</td>\n      <td>N6875</td>\n      <td>mat a; ash1(Y888F)\u22123x FLAG::nat</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>ash1(Y888F)</td>\n      <td>this study</td>\n      <td>N6878</td>\n      <td>mat a; ash1(Y888F) \u22123xFLAG::nat;  \u2206mus-52::bar</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>\u2206set-2</td>\n      <td>FGSC#15504</td>\n      <td>N5761</td>\n      <td>mat a; \u2206set-2::hph</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>\u2206set-2</td>\n      <td>this study</td>\n      <td>N6335</td>\n      <td>mat A;  \u2206set-2::hph</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>set-2(\u2206SRI)</td>\n      <td>this study</td>\n      <td>N6956</td>\n      <td>mat A; set-2(\u2206SRI) ::nat</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>\u2206set-7</td>\n      <td>FGSC# 11182</td>\n      <td>N4718</td>\n      <td>mat a; \u2206set-7::hph</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>\u2206set-7</td>\n      <td>Jamieson et al., 2018</td>\n      <td>N4730</td>\n      <td>mat A; \u2206set-7::bar</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>\u2206npf</td>\n      <td>FGSC# 13915</td>\n      <td>N4721</td>\n      <td>mat a; \u2206npf::hph</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>ash1(Y888F);  \u2206set-2::nat</td>\n      <td>this study</td>\n      <td>N6266</td>\n      <td>mat A; his-3; ash1(Y888F) \u22123xFLAG::hph;  \u2206set-2::nat; \u2206mus-52::bar</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>ash1(Y888F);  \u2206set-2</td>\n      <td>this study</td>\n      <td>N6267</td>\n      <td>mat A; his-3; ash1(Y888F) \u22123xFLAG::hph;  \u2206set-2::nat</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>\u2206set-2;  \u2206set-7</td>\n      <td>this study</td>\n      <td>N6333</td>\n      <td>mat ?; \u2206 set-2::hph; \u2206set-7::bar</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>\u2206set-2;  \u2206set-7</td>\n      <td>this study</td>\n      <td>N6334</td>\n      <td>mat ?; \u2206set-2::hph;  \u2206set-7::bar</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (N. crassa)</td>\n      <td>csr-1: (TTAGGG)17</td>\n      <td>Jamieson et al., 2018</td>\n      <td>N6383</td>\n      <td>mat a; csr-1: (TTAGGG)17; \u2206mus-52::bar</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>H3K36me3</td>\n      <td>Cell  Signaling</td>\n      <td>Cat#4909S, Clone (D5A7))</td>\n      <td>immunoblot (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>H3K36me2</td>\n      <td>Abcam</td>\n      <td>Cat#ab9049</td>\n      <td>immunoblot (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Histone H3</td>\n      <td>Abcam</td>\n      <td>Cat#ab1791</td>\n      <td>immunoblot (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IRDye 680RD Goat-anti-Rabbit secondary antibody</td>\n      <td>Licor</td>\n      <td>Cat#926\u201368071</td>\n      <td>immunoblot (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>H3K27me3</td>\n      <td>Millipore</td>\n      <td>Cat#07\u2013449</td>\n      <td>Chromatin immuno precipitation</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>H3K36me3</td>\n      <td>Abcam</td>\n      <td>Cat#ab9050</td>\n      <td>Chromatin immuno precipitation</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>H3K36me2</td>\n      <td>Abcam</td>\n      <td>Cat#ab9049</td>\n      <td>Chromatin immuno precipitation</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>H3K27ac</td>\n      <td>ActiveMotif</td>\n      <td>Cat#39133</td>\n      <td>Chromatin immuno precipitation</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>H3K27me2/3</td>\n      <td>ActiveMotif</td>\n      <td>Cat#39535</td>\n      <td>Chromatin immuno precipitation</td>\n    </tr>\n  </tbody>\n</table>\n\n### Neurospora strains and molecular analyses\n\nAll Neurospora strains used in this study are listed in Key resources table. Strains were grown, crossed, and maintained according to standard procedures (Davis, 2000). Knockout and mutant strains were either taken from the Fungal Genetic Stock Center knockout collection (Colot et al., 2006; McCluskey et al., 2010) or generated as previously described (Honda and Selker, 2009). ASH1 mutations were made with a QuickChange site-directed mutagenesis kit (Stratagene) and PCR-based mutagenesis with the In-Fusion HD cloning system (Takara). The follow primer sets were used for quantitative real-time (qRT) PCR: 8:G3 (CGTAGAGAAGGGAAGTAGTAG; GCACAATACGAAGTCACTTTTCGCC), NCU07152 (GGCAACAGAGGCTGTGCTGC, CGCAAAGATGCCGCACCTGTC), hH4 (CATCAAGGGGTCATTCAC, TTTGGAATCACCCTCCAG).\n\n### Immunoblotting\n\nImmunoblotting was performed as previously described (Honda and Selker, 2008). Briefly, Neurospora extracts were produced by sonication in extraction buffer (50 mM Hepes pH7.5, 1 mM EDTA, 150 mM NaCl, 10% Glycerol, 0.02% NP40) supplemented with cOmplete ULTRA protease inhibitor cocktail tablets (Roche, 05892970001). The following antibodies were used for immunoblotting: H3K36me3 (Cell Signaling, Cat#4909S, Clone (D5A7)), H3K36me2 (Abcam, Cat#ab9049), Histone H3 (Abcam, Cat#ab1791), IRDye 680RD Goat-anti-Rabbit secondary antibody (Licor, Cat#926\u00a0\u2013\u00a068071).\n\n### ChIP and library preparation\n\nChIP was performed as previously described (Jamieson et al., 2016). qPCR was performed using the Quanta Biosciences PerfeCTa Sybr Green FastMix and an Applied Biosystems Step One Plus Real-Time PCR System. ChIP-libraries were prepared as previously described (Jamieson et al., 2016) and sequencing was performed using an Illumina NextSeq 500 or HiSeq 4000 sequencer with 75- or 100-nt single-end reads, respectively. All sequencing reads were mapped to the corrected N. crassa OR74A (NC12 genome) (Galazka et al., 2016) using Bowtie2 (Langmead and Salzberg, 2012). ChIP-seq read coverage was averaged, normalized, and analyzed using tools available from deepTools2 (Ram\u00edrez et al., 2016) and SAMtools (Li et al., 2009) on the open-source platform Galaxy (Afgan et al., 2016). Sequencing tracks are displayed as 25-nt-window TDF or bigWig files with the Integrative Genomics Viewer (IGV) (Robinson et al., 2011). The following antibodies were used for ChIP: H3K27me3 (Millipore, Cat#07\u00a0\u2013\u00a0449), H3K36me3 (Abcam, Cat#ab9050), H3K36me2 (Abcam, Cat#ab9049), H3K27ac (ActiveMotif, Cat#39133), H3K27me2/3 (ActiveMotif, Cat#39535).\n\n### RNA-seq\n\nRNA was isolated (Jamieson et al., 2013), DNase treated (Thermo Fisher Scientific), cleaned (Agencourt RNAClean XP beads; Beckman Coulter), and Poly-A\u00a0+RNA seq libraries prepared (KAPA Stranded mRNA-seq kit; KAPA Biosystems) and sequenced on a Illumina NextSeq 500 or HiSeq 4000 sequencer with 75- or 100-nt single-end reads, respectively. High-quality (Kmer filtering) adapter-trimmed reads were identified (Stacks) (Catchen et al., 2013), mapped (TopHat2) (Kim et al., 2013), sorted (SAMTools) (Li et al., 2009), and directionality-preserved read numbers for genes were calculated (HTSeq) (Anders et al., 2015). Differential gene expression (DESeq2) (Love et al., 2014) analysis examined pair-wise differences between WT and mutants or within replicates.\n\n### Sequencing analysis and bioinformatics\n\nSequencing analysis was performed with previously described software using the open-source platform Galaxy (Afgan et al., 2016). Tools available from DeepTools (Ram\u00edrez et al., 2016) were used for the following: 1) bamCoverage was used to generate coverage bigWig files; 2) bamCompare was used to normalize and obtain log2ratios from two BAM files; 3) computeMatrix was used to prepare data for heatmaps or profiles; 4) plotHeatmap was used to create heatmaps for score distributions; 5) plotProfile was used to create meta-plots of score distributions. Tools available from SAMtools (Li et al., 2009) were used for the following: 1) BedCov was used to calculate read depth over given intervals; 2) Merge BAM Files was used to combine replicates. GraphPad Prism was used to analyze frequencies and prepare histograms.\n\n### Accession numbers\n\nComplete ChIP-seq and RNA-seq files, gene expression values, ChIP-seq intensity values have been deposited in NCBI\u2019s Gene Expression Omnibus (GEO; http://ncbi.nlm.nih.gov/geo) and are accessible through GEO Series accession number GSE118495 and, as part of a previously reported series GSE82222 (Klocko et al., 2016) and GSE104019 (Jamieson et al., 2018).\n\n### Materials\n\nRequests for materials should be addressed to VTB and EUS. All Neurospora crassa strains are available at the Fungal Genetic Stock Center (McCluskey et al., 2010).\n",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "82cbc192-25f0-490b-9912-f3f48d7f8f63",
+      "submission_id": "dba08035-03be-4c52-8d5b-39d6c7490913",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jerry L Workman, Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41497.022](https://doi.org/10.7554/eLife.41497.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"ASH1-catalyzed H3K36 methylation drives gene repression and marks H3K27me2/3-competent chromatin\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Jerry Workman as Reviewing Editor and Kevin Struhl as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study by Bicocca et al. investigates the role of H3K36 methylation and its interplay with H3K27 methylation in Neurospora. The study starts out by providing evidence that in Neurospora, the bulk of H3K36me3 and substantial amounts of H3K36me2 are generated by SET-2 and that ASH1 is a second HMTase that is making a major contribution to generating the bulk of H3K36me2. The authors go on to show that SET-2 and ASH1 contribute to the genome-wide H3K36me2 and -me3 profiles in a locus-specific manner. RNAseq analyses unexpectedly reveal that among the genes that are misregulated in ash1 mutants, a substantially larger fraction of genes is upregulated compared to down-regulated genes. It appears that ASH1 is required for repression of poorly transcribed genes. The authors show that about 30% of the genes that are marked with H3K36me2 by ASH1 are also decorated with H3K27me2/3 generated by PRC2. Surprisingly, about 30% of the genes that are co-marked with H3K36me2 and H3K27me2/3 show strong reduction or complete loss of H3K27me2/3, gain of H3K27ac and up-regulated expression of RNA. Nevertheless, the authors also find regions where the loss of H3K36me2 in ash1 mutants is accompanied by a marked gain of H3K27me2/3 (Figure 5F), consistent with the 'conventional' view that H3K36me2/3 directly antagonizes H3K27 methylation by PRC2. The authors conclude that ASH1 catalyzed H3K36me2 can affect H3K27me2/3 accumulation both in a positive and in a negative manner.\n\nThis study is interesting. At some genomic regions, H3K36me2/3 deposited by ASH1 antagonizes H3K27 methylation by PRC2, consistent with previous findings made in Drosophila (Papp and M\u00fcller, 2006; Srinivasan et al., 2008; Dorighi et al., 2013), in worms (Gaydos et al., 2012) and in experiments that used purified PRC2 for HMTase reactions on nucleosomes in vitro (Schmitges et al., 2011; Yuan et al., 2011). On the other hand, the authors also present data that stand in direct contrast to this regulatory relationship. Specifically, the ChIP analyses suggest that ASH1-mediated H3K36me2 deposition can \u2013 somehow \u2013 act in a positive way to promote H3K27 methylation by PRC2. The authors discuss these findings that are not so simple to reconcile in a balanced way. Perhaps, their discussion could also touch on a two main issues mentioned in point 4 below.\n\nEssential revisions:\n\n1) Looking at WB in Figure 1E, it seems that there is still a very faint H3K36me3 WB signal in lane 7 and that this signal is comparable to that seen in lanes 3 and 4 of the same blot. So, from this, it does not look like ASH1 would contribute to generating H3K36me3, whereas in lane 4 (set-2 ash1 double mutant) in Figure 1F it indeed appears that there is a further reduction of H3K36me3 signal compared to lane 3 (set-2 single mutant). The authors should clarify this point because, as the authors point out in the Introduction, there is no evidence that HMTases of the ASH1/NSD class are at all capable to tri-methylate H3K36. Since the effects are subtle, it would have been useful to show a more quantitative analysis of bulk modification levels, by performing western blots on serial dilutions (e.g. 4:2:1) of the extracts, rather than just one amount of extract per genotype. If the authors have more quantitative WB data, we encourage them to add them to the manuscript.\n\n2) Figure 2. First, how were the ChIP-seq reads from wt, ash1 and set-2 mutants normalized to take into account the changes in bulk H3K36me2 and -me3 levels? Second, have the authors generated H3K36me2 and -me3 profiles in set-2 ash1 double mutant cells?\n\n3) For the RNA-seq analysis, it would be good to have more quantitative information on the extent of up- and down-regulation. In particular, how many genes are more than 2-fold up- or down-regulated and how many genes are more than 4-fold up- or down-regulated?\n\n4) These are two points that the authors may want to discuss.\n\nFirst, what is the function of H3K27me2/3 in Neurospora? Does Neurospora contain a chromodomain-containing protein in a PRC1-type complex (i.e. like Pc/CBX2 in PRC1 in animals)?\n\nThe second point that might be interesting to discuss is that unlike in flies and mammals, in plants, not all forms of PRC2 are inhibited by active marks (Schmitges et al., 2011). Specifically, PRC2 complexes containing the Su(z)12 ortholog EMF2 are inhibited by H3K4me3 but PRC2 containing the Su(z)12 ortholog VRN2 are not inhibited by this mark (Schmitges et al., 2011). So, it remains to be tested whether the HMTase activity of Neurospora PRC2 is at all inhibited on H3K36me2/3 nucleosomes in vitro.\n",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fd3b1ca7-3c32-4174-89ed-985ed6e9c433",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C1",
+      "claim": "Methylation of histone H3 at lysine 36 (H3K36me) largely results from association of the lysine methyltransferase (KMT) SET-2 with RNA polymerase II (RNAPII).",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation of histone H3 at lysine 36 (H3K36me), a widely-distributed chromatin mark, largely results from association of the lysine methyltransferase (KMT) SET-2 with RNA polymerase II (RNAPII)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about H3K36me and is supported by the general understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "7fbb2db1-1d09-4884-af9a-1ff09613dc81",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C2",
+      "claim": "Most eukaryotes have additional H3K36me KMTs that act independently of RNAPII.",
+      "claim_type": "EXPLICIT",
+      "source": "but most eukaryotes also have additional H3K36me KMTs that act independently of RNAPII",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eukaryotic H3K36 methyltransferases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "d7066bcb-5f08-4840-9627-912f1050d314",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C3",
+      "claim": "ASH1 orthologs are conserved in animals, plants, and fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the orthologs of ASH1, which are conserved in animals, plants, and fungi",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ASH1 conservation across kingdoms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "ab76c33d-1259-4787-88d7-8a50c4a090f9",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C4",
+      "claim": "The function and control of ASH1 orthologs are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the orthologs of ASH1, which are conserved in animals, plants, and fungi but whose function and control are poorly understood",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "b394ee39-cee6-4b21-9642-dd1534d3e948",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C5",
+      "claim": "Neurospora crassa has just two H3K36 KMTs, ASH1 and SET-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Neurospora crassa has just two H3K36 KMTs, ASH1 and SET-2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the study including ChIP-seq and western blot analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "46896dd7-936d-49aa-99ef-8ab0c833bc1e",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C6",
+      "claim": "H3K36me deposited by SET-2 marks active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While H3K36me deposited by SET-2 marks active genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data showing SET-2-catalyzed H3K36me2 at moderately- and highly-transcribed genes (Figure 2B,C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "cf6bb09e-11a8-477c-bcf9-e43aaabe3acf",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C7",
+      "claim": "Inactive genes are modified by ASH1.",
+      "claim_type": "EXPLICIT",
+      "source": "inactive genes are modified by ASH1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data showing ASH1-catalyzed H3K36me2 at silent or poorly transcribed genes (Figure 2B,C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "9516f86c-b5a8-4755-ab92-25a4c063fe33",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C8",
+      "claim": "ASH1 catalytic activity is critical for repression of inactive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "inactive genes are modified by ASH1 and its activity is critical for their repression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data showing that ASH1-marked genes are predominantly up-regulated in the ash1(Y888F) mutant (Figure 3A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "c96f53ee-fd0c-4284-ade4-e10123f78083",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C9",
+      "claim": "ASH1-marked chromatin can be further modified by methylation of H3K27.",
+      "claim_type": "EXPLICIT",
+      "source": "ASH1-marked chromatin can be further modified by methylation of H3K27",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data showing overlap of ASH1-catalyzed H3K36me2 with H3K27me2/3 (Figure 4A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "2e79ab67-2137-45c1-add5-9ede919bbc3e",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C10",
+      "claim": "ASH1 catalytic activity modulates the accumulation of H3K27me2/3 both positively and negatively.",
+      "claim_type": "EXPLICIT",
+      "source": "ASH1 catalytic activity modulates the accumulation of H3K27me2/3 both positively and negatively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data showing both loss and gain of H3K27me2/3 in the ash1(Y888F) mutant (Figure 5B,E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "fa702902-f2cd-4fb9-b2b4-61225ce22489",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C11",
+      "claim": "H3K36me is largely associated with euchromatic regions of eukaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation of histone H3 at lysine 36 (H3K36me) is largely associated with euchromatic regions of eukaryotic genomes (Ho et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ho et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "e2b3e205-f86f-46fb-8242-ec551911cb35",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C12",
+      "claim": "A H3K36 KMT is directly associated with RNA polymerase II (RNAPII) elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "It serves as a link to transcription, as a H3K36 lysine methyltransferase (KMT; for example, yeast Set2) is directly associated with RNA polymerase II (RNAPII) elongation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the relationship between H3K36 KMTs and RNAPII.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "eafb4520-374b-41cd-a25f-ba8666e1aa23",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C13",
+      "claim": "H3K36me is enriched along actively transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "and the mark is enriched along actively transcribed genes (Kizer et al., 2005; Li et al., 2003; Morris et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kizer et al., 2005; Li et al., 2003; Morris et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "1d5b58e7-59a7-4445-b1a8-fd7f438faa5c",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C14",
+      "claim": "H3K36me is commonly cited as an indicator of 'active' chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, H3K36me is commonly cited as an indicator of 'active' chromatin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about how H3K36me is characterized in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "15e846e1-736d-422e-8127-32f78542696b",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C15",
+      "claim": "H3K36me is thought to exist in an antagonistic relationship with heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "and is thought to exist in an antagonistic relationship with heterochromatin (Gaydos et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gaydos et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "f3792043-3522-4b2b-a61f-b787483ebbae",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C16",
+      "claim": "Cohabitation of H3K36me3 with either H3K27me2/3 or H3K9me2/3 on the same histone tail is rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohabitation of H3K36me3 with either H3K27me2/3 or H3K9me2/3 on the same histone tail is rare (Jamieson et al., 2016; Voigt et al., 2012; Young et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jamieson et al., 2016; Voigt et al., 2012; Young et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "78438046-2275-4c67-ad05-209ab8eeb1bd",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C17",
+      "claim": "Deposition of one mark (H3K36me3 or H3K27me2/3 or H3K9me2/3) can inhibit deposition of the second.",
+      "claim_type": "EXPLICIT",
+      "source": "and deposition of one mark can inhibit deposition of the second (Schmitges et al., 2011; Voigt et al., 2012; Yuan et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schmitges et al., 2011; Voigt et al., 2012; Yuan et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "d723db1e-0ce5-42a3-9d5c-60b64157d56c",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C18",
+      "claim": "H3K36me can recruit chromatin remodelers and modifiers that organize and deacetylate nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "studies of H3K36me have shown that this modification can recruit chromatin remodelers and modifiers that organize and deacetylate nucleosomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about H3K36me function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "234f3e4c-bc62-40d5-bc41-82d34817cceb",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C19",
+      "claim": "H3K36me can stabilize histones by inhibiting exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "stabilize histones by inhibiting exchange",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about H3K36me function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "415f720d-23a6-4c68-8f18-e08201fc948d",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C20",
+      "claim": "H3K36me can restrict access to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "and restrict access to DNA \u2013 effectively conferring features of heterochromatin (Carrozza et al., 2005; Fazzio et al., 2001; Lee et al., 2013; Li et al., 2007a; Smolle et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Carrozza et al., 2005; Fazzio et al., 2001; Lee et al., 2013; Li et al., 2007a; Smolle et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "33c7918c-0d10-461a-b9ee-16b9f1e5ca0b",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C21",
+      "claim": "In metazoans, conversion of H3K36me2 to \u2013me3 is linked with transcription elongation by physically tethering the Set2-ortholog to RNAPII.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoans, these seemingly dissonant functions are resolved by a division of labor within the H3K36me pathway that: 1) links conversion of H3K36me2 to \u2013me3 with transcription elongation by physically tethering the Set2-ortholog to RNAPII",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the H3K36me pathway in metazoans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "d38247c4-b380-4aea-97e5-dcb5d7e0cd8c",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C22",
+      "claim": "Metazoans employ specialized RNAPII-independent KMTs to catalyze H3K36me1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "and 2) employs specialized RNAPII-independent KMTs to catalyze H3K36me1/2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the H3K36me pathway in metazoans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "800ab0d0-28a3-42ea-bd48-fb84de2be851",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C23",
+      "claim": "The H3K36me regulatory pathway underlies fundamental genomic processes including transcription initiation and repression, alternative splicing, and DNA replication, recombination and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "The complexity and significance of the H3K36me regulatory pathway is illustrated both in the range of fundamental genomic processes it underlies (e.g. transcription initiation and repression, alternative splicing, and DNA replication, recombination and repair) (Wagner and Carpenter, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wagner and Carpenter, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "cf9f6bb7-b8bf-4692-9596-1631e21bd7ab",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C24",
+      "claim": "The H3K36me pathway is frequently disturbed during oncogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and the frequency with which it is disturbed during oncogenesis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of H3K36me in cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "25844592-dd7e-4f4b-8b10-737ea3296fe1",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C25",
+      "claim": "Direct or indirect disruption of H3K36me by mutation of histone H3 genes defines distinct subtypes of pediatric chondroblastoma (H3.3K36M) and glioblastoma (H3.3G34R/V).",
+      "claim_type": "EXPLICIT",
+      "source": "The direct or indirect disruption of H3K36me by mutation of histone H3 genes defines distinct subtypes of pediatric chondroblastoma (H3.3K36M) and glioblastoma (H3.3G34R/V) (Fang et al., 2016; Lu et al., 2016; Schwartzentruber et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fang et al., 2016; Lu et al., 2016; Schwartzentruber et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "79a1b3c0-36bf-43ee-abdd-108abbf30a98",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C26",
+      "claim": "Recurrent mutation or overexpression of genes that methylate H3K36 (Ash1L, Nsd1/2/3, and Setd2) have been implicated as drivers of malignant transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recurrent mutation or overexpression of genes that methylate (Ash1L, Nsd1/2/3, and Setd2) or demethylate (Kdm2b and Kdm4a) H3K36 have been implicated as drivers of malignant transformation (Black et al., 2013; He et al., 2011; Jaju et al., 2001; Kovac et al., 2015; Liu et al., 2012; Mar et al., 2014; Cancer Genome Atlas Network, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Black et al., 2013; He et al., 2011; Jaju et al., 2001; Kovac et al., 2015; Liu et al., 2012; Mar et al., 2014; Cancer Genome Atlas Network, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "730a37fa-dcb4-4c54-875c-669b0b07b38b",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C27",
+      "claim": "Recurrent mutation or overexpression of genes that demethylate H3K36 (Kdm2b and Kdm4a) have been implicated as drivers of malignant transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recurrent mutation or overexpression of genes that methylate (Ash1L, Nsd1/2/3, and Setd2) or demethylate (Kdm2b and Kdm4a) H3K36 have been implicated as drivers of malignant transformation (Black et al., 2013; He et al., 2011; Jaju et al., 2001; Kovac et al., 2015; Liu et al., 2012; Mar et al., 2014; Cancer Genome Atlas Network, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Black et al., 2013; He et al., 2011; Jaju et al., 2001; Kovac et al., 2015; Liu et al., 2012; Mar et al., 2014; Cancer Genome Atlas Network, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "9aac8e14-9201-4cdb-8c1d-048be05f076d",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C28",
+      "claim": "H3K36me is nonessential in S. cerevisiae and S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, much of the functional characterization of H3K36me has been performed in the yeasts S. cerevisiae and S. pombe, where H3K36me is nonessential",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about H3K36me in yeasts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "bb9354a7-90b3-4cb7-8ab1-1b1b022ae05c",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C29",
+      "claim": "H3K36me in S. cerevisiae and S. pombe is performed by a single RNAPII-associated KMT.",
+      "claim_type": "EXPLICIT",
+      "source": "and performed by a single RNAPII-associated KMT (Strahl et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Strahl et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "c8a49936-124e-4f65-b19b-78486c0933f0",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C30",
+      "claim": "Unlike set-2, ash1 appears to be essential for viability in Neurospora crassa.",
+      "claim_type": "EXPLICIT",
+      "source": "In preliminary work, we found that, unlike set-2, which is dispensable for viability, ash1 appears to be essential, as evidenced by the inability to generate a pure \u0394ash1 strain (Colot et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing inability to generate a pure \u0394ash1 strain, with citation to Colot et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "3dbf5045-d287-4e04-8126-d0348bdc498a",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C31",
+      "claim": "Y888 in ASH1 is required for coordinating the target lysine in SET protein superfamily members.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we found that we could build an ash1 strain that should be catalytically inactive by mutation of Y888, which is required for coordinating the target lysine in SET protein superfamily members (Figure 1A,B) (Dillon et al., 2005)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Dillon et al., 2005 and Figure 1A,B showing the mutation site.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "3bb9ed8c-6c61-40e9-b939-0c4ce8c31ae7",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C32",
+      "claim": "Strains harboring the ash1(Y888F) mutation displayed severely compromised growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains harboring the ash1(Y888F) mutation displayed severely compromised growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "86111c75-ec02-48c4-9042-30ee9bdf4d45",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C33",
+      "claim": "Strains harboring the ash1(Y888F) mutation showed only minor reductions in global H3K36me2 and \u2013me3.",
+      "claim_type": "EXPLICIT",
+      "source": "but only minor reductions in global H3K36me2 and \u2013me3 (Figure 1C,D,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "4bdcd1db-002e-418e-b639-65b995c4b9f7",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C34",
+      "claim": "\u0394set-2 strains showed a dramatic loss of H3K36me2.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0394set-2 strains showed a dramatic loss of H3K36me2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "4b9f2223-762c-439c-85d8-7b957d811abd",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C35",
+      "claim": "\u0394set-2 strains showed only minor impairment of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "but only minor impairment of growth (Figure 1C,D,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "721e1e2c-fa7d-4ee5-b6e1-67e6b85496b2",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C36",
+      "claim": "Deletion of the 'Set2 Rpb1 Interacting' (SRI) domain of SET-2 results in a loss of H3K36me3 comparable to that seen with a set-2 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that deletion of the 'Set2 Rpb1 Interacting' (SRI) domain of SET-2, which should decouple the enzyme from RNAPII (Youdell et al., 2008), resulted in a loss of H3K36me3 comparable to that seen with a set-2 deletion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1G and citation to Youdell et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "4587e00c-991b-45db-9273-4ed0bbcc4695",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C37",
+      "claim": "RNAPII-associated SET-2 is responsible for nearly all H3K36me3.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that RNAPII-associated SET-2 is responsible for nearly all H3K36me3 (Figure 1G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the data showing loss of H3K36me3 upon deletion of the SRI domain (Figure 1G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "52f484df-2e5d-4ad3-ae01-d2de138bf0f7",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C38",
+      "claim": "set-2; ash1(Y888F) double mutants showed additive loss of the H3K36me2 observed in the single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "set-2; ash1(Y888F) double mutants showed additive loss of the H3K36me2 observed in the single mutants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "f1aad442-4e31-49af-95ee-c8f431d3a3cd",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C39",
+      "claim": "set-2; ash1(Y888F) double mutants showed loss of the residual H3K36me3 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "and loss of the residual H3K36me3 signal (Figure 1E,F,G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1E,F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "7e6ca298-123e-464a-a18b-2fb7e9c2ef41",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C40",
+      "claim": "ASH1 has weak H3K36me3 catalytic activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested ASH1 has weak H3K36me3 catalytic activity in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that residual H3K36me3 is lost in the double mutant (Figure 1E,F,G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "0b24a94d-8a94-4039-98c1-9ab1ac99bcd3",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C41",
+      "claim": "ASH1 has a tyrosine at amino acid position 886, the predicted site of the 'Y/F-switch'.",
+      "claim_type": "EXPLICIT",
+      "source": "a surprise given the in vitro activity of its orthologs (An et al., 2011; Yuan et al., 2011) and that the protein has a tyrosine at amino acid position 886 (Figure 1B), the predicted site of the 'Y/F-switch,' which is characteristic of SET domains in mono/di-KMTs (Collins et al., 2005)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1B and citations to An et al., 2011; Yuan et al., 2011; Collins et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "feb95414-96b1-4783-bb58-e556bbd3ab59",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C42",
+      "claim": "H3K36me2 and \u2013me3 is associated with gene-rich DNA and excluded from constitutive heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we found that H3K36me2 and \u2013me3 is associated with gene-rich DNA and excluded from constitutive heterochromatin, which is marked by DNA methylation and H3K9me3 (Figure 2A, Figure 2\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "af7934ba-2465-4321-981e-f5a91a148d36",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C43",
+      "claim": "H3K36me2 catalyzed by ASH1 or SET-2 was found in distinct domains.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K36me2 catalyzed by ASH1 or SET-2 was found in distinct domains that apparently together produce the overall pattern of wildtype (WT) H3K36me2 (Figure 2A,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "1a00df45-4ba0-4bff-adf9-a9d1fc200cea",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C44",
+      "claim": "ASH1-catalyzed H3K36me2 was prominent across the promoter and body of the genes that are silent or poorly transcribed in WT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found ASH1-catalyzed H3K36me2 was prominent across the promoter and body of the genes that are silent or poorly transcribed in WT (Figure 2B,C, Figure 2\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2B,C and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "0c8b4e88-288c-442c-b637-25495ced6f8d",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C45",
+      "claim": "SET-2-catalyzed H3K36me2 was found associated predominantly with moderately- and highly-transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, SET-2-catalyzed H3K36me2 was found associated predominantly with moderately- and highly-transcribed genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "be6875bd-e51e-49c9-b47d-77e39e275a76",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C46",
+      "claim": "SET-2-catalyzed H3K36me2 was depleted from transcriptional start-sites (TSS) but enriched over gene bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "and was depleted from transcriptional start-sites (TSS) but enriched over gene bodies (Figure 2B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "2b3ae837-a96d-4bb9-8002-ce48b3044a38",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C47",
+      "claim": "SET-2 marks most (>80%) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "By this assay, SET-2 was found to mark most (>80%) genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 2B and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "849d61c3-06aa-49c3-97b7-e1a79f35c699",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C48",
+      "claim": "ASH1 marks the minority (~20%) of genes that lacked SET-2-catalyzed H3K36me2.",
+      "claim_type": "EXPLICIT",
+      "source": "while ASH1 marked the minority (~20%) of genes that lacked SET-2-catalyzed H3K36me2 (p-value<10\u22124) (Figure 2B, Figure 2\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 2B and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "e6d3f108-9785-4e79-bf54-86b22808d19f",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C49",
+      "claim": "In the ash1 mutant, H3K36me3 was found restricted to sites of SET-2-catalyzed H3K36me2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ash1 mutant, H3K36me3 was found restricted to sites of SET-2-catalyzed H3K36me2 (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "4ff78949-d6b5-4273-9dbb-0067b18f3ae1",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C50",
+      "claim": "The intergenic H3K36me3 seen in WT was absent in the ash1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "and the intergenic H3K36me3 seen in WT was absent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "a49d91f8-563f-4ef5-819d-5745c15446de",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C51",
+      "claim": "H3K36me3 at domains of ASH1-catalyzed H3K36me2 was lost in the ash1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, H3K36me3 at domains of ASH1-catalyzed H3K36me2 was lost in the ash1 mutant",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "4c469da1-daa0-4c92-8f20-67684ea1995e",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C52",
+      "claim": "H3K36me3 was not entirely lost when set-2 was deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results of the western blot (Figure 1E), H3K36me3 was not entirely lost when set-2 was deleted",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2C and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "78b26b5a-34f1-484b-8eee-43fa317f32b0",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C53",
+      "claim": "H3K36me3 signal remained at regions with intense ASH1-catalyzed H3K36me2 in the set-2 deletion mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "and signal remained at regions with intense ASH1-catalyzed H3K36me2 (Figure 2C, Figure 2\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2C and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "4d4009c0-c62b-4166-84ba-5835a2c569c1",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C54",
+      "claim": "The set-2 deletion showed a relatively symmetrical distribution of gene expression changes with 916 genes up-regulated and 1222 genes down-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "The set-2 deletion showed a relatively symmetrical distribution of gene expression changes with 916 genes up-regulated and 1222 genes down-regulated (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "0c587887-78db-4544-83da-6aa531538518",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C55",
+      "claim": "The ash1 mutant predominantly resulted in up-regulation (1261 genes up-regulated; 228 genes down-regulated).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the ash1 mutant predominantly resulted in up-regulation (1261 genes up-regulated; 228 genes down-regulated; Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "92d6cd4b-eb82-4bd0-bb61-0f21bb92d324",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C56",
+      "claim": "ASH1-marked genes were almost exclusively up-regulated in the ash1(Y888F) background.",
+      "claim_type": "EXPLICIT",
+      "source": "When we limited our analysis to ASH1-marked genes, they were almost exclusively up-regulated in the ash1(Y888F) background",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "210d8332-3ac8-4a97-b710-23afb33e8a17",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C57",
+      "claim": "ASH1-unmarked genes showed no pattern of altered regulation in the ash1(Y888F) background.",
+      "claim_type": "EXPLICIT",
+      "source": "while ASH1-unmarked genes showed no pattern of altered regulation (Figure 3B, Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "77e11261-8f04-4443-a97b-5062b1dc645d",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C58",
+      "claim": "ASH1-marked genes that are SET-2-comarked were significantly up-regulated in the ash1(Y888F) background.",
+      "claim_type": "EXPLICIT",
+      "source": "When ASH1-marked genes were separated into 'SET-2-unmarked' and 'SET-2-comarked' categories, we found that co-marked genes were significantly up-regulated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "f3b11ccd-4b3c-498f-9d71-89f8f6598c61",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C59",
+      "claim": "ASH1-marked genes that are SET-2-unmarked showed little or no change in expression in the ash1(Y888F) background.",
+      "claim_type": "EXPLICIT",
+      "source": "while SET-2-unmarked genes showed little or no change in expression (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "a532d5da-3c3f-496b-99e5-8871eaa310ce",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C60",
+      "claim": "ASH1 and SET-2 independently catalyze H3K36me2 in a manner that differentiates the genome into regions of poorly- or robustly-transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results imply that ASH1 and SET-2 independently catalyze H3K36me2 in a manner that differentiates the genome into regions of poorly- or robustly-transcribed genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined ChIP-seq and RNA-seq data showing distinct localization and effects of ASH1 and SET-2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "0ed1da2c-b3dd-4ebc-b2be-3fa91f2975dc",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C61",
+      "claim": "The repressed state of poorly transcribed genes is largely dependent upon ASH1 catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The repressed state of poorly transcribed genes is largely dependent upon ASH1 catalytic activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from RNA-seq data showing up-regulation of ASH1-marked genes in the ash1(Y888F) mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "11455c41-d459-42dc-93db-8a0c140eed73",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C62",
+      "claim": "Upon inactivation of ASH1, genes that are subject to derepression become co-marked by transcription-coupled SET-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon inactivation of ASH1, genes that are subject to derepression become co-marked by transcription-coupled SET-2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that SET-2-comarked genes are significantly up-regulated in the ash1(Y888F) background.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "24fc6941-2ee1-4ebc-a634-e7d6f59cdea2",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C63",
+      "claim": "Nearly all (220/232) annotated domains of H3K27me2/3-marked chromatin are also marked with ASH1-catalyzed H3K36me2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found nearly all (220/232) annotated domains of H3K27me2/3-marked chromatin (Klocko et al., 2018) are also marked with ASH1-catalyzed H3K36me2 (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 4A and citation to Klocko et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "0855a4bb-338a-4daa-adfa-5d2969a95a10",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C64",
+      "claim": "The 12 H3K27me2/3 domains absent of ASH1-catalyzed H3K36me2 were all found in sub-telomere regions characterized by the presence of H3K27me2/3, H3K9me3, and DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "When we looked at where the 12 absent domains were located, we saw they were all found in sub-telomere regions characterized by the presence of H3K27me2/3, H3K9me3, and DNA methylation (Jamieson et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis and citation to Jamieson et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "ef609b24-d004-4e8c-b497-fb36f2994d0a",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C65",
+      "claim": "ASH1-catalyzed H3K36me2 is excluded from constitutive heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "a finding consistent with ASH1-catalyzed H3K36me2 being excluded from constitutive heterochromatin (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that ASH1-catalyzed H3K36me2 is absent from sub-telomeric regions with constitutive heterochromatin marks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "5eb98215-67c3-4fb3-adae-0239410aa650",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C66",
+      "claim": "The distribution of H3K27me2/3 overlaps with that of ASH1-catalyzed H3K36me2 at the promoter region of individual genes.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the promoter region of individual genes, we again saw that the distribution of H3K27me2/3 overlapped with that of ASH1-catalyzed H3K36me2 (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "ea6b624e-b3fe-4e57-91af-0b2e5bf37e8b",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C67",
+      "claim": "K27 and K36 methylation do not typically occur on the same histone H3 molecule in N. crassa.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous mass spectrometry analyses of N. crassa histone H3 suggested K27 and K36 methylation do not typically occur on the same molecule (Jamieson et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jamieson et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "9fd9396b-2af2-413f-9d08-0d62ae975bdc",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C68",
+      "claim": "H3K27me and H3K36me exist as 'asymmetric' modifications on the same nucleosome and/or on adjacent nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "implying that these marks exist as 'asymmetric' modifications on the same nucleosome and/or on adjacent nucleosomes (Voigt et al., 2012; Yuan et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that K27 and K36 methylation do not occur on the same molecule, with citations to Voigt et al., 2012; Yuan et al., 2011.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "c0612f89-ea7a-447f-8398-9563522901fd",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C69",
+      "claim": "30% of ASH1-marked genes were co-marked by H3K27me2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, we found 30% of ASH1-marked genes were co-marked by H3K27me2/3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "c55606a9-60ac-4e5e-99a3-22b63ad7c0b7",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C70",
+      "claim": "Co-marking of ASH1-marked genes by H3K27me2/3 was predominantly found at domains of ASH1-catalyzed H3K36me2 that lacked appreciable SET-2-catalyzed H3K36me2.",
+      "claim_type": "EXPLICIT",
+      "source": "and this co-marking was predominantly found at domains of ASH1-catalyzed H3K36me2 that lacked appreciable SET-2-catalyzed H3K36me2 (Figure 4C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "d95ea642-9696-429e-8f4b-b4d600198dd5",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C71",
+      "claim": "New domains of H3K27me3 in the \u0394npf background are limited to regions of ASH1-catalyzed H3K36me2.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the predominant effect of npf deletion is loss of sub-telomeric H3K27me2/3 (Jamieson et al., 2013), we also found new domains of H3K27me3 and, interestingly, these were limited to regions of ASH1-catalyzed H3K36me2 (Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 4E and citation to Jamieson et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "24d6f118-b791-4ef2-a246-1451a3f0a2e8",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C72",
+      "claim": "The discontinuous spread of H3K27me2/3 from telomere repeats inserted at the csr-1 locus correlated perfectly with the presence of ASH1-catalyzed H3K36me2.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an insertion at the csr-1 locus, we found that the discontinuous spread of H3K27me2/3 from the repeats correlated perfectly with the presence of ASH1-catalyzed H3K36me2 (Figure 4F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "b356e306-2c12-42be-98ed-7b8832ad0534",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C73",
+      "claim": "A fraction of ASH1-marked chromatin is asymmetrically modified by PRC2 to generate overlapping profiles of H3K27me and H3K36me at genes that are most refractory to derepression.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these analyses show that a fraction of ASH1-marked chromatin is asymmetrically modified by PRC2 to generate overlapping profiles of H3K27me and H3K36me at genes that are most refractory to derepression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined ChIP-seq and RNA-seq data showing overlap of ASH1 and H3K27me marks and resistance to derepression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "983cd607-8664-454a-8e71-58350f90443e",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C74",
+      "claim": "H3K27me-competency is a distinguishing characteristic of ASH1-marked chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "and that H3K27me-competency is a distinguishing characteristic of ASH1-marked chromatin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that experimentally-induced H3K27me2/3 selectively spreads to ASH1-marked chromatin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "b9e25a52-8a1d-49d8-a2db-9a881e3c20e3",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C75",
+      "claim": "Drosophila Ash1 has been reported to inhibit PRC2-mediated repression by preventing H3K27me2/3 accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Ash1 has previously been reported to inhibit PRC2-mediated repression by preventing H3K27me2/3 accumulation (Papp and M\u00fcller, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Papp and M\u00fcller, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "f0f5d0ff-b2f6-4dc9-85ce-51161b382725",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C76",
+      "claim": "H3K36me3 has been shown to inhibit catalysis of H3K27me2/3 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, H3K36me3 has been shown to inhibit catalysis of H3K27me2/3 in vitro (Yuan et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yuan et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "2c360196-f99d-4a96-b2dd-8801b9241f30",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C77",
+      "claim": "ASH1-catalyzed H3K36me2 was unchanged by loss of H3K27me2/3 across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting and ChIPseq in a double-mutant strain lacking SET-2 and the H3K27 KMT, SET-7, revealed ASH1-catalyzed H3K36me2 was unchanged by loss of H3K27me2/3 across the genome (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting and ChIP-seq data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "dece5f53-2d67-47fe-a8dc-85757a11c24d",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C78",
+      "claim": "ASH1-catalyzed H3K36me2 is not dependent on PRC2-catalyzed H3K27me2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that ASH1-catalyzed H3K36me2 is not dependent on PRC2-catalyzed H3K27me2/3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ASH1-catalyzed H3K36me2 is unchanged by loss of H3K27me2/3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "628f2ce6-4e56-45a2-bf14-f1872658d4db",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C79",
+      "claim": "Inactivation of ASH1 resulted in reduction or complete loss of H3K27me2/3 across roughly one-third of ASH1/PRC2-comarked genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of ASH1 showed a striking effect on H3K27me2/3, resulting in reduction or complete loss of the mark across roughly one-third of ASH1/PRC2-comarked genes (Figure 5A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "d6fab320-dbf6-4601-ba26-f1415c579f84",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C80",
+      "claim": "The loss of ASH1-catalyzed H3K36me and resultant loss of H3K27me2/3 was accompanied by accumulation of H3K27 acetylation (ac).",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of ASH1-catalyzed H3K36me and resultant loss of H3K27me2/3 was accompanied by accumulation of H3K27 acetylation (ac) and derepression of affected genes (Figure 5C,D, Figure 5\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5C,D and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "4d1d33de-384d-4cc5-a7b8-6a31c4c2ced1",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C81",
+      "claim": "The loss of ASH1-catalyzed H3K36me and resultant loss of H3K27me2/3 was accompanied by derepression of affected genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of ASH1-catalyzed H3K36me and resultant loss of H3K27me2/3 was accompanied by accumulation of H3K27 acetylation (ac) and derepression of affected genes (Figure 5C,D, Figure 5\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 5C,D and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "f7bd0d5c-db45-4713-8536-bfbef98850c1",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C82",
+      "claim": "In the ash1 mutant, 128 genes gain H3K27me2/3 (defined as >2 fold increase over background).",
+      "claim_type": "EXPLICIT",
+      "source": "In the ash1 mutant, 128 genes gain H3K27me2/3 (defined as >2 fold increase over background) (Figure 5E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "ac635499-51d3-4af6-90f3-c81b7d9ea6c8",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C83",
+      "claim": "In the ash1 mutant, 180 genes lost the H3K27me2/3 mark.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas 180 genes lost the H3K27me2/3 mark (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "3c74e235-269c-4a76-8f37-82b26ee32bed",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C84",
+      "claim": "New domains of PRC2-marked chromatin in the ash1(Y888F) strain are delineated by regions normally marked with ASH1-catalyzed H3K36me2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these new domains of PRC2-marked chromatin in the ash1(Y888F) strain are delineated by regions normally marked with ASH1-catalyzed H3K36me2 (Figure 5F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "958a8f51-0f0c-46f5-abfb-3a41c1e014b7",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C85",
+      "claim": "ASH1 catalyzed H3K36me can both positively and negatively influence H3K27me2/3 accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ASH1 catalyzed H3K36me can both positively and negatively influence H3K27me2/3 accumulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that loss of ASH1 results in both gains and losses of H3K27me2/3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "71be9aa3-a5d1-428a-b2ab-a286f26181b5",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C86",
+      "claim": "Neurospora crassa ASH1 does not display telling conserved protein domains, but does have an AT-hook that might interact with the minor-groove of A/T-rich DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurospora ASH1 does not display telling conserved protein domains, but does have an AT-hook that might interact with the minor-groove of A/T-rich DNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how ASH1 might be targeted to specific genomic regions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "d229ea5f-195a-42c4-98f1-3dce5bf747b6",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C87",
+      "claim": "Constitutive heterochromatin in Neurospora is characterized by A/T-rich DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Constitutive heterochromatin in Neurospora is characterized by A/T-rich DNA (Cambareri et al., 1989)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cambareri et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "5bfbce59-1d93-47e2-8341-0e368dd5857b",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C88",
+      "claim": "H3K36me appears to be normally excluded from constitutive heterochromatin regions.",
+      "claim_type": "EXPLICIT",
+      "source": "but we found no indication that ASH1 functions at constitutive heterochromatin; in fact, H3K36me appears to be normally excluded from such regions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data showing exclusion of H3K36me from regions marked by DNA methylation and H3K9me3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "b94f1f98-14d6-4f8b-ad86-ecabb1649796",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C89",
+      "claim": "When compared to PRC2-catalyzed H3K27me2/3, ASH1-catalyzed H3K36me appears to be the predominant repressive modification of poorly transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to PRC2-catalyzed H3K27me2/3 (Jamieson et al., 2013), ASH1-catalyzed H3K36me appears to be the predominant repressive modification of poorly transcribed genes (H3K27me covers only ~30% of silent, ASH1-marked, genes)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that H3K27me covers only ~30% of silent, ASH1-marked genes, with citation to Jamieson et al., 2013.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "f3502aad-e8f0-4e77-b739-44f3f6bb3e1b",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C90",
+      "claim": "There is a collaborative relationship between H3K36 KMTs, chromatin remodelers, and histone deacetylases (HDACs) in other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the collaborative relationship between H3K36 KMTs, chromatin remodelers, and histone deacetylases (HDACs) described in other organisms (Lee et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lee et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "169ca4f8-a28d-4122-acc1-74e1964f9454",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C91",
+      "claim": "Nucleosome positioning and histone deacetylation play a role in ASH1-mediated repression.",
+      "claim_type": "EXPLICIT",
+      "source": "we predict a role for nucleosome positioning and histone deacetylation in ASH1-mediated repression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known relationships between H3K36 KMTs and chromatin remodelers/HDACs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "4d96f463-1e9e-4148-8538-05e55d9b6114",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C92",
+      "claim": "An accumulation of H3K27ac was observed following loss of ASH1-dependent H3K27me2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed an accumulation of H3K27ac following loss of ASH1-dependent H3K27me2/3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "e7f16d46-c10d-468b-8f69-0c2f797a8933",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C93",
+      "claim": "The yeast HDAC complex RPD3S includes the H3K36me3 reader, EAF-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Future studies should examine the Neurospora counterpart of the yeast HDAC complex, RPD3 Small (RPD3S), which includes the H3K36me3 reader, EAF-3 (Joshi and Struhl, 2005; Keogh et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Joshi and Struhl, 2005; Keogh et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "bd890b44-9f04-47dd-957b-fd2c2e7f6ed6",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C94",
+      "claim": "RPD3S activity appears to be dependent upon proper nucleosome spacing established by Isw2 and Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "RPD3S activity appears to be dependent upon proper nucleosome spacing established by Isw2 and Chd1, which together apparently organize and stabilize nucleosomes to restrict internal initiation by RNAPII in the wake of transcription (Carrozza et al., 2005; Fazzio et al., 2001; Lee et al., 2013; Li et al., 2007a; Smolle et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Carrozza et al., 2005; Fazzio et al., 2001; Lee et al., 2013; Li et al., 2007a; Smolle et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "6c2489dc-5edf-43ec-8f0d-95d2550f463b",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C95",
+      "claim": "The RPD3S mechanism is dependent upon transcription, as H3K36me3 deposition by SET-2 is strictly tied to elongating RNAPII.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this mechanism is dependent upon transcription, as H3K36me3 deposition by SET-2 is strictly tied to elongating RNAPII (Youdell et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Youdell et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "214b3d92-a8e0-4cc8-ba26-487721c7af20",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C96",
+      "claim": "A transcription-independent mechanism maintains gene repression at facultative heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support a related transcription-independent mechanism that maintains gene repression at facultative heterochromatin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ASH1 acts independently of RNAPII to maintain repression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "440cb617-92a8-4bbe-bdca-c5f19881be02",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C97",
+      "claim": "The N. crassa ortholog of Rpd3 (HDA-3) is essential.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, further study of the RPD3S HDAC will be required, but it will be challenging as the N. crassa ortholog of Rpd3 (HDA-3) is essential",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the essentiality of HDA-3 in N. crassa.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "849019e9-a357-425d-809b-b4f77c77d8e8",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C98",
+      "claim": "Other units of the RPD3S complex \u2013 EAF-3, SIN3, and NPF \u2013 are components of various other chromatin modifying complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "and other units of the complex \u2013 EAF-3, SIN3, and NPF \u2013 are components of various other chromatin modifying complexes (Jamieson et al., 2013; Sathianathan et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jamieson et al., 2013; Sathianathan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "2742cd0a-47de-4a90-923c-7daa300f1f52",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C99",
+      "claim": "Orthologs of EAF-3 and NPF (Mrg15 and Nurf55, respectively) have been identified as Ash-1 complex members in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, orthologs of EAF-3 and NPF (Mrg15 and Nurf55, respectively) have recently been identified as Ash-1 complex members in Drosophila (Huang et al., 2017; Schm\u00e4hling et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Huang et al., 2017; Schm\u00e4hling et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "5ab504ac-530a-4ee2-b11c-410afc6b987e",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C100",
+      "claim": "Neurospora H3K27me2/3 is catalyzed by a PRC2 complex that is highly similar to those found in metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurospora H3K27me2/3 is catalyzed by a PRC2 complex that is highly similar to those found in metazoans (Jamieson et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jamieson et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "725dc6f9-4ccc-48da-a3cd-f7692acd5b6a",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C101",
+      "claim": "N. crassa has no apparent PRC1 components.",
+      "claim_type": "EXPLICIT",
+      "source": "but N. crassa has no apparent PRC1 components",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the chromatin machinery in N. crassa.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "68295a5f-bba7-4645-88fa-79fa02d556dd",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C102",
+      "claim": "Loss of ASH1-dependent H3K36 methylation was associated with both losses and gains of H3K27me2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed in Neurospora that loss of ASH1-dependent H3K36 methylation was associated with both losses and gains of H3K27me2/3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "5c631347-fe37-4fae-bac8-fa31296944c4",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C103",
+      "claim": "Early work with Drosophila gave evidence that ASH1 opposes the action of PRC2 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Early work with Drosophila gave evidence that ASH1 opposes the action of PRC2 function (Klymenko and M\u00fcller, 2004; Shearn, 1989)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Klymenko and M\u00fcller, 2004; Shearn, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "3bb7acf5-c8ff-4dc4-965a-e90e7b88c564",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C104",
+      "claim": "The presence of H3K36me on a histone tail can inhibit PRC2 activity in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the observation that the presence of H3K36me on a histone tail can inhibit PRC2 activity in cis (Yuan et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yuan et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "3ccda7c5-49f1-4649-887f-3e659c26af09",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C105",
+      "claim": "New domains of H3K27me2/3 appear at ASH1-regulated regions when ASH1 is inactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "We found new domains of H3K27me2/3 at ASH1-regulated regions when ASH1 was inactivated, suggesting the presence of the ASH1 mark prevents H3K27me2/3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "7f844d99-746d-4a0f-9e27-a04b876c5b0f",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C106",
+      "claim": "The presence of the ASH1 mark prevents H3K27me2/3 at some regions.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting the presence of the ASH1 mark prevents H3K27me2/3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that new domains of H3K27me2/3 appear at ASH1-regulated regions when ASH1 is inactivated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "c2013277-0fae-430b-8574-daf9c265c449",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C107",
+      "claim": "ASH1 drives repression, and derepression associated with ASH1 inactivation is frequently accompanied by H3K27me2/3 loss.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that ASH1 drives repression, and derepression associated with ASH1 inactivation is frequently accompanied by H3K27me2/3 loss",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq and ChIP-seq data shown in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "5a0c74ba-9741-4fdf-b6ca-bd34c646de1a",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C108",
+      "claim": "Different forms of PRC2 may exist in plants that respond differently to the presence of H3K36me.",
+      "claim_type": "EXPLICIT",
+      "source": "Or perhaps, similar to plants, different forms of PRC2 may exist that respond differently to the presence of H3K36me (Schmitges et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms, with citation to Schmitges et al., 2011.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "f9d0bcd4-7bec-406b-bb5e-bbfa460d3075",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C109",
+      "claim": "Recent work with embryonic stem cells revealed apparent cross-talk between H3K27me2/3 and H3K36me marks.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is important to note that though it was initially surprising to find genome-wide colocalization of H3K27me2/3 with ASH1-catalyzed H3K36me2, this does not appear to be unique to Neurospora and other fungi, as recent work with embryonic stem cells revealed apparent cross-talk of these marks (Streubel et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Streubel et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "f1978efa-cbad-40fe-bfb8-bce675ffaebb",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C110",
+      "claim": "Actively transcribed genes possess SET-2-catalyzed H3K36me2/3 specific to the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "Actively transcribed genes possess SET-2-catalyzed H3K36me2/3 specific to the gene body",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2 and summarized in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "eb2565eb-20e1-4cff-bb17-38bf76cc54ba",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C111",
+      "claim": "Silent and infrequently transcribed genes are covered in large domains of ASH1-catalyzed H3K36me2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "while silent and infrequently transcribed genes are covered in large domains of ASH1-catalyzed H3K36me2/3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 2 and summarized in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "ba66433c-fb09-49a5-848b-77e1c3206bbf",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C112",
+      "claim": "H3K36me acts as a repressive mark, protecting active genes against internal cryptic-transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, H3K36me appears to act as a repressive mark, protecting active genes against internal cryptic-transcription (Li et al., 2007b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge with citation to Li et al., 2007b.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "ac6f253e-d37d-42e1-b6c0-c2534edb9216",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C113",
+      "claim": "H3K36me blocks general transcription at inactive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "and blocking general transcription at inactive genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ASH1-marked genes are derepressed when ASH1 is inactivated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "35af3ac8-976c-43f3-acb0-cfb240b93078",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C114",
+      "claim": "The repressed state of ASH1-modified chromatin is largely contingent upon the presence of ASH1-catalyzed H3K36me.",
+      "claim_type": "EXPLICIT",
+      "source": "The repressed state of ASH1-modified chromatin is largely contingent upon the presence of ASH1-catalyzed H3K36me",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from RNA-seq data showing derepression of ASH1-marked genes in the ash1(Y888F) mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "ebfb9e63-56be-49ad-8d23-f061a393bc02",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "claim_id": "C115",
+      "claim": "ASH1-modified chromatin can be further modified with H3K27me2/3 catalyzed by the PRC2 complex to support repression.",
+      "claim_type": "EXPLICIT",
+      "source": "but can be further modified with H3K27me2/3 catalyzed by the PRC2 complex to support repression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data showing overlap of ASH1 and H3K27me2/3 marks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Neurospora crassa has two H3K36 KMTs (ASH1 and SET-2) with distinct properties. ASH1 appears essential for viability but a catalytically inactive ash1(Y888F) mutant is viable with severely compromised growth. SET-2 deletion causes dramatic loss of H3K36me2 with minor growth impairment. RNAPII-associated SET-2 is responsible for nearly all H3K36me3, while ASH1 has weak H3K36me3 activity in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C30-C41 are well-supported by multiple experimental approaches including western blots (Figure 1E-G), growth assays (Figure 1C-D), and genetic analyses. The data consistently show that N. crassa has two H3K36 KMTs with distinct catalytic activities and phenotypes. The inference that ASH1 has weak H3K36me3 activity is supported by residual H3K36me3 signal in set-2 mutants that is lost in double mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "e2013496-810d-47b5-a970-79dea0ca2194",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ASH1 and SET-2 catalyze H3K36me2 in distinct genomic domains. ASH1-catalyzed H3K36me2 marks silent or poorly transcribed genes (~20% of genes) across promoters and gene bodies, while SET-2-catalyzed H3K36me2 marks moderately and highly transcribed genes (>80% of genes) predominantly in gene bodies. H3K36me is excluded from constitutive heterochromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C53 are strongly supported by genome-wide ChIP-seq data (Figure 2) showing distinct localization patterns of ASH1- and SET-2-catalyzed H3K36me2. The complementary distribution of the two marks and their correlation with transcriptional activity is clearly demonstrated. Statistical significance (p<10^-4) is provided for the differential marking patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ASH1 catalytic activity is critical for repression of poorly transcribed genes. The ash1(Y888F) mutant shows predominantly gene up-regulation (1261 up, 228 down), with ASH1-marked genes almost exclusively up-regulated. SET-2-comarked ASH1 genes are significantly up-regulated upon ASH1 inactivation, while SET-2-unmarked ASH1 genes show little change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62 are well-supported by RNA-seq data (Figure 3) showing specific derepression of ASH1-marked genes in the ash1(Y888F) mutant. The differential response of SET-2-comarked versus unmarked genes provides strong evidence for the functional relationship between ASH1-mediated repression and transcriptional activity. Statistical analyses support the significance of these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ASH1-marked chromatin is characterized by H3K27me2/3-competency. Nearly all (220/232) H3K27me2/3 domains overlap with ASH1-catalyzed H3K36me2, with 30% of ASH1-marked genes co-marked by H3K27me2/3. Experimentally-induced H3K27me2/3 (in \u0394npf mutants and telomere repeat insertions) selectively spreads to ASH1-marked chromatin. The marks exist as asymmetric modifications on the same or adjacent nucleosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C74 are strongly supported by ChIP-seq data (Figure 4) showing extensive overlap between ASH1-catalyzed H3K36me2 and H3K27me2/3. The experimental manipulations (\u0394npf and telomere insertions) provide compelling evidence that ASH1-marked chromatin is H3K27me2/3-competent. The inference about asymmetric modifications is supported by prior mass spectrometry data (C67) and is consistent with the observed overlap patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ASH1 catalytic activity modulates H3K27me2/3 accumulation both positively and negatively. ASH1-catalyzed H3K36me2 is independent of H3K27me2/3, but ASH1 inactivation causes loss of H3K27me2/3 at ~180 genes and gain at ~128 genes. Loss of H3K27me2/3 is accompanied by H3K27ac accumulation and gene derepression. New H3K27me2/3 domains in ash1 mutants are delineated by regions normally marked with ASH1-catalyzed H3K36me2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C85, C102, C105-C107 are well-supported by ChIP-seq data (Figure 5) showing bidirectional effects of ASH1 on H3K27me2/3. The independence of ASH1-catalyzed H3K36me2 from H3K27me2/3 is demonstrated in double mutants (Figure 5\u2014figure supplement 1). The observation that both gains and losses of H3K27me2/3 occur in ash1 mutants, with changes restricted to ASH1-marked regions, provides strong evidence for the dual role of ASH1 in modulating H3K27me2/3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "69859e7f-cd67-4c85-b777-d54cc09134ec",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Background on H3K36me pathway: H3K36me largely results from RNAPII-associated KMTs but most eukaryotes have additional RNAPII-independent KMTs including ASH1 orthologs. H3K36me is associated with euchromatin and active genes, though it can recruit repressive chromatin machinery. In metazoans, the pathway involves division of labor between RNAPII-dependent and -independent KMTs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C11-C22, C28-C29 represent established knowledge in the field, supported by appropriate citations to prior literature. These claims provide necessary context for understanding the current work and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "69ddd98f-1d30-4b1c-9a55-780e201720d5",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The H3K36me pathway is clinically significant, underlying fundamental genomic processes and frequently disturbed in cancer. Mutations in H3 genes and H3K36 KMTs/demethylases are implicated in pediatric cancers and malignant transformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 are supported by appropriate citations to prior literature establishing the clinical significance of the H3K36me pathway. These claims provide important motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "a4830692-e0f7-46d3-bc7b-f918626755d2",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Discussion of ASH1 targeting and mechanism: ASH1 has an AT-hook that might interact with A/T-rich DNA, though H3K36me is excluded from constitutive heterochromatin. ASH1-catalyzed H3K36me appears to be the predominant repressive modification of poorly transcribed genes. The mechanism likely involves nucleosome positioning and histone deacetylation through RPD3S-like complexes, representing a transcription-independent repression mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C99 mix speculation (C86, C91, C96, C108) with established knowledge (C87, C90, C93-C95, C97-C99) and data-supported inferences (C88, C89, C92). While the speculation is reasonable and based on known mechanisms in other organisms, the proposed mechanism for ASH1-mediated repression through RPD3S-like complexes lacks direct experimental validation in this study. The essentiality of HDA-3 (C97) makes testing this hypothesis challenging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "5c9e4b81-7d0d-4748-bb51-d6abd125539f",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Discussion of ASH1-PRC2 relationship: Neurospora PRC2 is similar to metazoan PRC2 but lacks PRC1 components. Prior work in Drosophila suggested ASH1 opposes PRC2, consistent with in vitro inhibition of PRC2 by H3K36me. The bidirectional effects observed may reflect different PRC2 forms or differential histone modifications. Similar H3K27me2/3-H3K36me cross-talk has been observed in embryonic stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101, C103-C104, C109 are supported by appropriate citations. Claim C108 is speculation but is clearly presented as such and is reasonable given the data. The discussion appropriately contextualizes the findings within prior literature and acknowledges the complexity of ASH1-PRC2 interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "49592d39-37d9-4a10-86c8-23eb4a0f0066",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Model summary: Neurospora genes are divided into two compartments based on H3K36me source. Active genes have SET-2-catalyzed H3K36me2/3 in gene bodies, while silent genes have ASH1-catalyzed H3K36me2/3 in large domains. H3K36me acts repressively in both cases - protecting active genes from cryptic transcription and blocking transcription at inactive genes. ASH1-modified chromatin can be further modified with H3K27me2/3 by PRC2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C115 represent a synthesis of the experimental findings into a coherent model. The model is well-supported by the ChIP-seq and RNA-seq data presented throughout the manuscript. The dual repressive function of H3K36me is supported by both the current data and prior literature (C112 cites Li et al., 2007b).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    },
+    {
+      "id": "d5086423-a1aa-48c6-9755-d85736c081c5",
+      "content_id": "55af8a6d-66e4-4788-a5a0-2b7594935551",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Abstract summary: SET-2 marks active genes while ASH1 marks and represses inactive genes. ASH1-marked chromatin can be further modified by H3K27 methylation, and ASH1 activity modulates H3K27me2/3 accumulation bidirectionally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 from the abstract accurately summarize the major findings that are supported by the detailed experimental data presented in the results section. These claims are validated by the comprehensive ChIP-seq and RNA-seq analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:15:01.536865Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b394ee39-cee6-4b21-9642-dd1534d3e948",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "c8a49936-124e-4f65-b19b-78486c0933f0",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "3dbf5045-d287-4e04-8126-d0348bdc498a",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "3bb9ed8c-6c61-40e9-b939-0c4ce8c31ae7",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "86111c75-ec02-48c4-9042-30ee9bdf4d45",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "4bdcd1db-002e-418e-b639-65b995c4b9f7",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "4b9f2223-762c-439c-85d8-7b957d811abd",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "721e1e2c-fa7d-4ee5-b6e1-67e6b85496b2",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "4587e00c-991b-45db-9273-4ed0bbcc4695",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "52f484df-2e5d-4ad3-ae01-d2de138bf0f7",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "f1aad442-4e31-49af-95ee-c8f431d3a3cd",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "7e6ca298-123e-464a-a18b-2fb7e9c2ef41",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "0b24a94d-8a94-4039-98c1-9ab1ac99bcd3",
+      "result_id": "1cf7fc64-22b7-4c40-8806-d6e096f9ae01"
+    },
+    {
+      "claim_id": "feb95414-96b1-4783-bb58-e556bbd3ab59",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "af7934ba-2465-4321-981e-f5a91a148d36",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "1a00df45-4ba0-4bff-adf9-a9d1fc200cea",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "0c8b4e88-288c-442c-b637-25495ced6f8d",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "be6875bd-e51e-49c9-b47d-77e39e275a76",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "2b3ae837-a96d-4bb9-8002-ce48b3044a38",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "849d61c3-06aa-49c3-97b7-e1a79f35c699",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "e6d3f108-9785-4e79-bf54-86b22808d19f",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "4ff78949-d6b5-4273-9dbb-0067b18f3ae1",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "a49d91f8-563f-4ef5-819d-5745c15446de",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "4c469da1-daa0-4c92-8f20-67684ea1995e",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "78b26b5a-34f1-484b-8eee-43fa317f32b0",
+      "result_id": "e2013496-810d-47b5-a970-79dea0ca2194"
+    },
+    {
+      "claim_id": "4d4009c0-c62b-4166-84ba-5835a2c569c1",
+      "result_id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc"
+    },
+    {
+      "claim_id": "0c587887-78db-4544-83da-6aa531538518",
+      "result_id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc"
+    },
+    {
+      "claim_id": "92d6cd4b-eb82-4bd0-bb61-0f21bb92d324",
+      "result_id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc"
+    },
+    {
+      "claim_id": "210d8332-3ac8-4a97-b710-23afb33e8a17",
+      "result_id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc"
+    },
+    {
+      "claim_id": "77e11261-8f04-4443-a97b-5062b1dc645d",
+      "result_id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc"
+    },
+    {
+      "claim_id": "f3b11ccd-4b3c-498f-9d71-89f8f6598c61",
+      "result_id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc"
+    },
+    {
+      "claim_id": "a532d5da-3c3f-496b-99e5-8871eaa310ce",
+      "result_id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc"
+    },
+    {
+      "claim_id": "0ed1da2c-b3dd-4ebc-b2be-3fa91f2975dc",
+      "result_id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc"
+    },
+    {
+      "claim_id": "11455c41-d459-42dc-93db-8a0c140eed73",
+      "result_id": "32eb1c5b-b09c-42ee-af75-cdde6f19e9bc"
+    },
+    {
+      "claim_id": "24fc6941-2ee1-4ebc-a634-e7d6f59cdea2",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "0855a4bb-338a-4daa-adfa-5d2969a95a10",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "ef609b24-d004-4e8c-b497-fb36f2994d0a",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "5eb98215-67c3-4fb3-adae-0239410aa650",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "ea6b624e-b3fe-4e57-91af-0b2e5bf37e8b",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "9fd9396b-2af2-413f-9d08-0d62ae975bdc",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "c0612f89-ea7a-447f-8398-9563522901fd",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "c55606a9-60ac-4e5e-99a3-22b63ad7c0b7",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "d95ea642-9696-429e-8f4b-b4d600198dd5",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "24d6f118-b791-4ef2-a246-1451a3f0a2e8",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "b356e306-2c12-42be-98ed-7b8832ad0534",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "983cd607-8664-454a-8e71-58350f90443e",
+      "result_id": "20698b66-c642-4bb1-8dd4-8ea9a7187bf1"
+    },
+    {
+      "claim_id": "2c360196-f99d-4a96-b2dd-8801b9241f30",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "dece5f53-2d67-47fe-a8dc-85757a11c24d",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "628f2ce6-4e56-45a2-bf14-f1872658d4db",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "d6fab320-dbf6-4601-ba26-f1415c579f84",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "4d1d33de-384d-4cc5-a7b8-6a31c4c2ced1",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "f7bd0d5c-db45-4713-8536-bfbef98850c1",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "ac635499-51d3-4af6-90f3-c81b7d9ea6c8",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "3c74e235-269c-4a76-8f37-82b26ee32bed",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "958a8f51-0f0c-46f5-abfb-3a41c1e014b7",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "68295a5f-bba7-4645-88fa-79fa02d556dd",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "3ccda7c5-49f1-4649-887f-3e659c26af09",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "7f844d99-746d-4a0f-9e27-a04b876c5b0f",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "c2013277-0fae-430b-8574-daf9c265c449",
+      "result_id": "aecdda23-cec2-49d9-b82e-0a8f91eab8d9"
+    },
+    {
+      "claim_id": "fd3b1ca7-3c32-4174-89ed-985ed6e9c433",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "7fbb2db1-1d09-4884-af9a-1ff09613dc81",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "d7066bcb-5f08-4840-9627-912f1050d314",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "ab76c33d-1259-4787-88d7-8a50c4a090f9",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "fa702902-f2cd-4fb9-b2b4-61225ce22489",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "e2b3e205-f86f-46fb-8242-ec551911cb35",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "eafb4520-374b-41cd-a25f-ba8666e1aa23",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "1d5b58e7-59a7-4445-b1a8-fd7f438faa5c",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "15e846e1-736d-422e-8127-32f78542696b",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "f3792043-3522-4b2b-a61f-b787483ebbae",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "78438046-2275-4c67-ad05-209ab8eeb1bd",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "d723db1e-0ce5-42a3-9d5c-60b64157d56c",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "234f3e4c-bc62-40d5-bc41-82d34817cceb",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "415f720d-23a6-4c68-8f18-e08201fc948d",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "33c7918c-0d10-461a-b9ee-16b9f1e5ca0b",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "d38247c4-b380-4aea-97e5-dcb5d7e0cd8c",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "9aac8e14-9201-4cdb-8c1d-048be05f076d",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "bb9354a7-90b3-4cb7-8ab1-1b1b022ae05c",
+      "result_id": "69859e7f-cd67-4c85-b777-d54cc09134ec"
+    },
+    {
+      "claim_id": "800ab0d0-28a3-42ea-bd48-fb84de2be851",
+      "result_id": "69ddd98f-1d30-4b1c-9a55-780e201720d5"
+    },
+    {
+      "claim_id": "cf9f6bb7-b8bf-4692-9596-1631e21bd7ab",
+      "result_id": "69ddd98f-1d30-4b1c-9a55-780e201720d5"
+    },
+    {
+      "claim_id": "25844592-dd7e-4f4b-8b10-737ea3296fe1",
+      "result_id": "69ddd98f-1d30-4b1c-9a55-780e201720d5"
+    },
+    {
+      "claim_id": "79a1b3c0-36bf-43ee-abdd-108abbf30a98",
+      "result_id": "69ddd98f-1d30-4b1c-9a55-780e201720d5"
+    },
+    {
+      "claim_id": "730a37fa-dcb4-4c54-875c-669b0b07b38b",
+      "result_id": "69ddd98f-1d30-4b1c-9a55-780e201720d5"
+    },
+    {
+      "claim_id": "71be9aa3-a5d1-428a-b2ab-a286f26181b5",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "d229ea5f-195a-42c4-98f1-3dce5bf747b6",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "5bfbce59-1d93-47e2-8341-0e368dd5857b",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "b94f1f98-14d6-4f8b-ad86-ecabb1649796",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "f3502aad-e8f0-4e77-b739-44f3f6bb3e1b",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "169ca4f8-a28d-4122-acc1-74e1964f9454",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "4d96f463-1e9e-4148-8538-05e55d9b6114",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "e7f16d46-c10d-468b-8f69-0c2f797a8933",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "bd890b44-9f04-47dd-957b-fd2c2e7f6ed6",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "6c2489dc-5edf-43ec-8f0d-95d2550f463b",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "214b3d92-a8e0-4cc8-ba26-487721c7af20",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "440cb617-92a8-4bbe-bdca-c5f19881be02",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "849019e9-a357-425d-809b-b4f77c77d8e8",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "2742cd0a-47de-4a90-923c-7daa300f1f52",
+      "result_id": "a4830692-e0f7-46d3-bc7b-f918626755d2"
+    },
+    {
+      "claim_id": "5ab504ac-530a-4ee2-b11c-410afc6b987e",
+      "result_id": "5c9e4b81-7d0d-4748-bb51-d6abd125539f"
+    },
+    {
+      "claim_id": "725dc6f9-4ccc-48da-a3cd-f7692acd5b6a",
+      "result_id": "5c9e4b81-7d0d-4748-bb51-d6abd125539f"
+    },
+    {
+      "claim_id": "5c631347-fe37-4fae-bac8-fa31296944c4",
+      "result_id": "5c9e4b81-7d0d-4748-bb51-d6abd125539f"
+    },
+    {
+      "claim_id": "3bb7acf5-c8ff-4dc4-965a-e90e7b88c564",
+      "result_id": "5c9e4b81-7d0d-4748-bb51-d6abd125539f"
+    },
+    {
+      "claim_id": "5a0c74ba-9741-4fdf-b6ca-bd34c646de1a",
+      "result_id": "5c9e4b81-7d0d-4748-bb51-d6abd125539f"
+    },
+    {
+      "claim_id": "f9d0bcd4-7bec-406b-bb5e-bbfa460d3075",
+      "result_id": "5c9e4b81-7d0d-4748-bb51-d6abd125539f"
+    },
+    {
+      "claim_id": "f1978efa-cbad-40fe-bfb8-bce675ffaebb",
+      "result_id": "49592d39-37d9-4a10-86c8-23eb4a0f0066"
+    },
+    {
+      "claim_id": "eb2565eb-20e1-4cff-bb17-38bf76cc54ba",
+      "result_id": "49592d39-37d9-4a10-86c8-23eb4a0f0066"
+    },
+    {
+      "claim_id": "ba66433c-fb09-49a5-848b-77e1c3206bbf",
+      "result_id": "49592d39-37d9-4a10-86c8-23eb4a0f0066"
+    },
+    {
+      "claim_id": "ac6f253e-d37d-42e1-b6c0-c2534edb9216",
+      "result_id": "49592d39-37d9-4a10-86c8-23eb4a0f0066"
+    },
+    {
+      "claim_id": "35af3ac8-976c-43f3-acb0-cfb240b93078",
+      "result_id": "49592d39-37d9-4a10-86c8-23eb4a0f0066"
+    },
+    {
+      "claim_id": "ebfb9e63-56be-49ad-8d23-f061a393bc02",
+      "result_id": "49592d39-37d9-4a10-86c8-23eb4a0f0066"
+    },
+    {
+      "claim_id": "46896dd7-936d-49aa-99ef-8ab0c833bc1e",
+      "result_id": "d5086423-a1aa-48c6-9755-d85736c081c5"
+    },
+    {
+      "claim_id": "cf6bb09e-11a8-477c-bcf9-e43aaabe3acf",
+      "result_id": "d5086423-a1aa-48c6-9755-d85736c081c5"
+    },
+    {
+      "claim_id": "9516f86c-b5a8-4755-ab92-25a4c063fe33",
+      "result_id": "d5086423-a1aa-48c6-9755-d85736c081c5"
+    },
+    {
+      "claim_id": "c96f53ee-fd0c-4284-ade4-e10123f78083",
+      "result_id": "d5086423-a1aa-48c6-9755-d85736c081c5"
+    },
+    {
+      "claim_id": "2e79ab67-2137-45c1-add5-9ede919bbc3e",
+      "result_id": "d5086423-a1aa-48c6-9755-d85736c081c5"
+    }
+  ],
+  "comparisons": []
+}

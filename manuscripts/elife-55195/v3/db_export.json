@@ -1,0 +1,1477 @@
+{
+  "submission": {
+    "id": "acb6194a-3496-41a4-bd09-aadcb785ab37",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:02:12.727171Z",
+    "updated_at": "2025-12-02T17:02:12.727171Z"
+  },
+  "content": [
+    {
+      "id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "submission_id": "acb6194a-3496-41a4-bd09-aadcb785ab37",
+      "content_type": "manuscript",
+      "content_text": "# Ant collective cognition allows for efficient navigation through disordered environments\n\n## Authors\n\n- Aviram Gelblum<sup>1</sup>\n- Ehud Fonio<sup>1</sup>\n- Yoav Rodeh<sup>1</sup> ([ORCID: 0000-0002-7224-6451](https://orcid.org/0000-0002-7224-6451))\n- Amos Korman<sup>3</sup> ([ORCID: 0000-0001-8652-9228](https://orcid.org/0000-0001-8652-9228)) \u2020\n- Ofer Feinerman<sup>1</sup> ([ORCID: 0000-0003-4145-0238](https://orcid.org/0000-0003-4145-0238)) \u2020\n\n### Affiliations\n\n1. Department of Physics of Complex Systems, Weizmann Institute of Science Rehovot Israel\n2. Department of Software Engineering, Ort Braude College Karmiel Israel\n3. The Research Institute on the Foundations of Computer Science (IRIF), CNRS and University of Paris Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe cognitive abilities of biological organisms only make sense in the context of their environment. Here, we study longhorn crazy ant collective navigation skills within the context of a semi-natural, randomized environment. Mapping this biological setting into the \u2018Ant-in-a-Labyrinth\u2019 framework which studies physical transport through disordered media allows us to formulate precise links between the statistics of environmental challenges and the ants\u2019 collective navigation abilities. We show that, in this environment, the ants use their numbers to collectively extend their sensing range. Although this extension is moderate, it nevertheless allows for extremely fast traversal times that overshadow known physical solutions to the \u2018Ant-in-a-Labyrinth\u2019 problem. To explain this large payoff, we use percolation theory and prove that whenever the labyrinth is solvable, a logarithmically small sensing range suffices for extreme speedup. Overall, our work demonstrates the potential advantages of group living and collective cognition in increasing a species\u2019 habitable range.\n\n## Introduction\n\nMovement and navigation are key ingredients in the ecology of any animal species (Nathan et al., 2008). Within its environment, an animal may encounter diverse and unpredictable navigational challenges. In some cases, such as chemotaxis, a simple biased random walk strategy suffices for efficient navigation (Berg, 2000). However, when challenges are complex (Vergassola et al., 2007), the animal may need to exploit cognitive tools (Lihoreau et al., 2019) such as active sensing of the environment (Gomez-Marin et al., 2011), processing of gathered information (Vergassola et al., 2007), and memory formation (Collett et al., 2013). Indeed, an animal\u2019s navigation strategies reflect both the structure and statistics of its environment (Dyer, 1998) and its cognitive capacities (Geva-Sagiv et al., 2015; Collett et al., 1998).\n\nCooperation is a common means by which animals may increase their cognitive capacity (Couzin, 2009). Group living animals may improve their navigational choices through social learning (Mueller et al., 2013), collective decision making (Couzin et al., 2011; Simons, 2004), and leadership (Gelblum et al., 2015). Whether these forms of collective cognition enable a species to broaden the range of navigational challenges it can overcome (Couzin, 2009) is an intriguing question.\n\nWe approach this question within the context of cooperative transport (Czaczkes and Ratnieks, 2013) by longhorn crazy ants (Paratrechina longicornis) (Feinerman et al., 2018). To capture the structure and diversity of natural environmental conditions, we track groups of ants as they cooperatively transport large objects through semi-natural environments which mimic random stone-riddled terrains. The inherent randomness of this setting produces a wide distribution of navigational challenges that facilitates a study of the connections between individual capabilities, environmental statistics, and emergent collective cognition (Gordon, 2019).\n\nAn additional advantage of considering disordered environments is that motion through such environments has been extensively studied from a physics and mathematical perspective (Isichenko, 1992). Namely, percolation theory studies the structure of porous or disordered media by modeling them as discrete or continuous (Feng et al., 1987) randomly connected networks (Stauffer and Aharony, 2018). The percolation threshold of a network specifies the degree of connectivity at which it undergoes a phase transition. Below the threshold, connections are few and the system breaks into small disconnected clusters. Above the threshold, there are enough connections to form a single giant component which spans the entire system. The \u2019Ant-in-a-Labyrinth\u2019 framework (Stauffer and Aharony, 2018;\u00a0de Gennes, 2009; Feng et al., 1987; Straley, 1980; Hughes, 1995; Berger et al., 2003; Kozma and Nachmias, 2009; Ben Arous et al., 2016; Richardson et al., 2011)\u00a0studies physical flows through porous media by considering the motion of a biased random walker as it traverses a percolation network. Importantly, while in these physical settings the dynamics are memoryless and governed by purely local forces, biological systems are not necessarily limited by these constraints; animal navigation employs memory (Collett et al., 1992) and may include non-local strategies such as collective sensing (Berdahl et al., 2013) or pheromone trails (Reid et al., 2012). The \u2018Ant-in-a-Labyrinth\u2019 framework therefore allows for an interesting comparison between the performances of passive physical systems and cognitive biological systems.\n\n## Results\n\n### Ants-in-a-Labyrinth\n\nSemi-natural labyrinths were created by randomly spreading uniform sized cubes (with a footprint of 0.8 by 0.8 cm2) across a planar arena (70 by 50 cm2) bounded from three directions and open toward the nest (see Figure 1). The ants were initially recruited into the maze arena using cat food morsels, until a clear trail was established to the initial load location near the center of the board\u2019s edge that is furthest from the entrance (see Figure 1b). The cat food morsels were then removed and instead a large food-like item (1 cm radius silicon ring) was placed in this initial location (See Materials and methods). This artificial load was made attractive to the ants by storing it\u00a0overnight in a closed bag of cat food (Gelblum et al., 2015). The ants were then allowed to carry the food without any external intervention. Each maze configuration was tested once, before repeating the process of maze creation, recruitment, and carrying.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55195/elife-55195-fig1-v3.jpg)\n\n**Figure 1.:** (a) Setup for cube maze experiments. Overlaid are the measured\u00a0load trajectory (blue), shortest possible\u00a0path for the load (red) and shortest possible\u00a0path for ants (magenta). Inset shows a close-up image of the ring-shaped load as it is carried by ants through the cube maze. A sample video of the ants\u2019 motion is provided in Video 1. (b) Cube coverage of the maze shown in (a). Black regions are areas that are inaccessible to the load\u2019s center, taking into account its radius. Cube coverage is defined as the fraction of inaccessible areas (Appendix 1.1, Figure 1\u2014figure supplement 1a). The load is marked in pale green and shown at its initial location. Shortest available path for the load is plotted in red and the ants\u2019 actual trajectory is drawn in blue, as in (a).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55195/elife-55195-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) The fraction of space blocked by obstacles (mean coverage), as a function of number of cubes for computer-generated mazes (red) and experimental configurations (blue). Namely, the space the center of the $R$\u00a0=\u00a01 cm ring-shaped load cannot reach. Mazes of the maximum density the ants were able to solve (300 cubes) are already at an impressive 55% coverage. Shaded regions correspond to standard error of the mean. Wherever no error is visible, the error is small enough to fit within the filled circle marker. (b) The fraction of solvable computer-generated dense cube mazes as a function of mean cube coverage is monotonically decreasing, as expected. Mazes with coverage greater than 0.62 (corresponds to 400 cubes roughly) are unsolvable more often than not, with the greatest density mazes being solvable only \u223c10% of the time.\n\n![Video 1.](https://cdn.elifesciences.org/articles/55195/elife-55195-video1.mp4.jpg)\n\n**Video 1.:** The nest is located to the right. The video is sped up X8 of real-life speed.\n\nIn order to deliver the load to the nest, the ants had to cooperatively transport it amid cubes which often interconnect into composite obstacles (see Video 1). These obstacles generally interfere with the motion of the large load but are effectively transparent to individual ants that can easily pass in the small gaps between adjacent cubes (Fonio et al., 2016; Figure 1a). This discrepancy makes escaping local traps and consequently finding a winding trajectory that crosses the labyrinth highly non-trivial (Figure 1,\u00a0Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55195/elife-55195-fig2-v3.jpg)\n\n**Figure 2.:** (a) Heat map of trajectories of 200 simulation iterations over an example maze (brighter colors signify more visits, cubes are drawn in white). Actual ant trajectory for this maze is overlaid in blue. Initial location for all trajectories is marked by a green cogwheel. (b) Probabilities to solve the maze as a function of mean coverage, for ants (blue), pinball model (red), and extended pinball model (magenta) simulations. The percent of solvable mazes is depicted in black (up to 0.55 coverage - experimental mazes, 0.55 coverage and above - computer generated mazes). Sample sizes (from small coverage to large): Ants - 15,57,19,19,28,30, Pinball Model - 200 iterations each over 10,14,10,8,15,11 distinct mazes, Extended Pinball Model - 500 iterations each over 10,14,10,8,15,11 distinct mazes. Existence of Solution - (experimental - up to 0.55 coverage): 10, 14, 10, 8, 15, 11 (generated- 0.55 coverage and beyond): 100 for each coverage. (c) Comparison of average total arc length of ants\u2019 and different types of simulations\u2019 trajectories (color scheme as in (b)). The geodesic shortest path traversing the maze is shown in black. We take into account the different success rates of the simulation and ants as shown in panel (b) by adding a penalty to each iteration/experiment which was not successful. The added penalty equals average speed multiplied by the time stuck before termination of experiment/iteration. Error margins in (b,c) are standard errors of the mean. Wherever no error is visible, the error is small enough to fit within the filled circle marker. Sample sizes (from small coverage to large): Ants - 31,10,14,10,8,15,11, Simulations - as in (b) except the first point is 200/500 iterations in the no cubes case, Shortest Path - 10,14,10,8,15,11, first point is simply the width of the board. (d) The performance of different simulated models normalized by empirical ant performance (marked by horizontal green line). We use a single inverse measure for the performance of the simulations, $\\frac{L_{sim}}{L_{ants}}$, where $L$ is the solution arc length (calculated as in panel (c)) averaged over all cube densities. Models are categorized by their locality and responsiveness, and separated into three differently colored x-axes; each corresponding to a different kind of simulation, wherein the numeric value is the main parameter we change in that simulation. Local non-responsive models are versions of the pinball model where noise levels were varied (Blue dots over blue axis, a noise value of 1 is the fitted value in original model. Appendix 2.1 and Appendix 2\u2014figure 1). Local responsive models are versions of the pinball model in which noise is temporarily altered in response to the load being stuck in a trap (Red dots over red axis, Appendix 2.3 and Appendix 2\u2014figure 3) or a new random bias direction is temporarily selected (Magenta dot over orange axis, Appendix 2.2 and Appendix 2\u2014figure 2). The non-local responsive models are versions of the extended pinball model with different sensing radii (Orange dots over orange axis, Materials and methods, Appendix 2.4, Appendix 2\u2014figure 4). For a full version of this panel with three additional simulations with considerably inferior performance, see Appendix 2\u2014figure 5.\n\nThe entire carrying process was filmed and the coordinates of the load, ants, and cubes extracted using image processing (see Materials and methods, Source datas 1\u20132).\n\nA labyrinth was declared to be solved if the load reached the edge of the arena closest to the nest within an 8-min\u00a0time frame. By comparison, in the absence of cubes, the load traverses the same distance in a mean time of less than 1.5 min. In the language of percolation theory, higher cube coverage (see Figure 1b, Appendix 1.1, Figure 1\u2014figure supplement 1a) corresponds to reduced connectivity between the regions that are available to the load\u2019s motion. Low and intermediate cube densities that correspond to a connectivity level above the percolation threshold yield soluble mazes. As cube density grows, the intricacy of the maze rises; this manifests in a reduction in connectivity of the allowed regions, as the percolation threshold is approached. At a certain high enough cube coverage, the labyrinth falls below its percolation threshold. This is accompanied by the formation of large composite obstacles that break the labyrinth into disconnected islands which render it insoluble\u00a0(Figure 2b). We find that the performance of the ants decreases with the number of cubes comprising the maze: sparse mazes were more likely to be solved, were crossed faster, and with a shorter trajectory arc length (Figure 2b\u2013c, Appendix 2\u2014figure 2b). The ants were able to solve mazes up to cube coverage of 55% (300 cubes). This number is not far from the percolation threshold of this system, which occurs at 60% coverage, and beyond which there is a sharp decrease in the number of solvable mazes (see Appendix 1.2, Figure 1\u2014figure supplement 1b).\n\n### Ants outperform biased random walks\n\nTo evaluate the ants\u2019 performance under the percolation threshold, we compared it to simpler, non-biological models of motion in which the ants\u2019 attraction to the nest is mapped to a directional bias. Specifically, we introduce the pinball model as a continuous version of the discrete biased random walk. This model describes the viscous motion of a ring that falls through an array of square pegs (Halperin et al., 1985) in the presence of Brownian noise (see Materials and methods). Notably, the pinball model significantly outperforms the discrete biased random walk (see Materials and methods, Appendix 2\u2014figure 2c). This improved performance stems from the fact that, unlike the biased random walk which can stall at any obstacle, the falling ring quickly bypasses isolated pegs by rolling over them. Similar rolling behavior is also evident in the ants\u2019 collective motion (Appendix 1.3 and Appendix 1\u2014figure 1; Czaczkes and Ratnieks, 2011).\n\nThe free parameters of the pinball model were fit so that its simulated trajectories (see Geva-Sagiv et al., 2015) reproduce major features of the ants\u2019 collective motion in the absence of cubes (see Materials and methods). Fixing these parameters, the simulation was then run over all cube configurations as extracted from the experimental footage (200 instantiations per cube configuration, see trajectory heat map example in Figure 2a). As expected, increased cube coverage renders the simulation less effective in terms of success probability, solution times and total trajectory arc length (Figure 2b\u2013c, Appendix 2\u2014figure 2b).\n\nWe go on to compare the performance of the pinball model to that exhibited by the ants (Figure 2b\u2013d). By construction, in the absence of cubes the pinball model performs similarly to the ants. This similarity carries over to low-density mazes, which were mostly composed of isolated cubes, since both the ants and the pinball simulation quickly roll across these small obstacles. At intermediate cube densities, where composite obstacles are present, the ants outperform the physical model by a gap that widens with increasing cube number. Finally, both algorithms are similarly ineffective at solving very dense mazes. The ants\u2019 performance surpasses not only that of the pinball model but also variants of this model with other noise statistics (see Figure 2d - local, non-responsive algorithms, blue points/axis, Appendix 2.1,\u00a02.2 and Appendix 2\u2014figures 1, 2). Figure 2d summarizes the comparisons between empirical ant performances and those of different numerical simulations and is referred to below as further models are introduced.\n\n### Collective extension of sensing range\n\nPercolation mazes can be viewed as a collection of disjoint traps (Berger et al., 2003; Figure 3b). Therefore, to identify the crucial ingredients which help the ants outperform local physical models we focused on motion within such traps. Much like local maxima in optimization problems, traps are areas in which motion toward the global solution is blocked. Escape from a trap must therefore be facilitated by secondary forces that are not aligned with the general bias. Similar to common optimization heuristics (Kirkpatrick et al., 1983), in the pinball model these forces are the result of random noise. The ants, however, exhibit more elaborate motion. We find that when the carrying group enters a trap, its characteristics of motion change; specifically, they spend a higher percentage of the time walking against the bias (Appendix 1.4, Appendix 1\u2014figure 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55195/elife-55195-fig3-v3.jpg)\n\n**Figure 3.:** (a) Logarithmic heat map showing the spread of ants while the load is located near the deepest\u00a0point of a triangular trap (extracted from 23 min of footage).\u00a0The nest direction is towards the top. Color intensity represents the total number of ant counts within each 2D bin over the aforementioned experimental duration. A $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}\u224510cm$ radius area centered on the load contains \u223c99% of ant traffic in the vicinity of the load (see Figure 3\u2014figure supplement 1). Inset shows an example image from the video footage of the experiment. (b) Illustration of traps on a sample maze. Each group of cubes comprising a trap are connected by gray lines and colored according to the trap depth in cm (as defined in Appendix 1.5) corresponding to the color bar. The empirical ant trajectory for this particular realization is plotted in blue (initial location marked using a pale green cogwheel). Nest direction is to the right. (C) Probability of trap solution as a function of trap depth for ants (blue), pinball model (red), and extended pinball model (magenta). Sample sizes (from shallow trap to deep): Ants - 73,70,35,22,19,6,3, Pinball Model - 2645,2886,1646,1289,982,343,105, Extended Pinball Model - 8979,8203,4637,3395,2042,815,403. (d) Average normalized arc length of the trajectory taken to solve a trap as a function of trap depth for ants and simulations (color scheme as in (c)). Trajectory lengths are normalized by trap depth (see Appendix 1.5, Materials and methods). Ant performance is approximately constant up to $D=12cm$\u00a0cm\u00a0which is on the scale of $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$ (see panel (a)). Sample sizes: Ants - 73,70,35,21,14,4,1, Pinball Model - 2620,2675,1352,530,136,60,0, Extended Pinball Model - 8952,7969,4497,3347,1913,620,302. Error margins in (c,d) are standard errors of the mean. Wherever no error is visible, the error is small enough to fit within the filled circle marker.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55195/elife-55195-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cumulative percentage of recognized ant counts as a function of distance from the center of the load (when it is located at the apex of the trap) in centimeters. The distribution reaches 99% at a distance of \u223c14.1 cm (red dashed line), which is on the order of 10 cm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55195/elife-55195-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Bee swarm plot displaying distributions of trap sizes as a function of mean coverage. Medians and means are represented by green rectangles and red pluses, respectively. The data is taken from experiments for coverage $\\leq0.55$ (blue), and from computer generated mazes for coverage $\\geq0.55$ (orange). Solid black horizontal line represents the ants\u2019 sensing radius $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}=10$. Dashed black vertical line represents the maximal maze coverage the ants solved. Dashed gray line represents the percolation threshold of the system. Note that unsolvable traps were not included in the plot. For this reason, there is less data displayed for the very high coverage distributions.\n\nIt was previously shown for ants (Ron et al., 2018; Gelblum et al., 2016) (and other animal groups Tunstr\u00f8m et al., 2013; Buhl et al., 2006) that physical interaction with a trap can induce change in the collective characteristics of motion. This responsiveness does not require any individual to be explicitly aware of the trap and can therefore be perceived as implicit, emergent trap detection. However, our simulations show that mere responsiveness to local information does not suffice in explaining the ants\u2019 enhanced performance (see local responsive algorithms in Figure 2d, Appendix 2.2,\u00a02.3, Appendix 2\u2014figures 2c,\u00a03).\n\nBeyond the effect of local mechanical collisions, the collective motion of P. longicornis is known to be guided by information that is brought in by newly attached transient leader ants (Gelblum et al., 2015;\u00a0Gelblum et al., 2016). Once attached, these ants steer the entire group and determine the collective direction of motion. Leader ants come from the non-carrying population which surrounds the load (Gelblum et al., 2015; Fonio et al., 2016). Their attachment therefore allows carrying ants to use information that is beyond the load\u2019s immediate locality and could enable the group to collectively extend their sensing range (Berdahl et al., 2013). Next, we estimate the distance at which information is gathered and assess the impact of this form of non-locality on global performances.\n\nTo approximate the sensing radius, we focused on the spatial distribution of non-carrying ants around a trapped load (Figure 3a\u00a0and Materials and methods). We find that when the load is delayed within a trap, non-carrying ants spread across a circular region whose outer radius, $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$, is on the order of 10\u00a0cm (Figure 3a, Figure 3\u2014figure supplement 1). Although a relatively small fraction of the ants reach areas that are $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$ centimeters away from the load, this is the relevant length scale to consider; this is since even a single leader ant suffices to steer the entire group and guide it as far as 10\u00a0cm\u00a0(Gelblum et al., 2015). Hence, when the load is delayed within an obstacle, leader ants constantly present the carrying group with potential crossing routes up to a 10\u00a0cm radius. Collectively, this implies that a number of potential routes are presented in parallel to the carrying group. In turn, the coordinated motion allows the group to explore the suggested traversal routes (Gelblum et al., 2016) until, eventually, they find an escape route that bypasses the obstacle (Fonio et al., 2016). Indeed, we find that preventing individual\u00a0ants from entering the trap from detour routes significantly reduced the extent of the ants\u2019 collective exploration within the trap (see Appendix 1.7 and Appendix 1\u2014figure 4).\n\n### Extended sensing facilitates efficient trap and labyrinth traversal\n\nTo assess the contribution of the extended sensing to trap negotiation, we considered an extended-pinball model, an extension of the pinball model with an enlarged sensing range, $r_{s\u2062e\u2062n\u2062s\u2062e}$ (see Materials and methods). This is a responsive model in which obstacle sensing induces temporary change in the direction of the bias. Unlike the responsive local models described above (Figure 2d), in the extended pinball model the choice of the temporary directional bias is affected by non-local environmental structure. Specifically, the direction of this temporary bias was chosen to lead toward a point along the obstacle\u2019s boundary that is conducive to bypassing the obstacle, entails minimal directional changes (Gelblum et al., 2015; Forster et al., 2014), and is no further than a distance of $r_{s\u2062e\u2062n\u2062s\u2062e}$ from the load\u2019s center (for more details see Materials and methods). We ran computer simulations of this model over the experimentally acquired cube maze configurations - 500 instantiations per cube configuration.\n\nNext, we compared the effectiveness of trap escape by the ants, the pinball model and the extended pinball model. To do so, we defined the depth of a trap as the length of the geodesic required to escape its\u00a0deepest\u00a0point (Appendix 1.5 and Appendix 1\u2014figure 3). We then quantified how well the ants and the simulations perform when facing traps of a given depth independent of the overall complexity of the maze. This was done by assessing the average distance travelled to escape the trap\u00a0and normalizing\u00a0it by trap depth. In the basic pinball model, this ratio increases with trap size as would be expected from a random walker that relies on rare large fluctuations to escape. The ants do much better: up to trap depths that roughly coincide with the measured upper bound on their sensation range, $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$, the ants\u2019 escape route is highly efficient, namely it scales linearly with trap depth (see Fonio et al., 2016). For traps that are deeper than $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$ the ratio quickly rises. The extended pinball model highlights the role that sensing range plays in trap escape. To efficiently bypass a trap of a given size, the sensing range must be at least as large (see Appendix 2\u2014figure 4c). Specifically, setting the\u00a0sensing range parameter of the extended pinball model to its experimentally measured upper bound $r_{s\u2062e\u2062n\u2062s\u2062e}=r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$ yields trap solution performance similar to that of the ants (Figure 3c-d).\n\nWe now turn to check how non-local information and the resulting improvement in negotiating medium-sized traps (i.e. up to $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$) reflect on overall performance. We find that the extended pinball model simulations with $r_{s\u2062e\u2062n\u2062s\u2062e}=r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$ performed significantly better than the original pinball model and almost matched\u00a0the\u00a0performance of the ants (see Figure 2b\u2013c). In addition, we found that simulating the extended pinball model with values of $r_{s\u2062e\u2062n\u2062s\u2062e}$ that are smaller than $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$ diminished performance. Conversely, increasing the value of $r_{s\u2062e\u2062n\u2062s\u2062e}$ beyond $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$ had no effect on overall performance (see Figure 2d - orange points/axis, Appendix 2.4 and Appendix 2\u2014figure 4a,b).\n\nWe note that while the performances of the extended pinball model with a sensing radius of $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$ are comparable to those of the ants, they are still slightly inferior (Figure 2b\u2013c). This may be expected due to the relative simplicity of this model which does not aim to precisely replicate the distributed nature and navigational capabilities of ants. Rather, this model is intended to capture the ants\u2019 extended sensing range and demonstrate the navigational importance of collecting information beyond the physical boundaries of the load.\n\nThe relation between the ability to escape a single disjoint trap and overall performance in crossing the entire terrain relies on the statistics of trap sizes in the environment. Indeed, we find that below the ants\u2019 solution threshold of 55% coverage, close to the system\u2019s actual percolation threshold, the vast majority (93.6%) of the traps are smaller than $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$ (Figure 4a, Appendix 1.6, Figure 3\u2014figure supplement 2). The ants\u2019 efficient performance at the global level can therefore be traced to their ability to quickly overcome traps up to this size. Moreover, the rarity of large traps renders larger sensing ranges unnecessary. Next, we present theoretical analysis to make these intuitive points more precise.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55195/elife-55195-fig4-v3.jpg)\n\n**Figure 4.:** (a) The fraction of cubes which belong to difficult traps, out of the total number of cubes in the system, as a function of mean coverage of the cube maze. Difficult traps are those defined by $D>r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}$. Note the sharp increasing trend above 0.55% coverage. Error margins are standard errors of the mean. Sample Sizes (from small coverage to large): Experimental (number of cubes in the calculation) - 1017,2511,2033,1631,3380,2798, Generated - 50 different mazes for each cube number: 100,200,225,250,275,300,325,350,400,425,450. (b) Simulated performances of percolation lattice solution algorithms just above the percolation threshold ($p=0.55$). The biased random walk model whose bias, $B=0.045$, is optimized (Berger et al., 2003) to increase drift speed (see inset).\u00a0Note that this a local-sensing algorithm with this optimized bias stillperforms significantly worse than a logarithmic extended sensing algorithm. The extended sensing algorithm is only slightly worse than the overall shortest path and the shortest path that is constrained within a logarithmic width strip crossing the maze. Error bars in the main panel and shaded regions in the inset signify standard deviation. Sample sizes: Main figure - calculation for the first 3 bars is one number per maze. The last bar is a simulation with 200 iterations over each maze. Since we used 50 different lattice configurations, the sample size is 50,50,50,10000. Inset - 200 iterations over 50 different lattices; thus, 10,000 samples per point. (c) Schematic illustration of the theoretical extended-sensing algorithm on a 2D percolation grid (see Materials and methods, Appendix 3.1, 3.2). Red lines are the open edges of the infinite cluster across which the walker moves from an initial point s to a final point t. The walker moves by executing a series of short bouts. Depicted in the image is a single bout wherein the agent, currently positioned at point u, accesses information within its sensing range (black square, of logarithmic radius) and advances along the green geodesic (fully contained within the sensing range) to some point v on the next goal set line. Such bouts allow the agent to cross the maze on a path whose distance is extremely close to that of the shortest path (blue line) between the initial point $s$ and the final point t, that is contained within a strip of logarithmic width (colored gray).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55195/elife-55195-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** 90th percentile of perpendicular distance from mean direction of motion of the cooperatively carried load as a function of mean coverage, for all obtained load trajectories. We see that the ant group stays within a distance of \u223c4\u20136 cm from the mean direction of motion. As expected, this distance grows slightly with mean coverage, since the path naturally must be more winding. Shaded area is the standard deviation.\n\n### Logarithmic sensing radius suffices to approximate the shortest path\n\nPercolation theory deals with statistics of cluster sizes on random graphs while the Ant-in-a-Labyrinth literature examines motion over such graphs. These fields of study could therefore provide firm theoretical grounds for studying the relations between environmental statistics and collective navigation as found in our experiments.\n\nA main result of the ant-in-a-labyrinth literature is that a pure random walker would cross the percolation maze in a time that scales quadratically with the size of the system (Ben Arous et al., 2016). Moreover, adding a small bias to the random walk results in much faster passage times that are linear in system size (Berger et al., 2003; Reichhardt and Reichhardt, 2018). Further increasing the bias does not necessarily increase speed since the walker tends to get trapped. This implies the existence of an intermediate bias in which traversal speed is maximized (Fribergh and Hammond, 2014; B\u00e9nichou et al., 2014; Barma and Dhar, 1983) - we verified this theoretical result by simulating random walks with different biases on percolated square lattices\u00a0(Figure 4b). In all these cases, the sensing range of the walker is, by definition, zero. It is therefore interesting to compare these performances to those of an ant-inspired random walker with an extended sensing range.\n\nOur main theoretical result concerns the impact of moderately extending the sensing range (Angel et al., 2008) to be logarithmic in system size. We first used simulations to show that such a modest extension can lead to a huge (over 200-fold) speed up in traversal times when compared to classical ant-in-a-labyrinth solutions (Figure 4b, Appendix 3.2). Then, to better understand the origin of this result, we combined mathematical analysis and simulation (Figure 4c) to show that a walker whose sensing range is logarithmic in system size can cross the labyrinth along a path that approximates the shortest possible path to extremely high precision (Appendix 3.1,\u00a03.2, Materials and methods, Appendix 3\u2014figure 4a).\n\nWe next present an outline of the formal arguments of our proof which are laid in detail in Appendix 3. Our analysis can be broken into three parts: First,\u00a0we prove that two distant points on a percolation grid above the percolation threshold (p=0.5) can be connected along a path that is fully confined to a narrow strip (Figure 4c). Second, we use numerical calculations to show that the length of this confined path is extremely close to the length of the shortest possible path between these two points. Finally, we provide an algorithm for a mobile agent with a logarithmic sensing range which allows the agent to proceed along a path that is extremely close to the confined path and, therefore, to the shortest possible path between the two points.\n\nMore specifically, we considered a percolated grid above the percolation threshold, and two points $s$ and $t$ that belong to the infinite connected component. For the first aforementioned part, we aim to prove that with high probability there exists a path that connects these two points and is completely contained within a strip $S$ of logarithmic width around the aerial line that connects the two points (colored gray in Figure 4c). Essentially, this result follows from a result by Aizenman and Newman, 1984 which states that, above the percolation threshold, the probability of obtaining a\u00a0given obstacle decreases exponentially with its size. This implies that if the aerial distance between the points is d, then with high probability, there will not be an obstacle larger than $W=c\u2062log\u2061d$, for some constant c\u00a0>\u00a00, which blocks the aerial line between them. Taking the width of the strip $S$ to be slightly larger than $W$ ensures that, with high probability, there is a path which is contained in $S$ and bypasses these obstacles. Having established the existence of such a path, we denote the length of the shortest of all such paths by $D~$.\n\nNext, we numerically demonstrated that $D~$ is extremely close to $D$, the unrestricted shortest path between s and t (Figure 4b). This was done by first generating\u00a0a random lattice slightly above the percolation threshold (p=0.55). We then defined a narrow strip that traverses the lattice and calculated the shortest path from side to side, where the path is either unconstrained and can include any vertex on the entire lattice (length\u00a0$D$) or constrained to stay bounded\u00a0to the strip (length\u00a0$D~$). These shortest paths were calculated by finding the regional minimum of the summation of two geodesic distance transforms over image representations of the random lattice, with the two edges of the strips acting as seed locations. To find the shortest path constrained to the strip, we simply ran the same calculation on the subset of the maze which only contains the strip. We find that the average percent of increase to the length of the shortest path when constrained to the aforementioned strip is merely \u223c0.46% (averaged\u00a0over N=50\u00a0lattices of size d =\u00a070,000,).\n\nFinding a path whose length approximates $D~$ may not be a trivial task for an agent with a small vision-radius. As our main theoretical result, we prove that a logarithmic field of view, $r=b\u2062log\u2061d$, suffices to yield paths that closely approximate the length of $D~$. In fact, by appropriately choosing the constant $b$ we can guarantee that the length of the resulting path will approximate $D~$ to any desired approximation. To achieve this, the agent executes a series of short bouts where each allows it to reduce its aerial distance to\u00a0the\u00a0destination, $t$, by roughly $log\u2061d$ (Figure 4c). At the beginning of a bout the agent assesses all paths that start at its current location (node $u$ in Figure 4c), are contained within its sensing range, $r$ (black square in Figure 4c), and lead to some point $v$ in the strip $S$ (colored gray in Figure 4c) which is roughly $log\u2061d$ closer to the destination (node $v$ in the \u2018goal set\u2019 in Figure 4c). It then advances along the shortest of these paths (which exists with high probability). Since the bout starts and ends in $S$, any deviation from $S$ stays within the radius $r$, and is hence small (Figure 4c). Since the sensing radius, $r$, is larger than the width of the strip, the trajectory chosen by the agent can be shown to be extremely close to the shortest path that is fully contained in the strip and advances the same distance. Stringing these bouts allows the agent to cross the maze on a path whose length is extremely close to $D~$ and, in turn, to the shortest possible distance $D$.\n\n### Relating theoretical results and empirical findings\n\nThe theorem outlined above shows that a small logarithmic sensing range suffices for fast traversal of a percolation maze. Our theoretical results further indicate that a route that is confined within a narrow strip around the aerial line connecting the start and end points can well-approximate the shortest path possible. In other words, the proof suggests that efficient labyrinth crossings do not require significant deviations from the aerial line. In line with this suggestion, we find that the empirical load trajectories are typically confined to relatively narrow strips, even at high cube densities (Figure 4\u2014figure supplement 1).\n\nTo further interpret our experimental results in light of our theory, we must first return to our underlying assumptions. While in our experiments we vary the density of open edges $p$, in our theoretical results we assume a fixed value $p_{0}$ which is above the percolation threshold. To reconcile these analyses, we note that for a sufficiently large system size, $N$, the dominant factor in the sensing range required to solve the maze would be $log\u2061N$. This logarithmic sensing range then suffices for the entire range of mazes with $p\\geqp_{0}$, that\u00a0is, mazes of the same size whose coverage is lower.\n\nOur theoretical analysis thus predicts a logarithmic relation between system size and sensing range. An algorithm implementing this sensing range can efficiently navigate most solvable mazes of the corresponding size. We next turn to apply this result to quantitatively relate two length scales: the size of the ants\u2019 foraging range which, in the case of this species, is on the order of 10 m (Jaffe, 1993), and the scale of extended sensing which is on the order of 10 cm. To make this relation, we must specify a third length scale - the spacing of the abstract grid used in our proofs. We note that grid spacing coincides with the length of a cube\u2019s edge which is 1 cm. Indeed, the addition of a single cube translates to the removal of an edge in the percolation grid. We further note that both cube size and experimental load radius are not arbitrary. They were both chosen to coincide with the typical size of the loads cooperatively transported by longhorn crazy ants (Gelblum et al., 2015; Feinerman et al., 2018). Smaller obstacles will not stall the carrying group. Larger, extended obstacles can no longer be approximated by a percolation network.\n\nWith these numbers in hand we can now verify whether the ants\u2019 natural sensing range is congruent with our theoretical results. Given the 1 cm grid spacing, a foraging range of 10 m coincides with a system size of $N=1000$. According to our theoretical results, the expected sensing range at this system size is on the order of $log\u2061(1000)\u224810$. Translating the answer back into centimeters, we find that the ants\u2019 sensing range is expected to be on the order of 10 cm. This length scale coincides with our empirical findings regarding both the ants\u2019 sensing range and the strip width to which their collective solutions are confined (Figure 4\u2014figure supplement 1).\n\nWe wish to stress that these measures are not meant to be precise. First, our experimental system\u2019s length is 70 cm, which is substantially smaller than the ants\u2019 maximal foraging range. This is not a major concern since optimal sensing ranges are robust across system sizes due to their logarithmic nature. The optimal sensing range for a 70 cm system is only $log\u2061(1000)/log\u2061(70)=1.6$ times smaller than the sensing range that corresponds to a 10 m foraging range, and is still on the order of 10 cm. Second, there is no reason to believe that the ants are optimally tuned for the environments studied in this paper or for a specific system size. We merely claim that the sensing range we measured is extremely efficient for traversing disordered systems of varied sizes and densities. It is this kind of generality one might expect from natural navigational systems that must deal with a large number of unexpected challenges.\n\n## Discussion\n\nAn organism\u2019s survival depends on its ability to overcome challenges toward reward. The evolution of such abilities can be affected by various factors including the difficulty of the challenge, its prevalence (Schlaepfer et al., 2002), the reward it entails (Krill, 2007) and the energetic cost of maintaining cognitive and physical capabilities required to tackle it (Burns et al., 2011). Accommodating these possibly conflicting considerations can lead to evolutionary trade-offs in problem solving abilities (Isler, 2013; Mendl, 1999; MacIver et al., 2010; Shoval et al., 2012). The navigation behavior we describe may be the result of such a trade-off: the ants use their distributed nature to probe the surroundings non-locally but only moderately extend their sensing range. The extreme navigational efficiency induced by this moderate increase in sensing range stems from the fact that it matches the statistics of trap sizes in percolation networks. Indeed, percolative environments, either below or above the percolation threshold, hardly exhibit any traps of intermediate (i.e., super-logarithmic and sub-linear) size (Stauffer and Aharony, 2018) and navigational strategies to tackle such traps are thus useless.\n\nThe ants use remote, active, collective sensing to probe their surroundings. Remote sensing is extremely common in the biological world (Klemas, 2013). Primary examples are the use of sight, olfaction, hearing, and vibration (Hill, 2001; Kl\u00e4rner and Barth, 1982). Animal remote sensing also extends to the use of more active tactics such as echolocation (Au, 1997) and active electrolocation (Albert and Crampton, 2005). Most ant species are known to use eyesight to assist their navigation (Wehner et al., 1996). However, since ants are physically small in comparison to the smoothness of the surfaces they inhabit, their lines of sight along these surfaces are inevitably short. Thus, sight alone\u00a0may\u00a0not suffice to bypass local obstacles during cooperative transport. Instead, the ants use their numbers to actively extend their sensing range by sending out scouts in all directions. Indeed, evolutionary trade-offs as discussed above can be expected to be prevalent in cases of active sensing (Arditi et al., 2015).\n\nThis brings us to the second aspect of the ants\u2019 extended sensing; namely, the fact that it is collective. It is not uncommon that animal groups engage in collective sensing. For example, the \u2018many eyes principle\u2019 describes the ability of a group of prey animals to share surveillance efforts, such that the first to spot an approaching predator can warn the rest (Treherne and Foster, 1981). Another striking example comes from fish shoals; golden shiners use collective sensing to track environmental features that are unavailable to individuals and only make sense on the scale of the group (Berdahl et al., 2013). This collective effect is reminiscent of the ants\u2019 collaborative navigation scheme studied here. Indeed, as a group, the ants manage to find navigational solutions to large obstacles that are imperceptible to any single individual (Fonio et al., 2016).\n\nThe \u2018ant-in-a-labyrinth\u2019 problem was originally suggested by Pierre De-Gennes as a means of investigating diffusion through disordered media (de Gennes, 2009). It applies, for example, to the motion of an electron in a metal-insulator alloy under an electric field and at some finite temperature (Gefen et al., 1983; Stanton et al., 1986; Nava et al., 1976). The electron can be modeled as a random walker on a percolation network where the effect of the electric field is captured by a drift term and the effect of temperature by an additional random component. This biased random walk framework underlies most ant-in-a-labyrinth literature (Stauffer and Aharony, 2018; de Gennes, 2009; Feng et al., 1987; Straley, 1980; Hughes, 1995; Berger et al., 2003; Kozma and Nachmias, 2009; Ben Arous et al., 2016; Richardson et al., 2011). Inspired by the ants\u2019 behavior, we took a more algorithmic perspective to this problem. Instead of studying the properties of a walker with a given set of local rules fixed by the laws of physics, we explored the impact of extending the sensing range on navigational performances. Such studies regarding the effects of locality on performances are, in fact, a common theme in theoretical computer science (Peleg, 2000). In general, local algorithms are often preferred for their simplicity. However, it is known that they can fall short under different circumstances (Peleg, 2000; Linial, 1992; Naor and Stockmeyer, 1995; Goos et al., 2017; Sarma et al., 2012). Indeed, we have seen that in our system the performance of physics-based local algorithms is substantially inferior to the ants\u2019 performance. Conversely, extending the sensing range to be logarithmic in the size of the grid can have a significant impact on navigation time, overshadowing purely local solutions (Kirkpatrick et al., 1983; Fonio et al., 2016; Deneubourg et al., 1983).\n\nFinally, the wide applicability of percolation theory leads us to hypothesize that similar relations between environmental structure and perception range may carry over to other biological systems. These include populations that occupy an extended area in either physical (Berdahl et al., 2013; Reid and Latty, 2016; Nakagaki, 2000) or abstract (Wagner, 2005) space. Spreading allows the population as a whole to sample the space in a non-local manner. As an example, robustness and neutral mutations allow an evolving population to spread over areas in fitness space. This non-locality enables parallel sampling of the fitness landscape and increases the ability of the population to incorporate advantageous mutations (Wagner, 2005).\n\n## Materials and methods\n\n### Experimental setup: percolation experiment\n\nData was collected from two nests of Paratrechina longicornis in the Weizmann Institute of Science area, Rehovot, Israel. Tests were carried out during the summer when these ants display collective transport behavior (Trager, 1984). Experiments were conducted on a 70 \u00d7 50 cm board on which ants were allowed to cooperatively carry heavy loads. In each nest site, the testing board was positioned according to the availability of appropriate filming conditions (flat floor and a sufficiently large area with uniform illumination). As P. longicornis are a polydomous species, a 3-sided plastic frame was place around the board, with the opening directed towards the largest nest entrance. This was done to make sure the bias the ants exhibit is directed towards the same nest direction, i.e. there are no conflicting biases.\n\nBefore each experiment, a specific amount of cubes were randomly spread over the board. Ants were then recruited using Royal Canin cat food. The cat food morsels were gently picked up and moved backwards several times until a clear trail was established to the initial load location near $(x,y)=(0,25)$ on the board. The cat food morsels were then removed and instead the ants were given an artificial ring-shaped 1.5 mm thick, 1 cm radius silicon load. The artificial objects were stored in advance overnight in a closed bag of cat food from the same brand, to make them attractive to the ants. The board and load were marked with different colors to facilitate image analysis and tracking.\n\nAfter recruitment and positioning of the load at the initial location, the carrying process through the cube maze was allowed to unfold without intervention. The entire process was recorded using a Panasonic HC-VX870 camcorder at a 4K resolution with a frame rate of 25 frames per second in most cases (a small fraction of the experiments were recorded at HD resolution with a frame rate of 50 frames per second).\n\nExperiments were declared to be over if one of three conditions was fulfilled:\n\nEach maze was tested once, before repeating the process of maze creation, recruitment and carrying.\n\n### Experimental setup: wedge experiment\n\nUnsolvable wedge-trap experiments were performed to assess the spatial distribution of non-carrying ants around the load while it is trapped. These experiments were conducted on a single colony within the Weizmann Institute of Science, Rehovot, Israel. Here, the board was a blank A3 page which was put within a dedicated elevated perspex arena open on one side, with a paper ramp connected to it. The open side was directed towards the nest entrance. Two different set-ups were tested: a wedge-shaped unsolvable trap was created either by manually setting cubes\u00a0\u223c1.5\u20132 cm apart (a composite trap), or by appropriately positioning two perspex plates (a single entrance trap). Only the entrance in the latter set of experiments was also composed of cubes, to produce the same difficulty in the front of the trap. The ants were recruited using a procedure similar to the one used for the percolation experiment (see above section), and then allowed to carry the load for extended periods of time (i.e. hours). These experiments were recorded using a Panasonic HC-VX870 camcorder at HD resolution with a frame rate of 50 frames per second.\n\n### Image processing\n\nVideos were analyzed using custom code built in MATLAB. One program was dedicated to tracking the motion of the center as well as the orientation of the load, based on iterative HSV thresholding of the image to recognize the colored markings on the load. Ants carrying the load were also recognized by transforming the image into grayscale and performing homomorphic filtering before applying a threshold. Ant blobs were distinguished from other blobs based on features such as circularity and eccentricity.\n\nCube locations were recognized by another specialized program, through a combination of HSV and RGB thresholding. Cube blobs were automatically recognized and subsequently manually corrected using a GUI. Cube base locations were then extrapolated from the obtained cube blobs.\n\nThe original video had a small effect of pincushion distortion which was accounted for using a spatial distortion fixing transform. Load trajectories and cube locations were corrected.\n\n### Calculation of trajectory arc length of single trap solutions\n\nIn\u00a0Figure 3d, we show the mean arc length obtained for crossing single traps of different depths. To calculate this value, we considered the relevant trajectory section to begin when the ant team/simulation reaches a point 1\u00a0cm away from a trap, and ends when it advances 3.2 cm\u00a0ahead in the nest direction (positive x direction), thus assuring the trap is solved. This distance is in line with the distance used for trap definition (Appendix 1.5). The extra 3.2 cm\u00a0are\u00a0then deducted from the arc length. The arc length is then normalized by the trap size, $D$.\n\n### Simulations\n\n#### Physical simulations\n\nAll physical simulations were written based on CapSim\u00a0(Tassa, 2019), a MATLAB based physics engine aimed at simulating multiple 2D rigid body mechanics. Based on our experimentally extracted cube locations, we used CapSim to define the cubes and the edges of the board as collidable immovable objects. The load was defined to be a disk of radius $R=1.1$ cm, based on the experimental load size ($R=1$ cm). The addition of 0.1 cm is a result of evaluating simulation results allowing the load to pass through gaps the ants could not. This correction compensates for inaccuracies in cube recognition due to image processing errors and difficulty in assessing manually the cubes\u2019 exact location due to their angle relative to the camera. At $R=1.1$ cm there was a strong correspondence between the ants\u2019 and the simulated load\u2019s ability to pass through gaps.\n\nCapSim allows manipulation\u00a0of\u00a0gravity $g$ (analogous to the bias towards the nest), drag \u03bc, and object mass m. We also defined a random noise force term \u03bd\u00a0which is recalculated every time step and added to the gravity term. The force direction is sampled from a uniform distribution, and its size is sampled from a normal distribution with mean 0 and standard deviation $\\sigma_{F}$. This parameter is important to simulate the inherent noise of the biological system in question.\n\nAfter fitting model parameters (see relevant section below), the simulation was run over all experimentally implemented mazes (200/500\u00a0iterations each), allowing the dynamics to unfold up to a maximum time of $T_{m\u2062a\u2062x}$.\n\n#### Discrete biased random walk over continuous cube mazes\n\nThis simulation implements discrete biased random walk of a disc of radius $R=1.1$ cm, moving across the continuous cube mazes extracted from the experimental footage. The simulation was written in MATLAB. The walker moves over the continuous board with a discrete step of size $S=0.1$ cm. The direction of motion is randomly assigned in every time step, where the probability of going towards the nest (to the right) is biased such that $p_{r\u2062i\u2062g\u2062h\u2062t}=0.25+B$ and the other three directions are equally likely $p_{l\u2062e\u2062f\u2062t}=p_{u\u2062p}=p_{d\u2062o\u2062w\u2062n}=0.25-\\frac{B}{3}$, where $B$ is the bias parameter. At every time step, the simulation checks if the load\u2019s suggested motion direction leads to overlap with any of the cubes. If so, the direction is re-selected randomly; otherwise, the step is taken in the selected direction. The edges of the board are treated as impassable walls.\n\nAfter fitting model parameters (see relevant section below), the simulation was run over all experimentally implemented mazes (100 iterations each), up to a maximum duration given by $T_{m\u2062a\u2062x}$ .\n\n#### Simulations on discrete lattices\n\nThis set of simulations was developed to complement our mathematical proof regarding the efficiency of the vision algorithm compared to biased random walk, on a dense percolation maze. To do so, we created random percolation lattices poised just above the percolation threshold (which is 0.5 for bond percolation on the $\u2124^{2}$ lattice), $p=0.55$. In line with the theoretical proof (Appendix 3.1), in these simulations, $p$ is the probability of an edge to be open or accessible. In all the simulations described in this section, the walker moves over the giant component induced by the open edges of the lattice. 50 random lattices of dimensions $N\u2062X\u2062\\delta\u2062log_{2}\u2061(N)=70000\u2062X\u2062120\u2062log_{2}\u2061(70000)$ were generated. Following the theoretical considerations described in Appendix 3.1, a concentric strip of width $\\alpha\u2062log_{2}\u2061(N)=20\u2062log_{2}\u2061(70000)$ (1/6 of the width of the lattice) was defined as the \u2018internal strip\u2019.\n\nAll simulations start at a node which is included in the giant component, closest to the center of the leftmost column of the aforementioned internal strip. The goal of the simulations is to traverse the maze over the giant component from this initial point to any point on the rightmost column of the internal strip.\n\nAs described in the main text, we ran two types of simulations. First, a simple biased random walker simulation was run over all random lattice instances (50 iterations each), for different bias $B$ values, where the bias is defined as in the previous biased random walk simulations (see above). The second is an extended vision algorithm. In this algorithm, the walker has a vision radius of $\\gamma\u2062log_{2}\u2061(N)=20\u2062log_{2}\u2061(70000)$. Note that the vision radius is equal to the width of the internal strip. At every time step of the simulation, the walker goes along the shortest path within a square of edge size $2\u2062\\gamma\u2062log_{2}\u2061(N)$, centered around its current location, ending at any point which is both included in the giant component and contained within the column of the internal strip which is located $\\gamma\u2062log_{2}\u2061(N)$ further in the positive $x$ direction, measured from the current location (see Appendix 3\u2014figure 3).\n\nWe also calculated for each lattice the overall shortest path (denoted $D$) and the shortest path fully contained within the internal strip (denoted $D~$), from the leftmost column of the internal strip to its rightmost column.\n\n### Fitting model parameters\n\n#### Physical simulations\n\nOur system only has three free parameters since the drag term can be simply set to a constant and incorporated into the other parameters of the system. We therefore set \u03bc to a constant.\n\nThe other three free parameters were fit to global features of freely moving collective transport (i.e., no obstacles) - mean trajectory arc length, mean velocity and two parameters describing the velocity-velocity cosine correlation function. The parameter space was searched by running 30 iterations of the simulation without cubes using 10 different values for each free parameter, totaling in 30,000 iterations. The global features yielded by the simulation were then subtracted from the experimental values and normalized to account for the different scales of the parameter values. The parameters of the simulation yielding minimum error were then recognized. This process was repeated three times, shrinking the searched parameter space to the distance between two points of the prior computation.\n\nThe fitted values for the original simulation parameters are: \u03bc\u00a0=\u00a010, g\u00a0=\u00a0-5.05, $\\sigma_{F}=1277.8$, m\u00a0=\u00a014.8571. The simulation time step is $\u0394\u2062t=0.04$ seconds.\n\nThe low persistent noise variation of the simulation uses the following parameter values instead: $\\sigma_{F}=250$, $\u0394\u2062t=0.4$ seconds.\n\nThe simulation maximum duration $T_{m\u2062a\u2062x}=8$ minutes is equal to the experimental maximum allowed duration.\n\n#### Discrete biased random walk over continuous cube mazes\n\nThis simulation has two relevant parameters. The first - step size $S$, was taken to be 0.1 cm. The value of the step size needed to be small enough to allow motion within traps and be compatible with the scale of the cubes and the entire board. It also needs to be large enough to make the simulations fast enough, and allow the simulation some chance to escape complex traps in reasonable time. We therefore took $S=0.1$ cm to be of the order of magnitude of the velocity of the ants.\n\nThe second parameter, the bias $B$, was fitted using global features of the motion of a freely carried load, in a process similar to that described in the prior section. Here we used the mean deviation in the $y$-direction and the mean trajectory arc length as the global features to fit. The obtained fitted value for the bias for our simulation is $B=0.2211$.\n\nThe simulation maximum duration $T_{m\u2062a\u2062x}$ is derived from the average velocity of the ants along the trajectory and the experimental maximum allowed duration. The result of the calculation was multiplied by five to give the simulation greater chances of successfully navigating the cube mazes. The resulting value was $T_{m\u2062a\u2062x}=7200$ time steps.\n\n#### Simulations on discrete lattices\n\nWe wanted to simulate the algorithm with the minimal vision radius such that the next destination column would be fully visible from any point on the current column, thus $\\alpha=\\gamma$. We also wanted to compare $D$ with $D~$ in a non-trivial way and be able to increase the vision radius if needed, so $\\delta>\\alpha$ and $\\delta>\\gamma$ was chosen to accommodate computation power considerations. The maximum time allowed for the biased random walk simulation was 150,000 time steps. The maximum advancement in x for all biases after this running duration made us realize there is no point in running the simulation until the maze is solved, and it is better to use a speed measure obtained from the terminated walks.\n\n### Extended pinball model\n\nThe extended pinball simulations are the same as the original simulation except the addition of a module responsible for alerting when the load is trapped, based on total motion in the x-direction in the last few seconds. If the load moved less than $\u0394\u2062x_{min}$ in this period of time $T_{compare}$, the load is considered to be stuck. When the load changes its state from \u2018free\u2019 to \u2018stuck\u2019, it acquires a new bias direction based on the local trap structure (the algorithm calculating these directions is described below). Bias magnitude is constant and always set to the parameter fitted to the ant behavior as explained above. The load then continues its motion in this altered state for a duration $T_{changed}$, after which it changes its state to \u2018free\u2019, the bias vector reverts to its original direction and it cannot become stuck again for another duration given by $T_{cooldown}$. This cooldown period is added to make sure that if the load moved backwards it will not immediately switch back into the \u2018stuck\u2019 state.\n\nThe parameter values used for all extended pinball models (and temporarily altered noise) simulations are: $\u0394\u2062x_{min}=0.2$ cm, $T_{compare}=3$ seconds, $T_{changed}=4.48$ seconds, $T_{cooldown}=4$ seconds. The default spatially extended sensing parameter used in the extended pinball simulations is $r_{s\u2062e\u2062n\u2062s\u2062e}^{a\u2062n\u2062t\u2062s}=10$. See Appendix 2.4 for the results of simulations with different $r_{s\u2062e\u2062n\u2062s\u2062e}$ values. The extended pinball model further incorporates time correlated Brownian noise to allow for more persistent motion towards escape. Importantly, correlated Brownian noise alone did not lead to any improvement in global performance (see Appendix 2.2 and Appendix 2\u2014figure 2).\n\nThe extended pinball simulations depend on the assignment of a new bias direction for the simulation when the load becomes stuck. The assigned gravity direction is pre-calculated based on the local structure of the obstacle hindering the load\u2019s advancement. For each maze, we divided the space into 0.5 \u00d7 0.5 cm squares. We then calculated the bias direction for each square center using the \u2018dilated cube\u2019 maze binary image (see Appendix 1.5) and a spatially extended sensing parameter $r_{s\u2062e\u2062n\u2062s\u2062e}$. The following is a general outline of the algorithm and does omit a few minor details dealing with certain edge cases:\n",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "52c24f1a-120b-49db-8aea-0ef0b7e40320",
+      "submission_id": "acb6194a-3496-41a4-bd09-aadcb785ab37",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55195.sa1](https://doi.org/10.7554/eLife.55195.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis article presents a compelling example and analysis of how collective intelligence can lead to the accomplishment of nontrivial tasks. Specifically, the authors show that the method that crazy ants use to move food across complex landscapes involves a sensing range that extends to the group rather than just the individual. As foraging is often described as a random walk, the authors develop several models and show that one that invokes an extended sensing range successfully recapitulates the search paths found in the animals. They also present a theoretical analysis of percolation theory, showing that sensing should extend up to the logarithm of the system size.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Ant collective cognition allows for efficient navigation through disordered environments\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Gordon J Berman as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Christian Rutz as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Adam J Calhoun (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Aviram et al. examine a collective navigation task where longhorn crazy ants are required to transport a large object through a maze-like environment. The task requires cooperation between ants, both to transport the object as well as to find an efficient path out of traps. The authors show that: (1) ants are able to successfully complete the task, even for dense mazes close to the no-solution limit; (2) a simulated biased random walk does not solve the problem as it gets trapped, and argue that the solution requires a non-local sensing component; (3) this non-local sensing is performed by leader ants, which sense an extended area and lead the ants out of traps; (4) a biased random walk with this additional component performs similarly to the ants in simulations; and (5) theoretical arguments which reveal that an extended sensing radius that scales logarithmically with maze size is sufficient to perform this task.\n\nAlthough the reviewers agreed that the work was of sufficient quality to merit consideration, several major points need to be addressed \u2013 enumerated below.\n\nEssential revisions:\n\n1) There was much confusion about the choice of the 10 cm sensing radius. First, Figure 2D shows that \"non-local, responsive\" algorithms with an extended sensing radius of 20 cm are a factor 10 worse than the ants' performance, which directly contradicts Figure 2C's plot for the extended pinball model, which shows similar performance to the ants. The authors should clarify why this is the case. Moreover, it's unclear what should be taken from Figure 2D, particularly since the simulations discussed in that figure are not discussed until a later section. Second, the simulation results depend strongly on extended sensing radius rsense, which is taken to be 10 cm. The 10 cm is based on the results on ants in traps shown in Figure 3. Importantly, from Figure 3A, it is unclear how rsense is 10 cm, while the scale bar of 5 cm clearly indicates a rsense less than 5 cm. Moreover, the Log(N) label for the heatmap is ill-defined (what is N? what is the base of the Log?)\n\nIs 10 cm supposed to be optimal? Is the prediction that the sensing range has to do with the size of the system found in the natural world, or that it changes with the size of the system that is presented experimentally?\n\n2) The theoretical work is interesting but seems disconnected from the rest of the paper. A connection between the assumptions in the model and the experimental setup is not clearly made. A ballpark estimate from the theory with experimental numbers is also not presented. In general, the reviewers felt that more scaffolding material is needed to tie-in the theory with the experiments/simulations. Specifically, the paper could benefit from having an expanded discussion of the theory in the main text. The general gist comes across, but the reviewers didn't really have a sense of what was going on until they read the supplemental section.\n\n3) On a similar note, it would have been nice to see a slightly longer summary/Discussion section putting the work into context. The reviewers thought that the ideas proposed are strong, but would benefit from a more thorough explanation. In particular, the reviewers felt that more connections to the biological literature were necessary, pointing-out the biological implications of the findings in a more thorough manner.\n\n4) On the whole, many of the figures are difficult to read \u2013 the labels are small and in many of the supplementary figures, the legends are impossible to see. The error bars are barely visible. The color schemes are also confusing, for instance, in Appendix 2\u2014figure 2 where both blue and turquoise are used. We ask that the authors extensively modify the figures for clearer presentation.\n",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fe4a817a-efa0-40c8-8425-fff92f0f4dac",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C1",
+      "claim": "Longhorn crazy ants use their numbers to collectively extend their sensing range during cooperative navigation through disordered environments.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that, in this environment, the ants use their numbers to collectively extend their sensing range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations of ant spatial distribution around trapped loads and comparison with simulation models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "ca490100-fb51-4aae-8d11-f0ac10673db4",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C2",
+      "claim": "The ants' collective sensing range extension is moderate in magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this extension is moderate, it nevertheless allows for extremely fast traversal times that overshadow known physical solutions to the 'Ant-in-a-Labyrinth' problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by measurements showing sensing radius on the order of 10 cm",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "c0dc8287-229f-407b-812f-df4654440614",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C3",
+      "claim": "The ants' moderate sensing range extension allows for extremely fast traversal times that overshadow known physical solutions to the 'Ant-in-a-Labyrinth' problem.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this extension is moderate, it nevertheless allows for extremely fast traversal times that overshadow known physical solutions to the 'Ant-in-a-Labyrinth' problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of ant performance with pinball model and biased random walk simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "0151d95c-18b5-42ee-b9e4-f7980375b57d",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C4",
+      "claim": "Whenever the labyrinth is solvable, a logarithmically small sensing range suffices for extreme speedup in traversal.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain this large payoff, we use percolation theory and prove that whenever the labyrinth is solvable, a logarithmically small sensing range suffices for extreme speedup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mathematical proof and simulations on percolation lattices",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "4f1c32c5-c27b-4446-a6c3-7a7097f1a32b",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C5",
+      "claim": "Collective cognition can increase a species' habitable range by enabling navigation through complex environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our work demonstrates the potential advantages of group living and collective cognition in increasing a species' habitable range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results showing ants can solve complex mazes through collective sensing",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "b1195b4a-6c22-4757-a60f-05fa3faf222e",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C6",
+      "claim": "Movement and navigation are key ingredients in the ecology of any animal species.",
+      "claim_type": "EXPLICIT",
+      "source": "Movement and navigation are key ingredients in the ecology of any animal species (Nathan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "d4f5ad38-3e24-45de-9ec2-5a0576cbc12c",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C7",
+      "claim": "A simple biased random walk strategy suffices for efficient navigation in chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, such as chemotaxis, a simple biased random walk strategy suffices for efficient navigation (Berg, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "c29f4b1d-8b1f-4f52-96f1-8073cf6e4a3b",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C8",
+      "claim": "When navigational challenges are complex, animals may need to exploit cognitive tools such as active sensing, information processing, and memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when challenges are complex (Vergassola et al., 2007), the animal may need to exploit cognitive tools (Lihoreau et al., 2019) such as active sensing of the environment (Gomez-Marin et al., 2011), processing of gathered information (Vergassola et al., 2007), and memory formation (Collett et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "9f8bfeb4-5603-4b6d-bf0e-31574ea520fd",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C9",
+      "claim": "An animal's navigation strategies reflect both the structure and statistics of its environment and its cognitive capacities.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, an animal's navigation strategies reflect both the structure and statistics of its environment (Dyer, 1998) and its cognitive capacities (Geva-Sagiv et al., 2015; Collett et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "f1ff64a6-c638-47b8-903b-a780f6ffbef0",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C10",
+      "claim": "Cooperation is a common means by which animals may increase their cognitive capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperation is a common means by which animals may increase their cognitive capacity (Couzin, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "a5e56393-face-47fe-b1d9-ef7bd187fef7",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C11",
+      "claim": "Group living animals may improve their navigational choices through social learning, collective decision making, and leadership.",
+      "claim_type": "EXPLICIT",
+      "source": "Group living animals may improve their navigational choices through social learning (Mueller et al., 2013), collective decision making (Couzin et al., 2011; Simons, 2004), and leadership (Gelblum et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "8e288ccd-c4c3-4002-9b5f-058f9497e903",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C12",
+      "claim": "Semi-natural labyrinths were created by randomly spreading uniform sized cubes (with a footprint of 0.8 by 0.8 cm\u00b2) across a planar arena (70 by 50 cm\u00b2).",
+      "claim_type": "EXPLICIT",
+      "source": "Semi-natural labyrinths were created by randomly spreading uniform sized cubes (with a footprint of 0.8 by 0.8 cm2) across a planar arena (70 by 50 cm2) bounded from three directions and open toward the nest (see Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental setup",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "7b70d469-5465-4409-bb5d-59ff51962297",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C13",
+      "claim": "The artificial load used in experiments was a 1 cm radius silicon ring.",
+      "claim_type": "EXPLICIT",
+      "source": "The cat food morsels were then removed and instead a large food-like item (1 cm radius silicon ring) was placed in this initial location (See Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental materials",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "1a132f90-32fd-4bb2-9118-62488d33455b",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C14",
+      "claim": "Obstacles generally interfere with the motion of the large load but are effectively transparent to individual ants that can easily pass in the small gaps between adjacent cubes.",
+      "claim_type": "EXPLICIT",
+      "source": "These obstacles generally interfere with the motion of the large load but are effectively transparent to individual ants that can easily pass in the small gaps between adjacent cubes (Fonio et al., 2016; Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and reference to Figure 1a",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "103c8f49-a3e4-4213-865f-75ff2eca7e97",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C15",
+      "claim": "A labyrinth was declared to be solved if the load reached the edge of the arena closest to the nest within an 8-min time frame.",
+      "claim_type": "EXPLICIT",
+      "source": "A labyrinth was declared to be solved if the load reached the edge of the arena closest to the nest within an 8-min time frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "fc3c6b5b-c927-4140-a0d9-74e89a28fd13",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C16",
+      "claim": "In the absence of cubes, the load traverses the distance in a mean time of less than 1.5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, in the absence of cubes, the load traverses the same distance in a mean time of less than 1.5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct report of experimental measurement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "c1794f20-19c2-4692-8a71-c9ca3f2f7e78",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C17",
+      "claim": "Higher cube coverage corresponds to reduced connectivity between the regions that are available to the load's motion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the language of percolation theory, higher cube coverage (see Figure 1b, Appendix 1.1, Figure 1\u2014figure supplement 1a) corresponds to reduced connectivity between the regions that are available to the load's motion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Interpretation based on percolation theory applied to experimental setup",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "9588d6e5-3584-4f50-9350-0147b3674683",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C18",
+      "claim": "The ants were able to solve mazes up to cube coverage of 55% (300 cubes).",
+      "claim_type": "EXPLICIT",
+      "source": "The ants were able to solve mazes up to cube coverage of 55% (300 cubes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct report of experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "0b231357-59d1-477a-98c2-075267b2e139",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C19",
+      "claim": "The percolation threshold of this system occurs at 60% coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "This number is not far from the percolation threshold of this system, which occurs at 60% coverage, and beyond which there is a sharp decrease in the number of solvable mazes (see Appendix 1.2, Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "cbfdea99-51d7-42d0-b346-0b97265e0334",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C20",
+      "claim": "The pinball model significantly outperforms the discrete biased random walk.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the pinball model significantly outperforms the discrete biased random walk (see Materials and methods, Appendix 2\u2014figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Appendix 2\u2014figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "dc030534-d602-4f61-822f-c3d8e5d95fa5",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C21",
+      "claim": "The improved performance of the pinball model stems from the fact that the falling ring quickly bypasses isolated pegs by rolling over them.",
+      "claim_type": "EXPLICIT",
+      "source": "This improved performance stems from the fact that, unlike the biased random walk which can stall at any obstacle, the falling ring quickly bypasses isolated pegs by rolling over them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of model behaviors",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "81d82c44-ba1f-4aab-a7f8-f9cb2e1c4e84",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C22",
+      "claim": "Similar rolling behavior is evident in the ants' collective motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar rolling behavior is also evident in the ants' collective motion (Appendix 1.3 and Appendix 1\u2014figure 1; Czaczkes and Ratnieks, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Appendix 1\u2014figure 1 and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "3ecc24e4-5c6a-467d-80bc-9569c8f6ecd2",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C23",
+      "claim": "At intermediate cube densities, where composite obstacles are present, the ants outperform the physical model by a gap that widens with increasing cube number.",
+      "claim_type": "EXPLICIT",
+      "source": "At intermediate cube densities, where composite obstacles are present, the ants outperform the physical model by a gap that widens with increasing cube number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison data shown in Figure 2b-c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "088f8dc6-e921-4d51-81e6-e5aea9239312",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C24",
+      "claim": "When the carrying group enters a trap, they spend a higher percentage of the time walking against the bias.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that when the carrying group enters a trap, its characteristics of motion change; specifically, they spend a higher percentage of the time walking against the bias (Appendix 1.4, Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Appendix 1\u2014figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "99af67db-0285-4058-b9d1-cc41f8c64100",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C25",
+      "claim": "The collective motion of P. longicornis is guided by information that is brought in by newly attached transient leader ants.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the effect of local mechanical collisions, the collective motion of P. longicornis is known to be guided by information that is brought in by newly attached transient leader ants (Gelblum et al., 2015; Gelblum et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "3141d23d-490d-4508-a51b-e88db4c0e36e",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C26",
+      "claim": "Leader ants come from the non-carrying population which surrounds the load.",
+      "claim_type": "EXPLICIT",
+      "source": "Leader ants come from the non-carrying population which surrounds the load (Gelblum et al., 2015; Fonio et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "d73f26df-3cda-4da3-a827-5e02470af8da",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C28",
+      "claim": "Even a single leader ant suffices to steer the entire group and guide it as far as 10 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "This is since even a single leader ant suffices to steer the entire group and guide it as far as 10 cm (Gelblum et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "1d728a04-b704-4e0a-bbcf-34d6471192b7",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C33",
+      "claim": "A pure random walker would cross the percolation maze in a time that scales quadratically with the size of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "A main result of the ant-in-a-labyrinth literature is that a pure random walker would cross the percolation maze in a time that scales quadratically with the size of the system (Ben Arous et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "5b84a952-6256-4f60-829f-634d7769dd20",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C34",
+      "claim": "Adding a small bias to the random walk results in much faster passage times that are linear in system size.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, adding a small bias to the random walk results in much faster passage times that are linear in system size (Berger et al., 2003; Reichhardt and Reichhardt, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "3e940304-728f-40e1-b041-1a10e7c35b1c",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C35",
+      "claim": "There exists an intermediate bias in which traversal speed is maximized for biased random walks on percolation networks.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies the existence of an intermediate bias in which traversal speed is maximized (Fribergh and Hammond, 2014; B\u00e9nichou et al., 2014; Barma and Dhar, 1983) - we verified this theoretical result by simulating random walks with different biases on percolated square lattices (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and verification through simulations shown in Figure 4b",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "4300bf1d-439e-47f1-931f-df5d23e26610",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C36",
+      "claim": "A walker whose sensing range is logarithmic in system size can cross the labyrinth along a path that approximates the shortest possible path to extremely high precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, to better understand the origin of this result, we combined mathematical analysis and simulation (Figure 4c) to show that a walker whose sensing range is logarithmic in system size can cross the labyrinth along a path that approximates the shortest possible path to extremely high precision (Appendix 3.1, 3.2, Materials and methods, Appendix 3\u2014figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mathematical proof and simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "341f9762-ecda-4ad8-bbd0-9fd93dd39a93",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C37",
+      "claim": "Above the percolation threshold, the probability of obtaining a given obstacle decreases exponentially with its size.",
+      "claim_type": "EXPLICIT",
+      "source": "Essentially, this result follows from a result by Aizenman and Newman, 1984 which states that, above the percolation threshold, the probability of obtaining a given obstacle decreases exponentially with its size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established mathematical result",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "c5e2cf66-c06f-4791-87f0-0f84ce6bd48d",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C38",
+      "claim": "The average percent of increase to the length of the shortest path when constrained to a logarithmic width strip is merely ~0.46%.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the average percent of increase to the length of the shortest path when constrained to the aforementioned strip is merely \u223c0.46% (averaged over N=50 lattices of size d = 70,000,).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct report of simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "18e80a4c-973e-4559-aa6e-9827286d0eb0",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C39",
+      "claim": "The empirical load trajectories are typically confined to relatively narrow strips, even at high cube densities.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this suggestion, we find that the empirical load trajectories are typically confined to relatively narrow strips, even at high cube densities (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "ae679348-c444-43ad-a0d3-6acdcdd1cfd8",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C41",
+      "claim": "The foraging range of longhorn crazy ants is on the order of 10 m.",
+      "claim_type": "EXPLICIT",
+      "source": "We next turn to apply this result to quantitatively relate two length scales: the size of the ants' foraging range which, in the case of this species, is on the order of 10 m (Jaffe, 1993), and the scale of extended sensing which is on the order of 10 cm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "3e7d471f-325d-4450-b9d9-ec2b65ccb87a",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C42",
+      "claim": "Both cube size and experimental load radius were chosen to coincide with the typical size of the loads cooperatively transported by longhorn crazy ants.",
+      "claim_type": "EXPLICIT",
+      "source": "We further note that both cube size and experimental load radius are not arbitrary. They were both chosen to coincide with the typical size of the loads cooperatively transported by longhorn crazy ants (Gelblum et al., 2015; Feinerman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "be15bae7-5145-4221-bf8e-cda96de0ec8a",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C43",
+      "claim": "Smaller obstacles will not stall the carrying group.",
+      "claim_type": "EXPLICIT",
+      "source": "Smaller obstacles will not stall the carrying group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental design considerations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "e14866f8-b63d-4997-888d-72ff6e232520",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C44",
+      "claim": "Larger, extended obstacles can no longer be approximated by a percolation network.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger, extended obstacles can no longer be approximated by a percolation network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from theoretical framework limitations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "a3d55e1e-ce43-4c08-b273-a28a2aea7d68",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C45",
+      "claim": "An organism's survival depends on its ability to overcome challenges toward reward.",
+      "claim_type": "EXPLICIT",
+      "source": "An organism's survival depends on its ability to overcome challenges toward reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological principle",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "ef9be6e7-336a-49bc-bc02-02c723209e2b",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C46",
+      "claim": "The evolution of navigational abilities can be affected by various factors including the difficulty of the challenge, its prevalence, the reward it entails, and the energetic cost of maintaining cognitive and physical capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of such abilities can be affected by various factors including the difficulty of the challenge, its prevalence (Schlaepfer et al., 2002), the reward it entails (Krill, 2007) and the energetic cost of maintaining cognitive and physical capabilities required to tackle it (Burns et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "cf367484-f51d-49ee-9d28-8113f7a790f2",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C47",
+      "claim": "Accommodating possibly conflicting considerations can lead to evolutionary trade-offs in problem solving abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Accommodating these possibly conflicting considerations can lead to evolutionary trade-offs in problem solving abilities (Isler, 2013; Mendl, 1999; MacIver et al., 2010; Shoval et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "4dbf82ba-6b8c-45df-bf4e-a82c908f2935",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C48",
+      "claim": "The ants use their distributed nature to probe the surroundings non-locally but only moderately extend their sensing range.",
+      "claim_type": "EXPLICIT",
+      "source": "The navigation behavior we describe may be the result of such a trade-off: the ants use their distributed nature to probe the surroundings non-locally but only moderately extend their sensing range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations and theoretical analysis",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "89b3ec37-d26b-4c00-8b60-1fd341c83729",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C49",
+      "claim": "The extreme navigational efficiency induced by moderate increase in sensing range stems from the fact that it matches the statistics of trap sizes in percolation networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The extreme navigational efficiency induced by this moderate increase in sensing range stems from the fact that it matches the statistics of trap sizes in percolation networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from theoretical analysis and empirical data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "d464bae7-18f6-445f-b20f-c53946574503",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C50",
+      "claim": "Percolative environments hardly exhibit any traps of intermediate (i.e., super-logarithmic and sub-linear) size.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, percolative environments, either below or above the percolation threshold, hardly exhibit any traps of intermediate (i.e., super-logarithmic and sub-linear) size (Stauffer and Aharony, 2018) and navigational strategies to tackle such traps are thus useless.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established percolation theory",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "4bb65c19-e6ff-48d4-ac2c-3d2a9a02b8ee",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C51",
+      "claim": "Remote sensing is extremely common in the biological world.",
+      "claim_type": "EXPLICIT",
+      "source": "Remote sensing is extremely common in the biological world (Klemas, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "007e081e-b5b7-4f4d-8bc0-b883ba631410",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C52",
+      "claim": "Primary examples of remote sensing are the use of sight, olfaction, hearing, and vibration.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary examples are the use of sight, olfaction, hearing, and vibration (Hill, 2001; Kl\u00e4rner and Barth, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "6a86c0e4-abcd-49c4-8c43-9c4ab4ae9374",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C53",
+      "claim": "Animal remote sensing extends to the use of more active tactics such as echolocation and active electrolocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal remote sensing also extends to the use of more active tactics such as echolocation (Au, 1997) and active electrolocation (Albert and Crampton, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "e5bb89ad-2707-4494-9e56-57e7be2b7fc9",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C54",
+      "claim": "Most ant species are known to use eyesight to assist their navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most ant species are known to use eyesight to assist their navigation (Wehner et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "7b9a54ef-d5f5-4186-8956-aacdcaf61976",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C55",
+      "claim": "Since ants are physically small in comparison to the smoothness of the surfaces they inhabit, their lines of sight along these surfaces are inevitably short.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since ants are physically small in comparison to the smoothness of the surfaces they inhabit, their lines of sight along these surfaces are inevitably short.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from physical constraints",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "f52e0c56-a2db-465b-82ea-bf1233f06137",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C56",
+      "claim": "Sight alone may not suffice for ants to bypass local obstacles during cooperative transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, sight alone may not suffice to bypass local obstacles during cooperative transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from physical constraints and experimental context",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "9acad6b1-3c8d-4204-b00a-7fac01c3b1ef",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C57",
+      "claim": "The ants use their numbers to actively extend their sensing range by sending out scouts in all directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the ants use their numbers to actively extend their sensing range by sending out scouts in all directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "f41c8598-0d97-432d-a44b-bd96eee18326",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C58",
+      "claim": "It is not uncommon that animal groups engage in collective sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not uncommon that animal groups engage in collective sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "8921471a-9d83-4512-966e-5c650fecd7f8",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C59",
+      "claim": "The 'many eyes principle' describes the ability of a group of prey animals to share surveillance efforts, such that the first to spot an approaching predator can warn the rest.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the 'many eyes principle' describes the ability of a group of prey animals to share surveillance efforts, such that the first to spot an approaching predator can warn the rest (Treherne and Foster, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "f7424c3b-ccd2-4320-91af-103aabe04e0a",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C60",
+      "claim": "Golden shiners use collective sensing to track environmental features that are unavailable to individuals and only make sense on the scale of the group.",
+      "claim_type": "EXPLICIT",
+      "source": "Another striking example comes from fish shoals; golden shiners use collective sensing to track environmental features that are unavailable to individuals and only make sense on the scale of the group (Berdahl et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "20a06d3b-de65-405f-8f4b-3a1976765a31",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C61",
+      "claim": "As a group, the ants manage to find navigational solutions to large obstacles that are imperceptible to any single individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as a group, the ants manage to find navigational solutions to large obstacles that are imperceptible to any single individual (Fonio et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "fc476e2a-ded8-4769-b6b5-e546ba5e7aad",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C62",
+      "claim": "The 'ant-in-a-labyrinth' problem was originally suggested by Pierre De-Gennes as a means of investigating diffusion through disordered media.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'ant-in-a-labyrinth' problem was originally suggested by Pierre De-Gennes as a means of investigating diffusion through disordered media (de Gennes, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "904e6ee4-5544-4c12-9b34-bb5b409073ba",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C63",
+      "claim": "The ant-in-a-labyrinth problem applies to the motion of an electron in a metal-insulator alloy under an electric field and at some finite temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "It applies, for example, to the motion of an electron in a metal-insulator alloy under an electric field and at some finite temperature (Gefen et al., 1983; Stanton et al., 1986; Nava et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "4ec92b9b-9afd-4f14-8312-f035565e414e",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C64",
+      "claim": "The electron can be modeled as a random walker on a percolation network where the effect of the electric field is captured by a drift term and the effect of temperature by an additional random component.",
+      "claim_type": "EXPLICIT",
+      "source": "The electron can be modeled as a random walker on a percolation network where the effect of the electric field is captured by a drift term and the effect of temperature by an additional random component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of established physical model",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "f4f05dbf-dd5f-4abc-a564-4edbbc8bad39",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C65",
+      "claim": "Local algorithms are often preferred for their simplicity but can fall short under different circumstances.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, local algorithms are often preferred for their simplicity. However, it is known that they can fall short under different circumstances (Peleg, 2000; Linial, 1992; Naor and Stockmeyer, 1995; Goos et al., 2017; Sarma et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established computer science literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "369351f9-6c55-4590-a53f-2b9e903df730",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C66",
+      "claim": "The performance of physics-based local algorithms is substantially inferior to the ants' performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we have seen that in our system the performance of physics-based local algorithms is substantially inferior to the ants' performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of experimental and simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "11ac7135-b35c-4d72-8686-961a7ca38225",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C67",
+      "claim": "Extending the sensing range to be logarithmic in the size of the grid can have a significant impact on navigation time, overshadowing purely local solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, extending the sensing range to be logarithmic in the size of the grid can have a significant impact on navigation time, overshadowing purely local solutions (Kirkpatrick et al., 1983; Fonio et al., 2016; Deneubourg et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by theoretical analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "d6eae0d9-622b-41a4-86cb-a0f2b7632107",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C68",
+      "claim": "Data was collected from two nests of Paratrechina longicornis in the Weizmann Institute of Science area, Rehovot, Israel.",
+      "claim_type": "EXPLICIT",
+      "source": "Data was collected from two nests of Paratrechina longicornis in the Weizmann Institute of Science area, Rehovot, Israel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "451af3d9-5ed0-4497-bece-977cf15c3655",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C69",
+      "claim": "Tests were carried out during the summer when these ants display collective transport behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Tests were carried out during the summer when these ants display collective transport behavior (Trager, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "34108d5e-7b26-499e-8b5d-81b728f51ec1",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C70",
+      "claim": "P. longicornis are a polydomous species.",
+      "claim_type": "EXPLICIT",
+      "source": "As P. longicornis are a polydomous species, a 3-sided plastic frame was place around the board, with the opening directed towards the largest nest entrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of biological fact",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "30137d93-66d6-45f0-986e-dde3ccd7ae96",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C71",
+      "claim": "The artificial objects were stored overnight in a closed bag of cat food to make them attractive to the ants.",
+      "claim_type": "EXPLICIT",
+      "source": "The artificial objects were stored in advance overnight in a closed bag of cat food from the same brand, to make them attractive to the ants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "0c8d5d68-1310-409d-9f3e-fc10187c4ab2",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C72",
+      "claim": "Videos were analyzed using custom code built in MATLAB.",
+      "claim_type": "EXPLICIT",
+      "source": "Videos were analyzed using custom code built in MATLAB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of analysis methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "4cf70fe6-cfe6-4e78-8a78-fc5456902c4a",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C73",
+      "claim": "All physical simulations were written based on CapSim, a MATLAB based physics engine aimed at simulating multiple 2D rigid body mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "All physical simulations were written based on CapSim (Tassa, 2019), a MATLAB based physics engine aimed at simulating multiple 2D rigid body mechanics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of simulation methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "7af7b6a0-f722-4a04-b991-cf91a205b506",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C75",
+      "claim": "The addition of 0.1 cm to the load radius compensates for inaccuracies in cube recognition due to image processing errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of 0.1 cm is a result of evaluating simulation results allowing the load to pass through gaps the ants could not. This correction compensates for inaccuracies in cube recognition due to image processing errors and difficulty in assessing manually the cubes' exact location due to their angle relative to the camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of methodological adjustment",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "284c7229-bd40-49f2-b7e2-0cb3f81cca4b",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C77",
+      "claim": "Preventing individual ants from entering the trap from detour routes significantly reduced the extent of the ants' collective exploration within the trap.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that preventing individual ants from entering the trap from detour routes significantly reduced the extent of the ants' collective exploration within the trap (see Appendix 1.7 and Appendix 1\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental manipulation described in Appendix 1.7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "a7c461e6-775d-4e51-a56a-37b01662e56e",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C78",
+      "claim": "Mere responsiveness to local information does not suffice in explaining the ants' enhanced performance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our simulations show that mere responsiveness to local information does not suffice in explaining the ants' enhanced performance (see local responsive algorithms in Figure 2d, Appendix 2.2, 2.3, Appendix 2\u2014figures 2c, 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 2d and appendices",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "184d2fe1-f7cc-45f2-80ab-0292eeb203ee",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C79",
+      "claim": "The ants' efficient performance at the global level can be traced to their ability to quickly overcome traps up to the size of their sensing range.",
+      "claim_type": "EXPLICIT",
+      "source": "The ants' efficient performance at the global level can therefore be traced to their ability to quickly overcome traps up to this size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from trap size statistics and performance data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "54db9383-1cae-4472-9154-94da0617547c",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C80",
+      "claim": "The rarity of large traps renders larger sensing ranges unnecessary.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the rarity of large traps renders larger sensing ranges unnecessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from trap size statistics",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "6d5a5b0c-1018-45d8-8764-d345b657552f",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "claim_id": "C81",
+      "claim": "A logarithmic sensing range extension can lead to over 200-fold speed up in traversal times when compared to classical ant-in-a-labyrinth solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "We first used simulations to show that such a modest extension can lead to a huge (over 200-fold) speed up in traversal times when compared to classical ant-in-a-labyrinth solutions (Figure 4b, Appendix 3.2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established a semi-natural experimental system where longhorn crazy ants (P. longicornis) cooperatively transported a 1 cm radius silicon ring through randomized cube mazes (70\u00d750 cm arena with 0.8\u00d70.8 cm cubes). Mazes were considered solved if the load reached the nest-side edge within 8 minutes, compared to <1.5 minutes without obstacles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 and C68-C75 provide comprehensive methodological details including experimental setup, materials, image processing, and simulation frameworks. The experimental design is clearly described with appropriate controls (no-cube baseline), though some technical adjustments (C75: 0.1 cm radius correction) are based on post-hoc calibration rather than a priori validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "ea8ab852-663c-47c4-a3c9-ad59b802642e",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ants successfully solved mazes up to 55% cube coverage (300 cubes), approaching the system's percolation threshold of 60% coverage, beyond which maze solvability sharply decreases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are supported by experimental data (Figure 1, Figure 1\u2014figure supplement 1b) showing ant performance across cube densities and the percolation threshold determination. The connection to percolation theory provides appropriate theoretical context for interpreting the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "b84840d1-8a84-46a8-9338-012acdb0761a",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At intermediate cube densities with composite obstacles, ants significantly outperformed the pinball model (a physics-based biased random walk simulation). The pinball model itself outperforms discrete biased random walks due to rolling behavior over isolated obstacles, which is also observed in ant collective motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 are supported by simulation comparisons (Figure 2b-c, Appendix 2\u2014figure 2c). The pinball model was appropriately fitted to no-obstacle ant behavior before testing on obstacle courses. The performance gap at intermediate densities is clearly demonstrated, though the exact mechanisms underlying ant superiority require further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "917fa8ff-6317-4497-b88a-84a6a0b0de32",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When trapped, carrying ants exhibit altered motion characteristics (increased movement against bias) and receive guidance from non-carrying leader ants that explore the surroundings. Even single leader ants can steer the group up to 10 cm. Preventing detour access significantly reduced collective exploration, and local responsive algorithms alone cannot explain ant performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28, C77-C78 are supported by behavioral observations (Appendix 1.4, Appendix 1\u2014figure 2), experimental manipulations (Appendix 1.7), and simulation comparisons (Figure 2d). The evidence converges on non-local information transfer as crucial, though C25-C26, C28 rely heavily on citations to prior work rather than new data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "4a074bb2-0251-4bf5-bf2d-42fa71667244",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ants collectively extend their sensing range by distributing non-carrying individuals around the load to scout in all directions. This extension is moderate in magnitude (approximately 10 cm radius based on spatial distribution analysis).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C57 are supported by spatial distribution analysis of non-carrying ants around trapped loads (Figure 3a, Figure 3\u2014figure supplement 1) showing 99% of ant traffic within ~10 cm radius. The measurement approach is reasonable, though the definition of \"sensing range\" based on spatial distribution is somewhat indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "6ba44d87-a4ff-4185-95cc-f605641bf449",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The ants' moderate sensing range extension (~10 cm) enables extremely fast traversal times that substantially outperform physics-based local algorithms. This efficiency stems from the ability to quickly overcome traps up to their sensing range size, while larger sensing ranges are unnecessary due to the rarity of larger traps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C23, C66, C79-C80 are supported by performance comparisons across models (Figure 2b-d) and trap size statistics (Figure 4a, Figure 3\u2014figure supplement 2). The extended pinball model with rsense=10 cm closely matches ant performance, validating the sensing range estimate. The logical connection between trap statistics and optimal sensing range is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "c3db16ac-2ab2-4e51-a249-0b046551a6e8",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Theoretical analysis using percolation theory proves that a logarithmically small sensing range suffices for extreme speedup in solvable labyrinths. Simulations show >200-fold speedup compared to classical biased random walk solutions. A walker with logarithmic sensing range can approximate the shortest path to within ~0.46% by staying within a logarithmic-width strip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C33-C38, C81 are supported by mathematical proof (Appendix 3.1-3.2), simulations on percolation lattices (Figure 4b-c), and established percolation theory (C37 citing Aizenman & Newman 1984). The theoretical framework is rigorous, though the proof details are in appendices. The 0.46% path length increase (C38) is based on N=50 lattices, which is adequate for this computational analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "084eacd0-6efe-472c-9950-ad5be619aa9d",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Empirical ant trajectories are confined to relatively narrow strips even at high cube densities (Figure 4\u2014figure supplement 1). The experimental parameters (cube size, load radius) were chosen to match typical ant-transported loads. The 10 cm sensing range measured experimentally matches the theoretical prediction of log(1000)\u224810 for the ants' natural 10 m foraging range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C41-C44 connect empirical observations to theoretical predictions. C39 is supported by trajectory analysis (Figure 4\u2014figure supplement 1). The quantitative match between measured sensing range and theoretical prediction (10 cm \u2248 log(1000) grid units) is compelling, though the authors appropriately note this is approximate rather than precise (system size 70 cm vs. 10 m foraging range). C42-C44 provide important context for parameter choices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "995bd1ba-81c6-4763-b188-91c76a6abe7e",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that ant navigation represents an evolutionary trade-off: moderate sensing range extension matches the statistics of trap sizes in percolation networks, where intermediate-sized traps are rare, making strategies to tackle them evolutionarily wasteful.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C50 present an evolutionary interpretation that, while plausible and well-reasoned, is speculative. C48 explicitly states this \"may be the result of such a trade-off\" and is marked as INFERENCE/SPECULATION. C50 is supported by percolation theory, but the evolutionary argument connecting trap statistics to sensing range evolution lacks direct empirical evidence. This is an interesting hypothesis requiring further testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "3fa23354-ec8a-4e63-a934-67ef0720c3d9",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The work demonstrates that collective cognition can increase a species' habitable range by enabling navigation through complex environments. Evolutionary trade-offs in problem-solving abilities can arise from balancing challenge difficulty, prevalence, reward, and energetic costs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C5 is a broad inference from the specific experimental results, while C45-C47 provide general evolutionary context supported by citations. The demonstration that ants can solve complex mazes through collective sensing is clear, but the leap to \"increasing habitable range\" (C5) is speculative and not directly tested. The evolutionary framework (C46-C47) is well-established but its specific application here remains hypothetical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors contextualize their findings within broader biological remote sensing and collective sensing phenomena. Remote sensing (sight, olfaction, echolocation) is common in biology, but ants' small size limits line-of-sight, necessitating collective sensing strategies. Examples include the \"many eyes principle\" in prey animals and collective sensing in fish shoals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C61 provide appropriate biological context supported by citations to established literature. C55-C56 make reasonable inferences about physical constraints on ant vision. C61 cites prior work showing ants solve obstacles imperceptible to individuals. This contextual framing is well-supported but represents background rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "545011e1-b869-4d05-b11b-8d39e04b1700",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes that animal navigation strategies reflect environmental structure and cognitive capacities, ranging from simple biased random walks (chemotaxis) to complex cognitive tools (active sensing, information processing, memory). Cooperation through social learning, collective decision-making, and leadership can enhance navigational abilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 provide well-cited background context from established literature. These are general principles rather than novel findings, appropriately setting up the research question about whether collective cognition enables species to broaden their navigational capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    },
+    {
+      "id": "934a78ce-0a7a-441b-8fe4-fe48bec7596b",
+      "content_id": "124a3f7c-21a3-47f9-a1a8-5f6e19eba605",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The \"ant-in-a-labyrinth\" framework, originally proposed by de Gennes for studying diffusion through disordered media, applies to physical systems like electron transport in alloys. Local algorithms are often preferred for simplicity but can fall short, while extending sensing range to logarithmic scale can significantly impact navigation performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65, C67 provide appropriate theoretical context from physics and computer science literature. The connection between the physical ant-in-a-labyrinth problem and the biological system is well-established. C67 is supported by both theoretical analysis and citations, bridging to the current work's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:02:12.727171Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8e288ccd-c4c3-4002-9b5f-058f9497e903",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "7b70d469-5465-4409-bb5d-59ff51962297",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "1a132f90-32fd-4bb2-9118-62488d33455b",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "103c8f49-a3e4-4213-865f-75ff2eca7e97",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "fc3c6b5b-c927-4140-a0d9-74e89a28fd13",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "d6eae0d9-622b-41a4-86cb-a0f2b7632107",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "451af3d9-5ed0-4497-bece-977cf15c3655",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "34108d5e-7b26-499e-8b5d-81b728f51ec1",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "30137d93-66d6-45f0-986e-dde3ccd7ae96",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "0c8d5d68-1310-409d-9f3e-fc10187c4ab2",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "4cf70fe6-cfe6-4e78-8a78-fc5456902c4a",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "7af7b6a0-f722-4a04-b991-cf91a205b506",
+      "result_id": "37a0a3d0-3ce6-449b-83f2-840e7b9de091"
+    },
+    {
+      "claim_id": "c1794f20-19c2-4692-8a71-c9ca3f2f7e78",
+      "result_id": "ea8ab852-663c-47c4-a3c9-ad59b802642e"
+    },
+    {
+      "claim_id": "9588d6e5-3584-4f50-9350-0147b3674683",
+      "result_id": "ea8ab852-663c-47c4-a3c9-ad59b802642e"
+    },
+    {
+      "claim_id": "0b231357-59d1-477a-98c2-075267b2e139",
+      "result_id": "ea8ab852-663c-47c4-a3c9-ad59b802642e"
+    },
+    {
+      "claim_id": "cbfdea99-51d7-42d0-b346-0b97265e0334",
+      "result_id": "b84840d1-8a84-46a8-9338-012acdb0761a"
+    },
+    {
+      "claim_id": "dc030534-d602-4f61-822f-c3d8e5d95fa5",
+      "result_id": "b84840d1-8a84-46a8-9338-012acdb0761a"
+    },
+    {
+      "claim_id": "81d82c44-ba1f-4aab-a7f8-f9cb2e1c4e84",
+      "result_id": "b84840d1-8a84-46a8-9338-012acdb0761a"
+    },
+    {
+      "claim_id": "3ecc24e4-5c6a-467d-80bc-9569c8f6ecd2",
+      "result_id": "b84840d1-8a84-46a8-9338-012acdb0761a"
+    },
+    {
+      "claim_id": "088f8dc6-e921-4d51-81e6-e5aea9239312",
+      "result_id": "917fa8ff-6317-4497-b88a-84a6a0b0de32"
+    },
+    {
+      "claim_id": "99af67db-0285-4058-b9d1-cc41f8c64100",
+      "result_id": "917fa8ff-6317-4497-b88a-84a6a0b0de32"
+    },
+    {
+      "claim_id": "3141d23d-490d-4508-a51b-e88db4c0e36e",
+      "result_id": "917fa8ff-6317-4497-b88a-84a6a0b0de32"
+    },
+    {
+      "claim_id": "d73f26df-3cda-4da3-a827-5e02470af8da",
+      "result_id": "917fa8ff-6317-4497-b88a-84a6a0b0de32"
+    },
+    {
+      "claim_id": "284c7229-bd40-49f2-b7e2-0cb3f81cca4b",
+      "result_id": "917fa8ff-6317-4497-b88a-84a6a0b0de32"
+    },
+    {
+      "claim_id": "a7c461e6-775d-4e51-a56a-37b01662e56e",
+      "result_id": "917fa8ff-6317-4497-b88a-84a6a0b0de32"
+    },
+    {
+      "claim_id": "fe4a817a-efa0-40c8-8425-fff92f0f4dac",
+      "result_id": "4a074bb2-0251-4bf5-bf2d-42fa71667244"
+    },
+    {
+      "claim_id": "ca490100-fb51-4aae-8d11-f0ac10673db4",
+      "result_id": "4a074bb2-0251-4bf5-bf2d-42fa71667244"
+    },
+    {
+      "claim_id": "9acad6b1-3c8d-4204-b00a-7fac01c3b1ef",
+      "result_id": "4a074bb2-0251-4bf5-bf2d-42fa71667244"
+    },
+    {
+      "claim_id": "c0dc8287-229f-407b-812f-df4654440614",
+      "result_id": "6ba44d87-a4ff-4185-95cc-f605641bf449"
+    },
+    {
+      "claim_id": "3ecc24e4-5c6a-467d-80bc-9569c8f6ecd2",
+      "result_id": "6ba44d87-a4ff-4185-95cc-f605641bf449"
+    },
+    {
+      "claim_id": "369351f9-6c55-4590-a53f-2b9e903df730",
+      "result_id": "6ba44d87-a4ff-4185-95cc-f605641bf449"
+    },
+    {
+      "claim_id": "184d2fe1-f7cc-45f2-80ab-0292eeb203ee",
+      "result_id": "6ba44d87-a4ff-4185-95cc-f605641bf449"
+    },
+    {
+      "claim_id": "54db9383-1cae-4472-9154-94da0617547c",
+      "result_id": "6ba44d87-a4ff-4185-95cc-f605641bf449"
+    },
+    {
+      "claim_id": "0151d95c-18b5-42ee-b9e4-f7980375b57d",
+      "result_id": "c3db16ac-2ab2-4e51-a249-0b046551a6e8"
+    },
+    {
+      "claim_id": "1d728a04-b704-4e0a-bbcf-34d6471192b7",
+      "result_id": "c3db16ac-2ab2-4e51-a249-0b046551a6e8"
+    },
+    {
+      "claim_id": "5b84a952-6256-4f60-829f-634d7769dd20",
+      "result_id": "c3db16ac-2ab2-4e51-a249-0b046551a6e8"
+    },
+    {
+      "claim_id": "3e940304-728f-40e1-b041-1a10e7c35b1c",
+      "result_id": "c3db16ac-2ab2-4e51-a249-0b046551a6e8"
+    },
+    {
+      "claim_id": "4300bf1d-439e-47f1-931f-df5d23e26610",
+      "result_id": "c3db16ac-2ab2-4e51-a249-0b046551a6e8"
+    },
+    {
+      "claim_id": "341f9762-ecda-4ad8-bbd0-9fd93dd39a93",
+      "result_id": "c3db16ac-2ab2-4e51-a249-0b046551a6e8"
+    },
+    {
+      "claim_id": "c5e2cf66-c06f-4791-87f0-0f84ce6bd48d",
+      "result_id": "c3db16ac-2ab2-4e51-a249-0b046551a6e8"
+    },
+    {
+      "claim_id": "6d5a5b0c-1018-45d8-8764-d345b657552f",
+      "result_id": "c3db16ac-2ab2-4e51-a249-0b046551a6e8"
+    },
+    {
+      "claim_id": "18e80a4c-973e-4559-aa6e-9827286d0eb0",
+      "result_id": "084eacd0-6efe-472c-9950-ad5be619aa9d"
+    },
+    {
+      "claim_id": "ae679348-c444-43ad-a0d3-6acdcdd1cfd8",
+      "result_id": "084eacd0-6efe-472c-9950-ad5be619aa9d"
+    },
+    {
+      "claim_id": "3e7d471f-325d-4450-b9d9-ec2b65ccb87a",
+      "result_id": "084eacd0-6efe-472c-9950-ad5be619aa9d"
+    },
+    {
+      "claim_id": "be15bae7-5145-4221-bf8e-cda96de0ec8a",
+      "result_id": "084eacd0-6efe-472c-9950-ad5be619aa9d"
+    },
+    {
+      "claim_id": "e14866f8-b63d-4997-888d-72ff6e232520",
+      "result_id": "084eacd0-6efe-472c-9950-ad5be619aa9d"
+    },
+    {
+      "claim_id": "4dbf82ba-6b8c-45df-bf4e-a82c908f2935",
+      "result_id": "995bd1ba-81c6-4763-b188-91c76a6abe7e"
+    },
+    {
+      "claim_id": "89b3ec37-d26b-4c00-8b60-1fd341c83729",
+      "result_id": "995bd1ba-81c6-4763-b188-91c76a6abe7e"
+    },
+    {
+      "claim_id": "d464bae7-18f6-445f-b20f-c53946574503",
+      "result_id": "995bd1ba-81c6-4763-b188-91c76a6abe7e"
+    },
+    {
+      "claim_id": "4f1c32c5-c27b-4446-a6c3-7a7097f1a32b",
+      "result_id": "3fa23354-ec8a-4e63-a934-67ef0720c3d9"
+    },
+    {
+      "claim_id": "a3d55e1e-ce43-4c08-b273-a28a2aea7d68",
+      "result_id": "3fa23354-ec8a-4e63-a934-67ef0720c3d9"
+    },
+    {
+      "claim_id": "ef9be6e7-336a-49bc-bc02-02c723209e2b",
+      "result_id": "3fa23354-ec8a-4e63-a934-67ef0720c3d9"
+    },
+    {
+      "claim_id": "cf367484-f51d-49ee-9d28-8113f7a790f2",
+      "result_id": "3fa23354-ec8a-4e63-a934-67ef0720c3d9"
+    },
+    {
+      "claim_id": "4bb65c19-e6ff-48d4-ac2c-3d2a9a02b8ee",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "007e081e-b5b7-4f4d-8bc0-b883ba631410",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "6a86c0e4-abcd-49c4-8c43-9c4ab4ae9374",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "e5bb89ad-2707-4494-9e56-57e7be2b7fc9",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "7b9a54ef-d5f5-4186-8956-aacdcaf61976",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "f52e0c56-a2db-465b-82ea-bf1233f06137",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "f41c8598-0d97-432d-a44b-bd96eee18326",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "8921471a-9d83-4512-966e-5c650fecd7f8",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "f7424c3b-ccd2-4320-91af-103aabe04e0a",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "20a06d3b-de65-405f-8f4b-3a1976765a31",
+      "result_id": "a2180db8-d9e3-4ab6-add7-7491aaa96f02"
+    },
+    {
+      "claim_id": "b1195b4a-6c22-4757-a60f-05fa3faf222e",
+      "result_id": "545011e1-b869-4d05-b11b-8d39e04b1700"
+    },
+    {
+      "claim_id": "d4f5ad38-3e24-45de-9ec2-5a0576cbc12c",
+      "result_id": "545011e1-b869-4d05-b11b-8d39e04b1700"
+    },
+    {
+      "claim_id": "c29f4b1d-8b1f-4f52-96f1-8073cf6e4a3b",
+      "result_id": "545011e1-b869-4d05-b11b-8d39e04b1700"
+    },
+    {
+      "claim_id": "9f8bfeb4-5603-4b6d-bf0e-31574ea520fd",
+      "result_id": "545011e1-b869-4d05-b11b-8d39e04b1700"
+    },
+    {
+      "claim_id": "f1ff64a6-c638-47b8-903b-a780f6ffbef0",
+      "result_id": "545011e1-b869-4d05-b11b-8d39e04b1700"
+    },
+    {
+      "claim_id": "a5e56393-face-47fe-b1d9-ef7bd187fef7",
+      "result_id": "545011e1-b869-4d05-b11b-8d39e04b1700"
+    },
+    {
+      "claim_id": "fc476e2a-ded8-4769-b6b5-e546ba5e7aad",
+      "result_id": "934a78ce-0a7a-441b-8fe4-fe48bec7596b"
+    },
+    {
+      "claim_id": "904e6ee4-5544-4c12-9b34-bb5b409073ba",
+      "result_id": "934a78ce-0a7a-441b-8fe4-fe48bec7596b"
+    },
+    {
+      "claim_id": "4ec92b9b-9afd-4f14-8312-f035565e414e",
+      "result_id": "934a78ce-0a7a-441b-8fe4-fe48bec7596b"
+    },
+    {
+      "claim_id": "f4f05dbf-dd5f-4abc-a564-4edbbc8bad39",
+      "result_id": "934a78ce-0a7a-441b-8fe4-fe48bec7596b"
+    },
+    {
+      "claim_id": "11ac7135-b35c-4d72-8686-961a7ca38225",
+      "result_id": "934a78ce-0a7a-441b-8fe4-fe48bec7596b"
+    }
+  ],
+  "comparisons": []
+}

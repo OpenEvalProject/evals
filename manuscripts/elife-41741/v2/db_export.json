@@ -1,0 +1,1917 @@
+{
+  "submission": {
+    "id": "33179cb2-20cf-4fcd-a856-ba71f95b04f7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:58:08.863227Z",
+    "updated_at": "2025-12-02T07:58:08.863227Z"
+  },
+  "content": [
+    {
+      "id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "submission_id": "33179cb2-20cf-4fcd-a856-ba71f95b04f7",
+      "content_type": "manuscript",
+      "content_text": "# Crystal structure of a natural light-gated anion channelrhodopsin\n\n## Authors\n\n- Hai Li<sup>1</sup> ([ORCID: 0000-0002-3969-6709](https://orcid.org/0000-0002-3969-6709))\n- Chia-Ying Huang<sup>2</sup> ([ORCID: 0000-0002-7676-0239](https://orcid.org/0000-0002-7676-0239))\n- Elena G Govorunova<sup>1</sup>\n- Christopher T Schafer<sup>1</sup>\n- Oleg A Sineshchekov<sup>1</sup>\n- Meitian Wang<sup>2</sup>\n- Lei Zheng<sup>1</sup> ([ORCID: 0000-0001-7789-5234](https://orcid.org/0000-0001-7789-5234)) \u2020\n- John L Spudich<sup>1</sup> ([ORCID: 0000-0003-4167-8590](https://orcid.org/0000-0003-4167-8590)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology, Center for Membrane Biology University of Texas Health Science Center \u2013 McGovern Medical School Houston United States\n2. Swiss Light Source Paul Scherrer Institute Villigen Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe anion channelrhodopsin GtACR1 from the alga Guillardia theta is a potent neuron-inhibiting optogenetics tool. Presented here, its X-ray structure at 2.9 \u00c5 reveals a tunnel traversing the protein from its extracellular surface to a large cytoplasmic cavity. The tunnel is lined primarily by small polar and aliphatic residues essential for anion conductance. A disulfide-immobilized extracellular cap facilitates channel closing and the ion path is blocked mid-membrane by its photoactive retinylidene chromophore and further by a cytoplasmic side constriction. The structure also reveals a novel photoactive site configuration that maintains the retinylidene Schiff base protonated when the channel is open. These findings suggest a new channelrhodopsin mechanism, in which the Schiff base not only controls gating, but also serves as a direct mediator for anion flux.\n\n## Introduction\n\nAnion channelrhodopsins (ACRs) are natural light-gated anion channels first discovered in the cryptophyte alga Guillardia theta (GtACR1 and GtACR2) (Govorunova et al., 2015). Their large Cl- conductance makes GtACRs and other ACRs later found in various cryptophyte species (Govorunova et al., 2018; Govorunova et al., 2017b) the most potent neuron-silencing optogenetic tools available. GtACRs have proven to be effective inhibitors of neural processes and behavior in flies (Mauss et al., 2017; Mohammad et al., 2017; Steck et al., 2018), worms (Bergs et al., 2018), zebrafish (Mohamed et al., 2017), ferrets (Wilson et al., 2018), and mice (Forli et al., 2018; Mahn et al., 2018; Messier et al., 2018; Wei et al., 2018).\n\nOf the 35 ACR homologs found in cryptophyte algae (Govorunova et al., 2018; Govorunova et al., 2016; Wietek et al., 2016), GtACR1 is the best characterized in terms of its gating mechanism and photochemical reaction cycle (Sineshchekov et al., 2015; Sineshchekov et al., 2016), and also is the only ACR for which light-gated anion conductance has been proven to be maintained in vitro in a purified state (Li et al., 2016) further recommending it as the preferred ACR for crystallization. The effects of mutations of several key residues, including E68Q/R, S97E, C102A and D234N, on photocurrents and photochemical conversions of GtACR1 have been studied in detail (Sineshchekov et al., 2015; Sineshchekov et al., 2016).\n\nThe most closely related molecules to ACRs are cation channelrhodopsins (CCRs) from chlorophyte algae (Govorunova et al., 2017a). The best characterized CCRs are channelrhodopsin-2 (CrChR2) (Nagel et al., 2003), a membrane-depolarizing phototaxis receptor from Chlamydomonas reinhardtii (Sineshchekov et al., 2002), and C1C2, a chimera of CrChR2 and its paralog CrChR1 (Kato et al., 2012). Atomic structures of C1C2 and CrChR2 have been obtained by X-ray crystallography (Kato et al., 2012; Volkov et al., 2017).\n\nThe two channelrhodopsin families exhibit large differences in their sequences and photochemistry (Govorunova et al., 2017a): (i) ACRs conduct only anions with complete exclusion of cations, even H+, for which CCRs exhibit their highest relative permeability; (ii) ACRs are generally more potent; for\u00a0example GtACR1 exhibits 25-fold higher unitary conductance than CrChR2; (iii) The retinylidene Schiff base in the photoactive site deprotonates prior to channel opening in CCRs (L\u00f3renz-Fonfr\u00eda and Heberle, 2014) and, in contrast, in ACRs remains protonated throughout the lifetime of the open-channel state with deprotonation correlated with the initial phase of channel closing (Sineshchekov et al., 2016; Wietek et al., 2016).\n\nHere, we report the atomic structure of the dark (closed) state of GtACR1, which is essential for elucidating the mechanism of its unique natural function of light-gated anion conductance through biological membranes. Also, understanding ACR mechanisms at the atomic scale would enable rational engineering to tailor their use as optogenetic tools.\n\n## Results and discussion\n\n### Overall GtACR1 structure\n\nThe GtACR1 protein was expressed in insect (Sf9) cells and purified as a disulfide-crosslinked homodimer (Figure 1\u2014figure supplement 1). We obtained lipidic cubic phase (LCP) crystals of GtACR1, applied the continuous grid-scan method (Wojdyla et al., 2016) for X-ray data collection, and determined the structure at 2.9 \u00c5 resolution using molecular replacement (Figure 1, Table 1). Each asymmetric unit contains a GtACR1 homodimer molecule (Figure 1\u2014figure supplement 2). Each monomer is composed of an extracellular cap domain, seven transmembrane helices (TM1-7), and a cytoplasmic loop at the carboxyl-terminus (Figure 1). In the extracellular domain, two kinked \u03b1-helices from the amino-terminal fragment and a \u03b2-hairpin from the TM2-3 loop lay on the interface of the membrane domain. The GtACR1 homodimer is stabilized by TM3 and TM4 interactions between monomers and further by an intermolecular disulfide bridge formed by the C6 residues (Figure 1A\u2013B). Since TM5-7 are much longer than TM1-4, this dimeric arrangement creates a large funnel-shaped cytoplasmic cavity (~18 \u00c5 deep and\u00a0~28 \u00c5 wide). Despite the modest\u00a0~24% amino acid sequence identity between GtACR1 and C1C2/CrChR2, the structure of each GtACR1 protomer can be superposed well (Figure 1\u2014figure supplement 3) with either of the two CCR structures (r.m.s.d. 0.9 \u00c5) indicating that these functionally distinct channelrhodopsins share a common TM helical scaffold conformation in their closed states.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig1-v2.jpg)\n\n**Figure 1.:** Side (A), and top (B) views. Each GtACR1 protomer is depicted in cartoon with the N-termini in blue and the C-termini in red. Retinal prosthetic groups (stick-balls) are embedded in the 7TMs. An intermolecular disulfide bridge is formed by C6 (yellow sticks). Resolved monoolein lipids are shown as sticks.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Electron density map (2fo-fc) contoured at 1.0 \u03c3 (blue meshes) in a unit cell. The structure of GtACR1 is displayed as yellow ribbons. (B) Composite omit map (blue mesh) of all-trans-retinal bound with Schiff base K238 contoured at 2.0 \u03c3. The map was calculated by Phenix (Adams et al., 2010). The retinal prosthetic group is drawn as yellow sticks. (C) The absorption spectrum of the purified red-colored GtACR1 protein (inset) showing absorption maximum at 515 nm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Side (A) and top (B) views. TM1 from one GtACR1 dimer (cartoon in red) interacts with TM5-6 from the adjacent molecule (cartoon in blue) in anti-parallel orientations. Dimer-dimer interaction is mediated by two monoolein lipid molecules (green sticks) on the lateral interface. The 3rd dimension of the lattice is established primarily by contacts between the carboxyl-terminal loops of adjacent molecules. Interactions are highlighted in the magnified views (rectangles).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Cartoon representation of the two protomers from a GtACR1 homodimer superimposed using secondary structure matching (SSM) by COOT. The r.m.s.d value between protomer A (magenta) and protomer B (yellow) is 0.18 \u00c5. (B) the structure of GtACR1 protomer A (magenta) was superimposed on the structures of C1C2 (green) and the protomer A of CrChR2 (blue) using SSM, showing r.m.s.d. values of\u00a0~0.9 \u00c5. Retinal molecules are depicted as sticks.\n\n**Table 1.**\n Crystallographic data and refinement statistics of the GtACR1 structure\n\n\n<table>\n  <thead>\n    <tr>\n      <th>PDB\u00a0ID</th>\n      <th>6EDQ</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Space group</td>\n      <td>P21212</td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>77.79, 149.55, 62.41</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2. \u03b3 (\u00b0)</td>\n      <td>90, 90, 90</td>\n    </tr>\n    <tr>\n      <td>Beamline</td>\n      <td>SLS-X06SA</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>47.91\u20132.9 (2.98\u20132.9)</td>\n    </tr>\n    <tr>\n      <td>Rmeas</td>\n      <td>0.39 (2.65)</td>\n    </tr>\n    <tr>\n      <td>I /\u03c3 (I)</td>\n      <td>4.54 (0.97)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.8 (100)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>6.89 (6.57)</td>\n    </tr>\n    <tr>\n      <td>CC1/2 (%)</td>\n      <td>99 (32)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>47.91\u20132.90\u00a0(3.08-2.90)</td>\n    </tr>\n    <tr>\n      <td>No. of unique reflections</td>\n      <td>16711(2732)</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.23/0.27</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.005</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.892</td>\n    </tr>\n    <tr>\n      <td>B-factor</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Proteins</td>\n      <td>63.8</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>80.1</td>\n    </tr>\n    <tr>\n      <td>H2O</td>\n      <td>51.0</td>\n    </tr>\n    <tr>\n      <td>Ramachandran Plot</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>97.56</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>2.44</td>\n    </tr>\n    <tr>\n      <td>MolProbity Clash score</td>\n      <td>9.39</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Data processing statistics are reported with Friedel pairs merged. Values in parentheses are for the highest resolution shell._\n\n### The anion conductance pathway\n\nA continuous tunnel spanning through the protein from the extracellular to cytoplasmic surface was detected in each GtACR1 protomer by serial cross-sections (Figure 2A). The tunnel, assembled by TM1-3 and 7, starts from an electropositive port on the extracellular surface, intersects the retinylidene Schiff base in the middle of the membrane, and ends at an intracellular port deeply embedded in the large dimeric cavity (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig2-v2.jpg)\n\n**Figure 2.:** (A) A cross-section view of the GtACR1 dimer showing two continuous intramolecular tunnels traversing from extracellular ports to the cytoplasmic cavity; retinal (green). (B) A cross-section view of a GtACR1 protomer showing the conformation of the transmembrane ion tunnel and retinal binding pocket connected at the retinylidene Schiff base position. (C) The tunnel (dots) detected by CAVER with tunnel-lining residues (sticks): charged (red), polar (cyan), and apolar residues (clay). (D) The tunnel profile of GtACR1 detected by CAVER; the arrows indicate three constrictions C1-C3.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) and C1C2 (B)\u00a0The tunnel paths (dark dots) are predicted by CAVER (probe radius 0.9 \u00c5). Retinal molecules are depicted as green sticks.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The five residues in the GtACR1 tunnel that are different from those in C1C2 and CrChR2 are shown on top, and the three highly-conserved tunnel-lining residues in these molecules are shown at bottom. The rightmost panels show overlays of the three structures.\n\nThe continuous intramolecular tunnel in GtACR1 directly visualized by cross-section, presumably indicating the anion conductance pathway, was also detected by the program CAVER (probe radius 0.9 \u00c5) (Kozlikova et al., 2014) (Figure 2\u2014figure supplement 1A). For comparison, only a partial tunnel open on the extracellular side was found in C1C2 (Kato et al., 2012) (Figure 2\u2014figure supplement 1B), and we found no tunnel open to either surface with CAVER in CrChR2.\n\nDespite the high similarity of the TM helix scaffolds of GtACR1 and C1C2/CrChR2, the tunnel of GtACR1 is primarily lined by small polar and aliphatic residues (Figure 2C) in contrast to charged residues in the corresponding positions in C1C2 and CrChR2: A75 vs E136/E97 (C1C2/CrChR2 numbering), T71 vs K132/K93; S97 vs E162/E123, A61 vs E122/E83, and L108 vs H173/H134 (Figure 2\u2014figure supplement 2 top row). Tunnel-lining residues also include R94 (R159/R120) and D234 (D292/D253) (Figure 2\u2014figure supplement 2, bottom row), highly conserved in the photoactive sites of microbial rhodopsins, and E68 (E129/E90), characteristic of both ACRs and chlorophyte CCRs. The differences in GtACR1 from the CCR structures significantly reduce the negativity of the putative channel pore lining consistent with anion vs. cation conductance.\n\n### The extracellular port cap\n\nA unique structural feature is found in the extracellular domain of GtACR1. In addition to the disulfide link between the two protomers, an intraprotomer disulfide bridge is formed between C21 from the amino-terminal segment and C219 within the TM6-7 loop (Figure 3A). This intramolecular crosslink immobilizes the kinked helices to the retinal-conjugated TM7, and encaps a hydrophobic part of the segment on the extracellular tunnel entry port (Figure 3B). Disrupting this extracellular loop conformation, either by truncation of the amino-terminal loop (\u03941\u201325) or by substituting C21 and C219 with serine to abolish the intramolecular disulfide, resulted in slowed channel closing (Figure 3C). Both C21 and C219 are highly conserved in ACRs (Govorunova et al., 2017b), but not in CCRs, revealing a role of this intramolecular disulfide bridge specific to the ACR family.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-v2.jpg)\n\n**Figure 3.:** (A) The N-terminal extracellular loop (orange) immobilized by an intracellular C21-C219 disulfide bridge (red) to the TM6-7 loop (blue); an H-bond network (black dashed lines) formed by residues (sticks) near the extracellular port. (B) The hydrophobic segment (orange) blocks the extracellular port rendered by the electrostatic potential surface. Rectangle: closer (rotated) view of the peptide cap conformation. (C) Decay kinetics of laser flash-evoked photocurrents by the wild-type GtACR1 and indicated mutants. (D\u2013F) The structure of the three constrictions: C1 (D), C2 (E), and C3 (F). (G) Peak photocurrents generated by Glu substitutions of the constriction residues in response to a 1 s light pulse (515 nm, 7.7 mW mm\u22122) with 131 mM Cl- in the pipette and 6 mM Cl- in the bath. The black squares, mean; line, median; box, SE; whiskers, SD; empty diamonds, raw data recorded from individual cells.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Thin solid lines are recorded traces, and thick dashed lines are multiexponential fits. The numbers are the time constants of individual decay phases.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Thin solid lines are recorded traces, and thick dashed lines are multiexponential fits. The numbers are the time constants of individual decay phases.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The data points are mean normalized values measured in 5\u20138 cells (the exact numbers for each mutant are in Table 2), approximated with a B-spline function; the error bars show the sem. For more details see Materials\u00a0and\u00a0methods.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The values obtained in individual cells are shown as empty diamonds; the box shows the sem, the whiskers, the sd. The results of Kruskal\u2013Wallis ANOVA are in Table 2.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The data points are mean normalized values measured in 7\u201313 cells (the exact numbers for each mutant are in Table 3), approximated with a B-spline function; the error bars are the sem. For more details see Materials\u00a0and\u00a0methods.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** The values obtained in individual cells are shown as empty diamonds; the box shows the sem, the whiskers, the sd. The results of Kruskal\u2013Wallis ANOVA are in Table 2.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** The data points are mean normalized values measured in 6\u20138 cells (the exact numbers for each mutant are in Table 3), approximated with a B-spline function; the error bars are the sem. For more details see Materials\u00a0and\u00a0methods.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-figsupp8-v2.jpg)\n\n**Figure 3\u2014figure supplement 8.:** The data points are mean normalized values measured in 6\u201311 cells (the exact numbers for each mutant are in Table 4), approximated with a B-spline function; the error bars are the sem. For more details see Materials\u00a0and\u00a0methods.\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig3-figsupp9-v2.jpg)\n\n**Figure 3\u2014figure supplement 9.:** The values obtained in individual cells are shown as empty diamonds; the box shows the sem, the whiskers, the sd. The results of Kruskal\u2013Wallis ANOVA are in Table 3 and 4.\n\n### Ion pathway constrictions\n\nThe intramolecular tunnel in GtACR1 is constricted at three positions: at the extracellular port (C1), near the photoactive retinylidene Schiff base (C2), and at the cytoplasmic side (C3) (Figures 2D and 3D\u2013F). Near the extracellular port, the C1 constriction (Figure 3D) is stabilized by an H-bond network adjacent to the disulfide-immobilized extracellular cap and formed by the side chains of Y81, R94 and E223 (Figure 3A). The mutation R94A nearly abolished Cl- conductance (Figure 5D). To analyze the influence of mutations on channel kinetics, we used laser flash excitation (single-turnover conditions), because under continuous light a mixture of intermediates is formed, the composition of which depends on the intensity and duration of illumination that may influence the kinetics. Channel closing in the wild-type GtACR1 is biphasic (Sineshchekov et al., 2015). As shown in Figure 3\u2014figure supplement 1 and reported earlier for the E223Q mutant (Sineshchekov et al., 2015), all three mutations strongly slowed the slow decay phase to a similar extent as that observed in the C21S_C219S mutant. These results suggest that the combination of the H-bond network of E223 and its neighbouring intraprotomer disulfide bridge controls the rate of channel closing in the extracellular region and stabilizes the essential residue R94 in the closed state.\n\nThe narrowest constriction C2 lies at the photoactive site and is formed by the side chains of T101, L64, and M105 (Figure 3E). Four of the five residues that form the intracellular constriction C3 (L108, A61, E60, L245 and P58) (Figure 3F) are in corresponding positions as the residues that form the \u2018intracellular gate\u2019 in CCRs (Deisseroth and Hegemann, 2017), but in GtACR1 and other ACRs only E60 (E121/E82) is shared with CCRs. The GtACR1 structure that we obtained from dark-grown crystals is presumably the dark (closed) state of the channel protein. To examine the role of these contriction-forming residues in the channel open state, we scanned the tunnel constrictions with Glu substitutions and measured photocurrents in the respective mutants. We chose Glu as a substituent because two of the constriction residues, A61 and A75, correspond to the highly conserved Glu residues in CCRs (E122/E83 and E136/E97 in C1C2/CrChR2, respectively), and because neutralization of E83 was required for elimination of the residual H+ permeability in Cl--conducting CCR mutants (Berndt et al., 2016; Wietek et al., 2015). We also hypothesized that the bulky negatively charged Glu side chain would block the GtACR1 channel when placed in the ion conduction pathway. Indeed, perturbation of any residues at C2 or C3 greatly reduced or eliminated the photocurrents, while effects of most mutations (except A75E) at the C1 position were negligible (Figure 3G), suggesting that in the open conformation the channel is wider in the extracellular portion and more narrow in its central and intracellular stretches. Kinetically, the mutations of the C1 and C3 residues mostly affected the slow phase of channel closing, making it slower than that in the wild-type (Figure 3\u2014figure supplement 2). Accurate kinetic analysis of the C2 mutations was not possible because of their greatly reduced photocurrents.\n\nTo test whether the mutations of the constriction residues compromised permeability of the channel for Cl-, we partially replaced this ion in the bath with non-permeable aspartate (Govorunova et al., 2015) and measured the current-voltage relationships (IE curves) (Figure 3\u2014figure supplement 3) to determine the reversal potentials (Erev). None of the mutants in which photocurrents near the reversal potential could be resolved from the background noise yielded Erev values that were statistically significantly different from that measured in the wild type (Figure 3\u2014figure supplement 4; full statistical results are in Table 2). Several other mutations were recently reported to shift the Erev under Cl- gradient conditions from the Cl- Nernst potential (Kato et al., 2018; Kim et al., 2018). However, we found no such change when we tested seven of these single and double mutants (Figure 3\u2014figure supplements 5 and 6; full statistical results are in Table 2). The shifts were attributed to disrupting anion selectivity in GtACR1 by the mutations resulting in cation permeability (Kato et al., 2018; Kim et al., 2018). Therefore, we further tested these mutants in the presence of H+ and Na+ gradients (Figure 3\u2014figure supplements 7 and 8, respectively) and again found no statistically significant difference from the wild type (Figure 3\u2014figure supplement 9; full statistical results are in Tables 3 and 4), indicating that none of these mutations produced permeability for these cations in GtACR1.\n\n**Table 2.**\n The output of Kriskal-Wallis ANOVA analysis of the results shown in Figure 3\u2014figure supplements 4 and 6\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"7\">X-Function</th>\n      <th colspan=\"6\">Kruskal-Wallis ANOVA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">Data filter</td>\n      <td colspan=\"6\">No</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Variant</td>\n      <td colspan=\"5\">Data</td>\n      <td colspan=\"4\">Range (number of cells)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">WT</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!WT</td>\n      <td colspan=\"4\">[1*:10*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Y81E</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!Y81E</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">I27E</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!I27E</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K33E</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!K33E</td>\n      <td colspan=\"4\">[1*:8*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">L108E</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!L108E</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">A61E</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!A61E</td>\n      <td colspan=\"4\">[1*:5*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">L245E</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!L245E</td>\n      <td colspan=\"4\">[1*:8*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">P58E</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!P58E</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Q46A</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!Q46A</td>\n      <td colspan=\"4\">[1*:13*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188A</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!K188A</td>\n      <td colspan=\"4\">[1*:8*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188E</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!K188E</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">R192E</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!R192E</td>\n      <td colspan=\"4\">[1*:9*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Q46AK188A</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!Q46AK188A</td>\n      <td colspan=\"4\">[1*:8*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188AR192A</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!K188AR192A</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188AR259A</td>\n      <td colspan=\"5\">[DataAsp]Sheet1!K188AR259A</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td>Variant</td>\n      <td colspan=\"2\">N</td>\n      <td colspan=\"2\">Min</td>\n      <td colspan=\"3\">Q1</td>\n      <td colspan=\"2\">Median</td>\n      <td colspan=\"2\">Q3</td>\n      <td>Max</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td colspan=\"2\">10</td>\n      <td colspan=\"2\">61</td>\n      <td colspan=\"3\">70</td>\n      <td colspan=\"2\">75.5</td>\n      <td colspan=\"2\">90.25</td>\n      <td>93</td>\n    </tr>\n    <tr>\n      <td>Y81E</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">71</td>\n      <td colspan=\"3\">73</td>\n      <td colspan=\"2\">77</td>\n      <td colspan=\"2\">85</td>\n      <td>85</td>\n    </tr>\n    <tr>\n      <td>I27E</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">75</td>\n      <td colspan=\"3\">77</td>\n      <td colspan=\"2\">84</td>\n      <td colspan=\"2\">86</td>\n      <td>86</td>\n    </tr>\n    <tr>\n      <td>K33E</td>\n      <td colspan=\"2\">8</td>\n      <td colspan=\"2\">70</td>\n      <td colspan=\"3\">73.75</td>\n      <td colspan=\"2\">80</td>\n      <td colspan=\"2\">85.75</td>\n      <td>87</td>\n    </tr>\n    <tr>\n      <td>L108E</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">69</td>\n      <td colspan=\"3\">72</td>\n      <td colspan=\"2\">75</td>\n      <td colspan=\"2\">76</td>\n      <td>82</td>\n    </tr>\n    <tr>\n      <td>A61E</td>\n      <td colspan=\"2\">5</td>\n      <td colspan=\"2\">69</td>\n      <td colspan=\"3\">71</td>\n      <td colspan=\"2\">74</td>\n      <td colspan=\"2\">80</td>\n      <td>80</td>\n    </tr>\n    <tr>\n      <td>L245E</td>\n      <td colspan=\"2\">8</td>\n      <td colspan=\"2\">71</td>\n      <td colspan=\"3\">73.25</td>\n      <td colspan=\"2\">75.5</td>\n      <td colspan=\"2\">85</td>\n      <td>91</td>\n    </tr>\n    <tr>\n      <td>P58E</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">63</td>\n      <td colspan=\"3\">70</td>\n      <td colspan=\"2\">75</td>\n      <td colspan=\"2\">84</td>\n      <td>89</td>\n    </tr>\n    <tr>\n      <td>Q46A</td>\n      <td colspan=\"2\">13</td>\n      <td colspan=\"2\">69</td>\n      <td colspan=\"3\">74</td>\n      <td colspan=\"2\">83</td>\n      <td colspan=\"2\">90.5</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td>K188A</td>\n      <td colspan=\"2\">8</td>\n      <td colspan=\"2\">78</td>\n      <td colspan=\"3\">78</td>\n      <td colspan=\"2\">80</td>\n      <td colspan=\"2\">82.5</td>\n      <td>83</td>\n    </tr>\n    <tr>\n      <td>K188E</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">75</td>\n      <td colspan=\"3\">76</td>\n      <td colspan=\"2\">79</td>\n      <td colspan=\"2\">81</td>\n      <td>83</td>\n    </tr>\n    <tr>\n      <td>R192E</td>\n      <td colspan=\"2\">9</td>\n      <td colspan=\"2\">75</td>\n      <td colspan=\"3\">78.5</td>\n      <td colspan=\"2\">80</td>\n      <td colspan=\"2\">81.5</td>\n      <td>86</td>\n    </tr>\n    <tr>\n      <td>Q46AK188A</td>\n      <td colspan=\"2\">8</td>\n      <td colspan=\"2\">73</td>\n      <td colspan=\"3\">76.75</td>\n      <td colspan=\"2\">79</td>\n      <td colspan=\"2\">82.25</td>\n      <td>84</td>\n    </tr>\n    <tr>\n      <td>K188AR192A</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">68</td>\n      <td colspan=\"3\">74</td>\n      <td colspan=\"2\">82</td>\n      <td colspan=\"2\">84</td>\n      <td>88</td>\n    </tr>\n    <tr>\n      <td>K188AR259A</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">76</td>\n      <td colspan=\"3\">79</td>\n      <td colspan=\"2\">84</td>\n      <td colspan=\"2\">90</td>\n      <td>92</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Variant</td>\n      <td colspan=\"4\">N</td>\n      <td colspan=\"5\">Mean Rank</td>\n      <td colspan=\"2\">Sum Rank</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">WT</td>\n      <td colspan=\"4\">10</td>\n      <td colspan=\"5\">49.55</td>\n      <td colspan=\"2\">495.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Y81E</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">55.71429</td>\n      <td colspan=\"2\">390</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">I27E</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">74.28571</td>\n      <td colspan=\"2\">520</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K33E</td>\n      <td colspan=\"4\">8</td>\n      <td colspan=\"5\">62.8125</td>\n      <td colspan=\"2\">502.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">L108E</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">31</td>\n      <td colspan=\"2\">217</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">A61E</td>\n      <td colspan=\"4\">5</td>\n      <td colspan=\"5\">36.4</td>\n      <td colspan=\"2\">182</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">L245E</td>\n      <td colspan=\"4\">8</td>\n      <td colspan=\"5\">50.125</td>\n      <td colspan=\"2\">401</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">P58E</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">47.64286</td>\n      <td colspan=\"2\">333.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Q46A</td>\n      <td colspan=\"4\">13</td>\n      <td colspan=\"5\">70.30769</td>\n      <td colspan=\"2\">914</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188A</td>\n      <td colspan=\"4\">8</td>\n      <td colspan=\"5\">65.9375</td>\n      <td colspan=\"2\">527.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188E</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">58.14286</td>\n      <td colspan=\"2\">407</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">R192E</td>\n      <td colspan=\"4\">9</td>\n      <td colspan=\"5\">66.72222</td>\n      <td colspan=\"2\">600.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Q46AK188A</td>\n      <td colspan=\"4\">8</td>\n      <td colspan=\"5\">59.25</td>\n      <td colspan=\"2\">474</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188AR192A</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">66.5</td>\n      <td colspan=\"2\">465.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188AR259A</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">84.42857</td>\n      <td colspan=\"2\">591</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Chi-Square</td>\n      <td colspan=\"4\">DF</td>\n      <td colspan=\"5\">Prob\u00a0&gt;\u00a0Chi-Square</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">16.94395</td>\n      <td colspan=\"4\">14</td>\n      <td colspan=\"5\">0.25918</td>\n      <td colspan=\"2\"></td>\n    </tr>\n  </tbody>\n</table>\n\n_Null Hypothesis: The samples come from the same population.Alternative Hypothesis: The samples come from different populations.At the 0.05 level, the populations are NOT significantly different._\n\n**Table 3.**\n The output of Kriskal-Wallis ANOVA analysis of the results shown in Figure 3\u2014figure supplement 9A\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"7\">X-Function</th>\n      <th colspan=\"6\">Kruskal-Wallis ANOVA</th>\n    </tr>\n    <tr>\n      <th colspan=\"7\">Data filter</th>\n      <th colspan=\"6\">No</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Variant</td>\n      <td colspan=\"5\">Data</td>\n      <td colspan=\"4\">Range (number of cells)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">WT</td>\n      <td colspan=\"5\">[DatapH54]Sheet1!WT</td>\n      <td colspan=\"4\">[1*:5*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Q46A</td>\n      <td colspan=\"5\">[DatapH54]Sheet1!Q46A</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188A</td>\n      <td colspan=\"5\">[DatapH54]Sheet1!K188A</td>\n      <td colspan=\"4\">[1*:6*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188E</td>\n      <td colspan=\"5\">[DatapH54]Sheet1!K188E</td>\n      <td colspan=\"4\">[1*:8*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">R192E</td>\n      <td colspan=\"5\">[DatapH54]Sheet1!R192E</td>\n      <td colspan=\"4\">[1*:10*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Q46AK188A</td>\n      <td colspan=\"5\">[DatapH54]Sheet1!Q46AK188A</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188AR192A</td>\n      <td colspan=\"5\">[DatapH54]Sheet1!K188AR192A</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188AR259Q</td>\n      <td colspan=\"5\">[DatapH54]Sheet1!K188AR259Q</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td>Variant</td>\n      <td colspan=\"2\">N</td>\n      <td colspan=\"2\">Min</td>\n      <td colspan=\"3\">Q1</td>\n      <td colspan=\"2\">Median</td>\n      <td colspan=\"2\">Q3</td>\n      <td>Max</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td colspan=\"2\">5</td>\n      <td colspan=\"2\">\u22127.7</td>\n      <td colspan=\"3\">\u22126.7</td>\n      <td colspan=\"2\">\u22125.7</td>\n      <td colspan=\"2\">\u22123.2</td>\n      <td>\u22122.7</td>\n    </tr>\n    <tr>\n      <td>Q46A</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">\u22128.7</td>\n      <td colspan=\"3\">\u22126.7</td>\n      <td colspan=\"2\">\u22125.7</td>\n      <td colspan=\"2\">\u22123.7</td>\n      <td>\u22122.7</td>\n    </tr>\n    <tr>\n      <td>K188A</td>\n      <td colspan=\"2\">6</td>\n      <td colspan=\"2\">\u22128.7</td>\n      <td colspan=\"3\">\u22126.45</td>\n      <td colspan=\"2\">\u22124.7</td>\n      <td colspan=\"2\">\u22123.95</td>\n      <td>\u22121.7</td>\n    </tr>\n    <tr>\n      <td>K188E</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">\u22129.7</td>\n      <td colspan=\"3\">\u22124.7</td>\n      <td colspan=\"2\">\u22123.7</td>\n      <td colspan=\"2\">\u22122.7</td>\n      <td>\u22122.7</td>\n    </tr>\n    <tr>\n      <td>R192E</td>\n      <td colspan=\"2\">8</td>\n      <td colspan=\"2\">\u22129.7</td>\n      <td colspan=\"3\">\u22126.45</td>\n      <td colspan=\"2\">\u22124.2</td>\n      <td colspan=\"2\">\u22122.2</td>\n      <td>\u22120.7</td>\n    </tr>\n    <tr>\n      <td>Q46AK188A</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">\u22128.7</td>\n      <td colspan=\"3\">\u22126.7</td>\n      <td colspan=\"2\">\u22124.7</td>\n      <td colspan=\"2\">\u22123.7</td>\n      <td>\u22122.7</td>\n    </tr>\n    <tr>\n      <td>K188AR192A</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">\u221210.7</td>\n      <td colspan=\"3\">\u22127.7</td>\n      <td colspan=\"2\">\u22124.7</td>\n      <td colspan=\"2\">\u22122.7</td>\n      <td>\u22121.7</td>\n    </tr>\n    <tr>\n      <td>K188AR259Q</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">\u221211.7</td>\n      <td colspan=\"3\">\u22124.7</td>\n      <td colspan=\"2\">\u22121.7</td>\n      <td colspan=\"2\">0.3</td>\n      <td>2.3</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Variant</td>\n      <td colspan=\"4\">N</td>\n      <td colspan=\"5\">Mean Rank</td>\n      <td colspan=\"2\">Sum Rank</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">WT</td>\n      <td colspan=\"4\">5</td>\n      <td colspan=\"5\">24.4</td>\n      <td colspan=\"2\">122</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Q46A</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">21.71429</td>\n      <td colspan=\"2\">152</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188A</td>\n      <td colspan=\"4\">6</td>\n      <td colspan=\"5\">24.75</td>\n      <td colspan=\"2\">148.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188E</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">30.5</td>\n      <td colspan=\"2\">213.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">R192E</td>\n      <td colspan=\"4\">8</td>\n      <td colspan=\"5\">28.875</td>\n      <td colspan=\"2\">231</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Q46AK188A</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">24.85714</td>\n      <td colspan=\"2\">174</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188AR192A</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">25.21429</td>\n      <td colspan=\"2\">176.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188AR259Q</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">38.21429</td>\n      <td colspan=\"2\">267.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Chi-Square</td>\n      <td colspan=\"4\">DF</td>\n      <td colspan=\"5\">Prob\u00a0&gt;\u00a0Chi-Square</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">5.33505</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">0.61915</td>\n      <td colspan=\"2\"></td>\n    </tr>\n  </tbody>\n</table>\n\n_Null Hypothesis: The samples come from the same population.Alternative Hypothesis: The samples come from different populations.At the 0.05 level, the populations are NOT significantly different._\n\n**Table 4.**\n The output of Kriskal-Wallis ANOVA analysis of the results shown in Figure 3\u2014figure supplement 9B\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"7\">X-Function</th>\n      <th colspan=\"6\">Kruskal-Wallis ANOVA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">Data filter</td>\n      <td colspan=\"6\">No</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Variant</td>\n      <td colspan=\"5\">Data</td>\n      <td colspan=\"4\">Range (number of cells)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">WT</td>\n      <td colspan=\"5\">[DataNa1PipNa]Sheet1!WT</td>\n      <td colspan=\"4\">[1*:11*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Q46A</td>\n      <td colspan=\"5\">[DataNa1PipNa]Sheet1!Q46A</td>\n      <td colspan=\"4\">[1*:6*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188A</td>\n      <td colspan=\"5\">[DataNa1PipNa]Sheet1!K188A</td>\n      <td colspan=\"4\">[1*:10*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188E</td>\n      <td colspan=\"5\">[DataNa1PipNa]Sheet1!K188E</td>\n      <td colspan=\"4\">[1*:6*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">R192E</td>\n      <td colspan=\"5\">[DataNa1PipNa]Sheet1!R192E</td>\n      <td colspan=\"4\">[1*:8*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Q46AK188A</td>\n      <td colspan=\"5\">[DataNa1PipNa]Sheet1!Q46AK188A</td>\n      <td colspan=\"4\">[1*:7*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188AR192A</td>\n      <td colspan=\"5\">[DataNa1PipNa]Sheet1!K188AR192A</td>\n      <td colspan=\"4\">[1*:8*]</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">K188AR259Q</td>\n      <td colspan=\"5\">[DataNa1PipNa]Sheet1!K188AR259Q</td>\n      <td colspan=\"4\">[1*:10*]</td>\n    </tr>\n    <tr>\n      <td>Variant</td>\n      <td colspan=\"2\">N</td>\n      <td colspan=\"2\">Min</td>\n      <td colspan=\"3\">Q1</td>\n      <td colspan=\"2\">Median</td>\n      <td colspan=\"2\">Q3</td>\n      <td>Max</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td colspan=\"2\">11</td>\n      <td colspan=\"2\">\u221211</td>\n      <td colspan=\"3\">-9</td>\n      <td colspan=\"2\">-5</td>\n      <td colspan=\"2\">-3</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Q46A</td>\n      <td colspan=\"2\">6</td>\n      <td colspan=\"2\">\u221211</td>\n      <td colspan=\"3\">\u22128.75</td>\n      <td colspan=\"2\">\u22122.5</td>\n      <td colspan=\"2\">\u22120.5</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>K188A</td>\n      <td colspan=\"2\">10</td>\n      <td colspan=\"2\">-9</td>\n      <td colspan=\"3\">\u22125.5</td>\n      <td colspan=\"2\">-4</td>\n      <td colspan=\"2\">-4</td>\n      <td>-2</td>\n    </tr>\n    <tr>\n      <td>K188E</td>\n      <td colspan=\"2\">6</td>\n      <td colspan=\"2\">\u221214</td>\n      <td colspan=\"3\">\u221212.5</td>\n      <td colspan=\"2\">\u22126.5</td>\n      <td colspan=\"2\">\u22123.75</td>\n      <td>-3</td>\n    </tr>\n    <tr>\n      <td>R192E</td>\n      <td colspan=\"2\">8</td>\n      <td colspan=\"2\">-7</td>\n      <td colspan=\"3\">\u22126.75</td>\n      <td colspan=\"2\">-5</td>\n      <td colspan=\"2\">\u22122.5</td>\n      <td>-2</td>\n    </tr>\n    <tr>\n      <td>Q46AK188A</td>\n      <td colspan=\"2\">7</td>\n      <td colspan=\"2\">-9</td>\n      <td colspan=\"3\">-9</td>\n      <td colspan=\"2\">-5</td>\n      <td colspan=\"2\">-3</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>K188AR192A</td>\n      <td colspan=\"2\">8</td>\n      <td colspan=\"2\">\u221216</td>\n      <td colspan=\"3\">\u221213.25</td>\n      <td colspan=\"2\">-4</td>\n      <td colspan=\"2\">\u22120.5</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>K188AR259Q</td>\n      <td colspan=\"2\">10</td>\n      <td colspan=\"2\">\u221215</td>\n      <td colspan=\"3\">\u22129.25</td>\n      <td colspan=\"2\">\u22127.5</td>\n      <td colspan=\"2\">-5</td>\n      <td>-3</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Variant</td>\n      <td colspan=\"4\">N</td>\n      <td colspan=\"5\">Mean Rank</td>\n      <td colspan=\"2\">Sum Rank</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">WT</td>\n      <td colspan=\"4\">11</td>\n      <td colspan=\"5\">34.13636</td>\n      <td colspan=\"2\">375.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Q46A</td>\n      <td colspan=\"4\">6</td>\n      <td colspan=\"5\">43.33333</td>\n      <td colspan=\"2\">260</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188A</td>\n      <td colspan=\"4\">10</td>\n      <td colspan=\"5\">37</td>\n      <td colspan=\"2\">370</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188E</td>\n      <td colspan=\"4\">6</td>\n      <td colspan=\"5\">26.33333</td>\n      <td colspan=\"2\">158</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">R192E</td>\n      <td colspan=\"4\">8</td>\n      <td colspan=\"5\">36.75</td>\n      <td colspan=\"2\">294</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Q46AK188A</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">35.5</td>\n      <td colspan=\"2\">248.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188AR192A</td>\n      <td colspan=\"4\">8</td>\n      <td colspan=\"5\">35.3125</td>\n      <td colspan=\"2\">282.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">K188AR259Q</td>\n      <td colspan=\"4\">10</td>\n      <td colspan=\"5\">22.25</td>\n      <td colspan=\"2\">222.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Chi-Square</td>\n      <td colspan=\"4\">DF</td>\n      <td colspan=\"5\">Prob\u00a0&gt;\u00a0Chi-Square</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">6.6454</td>\n      <td colspan=\"4\">7</td>\n      <td colspan=\"5\">0.46671</td>\n      <td colspan=\"2\"></td>\n    </tr>\n  </tbody>\n</table>\n\n_Null Hypothesis: The samples come from the same population.Alternative Hypothesis: The samples come from different populations.At the 0.05 level, the populations are NOT significantly different._\n\n### The retinylidene Schiff base\n\nConfocal near-infrared resonance Raman spectroscopy has shown that the unphotolyzed state of GtACR1 contains almost exclusively all-trans retinal (Yi et al., 2016). In the middle of the protein, all-trans-retinal covalently bound by a Schiff base linkage to K238 is found in an elongated cavity formed by conserved hydrophobic residues. While the conformations of the retinal polyene chain are nearly identical in GtACR1 and C1C2/CrChR2, the presence of F160 in GtACR1 (G224/G185 in C1C2/CrChR2, respectively) pushes the \u03b2-ionone ring towards the extracellular side by 1.2 \u00c5 (Figure 4). Despite this conformational difference, the action spectrum of photocurrents generated by the F160G mutant was almost identical to that of the wild-type GtACR1 (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig4-v2.jpg)\n\n**Figure 4.:** The structure of GtACR1 (magenta) is superimposed with C1C2 (green) and CrChR2 (blue) using SSM. The presence of F160 in GtACR1 (G224/G185 in C1C2/CrChR2, respectively) pushes the \u03b2-ionone ring of the all-trans retinal towards the extracellular side by 1.2 \u00c5 as measured between the C16 atoms of GtACR1 and CrChR2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The data points are mean values of 4\u20136 individual scans. For more detail see Materials\u00a0and\u00a0methods.\n\nRemarkable structural differences between GtACR1 and the two crystallized CCRs are found in the retinylidene Schiff base environment. In C1C2 and CrChR2 the protonated Schiff base (PSB) participates in a quadruple salt-bridge network formed with D292/D253, E162/E123 and K132/K93 sidechains (Figure 5B). However, this strong network is absent in the GtACR1 structure due to the replacement of E162/E123 and K132/K93 with smaller uncharged residues S97 and T71, respectively (Figure 5A). D234 is the only residue directly interacting with the protonated Schiff base (PSB) in GtACR1, and its electrostatic interaction appears to be weakened by two H-bonds from tyrosine residues Y72 and Y207 (Figure 5A). The proton pump bacteriorhodopsin exhibits similar tyrosinyl H-bond-weakened interactions of D212, the residue in the corresponding position as D234. The interactions prevent D212 from accepting the Schiff base proton, which is transferred instead to D85 in the proton release pathway (Luecke et al., 1998). Resonance Raman and UV-vis absorption spectra of the D234N mutant of GtACR1 indicate that D234 is similarly neutral and not a Schiff base proton acceptor (Sineshchekov et al., 2016; Yi et al., 2016). The dark structure therefore may explain the persistence of protonation of the Schiff base throughout the lifetime of the open channel conformation in GtACR1. Of the two tyrosine residues, Y207 appeared to be more important functionally, as its replacement with phenylalanine suppressed the photocurrents to a greater extent than that of Y72 (Figure 5D) and caused a 12 nm blue shift of the action spectrum (Figure 5\u2014figure supplement 1). The Y72F mutation mostly affected the slow decay phase, while the Y207F mutation caused a strong perturbation of both phases (Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) Structural comparison shows different H-bond networks (dashed lines) in GtACR1 (A) and C1C2 (B). (C) the H-bond network in the ENS triad of GtACR1. The tunnel (black dots) assessed by CAVER. (D) Peak photocurrents generated by the wild-type GtACR1 and indicated mutants in response to laser flash excitation. The black squares, mean; line, median; box, SE; whiskers, SD; empty diamonds, raw data recorded from individual cells.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The data points are mean values of 4\u20136 individual scans. For more detail see Materials\u00a0and\u00a0methods.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Thin solid lines are recorded traces, and thick dashed lines are multiexponential fits. The numbers are the time constants of individual decay phases.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) the S43A and N239A mutants, as compared to the wild type; (B) the D234N, N239A and D234N_N239A_ mutants, as compared to the wild type. Thin solid lines are recorded traces, and thick dashed lines are multiexponential fits. The numbers are the time constants of individual decay phases.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/41741/elife-41741-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Overview of the GtACR1 structure (PDB code: 6EDQ) colored in cyan superimposed on the structure of GtACR1 reported by Kim et al., 2018 (PDB code: 6CSM) in light pink.The RMSD value between these two structures is\u00a0~0.4 \u00c5.\n\nIn CrChR2, photoisomerization of the Schiff base rapidly disrupts the strong salt-bridged network by inducing transfer of the Schiff base proton to D253 or E123 in\u00a0~10 \u00b5s prior to channel opening (L\u00f3renz-Fonfr\u00eda and Heberle, 2014). In contrast, the Schiff base remains protonated throughout the lifetime of the open channel conformation in GtACR1, and deprotonation of the Schiff base proton occurs late in the photocycle (~20 ms) correlated with fast channel closing (Sineshchekov et al., 2016). Unlike in the salt-bridge network around the Schiff base in the CCRs (Figure 5B), in GtACR1 no immediate proton accepting residue is available in the vicinity of the PSB and therefore later structural changes are required to enable Schiff base proton transfer, possibly to E68 (Figure 5A).\n\nThe location of the PSB, centered within the anion path in GtACR1, suggests that it may play a direct role in anion translocation in the open channel state. Consistent with this idea is that the PSB is only partially neutralized by its D234 counterion because the counterion is weakened by its interaction with the two tyrosinyl residues. Therefore, the PSB presents a partial positive charge capable of transient reversible interaction with Cl- ions in a channel that is largely lined by small polar and hydrophobic aliphatic residues. Supporting a possible direct role of the PSB in the channel\u2019s permeability for anions, late deprotonation of the Schiff base after channel opening occurs in all three ACRs so far examined: GtACR1 and GtACR2 (Sineshchekov et al., 2016) and PsuACR1 (Wietek et al., 2016), yet Schiff base deprotonation after channel opening is not known to occur in any CCR. Further indicating an essential role of the protonated Schiff base form, the mutant S97E, in which a potential Schiff base proton acceptor is placed at the corresponding position in GtACR1 as in CCRs and many other microbial rhodopsins, exhibits (i) appearance of fast Schiff base deprotonation, and (ii) a\u00a0>\u00a030 fold suppression of the amplitude of the chloride photocurrent (Sineshchekov et al., 2016). Furthermore, the double mutation Y207F/Y72F, expected to release inhibition of D234 as a proton acceptor, decreased the photocurrent amplitude to a negligible value (Figure 5D).\n\n### The ENS triad\n\nE68, a glutamyl residue near the Schiff base constriction in the channel, forms an H-bond network with N239 and S43 (Figure 5C) with a geometry similar to that of a homologous triad (E129/E90, N297/N258, and S102/S63) referred to as \u2018the central gate\u2019 in C1C2 and CrChR2. In the CCRs, the triad blocks the cation path from the extracellular bulk phase (Deisseroth and Hegemann, 2017) and the glutamyl residue contributes to cation selectivity over anions (Wietek et al., 2014). In contrast, in GtACR1 the ENS triad does not occlude the tunnel (Figure 5C), but E68 is functionally important in channel gating and may serve as a Schiff base proton acceptor at least at basic pH (Sineshchekov et al., 2015). The three residues in the ENS triad appear to have distinct roles; that\u00a0is the substitution S43A had little effect on Cl- conductance, whereas the mutation N239A nearly eliminated the photocurrent (Figure 5D). Both S43A and N239A mutations decreased the rate of the slow channel closing, but N239A in addition strongly accelerated the fast decay (Figure 5\u2014figure supplement 3A). Remarkably, combining the N239A mutation with the D234N mutation which alone also accelerated the fast decay, returned the channel closing kinetics almost to that of the wild type (Figure 5\u2014figure supplement 3B). Given its location between C2 and C3, N239 may assist moving anions between the Schiff base and the cytoplasmic port (Figure 2C). Additionally, the distribution of apolar residues in this portion of the channel would also facilitate quick movements of anions as has been proposed for the CLC channel (Park and MacKinnon, 2018).\n\nDespite the large phylogenetic difference between cryptophyte ACRs and chlorophyte CCRs, their helical scaffolds are little changed. However, the GtACR1 structure reveals fundamentally different chemistry built within their common scaffold. The preexisting full-length tunnel, the location of the retinylidene photoactive site directly in the ion path, the maintenance of a net positive charge on the site\u2019s Schiff base in a largely neutral tunnel, and the novel extracellular cap, provide important clues to the structural basis of light-gated anion conductance.\n\n### Comparison with the recently published GtACR1 structure\n\nWe report the atomic structure of the 7-helix rhodopsin domain (residues 1\u2013295) that contains the light-gated channel activity of GtACR1. After this manuscript was prepared for submission, an article reporting a structure of the same domain with a short truncation (PDB code: 6CSM, residues 1\u2013282) appeared from Karl Deisseroth and coworkers (Kim et al., 2018).\n\nThe two GtACR1 structures were both determined at 2.9 \u00c5 resolution using the lipid cubic phase crystallization method. However, they were obtained in different crystallization conditions and exhibit different space groups and crystal packing. Nevertheless, the two show an extremely high similarity with a marginal RMSD value of\u00a0~0.4 \u00c5. All seven transmembrane helices are very well superimposed between the two structures (Figure 5\u2014figure supplement 4). The truncation or different crystal packing did not give rise to any large differences between the two protein structures. Therefore, these two structures presented by two independent groups mutually validate the conformation of GtACR1 in the closed state.\n\nDifferences between our study and that of Kim et al., 2018 are primarily in the methods used to deduce the location of the anion conduction pathway in GtACR1 and the results of testing relative ionic permeabilities of the mutants. By examining the structure by serial cross-sectioning we identified a contiguous intramolecular tunnel from the extracellular to intracellular surfaces. The CAVER algorithm confirmed the tunnel and helped identify three constrictions. Beyond the electropositive extracellular port the tunnel is lined primarily by small polar and aliphatic residues with sparse positive regions, one of them the protonated retinylidene Schiff base itself. Kim et al. described the putative ion conduction pathway in GtACR1 by identifying intramolecular cavities (vestibules) with electropositive surfaces, which led to identification of mostly residues present in the tunnel walls. Deeper understanding of the foundations of anion conductance by ACRs will likely require an atomic structure of the open state conformation.\n\nRegarding anion selectivity of the mutants, a difference between our study and that of Kim et al.\u2019s is that we have found no detectable cation permeability in any so far examined mutants (Figure 3\u2014figure supplements 3\u20139). We attribute the strict selectivity for anions, a notable property of ACRs, to the existence of multiple highly selective portions of the tunnel and its two entry/exit ports. Consistent with this view, Kim et al. also concluded that there are multiple selective regions rather than a single selectivity filter, in contrast to CCRs, in which cation selectivity can be weakened to allow partial anion permeability by mutation of even a single residue (Wietek et al., 2014).\n\nOverall, the independent analyses of the structures by both groups provide complimentary information creating a firm basis for elucidating the functional mechanism and for further optimization of GtACR1 as a potent neuron-silencing optogenetic tool.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Guillardia theta)</td>\n      <td>GtACR1</td>\n      <td>Synthetic</td>\n      <td>GenBank: KP171708</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera  frugiperda)</td>\n      <td>Sf9</td>\n      <td>Sigma Aldrich</td>\n      <td>Sigma Aldrich: 89070101, RRID:CVCL_0549</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293</td>\n      <td>ATCC</td>\n      <td>ATCC: CRL-1573, RRID:CVCL_0045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Cellfectin II Reagent</td>\n      <td>Thermo Fisher</td>\n      <td>Cat. No.: 10362100</td>\n      <td>https://www.thermofisher.com/order/catalog/product/10362100</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ScreenFectA transfection reagent</td>\n      <td>Waco Chemicals USA</td>\n      <td>Cat. No.: 299\u201373203</td>\n      <td>http://www.e-reagent.com/uh/Shs.do?now=1544459665328</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFastbac1</td>\n      <td>Thermo Fisher</td>\n      <td>Cat. No.: 10360014</td>\n      <td>https://www.thermofisher.com/order/catalog/product/10360014</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1</td>\n      <td>Thermo Fisher</td>\n      <td>Cat. No.: V79020</td>\n      <td>https://www.thermofisher.com/order/catalog/product/V79020</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pymol</td>\n      <td>PyMOL Molecular Graphics System, Schr\u00f6dinger, LLC</td>\n      <td>RRID:SCR_000305</td>\n      <td>http://www.pymol.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>UCSF Resource for Biocomputing, Visualization, and Bioinformatics</td>\n      <td>RRID: SCR_004097</td>\n      <td>http://plato.cgl.ucsf.edu/chimera/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>PMID: 20124702</td>\n      <td>RRID: SCR_014224</td>\n      <td>http://www.phenix-online.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>PMID: 15572765</td>\n      <td>RRID: SCR_014222</td>\n      <td>http://www.biop.ox.ac.uk/coot/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>OriginPro 2016</td>\n      <td>OriginLab</td>\n      <td></td>\n      <td>https://originlab.com</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClamp 10</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323</td>\n      <td>http://www.moleculardevices.com/products/software/pclamp.html</td>\n    </tr>\n  </tbody>\n</table>\n\n### GtACR1 expression from insect cells and purification\n\nGtACR1 protein was expressed and purified from Spodoptera frugiperda Sf9 cells using a baculovirus expression system. The GtACR1 gene (GenBank Acc. KP171708, amino acid sequence 1\u2013295) was fused with a C-terminal His8 tag and subcloned into the plasmid pFastbac1 (Invitrogen) between the cloning sites EcoRI and XbaI. Baculovirus were generated by following a standard protocol (Thermofisher, Waltham, MA). To express the GtACR1 protein, exponentially-grown S9 cells (cell density\u00a0~2\u00d7106/ml) were infected by GtACR1-encoding virus in a ratio of 15:1 (v/v). All-trans-retinal in ethanol was added to the culture to the final concentration 5 \u00b5M. Cells were incubated for 3 days in spinner flasks at 27\u00b0C. The pink-colored cells were harvested by centrifugation using an SS34 rotor at 3000 rpm for 10 min, and the cell pellets were resuspended in Buffer A (350 mM NaCl, 5% glycerol, 20 mM HEPES, pH 7.5) with 0.1 mM phenylmethylsulfonyl fluoride (PMSF). Cell rupture was performed by 3\u00a0\u00d7\u00a0passage through a high-pressure homogenizer EmulsiFlex-C3 (Avestin, Ottawa, ON). After centrifugation at low speed (5000 rpm for 10 min) to remove cell debris, membrane fractions were pelleted at 40,000 rpm for 1 hr using a Ti45 Beckman rotor. The membranes were suspended in Buffer A and solubilized with 1% dodecyl-maltoside (DDM) for 1 hr at 4\u00b0C with shaking. Undissolved content was removed after ultracentrifugation using a Ti45 rotor at 45,000 rpm for 1 hr. The supernatant supplemented with 15 mM imidazole was incubated with Ni resin (Qiagen, Hilden, Germany) for 1 hr with shaking at 4\u00b0C. The resin was step-wise washed using 15 mM and 40 mM imidazole in Buffer A supplemented with 0.03% DDM. The GtACR1 protein was eluted with 400 mM imidazole and 0.03% DDM in buffer A. The eluted protein was further purified using a Superdex Increase 10/300 GL column (GE Healthcare, Chicago, IL) equilibrated with Buffer B (350 mM NaCl, 5% glycerol, 0.03% DDM, 20 mM MES, pH 5.5). Protein fractions with an A280/A515 absorbance ratio of\u00a0~1.9 were pooled, concentrated to\u00a0~20 mg/ml using a 100 K MWCO filter, flash-frozen in liquid nitrogen and stored at \u221280\u00b0C until use. Molar protein concentration was calculated using the absorbance value at 515 nm divided by the extinction coefficient 45,000 M\u22121cm\u22121.\n\n### Protein crystallization\n\nCrystallization was carried out using the in meso approach. 40 \u00b5l of GtACR1 protein was mixed with 60 \u00b5l monoolein (MO) (Sigma, St. Louis, MO or Nu-chek, Waterville, MN), premelted at 42\u00b0C using two syringes until the mixture became transparent to form a lipidic mesophase (lipidic cubic phase; LCP). 150 nl aliquots of the protein-mesophase mixture were spotted on 96-well LCP glass sandwich plates (Molecular Dimensions, Maumee OH) and overlaid with 1.5 \u00b5l of precipitant solution using a Gryphon crystallization robot (Art Robbins, Sunnyvale, CA). The plates were covered by aluminum foil to maintain them dark and incubated at room temperature. Red-colored GtACR1 crystals of\u00a0~20 \u00b5m in size appeared after one month. The most highly diffracting crystals were obtained in a protein-mesophase mixture containing 15% 2-methyl-2,4-pentanediol (MPD), 0.1 M 2-[(2-amino-2-oxoethyl)-(carboxymethyl)amino]acetic acid (ADA), pH 6.0, and 0.1 M NaCl. Crystals in LCP were harvested using micromesh loops (MiTeGen, Ithaca, NY), and flash-cooled in liquid nitrogen without any additional cryoprotectant.\n\n### Data collection and processing\n\nX-ray diffraction data collections were performed on protein crystallography beamlines X06SA-PXI at the Swiss Light Source (SLS), Villigen, Switzerland. Data were collected with a 10\u00a0\u00d7\u00a010 \u00b5m2 microfocused X-ray beam of 12.398 keV (1 \u00c5 in wavelength) at 100 K using SLS data acquisition software suites (DA+) (Wojdyla et al., 2018). Continuous grid-scans were used to locate crystals in frozen LCP samples (Wojdyla et al., 2016). The collection strategy was in steps of 0.1\u00b0 at a speed of 0.1 s/step by using the EIGER 16M detector operated in continuous/shutterless data collection mode. Data were processed with XDS and scaled and merged with XSCALE (Kabsch, 2010a; Kabsch, 2010b). Four partial data sets (three with 60\u00b0 wedges and one with 30\u00b0 wedges) were collected, processed and merged to a final data set to 2.9 \u00c5 resolution. Data collection and processing statistics are provided in Table 1.\n\n### Structure determination\n\nThe GtACR1 structure was determined using the molecular replacement (MR) method with the structure of Chlamydomonas reinhardtii ChR2 (PDB entry: 6EID) (Volkov et al., 2017) as the search model. The MR solution was obtained using Phaser (McCoy et al., 2007) with the TFZ to 8.7 and LLG to 221. The initial model was built using PHENIX-autobuild (Adams et al., 2010) and further completed manually using COOT (Emsley and Cowtan, 2004). The structural refinement was performed using PHENIX (Adams et al., 2010) The final structure has Rwork/Rfree factors of 0.25/0.27. Refinement statistics are reported in Table 1. The structure factors and coordinates have been deposited in the Protein Data Bank (PDB entry code: 6EDQ). Figures of molecular structures were generated with PyMOL (http://www.pymol.org).\n\n### GtACR1 expression and electrophysiology\n\nCharacterization of GtACR1 mutants was performed using whole-cell photocurrent recording as previously described (Sineshchekov et al., 2015). Briefly, the wild-type expression construct was cloned into the mammalian expression vector pcDNA3.1 (Life Technologies, Carlsbad, CA) in frame with an EYFP (enhanced yellow fluorescent protein). Mutations were introduced using a QuikChange XL site-directed mutagenesis kit (Agilent Technologies, Santa Clara, CA) and verified by DNA sequencing. HEK293 (human embryonic kidney) cells were transfected using the ScreenFectA transfection reagent (Waco Chemicals USA, Richmond, VA). All-trans-retinal (Sigma, St. Louis, MO) was added at the final concentration 4 \u00b5M immediately after transfection. Photocurrents were recorded 48\u201372 hr after transfection in whole-cell voltage clamp mode at room temperature (25\u00b0C) with an Axopatch 200B amplifier (Molecular Devices, Union City, CA) and digitized with a Digidata 1440A using pClamp 10 software (both from Molecular Devices). Currents recorded in response to laser excitation or continuous light were filtered with a 10 or 2 kHz low-pass Bessel filter and digitized at 250 or 5 kHz, respectively. Patch pipettes with resistances of 2\u20135 M\u03a9 were fabricated from borosilicate glass and filled with the following solution (in mM): KCl 126, MgCl2 2, CaCl2 0.5, EGTA 5, HEPES 25, and pH 7.4. The standard bath solution contained (in mM): NaCl 150, CaCl2 1.8, MgCl2 1, glucose 5, HEPES 10, pH 7.4. To test for changes in the permeability for Cl-, this ion in the bath was partially replaced with non-permeable aspartate (the final Cl- concentration 5.6 mM, rounded to 6 mM in the figure legends). To test for changes in the permeability for H+, the bath pH was adjusted to 5.4, and for Na+, this ion in the bath was partially replaced with N-methyl-D-gluconate (NMDG) neutralized with H2SO4. (the final Na+ concentration 1.4 mM). In this latter case, K+ in the pipette was fully replaced with Na+, so that Na+ was the only monovalent metal cation present in the system. A 4 M KCl bridge was used in all measurements. Series resistance was periodically checked during recording, and measurements showing\u00a0>20% increase were discarded. The current-voltage relationships (IE curves) were measured near the expected Erev to eliminate its possible changes during recording. For each cell, one value of the Erev was calculated. Before averaging, the curves for individual cells were normalized to the value obtained at the most negative holding potential in the tested range. The holding potential values were corrected for liquid junction potentials calculated using the Clampex built-in LJP calculator (Barry, 1994). Laser excitation was provided by a Minilite Nd:YAG laser (532 nm, pulsewidth six ns, energy 12 mJ; Continuum, San Jose, CA). A laser artifact measured with a blocked optical path was digitally subtracted from the recorded traces. For further analysis, the signals were logarithmically averaged with a custom-created computer algorithm. Curve fitting and data analysis were performed using OriginPro 2016 software (OriginLab Corporation, Northampton, MA). Continuous light pulses were provided by a Polychrome V light source (T.I.L.L. Photonics GMBH, Grafelfing, Germany) at 15 nm half-bandwidth in combination with a mechanical shutter (Uniblitz Model LS6, Vincent Associates, Rochester, NY; half-opening time 0.5 ms). The maximal quantum density at the focal plane of the 40\u00a0\u00d7\u00a0objective measured with a piezo detector was 7.7 mW mm\u22122 at 515 nm. For measurements of the action spectra, short (25 ms) light pulses of the intensity in the linear response range were used at 10 nm half-bandwidth. The mean currents during the initial rise were calculated and corrected for the quantum density at each wavelength, which was measured with a calibrated photodiode. In each cell, a response to illumination at each wavelength was measured at least twice in a symmetrical fashion, first, scanning from the shortest to the longest wavelength, and then in the opposite direction. The spectral data sets obtained in all scans were pooled together (because the differences between individual cells in ACR expression levels or patch parameters were not expected to influence ACR spectral properties), normalized to the maximal value and averaged to produce the mean and sem values.\n\nTransfection with each tested mutant variant was repeated in at least three different batches of culture, and the results obtained in cells from all batches were pooled. Batches of culture were randomly allocated for transfection with a specific mutant; no masking (blinding) was used. Individual transfected HEK293 cells were selected for patching by inspecting their tag fluorescence; non-fluorescent cells were excluded. Cells for which we could not establish a gigaohm seal or for which a gigaohm seal was lost during recording were excluded from measurements. Current traces recorded from the same cells upon repetitive light stimulation were considered as technical replicates; results obtained from different individual cells were considered as biological replicates. In experiments with laser excitation, 10 technical replicates were averaged to yield a single mean trace for each cell; in experiments with continuous light pulses, a single trace was recorded in each cell. The baseline measured before illumination was subtracted using Clampfit software (a subroutine of pClamp). The same software was used to measure the peak current amplitude with a cursor. The raw data obtained in individual cells are shown as open diamonds and listed in the corresponding source data tables. Sample size was estimated from previous experience and published work on a similar subject, as recommended by the NIH guidelines (Dell et al., 2002). No outliers were excluded from calculation of mean values. Normality of the data was not assumed, and therefore non-parametric statistical tests were used as implemented in OriginPro 2016 software; P values\u00a0>\u00a00.05 were considered not significant. The results of statistical hypothesis testing are shown in Tables 2\u20134. When no specific statistical hypothesis was tested, descriptive statistical analysis was applied.\n\n### Cell lines\n\nOnly commercially available cell lines authenticated by the vendors (Sf9 from Sigma Aldrich and HEK293 from ATCC) were used; no cell lines from the list of commonly misidentified cell lines were used. The absence of micoplasma contamination was verified by Visual-PCR mycoplasma detection kit (GM Biosciences, Frederick, MD).\n\n### Data availability\n\nAtomic coordinates and structure factors for the reported crystal structure have been deposited with the Protein Data Bank (PDB) under the accession code 6EDQ.\n",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "ef9ff2b4-05ad-40ce-8807-81b0bac96bb5",
+      "submission_id": "33179cb2-20cf-4fcd-a856-ba71f95b04f7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sriram Subramaniam, University of British Columbia Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41741.039](https://doi.org/10.7554/eLife.41741.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Crystal structure of a natural light-gated anion channelrhodopsin\" for consideration by eLife. Your article has been reviewed by Richard Aldrich as the Senior Editor, a Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor Dr. Sriram Subramaniam has drafted this decision to help you prepare a revised submission.\n\nAll of the reviewers agreed that this is a very well executed manuscript with convincing experimental evidence. The reviewers also recognized that your manuscript reports the crystal structure of the full-length protein, independently verifying the previously obtained structure of a truncated form of this channel, thus creating a firm basis for further optimization of a potent neuron-silencing optogenetic tool.\n\nEssential revisions:\n\n1) Effects of crystal packing on the structure that may arise from different crystallization constructs.\n\n2) The conclusion that (i) the retinylidene Schiff base protonated configuration is maintained when the channel is open and (ii) Schiff base controls gating and also serves as a direct mediator for anion flux is not directly demonstrated. It would be good to address this if possible.\n\n3) Kinetic analysis of channel open/close events is not presented. As a result, one cannot distinguish between different loss-of-function mutant phenotypes affecting C1, C2 and C3 regions.\n\n4) Spectral characteristics of mutants are lacking.\n\n5) Figure 1\u2014figure supplement 1 should include spectral and functional (anion transport) validation data for natural vs recombinant purified ACR1 proteins.\n\n6) Subsection \u201cIon pathway constrictions\u201d: \u201cdark-grown crystals is presumably the dark (closed) state of the channel protein\u201d, is this correct?\n\n7) Subsection \u201cIon pathway constrictions\u201d: What is the rationale for choice of Glu for site-specific replacements? Why was there no consideration of gain-of-function testing? Could the use of Glu simply change electrochemical repulsion of anion flux rather than physically opening the channel?\n\n8) Did the M105E mutant cause photochemical perturbation as this residue is closed to Schiff base linkage?\n\n9) If possible, please show conductance, current/voltage relationships and reversal potentials for the crystalized construct, native protein and individual mutants as supplementary data.\n\na) Absorption spectra and kinetics of wild-type GtACR1 and mutants should be shown in the supplement.\n\nb) Especially for the Schiff base protonation in wild-type and mutants, it would be good to present detailed spectroscopic data.\n\nc) The authors should include a discussion paragraph highlighting key unique features that distinguish their work from the work of Kim et al., (2018).\n",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8d59bbce-2e62-4562-b3de-6302f7e6289c",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C1",
+      "claim": "GtACR1 from the alga Guillardia theta is a potent neuron-inhibiting optogenetics tool.",
+      "claim_type": "EXPLICIT",
+      "source": "The anion channelrhodopsin GtACR1 from the alga Guillardia theta is a potent neuron-inhibiting optogenetics tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known property of GtACR1, supported by prior research and the current structural study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "647aefcc-1ef9-4c0b-a4e3-7f7b3346563b",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C2",
+      "claim": "The X-ray structure of GtACR1 was determined at 2.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Presented here, its X-ray structure at 2.9 \u00c5 reveals a tunnel traversing the protein from its extracellular surface to a large cytoplasmic cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is explicitly stated in the abstract and confirmed in Table 1 showing crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "e69a133a-f5c3-40a7-9303-1633d500ff05",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C3",
+      "claim": "GtACR1 contains a tunnel traversing the protein from its extracellular surface to a large cytoplasmic cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Presented here, its X-ray structure at 2.9 \u00c5 reveals a tunnel traversing the protein from its extracellular surface to a large cytoplasmic cavity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The tunnel is described in the abstract and visualized in Figure 2A and 2B showing cross-sections of the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "755120d4-f754-40d9-bc7c-9db82e264655",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C4",
+      "claim": "The tunnel in GtACR1 is lined primarily by small polar and aliphatic residues essential for anion conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "The tunnel is lined primarily by small polar and aliphatic residues essential for anion conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "4140d0fc-92e5-462e-8098-9e42e9c04f85",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C5",
+      "claim": "A disulfide-immobilized extracellular cap facilitates channel closing in GtACR1.",
+      "claim_type": "EXPLICIT",
+      "source": "A disulfide-immobilized extracellular cap facilitates channel closing and the ion path is blocked mid-membrane by its photoactive retinylidene chromophore and further by a cytoplasmic side constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by mutagenesis data in Figure 3C showing that disrupting the disulfide bridge slows channel closing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "58549653-a83e-4871-91f7-6be66ce89756",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C6",
+      "claim": "The ion path in GtACR1 is blocked mid-membrane by its photoactive retinylidene chromophore.",
+      "claim_type": "EXPLICIT",
+      "source": "A disulfide-immobilized extracellular cap facilitates channel closing and the ion path is blocked mid-membrane by its photoactive retinylidene chromophore and further by a cytoplasmic side constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural data showing the retinal position in the tunnel (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "7fa4164e-ab08-4c4a-9388-9bda7503bd9b",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C7",
+      "claim": "The ion path in GtACR1 is blocked by a cytoplasmic side constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "A disulfide-immobilized extracellular cap facilitates channel closing and the ion path is blocked mid-membrane by its photoactive retinylidene chromophore and further by a cytoplasmic side constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural analysis showing constriction C3 in Figure 2D and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "7addb7d6-fe73-4659-ba7f-d31f567caadf",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C8",
+      "claim": "GtACR1 has a novel photoactive site configuration that maintains the retinylidene Schiff base protonated when the channel is open.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure also reveals a novel photoactive site configuration that maintains the retinylidene Schiff base protonated when the channel is open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural analysis in Figure 5A and prior photochemical studies cited in the text (Sineshchekov et al., 2016; Wietek et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "5b154707-8371-48a9-9675-e2b0541d8ff3",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C9",
+      "claim": "The Schiff base in GtACR1 controls gating and serves as a direct mediator for anion flux.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest a new channelrhodopsin mechanism, in which the Schiff base not only controls gating, but also serves as a direct mediator for anion flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed in the abstract based on structural findings and is supported by the location of the protonated Schiff base in the ion path.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "85c43675-5fd5-44a9-a880-f10e540ea808",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C10",
+      "claim": "Anion channelrhodopsins (ACRs) are natural light-gated anion channels first discovered in the cryptophyte alga Guillardia theta.",
+      "claim_type": "EXPLICIT",
+      "source": "Anion channelrhodopsins (ACRs) are natural light-gated anion channels first discovered in the cryptophyte alga Guillardia theta (GtACR1 and GtACR2) (Govorunova et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to the original discovery paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "bd57bca6-f47a-4b9b-a535-2e571d59d6d5",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C11",
+      "claim": "GtACRs have large Cl- conductance making them the most potent neuron-silencing optogenetic tools available.",
+      "claim_type": "EXPLICIT",
+      "source": "Their large Cl- conductance makes GtACRs and other ACRs later found in various cryptophyte species (Govorunova et al., 2018; Govorunova et al., 2017b) the most potent neuron-silencing optogenetic tools available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to studies demonstrating their effectiveness.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "bb0f33a6-27a4-4dfd-a8f7-2f6662b543d3",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C12",
+      "claim": "GtACRs have been effective inhibitors of neural processes and behavior in flies, worms, zebrafish, ferrets, and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "GtACRs have proven to be effective inhibitors of neural processes and behavior in flies (Mauss et al., 2017; Mohammad et al., 2017; Steck et al., 2018), worms (Bergs et al., 2018), zebrafish (Mohamed et al., 2017), ferrets (Wilson et al., 2018), and mice (Forli et al., 2018; Mahn et al., 2018; Messier et al., 2018; Wei et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations to studies in different organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "212d5114-0201-49dc-ad30-20183c20f185",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C13",
+      "claim": "GtACR1 is the best characterized ACR in terms of its gating mechanism and photochemical reaction cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 35 ACR homologs found in cryptophyte algae (Govorunova et al., 2018; Govorunova et al., 2016; Wietek et al., 2016), GtACR1 is the best characterized in terms of its gating mechanism and photochemical reaction cycle (Sineshchekov et al., 2015; Sineshchekov et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to prior characterization studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "aab27469-7e54-47f0-b84d-7ec0e244efb2",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C14",
+      "claim": "GtACR1 is the only ACR for which light-gated anion conductance has been proven to be maintained in vitro in a purified state.",
+      "claim_type": "EXPLICIT",
+      "source": "and also is the only ACR for which light-gated anion conductance has been proven to be maintained in vitro in a purified state (Li et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to the study demonstrating this property.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "2bb8c39a-f6e8-4341-bacf-da80015120d2",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C15",
+      "claim": "ACRs conduct only anions with complete exclusion of cations, even H+.",
+      "claim_type": "EXPLICIT",
+      "source": "The two channelrhodopsin families exhibit large differences in their sequences and photochemistry (Govorunova et al., 2017a): (i) ACRs conduct only anions with complete exclusion of cations, even H+, for which CCRs exhibit their highest relative permeability",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a key difference between ACRs and CCRs, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "5fa98583-6d10-4ad6-ab87-8a6b048cb056",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C16",
+      "claim": "GtACR1 exhibits 25-fold higher unitary conductance than CrChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) ACRs are generally more potent; for example GtACR1 exhibits 25-fold higher unitary conductance than CrChR2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a comparison between ACRs and CCRs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "d4ac1af7-6471-4c2a-9005-16be4d8a2675",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C17",
+      "claim": "In ACRs, the retinylidene Schiff base remains protonated throughout the lifetime of the open-channel state.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) The retinylidene Schiff base in the photoactive site deprotonates prior to channel opening in CCRs (L\u00f3renz-Fonfr\u00eda and Heberle, 2014) and, in contrast, in ACRs remains protonated throughout the lifetime of the open-channel state with deprotonation correlated with the initial phase of channel closing (Sineshchekov et al., 2016; Wietek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to studies demonstrating this property.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "65439a2b-621c-4001-aa70-71a2390a0e50",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C18",
+      "claim": "In ACRs, Schiff base deprotonation is correlated with the initial phase of channel closing.",
+      "claim_type": "EXPLICIT",
+      "source": "in ACRs remains protonated throughout the lifetime of the open-channel state with deprotonation correlated with the initial phase of channel closing (Sineshchekov et al., 2016; Wietek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to studies demonstrating this timing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "a2f61464-0d8d-41aa-8761-0c43bd31d0c3",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C19",
+      "claim": "GtACR1 protein was expressed in insect (Sf9) cells and purified as a disulfide-crosslinked homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The GtACR1 protein was expressed in insect (Sf9) cells and purified as a disulfide-crosslinked homodimer (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "b882f632-25a8-4af2-8bc6-283230ba84f4",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C20",
+      "claim": "LCP crystals of GtACR1 were obtained and the structure was determined at 2.9 \u00c5 resolution using molecular replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained lipidic cubic phase (LCP) crystals of GtACR1, applied the continuous grid-scan method (Wojdyla et al., 2016) for X-ray data collection, and determined the structure at 2.9 \u00c5 resolution using molecular replacement (Figure 1, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to the figure and table showing crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "83c48d63-8689-407c-9fb3-d54590e7815c",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C21",
+      "claim": "Each asymmetric unit of the GtACR1 crystal contains a homodimer molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Each asymmetric unit contains a GtACR1 homodimer molecule (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to a figure showing the crystal packing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "427bbac0-fe02-44d2-8598-755c75d4f2fe",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C22",
+      "claim": "Each GtACR1 monomer is composed of an extracellular cap domain, seven transmembrane helices (TM1-7), and a cytoplasmic loop at the carboxyl-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Each monomer is composed of an extracellular cap domain, seven transmembrane helices (TM1-7), and a cytoplasmic loop at the carboxyl-terminus (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "4c68a1e1-be7c-472c-bbae-14ec8ff50975",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C23",
+      "claim": "The GtACR1 homodimer is stabilized by TM3 and TM4 interactions between monomers and an intermolecular disulfide bridge formed by C6 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The GtACR1 homodimer is stabilized by TM3 and TM4 interactions between monomers and further by an intermolecular disulfide bridge formed by the C6 residues (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "d2b521c4-0ec9-4ebb-982b-c7a7e1442336",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C24",
+      "claim": "The dimeric arrangement of GtACR1 creates a large funnel-shaped cytoplasmic cavity (~18 \u00c5 deep and ~28 \u00c5 wide).",
+      "claim_type": "EXPLICIT",
+      "source": "Since TM5-7 are much longer than TM1-4, this dimeric arrangement creates a large funnel-shaped cytoplasmic cavity (~18 \u00c5 deep and ~28 \u00c5 wide).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on structural measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "707e3fdc-fef0-46dd-9de5-2b9e20c3db85",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C25",
+      "claim": "GtACR1 and C1C2/CrChR2 share ~24% amino acid sequence identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the modest ~24% amino acid sequence identity between GtACR1 and C1C2/CrChR2, the structure of each GtACR1 protomer can be superposed well (Figure 1\u2014figure supplement 3) with either of the two CCR structures (r.m.s.d. 0.9 \u00c5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a comparison between the structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "c4ca8c26-757c-4ab3-be68-d36d86bbc54b",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C26",
+      "claim": "The structure of each GtACR1 protomer can be superposed with C1C2/CrChR2 structures with r.m.s.d. 0.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the modest ~24% amino acid sequence identity between GtACR1 and C1C2/CrChR2, the structure of each GtACR1 protomer can be superposed well (Figure 1\u2014figure supplement 3) with either of the two CCR structures (r.m.s.d. 0.9 \u00c5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "6d8347cc-afd8-40cc-9bd9-26e8a929219f",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C27",
+      "claim": "GtACR1 and CCRs share a common TM helical scaffold conformation in their closed states.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that these functionally distinct channelrhodopsins share a common TM helical scaffold conformation in their closed states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on structural superposition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "b2bb6be2-573b-4632-baf7-6926db1ca028",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C28",
+      "claim": "A continuous tunnel spanning through the protein from the extracellular to cytoplasmic surface was detected in each GtACR1 protomer by serial cross-sections.",
+      "claim_type": "EXPLICIT",
+      "source": "A continuous tunnel spanning through the protein from the extracellular to cytoplasmic surface was detected in each GtACR1 protomer by serial cross-sections (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "9b1d680d-2708-48a2-a9e5-fadcdece83ff",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C29",
+      "claim": "The tunnel in GtACR1 starts from an electropositive port on the extracellular surface, intersects the retinylidene Schiff base in the middle of the membrane, and ends at an intracellular port deeply embedded in the large dimeric cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "The tunnel, assembled by TM1-3 and 7, starts from an electropositive port on the extracellular surface, intersects the retinylidene Schiff base in the middle of the membrane, and ends at an intracellular port deeply embedded in the large dimeric cavity (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "372975d3-e184-4961-b2fc-61102b984ebd",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C30",
+      "claim": "The continuous intramolecular tunnel in GtACR1 was detected by the program CAVER with probe radius 0.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The continuous intramolecular tunnel in GtACR1 directly visualized by cross-section, presumably indicating the anion conductance pathway, was also detected by the program CAVER (probe radius 0.9 \u00c5) (Kozlikova et al., 2014) (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to the computational method and figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "706c792a-d100-4fac-b458-c192441cf2b9",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C31",
+      "claim": "Only a partial tunnel open on the extracellular side was found in C1C2.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, only a partial tunnel open on the extracellular side was found in C1C2 (Kato et al., 2012) (Figure 2\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with citation and reference to a figure showing the comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "8825a9e6-4a56-43c3-921b-b408eddcb1e6",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C32",
+      "claim": "No tunnel open to either surface was found with CAVER in CrChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "and we found no tunnel open to either surface with CAVER in CrChR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "9c5eab31-575f-470a-b2a3-cfac4ddfa049",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C33",
+      "claim": "The tunnel of GtACR1 is primarily lined by small polar and aliphatic residues in contrast to charged residues in corresponding positions in C1C2 and CrChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the high similarity of the TM helix scaffolds of GtACR1 and C1C2/CrChR2, the tunnel of GtACR1 is primarily lined by small polar and aliphatic residues (Figure 2C) in contrast to charged residues in the corresponding positions in C1C2 and CrChR2: A75 vs E136/E97 (C1C2/CrChR2 numbering), T71 vs K132/K93; S97 vs E162/E123, A61 vs E122/E83, and L108 vs H173/H134 (Figure 2\u2014figure supplement 2 top row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to figures showing the residue differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "51c05981-1c10-4a75-b76e-d416e0905afe",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C34",
+      "claim": "The differences in GtACR1 from the CCR structures significantly reduce the negativity of the putative channel pore lining consistent with anion vs. cation conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in GtACR1 from the CCR structures significantly reduce the negativity of the putative channel pore lining consistent with anion vs. cation conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the structural differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "441a29d6-8b28-4f14-89dd-91fd621033e1",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C35",
+      "claim": "An intraprotomer disulfide bridge is formed between C21 from the amino-terminal segment and C219 within the TM6-7 loop in GtACR1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the disulfide link between the two protomers, an intraprotomer disulfide bridge is formed between C21 from the amino-terminal segment and C219 within the TM6-7 loop (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "6af4312e-88cf-4b97-9f5b-48d14ef3914c",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C36",
+      "claim": "The intramolecular C21-C219 disulfide crosslink immobilizes the kinked helices to the retinal-conjugated TM7 and encaps a hydrophobic part of the segment on the extracellular tunnel entry port.",
+      "claim_type": "EXPLICIT",
+      "source": "This intramolecular crosslink immobilizes the kinked helices to the retinal-conjugated TM7, and encaps a hydrophobic part of the segment on the extracellular tunnel entry port (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "913cbbb9-96e2-4a5e-a232-606071716e4a",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C37",
+      "claim": "Disrupting the extracellular loop conformation by truncation of the amino-terminal loop (\u03941\u201325) or by substituting C21 and C219 with serine resulted in slowed channel closing.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting this extracellular loop conformation, either by truncation of the amino-terminal loop (\u03941\u201325) or by substituting C21 and C219 with serine to abolish the intramolecular disulfide, resulted in slowed channel closing (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3C with photocurrent decay kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "28847516-0cd5-4449-a805-ebe1403551b7",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C38",
+      "claim": "Both C21 and C219 are highly conserved in ACRs but not in CCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both C21 and C219 are highly conserved in ACRs (Govorunova et al., 2017b), but not in CCRs, revealing a role of this intramolecular disulfide bridge specific to the ACR family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to a study on ACR conservation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "d49d9b38-1834-4979-b8a1-74f5957f7973",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C39",
+      "claim": "The intramolecular tunnel in GtACR1 is constricted at three positions: at the extracellular port (C1), near the photoactive retinylidene Schiff base (C2), and at the cytoplasmic side (C3).",
+      "claim_type": "EXPLICIT",
+      "source": "The intramolecular tunnel in GtACR1 is constricted at three positions: at the extracellular port (C1), near the photoactive retinylidene Schiff base (C2), and at the cytoplasmic side (C3) (Figures 2D and 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figures 2D and 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "73f31f5d-4fc5-4a21-8593-8f0e927e8a10",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C40",
+      "claim": "The C1 constriction is stabilized by an H-bond network formed by the side chains of Y81, R94 and E223.",
+      "claim_type": "EXPLICIT",
+      "source": "Near the extracellular port, the C1 constriction (Figure 3D) is stabilized by an H-bond network adjacent to the disulfide-immobilized extracellular cap and formed by the side chains of Y81, R94 and E223 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figures 3A and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "eb1df2b9-417e-4056-89fc-d3e155d380c7",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C41",
+      "claim": "The mutation R94A nearly abolished Cl- conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation R94A nearly abolished Cl- conductance (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5D with photocurrent measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "bdea193f-30fb-4cbf-9db4-55994a52f4d4",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C42",
+      "claim": "Mutations R94A, E223Q, Y81F, and C21S_C219S strongly slowed the slow decay phase of channel closing to a similar extent.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3\u2014figure supplement 1 and reported earlier for the E223Q mutant (Sineshchekov et al., 2015), all three mutations strongly slowed the slow decay phase to a similar extent as that observed in the C21S_C219S mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 3\u2014figure supplement 1 and a prior study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "fb8b1a8a-6e1e-4d7b-a537-92140a028115",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C43",
+      "claim": "The combination of the H-bond network of E223 and its neighbouring intraprotomer disulfide bridge controls the rate of channel closing in the extracellular region and stabilizes R94 in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the combination of the H-bond network of E223 and its neighbouring intraprotomer disulfide bridge controls the rate of channel closing in the extracellular region and stabilizes the essential residue R94 in the closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "b0bb956d-6042-4c77-ae3c-7bdf9e2a4808",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C44",
+      "claim": "The narrowest constriction C2 lies at the photoactive site and is formed by the side chains of T101, L64, and M105.",
+      "claim_type": "EXPLICIT",
+      "source": "The narrowest constriction C2 lies at the photoactive site and is formed by the side chains of T101, L64, and M105 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "a9a3cc55-80f0-4b26-852c-28da5abab0b3",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C45",
+      "claim": "Four of the five residues that form the intracellular constriction C3 (L108, A61, E60, L245 and P58) are in corresponding positions as the residues that form the 'intracellular gate' in CCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the five residues that form the intracellular constriction C3 (L108, A61, E60, L245 and P58) (Figure 3F) are in corresponding positions as the residues that form the 'intracellular gate' in CCRs (Deisseroth and Hegemann, 2017), but in GtACR1 and other ACRs only E60 (E121/E82) is shared with CCRs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with citation and reference to Figure 3F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "202ce5c3-6587-4a7d-b936-5d249fb44749",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C46",
+      "claim": "Perturbation of any residues at C2 or C3 greatly reduced or eliminated the photocurrents, while effects of most mutations (except A75E) at the C1 position were negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, perturbation of any residues at C2 or C3 greatly reduced or eliminated the photocurrents, while effects of most mutations (except A75E) at the C1 position were negligible (Figure 3G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3G with photocurrent measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "7d585a59-550d-4fe6-b53c-2dd83811ed59",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C47",
+      "claim": "In the open conformation, the GtACR1 channel is wider in the extracellular portion and more narrow in its central and intracellular stretches.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that in the open conformation the channel is wider in the extracellular portion and more narrow in its central and intracellular stretches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "e5e1c495-be90-4252-b645-96848de968e7",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C48",
+      "claim": "Mutations of the C1 and C3 residues mostly affected the slow phase of channel closing, making it slower than that in the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetically, the mutations of the C1 and C3 residues mostly affected the slow phase of channel closing, making it slower than that in the wild-type (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "1fda1585-b16b-46ec-a144-fa042fcd6f43",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C49",
+      "claim": "None of the tested mutants yielded Erev values that were statistically significantly different from the wild type under Cl- gradient conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the mutants in which photocurrents near the reversal potential could be resolved from the background noise yielded Erev values that were statistically significantly different from that measured in the wild type (Figure 3\u2014figure supplement 4; full statistical results are in Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to figures and statistical analysis in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "d67d4b89-6b17-4de0-9c93-d8795934f517",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C50",
+      "claim": "Seven tested single and double mutants showed no shift in Erev under Cl- gradient conditions from the Cl- Nernst potential.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found no such change when we tested seven of these single and double mutants (Figure 3\u2014figure supplements 5 and 6; full statistical results are in Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to figures and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "ed73e6ed-3656-47fe-9a80-82aaf2827e38",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C51",
+      "claim": "The tested mutants showed no statistically significant difference from the wild type in the presence of H+ and Na+ gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we further tested these mutants in the presence of H+ and Na+ gradients (Figure 3\u2014figure supplements 7 and 8, respectively) and again found no statistically significant difference from the wild type (Figure 3\u2014figure supplement 9; full statistical results are in Tables 3 and 4), indicating that none of these mutations produced permeability for these cations in GtACR1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to figures and statistical analysis in Tables 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "8ad35e4b-37b7-45f8-9648-33dbfa6cfa3a",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C52",
+      "claim": "The unphotolyzed state of GtACR1 contains almost exclusively all-trans retinal.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal near-infrared resonance Raman spectroscopy has shown that the unphotolyzed state of GtACR1 contains almost exclusively all-trans retinal (Yi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to a spectroscopy study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "a32969df-11c4-41e0-8f8e-85001437ae3c",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C53",
+      "claim": "The presence of F160 in GtACR1 pushes the \u03b2-ionone ring towards the extracellular side by 1.2 \u00c5 compared to C1C2/CrChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "While the conformations of the retinal polyene chain are nearly identical in GtACR1 and C1C2/CrChR2, the presence of F160 in GtACR1 (G224/G185 in C1C2/CrChR2, respectively) pushes the \u03b2-ionone ring towards the extracellular side by 1.2 \u00c5 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "e454ebe9-72b9-4cd2-be1c-a1ce72d02354",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C54",
+      "claim": "The action spectrum of photocurrents generated by the F160G mutant was almost identical to that of the wild-type GtACR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this conformational difference, the action spectrum of photocurrents generated by the F160G mutant was almost identical to that of the wild-type GtACR1 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "39e53bc3-59ad-4819-a254-cc80a57c17d1",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C55",
+      "claim": "In C1C2 and CrChR2, the protonated Schiff base participates in a quadruple salt-bridge network formed with D292/D253, E162/E123 and K132/K93 sidechains.",
+      "claim_type": "EXPLICIT",
+      "source": "In C1C2 and CrChR2 the protonated Schiff base (PSB) participates in a quadruple salt-bridge network formed with D292/D253, E162/E123 and K132/K93 sidechains (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "dc3d3f24-0565-4220-8d4d-574834aef529",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C56",
+      "claim": "The strong salt-bridge network around the Schiff base is absent in the GtACR1 structure due to the replacement of E162/E123 and K132/K93 with smaller uncharged residues S97 and T71.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this strong network is absent in the GtACR1 structure due to the replacement of E162/E123 and K132/K93 with smaller uncharged residues S97 and T71, respectively (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "12ee9a5b-0eda-46b8-92fc-847ac79d422b",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C57",
+      "claim": "D234 is the only residue directly interacting with the protonated Schiff base in GtACR1.",
+      "claim_type": "EXPLICIT",
+      "source": "D234 is the only residue directly interacting with the protonated Schiff base (PSB) in GtACR1, and its electrostatic interaction appears to be weakened by two H-bonds from tyrosine residues Y72 and Y207 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "75b7b981-a397-43f5-94c3-034c6de3b9ce",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C58",
+      "claim": "The electrostatic interaction of D234 with the Schiff base appears to be weakened by two H-bonds from tyrosine residues Y72 and Y207.",
+      "claim_type": "EXPLICIT",
+      "source": "D234 is the only residue directly interacting with the protonated Schiff base (PSB) in GtACR1, and its electrostatic interaction appears to be weakened by two H-bonds from tyrosine residues Y72 and Y207 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "ca17ddaa-b7d1-4048-86fd-e0a60f1f62c3",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C59",
+      "claim": "In bacteriorhodopsin, tyrosinyl H-bond-weakened interactions of D212 prevent it from accepting the Schiff base proton, which is transferred instead to D85 in the proton release pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The proton pump bacteriorhodopsin exhibits similar tyrosinyl H-bond-weakened interactions of D212, the residue in the corresponding position as D234. The interactions prevent D212 from accepting the Schiff base proton, which is transferred instead to D85 in the proton release pathway (Luecke et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to a study on bacteriorhodopsin structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "a166a624-c3ba-4bae-8950-b8d39efca549",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C60",
+      "claim": "Resonance Raman and UV-vis absorption spectra of the D234N mutant of GtACR1 indicate that D234 is neutral and not a Schiff base proton acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Resonance Raman and UV-vis absorption spectra of the D234N mutant of GtACR1 indicate that D234 is similarly neutral and not a Schiff base proton acceptor (Sineshchekov et al., 2016; Yi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations to spectroscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "88cab9bf-0ad1-4a33-a715-2d115eab8bd6",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C61",
+      "claim": "The dark structure may explain the persistence of protonation of the Schiff base throughout the lifetime of the open channel conformation in GtACR1.",
+      "claim_type": "EXPLICIT",
+      "source": "The dark structure therefore may explain the persistence of protonation of the Schiff base throughout the lifetime of the open channel conformation in GtACR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the structural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "1de8b7da-0d1f-4345-8ff5-36e46a457633",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C62",
+      "claim": "Y207 appeared to be more important functionally than Y72, as its replacement with phenylalanine suppressed the photocurrents to a greater extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the two tyrosine residues, Y207 appeared to be more important functionally, as its replacement with phenylalanine suppressed the photocurrents to a greater extent than that of Y72 (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5D with photocurrent measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "5ec328a1-3d2c-4973-a8d7-b6011b54c0e5",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C63",
+      "claim": "The Y207F mutation caused a 12 nm blue shift of the action spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "and caused a 12 nm blue shift of the action spectrum (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "5e3feec1-ab6f-4024-a87e-9791e7875d79",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C64",
+      "claim": "The Y72F mutation mostly affected the slow decay phase, while the Y207F mutation caused a strong perturbation of both phases.",
+      "claim_type": "EXPLICIT",
+      "source": "The Y72F mutation mostly affected the slow decay phase, while the Y207F mutation caused a strong perturbation of both phases (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "ab0a7492-13cc-416e-b92c-4935c4b3ec41",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C65",
+      "claim": "In CrChR2, photoisomerization of the Schiff base rapidly disrupts the strong salt-bridged network by inducing transfer of the Schiff base proton to D253 or E123 in ~10 \u00b5s prior to channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "In CrChR2, photoisomerization of the Schiff base rapidly disrupts the strong salt-bridged network by inducing transfer of the Schiff base proton to D253 or E123 in ~10 \u00b5s prior to channel opening (L\u00f3renz-Fonfr\u00eda and Heberle, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to a study on CrChR2 photochemistry.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "ff538bfa-0231-4d79-81be-018c2e196f90",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C66",
+      "claim": "In GtACR1, the Schiff base remains protonated throughout the lifetime of the open channel conformation, and deprotonation occurs late in the photocycle (~20 ms) correlated with fast channel closing.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Schiff base remains protonated throughout the lifetime of the open channel conformation in GtACR1, and deprotonation of the Schiff base proton occurs late in the photocycle (~20 ms) correlated with fast channel closing (Sineshchekov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "f8e58da3-6316-45e2-bb62-20240ff165cb",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C67",
+      "claim": "In GtACR1, no immediate proton accepting residue is available in the vicinity of the PSB and later structural changes are required to enable Schiff base proton transfer, possibly to E68.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike in the salt-bridge network around the Schiff base in the CCRs (Figure 5B), in GtACR1 no immediate proton accepting residue is available in the vicinity of the PSB and therefore later structural changes are required to enable Schiff base proton transfer, possibly to E68 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as an inference from the structural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "7d795775-d338-4e7f-9709-c055c5a31ea8",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C68",
+      "claim": "The location of the PSB, centered within the anion path in GtACR1, suggests that it may play a direct role in anion translocation in the open channel state.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the PSB, centered within the anion path in GtACR1, suggests that it may play a direct role in anion translocation in the open channel state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a hypothesis based on the structural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "ad50f14a-8f85-4517-a659-70f6a9bad649",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C69",
+      "claim": "The PSB is only partially neutralized by its D234 counterion because the counterion is weakened by its interaction with the two tyrosinyl residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea is that the PSB is only partially neutralized by its D234 counterion because the counterion is weakened by its interaction with the two tyrosinyl residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the structural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "10eabe32-25fc-4cf5-ab59-4a7b0f495263",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C70",
+      "claim": "The PSB presents a partial positive charge capable of transient reversible interaction with Cl- ions in a channel that is largely lined by small polar and hydrophobic aliphatic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the PSB presents a partial positive charge capable of transient reversible interaction with Cl- ions in a channel that is largely lined by small polar and hydrophobic aliphatic residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the structural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "4fd15f3c-a92d-4d45-b9f8-12ae7d6ca5d6",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C71",
+      "claim": "Late deprotonation of the Schiff base after channel opening occurs in all three ACRs examined: GtACR1, GtACR2, and PsuACR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting a possible direct role of the PSB in the channel's permeability for anions, late deprotonation of the Schiff base after channel opening occurs in all three ACRs so far examined: GtACR1 and GtACR2 (Sineshchekov et al., 2016) and PsuACR1 (Wietek et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations to studies on different ACRs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "fffc4822-6456-4789-b331-d049ae766cee",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C72",
+      "claim": "Schiff base deprotonation after channel opening is not known to occur in any CCR.",
+      "claim_type": "EXPLICIT",
+      "source": "yet Schiff base deprotonation after channel opening is not known to occur in any CCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a contrast to ACRs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "3b670090-ffd4-4ce6-82a2-19a1b8cf08a8",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C73",
+      "claim": "The mutant S97E exhibits appearance of fast Schiff base deprotonation and a > 30 fold suppression of the amplitude of the chloride photocurrent.",
+      "claim_type": "EXPLICIT",
+      "source": "Further indicating an essential role of the protonated Schiff base form, the mutant S97E, in which a potential Schiff base proton acceptor is placed at the corresponding position in GtACR1 as in CCRs and many other microbial rhodopsins, exhibits (i) appearance of fast Schiff base deprotonation, and (ii) a > 30 fold suppression of the amplitude of the chloride photocurrent (Sineshchekov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "8ab43d46-48e3-402d-a629-a11fdcc69ae5",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C74",
+      "claim": "The double mutation Y207F/Y72F decreased the photocurrent amplitude to a negligible value.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the double mutation Y207F/Y72F, expected to release inhibition of D234 as a proton acceptor, decreased the photocurrent amplitude to a negligible value (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5D with photocurrent measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "55140ea0-890c-4e7f-97b8-ef762840a632",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C75",
+      "claim": "E68 forms an H-bond network with N239 and S43 in GtACR1.",
+      "claim_type": "EXPLICIT",
+      "source": "E68, a glutamyl residue near the Schiff base constriction in the channel, forms an H-bond network with N239 and S43 (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "53c9a3e8-3504-4566-8f6c-5897e1c86580",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C76",
+      "claim": "The ENS triad in GtACR1 has a geometry similar to that of a homologous triad (E129/E90, N297/N258, and S102/S63) referred to as 'the central gate' in C1C2 and CrChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "with a geometry similar to that of a homologous triad (E129/E90, N297/N258, and S102/S63) referred to as 'the central gate' in C1C2 and CrChR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "0caef7e8-815b-43ea-affe-5e7ba88ac860",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C77",
+      "claim": "In C1C2 and CrChR2, the triad blocks the cation path from the extracellular bulk phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CCRs, the triad blocks the cation path from the extracellular bulk phase (Deisseroth and Hegemann, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "3de0f92a-60d4-4675-b67d-f3ec8076ee20",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C78",
+      "claim": "In CCRs, the glutamyl residue in the triad contributes to cation selectivity over anions.",
+      "claim_type": "EXPLICIT",
+      "source": "and the glutamyl residue contributes to cation selectivity over anions (Wietek et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "eac29794-f90a-4ac1-bfd3-21bda96c514a",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C79",
+      "claim": "In GtACR1, the ENS triad does not occlude the tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in GtACR1 the ENS triad does not occlude the tunnel (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "dc5e80a1-c6bd-4db8-880c-95faa42b0fb6",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C80",
+      "claim": "E68 is functionally important in channel gating and may serve as a Schiff base proton acceptor at least at basic pH.",
+      "claim_type": "EXPLICIT",
+      "source": "but E68 is functionally important in channel gating and may serve as a Schiff base proton acceptor at least at basic pH (Sineshchekov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "661af230-6c35-4a78-b47b-4ff8a6ad4cd0",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C81",
+      "claim": "The substitution S43A had little effect on Cl- conductance, whereas the mutation N239A nearly eliminated the photocurrent.",
+      "claim_type": "EXPLICIT",
+      "source": "The three residues in the ENS triad appear to have distinct roles; that is the substitution S43A had little effect on Cl- conductance, whereas the mutation N239A nearly eliminated the photocurrent (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5D with photocurrent measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "95dbe27a-ae41-4ba0-a4bd-85c66ce4bb57",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C82",
+      "claim": "Both S43A and N239A mutations decreased the rate of the slow channel closing, but N239A in addition strongly accelerated the fast decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Both S43A and N239A mutations decreased the rate of the slow channel closing, but N239A in addition strongly accelerated the fast decay (Figure 5\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 5\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "d5a06458-e6c4-4655-b931-fda468899fac",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C83",
+      "claim": "Combining the N239A mutation with the D234N mutation returned the channel closing kinetics almost to that of the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, combining the N239A mutation with the D234N mutation which alone also accelerated the fast decay, returned the channel closing kinetics almost to that of the wild type (Figure 5\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 5\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "2e375607-7479-4a35-9578-72ecfb99bc6c",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C84",
+      "claim": "N239 may assist moving anions between the Schiff base and the cytoplasmic port given its location between C2 and C3.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its location between C2 and C3, N239 may assist moving anions between the Schiff base and the cytoplasmic port (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as a hypothesis based on structural location.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "98ef2f80-b051-429b-812d-dc8fc879a807",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C85",
+      "claim": "The distribution of apolar residues in the channel would facilitate quick movements of anions as has been proposed for the CLC channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the distribution of apolar residues in this portion of the channel would also facilitate quick movements of anions as has been proposed for the CLC channel (Park and MacKinnon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to a study on CLC channels.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "663f7c6a-600c-4587-9529-2b71136e7d69",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C86",
+      "claim": "Despite the large phylogenetic difference between cryptophyte ACRs and chlorophyte CCRs, their helical scaffolds are little changed.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the large phylogenetic difference between cryptophyte ACRs and chlorophyte CCRs, their helical scaffolds are little changed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a summary of structural comparisons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "29e63f44-7603-4b0f-8631-8fba2c5933bb",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C87",
+      "claim": "The GtACR1 structure reveals fundamentally different chemistry built within the common scaffold compared to CCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the GtACR1 structure reveals fundamentally different chemistry built within their common scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a summary of structural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "8ddf94e1-bdd0-4982-a3c8-2d32d50b1886",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C88",
+      "claim": "The preexisting full-length tunnel, the location of the retinylidene photoactive site directly in the ion path, the maintenance of a net positive charge on the site's Schiff base in a largely neutral tunnel, and the novel extracellular cap provide important clues to the structural basis of light-gated anion conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "The preexisting full-length tunnel, the location of the retinylidene photoactive site directly in the ion path, the maintenance of a net positive charge on the site's Schiff base in a largely neutral tunnel, and the novel extracellular cap, provide important clues to the structural basis of light-gated anion conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a summary of key structural features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "2a024fd3-d011-423f-b4af-d41d1884e67c",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C89",
+      "claim": "A structure of GtACR1 (PDB code: 6CSM, residues 1\u2013282) was published by Kim et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "After this manuscript was prepared for submission, an article reporting a structure of the same domain with a short truncation (PDB code: 6CSM, residues 1\u2013282) appeared from Karl Deisseroth and coworkers (Kim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a comparison with another published structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "193257ca-3cd5-4c44-9264-3690b9df9c43",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C90",
+      "claim": "The two GtACR1 structures (6EDQ and 6CSM) show an extremely high similarity with a marginal RMSD value of ~0.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The two GtACR1 structures were both determined at 2.9 \u00c5 resolution using the lipid cubic phase crystallization method. However, they were obtained in different crystallization conditions and exhibit different space groups and crystal packing. Nevertheless, the two show an extremely high similarity with a marginal RMSD value of ~0.4 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a comparison between the two structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "786ad9a6-9e78-454f-9b60-c4992bd3bd70",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C91",
+      "claim": "All seven transmembrane helices are very well superimposed between the two GtACR1 structures (6EDQ and 6CSM).",
+      "claim_type": "EXPLICIT",
+      "source": "All seven transmembrane helices are very well superimposed between the two structures (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "d980770b-fc98-40e1-98d6-6e459d24a6aa",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C92",
+      "claim": "The truncation or different crystal packing did not give rise to any large differences between the two GtACR1 protein structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The truncation or different crystal packing did not give rise to any large differences between the two protein structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "9749473c-76ae-4e1d-9c73-8ea54f7e493b",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C93",
+      "claim": "The two GtACR1 structures presented by two independent groups mutually validate the conformation of GtACR1 in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these two structures presented by two independent groups mutually validate the conformation of GtACR1 in the closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "1c52c7b5-8a0b-4300-884b-b6d4f69ac9c8",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C94",
+      "claim": "Kim et al. described the putative ion conduction pathway in GtACR1 by identifying intramolecular cavities (vestibules) with electropositive surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Kim et al. described the putative ion conduction pathway in GtACR1 by identifying intramolecular cavities (vestibules) with electropositive surfaces, which led to identification of mostly residues present in the tunnel walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a comparison of methods used by the two groups.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "fee018b0-0c1d-418c-98fc-b430f09ce8d7",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C95",
+      "claim": "Deeper understanding of the foundations of anion conductance by ACRs will likely require an atomic structure of the open state conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deeper understanding of the foundations of anion conductance by ACRs will likely require an atomic structure of the open state conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "6541cbd5-65d2-48bd-bfb6-19afd233476a",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C96",
+      "claim": "The strict selectivity for anions in GtACR1 is attributed to the existence of multiple highly selective portions of the tunnel and its two entry/exit ports.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute the strict selectivity for anions, a notable property of ACRs, to the existence of multiple highly selective portions of the tunnel and its two entry/exit ports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "147e2d9e-894b-447c-a8aa-f73bb15c5d1e",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C97",
+      "claim": "Kim et al. concluded that there are multiple selective regions rather than a single selectivity filter in GtACR1, in contrast to CCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this view, Kim et al. also concluded that there are multiple selective regions rather than a single selectivity filter, in contrast to CCRs, in which cation selectivity can be weakened to allow partial anion permeability by mutation of even a single residue (Wietek et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to studies on CCR selectivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "11fd8ff9-292e-462d-9479-2c553334816a",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C98",
+      "claim": "The independent analyses of the structures by both groups provide complimentary information creating a firm basis for elucidating the functional mechanism and for further optimization of GtACR1 as a potent neuron-silencing optogenetic tool.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the independent analyses of the structures by both groups provide complimentary information creating a firm basis for elucidating the functional mechanism and for further optimization of GtACR1 as a potent neuron-silencing optogenetic tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion about the significance of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "505c341c-e805-41f0-bcb3-3abbb8c6850a",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C99",
+      "claim": "GtACR1 protein was expressed using a baculovirus expression system in Spodoptera frugiperda Sf9 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GtACR1 protein was expressed and purified from Spodoptera frugiperda Sf9 cells using a baculovirus expression system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the expression protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "ca0b9b23-4d9d-41ed-9f5c-bc996ca8bd2a",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C100",
+      "claim": "The purified GtACR1 protein showed absorption maximum at 515 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The absorption spectrum of the purified red-colored GtACR1 protein (inset) showing absorption maximum at 515 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1C with the absorption spectrum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "a317842c-b51d-412b-8d45-1e5c855cd81f",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C101",
+      "claim": "The most highly diffracting GtACR1 crystals were obtained in a protein-mesophase mixture containing 15% 2-methyl-2,4-pentanediol (MPD), 0.1 M ADA, pH 6.0, and 0.1 M NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "The most highly diffracting crystals were obtained in a protein-mesophase mixture containing 15% 2-methyl-2,4-pentanediol (MPD), 0.1 M 2-[(2-amino-2-oxoethyl)-(carboxymethyl)amino]acetic acid (ADA), pH 6.0, and 0.1 M NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing crystallization conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "71d64adf-0a7a-4681-a09e-9d9d71358189",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C102",
+      "claim": "The GtACR1 structure was determined using molecular replacement with the structure of Chlamydomonas reinhardtii ChR2 (PDB entry: 6EID) as the search model.",
+      "claim_type": "EXPLICIT",
+      "source": "The GtACR1 structure was determined using the molecular replacement (MR) method with the structure of Chlamydomonas reinhardtii ChR2 (PDB entry: 6EID) (Volkov et al., 2017) as the search model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "7af7ba38-4b04-4fc2-a122-8be2d38be6c3",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "claim_id": "C103",
+      "claim": "The structure factors and coordinates of GtACR1 have been deposited in the Protein Data Bank (PDB entry code: 6EDQ).",
+      "claim_type": "EXPLICIT",
+      "source": "The structure factors and coordinates have been deposited in the Protein Data Bank (PDB entry code: 6EDQ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined the crystal structure of GtACR1 at 2.9 \u00c5 resolution using lipidic cubic phase crystallization and molecular replacement. The structure reveals a homodimer with each monomer containing seven transmembrane helices, an extracellular cap domain, and a cytoplasmic loop, creating a large funnel-shaped cytoplasmic cavity. Despite only ~24% sequence identity with CCRs, GtACR1 shares a common TM helical scaffold (r.m.s.d. 0.9 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crystallographic data (Table 1) shows appropriate statistics for 2.9 \u00c5 resolution (Rwork/Rfree 0.23/0.27, 99.8% completeness). The structural features are directly observable in the electron density maps (Figure 1\u2014figure supplement 1). The homodimer arrangement and structural superposition with CCRs are well-documented with figures and quantitative measurements. The methods section provides sufficient detail for reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "a2070944-0664-487d-88e4-efda1e4fba83",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors identified a continuous intramolecular tunnel spanning from the extracellular to cytoplasmic surface in GtACR1, which is absent in CCRs. This tunnel is lined primarily by small polar and aliphatic residues rather than the charged residues found in CCRs, consistent with anion versus cation conductance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The tunnel is visualized by serial cross-sections (Figure 2A-B) and confirmed computationally using CAVER with 0.9 \u00c5 probe radius (Figure 2\u2014figure supplement 1). The comparison with C1C2 and CrChR2 shows only partial or no tunnels in CCRs using the same method. The residue composition differences are documented structurally (Figure 2C, Figure 2\u2014figure supplement 2) and provide a logical structural basis for functional differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "7efbfbef-b402-4b94-aab3-c59b35b9af24",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors discovered a novel disulfide-immobilized extracellular cap formed by an intramolecular disulfide bridge between C21 and C219. Disrupting this structure by truncation (\u03941-25) or cysteine-to-serine mutations slowed channel closing kinetics, and both cysteines are highly conserved in ACRs but not CCRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The disulfide bridge is directly observed in the crystal structure (Figure 3A-B). The functional importance is demonstrated by mutagenesis experiments showing slowed channel closing in both \u03941-25 and C21S_C219S mutants (Figure 3C). The conservation pattern supports ACR-specific function. However, the mechanism by which this cap facilitates closing is inferred from the closed-state structure and kinetic data, not directly observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "de888395-506b-4ddc-8506-9210021c3374",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors identified three constriction sites (C1, C2, C3) in the ion tunnel with distinct functional roles. C1 (extracellular) is stabilized by an H-bond network (Y81, R94, E223) and controls closing kinetics. C2 (photoactive site: T101, L64, M105) and C3 (intracellular: L108, A61, E60, L245, P58) are critical for conductance, with mutations at these sites greatly reducing or eliminating photocurrents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The three constrictions are structurally defined (Figures 2D, 3D-F) with specific residues identified. The systematic glutamate scanning mutagenesis (Figure 3G) provides strong functional evidence: C1 mutations have minimal effect on current amplitude, while C2 and C3 mutations severely reduce conductance. The kinetic analysis (Figure 3\u2014figure supplement 1-2) shows differential effects on channel closing phases. This suggests C1 widens upon opening while C2/C3 remain narrow, though this interpretation is based on closed-state structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "a45414a4-1cd8-41a8-b108-c7254cb22c81",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors tested whether constriction site mutations compromise anion selectivity by measuring reversal potentials under Cl-, H+, and Na+ gradients. None of the tested mutants showed statistically significant differences from wild-type, indicating maintained anion selectivity despite altered conductance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical analysis is rigorous, using Kruskal-Wallis ANOVA with detailed results in Tables 2-4 (all p > 0.05). Multiple mutants were tested under three different ionic conditions (Figure 3\u2014figure supplements 3-9). The sample sizes are adequate (5-13 cells per condition). This contradicts some prior reports and the authors appropriately note this discrepancy. The conclusion that mutations don't create cation permeability is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "13ff8cb5-ebf1-43dd-9d0b-ca16da3003ed",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors found that GtACR1 contains all-trans retinal with the \u03b2-ionone ring positioned 1.2 \u00c5 more extracellular than in CCRs due to F160 (vs. G224/G185 in C1C2/CrChR2). Despite this conformational difference, the F160G mutant showed nearly identical action spectrum to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The all-trans retinal configuration is supported by prior Raman spectroscopy (C52, cited work). The 1.2 \u00c5 shift is directly measured from the crystal structure (Figure 4). The action spectrum comparison (Figure 4\u2014figure supplement 1) demonstrates that this structural difference doesn't significantly affect spectral properties. However, the functional significance of this difference remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors revealed a novel photoactive site configuration where the protonated Schiff base (PSB) interacts only with D234, which is weakened by H-bonds from Y72 and Y207. This contrasts with the strong quadruple salt-bridge network in CCRs and may explain why the PSB remains protonated throughout the open-channel lifetime in GtACR1. Y207F mutation suppressed photocurrents more than Y72F and caused a 12 nm blue shift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural differences are clearly documented (Figure 5A-B) showing absence of the CCR salt-bridge network. The tyrosine H-bonds to D234 are structurally defined. The analogy to bacteriorhodopsin (C59) and prior spectroscopic data on D234N (C60) support the interpretation of D234 neutrality. The differential effects of Y72F vs Y207F mutations (Figure 5D, Figure 5\u2014figure supplement 1-2) provide functional validation. However, the mechanistic link between this structure and PSB protonation persistence is inferred from the closed state and cited photochemical studies, not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "2c12ea4c-2b20-4ea3-bf42-b992d80121e2",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that the PSB serves as a direct mediator for anion flux in the open state, presenting a partial positive charge for transient Cl- interaction. This is supported by: (1) PSB location centered in the anion path, (2) partial neutralization by weakened D234, (3) late deprotonation in all examined ACRs but no CCRs, (4) S97E mutation causing fast deprotonation and >30-fold current suppression, and (5) Y207F/Y72F double mutation eliminating photocurrent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a mechanistic hypothesis based on structural positioning and indirect functional evidence. The PSB location in the tunnel is structural fact (Figure 5A), and the cited photochemical studies (C71, C73) support correlation between protonation state and conductance. However, the proposal that PSB directly mediates anion flux requires open-state structure and direct demonstration of PSB-anion interaction. The S97E and Y207F/Y72F data (C73, C74) show these residues are critical but don't prove the proposed mechanism. This is appropriately presented as a suggestion/hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "52971b83-9517-4a26-b42f-797a833817ba",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors characterized the ENS triad (E68, N239, S43) which has similar geometry to the CCR 'central gate' but doesn't occlude the tunnel in GtACR1. The three residues have distinct roles: S43A had little effect, while N239A nearly eliminated photocurrent and strongly accelerated fast decay. Remarkably, the N239A/D234N double mutant restored near wild-type closing kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural comparison with CCRs is well-documented (Figure 5C). The differential functional effects are clearly demonstrated: S43A minimal effect vs N239A severe reduction (Figure 5D). The kinetic analysis (Figure 5\u2014figure supplement 3) shows distinct effects on fast vs slow decay phases. The epistatic interaction between N239A and D234N (C83) is particularly interesting, suggesting these residues functionally interact. The proposal that N239 assists anion movement (C84) is speculative but reasonable given its location between C2 and C3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "8bcfbda5-9f35-4755-9204-e9c946364d1d",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors conclude that despite large phylogenetic differences between ACRs and CCRs, their helical scaffolds are conserved, but GtACR1 reveals fundamentally different chemistry within this scaffold. Key structural features include the preexisting full-length tunnel, PSB location in the ion path, partial positive charge on the PSB, and the novel extracellular cap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a well-supported summary conclusion integrating multiple structural findings. The scaffold conservation is quantified (r.m.s.d. 0.9 \u00c5, C26-27). The chemical differences are documented throughout: tunnel composition (C33-34), PSB environment (C56-58), extracellular cap (C35-38). These features collectively provide a structural framework for understanding ACR function, though the mechanistic details of how they enable anion conductance require further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "1c5aa166-8c86-44eb-93a2-2899c9bdf079",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors compared their structure (6EDQ) with an independently published GtACR1 structure (6CSM) from Kim et al., 2018. Despite different crystallization conditions and space groups, the two structures show extremely high similarity (RMSD ~0.4 \u00c5) with all seven TM helices well superimposed, mutually validating the closed-state conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison is straightforward and well-documented (Figure 5\u2014figure supplement 4). The RMSD of 0.4 \u00c5 is remarkably low, indicating the structures are essentially identical within experimental error. This independent validation strengthens confidence in both structures. The authors appropriately note that different crystallization conditions and crystal packing didn't affect the protein structure, supporting the biological relevance of the observed conformation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    },
+    {
+      "id": "22308116-9fbe-4cfc-a4e3-1edba56921dc",
+      "content_id": "e2625f54-11a5-4918-834c-7a48c835d737",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors compared their analysis approach with Kim et al., noting different methods for identifying the ion pathway (serial cross-sections vs. electropositive vestibules) but reaching similar conclusions about multiple selective regions. They conclude that deeper understanding requires an open-state structure, and both groups' analyses provide complementary information for mechanism elucidation and optogenetic optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a fair and balanced comparison of the two independent studies. The authors acknowledge methodological differences while noting convergent conclusions about multiple selectivity regions (C96-97). The statement that open-state structure is needed (C95) is appropriately cautious, recognizing limitations of closed-state interpretation. The conclusion about complementary information (C98) is reasonable given the independent validation and different analytical approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:58:08.863227Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "647aefcc-1ef9-4c0b-a4e3-7f7b3346563b",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "a2f61464-0d8d-41aa-8761-0c43bd31d0c3",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "b882f632-25a8-4af2-8bc6-283230ba84f4",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "83c48d63-8689-407c-9fb3-d54590e7815c",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "427bbac0-fe02-44d2-8598-755c75d4f2fe",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "4c68a1e1-be7c-472c-bbae-14ec8ff50975",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "d2b521c4-0ec9-4ebb-982b-c7a7e1442336",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "707e3fdc-fef0-46dd-9de5-2b9e20c3db85",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "c4ca8c26-757c-4ab3-be68-d36d86bbc54b",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "6d8347cc-afd8-40cc-9bd9-26e8a929219f",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "505c341c-e805-41f0-bcb3-3abbb8c6850a",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "ca0b9b23-4d9d-41ed-9f5c-bc996ca8bd2a",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "a317842c-b51d-412b-8d45-1e5c855cd81f",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "71d64adf-0a7a-4681-a09e-9d9d71358189",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "7af7ba38-4b04-4fc2-a122-8be2d38be6c3",
+      "result_id": "b6cc29bc-442b-4f55-9123-a14654a8a1fb"
+    },
+    {
+      "claim_id": "e69a133a-f5c3-40a7-9303-1633d500ff05",
+      "result_id": "a2070944-0664-487d-88e4-efda1e4fba83"
+    },
+    {
+      "claim_id": "b2bb6be2-573b-4632-baf7-6926db1ca028",
+      "result_id": "a2070944-0664-487d-88e4-efda1e4fba83"
+    },
+    {
+      "claim_id": "9b1d680d-2708-48a2-a9e5-fadcdece83ff",
+      "result_id": "a2070944-0664-487d-88e4-efda1e4fba83"
+    },
+    {
+      "claim_id": "372975d3-e184-4961-b2fc-61102b984ebd",
+      "result_id": "a2070944-0664-487d-88e4-efda1e4fba83"
+    },
+    {
+      "claim_id": "706c792a-d100-4fac-b458-c192441cf2b9",
+      "result_id": "a2070944-0664-487d-88e4-efda1e4fba83"
+    },
+    {
+      "claim_id": "8825a9e6-4a56-43c3-921b-b408eddcb1e6",
+      "result_id": "a2070944-0664-487d-88e4-efda1e4fba83"
+    },
+    {
+      "claim_id": "9c5eab31-575f-470a-b2a3-cfac4ddfa049",
+      "result_id": "a2070944-0664-487d-88e4-efda1e4fba83"
+    },
+    {
+      "claim_id": "51c05981-1c10-4a75-b76e-d416e0905afe",
+      "result_id": "a2070944-0664-487d-88e4-efda1e4fba83"
+    },
+    {
+      "claim_id": "4140d0fc-92e5-462e-8098-9e42e9c04f85",
+      "result_id": "7efbfbef-b402-4b94-aab3-c59b35b9af24"
+    },
+    {
+      "claim_id": "441a29d6-8b28-4f14-89dd-91fd621033e1",
+      "result_id": "7efbfbef-b402-4b94-aab3-c59b35b9af24"
+    },
+    {
+      "claim_id": "6af4312e-88cf-4b97-9f5b-48d14ef3914c",
+      "result_id": "7efbfbef-b402-4b94-aab3-c59b35b9af24"
+    },
+    {
+      "claim_id": "913cbbb9-96e2-4a5e-a232-606071716e4a",
+      "result_id": "7efbfbef-b402-4b94-aab3-c59b35b9af24"
+    },
+    {
+      "claim_id": "28847516-0cd5-4449-a805-ebe1403551b7",
+      "result_id": "7efbfbef-b402-4b94-aab3-c59b35b9af24"
+    },
+    {
+      "claim_id": "d49d9b38-1834-4979-b8a1-74f5957f7973",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "73f31f5d-4fc5-4a21-8593-8f0e927e8a10",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "eb1df2b9-417e-4056-89fc-d3e155d380c7",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "bdea193f-30fb-4cbf-9db4-55994a52f4d4",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "fb8b1a8a-6e1e-4d7b-a537-92140a028115",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "b0bb956d-6042-4c77-ae3c-7bdf9e2a4808",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "a9a3cc55-80f0-4b26-852c-28da5abab0b3",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "202ce5c3-6587-4a7d-b936-5d249fb44749",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "7d585a59-550d-4fe6-b53c-2dd83811ed59",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "e5e1c495-be90-4252-b645-96848de968e7",
+      "result_id": "de888395-506b-4ddc-8506-9210021c3374"
+    },
+    {
+      "claim_id": "1fda1585-b16b-46ec-a144-fa042fcd6f43",
+      "result_id": "a45414a4-1cd8-41a8-b108-c7254cb22c81"
+    },
+    {
+      "claim_id": "d67d4b89-6b17-4de0-9c93-d8795934f517",
+      "result_id": "a45414a4-1cd8-41a8-b108-c7254cb22c81"
+    },
+    {
+      "claim_id": "ed73e6ed-3656-47fe-9a80-82aaf2827e38",
+      "result_id": "a45414a4-1cd8-41a8-b108-c7254cb22c81"
+    },
+    {
+      "claim_id": "8ad35e4b-37b7-45f8-9648-33dbfa6cfa3a",
+      "result_id": "13ff8cb5-ebf1-43dd-9d0b-ca16da3003ed"
+    },
+    {
+      "claim_id": "a32969df-11c4-41e0-8f8e-85001437ae3c",
+      "result_id": "13ff8cb5-ebf1-43dd-9d0b-ca16da3003ed"
+    },
+    {
+      "claim_id": "e454ebe9-72b9-4cd2-be1c-a1ce72d02354",
+      "result_id": "13ff8cb5-ebf1-43dd-9d0b-ca16da3003ed"
+    },
+    {
+      "claim_id": "7addb7d6-fe73-4659-ba7f-d31f567caadf",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "39e53bc3-59ad-4819-a254-cc80a57c17d1",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "dc3d3f24-0565-4220-8d4d-574834aef529",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "12ee9a5b-0eda-46b8-92fc-847ac79d422b",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "75b7b981-a397-43f5-94c3-034c6de3b9ce",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "ca17ddaa-b7d1-4048-86fd-e0a60f1f62c3",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "a166a624-c3ba-4bae-8950-b8d39efca549",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "88cab9bf-0ad1-4a33-a715-2d115eab8bd6",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "1de8b7da-0d1f-4345-8ff5-36e46a457633",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "5ec328a1-3d2c-4973-a8d7-b6011b54c0e5",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "5e3feec1-ab6f-4024-a87e-9791e7875d79",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "ab0a7492-13cc-416e-b92c-4935c4b3ec41",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "ff538bfa-0231-4d79-81be-018c2e196f90",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "f8e58da3-6316-45e2-bb62-20240ff165cb",
+      "result_id": "2d2a4537-6b73-4fda-bbdc-523d7b833a47"
+    },
+    {
+      "claim_id": "5b154707-8371-48a9-9675-e2b0541d8ff3",
+      "result_id": "2c12ea4c-2b20-4ea3-bf42-b992d80121e2"
+    },
+    {
+      "claim_id": "7d795775-d338-4e7f-9709-c055c5a31ea8",
+      "result_id": "2c12ea4c-2b20-4ea3-bf42-b992d80121e2"
+    },
+    {
+      "claim_id": "ad50f14a-8f85-4517-a659-70f6a9bad649",
+      "result_id": "2c12ea4c-2b20-4ea3-bf42-b992d80121e2"
+    },
+    {
+      "claim_id": "10eabe32-25fc-4cf5-ab59-4a7b0f495263",
+      "result_id": "2c12ea4c-2b20-4ea3-bf42-b992d80121e2"
+    },
+    {
+      "claim_id": "4fd15f3c-a92d-4d45-b9f8-12ae7d6ca5d6",
+      "result_id": "2c12ea4c-2b20-4ea3-bf42-b992d80121e2"
+    },
+    {
+      "claim_id": "fffc4822-6456-4789-b331-d049ae766cee",
+      "result_id": "2c12ea4c-2b20-4ea3-bf42-b992d80121e2"
+    },
+    {
+      "claim_id": "3b670090-ffd4-4ce6-82a2-19a1b8cf08a8",
+      "result_id": "2c12ea4c-2b20-4ea3-bf42-b992d80121e2"
+    },
+    {
+      "claim_id": "8ab43d46-48e3-402d-a629-a11fdcc69ae5",
+      "result_id": "2c12ea4c-2b20-4ea3-bf42-b992d80121e2"
+    },
+    {
+      "claim_id": "55140ea0-890c-4e7f-97b8-ef762840a632",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "53c9a3e8-3504-4566-8f6c-5897e1c86580",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "0caef7e8-815b-43ea-affe-5e7ba88ac860",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "3de0f92a-60d4-4675-b67d-f3ec8076ee20",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "eac29794-f90a-4ac1-bfd3-21bda96c514a",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "dc5e80a1-c6bd-4db8-880c-95faa42b0fb6",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "661af230-6c35-4a78-b47b-4ff8a6ad4cd0",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "95dbe27a-ae41-4ba0-a4bd-85c66ce4bb57",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "d5a06458-e6c4-4655-b931-fda468899fac",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "2e375607-7479-4a35-9578-72ecfb99bc6c",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "98ef2f80-b051-429b-812d-dc8fc879a807",
+      "result_id": "52971b83-9517-4a26-b42f-797a833817ba"
+    },
+    {
+      "claim_id": "663f7c6a-600c-4587-9529-2b71136e7d69",
+      "result_id": "8bcfbda5-9f35-4755-9204-e9c946364d1d"
+    },
+    {
+      "claim_id": "29e63f44-7603-4b0f-8631-8fba2c5933bb",
+      "result_id": "8bcfbda5-9f35-4755-9204-e9c946364d1d"
+    },
+    {
+      "claim_id": "8ddf94e1-bdd0-4982-a3c8-2d32d50b1886",
+      "result_id": "8bcfbda5-9f35-4755-9204-e9c946364d1d"
+    },
+    {
+      "claim_id": "2a024fd3-d011-423f-b4af-d41d1884e67c",
+      "result_id": "1c5aa166-8c86-44eb-93a2-2899c9bdf079"
+    },
+    {
+      "claim_id": "193257ca-3cd5-4c44-9264-3690b9df9c43",
+      "result_id": "1c5aa166-8c86-44eb-93a2-2899c9bdf079"
+    },
+    {
+      "claim_id": "786ad9a6-9e78-454f-9b60-c4992bd3bd70",
+      "result_id": "1c5aa166-8c86-44eb-93a2-2899c9bdf079"
+    },
+    {
+      "claim_id": "d980770b-fc98-40e1-98d6-6e459d24a6aa",
+      "result_id": "1c5aa166-8c86-44eb-93a2-2899c9bdf079"
+    },
+    {
+      "claim_id": "9749473c-76ae-4e1d-9c73-8ea54f7e493b",
+      "result_id": "1c5aa166-8c86-44eb-93a2-2899c9bdf079"
+    },
+    {
+      "claim_id": "1c52c7b5-8a0b-4300-884b-b6d4f69ac9c8",
+      "result_id": "22308116-9fbe-4cfc-a4e3-1edba56921dc"
+    },
+    {
+      "claim_id": "fee018b0-0c1d-418c-98fc-b430f09ce8d7",
+      "result_id": "22308116-9fbe-4cfc-a4e3-1edba56921dc"
+    },
+    {
+      "claim_id": "6541cbd5-65d2-48bd-bfb6-19afd233476a",
+      "result_id": "22308116-9fbe-4cfc-a4e3-1edba56921dc"
+    },
+    {
+      "claim_id": "147e2d9e-894b-447c-a8aa-f73bb15c5d1e",
+      "result_id": "22308116-9fbe-4cfc-a4e3-1edba56921dc"
+    },
+    {
+      "claim_id": "11fd8ff9-292e-462d-9479-2c553334816a",
+      "result_id": "22308116-9fbe-4cfc-a4e3-1edba56921dc"
+    }
+  ],
+  "comparisons": []
+}

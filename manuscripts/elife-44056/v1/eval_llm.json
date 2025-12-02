@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C83",
+      "C86",
+      "C87"
+    ],
+    "result": "The study employed a novel voxel-wise whole-brain structural equation modeling framework to investigate neuroanatomical predictors of alcohol use trajectories in 1814 healthy adolescents from the IMAGEN sample, with AUDIT scores collected at three time points over five years. The methodological approach involved a two-part latent growth curve model applied separately to each brain voxel, controlling for age, sex, total brain volume, and scanner site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with appropriate sample sizes (C3, C62-C64), clear preprocessing steps (C74-C76), and justified analytical choices (C78, C82, C83). The voxel-wise SEM approach is thoroughly described (C86, C87) with appropriate quality control procedures (C72, C73). Ethical approvals and informed consent are properly documented (C65, C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The two-part latent growth curve model demonstrated that a linear growth model fit the data better than intercept-only or quadratic models for both discrete (use vs. non-use) and continuous (alcohol use score) parts. The model showed significant intercept variances for both parts, significant covariance between intercepts (0.124, p<0.001), and significant slope variance for the continuous part despite non-significant mean slope, indicating substantial interindividual differences in alcohol use trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical model comparisons are properly conducted with appropriate chi-square difference tests (C20-C23) and model fit indices (C24). The interpretation of intercept and slope parameters is consistent with the statistical findings (C25-C33), though the CFI value of 0.785 is below the conventional 0.90 threshold mentioned in C84, which the authors acknowledge as 'acceptable' rather than 'good' fit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Higher grey-matter volumes in bilateral caudate nucleus and left cerebellum (Lobule VIII/IX) at age 14 years predicted stronger increases in alcohol use scores over 5 years (p<0.001, cluster >100 voxels). This finding was robust to log-transformation of the data to address skewness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the primary finding is clearly stated (C34, C35) and replicated with log-transformed data (C36), critical concerns remain unaddressed. The study uses an uncorrected threshold of p<0.001 with minimal cluster extent (k>100), which is insufficient for whole-brain voxel-wise analysis involving potentially millions of tests. No family-wise error correction or false discovery rate control is mentioned, raising serious concerns about Type I error inflation. The CFI of 0.785 indicates suboptimal model fit, and the biological interpretation of 'higher volume predicting increased alcohol use' contradicts typical neurodevelopmental expectations without adequate mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "No significant associations were found between brain structure (grey or white matter) and the discrete slope (change in use vs. non-use), or between brain structure and the intercept of the continuous part (baseline alcohol use score).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These negative findings are clearly reported (C37-C39) and are important for understanding the specificity of the main result. The negative findings suggest that brain structure at age 14 predicts change in drinking intensity but not initiation or baseline levels, though the lack of multiple comparison correction limits confidence in both positive and negative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C55",
+      "C56"
+    ],
+    "result": "Grey matter volume in caudate nucleus and cerebellum predicts changes in alcohol use over time but not average alcohol use at baseline, suggesting that brain structural characteristics are relevant for development of alcohol use rather than initiation or baseline drinking levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation logically follows from the pattern of significant and null findings (C49, C50, C52). The distinction between predicting change versus baseline levels is appropriately drawn from the data (C55, C56), though the mechanistic basis for this specificity remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study demonstrates the first application of voxel-wise structural equation modeling to neuroimaging data, extending beyond traditional ROI-based SEM approaches. This method can be applied to various SEM models including measurement models and is not restricted to growth curve analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological innovation is clearly demonstrated (C59) and appropriately contextualized relative to prior ROI-based approaches (C58). The claims about generalizability to other SEM contexts (C60, C61) are reasonable extrapolations from the demonstrated approach, though C61 represents speculation about future applications rather than demonstrated capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Prior literature indicates that caudate and cerebellum undergo inverted U-shaped developmental changes peaking during adolescence, though the specific patterns vary across studies and by sex, with caudate showing relatively smaller changes compared to other subcortical structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize cited literature (C40-C45) and appropriately acknowledge inconsistencies across studies (C44, C45). The authors correctly note that existing developmental literature does not definitively resolve whether their findings reflect delayed pruning or excessive growth.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "Prior studies have reported associations between caudate/striatal structure or function and alcohol use trajectories in adolescents, with some studies showing that brain measures add only modestly to prediction of drinking behavior. Meta-analytic evidence also links increased bilateral striatum volume to psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The citations to prior work (C46-C48, C53, C54, C57) appropriately contextualize the current findings within existing literature. The authors accurately represent the mixed evidence regarding brain-based prediction of alcohol use initiation versus progression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Preventive measures at age 14 should focus on the development of alcohol use rather than drinking habits at age 14, as brain characteristics in caudate and cerebellum prepare the ground for future alcohol consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "This clinical recommendation (C51) is premature given the methodological limitations, particularly the lack of multiple comparison correction and suboptimal model fit. The predictive value of the identified brain regions has not been validated in independent samples, and no sensitivity/specificity analyses or clinical utility metrics are provided. The causal language ('prepare the ground') is not justified by the correlational design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Adolescence is a critical period for alcohol use initiation and development of alcohol use disorders, coinciding with substantial brain development. Cortico-striatal regions and dopaminergic circuitry are implicated in addiction, and early brain differences may confer vulnerability to addictive behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1, C8-C14) are well-established in the literature and appropriately cited. They provide appropriate context for the study rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C85"
+    ],
+    "result": "The two-part latent growth curve model treats zeros as meaningful values rather than missing data, allowing simultaneous modeling of behavior presence/absence and intensity. Model fit criteria include CFI >0.90 for good fit and RMSEA/SRMR <0.08 for acceptable fit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological descriptions (C79-C81, C84-C85) accurately characterize the two-part model approach and standard fit indices. The rationale for the analytical approach is sound given the zero-inflated distribution of AUDIT scores.",
+    "result_type": "MINOR"
+  }
+]

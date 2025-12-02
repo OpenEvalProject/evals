@@ -1,0 +1,2007 @@
+{
+  "submission": {
+    "id": "d3a4135d-daa4-4d39-b433-bd92e95bfab4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:40:27.051655Z",
+    "updated_at": "2025-12-02T08:40:27.051655Z"
+  },
+  "content": [
+    {
+      "id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "submission_id": "d3a4135d-daa4-4d39-b433-bd92e95bfab4",
+      "content_type": "manuscript",
+      "content_text": "# Individuals physically interacting in a group rapidly coordinate their movement by estimating the collective goal\n\n## Authors\n\n- Atsushi Takagi<sup>1</sup> ([ORCID: 0000-0003-4733-7471](https://orcid.org/0000-0003-4733-7471)) \u2020\n- Masaya Hirashima<sup>3</sup>\n- Daichi Nozaki<sup>4</sup> ([ORCID: 0000-0002-1338-8337](https://orcid.org/0000-0002-1338-8337))\n- Etienne Burdet<sup>2</sup> ([ORCID: 0000-0002-2123-0185](https://orcid.org/0000-0002-2123-0185)) \u2020\n\n### Affiliations\n\n1. Institute of Innovative Research Tokyo Institute of Technology Yokohama Japan\n2. Imperial College London London United Kingdom\n3. Center for Information and Neural Networks National Institute of Information and Communications Technology Osaka Japan\n4. University of Tokyo Tokyo Japan\n5. Nanyang Technological University Singapore Singapore\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow can a human collective coordinate, for example to move a banquet table, when each person is influenced by the inertia of others who may be inferior at the task? We hypothesized that large groups cannot coordinate through touch alone, accruing to a zero-sum scenario where individuals inferior at the task hinder superior ones. We tested this hypothesis by examining how dyads, triads and tetrads, whose right hands were physically coupled together, followed a common moving target. Surprisingly, superior individuals followed the target accurately even when coupled to an inferior group, and the interaction benefits increased with the group size. A computational model shows that these benefits arose as each individual uses their respective interaction force to infer the collective\u2019s target and enhance their movement planning, which permitted coordination in seconds independent of the collective\u2019s size. By estimating the collective\u2019s movement goal, its individuals make physical interaction beneficial, swift and scalable.\n\n## Introduction\n\nA recent social experiment involving the widely acclaimed Pokemon video game ignited enormous public interest, where tens of thousands of players simultaneously controlled the protagonist of the game together and successfully finished the game (Zhang and Liu, 2015). Such collective behavior in humans has been researched when a collective makes a decision verbally\u00a0(Webb, 1991; Hastie and Kameda, 2005;\u00a0Bahrami et al., 2010). However, the key to many great human accomplishments, such as carrying stone blocks to construct the Great Pyramids, was enabled by many individuals who needed to coordinate the forces they applied on a stone in order to guide it on top of wooden rollers and move it. Such physical coordination has been investigated in pairs or dyads in the past decade (Basdogan et al., 2000; Sebanz et al., 2006; Reed and Peshkin, 2008; van der Wel et al., 2011; Malysz and Sirouspour, 2013).\n\nPrevious studies that investigated dyads found evidence of improved task performance (Basdogan et al., 2000; Reed and Peshkin, 2008; Malysz and Sirouspour, 2013), but the underlying mechanism of physical coordination was unknown. In a recent study, we tested dyads interacting in a continuous tracking task, and found that the tracking performance of both partners improved, even when the partner was worse at the task (Ganesh et al., 2014). This mutual improvement during continuous interaction is explained by a mechanism where individuals estimate the partner\u2019s target from the interaction force to improve their prediction of the target\u2019s motion (Takagi et al., 2017). In a second study, we showed that a stronger connection yields a better estimate of the partner\u2019s target, enabling partners to improve more from the interaction (Takagi et al., 2018). We speak of the partner\u2019s target for a tracking task, but this can be generalized to estimating a partner\u2019s movement goal, which we define as the partner\u2019s desired state, for\u00a0example a position and velocity in time.\n\nAlthough the mechanism of estimating the partner\u2019s movement goal explains coordination in dyads, it is not known whether this interaction mechanism holds for an interactive tracking task with more than one partner. The connection dynamics to multiple partners may help inferior partners in a group but will likely hinder superior partners\u2019 task performance. The dynamics may interfere with the coordination mechanism, which in dyads enabled even the superior partner to improve during the interactive tracking task (Ganesh et al., 2014). It is therefore unclear whether the interaction remains mutually beneficial for large groups.\n\nTo elucidate this question and investigate how collectives negotiate common actions, we examined a task inspired by dancing in which two, three and four partners have to control their motion while feeling forces from the soft interaction with others. We hypothesized that the stochastic summation of every partner\u2019s actions, yielding the interaction force, would produce a noisier and poorer haptic estimate of the target as the group size increases. We also expected the connection dynamics and the collective\u2019s inertia to have a detrimental effect on the superior partners\u2019 performance. In such a scenario, the dynamics of being physically connected to a collective of partners may characterize the interaction behavior, similar to what was observed in joint reaching movements (Takagi et al., 2016). Could the coordination mechanism proposed in earlier studies (Takagi et al., 2017; Takagi et al., 2018) fully explain the tracking performance observed in collective interaction, or would the dynamics of the collective\u2019s inertia outweigh the benefits of the coordination mechanism in larger groups?\n\n## Results\n\nWe tested interaction in dyads, triads and tetrads who tracked a common target together using their right hands, which were all joined together with virtual elastic bands with a stiffness of 100 N/m (Figure 1A and B). 12 fours carried out the experiment in 12 triads and 12 tetrads, and 12 dyads were tested separately (see Figure 1D and the Materials\u00a0and\u00a0methods for details on the protocol). Individuals in the collective had to control a robotic handle using their right hand, which moved a cursor on their own respective monitor, to track a moving target (Figure 1A). The same target was used for all individuals of the collective. Each individual saw, on their own monitor, the positions of the target and their hand, but not the partners\u2019 cursor positions. Individual performance at the task was calculated for each 15 s trial by measuring the average distance between their cursor and the target, defined as the tracking error. Two types of trials were tested: in solo trials, each individual tracked the target alone; in connected trials, the individuals\u2019 right hands were coupled together by elastic bands.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41328/elife-41328-fig1-v2.jpg)\n\n**Figure 1.:** (A) Subjects were recruited in twos or fours (schematic shows a tetrad). Each participant held onto a robotic handle with their dominant right hand to control a cursor on a monitor and track the same randomly moving target. Only one\u2019s own cursor and the target were displayed on the monitor. (B) Physical coordination for dyads, triads and tetrads was enabled by forces exerted through the robotic handle that elastically connected all individuals\u2019 right hands together. The interaction was removed in some trials to measure each individual\u2019s solo tracking error as a function of the deviation in the target spots\u2019 velocities. (C) The target was composed of five spots were spread thinly or widely to control each individual\u2019s tracking performance. The deviation in the spots\u2019 velocities, which was fixed during a trial, was randomized at every trial so participants could not know their skill relative to their partners beforehand. (D) Experimental protocol for twos and fours, where each circle represents an individual denoted by color. A dash indicates the individual was connected to partners. Both twos and fours experienced 10 solo training trials to become acquainted to the task. Twos then experienced 30 pairs of trials with and without the elastic connection, that\u00a0is connected-solo-connected-solo etc. for 30 repetitions, and then 10 connected trials. For fours, three individuals of a tetrad were selected, forming all four different combinations of triads, and interacted in triads for one block per combination. In the first and last of these triad blocks, triads experienced 10 pairs of connected-solo trials, while the second and third triad blocks was composed of 10 connected trials. This was done to intersperse the solo trials to have a robust measure of the relationship between visual noise level and tracking error. In the final block, all individuals interacted as a tetrad for 30 trials.\n\nTo test how interaction with inferior or superior partners influenced tracking performance, we manipulated the tracking ability of subjects by applying visual noise to the target (K\u00f6rding and Wolpert, 2004) as described in the Materials\u00a0and\u00a0methods (see Figure 1C and Video 1 and 2 for visual noise during tracking task). The tracking error of subjects was linearly and tightly related to the standard deviation of this visual noise, such that greater visual noise resulted in larger tracking errors (see Figure 2B for sample subjects). A different amount of visual noise, which was randomly selected but fixed during each connected trial, was applied to each member of a collective for every trial. This enabled us to test the influence of interaction with participants of different selected tracking ability. As the visual noise was linearly related to the tracking error, we could calculate the change in each subject\u2019s tracking error during the interaction relative to the visual noise that we applied. We dispersed the solo trials throughout the entire experiment to verify that the relationship between visual noise level and tracking error did not drift with time, for\u00a0example due to fatigue, which is the rationale for having a complicated protocol for twos and fours (see Figure 1D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41328/elife-41328-fig2-v2.jpg)\n\n**Figure 2.:** (A) Raw data showing the trajectories in the x-axis from a sample tetrad, where the black trace is the target and each dashed colored trace (red, green, blue and magenta) is one subject. The top panel shows the x-axis position of all subjects in a tetrad in a solo trial (all disconnected), whereas the bottom two panels are the x-axis position and force from a sample connected trial where all four subjects were coupled to each other via elastic bands. Subjects\u2019 positions in both the sample solo and connected trials were all delayed with respect to the target due to visual feedback delays in anticipating the target\u2019s motion. The force felt by each partner is approximately zero mean, and depended on each individual\u2019s relative position to their partners in the group. (B) Linear fit of the standard deviation of spots\u2019 velocities versus the tracking error from a sample tetrad. Each level of noise was tested for three trials without the elastic band to assess individual tracking error. This data was linearly regressed to estimate the expected tracking error of each individual as a function of the visual noise on the target imposed by the experimenter. This enabled us to test collectives composed of individuals with different tracking skill.\n\nFigure 2A shows raw data of the x-axis positions and forces experienced by a sample tetrad in solo and connected trials. The positions of the subjects lagged the target\u2019s motion due to visual feedback delays in anticipating the target\u2019s movement. For each subject, we assessed the performance improvement\u00a0$1-e_{c}/e$, where $e_{c}$ was an individual\u2019s tracking error in a connected trial and $e$ was the same subject\u2019s solo error, which was estimated from the visual noise applied during the connected trial. This ratio quantifies an individual\u2019s tracking ability during the interaction relative to tracking alone. We analyzed this performance improvement as a function of the partners\u2019 relative error, $1-e_{p}/e$, where $e_{p}$ was the mean of the partners\u2019 solo errors, which was also estimated from the visual noise applied to the partners in the connected trial. This ratio is a measure of how the partners\u2019 average tracking ability compared with the individual\u2019s. This enabled us to study how each individual\u2019s tracking ability changed when they interacted with \u2018superior\u2019 or \u2018inferior\u2019 partners.\n\nThe results of the collective physical interaction are plotted in Figure 3 (the data in Figure 3\u2014source data 1 was used for all subsequent analysis). First, we assessed how the collective as a whole improved from the physical interaction, which is shown in Figure 3A, by taking the mean performance improvement from all individuals in the collective from every connected trial, and averaging over all trials for each collective. Two-sample t-tests revealed that the collective\u2019s mean improvement increased with its size (between dyads and triads: t(22)=2.53, p<0.02; between dyads and tetrads: t(22)=6.07, p<10\u22125), revealing the benefits of interacting in larger collectives. To observe how each individual\u2019s improvement changed as a function of the partners\u2019 performance, we plotted each individual\u2019s performance improvement as a function of the partners\u2019 mean relative error for dyads (red trace), triads (green) and tetrads (blue) in Figure 3B. The data was fit using a linear mixed-effects model, where each recruited group of twos and fours were treated as a random factor to control for individual differences in their inherent ability to improve from the interaction (see Equation 2 in the Materials\u00a0and\u00a0methods for details). A mixed-effects analysis showed that the collective\u2019s size modulated the individual\u2019s performance improvement (\u03c72(2)=412, p<10\u221215, see Materials\u00a0and\u00a0methods for details).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41328/elife-41328-fig3-v2.jpg)\n\n**Figure 3.:** (A) The collective improvement for dyads, triads and tetrads increased with the collective\u2019s size, reflecting the advantage of larger collectives. (B) Performance improvement as a function of the partners\u2019 relative error for dyads (red trace), triads (in green) and tetrads (in blue). The solid traces come from a linear mixed-effects fit of the raw data (points come from all connected trials from all groups). Interacting with a superior group was found to improve one\u2019s performance, which was graded by the collective\u2019s size such that a larger collective resulted in more improvement. We expected a similar effect when interacting with an inferior collective, but interacting with more inferior partners did not degrade a superior member\u2019s performance. (C) The performance improvement of a sample tetrad is plot in increments of 0.5 s from the start to the end of the trial as a function of the partners\u2019 relative error. The improvement rapidly converged to the improvement curve observed in Figure 3B. (D) The deviation of the improvement curve in Figure 3B from the final improvement curve is plotted as a function of the trial time for dyads, triads and tetrads. The solid line is the mean of all groups, and the area represents one standard error. The rate at which they deviated from the collective mean was independent of group size.\n\nWe split the data into the superior ($1\u2212e_{p}/e<0$) and inferior ($1\u2212e_{p}/e>0$) individuals of the collective for dyads, triads and tetrads to examine how they were affected by physically interacting with superior or inferior partners. One-sample t-tests were carried out on the inferior and superior individuals\u2019 improvements using a Bonferroni correction of significance 0.05/6. Inferior individuals improved when coupled to a superior collective, regardless of its size (dyads: t(11)=10.8, p<10\u22126; triads: t(11)=24.0, p<10\u221210, t(11)=23.0; tetrads: p<10\u22129). Surprisingly, superior individuals in dyads, triads and tetrads maintained their performance with respect to their solo error (dyads: t(11)=-2.22, p>0.05; triads: t(11)=-1.53, p>0.15; tetrads: t(11)=3.01, p>0.012). A superior individual could sustain their tracking performance even if they were physically coupled to an inferior collective regardless of how many inferior individuals were part of the collective.\n\nAn individual\u2019s improvement was dependent on the performance of the others in the collective, but did the performance improvement change within the 15\u00a0s trial? We examined the improvement plot of Figure 3B for each collective as a function of time by calculating the improvement from the start of the trial to a specific trial time in increments of 0.5\u00a0s. Figure 3C\u00a0shows the evolution of the improvement of a sample tetrad, where each trace is a second-order polynomial fitted to the data. The improvement was observed to significantly change over time. To study the evolution of the interaction\u2019s beneficial effect on performance, we analyzed the improvement curve\u2019s deviation from the final improvement, defined as the improvement at the end of the 15\u00a0s trial, that\u00a0is the improvement during the entire trial, for dyads, triads and tetrads. Figure 3D shows the Euclidean distance between the second-order polynomial fits on the data at different times and the final improvement as a function of time for dyads, triads and tetrads. The improvement increased rapidly during the 15 trials for all collectives. To compare the rate of convergence between dyads, triads and tetrads, we fitted an exponential function to each collective of the form\u00a0$a_{1}+a_{2}exp(-\\lambdat)$, where $a_{1},a_{2}>0$ are parameters, $\\lambda>0$\u00a0is the decay constant and $t>0$\u00a0is the trial time. Mann-Whitney U-tests revealed that the decay constant was similar between dyads and triads (U=122, n1=12, n2=12, p>0.11 two tailed), and between dyads and tetrads (U=136, n1=12, n2=12, p>0.44 two tailed). Thus, the time constant for the collective\u2019s improvement did not depend on its size. Remarkably, it took only 7.4\u00b10.9\u00a0s (mean \u00b1 standard error) for the collective to reach 90% of the final improvement.\n\nThe empirical data shows that the collective physical interaction was beneficial for most individuals in the collective. How could individuals cause the performance improvement during collective interaction? To determine the behavioral strategy that individuals employed during collective interaction, we compared the empirical data from collective interaction with a simulation of it using the control models represented in Figure 4A and C to predict the outcome of the collective interaction experiment. In the simulation, we assumed that each individual sent motor commands to their arm to minimize the distance between their hand and the moving target. Simulated individuals relied on proprioception and vision for feedback of their hand and target positions, respectively. The simulated individuals had two free parameters that controlled the jerkiness of their movement and the strength of the controller, that\u00a0is the control gain to bring the hand to the target. We carried out a sensitivity analysis to find values for these parameters that explained the empirical data best for each interaction model proposed in this study (see Supplementary material for details). Two, three and four such individuals were simulated in parallel with and without the elastic coupling to measure their performance at the tracking task during interaction and solo practice.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41328/elife-41328-fig4-v2.jpg)\n\n**Figure 4.:** (A) The no exchange model was simulated by assuming that individuals cannot interpret the interaction forces and track the target as if they were alone under the influence of the mechanics of the elastic band. (B) This model predicted a larger inferior collective to be a greater hindrance to a superior individual of the collective, unlike the data where superior individuals maintained their performance. (C) In the neuromechanical goal sharing model, each individual built a representation of the partners\u2019 average behavior to estimate the collective target. (D) The predictions from this model best explained the improvement of both inferior and superior individuals in the collective, and its modulation with the collective\u2019s size.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41328/elife-41328-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** This experiment estimated how the interaction mechanics of coupling in dyads, triads and tetrads affected the quality of the estimated target from haptics. The compliance in the connection for dyads implies that dyads have more difficulty in estimating the collective target compared with triads and tetrads who felt a greater force. These values were used to adjust the neuromechanical goal sharing and the source separation limiting case.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41328/elife-41328-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The sum of the sum of squared error between the fits from the data and the simulation as a function of $q$ and\u00a0$\\sigma_{\\mu}^{2}$.The SSE is relatively insensitive to changes in the strength $q$. The model with the lowest SSE is the neuromechanical goal sharing model.\n\nWe first tested whether the performance improvements observed in groups larger than dyads can be explained by a model where the physical connection to a superior or inferior collective with greater inertia dominates the interaction outcome. This model also tests whether the averaging of multiple partners\u2019 trajectories during the tracking task helped to reduce tracking errors due to a cancellation of tracking errors. In this no exchange model (Figure 4A), individuals track a target estimated from vision whilst under the influence of the forces from the elastic bands. This model predicted an improvement that was linearly dependent on the partners\u2019 relative error, which was different from the data (Figure 4B). Importantly, the model predicted that a superior individual in the collective was hindered by inferior partners, and the hindrance was greater with more inferior individuals in contrast to the data (Figure 3B). The mismatch between the experimental data and the no exchange model\u2019s prediction for triads and tetrads suggests that individuals interacting in large groups use the interaction force to exchange information that is relevant to the task, as was found in dyads in our previous study (Takagi et al., 2017).\n\nWhat kind of information did the individuals in triads and tetrads estimate from the interaction with their partners during the tracking task? In earlier studies (Takagi et al., 2017; Takagi et al., 2018), we showed that partners in dyads estimated each other\u2019s target through the interaction force to improve their prediction of the target\u2019s motion. Individuals in triads and tetrads may also extract useful information from haptics to improve tracking performance. We hypothesized that individuals interpret the summed interaction force as originating from one entity that tracks a collective target. According to this hypothesis, the individuals\u2019 central nervous system (CNS) recognizes some correlation between the interaction force and the target motion (Parise and Ernst, 2016), then builds a representation of the entity that tracks the target. We assume that every individual\u2019s CNS in the group estimates one collective target from the summed interaction force regardless of the number of partners in the group. In this extended neuromechanical goal sharing model, we propose that individuals track the optimally weighted average of the collective target and one\u2019s own target from vision (see Figure 4C for schematic of the model).\n\nAs an example, for tetrads, we simulated four connected individuals who each estimated a collective target from the three other partners, and who then integrated this haptic estimate of the target with their own visual estimate of the target\u2019s position (see Equation 9 in the Materials\u00a0and\u00a0methods). The weights between vision and haptics were assumed to be known by every partner as we were interested in comparing the steady-state predictions of the model with the data. Furthermore, we accounted for the additional haptic noise that arises due to the compliance of the spring connection. In our earlier study (Takagi et al., 2018), we found that a stiffer spring reduces the haptic noise when estimating the partner\u2019s target. Mechanics tells us that an individual in a triad who is connected to two partners by a total of two springs, each of stiffness 100 N/m, feels an equivalent force to being connected to the average of the two partners\u2019 positions by a spring of stiffness 200 N/m (see Equation 6 in Materials\u00a0and\u00a0methods) (Burdet et al., 2013). In other words, individuals in larger groups effectively feel like they are connected to the group\u2019s average position by a stronger spring. The error due to a specific compliant connection was accounted for in the simulations as additive noise (see Materials\u00a0and\u00a0methods for details on the haptic tracking experiment to measure this additional error due to the compliance in the spring in dyads, triads and tetrads, and Figure 4\u2014figure supplement 1 for the results of the haptic tracking experiment).\n\nThe simulation of the neuromechanical goal sharing model predicted a performance improvement that captured the curvature of the improvement as a function of the partners\u2019 relative error with minimal deviation from the data when tested in a sensitivity analysis (Figure 4D and Figure 4\u2014figure supplement 2). The performance improvement increased supralinearly for inferior individuals, and superior individuals retained their performance even when coupled to an inferior collective. Furthermore, the improvement was correctly modulated by the collective\u2019s size, such that tetrads improved the most, followed by triads, and then dyads. These results suggest that individuals in collectives of different sizes use the same coordination strategy of extracting a haptic estimate of the collective target position from the interaction force.\n\n## Discussion\n\nThis study tested physically interacting dyads, triads and tetrads in a tracking task to assess the effect of the group\u2019s size and its skill on the participating individuals\u2019 tracking performance. We found that the total group\u2019s performance increased with the group size, where inferior individuals in the group improved incrementally more in larger groups, and superior individuals were capable of sustaining their superior tracking performance even when connected to a group of individuals with inferior performance. Contrary to the results of our previous study (Ganesh et al., 2014), the superior individuals of the dyads in the current study did not improve. This discrepancy in the results is likely due to the high amount of visual noise added to the target in order to manipulate each individual\u2019s tracking performance.\n\nIn our experiment, the performance improvements observed in dyads, triads and tetrads did not arise instantaneously, but emerged continuously during the trial such that 90% of the group\u2019s final performance improvement (calculated over the entire trial) was reached after 7 s. As Figure 3C shows, the partners\u2019 movements initially depend only on the connecting spring dynamics (compare with Figure 4A and B), and gradually acquire a model of the interaction dynamics enabling them to benefit from this interaction. The similarity in the adaptation rates between dyads, triads and tetrads in reaching their performance improvement at the end of the trial may indicate that the same coordination mechanism may be utilized regardless of the size of the interacting group. The similarity in these adaptation rates for physical interaction stands in contrast with verbal or gestural communication where significantly longer time is needed with more participants. This highlights the advantage of the simultaneity of haptic communication relative to the sequential exchanges in verbal and gestural communication.\n\nIn order to identify the coordination mechanism that explained the improvements from collective physical interaction, we used a computational model to test the determinants of interaction, to predict their effect on the performance improvement, and compare the predictions with the empirical data. The neuromechanical goal sharing model, which captured the improvements from the empirical data, suggests a mechanism whereby individuals extract task relevant sensory information from haptics, and integrate it with their own visual information of the target\u2019s motion to improve tracking performance during interaction. In this model, we assumed that each individual extracts a haptic estimate of the target from the interaction force. As this haptic estimate of the target is stochastically optimally combined with the individual\u2019s visual target, this improves their tracking performance even when connected to partners having a collectively inferior performance. The haptic estimate of the target arises from the summed interaction force, which is composed of the elastic couplings to multiple partners, that is equivalent to one elastic coupling to the average partner (see Equation 6 in the Materials\u00a0and\u00a0methods).\n\nIf the haptic estimate of the target is extracted from summed interaction force, which is a function of the average partner\u2019s movements, then intuitively the performance improvement from integrating this haptic signal should depend only on the average partner\u2019s tracking error, and not on the number of partners in the collective. If so, why did the simulation in Figure 4D of the neuromechanical goal sharing model predict improvements that were dependent on both the average partner\u2019s error and the size of the collective? There may be two main reasons for the graded performance improvement with group size. First, the connection dynamics alone could have graded the improvement, since the no exchange model (in Figure 4A and B) also predicted improvements that were graded by group size. Second, the effect of the additional noise in the haptic estimate of the target due to the compliance of the elastic coupling may explain the graded improvement (see Equation 16 in Materials\u00a0and\u00a0methods). To assess the impact of these two factors on the predicted performance improvement, we simulated the neuromechanical goal sharing model (see Figure 5A) without the interaction spring dynamics ($F=0$ in Equation 6 in the Materials\u00a0and\u00a0methods) and without the additional noise from the elastic compliance ($(\\sigma_{c}^{(i)})^{2}=0$\u00a0in Equation 16 in the Materials\u00a0and\u00a0methods). As the results still exhibit improvements graded as a function of group size (see Figure 5B), the graded improvement was not caused by the connection dynamics nor by the additional haptic noise due to the elastic compliance.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41328/elife-41328-fig5-v2.jpg)\n\n**Figure 5.:** (A) A schematic of the neuromechanical goal sharing model without the dynamics of the spring and without the additional haptic noise due to the compliance of the spring. The simulation of this model are shown in (B), where the improvements remained graded by group size, implying that the performance was graded for a different reason. (C) The neuromechanical goal sharing model was simulated without the dynamics of the spring, without the additional haptic noise due to the compliance of the spring, and assuming that the noise in the interaction force was the average partners\u2019 visual tracking noise. The simulation of this model is shown in (D). Since the noise was averaged, the group size had no effect on the improvement, which was similar for dyads, triads and tetrads. Thus, the graded improvement due to group size arose from the stochastic summation in the interaction force. (E) The source separation limiting case assumes that each individual receives additional sensory information of the target position through the interaction force from every partner. (F) The source separation case significantly overestimates the improvement for dyads, triads and tetrads, indicating that the individuals could not separate the sources of the interaction force.\n\nWhat explains the grading of the improvement as a function of both the average partner\u2019s error and the collective\u2019s size? The original intuitive premise must be questioned as to whether the improvement from interacting with a collective of partners, whose mean tracking error is\u00a0$e\u00af$, is the same as the improvement from interacting with one average partner who has the error\u00a0$e\u00af$. In previous studies (Takagi et al., 2017; Takagi et al., 2018), the noise in the haptic measurement of the target was equivalent to the partner\u2019s visual tracking noise. So what is the noise in haptics from an interaction force during collective interaction? Although the interaction force is equivalent to one stiffer elastic coupling to the average partner (as Equation 6 shows), the noise in this interaction force is not the average of the partners\u2019 visual tracking noise. Instead, the stochastically summed interaction force has noise that is inversely proportional to the squared number of partners (see Equation 11 in Materials\u00a0and\u00a0methods), which is different from the mean of the partners\u2019 visual tracking noise. To illustrate this difference, we simulated the neuromechanical goal sharing model where the haptic noise was the mean of the partners\u2019 visual tracking noise (see Figure 5C). To isolate the effects of the haptic measurement noise, we again removed the connection dynamics and the noise from the elastic coupling in this simulation. This model predicted similar improvements irrespective of group size (see Figure 5A), showing that the graded improvement as a function of group size is indeed explained by a reduction in the variance of haptics due to the averaging of the partners\u2019 positions in the interaction force.\n\nDoes the elucidated mechanism provide maximum possible performance improvement with haptic feedback? Maximum information transfer during collective interaction can be estimated in a limiting case of the neuromechanical goal sharing model where the central nervous system is able to extract every partner\u2019s contribution to the interaction force (instead of modeling the interaction force as coming from a single entity). This would be similar to the cocktail party effect of audition where one can isolate a conversation in a room of people talking at the same time (Hawley et al., 2004). Each individual might extract multiple streams of information from the interaction force (one, two and three streams for dyads, triads and tetrads, respectively) using individual spectral characteristics, yielding the maximal possible information transfer through haptics (see Figure 5E for the schematic of this model). However, the predictions of this source separation limiting case (see Figure 5F) consistently overestimated the improvement in comparison to the data, showing that our individuals could not break down each individual source in the interaction force. Instead, the average behavior of all other individuals was identified, and their collective target was inferred. This reveals a limit in the ability to share and estimate information through haptics.\n\nIn summary, this paper presented experiments and computational modeling to understand how physically interacting human individuals coordinate their movements during the collective tracking of a common target. The results elucidate the coordination mechanism in a collective by systematically analyzing how the information from the interaction dynamics is processed by its individuals. As the interaction force is the sum of all partner\u2019s forces, it is not possible to identify each partner\u2019s specific contribution to it. Instead, the individuals estimate a collective target from the interaction force, which they combine with their own visual target. The performance improvement resulting from this mechanism is suboptimal relative to that allowed by a putative source separation mechanism, but it still enables the collective\u2019s individuals to improve their tracking error when interacting with superior partners, and to not be hindered by inferior ones. This neuromechanical coordination mechanism is also scalable, as the time required to adapt to the group\u2019s skill is independent of group size, and a group\u2019s total performance improvement increases with its size. The surprising result that the collective\u2019s mean improvement increases in larger groups is explained by the stochastic properties of the collective target that is extracted from the summed interaction force.\n\n## Materials and methods\n\n### Experiments\n\nThe study was conducted according to the Declaration of Helsinki and was approved by the ethics committee of the Graduate School of Education at the University of Tokyo (reference number 14-75). Each of the 72 subjects gave a written consent prior to starting with the experiments. The sample size of 12 per group of dyads, triads and tetrads was determined by a prior power analysis from a repeated-measures ANOVA within and between interaction consisting of 3 groups and the error detection parameters $\\alpha=0.05$\u00a0and $\\beta=0.8$\u00a0with a medium effect size of\u00a0$\u03b7^{2}=0.06$.\n\nEach subject held onto the robotic handle of the Phantom 1.5HF (Geomagic), which constrained the handle\u2019s movement within a horizontal plane via software. The individual monitors displayed a cursor of the handle position and the target, which was composed of a dynamic cloud around the multi-sine function\n\n$$\nxt=1.6sin\u20610.1t+4sin\u20610.3t+0.8sin\u20610.5t+2.4sin\u20610.8tyt=0.8sin\u2061(0.2t)+2.4sin\u2061(0.3t)+4sin\u2061(0.6t)+2.4sin\u2061(0.8t)\n$$\n\nwhere\u00a0the target\u2019s trajectory was randomized through the selection of the initial time according to a uniform stochastic distribution in the interval between 0\u00a0and\u00a010 s.\n\nThe dynamic cloud consisted of five circular spots that were displayed every millisecond (as shown in the Video 1 and 2). Each spot was regenerated one at a time every 400 ms by picking a new position and velocity. These position and velocity parameters were determined at the start of a trial from normal random distributions with a standard deviation of 0.005 m for the position, and from a set of ten equally spaced values from 0.005 m/s to 0.3 m/s for the velocity. The wider the spots were spread, the more difficult it was to follow the target as its true position was hard to guess (K\u00f6rding and Wolpert, 2004). Spots with low velocity noise were easy to track but high velocity noise spots spread out rapidly like fireworks. Every time a velocity noise was selected for each subject, it was removed from the set that was unique to each subject. The random selection ensured that an individual\u2019s own performance and the others\u2019 tracking skill were unknown a priori.\n\nThe velocity parameter enabled us to control the tracking error of each individual in a trial, which was measured as the root-mean squared distance between the target and the cursor. For each subject, the tracking error on trials without interaction was regressed with the target spot velocity noise using data from three trials per velocity noise level, giving a fit with R2\u00a0=\u00a00.80\u00a0\u00b1\u00a00.01 (mean\u00a0\u00b1standard error for all subjects). The spot velocity noise was used as an estimate of each individual\u2019s tracking error (see Figure 2B for fits from a sample tetrad).\n\nSubjects were instructed to follow the target as accurately as possible and were told that they would experience forces on their hand. At the end of the experiment, subjects were asked about the nature of the forces. Although some guessed that the forces originated from a partner, none of them could tell how many partners they were connected to.\n\nThe experimental protocol is described in Figure 1D. Twos experienced 80 total trials and fours completed 100 trials in total. Both twos and fours experienced 10 solo training trials to become acquainted to the task. After this training phase, twos and fours encountered a series of solo and connected trials. Twos then carried out 60 trials with and without the elastic connection in a series of 30 connected-solo trials, and then 10 connected trials. This ensured that solo trials were interspersed throughout the experiment. Interaction data from both triads and tetrads were collected during the experiment with fours. We collected as much data as possible from triads by testing all four combinations of triads possible from the tetrad, and collected the tetrad interaction data in the last 30 trials. Thirty\u00a0solo trials were interspersed such that 10 were tested after training, 10 prior to tetrad interaction, and another 10 in each triad block where the excluded individual experienced solo trials instead of triad interaction trials. In total, 40 connected trials for dyads and triads, and 30 connected trials for tetrads.\n\n### Analysis\n\nA linear mixed-effects model\n\n$$\n\u0394c=\\beta_{0\u03c1}+\\beta_{1\u03c1}s+\\beta_{2\u03c1}\u0394p+\\beta_{3\u03c1}\u0394p^{2}+\\beta_{4\u03c1}\u0394p^{3}+\\beta_{5\u03c1}(\u0394p\u22c5s)+\\epsilon_{\u03c1}\n$$\n\nwas employed to fit the improvement\u00a0$\u0394c=1\u2212e_{c}/e$, where $e$\u00a0is the error of an individual in a solo trial (estimated from the linear regression with the visual noise) and $e_{c}$ is the same subject\u2019s error on a connected trial, as a function of the partners\u2019 relative error, $\u0394p=1\u2212e_{p}/e$, where $e_{p}$ was the partners\u2019 mean error estimated from solo trials, and the collective\u2019s size\u00a0$s$. In this model, $\\beta_{0\u03c1}$\u00a0is the intercept, $\\beta_{1\u03c1}$\u00a0to $\\beta_{5\u03c1}$ are the parameters for each predictor and $\\epsilon_{\u03c1}$ is the unexplained variance of the improvement for each collective\u00a0$\u03c1$.\n\n### Simulation model\n\nA model was developed in discrete time $kdt,k=1,2,\u2026$ to simulate how the members of a collective connected by elastic bands plan their movement to track a randomly moving target in two dimensions. The Cartesian product of two one-dimensional models as described below was used in simulation. At every time index the target with position $\\tau_{k}$ must be estimated, then a motor command $u_{k}$ is generated to move the hand\u2019s position $h_{k}$ to the target. First, we describe the state equation that governs the movement of the target, and then that of the hand, and combine these two equations to formulate a single state equation of the full system. The movement of the target, which is assumed to be moving randomly via Gaussian noise in its velocity\u00a0$\\tau\u02d9_{k}\u2261\\mu_{k}$, is described by the first-order system\n\n$$\n\\tau_{k+1}=A\\tau_{k}+[0dt]\\mu_{k},A\u2261[1dt01],\\mu_{k}\\in(0,M_{k})\n$$\n\nwhere $\\tau_{k}\u2261[\\tau_{k},\\tau\u02d9_{k}]^{T}$ is the target state and $M_{k}\u2261E[\\tau_{k}\u00a0\\tau_{k}^{T}]$ is the covariance matrix.\n\nThe control of the hand is modelled as $mh\u00a8_{k}=u_{k}+F_{k}$\u00a0with point-mass $m$\u00a0and the force $F$\u00a0from one or several elastic bands. In state-space format, this yields\n\n$$\nh_{k+1}=Ah_{k}+B(u_{k}+F_{k})\u00a0,\u00a0\u00a0h_{k}\u2261[h_{k},h\u02d9_{k}]^{T},\u00a0\u00a0B\u2261[0dt/m]\n$$\n\nwhere the control command $u$ to move the hand towards the target is described by\n\n$$\nu_{k}=\u2212[L_{p},L_{v}](h_{k}\u2212\\tau_{k})\n$$\n\nwith $L_{p}$ and $L_{v}$ describing the position and velocity control gains, respectively. In a collective of individuals\u00a0$i=1\u2026s$, each individual\u2019s right hand with state $h_{k}^{(i)}\u2261[h_{k}^{(i)},h\u02d9_{k}^{(i)}]^{T}$ is connected to the $s-1$\u00a0other individuals\u2019 right hands through elastics bands of stiffness $K>0$\u00a0and damping $D>0$\u00a0that produce the force\n\n$$\nF_{k}^{(i)}=\\sumj\\neqiK(h_{k}^{(j)}\u2212h_{k}^{(i)})+D(h\u02d9_{k}^{(j)}\u2212h\u02d9_{k}^{(i)})=(s\u22121)K(h\u00af_{k}^{(i)}\u2212h_{k}^{(i)})+(s\u22121)D(h\u00af\u02d9_{k}^{(i)}\u2212h\u02d9_{k}^{(i)})\n$$\n\nwhere $h\u00af_{k}^{(i)}=\\frac{1}{s\u22121}\\sumj\\neqih_{k}^{(j)}$ is the average partners\u2019 position. Importantly, as we see in the right\u00a0side of this equation, the sum of the elastic coupling to all partners is equivalent to the interaction force when coupled with a more rigid and damped elastic interaction with the average of the partners\u2019 hands. Solo trials, where the subjects are not connected, are characterized by zero force $F_{k}^{i}\u22610$ for all $i$. A subject using the motor command of Equation 5 to move their hand according to Equation 4 to follow the target, with motion described by Equation 3, is described by the full state equation\n\n$$\nx_{k+1}=Ax_{k}+B(u_{k}+F_{k}+m\\mu_{k}),x_{k}\u2261h_{k}\u2212\\tau_{k}\n$$\n\nwhich is equivalent to the difference of Equation 4 minus Equation 3.\n\n### Models of interaction\n\nTwo models of interaction are described from the sensory information exchange between the partners. First, we describe the solo strategy of one subject tracking the target $\\tau_{k}$ alone using only visual feedback. To generate the motor command according to Equation 5, the state describing the difference between the target and the hand is observed through\n\n$$\nz_{k}=h_{k}-\\tau_{k}+\u03bd_{k}\n$$\n\nwhere the observation $z_{k}$ is corrupted by Gaussian visual noise $\u03bd_{k}$ with variance\u00a0$\\sigma^{2}\u2261Ez_{k}-Ez_{k}^{2}$. The linear quadratic estimation is computed in discrete time using an iterative Kalman filter algorithm (Kalman, 1960). Sensory delay in vision and proprioception is compensated for by integrating Equation 7.\n\nNow that we have described how to visually track a target, what motion planning model could be used to track the randomly moving target whilst being physically coupled to multiple partners? In the no exchange model, each individual ignores the interaction forces and tracks the target using the visual information of the target\u2019s position, as in Equation 8, under the influence of the dynamics of the elastic bands described in Equation 6. The neuromechanical goal sharing model (Takagi et al., 2017; Takagi et al., 2018) proposes that, in dyads, both individuals extract a haptic estimate of the target\u2019s position from the interaction force with the partner, and optimally combine it with their own visual estimate of the target. Similarly, we propose that in collective interaction each individual $i$ uses the interaction force to extract a haptic estimate of the target position, referred from here on as the collective target\u00a0$\\tau\u00af_{k}^{(i)}$, such that the observation of the difference between the hand of individual $i$ and the target is observed using\n\n$$\nz_{k}^{(i)}=[h_{k}^{(i)}\u2212\\tau_{k}^{(i)}h_{k}^{(i)}\u2212\\tau\u00af_{k}^{(i)}]\n$$\n\nwhich extends the corresponding law of previous studies (Takagi et al., 2017; Takagi et al., 2018).\n\nWhat is the variance of the noise that corrupts the haptic measurement of the collective target in the extended neuromechanical goal sharing model? In previous studies (Takagi et al., 2017, Takagi et al., 2018), the interaction; force was linearly dependent on the partner\u2019s hand position, and so the noise in the haptic measurement of the partner\u2019s target was the partner\u2019s visual tracking noise. Similarly, in collective interaction, the collective target is estimated from the interaction noise, which is shown in Equation 6 to be linearly dependent on the partners\u2019 average hand position\u00a0$h\u00af_{k}^{(i)}$. Let every $j$th partner\u2019s visual measurement of the target be corrupted by Gaussian visual tracking noise with variance\u00a0$(\\sigma^{j})^{2}$. Then the difference between the hand and the collective target\u2019s position $h_{k}^{(i)}\u2212\\tau\u00af_{k}^{(i)}$ suffers Gaussian noise with\u00a0variance\n\n$$\n(\\sigma\u00af^{(i)})^{2}=\\frac{1}{(s\u22121)^{2}}\\summ,n\\neqicov(m,n)\u00a0.\n$$\n\nWe can assume that these measurements between partners are independent, thus $covm,n=0\u2200m\\neqn$\u00a0and\u00a0$covn,n=(\\sigma^{(n)})^{2}$, and the variance in the measurement of the collective target\n\n$$\n(\\sigma\u00af^{(i)})^{2}=\\frac{1}{(s\u22121)^{2}}\\sumj\\neqi(\\sigma\u00af^{(j)})^{2}\n$$\n\nis inversely proportional to the number of partners in the collective. Therefore, the measurement noise on the collective target will reduce in larger collectives even if the partners\u2019 average tracking noise is equivalent.\n\nWe further tested a modified version of the neuromechanical goal sharing model (see Figure 5C and 5D) with the intuitive, but incorrect, expectation that the interaction with multiple partners whose average error is $e\u00af^{(i)}$ is identical to interacting with one partner whose error is equivalent to\u00a0$e\u00af^{(i)}$. In this scenario, the variance of the noise in the haptic measurement of the collective target would be equal to the average of the partners\u2019 visual tracking noise, that\u00a0is\u00a0$(\\sigma\u00af^{(i)})^{2}=\\frac{1}{s\u22121}\\sumj\\neqi(\\sigma\u00af^{(j)})^{2}$, with a denominator different from Equation 11. If this were the noise in the haptic estimate of the collective target, the improvement would not change with the group\u2019s size (as Figure 5D shows), which is in contrast to what is observed in the data.\n\nHow does an individual $i$ estimate the collective target of Equation 9 from the interaction force in Equation 6? The average of the partners would use a motor command similar to Equation 5,\n\n$$\nu\u00af_{k}^{(i)}=\u2212[L\u00af_{p}^{(i)},L\u00af_{v}^{(i)}](h\u00af_{k}^{(i)}\u2212\\tau\u00af_{k}^{(i)})\u2261\u2212L\u00af^{(i)}x\u00af^{(i)}\n$$\n\nwhere\u00a0the average partner\u2019s state is estimated through the force and the state of one\u2019s own hand, whilst the average partner\u2019s control law $L\u00af^{(i)}$ from Equation 12 is identified by letting it evolve with noise according to\n\n$$\nL\u00af\u02d9^{(i)}\u2261\\lambda\u00a0,\u00a0\\lambda\\inN(0,E[(L\u00af\u02d9^{(i)})^{T}L\u00af\u02d9^{(i)}])\u00a0.\u00a0\n$$\n\nThus, the representation of the partner includes the state of their hand, their target, their control law, one\u2019s own hand and the elastic force to yield\n\n$$\n\u03be\u2261(\\tau\u00af^{(i)},\u00a0h\u00af^{(i)},\u00a0L\u00af^{(i)},\u00a0h^{(i)},\u00a0F^{(i)})\u00a0.\n$$\n\nThis state $\u03be$\u00a0is described by the non-linear function $\u03be\u02d9\u2261f(\u03be)$ that is linearized at every time step to be used for linear quadratic estimation (Ljung, 1979). $L\u00af^{(i)}$\u00a0is identified by minimizing the squared estimation error of the observations of one\u2019s own target position\u00a0$\\tau_{k}^{(i)}$, hand position $h_{k}^{(i)}$ and force\u00a0$F_{k}^{(i)}$. Once $L\u00af^{(i)}$ is identified, the collective target $\\tau\u00af^{(i)}$ is estimated by minimizing the squared estimation error of the observations of the average partner\u2019s estimated control\u00a0$L\u00af^{(i)}$, one\u2019s own hand position $h_{k}^{(i)}$ and the force\u00a0$F_{k}^{(i)}$.\n\nThe source separation limiting case is where every partner\u2019s target can be estimated and combined with one\u2019s own visual estimate of the target,\n\n$$\nz_{k}^{(i)}=[h_{k}^{(i)}\u2212\\tau_{k}^{(1)}\u22eeh_{k}^{(i)}\u2212\\tau_{k}^{(s)}].\n$$\n\nIn this limiting case,\u00a0$s\u22121$\u00a0observations of the partners\u2019 target position are directly provided to each individual in the collective, who integrates the partners\u2019 targets with their own visual estimate of the target,\u00a0providing\u00a0$s$ total observations of the target.\n\n### How compliance changes the quality of haptic information\n\nIn a previous study (Takagi et al., 2018), we found that the strength of the elastic coupling influenced the quality of the haptic information. With a weaker elastic band, the amplitude of the interaction force is smaller, reducing the signal-to-noise ratio when measuring it through haptics. Dyads, triads and tetrads experienced different magnitudes of force due to the increasing number of elastic bands that coupled them together. The dynamics experienced by dyads, triads and tetrads can be modeled as a single elastic band of 100 N/m, 200 N/m and 300 N/m respectively, which connects each individual to the average position of the partners as shown in Equation 6.\n\nAnother eight subjects were recruited individually to carry out a haptic tracking control experiment. The target movement was the same as in Equation 1, but without visual feedback, that\u00a0is the target was invisible to the subject. Subjects tracked the haptic target for 15 s, and experienced five trials of each coupling stiffness consecutively in the order of 300 N/m, 200 N/m and 100 N/m, respectively. Figure 4\u2014figure supplement 1 shows the results of this experiment, revealing that stronger stiffness resulted in lower tracking errors. The values found in this experiment were used to alter the source separation and neuromechanical goal sharing models by changing the sensory noise in the haptic estimate of the collective target. The haptic noise from Equation 11 has some additive noise $(\\sigma_{c}^{(i)})^{2}$ due to the compliance of the elastic connection,\n\n$$\n(\\sigma_{h}^{(i)})^{2}=(\\sigma\u00af^{(i)})^{2}+(\\sigma_{c}^{(i)})^{2}\u00a0.\n$$\n\nIn the haptic tracking experiment, we measured the additional error in the tracking task that arises due to the softness of the elastic spring. These error values can be used to estimate\u00a0$(\\sigma_{c}^{(i)})^{2}$, and so the haptic noise is described by\n\n$$\n(\\sigma_{h}^{(i)})^{2}=(\\sigma\u00af^{(i)})^{2}+\u03c8(\\sigma_{\\mu}^{2},q,(\\sigma\u00af^{(i)})^{2},e^{(i)},K)\n$$\n\nwhere $\u03c8$\u00a0is a function that converts tracking error $e^{(i)}$ to an equivalent sensory noise and $K$ is the stiffness of the elastic spring. This function changes with respect to the process noise $\\sigma_{\\mu}^{2}$ as the performance of the linear quadratic estimator is directly related to this value, and the controller strength $q$\u00a0that affects how closely one can follow the estimated target trajectory.\n\nTo determine\u00a0$\u03c8$, we simulated only the solo trials of the tracking task for each unique pair of\u00a0$\\sigma_{\\mu}^{2}$\u00a0and\u00a0$q$, and fitted a second order polynomial that related the standard deviation of an individual\u2019s visual tracking noise $\\sigma^{i}$ and tracking error\u00a0$e^{(i)}$,\n\n$$\n\\sigma^{(i)}=\\gamma_{0}+\\gamma_{1}e^{(i)}+\\gamma_{2}(e^{(i)})^{2}\n$$\n\nwhere\u00a0$\\gamma_{0}$, $\\gamma_{1}$\u00a0and $\\gamma_{2}$ are fitted parameters. Since we assume that the softness of the interaction results in additive sensory noise, the haptic noise of Equation 16 is modified to\n\n$$\n(\\sigma_{h}^{(i)})^{2}=(\\gamma_{0}+\\gamma_{1}[e\u00af^{(i)}+E(K)]+\\gamma_{2}[e\u00af^{(i)}+E(K)]^{2})^{2}\n$$\n\nwhere $e\u00af^{(i)}$ is the average of the partners\u2019 tracking error and $EK$\u00a0is the additional error from the interaction stiffness\u00a0$K$, whose values were taken from the haptic tracking experiment.\n\nTo remove the effects of the additional noise due to the elastic coupling on the predicted performance improvement (as described in the Discussion), the compliance noise in Equation 16 was set to\u00a0$(\\sigma_{c}^{(i)})^{2}=0$.\n",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "579dc405-9f94-4149-932a-49b708aea080",
+      "submission_id": "d3a4135d-daa4-4d39-b433-bd92e95bfab4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J\u00f6rn Diedrichsen, University of Western Ontario Canada\n\nReviewers:\n- J\u00f6rn Diedrichsen, University of Western Ontario Canada\n- Martin A Giese, University of T\u00fcbingen Germany\n\n## Review text\n\nDOI: [10.7554/eLife.41328.015](https://doi.org/10.7554/eLife.41328.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Individuals physically interacting in a group rapidly coordinate their movement by estimating the collective goal\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including J\u00f6rn Diedrichsen as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Ivry as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Martin A Giese (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript describes an experiment that studies the haptic interaction between groups of different size within a tracking task, where multiple agents manipulate together a goal point that is elastically coupled to the individual agents. The study investigates how tracking accuracy depends on the performance of the individuals and finds that performance is mainly determined by the best members of the group, instead of representing the average. A detailed quantitative analysis is provided, how the performance error relative to the average performance changes as function of the number of group members. In addition, three quantitative control models are compared with the data, finding that a model that assumes that control is determined by an estimate of the average target position provides the best fits of the data.\n\nEssential revisions:\n\n1) All reviewers agreed that the manuscript could profit from a better explanation/motivation of the different models. Specifically, the neuromechanical goal sharing model should be introduced alongside the other models, as it is the most intuitive expectation of how the results should come out, based on what is known from interacting dyads. Reviewer 1 found the other two models not very informative, writing \"Given past work, the dyads model would seem to the main hypothesis to be tested. The two alternative hypotheses \u2013 the no exchange model and the source separation model \u2013 are not well motivated. The no-exchange model has been already rejected in the context of the dyadic interaction. So why should participants suddenly switch to being confused? Just because they know that they track together with multiple partners? The \"neuromechanical goal sharing\" model would be the logical prediction from what has been found in dyads already. The null-model spelled out in the third paragraph of the Introduction seems therefore somewhat contrived \u2013 and the real null model is exactly the \"neuromechnical goal sharing\". Similarly, the source separation model appears contrived in that the participants simply have no information on which to base the source separation on. It would have been very surprising if they could have done this, but the finding that they simply treat the experienced forces as if these come from one individual is the expected finding.\"\n\nHowever, the other two reviewers saw clearly value in retaining them, but also pointed out that they need to be motivated better so we recommend that you keep all three but revise the paper to provide better motivation.\n\n2) One key result is that individuals benefit from groups of 3 and 4 more than they do from groups of 2. The nature of this benefit needs to be more fully understood. An important confounding factor is the virtual stiffness between the hand of the subject and the group-averaged position of all the other hands (Discussion paragraph three). Can this factor fully explain the group effect? The reviewers thought answering this question may demand some new data, where the group size is varied while stiffness kept constant.\n\nIt appears that the performance might strongly dependent on learning, maybe also on learning processes that are specific for the different numbers of group members, or for the presence of specific individuals in the groups. Authors should discuss clearly if/how they control for differences in such learning processes.\n",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "edd79cd4-afa5-4dd5-aa55-4e209bb362ac",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C1",
+      "claim": "The study was conducted according to the Declaration of Helsinki and was approved by the ethics committee of the Graduate School of Education at the University of Tokyo (reference number 14-75).",
+      "claim_type": "EXPLICIT",
+      "source": "The study was conducted according to the Declaration of Helsinki and was approved by the ethics committee of the Graduate School of Education at the University of Tokyo (reference number 14-75).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the ethical approval details for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "31b69510-ece7-4294-b884-51d3912d7dd4",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C2",
+      "claim": "72 subjects participated in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the 72 subjects gave a written consent prior to starting with the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text directly states the number of subjects who participated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "dde7d04b-1bff-4ae1-a8ff-95c76f35596e",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C4",
+      "claim": "Each subject held onto the robotic handle of the Phantom 1.5HF (Geomagic), which constrained the handle's movement within a horizontal plane via software.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subject held onto the robotic handle of the Phantom 1.5HF (Geomagic), which constrained the handle's movement within a horizontal plane via software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the experimental apparatus used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "01f07e09-5033-4552-82de-dad3d95de34f",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C5",
+      "claim": "The tracking error of subjects was linearly and tightly related to the standard deviation of visual noise, such that greater visual noise resulted in larger tracking errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The tracking error of subjects was linearly and tightly related to the standard deviation of this visual noise, such that greater visual noise resulted in larger tracking errors (see Figure 2B for sample subjects).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this relationship and references Figure 2B which shows the linear fit data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "d8ce1452-209c-4a16-9b73-e760915c8582",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C6",
+      "claim": "For each subject, the tracking error on trials without interaction was regressed with the target spot velocity noise using data from three trials per velocity noise level, giving a fit with R\u00b2 = 0.80 \u00b1 0.01 (mean \u00b1standard error for all subjects).",
+      "claim_type": "EXPLICIT",
+      "source": "For each subject, the tracking error on trials without interaction was regressed with the target spot velocity noise using data from three trials per velocity noise level, giving a fit with R2 = 0.80 \u00b1 0.01 (mean \u00b1standard error for all subjects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the regression fit statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "c566e1ea-dd5d-408a-8d4a-bf069d225adb",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C7",
+      "claim": "The collective's mean improvement increased with its size between dyads and triads (t(22)=2.53, p<0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Two-sample t-tests revealed that the collective's mean improvement increased with its size (between dyads and triads: t(22)=2.53, p<0.02; between dyads and tetrads: t(22)=6.07, p<10\u22125), revealing the benefits of interacting in larger collectives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results comparing dyads and triads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "dc3a4148-d4ef-4eb9-8905-20052b46f050",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C8",
+      "claim": "The collective's mean improvement increased with its size between dyads and tetrads (t(22)=6.07, p<10\u207b\u2075).",
+      "claim_type": "EXPLICIT",
+      "source": "Two-sample t-tests revealed that the collective's mean improvement increased with its size (between dyads and triads: t(22)=2.53, p<0.02; between dyads and tetrads: t(22)=6.07, p<10\u22125), revealing the benefits of interacting in larger collectives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results comparing dyads and tetrads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "05409a78-9e40-49d1-ba85-13eeb6565871",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C9",
+      "claim": "A mixed-effects analysis showed that the collective's size modulated the individual's performance improvement (\u03c7\u00b2(2)=412, p<10\u207b\u00b9\u2075).",
+      "claim_type": "EXPLICIT",
+      "source": "A mixed-effects analysis showed that the collective's size modulated the individual's performance improvement (\u03c72(2)=412, p<10\u221215, see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results from the mixed-effects analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "5eb801ec-41d2-47c2-8921-e2bf7fc663ff",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C10",
+      "claim": "Inferior individuals improved when coupled to a superior collective in dyads (t(11)=10.8, p<10\u207b\u2076).",
+      "claim_type": "EXPLICIT",
+      "source": "Inferior individuals improved when coupled to a superior collective, regardless of its size (dyads: t(11)=10.8, p<10\u22126; triads: t(11)=24.0, p<10\u221210, t(11)=23.0; tetrads: p<10\u22129).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results for inferior individuals in dyads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "9694cffa-7bd3-47e1-8f02-9c430efc8573",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C11",
+      "claim": "Inferior individuals improved when coupled to a superior collective in triads (t(11)=24.0, p<10\u207b\u00b9\u2070).",
+      "claim_type": "EXPLICIT",
+      "source": "Inferior individuals improved when coupled to a superior collective, regardless of its size (dyads: t(11)=10.8, p<10\u22126; triads: t(11)=24.0, p<10\u221210, t(11)=23.0; tetrads: p<10\u22129).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results for inferior individuals in triads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "a220a5c8-face-4b5a-83f0-e92b1a184dee",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C12",
+      "claim": "Inferior individuals improved when coupled to a superior collective in tetrads (t(11)=23.0, p<10\u207b\u2079).",
+      "claim_type": "EXPLICIT",
+      "source": "Inferior individuals improved when coupled to a superior collective, regardless of its size (dyads: t(11)=10.8, p<10\u22126; triads: t(11)=24.0, p<10\u221210, t(11)=23.0; tetrads: p<10\u22129).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results for inferior individuals in tetrads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "59ccca36-fd8d-4f44-b707-aa801be428cd",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C13",
+      "claim": "Superior individuals in dyads maintained their performance with respect to their solo error (t(11)=-2.22, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, superior individuals in dyads, triads and tetrads maintained their performance with respect to their solo error (dyads: t(11)=-2.22, p>0.05; triads: t(11)=-1.53, p>0.15; tetrads: t(11)=3.01, p>0.012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results for superior individuals in dyads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "a4e0b222-c88b-4515-ab54-d58d5f662ea8",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C14",
+      "claim": "Superior individuals in triads maintained their performance with respect to their solo error (t(11)=-1.53, p>0.15).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, superior individuals in dyads, triads and tetrads maintained their performance with respect to their solo error (dyads: t(11)=-2.22, p>0.05; triads: t(11)=-1.53, p>0.15; tetrads: t(11)=3.01, p>0.012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results for superior individuals in triads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "c26e971c-47e4-4185-a36b-c1a5bc64d37c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C15",
+      "claim": "Superior individuals in tetrads maintained their performance with respect to their solo error (t(11)=3.01, p>0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, superior individuals in dyads, triads and tetrads maintained their performance with respect to their solo error (dyads: t(11)=-2.22, p>0.05; triads: t(11)=-1.53, p>0.15; tetrads: t(11)=3.01, p>0.012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results for superior individuals in tetrads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "2e50a817-b10a-42d8-b7a4-00d8723b2c9b",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C16",
+      "claim": "The decay constant for the collective's improvement did not depend on its size, as shown by Mann-Whitney U-tests between dyads and triads (U=122, n1=12, n2=12, p>0.11 two tailed).",
+      "claim_type": "EXPLICIT",
+      "source": "Mann-Whitney U-tests revealed that the decay constant was similar between dyads and triads (U=122, n1=12, n2=12, p>0.11 two tailed), and between dyads and tetrads (U=136, n1=12, n2=12, p>0.44 two tailed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results comparing decay constants between dyads and triads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "908b051c-6436-4c95-ae21-a4b7fd8a258e",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C17",
+      "claim": "The decay constant for the collective's improvement did not depend on its size, as shown by Mann-Whitney U-tests between dyads and tetrads (U=136, n1=12, n2=12, p>0.44 two tailed).",
+      "claim_type": "EXPLICIT",
+      "source": "Mann-Whitney U-tests revealed that the decay constant was similar between dyads and triads (U=122, n1=12, n2=12, p>0.11 two tailed), and between dyads and tetrads (U=136, n1=12, n2=12, p>0.44 two tailed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the statistical test results comparing decay constants between dyads and tetrads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "450fe3f5-693a-4b5a-bade-8112ec72a7ba",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C18",
+      "claim": "It took only 7.4\u00b10.9 s (mean \u00b1 standard error) for the collective to reach 90% of the final improvement.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, it took only 7.4\u00b10.9 s (mean \u00b1 standard error) for the collective to reach 90% of the final improvement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides the time measurement for reaching 90% of final improvement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "753f349d-a128-44f9-9c6f-e8b0f513e434",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C19",
+      "claim": "A superior individual could sustain their tracking performance even if they were physically coupled to an inferior collective regardless of how many inferior individuals were part of the collective.",
+      "claim_type": "EXPLICIT",
+      "source": "A superior individual could sustain their tracking performance even if they were physically coupled to an inferior collective regardless of how many inferior individuals were part of the collective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this finding based on the statistical tests showing superior individuals maintained performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "44f8b1e7-a734-40f5-afd7-6139ff10fe6c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C20",
+      "claim": "Previous studies that investigated dyads found evidence of improved task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies that investigated dyads found evidence of improved task performance (Basdogan et al., 2000; Reed and Peshkin, 2008; Malysz and Sirouspour, 2013), but the underlying mechanism of physical coordination was unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites previous studies that found improved task performance in dyads.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f7785930-0188-42be-9119-d75a4e91c62c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C21",
+      "claim": "In a recent study, dyads interacting in a continuous tracking task showed that the tracking performance of both partners improved, even when the partner was worse at the task.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study, we tested dyads interacting in a continuous tracking task, and found that the tracking performance of both partners improved, even when the partner was worse at the task (Ganesh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a previous study by the authors showing mutual improvement in dyads.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "36fdb4d9-ff15-428c-9c09-507ecfaa8914",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C22",
+      "claim": "Mutual improvement during continuous interaction is explained by a mechanism where individuals estimate the partner's target from the interaction force to improve their prediction of the target's motion.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutual improvement during continuous interaction is explained by a mechanism where individuals estimate the partner's target from the interaction force to improve their prediction of the target's motion (Takagi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a previous study explaining the mechanism of mutual improvement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "0ea9d210-7e07-4a2c-896e-922109eff57c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C23",
+      "claim": "A stronger connection yields a better estimate of the partner's target, enabling partners to improve more from the interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In a second study, we showed that a stronger connection yields a better estimate of the partner's target, enabling partners to improve more from the interaction (Takagi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a previous study showing the effect of connection strength on improvement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "ebe5d654-f882-4e78-a4cc-6b36588636a3",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C24",
+      "claim": "The mechanism of estimating the partner's movement goal explains coordination in dyads.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mechanism of estimating the partner's movement goal explains coordination in dyads, it is not known whether this interaction mechanism holds for an interactive tracking task with more than one partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states that the mechanism explains dyadic coordination based on previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "39842238-359a-4ed4-ac54-7d6cf69c50f1",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C25",
+      "claim": "It is unclear whether the interaction remains mutually beneficial for large groups.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore unclear whether the interaction remains mutually beneficial for large groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this as an open question motivating the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "145ca94e-5e42-4a36-bf2f-ae3e2aa649e2",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C26",
+      "claim": "The authors hypothesized that the stochastic summation of every partner's actions would produce a noisier and poorer haptic estimate of the target as the group size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the stochastic summation of every partner's actions, yielding the interaction force, would produce a noisier and poorer haptic estimate of the target as the group size increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this as a hypothesis of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "474b9224-912a-484b-9c5c-f58311928a55",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C27",
+      "claim": "The authors expected the connection dynamics and the collective's inertia to have a detrimental effect on the superior partners' performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We also expected the connection dynamics and the collective's inertia to have a detrimental effect on the superior partners' performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this as an expectation of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "b21384e5-9859-45ff-b527-9884cc6a6b2c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C28",
+      "claim": "Individuals' right hands were all joined together with virtual elastic bands with a stiffness of 100 N/m.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested interaction in dyads, triads and tetrads who tracked a common target together using their right hands, which were all joined together with virtual elastic bands with a stiffness of 100 N/m (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the experimental setup and references Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "ceacea0d-2c1b-4647-93df-fde33309a8cc",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C29",
+      "claim": "12 fours carried out the experiment in 12 triads and 12 tetrads, and 12 dyads were tested separately.",
+      "claim_type": "EXPLICIT",
+      "source": "12 fours carried out the experiment in 12 triads and 12 tetrads, and 12 dyads were tested separately (see Figure 1D and the Materials and methods for details on the protocol).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the experimental groups and references Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "298d336c-7d70-46ff-bc92-e3877c70e055",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C30",
+      "claim": "Individual performance at the task was calculated for each 15 s trial by measuring the average distance between their cursor and the target, defined as the tracking error.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual performance at the task was calculated for each 15 s trial by measuring the average distance between their cursor and the target, defined as the tracking error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly defines how tracking error was measured.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f139305a-71bc-460f-850f-985227424e16",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C31",
+      "claim": "The same target was used for all individuals of the collective.",
+      "claim_type": "EXPLICIT",
+      "source": "The same target was used for all individuals of the collective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that all individuals tracked the same target.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "908255a6-a1c1-4a0a-9024-20d27825290c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C32",
+      "claim": "Each individual saw, on their own monitor, the positions of the target and their hand, but not the partners' cursor positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each individual saw, on their own monitor, the positions of the target and their hand, but not the partners' cursor positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes what visual information was available to each participant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "de445259-cec1-4c76-9945-745480a9428b",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C33",
+      "claim": "Visual noise was applied to the target to manipulate the tracking ability of subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "To test how interaction with inferior or superior partners influenced tracking performance, we manipulated the tracking ability of subjects by applying visual noise to the target (K\u00f6rding and Wolpert, 2004) as described in the Materials and methods (see Figure 1C and Video 1 and 2 for visual noise during tracking task).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the method for manipulating tracking ability and cites a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "991a2745-1661-4198-84e8-57c4728452ae",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C34",
+      "claim": "A different amount of visual noise, which was randomly selected but fixed during each connected trial, was applied to each member of a collective for every trial.",
+      "claim_type": "EXPLICIT",
+      "source": "A different amount of visual noise, which was randomly selected but fixed during each connected trial, was applied to each member of a collective for every trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes how visual noise was applied across trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "b3ba72ad-c9cc-4d4d-93c6-b1702f540b39",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C35",
+      "claim": "Subjects were instructed to follow the target as accurately as possible and were told that they would experience forces on their hand.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were instructed to follow the target as accurately as possible and were told that they would experience forces on their hand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the instructions given to subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "44c18c27-30a9-4cf7-bda7-8e829b43054d",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C36",
+      "claim": "Although some subjects guessed that the forces originated from a partner, none of them could tell how many partners they were connected to.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of the experiment, subjects were asked about the nature of the forces. Although some guessed that the forces originated from a partner, none of them could tell how many partners they were connected to.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly reports subjects' post-experiment responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "a799e322-a54a-41cc-9468-c240c6074d22",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C37",
+      "claim": "The positions of the subjects lagged the target's motion due to visual feedback delays in anticipating the target's movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The positions of the subjects lagged the target's motion due to visual feedback delays in anticipating the target's movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly explains the observed lag in subject positions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "88d47a0e-1f44-4d43-ad01-5d9b5709f80a",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C38",
+      "claim": "The force felt by each partner is approximately zero mean, and depended on each individual's relative position to their partners in the group.",
+      "claim_type": "EXPLICIT",
+      "source": "The force felt by each partner is approximately zero mean, and depended on each individual's relative position to their partners in the group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the characteristics of the interaction force and this is shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "82f3d77f-05b4-41b5-8b28-f6749545e55c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C39",
+      "claim": "The collective's mean improvement increased with its size, where inferior individuals in the group improved incrementally more in larger groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the total group's performance increased with the group size, where inferior individuals in the group improved incrementally more in larger groups, and superior individuals were capable of sustaining their superior tracking performance even when connected to a group of individuals with inferior performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "8aad3c7f-cf33-4c0f-932b-8dcc26403d59",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C40",
+      "claim": "Superior individuals were capable of sustaining their superior tracking performance even when connected to a group of individuals with inferior performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the total group's performance increased with the group size, where inferior individuals in the group improved incrementally more in larger groups, and superior individuals were capable of sustaining their superior tracking performance even when connected to a group of individuals with inferior performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "a98390cd-ca91-44db-b2ee-a4bad243809e",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C41",
+      "claim": "Contrary to the results of a previous study, the superior individuals of the dyads in the current study did not improve.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to the results of our previous study (Ganesh et al., 2014), the superior individuals of the dyads in the current study did not improve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly compares the current results to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f6ee2d86-d996-40a5-a042-1f495588cc6d",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C42",
+      "claim": "The discrepancy in the results between the current study and a previous study is likely due to the high amount of visual noise added to the target in order to manipulate each individual's tracking performance.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy in the results is likely due to the high amount of visual noise added to the target in order to manipulate each individual's tracking performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides an explanation for the discrepancy with previous results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "08095242-6eed-4f81-8855-77a57c2077dd",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C43",
+      "claim": "The performance improvements observed in dyads, triads and tetrads did not arise instantaneously, but emerged continuously during the trial such that 90% of the group's final performance improvement was reached after 7 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiment, the performance improvements observed in dyads, triads and tetrads did not arise instantaneously, but emerged continuously during the trial such that 90% of the group's final performance improvement (calculated over the entire trial) was reached after 7 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the temporal dynamics of performance improvement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "099eaced-764f-40ba-9533-af4ae6cffb0d",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C44",
+      "claim": "The similarity in the adaptation rates between dyads, triads and tetrads in reaching their performance improvement at the end of the trial may indicate that the same coordination mechanism may be utilized regardless of the size of the interacting group.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in the adaptation rates between dyads, triads and tetrads in reaching their performance improvement at the end of the trial may indicate that the same coordination mechanism may be utilized regardless of the size of the interacting group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides an interpretation of the similar adaptation rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "3562ee29-89b1-4377-af03-196edcf8ded9",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C45",
+      "claim": "The similarity in adaptation rates for physical interaction stands in contrast with verbal or gestural communication where significantly longer time is needed with more participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in these adaptation rates for physical interaction stands in contrast with verbal or gestural communication where significantly longer time is needed with more participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly compares physical interaction to other forms of communication.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f55b8a18-5ce8-4249-9c09-2f7ed4a660fd",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C46",
+      "claim": "This highlights the advantage of the simultaneity of haptic communication relative to the sequential exchanges in verbal and gestural communication.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights the advantage of the simultaneity of haptic communication relative to the sequential exchanges in verbal and gestural communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states an advantage of haptic communication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "a9b8943c-26d2-453d-b35c-c2d9106d28e3",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C47",
+      "claim": "The neuromechanical goal sharing model suggests a mechanism whereby individuals extract task relevant sensory information from haptics, and integrate it with their own visual information of the target's motion to improve tracking performance during interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuromechanical goal sharing model, which captured the improvements from the empirical data, suggests a mechanism whereby individuals extract task relevant sensory information from haptics, and integrate it with their own visual information of the target's motion to improve tracking performance during interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the mechanism proposed by the neuromechanical goal sharing model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f804780f-b0e2-4d82-b030-9469155b5e1d",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C48",
+      "claim": "In the neuromechanical goal sharing model, each individual extracts a haptic estimate of the target from the interaction force.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, we assumed that each individual extracts a haptic estimate of the target from the interaction force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes an assumption of the neuromechanical goal sharing model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "bd616616-33cb-434d-b2a3-41bc397cff74",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C49",
+      "claim": "The haptic estimate of the target arises from the summed interaction force, which is composed of the elastic couplings to multiple partners, that is equivalent to one elastic coupling to the average partner.",
+      "claim_type": "EXPLICIT",
+      "source": "The haptic estimate of the target arises from the summed interaction force, which is composed of the elastic couplings to multiple partners, that is equivalent to one elastic coupling to the average partner (see Equation 6 in the Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes how the haptic estimate arises and references an equation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "8711cbed-de30-491e-8f6c-d0b45b3e54be",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C50",
+      "claim": "An individual in a triad who is connected to two partners by a total of two springs, each of stiffness 100 N/m, feels an equivalent force to being connected to the average of the two partners' positions by a spring of stiffness 200 N/m.",
+      "claim_type": "EXPLICIT",
+      "source": "In our earlier study (Takagi et al., 2018), we found that a stiffer spring reduces the haptic noise when estimating the partner's target. Mechanics tells us that an individual in a triad who is connected to two partners by a total of two springs, each of stiffness 100 N/m, feels an equivalent force to being connected to the average of the two partners' positions by a spring of stiffness 200 N/m (see Equation 6 in Materials and methods) (Burdet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the mechanical equivalence and cites previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "08f3d2cb-2aa6-4ef6-8a33-5dcb46e4a504",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C51",
+      "claim": "Individuals in larger groups effectively feel like they are connected to the group's average position by a stronger spring.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, individuals in larger groups effectively feel like they are connected to the group's average position by a stronger spring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this as a consequence of the mechanical equivalence.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "185fc5ff-0184-4a7d-9a33-403e2dc872ed",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C52",
+      "claim": "The simulation of the neuromechanical goal sharing model predicted a performance improvement that captured the curvature of the improvement as a function of the partners' relative error with minimal deviation from the data.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation of the neuromechanical goal sharing model predicted a performance improvement that captured the curvature of the improvement as a function of the partners' relative error with minimal deviation from the data when tested in a sensitivity analysis (Figure 4D and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the model's predictions and references figures showing the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "3443185a-9f3e-4104-a57b-3bc7affc8157",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C53",
+      "claim": "The no exchange model predicted an improvement that was linearly dependent on the partners' relative error, which was different from the data.",
+      "claim_type": "EXPLICIT",
+      "source": "This model predicted an improvement that was linearly dependent on the partners' relative error, which was different from the data (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the no exchange model's predictions and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "e5a16cad-17d9-4180-ab75-ec24727b553c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C54",
+      "claim": "The no exchange model predicted that a superior individual in the collective was hindered by inferior partners, and the hindrance was greater with more inferior individuals in contrast to the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the model predicted that a superior individual in the collective was hindered by inferior partners, and the hindrance was greater with more inferior individuals in contrast to the data (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the no exchange model's predictions and compares them to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "b68f786e-b2c0-41ce-816c-c68715667c3c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C55",
+      "claim": "The mismatch between the experimental data and the no exchange model's prediction for triads and tetrads suggests that individuals interacting in large groups use the interaction force to exchange information that is relevant to the task.",
+      "claim_type": "EXPLICIT",
+      "source": "The mismatch between the experimental data and the no exchange model's prediction for triads and tetrads suggests that individuals interacting in large groups use the interaction force to exchange information that is relevant to the task, as was found in dyads in our previous study (Takagi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides an interpretation of the model mismatch and cites previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "33a4a7a7-ee28-4868-a8ea-52ec5713f9e6",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C56",
+      "claim": "The authors hypothesized that individuals interpret the summed interaction force as originating from one entity that tracks a collective target.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that individuals interpret the summed interaction force as originating from one entity that tracks a collective target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "212be9ab-a180-4e60-a581-a3ff0688f6da",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C57",
+      "claim": "The individuals' central nervous system (CNS) recognizes some correlation between the interaction force and the target motion.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this hypothesis, the individuals' central nervous system (CNS) recognizes some correlation between the interaction force and the target motion (Parise and Ernst, 2016), then builds a representation of the entity that tracks the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes this aspect of the hypothesis and cites a previous study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "36236384-ebc3-4ff4-8667-a605c857e5e0",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C58",
+      "claim": "Every individual's CNS in the group estimates one collective target from the summed interaction force regardless of the number of partners in the group.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that every individual's CNS in the group estimates one collective target from the summed interaction force regardless of the number of partners in the group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "2ccbf17d-dfd1-441d-88a2-e6dea2568370",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C59",
+      "claim": "The weights between vision and haptics were assumed to be known by every partner as the authors were interested in comparing the steady-state predictions of the model with the data.",
+      "claim_type": "EXPLICIT",
+      "source": "The weights between vision and haptics were assumed to be known by every partner as we were interested in comparing the steady-state predictions of the model with the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this assumption and its rationale.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "3525c058-f009-44f6-a2c2-eec6ba3dd382",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C60",
+      "claim": "The graded improvement as a function of group size is explained by a reduction in the variance of haptics due to the averaging of the partners' positions in the interaction force.",
+      "claim_type": "EXPLICIT",
+      "source": "This model predicted similar improvements irrespective of group size (see Figure 5A), showing that the graded improvement as a function of group size is indeed explained by a reduction in the variance of haptics due to the averaging of the partners' positions in the interaction force.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly provides an explanation for the graded improvement and references a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "3dd03266-7915-45b2-ae12-343e247ad7fc",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C61",
+      "claim": "The noise in the interaction force is inversely proportional to the squared number of partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the stochastically summed interaction force has noise that is inversely proportional to the squared number of partners (see Equation 11 in Materials and methods), which is different from the mean of the partners' visual tracking noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the noise characteristics and references an equation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "e9889bd2-3bfb-4e9f-9bf7-11034a7dbc15",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C62",
+      "claim": "The predictions of the source separation limiting case consistently overestimated the improvement in comparison to the data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the predictions of this source separation limiting case (see Figure 5F) consistently overestimated the improvement in comparison to the data, showing that our individuals could not break down each individual source in the interaction force.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the source separation model's predictions and compares them to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "8b78cb14-cf09-4fbc-b331-64ef68a275b8",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C63",
+      "claim": "Individuals could not break down each individual source in the interaction force.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the predictions of this source separation limiting case (see Figure 5F) consistently overestimated the improvement in comparison to the data, showing that our individuals could not break down each individual source in the interaction force.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly states this conclusion based on the model comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "2a33a4a0-c529-4e85-bc99-319a5fc005db",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C64",
+      "claim": "The individuals estimate a collective target from the interaction force, which they combine with their own visual target.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the average behavior of all other individuals was identified, and their collective target was inferred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes what individuals do instead of source separation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "768ffd3c-501c-4347-b591-eafcd4f2077a",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C65",
+      "claim": "This reveals a limit in the ability to share and estimate information through haptics.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals a limit in the ability to share and estimate information through haptics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this as a conclusion from the source separation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "23c3f66e-219a-42f4-a790-edf20173a6df",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C66",
+      "claim": "The performance improvement resulting from the neuromechanical goal sharing mechanism is suboptimal relative to that allowed by a putative source separation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance improvement resulting from this mechanism is suboptimal relative to that allowed by a putative source separation mechanism, but it still enables the collective's individuals to improve their tracking error when interacting with superior partners, and to not be hindered by inferior ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly compares the performance of the neuromechanical goal sharing mechanism to the source separation mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "07d42846-2760-4081-98e7-6658c7459b99",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C67",
+      "claim": "The neuromechanical coordination mechanism is scalable, as the time required to adapt to the group's skill is independent of group size.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuromechanical coordination mechanism is also scalable, as the time required to adapt to the group's skill is independent of group size, and a group's total performance improvement increases with its size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this property of the coordination mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f0d3df0d-53aa-4c8d-82b2-c687cf99c72f",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C68",
+      "claim": "A group's total performance improvement increases with its size.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuromechanical coordination mechanism is also scalable, as the time required to adapt to the group's skill is independent of group size, and a group's total performance improvement increases with its size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "19f35f30-ffcd-4094-bdc5-14d414f27c7a",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C69",
+      "claim": "The surprising result that the collective's mean improvement increases in larger groups is explained by the stochastic properties of the collective target that is extracted from the summed interaction force.",
+      "claim_type": "EXPLICIT",
+      "source": "The surprising result that the collective's mean improvement increases in larger groups is explained by the stochastic properties of the collective target that is extracted from the summed interaction force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly provides an explanation for the main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "d2942d45-a739-4e09-95ea-53ad3c2e765e",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C70",
+      "claim": "The target was composed of five spots that were spread thinly or widely to control each individual's tracking performance.",
+      "claim_type": "EXPLICIT",
+      "source": "The target was composed of five spots were spread thinly or widely to control each individual's tracking performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes how the target was designed to manipulate performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "27e946cf-98b2-48ce-8d1d-876139cb4fa4",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C71",
+      "claim": "The deviation in the spots' velocities, which was fixed during a trial, was randomized at every trial so participants could not know their skill relative to their partners beforehand.",
+      "claim_type": "EXPLICIT",
+      "source": "The deviation in the spots' velocities, which was fixed during a trial, was randomized at every trial so participants could not know their skill relative to their partners beforehand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the randomization procedure and its purpose.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f410731a-abf2-4ea1-b3e3-72bda880bede",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C72",
+      "claim": "The dynamic cloud consisted of five circular spots that were displayed every millisecond.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic cloud consisted of five circular spots that were displayed every millisecond (as shown in the Video 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the visual display of the target.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "b9a19b32-4c98-4025-8e80-968b8ae200d7",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C73",
+      "claim": "Each spot was regenerated one at a time every 400 ms by picking a new position and velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Each spot was regenerated one at a time every 400 ms by picking a new position and velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the temporal dynamics of the target spots.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "a7cf9543-15f8-41d7-a686-5828f259a041",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C74",
+      "claim": "Position parameters were determined at the start of a trial from normal random distributions with a standard deviation of 0.005 m.",
+      "claim_type": "EXPLICIT",
+      "source": "These position and velocity parameters were determined at the start of a trial from normal random distributions with a standard deviation of 0.005 m for the position, and from a set of ten equally spaced values from 0.005 m/s to 0.3 m/s for the velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes how position parameters were determined.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "28cb6891-2c2f-4f54-a1c2-673b22d75506",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C75",
+      "claim": "Velocity parameters were determined from a set of ten equally spaced values from 0.005 m/s to 0.3 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "These position and velocity parameters were determined at the start of a trial from normal random distributions with a standard deviation of 0.005 m for the position, and from a set of ten equally spaced values from 0.005 m/s to 0.3 m/s for the velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes how velocity parameters were determined.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "8ac3faa3-7d9b-43a6-aa41-58f55707cf29",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C76",
+      "claim": "The wider the spots were spread, the more difficult it was to follow the target as its true position was hard to guess.",
+      "claim_type": "EXPLICIT",
+      "source": "The wider the spots were spread, the more difficult it was to follow the target as its true position was hard to guess (K\u00f6rding and Wolpert, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the effect of spot spread on task difficulty and cites a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "a4f74126-e66f-4381-9832-b98e2486c4b5",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C77",
+      "claim": "Spots with low velocity noise were easy to track but high velocity noise spots spread out rapidly like fireworks.",
+      "claim_type": "EXPLICIT",
+      "source": "Spots with low velocity noise were easy to track but high velocity noise spots spread out rapidly like fireworks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the effect of velocity noise on tracking difficulty.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "c6f0fc24-d684-4959-aa4b-7ca6615dc9ca",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C78",
+      "claim": "Every time a velocity noise was selected for each subject, it was removed from the set that was unique to each subject.",
+      "claim_type": "EXPLICIT",
+      "source": "Every time a velocity noise was selected for each subject, it was removed from the set that was unique to each subject.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the sampling procedure for velocity noise.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "619f3f0f-123d-4bb5-9d96-43e25442bfa1",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C79",
+      "claim": "The random selection ensured that an individual's own performance and the others' tracking skill were unknown a priori.",
+      "claim_type": "EXPLICIT",
+      "source": "The random selection ensured that an individual's own performance and the others' tracking skill were unknown a priori.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the purpose of the random selection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "120dd092-567c-4c68-958a-2e6ada04f6f7",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C80",
+      "claim": "Subjects were instructed to follow the target as accurately as possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were instructed to follow the target as accurately as possible and were told that they would experience forces on their hand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the instructions given to subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "16a6db61-c74a-4db5-bae0-1220cca04720",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C81",
+      "claim": "Twos experienced 80 total trials and fours completed 100 trials in total.",
+      "claim_type": "EXPLICIT",
+      "source": "Twos experienced 80 total trials and fours completed 100 trials in total.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the number of trials for each group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "d0119853-392a-4c4b-9d41-3aa726ad6d17",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C82",
+      "claim": "Both twos and fours experienced 10 solo training trials to become acquainted to the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Both twos and fours experienced 10 solo training trials to become acquainted to the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the training phase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "9d303189-f966-41ab-89f5-06161ba96312",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C83",
+      "claim": "Interaction data from both triads and tetrads were collected during the experiment with fours.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction data from both triads and tetrads were collected during the experiment with fours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes how triad and tetrad data were collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "2a5cb6da-22ea-4ca9-9da2-57f6116afa95",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C84",
+      "claim": "All four combinations of triads possible from the tetrad were tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected as much data as possible from triads by testing all four combinations of triads possible from the tetrad, and collected the tetrad interaction data in the last 30 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the triad testing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "ab000164-f3d0-490d-8d15-cde3b2d58e5b",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C85",
+      "claim": "In total, 40 connected trials for dyads and triads, and 30 connected trials for tetrads were conducted.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 40 connected trials for dyads and triads, and 30 connected trials for tetrads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states the total number of connected trials for each group size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "4fdcef47-da57-48ec-993d-0095a54e92d0",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C87",
+      "claim": "Each recruited group of twos and fours were treated as a random factor to control for individual differences in their inherent ability to improve from the interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The data was fit using a linear mixed-effects model, where each recruited group of twos and fours were treated as a random factor to control for individual differences in their inherent ability to improve from the interaction (see Equation 2 in the Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes how individual differences were controlled in the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "79aa6513-3241-467b-8fef-f1361bd499e9",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C89",
+      "claim": "The Cartesian product of two one-dimensional models was used in simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cartesian product of two one-dimensional models as described below was used in simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the structure of the simulation model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "bb4868e6-b4cb-497b-928e-a91fc0d0cf52",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C90",
+      "claim": "The sum of the elastic coupling to all partners is equivalent to the interaction force when coupled with a more rigid and damped elastic interaction with the average of the partners' hands.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, as we see in the right side of this equation, the sum of the elastic coupling to all partners is equivalent to the interaction force when coupled with a more rigid and damped elastic interaction with the average of the partners' hands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes this mechanical equivalence.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "72ca9bc0-3a36-403d-a09f-9697c56847b2",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C92",
+      "claim": "In the no exchange model, each individual ignores the interaction forces and tracks the target using the visual information of the target's position, under the influence of the dynamics of the elastic bands.",
+      "claim_type": "EXPLICIT",
+      "source": "In the no exchange model, each individual ignores the interaction forces and tracks the target using the visual information of the target's position, as in Equation 8, under the influence of the dynamics of the elastic bands described in Equation 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the no exchange model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "252ba68c-f4d6-44b8-8e13-148041ead1f2",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C93",
+      "claim": "The neuromechanical goal sharing model proposes that, in dyads, both individuals extract a haptic estimate of the target's position from the interaction force with the partner, and optimally combine it with their own visual estimate of the target.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuromechanical goal sharing model (Takagi et al., 2017; Takagi et al., 2018) proposes that, in dyads, both individuals extract a haptic estimate of the target's position from the interaction force with the partner, and optimally combine it with their own visual estimate of the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the neuromechanical goal sharing model and cites previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "0c1d753b-da69-43d6-8780-e4fa1895ca64",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C95",
+      "claim": "In previous studies, the interaction force was linearly dependent on the partner's hand position, and so the noise in the haptic measurement of the partner's target was the partner's visual tracking noise.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies (Takagi et al., 2017, Takagi et al., 2018), the interaction; force was linearly dependent on the partner's hand position, and so the noise in the haptic measurement of the partner's target was the partner's visual tracking noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes findings from previous studies and cites them.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "d37fb1a8-27be-41ae-852f-242d9a75d3af",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C98",
+      "claim": "The measurement noise on the collective target will reduce in larger collectives even if the partners' average tracking noise is equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the measurement noise on the collective target will reduce in larger collectives even if the partners' average tracking noise is equivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this consequence of the noise model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "0a458e86-dc72-400a-aaa0-a21b376e2a2a",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C99",
+      "claim": "Another eight subjects were recruited individually to carry out a haptic tracking control experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Another eight subjects were recruited individually to carry out a haptic tracking control experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes an additional experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "741022b9-735c-4ec2-b7f0-2bf7838d2b82",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C100",
+      "claim": "In the haptic tracking experiment, the target was invisible to the subject.",
+      "claim_type": "EXPLICIT",
+      "source": "The target movement was the same as in Equation 1, but without visual feedback, that is the target was invisible to the subject.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the haptic tracking experiment conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "a36807ce-294a-4bfb-a9db-3780d85b2785",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C101",
+      "claim": "Subjects in the haptic tracking experiment tracked the haptic target for 15 s, and experienced five trials of each coupling stiffness consecutively in the order of 300 N/m, 200 N/m and 100 N/m.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects tracked the haptic target for 15 s, and experienced five trials of each coupling stiffness consecutively in the order of 300 N/m, 200 N/m and 100 N/m, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the haptic tracking experiment protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "27abe67e-8ae6-4700-a7d4-8aab2cf3bd17",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C102",
+      "claim": "Stronger stiffness resulted in lower tracking errors in the haptic tracking experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4\u2014figure supplement 1 shows the results of this experiment, revealing that stronger stiffness resulted in lower tracking errors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text explicitly describes the results of the haptic tracking experiment and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f665a114-0936-4f8b-bfb4-1bc9fc736bac",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C103",
+      "claim": "The values found in the haptic tracking experiment were used to alter the source separation and neuromechanical goal sharing models by changing the sensory noise in the haptic estimate of the collective target.",
+      "claim_type": "EXPLICIT",
+      "source": "The values found in this experiment were used to alter the source separation and neuromechanical goal sharing models by changing the sensory noise in the haptic estimate of the collective target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes how the haptic tracking experiment results were used in the models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "98e40de9-541e-4edd-b0c0-4737ec85a2cd",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "claim_id": "C109",
+      "claim": "In the source separation limiting case, s\u22121 observations of the partners' target position are directly provided to each individual in the collective.",
+      "claim_type": "EXPLICIT",
+      "source": "In this limiting case, s\u22121 observations of the partners' target position are directly provided to each individual in the collective, who integrates the partners' targets with their own visual estimate of the target, providing s total observations of the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the information available in the source separation limiting case.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bc044d22-736e-465e-b5d3-519cb9086b55",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study received ethical approval and recruited 72 subjects who provided written informed consent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 provide standard ethical compliance and participant information. The ethical approval reference and participant count are explicitly stated and represent appropriate documentation for human subjects research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The experimental setup involved 72 subjects in dyads, triads, and tetrads tracking a moving target using robotic handles connected by virtual elastic bands (100 N/m stiffness), with visual noise applied to manipulate individual tracking difficulty.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C32, C70-C85 collectively describe a well-documented experimental protocol. The apparatus (Phantom 1.5HF), connection parameters, visual noise manipulation method, trial structure, and randomization procedures are explicitly detailed with appropriate methodological rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "ff63d89c-9986-4383-97e7-47fc72459178",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Visual noise applied to the target was linearly related to tracking error (R\u00b2=0.80\u00b10.01), enabling experimental manipulation of individual tracking ability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C33, C34 demonstrate a validated method for manipulating task difficulty. The linear relationship with high R\u00b2 values (0.80\u00b10.01) across subjects provides strong evidence that visual noise effectively controlled tracking performance, which is essential for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "9806577c-e802-4abd-bf7f-6fef33845bb6",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Collective performance improvement increased significantly with group size, with dyads showing less improvement than triads (t(22)=2.53, p<0.02) and tetrads (t(22)=6.07, p<10\u207b\u2075), confirmed by mixed-effects analysis (\u03c7\u00b2(2)=412, p<10\u207b\u00b9\u2075).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C39, C68 present a major finding with strong statistical support. Multiple statistical tests (t-tests and mixed-effects analysis) with highly significant p-values demonstrate that larger groups achieve greater collective improvement. The mixed-effects model appropriately controls for individual differences (C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "2c546e57-2f35-4019-86aa-ac153ceefc4f",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Inferior individuals improved significantly when coupled to superior partners across all group sizes (dyads: t(11)=10.8, p<10\u207b\u2076; triads: t(11)=24.0, p<10\u207b\u00b9\u2070; tetrads: t(11)=23.0, p<10\u207b\u2079).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 demonstrate robust improvement for inferior individuals with highly significant p-values across all group sizes. The Bonferroni correction (0.05/6) was appropriately applied, and the effect is consistent across conditions, supporting the conclusion that inferior individuals benefit from interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f9a288f9-73c6-4457-bee0-47a7e5abfe75",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Superior individuals maintained their tracking performance when coupled to inferior partners regardless of group size (dyads: t(11)=-2.22, p>0.05; triads: t(11)=-1.53, p>0.15; tetrads: t(11)=3.01, p>0.012).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15, C19, C40 show that superior individuals were not hindered by inferior partners, with non-significant p-values after Bonferroni correction. This surprising finding contradicts the authors' initial hypothesis (C27) and is a key result demonstrating the robustness of the coordination mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "3e071950-9599-4673-9b18-24adde5caa68",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The time to reach 90% of final improvement was rapid (7.4\u00b10.9 s) and independent of group size, with similar decay constants across dyads, triads, and tetrads (p>0.11 and p>0.44).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18, C43, C67 demonstrate scalability of the coordination mechanism. The non-parametric Mann-Whitney U-tests appropriately compare decay constants, and the finding that adaptation time is independent of group size is well-supported and represents an important characteristic of the coordination mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "bebb39b5-5f9f-4d79-8dd0-6bb8bd9e5756",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Superior individuals in dyads did not improve in the current study, contrary to previous findings, likely due to high visual noise levels used to manipulate tracking performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C42 acknowledge a discrepancy with prior work (C21) but provide only a speculative explanation. While the authors propose that high visual noise explains the difference, this hypothesis is not directly tested. The explanation is plausible but remains unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "790fc31b-c8cf-4bce-8661-b2c7987f8f37",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The 'no exchange' model, where individuals ignore interaction forces and track only visually, predicted linear improvement with partner error and hindrance of superior individuals by inferior partners, which contradicted the experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, C92 describe a control model that fails to explain the data. The model's predictions (linear dependence, hindrance of superior individuals) clearly mismatch the observed nonlinear improvements and maintained performance of superior individuals, supporting the need for an alternative mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The neuromechanical goal sharing model, where individuals extract a collective target from summed interaction forces and integrate it with visual information, accurately predicted performance improvements across all group sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52, C56-C59, C93 describe a computational model that captures the curvature of improvement functions and correctly predicts group size effects. The model is grounded in prior work (C22, C23) and extends it to larger groups. Figure 4D shows good agreement between model and data, validated through sensitivity analysis (Figure 4\u2014figure supplement 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "c93fa7b6-0950-4241-bae3-0e0555db7a33",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The graded improvement with group size is explained by noise reduction in the collective target estimate, where haptic noise is inversely proportional to the squared number of partners due to stochastic averaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C61, C69, C98 provide a mechanistic explanation for the main finding. The mathematical derivation (Equation 11) shows that noise scales as 1/(s-1)\u00b2 rather than 1/(s-1), which is validated by simulations (Figure 5A-D) demonstrating that this noise property is necessary to explain the graded improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "cb6377ab-451e-4929-b615-5aa898ed6867",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The source separation limiting case, where individuals extract each partner's target separately, overestimated performance improvements, indicating that individuals cannot decompose individual contributions from the summed interaction force.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65, C109 test an alternative hypothesis and demonstrate a limitation of haptic information processing. The source separation model's predictions (Figure 5F) consistently exceed observed improvements, providing strong evidence that individuals estimate a single collective target rather than separating individual partner contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "721e4fb8-5af4-49d0-8de4-6933c261663c",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The neuromechanical goal sharing mechanism is suboptimal compared to source separation but enables inferior individuals to improve and prevents superior individuals from being hindered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 synthesizes findings from the model comparisons (C52, C62-C65). The comparison between neuromechanical goal sharing and source separation models demonstrates that while the mechanism is not theoretically optimal, it achieves the key functional benefits observed in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "10a7d992-6f13-4f05-b2bd-397c50264b20",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A haptic tracking control experiment with 8 subjects showed that stronger coupling stiffness (300, 200, 100 N/m) resulted in lower tracking errors, and these values were used to adjust model parameters for compliance noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C103 describe a control experiment that quantifies how coupling stiffness affects haptic tracking. The results (Figure 4\u2014figure supplement 1) provide empirical data to parameterize the compliance noise term in the models, strengthening the model's biological plausibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "ecc513a8-6ce3-4e41-878b-4cdc90b49205",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work established that dyads improve through physical interaction by estimating partners' targets from interaction forces, with stronger connections yielding better estimates, but it was unknown whether this mechanism extends to larger groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 accurately summarize relevant prior work and establish the motivation for the current study. The citations are appropriate and the characterization of previous findings provides proper context for extending the investigation to triads and tetrads.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "3afb0b2d-d3ca-4462-bb0e-b88f91e975ed",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors hypothesized that larger groups would produce noisier haptic estimates and that connection dynamics would hinder superior partners' performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 state the study's initial hypotheses, which were ultimately contradicted by the results. These hypotheses are clearly stated and provide important context for interpreting the surprising findings that superior individuals maintained performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "90285e05-a85c-4caf-b3d0-fe111b870c39",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Subjects were instructed to track the target accurately and were told they would experience forces, but none could determine how many partners they were connected to.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 document important experimental controls. The post-experiment debriefing showing that subjects could not identify the number of partners confirms that the experimental manipulation was effective and that subjects were not using explicit knowledge of group size.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "d2062bcd-c80d-4134-956f-fd9e68eb8522",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Subject positions lagged the target due to visual feedback delays, and interaction forces had approximately zero mean and depended on relative positions within the group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 describe observed characteristics of the tracking behavior and interaction forces. These observations are consistent with the physics of the system and are illustrated in Figure 2A, providing important descriptive context for the experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "48b2331b-b749-4f1a-82ef-eb73a084509d",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Similar adaptation rates across group sizes suggest a common coordination mechanism and highlight the advantage of simultaneous haptic communication over sequential verbal/gestural communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C46 provide interpretations of the similar adaptation rates. While C44 is a reasonable inference from C16-C17, claims C45-C46 make comparisons to verbal/gestural communication without providing citations or data to support the assertion that these modalities require longer time with more participants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "f3f3c323-a7a2-4a8a-84db-6bd3686d1750",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The mismatch between the no exchange model and data for triads and tetrads suggests individuals use interaction forces to exchange task-relevant information in large groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 draws an appropriate inference from the model-data comparison (C53-C54). The conclusion that information exchange occurs is well-supported by the failure of the no exchange model and is consistent with prior findings in dyads (C22).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "ed7ec922-6c0a-4da1-bdbe-23d60f5b7309",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Statistical analysis used linear mixed-effects models treating groups as random factors, and simulations used Cartesian products of one-dimensional models with mechanical equivalence between multiple elastic couplings and a single stiffer coupling to the average position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C89, C90 describe appropriate statistical and modeling methods. The mixed-effects approach controls for individual differences, and the mechanical equivalence (Equation 6) is mathematically correct and properly applied in the simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    },
+    {
+      "id": "438b797d-ba6d-4ae1-abcc-d73b0cf068f1",
+      "content_id": "e899c1f8-1485-468d-b58a-bd5cb59aae31",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "In previous dyad studies, haptic measurement noise equaled the partner's visual tracking noise because interaction force was linearly dependent on partner hand position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 accurately characterizes findings from prior work (Takagi et al., 2017, 2018) and establishes the basis for extending the noise model to larger groups. This provides important context for understanding how the noise model differs in collectives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:40:27.051655Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "edd79cd4-afa5-4dd5-aa55-4e209bb362ac",
+      "result_id": "bc044d22-736e-465e-b5d3-519cb9086b55"
+    },
+    {
+      "claim_id": "31b69510-ece7-4294-b884-51d3912d7dd4",
+      "result_id": "bc044d22-736e-465e-b5d3-519cb9086b55"
+    },
+    {
+      "claim_id": "dde7d04b-1bff-4ae1-a8ff-95c76f35596e",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "b21384e5-9859-45ff-b527-9884cc6a6b2c",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "ceacea0d-2c1b-4647-93df-fde33309a8cc",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "298d336c-7d70-46ff-bc92-e3877c70e055",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "f139305a-71bc-460f-850f-985227424e16",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "908255a6-a1c1-4a0a-9024-20d27825290c",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "d2942d45-a739-4e09-95ea-53ad3c2e765e",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "27e946cf-98b2-48ce-8d1d-876139cb4fa4",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "f410731a-abf2-4ea1-b3e3-72bda880bede",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "b9a19b32-4c98-4025-8e80-968b8ae200d7",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "a7cf9543-15f8-41d7-a686-5828f259a041",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "28cb6891-2c2f-4f54-a1c2-673b22d75506",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "8ac3faa3-7d9b-43a6-aa41-58f55707cf29",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "a4f74126-e66f-4381-9832-b98e2486c4b5",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "c6f0fc24-d684-4959-aa4b-7ca6615dc9ca",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "619f3f0f-123d-4bb5-9d96-43e25442bfa1",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "120dd092-567c-4c68-958a-2e6ada04f6f7",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "16a6db61-c74a-4db5-bae0-1220cca04720",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "d0119853-392a-4c4b-9d41-3aa726ad6d17",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "9d303189-f966-41ab-89f5-06161ba96312",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "2a5cb6da-22ea-4ca9-9da2-57f6116afa95",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "ab000164-f3d0-490d-8d15-cde3b2d58e5b",
+      "result_id": "ee5e5187-8206-4c84-acf3-5b6c5e1b008b"
+    },
+    {
+      "claim_id": "01f07e09-5033-4552-82de-dad3d95de34f",
+      "result_id": "ff63d89c-9986-4383-97e7-47fc72459178"
+    },
+    {
+      "claim_id": "d8ce1452-209c-4a16-9b73-e760915c8582",
+      "result_id": "ff63d89c-9986-4383-97e7-47fc72459178"
+    },
+    {
+      "claim_id": "de445259-cec1-4c76-9945-745480a9428b",
+      "result_id": "ff63d89c-9986-4383-97e7-47fc72459178"
+    },
+    {
+      "claim_id": "991a2745-1661-4198-84e8-57c4728452ae",
+      "result_id": "ff63d89c-9986-4383-97e7-47fc72459178"
+    },
+    {
+      "claim_id": "c566e1ea-dd5d-408a-8d4a-bf069d225adb",
+      "result_id": "9806577c-e802-4abd-bf7f-6fef33845bb6"
+    },
+    {
+      "claim_id": "dc3a4148-d4ef-4eb9-8905-20052b46f050",
+      "result_id": "9806577c-e802-4abd-bf7f-6fef33845bb6"
+    },
+    {
+      "claim_id": "05409a78-9e40-49d1-ba85-13eeb6565871",
+      "result_id": "9806577c-e802-4abd-bf7f-6fef33845bb6"
+    },
+    {
+      "claim_id": "82f3d77f-05b4-41b5-8b28-f6749545e55c",
+      "result_id": "9806577c-e802-4abd-bf7f-6fef33845bb6"
+    },
+    {
+      "claim_id": "f0d3df0d-53aa-4c8d-82b2-c687cf99c72f",
+      "result_id": "9806577c-e802-4abd-bf7f-6fef33845bb6"
+    },
+    {
+      "claim_id": "5eb801ec-41d2-47c2-8921-e2bf7fc663ff",
+      "result_id": "2c546e57-2f35-4019-86aa-ac153ceefc4f"
+    },
+    {
+      "claim_id": "9694cffa-7bd3-47e1-8f02-9c430efc8573",
+      "result_id": "2c546e57-2f35-4019-86aa-ac153ceefc4f"
+    },
+    {
+      "claim_id": "a220a5c8-face-4b5a-83f0-e92b1a184dee",
+      "result_id": "2c546e57-2f35-4019-86aa-ac153ceefc4f"
+    },
+    {
+      "claim_id": "59ccca36-fd8d-4f44-b707-aa801be428cd",
+      "result_id": "f9a288f9-73c6-4457-bee0-47a7e5abfe75"
+    },
+    {
+      "claim_id": "a4e0b222-c88b-4515-ab54-d58d5f662ea8",
+      "result_id": "f9a288f9-73c6-4457-bee0-47a7e5abfe75"
+    },
+    {
+      "claim_id": "c26e971c-47e4-4185-a36b-c1a5bc64d37c",
+      "result_id": "f9a288f9-73c6-4457-bee0-47a7e5abfe75"
+    },
+    {
+      "claim_id": "753f349d-a128-44f9-9c6f-e8b0f513e434",
+      "result_id": "f9a288f9-73c6-4457-bee0-47a7e5abfe75"
+    },
+    {
+      "claim_id": "8aad3c7f-cf33-4c0f-932b-8dcc26403d59",
+      "result_id": "f9a288f9-73c6-4457-bee0-47a7e5abfe75"
+    },
+    {
+      "claim_id": "2e50a817-b10a-42d8-b7a4-00d8723b2c9b",
+      "result_id": "3e071950-9599-4673-9b18-24adde5caa68"
+    },
+    {
+      "claim_id": "908b051c-6436-4c95-ae21-a4b7fd8a258e",
+      "result_id": "3e071950-9599-4673-9b18-24adde5caa68"
+    },
+    {
+      "claim_id": "450fe3f5-693a-4b5a-bade-8112ec72a7ba",
+      "result_id": "3e071950-9599-4673-9b18-24adde5caa68"
+    },
+    {
+      "claim_id": "08095242-6eed-4f81-8855-77a57c2077dd",
+      "result_id": "3e071950-9599-4673-9b18-24adde5caa68"
+    },
+    {
+      "claim_id": "07d42846-2760-4081-98e7-6658c7459b99",
+      "result_id": "3e071950-9599-4673-9b18-24adde5caa68"
+    },
+    {
+      "claim_id": "a98390cd-ca91-44db-b2ee-a4bad243809e",
+      "result_id": "bebb39b5-5f9f-4d79-8dd0-6bb8bd9e5756"
+    },
+    {
+      "claim_id": "f6ee2d86-d996-40a5-a042-1f495588cc6d",
+      "result_id": "bebb39b5-5f9f-4d79-8dd0-6bb8bd9e5756"
+    },
+    {
+      "claim_id": "3443185a-9f3e-4104-a57b-3bc7affc8157",
+      "result_id": "790fc31b-c8cf-4bce-8661-b2c7987f8f37"
+    },
+    {
+      "claim_id": "e5a16cad-17d9-4180-ab75-ec24727b553c",
+      "result_id": "790fc31b-c8cf-4bce-8661-b2c7987f8f37"
+    },
+    {
+      "claim_id": "72ca9bc0-3a36-403d-a09f-9697c56847b2",
+      "result_id": "790fc31b-c8cf-4bce-8661-b2c7987f8f37"
+    },
+    {
+      "claim_id": "a9b8943c-26d2-453d-b35c-c2d9106d28e3",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "f804780f-b0e2-4d82-b030-9469155b5e1d",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "bd616616-33cb-434d-b2a3-41bc397cff74",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "8711cbed-de30-491e-8f6c-d0b45b3e54be",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "08f3d2cb-2aa6-4ef6-8a33-5dcb46e4a504",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "185fc5ff-0184-4a7d-9a33-403e2dc872ed",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "33a4a7a7-ee28-4868-a8ea-52ec5713f9e6",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "212be9ab-a180-4e60-a581-a3ff0688f6da",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "36236384-ebc3-4ff4-8667-a605c857e5e0",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "2ccbf17d-dfd1-441d-88a2-e6dea2568370",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "252ba68c-f4d6-44b8-8e13-148041ead1f2",
+      "result_id": "0dccca2a-0b7d-4b55-8db1-e94f2b122b39"
+    },
+    {
+      "claim_id": "3525c058-f009-44f6-a2c2-eec6ba3dd382",
+      "result_id": "c93fa7b6-0950-4241-bae3-0e0555db7a33"
+    },
+    {
+      "claim_id": "3dd03266-7915-45b2-ae12-343e247ad7fc",
+      "result_id": "c93fa7b6-0950-4241-bae3-0e0555db7a33"
+    },
+    {
+      "claim_id": "19f35f30-ffcd-4094-bdc5-14d414f27c7a",
+      "result_id": "c93fa7b6-0950-4241-bae3-0e0555db7a33"
+    },
+    {
+      "claim_id": "d37fb1a8-27be-41ae-852f-242d9a75d3af",
+      "result_id": "c93fa7b6-0950-4241-bae3-0e0555db7a33"
+    },
+    {
+      "claim_id": "e9889bd2-3bfb-4e9f-9bf7-11034a7dbc15",
+      "result_id": "cb6377ab-451e-4929-b615-5aa898ed6867"
+    },
+    {
+      "claim_id": "8b78cb14-cf09-4fbc-b331-64ef68a275b8",
+      "result_id": "cb6377ab-451e-4929-b615-5aa898ed6867"
+    },
+    {
+      "claim_id": "2a33a4a0-c529-4e85-bc99-319a5fc005db",
+      "result_id": "cb6377ab-451e-4929-b615-5aa898ed6867"
+    },
+    {
+      "claim_id": "768ffd3c-501c-4347-b591-eafcd4f2077a",
+      "result_id": "cb6377ab-451e-4929-b615-5aa898ed6867"
+    },
+    {
+      "claim_id": "98e40de9-541e-4edd-b0c0-4737ec85a2cd",
+      "result_id": "cb6377ab-451e-4929-b615-5aa898ed6867"
+    },
+    {
+      "claim_id": "23c3f66e-219a-42f4-a790-edf20173a6df",
+      "result_id": "721e4fb8-5af4-49d0-8de4-6933c261663c"
+    },
+    {
+      "claim_id": "0a458e86-dc72-400a-aaa0-a21b376e2a2a",
+      "result_id": "10a7d992-6f13-4f05-b2bd-397c50264b20"
+    },
+    {
+      "claim_id": "741022b9-735c-4ec2-b7f0-2bf7838d2b82",
+      "result_id": "10a7d992-6f13-4f05-b2bd-397c50264b20"
+    },
+    {
+      "claim_id": "a36807ce-294a-4bfb-a9db-3780d85b2785",
+      "result_id": "10a7d992-6f13-4f05-b2bd-397c50264b20"
+    },
+    {
+      "claim_id": "27abe67e-8ae6-4700-a7d4-8aab2cf3bd17",
+      "result_id": "10a7d992-6f13-4f05-b2bd-397c50264b20"
+    },
+    {
+      "claim_id": "f665a114-0936-4f8b-bfb4-1bc9fc736bac",
+      "result_id": "10a7d992-6f13-4f05-b2bd-397c50264b20"
+    },
+    {
+      "claim_id": "44f8b1e7-a734-40f5-afd7-6139ff10fe6c",
+      "result_id": "ecc513a8-6ce3-4e41-878b-4cdc90b49205"
+    },
+    {
+      "claim_id": "f7785930-0188-42be-9119-d75a4e91c62c",
+      "result_id": "ecc513a8-6ce3-4e41-878b-4cdc90b49205"
+    },
+    {
+      "claim_id": "36fdb4d9-ff15-428c-9c09-507ecfaa8914",
+      "result_id": "ecc513a8-6ce3-4e41-878b-4cdc90b49205"
+    },
+    {
+      "claim_id": "0ea9d210-7e07-4a2c-896e-922109eff57c",
+      "result_id": "ecc513a8-6ce3-4e41-878b-4cdc90b49205"
+    },
+    {
+      "claim_id": "ebe5d654-f882-4e78-a4cc-6b36588636a3",
+      "result_id": "ecc513a8-6ce3-4e41-878b-4cdc90b49205"
+    },
+    {
+      "claim_id": "39842238-359a-4ed4-ac54-7d6cf69c50f1",
+      "result_id": "3afb0b2d-d3ca-4462-bb0e-b88f91e975ed"
+    },
+    {
+      "claim_id": "145ca94e-5e42-4a36-bf2f-ae3e2aa649e2",
+      "result_id": "3afb0b2d-d3ca-4462-bb0e-b88f91e975ed"
+    },
+    {
+      "claim_id": "474b9224-912a-484b-9c5c-f58311928a55",
+      "result_id": "3afb0b2d-d3ca-4462-bb0e-b88f91e975ed"
+    },
+    {
+      "claim_id": "b3ba72ad-c9cc-4d4d-93c6-b1702f540b39",
+      "result_id": "90285e05-a85c-4caf-b3d0-fe111b870c39"
+    },
+    {
+      "claim_id": "44c18c27-30a9-4cf7-bda7-8e829b43054d",
+      "result_id": "90285e05-a85c-4caf-b3d0-fe111b870c39"
+    },
+    {
+      "claim_id": "a799e322-a54a-41cc-9468-c240c6074d22",
+      "result_id": "d2062bcd-c80d-4134-956f-fd9e68eb8522"
+    },
+    {
+      "claim_id": "88d47a0e-1f44-4d43-ad01-5d9b5709f80a",
+      "result_id": "d2062bcd-c80d-4134-956f-fd9e68eb8522"
+    },
+    {
+      "claim_id": "099eaced-764f-40ba-9533-af4ae6cffb0d",
+      "result_id": "48b2331b-b749-4f1a-82ef-eb73a084509d"
+    },
+    {
+      "claim_id": "3562ee29-89b1-4377-af03-196edcf8ded9",
+      "result_id": "48b2331b-b749-4f1a-82ef-eb73a084509d"
+    },
+    {
+      "claim_id": "f55b8a18-5ce8-4249-9c09-2f7ed4a660fd",
+      "result_id": "48b2331b-b749-4f1a-82ef-eb73a084509d"
+    },
+    {
+      "claim_id": "b68f786e-b2c0-41ce-816c-c68715667c3c",
+      "result_id": "f3f3c323-a7a2-4a8a-84db-6bd3686d1750"
+    },
+    {
+      "claim_id": "4fdcef47-da57-48ec-993d-0095a54e92d0",
+      "result_id": "ed7ec922-6c0a-4da1-bdbe-23d60f5b7309"
+    },
+    {
+      "claim_id": "79aa6513-3241-467b-8fef-f1361bd499e9",
+      "result_id": "ed7ec922-6c0a-4da1-bdbe-23d60f5b7309"
+    },
+    {
+      "claim_id": "bb4868e6-b4cb-497b-928e-a91fc0d0cf52",
+      "result_id": "ed7ec922-6c0a-4da1-bdbe-23d60f5b7309"
+    },
+    {
+      "claim_id": "0c1d753b-da69-43d6-8780-e4fa1895ca64",
+      "result_id": "438b797d-ba6d-4ae1-abcc-d73b0cf068f1"
+    }
+  ],
+  "comparisons": []
+}

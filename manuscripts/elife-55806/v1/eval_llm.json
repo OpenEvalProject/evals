@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CCDC137 is identified as a target protein depleted by HIV-1 Vpr through a cullin4A-DDB1-DCAF1 dependent, proteasome-mediated mechanism. Among numerous candidate proteins tested, only CCDC137 (cPERP-B) was depleted by Vpr, with depletion occurring potently even at barely detectable Vpr levels and being blocked by proteasome inhibitor MG132 or DCAF1 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37-C41 provide converging evidence from multiple experimental approaches (co-transfection screens, dose-response experiments, proteasome inhibition, and DCAF1 knockdown) demonstrating CCDC137 as a specific Vpr target. The data show specificity (only CCDC137 depleted among candidates), mechanism (proteasome and DCAF1-dependent), and potency (substoichiometric Vpr depletes CCDC137).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C49"
+    ],
+    "result": "Vpr-induced CCDC137 depletion requires specific degron sequences in CCDC137, particularly residues 61-75 and an LxxLL motif at positions 228-232. Combined mutations at residues 61-65 or 66-70 with the L/A mutation render CCDC137 substantially resistant to Vpr-induced depletion without affecting its nucleolar localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47, C49 describe systematic mutagenesis experiments that map Vpr-binding/degron regions in CCDC137. The data show that specific mutations confer Vpr resistance while maintaining normal cellular localization, providing strong evidence for direct interaction requirements. The alanine scanning approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CCDC137 physically associates with Vpr as demonstrated by co-immunoprecipitation and proximity biotinylation assays. Wild-type CCDC137, but not Vpr-resistant mutants, co-precipitates with GST-Vpr, and a non-depleting Vpr mutant (Q65R) fails to co-precipitate CCDC137, while control proteins do not interact with Vpr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 provide multiple lines of biochemical evidence for direct Vpr-CCDC137 interaction using complementary approaches (GST pulldown, co-IP, proximity biotinylation). The specificity is demonstrated through appropriate negative controls (Vpr-resistant CCDC137 mutants, non-depleting Vpr mutants, unrelated proteins), supporting a direct interaction model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Endogenous CCDC137 is depleted in cells infected with HIV-1 viruses expressing Vpr from multiple strains. V1/HA-Vpr infection causes profound CCDC137 depletion in 293T and U2OS cells, while V1/\u03b4-Vpr has no effect. HIV-2 Vpr induces partial depletion, SIVmac Vpr does not affect CCDC137 levels, correlating with their G2/M arrest abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 demonstrate CCDC137 depletion in the context of viral infection using multiple Vpr variants. The correlation between CCDC137 depletion and G2/M arrest ability across different viral Vpr proteins (HIV-1, HIV-2, SIVmac) provides strong correlative evidence linking CCDC137 depletion to Vpr's biological effects. Immunofluorescence data confirm depletion at the single-cell level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CRISPR-mediated knockout experiments suggest CCDC137 is essential for proliferating cell viability. While CCDC137-targeting guide RNAs efficiently generated knockout alleles, most transduced cells died and no surviving clones contained frameshifting indels in both CCDC137 copies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C65 describe CRISPR knockout attempts that failed to generate viable homozygous CCDC137 knockout cells. While this suggests essentiality, the conclusion (C65) is inferential and alternative explanations exist (e.g., off-target effects, clonal selection issues). The lack of successful knockout prevents direct functional validation but is consistent with CCDC137 being essential. More rigorous approaches (e.g., conditional knockout, complementation) would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C76",
+      "C77"
+    ],
+    "result": "shRNA-mediated CCDC137 depletion causes G2/M cell cycle arrest and DNA damage response activation. Two CCDC137-targeting shRNAs caused dose-dependent CCDC137 depletion and G2/M accumulation in 293T cells and U2OS FUCCI reporter cells, with \u03b3-H2AX foci formation. A shRNA-resistant CCDC137 cDNA rescued both G2/M arrest and DDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71, C76-C77 demonstrate that CCDC137 depletion alone is sufficient to induce G2/M arrest and DDR using multiple complementary approaches (PI staining, FUCCI reporters, \u03b3-H2AX staining). The rescue experiment with shRNA-resistant CCDC137 (C70, C77) provides critical specificity controls, ruling out off-target effects and establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Vpr-resistant CCDC137 mutants confer resistance to Vpr-induced G2/M arrest. While wild-type CCDC137 is depleted by V1/HA-Vpr infection, the L/A 66-70 mutant resists depletion. Overexpression of wild-type CCDC137 partially ameliorates Vpr-induced G2/M arrest, while the Vpr-resistant mutant confers nearly complete resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide critical gain-of-function evidence linking CCDC137 depletion to G2/M arrest. The rescue experiments show that preventing CCDC137 depletion (via Vpr-resistant mutants) blocks Vpr's cell cycle effects, establishing necessity. The dose-dependent rescue (partial with WT, complete with resistant mutant) strengthens the causal relationship. Statistical analysis (Figure 6C) supports significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CCDC137 depletion enhances HIV-1 gene expression in U2OS cells. Live-cell imaging shows higher mCherry fluorescence in V1/HA-Vpr versus V1/\u03b4-Vpr infected cells. shRNA-mediated CCDC137 depletion in the absence of Vpr recapitulates enhanced HIV-1 reporter gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 demonstrate that CCDC137 depletion is sufficient to enhance HIV-1 gene expression using both Vpr-dependent and Vpr-independent (shRNA) approaches. The convergence of live-cell imaging and FACS data, along with the ability of CCDC137 depletion alone to phenocopy Vpr's effect, provides strong evidence for this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Vpr depletes CCDC137 and enhances HIV-1 gene expression in primary cells, with particularly pronounced effects in macrophages. V1/HA-Vpr but not Q65R mutant depletes CCDC137 in primary macrophages. Vpr increases GFP expression ~2-fold in CD4+ T cells and more substantially in macrophages, accompanied by elevated HIV-1 RNA levels, indicating enhancement occurs at the transcriptional or RNA stability level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C96 extend findings to physiologically relevant primary cells. Multiple donors, multiple Vpr variants, and both protein and RNA measurements provide robust evidence. The correlation between CCDC137 depletion and gene expression enhancement, along with RNA-level increases (FISH, qRT-PCR), supports the proposed mechanism. Donor-to-donor variation (C92) is acknowledged, adding transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Vpr-independent CCDC137 depletion via shRNA in infected primary cells recapitulates Vpr's enhancement of HIV-1 gene expression. V1/sh constructs expressing CCDC137-targeting shRNA caused effective CCDC137 depletion and pronounced enhancement of HIV-1 reporter gene expression in primary CD4+ T cells and macrophages, confirmed by FACS, live-cell imaging, FISH, and qRT-PCR across three cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 provide definitive evidence that CCDC137 depletion is sufficient to enhance HIV-1 gene expression in primary cells, independent of other Vpr functions. The use of multiple measurement techniques (FACS, imaging, FISH, qRT-PCR), multiple cell types, and multiple donors provides comprehensive support. This is the key experiment demonstrating sufficiency in physiologically relevant cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C82",
+      "C96",
+      "C102",
+      "C114",
+      "C119"
+    ],
+    "result": "The authors conclude that Vpr promotes cell-cycle arrest and HIV-1 gene expression through depletion of CCDC137, with CCDC137 representing the dominant mediator of these Vpr effects. They propose that enhancement of HIV-1 gene expression is the key consequence, with G2/M arrest potentially being an epiphenomenon in cycling cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C82, C96, C102, C114, C119 represent the main conclusions synthesizing the experimental findings. The evidence supporting CCDC137 as a major mediator is strong: (1) CCDC137 depletion is necessary (Vpr-resistant mutants block effects), (2) CCDC137 depletion is sufficient (shRNA phenocopies Vpr), (3) effects occur in primary cells, and (4) multiple phenotypes are recapitulated. The interpretation that gene expression enhancement is primary while G2/M arrest is secondary (C114) is reasonable given the macrophage data but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A proximity biotinylation screen identified Ki-67 as the top hit for Vpr-proximal proteins, but Ki-67 itself is not a Vpr target. Ki-67 was not depleted by Vpr, and its depletion did not induce G2/M arrest, leading to the hypothesis that a Ki-67-proximal protein might be the genuine Vpr target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 describe the initial screening approach and negative results for Ki-67. The experimental evidence clearly shows Ki-67 is not depleted by Vpr (C32) and its depletion doesn't cause G2/M arrest (C33), supporting the conclusion (C34). The hypothesis (C35) that a Ki-67-associated protein is the target is logical and led to CCDC137 identification. This represents sound negative data that guided the research direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C48"
+    ],
+    "result": "CCDC137 is a chromosome periphery protein (cPERP) that localizes to the nucleolus during interphase, colocalizing with fibrillarin. This localization pattern is consistent with prior reports and is maintained in Vpr-resistant mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C48 describe CCDC137's cellular localization, supported by immunofluorescence data (Figure 2B) and citations to prior work. The observation that Vpr-resistant mutations don't affect localization (C49) is important for demonstrating that resistance is not due to mislocalization. This provides context for understanding CCDC137 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors discuss the paradox that Vpr-defective viruses are selected in long-term culture despite Vpr's positive effects on gene expression. They propose this is explained by the interplay of infected cell lifespan and burst size: in culture, Vpr-induced cell death reduces burst size, but in vivo, where T cell lifespan is limited by other factors, even modest gene expression enhancement confers advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C109 present a speculative model to explain conflicting observations about Vpr's effects in different contexts. While the logic is reasonable and C103 is supported by citations, claims C105-C109 are explicitly speculative (marked as SPECULATION in evidence_type). The model is plausible but lacks direct experimental support in this manuscript. This represents informed speculation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors note that macrophages are non-cycling cells lacking key DDR components (ATR, Rad17, Chk1), suggesting G2/M arrest and DDR induction are not relevant in this cell type. They confirm that Vpr-induced HIV-1 gene expression enhancement is particularly evident in macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 integrate prior knowledge (C110-C111, supported by citation) with the current study's findings (C113, supported by experimental data). The inference that G2/M arrest/DDR are irrelevant in macrophages (C112) is logical given that macrophages don't cycle. This contextualizes why gene expression enhancement may be Vpr's primary function, though the inference remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors discuss concurrent work by Greenwood et al. (2019) that identified CCDC137 among Vpr-depleted proteins but did not investigate it further. While acknowledging other potential Vpr targets (SMN1, CDCA2, ZNF267) may contribute to G2/M arrest, the authors conclude their data suggests CCDC137 is the dominant mediator of Vpr's effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 appropriately contextualize the current work relative to concurrent publications. The acknowledgment of other potential targets (C120) is scientifically appropriate, while the conclusion that CCDC137 is dominant (C119) is supported by the comprehensive functional data in this manuscript. The comparison to Greenwood et al. is fair and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The authors employed a minimal HIV-1 construct (V1) in most experiments to exclude effects of other viral genes and facilitate shRNA experiments in primary cells. They validated that Vpr's effects on gene expression in macrophages were recapitulated with near-full-length viral constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 describe and justify the experimental system design. The use of minimal viral constructs is methodologically sound for isolating Vpr's effects, and the validation with full-length constructs (C124, supported by Figure 8\u2014figure supplement 2 and citation) addresses potential concerns about the minimal system's physiological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors note that Vpr's association with CCDC137, a cPERP protein, is consistent with prior findings that Vpr binds chromatin and forms chromatin-associated nuclear foci with VprBP, a property associated with G2/M arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 connect the current findings to prior literature (supported by citations to Lai et al., 2005 and Belzile et al., 2010). This contextualizes CCDC137 identification within existing knowledge about Vpr's cellular localization and provides mechanistic coherence, though it doesn't constitute new experimental findings in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors acknowledge that CCDC137 is poorly characterized, with reported function in sequestering retinoic acid receptor (RAR) to the nucleolus, but note that the relevance to HIV-1 gene expression is unknown and further work is needed to understand the mechanistic details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 appropriately acknowledge knowledge gaps and limitations. C129 cites prior work (Youn et al., 2018), while C130-C131 honestly state what remains unknown. This represents appropriate scientific humility and identifies important future directions without overstating current understanding.",
+    "result_type": "MINOR"
+  }
+]

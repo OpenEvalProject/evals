@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C74",
+      "C75",
+      "C83"
+    ],
+    "result": "SET-32 is a histone methyltransferase that specifically methylates lysine 23 of histone H3 in vitro, catalyzing mono-, di-, and tri-methylation at this position. The Y448F mutation in the conserved SET domain abolishes this enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging biochemical evidence from HMT assays, lysine mutant screens, and mass spectrometry demonstrating SET-32's specificity for H3K23. The Y448F mutation data (C2) validates the predicted catalytic residue. This represents the first biochemical validation of an H3K23 HMT (C83), supported by rigorous in vitro characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C84"
+    ],
+    "result": "Exogenous dsRNA feeding triggers dramatic induction of H3K23me3 at target loci in C. elegans. The H3K23me3 mark localizes to the dsRNA trigger region and spreads beyond gene boundaries, with a profile closely resembling H3K9me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 demonstrate dsRNA-induced H3K23me3 at multiple target genes (oma-1, smg-1) using ChIP-seq with appropriate controls (GFP dsRNA, no dsRNA). The spatial distribution and similarity to H3K9me3 are well-documented. This establishes H3K23me3 as an experimentally inducible mark in nuclear RNAi (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "RNAi-induced H3K23me3 persists for at least four generations after dsRNA exposure is removed, representing a transgenerational epigenetic effect in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by heritable RNAi experiments showing H3K23me3 persistence across F1-F4 generations after dsRNA removal. The transgenerational nature (C13) is appropriately inferred from this multi-generational persistence, consistent with established criteria for epigenetic inheritance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C78",
+      "C79"
+    ],
+    "result": "H3K23me3 is a constitutive heterochromatin mark in C. elegans with genomic distribution highly similar to H3K9me3. H3K23me3 is enriched at chromosome arms, heterochromatic domains, and meiotic pairing centers, showing high genome-wide correlation with H3K9me3 (Pearson coefficient = 0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 are supported by comprehensive whole-genome ChIP-seq analysis with statistical validation (boxplot analysis showing significant arm enrichment). The high correlation with H3K9me3 (C20) and consistency with prior reports (C78, C79) strengthen the conclusion that H3K23me3 is a bona fide heterochromatin mark.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "H3K23me3 is enriched at endogenous nuclear RNAi targets where it closely resembles H3K9me3 distribution. While greatly enriched in the germline, H3K23me3 is present in both soma and germline compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by ChIP-seq data at multiple endogenous loci with appropriate controls (actively transcribed cdc-42 shows no enrichment). The germline enrichment (C24) and somatic presence (C25) are demonstrated using glp-1 mutants that lack germline, providing clear tissue-specific resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C72"
+    ],
+    "result": "At the exogenous dsRNA target oma-1, H3K23me3 induction is strongly dependent on HRDE-1 and SET-32, but not on MET-2/SET-25. This demonstrates SET-32 has a specific role in H3K23 methylation not shared by the other H3K9 methyltransferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by ChIP-seq in multiple mutant backgrounds showing differential genetic requirements. The met-2 set-25 double mutant induces normal H3K23me3 levels (C28), while hrde-1 and set-32 mutants show greatly reduced levels (C26, C27), clearly demonstrating SET-32 specificity (C29, C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C73"
+    ],
+    "result": "At endogenous nuclear RNAi targets, H3K23me3 shows complex genetic regulation with strong dependence on HRDE-1 and SET-32, and weaker dependence on MET-2/SET-25. Over 150 genes show SET-32-dependent H3K23me3, with the majority overlapping HRDE-1-dependent genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are supported by whole-genome ChIP-seq analysis in mutants, Venn diagram analysis, and gene counting. The variable requirements at different loci (C30) are acknowledged and documented. The quantitative differences between SET-32 (>150 genes) and MET-2/SET-25 (40 genes) dependencies (C35, C36) are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "H3K9me3 shows different genetic dependencies than H3K23me3, with three times as many MET-2/SET-25-dependent genes as SET-32-dependent genes. HRDE-1-dependent H3K23me3 target genes are enriched for repetitive DNA elements (61.4%), predominantly low complexity and DNA repeats, with some LTR enrichment (4.37%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by Venn diagram analysis comparing H3K9me3 dependencies. Claims C38-C40 are supported by repeat analysis using RepeatMasker data with clear quantification of repeat classes. The analysis appropriately characterizes the genomic features of H3K23me3 targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Nuclear RNAi induces multiple heterochromatin marks (H3K9me3, H3K27me3, H3K23me3) deposited by different HMTs. The genetic requirement of SET-32 for H3K9me3 suggests H3K23me3 promotes H3K9me3, and at some endogenous targets these marks appear mutually dependent, while H3K27me3 is largely independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C85 is well-supported by data in this study and prior work, claims C87-C88 about causal relationships and mutual dependence are inferred rather than directly demonstrated. The mechanistic model (C87) that H3K23me3 promotes H3K9me3 is plausible given SET-32's requirement for both marks, but alternative explanations (e.g., SET-32 directly depositing both marks or acting through separate pathways) are not excluded. Additional experiments would be needed to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "SET-32 is dispensable for silencing maintenance in the presence of wild-type HRDE-1, but set-32 hrde-1 double mutants show enhanced de-silencing compared to hrde-1 single mutants, suggesting H3K23me3 may function as a backup silencing mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by citations to published genetic studies. The interpretation that H3K23me3 functions as a failsafe mechanism (C92) is appropriately presented as speculative ('possibly', 'suggest') and is a reasonable inference from the conditional requirement observed in double mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SET-32 is required for silencing establishment at both exogenous and endogenous targets even when HRDE-1 is intact, suggesting H3K23me3 plays a more prominent role in establishment than maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by citations to recent published studies. The inference that H3K23me3 has differential roles in establishment vs. maintenance (C95) is appropriately drawn from the contrasting genetic requirements in these two phases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Both H3K9me3 and H3K23me3 can bind HP1 or its orthologs in vitro, and both HP1\u03b1 and H3K23me2 are enriched at the nuclear pore complex in HeLa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by appropriate citations to published studies. These observations from other systems provide context for potential functional mechanisms, though direct relevance to C. elegans remains to be established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "SET-32 primarily targets nuclear RNAi loci for H3K23me3, while other heterochromatic regions and a small fraction of nuclear RNAi targets likely depend on unknown H3K23 HMTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are appropriately inferred from the incomplete loss of H3K23me3 in set-32 mutants and the broad distribution of H3K23me3 beyond SET-32-dependent regions. The conclusions are appropriately qualified as inferences about unknown enzymes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "No obvious developmental or gene expression defects are observed in set-32 single mutants, but combinatorial mutants of multiple H3K23me HMTs will likely show defects given the abundance of H3K23me in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by citations to multiple published studies. The prediction about combinatorial mutants (C102) is appropriately presented as speculation and represents a reasonable hypothesis for future work given the high abundance of H3K23me.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background claims establishing the nuclear RNAi pathway, H3K9me3 regulation by MET-2/SET-25/SET-32, and prior knowledge about H3K23 methylation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C41-C70, C76-C77, C80-C82) provide essential background context and are supported by appropriate citations to published literature. They establish the foundation for the current study but do not represent new findings.",
+    "result_type": "MINOR"
+  }
+]

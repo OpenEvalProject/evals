@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "AR directly binds CHK2 as demonstrated by Far western blotting. AR phosphorylation mutants (particularly S308A) and CHK2 kinase mutants (K373E) show reduced binding, suggesting that AR phosphorylation and CHK2 kinase activity impact the direct AR-CHK2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33-C39 provide converging evidence from Far western experiments showing direct protein-protein interaction between AR and CHK2. The use of reciprocal Far western (C37) strengthens the conclusion. Statistical analysis supports the significance of reduced binding with S308A (C35, adj p=0.035) and K373E (C38, adj p=0.026). The inference about phosphorylation and kinase activity impacting binding (C40) is reasonable given the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C103"
+    ],
+    "result": "Ionizing radiation increases AR-CHK2 association in cells. This IR-induced increase requires AR phosphorylation on S81 and S308 and CHK2 kinase activity. PCa-associated CHK2 mutants (K373E, T387N) show dramatically reduced IR-induced AR-CHK2 association. Notably, S81 and S308 phosphorylation levels do not change with IR, suggesting the hormone-induced activation state of AR is critical for the IR-induced increase in AR-CHK2 association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C51, C103 are supported by co-immunoprecipitation data showing a 4-fold increase in AR-CHK2 association after IR (C41), requirement for AR phosphorylation (C42-C43), and reduced IR-induced association with CHK2 mutants (C48). The observation that phosphorylation levels don't change with IR (C45) combined with the requirement for these sites (C43) leads to a logical inference about AR activation state (C103, C46). Statistical significance is reported (adj p=0.002 in Figure 2A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C105",
+      "C106"
+    ],
+    "result": "PCa-associated CHK2 mutants with impaired kinase activity (K373E, T387N) have reduced ability to suppress prostate cancer cell growth compared to wtCHK2. This effect is more pronounced in androgen-dependent LNCaP cells than in castration-resistant C4-2 and Rv1 cells, suggesting CHK2 kinase activity is particularly important for growth regulation in hormone-sensitive PCa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C52-C57, C105-C106 are supported by CyQUANT cell growth assay data (Figure 3). CHK2 knockdown increases growth (C52), and re-expression of wtCHK2 suppresses this growth (C53). The mutants K373E and T387N show significantly less growth inhibition than wtCHK2 in LNCaP cells (C54, p<0.01), while the difference is not statistically significant in C4-2 and Rv1 cells (C55), though the magnitude is consistently less (C56). The inference about differential effects in androgen-dependent vs castration-resistant cells (C57, C105-C106) is reasonable given the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C58",
+      "C59",
+      "C88"
+    ],
+    "result": "CHK2 depletion increases transcription of DNA repair genes DNAPK and RAD54 in response to IR in androgen-stimulated LNCaP cells. This suggests CHK2 may suppress AR transcription of DDR genes in response to IR, potentially enabling cells to turn off the DDR following DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C58 are directly supported by qPCR data (Figure 4) showing statistically significant increases in DNAPK and RAD54 transcripts with CHK2 knockdown after IR (p<0.02). The speculation that CHK2 suppresses AR transcription of DDR genes (C59, C88) is reasonable given the data, though it remains a hypothesis requiring further validation. The authors appropriately frame this as a suggestion/hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C60"
+    ],
+    "result": "CHK2 depletion increases clonogenic survival following ionizing radiation in LNCaP cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C60 are supported by clonogenic survival assay data (Figure 5A) showing increased survival with CHK2 knockdown across radiation doses (p<0.01). The data are fitted to a standard linear quadratic model with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C62",
+      "C63"
+    ],
+    "result": "CHK2 depletion increases resolution of DNA double strand breaks as measured by comet assay. At 24 hours post-IR, CHK2 knockdown cells show less DNA in tail, shorter tail length, and lower tail moment, suggesting more efficient DNA repair when CHK2 is compromised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C62-C63 are supported by comet assay data (Figure 5B) showing statistically significant differences at 24 hr (adj p<0.0001 for all three metrics). The large sample size (209-592 cells per condition) and appropriate statistical testing (Kruskal-Wallis with Dunn's multiple comparisons) strengthen the conclusion. The inference about DNA repair efficiency (C63) is reasonable given the comet assay measures DNA breaks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "CHK2 knockdown alters the kinetics of IR-induced \u03b3H2AX foci, with more foci at 15 min, fewer at 2 hr, and equal numbers by 4-24 hr compared to control. However, 53BP1 foci show no significant differences with CHK2 knockdown. The discrepancy between \u03b3H2AX and 53BP1 may be explained by increased transcription when CHK2 is knocked down, as H2AX can be phosphorylated in response to transcription-induced DNA breaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66, C68 are supported by immunofluorescence data (Figure 6B-C) with appropriate statistical analysis. However, the conflicting results between \u03b3H2AX (showing differences) and 53BP1 (showing no differences) create uncertainty about the interpretation. The explanation offered (C69) about transcription-induced \u03b3H2AX phosphorylation is speculative and supported by citations but not directly tested. The authors acknowledge this discrepancy may also be due to competing effects of CHK2 on cell cycle and apoptosis. Additional experiments would be needed to resolve this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "The authors propose a model where CHK2 sequesters AR through direct binding, decreasing AR transcription and suppressing PCa cell growth. This creates a feedback loop where CHK2 negatively regulates AR to dampen growth during DNA repair, while AR transcriptionally represses CHK2 to turn off the DDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C73-C74, C76 represent an integrated model based on multiple lines of evidence: direct AR-CHK2 binding (Figure 1), CHK2 suppression of AR target gene transcription (Figure 4), and CHK2 effects on cell growth (Figure 3). The model is also supported by previous work showing AR transcriptionally represses CHK2 (C75, Ta et al., 2015). While this is an inference/model rather than direct experimental proof, it is well-supported by the collective data and represents a reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C70",
+      "C77"
+    ],
+    "result": "CHK2 mutation or loss of expression leads to increased AR transcriptional activity, increased survival in response to DNA damage, and potentially a more aggressive cancer. The data indicate CHK2 acts as a tumor suppressor in PCa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C70, C77 are supported by multiple lines of evidence: increased DDR gene transcription with CHK2 knockdown (Figure 4), increased clonogenic survival after IR (Figure 5A), reduced growth suppression by CHK2 mutants (Figure 3), and increased DNA repair (Figure 5B). The inference that this leads to more aggressive cancer (C77) is reasonable given the data, though direct evidence of cancer aggressiveness would require in vivo studies or clinical correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C110"
+    ],
+    "result": "IR increases CHK2-ERK association, consistent with IR increasing CHK2 T68 phosphorylation required for the CHK2-ERK interaction. This suggests CHK2 negatively regulates ERK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is supported by Far western data showing increased CHK2-ERK association with IR. However, the inference about CHK2 T68 phosphorylation (C82) is based on established knowledge rather than direct measurement in this study. The conclusion that CHK2 negatively regulates ERK (C110) is based on this data plus literature showing MEK inhibition is effective when CHK2 is inactive (C84), but direct functional evidence of CHK2 negative regulation of ERK is not provided in this manuscript. This represents an interesting observation requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors hypothesize that AR interacts with CHK2 through the CHK2 FHA domain, based on the requirement for AR phosphorylation and the known property of FHA domains to bind phosphoproteins. This is supported by analogy to AR interaction with the FHA domain of MDC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is explicitly stated as a hypothesis. While the reasoning is sound (FHA domains bind phosphoproteins, AR phosphorylation is required for binding), direct evidence that the CHK2 FHA domain mediates the AR interaction is not provided. The analogy to MDC1 (C97-C99) supports the plausibility but does not constitute proof. Domain mapping experiments would be needed to confirm this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Additional proteins present in cells may assist and participate in the AR-CHK2 interaction, based on differences observed between Far western (direct binding) and co-IP (cellular context) experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is a speculation based on observed differences between Far western and co-IP results. While this is a reasonable hypothesis to explain the discrepancies (e.g., basal co-IP unaffected by AR phosphorylation while Far western shows effects), no direct evidence for additional proteins is provided. This represents an interesting observation that would require additional experiments (e.g., mass spectrometry of AR-CHK2 complexes) to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "CHK2 antagonists in clinical development may paradoxically lead to enhanced PCa growth and resistance to IR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is a speculation about clinical implications. While the data showing CHK2 loss increases growth and IR resistance support this concern, the authors appropriately note that pharmacologic inhibition differs from RNAi (C72). The clinical relevance remains uncertain without testing actual CHK2 inhibitors, and the authors acknowledge this limitation. This represents a cautionary note rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "CHK2 may serve as a general negative regulator of mitogenic signals in response to IR, based on negative regulation of both AR and ERK by CHK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is explicitly stated as a hypothesis. While the data show CHK2 negatively regulates AR (well-supported) and associates with ERK in an IR-dependent manner (C81), evidence for CHK2 negative regulation of ERK is limited in this manuscript. This represents an interesting speculation requiring further validation with additional mitogenic pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C32"
+    ],
+    "result": "Previous work by the authors demonstrated that CHK2 is a critical negative regulator of AR transcriptional activity, PCa cell growth, and androgen sensitivity, and that CHK2 co-immunoprecipitated with AR in PCa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17, C32 are supported by citation to previous work by the authors (Ta et al., 2015). These claims provide important context for the current study and are appropriately cited. The current manuscript builds on and extends these previous findings.",
+    "result_type": "MINOR"
+  }
+]

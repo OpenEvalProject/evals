@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "C. elegans exhibits thermotaxis behavior where well-fed animals navigate toward their cultivation temperature (Tc), mediated primarily by AFD sensory neurons and AIY interneurons, with AWC neurons playing a minor role. Temperature responses in AFD are indifferent to feeding state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the baseline thermotaxis circuit and prior knowledge. All claims are supported by appropriate citations to established literature (Hedgecock and Russell 1975, Mori and Ohshima 1995, Biron et al. 2006-2008). This provides the necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prolonged food deprivation (3 hr) disrupts both negative and positive thermotaxis navigation behaviors. Starved animals exhibit increased turns and reversals, fail to modulate turning frequency (athermotactic), and fail to orient runs toward preferred temperatures, while maintaining normal velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C28 are well-supported by behavioral tracking data in Figure 1B-D showing disrupted navigation, increased turns/reversals, loss of thermotaxis bias, and random orientation following turns. The specificity to thermal gradients (C18-C19) and velocity measurements (C27) provide important controls. Statistical significance is demonstrated in Figure 1C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Starvation-induced disruption of thermotaxis is reversible by refeeding and requires altered internal metabolic state rather than bacterial odor cues. Refeeding for 1 hour restores negative thermotaxis, and feeding with either live or dead bacteria is sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by refeeding experiments (Figure 1C), bacterial odor exposure controls (Figure 1\u2014figure supplement 1B), and live vs. dead bacteria experiments (Figure 1\u2014figure supplement 1C). The data convincingly demonstrate reversibility and rule out olfactory cues as the primary mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C43",
+      "C44"
+    ],
+    "result": "AFD thermosensory responses and AIY interneuron temperature responses are largely unaffected by starvation. While a small decrease in T*AFD was observed upon starvation, this change is unlikely to drive behavioral plasticity based on comparison with prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 are supported by calcium imaging data in Figure 1E-G and Figure 1\u2014figure supplement 2. The small but statistically significant decrease in T*AFD (C36) is appropriately contextualized with citations showing similar magnitude changes don't affect thermotaxis (C37). AIY response metrics show no significant differences between fed and starved conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Acute silencing of AWC neurons during the behavioral assay is sufficient to restore negative thermotaxis in starved animals. AWC activity is necessary during execution of thermotaxis behavior to disrupt negative thermotaxis, but not during the starvation period itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are strongly supported by both HisCl1-mediated silencing (Figure 2A) and optogenetic silencing with GtACR2 (Figure 2B). The timing experiments showing silencing is only required during the assay (not during starvation) provide critical mechanistic insight. Controls with ASI silencing (Figure 2\u2014figure supplement 1C) and chemotaxis assays confirm specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Starvation significantly increases temperature responses in AWC neurons. Upon starvation, AWC exhibits increased total response duration, longer individual events, and greater proportion of responding neurons to rising temperature (23-28\u00b0C), but not at constant 20\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are well-supported by calcium imaging data in Figure 2C-D and Figure 2\u2014figure supplement 1D. The specificity to rising temperature vs. constant temperature (C55) is an important control. Statistical significance is demonstrated by Kolmogorov-Smirnov test comparing cumulative distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "AIA interneurons exhibit tonic activity in fed animals that is significantly suppressed upon starvation in response to rising temperature but not at constant 20\u00b0C. AIB temperature responses are unaffected by starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by calcium imaging data in Figure 3B-C and Figure 3\u2014figure supplement 1A-C. The differential effects on AIA vs. AIB, and the specificity to rising temperature provide important mechanistic insights. Statistical analyses using Kolmogorov-Smirnov tests and Mann-Whitney U tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Complete suppression of AIA activity disrupts negative thermotaxis regardless of feeding state, while AIZ inhibition has no effect on thermotaxis behavior despite decreasing spontaneous reversals. Starvation inhibits activity in both AIA and AIZ, but only AIA suppression affects thermotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by HisCl1-mediated inhibition experiments in Figure 3F-G and Figure 3\u2014figure supplement 1F. The differential effects of AIA vs. AIZ inhibition provide important circuit-level insights. The observation that AIA inhibition prevents navigation in both fed and starved animals is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Optogenetic activation of AIA restores negative thermotaxis in starved animals. AWC inhibits AIA via glutamatergic signaling, and cell-specific knockout of the glutamate transporter eat-4 in AWC restores thermotaxis in starved animals. AIA activity state is sufficient to gate thermotaxis behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by optogenetic activation (Figure 3H) and cell-specific eat-4 knockout experiments (Figure 3I). The glutamatergic mechanism is supported by citation to Chalasani et al. 2010 (C71). The sufficiency experiments provide strong causal evidence for the AWC\u2192AIA pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "INS-1 production from the intestine is necessary for starvation-mediated plasticity in negative thermotaxis. Cell-specific knockout of ins-1 in the intestine, but not in AIA or AIZ/AIB, rescues thermotaxis behavior in starved animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by Cre-Lox-mediated cell-specific knockout experiments in Figure 4A and Figure 4\u2014figure supplement 1A-B. The specificity of intestinal vs. neuronal ins-1 is well-demonstrated. The recombination reporter controls (Figure 4\u2014figure supplement 1B) validate the cell-specificity of the manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Starvation inhibits the insulin signaling pathway through DAF-16/FOXO to disrupt thermotaxis. Loss of daf-18 PTEN or daf-16 FOXO restores thermotaxis in starved animals, while age-1 and akt-1 mutants behave like wild-type. INS-1 antagonizes DAF-2 signaling via DAF-16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by genetic analysis in Figure 4D and Figure 4\u2014figure supplement 2A. The epistasis analysis is logically sound and consistent with the canonical insulin signaling pathway (Figure 4C). The observation that ins-1 expression levels don't change (C80, Figure 4\u2014figure supplement 1C) suggests post-transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "INS-1 targets DAF-16 in AWC neurons to modulate thermotaxis as a function of feeding state. Auxin-induced degradation of DAF-16 specifically in AWC during starvation (but not during assay alone) rescues thermotaxis behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by auxin-induced degradation experiments in Figure 4E and Figure 4\u2014figure supplement 2B. The timing requirement (degradation during starvation, not just during assay) provides important mechanistic insight. Controls with ASI-specific degradation (Figure 4\u2014figure supplement 2C) demonstrate cell-specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In ins-1 mutants, AWC and AIA temperature responses are no longer modulated by feeding state. Both fed and starved ins-1 mutants exhibit response profiles similar to fed wild-type animals, indicating INS-1 signaling is required for starvation-induced changes in neuronal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by calcium imaging in ins-1 mutants shown in Figure 4F-H and Figure 4\u2014figure supplement 2E-F. The loss of feeding state modulation in ins-1 mutants provides strong genetic evidence linking INS-1 to the observed neuronal plasticity. Statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Feeding state alters thermotaxis behavior by engaging a modulatory AWC-AIA circuit that gates the output of the core AFD-AIY thermotaxis network. During starvation, INS-1 signaling from the gut acts via DAF-16 in AWC to enhance temperature responses, leading to glutamatergic inhibition of AIA and disruption of AFD-driven thermotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 and C93-C99 represent the main conclusions of the paper, synthesizing results from behavioral, imaging, optogenetic, and genetic experiments. The model is well-supported by the collective evidence from Figures 1-4. The gating mechanism is demonstrated by sufficiency experiments (AWC silencing, AIA activation) and necessity experiments (genetic manipulations). The gut-to-brain signaling pathway is established through cell-specific knockouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C65"
+    ],
+    "result": "Additional observations on temperature responses in AIY and AIZ. AIY exhibits stochastic calcium transients, can receive inputs from multiple sensory neurons, and shows similar peri-Tc response frequency in fed and starved animals. AIZ responses decrease upon starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, C42, and C65 provide supporting observations. C38 cites recent work on AFD-AIY phase relationships. C39 and C42 describe AIY response properties with appropriate citations. C65 documents AIZ responses. All are supported by imaging data in Figure 1F, Figure 3D-E, and appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Negative thermotaxis on spatial gradients is mediated via klinokinesis, where worms suppress turns and extend runs when moving toward preferred temperatures, and increase turn frequency when moving toward non-preferred temperatures. Worms also bias run direction toward cooler temperatures following turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 describe established behavioral strategies with appropriate citations (Clark et al. 2007, Luo et al. 2014a, Ryu and Samuel 2002, Zariwala et al. 2003). These provide necessary background for interpreting the behavioral defects observed in starved animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C57",
+      "C58",
+      "C59",
+      "C71",
+      "C75"
+    ],
+    "result": "Prior work has established that AWC responds to food-related odors and is modulated by feeding state. AWC inhibits AIY and AIA while activating AIB to promote turns/reversals. AWC inhibits AIA via glutamatergic signaling. ins-1 is expressed in multiple neuron types including AIA and in the intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C57-C59, C71, and C75 summarize relevant prior work with appropriate citations. These establish the circuit connectivity (Figure 3A) and molecular mechanisms that form the basis for the current study's hypotheses and interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C100",
+      "C103",
+      "C104",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C115",
+      "C117",
+      "C119",
+      "C121",
+      "C124"
+    ],
+    "result": "Prior studies have implicated INS-1 and insulin signaling in thermotaxis plasticity, shown starvation enhances AWC odorant responses, demonstrated ins-1 expression in AIA is sufficient for chemosensory modulation, and established principles of circuit degeneracy and neuromodulation in C. elegans and other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C100, C103-C104, C106, C108-C110, C113, C115, C117, C119, C121, and C124 cite relevant prior literature that motivates and contextualizes the current work. All citations appear appropriate and accurately represent the cited work based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C105",
+      "C107",
+      "C111",
+      "C112",
+      "C114",
+      "C116",
+      "C120",
+      "C122",
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors speculate that starvation-dependent changes in AWC allow prioritization of food-seeking over thermoregulation, that INS-1 may act via altered processing/release, that distinct pathways may modulate AWC under different conditions, that AIZ may function in degenerate circuits, and that modulatory gating mechanisms provide behavioral flexibility. They suggest these principles may generalize across sensory circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102, C105, C107, C111-C112, C114, C116, C120, C122-C123, C125-C126 are explicitly labeled as speculations in the Discussion. While these are reasonable interpretations and hypotheses based on the data, they represent future directions rather than demonstrated results. The speculations are appropriately qualified and grounded in the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Acute inhibition of AWC and activation of AIA restores thermotaxis in starved animals, indicating the core thermotaxis circuit functions are maintained but masked by AWC-AIA activity state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 synthesizes results from the manipulation experiments (Figures 2-3) and is well-supported by the sufficiency of AWC silencing and AIA activation to restore behavior. This demonstrates the gating mechanism where the modulatory circuit masks rather than disrupts the core circuit.",
+    "result_type": "MAJOR"
+  }
+]

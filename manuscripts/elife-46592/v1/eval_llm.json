@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Crumbs (Crb) promotes the interaction between Expanded (Ex) and the Casein Kinase 1 (CKI) family member Gilgamesh (Gish) in a FERM-binding motif (FBM)-dependent manner. Specifically, Gish was identified as an Ex-interacting protein by AP-MS only when wild-type Crb was co-expressed, and only the palmitoylated isoform of Gish (GishisoI) interacted with Ex, suggesting that CKI subcellular localization is critical for Ex regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively demonstrate that Crb promotes Ex:Gish interaction in an FBM-dependent manner using AP-MS (C1-C3) and co-IP experiments (C4-C5). The observation that only GishisoI, but not GishisoF, interacts with Ex (C6) supports the inference about subcellular localization (C7). The data are internally consistent and supported by multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Multiple CKI family kinases (GishisoI, CkI\u03b1, and Dco) promote Ex phosphorylation and depletion in a kinase activity-dependent manner. Co-expression of Ex with wild-type CKI kinases led to electrophoretic mobility shifts and protein depletion, while kinase-dead versions did not, indicating that CKI kinase activity is required for Ex phosphorylation and degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C17 provide consistent evidence from Western blot analyses showing that multiple CKI family members promote Ex phosphorylation (mobility shift) and degradation in a kinase-dependent manner. The use of kinase-dead controls (C14, C16) strengthens the conclusion that kinase activity is required. The membrane-targeted Ex1-468 CAAX construct (C10-C13) provides a useful tool to study Ex regulation independent of Crb-mediated membrane recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "CKI-mediated regulation of Ex stability depends on the Slimb/\u03b2-TrCP binding site, particularly residue S453. The S453A mutant was largely refractory to CKI-induced degradation, though CkI\u03b1 and GishisoI still caused mobility shifts in the S453A mutant, suggesting additional CKI phosphorylation sites exist in Ex1-468.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 demonstrate that S453 is critical for CKI-mediated Ex degradation (C18-C20), while also revealing that CkI\u03b1 and Gish can still phosphorylate Ex at other sites (C21-C22). The data are consistent and support both the importance of S453 and the existence of additional phosphorylation sites. However, the identity and functional significance of these additional sites remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "CKI kinases promote the interaction between Ex and Slimb/\u03b2-TrCP, acting upstream of Slimb to regulate Ex phosphorylation and degradation. GishisoI, CkI\u03b1, and Dco all induced Ex:Slmb binding in the absence of ectopic Crb, and an Ex truncation lacking the \u03b2-TrCP consensus motif (Ex1-450) was refractory to CKI-mediated effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide co-IP evidence that CKI kinases promote Ex:Slmb interaction (C23-C24) and that the \u03b2-TrCP consensus region is required for CKI effects (C26-C27). The data support the model that CKIs act upstream of Slmb. However, Dco consistently showed weaker effects (C25), suggesting functional differences among CKI family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The GSK3\u03b2 orthologue Shaggy (Sgg) does not regulate Ex phosphorylation and stability. Sgg overexpression did not promote Ex:Slmb binding, and Sgg depletion did not prevent Crb-induced Ex phosphorylation and degradation, indicating that CKI kinases, but not Sgg, regulate Ex stability upstream of Slmb/\u03b2-TrCP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide negative data ruling out Sgg involvement in Ex regulation through both overexpression (C28) and RNAi depletion (C29) experiments. These controls are important for distinguishing CKI-specific effects from other kinases that might regulate \u03b2-TrCP substrates. The conclusion (C30) is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The ubi-Ex1-468::GFP reporter recapitulates endogenous Ex localization and regulation in vivo. The reporter localizes apically in wild-type tissue, is lost from the apical surface in crb mutants, accumulates in slmb mutants, and is degraded upon Crbintra expression, while the S453A mutant accumulates upon Crbintra expression. The reporters do not affect wing size when expressed at low levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 validate the ubi-Ex1-468::GFP reporter system through multiple genetic manipulations. The reporter behaves as predicted based on prior knowledge of Ex regulation (C32-C37), and importantly does not cause growth defects (C38), making it suitable for studying Ex stability without confounding effects on Hippo signaling. The data are consistent and well-documented with imaging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Full-length Ex expression causes tissue undergrowth that is partially rescued by Crbintra co-expression, while the S453A mutant causes more severe undergrowth that is refractory to Crbintra rescue. This suggests that Crb regulates Ex levels through the S453 residue recognized by Slmb/\u03b2-TrCP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 demonstrate functional consequences of Ex regulation through wing size measurements. The partial rescue of wild-type Ex undergrowth by Crbintra (C40) and the lack of rescue for S453A (C42) support the model that Crb regulates Ex stability via S453-dependent degradation. However, the more severe phenotype of S453A (C41) suggests additional complexity beyond simple stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Overexpression of CkI\u03b1 or Gish, but not Dco or CG7094, significantly decreases Ex1-468::GFP reporter levels in vivo in a kinase activity-dependent manner. The effect is not due to changes in Crb levels and requires the S453 residue, providing further evidence that CKIs regulate Ex in a Slmb/\u03b2-TrCP-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 extend the in vitro findings to in vivo wing disc tissue. The specificity for CkI\u03b1 and Gish (C44-C46), dependence on kinase activity (C47), independence from Crb level changes (C48), and requirement for S453 (C49-C50) all support the proposed mechanism. The quantification in Figure 3K provides statistical support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "RNAi-mediated depletion of CKI kinases stabilizes Ex in S2 cells in the presence of Crbintra. Knockdown of ckI\u03b1 or gish alone stabilized Ex1-468, while depleting all CKIs resulted in more prominent stabilization, suggesting that CkI\u03b1 and Gish work together to regulate Ex stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide loss-of-function evidence complementing the overexpression studies. The additive effect of depleting multiple CKIs (C53) supports partial redundancy (C54), though the inference of cooperative function could be strengthened with additional mechanistic data. The Western blot data are clear and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CKI kinases are required for Crb-induced Ex:Slmb interaction and Ex ubiquitylation. Depletion of gish or all CKIs abolished Ex:Slmb binding and dramatically reduced Ex ubiquitylation, with effects similar to slmb depletion, indicating that CKI kinases act downstream of Crb to promote Ex ubiquitylation and degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide mechanistic evidence linking CKI function to Ex ubiquitylation through co-IP (C55) and ubiquitylation assays (C56-C57). The similarity to slmb depletion (C57) strengthens the conclusion that CKIs act in the same pathway. The data directly support the proposed model (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "aPKC phosphorylation of Crb is not required for Ex regulation, and Wts-mediated stabilization of Ex does not prevent Crb-induced Ex degradation. The Crb4A mutant (lacking aPKC phosphorylation sites) efficiently promoted Ex degradation, and Wts co-expression did not block Crb-mediated Ex degradation, indicating that the N-terminal degron supersedes the C-terminal one.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 rule out alternative mechanisms and clarify the relationship between different Ex regulatory pathways. The Crb4A mutant data (C59-C60) exclude aPKC involvement, while the Wts experiments (C61-C63) establish the dominance of the N-terminal degron. These negative controls strengthen the overall model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Loss of ckI\u03b1, but not gish, dco, or CG7094, elevates Ex1-468::GFP and Crb levels in wing disc clones. The increase in Crb levels is not due to general apical domain expansion, as aPKC levels remain unchanged, suggesting a specific effect on Ex and Crb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 identify CkI\u03b1 as the dominant CKI regulating Ex in wing discs, contrasting with the S2 cell results where Gish depletion had strong effects. The aPKC control (C69) rules out general apical expansion. However, the lack of phenotype for gish and dco mutants (C64-C66) is surprising given the in vitro data and may reflect tissue-specific differences or allele limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Both slmb and ckI\u03b1 mutant clones display elevated levels of Ex and Crb. Ex1-468 overexpression increases endogenous Crb at the apical membrane, and increased Crb levels are detected in slmb mutant clones (particularly large clones) and slmb null allele clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 reveal a reciprocal relationship between Ex and Crb levels. The observation that Ex overexpression increases Crb (C70) and that both slmb and ckI\u03b1 mutants show elevated Ex and Crb (C71-C73) suggests a feedback mechanism. However, the causal relationship and mechanism remain unclear and would benefit from additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "CKI family members do not appear to function redundantly to control Ex levels in wing discs under normal developmental conditions. Triple mutant clones lacking CG7094, gish, and dco showed no change in Ex reporter levels, while triple mutants for ckI\u03b1, gish, and dco had elevated Ex and Crb levels comparable to ckI\u03b1 clones alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 address redundancy among CKI family members in vivo. The lack of additive effects in triple mutants (C75-C76) contrasts with the S2 cell data (C53) and suggests tissue-specific regulation or that CkI\u03b1 is the primary regulator in wing discs. The conclusion (C76) is appropriately cautious about the scope of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The requirement for Slmb and CkI\u03b1 to regulate Ex levels varies according to tissue. In eye discs, slmb or ckI\u03b1 loss causes clone extrusion and loss of differentiation, while in leg and haltere discs, Ex::GFP levels are elevated in both slmb and ckI\u03b1 mutant clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 document tissue-specific differences in Ex regulation. The eye disc phenotype (C77) differs from wing disc, while leg and haltere discs show elevated Ex in mutant clones (C78). This tissue specificity (C79) is important for understanding the generality of the findings, though the mechanisms underlying these differences are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In vivo, CkI\u03b1 regulates Ex stability by promoting Crb-induced turnover. Temporally controlled expression experiments show that ckI\u03b1 RNAi, but not gish or dco RNAi, significantly rescues Ex1-468::GFP levels and localization when co-expressed with Crbintra. MARCM clone analysis confirms that ckI\u03b1 loss partially rescues Crb-induced Ex degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 provide strong in vivo evidence for CkI\u03b1-specific regulation of Crb-induced Ex degradation using temporal control (C80-C84) and MARCM clones (C85-C87). The specificity for ckI\u03b1 versus gish (C82-C83, C86) is well-documented. The conclusion (C88) is well-supported, though the partial rescue (C87) suggests additional complexity or incomplete loss of function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CkI\u03b1 regulates Yorkie (Yki) activity through control of Ex stability. Loss of ckI\u03b1 decreases Yki transcriptional activity (measured by ex-lacZ and diap1-GFP3.5) and increases Yki nuclear exclusion, while CkI\u03b1 overexpression increases Yki activity. Gish manipulations have no effect on Yki activity, consistent with CkI\u03b1 being the dominant regulator in wing discs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 connect CkI\u03b1 function to Hippo pathway output through multiple Yki activity readouts. The correlation between Ex stabilization and decreased Yki activity (C89-C91, C93) and the opposite effect of CkI\u03b1 overexpression (C92, C94) support the proposed mechanism (C95). The lack of Gish effects (C90, C114) is consistent with earlier findings. However, the correlation does not definitively prove causation through Ex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Different CKI family members have tissue-specific roles in Ex regulation. In S2 cells, Gish depletion strongly affects Ex stability, while CkI\u03b1 is the dominant regulator in wing imaginal discs. This may involve tissue-specific adaptor proteins that recruit CkI\u03b1 to the Crb/Ex complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C110 document an important discrepancy between in vitro and in vivo systems. The speculation about adaptor proteins (C111) is reasonable by analogy to other CKI regulation but lacks direct experimental support. This represents an interesting observation that requires further investigation to understand the mechanistic basis for tissue-specific CKI function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Yki activity is decreased upon ckI\u03b1 depletion and increased by CkI\u03b1 overexpression, while Gish manipulations have no effect on Yki activity in wing discs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are redundant with C89-C95 but emphasize the specificity of CkI\u03b1 effects on Yki activity. The data are well-supported by multiple Yki activity readouts shown in Figure 7. This reinforces the conclusion that CkI\u03b1 is the functionally relevant CKI in wing discs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "ckI\u03b1 mutant clones are overgrown and delaminate from wing disc epithelium due to elevated Wingless signaling, which likely compensates for decreased Yki activity resulting from Ex stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 explain the paradoxical overgrowth of ckI\u03b1 mutant clones despite decreased Yki activity. The explanation invoking Wnt pathway activation (C116-C117) is supported by citations to prior work. This highlights the complexity of interpreting growth phenotypes when multiple pathways are affected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Loss of ckI\u03b1 or slmb increases apical Crb levels, and excess Ex accumulation leads to increased Crb apical levels, possibly by interfering with Crb endocytosis through competition with \u03b1-adaptin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 document the correlation between Ex and Crb levels with experimental support (C70, C118). However, the proposed mechanism involving \u03b1-adaptin competition (C120) is speculative and lacks direct experimental evidence. Alternative explanations, such as effects on Crb trafficking or stability, are not ruled out. This represents an interesting observation requiring further mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The mammalian Crb orthologue CRB3 can regulate Hippo signaling through interactions with Ex orthologues (AMOT and FRMD6), suggesting conservation of the regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are based on established knowledge from cited publications rather than new experimental data in this study. They provide important context for the potential conservation of the described mechanism in mammals. However, whether CKI kinases regulate AMOT or FRMD6 stability in a manner analogous to Ex remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The apical polarity determinant Crb promotes Ex phosphorylation by CKI family kinases, which stimulates Slmb/\u03b2-TrCP-mediated ubiquitylation and degradation, facilitating precise and dynamic control of Ex protein levels at the apical membrane for regulation of Hippo signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 summarize the main model of the paper, which is well-supported by the collective evidence from multiple experimental approaches (biochemistry, cell culture, and in vivo genetics). The model integrates the key findings and provides a mechanistic framework for understanding how epithelial polarity regulates Hippo signaling through Ex stability.",
+    "result_type": "MAJOR"
+  }
+]

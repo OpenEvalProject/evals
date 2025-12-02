@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "SARS-CoV-2 Spike protein, its RBD, and ACE2 receptor are extensively glycosylated. The Spike protein has 22 N-glycosylation sites and ACE2 has 7 N-glycosylation sites, with the majority bearing carbohydrates. O-linked glycans are also present on both proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C28-C31, and C33 establish well-documented glycosylation patterns on SARS-CoV-2 Spike and ACE2 proteins, supported by multiple published studies (Walls et al., 2020; Wrapp et al., 2020; Shajahan et al., 2020a,b). These are established facts in the field with strong citation support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C57",
+      "C58",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C93",
+      "C96",
+      "C98"
+    ],
+    "result": "N- and O-glycans have only minor contribution to direct Spike-ACE2 binding. Desialylation of ACE2 modestly increased RBD-Fc and S1-Fc binding (26-56%), while desialylation of Spike had minimal effect. Knocking out N-glycans on Spike reduced ACE2-Fc binding by 40%, while O-glycan knockout increased binding by 20%. Glycan engineering of ACE2 did not impact Spike-Fc binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49-C51, C56-C58, C67-C70, C93, C96, and C98 are supported by consistent experimental data from flow cytometry binding assays (Figures 2D, 3D-F). The modest effects observed (26-56% increase with sialidase, 40% decrease with N-glycan knockout) are quantified with statistical significance (p<0.05) and replicated across multiple experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C101",
+      "C102"
+    ],
+    "result": "N- and O-glycans play a major role in regulating viral entry. Blocking N-glycan biosynthesis at the oligomannose stage using MGAT1 knockout or kifunensine dramatically reduced viral entry by >95%. Blocking O-glycan elaboration partially reduced viral entry (35-70% reduction in DsRed positive cells, 70-85% loss in fluorescence).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C72-C76, C101-C102 are strongly supported by pseudovirus entry assays (Figures 4B-D, 5B-D). The >95% reduction in viral entry with N-glycan knockout is dramatic and reproducible. O-glycan effects are more modest but still significant. Multiple independent approaches (genetic knockout and small molecule inhibitor) converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C79",
+      "C80",
+      "C81",
+      "C87",
+      "C103"
+    ],
+    "result": "Inhibition of N-glycan biosynthesis enhanced Spike-protein proteolysis at the S1-S2 interface. N-glycan loss triggered ~95% loss of intact Spike protein based on densitometry. Spike-WT showed more extensive cleavage than Spike-mutant. Virus produced in O-glycan knockout cells showed greater proteolysis (52%) compared to wild-type (32%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C79-C81, C87, and C103 are supported by western blot analysis with densitometry quantification (Figures 4E-F, 5E). The 95% loss of intact Spike upon N-glycan inhibition is dramatic and provides a mechanistic explanation for reduced viral entry. The differential cleavage between Spike-WT and Spike-mutant is consistent with the furin site differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C104",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Enhanced Spike-protein proteolysis reduces RBD presentation on virus, lowering binding to host ACE2 and decreasing viral entry. There is an inverse relationship between furin cleavage and viral entry. Both N- and O-glycans modulate proteolysis rates at the S1-S2 interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C104, C108-C110 present a mechanistic model supported by the experimental data. The inverse relationship between furin cleavage and viral entry is demonstrated by comparing Spike-WT and Spike-mutant (C55, C105). The model is consistent with published literature (Belouzard et al., 2009) and explains the observed reduction in viral entry upon glycan inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Kifunensine treatment (15 \u00b5M) reduced viral infection by 85-90%. Even the furin-resistant Spike-delta virus, which lacks extensive S1-S2 cleavage, showed partial reduction in entry with kifunensine treatment, suggesting N-glycans have additional roles beyond regulating S1-S2 proteolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C88-C92 are supported by pseudovirus entry assays and western blots (Figures 5B-F). The Spike-delta experiment is particularly important as it demonstrates that N-glycans affect viral entry through mechanisms beyond S1-S2 cleavage. The statistical significance (p<0.05) and reproducibility across viral titers strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CRISPR-Cas9 knockout cells were successfully generated and validated. Sanger sequencing confirmed indels in all three C1GalT1 alleles of [O]-293T and frameshift mutation in the single MGAT1 allele of [N]-293T. Lectin binding assays confirmed loss of O-glycan elaboration (increased VVA binding) and N-glycan complex structures (loss of PHA-L binding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by Sanger sequencing (Figure 3B) and lectin binding assays (Figure 3C, Figure 3-supplement 1). The validation is thorough, using both genetic sequencing and functional glycan analysis. This establishes the validity of the cell line models used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Recombinant Fc-fusion proteins were successfully expressed and validated. RBD-Fc, S1-Fc, and ACE2-Fc showed apparent molecular masses higher than theoretical values due to glycosylation. All proteins were functionally active as demonstrated by specific binding in flow cytometry assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are supported by western blot analysis (Figure 2B) and flow cytometry binding assays (Figure 2C). The difference between apparent and theoretical molecular masses confirms extensive glycosylation. Functional validation through specific binding demonstrates protein quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Pseudovirus entry assays were validated using VSVG and Spike variants. VSVG pseudovirus infected both HEK293T and 293T/ACE2 cells, while Spike-WT and Spike-mutant entered only 293T/ACE2 cells. Spike-mutant showed higher infectivity than Spike-WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by pseudovirus entry assays (Figures 2E-F). The ACE2-dependent entry of Spike pseudovirus validates the assay system. The higher infectivity of Spike-mutant is consistent with reduced furin cleavage and is reproducible across experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Glycoproteomics mass spectrometry analysis showed that 80-100% of ACE2-Fc N-glycans and 40-100% of S1-Fc glycopeptides were complex-type, with up to 60% and 20% sialylation respectively. Viral N-glycans were 45-100% complex-type with up to 55% sialylation, indicating processing by medial and trans-Golgi glycoenzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C62, C121-C123 cite unpublished glycoproteomics data ('K.C., et al., manuscript in preparation'). While the data appear consistent with the experimental observations, the lack of peer-reviewed publication and detailed methodology makes independent verification impossible. The conclusions drawn from this data are reasonable but cannot be fully evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C117",
+      "C118",
+      "C120"
+    ],
+    "result": "Chemical inhibitors of glycosylation may be evaluated for COVID-19 treatment. Both O- and N-glycan truncation may reduce viral entry. Additional N-glycosylation inhibitors like Swainsonine, which has demonstrated safety in humans, could be tested. Glycoengineering may provide a therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13, C117-C118, C120 are speculative proposals for future therapeutic applications. While the experimental data (C5-C8, C76, C83) support the concept that glycosylation inhibitors reduce viral entry in vitro, translation to clinical efficacy is uncertain. The safety profile of Swainsonine (C119) is cited, but efficacy against SARS-CoV-2 in vivo remains untested. These are reasonable hypotheses requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background knowledge about SARS-CoV-2 biology, including its origin, pathophysiology, Spike protein function, ACE2 receptor, proteolysis sites, and proposed glycan functions. Experimental data supporting proposed glycan functions is currently lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C27, C32, C34-C37 summarize established knowledge from published literature with appropriate citations. These provide necessary context for the study. Claim C37 correctly identifies the knowledge gap that this manuscript addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Molecular dynamics simulations show that glycans cover the Spike-ACE2 interface and surround the furin (S1-S2) and S2' proteolysis sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by molecular dynamics simulation data (Figure 1C). The simulations used established structures (6LZG, 6VYB) and standard computational methods (NAMD2, CHARMM36). The visualization clearly shows glycan coverage of key functional sites, providing structural context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "RBD-Fc bound approximately 10 times more avidly to ACE2 compared to S1-Fc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by comparing binding data in Figures 3E and 3F. The concentrations used (0.35 \u00b5g/mL RBD-Fc vs 3.5 \u00b5g/mL S1-Fc to achieve similar binding) demonstrate the higher avidity of RBD-Fc. This is consistent with published literature (Shang et al., 2020) and highlights the importance of RBD presentation in the context of full Spike protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Western blot analysis showed that Spike-WT and Spike-mutant viruses expressed comparable levels of Spike protein regardless of glycosylation mutation. The molecular mass of Spike in [N]-293T was lower, consistent with truncated N-glycosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by western blot data (Figure 4E). The comparable expression levels validate comparisons between different virus preparations. The reduced molecular mass in [N]-293T confirms the expected effect of MGAT1 knockout on glycan processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Kifunensine reduced complex N-glycan formation on cultured cells within 24-48 hours with no change in cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by lectin binding and viability assays (Figure 5-supplement 1A). The dose-dependent reduction in PHA-L and ECL binding confirms inhibition of complex glycan formation. The lack of effect on cell viability is important for interpreting the viral entry results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The reduction in Spike molecular mass with kifunensine was less apparent than with MGAT1 knockout because kifunensine blockade of Mannosidase-I produces Man7-9 glycans while MGAT1 knockout produces Man-5 glycans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by western blot analysis (Figure 5E) and established knowledge of glycan biosynthesis pathways. The mechanistic explanation for the differential molecular mass changes is biochemically sound and consistent with the known specificities of the inhibitor and knockout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C97",
+      "C99",
+      "C100",
+      "C105",
+      "C106",
+      "C107",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C119"
+    ],
+    "result": "Discussion of mechanistic details and comparison with published literature, including glycan locations near functional sites, comparison with other viruses, cell-type specific effects, and the D614G mutation. Swainsonine has demonstrated safety in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95, C97, C99-C100, C105-C107, C111-C114, C119 appropriately cite and interpret published literature. The comparisons with other viruses (C95) and the D614G mutation (C106-C107) provide important context. The structural information about glycan locations (C94, C111-C112, C116) is well-supported by citations. Claim C119 about Swainsonine safety is appropriately cited (Goss et al., 1997).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "ACE2 sialic acids may modestly shield virus/Spike binding in some biological contexts and cell systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is a reasonable interpretation of the combined binding and viral entry data (C49-C51, C56-C58, C93). The cautious language ('may modestly shield', 'some biological contexts') appropriately reflects the modest effects observed and acknowledges potential context-dependence.",
+    "result_type": "MINOR"
+  }
+]

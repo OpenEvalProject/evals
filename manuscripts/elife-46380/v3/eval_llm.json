@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A chemical genetic screen using AS-PKAC\u03b1 and 6-cHe-ATP\u03b3S identified 97 proteins as potential PKA substrates in HUVECs, including known substrates (NFATC1, VASP, PRKAR2A, PRKAR2B) and novel candidates. Four of five tested candidates (PPP1R12C, ATG16L1\u03b1, DDX17, ANKRD40) were validated as direct PKA substrates, while ATG5 was not directly phosphorylated but likely co-precipitated with ATG16L1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chemical genetic screen methodology is well-described (C18) and validated by identifying known PKA substrates (C20). The validation experiments confirm 4/5 candidates as direct substrates (C21), with ATG5's presence explained by its known interaction with ATG16L1 (C24-C25). The approach demonstrates technical rigor with appropriate controls and orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "PKA directly phosphorylates ATG16L1\u03b1 at Ser268 and ATG16L1\u03b2 at Ser269, as demonstrated by peptide spot arrays, site-directed mutagenesis, and LC-MS/MS analysis. Ser287 in ATG16L1\u03b2 was not a PKA phosphorylation site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal approaches converge on the same phosphorylation sites: peptide arrays identified candidate sites (C28-C30), mutagenesis confirmed S268 and S269 but not S287 (C31-C33), and LC-MS/MS directly detected phosphorylation at these sites (C34-C35). The technical note about thiophosphate conversion (C36) demonstrates methodological awareness. This is strong evidence for direct phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Phosphorylation of ATG16L1 by PKA at Ser268 (\u03b1 isoform) and Ser269 (\u03b2 isoform) promotes protein degradation. This is demonstrated by cycloheximide chase experiments showing wild-type ATG16L1 degrades faster than phospho-null mutants, phosphomimetic mutants are less stable, and PKA activity inversely correlates with ATG16L1 protein levels in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The degradation mechanism is supported by multiple lines of evidence: differential stability of WT vs phospho-null mutants (C37-C40), phosphomimetic mutants showing reduced stability (C41), and inverse correlation between PKA activity and ATG16L1 levels in both cultured cells (C42-C43) and primary endothelial cells from mice (C44). The cycloheximide chase experiments are appropriate for measuring protein stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C12",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C84"
+    ],
+    "result": "Reducing PKA activity increases ATG16L1 protein levels and endothelial autophagy, as measured by increased LC3II and decreased p62 levels. Conversely, PKA activation decreases ATG16L1 and autophagy markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The relationship between PKA activity, ATG16L1 levels, and autophagy is demonstrated bidirectionally: PKA inhibition increases ATG16L1, LC3II, and decreases p62 (C47-C48), while PKA activation has opposite effects (C49-C50). LC3II and p62 are established autophagy markers, making this a valid readout. The data support the mechanistic link from PKA to autophagy via ATG16L1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Genetic deletion of ATG5 in endothelial cells (ATG5ECKO) partially rescues the vascular hypersprouting and increased tip cell phenotype in PKA-deficient (dnPKAiEC) mice, with no effect in wild-type mice. Pharmacological autophagy inhibition with chloroquine produces similar partial rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic rescue experiment is well-controlled, showing no effect of ATG5 deletion alone (C51) but partial rescue in the dnPKA background (C52-C53). The partial nature of the rescue is appropriately acknowledged and suggests additional PKA targets contribute to the phenotype. The chloroquine experiments provide pharmacological validation. However, the mechanism by which reduced autophagy normalizes sprouting requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ATG5 deletion normalizes the dnPKAiEC hypersprouting phenotype by reducing total endothelial cell numbers and tip cells, not by altering the proliferation rate or apoptosis frequency. The ratio of proliferating cells remains unchanged across genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proliferation and apoptosis data (C55, C58) show no significant differences in rates, while absolute cell numbers decrease (C56-C57). This suggests the rescue mechanism involves reduced tip cell formation and potentially altered cell cycle dynamics rather than proliferation or survival changes (C59-C61). The interpretation is logical given the data, though the proposed mechanism of shorter cell cycles or more rounds of cycling is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C62"
+    ],
+    "result": "Endothelial PKA activity mediates a critical switch from active sprouting to quiescence through phosphorylation of ATG16L1, which reduces endothelial autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates the phosphorylation data (C5-C6), degradation mechanism (C7, C39-C40), autophagy regulation (C8-C9, C12), and in vivo rescue experiments (C10, C52-C53). The use of \"in part\" appropriately acknowledges the partial rescue, indicating additional mechanisms. The conclusion is well-supported by the collective evidence, though the physiological significance of this pathway in normal development vs pathology requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "In wild-type mice, inhibition of autophagy has no significant effect on developmental retinal angiogenesis, suggesting autophagy may not be very active during normal developmental angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that ATG5 deletion alone has no effect on wild-type retinal angiogenesis (C51, C79) is clearly demonstrated. However, the interpretation that autophagy is \"not very active\" in developmental angiogenesis (C80) is speculative and marked as such in the evidence. Alternative explanations (compensatory mechanisms, context-dependent requirements) are not fully explored. The data support the observation but the mechanistic interpretation is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The partial rescue of the dnPKAiEC phenotype by autophagy inhibition indicates additional PKA targets are involved. The screen identified other candidates including RAPGEF2 and Rock2, which have known roles in vascular development and angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The partial rescue (C10, C52) logically implies additional mechanisms (C71). The identification of RAPGEF2 and Rock2 as candidate targets (C72, C74) with relevant vascular phenotypes (C73) provides plausible alternative pathways. However, these remain unvalidated candidates requiring future work. The reasoning is sound but the specific contribution of these targets is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "ATG16L1 is a novel PKA substrate in endothelial cells, distinct from previously identified targets (ATG13 in yeast, LC3 in neurons). This suggests PKA may regulate autophagy through different targets in different cell types, possibly reflecting cell-type specificity or redundancy in the regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty of ATG16L1 as a PKA target is established (C27, C83) and contrasted with other systems (C81-C82). The speculation about cell-type specificity vs redundancy (C85-C86) is appropriately presented as hypothesis rather than conclusion. The observation that both ATG16L1 isoforms are targeted (C87) supports the redundancy hypothesis. This represents a valid contribution to understanding PKA-autophagy regulation across systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Different phosphorylation sites on ATG16L1 have opposing effects on protein stability. PKA phosphorylation at Ser268/269 promotes degradation, while other kinases (CSNK2 at Ser139, IKK\u03b1 at Ser278) have different effects, suggesting multi-layered regulation of ATG16L1 stability and autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with other phosphorylation sites (C88-C91) from the literature provides important context. The demonstration that PKA sites work oppositely to Ser278/Thr300 (C92) is supported by the stability data. The synthesis that different sites fine-tune stability (C93) is a reasonable interpretation. This contextualizes the PKA-ATG16L1 mechanism within broader autophagy regulation, though direct comparison experiments would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "This study represents the first application of the chemical genetics approach to identify direct endothelial PKA targets. Buffer optimization was critical, as RIPA buffer limits PKA activity while the new kinase lysis buffer allows effective substrate phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim (C95) is appropriately qualified with \"to our knowledge.\" The technical optimization (C96-C97) is important for reproducibility and explains why the approach succeeded where standard conditions might have failed. This methodological contribution will benefit future studies. However, more details on buffer composition and comparative validation would strengthen the technical advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background context: PKA promotes vessel maturation and limits tip cell formation in endothelial cells. Blood vessels are crucial for tissue physiology, and their dysregulation contributes to various diseases. VEGF and Notch/DLL4 are key regulators of angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the biological context and are supported by appropriate citations (C14-C17) or represent established knowledge (C1-C2, C13). The prior work on PKA in angiogenesis (C17) provides the foundation for the current study. This background is accurate and well-supported but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C45",
+      "C46"
+    ],
+    "result": "Background on ATG16L1: ATG16L1 is a regulator of autophagy and part of the ATG16L1-ATG5-ATG12 complex required for LC3 lipidation and autophagosome formation. PKA has been shown to regulate autophagy in other systems but ATG16L1 had not previously been identified as a PKA target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background on ATG16L1 function (C3, C45-C46) supported by appropriate citations, and establish the novelty of the finding (C27). The context about PKA regulating autophagy through other targets (C26) is important for framing the discovery. This represents accurate background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Literature context: Previous studies show autophagy promotes angiogenesis in various contexts including in vitro tubulogenesis, post-myocardial infarction, and wound healing. This suggests autophagy regulation is a critical determinant of vascular sprouting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize relevant prior literature (C63-C69) with appropriate citations and draw a reasonable synthesis (C70). This context motivates the investigation of PKA-autophagy interactions in angiogenesis. However, these represent prior findings rather than new results from this study. The synthesis is appropriate but the conclusion (C70) is somewhat overstated given the context-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ATG16L1 has additional functions beyond autophagy, including roles in inflammatory cytokine production (IL-1\u03b2, IL-18) and anti-inflammatory functions. These cytokines have opposing effects on angiogenesis in cancer contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations (C75-C78) and raise the possibility of autophagy-independent mechanisms. This is appropriately presented as speculation requiring further investigation. The discussion acknowledges complexity but doesn't overinterpret the current data. This represents valid contextualization of potential alternative mechanisms.",
+    "result_type": "MINOR"
+  }
+]

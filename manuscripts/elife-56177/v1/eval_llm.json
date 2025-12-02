@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C79"
+    ],
+    "result": "Castration does not rescue the lifespan defect in male L-RKO mice. Male L-RKO mice show reduced survival compared to wild-type controls (HR=1.75, p=0.01), with a 13.7% decrease in median lifespan in intact males (p=0.028) and a 10% decrease in castrated males (p=0.337, not significant). The survival curves of L-RKO Sham and L-RKO CAST males nearly overlap, demonstrating that castration does not reverse the negative impact of hepatic Rictor deletion on male survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C33-C38, and C79 collectively demonstrate that castration fails to rescue the lifespan defect in male L-RKO mice. The Cox regression analysis (C33), log-rank tests (C35, C37), and visual overlap of survival curves (C38) provide converging statistical and graphical evidence. The effect of Rictor deletion persists in both sham and castrated groups, supporting the conclusion that sex hormones do not mediate the male-specific survival defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C118",
+      "C119"
+    ],
+    "result": "Hepatic Rictor deletion specifically reduces survival in male mice that do not die with observable cancer (HR=4.84, p=0.0014), but has no effect on males that die with cancer. Cancer frequency did not differ significantly between groups (p=0.06), though L-RKO CAST males showed higher cancer frequency. Castration had no overall effect on survival in either cancer-stratified group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by stratified survival analysis shown in Figures 1A-B. The dramatic effect in non-cancer deaths (C31) contrasts with the null effect in cancer deaths (C30), suggesting Rictor loss affects a specific non-cancer cause of death. However, the limitation acknowledged in C85 (gross necropsy only) means unobserved neoplasms cannot be ruled out, which introduces some uncertainty about the true cancer status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C7",
+      "C8",
+      "C80",
+      "C93"
+    ],
+    "result": "Ovariectomy protects female L-RKO mice from midlife mortality in the absence of observable cancer. Female L-RKO Sham mice show dramatically reduced survival when cancer is not observed (HR=6.67, p=0.00084), but this defect is rescued by ovariectomy, with L-RKO OVX survival curves overlapping those of wild-type controls. A significant interaction between Rictor loss and ovariectomy (p=0.014) indicates ovariectomy specifically protects against non-cancer-related deaths in L-RKO females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 provide strong evidence for a protective effect of ovariectomy in female L-RKO mice. The stratified survival analysis (Figure 2B) shows a dramatic effect of genotype only in non-cancer deaths, and the significant interaction term (C43) combined with overlapping survival curves (C44) support the interpretation of a protective effect. The statistical significance (p=0.00084 for genotype effect, p=0.014 for interaction) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C29",
+      "C94",
+      "C95"
+    ],
+    "result": "Pre-pubertal ovariectomy has an overall protective effect on female mouse survival (HR=0.66, p=0.05), driven primarily by improved midlife survival in L-RKO mice. Ovariectomized L-RKO females show a 17% increase in median lifespan compared to sham L-RKO females (p=0.025, Wilcoxon test), with survival curves diverging between 400-800 days of age. Wild-type females show a non-significant 7.4% increase in median lifespan following ovariectomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by Cox regression and Wilcoxon rank-sum analyses of the complete female cohort (Figure 2C). The use of the Wilcoxon test (C52) is appropriate given the non-proportional hazards evident in the diverging survival curves (C51). The protective effect is statistically significant overall (C48) and in the L-RKO comparison (C52), though the wild-type effect remains non-significant (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C10",
+      "C98",
+      "C99",
+      "C100",
+      "C112",
+      "C116"
+    ],
+    "result": "Ovariectomy uncouples lifespan from metabolic health in female mice. Despite improved survival, ovariectomized females exhibit increased adiposity, impaired glucose tolerance, and disrupted metabolic parameters. This demonstrates that metabolic health and longevity are not inextricably linked in mammals, paralleling findings in C. elegans where lifespan and healthspan can be uncoupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C98-C100 are well-supported by converging evidence from survival studies (Figures 2B-C), body composition data (Figure 3F), and glucose tolerance tests (Figures 5C-D). The paradoxical combination of improved survival with worsened metabolic parameters provides strong evidence for uncoupling. However, the authors acknowledge (C111) that comprehensive healthspan assessment was not performed, limiting the generalizability of this conclusion to all aspects of healthspan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C99"
+    ],
+    "result": "Ovariectomy increases body weight and fat mass in female mice. Wild-type ovariectomized females show increased weight due to increased fat mass, while no genotype-based differences in fat mass were observed in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56, and C99 are supported by body composition measurements shown in Figures 3B and 3F. The two-way ANOVA shows significant effects of surgery on weight and fat mass in females. The data clearly demonstrate increased adiposity following ovariectomy in wild-type females.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C101",
+      "C102"
+    ],
+    "result": "Ovariectomy, but not castration, profoundly affects energy balance in mice. Ovariectomized females show suppressed food intake, spontaneous activity, and energy expenditure in both WT and L-RKO mice, while castration has minimal effects on these parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C101-C102 are supported by metabolic chamber data in Figure 4A, C, and D. Two-way ANOVA shows significant effects of ovariectomy (p<0.001) on food intake, activity, and energy expenditure, with no corresponding effects of castration. The consistency across multiple metabolic parameters strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Ovariectomy alters fuel source utilization in wild-type females, with lower RER indicating reduced carbohydrate oxidation and increased lipid utilization. L-RKO females show lower RER during the light cycle that is not further suppressed by ovariectomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by RER measurements in Figure 4B. Two-way ANOVA shows significant effects of ovariectomy and genotype on RER, with a significant interaction. The data demonstrate altered substrate utilization following ovariectomy in wild-type but not L-RKO females.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Hepatic Rictor deletion impairs glucose tolerance in male mice at all ages tested, with no effect of castration. In females, Rictor deletion has no effect at 4 months but impairs glucose tolerance by 11 months. Ovariectomy negatively affects glucose tolerance at both ages in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by glucose tolerance test data in Figures 5A-D. The sex-specific and age-dependent effects are clearly demonstrated, with significant effects of genotype in males (p<0.001) and ovariectomy in females (p=0.001). The data are consistent with prior work (C65 cites previous findings).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Hepatic Rictor deletion in males causes fasting and glucose-stimulated hyperinsulinemia and increased HOMA2-IR, consistent with impaired hepatic insulin sensitivity, despite minimal effects on insulin tolerance tests. Castration does not significantly affect these parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by insulin measurements (Figure 5E, Figure 5\u2014figure supplement 2) and insulin tolerance tests (Figure 5\u2014figure supplement 1). The pattern of hyperinsulinemia with minimal ITT effects is consistent with hepatic insulin resistance. The lack of castration effects is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In female mice, genotype does not significantly affect fasting glucose or insulin, but ovariectomy promotes hyperinsulinemia and increases HOMA2-IR. Young L-RKO females show slight insulin sensitivity impairment, which becomes statistically significant in older ovariectomized L-RKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by insulin measurements (Figure 5F) and insulin tolerance tests (Figure 5\u2014figure supplement 1C-D). The data show clear effects of ovariectomy on insulin homeostasis and age-dependent effects of genotype on insulin sensitivity in females.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "Castration reduces weight in wild-type males due to decreased lean mass. Male L-RKO Sham mice weigh less than wild-type controls due to decreased fat mass, and castration rescues this decreased adiposity in L-RKO males without affecting fat mass in wild-type males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C55, C57-C58 are supported by body weight and composition data in Figures 3A, C, and E. The genotype-by-surgery interaction for fat mass in males is statistically significant (p<0.0001), supporting the differential effect of castration on L-RKO versus wild-type males.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Pre-pubertal castration has no effect on mouse lifespan or glucose homeostasis, though it affects body weight and composition. These findings differ from some prior studies in rats and humans, possibly due to confounding factors in those studies. The results do not support a beneficial role for male germline ablation in healthspan or longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C108-C110 are supported by survival data (Figure 1C), glucose tolerance tests (Figures 5A-B), and body composition data (Figure 3). The lack of castration effects on survival and glucose homeostasis is clearly demonstrated. The comparison with prior literature (C105-C106) appropriately acknowledges potential confounders in earlier studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C9",
+      "C86"
+    ],
+    "result": "The sex-specific impact of reduced hepatic mTORC2 is not reversed by depletion of sex hormones, revealing a sex hormone-dependent role for hepatic mTORC2 in female longevity. However, the mechanism by which ovariectomy protects L-RKO female mice during midlife remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C9 are supported by the differential effects of gonadectomy in males (no rescue) versus females (protection in L-RKO mice). However, C86 acknowledges that the mechanism is unknown, and the authors note (C83-C84) that the causes of death in L-RKO mice are unclear. While the phenomenological observation is well-supported, the mechanistic understanding is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C96",
+      "C97"
+    ],
+    "result": "The findings align with model organism studies showing that early-life germline ablation extends lifespan in C. elegans and R. microptera, suggesting conservation of germline control of aging from invertebrates to mammals. Pre-pubertal ovariectomy in mice parallels these effects, contrasting with post-pubertal ovariectomy which may shorten lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 and C90-C92 appropriately cite prior literature on germline ablation effects across species. Claims C96-C97 draw reasonable evolutionary inferences based on the current findings and prior work. However, the comparison is somewhat limited by differences in experimental approaches (germline ablation vs. ovariectomy) and the acknowledged lack of mechanistic understanding (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "The observed disruption of metabolic health following ovariectomy is consistent with prior studies showing that ovarian hormones play a critical role in glucose homeostasis control in humans and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 appropriately cites prior literature and is supported by the metabolic data in the current study (Figures 3-5). The consistency with established knowledge strengthens the validity of the metabolic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C115"
+    ],
+    "result": "The study has a limitation in that comprehensive healthspan assessment was not performed, focusing instead on metabolic parameters. This highlights the need to comprehensively assess the effects of geroprotectors on healthspan, as some aspects of healthspan are not inextricably coupled to longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111 and C115 appropriately acknowledge study limitations and draw reasonable conclusions about the need for comprehensive healthspan assessment in aging research. This is a valid inference from the finding that metabolic health and longevity can be uncoupled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The reasons for decreased survival in male L-RKO mice and midlife mortality in female L-RKO mice are unknown. While the study suggests these deaths are not cancer-related based on gross necropsy, unobserved neoplasms cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 appropriately acknowledge gaps in understanding and limitations of the gross necropsy approach. The stratified survival analysis by cancer status (Figures 1A-B, 2A-B) provides some evidence against cancer as the cause, but the authors correctly note that microscopic or unobserved cancers cannot be excluded without histopathology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C39"
+    ],
+    "result": "Cancer was observed in approximately half of necropsied animals, consistent with expectations for C57BL/6J mice. There were no statistically significant differences in cancer frequency between groups in either sex (males: p=0.06; females: p=0.78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117 and C39 are supported by necropsy data and chi-square analyses shown in Figure 1\u2014figure supplement 1 and Figure 2\u2014figure supplement 1. The cancer frequency is consistent with prior literature for this strain (C117 cites Brayton et al., 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Methodological details: L-RKO mice were generated by crossing RictorL/L mice with Albumin-Cre mice. Gonadectomy or sham surgery was performed at 3 weeks of age. The study included 115 female and 105 male mice, with 23 female and 22 male mice removed for cross-sectional analysis. Mice were co-housed by sex and surgical treatment. Gross necropsy examined for tumors, metastases, splenomegaly, and infection. Cox proportional hazards analysis was performed separately for each sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 describe methodological details that are clearly stated in the Materials and Methods section. These are straightforward factual claims about study design and procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background context: mTOR signaling inhibition by rapamycin extends lifespan more strongly in females than males. Hepatic mTORC2 deletion specifically reduces male lifespan with no effect in females, not due to differences in deletion efficiency. Many sexually dimorphic responses to interventions are mediated by sex hormones. Chronic rapamycin treatment causes metabolic side effects mediated by off-target mTORC2 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C14-C25 summarize established background knowledge and prior work, appropriately supported by citations to the literature. These provide context for the current study's hypotheses and findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1998 @@
+{
+  "submission": {
+    "id": "7bf45884-6461-445d-90e0-f5a313bdb519",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:42:07.069552Z",
+    "updated_at": "2025-12-02T10:42:07.069552Z"
+  },
+  "content": [
+    {
+      "id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "submission_id": "7bf45884-6461-445d-90e0-f5a313bdb519",
+      "content_type": "manuscript",
+      "content_text": "# Variable opportunities for outcrossing result in hotspots of novel genetic variation in a pathogen metapopulation\n\n## Authors\n\n- Anna-Liisa Laine<sup>1</sup> ([ORCID: 0000-0002-0703-5850](https://orcid.org/0000-0002-0703-5850)) \u2020\n- Benoit Barr\u00e8s<sup>1</sup> ([ORCID: 0000-0002-6777-0275](https://orcid.org/0000-0002-6777-0275))\n- Elina Numminen<sup>1</sup>\n- Jukka P Siren<sup>1</sup>\n\n### Affiliations\n\n1. Research Centre for Ecological Change, Organismal and Evolutionary Biology University of Helsinki Helsinki Finland\n2. Department of Evolutionary Biology and Environmental Studies University of Zurich Winterthurerstrasse Switzerland\n3. Helsinki Institute for Information Technology, Department of Computer Science Aalto University Espoo Finland\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany pathogens possess the capacity for sex through outcrossing, despite being able to reproduce also asexually and/or via selfing. Given that sex is assumed to come at a cost, these mixed reproductive strategies typical of pathogens have remained puzzling. While the ecological and evolutionary benefits of outcrossing are theoretically well-supported, support for such benefits in pathogen populations are still scarce. Here, we analyze the epidemiology and genetic structure of natural populations of an obligate fungal pathogen, Podosphaera plantaginis. We find that the opportunities for outcrossing vary spatially. Populations supporting high levels of coinfection \u2013a prerequisite of sex \u2013 result in hotspots of novel genetic diversity. Pathogen populations supporting coinfection also have a higher probability of surviving winter. Jointly our results show that outcrossing has direct epidemiological consequences as well as a major impact on pathogen population genetic diversity, thereby providing evidence of ecological and evolutionary benefits of outcrossing in pathogens.\n\n## Introduction\n\nMany pathogens possess the capacity for sex \u2013 here defined in its broadest sense as the coming together of genes from different individuals (Lehtonen and Kokko, 2014) \u2013 despite being able to reproduce also asexually and/or via selfing. Individuals that undergo sexual reproduction transmit only half their genome per offspring produced in contrast to asexual and selfing individuals (Lehtonen et al., 2012) and hence, understanding the maintenance of sex is one of the fundamental challenges in evolutionary biology.\u00a0To counteract this two-fold cost of sex, sexual outcrossing is assumed to provide both ecological and evolutionary advantages (Otto, 2009). The Red Queen Hypothesis predicts sexual reproduction to be advantageous in the presence of coevolving parasites, as offspring that are genetically different from their parents should have higher fitness than non-sexual offspring\u00a0(Bell, 1982; Hamilton, 1980; Lively, 2010). In support of this prediction, empirical studies have demonstrated parasite mediated selection to explain the observed distribution of outcrossing in hosts (King et al., 2011; Wilson and Sherman, 2013; Lively, 1987). Just as sexual reproduction is expected to be selected for in hosts to evade parasitism, parasites should equally be under selection to generate novel genetic variation to infect their ever-changing host populations. Indeed, theoretically it has been possible to identify a parameter space where coevolution with the host favors sexual reproduction in the parasite (Howard and Lively, 2002; Galvani et al., 2003; Salath\u00e9 et al., 2008). However, the empirical evidence for such advantages of sex in parasite populations are still few and conflicting (Gouyon and de Vienne, 2015).\n\nSexual reproduction may also confer ecological advantages by bridging unfavorable seasons or habitats. In free-living facultatively sexual organisms that alternate between asexual and sexual reproduction, the sexual offspring are often the dormant or dispersing life stages (Stelzer and Lehtonen, 2016; Simon et al., 2002). Similarly, in some of the most devastating fungal pathogens of crops, the spores that are produced via outcrossing are also those that are suitable for long-distance dispersal (Rieux et al., 2014), or provide means of surviving unfavorable environmental conditions (Billiard et al., 2012; Burt, 2000; Saleh et al., 2012). While sexual offspring do not contribute to current local population growth, the ability to outcross may be a key determinant of both the numeric and genetic composition of the next season\u2019s epidemic (Penczykowski et al., 2015; Tack and Laine, 2014). For such strategies where outscrossing is timed with low potential asexual growth, for example due to seasonality, the cost of sex is expected to be reduced (Gerber et al., 2018). Homothallic species, where a haploid individual may mate with other haploid individuals of its species, as well as with itself, may be considered a special case of facultative outcrossing. Here, the maintenance of outcrossing is particularly puzzling given that the offspring produced via haploid selfing are expected to yield the same ecological functions as those produced by outcrossing. Nonetheless, there is evidence of high rates of outcrossing in homothallic species (Billiard et al., 2012). To date the relevance of these short-term ecological processes in favoring selfing vs. outcrossing in pathogens populations has remained largely unknown.\n\nEven when outcrossing is expected to provide short- or long-term advantages, maintenance of selfing may be favored when mate availability is spatially and/or temporally variable (Jarne and Charlesworth, 1993). For many pathogens, coinfection is the ecological prerequisite of sexual recombination, as outcrossing and hybridization take place during active infection of the same host individual by different strains (Froissart et al., 2005). With molecular tools becoming increasingly available for pathogens, we are beginning to unravel the spatio-temporal distribution of coinfection as well as the ecological outcomes, which may range from facilitation to competition (Tollenaere et al., 2016). Although coinfections have been widely reported for different pathogens, remarkably little is understood of the determinants of coinfection (Tollenaere et al., 2016). Identifying factors that increase the probability of coinfection also shed light on where we expect to see outcrossing in pathogens with mixed mating strategies.\n\nMixed reproductive strategies have been described for a wide range of pathogen species (Billiard et al., 2012; Billiard et al., 2011). However, the sexual stage is methodologically notoriously difficult to study in many pathogens given their microscopic size and the fact that mating types cannot be identified morphologically. Moreover, sexual reproduction may take place inside the host, and may be triggered by specific environmental cues that are difficult to mimic under controlled experimental conditions (Billiard et al., 2012; Tack and Laine, 2014). Hence, remarkably little is understood of this critical life-history stage. To understand why outcrossing is broadly maintained in pathogens despite the costs, here we investigate the ecological and genetic consequences of putative outcrossing in a large natural pathogen metapopulation. Our analysis is based on data collected from Podosphaera plantaginis, a specialist powdery mildew fungus naturally infecting Plantago lanceolata. The visually conspicuous symptoms caused by P. plantaginis enable accurate tracking of infection in the wild. Long-term epidemiological data across approximately 4000 local plant populations in the \u00c5land Islands, southwest of Finland, have demonstrated this pathogen to persist as a highly dynamic metapopulation with frequent extinctions and (re)colonizations of local populations (Jousimo et al., 2014). Overwinter survival of local pathogen populations has proven to be the vulnerable life-history stage of P. plantaginis in \u00c5land with a high fraction of the local pathogen populations going extinct (Jousimo et al., 2014). The pathogen survives the winter in resting structures, chasmothecia (Tack and Laine, 2014). These resting structures are produced through sexual reproduction as the hyphal cells of one (selfing) or two strains (outcrossing) fuse when infecting the same host plant. The resulting diploid zygote undergoes meiotic division to yield haploid ascospores that develop inside the chasmothecium. At the onset of the growing season these chasmothecia rupture, releasing the ascopores that initiate new infections (Tollenaere and Laine, 2013). Here, we (i) determine how coinfection - the pre-requisite for sexual outcrossing - varies in natural pathogen populations. We then measure whether (ii) putative outcrossing (i.e. coinfection) is associated with the generation of novel pathogen multilocus genotypes, and (iii) increased pathogen population overwintering success (Jousimo et al., 2014). We\u2019ve surveyed and sampled all found pathogen populations in the \u00c5land Islands for four consecutive years, and we use Spatial Bayesian models (Integrated Nested Laplace Approximation; INLA; Lindgren and Rue, 2015) to analyse data on disease dynamics and genotypic diversity from the natural metapopulation.\n\n## Results\n\nWe first quantify how the opportunities for sexual outcrossing \u2013\u00a0thta\u00a0is coinfection - vary across hundreds of wild pathogen populations in four consecutive seasons. We sampled 619, 703, 693 and 833 populations in 2012\u201315 for subsequent genotyping (Table S1). We used a SNP genotyping protocol to estimate the number of multilocus genotypes (MLGs) and prevalence of coinfection within pathogen populations (Tollenaere et al., 2012). Coinfection proved to be common yet spatially variable across the P. plantaginis metapopulation (Figure 1A)\u00a0(Susi et al., 2015). In all years approximately half of the pathogen populations supported at least one coinfected sample, (45\u201358%; Supplementary file 1). We found that coinfection was more likely to be found in larger and more diverse pathogen populations (Significant positive effect of number of MLGs and infection abundance; Table 1). Connectivity of pathogen populations, which is considered a proxy for gene flow among populations as it is estimated from distances separating local pathogen populations (Jousimo et al., 2014), had a positive, albeit not significant, effect on the probability of coinfection (Table 1). The INLA model we use here, controls for spatio-temporal autocorrelation characteristic of spatial ecological data due to unmeasured variables, thereby providing a conservative estimate of the model parameters as evidenced by model validation checks (Figure 1\u2014figure supplements 1\u20135)\u00a0(Lindgren and Rue, 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-v2.jpg)\n\n**Figure 1.:** The heatplots for the spatial occurrence probability of coinfection in 2012\u201314 (A-C, respectively), and probability of a novel MLG emerging in pathogen populations in 2013\u201315 (D-F, respectively), were obtained by fitting spatial intercept-only models as presented in Table 1. The probabilities of events for each location were obtained from the linear predictor based on the estimated intercept and the spatial random field. Warmer tones correspond to areas of higher event occurrence probabilities. The number of genotyped samples supporting coinfection in a pathogen population correlated positively with the probability of detecting a MLG that had not been previously detected in that population using all data collected in 2012\u201315 (G). The fitted line corresponds to the 95% confidence level interval generated by the linear model in Table 1. Darker shades indicate higher data density.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Range corresponds to the distance at which the spatial autocorrelation becomes negligible (smaller than 0.1).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The coastline of the study area is shown in blue. The spatial random field is approximated at the mesh nodes, and these values are then projected into the observation locations.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The close-to-uniform distributions of the corrected PIT-value for the coinfection (A), new strain emergence (B) and overwintering (C) indicate adequacy of the models.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The CPO-values for the three models exhibit no particular spatial patterns, providing a further model validation argument.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** No particular temporal structure is visible indicating the adequacy of the models.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Each panel shows the posterior distribution for one parameter and separately for the two years. The posterior distributions for the two years are very similar for most parameters. The biggest difference is for the parameter\u00a0$\\alpha_{M,1}$, which controls the average number of mildew strains infecting each patch. This is not unexpected, given the highly dynamic nature of the pathogen metapopulation. The posterior probability that $\\gamma>;0$\u00a0was 0.98 for 2012 and 0.988 for 2013 indicating that coinfections are more common than expected by chance.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Each boxplot shows the distribution of relative RMSE values for one parameter for year 2012 evaluated over 100 simulated test data sets with known parameter values. Relative RMSE 1 indicates no improvement over the prior distribution, while a value of 0 indicates perfect estimate. The parameter affecting the incidence of coinfections, $\\gamma$, is among the best-estimated ones.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Each panel shows the posterior distribution for one parameter under four different modeling assumptions. Red line shows the results under the standard assumptions used in other analyses. For the parameter\u00a0$\\gamma$, the standard choices produce more conservative (closer to 0) distributions than the others and the probability that $\\gamma>;0$\u00a0is lowest, suggesting that the modeling assumptions have not led to an overestimation of the incidence of coinfections.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp9-v2.jpg)\n\n**Figure 1\u2014figure supplement 9.:** Population size categories are\u20193\u2019 and \u20184\u2019 are merged in this figure.\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp10-v2.jpg)\n\n![Figure 1\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig1-figsupp11-v2.jpg)\n\n**Table 1.**\n The estimated posterior means and 95% credibility intervals for the parameters of the fitted spatio-temporal models.In each model, the abundance of infection category one is considered as the baseline factor level for every model. Whenever the credibility interval does not include zero (denoted with bold), the effect is considered significant. For temporal and spatial range, and the nominal variance, significance cannot be estimated as they can only get positive values. For more information about the predictors, please see the Model Variables-section in the Methods.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Model</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Parameter</td>\n      <td>Coinfection presence in a pathogen population (0/1)</td>\n      <td>Number of new strains within a population</td>\n      <td>Successful pathogen population overwintering (0/1)</td>\n    </tr>\n    <tr>\n      <td>Intercept</td>\n      <td>\u22121.04,(\u22121.16,\u20130.92)</td>\n      <td>\u22120.38,(\u22120.49,\u20130.27)</td>\n      <td>1.17, (0.93, 1.41)</td>\n    </tr>\n    <tr>\n      <td>Number of coinfections</td>\n      <td>not fitted</td>\n      <td>0.06, (0.02, 0.11)</td>\n      <td>0.28,(0.11, 0.46)</td>\n    </tr>\n    <tr>\n      <td>Number of strains</td>\n      <td>1.07, (0.93, 1.21)</td>\n      <td>0.08, (0.04, 0.13)</td>\n      <td>0.34,(0.18, 0.5)</td>\n    </tr>\n    <tr>\n      <td>Abundance of infection (category 2)</td>\n      <td>0.37, (0.22, 0.53)</td>\n      <td>\u22120.03, (\u22120.08, 0.02)</td>\n      <td>0.39, (0.27, 0.51)</td>\n    </tr>\n    <tr>\n      <td>Abundance of infection (category 3)</td>\n      <td>0.61, (0.46, 0.75)</td>\n      <td>\u22120.04, (\u22120.1, 0.01)</td>\n      <td>0.55, (0.39, 0.72)</td>\n    </tr>\n    <tr>\n      <td>Year 2013</td>\n      <td>not fitted</td>\n      <td>0.17,  (0.03, 0.32)</td>\n      <td>0.05, (\u22120.27, 0.37)</td>\n    </tr>\n    <tr>\n      <td>Year 2014</td>\n      <td>not fitted</td>\n      <td>1.45, (1.33, 1.58)</td>\n      <td>0.52, (0.19, 0.85)</td>\n    </tr>\n    <tr>\n      <td>Pathogen connectivity (Sip)</td>\n      <td>0.05, (\u22120.08, 0.19)</td>\n      <td>0.02, (\u22120.02, 0.07)</td>\n      <td>\u22120.04, (\u22120.19, 0.1)</td>\n    </tr>\n    <tr>\n      <td>Host population size (logm2)</td>\n      <td>0.01, (\u22120.12, 0.14)</td>\n      <td>0.09, (0.04, 0.14)</td>\n      <td>0.03, (\u22120.1, 0.16)</td>\n    </tr>\n    <tr>\n      <td>Temporal autocorrelation (\u03c6)</td>\n      <td>0.03, (\u22120.41, 0.43)</td>\n      <td>0, (\u22120.41, 0.41)</td>\n      <td>\u22120.08, (\u22120.43, 0.28)</td>\n    </tr>\n    <tr>\n      <td>Spatial range (meters)</td>\n      <td>11410, (460, 50811)</td>\n      <td>14229, (3266, 38058)</td>\n      <td>8512, (1775, 25860)</td>\n    </tr>\n    <tr>\n      <td>\u03c32 (Nominal variance)</td>\n      <td>0.2, (0, 1.33)</td>\n      <td>0.07, (0.01, 0.22)</td>\n      <td>0.45, (0.1, 1.28)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe then used an Approximate Bayesian Computation (ABC) approach to determine whether we detect more coinfection within populations than would be expected based on the number of parasite genotypes and host availability. Our results show that an already infected plant is more likely to be infected by another strain (Figure 1\u2014figure supplement 6). In other words, coinfections were more common than expected by chance under the assumption that infections by different MLGs are statistically independent. The result was consistent in both years 2012 and 2013 (posterior probability 0.98 and 0.988, respectively; Figure 1\u2014figure supplement 6), with the parameter controlling the prevalence of coinfections, $\\gamma,$\u00a0being reliably estimated under different modeling assumptions (Figure 1\u2014figure supplement 7\u20138).\n\nThe detection of novel MLGs in the pathogen metapopulation from one year to another suggests that sexual outcrossing is common for this pathogen. When all located pathogen populations were genotyped, we identified 182, 189, and 235 novel MLGs in 2013\u20132015, respectively, when compared to MLGs detected the previous year (Supplementary file 1; Figure 1B). The number of new MLGs at the population level increased with the prevalence of coinfection at the end of the previous epidemic season which is the time when outcrossing takes place (Figure 1C; Table 1). The prevalence of coinfection was a strong predictor of novel MLGs the following year even after controlling for the effects of local pathogen population size, diversity (number of MLGs), pathogen population connectivity (proxy for gene flow) as well as spatial and temporal autocorrelation (Table 1).\n\nUsing data from the natural pathogen metapopulation, we also found that in those pathogen populations where the prevalence of coinfection is high \u2013 and hence where sexual reproduction can take place \u2013 the pathogen has a higher survival probability (Table 1; Figure 2A and B). The effect of coinfection on successful overwintering is positive even after controlling for the effects of pathogen population size and diversity, which both increase survival probability. The INLA model also controls for spatial and temporal autocorrelation in these data that may be generated by abiotic variation known to be important for overwintering ecology of this pathogen (Penczykowski et al., 2015). Hence, we view this as a conservative estimate of the effect of coinfection on overwintering. Resting spores, which were visually scored in the field (Tack and Laine, 2014), were produced in nearly all pathogen populations regardless of whether they supported coinfection or not (96% vs. 93%, respectively).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47091/elife-47091-fig2-v2.jpg)\n\n**Figure 2.:** The heatplot for the spatial occurrence probabilities of overwinter survival were obtained by merging the corresponding event data from corresponding years and fitting spatial intercept-only models as presented in Table 1. The probabilities of events for each location were obtained from the linear predictor based on the estimated intercept and the spatial random field. The maps shows spatial variation in overwinter survival for 2012\u201313 (A), 2013\u201314 (B) and 2014\u201315 (C) with warmer tones corresponding to areas of higher event occurrence probabilities. (B) The average probability of successful pathogen population overwintering was higher in populations with coinfection than in populations without coinfection in all three years in 2012\u201315.\n\n## Discussion\n\nHere, we report compelling evidence of outcrossing that generates novel genetic diversity in the pathogen metapopulation. Our results demonstrate variation in how opportunities for outcrossing are distributed across space. Finding more coinfection than would be expected by chance is in line with previous fine-scale field sampling of infections and experimental work, which show that hosts already infected with one strain of the pathogen are more likely to become infected by another strain of the same pathogen than uninfected hosts (Laine, 2011; Susi and Laine, 2017). This may be due to already infected individuals becoming more susceptible to subsequent infection, or due to strains aggregating on those hosts that are the most susceptible genotypes (Susi and Laine, 2017). Moreover, variation in host density and (micro)climatic conditions may be an important driver of infection patters in the wild (Penczykowski et al., 2018). Our results do not support the priming hypothesis (Hilker et al., 2016), whereby prior attack provides increased protection against later attack.\n\nWe find that spatial variation in coinfection results in spatially delineated hotspots of novel genetic diversity. The high number of new MLGs detected every year is indicative of outcrossing taking place in this pathogen metapopulation. Although our sampling is likely to miss some rare strains, and novel MLGs may be generated through mutations, these are unlikely to explain the high turnover of MLGs between years we report here. Mainland populations, which are separated by at least 38 km of open water, are also expected to play a negligible role as sources of gene flow given that experimental and field data have confirmed this pathogen to typically disperse short distances (Jousimo et al., 2014; Tack et al., 2014). Our results suggest that sexual outcrossing takes place where there is the opportunity for it, that\u00a0is in populations where levels of coinfection are high. To date, this phenomenon has only received limited experimentally derived support in pathogens (Schelkle et al., 2012). Spatio-temporal variation in outcrossing is expected to have both evolutionary and epidemiological consequences for the pathogen. In the short term, generation of novel genetic diversity may increase transmission across host populations that support considerable resistance diversity both within and among populations (Jousimo et al., 2014; Laine et al., 2011). Novel genetic diversity may also increase the evolutionary potential of pathogens that need to adapt to both biotic and abiotic variation in their environment (Greischar and Koskella, 2007; Wolinska and King, 2009).\n\nOur multi-year census data further revealed the putative outcrossing to yield a benefit that is realized in an ecologically important function \u2013 higher overwintering success. Overwintering determines both the genetic and numeric structure of the next epidemic (Tack and Laine, 2014; Penczykowski et al., 2015), and hence may be a sufficiently important trait to promote the maintenance of outcrossing in a pathogen that is able to complete its life-cycle also through haploid selfing. Our results suggest that successful overwintering is not due to higher production of resting spores. Hence, there may be a difference in the quality of progeny produced via selfing vs. outcrossing. Prior experimental work has demonstrated significant variation in spore viability in the resting structures of P. plantaginis. There is evidence of higher viability of progeny from coinfections than from single infections, but the strength and direction of this trend is affected by the genotypes of the interacting strains, as well as by temperature (Vaumourin and Laine, 2018). Despite the higher overwintering success of outcrossed progeny, haploid selfing may be preserved due to the low probability of encountering a suitable mating partner infecting the same host. Moreover, there may be a cost to outcrossing as it breaks up locally adapted pathogen populations by producing novel \u2013 and potentially maladapted\u00a0\u2013 genetic variation.\n\nOverall, the selection pressures and opportunities to mate vary considerably across space and time, and hence, it is not surprising that many pathogens have evolved highly complex mating strategies (Billiard et al., 2011). A loss of sexual reproduction in pathogens has been linked to homogenous habitat (Saleh et al., 2012) or stable environmental conditions (Barrett et al., 2008). Maintaining a mixed mating system may provide a bet-hedging strategy for this pathogen to survive in a fragmented landscape, with a high probability of population extinction during the off-season. It is noteworthy that here we succeeded in identifying predictors of how coinfection is spatially distributed - and hence where hotspots of outcrossing are formed - despite the considerable environmental \u2018noise\u2019 this natural system supports. The correlations in field collected data we have observed here are a promising start to uncovering the variable selective pressures and advantages of outcrossing in pathogens. Establishing direct links between variation in reproductive strategies and epidemiological dynamics offers an exciting venue of research, and is needed to truly predict where risks of infection and disease emergence are the highest.\n\n## Materials and methods\n\n### Survey of natural pathogen metapopulation\n\nPlantago lanceolata is a perennial rosette-forming herb that is naturally infected by Podosphaera plantaginis (Castagne; U. Braun and S. Takamatsu), a powdery mildew fungus in the order Erysiphales within the Ascomycota. This pathogen is a host-specific obligate biotroph that completes its entire life cycle on the surface of the host plant where it is visible as localized (nonsystemic) white powdery lesions. The interaction between P. lanceolata and P. plantaginis functions in a two-step manner typical of many plant\u2013pathogen associations. First, as the pathogen attempts to infect a new host, the interaction is strain specific as a given host genotype expresses resistance against some strains (recognition) of the pathogen while being susceptible to others (nonrecognition)\u00a0(Jones and Dangl, 2006). Once a P. plantaginis strain has successfully established there is still considerable variation in its development that is affected by both pathogen and host genotype (Laine, 2007). The pathogen is a significant stress factor for its host and may cause host mortality (Penczykowski et al., 2015).\n\nThe locations of P. lanceolata populations have been systematically mapped in the \u00c5land Islands, southwest of Finland, since the 1990s. There are currently c. 4000 known host populations that range in size from a few square meters to several hectares, with a median size of 300 m2 (Jousimo et al., 2014). Within host populations, initial pathogen foci are established from resting spores (chasmothecia), or from a spore immigrating into the local population from another population. The first visible signs of infection appear in late June as white-greyish lesions consisting of mycelium supporting spores (conidia) are formed. The spores are dispersed by wind to the same or new host individuals. Some six to eight clonally produced generations (estimated from spore germination-production times observed in the laboratory) follow one another in quick succession, often leading to a substantial proportion of the host individuals within a population being infected by late summer (Ovaskainen and Laine, 2006). Resting spores (chasmothecia) appear towards the end of the growing season in August\u2013September. Each chasmothecia contains eight ascospores that can each cause a new infection in the spring upon their release. Infected leaves may support hundreds of chasmothecia. In P. plantaginis, chasmothecia production is achieved via both haploid selfing as well as outcrossing between two strains simultaneously infecting the same host plant. Pure strains of P. plantaginis have been shown to carry both MAT1-1-1 and MAT1-2-1 that determine compatibility in several other powdery mildew species (Tollenaere and Laine, 2013).\n\nIn early September every year since 2001, all known P. lanceolata populations have been surveyed for the presence/absence of the powdery mildew (for details on the survey, please see Jousimo et al., 2014). These data can be used to identify pathogen populations, which have persisted from one year to the next, newly colonized populations, and populations that have gone extinct. These data have demonstrated that P. plantaginis persists as a highly dynamic metapopulation through extinction and (re)colonization of local host populations (Jousimo et al., 2014).\n\n### Genotyping of field collected pathogen samples\n\nIn 2012\u201315 nearly all located pathogen populations were sampled for genotyping (N\u00a0=\u00a0619, 703, 693, and 833 populations, respectively, which represented 96\u201397% of all located pathogen populations each year; Supplementary file 1). A sample consists of one infected leaf collected from an infected plant, and infected plants were sampled at a minimum distance of five meters between infected plants. The aim was to collect ten samples from each population but in smaller pathogen populations sampling effort needed to be scaled to how much infection was available for sampling (Please see \u2018Pathogen population size\u2019 below in Model variables -section below for a description, and for numbers of samples in each pathogen population size category, please see Figure 1\u2014figure supplement 9). The infected leaves were placed in separate falcon tubes and brought back to the laboratory where fungal material for each sample was collected by scraping off the surface of the infected leaf. This material and a 1 cm2 piece of the same infected leaf were placed in an individual well of a 96-well plate. Samples were stored at \u221220\u00b0C until DNA extraction.\n\nDNA extraction was performed using E.Z.N.A. Plant DNA kit (Omega Bio Tek Inc, Norcross, GA, USA) at The Institute of Biotechnology (BI, Helsinki, Finland). Samples were genotyped with 27 SNP markers using Sequenom MassARRAY iPLEX platform as described in Tollenaere et al. (2012) at the Finnish Institute for Molecular Medicine (FIMM, Helsinki, Finland). Automatic calling of the genotypes was performed using MassARRAY Typer four software (Sequenom, San Diego, CA). Because of the presence of null alleles in the studied populations, eight SNP were discarded from the analysis. Allele frequencies are shown in Figure 1\u2014figure supplement 10. The genotyping results were used to identify the multilocus genotypes (MLGs) of each sample and to detect coinfection in the collected samples. Podosphaera plantaginis is haploid, and therefore the detection of a heterozygote genotype for one or more SNP markers is a clear highly repeatable method for calling coinfections (Tollenaere et al., 2012; Susi et al., 2015).\n\n### Model variables\n\nThe survey data from the natural populations and the genotyping data from years 2012\u201315 were used to generate the following variables used in the analyses (See Statistical modeling below):\n\n#### Pathogen population size\n\nThe abundance of pathogen was scored on a categorical scale with five levels, defined as: 0\u00a0=\u00a0no infection, 1\u00a0=\u00a01\u20139 infected plants, 2\u00a0=\u00a010\u201399 infected plants, 3\u00a0=\u00a0100\u2013999 and 4\u00a0=\u00a01000 or more. Due to the small number of category four infections, the categories 3 and 4 were merged for the analyses.\n\n#### Number of MultiLocus genotypes (MLG) in local pathogen populations and identification of MLGs from coinfected samples\n\nFor each population and year we estimated the number of unique multilocus genotypes (MLG) observed using the SNP genotyping protocol described above. This number was obscured by samples supporting coinfection, for which the MLGs could not be directly identified. To solve this, we developed an algorithm that gives as an output a lower limit for the number of strains in the population, that would correspond to all the observed MLG profiles, both those observed for single and coinfected samples (Figure 1\u2014figure supplement 11). The algorithm was designed to be conservative to avoid overestimating the number of MLGs. To this end, we assumed that in a coinfected sample, the detection of multiple alleles in a locus could have failed, and only one allele observed. The five stages of the algorithm are as follows: First, we identified the unique MLGs from the single infections. Second, we identified coinfections, whose alleles could not be obtained as a combination of two unique MLGs from the first stage. Third, we removed duplicate coinfections, whose alleles were subsets of another coinfection in the loci that the samples shared. We considered subsets to accommodate possible genotyping errors for the coinfections, where only one allele is detected for a loci. Fourth, for each remaining coinfection, we constructed a new minimal candidate MLG, which was needed in addition to a unique MLG identified from single infections to generate the alleles in the coinfection. Only those loci where an allele not present in the single infection was observed in the coinfection were defined for the candidate MLG, and the remaining alleles were defined as unknown, because they could have been unobserved due to genotyping error. Fifth, we merged candidate MLGs that had same alleles in all the loci that were defined. The unique MLGs from single infections and the constructed candidate MLGs were now considered the unique strains for the population. The number of new MLGs in a population for a given year was estimated using the same algorithm. First, we applied the algorithm to samples from current and previous year, and then to samples from current year only. The number of new MLGs was then estimated as the difference between the number of MLGs from the two runs.\n\n#### Prevalence of coinfection in a population\n\nNumber of samples supporting coinfection in local pathogen populations identified using the SNP genotyping protocol described above.\n\n#### Abundance of pathogen resting structures\n\nThe powdery mildew survives the winter in resting structures (chasmothecia). These are visually conspicuous and their abundance has been systematically surveyed on the infected plants located during the field survey (Tack and Laine, 2014). The abundance of chasmothecia in local populations has been recorded on a categorical scale: 0\u00a0=\u00a0no infected plants with chasmothecia; 1 =<10% of infected plants with chasmothecia; 2\u00a0=\u00a010\u201325% of infected plants with chasmothecia; 3\u00a0=\u00a025\u201350% of infected plants with chasmothecia, and 4\u00a0=\u00a050\u2013100% of infected plants with chasmothecia.\n\n#### Successful overwintering of pathogen populations\n\nPathogen populations that were located in two successive autumn surveys were considered to have successfully overwintered.\n\n#### Pathogen connectivity\n\nConnectivity, denoted with $S_{i}^{p}$37 of each pathogen population, i, was computed as:\n\n$$\nS_{i}^{p}(t)=\\sumi\\neqje^{-\\frac{d_{i,j}}{\\alpha}}O_{j}\n$$\n\nwhere\u00a0$O_{j}=1$, if population j was infected and $O_{j}=0,$ if population j was not infected in the current year t, and $d_{i,j}$ corresponds to the distance between populations i and j. The parameter\u00a0$\\alpha$, describing the mean dispersal distance at the metapopulation level, was set $\\alpha=1000$\u00a0(meters) following results of Jousimo et al. (2014). Si is thus assumed to be a rough proxy for the expected number of pathogen transmission coming to population i from all the infected populations, under the assumption of exponentially distributed dispersal distance.\n\n#### Host population size\n\nThe total coverage (in m2) of the host in the local population has been visually assessed each year simultaneously when the pathogen infection data were collected. The criteria for describing host populations is provided in detail in Ojanen et al. (2013). In brief, suitable host populations have been identified by the presence of dense clusters of P. lanceolata, which in \u00c5land occur on dry meadows and pastures. These occur as well-defined, discrete patches across the landscape.\n\n### Spatial bayesian modelling of the effect of coinfection on pathogen overwintering and strain diversity\n\nWe modeled the following events of interest: the effect of the number of coinfections on persistence of infection from one year to the next, and the number of new, previously unidentified, MLGs in a pathogen population that survived from one year to the next. In addition, we assessed the drivers of the presence/absence of resting spores and coinfections among the infected populations. Our models were fitted to data from years 2012-2015. To control for the possible effect that population size, connectivity and diversity could have on the results, our models included the following predictors (described above in detail): Pathogen population size, host population size, number of distinct pathogen strains, and pathogen connectivity\u00a0$S_{i}^{p}$. Predictors with continuous support and the number of observed coinfections, were scaled and centered around zero, and factors transformed into binary 0/1-variables.\n\n#### Spatio-temporal logistic regression model\n\nThe statistical modeling of the phenomena of interest (coinfection presence, the emergence of new strains in a population and survival of pathogen population) was done by considering a logistic regression modeling framework, where the observation at location s at time t was assumed to be Bernoulli distributed with the event probability\u00a0$\\mu_{st}$. The spatial- and temporal autocorrelation was taken into account by assuming that $\\mu_{st}$ has an explicit spatio-temporal correlation structure, defined as follows:\n\n$$\nlogit(\\mu_{st})=z(s,t)\\beta+\\delta(s,t)+\\epsilon(s,t)\n$$\n\n\n\n$$\n\\delta(s,t)=\\phi\u22c5\\delta(s,t\u22121)+w(s,t)\n$$\n\nHere z(s,t) corresponds to the covariate information and $\\epsilons,t$\u00a0is the measurement error. Further, $\\deltas,t$\u00a0is a spatio-temporal latent process with first-order temporal autocorrelation, described by parameter $\\phi$($|\\phi|<;1)$, and spatially correlated outcomes described by zero-mean Gaussian distribution\u00a0$ws,t$. The spatial correlation is included by assuming that $ws,t$\u00a0has the following covariance structure:\n\n$$\nCov(w(s,t),\u00a0Cov(s^{\u2032},t^{\u2032}))={\\sigma_{2}C(h)\u00a00,\u00a0if\u00a0t\\neqt^{\u2032}\n$$\n\nHere $\\sigma_{2}$ is the overall variance of the random field, and $C(h)$\u00a0is the Matern covariance function, that only depends on the Euclidean distance h between the latent locations s and s\u2019, and hyperparameters $\u03ba$\u00a0and\u00a0$\u03d1$. Details on the covariance function, and an in-depth description of the modeling framework is given in Cameletti et al. (2013). The aim of our analysis was to infer the joint posterior distribution of\u00a0$\\theta$:\n\n$$\n\\theta={\\beta,\u00a0\\phi,\u00a0\\sigma_{2},\u00a0\u03ba,\u00a0\u00a0\u03d1,\n$$\n\nthe main interest being in\u00a0$\\beta$, which describes the effects of the covariates listed and described in the Model variables section.\n\nEfficient implementation of such inference is provided by the R-INLA package, which provides posterior distribution of $\\theta$\u00a0by marginalizing $\\mu_{st}$ with Laplace approximation. When setting the prior distributions for hyperparametersand\u00a0$\u03d1$, we followed the heuristics proposed by the INLA developers (Lindgren and Rue, 2015), ensuring that a 95% prior probability is set to the range being smaller than the size of the spatial domain considered. Here the range is defined as the distance at which the spatial autocorrelation becomes negligible (smaller than 0.1 under the Matern covariance). The other prior distributions were set to default uninformative prior distributions (Lindgren, 2012), Finally, another computational gain is obtained by approximating the spatial random field $ws,t$\u00a0with the help of a mesh, visualized in Figure 1\u2014figure supplement 1.\n\n#### Model validation\n\nAs a model validation argument, we inspected the distribution of the CPO-values, Conditional Predictive Ordinates, defined as:\n\n$$\nCPO_{i}=Pd_{i}^{new}=d_{i}D_{-i}).\n$$\n\n$CPO_{i}$\u00a0`corresponds to the probability of predicting the observation\u00a0$d_{i}$, when $d_{i}$ is excluded from the model fitting. Briefly, high CPO-values indicate high predictive power of the fitted model, while very low CPO values would indicate outlier observations, or a poor fit of the model, and patterns in CPO values (such as spatial or temporal) suggest inappropriate model structure.\n\nTo ensure the adequacy of the fitted models, we considered leave-one-out predictive measures of fit, assessing how well the model is able to predict the observed dynamics. In particular, we considered the so-called probability integral transform (Dawid, 1984), defined as:\n\n$$\nPIT_{i}=Pd_{i}^{new}\\leqd_{i}^{new}D_{-i}),\n$$\n\nHere $d_{i}^{}$\u00a0denotes for the i\u2019th observed outcome in the data, and $D_{-i}$ for the data with this observation excluded, and $PIT_{i}$\u00a0corresponds to the cumulative predictive distribution for the outcome i, given all the other observations. We adjust this to take into account the discrete nature of the modeled outcomes, as follows (Czado et al., 2009):\n\n$$\nPIT_{i}=P(d_{i}^{new}<;d_{i}\u00a0|\u00a0D_{\u2212i})+\\frac{1}{2}\u2217P(d_{i}^{new}=d_{i}\u00a0|\u00a0D_{\u2212i}).\n$$\n\nIn brief, skewedness of the distribution of PIT-values indicates biases, U- and inverse-U-shaped distributions indicate under- and over-dispersion, respectively, while a uniform distribution indicates good model fit.\n\n#### Parameter estimates\n\nWe considered a covariate to have a significant effect on the outcome, whenever its 95% credibility interval did not contain zero.\n\n### Analysis of occurrence of co-infections with approximate bayesian computation\n\nWe take an Approximate Bayesian Computation approach to determine whether there is more co-infection in the pathogen metapopulation than expected by chance. The model does not take into account the spatial structure of the patches, but considers them independent conditional on the model parameters.\n\n#### Process model\n\nFirst, consider a single patch i. Let $x_{i}$ denote a vector of environmental covariates of the patch i and including a constant. The number of plant individuals in patch i, $N_{i}$, is modeled as\n\n$$\nN_{i}~Poissonx_{i}\\alpha_{N},\n$$\n\nwhere $\\alpha_{N}$ are the parameters relating covariates $x_{i}$ to the expectation of\u00a0$N_{i}$. The number of MLGs in patch i, $M_{i}$, is modeled similarly\n\n$$\nM_{i}~Poissonx_{i}\\alpha_{M},\n$$\n\nwhere $\\alpha_{M}$ are the parameters. The number $M_{i}$ might be restricted with an upper limit\u00a0$M_{max}$, so that\u00a0$M_{i}\\leq~M_{max}$.\n\nLet $\\mu_{i}=\\mu_{i,1},\u2026,\\mu_{i,M_{i}}$ be a vector of transformed prevalences of the different MLGs in patch i. We assume a normal distribution for\u00a0$\\mu_{i,k}$, k=1,\u2026,$M_{i}$,\n\n$$\n\\mu_{i,k}~Normalx_{i}\\beta,1,\n$$\n\nwhere $\\beta$\u00a0is a vector of linear predictors.\n\nFor the jth plant in patch i the infection status is represented by a vector\u00a0$Z_{i,j}=Z_{i,j,1},\u2026,Z_{i,j,M_{i}}$. If\u00a0$Z_{i,j,k}>;0$, then the plant if infected by MLG k, and otherwise it is not infected by the strain k. We assume that the plant is exposed to the MLGs 1,\u2026,$M_{i}$ in order\u00a0$\\sigma_{i,j}$, which is a permutation of the MLG indices. The distribution for $Z_{i,j,k}$ is\n\n$$\nZ_{i,j,k}\u223cNormal(\u03b7i,j,k,\\tau^{2}),\n$$\n\nwhere $\\tau^{2}$ is the variance parameter and the mean $\u03b7_{i,j,k}$ depends on the values of $Z_{i,j,k}$ for MLGs l that are before MLG k in the order $\\sigma_{i,j}$ . Specifically,\n\n$$\n\u03b7_{i,j,k}={\\mu_{i,k}+\\gammaif\u00a0Z_{i,j,\\sigma_{i,j}(l)}>;0\u00a0for\u00a0any\u00a0\\sigma_{i,j}(l)\u00a0lt;k\\mu_{i,k}otherwise\n$$\n\nIn other words, if MLG k infects the plant (i.e.\u00a0$Z_{i,j,k}>;0$), then the mean $\u03b7_{i,j,k}$ is increased by $\\gamma$\u00a0for the MLG that the plant is exposed afterwards according to the order\u00a0$\\sigma_{i,j}$. If\u00a0$\\gamma>;0$, then it is easier for the subsequent strains to infect the plant, while if\u00a0$\\gamma>;0$, then it is more difficult for the subsequent strains to infect the plant.\n\nThe order $\\sigma_{i,j}$ may be same for all plants in the patch, so that $\\sigma_{i,j}=\\sigma_{i}$ for all plants j in patch i. The order $\\sigma_{i,j}$\u00a0may be given a uniform distribution in the set of all permutations, or it may depend on the strain prevalences\u00a0$\\mu_{i}$.\n\n#### Sampling model\n\nThe data considered here are the genotypes of sampled individuals. For a single patch i, if the mildew is present in the patch, up to 10 infected plants are sampled and the MLGs infecting them determined. The exact number of sampled plants depends on the number available in the patch; as many infected plants are sampled as possible until 10 is reached. The observed genotype for the j\u00a0th sampled plant (note that here j goes from 1 to 10, not from 1 to\u00a0$N_{i}$) in patch i is\n\n$$\nG_{i,j}={kifZ_{i,j,k}>0andZ_{i,j,l}<0foralll\\neqk0Z_{i,j,l}>0formultiplel\n$$\n\nIn words, genotype $G_{i,j}$ is the MLG index, if only one MLG is infecting the plant, and 0 if there is co-infection by multiple MLGs. Note that the genotypes of the MLGs in a co-infection are not observed.\n\nWe also use data on pathogen population size for patch i, $AA_{i}$, measured as a categorical variable (1 = less than 10 plants infected, 2 = 10-99 plants infected, 3 = 100-999 or 4 = 1000 or more) and infection prevalence for patch i, $RA_{i}$, (categories of the proportion of plants infected: 1 = 0-0.25, 2 = 0.25-0.5, 3 = 0.5-0.75 and 4 = 0.75-1).\n\n#### Prior distributions\n\nThe model includes $2+3n_{x}$ parameters, where $n_{x}$ is the number of covariates $x_{i}$ for patch i, including constant. All of the parameters, or alternatively their logarithms, are given uniform prior distributions on bounded intervals. For example, the variance parameter $\\tau^{2}$ has to be positive, so the uniform distribution is put on its logarithm. Additionally, some covariates might be restricted to have a positive (negative) effect on some feature, in which case the uniform distribution is put on the logarithm of the parameter (negative of the parameter).\n\n#### Posterior distribution\n\nThe goal of the inference is to compute and sample from the posterior distribution of the parameters given the observed data,\n\n$$\np\\gamma,\\tau^{2},\\alpha_{N},\\alpha_{M},\\beta|G,AA,RA\n$$\n\nAs data is available for multiple years, we considered each of them separately. As covariates in $x_{i}$ for patch i we included the area of the patch and P. lanceolata coverage. We included in the data only patches, where these covariates are available, resulting in 3817 and 3615 patches for years 2012 and 2013, respectively. The covariates (constant excluded) were standardized to have zero mean and unit variance across the patches. The total number of parameters in the model is 11.\n\nUnless otherwise stated, the maximum number of MLGs in each patch was set to\u00a0$M_{max}=30$. Similarly, the order $\\sigma_{i,j}$\u00a0was given a uniform distribution in the set of all permutations independently for each i and j.\n\n#### Approximate bayesian computation\n\nWe use an Approximate Bayesian computation (ABC) approach (Beaumont, 2010) to make inference on the posterior distribution of the parameters. ABC refers to a class of computational methods for Bayesian statistics, where the computation of likelihood is replaced by simulations from the model, and it is ideal for our purpose given that the dimension of the model is not fixed, because the number of plants $N_{i}$ and the number of MLGs $M_{i}$ in patch i is allowed to vary. Moreover, as our aim is to infer general patterns from the data in using information on for example the number of MLGs in a particular patch, an ABC approach is an efficient strategy.\n\nParameter estimation is carried out using standard ABC techniques (Beaumont, 2010). Candidate parameters are simulated from the prior, pseudo-datasets simulated for each parameter value and summary statistics are computed from the datasets. The number of simulations in each analysis is 100,000. The threshold of accepting simulations is based on obtaining a fixed size set of accepted values, that\u00a0is the acceptance threshold is a quantile of the distances. We use 500 closest values in the analysis.\n\nRaw summary statistics are transformed using two transformations. First, the raw summary statistics are brought closer to normality with one parameter (without shift) Box-Cox transformation applied independently to each statistic. Many of the proposed summary statistics are zero-inflated, which would make estimation of the parameter $\\lambda$\u00a0of the Box-Cox transformation unreliable. Because of this, fixed value $\\lambda=0.5$\u00a0is used. After the Box-Cox transformation, the summary statistics are centered and standardized to have unit variance. Second, the summary statistics are transformed with partial least squares (PLS) to produce orthogonal summary statistics while maximizing covariance with the parameters (Wegmann et al., 2009). The PLS is applied to all of the simulated parameter values and datasets. If applied to a set of summary statistics of dimension k, the maximum number of transformed statistics is k-1. In the analyses we use dimensionality of 20, which is larger than the number of parameters, but still substantially lower than the number of original summary statistics. Finally, local linear regression adjustment is utilized for the parameters in the set of accepted values (Beaumont et al., 2002). The parameter values are transformed based on the distances of the summary statistics to the summaries of the observed data.\n\n#### Summary statistics\n\nWe use the following raw summary statistics (36 in total):\n\n#### Effect of the modeling assumptions\n\nTo assess the robustness of the results, we tested the effect that the modeling assumptions have on the posterior distributions of the parameters. Studying all aspects of the model is obviously not possible, but we chose two assumptions, namely the order $\\sigma_{i,j}$ in which the mildew strains try to infect the plant, and the maximum number of strains in a patch\u00a0$M_{max}$.\n\nWe used three different distributions for the order\u00a0$\\sigma_{i,j}$:\n\nThe last distribution is intermediate between the first two, and the value of $\u03ba$\u00a0dictates how much the prevalences of individual MLGs affect the order. If $\u03ba$\u00a0is close to 0 then the distribution is close to uniform, and if $\u03ba$\u00a0goes to infinity the order is the same as second choice above. We use a value $\u03ba=5$\u00a0in the analyses.\n\nWe analyzed the year 2012 data four times with different assumptions. For the first three we used $M_{max}=30$ and each of the distributions shown above for\u00a0$\\sigma_{i,j}$. For the last one we set $M_{max}=100$ and the uniform distribution for\u00a0$\\sigma_{i,j}$. In each analysis we performed 50,000 simulations and used 500 closest for the posterior.\n\n#### Accuracy of inference\n\nAs a measure of goodness of fit the root mean squared error (RMSE) was computed independently for each parameter. RMSE for a parameter $\\theta$\u00a0is computed as\n\n$$\nRMSE\\thetaA=\\sqrt{\\frac{1}{N}\\sumj\\inA\\theta_{j}-\\theta_{t}^{2}},\n$$\n\n### Data availability and repeatability of analysis\n\nAll data and scripts used to perform the analyses presented in this paper are available in the git repository at\u00a0https://github.com/ComputerBlue/FungalSex\u00a0(Laine, 2019; copy archived at https://github.com/elifesciences-publications/FungalSex).\n",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "3094d68f-a932-441b-bbd1-8ee7e32a51ac",
+      "submission_id": "7bf45884-6461-445d-90e0-f5a313bdb519",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kayla King, University of Oxford United Kingdom\n\nReviewers:\n- Ellen Decaestecker\n\n## Review text\n\nDOI: [10.7554/eLife.47091.020](https://doi.org/10.7554/eLife.47091.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A direct ecological benefit of outcrossing in an obligate pathogen\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Kayla King as guest Reviewing Editor, and the evaluation has been overseen by Detlef Weigel as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ellen Decaestecker (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis work examines the advantages to outcrossing via coinfection in a plant pathogen. It comprises a thorough and complete analysis of the opportunities for outcrossing due to coinfection using an extensive, multi-year field data set from 4000 plant host populations. This study advances our understanding of the benefits of sex in organisms with the most common life-style in nature, and across heterogeneous landscapes (and environmental conditions).\n\nSummary:\n\nThe advantages of outcrossing in nature remain one of the biggest questions tackled by evolutionary biologists. Laine and colleagues address this question, in terms of overwintering success, using a phytopathogen which maintains mixed reproductive strategies (outcrossing and asexual reproduction/selfing) on its plant host. They use the powdery mildew fungus Podosphaera plantaginis, which is an obligate pathogen of Plantago lanceolate, to first test how coinfection varies across pathogen populations (coinfection is needed for outcrossing), they then examine whether novel pathogen multilocus genotypes are associated with coinfection (which would indicate outcrossing), and finally whether coinfection affects overwintering success. Using an impressively-sized and natural field study analysing almost 3000 pathogen populations over four sampling years, the authors use Spatial Bayesian models to assess disease dynamics and genotypic diversity data. They find that coinfection is common and spatially variable, that where there are high levels of coinfection there are more novel pathogen MLGs, and that there is a positive effect of coinfection on overwintering success. The authors provide evidence that a pathogen can ecologically benefit from outcrossing, and this result opens the door to more detailed experimental understanding of this phenomenon in the future.\n\nOverall, this manuscript is interesting and timely, and contributes substantially to the debate on the evolution of sex. We have the following suggestions to improve the manuscript.\n\nEssential revisions:\n\nThe Introduction would benefit from hypotheses and a mention on why the benefits of sex need exploration in pathogens/parasites. This study provides a very interesting and novel approach to questions surrounding the evolution of sex. What makes parasites similar/different from the free-living species in which the benefits of sex have already been examined? It may be valuable to integrate literature on non-parasite sexual recombination versus selfing and the fitness advantage of that in non-parasite individuals, e.g. in cyclical parthenogenetic invertebrates with resting stages.\n\nDiscussion of the results in the context of infections and evolution of sex would bolster the generality and significance of the study. At the moment, the authors undersell their findings in the final paragraph of the Discussion and fail to put them in a bigger context for infectious disease, epidemics, and evolution of sex.\n",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f60e6c0d-e0ce-4793-9d4a-088c2f4b9393",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C1",
+      "claim": "Many pathogens possess the capacity for sex through outcrossing, despite being able to reproduce also asexually and/or via selfing.",
+      "claim_type": "EXPLICIT",
+      "source": "Many pathogens possess the capacity for sex through outcrossing, despite being able to reproduce also asexually and/or via selfing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about pathogen reproductive strategies that is supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "2655dfb6-fc2f-478b-bac5-7186b2d6e6f2",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C2",
+      "claim": "Populations supporting high levels of coinfection result in hotspots of novel genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations supporting high levels of coinfection \u2013a prerequisite of sex \u2013 result in hotspots of novel genetic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on the analysis of field data and genotyping results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "2b3dec37-d40f-4987-8439-598c6f47166f",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C3",
+      "claim": "Pathogen populations supporting coinfection have a higher probability of surviving winter.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogen populations supporting coinfection also have a higher probability of surviving winter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on multi-year census data and statistical modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "d7ef1134-6d0f-4d0b-bb5c-726a70010afe",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C4",
+      "claim": "Individuals that undergo sexual reproduction transmit only half their genome per offspring produced in contrast to asexual and selfing individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals that undergo sexual reproduction transmit only half their genome per offspring produced in contrast to asexual and selfing individuals (Lehtonen et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "cf174154-390f-4c38-a37f-7d613da2b347",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C5",
+      "claim": "Sexual outcrossing is assumed to provide both ecological and evolutionary advantages.",
+      "claim_type": "EXPLICIT",
+      "source": "To counteract this two-fold cost of sex, sexual outcrossing is assumed to provide both ecological and evolutionary advantages (Otto, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "2dbca5d4-3489-476b-b2c9-80a9eed16d0c",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C6",
+      "claim": "The Red Queen Hypothesis predicts sexual reproduction to be advantageous in the presence of coevolving parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "The Red Queen Hypothesis predicts sexual reproduction to be advantageous in the presence of coevolving parasites, as offspring that are genetically different from their parents should have higher fitness than non-sexual offspring (Bell, 1982; Hamilton, 1980; Lively, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "3566bce8-5f06-4bf5-98eb-eb5c1cc6ee69",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C7",
+      "claim": "Empirical studies have demonstrated parasite mediated selection to explain the observed distribution of outcrossing in hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this prediction, empirical studies have demonstrated parasite mediated selection to explain the observed distribution of outcrossing in hosts (King et al., 2011; Wilson and Sherman, 2013; Lively, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "2055c34c-6103-4d6b-a19d-caf01754e905",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C8",
+      "claim": "Theoretically it has been possible to identify a parameter space where coevolution with the host favors sexual reproduction in the parasite.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, theoretically it has been possible to identify a parameter space where coevolution with the host favors sexual reproduction in the parasite (Howard and Lively, 2002; Galvani et al., 2003; Salath\u00e9 et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "37c1cf60-414d-455b-83d8-51a8258b0197",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C9",
+      "claim": "The empirical evidence for advantages of sex in parasite populations are still few and conflicting.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the empirical evidence for such advantages of sex in parasite populations are still few and conflicting (Gouyon and de Vienne, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation assessing the state of empirical evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "6b81d238-7196-4466-8b42-ca0a9090106b",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C10",
+      "claim": "In free-living facultatively sexual organisms that alternate between asexual and sexual reproduction, the sexual offspring are often the dormant or dispersing life stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In free-living facultatively sexual organisms that alternate between asexual and sexual reproduction, the sexual offspring are often the dormant or dispersing life stages (Stelzer and Lehtonen, 2016; Simon et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "3f97253f-52ed-4dca-acdc-d42ea161d952",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C11",
+      "claim": "In some of the most devastating fungal pathogens of crops, the spores that are produced via outcrossing are also those that are suitable for long-distance dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in some of the most devastating fungal pathogens of crops, the spores that are produced via outcrossing are also those that are suitable for long-distance dispersal (Rieux et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "9669062f-e95c-4279-9839-341b50d8f596",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C12",
+      "claim": "Sexual spores in some fungal pathogens provide means of surviving unfavorable environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "or provide means of surviving unfavorable environmental conditions (Billiard et al., 2012; Burt, 2000; Saleh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "49b4de79-b642-4cbf-ad35-f80712c1bac8",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C13",
+      "claim": "The ability to outcross may be a key determinant of both the numeric and genetic composition of the next season's epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "While sexual offspring do not contribute to current local population growth, the ability to outcross may be a key determinant of both the numeric and genetic composition of the next season's epidemic (Penczykowski et al., 2015; Tack and Laine, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "a6ce87c5-c3d7-4f4f-a8df-5516eb494cb4",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C14",
+      "claim": "For strategies where outcrossing is timed with low potential asexual growth, the cost of sex is expected to be reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "For such strategies where outscrossing is timed with low potential asexual growth, for example due to seasonality, the cost of sex is expected to be reduced (Gerber et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "240ddd81-6f4c-4b00-bab4-8ab97433e047",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C15",
+      "claim": "There is evidence of high rates of outcrossing in homothallic species.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, there is evidence of high rates of outcrossing in homothallic species (Billiard et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "6cf561bf-e3e2-4ae4-ab38-a8f2508608fa",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C16",
+      "claim": "Maintenance of selfing may be favored when mate availability is spatially and/or temporally variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when outcrossing is expected to provide short- or long-term advantages, maintenance of selfing may be favored when mate availability is spatially and/or temporally variable (Jarne and Charlesworth, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "2480184a-3917-46af-acff-3fc742a60c1d",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C17",
+      "claim": "For many pathogens, coinfection is the ecological prerequisite of sexual recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "For many pathogens, coinfection is the ecological prerequisite of sexual recombination, as outcrossing and hybridization take place during active infection of the same host individual by different strains (Froissart et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "bbd89163-ef2f-49b4-932a-6ad99390a4ec",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C18",
+      "claim": "Coinfections have been widely reported for different pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Although coinfections have been widely reported for different pathogens, remarkably little is understood of the determinants of coinfection (Tollenaere et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "38e8a944-cdbe-45ce-8c2c-669668227a5e",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C19",
+      "claim": "Mixed reproductive strategies have been described for a wide range of pathogen species.",
+      "claim_type": "EXPLICIT",
+      "source": "Mixed reproductive strategies have been described for a wide range of pathogen species (Billiard et al., 2012; Billiard et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "cea273fe-b61c-4a53-b99d-37301f8df25e",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C20",
+      "claim": "The sexual stage is methodologically notoriously difficult to study in many pathogens given their microscopic size and the fact that mating types cannot be identified morphologically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sexual stage is methodologically notoriously difficult to study in many pathogens given their microscopic size and the fact that mating types cannot be identified morphologically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about methodological challenges in pathogen research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "c8322d4e-973f-4019-86be-8596288f0a19",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C21",
+      "claim": "Sexual reproduction in pathogens may take place inside the host and may be triggered by specific environmental cues that are difficult to mimic under controlled experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, sexual reproduction may take place inside the host, and may be triggered by specific environmental cues that are difficult to mimic under controlled experimental conditions (Billiard et al., 2012; Tack and Laine, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "5289f9e5-b13b-4d85-a2f4-ddb6d1bbb4bc",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C22",
+      "claim": "Podosphaera plantaginis is a specialist powdery mildew fungus naturally infecting Plantago lanceolata.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis is based on data collected from Podosphaera plantaginis, a specialist powdery mildew fungus naturally infecting Plantago lanceolata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the study system based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "43efa0d8-0b42-4dae-893e-5a8e775bea51",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C23",
+      "claim": "The visually conspicuous symptoms caused by P. plantaginis enable accurate tracking of infection in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "The visually conspicuous symptoms caused by P. plantaginis enable accurate tracking of infection in the wild.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the characteristics of the study system based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "2c12faf0-ceab-4e62-8093-b111959189e0",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C24",
+      "claim": "P. plantaginis persists as a highly dynamic metapopulation with frequent extinctions and (re)colonizations of local populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term epidemiological data across approximately 4000 local plant populations in the \u00c5land Islands, southwest of Finland, have demonstrated this pathogen to persist as a highly dynamic metapopulation with frequent extinctions and (re)colonizations of local populations (Jousimo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "c68e4a24-d7cc-4068-922a-38924aeab007",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C25",
+      "claim": "Overwinter survival of local pathogen populations has proven to be the vulnerable life-history stage of P. plantaginis in \u00c5land with a high fraction of the local pathogen populations going extinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Overwinter survival of local pathogen populations has proven to be the vulnerable life-history stage of P. plantaginis in \u00c5land with a high fraction of the local pathogen populations going extinct (Jousimo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "887c875a-57ce-4ae9-aaeb-b00439893f46",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C26",
+      "claim": "The pathogen survives the winter in resting structures, chasmothecia.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathogen survives the winter in resting structures, chasmothecia (Tack and Laine, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "35e65dbb-d0c5-4da2-b3d1-ba275698c399",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C27",
+      "claim": "Chasmothecia are produced through sexual reproduction as the hyphal cells of one (selfing) or two strains (outcrossing) fuse when infecting the same host plant.",
+      "claim_type": "EXPLICIT",
+      "source": "These resting structures are produced through sexual reproduction as the hyphal cells of one (selfing) or two strains (outcrossing) fuse when infecting the same host plant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the reproductive biology of the pathogen based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "2caaf429-262f-4862-98f4-715ac22fb626",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C28",
+      "claim": "The diploid zygote undergoes meiotic division to yield haploid ascospores that develop inside the chasmothecium.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting diploid zygote undergoes meiotic division to yield haploid ascospores that develop inside the chasmothecium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the reproductive biology of the pathogen based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "3e4c1b99-3f77-41bf-b770-5fa4f33e5714",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C29",
+      "claim": "At the onset of the growing season chasmothecia rupture, releasing the ascopores that initiate new infections.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of the growing season these chasmothecia rupture, releasing the ascopores that initiate new infections (Tollenaere and Laine, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "83bb71d0-8022-4d0a-8385-abc04e2ea6e1",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C30",
+      "claim": "619, 703, 693 and 833 pathogen populations were sampled in 2012\u201315 for genotyping.",
+      "claim_type": "EXPLICIT",
+      "source": "We sampled 619, 703, 693 and 833 populations in 2012\u201315 for subsequent genotyping (Table S1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection methods and sample sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "31085ba4-7095-4121-94ca-59b8917f0345",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C31",
+      "claim": "Coinfection proved to be common yet spatially variable across the P. plantaginis metapopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Coinfection proved to be common yet spatially variable across the P. plantaginis metapopulation (Figure 1A) (Susi et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding based on the genotyping data and spatial analysis, with reference to a figure and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "c6d40195-b8a5-40c5-ac8a-18a2bdde625f",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C32",
+      "claim": "In all years approximately half of the pathogen populations supported at least one coinfected sample (45\u201358%).",
+      "claim_type": "EXPLICIT",
+      "source": "In all years approximately half of the pathogen populations supported at least one coinfected sample, (45\u201358%; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding based on the genotyping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "0eca47e3-f78a-4416-b267-09c2b4e42a40",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C33",
+      "claim": "Coinfection was more likely to be found in larger and more diverse pathogen populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that coinfection was more likely to be found in larger and more diverse pathogen populations (Significant positive effect of number of MLGs and infection abundance; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical modeling presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "112f11f7-56cf-4887-92f5-72f03a3d07fc",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C34",
+      "claim": "Connectivity of pathogen populations had a positive, albeit not significant, effect on the probability of coinfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity of pathogen populations, which is considered a proxy for gene flow among populations as it is estimated from distances separating local pathogen populations (Jousimo et al., 2014), had a positive, albeit not significant, effect on the probability of coinfection (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical modeling presented in Table 1, with a citation for the connectivity measure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "b4a4723b-ff9a-4ef5-9dd1-69a81ee4ad2c",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C35",
+      "claim": "An already infected plant is more likely to be infected by another strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that an already infected plant is more likely to be infected by another strain (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the ABC analysis presented in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "9ca6b441-ee9d-4ac0-a001-05c20be7cdee",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C36",
+      "claim": "Coinfections were more common than expected by chance under the assumption that infections by different MLGs are statistically independent.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, coinfections were more common than expected by chance under the assumption that infections by different MLGs are statistically independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the ABC analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "56643380-f5e7-400b-baea-c6c00c664233",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C37",
+      "claim": "The result that coinfections are more common than expected by chance was consistent in both years 2012 and 2013 (posterior probability 0.98 and 0.988, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The result was consistent in both years 2012 and 2013 (posterior probability 0.98 and 0.988, respectively; Figure 1\u2014figure supplement 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the ABC analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "946801e9-9855-464c-9e8c-f76b3aa3d41d",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C38",
+      "claim": "182, 189, and 235 novel MLGs were identified in 2013\u20132015, respectively, when compared to MLGs detected the previous year.",
+      "claim_type": "EXPLICIT",
+      "source": "When all located pathogen populations were genotyped, we identified 182, 189, and 235 novel MLGs in 2013\u20132015, respectively, when compared to MLGs detected the previous year (Supplementary file 1; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding based on the genotyping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "c7cb9215-9ad7-4acc-8cf8-b838a2ba5022",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C39",
+      "claim": "The number of new MLGs at the population level increased with the prevalence of coinfection at the end of the previous epidemic season.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of new MLGs at the population level increased with the prevalence of coinfection at the end of the previous epidemic season which is the time when outcrossing takes place (Figure 1C; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical modeling presented in Table 1 and Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "c2b0fc73-5427-4ede-9c47-dbb4c2491711",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C40",
+      "claim": "The prevalence of coinfection was a strong predictor of novel MLGs the following year even after controlling for the effects of local pathogen population size, diversity, pathogen population connectivity, and spatial and temporal autocorrelation.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of coinfection was a strong predictor of novel MLGs the following year even after controlling for the effects of local pathogen population size, diversity (number of MLGs), pathogen population connectivity (proxy for gene flow) as well as spatial and temporal autocorrelation (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical modeling presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "d1242f41-70e7-4e22-a05c-d234b5654893",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C41",
+      "claim": "In pathogen populations where the prevalence of coinfection is high, the pathogen has a higher survival probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Using data from the natural pathogen metapopulation, we also found that in those pathogen populations where the prevalence of coinfection is high \u2013 and hence where sexual reproduction can take place \u2013 the pathogen has a higher survival probability (Table 1; Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical modeling presented in Table 1 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "d01c7f65-3385-4d51-9f1e-79a7e16c1b9a",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C42",
+      "claim": "The effect of coinfection on successful overwintering is positive even after controlling for the effects of pathogen population size and diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of coinfection on successful overwintering is positive even after controlling for the effects of pathogen population size and diversity, which both increase survival probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "b58bb3bf-c046-4b62-9e61-5d18974d85fe",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C43",
+      "claim": "Resting spores were produced in nearly all pathogen populations regardless of whether they supported coinfection or not (96% vs. 93%, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Resting spores, which were visually scored in the field (Tack and Laine, 2014), were produced in nearly all pathogen populations regardless of whether they supported coinfection or not (96% vs. 93%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding based on field observations, with a citation for the method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "3ce0c199-7026-45d4-947a-b55c18efadf8",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C44",
+      "claim": "Spatial variation in coinfection results in spatially delineated hotspots of novel genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that spatial variation in coinfection results in spatially delineated hotspots of novel genetic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "9c69ed8b-6417-460c-8395-4bcf07cb15c3",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C45",
+      "claim": "The high number of new MLGs detected every year is indicative of outcrossing taking place in this pathogen metapopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The high number of new MLGs detected every year is indicative of outcrossing taking place in this pathogen metapopulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data on novel MLGs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "c98c8dbe-4239-4014-8ebc-d5f1f6154e8d",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C46",
+      "claim": "Sampling is likely to miss some rare strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our sampling is likely to miss some rare strains, and novel MLGs may be generated through mutations, these are unlikely to explain the high turnover of MLGs between years we report here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of potential limitations in the sampling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "d542df31-9d4f-4c57-83aa-a6cf4e570d48",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C47",
+      "claim": "Mainland populations are expected to play a negligible role as sources of gene flow given that experimental and field data have confirmed this pathogen to typically disperse short distances.",
+      "claim_type": "EXPLICIT",
+      "source": "Mainland populations, which are separated by at least 38 km of open water, are also expected to play a negligible role as sources of gene flow given that experimental and field data have confirmed this pathogen to typically disperse short distances (Jousimo et al., 2014; Tack et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to prior work on dispersal.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "87a013ca-f681-46a9-9ba2-eef67252c0c6",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C48",
+      "claim": "Sexual outcrossing takes place where there is the opportunity for it, that is in populations where levels of coinfection are high.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that sexual outcrossing takes place where there is the opportunity for it, that is in populations where levels of coinfection are high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "48a11ac6-d19a-4f50-8c6a-434b49274cbf",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C49",
+      "claim": "This phenomenon has only received limited experimentally derived support in pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, this phenomenon has only received limited experimentally derived support in pathogens (Schelkle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "894a7113-2c57-4092-a23f-2bd36bf3cf6f",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C50",
+      "claim": "Generation of novel genetic diversity may increase transmission across host populations that support considerable resistance diversity both within and among populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the short term, generation of novel genetic diversity may increase transmission across host populations that support considerable resistance diversity both within and among populations (Jousimo et al., 2014; Laine et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the consequences of the findings, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "1d63e584-a1e6-47bf-9403-e491c6ba516a",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C51",
+      "claim": "Novel genetic diversity may also increase the evolutionary potential of pathogens that need to adapt to both biotic and abiotic variation in their environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Novel genetic diversity may also increase the evolutionary potential of pathogens that need to adapt to both biotic and abiotic variation in their environment (Greischar and Koskella, 2007; Wolinska and King, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the consequences of the findings, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "bbfb81f6-851f-4969-9f73-e19337785723",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C52",
+      "claim": "Overwintering determines both the genetic and numeric structure of the next epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Overwintering determines both the genetic and numeric structure of the next epidemic (Tack and Laine, 2014; Penczykowski et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "98120ede-d127-4e6d-b7e8-b3b6310b72ae",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C53",
+      "claim": "Successful overwintering is not due to higher production of resting spores.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that successful overwintering is not due to higher production of resting spores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data showing similar resting spore production in populations with and without coinfection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "917d601f-0aa8-49c8-8585-8129fd27dc1c",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C54",
+      "claim": "There may be a difference in the quality of progeny produced via selfing vs. outcrossing.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, there may be a difference in the quality of progeny produced via selfing vs. outcrossing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the finding that overwintering success differs despite similar resting spore production.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "b3e530fd-77a1-41eb-8227-c5884286dcac",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C55",
+      "claim": "Prior experimental work has demonstrated significant variation in spore viability in the resting structures of P. plantaginis.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior experimental work has demonstrated significant variation in spore viability in the resting structures of P. plantaginis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior experimental work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "d2c7991a-9aaa-425f-8205-f1df3f5809b7",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C56",
+      "claim": "There is evidence of higher viability of progeny from coinfections than from single infections, but the strength and direction of this trend is affected by the genotypes of the interacting strains, as well as by temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence of higher viability of progeny from coinfections than from single infections, but the strength and direction of this trend is affected by the genotypes of the interacting strains, as well as by temperature (Vaumourin and Laine, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "40c86ef7-9210-4911-aff8-245baa8fd49e",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C57",
+      "claim": "Haploid selfing may be preserved due to the low probability of encountering a suitable mating partner infecting the same host.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the higher overwintering success of outcrossed progeny, haploid selfing may be preserved due to the low probability of encountering a suitable mating partner infecting the same host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the maintenance of selfing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "f273c7db-8f21-4e71-908c-d6d640bbd2d7",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C58",
+      "claim": "There may be a cost to outcrossing as it breaks up locally adapted pathogen populations by producing novel \u2013 and potentially maladapted \u2013 genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there may be a cost to outcrossing as it breaks up locally adapted pathogen populations by producing novel \u2013 and potentially maladapted \u2013 genetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential costs of outcrossing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "4915d799-ce21-4d51-bcd7-fc8c35315fa7",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C59",
+      "claim": "A loss of sexual reproduction in pathogens has been linked to homogenous habitat.",
+      "claim_type": "EXPLICIT",
+      "source": "A loss of sexual reproduction in pathogens has been linked to homogenous habitat (Saleh et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "1d817000-c7a8-4e1f-8649-1dab3fe32fbc",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C60",
+      "claim": "A loss of sexual reproduction in pathogens has been linked to stable environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "or stable environmental conditions (Barrett et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "da260a30-c473-461e-9393-767194df4833",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C61",
+      "claim": "Maintaining a mixed mating system may provide a bet-hedging strategy for this pathogen to survive in a fragmented landscape, with a high probability of population extinction during the off-season.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintaining a mixed mating system may provide a bet-hedging strategy for this pathogen to survive in a fragmented landscape, with a high probability of population extinction during the off-season.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the adaptive significance of the mixed mating system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "8ed33398-289c-449c-a7d7-fcba7a569a02",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C62",
+      "claim": "Plantago lanceolata is a perennial rosette-forming herb that is naturally infected by Podosphaera plantaginis.",
+      "claim_type": "EXPLICIT",
+      "source": "Plantago lanceolata is a perennial rosette-forming herb that is naturally infected by Podosphaera plantaginis (Castagne; U. Braun and S. Takamatsu), a powdery mildew fungus in the order Erysiphales within the Ascomycota.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the study system based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "74686098-b1ba-4038-b50c-8c66a9034aed",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C63",
+      "claim": "Podosphaera plantaginis is a host-specific obligate biotroph that completes its entire life cycle on the surface of the host plant where it is visible as localized (nonsystemic) white powdery lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathogen is a host-specific obligate biotroph that completes its entire life cycle on the surface of the host plant where it is visible as localized (nonsystemic) white powdery lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the pathogen based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "4ca493b6-901a-43ce-915c-c68066d8bc0a",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C64",
+      "claim": "The interaction between P. lanceolata and P. plantaginis functions in a two-step manner typical of many plant\u2013pathogen associations.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between P. lanceolata and P. plantaginis functions in a two-step manner typical of many plant\u2013pathogen associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the interaction based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "62962499-fd27-4130-a796-dfe2b5b9bf9b",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C65",
+      "claim": "As the pathogen attempts to infect a new host, the interaction is strain specific as a given host genotype expresses resistance against some strains (recognition) of the pathogen while being susceptible to others (nonrecognition).",
+      "claim_type": "EXPLICIT",
+      "source": "First, as the pathogen attempts to infect a new host, the interaction is strain specific as a given host genotype expresses resistance against some strains (recognition) of the pathogen while being susceptible to others (nonrecognition) (Jones and Dangl, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work on plant-pathogen interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "b9916681-1362-407c-a763-f60da2e7fa6a",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C66",
+      "claim": "Once a P. plantaginis strain has successfully established there is still considerable variation in its development that is affected by both pathogen and host genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Once a P. plantaginis strain has successfully established there is still considerable variation in its development that is affected by both pathogen and host genotype (Laine, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "c55a204e-c525-428e-a6cb-07321e6bfa3f",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C67",
+      "claim": "The pathogen is a significant stress factor for its host and may cause host mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathogen is a significant stress factor for its host and may cause host mortality (Penczykowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "0eb9b454-4600-4f57-bdba-0a6cab988de2",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C68",
+      "claim": "The locations of P. lanceolata populations have been systematically mapped in the \u00c5land Islands, southwest of Finland, since the 1990s.",
+      "claim_type": "EXPLICIT",
+      "source": "The locations of P. lanceolata populations have been systematically mapped in the \u00c5land Islands, southwest of Finland, since the 1990s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the long-term study system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "b346d261-e413-46b6-8878-cb8da3f7b21f",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C69",
+      "claim": "There are currently c. 4000 known host populations that range in size from a few square meters to several hectares, with a median size of 300 m2.",
+      "claim_type": "EXPLICIT",
+      "source": "There are currently c. 4000 known host populations that range in size from a few square meters to several hectares, with a median size of 300 m2 (Jousimo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study system supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "bb2079d5-23fb-495c-881d-ae249de43e18",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C70",
+      "claim": "Within host populations, initial pathogen foci are established from resting spores (chasmothecia), or from a spore immigrating into the local population from another population.",
+      "claim_type": "EXPLICIT",
+      "source": "Within host populations, initial pathogen foci are established from resting spores (chasmothecia), or from a spore immigrating into the local population from another population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the pathogen life cycle based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "d43f8dee-d69b-4de7-adc6-9b71273a0f54",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C71",
+      "claim": "The first visible signs of infection appear in late June as white-greyish lesions consisting of mycelium supporting spores (conidia) are formed.",
+      "claim_type": "EXPLICIT",
+      "source": "The first visible signs of infection appear in late June as white-greyish lesions consisting of mycelium supporting spores (conidia) are formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the pathogen life cycle based on field observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "6a7d5f5d-5b4c-45d2-90ee-5cc7aa593787",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C72",
+      "claim": "Some six to eight clonally produced generations follow one another in quick succession, often leading to a substantial proportion of the host individuals within a population being infected by late summer.",
+      "claim_type": "EXPLICIT",
+      "source": "Some six to eight clonally produced generations (estimated from spore germination-production times observed in the laboratory) follow one another in quick succession, often leading to a substantial proportion of the host individuals within a population being infected by late summer (Ovaskainen and Laine, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the pathogen life cycle supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "44a27484-e108-4217-9042-0156a4fdfde9",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C73",
+      "claim": "Resting spores (chasmothecia) appear towards the end of the growing season in August\u2013September.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting spores (chasmothecia) appear towards the end of the growing season in August\u2013September.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the pathogen life cycle based on field observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "9733b94a-f0fb-48c7-8dfc-2c0e26c8af16",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C74",
+      "claim": "Each chasmothecia contains eight ascospores that can each cause a new infection in the spring upon their release.",
+      "claim_type": "EXPLICIT",
+      "source": "Each chasmothecia contains eight ascospores that can each cause a new infection in the spring upon their release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the pathogen life cycle based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "18f81125-0195-4292-a3c8-40ca220fd1cc",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C75",
+      "claim": "Infected leaves may support hundreds of chasmothecia.",
+      "claim_type": "EXPLICIT",
+      "source": "Infected leaves may support hundreds of chasmothecia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description based on field observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "84d11a5b-728d-47cb-921d-d3cbe309c930",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C76",
+      "claim": "Pure strains of P. plantaginis have been shown to carry both MAT1-1-1 and MAT1-2-1 that determine compatibility in several other powdery mildew species.",
+      "claim_type": "EXPLICIT",
+      "source": "Pure strains of P. plantaginis have been shown to carry both MAT1-1-1 and MAT1-2-1 that determine compatibility in several other powdery mildew species (Tollenaere and Laine, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "8a37080a-01ac-4cb5-8d13-4037af7c1556",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C77",
+      "claim": "In early September every year since 2001, all known P. lanceolata populations have been surveyed for the presence/absence of the powdery mildew.",
+      "claim_type": "EXPLICIT",
+      "source": "In early September every year since 2001, all known P. lanceolata populations have been surveyed for the presence/absence of the powdery mildew (for details on the survey, please see Jousimo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the survey methods with a citation for details.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "15b0d47a-bf06-4866-bd46-f95e7072bcd5",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C78",
+      "claim": "Survey data can be used to identify pathogen populations which have persisted from one year to the next, newly colonized populations, and populations that have gone extinct.",
+      "claim_type": "EXPLICIT",
+      "source": "These data can be used to identify pathogen populations, which have persisted from one year to the next, newly colonized populations, and populations that have gone extinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the survey data are used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "bc8c5e19-7194-4cd5-9aa8-18bd0c8a2a42",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C79",
+      "claim": "In 2012\u201315 nearly all located pathogen populations were sampled for genotyping (N = 619, 703, 693, and 833 populations, respectively, which represented 96\u201397% of all located pathogen populations each year).",
+      "claim_type": "EXPLICIT",
+      "source": "In 2012\u201315 nearly all located pathogen populations were sampled for genotyping (N = 619, 703, 693, and 833 populations, respectively, which represented 96\u201397% of all located pathogen populations each year; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sampling effort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "1caf4b97-9140-4bde-a4ff-c20ece038e4a",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C80",
+      "claim": "A sample consists of one infected leaf collected from an infected plant, and infected plants were sampled at a minimum distance of five meters between infected plants.",
+      "claim_type": "EXPLICIT",
+      "source": "A sample consists of one infected leaf collected from an infected plant, and infected plants were sampled at a minimum distance of five meters between infected plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sampling protocol.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "607ddad5-83a0-4659-ba77-fa9cefa222e5",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C81",
+      "claim": "The aim was to collect ten samples from each population but in smaller pathogen populations sampling effort needed to be scaled to how much infection was available for sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "The aim was to collect ten samples from each population but in smaller pathogen populations sampling effort needed to be scaled to how much infection was available for sampling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sampling protocol.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "b4ca23f6-5c91-493d-96af-04b6f141d9d4",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C82",
+      "claim": "DNA extraction was performed using E.Z.N.A. Plant DNA kit at The Institute of Biotechnology.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA extraction was performed using E.Z.N.A. Plant DNA kit (Omega Bio Tek Inc, Norcross, GA, USA) at The Institute of Biotechnology (BI, Helsinki, Finland).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the laboratory methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "99cd8c97-784f-42be-8dd6-0b473a408003",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C83",
+      "claim": "Samples were genotyped with 27 SNP markers using Sequenom MassARRAY iPLEX platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were genotyped with 27 SNP markers using Sequenom MassARRAY iPLEX platform as described in Tollenaere et al. (2012) at the Finnish Institute for Molecular Medicine (FIMM, Helsinki, Finland).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the genotyping methods with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "d16c4709-c894-4b8a-8b8b-c9fc7cf3f423",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C84",
+      "claim": "Eight SNP were discarded from the analysis because of the presence of null alleles in the studied populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the presence of null alleles in the studied populations, eight SNP were discarded from the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of data filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "045b51ad-bbf6-4e59-9be5-89565f1b5ea3",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C85",
+      "claim": "Podosphaera plantaginis is haploid.",
+      "claim_type": "EXPLICIT",
+      "source": "Podosphaera plantaginis is haploid, and therefore the detection of a heterozygote genotype for one or more SNP markers is a clear highly repeatable method for calling coinfections (Tollenaere et al., 2012; Susi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the ploidy of the pathogen supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "f00cb124-d077-4498-8b03-14f241c757d8",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C86",
+      "claim": "The detection of a heterozygote genotype for one or more SNP markers is a clear highly repeatable method for calling coinfections in P. plantaginis.",
+      "claim_type": "EXPLICIT",
+      "source": "Podosphaera plantaginis is haploid, and therefore the detection of a heterozygote genotype for one or more SNP markers is a clear highly repeatable method for calling coinfections (Tollenaere et al., 2012; Susi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the method for detecting coinfections supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "21a28123-c43f-4aaf-ad94-41b2cc6cebd7",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C87",
+      "claim": "Connectivity of pathogen populations is considered a proxy for gene flow among populations as it is estimated from distances separating local pathogen populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity of pathogen populations, which is considered a proxy for gene flow among populations as it is estimated from distances separating local pathogen populations (Jousimo et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the connectivity measure supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "384a62aa-c4c3-40b1-aeda-0a24d1a7e039",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C88",
+      "claim": "The parameter \u03b1, describing the mean dispersal distance at the metapopulation level, was set \u03b1=1000 (meters) following results of Jousimo et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "The parameter \u03b1, describing the mean dispersal distance at the metapopulation level, was set \u03b1=1000 (meters) following results of Jousimo et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a parameter value used in the analysis, based on prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "06de8e55-2174-40c3-a23f-8f2e07f55995",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C89",
+      "claim": "Finding more coinfection than would be expected by chance is in line with previous fine-scale field sampling of infections and experimental work, which show that hosts already infected with one strain of the pathogen are more likely to become infected by another strain of the same pathogen than uninfected hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Finding more coinfection than would be expected by chance is in line with previous fine-scale field sampling of infections and experimental work, which show that hosts already infected with one strain of the pathogen are more likely to become infected by another strain of the same pathogen than uninfected hosts (Laine, 2011; Susi and Laine, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "ee517e58-a00a-4d9e-bbb4-dc79b1b5c66d",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C90",
+      "claim": "Already infected individuals may become more susceptible to subsequent infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to already infected individuals becoming more susceptible to subsequent infection, or due to strains aggregating on those hosts that are the most susceptible genotypes (Susi and Laine, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about mechanisms supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "e39cc434-8826-48b2-ae0a-2df467d6b6a0",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C91",
+      "claim": "Strains may aggregate on those hosts that are the most susceptible genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to already infected individuals becoming more susceptible to subsequent infection, or due to strains aggregating on those hosts that are the most susceptible genotypes (Susi and Laine, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about mechanisms supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "a87c67e1-b0d5-4dd6-8958-9a9f637eabee",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C92",
+      "claim": "Variation in host density and (micro)climatic conditions may be an important driver of infection patterns in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, variation in host density and (micro)climatic conditions may be an important driver of infection patters in the wild (Penczykowski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "343c2641-7238-4327-8e22-d832d2d0a7f4",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C93",
+      "claim": "The results do not support the priming hypothesis, whereby prior attack provides increased protection against later attack.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results do not support the priming hypothesis (Hilker et al., 2016), whereby prior attack provides increased protection against later attack.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data, with a citation for the priming hypothesis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "efc88500-0c2a-4804-ab31-3bd27b7e0f12",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C94",
+      "claim": "Coinfection is the prerequisite for sex in this pathogen.",
+      "claim_type": "IMPLICIT",
+      "source": "Populations supporting high levels of coinfection \u2013a prerequisite of sex \u2013 result in hotspots of novel genetic diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is based on the biology of the pathogen where outcrossing requires two strains infecting the same host.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "8eabead3-10dc-40a2-885a-fcf1baa79be4",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C95",
+      "claim": "Outcrossing has direct epidemiological consequences in this pathogen system.",
+      "claim_type": "EXPLICIT",
+      "source": "Jointly our results show that outcrossing has direct epidemiological consequences as well as a major impact on pathogen population genetic diversity, thereby providing evidence of ecological and evolutionary benefits of outcrossing in pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "1b34b7df-4bb1-4c2a-b40e-cb394d9ef7fd",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C96",
+      "claim": "Outcrossing has a major impact on pathogen population genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Jointly our results show that outcrossing has direct epidemiological consequences as well as a major impact on pathogen population genetic diversity, thereby providing evidence of ecological and evolutionary benefits of outcrossing in pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "2467ff68-4283-43e1-8c32-ee5be2e775f8",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C97",
+      "claim": "The study provides evidence of ecological and evolutionary benefits of outcrossing in pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Jointly our results show that outcrossing has direct epidemiological consequences as well as a major impact on pathogen population genetic diversity, thereby providing evidence of ecological and evolutionary benefits of outcrossing in pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "f836b699-688d-4031-88f2-dade680a9ef4",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C98",
+      "claim": "The opportunities for outcrossing vary spatially in the P. plantaginis metapopulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we (i) determine how coinfection - the pre-requisite for sexual outcrossing - varies in natural pathogen populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on the spatial analysis of coinfection data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "3534086a-b1c1-480d-b3ff-66e956ad92d8",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C99",
+      "claim": "Spatial Bayesian models (INLA) control for spatio-temporal autocorrelation characteristic of spatial ecological data due to unmeasured variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The INLA model we use here, controls for spatio-temporal autocorrelation characteristic of spatial ecological data due to unmeasured variables, thereby providing a conservative estimate of the model parameters as evidenced by model validation checks (Figure 1\u2014figure supplements 1\u20135) (Lindgren and Rue, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the statistical method with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "15ee9f40-bda4-4961-ab36-a0b83e6e1330",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "claim_id": "C100",
+      "claim": "The INLA model provides a conservative estimate of the model parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The INLA model we use here, controls for spatio-temporal autocorrelation characteristic of spatial ecological data due to unmeasured variables, thereby providing a conservative estimate of the model parameters as evidenced by model validation checks (Figure 1\u2014figure supplements 1\u20135) (Lindgren and Rue, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the statistical approach supported by model validation and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "be438818-4197-4b63-aeaf-5f4e8a6e6211",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Coinfection is common but spatially variable across the P. plantaginis metapopulation, occurring in approximately half of pathogen populations (45-58%). Coinfection is more likely in larger, more diverse pathogen populations, with connectivity showing a positive but non-significant effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 and C98 are well-supported by extensive field sampling (619-833 populations per year), SNP genotyping data, and spatial Bayesian modeling (INLA) that controls for spatial and temporal autocorrelation. The statistical analysis in Table 1 provides quantitative support with credibility intervals, and model validation checks (Figure 1 supplements 1-5) confirm model adequacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "1a061a95-88a4-4b75-b730-5f286421563c",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Coinfections occur more frequently than expected by chance, with already infected plants being more likely to be infected by another strain. This pattern was consistent across both 2012 and 2013 with high posterior probabilities (0.98 and 0.988, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by Approximate Bayesian Computation (ABC) analysis with appropriate model validation (Figure 1 supplements 6-8). The parameter \u03b3 controlling coinfection prevalence was reliably estimated under different modeling assumptions, and the posterior probabilities provide strong statistical evidence. The finding is consistent with prior experimental work (C89).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "cc161366-2638-4dd4-b2cc-689a6001fed3",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "High numbers of novel multilocus genotypes (MLGs) are detected annually (182-235 per year), with the number of new MLGs at the population level increasing with coinfection prevalence from the previous season. This creates spatially delineated hotspots of novel genetic diversity, indicating that sexual outcrossing occurs where coinfection levels are high.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40, C44-C45, and C48 are well-supported by multi-year genotyping data and spatial Bayesian modeling. The statistical analysis (Table 1, Figure 1C) shows coinfection prevalence is a strong predictor of novel MLGs even after controlling for population size, diversity, connectivity, and spatial-temporal autocorrelation. The conservative algorithm for MLG identification (Figure 1 supplement 11) strengthens confidence in the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "2f6a44e8-e3bc-4db4-ab3e-72b4365c5ae6",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pathogen populations with high coinfection prevalence have higher overwinter survival probability. This effect remains positive after controlling for pathogen population size, diversity, and spatial-temporal autocorrelation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 and C3 are supported by multi-year census data (2012-2015) and spatial Bayesian modeling (Table 1, Figure 2). The INLA model controls for important confounders including spatial and temporal autocorrelation and abiotic variation known to affect overwintering. The effect is consistent across multiple years, providing robust evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "97199feb-7c9b-40e0-b5a7-d1ad6d6ba4f9",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Resting spores (chasmothecia) are produced in nearly all pathogen populations regardless of coinfection status (96% vs. 93%), indicating that successful overwintering is not due to higher production of resting spores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C53 are supported by field observations across the metapopulation. The similar production rates between populations with and without coinfection (96% vs. 93%) provide clear evidence that quantity of resting spore production does not explain the overwintering advantage. This supports the inference that quality differences in progeny may be responsible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "cc97fa71-b779-4138-9959-c0169b656136",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study provides evidence that outcrossing has direct epidemiological consequences (increased overwinter survival) and major impacts on pathogen population genetic diversity (generation of novel MLGs), demonstrating both ecological and evolutionary benefits of outcrossing in pathogens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C95-C97 represent the main conclusions synthesizing the empirical findings. These are well-supported by the convergence of multiple lines of evidence: spatial variation in coinfection, generation of novel genetic diversity linked to coinfection, and increased overwinter survival in populations with coinfection. The comprehensive multi-year dataset and rigorous statistical approaches provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "a46017c8-a0bc-4555-93a9-782242f1acb7",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "While sampling may miss rare strains and mutations could generate some novel MLGs, these factors are unlikely to explain the high turnover of MLGs observed. Mainland populations are expected to contribute negligibly to gene flow given the pathogen's short dispersal distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 acknowledge limitations but provide reasonable justifications. The high turnover rates (182-235 novel MLGs per year) across a well-sampled metapopulation (96-97% coverage) make it unlikely that sampling bias or mutation alone explain the patterns. The dispersal limitation is supported by prior experimental and field data (Jousimo et al., 2014; Tack et al., 2014), and the 38 km water barrier provides additional support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "00e04102-1024-4c66-82a8-d84c757b9e92",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "There may be differences in progeny quality between selfing and outcrossing. Prior experimental work shows significant variation in spore viability, with evidence of higher viability from coinfections, though this is affected by strain genotypes and temperature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C56 present a plausible mechanism for the overwintering advantage but rely heavily on speculation (C54) and prior work (C56) rather than direct evidence from the current study. While C43 and C53 show similar resting spore production rates, the current study does not directly measure spore viability or quality. The cited experimental work (Vaumourin and Laine, 2018) provides some support but indicates context-dependent effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "7aabf3ef-1bf4-4550-8dd4-48ff09649d45",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The finding that coinfections are more common than expected by chance is consistent with prior work showing infected hosts are more susceptible to subsequent infection. This may be due to increased susceptibility or strain aggregation on susceptible genotypes, with host density and microclimatic conditions as potential drivers. The results do not support the priming hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89 and C93 are supported by the ABC analysis results and consistency with prior work. However, C90-C92 are speculative mechanistic explanations. The rejection of the priming hypothesis (C93) is supported by the data showing increased rather than decreased susceptibility to subsequent infection. The mechanistic claims (C90-C92) are appropriately presented as possibilities rather than demonstrated facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "a624b64b-b8d5-4540-945f-0230517c5b51",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The spatial Bayesian INLA models control for spatio-temporal autocorrelation and provide conservative parameter estimates, as evidenced by model validation checks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 are supported by the detailed methods description, citation to the INLA methodology (Lindgren and Rue, 2015), and extensive model validation presented in Figure 1 supplements 1-5. The PIT-value distributions, CPO values, and other validation metrics support model adequacy. The conservative nature of the estimates strengthens confidence in the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "cd59ad26-9be5-4c34-bc53-8d21e8e1be37",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Novel genetic diversity generated through outcrossing may increase transmission across resistant host populations and enhance evolutionary potential for adaptation to environmental variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C51 are speculative about the consequences of the observed genetic diversity. While the speculation is reasonable and supported by citations to relevant theory, the current study does not directly test these hypotheses. The claims appropriately use conditional language ('may increase') but represent future research directions rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "d353ef48-d181-4e59-abba-f59d71860326",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Haploid selfing may be maintained due to low probability of encountering mating partners, and there may be costs to outcrossing through breaking up locally adapted populations. A mixed mating system may provide a bet-hedging strategy in fragmented landscapes with high extinction probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C58 and C61 are speculative explanations for the maintenance of mixed reproductive strategies. While these are plausible hypotheses consistent with evolutionary theory, they are not directly tested in the current study. The speculation is reasonable given the empirical findings but represents interpretation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "b26a360a-2f6c-47c3-8827-b074b7233a27",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study employed comprehensive sampling (619-833 populations per year, representing 96-97% of located populations) and used SNP genotyping with 27 markers (19 retained after quality control) to identify MLGs and detect coinfections based on heterozygote detection in the haploid pathogen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C79-C86 describe the sampling and genotyping methods. The sampling effort is exceptionally comprehensive, covering nearly all located pathogen populations. The genotyping approach is well-established for this system (Tollenaere et al., 2012; Susi et al., 2015) and appropriate for a haploid organism. The quality control step of removing 8 SNPs with null alleles is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "9f925ba0-565d-46da-a96f-4357c3905ea3",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study system consists of Podosphaera plantaginis, a specialist powdery mildew fungus, infecting Plantago lanceolata across approximately 4000 host populations in the \u00c5land Islands. The pathogen is a highly dynamic metapopulation with frequent extinctions and recolonizations, overwinters in chasmothecia produced through sexual reproduction, and has been systematically surveyed since 2001.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 and C62-C78 provide background on the study system. These are well-supported by established knowledge, prior publications (particularly Jousimo et al., 2014), and long-term systematic surveys. The descriptions of pathogen biology, life cycle, and metapopulation dynamics are consistent with the literature and provide essential context for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "0b3e660c-225d-42b1-b983-45ea05f17799",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Connectivity of pathogen populations, calculated using an exponential dispersal kernel with mean dispersal distance \u03b1=1000 meters, serves as a proxy for gene flow among populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 describe the connectivity measure used in the analysis. The approach is based on prior work (Jousimo et al., 2014) that estimated dispersal parameters for this system. The use of connectivity as a proxy for gene flow is reasonable given the spatial structure of the metapopulation and the pathogen's dispersal biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "7c7fba61-0dac-4661-a940-66efea41d006",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The introduction provides theoretical and empirical background on sexual reproduction in pathogens, including the two-fold cost of sex, Red Queen Hypothesis, ecological advantages of sexual reproduction, mixed reproductive strategies, and challenges in studying sexual stages in pathogens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C21, C59-C60 provide literature context supported by appropriate citations. These claims accurately represent established theory and prior empirical work in the field. The citations appear appropriate and the characterization of the state of knowledge (e.g., C9 noting limited and conflicting empirical evidence) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "946a0e28-3f68-46a0-9561-1b5727c8b52e",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Coinfection is the prerequisite for sexual outcrossing in this pathogen system, as outcrossing requires two strains to infect the same host plant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is a fundamental biological fact about this system based on the reproductive biology of P. plantaginis (C27). For outcrossing to occur, hyphal cells from two different strains must fuse during infection of the same host. This is well-established for powdery mildews and is central to the study's logic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    },
+    {
+      "id": "8d50d75e-a13d-4a27-a2fd-86d75940c2ee",
+      "content_id": "2a0405a4-3729-40b9-8170-a2fce8d06599",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Overwintering determines both the genetic and numeric structure of the next epidemic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by citations to prior work (Tack and Laine, 2014; Penczykowski et al., 2015) and is consistent with the biology of the system where chasmothecia are the overwintering structures that initiate spring infections. This provides important context for why overwintering success is an ecologically relevant fitness component.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:07.069552Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "31085ba4-7095-4121-94ca-59b8917f0345",
+      "result_id": "be438818-4197-4b63-aeaf-5f4e8a6e6211"
+    },
+    {
+      "claim_id": "c6d40195-b8a5-40c5-ac8a-18a2bdde625f",
+      "result_id": "be438818-4197-4b63-aeaf-5f4e8a6e6211"
+    },
+    {
+      "claim_id": "0eca47e3-f78a-4416-b267-09c2b4e42a40",
+      "result_id": "be438818-4197-4b63-aeaf-5f4e8a6e6211"
+    },
+    {
+      "claim_id": "112f11f7-56cf-4887-92f5-72f03a3d07fc",
+      "result_id": "be438818-4197-4b63-aeaf-5f4e8a6e6211"
+    },
+    {
+      "claim_id": "f836b699-688d-4031-88f2-dade680a9ef4",
+      "result_id": "be438818-4197-4b63-aeaf-5f4e8a6e6211"
+    },
+    {
+      "claim_id": "b4a4723b-ff9a-4ef5-9dd1-69a81ee4ad2c",
+      "result_id": "1a061a95-88a4-4b75-b730-5f286421563c"
+    },
+    {
+      "claim_id": "9ca6b441-ee9d-4ac0-a001-05c20be7cdee",
+      "result_id": "1a061a95-88a4-4b75-b730-5f286421563c"
+    },
+    {
+      "claim_id": "56643380-f5e7-400b-baea-c6c00c664233",
+      "result_id": "1a061a95-88a4-4b75-b730-5f286421563c"
+    },
+    {
+      "claim_id": "946801e9-9855-464c-9e8c-f76b3aa3d41d",
+      "result_id": "cc161366-2638-4dd4-b2cc-689a6001fed3"
+    },
+    {
+      "claim_id": "c7cb9215-9ad7-4acc-8cf8-b838a2ba5022",
+      "result_id": "cc161366-2638-4dd4-b2cc-689a6001fed3"
+    },
+    {
+      "claim_id": "c2b0fc73-5427-4ede-9c47-dbb4c2491711",
+      "result_id": "cc161366-2638-4dd4-b2cc-689a6001fed3"
+    },
+    {
+      "claim_id": "3ce0c199-7026-45d4-947a-b55c18efadf8",
+      "result_id": "cc161366-2638-4dd4-b2cc-689a6001fed3"
+    },
+    {
+      "claim_id": "9c69ed8b-6417-460c-8395-4bcf07cb15c3",
+      "result_id": "cc161366-2638-4dd4-b2cc-689a6001fed3"
+    },
+    {
+      "claim_id": "87a013ca-f681-46a9-9ba2-eef67252c0c6",
+      "result_id": "cc161366-2638-4dd4-b2cc-689a6001fed3"
+    },
+    {
+      "claim_id": "d1242f41-70e7-4e22-a05c-d234b5654893",
+      "result_id": "2f6a44e8-e3bc-4db4-ab3e-72b4365c5ae6"
+    },
+    {
+      "claim_id": "d01c7f65-3385-4d51-9f1e-79a7e16c1b9a",
+      "result_id": "2f6a44e8-e3bc-4db4-ab3e-72b4365c5ae6"
+    },
+    {
+      "claim_id": "2b3dec37-d40f-4987-8439-598c6f47166f",
+      "result_id": "2f6a44e8-e3bc-4db4-ab3e-72b4365c5ae6"
+    },
+    {
+      "claim_id": "b58bb3bf-c046-4b62-9e61-5d18974d85fe",
+      "result_id": "97199feb-7c9b-40e0-b5a7-d1ad6d6ba4f9"
+    },
+    {
+      "claim_id": "98120ede-d127-4e6d-b7e8-b3b6310b72ae",
+      "result_id": "97199feb-7c9b-40e0-b5a7-d1ad6d6ba4f9"
+    },
+    {
+      "claim_id": "2655dfb6-fc2f-478b-bac5-7186b2d6e6f2",
+      "result_id": "cc97fa71-b779-4138-9959-c0169b656136"
+    },
+    {
+      "claim_id": "8eabead3-10dc-40a2-885a-fcf1baa79be4",
+      "result_id": "cc97fa71-b779-4138-9959-c0169b656136"
+    },
+    {
+      "claim_id": "1b34b7df-4bb1-4c2a-b40e-cb394d9ef7fd",
+      "result_id": "cc97fa71-b779-4138-9959-c0169b656136"
+    },
+    {
+      "claim_id": "2467ff68-4283-43e1-8c32-ee5be2e775f8",
+      "result_id": "cc97fa71-b779-4138-9959-c0169b656136"
+    },
+    {
+      "claim_id": "c98c8dbe-4239-4014-8ebc-d5f1f6154e8d",
+      "result_id": "a46017c8-a0bc-4555-93a9-782242f1acb7"
+    },
+    {
+      "claim_id": "d542df31-9d4f-4c57-83aa-a6cf4e570d48",
+      "result_id": "a46017c8-a0bc-4555-93a9-782242f1acb7"
+    },
+    {
+      "claim_id": "917d601f-0aa8-49c8-8585-8129fd27dc1c",
+      "result_id": "00e04102-1024-4c66-82a8-d84c757b9e92"
+    },
+    {
+      "claim_id": "b3e530fd-77a1-41eb-8227-c5884286dcac",
+      "result_id": "00e04102-1024-4c66-82a8-d84c757b9e92"
+    },
+    {
+      "claim_id": "d2c7991a-9aaa-425f-8205-f1df3f5809b7",
+      "result_id": "00e04102-1024-4c66-82a8-d84c757b9e92"
+    },
+    {
+      "claim_id": "06de8e55-2174-40c3-a23f-8f2e07f55995",
+      "result_id": "7aabf3ef-1bf4-4550-8dd4-48ff09649d45"
+    },
+    {
+      "claim_id": "ee517e58-a00a-4d9e-bbb4-dc79b1b5c66d",
+      "result_id": "7aabf3ef-1bf4-4550-8dd4-48ff09649d45"
+    },
+    {
+      "claim_id": "e39cc434-8826-48b2-ae0a-2df467d6b6a0",
+      "result_id": "7aabf3ef-1bf4-4550-8dd4-48ff09649d45"
+    },
+    {
+      "claim_id": "a87c67e1-b0d5-4dd6-8958-9a9f637eabee",
+      "result_id": "7aabf3ef-1bf4-4550-8dd4-48ff09649d45"
+    },
+    {
+      "claim_id": "343c2641-7238-4327-8e22-d832d2d0a7f4",
+      "result_id": "7aabf3ef-1bf4-4550-8dd4-48ff09649d45"
+    },
+    {
+      "claim_id": "3534086a-b1c1-480d-b3ff-66e956ad92d8",
+      "result_id": "a624b64b-b8d5-4540-945f-0230517c5b51"
+    },
+    {
+      "claim_id": "15ee9f40-bda4-4961-ab36-a0b83e6e1330",
+      "result_id": "a624b64b-b8d5-4540-945f-0230517c5b51"
+    },
+    {
+      "claim_id": "894a7113-2c57-4092-a23f-2bd36bf3cf6f",
+      "result_id": "cd59ad26-9be5-4c34-bc53-8d21e8e1be37"
+    },
+    {
+      "claim_id": "1d63e584-a1e6-47bf-9403-e491c6ba516a",
+      "result_id": "cd59ad26-9be5-4c34-bc53-8d21e8e1be37"
+    },
+    {
+      "claim_id": "40c86ef7-9210-4911-aff8-245baa8fd49e",
+      "result_id": "d353ef48-d181-4e59-abba-f59d71860326"
+    },
+    {
+      "claim_id": "f273c7db-8f21-4e71-908c-d6d640bbd2d7",
+      "result_id": "d353ef48-d181-4e59-abba-f59d71860326"
+    },
+    {
+      "claim_id": "da260a30-c473-461e-9393-767194df4833",
+      "result_id": "d353ef48-d181-4e59-abba-f59d71860326"
+    },
+    {
+      "claim_id": "83bb71d0-8022-4d0a-8385-abc04e2ea6e1",
+      "result_id": "b26a360a-2f6c-47c3-8827-b074b7233a27"
+    },
+    {
+      "claim_id": "bc8c5e19-7194-4cd5-9aa8-18bd0c8a2a42",
+      "result_id": "b26a360a-2f6c-47c3-8827-b074b7233a27"
+    },
+    {
+      "claim_id": "1caf4b97-9140-4bde-a4ff-c20ece038e4a",
+      "result_id": "b26a360a-2f6c-47c3-8827-b074b7233a27"
+    },
+    {
+      "claim_id": "607ddad5-83a0-4659-ba77-fa9cefa222e5",
+      "result_id": "b26a360a-2f6c-47c3-8827-b074b7233a27"
+    },
+    {
+      "claim_id": "b4ca23f6-5c91-493d-96af-04b6f141d9d4",
+      "result_id": "b26a360a-2f6c-47c3-8827-b074b7233a27"
+    },
+    {
+      "claim_id": "99cd8c97-784f-42be-8dd6-0b473a408003",
+      "result_id": "b26a360a-2f6c-47c3-8827-b074b7233a27"
+    },
+    {
+      "claim_id": "d16c4709-c894-4b8a-8b8b-c9fc7cf3f423",
+      "result_id": "b26a360a-2f6c-47c3-8827-b074b7233a27"
+    },
+    {
+      "claim_id": "045b51ad-bbf6-4e59-9be5-89565f1b5ea3",
+      "result_id": "b26a360a-2f6c-47c3-8827-b074b7233a27"
+    },
+    {
+      "claim_id": "f00cb124-d077-4498-8b03-14f241c757d8",
+      "result_id": "b26a360a-2f6c-47c3-8827-b074b7233a27"
+    },
+    {
+      "claim_id": "5289f9e5-b13b-4d85-a2f4-ddb6d1bbb4bc",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "43efa0d8-0b42-4dae-893e-5a8e775bea51",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "2c12faf0-ceab-4e62-8093-b111959189e0",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "c68e4a24-d7cc-4068-922a-38924aeab007",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "887c875a-57ce-4ae9-aaeb-b00439893f46",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "35e65dbb-d0c5-4da2-b3d1-ba275698c399",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "2caaf429-262f-4862-98f4-715ac22fb626",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "3e4c1b99-3f77-41bf-b770-5fa4f33e5714",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "8ed33398-289c-449c-a7d7-fcba7a569a02",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "74686098-b1ba-4038-b50c-8c66a9034aed",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "4ca493b6-901a-43ce-915c-c68066d8bc0a",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "62962499-fd27-4130-a796-dfe2b5b9bf9b",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "b9916681-1362-407c-a763-f60da2e7fa6a",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "c55a204e-c525-428e-a6cb-07321e6bfa3f",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "0eb9b454-4600-4f57-bdba-0a6cab988de2",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "b346d261-e413-46b6-8878-cb8da3f7b21f",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "bb2079d5-23fb-495c-881d-ae249de43e18",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "d43f8dee-d69b-4de7-adc6-9b71273a0f54",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "6a7d5f5d-5b4c-45d2-90ee-5cc7aa593787",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "44a27484-e108-4217-9042-0156a4fdfde9",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "9733b94a-f0fb-48c7-8dfc-2c0e26c8af16",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "18f81125-0195-4292-a3c8-40ca220fd1cc",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "84d11a5b-728d-47cb-921d-d3cbe309c930",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "8a37080a-01ac-4cb5-8d13-4037af7c1556",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "15b0d47a-bf06-4866-bd46-f95e7072bcd5",
+      "result_id": "9f925ba0-565d-46da-a96f-4357c3905ea3"
+    },
+    {
+      "claim_id": "21a28123-c43f-4aaf-ad94-41b2cc6cebd7",
+      "result_id": "0b3e660c-225d-42b1-b983-45ea05f17799"
+    },
+    {
+      "claim_id": "384a62aa-c4c3-40b1-aeda-0a24d1a7e039",
+      "result_id": "0b3e660c-225d-42b1-b983-45ea05f17799"
+    },
+    {
+      "claim_id": "f60e6c0d-e0ce-4793-9d4a-088c2f4b9393",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "d7ef1134-6d0f-4d0b-bb5c-726a70010afe",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "cf174154-390f-4c38-a37f-7d613da2b347",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "2dbca5d4-3489-476b-b2c9-80a9eed16d0c",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "3566bce8-5f06-4bf5-98eb-eb5c1cc6ee69",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "2055c34c-6103-4d6b-a19d-caf01754e905",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "37c1cf60-414d-455b-83d8-51a8258b0197",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "6b81d238-7196-4466-8b42-ca0a9090106b",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "3f97253f-52ed-4dca-acdc-d42ea161d952",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "9669062f-e95c-4279-9839-341b50d8f596",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "49b4de79-b642-4cbf-ad35-f80712c1bac8",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "a6ce87c5-c3d7-4f4f-a8df-5516eb494cb4",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "240ddd81-6f4c-4b00-bab4-8ab97433e047",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "6cf561bf-e3e2-4ae4-ab38-a8f2508608fa",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "2480184a-3917-46af-acff-3fc742a60c1d",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "bbd89163-ef2f-49b4-932a-6ad99390a4ec",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "38e8a944-cdbe-45ce-8c2c-669668227a5e",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "cea273fe-b61c-4a53-b99d-37301f8df25e",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "c8322d4e-973f-4019-86be-8596288f0a19",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "4915d799-ce21-4d51-bcd7-fc8c35315fa7",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "1d817000-c7a8-4e1f-8649-1dab3fe32fbc",
+      "result_id": "7c7fba61-0dac-4661-a940-66efea41d006"
+    },
+    {
+      "claim_id": "efc88500-0c2a-4804-ab31-3bd27b7e0f12",
+      "result_id": "946a0e28-3f68-46a0-9561-1b5727c8b52e"
+    },
+    {
+      "claim_id": "bbfb81f6-851f-4969-9f73-e19337785723",
+      "result_id": "8d50d75e-a13d-4a27-a2fd-86d75940c2ee"
+    }
+  ],
+  "comparisons": []
+}

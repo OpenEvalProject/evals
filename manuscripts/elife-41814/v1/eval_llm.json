@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "AF is a common arrhythmia with significant global health and economic burden, and has a substantial genetic component with heritability accounting for 40-62% of risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide well-established background on AF prevalence, clinical impact, and genetic basis. These are supported by appropriate citations to prior literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "GWAS have identified TBX5 as an AF risk locus, and adult-specific Tbx5 knockout mice develop spontaneous AF. TBX5 directly regulates calcium handling genes including Atp2a2, Sln, and Pln.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 establish the genetic link between TBX5 and AF through GWAS data (C8), mouse model validation (C9), and prior work showing TBX5 regulation of calcium handling genes (C10-C11). These are supported by appropriate citations and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Tbx5fl/fl;R26CreERT2 mice develop spontaneous AF with prolonged action potentials and calcium transients. Gene expression analysis shows decreased Ryr2 (61%) and Atp2a2 (71%) mRNA, increased Pln (69%) mRNA, with no changes in Cacna1c, Ncx1, or calmodulins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 present the core phenotype of the Tbx5 knockout model with appropriate statistical support (p-values provided) and are consistent with prior work. The qPCR data (C14-C17) identify specific calcium handling gene expression changes that form the basis for subsequent mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Nifedipine (L-type calcium channel blocker) dramatically shortens APD90 in Tbx5 mutant cardiomyocytes (61%) compared to controls (19%), despite no change in CaV1.2 protein expression. Peak ICaL current is increased 92% in Tbx5 mutants with accelerated inactivation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 demonstrate that calcium-dependent mechanisms downstream of ICaL contribute to AP prolongation. The nifedipine experiments (C18-C20) are well-controlled with appropriate statistics. The increased ICaL (C22) despite unchanged CaV1.2 expression (C21) suggests post-translational regulation, though the mechanism is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C60"
+    ],
+    "result": "RyR2 protein expression is significantly decreased in Tbx5 mutant atria, with reduced Ca2+ spark frequency. However, ryanodine binding assays show preserved RyR2 function over the physiological calcium range, suggesting compensatory mechanisms maintain RyR2 open probability despite reduced expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C60 present a nuanced finding: reduced RyR2 expression and spark frequency, but preserved function. The ryanodine binding assay (C27) provides functional validation. The interpretation of compensatory mechanisms is reasonable but speculative, as the specific mechanism is not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Tbx5 deficiency causes decreased SERCA2 protein expression (C28) and activity (31% reduction, C34), increased NCX1 expression (C29) and activity (~60% increase, C35), reduced SR calcium load (24%, C33), and slowed calcium transient decay (C31). Under voltage clamp, peak calcium transients are reduced 23% (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide comprehensive characterization of calcium handling defects with appropriate quantification and statistics. The data are internally consistent and support the hypothesis that depressed SERCA function and enhanced NCX activity drive the phenotype. The voltage clamp experiments (C32) appropriately control for AP duration effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "PLN expression and S16 phosphorylation are increased in Tbx5 mutants. Genetic removal of Pln in Tbx5 mutants (Tbx5fl/fl;Pln-/-;R26CreERT2) converts decreased SR load and SERCA function to elevated levels, normalizing peak twitch calcium and decay kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 demonstrate that PLN is a key mediator of SERCA dysfunction in Tbx5 mutants. The genetic rescue experiments are well-controlled with appropriate genotype comparisons. The data support that PLN removal can overcome the effects of reduced SERCA2 expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Pln knockout rescues prolonged AP duration in Tbx5 mutants (43-38% reduction in both heterozygous and homozygous Pln knockout) and significantly reduces EADs and DADs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 show that genetic normalization of SERCA function rescues cellular electrophysiology defects. The dose-dependent effect with Pln heterozygous and homozygous knockout strengthens the conclusion. Statistical support is provided (p=0.01, 0.0007).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "All Tbx5 knockout mice (6/6) are inducible for AF by burst pacing, while no control mice (0/5 R26CreERT2, 0/7 Pln-/-;R26CreERT2) develop AF. Pln knockout dramatically reduces AF susceptibility in Tbx5 mutants (1/11 inducible).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide the critical in vivo validation that SERCA dysfunction drives AF susceptibility in Tbx5 mutants. The dramatic rescue by Pln knockout (from 100% to 9% inducibility) with appropriate statistical analysis (Fisher's exact test) strongly supports the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "TBX5 is critical for cellular calcium homeostasis. AP abnormalities in Tbx5-deficient cardiomyocytes are caused by decreased SERCA2-mediated SR calcium uptake balanced by enhanced trans-sarcolemmal calcium fluxes. These defects are rescued by phospholamban removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 represent the main conclusions synthesizing the experimental findings. These summary claims are well-supported by the comprehensive data presented in the manuscript, including gene expression, protein analysis, functional assays, cellular electrophysiology, and in vivo AF induction studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "Depressed SERCA activity increases cytosolic calcium, driving increased inward NCX current that prolongs APs. Increased NCX function coupled with prolonged calcium transients provides additional depolarizing current. DADs can occur with depressed SR loads in the context of depressed SERCA and elevated NCX. Increased ICaL balances increased NCX-mediated calcium extrusion for steady-state homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C54 present mechanistic interpretations of the experimental data. These are reasonable inferences based on established principles of calcium handling and electrophysiology. The model is internally consistent with the observed phenotypes and supported by the nifedipine experiments and calcium flux measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Modeling suggests compensatory increases in L-type calcium current may be required to maintain calcium levels in the setting of depressed SERCA function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by citation to Li et al., 2011 and is consistent with the observed increase in ICaL in the Tbx5 mutant model. This provides theoretical support for the experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "L-type calcium channel expression is TBX5-independent, and genetically targeting only calcium efflux pathways (via Pln knockout) is sufficient to restore normal electrical activity, suggesting ICaL changes are not a primary TBX5-dependent effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide important mechanistic insight distinguishing primary from secondary effects. The unchanged Cacna1c mRNA and CaV1.2 protein (C17, C21) combined with the complete rescue by Pln knockout (C41-C45) support that ICaL changes are compensatory rather than direct TBX5 effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61"
+    ],
+    "result": "RYR2 and phospholamban are known AF susceptibility loci identified by GWAS, and RYR2 mutations and defective RyR2 function have been associated with AF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C61 provide relevant background from prior literature with appropriate citations. These establish the clinical relevance of the genes studied in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "PLN participates in rheostatic control of SERCA activity in the atria, which is sufficient to protect against AF inducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is a key conclusion supported by the genetic rescue experiments (C38-C45). The demonstration that Pln knockout rescues AF susceptibility in Tbx5 mutants provides strong evidence for PLN's functional role in atrial rhythm control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Human studies show decreased SERCA2 in post-operative AF patients, PLN mutations decrease AF susceptibility in arrhythmogenic right ventricular cardiomyopathy, decreased SERCA2 and phosphorylated PLN with increased NCX1 in AF with heart failure, and altered PLN in obesity models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 cite relevant human and animal studies that support the clinical relevance of the SERCA2-PLN axis in AF. These are appropriately cited and provide context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Pharmacological approaches targeting NCX (ORM-10103) and SERCA2 (resveratrol) have shown promise in preventing calcium handling abnormalities and decreasing AF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 cite prior studies demonstrating therapeutic potential of targeting calcium handling pathways. These are appropriately cited and support the translational relevance of the findings.",
+    "result_type": "MINOR"
+  }
+]

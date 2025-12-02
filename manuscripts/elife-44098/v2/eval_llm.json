@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The manuscript establishes the context that while experience-dependent synaptic modifications are thought to change network activities with learning, few studies have explored how synaptic plasticity shapes response dynamics of cortical circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 accurately represent the state of the field based on general knowledge and literature review. These are appropriate contextual statements for motivating the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior experimental work has established that familiar stimuli are processed faster and with less effort, that stimulus selectivity sharpens through broadening of activity distributions, that temporal sharpening occurs with learning, and that ITC shows various learning-related changes including decreased average responses and broadened distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6-C8, C11-C15) are well-supported by appropriate citations to prior experimental work. The authors correctly summarize established findings in the field that motivate their modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Experimental data from ITC shows that with learning: (i) average responses to familiar stimuli decrease with rapid decline around 150ms, (ii) maximal responses to preferred stimuli increase with broadened activity distributions, (iii) a rebound occurs around 230ms for familiar stimuli that is strongest in high-rank stimuli in excitatory neurons, and (iv) oscillatory responses emerge for familiar but not novel stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C26 are directly supported by experimental data shown in Figures 1 and 5, with appropriate statistical presentation (mean \u00b1 s.e.m.). The characterization of three prominent effects (reduction in average, increase in maximum, stronger oscillations) provides a clear empirical foundation. The distinction between excitatory and inhibitory neuron responses (C20-C21) is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Synaptic plasticity alone, even with Hebbian-type rules that increase maximal responses and decrease average responses through depression, cannot reproduce the oscillatory dynamics observed after learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by modeling results in Figure 2. The demonstration that temporal profiles remain similar before and after learning with plasticity alone is clear. However, the analysis relies on linear dynamics assumptions that may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The interaction between Hebbian-type synaptic plasticity in recurrent connections (providing strong positive feedback among high-firing neurons) and slow negative feedback via firing rate adaptation is necessary and sufficient to generate damped oscillatory responses after learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 are supported by mean-field analysis (Figure 3) and demonstrate the mechanistic insight of the paper. The mathematical derivation showing that variables m and n (representing high-rate neuron activity and adaptation) drive oscillations is rigorous. The connection to experimental observations (C39) strengthens the argument. However, the analysis assumes linear dynamics, which is a significant simplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "Overall potentiation in recurrent connections is required for in-phase oscillations in mean and maximum responses, but this alone cannot reproduce decreased average activities, necessitating additional mechanisms such as changes in external inputs or feedforward depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C45-C46 are supported by modeling analysis shown in Figure 3\u2014figure supplement 1. The logical argument that potentiation-dominant recurrent plasticity increases overall input is sound. However, the conclusion relies heavily on the linear dynamics assumption and may not hold with realistic nonlinearities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Enhanced recurrent inhibition is unlikely to account for decreased average excitatory activities because inhibitory firing rates decrease with learning and inhibitory activity returns to baseline in the late phase when excitatory reduction is observed. Alternative mechanisms involving differential AMPA/NMDA regulation are inconsistent with experimental observations of constant NMDA-to-AMPA ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide a logical argument against alternative mechanisms based on experimental observations (Figure 1\u2014figure supplement 1) and cited literature (C50). The reasoning is sound, though the argument would be stronger with direct experimental tests of these alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Network simulations implementing Hebbian learning in recurrent connections, uniform depression in feedforward connections, and spike adaptation mechanisms qualitatively reproduce all three main effects of visual learning: decreased average response (especially late phase), increased maximal firing rates with prominent oscillations in high-rate neurons, and stronger oscillations in successive stimulus presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by network simulations in Figure 4. The qualitative agreement with experimental observations is demonstrated. However, the manuscript acknowledges this is 'qualitative' reproduction, and quantitative fits are not provided for this example network. The successive presentation results (C55-C56) provide additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "While some conditions identified through linear mean-field dynamics can be mitigated with synaptic or neuronal nonlinearity, the core principles remain: strong potentiation in recurrent connections among high-rate neurons and average depression in feedforward inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by modeling in Figure 6\u2014figure supplement 1. This addresses an important limitation of the linear analysis. However, only one example nonlinearity is tested, limiting the generality of the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mean-field dynamics fitted to experimental data from the dimming detection task reproduce key features: damped oscillation, decreased average response after peak for familiar stimuli, and differential responses to successive novel vs. familiar stimulus presentation due to adaptation dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by fitting results in Figure 5. The model captures the qualitative features of the data. However, the fit quality is not quantified with standard metrics (R\u00b2, RMSE), and Figure 5\u2014figure supplement 2 shows the fitting was done over a restricted time window, excluding 50-100ms where rapid decrease occurs. This limitation should be more prominently discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Fitting to passive viewing task data reveals that post-synaptic dependence of synaptic plasticity leads to potentiation in recurrent inputs and depression in feedforward inputs, with recurrent potentiation increasing with stimulus rank (post-synaptic activity), consistent with the rank-dependence of rebound magnitude observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C68 are based on fitting to data in Figure 6. While the approach is reasonable, several concerns arise: (1) The assumption that plasticity rules are the same across neurons when normalized (C87) is not directly testable and relies on indirect support from small variance in rebound strengths. (2) The fit to maximal response 'after the initial rise is less well fitted' (C68), indicating incomplete model performance. (3) The inference procedure assumes separable pre- and post-synaptic dependence (C85), which is a strong assumption. (4) Only post-synaptic dependence can be inferred, with pre-synaptic dependence assumed (gR,F = 1 for highest rank, 0 otherwise). These limitations significantly constrain the conclusions that can be drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Firing rate adaptation is identified as the most likely candidate for slow negative feedback, as alternative mechanisms (delayed global inhibition, top-down signals from prefrontal cortex) cannot generate the required neuron-specific or sub-population-specific negative feedback necessary for damped oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are supported by mean-field analysis of the global inhibition model showing that without neuron-specific negative feedback, damped oscillations cannot be generated. The argument is logical and mathematically sound. However, C70-C72 about alternative mechanisms are somewhat speculative, and the dismissal of global inhibition could be tested more rigorously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Short-term depression, despite being suggested as a mechanism for negative feedback and oscillations in prior work, cannot explain the qualitative changes in response dynamics observed experimentally, as network simulations with best-fitted short-term plasticity parameters fail to generate strong rebound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by modeling in Figure 6\u2014figure supplement 2. The parameter search and comparison to data are appropriate. However, only a 'simple phenomenological model' of short-term plasticity is tested, and more sophisticated models might perform better. The conclusion should be qualified accordingly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The main findings are that damped oscillations after learning require strong positive feedback through recurrent potentiation in high-rate neurons (broadening activity distributions) combined with feedforward depression (decreasing average rates), enabling sparse efficient representation, with adaptation mechanisms providing critical negative feedback for temporal sharpening that prepares neurons for subsequent stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 appropriately summarize the main findings. These are supported by the modeling and data analysis throughout the paper. However, C79 (sparse and efficient representation) is an inference that goes beyond what is directly demonstrated. C80 (rebound as a measure of recurrent plasticity) is a novel proposal but requires experimental validation. C82 (preparing neurons for subsequent stimuli) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The methodological contribution is that analyzing time-course data allows disentangling recurrent and feedforward synaptic plasticity contributions, though only post-synaptic dependence can be inferred from single-cell recordings under separability assumptions, with indirect support from small variance in rebound strengths across neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C87 describe methodological contributions and limitations. C84 is supported as a valid methodological advance. However, C85 acknowledges a significant limitation (only post-synaptic dependence inferable), and C87's justification based on 'relatively small variance' is weak indirect evidence. The assumption that plasticity rules are the same across neurons when normalized is critical but not directly testable with the available data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The work provides a reconciling perspective showing that both recurrent and feedforward synaptic plasticity are required to reproduce spatial and temporal pattern changes underlying familiarity detection, unlike most prior theoretical work focusing on one type of plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by the modeling results and appropriate citations to prior work. This represents a valid conceptual contribution, though the novelty is somewhat incremental given that the necessity of both types of plasticity emerges from the inability of recurrent plasticity alone to explain all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The findings are consistent with prior theoretical work on adaptation mechanisms generating oscillations and synchrony, with the novel contribution being demonstration that interplay between synaptic plasticity and adaptation with cellular time constants generates synchronous damped oscillations after learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 appropriately place the work in context of prior literature with proper citations. The consistency with prior work on adaptation (C91-C92) and synaptic plasticity effects on synchrony (C93) is well-established. C94 represents the novel synthesis, though the claim of 'synchronous' oscillations is based on firing rate analysis, not spike-time correlations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Adaptation mechanisms in temporal cortex have been suggested to encode stimulus recency through repetition suppression on timescales up to seconds, potentially requiring adaptation on multiple timescales for different types of recognition memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by appropriate citations. C95 and C96 accurately represent prior work. C97 is speculative but reasonable, appropriately qualified with 'may be required.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The modeling assumes inhibitory neuron dynamics follow mean excitatory neurons without contributing qualitative changes, justified by weak dependence of input changes and rebound magnitude on inhibitory neuron firing rates, though alternative roles of inhibitory plasticity cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C28 and C98-C104 address the treatment of inhibition in the model. The justification based on experimental observations (C28, C98, C101) is reasonable but not definitive. The dismissal of inhibitory contributions (C102) is based on logical arguments but lacks direct experimental tests. C104 appropriately acknowledges that complementary roles of inhibitory plasticity cannot be ruled out. This is a significant simplifying assumption that limits the model's biological realism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The enhanced oscillations for familiar stimuli (~5 Hz, theta range) may relate to visual search and attentional sampling behaviors, with modeling showing that competition between two familiar stimuli can generate stronger oscillations at similar frequencies, suggesting low-frequency damped oscillators could be building blocks for rhythmic sampling and covert attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 connect the findings to broader literature on theta oscillations and attention. C105 is supported by data analysis. C106-C109 appropriately cite relevant prior work. C110-C111 are supported by modeling in Figure 7. However, C112 is speculative ('may indicate'), and the connection to attention and visual search, while plausible, goes beyond what is directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The main conclusions are that broadening of activity distributions and stronger oscillations provide evidence for recurrent synaptic plasticity modifying positive feedback strength, that interplay with adaptation is critical for sharpening dynamics, and that analyzing temporal patterns enables disentangling recurrent and feedforward plasticity while providing a measure of recurrent plasticity strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the main conclusions stated in the abstract. These are supported by the modeling and data analysis throughout the paper (Figures 1, 3-6). However, C5's claim about 'disentangling' plasticity types should be qualified by the limitations discussed (only post-synaptic dependence inferable, separability assumptions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The work extends prior analysis of spatial patterns to temporal dynamics, revealing adaptation's role, with potential future applications to examining plasticity engagement during learning and investigating interactions with other brain areas like perirhinal cortex (positive feedback) and prefrontal cortex (negative feedback).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 appropriately summarize contributions and future directions. C113 accurately describes the extension of prior work. C114 is a reasonable suggestion for future research. C115-C116 are speculative but appropriately qualified and supported by citations.",
+    "result_type": "MINOR"
+  }
+]

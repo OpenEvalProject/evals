@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study recorded neuronal spiking activity from the primary auditory cortex of six urethane-anesthetized rats using silicon microelectrodes. Data were collected during spontaneous activity (1.5-s intervals preceding stimuli) and in response to acoustic clicks (5-ms square pulses), with time discretized into 10-ms bins for maximum entropy modeling. All experiments were ethically approved and data are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C20, C22-C24, and C117-C121 provide comprehensive methodological details about the experimental setup, data collection procedures, and ethical compliance. These claims are internally consistent and provide sufficient detail for reproducibility. The data availability statement (C121) enhances transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Maximum entropy models of neuronal ensemble activity exhibited sloppiness, with most Fisher Information Matrix (FIM) eigenvalues being small (sloppy dimensions) and a few being large (stiff dimensions). Model parameters predominantly evolved along sloppy dimensions, though non-zero variance along stiff dimensions indicated that the model also evolved along parameter dimensions with strong impact on collective activity. Parameter fluctuations were not fully explained by estimation errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C43-C52 describe the core finding of sloppiness in the neural activity models. The analysis includes eigenvalue decomposition of the FIM (C45-C46), projection variance analysis (C47), and control analyses using stationary surrogates (C49-C50). The findings are supported by multiple figures (4A-E, Figure 4\u2014figure supplement 1) and are statistically rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C53",
+      "C55",
+      "C57",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Cortical state transitions, characterized by changes in silence density between synchronized and desynchronized states, evolved along stiff parameter dimensions. Observables with highest sensitivity were significantly more correlated with cortical state than sloppy variables (p<0.01 for all datasets), indicating that neuronal activity and co-activity preferentially evolved along stiff dimensions during state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C53-C61 establish the relationship between cortical state transitions and stiff dimensions. The analysis includes quantification of cortical states using silence density (C55), correlation analyses (C57, C59), and statistical testing with paired t-tests (C60). The results are supported by Figure 5 and show consistent effects across all six rats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C86"
+    ],
+    "result": "Sensory-evoked activity evolved along sloppy parameter dimensions, with neurons having lowest sensitivity showing largest stimulus responses. The difference in modulation index between sloppy and stiff neurons (\u0394MI) was maximal during desynchronized states and minimal during synchronized states, indicating state-dependent evolution along different parameter dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C62-C66, C86 demonstrate that stimulus-evoked responses evolve along sloppy dimensions. The analysis includes modulation index calculations (C63-C64), state-dependent analyses (C65-C66, C86), and is supported by Figures 6B-F. The finding that responsiveness is inversely related to sensitivity is consistent across datasets and provides a clear mechanistic distinction from spontaneous state transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C97",
+      "C98"
+    ],
+    "result": "Stiff parameters were associated with neurons having high centrality within the functional network. Stiff neurons were significantly more active (AUC=0.961-0.998), more correlated among themselves (AUC=0.615-0.932), had higher betweenness centrality (AUC=0.740-0.831), and were more coupled to population activity (AUC=0.603-0.939) than sloppy neurons (all p<0.001). These differences were not trivially explained by firing rate differences alone, as demonstrated by surrogate data analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, and C67-C76, C97-C98 characterize the properties of stiff versus sloppy neurons using multiple complementary measures. The analysis includes ROC analysis with AUC quantification, betweenness centrality calculations, and neuron-to-population coupling measures. Control analyses with surrogate data (C73) rule out trivial explanations. Results are supported by Figure 7 and show consistent effects across all rats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C77",
+      "C78",
+      "C79",
+      "C100",
+      "C101"
+    ],
+    "result": "The study proposes a functional architecture where stimulus-evoked responses evolve along sloppy dimensions associated with neurons of low centrality, allowing sensory information encoding without perturbing network integrity. Stiff and sloppy neurons correspond to chorister and soloist neurons respectively, with stiff/chorister neurons maintaining network stability while sloppy/soloist neurons can respond to stimuli without strongly affecting collective behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C77-C79, C100-C101 present interpretations of the functional implications of the findings. While these are interpretative claims, they are well-supported by the empirical results (C2, C17, C18, C62-C76) and are consistent with cited previous work on chorister/soloist neurons (C99). The interpretation logically follows from the data showing differential properties and response patterns of stiff versus sloppy neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C103"
+    ],
+    "result": "Despite substantial temporal changes in firing rates, correlations, and model parameters over hours, the Fisher Information Matrix (FIM) showed the highest stability across time (similarity=0.882\u00b10.002 after 30 min). Fluctuations on stiff parameter dimensions were weakest and related to cortical state transitions occurring on timescales of tens of minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C42, and C103 describe temporal stability properties of the model. The analysis includes similarity measures across time (Figure 3C-D) and statistical comparisons (F4,495=305.73, p<0.001). The finding that FIM stability exceeds that of individual parameters is well-documented and provides important context for understanding the sloppiness phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Prior work established that spontaneous neuronal activity exhibits sloppiness, where collective behavior is strongly determined by stiff parameter combinations while being insensitive to sloppy dimensions. This property has been observed in vitro and in vivo, with collective activity stabilized by highly active, stable neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C4-C7 summarize established prior work on sloppiness in neural systems, primarily citing Panas et al., 2015. These claims provide necessary background context and are appropriately attributed to previous research. The definitions of sloppiness and stiffness (C4-C5) are standard in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Previous research has shown that spontaneous cortical activity transits through different synchronized and desynchronized states that represent statistically different collective behaviors with different information processing capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 accurately summarize well-established prior work on cortical states, supported by multiple citations. These claims provide important context for why the current study examines the relationship between sloppiness and cortical state transitions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors interpret that responses along sloppy dimensions provide information processing benefits, supported by prior work showing better stimulus representation in desynchronized states. They speculate that findings from anesthetized conditions are likely relevant to wakefulness, citing evidence for synchronized states and up/down transitions during wakefulness and the observation of sloppiness under light anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C95 mix interpretation (C87) with citations to prior work (C88-C94) and speculation about generalizability (C90, C95). While the interpretation is reasonable and supported by cited literature, the generalization from urethane anesthesia to wakefulness remains speculative. The authors appropriately acknowledge this as expectation rather than demonstrated fact (C95), but direct evidence in awake animals would be needed to fully support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C102",
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors discuss implications for network organization, hypothesizing that sloppy neurons may be more affected by synaptic plasticity, allowing network reconfiguration without stability loss. They suggest their findings provide architectural constraints for brain state models and question assumptions in existing models about how background and stimulus inputs impact dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C85, C102, C105-C107, C110-C112 present hypotheses and speculations about broader implications. While these are thoughtful interpretations grounded in the data and supported by some citations to related work (C82, C84-C85), they remain speculative. The suggestions for future modeling work (C110-C111) and the questioning of existing model assumptions (C112) are reasonable but would require additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C99",
+      "C104",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors cite related findings from other studies, including identification of similar highly active, interconnected neuronal sub-networks in mouse neocortex, the chorister/soloist distinction in neuronal coupling, and previous modeling approaches for brain state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81, C99, C104, C108-C109 accurately cite and summarize relevant prior work. These citations appropriately contextualize the current findings within the broader literature and support the authors' interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors acknowledge methodological limitations, noting that small maximum entropy models (N=10 neurons) can show departures from observed distributions but justify this choice as necessary for time-resolved analysis of cortical state transitions. They suggest future comparisons of Fisher information matrices across vigilance states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C113-C116 appropriately acknowledge methodological limitations and trade-offs. The justification for using small model sizes (C116) is reasonable given the temporal resolution requirements. The acknowledgment of known limitations (C113) and the suggestion for future work (C96) demonstrate appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

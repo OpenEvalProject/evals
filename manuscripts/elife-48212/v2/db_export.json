@@ -1,0 +1,1884 @@
+{
+  "submission": {
+    "id": "24d17710-ad96-41b1-afa4-8bc17bb8385d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:00:20.899194Z",
+    "updated_at": "2025-12-02T12:00:20.899194Z"
+  },
+  "content": [
+    {
+      "id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "submission_id": "24d17710-ad96-41b1-afa4-8bc17bb8385d",
+      "content_type": "manuscript",
+      "content_text": "# Neighbor predation linked to natural competence fosters the transfer of large genomic regions in Vibrio cholerae\n\n## Authors\n\n- No\u00e9mie Matthey<sup>1</sup> ([ORCID: 0000-0002-6056-2756](https://orcid.org/0000-0002-6056-2756))\n- Sandrine Stutzmann<sup>1</sup>\n- Candice Stoudmann<sup>1</sup>\n- Nicolas Guex<sup>2</sup>\n- Christian Iseli<sup>2</sup> ([ORCID: 0000-0002-2296-2863](https://orcid.org/0000-0002-2296-2863))\n- Melanie Blokesch<sup>1</sup> ([ORCID: 0000-0002-7024-1489](https://orcid.org/0000-0002-7024-1489)) \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Microbiology, Global Health Institute, School of Life Sciences Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (Swiss Federal Institute of Technology Lausanne; EPFL) Lausanne Switzerland\n2. Swiss Institute of Bioinformatics Lausanne Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nNatural competence for transformation is a primary mode of horizontal gene transfer. Competent bacteria are able to absorb free DNA from their surroundings and exchange this DNA against pieces of their own genome when sufficiently homologous. However, the prevalence of non-degraded DNA with sufficient coding capacity is not well understood. In this context, we previously showed that naturally competent Vibrio cholerae use their type VI secretion system (T6SS) to actively acquire DNA from non-kin neighbors. Here, we explored the conditions of the DNA released through T6SS-mediated killing versus passive cell lysis and the extent of the transfers that occur due to these conditions. We show that competent V. cholerae acquire DNA fragments with a length exceeding 150 kbp in a T6SS-dependent manner. Collectively, our data support the notion that the environmental lifestyle of V. cholerae fosters the exchange of genetic material with sufficient coding capacity to significantly accelerate bacterial evolution.\n\n## Introduction\n\nThe causative agent of the diarrheal disease cholera, Vibrio cholerae, is responsible for seven major pandemics since 1817, one of which is still ongoing. Due to its ability to rapidly spread in contaminated water, cholera poses a serious world health risk, affecting between 1 and 4 million people and causing 21,000\u2013143,000 deaths per year, especially in poor or underdeveloped countries (WHO, 2019). Many disease-causing bacteria have developed mechanisms for rapidly evolving in response to environmental pressures, and these rapid changes are often responsible for the formation of new serogroups with pandemic potential. One way in which V. cholerae acquire new phenotypes is through horizontal gene transfer (HGT), which is the direct movement of DNA from one organism to another. A major mode of HGT is natural competence for transformation in which bacteria are able to absorb free DNA from their surroundings using their competence-induced DNA-uptake complex (Chen and Dubnau, 2004; Johnston et al., 2014; Matthey and Blokesch, 2016). When sufficient homology is present between the incoming DNA and the bacterial genome, the absorbed genetic material can be integrated into the genome via double homologous recombination at the expense of the initial DNA region. As an example of the significant power of this natural competence for gene uptake, we previously witnessed the gain of an\u00a0~40 kbp O139-antigen cluster at the expense of the original\u00a0~30 kbp O1-antigen cluster through natural transformation (followed by strong selective pressure exerted by antibiotics or phages; Blokesch and Schoolnik, 2007), which significantly changed the phenotypes of these bacteria. And while Griffith\u2019s experiment in 1928 unambiguously proved that transformation contributes to evolution and pathogen emergence, the general prevalence of non-degraded DNA with sufficient coding capacity has been questioned (Nielsen et al., 2007; Overballe-Petersen et al., 2013; Croucher et al., 2016), drawing inquiries as to whether this mode of HGT could be responsible for the major changes causing pandemic strains to emerge.\n\nThe induction of competence in V. cholerae is tightly regulated (recently reviewed by Metzger and Blokesch, 2016). Briefly, upon growth on the (molted) chitin-rich exoskeletons of zooplankton (Pruzzo et al., 2008), the most abundant polysaccharide in the aquatic environment and therefore an important carbon source for chitinolytic bacteria (Gooday, 1990), the expression pattern of V. cholerae is altered (Meibom et al., 2004) to render it naturally competent for genetic transformation (Meibom et al., 2005). Initially, when chitin degradation products are sensed by V. cholerae, it produces the regulatory protein TfoX (Li and Roseman, 2004; Meibom et al., 2004; Meibom et al., 2005; Yamamoto et al., 2011; Dalia et al., 2014; Yamamoto et al., 2014). This competence activator positively regulates the expression of the major DNA-uptake machinery in the cell (Matthey and Blokesch, 2016), providing a direct connection between growth on chitin and competence activation. Apart from TfoX, natural competence and transformation also depend on the master regulator of quorum sensing, HapR, in two ways: i) HapR acts as repressor of dns, which encodes an extracellular nuclease that inhibits transformation (Blokesch and Schoolnik, 2008); and ii) HapR together with TfoX co-activates the transcription factor QstR, which further represses dns as well as activates several DNA-uptake genes (Lo Scrudato and Blokesch, 2013; Jask\u00f3lska et al., 2018).\n\nWhile the chitin-induced DNA-uptake complex of V. cholerae is able to absorb DNA from the surrounding (Seitz and Blokesch, 2013; Seitz and Blokesch, 2014; Seitz et al., 2014; Ellison et al., 2018; Adams et al., 2019), environmental DNA is often heavily degraded and therefore short in size (Nielsen et al., 2007; Overballe-Petersen et al., 2013). In addition, free DNA is thought to originate from dead and therefore less fit bacteria, which renders the coding part of such genetic material non-favorable for naturally competent bacteria (Redfield, 1988). In line with these arguments, we recently showed that V. cholerae does not solely rely on randomly released environmental DNA. Instead, it actively acquires \u2018fresh\u2019 DNA from healthy, living bacteria through kin-discriminatory neighbor predation (Borgeaud et al., 2015), which, conceptually, also occurs in other naturally competent bacteria (Veening and Blokesch, 2017). Neighbor predation in V. cholerae is accomplished by a contractile injection system known as the type VI secretion system (T6SS) that transports toxic effector proteins into prey (Ho et al., 2014; Cianfanelli et al., 2016; Gal\u00e1n and Waksman, 2018; Taylor et al., 2018). Intriguingly, the T6SS of pandemic V. cholerae is exquisitely co-regulated with its DNA-uptake machinery in a TfoX-, HapR-, and QstR-dependent manner when the bacterium grows on chitin (Borgeaud et al., 2015; Watve et al., 2015; Metzger et al., 2016; Jask\u00f3lska et al., 2018), which increases the chances of the competent bacterium to take up freshly released DNA compared to free-floating \u2018unfit\u2019 DNA. Notably, this coupling of competence and type VI secretion is also conserved in several non-cholera vibrios (Metzger et al., 2019).\n\nIn the current study, we determined the extent of the absorbed and chromosomally-integrated prey-derived DNA. Previous studies had scored transformation events in other naturally competent Gram-negative bacteria such as Haemophilus influenzae, Helicobacter pylori, and Neisseria meningitidis (Mell et al., 2014; Bubendorfer et al., 2016; Alfsnes et al., 2018). These former studies, however, relied on the supplementation of large quantities of purified DNA (with up to 50 donor genome equivalents per cell; Bubendorfer et al., 2016) at the peak of the organism\u2019s competence program (Mell et al., 2014). Such an approach\u00a0neither recapitulates the natural onset of competence nor discloses the fate of the DNA that is released from dying cells. Thus, to address these points and to mimic natural settings, we determined the frequency and extent of DNA exchanges under chitin-dependent co-culture conditions of two non-clonal V. cholerae strains. We show that the DNA transfer frequency is significantly enhanced in T6SS-positive compared to T6SS-negative strains and that large genomic regions are transferred from the killed prey to the competent acceptor bacterium.\n\n## Results and discussion\n\n### The T6SS fosters horizontal co-transfer events encompassing two selective markers\n\nTo compare the absorption of T6SS-mediated prey-derived DNA as opposed to environmental DNA (released through, for example, random lysis), we first scored the transformability of T6SS-positive (wild-type [WT] predator) and T6SS-negative (acceptor) V. cholerae strains, which would allow us to directly measure the contribution of the T6SS on gene uptake. These two strains were co-cultured with non-kin prey (donor) bacteria that were all derived from the environmental isolate Sa5Y (Keymer et al., 2007; Miller et al., 2007; Borgeaud et al., 2015; Matthey et al., 2018) and contained two antibiotic resistance genes in their genomes: 1) An aph cassette (KanR), which was integrated in the vipA gene on the small chromosome (chr 2); and 2) a cat cassette (CmR), which was inserted at variable distances from the aph cassette on the same chromosome or, alternatively, on the large chromosome (chr 1). As shown in Figure 1, the WT predator strain efficiently absorbed and integrated the prey-released resistance cassettes (aph or cat), while the transformation efficiency for the T6SS-defective acceptor strain was significantly reduced (by 97.8% and 99.2% for aph and cat, respectively) (Figure 1A). Moreover, comparable frequencies were observed for both selective markers, suggesting that their acquisition does not significantly affect the strains\u2019 fitness under non-selective conditions. We tested whether these transfer events were indeed competence-mediated and not based on other modes of HGT using a strain with a competence-related DNA import deficiency in that it lacked the competence protein ComEA that reels external DNA into the periplasm (Seitz et al., 2014). This comEA-minus strain was never transformed under these predator-prey co-culture conditions, confirming that the gene transfer did depend entirely on natural competence.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013B) Transformation occurs in predator/prey co-cultures. To induce natural competence, the WT or a T6SS-negative derivative (A1552\u0394vasK; T6SS -) was co-cultured on chitin with different prey strains (Sa5Y-derived) that carried two antibiotic resistance cassettes: aph in vipA (chr 2) and cat at variable distances from aph on the same chromosome or on chr 1, as indicated on the X-axis. Transformation frequencies (Y-axis) indicate the number of transformants that acquired (A) a single resistance cassette or (B) both resistance cassettes divided by the total number of predator colony forming units (CFUs). (C) Natural transformation is not impaired in the T6SS- acceptor strain. Purified genomic DNA (gDNA) was added to competent WT or T6SS- strains. (A\u2013C) Data represent the average of three independent biological experiments (\u00b1\u00a0SD, as depicted by the error bars). For values in which one (#) or two (##) experiments resulted in the absence of transformants, the detection limit was used to calculate the average.\u00a0<d .l., below detection limit. Statistical significance is indicated (*p<0.05; **p<0.01; n.s., not significant).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Data represent the average of three independent biological experiments (\u00b1\u00a0SD). For values in which one (#) or two (##) experiments resulted in the absence of transformants, the detection limit was used to calculate the average and for statistical analyses.\u00a0<\u00a0d .l., below detection limit. Statistical significance is indicated (*p<0.05; **p<0.01; n.s., not significant).\n\nNext, we scored the frequencies of transformants that had adopted resistance against both antibiotics, which would show the possibility of two transformation events or the transfer of a large piece of DNA (indicated by the distance between the two genes on the same chromosome). These transformations occurred, as expected, at lower rates compared to single-resistant clones and were mostly below the limit of detection for the T6SS-minus acceptor strain (Figure 1B). Interestingly, we observed a gradual decrease in the frequencies the further the two resistance genes were apart from each other on the same chromosome, while a sharp drop occurred in the number of recovered transformants when the two resistance genes were carried on the two separate prey chromosomes (Figure 1B). While the latter scenario unambiguously requires at least two separate DNA-uptake events, the former, in which the resistance markers are carried in cis, could reflect a mix between single and multiple DNA absorption and integration events. When purified genomic DNA was instead provided as the transforming material to simplify the experiment and provide measurable results for all conditions, the in cis double-resistance acquisition efficiencies reached a comparable range to the in trans efficiencies when the two resistance genes were separated by at least 100 kbp. This suggested that the more efficient transformations of less than 100 kbp likely often occurred through a single acquisition (Figure 1C). Furthermore, the WT predator and T6SS-minus acceptor behaved similarly when purified DNA was provided, which makes sense as the need for active DNA release through neighbor predation was eliminated. Based on these data and the fact that the double-acquisition rates for the T6SS-minus acceptor strain were mostly below the detection limit in the prey scenario (Figure 1B), we hypothesized that neighbor predation might foster the transfer of long DNA stretches, which frequently exceeded 50 kbp and therefore carry significant coding capacity. Moreover, the significantly lower double-acquisition rates when both cassettes are located in trans (e.g., on two different chromosomes) for the co-culturing conditions compared to the supplementation of purified gDNA (Figure 1\u2014figure supplement 1) led us speculate that long DNA stretches might be released from the killed prey thereby saturating the system against uptake of additional fragments.\n\n### Comparative genomics of pandemic strain A1552 and environmental isolate Sa5Y\n\nTo test our hypothesis that the T6SS contributes to the horizontal transfer of large DNA fragments, we used a whole-genome sequencing (WGS) approach to properly outline the transferred DNA regions. To do this using WGS, we first needed to characterize the genomes of both the predator/acceptor (A1552) and the prey/donor (Sa5Y) strains for which long-read PacBio sequencing data and de novo assemblies without further analysis were recently announced (Matthey et al., 2018)(Figure 2). A1552 is a pandemic O1 El Tor strain (Yildiz and Schoolnik, 1998) belonging to the LAT-1 sublineage of the West-African South American (WASA) lineage of seventh pandemic V. cholerae strains (Domman et al., 2017) while strain Sa5Y was isolated from the Californian Coast (Keymer et al., 2007; Miller et al., 2007). To understand their genomic arrangements, we also compared these strains to the reference sequence of V. cholerae (O1 El Tor strain N16961; Heidelberg et al., 2000) and a re-sequenced laboratory stock of the latter. Details on the comparative genomics between the three pandemic strains (N16961 [Heidelberg et al., 2000], the newly sequenced and de novo-assembled genome sequence of the laboratory stock of N16961, and A1552) are provided in the Material and methods section and as Figure 2\u2014figure supplements 1 and 2. We expected to see significant differences in the pandemic A1552 strain compared to the environmental isolate Sa5Y in terms of the absence/presence of genomic features and single nucleotide polymorphisms (SNPs) in core genes that would allow us to measure HGT events occurring between the strains, and several of these major differences are highlighted here. Indeed, as expected from its non-clinical origin, the environmental isolate lacked several genomic regions, including those that encode major virulence features, namely Vibrio pathogenicity islands 1 and 2 (VPI-1, VPI-2), Vibrio seventh pandemic islands I and II (VSP-I, VSP-II; Dziejman et al., 2005), the cholera toxin prophage CTX (Waldor and Mekalanos, 1996), and the WASA-1 element. In addition, the strain\u2019s O-antigen cluster differed significantly from the O1-encoding genes of pandemic strain A1552 (Figure 2). The region that differed the most between both strains was the integron island, which is consistent with the role of this assembly platform in fostering the incorporation of exogenous open reading frames (Mazel, 2006). Given these major differences between strain A1552 and Sa5Y and, in addition, an overall SNP frequency of approximately 1 in 55 nucleotides for conserved genes, we concluded that HGT events occurring between these two strains on chitinous surfaces could be precisely scored using short-read sequencing. Apart from this important genomic information, we also noted that the pandemic strains as well as Sa5Y contained previously unrecognized rRNA operons, with nine or ten rRNA clusters in total compared to the initially reported eight (Heidelberg et al., 2000).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig2-v2.jpg)\n\n**Figure 2.:** The genomic sequences of chr 1 and 2 of Sa5Y (green) were segmented in 10-kbp-long fragments and aligned against the respective chromosome of the reference A1552 (red). To simplify visualization, chr 1 of strain A1552 was inverted and plotted counter-clockwise relative to Sa5Y (due to the large inversion in this strain; see Materials and methods section), as indicated by the arrow. To represent the differences between the two genomes, a color intensity scale was used that corresponded to the number of differences (SNP or indel), from 0 to\u00a0\u2265500 as measured per 10 kbp fragment (same values are indicated for both colors). White regions show no homology. Important genomic features of pandemic V. cholerae are highlighted inside the rings.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The newly sequenced genome of the streptomycin-resistant laboratory stock of strain N16961 (long-read PacBio sequencing technology; Matthey et al., 2018) was compared to the genome sequence of the reference genome (Heidelberg et al., 2000). Detailed explanations on the comparison are as described for Figure 2. The shadings (for both colors) reflect differences (SNP or indel) from 0 to\u00a0\u226520 per 10 kbp fragment. Marked discrepancies are based on repetitive sequences (*) or a sequencing error (#) as discussed in the Materials and methods section.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The genome sequences of our laboratory stock of pandemic strains N16961 and A1552 were compared. Details are as described in Figure 2. The shadings (for both colors) reflect differences (SNP or indel) from 0 to\u00a0\u226520 per 10 kbp fragment. The marked discrepancy (#) resulted from a sequencing error, as discussed in the Materials and methods section.\n\n### Released DNA from T6SS-killed prey leads to the transfer of large genomic regions\n\nAs our previous study witnessed gene transfers between V. cholerae bacteria (Blokesch and Schoolnik, 2007) though neither scored the full extent of the transferred DNA region nor took T6SS-mediated neighbor predation into consideration, we sought to next determine how much genetic material would be absorbed and integrated by competent V. cholerae upon neighbor predation. To do this, we co-cultured the predator (A1552) and prey (Sa5Y) strains on chitinous surfaces for 30 hr without any deliberate selection pressure. To be able to afterwards screen for the transfer of at least one gene, we first integrated an aph cassette within the vipA of strain Sa5Y, which concomitantly deactivated the prey\u2019s T6SS, to select kanamycin-resistant transformants of strain A1552. Using this system, resistant transformants of A1552 were selected at an average frequency of 1.8 \u00d7 10\u22124 after the 30 hr co-culturing on chitin, and 20 of those transformants were randomly picked for further analysis. After three independent experiments, the whole genome of each of the 60 transformants was sequenced, and the reads were mapped to either the predator\u2019s or the prey\u2019s genome sequence (see Materials and methods section for detailed bioinformatic analysis). As shown in Figure 3, apart from the common acquisition of the aph resistance cassette, the location and the size of the prey-donated genomic region differed significantly between most transformants. Previous estimates of the average length of total acquired DNA were made in experiments using purified donor gDNA and were considered to be\u00a0~23 kbp (Miller et al., 2007). Importantly, we observed in these new experiments that the average length of the total acquired DNA, meaning the DNA surrounding the aph cassette plus any transferred regions elsewhere on either of the two chromosomes, was almost 70 kbp and therefore significantly larger than the previous estimates. Around 15% of all transformants acquired and integrated more than 100 kbp (Figure 3B), which was previously considered unlikely due to rareness of such long DNA fragments in the environment. Consistent with the principle of natural transformation, it should be noted that the new DNA was acquired through double homologous recombination such that it replaced the initial DNA region and the overall genome size did not significantly change. Further analysis indicated that about 50% of the strains experienced a single HGT event around the aph cassette, while the others exchanged regions in up to eight different locations on the two chromosomes (Figure 3C). Finally, we analyzed the length of continuous DNA stretches that were acquired from the prey and observed that those ranged from a few kbp up to 168 kbp (Figure 3D). Collectively, these data indicate that V. cholerae can acquire large genomic regions from killed neighbors with an average exchange of more than 50 kbp or\u00a0~50 genes. Notably, our observed recombination events were significantly larger than the mean recombination event size of\u00a0~4 kbp that was recently reported for surface-grown Streptococcus pneumoniae (Cowley et al., 2018). In their study, Cowley et al. observed that competence-mediated homologous recombination was more likely to occur upon direct cell-to-cell contact, which the authors mimicked by growing S. pneumoniae on synthetic biofilm-like assemblages on agar plates or on human lung epithelial cell lines. These conditions were used to recapitulate the natural nasopharynx environment in which this competent bacterium is frequently encountered (Cowley et al., 2018). Their data combined with our findings therefore contradict the notion that natural transformation is unlikely to serve DNA repair purposes or for the acquisition of new genetic information due to the quick fragmentation of free DNA in natural environments (Nielsen et al., 2007; Overballe-Petersen et al., 2013).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig3-v2.jpg)\n\n**Figure 3.:** WGS analysis of transformants after prey killing and DNA transfer. Twenty kanamycin-resistant transformants were selected per independent biological experiment (n\u00a0=\u00a03). (A) The scheme represents the experimental setup of the co-culture experiment (condition \u2460). Sequencing reads for each transformant were mapped onto the prey genomes to visualize the transferred DNA regions (in dark green; see Figure 4\u2014figure supplement 2 for both chromosomes). The position of the resistance cassette (aph) is indicated by the light blue line. (B) Total DNA acquisition frequently exceeds 100 kb. The total length of horizontally acquired DNA is indicated on the Y-axis for each transformant. Data are from three biologically independent experiments as indicated on the X-axis. Average and maximum lengths are indicated below the graph. (C) Multiple transferred DNA regions were identified in the transformants. Percentage of transformants (n\u00a0=\u00a060) that exchanged one or more DNA regions, as indicated on the X-axis. (D) Large DNA stretches are transferrable by transformation. The length of individual consecutive DNA stretches was determined as indicated on the X-axis.\n\n### Transformation by purified DNA only occurs if correctly timed\n\nTo better understand the DNA acquisition and integration potential of naturally competent V. cholerae, we next compared the data described above, which we refer to from now on as condition \u2460 using experiments varying the aspects of neighbor predation and DNA supplementation (Figure 4A). First, the acceptor strain was grown in a monoculture immediately supplemented with purified genomic DNA (gDNA) derived from the same donor (prey) strain as described above. Notably, when the gDNA was added at the start of the chitin-dependent culture, no transformants were reproducibly detected from three independent biological experiments, suggesting that free DNA is rapidly degraded under such conditions. This finding is consistent with our previous work in which we demonstrated that V. cholerae produces an extracellular and periplasmic nuclease Dns (Blokesch and Schoolnik, 2008; Seitz and Blokesch, 2014) that degrades transforming material. At high cell density (HCD), where competence is induced, dns is partially repressed through direct binding of HapR (Blokesch and Schoolnik, 2008; Lo Scrudato and Blokesch, 2013), and this repression is reinforced by the transcription factor QstR (Lo Scrudato and Blokesch, 2013; Jask\u00f3lska et al., 2018). We therefore concluded that the simultaneous expression of both machineries, concomitantly with a strong repression of dns, is a prerequisite for successful DNA transfer. Indeed, such coordinated expression would ensure that T6SS-mediated attacks are exquisitely timed with low nuclease activity so that the prey-released DNA can be efficiently absorbed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-v2.jpg)\n\n**Figure 4.:** (A) Scheme representing the eight experimental conditions tested in this study. Each scheme indicates whether the transformants acquired the aph resistance gene from a prey bacterium (blue) (position of aph indicated on the zoomed-in circles of chr 1 or chr 2) or from purified genomic DNA (gDNA). In the former case, the killing capacity of the predator (white) and prey (blue) is shown by the presence or absence of the dark green T6SS structure. The same color code is maintained throughout all figures. (B\u2013C) Transformants from independent biological experiments (n\u00a0\u2265\u00a02) were analyzed by WGS for each of the conditions \u2460 to \u2467, as indicated at the top of each graph. The main features of predator and prey/gDNA are summarized below the X-axis. Panels (B) and (C) depict the total length of acquired DNA and the number of exchanged DNA stretches, respectively, for each transformant. N.A., not applicable. Statistical analysis is based on a pairwise comparison between different conditions. *p<0.05, ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013C) Transformation is enhanced in T6SS-positive predator cells. To induce natural competence, cultures were grown on chitin flakes. Bacteria were grown as co-cultures (predator + prey) or as monocultures (predator only). In the latter case, purified gDNA served as the transforming material. Transformants were selected based on their acquisition of the aph resistance cassette located in vipA, VCA0747, or lacZ on chr1 or chr2, as indicated below the graphs. The killing capability of each strain is indicated below the graph (e.g., T6SS + or -). Transformation frequencies are shown on the Y-axis (\u00b1\u00a0SD, as indicated by the error bars) and depict averages of at least two biologically independent experiments (corresponding to the experiments described in Figure 4 and maintaining the same color code). N.A., not applicable. (D) The location of the resistance genes does not influence the transformation efficiency. Natural transformability of the WT (plain bars) or its T6SS-minus derivative (T6SS-; \u0394vipA; hashed bars) was scored using gDNA as the transforming material. The gDNA samples were derived from the prey strains of conditions j and l\u2013p and the respective genotype is shown below the graph. Transformation frequencies were scored based on the acquisition of the aph resistance cassette, which was integrated into different genes on chromosome 1 or 2 (chr 1/chr 2). Data represent the average of three independent experiments (\u00b1\u00a0SD). (A\u2013D) Statistical significance is indicated (*p<0.05; **p<0.01; ns, not significant).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Data as in Figure 3 with the addition of the map of both chromosomes in panel A.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Details as described for Figure 3 with the addition of the map of both chromosomes in panel A.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Details as described for Figure 3 with the addition of the map of both chromosomes in panel A.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Details as described for Figure 3 with the addition of the map of both chromosomes in panel A.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Details as described for Figure 3 with the addition of the map of both chromosomes in panel A.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-figsupp7-v2.jpg)\n\n**Figure 4\u2014figure supplement 7.:** Details as described for Figure 3 with the addition of the map of both chromosomes in panel A.\n\n![Figure 4\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-figsupp8-v2.jpg)\n\n**Figure 4\u2014figure supplement 8.:** Details as described for Figure 3 with the addition of the map of both chromosomes in panel A.\n\n![Figure 4\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/48212/elife-48212-fig4-figsupp9-v2.jpg)\n\n**Figure 4\u2014figure supplement 9.:** Details as described for Figure 3 with the addition of the map of both chromosomes in panel A.\n\nAs we previously showed that the addition of purified gDNA after\u00a0~20\u201324 hr of growth on chitin wasn\u2019t prone to degradation by Dns (Marvig and Blokesch, 2010), we next choose this time point to probe the DNA acquisition capability using purified DNA (condition \u2461; Figure 4A). Doing so led to similar transformation frequencies as those observed for the prey-released DNA caused by T6SS attacks (condition \u2460; Figure 4\u2014figure supplement 1A). WGS of 20 transformants from two biologically independent experiments likewise resulted in similar DNA acquisition patterns with average and maximum DNA acquisitions of 70 kbp and 188 kbp, respectively, and the presence of multiple exchanged regions of varying sizes (Figure 4 and Figure 4\u2014figure supplements 2 and 3). While we cannot entirely exclude that the maximum length of individual DNA stretches was biased by the purification step, despite the fact that we chose a method that was designed for chromosomal DNA isolation of 20\u2013150 kbp sized fragments (see Materials\u00a0and\u00a0methods), our results suggest that the maximum DNA acquisition length of single fragments is probably reached between 100\u2013110 kbp (Figure 4\u2014figure supplement 3). Moreover, the comparable acquisition patterns between conditions \u2460 and \u2461 (Figure 4) imply that the prey-released DNA in condition \u2460 is neither heavily fragmented nor is its accessibility or absorption by the competent acceptor bacterium significantly hindered due to, for example, DNA-binding proteins.\n\n### Prey-exerted T6SS counter attacks do not change the DNA transfer pattern\n\nSince the aph cassette was located within the T6SS sheath protein gene vipA in the above experiments, we wondered if this T6SS inactivation biased the DNA transfer efficiency. We therefore repeated the above-described experiments using prey strains that carried the aph cassette on the opposite site of chr 2 (within gene VCA0747; condition \u2462). As shown in (Figure 4\u2014figure supplement 1), similar transformation frequencies were observed independent of the position of the aph cassette. Moreover, WGS of 2 \u00d7 20 transformants showed similar average and maximum DNA acquisition values (55.7 kbp and 227.4 kbp, respectively; Figure 4) as well as similar distribution patterns around the resistance marker (Figure 4\u2014figure supplement 4). However, while not statistically supported, it appeared as if these conditions were prone to the acquisition of multiple non-connected regions, as transformants with only single/connected exchanges dropped from\u00a0~50% (Figure 4\u2014figure supplement 2 for condition \u2460) to around 20% (Figure 4\u2014figure supplement 4 for condition \u2462). Based on this observation, we hypothesized that the now-restored T6SS-mediated killing capacity of the prey led to the additional release of genomic DNA from the predator, which interfered with the uptake of prey-released DNA. To test this idea, we repeated condition \u2462 (e.g., aph within VCA0747) though again inactivated the T6SS of the prey using a non-selected marker (cat; condition \u2463), expecting the results to be similar to those of condition \u2460 if this hypothesis was correct. No statistically significant differences were observed between both conditions (\u2462 and \u2463) for all tested characteristics including transformation frequency (Figure 4\u2014figure supplement 1B), number of exchanges, and separate and collective length (Figure 4 and Figure 4\u2014figure supplements 4 and 5), suggesting that predator-released DNA does not interfere with the predator\u2019s overall transformability by the prey-released DNA. However, we acknowledge that the technical limitations of the experimental setup did not allow the identification of complete revertants that first acquired and then again lost the aph cassette.\n\n### T6SS-independent prey lysis rarely triggers DNA transfer and results in shorter DNA exchanges\n\nWe next tested whether T6SS-mediated DNA release impacted the length of the exchanged region, which would support the above speculation that the intimate co-regulation of type VI secretion, nuclease repression, and DNA uptake ensures that freshly released DNA is rapidly absorbed by the predator and is therefore less prone to fragmentation. Such co-regulation would not hold true for T6SS-independent DNA release as a result of random cell lysis, so we tested the transfer efficiency of the aph cassette under conditions in which both donor and acceptor strains were T6SS-defective (condition \u2464; Figure 4 and Figure 4\u2014figure supplement 6). Under such conditions, the transformation frequency dropped by 99.7% (Figure 4\u2014figure supplement 1B), and WGS of 2 \u00d7 20 of these rare transformants showed significant differences. Indeed, the average and maximal length of acquired DNA (Figure 4B) and the number of exchanged regions (Figure 4C) were significantly different when T6SS+ versus T6SS- acceptor strains were compared, with the latter exchanges never exceeding four events compared to up to 13 events for T6SS-mediated DNA release (Figure 4\u2014figure supplements 5 and 6). Based on these data, we conclude that T6SS-mediated DNA acquisition not only increases the transfer efficiency by\u00a0~100 fold but also fosters the exchange of multiple DNA stretches of extended lengths.\n\n### T6SS-mediated DNA exchanges are not limited to the small chromosome\n\nThe experiments described above were designed to primarily score the transfer efficiency of DNA fragments localized on chr 2. The rationale behind this approach was a recent population genomic study on Vibrio cyclitrophicus that suggested the mobilization of the entire chromosome 2 and caused the authors to speculate: \u2018how often and by what mechanism are entire chromosomes mobilized?\u2019 (Shapiro et al., 2012). In the current study, we were unable to experimentally show such large transfer events. We considered four potential reasons for the absence of such large transfers: 1) mild fragmentation of prey-released DNA that excluded fragments above\u00a0~200 kb; 2) limited DNA uptake and periplasmic storage capacity of the acceptor strain (Seitz and Blokesch, 2014; Seitz et al., 2014); 3) limited protection of the incoming single-stranded DNA by dedicated proteins (such as Ssb and DprA; Mortier-Barri\u00e8re et al., 2007; Suckow et al., 2011); or 4) lethality of larger exchanges due to the presence of multiple toxin/antitoxin modules within the integron island on chr 2 of V. cholerae (Iqbal et al., 2015). While technical limitations did not allow us to address the first three points, we followed up on the last idea by repeating the above-described experiments using prey strains in which the aph cassette was integrated on the large chromosome 1 (inside lacZ). We used these to test three (co-)culture conditions in which the prey strain was either T6SS-positive (condition \u2465), T6SS-negative (condition \u2466), or replaced by purified gDNA (condition \u2467; Figure 4A). As shown in Figure 4\u2014figure supplement 1, the aph cassette was again transferred with high efficiency from the killed prey strain to the acceptor strain. However, comparing conditions \u2465 (co-culture conditions) and \u2467 (prey-derived purified gDNA as transforming material) revealed a small but significant transformation increase for the latter condition (~4 fold; Figure 4\u2014figure supplement 1A). Based on these data, we speculate that the larger size of chr 1 (~3 Mb) compared to chr 2 (~1 Mb) slightly lowers the probability of acquiring the aph cassette when released from the killed prey that carried the resistance marker on chr 1. Indeed, the cassette\u2019s relative occupancy per chromosome is reduced by one third for the larger chromosome 1 compared to the smaller chromosome 2, which would reduce the chance of absorbing the aph cassette if it was embedded in large chromosomal fragment(s). This effect would become negligible, however, when purified gDNA is provided, most likely due to the size constraints of the purification procedure (max. 150 kb), which ultimately results in more or less equally sized DNA fragments. Consistent with this idea was the finding that purified gDNA from all those prey strains described in this study resulted in the same level of transformation no matter where the selective marker was located (Figure 4\u2014figure supplement 1D).\n\nNext, we randomly picked 20 transformants from two biologically independent experiments for each of these three experimental conditions (\u2465 to \u2467) and sequenced their genomes (Figure 4\u2014figure supplements 7 to 9). The analysis of these transformants showed that the average and maximum DNA acquisition values were highly comparable to those described above for DNA exchanges on chromosome 2 (Figure 4B) and that multiple exchanged regions were likewise observed (Figure 4C). We therefore conclude that prey-derived transforming DNA can equally modify both chromosomes. Moreover, our data suggest that consecutive stretches of exchanged DNA above\u00a0~200 kbp either do not occur or occur at levels below the detection limit of this study, and that this size limitation is not caused by the toxin/antitoxin\u2013module-containing integron island on chr 2.\n\n### Conclusion\n\nBased on the data presented above, we conclude that T6SS-mediated predation followed by DNA uptake leads to the exchange of large DNA regions that can bring about bacterial evolution. This finding is consistent with the heterogeneous environmental V. cholerae populations that were observed in cholera-endemic areas (Faruque et al., 2004). Still, an open question that remains is why pandemic cholera isolates are seemingly clonal in nature (Mutreja et al., 2011; Domman et al., 2017; Weill et al., 2017; Weill et al., 2019), and we propose two explanations for this. First, sampling strategies might be biased for the selection of the most pathogenic strains and, concomitantly, exclude less virulent variants that have undergone HGT events. Secondly, transformation-inhibiting nucleases similar to Dns (Blokesch and Schoolnik, 2008) have recently spread throughout pandemic V. cholerae isolates as part of mobile genetic elements (experimentally shown for VchInd5 [Dalia et al., 2015] and predicted for SXT [Blokesch, 2017]), which makes these pandemic strains less likely to undergo HGT events. One could also argue that pandemic V. cholerae are rarely exposed to competence-inducing chitinous surfaces due to the prevalence of inter-household transmission throughout cholera outbreaks (Clemens et al., 2017). Yet in vivo-induced antigen technology (IVIAT) assays showed strong human immune responses against proteins of the DNA-uptake pilus that fosters natural transformation, kin recognition, and chitin colonization (Meibom et al., 2005; Seitz and Blokesch, 2013; Adams et al., 2019), which contradicts this idea. Indeed, the major pilin of the DNA-uptake pilus, PilA, was most frequently identified by IVIAT together with the outer-membrane secretin PilQ (Hang et al., 2003), which suggests that the bacteria encounter competence-inducing conditions either before entering the human host or after its colonization. The latter option is not, however, supported by in vivo expression data from human volunteers (Lombardo et al., 2007). Notably, our work shows the incredible DNA exchange potential that chitin-induced V. cholerae strains exert under co-culture conditions and future studies are therefore required to better understand strain diversity in clinical and environmental settings in the absence of sampling biases.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Vibrio cholerae)</td>\n      <td>V. cholerae O1 El Tor, strain A1552 (Primary strain)</td>\n      <td>PMID: 9473029 PMID: 30574591 (genome sequence)</td>\n      <td></td>\n      <td>See Supplementary file 1 for strains and plasmids used in this study</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Vibrio cholerae)</td>\n      <td>V. cholerae, strain Sa5Y (Secondary strain)</td>\n      <td>PMID: 17449702 PMID: 30574591 (genome sequence)</td>\n      <td></td>\n      <td>See Supplementary file 1 for strains and plasmids used in this study</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TCBS agar, selective medium</td>\n      <td>Sigma-Aldrich</td>\n      <td>86348\u2013500G</td>\n      <td>Additional, standard growth media are described under growth conditions</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Pwo SuperYield DNA Polymerase</td>\n      <td>Roche / Sigma-Aldrich</td>\n      <td>4340850001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>GoTaq G2 DNA Polymerase</td>\n      <td>Promega</td>\n      <td>M7848</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Genomic-tip 100/G (DNA purification)</td>\n      <td>Qiagen</td>\n      <td>10243</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Genomic DNA Buffer Set</td>\n      <td>Qiagen</td>\n      <td>19060</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial strains, plasmids, and growth conditions\n\nThe bacterial strains and plasmids used in this study are described in Supplementary file 1. Bacteria were routinely grown aerobically in lysogeny broth (LB) or on LB agar plates (1.5% agar) at 30\u00b0C or 37\u00b0C. Half-concentrated defined artificial seawater medium (0.5x DASW) containing HEPES and vitamins (Meibom et al., 2005) was used for growth on chitinous surfaces for chitin-induced T6SS killing and natural transformation experiments (as previously described; Marvig and Blokesch, 2010; Borgeaud et al., 2015). Agar plates containing M9 minimal medium (Sigma-Aldrich) supplemented with vitamins (MEM vitamin solution; Gibco), 0.001% casamino acids (Merck), and 0.2% mannose were used to select V. cholerae strain A1552 and to exclude strain Sa5Y (to check the direction of transformation for comEC-positive prey). Thiosulfate-citrate-bile salts-sucrose (TCBS; Sigma-Aldrich) agar plates were used to counterselect E. coli strains after mating with V. cholerae. Antibiotics were used at the following concentrations whenever required: chloramphenicol (Cm), 2.5 \u00b5g/ml; kanamycin (Kan), 75 \u00b5g/ml; streptomycin (Strep), 100 \u00b5g/ml; ampicillin (Amp), 100 \u00b5g/ml; and rifampicin (Rif), 100 \u00b5g/ml.\n\n### DNA manipulation techniques\n\nRecombinant DNA techniques were performed following standard molecular\u2013biology-based protocols (Sambrook et al., 1982). DNA-modifying enzymes such as Pwo DNA polymerase (Roche), Taq DNA polymerase (GoTaq; Promega), and restriction modification enzymes (New England Biolabs) were used according to the manufacturer\u2019s recommendations. Genetically modified strains were verified by colony PCR and, if required, also by Sanger sequencing (Microsynth, Switzerland) for their correctness.\n\n### Genetic engineering of bacterial strains\n\nTo delete gene(s) from the parental WT strains (A1552 or Sa5Y), a gene-disruption method based on either a counter-selectable suicide plasmid pGP704-Sac28 (Meibom et al., 2004) or on natural transformation and FLP recombination was used (TransFLP method; De Souza Silva and Blokesch, 2010; Blokesch, 2012b; Borgeaud and Blokesch, 2013). Natural transformation was also used to insert the antibiotic resistance cassettes aph (KanR), cat (CmR), and/or bla (AmpR) into target gene(s) of V. cholerae.\n\n### Preparation of genomic DNA\n\nGenomic DNA (gDNA) was purified from a 2 ml culture of the respective strain. DNA extraction was performed using 100/G Genomic-tips together with a Genomic DNA buffer set as described in the manufacturer\u2019s instructions (Qiagen). After precipitation, the DNA samples were transferred into Tris buffer (10 mM Tris-HCl, pH 8.0). This was preferred over rapid gDNA isolation kits such as the DNeasy Blood and Tissue kit (Qiagen), as the latter isolation kit is strongly biased towards shorter DNA fragments (predominantly 30 kb in length compared to up to 150 kb for the 100/G columns, as stated by the manufacturer).\n\n### Natural transformation assay\n\nNatural transformation assays were performed by adding purified gDNA to the chitin-grown bacteria or by co-culturing the two non-clonal V. cholerae strains. To set up the experiments, the bacterial strains were grown as an overnight culture in LB medium at 30\u00b0C. After back dilution, the cells were incubated in the presence of chitin flakes (~80 mg; Sigma-Aldrich) submerged in a final volume of 1 ml of half-concentrated (0.5x) defined artificial seawater medium (Meibom et al., 2005). When purified DNA served as the transforming material, 2 \u00b5g of the indicated gDNA (final concentration 2 \u00b5g/ml) was added after 24 hr of growth on chitin (except for the experiments in which the gDNA was added at 0 hr, as indicated in the text), and the cells were incubated for another 6 hr. At that point, the bacteria were detached from the chitin surfaces by vigorous vortexing and then were serially diluted. Colony-forming units (CFUs) were enumerated on selective (antibiotic-containing) or non-selective (plain LB) agar plates, and the transformation frequency was calculated by dividing the number of transformants by the total number of CFUs.\n\nFor mixed community assays, the two strains were inoculated simultaneously at a ratio of 1:1 in a final volume of 1 ml. We estimated that if all of the inoculated prey/donor cells would lyse,~0.2 \u00b5g/ml of DNA would be released into the medium. These mixtures were incubated for 30 hr before the bacteria were harvested, diluted, and plated, as described above (maximum prey/donor DNA that could be released at this point corresponds to\u00a0~0.4 \u00b5g/ml).\n\nAll transformation frequency values are averages of three biologically independent experiments except for WGS conditions\u00a0\u2461 and \u2463\u2013\u2467, wherein the averages of two independent experiments are depicted.\n\n### Genome comparisons\n\nEach chromosome was segmented in contiguous fragments of 10 kb, which were locally aligned against the corresponding chromosome of a reference genome. Each fragment was aligned in the forward and reverse orientation, and the best alignment was retained. The number of differences per 10 kb was evaluated by counting the number of events necessary to mutate the reference to obtain the 10 kb fragment (e.g. an insertion or deletion of an arbitrary number of nucleotides would count as one event). To visualize the overall architecture and differences, circular plots in which each 10 kb fragment was linked to its reference genome counterpart and colored according to the number of differences were made in R using the circlize package (Gu et al., 2014). Black and blue linkers indicated whether the 10 kb fragment had the same or reverse orientation relative to the reference.\n\nAs a recent study identified a large inversion close to the origin of replication of chromosome 1 in the original genome sequence of N16961 (Val et al., 2016), which most likely resulted from an imperfect assembly or a lab domestication event, we sequenced and de novo assembled the genome of our laboratory stock of strain N16961 (Matthey et al., 2018). This stock is resistant to streptomycin, which is consistent with most literature reports on strain N16961, while the original reference strain N16961 remained sensitive to streptomycin according to its genome sequence. This difference suggests that mutagenesis event(s), including the characteristic streptomycin-resistance mutation within rpsL (encoding for RpsL[K43R]) must have occurred while the strain was domesticated. Comparative genomics between our laboratory stock of N16961 and the reference genome (Heidelberg et al., 2000) showed a high level of sequence identity, though also confirmed the previously reported inversion around the origin of chromosome 1 (Val et al., 2016) (Figure 2\u2014figure supplement 1). Additionally, significant differences were observed between the two N16961 genome sequences with respect to the number and arrangement of the ribosomal RNA clusters, which could have resulted from assembly artifacts. Indeed, while Heidelberg and colleagues described the presence of eight rRNA operons (16S-23S-5S) (Heidelberg et al., 2000), we found ten rRNA operons (plus an additional 5S copy close to the tRNA-Thr). The only other major differences observed between the strains were in genes VC1620 and vasX (VCA0020) on chromosome 1 and 2, respectively, as also mentioned in the main text (Figure 2\u2014figure supplement 1; marked with * and #). VC1620, or frhA, on chr 1 encodes a large protein with several cadherin tandem repeat domains, the number of which vary among different V. cholerae strains (Syed et al., 2009). Due to the repetitive nature of this DNA region, an assembly mistake in either of the two genome assemblies can therefore not be excluded. The sequence of the newly sequenced stock of N16961 was, however, identical to the region in pandemic strain A1552 (Figure 2\u2014figure supplement 2). For the discrepancy within vasX on chr 2, we observed a significant number of single nucleotide polymorphisms (SNPs; n\u00a0=\u00a011) or nucleotide insertions (n\u00a0=\u00a014) within this 3,272-bp-long gene. One of these nucleotide insertions caused a frameshift that therefore resulted in a premature stop codon. As BLAST analyses suggested that this change was strain specific and not previously observed, we Sanger sequenced the corresponding DNA region using the same genomic DNA preparation that was used for the long-read PacBio sequencing, which allowed us to elucidate whether the mutations reflected a lab domestication event or whether the PacBio sequence was of low quality in this specific area of the genome. The latter turned out to be the case, as the mutations described above were absent from the Sanger sequencing reads. We therefore conclude that the two genomes are highly identical and that the major differences involve imperfect rRNA cluster assembly in the reference genome, which resulted in the underestimation of the number of rRNA clusters and the inverted assembly around the origin of replication of chr 1.\n\nV. cholerae O1 El Tor (Inaba) strain A1552 (formerly known as 92A1552-Rifr) is a rifampicin-resistant derivative of strain 92A1552 (Yildiz and Schoolnik, 1998), which was isolated in California from a traveler returning from South America. Epidemiological investigations concluded that the transmission of this strain occurred via a contaminated seafood salad that was served on an airplane between Lima, Peru and Los Angeles, California (Eberhart-Phillips et al., 1996; Blokesch, 2012a), which links this strain to the Peruvian cholera outbreak in the 1990s.\n\nComparing the de novo assembled genome sequence of A1552 (Matthey et al., 2018) to the genome of our laboratory stock of N16961 showed a large degree of genomic conservation between both isolates despite the fact that strain A1552 contained only nine rRNA operons (16S-23S-5S) instead of the ten operons in strain N16961. The genome architecture, however, was not maintained, as strain A1552 had undergone a large inversion of approximately 2.7 Mbp between two rRNA clusters on chr 1 (Figure 2\u2014figure supplement 2; genome sequence inverted to simplify visualization), a finding that is consistent with a previous report (Kemter et al., 2018). Apart from this inversion, the major differences between both strains were the presence of the WASA-1 island (a 44\u00a0genes-carrying element of unknown function; Mutreja et al., 2011) and a modified Vibrio seventh pandemic island II (VSP-II) in strain A1552 (Figure 2\u2014figure supplement 2). These features allowed us to classify strain A1552 as belonging to the LAT-1 sublineage of the West-African South American (WASA) lineage of the seventh pandemic V. cholerae strains (Mutreja et al., 2011; Domman et al., 2017).\n\n### Whole-genome sequencing of transformants\n\nFor WGS, transformation assays were performed as described above using eight different experimental conditions (Figure 4 and listed in Supplementary file 2). To focus on the acquisition potential of strain A1552, conditions \u2464\u2013\u2467 used transformation-deficient prey strains (e.g., Sa5Y derivatives in which a bla cassette interrupted the DNA translocation channel protein encoding gene comEC; Seitz and Blokesch, 2013). The 360 recovered transformants (3 \u00d7 20 for experimental conditions \u2460 and \u2462, which showed high levels of reproducibly, followed by 2 \u00d7 20 for all other conditions; see Supplementary file 2) were grown overnight in LB medium. Genomic DNA extraction was performed as described above. Further processing of the samples was conducted by Microsynth (Balgach, Switzerland). The quality of the DNA samples was verified before DNA libraries were prepared using a Nextera XT Library Prep kit (Illumina). Paired-end sequencing was performed using a NextSeq 500 sequencer (Illumina) with read lengths of 75 nt resulting in mean fragment lengths of around 200 nucleotides.\n\n### Scoring of horizontal gene transfer events through bioinformatics analyses\n\nHGT events were scored for the 360 transformants that were derived from the eight different experimental conditions (Figure 4 and listed in Supplementary file 2). For each condition, a predator/acceptor strain (A1552 or its derivative) and a prey/donor strain (derivatives of Sa5Y; used in mixed cultures or as purified gDNA) were defined, and their genomic sequences were generated in silico. These in silico templates were based on the recently announced genome sequences of the parental strains (Matthey et al., 2018) to which the integrated genomic features were added (e.g., integration of aph, cat, and/or bla cassettes proceeded by constitutive promoters). Each DNA template contained two parts reflecting the large\u00a0~3.0 Mbp chr 1 and the small\u00a0~1.1 Mbp chr 2. Preliminary analyses identified the presence of systematic differences in each sample, which can be attributed to errors in the reference templates. Thus, before starting the final analysis process, the following patches were applied to the chr 2 of the predator/acceptor reference genomes:\n\nThe correctness of these in silico changes was confirmed by Sanger sequencing.\n\nThe FASTA sequences of the corrected reference templates used for this work are available in the Reference directory on GitHub: https://github.com/sib-swiss/VibrioCholerae_HGT\u00a0(Iseli, 2019; copy archived at https://github.com/elifesciences-publications/VibrioCholerae_HGT).\n\nEach read pair was aligned against both genomes of the donor and acceptor strains, and the position with the least number of mismatches was kept. If multiple possibilities with the same number of mismatches were possible, the possibilities were kept for later processing. The alignments were performed with an in-house code derived from the fetchGWI tool [https://sourceforge.net/projects/tagger/files/fetchGWI-tagger/], but other tools such as BWA or bowtie2 would equally qualify for the same purpose. The results of this first analysis phase were obtained as tab-delimited lists of read pairs with their alignment positions, number of mismatches for each of the reads of the pair, and number of matching positions with the same number of mismatches.\n\nThe second step of the analysis consisted of a C program that parsed the tab-delimited file of the previous step and recorded the accumulated coverage and the observed nucleotide for each position of each of the donors\u2019 and acceptors\u2019 chromosomes. For each analysis, two separate recordings were kept: the first recording took only those read pairs into account that showed zero mismatches together with a unique unambiguous matching position, while the second recording took all other matches into account (e.g., a coverage of 1 was counted in each matched position regardless of whether the match was unique or not). At the end of this process, regions with continuous coverage were created by looking for positions in the first recording (unique and exact matches) for which the observed coverage was at least 3. The start and end positions of such continuous stretches were determined by extending as far as possible from this seed position, taking into account the total coverage from both recordings. If the length of the so-defined fragment was at least 500 nucleotides it was kept for output. The output consisted of a FASTA file containing all the defined fragments and the FASTA header of each fragment. This header recorded which reference was covered (e.g., which strain [acceptor or donor] and which chromosome [large chr 1 or small chr 2]). For each position, the nucleotide that composed more than half of the coverage of that position was generated in the output. If no single nucleotide represented more than half of the coverage, an N was used.\n\nThe expectation was that the fragments obtained in the previous step constituted a full coverage of the transformant, which had inherited its genomic material mostly from the parental acceptor strain with some DNA regions originating from the donor strain by HGT; this referred particularly to those regions containing the antibiotic resistance cassette, which was used as selective marker. A global DNA alignment for each output fragment was therefore performed by mapping the fragments onto the corresponding chromosomes of the donor and acceptor strains. Since we determined that the donor and acceptor genomes differed on average by 1 nucleotide every 55 nucleotides, it was expected that several mismatches would be found when a fragment originating from the donor strain was aligned to the genome of the acceptor strain. The first and last mismatches of those fragments were defined as outer bounds of the transferred fragments, as they arguably represented the minimal length of the transferred DNA region. The summary data of these alignments and boundary information were determined using Perl scripts as were those regions of the acceptor genomes that were not covered by reads derived from the analyzed transformant (e.g., transformed acceptor strain). The output of those scripts (available on GitHub: https://github.com/sib-swiss/VibrioCholerae_HGT) was then used to generate a final table of transferred segments as well as summary plots by applying the R package circlize (Gu et al., 2014). Finally, the data were transferred to Excel to calculate the total length of horizontally acquired DNA per transformant as well as the number of HGT events per transformant. The GraphPad Prism software was used for graphic visualization. To validate the bioinformatic approach, the mapped reads obtained for\u00a0>50 samples were also visually inspected for transferred regions using the software Geneious.\n\n### Statistics\n\nStatistically significant differences were determined by the two-tailed Student\u2019s t-test where indicated. For natural transformation assays, data were log-transformed (Keene, 1995) before statistical testing. When the number of transformants was below the detection limit, the value was set to the detection limit to allow for statistical analysis.\n\n### Data availability\n\nWGS reads of the 360 transformants have been deposited in NCBI\u2019s Sequence Read Archive (SRA) under SRA accession numbers SRR6934824 to SRR6935183 according to Supplementary file 3. The Bioproject accession number is PRJNA447902.\n",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "38e96a9f-8b85-4baf-8366-bc784e7e8ee2",
+      "submission_id": "24d17710-ad96-41b1-afa4-8bc17bb8385d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- T\u00e2m Mignot, CNRS-Aix Marseille University France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48212.029](https://doi.org/10.7554/eLife.48212.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Neighbor predation linked to natural competence fosters the transfer of large genomic regions in Vibrio cholerae\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis manuscript is extending the observations published by your group in 2015, where you showed that the V. cholerae T6SS, which serves as a predatory killing device, is part of the competence regulon in this bacterium. You had also shown that deliberate killing of nonimmune cells via competence-mediated induction of T6SS released DNA and made it accessible for horizontal gene transfer, but the precise extent of HGT remained unknown, as did the size of the DNA that could be taken up and recombined in conditions such as the ones used in the current study, which are closer to what happens in the real world than the conditions used in other previous studies on different competent models.\n\nThese questions are now expertly clarified with data gathered from the different experiments presented here. The studies answer several pending questions that are of interest for a large community of microbiologists interested in the bacterial evolutionary mechanism of HGT and its broader impact. In particular, you established that the size of DNA that could be taken up under the investigated conditions is remarkable, even more than 150kb, which is much larger than what was considered so far. You also show that in many cases there are multiple DNA fragments from different genome locations that are integrated by homologous recombination in a single clone \u2013 you exactly mapped all of these events by establishing the genome sequence of multiple clones in a set of various conditions and controls.\n\nThere are nevertheless a number of points that need to clarified before the paper can be accepted:\n\n1) It is interesting that the authors observe that two markers cannot be transferred when they are on separate chromosomes during T6SS-mediated HGT but can be transferred when purified gDNA is used. In particular, in the subsection \u201cT6SS-mediated DNA exchanges are not limited to the small chromosome\u201d, in the discussion on the effect of the size of chr1 and chr2 on the frequency of the aph transfer is not clear. Each cell only carries one copy of each chromosome, so there should be only one aph equivalent par genome, whatever is the hosting chromosome. However, the different figures show many co-transformants carrying chr1 fragments when aph is on chr2, and vice versa. Possible explanations should be discussed in more details in the manuscript.\n\n2) The authors concluded that T6SS-independent prey lysis results in exchange of shorter DNA fragments. To support this idea, they calculated the average and maximal length of acquired DNA and the number of exchanged regions under conditions where both donor and acceptor strains were T6SS-. However, such condition resulted in much less transformants. Another control condition would be to mix a T6SS-negative acceptor with a donor strain that can be lysed by for example inducing a phage lytic gene carried on a plasmid to lyse the donor cells in T6SS-independent manner.\n\n3) The authors quantitatively compared the transfer of DNA under co-culture conditions or monoculture with purified gDNA. An estimation of DNA concentration released upon T6SS-mediated killing in the co-culture should be provided. Similarly, instead of total amount of gDNA added, authors should estimate what was the concentration of gDNA in the monoculture experiments. Are these comparable?\n\n4) Statistical analysis of differences between data provided in Figure 1B and 1C should be provided to support certain claims in the text.\n",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9b373a18-5a0c-449d-abfe-9d0ee6c969f4",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C1",
+      "claim": "Natural competence for transformation is a primary mode of horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural competence for transformation is a primary mode of horizontal gene transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about horizontal gene transfer mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "e71c3b4d-0de9-4632-9d49-bb0c56813134",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C2",
+      "claim": "Competent bacteria are able to absorb free DNA from their surroundings and exchange this DNA against pieces of their own genome when sufficiently homologous.",
+      "claim_type": "EXPLICIT",
+      "source": "Competent bacteria are able to absorb free DNA from their surroundings and exchange this DNA against pieces of their own genome when sufficiently homologous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of natural competence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "868fc4ee-f617-4ab5-9e30-8a61e9d99c1e",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C3",
+      "claim": "Naturally competent Vibrio cholerae use their type VI secretion system (T6SS) to actively acquire DNA from non-kin neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, we previously showed that naturally competent Vibrio cholerae use their type VI secretion system (T6SS) to actively acquire DNA from non-kin neighbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors reference their previous work showing this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "f018110d-076b-4e2e-9bfd-549bc5afa1e0",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C4",
+      "claim": "Competent V. cholerae acquire DNA fragments with a length exceeding 150 kbp in a T6SS-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that competent V. cholerae acquire DNA fragments with a length exceeding 150 kbp in a T6SS-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by whole-genome sequencing data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "843551e7-de7e-4d3f-b724-f8dda06aab3a",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C5",
+      "claim": "The environmental lifestyle of V. cholerae fosters the exchange of genetic material with sufficient coding capacity to significantly accelerate bacterial evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data support the notion that the environmental lifestyle of V. cholerae fosters the exchange of genetic material with sufficient coding capacity to significantly accelerate bacterial evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "7f9610fa-e494-4e34-9dd0-28e3cc674826",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C6",
+      "claim": "Vibrio cholerae is responsible for seven major pandemics since 1817, one of which is still ongoing.",
+      "claim_type": "EXPLICIT",
+      "source": "The causative agent of the diarrheal disease cholera, Vibrio cholerae, is responsible for seven major pandemics since 1817, one of which is still ongoing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established historical and epidemiological knowledge about cholera.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "88c4e74d-dd97-4211-afaa-4444d03435b7",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C7",
+      "claim": "Cholera affects between 1 and 4 million people and causes 21,000\u2013143,000 deaths per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its ability to rapidly spread in contaminated water, cholera poses a serious world health risk, affecting between 1 and 4 million people and causing 21,000\u2013143,000 deaths per year, especially in poor or underdeveloped countries (WHO, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO 2019 data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "adfa8d8f-b616-43a6-9d0d-98de73b33d52",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C8",
+      "claim": "V. cholerae acquire new phenotypes through horizontal gene transfer (HGT).",
+      "claim_type": "EXPLICIT",
+      "source": "One way in which V. cholerae acquire new phenotypes is through horizontal gene transfer (HGT), which is the direct movement of DNA from one organism to another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial evolution mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "57944334-bcf7-4304-ab36-2107cc21b5cc",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C9",
+      "claim": "Natural competence for transformation allows bacteria to absorb free DNA from their surroundings using their competence-induced DNA-uptake complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A major mode of HGT is natural competence for transformation in which bacteria are able to absorb free DNA from their surroundings using their competence-induced DNA-uptake complex (Chen and Dubnau, 2004; Johnston et al., 2014; Matthey and Blokesch, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "f5c70207-2d38-4fb4-a450-2ec6daf7c3b1",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C10",
+      "claim": "When sufficient homology is present between the incoming DNA and the bacterial genome, the absorbed genetic material can be integrated into the genome via double homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "When sufficient homology is present between the incoming DNA and the bacterial genome, the absorbed genetic material can be integrated into the genome via double homologous recombination at the expense of the initial DNA region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of homologous recombination in transformation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "792cd23c-a2d6-49cf-8d23-06439fbe5b0a",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C11",
+      "claim": "V. cholerae gained an ~40 kbp O139-antigen cluster at the expense of the original ~30 kbp O1-antigen cluster through natural transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example of the significant power of this natural competence for gene uptake, we previously witnessed the gain of an ~40 kbp O139-antigen cluster at the expense of the original ~30 kbp O1-antigen cluster through natural transformation (followed by strong selective pressure exerted by antibiotics or phages; Blokesch and Schoolnik, 2007), which significantly changed the phenotypes of these bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previous finding by the authors, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "7b9d4535-56e9-4176-b44f-6e179271c5c3",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C12",
+      "claim": "Griffith's experiment in 1928 unambiguously proved that transformation contributes to evolution and pathogen emergence.",
+      "claim_type": "EXPLICIT",
+      "source": "And while Griffith's experiment in 1928 unambiguously proved that transformation contributes to evolution and pathogen emergence, the general prevalence of non-degraded DNA with sufficient coding capacity has been questioned (Nielsen et al., 2007; Overballe-Petersen et al., 2013; Croucher et al., 2016), drawing inquiries as to whether this mode of HGT could be responsible for the major changes causing pandemic strains to emerge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references the historical Griffith experiment and subsequent questioning in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "f691fb28-c82b-40d9-a724-1c0b1055e378",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C13",
+      "claim": "The induction of competence in V. cholerae is tightly regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of competence in V. cholerae is tightly regulated (recently reviewed by Metzger and Blokesch, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "bfccdb89-ad8d-43be-9940-83cef3cd8452",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C14",
+      "claim": "V. cholerae becomes naturally competent for genetic transformation upon growth on chitin-rich exoskeletons of zooplankton.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, upon growth on the (molted) chitin-rich exoskeletons of zooplankton (Pruzzo et al., 2008), the most abundant polysaccharide in the aquatic environment and therefore an important carbon source for chitinolytic bacteria (Gooday, 1990), the expression pattern of V. cholerae is altered (Meibom et al., 2004) to render it naturally competent for genetic transformation (Meibom et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "1f197fc8-5774-4eb3-8c49-7ea41148cd6f",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C15",
+      "claim": "Chitin is the most abundant polysaccharide in the aquatic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, upon growth on the (molted) chitin-rich exoskeletons of zooplankton (Pruzzo et al., 2008), the most abundant polysaccharide in the aquatic environment and therefore an important carbon source for chitinolytic bacteria (Gooday, 1990), the expression pattern of V. cholerae is altered (Meibom et al., 2004) to render it naturally competent for genetic transformation (Meibom et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gooday, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "530ef02f-18a3-4750-833d-fc2d36543d0f",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C16",
+      "claim": "When chitin degradation products are sensed by V. cholerae, it produces the regulatory protein TfoX.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, when chitin degradation products are sensed by V. cholerae, it produces the regulatory protein TfoX (Li and Roseman, 2004; Meibom et al., 2004; Meibom et al., 2005; Yamamoto et al., 2011; Dalia et al., 2014; Yamamoto et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "8d47ccb5-461b-496e-8dcc-e711f28488d9",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C17",
+      "claim": "TfoX positively regulates the expression of the major DNA-uptake machinery in V. cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "This competence activator positively regulates the expression of the major DNA-uptake machinery in the cell (Matthey and Blokesch, 2016), providing a direct connection between growth on chitin and competence activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "3520d0a9-e632-47c5-ac16-f2cf67c9906b",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C18",
+      "claim": "HapR acts as repressor of dns, which encodes an extracellular nuclease that inhibits transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from TfoX, natural competence and transformation also depend on the master regulator of quorum sensing, HapR, in two ways: i) HapR acts as repressor of dns, which encodes an extracellular nuclease that inhibits transformation (Blokesch and Schoolnik, 2008); and ii) HapR together with TfoX co-activates the transcription factor QstR, which further represses dns as well as activates several DNA-uptake genes (Lo Scrudato and Blokesch, 2013; Jask\u00f3lska et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "18284a0e-1108-4bff-9fdb-111c78e5df90",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C19",
+      "claim": "HapR together with TfoX co-activates the transcription factor QstR.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from TfoX, natural competence and transformation also depend on the master regulator of quorum sensing, HapR, in two ways: i) HapR acts as repressor of dns, which encodes an extracellular nuclease that inhibits transformation (Blokesch and Schoolnik, 2008); and ii) HapR together with TfoX co-activates the transcription factor QstR, which further represses dns as well as activates several DNA-uptake genes (Lo Scrudato and Blokesch, 2013; Jask\u00f3lska et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "acc60e01-1582-4d74-802f-830c88afa897",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C20",
+      "claim": "QstR represses dns and activates several DNA-uptake genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from TfoX, natural competence and transformation also depend on the master regulator of quorum sensing, HapR, in two ways: i) HapR acts as repressor of dns, which encodes an extracellular nuclease that inhibits transformation (Blokesch and Schoolnik, 2008); and ii) HapR together with TfoX co-activates the transcription factor QstR, which further represses dns as well as activates several DNA-uptake genes (Lo Scrudato and Blokesch, 2013; Jask\u00f3lska et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "13398fef-dbf5-4c8c-9a07-17f6355f459f",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C21",
+      "claim": "Environmental DNA is often heavily degraded and therefore short in size.",
+      "claim_type": "EXPLICIT",
+      "source": "While the chitin-induced DNA-uptake complex of V. cholerae is able to absorb DNA from the surrounding (Seitz and Blokesch, 2013; Seitz and Blokesch, 2014; Seitz et al., 2014; Ellison et al., 2018; Adams et al., 2019), environmental DNA is often heavily degraded and therefore short in size (Nielsen et al., 2007; Overballe-Petersen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "17d7ab64-ff89-4df2-9e52-f9f63e495ce1",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C22",
+      "claim": "Free DNA is thought to originate from dead and therefore less fit bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, free DNA is thought to originate from dead and therefore less fit bacteria, which renders the coding part of such genetic material non-favorable for naturally competent bacteria (Redfield, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Redfield, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "a2712e77-d32d-413f-bb57-7cd040b5e5f7",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C23",
+      "claim": "V. cholerae actively acquires 'fresh' DNA from healthy, living bacteria through kin-discriminatory neighbor predation.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these arguments, we recently showed that V. cholerae does not solely rely on randomly released environmental DNA. Instead, it actively acquires 'fresh' DNA from healthy, living bacteria through kin-discriminatory neighbor predation (Borgeaud et al., 2015), which, conceptually, also occurs in other naturally competent bacteria (Veening and Blokesch, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research by the authors and others.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "85ae83b6-3a65-42e3-87e4-6f4c0766ba97",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C24",
+      "claim": "Neighbor predation in V. cholerae is accomplished by a contractile injection system known as the type VI secretion system (T6SS) that transports toxic effector proteins into prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Neighbor predation in V. cholerae is accomplished by a contractile injection system known as the type VI secretion system (T6SS) that transports toxic effector proteins into prey (Ho et al., 2014; Cianfanelli et al., 2016; Gal\u00e1n and Waksman, 2018; Taylor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "48f005a8-b8ea-40e8-9a5b-bf53650f50e6",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C25",
+      "claim": "The T6SS of pandemic V. cholerae is co-regulated with its DNA-uptake machinery in a TfoX-, HapR-, and QstR-dependent manner when the bacterium grows on chitin.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the T6SS of pandemic V. cholerae is exquisitely co-regulated with its DNA-uptake machinery in a TfoX-, HapR-, and QstR-dependent manner when the bacterium grows on chitin (Borgeaud et al., 2015; Watve et al., 2015; Metzger et al., 2016; Jask\u00f3lska et al., 2018), which increases the chances of the competent bacterium to take up freshly released DNA compared to free-floating 'unfit' DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "d58cfb22-7cb6-4829-87f0-fb2adf45eb64",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C26",
+      "claim": "The coupling of competence and type VI secretion is conserved in several non-cholera vibrios.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this coupling of competence and type VI secretion is also conserved in several non-cholera vibrios (Metzger et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "d97ad742-6ba4-4f66-9a80-8aed0170517d",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C27",
+      "claim": "The WT predator strain efficiently absorbed and integrated the prey-released resistance cassettes (aph or cat).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1, the WT predator strain efficiently absorbed and integrated the prey-released resistance cassettes (aph or cat), while the transformation efficiency for the T6SS-defective acceptor strain was significantly reduced (by 97.8% and 99.2% for aph and cat, respectively) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "edcaa409-a3cd-4d33-8ef2-6b51407bd043",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C28",
+      "claim": "The transformation efficiency for the T6SS-defective acceptor strain was significantly reduced by 97.8% and 99.2% for aph and cat, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1, the WT predator strain efficiently absorbed and integrated the prey-released resistance cassettes (aph or cat), while the transformation efficiency for the T6SS-defective acceptor strain was significantly reduced (by 97.8% and 99.2% for aph and cat, respectively) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "cd6c7cdf-c26f-41cd-abf4-2ef6b6da20c5",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C29",
+      "claim": "Comparable frequencies were observed for both selective markers (aph and cat), suggesting that their acquisition does not significantly affect the strains' fitness under non-selective conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, comparable frequencies were observed for both selective markers, suggesting that their acquisition does not significantly affect the strains' fitness under non-selective conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing similar transformation frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "ab8ef87c-1ad1-4497-8fdd-39e5792d479f",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C30",
+      "claim": "The comEA-minus strain was never transformed under predator-prey co-culture conditions, confirming that the gene transfer depended entirely on natural competence.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether these transfer events were indeed competence-mediated and not based on other modes of HGT using a strain with a competence-related DNA import deficiency in that it lacked the competence protein ComEA that reels external DNA into the periplasm (Seitz et al., 2014). This comEA-minus strain was never transformed under these predator-prey co-culture conditions, confirming that the gene transfer did depend entirely on natural competence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding that confirms the mechanism of gene transfer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "c29286ac-cbf1-48c6-ad6e-aa805bdc59f5",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C31",
+      "claim": "Double-resistance acquisition occurred at lower rates compared to single-resistant clones and were mostly below the limit of detection for the T6SS-minus acceptor strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we scored the frequencies of transformants that had adopted resistance against both antibiotics, which would show the possibility of two transformation events or the transfer of a large piece of DNA (indicated by the distance between the two genes on the same chromosome). These transformations occurred, as expected, at lower rates compared to single-resistant clones and were mostly below the limit of detection for the T6SS-minus acceptor strain (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "fc30d2e7-c947-4f90-82a4-0c982083f7d9",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C32",
+      "claim": "A gradual decrease in the frequencies was observed the further the two resistance genes were apart from each other on the same chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a gradual decrease in the frequencies the further the two resistance genes were apart from each other on the same chromosome, while a sharp drop occurred in the number of recovered transformants when the two resistance genes were carried on the two separate prey chromosomes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "754b8aa0-03db-4f20-a3cf-0857b9a22d48",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C33",
+      "claim": "A sharp drop occurred in the number of recovered transformants when the two resistance genes were carried on the two separate prey chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a gradual decrease in the frequencies the further the two resistance genes were apart from each other on the same chromosome, while a sharp drop occurred in the number of recovered transformants when the two resistance genes were carried on the two separate prey chromosomes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "c4496b42-307f-47fb-86b8-f265005b6611",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C34",
+      "claim": "When the two resistance genes are carried in trans, at least two separate DNA-uptake events are required.",
+      "claim_type": "EXPLICIT",
+      "source": "While the latter scenario unambiguously requires at least two separate DNA-uptake events, the former, in which the resistance markers are carried in cis, could reflect a mix between single and multiple DNA absorption and integration events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the mechanism of DNA uptake.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "e2d4d263-331b-402c-bd41-af9f556901ad",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C35",
+      "claim": "When purified genomic DNA was provided, the in cis double-resistance acquisition efficiencies reached a comparable range to the in trans efficiencies when the two resistance genes were separated by at least 100 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "When purified genomic DNA was instead provided as the transforming material to simplify the experiment and provide measurable results for all conditions, the in cis double-resistance acquisition efficiencies reached a comparable range to the in trans efficiencies when the two resistance genes were separated by at least 100 kbp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the purified DNA experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "8df0d317-c9ad-4146-a17a-50d3e5504830",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C36",
+      "claim": "Transformations of less than 100 kbp likely often occurred through a single acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that the more efficient transformations of less than 100 kbp likely often occurred through a single acquisition (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "4ac1c696-d7c6-4eac-aa3f-0802541a4bb1",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C37",
+      "claim": "The WT predator and T6SS-minus acceptor behaved similarly when purified DNA was provided.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the WT predator and T6SS-minus acceptor behaved similarly when purified DNA was provided, which makes sense as the need for active DNA release through neighbor predation was eliminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding with an inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "9a6f7cc9-58c9-4cd3-a099-0cd3f448d624",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C38",
+      "claim": "Neighbor predation might foster the transfer of long DNA stretches, which frequently exceeded 50 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these data and the fact that the double-acquisition rates for the T6SS-minus acceptor strain were mostly below the detection limit in the prey scenario (Figure 1B), we hypothesized that neighbor predation might foster the transfer of long DNA stretches, which frequently exceeded 50 kbp and therefore carry significant coding capacity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "d7dc1d4b-8aad-46ad-98b1-3ee2e2b5513a",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C39",
+      "claim": "Long DNA stretches released from killed prey might saturate the system against uptake of additional fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the significantly lower double-acquisition rates when both cassettes are located in trans (e.g., on two different chromosomes) for the co-culturing conditions compared to the supplementation of purified gDNA (Figure 1\u2014figure supplement 1) led us speculate that long DNA stretches might be released from the killed prey thereby saturating the system against uptake of additional fragments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "0b64d704-53d4-4949-9617-c6014ccb7e4e",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C40",
+      "claim": "A1552 is a pandemic O1 El Tor strain belonging to the LAT-1 sublineage of the West-African South American (WASA) lineage of seventh pandemic V. cholerae strains.",
+      "claim_type": "EXPLICIT",
+      "source": "A1552 is a pandemic O1 El Tor strain (Yildiz and Schoolnik, 1998) belonging to the LAT-1 sublineage of the West-African South American (WASA) lineage of seventh pandemic V. cholerae strains (Domman et al., 2017) while strain Sa5Y was isolated from the Californian Coast (Keymer et al., 2007; Miller et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "97fbe5bc-29d5-47d0-b08d-a1083f21ac87",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C41",
+      "claim": "Strain Sa5Y was isolated from the Californian Coast.",
+      "claim_type": "EXPLICIT",
+      "source": "A1552 is a pandemic O1 El Tor strain (Yildiz and Schoolnik, 1998) belonging to the LAT-1 sublineage of the West-African South American (WASA) lineage of seventh pandemic V. cholerae strains (Domman et al., 2017) while strain Sa5Y was isolated from the Californian Coast (Keymer et al., 2007; Miller et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "d1a637f6-4399-431c-91be-c2f87d504a33",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C42",
+      "claim": "The environmental isolate Sa5Y lacked several genomic regions including VPI-1, VPI-2, VSP-I, VSP-II, the cholera toxin prophage CTX, and the WASA-1 element.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as expected from its non-clinical origin, the environmental isolate lacked several genomic regions, including those that encode major virulence features, namely Vibrio pathogenicity islands 1 and 2 (VPI-1, VPI-2), Vibrio seventh pandemic islands I and II (VSP-I, VSP-II; Dziejman et al., 2005), the cholera toxin prophage CTX (Waldor and Mekalanos, 1996), and the WASA-1 element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative genomics analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "d53dad88-1f2c-4d81-a92f-0daa8eea56ed",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C43",
+      "claim": "The O-antigen cluster of Sa5Y differed significantly from the O1-encoding genes of pandemic strain A1552.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the strain's O-antigen cluster differed significantly from the O1-encoding genes of pandemic strain A1552 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the comparative genomics analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "aaffd54b-6fca-48b1-829a-2c40d6f93e7e",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C44",
+      "claim": "The integron island differed the most between strains A1552 and Sa5Y.",
+      "claim_type": "EXPLICIT",
+      "source": "The region that differed the most between both strains was the integron island, which is consistent with the role of this assembly platform in fostering the incorporation of exogenous open reading frames (Mazel, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative genomics analysis with a citation supporting the interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "8cfc07f3-12c0-4213-9f56-af0066039eaf",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C45",
+      "claim": "The overall SNP frequency between A1552 and Sa5Y is approximately 1 in 55 nucleotides for conserved genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these major differences between strain A1552 and Sa5Y and, in addition, an overall SNP frequency of approximately 1 in 55 nucleotides for conserved genes, we concluded that HGT events occurring between these two strains on chitinous surfaces could be precisely scored using short-read sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative genomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "8051e0ec-5fe6-4ccd-98f9-5bcac532e533",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C46",
+      "claim": "The pandemic strains and Sa5Y contained nine or ten rRNA clusters in total compared to the initially reported eight.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from this important genomic information, we also noted that the pandemic strains as well as Sa5Y contained previously unrecognized rRNA operons, with nine or ten rRNA clusters in total compared to the initially reported eight (Heidelberg et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genomic analysis that corrects previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "219e72b3-76de-42e1-9f17-0028d7d386f5",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C47",
+      "claim": "Kanamycin-resistant transformants of A1552 were selected at an average frequency of 1.8 \u00d7 10\u22124 after 30 hr co-culturing on chitin.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this system, resistant transformants of A1552 were selected at an average frequency of 1.8 \u00d7 10\u22124 after the 30 hr co-culturing on chitin, and 20 of those transformants were randomly picked for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the co-culture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "af6c7e28-6af8-4336-839d-4c8b4d1ee0c0",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C48",
+      "claim": "The location and the size of the prey-donated genomic region differed significantly between most transformants.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, apart from the common acquisition of the aph resistance cassette, the location and the size of the prey-donated genomic region differed significantly between most transformants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the whole-genome sequencing analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "eead900e-bcd1-442d-8079-507c359b018a",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C49",
+      "claim": "The average length of total acquired DNA was previously estimated to be ~23 kbp in experiments using purified donor gDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous estimates of the average length of total acquired DNA were made in experiments using purified donor gDNA and were considered to be ~23 kbp (Miller et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "3f18c51e-2013-4ac0-89d3-d15cf212c275",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C50",
+      "claim": "The average length of the total acquired DNA in the current experiments was almost 70 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed in these new experiments that the average length of the total acquired DNA, meaning the DNA surrounding the aph cassette plus any transferred regions elsewhere on either of the two chromosomes, was almost 70 kbp and therefore significantly larger than the previous estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the whole-genome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "9ff8d685-ef50-428f-9571-faf728afaf0a",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C51",
+      "claim": "Around 15% of all transformants acquired and integrated more than 100 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "Around 15% of all transformants acquired and integrated more than 100 kbp (Figure 3B), which was previously considered unlikely due to rareness of such long DNA fragments in the environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the whole-genome sequencing analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "4774d5a1-a55f-4348-85da-277d87a182de",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C52",
+      "claim": "The new DNA was acquired through double homologous recombination such that it replaced the initial DNA region and the overall genome size did not significantly change.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the principle of natural transformation, it should be noted that the new DNA was acquired through double homologous recombination such that it replaced the initial DNA region and the overall genome size did not significantly change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data consistent with the known mechanism of natural transformation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "0a2735f7-7452-44db-93d7-554ed873d4bd",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C53",
+      "claim": "About 50% of the strains experienced a single HGT event around the aph cassette, while the others exchanged regions in up to eight different locations on the two chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis indicated that about 50% of the strains experienced a single HGT event around the aph cassette, while the others exchanged regions in up to eight different locations on the two chromosomes (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the whole-genome sequencing analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "6021b5a8-0eb4-4647-b86a-bffdfd207861",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C54",
+      "claim": "The length of continuous DNA stretches acquired from the prey ranged from a few kbp up to 168 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we analyzed the length of continuous DNA stretches that were acquired from the prey and observed that those ranged from a few kbp up to 168 kbp (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the whole-genome sequencing analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "bdabbcbc-3998-44ac-b3ec-98a59d009193",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C55",
+      "claim": "V. cholerae can acquire large genomic regions from killed neighbors with an average exchange of more than 50 kbp or ~50 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data indicate that V. cholerae can acquire large genomic regions from killed neighbors with an average exchange of more than 50 kbp or ~50 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "fba9d41b-8455-4fb1-af43-d9f16bf93d57",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C56",
+      "claim": "The observed recombination events were significantly larger than the mean recombination event size of ~4 kbp recently reported for surface-grown Streptococcus pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our observed recombination events were significantly larger than the mean recombination event size of ~4 kbp that was recently reported for surface-grown Streptococcus pneumoniae (Cowley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous research supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "57869cd0-62ca-476c-a490-c867ebaf8293",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C58",
+      "claim": "The findings contradict the notion that natural transformation is unlikely to serve DNA repair purposes or for the acquisition of new genetic information due to the quick fragmentation of free DNA in natural environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Their data combined with our findings therefore contradict the notion that natural transformation is unlikely to serve DNA repair purposes or for the acquisition of new genetic information due to the quick fragmentation of free DNA in natural environments (Nielsen et al., 2007; Overballe-Petersen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in comparison to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "0544922a-5491-407b-bca6-e57da133aa46",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C59",
+      "claim": "When gDNA was added at the start of the chitin-dependent culture, no transformants were reproducibly detected from three independent biological experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when the gDNA was added at the start of the chitin-dependent culture, no transformants were reproducibly detected from three independent biological experiments, suggesting that free DNA is rapidly degraded under such conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "95508ee2-42c3-4be5-b253-f2d48ec32ec5",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C60",
+      "claim": "Free DNA is rapidly degraded when added at the start of chitin-dependent culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when the gDNA was added at the start of the chitin-dependent culture, no transformants were reproducibly detected from three independent biological experiments, suggesting that free DNA is rapidly degraded under such conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observation of no transformants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "880cd16b-96aa-4ac5-b831-a3d13913390a",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C61",
+      "claim": "V. cholerae produces an extracellular and periplasmic nuclease Dns that degrades transforming material.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with our previous work in which we demonstrated that V. cholerae produces an extracellular and periplasmic nuclease Dns (Blokesch and Schoolnik, 2008; Seitz and Blokesch, 2014) that degrades transforming material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "264a943f-e491-4fee-8aec-0bb99bcceecc",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C62",
+      "claim": "At high cell density, dns is partially repressed through direct binding of HapR.",
+      "claim_type": "EXPLICIT",
+      "source": "At high cell density (HCD), where competence is induced, dns is partially repressed through direct binding of HapR (Blokesch and Schoolnik, 2008; Lo Scrudato and Blokesch, 2013), and this repression is reinforced by the transcription factor QstR (Lo Scrudato and Blokesch, 2013; Jask\u00f3lska et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "faf9a571-cd10-46e9-8f44-3848a4fde1c0",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C63",
+      "claim": "The simultaneous expression of both machineries (T6SS and DNA uptake), concomitantly with a strong repression of dns, is a prerequisite for successful DNA transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore concluded that the simultaneous expression of both machineries, concomitantly with a strong repression of dns, is a prerequisite for successful DNA transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "14d7aae9-57f3-4096-8bed-2827d96d3d55",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C64",
+      "claim": "Coordinated expression of T6SS and DNA uptake ensures that T6SS-mediated attacks are exquisitely timed with low nuclease activity so that the prey-released DNA can be efficiently absorbed.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, such coordinated expression would ensure that T6SS-mediated attacks are exquisitely timed with low nuclease activity so that the prey-released DNA can be efficiently absorbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "ff2c820d-a05e-4659-9755-7e88526f09cb",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C65",
+      "claim": "Adding purified gDNA after ~20\u201324 hr of growth on chitin led to similar transformation frequencies as those observed for the prey-released DNA caused by T6SS attacks.",
+      "claim_type": "EXPLICIT",
+      "source": "As we previously showed that the addition of purified gDNA after ~20\u201324 hr of growth on chitin wasn't prone to degradation by Dns (Marvig and Blokesch, 2010), we next choose this time point to probe the DNA acquisition capability using purified DNA (condition \u2461; Figure 4A). Doing so led to similar transformation frequencies as those observed for the prey-released DNA caused by T6SS attacks (condition \u2460; Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "c1580878-419c-473f-aae1-0bf2d53eca31",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C66",
+      "claim": "WGS of transformants from condition \u2461 resulted in similar DNA acquisition patterns with average and maximum DNA acquisitions of 70 kbp and 188 kbp, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "WGS of 20 transformants from two biologically independent experiments likewise resulted in similar DNA acquisition patterns with average and maximum DNA acquisitions of 70 kbp and 188 kbp, respectively, and the presence of multiple exchanged regions of varying sizes (Figure 4 and Figure 4\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the whole-genome sequencing analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "b603c9ac-ff3d-49fa-9a65-e4938ea4fa43",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C67",
+      "claim": "The maximum DNA acquisition length of single fragments is probably reached between 100\u2013110 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot entirely exclude that the maximum length of individual DNA stretches was biased by the purification step, despite the fact that we chose a method that was designed for chromosomal DNA isolation of 20\u2013150 kbp sized fragments (see Materials and methods), our results suggest that the maximum DNA acquisition length of single fragments is probably reached between 100\u2013110 kbp (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data with acknowledgment of potential technical limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "8e92a6f5-3d69-473a-a8b9-0382bd09e0a9",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C68",
+      "claim": "The comparable acquisition patterns between conditions \u2460 and \u2461 imply that the prey-released DNA in condition \u2460 is neither heavily fragmented nor is its accessibility or absorption significantly hindered.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the comparable acquisition patterns between conditions \u2460 and \u2461 (Figure 4) imply that the prey-released DNA in condition \u2460 is neither heavily fragmented nor is its accessibility or absorption by the competent acceptor bacterium significantly hindered due to, for example, DNA-binding proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the comparison of experimental conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "a3d4f4a3-e746-4842-91f5-ffdb9480305e",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C69",
+      "claim": "Similar transformation frequencies were observed independent of the position of the aph cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the aph cassette was located within the T6SS sheath protein gene vipA in the above experiments, we wondered if this T6SS inactivation biased the DNA transfer efficiency. We therefore repeated the above-described experiments using prey strains that carried the aph cassette on the opposite site of chr 2 (within gene VCA0747; condition \u2462). As shown in (Figure 4\u2014figure supplement 1), similar transformation frequencies were observed independent of the position of the aph cassette.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "08f98d22-dab2-4e60-be37-eb505de5ebe7",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C70",
+      "claim": "WGS of transformants from condition \u2462 showed similar average and maximum DNA acquisition values (55.7 kbp and 227.4 kbp, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, WGS of 2 \u00d7 20 transformants showed similar average and maximum DNA acquisition values (55.7 kbp and 227.4 kbp, respectively; Figure 4) as well as similar distribution patterns around the resistance marker (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the whole-genome sequencing analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "13633e59-3438-4a8c-80a3-0fcdfeec7ed8",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C71",
+      "claim": "Transformants with only single/connected exchanges dropped from ~50% in condition \u2460 to around 20% in condition \u2462.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while not statistically supported, it appeared as if these conditions were prone to the acquisition of multiple non-connected regions, as transformants with only single/connected exchanges dropped from ~50% (Figure 4\u2014figure supplement 2 for condition \u2460) to around 20% (Figure 4\u2014figure supplement 4 for condition \u2462).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data, though not statistically significant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "138fa769-a406-4a5d-8ff8-b69fd9370417",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C72",
+      "claim": "The restored T6SS-mediated killing capacity of the prey may lead to additional release of genomic DNA from the predator, which interferes with the uptake of prey-released DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this observation, we hypothesized that the now-restored T6SS-mediated killing capacity of the prey led to the additional release of genomic DNA from the predator, which interfered with the uptake of prey-released DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "1c06e609-0488-4566-8050-9151145c24b1",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C73",
+      "claim": "No statistically significant differences were observed between conditions \u2462 and \u2463 for all tested characteristics including transformation frequency, number of exchanges, and separate and collective length.",
+      "claim_type": "EXPLICIT",
+      "source": "No statistically significant differences were observed between both conditions (\u2462 and \u2463) for all tested characteristics including transformation frequency (Figure 4\u2014figure supplement 1B), number of exchanges, and separate and collective length (Figure 4 and Figure 4\u2014figure supplements 4 and 5), suggesting that predator-released DNA does not interfere with the predator's overall transformability by the prey-released DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding from statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "ee46efa6-d1db-40e1-9824-badaf27dea98",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C74",
+      "claim": "Predator-released DNA does not interfere with the predator's overall transformability by the prey-released DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "No statistically significant differences were observed between both conditions (\u2462 and \u2463) for all tested characteristics including transformation frequency (Figure 4\u2014figure supplement 1B), number of exchanges, and separate and collective length (Figure 4 and Figure 4\u2014figure supplements 4 and 5), suggesting that predator-released DNA does not interfere with the predator's overall transformability by the prey-released DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the lack of statistical differences between conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "3cdcdcf6-1cfc-4a07-9320-54591bc94070",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C75",
+      "claim": "When both donor and acceptor strains were T6SS-defective, the transformation frequency dropped by 99.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested whether T6SS-mediated DNA release impacted the length of the exchanged region, which would support the above speculation that the intimate co-regulation of type VI secretion, nuclease repression, and DNA uptake ensures that freshly released DNA is rapidly absorbed by the predator and is therefore less prone to fragmentation. Such co-regulation would not hold true for T6SS-independent DNA release as a result of random cell lysis, so we tested the transfer efficiency of the aph cassette under conditions in which both donor and acceptor strains were T6SS-defective (condition \u2464; Figure 4 and Figure 4\u2014figure supplement 6). Under such conditions, the transformation frequency dropped by 99.7% (Figure 4\u2014figure supplement 1B), and WGS of 2 \u00d7 20 of these rare transformants showed significant differences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "d1321781-e3fe-459d-a765-de967f30039a",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C76",
+      "claim": "The average and maximal length of acquired DNA and the number of exchanged regions were significantly different when T6SS+ versus T6SS- acceptor strains were compared.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the average and maximal length of acquired DNA (Figure 4B) and the number of exchanged regions (Figure 4C) were significantly different when T6SS+ versus T6SS- acceptor strains were compared, with the latter exchanges never exceeding four events compared to up to 13 events for T6SS-mediated DNA release (Figure 4\u2014figure supplements 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding from statistical analysis shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "8fbdb2ef-f52e-4d2f-9fa3-2cefadf94083",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C77",
+      "claim": "T6SS-mediated DNA acquisition increases the transfer efficiency by ~100 fold and fosters the exchange of multiple DNA stretches of extended lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these data, we conclude that T6SS-mediated DNA acquisition not only increases the transfer efficiency by ~100 fold but also fosters the exchange of multiple DNA stretches of extended lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data comparing T6SS+ and T6SS- conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "ddecaecc-6e86-49ed-9070-a9ecd2646a46",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C78",
+      "claim": "Comparing conditions \u2465 (co-culture conditions) and \u2467 (prey-derived purified gDNA) revealed a small but significant transformation increase for the latter condition (~4 fold).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4\u2014figure supplement 1, the aph cassette was again transferred with high efficiency from the killed prey strain to the acceptor strain. However, comparing conditions \u2465 (co-culture conditions) and \u2467 (prey-derived purified gDNA as transforming material) revealed a small but significant transformation increase for the latter condition (~4 fold; Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "2959d637-bd7e-4b3c-9808-ca2715ed5349",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C79",
+      "claim": "The larger size of chr 1 (~3 Mb) compared to chr 2 (~1 Mb) slightly lowers the probability of acquiring the aph cassette when released from the killed prey that carried the resistance marker on chr 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these data, we speculate that the larger size of chr 1 (~3 Mb) compared to chr 2 (~1 Mb) slightly lowers the probability of acquiring the aph cassette when released from the killed prey that carried the resistance marker on chr 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "cf7df672-888a-4f82-8fab-10ce00d01296",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C80",
+      "claim": "The cassette's relative occupancy per chromosome is reduced by one third for the larger chromosome 1 compared to the smaller chromosome 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the cassette's relative occupancy per chromosome is reduced by one third for the larger chromosome 1 compared to the smaller chromosome 2, which would reduce the chance of absorbing the aph cassette if it was embedded in large chromosomal fragment(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the relative sizes of the chromosomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "b99fb8b8-cb83-4682-96ff-1295e938528b",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C81",
+      "claim": "Purified gDNA from all prey strains resulted in the same level of transformation no matter where the selective marker was located.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea was the finding that purified gDNA from all those prey strains described in this study resulted in the same level of transformation no matter where the selective marker was located (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "ccbb1109-9449-437c-abe4-8574201ac27c",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C82",
+      "claim": "The average and maximum DNA acquisition values for transformants with markers on chromosome 1 were highly comparable to those for DNA exchanges on chromosome 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we randomly picked 20 transformants from two biologically independent experiments for each of these three experimental conditions (\u2465 to \u2467) and sequenced their genomes (Figure 4\u2014figure supplements 7 to 9). The analysis of these transformants showed that the average and maximum DNA acquisition values were highly comparable to those described above for DNA exchanges on chromosome 2 (Figure 4B) and that multiple exchanged regions were likewise observed (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the whole-genome sequencing analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "3100da70-ce74-458c-8f3b-645b4140a931",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C83",
+      "claim": "Prey-derived transforming DNA can equally modify both chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that prey-derived transforming DNA can equally modify both chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data comparing transformations on both chromosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "99c9b234-d8e7-4fa8-bcf8-5ac3313db454",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C84",
+      "claim": "Consecutive stretches of exchanged DNA above ~200 kbp either do not occur or occur at levels below the detection limit of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our data suggest that consecutive stretches of exchanged DNA above ~200 kbp either do not occur or occur at levels below the detection limit of this study, and that this size limitation is not caused by the toxin/antitoxin\u2013module-containing integron island on chr 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "0e016d2a-25a4-4a08-a173-7197a91d4931",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C85",
+      "claim": "The size limitation of DNA transfer is not caused by the toxin/antitoxin\u2013module-containing integron island on chr 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our data suggest that consecutive stretches of exchanged DNA above ~200 kbp either do not occur or occur at levels below the detection limit of this study, and that this size limitation is not caused by the toxin/antitoxin\u2013module-containing integron island on chr 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data comparing both chromosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "759074eb-6260-408a-a452-6907d299f85b",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C86",
+      "claim": "T6SS-mediated predation followed by DNA uptake leads to the exchange of large DNA regions that can bring about bacterial evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the data presented above, we conclude that T6SS-mediated predation followed by DNA uptake leads to the exchange of large DNA regions that can bring about bacterial evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "eccde3a2-a850-49e3-8b35-738cd57d6bb8",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C87",
+      "claim": "Heterogeneous environmental V. cholerae populations were observed in cholera-endemic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the heterogeneous environmental V. cholerae populations that were observed in cholera-endemic areas (Faruque et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "2264c162-24fe-40f3-82bc-25cf427a68e9",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C88",
+      "claim": "Pandemic cholera isolates are seemingly clonal in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, an open question that remains is why pandemic cholera isolates are seemingly clonal in nature (Mutreja et al., 2011; Domman et al., 2017; Weill et al., 2017; Weill et al., 2019), and we propose two explanations for this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "bd6170ce-9486-44e7-b5c5-4adc4cbf5215",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C89",
+      "claim": "Sampling strategies might be biased for the selection of the most pathogenic strains and exclude less virulent variants that have undergone HGT events.",
+      "claim_type": "EXPLICIT",
+      "source": "First, sampling strategies might be biased for the selection of the most pathogenic strains and, concomitantly, exclude less virulent variants that have undergone HGT events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential sampling bias.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "89dd0650-26a9-4ad9-9d50-d809e1a2fb93",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C90",
+      "claim": "Transformation-inhibiting nucleases similar to Dns have recently spread throughout pandemic V. cholerae isolates as part of mobile genetic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, transformation-inhibiting nucleases similar to Dns (Blokesch and Schoolnik, 2008) have recently spread throughout pandemic V. cholerae isolates as part of mobile genetic elements (experimentally shown for VchInd5 [Dalia et al., 2015] and predicted for SXT [Blokesch, 2017]), which makes these pandemic strains less likely to undergo HGT events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "f09f6b02-8aad-459e-b9e1-02cd348e43a0",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C91",
+      "claim": "IVIAT assays showed strong human immune responses against proteins of the DNA-uptake pilus.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet in vivo-induced antigen technology (IVIAT) assays showed strong human immune responses against proteins of the DNA-uptake pilus that fosters natural transformation, kin recognition, and chitin colonization (Meibom et al., 2005; Seitz and Blokesch, 2013; Adams et al., 2019), which contradicts this idea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "f920392f-04a2-4ab2-843c-cc8ca810f88e",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C92",
+      "claim": "The major pilin of the DNA-uptake pilus, PilA, was most frequently identified by IVIAT together with the outer-membrane secretin PilQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the major pilin of the DNA-uptake pilus, PilA, was most frequently identified by IVIAT together with the outer-membrane secretin PilQ (Hang et al., 2003), which suggests that the bacteria encounter competence-inducing conditions either before entering the human host or after its colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "ded70cff-b030-4af0-8674-1675da0566f8",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C93",
+      "claim": "The bacteria encounter competence-inducing conditions either before entering the human host or after its colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the major pilin of the DNA-uptake pilus, PilA, was most frequently identified by IVIAT together with the outer-membrane secretin PilQ (Hang et al., 2003), which suggests that the bacteria encounter competence-inducing conditions either before entering the human host or after its colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the IVIAT data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "4c824b34-ad83-4536-801e-b5e54c47dc08",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C94",
+      "claim": "In vivo expression data from human volunteers does not support the idea that bacteria encounter competence-inducing conditions after colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter option is not, however, supported by in vivo expression data from human volunteers (Lombardo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "bf29ace6-0f18-48a9-9160-e3f80bbe3a65",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "claim_id": "C95",
+      "claim": "The work shows the incredible DNA exchange potential that chitin-induced V. cholerae strains exert under co-culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our work shows the incredible DNA exchange potential that chitin-induced V. cholerae strains exert under co-culture conditions and future studies are therefore required to better understand strain diversity in clinical and environmental settings in the absence of sampling biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3aa337c6-363a-462a-9c3c-73b43d713ae6",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The T6SS significantly enhances DNA transformation efficiency in V. cholerae. WT predator strains efficiently absorbed prey-released resistance cassettes, while T6SS-defective acceptor strains showed 97.8-99.2% reduction in transformation efficiency. The comEA-minus strain was never transformed, confirming the process depends entirely on natural competence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 provide quantitative experimental data showing dramatic reduction in transformation when T6SS is absent, and C30 provides a critical negative control confirming the mechanism. The data are internally consistent and supported by appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "a8a985a0-5a0b-4bcf-8939-c6c64780b3e8",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Double-resistance acquisition patterns suggest that V. cholerae can transfer DNA fragments exceeding 100 kbp in single events. Transformation frequencies decreased with increasing distance between markers on the same chromosome, with a sharp drop when markers were on separate chromosomes. With purified DNA, in cis double-resistance acquisition reached comparable levels to in trans when markers were \u2265100 kbp apart, suggesting single acquisitions often occur for fragments <100 kbp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 present a logical progression of experimental observations with appropriate controls (purified DNA vs. co-culture). The distance-dependent pattern and the distinction between cis and trans configurations provide strong evidence for the size of transferred DNA fragments. The inference in C36 is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "f11fdedf-2175-44e7-9994-4d6689fa2ff0",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Comparative genomics revealed substantial differences between pandemic strain A1552 and environmental isolate Sa5Y. Sa5Y lacked major virulence regions (VPI-1, VPI-2, VSP-I, VSP-II, CTX, WASA-1), had a different O-antigen cluster, and showed ~1 SNP per 55 nucleotides in conserved genes. Both strains contained 9-10 rRNA clusters, correcting previous reports of 8 clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 describe genomic characterization supported by long-read PacBio sequencing and comparative analysis. The findings are consistent with expected differences between pandemic and environmental strains. The correction of rRNA cluster numbers (C46) is a valuable observation, though the authors acknowledge potential assembly artifacts in previous work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "7631ac44-cb1b-4a52-a2e2-5f9dbc6d59f3",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Whole-genome sequencing of transformants revealed that V. cholerae acquires large genomic regions from killed neighbors, with an average of ~70 kbp (significantly larger than previous estimates of ~23 kbp). Approximately 15% of transformants acquired >100 kbp, 50% experienced single HGT events, while others exchanged regions at up to 8 locations. Individual DNA stretches ranged from a few kbp to 168 kbp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 present the core WGS findings with clear quantitative data from 60 transformants across 3 biological replicates. The results substantially revise previous estimates and are supported by detailed genomic analysis. The conclusion in C55 is well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "83c5bb62-29fa-4a00-b2ea-abf86aa4f33b",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The observed recombination events in V. cholerae (~70 kbp average) are significantly larger than those reported for S. pneumoniae (~4 kbp), contradicting the notion that natural transformation is unlikely to serve DNA repair or acquisition purposes due to rapid DNA fragmentation in natural environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C58 appropriately contextualize the findings within existing literature. The comparison to S. pneumoniae is valid and the conclusion challenges previous assumptions about environmental DNA degradation. The inference is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "3686820c-daad-40fa-afe7-4bdef20570e2",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Timing of DNA availability is critical for transformation success. When gDNA was added at the start of chitin-dependent culture, no transformants were detected, suggesting rapid DNA degradation. This is consistent with V. cholerae producing the nuclease Dns, which is repressed at high cell density when competence is induced. Coordinated expression of T6SS, DNA uptake machinery, and dns repression is required for successful DNA transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 present a mechanistic explanation supported by experimental observations (C59) and previous work on Dns (C61-C62). The conclusion about coordinated expression (C63-C64) is a reasonable inference from the data, though C64 is somewhat speculative about the precise timing mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "0b685f37-285a-4d9a-b00e-0b1c3119da99",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Adding purified gDNA after 20-24 hr of chitin growth (when dns is repressed) resulted in similar transformation frequencies and DNA acquisition patterns as T6SS-mediated prey killing, with average and maximum acquisitions of 70 kbp and 188 kbp respectively. The maximum single-fragment acquisition length is likely 100-110 kbp. The comparable patterns suggest prey-released DNA is neither heavily fragmented nor significantly hindered in accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 provide important comparative data between conditions \u2460 and \u2461. The inference in C67 appropriately acknowledges potential technical limitations from the purification method. The conclusion in C68 is well-supported by the similarity between conditions, though alternative explanations are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "5f247319-bd62-4614-ad8e-0e6805e4a0c1",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The position of the resistance cassette (vipA vs. VCA0747) did not significantly affect transformation frequency or overall DNA acquisition patterns. However, transformants with single/connected exchanges appeared to decrease from ~50% to ~20% when prey T6SS was functional, though this was not statistically significant. No significant differences were observed when prey T6SS was inactivated by a non-selected marker, suggesting predator-released DNA does not interfere with transformation by prey-released DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C70 show consistent results, but C71 explicitly notes the observation is not statistically supported. The hypothesis in C72 is speculative, and while C73-C74 provide negative results that refute this hypothesis, the authors acknowledge technical limitations (inability to detect complete revertants). The overall conclusion requires more rigorous statistical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "9274d699-10da-48bd-9d11-b154e182d656",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "T6SS-mediated DNA acquisition dramatically enhances transformation efficiency and DNA transfer size. When both donor and acceptor were T6SS-defective, transformation frequency dropped 99.7%, and the average/maximal DNA length and number of exchanges were significantly reduced (maximum 4 events vs. up to 13 for T6SS-mediated release). T6SS-mediated acquisition increases transfer efficiency ~100-fold and fosters exchange of multiple extended DNA stretches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 provide strong quantitative evidence for the role of T6SS in DNA transfer. The comparison between T6SS+ and T6SS- conditions is well-controlled and statistically significant. The ~100-fold enhancement and the differences in DNA acquisition patterns provide compelling support for the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "8b4d15c0-1d82-4936-b9ef-f2b6fa1b94bf",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DNA transfer occurs efficiently on both chromosomes. When the resistance marker was on chromosome 1, there was a small (~4-fold) but significant reduction in transformation frequency compared to purified DNA, possibly due to the larger size of chr 1 (~3 Mb) vs. chr 2 (~1 Mb) reducing the relative probability of cassette acquisition. However, purified gDNA from all prey strains showed equal transformation regardless of marker location, and WGS analysis showed comparable DNA acquisition patterns for both chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 address whether chromosome size affects transformation. The speculation in C79-C80 is reasonable given the size difference, and C81 provides supporting evidence. The WGS data in C82 and conclusion in C83 are well-supported, though the ~4-fold difference is modest and alternative explanations are not fully explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "de1abca2-f8e0-4f52-9acc-624ba85f6d3d",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Consecutive DNA stretches above ~200 kbp either do not occur or occur below the detection limit, and this size limitation is not caused by the toxin/antitoxin-module-containing integron island on chromosome 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 present a negative result that is important for understanding the limits of DNA transfer. The conclusion is supported by the absence of such events across all conditions tested, including those involving chromosome 1 (which lacks the integron island). However, the authors appropriately acknowledge the detection limit caveat.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "c78d1140-2655-482a-9010-37af2ac026ca",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "T6SS-mediated predation followed by DNA uptake leads to exchange of large DNA regions that can accelerate bacterial evolution. This is consistent with heterogeneous V. cholerae populations in endemic areas and demonstrates the incredible DNA exchange potential of chitin-induced V. cholerae under co-culture conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 and C95 present the main conclusions of the study. The inference about evolutionary impact is well-supported by the extensive experimental data showing large-scale DNA transfer. The consistency with field observations (C87) strengthens the ecological relevance, though direct evidence of evolutionary acceleration would require additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "151a021d-cdce-41e3-9efa-74753473fd5b",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Despite the demonstrated DNA exchange potential, pandemic cholera isolates appear clonal. Two explanations are proposed: sampling bias toward pathogenic strains, and spread of transformation-inhibiting nucleases in pandemic strains. IVIAT data showing immune responses to competence pilus proteins suggest bacteria encounter competence-inducing conditions before or during infection, though in vivo expression data from volunteers does not support post-colonization competence induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C94 address an apparent paradox. C88 is well-supported by citations, but C89 is explicitly speculative. C90 has some experimental support but is limited to specific mobile elements. The IVIAT data (C91-C92) are interesting but the inference in C93 is uncertain, and C94 contradicts one possibility. This section raises important questions but does not definitively resolve the paradox.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "4216fe25-85a4-47a7-b1bc-70a3dabfa61e",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Natural competence for transformation is a primary mode of horizontal gene transfer in which bacteria absorb free DNA and integrate it via homologous recombination. V. cholerae uses its T6SS to actively acquire DNA from non-kin neighbors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C10 describe established knowledge about natural competence, supported by appropriate citations. C3 references the authors' previous work on T6SS-mediated DNA acquisition. These provide essential background context and are well-supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "05b673bb-a15b-4ccd-bf48-b5f648052a82",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Competence induction in V. cholerae is tightly regulated by chitin sensing and quorum sensing. Growth on chitin induces TfoX production, which activates DNA-uptake machinery. HapR represses the nuclease dns and co-activates QstR with TfoX, which further represses dns and activates DNA-uptake genes. The T6SS is co-regulated with DNA-uptake machinery in a TfoX-, HapR-, and QstR-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C20 and C25 describe the regulatory network controlling competence, all supported by multiple citations to previous work. This provides important mechanistic context for understanding the experimental results. The co-regulation of T6SS and competence (C25) is particularly relevant to the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "467295af-7055-4d07-a3b3-09acb6a2c441",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Environmental DNA is typically degraded and originates from dead bacteria, making it less favorable for competent bacteria. V. cholerae overcomes this by actively acquiring DNA from living bacteria through T6SS-mediated neighbor predation. This coupling of competence and T6SS is conserved in several vibrios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 and C26 establish the rationale for the study by describing limitations of environmental DNA and the T6SS-based solution. All claims are supported by appropriate citations. This provides crucial context for why the study's findings are significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "be6b915e-72ea-4ae1-b5d4-e430f90c009d",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Comparable transformation frequencies for both selective markers suggest acquisition does not significantly affect fitness. The data led to the hypothesis that neighbor predation fosters transfer of long DNA stretches (>50 kbp), and that such stretches might saturate the uptake system against additional fragments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C29 presents a reasonable inference from similar frequencies, though fitness effects under selective pressure are not tested. C38 is explicitly a hypothesis based on preliminary data. C39 is speculation about mechanism. While these claims provide useful interpretive context, they require additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    },
+    {
+      "id": "233146c0-e287-4f20-a0ac-5b0b8615190c",
+      "content_id": "61b47689-e92a-4d3f-bcb9-1a15ddf97fb7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "V. cholerae has caused seven pandemics since 1817, affecting 1-4 million people annually. Previous work showed V. cholerae can exchange large genomic regions (e.g., ~40 kbp O139-antigen cluster), though the prevalence of sufficiently long non-degraded DNA in the environment has been questioned.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 provide epidemiological context supported by WHO data. C11 references previous work by the authors demonstrating large-scale genetic exchange. C12 establishes the scientific controversy that motivates the current study. All claims are appropriately supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:20.899194Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d97ad742-6ba4-4f66-9a80-8aed0170517d",
+      "result_id": "3aa337c6-363a-462a-9c3c-73b43d713ae6"
+    },
+    {
+      "claim_id": "edcaa409-a3cd-4d33-8ef2-6b51407bd043",
+      "result_id": "3aa337c6-363a-462a-9c3c-73b43d713ae6"
+    },
+    {
+      "claim_id": "ab8ef87c-1ad1-4497-8fdd-39e5792d479f",
+      "result_id": "3aa337c6-363a-462a-9c3c-73b43d713ae6"
+    },
+    {
+      "claim_id": "c29286ac-cbf1-48c6-ad6e-aa805bdc59f5",
+      "result_id": "a8a985a0-5a0b-4bcf-8939-c6c64780b3e8"
+    },
+    {
+      "claim_id": "fc30d2e7-c947-4f90-82a4-0c982083f7d9",
+      "result_id": "a8a985a0-5a0b-4bcf-8939-c6c64780b3e8"
+    },
+    {
+      "claim_id": "754b8aa0-03db-4f20-a3cf-0857b9a22d48",
+      "result_id": "a8a985a0-5a0b-4bcf-8939-c6c64780b3e8"
+    },
+    {
+      "claim_id": "c4496b42-307f-47fb-86b8-f265005b6611",
+      "result_id": "a8a985a0-5a0b-4bcf-8939-c6c64780b3e8"
+    },
+    {
+      "claim_id": "e2d4d263-331b-402c-bd41-af9f556901ad",
+      "result_id": "a8a985a0-5a0b-4bcf-8939-c6c64780b3e8"
+    },
+    {
+      "claim_id": "8df0d317-c9ad-4146-a17a-50d3e5504830",
+      "result_id": "a8a985a0-5a0b-4bcf-8939-c6c64780b3e8"
+    },
+    {
+      "claim_id": "4ac1c696-d7c6-4eac-aa3f-0802541a4bb1",
+      "result_id": "a8a985a0-5a0b-4bcf-8939-c6c64780b3e8"
+    },
+    {
+      "claim_id": "0b64d704-53d4-4949-9617-c6014ccb7e4e",
+      "result_id": "f11fdedf-2175-44e7-9994-4d6689fa2ff0"
+    },
+    {
+      "claim_id": "97fbe5bc-29d5-47d0-b08d-a1083f21ac87",
+      "result_id": "f11fdedf-2175-44e7-9994-4d6689fa2ff0"
+    },
+    {
+      "claim_id": "d1a637f6-4399-431c-91be-c2f87d504a33",
+      "result_id": "f11fdedf-2175-44e7-9994-4d6689fa2ff0"
+    },
+    {
+      "claim_id": "d53dad88-1f2c-4d81-a92f-0daa8eea56ed",
+      "result_id": "f11fdedf-2175-44e7-9994-4d6689fa2ff0"
+    },
+    {
+      "claim_id": "aaffd54b-6fca-48b1-829a-2c40d6f93e7e",
+      "result_id": "f11fdedf-2175-44e7-9994-4d6689fa2ff0"
+    },
+    {
+      "claim_id": "8cfc07f3-12c0-4213-9f56-af0066039eaf",
+      "result_id": "f11fdedf-2175-44e7-9994-4d6689fa2ff0"
+    },
+    {
+      "claim_id": "8051e0ec-5fe6-4ccd-98f9-5bcac532e533",
+      "result_id": "f11fdedf-2175-44e7-9994-4d6689fa2ff0"
+    },
+    {
+      "claim_id": "219e72b3-76de-42e1-9f17-0028d7d386f5",
+      "result_id": "7631ac44-cb1b-4a52-a2e2-5f9dbc6d59f3"
+    },
+    {
+      "claim_id": "af6c7e28-6af8-4336-839d-4c8b4d1ee0c0",
+      "result_id": "7631ac44-cb1b-4a52-a2e2-5f9dbc6d59f3"
+    },
+    {
+      "claim_id": "3f18c51e-2013-4ac0-89d3-d15cf212c275",
+      "result_id": "7631ac44-cb1b-4a52-a2e2-5f9dbc6d59f3"
+    },
+    {
+      "claim_id": "9ff8d685-ef50-428f-9571-faf728afaf0a",
+      "result_id": "7631ac44-cb1b-4a52-a2e2-5f9dbc6d59f3"
+    },
+    {
+      "claim_id": "0a2735f7-7452-44db-93d7-554ed873d4bd",
+      "result_id": "7631ac44-cb1b-4a52-a2e2-5f9dbc6d59f3"
+    },
+    {
+      "claim_id": "6021b5a8-0eb4-4647-b86a-bffdfd207861",
+      "result_id": "7631ac44-cb1b-4a52-a2e2-5f9dbc6d59f3"
+    },
+    {
+      "claim_id": "bdabbcbc-3998-44ac-b3ec-98a59d009193",
+      "result_id": "7631ac44-cb1b-4a52-a2e2-5f9dbc6d59f3"
+    },
+    {
+      "claim_id": "fba9d41b-8455-4fb1-af43-d9f16bf93d57",
+      "result_id": "83c5bb62-29fa-4a00-b2ea-abf86aa4f33b"
+    },
+    {
+      "claim_id": "57869cd0-62ca-476c-a490-c867ebaf8293",
+      "result_id": "83c5bb62-29fa-4a00-b2ea-abf86aa4f33b"
+    },
+    {
+      "claim_id": "0544922a-5491-407b-bca6-e57da133aa46",
+      "result_id": "3686820c-daad-40fa-afe7-4bdef20570e2"
+    },
+    {
+      "claim_id": "95508ee2-42c3-4be5-b253-f2d48ec32ec5",
+      "result_id": "3686820c-daad-40fa-afe7-4bdef20570e2"
+    },
+    {
+      "claim_id": "880cd16b-96aa-4ac5-b831-a3d13913390a",
+      "result_id": "3686820c-daad-40fa-afe7-4bdef20570e2"
+    },
+    {
+      "claim_id": "264a943f-e491-4fee-8aec-0bb99bcceecc",
+      "result_id": "3686820c-daad-40fa-afe7-4bdef20570e2"
+    },
+    {
+      "claim_id": "faf9a571-cd10-46e9-8f44-3848a4fde1c0",
+      "result_id": "3686820c-daad-40fa-afe7-4bdef20570e2"
+    },
+    {
+      "claim_id": "14d7aae9-57f3-4096-8bed-2827d96d3d55",
+      "result_id": "3686820c-daad-40fa-afe7-4bdef20570e2"
+    },
+    {
+      "claim_id": "ff2c820d-a05e-4659-9755-7e88526f09cb",
+      "result_id": "0b685f37-285a-4d9a-b00e-0b1c3119da99"
+    },
+    {
+      "claim_id": "c1580878-419c-473f-aae1-0bf2d53eca31",
+      "result_id": "0b685f37-285a-4d9a-b00e-0b1c3119da99"
+    },
+    {
+      "claim_id": "b603c9ac-ff3d-49fa-9a65-e4938ea4fa43",
+      "result_id": "0b685f37-285a-4d9a-b00e-0b1c3119da99"
+    },
+    {
+      "claim_id": "8e92a6f5-3d69-473a-a8b9-0382bd09e0a9",
+      "result_id": "0b685f37-285a-4d9a-b00e-0b1c3119da99"
+    },
+    {
+      "claim_id": "a3d4f4a3-e746-4842-91f5-ffdb9480305e",
+      "result_id": "5f247319-bd62-4614-ad8e-0e6805e4a0c1"
+    },
+    {
+      "claim_id": "08f98d22-dab2-4e60-be37-eb505de5ebe7",
+      "result_id": "5f247319-bd62-4614-ad8e-0e6805e4a0c1"
+    },
+    {
+      "claim_id": "13633e59-3438-4a8c-80a3-0fcdfeec7ed8",
+      "result_id": "5f247319-bd62-4614-ad8e-0e6805e4a0c1"
+    },
+    {
+      "claim_id": "138fa769-a406-4a5d-8ff8-b69fd9370417",
+      "result_id": "5f247319-bd62-4614-ad8e-0e6805e4a0c1"
+    },
+    {
+      "claim_id": "1c06e609-0488-4566-8050-9151145c24b1",
+      "result_id": "5f247319-bd62-4614-ad8e-0e6805e4a0c1"
+    },
+    {
+      "claim_id": "ee46efa6-d1db-40e1-9824-badaf27dea98",
+      "result_id": "5f247319-bd62-4614-ad8e-0e6805e4a0c1"
+    },
+    {
+      "claim_id": "3cdcdcf6-1cfc-4a07-9320-54591bc94070",
+      "result_id": "9274d699-10da-48bd-9d11-b154e182d656"
+    },
+    {
+      "claim_id": "d1321781-e3fe-459d-a765-de967f30039a",
+      "result_id": "9274d699-10da-48bd-9d11-b154e182d656"
+    },
+    {
+      "claim_id": "8fbdb2ef-f52e-4d2f-9fa3-2cefadf94083",
+      "result_id": "9274d699-10da-48bd-9d11-b154e182d656"
+    },
+    {
+      "claim_id": "ddecaecc-6e86-49ed-9070-a9ecd2646a46",
+      "result_id": "8b4d15c0-1d82-4936-b9ef-f2b6fa1b94bf"
+    },
+    {
+      "claim_id": "2959d637-bd7e-4b3c-9808-ca2715ed5349",
+      "result_id": "8b4d15c0-1d82-4936-b9ef-f2b6fa1b94bf"
+    },
+    {
+      "claim_id": "cf7df672-888a-4f82-8fab-10ce00d01296",
+      "result_id": "8b4d15c0-1d82-4936-b9ef-f2b6fa1b94bf"
+    },
+    {
+      "claim_id": "b99fb8b8-cb83-4682-96ff-1295e938528b",
+      "result_id": "8b4d15c0-1d82-4936-b9ef-f2b6fa1b94bf"
+    },
+    {
+      "claim_id": "ccbb1109-9449-437c-abe4-8574201ac27c",
+      "result_id": "8b4d15c0-1d82-4936-b9ef-f2b6fa1b94bf"
+    },
+    {
+      "claim_id": "3100da70-ce74-458c-8f3b-645b4140a931",
+      "result_id": "8b4d15c0-1d82-4936-b9ef-f2b6fa1b94bf"
+    },
+    {
+      "claim_id": "99c9b234-d8e7-4fa8-bcf8-5ac3313db454",
+      "result_id": "de1abca2-f8e0-4f52-9acc-624ba85f6d3d"
+    },
+    {
+      "claim_id": "0e016d2a-25a4-4a08-a173-7197a91d4931",
+      "result_id": "de1abca2-f8e0-4f52-9acc-624ba85f6d3d"
+    },
+    {
+      "claim_id": "759074eb-6260-408a-a452-6907d299f85b",
+      "result_id": "c78d1140-2655-482a-9010-37af2ac026ca"
+    },
+    {
+      "claim_id": "eccde3a2-a850-49e3-8b35-738cd57d6bb8",
+      "result_id": "c78d1140-2655-482a-9010-37af2ac026ca"
+    },
+    {
+      "claim_id": "bf29ace6-0f18-48a9-9160-e3f80bbe3a65",
+      "result_id": "c78d1140-2655-482a-9010-37af2ac026ca"
+    },
+    {
+      "claim_id": "2264c162-24fe-40f3-82bc-25cf427a68e9",
+      "result_id": "151a021d-cdce-41e3-9efa-74753473fd5b"
+    },
+    {
+      "claim_id": "bd6170ce-9486-44e7-b5c5-4adc4cbf5215",
+      "result_id": "151a021d-cdce-41e3-9efa-74753473fd5b"
+    },
+    {
+      "claim_id": "89dd0650-26a9-4ad9-9d50-d809e1a2fb93",
+      "result_id": "151a021d-cdce-41e3-9efa-74753473fd5b"
+    },
+    {
+      "claim_id": "f09f6b02-8aad-459e-b9e1-02cd348e43a0",
+      "result_id": "151a021d-cdce-41e3-9efa-74753473fd5b"
+    },
+    {
+      "claim_id": "f920392f-04a2-4ab2-843c-cc8ca810f88e",
+      "result_id": "151a021d-cdce-41e3-9efa-74753473fd5b"
+    },
+    {
+      "claim_id": "ded70cff-b030-4af0-8674-1675da0566f8",
+      "result_id": "151a021d-cdce-41e3-9efa-74753473fd5b"
+    },
+    {
+      "claim_id": "4c824b34-ad83-4536-801e-b5e54c47dc08",
+      "result_id": "151a021d-cdce-41e3-9efa-74753473fd5b"
+    },
+    {
+      "claim_id": "9b373a18-5a0c-449d-abfe-9d0ee6c969f4",
+      "result_id": "4216fe25-85a4-47a7-b1bc-70a3dabfa61e"
+    },
+    {
+      "claim_id": "e71c3b4d-0de9-4632-9d49-bb0c56813134",
+      "result_id": "4216fe25-85a4-47a7-b1bc-70a3dabfa61e"
+    },
+    {
+      "claim_id": "868fc4ee-f617-4ab5-9e30-8a61e9d99c1e",
+      "result_id": "4216fe25-85a4-47a7-b1bc-70a3dabfa61e"
+    },
+    {
+      "claim_id": "adfa8d8f-b616-43a6-9d0d-98de73b33d52",
+      "result_id": "4216fe25-85a4-47a7-b1bc-70a3dabfa61e"
+    },
+    {
+      "claim_id": "57944334-bcf7-4304-ab36-2107cc21b5cc",
+      "result_id": "4216fe25-85a4-47a7-b1bc-70a3dabfa61e"
+    },
+    {
+      "claim_id": "f5c70207-2d38-4fb4-a450-2ec6daf7c3b1",
+      "result_id": "4216fe25-85a4-47a7-b1bc-70a3dabfa61e"
+    },
+    {
+      "claim_id": "f691fb28-c82b-40d9-a724-1c0b1055e378",
+      "result_id": "05b673bb-a15b-4ccd-bf48-b5f648052a82"
+    },
+    {
+      "claim_id": "bfccdb89-ad8d-43be-9940-83cef3cd8452",
+      "result_id": "05b673bb-a15b-4ccd-bf48-b5f648052a82"
+    },
+    {
+      "claim_id": "1f197fc8-5774-4eb3-8c49-7ea41148cd6f",
+      "result_id": "05b673bb-a15b-4ccd-bf48-b5f648052a82"
+    },
+    {
+      "claim_id": "530ef02f-18a3-4750-833d-fc2d36543d0f",
+      "result_id": "05b673bb-a15b-4ccd-bf48-b5f648052a82"
+    },
+    {
+      "claim_id": "8d47ccb5-461b-496e-8dcc-e711f28488d9",
+      "result_id": "05b673bb-a15b-4ccd-bf48-b5f648052a82"
+    },
+    {
+      "claim_id": "3520d0a9-e632-47c5-ac16-f2cf67c9906b",
+      "result_id": "05b673bb-a15b-4ccd-bf48-b5f648052a82"
+    },
+    {
+      "claim_id": "18284a0e-1108-4bff-9fdb-111c78e5df90",
+      "result_id": "05b673bb-a15b-4ccd-bf48-b5f648052a82"
+    },
+    {
+      "claim_id": "acc60e01-1582-4d74-802f-830c88afa897",
+      "result_id": "05b673bb-a15b-4ccd-bf48-b5f648052a82"
+    },
+    {
+      "claim_id": "48f005a8-b8ea-40e8-9a5b-bf53650f50e6",
+      "result_id": "05b673bb-a15b-4ccd-bf48-b5f648052a82"
+    },
+    {
+      "claim_id": "13398fef-dbf5-4c8c-9a07-17f6355f459f",
+      "result_id": "467295af-7055-4d07-a3b3-09acb6a2c441"
+    },
+    {
+      "claim_id": "17d7ab64-ff89-4df2-9e52-f9f63e495ce1",
+      "result_id": "467295af-7055-4d07-a3b3-09acb6a2c441"
+    },
+    {
+      "claim_id": "a2712e77-d32d-413f-bb57-7cd040b5e5f7",
+      "result_id": "467295af-7055-4d07-a3b3-09acb6a2c441"
+    },
+    {
+      "claim_id": "85ae83b6-3a65-42e3-87e4-6f4c0766ba97",
+      "result_id": "467295af-7055-4d07-a3b3-09acb6a2c441"
+    },
+    {
+      "claim_id": "d58cfb22-7cb6-4829-87f0-fb2adf45eb64",
+      "result_id": "467295af-7055-4d07-a3b3-09acb6a2c441"
+    },
+    {
+      "claim_id": "cd6c7cdf-c26f-41cd-abf4-2ef6b6da20c5",
+      "result_id": "be6b915e-72ea-4ae1-b5d4-e430f90c009d"
+    },
+    {
+      "claim_id": "9a6f7cc9-58c9-4cd3-a099-0cd3f448d624",
+      "result_id": "be6b915e-72ea-4ae1-b5d4-e430f90c009d"
+    },
+    {
+      "claim_id": "d7dc1d4b-8aad-46ad-98b1-3ee2e2b5513a",
+      "result_id": "be6b915e-72ea-4ae1-b5d4-e430f90c009d"
+    },
+    {
+      "claim_id": "7f9610fa-e494-4e34-9dd0-28e3cc674826",
+      "result_id": "233146c0-e287-4f20-a0ac-5b0b8615190c"
+    },
+    {
+      "claim_id": "88c4e74d-dd97-4211-afaa-4444d03435b7",
+      "result_id": "233146c0-e287-4f20-a0ac-5b0b8615190c"
+    },
+    {
+      "claim_id": "792cd23c-a2d6-49cf-8d23-06439fbe5b0a",
+      "result_id": "233146c0-e287-4f20-a0ac-5b0b8615190c"
+    },
+    {
+      "claim_id": "7b9d4535-56e9-4176-b44f-6e179271c5c3",
+      "result_id": "233146c0-e287-4f20-a0ac-5b0b8615190c"
+    }
+  ],
+  "comparisons": []
+}

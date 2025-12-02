@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C122",
+      "C123"
+    ],
+    "result": "The Zdbf2 locus undergoes a promoter switch from distal pLiz to proximal pZdbf2 during the na\u00efve-to-primed pluripotency transition (around D4 of EpiLC differentiation), accompanied by a switch from polycomb to DNA methylation occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C15-C17, C122-C123 collectively demonstrate the promoter switch with RNA-seq data (C15-C17, C122-C123), ChIP-seq showing polycomb-to-DNA methylation transition (C4), and temporal dynamics (C122-C123). The data from Figure 1 and supplementary figures provide converging molecular evidence for this developmental transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "Four enhancers (E1-4) contribute to Zdbf2 promoter regulation: E1-3 are active enhancers regulating pLiz in ESCs, while E4 is a poised enhancer necessary for pZdbf2 activation in EpiLCs, independent of DNA methylation or polycomb status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 identify the enhancers using ATAC-seq, H3K27ac ChIP, P300 binding, and conservation data. Claims C40-C42 demonstrate E1-3 function through deletion experiments showing reduced Liz expression. Claims C45-C46, C49 show E4 is specifically required for Zdbf2 activation through \u0394E4 deletion experiments, with no effect on DNA methylation or polycomb (C47-C48). The genetic and molecular data converge to support distinct enhancer functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C34",
+      "C37",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C89",
+      "C92"
+    ],
+    "result": "Dynamic changes in chromatin architecture occur during the promoter switch: in ESCs, a CTCF-mediated partition separates pLiz/E1-3 from pZdbf2/E4; during differentiation, CTCF depletion at the partition site allows pZdbf2 to interact with all enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 demonstrate CTCF-mediated partitioning using 4C-seq and CTCF ChIP data (Figure 4A-B). Claims C34, C37 show differential promoter-enhancer interactions in ESCs vs EpiLCs. Claims C7-C8, C89, C92 synthesize the model. The 4C-seq data clearly shows the partition structure in ESCs and its dissolution in EpiLCs, with corresponding changes in CTCF binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C59",
+      "C60",
+      "C65",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C98",
+      "C99"
+    ],
+    "result": "3D chromatin organization acts upstream of polycomb and DNA methylation pathways: CTCF partitioning occurs independently of DNA methylation, Liz transcription, and polycomb status, establishing a hierarchical regulatory model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 demonstrate that CTCF partition formation and dissolution are independent of polycomb (Eed mutants), DNA methylation (Dnmt tKO), and Liz transcription (\u0394Liz mutants) using 4C-seq and ChIP data. Claims C59-C60, C65 show limited effects of Liz/polycomb on 3D organization. Claims C98-C99 synthesize the epistatic relationship. The genetic experiments in multiple mutant backgrounds provide strong evidence for the hierarchical model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C94",
+      "C95"
+    ],
+    "result": "CTCF partition deletion (\u0394CTCF_PS) impairs pLiz activation in ESCs and substantially reduces Zdbf2 expression during differentiation, with the partition acting as a second layer of protection (along with polycomb) against precocious pZdbf2 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 show reduced pLiz-E1-3 interactions and Liz expression in \u0394CTCF_PS ESCs. Claims C80-C82 demonstrate substantial Zdbf2 reduction despite eventual Liz recovery and normal pLiz methylation. Claims C83-C84 show increased pZdbf2-enhancer contacts but maintained polycomb repression. Claims C86-C87 demonstrate additive effects in double mutants (\u0394CTCF_PS; Eed-/-), supporting the two-layer protection model (C88). The genetic epistasis experiments provide strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C63",
+      "C64"
+    ],
+    "result": "E4 enhancer activity is controlled in a polycomb-dependent manner: in Eed mutant ESCs, E4 and pZdbf2 become enriched for H3K27ac and exhibit increased interactions, while in \u0394Liz mutants where polycomb persists, E4 fails to activate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 show H3K27ac enrichment at E4 and pZdbf2 in Eed-/- ESCs using ChIP-qPCR (Figure 3A). Claim C56 shows reduced E4 activation in \u0394Liz mutants where polycomb persists. Claims C58, C63-C64 demonstrate increased pZdbf2-E4 interactions but not with E1-3 in Eed mutants using 4C-seq. The data from multiple mutant backgrounds converge to support polycomb-dependent E4 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "In \u0394E1-3 mutants, DNA methylation accumulates faster at pLiz but fails to properly accumulate at the sDMR (reaching only 67% by D7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are directly supported by bisulfite pyrosequencing data in Figure 2D showing differential methylation dynamics at pLiz vs sDMR in \u0394E1-3 mutants. The data are quantitative and show clear differences from WT, consistent with reduced Liz expression affecting sDMR methylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "E4 is depleted for both H3K27me3 and H3K27me2, though deleting E4 causes slight ectopic H3K27me3 spreading 1 kb upstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by H3K27me3 and H3K27me2 ChIP-qPCR data in Figures 2H and 2\u2014figure supplement 1D. The data show E4 is depleted for both marks, with modest spreading upon deletion. This characterizes E4 as distinct from classical poised enhancers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The Zdbf2 locus exists within an inter-TAD spanning ~650 kb that can be subdivided into relatively mutually exclusive intra-Zdbf2 and intra-Adam23 interaction domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by published Hi-C data (Bonev et al., 2017) shown in Figure 1\u2014figure supplement 3A. Claim C33 is supported by 4C-seq data in Figure 1\u2014figure supplement 3B showing subdomain structure. The combination of Hi-C and 4C-seq provides converging evidence for the domain organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Deleting the E3 element alone has no impact on expression or DNA methylation at the Zdbf2 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is directly supported by RT-qPCR and bisulfite sequencing data in Figure 2\u2014figure supplement 1B,C showing no effect of \u0394E3 deletion. This suggests E3 may be redundant with E1-E2 or serves a different function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C100"
+    ],
+    "result": "Global depletion of CTCF leads to upregulation of Zdbf2 in ESCs, indicating CTCF plays a role in Zdbf2 regulation independent of the partition site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C100 are supported by RT-qPCR data in CTCF degron cells shown in Figure 4\u2014figure supplement 2E. The data show Zdbf2 upregulation upon CTCF depletion, suggesting additional CTCF-mediated regulation beyond the partition site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The ESC-to-EpiLC cellular system biallelically recapitulates in vivo paternal allele events, with D7 EpiLCs clustering with EpiSCs and showing primed pluripotency markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by prior work (Greenberg et al., 2017) establishing the system validity. Claims C120-C121 are supported by hierarchical clustering (Figure 1\u2014figure supplement 1C) and RNA-seq marker expression (Figure 1\u2014figure supplement 1D). This validates the cellular model for studying the developmental transition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "E1-3 may act hierarchically with respect to E4 and pZdbf2, being important for activation rather than sustaining expression, though this requires further testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is explicitly speculative ('conceivable', 'further testing must be performed'). While the interaction patterns and deletion phenotypes are consistent with this model, the authors acknowledge this is inference requiring additional validation. No direct experiments test sustained vs. initial activation roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C101",
+      "C102",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Background claims about developmental epigenetic reprogramming, enhancer switching, CTCF binding patterns, and promoter switching in development are supported by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14, C101-C102, C106-C111 are all supported by appropriate citations to prior work. These provide context for the current study and are standard background knowledge in the field. The citations appear appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C113",
+      "C114",
+      "C117"
+    ],
+    "result": "Background claims about Zdbf2 function, promoter organization, and regulatory mechanisms are supported by prior work and established knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C18-C21, C113-C114, C117 provide background on Zdbf2 biology supported by citations to prior work (Duffi\u00e9 et al., 2014; Greenberg et al., 2017; Mas et al., 2018) and general developmental biology knowledge. These establish the biological context and prior findings that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "OCT4 is enriched at all putative enhancers in both ESCs and EpiLCs, suggesting pluripotency-dependent regulation, with coherent in vivo and in cellula regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by publicly available ChIP-seq data (Buecker et al., 2014). Claim C30 is a reasonable inference from OCT4 binding. Claim C31 is supported by comparison with in vivo ICM data (Liu et al., 2016; Wu et al., 2016) shown in Figure 1\u2014figure supplement 2B. The use of published data is appropriate and supports the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "4C-seq analysis suggests E1-3 contribute to pLiz regulation based on increased interactions in ESCs, while E1-4 may cooperatively activate pZdbf2 based on increased contacts in EpiLCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C38 are reasonable inferences from 4C-seq data (C34, C37) showing differential interaction patterns. Claim C36 notes the absence of pLiz-E4 looping. While these are interpretations of interaction data rather than direct functional tests, they are supported by the 4C-seq evidence and are appropriately cautious ('contribute', 'potential').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The polycomb region regulating pZdbf2 spans ~25 kb and forms a tightly packed domain in ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by H3K27me3 ChIP-seq data in Figure 1A defining the polycomb domain extent. Claim C62 is supported by 4C-seq data in Figure 1C showing compact interactions within this region, consistent with prior reports (Kundu et al., 2017). The data clearly show the domain structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The \u0394CTCF_PS deletion does not perturb expression of Gpr1 or genes flanking the Zdbf2 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by RT-qPCR data in Figure 4\u2014figure supplement 2C showing no significant changes in neighboring gene expression. This control experiment demonstrates the specificity of the CTCF partition effect to the Zdbf2 locus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "In \u0394CTCF_PS ESCs, Zdbf2 does not ectopically activate despite increased pZdbf2-enhancer interactions because polycomb-mediated silencing persists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by RT-qPCR showing no Zdbf2 expression (Figure 4E), 4C-seq showing increased interactions (Figure 4\u2014figure supplement 2B), and H3K27me3 ChIP showing maintained polycomb (Figure 4\u2014figure supplement 3A). This demonstrates the two-layer protection model where both CTCF and polycomb must be relieved for activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C112"
+    ],
+    "result": "The Zdbf2 locus represents a case of CTCF-guided, developmentally timed alternative promoter usage of shared enhancers, with CTCF facilitating pLiz while restricting pZdbf2 in ESCs, and CTCF being a candidate for organizing genic 3D structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 synthesize the main findings about CTCF-mediated promoter switching. Claim C112 is a reasonable inference from the demonstrated role of CTCF at Zdbf2. These conclusions are well-supported by the combined genetic, molecular, and 3D chromatin data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "ATAC-seq shows the pLiz peak diminishes while the pZdbf2 peak is enhanced during ESC to EpiLC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are directly supported by ATAC-seq data in Figure 1A showing differential chromatin accessibility at the two promoters across differentiation. This provides direct evidence for the promoter switch at the chromatin level.",
+    "result_type": "MINOR"
+  }
+]

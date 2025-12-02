@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The manuscript establishes the context that catastrophic forgetting is a major unsolved problem in artificial neural networks, while biological systems have evolved mechanisms to prevent it. Various computational approaches have been attempted to address this problem, including interleaved training and synaptic freezing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C9, C90-C93 provide well-established background from prior literature on catastrophic forgetting in artificial networks and existing approaches to address it. These claims are supported by appropriate citations and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Prior research has established that sleep, particularly NREM sleep, plays an important role in memory consolidation through mechanisms involving memory replay during characteristic sleep rhythms such as spindles and slow oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 and C98-C104 summarize well-established prior work on sleep and memory consolidation, supported by extensive citations to experimental literature. These provide appropriate scientific context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C118"
+    ],
+    "result": "The authors' prior computational work demonstrated that sleep dynamics can lead to replay and strengthening of memory traces, and that implementing sleep-like phases in artificial networks can reduce catastrophic forgetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, and C118 are supported by citations to the authors' own prior published work, providing appropriate context for the current study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C105",
+      "C119",
+      "C120"
+    ],
+    "result": "The computational model implements a minimal thalamocortical architecture with Hodgkin-Huxley neurons that exhibits wake and slow-wave sleep states, with plasticity regulated by STDP in cortical PY-PY connections and neuromodulator effects simulated through parameter changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C105, C119-C120 describe the model architecture and implementation, which is clearly documented in the Methods section and illustrated in Figure 1. The model builds on the authors' prior validated work with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27"
+    ],
+    "result": "Training spatially separated memory sequences S1 and S2 resulted in increased synaptic weights and improved performance for both sequences without interference, with further improvements after sleep including increased directionality index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C27 are directly supported by modeling results shown in Figure 2, demonstrating that non-overlapping sequences can be learned without interference and consolidated during sleep. The data clearly show the predicted synaptic weight changes and performance improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C28",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The model predicts that sleep following training leads to backwards receptive field expansion in cortical neurons, analogous to hippocampal place field dynamics, with predictions about differences between CA1, CA3, and cortex based on their different functional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26, C129-C139 make predictions about cortical receptive field dynamics and comparisons to hippocampal data. While C28, C133-C134, C137 cite supporting hippocampal data, the cortical predictions (C26, C138-C139) remain untested. The speculation about differences between brain regions (C135-C136) lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Memory patterns trained during wakefulness are spontaneously replayed during sleep, with a strong positive correlation between synaptic weight changes and the number of Up states showing replay, resulting in strengthened synaptic pathways that explain improved recall after sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by the replay analysis shown in Figure 3, which demonstrates the correlation between replay frequency and synaptic strengthening. The analysis methodology is clearly described and the results directly support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Sequential training of two competing memory sequences (S1 and S1*) in the same neuronal population results in catastrophic forgetting, with the new sequence (S1*) progressively erasing the old sequence (S1) as training duration increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are directly supported by modeling results in Figure 4, which clearly demonstrate interference and catastrophic forgetting when competing sequences are trained sequentially. The dose-response relationship between S1* training duration and S1 performance degradation (C35) provides strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Interleaved training of competing sequences S1 and S1* prevents catastrophic forgetting and increases performance for both sequences through orthogonalization, with different neurons becoming specific for each sequence, though this approach does not achieve optimal separation and has inherent limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by citations to prior experimental work and modeling results in Figure 4\u2014figure supplement 1. Claims C94-C96 provide appropriate analysis of the limitations of interleaved training compared to sleep, supported by the comparative modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Sleep following sequential training of competing memories reverses the damage to old memories while enhancing both old and new memories, increasing the directionality index and developing neurons strongly specific for one sequence or another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are strongly supported by modeling results in Figure 5, showing clear performance improvements for both S1 and S1* after sleep. Claims C45-C46 make testable predictions for future experiments based on these results. The data demonstrate the key finding that sleep can reverse catastrophic forgetting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The training paradigm with sleep between learning episodes (S1\u2192sleep\u2192S1*\u2192sleep) shows qualitatively similar results to sequential training followed by sleep, with both memories improving after the second sleep episode, consistent with Complementary Learning Systems Theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by modeling results in Figure 5\u2014figure supplement 1, demonstrating that the key findings hold across different training protocols. The consistency with theoretical predictions (C52) is appropriately supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "After sleep, individual neuron pairs preferentially support only one sequence, with neurons divided into those participating in one sequence replay versus both, and both sequences showing high replay counts across Up states with partial replays occurring during the same Up state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 and C60 are supported by detailed replay analysis in Figure 6, showing the asymmetric connectivity matrix and the patterns of neuronal participation in sequence replay. The analysis demonstrates orthogonalization at the single-neuron level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Memory replay occurs predominantly during the first half of Up states, particularly near Down-to-Up transitions, consistent with experimental data on hippocampal sharp-wave ripples, with predictions about differential timing of hippocampal-dependent versus spontaneous cortical replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C127 are supported by modeling results, while C59, C125-C126 provide supporting citations to experimental data. Claim C128 makes a testable prediction. The temporal dynamics of replay are well-characterized, though C128 remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Sleep promotes competition between synapses such that specific subsets representing each memory trace are strengthened to the upper bound while others are weakened, maximizing recall performance while minimizing interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by the synaptic weight distribution analysis in Figure 7A, which clearly shows the bimodal distribution emerging after sleep. The inference about competition (C63) is well-supported by the data showing selective strengthening and weakening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Sleep converts recurrent connections into functionally unidirectional connections preferentially supporting one memory sequence, decreasing recurrent connection density to ~15% while increasing unidirectional connection strength, thereby orthogonalizing memory representations to allow multiple memories in overlapping neuronal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 are comprehensively supported by the detailed synaptic connectivity analysis in Figure 7B-E. The quantitative changes in connection types and the comparison to interleaved training (C65-C66) provide strong evidence for the proposed mechanism of memory orthogonalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C123",
+      "C124"
+    ],
+    "result": "Sleep-induced orthogonalization of memory representations occurs regardless of whether the LTP/LTD ratio is biased toward LTD or LTP, with sleep selectively increasing memory-specific connections while potentially resetting other synapses to increase network capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 and C123 are supported by modeling results in Figure 7\u2014figure supplement 2, demonstrating robustness of the orthogonalization mechanism. Claim C124 is appropriately labeled as a prediction. The results show the mechanism is not dependent on specific plasticity parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Sleep increases segregation of neurons based on response delays, with neurons receiving strongest synaptic input in a given direction also responding with shortest delays and receiving the most reliably replayed synapses during sleep, showing strong correlation between these three measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by the response delay analysis in Figure 8B-D. The strong correlation between synaptic input, response delay, and replay participation (C80) provides convergent evidence for the functional significance of sleep-induced reorganization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The model demonstrates a progression from initial allocation of all resources to one memory, through progressive erasure during competing memory training leading to catastrophic forgetting, to sleep-mediated orthogonalization allowing co-existence of multiple memories in overlapping neuronal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 provide a comprehensive summary of the main findings, supported by the schematic in Figure 8E and the cumulative evidence from all prior results. This represents the core mechanistic insight of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Sleep can reverse catastrophic forgetting through spontaneous reactivation and replay of both old and new memory traces, creating orthogonal representations that enable continual learning, with memory representations being dynamic and changing after each training-sleep cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 represent the main conclusions of the study, well-supported by the comprehensive modeling results and analyses presented throughout. These conclusions appropriately synthesize the findings while acknowledging their predictive nature (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C106",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "During sleep replay, only memory-specific subsets of neurons and synapses are involved in each episode, allowing partial sequence replays without complete erasure of old memories, with spontaneous activity and unsupervised plasticity enabling reactivation and reversal of damage from new learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C112-C113 are supported by the replay analysis in Figure 6. Claims C106, C115-C116 represent well-supported inferences from the modeling results. Claim C114 provides supporting experimental evidence from recent literature. The partial replay mechanism is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The mechanisms identified for NREM sleep may also apply to REM sleep and hippocampal-driven replay, with similar synaptic weight dynamics and orthogonalization observed when Up/Down oscillations are replaced by REM-like activity or when sharp-wave ripple inputs are included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 extend the findings to other sleep states and hippocampal interactions. C109 is supported by additional modeling simulations, while C108, C110 are supported by citations to prior work. C107, C111 are appropriately framed as speculations with supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C121",
+      "C122"
+    ],
+    "result": "The apparent catastrophic forgetting in artificial networks may not represent irreversible information loss, and the sleep-related changes (hyperpolarization and increased excitatory connectivity) promote replay by enhancing the dynamical range for trained patterns while reducing synaptic noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is appropriately framed as speculation based on the modeling results. Claim C121 provides a mechanistic explanation for how sleep promotes replay, well-supported by the model implementation. Claim C122 accurately cites the Sleep Homeostasis Hypothesis for context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Unlike hippocampal replay which shows backwards replay and decreases over time, the model shows persistent forward replay during sleep, and the authors argue there is no definitive evidence for backwards replay or decreased replay in cortex, with cortical replay potentially increasing through synaptic tagging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C142 accurately cite hippocampal findings. Claim C143 reports the model results. However, C144 makes a strong assertion about lack of evidence without comprehensive citation, and C145-C146 rely on limited citations. The comparison between hippocampus and cortex requires more experimental validation.",
+    "result_type": "MINOR"
+  }
+]

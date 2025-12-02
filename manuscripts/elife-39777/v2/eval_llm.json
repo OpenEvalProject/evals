@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C69",
+      "C70"
+    ],
+    "result": "Dynamic calcium activity in hippocampal CA1 neurons varies significantly across behavioral states, with highest rates during exploratory behavior and REM sleep (theta states), and lowest rates during slow wave sleep. Ca2+ event rates and amplitudes show state-dependent modulation, with comparable rates between quiet wakefulness and slow wave sleep despite differences in neuronal firing patterns reported in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C35, C69-C70 provide converging statistical evidence (repeated measures ANOVA with post-hoc tests, n=5-7 mice) demonstrating state-dependent modulation of Ca2+ activity. The data show significant main effects of behavioral state on both Ca2+ event rates (F(3,12)=17.97, p<0.001) and amplitudes (F(3,12)=4.488, p=0.025), with appropriate post-hoc comparisons. The finding that Ca2+ event rates were comparable in quiet wakefulness and slow wave sleep (C70) is explicitly supported by the data, though it contrasts with prior reports of firing rate differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Somatic Ca2+ activity shows a robust reduction in association with sharp wave ripples (SWRs), with the reduction starting before SWR onset. SWR singlets show transient Ca2+ suppression, while SWR trains elicit a post-train increase in Ca2+ activity. A small fraction of synchronous Ca2+ events (12.6\u00b15.6%) coincide with SWRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 provide comprehensive statistical evidence (repeated measures ANOVA, n=7-8 mice) for SWR-associated modulation of Ca2+ activity. The temporal analysis accounts for detection delays and demonstrates that Ca2+ reduction precedes SWR onset by ~189ms (C41-C43). The differential response to SWR singlets versus trains (C44-C45) is well-supported statistically. Control experiments with electrical stimulation (C43) validate temporal alignment. The inverse analysis (C46-C47) confirms bidirectional relationship between Ca2+ events and SWRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C80"
+    ],
+    "result": "Chemogenetic activation of medial septal cholinergic neurons using hM3Dq-DREADD increases hippocampal Ca2+ event rates during quiet wakefulness without affecting event amplitudes or multiunit activity. This manipulation reduces SWR rates but does not significantly alter theta power. Effects are specific to hM3Dq expression and are observed with both systemic and intrahippocampal CNO administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C48-C58, C80 provide strong evidence from chemogenetic experiments with appropriate controls. Systemic CNO increased Ca2+ event rates (p=0.005, n=6) without affecting amplitudes (p=0.677) or behavior (p=0.3, n=5). Intrahippocampal CNO replicated these effects (p=0.008, n=5). Critical controls show no effect in animals lacking hM3Dq (C54, C58), ruling out off-target CNO effects. The reduction in SWR rates (p=0.035) is consistent with prior literature (C52). However, the lack of theta power change (C53) is unexpected given the known role of cholinergic neurons in theta generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C81",
+      "C82"
+    ],
+    "result": "Muscarinic acetylcholine receptor (mAChR) inhibition with scopolamine markedly reduces hippocampal Ca2+ event rates and amplitudes during exploratory behavior without diminishing multiunit activity. Scopolamine increases SWR rates and theta power, with effects observed following both systemic and intrahippocampal administration. The effect of hM3Dq activation on Ca2+ activity is blocked by scopolamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C59-C68, C81-C82 provide robust pharmacological evidence. Systemic scopolamine reduced Ca2+ event rates (p=0.014) and amplitudes (p<0.001, n=7) without affecting multiunit activity (p=0.087, n=6). Intrahippocampal scopolamine replicated these effects (rates: p=0.043; amplitudes: p=0.038, n=5), confirming local hippocampal action. Scopolamine blocked hM3Dq effects (C59: rates p=0.014, amplitudes p=0.001), demonstrating mAChR dependence. The increase in SWR rates (p=0.012) and theta power (p=0.05) is consistent with known cholinergic effects. However, the dissociation between Ca2+ activity and multiunit activity (C61, C82) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C83",
+      "C84",
+      "C96"
+    ],
+    "result": "Hippocampal dynamic calcium activity depends on behavioral state, theta oscillations, and endogenous mAChR activation. Medial septal cholinergic activity through mAChR activation critically regulates hippocampal Ca2+ activity in vivo, with low cholinergic tone potentially explaining the dissociation between Ca2+ activity and action potentials in slow wave sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C83-C84, C96 represent integrative conclusions supported by the combined experimental evidence from behavioral state analysis (C2, C27-C35), chemogenetic activation (C3-C4, C48-C58), and pharmacological inhibition (C5-C6, C60-C68). The convergence of evidence from multiple experimental approaches (state-dependent recording, gain-of-function chemogenetics, loss-of-function pharmacology) strongly supports the causal role of cholinergic-mAChR signaling in regulating Ca2+ activity. The inference about low cholinergic tone in slow wave sleep (C84) is reasonable given the data, though direct measurement of cholinergic tone was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C50",
+      "C61",
+      "C82"
+    ],
+    "result": "Neither behavioral state transitions, chemogenetic activation of cholinergic neurons, nor mAChR inhibition significantly altered hippocampal multiunit activity, despite marked effects on Ca2+ activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33, C50, C61, C82 report null effects on multiunit activity across multiple manipulations. However, the authors acknowledge that microscope-associated electrical noise prevented analysis during run behavior (C33), limiting interpretation. The lack of isolated single units (acknowledged in Discussion) further limits conclusions. While the statistical tests show non-significance (p=0.544, p=0.461, p=0.087), the absence of effect size reporting and potential measurement artifacts make it difficult to determine whether this represents a true dissociation or a measurement limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The majority of Ca2+ event bursts (>0.5 Hz instantaneous rate) were associated with movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by statistical analysis (p=6.5\u00d710\u207b\u2075, paired t-test, n=6 mice). However, the authors note they did not detect a consistent relationship between animal speed and Ca2+ event rates at individual or group level, suggesting the relationship between movement and Ca2+ bursts is complex and may not be simply speed-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C73"
+    ],
+    "result": "Neuronal firing rates appear to change less markedly with behavioral state than dynamic Ca2+ activity, and state-dependent cholinergic effects on Ca2+ activity may not be uniform across brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71 and C73 are inferences based on comparison with prior literature rather than direct measurements in this study. C71 compares the current Ca2+ data with prior firing rate studies (Grosmark et al., 2012; Miyawaki and Diba, 2016), but the authors' own multiunit data were limited by technical artifacts. C73 is based on comparison with cortical Ca2+ imaging (Niethard et al., 2016), but cross-study comparisons are complicated by methodological differences. These claims require direct comparative measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The differential Ca2+ response to SWR singlets versus trains may reflect distinct functional roles, with inhibition during SWRs and neocortical DOWN states potentially contributing to pre-SWR Ca2+ suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C79 are speculative interpretations of the SWR-Ca2+ relationship based on citations to prior work. While the differential response to singlets versus trains is well-documented in the data (C44-C45), the mechanistic explanations (inhibition, DOWN states, reduced ACh) are not directly tested. These represent reasonable hypotheses that require experimental validation through direct measurement of inhibition, cortical state, or cholinergic tone during SWRs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "Complex spiking during theta states may be more effective at generating Ca2+ transients than the few action potentials fired during SWRs. High Ca2+ activity during theta states suggests preferential contribution to memory encoding processes, with implications for Ca2+-dependent gene expression and synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86, C88-C93, C95 represent speculative interpretations linking the observed Ca2+ patterns to memory function. While C85 is supported by citations to prior work on complex spiking, C86 and the functional implications (C88-C93, C95) are not directly tested. The study did not measure complex spiking, gene expression, LTP, or memory performance. These represent reasonable hypotheses based on the data and prior literature, but require experimental validation through direct measurement of these processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Impairment of cholinergic-dependent Ca2+ activity may contribute to hippocampal dysfunction in Alzheimer's disease, where cholinergic neuron loss and Ca2+ dyshomeostasis occur, and cholinesterase inhibitors provide clinical benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 extend the findings to Alzheimer's disease. While C98-C99 accurately cite prior literature on cholinergic loss and cholinesterase inhibitor efficacy in AD, C97's causal claim about contribution to hippocampal failure is speculative. The study was conducted in young, healthy mice and did not examine disease models or mechanisms of AD pathology. This represents a reasonable hypothesis for future investigation but is not supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C87",
+      "C94"
+    ],
+    "result": "Background claims establishing the role of calcium signaling, hippocampal oscillations, cholinergic modulation, and their relationships based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C26, C87, C94 represent background knowledge from prior literature, appropriately cited. These establish the scientific context for the study, including calcium's role in neurons (C1), properties of theta and SWRs (C8-C11), calcium imaging as a proxy for action potentials (C12-C13), calcium regulation mechanisms (C14-C15), cholinergic anatomy and function (C16-C26), and ACh's role in memory (C87, C94). The citations appear appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Methodological details for viral injection, lens implantation, electrode placement, calcium imaging parameters, LFP recording, behavioral state classification, and event detection thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C109 describe experimental methods with appropriate detail. Viral injection coordinates and volumes are specified (C100), electrode types and positions are described (C101), imaging parameters are provided (C102: 20 fps), LFP recording parameters are given (C103: 2 kHz, 0.5-900 Hz), and behavioral state definitions are operationalized (C104-C107). Event detection thresholds are clearly stated (C108-C109: 3 Z-scores for most analyses, 2 Z-scores for pharmacology). These methods are standard for the field and adequately described for replication.",
+    "result_type": "MINOR"
+  }
+]

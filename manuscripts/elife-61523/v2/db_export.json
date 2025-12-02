@@ -1,0 +1,2028 @@
+{
+  "submission": {
+    "id": "57c53b8d-2c9e-433e-b1fc-a347910cb8bc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:44:16.936384Z",
+    "updated_at": "2025-12-02T20:44:16.936384Z"
+  },
+  "content": [
+    {
+      "id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "submission_id": "57c53b8d-2c9e-433e-b1fc-a347910cb8bc",
+      "content_type": "manuscript",
+      "content_text": "# An interactive meta-analysis of MRI biomarkers of myelin\n\n## Authors\n\n- Matteo Mancini<sup>1</sup> ([ORCID: 0000-0001-7194-4568](https://orcid.org/0000-0001-7194-4568)) \u2020\n- Agah Karakuzu<sup>2</sup> ([ORCID: 0000-0001-7283-271X](https://orcid.org/0000-0001-7283-271X))\n- Julien Cohen-Adad<sup>2</sup> ([ORCID: 0000-0003-3662-9532](https://orcid.org/0000-0003-3662-9532))\n- Mara Cercignani<sup>1</sup> ([ORCID: 0000-0002-4550-2456](https://orcid.org/0000-0002-4550-2456))\n- Thomas E Nichols<sup>6</sup> ([ORCID: 0000-0002-4516-5103](https://orcid.org/0000-0002-4516-5103))\n- Nikola Stikov<sup>2</sup> ([ORCID: 0000-0002-8480-5230](https://orcid.org/0000-0002-8480-5230))\n\n### Affiliations\n\n1. Department of Neuroscience, Brighton and Sussex Medical School, University of Sussex Brighton United Kingdom\n2. NeuroPoly Lab, Polytechnique Montreal Montreal Canada\n3. CUBRIC, Cardiff University Cardiff United Kingdom\n4. Functional Neuroimaging Unit, CRIUGM, Universit\u00e9 de Montr\u00e9al Montreal Canada\n5. Neuroimaging Laboratory, Fondazione Santa Lucia Rome Italy\n6. Wellcome Centre for Integrative Neuroimaging (WIN FMRIB), University of Oxford Oxford United Kingdom\n7. Big Data Institute, University of Oxford Oxford United Kingdom\n8. Montreal Heart Institute, Universit\u00e9 de Montr\u00e9al Montreal Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nSeveral MRI measures have been proposed as in vivo biomarkers of myelin, each with applications ranging from plasticity to pathology. Despite the availability of these myelin-sensitive modalities, specificity and sensitivity have been a matter of discussion. Debate about which MRI measure is the most suitable for quantifying myelin is still ongoing. In this study, we performed a systematic review of published quantitative validation studies to clarify how different these measures are when compared to the underlying histology. We analyzed the results from 43 studies applying meta-analysis tools, controlling for study sample size and using interactive visualization (https://neurolibre.github.io/myelin-meta-analysis). We report the overall estimates and the prediction intervals for the coefficient of determination and find that MT and relaxometry-based measures exhibit the highest correlations with myelin content. We also show which measures are, and which measures are not statistically different regarding their relationship with histology.\n\n## Introduction\n\nMyelin is a key component of the central nervous system. The myelin sheaths insulate axons with a triple effect: allowing fast electrical conduction, protecting the axon, and providing trophic support (Nave and Werner, 2014). The conduction velocity regulation has become an important research topic, with evidence of activity-dependent myelination as an additional mechanism of plasticity (Fields, 2015; Sampaio-Baptista and Johansen-Berg, 2017). Myelin is also relevant from a clinical perspective, given that demyelination is often observed in several neurological diseases such as multiple sclerosis (H\u00f6ftberger and Lassmann, 2018).\n\nGiven this important role in pathology and plasticity, measuring myelin in vivo has been an ambitious goal for magnetic resonance imaging (MRI) for more than two decades (MacKay et al., 1994; Rooney et al., 2007; Stanisz et al., 1999). Even though the thickness of the myelin sheath is in the order of micrometres, well beyond the MRI spatial resolution, its presence influences several physical properties that can be probed with MRI, from longitudinal and transversal relaxation phenomena to water molecule diffusion processes.\n\nHowever, being sensitive to myelin is not enough: to study how and why myelin content changes, it is necessary to define a specific biomarker. Interestingly, the quest for measuring myelin has evolved in parallel with an important paradigm shift in MRI research, where MRI data are no longer treated as just \u2018pictures\u2019, but as actual 3D distributions of quantitative measures. This perspective has breathed new life into an important field of research, quantitative MRI (qMRI), that encompasses the study of how to measure the relevant electromagnetic properties that influence magnetic resonance phenomena in biological tissues (Cercignani et al., 2018; Cohen-Adad and Wheeler-Kingshott, 2014). From the very definition of qMRI, it is clear that its framework applies to any approach for non-invasive myelin quantification.\n\nSimilarly to other qMRI biomarkers, MRI-based myelin measurements are indirect, and might be affected by other microstructural features, making the relationship between these indices and myelination noisy. Assessing the accuracy of such measurements, and their sensitivity to change, is essential for their translation into clinical applications. Validation is therefore a fundamental aspect of their development (Cohen-Adad, 2018). The most common approach is based on acquiring MR data from in vivo or ex vivo tissue and then comparing those data with the related samples analyzed using histological techniques. Despite being the most realistic approach, this comparison involves several methodological choices, from the specific technique used as a reference to the quantitative measure used to describe the relationship between MRI and histology. So far, a long list of studies have looked at MRI-histology comparisons (Cohen-Adad, 2018; Laule and Moore, 2018; MacKay and Laule, 2016; Petiet et al., 2019), each of them focusing on a specific pathology and a few MRI measures.\n\nDespite these numerous studies, there is still an ongoing debate on what MRI measure should be used to quantify myelin and as a consequence there is a constant methodological effort to propose new measures. This debate would benefit from a quantitative analysis of all the findings published so far, specifically addressing inter-study variations and prospects for future studies, something that is currently missing from the literature.\n\nIn this study, we systematically reviewed quantitative MRI-histology comparisons and we used meta-analysis tools to address the following question: how different are the modalities for myelin quantification in terms of their relationship with the underlying histology?\n\n## Results\n\n### Literature survey\n\nThe screening process is summarized in the flowcharts in Figure 1 and Appendix 1\u2014figure 1. The keywords as reported in the appendix returned 688 results on PubMed (last search on 03/06/2020). These results included 50 review articles. From the 50 review articles, six were selected as relevant for both the topics of myelin and related MRI-histology comparisons (Cohen-Adad, 2018; Laule and Moore, 2018; Laule et al., 2007; MacKay and Laule, 2016; Petiet et al., 2019; Turner, 2019). After the assessment, 58 original research studies were considered eligible, as shown in Appendix 1\u2014table 1 (in the appendix) and Figure S2. All the data collected are available in the supplementary materials (Source data 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig1-v2.jpg)\n\n**Figure 1.:** To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/01/selection.html#figure-1.\n\nIn terms of specific modalities, the survey shows that the most common MRI approach compared with histology was diffusion-weighted imaging (used in 28 studies), followed by magnetization transfer (MT, 27 studies), T2 relaxometry (19 studies) and T1 relaxometry (10 studies). Only 20 studies considered more than one approach: among the others, 20 focused exclusively on diffusion, 12 on MT, and six on T2 relaxometry.\n\nFrom these 58 studies, we then focused only on brain studies and we further excluded studies not reporting either the number of subjects or the number of ROIs per subject. We also excluded one single-subject study that relied on voxels as distinct samples, whereas the other studies in this review are based on ROIs (i.e. including more than one voxel). In the end, 43 suitable studies were identified for the subsequent analyses.\n\n### Meta-analysis\n\nTo compare the studies of interest, we first organized them according to the MRI measure used. Figure 2 and Figure 3 (and also Figure S3-S4) show the R2 values for the selected studies across measures: the highest values (R2\u00a0>0.8) are obtained mostly from MT measures, but they are associated with small sample sizes (with an average of 32 sample points). The studies with largest sample sizes are associated with R2 values between 0.6 and 0.8 for MT and T2 relaxometry, but with lower values for T1 relaxometry and other approaches.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig2-v2.jpg)\n\n**Figure 2.:** To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/02/closer_look.html#figure-3.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig3-v2.jpg)\n\n**Figure 3.:** The color of each box represents the reported R2 value while the size box is proportional to the sample size. To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/02/closer_look.html#figure-4.\n\nTo combine the results for each measure, we then used a mixed-effect model: in this way we were able to express the overall effect size in terms of a range of R2 values within a confidence interval, but also to assess prediction intervals and inter-study differences. The results are shown as forest plots in Figure 4 (and also Figure S5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig4-v2.jpg)\n\n**Figure 4.:** The hourglasses and the dotted lines in the mixed-effect model outcomes represent the prediction intervals. To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/03/meta_analysis.html#figure-5.\n\nApart from MPF and MWF, all the measures showed R2 overall estimates in the range 0.21\u20130.53. To investigate the significance of the differences between measures, we conducted a repeated measures meta-regression on every R2 estimate recorded (98 in total over 43 studies). As shown in Figure 5 (and also Figure S6), the measures can be roughly subdivided in two groups: MT- and relaxometry-based measures gave significantly higher R2 estimates compared to diffusion-based measures. Within the diffusion-based measures, FA shows slightly higher estimates than the others, with marginal significance over RD and AD or no significance in case of MD.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig5-v2.jpg)\n\n**Figure 5.:** In the z-score heatmap, each element refers to the comparison between the measure on the x axis with the one on the y axis. For example, MPF and FA (z-score\u00a0=\u00a07.14; p-value<0.0001) are statistically different, while MPF and T1 (z-score\u00a0=\u00a02.51; p-value=0.43) are not statistically different. To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/03/meta_analysis.html#figure-6.\n\nWithin MT- and relaxometry-based measures, the trends follow those in the forest plots (Figure 4), but most differences are not significant (Figure 5). However, the results in terms of z-score give a measure of distance between the R2 distributions. From this perspective, MPF has higher R2 estimates compared to all the other measures, but it is only marginally higher than MWF (z-score\u00a0=\u00a00.77; p-value=1) so we cannot claim that one is superior to the other. Following the same reasoning, MTR and T1 are not statistically different (z-score\u00a0=\u00a00.47; p-value=1).\n\nWhen considering the prediction intervals calculated using \u03c42 (the variance of the effect size parameters across the population of studies), for most measures the interval spanned from 0.1 to 0.9 (Figure 4 and Figure S5). This implies that future studies relying on such measures can expect, on the basis of these studies, to obtain any R2 value in this broad interval. The only exceptions were MPF (0.49\u20131) and MWF (0.45\u20130.95), whose intervals were narrower than the alternatives. Finally, I2 (a measure of how much of the variability in a typical study is due to heterogeneity in the experimental design) was generally quite high (Table 1). MWF showed the lowest I2 across measures (I2\u00a0=\u00a073.19%), but this may be misleading considering that it was based on only four studies, while the other measures included around 10 studies. Excluding MWF, MPF also showed a relatively low I2 (I2\u00a0=\u00a083.18%). Qualitative comparisons across experimental conditions and methodological choices highlighted differences across pathology models, targeted tissue types and reference techniques (Figure 6 and Figure S7). Other factors such as magnetic field, co-registration, specific tissue and the related conditions (Figure S8) showed comparable distributions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/61523/elife-61523-fig6-v2.jpg)\n\n**Figure 6.:** To see the interactive figure: https://neurolibre.github.io/myelin-meta-analysis/04/other_factors.html#figure-7.\n\n**Table 1.**\n Results from the mixed-effect models: for each measure we reported the number of studies, the estimate and standard error of the overall R2 distribution, the \u03c42 and the I2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Measure</th>\n      <th>Number of studies</th>\n      <th>Estimate</th>\n      <th>Standard error</th>\n      <th>Tau2</th>\n      <th>I2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MTR</td>\n      <td>16</td>\n      <td>0.508</td>\n      <td>0.0691</td>\n      <td>0.07</td>\n      <td>96.03%</td>\n    </tr>\n    <tr>\n      <td>MPF</td>\n      <td>10</td>\n      <td>0.7657</td>\n      <td>0.0455</td>\n      <td>0.0128</td>\n      <td>83.18%</td>\n    </tr>\n    <tr>\n      <td>FA</td>\n      <td>17</td>\n      <td>0.3766</td>\n      <td>0.0663</td>\n      <td>0.0652</td>\n      <td>87.49%</td>\n    </tr>\n    <tr>\n      <td>RD</td>\n      <td>15</td>\n      <td>0.3364</td>\n      <td>0.0679</td>\n      <td>0.0615</td>\n      <td>92.30%</td>\n    </tr>\n    <tr>\n      <td>MD</td>\n      <td>12</td>\n      <td>0.2639</td>\n      <td>0.0679</td>\n      <td>0.044</td>\n      <td>87.35%</td>\n    </tr>\n    <tr>\n      <td>T1</td>\n      <td>8</td>\n      <td>0.5321</td>\n      <td>0.0692</td>\n      <td>0.0328</td>\n      <td>86.51%</td>\n    </tr>\n    <tr>\n      <td>AD</td>\n      <td>9</td>\n      <td>0.2095</td>\n      <td>0.0802</td>\n      <td>0.048</td>\n      <td>97.69%</td>\n    </tr>\n    <tr>\n      <td>T2</td>\n      <td>7</td>\n      <td>0.3938</td>\n      <td>0.1023</td>\n      <td>0.0651</td>\n      <td>84.49%</td>\n    </tr>\n    <tr>\n      <td>MWF</td>\n      <td>4</td>\n      <td>0.6997</td>\n      <td>0.0432</td>\n      <td>0.0041</td>\n      <td>73.19%</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\n### Indirect measures are the most popular (for better or worse)\n\nThe literature survey offers an interesting perspective on popular research trends (Figure S2). The first consideration one can make is that every myelin imaging technique achieves myelin sensitivity through different means. A clear example is offered by the two most common approaches in this meta-analysis, DWI and MT: the MT effect is driven by saturation pulses interacting with myelin macromolecules that transfer their magnetization to water, whereas in diffusion experiments myelin is just not part of the picture. Diffusion acquisitions are blind to direct myelin measurement because the TEs used are too long (~100 ms) to be influenced by the actual macromolecules \u2013 with T2 of\u00a0~\u00a010 us (Stanisz et al., 1999) \u2013 or even the water molecules trapped in the myelin sheath \u2013 with T2 of\u00a0~\u00a030 ms (MacKay et al., 1994). To infer myelin content, one needs to rely on the interaction between intracellular and extracellular water compartments. The majority of diffusion studies included in this analysis used tensor-based measures (with fractional anisotropy being the most common), but some also used kurtosis-based analysis. The main issue with this approach is that other factors affect those measures (Beaulieu, 2002; Beaulieu, 2009), making it difficult to specifically relate changes in water compartments to changes in myelin.\n\nDespite this issue, the use of diffusion as a proxy for myelin is quite widespread, specifically outside the field of quantitative MRI. This is probably a consequence of how popular DWI has become and how widely available are the related acquisition sequences. MT, the second most popular technique for quantifying myelin, estimates myelin by acquiring data with and without saturating the macromolecular proton pool. The simplest MT measure, MT ratio (MTR), incorporates non-myelin contributions in the final measurement. Recent acquisition variations include computing MTR from acquisitions with ultra-short echo times (Du et al., 2009; Guglielmetti et al., 2020; Wei et al., 2018) or relying on inhomogeneous MT (Duhamel et al., 2019; Varma et al., 2015). More complex experiments, for\u00a0example quantitative MT, are based on fitting two compartments to the data, the free water and the macromolecular compartments, or pools. In this way, one is able to assess myelin through MPF with higher specificity, although still potentially including contributions from other macromolecules. Additional measures have also been considered (including the T2 of each pool, the exchange rate between the pools). The drawback of qMT is the requirement for a longer and more complex acquisition. Recently, there have been alternative techniques to estimate only MPF, resulting in faster acquisitions with similar results (Khodanovich et al., 2019; Khodanovich et al., 2017; Yarnykh, 2012). Despite being focused on macromolecular contributions, these approaches are not strictly specific to myelin (Sled, 2018): in this sense, an important limitation is that MT effects are sensitive to the pH of the targeted tissue and therefore changes in the pH (caused for example by inflammation processes) will affect MT-based measures of myelin (Stanisz et al., 2004).\n\nFollowing diffusion and MT, the most popular approach is T2 relaxometry. Unlike diffusion and MT, in T2 relaxometry experiments one can directly observe the contribution from the water trapped between the myelin bilayers, and can therefore estimate the myelin water fraction. A simpler but less specific approach consists in estimating the transverse relaxation time considering the decay to be mono-exponential. A historical and practical drawback of these approaches is that they require longer acquisitions, although faster alternatives have been developed (Does and Gore, 2000; Prasloski et al., 2012). A more subtle but nevertheless important limitation lies in the multi-compartment model used in multi-exponential T2 relaxometry (Does, 2018): this model generally assumes slow water exchange between compartments, but it has been showed that water exchange actually contributes to T2 spectra variations (Dula et al., 2010; Harkins et al., 2012).\n\nFinally, other studies used a diverse collection of other measures, including T1 relaxometry, apparent transversal relaxation rate (R2*), proton density (PD), macromolecular tissue volume (MTV), relaxation along a fictitious field (RAFF), and quantitative susceptibility mapping (QSM).\n\nAfter this general overview, it is clear that each modality could be a suitable candidate for a quantitative myelin biomarker. To then make a choice informed by the studies here reported, it becomes necessary to consider not only effect sizes in terms of correlation, but also sample sizes and acquisition times.\n\n### There is no myelin MRI measure true to histology\n\nWhen looking at the R2 values across the different measures, the first detail that catches one\u2019s eye is how most measures present a broad range of values (Figure 2 and Figure 3). When taking into account the sample size, the largest studies show higher correlations for MT and T2 relaxometry studies than any other approach (Figure S3 and Figure S4). In quantitative terms, the meta-analysis corroborates this idea, showing that MPF and MWF tend to be more specific to myelin compared to the other measures (respectively with R2\u00a0=\u00a00.7657 and R2\u00a0=\u00a00.6997), in line with the underlying theory. Notably, diffusion-based measures show the lowest overall estimates (with values between R2\u00a0=\u00a00.3766 for FA and R2\u00a0=\u00a00.2095 for AD): this could be due to the fact, as already mentioned, that DWI does not specifically measure myelin properties, and despite FA and RD being influenced by the myelin content, they are also influenced by other factors that make them unsuitable as measures of myelin. The repeated measure meta-regression confirms this overall picture, clearly distinguishing MT- and relaxometry-based measures from diffusion-based ones (Figure 5).\n\nDespite these considerations on the advantages of MPF and MWF, one should refrain from concluding that they are the \u2018true\u2019 MRI measures of myelin. The reason for this caution is given not by the overall effect sizes observed here, but by the collateral outcomes of the meta-analysis. The first one is given by the prediction intervals: most measures exhibit large intervals (Figure 4), not supporting the idea of them being robust biomarkers. MPF and MWF seem to be again the most suitable choices for future studies, but a range between 0.5 and 1 is still quite large.\n\nThe second important aspect to consider is given by the differences across studies: the meta-analysis showed how such differences strongly limit inter-study comparisons for a given measure (Figure 6). This result should be expected, given that the studies here examined are inevitably influenced by the specific experimental constraints and methodological choices. Given the limited number of studies, it is not possible to quantitatively study interactions between MRI measures and the other factors (e.g. modality used as a reference, tissue types, magnetic field strength). For further qualitative insights, we invite the reader to explore the interactive figures S7-S8. A first important factor to consider is the validation modality used as a reference, which will be dictated by the equipment availability and cost. However, such a choice has an impact on the actual comparison: histology and immunochemistry, despite being specific to myelin, do not offer a volumetric measure of myelin, but rather a proxy based on the transmittance of the histological sections. So far, the only modality able to give a volumetric measure would be electron microscopy, which is an expensive and resource-consuming approach. Also, electron microscopy has several limitations, including tissue shrinkage, degradation of the myelin sheath structure due to imperfect fixation, imperfect penetration of the osmium stain, polishing, keeping focus over large imaging regions. All these effects contribute to the lack of precision and accuracy when quantifying myelin content with EM-based histology (Cohen-Adad, 2018). Another important observation is that none of the studies here reviewed considered histology reproducibility, which is hard to quantify as a whole given that a sample can be processed only once: collateral factors affecting tissue processing (e.g. sectioning distortions, mounting and staining issues) constitute an actual limitation for histology-based validation. A further example of influential factor often dictated by equipment availability is the magnetic field strength of the MRI scanner: figure S8 shows that most studies were conducted at 7T and 9.4T, with some pioneering studies at 1.5T and even fewer ones at other field strengths.\n\nIn addition to differences in experimental and methodological designs, there are also several considerations that arise out of the lack of shared practices in MRI validation studies. The first evident one is the use of correlations: despite being a simple measure that serves well the purpose of roughly characterizing a relationship, Pearson correlation is not the right tool for quantitative biomarkers, as it does not characterize the actual relationship between histology and MRI. Linear regression is a step forward but has the disadvantage of assuming a linear relationship. Despite Pearson correlation and linear regression being the most common measures used in the studies here reviewed, it is still not clear if the relationship is actually linear. Only one study among the considered ones computed both Pearson and Spearman correlation values (Tardif et al., 2012), and reported higher Spearman correlations, pointing out that non-linear relationships should actually be considered. One last consideration regarding the use of correlation measures for validating quantitative biomarkers is about the intercept in the MRI-histology relationship. Notably, only MWF is expected to assume a value equal to zero when myelin is absent (West et al., 2018). For the other measures, it would be necessary to estimate the intercept, which leads to the calibration problem in the estimate of myelin volume fraction. Notably, calculating Pearson correlation does not provide any information for such calibration. Another arbitrary practice that would benefit from some harmonization is the choice of ROIs. The studies reported here examined a diverse list of ROIs, in most cases hand-drawn on each modality, encompassing different types of tissue, and the most common approach is to report a single, pooled correlation. This is problematic, as different types of tissue (e.g. grey matter and white matter) will show different values for MRI-based measures but also for histology-based ones, making linearity assumptions about the two modalities. However, with this approach gross differences between tissues drive the observed correlation, without actually showing if the MRI-based measure under analysis is sensitive to subtle differences and therefore a suitable quantitative biomarker for myelin. The effect of considering different types of tissues is showed in Figure 6 and Figure S7, where correlation ranges change when considering different types of tissue. However, the large correlation range in white matter, the most common tissue studied, suggests that other factors also affect the correlation.\n\nIt should be clear at this point that any debate about a universal MRI-based measure of myelin is pointless, at least at the moment, as the overall picture provided by previous studies does not point to any such ideal measure. Nevertheless, is debating about a universal measure helpful for future studies?\n\n### Better biomarkers require more reproducibility studies\n\nWe hope this meta-analysis convinces the reader that a holy grail of myelin imaging does not exist, at least as long as we consider histology to be the ground truth. Given that we all have to pick our poison, the upside is that measures based on MT and relaxometry are not statistically different, and therefore, future studies have an actual choice among candidate measures. For further progress, rather than debating about a perfect measure, we would argue that what is missing at the moment is a clear picture of what can be achieved with each specific MRI modality. The studies examined here focus on a large set of different measures, and more than half of them considered at most two measures, highlighting how the field is mostly focused on formulating new measures. While it is understood that novel measures can provide new perspectives, it is also fundamentally important to understand the concrete capabilities and limitations of current measures. From this meta-analysis, what the literature clearly lacks is reproducibility studies, specifically answering two main questions: (1) what is the specificity of each measure? We should have a practical validation of our theoretical understanding of the relevant confounds; (2) what is the \u2018parameter sensitivity\u2019 of each measure? Here, we refer to parameter sensitivity in a broad sense, that includes also experimental conditions and methodological choices. The results here presented show how certain conditions (e.g. pathology) seem to affect the coefficient of determination more than others but given the limited number of studies for each modality, we refrained from additional analyses to avoid speculation. A warning message that is evident from these results is the inherent limitation of DWI for estimating myelin content: this is not by any means a novel result (Beaulieu, 2002; Beaulieu, 2009), but it is nevertheless worth reiterating given the outcomes of our analysis. If estimating myelin content is relevant in a diffusion study, it is important to consider complementing the diffusion measure with one of the modalities here reviewed; in this way, it would be possible to decouple the influence of myelin content from the many other factors that come into play when considering diffusion phenomena.\n\nFinally, an important factor to take into account when choosing a biomarker of myelin is the actual application. For animal research, long acquisitions are not a major issue. However, when considering biomarkers for potential clinical use, the acquisition time can become a relevant issue. An example is the well-established multi-echo spin-echo implementation of MWF, that can only be used for a specific slice in a hypothetical clinical scenario. Faster techniques have been proposed for estimating it with gradient- and spin-echo (GRASE) sequences (Does and Gore, 2000; Feinberg and Oshio, 1991; Prasloski et al., 2012). Even in this case, the acquisition time still reaches 15 min for acquiring roughly the whole brain with an isotropic resolution of 2 mm. Complex MT acquisitions such as qMT suffer from the same problem, although it is possible to use optimized and faster protocols to focus specifically on MPF (Khodanovich et al., 2019; Khodanovich et al., 2017; Yarnykh, 2012).\n\n### Conclusions\n\nSeveral MRI measures are sensitive to myelin content and the current literature suggests that most of them are not statistically different in terms of their relationship with the underlying histology. Measures highly correlated with histology are also the ones with a higher expected specificity. This suggests that future studies should try to better address how specific each measure is, for the sake of clarifying suitable applications.\n\n## Materials and methods\n\n### Review methodology\n\nThe Medline database (https://pubmed.ncbi.nlm.nih.gov) was used to retrieve the articles. The keywords used are specified in the appendix. We followed the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines for record screening and study selection. The results were first screened to remove unrelated work. Specifically we discarded: work relying only on MRI; work relying only on histology or equivalent approaches; work reporting only qualitative comparisons. After this first screening, the remaining papers were assessed. At this stage, we discarded: studies using MRI-based measures in arbitrary units (e.g. T1-weighted or T2-weighted data); studies using measures of variation in myelin content (defined either as the difference between normal and abnormal myelin content) either for MRI or for histology; studies using arbitrary assessment scales; studies comparing MRI-based absolute measures of myelin with histology-based relative measures (e.g. g-ratio); studies reporting other quantitative measures than correlation or R2 values; studies comparing histology from one dataset and MRI from a different one. As an additional source for potential candidate studies, we screened the review articles in the initial results, and we selected the relevant studies that were not already present in the studies already selected.\n\nFrom the final papers, we collected first the following details: the DOI; which approach was used (diffusion, MT, T1 relaxometry, T2 relaxometry, or other); which specific MRI measures were compared to histology or equivalent techniques; the magnetic field; the technique used as a reference (histology, immunochemistry, microscopy, electron microscopy); the focus of the study in terms of brain, spinal cord or peripheral nerve; if the subjects were humans or animals, and if the latter which animal; if the tissue under exam was in vivo, in situ or ex vivo, and in the latter case if the tissue was fixed or not; if the tissue was healthy or pathological, and if the latter which pathology; the specific structures examined for correlation purposes; which comparison technique was used (e.g. Pearson correlation, Spearman correlation, linear regression); the number of subjects; the number of ROIs per subject; the male/female ratio; if registration procedures were performed to align MRI and histology; in case of pathological tissue, if control tissue was considered as well; other relevant notes. If before calculating the correlations the data were averaged across subjects, the number of subjects was considered to be one. The same consideration was made for averaging across ROIs. This is because the numbers of subjects and ROIs were used to take into account how many sample points were used when computing the correlation. We set each of those numbers to one for all the studies where the data were averaged respectively across subjects and across ROIs. Finally, in those cases where the number of ROIs or the number of subjects were given as a range rather than specific values, we used the most conservative value and added the related details to the notes.\n\nWe then proceeded to collect the quantitative results reported for each measure and for each study in the form of R2. Given that different studies may rely on a different strategy when reporting correlations, we adopted the following reasoning to limit discrepancies across studies while still objectively representing each of them. In case of multiple correlation values reported, for our analysis we selected the ones referring to the whole dataset and the entire brain if available, and considering each ROI in a given subject as a sample if possible; if only correlation values for specific ROIs were reported, the one for the most common reported structure would be chosen. In the case of multiple subjects, if data were provided separately for each group, the correlation for the control group was used. When different comparison methods were reported (e.g. both Pearson and Spearman correlation) or if the MRI data was compared with multiple references (e.g. both histology and immunohistochemistry), the correlations used were chosen on the basis of the following priority orders (from the most preferable to the least): for multiple comparison methods, linear regression, Spearman correlation, Pearson correlation; for multiple reference techniques, electron microscopy, immunohistochemistry, histology. Finally, in any other case where more than one correlation value was available, the most conservative value was used. Any other additional value was in any case mentioned in the notes of the respective study.\n\n### Meta-analysis\n\nFor the quantitative analysis, we restricted our focus on brain studies and only on the ones providing an indication of both the number of subjects and the number of ROIs. For each study, we computed the sample size as the product between the number of subjects and the number of ROIs per subject. In this way, we were able to compare the reported R2 values across measures taking into account the related number of points actually used for correlation purposes. We note that correlation or regression analyses run on multiple ROIs and subjects represents a repeated measures analysis, for which the degrees of freedom computation can be complex; however, most papers neglected the repeated measures structure of the data and thus the sample size computation here represents a very approximate and optimistic view of the precision of each R2 value.\n\nTo estimate the variance of each R2 value, we relied on the correlation properties and the delta method (Lehman, 1999). Let us consider the Pearson\u2019s correlation r of two variables X and Y with population correlation \u03c1. If r is calculated from N random samples, the sampling variance is (1-\u03c12)2/N. Applying the delta method, we then approximated the variance of R2 as 4 R2(1 R2)2/N, assuming R2\u2248\u03c12. As we recognise that some papers computed Spearman correlation, this calculation is again optimistic and may underestimate the sampling variability of the squared Spearman correlation.\n\nTo estimate the overall effect size in terms of R2,\u00a0we have to choose how to model the distribution of true effects given by the data collected from the literature. The two most common approaches are fixed-effects and mixed-effects models. While the underlying mathematical model is the same as the one used for linear regression (more details in the appendix), the assumptions are different: fixed-effects models assume that all the studies share a common effect size, while mixed-effects models assume that the effect size across studies is similar but not identical (Raudenbush, 2009). In our case, as the studies have several factors that influence the R2 values (e.g. histology/microscopy reference, magnetic field strength, pathology model), we expect a distribution of effect sizes due to inter-study differences. This is why we proceeded to fit a mixed-effects model to each measure that was featured in more than two studies. Apart from the effect size distributions, we reported two additional measures, I2 and \u03c42: the former expresses as a percentage how much of variability in a typical study is due to heterogeneity (i.e. the variation in study outcomes between studies) rather than chance (Higgins and Thompson, 2002), while the latter can be used to calculate the prediction interval (Raudenbush, 2009), which gives the expected range for the measure of interest in future studies. We used forest plots to represent the outcomes, and both the mixed effects estimate of the population estimated R2, with both a 95% confidence and a (larger) 95% prediction interval.\n\nFor the explicit purpose of comparing the effect sizes between different MRI measures, we conducted a repeated measures meta-regression on every R2 value recorded. We associated each R2 value with three additional details: (i) the related variance, as done in the measure-specific mixed-effects models; (ii) the related study, used as the random intercept (i.e. random variable) to incorporate potential inter-study variability; and (iii) the related MRI measure, used as the moderator (i.e. categorical variable) to estimate the differences between measures. In this way, the meta-regression leads to R2 intervals for each MRI measure, with the same trend as measure-specific mixed-effects models but with subtle differences. This is because the meta-regression makes two additional assumptions: first, R2 estimates within the same study share the same random effects and second, the between-study variance is the same for all observations. We then used the meta-regression R2 estimates to compute every possible pairwise comparison between MRI measures and to identify significantly different pairs using Tukey's test, while controlling the error rate over all the possible comparisons (Bonferroni correction).\n\nThis additional model is necessary, as direct comparisons are not possible with measure-specific analyses. While the repeated measures meta-regression makes direct comparisons straightforward, we reported the main R2 estimates based on the measure-specific mixed-effects models, as they make weaker assumptions.\n\nFor visual comparisons, we used the Jupyter notebook provided in the supplementary materials. For model fitting, we used the Metafor package, version 2.4\u20130 (Viechtbauer, 2010).\n",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "43a7301e-1e37-46c2-838f-ea9cced01870",
+      "submission_id": "57c53b8d-2c9e-433e-b1fc-a347910cb8bc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Saad Jbabdi, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61523.sa1](https://doi.org/10.7554/eLife.61523.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis meta-analysis is a great contribution to efforts in the neuroimaging field to better understand the biological underpinnings of MRI techniques. The work looks at published quantitative relationships between multiple MRI measures that are thought to be sensitive to myelin, and multiple measures from histology. The results are presented in an original, highly interactive manner, which will be a great resource for future studies of myelin in the brain.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"An interactive meta-analysis of MRI biomarkers of myelin\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Saad Jbabdi as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Chris Baker as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Mark Does (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nBelow is a compiled summary of all points raised by the three reviewers.\n\nThis article presents a meta-analysis of experimental comparisons between MRI and histological measures of myelin. The three reviewers agree that while this is not a particularly novel piece of work, it is well conducted and is presented in a highly original way using interactive visualisation, which is very useful for this type of complex meta analyses.\n\nThe reviewers agreed on the following points that need addressing:\n\n1) Relating to previous literature\n\nThe primary shortcoming of the manuscript is that while it does a good job of citing prior experimental MRI-histology studies, it does a relatively poor job of providing references for other claims/assertions. We realize that it is not the authors' intention to review the physics or experimental history of myelin imaging methods, but when the authors provide a reference to support a statement, they ought to make it a suitable one (which may require looking more than a couple years back in history). We've listed a few examples below, but the authors should review the entire manuscript with this in mind.\n\nExamples of questionable referencing:\n\n\"demyelination is often observed in several neurological diseases such as multiple sclerosis\", cite: Wang Y et al., 2015, a paper reporting diffusion spectrum imaging evaluations MS\n\n\"measuring myelin in vivo has been an ambitious goal for magnetic resonance imaging (MRI) for almost two decades\", cite: Petiet et al., 2019, a review of ultra-high field MRI measures of myelin.\n\n\"Diffusion acquisitions are blind to direct myelin measurement (Campbell et al., 2018)\"\n\n\"A warning message that is evident from these results is the inherent limitation of DWI for estimating myelin content\" again, this was studied extensively more than 20 years ago and has been discussed many time since. It's a good to reiterate, but don't make it sound like a novel finding.\n\n\"Faster techniques have been proposed for estimating it with gradient- and spin-echo (GRASE) sequences\", cite: Faizy et al., 2018. This approach dates back 20 years and was used by Prasloski in 2012 to generate whole cerebrum MWF imaging.\n\n2) Statistical analyses:\n\n\u2013 Are the authors able to assess whether the correlations that they report are driven by tissue type differences or finer changes in the degree of myelination?\n\n\u2013 Were there interactions between MR technique used and microscopy technique used in the literature? e.g. in Figure 5, are the R2 values for \"myelin thickness\" low because they happened to use diffusion measures rather than MT etc.?\n\n\u2013 In general there was not a lot of information on interactions between the variables. Another example: were some techniques more likely to have been done at lower field (there was a strong correlation between field-strength and R2)?\n\n\u2013 Given that the posed question is \"how different are the modalities in their relationship to histology\", is there a way to quantify or statistically test the mixed-model findings between modalities to effectively identify if any are better?\n\n\u2013 It would be useful to identify the different types of histological techniques alongside the studies for each modality in Figure 4. While this is just one of many factors that is driving the high I2, it would allow for the visualisation of the heterogeneity of histological assessments for each modality. Not all histological techniques are born equal and despite the limitations, that the authors have already discussed, electron microscopy might be arguably the best assessment. I suspect due to the high number of MRI modalities and histological techniques and relatively small number of studies, it's not possible to quantify if any modality has a particularly good correlation with any of the two electron microscopy metrics. Still, if possible might be worth doing as EM is the gold-standard for cellular neuroscientists in the myelin field.\n\n3) Overall message:\n\n\u2013 Although the authors' discussion and conclusions present a more nuanced view of the findings, this is not clear from the Abstract. At least two MRI markers (MWF and MPF) have fairly high correlations and moderate prediction intervals. We think this could come across a bit more in the Abstract, as it does in their conclusion. Whether these are a true representation of histologically measured myelin is a different question. The authors have discussed this distinction effectively in their manuscript.\n\n\u2013 We encourage the authors to consider leaving the reader on a somewhat more positive note. That is, while there is room for more study, this meta-analysis supports the view that myelin imaging with MRI is, in fact, relatively well substantiated by comparisons to histology. In fact, I would say that myelination is one characteristic of tissue that MRI has proven to be able to measure with a good level of specificity!\n",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "873ff5c5-5ef2-4386-8296-ab5def522faf",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C1",
+      "claim": "Myelin sheaths insulate axons with a triple effect: allowing fast electrical conduction, protecting the axon, and providing trophic support.",
+      "claim_type": "EXPLICIT",
+      "source": "The myelin sheaths insulate axons with a triple effect: allowing fast electrical conduction, protecting the axon, and providing trophic support (Nave and Werner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nave and Werner, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "c36a77e8-1817-49f4-a69c-ee0fde6c8b0a",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C2",
+      "claim": "Activity-dependent myelination is an additional mechanism of plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The conduction velocity regulation has become an important research topic, with evidence of activity-dependent myelination as an additional mechanism of plasticity (Fields, 2015; Sampaio-Baptista and Johansen-Berg, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fields, 2015 and Sampaio-Baptista and Johansen-Berg, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "23ef09c1-5750-41da-857b-b67e8adf236a",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C3",
+      "claim": "Demyelination is often observed in several neurological diseases such as multiple sclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Myelin is also relevant from a clinical perspective, given that demyelination is often observed in several neurological diseases such as multiple sclerosis (H\u00f6ftberger and Lassmann, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to H\u00f6ftberger and Lassmann, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "d10ca101-fa15-4f03-a4cc-ad28bb900279",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C4",
+      "claim": "The thickness of the myelin sheath is in the order of micrometres, well beyond the MRI spatial resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the thickness of the myelin sheath is in the order of micrometres, well beyond the MRI spatial resolution, its presence influences several physical properties that can be probed with MRI, from longitudinal and transversal relaxation phenomena to water molecule diffusion processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about myelin sheath dimensions and MRI resolution limits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "a5198614-8192-4096-b9be-694d01253c5c",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C5",
+      "claim": "The presence of myelin influences several physical properties that can be probed with MRI, from longitudinal and transversal relaxation phenomena to water molecule diffusion processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the thickness of the myelin sheath is in the order of micrometres, well beyond the MRI spatial resolution, its presence influences several physical properties that can be probed with MRI, from longitudinal and transversal relaxation phenomena to water molecule diffusion processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of MRI physics and myelin imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "a3975b5c-5164-4589-bb9c-821c29adc786",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C6",
+      "claim": "The keywords returned 688 results on PubMed (last search on 03/06/2020).",
+      "claim_type": "EXPLICIT",
+      "source": "The keywords as reported in the appendix returned 688 results on PubMed (last search on 03/06/2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the search results from the systematic review methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "2958f29c-aec0-48b3-80c1-6cb095b47e21",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C7",
+      "claim": "Six review articles were selected as relevant for both the topics of myelin and related MRI-histology comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 50 review articles, six were selected as relevant for both the topics of myelin and related MRI-histology comparisons (Cohen-Adad, 2018; Laule and Moore, 2018; Laule et al., 2007; MacKay and Laule, 2016; Petiet et al., 2019; Turner, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the selection process with citations to the selected reviews.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "42a9a1d0-c1d6-4e61-a42a-35e70f79d37a",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C8",
+      "claim": "58 original research studies were considered eligible after the assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "After the assessment, 58 original research studies were considered eligible, as shown in Appendix 1\u2014table 1 (in the appendix) and Figure S2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the number of studies included in the literature survey.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "b354752b-e477-469c-a577-6c2ae9c24909",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C9",
+      "claim": "Diffusion-weighted imaging was the most common MRI approach compared with histology, used in 28 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of specific modalities, the survey shows that the most common MRI approach compared with histology was diffusion-weighted imaging (used in 28 studies), followed by magnetization transfer (MT, 27 studies), T2 relaxometry (19 studies) and T1 relaxometry (10 studies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the survey results showing the frequency of different MRI approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "82bd81c6-7402-456d-93f7-4f31532eb47d",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C10",
+      "claim": "Magnetization transfer was used in 27 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of specific modalities, the survey shows that the most common MRI approach compared with histology was diffusion-weighted imaging (used in 28 studies), followed by magnetization transfer (MT, 27 studies), T2 relaxometry (19 studies) and T1 relaxometry (10 studies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the survey results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "e742e4da-7274-4e7a-94ea-36d0d714e2e3",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C11",
+      "claim": "T2 relaxometry was used in 19 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of specific modalities, the survey shows that the most common MRI approach compared with histology was diffusion-weighted imaging (used in 28 studies), followed by magnetization transfer (MT, 27 studies), T2 relaxometry (19 studies) and T1 relaxometry (10 studies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the survey results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "648b1f3b-39e9-4bef-bf79-d16135a70721",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C12",
+      "claim": "T1 relaxometry was used in 10 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of specific modalities, the survey shows that the most common MRI approach compared with histology was diffusion-weighted imaging (used in 28 studies), followed by magnetization transfer (MT, 27 studies), T2 relaxometry (19 studies) and T1 relaxometry (10 studies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the survey results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f746bb75-f3cb-446b-b975-cce707447e0d",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C13",
+      "claim": "Only 20 studies considered more than one MRI approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 20 studies considered more than one approach: among the others, 20 focused exclusively on diffusion, 12 on MT, and six on T2 relaxometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the survey results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "23023aa3-5743-4c5e-8ade-535f3c9a8e43",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C14",
+      "claim": "20 studies focused exclusively on diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 20 studies considered more than one approach: among the others, 20 focused exclusively on diffusion, 12 on MT, and six on T2 relaxometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the survey results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "0c7dd58a-4d5c-49c1-b696-12879153e393",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C15",
+      "claim": "12 studies focused exclusively on MT.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 20 studies considered more than one approach: among the others, 20 focused exclusively on diffusion, 12 on MT, and six on T2 relaxometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the survey results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "7a079c8e-6772-410f-a352-84b433ef35bd",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C16",
+      "claim": "Six studies focused exclusively on T2 relaxometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 20 studies considered more than one approach: among the others, 20 focused exclusively on diffusion, 12 on MT, and six on T2 relaxometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the survey results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "66b1ab75-15ee-44c4-b58a-311f71c1bd65",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C17",
+      "claim": "43 suitable studies were identified for the subsequent analyses after exclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the end, 43 suitable studies were identified for the subsequent analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the final number of studies included in the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "675fee0e-cb4d-4a3f-85d6-ae4f4782e733",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C18",
+      "claim": "The highest R2 values (R2 >0.8) are obtained mostly from MT measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 and Figure 3 (and also Figure S3-S4) show the R2 values for the selected studies across measures: the highest values (R2 >0.8) are obtained mostly from MT measures, but they are associated with small sample sizes (with an average of 32 sample points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "af5c0790-ff36-41ac-a3ab-cee912508cce",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C19",
+      "claim": "The highest R2 values from MT measures are associated with small sample sizes (with an average of 32 sample points).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 and Figure 3 (and also Figure S3-S4) show the R2 values for the selected studies across measures: the highest values (R2 >0.8) are obtained mostly from MT measures, but they are associated with small sample sizes (with an average of 32 sample points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "73ddfadd-c12e-4e98-80cf-9a14910f5715",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C20",
+      "claim": "Studies with largest sample sizes show R2 values between 0.6 and 0.8 for MT and T2 relaxometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies with largest sample sizes are associated with R2 values between 0.6 and 0.8 for MT and T2 relaxometry, but with lower values for T1 relaxometry and other approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of the data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "cf6fa5b4-6e06-4483-b46b-9488887e570a",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C21",
+      "claim": "Studies with largest sample sizes show lower R2 values for T1 relaxometry and other approaches compared to MT and T2 relaxometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies with largest sample sizes are associated with R2 values between 0.6 and 0.8 for MT and T2 relaxometry, but with lower values for T1 relaxometry and other approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of the data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "1bf1edc5-afb3-42b1-99b0-15ecbc2b6708",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C22",
+      "claim": "MPF shows an overall R2 estimate of 0.7657.",
+      "claim_type": "EXPLICIT",
+      "source": "MPF and MWF tend to be more specific to myelin compared to the other measures (respectively with R2 = 0.7657 and R2 = 0.6997), in line with the underlying theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "ccc50f56-8d42-49b1-87db-c976204307a0",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C23",
+      "claim": "MWF shows an overall R2 estimate of 0.6997.",
+      "claim_type": "EXPLICIT",
+      "source": "MPF and MWF tend to be more specific to myelin compared to the other measures (respectively with R2 = 0.7657 and R2 = 0.6997), in line with the underlying theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "bd1b512c-a10a-4d5f-abe6-1fb5a7535c56",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C24",
+      "claim": "Apart from MPF and MWF, all the measures showed R2 overall estimates in the range 0.21\u20130.53.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from MPF and MWF, all the measures showed R2 overall estimates in the range 0.21\u20130.53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "68e862a5-d91f-4560-b756-8e3007e87d81",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C25",
+      "claim": "MT- and relaxometry-based measures gave significantly higher R2 estimates compared to diffusion-based measures.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5 (and also Figure S6), the measures can be roughly subdivided in two groups: MT- and relaxometry-based measures gave significantly higher R2 estimates compared to diffusion-based measures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the meta-regression analysis results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "e7fa1b88-b4d1-400b-af5e-d0b49205ab9f",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C26",
+      "claim": "Within the diffusion-based measures, FA shows slightly higher estimates than the others, with marginal significance over RD and AD or no significance in case of MD.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the diffusion-based measures, FA shows slightly higher estimates than the others, with marginal significance over RD and AD or no significance in case of MD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "7258ffb7-c112-4c6e-bb1e-e4c57b3858ee",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C27",
+      "claim": "MPF has higher R2 estimates compared to all the other measures, but it is only marginally higher than MWF (z-score = 0.77; p-value=1).",
+      "claim_type": "EXPLICIT",
+      "source": "From this perspective, MPF has higher R2 estimates compared to all the other measures, but it is only marginally higher than MWF (z-score = 0.77; p-value=1) so we cannot claim that one is superior to the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "b1bfacc2-636d-40cc-95d8-8f0401a66b4f",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C28",
+      "claim": "MTR and T1 are not statistically different (z-score = 0.47; p-value=1).",
+      "claim_type": "EXPLICIT",
+      "source": "Following the same reasoning, MTR and T1 are not statistically different (z-score = 0.47; p-value=1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "2e20edfa-a7cc-482b-ae31-2b5aea48612b",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C29",
+      "claim": "For most measures the prediction interval spanned from 0.1 to 0.9.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the prediction intervals calculated using \u03c42 (the variance of the effect size parameters across the population of studies), for most measures the interval spanned from 0.1 to 0.9 (Figure 4 and Figure S5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the meta-analysis results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "e1a9c0da-d2a8-4573-809f-2d530a557457",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C30",
+      "claim": "MPF showed a prediction interval of 0.49\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exceptions were MPF (0.49\u20131) and MWF (0.45\u20130.95), whose intervals were narrower than the alternatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "a6ec13a7-1de1-47d3-a075-d62ec2b6690a",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C31",
+      "claim": "MWF showed a prediction interval of 0.45\u20130.95.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exceptions were MPF (0.49\u20131) and MWF (0.45\u20130.95), whose intervals were narrower than the alternatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "2e3e06c3-bc34-4e0b-a631-a6ea0e902ce0",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C32",
+      "claim": "I2 was generally quite high across measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, I2 (a measure of how much of the variability in a typical study is due to heterogeneity in the experimental design) was generally quite high (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the meta-analysis results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "d207845f-5a1f-4ed4-b957-cbdf7a4f0090",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C33",
+      "claim": "MWF showed the lowest I2 across measures (I2 = 73.19%).",
+      "claim_type": "EXPLICIT",
+      "source": "MWF showed the lowest I2 across measures (I2 = 73.19%), but this may be misleading considering that it was based on only four studies, while the other measures included around 10 studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-analysis results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "5b8ae6a7-d9f7-422b-8d5e-74e38186ed83",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C34",
+      "claim": "MPF showed a relatively low I2 (I2 = 83.18%).",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding MWF, MPF also showed a relatively low I2 (I2 = 83.18%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-analysis results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "78e280b7-aa62-4265-9b1d-da93d79d0f84",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C35",
+      "claim": "The MT effect is driven by saturation pulses interacting with myelin macromolecules that transfer their magnetization to water.",
+      "claim_type": "EXPLICIT",
+      "source": "A clear example is offered by the two most common approaches in this meta-analysis, DWI and MT: the MT effect is driven by saturation pulses interacting with myelin macromolecules that transfer their magnetization to water, whereas in diffusion experiments myelin is just not part of the picture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the MT mechanism in MRI.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "7ab55866-9859-4978-99fe-cc07e68e06ea",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C36",
+      "claim": "In diffusion experiments myelin is not directly measured.",
+      "claim_type": "EXPLICIT",
+      "source": "A clear example is offered by the two most common approaches in this meta-analysis, DWI and MT: the MT effect is driven by saturation pulses interacting with myelin macromolecules that transfer their magnetization to water, whereas in diffusion experiments myelin is just not part of the picture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about diffusion MRI and its relationship to myelin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f8eda47e-bc51-45b7-aa2e-cad2e6488e52",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C37",
+      "claim": "Diffusion acquisitions are blind to direct myelin measurement because the TEs used are too long (~100 ms) to be influenced by the actual macromolecules \u2013 with T2 of ~ 10 us.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion acquisitions are blind to direct myelin measurement because the TEs used are too long (~100 ms) to be influenced by the actual macromolecules \u2013 with T2 of ~ 10 us (Stanisz et al., 1999) \u2013 or even the water molecules trapped in the myelin sheath \u2013 with T2 of ~ 30 ms (MacKay et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Stanisz et al., 1999 and MacKay et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "2c08a1b1-e60a-46d8-b34a-9ba4261d50d6",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C38",
+      "claim": "Water molecules trapped in the myelin sheath have T2 of ~ 30 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion acquisitions are blind to direct myelin measurement because the TEs used are too long (~100 ms) to be influenced by the actual macromolecules \u2013 with T2 of ~ 10 us (Stanisz et al., 1999) \u2013 or even the water molecules trapped in the myelin sheath \u2013 with T2 of ~ 30 ms (MacKay et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to MacKay et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "206577a7-90b4-4ed9-8027-e6b82298e7f9",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C39",
+      "claim": "Other factors affect diffusion tensor-based measures, making it difficult to specifically relate changes in water compartments to changes in myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of diffusion studies included in this analysis used tensor-based measures (with fractional anisotropy being the most common), but some also used kurtosis-based analysis. The main issue with this approach is that other factors affect those measures (Beaulieu, 2002; Beaulieu, 2009), making it difficult to specifically relate changes in water compartments to changes in myelin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beaulieu, 2002 and Beaulieu, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f92fd4d9-72b1-48c1-a1ce-c22600f64dd2",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C40",
+      "claim": "MT-based measures are sensitive to the pH of the targeted tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, calculating Pearson correlation does not provide any information for such calibration. Another arbitrary practice that would benefit from some harmonization is the choice of ROIs. The studies reported here examined a diverse list of ROIs, in most cases hand-drawn on each modality, encompassing different types of tissue, and the most common approach is to report a single, pooled correlation. This is problematic, as different types of tissue (e.g. grey matter and white matter) will show different values for MRI-based measures but also for histology-based ones, making linearity assumptions about the two modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Stanisz et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "79618c65-6bc7-4000-93f2-848af5fe1432",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C41",
+      "claim": "Changes in pH caused by inflammation processes will affect MT-based measures of myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being focused on macromolecular contributions, these approaches are not strictly specific to myelin (Sled, 2018): in this sense, an important limitation is that MT effects are sensitive to the pH of the targeted tissue and therefore changes in the pH (caused for example by inflammation processes) will affect MT-based measures of myelin (Stanisz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Stanisz et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "73511dad-b9c9-4101-afc6-ddf2a42f6624",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C42",
+      "claim": "In T2 relaxometry experiments one can directly observe the contribution from the water trapped between the myelin bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Following diffusion and MT, the most popular approach is T2 relaxometry. Unlike diffusion and MT, in T2 relaxometry experiments one can directly observe the contribution from the water trapped between the myelin bilayers, and can therefore estimate the myelin water fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about T2 relaxometry and myelin water imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "3d526046-0691-47ed-abbd-ae20627fe039",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C43",
+      "claim": "T2 relaxometry can estimate the myelin water fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Following diffusion and MT, the most popular approach is T2 relaxometry. Unlike diffusion and MT, in T2 relaxometry experiments one can directly observe the contribution from the water trapped between the myelin bilayers, and can therefore estimate the myelin water fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about T2 relaxometry and myelin water imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "9f0997f1-7689-41c8-aebc-f7214a79358e",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C44",
+      "claim": "Faster alternatives for T2 relaxometry have been developed.",
+      "claim_type": "EXPLICIT",
+      "source": "A historical and practical drawback of these approaches is that they require longer acquisitions, although faster alternatives have been developed (Does and Gore, 2000; Prasloski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Does and Gore, 2000 and Prasloski et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "1fe4f79b-4b90-46da-a561-44ef40918da4",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C45",
+      "claim": "The multi-compartment model used in multi-exponential T2 relaxometry generally assumes slow water exchange between compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "A more subtle but nevertheless important limitation lies in the multi-compartment model used in multi-exponential T2 relaxometry (Does, 2018): this model generally assumes slow water exchange between compartments, but it has been showed that water exchange actually contributes to T2 spectra variations (Dula et al., 2010; Harkins et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Does, 2018, Dula et al., 2010, and Harkins et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "dd2c7fe8-42cf-4c1a-b9d8-acc5bc7f5676",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C46",
+      "claim": "Water exchange actually contributes to T2 spectra variations.",
+      "claim_type": "EXPLICIT",
+      "source": "A more subtle but nevertheless important limitation lies in the multi-compartment model used in multi-exponential T2 relaxometry (Does, 2018): this model generally assumes slow water exchange between compartments, but it has been showed that water exchange actually contributes to T2 spectra variations (Dula et al., 2010; Harkins et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dula et al., 2010 and Harkins et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f70310bd-104a-404a-a229-3482f565c365",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C47",
+      "claim": "Diffusion-based measures show the lowest overall estimates (with values between R2 = 0.3766 for FA and R2 = 0.2095 for AD).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, diffusion-based measures show the lowest overall estimates (with values between R2 = 0.3766 for FA and R2 = 0.2095 for AD): this could be due to the fact, as already mentioned, that DWI does not specifically measure myelin properties, and despite FA and RD being influenced by the myelin content, they are also influenced by other factors that make them unsuitable as measures of myelin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "5bda9d3f-4e02-45f7-a341-8cf714c12dee",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C48",
+      "claim": "DWI does not specifically measure myelin properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, diffusion-based measures show the lowest overall estimates (with values between R2 = 0.3766 for FA and R2 = 0.2095 for AD): this could be due to the fact, as already mentioned, that DWI does not specifically measure myelin properties, and despite FA and RD being influenced by the myelin content, they are also influenced by other factors that make them unsuitable as measures of myelin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge and the analysis results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f9db0089-2165-4006-b1f9-0fafc1c83215",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C49",
+      "claim": "FA and RD are influenced by myelin content but also by other factors that make them unsuitable as measures of myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, diffusion-based measures show the lowest overall estimates (with values between R2 = 0.3766 for FA and R2 = 0.2095 for AD): this could be due to the fact, as already mentioned, that DWI does not specifically measure myelin properties, and despite FA and RD being influenced by the myelin content, they are also influenced by other factors that make them unsuitable as measures of myelin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge and the analysis results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "16ada3ff-807a-407f-9cee-be6862d64a43",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C50",
+      "claim": "The repeated measure meta-regression distinguishes MT- and relaxometry-based measures from diffusion-based ones.",
+      "claim_type": "EXPLICIT",
+      "source": "The repeated measure meta-regression confirms this overall picture, clearly distinguishing MT- and relaxometry-based measures from diffusion-based ones (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the meta-regression analysis results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "3e475479-29ec-44eb-9e81-25baab48077e",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C51",
+      "claim": "Most measures exhibit large prediction intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for this caution is given not by the overall effect sizes observed here, but by the collateral outcomes of the meta-analysis. The first one is given by the prediction intervals: most measures exhibit large intervals (Figure 4), not supporting the idea of them being robust biomarkers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the meta-analysis results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "6f5b5eaa-e137-433c-8e76-ab21d933fe5e",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C52",
+      "claim": "MPF and MWF are the most suitable choices for future studies based on prediction intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "MPF and MWF seem to be again the most suitable choices for future studies, but a range between 0.5 and 1 is still quite large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the meta-analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "43468bba-fc74-467d-bd15-658014cf6945",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C53",
+      "claim": "Differences across studies strongly limit inter-study comparisons for a given measure.",
+      "claim_type": "EXPLICIT",
+      "source": "The second important aspect to consider is given by the differences across studies: the meta-analysis showed how such differences strongly limit inter-study comparisons for a given measure (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the meta-analysis results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "5df0b87d-87b6-4c16-b24e-72d4b74c5241",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C54",
+      "claim": "Histology and immunochemistry do not offer a volumetric measure of myelin, but rather a proxy based on the transmittance of the histological sections.",
+      "claim_type": "EXPLICIT",
+      "source": "A first important factor to consider is the validation modality used as a reference, which will be dictated by the equipment availability and cost. However, such a choice has an impact on the actual comparison: histology and immunochemistry, despite being specific to myelin, do not offer a volumetric measure of myelin, but rather a proxy based on the transmittance of the histological sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about histological techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f3b1d559-00d7-46f0-bfba-c128c8cd10d0",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C55",
+      "claim": "Electron microscopy is the only modality able to give a volumetric measure of myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, the only modality able to give a volumetric measure would be electron microscopy, which is an expensive and resource-consuming approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about electron microscopy capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "62e6b3b7-719c-42a4-b4e3-c340ac9617be",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C56",
+      "claim": "Electron microscopy has several limitations, including tissue shrinkage, degradation of the myelin sheath structure due to imperfect fixation, imperfect penetration of the osmium stain, polishing, keeping focus over large imaging regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, electron microscopy has several limitations, including tissue shrinkage, degradation of the myelin sheath structure due to imperfect fixation, imperfect penetration of the osmium stain, polishing, keeping focus over large imaging regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about electron microscopy limitations, supported by citation to Cohen-Adad, 2018.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "ece3023e-5e4c-4c9c-9fb7-23a2b4ca5ebc",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C57",
+      "claim": "None of the studies reviewed considered histology reproducibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Another important observation is that none of the studies here reviewed considered histology reproducibility, which is hard to quantify as a whole given that a sample can be processed only once: collateral factors affecting tissue processing (e.g. sectioning distortions, mounting and staining issues) constitute an actual limitation for histology-based validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the systematic review of the included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "e69391a3-99e5-405d-9045-fdd01ffb790c",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C58",
+      "claim": "Most studies were conducted at 7T and 9.4T magnetic field strengths.",
+      "claim_type": "EXPLICIT",
+      "source": "A further example of influential factor often dictated by equipment availability is the magnetic field strength of the MRI scanner: figure S8 shows that most studies were conducted at 7T and 9.4T, with some pioneering studies at 1.5T and even fewer ones at other field strengths.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the data shown in Figure S8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "b3e0ed72-3b78-40f0-b4a4-482434130902",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C59",
+      "claim": "Only one study among the considered ones computed both Pearson and Spearman correlation values.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one study among the considered ones computed both Pearson and Spearman correlation values (Tardif et al., 2012), and reported higher Spearman correlations, pointing out that non-linear relationships should actually be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the systematic review of the included studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "ffde2112-532d-4f0d-8f6e-3fd9dedb90a9",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C60",
+      "claim": "The study by Tardif et al., 2012 reported higher Spearman correlations than Pearson correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one study among the considered ones computed both Pearson and Spearman correlation values (Tardif et al., 2012), and reported higher Spearman correlations, pointing out that non-linear relationships should actually be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the citation to Tardif et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "ccc944b1-08c5-4ff6-8602-1777b5803706",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C61",
+      "claim": "Only MWF is expected to assume a value equal to zero when myelin is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "One last consideration regarding the use of correlation measures for validating quantitative biomarkers is about the intercept in the MRI-histology relationship. Notably, only MWF is expected to assume a value equal to zero when myelin is absent (West et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to West et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "99a737fc-2949-4659-9563-ea3dd1b83d67",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C62",
+      "claim": "More than half of the studies considered at most two MRI measures.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies examined here focus on a large set of different measures, and more than half of them considered at most two measures, highlighting how the field is mostly focused on formulating new measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the systematic review of the included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "c3a5273e-866d-4244-b366-bf132d2b1bbf",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C63",
+      "claim": "The field is mostly focused on formulating new measures.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies examined here focus on a large set of different measures, and more than half of them considered at most two measures, highlighting how the field is mostly focused on formulating new measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the systematic review results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f7194f76-dd03-403e-a1e1-7975908978b3",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C64",
+      "claim": "The literature clearly lacks reproducibility studies.",
+      "claim_type": "EXPLICIT",
+      "source": "From this meta-analysis, what the literature clearly lacks is reproducibility studies, specifically answering two main questions: (1) what is the specificity of each measure? We should have a practical validation of our theoretical understanding of the relevant confounds; (2) what is the 'parameter sensitivity' of each measure?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the meta-analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "8ec4c474-fa4e-4450-9237-d7c7434fb399",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C65",
+      "claim": "DWI has inherent limitations for estimating myelin content.",
+      "claim_type": "EXPLICIT",
+      "source": "A warning message that is evident from these results is the inherent limitation of DWI for estimating myelin content: this is not by any means a novel result (Beaulieu, 2002; Beaulieu, 2009), but it is nevertheless worth reiterating given the outcomes of our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beaulieu, 2002 and Beaulieu, 2009, and by the meta-analysis results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "a613a8f1-9a13-4ca4-99c9-b5b790401460",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C66",
+      "claim": "The multi-echo spin-echo implementation of MWF can only be used for a specific slice in a hypothetical clinical scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "An example is the well-established multi-echo spin-echo implementation of MWF, that can only be used for a specific slice in a hypothetical clinical scenario.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the limitations of multi-echo spin-echo MWF acquisitions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "1ae0d452-1f93-4a20-b90a-5688c75759a8",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C67",
+      "claim": "Faster techniques for estimating MWF with GRASE sequences have been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Faster techniques have been proposed for estimating it with gradient- and spin-echo (GRASE) sequences (Does and Gore, 2000; Feinberg and Oshio, 1991; Prasloski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Does and Gore, 2000, Feinberg and Oshio, 1991, and Prasloski et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "d5d07113-1637-4bd4-89e1-2c23114cdbe6",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C68",
+      "claim": "GRASE-based MWF acquisition time still reaches 15 min for acquiring roughly the whole brain with an isotropic resolution of 2 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in this case, the acquisition time still reaches 15 min for acquiring roughly the whole brain with an isotropic resolution of 2 mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GRASE-based MWF acquisition times.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "bb91c4f4-92fb-41c3-b576-d64daf4300f3",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C69",
+      "claim": "It is possible to use optimized and faster protocols to focus specifically on MPF.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex MT acquisitions such as qMT suffer from the same problem, although it is possible to use optimized and faster protocols to focus specifically on MPF (Khodanovich et al., 2019; Khodanovich et al., 2017; Yarnykh, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Khodanovich et al., 2019, Khodanovich et al., 2017, and Yarnykh, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "56ac6852-e0d9-47a1-8a44-46e3120b2e43",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C70",
+      "claim": "Several MRI measures are sensitive to myelin content.",
+      "claim_type": "EXPLICIT",
+      "source": "Several MRI measures are sensitive to myelin content and the current literature suggests that most of them are not statistically different in terms of their relationship with the underlying histology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the meta-analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "cee723af-6d14-47e8-a3ec-29883bd7333b",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C71",
+      "claim": "Most MRI measures are not statistically different in terms of their relationship with the underlying histology.",
+      "claim_type": "EXPLICIT",
+      "source": "Several MRI measures are sensitive to myelin content and the current literature suggests that most of them are not statistically different in terms of their relationship with the underlying histology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f60f6f7c-52ee-4d07-8d0d-04a1ee5ac313",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C72",
+      "claim": "Measures highly correlated with histology are also the ones with a higher expected specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Measures highly correlated with histology are also the ones with a higher expected specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the meta-analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "e433700d-6e54-43f5-9033-62c111e18552",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C73",
+      "claim": "The Medline database was used to retrieve the articles.",
+      "claim_type": "EXPLICIT",
+      "source": "The Medline database (https://pubmed.ncbi.nlm.nih.gov) was used to retrieve the articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "0938665c-8f87-431d-b707-50b650000a73",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C74",
+      "claim": "The study followed the PRISMA guidelines for record screening and study selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We followed the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines for record screening and study selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "39a851f8-cf15-4077-9ce2-f3ef6f43f2c5",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C75",
+      "claim": "A mixed-effects model was used to estimate the overall effect size in terms of R2.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate the overall effect size in terms of R2, we have to choose how to model the distribution of true effects given by the data collected from the literature. The two most common approaches are fixed-effects and mixed-effects models. While the underlying mathematical model is the same as the one used for linear regression (more details in the appendix), the assumptions are different: fixed-effects models assume that all the studies share a common effect size, while mixed-effects models assume that the effect size across studies is similar but not identical (Raudenbush, 2009). In our case, as the studies have several factors that influence the R2 values (e.g. histology/microscopy reference, magnetic field strength, pathology model), we expect a distribution of effect sizes due to inter-study differences. This is why we proceeded to fit a mixed-effects model to each measure that was featured in more than two studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the methodology with citation to Raudenbush, 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "84f40580-cb9e-48cf-b16b-4906e7c2fce2",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C76",
+      "claim": "The Metafor package, version 2.4\u20130 was used for model fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "For model fitting, we used the Metafor package, version 2.4\u20130 (Viechtbauer, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the methodology with citation to Viechtbauer, 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "1a8a07f2-d464-4f36-888d-31a5f65d717b",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C77",
+      "claim": "MTR has an overall R2 estimate of 0.508 with standard error 0.0691.",
+      "claim_type": "EXPLICIT",
+      "source": "MTR\t16\t0.508\t0.0691\t0.07\t96.03%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "abbc77ad-35fe-4bb5-9955-814ffa332695",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C78",
+      "claim": "MTR was analyzed in 16 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "MTR\t16\t0.508\t0.0691\t0.07\t96.03%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "7aa79876-94d2-4c55-bfa0-c7742cdb53ed",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C79",
+      "claim": "MTR has a Tau2 of 0.07 and I2 of 96.03%.",
+      "claim_type": "EXPLICIT",
+      "source": "MTR\t16\t0.508\t0.0691\t0.07\t96.03%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "a4cdd8f1-8409-4cfa-a97b-7ca1d9c2ad64",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C80",
+      "claim": "MPF was analyzed in 10 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "MPF\t10\t0.7657\t0.0455\t0.0128\t83.18%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "22c57b39-8da0-4668-a646-4ad618bad3ce",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C81",
+      "claim": "MPF has an overall R2 estimate of 0.7657 with standard error 0.0455.",
+      "claim_type": "EXPLICIT",
+      "source": "MPF\t10\t0.7657\t0.0455\t0.0128\t83.18%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "9baf1e8b-c043-4b7f-814d-4e680218b4b0",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C82",
+      "claim": "MPF has a Tau2 of 0.0128 and I2 of 83.18%.",
+      "claim_type": "EXPLICIT",
+      "source": "MPF\t10\t0.7657\t0.0455\t0.0128\t83.18%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "b5552ba4-62eb-4b85-97c3-a2ab2b90dd1d",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C83",
+      "claim": "FA was analyzed in 17 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "FA\t17\t0.3766\t0.0663\t0.0652\t87.49%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "8f5361da-70d5-4bc8-8368-758a7072ba99",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C84",
+      "claim": "FA has an overall R2 estimate of 0.3766 with standard error 0.0663.",
+      "claim_type": "EXPLICIT",
+      "source": "FA\t17\t0.3766\t0.0663\t0.0652\t87.49%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f0996517-6891-4e4e-8bbb-fb075140890f",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C85",
+      "claim": "FA has a Tau2 of 0.0652 and I2 of 87.49%.",
+      "claim_type": "EXPLICIT",
+      "source": "FA\t17\t0.3766\t0.0663\t0.0652\t87.49%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "ab82ca4e-ed14-44e3-9a17-0549e25d0be7",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C86",
+      "claim": "RD was analyzed in 15 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "RD\t15\t0.3364\t0.0679\t0.0615\t92.30%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "0d0df2c4-e9f0-4de4-97fd-8c9548496653",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C87",
+      "claim": "RD has an overall R2 estimate of 0.3364 with standard error 0.0679.",
+      "claim_type": "EXPLICIT",
+      "source": "RD\t15\t0.3364\t0.0679\t0.0615\t92.30%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "a9406232-0c3f-4510-b076-dde544931e39",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C88",
+      "claim": "RD has a Tau2 of 0.0615 and I2 of 92.30%.",
+      "claim_type": "EXPLICIT",
+      "source": "RD\t15\t0.3364\t0.0679\t0.0615\t92.30%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "285a7776-5ac9-4c05-90ed-09434d10553a",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C89",
+      "claim": "MD was analyzed in 12 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "MD\t12\t0.2639\t0.0679\t0.044\t87.35%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "ee53c045-8fc3-4a15-b210-ac6598eb3e50",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C90",
+      "claim": "MD has an overall R2 estimate of 0.2639 with standard error 0.0679.",
+      "claim_type": "EXPLICIT",
+      "source": "MD\t12\t0.2639\t0.0679\t0.044\t87.35%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "8577a15f-13a8-47ae-8104-d32aa56e70b5",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C91",
+      "claim": "MD has a Tau2 of 0.044 and I2 of 87.35%.",
+      "claim_type": "EXPLICIT",
+      "source": "MD\t12\t0.2639\t0.0679\t0.044\t87.35%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "12d9ff75-7cd9-4816-b438-d24f5b912f1e",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C92",
+      "claim": "T1 was analyzed in 8 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "T1\t8\t0.5321\t0.0692\t0.0328\t86.51%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "7748d28c-0509-45f4-9812-4c8bdac81bd4",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C93",
+      "claim": "T1 has an overall R2 estimate of 0.5321 with standard error 0.0692.",
+      "claim_type": "EXPLICIT",
+      "source": "T1\t8\t0.5321\t0.0692\t0.0328\t86.51%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "447d48e0-aab5-4f59-ba2c-be73ea28dc25",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C94",
+      "claim": "T1 has a Tau2 of 0.0328 and I2 of 86.51%.",
+      "claim_type": "EXPLICIT",
+      "source": "T1\t8\t0.5321\t0.0692\t0.0328\t86.51%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "e18f5837-d498-4210-afeb-ce27538edc17",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C95",
+      "claim": "AD was analyzed in 9 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "AD\t9\t0.2095\t0.0802\t0.048\t97.69%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "9b244371-9934-4223-aa66-3492bdfccbe3",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C96",
+      "claim": "AD has an overall R2 estimate of 0.2095 with standard error 0.0802.",
+      "claim_type": "EXPLICIT",
+      "source": "AD\t9\t0.2095\t0.0802\t0.048\t97.69%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "23b4b722-175a-45b5-bf0b-b3c54e96bcfe",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C97",
+      "claim": "AD has a Tau2 of 0.048 and I2 of 97.69%.",
+      "claim_type": "EXPLICIT",
+      "source": "AD\t9\t0.2095\t0.0802\t0.048\t97.69%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "335de05e-0b9c-43ed-8e57-2adf9d5d9e53",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C98",
+      "claim": "T2 was analyzed in 7 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "T2\t7\t0.3938\t0.1023\t0.0651\t84.49%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "42eec9bb-a92c-4859-8c05-9384c542ec92",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C99",
+      "claim": "T2 has an overall R2 estimate of 0.3938 with standard error 0.1023.",
+      "claim_type": "EXPLICIT",
+      "source": "T2\t7\t0.3938\t0.1023\t0.0651\t84.49%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "44fb9cdd-c943-4a16-b238-6de8b6d4b5d9",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C100",
+      "claim": "T2 has a Tau2 of 0.0651 and I2 of 84.49%.",
+      "claim_type": "EXPLICIT",
+      "source": "T2\t7\t0.3938\t0.1023\t0.0651\t84.49%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "6385dc81-27fc-43e6-b7b9-9b41d6bc1046",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C101",
+      "claim": "MWF was analyzed in 4 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "MWF\t4\t0.6997\t0.0432\t0.0041\t73.19%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "aaf35fae-766e-441b-ad25-00e9db98c6f2",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C102",
+      "claim": "MWF has an overall R2 estimate of 0.6997 with standard error 0.0432.",
+      "claim_type": "EXPLICIT",
+      "source": "MWF\t4\t0.6997\t0.0432\t0.0041\t73.19%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "fb2ca270-7485-4116-abda-1869034d3aee",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C103",
+      "claim": "MWF has a Tau2 of 0.0041 and I2 of 73.19%.",
+      "claim_type": "EXPLICIT",
+      "source": "MWF\t4\t0.6997\t0.0432\t0.0041\t73.19%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "26b5f839-b632-4a54-82f0-b0f44728b8b6",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "claim_id": "C104",
+      "claim": "MT and relaxometry-based measures exhibit the highest correlations with myelin content.",
+      "claim_type": "EXPLICIT",
+      "source": "We report the overall estimates and the prediction intervals for the coefficient of determination and find that MT and relaxometry-based measures exhibit the highest correlations with myelin content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the meta-analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e9f813ce-9ca1-4667-87a9-e130f10849b8",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A systematic literature review following PRISMA guidelines identified 688 records from PubMed, from which 58 original research studies were deemed eligible for literature overview and 43 studies were included in the meta-analysis after applying exclusion criteria. The survey revealed that diffusion-weighted imaging (28 studies), magnetization transfer (27 studies), T2 relaxometry (19 studies), and T1 relaxometry (10 studies) were the most common MRI approaches compared with histology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C17, C73-C74 provide a clear methodological description and quantitative results from the systematic review process. The numbers are consistently reported and the PRISMA methodology is appropriate for systematic reviews, lending credibility to the selection process.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "f7b82104-a6af-4936-bad1-d21beaf538bf",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Analysis of R\u00b2 values across studies showed that the highest correlations (R\u00b2 >0.8) were obtained mostly from MT measures but were associated with small sample sizes (average 32 sample points). Studies with largest sample sizes showed R\u00b2 values between 0.6-0.8 for MT and T2 relaxometry, with lower values for T1 relaxometry and other approaches. Specific meta-analysis results showed MPF (R\u00b2=0.7657) and MWF (R\u00b2=0.6997) had the highest overall estimates, while diffusion-based measures ranged from R\u00b2=0.2095 (AD) to R\u00b2=0.3766 (FA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 and C77-C103 present descriptive statistics and meta-analysis results with specific numerical values from Table 1 and referenced figures. The data are internally consistent and appropriately derived from the mixed-effects models described in the methodology (C75-C76).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Meta-analysis revealed that MPF (R\u00b2=0.7657) and MWF (R\u00b2=0.6997) showed the highest correlations with myelin content, while all other measures showed R\u00b2 estimates in the range 0.21-0.53. Meta-regression analysis distinguished MT- and relaxometry-based measures as having significantly higher R\u00b2 estimates compared to diffusion-based measures. Within diffusion measures, FA showed slightly higher estimates than RD, AD, or MD, though differences were marginal or non-significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28, C47, C50, and C104 present the core quantitative findings from the meta-analysis and meta-regression. The statistical comparisons are appropriately conducted using repeated measures meta-regression with Tukey's test and Bonferroni correction (described in methods), and the conclusions about relative performance are supported by the reported z-scores and p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "4fa0daf3-55f0-4b3b-bc4f-56311a407ba2",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prediction intervals for most MRI measures spanned from 0.1 to 0.9, indicating substantial variability in expected future study results. Only MPF (0.49-1) and MWF (0.45-0.95) showed narrower prediction intervals, suggesting they may be more suitable choices for future studies, though the authors note these ranges are still quite large.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 and C51-C52 report prediction intervals calculated from the mixed-effects models using \u03c4\u00b2 (between-study variance). The wide prediction intervals appropriately reflect heterogeneity across studies and provide realistic expectations for future research. The cautious interpretation in C52 is warranted given the remaining uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "26409f93-1b6c-4dde-a678-a882162e4bcd",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The I\u00b2 statistic, measuring heterogeneity due to experimental design differences, was generally quite high across all measures. MWF showed the lowest I\u00b2 (73.19%) but was based on only 4 studies, while MPF showed relatively low I\u00b2 (83.18%) based on 10 studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 report I\u00b2 values from Table 1 with appropriate caveats about sample size. The high I\u00b2 values (>70%) indicate substantial heterogeneity across studies, which is appropriately acknowledged. The authors correctly note that MWF's lower I\u00b2 may be misleading due to the small number of studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "6e0b1b6e-6a6d-4db8-af70-bff461d8b11c",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Differences across studies in validation modality, magnetic field strength, and other methodological factors strongly limit inter-study comparisons. Histology and immunochemistry provide only proxy measures based on transmittance rather than volumetric myelin quantification, while electron microscopy, though providing volumetric measures, has limitations including tissue shrinkage and fixation artifacts. None of the reviewed studies considered histology reproducibility, and most studies were conducted at 7T and 9.4T field strengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 identify important sources of heterogeneity and methodological limitations in the validation studies. These observations are supported by the systematic review data (C57, C58) and established knowledge about histological techniques (C54-C56). The critique is fair and identifies genuine limitations in using histology as ground truth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "566dfde9-7d56-4ec1-bdcb-03e6ff5ac9bd",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Diffusion-weighted imaging has inherent limitations for estimating myelin content because it does not directly measure myelin. DWI acquisitions use echo times (~100 ms) too long to detect myelin macromolecules (T2 ~10 \u03bcs) or myelin water (T2 ~30 ms). Instead, diffusion measures like FA and RD are influenced by multiple factors beyond myelin content, making them unsuitable as specific myelin biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39, C48-C49, and C65 provide a mechanistic explanation for why diffusion measures show lower correlations with histology. The technical details about T2 relaxation times are supported by citations (C37-C38), and the conclusion aligns with the meta-analysis results showing diffusion measures have the lowest R\u00b2 values. This is acknowledged as not novel (C65) but important to reiterate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "df087dd8-6d3b-4945-9969-56b23b6e1d51",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MT-based measures are sensitive to tissue pH, and changes in pH caused by inflammation will affect MT-based measures of myelin, limiting their specificity despite being focused on macromolecular contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 identify an important confound for MT-based measures with appropriate citation support (Stanisz et al., 2004). This represents a legitimate limitation that affects the interpretation of MT measures as myelin-specific biomarkers, particularly in pathological conditions involving inflammation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "50ee213f-00ca-4388-9f41-b629e78b2787",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "T2 relaxometry can directly observe water trapped between myelin bilayers and estimate myelin water fraction, unlike diffusion and MT approaches. However, the multi-compartment model assumes slow water exchange between compartments, while evidence shows water exchange actually contributes to T2 spectra variations. Faster acquisition alternatives have been developed to address the historical limitation of long acquisition times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 accurately describe T2 relaxometry methodology and its advantages/limitations. The direct observation of myelin water (C42-C43) is established knowledge, while the limitation regarding water exchange assumptions (C45-C46) is appropriately cited. The mention of faster alternatives (C44) is relevant for practical applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "e29fb54a-a848-4c8e-b096-9f4ff3233e80",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Only one study (Tardif et al., 2012) computed both Pearson and Spearman correlations, reporting higher Spearman correlations and suggesting non-linear relationships should be considered. Only MWF is expected to assume a value of zero when myelin is absent, raising calibration issues for other measures when using correlation-based validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 identify important methodological limitations in the validation literature. The observation about limited comparison of correlation methods (C59-C60) is based on the systematic review, and the point about MWF's zero-intercept property (C61) is appropriately cited and highlights a fundamental difference in how measures should be validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "11c595a2-b16e-4c28-916d-afa9dac70f57",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "More than half of the reviewed studies considered at most two MRI measures, indicating the field is mostly focused on formulating new measures rather than systematically comparing existing ones. The literature clearly lacks reproducibility studies addressing measure specificity and parameter sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 provide a meta-level critique of the field based on the systematic review findings. The observation about limited multi-measure comparisons (C62) is data-driven, while the inference about field focus (C63) and the identified gap in reproducibility studies (C64) represent reasonable conclusions that motivate future research directions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "ac69a9c8-7433-488e-b09d-b2a114317540",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The multi-echo spin-echo implementation of MWF can only acquire a single slice in clinical scenarios, though faster GRASE-based techniques have been proposed that still require ~15 minutes for whole-brain acquisition at 2mm isotropic resolution. Similarly, complex qMT acquisitions are time-consuming, though optimized protocols focusing on MPF have been developed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 discuss practical limitations of acquisition time for clinical translation. The statements about MWF acquisition limitations (C66-C68) and MPF optimization (C69) are supported by appropriate citations and represent established knowledge about these techniques' practical constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "e84744ae-6735-452b-b9e8-ae9308135b21",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Several MRI measures are sensitive to myelin content, and most are not statistically different in terms of their relationship with histology. Measures highly correlated with histology are also expected to have higher specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 represent the main conclusions of the meta-analysis. C70-C71 are directly supported by the meta-regression results showing many measures are not statistically distinguishable. C72 is a reasonable inference linking correlation strength to specificity, though this connection could be more explicitly validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "167a8d07-651f-43a3-8e09-0f6845dd144d",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A mixed-effects model was used to estimate overall effect sizes in terms of R\u00b2, accounting for expected distribution of effect sizes due to inter-study differences in factors like histology reference, magnetic field strength, and pathology model. The Metafor package version 2.4-0 was used for model fitting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 describe the statistical methodology with appropriate justification for choosing mixed-effects over fixed-effects models. The rationale for expecting heterogeneous effect sizes is sound, and software version is specified for reproducibility. This represents appropriate meta-analysis methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    },
+    {
+      "id": "13f87bb7-313f-4496-ba80-bc9821e07b48",
+      "content_id": "d3575cd3-bede-4e4a-a484-b6a727b3b45e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establish that myelin sheaths provide fast electrical conduction, axonal protection, and trophic support; that activity-dependent myelination is a plasticity mechanism; that demyelination occurs in neurological diseases like multiple sclerosis; and that despite myelin thickness being below MRI resolution, its presence influences MRI-detectable physical properties including relaxation and diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide standard background information appropriately supported by citations (C1-C3) or established knowledge (C4-C5). These claims set the context for why MRI-based myelin imaging is important and feasible, and are not controversial.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:44:16.936384Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a3975b5c-5164-4589-bb9c-821c29adc786",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "2958f29c-aec0-48b3-80c1-6cb095b47e21",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "42a9a1d0-c1d6-4e61-a42a-35e70f79d37a",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "b354752b-e477-469c-a577-6c2ae9c24909",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "82bd81c6-7402-456d-93f7-4f31532eb47d",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "e742e4da-7274-4e7a-94ea-36d0d714e2e3",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "648b1f3b-39e9-4bef-bf79-d16135a70721",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "f746bb75-f3cb-446b-b975-cce707447e0d",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "23023aa3-5743-4c5e-8ade-535f3c9a8e43",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "0c7dd58a-4d5c-49c1-b696-12879153e393",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "7a079c8e-6772-410f-a352-84b433ef35bd",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "66b1ab75-15ee-44c4-b58a-311f71c1bd65",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "e433700d-6e54-43f5-9033-62c111e18552",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "0938665c-8f87-431d-b707-50b650000a73",
+      "result_id": "e9f813ce-9ca1-4667-87a9-e130f10849b8"
+    },
+    {
+      "claim_id": "675fee0e-cb4d-4a3f-85d6-ae4f4782e733",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "af5c0790-ff36-41ac-a3ab-cee912508cce",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "73ddfadd-c12e-4e98-80cf-9a14910f5715",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "cf6fa5b4-6e06-4483-b46b-9488887e570a",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "1a8a07f2-d464-4f36-888d-31a5f65d717b",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "abbc77ad-35fe-4bb5-9955-814ffa332695",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "7aa79876-94d2-4c55-bfa0-c7742cdb53ed",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "a4cdd8f1-8409-4cfa-a97b-7ca1d9c2ad64",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "22c57b39-8da0-4668-a646-4ad618bad3ce",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "9baf1e8b-c043-4b7f-814d-4e680218b4b0",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "b5552ba4-62eb-4b85-97c3-a2ab2b90dd1d",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "8f5361da-70d5-4bc8-8368-758a7072ba99",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "f0996517-6891-4e4e-8bbb-fb075140890f",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "ab82ca4e-ed14-44e3-9a17-0549e25d0be7",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "0d0df2c4-e9f0-4de4-97fd-8c9548496653",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "a9406232-0c3f-4510-b076-dde544931e39",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "285a7776-5ac9-4c05-90ed-09434d10553a",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "ee53c045-8fc3-4a15-b210-ac6598eb3e50",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "8577a15f-13a8-47ae-8104-d32aa56e70b5",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "12d9ff75-7cd9-4816-b438-d24f5b912f1e",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "7748d28c-0509-45f4-9812-4c8bdac81bd4",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "447d48e0-aab5-4f59-ba2c-be73ea28dc25",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "e18f5837-d498-4210-afeb-ce27538edc17",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "9b244371-9934-4223-aa66-3492bdfccbe3",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "23b4b722-175a-45b5-bf0b-b3c54e96bcfe",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "335de05e-0b9c-43ed-8e57-2adf9d5d9e53",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "42eec9bb-a92c-4859-8c05-9384c542ec92",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "44fb9cdd-c943-4a16-b238-6de8b6d4b5d9",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "6385dc81-27fc-43e6-b7b9-9b41d6bc1046",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "aaf35fae-766e-441b-ad25-00e9db98c6f2",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "fb2ca270-7485-4116-abda-1869034d3aee",
+      "result_id": "f7b82104-a6af-4936-bad1-d21beaf538bf"
+    },
+    {
+      "claim_id": "1bf1edc5-afb3-42b1-99b0-15ecbc2b6708",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "ccc50f56-8d42-49b1-87db-c976204307a0",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "bd1b512c-a10a-4d5f-abe6-1fb5a7535c56",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "68e862a5-d91f-4560-b756-8e3007e87d81",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "e7fa1b88-b4d1-400b-af5e-d0b49205ab9f",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "7258ffb7-c112-4c6e-bb1e-e4c57b3858ee",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "b1bfacc2-636d-40cc-95d8-8f0401a66b4f",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "f70310bd-104a-404a-a229-3482f565c365",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "16ada3ff-807a-407f-9cee-be6862d64a43",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "26b5f839-b632-4a54-82f0-b0f44728b8b6",
+      "result_id": "4ea2c7ce-d7c6-43a7-a683-fa65e980637a"
+    },
+    {
+      "claim_id": "2e20edfa-a7cc-482b-ae31-2b5aea48612b",
+      "result_id": "4fa0daf3-55f0-4b3b-bc4f-56311a407ba2"
+    },
+    {
+      "claim_id": "e1a9c0da-d2a8-4573-809f-2d530a557457",
+      "result_id": "4fa0daf3-55f0-4b3b-bc4f-56311a407ba2"
+    },
+    {
+      "claim_id": "a6ec13a7-1de1-47d3-a075-d62ec2b6690a",
+      "result_id": "4fa0daf3-55f0-4b3b-bc4f-56311a407ba2"
+    },
+    {
+      "claim_id": "3e475479-29ec-44eb-9e81-25baab48077e",
+      "result_id": "4fa0daf3-55f0-4b3b-bc4f-56311a407ba2"
+    },
+    {
+      "claim_id": "6f5b5eaa-e137-433c-8e76-ab21d933fe5e",
+      "result_id": "4fa0daf3-55f0-4b3b-bc4f-56311a407ba2"
+    },
+    {
+      "claim_id": "2e3e06c3-bc34-4e0b-a631-a6ea0e902ce0",
+      "result_id": "26409f93-1b6c-4dde-a678-a882162e4bcd"
+    },
+    {
+      "claim_id": "d207845f-5a1f-4ed4-b957-cbdf7a4f0090",
+      "result_id": "26409f93-1b6c-4dde-a678-a882162e4bcd"
+    },
+    {
+      "claim_id": "5b8ae6a7-d9f7-422b-8d5e-74e38186ed83",
+      "result_id": "26409f93-1b6c-4dde-a678-a882162e4bcd"
+    },
+    {
+      "claim_id": "43468bba-fc74-467d-bd15-658014cf6945",
+      "result_id": "6e0b1b6e-6a6d-4db8-af70-bff461d8b11c"
+    },
+    {
+      "claim_id": "5df0b87d-87b6-4c16-b24e-72d4b74c5241",
+      "result_id": "6e0b1b6e-6a6d-4db8-af70-bff461d8b11c"
+    },
+    {
+      "claim_id": "f3b1d559-00d7-46f0-bfba-c128c8cd10d0",
+      "result_id": "6e0b1b6e-6a6d-4db8-af70-bff461d8b11c"
+    },
+    {
+      "claim_id": "62e6b3b7-719c-42a4-b4e3-c340ac9617be",
+      "result_id": "6e0b1b6e-6a6d-4db8-af70-bff461d8b11c"
+    },
+    {
+      "claim_id": "ece3023e-5e4c-4c9c-9fb7-23a2b4ca5ebc",
+      "result_id": "6e0b1b6e-6a6d-4db8-af70-bff461d8b11c"
+    },
+    {
+      "claim_id": "e69391a3-99e5-405d-9045-fdd01ffb790c",
+      "result_id": "6e0b1b6e-6a6d-4db8-af70-bff461d8b11c"
+    },
+    {
+      "claim_id": "78e280b7-aa62-4265-9b1d-da93d79d0f84",
+      "result_id": "566dfde9-7d56-4ec1-bdcb-03e6ff5ac9bd"
+    },
+    {
+      "claim_id": "7ab55866-9859-4978-99fe-cc07e68e06ea",
+      "result_id": "566dfde9-7d56-4ec1-bdcb-03e6ff5ac9bd"
+    },
+    {
+      "claim_id": "f8eda47e-bc51-45b7-aa2e-cad2e6488e52",
+      "result_id": "566dfde9-7d56-4ec1-bdcb-03e6ff5ac9bd"
+    },
+    {
+      "claim_id": "2c08a1b1-e60a-46d8-b34a-9ba4261d50d6",
+      "result_id": "566dfde9-7d56-4ec1-bdcb-03e6ff5ac9bd"
+    },
+    {
+      "claim_id": "206577a7-90b4-4ed9-8027-e6b82298e7f9",
+      "result_id": "566dfde9-7d56-4ec1-bdcb-03e6ff5ac9bd"
+    },
+    {
+      "claim_id": "5bda9d3f-4e02-45f7-a341-8cf714c12dee",
+      "result_id": "566dfde9-7d56-4ec1-bdcb-03e6ff5ac9bd"
+    },
+    {
+      "claim_id": "f9db0089-2165-4006-b1f9-0fafc1c83215",
+      "result_id": "566dfde9-7d56-4ec1-bdcb-03e6ff5ac9bd"
+    },
+    {
+      "claim_id": "8ec4c474-fa4e-4450-9237-d7c7434fb399",
+      "result_id": "566dfde9-7d56-4ec1-bdcb-03e6ff5ac9bd"
+    },
+    {
+      "claim_id": "f92fd4d9-72b1-48c1-a1ce-c22600f64dd2",
+      "result_id": "df087dd8-6d3b-4945-9969-56b23b6e1d51"
+    },
+    {
+      "claim_id": "79618c65-6bc7-4000-93f2-848af5fe1432",
+      "result_id": "df087dd8-6d3b-4945-9969-56b23b6e1d51"
+    },
+    {
+      "claim_id": "73511dad-b9c9-4101-afc6-ddf2a42f6624",
+      "result_id": "50ee213f-00ca-4388-9f41-b629e78b2787"
+    },
+    {
+      "claim_id": "3d526046-0691-47ed-abbd-ae20627fe039",
+      "result_id": "50ee213f-00ca-4388-9f41-b629e78b2787"
+    },
+    {
+      "claim_id": "9f0997f1-7689-41c8-aebc-f7214a79358e",
+      "result_id": "50ee213f-00ca-4388-9f41-b629e78b2787"
+    },
+    {
+      "claim_id": "1fe4f79b-4b90-46da-a561-44ef40918da4",
+      "result_id": "50ee213f-00ca-4388-9f41-b629e78b2787"
+    },
+    {
+      "claim_id": "dd2c7fe8-42cf-4c1a-b9d8-acc5bc7f5676",
+      "result_id": "50ee213f-00ca-4388-9f41-b629e78b2787"
+    },
+    {
+      "claim_id": "b3e0ed72-3b78-40f0-b4a4-482434130902",
+      "result_id": "e29fb54a-a848-4c8e-b096-9f4ff3233e80"
+    },
+    {
+      "claim_id": "ffde2112-532d-4f0d-8f6e-3fd9dedb90a9",
+      "result_id": "e29fb54a-a848-4c8e-b096-9f4ff3233e80"
+    },
+    {
+      "claim_id": "ccc944b1-08c5-4ff6-8602-1777b5803706",
+      "result_id": "e29fb54a-a848-4c8e-b096-9f4ff3233e80"
+    },
+    {
+      "claim_id": "99a737fc-2949-4659-9563-ea3dd1b83d67",
+      "result_id": "11c595a2-b16e-4c28-916d-afa9dac70f57"
+    },
+    {
+      "claim_id": "c3a5273e-866d-4244-b366-bf132d2b1bbf",
+      "result_id": "11c595a2-b16e-4c28-916d-afa9dac70f57"
+    },
+    {
+      "claim_id": "f7194f76-dd03-403e-a1e1-7975908978b3",
+      "result_id": "11c595a2-b16e-4c28-916d-afa9dac70f57"
+    },
+    {
+      "claim_id": "a613a8f1-9a13-4ca4-99c9-b5b790401460",
+      "result_id": "ac69a9c8-7433-488e-b09d-b2a114317540"
+    },
+    {
+      "claim_id": "1ae0d452-1f93-4a20-b90a-5688c75759a8",
+      "result_id": "ac69a9c8-7433-488e-b09d-b2a114317540"
+    },
+    {
+      "claim_id": "d5d07113-1637-4bd4-89e1-2c23114cdbe6",
+      "result_id": "ac69a9c8-7433-488e-b09d-b2a114317540"
+    },
+    {
+      "claim_id": "bb91c4f4-92fb-41c3-b576-d64daf4300f3",
+      "result_id": "ac69a9c8-7433-488e-b09d-b2a114317540"
+    },
+    {
+      "claim_id": "56ac6852-e0d9-47a1-8a44-46e3120b2e43",
+      "result_id": "e84744ae-6735-452b-b9e8-ae9308135b21"
+    },
+    {
+      "claim_id": "cee723af-6d14-47e8-a3ec-29883bd7333b",
+      "result_id": "e84744ae-6735-452b-b9e8-ae9308135b21"
+    },
+    {
+      "claim_id": "f60f6f7c-52ee-4d07-8d0d-04a1ee5ac313",
+      "result_id": "e84744ae-6735-452b-b9e8-ae9308135b21"
+    },
+    {
+      "claim_id": "39a851f8-cf15-4077-9ce2-f3ef6f43f2c5",
+      "result_id": "167a8d07-651f-43a3-8e09-0f6845dd144d"
+    },
+    {
+      "claim_id": "84f40580-cb9e-48cf-b16b-4906e7c2fce2",
+      "result_id": "167a8d07-651f-43a3-8e09-0f6845dd144d"
+    },
+    {
+      "claim_id": "873ff5c5-5ef2-4386-8296-ab5def522faf",
+      "result_id": "13f87bb7-313f-4496-ba80-bc9821e07b48"
+    },
+    {
+      "claim_id": "c36a77e8-1817-49f4-a69c-ee0fde6c8b0a",
+      "result_id": "13f87bb7-313f-4496-ba80-bc9821e07b48"
+    },
+    {
+      "claim_id": "23ef09c1-5750-41da-857b-b67e8adf236a",
+      "result_id": "13f87bb7-313f-4496-ba80-bc9821e07b48"
+    },
+    {
+      "claim_id": "d10ca101-fa15-4f03-a4cc-ad28bb900279",
+      "result_id": "13f87bb7-313f-4496-ba80-bc9821e07b48"
+    },
+    {
+      "claim_id": "a5198614-8192-4096-b9be-694d01253c5c",
+      "result_id": "13f87bb7-313f-4496-ba80-bc9821e07b48"
+    }
+  ],
+  "comparisons": []
+}

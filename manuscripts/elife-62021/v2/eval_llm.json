@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The cryo-EM structure of GraFix-ed hSARM1E642Q at 2.88 \u00c5 resolution reveals a compact octameric assembly with ordered inner (SAM) and peripheral (ARM and TIR) rings. The TIR domains are spatially separated by docking onto the ARM domains, preventing their dimerization required for NADase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural claims are well-supported by high-resolution cryo-EM data (2.88 \u00c5) with detailed atomic modeling. The domain organization, interactions, and spatial arrangement are consistently described across multiple claims with supporting figures. The inference that TIR separation prevents activation is logically sound given known requirements for TIR dimerization in NADase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mutations at the primary ARM-TIR docking interface (FP255-6RR, RR216-7EE/FP255-6RR double mutant) disrupt auto-inhibition and render SARM1 constitutively active, causing cell death comparable to the delARM construct. The interface shows high evolutionary conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis experiments provide strong functional validation of the structural model. Multiple independent mutations at the ARM-TIR interface produce consistent activation phenotypes (C57, C58), with appropriate controls (C59). Conservation analysis (C61, C62) supports biological significance. The data directly link structure to function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C85",
+      "C86",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "NAD+ binds to an allosteric site at the ARM domain 'horns' junction and stabilizes the compact inhibited conformation of SARM1. Addition of 5 mM NAD+ shifts >80% of particles from disordered to compact two-ring conformation in cryo-EM, and a 2.7 \u00c5 structure reveals the NAD+ binding site with atomic detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The NAD+ binding is supported by multiple lines of evidence: dramatic conformational shift observed by cryo-EM (C85, C86), high-resolution structure showing NAD+ density (C91, C95), and structural comparison validating the GraFix-ed model (C92). The 2.7 \u00c5 resolution provides clear atomic details of the allosteric site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Point mutations at the NAD+ allosteric binding site (L152A, R157E, R322E) activate SARM1 and induce cell death, while mutations away from the NAD+ molecule or control mutations do not. W103 contacts may be dispensable but interference cannot be tolerated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis data provide strong functional validation of the NAD+ allosteric site. Multiple independent mutations targeting NAD+-interacting residues produce consistent activation (C96, C97), while appropriate negative controls show no effect (C98, C99). The W103 results (C100, C101, C102) add mechanistic nuance about binding requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C114"
+    ],
+    "result": "SARM1 exhibits substrate inhibition by NAD+, with maximal activity at ~100 \u00b5M NAD+ and near-complete inhibition at 2 mM NAD+. This demonstrates a substrate inhibition mechanism where high NAD+ concentrations stabilize the inactive conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The substrate inhibition is demonstrated by multiple complementary assays: bell-shaped kinetic curve with eNAD (C87, C88), HPLC comparison with control NADase (C89, C90), and is consistent with independent reports (C114). The data directly support the proposed mechanism (C26, C27) linking NAD+ concentration to SARM1 activity state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C77",
+      "C110"
+    ],
+    "result": "Purified hSARM1 is constitutively active in vitro with Km = 28 \u00b1 4 \u00b5M, Vmax = 9 \u00b1 0.3 \u00b5M/min, and Kcat = 46.49 1/min, similar to published values for isolated TIR domains. This activity is suppressed in cells, suggesting loss of an inhibitory factor during purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic characterization is well-executed with appropriate controls and comparison to published data (C67). The observation that purified protein is active (C63, C72) while cellular SARM1 is inhibited (C77) is consistent across experiments. The inference about loss of inhibitory factor (C110) is reasonable but remains speculative without direct identification of the factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C107",
+      "C108"
+    ],
+    "result": "Glycerol inhibits hSARM1 NADase activity in a concentration-dependent manner (72% inhibition at 15% glycerol) and stabilizes the compact conformation in the GraFix protocol. The compact arrangement in GraFix-ed structure is artificially imposed, while NAD+ induces more natural compact folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The glycerol effects are well-documented with dose-response data (C73, C74) and correlation with the GraFix protocol (C75). The interpretation that GraFix artificially stabilizes the compact form (C76, C107) while NAD+ induces natural folding (C108) is supported by differences in map quality and homogeneity between the two structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C123"
+    ],
+    "result": "NMN modestly increases hSARM1 activity (~30%) only at high concentration (1 mM), with no effect at 0.2 mM or 50 \u00b5M NAD+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The NMN effects are clearly demonstrated with appropriate concentration series and controls. The data show concentration-dependent activation requiring millimolar NMN (C70, C71, C123), which is physiologically relevant for interpreting NMN's role in SARM1 activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ATP inhibits hSARM1 NADase activity in a dose-dependent manner without affecting protein conformation, possibly through the TIR domain active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATP inhibition is demonstrated by activity assays (C80) and lack of conformational change by cryo-EM (C81). The inference about active site inhibition (C82) is reasonable given the lack of conformational change, though direct binding evidence is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C6"
+    ],
+    "result": "The authors propose a model where SARM1 is kept inhibited by NAD+ binding at the allosteric site at normal cellular NAD+ levels (0.1-0.8 mM). Upon stress-induced NAD+ depletion below a critical threshold, NAD+ dissociates, triggering disassembly of the compact conformation, TIR dimerization, NADase activation, and ultimately energetic catastrophe and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model integrates multiple well-supported findings: NAD+ allosteric binding stabilizes inhibited conformation, substrate inhibition at high NAD+, activation upon NAD+ depletion, and requirement for TIR dimerization. While the complete pathway remains a model (C115-C119, C6), each component is supported by experimental data. The model is internally consistent and explains the observed phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors propose that NMN could compete with NAD+ at the allosteric site but would require high (millimolar) concentrations. Given physiological NMN levels are \u22645 \u00b5M (10-200\u00d7 lower than NAD+), NMN-mediated activation is unlikely in vivo, and NAD+ depletion is the key activation event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reasoning is logical and supported by: structural similarity between NMN and NAD+ (C120), requirement for high NMN concentrations experimentally (C122, C123), and literature on physiological NMN/NAD+ ratios (C124). The conclusion that NAD+ depletion is the primary mechanism (C125, C126) is well-justified, though alternative NMN roles cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "No NAD+ density was observed at the TIR domain active site in the NAD+-supplemented structure, possibly because the BB loop assumes a conformation preventing NAD+ entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The absence of NAD+ at the active site is clearly stated based on map analysis (C103). The explanation involving BB loop conformation (C104) is speculative but reasonable given the structural context. This observation is important for understanding the allosteric vs. active site binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The GraFix-ed structure shows greater differences in local resolution between domains (SAM > ARM > TIR) compared to the NAD+-supplemented structure, implying more flexibility in the GraFix-ed structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The local resolution differences are documented in the supplementary figures (C105) and the inference about flexibility (C106) is reasonable. This observation supports the interpretation that NAD+ binding produces a more stable, homogeneous structure than glycerol-induced compaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28",
+      "C32"
+    ],
+    "result": "The hSARM1E642Q construct used for structural studies lacks the N-terminal mitochondrial localization signal and contains an E642Q mutation in the NADase catalytic site. Various buffer and grid preparation conditions did not significantly improve visualization of the peripheral ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The construct design is clearly described (C28) and the optimization attempts are documented (C32). This methodological information is important for interpreting the structural results and understanding the challenges in obtaining the compact conformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors compare their structure to a concurrent study by Bratkowski et al. (2020), noting high similarity except for minor registry shifts, and discuss different strategies for handling particle heterogeneity (GraFix vs. selective particle picking).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with Bratkowski et al. is appropriate and the structural similarities/differences are clearly stated (C127, C128). The discussion of methodological differences (C129, C130) provides useful context for the field, though the inferences about Bratkowski's strategy are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims establishing SARM1's role in axonal degeneration, NADase activity, domain organization, and known activation mechanisms from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, appropriately cited (C1, C7-C25). They provide necessary context for the current study but represent prior knowledge rather than new findings. The citations appear appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C83",
+      "C84"
+    ],
+    "result": "Background claims about NMN levels after axonal injury, NMN-mediated SARM1 activation in cells, and NAD+ depletion inducing SARM1 activation from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established findings from cited literature (C68, C69, C83, C84) that provide context for the current study's investigation of NAD+ and NMN effects. The citations appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C111"
+    ],
+    "result": "The authors hypothesize that a low-affinity cellular factor inhibits SARM1 and is lost during purification, and that this factor is a small molecule depleted under stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as a hypothesis (C78, C79, C111) to explain the difference between cellular and in vitro activity. While the observation of differential activity is well-supported, the hypothesis about a lost factor remains speculative without direct identification or characterization of such a factor. The subsequent identification of NAD+ as the inhibitory factor provides support, but the initial hypothesis itself was uncertain.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1737 @@
+{
+  "submission": {
+    "id": "26ed58db-c5a0-4666-86d0-0856fb9021c0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:29:45.967426Z",
+    "updated_at": "2025-12-02T11:29:45.967426Z"
+  },
+  "content": [
+    {
+      "id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "submission_id": "26ed58db-c5a0-4666-86d0-0856fb9021c0",
+      "content_type": "manuscript",
+      "content_text": "# Tyr1 phosphorylation promotes phosphorylation of Ser2 on the C-terminal domain of eukaryotic RNA polymerase II by P-TEFb\n\n## Authors\n\n- Joshua E Mayfield<sup>1</sup>\n- Seema Irani<sup>2</sup> ([ORCID: 0000-0001-5159-3473](https://orcid.org/0000-0001-5159-3473))\n- Edwin E Escobar<sup>3</sup> ([ORCID: 0000-0002-0086-6264](https://orcid.org/0000-0002-0086-6264))\n- Zhao Zhang<sup>4</sup>\n- Nathaniel T Burkholder<sup>1</sup>\n- Michelle R Robinson<sup>3</sup>\n- M Rachel Mehaffey<sup>3</sup>\n- Sarah N Sipe<sup>3</sup> ([ORCID: 0000-0003-4554-7571](https://orcid.org/0000-0003-4554-7571))\n- Wanjie Yang<sup>1</sup>\n- Nicholas A Prescott<sup>1</sup> ([ORCID: 0000-0002-0635-8906](https://orcid.org/0000-0002-0635-8906))\n- Karan R Kathuria<sup>1</sup>\n- Zhijie Liu<sup>4</sup>\n- Jennifer S Brodbelt<sup>3</sup> ([ORCID: 0000-0003-3207-0217](https://orcid.org/0000-0003-3207-0217))\n- Yan Zhang<sup>1</sup> ([ORCID: 0000-0002-9360-5388](https://orcid.org/0000-0002-9360-5388)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biosciences University of Texas at Austin Austin United States\n2. Department of Chemical Engineering University of Texas at Austin Austin United States\n3. Department of Chemistry University of Texas at Austin Austin United States\n4. Department of Molecular Medicine, Institute of Biotechnology University of Texas Health Science Center at San Antonio San Antonio United States\n5. Institute for Cellular and Molecular Biology University of Texas at Austin Austin United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Positive Transcription Elongation Factor b (P-TEFb) phosphorylates Ser2 residues of the C-terminal domain (CTD) of the largest subunit (RPB1) of RNA polymerase II and is essential for the transition from transcription initiation to elongation in vivo. Surprisingly, P-TEFb exhibits Ser5 phosphorylation activity in vitro. The mechanism garnering Ser2 specificity to P-TEFb remains elusive and hinders understanding of the transition from transcription initiation to elongation. Through in vitro reconstruction of CTD phosphorylation, mass spectrometry analysis, and chromatin immunoprecipitation sequencing (ChIP-seq) analysis, we uncover a mechanism by which Tyr1 phosphorylation directs the kinase activity of P-TEFb and alters its specificity from Ser5 to Ser2. The loss of Tyr1 phosphorylation causes an accumulation of RNA polymerase II in the promoter region as detected by ChIP-seq. We demonstrate the ability of Tyr1 phosphorylation to generate a heterogeneous CTD modification landscape that expands the CTD\u2019s coding potential. These findings provide direct experimental evidence for a combinatorial CTD phosphorylation code wherein previously installed modifications direct the identity and abundance of subsequent coding events by influencing the behavior of downstream enzymes.\n\n## Introduction\n\nThe C-terminal domain of the RPB1 subunit of RNA polymerase II (CTD) is composed of a species-specific number of repeats of the consensus amino acid heptad YSPTSPS (arbitrarily numbered as Tyr1, Ser2, Pro3, Thr4, Ser5, Pro6, and Ser7) (Jeronimo et al., 2016). The CTD undergoes extensive post-translational modification (PTM) that recruits RNA processing and transcription factors that regulate progression through the various stages of transcription. These modification events are dynamic, highly regulated, and maintained through the complex interplay of CTD modification enzymes. Collectively these PTMs and recruited protein factors constitute the \u2018CTD Code\u2019 for eukaryotic transcription (Buratowski, 2003).\n\nChromatin immunoprecipitation and next-generation sequencing technologies have revealed how phosphorylation levels of CTD residues change temporally and spatially during each transcription cycle (Eick and Geyer, 2013). The major sites of phosphorylation are Ser5 and Ser2, directed by Transcription Factor II H (TFIIH) (Feaver et al., 1994) and P-TEFb in mammals (Marshall et al., 1996), respectively. The other three phosphate-accepting residues (Tyr1, Thr4, and Ser7) are also subject to modification, although their functions are less well-understood (Jeronimo et al., 2013). In mammalian cells, the phosphorylations of Tyr1 and Ser7 rise and peak near the promoter along with Ser5 and gradually decrease as transcription progresses towards termination. The phosphorylation of Thr4 and Ser2, on the other hand, don\u2019t appear until later in the transcription cycle during elongation (Eick and Geyer, 2013). The molecular underpinnings resulting in this orchestration are poorly defined. A particularly apparent gap in current knowledge is if sequence divergence from the consensus heptad or previously installed PTMs influence coding events.\n\nThe CTD code is generated through the interplay of CTD modifying enzymes such as kinases, phosphatases, and prolyl isomerases (Bataille et al., 2012). Disruption of this process is implicated in various disease states. P-TEFb is of particular interest due to its overexpression in multiple tumor types and role in HIV infection (Franco et al., 2018). As a major CTD kinase, P-TEFb promotes transcription by contributing to the release of RNA polymerase II from the promoter-proximal pause through its phosphorylation of Negative Elongation Factor (NELF), DRB Sensitivity Inducing Factor (DSIF), and Ser2 of the CTD (Wada et al., 1998). Interestingly, P-TEFb seems to phosphorylate Ser5 of the CTD in vitro and mutation of Ser5 to alanine prevents the phosphorylation of CTD substrates. However, mutation of Ser2 to alanine did not result in this abolishment (Czudnochowski et al., 2012). These results are in contrast to in vivo studies of P-TEFb specificity, where compromised P-TEFb kinase activity results in a specific reduction in levels of Ser2 phosphorylation (Marshall et al., 1996). The discrepancies between P-TEFb specificity in vitro and in vivo make it difficult to reconcile P-TEFb\u2019s function as a CTD Ser2 kinases (Bartkowiak et al., 2010; Czudnochowski et al., 2012).\n\nTo resolve these inconsistencies, we utilize a multi-disciplinary approach to investigate the specificity of P-TEFb. Identification of phosphorylation sites was carried out using ultraviolet photodissociation (UVPD) mass spectrometry establishing the specificity of P-TEFb in vitro in single residue resolution. We reveal the tyrosine kinase c-Abl phosphorylates consensus and full-length CTD substrates in a conservative fashion, with only half of the available sites phosphorylated. The unique phosphorylation pattern of Tyr1 by tyrosine kinases like c-Abl directs the specificity of P-TEFb to Ser2. The priming effect of pTyr1 on P-TEFb extends to human cells, where small-molecule inhibition of c-Abl-like Tyr1 kinase activities leads to a reduction of Tyr1 phosphorylation. Further ChIP-seq analysis shows that the loss of tyrosine phosphorylation increases promoter-proximal pausing with an accumulation of RNA polymerase II at the promoter region of the gene. Overall, our results reconcile the discrepancy of P-TEFb kinase activity in vitro and in cells, showing that Tyr1 phosphorylation can prime P-TEFb and alter its specificity to Ser2. Importantly, these findings provide direct experimental evidence for a combinatorial CTD phosphorylation code wherein previously installed modifications direct the identity and abundance of subsequent coding events, resulting in a varied PTM landscape along the CTD allowing for diversified co-transcriptional signaling.\n\n## Results\n\n### Determination of P-TEFb specificity in vitro using mass spectrometry\n\nTo define P-TEFb\u2019s specificity directly on full-length RPB1 CTD substrates, we applied matrix-assisted laser desorption/ionization-mass spectrometry (MALDI-MS) and liquid chromatography ultraviolet photodissociation tandem mass spectrometry (LC-UVPD-MS/MS) to identify the substrate residues of this kinase. Ultraviolet photodissociation (UVPD) using 193 nm photons is an alternative to existing collision- and electron-based activation methods in proteomic mass spectrometry. This method energizes peptide ions via a single absorption event of high-energy photons resulting in a greater number of diagnostic fragment ions and the conservation of lower energy bonds like those of some PTMs including phosphorylations (Brodbelt, 2014). This method is applicable in both positive and negative ionization modes, results in a greater degree of peptide fragmentation, better certainty in PTM localization, and conservation of PTMs to ultimately ensure the detection of even low abundance or particularly labile modifications. Because endogenous RNA polymerase II is heterogeneously modified, we used recombinant yeast CTD GST fusion proteins, which contain mostly consensus heptad repeats (20 of 26), as an unmodified substrate for PTM analysis (Figure 1\u2014figure supplement 1). The stability and consistency of GST yeast CTD (yCTD) make it ideal for studying CTD modification along consensus heptads. With high kinase and ATP concentration (2 mM) and overnight incubation (~16 hr), P-TEFb generates two phospho-peptides as detected by LC-UVPD-MS/MS: a major species phosphorylated on Ser5 (Y1S2P3T4pS5P6S7) and a minor species phosphorylated on Ser2 (S5P6S7Y1pS2P3T4) (Figure 1A and Figure 1\u2014figure supplement 2A\u2013B). This is highly similar to patterns observed previously for bona fide Ser5 CTD kinases Erk2 and TFIIH (Mayfield et al., 2017). These experiments confirm P-TEFb\u2019s inherent in vitro preference for Ser5 when phosphorylating unmodified CTD (Czudnochowski et al., 2012; Portz et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig1-v2.jpg)\n\n**Figure 1.:** (A) LC-UVPD-MS/MS analysis of yCTD treated with P-TEFb alone showing extracted ion chromatogram for two CTD heptads. (B) Portions of MALDI mass spectra of 3C-protease digested yCTD variant treated with P-TEFb alone (red) and no kinase control reaction (black). Mass labels indicate m/z at the various peak maxima. Arrows indicate the range of m/z peaks for kinase treated sample. \u2018+#P\u2019 notation indicates an approximate number of phosphates added based on mass shifts relative to no kinase control. (C) SDS-PAGE EMSA of dmCTD and dmCTDYtoF (as indicated) treated with Erk2 (top, right bands), TFIIH (middle, right bands), or P-TEFb (bottom, right bands) and paired no kinase control reactions (left bands). (D\u2013E) Kinase activity assay of wild-type yCTD (shown in black) and yCTDYtoF (shown in red) variant by Erk2 (D) and TFIIH (E) fitted to the Michaelis-Menten kinetic equation. The Michaelis-Menten kinetic parameters kcat(s\u22121), Km(\u00b5M), and kcat/Km(\u00b5M\u22121 s\u22121) are given below the graphs for each respective fit. Each measurement was conducted in triplicate with standard deviations shown as error bars.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Sequence of CTD portion of GST-CTD constructs used in the manuscript. Sequences presented N to C-terminal as individual heptads. Residues mutated are indicated above in blue font.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A, B) LC-UVPD-MS/MS MS2 spectra of yCTD treated with P-TEFb: (A) SPSYsPT and (B) YSPTsPS. These spectra correspond to the LC traces in Figure 1A. The locations of the confirmed phosphorylation sites are indicated as lowercase y or s in the sequences. (C) MALDI-TOF of yCTD treated with P-TEFb, zoomed view to show detail. A portion of MALDI-MS spectra of 3C-protease digested yCTD constructs treated with P-TEFb. Mass labels indicate m/z at the various peak maxima. Arrows indicate the maximum and minimum m/z peaks for kinase treatment sample. \u2018+#P\u2019 notation indicates an approximate number of phosphates added based on mass shifts relative to no kinase control. (D) EMSA to show the effect of YtoF mutation on CTD gel shift upon kinase phosphorylation. EMSA and intact mass analysis result for Drosophila CTD 9mer before and after treatment with Erk2. (E) LC-UVPD-MS/MS spectra of 3CTD treated with c-Abl. Diagnostic fragmentation of mono-phosphorylated peptides corresponding to LC peaks 2 and 3 from Figure 2B are shown in the top and bottom spectra, respectively.\n\nWe next measured the total number of phosphates added to the\u00a0CTD by P-TEFb. MALDI-MS analysis of yCTD treated with P-TEFb reveals a cluster of peaks with mass shifts relative to no kinase control ranging from 1906.1 to 2318.4 Da, each interspaced by 80 Da (Figure 1B and Figure 1\u2014figure supplement 2C). This corresponds to the addition of 24 to 29 phosphates to yCTD\u2019s 26 heptad repeats. This finding in combination with our LC-UVPD-MS/MS analysis of P-TEFb treated yCTD indicates that P-TEFb phosphorylates the CTD in an average one phosphorylation per heptad manner, and these heptads are primarily phosphoryl-Ser5 (pSer5) in vitro.\n\n### Amino acid identity at the Tyr1 position is important for kinase activity\n\nTo phosphorylate Ser2 and Ser5, CTD kinases must discriminate very similar SP motifs in the CTD, Y1S2P3 and T4S5P6, to maintain accuracy during transcription. Among the flanking residues of these two motifs, the unique structure of the tyrosine side chain likely contributes to the recognition of the serine residues subject to phosphorylation. Several factors suggest the chemical properties of residues at the Tyr1 position are important for CTD modification. First, residues at this first position of the heptad are highly conserved across species and substitution to non-aromatic residues is rare, suggesting significance to function (Chapman et al., 2008). As evidence of this, even conservative mutation of the Tyr1 position to phenylalanine in both Saccharomyces cerevisiae and human cells is lethal, highlighting the significance of residue identity at this position (Hsin et al., 2014; West and Corden, 1995). Secondly, we have shown that mutating the Tyr1 position to alanine prevents phosphorylation at other CTD residues by CTD kinases (Mayfield et al., 2017), indicating the side chain at this position is important for kinase activity. Third, phosphoryl-Tyr1 (pTyr1) is detected at the initiation of transcription in human cells (Descostes et al., 2014). This positions pTyr1 well to influence and interact with subsequent modifications of the CTD and, potentially, direct subsequent enzyme specificities.\n\nTo determine the effect of the chemical characteristics of residues at the Tyr1 position on CTD modification, we searched for naturally occurring Tyr1 substitutions. Drosophila melanogaster CTD contains a majority of heptads that diverge from consensus sequence with only 2 of its approximately 45 heptads being of the consensus sequence. Despite this highly divergent character, the Tyr1 position of D. melanogaster CTD is rather conserved and contains mostly tyrosine residues. For the six heptads that do not contain tyrosine, half are modestly substituted with phenylalanine. We were curious to determine if, like alanine, phenylalanine replacement at the Tyr1 position would abolish CTD kinase activity. These initial experiments were designed on D. melanogaster CTD because its heptads have diverse sequences that allow for the observation of shifts in electrophoretic mobility shift assay (EMSA) banding patterns, which might not be easily seen for consensus sequence CTD substrates. We generated GST-CTD constructs containing a portion of D. melanogaster CTD (residues 1671\u20131733, containing nine heptad repeats) of either tyrosine containing wild-type (dmCTD) or with phenylalanine substitution at the Tyr1 position in all nine heptads (dmCTDYtoF) (Figure 1\u2014figure supplement 1D). The CTD variants purified from these constructs were phosphorylated with one of three established CTD kinases: Erk2, a recently identified Ser5 CTD kinase that phosphorylates primed RNA polymerase II in developmental contexts (Tee et al., 2014); the kinase module of TFIIH that install Ser5 and Ser7 marks in vivo (Feaver et al., 1994); or P-TEFb which phosphorylates Ser2 in vivo (Marshall et al., 1996). Unlike alanine substitution, all three kinases are active against the phenylalanine-substituted CTD construct (Figure 1C). Surprisingly, the substitution of phenylalanine at the Tyr1 position alters the behavior of phosphorylated substrates in EMSA (Figure 1C). While the wild-type variant assumes only one or two apparent intermediate species in EMSA, the YtoF variant of dmCTD exhibits multiple intermediates, suggesting the generation of a greater diversity of phosphorylated species. Additional analysis of Erk2 phosphorylated dmCTDYtoF using electrospray ionization mass spectrometry (ESI-MS) of the intact phosphorylated construct confirms the existence of multiple species revealing complex spectra composed of multiple overlapping peaks relative to the dmCTD control (Figure 1\u2014figure supplement 2D). To quantify the effect of phenylalanine replacement at the Tyr1 position on CTD kinase function, we measured the kinase activity of Erk2 and TFIIH using GST-yCTD or yCTDYtoF (in which all Tyr1 positions have been mutated to phenylalanine) substrates (Figure 1\u2014figure supplement 1A\u2013B). Steady-state kinetics demonstrate that the replacement of tyrosine by phenylalanine has a markedly different effect on these two kinases. Erk2 shows a 2.5-fold higher specificity constant against the YtoF variant, as indicated by kcat/Km, compared to the WT construct (Figure 1D). Erk2 has nearly identical kcat values (0.44\u00a0\u00b1\u00a00.02 s\u22121 vs. 0.45\u00a0\u00b1\u00a00.02 s\u22121) for the two substrates, but a much lower Km for the YtoF substrate (35.8\u00a0\u00b1\u00a03.2 \u00b5M for WT vs. 14.8\u00a0\u00b1\u00a02.2 \u00b5M for YtoF substrates). This difference in Km values suggests Erk2 has a binding preference for the phenylalanine substituted substrate. However, TFIIH activity is greatly compromised when Tyr1 is replaced by phenylalanine with a nearly 10-fold reduction in kcat/Km (Figure 1E).\n\nOverall, our data demonstrate the chemical properties of the residues located at the first position of the heptad repeat have a significant impact on the phosphorylation of the CTD by CTD kinases. Even slight modification of this residue (e.g., loss of the hydroxyl group) can have dramatic consequences for modification of the CTD.\n\n### Tyr1 phosphorylation in human CTD\n\nAlthough substitution of non-tyrosine residues at the Tyr1 position is relatively rare in nature and does not occur in human cells, Tyr1 phosphorylation is conserved from yeast to humans and plays a key role in transcriptional events (Chapman et al., 2008; Yurko and Manley, 2018). Since the molecular mechanism explaining its diverse biological functions remains elusive, the sensitivity of CTD kinases to the chemical properties of Tyr1 side-chain motivated us to investigate if Tyr1 phosphorylation impacts subsequent phosphorylation events by reconstructing sequential CTD phosphorylation in vitro. In humans, Tyr1 phosphorylation rises along with Ser5 phosphorylation at the beginning of transcription (Heidemann et al., 2013). However, experiments using synthetic CTD peptides with every Tyr1 residue phosphorylated have shown that Tyr1 phosphorylation inhibits subsequent phosphorylation by CTD kinases (Czudnochowski et al., 2012). We suspect that the heavily phosphorylated synthetic peptide doesn\u2019t mimic the physiological RNA polymerase II during transcription. Instead, we reconstructed the phosphorylation of the CTD using physiologically relevant Tyr1 kinases in vitro. Existing literature points to Abl-like non-receptor tyrosine kinases as mammalian Tyr1 CTD kinases, with c-Abl as a major candidate (Baskaran et al., 1997; Burger et al., 2019). Three lines of evidence support this notion: c-Abl phosphorylates CTD in vitro (Baskaran et al., 1993) and in cells since transient over-expression of c-Abl in primate COS cells results in increased Tyr1 phosphorylation (Baskaran et al., 1997), and c-Abl immunoprecipitates with RNA polymerase II (Baskaran et al., 1999). To elucidate the biophysical consequences of Tyr1 phosphorylation of the CTD, we reconstructed c-Abl phosphorylation of consensus sequence CTD in vitro using purified human c-Abl and the yCTD constructs. C-Abl readily phosphorylates yCTD in vitro as evidenced by EMSA and detection of Tyr1 phosphorylation using pTyr1 specific antibody 3D12 (Figure 2A). We directly interrogate the sites of phosphorylation using LC-UVPD-MS/MS to identify phosphorylation sites in single residue resolution (Mayfield et al., 2017). Using this method to analyze a peptide containing three heptad repeats treated by c-Abl (3CTD, Figure 1\u2014figure supplement 1E), two single phospho-forms were detected, each containing a single phosphorylated tyrosine on either the first or second heptad of the variant (Figure 2B and Figure 1\u2014figure supplement 2E). These mass shifts confirm c-Abl phosphorylates consensus CTD sequences on Tyr1 in vitro.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative image of western blot against phosphorylated Tyr1 (top) of yCTD (containing 26 heptad repeats) treated in vitro with c-Abl (right) and paired no kinase control (left). Coomassie-stained blot included indicating loading (bottom). Data representative of three experimental replicates. (B) LC-UVPD-MS/MS analysis of 3CTD treated with c-Abl showing extracted ion chromatograms for 3CTD (m/z 888.76, 3+ charge state, red trace) and mono-phosphorylated 3CTD (m/z 915.36, 3+ charge state, blue trace) peptides. (C) Representative images (top) and quantification (bottom) of a western blot of imatinib dosage series (10\u201330 \u03bcM, as indicated, red) and paired DMSO vehicle controls (left band, white) of 20 \u03bcg total protein from HEK293T cells. Phospho-specific Tyr1 antibody (clone 3D12) was used. Imatinib decreases pTyr1 epitope abundance to 88.0% (10\u03bcM imatinib, not significant), 65.2% (20\u03bcM imatinib), and 51.3% (30\u03bcM imatinib) relative to paired vehicle controls. Epitope signals normalized against tubulin loading control. Significance determined by Welch\u2019s t-test (*=p value<0.05, **=p value<0.01, n.s.\u00a0=\u00a0not significant (p-value>0.05)), n\u00a0=\u00a06, error bars indicate SEM. (D\u2013G) Portions of MALDI mass spectra of 3C-protease digested yeast CTD (D), 5CTD (E), 4CTD (F), and 3CTD (G) construct treated with c-Abl (red) and no kinase control reaction (black). Mass labels indicate m/z at various peak maxima. Arrows indicate the range of m/z peak for kinase treated sample. \u2018+#P\u2019 notation indicates an approximate number of phosphates added based on mass shifts. Satellite peaks, prevalent in (F), correlate well with sodium adducts (M+23 Da).\n\nTo test if modulating c-Abl activity can alter Tyr1 phosphorylation levels in human cells, we treated HEK293T cells with the c-Abl specific inhibitor imatinib (Knight and McLellan, 2004) and monitored endogenous Tyr1 phosphorylation levels using phospho-Tyr1 specific antibody 3D12 (Figure 2C). Imatinib has potent and specific inhibition against c-Abl and ABL2 (which shares 93% sequence identity in the kinase domain as c-Abl) (Salah et al., 2011). Tyr1 phosphorylation decreases in a dose-dependent manner from 10\u201350% at imatinib concentrations of 10\u201330 \u03bcM after 24 hr of treatment (Figure 2C). Overall, our result indicates controlling the kinase activity of c-Abl, or highly similar kinases, is sufficient to significantly modulate the level of Tyr1 phosphorylation of CTD in mammalian cells.\n\nWe next quantified the maximal number of phosphates added to yCTD constructs using MALDI-MS. High-resolution MALDI-MS spectra of samples treated by c-Abl revealed peaks accounting for yCTD containing 5 to 13 phosphates (with mass shifts ranging from 398.9 to 1049.4 Da) (Figure 2D), approximately half of yCTD\u2019s available tyrosine residues within 26 heptad repeats. Further incubation with more kinase/ATP does not appear to add more than 13 phosphate groups to substrate CTD in these assays. Additional GST-CTD constructs containing 3\u20135 consensus heptad repeats (Figure 1\u2014figure supplement 1E\u2013G) treated with c-Abl were analyzed using MALDI-TOF to evaluate if c-Abl truly only phosphorylates half of the available Tyr1 sites even in the presence of high kinase/ATP concentrations and after prolonged incubation times. Three phosphorylation peaks were detected in the 5CTD variant with mass differences of 79.8, 160.3, and 239.1 Da relative to the unphosphorylated control, accounting for the addition of 1\u20133 phosphates (Figure 2E). Phosphorylation of the 4CTD construct resulted in two peaks of phosphorylation with mass differences of 79.1 and 160.7 Da relative to unphosphorylated control, accounting for the addition of 1 or 2 phosphates (Figure 2F). Similarly, two phosphates are added to the 3CTD variant that displayed mass shifts of 78.2 or 158.7 Da (Figure 2G). These mass shifts suggest c-Abl does not phosphorylate consensus CTD in every heptad; instead, it favors phosphorylation of approximately half the available Tyr1 residues.\n\n### Sequential phosphorylation of CTD by c-Abl followed by P-TEFb\n\nWith our knowledge of the previously undescribed Tyr1 phosphorylation pattern installed by c-Abl, we were curious if such a pattern could affect the phosphorylation of CTD by P-TEFb. We first determined if the pre-treatment of CTD by c-Abl alters the number of phosphates added by P-TEFb using MALDI-TOF. Since c-Abl phosphorylates tyrosine and P-TEFb phosphorylates serine residues as determined (Figure 2A, B and 1A, respectively), if the two phosphorylation events are independent, the number of phosphates placed by the two kinases should be additive. C-Abl phosphorylation of yCTD alone adds up to 13 phosphates (Figure 2D), and P-TEFb alone adds 24\u201329 phosphates (Figure 1B). Interestingly, tandem treatment of yCTD with c-Abl followed by P-TEFb resulted in the addition of a total of 16 to 26 phosphates as detected by MALDI-MS, with a mass shifts of 1287.3 to 2073.2 Da (Figure 3A). These data reveal c-Abl pre-treatment results in changes to P-TEFb\u2019s phosphorylation along the CTD, evidenced by a reduction in the number of phosphate groups added by P-TEFb.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig3-v2.jpg)\n\n**Figure 3.:** (A) Portions of MALDI mass spectra of 3C-protease digested yCTD construct treated tandemly with c-Abl followed by P-TEFb (red) and no kinase control reaction (black). Mass labels indicate m/z peaks for kinase treated sample. \u2018+#P\u2019 notation indicates an approximate number of phosphates added based on mass shifts. (B) Representative images (top) and quantification (bottom) of western blot analysis of yCTD treated with P-TEFb alone (left, white) and tandemly with c-Abl followed by P-TEFb (right, red). Tandem treatment of c-Abl followed by P-TEFb increases phosphorylated Ser2 epitope abundance to 279% of P-TEFb only treatment control. Ser5 phosphorylation levels are not significantly altered. Significance determined by Welch\u2019s t-test (*=p value<0.05, n.s.\u00a0=\u00a0not significant (p-value>0.05)), n\u00a0=\u00a03, error bars indicate SEM. (C) Representative images (top) and quantification (bottom) of western blot analysis of yCTD treated with TFIIH alone (left, white) and tandemly with c-Abl followed by TFIIH (right, red). Tandem treatment of c-Abl followed by TFIIH does not significantly alter the epitope abundance of phosphorylated Ser2 or Ser5. Significance determined by Welch\u2019s t-test (n.s.\u00a0=\u00a0not significant (p-value>0.05)), n\u00a0=\u00a03, error bars indicate SEM. (D\u2013H) LC-UVPD-MS/MS analysis of yeast CTD with inserted Lys in every other heptad repeat (yCTD-Lys) treated with kinases or combination of kinases. Biological triplet samples were independently measured with exemplary spectra shown (n\u00a0=\u00a03). (D) yCTD-Lys treated with c-Abl showing extracted ion chromatograms for mono-phosphorylated (m/z 789.84, 2+ charge state) and doubly phosphorylated (m/z 829.83, 2+ charge state) peptides of sequence (YSPTSPSYSPTSPK). The LC traces are shown in red, and the phosphorylation sites determined by UVPD-MS/MS are highlighted in red font with \u2018p\u2019 to indicate phosphorylation. (E) LC-UVPD-MS/MS analysis of yCTD-Lys treated with P-TEFb showing extracted ion chromatograms for mono-phosphorylated (m/z 789.84, 2+ charge state) and doubly phosphorylated (m/z 829.83, 2+ charge state) peptides. (F) Representative UVPD spectra that demonstrate the diagnostic fragmentation pattern of the peptides shown in the inset from (E). The one shown is peak 5, which is the predominant product from yCTD-Lys treated by P-TEFb alone. (G) LC-UVPD-MS/MS analysis of yCTD-Lys with c-Abl followed by P-TEFb showing extracted ion chromatograms for mono-phosphorylated (m/z 789.84, 2+ charge state) and doubly phosphorylated (m/z 829.83, 2+ charge state) peptides. (H) Representative UVPD spectra that demonstrate the diagnostic fragmentation pattern of the peptides shown in the inset of (G). The one shown is peak 7, which is the predominant product from yCTD-Lys treated by c-Abl followed by P-TEFb. (I\u2013K) Portions of MALDI-MS spectra of 3C-digested S5A. Panels included no kinase control (I), P-TEFb only treated (J), c-Abl only treated (I), and tandemly treated with c-Abl followed by P-TEFb (K). Mass labels indicate m/z at the various peak maxima. Arrows indicate the maximum and minimum m/z peak for kinase treated sample. \u2018+#P\u2019 notation indicates an approximate number of phosphates added based on mass shifts.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Western blot analysis of yCTD treated in tandem with c-Abl and Erk2. Representative images (top) and quantification (bottom) of western blot analysis of yeast CTD treated with Erk2 alone (left, white) and tandemly with c-Abl followed by Erk2 (right, red). Tandem treatment of c-Abl followed by Erk2 does not significantly alter the epitope abundance of phosphorylated Ser2 or Ser5. Significance determined by Welch\u2019s t-test (n.s.\u00a0=\u00a0not significant (p-value>0.05)), n\u00a0=\u00a03, error bars indicate SEM. (B) c-Abl is inactivated by heat treatment, as shown in the time-dependent course. (C) Dasatinib inhibition of c-Abl towards CTD substrate. Dasatinib inhibits c-Abl in a dose-dependent manner (left) but has no effect on the kinase activity of P-TEFb (right). (D) Dot blot analysis of the tandem treatment of c-Abl and P-TEFb. c-Abl treated GST yCTD followed by Dasatinib inhibition before P-TEFb treatment (blue), c-Abl treated GST yCTD followed by heat inactivation of c-Abl before treatment with P-TEFb (green) with corresponding P-TEFb only treated GST yCTD (white) and c-Abl followed by P-TEFb treated GST yCTD (red). Significance determined by the t-test (*=p value<0.05) n\u00a0=\u00a03, n.s.\u00a0=\u00a0not significant (p-value>0.05), n\u00a0=\u00a03, error bars indicate standard deviation from three technical replicates.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The tables show the fragments matched from UVPD spectra. The confirmed phosphorylated residues are highlighted with blue boxes in the sequence, and backbone cleavages that produce diagnostic fragment ions are designated by color-coded slash marks (a/x green, b/y blue, c/z red) in the sequence.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** LC-UVPD-MS/MS analysis of yeast CTD with inserted Lys in every other repeat treated with c-Abl showing extracted ion chromatograms. For clarity, only doubly phosphorylated species (m/z 792.81, 2+ charge state) peptides are shown. Peptide A is most abundant, and its spectra are shown in Figure 3G\u2013H. The less abundant peptides (peptide B, C, D) are shown here when different kinase treatment was applied. For clarity, only doubly phosphorylation species were shown. The phosphoryl-species containing both pTyr1 and pSer2 are highlighted with arrows.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Extracted ion chromatogram of mono-phosphorylated heptad (m/z 818, 2+ charge state) peptides. (B) UVPD mass spectra of three mono-phosphorylated heptads. The locations of the confirmed phosphorylation sites are indicated as lowercase y or s in the sequences.\n\nTo identify the position of phosphates added by P-TEFb when Tyr1 is phosphorylated, we quantified pSer2 and pSer5 by immunoblotting with antibodies recognizing Ser2 and Ser5 phosphorylations (Figure 3B). Compared to a non-phosphorylated CTD, the pre-treatment of yCTD with c-Abl results in a significant increase in Ser2 phosphorylation of nearly 300%, as detected by pSer2 specific CTD antibody 3E10, accompanied by a small and statistically non-significant decrease in pSer5 installed by P-TEFb (Figure 3B and C). The increase of pSer2 is unique for P-TEFb-mediated phosphorylation of CTD since a similar tandem treatment of yCTD by c-Abl followed by either TFIIH or Erk2 showed no changes in pSer2 levels (Figure 3C and Figure 3\u2014figure supplement 1A).\n\nWe propose two possible explanations for the apparent increase of pSer2 levels upon c-Abl/P-TEFb treatment: First, c-Abl interacts with and/or modifies P-TEFb and alters its specificity from Ser5 to Ser2. Alternatively, c-Abl may phosphorylate substrate CTD and these phosphorylations prime P-TEFb specificity towards Ser2 residues of the CTD. To differentiate these two models, we inactivated c-Abl after its reaction with CTD but before the addition of P-TEFb. We used two independent methods to inactivate c-Abl prior to P-TEFb addition: introduction of the potent Abl inhibitor dasatinib to 10 \u00b5M or denaturation of c-Abl via heat-inactivation (Figure 3\u2014figure supplement 1B and C). In the first method, the introduction of dasatinib inhibits c-Abl activity towards the CTD but shows no effect in P-TEFb\u2019s ability to phosphorylate the CTD substrate (Figure 3\u2014figure supplement 1C). In the second method, the heat-inactivation effectively abolishes the kinase activity of c-Abl (Figure 3\u2014figure supplement 1B). In both experiments, P-TEFb continues to install a greater amount of Ser2 phosphorylation relative to no c-Abl treatment controls (Figure 3\u2014figure supplement 1D). Therefore, the increase in the apparent Ser2 phosphorylation is not due to P-TEFb\u2019s physical interaction with c-Abl but arises from c-Abl kinase activity against CTD substrates at Tyr1.\n\nSince immunoblotting presents the issue of epitope masking in highly phosphorylated protein samples and lacks the ability to separate reaction products in high resolution, we sought a method to identify the phosphorylation sites on the CTD directly and precisely. To determine the phosphorylation pattern resulting from sequential kinase treatment, we used LC-UVPD-MS/MS to investigate the activity of P-TEFb in the context of Tyr1 phosphorylation. LC-UVPD-MS/MS provides single residue resolution and overcomes artifacts inherent to immunoblotting such as epitope masking. Unfortunately, full-length yeast CTD is resistant to proteolysis due to a lack of basic residues, hindering further analysis by tandem MS (Sch\u00fcller et al., 2016; Suh et al., 2016). Novel proteases, such as chymotrypsin and proteinase K, that cleave at bulky hydrophobic residues like tyrosine have proven effective in the past for analyzing the native sequence of the CTD, but proteolysis becomes inhibited upon phosphorylation due to the modification\u00a0on tyrosine (Mayfield et al., 2017). Short synthetic peptides circumvent the need for proteases but poorly mimic the physiological CTD and are unlikely to reveal bona fide CTD kinase specificities. To overcome these technical challenges, we generated a full-length yeast CTD with lysine replacing Ser7 in every other repeat (yCTD-Lys) (Figure 1\u2014figure supplement 1C). This allowed for trypsin digestion into di-heptads, which represent the functional unit of the CTD (Corden, 2013; Eick and Geyer, 2013), and are amenable to MS/MS analysis.\n\nTo validate that the introduction of lysine residues does not bias kinase specificity, we first mapped the phosphorylation pattern of c-Abl or P-TEFb individually along yCTD-Lys using LC-UVPD-MS/MS. When treated with c-Abl, two single phosphorylation species are found at equivalent abundances with tyrosine at the same or neighboring heptad of Lys replacement (Figure 3D and Figure 3\u2014figure supplement 2A, peak 1 and 2) and a small peak in which both Tyr1 residues are phosphorylated (Figure 3D and Figure 3\u2014figure supplement 2A, peak 3). When treated with P-TEFb alone, we observed four single phosphorylated peptides: two almost equally abundant peaks containing di-heptads with a single Ser5 phosphorylation (Figure 3E and Figure 3\u2014figure supplement 2B, peak 1 and 2) and two peaks about\u00a0~40 fold less in intensity with pSer2 or pSer7 (Figure 3E and Figure 3\u2014figure supplement 2B, peaks 3 and 4). This result shows that P-TEFb strongly favors pSer5 in unmodified CTD substrates, consistent with our previously analysis (Figure 1A). Double phosphorylated species are also detected for di-heptads with both Ser5 residues phosphorylated as the predominant product (Figure 3E and F and Figure 3\u2014figure supplement 2B, peak 5). Several very small peaks (less than 100-fold lower in intensity) are identified as peptides containing both Ser5 and pSer2 (Figure 3E and Figure 3\u2014figure supplement 2B, peak 6). These results indicate that the existence of Lys residue does not seem to bias kinase activity and is consistent with our previous results that P-TEFb strongly prefers to phosphorylate Ser5.\n\nWhen treated in tandem with c-Abl followed by P-TEFb and digested with trypsin, di-heptads (YSPTSPSYSPTSPK) in a variety of phosphorylation states are generated. These species were separated in liquid chromatography (LC) and revealed nine di-heptad species of varying abundances. LC purification separates the different phosphorylation states of the di-peptide (Figure 3G). Some of the di-heptads contain only single phosphorylations due to incomplete reactions in vitro. To understand the effect of c-Abl CTD phosphorylation on P-TEFb, we focused on phosphorylated species with more than one phosphate added, especially those containing both tyrosine and serine phosphorylation (Figure 3G). Tandem phosphorylation generated species unique to those observed in c-Abl or P-TEFb individual treatment (elution at 27\u201331 min in LC, Figure 3G, peak 6, 7, 8). The most abundant of these unique species (Figure 3G peak 7) contains both Tyr1 and Ser2 phosphorylation (Figure 3H and Figure 3\u2014figure supplement 2C). Similarly, a close-by but less abundant peak also contains Tyr1 and Ser2 double phosphorylation although in a different location (Figure 3G peak eight and Figure 3\u2014figure supplement 2C). Only a small peak contains both Tyr1 and Ser5 phosphorylation (Figure 3G peak six and Figure 3\u2014figure supplement 2C). Although we cannot exclude the possibility of the existence of other phosphorylated species containing a mixture of tyrosine and serine phosphorylation, their quantity is likely very low and not detected in LC-UVPD-MS/MS analysis. P-TEFb\u2019s serine residue preference is dramatically different between reactions on unmodified CTD substrate, where pSer5 predominates (Figure 3E peak 5), and those pre-treated with c-Abl where pSer2 is the primary product species (Figure 3G peak 7). Our results show that in di-heptads with Tyr1 phosphorylated, Ser2 becomes the primary target of P-TEFb phosphorylation.\n\nThe high performance of LC chromatography also allowed us to confirm our phosphomapping within di-heptads of the yeast CTD that diverge from the consensus sequence (Figure 1\u2014figure supplement 1C). Three di-heptads of the divergent sequence were generated following trypsin digestion of the yCTD-Lys construct (Figure 3\u2014figure supplement 3, sequences of YSPTSPAYSPTSPK, YSPTSPNYSPTSPK, and YSPTSPGYSPGSPK). Although these di-heptads exist in a much smaller amount than the dominant product YSPTSPSYSPTSPK, they can be resolved and purified in high-performance liquid chromatography and analyzed for phosphorylation position (Figure 3\u2014figure supplement 3). In these three phosphorylated di-heptads, the sole detected product of tandem treatment is a di-heptad with Tyr1 and Ser2 phosphorylated (Figure 3\u2014figure supplement 3, right panels). In contrast, all peptides phosphorylated by P-TEFb alone gave a predominant di-heptad species containing only pSer5 (Figure 3\u2014figure supplement 3, left panels). No Tyr1 and Ser5 double phosphorylation species were captured, possibly due to low abundance. The phosphoryl mapping of the various di-heptads generated provides independent evidence that Tyr1 phosphorylation promotes Ser2 phosphorylation by P-TEFb even in the context of divergent heptads.\n\nTo further corroborate the mass spectrometry results that the specificity of P-TEFb is altered from Ser5 to Ser2 upon Tyr1 phosphorylation, we generated a new yeast CTD variant with 13 repeats (half of the full-length yeast CTD) with every single Ser5 mutated to alanine (S5A construct, Figure 1\u2014figure supplement 1H). Previously, it was shown that replacing Ser5 in CTD prevents its phosphorylation by P-TEFb (Czudnochowski et al., 2012). Treatment of the S5A constructs with P-TEFb alone results in the addition of little to no phosphate shown by MALDI-MS (Figure 3I). However, when the S5A construct is treated with c-Abl, it accepts up to five phosphate groups (Figure 3J). Subsequent treatment with P-TEFb results in an obvious shift in the MALDI-MS spectra with up to seven phosphates added to the final product (Figure 3K). The results corroborate the conclusion drawn from the MS/MS results, indicating that upon Tyr1 phosphorylation S5A becomes a viable substrate for P-TEFb and adds at least two additional phosphates likely to Ser2 residues.\n\nThe observation of pSer2 as the major product in the context of pre-existing pTyr1 is interesting because P-TEFb has consistently shown a strong preference for Ser5 in vitro. Using a combination of immunoblotting, LC-UVPD-MS/MS, mutagenesis, and MALDI-MS we found Tyr1 phosphorylation primes the CTD for subsequent modification on Ser2 by P-TEFb via alteration of its specificity from Ser5.\n\n### Effect of Ser5 and Ser7 phosphorylation on P-TEFb activity\n\nThe observation that Tyr1 phosphorylation by c-Abl alters the specificity of P-TEFb from Ser5 to Ser2 prompted us to ask if other kinases recruited to the CTD at the beginning of transcription can also alter P-TEFb specificity in vitro. TFIIH is a kinase that acts during transcription initiation and promotes P-TEFb function in vivo (Ebmeier et al., 2017). To evaluate if a modification or combination of modifications installed by TFIIH can promote the Ser2 specificity of P-TEFb as we see with Tyr1 phosphorylation, we reconstructed CTD phosphorylation in vitro by treating yCTD substrates sequentially with TFIIH followed by P-TEFb and analyzed the resultant phosphorylation pattern using LC-UVPD-MS/MS and immunoblotting (Figure 3\u2014figure supplement 4). When followed by P-TEFb, three phosphorylated species are generated, as revealed by LC-UVPD-MS/MS: two major species containing Ser5 phosphorylation and a minor species containing Ser2 phosphorylation (Figure 3\u2014figure supplement 4A\u2013B). These peptides are reminiscent of those generated by P-TEFb alone where Ser5 phosphorylation dominates (Figure 1A). These data indicate that TFIIH-mediated phosphorylations do not alter P-TEFb specificity in vitro.\n\n### Tyr1 phosphorylation primes Ser2 phosphorylation in human cells\n\nOur kinase assays have shown that Tyr1 phosphorylation by c-Abl alters the specificity of P-TEFb allowing for Ser2 phosphorylation of the CTD in vitro. To evaluate the importance of pTyr1 to Ser2 phosphorylation in human cells, we sought to selectively reduce pTyr1 levels and monitor pSer2 via western blot (Figure 4A and B). Available literature suggests that c-Abl is important to Tyr1 phosphorylation in RNA polymerase II but not the sole kinase responsible (Baskaran et al., 1999). Other Abl-like kinases may likely compensate for the function of c-Abl by phosphorylating Tyr1 in human cells (Baskaran et al., 1997). Therefore, we initially utilized the potent inhibitor dasatinib, which inhibits c-Abl as well as other tyrosine kinases similar to c-Abl, to treat HEK293T cells (Winter et al., 2012). Tyr1 phosphorylation has also been implicated in stabilizing RNA polymerase II in the cytosol (Hsin et al., 2014), so marked reduction of Tyr1 phosphorylation may lead to a decrease in the global level of RNA polymerase II resulting in an apparent decrease in CTD phosphorylation levels. To address this potential artifact, we optimized inhibitor concentration to a level at which global RNA polymerase II levels are not significantly altered as determined by immunoblotting against RNA polymerase II subunits POLR2A and POLR2C (Figure 4 and Figure 4\u2014figure supplement 1A). At 10 \u00b5M dasatinib, pTyr1 levels are reduced by 30% in HEK293T cells, and this is accompanied by a 29% decrease in Ser2 phosphorylation (Figure 4A). Importantly, pSer5 levels were not significantly altered (Figure 4A and Figure 4\u2014figure supplement 1A). To more specifically target Abl-mediated Tyr1 phosphorylation, we utilized the highly specific inhibitor imatinib that has a much smaller inhibitory repertoire with strong inhibition to c-Abl and Abl2 (Winter et al., 2012). Treatment of HEK293T cells with 20 \u03bcM imatinib results in a reduction in pTyr1 of 35%. This is accompanied by a statistically significant decrease in pSer2 levels of 15% (Figure 4B). One potential concern is antibody masking by flanking phosphorylation because Tyr1 phosphorylation can block recognition of pSer2 by the 3E10 antibody (Chapman et al., 2007). Thus, loss of pTyr1 by inhibition with small molecules should produce an increase in the pSer2 signal if pSer2 levels remain constant. The fact that we observe a significant reduction in the pSer2 signal suggests it is indeed decreasing, but the 15\u201329% reduction quantified is likely an underestimate of the decrease given existing knowledge about these antibodies. Compounded with the mass spectrometry results, our data support that pTyr1 promotes Ser2 phosphorylation. In both the dasatinib and imatinib treatments pSer5, POLR2A, and POLR2C levels remain unaffected (Figure 4 and Figure 4\u2014figure supplement 1A). Data from this inhibitor-based approach are in line with our in vitro observation that Ser2 phosphorylation is specifically coupled to Tyr1 phosphorylation and extends these conclusions to cellular contexts.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative images (top) and quantification (bottom) of western blot against 20 \u03bcg total protein from HEK293T cells treated with paired DMSO vehicle control (left, white) or 10 \u03bcM dasatinib (right, red). Immuno-blotting against epitopes left to right: phosphorylated Tyr1 reduced by treatment to 69.7% control (n\u00a0=\u00a06), phosphorylated Ser2 reduced by treatment to 70.8% control (n\u00a0=\u00a04), phosphorylated Ser5 unaltered (n\u00a0=\u00a06), POLR2A unaltered (n\u00a0=\u00a06) (POLR2C quantification provided in Figure 4\u2014figure supplement 1A). (B) Representative images (top) and quantification (bottom) of western blot against 20 \u03bcg total protein from HEK293T cells treated with paired DMSO vehicle control (left, white) or 20 \u03bcM imatinib (right, red). Immuno-blotting against epitopes, left to right: Phosphorylated Tyr1 reduced by treatment to 65.2% control (n\u00a0=\u00a06), phosphorylated Ser2 reduced by treatment to 85.2% control (n\u00a0=\u00a06), phosphorylated Ser5 unaltered (n\u00a0=\u00a06), POLR2A unaltered (n\u00a0=\u00a06) (POLR2C quantification supplied in Figure 4\u2014figure supplement 1A). Epitope signals normalized against tubulin loading control. Significance determined by Welch\u2019s t-test (*=p value<0.05, **=p value<0.01, ***=p value<0.001, n.s.\u00a0=\u00a0not significant (p-value>0.05)), error bars indicate SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of POLR2C western blot from Figure 4. POLR2C bands from dasatinib and imatinib blots (indicated) from Figure 4 were quantified. Dasatinib treatment POLR2C quantification was performed on the same blots providing the Ser2 and Ser5 data. Imatinib treatment POLR2C quantification was performed on the same blots providing POLR2A and Ser5 data. No significant change in POLR2C levels was observed for any blot analyzed. Epitope signals normalized against tubulin loading control. Significance determined by Welch\u2019s t-test (n.s.\u00a0=\u00a0not significant (p-value>0.05)), error bars indicate SEM, n\u00a0=\u00a06). (B) Boxplot of pausing index changes of HEK293T cells on the genes from G0 and G1 clusters upon Tyr1 phosphorylation. \u2018ns\u2019 indicates a p-value higher than 0.05. \u2018****\u201d indicates p-value less than 0.0001. (C) Line plot of pausing indexes on all genes. Solid and dotted lines are representing two biological replicates. (D) Line plot of pausing indexes on genes for each cluster.\n\n### Decreased Tyr1 phosphorylation results in promoter proximal accumulation of RNA polymerase II\n\nTo understand the biological implication of coupled Tyr1 and Ser2 phosphorylations at the level of individual genes, we conducted ChIP-seq analysis for the distribution of RNA Polymerase II upon the inhibition of Tyr1 phosphorylation. To carry out this experiment, we inhibited c-Abl with the potent small-molecule inhibitor dasatinib in HEK293T cells under conditions where pTyr1 is significantly reduced, but overall Pol II amount is unaffected (Figure 4A and Figure 4\u2014figure supplement 1A). The sample was prepared for ChIP-seq studies using RNA polymerase II antibody (8WG16) for immunoprecipitation to analyze the distribution of RNA polymerase II in a genome-wide fashion. In comparison of the dasatinib treated cells with the vehicle controls, the distribution of RNA polymerase II along the gene body is altered in multiple genes (Figure 5A). Signal was normalized to 10M reads for both samples, and a significant increase of peak height for RNA polymerase II was found in the promoter region of many genes, as demonstrated in representative genes Myc and FANCL (Figure 5A). To quantify the change of distribution of the polymerase, we calculated the pausing index (Zeitlinger et al., 2007) which is the ratio of Pol II read density in the region \u221250 to +300 bp of Transcription starting site (TSS) to the rest of gene body 3000 bp downstream of Transcription end site (TES). The genes are clustered into four groups based on the pausing index: the G0 cluster has a pausing score close to 0; the remaining genes were ranked based on their pausing scores from high to low with the G1 cluster containing genes with pausing scores less than the lower quartile, G2 with genes contained between the lower and upper quartile, and G3 with pausing scores above the upper quartile. Genes in G0 and G1 have little occupancy of the polymerase and might not be active (Figure 5B). A meta-analysis, as visualized in box plot for the pausing index of the genes in G0 and G1, shows no statistical difference between control and treatment samples (Figure 4\u2014figure supplement 1B and D). But a statistically significant increase can be observed close to two-fold in G2 and G3 genes (Figure 5C and Figure 4\u2014figure supplement 1C\u2013D). The same trend is observed across biological duplicates. Overall, these results suggest that RNA polymerase II is stalled in the promoter region upon the inhibition of Tyr1 phosphorylation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48725/elife-48725-fig5-v2.jpg)\n\n**Figure 5.:** (A) ChIP-seq example illustrating the association of RNA polymerase II along with the active transcribing genes. Antibody 8WG16 was used to detect RNA polymerase II regardless of its phosphorylation state. The promoter regions of the genes are shaded in yellow for highlighting. (B) Heatmaps of ChIP-seq signal intensity of RNA polymerase II (8WG16) [\u00b12 kb windows around the center of transcription start site (TSS)] for genes in each group. (C) Boxplots on the pausing index changes on the genes from G2 (9945 genes) and G3 (4973 genes) clusters upon Tyr1 phosphorylation. \u2018****\u201d indicates p-value\u22640.0001.\n\n## Discussion\n\nOur discovery that Tyr1 phosphorylation of the CTD alters the preference of P-TEFb from Ser5 to Ser2 resolves the controversy surrounding P-TEFb\u2019s specificity (Bartkowiak et al., 2010; Czudnochowski et al., 2012). P-TEFb was initially identified as a CTD kinase that controls the elongation potential of RNA polymerase II, is required for the majority of RNA polymerase II transcription, and is specific for Ser2 in vivo (Chao and Price, 2001; Marshall et al., 1996; Ni et al., 2004). However, these early conclusions are at odds with in vitro data demonstrating P-TEFb is incapable of phosphorylating Ser2 of CTD peptides in vitro (Czudnochowski et al., 2012). Two other kinases, CDK12 and CDK13, display Ser2 kinase activity in cells but do not seem to play a major role in Ser2 phosphorylation in early transcriptional events (Bartkowiak et al., 2010; Chen et al., 2007). Investigations on the effect of CTD phosphorylations on P-TEFb specificity have revealed that Ser7 (Czudnochowski et al., 2012) and Ser5 (this manuscript) do not alter its preference for Ser5. Using direct methods, like mass spectrometry confirmed by immunoblotting and EMSA, we identified that Tyr1 phosphorylation could alter the specificity of P-TEFb from Ser5 to Ser2 in vitro. It should be stressed that continuous heptad repeats with phosphorylated pTyr1 inhibit subsequent CTD modification by P-TEFb (Czudnochowski et al., 2012). However, when treated biochemically with c-Abl, the pTyr1 pattern not only allows for P-TEFb phosphorylation but also shift the substrate preference from Ser5 to Ser2. Furthermore, inhibition of Tyr1 phosphorylation leads to the reduction of Ser2 phosphorylation in human cells and the accumulation of Pol II in the promoter-proximal pausing stage of transcription. Therefore, we show that Tyr1 phosphorylation potentiates Ser2 phosphorylation of the CTD by altering P-TEFb specificity.\n\nThe PTM state of the CTD has been correlated to the progression of transcription (Jeronimo et al., 2016). Traditionally, such analyses are interpreted through a paradigm considering heptads phosphorylated on a single isolated residue with Ser5 phosphorylation dominating the initiation stage of transcription and Ser2 phosphorylation dominating elongation and termination (Corden, 2013). However, this simplification of CTD modification cannot explain the well-coordinated recruitment of the myriad CTD binding factors currently implicated in eukaryotic transcription (Ebmeier et al., 2017; Eick and Geyer, 2013; Harlen and Churchman, 2017). Data presented here point to a sophisticated model in which the phosphorylation of Tyr1 at the beginning of transcription sets the stage for future coding events. This interplay between c-Abl and P-TEFb results in a chemically distinct phospho-CTD landscape compared to CTD phosphorylated by a single kinase. The combination of these modification modes likely contributes to a heterogeneous collection of modified heptads, which recruits the diverse array of CTD binding partners in a coordinated manner. These results are in good agreement with the \u2018CTD code\u2019 hypothesis proposed decades ago where different combinations of post-translational events result in different transcriptional outcomes.\n\nTyr1 phosphorylation has been implicated in stabilizing RNA polymerase II in cells (Hsin et al., 2014), transcription termination (Mayer et al., 2012) and anti-sense transcription (Descostes et al., 2014) but a coherent molecular basis for these disparate functions remains elusive. Our analysis provides a molecular mechanism demonstrating how Tyr1 phosphorylation can affect subsequent phosphorylation events carried out by other CTD kinases. The ability of Tyr1 phosphorylation to redirect signaling and influence subsequent modifications along the CTD, as revealed for P-TEFb, suggests these various roles for pTyr1 may arise indirectly. It can function through its impact on downstream CTD modifiers, highlighting integrated, indirect, and context-specific mechanisms for pTyr1 during co-transcriptional signaling. The final accumulation of individual species is dependent on the dynamic interplay of CTD kinases and phosphatases throughout the transcription cycle. Tyr1 phosphorylation is relatively transient, appearing at the transition from initiation to elongation and decreasing rapidly through the action of phosphatase(s) (Eick and Geyer, 2013). Despite this transient nature, pTyr1 is positioned in a vital window to alter P-TEFb specificity and regulate its phosphorylation pattern along RNA polymerase II. The adjustability of P-TEFb specificity by nearby Tyr1 phosphorylation reveals a novel mechanism for the regulation of P-TEFb kinase activity. With many binding partners in cells for P-TEFb, there might be additional regulators promoting the pSer2 activity of P-TEFb independent of or cooperatively with Tyr1 phosphorylation.\n\nThe data presented reconcile P-TEFb\u2019s in vitro and in vivo specificity and inspires new queries fundamental to CTD biology. P-TEFb is ubiquitously important for transcription across eukaryotic cells and often co-opted in disease states like HIV infection and cancer (Franco et al., 2018). The integrated CTD code revealed here represents a unique mechanism to manipulate P-TEFb and potentially other CTD modifiers. Future inquiries using similar multi-disciplinary approaches will hopefully reveal CTD modification patterns in greater detail at different stages of the transcription process in single amino acid resolution. Information such as this will define the temporal and spatial signaling allowing for the recruitment of transcriptional regulators during active transcription. Overall, our findings support a model in which cross-talk between CTD modification enzymes increases the diversity and coding potential of CTD heptads. This expands the lexicon of phosphorylation marks and can provide more specific recruitment of transcription regulators allowing for the precise control of eukaryotic transcription.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tyr1 (Clone 3D12)(rat monoclonal)</td>\n      <td>Millipore</td>\n      <td>Cat# MABE350</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-beta Tubulin (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab6046, RRID:AB_2210370</td>\n      <td>(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ser2 (Clone 3E10) (rat monoclonal)</td>\n      <td>Millipore</td>\n      <td>Cat# 04\u20131571, RRID:AB_11212363</td>\n      <td>(1:10000) for in vittro phosphorylated samples, (1:5000) for cell lysates and dot blot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ser5 (Clone 3E8)(rat monoclonal)</td>\n      <td>Millipore</td>\n      <td>Cat# 04\u20131572, RRID:AB_10615822</td>\n      <td>(1:10000) for in vitro phosphorylated samples, (1:5000) for cell lysates</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-POLR2A (Clone 4F8) (rat monoclonal)</td>\n      <td>Millipore</td>\n      <td>Cat# 04\u20131569, RRID:AB_11213378</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-POLR2C (rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab182150</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat Anti-Rat IgG Antibody HRP conjugate</td>\n      <td>Millipore</td>\n      <td>Cat# AP136P, RRID:AB_91300</td>\n      <td>(1:20000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat Anti-Rabbit IgG H and L</td>\n      <td>Abcam</td>\n      <td>Cat# ab6721, RRID:AB_955447</td>\n      <td>(1:20000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RNA polymerase II CTD repeat YSPTSPS antibody [8WG16] (mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab817, RRID:AB_306327</td>\n      <td>5 \u00b5l/Chip</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>RNA Pol II Ser2-P antibody [3E10](rat monoclonal)</td>\n      <td>Chromotek</td>\n      <td>RRID: AB_2631403</td>\n      <td>500 \u00b5l/Chip</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>3CTD, 4CTD, 5CTD and Y to F gene fragments</td>\n      <td>IDT</td>\n      <td></td>\n      <td>Cloned into pET28a derived vector with His GST tag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-His6-ERK2 MEK1_R4F_coexpression vector</td>\n      <td>Gift from Melanie Cobb</td>\n      <td>Addgene plasmid Cat#39212</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>S5A 13 repeat CTD</td>\n      <td>Biomatik</td>\n      <td></td>\n      <td>Cloned into pET28a derived vector with His GST tag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>S7K spaced CTD</td>\n      <td>Biomatik</td>\n      <td></td>\n      <td>Cloned into pET28a derived vector with His GST tag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>human ABL1 kinase domain (residues 229\u2013511)</td>\n      <td>Kind gift from Kuriyan Lab</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>TFIIH(Cdk7/Cyclin H/MAT1 (CAK complex))</td>\n      <td>Millipore</td>\n      <td>Cat# 14\u2013476</td>\n      <td>Used at a concentration of 0.025 \u00b5g/\u00b5l</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>P-TEFb (Cdk9/Cyclin T1)</td>\n      <td>Millipore</td>\n      <td>Cat# 14\u2013685</td>\n      <td>Used at a concentration of 0.0075 \u00b5g/\u00b5l</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>c-Abl kinase</td>\n      <td>ProQinase</td>\n      <td>Cat# 0992-0000-1</td>\n      <td>Used at a concentration of 0.0035 \u00b5g/\u00b5l</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pierce BCA Protein Assay Kit</td>\n      <td>Thermo Fischer Scientific</td>\n      <td>23252</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Ultra II DNA Library Prep Kit for Illumina</td>\n      <td>NEB</td>\n      <td>E7645S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Multiplex Oligos for Illumina(Index Primers Set 1)</td>\n      <td>NEB</td>\n      <td>E7335S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Imatinib</td>\n      <td>Selleck Chemicals</td>\n      <td>S1026</td>\n      <td>20 \u00b5M concentration</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dasatinib</td>\n      <td>Sigma Aldrich</td>\n      <td>CDS023389</td>\n      <td>10 \u00b5M concentration</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>10 nCi/\u00b5l radiolabeled ATP</td>\n      <td>Perkin Elmer</td>\n      <td>NEG002A 100UC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>0.45 \u00b5m nitrocellulose filters</td>\n      <td>Sigma Aldrich</td>\n      <td>WHA10401114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Econo-Safe Economical Biodegradable Counting Cocktail</td>\n      <td>Research Products International</td>\n      <td>SKU: 111175</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HALT protease and phosphatase inhibitor cocktail</td>\n      <td>Thermo Fischer Scientific</td>\n      <td>Cat# 78440</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ribonuclease A</td>\n      <td>VWR lifesciences</td>\n      <td>CAS# 9001-99-4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Proteinase K</td>\n      <td>Ambion</td>\n      <td>Cat# 2542</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glycogen</td>\n      <td>Thermofischer scientific</td>\n      <td>Cat# R0561</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>16% Formaldehyde solution (w/v), Methanol-free</td>\n      <td>Thermo scientific</td>\n      <td>Ref# 28908</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SuperSignal West Pico Chemiluminescent Substrate</td>\n      <td>Pierce</td>\n      <td>34079</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ggplot2, R smoothing package</td>\n      <td>R-Studio</td>\n      <td>https://www.rstudio.com/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DataExplorer (AB)</td>\n      <td>Matrix Science</td>\n      <td>http://www.matrixscience.com/help/instruments_data_explorer.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image J</td>\n      <td>NIH</td>\n      <td>https://imagej.nih.gov/ij/download.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XCalibur Qual Browser</td>\n      <td>Thermo Fischer Scientific</td>\n      <td>XCALI-97617</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ProSight Lite</td>\n      <td>Proteomics Center of Excellence Northwestern University</td>\n      <td>http://prosightlite.northwestern.edu/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Ni-NTA</td>\n      <td>Qiagen</td>\n      <td>30210</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Dynabeads Protein G</td>\n      <td>ThermoFischer Scientific</td>\n      <td>Cat# 10004D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>AMPure XP beads</td>\n      <td>Beckman Coulter</td>\n      <td>Ref# A63881</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Vivaspin</td>\n      <td>Sartorius</td>\n      <td>VS2002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Picofrit 75 \u00b5m id analytical columns</td>\n      <td>New Objective</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Picofrit 75 \u00b5m id analytical columns</td>\n      <td>New Objective</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Waters Xbridge BEH C18</td>\n      <td>Milford</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Orbitrap Fusion Lumos Tribrid mass spectrometer</td>\n      <td>Thermo Fischer Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Velos Pro dual linear ion trap mass spectrometer</td>\n      <td>Thermo Fischer</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>G:BOX imaging systems</td>\n      <td>Syngene</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nCTD coding sequences (Figure 1\u2014figure supplement 1) were subcloned into pET28a (Novagene) derivative vectors encoding an N-terminal His-tag a GST-tag and a 3C-protease site to generate GST-CTD constructs as described previously (Mayfield et al., 2017). 3CTD-5CTD and YtoF variants of CTD coding portions (Figure 1\u2014figure supplement 1) were amplified from synthetic DNA templates generated by IDT. The S5A variant DNA and the S7K spaced DNA constructs were purchased from Biomatik as synthetic genes, amplified and subsequently cloned into the pET28a derivative vector described above. Homo sapiens Erk2 was expressed from pET-His6-ERK2-MEK1_R4F_coexpression vector as a gift from Melanie Cobb (Addgene plasmid #39212) (Khokhlatchev et al., 1997). E. coli BL21 (DE3) cells grown 37\u00b0C in Luria-Bertani (LB) media were used to overexpress recombinant GST-CTDs variants and Erk2.\n\n### GST-CTD variants were prepared by established protocols.\n\nBriefly, proteins were overexpressed in E. coli BL21 (DE3) cells by growing at 37\u00b0C in LB media containing 50 \u03bcg/mL kanamycin to an OD600 of 0.4\u20130.6. Expression was induced by the addition of isopropyl-\u03b2-D-thiogalactopyranoside (IPTG) to a final concentration of 0.5 mM. After induction, the cultures were grown at 16\u00b0C for an additional 16 hr. The cells were pelleted and lysed via sonication in lysis buffer [50 mM Tris-HCl pH 8.0, 500 mM NaCl, 15 mM Imidazole, 10% Glycerol, 0.1% Triton X- 100, 10 mM \u03b2-mercaptoethanol (BME)]. The lysate was cleared by centrifugation, and the supernatant was initially purified using Ni-NTA (Qiagen) beads and eluted with elution buffer (50 mM Tris-HCl pH 8.0, 500 mM NaCl, 200 mM Imidazole, and 10 mM BME). The protein was dialyzed against gel filtration buffer (20 mM Tris-HCl pH 8.0, 50 mM NaCl, 10 mM BME for GST-yCTD and 20 mM Tris-HCl pH 7.5, 200 mM NaCl, 10 mM BME). Finally, proteins were concentrated and ran on a Superdex 200 gel filtration column (GE). Erk2 was purified using a previously published protocol (Khokhlatchev et al., 1997). Homogeneity of the eluted fractions was determined via Coomassie Brilliant Blue stained SDS-PAGE. Samples were concentrated in vivaspin columns (Sartorius).\n\n### Kinase reactions\n\nAbl kinase treated CTD reactions were prepared in buffer conditions containing 1 \u03bcg/\u03bcL GST-yCTD substrate, 0.0035 \u03bcg/\u03bcL c-Abl kinase, 50 mM Tris-HCl at pH7.5, 50 mM MgCl2 and 2 mM ATP. TFIIH treated CTD reaction were prepared in buffer conditions containing 1 \u03bcg/\u03bcL GST-CTD substrate, 0.025 \u03bcg/\u03bcL TFIIH, 50 mM Tris-HCl at pH7.5, 50 mM MgCl2 and 2 mM ATP. P-TEFb treated CTD reaction, were prepared in buffer conditions containing 1 \u03bcg/\u03bcL GST-CTD substrate, 0.0075 \u03bcg/\u03bcL P-TEFb, 50 mM Tris-HCl at pH7.5, 50 mM MgCl2 and 2 mM ATP. Erk2-treated CTD reaction, as well as the controls with no kinase treatment, were prepared in buffer conditions containing 1 \u03bcg/\u03bcL GST-CTD substrate, 0.025 \u03bcg/\u03bcL Erk2, 50 mM Tris-HCl at pH7.5, 50 mM MgCl2 and 2 mM ATP. These reactions were incubated for various amount of time at 30\u00b0C along with control experiments setup under identical conditions but without kinases and then stored at \u221280\u00b0C until analysis.\n\nTandem kinase treatments were performed by mixing 10 \u03bcg GST-CTD substrate treated with the c-Abl as described above (incubated overnight for 16 hr) and an equal volume of a solution containing the second kinase (0.05 \u03bcg/\u03bcL TFIIH or 0.015 \u03bcg/\u03bcL P-TEFb or 0.05 \u03bcg/\u03bcL Erk2) in tandem reaction buffer (50 mM Tris-HCl at pH7.5, 50 mM MgCl2, 2 mM ATP). These were incubated at 30\u00b0C for 16 hr and stored at \u221280\u00b0C until analysis.\n\n### Kinase activity assay\n\nThe Erk2 kinetic activity assay was performed in a 25 \u00b5l reaction volume containing 0\u2013100 \u00b5M substrate (GST yCTD or GST YtoF CTD) and a reaction buffer of 40 mM Tris-HCl at pH 8.0 and 20 mM MgCl2. The reaction was initiated by adding 187 nM of Erk2 and incubated at 28\u00b0C for 15mins before being quenched with 25 \u00b5l H2O and 50 \u00b5l of room temperature Kinase-Glo Detection Reaction (Promega). The mixtures were allowed to sit at room temperature for 10 min before reading the bioluminescence in a Tecan Plate reader 200. The readings obtained were translated to ATP concentration with the help of an ATP standard curve determined with the Kinase Detection Reagent.\n\nThe TFIIH kinetic reactions were set up with 0\u2013100 \u00b5M substrate (GST yCTD or GST YtoF CTD), 0.2 \u00b5M TFIIH, 0.1 mg/ml Bovine Serum Albumin (BSA) and reaction buffer of 50 mM Tris-HCl pH 8.0, 10 mM MgCl2, 1 mM DTT. 500 \u00b5M ATP Mix (10 nCi/\u00b5l radiolabeled ATP, PerkinElmer) was added to each tube to start the reactions. The tubes were subsequently incubated in a 30\u00b0C water bath for 30mins and quenched with 500 \u00b5l of quench buffer (1 mM potassium phosphate pH 6.8, 1 mM EDTA) to a reaction volume of 10 \u00b5l. Each reaction was loaded onto 0.45 \u00b5m nitrocellulose filters and washed three times with 1 mM potassium phosphate buffer to remove any excess labeled ATP. Filters were added to glass vials with scintillation fluid, Econo-Safe Economical Biodegradable Counting Cocktail (Research Products International) and set in a scintillation counter for 5 min reads each. The amount of phosphate incorporation was determined for each reaction using a set of 147 pmol labeled ATP standards that were read alongside each reaction set.\n\nKinetic data obtained from the two assays described above were analyzed in R (Hamilton, 2015; R Development Core Team, 2017) and fitted to the Michaelis-Menten kinetic equation to obtain respective kinetic parameters kcat (s\u22121) and Km (\u00b5M).\n\n### Electrophoretic mobility shift assay\n\nSDS-PAGE analysis was performed using 10\u201315% acrylamide gels containing 1% SDS. GST-CTD samples were prepared by boiling with SDS-PAGE loading dye at 95\u00b0C for 5 min. This was also used to quench time-course reactions. A volume containing approximately 1 \u03bcg of phosphorylated GST-CTD substrate or no kinase control was loaded into wells and resolved at\u00a0~150V for 1 hr at room temperature. Gels were stained with Coomassie Brilliant Blue and visualized on G: BOX imaging systems (Syngene).\n\n### MALDI-MS analysis\n\nApproximately 5 \u03bcg of GST-CTD protein from the kinase reactions described were prepared for MALDI-MS. If necessary, the protein was digested with 3C protease by mixing sample in a 1:10 ratio of 3C-protease to GST-CTD variants. Proteins were equilibrated with dilute trifluoracetic acid (TFA) to a final concentration of 0.1% TFA and a pH of\u00a0<4. These samples were desalted using ZipTip (Millipore) tips according to manufacturer's instructions. These samples were mixed 1:1 with a 2,5-dihydroxybenzoic acid matrix solution (DHB) and spotted on a stainless steel sample plate. The spots were allowed to crystallize at ambient temperature and pressure. MALDI-MS spectra were obtained on an AB Voyager-DE PRO MALDI-TOF instrument with manual adjustment of instrument parameters to ensure the greatest signal to noise. Sample masses were determined by an internal calibration against the untreated GST-CTD variants. Data analysis, noise reduction, and Gaussian smoothing, if necessary, were performed in DataExplorer (AB), R, and the R package smoother (Hamilton, 2015; R Development Core Team, 2017). Masses were determined as the highest local intensity peak of the post-processed data. Data were visualized in R-Studio using ggplot2 (Wickhan, 2009). All MALDI experiments were carried out three times independently with biological triplicates.\n\n### Cell culture and total protein preparation\n\nHEK293T cells were purchased from ATCC and no mycoplasma contamination was detected. The cells were maintained in DMEM (ISC BioExpress cat#T-2989\u20136) with splitting every other day and seeding at a concentration of 9.6\u00a0\u00d7\u00a0104 cells per 10 cm culture dish and incubated at 37\u00b0C at 5% CO2. Cells to be treated with imatinib, dasatinib, or vehicle control were plated at 5\u00a0\u00d7\u00a0105 cells per well in 6-well tissue culture plates in fresh DMEM. Cells were incubated for 24 hr, and the media was replaced with fresh DMEM containing the indicated amount of inhibitor or equivalent portion of DMSO vehicle control for an additional 24\u201340 hr.\n\nProtein preparations were generated by direct in-well lysis. Media was then removed, and the cells were washed with ice-cold Phosphate-buffered saline (PBS), and 200 \u03bcL RIPA buffer (150 mM NaCl, 10 mM Tris-HCl pH 7.5, 0.1% SDS, 1% Triton X-100, 1% deoxycholate, and 5 mM EDTA) supplemented to 1X with HALT protease and phosphatase inhibitor cocktail (Thermo Scientific) was added directly to cells. Plates were incubated on ice for 15 min with gentle shaking, and the lysate was transferred to microcentrifuge tubes. Samples were briefly sonicated to reduce viscosity and spun to remove cell debris. Protein concentration was determined to utilize Pierce BCA Protein Assay Kit (Thermo Scientific) against a BSA standard curve. Samples were diluted with SDS-PAGE loading buffer and boiled at 95\u00b0C for 5 min. The sample was aliquoted and frozen at \u221280\u00b0C.\n\n### Immunoblotting\n\nTotal protein from cell lysate (20\u201340 \u03bcg) or GST-yCTD samples (50 to 500 ng, dependent on epitope) was loaded onto a 4\u201320% gradient SDS-PAGE gel (Biorad, Cat#:456\u20131096) and ran at 150V for 50 min at room temperature in a Mini-PROTEAN Tetra Cell (Biorad). The proteins were transferred to PVDF membrane at 100 V for 1 hr on ice in a Mini-PROTEAN Tetra Cell (Biorad). Membranes were blocked in 1X TBST (20 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.1% Tween-20) and 5% (BSA) or non-fat dry milk for 1 hr at room temperature with shaking. Blocked membranes were incubated in primary antibodies in either 1X TBST or 1X TBST+5% BSA at 4\u00b0C overnight or 1 hr at room temperature. The membranes were then washed six times with 1X TBST for 5 min each at room temperature and incubated with secondary antibodies in 1X TBST for 1 hr at room temperature. The membrane was washed once again and incubated with SuperSignal West Pico Chemiluminescent Substrate (Pierce) according to factory directions. Blots were imaged using a G:BOX gel doc system (Syngene) and quantified in ImageJ (Schneider et al., 2012). Statistical analysis was performed in R (R Development Core Team, 2017).\n\nBlots normalized against Coomassie-stained bands were stained by incubating the membrane post-immunoblotting with stain solution (0.1% Coomassie Brilliant Blue R-250, 40% ethanol, 10% acetic acid) for 1 min. The stain was discarded, and the blot was briefly rinsed with distilled water. Blot was de-stained in de-stain solution (10% ethanol, 7.5% acetic acid) until bands were visible. Blots were equilibrated with distilled water and imaged wet in a plastic blot protector using a G:BOX gel doc system (Syngene) and quantified as above.\n\nFor dot blot, samples of GST-yCTD were treated with P-TEFb alone or c-Abl followed by P-TEFb. The heat-inactivated samples were prepared by heating the c-Abl treated GST-yCTD at 60\u00b0C for five minutes, while the Dasatinib inactivated samples were prepared by adding 10 \u00b5M Dasatinib to the c-Abl treated sample 15 min before incubation with P-TEFb. The dot blots were performed by adding 2X SDS page loading dye and briefly heating each sample after which 1 \u00b5g of the sample was loaded in three replicates onto a 0.45 \u00b5m Nitrocellulose membrane. The membrane was subsequently allowed to dry and blocked in 1X TBST (20 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.1% Tween-20) and 5% BSA for 1 hr at room temperature with shaking. The Anti-RNA Pol II phosphoSer2 antibody, 3E10, (Millipore) was diluted 1:5000 times and was incubated overnight at 6\u00b0C to probe for Ser2 phosphorylation. The membranes were then washed five times with 1X TBST for 5 min each at room temperature and incubated with secondary antibody in 1X TBST for 1 hr at room temperature. The membrane was washed once again and incubated with SuperSignal West Pico Chemiluminescent Substrate (Pierce) according to manufacturer's instruction. Blots were imaged using a G:BOX gel doc system (Syngene) and quantified in ImageJ (Schneider et al., 2012). Statistical analysis was performed by using the Data Analysis function in Microsoft Excel.\n\nPrimary and secondary antibodies were stripped for re-probing by incubating membranes with a mild stripping buffer (200mM glycine, 0.1% SDS, 1% Tween 20, pH 2.2) for 10 minutes. Stripping buffer was discarded and this step was repeated once more. The blot was washed twice with 1X PBS for 10 minutes. The blot was washed twice with 1X TBST for 10 minutes. The membrane was blocked and re-probed with secondary antibody and chemiluminsecent reagent, as described above, to insure complete removal of both primary and secondary antibodies. The membrane was then probed for desired epitope as described above.\n\n### LC-UVPD-MS analysis\n\nGST-3CTD samples (approximately 1 \u00b5g/\u00b5L) were digested on ice for 4 hr in 50 mM Tris-HCl at pH 8.0 with 150 mM NaCl using 3C-protease at a molar ratio of 100:1 protein: protease in a reaction volume of 20 \u00b5L. Digests were desalted on C18 spin columns and resuspended to 1 \u00b5M with 0.1% formic acid for LC-MS analysis.\n\nSeparations were carried out on a Dionex Ultimate 3000 nano liquid chromatograph plumbed for direct injection. Picofrit 75 \u00b5m id analytical columns (New Objective, Woburn, MA) were packed to 20 cm using 1.8 \u00b5m Waters Xbridge BEH C18 (Milford, MA). Mobile phase A was water, and B was acetonitrile, each containing 0.1% formic acid. Separations occurred over a 30 min linear gradient from 2\u201335% B. The flow rate was maintained at 0.3 \u00b5L/min during the separation.\n\nAn Orbitrap Fusion Lumos Tribrid mass spectrometer (Thermo Fischer Scientific, San Jose, CA) equipped with a Coherent ExciStar XS excimer laser operated at 193 nm was used for positive mode LC-MS/MS analysis of the 3CTD peptides. The Lumos mass spectrometer was modified for ultraviolet photodissociation (UVPD) as described earlier (Klein et al., 2016). Photoactivation in the low-pressure linear ion trap was achieved using 2 pulses at 2 mJ in a targeted m/z mode. The 3+ charge states of the singly and doubly phosphorylated peptide GPGSGMYSPTSPSYSPTSPSYSPTSPS were targeted for photoactivation. All data were acquired in the Orbitrap analyzer where MS1 and MS/MS spectra were collected at resolving powers of 60K and 15K (at m/z 200), respectively. MS1 spectra were acquired from m/z 400\u20132000 with an AGC setting of 5E5. Each MS/MS spectrum consisted of two microscans collected from m/z 220\u20132000 with an AGC setting of 2E5.\n\nData analysis was performed using the XCalibur Qual Browser and ProSight Lite (Fellers et al., 2015). For both targeted m/z values, the MS/MS spectrum for each phosphoform present was deconvoluted to neutral forms using Xtract with a signal-to-noise threshold of 3. Sequence coverage was determined by matching the nine ion types observed with UVPD (a, a\u2022, b, c, x, x\u2022, y, y-1, z). Localization of the phosphorylation(s) was performed by adding a phosphate group (+79.966 Da) at each of the possible serine, threonine, and tyrosine residues to identify fragment ions containing the moiety and optimize characterization scores in ProSight Lite.\n\nAnalysis of yCTD treated with P-TEFb was performed identically to previous analysis of yCTD treated with TFIIH and Erk2 (Mayfield et al., 2017). GST-yCTD samples were prepared for bottom-up analysis using a two-step proteolysis method. First, overnight digestion with trypsin at 37\u00b0C was carried out using a 1:50 enzyme to substrate ratio, which cleaved the GST-portion of the protein while leaving the abasic 26mer CTD portion intact. The resulting digest was filtered through a 10 kDa molecular weight cutoff (MWCO) filter to remove tryptic GST peptides and buffer exchange the CTD portion into 50 mM Tris-HCl pH 8.0 and 10 mM CaCl2 for subsequent proteinase K digestion. Proteinase K was added in a 1:100 ration and digested overnight at 37\u00b0C. Samples were diluted to 1 \u03bcM in 0.2% formic acid for LC-MS. Analysis of yCTD-Lys treated by c-Abl, P-TEFb or c-Abl followed by P-TEFb is using a similar method as described above except the first digestion was done by 3C-protease and second by trypsin.\n\nA bottom-up analysis of yCTD was performed on a Velos Pro dual linear ion trap mass spectrometer (Thermo Fisher) equipped with a Coherent ExciStar XS excimer laser (Santa Clara) at 193 nm and 500 Hz as previously described for UVPD (Gardner et al., 2008; Madsen et al., 2010). Two pulses of 2mJ were used for photodissociation. Separations were carried out on a Dionex Ultimate 3000 nano liquid chromatography (Thermo Fischer) configured for preconcentration. Integrafrit trap columns were packed to 3.5 cm using 5 \u03bcm Michrom Magic C18. Picrofrit analytical columns were packed to 20 cm using 3.5 \u03bcm Waters Xbridge BEH C18 (Waters). Mobile phase A was water, and mobile phase B was acetonitrile; each contained 0.1% formic acid. Peptides were loaded onto the trap column for 5 min in an aqueous solvent containing 2% acetonitrile and 0.1% formic acid at a 5 \u03bcL/min flow rate. Separations occurred over a 20 min linear gradient in which percent phase B was increased from 2\u201315% during the first 15 min and further increased to 35% over the last 5 min. The flow rate was constant at 0.3 \u03bcL/min. A top seven data-dependent acquisition method was first used to identify the main phosphorylated species. A targeted analysis followed in which the singly phosphorylated heptad peptides were continually selected for UVPD activation (between MS1 acquisitions occurring after every five MS/MS events) to resolve partially co-eluting phospho-isomers. All MS experiments were carried out three times independently with biological triplicates. Resulting UVPD spectra were manually interpreted.\n\n### ChIP-seq analysis\n\nFor ChIP-seq experiments, HEK293T cells were seeded at 3.5 million cells in a 15 cm dish. After 24 hr, when the cells achieved a confluence of 40\u201350%, the media was replaced by fresh media containing 10 \u00b5M Dasatinib inhibitor or the DMSO control and allowed to grow for another 24 hr until the confluence of 80% was achieved. The cells were fixed with 1% formaldehyde in 15 ml of media, for 8 min at room temperature with intermittent swirling. The reaction was quenched by the addition of glycine to a final concentration of 0.125M and incubation for five minutes at room temperature. The cells were washed twice with 15 ml of ice-cold Dulbecco's phosphate-buffered saline and scraped off the surface. The cells were pelleted at a speed of 8000 g for 5 min, resuspended and aliquoted such that the number of control cells (with only DMSO) were normalized to the number of dasatinib treated cells. The cell pellet was frozen in a freezing mixture comprised of dry ice and ethanol.\n\nThe cells were lysed by adding buffer LB1 [50 mM HEPES at pH 7.5, 140 mM NaCl, 1 mM EDTA, 10% glycerol, 0.5% NP-40, 0.25% Triton-X 100, 1x Protease inhibitor cocktail (Thermoscientific)] and placing the tubes on a rotating wheel at 4\u00b0C for 10 min, following which they were spun at 2000 g for 5 min to isolate the nuclei as a pellet. These were washed with buffer LB2 [10 mM Tris-HCL at pH 8.0, 200 mM NaCl, 1 mM EDTA, 0.5 mM EGTA + 1X Protease inhibitor cocktail (thermoscientific)], and subsequently the nuclei where resuspended in 300 \u00b5l of nuclear lysis buffer LB3 [10 mM Tris-HCL, pH 8, 100mMNaCl, 1 mM EDTA, 0.5 mM EGTA, 0.1% Na-Deoxycholate, 0.5% N-lauroylsarcosine and 1x Protease inhibitor cocktail (Thermoscientific)].\n\nThe nuclear lysate of 300 \u00b5l was sonicated using a Biorupter UCD 200 (Diagenode) for 25 cycles at maximum intensity (15 s ON 45 s OFF in a water bath at 4\u00b0C). After each of the 10 cycles, the samples were incubated on ice for 10 min. Following sonication 30 \u00b5l of buffer LB3 supplemented with 10% Triton X-100 was added into the sample and spun at full speed for 10 min to remove cell debris. 30 \u00b5l of the supernatant was taken as the input control for ChIP-seq, and the rest is used to prepare the samples.\n\nMagnetic Protein-G beads (Thermo Fischer) were incubated with respective antibody (1 \u00b5g per 10 \u00b5l of beads) overnight on the rotating shaker at 4\u00b0C. The beads were then washed thrice with 5% BSA in PBS to remove any excess antibody, and the 300 \u00b5l of the sonicated lysate prepared above is added to it, with 800 \u00b5l of buffer LB3 and 100 \u00b5l of buffer LB3 supplemented with10% Triton X-100. The samples were placed on a rotating wheel overnight at 4\u00b0C for the immunoprecipitation to occur. The beads were washed twice by a low salt buffer (0.1% sodium deoxycholate, 1% Triton X-100, 1 mM EDTA, 50 mM HEPES at pH 7.5, 150 mM NaCl) followed by wash with high salt buffer (0.1% Na Deoxycholate, 1% Triton X-100, 1 mM EDTA, 50 mM HEPES at pH 7.5, 500 mM NaCl), lithium chloride buffer (250 mM LiCl, 0.5% NP-40, 0.5% Na Deoxycholate, 1 mM EDTA, 10 mM Tris-HCl at pH 8.1) and finally washed twice with TE buffer (10 mM Tris-HCl at pH 8.1 and 1 mM EDTA). The beads were ultimately resuspended in 200 \u00b5l of elution buffer (1% SDS and 0.1M sodium bicarbonate) and placed in the thermomixer at 65\u00b0C for 16 hr to enable reverse crosslinking.\n\nBoth the input and treatment samples were with 70 \u00b5l of elution buffer (1% SDS and 0.1M sodium bicarbonate) and underwent reverse crosslinking at 65\u00b0C for 16 hr. After the reverse crosslinking, phenol-chloroform extraction was used to extract the immunoprecipitated DNA, Library prep was done using a starting amount of 3 ng of DNA measured by Qubit HS (Thermo Fischer) using the NEBNext Ultra II DNA Library Prep Kit for Illumina (NEB) following the vendor manual. The libraries with multiplex index primers prepared above were pooled together and sequenced using the NextSeq single end 75 base pair sequencing platform.\n\nReads were aligned to the human genome (hg19) using bowtie with \u2018--best --strata \u2013m 1\u2019 parameters (Langmead et al., 2009). Only uniquely mapped reads were selected for downstream analysis. MACS2 was employed to call peaks by comparing immunoprecipitated chromatin with input chromatin using standard parameters and a q-value cutoff of 1e-5 (Zhang et al., 2008). The peaks overlapped with the blacklist regions downloaded from UCSC were removed. Each sample was normalized to 10 million mapped reads and visualized in Integrative Genomics Viewer (IGV) (Robinson et al., 2011). The pausing index was defined as the ratio of Pol II density in the promoter-proximal region and the Pol II density in the transcribed region (Zeitlinger et al., 2007). The proximal promoter region is defined as \u221250 bp to +300 bp around the transcription start site (TSS); while the transcribed region (gene body) is from +300 bp to the 3000 bp downstream of transcription end site (TES) (Rahl et al., 2010).\n\n### Quantification and data analysis\n\nMALDI data analysis, noise reduction, and Gaussian smoothing (if necessary) were performed in DataExplorer (AB), R, and the R package smoother to provide interpretable data (Hamilton, 2015; R Development Core Team, 2017). Data were visualized in R-Studio using ggplot2 (Wickhan, 2009). LC masses were determined as the highest local intensity peak of the post-processed data. Tandem mass spectrometry data analysis was performed using the XCalibur Qual Browser and ProSight Lite. For both targeted m/z values, the MS/MS spectrum for each phosphoform present was deconvoluted to neutral forms using Xtract with a signal-to-noise threshold of 3. Sequence coverage was determined by matching the nine ion types observed with UVPD (a, a\u2022, b, c, x, x\u2022, y, y-1, z). Localization of the phosphorylation(s) was performed by adding a phosphate group (+79.966 Da) at each of the possible serine, threonine, and tyrosine residues to identify fragment ions containing the moiety and optimize characterization scores in ProSight Lite (Fellers et al., 2015). Western blots were quantified using ImageJ (Schneider et al., 2012) and statistical significance was determined by two-tailed unpaired Student\u2019s t-test assuming unequal variances in Microsoft Excel. Statistical significance is reported in the figure legends. Results have been shown with\u00a0\u00b1\u00a0standard deviation or SEM, as mentioned in the figure legends.\n\nAccess Code: The ChIP-seq data for RNA polymerase II have been deposited into GEO with access codes GSE131838.\n",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "c1490fbe-16ac-4950-98af-8c8243c894a1",
+      "submission_id": "26ed58db-c5a0-4666-86d0-0856fb9021c0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jerry L Workman, Stowers Institute for Medical Research United States\n\nReviewers:\n- Jerry L Workman, Stowers Institute for Medical Research United States\n- Nicolas Young, Baylor College of Medicine United States\n\n## Review text\n\nDOI: [10.7554/eLife.48725.019](https://doi.org/10.7554/eLife.48725.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Tyr1 phosphorylation promotes the phosphorylation of Ser2 on the C-terminal domain of RNA polymerase II by P-TEFb\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jerry L Workman as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Philip Cole as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Nicolas Young (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, authors showed the importance of the pol II CTD Tyr1 residue and Tyr1 phosphorylation (pTyr1) on CTD serine kinases, especially P-TEFb, specificity regulation by using in vitro kinase assays and Mass spec analysis. They showed that Tyr1 mutation into phenylalanine alters the CTD phosphorylation pattern by Erk2, TFIIH, and P-TEFb kinases. By in vitro phosphorylation of CTD construct by c-Abl kinase, they could create the CTD constructs whose Tyr1 residues are partially phosphorylated. On partial pTyr1 containing CTD, P-TEFb showed increased specificity toward CTD Ser2, rather than Ser5, which is the preferred target when CTD is not phosphorylated by c-Abl. Authors also provide in vivo evidence supporting their in vitro experiments. pTyr1 reduction by treatment with c-Abl specific inhibitor imatinib, or Abl like kinase inhibitor dasatinib results in CTD Ser2 phosphorylation (pSer2) reduction while Ser5 phosphorylation (pSer5) remains unchanged. In addition, dasatinib treatment causes increased Pol II pausing index and reduced CTD pSer2 at genes having a high pausing index.\n\nThis study provides an attractive model for understanding the discrepancy between in vivo and in vitro specificity differences of P-TEFb against Pol II CTD. Their in vitro assays combined with mass spec analysis are well designed. Although the in vivo phenotypes are not clear enough to prove their model, this may be due to the redundant nature of CTD Tyr1 kinases in vivo, and the shortage of tools to sufficiently and selectively reduce CTD pTyr1 signal.\n\nEssential revisions:\n\n1) In their in vitro kinase assays, the authors repeatedly used the term 'saturating conditions' which is confusing. They did not provide any explanation or data supporting that their experimental conditions are really saturating. Especially in Figure 2, as partial phosphorylation of CTD by c-Abl1 is very important for their overall logic, they need to provide a better explanation or data showing that this observation is not caused by insufficient incubation or kinase amount. They need to more precisely define their terms, or just more accurately describe their experimental conditions.\n\n2) This work hypothesizes that CTD pTyr1 precedes pSer2. But CTD pTyr1 can be done at CTD containing pSer2 or pSer5. Does pre-existing CTD pSer2 or pSer5 affect c-Abl activity against pTyr1?\n\n3) Although CTD pTyr1 in vivo seems to be achieved by multiple kinases including c-Abl, this work shows that c-Abl specific Imatinib treatment is enough to cause pTyr1 and pSer2 reduction in Figure 2C and Figure 4B. Is CTD pTyr1 and pSer2 reduced upon C-Abl knock down?\n\n4) Imatinib is a highly selective C-Abl kinase inhibitor whereas dasatinib has broader specificity against abl like tyrosine kinases. However, as a control, the authors need to show or refer to evidence that those two kinase inhibitor molecules do not affect P-TEFb activity, at least in vitro.\n\n5) In Figure 3\u2014figure supplement 1, the authors insist that they kill the activity of c-Abl by heat inactivation or by treatment with dasatinib. However, the authors did not show the proof that c-Abl activity is sufficiently blocked by these treatments. They need to show their titration data using increasing amount of dasatinib or increasing heat inactivation time to fully kill the c-Abl activity against CTD Tyr1.\n\n6) The authors fail to specifically identify the protein that they are studying, only referring to it obliquely as the CTD of RNAP II. While this is an obvious reference to the majority of the audience, it would be better to at some point specifically mention the protein (BPB1) and not only the complex.\n\n7) Given the excellent work, it would be appropriate to also point out what has not been done and what future directions could be fruitful. It was particularly noticed that the actual patterns of phosphorylation between heptads (inter-heptad) was not resolved or well-studied here as technical challenges remain.\n\n8) Figure 4: There is a reference to Supplementary Figure 13 but we did not find this figure. We were concerned that the interplay found here might result from technical crosstalk through modulation of antibody response via neighboring PTMs. This concern appears to be sufficiently addressed by the MS data. It may be helpful to the reader to more specifically declare that this may be a problem; however, the MS data appears to support the Western blot data.\n\nAs the main claim made by authors is that Y1P alters p-TEFb's specificity from Ser5 to Ser2, several key details need to be addressed more rigorously:\n\n9) If c-Abl-phosphorylated CTD causes elevated Ser2P levels by p-TEFb while Ser5P remains the same (Figure 3B and C), why did the overall phosphorylation level of tandem reactions decreases comparing to p-TEFb acting alone (24-29 to 16-26)?\n\n10) Can the authors quantify the overall levels of Ser2P and Ser5P when c-Abl-pretreated K7-CTD was used? Is Ser5P still the predominant form of products by p-TEFb? This would be an important parameter to conclude whether Y1P merely promotes Ser2P vs. Y1P alters Ser5P to Ser2P.\n\n11) Does p-TEFb cause further gel-shift of c-Abl-pretreated CTD?\n\n12) Descostes et al., 2014, showed that Tyr1P co-immunoprecipitated with Ser5P and Ser7P but not Ser2P or Thr4P. Can the authors reconcile this seeming discrepancy between the above observations and their main conclusion?\n\n13) The authors should consider re-purifying the phosphorylated CTD after the c-Abl reaction so as to completely rule out the possibility that kinase-kinase interaction might cause the p-TEFb activity switch.\n\n14) It wasn't clear to this reviewer why dmCTDs (WT and YtoF mutant) were used in part of Figure 1, then authors changed to yeast CTD for the rest of kinetics experiments. If similar results were obtained from both yeast and fly, it might be easier to show one complete set of data for consistency.\n\n15) The author should consider stressing that continuous Y1P inhibits p-TEFb-mediated phosphorylation (Czudnochowski, 2012) whereas c-Abl-pretreated CTD displays an alternate Y1P pattern which promotes Ser2P phosphorylation.\n",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dbe736a2-91d7-4996-a7d4-95eee2c57d7a",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C1",
+      "claim": "P-TEFb phosphorylates Ser2 residues of the C-terminal domain (CTD) of the largest subunit (RPB1) of RNA polymerase II.",
+      "claim_type": "EXPLICIT",
+      "source": "The Positive Transcription Elongation Factor b (P-TEFb) phosphorylates Ser2 residues of the C-terminal domain (CTD) of the largest subunit (RPB1) of RNA polymerase II and is essential for the transition from transcription initiation to elongation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known function of P-TEFb.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "249931fa-79e6-45dd-97f4-20b04fddb59a",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C2",
+      "claim": "P-TEFb is essential for the transition from transcription initiation to elongation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The Positive Transcription Elongation Factor b (P-TEFb) phosphorylates Ser2 residues of the C-terminal domain (CTD) of the largest subunit (RPB1) of RNA polymerase II and is essential for the transition from transcription initiation to elongation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about P-TEFb function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "4bd59be0-92ba-4ec6-bdc1-21d415db94a9",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C3",
+      "claim": "P-TEFb exhibits Ser5 phosphorylation activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, P-TEFb exhibits Ser5 phosphorylation activity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "794967d5-4931-4283-baee-5eb6e0350d3a",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C4",
+      "claim": "Tyr1 phosphorylation directs the kinase activity of P-TEFb and alters its specificity from Ser5 to Ser2.",
+      "claim_type": "EXPLICIT",
+      "source": "Through in vitro reconstruction of CTD phosphorylation, mass spectrometry analysis, and chromatin immunoprecipitation sequencing (ChIP-seq) analysis, we uncover a mechanism by which Tyr1 phosphorylation directs the kinase activity of P-TEFb and alters its specificity from Ser5 to Ser2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by multiple experimental approaches including mass spectrometry, immunoblotting, and ChIP-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "9030ed8a-3f38-42d6-8691-5752e4e69b57",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C5",
+      "claim": "The loss of Tyr1 phosphorylation causes an accumulation of RNA polymerase II in the promoter region.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of Tyr1 phosphorylation causes an accumulation of RNA polymerase II in the promoter region as detected by ChIP-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data presented in the manuscript showing increased pausing index upon inhibition of Tyr1 phosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "962057c1-e820-4d06-992c-10e4426d37ef",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C6",
+      "claim": "Tyr1 phosphorylation generates a heterogeneous CTD modification landscape that expands the CTD's coding potential.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate the ability of Tyr1 phosphorylation to generate a heterogeneous CTD modification landscape that expands the CTD's coding potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data showing different phosphorylation patterns when Tyr1 is phosphorylated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "59d5ad4b-c70e-4866-b6db-84d59e580672",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C7",
+      "claim": "Previously installed modifications direct the identity and abundance of subsequent coding events by influencing the behavior of downstream enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings provide direct experimental evidence for a combinatorial CTD phosphorylation code wherein previously installed modifications direct the identity and abundance of subsequent coding events by influencing the behavior of downstream enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the interpretation of the experimental findings showing that Tyr1 phosphorylation affects P-TEFb specificity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "3208a412-69be-465d-942e-69d35c4bd8b9",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C8",
+      "claim": "The CTD is composed of a species-specific number of repeats of the consensus amino acid heptad YSPTSPS.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal domain of the RPB1 subunit of RNA polymerase II (CTD) is composed of a species-specific number of repeats of the consensus amino acid heptad YSPTSPS (arbitrarily numbered as Tyr1, Ser2, Pro3, Thr4, Ser5, Pro6, and Ser7) (Jeronimo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "c1dbd3fc-ccaf-4359-b18a-23646b254c0f",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C9",
+      "claim": "The CTD undergoes extensive post-translational modification that recruits RNA processing and transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD undergoes extensive post-translational modification (PTM) that recruits RNA processing and transcription factors that regulate progression through the various stages of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CTD function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "ecd74b7b-dca2-46bc-8865-340c6019ef03",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C10",
+      "claim": "The major sites of phosphorylation in the CTD are Ser5 and Ser2.",
+      "claim_type": "EXPLICIT",
+      "source": "The major sites of phosphorylation are Ser5 and Ser2, directed by Transcription Factor II H (TFIIH) (Feaver et al., 1994) and P-TEFb in mammals (Marshall et al., 1996), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "23a2932c-0957-4649-b334-9bb2a55b45ce",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C11",
+      "claim": "TFIIH directs phosphorylation of Ser5.",
+      "claim_type": "EXPLICIT",
+      "source": "The major sites of phosphorylation are Ser5 and Ser2, directed by Transcription Factor II H (TFIIH) (Feaver et al., 1994) and P-TEFb in mammals (Marshall et al., 1996), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "df79706c-34db-49a5-8123-2a5ecc323144",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C12",
+      "claim": "P-TEFb directs phosphorylation of Ser2 in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The major sites of phosphorylation are Ser5 and Ser2, directed by Transcription Factor II H (TFIIH) (Feaver et al., 1994) and P-TEFb in mammals (Marshall et al., 1996), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "9c28d8a9-7c19-4ec7-a8e3-3740ea489528",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C13",
+      "claim": "In mammalian cells, the phosphorylations of Tyr1 and Ser7 rise and peak near the promoter along with Ser5.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, the phosphorylations of Tyr1 and Ser7 rise and peak near the promoter along with Ser5 and gradually decrease as transcription progresses towards termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the temporal dynamics of CTD phosphorylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "ea9515f8-5e59-4c53-bfb7-f50a83220ba3",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C14",
+      "claim": "The phosphorylation of Thr4 and Ser2 appear later in the transcription cycle during elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphorylation of Thr4 and Ser2, on the other hand, don't appear until later in the transcription cycle during elongation (Eick and Geyer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "9be4508c-0416-46f7-8af0-59e3a0391ac0",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C15",
+      "claim": "P-TEFb is overexpressed in multiple tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "P-TEFb is of particular interest due to its overexpression in multiple tumor types and role in HIV infection (Franco et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "68e243c5-8ab2-41cf-93dc-523476c79f0a",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C16",
+      "claim": "P-TEFb plays a role in HIV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "P-TEFb is of particular interest due to its overexpression in multiple tumor types and role in HIV infection (Franco et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "7ef1af3e-9789-4e29-800d-ea79326581cc",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C17",
+      "claim": "P-TEFb promotes transcription by contributing to the release of RNA polymerase II from the promoter-proximal pause through its phosphorylation of NELF, DSIF, and Ser2 of the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "As a major CTD kinase, P-TEFb promotes transcription by contributing to the release of RNA polymerase II from the promoter-proximal pause through its phosphorylation of Negative Elongation Factor (NELF), DRB Sensitivity Inducing Factor (DSIF), and Ser2 of the CTD (Wada et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "a429a947-a568-4796-a80a-aebe7742a8bb",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C18",
+      "claim": "P-TEFb phosphorylates Ser5 of the CTD in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, P-TEFb seems to phosphorylate Ser5 of the CTD in vitro and mutation of Ser5 to alanine prevents the phosphorylation of CTD substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature and confirmed by the authors' experiments.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "af12a854-f32d-435d-ab3c-980646cd80a9",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C19",
+      "claim": "Mutation of Ser5 to alanine prevents the phosphorylation of CTD substrates by P-TEFb.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, P-TEFb seems to phosphorylate Ser5 of the CTD in vitro and mutation of Ser5 to alanine prevents the phosphorylation of CTD substrates. However, mutation of Ser2 to alanine did not result in this abolishment (Czudnochowski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "65f1717e-bda1-43a9-a4f1-97f9d7c7905d",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C20",
+      "claim": "Mutation of Ser2 to alanine does not prevent phosphorylation of CTD substrates by P-TEFb.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutation of Ser2 to alanine did not result in this abolishment (Czudnochowski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "79b1ad86-bc60-4240-a08d-825fc872a273",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C21",
+      "claim": "Compromised P-TEFb kinase activity results in a specific reduction in levels of Ser2 phosphorylation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in contrast to in vivo studies of P-TEFb specificity, where compromised P-TEFb kinase activity results in a specific reduction in levels of Ser2 phosphorylation (Marshall et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "89be2174-1e5a-4720-9b04-e2bbd23d96a2",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C22",
+      "claim": "P-TEFb generates two phospho-peptides when phosphorylating unmodified yeast CTD: a major species phosphorylated on Ser5 and a minor species phosphorylated on Ser2.",
+      "claim_type": "EXPLICIT",
+      "source": "With high kinase and ATP concentration (2 mM) and overnight incubation (~16 hr), P-TEFb generates two phospho-peptides as detected by LC-UVPD-MS/MS: a major species phosphorylated on Ser5 (Y1S2P3T4pS5P6S7) and a minor species phosphorylated on Ser2 (S5P6S7Y1pS2P3T4) (Figure 1A and Figure 1\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC-UVPD-MS/MS data shown in Figure 1A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "590355db-7566-437c-802e-510497940687",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C23",
+      "claim": "P-TEFb's phosphorylation pattern on unmodified CTD is highly similar to patterns observed for Ser5 CTD kinases Erk2 and TFIIH.",
+      "claim_type": "EXPLICIT",
+      "source": "This is highly similar to patterns observed previously for bona fide Ser5 CTD kinases Erk2 and TFIIH (Mayfield et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previously published data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "01b0fcf5-b60d-45a2-9488-c7e2a798b062",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C24",
+      "claim": "P-TEFb adds 24 to 29 phosphates to yeast CTD's 26 heptad repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "MALDI-MS analysis of yCTD treated with P-TEFb reveals a cluster of peaks with mass shifts relative to no kinase control ranging from 1906.1 to 2318.4 Da, each interspaced by 80 Da (Figure 1B and Figure 1\u2014figure supplement 2C). This corresponds to the addition of 24 to 29 phosphates to yCTD's 26 heptad repeats.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MALDI-MS data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "295b7c0d-7838-4cee-a418-e7b2c159ffac",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C25",
+      "claim": "P-TEFb phosphorylates the CTD in an average one phosphorylation per heptad manner, and these heptads are primarily phosphoryl-Ser5 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding in combination with our LC-UVPD-MS/MS analysis of P-TEFb treated yCTD indicates that P-TEFb phosphorylates the CTD in an average one phosphorylation per heptad manner, and these heptads are primarily phosphoryl-Ser5 (pSer5) in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the combined MALDI-MS and LC-UVPD-MS/MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "53f7a9aa-4ce0-4cf8-8402-4af4f67ddd97",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C26",
+      "claim": "Conservative mutation of the Tyr1 position to phenylalanine in both Saccharomyces cerevisiae and human cells is lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "As evidence of this, even conservative mutation of the Tyr1 position to phenylalanine in both Saccharomyces cerevisiae and human cells is lethal, highlighting the significance of residue identity at this position (Hsin et al., 2014; West and Corden, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "b23b3ac1-ed0a-4d70-b2d3-5ac014570a12",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C27",
+      "claim": "Mutating the Tyr1 position to alanine prevents phosphorylation at other CTD residues by CTD kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we have shown that mutating the Tyr1 position to alanine prevents phosphorylation at other CTD residues by CTD kinases (Mayfield et al., 2017), indicating the side chain at this position is important for kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "ed65ee32-026b-4f42-92f3-89fa5a15d543",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C28",
+      "claim": "Phosphoryl-Tyr1 is detected at the initiation of transcription in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, phosphoryl-Tyr1 (pTyr1) is detected at the initiation of transcription in human cells (Descostes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "291b48cd-16a4-4505-8b0d-b1acfa7254b4",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C29",
+      "claim": "All three kinases (Erk2, TFIIH, and P-TEFb) are active against the phenylalanine-substituted CTD construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike alanine substitution, all three kinases are active against the phenylalanine-substituted CTD construct (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EMSA data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "f56bdc38-53df-4f17-9958-8a673c843f10",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C30",
+      "claim": "The substitution of phenylalanine at the Tyr1 position alters the behavior of phosphorylated substrates in EMSA.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the substitution of phenylalanine at the Tyr1 position alters the behavior of phosphorylated substrates in EMSA (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in EMSA data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "c0e22dbc-98ba-4417-83c2-f13db6c37531",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C31",
+      "claim": "Erk2 shows a 2.5-fold higher specificity constant against the YtoF variant compared to the WT construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Erk2 shows a 2.5-fold higher specificity constant against the YtoF variant, as indicated by kcat/Km, compared to the WT construct (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by kinetic data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "9c285074-2f94-4317-aa34-bf9dc6495a57",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C32",
+      "claim": "TFIIH activity is greatly compromised when Tyr1 is replaced by phenylalanine with a nearly 10-fold reduction in kcat/Km.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TFIIH activity is greatly compromised when Tyr1 is replaced by phenylalanine with a nearly 10-fold reduction in kcat/Km (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by kinetic data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "0fcc2a8e-0e16-4f3e-9bf4-0d468227467c",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C33",
+      "claim": "c-Abl readily phosphorylates yeast CTD in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "C-Abl readily phosphorylates yCTD in vitro as evidenced by EMSA and detection of Tyr1 phosphorylation using pTyr1 specific antibody 3D12 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EMSA and western blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "33df0b57-081e-46dd-8431-f6a7ac789a98",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C34",
+      "claim": "c-Abl phosphorylates consensus CTD sequences on Tyr1 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These mass shifts confirm c-Abl phosphorylates consensus CTD sequences on Tyr1 in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by LC-UVPD-MS/MS data showing phosphorylation on tyrosine residues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "379fdeb0-10f2-4adb-ba80-8f84bcebfa3c",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C35",
+      "claim": "Imatinib decreases pTyr1 epitope abundance in a dose-dependent manner in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Imatinib decreases pTyr1 epitope abundance to 88.0% (10\u03bcM imatinib, not significant), 65.2% (20\u03bcM imatinib), and 51.3% (30\u03bcM imatinib) relative to paired vehicle controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "eb49efbb-272a-4dab-906f-acf8369677c7",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C36",
+      "claim": "c-Abl phosphorylates approximately half of the available Tyr1 residues in yeast CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution MALDI-MS spectra of samples treated by c-Abl revealed peaks accounting for yCTD containing 5 to 13 phosphates (with mass shifts ranging from 398.9 to 1049.4 Da) (Figure 2D), approximately half of yCTD's available tyrosine residues within 26 heptad repeats.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MALDI-MS data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "e1ae197d-9d8c-4534-8fce-555ca6c1ad8c",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C37",
+      "claim": "c-Abl does not phosphorylate consensus CTD in every heptad; instead, it favors phosphorylation of approximately half the available Tyr1 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "These mass shifts suggest c-Abl does not phosphorylate consensus CTD in every heptad; instead, it favors phosphorylation of approximately half the available Tyr1 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MALDI-MS data from multiple CTD constructs of different lengths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "e14def85-c789-47dd-9cd3-5d401d2d14d1",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C38",
+      "claim": "Tandem treatment of yCTD with c-Abl followed by P-TEFb results in the addition of a total of 16 to 26 phosphates.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, tandem treatment of yCTD with c-Abl followed by P-TEFb resulted in the addition of a total of 16 to 26 phosphates as detected by MALDI-MS, with a mass shifts of 1287.3 to 2073.2 Da (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MALDI-MS data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "5bc6d545-f8bf-4ac1-b7fb-94703b095f03",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C39",
+      "claim": "c-Abl pre-treatment results in changes to P-TEFb's phosphorylation along the CTD, evidenced by a reduction in the number of phosphate groups added by P-TEFb.",
+      "claim_type": "EXPLICIT",
+      "source": "These data reveal c-Abl pre-treatment results in changes to P-TEFb's phosphorylation along the CTD, evidenced by a reduction in the number of phosphate groups added by P-TEFb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the MALDI-MS data comparing tandem treatment to individual treatments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "40a44f62-2f98-4967-8962-f01038da71c0",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C40",
+      "claim": "Pre-treatment of yCTD with c-Abl results in a significant increase in Ser2 phosphorylation of nearly 300% by P-TEFb.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to a non-phosphorylated CTD, the pre-treatment of yCTD with c-Abl results in a significant increase in Ser2 phosphorylation of nearly 300%, as detected by pSer2 specific CTD antibody 3E10, accompanied by a small and statistically non-significant decrease in pSer5 installed by P-TEFb (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "70c19e10-7d90-4087-9d55-437fafc9c28b",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C41",
+      "claim": "Tandem treatment of yCTD by c-Abl followed by either TFIIH or Erk2 showed no changes in pSer2 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase of pSer2 is unique for P-TEFb-mediated phosphorylation of CTD since a similar tandem treatment of yCTD by c-Abl followed by either TFIIH or Erk2 showed no changes in pSer2 levels (Figure 3C and Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "994202d7-6516-4e62-87cc-9f605f8ca95d",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C42",
+      "claim": "The increase in the apparent Ser2 phosphorylation is not due to P-TEFb's physical interaction with c-Abl but arises from c-Abl kinase activity against CTD substrates at Tyr1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the increase in the apparent Ser2 phosphorylation is not due to P-TEFb's physical interaction with c-Abl but arises from c-Abl kinase activity against CTD substrates at Tyr1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments showing that inactivation of c-Abl before P-TEFb addition still results in increased Ser2 phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "908f3c36-bf62-4893-bad0-259590accca0",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C43",
+      "claim": "When treated with P-TEFb alone, di-heptads with both Ser5 residues phosphorylated are the predominant product.",
+      "claim_type": "EXPLICIT",
+      "source": "Double phosphorylated species are also detected for di-heptads with both Ser5 residues phosphorylated as the predominant product (Figure 3E and F and Figure 3\u2014figure supplement 2B, peak 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC-UVPD-MS/MS data shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "0724c98a-02e0-4381-9b8a-01f8be0d66ba",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C44",
+      "claim": "The most abundant species from tandem phosphorylation with c-Abl followed by P-TEFb contains both Tyr1 and Ser2 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The most abundant of these unique species (Figure 3G peak 7) contains both Tyr1 and Ser2 phosphorylation (Figure 3H and Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC-UVPD-MS/MS data shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "b4dca78e-9e2f-4e78-aa9b-fe1f4a240f22",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C45",
+      "claim": "In di-heptads with Tyr1 phosphorylated, Ser2 becomes the primary target of P-TEFb phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that in di-heptads with Tyr1 phosphorylated, Ser2 becomes the primary target of P-TEFb phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by LC-UVPD-MS/MS data comparing phosphorylation patterns with and without c-Abl pre-treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "e9392d12-f6d5-48c3-88dd-14c1c1695fb0",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C46",
+      "claim": "When the S5A construct is treated with c-Abl followed by P-TEFb, up to seven phosphates are added to the final product.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent treatment with P-TEFb results in an obvious shift in the MALDI-MS spectra with up to seven phosphates added to the final product (Figure 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MALDI-MS data shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "7e7acd4a-4239-4894-8ad1-53e5cb41ba53",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C47",
+      "claim": "Upon Tyr1 phosphorylation, S5A becomes a viable substrate for P-TEFb and adds at least two additional phosphates likely to Ser2 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The results corroborate the conclusion drawn from the MS/MS results, indicating that upon Tyr1 phosphorylation S5A becomes a viable substrate for P-TEFb and adds at least two additional phosphates likely to Ser2 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the MALDI-MS data from the S5A construct experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "63df2562-ff6f-4878-af57-b9f805b29bc5",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C48",
+      "claim": "TFIIH-mediated phosphorylations do not alter P-TEFb specificity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that TFIIH-mediated phosphorylations do not alter P-TEFb specificity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by LC-UVPD-MS/MS data showing that TFIIH pre-treatment does not change P-TEFb's preference for Ser5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "53226f0f-3306-448c-a578-1001e5943c30",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C49",
+      "claim": "Treatment of HEK293T cells with 10 \u00b5M dasatinib results in a reduction in pTyr1 of 30%, accompanied by a 29% decrease in Ser2 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "At 10 \u00b5M dasatinib, pTyr1 levels are reduced by 30% in HEK293T cells, and this is accompanied by a 29% decrease in Ser2 phosphorylation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "ee4b7322-63b7-4c4f-9190-b813dc9b82ec",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C50",
+      "claim": "Treatment of HEK293T cells with 20 \u03bcM imatinib results in a reduction in pTyr1 of 35%, accompanied by a statistically significant decrease in pSer2 levels of 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of HEK293T cells with 20 \u03bcM imatinib results in a reduction in pTyr1 of 35%. This is accompanied by a statistically significant decrease in pSer2 levels of 15% (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "eed908ee-f531-489f-999d-523ad2396c61",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C51",
+      "claim": "In both the dasatinib and imatinib treatments, pSer5, POLR2A, and POLR2C levels remain unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the dasatinib and imatinib treatments pSer5, POLR2A, and POLR2C levels remain unaffected (Figure 4 and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "64e56ad4-8746-4917-a08a-3814d1565a77",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C52",
+      "claim": "The distribution of RNA polymerase II along the gene body is altered in multiple genes upon dasatinib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison of the dasatinib treated cells with the vehicle controls, the distribution of RNA polymerase II along the gene body is altered in multiple genes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "dd62e982-3b43-4fc6-bf0b-37679646e718",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C53",
+      "claim": "A significant increase of peak height for RNA polymerase II was found in the promoter region of many genes upon dasatinib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Signal was normalized to 10M reads for both samples, and a significant increase of peak height for RNA polymerase II was found in the promoter region of many genes, as demonstrated in representative genes Myc and FANCL (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "c7c70118-f073-4dc3-883b-27620f7085ac",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C54",
+      "claim": "A statistically significant increase close to two-fold in pausing index can be observed in G2 and G3 genes upon inhibition of Tyr1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "But a statistically significant increase can be observed close to two-fold in G2 and G3 genes (Figure 5C and Figure 4\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "d4b863c5-a880-4fcc-b741-d0632473d8cd",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C55",
+      "claim": "RNA polymerase II is stalled in the promoter region upon the inhibition of Tyr1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results suggest that RNA polymerase II is stalled in the promoter region upon the inhibition of Tyr1 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the ChIP-seq data showing increased pausing index.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "ac46ecd2-366d-485a-87e6-975b618162a8",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C56",
+      "claim": "The discovery that Tyr1 phosphorylation of the CTD alters the preference of P-TEFb from Ser5 to Ser2 resolves the controversy surrounding P-TEFb's specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery that Tyr1 phosphorylation of the CTD alters the preference of P-TEFb from Ser5 to Ser2 resolves the controversy surrounding P-TEFb's specificity (Bartkowiak et al., 2010; Czudnochowski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their findings in the context of previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "f8e5797e-0ac3-4080-b87f-387e247b2a6e",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C57",
+      "claim": "P-TEFb was initially identified as a CTD kinase that controls the elongation potential of RNA polymerase II.",
+      "claim_type": "EXPLICIT",
+      "source": "P-TEFb was initially identified as a CTD kinase that controls the elongation potential of RNA polymerase II, is required for the majority of RNA polymerase II transcription, and is specific for Ser2 in vivo (Chao and Price, 2001; Marshall et al., 1996; Ni et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "6310430f-01c9-4071-998c-d6f7d8260b7d",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C58",
+      "claim": "P-TEFb is required for the majority of RNA polymerase II transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "P-TEFb was initially identified as a CTD kinase that controls the elongation potential of RNA polymerase II, is required for the majority of RNA polymerase II transcription, and is specific for Ser2 in vivo (Chao and Price, 2001; Marshall et al., 1996; Ni et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "b5d06800-d610-4a2f-9d68-deac4ab8cf45",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C59",
+      "claim": "P-TEFb is incapable of phosphorylating Ser2 of CTD peptides in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these early conclusions are at odds with in vitro data demonstrating P-TEFb is incapable of phosphorylating Ser2 of CTD peptides in vitro (Czudnochowski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "34c70eeb-172f-4ffe-997d-643029cc339f",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C60",
+      "claim": "CDK12 and CDK13 display Ser2 kinase activity in cells but do not seem to play a major role in Ser2 phosphorylation in early transcriptional events.",
+      "claim_type": "EXPLICIT",
+      "source": "Two other kinases, CDK12 and CDK13, display Ser2 kinase activity in cells but do not seem to play a major role in Ser2 phosphorylation in early transcriptional events (Bartkowiak et al., 2010; Chen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "f6b1a32d-2d40-4a6e-a77e-cc60c52b3268",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C61",
+      "claim": "Continuous heptad repeats with phosphorylated pTyr1 inhibit subsequent CTD modification by P-TEFb.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be stressed that continuous heptad repeats with phosphorylated pTyr1 inhibit subsequent CTD modification by P-TEFb (Czudnochowski et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "41ab3d61-9712-4bbd-b500-932cfd409ec0",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C62",
+      "claim": "When treated biochemically with c-Abl, the pTyr1 pattern not only allows for P-TEFb phosphorylation but also shifts the substrate preference from Ser5 to Ser2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when treated biochemically with c-Abl, the pTyr1 pattern not only allows for P-TEFb phosphorylation but also shift the substrate preference from Ser5 to Ser2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "58e88276-9478-4281-aefd-73f12f478e68",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C63",
+      "claim": "Inhibition of Tyr1 phosphorylation leads to the reduction of Ser2 phosphorylation in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibition of Tyr1 phosphorylation leads to the reduction of Ser2 phosphorylation in human cells and the accumulation of Pol II in the promoter-proximal pausing stage of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' experimental data from inhibitor treatments and ChIP-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "6d55db0f-faaa-4897-9bda-101ba5dc281f",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C64",
+      "claim": "Inhibition of Tyr1 phosphorylation leads to the accumulation of Pol II in the promoter-proximal pausing stage of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibition of Tyr1 phosphorylation leads to the reduction of Ser2 phosphorylation in human cells and the accumulation of Pol II in the promoter-proximal pausing stage of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "4935bcc2-2779-4bb2-89c5-c2f8486c03b6",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C65",
+      "claim": "Tyr1 phosphorylation has been implicated in stabilizing RNA polymerase II in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyr1 phosphorylation has been implicated in stabilizing RNA polymerase II in cells (Hsin et al., 2014), transcription termination (Mayer et al., 2012) and anti-sense transcription (Descostes et al., 2014) but a coherent molecular basis for these disparate functions remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "3de34022-82b8-4d5e-b3c0-17d27caea7e5",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C66",
+      "claim": "Tyr1 phosphorylation has been implicated in transcription termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyr1 phosphorylation has been implicated in stabilizing RNA polymerase II in cells (Hsin et al., 2014), transcription termination (Mayer et al., 2012) and anti-sense transcription (Descostes et al., 2014) but a coherent molecular basis for these disparate functions remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "aef04659-0436-4433-8030-77df26b0494b",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C67",
+      "claim": "Tyr1 phosphorylation has been implicated in anti-sense transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyr1 phosphorylation has been implicated in stabilizing RNA polymerase II in cells (Hsin et al., 2014), transcription termination (Mayer et al., 2012) and anti-sense transcription (Descostes et al., 2014) but a coherent molecular basis for these disparate functions remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "bd2a8ff3-0b94-4fae-b999-4afcd7e88f1a",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C68",
+      "claim": "The ability of Tyr1 phosphorylation to redirect signaling and influence subsequent modifications along the CTD suggests various roles for pTyr1 may arise indirectly.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of Tyr1 phosphorylation to redirect signaling and influence subsequent modifications along the CTD, as revealed for P-TEFb, suggests these various roles for pTyr1 may arise indirectly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "c1cc3fb3-9370-4301-8980-8f5470cc53b1",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C69",
+      "claim": "Tyr1 phosphorylation is relatively transient, appearing at the transition from initiation to elongation and decreasing rapidly through the action of phosphatase(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Tyr1 phosphorylation is relatively transient, appearing at the transition from initiation to elongation and decreasing rapidly through the action of phosphatase(s) (Eick and Geyer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "77a54509-df60-4fe0-877b-75a8b91f3da0",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C70",
+      "claim": "pTyr1 is positioned in a vital window to alter P-TEFb specificity and regulate its phosphorylation pattern along RNA polymerase II.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this transient nature, pTyr1 is positioned in a vital window to alter P-TEFb specificity and regulate its phosphorylation pattern along RNA polymerase II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation based on their findings and the known timing of Tyr1 phosphorylation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "7e06052e-8399-46c0-b6a5-16d374e7956f",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C71",
+      "claim": "P-TEFb is ubiquitously important for transcription across eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "P-TEFb is ubiquitously important for transcription across eukaryotic cells and often co-opted in disease states like HIV infection and cancer (Franco et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "b940c6ac-9d6c-4246-a04a-c0a31ed8f4f7",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C72",
+      "claim": "P-TEFb is often co-opted in disease states like HIV infection and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "P-TEFb is ubiquitously important for transcription across eukaryotic cells and often co-opted in disease states like HIV infection and cancer (Franco et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "7c03d4b7-28fb-4dcf-a74f-f9cf248b18fc",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C73",
+      "claim": "Cross-talk between CTD modification enzymes increases the diversity and coding potential of CTD heptads.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings support a model in which cross-talk between CTD modification enzymes increases the diversity and coding potential of CTD heptads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "2465d67d-9ee9-43f7-a14a-7ecaaa3a7820",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C75",
+      "claim": "c-Abl phosphorylates CTD in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Three lines of evidence support this notion: c-Abl phosphorylates CTD in vitro (Baskaran et al., 1993) and in cells since transient over-expression of c-Abl in primate COS cells results in increased Tyr1 phosphorylation (Baskaran et al., 1997), and c-Abl immunoprecipitates with RNA polymerase II (Baskaran et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "a9328149-0011-4a92-84d6-f13fe547dbd7",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C76",
+      "claim": "Transient over-expression of c-Abl in primate COS cells results in increased Tyr1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Three lines of evidence support this notion: c-Abl phosphorylates CTD in vitro (Baskaran et al., 1993) and in cells since transient over-expression of c-Abl in primate COS cells results in increased Tyr1 phosphorylation (Baskaran et al., 1997), and c-Abl immunoprecipitates with RNA polymerase II (Baskaran et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "fb6cf91c-8db2-409f-8e1b-8e553ae4ca89",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C77",
+      "claim": "c-Abl immunoprecipitates with RNA polymerase II.",
+      "claim_type": "EXPLICIT",
+      "source": "Three lines of evidence support this notion: c-Abl phosphorylates CTD in vitro (Baskaran et al., 1993) and in cells since transient over-expression of c-Abl in primate COS cells results in increased Tyr1 phosphorylation (Baskaran et al., 1997), and c-Abl immunoprecipitates with RNA polymerase II (Baskaran et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "aed1991b-cc67-43c5-849d-88df9a564275",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C78",
+      "claim": "Residues at the first position of the heptad are highly conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "First, residues at this first position of the heptad are highly conserved across species and substitution to non-aromatic residues is rare, suggesting significance to function (Chapman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "9b10a9c6-a35e-4efa-926e-1d09d61defe6",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C79",
+      "claim": "Substitution of Tyr1 to non-aromatic residues is rare.",
+      "claim_type": "EXPLICIT",
+      "source": "First, residues at this first position of the heptad are highly conserved across species and substitution to non-aromatic residues is rare, suggesting significance to function (Chapman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "3b46395c-df67-4f6d-96c7-bbf86bf5aaa2",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C80",
+      "claim": "Erk2 is a recently identified Ser5 CTD kinase that phosphorylates primed RNA polymerase II in developmental contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated GST-CTD constructs containing a portion of D. melanogaster CTD (residues 1671\u20131733, containing nine heptad repeats) of either tyrosine containing wild-type (dmCTD) or with phenylalanine substitution at the Tyr1 position in all nine heptads (dmCTDYtoF) (Figure 1\u2014figure supplement 1D). The CTD variants purified from these constructs were phosphorylated with one of three established CTD kinases: Erk2, a recently identified Ser5 CTD kinase that phosphorylates primed RNA polymerase II in developmental contexts (Tee et al., 2014);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "cb433356-2160-4ca6-a4e6-3ac7a1ed9ca6",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C81",
+      "claim": "The kinase module of TFIIH installs Ser5 and Ser7 marks in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "the kinase module of TFIIH that install Ser5 and Ser7 marks in vivo (Feaver et al., 1994);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "436a9859-7d55-4094-be5d-8fc19995bc04",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C82",
+      "claim": "Imatinib has potent and specific inhibition against c-Abl and ABL2.",
+      "claim_type": "EXPLICIT",
+      "source": "Imatinib has potent and specific inhibition against c-Abl and ABL2 (which shares 93% sequence identity in the kinase domain as c-Abl) (Salah et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "991216f4-1590-44e8-acbd-04c9c917f113",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C83",
+      "claim": "ABL2 shares 93% sequence identity in the kinase domain with c-Abl.",
+      "claim_type": "EXPLICIT",
+      "source": "Imatinib has potent and specific inhibition against c-Abl and ABL2 (which shares 93% sequence identity in the kinase domain as c-Abl) (Salah et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "b2916080-42f4-40e9-b5c0-0c8fccc2c0dd",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C84",
+      "claim": "Controlling the kinase activity of c-Abl, or highly similar kinases, is sufficient to significantly modulate the level of Tyr1 phosphorylation of CTD in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our result indicates controlling the kinase activity of c-Abl, or highly similar kinases, is sufficient to significantly modulate the level of Tyr1 phosphorylation of CTD in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of the imatinib treatment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "0ec49a77-f693-437a-9f79-9299168eaad7",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C85",
+      "claim": "Dasatinib has potent and specific inhibition against c-Abl and other tyrosine kinases similar to c-Abl.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we initially utilized the potent inhibitor dasatinib, which inhibits c-Abl as well as other tyrosine kinases similar to c-Abl, to treat HEK293T cells (Winter et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "edc56b45-b4e3-45ee-8c8e-2c329ed808c2",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C86",
+      "claim": "Tyr1 phosphorylation can block recognition of pSer2 by the 3E10 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential concern is antibody masking by flanking phosphorylation because Tyr1 phosphorylation can block recognition of pSer2 by the 3E10 antibody (Chapman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "c89babd0-35c6-493c-9ab4-87a60c727b05",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C87",
+      "claim": "Ultraviolet photodissociation (UVPD) using 193 nm photons results in a greater number of diagnostic fragment ions and the conservation of lower energy bonds like those of some PTMs including phosphorylations.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultraviolet photodissociation (UVPD) using 193 nm photons is an alternative to existing collision- and electron-based activation methods in proteomic mass spectrometry. This method energizes peptide ions via a single absorption event of high-energy photons resulting in a greater number of diagnostic fragment ions and the conservation of lower energy bonds like those of some PTMs including phosphorylations (Brodbelt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature describing the UVPD method.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "c3f9f066-2dd5-4675-9302-4bae6b19eb3a",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C88",
+      "claim": "UVPD results in better certainty in PTM localization and conservation of PTMs.",
+      "claim_type": "EXPLICIT",
+      "source": "This method is applicable in both positive and negative ionization modes, results in a greater degree of peptide fragmentation, better certainty in PTM localization, and conservation of PTMs to ultimately ensure the detection of even low abundance or particularly labile modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantages of the UVPD method used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "25d5b630-eae1-486e-9b23-1724e17f3355",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C89",
+      "claim": "Recombinant yeast CTD GST fusion proteins contain mostly consensus heptad repeats (20 of 26).",
+      "claim_type": "EXPLICIT",
+      "source": "Because endogenous RNA polymerase II is heterogeneously modified, we used recombinant yeast CTD GST fusion proteins, which contain mostly consensus heptad repeats (20 of 26), as an unmodified substrate for PTM analysis (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the substrate used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "972a3bff-cd5b-437c-907c-89cbad3e9e18",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C90",
+      "claim": "D. melanogaster CTD contains a majority of heptads that diverge from consensus sequence with only 2 of its approximately 45 heptads being of the consensus sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila melanogaster CTD contains a majority of heptads that diverge from consensus sequence with only 2 of its approximately 45 heptads being of the consensus sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequence characteristics of D. melanogaster CTD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "8d334f2e-1a44-404e-a2cc-3438764bedbd",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C91",
+      "claim": "The Tyr1 position of D. melanogaster CTD is rather conserved and contains mostly tyrosine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this highly divergent character, the Tyr1 position of D. melanogaster CTD is rather conserved and contains mostly tyrosine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequence characteristics of D. melanogaster CTD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "31a45973-cdb9-4c5a-8c41-80afd56f80d6",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "claim_id": "C92",
+      "claim": "For the six heptads in D. melanogaster CTD that do not contain tyrosine, half are modestly substituted with phenylalanine.",
+      "claim_type": "EXPLICIT",
+      "source": "For the six heptads that do not contain tyrosine, half are modestly substituted with phenylalanine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequence characteristics of D. melanogaster CTD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ca9147fd-1ee7-40ed-9987-b12c44a47be3",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "P-TEFb exhibits Ser5 phosphorylation activity in vitro on unmodified CTD substrates. Using LC-UVPD-MS/MS and MALDI-MS, the authors demonstrate that P-TEFb generates predominantly Ser5-phosphorylated peptides (major species) with minor Ser2 phosphorylation, adding 24-29 phosphates to yeast CTD's 26 heptad repeats, averaging one phosphorylation per heptad.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18, C22-C25 provide converging evidence from multiple mass spectrometry approaches (LC-UVPD-MS/MS and MALDI-MS) showing P-TEFb's preference for Ser5 on unmodified substrates. The data are internally consistent and use appropriate analytical methods with proper controls. The similarity to known Ser5 kinases (C23) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "17d480da-b28f-4ba0-8587-5864538a62c4",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The chemical identity of residues at the Tyr1 position is critical for CTD kinase activity. Conservative mutation to phenylalanine is lethal in vivo, and even this subtle change differentially affects CTD kinases: Erk2 shows 2.5-fold increased specificity for YtoF substrates, while TFIIH activity is reduced ~10-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 demonstrate the importance of Tyr1 identity through multiple lines of evidence: lethality data from literature (C26), kinetic measurements (C31-C32), and EMSA showing altered phosphorylation patterns (C29-C30). The kinetic data are quantitative with error bars and proper controls. The differential effects on different kinases strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "3b78028d-6055-4900-8c0b-b77e38eac3b2",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "c-Abl phosphorylates CTD on Tyr1 in vitro and in cells, targeting approximately half of available Tyr1 residues. LC-UVPD-MS/MS confirms site-specific Tyr1 phosphorylation, and imatinib treatment of HEK293T cells reduces pTyr1 levels in a dose-dependent manner (35% reduction at 20 \u03bcM), demonstrating that c-Abl or similar kinases regulate cellular Tyr1 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 and C75-C77, C82-C84 provide strong evidence through multiple approaches: in vitro phosphorylation (EMSA, western blot, MS/MS), MALDI-MS quantification showing ~50% phosphorylation, and cell-based inhibitor studies with dose-response. The pattern of partial phosphorylation is consistently observed across multiple CTD constructs of different lengths, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "bce04753-e86c-419d-beb5-816670955b11",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pre-treatment of CTD with c-Abl (Tyr1 phosphorylation) dramatically alters P-TEFb specificity from Ser5 to Ser2. Tandem treatment results in ~300% increase in Ser2 phosphorylation by western blot, and LC-UVPD-MS/MS shows the predominant product shifts from di-phosphorylated Ser5 (P-TEFb alone) to Tyr1+Ser2 double phosphorylation (tandem treatment). This effect is specific to P-TEFb and not observed with TFIIH or Erk2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C45 represent the central finding, supported by multiple complementary methods: MALDI-MS showing altered phosphate incorporation, western blots with quantification and statistics, and high-resolution LC-UVPD-MS/MS identifying specific phosphorylation sites. The inactivation experiments (C42) rule out direct kinase-kinase interactions. The specificity for P-TEFb (C41) strengthens the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "3139ea3d-9b61-4aae-bf81-bb66acae8ee6",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A Ser5-to-alanine mutant CTD (S5A), which cannot be phosphorylated by P-TEFb alone, becomes a viable P-TEFb substrate upon Tyr1 phosphorylation by c-Abl, adding up to 7 phosphates (likely on Ser2 residues) compared to minimal phosphorylation without c-Abl pre-treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 provide strong supporting evidence for the specificity switch using a clever mutant approach. MALDI-MS data clearly show that S5A is not phosphorylated by P-TEFb alone but gains phosphorylation after c-Abl treatment. This directly demonstrates that Tyr1 phosphorylation enables Ser2 phosphorylation independent of Ser5 availability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "3f6858ac-c5e7-462d-a652-145f4cffc371",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TFIIH-mediated phosphorylations (Ser5 and Ser7) do not alter P-TEFb specificity in vitro, as demonstrated by LC-UVPD-MS/MS showing that P-TEFb maintains its Ser5 preference after TFIIH pre-treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by LC-UVPD-MS/MS data showing no change in P-TEFb specificity after TFIIH treatment. This negative control is important for demonstrating the specificity of the Tyr1 effect and rules out general priming by any phosphorylation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "f4bf7c6f-0446-4588-9582-3842b0efcf75",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In HEK293T cells, inhibition of Tyr1 kinases with dasatinib (10 \u03bcM) or imatinib (20 \u03bcM) reduces pTyr1 by 30-35% and correspondingly reduces pSer2 by 15-29%, while pSer5 and RNA polymerase II levels remain unchanged. The observed pSer2 reduction may be underestimated due to antibody epitope masking by pTyr1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 demonstrate the cellular relevance of the in vitro findings using two different inhibitors with appropriate controls. Western blots show specific effects on pSer2 without affecting pSer5 or Pol II levels. The authors appropriately acknowledge the epitope masking issue (C86), suggesting the effect may be larger than measured. Statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "abe4730b-6207-4946-94a6-a2df333fbe48",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ChIP-seq analysis reveals that dasatinib treatment (inhibiting Tyr1 phosphorylation) causes RNA polymerase II accumulation at promoters with a statistically significant ~2-fold increase in pausing index for actively transcribed genes (G2 and G3 clusters), indicating stalling at the promoter-proximal pause.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C52-C55 provide genome-wide evidence for the functional consequence of reduced Tyr1 phosphorylation. ChIP-seq data are properly normalized, analyzed with appropriate statistical tests, and show consistent effects across biological replicates. The clustering approach appropriately separates active from inactive genes. The increased pausing index directly supports the model that Tyr1\u2192Ser2 phosphorylation is required for pause release.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "7e21877c-a792-45aa-8ecd-a0df5b56d703",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors conclude that Tyr1 phosphorylation directs P-TEFb kinase activity, altering its specificity from Ser5 to Ser2, thereby generating a heterogeneous CTD modification landscape. This represents a combinatorial CTD code where prior modifications influence subsequent enzymatic activities, resolving the long-standing controversy about P-TEFb specificity in vitro versus in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6-C7, C56, C62-C64, C68, C70, C73 represent the authors' interpretations and conclusions. These are well-supported by the collective experimental evidence from in vitro biochemistry, mass spectrometry, cell-based assays, and ChIP-seq. The model reconciles previous contradictory findings and is consistent with all presented data. The mechanistic insight is novel and significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    },
+    {
+      "id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c",
+      "content_id": "766659dd-9d0a-409d-b0ef-ea084a52edb6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background and methodological context: The manuscript establishes the known functions of P-TEFb, CTD structure and phosphorylation dynamics, the controversy regarding P-TEFb specificity (Ser5 in vitro vs. Ser2 in vivo), and describes the UVPD-MS/MS methodology used for phosphorylation site mapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C17, C19-C21, C57-C61, C65-C67, C69, C71-C72, C80-C81, C87-C92 provide established background knowledge properly cited from literature and describe experimental approaches. These contextual claims are appropriately supported by citations and are not novel findings but necessary context. The UVPD-MS/MS method description (C87-C88) is supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:29:45.967426Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4bd59be0-92ba-4ec6-bdc1-21d415db94a9",
+      "result_id": "ca9147fd-1ee7-40ed-9987-b12c44a47be3"
+    },
+    {
+      "claim_id": "a429a947-a568-4796-a80a-aebe7742a8bb",
+      "result_id": "ca9147fd-1ee7-40ed-9987-b12c44a47be3"
+    },
+    {
+      "claim_id": "89be2174-1e5a-4720-9b04-e2bbd23d96a2",
+      "result_id": "ca9147fd-1ee7-40ed-9987-b12c44a47be3"
+    },
+    {
+      "claim_id": "590355db-7566-437c-802e-510497940687",
+      "result_id": "ca9147fd-1ee7-40ed-9987-b12c44a47be3"
+    },
+    {
+      "claim_id": "01b0fcf5-b60d-45a2-9488-c7e2a798b062",
+      "result_id": "ca9147fd-1ee7-40ed-9987-b12c44a47be3"
+    },
+    {
+      "claim_id": "295b7c0d-7838-4cee-a418-e7b2c159ffac",
+      "result_id": "ca9147fd-1ee7-40ed-9987-b12c44a47be3"
+    },
+    {
+      "claim_id": "53f7a9aa-4ce0-4cf8-8402-4af4f67ddd97",
+      "result_id": "17d480da-b28f-4ba0-8587-5864538a62c4"
+    },
+    {
+      "claim_id": "b23b3ac1-ed0a-4d70-b2d3-5ac014570a12",
+      "result_id": "17d480da-b28f-4ba0-8587-5864538a62c4"
+    },
+    {
+      "claim_id": "ed65ee32-026b-4f42-92f3-89fa5a15d543",
+      "result_id": "17d480da-b28f-4ba0-8587-5864538a62c4"
+    },
+    {
+      "claim_id": "291b48cd-16a4-4505-8b0d-b1acfa7254b4",
+      "result_id": "17d480da-b28f-4ba0-8587-5864538a62c4"
+    },
+    {
+      "claim_id": "f56bdc38-53df-4f17-9958-8a673c843f10",
+      "result_id": "17d480da-b28f-4ba0-8587-5864538a62c4"
+    },
+    {
+      "claim_id": "c0e22dbc-98ba-4417-83c2-f13db6c37531",
+      "result_id": "17d480da-b28f-4ba0-8587-5864538a62c4"
+    },
+    {
+      "claim_id": "9c285074-2f94-4317-aa34-bf9dc6495a57",
+      "result_id": "17d480da-b28f-4ba0-8587-5864538a62c4"
+    },
+    {
+      "claim_id": "aed1991b-cc67-43c5-849d-88df9a564275",
+      "result_id": "17d480da-b28f-4ba0-8587-5864538a62c4"
+    },
+    {
+      "claim_id": "9b10a9c6-a35e-4efa-926e-1d09d61defe6",
+      "result_id": "17d480da-b28f-4ba0-8587-5864538a62c4"
+    },
+    {
+      "claim_id": "0fcc2a8e-0e16-4f3e-9bf4-0d468227467c",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "33df0b57-081e-46dd-8431-f6a7ac789a98",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "379fdeb0-10f2-4adb-ba80-8f84bcebfa3c",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "eb49efbb-272a-4dab-906f-acf8369677c7",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "e1ae197d-9d8c-4534-8fce-555ca6c1ad8c",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "2465d67d-9ee9-43f7-a14a-7ecaaa3a7820",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "a9328149-0011-4a92-84d6-f13fe547dbd7",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "fb6cf91c-8db2-409f-8e1b-8e553ae4ca89",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "436a9859-7d55-4094-be5d-8fc19995bc04",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "991216f4-1590-44e8-acbd-04c9c917f113",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "b2916080-42f4-40e9-b5c0-0c8fccc2c0dd",
+      "result_id": "3b78028d-6055-4900-8c0b-b77e38eac3b2"
+    },
+    {
+      "claim_id": "e14def85-c789-47dd-9cd3-5d401d2d14d1",
+      "result_id": "bce04753-e86c-419d-beb5-816670955b11"
+    },
+    {
+      "claim_id": "5bc6d545-f8bf-4ac1-b7fb-94703b095f03",
+      "result_id": "bce04753-e86c-419d-beb5-816670955b11"
+    },
+    {
+      "claim_id": "40a44f62-2f98-4967-8962-f01038da71c0",
+      "result_id": "bce04753-e86c-419d-beb5-816670955b11"
+    },
+    {
+      "claim_id": "70c19e10-7d90-4087-9d55-437fafc9c28b",
+      "result_id": "bce04753-e86c-419d-beb5-816670955b11"
+    },
+    {
+      "claim_id": "994202d7-6516-4e62-87cc-9f605f8ca95d",
+      "result_id": "bce04753-e86c-419d-beb5-816670955b11"
+    },
+    {
+      "claim_id": "908f3c36-bf62-4893-bad0-259590accca0",
+      "result_id": "bce04753-e86c-419d-beb5-816670955b11"
+    },
+    {
+      "claim_id": "0724c98a-02e0-4381-9b8a-01f8be0d66ba",
+      "result_id": "bce04753-e86c-419d-beb5-816670955b11"
+    },
+    {
+      "claim_id": "b4dca78e-9e2f-4e78-aa9b-fe1f4a240f22",
+      "result_id": "bce04753-e86c-419d-beb5-816670955b11"
+    },
+    {
+      "claim_id": "e9392d12-f6d5-48c3-88dd-14c1c1695fb0",
+      "result_id": "3139ea3d-9b61-4aae-bf81-bb66acae8ee6"
+    },
+    {
+      "claim_id": "7e7acd4a-4239-4894-8ad1-53e5cb41ba53",
+      "result_id": "3139ea3d-9b61-4aae-bf81-bb66acae8ee6"
+    },
+    {
+      "claim_id": "63df2562-ff6f-4878-af57-b9f805b29bc5",
+      "result_id": "3f6858ac-c5e7-462d-a652-145f4cffc371"
+    },
+    {
+      "claim_id": "53226f0f-3306-448c-a578-1001e5943c30",
+      "result_id": "f4bf7c6f-0446-4588-9582-3842b0efcf75"
+    },
+    {
+      "claim_id": "ee4b7322-63b7-4c4f-9190-b813dc9b82ec",
+      "result_id": "f4bf7c6f-0446-4588-9582-3842b0efcf75"
+    },
+    {
+      "claim_id": "eed908ee-f531-489f-999d-523ad2396c61",
+      "result_id": "f4bf7c6f-0446-4588-9582-3842b0efcf75"
+    },
+    {
+      "claim_id": "0ec49a77-f693-437a-9f79-9299168eaad7",
+      "result_id": "f4bf7c6f-0446-4588-9582-3842b0efcf75"
+    },
+    {
+      "claim_id": "edc56b45-b4e3-45ee-8c8e-2c329ed808c2",
+      "result_id": "f4bf7c6f-0446-4588-9582-3842b0efcf75"
+    },
+    {
+      "claim_id": "64e56ad4-8746-4917-a08a-3814d1565a77",
+      "result_id": "abe4730b-6207-4946-94a6-a2df333fbe48"
+    },
+    {
+      "claim_id": "dd62e982-3b43-4fc6-bf0b-37679646e718",
+      "result_id": "abe4730b-6207-4946-94a6-a2df333fbe48"
+    },
+    {
+      "claim_id": "c7c70118-f073-4dc3-883b-27620f7085ac",
+      "result_id": "abe4730b-6207-4946-94a6-a2df333fbe48"
+    },
+    {
+      "claim_id": "d4b863c5-a880-4fcc-b741-d0632473d8cd",
+      "result_id": "abe4730b-6207-4946-94a6-a2df333fbe48"
+    },
+    {
+      "claim_id": "9030ed8a-3f38-42d6-8691-5752e4e69b57",
+      "result_id": "abe4730b-6207-4946-94a6-a2df333fbe48"
+    },
+    {
+      "claim_id": "794967d5-4931-4283-baee-5eb6e0350d3a",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "962057c1-e820-4d06-992c-10e4426d37ef",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "59d5ad4b-c70e-4866-b6db-84d59e580672",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "ac46ecd2-366d-485a-87e6-975b618162a8",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "41ab3d61-9712-4bbd-b500-932cfd409ec0",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "58e88276-9478-4281-aefd-73f12f478e68",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "6d55db0f-faaa-4897-9bda-101ba5dc281f",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "bd2a8ff3-0b94-4fae-b999-4afcd7e88f1a",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "77a54509-df60-4fe0-877b-75a8b91f3da0",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "7c03d4b7-28fb-4dcf-a74f-f9cf248b18fc",
+      "result_id": "7e21877c-a792-45aa-8ecd-a0df5b56d703"
+    },
+    {
+      "claim_id": "dbe736a2-91d7-4996-a7d4-95eee2c57d7a",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "249931fa-79e6-45dd-97f4-20b04fddb59a",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "3208a412-69be-465d-942e-69d35c4bd8b9",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "c1dbd3fc-ccaf-4359-b18a-23646b254c0f",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "ecd74b7b-dca2-46bc-8865-340c6019ef03",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "23a2932c-0957-4649-b334-9bb2a55b45ce",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "df79706c-34db-49a5-8123-2a5ecc323144",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "9c28d8a9-7c19-4ec7-a8e3-3740ea489528",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "ea9515f8-5e59-4c53-bfb7-f50a83220ba3",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "9be4508c-0416-46f7-8af0-59e3a0391ac0",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "68e243c5-8ab2-41cf-93dc-523476c79f0a",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "7ef1af3e-9789-4e29-800d-ea79326581cc",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "af12a854-f32d-435d-ab3c-980646cd80a9",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "65f1717e-bda1-43a9-a4f1-97f9d7c7905d",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "79b1ad86-bc60-4240-a08d-825fc872a273",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "f8e5797e-0ac3-4080-b87f-387e247b2a6e",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "6310430f-01c9-4071-998c-d6f7d8260b7d",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "b5d06800-d610-4a2f-9d68-deac4ab8cf45",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "34c70eeb-172f-4ffe-997d-643029cc339f",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "f6b1a32d-2d40-4a6e-a77e-cc60c52b3268",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "4935bcc2-2779-4bb2-89c5-c2f8486c03b6",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "3de34022-82b8-4d5e-b3c0-17d27caea7e5",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "aef04659-0436-4433-8030-77df26b0494b",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "c1cc3fb3-9370-4301-8980-8f5470cc53b1",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "7e06052e-8399-46c0-b6a5-16d374e7956f",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "b940c6ac-9d6c-4246-a04a-c0a31ed8f4f7",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "3b46395c-df67-4f6d-96c7-bbf86bf5aaa2",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "cb433356-2160-4ca6-a4e6-3ac7a1ed9ca6",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "c89babd0-35c6-493c-9ab4-87a60c727b05",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "c3f9f066-2dd5-4675-9302-4bae6b19eb3a",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "25d5b630-eae1-486e-9b23-1724e17f3355",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "972a3bff-cd5b-437c-907c-89cbad3e9e18",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "8d334f2e-1a44-404e-a2cc-3438764bedbd",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    },
+    {
+      "claim_id": "31a45973-cdb9-4c5a-8c41-80afd56f80d6",
+      "result_id": "d1d4e195-df9b-430f-b77f-e18bb1f5b01c"
+    }
+  ],
+  "comparisons": []
+}

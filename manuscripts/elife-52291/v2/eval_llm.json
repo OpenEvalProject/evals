@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C93"
+    ],
+    "result": "The manuscript establishes the background knowledge that ER stress activates the UPR, which initially promotes cytoprotection but can switch to apoptosis. Prior work has shown that DR5 and caspase 8 are required for ER stress-induced apoptosis, but TRAIL is dispensable, and DR5 remains intracellular during ER stress. The mechanism of DR5 activation during ER stress was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 and C93 collectively establish well-documented background knowledge from prior research, supported by appropriate citations. These claims accurately represent the state of the field and provide the necessary context for the current study's investigation into the mechanism of intracellular DR5 activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Overexpression of MPZ-GFP in epithelial cells induces ER stress, UPR activation, and DR5-dependent apoptosis. High levels of MPZ-GFP accumulate intracellularly, upregulate UPR target genes (CHOP, BiP, DR5), and activate caspases 8 and 3. DR5 knockdown reduces apoptotic markers, demonstrating DR5 is required for MPZ-induced apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 are well-supported by multiple experimental approaches including confocal imaging (Figure 1A), qPCR (Figure 1\u2014figure supplement 1A), Western blotting (Figure 1B), RT-PCR (Figure 1\u2014figure supplement 1C), and siRNA knockdown experiments (Figure 1C-D). The temporal sequence of UPR activation followed by apoptosis is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C79"
+    ],
+    "result": "DR5 upregulation alone is insufficient to induce apoptosis; additional signals from ER stress are required. CHOP-induced DR5 expression in the absence of ER stress produces much lower levels of apoptosis compared to misfolded protein-induced ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C79 are supported by experiments comparing CHOP overexpression (which upregulates DR5) versus misfolded protein expression (Figure 1\u2014figure supplement 2). The data show that comparable DR5 levels produce drastically different apoptotic outcomes, demonstrating that DR5 activation requires more than just upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Misfolded MPZ-GFP physically associates with DR5 in high-molecular weight complexes containing FADD and active caspase 8. Immunoprecipitation of MPZ-GFP enriches for DR5, FADD, and caspase 8, and these complexes exhibit caspase 8 activity comparable to TRAIL-activated DR5 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by size exclusion chromatography showing co-elution of DR5 and MPZ-GFP with caspase 8 activity (Figure 1E), immunoprecipitation experiments demonstrating physical association (Figure 1F, Figure 1\u2014figure supplement 3A), and caspase activity assays (Figure 1G). The specificity is confirmed by negative controls with cytosolic GFP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C80"
+    ],
+    "result": "Other ER-trafficked proteins (RHO-GFP and INS-GFP) also induce DR5-dependent apoptosis, but differ in their propensity to directly engage DR5. RHO-GFP enriches for DR5 more robustly than INS-GFP, despite inducing similar levels of apoptosis, suggesting that different misfolded proteins have varying abilities to directly activate DR5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 and C80 are supported by qPCR, RT-PCR, Western blotting, flow cytometry (Figure 1\u2014figure supplements 4-5), and immunoprecipitation experiments. The differential enrichment of DR5 by RHO versus INS is clearly demonstrated, supporting the conclusion that misfolded proteins vary in their direct engagement with DR5. The speculation about INS (C80) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Misfolded proteins and DR5 co-localize at the ER-Golgi intermediate compartment (ERGIC), not the Golgi. Subcellular fractionation and immunofluorescence demonstrate that MPZ-GFP, DR5, FADD, and caspase 8 activity are enriched in ERGIC fractions. Time-course experiments show MPZ accumulates at the ERGIC before DR5 clusters appear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 are strongly supported by multiple orthogonal approaches: confocal imaging (Figure 2A, 2D-E), quantitative co-localization analysis (Figure 2F, Figure 2\u2014figure supplement 1C), subcellular fractionation (Figure 2B), caspase activity assays (Figure 2C), and time-course experiments (Figure 2\u2014figure supplement 2). The ERGIC localization is convincingly demonstrated over the Golgi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C81"
+    ],
+    "result": "The DR5 ectodomain directly binds to peptide sequences from misfolded proteins with promiscuous recognition of hydrophobic and aromatic residues. Peptide array screening, pull-down assays, and fluorescence quenching experiments demonstrate specific binding with K1/2 = 109 \u03bcM and Hill coefficient of 2.6, indicating cooperative binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 and C81 are well-supported by peptide array data (Figure 3A), pull-down assays (Figure 3B), fluorescence quenching assays (Figure 3C), and mutagenesis experiments. The binding is specific (not observed with TNFR1 ECD), reversible, and sequence-dependent. The biochemical characterization is rigorous and the affinity measurements are appropriately quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Peptides representing misfolded protein sequences induce oligomerization of the DR5 ectodomain in a concentration-dependent manner. Crosslinking and size exclusion chromatography show that peptides convert DR5 dimers into higher-order oligomers at intermediate concentrations, while excess peptide dissociates these oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by crosslinking experiments (Figure 3D) and size exclusion chromatography (Figure 3E-F, Figure 3\u2014figure supplement 2G-H). The concentration-dependent oligomerization and disassembly is clearly demonstrated. The control peptide with Tyr-to-Glu mutations does not induce oligomerization, confirming specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Expression of the minimal MPZ-ecto peptide in cells induces DR5-dependent apoptosis, while mutant peptides with disrupted DR5 binding show reduced apoptosis. The wild-type peptide enriches for DR5 and induces more PARP cleavage, caspase activity, and annexin V staining than Glu-substituted mutants, despite inducing similar levels of ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 are strongly supported by Western blotting (Figure 4B, Figure 4\u2014figure supplement 1), caspase activity assays (Figure 4C), RT-PCR and qPCR (Figure 4D-E), immunofluorescence (Figure 4F), immunoprecipitation (Figure 4G), and flow cytometry (Figure 4H). The experiments demonstrate that DR5 binding is necessary for full apoptotic activity, as mutants that disrupt binding reduce apoptosis without affecting ER stress levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C9",
+      "C78",
+      "C86",
+      "C87"
+    ],
+    "result": "The main conclusion is that misfolded proteins act as intracellular ligands to activate DR5 at the ERGIC, switching DR5 from inactive dimers to active oligomeric complexes that assemble DISC and initiate apoptosis. DR5 functions as a late protein-folding checkpoint during unmitigated ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C9, C78, C86, and C87 represent the central conclusions of the manuscript. These are well-supported by the collective experimental evidence including co-localization studies, biochemical characterization of DR5-peptide interactions, demonstration of DISC assembly at the ERGIC, and functional validation using peptide mutants. The model is consistent with all presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose that DR5 serves as a late quality control checkpoint and discuss the physiological relevance of the measured binding affinity, potential therapeutic implications, and connections to disease. They speculate that other TNFR family members may function similarly and that small molecules could potentially inhibit DR5 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C82-C85, C88-C92 represent speculative interpretations and proposed models. While C82-C83 provide reasonable calculations and citations supporting the physiological relevance of the measured affinity, claims C84-C85, C88, and C92 are explicitly speculative. C89-C90 cite prior disease associations but C91 is a factual observation about peptide-controlled oligomerization. These claims require additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

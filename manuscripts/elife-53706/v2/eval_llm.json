@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C2",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Transcriptome sequencing of the pheromone gland-ovipositor complex identified HassOR31 as highly expressed (7-15\u00d7 higher than antennae), with HassORco also present but at much lower levels. Among 22 ORs, 6 GRs, 13 IRs, and 9 iGluRs detected, HassOR31 and HassiGluR7 showed the highest TPM values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C44 provide converging evidence from RNA-seq (TPM values) and qRT-PCR validation showing consistent high expression of HassOR31 in PG-OV relative to antennae. The quantitative data (Ct values, fold-changes) are internally consistent and support the expression pattern claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C7"
+    ],
+    "result": "In situ hybridization revealed that HassOR31 and HassORco are co-expressed in cells beneath some large sensilla, while HassOR31 is predominantly expressed alone in cells beneath smaller hairs, consistent with the differential expression levels observed in transcriptomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by two-color FISH data (Figure 2) showing spatial co-localization patterns. The observation that most cells express only HassOR31 while few co-express both receptors logically explains the expression level discrepancy from qRT-PCR data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C48",
+      "C49",
+      "C5",
+      "C76",
+      "C80",
+      "C139"
+    ],
+    "result": "Functional characterization using Xenopus oocytes demonstrated that HassOR31/HassORco responds to 12 plant odorants (GLVs and terpenoids), with Z-3-hexenyl butyrate as the most effective ligand (EC50 = 1.606 \u00d7 10\u207b\u2075 M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C48-C49 are supported by two-electrode voltage-clamp recordings (Figure 3) showing dose-dependent responses. The EC50 determination and ligand specificity testing appear methodologically sound with appropriate controls (HassOR31 alone, HassOR31/HassiGluR7 showing no response).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C107"
+    ],
+    "result": "Oocytes expressing HassOR31 alone showed no response to tested odorants, confirming the requirement for HassORco co-expression for receptor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C107 provide critical negative control data (Figure 3A) demonstrating that HassOR31 requires HassORco for functional odorant responses, consistent with established OR biology (C105, C106).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Despite HassiGluR7 being highly expressed in the ovipositor with similar expression patterns to HassOR31, co-expression of HassOR31 and HassiGluR7 in oocytes produced no odorant responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C108-C110 are supported by expression data and functional assays (Figure 3A). This negative result effectively rules out HassiGluR7 as a functional partner for HassOR31, though the biological role of HassiGluR7 remains unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Scanning electron microscopy identified four types of sensilla on the ovipositor: Type I and II (non-porous, likely mechanosensory), Type III (trichoid-like with pores, distributed mid-ovipositor), and Type IV (basiconic-like with pores, 5-7 per papilla near ovipore), with Types III and IV potentially serving olfactory/taste functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C64 are supported by detailed SEM images (Figure 4) showing distinct morphological features. The functional inferences (C54, C56, C58, C61) are appropriately qualified as speculative based on morphology alone, though the presence of pores on Types III and IV is consistent with chemosensory function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C77",
+      "C111",
+      "C128",
+      "C129",
+      "C140"
+    ],
+    "result": "Single sensillum recordings demonstrated that some ovipositor sensilla respond to plant odorants including Z-3-hexenyl butyrate (EC50 = 86.50 \u03bcg), though with lower firing frequencies (~20 spikes/second at 100 \u03bcg) than antennal sensilla, and only a few sensilla showed responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C65-C67, C77 are supported by electrophysiological data (Figure 5) showing dose-dependent responses. The observation that only a few sensilla respond (C111) is consistent with low HassORco expression. However, the EC50 units differ between oocyte (molar) and SSR (\u03bcg) assays, making direct comparison difficult.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C99"
+    ],
+    "result": "Behavioral assays with hot pepper volatiles showed that intact females strongly preferred volatile-treated oviposition sites (p=0.0008), while antennectomized females retained significant but reduced preference (p=0.0088), with eggs concentrated closer to the odor source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C99 are supported by behavioral data (Figure 6A-B) with appropriate statistical tests (paired t-tests). The reduced but significant preference in antennectomized females supports a role for the ovipositor in volatile detection, though the complex volatile blend makes it difficult to attribute responses specifically to HassOR31.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C100"
+    ],
+    "result": "Both intact and antennectomized females preferred Z-3-hexenyl butyrate-treated fake leaves (p=0.0053 and p=0.0149, respectively), with no significant difference in oviposition preference index between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C100 are supported by behavioral data (Figure 6C-D). The lack of difference between intact and antennectomized females for Z-3-hexenyl butyrate specifically (unlike the complex pepper volatile blend) suggests ovipositor-mediated detection, though alternative explanations (contact chemosensation, visual cues) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C78",
+      "C79"
+    ],
+    "result": "The behavioral results suggest that detecting host volatile blends during oviposition is governed by both antennae and ovipositor, while detection of Z-3-hexenyl butyrate appears mainly governed by the ovipositor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 represent interpretations of the behavioral data (C68-C73). While the differential effects of antennectomy on complex vs. simple volatile responses are suggestive, the conclusion that Z-3-hexenyl butyrate detection is 'mainly governed by the ovipositor' requires additional controls (e.g., ovipositor ablation, HassOR31 knockout) to exclude alternative sensory modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C74",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors conclude that HassOR31 expression in the ovipositor helps H. assulta females determine precise egg-laying sites, representing the first functional characterization of an ovipositor-expressed OR in this species, with sensilla serving a supplemental function to antennal olfaction in detecting GLV and terpenoid compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C74, C131-C134 represent the main conclusions synthesizing multiple lines of evidence. While the data collectively support a role for ovipositor chemosensation in oviposition behavior, the specific contribution of HassOR31 remains inferential. The behavioral experiments show ovipositor involvement but don't directly demonstrate HassOR31's necessity or sufficiency. Genetic manipulation experiments (suggested in C135-C138) would be required to definitively establish HassOR31's functional role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C98"
+    ],
+    "result": "The authors propose a two-step model for oviposition site selection: (1) antennae-mediated host plant location via volatile detection, and (2) ovipositor-mediated precise site determination integrating olfactory, mechanical, and contact chemosensory information, with Z-3-hexenyl butyrate playing a major role in step 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104, C98 represent a speculative model based on the behavioral data and known biology. While the model is plausible and consistent with the data, it remains a hypothesis requiring direct testing. The relative contributions of different sensory modalities in step 2 are not quantified, and the model doesn't account for potential redundancy or compensation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The authors propose that the low number of responding sensilla explains low HassORco expression, and speculate that excess HassOR31 may have non-chemosensory roles such as mediating responses to endogenous signals or regulating neural development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 provides a reasonable explanation for the HassOR31/HassORco expression discrepancy based on the SSR data. However, C113's speculation about non-chemosensory roles is unsupported by any direct evidence in this study. While analogies to mammalian ORs (C116-C117) and mosquito testes (C114-C115) are cited, these remain speculative without functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Comparison with H. armigera revealed that while HassOR31 and HarmOR31 have similar broad tuning, they differ in most effective ligands (Z-3-hexenyl butyrate vs. myrcene) and ovipositor expression levels (high vs. low), potentially contributing to host plant range divergence between specialist H. assulta and generalist H. armigera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C87 compare the two species based on current data and cited literature. While the expression and ligand preference differences are documented, the proposed link to host plant specialization (C87) is speculative. The correlation between OR31 expression patterns and host range is suggestive but not causally demonstrated, and many other factors likely contribute to host plant specialization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors identified two types of multiporous chemosensory sensilla on the ovipositor resembling antennal trichoid and basiconic sensilla but with large terminal pores characteristic of contact chemosensilla, suggesting dual olfactory and gustatory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by SEM observations (Figure 4). The inference of dual function (C127) is reasonable based on the mixed morphological features (multiporous surface + terminal pore), though functional confirmation through electrophysiology with both volatile and contact stimuli would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C121",
+      "C122"
+    ],
+    "result": "Expression of HassGR9 (fructose receptor ortholog) and IR co-receptors (HassIR8a, HassIR25a) in the ovipositor suggests the presence of sugar taste sensilla and potential chemosensory roles for IRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119, C121-C122 are supported by transcriptome data. The inferences about sensilla types and IR function are reasonable based on known receptor functions, though direct functional characterization of these receptors in the ovipositor context is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C91",
+      "C92",
+      "C96",
+      "C97"
+    ],
+    "result": "Most odorants activating HassOR31/HassORco are present in tobacco flower headspace collections, and Z-3-hexenyl butyrate is found in both tobacco flowers and hot pepper fruits, which are preferred oviposition sites for H. assulta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93, C96-C97 are supported by citations to previous chemical ecology studies. The overlap between HassOR31 ligands and host plant volatiles provides ecological context for the receptor's function, though the inference in C93 ('most odorants') would benefit from more explicit quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors propose future research directions including HassOR31 knockout or sensilla ablation experiments using CRISPR-Cas9, and investigation of OSN projection pathways and the function of excess HassOR31.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 appropriately identify key follow-up experiments needed to establish causality and address unresolved questions. These suggestions acknowledge current limitations and provide a roadmap for future validation of the proposed model.",
+    "result_type": "MINOR"
+  }
+]

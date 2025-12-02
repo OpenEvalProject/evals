@@ -1,0 +1,1804 @@
+{
+  "submission": {
+    "id": "4d275e94-0e86-4f8b-9a54-b77053a92894",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:58:38.107136Z",
+    "updated_at": "2025-12-02T18:58:38.107136Z"
+  },
+  "content": [
+    {
+      "id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "submission_id": "4d275e94-0e86-4f8b-9a54-b77053a92894",
+      "content_type": "manuscript",
+      "content_text": "# Tailored design of protein nanoparticle scaffolds for multivalent presentation of viral glycoprotein antigens\n\n## Authors\n\n- George Ueda<sup>1</sup> ([ORCID: 0000-0002-9792-7149](https://orcid.org/0000-0002-9792-7149))\n- Aleksandar Antanasijevic<sup>3</sup> ([ORCID: 0000-0001-9452-8954](https://orcid.org/0000-0001-9452-8954))\n- Jorge A Fallas<sup>1</sup>\n- William Sheffler<sup>1</sup>\n- Jeffrey Copps<sup>3</sup>\n- Daniel Ellis<sup>1</sup>\n- Geoffrey B Hutchinson<sup>5</sup>\n- Adam Moyer<sup>1</sup>\n- Anila Yasmeen<sup>6</sup>\n- Yaroslav Tsybovsky<sup>7</sup>\n- Young-Jun Park<sup>1</sup>\n- Matthew J Bick<sup>1</sup> ([ORCID: 0000-0002-9585-859X](https://orcid.org/0000-0002-9585-859X))\n- Banumathi Sankaran<sup>8</sup>\n- Rebecca A Gillespie<sup>5</sup>\n- Philip JM Brouwer<sup>9</sup> ([ORCID: 0000-0002-2902-7739](https://orcid.org/0000-0002-2902-7739))\n- Peter H Zwart<sup>8</sup>\n- David Veesler<sup>1</sup> ([ORCID: 0000-0002-6019-8675](https://orcid.org/0000-0002-6019-8675))\n- Masaru Kanekiyo<sup>5</sup>\n- Barney S Graham<sup>5</sup> ([ORCID: 0000-0001-8112-0853](https://orcid.org/0000-0001-8112-0853))\n- Rogier W Sanders<sup>6</sup>\n- John P Moore<sup>6</sup>\n- Per Johan Klasse<sup>6</sup> ([ORCID: 0000-0001-8222-278X](https://orcid.org/0000-0001-8222-278X))\n- Andrew B Ward<sup>3</sup> ([ORCID: 0000-0001-7153-3769](https://orcid.org/0000-0001-7153-3769)) \u2020\n- Neil P King<sup>1</sup> \u2020\n- David Baker<sup>1</sup> ([ORCID: 0000-0001-7896-6217](https://orcid.org/0000-0001-7896-6217)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, University of Washington Seattle United States\n2. Institute for Protein Design, University of Washington Seattle United States\n3. Department of Integrative Structural and Computational Biology, The Scripps Research Institute La Jolla United States\n4. International AIDS Vaccine Initiative Neutralizing Antibody Center, the Collaboration for AIDS Vaccine Discovery (CAVD) and Scripps Consortium for HIV/AIDS Vaccine Development (CHAVD), The Scripps Research Institute La Jolla United States\n5. Vaccine Research Center, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States\n6. Department of Microbiology and Immunology, Weill Cornell Medicine, Cornell University New York United States\n7. Electron Microscopy Laboratory, Cancer Research Technology Program, Frederick National Laboratory for Cancer Research sponsored by the National Cancer Institute Frederick United States\n8. Berkeley Center for Structural Biology, Molecular Biophysics and Integrated Bioimaging, Lawrence Berkeley Laboratory Berkeley United States\n9. Amsterdam UMC, Department of Medical Microbiology, Amsterdam Infection & Immunity Institute, University of Amsterdam Amsterdam Netherlands\n10. Center for Advanced Mathematics in Energy Research Applications, Computational Research Division, Lawrence Berkeley Laboratory Berkeley United States\n11. Howard Hughes Medical Institute, University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMultivalent presentation of viral glycoproteins can substantially increase the elicitation of antigen-specific antibodies. To enable a new generation of anti-viral vaccines, we designed self-assembling protein nanoparticles with geometries tailored to present the ectodomains of influenza, HIV, and RSV viral glycoprotein trimers. We first de novo designed trimers tailored for antigen fusion, featuring N-terminal helices positioned to match the C termini of the viral glycoproteins. Trimers that experimentally adopted their designed configurations were incorporated as components of tetrahedral, octahedral, and icosahedral nanoparticles, which were characterized by cryo-electron microscopy and assessed for their ability to present viral glycoproteins. Electron microscopy and antibody binding experiments demonstrated that the designed nanoparticles presented antigenically intact prefusion HIV-1 Env, influenza hemagglutinin, and RSV F trimers in the predicted geometries. This work demonstrates that antigen-displaying protein nanoparticles can be designed from scratch, and provides a systematic way to investigate the influence of antigen presentation geometry on the immune response to vaccination.\n\n## Introduction\n\nMultivalent antigen presentation, in which antigens are presented to the immune system in a repetitive array, has been demonstrated to increase the potency of humoral immune responses (Bennett et al., 2015; Snapper, 2018). This has been attributed to increased cross-linking of antigen-specific B cell receptors at the cell surface and modulation of immunogen trafficking to and within lymph nodes (Irvine et al., 2013; Tokatlian et al., 2019). An ongoing challenge has been to develop multimerization scaffolds capable of presenting complex oligomeric or engineered antigens (Sanders and Moore, 2017; Jardine et al., 2013; McLellan et al., 2013a), as these can be difficult to stably incorporate into non-protein-based nanomaterials (e.g. liposomes, polymers, transition metals and their oxides). Epitope accessibility, proper folding of the antigen, and stability are also important considerations in any strategy for antigen presentation. Several reports have utilized non-viral, naturally occurring protein scaffolds, such as self-assembling ferritin (Kanekiyo et al., 2013; Sliepen et al., 2015; Darricarr\u00e8re et al., 2018), lumazine synthase (Sanders and Moore, 2017; Abbott et al., 2018), or encapsulin (Kanekiyo et al., 2015) nanoparticles, to present a variety of complex oligomeric or engineered antigens. These studies have illustrated the advantages of using self-assembling proteins as scaffolds for antigen presentation (L\u00f3pez-Sagaseta et al., 2016; Kanekiyo et al., 2019), including enhanced immunogenicity and seamless integration of antigen and scaffold through genetic fusion. More recently, computationally designed one- and two-component protein nanoparticles (Hsia et al., 2016; King et al., 2014; Bale et al., 2016) have been used to present complex oligomeric antigens, conferring additional advantages such as high stability, robust assembly, ease of production and purification, and increased potency upon immunization (Marcandalli et al., 2019; Brouwer et al., 2019).\n\nThe ability to predictively explore new structural space makes designed proteins (Parmeggiani et al., 2015; Brunette et al., 2015) attractive scaffolds for multivalent antigen presentation. In our previous work with computationally designed nanoparticle immunogens (Marcandalli et al., 2019; Brouwer et al., 2019), the nanoparticles were generated from naturally occurring oligomeric proteins without initial consideration of geometric compatibility for antigen presentation. A more comprehensive solution would be to de novo design nanoparticles which present complex antigens of interest. For homo-oligomeric class I viral fusion proteins, a large group that includes many important vaccine antigens (Harrison, 2015), a close geometric match between the C termini of the antigen and the N termini of a designed nanoparticle component would enable multivalent presentation without structural distortion near the glycoprotein base, and potentially allow for better retention of antigenic epitopes relevant to protection. More generally, precise control of antigen presentation geometry through de novo nanoparticle design would enable systematic investigation of the structural determinants of immunogenicity.\n\n## Results\n\n### De novo design of protein nanoparticles tailored for multivalent antigen presentation\n\nWe sought to develop a general computational method for de novo designing protein nanoparticles with geometries tailored to present antigens of interest, focusing specifically on the prefusion conformations of the trimeric viral glycoproteins HIV-1 Env (BG505 SOSIP) (Wang et al., 2017; Sanders et al., 2013), influenza hemagglutinin (H1 HA) (Kadam et al., 2017), and respiratory syncytial virus (RSV) F (DS-Cav1) (McLellan et al., 2013a). To make the antigen-tailored nanoparticle design problem computationally tractable, we employed a two-step design approach (Figure 1). In the first step, we de novo designed antigen-tailored trimers, featuring N termini geometrically matched to the C termini of the viral glycoproteins. In the second step, we generated tetrahedral, octahedral, and icosahedral two-component nanoparticles by designing secondary interfaces between a designed trimer (fusion component) and a de novo homo-oligomer (assembly component) (Fallas et al., 2017). This design approach yielded nanoparticles tailored to present 4, 8, or 20 copies of the viral glycoproteins in defined geometries (Figure 1d). Sequences for all designed trimers and homo-oligomers, two-component nanoparticles, and antigen-fused components in this study can be found in Supplementary file 1A, B, and C, respectively. Details on each step of the design approach are described in the following sections.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig1-v1.jpg)\n\n**Figure 1.:** (a) Computational docking of monomeric repeat proteins into C3-symmetric trimers using the RPX method. (b) Selection of trimers for design based on close geometric match between their N termini (blue spheres) and C termini (red spheres) of a viral antigen (green, BG505 SOSIP shown for illustration). (c) Design of two-component nanoparticles incorporating a fusion component (cyan) and assembly component (gray). (d) Nanoparticle assembled with antigen-fused trimeric component yields multivalent antigen-displaying nanoparticle.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Design models for C3-symmetric trimers (gray) with labeled N termini (blue spheres) screened against the BG505 SOSIP trimeric glycoprotein subunit gp41 (cyan) with C-terminal residues labeled (red spheres).\n\n### Computational design of trimers tailored for fusion to specific viral glycoproteins\n\nWe chose to design our antigen-tailored trimers from monomeric repeat proteins composed of rigidly packed 20- to 50-residue tandem repeat units (Parmeggiani et al., 2015; Brunette et al., 2015; Urvoas et al., 2010; Kajander et al., 2007; Main et al., 2003), as their high stability and tunable length (through variation of repeat number) are desirable properties for the design of protein-based nanomaterials. These structurally diverse alpha-helical repeat proteins featured three to six repeat modules and total lengths between 119 and 279 residues. They were docked into C3-symmetric trimers using our RPX docking method, which identifies configurations likely to accommodate favorable side chain packing at the de novo designed interface (Fallas et al., 2017). To identify trimeric configurations with N termini compatible for fusion to the C termini of the three viral glycoproteins, docks with an RPX score above 5.0 were screened using the sic_axle protocol (Marcandalli et al., 2019). Geometrically compatible docks (non-clashing termini separation distances of 15 \u00c5 or less) were subjected to full Rosetta C3-symmetric interface design and filtering (see Materials and Methods), and twenty-three designs were selected for experimental characterization (Figure 1\u2014figure supplement 1).\n\n### Structural characterization of designed trimers\n\nSynthetic genes encoding each of the designed trimers were expressed in E. coli and purified from lysates by Ni2+ immobilized metal affinity chromatography (Ni2+ IMAC) followed by size-exclusion chromatography (SEC). Twenty-two designs were found to express in the soluble fraction, and nine formed the intended trimeric oligomerization state as assessed by SEC in tandem with multi-angle light scattering (SEC-MALS; examples in Figure 2 top panel, second row; SEC-MALS chromatograms for the remaining designs are in Figure 2\u2014figure supplement 2 and data in Figure 2\u2014figure supplement 1\u2014source data 1; SEC chromatograms for remaining designs with off-target retention volumes are in Figure 2\u2014figure supplement 2). Four of the designs that were trimeric and expressed in high yield, 1na0C3_2, 3ltjC3_1v2, 3ltjC3_11, and HR04C3_5v2, were selected for solution small angle X-ray scattering (SAXS) experiments. The proteins exhibited scattering profiles very similar to those computed from the corresponding design models, suggesting similar supramolecular configuration (Figure 2 top panel, third row; metrics in Table 1 and Figure 2\u2014source data 1). These four trimers were derived from three distinct designed helical repeat proteins from TPR, HEAT, or de novo topological families (1na0, 3ltj, and HR04, see Materials and Methods) (Brunette et al., 2015; Urvoas et al., 2010; Main et al., 2003). Crystals were obtained for the two designs 1na0C3_2 and 3ltjC3_1v2. Structures were determined at resolutions of 2.6 and 2.3 \u212b, revealing a backbone root mean square deviation (r.m.s.d.) between the design model and structure of 1.4 and 0.8 \u212b, respectively (Figure 2\u2014figure supplement 3, and Figure 2\u2014figure supplement 3\u2014source data 1, crystallization conditions, structure metrics, and structure-to-model comparisons are described in Materials and Methods). The structures confirmed in both cases that the designed proteins adopt the intended trimeric configurations, and that most of the atomic details at the de novo designed interfaces are recapitulated.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig2-v1.jpg)\n\n**Figure 2.:** Top rows, design models. Middle rows, SEC chromatograms and calculated molecular weights from SEC-MALS. Bottom rows, comparisons between experimental SAXS data and scattering profiles calculated from design models. (a) 1na0C3_2. (b) 3ltjC3_1v2. (c) 3ltjC3_11. (d) HR04C3_5v2. (e) T33_dn2. (f) T33_dn10. (g) O43_dn18. (h) I53_dn5.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Predominant oligomeric species for each design were collected by fractionation from initial SEC purification, and fourteen chromatograms are presented here from a subsequent round of high-performance SEC-MALS using a Superdex 200 column.\u00a0*Chromatogram obtained using a Superdex 75\u00a010/300\u00a0GL\u00a0column.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Primary SEC chromatograms obtained from a Superdex 200 column for soluble proteins after purification by Ni2+ IMAC. Designs presented here formed off-target or polydisperse assemblies based on retention volume.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Left, design models (gray) and crystal structures (gray) superposed indicating resolution of structure (res.) and backbone r.m.s.d. between structure and design model. Right, magnified view of the de novo designed interface and side chain packing.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** For each designed nanoparticle: Left - protein standard (Precision Plus Dual Xtra, Bio-Rad). Right - labeled bands corresponding to the expected size of each component.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Primary SEC chromatograms obtained from a Superose six column for soluble proteins directly after purification by Ni2+ IMAC. Designs presented here formed off-target or polydisperse assemblies based on retention volume.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Left - designed model. Middle - SEC chromatograms and calculated molecular weights from SEC-MALS. Right - comparisons between experimental SAXS data and scattering profile computed from the design model.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** SEC chromatograms of individual components I53_dn5A (pentameric assembly component, cyan) and I53_dn5B (trimeric fusion component, gray), and nanoparticle purified from equimolar assembly run on a Superose 6 10/300 GL column.\n\n**Table 1.**\n Summary of the experimental characterization for designed trimers and two-component nanoparticles.1na0C3_2 and 3ltjC3_1v2 structures determined by X-ray crystallography and T33_dn10, O43_dn18, and I53_dn5 structures determined by cryo-EM. Table 1\u2014source data 1.Summary of the experimental characterization for designed trimers and two-component nanoparticles.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Design</th>\n      <th>Targeted Antigens</th>\n      <th>Experimental Molecular Weight (kDa)</th>\n      <th>Target Molecular Weight (kDa)</th>\n      <th>SAXS X value</th>\n      <th>Resolution, backbone r.m.s.d. structure (\u212b, \u212b)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1na0C3_2</td>\n      <td>HA, SOSIP, DS-Cav1</td>\n      <td>48</td>\n      <td>45</td>\n      <td>1.4</td>\n      <td>2.6, 1.4</td>\n    </tr>\n    <tr>\n      <td>3ltjC3_1v2</td>\n      <td>SOSIP, DS-Cav1</td>\n      <td>56</td>\n      <td>63</td>\n      <td>1.1</td>\n      <td>2.3, 0.8</td>\n    </tr>\n    <tr>\n      <td>3ltjC3_11</td>\n      <td>SOSIP, DS-Cav1</td>\n      <td>50</td>\n      <td>66</td>\n      <td>1.6</td>\n      <td>--</td>\n    </tr>\n    <tr>\n      <td>HR04C3_5v2</td>\n      <td>SOSIP</td>\n      <td>71</td>\n      <td>69</td>\n      <td>1.5</td>\n      <td>--</td>\n    </tr>\n    <tr>\n      <td>T33_dn2</td>\n      <td>HA, SOSIP, DS-Cav1</td>\n      <td>397</td>\n      <td>345</td>\n      <td>4.8</td>\n      <td>--</td>\n    </tr>\n    <tr>\n      <td>T33_dn5</td>\n      <td>HA, SOSIP, DS-Cav1</td>\n      <td>422</td>\n      <td>422</td>\n      <td>1.7</td>\n      <td>--</td>\n    </tr>\n    <tr>\n      <td>T33_dn10</td>\n      <td>HA, SOSIP, DS-Cav1</td>\n      <td>546</td>\n      <td>556</td>\n      <td>2.3</td>\n      <td>3.9, 0.65</td>\n    </tr>\n    <tr>\n      <td>O43_dn18</td>\n      <td>HA,SOSIP, DS-Cav1</td>\n      <td>810</td>\n      <td>876</td>\n      <td>2.9</td>\n      <td>4.5, 0.98</td>\n    </tr>\n    <tr>\n      <td>I53_dn5</td>\n      <td>HA, SOSIP, DS-Cav1</td>\n      <td>2000</td>\n      <td>1960</td>\n      <td>1.2</td>\n      <td>5.3, 1.30</td>\n    </tr>\n  </tbody>\n</table>\n\n### Computational design of two-component nanoparticles incorporating designed trimers\n\nAs secondary assembly components were required to design our antigen-tailored nanoparticles, validated trimers were docked pairwise with de novo designed symmetric homo-oligomers (Fallas et al., 2017) to generate tetrahedral, octahedral, and icosahedral nanoparticle configurations using the TCdock program (King et al., 2014; Bale et al., 2016). To increase the probability of generating icosahedra which confer the highest valency among the targeted symmetries, three naturally occurring homopentamers were also included in the docking calculations (PDB IDs 2JFB, 2OBX, and 2B98). Analogously to the designed trimers, nanoparticle docks were scored and ranked using the RPX method (Fallas et al., 2017) to identify configurations likely to accommodate favorable side chain packing at a secondary de novo designed interface. High-ranking and non-redundant nanoparticle configurations featuring outward-facing N termini for antigen presentation were selected for Rosetta interface design (King et al., 2014; Bale et al., 2016). Fifty-three nanoparticle designs across all three targeted symmetries that exhibited the best interface metrics were selected for experimental characterization (see Materials and Methods). The nomenclature for the eleven tetrahedra, twenty-one octahedra, and twenty-one icosahedra indicate the symmetry of the nanoparticle (T, O, or I), the oligomeric state of the first component (A) and second component (B) used in each design, the letters \u201cdn\u201d reflecting the de novo nature of the input oligomers, and the rank by RPX score from the docking stage (e.g., \u201cI53_dn5\u201d indicates an icosahedral nanoparticle constructed from a pentameric and trimeric component, ranked 5th in RPX-scoring for the two input oligomers).\n\nSynthetic genes encoding each of the two-component nanoparticles were obtained with one of the components fused to a His6-tag, and the designs were purified using Ni2+ IMAC (see Materials and methods). Pairs of proteins at the expected molecular weights were found to co-elute by SDS-PAGE for twenty-four of the designs, consistent\u00a0with spontaneous assembly of the nanoparticles followed by pulldown His6-tagged component (featured co-eluting designs are presented in Figure 2\u2014figure supplement 4). SEC chromatograms revealed that nineteen designs did not form assemblies of the expected size or that the resulting assemblies were heterogeneous (Figure 2\u2014figure supplement 5). Five designs comprising a panel of unique geometric configurations, T33_dn2, T33_dn5, T33_dn10, O43_dn18, and I53_dn5, ran as monodisperse particles of the predicted molecular mass by SEC-MALS and were further investigated by SAXS. The experimental solution scattering curves closely matched the scattering curves computed from the design models (Schneidman-Duhovny et al., 2010) for all five designs (Figure 2, bottom panel and Figure 2\u2014figure supplement 6; metrics in Table 1 and Figure 2\u2014source data 1, bottom five designs).\n\nDue to its high valency and production yield, we selected the I53_dn5 nanoparticle to investigate the capacity of its two components to be separately produced and assembled in vitro. The two components of I53_dn5 were re-cloned, expressed, and separately purified (pentameric \"I53_dn5A\" with His6-tag and trimeric \u201cI53_dn5B\u201d). Nanoparticle assembly appeared to be complete within minutes after equimolar mixing (Figure 2\u2014figure supplement 7). This capability is noteworthy as it enables production of each component independently, even from different host systems, which provides more flexibility in nanoparticle manufacturing. In vitro assembly also confers more control over nanoparticle assembly and composition, for example by assembling with a mixture of components fused to different antigens (Boyoglu-Barnum et al., 2020).\n\n### Structural characterization of designed two-component nanoparticles\n\nThe five SAXS-validated nanoparticles were structurally characterized using negative stain electron microscopy (NS-EM) (Lee and Gui, 2016; Ozorowski et al., 2018). 2,000\u20135000 particles were manually picked from the electron micrographs acquired for each designed nanoparticle and classified in 2D using the Iterative MSA/MRA algorithm (see Materials and Methods). 3D classification and refinement steps were performed in Relion/3.0 (Zivanov et al., 2018). Analysis of the NS-EM data confirmed high sample homogeneity for all five nanoparticle designs as evident from the micrographs and 2D class-averages (Figure 3). While some free nanoparticle components were detected in the T33_dn5 sample, suggesting a certain propensity towards disassembly, analysis of the reconstructed 3D maps revealed that all five nanoparticles assemble as predicted by the design models, at least to the resolution limits of NS-EM.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig3-v1.jpg)\n\n**Figure 3.:** From left to right: designed trimers incorporated in each designed nanoparticle, nanoparticle design models fit into NS-EM density (views shown down each component axis of symmetry), designed nanoparticle 2D class-averages, raw electron micrographs of designed nanoparticles. (a) T33_dn2. (b) T33_dn5. (c) T33_dn10. (d) O43_dn18. (e) I53_dn5.\n\nIn order to obtain higher-resolution information, three designs, T33_dn10, O43_dn18, and I53_dn5, representing one nanoparticle from each targeted symmetry (T, O, I), were subjected to cryo-electron microscopy (cryo-EM). Cryo-EM data acquisition was performed as described in the Materials and Methods section and data acquisition statistics are displayed in Figure 4\u2014source data 1. The data processing workflow is presented in Figure 4\u2014figure supplement 1. Appropriate symmetry (T, O, and I for T33_dn10, O43_dn18, and I53_dn5, respectively) was applied during 3D classification and refinement and maps were post-processed in Relion/3.0 (Zivanov et al., 2018). The final resolutions of the reconstructed maps for the T33_dn10, O43_dn18, and I53_dn5 nanoparticles were 3.9, 4.5, and 5.3 \u00c5, respectively. Some structural heterogeneity was observed in the cryo-EM data, particularly in the case of I53_dn5. In 2D classification results we generated particle projection averages that range from spherical to ellipsoid shape (Figure 4\u2014figure supplement 1c), indicating some degree of flexibility. There is less evidence of flexibility in T33_dn10 and O43_dn18, in agreement with the higher final map resolution for these nanoparticles.\n\nNanoparticle design models were relaxed into the corresponding EM maps by applying multiple rounds of Rosetta relaxed refinement (Wang et al., 2016) and manual refinement in Coot (Emsley and Crispin, 2018) to generate the final structures. Refined model statistics are shown in Figure 4\u2014source data 2. Reconstructed cryo-EM maps for T33_dn10, O43_dn18, and I53_dn5 and refined models are superimposed in Figure 4. Overall, the refined structures show excellent agreement with the corresponding Rosetta design models. Backbone r.m.s.d. values estimated for the asymmetric unit (consisting of a single subunit of component A and component B) were 0.65, 0.98, and 1.3 \u212b for T33_dn10, O43_dn18, and I53_dn5, respectively (Table 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig4-v1.jpg)\n\n**Figure 4.:** From left to right: cryo-EM maps with refined nanoparticle design models fit into electron density, view of designed nanoparticle interface region fit into cryo-EM density with indicated resolution (res.), designed nanoparticle 2D class-averages, raw cryo-EM micrographs of designed nanoparticles. (a) T33_dn10. (b) O43_dn18. (c) I53_dn5.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Statistics are presented for (a) T33_dn10, (b) O43_dn18, and (c) I53_dn5.\n\n### Characterization of viral glycoprotein-displaying nanoparticles\n\nTo explore the capability of the designed nanoparticles to present viral glycoproteins, we produced their trimeric fusion components genetically linked to a stabilized version of the BG505 SOSIP trimer. Synthetic genes for BG505 SOSIP fused to the N termini of T33_dn2A, T33_dn10A, and I53_dn5B (BG505 SOSIP\u2013T33_dn2A, BG505 SOSIP\u2013T33_dn10A, and BG505 SOSIP\u2013I53_dn5B) were transfected into HEK293F cells. The secreted fusion proteins were then purified using a combination of immuno-affinity chromatography and SEC. The corresponding assembly component for each nanoparticle was produced recombinantly in E. coli, and in vitro assembly reactions were performed as equimolar mixtures of the two components overnight.\n\nAssembled nanoparticles were purified by SEC and analyzed by NS-EM to assess particle assembly and homogeneity.\u00a0~\u00a01000 particles were manually picked and used to perform 2D classification and 3D classification/refinement in Relion (Zivanov et al., 2018). Models for the BG505 SOSIP-displaying nanoparticles fit into their reconstructed 3D maps are displayed in Figure 5 (left). BG505 SOSIP trimers are clearly discernible in 2D class-averages and reconstructed 3D maps. However, the trimers appear less well-resolved than the corresponding nanoparticle core in the three reconstructions, likely due to the short flexible linkers between the BG505 SOSIP trimer and the fusion component. The self-assembling cores of the antigen-fused T33_dn2, T33_dn10, and I53_dn5 nanoparticles were very similar to the NS-EM maps of the unmodified nanoparticles (at least to the resolution limits of NS-EM), demonstrating that fusion of the BG505 SOSIP trimer did not induce any major structural changes to the underlying nanoparticle scaffolds. Free components were detected in raw EM micrographs of BG505 SOSIP\u2013I53_dn5, indicating some degree of disassembly. This finding is supported by stability data reported in a parallel study, where BG505 SOSIP\u2013I53_dn5 demonstrated sensitivity to various physical and chemical stressors (Antanasijevic et al., 2020).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig5-v1.jpg)\n\n**Figure 5.:** From left to right: BG505 SOSIP-displaying nanoparticle models fit into NS-EM density, 2D class-averages, raw NS-EM micrographs of assembled BG505 SOSIP-displaying nanoparticles. (a) BG505 SOSIP\u2013T33_dn2. (b) BG505 SOSIP\u2013T33_dn10. (c) BG505 SOSIP\u2013I53_dn5.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Top panel: ELISA using anti-DS-Cav1 antibodies D25, Motavizumab (Mota), AM14, or negative control CR6261 added to DS-Cav1 trimer with foldon or antigen-displaying nanoparticle DS-Cav1\u2013I53_dn5. Bottom panel: SEC chromatogram of DS-Cav1\u2013I53_dn5 on a Superose six column and NS-EM field image and 2D class averages for DS-Cav1\u2013I53_dn5.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Top panel: Octet bio-layer interferometry using plate-coated head-directed mAb 5J8 for antigen capture, and subsequent stem-directed mAb CR6261 addition to both antigen-fused trimeric component HA\u2013I53_dn5B and antigen-displaying nanoparticle HA\u2013I53_dn5. Bottom panel: SEC chromatogram for nanoparticle HA\u2013I53_dn5 compared to trimer HA\u2013I53_dn5B on a Sephacryl S-500 column, and NS-EM field image and 2D class averages for HA\u2013I53_dn5.\n\nTo further characterize the capability of the designed nanoparticles to present viral glycoproteins, we characterized the structures and antigenic profiles of I53_dn5 fused to the prefusion influenza HA and RSV F glycoproteins (HA\u2013I53_dn5 and DS-Cav1\u2013I53_dn5). Constructs were generated with each glycoprotein genetically linked to the N terminus of the I53_dn5B trimeric fusion component, and the proteins were secreted from HEK293F cells and purified by Ni2+ IMAC. The fusion proteins were mixed with equimolar pentameric I53_dn5A for HA\u2013I53_dn5 or I53_dn5A.1 (a stabilized and redox-insensitive variant of I53_dn5A lacking cysteines, see Materials and Methods) for DS-Cav1\u2013I53_dn5, and the assembly reactions purified by SEC. For both assemblies, the majority of the material migrated in the peak expected for assembled nanoparticles, and NS-EM analysis showed formation of I53_dn5 nanoparticles with spikes emanating from the surface (Figure 5\u2014figure supplement 1 and 2). In both cases, there was considerable variation in the spike geometry, again suggesting some flexibility between the glycoproteins and the underlying scaffold. The GG linker connecting DS-Cav1 to I53_dn5 likely accounts for the observed flexibility and suboptimal definition of the glycoprotein trimer in two-dimensional class averages (Figure 5\u2014figure supplement 1, bottom right). There was no engineered linker between the glycoprotein and fusion component in the case of HA\u2013I53_dn5, and more clearly defined spike density was observed in the class averages (Figure 5\u2014figure supplement 2, bottom right).\n\nTo determine if the presented glycoproteins were properly folded, we examined their reactivity with conformation-specific monoclonal antibodies (mAbs). The DS-Cav1\u2013I53_dn5 nanoparticle was found by an enzyme-linked immunosorbent assay (ELISA) to bind the RSV F-specific mAbs D25 (McLellan et al., 2013b), Motavizumab (Cingoz, 2009), and AM14 (Gilman et al., 2015) similarly to soluble DS-Cav1 trimer with foldon (McLellan et al., 2013a), indicating that the F protein is presented in the desired prefusion conformation on the nanoparticle (Figure 4\u2014figure supplement 1, top). Biolayer interferometry binding experiments with anti-HA head - and stem-specific mAbs\u00a0(Krause et al., 2011;\u00a0Ekiert et al., 2009)\u00a0analogously showed that both the HA\u2013I53_dn5 nanoparticle and the HA\u2013I53_dn5B trimer presented the head and stem regions with wild-type-like antigenicity (Figure 5\u2014figure supplement 2, top).\n\n### Tuning BG505 SOSIP epitope accessibility through nanoparticle presentation geometry\n\nPrevious work involving icosahedral nanoparticle scaffolds presenting HIV-1 Env trimers has shown that antigen crowding can modulate the accessibility of specific epitopes and thereby influence the humoral immune response (Brouwer et al., 2019; Brinkkemper and Sliepen, 2019). The nanoparticle scaffolds developed in this work were specifically designed to exhibit varying geometries and valencies, providing a unique way to manipulate and understand epitope accessibility in the context of nanoparticle vaccines. We selected the BG505 SOSIP\u2013T33_dn2 tetrahedral nanoparticle (assembled in vitro using BG505 SOSIP\u2013T33_dn2A and T33_dn2B) to compare against a previously published SOSIP-displaying icosahedral nanoparticle (BG505 SOSIP\u2013I53-50) (Brouwer et al., 2019) through surface plasmon resonance (SPR) experiments. BG505 SOSIP\u2013T33_dn2 presents four copies of the BG505 SOSIP trimer with much greater spacing than BG505 SOSIP\u2013I53-50 with twenty copies. This difference derives from the angles between neighboring three-fold rotational symmetry axes\u2014where the displayed BG505 trimers are located on the nanoparticle surfaces\u2014in icosahedral and tetrahedral point group symmetries (41.8\u00b0 and 109.5\u00b0, respectively). To first validate mAb binding to BG505 SOSIP\u2013T33_dn2A, NS-EM class averages and a 3D reconstruction were generated in complex with the VRC01 Fab (Walker et al., 2011), confirming the expected binding mode (Figure 6a). Next, in part to simulate surface B cell receptors, a panel of anti-Env mAbs targeting epitopes ranging from the apex to the base of the BG505 SOSIP trimer were immobilized on SPR sensor chips (Figure 6b). BG505 SOSIP\u2013T33_dn2A trimer or BG505 SOSIP\u2013T33-dn2 nanoparticle was flowed over the mAbs and the ratio of macromolecule bound was calculated from the binding signal as previously described (Brouwer et al., 2019). For mAbs that target apical, V3-base, and CD4-binding site epitopes (PGT145, PGT122, 2G12, and VRC01) (Gilman et al., 2015; Walker et al., 2011; Trkola et al., 1996; Wu et al., 2010), the number of molecules of trimer or nanoparticle bound was relatively similar (ratio\u00a0~\u00a01). However, for mAbs that target more base-proximate epitopes in the gp120-gp41 interface (ACS202, VRC34, and PGT151) (van Gils et al., 2017; Kong et al., 2016; Falkowska et al., 2014), an inter-protomeric gp41 epitope (3BC315) (Klein et al., 2012), and the main autologous neutralizing antibody epitope in the glycan hole centered on residues 241 and 289 (11B) (McCoy et al., 2016), the accessibility was reduced in the nanoparticle format. Binding to a mAb directed to the trimer base (12N) (McCoy et al., 2016) was not observed for nanoparticle BG505 SOSIP\u2013T33_dn2 (Figure 6b). We compared epitope accessibility of BG505 SOSIP\u2013T33_dn2 to that of BG505 SOSIP\u2013I53-50 for six different mAbs (Brouwer et al., 2019). As for BG505 SOSIP\u2013T33_dn2, mAbs to the apex, V3-base, and CD4-binding site (PGT145, PGT122, and VRC01) gave molar ratios of\u00a0~\u00a01 compared to BG505 SOSIP\u2013I53-50. However, for mAbs that target the more base-proximate epitopes in the gp120-gp41 interface (VRC34 and PGT151), there was nearly three-fold higher epitope accessibility on T33_dn2 compared to I53-50 (Figure 6c). Further down the trimer, no accessibility difference was again observed for a mAb that targets the gp41 inter-protomeric epitope (3BC315), which was relatively inaccessible on both nanoparticles, likely due to steric hindrance by neighboring trimers. These findings demonstrate that antigen epitope accessibility can be finely tuned through presentation geometry, which could be used as a strategy to target the immune response against specific epitopes of interest.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57659/elife-57659-fig6-v1.jpg)\n\n**Figure 6.:** (a) NS-EM micrographs of BG505 SOSIP\u2013T33_dn2A with and without VRC01 Fab bound, 2D class averages, and models fit into NS-EM density. (b) Representative sensorgrams of indicated proteins binding to anti-Env mAbs. (c) Relative accessibility of epitopes on BG505 SOSIP\u2013T33_dn2 nanoparticles and BG505 SOSIP\u2013I53-50 nanoparticles as determined by mAb binding (top). Ratio of moles of macromolecules are means of 2\u20134 experimental replicates. Epitopes mapped onto BG505 SOSIP are presented on models of T33_dn2 and I53-50 (bottom). Wheat, antigen-fused trimeric component; purple, assembly component; gray, neighboring BG505 SOSIP trimers on the nanoparticle surface.\n\n## Discussion\n\nStrong BCR signaling is required for eliciting robust humoral immune responses, but the molecular mechanisms by which this can be accomplished are not fully understood. Historically, live-attenuated or inactivated viruses and engineered virus-like particles (VLPs) have been able to confer protective immunity without pathogenicity, but the empirical discovery and compositional complexity of such vaccines has hampered understanding of possible mechanisms for obtaining sufficient levels of protective antibodies. De novo designed protein nanoparticles provide a modular way to present antigens to the immune system in defined geometries and of known composition. Multivalent antigen presentation can enhance antigen-specific antibody titers by orders of magnitude (Bennett et al., 2015; Snapper, 2018), but presentation of complex antigens is challenging due to the required geometric compatibility between antigen and scaffold. The design approach described here, in which nanoparticles incorporate de novo designed homo-oligomers tailored to present antigens of interest, is a general solution to this problem. More broadly, the ability to build protein-based nanomaterials with geometric specifications from scratch represents an important step forward in computational protein design, and provides a systematic way to investigate the influence of antigen presentation geometry on immune response.\n\nThe ability to fully tailor structures of nanoparticle scaffolds could be particularly useful for HIV-1 Env-based immunogens. While previous studies of HIV-1 Env trimers presented on nanoparticle scaffolds have demonstrated enhanced immunogenicity (Escolano et al., 2019), the effects are often modest compared to those observed for other antigens (Bennett et al., 2015; Snapper, 2018; Marcandalli et al., 2019; Brinkkemper and Sliepen, 2019). While there may exist intrinsic peculiarities to HIV-1 Env that limit increases in antibody responses upon multivalent presentation (Klasse et al., 2012; Ringe et al., 2019), limitations associated with epitope inaccessibility caused by crowding of the trimers on nanoparticle surfaces have also been identified (Sanders and Moore, 2017; Brouwer et al., 2019). This observation strongly motivates the exploration of antigen presentation across a range of scaffolds to identify geometries that most effectively elicit the desired immune response, particularly when it is of interest to direct the humoral immune response to specific epitopes. Indeed, the SPR experiments presented here demonstrate that epitopes proximate to the BG505 SOSIP base were markedly more accessible to immobilized mAbs on BG505 SOSIP\u2013T33_dn2 than BG505 SOSIP\u2013I53-50, directly implicating steric crowding on the nanoparticle surface as a determinant of antigenicity. Furthermore, the availability of multiple antigen-displaying nanoparticles makes possible the usage of different scaffolds during prime and boost immunizations, which could limit immune responses directed toward the scaffolds while boosting antigen-specific antibody responses. Finally, the ability to tune antigen presentation geometry through de novo nanoparticle design provides a route to investigate the effects of this parameter on B cell activation, as well as the potency and breadth of the ensuing humoral response. This design approach could help overcome the intrinsically low affinity of germline BCRs for viral glycoproteins, and enable development\u00a0of\u00a0broadly neutralizing antibodies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RPX Method</td>\n      <td>PMID:28338692</td>\n      <td></td>\n      <td>Symmetric docking and scoring protocol</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Sic_axle</td>\n      <td>PMID:30849373</td>\n      <td></td>\n      <td>Protein structure alignment protocol</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Rosetta Macromolecular Modeling Suite</td>\n      <td>PMID:28430426</td>\n      <td>RRID:SCR_015701</td>\n      <td>Version 3</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Relion</td>\n      <td>PMID:23000701</td>\n      <td>RRID:SCR_016274</td>\n      <td>Cryo-EM structure determination software</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BL21</td>\n      <td>New England Biolabs</td>\n      <td>Cat. #:C2527H</td>\n      <td>Competent T7 expression strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>Lemo21</td>\n      <td>New England Biolabs</td>\n      <td>Cat. #:C2527H</td>\n      <td>Competent T7 expression strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>HEK293F</td>\n      <td>PMID:26779721</td>\n      <td>RRID:CVCL_6642</td>\n      <td>Suspension-based cells for high yield expression of recombinant proteins</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IPTG</td>\n      <td>Sigma</td>\n      <td>Cat. #:I6758</td>\n      <td>Induces protein expression through T7 promoter</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Kanamycin</td>\n      <td>Sigma</td>\n      <td>Cat. #:K1377</td>\n      <td>Antibiotic</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Carbenicillin</td>\n      <td>Sigma</td>\n      <td>Cat. #:C1389</td>\n      <td>Antibiotic</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Expifectamine</td>\n      <td>ThermoFisher</td>\n      <td>Cat. #:A38915</td>\n      <td>Transfection reagent</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polyethylenimine</td>\n      <td>Polysciences Inc</td>\n      <td>Cat. #:23966</td>\n      <td>Transfection reagent</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET21b(+)</td>\n      <td>Genscript</td>\n      <td>Addgene Cat. #:69741\u20133</td>\n      <td>Bacterial expression vector</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET28b(+)</td>\n      <td>Gen9</td>\n      <td>Addgene Cat. #:69865\u20133</td>\n      <td>Bacterial expression vector</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pPPI4</td>\n      <td>Progenics Pharmaceuticals Inc PMID:10623724</td>\n      <td></td>\n      <td>Mammalian secretion vector, containing codon-optimized stabilized gp140</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CMV/R</td>\n      <td>PMID:15994776</td>\n      <td></td>\n      <td>Mammalian secretion vector, containing CMV enhancer/promoter with HTLV-1 R region</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PGT145 human monoclonal</td>\n      <td>PMID:21849977</td>\n      <td>RRID:AB_2491054</td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PGT122 human monoclonal</td>\n      <td>PMID:21849977</td>\n      <td>RRID:AB_2491042</td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>2G12 human monoclonal</td>\n      <td>PMID:8551569</td>\n      <td>RRID:AB_2819235</td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>VRC01 human monoclonal</td>\n      <td>PMID:20616233</td>\n      <td>RRID:AB_2491019</td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ACS202 human monoclonal</td>\n      <td>PMID:27841852</td>\n      <td></td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>VRC34 human monoclonal</td>\n      <td>PMID:27174988</td>\n      <td>RRID:AB_2819228</td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PGT151 human monoclonal</td>\n      <td>PMID:24768347</td>\n      <td></td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>3BC315 human monoclonal</td>\n      <td>PMID:22826297</td>\n      <td></td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>11B rabbit monoclonal</td>\n      <td>PMID:27545891</td>\n      <td></td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>12N rabbit monoclonal</td>\n      <td>PMID:27545891</td>\n      <td></td>\n      <td>anti-HIV-1 Env (anti-Fc immobilization level of 320\u00a0\u00b1\u00a01.5 RU)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>5J8 human monoclonal</td>\n      <td>PMID:21849447</td>\n      <td></td>\n      <td>anti-HA (20 \u03bcg/mL)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CR6261 human monoclonal</td>\n      <td>PMID:19079604</td>\n      <td></td>\n      <td>anti-HA (20 \u03bcg/mL)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>D25 human monoclonal</td>\n      <td>PMID:24179220</td>\n      <td></td>\n      <td>anti-RSV F (1 pg/mL - 10 \u03bcg/mL)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Motavizumab mouse-human chimeric monoclonal</td>\n      <td>PMID:20065632</td>\n      <td></td>\n      <td>anti-RSV F (1 pg/mL - 10 \u03bcg/mL)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>AM14 human monoclonal</td>\n      <td>PMID:26161532</td>\n      <td></td>\n      <td>anti-RSV F (1 pg/mL - 10 \u03bcg/mL)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Monomeric repeat proteins\n\nListed below are the RCSB Protein Data Bank entries for monomeric repeat proteins used for trimer docking and design in this study. An additional set of monomeric repeat proteins is provided in which experimental SAXS data agreed with the computational model (Fallas et al., 2017).\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">X-ray Structures (PDB ID)</th>\n      <th>SAXS Validated Models</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1na0</td>\n      <td>(1NA0)</td>\n      <td>tpr1</td>\n    </tr>\n    <tr>\n      <td>3ltj</td>\n      <td>(3LTJ)</td>\n      <td>HR00</td>\n    </tr>\n    <tr>\n      <td>2fo7</td>\n      <td>(2FO7)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HR04</td>\n      <td>(5CWB)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HR07</td>\n      <td>(5CWD)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HR10</td>\n      <td>(5CWG)</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Computational docking and design of antigen-tailored trimers\n\nThe monomeric repeat proteins were used as input to C3-symmetric trimer docking and design against the three viral antigens of interest: HIV-1 BG505 SOSIP, influenza H1 HA, and RSV F protein (PDB IDs 5VJ6 res. 518\u2013664, 5KAQ res. 11\u2013501, 5TPN res. 27\u2013509) (Wang et al., 2017; Mousa et al., 2017; Joyce et al., 2016). A C3-symmetric docking search was first performed, and output was assessed by the previously described RPX scoring method which discerns docks with more potential favorable pair-wise interactions than others (Fallas et al., 2017). Up to the top-scoring 100 docks for each repeat protein monomer were aligned against each of the three antigens along the shared C3 axis of symmetry and sampled translationally along and rotationally about the axis in 1 \u212b and 1\u00b0 increments, respectively. For each sample, the distance between the C-terminal residue of the antigen and N-terminal residue of the docked trimer was measured until a minimum, non-clashing distance was determined (Figure 1\u2014figure supplement 1). Solutions for docks that were less than or equal to 15 \u212b for one or more of the three antigens were selected for full Rosetta symmetric interface design as described in previously published methods (Fallas et al., 2017). Individual design trajectories were filtered by the following criteria: difference between Rosetta energy of bound (oligomeric) and unbound (monomeric) states less than \u221230.0 Rosetta energy units, interface surface area greater than 700 \u00c52, Rosetta shape complementarity (sc) greater than 0.65, and less than 50 mutations made from the respective native monomer. Designs that passed these criteria were manually inspected and refined by single point reversions, and one design per unique docked configuration was added to the set of trimers selected for experimental validation.\n\n### Computational docking and design of nanoparticles incorporating designed trimers\n\nTwo-component nanoparticle docks were scored and ranked using the RPX method (Fallas et al., 2017) as opposed to prior methods involving only interface residue contact count (King et al., 2014; Bale et al., 2016). High-scoring and non-redundant nanoparticle configurations were selected for Rosetta interface design with an added caveat that they include trimers with outward-facing N termini for antigen fusion. The design protocol took a single-chain input. pdb of each component, and a symmetry definition file (DiMaio et al., 2011) containing information for a specified cubic point group symmetry. The oligomers were then aligned to the corresponding axes of the symmetry using the Rosetta SymDofMover, taking into account the rigid body translations and rotations retrieved from the. dok file output from TCdock (King et al., 2014; Bale et al., 2016). A symmetric interface design protocol was employed which included pair-wise interaction motifs found from the RPX method (Fallas et al., 2017) within each Rosetta symmetric interface design trajectory (King et al., 2014; Bale et al., 2016). Individual design trajectories were filtered by the following criteria: difference between Rosetta energy of bound and unbound states less than \u221230.0 Rosetta energy units, interface surface area greater than 700 \u00c52, sc greater than 0.6, and less than 50 mutations made from each native oligomer. Designs that passed these criteria were manually inspected and refined by single point reversions for mutations that did not appear to contribute to stabilizing the bound state of the interface. The sequence with the best overall metrics for each unique docked configuration was selected for experimental characterization.\n\n### Designed trimer and nanoparticle protein expression and purification\n\nSynthetic genes for designed proteins were optimized for E. coli expression and assembled from genes (purchased through Genscript or Gen9) ligated into the pET21b(+) (designed trimers) or pET28b(+) (designed nanoparticles) vector at restriction sites NdeI and XhoI or NcoI and XhoI, respectively. A second ribosome-binding site was inserted between the open-reading frames of individual components of nanoparticle designs (\u2018AGAAGGAGATATCAT\u2019), such that the two proteins would be co-expressed and screened for co-elution by SDS-PAGE. Plasmids were cloned into BL21 or Lemo21 (DE3) E. coli competent cells (New England Biolabs). Transformants were inoculated and grown in 5 mL of either LB or TB medium with either 100 mg/L carbenicillin or 100 \u00b5g/L kanamycin at 37\u00b0C overnight. Subsequently, liquid cultures were inoculated 1:100 (v:v) and grown at 37\u00b0C until an OD600 of 0.5\u20130.8. Isopropyl-thio-\u03b2-D-galactopyranoside (IPTG) was then added at a concentration of 0.5\u20131 mM and growth temperature was reduced to 18\u00b0C to induce protein expression, or cultures were left at 37\u00b0C and auto-induced by media-included galactose according to the Studier protocols (Studier, 2005). Expression proceeded for 20 hr until the cell cultures were harvested by centrifugation. Cell pellets were resuspended in 25 mM Tris, 150 mM NaCl, 5 mM imidazole, DNase, EDTA-free protease inhibitors (Pierce), pH 8.0. and lysed by sonication or microfluidization. Each protein was then purified from lysate by Ni2+ IMAC with Ni-NTA Superflow resin (Qiagen or GE). Resin with bound cell lysate was washed with 15 column volumes of 25 mM Tris, 150 mM NaCl, 40 mM imidazole, pH 8.0. Proteins were eluted with five column volumes of 25 mM Tris, 150 mM NaCl, 400 mM imidazole, pH 8.0 for further purification by SEC.\n\n### Designed trimer and nanoparticle SEC\n\nElution samples for each designed protein were concentrated down using a 10,000 MWCO protein concentrator (Novagen) and fractionated by size on an AKTA pure chromatography system using a Superdex 200 (for designed trimers) or Superose 6 10/300 GL column (for designed nanoparticles) in 25 mM Tris, 150 mM NaCl, pH 8.0 (TBS). Sizing profiles were noted based on absorption at 220 nm and 280 nm wavelength light for each fraction. Molecular weights for predominant species in each protein trace were estimated by comparison to the corresponding monomeric profile.\n\n### Designed trimer and nanoparticle SEC-MALS\n\nFractions containing single predominant species from an initial SEC purification were concentrated down with 10,000 MWCO protein concentrators (Novagen) to a concentration of 1.0\u20132.0 mg/mL and run through a high-performance liquid chromatography system (Agilent) using a Superdex 200 or Superose 6 10/300 GL column (GE Life Sciences) in TBS buffer. These fractionation runs were coupled to a multi-angle light scattering detector (Wyatt) to determine the absolute molecular weights for each designed protein complex.\n\n### Designed trimer and nanoparticle SAXS\n\nDesigned proteins that predominantly formed the target oligomeric species were re-expressed and purified for low-resolution solution structure determination by SAXS at the SIBYLS High Throughput SAXS Advanced Light Source in Berkeley, California (Dyer et al., 2014). A beam exposure time of between 0.3\u00a0and\u00a010 s was used to obtain averaged diffraction data (SAXS FrameSlice Application), which are represented in plots of log intensity (I) vs. q. A 11kEV/1.125A X-ray beam was used with a 2 m beamstop.\n\n### Designed trimer crystallization conditions\n\nDesign 1na0C3_2 was found to crystallize in 1 M LiCl, 100 mM citrate, 20% w/v PEG 6000, pH 4, and was frozen using 25% glycerol as cryoprotectant. Design 3ltjC3_1 crystallized in 1 mM DL-glutamic acid monohydrate, 100 mM DL-alanine, 100 mM glycine, 100 mM DL-lysine monohydrochloride, 100 mM DL-serine; 100 mM Tris, 100 mM BICINE, 20% v/v ethylene glycol, 10% w/v PEG 8000, pH 8.5. Diffraction data for each of these designs were collected at the Advanced Light Source (Beamline 8.2.1) at Lawrence Berkeley National Laboratory in Berkeley, California. Both designed trimers contained uncleaved C-terminal His6-tags in crystallized conditions.\n\n### Designed trimer crystal diffraction data collection, structure determination, and refinement\n\nDiffraction data for 3ltjC3_1 was collected on beamline 5.0.1 at the Advanced Light Source (Berkeley, CA) and 1na0C3_2 on beamline 8.2.1, both using an ADSC Q315R CCD area detector. Both datasets were scaled and merged in HKL2000 (Otwinowski and Minor, 1997). The structures were phased by molecular replacement, with the computational design as the search model, using the program PHASER (McCoy et al., 2007) in the PHENIX software suite (Adams, 2012). Iterative rounds of manual model building and refinement were conducted in Coot (Emsley and Crispin, 2018) and Phenix.refine (Afonine et al., 2012), respectively for both structures. Hydrogens were added for all refinement runs. The geometric quality of the final model was assessed using the Molprobity server (Chen et al., 2010). Resolution cutoff was determined by monitoring the refinement statistics in the context of the reflection data completeness and the CC1/2 and I/\u03c3I values (Karplus and Diederichs, 2012).\n\n### I53_dn5 in vitro assembly\n\nGenes for the individual nanoparticle components were cloned into expression vectors and expressed independently in E. coli. The His6-tagged proteins were purified following the purification protocol described for the designed trimers. Initial SEC chromatograms for the components were obtained on a Superdex 200 10/300 GL column, and predominant peak species were stoichiometrically mixed in TBS buffer for 20 min at 25\u00b0C. A secondary SEC step was performed on a Superose 6 10/300 GL column to assess assembly of the intended particle based on expected retention volume.\n\n### Design of cysteine-free I53_dn5A.1 pentamer\n\nMultiple rounds of designs were performed to remove native unpaired cysteines from I53_dn5A. In the first round of design, cysteines were mutated to alanines (C94A, C119A), which caused the protein to bind and retain through purification a bright yellow metabolite. Further mutations were introduced to knock out metabolite binding in the native enzymatic active site (W18G), which led to protein precipitation during purification. Additional mutations were made (K84R, M88P, E91D, L117I, L120D) to re-stabilize the protein, named I53_dn5A.1.\n\n### Production and purification of BG505 SOSIP\u2013T33_dn2A, BG505 SOSIP\u2013T33_dn10A, and BG505 SOSIP\u2013I53_dn5B\n\nSynthetic genes were optimized for mammalian expression and subcloned into the pPPI4 vector. BamHI and NheI restriction sites were used for insertion of different nanoparticle components to the C terminus of BG505 SOSIP. Quick Ligation kit, BamHI-HF, and NheI-HF restriction enzymes were purchased from New England Biolabs. BG505 SOSIP variant used for all early optimizations steps was engineered with a combination of v5.2 (Torrents de la Pe\u00f1a et al., 2017) (mutations: E64K, A73C, A316W, A561C) and MD3D (Steichen et al., 2016) (mutations: M271I, A318Y, R585H, L568D, V570H, R304V, F519S) stabilizing mutations, and had glycosylation sites introduced at positions 241 and 289 (mutations: P240T, S241N, F288L, T290E, P291S). This construct was termed BG505 SOSIP.v5.2 (7S). For epitope-accessibility experiments (by surface plasmon resonance), a version of this construct was designed without the 241 and 289 glycans. HEK 293F (RRID:CVCL_6642) cells were grown in suspension using FreeStyle 293 Expression Medium (Thermo Fisher Scientific) at 135 RPM, 8% CO2, 80% humidity, 37\u00b0C. At confluency of ~ 1 \u00d7 106 cells/ml, the cells were co-transfected with pPPI4 DNA vectors encoding the appropriate fusion component (250 \u00b5g per 1 L of cells) and furin protease (80 \u00b5g per 1 L of cells). Polyethylenimine (Polysciences Inc) was used as a transfection reagent (1 mg per 1 L of cells). Cells were incubated for 6 days, after which they were spun down by centrifugation (7,000 RPM, 1 hr, 4\u00b0C) and the protein-containing supernatant was further clarified by vacuum-filtration (0.45 \u00b5m, Millipore Sigma). For immuno-affinity chromatography steps, Sepharose 4B columns with immobilized PGT145 IgG were used (RRID:AB_2491054). Fusion components were eluted with 3 M magnesium chloride, 250 mM L-Arginine buffer, pH 7.2 into an equal volume of SEC buffer (25 mM Tris, 250 mM L-Arginine, 500 mM NaCl, 5% glycerol, pH 7.4). Eluates were concentrated and buffer exchanged into SEC buffer. A Sephacryl S200 16/600 column was used for subsequent SEC purification.\n\n### Production and Purification of HA\u2013I53_dn5B\n\nSynthetic genes were optimized for mammalian expression and subcloned into the CMV/R vector (VRC 8400) (Barouch et al., 2005). XbaI and AvrII restriction sites were used for insertion of I53_dn5B component to the C terminus of the H1 HA ectodomain (residues 1\u2013676 from A/Michigan/45/2015), which also contained a Y98F mutation to prevent sialic-acid binding and self-aggregation during expression (Whittle et al., 2014). Gene synthesis and cloning was performed by Genscript. HEK 293 F cells were grown in suspension using Expi293 Expression Medium (Thermo Fisher Scientific) at 150 RPM, 8% CO2, 70% humidity, 37\u00b0C. At confluency of ~ 2.5 \u00d7 106 cells/mL, the cells were co-transfected with the vector encoding HA\u2013I53_dn5B (1000 \u00b5g per 1 L of cells). Expifectamine was used as a transfection reagent according to the manufacturer\u2019s protocol. Cells were incubated for 96 hr, after which they were spun down by centrifugation (4,000 RPM, 20 min, 4\u00b0C) and the protein-containing supernatant was further clarified by vacuum-filtration (0.45 \u00b5m, Millipore Sigma). For nickel-affinity chromatography steps, a background of 50 mM Tris, 350 mM NaCl, pH 8.0 was added to clarified supernatant. For each liter of supernatant, 4 mL of Ni Sepharose excel resin (GE) was rinsed into phosphate-buffered saline (PBS) using a gravity column and then added to the supernatant, followed by overnight shaking at 4\u00b0C. After 16\u201324 hr, resin was collected and separated from the mixture and washed twice with 50 mM Tris, 500 mM NaCl, 30 mM imidazole, pH 8.0 prior to elution of desired protein with 50 mM Tris, 500 mM NaCl, 300 mM imidazole, pH 8.0. Eluates were concentrated and applied to a HiLoad 16/600 Superdex 200 pg column pre-equilibrated with PBS for purification by SEC.\n\n### Production and Purification of DS-Cav1\u2013I53_dn5\n\nGene synthesis and cloning was performed by Genscript. HEK 293 F cells (RRID:CVCL_6642) were grown in suspension using Expi293 expression medium (Thermo Fisher Scientific) at 150 RPM, 8% CO2, 70% humidity, 37\u00b0C. At confluency of\u00a0~\u00a02.5 to 3\u00a0\u00d7\u00a0106 cells/ml, the cells were transiently transfected with the vector encoding DS-Cav1\u2013I53_dn5B (1 mg per 1 L of cells). Expifectamine was used as a transfection reagent according to the manufacturer\u2019s protocol. Cells were incubated for 96 hr and spun down by centrifugation (4,000 RPM for 20 min at 4\u00b0C). Supernatant was vacuum-filtered (0.45 \u00b5m, Millipore Sigma) and 50 mM Tris, 350 mM NaCl, pH 8.0 was added for nickel-affinity chromatography. Ni Sepharose resin (GE) was washed three times with PBS by centrifugation (2,000 RPM for 5 min at 4\u00b0C) and added to the supernatant. Nickel-supernatant was incubated either overnight at 4\u00b0C or for 2 hr at room temperature. Resin was collected and separated from the mixture and washed twice with 50 mM Tris, 500 mM NaCl, 30 mM imidazole, pH 8.0 prior to elution of desired protein with 50 mM Tris, 500 mM NaCl, 300 mM imidazole, pH 8.0. Eluates were concentrated and applied to a HiLoad 10/300 Superdex 200 Increase GL column pre-equilibrated with PBS for purification by SEC.\n\n### Assembly and purification of antigen-displaying nanoparticles\n\nSeveral reactions containing 5\u201310 \u00b5g of the purified fusion component and an equimolar amount of the corresponding assembly component were prepared and incubated under different conditions (varying temperature and assembly buffer) for 24 hr. Native PAGE Bis-Tris gels (Thermo Fisher Scientific) and NS-EM was used for detection of assembly. Following the identification of optimal assembly conditions, milligram quantities of particles were assembled and purified by SEC (Superose six or Sepharose 500 column) with TBS as the running buffer. Fractions corresponding to the fusion component were pooled and concentrated (Amicon Ultra Centrifugal Filter Units, Millipore Sigma).\n\n### NS-EM of T33_dn2, T33_dn5, T33_dn10, O43_dn18, I53_dn5, BG505 SOSIP\u2013T33_dn2, BG505 SOSIP\u2013T33_dn10, and BG505 SOSIP\u2013I53_dn5\n\nNS-EM experiments were performed as described previously (Lee and Gui, 2016; Ozorowski et al., 2018). Fusion components and assembled nanoparticle samples (with and without antigen) were diluted to 20\u201350 \u00b5g/ml and loaded onto the carbon-coated 400-mesh Cu grid that had previously been glow- discharged at 15 mA for 25 s. VRC01 (RRID:AB_2491019) complexes with BG505 SOSIP\u2013T33_dn2A were formed by combining the trimer with a six-fold molar excess of the VRC01 Fab and subsequent incubation for 1 hr at room temperature. Complex sample was diluted to 20 \u00b5g/ml and loaded onto the glow discharged Cu grids. Grids were negatively stained with 2% (w/v) uranyl-formate for 60 s. Data collection was performed on a Tecnai Spirit electron microscope operating at 120 keV. The magnification was 52,000\u00a0\u00d7\u00a0with a pixel size of 2.05 \u00c5 at the specimen plane. The electron dose was set to 25 e-/\u00c5 (Snapper, 2018). All imaging was performed with a defocus value of \u22121.50 \u00b5m. The micrographs were recorded on a Tietz 4k\u00a0\u00d7\u00a04 k TemCam-F416 CMOS camera using Leginon automated imaging interface. Data processing was performed in Appion data processing suite. For BG505 SOSIP-fused nanoparticle samples (v5.2 (7S)), approximately 500\u20131000 particles were manually picked from the micrographs and 2D-classified using the Iterative MSA/MRA algorithm. For non-fused nanoparticle samples, 2,000\u20135000 particles were manually picked and processed. For BG505 SOSIP-fused trimer samples and Fab complexes, 10,000\u201340,000 particles were auto-picked and 2D-classified using the iterative MSA/MRA algorithm. 3D classification and refinement steps were done in Relion/2.1 (RRID:SCR_015701) (Kimanius et al., 2016). The resulting EM maps have been deposited to EMDB with IDs: 21162 (T33_dn2), 21163 (T33_dn5), 21164 (T33_dn10), 21165 (O43_dn18), 21166 (I53_dn5), 21167 (BG505 SOSIP\u2013T33_dn2A), 21168 (BG505 SOSIP\u2013T33_dn2A + VRC01 Fab), 21169 (BG505 SOSIP\u2013T33_dn2 nanoparticle), 21170 (BG505 SOSIP\u2013T33_dn10 nanoparticle), 21171 (BG505 SOSIP\u2013I53_dn5 nanoparticle).\n\n### NS-EM of HA\u2013I53_dn5\n\nThe HA\u2013I53_dn5 complex was adsorbed onto glow-discharged carbon-coated copper mesh grids for 60 s, stained with 2% uranyl formate for 30 s, and allowed to air dry. Grids were imaged using the FEI Tecnai Spirit 120 kV electron microscope equipped with a Gatan Ultrascan 4000 CCD Camera. The pixel size at the specimen level was 1.60 \u00c5. Data collection was performed using Leginon (Suloway et al., 2005) with the majority of the data processing carried out in Appion (Lander et al., 2009). The parameters of the contrast transfer function (CTF) were estimated using CTFFIND4 (Mindell and Grigorieff, 2003). All particles were picked in a reference-free manner using DoG Picker (Voss et al., 2009). The HA\u2013I53_dn5 particle stack from the micrographs collected was pre-processed in Relion (RRID:SCR_015701). Reference-free two-dimensional (2D) classification with cryoSPARC was used to select a subset of particles, which were used to generate an initial model using the Ab-Initio reconstruction function in CryoSPARC. The particles from the best class were used for non-uniform refinement in CryoSPARC to obtain the final 3D reconstruction.\n\n### NS-EM of DS-Cav1\u2013I53_dn5\n\nThe sample was diluted with a buffer containing 10 mM HEPES pH 7.0 and 150 mM NaCl to a concentration of 0.025 mg/ml and adsorbed for 15 s to a glow-discharged carbon-coated copper grid. The grid was washed with the same buffer and stained with 0.7% uranyl formate. Images were collected at a nominal magnification of 57,000\u00a0\u00d7\u00a0using EPU software on a ThermoFisher Talos F200C electron microscope equipped with a 4k\u00a0\u00d7\u00a04 k Ceta camera and operated at 200 kV. The pixel size was 0.253 nm. Particles were picked automatically using in-house written software (unpublished) and extracted into 200\u00a0\u00d7\u00a0200 pixel boxes. Reference-free 2D classifications were performed using Relion 1.4 (Zivanov et al., 2018) and SPIDER (Frank et al., 1996).\n\n### Cryo-EM of designed nanoparticles T33_dn10, O43_dn18, and I53_dn5\n\nGrids were prepared on Vitrobot mark IV (Thermo Fisher Scientific). Temperature was set to 10\u00b0C, humidity at 100%, wait time at 10 s, while the blotting time was varied in the 4\u20137 s range with the blotting force at 0. The concentrations of T33_dn10, O43_dn18, and I53_dn5 nanoparticle samples were 4.2, 3.0, and 1.9 mg/ml, respectively. n-Dodecyl \u03b2-D-maltoside (DDM) at a final concentration of 0.06 mM was used for sample freezing. Quantifoil R 2/1 holey carbon copper grids (Cu 400 mesh) were pre-treated with Ar/O2 plasma (Solarus plasma cleaner, Gatan) for 10 s prior to sample application. Concentrated nanoparticle samples were mixed with appropriate volumes of stock DDM solution and 3 \u00b5l applied onto the grid. Excess sample and buffer was blotted off and the grids were plunge-frozen into nitrogen-cooled liquid ethane. Cryo-grids were loaded into a Titan Krios (FEI) operating at 300 kV, equipped with the K2 direct electron detector camera (Gatan). Exposure magnification of 29,000 was set with the resulting pixel size of 1.03 \u00c5 at the specimen plane. Total dose was set to\u00a0~\u00a050 e-/\u00c5 (Snapper, 2018) with 250 ms frames. Nominal defocus range was set to \u22120.6 to \u22121.6 \u00b5m for all three nanoparticle samples. Automated data collection was performed using Leginon software (Suloway et al., 2005). Data collection information for acquired datasets is shown in Figure 4\u2014source data 1.\n\n### Cryo-EM data processing\n\nMotionCor2 (Zheng et al., 2017) was run to align and dose-weight the movie micrographs. GCTF v1.06 was applied to estimate the CTF parameters. Initial processing was performed in cryoSPARC 2.9.0. Template-picked particles were extracted and subjected to 2D classification. Multiple rounds of heterogeneous refinement were performed to further clean-up particle stacks in three acquired datasets. Selected subsets of particles were then transferred to Relion 3.0 (RRID:SCR_015701) (Zivanov et al., 2018) for further processing. Reference models were generated using Ab-Initio reconstruction in cryoSPARC v2.9.0 (Punjani et al., 2017) with the application of appropriate symmetry (tetrahedral, octahedral, and icosahedral for T33_dn10, O43_dn18, and I53_dn5, respectively). Several rounds of 3D classification and refinement were used to sort out a subpopulation of particles that went into the final 3D reconstructions. Tetrahedral, octahedral, and icosahedral symmetry restraints were applied for all 3D refinement and classification steps during the processing of T33_dn10, O43_dn18, and I53_dn5 datasets, respectively. Soft solvent mask around the nanoparticle core was introduced during the final 3D classification, refinement, and post-processing. The resolutions of the final reconstructed maps were 3.86 \u00c5 for T33_dn10, 4.54 \u00c5 for O43_dn18, and 5.35 \u00c5 for I53_dn5. The resulting EM maps have been deposited to EMDB with IDs: 21172 (T33_dn10), 21173 (O43_dn18) and 21174 (I53_dn5). A graphical summary of the data processing approach and relevant information for each dataset are displayed in Figure 4\u2014figure supplement 1.\n\n### SPR Analysis of BG505 SOSIP-fused Trimer and Nanoparticle Binding to Immobilized mAbs\n\nThe antigenicity of BG505 SOSIP\u2013T33_dn2A trimer and BG505 SOSIP\u2013T33_dn2 nanoparticle was analyzed on a BIAcore 3000 instrument at 25 \u00b0C and with HBS-EP (GE healthcare Life sciences) as running buffer, as described (Brouwer et al., 2019). Affinity-purified goat anti-human IgG Fc (Bethyl Laboratories, Inc) and goat anti-rabbit IgG Fc (Abcam) were amine-coupled to CM3 chips and the anti-HIV-1 Env human and rabbit mAbs were captured to an average density of 320 \u00b1 1.5 RU (s.e.m). BG505 SOSIP\u2013T33_dn2A or BG505 SOSIP\u2013T33_dn2 (both v5.2(7S) without N241/N289) (Torrents de la Pe\u00f1a et al., 2017; Steichen et al., 2016) was allowed to associate for 300 s and then dissociate for 600 s at a concentration of 10 nM assembled macromolecule (trimer or nanoparticle). The low background binding in parallel flow cells with only anti-Fc was subtracted. The lack of binding of nanoparticles lacking Env was ascertained for each mAb. To illustrate how epitope accessibility affects the relative binding of the trimers and nanoparticles, we converted the signals, which are proportional to mass bound, to moles bound and calculated the ratio for nanoparticles/trimers. For this comparison historic data on icosahedral nanoparticles were included (Brouwer et al., 2019). The number of moles binding to the immobilized IgG at the end of the association phase was calculated: $n=\\frac{R\u22c5m\u22c5A}{M}$ where n is the number of moles of macromolecules, R the response at 300 s (RU), m the mass bound per area and RU (g/(mm [Snapper, 2018] RU)), A the interactive area of the chip (mm [Snapper, 2018]), and M the molar mass of the macromolecule (g/mol). This analysis corrects for the greater mass (and thereby greater signal) for each bound nanoparticle such that the number of binding events by differing macromolecules can be directly compared.\n\n### Biolayer Interferometry on HA\u2013I53_dn5\n\nTo produce biotin-labeled antibodies specific to the H1 HA head, mAb 5J8 (Krause et al., 2011) in PBS was mixed with a 20\u00a0\u00d7\u00a0molar excess (relative to complete antibodies) of EZ-Link NHS-LC-Biotin (Thermo Fisher Scientific) and allowed to sit for 2 hr at 4\u00b0C, followed by two rounds of overnight dialysis against PBS at 4\u00b0C to remove excess biotinylation reagent. All biosensors were hydrated in assay buffer (25 mM Tris, 150 mM NaCl, 0.5% bovine serum albumin, 0.01% TWEEN 20, pH 8.0) before use. Biotinylated 5J8 (20 \u03bcg/mL in assay buffer) was immobilized on SA biosensors, then briefly dipped in assay buffer prior to exposure to designed H1 HA fusions (500 nM per asymmetric unit, in assay buffer). The biosensor was again dipped in assay buffer and then exposed to the stem-specific mAb CR6261 (20 \u03bcg/mL in assay buffer) (Throsby et al., 2008).\n\n### Analytical SEC on HA\u2013I53_dn5\n\nPurified HA-displaying nanoparticles or trimers were applied to a Sephacryl S-500 column pre-equilibrated with 25 mM Tris, 2 M NaCl, 5% glycerol, pH 8.0. Sizing profiles were recorded based on absorption at 280 nm wavelength light.\n\n### ELISA Assays on DS-Cav1\u2013I53_dn5\n\nELISA was used to measure binding kinetics of DS-Cav1\u2013I53_dn5 to RSV F-specific mAbs D25, Motavizumab, and AM14. D25 is a prefusion specific mAb that binds site \u00d8 (McLellan et al., 2013b). Motavizumab binds site II of the pre and post-fusion conformations (Cingoz, 2009). AM14 is trimer-specific binding across protomers of the prefusion conformation (Gilman et al., 2015). 96-well ELISA plates were coated with 2 \u03bcg/mL DS-Cav1 nanoparticles. Plates were incubated at 4\u00b0C overnight and blocked with PBS containing 5% skim milk at 37\u00b0C for 30 min. mAbs listed were serially diluted in fourfold steps, and then added to the plates and incubated at 37\u00b0C for 45 min. Horseradish peroxidase (HRP)-conjugated anti-human IgG (Southern Biotech., Birmingham, AL) was added and incubated at 37\u00b0C for 30 min, followed by 3,3\u2032,5\u2032,5- Tetramethylbenzidine (TMB; Sigma-Aldrich, St. Louis, MO) HRP substrate, and yellow color that developed after the addition of 1 M H2SO4 was measured by absorbance at 450 nm.\n",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "2984ca5b-17ac-4111-925f-a387c9a30092",
+      "submission_id": "4d275e94-0e86-4f8b-9a54-b77053a92894",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pamela J Bjorkman, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57659.sa1](https://doi.org/10.7554/eLife.57659.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Tailored design of protein nanoparticle scaffolds for multivalent presentation of viral glycoprotein antigens\" for consideration by eLife. Your article has been reviewed by Jos\u00e9 Faraldo-G\u00f3mez as the Senior Editor, a Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe manuscript describes computational nanoparticle design approaches, to create and optimize de novo scaffolds to display antigens such as HIV BG505 SOSIP, RSV DS-Cav1 and H1 HA. In case of SOSIP NPs, near-base epitopes availability to antibody binding was improved compared to previously published scaffold (I53-50NP, https://doi.org/10.1038/s41467-019-12080-1). Compared to I53-50NP, the new T33_dn2 NP displays the immunogen with a different valency.\n\nThe paper represents an evolution of the work of the same laboratories showing that antigens exposed on nanoparticles provide a superior immunogenicity. The approach is rigorous and the rationale is solid. However, in this paper, the authors do not ask the question of whether the new scaffolds improve the immunogenicity and therefore further experiments would be needed to prove comparable efficiency to induce potent B cell responses after immunization. Nevertheless, this paper stands on its own and could be published as it is if the paper is modified to address the reviewers' concerns, which predominantly center around the novelty of this paper compared with the authors' previous papers.\n\nEssential revisions:\n\n1) In this study the authors used tetrahedral, octahedral and icosahedral nanoparticles to display viral glycoproteins. EM and antibody binding experiments confirmed that the designed nanoparticles displayed intact \"native like\" HIV1 Env, Influenza hemagglutinin and perfusion RSV F trimers. It is unclear what the novelty is beyond decoration of nanoparticles with trimers. Nanoparticles of these symmetries were already reported by the PI previously. The methodology is not new. Decoration of said nanoparticles was also reported. Now they are decorating with viral trimers but they are not showing activity (beyond ELISA and SPR) and the decoration is suboptimal. The authors should clarify what is new in this paper.\n\n2) Related concerns: Design of assemblies like these was already described; the attached antigens are not particularly rigid indicated by resolution; the Discussion section says they stabilized their fused antigens, but the data do not support this statement and there is no demonstration of biological activity. In particular, this statement: \"This study demonstrates, both at the oligomer and nanoparticle design stages, the capability of generating protein based materials across a range of controllable sizes and topologies for targeted biological applications\" is not new to this paper.\n\n3) SPR experiments showed antibody accessibility on the tetrahedral scaffold was higher than for icosahedral scaffold, but the mAbs were immobilized. Would this still hold in solution?\n\n4) Many of the EM micrographs are low quality \u2013 not many particles; particles broken; hardly any discernible shapes and reconstructions are noisy. CryoEM maps are low resolution even for nanoparticles alone. Assembles fusion even lower resolution and lots of density that was not interpreted\n\n5) CryoEM of O43_dn18 1336 micrographs reported 103,356 particles, but the final reconstruction was out of 5050. So what are we looking at? How representative is this? Other reconstructions are 50k/140k and 30k/150k particles. Also, the FSC of T33_dn10 looks weird.\n\n6) Reference models imposed appropriate symmetry, so the authors are selecting for the symmetry that matches. What % was that out of the particles that were picked?\n\n7) The X-ray data were phased was phased by MR using the computational design as a search model, which could create bias.\n\n8) What's a heavy atom RMSD? All atom? Subsection \u201cStructural characterization of designed trimers\u201d.\n\n9) Why is in vivo versus in vitro assembly important?\n\n10) Why are cysteines removed?\n",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "58da7c15-f3d2-42bf-8f7a-87be84e2aac2",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C1",
+      "claim": "Multivalent presentation of viral glycoproteins can substantially increase the elicitation of antigen-specific antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivalent presentation of viral glycoproteins can substantially increase the elicitation of antigen-specific antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract supported by the broader scientific literature on multivalent antigen presentation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "895c2072-86e9-42cf-a469-7b049c99a249",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C2",
+      "claim": "Self-assembling protein nanoparticles were designed with geometries tailored to present the ectodomains of influenza, HIV, and RSV viral glycoprotein trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We first de novo designed trimers tailored for antigen fusion, featuring N-terminal helices positioned to match the C termini of the viral glycoproteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational design and experimental validation of nanoparticles for these three viral antigens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "2f401f3f-8829-4048-bd0b-9f5938df7f34",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C3",
+      "claim": "Trimers were designed featuring N-terminal helices positioned to match the C termini of viral glycoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We first de novo designed trimers tailored for antigen fusion, featuring N-terminal helices positioned to match the C termini of the viral glycoproteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This design strategy is explicitly stated and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "31fafe56-413a-47b9-adb7-913b687a89c5",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C4",
+      "claim": "Trimers that experimentally adopted their designed configurations were incorporated as components of tetrahedral, octahedral, and icosahedral nanoparticles.",
+      "claim_type": "EXPLICIT",
+      "source": "Trimers that experimentally adopted their designed configurations were incorporated as components of tetrahedral, octahedral, and icosahedral nanoparticles, which were characterized by cryo-electron microscopy and assessed for their ability to present viral glycoproteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental characterization data including cryo-EM structures for nanoparticles with these symmetries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "881f6fa3-729e-4e36-92b4-d9e714eb3a56",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C5",
+      "claim": "The designed nanoparticles presented antigenically intact prefusion HIV-1 Env, influenza hemagglutinin, and RSV F trimers in the predicted geometries.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron microscopy and antibody binding experiments demonstrated that the designed nanoparticles presented antigenically intact prefusion HIV-1 Env, influenza hemagglutinin, and RSV F trimers in the predicted geometries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EM data in Figures 5 and antibody binding data in Figure 5 supplements and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "06fb7328-f18e-4393-a89a-423205fd3a6d",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C6",
+      "claim": "Multivalent antigen presentation increases cross-linking of antigen-specific B cell receptors at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been attributed to increased cross-linking of antigen-specific B cell receptors at the cell surface and modulation of immunogen trafficking to and within lymph nodes (Irvine et al., 2013; Tokatlian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "d400706d-702e-4e9b-8a78-c634251099f6",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C7",
+      "claim": "Multivalent antigen presentation modulates immunogen trafficking to and within lymph nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been attributed to increased cross-linking of antigen-specific B cell receptors at the cell surface and modulation of immunogen trafficking to and within lymph nodes (Irvine et al., 2013; Tokatlian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "7383f0df-842a-4ca6-8566-f6fedea5d485",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C8",
+      "claim": "Complex oligomeric or engineered antigens are difficult to stably incorporate into non-protein-based nanomaterials.",
+      "claim_type": "EXPLICIT",
+      "source": "An ongoing challenge has been to develop multimerization scaffolds capable of presenting complex oligomeric or engineered antigens (Sanders and Moore, 2017; Jardine et al., 2013; McLellan et al., 2013a), as these can be difficult to stably incorporate into non-protein-based nanomaterials (e.g. liposomes, polymers, transition metals and their oxides).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known challenge in the field with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "1f9faf6c-7510-4050-ba6f-0f85fd7d6f0b",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C9",
+      "claim": "Self-assembling ferritin nanoparticles have been used to present complex oligomeric antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Several reports have utilized non-viral, naturally occurring protein scaffolds, such as self-assembling ferritin (Kanekiyo et al., 2013; Sliepen et al., 2015; Darricarr\u00e8re et al., 2018), lumazine synthase (Sanders and Moore, 2017; Abbott et al., 2018), or encapsulin (Kanekiyo et al., 2015) nanoparticles, to present a variety of complex oligomeric or engineered antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "45b2cf67-6496-4e37-90ab-306f9e78c9eb",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C10",
+      "claim": "Self-assembling proteins as scaffolds for antigen presentation provide enhanced immunogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have illustrated the advantages of using self-assembling proteins as scaffolds for antigen presentation (L\u00f3pez-Sagaseta et al., 2016; Kanekiyo et al., 2019), including enhanced immunogenicity and seamless integration of antigen and scaffold through genetic fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This advantage is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "8e6e0321-23f1-4f5d-93ad-e5b77a563c67",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C11",
+      "claim": "Computationally designed protein nanoparticles confer high stability, robust assembly, ease of production and purification, and increased potency upon immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, computationally designed one- and two-component protein nanoparticles (Hsia et al., 2016; King et al., 2014; Bale et al., 2016) have been used to present complex oligomeric antigens, conferring additional advantages such as high stability, robust assembly, ease of production and purification, and increased potency upon immunization (Marcandalli et al., 2019; Brouwer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These advantages are cited from published work on designed nanoparticles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "a7bd09cd-c5f6-4b68-b4a5-830ef2c61ed4",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C12",
+      "claim": "A close geometric match between the C termini of the antigen and the N termini of a designed nanoparticle component would enable multivalent presentation without structural distortion near the glycoprotein base.",
+      "claim_type": "EXPLICIT",
+      "source": "For homo-oligomeric class I viral fusion proteins, a large group that includes many important vaccine antigens (Harrison, 2015), a close geometric match between the C termini of the antigen and the N termini of a designed nanoparticle component would enable multivalent presentation without structural distortion near the glycoprotein base, and potentially allow for better retention of antigenic epitopes relevant to protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design rationale stated in the introduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "571233e5-6bd0-4d13-ab00-a8a01019ef47",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C13",
+      "claim": "Monomeric repeat proteins were docked into C3-symmetric trimers using the RPX docking method.",
+      "claim_type": "EXPLICIT",
+      "source": "They were docked into C3-symmetric trimers using our RPX docking method, which identifies configurations likely to accommodate favorable side chain packing at the de novo designed interface (Fallas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This computational method is described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "7fcf5678-86c6-4076-bd61-066fddf2848c",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C14",
+      "claim": "Twenty-three trimer designs were selected for experimental characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "Geometrically compatible docks (non-clashing termini separation distances of 15 \u00c5 or less) were subjected to full Rosetta C3-symmetric interface design and filtering (see Materials and Methods), and twenty-three designs were selected for experimental characterization (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "0e5205a1-cbe5-4537-bb4b-89340a4815db",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C15",
+      "claim": "Twenty-two of the designed trimers expressed in the soluble fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-two designs were found to express in the soluble fraction, and nine formed the intended trimeric oligomerization state as assessed by SEC in tandem with multi-angle light scattering (SEC-MALS; examples in Figure 2 top panel, second row; SEC-MALS chromatograms for the remaining designs are in Figure 2\u2014figure supplement 2 and data in Figure 2\u2014figure supplement 1\u2014source data 1; SEC chromatograms for remaining designs with off-target retention volumes are in Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental result is reported with supporting data in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "0b99dc63-f530-46a5-9cf5-60d6c7ca1803",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C16",
+      "claim": "Nine designed trimers formed the intended trimeric oligomerization state as assessed by SEC-MALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-two designs were found to express in the soluble fraction, and nine formed the intended trimeric oligomerization state as assessed by SEC in tandem with multi-angle light scattering (SEC-MALS; examples in Figure 2 top panel, second row; SEC-MALS chromatograms for the remaining designs are in Figure 2\u2014figure supplement 2 and data in Figure 2\u2014figure supplement 1\u2014source data 1; SEC chromatograms for remaining designs with off-target retention volumes are in Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental result is reported with supporting data in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "980f0d81-c60d-4c5f-bca1-c6a12a1bcb1d",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C17",
+      "claim": "Design 1na0C3_2 exhibited a backbone r.m.s.d. between the design model and crystal structure of 1.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures were determined at resolutions of 2.6 and 2.3 \u00c5, revealing a backbone root mean square deviation (r.m.s.d.) between the design model and structure of 1.4 and 0.8 \u00c5, respectively (Figure 2\u2014figure supplement 3, and Figure 2\u2014figure supplement 3\u2014source data 1, crystallization conditions, structure metrics, and structure-to-model comparisons are described in Materials and Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural validation is reported with crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "64ebbf16-54a0-412b-a639-3cd9ea0c9441",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C18",
+      "claim": "Design 3ltjC3_1v2 exhibited a backbone r.m.s.d. between the design model and crystal structure of 0.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures were determined at resolutions of 2.6 and 2.3 \u00c5, revealing a backbone root mean square deviation (r.m.s.d.) between the design model and structure of 1.4 and 0.8 \u00c5, respectively (Figure 2\u2014figure supplement 3, and Figure 2\u2014figure supplement 3\u2014source data 1, crystallization conditions, structure metrics, and structure-to-model comparisons are described in Materials and Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural validation is reported with crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "14787228-0894-482f-8b62-54e51a66ecf8",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C19",
+      "claim": "The crystal structures confirmed that the designed proteins adopt the intended trimeric configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures confirmed in both cases that the designed proteins adopt the intended trimeric configurations, and that most of the atomic details at the de novo designed interfaces are recapitulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "015ece6b-8c56-41d8-9aa1-e14c730360d5",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C20",
+      "claim": "Fifty-three nanoparticle designs across all three targeted symmetries were selected for experimental characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifty-three nanoparticle designs across all three targeted symmetries that exhibited the best interface metrics were selected for experimental characterization (see Materials and Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the nanoparticle design process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "7be118b6-b4f4-481d-a1cb-df78e644daa0",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C21",
+      "claim": "Twenty-four of the nanoparticle designs showed pairs of proteins at the expected molecular weights co-eluting by SDS-PAGE.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairs of proteins at the expected molecular weights were found to co-elute by SDS-PAGE for twenty-four of the designs, consistent with spontaneous assembly of the nanoparticles followed by pulldown His6-tagged component (featured co-eluting designs are presented in Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is reported with supporting gel data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "dae09d51-2b43-4e42-9bc6-5394462d2414",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C22",
+      "claim": "Five nanoparticle designs ran as monodisperse particles of the predicted molecular mass by SEC-MALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Five designs comprising a panel of unique geometric configurations, T33_dn2, T33_dn5, T33_dn10, O43_dn18, and I53_dn5, ran as monodisperse particles of the predicted molecular mass by SEC-MALS and were further investigated by SAXS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental result is reported with supporting data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "128788ff-ca22-493b-b14f-e3af0cc9f659",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C23",
+      "claim": "The experimental solution scattering curves closely matched the scattering curves computed from the design models for T33_dn2, T33_dn5, T33_dn10, O43_dn18, and I53_dn5.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental solution scattering curves closely matched the scattering curves computed from the design models (Schneidman-Duhovny et al., 2010) for all five designs (Figure 2, bottom panel and Figure 2\u2014figure supplement 6; metrics in Table 1 and Figure 2\u2014source data 1, bottom five designs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This SAXS validation is shown in Figure 2 with quantitative metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "171db3ed-2084-4469-89b8-29d8c6a2ac4d",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C24",
+      "claim": "The two components of I53_dn5 can be separately produced and assembled in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its high valency and production yield, we selected the I53_dn5 nanoparticle to investigate the capacity of its two components to be separately produced and assembled in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This capability is demonstrated experimentally in Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "3de019d9-a4f0-4c85-a6a1-d4439442e92d",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C25",
+      "claim": "Nanoparticle assembly of I53_dn5 appeared to be complete within minutes after equimolar mixing of components.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanoparticle assembly appeared to be complete within minutes after equimolar mixing (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is reported with supporting SEC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "57364303-ab6d-41c9-a3ee-9b4a97b2e550",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C26",
+      "claim": "NS-EM analysis confirmed high sample homogeneity for all five nanoparticle designs.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the NS-EM data confirmed high sample homogeneity for all five nanoparticle designs as evident from the micrographs and 2D class-averages (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the NS-EM images and 2D class averages in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "ac41b788-26b1-4c4f-b4e3-4f3ecb825d36",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C27",
+      "claim": "All five nanoparticles assemble as predicted by the design models, at least to the resolution limits of NS-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "While some free nanoparticle components were detected in the T33_dn5 sample, suggesting a certain propensity towards disassembly, analysis of the reconstructed 3D maps revealed that all five nanoparticles assemble as predicted by the design models, at least to the resolution limits of NS-EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from NS-EM 3D reconstructions shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "8c1ff298-fe6a-489b-94dc-054493039414",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C28",
+      "claim": "The final resolutions of the cryo-EM reconstructed maps were 3.9, 4.5, and 5.3 \u00c5 for T33_dn10, O43_dn18, and I53_dn5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The final resolutions of the reconstructed maps for the T33_dn10, O43_dn18, and I53_dn5 nanoparticles were 3.9, 4.5, and 5.3 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These resolution values are reported from cryo-EM data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "466b609a-5317-4c5d-a33f-a40f51cb8956",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C29",
+      "claim": "Some structural heterogeneity was observed in the cryo-EM data, particularly in the case of I53_dn5.",
+      "claim_type": "EXPLICIT",
+      "source": "Some structural heterogeneity was observed in the cryo-EM data, particularly in the case of I53_dn5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is noted from the cryo-EM data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "88310979-bfda-48a2-adb3-21574b710ce5",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C30",
+      "claim": "Backbone r.m.s.d. values for the asymmetric unit were 0.65, 0.98, and 1.3 \u00c5 for T33_dn10, O43_dn18, and I53_dn5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Backbone r.m.s.d. values estimated for the asymmetric unit (consisting of a single subunit of component A and component B) were 0.65, 0.98, and 1.3 \u00c5 for T33_dn10, O43_dn18, and I53_dn5, respectively (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These values are calculated from the refined cryo-EM structures compared to design models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "0103af63-0c05-4453-9181-86f0cfa5573d",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C31",
+      "claim": "BG505 SOSIP trimers are clearly discernible in 2D class-averages and reconstructed 3D maps of antigen-displaying nanoparticles.",
+      "claim_type": "EXPLICIT",
+      "source": "BG505 SOSIP trimers are clearly discernible in 2D class-averages and reconstructed 3D maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the NS-EM data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "cbb06ed8-1ae6-4282-98b3-a2f113971bae",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C32",
+      "claim": "The trimers appear less well-resolved than the corresponding nanoparticle core in the three reconstructions, likely due to the short flexible linkers between the BG505 SOSIP trimer and the fusion component.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the trimers appear less well-resolved than the corresponding nanoparticle core in the three reconstructions, likely due to the short flexible linkers between the BG505 SOSIP trimer and the fusion component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is made from the NS-EM reconstructions with a proposed explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "e00f457f-7d7e-47ec-86ad-8379fdaa8ad0",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C33",
+      "claim": "Fusion of the BG505 SOSIP trimer did not induce any major structural changes to the underlying nanoparticle scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "The self-assembling cores of the antigen-fused T33_dn2, T33_dn10, and I53_dn5 nanoparticles were very similar to the NS-EM maps of the unmodified nanoparticles (at least to the resolution limits of NS-EM), demonstrating that fusion of the BG505 SOSIP trimer did not induce any major structural changes to the underlying nanoparticle scaffolds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparison of NS-EM maps with and without antigen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "9ade90af-c452-4977-8102-4b00f2e5eb43",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C34",
+      "claim": "Free components were detected in raw EM micrographs of BG505 SOSIP\u2013I53_dn5, indicating some degree of disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Free components were detected in raw EM micrographs of BG505 SOSIP\u2013I53_dn5, indicating some degree of disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is made from the NS-EM micrographs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "7b2923c4-5ff0-451e-b23e-bc09a1c8636b",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C35",
+      "claim": "BG505 SOSIP\u2013I53_dn5 demonstrated sensitivity to various physical and chemical stressors.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is supported by stability data reported in a parallel study, where BG505 SOSIP\u2013I53_dn5 demonstrated sensitivity to various physical and chemical stressors (Antanasijevic et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a parallel study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "cceb368f-355e-41b2-a99e-3f46235dfe03",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C36",
+      "claim": "DS-Cav1\u2013I53_dn5 nanoparticle binds the RSV F-specific mAbs D25, Motavizumab, and AM14 similarly to soluble DS-Cav1 trimer with foldon.",
+      "claim_type": "EXPLICIT",
+      "source": "The DS-Cav1\u2013I53_dn5 nanoparticle was found by an enzyme-linked immunosorbent assay (ELISA) to bind the RSV F-specific mAbs D25 (McLellan et al., 2013b), Motavizumab (Cingoz, 2009), and AM14 (Gilman et al., 2015) similarly to soluble DS-Cav1 trimer with foldon (McLellan et al., 2013a), indicating that the F protein is presented in the desired prefusion conformation on the nanoparticle (Figure 4\u2014figure supplement 1, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ELISA data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "2daec57b-1091-40c3-b0b0-bd53551e4076",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C37",
+      "claim": "The F protein is presented in the desired prefusion conformation on the DS-Cav1\u2013I53_dn5 nanoparticle.",
+      "claim_type": "EXPLICIT",
+      "source": "The DS-Cav1\u2013I53_dn5 nanoparticle was found by an enzyme-linked immunosorbent assay (ELISA) to bind the RSV F-specific mAbs D25 (McLellan et al., 2013b), Motavizumab (Cingoz, 2009), and AM14 (Gilman et al., 2015) similarly to soluble DS-Cav1 trimer with foldon (McLellan et al., 2013a), indicating that the F protein is presented in the desired prefusion conformation on the nanoparticle (Figure 4\u2014figure supplement 1, top).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the antibody binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "876c25d6-567a-4ca4-9fe0-211b6d568058",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C38",
+      "claim": "Both the HA\u2013I53_dn5 nanoparticle and the HA\u2013I53_dn5B trimer presented the head and stem regions with wild-type-like antigenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Biolayer interferometry binding experiments with anti-HA head - and stem-specific mAbs (Krause et al., 2011; Ekiert et al., 2009) analogously showed that both the HA\u2013I53_dn5 nanoparticle and the HA\u2013I53_dn5B trimer presented the head and stem regions with wild-type-like antigenicity (Figure 5\u2014figure supplement 2, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by biolayer interferometry data in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "3a0cab31-f9b9-4c28-871f-db6e87d80580",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C39",
+      "claim": "Antigen crowding can modulate the accessibility of specific epitopes on HIV-1 Env trimers presented on icosahedral nanoparticle scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work involving icosahedral nanoparticle scaffolds presenting HIV-1 Env trimers has shown that antigen crowding can modulate the accessibility of specific epitopes and thereby influence the humoral immune response (Brouwer et al., 2019; Brinkkemper and Sliepen, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "bafae069-8407-4b85-b122-2d59e98bbac7",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C40",
+      "claim": "BG505 SOSIP\u2013T33_dn2 presents four copies of the BG505 SOSIP trimer with much greater spacing than BG505 SOSIP\u2013I53-50 with twenty copies.",
+      "claim_type": "EXPLICIT",
+      "source": "BG505 SOSIP\u2013T33_dn2 presents four copies of the BG505 SOSIP trimer with much greater spacing than BG505 SOSIP\u2013I53-50 with twenty copies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the epitope accessibility experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "3c300869-82ef-4cda-9341-6fc938378bdf",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C41",
+      "claim": "The difference in spacing between BG505 trimers on T33_dn2 and I53-50 derives from the angles between neighboring three-fold rotational symmetry axes in icosahedral and tetrahedral point group symmetries (41.8\u00b0 and 109.5\u00b0, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "This difference derives from the angles between neighboring three-fold rotational symmetry axes\u2014where the displayed BG505 trimers are located on the nanoparticle surfaces\u2014in icosahedral and tetrahedral point group symmetries (41.8\u00b0 and 109.5\u00b0, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a geometric calculation based on the symmetry properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "35ca0465-18d5-4207-8a40-2bcadacea3d2",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C42",
+      "claim": "For mAbs that target apical, V3-base, and CD4-binding site epitopes (PGT145, PGT122, 2G12, and VRC01), the number of molecules of trimer or nanoparticle bound was relatively similar (ratio ~ 1).",
+      "claim_type": "EXPLICIT",
+      "source": "For mAbs that target apical, V3-base, and CD4-binding site epitopes (PGT145, PGT122, 2G12, and VRC01) (Gilman et al., 2015; Walker et al., 2011; Trkola et al., 1996; Wu et al., 2010), the number of molecules of trimer or nanoparticle bound was relatively similar (ratio ~ 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This result is from SPR experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "44beccfe-0318-4476-976d-7409d08a9998",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C43",
+      "claim": "For mAbs that target more base-proximate epitopes in the gp120-gp41 interface (ACS202, VRC34, and PGT151), an inter-protomeric gp41 epitope (3BC315), and the main autologous neutralizing antibody epitope in the glycan hole centered on residues 241 and 289 (11B), the accessibility was reduced in the nanoparticle format.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for mAbs that target more base-proximate epitopes in the gp120-gp41 interface (ACS202, VRC34, and PGT151) (van Gils et al., 2017; Kong et al., 2016; Falkowska et al., 2014), an inter-protomeric gp41 epitope (3BC315) (Klein et al., 2012), and the main autologous neutralizing antibody epitope in the glycan hole centered on residues 241 and 289 (11B) (McCoy et al., 2016), the accessibility was reduced in the nanoparticle format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This result is from SPR experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "5a5bf262-4af1-4cc9-800d-9fd793d6bde3",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C44",
+      "claim": "Binding to a mAb directed to the trimer base (12N) was not observed for nanoparticle BG505 SOSIP\u2013T33_dn2.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding to a mAb directed to the trimer base (12N) (McCoy et al., 2016) was not observed for nanoparticle BG505 SOSIP\u2013T33_dn2 (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is from SPR experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "0eaafcd4-91ff-437f-99b0-0d2e86021b57",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C45",
+      "claim": "For mAbs that target the more base-proximate epitopes in the gp120-gp41 interface (VRC34 and PGT151), there was nearly three-fold higher epitope accessibility on T33_dn2 compared to I53-50.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for mAbs that target the more base-proximate epitopes in the gp120-gp41 interface (VRC34 and PGT151), there was nearly three-fold higher epitope accessibility on T33_dn2 compared to I53-50 (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This result is from comparative SPR experiments shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "8e939fa3-aeae-45a7-a5fd-ffae18a6c56c",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C46",
+      "claim": "Antigen epitope accessibility can be finely tuned through presentation geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that antigen epitope accessibility can be finely tuned through presentation geometry, which could be used as a strategy to target the immune response against specific epitopes of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the epitope accessibility experiments comparing different nanoparticle geometries.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "85f765f7-1c11-46c6-aeeb-82c38ec1b98c",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C47",
+      "claim": "De novo designed protein nanoparticles provide a modular way to present antigens to the immune system in defined geometries and of known composition.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo designed protein nanoparticles provide a modular way to present antigens to the immune system in defined geometries and of known composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "d26dd960-247a-4465-a143-cdb13b8bb2f2",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C48",
+      "claim": "Multivalent antigen presentation can enhance antigen-specific antibody titers by orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivalent antigen presentation can enhance antigen-specific antibody titers by orders of magnitude (Bennett et al., 2015; Snapper, 2018), but presentation of complex antigens is challenging due to the required geometric compatibility between antigen and scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "dffec2e1-c955-4c90-a73e-227d456ca137",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C49",
+      "claim": "The effects of nanoparticle presentation on HIV-1 Env immunogenicity are often modest compared to those observed for other antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous studies of HIV-1 Env trimers presented on nanoparticle scaffolds have demonstrated enhanced immunogenicity (Escolano et al., 2019), the effects are often modest compared to those observed for other antigens (Bennett et al., 2015; Snapper, 2018; Marcandalli et al., 2019; Brinkkemper and Sliepen, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "6d55576f-cdc5-4cb0-a66d-391fb93a5ec5",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C50",
+      "claim": "Limitations associated with epitope inaccessibility caused by crowding of the trimers on nanoparticle surfaces have been identified for HIV-1 Env.",
+      "claim_type": "EXPLICIT",
+      "source": "While there may exist intrinsic peculiarities to HIV-1 Env that limit increases in antibody responses upon multivalent presentation (Klasse et al., 2012; Ringe et al., 2019), limitations associated with epitope inaccessibility caused by crowding of the trimers on nanoparticle surfaces have also been identified (Sanders and Moore, 2017; Brouwer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "6d18578e-3303-401d-93a8-e9781d749ed9",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C51",
+      "claim": "Epitopes proximate to the BG505 SOSIP base were markedly more accessible to immobilized mAbs on BG505 SOSIP\u2013T33_dn2 than BG505 SOSIP\u2013I53-50.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the SPR experiments presented here demonstrate that epitopes proximate to the BG505 SOSIP base were markedly more accessible to immobilized mAbs on BG505 SOSIP\u2013T33_dn2 than BG505 SOSIP\u2013I53-50, directly implicating steric crowding on the nanoparticle surface as a determinant of antigenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the SPR data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "ddb96b03-8542-47aa-9476-bf144dc33133",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C52",
+      "claim": "Steric crowding on the nanoparticle surface is a determinant of antigenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the SPR experiments presented here demonstrate that epitopes proximate to the BG505 SOSIP base were markedly more accessible to immobilized mAbs on BG505 SOSIP\u2013T33_dn2 than BG505 SOSIP\u2013I53-50, directly implicating steric crowding on the nanoparticle surface as a determinant of antigenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the comparative epitope accessibility data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "4f790207-b117-46aa-945f-1b749d715888",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C53",
+      "claim": "The availability of multiple antigen-displaying nanoparticles makes possible the usage of different scaffolds during prime and boost immunizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the availability of multiple antigen-displaying nanoparticles makes possible the usage of different scaffolds during prime and boost immunizations, which could limit immune responses directed toward the scaffolds while boosting antigen-specific antibody responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application discussed in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "9ce51653-27cc-48d1-85f7-ce3df01e6457",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C54",
+      "claim": "Using different scaffolds during prime and boost immunizations could limit immune responses directed toward the scaffolds while boosting antigen-specific antibody responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the availability of multiple antigen-displaying nanoparticles makes possible the usage of different scaffolds during prime and boost immunizations, which could limit immune responses directed toward the scaffolds while boosting antigen-specific antibody responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism discussed in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "4e7653f0-4ed2-427d-b72e-a1a77e208d90",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C55",
+      "claim": "The ability to tune antigen presentation geometry through de novo nanoparticle design provides a route to investigate the effects of this parameter on B cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the ability to tune antigen presentation geometry through de novo nanoparticle design provides a route to investigate the effects of this parameter on B cell activation, as well as the potency and breadth of the ensuing humoral response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application discussed in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "74b46f69-3b97-4e3a-97c3-0c1668507b88",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C56",
+      "claim": "This design approach could help overcome the intrinsically low affinity of germline BCRs for viral glycoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This design approach could help overcome the intrinsically low affinity of germline BCRs for viral glycoproteins, and enable development of broadly neutralizing antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed benefit discussed in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "57a0f0fb-25d8-4c73-b60f-730b503553bf",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C57",
+      "claim": "The design approach yields nanoparticles tailored to present 4, 8, or 20 copies of the viral glycoproteins in defined geometries.",
+      "claim_type": "EXPLICIT",
+      "source": "This design approach yielded nanoparticles tailored to present 4, 8, or 20 copies of the viral glycoproteins in defined geometries (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "8bf1e69a-30ee-4124-a527-c7fc8abc4527",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C58",
+      "claim": "The RPX method identifies configurations likely to accommodate favorable side chain packing at the de novo designed interface.",
+      "claim_type": "EXPLICIT",
+      "source": "They were docked into C3-symmetric trimers using our RPX docking method, which identifies configurations likely to accommodate favorable side chain packing at the de novo designed interface (Fallas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational method with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "beb2753a-b9bc-4323-9eb5-82b2fae96961",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C59",
+      "claim": "Geometrically compatible docks had non-clashing termini separation distances of 15 \u00c5 or less.",
+      "claim_type": "EXPLICIT",
+      "source": "Geometrically compatible docks (non-clashing termini separation distances of 15 \u00c5 or less) were subjected to full Rosetta C3-symmetric interface design and filtering (see Materials and Methods), and twenty-three designs were selected for experimental characterization (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design criterion stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "4283aaf9-f30b-4717-9745-b72692603422",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C60",
+      "claim": "The designed trimers were derived from three distinct designed helical repeat proteins from TPR, HEAT, or de novo topological families.",
+      "claim_type": "EXPLICIT",
+      "source": "These four trimers were derived from three distinct designed helical repeat proteins from TPR, HEAT, or de novo topological families (1na0, 3ltj, and HR04, see Materials and Methods) (Brunette et al., 2015; Urvoas et al., 2010; Main et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations to the source proteins.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "3191db57-5ed5-4a10-bfb2-0566c676d43b",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C61",
+      "claim": "Crystals were obtained for the two designs 1na0C3_2 and 3ltjC3_1v2.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals were obtained for the two designs 1na0C3_2 and 3ltjC3_1v2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental result is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "6d64f0da-1217-43b1-be9e-357896c3fbce",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C62",
+      "claim": "Structures for 1na0C3_2 and 3ltjC3_1v2 were determined at resolutions of 2.6 and 2.3 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures were determined at resolutions of 2.6 and 2.3 \u00c5, revealing a backbone root mean square deviation (r.m.s.d.) between the design model and structure of 1.4 and 0.8 \u00c5, respectively (Figure 2\u2014figure supplement 3, and Figure 2\u2014figure supplement 3\u2014source data 1, crystallization conditions, structure metrics, and structure-to-model comparisons are described in Materials and Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These resolution values are reported from X-ray crystallography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "8b5cd340-d475-499b-b0c0-18adc843c14b",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C63",
+      "claim": "Most of the atomic details at the de novo designed interfaces are recapitulated in the crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures confirmed in both cases that the designed proteins adopt the intended trimeric configurations, and that most of the atomic details at the de novo designed interfaces are recapitulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparison of crystal structures to design models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "c0f53204-6bb9-4d0a-b683-f6757e37750e",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C64",
+      "claim": "Three naturally occurring homopentamers were included in the docking calculations to increase the probability of generating icosahedra.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase the probability of generating icosahedra which confer the highest valency among the targeted symmetries, three naturally occurring homopentamers were also included in the docking calculations (PDB IDs 2JFB, 2OBX, and 2B98).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This design strategy is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "aba7085f-8a98-4101-86d9-5efd90cedfd4",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C65",
+      "claim": "Nineteen nanoparticle designs did not form assemblies of the expected size or the resulting assemblies were heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "SEC chromatograms revealed that nineteen designs did not form assemblies of the expected size or that the resulting assemblies were heterogeneous (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is reported with supporting SEC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "f1295b1b-6373-49b2-954c-dadc3ae9e3c4",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C66",
+      "claim": "I53_dn5 was selected for in vitro assembly investigation due to its high valency and production yield.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its high valency and production yield, we selected the I53_dn5 nanoparticle to investigate the capacity of its two components to be separately produced and assembled in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This selection rationale is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "f064b2b8-81b6-47f5-b24a-9e040f4f4566",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C67",
+      "claim": "In vitro assembly confers more control over nanoparticle assembly and composition.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro assembly also confers more control over nanoparticle assembly and composition, for example by assembling with a mixture of components fused to different antigens (Boyoglu-Barnum et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This advantage is stated with a citation to supporting work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "e452e9a7-fad2-43d4-adb8-9e0603d9e8d9",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C68",
+      "claim": "2,000\u20135000 particles were manually picked from the electron micrographs acquired for each designed nanoparticle.",
+      "claim_type": "EXPLICIT",
+      "source": "2,000\u20135000 particles were manually picked from the electron micrographs acquired for each designed nanoparticle and classified in 2D using the Iterative MSA/MRA algorithm (see Materials and Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the NS-EM data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "e49aa2f2-8237-4939-9a3f-667c3b3cab4f",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C69",
+      "claim": "Some free nanoparticle components were detected in the T33_dn5 sample, suggesting a certain propensity towards disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "While some free nanoparticle components were detected in the T33_dn5 sample, suggesting a certain propensity towards disassembly, analysis of the reconstructed 3D maps revealed that all five nanoparticles assemble as predicted by the design models, at least to the resolution limits of NS-EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is made from the NS-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "6a5a034c-8fe1-4acd-a6fb-1e44548e19a9",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C70",
+      "claim": "There is less evidence of flexibility in T33_dn10 and O43_dn18 compared to I53_dn5, in agreement with the higher final map resolution for these nanoparticles.",
+      "claim_type": "EXPLICIT",
+      "source": "There is less evidence of flexibility in T33_dn10 and O43_dn18, in agreement with the higher final map resolution for these nanoparticles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is made from the cryo-EM data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "c8e97d8b-6009-41b3-b7fa-7a18b3329272",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C71",
+      "claim": "Nanoparticle design models were relaxed into the corresponding EM maps by applying multiple rounds of Rosetta relaxed refinement and manual refinement in Coot.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanoparticle design models were relaxed into the corresponding EM maps by applying multiple rounds of Rosetta relaxed refinement (Wang et al., 2016) and manual refinement in Coot (Emsley and Crispin, 2018) to generate the final structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structure refinement method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "31092eaf-00b0-475d-a3a0-d46d3f0589b0",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C72",
+      "claim": "The refined structures show excellent agreement with the corresponding Rosetta design models.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the refined structures show excellent agreement with the corresponding Rosetta design models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparison of refined cryo-EM structures to design models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "a72ab74b-b252-4076-b45e-c45002f1589c",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C73",
+      "claim": "Approximately 500\u20131000 particles were manually picked from the micrographs for BG505 SOSIP-fused nanoparticle samples.",
+      "claim_type": "EXPLICIT",
+      "source": "For BG505 SOSIP-fused nanoparticle samples (v5.2 (7S)), approximately 500\u20131000 particles were manually picked from the micrographs and 2D-classified using the Iterative MSA/MRA algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the NS-EM data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "de2d1e4e-b314-4620-b092-de5c8e01be19",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C74",
+      "claim": "The self-assembling cores of the antigen-fused nanoparticles were very similar to the NS-EM maps of the unmodified nanoparticles.",
+      "claim_type": "EXPLICIT",
+      "source": "The self-assembling cores of the antigen-fused T33_dn2, T33_dn10, and I53_dn5 nanoparticles were very similar to the NS-EM maps of the unmodified nanoparticles (at least to the resolution limits of NS-EM), demonstrating that fusion of the BG505 SOSIP trimer did not induce any major structural changes to the underlying nanoparticle scaffolds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is made from NS-EM reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "27fb5e87-aaf1-4e2a-9d78-a668bd61ef80",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C75",
+      "claim": "The GG linker connecting DS-Cav1 to I53_dn5 likely accounts for the observed flexibility and suboptimal definition of the glycoprotein trimer in two-dimensional class averages.",
+      "claim_type": "EXPLICIT",
+      "source": "The GG linker connecting DS-Cav1 to I53_dn5 likely accounts for the observed flexibility and suboptimal definition of the glycoprotein trimer in two-dimensional class averages (Figure 5\u2014figure supplement 1, bottom right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the NS-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "96102603-b863-41fa-aa22-d98382f145c3",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C76",
+      "claim": "There was no engineered linker between the glycoprotein and fusion component in the case of HA\u2013I53_dn5.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no engineered linker between the glycoprotein and fusion component in the case of HA\u2013I53_dn5, and more clearly defined spike density was observed in the class averages (Figure 5\u2014figure supplement 2, bottom right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This design feature is stated with reference to the NS-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "edfabc69-00f1-4850-a80c-991a189294a5",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C77",
+      "claim": "More clearly defined spike density was observed in the class averages for HA\u2013I53_dn5 compared to DS-Cav1\u2013I53_dn5.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no engineered linker between the glycoprotein and fusion component in the case of HA\u2013I53_dn5, and more clearly defined spike density was observed in the class averages (Figure 5\u2014figure supplement 2, bottom right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is made from comparison of NS-EM class averages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "27e26f80-5cd7-4416-96d3-f0ec8887502a",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C78",
+      "claim": "D25 is a prefusion specific mAb that binds site \u00d8 of RSV F.",
+      "claim_type": "EXPLICIT",
+      "source": "D25 is a prefusion specific mAb that binds site \u00d8 (McLellan et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This antibody specificity is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "bffdc75e-8ef9-4657-be20-1b0885dbd51c",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C79",
+      "claim": "Motavizumab binds site II of the pre and post-fusion conformations of RSV F.",
+      "claim_type": "EXPLICIT",
+      "source": "Motavizumab binds site II of the pre and post-fusion conformations (Cingoz, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This antibody specificity is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "eaa871e4-a7b1-42fe-9618-367726fba13b",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C80",
+      "claim": "AM14 is trimer-specific binding across protomers of the prefusion conformation of RSV F.",
+      "claim_type": "EXPLICIT",
+      "source": "AM14 is trimer-specific binding across protomers of the prefusion conformation (Gilman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This antibody specificity is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "de711a06-bb07-4e6b-be54-0e8fcba223d5",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C81",
+      "claim": "Both the HA\u2013I53_dn5 nanoparticle and the HA\u2013I53_dn5B trimer presented the head and stem regions with wild-type-like antigenicity as shown by biolayer interferometry binding experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Biolayer interferometry binding experiments with anti-HA head - and stem-specific mAbs (Krause et al., 2011; Ekiert et al., 2009) analogously showed that both the HA\u2013I53_dn5 nanoparticle and the HA\u2013I53_dn5B trimer presented the head and stem regions with wild-type-like antigenicity (Figure 5\u2014figure supplement 2, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by biolayer interferometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "4b125f5b-3e85-44d8-9b96-be594460f73a",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C82",
+      "claim": "BG505 SOSIP\u2013T33_dn2 was selected to compare against BG505 SOSIP\u2013I53-50 through surface plasmon resonance experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected the BG505 SOSIP\u2013T33_dn2 tetrahedral nanoparticle (assembled in vitro using BG505 SOSIP\u2013T33_dn2A and T33_dn2B) to compare against a previously published SOSIP-displaying icosahedral nanoparticle (BG505 SOSIP\u2013I53-50) (Brouwer et al., 2019) through surface plasmon resonance (SPR) experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental design is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "1ce46119-1671-4215-a5c9-b3811cce5b40",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C83",
+      "claim": "NS-EM class averages and a 3D reconstruction were generated for BG505 SOSIP\u2013T33_dn2A in complex with the VRC01 Fab, confirming the expected binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "To first validate mAb binding to BG505 SOSIP\u2013T33_dn2A, NS-EM class averages and a 3D reconstruction were generated in complex with the VRC01 Fab (Walker et al., 2011), confirming the expected binding mode (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validation is shown in NS-EM data in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "00924836-2424-4517-803b-e877d0838842",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C84",
+      "claim": "For mAbs that target the more base-proximate epitopes in the gp120-gp41 interface (VRC34 and PGT151), there was nearly three-fold higher epitope accessibility on T33_dn2 compared to I53-50.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for mAbs that target the more base-proximate epitopes in the gp120-gp41 interface (VRC34 and PGT151), there was nearly three-fold higher epitope accessibility on T33_dn2 compared to I53-50 (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This quantitative result is from SPR experiments shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "b35568c0-1c50-411b-b6ae-da2cd1904e1f",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C85",
+      "claim": "For a mAb that targets the gp41 inter-protomeric epitope (3BC315), no accessibility difference was observed between T33_dn2 and I53-50.",
+      "claim_type": "EXPLICIT",
+      "source": "Further down the trimer, no accessibility difference was again observed for a mAb that targets the gp41 inter-protomeric epitope (3BC315), which was relatively inaccessible on both nanoparticles, likely due to steric hindrance by neighboring trimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This result is from SPR experiments shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "dd0e7b19-444c-4dae-a633-f78618eef844",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C86",
+      "claim": "The 3BC315 epitope was relatively inaccessible on both T33_dn2 and I53-50 nanoparticles, likely due to steric hindrance by neighboring trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Further down the trimer, no accessibility difference was again observed for a mAb that targets the gp41 inter-protomeric epitope (3BC315), which was relatively inaccessible on both nanoparticles, likely due to steric hindrance by neighboring trimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is based on the SPR data and geometric considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "a9dcc25e-47d0-405c-ae3d-80c152ccaf80",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C87",
+      "claim": "The ability to predictively explore new structural space makes designed proteins attractive scaffolds for multivalent antigen presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to predictively explore new structural space makes designed proteins (Parmeggiani et al., 2015; Brunette et al., 2015) attractive scaffolds for multivalent antigen presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to designed protein work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "015c03ab-6fe3-453f-8d65-7088e97cbb2b",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C88",
+      "claim": "In previous work with computationally designed nanoparticle immunogens, the nanoparticles were generated from naturally occurring oligomeric proteins without initial consideration of geometric compatibility for antigen presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous work with computationally designed nanoparticle immunogens (Marcandalli et al., 2019; Brouwer et al., 2019), the nanoparticles were generated from naturally occurring oligomeric proteins without initial consideration of geometric compatibility for antigen presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of previous work with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "b0003a23-9ae4-4402-814f-5a7843fc0e1e",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C90",
+      "claim": "The work demonstrates that antigen-displaying protein nanoparticles can be designed from scratch.",
+      "claim_type": "EXPLICIT",
+      "source": "This work demonstrates that antigen-displaying protein nanoparticles can be designed from scratch, and provides a systematic way to investigate the influence of antigen presentation geometry on the immune response to vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "973000f6-3894-4519-8b56-37400ceada62",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "claim_id": "C91",
+      "claim": "The work provides a systematic way to investigate the influence of antigen presentation geometry on the immune response to vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "This work demonstrates that antigen-displaying protein nanoparticles can be designed from scratch, and provides a systematic way to investigate the influence of antigen presentation geometry on the immune response to vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement from the abstract about the significance of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ccfe8823-e4b5-4224-8055-03add455bd90",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "De novo designed trimers were computationally generated using the RPX docking method to match viral glycoprotein C-termini, with 23 designs selected for characterization. Nine of 22 soluble designs formed correct trimers by SEC-MALS, and two designs (1na0C3_2 and 3ltjC3_1v2) were crystallographically validated with backbone r.m.s.d. values of 1.4 \u00c5 and 0.8 \u00c5, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 and C58-C63 provide comprehensive computational and experimental validation of the trimer design approach. The crystallographic structures with sub-angstrom to ~1.4 \u00c5 r.m.s.d. values (C17, C18) demonstrate high accuracy of the computational design, and SEC-MALS data (C15, C16) confirms correct oligomerization states. The success rate (9/22 forming correct trimers) is reasonable for de novo protein design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "76fedf8f-5956-495f-8ac1-b282211fa8ad",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two-component nanoparticles with tetrahedral, octahedral, and icosahedral symmetries were designed by incorporating validated trimers. Of 53 designs, 24 showed co-assembly by SDS-PAGE, and 5 designs (T33_dn2, T33_dn5, T33_dn10, O43_dn18, I53_dn5) were validated as monodisperse particles by SEC-MALS with SAXS profiles matching computational models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 demonstrate successful nanoparticle design with appropriate experimental validation. The SAXS agreement with design models (C23) provides strong structural validation. The success rate (5/53 fully validated) is modest but acceptable for complex multi-component assemblies. The inclusion of natural pentamers (C64) to increase icosahedral success is a reasonable design strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "2b453c1c-10e8-41bb-b468-05ce37b9637f",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NS-EM and cryo-EM structural characterization confirmed that all five nanoparticle designs assemble as predicted. Cryo-EM structures of T33_dn10, O43_dn18, and I53_dn5 were determined at 3.9, 4.5, and 5.3 \u00c5 resolution with backbone r.m.s.d. values of 0.65, 0.98, and 1.3 \u00c5, respectively, showing excellent agreement with design models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 and C68-C72 provide robust structural validation through multiple EM techniques. The cryo-EM resolutions are appropriate for the particle sizes, and the low r.m.s.d. values (0.65-1.3 \u00c5) demonstrate high design accuracy. The observation of some heterogeneity in I53_dn5 (C29, C69) is appropriately noted and does not undermine the overall structural validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "c0772512-649f-4892-89f3-e8abd59d325a",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The I53_dn5 nanoparticle components can be separately produced and assembled in vitro, with assembly completing within minutes after equimolar mixing. This capability provides manufacturing flexibility and compositional control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 demonstrate in vitro assembly capability with SEC data showing rapid assembly. The selection rationale (C66) based on high valency and yield is appropriate. The cited advantage for compositional control (C67) is supported by a reference to parallel work, though direct demonstration in this manuscript would strengthen the claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "0c2d8c37-f730-48ec-9e19-a620852fc081",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BG505 SOSIP-displaying nanoparticles (T33_dn2, T33_dn10, I53_dn5) were characterized by NS-EM, showing antigenically intact trimers in predicted geometries. The nanoparticle cores remained structurally unchanged upon antigen fusion, though some flexibility was observed between antigens and scaffolds, and I53_dn5 showed evidence of partial disassembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 and C73-C74 demonstrate successful antigen display with appropriate caveats about flexibility and stability. The NS-EM data supports structural integrity of the cores (C33, C74), while honestly reporting limitations (C32, C34). The citation to a parallel stability study (C35) appropriately acknowledges the I53_dn5 stability issues without overstating the current data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "9f720336-17f2-4d71-89db-74add75865be",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DS-Cav1\u2013I53_dn5 nanoparticles bind RSV F-specific antibodies (D25, Motavizumab, AM14) similarly to soluble DS-Cav1 trimer, indicating proper prefusion conformation presentation on the nanoparticle surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 demonstrate antigenic integrity through ELISA with conformation-specific antibodies. The use of multiple antibodies targeting different epitopes (C78-C80) provides comprehensive validation. The conclusion that F protein is in prefusion conformation (C37) is well-supported by the antibody binding data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "9ac7eb33-106c-4264-a05d-217b50ef34b0",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "HA\u2013I53_dn5 nanoparticles and trimers present head and stem regions with wild-type-like antigenicity as demonstrated by biolayer interferometry. The absence of an engineered linker in HA\u2013I53_dn5 resulted in more clearly defined spike density compared to DS-Cav1\u2013I53_dn5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C81 demonstrate proper HA antigenicity through biolayer interferometry with head- and stem-specific antibodies. The comparison of linker effects (C76-C77) provides useful design insights, though the interpretation about linker flexibility (C75) is somewhat speculative. Overall, the antigenic validation is solid.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SPR experiments comparing BG505 SOSIP\u2013T33_dn2 (tetrahedral, 4 trimers) and BG505 SOSIP\u2013I53-50 (icosahedral, 20 trimers) showed that apical epitopes were equally accessible on both scaffolds, while base-proximate epitopes (VRC34, PGT151) showed ~3-fold higher accessibility on T33_dn2. The most base-proximal epitope (12N) was completely inaccessible on T33_dn2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 and C82-C86 provide systematic epitope accessibility analysis with appropriate controls (C83). The geometric rationale (C41) is sound, and the quantitative SPR data (C42-C45, C84) clearly demonstrates differential accessibility. The interpretation of steric hindrance (C86) is well-supported by the data and geometric considerations. This represents a key finding for rational vaccine design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "dd07b72e-eed8-465a-baba-ff935542490a",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Antigen epitope accessibility can be finely tuned through nanoparticle presentation geometry, with steric crowding on nanoparticle surfaces identified as a key determinant of antigenicity based on differential epitope accessibility between T33_dn2 and I53-50 scaffolds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C51-C52 draw appropriate conclusions from the epitope accessibility experiments. The demonstration that geometry affects accessibility (C46) is well-supported by the comparative SPR data. The identification of steric crowding as a determinant (C52) is a logical inference from the data, though additional experiments (e.g., with intermediate geometries) would further strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "ddd68770-e5f5-4554-a965-20768c677a27",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Multivalent antigen presentation substantially increases antibody elicitation through B cell receptor cross-linking and modulation of immunogen trafficking, with effects potentially reaching orders of magnitude enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C7, and C48 are well-established principles from cited literature. These provide appropriate background and motivation for the study. However, these are not novel findings from this work but rather established knowledge that contextualizes the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "a00098ea-e7d8-4199-9096-1f49a667a8ef",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has established challenges in presenting complex antigens on non-protein scaffolds, advantages of self-assembling protein scaffolds, and limitations of HIV-1 Env presentation on nanoparticles including modest immunogenicity enhancement and epitope inaccessibility due to crowding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 and C39, C49-C50 accurately summarize prior work with appropriate citations. These provide important context for the current study's contributions. The characterization of prior limitations (C49-C50) appropriately motivates the need for the tailored design approach presented here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "fa74340d-4ad2-4ab2-a1f0-b4d8ed7204ee",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A close geometric match between antigen C-termini and nanoparticle component N-termini would enable multivalent presentation without structural distortion. Previous computationally designed nanoparticles were generated without initial consideration of geometric compatibility for antigen presentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C87-C88 provide clear design rationale and distinguish this work from prior approaches. The geometric matching strategy (C12) is logical and well-motivated. The acknowledgment of limitations in prior work (C88) appropriately positions the current contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "45865dfc-596a-4e87-910c-731b83d4192d",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This work demonstrates that antigen-displaying protein nanoparticles can be designed from scratch and provides a systematic way to investigate the influence of antigen presentation geometry on immune response to vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C90-C91 appropriately summarize the main contributions. The demonstration of de novo design capability (C90) is well-supported by the structural validation data. The claim about providing a systematic approach (C91) is justified by the panel of geometrically diverse, validated nanoparticles, though actual immunogenicity studies would be needed to fully validate the utility for investigating immune responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "604e5dd1-b564-4c25-89ad-d745cb8ea612",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The availability of multiple antigen-displaying nanoparticles enables potential strategies including using different scaffolds in prime-boost immunizations to limit anti-scaffold responses, tuning presentation geometry to investigate B cell activation effects, and potentially overcoming low germline BCR affinity for viral glycoproteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C56 propose potential applications but are speculative (evidence_type: SPECULATION). While these are reasonable hypotheses based on the demonstrated design capabilities, they require experimental validation through immunization studies. The manuscript does not present immunogenicity data to support these proposed benefits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "1efa238c-b975-4513-8b06-5632ac4e9131",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The design approach yields nanoparticles presenting 4, 8, or 20 copies of viral glycoproteins in defined geometries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 accurately describes the valencies achieved (tetrahedral=4, octahedral=8, icosahedral=20 trimers). This is directly supported by the design models and structural characterization data presented in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    },
+    {
+      "id": "419a1b8b-ab65-4e97-99f5-57edc3e82a80",
+      "content_id": "e4bf1307-ef6c-40b8-a576-e8b1f911b6f8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The GG linker connecting DS-Cav1 to I53_dn5 likely accounts for observed flexibility and suboptimal definition of the glycoprotein trimer in 2D class averages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 proposes a mechanistic explanation for observed flexibility, but this is an inference without direct experimental validation. While the correlation between linker presence and flexibility is suggestive (comparing to HA\u2013I53_dn5 without linker in C76-C77), definitive testing would require systematic linker variation experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:58:38.107136Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "895c2072-86e9-42cf-a469-7b049c99a249",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "2f401f3f-8829-4048-bd0b-9f5938df7f34",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "571233e5-6bd0-4d13-ab00-a8a01019ef47",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "7fcf5678-86c6-4076-bd61-066fddf2848c",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "0e5205a1-cbe5-4537-bb4b-89340a4815db",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "0b99dc63-f530-46a5-9cf5-60d6c7ca1803",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "980f0d81-c60d-4c5f-bca1-c6a12a1bcb1d",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "64ebbf16-54a0-412b-a639-3cd9ea0c9441",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "14787228-0894-482f-8b62-54e51a66ecf8",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "8bf1e69a-30ee-4124-a527-c7fc8abc4527",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "beb2753a-b9bc-4323-9eb5-82b2fae96961",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "4283aaf9-f30b-4717-9745-b72692603422",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "3191db57-5ed5-4a10-bfb2-0566c676d43b",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "6d64f0da-1217-43b1-be9e-357896c3fbce",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "8b5cd340-d475-499b-b0c0-18adc843c14b",
+      "result_id": "ccfe8823-e4b5-4224-8055-03add455bd90"
+    },
+    {
+      "claim_id": "31fafe56-413a-47b9-adb7-913b687a89c5",
+      "result_id": "76fedf8f-5956-495f-8ac1-b282211fa8ad"
+    },
+    {
+      "claim_id": "015ece6b-8c56-41d8-9aa1-e14c730360d5",
+      "result_id": "76fedf8f-5956-495f-8ac1-b282211fa8ad"
+    },
+    {
+      "claim_id": "7be118b6-b4f4-481d-a1cb-df78e644daa0",
+      "result_id": "76fedf8f-5956-495f-8ac1-b282211fa8ad"
+    },
+    {
+      "claim_id": "dae09d51-2b43-4e42-9bc6-5394462d2414",
+      "result_id": "76fedf8f-5956-495f-8ac1-b282211fa8ad"
+    },
+    {
+      "claim_id": "128788ff-ca22-493b-b14f-e3af0cc9f659",
+      "result_id": "76fedf8f-5956-495f-8ac1-b282211fa8ad"
+    },
+    {
+      "claim_id": "c0f53204-6bb9-4d0a-b683-f6757e37750e",
+      "result_id": "76fedf8f-5956-495f-8ac1-b282211fa8ad"
+    },
+    {
+      "claim_id": "aba7085f-8a98-4101-86d9-5efd90cedfd4",
+      "result_id": "76fedf8f-5956-495f-8ac1-b282211fa8ad"
+    },
+    {
+      "claim_id": "57364303-ab6d-41c9-a3ee-9b4a97b2e550",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "ac41b788-26b1-4c4f-b4e3-4f3ecb825d36",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "8c1ff298-fe6a-489b-94dc-054493039414",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "466b609a-5317-4c5d-a33f-a40f51cb8956",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "88310979-bfda-48a2-adb3-21574b710ce5",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "e452e9a7-fad2-43d4-adb8-9e0603d9e8d9",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "e49aa2f2-8237-4939-9a3f-667c3b3cab4f",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "6a5a034c-8fe1-4acd-a6fb-1e44548e19a9",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "c8e97d8b-6009-41b3-b7fa-7a18b3329272",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "31092eaf-00b0-475d-a3a0-d46d3f0589b0",
+      "result_id": "2b453c1c-10e8-41bb-b468-05ce37b9637f"
+    },
+    {
+      "claim_id": "171db3ed-2084-4469-89b8-29d8c6a2ac4d",
+      "result_id": "c0772512-649f-4892-89f3-e8abd59d325a"
+    },
+    {
+      "claim_id": "3de019d9-a4f0-4c85-a6a1-d4439442e92d",
+      "result_id": "c0772512-649f-4892-89f3-e8abd59d325a"
+    },
+    {
+      "claim_id": "f1295b1b-6373-49b2-954c-dadc3ae9e3c4",
+      "result_id": "c0772512-649f-4892-89f3-e8abd59d325a"
+    },
+    {
+      "claim_id": "f064b2b8-81b6-47f5-b24a-9e040f4f4566",
+      "result_id": "c0772512-649f-4892-89f3-e8abd59d325a"
+    },
+    {
+      "claim_id": "881f6fa3-729e-4e36-92b4-d9e714eb3a56",
+      "result_id": "0c2d8c37-f730-48ec-9e19-a620852fc081"
+    },
+    {
+      "claim_id": "0103af63-0c05-4453-9181-86f0cfa5573d",
+      "result_id": "0c2d8c37-f730-48ec-9e19-a620852fc081"
+    },
+    {
+      "claim_id": "cbb06ed8-1ae6-4282-98b3-a2f113971bae",
+      "result_id": "0c2d8c37-f730-48ec-9e19-a620852fc081"
+    },
+    {
+      "claim_id": "e00f457f-7d7e-47ec-86ad-8379fdaa8ad0",
+      "result_id": "0c2d8c37-f730-48ec-9e19-a620852fc081"
+    },
+    {
+      "claim_id": "9ade90af-c452-4977-8102-4b00f2e5eb43",
+      "result_id": "0c2d8c37-f730-48ec-9e19-a620852fc081"
+    },
+    {
+      "claim_id": "7b2923c4-5ff0-451e-b23e-bc09a1c8636b",
+      "result_id": "0c2d8c37-f730-48ec-9e19-a620852fc081"
+    },
+    {
+      "claim_id": "a72ab74b-b252-4076-b45e-c45002f1589c",
+      "result_id": "0c2d8c37-f730-48ec-9e19-a620852fc081"
+    },
+    {
+      "claim_id": "de2d1e4e-b314-4620-b092-de5c8e01be19",
+      "result_id": "0c2d8c37-f730-48ec-9e19-a620852fc081"
+    },
+    {
+      "claim_id": "cceb368f-355e-41b2-a99e-3f46235dfe03",
+      "result_id": "9f720336-17f2-4d71-89db-74add75865be"
+    },
+    {
+      "claim_id": "2daec57b-1091-40c3-b0b0-bd53551e4076",
+      "result_id": "9f720336-17f2-4d71-89db-74add75865be"
+    },
+    {
+      "claim_id": "27e26f80-5cd7-4416-96d3-f0ec8887502a",
+      "result_id": "9f720336-17f2-4d71-89db-74add75865be"
+    },
+    {
+      "claim_id": "bffdc75e-8ef9-4657-be20-1b0885dbd51c",
+      "result_id": "9f720336-17f2-4d71-89db-74add75865be"
+    },
+    {
+      "claim_id": "eaa871e4-a7b1-42fe-9618-367726fba13b",
+      "result_id": "9f720336-17f2-4d71-89db-74add75865be"
+    },
+    {
+      "claim_id": "876c25d6-567a-4ca4-9fe0-211b6d568058",
+      "result_id": "9ac7eb33-106c-4264-a05d-217b50ef34b0"
+    },
+    {
+      "claim_id": "96102603-b863-41fa-aa22-d98382f145c3",
+      "result_id": "9ac7eb33-106c-4264-a05d-217b50ef34b0"
+    },
+    {
+      "claim_id": "edfabc69-00f1-4850-a80c-991a189294a5",
+      "result_id": "9ac7eb33-106c-4264-a05d-217b50ef34b0"
+    },
+    {
+      "claim_id": "de711a06-bb07-4e6b-be54-0e8fcba223d5",
+      "result_id": "9ac7eb33-106c-4264-a05d-217b50ef34b0"
+    },
+    {
+      "claim_id": "bafae069-8407-4b85-b122-2d59e98bbac7",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "3c300869-82ef-4cda-9341-6fc938378bdf",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "35ca0465-18d5-4207-8a40-2bcadacea3d2",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "44beccfe-0318-4476-976d-7409d08a9998",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "5a5bf262-4af1-4cc9-800d-9fd793d6bde3",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "0eaafcd4-91ff-437f-99b0-0d2e86021b57",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "4b125f5b-3e85-44d8-9b96-be594460f73a",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "1ce46119-1671-4215-a5c9-b3811cce5b40",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "00924836-2424-4517-803b-e877d0838842",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "b35568c0-1c50-411b-b6ae-da2cd1904e1f",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "dd0e7b19-444c-4dae-a633-f78618eef844",
+      "result_id": "0bf9a023-9f64-4fc8-a0cf-fe930bf5ca6d"
+    },
+    {
+      "claim_id": "8e939fa3-aeae-45a7-a5fd-ffae18a6c56c",
+      "result_id": "dd07b72e-eed8-465a-baba-ff935542490a"
+    },
+    {
+      "claim_id": "6d18578e-3303-401d-93a8-e9781d749ed9",
+      "result_id": "dd07b72e-eed8-465a-baba-ff935542490a"
+    },
+    {
+      "claim_id": "ddb96b03-8542-47aa-9476-bf144dc33133",
+      "result_id": "dd07b72e-eed8-465a-baba-ff935542490a"
+    },
+    {
+      "claim_id": "58da7c15-f3d2-42bf-8f7a-87be84e2aac2",
+      "result_id": "ddd68770-e5f5-4554-a965-20768c677a27"
+    },
+    {
+      "claim_id": "06fb7328-f18e-4393-a89a-423205fd3a6d",
+      "result_id": "ddd68770-e5f5-4554-a965-20768c677a27"
+    },
+    {
+      "claim_id": "d400706d-702e-4e9b-8a78-c634251099f6",
+      "result_id": "ddd68770-e5f5-4554-a965-20768c677a27"
+    },
+    {
+      "claim_id": "d26dd960-247a-4465-a143-cdb13b8bb2f2",
+      "result_id": "ddd68770-e5f5-4554-a965-20768c677a27"
+    },
+    {
+      "claim_id": "7383f0df-842a-4ca6-8566-f6fedea5d485",
+      "result_id": "a00098ea-e7d8-4199-9096-1f49a667a8ef"
+    },
+    {
+      "claim_id": "1f9faf6c-7510-4050-ba6f-0f85fd7d6f0b",
+      "result_id": "a00098ea-e7d8-4199-9096-1f49a667a8ef"
+    },
+    {
+      "claim_id": "45b2cf67-6496-4e37-90ab-306f9e78c9eb",
+      "result_id": "a00098ea-e7d8-4199-9096-1f49a667a8ef"
+    },
+    {
+      "claim_id": "8e6e0321-23f1-4f5d-93ad-e5b77a563c67",
+      "result_id": "a00098ea-e7d8-4199-9096-1f49a667a8ef"
+    },
+    {
+      "claim_id": "3a0cab31-f9b9-4c28-871f-db6e87d80580",
+      "result_id": "a00098ea-e7d8-4199-9096-1f49a667a8ef"
+    },
+    {
+      "claim_id": "dffec2e1-c955-4c90-a73e-227d456ca137",
+      "result_id": "a00098ea-e7d8-4199-9096-1f49a667a8ef"
+    },
+    {
+      "claim_id": "6d55576f-cdc5-4cb0-a66d-391fb93a5ec5",
+      "result_id": "a00098ea-e7d8-4199-9096-1f49a667a8ef"
+    },
+    {
+      "claim_id": "a7bd09cd-c5f6-4b68-b4a5-830ef2c61ed4",
+      "result_id": "fa74340d-4ad2-4ab2-a1f0-b4d8ed7204ee"
+    },
+    {
+      "claim_id": "a9dcc25e-47d0-405c-ae3d-80c152ccaf80",
+      "result_id": "fa74340d-4ad2-4ab2-a1f0-b4d8ed7204ee"
+    },
+    {
+      "claim_id": "015c03ab-6fe3-453f-8d65-7088e97cbb2b",
+      "result_id": "fa74340d-4ad2-4ab2-a1f0-b4d8ed7204ee"
+    },
+    {
+      "claim_id": "85f765f7-1c11-46c6-aeeb-82c38ec1b98c",
+      "result_id": "45865dfc-596a-4e87-910c-731b83d4192d"
+    },
+    {
+      "claim_id": "b0003a23-9ae4-4402-814f-5a7843fc0e1e",
+      "result_id": "45865dfc-596a-4e87-910c-731b83d4192d"
+    },
+    {
+      "claim_id": "973000f6-3894-4519-8b56-37400ceada62",
+      "result_id": "45865dfc-596a-4e87-910c-731b83d4192d"
+    },
+    {
+      "claim_id": "4f790207-b117-46aa-945f-1b749d715888",
+      "result_id": "604e5dd1-b564-4c25-89ad-d745cb8ea612"
+    },
+    {
+      "claim_id": "9ce51653-27cc-48d1-85f7-ce3df01e6457",
+      "result_id": "604e5dd1-b564-4c25-89ad-d745cb8ea612"
+    },
+    {
+      "claim_id": "4e7653f0-4ed2-427d-b72e-a1a77e208d90",
+      "result_id": "604e5dd1-b564-4c25-89ad-d745cb8ea612"
+    },
+    {
+      "claim_id": "74b46f69-3b97-4e3a-97c3-0c1668507b88",
+      "result_id": "604e5dd1-b564-4c25-89ad-d745cb8ea612"
+    },
+    {
+      "claim_id": "57a0f0fb-25d8-4c73-b60f-730b503553bf",
+      "result_id": "1efa238c-b975-4513-8b06-5632ac4e9131"
+    },
+    {
+      "claim_id": "27fb5e87-aaf1-4e2a-9d78-a668bd61ef80",
+      "result_id": "419a1b8b-ab65-4e97-99f5-57edc3e82a80"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "651 proteins were significantly associated with chronological age in 997 individuals (506 overrepresented, 145 underrepresented), with variance explained ranging from 0.3% to 50.6%. The majority (82.5%) remained significant after adjusting for chronic disease burden, and 60% replicated in an independent cohort. Meta-analysis identified 735 age-associated proteins, with 56% showing concordant direction with another study using a different platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C17, C19-C27 provide comprehensive evidence for age-associated protein identification with appropriate sample size (N=997), statistical thresholds (FDR<0.05), replication in independent cohorts (60% in BLSA/GESTALT), and robustness to disease adjustment (82.5% remained significant). The meta-analysis and cross-platform validation strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "427 proteins showed sex differences in abundance (328 higher in women, 99 in men), with 78.2% replicating in an independent study. 50 proteins showed significant age-by-sex interactions, with sex hormone-binding globulin showing the strongest sex-specific age association (rising with age in men but not women).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 demonstrate robust sex differences with high replication rate (78.2%) and appropriate positive controls (PSA, FSH, leptin). The age-by-sex interaction analysis is well-executed with clear biological interpretation for SHBG. Statistical methods appear sound with FDR correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C5"
+    ],
+    "result": "DNA methylation partially mediates age-protein associations. Of 472,138 CpG sites, 170,780 were age-associated, with significant enrichment near age-associated protein genes (41.8% vs 37.9%, p=0.0001). For 449/494 genes, at least one CpG mediated the age-protein relationship, with an average of 7.8% mediation (range 0.3-31.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C38, C5 present mediation analysis results, but the interpretation is problematic. The Baron-Kenny method is outdated and has known limitations. The average mediation of 7.8% is modest, and the claim of 'partial cis-epigenetic control' (C5) overstates the evidence. The analysis uses white blood cell methylation as a proxy for protein expression regulation, which may not reflect the tissue of origin for plasma proteins. The enrichment p-value (0.0001) is significant but the effect size is small (41.8% vs 37.9%). Causal interpretation requires stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C3"
+    ],
+    "result": "193 of 651 age-associated proteins predicted all-cause mortality after covariate adjustment. These proteins were enriched for inflammatory pathways, extracellular matrix, and gene expression regulation. 13 core SASP factors were identified among mortality-associated proteins. A multi-protein model with 8 proteins achieved C-index of 0.84.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47, C3 demonstrate strong associations between age-associated proteins and mortality with appropriate statistical methods (Cox proportional hazards, C-index validation). The handling of proportional hazards violations through stratified analysis (C39, C41) is appropriate. The identification of SASP factors (C43) is well-supported by citation to recent literature. The multi-protein model performance (C-index 0.84) is strong, though cross-validation details are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C4"
+    ],
+    "result": "295 of 651 age-associated proteins predicted prospective multimorbidity accumulation (0.18 diseases/year increase) after covariate adjustment. These proteins were enriched for inflammatory pathways, IGF regulation, and gene expression regulation. 17 core SASP factors were identified, with 11 overlapping with mortality-associated proteins. A 6-protein model achieved Adj-R\u00b2 of 0.43.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56, C4 provide strong evidence for protein associations with multimorbidity using appropriate longitudinal analysis (linear mixed models for slopes). The enrichment analyses are consistent with mortality findings. The overlap of 11 SASP factors between mortality and multimorbidity (C52) strengthens biological plausibility. The predictive model performance (Adj-R\u00b2 0.43) is reasonable for a complex phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In 310 disease-free subjects at baseline, 20 of 651 age-associated proteins predicted multimorbidity development (0.13 diseases/year) independent of age, sex, and study site. A 5-protein model achieved Adj-R\u00b2 of 0.45.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 demonstrate that age-associated proteins predict disease development even in initially healthy individuals, which is clinically important. The sample size (N=310) is adequate, and the predictive performance (Adj-R\u00b2 0.45) is slightly better than the full cohort model, suggesting these proteins may be early markers of disease susceptibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Sliding-window analysis identified a peak wave of differential protein expression at 78 years (635 proteins with 20-year window), replicating findings from another study. 63% of these proteins were captured by linear models. Proteins identified at 61 and 78 years, but not 41 years, were enriched for mortality and multimorbidity associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 demonstrate non-linear age effects using appropriate sliding-window methodology (DE-SWAN). The replication of the 78-year peak from Lehallier et al. (C61) is striking and strengthens validity. The enrichment analysis (C63) provides biological validation. However, the lack of clear peaks at younger ages may reflect sampling limitations acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Mendelian randomization analysis revealed causal relationships between genetically determined protein levels and age-related diseases: NPPB with lower hypertension risk; MMP12 with lower cardiovascular disease risk; PI3 with increased risk of MI, stroke, lung cancer, and rheumatoid arthritis; SMOC1 with higher bone mineral density and hemoglobin; GHR with lower bone mineral density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 present two-sample MR results using appropriate genetic instruments from large GWAS. The findings are biologically plausible and consistent with known protein functions discussed in the manuscript. However, some results (e.g., MMP12 protective effect vs. observational increased risk) suggest reverse causation or compensatory mechanisms, which the authors appropriately discuss (C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C8"
+    ],
+    "result": "A 76-protein signature predicted chronological age (r=0.87 overall; r=0.91 in healthy, r=0.76 in unhealthy subjects). Proteomic age acceleration (PROaccel) independently predicted faster multimorbidity accumulation (0.03 diseases/year, p=1.17\u00d710\u207b\u2075) and all-cause mortality (HR=1.03, 95% CI 1.02-1.04), with effects significant only in subjects >65 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77, C8 demonstrate that the proteomic age signature captures biological aging beyond chronological age. The differential correlation by health status (C70-C71) supports construct validity. The prospective associations with multimorbidity and mortality are statistically robust with appropriate covariate adjustment. The age-stratified analysis (C77) is important and well-executed. However, the signature was developed in a different cohort (BLSA/GESTALT), which strengthens generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PROage correlated highly with DNA methylation clocks (r=0.84-0.89 with Horvath, GrimAge, PhenoAge), but PROaccel showed no correlation with Horvath acceleration (r=0.03, p=0.487) and only mild correlation with GrimAge (r=0.20) and PhenoAge (r=0.22) acceleration. In mortality prediction, PROaccel performed better than Horvath but was outperformed by PhenoAge and GrimAge acceleration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 provide important comparisons with established aging biomarkers. The high correlation of predicted ages (C78-C80) but low correlation of acceleration measures (C81-C83) suggests these capture different aspects of aging. The comparative mortality analysis (C84-C85) is well-designed with appropriate statistical methods. The finding that PROaccel is outperformed by GrimAge and PhenoAge (C84, C109) is honestly reported and suggests future directions (C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Pleiotrophin (PTN) was most strongly associated with chronological age but was not predictive of mortality or multimorbidity after age adjustment. GDF15 was the most significant age-associated protein predictive of both mortality and multimorbidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 highlight an important distinction between age association and clinical relevance. PTN's strong age association without outcome prediction suggests it may be a pure aging marker without pathological significance. GDF15's dual association with mortality and multimorbidity, combined with its identification as a core SASP factor, supports its biological and clinical importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The discussion contextualizes findings within existing literature, noting that 11 core SASP proteins (GDF15, MMP1, STC1, IGFBP2, IGFBP4, TIMP1, TIMP2, CST3, CTSB, CLEC11A, POSTN) are associated with both mortality and multimorbidity. The proteomic age signature is strikingly similar to one developed independently by Lehallier et al. in a different population. The authors suggest future development of phenotype-based rather than age-based proteomic signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C110 provide appropriate contextualization with extensive citations to support biological interpretations. The identification of SASP proteins (C89-C94) is well-supported by recent literature. The discussion of MR findings (C96-C106) appropriately addresses apparent discrepancies between observational and genetic associations. The comparison with Lehallier et al. (C107) and acknowledgment of limitations (C109) demonstrate scientific rigor. The suggestion for future phenotype-based signatures (C110) is reasonable given the comparative performance data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes context by citing demographic trends, the relationship between age and chronic disease, limitations of current biomarkers, and prior work on epigenetic clocks and protein biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 appropriately cite relevant literature to establish context and rationale. The citations appear accurate based on the references provided. The claim that 'chronic inflammation is the only biomarker that predicts multimorbidity' (C12) is a strong statement that depends on the accuracy of the cited reference (Fabbri et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The InCHIANTI study enrolled 997 participants (ages 21-98) from two Italian towns with 90% participation rate. Proteomic profiling used the 1.3K SOMAscan platform (1301 proteins after QC). DNA methylation was assessed on ~480,000 CpG sites (472,139 after filtering) in 460 subjects. Over 18 years of follow-up, 504 participants (50.6%) died.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C111-C117 provide clear methodological details about study design, sample collection, and analytical platforms. The high participation rate (90%) and long follow-up (18 years) are strengths. The methods for proteomic and methylation assessment are well-described with appropriate QC steps. The sample sizes are adequate for the analyses performed.",
+    "result_type": "MINOR"
+  }
+]

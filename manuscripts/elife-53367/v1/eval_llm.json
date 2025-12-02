@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript provides background on lung adenocarcinoma epidemiology, treatment challenges, and platinum resistance, citing that lung adenocarcinoma is the most common form of lung cancer and the leading cause of cancer-related death worldwide, with response rates to platinum-based chemotherapy remaining below 30% despite over 147 proposed resistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by appropriate citations to prior literature and represent well-established background knowledge in the field. These claims provide context for the study but are not novel findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C86"
+    ],
+    "result": "The authors justify their cisplatin pulse model by citing pharmacokinetic studies showing that cisplatin and carboplatin are rapidly cleared from circulation and tumors within 2-3 hours in humans and rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C86 are supported by appropriate citations (Andersson et al., 1996; Johansen et al., 2002) and provide the rationale for the experimental model design. This is a methodological justification rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C69",
+      "C70"
+    ],
+    "result": "Continuous cisplatin exposure resulted in decreased cell number, increased apoptosis, and elevated DNA damage response compared to pulsed treatment in A549 cells, with distinct signaling patterns including p38/ERK activation in continuous exposure and MCL-1 expression in pulsed treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 and C70 are supported by experimental data from live-cell imaging, viability assays, and multiplexed protein analysis (Figure 1\u2014figure supplements 1 and 2). The data clearly demonstrate differential responses between continuous and pulsed cisplatin treatment models. Claim C69 is an inference that is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Across a panel of six lung adenocarcinoma cell lines, the apoptotic response to cisplatin pulse ranged from ~3% (A549) to ~32% (NCI-H1299), and this sensitivity could not be stratified simply by TP53 mutation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 are supported by apoptosis measurements shown in Figure 1B. The data clearly show a range of responses that do not correlate simply with TP53 status, which is a key finding that motivates the subsequent mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "All six cell lines displayed significant nuclear cisplatin-DNA adducts following a 2-hour pulse that progressively resolved over 72 hours, suggesting that drug efflux and DNA repair pathways are functional across the panel and not responsible for differential sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by immunofluorescence microscopy data (Figure 1C and Figure 1\u2014figure supplement 3). The inference that drug efflux is not responsible for differential sensitivity (C18, C20) is reasonable given that all lines show similar adduct formation and resolution, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Following cisplatin pulse, Chk1 and Chk2 phosphorylation increased in most cell lines, with TP53 wildtype lines showing subsequent p53 phosphorylation and increased MDM2/p21 expression, while TP53 mutant lines showed p53 phosphorylation without MDM2/p21 induction, and the TP53 null NCI-H358 line showed increased p21/MDM2 expression despite lacking p53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by multiplexed protein analysis data (Figure 1D and Figure 1\u2014figure supplement 4). The data clearly demonstrate TP53 status-dependent signaling responses. The unexpected p21/MDM2 expression in NCI-H358 (C25) is particularly interesting and is followed up later in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Principal component analysis of cisplatin-induced signaling dynamics captured ~70% of variance in the first four components, with PC1/PC2 separating cell lines by TP53 status and PC3/PC4 delineating resistant versus sensitive lines, with sensitive lines moving toward higher \u03b3H2A.X, cleaved caspase 3, and stress-associated MAPK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by PCA analysis shown in Figure 2 and Figure 2\u2014figure supplement 1A. The analysis appropriately captures variance and provides a data-driven approach to identify signaling patterns associated with sensitivity. The interpretation is consistent with the visualizations provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Among tested inhibitors of Akt, STAT3, MEK, NF-\u03baB, and P70S6K, only the dual PI3K/mTOR inhibitor dactolisib (which inhibits P70S6K) significantly increased cisplatin-induced apoptosis in resistant A549 and NCI-H358 cell lines, suggesting a specific role for P70S6K in mediating resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by apoptosis assay data (Figure 3C and 3D). The specificity for dactolisib over other pathway inhibitors is clearly demonstrated. However, claim C32 involves an inference about P70S6K specificity that is later validated with siRNA experiments, making this result well-supported overall.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Dactolisib treatment or P70S6K siRNA knockdown in resistant NCI-H358 cells increased caspase 3 cleavage and \u03b3H2A.X expression to levels observed in sensitive NCI-H1299 cells, and significantly increased cisplatin-induced apoptosis to the same extent as dactolisib treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by western blotting (Figure 3E, 3G) and apoptosis assay data (Figure 3H, Figure 3\u2014figure supplement 1C). The siRNA validation is critical for establishing P70S6K as the specific target responsible for the dactolisib effect, and the data clearly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C93",
+      "C94"
+    ],
+    "result": "In NCI-H358 xenografts, carboplatin alone had no significant effect on tumor growth, dactolisib alone had a moderate effect, but the combination completely halted tumor growth up to 28 days and resulted in significantly larger regions of necrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, C93, and C94 are supported by in vivo xenograft data (Figure 3I) and histological analysis (Figure 3J). The data clearly demonstrate synergistic effects of the combination therapy. Statistical significance is reported for the combination versus single agents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C90"
+    ],
+    "result": "Analysis of TCGA data reveals that RPS6KB1 and RPS6KB2 (encoding P70S6K isoforms) are amplified or over-expressed in 20% and 11% of lung adenocarcinoma cases respectively, occurring on backgrounds of both wildtype and mutant TP53 (which is mutated/deleted in 47% of cases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, and C90 are supported by TCGA data analysis shown in Figure 4A. The analysis appropriately uses publicly available data to establish clinical relevance. The co-occurrence with different TP53 backgrounds is important for the subsequent findings about TP53-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Elevated RPS6KB1/RPS6KB2 mRNA expression was significantly associated with poor overall survival in lung adenocarcinoma patients, and in a cohort of 52 patients, high P70S6K protein expression was significantly associated with poor survival and was significantly increased upon relapse in matched samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by survival analysis from KM plotter (Figure 4B) and IHC analysis of patient samples (Figure 4D, 4G). The matched diagnosis/relapse samples (n=8) showing increased P70S6K at relapse provide particularly strong evidence for functional relevance. Statistical significance is reported for the survival associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "FUCCI live-cell imaging revealed that cisplatin pulse caused TP53 wildtype (A549) and null (NCI-H358) cells to arrest in G1 and increased S/G2 transit time in all lines, with TP53 mutant/null cells showing prolonged G2 arrest and aberrant mitosis, while A549 cells underwent G2-exit without mitosis; p53 knockdown in A549 cells increased G2-arrest and decreased G2-exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by FUCCI live-cell imaging data (Figure 5B, 5C, Figure 5\u2014figure supplement 1 and 2). The single-cell tracking provides detailed cell cycle dynamics. The p53 knockdown experiment (C48) validates the role of p53 in the G2-exit phenotype. The data are quantitative and statistically analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Dactolisib treatment increased G1 arrest in all cell lines regardless of TP53 status, but for TP53 wildtype/null cells in late G1/S phase during cisplatin pulse, dactolisib reduced S/G2 transit time and greatly increased pre-mitotic apoptosis and prolonged mitotic arrest; however, dactolisib did not sensitize TP53 mutant H1573 cells, and P70S6K knockdown in NCI-H358 cells showed similar effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by FUCCI live-cell imaging data (Figure 5B, 5C, 5D, Figure 5\u2014figure supplement 3). The data clearly demonstrate TP53 status-dependent effects of dactolisib on cell cycle and apoptosis. The P70S6K siRNA validation (C53) confirms specificity, though the effect on G2-arrest was non-significant, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The resistant TP53 null NCI-H358 line showed increased p21 expression following cisplatin (unlike sensitive NCI-H1299), which was efficiently inhibited by dactolisib or P70S6K siRNA; p63 was also elevated in NCI-H358 after cisplatin and inhibited by dactolisib or P70S6K siRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by multiplexed protein analysis (Figure 1D) and western blotting (Figure 6A, 6B, 6C). The data clearly show differential p21 expression between resistant and sensitive TP53 null lines, and the regulation by P70S6K. The p63 finding (C56) is interesting but somewhat speculative regarding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Both TP53 wildtype cell lines and the resistant TP53 null NCI-H358 line were significantly sensitized to cisplatin by dactolisib, while dactolisib did not increase apoptosis in TP53 mutant NCI-H1573 and significantly antagonized apoptosis in TP53 mutant NCI-H1975.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by apoptosis assay data (Figure 6D). The data clearly demonstrate TP53 status-dependent effects of dactolisib sensitization. The antagonistic effect in NCI-H1975 (C60) is particularly important for understanding the limitations of the combination therapy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "In TP53 wildtype A549 cells, dactolisib inhibited cisplatin-induced p53 and p21 accumulation, resulting in elevated \u03b3H2A.X and caspase 3 cleavage; however, in TP53 mutant NCI-H1573 cells, p21 was not significantly elevated by cisplatin and \u03b3H2A.X/caspase 3 were unchanged by dactolisib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 are supported by western blotting data (Figure 6E). The data clearly show differential effects of dactolisib based on TP53 status and p21 regulation, providing a mechanistic explanation for the differential sensitization observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In a secondary panel of lung adenocarcinoma cell lines, a strong correlation (r\u00b2=0.6092) was observed between phosphorylated P70S6K levels and decreased apoptosis for TP53 wildtype lines but no correlation (r\u00b2=0.1764) for TP53 mutant lines; combination therapy sensitized high pP70S6K/TP53 wildtype NCI-H292 cells but not high pP70S6K/TP53 mutant NCI-H2009 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by correlation analysis (Figure 6G) and apoptosis assays (Figure 6H) in an independent panel of cell lines. This validation in additional cell lines strengthens the conclusion about TP53-dependent effects. The correlation coefficients are appropriate for the sample sizes, though the TP53 wildtype correlation is moderate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C76"
+    ],
+    "result": "The authors conclude that P70S6K promotes G2-exit or prolonged G2-arrest following cisplatin through enhanced translation of p53/p21 in TP53 wildtype lines and p63/p21 in TP53 null lines, but in TP53 mutant cells, P70S6K cannot influence the DNA damage signaling axis and is not associated with cisplatin sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C68, and C76 represent integrative conclusions drawn from multiple lines of evidence including cell cycle analysis, protein expression, and sensitization experiments. The conclusions are well-supported by the data, though the p63 mechanism in TP53 null cells (C67) is somewhat speculative and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The authors propose that TP53 mutation status should be a central consideration for patient stratification in potential clinical trials of cisplatin and dactolisib combination therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a reasonable inference based on the demonstrated TP53-dependent effects of dactolisib sensitization. This represents an important translational implication of the findings, though it is a recommendation for future work rather than a direct experimental result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C95",
+      "C96"
+    ],
+    "result": "Highly elevated p38 signaling was not observed in any cell line following cisplatin pulse, and JNK inhibition did not prevent cisplatin-induced apoptosis in SW-1573 cells, suggesting these pathways are not promoting apoptosis in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C95, and C96 are supported by multiplexed protein analysis (Figure 1D, Figure 2) and apoptosis assays (Figure 2\u2014figure supplement 1C). These negative results are important for distinguishing the pulse model from continuous exposure and for ruling out alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The manuscript cites established mechanisms of platinum therapy action (DNA adduct formation leading to DNA breaks and apoptosis) and p21-dependent G2-exit/senescence that provides protection from aberrant mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by appropriate citations to prior literature (Jamieson and Lippard, 1999; Gire and Dulic, 2015) and represent established background knowledge used to interpret the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors describe distinct mechanisms by which dactolisib sensitizes cells to cisplatin depending on TP53 status: in TP53 wildtype cells it induces pre-mitotic death and prevents protective G2-exit; in TP53 null cells it promotes pre-mitotic death and prolonged aberrant mitosis; in TP53 mutant cells there is no sensitization due to sustained S/G2 arrest; and dactolisib treatment in early G1 results in G1 arrest and reduced apoptosis, highlighting the importance of DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 represent summary interpretations of the FUCCI imaging data (Figure 5) and are well-supported by the experimental evidence. These mechanistic insights explain the TP53-dependent effects observed in the apoptosis assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C87",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "The manuscript cites prior literature establishing that P70S6K expression is associated with aggressive tumor behavior and poor prognosis in multiple cancers, that P70S6K regulates cell cycle via p21 translation, that cisplatin/dactolisib combinations have been proposed for other cancers, and that clinical trial failures are often attributed to lack of biomarkers for patient stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75, C87-C89, and C91 are all supported by appropriate citations to prior literature and provide context for the current findings. These represent established knowledge rather than novel results from this study.",
+    "result_type": "MINOR"
+  }
+]

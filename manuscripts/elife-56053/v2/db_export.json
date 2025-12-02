@@ -1,0 +1,1530 @@
+{
+  "submission": {
+    "id": "6ec91595-f4dc-4f48-8020-e351c5733056",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:31:19.522580Z",
+    "updated_at": "2025-12-02T16:31:19.522580Z"
+  },
+  "content": [
+    {
+      "id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "submission_id": "6ec91595-f4dc-4f48-8020-e351c5733056",
+      "content_type": "manuscript",
+      "content_text": "# Population coupling predicts the plasticity of stimulus responses in cortical circuits\n\n## Authors\n\n- Yann Sweeney<sup>1</sup> ([ORCID: 0000-0002-2164-2438](https://orcid.org/0000-0002-2164-2438))\n- Claudia Clopath<sup>1</sup> ([ORCID: 0000-0003-4507-8648](https://orcid.org/0000-0003-4507-8648)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering, Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nSome neurons have stimulus responses that are stable over days, whereas other neurons have highly plastic stimulus responses. Using a recurrent network model, we explore whether this could be due to an underlying diversity in their synaptic plasticity. We find that, in a network with diverse learning rates, neurons with fast rates are more coupled to population activity than neurons with slow rates. This plasticity-coupling link predicts that neurons with high population coupling exhibit more long-term stimulus response variability than neurons with low population coupling. We substantiate this prediction using recordings from the Allen Brain Observatory, finding that a neuron\u2019s population coupling is correlated with the plasticity of its orientation preference. Simulations of a simple perceptual learning task suggest a particular functional architecture: a stable \u2018backbone\u2019 of stimulus representation formed by neurons with low population coupling, on top of which lies a flexible substrate of neurons with high population coupling.\n\n## Introduction\n\nThe brain encodes information about the external world via its neural activity. One aspect of such encoding is that neurons in sensory cortex often have a preferred stimulus which evokes a stronger response than other stimuli. These stimulus responses can change during learning or adaptation: if a particular stimulus feature is overexpressed within an environment, for example, more neurons will be recruited to encode this feature (Sengpiel et al., 1999). Advances in neural imaging techniques allow us to interrogate such changes by tracking stimulus responses of hundreds of neurons over many days in vivo (Andermann, 2010; Mank et al., 2008). These recordings reveal a substantial, and puzzling, variability in the long-term stability of responses in sensory cortex: some neurons retain highly stable preferences to specific stimuli, whereas the stimulus preference of other neurons change from day to day\u00a0(Ranson, 2017; Clopath et al., 2017;\u00a0Poort et al., 2015; L\u00fctcke et al., 2013; Rule et al., 2019;\u00a0Rose et al., 2016). The degree of stimulus response stability typically depends on brain region; whisking responses in mouse barrel cortex are highly plastic, whereas visual responses in mouse V1 are more stable but still exhibit fluctuations (Clopath et al., 2017; L\u00fctcke et al., 2013). Moreover, it is possible to induce stimulus response plasticity through perturbations such as sensory deprivation (Rose et al., 2016), or to increase task-related stimulus response stability through rewarded learning (Poort et al., 2015).\n\nCurrent theories which address the long-term variability of stimulus responses primarily ask how motor learning occurs with unstable representations (Driscoll et al., 2017; Ajemian et al., 2013; Rokni et al., 2007), or seek to explain it as a form of probabilistic sampling (Kappel et al., 2017; Kappel et al., 2015). Although the stability of neural representation is correlated with firing rate in hippocampal place cells (Grosmark and Buzs\u00e1ki, 2016) and in visual cortex (Ranson, 2017), it is not known how cellular or network properties influence a neuron\u2019s stimulus response stability (Clopath et al., 2017). We are therefore lacking a theory of why some neurons\u2019 stimulus responses are more stable than others, and how this affects perception and learning. By investigating how synaptic plasticity mediates stimulus response variability, we aim here to establish how this diversity of stimulus response stability emerges, and whether it is functionally relevant.\n\nWe propose that the observed diversity of stimulus response stability may be explained by a diversity of neurons\u2019 inherent plasticity (or learning rate) within a network. Consequently, we explore how diverse learning rates across neurons impact synaptic connectivity in a recurrent network model of mouse visual cortex. We find that neurons with fast learning rates exhibit more variability of their stimulus selectivity than neurons with slow learning rates. Intriguingly, we also find that fast neurons have higher population coupling, a measure of how correlated an individual neurons activity is with the rest of the population (Okun et al., 2015).\n\nThis unexpected plasticity-coupling link, in which more plastic neurons are also more coupled to the rest of the population, provides a mechanism for the diverse population coupling previously observed in sensory cortex (Okun et al., 2015). Moreover, the plasticity-coupling link predicts that neurons with high population coupling exhibit more long-term stimulus response variability than neurons with low population coupling. We substantiate this prediction with in vivo calcium imaging of mouse visual cortex from the Allen Brain Observatory (Allen Brain Atlases and Data, 2016), finding that a neuron is more likely to exhibit variability of its orientation preference if it has high population coupling.\n\nFinally, we explore the functional implications of both diverse population coupling and diverse learning rates within our network model. We find that strong population coupling helps plastic neurons alter their stimulus preference during a simple perceptual learning task, but hinders the ability of stable neurons to provide an instructive signal for learning. The plasticity-coupling link exploits this dependence by ensuring that highly plastic neurons - the substrate for perceptual learning - are strongly coupled to the population, while less plastic neurons are weakly coupled and act as a stable \u2018backbone\u2019 of stimulus representation.\n\n## Results\n\n### A \u2018plasticity-coupling link\u2019 emerges in networks with diverse learning rates: fast neurons have higher population coupling than slow neurons\n\nOur aim is to explore whether the diversity of stimulus response stability can be explained by a diversity of neurons\u2019 inherent plasticity (or learning rate) within a network. To this end, we use network simulations to characterise the impact of diverse learning rates on recurrent synaptic connectivity in sensory cortex.\n\nWe first explore the impact of diverse learning rates in a simple, fully connected network of rate neurons (Figure 1A, Materials\u00a0and\u00a0methods). Excitatory recurrent synapses in our network undergo Hebbian plasticity and synaptic scaling, while inhibitory synapses undergo homeostatic inhibitory plasticity (Vogels et al., 2011). Extending traditional models of Hebbian plasticity in which synaptic weight updates depend only on the correlation of pre- and post-synaptic activity, we introduce diversity by assigning either a fast or slow Hebbian learning rate ($\\alpha$) to individual neurons. The learning rate is expressed postsynaptically, such that the synaptic input weights onto neurons with a large $\\alpha$ are more plastic than those with a small $\\alpha$ (Equation 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig1-v2.jpg)\n\n**Figure 1.:** (A) Connection diagram of the recurrent network model with excitatory (E) and inhibitory (I) neurons.\u00a0Dashed lines denote plastic synapses and solid lines denote static synapses. (B) Synaptic weight dynamics during presentation of random sequences of stimuli to the network. Synaptic inputs onto slow neurons ($\\alpha=1$, gray) and onto fast neurons ($\\alpha=5$, black). Synapses between neurons which share the same feedforward stimulus preference (specific) have solid lines, and synapses between neurons which have different feedforward stimulus preference (non-specific) have dashed lines. (C) Excitatory synaptic weight matrix of the recurrent network after synaptic plasticity. Neuron IDs are organised by feedforward stimulus preference. For each of the four stimulus groups the first six neurons are slow ($\\alpha=1$) and the next six neurons are fast ($\\alpha=5$). (D) Connection specificity (ratio of specific to non-specific synaptic input strength) after synaptic plasticity for slow and fast neurons (left), and the standard deviation over time of the connection specificity for slow and fast neurons (right). (E) Amount of non-specific (light blue) and specific (dark blue) synaptic input for neurons in a network with diverse learning rates, as the learning rate of the postsynaptic neuron is varied along a logarithmic scale. Population coupling of neurons with different learning rates (red points).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The slope of the linear dependence between $\\alpha$ and population coupling within a network with diverse $\\alpha$, for different values of the synaptic scaling rate ($\u03b6$) and injected noise ($\\sigma_{OU}$). The presence of noise introduces transient correlations across the network which lead to fluctuations of both specific and non-specific synaptic weights. This ensures that non-specific synaptic weights do not all tend towards zero. Likewise, if synaptic scaling is too fast compared with Hebbian plasticity - contrary to experimentally observed timescales (Turrigiano et al., 1998) - then only specific synapses, which share highly correlated inputs, can sustain strong weights while non-specific synapses tend towards zero.\n\nEach neuron receives feedforward input from 1 of 4 possible visual stimuli representing gratings of different orientations, and independent noise. The Hebbian plasticity rule potentiates connections between neurons which share the same feedforward stimulus preference, due to their coactivity. This drives the emergence of strong bidirectional connections amongst stimulus-specific groups of neurons, while the remaining non-specific connections weaken (Figure 1B,C;\u00a0Ko et al., 2013; Clopath et al., 2010). Fast neurons develop these strong, specific connections sooner than slow neurons (Figure 1B, solid lines). However, the increased learning rate also leads to stronger synaptic weight fluctuations. These fluctuations occur both for synapses from neurons which share stimulus preference (specific connections) and for synapses from neurons which have different stimulus preference (non-specific connections). For slow neurons, in contrast, non-specific and specific connections tend towards either zero or the maximum synaptic weights respectively, remaining relatively stable after convergence (Figure 1B, black lines). This leads to connection specificity that is stronger and more stable compared with fast neurons (Figure 1D).\n\nThe observed dependence of connection specificity on learning rate is conserved if, instead of just two values of $\\alpha$ representing either fast or slow neurons, we simulate plasticity in a network of neurons with a diverse range of $\\alpha$ (Figure 1E). Increasing $\\alpha$ predominantly drives an increase in non-specific connections rather than a decrease in specific connections. This leads to an overall increase in the amount of synaptic input amongst neurons with high $\\alpha$.\n\nPopulation coupling is a recently characterised feature of neural activity which describes how correlated a neuron\u2019s activity is with the overall population activity, and which can be measured from calcium imaging recordings of neural activity (Okun et al., 2015). Since population coupling is correlated with the amount of local synaptic input in cortical networks (Okun et al., 2015), this measure could be a useful and experimentally observable proxy for the specificity of recurrent connectivity in our networks. We therefore investigate its suitability by measuring the population coupling of neurons in our network after synaptic plasticity (Materials\u00a0and\u00a0methods). Interestingly, population coupling increases with learning rate, closely following the dependence of non-specific connectivity on $\\alpha$ (Figure 1E, red points).\n\nThe dependence of a neuron\u2019s population coupling on its learning rate $\\alpha$, which we call a \u2018plasticity-coupling link\u2019, could provide a framework for relating the functional role of a neuron within a network to its dynamics. We therefore explore conditions necessary for this plasticity-coupling link by embedding a single plastic neuron within a static network and varying key model parameters (Figure 1\u2014figure supplement 1). A strong plasticity-coupling link requires both moderate amounts of noise within the network and relatively slow synaptic scaling compared with Hebbian plasticity, in agreement with experimental data (Turrigiano et al., 1998). We next investigate whether this plasticity-coupling link is robustly observed in more biologically detailed networks.\n\n### Diverse population coupling emerges in cortical networks with diverse learning rates\n\nAs the plasticity-coupling link is robustly observed in a fully-connected small network with simple stimulus responses, we next investigate i) whether the plasticity-coupling link is also present in larger networks which more accurately represent the synaptic connectivity and stimulus response properties observed in mouse visual cortex, and ii) whether the diverse population coupling observed in sensory cortex emerges simply by introducing diverse learning rates (Okun et al., 2015).\n\nWe explore this in a network of 250 excitatory neurons with randomly generated Gabor receptive fields. This network has been shown to reproduce receptive field correlations and synaptic weight statistics that are observed in mouse visual cortex (Watanabe et al., 2016; Cossell et al., 2015) (see Materials\u00a0and\u00a0methods section; Receptive-field based network model). We compare networks in which there is a uniform $\\alpha$ across all neurons to networks with diverse $\\alpha$.\n\nBoth networks with uniform $\\alpha$ and networks with diverse $\\alpha$ develop strong synaptic connections between neurons with similar receptive fields. There is, however, a broader range of summed synaptic inputs in diverse networks, when compared with uniform networks (Figure 2A). This occurs because the total excitatory synaptic input onto a neuron covaries with $\\alpha$ in the diverse network (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig2-v2.jpg)\n\n**Figure 2.:** (A) Distribution of summed synaptic input onto each neuron in networks with diverse learning rates (blue), and networks with uniform learning rates (green) (B) Mean recurrent excitatory synaptic input received by a neuron correlates with its learning rate, $\\alpha$.\u00a0(C) The population coupling of a neuron is correlated with the amount of recurrent synaptic input it receives for the network with diverse learning rates (blue), as opposed to the network with uniform learning rates (green). Error bars for each bin show 95% confidence interval. Lines show linear regression fit for all datapoints (shaded coloured area indicates 95% confidence interval) (D) Diverse population coupling occurs in our recurrent network model. The population coupling distribution is wider for networks with diverse learning rates (blue) compared to networks with uniform learning rates (green, p<1e-5, Levene test). (E) The variability of stimulus selectivity is correlated with population coupling in networks with diverse learning rates (blue, r\u00a0=\u00a00.18, p=1e-5, Spearman correlation), but not in networks with uniform learning rates (green, p=0.4, Spearman correlation). Lines show linear regression fit for all datapoints (shaded coloured area indicates 95% confidence interval) (F) Dependence of network properties on the amplitude of injected noise ($\\sigma_{OU}$). Stimulus selectivity decreases with increasing $\\sigma_{OU}$ for networks with both diverse and uniform learning rates (blue and green lines, respectively). The distribution of population coupling broadens with increasing noise for networks with diverse learning rates, but not for networks with uniform learning rates (blue and green dashed lines, respectively). Panel A-E use $\\sigma_{OU}=5.0$ (shaded gray area).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig2-figsupp1-v2.jpg)\n\nIn agreement with our previous observations, the population coupling of a neuron is determined by its total excitatory synaptic input in networks with diverse $\\alpha$ (Figure 2C, blue line. r\u00a0=\u00a00.29, p<1e-5, Spearman correlation). Diverse learning rates within a cortical network indeed lead to a broad distribution of population coupling, as observed by Okun et al. (2015);\u00a0Figure 2D, blue). Although the network with uniform $\\alpha$ also exhibits some heterogeneity of population coupling, in this network a neuron\u2019s population coupling is not correlated with the amount of synaptic input it receives (Figure 2C,D, green. p=0.52, Spearman correlation). The network with diverse $\\alpha$ exhibits population coupling which is both broadly distributed and correlated with synaptic input - in agreement with (Okun et al., 2015) - while the absence of correlation in the network with uniform $\\alpha$ is in contrast with experiments which demonstrate a correlation between synaptic input and population coupling (Okun et al., 2015). This suggests that networks with diverse learning rates better match experimental observations than networks with uniform learning rates.\n\nWe next investigate the long-term variability of stimulus selectivity within both networks by measuring the fluctuations of neuronal stimulus selectivity throughout a period of synaptic plasticity (Materials\u00a0and\u00a0methods). We find that the magnitude of these fluctuations is independent of population coupling in the uniform network (p=0.4, Spearman correlation), but is correlated with population coupling in the diverse network (r\u00a0=\u00a00.18,\u00a0p=1e-5, Spearman correlation Figure 2E).\n\nWe then characterise the dependence of population coupling and stimulus selectivity on the amplitude of external input noise, again for networks with either uniform or diverse $\\alpha$ (Figure 2F). As the majority of excitatory synaptic input received by neurons in visual cortex is recurrent, we simulate a regime with relatively weak feedforward stimulus-related input and high noise for Figure 2A-E (Cossell et al., 2015; Lin et al., 2015). This results in a broader distribution of population coupling and weaker stimulus selectivity for networks with diverse $\\alpha$, compared to networks with uniform $\\alpha$ (Figure 2F). The dynamics of cortical activity observed in vivo are therefore more closely captured by networks with diverse $\\alpha$, compared to networks with uniform $\\alpha$.\n\nOverall, these simulations show that the plasticity-coupling link observed in our small network model is robust in a larger network with receptive field properties and neuronal responses similar to mouse visual cortex. Networks with diverse $\\alpha$ exhibit a broader range of population coupling than networks with uniform $\\alpha$. Moreover, diverse learning rates introduce a correlation between a neuron\u2019s population coupling and its total excitatory synaptic input, in agreement with experimental observations (Okun et al., 2015). Taken together, diverse learning rates provide a parsimonious explanation for the diverse population coupling observed in sensory cortical networks.\n\n### Experimental validation: population coupling is correlated with stimulus response variability in vivo\n\nWe have demonstrated that the population coupling of a neuron in a recurrent network model depends on its inherent plasticity. This plasticity-coupling link predicts a correlation between a neuron\u2019s population coupling and the variability of its stimulus selectivity. We now test this prediction using 2-photon calcium imaging of visual cortex in awake adult mice (Materials\u00a0and\u00a0methods). The data we analyse is publicly available and was collected by the Allen Institute for Brain Science (Allen Brain Atlases and Data, 2016). Mice passively viewed drifting or static gratings, interleaved with natural movies, while the simultaneous responses of ~\u00a015,\u00a0000 excitatory neurons from 64 animals were recorded (Figure 3A). We measure the population coupling of each neuron over the entire recording session, and the preferred orientation of each neuron during the first 10 min and last 10 min of the experiment (Materials\u00a0and\u00a0methods, Figure 3B). We then compare these two measurements of orientation preference to identify whether the preferred orientation of some neurons vary over the course of the experiment.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig3-v2.jpg)\n\n**Figure 3.:** (A) Diagram of stimulus and data analysis protocol (B) dF/F calcium fluorescence traces of neurons (red traces) in an example experiment from the Allen Brain Observatory.\u00a0Mean activity is shown in black, and the population coupling of each neuron is indicated by its colour changing from light to dark red with increased population coupling. (C) The population coupling distribution of all neurons across all experiments (black, 64 experiments, 15,281 neurons) and in simulations (gray, 15 experiments, 3750 neurons). (D) Absolute difference in preferred orientation (black, static gratings, $\u0394\u2062ORI_{pref}$) and preferred direction (gray, drifting gratings, $\u0394\u2062DIR_{pref}$) between the beginning and the end of the recording session. (E)\u00a0$\u0394\u2062ORI_{pref}$ (left, black, static gratings) and $\u0394\u2062DIR_{pref}$ (right, gray, drifting gratings) are correlated with population coupling. Data shown for all neurons with reliable stimulus responses across all experiments, binned by population coupling. Error bars for each bin show 95% confidence interval. Linear regression fit for all datapoints (shaded gray area indicates 95% confidence interval). (F) Distribution of ratios of the mean population coupling of neurons that change their preferred orientation ($\u0394\u2062ORI_{pref}>0$) or preferred direction ($\u0394\u2062DIR_{pref}>0$) versus mean population coupling of neurons that conserve their preferred orientation ($\u0394\u2062ORI_{pref}=0$) or preferred directions ($\u0394\u2062DIR_{pref}=0$), for each individual static grating experiment (black), drifting grating (gray) experiment, or network simulation (light gray). Dashed vertical line indicates expected value if a neuron\u2019s orientation or direction preference variability is not dependent on its population coupling (*** p<0.001, one sample t-test).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A-B) Ratios of the mean population coupling of neurons that change their preferred orientation or preferred direction versus mean population coupling of neurons that conserve their preferred orientation or preferred directions, for each individual static grating experiment (black) and drifting grating (gray) experiment, for neurons with the top 75% most reliable neurons (A), or for all neurons (B). (C-D)$\u0394\u2062DIR_{pref}$ (left, gray, static gratings) and $\u0394\u2062ORI_{pref}$ (right, black, drifting gratings) are correlated with population coupling. Data shown for the neurons with the top 75% of stimulus response reliability (C) or for all neurons (D), binned by population coupling. Linear regression fit for all datapoints (shaded gray area indicates 95% confidence interval). (E) (top) Distribution of response reliability for all neurons across all drifting grating (gray, left) and static grating (black, right) experiments. (bottom) Relationship between response reliability and change in direction selectivity ($\u0394\u2062DIR_{pref}$) (left) and population coupling (right). (F) Relationship between population coupling and $\u0394\u2062ORI_{pref}$ (top) or $\u0394\u2062DIR_{pref}$ (bottom), when response reliability is regressed out as a potentially confounding factor.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Changes in spatial frequency selectivity ($\u0394\u2062SF_{pref}$, (A)) and temporal frequency selectivity ($\u0394\u2062TF_{pref}$, (B)) are correlated with population coupling.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Changes in direction selectivity versus direction selectivity index (DSI).\u00a0(B) Population coupling versus direction selectivity index (DSI). (C) Changes in direction selectivity versus mean calcium fluorescence. (D) Changes in direction selectivity versus peak calcium fluorescence. (E) Relationship between population coupling and $\u0394\u2062DIR_{pref}$ (blue), and when DSI is regressed out as a potentially confounding factor (black). (F) Relationship between population coupling and $\u0394\u2062DIR_{pref}$ (blue), and when peak calcium fluorescence is regressed out as a potentially confounding factor (black).\n\nThere is a broad distribution of population coupling, in agreement with previous observations (Figure 3C;\u00a0Sedigh-Sarvestani et al., 2017; Okun et al., 2015). Roughly 75% of neurons express variability of their preferred orientation or direction between the beginning and the end of the experiment. The distribution of changes in preferred orientation ($\u0394\u2062ORI_{pref}$) and preferred direction ($\u0394\u2062DIR_{pref}$) is skewed towards smaller magnitudes (Figure 3D).\n\nPopulation coupling is weakly but significantly correlated with the average change in preferred orientation and in preferred direction (Figure 3E, r\u00a0=\u00a00.1, p<1e-5 and r\u00a0=\u00a00.12, p<1e-5, Spearman correlation). We characterise this dependence for each experiment by comparing the population coupling of neurons with variable preferences (those with $\u0394\u2062ORI_{pref}$> 0 or $\u0394\u2062DIR_{pref}$> 0) versus those with stable preference. While there is substantial variability of the strength of the effect, the majority of experiments show a trend in which neurons with plastic orientation preferences have a higher mean population coupling than those with stable orientation or direction preferences (Figure 3F, p<0.001 for both static and drifting gratings, t-test). We observed similar correlations between population coupling and the average change in preferred spatial frequency and in preferred temporal frequency (Figure 3\u2014figure supplement 3E, r\u00a0=\u00a00.054, p=0.001 and r\u00a0=\u00a00.058, p=0.001, Spearman correlation).\n\nAs the mean activity level of a neuron could conceivably determine its stimulus preference stability (Ranson, 2017; Grosmark and Buzs\u00e1ki, 2016), we tested this and found no dependence of the tendency of a individual neuron to change stimulus preference on its average calcium fluorescence (p=0.88, Spearman correlation, Figure 3\u2014figure supplement 4). We also found that this relationship between the change in selectivity and population coupling remained when controlling for peak calcium fluorescence or selectivity index as a potential confounding factor (Figure 3\u2014figure supplement 4).\n\nOkun et al. (2015) did not observe any correlations between population coupling of a neuron and its orientation selectivity. In contrast, our network model predicts that neurons with high population coupling are less selective than neurons with low population coupling. We tested whether there was this predicted dependence between population coupling and orientation selectivity in these data. We indeed found a weak anti-correlation between population coupling and orientation selectivity index (Figure 3\u2014figure supplement 1, r\u00a0=\u00a0\u22120.05,\u00a0p<1e-6, Pearson correlation).\n\n### Diverse learning rates maintain both a stable backbone and a flexible substrate of stimulus representation\n\nOur analysis thus far explored the impact of diverse rates of plasticity on synaptic connectivity. We established a link between diverse population coupling and diverse stimulus response variability, both of which are observed in sensory cortex. We now explore the functional implications of diverse population coupling and learning rates within recurrent networks. In order to simplify our analysis we consider both forms of diversity in isolation.\n\nThe presence of diverse rates of plasticity in a network suggests a dichotomy of roles: less plastic neurons could form stable stimulus representations while more plastic neurons could allow flexible representation. This could, for example, be beneficial during perceptual learning. We test this hypothesis by simulating an extended period of perceptual learning in our small network model (Materials\u00a0and\u00a0methods, Figure 4A). We do this using a simple paradigm in which a randomly chosen feedforward stimuli is associated with an increased external input. This external input could be mediated by a reward, or some other top-down signal. Hebbian plasticity potentiates the recurrent synaptic connections from neurons which are tuned to the stimulus onto all neurons. This increases the selectivity of all neurons to the associated stimulus (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56053/elife-56053-fig4-v2.jpg)\n\n**Figure 4.:** (A) The evolution of mean selectivity to the feedforward stimulus (top) and a stimulus associated with an additional external input (bottom) in networks composed either entirely of neurons with slow $\\alpha$ (black), fast $\\alpha$ (gray), or a mix of both fast and slow $\\alpha$ (dashed black).\u00a0Shaded gray region indicates when the additional external input is present, and the coloured circles indicate the stimulus the external input is associated with at that time (this switches every 25 s) (B) Synaptic connectivity after plasticity for a network of neurons with slow (small circles) or fast (large circles) learning rates. Neurons in the network receive input selective to 1 of 4 possible stimuli (colour denotes stimulus preference). Synaptic inputs onto fast neurons and slow neurons are coloured gray and black respectively. The spatial organisation of neurons is for visualisation purposes only. (C\u2013D) Investigating the impact of population coupling on perceptual learning. (C) Coupling of either the plastic neuron or static neurons to the population is set by adjusting $PC_{plastic}$ and $PC_{plastic}$ respectively. Perceptual learning is simulated through an additional external input whenever the preferred stimulus of the red neurons is present. This leads to the predominant synaptic weight onto the plastic neuron (black) switching from the neuron with the same original preferred stimulus (blue) to the neuron with the associated preferred stimulus (red). (D) Amount of perceptual learning which occurs at the plastic neuron, as the population coupling of either the plastic neuron ($PC_{plastic}$, x-axis) or static ($PC_{static}$, y-axis) is varied. Perceptual learning is quantified by the ratio of the red synaptic weight (associated stimulus) to the blue synaptic weight (original preferred stimulus of the plastic neuron) after plasticity. Red regions ($\u03a6$) indicate successful perceptual learning, and occur only when $PC_{plastic}$ is high and $PC_{static}$ is low. (E) Relative stimulus decoding performance of fixed recurrent networks after a period of plasticity in order to develop the network. Networks were developed using either entirely neurons with fast learning rates, slow learning rates, or a 50/50 mix of both learning rates. The feedforward stimulus strength (x-axes) and noise (y-axes) were varied along a logarithmic scale. (F) Illustration of the synergistic effect of the plasticity-coupling link on perceptual learning. The plasticity-coupling link ensures that slow neurons have low population coupling and fast neurons have high population coupling, which panel D demonstrates is necessary for perceptual learning.\n\nWe evaluate the ability of our network to continually learn these stimulus associations in the case where $\\alpha$ is slow for all neurons, $\\alpha$ is fast for all neurons, or where there is diverse $\\alpha$ (both slow and fast) for each feedforward stimulus group.\n\nWe find that a network with only fast $\\alpha$ quickly learns the stimulus associations (Figure 4A, bottom). However, repeated associations with neurons that do not share feedforward stimuli cause the specificity of recurrent connectivity to decrease, thus degrading the representation of feedforward stimuli (Figure 4A, top). Although neurons still form associations with the feedforward stimulus, this is because we keep the feedforward stimulus weights fixed; one can imagine that this feedforward selectivity may also degrade if these weights were plastic. Conversely, the network with only slow $\\alpha$ retains a stable representation of the feedforward stimuli but performs poorly in representing the associated stimulus (Figure 4A). The network with diverse $\\alpha$ overcomes these issues by having fast neurons which flexibly learn stimulus associations and slow neurons which maintain a \u2018backbone\u2019 of stimulus representation (see diagram, Figure 4B).\n\n### The plasticity-coupling link enables efficient perceptual learning\n\nHaving demonstrated the advantage of diverse learning rates within a network for perceptual learning, we now ask whether diverse population coupling has any impact on a network\u2019s performance in this task. Given the plasticity-coupling link, we are particularly interested in whether the impact of population coupling on performance is dependent on a neuron\u2019s rate of plasticity. To investigate this, we choose the extreme case in which there is a single neuron with plastic synaptic inputs embedded in an otherwise static recurrent network. Since all other synapses in the network are static (see diagram, Figure 4C), we focus on how synaptic inputs onto the plastic neuron evolve during learning. We adjust the population coupling (PC) of either the single plastic neuron ($PC_{plastic}$) or the static neurons ($PC_{static}$), and measure the ability of the plastic neuron to learn a stimulus association (Materials\u00a0and\u00a0methods). We simulate perceptual learning by turning on an extra external input to all neurons in the network whenever the associated stimulus (red) is presented to the network (Figure 4C). We judge the plastic neuron to have learned the association if the synaptic weight from the presynaptic neuron selective to the associated stimulus becomes stronger than the weight from the presynaptic neuron selective to the non-associated stimulus (blue). We find that strongly coupling the plastic neuron to the population improves performance, while strongly coupling the static neurons to the population impairs performance (Figure 4D).\n\nWe can understand this by considering that, for learning to occur, synaptic potentiation must happen between the static neuron corresponding to the associated stimulus (red) and the plastic neuron. Increasing the plastic neuron\u2019s coupling to the rest of the population amplifies the correlation between the pre- and post- synaptic neuron when the associated stimulus is present, since the entire population receives an extra external input. On the other hand, strong coupling amongst the presynaptic static neurons decreases their stimulus selectivity, since they will be more co-active regardless of the stimulus identity. This corrupts the signal during stimulus association. These two effects combine, such that the new stimulus association is learned only when there is low population coupling amongst static neurons ($PC_{static}$) and high population coupling for the plastic neuron ($PC_{plastic}$) (Figure 4D, labelled $\u03a6$). In order to enhance perceptual learning with diverse learning rates, plastic neurons should therefore be more coupled to the rest of the population than stable neurons. Correlated diversity of population coupling and plasticity helps achieve this (Figure 2E), ensuring that neurons best suited to the necessary stimulus representation remain stable, while neurons best suited to learning stimulus associations remain flexible. The plasticity-coupling link therefore efficiently exploits the functional advantages conferred by both diverse learning rates and diverse population coupling.\n\n### Diverse learning rates lead to networks with improved stimulus coding capabilities\n\nUntil now we have considered the effect of population coupling on a network\u2019s ability to learn stimulus associations. We are also interested in the impact of population coupling on a task that does not involve synaptic plasticity, since the differences in non-specific connectivity alone may affect a neuron\u2019s computational capability. We choose stimulus decoding as a simple example, and measure performance at decoding pairs of stimuli in a static network, after it has gone through a period of synaptic plasticity (Materials\u00a0and\u00a0methods). We compare three different network types; one which has been developed while it had only slow $\\alpha$, one developed with only fast $\\alpha$, and one developed with diverse $\\alpha$ (Figure 4E). In a network with only slow $\\alpha$, and therefore low population coupling, stimulus decoding performs relatively well when there are high levels of noise in the input. Networks with only fast $\\alpha$ perform relatively well when there are low levels of noise. A network with diverse $\\alpha$ seems to advantageously combine both of these properties, so that its performance is high across the entire range of input strength and noise levels.\n\n## Discussion\n\nWe have studied the impact of diverse learning rates in a recurrent network model of visual cortex. Intriguingly, a plasticity-coupling link emerges in networks with diverse learning rates, in which neurons with fast learning rates are more coupled to population activity than neurons with slow learning rates. We substantiated a key prediction of our plasticity-coupling link with in vivo calcium imaging of mouse visual cortex from the Allen Brain Observatory (Allen Brain Atlases and Data, 2016), finding that a neuron is more likely to exhibit stimulus preference variability if it has high population coupling. Based on our findings we propose that the plasticity-coupling link efficiently combines stable and flexible stimulus representation.\n\n### Stability and plasticity of stimulus responses\n\nThe architecture of a plastic substrate of neurons on top of a stable \u2018backbone\u2019 (Figure 4B) has been hypothesised before, and there is some compelling experimental evidence for this proposal (Grosmark and Buzs\u00e1ki, 2016; Clopath et al., 2017; Rose et al., 2016; Panas et al., 2015). In particular, tracking of hippocampal cell assemblies reveal subsets of either plastic, highly active neurons or rigid, less active neurons (Grosmark and Buzs\u00e1ki, 2016). Likewise, a statistical-mechanical analysis of network activity in hippocampal cell cultures identified both neurons which are highly active and contribute predominantly to network stability, and neurons which exhibit more long-term activity fluctuations without compromising overall network stability (Panas et al., 2015). In primary visual cortex - which we model - neurons exhibit characteristic fluctuations of their stimulus selectivity during baseline measurements, but nonetheless tend to retain their preferred stimulus following recovery from sensory deprivation (Rose et al., 2016). This provides evidence for a stable \u2018backbone\u2019 of recurrent connectivity which is resistant to sensory perturbations (Clopath et al., 2017). (Ranson, 2017) investigated the stability of locomotion-dependent modulation of visual responses across 14 days and, in contrast to Grosmark and Buzs\u00e1ki (2016), found that highly responsive neurons exhibited reasonably stable stimulus preference while weakly responsive neurons exhibit plastic stimulus preference. However, these experiments tracked different stimulus features - and over longer timescales - when compared with our study. Moreover, our inclusion of a homeostatic inhibitory plasticity rule that precisely controls excitatory firing rate precludes us from making predictions about the dependence of a neurons average firing rate and its propensity for stimulus preference plasticity (Vogels et al., 2011). Similar links between plasticity and population dynamics could emerge in other experiments that chronically image cortical network activity (Driscoll et al., 2017; Singh et al., 2015; Peron et al., 2015).\n\nSince the majority of experiments which track stimulus preference evolution do so during visual discrimination paradigms, it is likely that top-down influences such as attention or reward modulation play significant roles in their observed dynamics (Pakan et al., 2018; Caras and Sanes, 2017; Poort et al., 2015; Schoups et al., 2001). An exception is (Goltstein et al., 2013), in which stimulus preference is measured in the anaesthetised state, meaning that top-down inputs are likely to be absent. Likewise, (Ranson, 2017) tracked stimulus response stability during passive viewing, similar to the experimental setup of the data we analyse (Allen Brain Atlases and Data, 2016). As well as top-down modulation, further features missing from our network model are a realistic inhibitory circuitry (Tremblay et al., 2016; Letzkus et al., 2015), and incorporating changes in network dynamics which occur during sleep (Grosmark and Buzs\u00e1ki, 2016; Singh et al., 2015), both of which are widely viewed to play an important role in regulating the plasticity of neural representation.\n\n### A plasticity-coupling link in vivo\n\nOur analysis of in vivo calcium imaging substantiates a key prediction of our network model by observing a correlation between the stimulus preference plasticity of a neuron and its population coupling (Figure 3D). Note that this relationship does not arise in our receptive-field network model with uniform learning rates (Figure 2E), so it is not a trivial consequence of any network model that exhibits diverse population coupling. Although the correlations we measured are quite small, this variability reflects what is observed in our network model (Figure 2E), and is not surprising given that there are likely many unobserved factors - aside from population coupling - which contribute to the dynamics of a neuron\u2019s observed stimulus response. Indeed, our network with uniform learning rates demonstrates significant stimulus response variability (Figure 2E, green), but crucially does not capture the correlation between this variability and population coupling which we observe both in vivo and in the network with diverse learning rates.\n\nAn advantage of the Allen Brain Observatory is the large amount of data and easily replicable data processing pipeline which allows us to build upon previous work investigating population coupling in the same dataset (Sedigh-Sarvestani et al., 2017). Since the population coupling of a neuron is correlated across brain states, and is only weakly dependent on stimulus type and mean fluorescence, we believe that it provides a good measure of a neurons functional integration within the local network, and would - according to our model - therefore provide a reasonable estimate of its propensity for perceptual learning (Figure 4D;\u00a0Sedigh-Sarvestani et al., 2017; Okun et al., 2015). In agreement with our network model, and in contrast with observations from Okun et al. (2015), population coupling is anti-correlated with orientation selectivity in the Allen Brain Observatory dataset (Figure 3\u2014figure supplement 1). The disparity between these two experiments could be due to different experimental conditions, or the effect may not have been previously observed due to the smaller number of neurons used n\u00a0=\u00a0431 in Okun et al. (2015). Moreover, our observation that the changes in stimulus preferences ($\u0394\u2062ORI_{pref}$) are often non-zero but skewed towards small absolute values (Figure 3C) are in agreement with the hypothesis that stimulus preference is a slowly drifting property (Rose et al., 2016). Unfortunately, the experimental protocol limits us to directly comparing stimulus preference at only two timepoints; the beginning and end of a 62 min imaging session (Figure 3A). Nonetheless, significant changes in synaptic efficacies can be expressed within this time (Meyer et al., 2014). We hope that these findings will stimulate further experiments that allow us to more precisely test for the presence of a plasticity-coupling link across longer timepoints, and during learning.\n\nWhile analysing fluctuations in stimulus selectivity in network simulations allow us to perform a like-for-like comparison with what could be measured from the experimental data, there are alternative approaches which may capture more complex stimulus representations (Gallego et al., 2020), and the plasticity of these representations. Exploring how plasticity relates to neurons involvement in such low-dimensional latent dynamics would be an interesting direction for further work.\n\n### Population coupling and neuron function\n\nOur network model provides a parsimonious explanation for the diverse population coupling recently observed in sensory cortex (Okun et al., 2015). Population coupling is dependent on the amount of recurrent synaptic input a neurons receives, in agreement with experimental data (Figure 2C). Note that this dependence is not present in networks with uniform learning rates, even though they too exhibit diverse population coupling. Moreover, the width of the population coupling distribution increases as the recurrent network approaches a dynamic regime dominated by high noise and diverse selectivity, typical in cortical networks (Figure 2F). These findings suggest that different population couplings may simply be a feature of varying learning rates and does not necessarily mean (although we cannot exclude it) that the observed diversity reflects entirely different cell classes. Furthermore, one can imagine alternative mechanisms that lead to diverse population coupling in recurrent networks, such as imposing heterogeneous targets for the number of synaptic inputs received by each neuron. Investigating such alternative mechanisms was outside the scope of our study, but would provide an interesting avenue for further theoretical research.\n\nThe proposed plasticity-coupling link presents a counterintuitive interpretation of the role of \u2018soloists\u2019 and \u2018choristers\u2019 originally described by Okun et al. (2015). While one may naively suppose that the weakly coupled \u2018soloists\u2019 are suited to undergo plasticity during learning, we propose that it is in fact the strongly coupled \u2018choristers\u2019 with a more plastic representation.\n\nThe functional impact of population coupling on learning is crucial: in order to enhance perceptual learning, plastic neurons in recurrent networks should be more coupled to the rest of the population than stable neurons (Figure 4D,F). We find that high population coupling helps plastic neuron change their stimulus preference towards an associated stimulus, but hinders the ability of stable neurons to provide an instructive signal for learning. Correlated diversity of population coupling and learning rate therefore enables both robust stimulus representation (low $\\alpha$, PC) and a flexible substrate suitable for perceptual learning (high $\\alpha$, PC). Strikingly, this relationship is precisely what the predicted plasticity-coupling link ensures (Figure 4E). Moreover, a recent theoretical study of sensory decoding proposed that untuned neurons contribute to decoding when they are correlated with tuned neurons (Zylberberg, 2017). Again, this is the relationship predicted by our model, since plastic neurons are less tuned than rigid neurons and are more strongly coupled to the population (Figure 1D,E).\n\nAn alternative hypothesis for how population coupling relates to neural plasticity can be found in normative theories of learning. Consider a recurrent neural network trained with gradient descent to perform some function. Regardless of the function being learned, on average, neurons with greater impact on the rest of the network will have larger synaptic updates than other neurons. This is because the gradient of any function with respect to a neuron will depend on its ability to influence future activity, and neurons that contribute more to the gradient will be updated more. Neurons with a strong tendency to activate other neurons will have high levels of population coupling, while neurons with a tendency to inhibit other neurons (disynaptically, since these are excitatory neurons) will have low levels of population coupling. Neurons with limited impact will have moderate levels of population coupling. Thus, a gradient-based account would predict that there should be a U-shaped curve relating population coupling to plasticity. Our data showed may show some initial decrease in plasticity as population coupling increases (Figure 3F), but these questions outstrip the focus of this work. Consideration of whether alternative models based on gradients could explain this data may nonetheless be a fruitful avenue of enquiry for future experiments.\n\n### Previous theoretical work\n\nThere are many previous theoretical explorations of how diversity in the synaptic plasticity of individual neurons affects learning. A recent study proposes a conceptually similar mechanism for modulating the stability or flexibility of memory formation, by implementing either symmetric or asymmetric STDP learning rules (Park et al., 2017). Diversity in synaptic learning rates was also explored within the traditional machine learning framework, whereby fast weights store temporary memories of recent events, compared with slow weights which capture regularities in input structure (Ba et al., 2016). Our work is related to previous approaches for overcoming catastrophic forgetting, which is often observed in neural networks during learning (Grossberg, 1987; Carpenter and Grossberg, 1987; McClelland et al., 1995; Fusi et al., 2005; Roxin and Fusi, 2013; Benna and Fusi, 2016). These approaches typically involve partitioning memories across timescales by implementing either synaptic states with different timescales, or neural architectures with different timescales. Here, we intead based our approach on experimental observations that suggest diverse learning rates within a sensory cortical network (Ranson, 2017; Clopath et al., 2017;\u00a0Poort et al., 2015; L\u00fctcke et al., 2013; Rule et al., 2019;\u00a0Rose et al., 2016). Finally, individual synaptic updates in our model are defined by the learning rate of the postsynaptic neuron (Equation 3). Further work could explore whether our observed outcomes change if updates are instead dependent on the learning rate of the presynaptic neuron.\n\nThe plasticity-coupling link\u2019s impact on perceptual learning suggests a dichotomy of roles amongst neurons in a network, tied to a particular functional architecture: a stable \u2018backbone\u2019 of stimulus representation formed by neurons with slow synaptic plasticity and low population coupling, on top of which lies a flexible substrate of neurons with fast synaptic plasticity and high population coupling. Diverse learning rates naturally enable this architecture, and offer a compelling candidate mechanism for mediating both forms of diversity - population coupling and stimulus response stability - recently observed in cortical networks. Finally, the plasticity-coupling link provides neuroscientists with a means to assess the tendency of particular neurons to influence future learning: those which are highly coupled to population activity are most likely to express plasticity. Ongoing advances in chronic multi-neuron calcium imaging, alongside neuron-specific optogenetic stimulation, will allow us to further probe and exploit these possibilities.\n\n## Materials and methods\n\nOur network model simulations were written in python 2.7 with numpy and scipy.\n\n### Neuron model\n\nFor both the fully connected and the receptive field networks we use a simple firing rate neuron model, given by the transfer function $g\u2062(x)$ defined below, and as used previously by Rajan et al. (2010); Hennequin et al. (2014).\n\n$$\ng(x)=0\u00a0if\u00a0x<0=(r_{max}\u2212r_{0})tanh(x/(r_{max}\u2212r_{0}))\u00a0if\u00a0x\\geq0.\n$$\n\nThis leads to firing rates with a baseline of $r_{0}$ and a maximum of $r_{max}$. Following (Rajan et al., 2010), the firing rates $y_{i}$ of neuron $i$ driven by external input $H_{i}$ in a network are described below.\n\n$$\n\\frac{d\u2062y_{i}}{d\u2062t}=-y_{i}+\\sumj=1NW_{i\u2062j}\u2062g\u2062(y_{j})+H_{i}\u2062,\n$$\n\nwhere $W_{i\u2062j}$ is the weight of the synaptic connection from neuron $j$ to neuron $i$.\u00a0All parameters are shown in Table 1.\n\n**Table 1.**\n Simulation Parameters.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Hstim</td>\n      <td>8.0</td>\n      <td>r0</td>\n      <td>1.0</td>\n      <td>rmax</td>\n      <td>20.0</td>\n      <td>y0</td>\n      <td>5.0</td>\n    </tr>\n    <tr>\n      <td>\u03b1s</td>\n      <td>2.0\u2062x\u206210-6 Hz</td>\n      <td>\u03b6</td>\n      <td>2.0\u2062x\u206210-4 Hz</td>\n      <td>\u03b7</td>\n      <td>1.0\u2062x\u206210-5 Hz</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>wmax</td>\n      <td>0.042</td>\n      <td>wmax-inh</td>\n      <td>50</td>\n      <td>WtotalE\u2062E</td>\n      <td>0.75</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c3OU</td>\n      <td>1</td>\n      <td>\u03c4OU</td>\n      <td>10 ms</td>\n      <td>WinitEE</td>\n      <td>0.5wmax</td>\n      <td>WinitIE</td>\n      <td>0.2</td>\n    </tr>\n  </tbody>\n</table>\n\n### Modelling synaptic plasticity with diverse learning rates\n\nWe use a simple Hebbian learning rule with homeostatic synaptic scaling to model synaptic plasticity of recurrent excitatory to excitatory (E-E) synapses (Gerstner and Kistler, 2002),\n\n$$\n\\frac{d\u2062W_{i\u2062j}^{E\u2062E}}{d\u2062t}=\\alpha_{i}y_{i}y_{j}-\u03b6(\\sum_{k=1}^{N_{E}}W^{E\u2062E}_{i\u2062k}-W^{E\u2062E}_{total})\n$$\n\nwhere $\\alpha_{i}$ is the learning rate of the postsynaptic neuron and $y_{j}$ and $y_{i}$ are the activities of the pre- and postsynaptic neuron respectively. $\u03b6$ is the time constant of synaptic scaling, and $W_{total}^{E\u2062E}$ is the target amount of total recurrent synaptic input which each neuron can receive under the synaptic scaling rule.\n\nThis form of excitatory plasticity introduces competition amongst presynaptic synaptic weights and leads to the development of stimulus selectivity, as discussed in Ko et al. (2013); Clopath et al. (2010). We use a homeostatic rule to model inhibitory synaptic plasticity of recurrent inhibitory to excitatory (I-E) weights (Vogels et al., 2011),\n\n$$\n\\frac{d\u2062W_{i\u2062j}^{I\u2062E}}{d\u2062t}=\u03b7\u2062y_{j}\u2062(y_{i}-y_{0})\u2062,\n$$\n\nwhere $y_{0}$ is the homeostatic target firing rate, $\u03b7$ is the learning rate, and $W_{i\u2062j}^{I\u2062E}$ is the weight of the synaptic connection from inhibitory neuron $j$ to excitatory neuron $i$.\n\nExcitatory weights are bounded so that their values lie between 0 and $w_{max}$, and inhibitory weights are bounded so that they lie between $-w_{max-inh}$ and 0.\n\nWhile including two homeostatic mechanisms in our network model may seem redundant, they play different regulatory roles. Inhibitory plasticity largely controls the balance of excitation and inhibition received by a neuron, ensuring that it operates within its dynamic range. Synaptic scaling ensures that the total amount of recurrent excitation in the network is kept fixed as we vary its external input, while also introducing competition between presynaptic weights so that stimulus selectivity emerges. The synergistic effect of including multiple forms of plasticity has been widely studied in theoretical studies (Zenke et al., 2015; Litwin-Kumar and Doiron, 2014; Triesch, 2007; Clopath et al., 2016).\n\nNote that the speed of all learning rates $\\alpha$, $\u03b6$, and $\u03b7$ are artificially increased in order to reduce the computational times resources required to simulate our network model. The timescales of synaptic plasticity in our network models are in the order of hundreds of seconds, while synaptic plasticity during perceptual learning occurs over the course of days in vivo. This increased learning rate does not qualitatively affect our results, as there is a sufficient separation of timescales between synaptic plasticity and network dynamics, and is a standard assumption in network models of synaptic plasticity (Zenke et al., 2015; Litwin-Kumar and Doiron, 2014).\n\n### Fully connected network model\n\nThe fully connected network consists of $N_{E}$ excitatory neurons and a global inhibitory neuron ($N_{I}=1$). The dynamics of both inhibitory (I) and excitatory (E) neurons are described by Equation 1 and Equation 2. There is dense all-to-all synaptic connectivity in the E-E, E-I and I-E populations, and no I-I connectivity. Self-connections, or autapses, are not permitted in this network. $W$ in Equation 2 is a square matrix with $(N_{E}+N_{I})^{2}$ elements.\n\nFor Figure 1, we use a network with 48 excitatory neurons, and four input stimuli. Each neuron $i$ has a preferred stimulus $\\theta_{i}^{pref}$, such that there are 12 neurons corresponding to each input stimulus. Each neuron receives its preferred stimulus input $H_{stim}$, and an independent noise source generated by an Ornstein-Uhlenbeck process, OU, with a mean of 0, variance of $\\sigma_{OU}$ and correlation time $\\tau_{OU}$. The external input $H_{i}$ to a neuron $i$ is therefore given by\n\n$$\nH_{i}\u2062(t)=\\delta\u2062(\\theta_{i}^{pref}-\\theta_{input}\u2062(t))\u2062H_{stim}+OU_{i}\u2062(t)\u2062, \n$$\n\nwhere $\\delta$ is the Kronecker delta function. For Figure 1B\u2013D, these input groups are further divided so that there are six slow neurons (with $\\alpha_{i}=\\alpha_{s}$) and six fast neurons (with $\\alpha_{i}=5\u2062\\alpha_{s}$) per group. For Figure 1E, each input group of 12 neurons contains a single neuron corresponding to each of the 12 learning rates. The learning rates are logarithmically spaced between $0.5\u2062\\alpha_{s}$ and $75\u2062\\alpha_{s}$.\n\nAll excitatory-to-inhibitory synapses are uniformly initialised with weights $W_{init}^{EE}$, excitatory-to-inhibitory synapses with weights $W_{init}^{EI}$, and inhibitory-to-excitatory synapses with weights $W_{init}^{IE}$. We simulate the evolution of synaptic weights during visually evoked activity by sequentially presenting the network with a randomly chosen stimulus from the four input stimuli. Each stimulus is presented for 500 ms. The total simulation time is 500 s, and synaptic weights are updated at each timestep with the learning rules given by Equation 3 and Equation 4.\n\nFor Figure 1D, connection specificity is defined as the average ratio of specific to non-specific excitatory synaptic weights received by neurons. Synaptic inputs from neurons in the same input stimulus group as the postsynaptic neuron are specific (i.e. they share the same feedforward stimulus preference), while all other synaptic inputs are non-specific. Specificity fluctuations are defined as the standard deviation of the connection specificity over time, where specificity is sampled every second from 200 to 500 seconds.\n\n### Measuring population coupling\n\nAs introduced by Okun et al.\u00a0(2015), the population coupling $PC_{i}$ of a neuron $i$ is measured by calculating the Pearson correlation coefficient of each neurons\u2019 activity $x_{i}$ with the average activity of the rest of the population;\n\n$$\nPC_{i}=corr\u2062(x_{i},\\frac{1}{N-1}\u2062\\sumj\\neqiNx_{j})\u2062.\n$$\n\nSynaptic weights are kept fixed during the population coupling measurement, while external input is as in Equation 5. We measured population coupling using 250 s of activity.\n\n### Receptive-field based network model\n\nFor Figure 2, we adapt a previously developed model of receptive field properties in mouse visual cortex (Watanabe et al., 2016). We add neuronal dynamics and, beginning with uniform connectivity, simulate synaptic plasticity as visual stimuli are presented to the network. This model is constructed by assigning receptive fields to each excitatory neuron from a 2D Gabor function,\n\n$$\nRF(x^{\u2032},y^{\u2032})=A exp(\\frac{\u2212x^{\u20322}}{2\\sigma_{x}^{2}}\u2212\\frac{\u2212y^{\u20322}}{2\\sigma_{y}^{2}})cos(2\\pifx^{\u2032}+\u03d5)x^{\u2032}=x\u00a0cos\\theta\u2212y\u00a0sin\\thetay^{\u2032}=x\u00a0sin\\theta+y\u00a0cos\\theta\n$$\n\nwhere A is the amplitude, $\\sigma_{x}$ and $\\sigma_{y}$ are the standard deviations of the Gaussian, $\\theta$ is the orientation, $f$ is the frequency and $\u03d5$ is the phase of the receptive field. A network of 250 excitatory neurons with receptive fields is randomly generated from Equation 7, with $f=2$, $\\sigma_{x}=\\sigma_{y}=0.5$, $\u03d5\u223c(0,2\u2062\\pi)$, $\\theta\u223c{\\pi/4,\\pi/2,3\u2062\\pi/4,\u2026,2\u2062\\pi}$. As in the previous network, there is a single inhibitory neuron which all excitatory neurons project to, and receive inhibition from.\n\nNeurons are rate-based and have similar dynamics as in the simple network model (Equation 1,\u00a0Equation 2). Synaptic plasticity is also governed by the same learning rules (Equation 3,\u00a0Equation 4). Inputs are presented to the network in the form of 2D images, and the input to each neuron $i$ for a given image $I_{ext}$ is determined by the pixel-wise dot product of that image with the neurons\u2019 receptive field $RF_{i}$, in addition to an independent noise term for each neuron given by an Ornstein-Uhlenbeck process;\n\n$$\nH_{i}\u2062(t)=I_{ext}\u22c5RF_{i}+OU_{i}\u2062(t)\u2062.\n$$\n\nAll excitatory-to-inhibitory synapses are uniformly initialised with weights $W_{init-RF}^{EE}$ and inhibitory-to-excitatory synapses with weights $W_{init-RF}^{IE}$. We simulate the evolution of synaptic weights during visually-evoked activity by sequentially presenting the network with randomly chosen bars of different orientations. Each image is presented for 500 ms. The total simulation time is 500 s, and synaptic weights are updated at each timestep. All results in Figure 2 are pooled from 15 independent network instances, with 250 excitatory neurons in each network instance.\n\nWe define the selectivity of each neuron as $w\u00af_{specific}-w\u00af_{non-specific}$, where $w_{specific}$ are the synaptic weights from neurons which share the same receptive field orientation and $w_{non-specific}$ are the synaptic weights from neurons which have a different receptive field orientation.\n\n### The allen brain observatory: 2-photon calcium imaging of visual responses in vivo\n\nWe use data from the Allen Brain Observatory, a publicly available and curated survey of neural activity in adult mouse visual cortex. A comprehensive description of the experimental methods, data acquisition and data analyses are available as white papers published by the Allen Institute for Brain Science (Allen Brain Atlases and Data, 2016). A list of the experiment IDs used in our analysis is available at 10.6084/m9.figshare.11837406.\n\nBriefly, GCaMP6F was expressed in primary visual area neurons of transgenic mice line Ai93. Cranial surgery was performed to insert a window between p37-p63, followed by 2 weeks of habituation to the experiment setting. Mice were head-fixed on top of a rotating disk and could walk freely. 2-photon imaging experiments were conducted as the mouse passively viewed the stimulus protocol on a screen. The stimulus protocols included in our analysis consisted of either i) 10 min of drifting gratings, followed by 42 min of interleaved natural movies, drifting gratings and spontaneous activity, followed by another 10 min of drifting gratings, or ii) 8 min of static gratings, followed by 45 min of interleaved natural movies, static gratings and spontaneous activity, followed by 9 min of static gratings (Figure 3A, see white paper for further details). Drifting gratings were presented at eight uniformly separated directions and at five different temporal frequencies. Static gratings were presented at six uniformly separated orientations separated, five different spatial frequencies and four different phases. 112 imaging experiments were initially included in our analysis.\n\n### Measuring population coupling and stimulus response variability in vivo\n\nThe Allen Brain Atlas API provides functions which allow us to extract fluorescence traces and measure average stimulus response properties of individual cells during an experiment (Allen Brain Atlases and Data, 2016). Motion correction, ROI detection and segmentation, and the removal of neuropil fluorescence artefacts are automatically performed using the API. We customised scripts within this API so that we could measure population coupling and stimulus response properties under specific conditions and timeframes.\n\nWe measure population coupling similarly to the network model analysis (Equation 6), but where a neuron\u2019s activity is represented by calcium fluorescence dF/F. To ensure a reliable estimate of the population activity when calculating population coupling, we exclude any experiments in which less than 50 neurons were recorded. We also exclude any experiments in which the population couplings are not sufficiently consistent when using either half (randomly chosen) of the neurons to estimate population activity ($r^{2}<0.8$, linear regression). This reduces the number of experiments in our analysis from 112 to 64, for a total of 15,281 neurons. In addition, we only include neurons with a response reliability that is above the median reliability. The response reliability is defined as the trial-to-trial correlation of the dF/F traces during the neuron\u2019s preferred stimulus presentation (Allen Brain Atlases and Data, 2016) . Figure 3\u2014figure supplement 2 shows a similar analysis, but where we include neurons with the top 75% most reliable neurons, or include all neurons, regardless of their response reliability.\n\nWe measure the preferred orientation of each neuron during both the first presentation of static or drifting gratings ($ORI_{pref-1}$), and the final presentation of static or drifting gratings ($ORI_{pref-2}$) (Figure 3A). The preferred orientation is defined as the grating that evoked the largest mean response across all trials. Note that each experiment contains only either static or drifting gratings, so there is no overlap between these two conditions. The absolute difference in preferred orientation is calculated as: $\u0394\u2062ORI_{pref}=|ORI_{pref-1}-ORI_{pref-2}|$. Similarly, the absolute difference in preferred direction is calculated as: $\u0394\u2062DIR_{pref}=|DIR_{pref-1}-DIR_{pref-2}|$.\n\n### Simulating perceptual learning\n\nFor the perceptual learning simulation in Figure 4A, the input $H_{i}$ to each neuron is simulated as before, but with an additional term which is active whenever the stimulus associated with the additional external input is present (Equation 9). We first simulate synaptic plasticity without any stimulus associations for 300 s (i.e. with $H_{associated}=0$), and then simulate perceptual learning (with $H_{associated}=10$). The identity of the associated stimulus is changed every 25 s to simulate continual learning.\n\n$$\nH_{i}\u2062(t)=\\delta\u2062(\\theta_{i}^{pref}-\\theta_{input}\u2062(t))\u2062H_{stim}+\\delta\u2062(\\theta^{associated}-\\theta_{input}\u2062(t))\u2062H_{associated}+OU_{i}\u2062(t)\u2062, \n$$\n\nwhere $\\delta$ is the Kronecker delta function. Feedforward stimulus selectivity is defined as $\\frac{w\u00af_{specific}}{w\u00af_{non-specific}}-1$, where $w_{specific}$ are the synaptic weights from neurons which share the same feedforward stimulus preference and $w_{non-specific}$ are the synaptic weights from neurons which have a different feedforward stimulus preference. Likewise, associated stimulus selectivity is defined as $\\frac{w\u00af_{associated}}{w\u00af_{non-associated}}-1$, where $w_{associated}$ are the synaptic weights from neurons whose feedforward stimulus preference is the associated stimulus, and $w_{non-associated}$ are the synaptic weights from other neurons.\n\n### Single plastic neuron embedded in a static network\n\nIn order to systematically investigate the effect of population coupling on perceptual learning, we must keep the population coupling of both the static and plastic population fixed throughout the experiment. Since changes in the synaptic weights connecting both these populations will alter their population coupling, we overcome this by making these particular synapses functionally silent. That is, while their synaptic weight is updated depending on pre- and post-synaptic activity as before (Equation 3), these synapses do not contribute when calculating the activity of the static and plastic neurons. The activities of the static and plastic neurons ($y^{static}$ and $y^{plastic}$) are therefore only determined by their external input and the activities of the population ($y^{pop}$, Figure 4C), meaning that their population coupling can be systematically varied:\n\n$$\n\\frac{dy_{i}^{pop}}{dt}=\u2212y_{i}^{pop}+\\sumj=iNW_{ij}g(y_{j}^{pop})+H_{i}\u00a0,\\frac{dy_{i}^{plastic}}{dt}=\u2212y_{i}^{plastic}+PC_{plastic}\\sumj=iNW_{ij}g(y_{j}^{pop})+H_{i}\u00a0,\\frac{dy_{i}^{static}}{dt}=\u2212y_{i}^{static}+PC_{static}\\sumj=iNW_{ij}g(y_{j}^{pop})+H_{i}\u00a0.\n$$\n\n$W_{i\u2062j}$ is fixed for the duration of the simulation, while the synaptic weights from the static to the plastic population are updated as below;\n\n$$\n\\frac{d\u2062W_{i\u2062j}^{p\u2062l\u2062a\u2062s\u2062t\u2062i\u2062c}}{d\u2062t}=\\alphay_{i}^{static}y_{j}^{plastic}-\u03b6(\\sum_{k=1}^{N_{plastic}}W^{p\u2062l\u2062a\u2062s\u2062t\u2062i\u2062c}_{k\u2062j}-W^{E\u2062E}_{total}).\n$$\n\nAs before, the input $H_{i}$ has an additional term which is active whenever the stimulus associated with the additional external input is present (Equation 9, that\u00a0is whenever the red stimulus is being presented). We first simulate synaptic plasticity without any stimulus associations for 500 s (i.e. with $H_{associated}=0$), and then simulate perceptual learning (with $H_{associated}=10$) for 100 s. Perceptual learning is quantified by the ratio of the red synaptic weight (associated stimulus) to the blue synaptic weight (original preferred stimulus of the plastic neuron) after plasticity.\n\n### Measuring stimulus decoding performance\n\nWe train a perceptron to decode the stimulus identity from the individual activity of all neurons in the network, using the scikit-learn python package. The average activity of each neuron across a 500 ms sampling period are used as inputs during training. For Figure 4E, performance at decoding pairs of stimuli simultaneously presented to the network is shown. Relative deviation from the average performance of a perceptron trained to decode pairs of stimuli (28 possible pairs from eight stimuli) over all three network types is calculated. The relative deviations for each network type from the average across all networks types are shown (Figure 4E).\n\n### Code availability\n\nCode is publicly available on GitHub on\u00a0https://github.com/yannaodh/sweeney_clopath_2020 (copy archived at https://github.com/elifesciences-publications/sweeney_clopath_2020;\u00a0Sweeney, 2020).\n",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "44cc9135-ab28-4a26-9ab1-e22cdb0c1c1a",
+      "submission_id": "6ec91595-f4dc-4f48-8020-e351c5733056",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56053.sa1](https://doi.org/10.7554/eLife.56053.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nMany brain models work with just the mean activity across a population, ignoring the wide diversity of response properties that is characteristic of many neuronal population recordings. The authors provide modelling results which point to an intriguing link between the diversities of response variability and synaptic learning rates. A signature of this diversity link is seen in a relation between how malleable a neuron's tuning is over time and how coupled a neuron's activity is to the whole population. This prediction was validated with population recordings in mouse V1, giving support for their modelling work. Building models that explore the inherent diversity of neuronal response, in its various forms, is an important avenue of study and this work provides a critical step in this direction.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Population coupling predicts the plasticity of stimulus responses in cortical circuits\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Blake A Richards (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThere was considerable enthusiasm for the approach and for the novel hypothesis that, in a network with diverse learning rates, neurons with fast rates are more coupled to population activity than neurons with slow rates. The attempt to substantiate this hypothesis by using recordings from the Allen Brain Observatory was considered a considerable strength. However as amply stated in the original reviews, the strength/shape/significance of the relationships in Figures 3E,F are not firmly established and some more compelling insight into the diversity of timescales in the actual data is definitely needed.\n\nA new submission of a thoroughly reworked paper that addresses these concerns and additional concerns in original reviews could be viewed favorably at eLife. The Reviewing Editor would particularly refer the authors to concerns by reviewer #1 \"I would have expected an associated Figure 3E and F from the model so that a better comparison could be made and we could understanding how much the \u03b1's need to vary.\" and \"The relation between learning diversity and population coupling is interesting \u2013 but outside of the initial observation in the model there is no real theory/understanding for this relation being offered\", and from reviewer #3 \"They begin with diverse learning rates and then examine the effect on population coupling. But, what if, functionally, population coupling should determine learning rate, as stipulated by gradient descent?\"\n\nReviewer #1:\n\nThe paper by Sweeny and Clopath investigates how a diversity of plasticity timescales allows for a diversity of neuronal coupling to population activity. Overall, the paper investigates an interesting effect. However, I feel that the paper falls short in several areas. I explain these below.\n\n1) While the comparison to the Allen dataset is inspired, the end result is somewhat disappointing. The relation between change in preferred orientation and population coupling shown in Figure 3E and F are quite weak (I realize that it is statistically significant). Further, there is no attempt to relate the weak trend in the data to the distribution of learning timescales that would be required to produce it. This is likely because the model is simplified and there is not a real sense of continuous tuning (only four orientations were shown). In this way the model prediction is not really tight. I would have expected an associated Figure 3E and F from the model so that a better comparison could be made and we could understanding how much the \u03b1's need to vary.\n\n2) The relation between learning diversity and population coupling is interesting \u2013 but outside of the initial observation in the model there is no real theory/understanding for this relation being offered. Is there a simple mean field style theory that can be put forth? Can other sources of heterogeneity (say single neuron baseline firing rate r0) create a similar relation? Why is there a spread of population coupling in the uniform \u03b1 case? Answers to these questions could help build a deeper understanding of the key result. As it stands the paper simply shows simulation results and gives a loose connection between synaptic variability, population coupling, and response tuning. I expect more in a high profile publication.\n\nReviewer #2:\n\nSweeney and Clopath report simulations and analysis of in vivo calcium imaging data suggesting that neurons with faster learning rates will exhibit higher population coupling, consistent with the idea of functional network architecture composed of slowly-changing connectivity between stably tuned neurons and quickly changing connectivity between unstably tuned neurons.\n\nThe authors begin by studying networks where they train a low-dimensional structure into the excitatory weights (four-dimensional in Figure 1, and I would guess 8-dimensional in Figure 2 due to the 8 orientations of receptive field), with one global inhibitory neuron. Population coupling describes a one-dimensional correlation structure \u2013 is this an appropriate description for these network, or are the activity four or eight dimensional? How do the correlations within- and between the trained structures relate to the population coupling, and how does the timescale of a neuron's plasticity relate to its coupling to co-stimulated neurons vs non-co-stimulated neurons?\n\nWhat is the relationship between the timescale of the associations trained in Figure 4, and do the results depend on the relationship between that timescale of stimulation and the fast/slow timescales of plasticity?\n\nI applaud the authors for seeking a direct experimental test of their model's results. The results of that test (Figure 3E) seem, however, fairly weak. More importantly, it seems that the basic characterization of tuning stability in this data has been skipped over, which makes it difficult to interpret these results.\n\nThe trial-by-trial responses to gratings (at least in the Allen Brain Observatory dataset) exhibit significant variability, and the tuning curve is often a poor predictor of the responses. This requires, I think, a stronger analysis to test the authors' prediction.\n\na) First off, how stable is the tuning? Is orientation selectivity stable? If there are neurons that are tuned only in the early or the late epoch, how does that match with the model?\n\nb)In Figure 3B, it seems that the neurons with the largest responses are the most population coupled, which makes sense given the definition of population coupling. How does this contribute to the neurons' orientation selectivity and relate to tuning stability?\n\nc) In neurons that are significantly tuned at the early and late epochs, is their tuning different? This is close to what the authors asked, but I think it could be made more rigorous \u2013 one idea is by a statistical test asking whether the distribution of responses to the initially preferred stimulus is distinguishable between the early and late grating epochs. (And correspondingly for the preferred stimulus of the late epoch.)\n\nd)In Figure 3B, it seems that the neurons with the largest responses are the most population coupled, which makes sense given the definition of population coupling. Does this hold up with extracted events? How does this contribute to the neurons' orientation selectivity and relate to tuning stability?\n\ne) How do these results relate to the degree of neurons' tuning and the reliability of their responses? Do strongly tuned neurons have more stable stimulus preferences? Do neurons with lower trial-to-trial variability have more stable stimulus preferences?\n\nf) The authors refer only to orientation tuning. For the drifting gratings, what about direction? (And what about spatial or temporal frequencies?)\n\ng) The description of which data from the Allen Brain Observatory were used seems incomplete. How were experiments chosen to include; which Cre lines, layers, and areas were the data used from? Do the results differ across those dimensions? That dataset currently includes a lot more than the 112 experiments with gratings included.\n\nh) The observatory API also included extracted events, to account for the autocorrelation time of the fluorescence. Do the results depend on the use of df/f compared to events?\n\nReviewer #3:\n\nIn this paper, Sweeney and Clopath examine the relationship between \"population coupling\" and synaptic plasticity, both in a series of computational models and experimental data from the Allen Brain Institute (2-photon calcium imaging in mouse primary visual cortex). The metric used for population coupling here is the same one introduced by Okun et al., 2015, namely, the extent to which a given neuron correlates with the average activity of the entire population.\n\nIn their first model, the authors examine the impact of diverse learning rates on excitatory synapses in a fully connected model of rate-based, leaky neurons. The excitatory synapses are updated using a Hebbian rule (with some competition for stabilization). The Hebbian updates are controlled with learning rates \\\u03b1i, where i is the index of the neuron. Thus, each neuron can have its own learning rate. The authors demonstrate that neurons with fast learning rates tend to have less specificity in their connections, and more fluctuations in that specificity as well. Furthermore, they show that there is a relationship between learning rate and population coupling, with higher population coupling for neurons with larger learning rates. They also show that diverse population coupling is a natural consequence of diverse learning rates. Thus, their model predicts that if cortical neurons possess a diverse set of learning rates, then there should be a high degree of variability in population coupling, and neurons with greater population coupling should be those that are most plastic.\n\nThe authors then examine whether these predictions from their model are borne out in the Allen data. They demonstrate that there is indeed a high diversity in population coupling of excitatory neurons (as observed by Okun et al.). As well, they show that neurons whose preferred stimulus orientation changes most over the course of the recording session are those with the greatest degree of population coupling, as predicted by their model.\n\nFinally, the authors examine the functional implications of diverse learning rates in networks with sensory inputs and potential for learned associations. They show that diverse learning rates in their model helps to maintain the ability of the neurons to carry information about stimulus identity while permitting continual learning of new stimulus associations.\n\nOverall, I think this is an excellent paper. I really enjoyed it. The introduction of a computational model that makes clear experimental predictions, followed by an explicit test of those predictions in available large datasets is exactly how computational neuroscience should proceed, and I applaud the authors for this. I also appreciated the attempt to show the functional importance of diverse learning rates at the end of the paper.\n\nI have two related concerns about the findings in the paper, though, which I would encourage the authors to consider. The root of my concerns is the lack of a normative framework for understanding learning in both the models and the data. The authors begin with diverse learning rates as a potential phenomenon, then attempt to make predictions and explore functional implications. I wonder whether flipping this might not have been a more fruitful approach for explaining the experimental data. That is, the authors could have started with a question of what functional problem is to be solved, then showed that diverse learning rates could solve it, and then confirmed the phenomenon in the data. There are two reasons why this more normative approach may be better at explaining the data:\n\n1) An alternative account for the phenomenon the authors observe in the Allen data can be found in normative models. Consider a recurrent neural network trained with gradient descent to perform some function. Regardless of the function being learned, on average, neurons with greater impact on the rest of the network will have larger synaptic updates than other neurons. This is because the gradient of any function with respect to a neuron will depend on its ability to influence future activity, and neurons that contribute more to the gradient will be updated more. Now, neurons with a strong tendency to activate other neurons will have high levels of population coupling, while neurons with a tendency to inhibit other neurons (disynaptically, since these are excitatory neurons) will have low levels of population coding. Neurons with limited impact will have middle levels of population coupling. Thus, a gradient based account would predict that there should be a U-shaped curve relating population coupling to plasticity. To my eye, that is precisely what the Allen data actually shows (Figure 3E). Thus, I worry that the authors have it backwards. They begin with diverse learning rates and then examine the effect on population coupling. But, what if, functionally, population coupling should determine learning rate, as stipulated by gradient descent? Now, to be clear, I do not think the authors have to actually address this hypothesis I put forward with new simulations. Per the eLife philosophy, I would like to improve this paper, not demand the paper I may have been inclined to write myself. So, I don't think new simulations are needed. However, given the slightly questionable fit of their model hypothesis to the data shown in Figure 3E, I think that this alternative hypothesis should at least be mentioned in the Discussion.\n\n2) The purpose of the simulations in Figure 4 were a bit mysterious to me. The authors appeared to make fairly strong assumptions about what would be useful to a network, e.g. that it would be good to show increased selectivity to some external stimulus, or that information should be as preserved as possible. But, why not start with the more obvious normative framework for multiple learning rates, and one which the authors identify in the Discussion, i.e. the need to avoid catastrophic forgetting? This is sort of demonstrated in Figure 4, but in an indirect fashion that relies on the assumption that selectivity is a good performance metric. Why not actually use the networks to perform various tasks, and show that the networks are better at avoiding catastrophic forgetting of the tasks when diverse learning rates are present? Even a simple task would be easier to understand the implications, than the selectivity measurements provided by the authors, in my opinion. But, again, I don't actually think new simulations would be required, per se (though they could help). Nonetheless, I think a more intuitive account for why selectivity is the right metric to use would be helpful.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Population coupling predicts the plasticity of stimulus responses in cortical circuits\" for further consideration by eLife. Your revised article has been evaluated by Ronald Calabrese (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nPlease make the following very minor but important edits directed by the reviewer comments provided. These should be accomplished rapidly so as not to hold-up publication and will require only the Reviewing Editor to review.\n\nReviewer #1:\n\nFigure 1\u2014figure supplement 1 discussion: Why change the parameter for the synaptic scaling rate from zeta to eta? Does zeta refer to something else?\n\nFigure 3E: missing x axis ticks for static gratings.\n\nThroughout, the figures have a variety of font sizes for the tick labels, axis labels, and legends. Making these uniform, within and across figures, would make them easier to read.\n\nReviewer #2:\n\nIn their revised paper, Sweeney and Clopath have addressed most of the concerns raised by myself and the other reviewers quite well. In my opinion, the paper is very close to being ready for publication. I have one final quibble related to the first major concern I raised in my initial review.\n\nIn my initial review, I noted that there is an alternative hypothesis based on normative models which posits that neurons with strong population coupling should be more plastic because they have a greater impact on the network, and thus are more important for any performance gradients. But. this hypothesis also posits that neurons that inhibit other neurons a lot, thus which may have extremely low population coupling, would also be more plastic.\n\nThe authors have almost satisfied my concerns with their response. I appreciate their attempt at testing whether this prediction holds in the data. However, their test is ill-formed. They test this hypothesis by assigning a semi-arbitrary threshold for low (< 0.2) vs. medium (>=0.2, <=0.4) vs. high (>0.4) population coupling, and then testing whether neurons in the Allen data with low population coupling show bigger orientation changes than neurons with medium orientation changes. They report that the tests were non-significant, and conclude that the data doesn't support this hypothesis.\n\nThis test rests on the idea that we can group the neurons into these three bins and hope to test this alternative hypothesis. Yet, we do not really know how the scale of the population coupling metric used here relates to real impact on network activity in the brain. For example, it could be that neurons with a population coupling metric of 0.3 actually have a fairly big impact on the network, so they should be in the high group. Essentially, we have no principled way to judge what the threshold for these groups should be. Indeed, I am not surprised that the tests came out as non-significant, because it is clear that the \u0394 ORI pref begins to increase after a level of around 0.25 in population coupling.\n\nAs it stands, by my eye, the data in Figure 3E still suggests that there is an initial decrease in \u0394 ORI pref as we move from really low population coupling, then an increase again as we move further out. The test given does not convince me otherwise. Really, if the goal were to convince me that this alternative hypothesis cannot account for the data as well as their model, the authors would need to determine whether a linear model with nothing but a monotonic increase in \u0394 ORI pref accounts for the data better than a non-linear or bi-linear model that include an initial decrease. My bet is that the latter model would be better at fitting the data, even after consideration of increased parameters (e.g. via the AIC or something).\n\nHowever, I don't need to see this analysis per se, and I don't intend to hold up publication of this paper based on my personal interpretation of the data. What I would like to see is simply a change in the text that is now given in the Discussion. The authors write:\n\n\"Thus, a gradient-based account would predict that there should be a U-shaped curve relating population coupling to plasticity. Although we did not observe such a relationship, this may be a fruitful avenue of enquiry for future experiments.\"\n\nI think that, to be more honest, this should read something more like:\n\n\"Thus, a gradient-based account would predict that there should be a U-shaped curve relating population coupling to plasticity. Our data showed may show some initial decrease in plasticity as population coupling increases (Figure 3F), but these questions outstrip the focus of this work. Consideration of whether alternative models based on gradients could explain this data may nonetheless be a fruitful avenue of enquiry for future experiments.\"\n",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f9138766-3b4a-4ce7-95a8-19591630a8a6",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C1",
+      "claim": "Some neurons have stimulus responses that are stable over days, whereas other neurons have highly plastic stimulus responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Some neurons have stimulus responses that are stable over days, whereas other neurons have highly plastic stimulus responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known observation that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "d50c1827-c76e-419b-bdf8-df673fc7061a",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C2",
+      "claim": "In a network with diverse learning rates, neurons with fast rates are more coupled to population activity than neurons with slow rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, in a network with diverse learning rates, neurons with fast rates are more coupled to population activity than neurons with slow rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the network model simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "413f3344-4d6b-431f-8ac7-f1a6205c1477",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C3",
+      "claim": "Neurons with high population coupling exhibit more long-term stimulus response variability than neurons with low population coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "This plasticity-coupling link predicts that neurons with high population coupling exhibit more long-term stimulus response variability than neurons with low population coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is derived from the network model and is subsequently tested with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "358ac26b-c3d6-4a56-9f5d-ab58ec574b86",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C4",
+      "claim": "A neuron's population coupling is correlated with the plasticity of its orientation preference in mouse visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We substantiate this prediction using recordings from the Allen Brain Observatory, finding that a neuron's population coupling is correlated with the plasticity of its orientation preference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is validated using in vivo calcium imaging data from the Allen Brain Observatory.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "b0559c95-d75b-4f64-8d31-60c93504bff6",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C5",
+      "claim": "If a particular stimulus feature is overexpressed within an environment, more neurons will be recruited to encode this feature.",
+      "claim_type": "EXPLICIT",
+      "source": "if a particular stimulus feature is overexpressed within an environment, for example, more neurons will be recruited to encode this feature (Sengpiel et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "e56b2bcc-c329-44c6-9cbb-90744d91625d",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C6",
+      "claim": "Some neurons retain highly stable preferences to specific stimuli, whereas the stimulus preference of other neurons change from day to day.",
+      "claim_type": "EXPLICIT",
+      "source": "These recordings reveal a substantial, and puzzling, variability in the long-term stability of responses in sensory cortex: some neurons retain highly stable preferences to specific stimuli, whereas the stimulus preference of other neurons change from day to day (Ranson, 2017; Clopath et al., 2017; Poort et al., 2015; L\u00fctcke et al., 2013; Rule et al., 2019; Rose et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "0e0dc570-137f-4574-ad73-321821503209",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C7",
+      "claim": "Whisking responses in mouse barrel cortex are highly plastic.",
+      "claim_type": "EXPLICIT",
+      "source": "whisking responses in mouse barrel cortex are highly plastic, whereas visual responses in mouse V1 are more stable but still exhibit fluctuations (Clopath et al., 2017; L\u00fctcke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "dc2de61c-f6a6-457f-9171-4a98257e4342",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C8",
+      "claim": "Visual responses in mouse V1 are more stable but still exhibit fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "whisking responses in mouse barrel cortex are highly plastic, whereas visual responses in mouse V1 are more stable but still exhibit fluctuations (Clopath et al., 2017; L\u00fctcke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "8f51fd5f-6407-4627-b0ae-ba372d983183",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C9",
+      "claim": "Sensory deprivation can induce stimulus response plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is possible to induce stimulus response plasticity through perturbations such as sensory deprivation (Rose et al., 2016), or to increase task-related stimulus response stability through rewarded learning (Poort et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "f599a1a1-18ad-406c-ba3b-4681077d0595",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C10",
+      "claim": "Rewarded learning can increase task-related stimulus response stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is possible to induce stimulus response plasticity through perturbations such as sensory deprivation (Rose et al., 2016), or to increase task-related stimulus response stability through rewarded learning (Poort et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "2200e4ee-a152-4e05-ade4-312939829a6a",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C11",
+      "claim": "The stability of neural representation is correlated with firing rate in hippocampal place cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the stability of neural representation is correlated with firing rate in hippocampal place cells (Grosmark and Buzs\u00e1ki, 2016) and in visual cortex (Ranson, 2017), it is not known how cellular or network properties influence a neuron's stimulus response stability (Clopath et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "dab095b8-fa20-4752-855e-1497d41734f2",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C12",
+      "claim": "The stability of neural representation is correlated with firing rate in visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the stability of neural representation is correlated with firing rate in hippocampal place cells (Grosmark and Buzs\u00e1ki, 2016) and in visual cortex (Ranson, 2017), it is not known how cellular or network properties influence a neuron's stimulus response stability (Clopath et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "69599761-0580-4774-afa6-d2cd30926b2d",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C13",
+      "claim": "It is not known how cellular or network properties influence a neuron's stimulus response stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the stability of neural representation is correlated with firing rate in hippocampal place cells (Grosmark and Buzs\u00e1ki, 2016) and in visual cortex (Ranson, 2017), it is not known how cellular or network properties influence a neuron's stimulus response stability (Clopath et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "ddf2d96a-ae33-44cd-b691-0981de4de2ea",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C14",
+      "claim": "Neurons with fast learning rates exhibit more variability of their stimulus selectivity than neurons with slow learning rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that neurons with fast learning rates exhibit more variability of their stimulus selectivity than neurons with slow learning rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the network model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "073c648c-026a-48c8-a658-14f3f74bc1f3",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C15",
+      "claim": "Fast neurons have higher population coupling than slow neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we also find that fast neurons have higher population coupling, a measure of how correlated an individual neurons activity is with the rest of the population (Okun et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the network model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "5c0a03e4-2d20-420e-aa9b-c4087429012f",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C16",
+      "claim": "Population coupling is a measure of how correlated an individual neuron's activity is with the rest of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we also find that fast neurons have higher population coupling, a measure of how correlated an individual neurons activity is with the rest of the population (Okun et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "bcb4fee3-7692-4ef5-b895-6021e6e58f58",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C17",
+      "claim": "Diverse learning rates provide a mechanism for the diverse population coupling observed in sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This unexpected plasticity-coupling link, in which more plastic neurons are also more coupled to the rest of the population, provides a mechanism for the diverse population coupling previously observed in sensory cortex (Okun et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the model results and comparison with experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "a52e67a9-9845-49af-bd86-272977b8401a",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C18",
+      "claim": "Strong population coupling helps plastic neurons alter their stimulus preference during a simple perceptual learning task.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that strong population coupling helps plastic neurons alter their stimulus preference during a simple perceptual learning task, but hinders the ability of stable neurons to provide an instructive signal for learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the perceptual learning simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "2264ef19-46b2-4b12-81e4-397906ab265e",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C19",
+      "claim": "Strong population coupling hinders the ability of stable neurons to provide an instructive signal for learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that strong population coupling helps plastic neurons alter their stimulus preference during a simple perceptual learning task, but hinders the ability of stable neurons to provide an instructive signal for learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the perceptual learning simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "5af27a6c-0837-419c-b8ab-921ba4e18cdf",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C20",
+      "claim": "The plasticity-coupling link ensures that highly plastic neurons are strongly coupled to the population, while less plastic neurons are weakly coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "The plasticity-coupling link exploits this dependence by ensuring that highly plastic neurons - the substrate for perceptual learning - are strongly coupled to the population, while less plastic neurons are weakly coupled and act as a stable 'backbone' of stimulus representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "38bfb0c4-10a9-4fe6-831b-77a40f8bb62c",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C21",
+      "claim": "Less plastic neurons act as a stable 'backbone' of stimulus representation.",
+      "claim_type": "EXPLICIT",
+      "source": "The plasticity-coupling link exploits this dependence by ensuring that highly plastic neurons - the substrate for perceptual learning - are strongly coupled to the population, while less plastic neurons are weakly coupled and act as a stable 'backbone' of stimulus representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "dfbb0284-6f6f-4426-8b65-a8fc2f9c6f1f",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C22",
+      "claim": "Excitatory recurrent synapses undergo Hebbian plasticity and synaptic scaling in the network model.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory recurrent synapses in our network undergo Hebbian plasticity and synaptic scaling, while inhibitory synapses undergo homeostatic inhibitory plasticity (Vogels et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the plasticity rules implemented in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "7c5b16e7-83f7-4db1-b533-ef84596c9141",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C23",
+      "claim": "Inhibitory synapses undergo homeostatic inhibitory plasticity in the network model.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory recurrent synapses in our network undergo Hebbian plasticity and synaptic scaling, while inhibitory synapses undergo homeostatic inhibitory plasticity (Vogels et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the plasticity rules implemented in the model, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "bf15976a-1ab8-4820-aeec-f8370d613a76",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C24",
+      "claim": "The learning rate is expressed postsynaptically in the network model.",
+      "claim_type": "EXPLICIT",
+      "source": "The learning rate is expressed postsynaptically, such that the synaptic input weights onto neurons with a large \u03b1 are more plastic than those with a small \u03b1 (Equation 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the model implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "c0bc2052-1401-4247-b36d-741e165011b9",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C25",
+      "claim": "Synaptic input weights onto neurons with a large \u03b1 are more plastic than those with a small \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The learning rate is expressed postsynaptically, such that the synaptic input weights onto neurons with a large \u03b1 are more plastic than those with a small \u03b1 (Equation 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a consequence of the model implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "6fd6f2b3-e2c2-44ac-9c7a-1cc2d8f8e1f5",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C26",
+      "claim": "The Hebbian plasticity rule potentiates connections between neurons which share the same feedforward stimulus preference.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hebbian plasticity rule potentiates connections between neurons which share the same feedforward stimulus preference, due to their coactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavior of the plasticity rule in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "69a949e3-7847-4030-8f6f-4d3e78b0a904",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C27",
+      "claim": "Strong bidirectional connections emerge amongst stimulus-specific groups of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This drives the emergence of strong bidirectional connections amongst stimulus-specific groups of neurons, while the remaining non-specific connections weaken (Figure 1B,C; Ko et al., 2013; Clopath et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations, shown in figures and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "1f19af21-c83e-44b2-ad67-1b28e4586824",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C28",
+      "claim": "Non-specific connections weaken during plasticity in the network model.",
+      "claim_type": "EXPLICIT",
+      "source": "This drives the emergence of strong bidirectional connections amongst stimulus-specific groups of neurons, while the remaining non-specific connections weaken (Figure 1B,C; Ko et al., 2013; Clopath et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations, shown in figures and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "d8bbc9cf-c90a-417b-b1ea-73b1e2f00961",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C29",
+      "claim": "Fast neurons develop strong, specific connections sooner than slow neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast neurons develop these strong, specific connections sooner than slow neurons (Figure 1B, solid lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "f4e2d00d-58e7-4a73-b8c7-9f20e1a8dcdf",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C30",
+      "claim": "Increased learning rate leads to stronger synaptic weight fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increased learning rate also leads to stronger synaptic weight fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "2751ef66-264e-43f4-96e0-3f096f9c1abe",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C31",
+      "claim": "For slow neurons, non-specific and specific connections tend towards either zero or the maximum synaptic weights respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For slow neurons, in contrast, non-specific and specific connections tend towards either zero or the maximum synaptic weights respectively, remaining relatively stable after convergence (Figure 1B, black lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "733030b4-5874-438f-a861-a870526c6e93",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C32",
+      "claim": "Connection specificity is stronger and more stable for slow neurons compared with fast neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to connection specificity that is stronger and more stable compared with fast neurons (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "f61d494a-58ce-4ae0-a024-8c9a29ace22b",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C33",
+      "claim": "Increasing \u03b1 predominantly drives an increase in non-specific connections rather than a decrease in specific connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing \u03b1 predominantly drives an increase in non-specific connections rather than a decrease in specific connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the model simulations with diverse learning rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "8bc60474-2e72-49b9-8658-6ebf892dde36",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C34",
+      "claim": "Increasing \u03b1 leads to an overall increase in the amount of synaptic input amongst neurons with high \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to an overall increase in the amount of synaptic input amongst neurons with high \u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "b57aa2fc-7c7f-4002-9b48-c4510e5b1cd8",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C35",
+      "claim": "Population coupling is correlated with the amount of local synaptic input in cortical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Since population coupling is correlated with the amount of local synaptic input in cortical networks (Okun et al., 2015), this measure could be a useful and experimentally observable proxy for the specificity of recurrent connectivity in our networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "aa4bc08f-7ed5-4026-8943-2bff0fa73186",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C36",
+      "claim": "Population coupling increases with learning rate in the network model.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, population coupling increases with learning rate, closely following the dependence of non-specific connectivity on \u03b1 (Figure 1E, red points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "291af68f-0a85-4ec6-993d-3bcfd5b7a451",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C37",
+      "claim": "A strong plasticity-coupling link requires both moderate amounts of noise within the network and relatively slow synaptic scaling compared with Hebbian plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong plasticity-coupling link requires both moderate amounts of noise within the network and relatively slow synaptic scaling compared with Hebbian plasticity, in agreement with experimental data (Turrigiano et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from parameter exploration in the model and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "53fc4590-4cb5-4e66-9679-a25ff700bbba",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C38",
+      "claim": "Networks with diverse learning rates develop strong synaptic connections between neurons with similar receptive fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Both networks with uniform \u03b1 and networks with diverse \u03b1 develop strong synaptic connections between neurons with similar receptive fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the receptive-field based network simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "cb8aa619-bd5a-4e4a-87c3-ddbc8349a196",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C39",
+      "claim": "There is a broader range of summed synaptic inputs in diverse networks compared with uniform networks.",
+      "claim_type": "EXPLICIT",
+      "source": "There is, however, a broader range of summed synaptic inputs in diverse networks, when compared with uniform networks (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the receptive-field based network simulations and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "dc2b72bb-b22f-498f-8ce1-078116ce8fdc",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C40",
+      "claim": "The total excitatory synaptic input onto a neuron covaries with \u03b1 in the diverse network.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs because the total excitatory synaptic input onto a neuron covaries with \u03b1 in the diverse network (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the receptive-field based network simulations and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "36d83183-0fc6-426d-9fb3-109bc4ef5056",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C41",
+      "claim": "The population coupling of a neuron is determined by its total excitatory synaptic input in networks with diverse \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our previous observations, the population coupling of a neuron is determined by its total excitatory synaptic input in networks with diverse \u03b1 (Figure 2C, blue line. r = 0.29, p<1e-5, Spearman correlation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the receptive-field based network simulations with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "ab13ce7e-a29a-405f-bbed-bf290e47e95f",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C42",
+      "claim": "Diverse learning rates within a cortical network lead to a broad distribution of population coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse learning rates within a cortical network indeed lead to a broad distribution of population coupling, as observed by Okun et al. (2015); Figure 2D, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and matches experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "63f18c19-38f1-4e63-9624-72841d422686",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C43",
+      "claim": "In networks with uniform \u03b1, a neuron's population coupling is not correlated with the amount of synaptic input it receives.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the network with uniform \u03b1 also exhibits some heterogeneity of population coupling, in this network a neuron's population coupling is not correlated with the amount of synaptic input it receives (Figure 2C,D, green. p=0.52, Spearman correlation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the receptive-field based network simulations with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "7ac8a997-51f2-4f49-bcfa-f9de5227aea8",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C44",
+      "claim": "Networks with diverse learning rates better match experimental observations than networks with uniform learning rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that networks with diverse learning rates better match experimental observations than networks with uniform learning rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing model results with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "ae55edff-db8f-46a9-b50d-6248704c105e",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C45",
+      "claim": "The magnitude of stimulus selectivity fluctuations is independent of population coupling in the uniform network.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the magnitude of these fluctuations is independent of population coupling in the uniform network (p=0.4, Spearman correlation), but is correlated with population coupling in the diverse network (r = 0.18, p=1e-5, Spearman correlation Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the receptive-field based network simulations with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "48327581-1979-4cb3-ab32-f88a6f101159",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C46",
+      "claim": "The magnitude of stimulus selectivity fluctuations is correlated with population coupling in the diverse network.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the magnitude of these fluctuations is independent of population coupling in the uniform network (p=0.4, Spearman correlation), but is correlated with population coupling in the diverse network (r = 0.18, p=1e-5, Spearman correlation Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the receptive-field based network simulations with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "8b78c6b2-0aa1-4e88-9b2b-fd0840704f5b",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C47",
+      "claim": "The majority of excitatory synaptic input received by neurons in visual cortex is recurrent.",
+      "claim_type": "EXPLICIT",
+      "source": "As the majority of excitatory synaptic input received by neurons in visual cortex is recurrent, we simulate a regime with relatively weak feedforward stimulus-related input and high noise for Figure 2A-E (Cossell et al., 2015; Lin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "c313b289-f78c-46bf-8544-7cb04df61217",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C48",
+      "claim": "Networks with diverse \u03b1 exhibit a broader distribution of population coupling compared to networks with uniform \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in a broader distribution of population coupling and weaker stimulus selectivity for networks with diverse \u03b1, compared to networks with uniform \u03b1 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations across different noise levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "dade00c7-eb71-431d-b91c-db8a17f22802",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C49",
+      "claim": "Networks with diverse \u03b1 exhibit weaker stimulus selectivity compared to networks with uniform \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in a broader distribution of population coupling and weaker stimulus selectivity for networks with diverse \u03b1, compared to networks with uniform \u03b1 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations across different noise levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "2ff61229-e70c-4013-ac46-fc71e63a4231",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C50",
+      "claim": "Diverse learning rates introduce a correlation between a neuron's population coupling and its total excitatory synaptic input.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, diverse learning rates introduce a correlation between a neuron's population coupling and its total excitatory synaptic input, in agreement with experimental observations (Okun et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the model simulations and matches experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "01bc7cd6-0d06-49c6-9b3f-f5b8458007cc",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C51",
+      "claim": "Roughly 75% of neurons express variability of their preferred orientation or direction between the beginning and the end of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Roughly 75% of neurons express variability of their preferred orientation or direction between the beginning and the end of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the analysis of Allen Brain Observatory data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "2e7ada7e-0a6a-4666-b426-1f12e95f1fe3",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C53",
+      "claim": "Population coupling is weakly but significantly correlated with the average change in preferred orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Population coupling is weakly but significantly correlated with the average change in preferred orientation and in preferred direction (Figure 3E, r = 0.1, p<1e-5 and r = 0.12, p<1e-5, Spearman correlation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the analysis of Allen Brain Observatory data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "c600ef69-9acc-443f-84cd-ecebe8bd62ef",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C54",
+      "claim": "Population coupling is weakly but significantly correlated with the average change in preferred direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Population coupling is weakly but significantly correlated with the average change in preferred orientation and in preferred direction (Figure 3E, r = 0.1, p<1e-5 and r = 0.12, p<1e-5, Spearman correlation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the analysis of Allen Brain Observatory data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "75ab416f-2e63-40e7-a068-6b526d2a98fb",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C55",
+      "claim": "The majority of experiments show a trend in which neurons with plastic orientation preferences have a higher mean population coupling than those with stable orientation or direction preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is substantial variability of the strength of the effect, the majority of experiments show a trend in which neurons with plastic orientation preferences have a higher mean population coupling than those with stable orientation or direction preferences (Figure 3F, p<0.001 for both static and drifting gratings, t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the analysis of Allen Brain Observatory data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "5816a400-07fe-47b0-99b6-247ed4bc478a",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C56",
+      "claim": "There is no dependence of the tendency of an individual neuron to change stimulus preference on its average calcium fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "As the mean activity level of a neuron could conceivably determine its stimulus preference stability (Ranson, 2017; Grosmark and Buzs\u00e1ki, 2016), we tested this and found no dependence of the tendency of a individual neuron to change stimulus preference on its average calcium fluorescence (p=0.88, Spearman correlation, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is tested in the analysis of Allen Brain Observatory data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "ca02e957-6fb6-40f0-8888-42dcede5565d",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C57",
+      "claim": "Population coupling is anti-correlated with orientation selectivity in the Allen Brain Observatory dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our network model, and in contrast with observations from Okun et al. (2015), population coupling is anti-correlated with orientation selectivity in the Allen Brain Observatory dataset (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the analysis of Allen Brain Observatory data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "ede0ea72-3bc8-4dca-81e8-88be0d8ff8d6",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C58",
+      "claim": "A network with only fast \u03b1 quickly learns the stimulus associations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that a network with only fast \u03b1 quickly learns the stimulus associations (Figure 4A, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the perceptual learning simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "49e5305c-94b3-4520-ba4f-e91f8f6ec3f2",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C59",
+      "claim": "Repeated associations with neurons that do not share feedforward stimuli cause the specificity of recurrent connectivity to decrease in networks with only fast \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, repeated associations with neurons that do not share feedforward stimuli cause the specificity of recurrent connectivity to decrease, thus degrading the representation of feedforward stimuli (Figure 4A, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the perceptual learning simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "81735180-a2e6-4673-bf22-2a65807dc42f",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C60",
+      "claim": "The network with only slow \u03b1 retains a stable representation of the feedforward stimuli but performs poorly in representing the associated stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the network with only slow \u03b1 retains a stable representation of the feedforward stimuli but performs poorly in representing the associated stimulus (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the perceptual learning simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "22205b6a-1719-4a94-88b5-29f368ea88f9",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C61",
+      "claim": "The network with diverse \u03b1 has fast neurons which flexibly learn stimulus associations and slow neurons which maintain a 'backbone' of stimulus representation.",
+      "claim_type": "EXPLICIT",
+      "source": "The network with diverse \u03b1 overcomes these issues by having fast neurons which flexibly learn stimulus associations and slow neurons which maintain a 'backbone' of stimulus representation (see diagram, Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the perceptual learning simulations and illustrated in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "2724db0f-768b-4702-bb00-d23ed363c59c",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C62",
+      "claim": "Strongly coupling the plastic neuron to the population improves perceptual learning performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that strongly coupling the plastic neuron to the population improves performance, while strongly coupling the static neurons to the population impairs performance (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the perceptual learning simulations with a single plastic neuron.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "0e8bc36f-a14f-4fdc-8b91-0c3e9efa2fb7",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C63",
+      "claim": "Strongly coupling the static neurons to the population impairs perceptual learning performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that strongly coupling the plastic neuron to the population improves performance, while strongly coupling the static neurons to the population impairs performance (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the perceptual learning simulations with a single plastic neuron.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "3c1824c4-4332-4889-a20a-bf816ed5e86f",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C64",
+      "claim": "The new stimulus association is learned only when there is low population coupling amongst static neurons and high population coupling for the plastic neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "These two effects combine, such that the new stimulus association is learned only when there is low population coupling amongst static neurons (PCstatic) and high population coupling for the plastic neuron (PCplastic) (Figure 4D, labelled \u03a6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the perceptual learning simulations with a single plastic neuron.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "4ca215e6-d4b2-42e1-b575-20196a4f56d8",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C65",
+      "claim": "A network with diverse \u03b1 advantageously combines properties of networks with only slow \u03b1 and only fast \u03b1 for stimulus decoding.",
+      "claim_type": "EXPLICIT",
+      "source": "A network with diverse \u03b1 seems to advantageously combine both of these properties, so that its performance is high across the entire range of input strength and noise levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the stimulus decoding simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "69f2516e-44f8-4cae-8f22-d6c2a62a40f2",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C66",
+      "claim": "Tracking of hippocampal cell assemblies reveal subsets of either plastic, highly active neurons or rigid, less active neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, tracking of hippocampal cell assemblies reveal subsets of either plastic, highly active neurons or rigid, less active neurons (Grosmark and Buzs\u00e1ki, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "c93bd619-9dc6-4996-b975-6507b8c49545",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C67",
+      "claim": "Neurons in primary visual cortex exhibit characteristic fluctuations of their stimulus selectivity during baseline measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In primary visual cortex - which we model - neurons exhibit characteristic fluctuations of their stimulus selectivity during baseline measurements, but nonetheless tend to retain their preferred stimulus following recovery from sensory deprivation (Rose et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "0334db60-10d1-4a65-bb33-04a93524d342",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C68",
+      "claim": "Neurons tend to retain their preferred stimulus following recovery from sensory deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In primary visual cortex - which we model - neurons exhibit characteristic fluctuations of their stimulus selectivity during baseline measurements, but nonetheless tend to retain their preferred stimulus following recovery from sensory deprivation (Rose et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "26203b25-b879-4163-93c0-d725da5216d9",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C69",
+      "claim": "The population coupling of a neuron is correlated across brain states.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the population coupling of a neuron is correlated across brain states, and is only weakly dependent on stimulus type and mean fluorescence, we believe that it provides a good measure of a neurons functional integration within the local network, and would - according to our model - therefore provide a reasonable estimate of its propensity for perceptual learning (Figure 4D; Sedigh-Sarvestani et al., 2017; Okun et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "ba36ad05-8a90-48b7-9525-a6fee192db1d",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C70",
+      "claim": "Population coupling is only weakly dependent on stimulus type and mean fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the population coupling of a neuron is correlated across brain states, and is only weakly dependent on stimulus type and mean fluorescence, we believe that it provides a good measure of a neurons functional integration within the local network, and would - according to our model - therefore provide a reasonable estimate of its propensity for perceptual learning (Figure 4D; Sedigh-Sarvestani et al., 2017; Okun et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "9e5b7818-6e80-455d-90a2-a4d545a0bce5",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C71",
+      "claim": "Significant changes in synaptic efficacies can be expressed within 62 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, significant changes in synaptic efficacies can be expressed within this time (Meyer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "61819a5f-1fd9-4fe5-847d-8f1788db44d9",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C72",
+      "claim": "The network model provides a parsimonious explanation for the diverse population coupling observed in sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our network model provides a parsimonious explanation for the diverse population coupling recently observed in sensory cortex (Okun et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model results in relation to experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "0cf73229-6f12-461f-83fa-4143ff7554fd",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C73",
+      "claim": "Population coupling is dependent on the amount of recurrent synaptic input a neuron receives.",
+      "claim_type": "EXPLICIT",
+      "source": "Population coupling is dependent on the amount of recurrent synaptic input a neurons receives, in agreement with experimental data (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and matches experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "134b7636-0584-4b70-9c27-79f2ccd05207",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C74",
+      "claim": "The width of the population coupling distribution increases as the recurrent network approaches a dynamic regime dominated by high noise and diverse selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the width of the population coupling distribution increases as the recurrent network approaches a dynamic regime dominated by high noise and diverse selectivity, typical in cortical networks (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations across different parameter regimes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "f34ae868-342f-4b72-a7d4-8730db44a2e1",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C75",
+      "claim": "In order to enhance perceptual learning, plastic neurons in recurrent networks should be more coupled to the rest of the population than stable neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional impact of population coupling on learning is crucial: in order to enhance perceptual learning, plastic neurons in recurrent networks should be more coupled to the rest of the population than stable neurons (Figure 4D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the perceptual learning simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "e451128f-72fd-4a30-9e3c-25d8f4159c2a",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C76",
+      "claim": "High population coupling helps plastic neurons change their stimulus preference towards an associated stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that high population coupling helps plastic neuron change their stimulus preference towards an associated stimulus, but hinders the ability of stable neurons to provide an instructive signal for learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the perceptual learning simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "7d111cf9-25e2-4c91-9550-a71f96e73b99",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C77",
+      "claim": "High population coupling hinders the ability of stable neurons to provide an instructive signal for learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that high population coupling helps plastic neuron change their stimulus preference towards an associated stimulus, but hinders the ability of stable neurons to provide an instructive signal for learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the perceptual learning simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "8165eb09-eeb7-48e7-a38b-b029fd5031d6",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C78",
+      "claim": "Correlated diversity of population coupling and learning rate enables both robust stimulus representation and a flexible substrate suitable for perceptual learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlated diversity of population coupling and learning rate therefore enables both robust stimulus representation (low \u03b1, PC) and a flexible substrate suitable for perceptual learning (high \u03b1, PC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the combined model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "fe296282-cb2f-4d91-ae74-99944c1a3cc2",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "claim_id": "C79",
+      "claim": "The plasticity-coupling link efficiently combines stable and flexible stimulus representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our findings we propose that the plasticity-coupling link efficiently combines stable and flexible stimulus representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the model results and experimental validation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1dc99174-3047-4088-82a1-ca268c2a9e19",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In a fully connected network model with diverse learning rates, neurons with fast learning rates develop higher population coupling than neurons with slow learning rates. Fast neurons develop strong specific connections sooner but exhibit greater synaptic weight fluctuations, while slow neurons develop more stable and specific connectivity. Increasing learning rate predominantly increases non-specific connections, leading to overall increased synaptic input and population coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C14-C15, C24-C34, and C36 collectively demonstrate the plasticity-coupling link through computational simulations. The model implementation is clearly described (C24-C25), the emergent connectivity patterns are documented (C26-C32), and the relationship between learning rate and population coupling is quantified (C36, Figure 1E). The results are internally consistent and supported by figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "d08d04d1-9521-4c3b-ab9f-449d9ed071dd",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A strong plasticity-coupling link requires both moderate amounts of noise within the network and relatively slow synaptic scaling compared with Hebbian plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by parameter exploration shown in Figure 1\u2014figure supplement 1, which systematically varies noise and synaptic scaling rate. The finding is consistent with experimental timescales cited (Turrigiano et al., 1998), providing biological plausibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "6340f39c-7075-489c-adfb-19b9cb7514ff",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In a receptive-field based network model of mouse visual cortex, diverse learning rates lead to a broader distribution of population coupling that is correlated with synaptic input, matching experimental observations better than uniform learning rate networks. Networks with diverse learning rates also exhibit broader population coupling distributions and weaker stimulus selectivity compared to uniform networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 and C48-C50 demonstrate that the plasticity-coupling link generalizes to more realistic network architectures. Statistical tests are provided (C41: r=0.29, p<1e-5; C43: p=0.52), figures support the claims (Figure 2A-D), and comparisons with experimental data (Okun et al., 2015) validate the model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "6f558171-bf5f-4254-93be-48ebab19d2a2",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The magnitude of stimulus selectivity fluctuations is correlated with population coupling in networks with diverse learning rates but not in networks with uniform learning rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by statistical analysis (C45: p=0.4; C46: r=0.18, p=1e-5) and Figure 2E. This demonstrates a key prediction of the model that distinguishes diverse from uniform learning rate networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "7061dc71-d959-4f4f-99f1-72e45827475d",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of Allen Brain Observatory data validates the model prediction that population coupling is correlated with stimulus response variability. Approximately 75% of neurons show orientation preference changes, and population coupling is weakly but significantly correlated with changes in preferred orientation (r=0.1, p<1e-5) and direction (r=0.12, p<1e-5). This relationship is independent of mean calcium fluorescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C51-C57 provide experimental validation of the model's key prediction. Statistical tests are appropriate (Spearman correlations, t-tests), sample sizes are large (15,281 neurons, 64 experiments), and controls for confounding factors are included (C56). The correlations are weak but significant and consistent across experiments (Figure 3E-F).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "b6e6c214-b6dd-40aa-8ad7-e2463ed00b80",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In perceptual learning simulations, networks with only fast learning rates quickly learn stimulus associations but degrade feedforward stimulus representation, while networks with only slow learning rates maintain stable representations but learn poorly. Networks with diverse learning rates overcome both limitations by having fast neurons learn associations while slow neurons maintain a stable backbone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are supported by perceptual learning simulations shown in Figure 4A-B. The complementary roles of fast and slow neurons are clearly demonstrated, and the advantage of diverse learning rates is evident in the combined performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "6a3b6148-1654-4f7c-ada1-e91e66e47e0d",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Strong population coupling helps plastic neurons alter their stimulus preference during perceptual learning but hinders stable neurons from providing instructive signals. Optimal perceptual learning occurs when plastic neurons have high population coupling and stable neurons have low population coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C62-C64 are supported by systematic simulations varying population coupling (Figure 4D). The mechanistic explanation is provided (C76-C77), and the functional implications are clearly demonstrated. The results show a specific region of parameter space (labeled \u03a6 in Figure 4D) where learning is optimal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "27bb4231-01c0-4551-8620-5c364077445e",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Networks with diverse learning rates advantageously combine properties of networks with only slow or only fast learning rates for stimulus decoding, performing well across a range of input strengths and noise levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by stimulus decoding simulations shown in Figure 4E. The performance advantage of diverse learning rate networks is demonstrated across different parameter regimes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "f992daa4-a10d-4750-9610-f20a7e066c9a",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The plasticity-coupling link provides a parsimonious mechanism for diverse population coupling observed in sensory cortex and enables efficient combination of stable and flexible stimulus representation. This architecture ensures plastic neurons are strongly coupled while stable neurons form a weakly coupled backbone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C20-C21, and C72-C79 synthesize the main conclusions from the computational and experimental results. The interpretation is well-supported by the collective evidence from model simulations (Figures 1-2), experimental validation (Figure 3), and functional analyses (Figure 4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "cd7ae0c2-0da1-42d1-9285-798b9b7d3e86",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The network model implements Hebbian plasticity and synaptic scaling for excitatory synapses, and homeostatic inhibitory plasticity for inhibitory synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 describe the model implementation with appropriate citations (Vogels et al., 2011). The plasticity rules are mathematically specified in Equations 3-4 and are standard approaches in computational neuroscience.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    },
+    {
+      "id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12",
+      "content_id": "8b2ade45-2c69-4ca7-b04c-4cb0b74528e3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establish that neurons exhibit diverse stimulus response stability, population coupling is correlated with synaptic input, and the mechanisms underlying this diversity are unknown. These observations motivate the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C13, C16, C35, C47, and C66-C71 are background knowledge supported by appropriate citations to experimental literature. These establish the context and motivation for the study but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:31:19.522580Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d50c1827-c76e-419b-bdf8-df673fc7061a",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "ddf2d96a-ae33-44cd-b691-0981de4de2ea",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "073c648c-026a-48c8-a658-14f3f74bc1f3",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "bf15976a-1ab8-4820-aeec-f8370d613a76",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "c0bc2052-1401-4247-b36d-741e165011b9",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "6fd6f2b3-e2c2-44ac-9c7a-1cc2d8f8e1f5",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "69a949e3-7847-4030-8f6f-4d3e78b0a904",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "1f19af21-c83e-44b2-ad67-1b28e4586824",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "d8bbc9cf-c90a-417b-b1ea-73b1e2f00961",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "f4e2d00d-58e7-4a73-b8c7-9f20e1a8dcdf",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "2751ef66-264e-43f4-96e0-3f096f9c1abe",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "733030b4-5874-438f-a861-a870526c6e93",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "f61d494a-58ce-4ae0-a024-8c9a29ace22b",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "8bc60474-2e72-49b9-8658-6ebf892dde36",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "aa4bc08f-7ed5-4026-8943-2bff0fa73186",
+      "result_id": "1dc99174-3047-4088-82a1-ca268c2a9e19"
+    },
+    {
+      "claim_id": "291af68f-0a85-4ec6-993d-3bcfd5b7a451",
+      "result_id": "d08d04d1-9521-4c3b-ab9f-449d9ed071dd"
+    },
+    {
+      "claim_id": "53fc4590-4cb5-4e66-9679-a25ff700bbba",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "cb8aa619-bd5a-4e4a-87c3-ddbc8349a196",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "dc2b72bb-b22f-498f-8ce1-078116ce8fdc",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "36d83183-0fc6-426d-9fb3-109bc4ef5056",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "ab13ce7e-a29a-405f-bbed-bf290e47e95f",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "63f18c19-38f1-4e63-9624-72841d422686",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "7ac8a997-51f2-4f49-bcfa-f9de5227aea8",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "c313b289-f78c-46bf-8544-7cb04df61217",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "dade00c7-eb71-431d-b91c-db8a17f22802",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "2ff61229-e70c-4013-ac46-fc71e63a4231",
+      "result_id": "6340f39c-7075-489c-adfb-19b9cb7514ff"
+    },
+    {
+      "claim_id": "ae55edff-db8f-46a9-b50d-6248704c105e",
+      "result_id": "6f558171-bf5f-4254-93be-48ebab19d2a2"
+    },
+    {
+      "claim_id": "48327581-1979-4cb3-ab32-f88a6f101159",
+      "result_id": "6f558171-bf5f-4254-93be-48ebab19d2a2"
+    },
+    {
+      "claim_id": "413f3344-4d6b-431f-8ac7-f1a6205c1477",
+      "result_id": "7061dc71-d959-4f4f-99f1-72e45827475d"
+    },
+    {
+      "claim_id": "358ac26b-c3d6-4a56-9f5d-ab58ec574b86",
+      "result_id": "7061dc71-d959-4f4f-99f1-72e45827475d"
+    },
+    {
+      "claim_id": "01bc7cd6-0d06-49c6-9b3f-f5b8458007cc",
+      "result_id": "7061dc71-d959-4f4f-99f1-72e45827475d"
+    },
+    {
+      "claim_id": "2e7ada7e-0a6a-4666-b426-1f12e95f1fe3",
+      "result_id": "7061dc71-d959-4f4f-99f1-72e45827475d"
+    },
+    {
+      "claim_id": "c600ef69-9acc-443f-84cd-ecebe8bd62ef",
+      "result_id": "7061dc71-d959-4f4f-99f1-72e45827475d"
+    },
+    {
+      "claim_id": "75ab416f-2e63-40e7-a068-6b526d2a98fb",
+      "result_id": "7061dc71-d959-4f4f-99f1-72e45827475d"
+    },
+    {
+      "claim_id": "5816a400-07fe-47b0-99b6-247ed4bc478a",
+      "result_id": "7061dc71-d959-4f4f-99f1-72e45827475d"
+    },
+    {
+      "claim_id": "ca02e957-6fb6-40f0-8888-42dcede5565d",
+      "result_id": "7061dc71-d959-4f4f-99f1-72e45827475d"
+    },
+    {
+      "claim_id": "ede0ea72-3bc8-4dca-81e8-88be0d8ff8d6",
+      "result_id": "b6e6c214-b6dd-40aa-8ad7-e2463ed00b80"
+    },
+    {
+      "claim_id": "49e5305c-94b3-4520-ba4f-e91f8f6ec3f2",
+      "result_id": "b6e6c214-b6dd-40aa-8ad7-e2463ed00b80"
+    },
+    {
+      "claim_id": "81735180-a2e6-4673-bf22-2a65807dc42f",
+      "result_id": "b6e6c214-b6dd-40aa-8ad7-e2463ed00b80"
+    },
+    {
+      "claim_id": "22205b6a-1719-4a94-88b5-29f368ea88f9",
+      "result_id": "b6e6c214-b6dd-40aa-8ad7-e2463ed00b80"
+    },
+    {
+      "claim_id": "a52e67a9-9845-49af-bd86-272977b8401a",
+      "result_id": "6a3b6148-1654-4f7c-ada1-e91e66e47e0d"
+    },
+    {
+      "claim_id": "2264ef19-46b2-4b12-81e4-397906ab265e",
+      "result_id": "6a3b6148-1654-4f7c-ada1-e91e66e47e0d"
+    },
+    {
+      "claim_id": "2724db0f-768b-4702-bb00-d23ed363c59c",
+      "result_id": "6a3b6148-1654-4f7c-ada1-e91e66e47e0d"
+    },
+    {
+      "claim_id": "0e8bc36f-a14f-4fdc-8b91-0c3e9efa2fb7",
+      "result_id": "6a3b6148-1654-4f7c-ada1-e91e66e47e0d"
+    },
+    {
+      "claim_id": "3c1824c4-4332-4889-a20a-bf816ed5e86f",
+      "result_id": "6a3b6148-1654-4f7c-ada1-e91e66e47e0d"
+    },
+    {
+      "claim_id": "f34ae868-342f-4b72-a7d4-8730db44a2e1",
+      "result_id": "6a3b6148-1654-4f7c-ada1-e91e66e47e0d"
+    },
+    {
+      "claim_id": "e451128f-72fd-4a30-9e3c-25d8f4159c2a",
+      "result_id": "6a3b6148-1654-4f7c-ada1-e91e66e47e0d"
+    },
+    {
+      "claim_id": "7d111cf9-25e2-4c91-9550-a71f96e73b99",
+      "result_id": "6a3b6148-1654-4f7c-ada1-e91e66e47e0d"
+    },
+    {
+      "claim_id": "4ca215e6-d4b2-42e1-b575-20196a4f56d8",
+      "result_id": "27bb4231-01c0-4551-8620-5c364077445e"
+    },
+    {
+      "claim_id": "bcb4fee3-7692-4ef5-b895-6021e6e58f58",
+      "result_id": "f992daa4-a10d-4750-9610-f20a7e066c9a"
+    },
+    {
+      "claim_id": "5af27a6c-0837-419c-b8ab-921ba4e18cdf",
+      "result_id": "f992daa4-a10d-4750-9610-f20a7e066c9a"
+    },
+    {
+      "claim_id": "38bfb0c4-10a9-4fe6-831b-77a40f8bb62c",
+      "result_id": "f992daa4-a10d-4750-9610-f20a7e066c9a"
+    },
+    {
+      "claim_id": "61819a5f-1fd9-4fe5-847d-8f1788db44d9",
+      "result_id": "f992daa4-a10d-4750-9610-f20a7e066c9a"
+    },
+    {
+      "claim_id": "0cf73229-6f12-461f-83fa-4143ff7554fd",
+      "result_id": "f992daa4-a10d-4750-9610-f20a7e066c9a"
+    },
+    {
+      "claim_id": "134b7636-0584-4b70-9c27-79f2ccd05207",
+      "result_id": "f992daa4-a10d-4750-9610-f20a7e066c9a"
+    },
+    {
+      "claim_id": "8165eb09-eeb7-48e7-a38b-b029fd5031d6",
+      "result_id": "f992daa4-a10d-4750-9610-f20a7e066c9a"
+    },
+    {
+      "claim_id": "fe296282-cb2f-4d91-ae74-99944c1a3cc2",
+      "result_id": "f992daa4-a10d-4750-9610-f20a7e066c9a"
+    },
+    {
+      "claim_id": "dfbb0284-6f6f-4426-8b65-a8fc2f9c6f1f",
+      "result_id": "cd7ae0c2-0da1-42d1-9285-798b9b7d3e86"
+    },
+    {
+      "claim_id": "7c5b16e7-83f7-4db1-b533-ef84596c9141",
+      "result_id": "cd7ae0c2-0da1-42d1-9285-798b9b7d3e86"
+    },
+    {
+      "claim_id": "f9138766-3b4a-4ce7-95a8-19591630a8a6",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "b0559c95-d75b-4f64-8d31-60c93504bff6",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "e56b2bcc-c329-44c6-9cbb-90744d91625d",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "0e0dc570-137f-4574-ad73-321821503209",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "dc2de61c-f6a6-457f-9171-4a98257e4342",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "8f51fd5f-6407-4627-b0ae-ba372d983183",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "f599a1a1-18ad-406c-ba3b-4681077d0595",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "2200e4ee-a152-4e05-ade4-312939829a6a",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "dab095b8-fa20-4752-855e-1497d41734f2",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "69599761-0580-4774-afa6-d2cd30926b2d",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "5c0a03e4-2d20-420e-aa9b-c4087429012f",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "b57aa2fc-7c7f-4002-9b48-c4510e5b1cd8",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "8b78c6b2-0aa1-4e88-9b2b-fd0840704f5b",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "69f2516e-44f8-4cae-8f22-d6c2a62a40f2",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "c93bd619-9dc6-4996-b975-6507b8c49545",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "0334db60-10d1-4a65-bb33-04a93524d342",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "26203b25-b879-4163-93c0-d725da5216d9",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "ba36ad05-8a90-48b7-9525-a6fee192db1d",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    },
+    {
+      "claim_id": "9e5b7818-6e80-455d-90a2-a4d545a0bce5",
+      "result_id": "a290ef4b-5dec-4137-98f7-5c43f4e09a12"
+    }
+  ],
+  "comparisons": []
+}

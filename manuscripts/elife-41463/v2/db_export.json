@@ -1,0 +1,1448 @@
+{
+  "submission": {
+    "id": "5a54b576-d9c9-4dd2-9c1d-3452cadfee32",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:06:05.208893Z",
+    "updated_at": "2025-12-02T08:06:05.208893Z"
+  },
+  "content": [
+    {
+      "id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "submission_id": "5a54b576-d9c9-4dd2-9c1d-3452cadfee32",
+      "content_type": "manuscript",
+      "content_text": "# Programmed knockout mutation of liver fluke granulin attenuates virulence of infection-induced hepatobiliary morbidity\n\n## Authors\n\n- Patpicha Arunsan<sup>1</sup>\n- Wannaporn Ittiprasert<sup>2</sup> ([ORCID: 0000-0001-9411-8883](https://orcid.org/0000-0001-9411-8883))\n- Michael J Smout<sup>4</sup> ([ORCID: 0000-0001-6937-0112](https://orcid.org/0000-0001-6937-0112))\n- Christina J Cochran<sup>2</sup>\n- Victoria H Mann<sup>2</sup>\n- Sujittra Chaiyadet<sup>1</sup>\n- Shannon E Karinshak<sup>2</sup> ([ORCID: 0000-0002-2079-0973](https://orcid.org/0000-0002-2079-0973))\n- Banchob Sripa<sup>5</sup>\n- Neil David Young<sup>6</sup> ([ORCID: 0000-0001-8756-229X](https://orcid.org/0000-0001-8756-229X))\n- Javier Sotillo<sup>4</sup> ([ORCID: 0000-0002-1443-7233](https://orcid.org/0000-0002-1443-7233))\n- Alex Loukas<sup>4</sup> \u2020\n- Paul J Brindley<sup>2</sup> ([ORCID: 0000-0003-1765-0002](https://orcid.org/0000-0003-1765-0002)) \u2020\n- Thewarach Laha<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Parasitology, Faculty of Medicine Khon Kaen University Khon Kaen Thailand\n2. Department of Microbiology, Immunology and Tropical Medicine George Washington University Washington DC United States\n3. Research Center for Neglected Diseases of Poverty, School of Medicine & Health Sciences George Washington University Washington DC United States\n4. Centre for Molecular Therapeutics Australian Institute of Tropical Health and Medicine, James Cook University Cairns Australia\n5. Department of Pathology, Faculty of Medicine Khon Kaen University Khon Kaen Thailand\n6. Faculty of Veterinary and Agricultural Sciences The University of Melbourne Victoria Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nInfection with the food-borne liver fluke Opisthorchis viverrini is the principal risk factor (IARC Working Group on the Evaluation of Carcinogenic Risks to Humans, 2012) for cholangiocarcinoma (CCA) in the Lower Mekong River Basin countries including Thailand, Lao PDR, Vietnam and Cambodia. We exploited this link to explore the role of the secreted growth factor termed liver fluke granulin (Ov-GRN-1) in pre-malignant lesions by undertaking programmed CRISPR/Cas9 knockout of the Ov-GRN-1 gene from the liver fluke genome. Deep sequencing of amplicon libraries from genomic DNA of gene-edited parasites revealed Cas9-catalyzed mutations within Ov-GRN-1. Gene editing resulted in rapid depletion of Ov-GRN-1 transcripts and the encoded Ov-GRN-1 protein. Gene-edited parasites colonized the biliary tract of hamsters and developed into adult flukes, but the infection resulted in reduced pathology as evidenced by attenuated biliary hyperplasia and fibrosis. Not only does this report pioneer programmed gene-editing in parasitic flatworms, but also the striking, clinically-relevant pathophysiological phenotype confirms the role for Ov-GRN-1 in virulence morbidity during opisthorchiasis.\n\n## Introduction\n\nLiver fluke infection caused by species of Opisthorchis and Clonorchis remains a major public health problem in East Asia and Eastern Europe. O. viverrini is endemic in Thailand and Laos, where\u00a0~10 million people are infected with the parasite (Sripa et al., 2011). In liver fluke endemic regions, this infection causes hepatobiliary morbidity including cholangitis, choledocholithiasis (gall stones), and periductal fibrosis, and is the principal risk factor for bile duct cancer, cholangiocarcinoma (CCA) (Sripa et al., 2011; Sripa et al., 2007; Mairiang et al., 2012; Tyson and El-Serag, 2011; Shin et al., 2010a). Indeed, there is no stronger link between a human malignancy and a parasitic infection than that between CCA and infection with O. viverrini (Pagano et al., 2004). Northeastern Thailand suffers the highest incidence of CCA in the world, often exceeding 80 cases per 100,000 population and for which up to 20,000 people annually are admitted for surgery. The prognosis for liver fluke infection-induced cancer remains poor (Sripa et al., 2011; Khuntikeo et al., 2015; Khuntikeo et al., 2016; Luvira et al., 2016).\n\nHow and why opisthorchiasis induces cholangiocarcinogenesis is likely multi-factorial, including mechanical irritation of the biliary tract during migration and feeding of the liver fluke, secretion by the parasite of inflammatory molecules, and nitrosamines in fermented foods that are a dietary staple in northeastern provinces of Thailand (Songserm et al., 2012). To survive in the hostile host environment, parasitic helminths produce an assortment of excretory/secretory (ES) products including proteins with diverse roles at the host\u2013parasite interface. This interaction has long been thought, but not fully understood, to modify cellular homeostasis and contribute to malignant transformation during chronic opisthorchiasis (Brindley and Loukas, 2017). Feeding activity of the liver fluke inflicts wounds in the biliary tree, resulting in lesions that undergo protracted cycles of repair and re-injury during chronic infection. The liver fluke secretes mediators that accelerate wound resolution in monolayers of cultured cholangiocytes, an outcome that is compromised following silencing of expression of the liver fluke secreted growth factor Ov-GRN-1 using RNA interference (Papatpremsiri et al., 2015; Smout et al., 2015). We hypothesize that proliferation of biliary epithelial cells induced by Ov-GRN-1 is a pivotal factor in maintenance and progression of a tumorigenic microenvironment in the liver during chronic opisthorchiasis.\n\nProgress with development of genetic tools for functional genomic studies with platyhelminth parasites has been limited to date (Hoffmann et al., 2014). The use of clustered regularly interspaced short palindromic repeats (CRISPR) associated with Cas9, an RNA-guided DNA endonuclease, has revolutionized genome editing in biomedicine, agriculture and biology (Hsu et al., 2014; Sander and Joung, 2014). Progress with CRISPR/Cas9 in numerous eukaryotes including the nematodes Caenorhabditis elegans, Strongyloides stercoralis and Strongyloides ratti has been described (Sander and Joung, 2014; Waaijers and Boxem, 2014; Lok et al., 2017; Gang et al., 2017), but this form of gene editing has not been reported for flatworm parasites. Here, we deployed a CRISPR/Cas9-based approach, aiming to knockout (mutate) the Ov-GRN-1 gene and assess the virulence of gene-edited flukes in vitro and in vivo in a hamster model of opisthorchiasis.\n\n## Results\n\n### Programmed mutation of growth factor secreted by carcinogenic liver fluke\n\nFollowing transfection of adult flukes with the gene-editing construct targeting Ov-GRN-1, the activity and efficiency of programmed editing was evaluated by two approaches. First, quantitative PCR (qPCR) was employed, which relies on the inefficiency of binding of a primer (here termed OVR-F) overlapping the target genomic sequence of the guide RNA (gRNA), that\u00a0is where mutations are expected to have occurred, compared to the binding efficiency of flanking primers, that\u00a0is outside the mutated region (flanking primers termed OUT-F and OUT-R) (Figure 1A and B). The ratio between the OVR-F and\u00a0OUT-R products and OUT-F and\u00a0OUT-R products provided an estimate of the amplification fold-reduction in the sample of CRISPR/Cas9-edited compared to genomic DNA (gDNA) from control, wild-type liver flukes at the target sequence of the sgRNA, that\u00a0is the annealing site for the OVR primer (Shah et al., 2015; Yu et al., 2014). A reduction in relative fold amplification of 2.7% was detected in gDNA from the Cas9-treated worms (Figure 1E, Figure 1\u2014figure supplement 1C). Second, to identify, quantify and characterize the mutations that arose in the genome of Ov-GRN-1-edited (termed \u0394Ov-GRN-1) flukes, we used an amplicon-sequencing approach. A targeted (amplicon) sequence library was constructed from gDNA from some of the flukes (7 to 21 days after pCas-Ov-GRN-1 transfection). A fragment of 173 bp spanning the predicted site of the programmed double stranded break of Ov-GRN-1 was amplified from gDNA primed with oligonucleotides flanking 1496\u20131668 nt of Ov-GRN1. Adaptors and barcodes were ligated into the amplicon libraries. Deep sequencing of the amplicon libraries was undertaken using the Illumina MiSeq system. Insertion-deletion (INDEL)/mutation profiles in the sequence reads were compared in multiple sequence alignments with the reference template sequence, nt 1,496\u20131,668 of wild type Ov-GRN-1. The CRISPResso computational pipeline was used to quantify gene-editing outcomes and efficiency (Canver et al., 2018; Pinello et al., 2016); among\u00a0>2 million reads aligned against the reference sequence, 27,640 sequence reads exhibited non-homologous end joining (NHEJ) mutations, including 170 reads with insertions (0.6%), 193 reads with deletions (0.7%) and 27,277 reads with substitutions (98.7%). Overall, 1.3% of the sequenced reads exhibited NHEJ mutations (Figure 1C). Regarding the NHEJ-bearing reads,>100 forms exhibited mutations that would disrupt the coding sequencing of Ov-GRN-1. Four representatives of the INDEL-bearing traces, aligned with the wild type (WT) allele are presented in Figure 1\u2014figure supplement 1B. These and related (below) sequence reads are available at GenBank Bioproject PRJNA385864, Biosample SAMN07287348, SRA study SRP110673, accessions SRR5764463-5764618 and SRR8187484-SRR8187487, at https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP110673, Bioproject, www.ncbi.nlm.nih.gov/bioproject/PRJNA385864.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41463/elife-41463-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic depiction of Ov-GRN-1 gene with CRISPR/Cas9 target site in first exon marked with green arrow. (B) The exon1, 2 and 3 location of Ov-GRN-1 gene, size of 6267 bp and gRNA targeting exon 1: gRNA sequence is highlighted in blue and the PAM (CGG) in parenthesis in red. Primer pairs were used to detect levels of mRNA expression using a RT-qPCR assay (Ov-GRN-1 RT- forward or RT-F and Ov-GRN1 RT-reverse or RT-R), Tri-primers were used to detect the % relative fold amplicon or mutations (outside-forward or OUT-F, overlap-forward or OVR-F and reverse primer or OUT/OVR-R) and MiSeq forward and reverse (MiSeq-F and MiSeq-R) primers were used to prepare the NGS amplicon. (C) CRISPR/Cas9-catalyzed insertion (red bars) and deletion (black bars) mutations (INDELs) detected in the Ov-GRN-1 gene; target site of programmed CRISPR/Cas9 double strand break indicated by the green arrow. Average mutation length was plotted against Ov-GRN-1 gene amplicon position in base pairs (bp). (D) Somatic tissues of individual adult worms (in triplicate per time per group) were solubilized, electrophoresed in SDS-PAGE gels, transferred to nitrocellulose membrane and probed with anti-Ov-GRN-1 rabbit antibody. WT: wild-type control fluke tissues; D1 to 21: \u0394Ov-GRN-1 fluke tissues sampled the arrow highlighting the\u00a0~9 kDa Ov-GRN-1 band at increasing time points (days) following transfection and \u0394Ov-GRN-1 flukes showed similar levels of expression of Ov-TSP-2 protein (control antibody). D1 to 21, protein products from flukes days 1 to 21 following gene-editing treatment. Western blot strips probed with rabbit anti-Ov-TSP-2 antiserum, the arrow highlighting the band at\u00a0~24 kDa representing Ov-TSP-2. (E) Reduced levels of Ov-GRN-1 transcripts and Ov-GRN-1 protein after transfection of adult flukes with Ov-GRN-1 CRISPR/Cas9 construct using quantitative real-time PCR (mRNA) and densitometry of western blot signals (protein). Data were plotted relative to wild type (WT) fluke values (100%) as the mean\u00a0\u00b1SD of three replicates. ****p\u00a0<\u00a00.0001 compared to levels in WT flukes - protein in black; RNA in pink - at each time point (two-way ANOVA Holm-Sidak multiple comparison test).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41463/elife-41463-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Ov-GRN-1 guide RNA insertion and Cas9 cassette. (B) The reference (WT) Ov-GRN-1 sequence with the target (red bar) and PAM (blue bar) sites highlighted. The dark green arrow indicates the programmed CRISPR/Cas cleavage site. Deep sequencing was used to determine specific mutations; the four sequences below the reference sequence provide examples of mutated Ov-GRN-1 genes; variations with red-boxed bases highlight mutations induced by the CRISPR/Cas9\u00a0manipulation. All four examples show a range of insertion, deletion or mismatch mutations boxed in red. The \u2018+2 insertion\u2019 with a dotted light green box highlights two alanine insertions near the programmed target site. The \u2018\u22126 deletion\u2019 highlights six absent base pairs with a light blue box that includes the target site. (C) The mutation rates were estimated using qPCR at each time point of \u0394Ov-GRN-1 adult flukes cultured in vitro and the means and standard deviations were determined. Gel of RT-qPCR products following electrophoresis (lower image) revealed that Ov-GRN-1 RNA levels were reduced in \u0394Ov-GRN-1 adult flukes.\n\n### Diminished proliferation and wound healing induced by excretory/secretory products of genome-edited liver flukes\n\nEffects of gene editing on transcription and protein expression in adult flukes were investigated. Levels of both Ov-GRN-1 mRNA transcripts as determined by reverse transcription (RT)-qPCR and of Ov-GRN-1 protein, as detected by western blot using anti-Ov-GRN-1 serum, fell significantly from days 1 and 2 after transfection, respectively (p\u22640.0001; Figure 1D and E, Figure 1\u2014figure supplement 1C). Expression levels of two reference genes encoding actin (Figure 1\u2014figure supplement 1C) and the Ov-TSP-2 tegument protein (Figure 1D) were not influenced by the programmed mutation of Ov-GRN-1. These findings, revealing diminished RNA and protein following programmed mutation indicated that CRISPR/Cas9 catalyzed programmed gene-editing of Ov-GRN-1 was active in adult flukes in vitro. Thereafter, to investigate whether gene editing of Ov-GRN-1 impacted in vitro indicators of pathogenesis, the capacity of ES products from WT, mock-transfected and gene-edited flukes to drive proliferation and scratch wound repair of the H69 human cholangiocyte cell line was assessed. ES from WT and mock-transfected adult flukes stimulated cell proliferation and wound closure whereas an equivalent amount of ES products from \u0394Ov-GRN-1 flukes resulted in significantly reduced cell proliferation over the 6-day course of the assay (p\u00a0\u2264\u00a00.0001; Figure 2A and B, Figure 2\u2014figure supplement 1A and B) and significantly reduced in vitro wound closure over 36 hr (p\u00a0\u2264\u00a00.0001; Figure 2C and D, Figure 2\u2014figure supplement 1C and D), consistent with the reduction in Ov-GRN-1 protein secreted from the gene-edited liver flukes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41463/elife-41463-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative cell proliferation images of H69 cholangiocyte cells co-cultured with flukes in Transwell plates; mock transfected (top) and \u0394Ov-GRN-1 (bottom) groups shown at day 3. (B) Reduced cell proliferation induced by ES products of \u0394Ov-GRN-1 fluke, as shown in panel (A), quantified from days 1 to 6. Data were plotted as mean relative percentage to control cells cultured in the absence of flukes. (C) Representative image of repair of wound from scratch in cultured H69 scratch during co-culture with flukes in Transwell plates. Mock transfected (upper) and \u0394Ov-GRN-1 (lower) groups shown at 0 and 36 hr after scratch wounding. Dotted line indicates the margin of the wound. (D) Scratch wound repair assay quantified from 0 to 36 hr, revealing diminished healing in cells co-cultured with the \u0394Ov-GRN-1 parasites. Panels (B) and (D): mean\u00a0\u00b1SD, three replicates; ****p\u00a0<\u00a00.0001 compared to wild-type flukes with two-way ANOVA Holm-Sidak multiple comparison test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41463/elife-41463-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative cell proliferation images of H69 immortalized human cholangiocyte cell line co-cultured with flukes in Trans-well plates; shown at 24 and 72 hr. (B) Comparing the difference in cell proliferation values from Figure 2B between ES products from the \u0394Ov-GRN-1 flukes and ES from WT flukes revealed a linear correlation of reduction of cell proliferation that increases over time. (C) Representative image of scratch wound repair of cultured cholangiocytes when H69 cells were co-cultured in Trans-well plates with flukes; time points from 0 to 36 hr post-scratch. Dotted line indicates the margin of the wound. (D) Scratch wound repair assay quantified values from Figure 2D showed an increasing linear correlation over time of reduced wound closure when plotting the difference between the \u0394Ov-GRN-1 and the WT fluke groups. Panels (B) and (D): mean\u00a0\u00b1SD, three biological replicates.\n\n### Attenuated infection-induced hyperplasia of the biliary tract\n\nNotwithstanding the marked effects observed with gene-edited, adult developmental forms, the metacercaria (MC) (Figure 3A) is the infective stage of O. viverrini for humans. Accordingly, we investigated gene knockout in MC. Significant differences in Ov-GRN-1 transcript levels were noted between groups of MC (p\u00a0\u2264\u00a00.01), but the effect was modest,\u00a0\u22644%, at each time point (Figure 3\u2014figure supplement 1), suggesting that delivery of the pCas-Ov-GRN-1 by electroporation through the MC cyst wall was ineffective. Exposure to bile acids and gastric enzymes results in excystation of O. viverrini MC in the duodenum of the mammalian host (Sripa et al., 2011). Using trypsin, here the process was mimicked in vitro to release the newly excysted juvenile worms (NEJ) (Figure 3B), after which these NEJs were subjected to electroporation with the CRISPR/Cas9 plasmid construct, in like fashion to the adult developmental stage of O. viverrini (above). Following this manipulation, marked depletion of Ov-GRN-1 transcripts in NEJ was evident by 24 hr later (p\u00a0\u2264\u00a00.0001) (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41463/elife-41463-fig3-v2.jpg)\n\n**Figure 3.:** Micrographs of metacercariae (A) and newly excysted juvenile flukes (NEJ) (B). (C) Levels of Ov-GRN-1 transcripts in mock-transfected and \u0394Ov-GRN-1 flukes at one to five days as quantified with qPCR and plotted relative to the wild type (WT) untreated group; mean\u00a0\u00b1SD; three replicates; ****p\u00a0\u2264\u00a00.0001 compared to WT flukes with two-way ANOVA Holm-Sidak multiple comparison test at each time point. (D) Representative micrograph (200\u00a0\u00d7\u00a0magnification) of H&E-stained thin sections from livers of hamsters at 14 days after infection with WT flukes. (E) Representative micrograph of H&E-stained thin sections showing hamster liver 14 days after infection with \u0394Ov-GRN-1 flukes. (F) Representative micrograph of H&E stained thin sections of livers of control, uninfected hamsters, revealing the healthy, organized pavement-like profile of the cells of the biliary epithelium (BE) enclosing the lumen of the bile duct (BD), near a blood vessel (BV), within the liver (L). Infection by WT flukes (D) revealed thickened, disordered epithelium adjacent to the parasite (Ov). Infection with the gene edited \u0394Ov-GRN-1 flukes (E) revealed a bile duct epithelium more similar to the uninfected hamster. (G) Epithelium width/hyperplasia (green bracket) was quantified using ImageJ and plotted as the mean\u00a0\u00b1SD of five biological replicates (hamsters) from each of group and time point (14 and 60 days). Significant differences were apparent when compared to the uninfected group using the two-way ANOVA with Holm-Sidak multiple comparison test: **p\u00a0\u2264\u00a00.01 and ****p\u00a0\u2264\u00a00.0001, and wild-type compared to \u0394Ov-GRN-1, #p\u00a0\u2264\u00a00.05 and ####p\u00a0\u2264\u00a00.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41463/elife-41463-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Expression of Ov-GRN-1 mRNA in WT, mock-transfected, and \u0394Ov-GRN-1 MC over 5 days as quantified with qPCR and plotted relative to the WT untreated group; mean\u00a0\u00b1SD from three replicates. Note: Curves have been adjusted horizontally\u00a0\u00b10.02 time units and a broken axis used with a condensed lower section to enhance data visualization. Using two-way ANOVA Holm-Sidak multiple comparisons test to compare groups at each time point: p\u00a0>\u00a00.05\u00a0= non-significant (ns) difference; **P\u00a0\u2264\u00a00.01; and ****p\u00a0\u2264\u00a00.0001 represent \u0394Ov-GRN-1 (pink) or Mock (blue) MC compared to WT control group (green), ####p\u00a0\u2264\u00a00.0001 represents \u0394Ov-GRN-1 compared to mock MC group.\n\nIn parallel, hamsters were infected with 100 \u0394Ov-GRN1 NEJs or WT NEJs immediately after electroporation. At necropsy of the hamsters 14 days later, similar numbers of WT and \u0394Ov-GRN-1 flukes were observed in the bile ducts, and they were similarly motile (not shown). Strikingly, however, acute infection with \u0394Ov-GRN-1 parasites failed to induce the marked hyperplasia of the biliary epithelia characteristic of chronic opisthorchiasis. Specifically, infection with WT flukes induced markedly disordered, hyperplasic growth of the epithelium adjacent to the parasites;\u00a0~500% thickening of the biliary epithelium compared to uninfected controls as measured in two-dimensional image analysis of H and E-stained thin sections (p\u00a0\u2264\u00a00.0001). By contrast, infection with the \u0394Ov-GRN-1 flukes provoked significantly less (p\u00a0\u2264\u00a00.0001) biliary hyperplasia than WT flukes (145% thickening compared to uninfected controls; p\u00a0\u2264\u00a00.01). Indeed, the bile ducts from hamsters infected with the \u0394Ov-GRN-1 flukes generally resembled those of the uninfected control hamsters (Figure 3D\u2013G). At 60 days after infection, significant differences in biliary hyperplasia remained between hamsters infected with WT (216%) and \u0394Ov-GRN-1 (162%) flukes (p\u00a0\u2264\u00a00.05), although this was less marked than during acute infection at day 14 (Figure 3G).\n\n### Reduced periductal fibrosis and morbidity during chronic opisthorchiasis\n\nTo evaluate disease during chronic infection with \u0394Ov-GRN-1 liver flukes and associated chronic biliary morbidity, hamsters were infected with \u0394Ov-GRN-1 and WT NEJ, and adult flukes were recovered and counted from the livers 60 days post-infection. Similar numbers of worms were recovered from both control and gene-edited liver fluke-infected hamsters (Figure 4A). To assess the impact of infection with \u0394Ov-GRN-1 on markers of chronic opisthorchiasis including biliary fibrosis, liver sections from infected hamsters were stained with Picro-Sirius Red to localize collagen bundles in the biliary tract (Figure 4B). Minimal deposits of collagen were seen in the periductal regions of the biliary tract of the uninfected control hamsters. By contrast, thick bands of collagen surrounded the enlarged bile ducts in the vicinity of the flukes in the hamsters infected with WT parasites. Significantly less collagen (28%) had been deposited in periductal regions of hamsters infected with \u0394Ov-GRN-1 flukes compared to livers of hamsters infected with WT flukes (p\u00a0\u2264\u00a00.001) (Figure 4B and C). To further assess fibrosis, thin sections of livers were immuno-stained for alpha-smooth muscle actin (\u03b1-SMA or ACTA2), a marker of hepatic fibrosis (Guido et al., 1997). Livers of hamsters infected with WT flukes showed densely packed collagen fibrils that stained for ACTA2 in periductal regions proximal to the parasites. In contrast, livers from hamsters infected with \u0394Ov-GRN-1 flukes displayed an irregular distribution of less dense collagen fibrils with less ACTA2-specific fluorescence (Figure 4D, Figure 4\u2014figure supplement 1). Measuring Alexa-594 fluorescence quantified the expression levels of ACTA2. Median levels of ACTA2 (quantified using Alexa-594-anti-ACTA2) in the livers of \u0394Ov-GRN-1 fluke-infected hamsters were significantly reduced (94%) compared to those of WT fluke-infected hamsters (p\u00a0\u2264\u00a00.01) (Figure 4E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41463/elife-41463-fig4-v2.jpg)\n\n**Figure 4.:** (A) Adult fluke numbers were counted from the livers of necropsy at 60 days post-infection and presented as the average and range for two hamsters per group. Numbers of flukes were similar in the wild type (WT) and \u0394Ov-GRN-1 groups; non-significant (ns). (B) Representative micrographs of thin sections of Sirius red-stained liver (L) from uninfected hamsters revealed minimal deposition of collagen (fibrosis [fb]) in the periductal regions and adjacent liver parenchyma; a thin margin of red-stained material outlined the endothelial cells of the blood vessel (BV) walls, and the biliary epithelia (BE) of the bile ducts (BD). Livers from hamsters infected with WT flukes (Ov) included marked deposition of collagen with elongated BE cells adjacent to the flukes. There was substantial collagen deposition in livers of hamsters infected with \u0394Ov-GRN1 flukes compared to uninfected liver sections but far less than for hamsters infected with WT flukes. (C) Liver fibrosis quantified with ImageJ MRI-fibrosis plugin presented as violin plots: 100 images containing bile ducts from 20 sections (five hamsters) per group; mean (black dot)\u00b1SD (vertical line). Fibrosis was reduced in the \u0394Ov-GRN-1 (23% less) compared to WT fluke-infected hamsters. The width of the violin plot represents measurement frequency. The Kruskal-Wallis with Dunn\u2019s multiple comparisons test was used to compare groups against the uninfected hamsters: ****p\u00a0\u2264\u00a00.0001; and \u0394Ov-GRN-1 against WT, ###p\u00a0\u2264\u00a00.001. (D) Representative micrographs, immunofluorescence/bright-field overlays, of sections probed with anti-ACTA2 antibody with fluorescence intensity indicated on a blue/green/red scale. ACTA2 was universally detected in myofibroblasts surrounding BV but not detected adjacent to healthy uninfected BD. The proximity of ACTA2 to fluke-infected BD was suggestive of myofibroblast generation in response to fluke-induced damage to BE. The upper row of micrographs (overlay) present combined bright-field and anti-ACTA2 fluorescence wide views of the liver sections. The boxed regions in the upper row indicate informative sites, which have been magnified and expanded in the central and lower rows of micrographs. The central row presents the boxed region with anti-ACTA2 fluorescence alone (Zoom Anti-ACTA2) and lower row presents the bright-field image overlaid by the fluorescence field (Zoom Overlay). Liver sections exhibited intense fluorescence surrounding BV (arterial blood vessels: red/green, venous vessels: blue/green), whereas in livers of uninfected hamsters BD exhibited only minimal fluorescence. The highlighted magnified (Zoom) rows of images revealed WT infected livers expressing mild (blue) but steady levels of ACTA2-staining surrounding thickened BE layer. The inner and outer BE cell margins are indicated by the dotted line (orange) around BDs with WT flukes. Livers from hamsters infected with \u0394Ov-GRN1 flukes showed irregular, generally feeble expression of ACTA2 proximal to BD. (E) Quantified levels of ACTA2 signals surrounding BDs from sections of hamster livers. Violin plot with reverse log2 Y-axis showing the ACTA2 intensity (per cm2 at 300 PPI) adjacent to BE, established from 25 to 30 discrete BD images per group (three hamsters), as assessed with ImageJ. Zero values from the uninfected group were deemed to have a value of 1 in order to plot the log axis. SD indicated as a line with the mean indicated by the central black dot, and the width of the violin indicative of frequency of measurement. ACTA2 staining showed 94% median reduction in \u0394Ov-GRN-1 fluke-infected livers compared to hamsters infected with WT liver flukes. One-way ANOVA with Holm-Sidak multiple comparison test, ****p\u00a0\u2264\u00a00.0001 compared to uninfected and ##p\u00a0<\u00a00.01 compared to \u0394Ov-GRN1 flukes against WT flukes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41463/elife-41463-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Thin liver sections presented in bright field or under fluorescent light following probing with anti-ACTA2 antibody; fluorescence intensity is indicated on a blue/green/red scale. These images were used to construct the bright field, immunofluorescence overlay and zoomed images in Figure 4D.\n\n### Gene editing efficiency correlated negatively with granulin gene expression\n\nBile ducts parasitized by the gene-edited worms displayed a broad range of fibrosis from minimal to marked, as established by staining both with Sirius Red and with antibody specific for alpha-smooth muscle actin. This situation may have reflected unevenness in level of programmed mutation of the Ov-GRN-1 gene in cells within and/or among individual liver flukes. To investigate this situation further, we assessed transcription of the Ov-GRN-1 gene from individual adult flukes recovered from hamsters 60 days after infection with gene edited NEJ. This revealed that levels of Ov-GRN-1 mRNA in the \u0394Ov-GRN-1 group flukes were 81% lower, in aggregate, than the control wild-type flukes (Figure 5A). Thereafter, to evaluate the mutation rate of the gene editing approach, which involved transfection by electroporation of batches of 750 NEJs, adult flukes at necropsy were assigned to one of three groups based on Ov-GRN-1 mRNA expression levels, as follows: (i)\u00a0\u2265\u00a0100% relative to WT mean, that\u00a0is, low (L) efficiency of programmed gene editing; group was termed L\u0394Ov-GRN-1; (ii)\u00a0>\u00a010 to<100% relative to WT mean, that\u00a0is moderate (M) level efficiency of programmed gene editing; termed M\u0394Ov-GRN-1; and (iii)\u00a0\u2264\u00a010% relative to WT mean, that\u00a0is high (H) level efficiency of programmed gene editing; termed H\u0394Ov-GRN-1. Genomic DNAs pooled from 7 to 10 worms of each group were studied to quantify the efficiency of gene editing, using both the NGS CRISPResso and the tri-primer qPCR approaches. The NGS CRISPResso analysis revealed mutation rates of 1.3, 5.9 and 17.2% in the L, M, and H groups of \u0394Ov-GRN-1 worms, respectively. The tri-primer qPCR analysis indicated mutation levels of 0.7, 3.2 and 4.6% in these groups, respectively. Both approaches confirmed that the efficiency of programmed gene editing negatively correlated with levels of the Ov-GRN-1 transcripts (Figure 5A and B). The combined mutation frequency among all three groups by the two approaches was 8.1% and 2.7%, with the 2.7% rate estimated by tri-primer qPCR indicating the same level as the mutation rate of 2.7% observed during culture of adult stage \u0394Ov-GRN-1 flukes for 7 to 21 days in vitro (Figure 1E, Figure 1\u2014figure supplement 1C). In addition, the NGS CRISPResso analysis of the sequence reads of the gene-edited L, M and H groups compared with those from the control WT group (GenBank accessions SRR8187484-SRR8187487, 5 to 10 million reads per targeted amplicon library) provided details of the nature and types of the mutations as insertions, deletions and/or substitutions following NHEJ events that repaired the programmed cleavage of the Ov-GRN-1 locus. The analysis also revealed increasing ratio of substitutions among the mutations among the L\u0394Ov-GRN-1, M\u0394Ov-GRN-1 and H\u0394Ov-GRN-1 groups (Figure 5B). Lastly, these findings also demonstrated the longevity of the programmed mutation at Ov-GRN-1; mutations were retained in the parasite for at least 60 days during active infection of the mammalian host.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41463/elife-41463-fig5-v2.jpg)\n\n**Figure 5.:** Expression of Ov-GRN-1 transcripts was reduced in \u0394Ov-GRN-1 compared to WT flukes. (A) Reverse log10 Y-axis shows the qPCR 2(-\u0394\u0394Ct) findings from flukes 60 days after programmed CRISPR/Cas9-gene editing and hamster infection plotted relative to mean value for the WT infection. The WT group displayed a broad level of expression, whereas the mean expression level for the \u0394Ov-GRN-1 flukes was only 19.4% of the WT group; Mann-Whitney nonparametric test, **p\u00a0\u2264\u00a00.01. Although significantly lower as a group, individual worms of this \u0394Ov-GRN-1 cohort displayed phenotypes that ranged from no apparent effect (wild-type phenotype) to markedly diminished expression of Ov-GRN-1 (\u0394Ov-GRN-1 phenotype). Mutation frequency was assessed by assigning worms in the \u0394Ov-GRN-1 group into three sub-groups of flukes based on CRISPR/Cas9 mutation frequency. Eight flukes with effective CRISPR gene knockout (H\u0394Ov-GRN1: Ov-GRN-1\u226410% expression), seven flukes with modest levels of transcript knockout (M\u0394Ov-GRN-1:>10 to<100% Ov-GRN-1), and 10 flukes exhibiting little or no effect (L\u0394Ov-GRN-1: Ov-GRN-1 100\u2013120%). The aggregate mutation frequency among the three \u0394Ov-GRN-1 sub-groups was 8.1% and 2.7% as estimated by the NGS-CRISPResso and tri-primer qPCR approaches, respectively. (B) Pie charts showing the CRISPResso estimated rate of programmed mutations in the L\u0394Ov-GRN-1, M\u0394Ov-GRN-1 and H\u0394Ov-GRN1 sub-groups compared to non-mutated, WT reads. NHEJ mutation rate indicated by the pie slice (navy blue) and the proportion of each mutation sub-type is provided on the expanded bar at the right.\n\n## Discussion\n\nThis report, and the accompanying article on schistosomes (Ittiprasert et al., 2019), pioneer programmed gene editing using CRISPR/Cas9 of trematodes and indeed genome editing for species of the phylum Platyhelminthes. The findings revealed that somatic tissue gene editing disrupted the expression of liver fluke granulin, resulting in a clinically noteworthy phenotype of attenuated hepatobiliary tract morbidity. Scrutiny of the nucleotide sequence reads indicated that the chromosomal break took place as programmed and was repaired subsequently by NHEJ following Cas9-catalyzed mutation (Albadri et al., 2017). Accordingly, the findings confirmed that the bacterial Type II Cas9 system is active in O. viverrini, and we suggest that Cas9-mediated programmed gene editing and repair by homology directed repair and NHEJ will be active in other genes of the liver fluke, and in other trematodes and parasitic platyhelminths generally.\n\nAlthough the findings demonstrated programmed gene editing of the Ov-GRN-1 locus, the somatic mutation rate in the adult developmental stage was generally\u00a0<5% of the genomes recovered from these multicellular parasites. This low mutation rate contrasted with both the marked reduction in Ov-GRN-1 message detected in vitro and the pathophysiological outcomes and reduced virulence of infection of hamsters with gene-edited flukes. The anomaly might be explained by the tissue expression of secreted Ov-GRN-1. Although it exhibits generalized expression throughout tissues of the adult liver fluke, predominant expression of Ov-GRN-1 has been immunolocalized to the tegumental surface, tegumental cytons and gut (Smout et al., 2009). Given that the flukes were transfected in vitro with the gene editing plasmid by square wave electroporation, gene knockout of the target Ov-GRN-1 locus in nuclei of cells in the tegument and gut may have occurred more frequently than in cells deeper within the fluke. If so, this may explain the marked reduction of expression and secretion of Ov-GRN-1 in tandem with a limited rate of mutation estimated in genomic DNA pooled from the gene-edited flukes.\n\nThe activity in vitro of liver fluke granulin in cell proliferation, wound repair and angiogenesis has been established (Papatpremsiri et al., 2015; Smout et al., 2015; Smout et al., 2009), which has prompted the development of therapeutic peptides based on the Ov-GRN-1 scaffold for treatment of non-healing wounds (Bansal et al., 2017; Dastpeyman et al., 2018). The novel findings reported here corroborate earlier in vitro reports and extend the findings in a rodent model of human opisthorchiasis. Programmed gene editing confirmed that secreted parasite granulin induces hyperplasia of the biliary epithelium and fibrosis during chronic infection, and that liver fluke granulin directly contributes to morbidity of the hepatobiliary tract during both acute and chronic opisthorchiasis. The impact of Ov-GRN-1 might emulate the action of interleukin IL\u221233, an epithelial mitogen for cholangiocytes, in the development of CCA. IL-33 primes type two innate lymphoid cells to induce proliferation of neighboring cholangiocytes by the release of IL-13 (Brindley and Loukas, 2017; Li et al., 2014). The pathophysiological bioactivity of granulin warrants deeper investigation of its role in fibrosis, including the influence on hepatic stellate cells, during liver fluke infection and cholangiocarcinogenesis (Guido et al., 1997; Yin et al., 2013; Gouveia et al., 2017; Rockey et al., 2015).\n\nThe rigor of future gene editing investigations might be enhanced with the inclusion of additional controls including parasites transfected with an otherwise functional vector that lacks target-specific gRNA and/or a gRNA with a scaffold but without seed sequence and/or containing a seed sequence without homology in the genome of O. viverrini. These additional controls would address non-target-specific effects of expression of Cas9 including on the genetic fitness of the genome-edited parasites (Cox et al., 2015; Kosicki et al., 2018; Ihry et al., 2018). Likewise, in addition to estimation of gene-editing performance and efficiency of somatic cell gene-editing in this multicellular helminth parasite using NGS-based (Shah et al., 2015; Canver et al., 2018; Albadri et al., 2017) and quantitative PCR-based approaches (Shah et al., 2015; Yu et al., 2014), droplet digital PCR (ddPCR)-based analysis should provide more sensitive detection and quantification of gene-editing manipulations. The ddPCR approach can provide simultaneous assessment of both homology directed repair and NHEJ, the repair pathways that resolve Cas9 catalyzed double-stranded breaks, and also investigate multiple, simultaneous editing conditions at the target locus (Miyaoka et al., 2018). With respect to Ov-GRN1 and its tissue site of expression, the anomaly between the marked knockdown of transcript levels and the minority of genomes mutated by the programmed gene editing among the total number of cells in this liver fluke, is amenable to deeper inquiry. Characterizing by immunolocalization the site of expression in the parasite from hamsters infected with gene-edited NEJ and/or the location of the gene editing plasmid after transfection of the liver fluke should be instructive.\n\nThe causative agent for many cancers remains obscure including non-liver fluke infection-associated CCA. By contrast, the principal risk factor in liver fluke-endemic regions is well established: infection with O. viverrini and related parasites (IARC Working Group on the Evaluation of Carcinogenic Risks to Humans, 2012; Fedorova et al., 2017; Shin et al., 2010b). CRISPR/Cas9-based gene editing and the hamster model of human opisthorchiasis utilized here (Sripa et al., 2007), including genetic manipulation of the larval infective stage of the parasite, provide a facile, functional genomics system to interrogate this host-parasite relationship and pathophysiology (Hoffmann et al., 2014). In a related model, periductal fibrosis induced by the liver fluke infection combined with ingestion of dimethylnitrosamine or similar nitric oxide carcinogen results in epithelial hyperplasia, cholangiocyte proliferation and DNA damage, which culminates in CCA (Thamavit et al., 1987; Maksimova et al., 2017). Investigation utilizing genome edited liver flukes, mutated at loci encoding granulin or other parasite products can now proceed, including interaction of liver fluke granulin with cholangiocyte signaling pathways that are frequently mutated during liver fluke infection-induced CCA (Jusakul et al., 2017).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Hamster</td>\n      <td>Mesocricetus auratus, Syrian golden</td>\n      <td>Mahidol University, Thailand</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Parasite (liver fluke)</td>\n      <td>Opisthorchis viverrini, adult development stage</td>\n      <td>(Papatpremsiri et al., 2015; Laha et al., 2007; Sithithaworn et al., 1997; Pinlaor et al., 2013)</td>\n      <td>NA</td>\n      <td>Infective stage metacercariae of O. viverrini obtained from naturally infected, cyprinid freshwater fish from Mukdahan and other Isaan provinces, Thailand, and used to infect hamsters.</td>\n    </tr>\n    <tr>\n      <td>Parasite (liver fluke)</td>\n      <td>Opisthorchis viverrini, metacercariae and newly excysted juveniles</td>\n      <td>(Papatpremsiri et al., 2015; Laha et al., 2007; Sithithaworn et al., 1997; Pinlaor et al., 2013; Papatpremsiri et al., 2016)</td>\n      <td>NA</td>\n      <td>Infective stage metacercariae of O. viverrini obtained from naturally infected, cyprinid freshwater fish from Isaan provinces, Thailand.</td>\n    </tr>\n    <tr>\n      <td>Commercial kit</td>\n      <td>GeneArt CRISPR Nuclease Vector Kit</td>\n      <td>Invitrogen</td>\n      <td>A21174</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Serum</td>\n      <td>Anti-Ov-GRN-1 rabbit serum</td>\n      <td>(Smout et al., 2009)</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 594- labeled anti-ACTA2</td>\n      <td>Abcam (Capone et al., 2016; Burwinkel et al., 2018)</td>\n      <td>ab202368</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial reagent</td>\n      <td>Agencourt AMPure XP beads</td>\n      <td>Beckman</td>\n      <td>A63880</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial reagent</td>\n      <td>GeneRead Adaptors I Set A</td>\n      <td>Qiagen</td>\n      <td>180985</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial kit</td>\n      <td>QIAseq 1-step Amplicon Library Kit</td>\n      <td>Qiagen</td>\n      <td>180412</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial kit</td>\n      <td>GeneRead Library Quant Kit</td>\n      <td>Qiagen</td>\n      <td>180612</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Human cholangiocyte cell line, H69</td>\n      <td>Cholangiocyte cell line derived by SV 40 transformation</td>\n      <td>(Smout et al., 2015; Grubman et al., 1994)</td>\n      <td>H69; RRID: CVCL_8121</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial kit</td>\n      <td>Picro Sirius Red Stain Kit (Connective Tissue Stain)</td>\n      <td>Abcam</td>\n      <td>ab150681</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Opisthorchis viverrini liver flukes\n\nMetacercariae (MC) of O. viverrini were isolated from the naturally infected cyprinid fish by pepsin digestion as described (Pinlaor et al., 2013). In brief, fishes were homogenized using an electric blender, after which the homogenate was incubated for 120 min at 37\u00b0C in 0.25% porcine pepsin, 1.5% HCl, 150mM NaCl. Subsequently, the digest was filtered sequentially through sieves of 1100, 350, 250 and 140 \u00b5m diameter pore size. After gravity sedimentation of the final filtrate, the aqueous supernatant was discarded, the MC-enriched sediment was washed once in 150 mM NaCl, and the identity of MC as O. viverrini confirmed using a stereomicroscope. Batches of MC were stored in 150 mM NaCl at 4\u00b0C. The newly excysted-juvenile flukes (NEJ) were liberated from MC by incubation in 0.25% trypsin in 1\u00d7\u00a0PBS supplemented with 2\u00d7\u00a0200 U/ml penicillin, 200 \u03bcg/ml streptomycin (Gibco) (2\u00d7\u00a0Pen/Strep) for 5 min at 37\u00b0C in 5% CO2 atmosphere, after which NEJ were separated from the discarded cyst walls of the MC by mechanical passage through a 27G (insulin) needle (Papatpremsiri et al., 2015; Papatpremsiri et al., 2016). Before use, NEJ were transferred into RPMI medium supplemented with 1% glucose, 2 g/l NaHCO3, 2\u00d7\u00a0Pen/Strep, 1\u03bcM E-64 (Thermo Fisher Scientific) for 60 min at 37\u00b0C in 5% CO2 atmosphere.\n\nTo obtain the adult developmental stage of the liver fluke, Syrian golden hamsters (Mesocricetus auratus) were infected by intragastric tube at 6\u20138 weeks of age with 50 MC per hamster (Sripa and Kaewkes, 2002). The hamsters were maintained at the rodent facility of the Faculty of Medicine, Khon Kaen University, Khon Kaen. Sixty days after infection, hamsters were euthanized, and the liver flukes collected as described (Sripa and Kaewkes, 2002). The Animal Ethics Committee of Khon Kaen University approved the study, approval number ACUC-KKU-61/60, which adhered to standard guidelines of the National Research Council of Thailand for the Ethics of Animal Experimentation.\n\n### Vector and guide RNA targeting exon 1 of Ov-GRN-1\n\nTo edit the gene Ov-GRN-1 that encodes O.\u00a0viverrini granulin-1 (6,287 bp, mRNA GenBank FJ436341.1) (Smout et al., 2009; Young et al., 2014), online tools including CRISPR design, http://crispr.mit.edu/ (Ran et al., 2013) and ChopChop, http://chopchop.cbu.uib.no/ (Labun et al., 2016; Montague et al., 2014) were employed to design a single guide RNA (sgRNA) targeting exon 1 of the Ov-GRN-1 gene at nucleotide position 1589\u20131608, 5'-GATTCATCTACAAGTGTTGA (Figure 1A and B). The programmed cleavage site was predicted to be located at three residues upstream of a CGG proto-spacer adjacent motif (PAM) sequence in exon 1 of Ov-GRN-1 (Figure 1B, Figure 1\u2014figure supplement 1B). A CRISPR/Cas9-encoding vector encoding this sgRNA under the control of the mammalian U6 promoter and encoding Cas9 (with nuclear localization signal 1 and 2) driven by the CMV promoter was assembled (GeneArt CRISPR Nuclease Vector Kit, Invitrogen), and termed pCas-Ov-GRN-1 (Figure 1\u2014figure supplement 1A). Escherichia coli TOP-10 competent cells were transformed with pCas-Ov-GRN-1 after which the plasmid was recovered from cultures of a positive clone (NucleoBond Xtra Midi, Macherey-Nagel GmbH, Germany). The nucleotide sequence of pCas-Ov-GRN-1 was confirmed by Sanger direct cycle sequencing.\n\n### Transfection of liver flukes with pCas-Ov-GRN-1\n\nPools of 20 mature adult flukes were simultaneously subjected to transfection with 10 \u00b5g pCas-Ov-GRN-1 plasmid DNA in\u00a0~500 \u00b5l RPMI-1640 (Sigma) by electroporation; all 20 flukes were included in the same cuvette during electroporation. The electroporation was performed in 4 mm cuvettes (Bio-Rad) with a single square wave pulse of 125 volts for 20 ms using a Gene Pulser Xcell (Bio-Rad) (Papatpremsiri et al., 2015; Piratae et al., 2012). Flukes were then washed several times with 150 mM NaCl and an additional five times with RPMI-1640 containing 2\u00d7\u00a0Pen/Strep. Flukes were cultured in RPMI-1640 containing 2\u00d7\u00a0Pen/Strep at 37\u00b0C in 5% CO2 atmosphere (Papatpremsiri et al., 2015; Piratae et al., 2012). Two control groups were included: wild-type (WT) mature flukes and \u2018mock\u2019 control flukes which were exposed to identical electroporation conditions with RPMI-1640 and 1\u00d7\u00a0Pen/Strep in the absence of plasmid DNA. The adult flukes were observed and collected after 1, 2, 3, 5, 7, 14 and 21 days of culture following pCas-Ov-GRN-1 transfection. RNA and protein were extracted from individual flukes and Ov-GRN-1 mRNA expression was assessed by RT-qPCR and Ov-GRN-1 protein expression was assessed by western blot. Mutations and/or insertions-deletions (INDELs) resulting from CRISPR/Cas were estimated by two discrete types of analysis: 1) by Illumina-based Next Generation Sequencing (NGS) (Shah et al., 2015; Albadri et al., 2017); 2) by CRISPR efficiency estimation (Shah et al., 2015; Yu et al., 2014; Yang et al., 2017), a method based on the differences in RT-qPCR efficiencies between amplification of the WT and mutant sequence with a primer spanning the targeted mutation site.\n\nMC and NEJ (750 larvae per cuvette) were subjected to square wave electroporation in the presence of pCas-Ov-GRN-1 pDNA as described above for adult flukes. The larvae were washed as above and cultured in RPMI complete medium (2\u00d7\u00a0Pen/Strep) at 37\u00b0C in 5% CO2 atmosphere. Transcript levels for Ov-GRN-1 on days 1, 2, 3, and 5\u00a0after transfection were ascertained by RT-qPCR, as above.\n\n### Extraction of nucleic acids\n\nRNA was extracted from pooled or individual transfected flukes using the TRIzol reagent (Invitrogen). Concentration of RNA was estimated by absorbance at 260 nm using a NanoVue spectrophotometer. Genomic DNA was extracted from individual adult flukes using the QIAamp DNA Mini Kit (Qiagen). A dual RNA and DNA extraction was used for individual worms at day 60 after infection of hamsters with Ov-GRN-1 gene-edited NEJ, using RNAzol RT and DNAzol (Molecular Research Center, Inc.) (Chan et al., 2014; Chen et al., 2010). In brief, each worm was homogenized in RNAzol RT using a motorized pestle, the DNA and protein from the lysate was precipitated using DNAse-RNAse-free water. The aqueous phase (top) was transferred into isopropanol to precipitate the RNA. The DNA/protein pellet was resuspended in DNAzol, and DNA extracted as per the manufacturer\u2019s instructions. Expression levels of Ov-GRN-1 in total RNA recovered from individual liver flukes were determined.\n\nTo assess the performance of the gene editing approach, following necropsy of hamsters and recovery of the liver flukes, the adult worms were assigned to one of three phenotypes based on the levels of Ov-GRN-1 transcript knockdown, low (L), moderate (M) or high (H), as follows: L,\u00a0\u2265100% relative to WT mean (low efficiency of programmed genome editing), group termed L\u0394Ov-GRN-1; M,\u00a0>10 to<100% relative to WT mean, group termed M\u0394Ov-GRN-1; and H,\u00a0\u226410% relative to WT mean, group termed H\u0394Ov-GRN-1. Pools of genomic DNAs from flukes, which had been assigned to each of the L, M and H groups of Ov-GRN1 transcript knockdown levels, were quantified for efficiency of CRISPR/Cas9-programmed gene editing in terms of mutation levels by qPCR and Illumina-based deep sequencing (below) (Yang et al., 2017; Vasquez et al., 2018). The data for the pooled samples from each group are based on a single Illumina run, that\u00a0is n\u00a0=\u00a01 sample for each of the L, M and H genomic DNA pools.\n\n### Quantitative real-time PCR\n\nComplementary DNA (cDNA) was synthesized from parasite total RNA using an iScript cDNA synthesis kit (Thermo Fisher Scientific) prior to proceeding with reverse transcription quantitative real-time PCR (RT-qPCR). RT-qPCR was performed with biological triplicate samples using a SYBR Green kit (Takara Bio USA, Inc., Mountain View, CA) in a thermal cycler (Light Cycler 480 II, Roche Diagnostics GmbH, Mannheim, Germany). Each RT-qPCR reaction consisted of 7.5 \u03bcl SYBR Green Master Mix, 0.5 \u03bcl (10 \u03bcM) each of specific forward and reverse primers for Ov-GRN-1 (Figure 1B) (forward primer, Ov-GRN-1-RT-F: 5'-GGGATCGGTTAGTCTAATCTCC and reverse primer, Ov-GRN1-RT-R: 5'-GATCATGGGGGTTCACTGTC), amplifying 359 base pairs (bp) of the product (nt 7365 of O. viverrini granulin-1 mRNA, GenBank FJ436341.1), 2 \u03bcl of cDNA and distilled water to a final volume of 15 \u03bcl. The thermal cycle was a single initiation cycle at 95\u00b0C for 3 min followed by 40 cycles of denaturation at 95\u00b0C for 30 s, annealing at 55\u00b0C for 30s, extension at 72\u00b0C for 45s and a final extension at 72\u00b0C for 10 min. The endogenous actin gene (GenBank EL620339.1) was used as a housekeeping control (Papatpremsiri et al., 2015; Piratae et al., 2012; Chaiyadet et al., 2017) (forward primer, Ov-actin-F: 5'-AGCCAACCGAGAGAAGATGA and reverse primer Ov-actin-R: 5'-ACCTGACCATCAGGCAGTTC). The fold change in Ov-GRN-1 transcripts was calculated by the 2(-\u0394\u0394Ct) method using Ov-actin for normalization (Papatpremsiri et al., 2015; Piratae et al., 2012; Schmittgen and Livak, 2008). Means and standard deviations were calculated and means compared by two-way ANOVA using GraphPad Prism software.\n\n### Rabbit anti-Ov-GRN-1 antiserum and western blot analysis\n\nOne milligram of adjuvanted, recombinant Ov-GRN1 protein (Smout et al., 2009; Stranneg\u00e5rd and Yurchision, 1969) was subcutaneously injected into an outbred New Zealand White rabbit. The rabbit was boosted twice with 500 \u00b5g of adjuvanted protein, and 2 weeks after the last booster the rabbit was euthanized after which blood was collected by cardiac puncture (Animal Ethics Committee, Khon Kaen University, approval no ACUC-KKU-61/60; see above). Ov-GRN-1 protein levels were determined by western blot using rabbit anti-recombinant Ov-GRN-1 antiserum. The adult flukes from either WT or \u0394Ov-GRN-1 groups were collected individually at days 1, 2, 3, 5, 7, 14 and 21 after electroporation (three flukes per group). Groups of three flukes were homogenized by sonication (Sonics and Materials) in 1\u00d7\u00a0PBS with alternating pulses of 5s duration (with 5s pause between pulses) for 45 s at 4\u00b0C. The homogenate was clarified by centrifugation at 13,000\u00a0\u00d7g for 30 min at 4\u00b0C, after which the supernatant was stored at \u221220\u00b0C. Protein concentration of fluke homogenates was determined by the Bradford assay. Homogenates were subjected to SDS-PAGE (15%) electrophoresis, and the resolved proteins transblotted to nitrocellulose membrane using a Mini Trans-Blot Cell (Bio-Rad). Membrane strips containing 2 \u03bcg of total protein were washed with 0.5% Tween-20 in 1\u00d7\u00a0PBS (PBST), blocked with 5% skimmed milk in PBST for 60 min and probed with rabbit anti-Ov-GRN-1 serum or pre-immunization serum, diluted 1:50 with 1% skimmed milk in PBST, for 2 hr with gentle agitation. After washing, the strips were probed with horseradish peroxidase (HRP)-goat anti-rabbit IgG (Invitrogen), diluted 1:1000 in antibody buffer, for 60 min. The strips were washed, signals detected using enhanced chemiluminescence (ECL) substrate (GE Healthcare Life Sciences) and imaged using an Image Quant LAS 4000 mini (GE Healthcare Life Sciences). As a control protein also derived from the tegument of O. viverrini flukes, we also assessed the protein expression levels of Ov-TSP-2 by western blot using a specific antibody raised to the recombinant protein (Chaiyadet et al., 2017). Relative protein expression levels as established by western blot were measured by densitometry using Image J, https://imagej.nih.gov/ij/download.html. Levels of protein expressed between groups were compared by independent Student\u2019s t-tests.\n\n### CRISPR/Cas efficiency and mutation levels estimated by quantitative PCR\n\nAdult flukes were collected on days 1, 2, 3, 5, 7, 14 and 21 after pCas-Ov-GRN-1 transfection. The genome of each fluke was investigated for mutation(s) expected to have resulted from the repair by NHEJ events following the sgDNA programmed double stranded break (DSB) of the Ov-GRN-1 locus by Cas9. For analysis of gDNA from individual adult liver flukes recovered from infected hamsters, we performed a qPCR assay to detect and quantify the frequencies of newly induced mutations. The approach employed two pairs of primers for the target locus, with one putative amplicon extending beyond the putative INDEL site and the other overlapping it, as described (Yu et al., 2014). The primers were named Ov-GRN-1-OUT-F, Ov-GRN-1-OVR-F, and Ov-GRN-1-reverse (OUT/OVR-R), respectively. The primer pair of Ov-GRN-1-OUT-F (5'-TTCGAGATTCGGTCAGCCG) and OUT/OVR-R (5'-TTGGTCGGCCAGTATGTTCG) amplified the fragment flanking and spanning the DSB (1,496\u20132,312 nt), whereas the primer pair Ov-GRN-1-OVR-F (5'-CAAGTGTTGACGGTGATTTCACTT) and OUT/OVR-R amplified a region overlapping the DSB (1599\u20132312) (Figure 1B). Whereas both primer pairs exhibited equivalent amplification efficiencies with the genomic DNA template from WT flukes, the Ov-GRN-1-OVR-F and OUT/OVR-R primer pair was mutation sensitive, whereas the other pair was not. The OUT and OVR amplicons were 817 and 714 bp in size, respectively, using the following PCR conditions: 7.5 \u03bcl of SYBR Green Master Mix (TaKaRa Perfect Real-time Kit), 0.5 \u03bcl (0.4 \u03bcM) of each primer, 10 ng/\u03bcl of gDNA and distilled water to 15 \u03bcl. The thermal cycles included initiation for one cycle at 95\u00b0C, 3 min followed by 40 cycles of denaturation at 95\u00b0C, 30s, annealing at 55\u00b0C, 30s, extension at 72\u00b0C, 45s, and a final extension at 72\u00b0C for 10 min. The SYBR green signal was read at each annealing cycle and reported as threshold cycle (Ct). Efficiency of programmed CRISPR/Cas editing was estimated as the ratio of CtOUT:CtOVR from the experimental group compared with CtOUT:CtOVR of the control group, as described (Yu et al., 2014). The CtOUT:CtOVR ratio from the control group would equal \u20181\u2019 (CRISPR efficiency\u00a0=\u00a00) since there was difference in Ct values from the OUT and OVR primers. By contrast, the OVR primer can be anticipated to be inefficient when compared to the OUT primer for the experimental group, and hence the CtOUT:CtOVR likely would be\u00a0<1. Here, we calculated percent mutation indirectly by subtraction of the CRISPR/Cas9 efficiency value from \u20181\u2019, as indicated (Yu et al., 2014; Sentmanat et al., 2018).\n\n$$\nEfficiency(F)=\\frac{Averagect_{OUT}}{Averagect_{OVR}}\n$$\n\n\n\n$$\nCRISPR/Cas9efficiency=\\frac{F_{\u0394Ov\u2212gm\u22121}}{F_{control}}\\times(100)\n$$\n\n\n\n$$\nMutationrate=100%\u2212CRISPR/Cas9efficiency\n$$\n\nGenomic DNAs from flukes recovered from hamsters 60 days after infection with CRISPR/Cas9-treated NEJ, and which had been assigned to the low (L), moderate (M) or high (H) groups based on knockdown levels of Ov-GRN-1 transcripts, were pooled by group. The L, M and H groups were assessed and scored for efficiency of CRISPR/Cas9-programmed gene editing in terms of mutation levels by qPCR, as described above.\n\n### Targeted Amplicon libraries, Illumina-based sequencing\n\nSeveral Illumina NGS libraries were constructed. First, for analysis of programmed editing of adult flukes that were subjected to gene editing manipulation and subsequently cultured in vitro, genomic DNAs were extracted from the Ov-GRN-1 gene-edited adult liver flukes at each of 7, 14 and 21 days after transfection. A pool of gDNA was prepared from 15 of these flukes, from five worms from each time point. Second, gDNAs were pooled from 7 to 10 worms from each of the L, M, and H groups of \u0394Ov-GRN-1 worms (25 worms in total) (Figure 5A and B) and also a gDNA pool from 25 control non-gene-edited WT worms. Targeted amplicon NGS libraries were constructed from each of these of gDNA pools. In each case, an amplicon of 173 bp in size that spanned the DSB was amplified using Ov-GRN-1 MiSeq-F primer 5'-TTCGAGATTCGGTCAGCCG (position 1496\u20131514 nt) and Ov-GRN-1 MiSeq-R primer 5'-GCACCAACTCGCAACTTACA (position 1649\u20131668 nt) (Figure 1B). These amplicons were purified (Agencourt AMPure XP beads, Beckman) and ligated with Gene Read Adaptors Set A (Qiagen) and Illumina compatible adaptor(s) and barcode(s) using QIAseq 1-step Amplicon library kit (Qiagen). The libraries were quantified using the GeneRead Library Quant Kit (Qiagen) with Illumina index/barcode specific primers, and concentration of the libraries established using standard libraries provided in the kit. Illumina NGS was performed by GENEWIZ (South Plainland, NJ). Index/adaptor and primer out sequences were trimmed from the reads. Analysis of the sequenced reads using the SnapGene (GSL Biotech LLC) and the CRISPResso software (https://github.com/lucapinello/CRISPResso) suites was carried out to validate and characterize programmed mutations of the alleles, including assessment of NHEJ-induced INDELS as insertions, deletions and/or substitutions (Canver et al., 2018; Pinello et al., 2016). The sequences of the alleles were compared to the reference sequence represented by the target amplicon of the WT Ov-GRN-1 gene (GenBank FJ436341.1) and to the reads from the control worms for the flukes derived from infection of hamsters with gene-edited NEJ. Of these two analysis methods for performance of CRISPR/Cas9 gene-editing, the qPCR approach (Yu et al., 2014) is quick and inexpensive in comparison to the targeted amplicon NGS approach (Canver et al., 2018; Shalem et al., 2015). However, the latter approach provides more detailed characterization of the events including the types and frequencies of the INDELS, and is more accurate (Sentmanat et al., 2018).\n\n### Cell proliferation and wound healing assays\n\nTo evaluate the effect of Ov-GRN-1 gene editing on liver fluke-driven proliferation of human cholangiocytes, motile WT or \u0394Ov-GRN-1 adult flukes were co-cultured with cells of the human cholangiocyte cell line H69 in 24-well Trans-well plates (three wells per group) (Papatpremsiri et al., 2015) containing a 4 \u03bcm pore size membrane separating the upper and lower chambers (Corning). In brief, 15,000 H69 cells were seeded into the lower chamber of the plate and cultured with complete medium containing DMEM/F12 supplemented with 1\u00a0\u00d7\u00a0antibiotic, 10% fetal bovine serum, 25 \u03bcg/ml adenine, 5 \u03bcg/ml insulin, 1 \u03bcg/ml epinephrine, 8.3 \u03bcg/ml holo-transferrin, 0.62 \u03bcg/ml hydrocortisone, 1.36 \u03bcg/ml T3, and 10 ng/ml epidermal growth factor (Ninlawan et al., 2010) for 24 hr, after which the cells were fasted for 4\u20136 hr in medium supplemented with only one twentieth of the growth factor content of complete medium. Five viable O. viverrini adult flukes that had been transfected (or not) with pCas-Ov-GRN-1 pDNA in a total of 500 \u03bcl of RPMI (or medium alone) were placed into the upper chamber of each well. The number of cells in each well was determined at days 1, 2, and 3 using 1\u00a0\u00d7\u00a0PrestoBlue cell viability reagent (Invitrogen) (Tynan et al., 2012) added to cells at 37\u00b0C in 5% CO2 atmosphere for up to 60 min. Cell number was determined at 570 nm and calculated from a standard curve before transforming into relative growth compared to control groups. Cell proliferation assays were carried out in triplicate.\n\nTo assess the effect of Ov-GRN-1 knockout on in vitro wound healing, 300,000 cholangiocytes in monolayers were grown in 6-well Trans-well plates with a 4 \u03bcm pore size. These cells were cultured in complete media for 2 days at 37\u00b0C in 5% CO2 atmosphere then transferred to incomplete media overnight. Monolayers in each well were scratched using a sterile 200 \u03bcl autopipette tip (Papatpremsiri et al., 2015; Smout et al., 2015; Liang et al., 2007) and washed with 1\u00d7\u00a0PBS twice to remove disconnected cells or debris. Ten transfected adult or control flukes were added to the upper chamber of the Transwell plate containing the wounded cell monolayer in the lower chamber. The rate of wound closure was measured at 0, 12, 24 and 36 hr, respectively. Transwell plates were imaged using an inverted microscope (Nikon) and images of all groups were captured at all-time points quantitatively using Adobe Photoshop CS6. The distances between different sides of the cell monolayer scratch were measured by drawing a line in the middle of the scratch on the captured image (Papatpremsiri et al., 2015; Smout et al., 2015; Liang et al., 2007; Smout et al., 2011). The analysis of monolayer wound healing was repeated three times.\n\nH69 cells (Smout et al., 2015; Grubman et al., 1994) were authenticated using STR profiling by PCR by ATCC and were confirmed in our laboratory to be Mycoplasma-free using the Lookout Mycoplasma PCR detection kit (Sigma-Aldrich).\n\n### Infection of hamsters with Ov-GRN-1 gene-edited NEJs and histopathological assessment of hepatobiliary lesions\n\nThirty male Syrian golden hamsters, 6\u20138 weeks of age, were obtained from the Animal Unit, Faculty of Medicine, Khon Kaen University (approval number ACUC-KKU-61/60). The hamsters were randomly divided into three groups of 10 animals per group: uninfected control, infected with WT flukes, and infected with \u0394Ov-GRN-1 flukes. Each hamster was infected with 100 active NEJs through intragastric intubation; the uninfected control group was fed normal saline solution instead of NEJ (Sripa and Kaewkes, 2002). Hamsters (five animals per cage) were maintained under conventional conditions and fed a stock diet (C.P. Ltd., Thailand) and water ad libitum until they were euthanized (Sripa and Kaewkes, 2002). Following euthanasia, five hamsters from each group were necropsied for histopathological assessment of the hepatobiliary tract at days 14 and 60 post-infection (Sripa and Kaewkes, 2002). The hamsters were euthanized by overdose of anesthesia with diethyl ether. Subsequently, blood was obtained by cardiac puncture and the livers were removed. Fluke numbers were counted from two livers of both WT and \u0394Ov-GRN-1 groups at day 60 post-infection and compared using an unpaired two-tailed t-test. The left and right lobes of the liver from five hamsters were dissected, cross-sectioned, and each lobe was divided into three parts. The liver fragments were fixed in 10% buffered formalin and stored overnight at 4\u00b0C before processing. Formalin-fixed liver was dehydrated through an ethanol series (70, 95, and 100%), cleared in xylene, and embedded in paraffin. Paraffin embedded sections of 4 \u00b5m thickness, cut by microtome, were stained with hematoxylin and eosin (H&E) or Picro-Sirius Red, or probed with anti-ACTA2 antibodies, and analyzed for pathologic changes (below).\n\n### Biliary hyperplasia\n\nH&E staining was used to assess pathological changes. The sections were deparaffinized in 100% xylene, rehydrated through a descending series of alcohol, stained with H&E for 5 min, dehydrated in an ascending series of alcohol, cleared with 100% xylene, mounted in Permount medium on a glass slide, and slides were dried overnight at 37\u00b0C and photographed under light microscopy. Images (200\u00d7) from H&E-stained sections from five hamsters infected with WT flukes, five hamsters infected with \u0394Ov-GRN-1 flukes, and five uninfected hamsters were assessed. Thickness (width) of the bile duct epithelium from each thin liver section was measured with ImageJ at eight equidistant positions around the bile duct. To compensate for outliers, the median width for each bile duct was used for the analysis. The two-way ANOVA Holm-Sidak multiple comparisons test was used to compare groups at each time point.\n\n### Fibrosis\n\nTwo stains were used separately to assess biliary fibrosis. First, sections were stained with Picro-Sirius Red (Abcam, Cambridge Science Park, UK). Sufficient Picro-Sirius Red solution was applied to completely cover the tissue sections on the slide, the stained slide was incubated at ambient temperature for 60 min, rinsed in two changes of acetic acid solution and dehydrated through two changes of absolute ethanol. Slides were cleared with 100% xylene, mounted in Per-mount, dried overnight at 37\u00b0C and photographed by light microscopy to document collagen surrounding the bile ducts. ImageJ was used to auto-color balance the images using the macro by Vytas Bindokas at https://digital.bsd.uchicago.edu/docs/imagej_macros/_graybalancetoROI.txt followed by application of the MRI fibrosis tool to quantify percentage area of fibrosis (red-stain) at default settings (red 1: 0.148, green 1: 0.772, blue 1: 0.618, red 2: 0.462, green 2: 0.602, blue 2: 0.651, red 3: 0.187, green 3: 0.523, blue 3: 0.831) (Pereira, 2016). Twenty discrete images (200\u00d7) stained with Picro-Sirius Red from each hamster (five animals per treatment group) were assessed, that\u00a0is 100 images per group. Given a broad range of values among groups, comparison of the groups was undertaken using the Kruskal-Wallis with Dunn\u2019s multiple comparisons test.\n\nExpression level of smooth muscle alpha-actin (\u03b1-SMA; ACTA2) also was assessed as a surrogate for fibrosis. Liver sections from hamsters at 60 days post-infection were deparaffinized 3 times with 100% xylene, 5 min each. Sections were rehydrated with an ascending series of ethanol; 100%, three times, 3 min each, 95%, three times, 3 min each, 70% for 3 min, followed by thorough washing in tap water for 5 min, distilled water for 5 min, and 1\u00d7\u00a0PBS for 5 min. Thereafter, slides were incubated in citrate buffer 0.1 M, pH 6.0 (citric acid, anhydrous, 0.06 M, sodium citrate dihydrate, 0.04 M) at 110\u00b0C for 5 min, allowed to cool at room temperature for 20 min, and then washed in 1\u00d7\u00a0PBS, three times, 5 min each. Thereafter, the sections were blocked with 5% bovine serum albumin (BSA) for 30 min in a humidified chamber and washed in three times in 1\u00d7\u00a0PBS, 3 min each with occasional shaking. The slides were probed with Alexa Fluor 594-labeled anti-ACTA2 antibody (Abcam) diluted 1:200 in 1% BSA in PBST, 18 hr at 4\u00b0C in a humidified atmosphere. Lastly, slides were washed as above, mounted in glycerol, diluted 1:4 with 1\u00a0\u00d7\u00a0PBS, and examined under bright and fluorescent lights (Zeiss Axio Observer; AxioVision SE64 Rel. 4.9.1 software, Jena, Germany). Images with a bile duct containing a fluke were selected and ImageJ used to define regions adjacent to the epithelium that excluded potential blood vessels (ovate structures). Three sites, free of bile ducts and blood vessels, were selected at random in order to establish levels of background fluorescence, each comprising 5\u201310% of the image. The fluorescence intensity of the biliary epithelium was measured and blanked against the mean of the three background readings and reported as mean intensity per cm2 at 300 pixels per inch (PPI). Twenty-five to 30 discrete images of bile ducts per treatment group (three hamsters) were assessed. Zero values from the uninfected group were assigned a value of 1 to enable use of a log axis. The groups were compared using one-way ANOVA with Holm-Sidak multiple comparisons test.\n\n### Biological and technical replicates, statistics\n\nThese biological replicates represented parallel measurements of biologically discrete samples in order to capture any random biological variation. Technical replicates were undertaken as well; these represented repeated measurements of the same sample undertaken as independent measurements of the random noise associated with the investigator, equipment or protocol.\n\nMeans for experimental groups were compared to control by one or two ways ANOVA and where appropriate, by Student\u2019s t-test (GraphPad Prism, La Jolla, CA). Values for p of\u00a0\u22640.05 were considered to be statistically significant.\n",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "9c65dad2-87ce-47b3-ad3b-b0b073ca2588",
+      "submission_id": "5a54b576-d9c9-4dd2-9c1d-3452cadfee32",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James B Lok, University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41463.018](https://doi.org/10.7554/eLife.41463.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Programmed knockout mutation of liver fluke granulin attenuates virulence of infection-induced hepatobiliary morbidity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including James B Lok as the Reviewing Editor and Reviewer #3, and the evaluation has been overseen by Wendy Garrett as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll three reviewers concur that this paper represents a ground breaking advancement in functional genomic methodology for parasitic flatworms, and we congratulate you for this. We also concur that your findings are of special importance in that they demonstrate the utility of CRISPR/Cas9 mutagenesis in elucidating pathogenic mechanisms in O. viverrini and parasitic flatworms generally. All reviewers concur that the findings reported in this paper are sufficient to warrant publication in eLife and that no further experimentation is required. That said, there are several substantive points that should be addressed, given that this paper, along with its co-submitted manuscript on S. mansoni omega 1, will likely be prototypes upon which further studies involving programmed gene editing will be based. The general areas in need of this attention are 1) the difficulty in reconciling the very low mutation frequencies determined by deep sequencing with the very large decrements seen in parameters of target gene expression (mRNA, protein) and parasite virulence assessed on a worm-for-worm basis, 2) the need for clarification of how pooling of parasites and assignment to categories of high, medium and low were carried out and 3) addressing the rigor of controls used in the experiments. These concerns may be addressed by clarifying the points indicated and adding in-depth discussion of what could be improved with regard to informative indices of mutation frequency and proper controls going forward.\n\nEssential revisions:\n\nWith regard to point 1 in the summary, provide an assessment of the deep sequencing approach as an informative estimate of mutation frequency compared with possible alternative methods that would yield an estimation of the frequency of mutations in the target on a worm-for-worm basis. Comments on how the low mutation frequencies obtained by the deep sequencing approach can be reconciled with the dramatic decrements in Ov-grn-1 transcripts and protein and in the virulence of the parasites would also greatly improve the paper. As suggested by reviewer 1 (and by all of us in consultation) a discussion of the site of Ov-grn-1 expression within the worms as it relates to efficiency of transduction with CRISPR elements would also be helpful.\n\nWith regard to point 2 in the summary, the segment on \"Longevity of programmed mutation at Ov-grn-1\" was somewhat confusing to all three reviewers before and during our consultation. It is essential to clarify this section along lines specified by reviewers 1 and 3.\n\nWith regard to point 3 in the summary, the three reviewers concurred that a control in which Cas9 was expressed without a functional gRNA would have added to the rigor of the study. There was difference of opinion about the advisability of including in such a control a nonfunctional gRNA (i.e. one that contained a scaffold with no seed sequence or that contained a scaffold with a seed sequence having no homology in the O. viverrini genome). All this is to say that since this paper is likely to constitute a prototype for future studies, some discussion of what constitutes a rigorous control in experiments of this kind is warranted.\n\nReviewer #1:\n\nThis manuscript describes the first report of CRISPR driven gene editing in a parasitic flatworm, in this case the oriental liver fluke Opisthorchis viverrini. The focus of the transfection efforts is liver fluke granulin, shown previously to play a role in establishing the tumorigenic microenvironment.\n\nThe authors effectively demonstrate successful transfection and then provide extensive analysis of the model host pathology induced by transfected fluke relative to wild-type (control) fluke. The manuscript charts an important step forward in the field, providing evidence for the utility of CRISPR/Cas9 in flatworms. The work on granulin biology extends the current understanding of its role. Overall, the manuscript is generally well presented and the results are compelling.\n\nThe authors should address the following points for clarification etc.\n\nIt would have been helpful to discuss where granulin is expressed in the worm as this can help inform the tissue-specific efficiency of the transfection methods used.\n\nThe efficiency of transfection data was provided for the directly transfected adults and yet the biology was performed on adults derived from transfected of NEJs \u2013 it's unclear why the transfection data were not generated for the juvenile flukes OR from adults of transfected NEJs.\n\nMutation frequencies are provided for adult fluke with low, medium and high levels of target gene transcript expression. It's not clear if the data for the pooled samples from each group are based on an n=1 or multiple pools of each type. Either way, this needs to be clarified and, if multiple pools were used, the range or SE values included with all the relevant data in the manuscript..\n\nThe ranges used to assign to define the H, M and L groups appear to differ between the Results (subsection \u201cLongevity of programmed mutation at Ov-grn-1\u201d) and Materials and methods (subsection \u201cExtraction of nucleic acids\u201d).\n\nIn the subsection \u201cProgrammed mutation of growth factor secreted by carcinogenic liver fluke\u201d, the three outcomes of transfection (insertion, deletion, substitution) totaled 27640 against the total number of NHEJ reads of 27616 \u2013 but why these differ is not stated.\n\nSubsection \u201cAttenuated infection-induced hyperplasia of the biliary tract\u201d, last \u2013 sentence is incomplete and needs rewriting.\n\nMaterials and methods \u2013 Wrt transfection of mature adult fluke, the authors need to state if the 20 worms were transfected individually (1 per cuvette) or otherwise?\n\nReviewer #2:\n\nThe paper of Arunsan et al. reports on the functional characterization of O. viverini granulin, a secreted parasite protein. By CRISPR/Cas9-mediated mutagenesis and a combination of molecular analyses, cell culture and animal experiments as well as histochemical studies, the authors demonstrate a role of granulin in the liver/bile duct-associated pathology in the hamster as a host model.\n\nThis is an elegant and well-designed study showing for the first time that CRISPR/Cas9-mediated KO studies are possible in an important human parasite. Along with the accompanying paper about schistosome CRISPR/Cas9-mediated KO, this is groundbreaking work and worth to be published in eLife.\n\nReviewer #3:\n\nThis manuscript confirms the overall role of the liver fluke Opisthorchis viverrini, and its secreted granulin 1 as direct agents of hepatobiliary disease, including cholangiosarcoma, in humans. But beyond these confirmatory findings, this paper is groundbreaking in that its evidence derives from phenotypes resulting from CRISPR/Cas9-programmed disruption of Ov-grn-1, the gene encoding the parasite's pathogenic secreted granulin-1 protein. This, in combination with its co-submitted manuscript on CRISPR/Cas9 disruption of the gene encoding the secreted egg protein, omega-1 in Schistosoma mansoni, at once marks proof of principle for programmed gene editing in pathogenic trematodes and the first experiments in which this powerful method is applied to determining pathogenicity of specific molecules in these important parasites. In this paper, the authors demonstrate by deep sequencing the creation of indels at the target locus in the Ov-grn-1 gene and estimate frequency of these among PCR amplicons of the target locus in from pooled parasites. They go on to demonstrate that these mutations correlate with marked declines in Ov-grn-1 transcript and protein levels as well as decreases in the capacity of parasite secretions to incite cell proliferation and simulated wound healing in vitro. Finally, they report that although parasites with CRISPR-induced disruption of Ov-grn-1 retain the ability to infect hamsters, the levels of thickening and structural disorder they incite in biliary epithelia of these animals and the fibrosis resulting from this is greatly reduced from those induced by wild type parasites. This is a highly significant milestone in the study of molecular determinants of pathogenicity in trematode parasites. That said, I noted two substantive points about the manuscript that, if not addressed by additional experiments in the present instance, should at least be acknowledged to improve upon this approach in future studies.\n\nSubstantive issues:\n\n1) If I understand the narrative under \"Longevity of programmed mutation at Ov-grn-1\" it suggests that individual flukes were subjected to quantitative RT-PCR to determine levels of expression, classed according to three levels of expression: low, medium and high, and then their gDNA pooled for deep sequencing to determine mutation rates. Is it not possible to genotype individual flukes, or does mosaicism tend to render mutant genomes in these worms practically undetectable?\n\nIf possible to obtain, an estimate of the percentage of worms in a sample population that showed any mutation might be easier to reconcile with the very large reductions you see in Ov-grn-1 protein and the large changes in the parameters relating to hepatobiliary disease that you see.\n\n2) The control groups (subsection \u201cTransfection of liver flukes with pCas-Ov-grn-1\u201d) in this study appear to have been WT parasites and \"mock transected\" parasites that were electroporated in complete medium lacking plasmid DNA. Wouldn't a more rigorous control be parasites electroporated with a vector containing all functionalities except that the target-specific gRNA was replaced with either a gRNA with a scaffold but no seed sequence, or, better yet, a gRNA containing a seed sequence with no homology in the O. viverrini genome? This would control for any non-specific effects of Cas9 expression on parasite fitness. Such effects have been noted in other systems, notably in C. elegans lines that express Cas9 constitutively.\n",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a1b22b5c-b553-4610-84a7-1a72897852df",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C1",
+      "claim": "Infection with the food-borne liver fluke Opisthorchis viverrini is the principal risk factor for cholangiocarcinoma (CCA) in the Lower Mekong River Basin countries including Thailand, Lao PDR, Vietnam and Cambodia.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection with the food-borne liver fluke Opisthorchis viverrini is the principal risk factor (IARC Working Group on the Evaluation of Carcinogenic Risks to Humans, 2012) for cholangiocarcinoma (CCA) in the Lower Mekong River Basin countries including Thailand, Lao PDR, Vietnam and Cambodia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to IARC Working Group on the Evaluation of Carcinogenic Risks to Humans, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "f556e5a0-0f7e-46e7-a669-c51470842de0",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C2",
+      "claim": "Deep sequencing of amplicon libraries from genomic DNA of gene-edited parasites revealed Cas9-catalyzed mutations within Ov-GRN-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep sequencing of amplicon libraries from genomic DNA of gene-edited parasites revealed Cas9-catalyzed mutations within Ov-GRN-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from deep sequencing analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "b7afde53-ff9c-44a6-abe4-118103e1cf04",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C3",
+      "claim": "Gene editing resulted in rapid depletion of Ov-GRN-1 transcripts and the encoded Ov-GRN-1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene editing resulted in rapid depletion of Ov-GRN-1 transcripts and the encoded Ov-GRN-1 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements of transcript and protein levels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "85092c06-8521-4a8a-9352-c16da3699801",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C4",
+      "claim": "Gene-edited parasites colonized the biliary tract of hamsters and developed into adult flukes.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-edited parasites colonized the biliary tract of hamsters and developed into adult flukes, but the infection resulted in reduced pathology as evidenced by attenuated biliary hyperplasia and fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo experimental observations in hamster model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "4b93f3ec-66ee-485b-9b58-ee67d6de8f6d",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C5",
+      "claim": "Infection with gene-edited parasites resulted in reduced pathology as evidenced by attenuated biliary hyperplasia and fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-edited parasites colonized the biliary tract of hamsters and developed into adult flukes, but the infection resulted in reduced pathology as evidenced by attenuated biliary hyperplasia and fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by histopathological analysis of infected hamster tissues",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "6da2faa9-3735-4eaf-b030-b97de8979751",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C6",
+      "claim": "This report pioneers programmed gene-editing in parasitic flatworms.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does this report pioneer programmed gene-editing in parasitic flatworms, but also the striking, clinically-relevant pathophysiological phenotype confirms the role for Ov-GRN-1 in virulence morbidity during opisthorchiasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the novelty of the experimental approach and lack of prior reports",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "eb6f3206-77a0-4d2a-b96c-4c977dd9a2c5",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C7",
+      "claim": "The pathophysiological phenotype confirms the role for Ov-GRN-1 in virulence morbidity during opisthorchiasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does this report pioneer programmed gene-editing in parasitic flatworms, but also the striking, clinically-relevant pathophysiological phenotype confirms the role for Ov-GRN-1 in virulence morbidity during opisthorchiasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing reduced pathology in gene-edited parasite infections",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "fb577f0c-124c-422a-96cd-13f17a50b50b",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C8",
+      "claim": "Approximately 10 million people are infected with O. viverrini in Thailand and Laos.",
+      "claim_type": "EXPLICIT",
+      "source": "O. viverrini is endemic in Thailand and Laos, where ~10 million people are infected with the parasite (Sripa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sripa et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "6dead717-c4ab-47e1-bab4-828c4dda7258",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C9",
+      "claim": "Liver fluke infection causes hepatobiliary morbidity including cholangitis, choledocholithiasis (gall stones), and periductal fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In liver fluke endemic regions, this infection causes hepatobiliary morbidity including cholangitis, choledocholithiasis (gall stones), and periductal fibrosis, and is the principal risk factor for bile duct cancer, cholangiocarcinoma (CCA) (Sripa et al., 2011; Sripa et al., 2007; Mairiang et al., 2012; Tyson and El-Serag, 2011; Shin et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "6b159d78-8863-467b-a5b4-a691ecea9995",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C10",
+      "claim": "O. viverrini infection is the principal risk factor for bile duct cancer, cholangiocarcinoma (CCA).",
+      "claim_type": "EXPLICIT",
+      "source": "In liver fluke endemic regions, this infection causes hepatobiliary morbidity including cholangitis, choledocholithiasis (gall stones), and periductal fibrosis, and is the principal risk factor for bile duct cancer, cholangiocarcinoma (CCA) (Sripa et al., 2011; Sripa et al., 2007; Mairiang et al., 2012; Tyson and El-Serag, 2011; Shin et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "fa70f88c-e3f6-47ff-8620-87acc1adfb71",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C11",
+      "claim": "There is no stronger link between a human malignancy and a parasitic infection than that between CCA and infection with O. viverrini.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there is no stronger link between a human malignancy and a parasitic infection than that between CCA and infection with O. viverrini (Pagano et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pagano et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "37c29a26-4776-4ca8-8bc9-2c75b83a8fb8",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C12",
+      "claim": "Northeastern Thailand suffers the highest incidence of CCA in the world, often exceeding 80 cases per 100,000 population.",
+      "claim_type": "EXPLICIT",
+      "source": "Northeastern Thailand suffers the highest incidence of CCA in the world, often exceeding 80 cases per 100,000 population and for which up to 20,000 people annually are admitted for surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by epidemiological data from the region",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "db6b90fb-5a9f-4e61-8137-1f31a4a750f0",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C13",
+      "claim": "Up to 20,000 people annually are admitted for surgery for CCA in northeastern Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "Northeastern Thailand suffers the highest incidence of CCA in the world, often exceeding 80 cases per 100,000 population and for which up to 20,000 people annually are admitted for surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by epidemiological data from the region",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "b1966d57-250f-440c-80ea-b1bc84f16b2f",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C14",
+      "claim": "The prognosis for liver fluke infection-induced cancer remains poor.",
+      "claim_type": "EXPLICIT",
+      "source": "The prognosis for liver fluke infection-induced cancer remains poor (Sripa et al., 2011; Khuntikeo et al., 2015; Khuntikeo et al., 2016; Luvira et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "5a1a3631-2002-41bc-8225-a724732def1b",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C15",
+      "claim": "Opisthorchiasis-induced cholangiocarcinogenesis is likely multi-factorial, including mechanical irritation of the biliary tract during migration and feeding of the liver fluke, secretion by the parasite of inflammatory molecules, and nitrosamines in fermented foods.",
+      "claim_type": "EXPLICIT",
+      "source": "How and why opisthorchiasis induces cholangiocarcinogenesis is likely multi-factorial, including mechanical irritation of the biliary tract during migration and feeding of the liver fluke, secretion by the parasite of inflammatory molecules, and nitrosamines in fermented foods that are a dietary staple in northeastern provinces of Thailand (Songserm et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and established knowledge of disease mechanisms",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "2b671bf5-389e-45ee-9899-7dd5aa3b4f26",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C16",
+      "claim": "Parasitic helminths produce an assortment of excretory/secretory (ES) products including proteins with diverse roles at the host\u2013parasite interface.",
+      "claim_type": "EXPLICIT",
+      "source": "To survive in the hostile host environment, parasitic helminths produce an assortment of excretory/secretory (ES) products including proteins with diverse roles at the host\u2013parasite interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge of helminth biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "e6638513-17ed-42a3-b63b-320c58ba0556",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C17",
+      "claim": "Feeding activity of the liver fluke inflicts wounds in the biliary tree, resulting in lesions that undergo protracted cycles of repair and re-injury during chronic infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Feeding activity of the liver fluke inflicts wounds in the biliary tree, resulting in lesions that undergo protracted cycles of repair and re-injury during chronic infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge of liver fluke pathology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "df1f14ba-eb4d-4bdd-a663-e665f00ce5ba",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C18",
+      "claim": "The liver fluke secretes mediators that accelerate wound resolution in monolayers of cultured cholangiocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The liver fluke secretes mediators that accelerate wound resolution in monolayers of cultured cholangiocytes, an outcome that is compromised following silencing of expression of the liver fluke secreted growth factor Ov-GRN-1 using RNA interference (Papatpremsiri et al., 2015; Smout et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "fd852c10-ad6e-4899-8a8b-1694071455bc",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C19",
+      "claim": "Wound resolution in cultured cholangiocytes is compromised following silencing of expression of Ov-GRN-1 using RNA interference.",
+      "claim_type": "EXPLICIT",
+      "source": "The liver fluke secretes mediators that accelerate wound resolution in monolayers of cultured cholangiocytes, an outcome that is compromised following silencing of expression of the liver fluke secreted growth factor Ov-GRN-1 using RNA interference (Papatpremsiri et al., 2015; Smout et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "adf98be8-5ee1-45a9-8c5a-593a004d826b",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C20",
+      "claim": "Proliferation of biliary epithelial cells induced by Ov-GRN-1 is a pivotal factor in maintenance and progression of a tumorigenic microenvironment in the liver during chronic opisthorchiasis.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that proliferation of biliary epithelial cells induced by Ov-GRN-1 is a pivotal factor in maintenance and progression of a tumorigenic microenvironment in the liver during chronic opisthorchiasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on prior observations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "022deb48-2151-44d2-9a17-c8481a694046",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C21",
+      "claim": "Progress with development of genetic tools for functional genomic studies with platyhelminth parasites has been limited to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Progress with development of genetic tools for functional genomic studies with platyhelminth parasites has been limited to date (Hoffmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior review",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "e9126d4c-7212-4314-b5d1-caf57bcbbb24",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C22",
+      "claim": "CRISPR/Cas9 has revolutionized genome editing in biomedicine, agriculture and biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of clustered regularly interspaced short palindromic repeats (CRISPR) associated with Cas9, an RNA-guided DNA endonuclease, has revolutionized genome editing in biomedicine, agriculture and biology (Hsu et al., 2014; Sander and Joung, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "c83696bf-5736-4cde-a80f-f02714fefa45",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C23",
+      "claim": "Progress with CRISPR/Cas9 in nematodes Caenorhabditis elegans, Strongyloides stercoralis and Strongyloides ratti has been described.",
+      "claim_type": "EXPLICIT",
+      "source": "Progress with CRISPR/Cas9 in numerous eukaryotes including the nematodes Caenorhabditis elegans, Strongyloides stercoralis and Strongyloides ratti has been described (Sander and Joung, 2014; Waaijers and Boxem, 2014; Lok et al., 2017; Gang et al., 2017), but this form of gene editing has not been reported for flatworm parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "51b36399-6c1a-473b-bceb-c0bfc4eaabea",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C24",
+      "claim": "CRISPR/Cas9 gene editing has not been reported for flatworm parasites prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Progress with CRISPR/Cas9 in numerous eukaryotes including the nematodes Caenorhabditis elegans, Strongyloides stercoralis and Strongyloides ratti has been described (Sander and Joung, 2014; Waaijers and Boxem, 2014; Lok et al., 2017; Gang et al., 2017), but this form of gene editing has not been reported for flatworm parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by absence of prior reports in the literature",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "7de4646b-4250-4fb7-8f85-59aa98deace3",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C25",
+      "claim": "A reduction in relative fold amplification of 2.7% was detected in gDNA from the Cas9-treated worms.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in relative fold amplification of 2.7% was detected in gDNA from the Cas9-treated worms (Figure 1E, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR experimental data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "8e99edd1-09b9-4e53-918d-d1a1458138bc",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C26",
+      "claim": "Among >2 million reads aligned against the reference sequence, 27,640 sequence reads exhibited non-homologous end joining (NHEJ) mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPResso computational pipeline was used to quantify gene-editing outcomes and efficiency (Canver et al., 2018; Pinello et al., 2016); among >2 million reads aligned against the reference sequence, 27,640 sequence reads exhibited non-homologous end joining (NHEJ) mutations, including 170 reads with insertions (0.6%), 193 reads with deletions (0.7%) and 27,277 reads with substitutions (98.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by deep sequencing data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "a1fe438a-2764-4fe5-8a1c-334da3168215",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C27",
+      "claim": "Overall, 1.3% of the sequenced reads exhibited NHEJ mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 1.3% of the sequenced reads exhibited NHEJ mutations (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by deep sequencing data analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "9400e577-8cd5-45f4-989d-350b212593e8",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C28",
+      "claim": "More than 100 forms exhibited mutations that would disrupt the coding sequence of Ov-GRN-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the NHEJ-bearing reads,>100 forms exhibited mutations that would disrupt the coding sequencing of Ov-GRN-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence analysis of NHEJ mutations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "121ba36a-0d31-4e89-8209-9096ddb1ed8d",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C29",
+      "claim": "Levels of both Ov-GRN-1 mRNA transcripts and Ov-GRN-1 protein fell significantly from days 1 and 2 after transfection, respectively (p\u22640.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of both Ov-GRN-1 mRNA transcripts as determined by reverse transcription (RT)-qPCR and of Ov-GRN-1 protein, as detected by western blot using anti-Ov-GRN-1 serum, fell significantly from days 1 and 2 after transfection, respectively (p\u22640.0001; Figure 1D and E, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR and western blot experimental data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "7059bec4-85da-4961-a15e-2ebcdd59850e",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C30",
+      "claim": "Expression levels of actin and Ov-TSP-2 tegument protein were not influenced by the programmed mutation of Ov-GRN-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression levels of two reference genes encoding actin (Figure 1\u2014figure supplement 1C) and the Ov-TSP-2 tegument protein (Figure 1D) were not influenced by the programmed mutation of Ov-GRN-1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control protein expression data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "957810e0-00c9-4d2d-96cb-f10df7d717c8",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C31",
+      "claim": "ES from WT and mock-transfected adult flukes stimulated cell proliferation and wound closure.",
+      "claim_type": "EXPLICIT",
+      "source": "ES from WT and mock-transfected adult flukes stimulated cell proliferation and wound closure whereas an equivalent amount of ES products from \u0394Ov-GRN-1 flukes resulted in significantly reduced cell proliferation over the 6-day course of the assay (p \u2264 0.0001; Figure 2A and B, Figure 2\u2014figure supplement 1A and B) and significantly reduced in vitro wound closure over 36 hr (p \u2264 0.0001; Figure 2C and D, Figure 2\u2014figure supplement 1C and D), consistent with the reduction in Ov-GRN-1 protein secreted from the gene-edited liver flukes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell proliferation and wound healing assay data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "8362a21d-3c35-4a2d-9473-09c16f58aeb0",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C32",
+      "claim": "ES products from \u0394Ov-GRN-1 flukes resulted in significantly reduced cell proliferation over the 6-day course of the assay (p \u2264 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "ES from WT and mock-transfected adult flukes stimulated cell proliferation and wound closure whereas an equivalent amount of ES products from \u0394Ov-GRN-1 flukes resulted in significantly reduced cell proliferation over the 6-day course of the assay (p \u2264 0.0001; Figure 2A and B, Figure 2\u2014figure supplement 1A and B) and significantly reduced in vitro wound closure over 36 hr (p \u2264 0.0001; Figure 2C and D, Figure 2\u2014figure supplement 1C and D), consistent with the reduction in Ov-GRN-1 protein secreted from the gene-edited liver flukes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell proliferation assay data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "914bfef7-eefc-4dd1-8dcd-c1fa6b670a44",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C33",
+      "claim": "ES products from \u0394Ov-GRN-1 flukes resulted in significantly reduced in vitro wound closure over 36 hr (p \u2264 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "ES from WT and mock-transfected adult flukes stimulated cell proliferation and wound closure whereas an equivalent amount of ES products from \u0394Ov-GRN-1 flukes resulted in significantly reduced cell proliferation over the 6-day course of the assay (p \u2264 0.0001; Figure 2A and B, Figure 2\u2014figure supplement 1A and B) and significantly reduced in vitro wound closure over 36 hr (p \u2264 0.0001; Figure 2C and D, Figure 2\u2014figure supplement 1C and D), consistent with the reduction in Ov-GRN-1 protein secreted from the gene-edited liver flukes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by wound healing assay data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "f73dbb8c-0ec4-4249-ae87-b9431992db79",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C34",
+      "claim": "Significant differences in Ov-GRN-1 transcript levels were noted between groups of MC (p \u2264 0.01), but the effect was modest, \u22644%, at each time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant differences in Ov-GRN-1 transcript levels were noted between groups of MC (p \u2264 0.01), but the effect was modest, \u22644%, at each time point (Figure 3\u2014figure supplement 1), suggesting that delivery of the pCas-Ov-GRN-1 by electroporation through the MC cyst wall was ineffective.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in figure supplement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "60bceaae-24b5-4c57-af88-a1c7a6888268",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C35",
+      "claim": "Delivery of the pCas-Ov-GRN-1 by electroporation through the MC cyst wall was ineffective.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant differences in Ov-GRN-1 transcript levels were noted between groups of MC (p \u2264 0.01), but the effect was modest, \u22644%, at each time point (Figure 3\u2014figure supplement 1), suggesting that delivery of the pCas-Ov-GRN-1 by electroporation through the MC cyst wall was ineffective.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the modest effect on transcript levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "f7ddbba7-34f0-42b4-b6e4-8313871115bc",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C36",
+      "claim": "Marked depletion of Ov-GRN-1 transcripts in NEJ was evident by 24 hr after electroporation (p \u2264 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Following this manipulation, marked depletion of Ov-GRN-1 transcripts in NEJ was evident by 24 hr later (p \u2264 0.0001) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "4a9a2796-2768-4d8e-a221-2b4d66b6517d",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C37",
+      "claim": "Similar numbers of WT and \u0394Ov-GRN-1 flukes were observed in the bile ducts at 14 days post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "At necropsy of the hamsters 14 days later, similar numbers of WT and \u0394Ov-GRN-1 flukes were observed in the bile ducts, and they were similarly motile (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observation during necropsy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "7d22fbeb-1660-4cf3-9167-ec9c08474cd1",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C38",
+      "claim": "Infection with WT flukes induced markedly disordered, hyperplasic growth of the epithelium adjacent to the parasites with ~500% thickening of the biliary epithelium compared to uninfected controls (p \u2264 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, infection with WT flukes induced markedly disordered, hyperplasic growth of the epithelium adjacent to the parasites; ~500% thickening of the biliary epithelium compared to uninfected controls as measured in two-dimensional image analysis of H and E-stained thin sections (p \u2264 0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histopathological analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "d4407ad3-bb25-4a96-82ff-ee04c77ade49",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C39",
+      "claim": "Infection with the \u0394Ov-GRN-1 flukes provoked significantly less (p \u2264 0.0001) biliary hyperplasia than WT flukes (145% thickening compared to uninfected controls; p \u2264 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, infection with the \u0394Ov-GRN-1 flukes provoked significantly less (p \u2264 0.0001) biliary hyperplasia than WT flukes (145% thickening compared to uninfected controls; p \u2264 0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histopathological analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "61b598ff-8a5d-4357-945f-4bbb5d357be9",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C40",
+      "claim": "The bile ducts from hamsters infected with the \u0394Ov-GRN-1 flukes generally resembled those of the uninfected control hamsters.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the bile ducts from hamsters infected with the \u0394Ov-GRN-1 flukes generally resembled those of the uninfected control hamsters (Figure 3D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histopathological images shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "5766d964-623c-43dc-9766-2a0f9ef082df",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C41",
+      "claim": "At 60 days after infection, significant differences in biliary hyperplasia remained between hamsters infected with WT (216%) and \u0394Ov-GRN-1 (162%) flukes (p \u2264 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "At 60 days after infection, significant differences in biliary hyperplasia remained between hamsters infected with WT (216%) and \u0394Ov-GRN-1 (162%) flukes (p \u2264 0.05), although this was less marked than during acute infection at day 14 (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histopathological analysis shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "b17db9e8-54e1-428f-98ec-71d55a721df0",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C42",
+      "claim": "Similar numbers of worms were recovered from both control and gene-edited liver fluke-infected hamsters at 60 days post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate disease during chronic infection with \u0394Ov-GRN-1 liver flukes and associated chronic biliary morbidity, hamsters were infected with \u0394Ov-GRN-1 and WT NEJ, and adult flukes were recovered and counted from the livers 60 days post-infection. Similar numbers of worms were recovered from both control and gene-edited liver fluke-infected hamsters (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by worm count data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "238ee28e-ccc5-48ee-97fa-e70ddb8fde23",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C43",
+      "claim": "Thick bands of collagen surrounded the enlarged bile ducts in the vicinity of the flukes in the hamsters infected with WT parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Minimal deposits of collagen were seen in the periductal regions of the biliary tract of the uninfected control hamsters. By contrast, thick bands of collagen surrounded the enlarged bile ducts in the vicinity of the flukes in the hamsters infected with WT parasites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Picro-Sirius Red staining shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "63089b69-89d5-4ff7-9720-92d8f2336c1c",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C44",
+      "claim": "Significantly less collagen (28%) had been deposited in periductal regions of hamsters infected with \u0394Ov-GRN-1 flukes compared to livers of hamsters infected with WT flukes (p \u2264 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly less collagen (28%) had been deposited in periductal regions of hamsters infected with \u0394Ov-GRN-1 flukes compared to livers of hamsters infected with WT flukes (p \u2264 0.001) (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification of Picro-Sirius Red staining shown in Figure 4B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "d88ffc33-7572-476d-a993-4d0ea9b7b12d",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C45",
+      "claim": "Livers of hamsters infected with WT flukes showed densely packed collagen fibrils that stained for ACTA2 in periductal regions proximal to the parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Livers of hamsters infected with WT flukes showed densely packed collagen fibrils that stained for ACTA2 in periductal regions proximal to the parasites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence staining shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "6ada6f4d-9f87-49cb-8b02-10bba7d43736",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C46",
+      "claim": "Livers from hamsters infected with \u0394Ov-GRN-1 flukes displayed an irregular distribution of less dense collagen fibrils with less ACTA2-specific fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, livers from hamsters infected with \u0394Ov-GRN-1 flukes displayed an irregular distribution of less dense collagen fibrils with less ACTA2-specific fluorescence (Figure 4D, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence staining shown in Figure 4D and supplement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "b20420ff-5d46-4ee3-93d7-d2dea6c66404",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C47",
+      "claim": "Median levels of ACTA2 in the livers of \u0394Ov-GRN-1 fluke-infected hamsters were significantly reduced (94%) compared to those of WT fluke-infected hamsters (p \u2264 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Median levels of ACTA2 (quantified using Alexa-594-anti-ACTA2) in the livers of \u0394Ov-GRN-1 fluke-infected hamsters were significantly reduced (94%) compared to those of WT fluke-infected hamsters (p \u2264 0.01) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification of ACTA2 fluorescence shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "1edc9abb-dfcc-42d7-b046-df923e741510",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C48",
+      "claim": "Levels of Ov-GRN-1 mRNA in the \u0394Ov-GRN-1 group flukes were 81% lower, in aggregate, than the control wild-type flukes.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that levels of Ov-GRN-1 mRNA in the \u0394Ov-GRN-1 group flukes were 81% lower, in aggregate, than the control wild-type flukes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "c98ab0f2-2230-4bcd-b078-930364294101",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C49",
+      "claim": "The NGS CRISPResso analysis revealed mutation rates of 1.3, 5.9 and 17.2% in the L, M, and H groups of \u0394Ov-GRN-1 worms, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The NGS CRISPResso analysis revealed mutation rates of 1.3, 5.9 and 17.2% in the L, M, and H groups of \u0394Ov-GRN-1 worms, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NGS analysis shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "d92c935e-276c-4193-942f-9041ee184343",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C50",
+      "claim": "The tri-primer qPCR analysis indicated mutation levels of 0.7, 3.2 and 4.6% in the L, M, and H groups, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The tri-primer qPCR analysis indicated mutation levels of 0.7, 3.2 and 4.6% in these groups, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "f1351dfe-3b82-4d4b-86b2-b94b0539cf97",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C51",
+      "claim": "Both approaches confirmed that the efficiency of programmed gene editing negatively correlated with levels of the Ov-GRN-1 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Both approaches confirmed that the efficiency of programmed gene editing negatively correlated with levels of the Ov-GRN-1 transcripts (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of mutation rates and transcript levels shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "2c649425-2652-450a-bbc8-408d90d78eb6",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C52",
+      "claim": "The combined mutation frequency among all three groups by the two approaches was 8.1% and 2.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined mutation frequency among all three groups by the two approaches was 8.1% and 2.7%, with the 2.7% rate estimated by tri-primer qPCR indicating the same level as the mutation rate of 2.7% observed during culture of adult stage \u0394Ov-GRN-1 flukes for 7 to 21 days in vitro (Figure 1E, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by combined analysis of NGS and qPCR data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "c87235fa-eb79-4d74-8b8c-ecf7d8d33f03",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C53",
+      "claim": "Mutations were retained in the parasite for at least 60 days during active infection of the mammalian host.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, these findings also demonstrated the longevity of the programmed mutation at Ov-GRN-1; mutations were retained in the parasite for at least 60 days during active infection of the mammalian host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by detection of mutations in flukes recovered 60 days post-infection",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "f0fceec7-a85b-4abf-b2ae-3b67ae9d5d56",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C54",
+      "claim": "The somatic mutation rate in the adult developmental stage was generally <5% of the genomes recovered from these multicellular parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the findings demonstrated programmed gene editing of the Ov-GRN-1 locus, the somatic mutation rate in the adult developmental stage was generally <5% of the genomes recovered from these multicellular parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mutation rate analysis from genomic DNA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "9a527f05-2603-4a4e-a45b-dd7deab87b32",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C55",
+      "claim": "Ov-GRN-1 exhibits generalized expression throughout tissues of the adult liver fluke, with predominant expression immunolocalized to the tegumental surface, tegumental cytons and gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it exhibits generalized expression throughout tissues of the adult liver fluke, predominant expression of Ov-GRN-1 has been immunolocalized to the tegumental surface, tegumental cytons and gut (Smout et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior immunolocalization study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "cb692e12-9a26-4bdd-bad9-10c808e1a50b",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C56",
+      "claim": "The activity in vitro of liver fluke granulin in cell proliferation, wound repair and angiogenesis has been established.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity in vitro of liver fluke granulin in cell proliferation, wound repair and angiogenesis has been established (Papatpremsiri et al., 2015; Smout et al., 2015; Smout et al., 2009), which has prompted the development of therapeutic peptides based on the Ov-GRN-1 scaffold for treatment of non-healing wounds (Bansal et al., 2017; Dastpeyman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "fd87088a-a138-4104-bd8a-be5a7bcdc402",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C57",
+      "claim": "Therapeutic peptides based on the Ov-GRN-1 scaffold have been developed for treatment of non-healing wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity in vitro of liver fluke granulin in cell proliferation, wound repair and angiogenesis has been established (Papatpremsiri et al., 2015; Smout et al., 2015; Smout et al., 2009), which has prompted the development of therapeutic peptides based on the Ov-GRN-1 scaffold for treatment of non-healing wounds (Bansal et al., 2017; Dastpeyman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies on therapeutic peptide development",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "21eece14-f6d1-43c9-ab39-51f49b0442ac",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C58",
+      "claim": "Programmed gene editing confirmed that secreted parasite granulin induces hyperplasia of the biliary epithelium and fibrosis during chronic infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Programmed gene editing confirmed that secreted parasite granulin induces hyperplasia of the biliary epithelium and fibrosis during chronic infection, and that liver fluke granulin directly contributes to morbidity of the hepatobiliary tract during both acute and chronic opisthorchiasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from gene-edited parasite infections",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "ea052e4e-c430-4288-b176-9b4a46173015",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C59",
+      "claim": "Liver fluke granulin directly contributes to morbidity of the hepatobiliary tract during both acute and chronic opisthorchiasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Programmed gene editing confirmed that secreted parasite granulin induces hyperplasia of the biliary epithelium and fibrosis during chronic infection, and that liver fluke granulin directly contributes to morbidity of the hepatobiliary tract during both acute and chronic opisthorchiasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from gene-edited parasite infections",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "4cbc69ad-9b3a-4d06-b718-04d5c00881cf",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C60",
+      "claim": "The impact of Ov-GRN-1 might emulate the action of interleukin IL\u221233, an epithelial mitogen for cholangiocytes, in the development of CCA.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of Ov-GRN-1 might emulate the action of interleukin IL\u221233, an epithelial mitogen for cholangiocytes, in the development of CCA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative comparison proposed by the authors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "0fda81e9-50b0-45e9-8cfa-89cd4d3473c9",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C61",
+      "claim": "IL-33 primes type two innate lymphoid cells to induce proliferation of neighboring cholangiocytes by the release of IL-13.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-33 primes type two innate lymphoid cells to induce proliferation of neighboring cholangiocytes by the release of IL-13 (Brindley and Loukas, 2017; Li et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "f9506717-151d-43a6-b12b-2ba67057fa27",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C62",
+      "claim": "The bacterial Type II Cas9 system is active in O. viverrini.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the findings confirmed that the bacterial Type II Cas9 system is active in O. viverrini, and we suggest that Cas9-mediated programmed gene editing and repair by homology directed repair and NHEJ will be active in other genes of the liver fluke, and in other trematodes and parasitic platyhelminths generally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental demonstration of Cas9 activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "f392fe32-4fd3-4d82-a527-40e59eefd554",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C63",
+      "claim": "Cas9-mediated programmed gene editing and repair by homology directed repair and NHEJ will be active in other genes of the liver fluke, and in other trematodes and parasitic platyhelminths generally.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the findings confirmed that the bacterial Type II Cas9 system is active in O. viverrini, and we suggest that Cas9-mediated programmed gene editing and repair by homology directed repair and NHEJ will be active in other genes of the liver fluke, and in other trematodes and parasitic platyhelminths generally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the successful demonstration in O. viverrini",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "fa0dbca0-a1ea-4fa5-96e8-42734c5cc511",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C64",
+      "claim": "The chromosomal break took place as programmed and was repaired subsequently by NHEJ following Cas9-catalyzed mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Scrutiny of the nucleotide sequence reads indicated that the chromosomal break took place as programmed and was repaired subsequently by NHEJ following Cas9-catalyzed mutation (Albadri et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence analysis of mutations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "478bb31b-b06b-4a54-b936-64776fbbd1b8",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C65",
+      "claim": "Gene knockout of the target Ov-GRN-1 locus in nuclei of cells in the tegument and gut may have occurred more frequently than in cells deeper within the fluke.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the flukes were transfected in vitro with the gene editing plasmid by square wave electroporation, gene knockout of the target Ov-GRN-1 locus in nuclei of cells in the tegument and gut may have occurred more frequently than in cells deeper within the fluke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed pattern of gene editing",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "1bc82a07-3fa7-457f-b0ec-ece34e7f99e9",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C66",
+      "claim": "CRISPR/Cas9-based gene editing and the hamster model of human opisthorchiasis provide a facile, functional genomics system to interrogate the host-parasite relationship and pathophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR/Cas9-based gene editing and the hamster model of human opisthorchiasis utilized here (Sripa et al., 2007), including genetic manipulation of the larval infective stage of the parasite, provide a facile, functional genomics system to interrogate this host-parasite relationship and pathophysiology (Hoffmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the successful application of the approach in this study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "e6801c09-0f8b-478b-aa6e-196ebaa626dd",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C67",
+      "claim": "Metacercariae of O. viverrini were isolated from naturally infected cyprinid fish by pepsin digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Metacercariae (MC) of O. viverrini were isolated from the naturally infected cyprinid fish by pepsin digestion as described (Pinlaor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established protocol",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "7550c4b5-12b6-4d0f-84fe-b02caa1e23c8",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "claim_id": "C68",
+      "claim": "The Animal Ethics Committee of Khon Kaen University approved the study, approval number ACUC-KKU-61/60.",
+      "claim_type": "EXPLICIT",
+      "source": "The Animal Ethics Committee of Khon Kaen University approved the study, approval number ACUC-KKU-61/60, which adhered to standard guidelines of the National Research Council of Thailand for the Ethics of Animal Experimentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of ethical approval",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7917d463-a7b6-4ce2-9c7e-a5b1e3eec118",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "This study pioneers CRISPR/Cas9-mediated gene editing in parasitic flatworms, specifically demonstrating that the bacterial Type II Cas9 system is active in O. viverrini. Prior to this work, CRISPR/Cas9 gene editing had not been reported for flatworm parasites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C24, and C62 collectively establish this as the first report of CRISPR/Cas9 gene editing in parasitic flatworms. The novelty is supported by the absence of prior reports in the literature (C24) and experimental demonstration of Cas9 activity in O. viverrini (C62). This represents a significant methodological advance for the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "11ab0f16-f738-44c7-9415-3b06a938ce72",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 targeting of Ov-GRN-1 resulted in detectable mutations in adult flukes, with 1.3% of sequenced reads exhibiting NHEJ mutations including insertions, deletions, and substitutions. The chromosomal break occurred at the programmed site and was repaired by NHEJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C25-C28, and C64 provide converging evidence from multiple analytical approaches (qPCR and deep sequencing) demonstrating successful gene editing. The mutation rate of 1.3-2.7% is consistently detected across methods, and sequence analysis confirms NHEJ repair at the target site. The data are internally consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "2ce99085-7542-4864-925e-463169c6e1cd",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Gene editing of Ov-GRN-1 resulted in rapid and significant depletion of both Ov-GRN-1 mRNA transcripts and protein levels (p\u22640.0001), while expression of control genes (actin and Ov-TSP-2) remained unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29, and C30 demonstrate specific knockdown of the target gene with appropriate controls. The significant reduction in both transcript and protein levels (p\u22640.0001) with unchanged control gene expression provides strong evidence for specific gene editing effects. The temporal dynamics and statistical significance support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "ae229176-2b0d-4084-bd7c-76ee5507a693",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Excretory/secretory products from gene-edited \u0394Ov-GRN-1 flukes showed significantly reduced capacity to stimulate cholangiocyte proliferation (p\u22640.0001) and wound closure (p\u22640.0001) compared to wild-type and mock-transfected controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 demonstrate functional consequences of gene editing in vitro using well-established cell-based assays. The significant reductions in both proliferation and wound healing (p\u22640.0001) are consistent with loss of Ov-GRN-1 function. The inclusion of both wild-type and mock-transfected controls strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "eddfcb71-7166-45b7-9cca-316f5a01d278",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gene editing of metacercariae (MC) by electroporation was ineffective (\u22644% effect), but newly excysted juveniles (NEJ) showed marked depletion of Ov-GRN-1 transcripts by 24 hours after electroporation (p\u22640.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 identify stage-specific differences in gene editing efficiency. The modest effect in MC (C34) and inference of ineffective delivery through the cyst wall (C35) are supported by the data. The successful editing of NEJ (C36) with significant transcript depletion provides a viable approach for in vivo studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "b162a9dc-9683-4470-b1ba-98ad9e394890",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gene-edited parasites successfully colonized hamster bile ducts and developed into adult flukes in similar numbers to wild-type, but infection with \u0394Ov-GRN-1 flukes resulted in dramatically reduced biliary hyperplasia at both 14 days (145% vs 500% thickening, p\u22640.0001) and 60 days (162% vs 216%, p\u22640.05) post-infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C37-C41 demonstrate a striking pathophysiological phenotype with appropriate controls and statistical analysis. The similar worm burdens (C37) control for infection success, while the dramatic reduction in hyperplasia (C38-C39) provides strong evidence for Ov-GRN-1's role in pathology. The persistence of the phenotype at 60 days (C41) supports chronic effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "6702cd89-518e-48f0-958d-7552f971aa70",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chronic infection with gene-edited \u0394Ov-GRN-1 flukes resulted in significantly reduced periductal fibrosis, with 28% less collagen deposition (p\u22640.001) and 94% reduction in ACTA2 expression (p\u22640.01) compared to wild-type infections, despite similar worm burdens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C42-C47 provide comprehensive evidence for reduced fibrosis using multiple complementary markers (Picro-Sirius Red staining and ACTA2 immunofluorescence). The similar worm counts (C42) control for infection intensity, and the quantitative analysis with appropriate statistics supports the dramatic reduction in fibrosis markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "cb450ee8-281b-4272-b69b-cd8ee2b1d006",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The pathophysiological phenotype observed in vivo confirms that Ov-GRN-1 plays a direct role in virulence and morbidity during opisthorchiasis, inducing biliary hyperplasia and fibrosis during both acute and chronic infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C58, and C59 represent the major biological conclusion supported by the combined in vitro and in vivo experimental data. The dramatic reduction in pathology upon gene editing, with appropriate controls and statistical validation, provides strong evidence for Ov-GRN-1's role in disease pathogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "4dc47a48-7dc1-49b9-88d1-24761f6944e9",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analysis of flukes recovered 60 days post-infection revealed that gene editing efficiency negatively correlated with Ov-GRN-1 transcript levels, with mutation rates ranging from 1.3-17.2% by NGS and 0.7-4.6% by qPCR across low, moderate, and high knockdown groups. Mutations persisted for at least 60 days during active infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 provide detailed characterization of gene editing efficiency and persistence using two independent methods (NGS and qPCR). The negative correlation between mutation rate and transcript levels (C51) is logical and well-supported. The demonstration of mutation persistence (C53) is important for validating the approach. However, the overall low mutation rate (<5%, C54) is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "74b6a0e3-ecb1-42df-87be-5364363d46c4",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The discrepancy between low genomic mutation rates (<5%) and marked phenotypic effects may be explained by preferential gene editing in tegumental and gut cells where Ov-GRN-1 is predominantly expressed and from which the protein is secreted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65 and C55 propose a speculative explanation for the observed discrepancy between mutation rates and phenotypic effects. While the tissue-specific expression pattern (C55) is supported by prior literature, the hypothesis about preferential editing in surface tissues (C65) lacks direct experimental validation. This remains an inference that would require additional experiments such as tissue-specific mutation analysis or immunolocalization of the editing machinery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "cb692b6d-648d-4fc7-90d1-9415b7feda80",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors suggest that CRISPR/Cas9-mediated gene editing will be applicable to other genes in O. viverrini and to other trematodes and parasitic platyhelminths, and that this approach combined with the hamster model provides a functional genomics system for studying host-parasite interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63 and C66 represent forward-looking predictions based on the successful demonstration in O. viverrini. While the logic is reasonable, these are speculative extrapolations that require experimental validation in other genes and species. The generalizability cannot be confirmed from this single gene study alone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "67d350d7-195c-4086-a2fe-aa29070b13e5",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "O. viverrini infection is the principal risk factor for cholangiocarcinoma in the Lower Mekong Basin, with ~10 million people infected in Thailand and Laos. Northeastern Thailand has the highest CCA incidence globally (>80 cases per 100,000), with up to 20,000 annual surgical admissions and poor prognosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C15 provide epidemiological and clinical context supported by appropriate citations to prior literature. These background claims establish the public health significance of the research but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "936e788c-ed8a-4c40-8db9-abf33b890525",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has established that liver flukes secrete mediators including Ov-GRN-1 that accelerate wound resolution in cultured cholangiocytes, and the authors hypothesize that Ov-GRN-1-induced proliferation contributes to a tumorigenic microenvironment during chronic infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 summarize prior published work that provides the rationale for this study. Claim C20 is explicitly stated as a hypothesis. These claims appropriately contextualize the current work but represent background rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "48c733bb-8aff-462d-a79f-a9b0af7cf69d",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior to this work, genetic tools for platyhelminth parasites were limited, though CRISPR/Cas9 has been successfully applied in nematodes and has revolutionized genome editing broadly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 provide appropriate background on the state of gene editing technology, supported by citations. These establish the novelty and significance of applying CRISPR/Cas9 to flatworms but are not novel findings themselves.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "dc1ff2a0-ffa7-4cd8-82ec-949904ddd1de",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior studies have established that Ov-GRN-1 is expressed predominantly in tegumental and gut tissues and has activity in cell proliferation, wound repair, and angiogenesis in vitro, leading to development of therapeutic peptides for wound healing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 summarize prior published work on Ov-GRN-1 biology and applications, appropriately cited. These provide important context but represent background information rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "07cd4430-13af-42e5-8a32-e515ce077c5d",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that Ov-GRN-1's impact might emulate IL-33's role in CCA development, where IL-33 primes type 2 innate lymphoid cells to induce cholangiocyte proliferation via IL-13 release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 is explicitly speculative, proposing a mechanistic parallel between Ov-GRN-1 and IL-33. Claim C61 describes established IL-33 biology. This comparison is interesting but lacks experimental validation and remains a hypothesis for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    },
+    {
+      "id": "25e75f5d-da16-4dfd-83b1-ada208abf385",
+      "content_id": "9577f5ee-0fa4-4309-8a87-efac15ace2b2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Metacercariae were isolated from naturally infected fish by pepsin digestion following established protocols, and the study received ethical approval from Khon Kaen University (ACUC-KKU-61/60).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C68 describe standard methodological procedures and ethical compliance. These are appropriately documented but represent routine experimental details rather than results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:06:05.208893Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6da2faa9-3735-4eaf-b030-b97de8979751",
+      "result_id": "7917d463-a7b6-4ce2-9c7e-a5b1e3eec118"
+    },
+    {
+      "claim_id": "51b36399-6c1a-473b-bceb-c0bfc4eaabea",
+      "result_id": "7917d463-a7b6-4ce2-9c7e-a5b1e3eec118"
+    },
+    {
+      "claim_id": "f9506717-151d-43a6-b12b-2ba67057fa27",
+      "result_id": "7917d463-a7b6-4ce2-9c7e-a5b1e3eec118"
+    },
+    {
+      "claim_id": "f556e5a0-0f7e-46e7-a669-c51470842de0",
+      "result_id": "11ab0f16-f738-44c7-9415-3b06a938ce72"
+    },
+    {
+      "claim_id": "7de4646b-4250-4fb7-8f85-59aa98deace3",
+      "result_id": "11ab0f16-f738-44c7-9415-3b06a938ce72"
+    },
+    {
+      "claim_id": "8e99edd1-09b9-4e53-918d-d1a1458138bc",
+      "result_id": "11ab0f16-f738-44c7-9415-3b06a938ce72"
+    },
+    {
+      "claim_id": "a1fe438a-2764-4fe5-8a1c-334da3168215",
+      "result_id": "11ab0f16-f738-44c7-9415-3b06a938ce72"
+    },
+    {
+      "claim_id": "9400e577-8cd5-45f4-989d-350b212593e8",
+      "result_id": "11ab0f16-f738-44c7-9415-3b06a938ce72"
+    },
+    {
+      "claim_id": "fa0dbca0-a1ea-4fa5-96e8-42734c5cc511",
+      "result_id": "11ab0f16-f738-44c7-9415-3b06a938ce72"
+    },
+    {
+      "claim_id": "b7afde53-ff9c-44a6-abe4-118103e1cf04",
+      "result_id": "2ce99085-7542-4864-925e-463169c6e1cd"
+    },
+    {
+      "claim_id": "121ba36a-0d31-4e89-8209-9096ddb1ed8d",
+      "result_id": "2ce99085-7542-4864-925e-463169c6e1cd"
+    },
+    {
+      "claim_id": "7059bec4-85da-4961-a15e-2ebcdd59850e",
+      "result_id": "2ce99085-7542-4864-925e-463169c6e1cd"
+    },
+    {
+      "claim_id": "957810e0-00c9-4d2d-96cb-f10df7d717c8",
+      "result_id": "ae229176-2b0d-4084-bd7c-76ee5507a693"
+    },
+    {
+      "claim_id": "8362a21d-3c35-4a2d-9473-09c16f58aeb0",
+      "result_id": "ae229176-2b0d-4084-bd7c-76ee5507a693"
+    },
+    {
+      "claim_id": "914bfef7-eefc-4dd1-8dcd-c1fa6b670a44",
+      "result_id": "ae229176-2b0d-4084-bd7c-76ee5507a693"
+    },
+    {
+      "claim_id": "f73dbb8c-0ec4-4249-ae87-b9431992db79",
+      "result_id": "eddfcb71-7166-45b7-9cca-316f5a01d278"
+    },
+    {
+      "claim_id": "60bceaae-24b5-4c57-af88-a1c7a6888268",
+      "result_id": "eddfcb71-7166-45b7-9cca-316f5a01d278"
+    },
+    {
+      "claim_id": "f7ddbba7-34f0-42b4-b6e4-8313871115bc",
+      "result_id": "eddfcb71-7166-45b7-9cca-316f5a01d278"
+    },
+    {
+      "claim_id": "85092c06-8521-4a8a-9352-c16da3699801",
+      "result_id": "b162a9dc-9683-4470-b1ba-98ad9e394890"
+    },
+    {
+      "claim_id": "4a9a2796-2768-4d8e-a221-2b4d66b6517d",
+      "result_id": "b162a9dc-9683-4470-b1ba-98ad9e394890"
+    },
+    {
+      "claim_id": "7d22fbeb-1660-4cf3-9167-ec9c08474cd1",
+      "result_id": "b162a9dc-9683-4470-b1ba-98ad9e394890"
+    },
+    {
+      "claim_id": "d4407ad3-bb25-4a96-82ff-ee04c77ade49",
+      "result_id": "b162a9dc-9683-4470-b1ba-98ad9e394890"
+    },
+    {
+      "claim_id": "61b598ff-8a5d-4357-945f-4bbb5d357be9",
+      "result_id": "b162a9dc-9683-4470-b1ba-98ad9e394890"
+    },
+    {
+      "claim_id": "5766d964-623c-43dc-9766-2a0f9ef082df",
+      "result_id": "b162a9dc-9683-4470-b1ba-98ad9e394890"
+    },
+    {
+      "claim_id": "4b93f3ec-66ee-485b-9b58-ee67d6de8f6d",
+      "result_id": "6702cd89-518e-48f0-958d-7552f971aa70"
+    },
+    {
+      "claim_id": "b17db9e8-54e1-428f-98ec-71d55a721df0",
+      "result_id": "6702cd89-518e-48f0-958d-7552f971aa70"
+    },
+    {
+      "claim_id": "238ee28e-ccc5-48ee-97fa-e70ddb8fde23",
+      "result_id": "6702cd89-518e-48f0-958d-7552f971aa70"
+    },
+    {
+      "claim_id": "63089b69-89d5-4ff7-9720-92d8f2336c1c",
+      "result_id": "6702cd89-518e-48f0-958d-7552f971aa70"
+    },
+    {
+      "claim_id": "d88ffc33-7572-476d-a993-4d0ea9b7b12d",
+      "result_id": "6702cd89-518e-48f0-958d-7552f971aa70"
+    },
+    {
+      "claim_id": "6ada6f4d-9f87-49cb-8b02-10bba7d43736",
+      "result_id": "6702cd89-518e-48f0-958d-7552f971aa70"
+    },
+    {
+      "claim_id": "b20420ff-5d46-4ee3-93d7-d2dea6c66404",
+      "result_id": "6702cd89-518e-48f0-958d-7552f971aa70"
+    },
+    {
+      "claim_id": "eb6f3206-77a0-4d2a-b96c-4c977dd9a2c5",
+      "result_id": "cb450ee8-281b-4272-b69b-cd8ee2b1d006"
+    },
+    {
+      "claim_id": "21eece14-f6d1-43c9-ab39-51f49b0442ac",
+      "result_id": "cb450ee8-281b-4272-b69b-cd8ee2b1d006"
+    },
+    {
+      "claim_id": "ea052e4e-c430-4288-b176-9b4a46173015",
+      "result_id": "cb450ee8-281b-4272-b69b-cd8ee2b1d006"
+    },
+    {
+      "claim_id": "1edc9abb-dfcc-42d7-b046-df923e741510",
+      "result_id": "4dc47a48-7dc1-49b9-88d1-24761f6944e9"
+    },
+    {
+      "claim_id": "c98ab0f2-2230-4bcd-b078-930364294101",
+      "result_id": "4dc47a48-7dc1-49b9-88d1-24761f6944e9"
+    },
+    {
+      "claim_id": "d92c935e-276c-4193-942f-9041ee184343",
+      "result_id": "4dc47a48-7dc1-49b9-88d1-24761f6944e9"
+    },
+    {
+      "claim_id": "f1351dfe-3b82-4d4b-86b2-b94b0539cf97",
+      "result_id": "4dc47a48-7dc1-49b9-88d1-24761f6944e9"
+    },
+    {
+      "claim_id": "2c649425-2652-450a-bbc8-408d90d78eb6",
+      "result_id": "4dc47a48-7dc1-49b9-88d1-24761f6944e9"
+    },
+    {
+      "claim_id": "c87235fa-eb79-4d74-8b8c-ecf7d8d33f03",
+      "result_id": "4dc47a48-7dc1-49b9-88d1-24761f6944e9"
+    },
+    {
+      "claim_id": "f0fceec7-a85b-4abf-b2ae-3b67ae9d5d56",
+      "result_id": "4dc47a48-7dc1-49b9-88d1-24761f6944e9"
+    },
+    {
+      "claim_id": "478bb31b-b06b-4a54-b936-64776fbbd1b8",
+      "result_id": "74b6a0e3-ecb1-42df-87be-5364363d46c4"
+    },
+    {
+      "claim_id": "9a527f05-2603-4a4e-a45b-dd7deab87b32",
+      "result_id": "74b6a0e3-ecb1-42df-87be-5364363d46c4"
+    },
+    {
+      "claim_id": "f392fe32-4fd3-4d82-a527-40e59eefd554",
+      "result_id": "cb692b6d-648d-4fc7-90d1-9415b7feda80"
+    },
+    {
+      "claim_id": "1bc82a07-3fa7-457f-b0ec-ece34e7f99e9",
+      "result_id": "cb692b6d-648d-4fc7-90d1-9415b7feda80"
+    },
+    {
+      "claim_id": "a1b22b5c-b553-4610-84a7-1a72897852df",
+      "result_id": "67d350d7-195c-4086-a2fe-aa29070b13e5"
+    },
+    {
+      "claim_id": "fb577f0c-124c-422a-96cd-13f17a50b50b",
+      "result_id": "67d350d7-195c-4086-a2fe-aa29070b13e5"
+    },
+    {
+      "claim_id": "6dead717-c4ab-47e1-bab4-828c4dda7258",
+      "result_id": "67d350d7-195c-4086-a2fe-aa29070b13e5"
+    },
+    {
+      "claim_id": "6b159d78-8863-467b-a5b4-a691ecea9995",
+      "result_id": "67d350d7-195c-4086-a2fe-aa29070b13e5"
+    },
+    {
+      "claim_id": "fa70f88c-e3f6-47ff-8620-87acc1adfb71",
+      "result_id": "67d350d7-195c-4086-a2fe-aa29070b13e5"
+    },
+    {
+      "claim_id": "37c29a26-4776-4ca8-8bc9-2c75b83a8fb8",
+      "result_id": "67d350d7-195c-4086-a2fe-aa29070b13e5"
+    },
+    {
+      "claim_id": "db6b90fb-5a9f-4e61-8137-1f31a4a750f0",
+      "result_id": "67d350d7-195c-4086-a2fe-aa29070b13e5"
+    },
+    {
+      "claim_id": "b1966d57-250f-440c-80ea-b1bc84f16b2f",
+      "result_id": "67d350d7-195c-4086-a2fe-aa29070b13e5"
+    },
+    {
+      "claim_id": "5a1a3631-2002-41bc-8225-a724732def1b",
+      "result_id": "67d350d7-195c-4086-a2fe-aa29070b13e5"
+    },
+    {
+      "claim_id": "2b671bf5-389e-45ee-9899-7dd5aa3b4f26",
+      "result_id": "936e788c-ed8a-4c40-8db9-abf33b890525"
+    },
+    {
+      "claim_id": "e6638513-17ed-42a3-b63b-320c58ba0556",
+      "result_id": "936e788c-ed8a-4c40-8db9-abf33b890525"
+    },
+    {
+      "claim_id": "df1f14ba-eb4d-4bdd-a663-e665f00ce5ba",
+      "result_id": "936e788c-ed8a-4c40-8db9-abf33b890525"
+    },
+    {
+      "claim_id": "fd852c10-ad6e-4899-8a8b-1694071455bc",
+      "result_id": "936e788c-ed8a-4c40-8db9-abf33b890525"
+    },
+    {
+      "claim_id": "adf98be8-5ee1-45a9-8c5a-593a004d826b",
+      "result_id": "936e788c-ed8a-4c40-8db9-abf33b890525"
+    },
+    {
+      "claim_id": "022deb48-2151-44d2-9a17-c8481a694046",
+      "result_id": "48c733bb-8aff-462d-a79f-a9b0af7cf69d"
+    },
+    {
+      "claim_id": "e9126d4c-7212-4314-b5d1-caf57bcbbb24",
+      "result_id": "48c733bb-8aff-462d-a79f-a9b0af7cf69d"
+    },
+    {
+      "claim_id": "c83696bf-5736-4cde-a80f-f02714fefa45",
+      "result_id": "48c733bb-8aff-462d-a79f-a9b0af7cf69d"
+    },
+    {
+      "claim_id": "9a527f05-2603-4a4e-a45b-dd7deab87b32",
+      "result_id": "dc1ff2a0-ffa7-4cd8-82ec-949904ddd1de"
+    },
+    {
+      "claim_id": "cb692e12-9a26-4bdd-bad9-10c808e1a50b",
+      "result_id": "dc1ff2a0-ffa7-4cd8-82ec-949904ddd1de"
+    },
+    {
+      "claim_id": "fd87088a-a138-4104-bd8a-be5a7bcdc402",
+      "result_id": "dc1ff2a0-ffa7-4cd8-82ec-949904ddd1de"
+    },
+    {
+      "claim_id": "4cbc69ad-9b3a-4d06-b718-04d5c00881cf",
+      "result_id": "07cd4430-13af-42e5-8a32-e515ce077c5d"
+    },
+    {
+      "claim_id": "0fda81e9-50b0-45e9-8cfa-89cd4d3473c9",
+      "result_id": "07cd4430-13af-42e5-8a32-e515ce077c5d"
+    },
+    {
+      "claim_id": "e6801c09-0f8b-478b-aa6e-196ebaa626dd",
+      "result_id": "25e75f5d-da16-4dfd-83b1-ada208abf385"
+    },
+    {
+      "claim_id": "7550c4b5-12b6-4d0f-84fe-b02caa1e23c8",
+      "result_id": "25e75f5d-da16-4dfd-83b1-ada208abf385"
+    }
+  ],
+  "comparisons": []
+}

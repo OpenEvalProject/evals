@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The MEGABASE+MiChroM computational pipeline uses epigenetic histone modification data (11 ChIP-Seq tracks) as input to predict 3D chromosomal structural ensembles for multiple human cell lines (HMEC, HUVEC, IMR90, K562, HeLa-S3, H1-hESC) at 50 kb resolution. The MEGABASE neural network was trained on GM12878 data and applied to predict chromatin type annotations for other cell lines without retraining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C20, C83-C88 collectively describe a well-documented computational methodology. The pipeline's architecture, training data, input features (11 histone modifications), and application to six cell lines are clearly specified. The approach builds on previously validated work (Di Pierro et al., 2017) and demonstrates generalizability beyond the training cell line.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27"
+    ],
+    "result": "Simulated DNA-DNA ligation maps generated from the predicted chromosome structures show quantitative agreement with experimental Hi-C maps for matching cell types. Pearson's R analysis demonstrates that long-range compartmentalization patterns (>10 Mb) are captured, and the model discriminates well between different cell lines, with better agreement when simulation and experimental cell types match.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C27 are supported by Figure 1 showing contact map comparisons and Pearson's R analysis as a function of genomic distance. The quantitative metrics demonstrate that simulated maps recapitulate experimental patterns, particularly at long ranges. The comparison between matching and mismatching cell types provides evidence for cell-type specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Inclusion of CTCF-mediated loops in the model improves agreement with experimental data at short genomic distances (<10 Mb), but the model is insensitive to CTCF loops at larger length scales (>10 Mb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are directly supported by Figure 1D showing Pearson's R comparisons with and without loops. The scale-dependent effect is clearly demonstrated, with loops improving short-range features while having negligible impact on long-range compartmentalization. This is consistent with the known role of CTCF in local chromatin organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C36",
+      "C41",
+      "C42"
+    ],
+    "result": "Hierarchical clustering of experimentally traced chromatin structures for Segment 1 (chr21 29.37-31.32 Mb) reveals three main clusters: closed dumbbell structures (97.4%), open dumbbell structures (1.8%), and highly dense structures (7 structures). The relative proportions of open and closed structures in simulations match experimental observations, with an apparent free energy difference of ~4 kBT. Genes are predominantly located in the linker region between globular domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C36, C41-C42 are supported by Figure 2 showing clustering analysis and structural characterization. The quantitative agreement in relative populations between experiment and simulation is notable. However, the highly dense structures (Cluster 3) are interpreted as artifacts (C51), which is reasonable given their implausible density but represents an inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Segment 2 (chr21 20.0-21.9 Mb) of IMR90 lacks CTCF-mediated loop domains, resulting in highly disordered structures without the dumbbell-like organization seen in Segment 1. This segment also lacks genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by Figure 2\u2014figure supplements showing contact maps, structural analysis, and gene annotations. The absence of loop domains correlates with loss of organized structure and absence of genes, providing a structural-functional correlation. The comparison between Segments 1 and 2 is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49",
+      "C54",
+      "C56"
+    ],
+    "result": "Simulated chromosome structures from MiChroM reproduce the conformational states observed in microscopy experiments without parameter tuning. The model was derived from population-averaged Hi-C data using maximum entropy principles. The free energy difference between open and closed states in simulation matches experimental estimates, and discrepancies in radius of gyration distributions can be explained by \u00b15% uncertainty in the length scale calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C49, C54, C56 demonstrate strong predictive power of the model. The agreement between simulation and experiment without fitting to the microscopy data is particularly compelling. Figure 3 and supplements show quantitative comparisons of structural distributions. The sensitivity analysis (C56) addresses potential systematic errors in length calibration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Highly dense chromatin structures observed in experiments (Cluster 3) are absent from simulations due to the energy function constraints. The authors interpret these experimental structures as artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 present a reasonable interpretation that the highly dense structures are artifacts, supported by their implausible density (~2\u00d710\u00b3 mg/ml vs ~200 mg/ml for heterochromatin). However, this remains an inference rather than definitive proof. Alternative explanations (e.g., transient collapsed states, imaging artifacts, or model limitations) are not thoroughly explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Analysis of epigenetic marking patterns across cell types reveals that some loci maintain consistent A or B compartment identity while others switch compartments between cell types. A compartment loci tend to localize toward the chromosome surface while B compartment loci localize to the interior, consistent with previous observations in mouse cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by Figure 4 showing MEGABASE annotations, radial density analysis, and radial distance distributions. The observation of compartment switching between cell types is clearly demonstrated. The radial positioning pattern is consistent with cited work (Nagano et al., 2013) and with the model's energy parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "According to the MiChroM energy parameters, B-B interactions are the most energetically favorable, driving phase separation with B compartment loci forming a stable core and A compartment loci positioned toward the surface. This mechanism resembles hydrophobic collapse in protein folding and corroborates experimental evidence for heterochromatin phase separation as a driving force in genome organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 describe the mechanistic interpretation of the model, supported by the energy parameters (Supplementary file 1) and radial positioning data (Figure 4). The analogy to protein folding hydrophobic collapse (C6, C66) is conceptually sound and supported by the observed radial organization. The connection to experimental phase separation studies (C68) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The collective variable Q, commonly used in protein folding studies, is suitable for characterizing chromatin structural ensembles. Despite high conformational plasticity, distinct structural clusters (closed and open dumbbell conformations) can be identified for ~2 Mb chromatin segments using Q-based hierarchical clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by the successful application of Q-based clustering to both experimental and simulated structures (Figures 2-3). The method reveals biologically meaningful structural states that correlate with genomic features (loop domains, gene positioning). The adaptation of protein folding methodology to chromatin is well-justified and effective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C70"
+    ],
+    "result": "Chromosomes do not adopt a unique fold in interphase but exist as heterogeneous structural ensembles. This heterogeneity was predicted by energy landscape theory, observed in single-cell experiments, and confirmed by direct imaging. Statistical ensemble descriptions are necessary to characterize chromosomal structures due to their conformational plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C28-C31, C70 synthesize theoretical predictions with experimental observations from multiple cited studies. The manuscript's own data (structural clustering, free energy analysis) support this view. The convergence of theory, population-averaged data, and single-cell/imaging data provides strong evidence for ensemble behavior rather than unique structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CTCF proteins act as gene insulators through suppressing loop extrusion. Segment 2 structures lack domain boundaries and dumbbell organization due to absence of CTCF loops, suggesting a possible role for opening/closing of organized dumbbell structures in transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is well-supported by citations. Claims C76-C77 present observations (lack of boundaries in Segment 2) and speculation about transcriptional regulation. While the correlation between loop domains, structural organization, and gene positioning is suggestive, the functional claim (C77) is explicitly speculative and lacks direct experimental evidence for a regulatory role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The MiChroM model predicts that transcriptionally active A compartment loci move toward the chromosomal territory surface while inactive B compartment loci move to the interior. B loci aggregation drives both compartmentalization and expulsion of active chromatin to the periphery. The model predicts that epigenetic rewriting from A to B causes loci to move toward the interior, potentially affecting transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 present model predictions supported by simulation data (Figure 4) and consistent with the energy parameters. The radial positioning predictions are validated by the simulations. However, C82's suggestion about affecting transcriptional activity is speculative\u2014the model predicts spatial repositioning but doesn't directly demonstrate functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "All simulations use a fixed chromatin volume fraction of 0.1 in a hard-wall spherical confinement, without retraining for different cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 clearly describe simulation parameters. However, Figure 1\u2014figure supplement 5 shows that experimental contact probabilities for HUVEC and H1-hESC are notably higher than simulations, suggesting actual chromosome densities may differ from the fixed 0.1 volume fraction used. This limitation is acknowledged but not addressed through parameter adjustment.",
+    "result_type": "MINOR"
+  }
+]

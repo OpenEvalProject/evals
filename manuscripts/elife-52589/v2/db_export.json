@@ -1,0 +1,2253 @@
+{
+  "submission": {
+    "id": "fbdad227-73ac-43de-b887-7a890956bf5b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:07:55.923161Z",
+    "updated_at": "2025-12-02T16:07:55.923161Z"
+  },
+  "content": [
+    {
+      "id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "submission_id": "fbdad227-73ac-43de-b887-7a890956bf5b",
+      "content_type": "manuscript",
+      "content_text": "# Application of optogenetic Amyloid-\u03b2 distinguishes between metabolic and physical damages in neurodegeneration\n\n## Authors\n\n- Chu Hsien Lim<sup>1</sup> ([ORCID: 0000-0001-6691-8277](https://orcid.org/0000-0001-6691-8277))\n- Prameet Kaur<sup>1</sup>\n- Emelyne Teo<sup>1</sup> ([ORCID: 0000-0001-5050-4109](https://orcid.org/0000-0001-5050-4109))\n- Vanessa Yuk Man Lam<sup>1</sup>\n- Fangchen Zhu<sup>1</sup>\n- Caroline Kibat<sup>1</sup>\n- Jan Gruber<sup>1</sup> ([ORCID: 0000-0003-3329-3789](https://orcid.org/0000-0003-3329-3789))\n- Ajay S Mathuru<sup>1</sup> ([ORCID: 0000-0003-4591-5274](https://orcid.org/0000-0003-4591-5274))\n- Nicholas S Tolwinski<sup>1</sup> ([ORCID: 0000-0002-8507-2737](https://orcid.org/0000-0002-8507-2737)) \u2020\n\n### Affiliations\n\n1. Science Division, Yale- NUS College Singapore Singapore\n2. Institute of Molecular and Cell Biology (IMCB) Singapore Singapore\n3. Department of Physiology, YLL School of Medicine Singapore Singapore\n4. Department of Biochemistry, National University of Singapore Singapore Singapore\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe brains of Alzheimer\u2019s disease patients show a decrease in brain mass and a preponderance of extracellular Amyloid-\u03b2 plaques. These plaques are formed by aggregation of polypeptides that are derived from the Amyloid Precursor Protein (APP). Amyloid-\u03b2 plaques are thought to play either a direct or an indirect role in disease progression, however the exact role of aggregation and plaque formation in the aetiology of Alzheimer\u2019s disease (AD) is subject to debate as the biological effects of soluble and aggregated Amyloid-\u03b2 peptides are difficult to separate in vivo. To investigate the consequences of formation of Amyloid-\u03b2 oligomers in living tissues, we developed a fluorescently tagged, optogenetic Amyloid-\u03b2 peptide that oligomerizes rapidly in the presence of blue light. We applied this system to the crucial question of how intracellular Amyloid-\u03b2 oligomers underlie the pathologies of A. We use Drosophila, C. elegans and D. rerio to show that, although both expression and induced oligomerization of Amyloid-\u03b2 were detrimental to lifespan and healthspan, we were able to separate the metabolic and physical damage caused by light-induced Amyloid-\u03b2 oligomerization from Amyloid-\u03b2 expression alone. The physical damage caused by Amyloid-\u03b2 oligomers also recapitulated the catastrophic tissue loss that is a hallmark of late AD. We show that the lifespan deficit induced by Amyloid-\u03b2 oligomers was reduced with Li+ treatment. Our results present the first model to separate different aspects of disease progression.\n\n## Introduction\n\nAlzheimer\u2019s disease (AD) is a debilitating, age-associated, neurodegenerative disease which affects more than 46.8 million people worldwide and represents the 6th leading cause of death in the United States of America (Ahn et al., 2001; De-Paula et al., 2012; Hawkes, 2016; Kumar et al., 2015; Zhang et al., 2011). Despite extensive efforts over the last 50 years, no disease-modifying therapy has been found and, most recently, several high-profile Phase III clinical trials have failed (Anderson et al., 2017; Lim and Mathuru, 2018; Park et al., 2018). The AD clinical trial landscape has largely been dominated by the amyloid cascade hypothesis, with more than 50% of the drugs targeting amyloid beta (A\u03b2) in Phase III trials alone (Cummings et al., 2018). The amyloid cascade hypothesis, in its original form, posits the deposition of A\u03b2, in particular the extracellular A\u03b2 plaque, as the main driver of AD (Hardy and Higgins, 1992). However, the causative role of A\u03b2 plaques has recently been challenged, because of the failure of numerous interventions targeting A\u03b2 plaques in Phase III trials and the observation of A\u03b2 plaques in brains of non-AD symptomatic individuals (Cummings, 2018). Model organisms ranging from nematodes to mice have further shown that AD pathology can be modeled in the absence of obvious A\u03b2 plaques (Duff et al., 1996; Fong et al., 2016; Teo et al., 2019). These observations point to a different mechanism for A\u03b2 neurotoxicity perhaps through A\u03b2\u2019s intracellular accumulation (LaFerla et al., 2007).\n\nAmyloid plaques are macroscopic extracellular protein aggregates, but intracellular A\u03b2 must function in smaller units of peptides, oligomers or aggregates. Of these, soluble A\u03b2 oligomers appear to be the main toxic species in AD (Ferreira and Klein, 2011). For example, A\u03b2 oligomers have been shown to induce neurotoxic effects including memory loss in transgenic animal models reviewed in Mroczko et al. (2018). These studies, however, mostly rely on in vitro injection of synthetic A\u03b2 oligomers or oligomers extracted from AD brains (Mroczko et al., 2018). There is currently a lack of tools that can directly control A\u03b2 oligomerization in vivo, which would allow direct examination of the effects of A\u03b2 oligomerization.\n\nHere, we describe an optogenetic method to study Amyloid-\u03b2 (A\u03b2) protein oligomerization in vivo in different model organisms and apply it to delineating mechanisms of disease progression. Optogenetics hinges on light responsive proteins that can be fused to genes of interest, allowing for the spatial and temporal regulation of proteins in a highly precise manner. Temporal-spatial control is achieved simply by the exposure of the target system to lights of a specific wavelength, without the need to introduce other external agents (Fenno et al., 2011; M\u00f6glich and Moffat, 2010). One such optogenetic protein, a modified version of the Arabidopsis thaliana cryptochrome 2 (CRY2) protein, oligomerizes into photobodies quickly and reversibly in the presence of blue light at 488 nm (M\u00e1s et al., 2000). In cultured cells, expression of the photolyase homology region of CRY2 fused to mCherry led to puncta within 10 s of exposure to blue light and these puncta dispersed within minutes (Bugaj et al., 2013). This basic unit of CRY2-mCherry attached to a variety of proteins have, for instance, been used to study cortical actin dynamics in cell contractility during tissue morphogenesis, the dynamics of Wnt and EGF signaling, plasma membrane composition and transcriptional regulation (Bugaj et al., 2018; Bugaj et al., 2015; Guglielmi et al., 2015; Huang et al., 2017; Idevall-Hagren et al., 2012; Johnson et al., 2017; Kaur et al., 2017; Kennedy et al., 2010).\n\n## Results\n\nTo address the role of aggregation of intracellular A\u03b2 in the pathophysiological effects of AD, we developed a light-inducible system for use in model organisms. Specifically, we generated an in vivo, light-dependent, oligomerization switch for the formation and dissolution of A\u03b2 oligomers in Drosophila melanogaster, Caenorhabditis elegans and Danio rerio (Figure 1a). This optogenetically-driven model allowed the visualization of microscopic A\u03b2 oligomerization and addressed the question of their relationship to A\u03b2 pathogenesis with spatiotemporal precision.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig1-v2.jpg)\n\n**Figure 1.:** (a) A schematic of the strategy and a relative size comparison of the three components of UAS-A\u03b2-CRY2-mCh. (b) Expression of AD-Gal4/UAS-A\u03b2-CRY2-mCh in a Drosophila embryo. (c) Mean intensity of aggregates in the same AD-Gal4/UAS-A\u03b2-CRY2-mChDrosophilaembryo. (d and e) Expression of Elav-Gal4/UAS-A\u03b2-CRY2-mCh in a Drosophila larva and embryo. (f) Expression of hsp-16\u20132 p-A\u03b2-CRY2-mCh in heat-shocked C. elegans with myo-2-gfp marker, that marks its pharyngeal pump and serves as an indicator for positive microinjection. (g and h) Mean intensity of aggregates in the hsp-16\u20132 p-A\u03b2-CRY2-mCh in C.elegans under 20x and 63x magnification of the confocal microscope; 63x image was processed using the Zeiss Airyscan.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a\u2013d) Still images from lightsheet timelapse microscopy of Elav-Gal4/UAS-A\u03b2-CRY2-mCh in neurons detected by mCh fluorescence (red) in transgenic Drosophila embryos at different developmental stages. (e) A\u03b2 localization to neuronal cell body volume in a Drosophila embryo expressing the mentioned construct.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Confocal microscopy images of mutant C. elegans 24 hr post heat-shock at 20x magnification in A\u03b2 -HS L (no heat shock, exposed to light), A\u03b2 HS L (with heat shock, exposed to light) and A\u03b2 HS D (with heat shock, kept in the dark) conditions. A\u03b2 -HS L worms are used as a control for quantifying baseline A\u03b2 expression. Distinct puncta (yellow) can be seen in animals in A\u03b2 HS L condition. No red fluorescence was observed in control animals without the transgene (not shown). (b) Quantification of intensity of red fluorescence measured in the animals in A\u03b2 HS L (n\u00a0=\u00a013), A\u03b2 HS D (n\u00a0=\u00a09) and A\u03b2 -HS L (n\u00a0=\u00a05) conditions 24 hr post heat-shock. Difference in expression between A\u03b2 HS L conditions and A\u03b2 -HS L is statistically significant (p=0.034). (C) Quantification of total area of bright puncta in the animals in A\u03b2 HS L (n\u00a0=\u00a013), and A\u03b2 HS D (n\u00a0=\u00a09) conditions 24 hr post heat-shock. Difference in area of fluorescence between A\u03b2 HS L conditions and A\u03b2 HS D is statistically significant (p=0.031).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Still images from a 24 hr recording of Elav-Gal4/UAS-A\u03b2- CRY2-mCh aggregates in a Drosophila embryo without blue light illumination resulted in normal development. Time stages t\u00a0=\u00a01\u20136 showed embryonic development stages 12\u201313 (~440\u2013620 min after fertilization), where germ band retraction starts and ends respectively. Germ band was 5.125 mm at t\u00a0=\u00a01, and retracted to 2.875 mm by t\u00a0=\u00a06. (b) Still images from a 24 hr recording of Elav-Gal4/UAS-A\u03b2-CRY2-mCh aggregates in a Drosophila embryo with blue light illumination every 2.5 min resulted in the arrest of embryogenesis during late germ band retraction stages. Time stages t\u00a0=\u00a01\u20136 showed embryonic development from late stage 10 to early stage 12 (~300\u2013460 min after fertilization), where germ band retraction begins (stage 12). Germ band was 5.125 mm at t\u00a0=\u00a01, and retracted only to 4.25 mm by t\u00a0=\u00a06. (c) Still images from a 24 hr recording of uniform expression AD-Gal4/UAS-A\u03b2-CRY2-mCh aggregates in a Drosophila embryo without blue light illumination resulted in normal development. Time stages t\u00a0=\u00a01\u20136 showed embryonic development stages 14\u201316 (~620\u2013900 min after fertilization), where dorsal closure of midgut and epidermis and shortening of ventral nerve cord occurs. In this case, the ventral nerve cord shortening was not clearly visible. (d) Still images from a 24 hr recording of AD-Gal4/UAS-A\u03b2-CRY2-mCh aggregates in a Drosophila embryo with blue light illumination at every 2.5 min resulted in the arrest of embryogenesis at dorsal closure stages. Time stages t\u00a0=\u00a01\u20136 corresponded to embryonic development stage 14 (approximately 620\u2013680 min after fertilization), where dorsal closure begins.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Embryos expressing A\u03b2-CRY2-mCh ubiquitously showed significantly lesser A\u03b2 aggregates in the (a) dark as compared to (b) embryo exposed to light. (a, b) were imaged at 20x. (c, d) were magnified images of the box in (a, b) imaged at 63x.\n\n### Generation of transgenic models with light-inducible intracellular A\u03b2 oligomerization in model organisms\n\nWe generated transgenic animals expressing the 42-amino-acid human A\u03b2 peptide (A\u03b21\u201342) fused to Cryptochrome 2 and the fluorescent protein mCherry (A\u03b2-CRY2-mCh, Figure 1a, please note the relative sizes). Drosophila lines were under the control of the GAL4/UAS system (Brand and Perrimon, 1993) and expressed either ubiquitously via AD-Gal4 driver (Figure 1b\u2013c) or specifically in neurons using Elav-Gal4 driver (Figure 1d\u2013e, Figure 1\u2014figure supplement 1). C. elegans lines were made with the heat shock promoter (Figure 1f\u2013h, Figure 1\u2014figure supplement 2). In order to observe oligomerization and clustering of intracellular A\u03b2, we took a live imaging approach in Drosophila embryos using a lightsheet microscope with a 488 nm laser activating CRY2 and the 561 nm laser imaging mCh over time. We observed clusters of mCh fluorescence forming in embryos exposed to 488 nm light, but fewer in embryos that were not exposed to blue light (Figure 1\u2014figure supplement 3, Videos 1\u20132). The intensity of the clusters was quantified using Imaris quantification software to show the intensity of oligomer formation (Figure 1c, note color scale for cluster intensity).\n\n![Video 1.](https://cdn.elifesciences.org/articles/52589/elife-52589-video1.mp4.jpg)\n\n**Video 1.:** Blue laser power kept low to allow imaging of glial cells, but not high enough to activate aggregation.\n\n![Video 2.](https://cdn.elifesciences.org/articles/52589/elife-52589-video2.mp4.jpg)\n\n**Video 2.:** Blue laser power at higher setting to allow imaging of glial cells and activate aggregation.\n\nWe proceeded to test the effectiveness of light induced clustering of A\u03b2-CRY2-mCh in C. elegans. As this construct is driven by a heat shock promoter, worms were heat shocked at 35\u00b0C for 90 min followed by resting at 20\u00b0C before being immobilized and imaged using confocal microscopy (Figure 1f\u2013h). We observed an increase in clusters in worms exposed to blue light over their siblings not exposed to blue light. The results were quantified as fluorescence intensity and represented in (Figure 1h) showing the formation of A\u03b2 clusters.\n\nInduction of chaperones from heat-shock can impact the dynamics of A\u03b2. In particular, heat-shock treatment in another transgenic C. elegans strain, CL4176, reduced A\u03b2-mediated paralysis and A\u03b2 oligomerization (Winblad, 1989; Wu et al., 2010). Overexpression of chaperone protein suppressed A\u03b2-toxicity in C. elegans (Fonte et al., 2008). The use of hsp-16 promoter in the transgenic C. elegans, which requires heat-shock induction, may hence be a limitation of our current approach. In view of this limitation, we performed several other controls to understand the impact of heat-shock treatment on A\u03b2 dynamics, and whether or not heat-shock treatment itself contributes to the metabolic and phenotypic detriments observed in the transgenic animals.\n\nTo understand how heat-shock treatment may impact the dynamics of A\u03b2 in our transgenic strains, we compared the dynamics of A\u03b2 between the transgenic A\u03b2 worms with and without heat shock. We found that transgenic animals in both heat-shock (A\u03b2 HS L) and non-heat-shock (A\u03b2 -HS L) condition expressed detectable A\u03b2-CRY2-mCh protein (Figure 1\u2014figure supplement 2), however animals that had been heat-shocked had significantly higher A\u03b2 levels compared to non-heat-shocked animals, suggesting that heat-shock, as intended, drove higher level of A\u03b2 expression and that this was not compensated for by secondary induction of chaperones.\n\nEven though the CRY2 system predominantly oligomerizes, we also observed the formation of intracellular A\u03b2 aggregates, using a direct stain for A\u03b2 aggregates (Figure 1\u2014figure supplement 4). Importantly, we observed that A\u03b2 aggregation was not reversible as had previously been observed for signaling molecules (Huang et al., 2017; Johnson et al., 2017; Kaur et al., 2017), rather CRY2 appeared to initiate clustering leading to A\u03b2 bundles that did not come apart once blue light was turned off. We further confirmed that turning on blue light alone without the transgene expression did not lead to any A\u03b2 expression or cluster formation (Figure 1\u2014figure supplement 2b, Ab HS L vs Ab \u2013HS L), suggesting that the oligomerization process was CRY2-specific and not an artifact of light. We performed FRAP experiments to establish the stability of the A\u03b2 clusters (Figure 2). When compared to an unrelated CRY2 construct, we observed a very slow recovery for A\u03b2-CRY2-mCh compared to Arm-CRY2-mCh (Figure 2; Kaur et al., 2017). Together, our results showed that the A\u03b2-CRY2-mCh transgene was functional in both organisms, with a high specificity to blue light inducing irreversible oligomerization of A\u03b2.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig2-v2.jpg)\n\n**Figure 2.:** Images and percentage fluorescence recovery after bleaching of (a) A\u03b2-CRY2-mCh expressing intestinal stem cells from esg-Gal4, UAS-GFP; UAS-A\u03b2-Cry2-mCh flies and (b) Arm-CRY2-mCh expressing stem cells from esg-Gal4, UAS-GFP; UAS-Arm-Cry2-mCh flies. A\u03b2-Cry2-mCh showed a much slower recovery of fluorescence post-bleaching as compared to an unrelated CRY2 construct (Arm-CRY2-mCh). Scale bar represents 5 \u00b5m.\n\n### Light-inducible A\u03b2 oligomerization causes lifespan and behavioral deficits in transgenic models\n\nTo test the functionality of A\u03b2-CRY2-mCh, we next looked for phenotypes associated with light-induced intracellular A\u03b2 oligomerization. We performed lifespan studies to assess the effects of A\u03b2-CRY2-mCh by expressing A\u03b2-CRY2-mCh either ubiquitously (AD-Gal4) or specifically in the nervous system (Elav-Gal4). Newly eclosed adult flies were separated into two groups in each case, one of which was exposed to ambient white light and the other kept in the dark. In both cases, flies exposed to light died much more quickly with half the mean and maximum lifespans (Figure 3a\u2013b) compared to those reared in the dark. We extended this analysis to C. elegans, though starting at Day 6 due to the heat-shock manipulation step. Under light conditions, C. elegans showed markedly decreased lifespans as compared to the transgenic C. elegans kept in dark conditions (Figure 3c). Most significantly, we observed that the lifespan decrease was reversible, as taking animals exposed to light for 24 days and moving them into darkness showed a recovery of their lifespan, or a rescue (Figure 3a\u2013b). To ensure that these reduced lifespans were physiological, we examined the fitness of the animals. Fitness was severely decreased in light-exposed flies and worms as quantified by fertility and locomotive assays (Figure 3\u2014figure supplement 1). Interestingly, light-induced A\u03b2 oligomerization caused further impairment in sensorimotor function of transgenic A\u03b2 nematodes (Figure 3\u2014figure supplement 1c). These results suggesed that light-induced oligomerization of A\u03b2 not only affected lifespan and fitness, but also impaired complex sensorimotor function and behavior.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig3-v2.jpg)\n\n**Figure 3.:** (a) Kaplan-Meier survival curves of transgenic A\u03b2 Drosophila adults driven by AD-Gal4 kept in the dark, exposed to light, exposed to light for 24 days then moved to the dark and exposed to light but fed with a lithium-supplemented diet. (b) Kaplan-Meier survival curves of transgenic A\u03b2 Drosophila adults driven by Elav-Gal4 kept in the dark, exposed to light, exposed to light for 24 days then moved to the dark and exposed to light but fed with a lithium-supplemented diet. (c) Kaplan-Meier survival curves of control non-heat shocked nematodes, transgenic A\u03b2 heat-shocked worms with the hsp-16\u20132 p promoter kept in the dark and transgenic A\u03b2 heat-shocked worms with the hsp-16\u20132 p promoter kept in the light; those in light show a significantly shortened lifespan (overall significance by log-rank test: ****p<0.0001) (d) Table showing number of samples used with the mean and maximum survival times for all conditions.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Exposing A\u03b2-CRY2-mCh C. elegans to blue light significantly reduced progeny numbers. Two-way ANOVA, p=0.1. Data were sampled over three days (Days 6\u20138), n\u00a0=\u00a08 light and dark worms. (b) MD-Gal4 driven A\u03b2-CRY2-mCh transgenic Drosophila produced significantly lower number of progeny when exposed to blue light. Two-way ANOVA ****p<0.0001. Data were sampled on Days 5, 6, 7, 13, 14, and 20, n\u00a0=\u00a025 light and dark pairs of Drosophila. (c) A\u03b2-CRY2-mCh C. elegans have significantly reduced locomotive ability when reared in light. Distance travelled was reduced by about three-folds compared to the dark control and non-heat shocked control. Data were sampled on Days 9 and 10, two-way ANOVA **p<0.01 n\u00a0=\u00a06 light, dark and non-heat shocked controls. (d) Climbing assay showed that transgenic A\u03b2 Drosophila displayed sensorimotor impairments when exposed to light. Two-way ANOVA ****p<0.0001. n\u00a0=\u00a018 light and dark conditions.\n\n### Light-inducible A\u03b2 oligomerization leads to physical and metabolic damage in transgenic models\n\nThe lethality mediated by light-induced A\u03b2 oligomerization led us to examine the morphological effects of A\u03b2-CRY2-mCh clustering during embryonic stages in Drosophila. Embryos expressing A\u03b2 in only the nervous system developed at a normal pace and did not show any morphogenetic defects and even hatched in the absence of blue light (Video 1). In contrast, sibling embryos exposed to blue laser light arrested in late neurogenesis stages where the central nervous system stopped developing and the embryos died (Video 2 and Figure 4, Figure 1\u2014figure supplement 3 and Figure 4\u2014figure supplement 1). These embryos showed a variety of abnormalities in the positioning of neurons and glial cells (Compare to complete normal development, Video 3) suggesting that light-induced A\u03b2 oligomerization caused physical, structural damage that affects neuronal development.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig4-v2.jpg)\n\n**Figure 4.:** (a\u2013a\u2019\u2019) Elav-Gal4/UAS-A\u03b2-CRY2-mCh embryos kept in the dark and imaged for neurons (Elav) and glial cells (Repo). (b\u2013b\u2019\u2019) Elav-Gal4/UAS-A\u03b2-CRY2-mCh embryos exposed to light and imaged for neurons (Elav) and glial cells (Repo). (c\u2013d\u2019\u2019) Close ups. (E) Aggregation induced inflammatory response as measured by qPCR for inflammatory response genes. (f) The number of mitochondria in transgenic A\u03b2 Drosophila embryo was reduced by 40% in light.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Reduction of neurons and glia cells (arrows) detected by immunostaining of Elav and Repo in transgenic A\u03b2 Drosophila embryos imaged at 40x.\n\n![Video 3.](https://cdn.elifesciences.org/articles/52589/elife-52589-video3.mp4.jpg)\n\n**Video 3.:** Blue laser power at higher setting to allow imaging of glial cells and control for laser damage.\n\nThe severity of the physical damage phenotype in embryos exposed to blue light (Figure 4a\u2013d\u2019\u2019) led us to investigate the differences in mechanism between the two conditions by exploring inflammatory response, mitochondrial health and oxidative damage. Expression of A\u03b2 alone, without light-induced A\u03b2 oligomerization, led to a small increase in inflammatory markers (Figure 4e; Westfall et al., 2018). In embryos exposed to light, two of these markers increased to a much greater level (Figure 4e). We observed a significant reduction in the number of mitochondria in light-treated A\u03b2 animals (Figure 4f). Markers of oxidative damage in light and dark exposed C. elegans showed differential expression of antioxidant defense genes, specifically Catalase, Trx-2 and Sod-3, suggestive of the occurrence of oxidative stress induced by A\u03b2 oligomerization (Figure 5). These results suggested that light-induced A\u03b2 oligomerization phenocopied many of the hallmarks of AD.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig5-v2.jpg)\n\n**Figure 5.:** Differential gene expression of catalase (Cat), peroxiredoxin-3 (Prdx3), thiroredoxin-1 (Trx-1), thioredoxin-2 (Trx-2), superoxide dismutase-1 (SOD-1), superoxide dismutase-2 (SOD-2) and superoxide dismutase-3 (SOD-3) in transgenic A\u03b2 C. elegans in light condition compared to control dark condition. Light-induced A\u03b2 aggregation showed up-regulation in expression of Cat (**p<0.01) and down-regulation in expression of Trx-2 (*p<0.01) and Sod-3 (***p<0.001).\n\nWe proceeded to look at light-induced A\u03b2 oligomerization in metabolic impairments in transgenic C. elegans. Heat-shocked mutants exposed to light (A\u03b2 HS L) had lower ATP levels compared to the non-transgenic control (Ctrl -HS D) (Figure 6). However, heat-shocked mutants in the dark condition (A\u03b2 HS D) did not show any significant differences in ATP level compared to the non-transgenic control. This result suggested that presence of A\u03b2 alone is insufficient to induce ATP deficits, and that light-induced oligomerization of A\u03b2 is required for the defect to manifest. A\u03b2 expression alone was also insufficient to affect the nematodes\u2019 maximum respiratory capacity, as heat-shocked mutants in the dark condition (A\u03b2 HS D) did not display differences in maximum and spare respiration capacity compared to control animals (Ctrl -HS D). However, light-induced A\u03b2 oligomerization significantly reduced maximum respiration capacity in C. elegans. Heat-shocked mutants in the light condition (A\u03b2 HS L) displayed significantly lower maximum and spare respiration capacity compared to controls (Ctrl -HS D) and to heat-shocked mutants in the dark condition (A\u03b2 HS D) (Figure 6b\u2013d). Together, these results highlighted the metabolic differences between the two conditions and showed that metabolic deficits were mediated by light-induced A\u03b2 oligomerization.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig6-v2.jpg)\n\n**Figure 6.:** (a) ATP levels of control and transgenic A\u03b2 nematodes (n\u00a0=\u00a03 repeats for each condition, with 100 nematodes per repeat; ANOVA post-test p<0.05, *). (b) Oxygen consumption profile (OCR) of control and transgenic A\u03b2 nematodes (n\u00a0=\u00a06 repeats for each condition, with 10 nematodes per repeat). (c) Maximal respiration derived from OCR (n\u00a0=\u00a06 repeats for each condition, with 10 nematodes per repeat; ANOVA post-test p<0.05, *). (d) Spare respiration derived from OCR (n=6 repeats for each condition, with 10 nematodes per repeat; ANOVA post-test p<0.05, *).\n\nTo further examine whether the metabolic deficits in transgenic C. elegans were mediated by heat-shock treatment, we included a heat-shocked non-transgenic control in the metabolic and phenotypic assays. We found that heat-shock treatment does not affect ATP levels in the control animals, suggesting that the ATP detriment was a result of A\u03b2 expression, but not heat-shock treatment (Figure 6a). On the other hand, heat-shock treatment appears to reduce the respiratory capacity of the control animals, suggesting that the decline in respiratory capacity was mediated by both heat-shock and A\u03b2 expression (Figure 6c). Comparing the heat-shocked transgenic animals in light and dark conditions, we found that light treatment, which induces oligomerization, worsened the phenotypic and metabolic detriments in the transgenic animals. This suggested that regardless of the effects of heat-shock and chaperone induction, oligomerization still negatively impacted the phenotypes.\n\n### Light-inducible A\u03b2 lifespan decrease is rescued by Li+\n\nThe drug Li+ is used for treatment of neurological conditions (Licht, 2012). A high drinking water Li+ concentration correlated with lower human mortality (Zarse et al., 2011), and Li+ increased the lifespan of C. elegans and Drosophila (Castillo-Quan et al., 2016; McColl et al., 2008; Tam et al., 2014; Teo et al., 2020a; Teo et al., 2020b; Zarse et al., 2011). The molecular mechanisms by which Li+ functions include inhibition of inositol monophosphotase (IMPA) and glycogen synthase kinase-3 (GSK-3) (Kerr et al., 2018), reduction of oxidative damage (Kasuya et al., 2009; Kerr et al., 2017; Khan et al., 2015) and longevity via a GSK-3/NRF-2 dependent, hormetic mechanism (Castillo-Quan et al., 2016). Among the mechanisms for neuroprotection, the Wnt signaling pathway plays a role in modulating AD pathology and its progression (De Ferrari et al., 2003; Jin et al., 2017; Parr et al., 2015; Toledo and Inestrosa, 2009). Activation of Wnt signaling through lithium (Li+) treatment attenuated A\u03b2 aggregation and increased the lifespan of A\u03b2 models (Toledo and Inestrosa, 2009). By inhibiting the enzyme glycogen synthase kinase-3 (GSK-3), Li+ compounds drive the downstream production of intracellular \u03b2-catenin activating the Wnt\u2013\u03b2-catenin signaling pathway (Klein and Melton, 1996). Li+ treatment through Wnt activation also rescued behavioral impairment and neurodegeneration induced by A\u03b2 fibrils (De Ferrari et al., 2003). Taken together, these studies point to a putative AD therapeutic intervention through Li+. To test the usefulness of optogenetic A\u03b2 for drug testing, we supplemented the food for Drosophila expressing A\u03b2-CRY2-mCh with Li+. Drosophila exposed to light, but consuming Li+ had significantly increased lifespans, suggesting both a rescue effect induced by Li+ (Figure 3a\u2013b), and that the optogenetic model can be used for inducible expression drug testing. Rapid drug testing can be also be achieved through cell culture. We extended this assay to HEK293 cells transfected with A\u03b2-CRY2-mCh where A\u03b2 clusters formed upon stimulation with blue light (Figure 7a). The number of clusters per cell was greatly reduced by the addition of Li+ or the specific GSK3 inhibitor CHIR99021, but CHIR99021 additionally reduced the signal intensity of the clusters (Figure 7b\u2013c, quantified 7d). These data demonstrated the potential use of the optogenetics system for drug testing.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig7-v2.jpg)\n\n**Figure 7.:** (a) Untreated\u00a0control HEK cells show light-induced clustering of A\u03b2-CRY2-mCh and increased number of vacuoles under blue light illumination. (b) HEK cells treated with GSK3 inhibitor CHIR99021 (positive control) show little clustering of the light-induced A\u03b2-CRY2-mCh. Fewer cellular vacuoles observed. (c) HEK cells treated with lithium chloride show homogenous expression of A\u03b2-CRY2-mCh, whereby blue light illumination did not result in significant clustering of A\u03b2-CRY2-mCh. (d) Quantification of cluster number per cell showed significantly reduced cluster formation in cells treated with CHIR99021 and lithium chloride as compared to control cells. (**p<0.01) (e) Quantification of the mean intensity of the clusters showed significantly reduced intensity of the clusters when the cells were treated with GSK3 inhibitor CHIR99021 and lithium chloride as compared to control cells.\n\nFinally, we also extended these findings to a vertebrate system. We generated a zebrafish permanent line with UAS:A\u03b2-CRY2-mCh in the transgenic TgBAC(gng8:GAL4)c416 background (Hong et al., 2013) that limited expression to a few cells. We observed a diffuse mCh fluorescence in a small subset of neurons in the olfactory epithelium, the interpeduncular nucleus and in a few neurons sparsely distributed in the forebrain at 5 dpf. Upon blue light exposure (488 nM) the detectable intensity of the fluorescence increased rapidly (Figure 8\u2014figure supplement 1). Several neurons among those expressing appeared to bleb and began to die within 40 to 50 min of initial exposure to the blue light (Video 4). Such damage was not observable in matched controls expressing A\u03b2-mCh driven by a CMV promotor lacking the CRY2 protein (Video 5). Our approach leads to the expression of A\u03b2-CRY2-mCh in only a small subset of neurons making analysis of AD hallmarks difficult, so we used transient expression of A\u03b2-CRY2-mCh driven by a ubiquitin promotor in 48 hr old embryos to quantify the effects of light-induced A\u03b2 oligomerization on mitochondria health and metabolic deficits. Similar to the impairments observed in C. elegans, A\u03b2-CRY2-mCh expressing embryos showed lower maximum and spare respiration capacity compared to un-injected control (Figure 8). In addition, light exposure of A\u03b2-CRY2-mCh expressing embryos caused a significant reduction in ATP levels (Figure 8a).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig8-v2.jpg)\n\n**Figure 8.:** (a) ATP levels of control and transgenic A\u03b2 D. rerio embryos (n\u00a0=\u00a08 repeats for each condition; ANOVA post-test p<0.001, ***). Light treatment did not affect ATP levels in control embryos (performed in a separate experiment). (b) Oxygen consumption profile (OCR) of control and transgenic A\u03b2 D. rerio embryos (24 embryos/condition) (c) Maximal respiration derived from OCR. (d) Spare respiration derived from OCR.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52589/elife-52589-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Schematic of lightsheet imaging/illumination lens orientation to D. rerio embryo, and stills from Video 4.\n\n![Video 4.](https://cdn.elifesciences.org/articles/52589/elife-52589-video4.mp4.jpg)\n\n**Video 4.:** Schematic of imaging set up and area of interest. Imaging of cell movement, A\u03b2-CRY2-mCh aggregation and cell death.\n\n![Video 5.](https://cdn.elifesciences.org/articles/52589/elife-52589-video5.mp4.jpg)\n\n**Video 5.:** Schematic of imaging set up and area of interest. No obvious cell movement or cell death despite A\u03b2-mCh expression.\n\n## Discussion\n\nAggregation of A\u03b2 has been studied extensively, but our results represent the first study to demonstrate that induced oligomerization of intracellular A\u03b2 can be used to separate different pathologies (induced by A\u03b2 oligomerization vs expression alone). A second approach to making inducible aggregates using a chemically controlled fluorescent protein has been published, but not yet widely tested (Miyazaki et al., 2016). Other previous approaches lacked an inducible oligomerization tool and could only demonstrate A\u03b2 oligomers\u2019 toxicity through exogenous injection of A\u03b2 oligomers (Mroczko et al., 2018). We use a tool to investigate the pathological effects of intracellular A\u03b2 oligomerization in nematodes and flies, human kidney cells, and in the vertebrate model organism zebrafish (Figure 8\u2014figure supplement 1, Video 4). Despite the reversibility of CRY2 clustering in previous findings, we find that CRY2 initiated clustering of A\u03b2 appeared to be irreversible likely due to the structure of the aggregates (Antzutkin et al., 2012). Consistent with existing literature showing that A\u03b2 oligomers induce oxidative stress and inflammation (Butterfield et al., 2013; Forloni and Balducci, 2018), we show that light-induced oligomerization of A\u03b2, but not A\u03b2 expression alone, is necessary for the metabolic defects, loss of mitochondria and inflammation in C. elegans and Drosophila. Light-induced oligomerization also leads to physical damage of the nervous system in D. rerio, resembling the loss of brain tissue in AD (Figure 8\u2014figure supplement 1). The embryonic assay for physical damage phenocopies brain lesions only to some degree as the extent of the damage is enhanced by the forces applied to the developing neural tissue. The irreversibility of A\u03b2 aggregates once initiated as seen here, also hints at intrinsic properties that may be unique or unusual to this peptide and warrants further investigation. It is also likely to prove a good model for testing anti-aggregation compounds.\n\nWe anticipate that our approach will serve as an attractive tool for carrying out drug screens and mechanistic studies for the treatment of AD. This optogenetic strategy will also undoubtedly complement other techniques due to the high level of spatiotemporal specificity. For example, it could be optimally positioned to gain insights into the unresolved mechanism of A\u03b2 - whether oligomerization and subsequent accumulation or lack of effective clearance underpins AD pathologies. The separation of two phases of AD progression also suggests that single drug treatments will not suffice, and perhaps combinatorial approaches should be tried.\n\n## Materials and methods\n\n### Molecular cloning of optogenetic transgenes\n\nDNA sequences corresponding to the human Amyloid\u03b21\u201342 amino acid sequence were synthesized (IDT) into a Gateway technology (Invitrogen) entry vector. The human A\u03b21\u201342 sequence was used for Drosophila and zebrafish due to close evolutionary conservation and a nematode-codon-optimized version of A\u03b21\u201342 was used for C. elegans (Fong et al., 2016). The CRY2-mCh fragment was cloned into pDONR vector with attB5 and attB2 sites, and MultiSite Gateway Pro 2.0 recombination (Invitrogen) was used to recombine donor plasmids and pDONR-CRY2-mCh into the respective destination vectors for three model organisms: a) pUASg.attB.3XHA for Drosophila to synthesize pUAS-A\u03b2-CRY2-mCh (Bischof et al., 2007) b) pDEST-hsp-16\u20132 p, a kind gift from Hidehito Kuroyanagi (Medical Research Institute, Tokyo Medical and Dental University) to synthesize hsp-16\u20132 p-A\u03b2-CRY2-mCh for C. elegans (Okazaki et al., 2012). c) pDEST-Tol2-PA2 (Invitrogen) and p5\u2019E-Ubiquitin as described in Kibat et al. (2016) were used to make Ubiquitin driven pDEST-Tol2-PA2-Ubi-A\u03b2-CRY2-mCh and pDEST-Tol2-PA2 (Invitrogen) was used to make pDEST-Tol2-PA2-10xUAS-A\u03b2-CRY2-mCh for expression in Danio rerio. The CRY2 sequence were removed from this plasmid and the 10xUAS promoter were replaced with CMV promoter to produce pDEST-Tol2-PA2-CMV- A\u03b2-mCh by Gibson Assembly (NEB) for expression in D. Rerio.\n\nd)pDEST40 (Invitrogen) was used to make CMV driven pDEST40-A\u03b2-CRY2-mCh for expression in HEK293 tissue culture cells.\n\n### Crosses and expression of UAS construct\n\nFor Drosophila, the transgenes were injected into attP2 (Strain#8622) P[CaryP]attP268A4 by BestGene Inc (California)\u00a0(Groth et al., 2004; Markstein et al., 2008). Expression was driven by Elav-GAL4 the neuronal driver and two ubiquitous drivers armadillo-GAL4 and daughterless-GAL4 (Brand and Perrimon, 1993). All additional stocks were obtained from the BloomingtonDrosophilaStock Center (NIH P40OD018537) were used in this study.\n\nFly crosses performed were:\n\nFor C. elegans, 50 ng/\u00b5l the construct hsp-16\u20132 p-A\u03b2-CRY2-mCh was co-injected with 25 ng/\u00b5l of pharyngeal-specific fluorescence marker myo-2-gfp into the distal gonads of wild type young adults. Transgenes were maintained as extrachromosomal arrays, hence careful selection of transgenic animals with pharyngeal GFP expression is required prior to all experiments. A myo-2-gfp strain C. elegans was also generated and used alongside as controls.\n\nFor Danio rerio, 50 ng/\u00b5l of the construct pDEST-Tol2-PA2-10xUAS-A\u03b2-CRY2-mCh and 60 ng/ \u00b5l Tol2RNA transposase were injected into TgBAC(gng8:GAL4) c416 zebrafish embryos during the one-cell stage. pDEST-Tol2-PA2-Ubi-A\u03b2-CRY2-mCh and pDEST-Tol2-PA2-CMV-A\u03b2-mCh were injected into one-cell stage mitfa -/-\u00a0zebrafish embryos lacking melanin pigment separately.\n\n### Animal husbandry\n\nDrosophila were maintained at standard humidity and temperature (25\u00b0C) with food containing 6 g Bacto agar, 114 g glucose, 56 g cornmeal, 25 g Brewer\u2019s yeast and 20 ml of 10% Nipagin in 1L final volume. Transgenic Drosophila and controls were distributed into either dark or light condition on Day 1. Transgenic flies fed with a lithium-supplemented diet were maintained in the same food as above with the addition of lithium chloride to a final concentration of 5 mM. C. elegans were maintained as previously described at 20\u00b0C (Stiernagle, 2006). Age-synchronized nematodes were generated by hypochlorite bleaching. 250 \u00b5M of 5-fluoro-2\u2019-deoxyuridine (FUDR) was added to prevent progeny production in all experiments except for fertility assays. For Fertility assay, normal Nematode Growth Media (NGM) agar plates were used. To induce expression of A\u03b2-CRY2-mCh, Day 4 young adult worms were heat shocked at 35\u00b0C for 90 min, and subsequently incubated at 20\u2070C for a day (Day 5) for recovery. The heat-shocked transgenic Day 6 C. elegans were then separated into dark or light condition and was maintained at 20\u2070C throughout the experimental period. Non-heat shock controls were used for lifespan, fertility and locomotion studies. Adult zebrafish were reared under standard zebrafish facility conditions with a 14 hr light/10 hr dark cycle. Zebrafish embryos injected with different expression vectors were screened for fluorescence and distributed into either dark or light condition 24 hr post fertilization. Embryos were dechorionated at 48 hr post fertilization and exposed to blue light (488 nM) for 1\u20132 hr at room temperature to induce oligomerization and subsequently used for mitochondria metabolic flux assay or ATP assay.\n\n### FRAP assay\n\nAdult fly midguts were dissected in 200 \u00b5l of 1x PBS in a PYREX Spot Plates concave glass dish (FisherScientific). Subsequently, the guts were carefully transferred onto a small droplet of 1x PBS on a 35 mm glass bottom dish. Using fine forceps, the gut was repositioned to resemble its natural orientation. PBS was then removed from the area surrounding the gut, leaving a small amount of excess PBS to hold the gut in place and prevent desiccation. The 3 mm glass bottom dish was then mounted onto the Zeiss LSM800 (Carl Zeiss AG, Germany) for imaging. The super-resolution imaging function on the Zeiss LSM800 was used for the bleaching and fluorescence recovery. A small square within a cell was defined as the bleaching area and this same square was used for all bleaching experiments. Bleaching was performed at 4% laser power using the 488 nm laser for 1 s and the recovery was followed every 30 s for 20 minutes. The fluorescence intensity of the bleaching square (FS), the entire cell (FC) and the background (FB) at each time point was computed by the ZEN 3.1 (Blue edition) software (Carl Zeiss, Germany). For determination of percentage fluorescence recovery, the background fluorescence was subtracted from the fluorescence of the bleaching square (FS-FB) and the fluorescence of the entire cell (FC-FB). The (FS-FB)/ (FC-FB) was computed at each time point and the (FS-FB)/(FC-FB) before bleaching was set to 100%. This was done for all FRAP assays for both constructs and 3 separate experiments were conducted per construct.\n\n### Lifespan assays\n\nDrosophila and C. elegans were counted daily for the number of dead subjects and the number of censored subjects (excluded from the study). Drosophila that failed to respond to taps were scored as dead and those stuck to the food were censored. C. elegans that failed to respond to plate-tapping were scored as dead, those that burrowed to the side of the plate were censored.\n\n### Locomotion assay\n\nDrosophila locomotion was assessed using an established geotaxis assay previous described in\u00a0Rival et al. (2009). In brief, 25 Drosophila were enclosed in a plastic column (25 cm tall, with a 1.5 cm internal diameter) and were tapped to the bottom. The number of Drosophila at the top (Ntop) of the column, and that at the bottom (Nbot) were counted after 20 s. Three trials with the same sample were performed within 30 s interval. Performance index was defined as (15+Ntop-Nbot)/30.\n\nHeat-shocked C. elegans were assessed at Day 9, by placing worms onto individual NGM plates, pre-spotted with Escherichia coli OP50. C. elegans were placed on the side of the bacteria spot on the NGM plate using a platinum worm picker and were left undisturbed to move freely for 15 min. Distance travelled was determined by imaging and measuring of worm tracks on bacteria using a stereomicroscope.\n\n### Fertility assay\n\n25 pairs of male and female Drosophila expressing MD-A\u03b2-Cry2-mCh were kept in a single tube under dark or light conditions. The number of eggs laid were scored after 5 hr 30 min for Days 5, 6, 7, 13, 14 and 20. Day 5 heat-shocked C. elegans were transferred onto individual NGM plates spotted with E. coli. Each worm was transferred to a fresh plate daily from Day 6 to Day 8, allowing 24 hr\u2019 egg laying period. The number of new young worms were counted on each plate as the progeny of a single individual.\n\n### Adenosine triphosphate (ATP) assay\n\nATP assay using firefly lantern extract (Sigma-Aldrich) was performed as described by Tsujimoto et al. (1970). Each C. elegans sample containing 100 D2 adult worms was freeze-thawed in liquid nitrogen and sonicated in 10% Trichloroacetic acid (TCA) buffer while each zebrafish sample containing five 48hpf embryos was lysed in 10% TCA buffer. The extracted ATP from the different conditions and ATP standards were loaded onto a 96-well plate and injected with firefly lantern extract. Luminescence was measured using a Cytation 3 Imaging Reader (Biotek).\n\n### Mitochondrial metabolic flux assay\n\nMitochondrial metabolic flux assay for C. elegans was performed as described by Fong et al. (2017) using XF96 Extracellular Flux Analyzer. 60 D2 adult worms from each condition 24 hr post light-treatment were transferred to a 96-well Seahorse plate containing M9 buffer. Final concentrations of the drugs used in the OCR experiment were 10 \u00b5M FCCP and 50 mM sodium azide. For zebrafish embryos, mitochondrial metabolic flux assay was performed as described by Stackley et al. (2011) with some modifications. Oxygen consumption rate (OCR) measurements were performed using the XF96 Extracellular Flux Analyzer. Each well contained one embryo (48hpf) in 175 \u00b5L of E3 medium (fish system water). Final concentrations of the drugs used in the OCR experiment were 9.4 \u00b5M oligomycin, 2.5 \u00b5M FCCP and 20 mM sodium azide.\n\n### Light-sheet microscopy\n\nDrosophila embryos were dechorionated using bleach, rinsed twice with water and dried, and loaded into a capillary filled with 1% low-melting agarose Type VII-A in water (Sigma) (Colosimo and Tolwinski, 2006). C.\u00a0elegans and D. rerio were embedded directly in the agarose. Samples were imaged with a Lightsheet Z.1 microscope. Cry2 was activated by a dual-side illumination with 10% power 488 nm laser for 29.95 ms for every 2.5 min for 500 cycles. Controls were only exposed to 561 nm. Images were acquired with a water immersion objective at 10x/0.2 Illumination Optics and W Plan-Apochromat 20x.1.0 UV-VIS detection objective (Carl Zeiss, Germany). Image data were processed using the maximum intensity projection function of ZEN 2014 SP software (Carl Zeiss, Germany), and were analyzed with ImageJ (NIH) and IMARIS 9.0 (Bitplane AG, UK).\n\n### Transfection and live cell confocal microscopy\n\nHuman Embryonic Kidney (HEK293T) cells were obtained from ATCC through the local distributor Bio-REV Pte Ltd after Short Tandem Repeat profiling, confirmed mycoplasma-free and maintained in Dulbecco\u2019s Modified Eagle\u2019s Medium with 10% Fetal Bovine Serum and 1% Penicillin and Streptomycin (Invitrogen). Cells were plated at 80% confluence on 35 mm TC treated glass bottom dish 24 hr prior to transfection with 2.5 mg of pDEST40-A\u03b2-CRY2-mCh using the Effectene Transfection Reagent (Qiagen). A transfection master mix containing the plasmid and transfection reagent was prepared for all treatment plates during each biological replicate to ensure the transfection efficiency was the same across all plates. Two hours after transfection, the control plate was topped up with 250 \u00b5l of complete media without antibiotics. For cells treated with drugs, LiCl or CHIR99021 were also added at this point to achieve a final concentration of 2 mM LiCl or 3 mM CHIR99021 respectively. Cells transfected with only the pDEST40-A\u03b2-CRY2-mCh plasmid were used as negative control. Cells were imaged 24 hr after transfection using the Zeiss LSM800 confocal microscope with 63x oil immersion lens.\n\n### Immunofluorescence and confocal microscopy\n\nDrosophila embryos 9 hr after deposition were incubated at 25\u00b0C in either light or dark conditions for 13 hr before being dechorionated using bleach. Embryos were then fixed with Heat-Methanol treatment (M\u00fcller and Wieschaus, 1996) or with heptane/4% formaldehyde in phosphate buffer (0.1M NaPO4 pH 7.4) (Tolwinski and Wieschaus, 2001). Staining, detection and image processing as described in Colosimo and Tolwinski (2006).\n\nPrimary antibodies used were the glial cell marker anti-Repo (mouse mAb, 8D12) and the neuronal cell marker anti-Elav (rat mAb, 7EA810) from Developmental Studies Hybridoma Bank (DSHB developed under the auspices of the NICHD and maintained by The University of Iowa, Department of Biological Sciences, Iowa City, IA 52242). Secondary antibodies used were Alexa Flour 488 anti-rat and Alexa Flour 647 anti-mouse (Invitrogen).\n\nFor detection of A\u03b2 aggregates, thioflavin T (ThT) staining were performed as previously described Iijima et al. (2008). Formaldehyde-fixed embryos were incubated in 50% EtOH containing 0.1% ThT (Sigma) overnight. Embryos were destained in 50% EtOH for 10 min, followed by three washes in PBS. Embryos were then mounted on microscope slides using Aquapolymount (Polysciences, Inc).\n\nImages were acquired on the Zeiss LSM 800 (Carl Zeiss, Germany) using the following settings: 1% laser power for 488 nm; 5% laser power for 561 nm; 2% laser power for 647 nm. Images were processed using the ZEN 2014 SP1 software (Carl Zeiss, Germany) and Imaris (Bitplane AG).\n\n### RNA extraction, cDNA synthesis and qPCR\n\nDrosophila embryos 9 hr after deposition were incubated at 25\u00b0C in either light or dark conditions for 13 hr were used. Embryos were dechorionated and washed with 100% ethanol prior to RNA extraction using the ISOLATE II RNA Mini Kit\u2019s protocol (Bioline, UK). The extracted RNA was quantified using Nanodrop (Thermo Fisher Scientific). cDNA synthesis was done according to the SensiFAST cDNA Synthesis Kit\u2018s protocol (Bioline). Primers pairs used: AttA, IMD, DptA, Def, Duox, Rel, catalase, Prdx3, Trx1, Trx2, SOD-1, SOD-2, SOD-3 and reference gene Rpl32. Quantitative PCR was performed using SYBR Green. Expression data were normalized to the dark controls. For mitochondrial copy number, the above collection method was used except the following: the embryos were stored in tritonX-100 and the primers used were Mitochondria Cytochrome b (MtCyb) and reference gene RNAse P.\n\n### Image data and statistical analysis\n\nA\u03b2 aggregates were quantified in Drosophila using ImageJ (NIH) and in C. elegans and HEK cells with IMARIS. For HEK cells, the number of clusters larger than 0.4 \u00b5m in diameter were determined for at least 3 cells for the control and drug treated cells to calculate the average number of clusters per cell. The mean intensity per cluster across all these cells was also determined to calculate the average intensity of the clusters for the control and drug treated cells. For statistical analysis of the expression of genes, student\u2019s t-test was used for except for cases where the data showed unequal standard deviation (F-test, p<0.05), in which the Mann-Whitney nonparametric test was performed. Statistical analysis of lifespan studies and behavioral assays were performed using OASIS 2 (Han et al., 2016). The number of samples was determined empirically. All graphs were plotted using Graphpad PRISM 6 (Graphpad Software).\n\n### Key resources table\n\nNew model organisms generated for this paper are available to the community by contacting the authors. Stable lines and stocks will be made available through stock centers.\n\nDrosophila line UAS-A\u03b2-Cry2-mCh inserted on Chromosome 3 site attP2:\n",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "52ac0b4f-afbe-42ce-8ae1-2276df34ba57",
+      "submission_id": "fbdad227-73ac-43de-b887-7a890956bf5b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matt Kaeberlein, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52589.sa1](https://doi.org/10.7554/eLife.52589.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript describes a new optogenetic system for studying the impact of amyloid-\u03b2 oligomers in vivo. The authors describe light-induced oligomerization in each system and an initial characterization of phenotypes. Of note is the fact that the authors generated four separate models that fall into three distinct categories: in vitro (cell culture), invertebrate (C. elegans, D. melanogaster), and vertebrate (D. rerio) to corroborate their findings and to demonstrate their utility. That the authors took the time and effort to generate multiple models, which could be of use to a variety of researchers working in the area of neurodegeneration is commendable.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Application of Optogenetic Amyloid-\u03b2 Distinguishes Between Metabolic and Physical Damage in Neurodegeneration\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Utpal Banerjee as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Petrascheck (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes a new optogenetic system for studying the impact of amyloid-\u03b2 oligomers in vivo. They provide evidence for light-induced oligomerization in each system and an initial characterization of phenotypes. Of note, is the fact that the authors generated four separate models that fall into three distinct categories: in vitro (cell culture), invertebrate (C. elegans, D. melanogaster), and vertebrate (D. rerio) to corroborate their findings and to demonstrate their utility. That the authors took the time and effort to generate multiple models, which could be of use to a variety of researchers working in the area of neurodegeneration is commendable. However, some significant limitations and missing controls were identified in the current manuscript that reduce the utility of the system and the strength of the conclusion. These should be addressed prior to publication.\n\nEssential revisions:\n\n1) Key controls appear to be missing from several of the phenotypic characterization experiments. Non-transgenic animals under dark and light conditions should be shown for each experiment, so that any effects of the light treatment can be understood. It would also be useful to have control strains where amyloid-\u03b2-mCH is expressed without the CRY2 to demonstrate that the phenotypes are caused by the oligomerization rather than an interaction between the amyloid-\u03b2 and/or mCH with light treatment.\n\n2) We don't understand why the authors seem to assume that oligomerization does not also happen in the dark conditions. It has been shown that transgenically expressed amyloid-\u03b2 in both worms and flies will aggregate in a time-dependent manner in the absence of the optogenetic system. Might these studies reflect a relative difference in the abundance of oligomers and aggregates rather than an all or none comparison. The text should be rewritten to reflect this or an explanation otherwise should be provided.\n\n3) There is no evidence that the aggregates seen here are related to the aggregates found in neurodegenerative disease. Most of the aggregating protein consists of Cry and mCherry with only little A\u03b2. Some biochemistry or Fluorescence recovery after photobleaching (FRAP) experiments to characterize the light induced aggregates should be provided. Are these aggregates protease resistant?, Are the fluorescent aggregates really immobile or are they lose aggregates as determined by FRAP? The ThT stain in S4 suggest that they may even be amyloids. Especially given that the aggregates appear to be toxic, it would be really important to know what sort of aggregate is produced through light induced polymerization.\n\n4) The authors hypothesize that Li+ rescues the lifespan deficit induced by AB oligomers via Wnt signaling, however, no evidence is provided other than a reference to previously published studies. It would be good to know that Wnt signaling is indeed the mechanism in this case, and in addition to measure the physical and metabolic damage that the authors report in the first part of their study for at least one additional model rather than mixing and matching between C. elegans and D. melanogaster (ideally, one of the invertebrate models and the vertebrate model). Because this is the first in vivo report of its kind using optogenetics, it would be preferable to show that what is expected (i.e. Li+ extending lifespan and curbing detrimental effects of AB oligomers) actually occurs via the expected/previously described mechanism.\n\n5) Why were the physiology and/or health status parameters such as sensorimotor function, ATP deficit, number of mitochondria and oxidative damage not measured in the only vertebrate model? In addition to neuronal death, these endpoints would make a more convincing case for this model.\n\n6) Information about replication for many of the phenotypic assays appears to be missing and should be provided. Figure 1 needs better quantification, with regards to number of aggregates as well as intensity to conduct statistical tests to determine real differences. Figure 7 needs quantification, with regards to number of aggregates as well as intensity of them in HEK293 cells. With quantitation this could be a very strong piece of data.\n\n7) The use of the hsp-16 promoter in C. elegans is unfortunate as the need for heat shock creates a confound. Induction of chaperones from the heat shock itself is likely to impact the dynamics of amyloid-\u03b2, as has been previously shown in other transgenic lines. Optimally, the authors would create another inducible or constitutive system which could be compared to the heat shock system in order to understand the impact of chaperone induction. At a minimum a detailed description of this limitation and a justification for why the authors do not feel this is a significant limitation should be provided.\n",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1a3dfacc-2322-4541-833b-74bab3b3bbd4",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C1",
+      "claim": "The brains of Alzheimer's disease patients show a decrease in brain mass.",
+      "claim_type": "EXPLICIT",
+      "source": "The brains of Alzheimer's disease patients show a decrease in brain mass and a preponderance of extracellular Amyloid-\u03b2 plaques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract presenting established knowledge about AD pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b42964ac-fbcd-4959-942e-7265d3c258d7",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C2",
+      "claim": "The brains of Alzheimer's disease patients show a preponderance of extracellular Amyloid-\u03b2 plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "The brains of Alzheimer's disease patients show a decrease in brain mass and a preponderance of extracellular Amyloid-\u03b2 plaques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract presenting established knowledge about AD pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "57eafc6c-ff1f-4f6a-9e37-4999fd8ee595",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C3",
+      "claim": "Amyloid-\u03b2 plaques are formed by aggregation of polypeptides that are derived from the Amyloid Precursor Protein (APP).",
+      "claim_type": "EXPLICIT",
+      "source": "These plaques are formed by aggregation of polypeptides that are derived from the Amyloid Precursor Protein (APP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract presenting established knowledge about the origin of A\u03b2 plaques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "124715c6-1624-4e9a-8392-85099dc1d1c5",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C4",
+      "claim": "Amyloid-\u03b2 plaques are thought to play either a direct or an indirect role in disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Amyloid-\u03b2 plaques are thought to play either a direct or an indirect role in disease progression, however the exact role of aggregation and plaque formation in the aetiology of Alzheimer's disease (AD) is subject to debate as the biological effects of soluble and aggregated Amyloid-\u03b2 peptides are difficult to separate in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects current scientific debate and uncertainty in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b58717e9-3617-40d4-9848-ad34eaf8e432",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C5",
+      "claim": "The exact role of aggregation and plaque formation in the aetiology of Alzheimer's disease is subject to debate.",
+      "claim_type": "EXPLICIT",
+      "source": "Amyloid-\u03b2 plaques are thought to play either a direct or an indirect role in disease progression, however the exact role of aggregation and plaque formation in the aetiology of Alzheimer's disease (AD) is subject to debate as the biological effects of soluble and aggregated Amyloid-\u03b2 peptides are difficult to separate in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects current scientific debate and uncertainty in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b980689c-875c-4a20-8e0c-563c20042721",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C6",
+      "claim": "The biological effects of soluble and aggregated Amyloid-\u03b2 peptides are difficult to separate in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Amyloid-\u03b2 plaques are thought to play either a direct or an indirect role in disease progression, however the exact role of aggregation and plaque formation in the aetiology of Alzheimer's disease (AD) is subject to debate as the biological effects of soluble and aggregated Amyloid-\u03b2 peptides are difficult to separate in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects a technical challenge in the field that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "71c761a6-b615-4de8-a5b3-220fb46efbd1",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C7",
+      "claim": "A fluorescently tagged, optogenetic Amyloid-\u03b2 peptide was developed that oligomerizes rapidly in the presence of blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the consequences of formation of Amyloid-\u03b2 oligomers in living tissues, we developed a fluorescently tagged, optogenetic Amyloid-\u03b2 peptide that oligomerizes rapidly in the presence of blue light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study describing the development of a novel tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "973187db-2c11-4971-86a3-d45bd56b6353",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C8",
+      "claim": "Both expression and induced oligomerization of Amyloid-\u03b2 were detrimental to lifespan and healthspan in Drosophila, C. elegans and D. rerio.",
+      "claim_type": "EXPLICIT",
+      "source": "We use Drosophila, C. elegans and D. rerio to show that, although both expression and induced oligomerization of Amyloid-\u03b2 were detrimental to lifespan and healthspan, we were able to separate the metabolic and physical damage caused by light-induced Amyloid-\u03b2 oligomerization from Amyloid-\u03b2 expression alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data from multiple model organisms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "461edf91-5085-4753-8290-a944002864f1",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C9",
+      "claim": "The metabolic and physical damage caused by light-induced Amyloid-\u03b2 oligomerization can be separated from Amyloid-\u03b2 expression alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We use Drosophila, C. elegans and D. rerio to show that, although both expression and induced oligomerization of Amyloid-\u03b2 were detrimental to lifespan and healthspan, we were able to separate the metabolic and physical damage caused by light-induced Amyloid-\u03b2 oligomerization from Amyloid-\u03b2 expression alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data showing differential effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b781ddbd-716c-48ae-86ec-7df806ece638",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C10",
+      "claim": "The physical damage caused by Amyloid-\u03b2 oligomers recapitulated the catastrophic tissue loss that is a hallmark of late AD.",
+      "claim_type": "EXPLICIT",
+      "source": "The physical damage caused by Amyloid-\u03b2 oligomers also recapitulated the catastrophic tissue loss that is a hallmark of late AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "2da16a8c-703e-4a4f-9e73-cfd6f928e979",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C11",
+      "claim": "The lifespan deficit induced by Amyloid-\u03b2 oligomers was reduced with Li+ treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the lifespan deficit induced by Amyloid-\u03b2 oligomers was reduced with Li+ treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data from drug treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "441a5d6b-1d16-42d4-84fd-3a1473290a1d",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C12",
+      "claim": "Alzheimer's disease affects more than 46.8 million people worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Alzheimer's disease (AD) is a debilitating, age-associated, neurodegenerative disease which affects more than 46.8 million people worldwide and represents the 6th leading cause of death in the United States of America (Ahn et al., 2001; De-Paula et al., 2012; Hawkes, 2016; Kumar et al., 2015; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "91b55bc2-ba4e-46e1-954b-b4701276d055",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C13",
+      "claim": "Alzheimer's disease represents the 6th leading cause of death in the United States of America.",
+      "claim_type": "EXPLICIT",
+      "source": "Alzheimer's disease (AD) is a debilitating, age-associated, neurodegenerative disease which affects more than 46.8 million people worldwide and represents the 6th leading cause of death in the United States of America (Ahn et al., 2001; De-Paula et al., 2012; Hawkes, 2016; Kumar et al., 2015; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "2b137d6b-6fb9-414f-8215-d0f3c1d52e4f",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C14",
+      "claim": "No disease-modifying therapy has been found for Alzheimer's disease despite extensive efforts over the last 50 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive efforts over the last 50 years, no disease-modifying therapy has been found and, most recently, several high-profile Phase III clinical trials have failed (Anderson et al., 2017; Lim and Mathuru, 2018; Park et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f0dbea61-9a03-4acd-9ddf-97e4da743bb4",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C15",
+      "claim": "Several high-profile Phase III clinical trials for Alzheimer's disease have failed.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive efforts over the last 50 years, no disease-modifying therapy has been found and, most recently, several high-profile Phase III clinical trials have failed (Anderson et al., 2017; Lim and Mathuru, 2018; Park et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "51ca94a7-1f11-4f09-990f-c7d4febf395c",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C16",
+      "claim": "More than 50% of the drugs in Phase III trials for Alzheimer's disease target amyloid beta.",
+      "claim_type": "EXPLICIT",
+      "source": "The AD clinical trial landscape has largely been dominated by the amyloid cascade hypothesis, with more than 50% of the drugs targeting amyloid beta (A\u03b2) in Phase III trials alone (Cummings et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "44e335f5-cfa2-41e0-a16c-34cdf4f1c98b",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C17",
+      "claim": "The amyloid cascade hypothesis posits the deposition of A\u03b2, in particular the extracellular A\u03b2 plaque, as the main driver of AD.",
+      "claim_type": "EXPLICIT",
+      "source": "The amyloid cascade hypothesis, in its original form, posits the deposition of A\u03b2, in particular the extracellular A\u03b2 plaque, as the main driver of AD (Hardy and Higgins, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to the original hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "fef11184-9e92-48ee-973c-545c1462f2ec",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C18",
+      "claim": "The causative role of A\u03b2 plaques has recently been challenged.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the causative role of A\u03b2 plaques has recently been challenged, because of the failure of numerous interventions targeting A\u03b2 plaques in Phase III trials and the observation of A\u03b2 plaques in brains of non-AD symptomatic individuals (Cummings, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "c230369a-a01a-4963-8924-6441d07db3af",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C19",
+      "claim": "A\u03b2 plaques have been observed in brains of non-AD symptomatic individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the causative role of A\u03b2 plaques has recently been challenged, because of the failure of numerous interventions targeting A\u03b2 plaques in Phase III trials and the observation of A\u03b2 plaques in brains of non-AD symptomatic individuals (Cummings, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "79bb0acc-bc85-473b-b861-fb99b9643b35",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C20",
+      "claim": "AD pathology can be modeled in the absence of obvious A\u03b2 plaques in model organisms ranging from nematodes to mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Model organisms ranging from nematodes to mice have further shown that AD pathology can be modeled in the absence of obvious A\u03b2 plaques (Duff et al., 1996; Fong et al., 2016; Teo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "5a42b4c9-04aa-425c-ba2b-43848883cc1b",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C21",
+      "claim": "Intracellular accumulation of A\u03b2 may be a mechanism for A\u03b2 neurotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations point to a different mechanism for A\u03b2 neurotoxicity perhaps through A\u03b2's intracellular accumulation (LaFerla et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature and represents an inference from observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "d0da5314-0fdb-4ee1-a6f0-5037f433d96f",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C22",
+      "claim": "Soluble A\u03b2 oligomers appear to be the main toxic species in AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, soluble A\u03b2 oligomers appear to be the main toxic species in AD (Ferreira and Klein, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "62229b14-1e04-43f7-924f-195299720ead",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C23",
+      "claim": "A\u03b2 oligomers have been shown to induce neurotoxic effects including memory loss in transgenic animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, A\u03b2 oligomers have been shown to induce neurotoxic effects including memory loss in transgenic animal models reviewed in Mroczko et al. (2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "4e8c67ea-f5a1-4db9-984a-158c219072c1",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C24",
+      "claim": "Studies on A\u03b2 oligomers mostly rely on in vitro injection of synthetic A\u03b2 oligomers or oligomers extracted from AD brains.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies, however, mostly rely on in vitro injection of synthetic A\u03b2 oligomers or oligomers extracted from AD brains (Mroczko et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "e7e710ba-8517-4244-84f1-b06e4e7c28ae",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C25",
+      "claim": "There is currently a lack of tools that can directly control A\u03b2 oligomerization in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "There is currently a lack of tools that can directly control A\u03b2 oligomerization in vivo, which would allow direct examination of the effects of A\u03b2 oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of the field and motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "1085f802-e00c-41e7-8eb1-939a5d352faa",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C26",
+      "claim": "A modified version of the Arabidopsis thaliana cryptochrome 2 (CRY2) protein oligomerizes into photobodies quickly and reversibly in the presence of blue light at 488 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "One such optogenetic protein, a modified version of the Arabidopsis thaliana cryptochrome 2 (CRY2) protein, oligomerizes into photobodies quickly and reversibly in the presence of blue light at 488 nm (M\u00e1s et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "1b2af651-bcf6-4bcf-888d-4f7eb75aa6ab",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C27",
+      "claim": "Expression of the photolyase homology region of CRY2 fused to mCherry led to puncta within 10 s of exposure to blue light in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured cells, expression of the photolyase homology region of CRY2 fused to mCherry led to puncta within 10 s of exposure to blue light and these puncta dispersed within minutes (Bugaj et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "301569fe-96d5-4da6-b8e9-fd7c67143a59",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C28",
+      "claim": "CRY2-mCherry puncta dispersed within minutes after blue light exposure in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured cells, expression of the photolyase homology region of CRY2 fused to mCherry led to puncta within 10 s of exposure to blue light and these puncta dispersed within minutes (Bugaj et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f0c40bfd-24b4-445b-93eb-50ea49ae4086",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C29",
+      "claim": "CRY2-mCherry has been used to study cortical actin dynamics in cell contractility during tissue morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This basic unit of CRY2-mCherry attached to a variety of proteins have, for instance, been used to study cortical actin dynamics in cell contractility during tissue morphogenesis, the dynamics of Wnt and EGF signaling, plasma membrane composition and transcriptional regulation (Bugaj et al., 2018; Bugaj et al., 2015; Guglielmi et al., 2015; Huang et al., 2017; Idevall-Hagren et al., 2012; Johnson et al., 2017; Kaur et al., 2017; Kennedy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "09aa0a3f-f6e3-4207-92fc-3bc5cf2b4f8a",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C30",
+      "claim": "CRY2-mCherry has been used to study the dynamics of Wnt and EGF signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This basic unit of CRY2-mCherry attached to a variety of proteins have, for instance, been used to study cortical actin dynamics in cell contractility during tissue morphogenesis, the dynamics of Wnt and EGF signaling, plasma membrane composition and transcriptional regulation (Bugaj et al., 2018; Bugaj et al., 2015; Guglielmi et al., 2015; Huang et al., 2017; Idevall-Hagren et al., 2012; Johnson et al., 2017; Kaur et al., 2017; Kennedy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "833b4e37-787a-4f95-be86-cc9ed4512964",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C31",
+      "claim": "A light-inducible system for the formation and dissolution of A\u03b2 oligomers was generated in Drosophila melanogaster, Caenorhabditis elegans and Danio rerio.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we generated an in vivo, light-dependent, oligomerization switch for the formation and dissolution of A\u03b2 oligomers in Drosophila melanogaster, Caenorhabditis elegans and Danio rerio (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "bb27ba7e-6ec8-49ef-81c7-b92f58a4ac6a",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C32",
+      "claim": "Transgenic animals expressing A\u03b21\u201342 fused to Cryptochrome 2 and mCherry (A\u03b2-CRY2-mCh) were generated.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated transgenic animals expressing the 42-amino-acid human A\u03b2 peptide (A\u03b21\u201342) fused to Cryptochrome 2 and the fluorescent protein mCherry (A\u03b2-CRY2-mCh, Figure 1a, please note the relative sizes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "fef16c77-121e-4d56-99f8-41ce8c2be7e8",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C33",
+      "claim": "Drosophila lines expressing A\u03b2-CRY2-mCh were under the control of the GAL4/UAS system.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila lines were under the control of the GAL4/UAS system (Brand and Perrimon, 1993) and expressed either ubiquitously via AD-Gal4 driver (Figure 1b\u2013c) or specifically in neurons using Elav-Gal4 driver (Figure 1d\u2013e, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figures 1b-e.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "69bce2b4-2e5f-46bd-a95f-0808a6e25c90",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C34",
+      "claim": "C. elegans lines expressing A\u03b2-CRY2-mCh were made with the heat shock promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans lines were made with the heat shock promoter (Figure 1f\u2013h, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figures 1f-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "4943ed2a-6acb-435f-bb57-8588c4983b09",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C35",
+      "claim": "Clusters of mCh fluorescence formed in Drosophila embryos exposed to 488 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed clusters of mCh fluorescence forming in embryos exposed to 488 nm light, but fewer in embryos that were not exposed to blue light (Figure 1\u2014figure supplement 3, Videos 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 1\u2014figure supplement 3 and Videos 1\u20132.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b37dcc0a-4a3d-49b6-8c99-264697b3b229",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C36",
+      "claim": "Fewer mCh fluorescence clusters formed in Drosophila embryos that were not exposed to blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed clusters of mCh fluorescence forming in embryos exposed to 488 nm light, but fewer in embryos that were not exposed to blue light (Figure 1\u2014figure supplement 3, Videos 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 1\u2014figure supplement 3 and Videos 1\u20132.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b5f585c6-b1fc-4228-913f-3c541094d38d",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C37",
+      "claim": "An increase in clusters was observed in C. elegans worms exposed to blue light over their siblings not exposed to blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase in clusters in worms exposed to blue light over their siblings not exposed to blue light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "5317a654-7b24-4750-b15e-14055785365e",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C38",
+      "claim": "Heat-shock treatment in transgenic C. elegans strain CL4176 reduced A\u03b2-mediated paralysis and A\u03b2 oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, heat-shock treatment in another transgenic C. elegans strain, CL4176, reduced A\u03b2-mediated paralysis and A\u03b2 oligomerization (Winblad, 1989; Wu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "ac7c123d-bde1-432f-a452-029cc5325581",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C39",
+      "claim": "Overexpression of chaperone protein suppressed A\u03b2-toxicity in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of chaperone protein suppressed A\u03b2-toxicity in C. elegans (Fonte et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "93d8bb2f-6554-457c-8e03-4ce3de57eff9",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C40",
+      "claim": "Transgenic animals that had been heat-shocked had significantly higher A\u03b2 levels compared to non-heat-shocked animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that transgenic animals in both heat-shock (A\u03b2 HS L) and non-heat-shock (A\u03b2 -HS L) condition expressed detectable A\u03b2-CRY2-mCh protein (Figure 1\u2014figure supplement 2), however animals that had been heat-shocked had significantly higher A\u03b2 levels compared to non-heat-shocked animals, suggesting that heat-shock, as intended, drove higher level of A\u03b2 expression and that this was not compensated for by secondary induction of chaperones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "3b3977c3-c62d-4b6d-9050-eae6b7144e66",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C41",
+      "claim": "Heat-shock drove higher level of A\u03b2 expression and this was not compensated for by secondary induction of chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that transgenic animals in both heat-shock (A\u03b2 HS L) and non-heat-shock (A\u03b2 -HS L) condition expressed detectable A\u03b2-CRY2-mCh protein (Figure 1\u2014figure supplement 2), however animals that had been heat-shocked had significantly higher A\u03b2 levels compared to non-heat-shocked animals, suggesting that heat-shock, as intended, drove higher level of A\u03b2 expression and that this was not compensated for by secondary induction of chaperones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "7f10167a-a8e2-4244-99c8-4e1aadf03c83",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C42",
+      "claim": "Intracellular A\u03b2 aggregates were observed using a direct stain for A\u03b2 aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the CRY2 system predominantly oligomerizes, we also observed the formation of intracellular A\u03b2 aggregates, using a direct stain for A\u03b2 aggregates (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "57f6edad-eb0c-45c5-bae9-646eef57363c",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C43",
+      "claim": "A\u03b2 aggregation was not reversible as had previously been observed for signaling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed that A\u03b2 aggregation was not reversible as had previously been observed for signaling molecules (Huang et al., 2017; Johnson et al., 2017; Kaur et al., 2017), rather CRY2 appeared to initiate clustering leading to A\u03b2 bundles that did not come apart once blue light was turned off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and comparison to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "ed5dfe4f-332e-40da-8f0b-edcdb7a50211",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C44",
+      "claim": "CRY2 appeared to initiate clustering leading to A\u03b2 bundles that did not come apart once blue light was turned off.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed that A\u03b2 aggregation was not reversible as had previously been observed for signaling molecules (Huang et al., 2017; Johnson et al., 2017; Kaur et al., 2017), rather CRY2 appeared to initiate clustering leading to A\u03b2 bundles that did not come apart once blue light was turned off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f50d78c9-8e91-4460-9d2a-dfa0ea97ceec",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C45",
+      "claim": "Turning on blue light alone without the transgene expression did not lead to any A\u03b2 expression or cluster formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We further confirmed that turning on blue light alone without the transgene expression did not lead to any A\u03b2 expression or cluster formation (Figure 1\u2014figure supplement 2b, Ab HS L vs Ab \u2013HS L), suggesting that the oligomerization process was CRY2-specific and not an artifact of light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 1\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "c2465520-c159-4a9c-b690-c712d19916b1",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C46",
+      "claim": "The oligomerization process was CRY2-specific and not an artifact of light.",
+      "claim_type": "EXPLICIT",
+      "source": "We further confirmed that turning on blue light alone without the transgene expression did not lead to any A\u03b2 expression or cluster formation (Figure 1\u2014figure supplement 2b, Ab HS L vs Ab \u2013HS L), suggesting that the oligomerization process was CRY2-specific and not an artifact of light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data shown in Figure 1\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b191cd19-676f-492b-a903-8ebc99d9059e",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C47",
+      "claim": "A\u03b2-CRY2-mCh showed a much slower recovery of fluorescence post-bleaching compared to Arm-CRY2-mCh.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to an unrelated CRY2 construct, we observed a very slow recovery for A\u03b2-CRY2-mCh compared to Arm-CRY2-mCh (Figure 2; Kaur et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "1ac6069b-ea50-4917-978d-8c32d43b9dcb",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C48",
+      "claim": "The A\u03b2-CRY2-mCh transgene was functional in both Drosophila and C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results showed that the A\u03b2-CRY2-mCh transgene was functional in both organisms, with a high specificity to blue light inducing irreversible oligomerization of A\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b98da7f7-321b-47df-8485-0fcb21fe5242",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C49",
+      "claim": "Blue light induces irreversible oligomerization of A\u03b2 with high specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results showed that the A\u03b2-CRY2-mCh transgene was functional in both organisms, with a high specificity to blue light inducing irreversible oligomerization of A\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f28d3e9b-d708-45c5-9c38-83dc8fe01e5b",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C50",
+      "claim": "Flies expressing A\u03b2-CRY2-mCh exposed to light died much more quickly with half the mean and maximum lifespans compared to those reared in the dark.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, flies exposed to light died much more quickly with half the mean and maximum lifespans (Figure 3a\u2013b) compared to those reared in the dark.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figures 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "4ef67aad-0ef0-4a67-a65f-8af8cb1c4ac6",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C51",
+      "claim": "C. elegans expressing A\u03b2-CRY2-mCh showed markedly decreased lifespans under light conditions compared to those kept in dark conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under light conditions, C. elegans showed markedly decreased lifespans as compared to the transgenic C. elegans kept in dark conditions (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "14e52653-e3c5-40bd-b12b-a1a088787ea7",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C52",
+      "claim": "The lifespan decrease in animals exposed to light was reversible, as taking animals exposed to light for 24 days and moving them into darkness showed a recovery of their lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Most significantly, we observed that the lifespan decrease was reversible, as taking animals exposed to light for 24 days and moving them into darkness showed a recovery of their lifespan, or a rescue (Figure 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figures 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "1d90e332-42f3-4273-8503-a91c7b684071",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C53",
+      "claim": "Fitness was severely decreased in light-exposed flies and worms as quantified by fertility and locomotive assays.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that these reduced lifespans were physiological, we examined the fitness of the animals. Fitness was severely decreased in light-exposed flies and worms as quantified by fertility and locomotive assays (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "6dccda3b-ec06-499b-80b6-4630ac548e0c",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C54",
+      "claim": "Light-induced A\u03b2 oligomerization caused further impairment in sensorimotor function of transgenic A\u03b2 nematodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, light-induced A\u03b2 oligomerization caused further impairment in sensorimotor function of transgenic A\u03b2 nematodes (Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f4cccc81-1a92-4a8e-8a45-1a5ddc5611a3",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C55",
+      "claim": "Light-induced oligomerization of A\u03b2 affected lifespan, fitness, and impaired complex sensorimotor function and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggesed that light-induced oligomerization of A\u03b2 not only affected lifespan and fitness, but also impaired complex sensorimotor function and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "7715033a-9705-48b1-99ce-fc3877358b61",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C56",
+      "claim": "Embryos expressing A\u03b2 in only the nervous system developed at a normal pace and did not show any morphogenetic defects in the absence of blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos expressing A\u03b2 in only the nervous system developed at a normal pace and did not show any morphogenetic defects and even hatched in the absence of blue light (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "e5abce28-3093-4564-a347-a20d850d9924",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C57",
+      "claim": "Sibling embryos exposed to blue laser light arrested in late neurogenesis stages where the central nervous system stopped developing and the embryos died.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, sibling embryos exposed to blue laser light arrested in late neurogenesis stages where the central nervous system stopped developing and the embryos died (Video 2 and Figure 4, Figure 1\u2014figure supplement 3 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Video 2 and Figures 4, 1\u2014figure supplement 3, and 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "57a89fb9-8872-4246-b1dc-3ff9da379052",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C58",
+      "claim": "Embryos exposed to blue light showed a variety of abnormalities in the positioning of neurons and glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These embryos showed a variety of abnormalities in the positioning of neurons and glial cells (Compare to complete normal development, Video 3) suggesting that light-induced A\u03b2 oligomerization caused physical, structural damage that affects neuronal development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "0e782101-fdf7-4a93-a384-dcf21e2e012a",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C59",
+      "claim": "Light-induced A\u03b2 oligomerization caused physical, structural damage that affects neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "These embryos showed a variety of abnormalities in the positioning of neurons and glial cells (Compare to complete normal development, Video 3) suggesting that light-induced A\u03b2 oligomerization caused physical, structural damage that affects neuronal development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data shown in Video 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "c359985d-29e6-4ae7-a158-c70206d6bf32",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C60",
+      "claim": "Expression of A\u03b2 alone, without light-induced A\u03b2 oligomerization, led to a small increase in inflammatory markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of A\u03b2 alone, without light-induced A\u03b2 oligomerization, led to a small increase in inflammatory markers (Figure 4e; Westfall et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 4e.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "4ed16ccd-3a29-4ac8-b730-d567744ca5fd",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C61",
+      "claim": "In embryos exposed to light, two inflammatory markers increased to a much greater level.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryos exposed to light, two of these markers increased to a much greater level (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "467ceb18-d8e6-4583-8e44-c365a4af5183",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C62",
+      "claim": "A significant reduction in the number of mitochondria was observed in light-treated A\u03b2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant reduction in the number of mitochondria in light-treated A\u03b2 animals (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "20799b22-6022-4a74-8558-149f5b8286e6",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C63",
+      "claim": "Markers of oxidative damage in light and dark exposed C. elegans showed differential expression of antioxidant defense genes, specifically Catalase, Trx-2 and Sod-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Markers of oxidative damage in light and dark exposed C. elegans showed differential expression of antioxidant defense genes, specifically Catalase, Trx-2 and Sod-3, suggestive of the occurrence of oxidative stress induced by A\u03b2 oligomerization (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "820246cb-3455-4f25-9b13-bebb4ef70acc",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C64",
+      "claim": "Oxidative stress is induced by A\u03b2 oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Markers of oxidative damage in light and dark exposed C. elegans showed differential expression of antioxidant defense genes, specifically Catalase, Trx-2 and Sod-3, suggestive of the occurrence of oxidative stress induced by A\u03b2 oligomerization (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f4735d75-5ef3-49d1-a329-f4d9f2a4b74c",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C65",
+      "claim": "Light-induced A\u03b2 oligomerization phenocopied many of the hallmarks of AD.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that light-induced A\u03b2 oligomerization phenocopied many of the hallmarks of AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "3fd42085-296c-496e-b883-1325e2a07e5a",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C66",
+      "claim": "Heat-shocked mutants exposed to light (A\u03b2 HS L) had lower ATP levels compared to the non-transgenic control (Ctrl -HS D).",
+      "claim_type": "EXPLICIT",
+      "source": "Heat-shocked mutants exposed to light (A\u03b2 HS L) had lower ATP levels compared to the non-transgenic control (Ctrl -HS D) (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "a4a40caa-d5cb-40cb-a9ad-ccc9e1458ebe",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C67",
+      "claim": "Heat-shocked mutants in the dark condition (A\u03b2 HS D) did not show any significant differences in ATP level compared to the non-transgenic control.",
+      "claim_type": "EXPLICIT",
+      "source": "However, heat-shocked mutants in the dark condition (A\u03b2 HS D) did not show any significant differences in ATP level compared to the non-transgenic control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "badcb791-b1ba-467a-b328-067cd0a2c70a",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C68",
+      "claim": "Presence of A\u03b2 alone is insufficient to induce ATP deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggested that presence of A\u03b2 alone is insufficient to induce ATP deficits, and that light-induced oligomerization of A\u03b2 is required for the defect to manifest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "ba8dc239-dfe4-4c6a-865f-0131f01ea339",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C69",
+      "claim": "Light-induced oligomerization of A\u03b2 is required for ATP deficits to manifest.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggested that presence of A\u03b2 alone is insufficient to induce ATP deficits, and that light-induced oligomerization of A\u03b2 is required for the defect to manifest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "efe353dc-72d9-4b97-9eb0-c8c32c9f0dc0",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C70",
+      "claim": "A\u03b2 expression alone was insufficient to affect the nematodes' maximum respiratory capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "A\u03b2 expression alone was also insufficient to affect the nematodes' maximum respiratory capacity, as heat-shocked mutants in the dark condition (A\u03b2 HS D) did not display differences in maximum and spare respiration capacity compared to control animals (Ctrl -HS D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "330d5fa7-e8ee-452c-8488-2b0f919da704",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C71",
+      "claim": "Light-induced A\u03b2 oligomerization significantly reduced maximum respiration capacity in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "However, light-induced A\u03b2 oligomerization significantly reduced maximum respiration capacity in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "821355b1-4f2b-48c1-90eb-b755944feb5e",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C72",
+      "claim": "Heat-shocked mutants in the light condition (A\u03b2 HS L) displayed significantly lower maximum and spare respiration capacity compared to controls (Ctrl -HS D) and to heat-shocked mutants in the dark condition (A\u03b2 HS D).",
+      "claim_type": "EXPLICIT",
+      "source": "Heat-shocked mutants in the light condition (A\u03b2 HS L) displayed significantly lower maximum and spare respiration capacity compared to controls (Ctrl -HS D) and to heat-shocked mutants in the dark condition (A\u03b2 HS D) (Figure 6b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figures 6b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "775808c2-3282-4580-a0de-ec669dcc7ede",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C73",
+      "claim": "Metabolic deficits were mediated by light-induced A\u03b2 oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results highlighted the metabolic differences between the two conditions and showed that metabolic deficits were mediated by light-induced A\u03b2 oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "8bf04fda-f30c-498c-b524-ba6c6d38d63f",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C74",
+      "claim": "Heat-shock treatment does not affect ATP levels in control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that heat-shock treatment does not affect ATP levels in the control animals, suggesting that the ATP detriment was a result of A\u03b2 expression, but not heat-shock treatment (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "65998d05-14c2-4af7-8ca3-a07fe3807331",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C75",
+      "claim": "The ATP detriment was a result of A\u03b2 expression, but not heat-shock treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that heat-shock treatment does not affect ATP levels in the control animals, suggesting that the ATP detriment was a result of A\u03b2 expression, but not heat-shock treatment (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "513db095-9340-44d8-8f74-6cfda58428c9",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C76",
+      "claim": "Heat-shock treatment appears to reduce the respiratory capacity of control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, heat-shock treatment appears to reduce the respiratory capacity of the control animals, suggesting that the decline in respiratory capacity was mediated by both heat-shock and A\u03b2 expression (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b577763a-7bda-40b4-8410-75e0fd4c8cc6",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C77",
+      "claim": "The decline in respiratory capacity was mediated by both heat-shock and A\u03b2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, heat-shock treatment appears to reduce the respiratory capacity of the control animals, suggesting that the decline in respiratory capacity was mediated by both heat-shock and A\u03b2 expression (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "346b797d-d84e-46d4-9f81-c4f45f8f8efa",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C78",
+      "claim": "Light treatment, which induces oligomerization, worsened the phenotypic and metabolic detriments in the transgenic animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the heat-shocked transgenic animals in light and dark conditions, we found that light treatment, which induces oligomerization, worsened the phenotypic and metabolic detriments in the transgenic animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "a926ffb8-ce0b-4ad1-8b0c-67f89eba465a",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C79",
+      "claim": "Regardless of the effects of heat-shock and chaperone induction, oligomerization still negatively impacted the phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that regardless of the effects of heat-shock and chaperone induction, oligomerization still negatively impacted the phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "734b821c-2155-4c63-8372-6eb552389727",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C80",
+      "claim": "Li+ is used for treatment of neurological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The drug Li+ is used for treatment of neurological conditions (Licht, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "7fc54f71-1edd-4318-b6fc-91cd8df7d02c",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C81",
+      "claim": "A high drinking water Li+ concentration correlated with lower human mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "A high drinking water Li+ concentration correlated with lower human mortality (Zarse et al., 2011), and Li+ increased the lifespan of C. elegans and Drosophila (Castillo-Quan et al., 2016; McColl et al., 2008; Tam et al., 2014; Teo et al., 2020a; Teo et al., 2020b; Zarse et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "80384971-2b6c-4ed4-9adb-0d1211f3324e",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C82",
+      "claim": "Li+ increased the lifespan of C. elegans and Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "A high drinking water Li+ concentration correlated with lower human mortality (Zarse et al., 2011), and Li+ increased the lifespan of C. elegans and Drosophila (Castillo-Quan et al., 2016; McColl et al., 2008; Tam et al., 2014; Teo et al., 2020a; Teo et al., 2020b; Zarse et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "4efd77f1-6803-4196-b798-647791be301f",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C83",
+      "claim": "The molecular mechanisms by which Li+ functions include inhibition of inositol monophosphotase (IMPA) and glycogen synthase kinase-3 (GSK-3).",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms by which Li+ functions include inhibition of inositol monophosphotase (IMPA) and glycogen synthase kinase-3 (GSK-3) (Kerr et al., 2018), reduction of oxidative damage (Kasuya et al., 2009; Kerr et al., 2017; Khan et al., 2015) and longevity via a GSK-3/NRF-2 dependent, hormetic mechanism (Castillo-Quan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "90859b5d-77cd-4841-9989-7642e279fd43",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C84",
+      "claim": "Li+ reduces oxidative damage.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms by which Li+ functions include inhibition of inositol monophosphotase (IMPA) and glycogen synthase kinase-3 (GSK-3) (Kerr et al., 2018), reduction of oxidative damage (Kasuya et al., 2009; Kerr et al., 2017; Khan et al., 2015) and longevity via a GSK-3/NRF-2 dependent, hormetic mechanism (Castillo-Quan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "790d3158-4b9d-48f4-b10f-190b6549d4c9",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C85",
+      "claim": "Li+ promotes longevity via a GSK-3/NRF-2 dependent, hormetic mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms by which Li+ functions include inhibition of inositol monophosphotase (IMPA) and glycogen synthase kinase-3 (GSK-3) (Kerr et al., 2018), reduction of oxidative damage (Kasuya et al., 2009; Kerr et al., 2017; Khan et al., 2015) and longevity via a GSK-3/NRF-2 dependent, hormetic mechanism (Castillo-Quan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "9472171e-b82e-465d-a2d4-2ef553c60f97",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C86",
+      "claim": "The Wnt signaling pathway plays a role in modulating AD pathology and its progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the mechanisms for neuroprotection, the Wnt signaling pathway plays a role in modulating AD pathology and its progression (De Ferrari et al., 2003; Jin et al., 2017; Parr et al., 2015; Toledo and Inestrosa, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "07ef32fb-79a0-418a-864d-d0989c2fd804",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C87",
+      "claim": "Activation of Wnt signaling through lithium (Li+) treatment attenuated A\u03b2 aggregation and increased the lifespan of A\u03b2 models.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Wnt signaling through lithium (Li+) treatment attenuated A\u03b2 aggregation and increased the lifespan of A\u03b2 models (Toledo and Inestrosa, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f1f1b161-d3ae-42a0-b6e3-ba810e68d2a2",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C88",
+      "claim": "By inhibiting the enzyme glycogen synthase kinase-3 (GSK-3), Li+ compounds drive the downstream production of intracellular \u03b2-catenin activating the Wnt\u2013\u03b2-catenin signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "By inhibiting the enzyme glycogen synthase kinase-3 (GSK-3), Li+ compounds drive the downstream production of intracellular \u03b2-catenin activating the Wnt\u2013\u03b2-catenin signaling pathway (Klein and Melton, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "8ab94a5f-9d16-4581-a016-380d1dff51be",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C89",
+      "claim": "Li+ treatment through Wnt activation rescued behavioral impairment and neurodegeneration induced by A\u03b2 fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "Li+ treatment through Wnt activation also rescued behavioral impairment and neurodegeneration induced by A\u03b2 fibrils (De Ferrari et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "0aab1e29-f8f9-4279-8c8b-ab862e43d702",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C90",
+      "claim": "Drosophila exposed to light, but consuming Li+ had significantly increased lifespans.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila exposed to light, but consuming Li+ had significantly increased lifespans, suggesting both a rescue effect induced by Li+ (Figure 3a\u2013b), and that the optogenetic model can be used for inducible expression drug testing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figures 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "77d5a6cf-285c-4ff5-a5a0-2d53d03a3be8",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C91",
+      "claim": "The optogenetic model can be used for inducible expression drug testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila exposed to light, but consuming Li+ had significantly increased lifespans, suggesting both a rescue effect induced by Li+ (Figure 3a\u2013b), and that the optogenetic model can be used for inducible expression drug testing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data shown in Figures 3a-b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "72fa0e33-44b1-467d-98c7-9069bd340669",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C92",
+      "claim": "A\u03b2 clusters formed upon stimulation with blue light in HEK293 cells transfected with A\u03b2-CRY2-mCh.",
+      "claim_type": "EXPLICIT",
+      "source": "We extended this assay to HEK293 cells transfected with A\u03b2-CRY2-mCh where A\u03b2 clusters formed upon stimulation with blue light (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "7771b9c5-f8e7-4fca-ae1f-e75a6064b83a",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C93",
+      "claim": "The number of clusters per cell was greatly reduced by the addition of Li+ or the specific GSK3 inhibitor CHIR99021.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of clusters per cell was greatly reduced by the addition of Li+ or the specific GSK3 inhibitor CHIR99021, but CHIR99021 additionally reduced the signal intensity of the clusters (Figure 7b\u2013c, quantified 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figures 7b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "a882d4cc-a282-4c71-bf7c-bb74028bacbc",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C94",
+      "claim": "CHIR99021 additionally reduced the signal intensity of the clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of clusters per cell was greatly reduced by the addition of Li+ or the specific GSK3 inhibitor CHIR99021, but CHIR99021 additionally reduced the signal intensity of the clusters (Figure 7b\u2013c, quantified 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figures 7b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "a522f6d7-f383-4530-849f-11f2a0265765",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C95",
+      "claim": "A zebrafish permanent line with UAS:A\u03b2-CRY2-mCh was generated in the transgenic TgBAC(gng8:GAL4)c416 background.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a zebrafish permanent line with UAS:A\u03b2-CRY2-mCh in the transgenic TgBAC(gng8:GAL4)c416 background (Hong et al., 2013) that limited expression to a few cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "4106d158-da19-45f4-af79-91df239caa6d",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C96",
+      "claim": "A diffuse mCh fluorescence was observed in a small subset of neurons in the olfactory epithelium, the interpeduncular nucleus and in a few neurons sparsely distributed in the forebrain at 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a diffuse mCh fluorescence in a small subset of neurons in the olfactory epithelium, the interpeduncular nucleus and in a few neurons sparsely distributed in the forebrain at 5 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "47fcbfe0-a0d0-4e60-a483-3461b4805aaf",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C97",
+      "claim": "Upon blue light exposure (488 nM) the detectable intensity of the fluorescence increased rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon blue light exposure (488 nM) the detectable intensity of the fluorescence increased rapidly (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "eba81af9-fbb6-4193-9afc-a2c057665826",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C98",
+      "claim": "Several neurons among those expressing appeared to bleb and began to die within 40 to 50 min of initial exposure to the blue light.",
+      "claim_type": "EXPLICIT",
+      "source": "Several neurons among those expressing appeared to bleb and began to die within 40 to 50 min of initial exposure to the blue light (Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f1355c98-07b1-4eb3-b980-5c5328bab412",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C99",
+      "claim": "Such damage was not observable in matched controls expressing A\u03b2-mCh driven by a CMV promotor lacking the CRY2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Such damage was not observable in matched controls expressing A\u03b2-mCh driven by a CMV promotor lacking the CRY2 protein (Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "603b6266-e3f1-468e-a901-cc4197ed915d",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C100",
+      "claim": "A\u03b2-CRY2-mCh expressing zebrafish embryos showed lower maximum and spare respiration capacity compared to un-injected control.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the impairments observed in C. elegans, A\u03b2-CRY2-mCh expressing embryos showed lower maximum and spare respiration capacity compared to un-injected control (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "69e896b6-30a4-4517-bfe2-78eef0f94eca",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C101",
+      "claim": "Light exposure of A\u03b2-CRY2-mCh expressing zebrafish embryos caused a significant reduction in ATP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, light exposure of A\u03b2-CRY2-mCh expressing embryos caused a significant reduction in ATP levels (Figure 8a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "ce3e485d-6fdf-441a-9b23-bcd8f3464b7b",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C102",
+      "claim": "Aggregation of A\u03b2 has been studied extensively.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggregation of A\u03b2 has been studied extensively, but our results represent the first study to demonstrate that induced oligomerization of intracellular A\u03b2 can be used to separate different pathologies (induced by A\u03b2 oligomerization vs expression alone).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "2d5a6830-5bfb-47e1-aa85-f679a4caf2c0",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C103",
+      "claim": "This study represents the first to demonstrate that induced oligomerization of intracellular A\u03b2 can be used to separate different pathologies (induced by A\u03b2 oligomerization vs expression alone).",
+      "claim_type": "EXPLICIT",
+      "source": "Aggregation of A\u03b2 has been studied extensively, but our results represent the first study to demonstrate that induced oligomerization of intracellular A\u03b2 can be used to separate different pathologies (induced by A\u03b2 oligomerization vs expression alone).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "e02f50b2-bb43-4b6b-89e4-2aec9f83ea17",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C104",
+      "claim": "A second approach to making inducible aggregates using a chemically controlled fluorescent protein has been published, but not yet widely tested.",
+      "claim_type": "EXPLICIT",
+      "source": "A second approach to making inducible aggregates using a chemically controlled fluorescent protein has been published, but not yet widely tested (Miyazaki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "8df1fd80-186f-4c72-af1f-20bfa96e0f0c",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C105",
+      "claim": "Other previous approaches lacked an inducible oligomerization tool and could only demonstrate A\u03b2 oligomers' toxicity through exogenous injection of A\u03b2 oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Other previous approaches lacked an inducible oligomerization tool and could only demonstrate A\u03b2 oligomers' toxicity through exogenous injection of A\u03b2 oligomers (Mroczko et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "33b6a729-8145-43f8-a97f-28bcdbd917fc",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C106",
+      "claim": "CRY2 initiated clustering of A\u03b2 appeared to be irreversible likely due to the structure of the aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the reversibility of CRY2 clustering in previous findings, we find that CRY2 initiated clustering of A\u03b2 appeared to be irreversible likely due to the structure of the aggregates (Antzutkin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and comparison to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "c7953e5e-1870-49f3-998c-0d9953a00502",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C107",
+      "claim": "A\u03b2 oligomers induce oxidative stress and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with existing literature showing that A\u03b2 oligomers induce oxidative stress and inflammation (Butterfield et al., 2013; Forloni and Balducci, 2018), we show that light-induced oligomerization of A\u03b2, but not A\u03b2 expression alone, is necessary for the metabolic defects, loss of mitochondria and inflammation in C. elegans and Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f653491a-c594-49b8-a003-7ce7b6191aff",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C108",
+      "claim": "Light-induced oligomerization of A\u03b2, but not A\u03b2 expression alone, is necessary for the metabolic defects, loss of mitochondria and inflammation in C. elegans and Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with existing literature showing that A\u03b2 oligomers induce oxidative stress and inflammation (Butterfield et al., 2013; Forloni and Balducci, 2018), we show that light-induced oligomerization of A\u03b2, but not A\u03b2 expression alone, is necessary for the metabolic defects, loss of mitochondria and inflammation in C. elegans and Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "1c3f844f-f6b6-4a62-aa4b-7416c2f7b6c9",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C109",
+      "claim": "Light-induced oligomerization leads to physical damage of the nervous system in D. rerio, resembling the loss of brain tissue in AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Light-induced oligomerization also leads to physical damage of the nervous system in D. rerio, resembling the loss of brain tissue in AD (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "10f799bf-4baa-46c6-b42a-6aa3e41628a1",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C110",
+      "claim": "The embryonic assay for physical damage phenocopies brain lesions only to some degree as the extent of the damage is enhanced by the forces applied to the developing neural tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The embryonic assay for physical damage phenocopies brain lesions only to some degree as the extent of the damage is enhanced by the forces applied to the developing neural tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the limitations of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "d9394838-c9ba-49f8-875e-9684ba1b9b30",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C111",
+      "claim": "The irreversibility of A\u03b2 aggregates once initiated hints at intrinsic properties that may be unique or unusual to this peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The irreversibility of A\u03b2 aggregates once initiated as seen here, also hints at intrinsic properties that may be unique or unusual to this peptide and warrants further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "726e235d-4d3f-49d8-afa2-801d4d7b2c1f",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C112",
+      "claim": "The optogenetic A\u03b2 model is likely to prove a good model for testing anti-aggregation compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also likely to prove a good model for testing anti-aggregation compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applications of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "3b8180d0-5624-4591-8905-f14b569c0a3d",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C113",
+      "claim": "The optogenetic strategy will serve as an attractive tool for carrying out drug screens and mechanistic studies for the treatment of AD.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that our approach will serve as an attractive tool for carrying out drug screens and mechanistic studies for the treatment of AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applications of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f335a885-5f1f-4cac-ae78-d1e67d3a0ff3",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C114",
+      "claim": "The optogenetic strategy could be optimally positioned to gain insights into the unresolved mechanism of A\u03b2 - whether oligomerization and subsequent accumulation or lack of effective clearance underpins AD pathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "This optogenetic strategy will also undoubtedly complement other techniques due to the high level of spatiotemporal specificity. For example, it could be optimally positioned to gain insights into the unresolved mechanism of A\u03b2 - whether oligomerization and subsequent accumulation or lack of effective clearance underpins AD pathologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applications of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "9591a73f-13d5-4af0-927f-cec221fbe6f5",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "claim_id": "C115",
+      "claim": "The separation of two phases of AD progression suggests that single drug treatments will not suffice, and perhaps combinatorial approaches should be tried.",
+      "claim_type": "EXPLICIT",
+      "source": "The separation of two phases of AD progression also suggests that single drug treatments will not suffice, and perhaps combinatorial approaches should be tried.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "865f305d-7ca2-40ff-b8cd-13130ff668dd",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a fluorescently tagged, optogenetic A\u03b2 peptide (A\u03b2-CRY2-mCh) that oligomerizes in response to blue light in Drosophila, C. elegans, and D. rerio. The system shows light-induced cluster formation, irreversible aggregation, and CRY2-specific oligomerization confirmed by FRAP and control experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C31-C37, C42-C49 collectively demonstrate successful development and characterization of the optogenetic tool. Multiple lines of evidence including fluorescence imaging (Figures 1, 2), FRAP experiments, and appropriate controls (light vs. dark, with/without transgene) support the functionality and specificity of the system across three model organisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "97ef258b-a182-4dde-a573-995d9c063186",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Light-induced A\u03b2 oligomerization causes severe lifespan and healthspan deficits in transgenic animals. Flies and worms exposed to light showed approximately 50% reduction in lifespan compared to dark controls, with decreased fertility, locomotion, and sensorimotor function. The lifespan deficit was reversible when animals were moved from light to dark conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are well-supported by survival curves (Figure 3a-c), fertility assays, and locomotion data (Figure 3\u2014figure supplement 1). The reversibility experiment (C52) provides strong evidence that the effects are specifically due to light-induced oligomerization rather than general toxicity. Sample sizes appear adequate (n=23-130 per condition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "57a6d4b1-c477-48d6-a656-ffc8b54609b5",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Light-induced A\u03b2 oligomerization causes severe physical damage to the developing nervous system in Drosophila embryos. Embryos expressing A\u03b2 in neurons developed normally in the dark but arrested during late neurogenesis when exposed to blue light, showing abnormal positioning of neurons and glial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by time-lapse imaging (Videos 1-3) and immunostaining data (Figure 4, Figure 4\u2014figure supplement 1). The comparison between light-exposed and dark-reared embryos provides clear evidence of light-dependent physical damage. However, C59 is an inference about causation that, while reasonable, goes slightly beyond what is directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "77d6fe2d-42e9-40c1-afc6-0b98ceb7249a",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Light-induced A\u03b2 oligomerization triggers inflammatory responses, mitochondrial loss, and oxidative stress. Expression of A\u03b2 alone caused small increases in inflammatory markers, but light exposure caused much greater increases. Light-treated animals showed 40% reduction in mitochondria and differential expression of antioxidant defense genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 are supported by qPCR data for inflammatory markers (Figure 4e), mitochondrial counts (Figure 4f), and antioxidant gene expression (Figure 5). The comparison between A\u03b2 expression alone vs. light-induced oligomerization effectively separates the two effects. Statistical significance is reported for key findings (p<0.01-0.001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "96d7d2b9-41be-4947-b809-594fcc541bdc",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Light-induced A\u03b2 oligomerization causes metabolic deficits including reduced ATP levels and impaired mitochondrial respiration. Heat-shocked mutants exposed to light showed significantly lower ATP levels and maximum/spare respiration capacity compared to dark controls, while A\u03b2 expression alone was insufficient to cause these defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 are well-supported by ATP measurements (Figure 6a) and oxygen consumption rate data (Figure 6b-d) in C. elegans. The experimental design effectively separates effects of A\u03b2 expression from oligomerization. Statistical significance is reported (p<0.05). Sample sizes appear adequate (n=3-6 replicates).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "02e51cf6-5336-49ba-8c30-ac4c60e0ebba",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Heat-shock treatment itself does not affect ATP levels but does reduce respiratory capacity in control animals. Light-induced oligomerization worsens both phenotypic and metabolic deficits beyond the effects of heat-shock and A\u03b2 expression alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 address important controls for the heat-shock system used in C. elegans. The data (Figure 6a, c) support that ATP deficits are specifically due to A\u03b2 expression while respiratory deficits involve both heat-shock and A\u03b2. This is a critical control given the known effects of heat-shock on chaperones (C38-C39). The interpretation (C75, C77, C79) is reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f36a1444-032d-48e8-922d-d3ae692f07d5",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lithium treatment rescues the lifespan deficit induced by light-activated A\u03b2 oligomerization in Drosophila and reduces cluster formation in HEK293 cells. The GSK3 inhibitor CHIR99021 also reduces cluster number and intensity in cultured cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 are supported by lifespan data (Figure 3a-b) and cell culture experiments (Figure 7). The Li+ rescue demonstrates the system can be used for drug testing. However, the mechanism is not fully elucidated, and C91 is an inference about future utility rather than a demonstrated result. The cell culture data provide proof-of-concept but limited mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "7873db0e-9db3-40c2-aa4f-b3296f63b50a",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The optogenetic A\u03b2 system functions in zebrafish, causing neuronal death upon blue light exposure and metabolic deficits similar to those observed in C. elegans. Zebrafish expressing A\u03b2-CRY2-mCh showed neuronal blebbing and death within 40-50 minutes of light exposure, reduced ATP levels, and impaired respiration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C101 extend the findings to a vertebrate model. The data include time-lapse imaging (Video 4), appropriate controls lacking CRY2 (Video 5, C99), and metabolic measurements (Figure 8). This demonstrates the broad applicability of the approach. However, the zebrafish experiments use transient expression for metabolic assays, which may introduce variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "83c279ed-36be-4afe-a217-cdecf7b65987",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study demonstrates for the first time that induced oligomerization of intracellular A\u03b2 can be used to separate different pathologies. Both A\u03b2 expression and light-induced oligomerization are detrimental, but the metabolic and physical damage can be distinguished.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C103, C108 represent the central conclusion of the paper. The evidence across multiple model organisms, phenotypes, and assays consistently shows that light-induced oligomerization causes additional damage beyond A\u03b2 expression alone. This separation of effects is the key advance. The claim of being 'first' (C103) is supported by citations to prior work showing limitations of previous approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "6aa02c70-bfb3-4a1e-b3b8-385d9be06aac",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Heat-shocked transgenic C. elegans had significantly higher A\u03b2 levels compared to non-heat-shocked animals, suggesting that heat-shock drove higher A\u03b2 expression that was not compensated by secondary induction of chaperones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by Figure 1\u2014figure supplement 2 showing significantly higher A\u03b2 levels in heat-shocked animals (p=0.034). This addresses a potential confound given that heat-shock can induce chaperones that suppress A\u03b2 toxicity (C38-C39). The interpretation (C41) is reasonable but involves some inference about chaperone compensation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f339769e-14fa-48ce-a985-aa2fcb0bc7c8",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Physical damage caused by A\u03b2 oligomers recapitulates catastrophic tissue loss characteristic of late Alzheimer's disease. The embryonic assay phenocopies brain lesions to some degree, though the extent of damage is enhanced by forces applied to developing neural tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10, C109 assert that the physical damage resembles AD pathology, but this comparison is somewhat qualitative. C110 acknowledges limitations of the embryonic model. While the neuronal loss and structural damage are clearly demonstrated (Figures 4, 8\u2014figure supplement 1, Videos 2, 4), the claim that this 'recapitulates' late AD pathology requires more rigorous comparison to actual AD tissue or established AD models. The statement is suggestive but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "d908f5be-11ec-4559-aa0b-6ea30caac669",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CRY2-initiated clustering of A\u03b2 is irreversible, likely due to the structure of the aggregates, unlike the reversible clustering observed with other CRY2 fusion proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C106 is supported by FRAP data (Figure 2) showing very slow recovery for A\u03b2-CRY2-mCh compared to Arm-CRY2-mCh, and by observations that aggregates persist after light is turned off (C43-C44). The citation to Antzutkin et al. 2012 regarding aggregate structure provides context. However, the exact mechanism of irreversibility is not fully elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes the context of Alzheimer's disease, the amyloid cascade hypothesis, challenges to the hypothesis, and the lack of tools to study A\u03b2 oligomerization in vivo. These claims provide background and motivation for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C25 are background knowledge claims supported by appropriate citations. They establish the scientific context and rationale for developing the optogenetic tool. These are not novel findings but rather accurate representations of the field based on cited literature. The motivation for the study (C6, C25) is clearly articulated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "f8523007-aafa-49bc-acca-a9bf1d7de3b1",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The CRY2 optogenetic system has been previously characterized and used to study various cellular processes. CRY2 oligomerizes quickly and reversibly in response to blue light in cultured cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 describe prior work on the CRY2 system with appropriate citations. These establish the foundation for adapting CRY2 to study A\u03b2 oligomerization. The claims accurately represent the cited literature and provide necessary background for understanding the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "b95f89d7-8d92-406d-85a7-08abbec31b97",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Lithium has been used to treat neurological conditions, extends lifespan in model organisms, and can rescue A\u03b2-related pathology through multiple mechanisms including GSK-3 inhibition and Wnt pathway activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C89 provide background on lithium's effects and mechanisms, all supported by appropriate citations. This contextualizes the choice of Li+ for rescue experiments and provides mechanistic hypotheses. These are accurate representations of prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "959fa728-bb0f-44c3-b3a1-991424f73764",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Heat-shock treatment in C. elegans can reduce A\u03b2-mediated paralysis and oligomerization, and overexpression of chaperone proteins can suppress A\u03b2 toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 cite prior work showing that heat-shock can have protective effects against A\u03b2 toxicity through chaperone induction. This is important context for interpreting the C. elegans experiments that use a heat-shock promoter. The authors appropriately acknowledge this potential confound and perform controls (C40-C41, C74-C79).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "4165ea0b-97a0-4d88-bc72-dc8a203a749c",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior approaches to studying A\u03b2 aggregation have limitations, including lack of inducible oligomerization tools and reliance on exogenous injection. A\u03b2 oligomers are known to induce oxidative stress and inflammation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102, C104, C105, C107 provide context about prior work and its limitations, supported by citations. These establish the novelty and advantages of the current approach. The claims accurately represent the state of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    },
+    {
+      "id": "dcf2b178-da45-4051-a698-8aad5234a854",
+      "content_id": "42ae0450-bb08-44b6-9400-4722b5b2a1a1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors speculate about future applications of the optogenetic A\u03b2 system, including testing anti-aggregation compounds, drug screening, mechanistic studies, and the potential need for combinatorial therapeutic approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C111-C115 are speculative statements about future work and potential applications. While C112 is partially supported by the Li+ rescue experiment (C90-C94), most of these claims are forward-looking rather than demonstrated results. They represent reasonable hypotheses and potential applications but are not experimentally validated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:55.923161Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "71c761a6-b615-4de8-a5b3-220fb46efbd1",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "833b4e37-787a-4f95-be86-cc9ed4512964",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "bb27ba7e-6ec8-49ef-81c7-b92f58a4ac6a",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "fef16c77-121e-4d56-99f8-41ce8c2be7e8",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "69bce2b4-2e5f-46bd-a95f-0808a6e25c90",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "4943ed2a-6acb-435f-bb57-8588c4983b09",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "b37dcc0a-4a3d-49b6-8c99-264697b3b229",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "b5f585c6-b1fc-4228-913f-3c541094d38d",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "7f10167a-a8e2-4244-99c8-4e1aadf03c83",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "57f6edad-eb0c-45c5-bae9-646eef57363c",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "ed5dfe4f-332e-40da-8f0b-edcdb7a50211",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "f50d78c9-8e91-4460-9d2a-dfa0ea97ceec",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "c2465520-c159-4a9c-b690-c712d19916b1",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "b191cd19-676f-492b-a903-8ebc99d9059e",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "1ac6069b-ea50-4917-978d-8c32d43b9dcb",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "b98da7f7-321b-47df-8485-0fcb21fe5242",
+      "result_id": "865f305d-7ca2-40ff-b8cd-13130ff668dd"
+    },
+    {
+      "claim_id": "f28d3e9b-d708-45c5-9c38-83dc8fe01e5b",
+      "result_id": "97ef258b-a182-4dde-a573-995d9c063186"
+    },
+    {
+      "claim_id": "4ef67aad-0ef0-4a67-a65f-8af8cb1c4ac6",
+      "result_id": "97ef258b-a182-4dde-a573-995d9c063186"
+    },
+    {
+      "claim_id": "14e52653-e3c5-40bd-b12b-a1a088787ea7",
+      "result_id": "97ef258b-a182-4dde-a573-995d9c063186"
+    },
+    {
+      "claim_id": "1d90e332-42f3-4273-8503-a91c7b684071",
+      "result_id": "97ef258b-a182-4dde-a573-995d9c063186"
+    },
+    {
+      "claim_id": "6dccda3b-ec06-499b-80b6-4630ac548e0c",
+      "result_id": "97ef258b-a182-4dde-a573-995d9c063186"
+    },
+    {
+      "claim_id": "f4cccc81-1a92-4a8e-8a45-1a5ddc5611a3",
+      "result_id": "97ef258b-a182-4dde-a573-995d9c063186"
+    },
+    {
+      "claim_id": "7715033a-9705-48b1-99ce-fc3877358b61",
+      "result_id": "57a6d4b1-c477-48d6-a656-ffc8b54609b5"
+    },
+    {
+      "claim_id": "e5abce28-3093-4564-a347-a20d850d9924",
+      "result_id": "57a6d4b1-c477-48d6-a656-ffc8b54609b5"
+    },
+    {
+      "claim_id": "57a89fb9-8872-4246-b1dc-3ff9da379052",
+      "result_id": "57a6d4b1-c477-48d6-a656-ffc8b54609b5"
+    },
+    {
+      "claim_id": "0e782101-fdf7-4a93-a384-dcf21e2e012a",
+      "result_id": "57a6d4b1-c477-48d6-a656-ffc8b54609b5"
+    },
+    {
+      "claim_id": "c359985d-29e6-4ae7-a158-c70206d6bf32",
+      "result_id": "77d6fe2d-42e9-40c1-afc6-0b98ceb7249a"
+    },
+    {
+      "claim_id": "4ed16ccd-3a29-4ac8-b730-d567744ca5fd",
+      "result_id": "77d6fe2d-42e9-40c1-afc6-0b98ceb7249a"
+    },
+    {
+      "claim_id": "467ceb18-d8e6-4583-8e44-c365a4af5183",
+      "result_id": "77d6fe2d-42e9-40c1-afc6-0b98ceb7249a"
+    },
+    {
+      "claim_id": "20799b22-6022-4a74-8558-149f5b8286e6",
+      "result_id": "77d6fe2d-42e9-40c1-afc6-0b98ceb7249a"
+    },
+    {
+      "claim_id": "820246cb-3455-4f25-9b13-bebb4ef70acc",
+      "result_id": "77d6fe2d-42e9-40c1-afc6-0b98ceb7249a"
+    },
+    {
+      "claim_id": "f4735d75-5ef3-49d1-a329-f4d9f2a4b74c",
+      "result_id": "77d6fe2d-42e9-40c1-afc6-0b98ceb7249a"
+    },
+    {
+      "claim_id": "3fd42085-296c-496e-b883-1325e2a07e5a",
+      "result_id": "96d7d2b9-41be-4947-b809-594fcc541bdc"
+    },
+    {
+      "claim_id": "a4a40caa-d5cb-40cb-a9ad-ccc9e1458ebe",
+      "result_id": "96d7d2b9-41be-4947-b809-594fcc541bdc"
+    },
+    {
+      "claim_id": "badcb791-b1ba-467a-b328-067cd0a2c70a",
+      "result_id": "96d7d2b9-41be-4947-b809-594fcc541bdc"
+    },
+    {
+      "claim_id": "ba8dc239-dfe4-4c6a-865f-0131f01ea339",
+      "result_id": "96d7d2b9-41be-4947-b809-594fcc541bdc"
+    },
+    {
+      "claim_id": "efe353dc-72d9-4b97-9eb0-c8c32c9f0dc0",
+      "result_id": "96d7d2b9-41be-4947-b809-594fcc541bdc"
+    },
+    {
+      "claim_id": "330d5fa7-e8ee-452c-8488-2b0f919da704",
+      "result_id": "96d7d2b9-41be-4947-b809-594fcc541bdc"
+    },
+    {
+      "claim_id": "821355b1-4f2b-48c1-90eb-b755944feb5e",
+      "result_id": "96d7d2b9-41be-4947-b809-594fcc541bdc"
+    },
+    {
+      "claim_id": "775808c2-3282-4580-a0de-ec669dcc7ede",
+      "result_id": "96d7d2b9-41be-4947-b809-594fcc541bdc"
+    },
+    {
+      "claim_id": "8bf04fda-f30c-498c-b524-ba6c6d38d63f",
+      "result_id": "02e51cf6-5336-49ba-8c30-ac4c60e0ebba"
+    },
+    {
+      "claim_id": "65998d05-14c2-4af7-8ca3-a07fe3807331",
+      "result_id": "02e51cf6-5336-49ba-8c30-ac4c60e0ebba"
+    },
+    {
+      "claim_id": "513db095-9340-44d8-8f74-6cfda58428c9",
+      "result_id": "02e51cf6-5336-49ba-8c30-ac4c60e0ebba"
+    },
+    {
+      "claim_id": "b577763a-7bda-40b4-8410-75e0fd4c8cc6",
+      "result_id": "02e51cf6-5336-49ba-8c30-ac4c60e0ebba"
+    },
+    {
+      "claim_id": "346b797d-d84e-46d4-9f81-c4f45f8f8efa",
+      "result_id": "02e51cf6-5336-49ba-8c30-ac4c60e0ebba"
+    },
+    {
+      "claim_id": "a926ffb8-ce0b-4ad1-8b0c-67f89eba465a",
+      "result_id": "02e51cf6-5336-49ba-8c30-ac4c60e0ebba"
+    },
+    {
+      "claim_id": "0aab1e29-f8f9-4279-8c8b-ab862e43d702",
+      "result_id": "f36a1444-032d-48e8-922d-d3ae692f07d5"
+    },
+    {
+      "claim_id": "77d5a6cf-285c-4ff5-a5a0-2d53d03a3be8",
+      "result_id": "f36a1444-032d-48e8-922d-d3ae692f07d5"
+    },
+    {
+      "claim_id": "72fa0e33-44b1-467d-98c7-9069bd340669",
+      "result_id": "f36a1444-032d-48e8-922d-d3ae692f07d5"
+    },
+    {
+      "claim_id": "7771b9c5-f8e7-4fca-ae1f-e75a6064b83a",
+      "result_id": "f36a1444-032d-48e8-922d-d3ae692f07d5"
+    },
+    {
+      "claim_id": "a882d4cc-a282-4c71-bf7c-bb74028bacbc",
+      "result_id": "f36a1444-032d-48e8-922d-d3ae692f07d5"
+    },
+    {
+      "claim_id": "a522f6d7-f383-4530-849f-11f2a0265765",
+      "result_id": "7873db0e-9db3-40c2-aa4f-b3296f63b50a"
+    },
+    {
+      "claim_id": "4106d158-da19-45f4-af79-91df239caa6d",
+      "result_id": "7873db0e-9db3-40c2-aa4f-b3296f63b50a"
+    },
+    {
+      "claim_id": "47fcbfe0-a0d0-4e60-a483-3461b4805aaf",
+      "result_id": "7873db0e-9db3-40c2-aa4f-b3296f63b50a"
+    },
+    {
+      "claim_id": "eba81af9-fbb6-4193-9afc-a2c057665826",
+      "result_id": "7873db0e-9db3-40c2-aa4f-b3296f63b50a"
+    },
+    {
+      "claim_id": "f1355c98-07b1-4eb3-b980-5c5328bab412",
+      "result_id": "7873db0e-9db3-40c2-aa4f-b3296f63b50a"
+    },
+    {
+      "claim_id": "603b6266-e3f1-468e-a901-cc4197ed915d",
+      "result_id": "7873db0e-9db3-40c2-aa4f-b3296f63b50a"
+    },
+    {
+      "claim_id": "69e896b6-30a4-4517-bfe2-78eef0f94eca",
+      "result_id": "7873db0e-9db3-40c2-aa4f-b3296f63b50a"
+    },
+    {
+      "claim_id": "973187db-2c11-4971-86a3-d45bd56b6353",
+      "result_id": "83c279ed-36be-4afe-a217-cdecf7b65987"
+    },
+    {
+      "claim_id": "461edf91-5085-4753-8290-a944002864f1",
+      "result_id": "83c279ed-36be-4afe-a217-cdecf7b65987"
+    },
+    {
+      "claim_id": "2d5a6830-5bfb-47e1-aa85-f679a4caf2c0",
+      "result_id": "83c279ed-36be-4afe-a217-cdecf7b65987"
+    },
+    {
+      "claim_id": "f653491a-c594-49b8-a003-7ce7b6191aff",
+      "result_id": "83c279ed-36be-4afe-a217-cdecf7b65987"
+    },
+    {
+      "claim_id": "93d8bb2f-6554-457c-8e03-4ce3de57eff9",
+      "result_id": "6aa02c70-bfb3-4a1e-b3b8-385d9be06aac"
+    },
+    {
+      "claim_id": "3b3977c3-c62d-4b6d-9050-eae6b7144e66",
+      "result_id": "6aa02c70-bfb3-4a1e-b3b8-385d9be06aac"
+    },
+    {
+      "claim_id": "b781ddbd-716c-48ae-86ec-7df806ece638",
+      "result_id": "f339769e-14fa-48ce-a985-aa2fcb0bc7c8"
+    },
+    {
+      "claim_id": "1c3f844f-f6b6-4a62-aa4b-7416c2f7b6c9",
+      "result_id": "f339769e-14fa-48ce-a985-aa2fcb0bc7c8"
+    },
+    {
+      "claim_id": "10f799bf-4baa-46c6-b42a-6aa3e41628a1",
+      "result_id": "f339769e-14fa-48ce-a985-aa2fcb0bc7c8"
+    },
+    {
+      "claim_id": "33b6a729-8145-43f8-a97f-28bcdbd917fc",
+      "result_id": "d908f5be-11ec-4559-aa0b-6ea30caac669"
+    },
+    {
+      "claim_id": "1a3dfacc-2322-4541-833b-74bab3b3bbd4",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "b42964ac-fbcd-4959-942e-7265d3c258d7",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "57eafc6c-ff1f-4f6a-9e37-4999fd8ee595",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "124715c6-1624-4e9a-8392-85099dc1d1c5",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "b58717e9-3617-40d4-9848-ad34eaf8e432",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "b980689c-875c-4a20-8e0c-563c20042721",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "441a5d6b-1d16-42d4-84fd-3a1473290a1d",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "91b55bc2-ba4e-46e1-954b-b4701276d055",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "2b137d6b-6fb9-414f-8215-d0f3c1d52e4f",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "f0dbea61-9a03-4acd-9ddf-97e4da743bb4",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "51ca94a7-1f11-4f09-990f-c7d4febf395c",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "44e335f5-cfa2-41e0-a16c-34cdf4f1c98b",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "fef11184-9e92-48ee-973c-545c1462f2ec",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "c230369a-a01a-4963-8924-6441d07db3af",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "79bb0acc-bc85-473b-b861-fb99b9643b35",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "5a42b4c9-04aa-425c-ba2b-43848883cc1b",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "d0da5314-0fdb-4ee1-a6f0-5037f433d96f",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "62229b14-1e04-43f7-924f-195299720ead",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "4e8c67ea-f5a1-4db9-984a-158c219072c1",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "e7e710ba-8517-4244-84f1-b06e4e7c28ae",
+      "result_id": "99c10f63-b37b-40ae-8bb1-6657c1e9dd5b"
+    },
+    {
+      "claim_id": "1085f802-e00c-41e7-8eb1-939a5d352faa",
+      "result_id": "f8523007-aafa-49bc-acca-a9bf1d7de3b1"
+    },
+    {
+      "claim_id": "1b2af651-bcf6-4bcf-888d-4f7eb75aa6ab",
+      "result_id": "f8523007-aafa-49bc-acca-a9bf1d7de3b1"
+    },
+    {
+      "claim_id": "301569fe-96d5-4da6-b8e9-fd7c67143a59",
+      "result_id": "f8523007-aafa-49bc-acca-a9bf1d7de3b1"
+    },
+    {
+      "claim_id": "f0c40bfd-24b4-445b-93eb-50ea49ae4086",
+      "result_id": "f8523007-aafa-49bc-acca-a9bf1d7de3b1"
+    },
+    {
+      "claim_id": "09aa0a3f-f6e3-4207-92fc-3bc5cf2b4f8a",
+      "result_id": "f8523007-aafa-49bc-acca-a9bf1d7de3b1"
+    },
+    {
+      "claim_id": "734b821c-2155-4c63-8372-6eb552389727",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "7fc54f71-1edd-4318-b6fc-91cd8df7d02c",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "80384971-2b6c-4ed4-9adb-0d1211f3324e",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "4efd77f1-6803-4196-b798-647791be301f",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "90859b5d-77cd-4841-9989-7642e279fd43",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "790d3158-4b9d-48f4-b10f-190b6549d4c9",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "9472171e-b82e-465d-a2d4-2ef553c60f97",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "07ef32fb-79a0-418a-864d-d0989c2fd804",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "f1f1b161-d3ae-42a0-b6e3-ba810e68d2a2",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "8ab94a5f-9d16-4581-a016-380d1dff51be",
+      "result_id": "b95f89d7-8d92-406d-85a7-08abbec31b97"
+    },
+    {
+      "claim_id": "5317a654-7b24-4750-b15e-14055785365e",
+      "result_id": "959fa728-bb0f-44c3-b3a1-991424f73764"
+    },
+    {
+      "claim_id": "ac7c123d-bde1-432f-a452-029cc5325581",
+      "result_id": "959fa728-bb0f-44c3-b3a1-991424f73764"
+    },
+    {
+      "claim_id": "ce3e485d-6fdf-441a-9b23-bcd8f3464b7b",
+      "result_id": "4165ea0b-97a0-4d88-bc72-dc8a203a749c"
+    },
+    {
+      "claim_id": "e02f50b2-bb43-4b6b-89e4-2aec9f83ea17",
+      "result_id": "4165ea0b-97a0-4d88-bc72-dc8a203a749c"
+    },
+    {
+      "claim_id": "8df1fd80-186f-4c72-af1f-20bfa96e0f0c",
+      "result_id": "4165ea0b-97a0-4d88-bc72-dc8a203a749c"
+    },
+    {
+      "claim_id": "c7953e5e-1870-49f3-998c-0d9953a00502",
+      "result_id": "4165ea0b-97a0-4d88-bc72-dc8a203a749c"
+    },
+    {
+      "claim_id": "d9394838-c9ba-49f8-875e-9684ba1b9b30",
+      "result_id": "dcf2b178-da45-4051-a698-8aad5234a854"
+    },
+    {
+      "claim_id": "726e235d-4d3f-49d8-afa2-801d4d7b2c1f",
+      "result_id": "dcf2b178-da45-4051-a698-8aad5234a854"
+    },
+    {
+      "claim_id": "3b8180d0-5624-4591-8905-f14b569c0a3d",
+      "result_id": "dcf2b178-da45-4051-a698-8aad5234a854"
+    },
+    {
+      "claim_id": "f335a885-5f1f-4cac-ae78-d1e67d3a0ff3",
+      "result_id": "dcf2b178-da45-4051-a698-8aad5234a854"
+    },
+    {
+      "claim_id": "9591a73f-13d5-4af0-927f-cec221fbe6f5",
+      "result_id": "dcf2b178-da45-4051-a698-8aad5234a854"
+    }
+  ],
+  "comparisons": []
+}

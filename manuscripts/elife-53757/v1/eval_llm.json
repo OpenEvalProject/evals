@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Neuronal expression of dcap-1 rescues the short lifespan of dcap-1 mutants in C. elegans. Tissue-specific rescue experiments show that neuronal dcap-1 expression fully restores lifespan to wild-type levels at both 20\u00b0C and 25\u00b0C, while expression in epidermis or muscles has minimal effect, and intestinal expression shows intermediate rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are well-supported by lifespan data in Figure 1 showing tissue-specific rescue experiments. The neuronal rescue is robust and reproducible with two different promoters (unc-119p and rab-3p), while other tissues show minimal or intermediate effects. The data clearly demonstrate tissue-specific requirements for dcap-1 in lifespan regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "Neuronal overexpression of dcap-1 extends lifespan in wild-type C. elegans in a decapping-dependent manner. Neuronal dcap-1 overexpression increases median lifespan by ~13-16% and maximum lifespan by ~18-26%, accompanied by delayed age-dependent movement decline. The effect requires DCAP-2 catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C54 are strongly supported by lifespan data in Figure 2A-E showing consistent lifespan extension with neuronal dcap-1 overexpression using multiple promoters. The requirement for DCAP-2 (C54) demonstrates specificity for the decapping mechanism. The movement data (C52) provides functional validation of healthspan extension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63"
+    ],
+    "result": "Neuronal dcap-1-mediated lifespan extension requires DAF-16/FOXO and acts through insulin/IGF-like signaling (IIS). Genetic epistasis experiments show that daf-16 mutation or knockdown abolishes the longevity effect of neuronal dcap-1 overexpression, and daf-2 knockdown masks the effect, indicating dcap-1 acts upstream of or through IIS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59, C62-C63 are well-supported by genetic epistasis data in Figure 2F-H. The lack of additive effects with daf-16 mutation and daf-2 RNAi, combined with the epistasis analysis, provide strong evidence for dcap-1 acting through the IIS pathway. The logic of the epistasis experiments is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C121",
+      "C122"
+    ],
+    "result": "DCAP-1 regulates ins-7 mRNA levels in an age-dependent manner. dcap-1 mutants show elevated ins-7 mRNA (doubled in young adults, seven-fold increase with age), while neuronal dcap-1 overexpression suppresses age-dependent ins-7 upregulation. Other insulin-like peptides (daf-28, ins-33, ins-1, ins-6) are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C71, C121-C122 are supported by qRT-PCR data in Figure 3A showing specific regulation of ins-7 but not other ILPs. The age-dependent changes are quantified and statistically significant. The specificity for ins-7 strengthens the conclusion that this is not a general effect on ILP expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C123"
+    ],
+    "result": "Elevated ins-7 mRNA in dcap-1 mutants reflects increased transcription specifically in the intestine. ins-7p::gfp reporter fluorescence is 1.6-2.1-fold higher in dcap-1 mutants across all ages, with the increase restricted to intestinal cells. A control ges-1p::gfp reporter shows no increase in dcap-1 background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75, C123 are supported by fluorescence reporter data in Figure 3B and supplements. The tissue-specific increase in intestinal but not neuronal ins-7p::gfp expression, combined with the negative control (ges-1p::gfp), provides strong evidence for transcriptional regulation in the intestine. The quantification is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C126"
+    ],
+    "result": "Neuronal DCAP-1 regulates intestinal ins-7 expression through dense core vesicle (DCV) neurosecretion. unc-31/CAPS mutation (blocking DCV release) eliminates ins-7p::gfp differences between dcap-1 and wild-type, while unc-13 mutation (blocking small clear vesicles) does not. Neuronal dcap-1 restoration normalizes ins-7 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C79, C81-C83, C126 are well-supported by experiments with neurosecretion mutants in Figure 3C-E. The differential effects of unc-31 vs unc-13 mutations provide mechanistic insight into the neurosecretion pathway involved. The tissue-specific rescue experiments (C81-C82) further support the neuronal origin of the signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C125"
+    ],
+    "result": "DCAP-1 regulates ins-7 through post-transcriptional stabilization of neuronal ins-7 mRNA. ins-7 deletion suppresses ins-7p::gfp induction in dcap-1 mutants. Using a neuronal unc-119p::ins-7 transgene, mature ins-7 mRNA shows two-fold elevation in dcap-1 mutants, which is specific (not seen with reference gene eft-3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86, C125 are supported by genetic and molecular data in Figure 3F-G and supplements. The ins-7 deletion experiment (C84) demonstrates ins-7 is required for the phenotype. The mature/pre-mRNA ratio analysis (C85-C86) provides direct evidence for post-transcriptional regulation, with appropriate controls showing specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C124"
+    ],
+    "result": "Low INS-7 levels mediate lifespan extension from neuronal dcap-1 overexpression. ins-7 RNAi extends wild-type lifespan but fails to further extend lifespan in neuronal dcap-1 overexpressing animals, indicating lack of additivity and suggesting dcap-1 acts through ins-7 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C124 are supported by genetic epistasis data in Figure 3H. The lack of additive effect between ins-7 RNAi and neuronal dcap-1 overexpression is consistent with dcap-1 acting through ins-7. However, the inference (C89, C124) is somewhat indirect and could benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C128",
+      "C129"
+    ],
+    "result": "DCAP-1 regulates DAF-16 nuclear translocation. dcap-1 depletion delays DAF-16::GFP nuclear translocation under normal conditions and during early heat shock, while neuronal dcap-1 overexpression enhances DAF-16a::RFP nuclear localization even without stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C128-C129 are supported by microscopy data in Figure 4A-B and supplements showing DAF-16 localization. The quantification of nuclear-localized DAF-16 is appropriate. However, the use of different fluorophores (GFP vs RFP) in different experiments makes direct comparison challenging, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C130"
+    ],
+    "result": "Neuronal dcap-1 overexpression provides age-dependent stress resistance. Young adults (1 day) show no enhanced resistance to heat shock or oxidative stress, but aged animals (3+ days for oxidative stress, 9 days for heat shock) show significantly increased stress resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97, C130 are supported by stress resistance assays in Figure 4C-F. The age-dependent effect is clearly demonstrated with appropriate controls. The interpretation (C97) that this reflects slower aging is reasonable but somewhat speculative, as alternative explanations (e.g., age-specific protective mechanisms) are possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C137"
+    ],
+    "result": "Neuron-specific knockdown of DCP1 in D. melanogaster significantly reduces lifespan. elav:GAL4-driven DCP1 RNAi results in extremely short-lived flies at both 25\u00b0C and 29\u00b0C compared to parental controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C137 are supported by lifespan data in Figure 5B-C showing dramatic lifespan reduction with neuronal DCP1 knockdown. The effect is verified by qRT-PCR (Figure 5A) and is consistent across two independent RNAi lines, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C138",
+      "C139"
+    ],
+    "result": "Post-developmental neuronal DCP1 overexpression extends lifespan in D. melanogaster. Constitutive neuronal DCP1 overexpression does not extend lifespan, but post-developmental overexpression (using GAL80ts) increases median lifespan by ~42% and maximum by ~27%, indicating developmental stage-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103, C138-C139 are supported by lifespan data in Figure 5D and source data. The temperature-shift experiment using GAL80ts is well-designed to separate developmental from adult effects. The contrasting results between developmental and post-developmental overexpression provide important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Neuronal DCP1 knockdown causes wing and cuticle developmental defects in D. melanogaster. ~50% of flies at 25\u00b0C (95% at 29\u00b0C) show malformed/unexpanded wings, unexpanded thorax, and lack of cuticle tanning, indicating cell non-autonomous effects of neuronal DCP1 on development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by morphological observations in Figure 5E-F. The high penetrance and consistent co-occurrence of multiple phenotypes strengthen the conclusion. The inference of cell non-autonomous effects (C107) is reasonable given the neuronal-specific knockdown affects non-neuronal tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Neuronal DCP1 affects wing imaginal disc development through cell non-autonomous mechanisms. 15/23 wing discs from neuronal DCP1 knockdown larvae show structural abnormalities. elav:GAL4-driven GFP is absent from wing discs, and en:GAL4-driven DCP1 knockdown in posterior disc cells does not cause abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by microscopy data in Figure 6A-C. The control experiments (C109-C110) effectively rule out cell-autonomous effects and leaky expression, strengthening the conclusion of cell non-autonomous signaling. The frequency of abnormal discs (15/23) is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Wing disc and adult wing defects from neuronal DCP1 knockdown are temporally separable. Temperature-shift experiments show that larval-stage knockdown causes disc abnormalities but not adult wing defects, while knockdown from white pupa stage causes wing malformations. The critical period for adult wing development is between white pupa and 3-day pupa stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 are supported by temperature-shift experiments in Figure 7. The temporal dissection is well-designed and provides important mechanistic insight. The inference about the critical period (C116) appropriately accounts for potential latency in gene expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C117",
+      "C153"
+    ],
+    "result": "DCAP-1/DCP1 has a conserved function in developmental events and lifespan modulation across C. elegans and D. melanogaster. The findings establish mRNA decapping factors as gene expression regulators with active roles in neuronal function, rather than mere housekeeping genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C117, C153 represent the overarching conclusions supported by the combined data from both organisms. The conservation of neuronal DCP1 effects on lifespan and development across species is well-demonstrated. The conceptual reframing (C153) is justified by the data, though somewhat interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C127"
+    ],
+    "result": "Neuronal DCAP-1 acts cell non-autonomously through signals that influence DAF-16 in distal tissues. Lower INS-7 neurosecretion in dcap-1 overexpressing animals reduces IIS and activates DAF-16 in intestinal cells, downregulating intestinal ins-7 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C127 represent mechanistic inferences supported by multiple lines of evidence (neurosecretion experiments, tissue-specific effects, DAF-16 localization). The proposed model is consistent with the data, though some aspects remain indirect. The cell non-autonomous nature is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Neuronal DCP1 knockdown phenotypes in D. melanogaster resemble bursicon/rickets mutants, suggesting impaired bursicon signaling. Preliminary qRT-PCR shows trends for lower bursicon and rickets mRNA. However, DCP1 knockdown at eclosion does not affect wing expansion, suggesting DCP1 acts on an intermediate factor during earlier pupal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C150 involve mechanistic speculation about bursicon signaling. While the phenotypic similarity (C147) is striking, the molecular evidence is preliminary (C148 shows only trends, not significant differences). The temporal analysis (C149-C150) provides some support but the mechanism remains unclear. Additional validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background and context claims about mRNA decapping, P-bodies, IIS pathway, and prior work on dcap-1/DCP1. These establish the scientific foundation and cite relevant literature on mRNA cap homeostasis, decapping mechanisms, neurological importance, and the IIS pathway in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C38 are background claims supported by appropriate citations to established literature. These provide necessary context but do not represent novel findings of this study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41",
+      "C53",
+      "C60",
+      "C64",
+      "C65",
+      "C69",
+      "C70",
+      "C76",
+      "C78",
+      "C80",
+      "C87",
+      "C90",
+      "C98",
+      "C99",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C136",
+      "C140",
+      "C141",
+      "C144",
+      "C145",
+      "C146",
+      "C152"
+    ],
+    "result": "Additional background claims citing prior work on dcap-1 rescue, aging markers, IIS components, neurosecretion machinery, stress-aging links, DCP1 lethality, bursicon signaling, and synaptic functions of decapping. These provide methodological validation and mechanistic context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C53, C60, C64-C65, C69-C70, C76, C78, C80, C87, C90, C98-C99, C131-C134, C136, C140-C141, C144-C146, C152 are supported by appropriate citations. These establish prior knowledge and methodological foundations but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C39",
+      "C40",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Summary claims from abstract and introduction stating the main findings. These synthesize the detailed results about neuronal dcap-1/DCP1 effects on lifespan, INS-7 regulation, DAF-16 localization, and conservation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C9, C39-C40, C118-C120 are high-level summaries of the main findings, supported by the detailed experimental data discussed in other result groups. These represent accurate summaries of the work, though they are redundant with more specific claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C135",
+      "C142",
+      "C151"
+    ],
+    "result": "Mechanistic interpretations and speculations. The lifespan extension mechanism depends on DCAP-2 and cannot be attributed to P-body formation. mRNA decapping may have extended roles in neurosecretion control. Bursicon expression in larvae might explain wing disc phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 is well-supported by data in Figure 2E. Claims C142 and C151 are more speculative inferences based on indirect evidence (C142 from XRN1 data, C151 from developmental expression patterns). These represent reasonable hypotheses but would benefit from direct testing.",
+    "result_type": "MINOR"
+  }
+]

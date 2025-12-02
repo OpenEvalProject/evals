@@ -1,0 +1,1399 @@
+{
+  "submission": {
+    "id": "3bcba7c2-f60a-4200-970b-47deb0450c5b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:04:23.818792Z",
+    "updated_at": "2025-12-02T08:04:23.818792Z"
+  },
+  "content": [
+    {
+      "id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "submission_id": "3bcba7c2-f60a-4200-970b-47deb0450c5b",
+      "content_type": "manuscript",
+      "content_text": "# Rapid changes in tissue mechanics regulate cell behaviour in the developing embryonic brain\n\n## Authors\n\n- Amelia J Thompson<sup>1</sup> ([ORCID: 0000-0002-3912-3652](https://orcid.org/0000-0002-3912-3652))\n- Eva K Pillai<sup>1</sup>\n- Ivan B Dimov<sup>1</sup>\n- Sarah K Foster<sup>1</sup>\n- Christine E Holt<sup>1</sup>\n- Kristian Franze<sup>1</sup> ([ORCID: 0000-0002-8425-7297](https://orcid.org/0000-0002-8425-7297)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Development and Neuroscience University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nTissue mechanics is important for development; however, the spatio-temporal dynamics of in vivo tissue stiffness is still poorly understood. We here developed tiv-AFM, combining time-lapse in vivo atomic force microscopy with upright fluorescence imaging of embryonic tissue, to show that during development local tissue stiffness changes significantly within tens of minutes. Within this time frame, a stiffness gradient arose in the developing Xenopus brain, and retinal ganglion cell axons turned to follow this gradient. Changes in local tissue stiffness were largely governed by cell proliferation, as perturbation of mitosis diminished both the stiffness gradient and the caudal turn of axons found in control brains. Hence, we identified a close relationship between the dynamics of tissue mechanics and developmental processes, underpinning the importance of time-resolved stiffness measurements.\n\n## Materials and methods\n\nAll chemicals and reagents were obtained from Sigma-Aldrich unless otherwise noted.\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type.</th>\n      <th>Designation.</th>\n      <th>Source (public).</th>\n      <th>Identifiers.</th>\n      <th>Additional information.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Transfected construct (Xenopus laevis)</td>\n      <td>ath5::GAP-eGFP</td>\n      <td>Das et al., 2003, PMID: 12597858; Zolessi et al., 2006, PMID: 17147778</td>\n      <td>ZFIN ID: ZDB-TGCONSTRCT-070129\u20131</td>\n      <td>Membrane-tagged GFP under control of ath5 (atoh7) promoter; pCS2\u00a0+\u00a0vector</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Xenopus laevis)</td>\n      <td>Xenopus laevis</td>\n      <td>National Xenopus Resource</td>\n      <td>Cat #: NXR_0.0031; RRID:SCR_013731</td>\n      <td>Wild-type strain Xla. NXR-WTNXR</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-phospho-Histon H3 (sER10)</td>\n      <td>EMD Millipore</td>\n      <td>Cat #: 06\u2013570; RRID:AB_310177</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit Alexa Fluor 594</td>\n      <td>Abcam</td>\n      <td>Cat #: AB150084; RRID:AB_2734147</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BI2536</td>\n      <td>MedChem Express</td>\n      <td>Cat#: HY-50698</td>\n      <td>50 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hydroxyurea</td>\n      <td>Sigma</td>\n      <td>Cat#: H8627-5G</td>\n      <td>20 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Aphidicolin</td>\n      <td>Sigma</td>\n      <td>Cat#: A0781-5MG</td>\n      <td>150 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1M Sodium hydroxide</td>\n      <td>Sigma</td>\n      <td></td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(3-aminopropyl) trimethoxysilane</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: 281778\u2013100 ML</td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>glutaraldehyde</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: G6257-1L</td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>40% w/v acrylamide solution</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: A4058-100ML</td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2% bis-acrylamide</td>\n      <td>Fisher Scientific</td>\n      <td>Cat#: BP1404-250</td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ammonium persulfate</td>\n      <td>Sigma</td>\n      <td>Cat#: 215589</td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N,N,N',N'-tetramethylethylenediamine</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 15524\u2013010</td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>hydrazine hydrate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: 225819\u2013500 mL</td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5% acetic acid</td>\n      <td>ACROS Organics</td>\n      <td>Cat#: 10041250</td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Poly-D-lysine</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: P6407-5MG</td>\n      <td>10 \u00b5g/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>laminin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: L2020-1MG</td>\n      <td>5 \u00b5g/ml</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>Fiji is Just ImageJ (https://fiji.sc)</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator</td>\n      <td>Adobe Illustrator</td>\n      <td>RRID:SCR_010279</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MATLAB</td>\n      <td>RRID:SCR_001622</td>\n      <td>Codes used for Sholl analysis post-processing, OT elongation, motorized stage control, processing of AFM raw data, mapping of stiffness maps onto brains and OT and local tissue stiffness gradient calculations can be found at https://github.com/FranzeLab/AFM-data-analysis-and-processing (Franze, 2018a), https://github.com/FranzeLab/Image-processing-and-analysis (Franze, 2018b) and https://github.com/FranzeLab/Instrument-Control (Franze, 2018c; copies archived at https://github.com/elifesciences-publications/Image-processing-and-analysis,https://github.com/elifesciences-publications/Instrument-Control and https://github.com/elifesciences-publications/AFM-data-analysis-and-processing).</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>4,6-diamidino-2- phenylindole (DAPI)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: D9542- 5 mg</td>\n      <td>1 \u00b5g/ml</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Arrow-TL1 Tipless silicon cantilevers</td>\n      <td>NanoWorld Innovative technologies</td>\n      <td>Manufacturer's ID: ARROW-TL1-50</td>\n      <td>Cantilevers for AFM-based stiffness measurements</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>37.28 \u00b5m spherical polysterene beads</td>\n      <td>microParticles GmbH</td>\n      <td>Cat#: PS-R-37.0</td>\n      <td>Spherical probes attached to AFM cantilevers</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Rain-X</td>\n      <td>Shell Car Care International Ltd, UK</td>\n      <td>Model #: 800002250</td>\n      <td>fabrication of polyacrylamide substrates</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>CellHesion-200 AFM head</td>\n      <td>JPK Instruments</td>\n      <td></td>\n      <td>Atomic force microscope</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>PetriDish Heater</td>\n      <td>JPK Instruments</td>\n      <td></td>\n      <td>Maintaining constant temperature for time-lapse AFM experiments</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal model\n\nAll animal experiments were approved by the Ethical Review Committee of the University of Cambridge and complied with guidelines set by the UK Home Office. Single-cell-stage, wild-type Xenopus laevis embryos of both sexes were obtained via in vitro fertilisation. Embryos were reared in 0.1\u00d7\u00a0Modified Barth\u2019s Saline (MBS) at 14\u201318\u00b0C to reach the desired developmental stage, as described by Nieuwkoop and Faber, 1958. All embryos used in this study were below stage 45.\n\n#### In vivo fluorescence labelling of optic tract (OT) axons.\n\nTo visualise the developing OT during time-lapse AFM experiments, an ath5::GAP-eGFP construct (pCS2+ vector) (Poggi et al., 2005; Das et al., 2003) was injected (100 pg/5 nL) into one dorsal blastomere of embryos at the 4 cell stage. The construct consisted of a membrane-tagged GFP fusion under control of the retinal ganglion cell (RGC)-specific atonal homolog 5 promoter (Kanekar et al., 1997). This selectively labelled RGCs in a single retina, the axons of which grew across the optic chiasm and into the unlabelled brain hemisphere.\n\n#### Exposed brain preparation\n\nStage 33/34 embryos were anaesthetised, the eye primordium was removed and the underlying brain hemisphere exposed as described (Chien et al., 1993; Irie et al., 2002). Briefly, embryos were transferred to 1.3\u00a0\u00d7\u00a0MBS solution (composition: 1.3\u00a0\u00d7\u00a0MBS with 0.04% (w/v) MS222 anaesthetic (3-aminobenzoic acid ethyl ester methanesulfonate) and 1\u00a0\u00d7\u00a0penicillin/streptomycin/Fungizone (P/S/F; Lonza), pH 7.4). The higher osmolarity retards skin regrowth, allowing for experiments spanning several hours. Embryos were immobilised on low Petri dishes (TPP, Switzerland) coated with Sylgard 184 using bent 0.2 mm minutien pins, with one side of the body facing up. The eye, epidermis, and dura were removed with 0.1 or 0.15 mm minutien pins and fine forceps to expose one brain hemisphere from the dorsal to ventral midline and from the hindbrain to the telencephalon. Embryos were then immediately used for time-lapse in vivo AFM (tiv-AFM) measurements or, alternatively, transferred to a 4-well plate containing either 1.3\u00d7\u00a0MBS solution+50 \u00b5M BI2536 (MedChem Express) (control, 1.3\u00d7\u00a0MBS solution\u00a0+\u00a00.5% v/v DMSO) or 1.3\u00d7\u00a0MBS solution\u00a0+\u00a020 mM hydroxyurea and 150 \u00b5M aphidicolin (control, 1.3\u00d7\u00a0MBS solution\u00a0+\u00a01.5% v/v DMSO) and allowed to develop at\u00a0~25\u00b0C until the desired developmental stage. Embryo viability throughout all in vivo experiments was assessed by the presence of a visible heartbeat (which begins at st. 33/34 (Gurdon et al., 1997)).\n\n#### Cryosectioning Xenopus embryos\n\nBI2536 inhibitor or mock-treated embryos were fixed at the requisite stages in 4% PFA overnight at 4\u00b0C, washed thrice in phosphate-buffered saline (PBS) for 10 min, and kept in 30% sucrose for 1 hr at 4\u00b0C. The embryos were embedded in optimum cutting temperature compound (OCT, VWR). 12\u00b5m-thick coronal sections were made and collected on Superfrost plus slides (ThermoScientific).\n\n### In vitro assays\n\n#### Fabrication of polyacrylamide hydrogel substrates\n\nPolyacrylamide hydrogels were prepared as previously described (Koser et al., 2016). Briefly, 19 mm \u2018bottom\u2019 coverslips were coated with 1N NaOH using a cotton bud and allowed to air dry. Coverslips were treated with (3-aminopropyl)trimethoxysilane (APTMS) for 3 min, washed thoroughly, treated with 0.5% glutaraldehyde solution for 30 min, and then washed and allowed to air-dry. 18 mm \u2018top\u2019 coverslips were treated with Rain-X (Shell Car Care International Ltd, UK) for 10 min and then dried.\n\nGel pre-mixes were prepared using 40% (w/v) acrylamide (AA) solution and 2% bis-acrylamide (Bis-AA) solution (Fisher Scientific, UK, or SIGMA) diluted in PBS. Concentration titration measurements used a premix composition previously determined to give a shear modulus G (a measure of stiffness) of\u00a0~300 Pa (5% AA, 0.07% Bis-AA in PBS). For gels used for stiffness sensing experiments, the precise stiffness was measured using AFM. Stiff gels were comprised of 7.5% AA/0.2% Bis-AA in PBS, resulting in a shear modulus of G\u00a0~5,500 Pa; soft gels were comprised of 5% AA/0.04% Bis-AA in PBS, resulting in G\u00a0~200 Pa.\n\nPremix polymerization was initiated by adding 5 \u00b5L ammonium persulfate followed by 1.5 \u00b5L of N,N,N\u2019,N\u2019-tetramethylethylenediamine (TEMED, ThermoFisher). 25 \u00b5L of premix was pipetted onto the bottom coverslip and the top coverslip placed on top. Once the gel had polymerized, the top coverslip was removed and gels were treated with hydrazine hydrate for 3.5\u20134 hr, and then with 5% acetic acid (ACROS Organics) for 1 hr. Gels were then washed, sterilized by 30 min UV treatment, and functionalized with 10 \u00b5g/mL Poly-D-lysine (MW 70,000\u2013150,000) overnight followed by 5 \u00b5g/mL laminin for 2 hr immediately prior to plating cells.\n\n#### Xenopus tissue culture and in vitro inhibitor treatments\n\nFor eye primordia culture experiments, stage 33/34 or 35/36 embryos were placed in a Petri dish coated with Sylgard 184 (Dow Corning) and anaesthetized with 0.04% (w/v) MS222 solution (dissolved in 1\u00a0\u00d7\u00a0MBS\u00a0+\u00a01% v/v PSF, adjusted to pH 7.6\u20137.8, and filter-sterilized). Whole eye primordia were dissected out using insect pins, and placed onto hydrogels with the lens facing up. BI2536 or control solution (DMSO) was added 2 hr after explants were plated. Dishes were cultured at 20\u00b0C for 22\u201324 hr in Xenopus cell culture medium (60% L15 medium\u00a0+\u00a01\u00d7 PSF, adjusted to pH 7.6\u20137.8, and filter sterilized). In all experiments, DMSO controls utilized the amount of DMSO equivalent to that in the most concentrated BI 2536 condition (0.1% v/v for concentration titration, 0.01% v/v for stiffness sensing experiments). Explants were imaged on a Leica DMi8 inverted microscope with a 10\u00d7 NA =\u00a00.4 phase contrast objective.\n\n#### Sholl analysis of RGC axon outgrowth\n\nEye primordia explant morphology was analyzed using the Sholl Analysis plugin in Fiji (Ferreira et al., 2014).\u00a0An ellipse was fitted to the explant, and the innermost (starting) radius set to R\u00a0$=\\sqrt{A/\\pi}$, with A being the ellipse area. Images were filtered with an FFT bandpass filter to correct uneven background illumination and manually thresholded. The outer radius was set to a point beyond the reach of the longest axon. Spacing between consecutive measurements was set to 5 \u00b5m. \u2018Median sholl radius\u2019 was calculated as the median outgrowth radius reached by axons of a particular explant.\n\n### Fluorescence labelling of cellular structures\n\n#### Visualization of the optic tract and nuclei in wholemount brains\n\nWhere required, to visualise the OT and nuclei for cell body density measurements, embryos at the desired developmental stage were fixed in 4% paraformaldehyde for 1.5\u20132 hr at room temperature or overnight at 4\u00b0C. OTs were either labelled with ath5::GAP-eGFP or by injecting a solution of DiI crystals diluted in ethanol at the boundary between lens and the retina (as previously\u00a0described Wizenmann et al., 2009).\u00a0Fixed brains were then dissected out and stained with 4,6-diamidino-2-phenylindole (DAPI; 1 \u00b5g/ml). Stained specimens were mounted in either Fluoromount-G (eBioscience, UK; ath5::GAP-eGFP-labelled OTs) or 1\u00a0\u00d7\u00a0PBS (DiI-labelled OTs) and the lateral brain surface, including the OT, was imaged using an SP-8 confocal microscope (SP8, Leica Microsystems, UK; 20\u00d7 air,\u00a0NA\u00a0=\u00a00.75; z-step size\u00a0=\u00a01 \u03bcm).\n\n#### Phospho-histone H3 immunolabelling and imaging in tissue cross-sections\n\nSectioned tissues on slides were washed thrice in PBS, followed by three 10 min washes in PBS with 0.1% TritonX. The sections were blocked in 5% goat serum in PBS with 0.1% TritonX for 30\u201345 min and incubated with Rabbit polyclonal anti-phospho-Histone H3 (Ser10) (EMD Millipore, 06\u2013570, dilution\u00a0=\u00a01:1000 in blocking solution) overnight at 4\u00b0C or for 2 hr at room temperature. This was followed by three 10 min washes in PBS and secondary antibody incubation with goat anti-rabbit Alexa Fluor 594 (Abcam, ab150084, dilution\u00a0=\u00a01:500 in blocking solution) for 45\u201360 min. The slides were washed twice for 10 min with PBS and nuclei were labeled using 4,6-diamidino-2-phenylindole (DAPI, 1 \u03bcg/ml). Sections were mounted with Fluoromount-G (eBioscience) and imaged with a confocal microscope (SP8, Leica Microsystems, UK; 20\u00d7/0.75 air and 63\u00d7/1.4 oil). Z-stacks were taken across 8 \u00b5m of tissue (z-step size\u00a0=\u00a01 \u00b5m). Only slices with eye tissue present were selected, to reliably ensure that the brain sections imaged and analysed were indeed exposed to the treatment solutions. This also allowed us to easily ascertain the intact- versus exposed- brain side in each section.\n\n### In vivo AFM\n\n#### Probe and instrument preparation\n\nTipless silicon cantilevers (Arrow-TL1, NanoWorld) were calibrated using the thermal noise method (Hutter and Bechhoefer, 1993) to determine the spring constant k, and those with k between 0.02\u20130.04 N/m were selected. Monodisperse spherical polystyrene beads (diameter 37.28\u00a0\u00b1\u00a00.34 \u00b5m; microParticles GmbH) were glued to the cantilever ends as probes. Cantilevers were mounted on a CellHesion-200 AFM head (JPK Instruments), which was set up on an x/y motorised stage (JPK Instruments) controlled by custom-written Python scripts (Koser et al., 2016). Indentation measurements (maximum indentation force: 10 nN, approach speed: 5 \u00b5m/s, data rate: 1,000 Hz) were performed automatically in a user-defined rectangular grid to create a 2-D \u2018stiffness map\u2019 of the area. After each measurement, the cantilever was retracted by 100 \u00b5m, and the stage moved by a set distance (20\u201325 \u00b5m) to the next position (Koser et al., 2016).\n\n#### Combined optical imaging and AFM measurements\n\nTo allow simultaneous time-lapse imaging of the growing OT and in vivo stiffness measurements of live Xenopus brains, which are optically opaque, an upright epifluorescence set-up was custom-fit above the AFM head, which was based on a Zeiss AxioZoom V16 fluorescence stereomicroscope (without eyepieces). The microscope was mounted on a custom-designed horizontal sliding stand (parts obtained from ThorLabs) via a custom-made adaptor (K-Tec Microscope Services) bolted to the side of the microscope (Figure 1\u2014figure supplement 1). A long working distance objective with automatic zoom and high NA (PlanApo Z 0.5\u00d7/0.125, working distance 114 mm, Zeiss) allowed in vivo fluorescence imaging of RGC axons through the transparent AFM head, which was re-fitted with optical elements optimised for fluorescence imaging. The sample was illuminated through the AFM head using a metal halide lamp, and bright-field as well as epifluorescence images of the brain collected with an sCMOS camera (Andor Zyla 4.2; quantum efficiency 82%) (Figure 1a,b).\n\n#### Tiv-AFM\n\nStage 33/34 embryos with ath5::GAP-eGFP-labelled OTs were prepared with one brain hemisphere exposed as described above, and those in which the OT was clearly visible (but had not yet formed the mid-OT bend) were selected. Embryos were mounted on the AFM motorised stage and a measurement region of approximately 150\u00a0\u00d7\u00a0250 \u00b5m defined to include both the growing OT and the region of the mid-diencephalic turn. Images of the upper right and lower left corners of the selected region (with cantilever approached) were collected to identify the precise area mapped by the AFM. A stiffness map of the area was collected and the map iterated over the same area every\u00a0~35 min. At the end of every line in the measurement grid, the stage was moved back to a pre-defined location and a fluorescence image of the optic tract automatically collected. Temperature was maintained at 25\u00b0C for the duration of the measurement by a PetriDish Heater (JPK Instruments).\n\n### Data analysis\n\n#### Processing of raw AFM data\n\nForce-distance curves obtained from stiffness measurements were analysed with a custom-written MATLAB script (Koser et al., 2016; Christ et al., 2010) to obtain the reduced apparent elastic modulus K. Raw AFM data were fitted to the Hertz model,\n\n$$\nF=\\frac{4}{3}K\\delta^{\\frac{3}{2}}\\sqrt{R}\n$$\n\nwhere F is the applied force, K the reduced apparent elastic modulus E/(1-\u03bd2) (with Poisson ratio \u03bd), R the radius of the indenter, and $\\delta$\u00a0is sample indentation (Crick and Yin, 2007; Hertz, 1882). Force-distance curves were analysed at the maximum applied force F = 10 nN. Points where the AFM data were\u00a0not analysable were excluded; criteria for excluding individual force-distance curves were (1) inability to apply linear fits through the baseline region, for\u00a0example due to noise, and (2) inability to apply good-quality Hertzian fits to the indentation region, that is, the fit did not align with the raw data.\n\nTo minimise noise for region-of-interest analysis of small areas, previously sorted, gridded AFM data were smoothed in x-, y-, and time dimensions using an algorithm based on the discrete cosine transform by Garcia et al (Garcia, 2010; Garcia, 2011). Briefly, an iteratively weighted version of the penalized least squares approach was used to smooth the data and interpolate missing values where the force-distance curves were not analysable. Stiffness data from each experiment were arranged into a 3D array (x*y*frame number) and used as an argument for the smoothn.m MATLAB implementation of the algorithm (Garcia, 2010). This algorithm has the advantage of using the entire data set to interpolate missing values, as opposed to only the nearest neighbouring data (as, for example, in other smoothing methods such as a simple spline interpolation).\n\nFor visual presentation of interpolated stiffness data, additional arrays of robustly smoothed K values were generated using the separate \u2018robust\u2019 option available in smoothn.m. This automatically reduces the weight assigned to high-leverage points and outliers, which optimises visualisation of overall changes in stiffness. To generate time-lapse montages of both raw and robustly smoothed AFM data, values of K were converted to 8-bit scale, colour-coded maps using the desired MATLAB colourmap pre-set. The resulting stiffness maps were then mapped onto images of the brain and OT using custom-written MATLAB scripts (Koser et al., 2016).\n\n#### Quantifying in vivo stiffness gradients\n\nAnother MATLAB script (Koser et al., 2016) was used to calculate local tissue stiffness gradients in the area just ahead of the advancing OT. Mean values of K were calculated for a 50\u00a0\u00d7\u00a050 \u00b5m2 region of interest (ROI) on the rostral (KR) and caudal sides (KC) of the OT, and the gradient calculated by:\n\n$$\nStiffness\u00a0gradient=\\frac{K_{R}\u2212K_{C}}{50\u00a0\\mum}\n$$\n\nFor each frame in a given time-lapse series, ROIs were defined three times and the mean of the three measurements for each ROI was used for further analysis. Where direct comparison between the dynamics of stiffness gradients and OT turning was required across different animals, values for both parameters were rescaled. The minimum value obtained for each embryo measured was set to 0 and the maximum set to 1, using the following formula:\n\n$$\nRescaled\u00a0data=\\frac{data\u2212minimum\u00a0value}{maximum\u00a0value\u2212minimum\u00a0value}\n$$\n\nWhen linear fits to AFM data and OT turning angles were required, the built-in MATLAB first degree polynomial fit was used in all cases.\n\n#### Analysis of OT turning\n\nFor each embryo, in vivo time-lapse movies of the growing OT were created by collating fluorescence images taken at the beginning of every successive AFM stiffness map. The magnitude of the OT turn was calculated from each frame of these movies using the FIJI Angle tool. Three points were defined manually (chiasm, mid-diencephalic turn, and end of OT) such that the two lines drawn through these points ran through the centre of the OT. Each measurement was repeated three times, averaged, and subtracted from 180\u00b0 to give the angle through which the OT had turned; a positive value denotes turning in the caudal direction.\n\n#### Analysis of OT elongation\n\nMaximum projections were made across 10 \u00b5m confocal image stacks of wholemount brains with DiI-labelled OTs. The OTs were manually outlined in Adobe Illustrator. Elongation of the OT was calculated by the major-to-minor axis ratio using a previously described automated algorithm in Matlab (Koser et al., 2016). In short, axes were determined by fitting ellipses, with the same normalized second central moment as the OT area, around the OTs.\n\n#### Cell body density measurements\n\nConfocal image stacks of fixed brains (with fluorescently-labelled OT and nuclei) were imported into FIJI. For each brain, the image where the leading axons were in focus was selected. A maximum intensity projection was generated of this image and one image above and below it in the stack. Two 50 \u03bcm\u00a0\u00d7\u00a050 \u03bcm regions of interest (matching the size of regions of interest used in stiffness gradient analysis) were selected, rostral (DR) and caudal (DC) to the region corresponding to the OT caudal bend. Noise was removed with a Gaussian blur filter (sigma\u00a0=\u00a02.0). The resulting image was thresholded, with the threshold manually adjusted to capture all nuclei as accurately as possible. The image was binarised and the FIJI built-in function \u2018Analyse Particle\u2019 (size: 1\u2013\u221e; circularity: 0.2\u20131.00) was used to determine the area in each region covered by nuclei. Relative cell body density was calculated by dividing the area occupied by nuclei by the total region area. Where required, gradients in relative cell body density were obtained using:\n\n$$\nCell\u00a0body\u00a0density\u00a0gradient=\\frac{D_{R}\u2212D_{C}}{50\u00a0\\mum}\n$$\n\n#### Measurement of cross-sectional brain area\n\nConfocal images taken with the 20\u00a0\u00d7\u00a0air objective were imported into FIJI. Maximum projections were made of the stacks (z-stack height\u00a0=\u00a08 \u00b5m). The brain was identified in each section and both intact and exposed hemispheres were outlined. The area occupied by nuclei in each brain hemisphere was measured using the \u2018Analyse\u00a0>\u00a0Measure\u2019 tool. Normalised brain areas were obtained by calculating the ratio of exposed brain area to intact brain area.\n\n#### Quantification of phospho-histone H3 immunolabeling\n\nConfocal images taken with the 20\u00a0\u00d7\u00a0air objective were imported into FIJI. Maximum projections were made of the stacks (z-stack height\u00a0=\u00a08 \u00b5m) and pH3+\u00a0cells were counted and normalized to the total measured brain area in each section. The data is presented as the number of pH3+\u00a0cells per 10,000 \u00b5m2 of brain tissue.\n\n$$\n\\frac{number\u00a0of\u00a0pH3+cells}{brain\u00a0area\u00a0(\\mum^{2})}\u221710,000\n$$\n\n### Statistics and visualisation\n\nData were collected from at least three independent experiments (N\u00a0\u2265\u00a03). The order of data collection was randomized with no blinding and no data were excluded from the analysis. Non-parametric tests as well as linear regression analysis were used for statistical analyses of the data as described in the figure captions. R2 values provide an estimate of the quality of the fits used in the plots. Pearson\u2019s correlation coefficient, on the other hand, provides a measure of the magnitude of correlation between the cell body density gradient and the stiffness gradient.\n",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "dff846dd-3b8f-4e77-b265-9aeee330903d",
+      "submission_id": "3bcba7c2-f60a-4200-970b-47deb0450c5b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carol A Mason, Columbia University United States\n\nReviewers:\n- Paola Bovolenta, CSIC-UAM Spain\n- Valerie Castellani, INMG CNRS 5310 INSERM U1217 France\n\n## Review text\n\nDOI: [10.7554/eLife.39356.018](https://doi.org/10.7554/eLife.39356.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rapid changes in tissue mechanics regulate cell behaviour in the developing embryonic brain\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Paola Bovolenta (Reviewer #1); Valerie Castellani (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe three reviewers appreciated your efforts to probe how dynamic changes in tissue mechanics have a close relationship with developmental processes, here, with a focus on axonal growth. Your findings that the pathway that retinal ganglion cell axons follow in the Xenopus brain is influenced by relatively rapid changes in tissue stiffness on which the axons grow, and that increasing stiffness correlates with enhanced cell density/proliferation, are indeed novel. Your approach of simultaneously observing and quantifying tissue stiffness and cell movements using atomic force microscopy with fluorescence imaging is exciting and will appeal to the growing number of groups interested in tissue morphogenesis.\n\nEssential revisions:\n\nThese experiments are considered necessary to strengthen the connection you make between proliferation, density, and tissue stiffness:\n\n1) Coronal sections of control and BI2536 treated embryos showing nuclei (DAPI stained) and glial endfeet (GFAP or Nestin labelling).\n\n2) Labelling sections with pH3 or other mitotic cell markers.\n\n3) Effects of the BI2536 inhibitor: Additional movies are needed (Figure 2F, N= only 2 for the BI2536 condition).\n\n4) Check whether RGC axons grow and sense stiffness normally in vitro in presence of BI2536 (for example, using the axon outgrowth assay described in Koser et al., 2016).\n\n5) Calculate optic tract (OT) elongation in control and BI2536-treated conditions. Related to BI2536 treatment and turning in the optic tract: does BI2536 generally affect axon growth along the optic tract in vivo?\n\n6) Demonstrate that repeated AFM measurements do not affect OT turning (by comparing with movies without AFM measures).\n\n7) Confirm with a second drug that cell density controls brain stiffness and RGC axon turning.\n\nThe following points do not rely on additional experiments but should be addressed:\n\n1) State in the text the optical resolution and the accuracy of the AFM measure relative to the surface distance (in other words, is AFM producing a measure of the stiffness of the tissues 10\u03bcm or 100\u03bcm below the surface scanned by the probe?).\n\n2) Provide illustrations of the angle measurements (in the video in Figure 1, it seems that the turn is initiated at 37 minutes).\n\n3) Show the ROIs used to quantify the stiffness gradient and the boxplot of the mean K values in rostral and caudal regions at different time points. In addition, using different ROIs along the OT would strengthen the specificity of the correlation between stiffness gradient and turning.\n\n4) Show several examples of the stiffness changes to better appreciate the spatial stereotypy relative to OT development.\n\n5) Figure 1D, related to text \"a stiffness gradient arose, mostly due to rising stiffness of tissue rostral to the OT\". Some of the heatmap data (e.g., Figure 1\u2014figure supplement 2C) suggests that there is decreasing stiffness on the caudal side, and relative cell density data (Figure 2D) suggests that there is decreasing cell density on the caudal side as well. Can the authors comment on the rostral-caudal stiffness v cell density? Is there some underlying biology to account for this?\n\n6) Explain why only 3 time points are presented in the graph Figure 2A and G even though measurements are made every 35 minutes.\n\n7) Figure 2B: According to the graph, it appears that the stiffness gradient is projected to form at 8-10 minutes. This suggests that it may begin to form prior to the beginning of the experiments presented (if the gradient forms linearly at those earlier times). Have the authors tried starting the experiments earlier? The manner in which the stiffness gradient forms (linearly or non-linearly) may have implications for the mechanism(s) initiating and influencing stiffness.\n\n8) Specify the estimated delay between gradient stiffness establishment and OT caudal turn (15-18 minutes). Paired analysis of the onset times of stiffness gradient and turn for each video (ladder graphic) would strengthen the arguments. It would be interesting to have an estimate of the stiffness differences that would lead to axon turning. This would be helpful together with point 4 to make predictions and to enrich the model proposed in Koser et al., 2016.\n\n9) Show a 3D reconstruction of the Z-stack used for Figure 2C and specify the total stack height.\n\n10) Explain how \"cell body density gradients\" were calculated (Figure 2E) (only \"relative cell body density\" is described in the Materials and methods). The authors should take into account that quantification made on a Z projection will lead to loss of information that will decrease the sensitivity of the analysis. Figure 2E suggests that a more balanced conclusion should be drawn from the experiment, as part of gradient stiffness is independent of cell density gradient (gradient stiffness would thus be 0.4 for no cell density gradient).\n\n11) Provide relative cell body density for the BI2536 condition, as done in Figure 2D for the control (indeed, the authors stated that \"cell density gradient was significantly decreased compare to controls, particularly at later stages (Figure 2C)\").\n\n12) The Materials and methods section indicates that relative density involves ratio of 2D area in the image occupied by nuclei over total area (this does not appear to be a cell count). This measurement could be affected by differences in nuclear size. Have the authors measured nuclear size over time? Does this change? Is nuclear size different in BI2536-treated embryos? Also, it is difficult to see nuclei on the caudal side of the optic tract in Figure 2C (control).\n\n13) Again, related BI2536 and cell density measurements, over time for BI2536-treated embryos: It would be useful to know if the BI2536 caused apoptosis (leading to an overall reduction in density)? The nuclei look somewhat condensed on what appears to be the rostral side of the tract in the BI2536 sample by st. 37 (Figure 2C).\n\n14) Show a different control movie in Figure 2F (OT trace looks the same as in Figure 1).\n\n15) Justify the changes of presentation between Figure 2A and G.\n\n16) Explain what BI2536 targets (inhibitor of polo-like kinase).\n\n17) Explain differences between coefficient R2= 0.95 in Figure 2C and Pearsons coefficient in the text (p=0.97). Add scale bars in Figure 2C and F.\n\nFor consideration in the Discussion:\n\n1) You suggest that the \"gradient in cell densities is responsible for the stiffness gradient\". However, the opposite could be true, as changes in stiffness have been shown to promote proliferation (should be referenced). In addition, as you previously showed that ECM manipulation changes the tissue stiffness and axon trajectory (Koser et al., 2016), it would be welcome to discuss whether you have assessed whether changes in cell density correlate with changes in ECM deposit and if BI2536 impairs it.\n\n2) In the last paragraph, you discuss applications of tiv-AFM to other possible contexts. Limitations of the system should be also mentioned.\n",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0a0e1122-1b31-4a8d-8147-8d7ee0a43dc5",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C1",
+      "claim": "Tissue mechanics is important for development.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue mechanics is important for development",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "91ac0d8e-0fcb-413e-ae00-e737774a238f",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C2",
+      "claim": "The spatio-temporal dynamics of in vivo tissue stiffness is still poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "the spatio-temporal dynamics of in vivo tissue stiffness is still poorly understood",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a knowledge gap motivating the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "bde0b1fc-d51f-4ca0-b353-106b3ccb7f48",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C3",
+      "claim": "The authors developed tiv-AFM, combining time-lapse in vivo atomic force microscopy with upright fluorescence imaging of embryonic tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We here developed tiv-AFM, combining time-lapse in vivo atomic force microscopy with upright fluorescence imaging of embryonic tissue",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim describing the technique developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "c5a75bd9-bd46-41b6-9ed2-6a5b1832ba47",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C4",
+      "claim": "During development, local tissue stiffness changes significantly within tens of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "during development local tissue stiffness changes significantly within tens of minutes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the tiv-AFM measurements described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "f4d35a3b-b8da-452d-be20-50d7ef1d614a",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C5",
+      "claim": "A stiffness gradient arose in the developing Xenopus brain within tens of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this time frame, a stiffness gradient arose in the developing Xenopus brain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the tiv-AFM experiments on Xenopus embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "26ce4840-7928-4e4c-8ba9-abaff92947f6",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C6",
+      "claim": "Retinal ganglion cell axons turned to follow the stiffness gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "retinal ganglion cell axons turned to follow this gradient",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the observed behavior of axons in relation to the measured stiffness gradient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "40f6e622-1d55-45bd-abef-7d70ce0d2ba6",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C7",
+      "claim": "Changes in local tissue stiffness were largely governed by cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in local tissue stiffness were largely governed by cell proliferation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion based on perturbation experiments described in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "6d16c91c-dcd7-42be-934a-5837d4db1def",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C8",
+      "claim": "Perturbation of mitosis diminished the stiffness gradient in developing brains.",
+      "claim_type": "EXPLICIT",
+      "source": "perturbation of mitosis diminished both the stiffness gradient",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the effect of mitosis perturbation on tissue stiffness gradients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "50e36311-4f82-4176-bf67-511977b5f181",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C9",
+      "claim": "Perturbation of mitosis diminished the caudal turn of axons found in control brains.",
+      "claim_type": "EXPLICIT",
+      "source": "perturbation of mitosis diminished both the stiffness gradient and the caudal turn of axons found in control brains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the effect of mitosis perturbation on axon guidance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "aa70a18c-9448-405f-ad47-35c7c20b90a6",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C10",
+      "claim": "There is a close relationship between the dynamics of tissue mechanics and developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "we identified a close relationship between the dynamics of tissue mechanics and developmental processes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "9dcfaf06-5929-4970-9dd8-60b555563d34",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C11",
+      "claim": "Time-resolved stiffness measurements are important for understanding developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "underpinning the importance of time-resolved stiffness measurements",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication drawn from the findings about rapid stiffness changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "a312d12d-4181-4813-8568-9aa6abd3eb98",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C12",
+      "claim": "All animal experiments were approved by the Ethical Review Committee of the University of Cambridge.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments were approved by the Ethical Review Committee of the University of Cambridge",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of ethical compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "9e8b9729-5d0f-4977-aab4-13ac3245da19",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C13",
+      "claim": "All animal experiments complied with guidelines set by the UK Home Office.",
+      "claim_type": "EXPLICIT",
+      "source": "complied with guidelines set by the UK Home Office",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of regulatory compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "203737d6-624f-4698-be1c-f82d813e067a",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C14",
+      "claim": "Single-cell-stage, wild-type Xenopus laevis embryos of both sexes were obtained via in vitro fertilisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell-stage, wild-type Xenopus laevis embryos of both sexes were obtained via in vitro fertilisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source and method of obtaining experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "a4c61a50-bc0b-4689-92c8-2597b1e74033",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C15",
+      "claim": "Embryos were reared in 0.1\u00d7 Modified Barth's Saline (MBS) at 14\u201318\u00b0C to reach the desired developmental stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos were reared in 0.1\u00d7 Modified Barth's Saline (MBS) at 14\u201318\u00b0C to reach the desired developmental stage, as described by Nieuwkoop and Faber, 1958.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for embryo culture, with citation to established methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "0dc420a8-ac8a-440f-adb7-feed03e1c54b",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C16",
+      "claim": "All embryos used in this study were below stage 45.",
+      "claim_type": "EXPLICIT",
+      "source": "All embryos used in this study were below stage 45.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specifies the developmental stage range of experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "b77c6002-5450-472c-b3b1-da6bcb5af782",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C17",
+      "claim": "The ath5::GAP-eGFP construct consists of a membrane-tagged GFP fusion under control of the retinal ganglion cell (RGC)-specific atonal homolog 5 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The construct consisted of a membrane-tagged GFP fusion under control of the retinal ganglion cell (RGC)-specific atonal homolog 5 promoter (Kanekar et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the genetic construct used, with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "0921c451-d8bc-4efc-9456-82f04ad78e42",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C18",
+      "claim": "The ath5::GAP-eGFP construct selectively labelled RGCs in a single retina.",
+      "claim_type": "EXPLICIT",
+      "source": "This selectively labelled RGCs in a single retina",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specificity of the labeling achieved with the construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "78d26f5d-a15b-4826-983c-8b32445cd3ed",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C19",
+      "claim": "RGC axons grew across the optic chiasm and into the unlabelled brain hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "the axons of which grew across the optic chiasm and into the unlabelled brain hemisphere",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the anatomical trajectory of labeled axons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "214fbe2d-55c7-423c-839c-6e2767bee620",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C20",
+      "claim": "Stage 33/34 embryos were anaesthetised for the exposed brain preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Stage 33/34 embryos were anaesthetised",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a step in the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "6103540d-eda1-41cb-9f2f-92e4db03f654",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C21",
+      "claim": "The eye primordium was removed to expose the underlying brain hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "the eye primordium was removed and the underlying brain hemisphere exposed as described (Chien et al., 1993; Irie et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical procedure used, with citations to established methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "f5e14166-b8b3-495a-98fe-c4a828101b34",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C22",
+      "claim": "Higher osmolarity retards skin regrowth, allowing for experiments spanning several hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher osmolarity retards skin regrowth, allowing for experiments spanning several hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for using higher osmolarity medium.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "e8c109c7-8a83-48bd-999c-444117c4abcb",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C23",
+      "claim": "Embryo viability throughout all in vivo experiments was assessed by the presence of a visible heartbeat.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryo viability throughout all in vivo experiments was assessed by the presence of a visible heartbeat (which begins at st. 33/34 (Gurdon et al., 1997)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for assessing embryo viability, with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "dc6933e8-7532-446f-9564-69b75254af75",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C24",
+      "claim": "The heartbeat begins at stage 33/34 in Xenopus embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "which begins at st. 33/34 (Gurdon et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a developmental fact cited from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "a67ab2f5-5268-4e56-981f-bc58a6c4967c",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C25",
+      "claim": "Polyacrylamide hydrogels with 5% AA and 0.07% Bis-AA in PBS have a shear modulus of approximately 300 Pa.",
+      "claim_type": "EXPLICIT",
+      "source": "a premix composition previously determined to give a shear modulus G (a measure of stiffness) of ~300 Pa (5% AA, 0.07% Bis-AA in PBS)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanical properties of a specific hydrogel formulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "54226165-43a0-49d3-affb-b2f6de02db54",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C26",
+      "claim": "Stiff gels comprised of 7.5% AA/0.2% Bis-AA in PBS have a shear modulus of approximately 5,500 Pa.",
+      "claim_type": "EXPLICIT",
+      "source": "Stiff gels were comprised of 7.5% AA/0.2% Bis-AA in PBS, resulting in a shear modulus of G ~5,500 Pa",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanical properties of stiff hydrogels used in experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "ff6d845d-7170-4b4a-b049-4ef177ee9162",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C27",
+      "claim": "Soft gels comprised of 5% AA/0.04% Bis-AA in PBS have a shear modulus of approximately 200 Pa.",
+      "claim_type": "EXPLICIT",
+      "source": "soft gels were comprised of 5% AA/0.04% Bis-AA in PBS, resulting in G ~200 Pa",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanical properties of soft hydrogels used in experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "809eec29-acb9-4e3e-af26-c4fc2a467f3b",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C28",
+      "claim": "Eye primordia explants were cultured at 20\u00b0C for 22\u201324 hr in Xenopus cell culture medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Dishes were cultured at 20\u00b0C for 22\u201324 hr in Xenopus cell culture medium (60% L15 medium + 1\u00d7 PSF, adjusted to pH 7.6\u20137.8, and filter sterilized).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the culture conditions for in vitro experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "cde4270b-6605-4a18-98f3-16b65531644a",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C29",
+      "claim": "The thermal noise method was used to calibrate tipless silicon cantilevers and determine the spring constant k.",
+      "claim_type": "EXPLICIT",
+      "source": "Tipless silicon cantilevers (Arrow-TL1, NanoWorld) were calibrated using the thermal noise method (Hutter and Bechhoefer, 1993) to determine the spring constant k",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration method with citation to the established technique.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "764ad4aa-29b0-461e-9297-1155e59751f6",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C30",
+      "claim": "Cantilevers with spring constants between 0.02\u20130.04 N/m were selected for AFM measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "those with k between 0.02\u20130.04 N/m were selected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection criteria for cantilevers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "cb882a1a-d29c-4f9e-9fb8-276c3cd5f3d4",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C31",
+      "claim": "Monodisperse spherical polystyrene beads with diameter 37.28 \u00b1 0.34 \u00b5m were glued to cantilever ends as probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Monodisperse spherical polystyrene beads (diameter 37.28 \u00b1 0.34 \u00b5m; microParticles GmbH) were glued to the cantilever ends as probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the AFM probe preparation with specific dimensions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "59f65ba2-235e-49dd-be2a-9f3c0d8b1f12",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C32",
+      "claim": "AFM indentation measurements used a maximum indentation force of 10 nN.",
+      "claim_type": "EXPLICIT",
+      "source": "Indentation measurements (maximum indentation force: 10 nN, approach speed: 5 \u00b5m/s, data rate: 1,000 Hz)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the AFM measurement parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "9758c6e2-af38-4dee-967e-d63163052ad3",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C33",
+      "claim": "AFM indentation measurements used an approach speed of 5 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Indentation measurements (maximum indentation force: 10 nN, approach speed: 5 \u00b5m/s, data rate: 1,000 Hz)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the AFM measurement parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "3d7b911d-90ed-4c60-8200-3d164ca7fac2",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C34",
+      "claim": "AFM indentation measurements used a data rate of 1,000 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Indentation measurements (maximum indentation force: 10 nN, approach speed: 5 \u00b5m/s, data rate: 1,000 Hz)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the AFM measurement parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "73facd28-216c-45aa-84b4-fa521e44aa6e",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C35",
+      "claim": "After each AFM measurement, the cantilever was retracted by 100 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "After each measurement, the cantilever was retracted by 100 \u00b5m",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the AFM measurement protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "733e681a-fa69-4968-96d5-3f8f046df1c4",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C36",
+      "claim": "The stage moved by 20\u201325 \u00b5m between successive AFM measurement positions.",
+      "claim_type": "EXPLICIT",
+      "source": "the stage moved by a set distance (20\u201325 \u00b5m) to the next position (Koser et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial resolution of AFM mapping with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "702e239a-a9dc-4bac-816c-a2a990a24142",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C37",
+      "claim": "Xenopus brains are optically opaque.",
+      "claim_type": "EXPLICIT",
+      "source": "To allow simultaneous time-lapse imaging of the growing OT and in vivo stiffness measurements of live Xenopus brains, which are optically opaque",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the optical properties of the tissue.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "42a39fe2-53b2-4bac-9214-ce1c55774df8",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C38",
+      "claim": "An upright epifluorescence set-up was custom-fit above the AFM head to enable simultaneous optical imaging and AFM measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "an upright epifluorescence set-up was custom-fit above the AFM head",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the custom instrumentation developed for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "4bbaed08-5e5f-4b22-a543-bde8bd1a68ab",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C39",
+      "claim": "The microscope was based on a Zeiss AxioZoom V16 fluorescence stereomicroscope without eyepieces.",
+      "claim_type": "EXPLICIT",
+      "source": "which was based on a Zeiss AxioZoom V16 fluorescence stereomicroscope (without eyepieces)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optical components of the custom setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "e03f558f-fd37-496b-8bb9-145731e647cb",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C40",
+      "claim": "A long working distance objective with automatic zoom and high NA allowed in vivo fluorescence imaging of RGC axons through the transparent AFM head.",
+      "claim_type": "EXPLICIT",
+      "source": "A long working distance objective with automatic zoom and high NA (PlanApo Z 0.5\u00d7/0.125, working distance 114 mm, Zeiss) allowed in vivo fluorescence imaging of RGC axons through the transparent AFM head",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optical capabilities of the custom setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "393981ff-59a4-4666-8894-fa7ef8163519",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C41",
+      "claim": "Stage 33/34 embryos with ath5::GAP-eGFP-labelled OTs in which the OT was clearly visible but had not yet formed the mid-OT bend were selected for tiv-AFM experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Stage 33/34 embryos with ath5::GAP-eGFP-labelled OTs were prepared with one brain hemisphere exposed as described above, and those in which the OT was clearly visible (but had not yet formed the mid-OT bend) were selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection criteria for experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "126edb54-e038-4435-ac11-953b8f1384ff",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C42",
+      "claim": "A measurement region of approximately 150 \u00d7 250 \u00b5m was defined to include both the growing OT and the region of the mid-diencephalic turn.",
+      "claim_type": "EXPLICIT",
+      "source": "a measurement region of approximately 150 \u00d7 250 \u00b5m defined to include both the growing OT and the region of the mid-diencephalic turn",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial extent of AFM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "aa071e4d-9933-46fd-ad27-1a99fd5ce868",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C43",
+      "claim": "A stiffness map was collected and iterated over the same area every approximately 35 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "A stiffness map of the area was collected and the map iterated over the same area every ~35 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal resolution of time-lapse AFM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "b617238f-07d8-47d0-9ffc-eb4fd7326be1",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C44",
+      "claim": "At the end of every line in the measurement grid, a fluorescence image of the optic tract was automatically collected.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of every line in the measurement grid, the stage was moved back to a pre-defined location and a fluorescence image of the optic tract automatically collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the protocol for simultaneous imaging and AFM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "4cdff8af-72e9-4670-9029-753129e6cfa7",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C45",
+      "claim": "Temperature was maintained at 25\u00b0C for the duration of tiv-AFM measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature was maintained at 25\u00b0C for the duration of the measurement by a PetriDish Heater (JPK Instruments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the environmental control during experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "0d3b90cc-f8ae-4998-a0e4-ea12f9cda0a8",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C46",
+      "claim": "Force-distance curves obtained from stiffness measurements were fitted to the Hertz model to obtain the reduced apparent elastic modulus K.",
+      "claim_type": "EXPLICIT",
+      "source": "Force-distance curves obtained from stiffness measurements were analysed with a custom-written MATLAB script (Koser et al., 2016; Christ et al., 2010) to obtain the reduced apparent elastic modulus K. Raw AFM data were fitted to the Hertz model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis method with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "9667bda9-bf0a-4a42-9179-29e53b0cb59b",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C47",
+      "claim": "Force-distance curves were analysed at the maximum applied force F = 10 nN.",
+      "claim_type": "EXPLICIT",
+      "source": "Force-distance curves were analysed at the maximum applied force F = 10 nN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis parameters for AFM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "519460d3-a55c-4735-945f-cec3176e325d",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C48",
+      "claim": "Force-distance curves were excluded if there was inability to apply linear fits through the baseline region due to noise.",
+      "claim_type": "EXPLICIT",
+      "source": "criteria for excluding individual force-distance curves were (1) inability to apply linear fits through the baseline region, for example due to noise",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control criteria for data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "05c8f9d6-b88d-4eb9-8a3f-685f7b9d3e90",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C49",
+      "claim": "Force-distance curves were excluded if there was inability to apply good-quality Hertzian fits to the indentation region.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) inability to apply good-quality Hertzian fits to the indentation region, that is, the fit did not align with the raw data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control criteria for data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "cfad95fc-2dc5-4a7a-ae2c-b2b8ad969ebe",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C50",
+      "claim": "Previously sorted, gridded AFM data were smoothed in x-, y-, and time dimensions using an algorithm based on the discrete cosine transform.",
+      "claim_type": "EXPLICIT",
+      "source": "previously sorted, gridded AFM data were smoothed in x-, y-, and time dimensions using an algorithm based on the discrete cosine transform by Garcia et al (Garcia, 2010; Garcia, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "88a1deb2-faa3-4d7d-baee-e2460e96fbcf",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C51",
+      "claim": "An iteratively weighted version of the penalized least squares approach was used to smooth the data and interpolate missing values.",
+      "claim_type": "EXPLICIT",
+      "source": "an iteratively weighted version of the penalized least squares approach was used to smooth the data and interpolate missing values where the force-distance curves were not analysable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific smoothing algorithm used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "76d52b6d-c522-4c1d-b129-f814470e2f46",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C52",
+      "claim": "The smoothing algorithm uses the entire data set to interpolate missing values, as opposed to only the nearest neighbouring data.",
+      "claim_type": "EXPLICIT",
+      "source": "This algorithm has the advantage of using the entire data set to interpolate missing values, as opposed to only the nearest neighbouring data (as, for example, in other smoothing methods such as a simple spline interpolation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the advantage of the chosen smoothing method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "39bf6349-5af7-4a78-992f-2f05dbc3f6f2",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C53",
+      "claim": "Local tissue stiffness gradients were calculated for a 50 \u00d7 50 \u00b5m\u00b2 region of interest on the rostral and caudal sides of the OT.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean values of K were calculated for a 50 \u00d7 50 \u00b5m2 region of interest (ROI) on the rostral (KR) and caudal sides (KC) of the OT",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for quantifying stiffness gradients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "fc25c9da-2370-4538-a49d-7d18f07d4d46",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C54",
+      "claim": "For each frame in a time-lapse series, ROIs were defined three times and the mean of the three measurements was used for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For each frame in a given time-lapse series, ROIs were defined three times and the mean of the three measurements for each ROI was used for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement replication protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "5a0d38b0-07a0-4b98-93a0-0e9756387326",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C55",
+      "claim": "The magnitude of the OT turn was calculated using the FIJI Angle tool by defining three points: chiasm, mid-diencephalic turn, and end of OT.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the OT turn was calculated from each frame of these movies using the FIJI Angle tool. Three points were defined manually (chiasm, mid-diencephalic turn, and end of OT) such that the two lines drawn through these points ran through the centre of the OT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for quantifying axon turning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "e1050729-0821-4149-86e0-bc8673a6c471",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C56",
+      "claim": "Each OT turning angle measurement was repeated three times and averaged.",
+      "claim_type": "EXPLICIT",
+      "source": "Each measurement was repeated three times, averaged",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement replication protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "e9c42fc2-ead8-42e9-9b71-f8af73025663",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C57",
+      "claim": "A positive OT turning angle value denotes turning in the caudal direction.",
+      "claim_type": "EXPLICIT",
+      "source": "a positive value denotes turning in the caudal direction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the convention for interpreting turning angle measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "73f48cef-aba1-4b64-b317-54710d93b1f2",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C58",
+      "claim": "Elongation of the OT was calculated by the major-to-minor axis ratio using an automated algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation of the OT was calculated by the major-to-minor axis ratio using a previously described automated algorithm in Matlab (Koser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for quantifying OT elongation with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "1c0983bb-f47f-4509-9d46-0ad4747aca8b",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C59",
+      "claim": "Axes for OT elongation were determined by fitting ellipses with the same normalized second central moment as the OT area.",
+      "claim_type": "EXPLICIT",
+      "source": "axes were determined by fitting ellipses, with the same normalized second central moment as the OT area, around the OTs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific algorithm for calculating elongation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "eec51dc2-326a-4ddf-92d3-a9b27333bf3f",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C60",
+      "claim": "Two 50 \u03bcm \u00d7 50 \u03bcm regions of interest matching the size used in stiffness gradient analysis were selected rostral and caudal to the OT caudal bend for cell body density measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Two 50 \u03bcm \u00d7 50 \u03bcm regions of interest (matching the size of regions of interest used in stiffness gradient analysis) were selected, rostral (DR) and caudal (DC) to the region corresponding to the OT caudal bend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for measuring cell body density in regions corresponding to stiffness measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "3f209894-5933-473a-b1b8-0c1d257564a6",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C61",
+      "claim": "Relative cell body density was calculated by dividing the area occupied by nuclei by the total region area.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative cell body density was calculated by dividing the area occupied by nuclei by the total region area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calculation method for cell body density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "ba6c4681-8e9c-4712-bf59-a29e5c2253a7",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C62",
+      "claim": "Normalised brain areas were obtained by calculating the ratio of exposed brain area to intact brain area.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalised brain areas were obtained by calculating the ratio of exposed brain area to intact brain area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the normalization method for brain area measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "b356739f-e447-4014-af69-bb25a986b8e1",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C63",
+      "claim": "pH3+ cells were counted and normalized to the total measured brain area in each section.",
+      "claim_type": "EXPLICIT",
+      "source": "pH3+ cells were counted and normalized to the total measured brain area in each section",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quantification method for mitotic cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "645b67c3-6b2a-4bce-8505-fe9ea992c041",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C64",
+      "claim": "Data were collected from at least three independent experiments (N \u2265 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Data were collected from at least three independent experiments (N \u2265 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental replication standard.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "55ab2de7-0d0e-413c-aadb-1099afda8072",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C65",
+      "claim": "The order of data collection was randomized with no blinding.",
+      "claim_type": "EXPLICIT",
+      "source": "The order of data collection was randomized with no blinding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design regarding randomization and blinding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "220e9c31-c4b9-42b9-a4c8-7a20ddc057e3",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C66",
+      "claim": "No data were excluded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "no data were excluded from the analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data inclusion policy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "024d1e86-4e6e-4293-b31c-33b71afad8a2",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C67",
+      "claim": "Non-parametric tests and linear regression analysis were used for statistical analyses of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-parametric tests as well as linear regression analysis were used for statistical analyses of the data as described in the figure captions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "6666a177-0b38-43af-ac7a-7d360fc8bae6",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C68",
+      "claim": "R\u00b2 values provide an estimate of the quality of the fits used in the plots.",
+      "claim_type": "EXPLICIT",
+      "source": "R2 values provide an estimate of the quality of the fits used in the plots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the interpretation of R\u00b2 values.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "c1cd9e16-198d-46f3-82e0-35a3dcba6032",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "claim_id": "C69",
+      "claim": "Pearson's correlation coefficient provides a measure of the magnitude of correlation between the cell body density gradient and the stiffness gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson's correlation coefficient, on the other hand, provides a measure of the magnitude of correlation between the cell body density gradient and the stiffness gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the use of Pearson's correlation coefficient in the analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0792ec21-ecfe-4712-b57a-a4c970083f29",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed tiv-AFM, a novel technique combining time-lapse in vivo atomic force microscopy with upright fluorescence imaging. This custom system overcomes the optical opacity of Xenopus brains by integrating an upright epifluorescence microscope above the AFM head, enabling simultaneous mechanical measurements and fluorescence imaging of developing embryonic tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C37-C40 collectively describe the development and technical specifications of the tiv-AFM system. The methodological details are comprehensive, including specific equipment models and optical parameters. The technical solution directly addresses the stated challenge of imaging optically opaque tissue during AFM measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "a7dbd2c5-226b-49aa-90d8-de3204f543e9",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using tiv-AFM with ~35 minute temporal resolution, the authors demonstrate that local tissue stiffness in the developing Xenopus brain changes significantly within tens of minutes, with a stiffness gradient arising during this timeframe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, and C43 establish the rapid dynamics of tissue stiffness changes. The temporal resolution of ~35 minutes is explicitly stated (C43), and the findings of significant stiffness changes and gradient formation within tens of minutes (C4, C5) are directly supported by this measurement capability. However, the manuscript excerpt does not include the actual data figures that would show these changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "cff65fb2-b04b-4f09-a8f6-4fd81d900f5e",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Retinal ganglion cell axons turn to follow the stiffness gradient that arises in the developing brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C6 states that axons turned to follow the gradient, but the manuscript excerpt provided contains only methods and abstract text without the actual experimental data, statistical analyses, or figures demonstrating this correlation. The temporal relationship and causality between gradient formation and axon turning cannot be evaluated from the methods section alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "8e4fa3a6-2f0b-4e4c-afba-4bea9b716e66",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cell proliferation governs changes in local tissue stiffness, as perturbation of mitosis diminishes both the stiffness gradient and the caudal turn of axons in developing brains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7-C9 present a mechanistic conclusion linking cell proliferation to stiffness changes and axon guidance. While the methods describe mitosis perturbation experiments using BI2536, hydroxyurea, and aphidicolin, the actual experimental results, quantification, statistical significance, and controls are not provided in this excerpt. The causal chain requires demonstration that mitosis perturbation specifically affects stiffness before affecting axon turning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "a7e171b1-3d29-48e0-aad5-ce0890a9506c",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AFM measurements were performed using calibrated tipless cantilevers with 37.28 \u00b1 0.34 \u00b5m spherical probes, with specific measurement parameters: 10 nN maximum force, 5 \u00b5m/s approach speed, 1,000 Hz data rate, and 20-25 \u00b5m spatial resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 provide comprehensive technical specifications for AFM measurements. The thermal noise calibration method is appropriately cited (C29), cantilever selection criteria are defined (C30), and all measurement parameters are explicitly stated. These methodological details are sufficient for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "f777d070-09fb-4d6a-ab05-350e184c1de8",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Force-distance curves were analyzed using the Hertz model to obtain the reduced apparent elastic modulus K, with quality control criteria excluding curves with poor baseline fits or inadequate Hertzian fits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 describe the data analysis approach with appropriate citations to established methods. The Hertz model is standard for AFM indentation analysis, and the quality control criteria (C48, C49) are reasonable for ensuring data integrity. However, the assumption of the Hertz model (homogeneous, isotropic material) may not fully apply to complex biological tissue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "3f8ed8da-4a92-41a0-af61-461ff91419f4",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AFM data were smoothed using a discrete cosine transform-based algorithm that interpolates missing values using the entire dataset rather than only nearest neighbors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 describe the smoothing algorithm with appropriate citations (Garcia 2010, 2011). The iteratively weighted penalized least squares approach is a valid method for handling missing data. However, the extent of smoothing and its potential impact on gradient measurements is not discussed, which could affect the interpretation of rapid stiffness changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "d594c56c-8de0-4dd0-99dc-261539353b25",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Local tissue stiffness gradients were quantified using 50 \u00d7 50 \u00b5m\u00b2 regions of interest on rostral and caudal sides of the optic tract, with measurements repeated three times per frame.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 describe a systematic approach to gradient quantification with technical replication (three measurements per frame). The ROI size matches the spatial resolution of AFM measurements (~20-25 \u00b5m spacing), providing adequate sampling. The method is clearly defined and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "a04f3c2f-6d46-42ff-a275-5f26082fe71b",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optic tract turning angles were measured using FIJI software by defining three anatomical points, with measurements repeated three times and averaged, where positive values indicate caudal turning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 describe a manual but systematic measurement approach with technical replication. The three-point angle measurement is straightforward and the convention for interpreting direction is clearly defined. However, manual definition of points introduces potential subjectivity, and inter-rater reliability is not discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "d9819a10-50a5-4666-b705-3988e6d1d980",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cell body density was measured in 50 \u00b5m \u00d7 50 \u00b5m regions matching stiffness gradient analysis regions, calculated as the ratio of nuclear area to total region area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 describe a method for quantifying cell density that spatially corresponds to stiffness measurements, enabling direct comparison. The approach using nuclear area as a proxy for cell density is reasonable, though it assumes uniform nuclear size and does not account for cell size variation or three-dimensional packing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "849731ef-82ed-4424-bf7f-dd4024666288",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ath5::GAP-eGFP construct selectively labels retinal ganglion cells in a single retina, with axons growing across the optic chiasm into the unlabeled brain hemisphere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 describe the genetic labeling strategy with appropriate citation (Kanekar et al., 1997). The RGC-specific promoter and membrane-tagged GFP provide selective visualization of axon trajectories. This unilateral labeling approach is well-established for studying axon guidance in Xenopus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "48e71f0e-9df0-4a8d-b64e-caff3c16d054",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Polyacrylamide hydrogels with defined compositions produce substrates with specific stiffnesses: ~300 Pa (5% AA/0.07% Bis-AA), ~5,500 Pa (7.5% AA/0.2% Bis-AA), and ~200 Pa (5% AA/0.04% Bis-AA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 provide specific hydrogel formulations and their mechanical properties. These are standard materials for mechanobiology studies. However, the manuscript states these values were 'previously determined' or measured by AFM, but does not provide validation data or measurement variability for these specific batches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "5e779d1e-b913-4f0a-9c5f-440eb1851fa3",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Experiments included at least three independent replicates with randomized data collection order but no blinding, with no data exclusion and analysis using non-parametric tests and linear regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 describe the experimental design and statistical approach. N\u22653 is minimal but acceptable for biological replicates. The lack of blinding (C65) is a limitation for subjective measurements like manual angle quantification. The statement of no data exclusion (C66) is transparent, though exclusion criteria for poor AFM curves were defined earlier (C48-C49), creating a minor inconsistency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "0c0205cf-bbac-4fbe-9560-c1157ac897ea",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Xenopus laevis embryos were obtained by in vitro fertilization, cultured to stage 33/34, then subjected to exposed brain preparation by removing the eye primordium in high osmolarity medium to retard skin regrowth, with viability monitored by heartbeat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C20-C23 describe standard Xenopus embryo handling and surgical preparation with appropriate citations to established methods (Nieuwkoop and Faber 1958; Chien et al. 1993; Irie et al. 2002). The use of higher osmolarity to prevent skin regrowth (C22) is a practical consideration for extended experiments. Heartbeat as a viability indicator (C23) is appropriate for these developmental stages.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "55508578-7953-472a-8416-add5d79f013e",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "All animal experiments were approved by the University of Cambridge Ethical Review Committee and complied with UK Home Office guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 document ethical and regulatory compliance. These are standard statements for animal research conducted in the UK and indicate appropriate oversight.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    },
+    {
+      "id": "8b1b0226-3962-4593-928d-e833ffd3441f",
+      "content_id": "eb723535-da68-4b98-83ee-9095665ed5f1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study addresses the knowledge gap in understanding spatio-temporal dynamics of tissue stiffness during development, identifying a close relationship between tissue mechanics dynamics and developmental processes that underscores the importance of time-resolved measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C1-C2 establish the motivation, while C10-C11 present broad conclusions. However, these conclusions require support from the actual experimental data not provided in this excerpt. The 'close relationship' (C10) between mechanics and development needs quantitative demonstration, and the importance of time-resolved measurements (C11) depends on showing that static measurements would miss critical dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:04:23.818792Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bde0b1fc-d51f-4ca0-b353-106b3ccb7f48",
+      "result_id": "0792ec21-ecfe-4712-b57a-a4c970083f29"
+    },
+    {
+      "claim_id": "702e239a-a9dc-4bac-816c-a2a990a24142",
+      "result_id": "0792ec21-ecfe-4712-b57a-a4c970083f29"
+    },
+    {
+      "claim_id": "42a39fe2-53b2-4bac-9214-ce1c55774df8",
+      "result_id": "0792ec21-ecfe-4712-b57a-a4c970083f29"
+    },
+    {
+      "claim_id": "4bbaed08-5e5f-4b22-a543-bde8bd1a68ab",
+      "result_id": "0792ec21-ecfe-4712-b57a-a4c970083f29"
+    },
+    {
+      "claim_id": "e03f558f-fd37-496b-8bb9-145731e647cb",
+      "result_id": "0792ec21-ecfe-4712-b57a-a4c970083f29"
+    },
+    {
+      "claim_id": "c5a75bd9-bd46-41b6-9ed2-6a5b1832ba47",
+      "result_id": "a7dbd2c5-226b-49aa-90d8-de3204f543e9"
+    },
+    {
+      "claim_id": "f4d35a3b-b8da-452d-be20-50d7ef1d614a",
+      "result_id": "a7dbd2c5-226b-49aa-90d8-de3204f543e9"
+    },
+    {
+      "claim_id": "aa071e4d-9933-46fd-ad27-1a99fd5ce868",
+      "result_id": "a7dbd2c5-226b-49aa-90d8-de3204f543e9"
+    },
+    {
+      "claim_id": "26ce4840-7928-4e4c-8ba9-abaff92947f6",
+      "result_id": "cff65fb2-b04b-4f09-a8f6-4fd81d900f5e"
+    },
+    {
+      "claim_id": "40f6e622-1d55-45bd-abef-7d70ce0d2ba6",
+      "result_id": "8e4fa3a6-2f0b-4e4c-afba-4bea9b716e66"
+    },
+    {
+      "claim_id": "6d16c91c-dcd7-42be-934a-5837d4db1def",
+      "result_id": "8e4fa3a6-2f0b-4e4c-afba-4bea9b716e66"
+    },
+    {
+      "claim_id": "50e36311-4f82-4176-bf67-511977b5f181",
+      "result_id": "8e4fa3a6-2f0b-4e4c-afba-4bea9b716e66"
+    },
+    {
+      "claim_id": "cde4270b-6605-4a18-98f3-16b65531644a",
+      "result_id": "a7e171b1-3d29-48e0-aad5-ce0890a9506c"
+    },
+    {
+      "claim_id": "764ad4aa-29b0-461e-9297-1155e59751f6",
+      "result_id": "a7e171b1-3d29-48e0-aad5-ce0890a9506c"
+    },
+    {
+      "claim_id": "cb882a1a-d29c-4f9e-9fb8-276c3cd5f3d4",
+      "result_id": "a7e171b1-3d29-48e0-aad5-ce0890a9506c"
+    },
+    {
+      "claim_id": "59f65ba2-235e-49dd-be2a-9f3c0d8b1f12",
+      "result_id": "a7e171b1-3d29-48e0-aad5-ce0890a9506c"
+    },
+    {
+      "claim_id": "9758c6e2-af38-4dee-967e-d63163052ad3",
+      "result_id": "a7e171b1-3d29-48e0-aad5-ce0890a9506c"
+    },
+    {
+      "claim_id": "3d7b911d-90ed-4c60-8200-3d164ca7fac2",
+      "result_id": "a7e171b1-3d29-48e0-aad5-ce0890a9506c"
+    },
+    {
+      "claim_id": "73facd28-216c-45aa-84b4-fa521e44aa6e",
+      "result_id": "a7e171b1-3d29-48e0-aad5-ce0890a9506c"
+    },
+    {
+      "claim_id": "733e681a-fa69-4968-96d5-3f8f046df1c4",
+      "result_id": "a7e171b1-3d29-48e0-aad5-ce0890a9506c"
+    },
+    {
+      "claim_id": "0d3b90cc-f8ae-4998-a0e4-ea12f9cda0a8",
+      "result_id": "f777d070-09fb-4d6a-ab05-350e184c1de8"
+    },
+    {
+      "claim_id": "9667bda9-bf0a-4a42-9179-29e53b0cb59b",
+      "result_id": "f777d070-09fb-4d6a-ab05-350e184c1de8"
+    },
+    {
+      "claim_id": "519460d3-a55c-4735-945f-cec3176e325d",
+      "result_id": "f777d070-09fb-4d6a-ab05-350e184c1de8"
+    },
+    {
+      "claim_id": "05c8f9d6-b88d-4eb9-8a3f-685f7b9d3e90",
+      "result_id": "f777d070-09fb-4d6a-ab05-350e184c1de8"
+    },
+    {
+      "claim_id": "cfad95fc-2dc5-4a7a-ae2c-b2b8ad969ebe",
+      "result_id": "3f8ed8da-4a92-41a0-af61-461ff91419f4"
+    },
+    {
+      "claim_id": "88a1deb2-faa3-4d7d-baee-e2460e96fbcf",
+      "result_id": "3f8ed8da-4a92-41a0-af61-461ff91419f4"
+    },
+    {
+      "claim_id": "76d52b6d-c522-4c1d-b129-f814470e2f46",
+      "result_id": "3f8ed8da-4a92-41a0-af61-461ff91419f4"
+    },
+    {
+      "claim_id": "39bf6349-5af7-4a78-992f-2f05dbc3f6f2",
+      "result_id": "d594c56c-8de0-4dd0-99dc-261539353b25"
+    },
+    {
+      "claim_id": "fc25c9da-2370-4538-a49d-7d18f07d4d46",
+      "result_id": "d594c56c-8de0-4dd0-99dc-261539353b25"
+    },
+    {
+      "claim_id": "5a0d38b0-07a0-4b98-93a0-0e9756387326",
+      "result_id": "a04f3c2f-6d46-42ff-a275-5f26082fe71b"
+    },
+    {
+      "claim_id": "e1050729-0821-4149-86e0-bc8673a6c471",
+      "result_id": "a04f3c2f-6d46-42ff-a275-5f26082fe71b"
+    },
+    {
+      "claim_id": "e9c42fc2-ead8-42e9-9b71-f8af73025663",
+      "result_id": "a04f3c2f-6d46-42ff-a275-5f26082fe71b"
+    },
+    {
+      "claim_id": "eec51dc2-326a-4ddf-92d3-a9b27333bf3f",
+      "result_id": "d9819a10-50a5-4666-b705-3988e6d1d980"
+    },
+    {
+      "claim_id": "3f209894-5933-473a-b1b8-0c1d257564a6",
+      "result_id": "d9819a10-50a5-4666-b705-3988e6d1d980"
+    },
+    {
+      "claim_id": "b77c6002-5450-472c-b3b1-da6bcb5af782",
+      "result_id": "849731ef-82ed-4424-bf7f-dd4024666288"
+    },
+    {
+      "claim_id": "0921c451-d8bc-4efc-9456-82f04ad78e42",
+      "result_id": "849731ef-82ed-4424-bf7f-dd4024666288"
+    },
+    {
+      "claim_id": "78d26f5d-a15b-4826-983c-8b32445cd3ed",
+      "result_id": "849731ef-82ed-4424-bf7f-dd4024666288"
+    },
+    {
+      "claim_id": "a67ab2f5-5268-4e56-981f-bc58a6c4967c",
+      "result_id": "48e71f0e-9df0-4a8d-b64e-caff3c16d054"
+    },
+    {
+      "claim_id": "54226165-43a0-49d3-affb-b2f6de02db54",
+      "result_id": "48e71f0e-9df0-4a8d-b64e-caff3c16d054"
+    },
+    {
+      "claim_id": "ff6d845d-7170-4b4a-b049-4ef177ee9162",
+      "result_id": "48e71f0e-9df0-4a8d-b64e-caff3c16d054"
+    },
+    {
+      "claim_id": "645b67c3-6b2a-4bce-8505-fe9ea992c041",
+      "result_id": "5e779d1e-b913-4f0a-9c5f-440eb1851fa3"
+    },
+    {
+      "claim_id": "55ab2de7-0d0e-413c-aadb-1099afda8072",
+      "result_id": "5e779d1e-b913-4f0a-9c5f-440eb1851fa3"
+    },
+    {
+      "claim_id": "220e9c31-c4b9-42b9-a4c8-7a20ddc057e3",
+      "result_id": "5e779d1e-b913-4f0a-9c5f-440eb1851fa3"
+    },
+    {
+      "claim_id": "024d1e86-4e6e-4293-b31c-33b71afad8a2",
+      "result_id": "5e779d1e-b913-4f0a-9c5f-440eb1851fa3"
+    },
+    {
+      "claim_id": "203737d6-624f-4698-be1c-f82d813e067a",
+      "result_id": "0c0205cf-bbac-4fbe-9560-c1157ac897ea"
+    },
+    {
+      "claim_id": "a4c61a50-bc0b-4689-92c8-2597b1e74033",
+      "result_id": "0c0205cf-bbac-4fbe-9560-c1157ac897ea"
+    },
+    {
+      "claim_id": "0dc420a8-ac8a-440f-adb7-feed03e1c54b",
+      "result_id": "0c0205cf-bbac-4fbe-9560-c1157ac897ea"
+    },
+    {
+      "claim_id": "214fbe2d-55c7-423c-839c-6e2767bee620",
+      "result_id": "0c0205cf-bbac-4fbe-9560-c1157ac897ea"
+    },
+    {
+      "claim_id": "6103540d-eda1-41cb-9f2f-92e4db03f654",
+      "result_id": "0c0205cf-bbac-4fbe-9560-c1157ac897ea"
+    },
+    {
+      "claim_id": "f5e14166-b8b3-495a-98fe-c4a828101b34",
+      "result_id": "0c0205cf-bbac-4fbe-9560-c1157ac897ea"
+    },
+    {
+      "claim_id": "e8c109c7-8a83-48bd-999c-444117c4abcb",
+      "result_id": "0c0205cf-bbac-4fbe-9560-c1157ac897ea"
+    },
+    {
+      "claim_id": "a312d12d-4181-4813-8568-9aa6abd3eb98",
+      "result_id": "55508578-7953-472a-8416-add5d79f013e"
+    },
+    {
+      "claim_id": "9e8b9729-5d0f-4977-aab4-13ac3245da19",
+      "result_id": "55508578-7953-472a-8416-add5d79f013e"
+    },
+    {
+      "claim_id": "0a0e1122-1b31-4a8d-8147-8d7ee0a43dc5",
+      "result_id": "8b1b0226-3962-4593-928d-e833ffd3441f"
+    },
+    {
+      "claim_id": "91ac0d8e-0fcb-413e-ae00-e737774a238f",
+      "result_id": "8b1b0226-3962-4593-928d-e833ffd3441f"
+    },
+    {
+      "claim_id": "aa70a18c-9448-405f-ad47-35c7c20b90a6",
+      "result_id": "8b1b0226-3962-4593-928d-e833ffd3441f"
+    },
+    {
+      "claim_id": "9dcfaf06-5929-4970-9dd8-60b555563d34",
+      "result_id": "8b1b0226-3962-4593-928d-e833ffd3441f"
+    }
+  ],
+  "comparisons": []
+}

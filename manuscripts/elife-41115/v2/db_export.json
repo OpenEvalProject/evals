@@ -1,0 +1,1449 @@
+{
+  "submission": {
+    "id": "032c3abf-d7c2-42ac-98a3-45e54bfb62fe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:05:56.851678Z",
+    "updated_at": "2025-12-02T07:05:56.851678Z"
+  },
+  "content": [
+    {
+      "id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "submission_id": "032c3abf-d7c2-42ac-98a3-45e54bfb62fe",
+      "content_type": "manuscript",
+      "content_text": "# High-resolution mapping of fluoroquinolones in TB rabbit lesions reveals specific distribution in immune cell types\n\n## Authors\n\n- Landry Blanc<sup>1</sup>\n- Isaac B Daudelin<sup>1</sup>\n- Brendan K Podell<sup>2</sup>\n- Pei-Yu Chen<sup>1</sup>\n- Matthew Zimmerman<sup>1</sup>\n- Amanda J Martinot<sup>3</sup>\n- Rada M Savic<sup>4</sup>\n- Brendan Prideaux<sup>1</sup>\n- V\u00e9ronique Dartois<sup>1</sup> ([ORCID: 0000-0001-9470-5009](https://orcid.org/0000-0001-9470-5009)) \u2020\n\n### Affiliations\n\n1. Public Health Research Institute, New Jersey Medical School Rutgers, The State University of New Jersey Newark United States\n2. Department of Microbiology, Immunology and Pathology Colorado State University Fort Collins United States\n3. Center for Virology and Vaccine Research, Beth Israel Deaconess Medical Center Harvard Medical School Boston United States\n4. Department of Bioengineering and Therapeutic Sciences, Schools of Pharmacy and Medicine University of California San Francisco San Francisco Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding the distribution patterns of antibiotics at the site of infection is paramount to selecting adequate drug regimens and developing new antibiotics. Tuberculosis (TB) lung lesions are made of various immune cell types, some of which harbor persistent forms of the pathogen, Mycobacterium tuberculosis. By combining high resolution MALDI MSI with histology staining and quantitative image analysis in rabbits with active TB, we have mapped the distribution of a fluoroquinolone at high resolution, and identified the immune-pathological factors driving its heterogeneous penetration within TB lesions, in relation to where bacteria reside. We find that macrophage content, distance from lesion border and extent of necrosis drive the uneven fluoroquinolone penetration. Preferential uptake in macrophages and foamy macrophages, where persistent bacilli reside, compared to other immune cells present in TB granulomas, was recapitulated in vitro using primary human cells. A nonlinear modeling approach was developed to help predict the observed drug behavior in TB lesions. This work constitutes a methodological advance for the co-localization of drugs and infectious agents at high spatial resolution in diseased tissues, which can be applied to other diseases with complex immunopathology.\n\n## Introduction\n\nIn human tuberculosis (TB), necrotic granulomas and cavities are the most prominent and treatment recalcitrant lesion types (Canetti, 1955). The major histopathological features of these lesions are a caseous or necrotic core surrounded by a cuff of immune cells including lymphocytes, epithelioid macrophages, foam cells or lipid-laden macrophages, and interspersed neutrophils and epithelial cells (Leong et al., 2011; Dannenberg, 2006). In these lesions, Mycobacterium tuberculosis (Mtb), the etiologic agent of TB, is found intracellularly in macrophages and foamy macrophages (Peyron et al., 2008), neutrophils (Dallenga and Schaible, 2016; Berry et al., 2010), epithelial cells (Scordo et al., 2016) and dendritic cells (Tailleux et al., 2003). Mtb can establish a durable infection in foamy macrophages leading to replication and/or long term survival in a dormant state (Peyron et al., 2008; Russell, 2007). TB granulomas present with increasingly abnormal vasculature from the periphery inward (Datta et al., 2015). Most vessels are compressed along the lesion periphery and collapsed within the interior of the cellular rim. This leads to impaired vascular function and a gradual decrease of small molecule penetration as the distance from the granuloma outer edge increases (Datta et al., 2015). Vascular dysfunction culminates in a complete lack of blood vessels in the necrotic core. Mtb-infected foam cells or foamy macrophages largely concentrate along the interface between the cellular and caseous regions of the lesion (Peyron et al., 2008).\n\nEfficacy and drug distribution studies in animal models of TB disease have shown that reaching adequate drug concentrations at the sites of infection is critical in achieving sterilization and clinical utility (Irwin et al., 2014; Irwin et al., 2016; Prideaux et al., 2015a; Tanner et al., 2018; Zimmerman et al., 2017). Using analytical approaches and MALDI mass spectrometry imaging (MSI), we previously showed that most TB drugs exhibit differential partitioning between the cellular and necrotic regions of pulmonary lesions (Irwin et al., 2016; Prideaux et al., 2015a; Zimmerman et al., 2017; Prideaux et al., 2011; Prideaux et al., 2015b). In these studies, TB drugs were imaged at low spatial resolution and quantified in cellular regions treated in aggregate, without taking immune cell type into consideration. Given the heterogeneous cellular composition of the cellular rim, we posit that the spatial distribution of TB drugs within the cellular compartment of lesions is a function of immune cell type, and likely reflects differential uptake in each cell type. In addition, decreased vascular function may affect drug penetration. To quantify antibiotic distribution at high spatial resolution and link the distribution patterns to immune cell types, we selected the fluoroquinolones (FQ), which constitute the mainstay of multidrug resistant (MDR) TB treatment. In MDR-TB patients, treatment success is associated with the use of FQs (Ahuja et al., 2012) and, not surprisingly, it follows that FQ resistance is associated with poor clinical outcome (Bastos et al., 2014; Falzon et al., 2013). Moxifloxacin (MXF), levofloxacin (LVX) and gatifloxacin (GTX), three later generation FQs, are used to treat MDR-TB, although GTX production for systemic administration was recently terminated due to its side effect profile. In addition, MXF is included in many \u2018universal\u2019 regimens under clinical evaluation to treat both drug susceptible and MDR-TB ((Gillespie, 2016; Diacon et al., 2012); http://www.endtb.org/clinical-trial; ClinicalTrials.gov), and thus has the potential to become a pivotal TB drug. We have recently shown that MXF kills non-replicating Mtb persisters in ex vivo caseum (Sarathy et al., 2018) at concentrations that are achieved clinically in caseous foci (Prideaux et al., 2015a; Heinrichs et al., 2018). Understanding the complex partitioning of MXF and other FQs in the cellular compartments of these lesions where intracellular pathogens reside constitutes one of the major remaining knowledge gaps to fully elucidate the lesion-centric pharmacokinetics and pharmacodynamics of this drug class.\n\nHere we combine high resolution MALDI MSI with histology staining, and quantitative image analysis, to study the spatial distribution of small molecule drugs in distinct cellular clusters of TB lesions and understand spatial drug partitioning in relation to where the pathogen resides. We then recapitulate the observed distribution patterns using new drug uptake assays in human primary macrophages, foamy macrophages, lymphocytes, neutrophils, and an epithelial cell line, with the objective of developing in vitro tools to rapidly predict relative drug partitioning at the cellular level in vivo. The findings provide interesting clues on how partitioning into lung lesions can contribute to clinical efficacy, and validate immune cell uptake assays as a suitable tool to study drug distribution patterns in complex diseased tissues. The methods are not only applicable to antibiotics and host-directed therapy used in the treatment of TB and other infectious diseases, but could also be adapted to cancer and other diseases with complex immunopathology.\n\n## Results\n\n### FQs exhibit heterogeneous distribution in the cellular cuff of TB lesions\n\nIn previous studies, we have shown that FQs preferentially partition into the cellular layers of necrotic granulomas and cavities, compared to caseous foci, both in rabbit and human lungs (Prideaux et al., 2015a; Prideaux et al., 2011; Prideaux et al., 2015b). To refine the spatial distribution of this drug class in the cellular margins of granulomas, we first applied high resolution MALDI MSI. In two-dimensional MALDI MSI ion maps, MXF, LVX and GTX each formed a narrow rim of high signal intensity directly adjacent to the caseous center of the granuloma, as well as additional rings or pockets of higher intensity further outward from the necrotic center (Figure 1A\u2013F). Although MALDI MSI does not deliver absolute drug quantitation, relative drug abundance can be compared by measuring signal intensity (drug ion counts/internal standard ion counts) in defined regions of a MALDI MSI ion map (Figure 1\u2014figure supplement 1). To further characterize the visual partitioning observed for each FQ, signal intensity was measured in uninvolved lung, cellular lesion rims and necrotic foci of several lesions isolated from rabbits treated with each FQ. In this analysis, cellular and necrotic regions were treated in aggregate, and signal intensity ratios between lung, cellular and necrotic areas were calculated. We found approximately 1.5 to 2-fold higher signal in cellular lesions than in uninvolved lung and caseum for all three FQs (Figure 1\u2014figure supplement 2A,B). Since this approach only delivers relative quantitation data, we next turned to laser capture microdissection coupled with standard mass spectrometry to measure the concentration of each FQ in caseous foci, cellular rims and uninvolved lung areas at various time points following an oral drug dose. Overall, MXF and GTX concentrations were higher in cellular areas than in caseum and uninvolved lung, although only marginally so. LVX exhibited irregular patterns of distribution between the cellular and caseous regions (Figure 1\u2014figure supplement 2C). Thus, although MALDI images clearly reveal higher FQ abundance in distinct rings and pockets within the cellular layers of TB lesions, when the cellular rim is analyzed as a whole, the heterogeneous FQ distribution masks the favorable penetration of this drug class in the cellular cuff of mature lesions. These images and quantitative results uncovered the need for high resolution drug mapping in the cellular envelope of TB lesions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig1-v2.jpg)\n\n**Figure 1.:** (a\u2013b\u2013c) Hematoxylin and Eosin (H and E) histology staining of lesions and surrounding lung tissue resected from rabbits that received a single dose of moxifloxacin (MXF) (a), levofloxacin (LVX) (b) or gatifloxacin (GTX) (c). N: necrotic core; white arrows: early caseating foci; yellow double arrows: cellular rim encompassing mostly lymphocytes, macrophages, foamy macrophages, interspersed epithelial cells and neutrophils. Panels d-e-f show the corresponding MALDI-MS ion maps of each drug in a tissue section adjacent to the one stained by H and E. Red arrows highlight the inner drug accumulation ring subtending the caseous core; yellow arrows highlight outer rings or pockets of higher drug abundance further outward from the core.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) Optical and MALDI MS images of one rabbit lesion section collected following a single dose of MXF. (C) H and E staining of the adjacent section showing the position of necrotic lesions. The grey dotted line indicates the region that ruptured upon sectioning in (A\u2013B). (D) Areas that encompass uninvolved lung (green), cellular rim (yellow), outer caseum (purple) and inner caseum (red) are first delineated on the optical image. (E) The optical image and MALDI ion map are superimposed and each colored area is redrawn on the ion map. (F) The software Quantinetix from ImaBiotech (France) is used to quantify the signal intensity (ion abundance) of the drug of interest in each area.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Relative quantitation of moxifloxacin (MXF), levofloxacin (LVX) and gatifloxacin (GTX), in caseum and uninvolved lung relative to the cellular rim, determined from MALDI ion maps using ImaBiotech Software Quantinetix (v 1.7, Loos, France). Areas of interest encompassing uninvolved lung, cellular rim, and caseum were delineated by first aligning and superimposing the MALDI MS image over the optical scan of the tissue. The MS image layer was made transparent and the areas were drawn based upon the optical scan. The average drug abundance [ion count of drug/ion count of internal standard] ratios between caseum and cellular rim or uninvolved lung and cellular rim are shown. To detect statistically significant differences between signal intensities in lung versus cellular lesion, and cellular lesion versus caseum, the data were analyzed using the Wilcoxon matched-pairs signed rank test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. (B) Absolute measurements of average fluoroquinolone pixel intensities, normalized to internal standard, which were used to calculate the intensity ratios shown in (A). (C) Spatial quantitation of MXF, GTX and LVX in and around necrotic granulomas at different times following a single oral dose in rabbits with active TB, relative to plasma concentrations at the time of lesion dissection. Uninvolved lung tissue, cellular rim and central caseum of necrotic lesions were isolated by laser-capture microdissection and analyzed by HPLC coupled to mass spectrometry (LC-MS/MS). Plasma concentrations were determined by standard LC-MS/MS.\n\nTo understand the drivers of heterogeneous FQ distribution in cellular granuloma regions, we generated high resolution H and E images of mature necrotic granulomas (Figure 2A\u2013F), revealing the following concentric layers from the caseum outward: a ring of foamy macrophages with high lipid droplet contents directly subtending the caseous core, a layer mostly composed of lymphocytes, and a thick layer rich in clusters of less foamy macrophages in a background of lymphocytes (Figure 2A\u2013C). Small clusters or ribbons of epithelial or stromal cells as well as interspersed neutrophils and were found in most layers (Figure 2D\u2013F and Figure 2\u2014figure supplement 1A\u2013F). Mtb bacilli were mostly found in foamy macrophages and in association with karyorrhectic neutrophils (dying cells containing mostly fragmented chromatin irregularly distributed throughout the cytoplasm) in the caseous foci of necrotic granulomas and cavities (Figure 2\u2014figure supplement 1G,H). When compared to the MALDI images, this organization suggested that FQs preferentially partition in histiocytes, either foamy macrophages close to the caseum or non- and less-foamy macrophages in the outer granuloma layers.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig2-v2.jpg)\n\n**Figure 2.:** (A) H and E histology staining of a large cavitating necrotic granuloma and surrounding lung tissue, obtained from a rabbit infected with M. tuberculosis HN878 for 12 weeks. (B) Magnification of the region highlighted in a, showing the areas magnified in panels c through f. (C) Typical concentric cellular layers found in mature necrotic granulomas. (D) Magnification of the outer cellular layer showing epithelial cells that form ribbons or rings inside areas of immune cell infiltration (white arrows). (E) Magnification of the inner cellular layer showing residual epithelial lining of airway remnants (white arrows), fibrous connective tissue (red asterisks) and interspersed neutrophils (yellow arrows). (F) Magnification of the macrophage rich layer showing individual macrophage cell death (blue arrows) and isolated neutrophils (yellow arrows), surrounded by residual airway epithelium.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B\u2013C) H and E histology staining of large necrotic granulomas and surrounding lung tissue, obtained from rabbits infected with M. tuberculosis HN878 for 12 to 16 weeks. (D\u2013E\u2013F) Corresponding magnification of the regions highlighted in A-B-C, showing the typical concentric cellular layers found in mature necrotic granulomas. (G\u2013H) H and E staining of an early cavity and corresponding Ziehl-Neelsen acid fast staining of the caseous region highlighted in (G) showing large numbers of Mtb bacilli (black arrows) associated with mostly karyorrhectic neutrophils or dying neutrophils as evidenced by irregularly distributed chromatin throughout the cytoplasm (H).\n\n### Macrophage content and distance from lesion margin drive the penetration of MXF\n\nHistology staining (such as H and E) of sections adjacent to those used to generate drug ion maps provide limited information as to the underlying cellular content and architecture because the two images cannot be perfectly superimposed. To overcome this limitation and correlate relative drug abundance with immune cell type, we adapted a method recently optimized by our group (Blanc et al., 2018), allowing MALDI MSI and H and E staining of the same tissue section. First we generated an MXF ion map and H and E stained histology image of a single section obtained from a large rabbit necrotic granuloma following treatment with a single MXF dose (Figure 3A,B and Figure 3\u2014figure supplement 1). Using the MXF ion map, we delineated 35 regions of interest (ROI) within which drug distribution appeared relatively homogeneous (Figure 3B and Figure 3\u2014figure supplement 2A). The MXF [M\u00a0+\u00a0K]+ ion map was co-registered with the H and E image and the 35 ROI contour lines were redrawn onto the H and E image (Figure 3\u2014figure supplement 2B). Using this image, a blinded veterinary pathologist scored the fraction of histiocytes (foamy and non-foamy macrophages), neutrophils, lymphocytes, epithelial or stromal cells, and necrosis in each ROI (Figure 3\u2014source data 1). We also measured the absolute and relative distance of each ROI from the outer edge of the lesion, where the relative distance was calculated as the ratio of the distance from ROI to edge by the total distance from caseum to edge (Figure 3\u2014figure supplement 3). Lastly, in the MALDI MSI ion map, we measured the relative abundance (drug/internal standard ion counts) of MXF in each ROI, expressed as the mean pixel intensity per ROI (each ROI containing 48 to 429 pixels, Figure 3C). We found that average MXF contents were significantly different across the majority of ROIs (Figure 3\u2014figure supplement 4A) with a between-ROI variability of 43.4%. These data were compiled to search for correlations between MXF abundance, measured as mean pixel intensity, and each of the recorded parameters (i.e. fraction of histiocytes, lymphocytes, neutrophils, epithelial cells and necrotic area, and distance from lesion outer edge, Figure 3\u2014source data 1), with the objective of identifying the major drivers of MXF distribution in TB lesions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig3-v2.jpg)\n\n**Figure 3.:** (A) H and E staining of a cavitating necrotic granuloma. (B) Ion map of moxifloxacin (MXF) [M\u00a0+\u00a0H]+obtained by MALDI mass spectrometry imaging of the same section, according to the workflow and procedure described in Figure 3\u2014figure supplement 4; (C) relative MXF abundance in 35 sub-areas delineated in the cellular rim of the MXF ion map shown in b (Contours of the 35 sub-areas are shown in Figure 3\u2014figure supplement 2). Each dot represents the signal intensity of individual pixels in the ion map shown in (B). Pixel intensity mean and standard deviation are shown for each area. The number of pixel per sub-area ranged from 48 to 429 (48\u00a0< n < 429). Raw data can be found in Figure 3\u2014source data 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) H and E stained tissue, obtained from the same section used for MALDI MS imaging, after washing of the DHB matrix; (B) Map of matrix ion m/z 362,217, a matrix-related peak highly abundant outside of the tissue and used to revealed contours of the tissue border and hollow bronchioles within; (C) Alignment of the matrix ion and H and E images; (D) Moxifloxacin [M\u00a0+\u00a0K]+ion image (m/z 440,138 normalized to internal standard MXF-d4 m/z 444,1638); (E) Normalized MXF image aligned with the matrix marker image using the Thermo ImageQuest image ruler; (F) MXF intensity map aligned and overlaid with H and E image of the same section.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Thirty-five ROIs were delineated on the MXF ion map and superimposed onto the image of the H and E stained section as described in Blanc et al., 2018.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A\u2013B) Description of the method used to measure the distance of each area to the outer edge of the granuloma, relative to the total distance between the inner and outer edges of the cellular rim (d\u00a0=\u00a0a/b). This measure was used since the thickness of the cellular rim is not constant, and vascular efficiency was shown to decrease as the distance from granuloma edge increases (Datta et al., 2015). Region #8 is used to illustrate the method. (A) Distance a (yellow arrow) was measured from the centroid (https://en.wikipedia.org/wiki/Centroid#Centroid_of_polygon) of each area to the nearest point on the outer edge (black contour line) of the granuloma. (B) A straight line was then drawn from the nearest point on the outer edge, through the centroid, and all the way to the inner edge of the cellular rim (black contour line), at the border with caseum (black arrow, distance b). The ratio between a and b was used as the relative distance to the outer border of the granuloma, a surrogate of vascular efficiency. Thus d is maximum (=1) at the cellular/caseum interface, and d\u00a0=\u00a00 at the outer edge of the granuloma.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Statistical analysis of MXF relative abundance per area: average pixel intensities in each ROI were compared using a one-way analysis of variance (ANOVA) comparing the mean MXF pixel intensity in each of the 35 areas, and a Tukey post-hoc test for multiple comparisons. The number of pixels per ROI ranged from 48 and 429. Green cells indicate comparisons with p\u22640.05. (B) Plots of the Spearman rank correlations between MXF abundance and the fraction of histiocytes (including macrophages and foamy macrophages), relative distance of ROI to granuloma edge and fraction of necrosis. The method used to measure the relative distance of each sub-area to granuloma edge, a surrogate of vascular efficiency, is described in Figure 3\u2014figure supplement 3. (C) Plots of Spearman rank correlations between MXF abundance and fraction of lymphocytes, neutrophils, and epithelial cells. (D) Visual Predictive checks of the final model developed on the training dataset (left), and internal validation showing predicted MXF abundance using ROI-specific measurements of histiocytes, distance ratio and % necrotic cells in the final model equation. $MXFabundance=\\theta_{1}\\timese^{\\theta_{2}\\times(Histiocytes%-0.35)}\\timese^{\\theta_{3}\\times(DistanceRatio-0.65)}\\times(1+\\theta_{Necrosis})$ where $\\theta_{1-3}and\\theta_{necrosis}$\u00a0are model estimated constants and are reported in supplementary file 1 The lines and shaded areas in D are as follows: continuous red line: observed data median; dotted red line: 5th and 95th percentile of the observed data; light red shaded area: predicted median with uncertainty; light grey shaded area: predicted percentiles of the data with uncertainty. (E) Visual Predictive Checks (VPC) similar to the plots described in (D) but showing only the median signal intensity for each ROI. Dotted line: line of identity.\n\nUsing Spearman rank correlation, we found a positive association between MXF abundance and the fraction of macrophages, and an inverse correlation with the relative distance from lesion border and the necrosis fraction (Figure 3\u2014source data 2 and Figure 3\u2014figure supplement 4B). There was no significant association between MXF intensity signal and the percentage of other immune cell types in ROIs (Figure 3\u2014figure supplement 4C). These observations prompted us to use a nonlinear modeling approach to broadly interrogate the dataset and build a model of MXF partitioning in lesions. Using nonlinear mixed effect modeling (nonMEM) with the full dataset, we found that accounting for histiocyte fraction reduced the between-ROI MXF variability from 44.0% to 28.3%, which further decreased to 20.0% when relative distance of ROI to lesion edge was integrated in the model. This was consistent with vascular function and small molecule penetration decreasing as the distance from the granuloma outer edge increases (Datta et al., 2015). Factoring the fraction of the ROI occupied by necrotic tissue further reduced the variability from 20.0% to 18.9% (Table 1), significantly improving the correlation. Integrating the fraction of other immune cell types further decreased the residual unexplained variability but not significantly so (Table 1). This suggested that immune cells other than macrophages do not significantly influence the partitioning of MXF. The absolute distance between ROIs and lesion periphery did not correlate with MXF signal intensity, which is not surprising given the highly variable thickness of the cellular rim (Figure 3B and Figure 3\u2014figure supplement 3). Summary plots of the covariate analysis, visual predictive checks and model parameters are shown in Figure 4A and Supplementary file 1. The outcome was consistent with the results of the Spearman rank correlation analysis (Figure 3\u2014figure supplement 3B,C). The model was internally validated by randomly splitting the dataset into training and validation sets, resulting in similar model parameters (Supplementary file 1). The validation dataset was then used to confirm the predictive value of the model equation. We found that the model could predict ROI-specific MXF abundance using histiocyte fraction, relative distance from lesion margin and necrosis content (Figure 4B and Figure 3\u2014figure supplement 4D,E). This suggested that MXF, and potentially other FQs, are preferentially taken up by macrophages over other immune cell types.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig4-v2.jpg)\n\n**Figure 4.:** (A) Diagnostic plots of Empirical Bayes Estimates (EBEs) supporting the covariate search and showing MXF abundance differences to the median (Y axes) as a function of each of the six candidate predictors, as indicated. The blue line indicates the correlation trend: positive for % histiocytes, negative for % necrosis and relative distance to lesion border, and neutral for the other predictors, thus illustrating the biological relationship between drug abundance and % histocyte as well as distance from the border; (B) Visual Predictive Checks (VPC) showing model-predicted MXF abundance versus observed abundance, indicating that drug abundance can reliably be predicted based on macrophage content, relative distance from granuloma border, and necrosis content, according the model equation: $MXFabundance=\\theta_{1}\\timese^{\\theta_{2}\\times(Histiocytes%-0.35)}\\timese^{\\theta_{3}\\times(DistanceRatio-0.65)}\\times(1+\\theta_{Necrosis})$.\n\n**Table 1.**\n Summary of multivariate search and model development\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Unexplained between ROI variability in MXF abundance</th>\n      <th>P value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Base model \u2013 no predictors</td>\n      <td>44.0%</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>With relative distance from lesion border</td>\n      <td>28.2%</td>\n      <td>3.0*10\u22126 (****)</td>\n    </tr>\n    <tr>\n      <td>With fraction histiocytes (%)</td>\n      <td>20.0%</td>\n      <td>5.2*10\u22124 (****)</td>\n    </tr>\n    <tr>\n      <td>With fraction necrosis (%) (df\u00a0=\u00a03)</td>\n      <td>18.9%</td>\n      <td>0.05 (*)</td>\n    </tr>\n    <tr>\n      <td>With fraction lymphocytes, neutrophils, epithelial cells</td>\n      <td>14%</td>\n      <td>ns</td>\n    </tr>\n  </tbody>\n</table>\n\n_df: degree of freedom; ns: not significant_\n\n### In vitro uptake of FQs in immune cells is consistent with in vivo observations\n\nIn order to test this hypothesis and recapitulate these in vivo observations in vitro, we developed drug uptake assays in primary human lymphocytes, macrophages, neutrophils and in A549 human alveolar basal epithelial cells. Drug uptake in each cell type revealed that MXF, LVX and GTX all accumulated in macrophages at higher levels than in lymphocytes, neutrophils and epithelial cells in vitro (Figure 5A). These in vitro results were consistent with the finding that MXF relative abundance in cellular granuloma regions best correlates with the macrophage fraction. Since foamy macrophages are a privileged reservoir for Mtb bacilli in TB lung lesions (Peyron et al., 2008), we specifically measured FQ uptake in foamy macrophages to determine whether foamy macrophages are as FQ-avid as their non-foamy counterparts. Foamy macrophages were derived from differentiated primary macrophages via infection with \u03b3-irradiated M. tuberculosis, upon which more than 80% of the macrophages appeared Nile Red positive, that\u00a0is with a high lipid droplet content. In contrast, less than 30% on the non-stimulated macrophages were Nile Red positive (Figure 5B). Fluoroquinolone uptake was significantly higher in foamy than in non-foamy macrophages (Figure 5C). Given the high inter-donor variability in absolute uptake, we also plotted the macrophage versus foamy macrophage uptake ratio for each individual donor, showing a mean ratio around 2 (Figure 5\u2014figure supplement 1 and Figure 5\u2014source data 1). Thus FQ uptake is higher in foamy macrophages, where Mtb bacilli largely reside in vivo, than in regular macrophages in vitro.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig5-v2.jpg)\n\n**Figure 5.:** (A) Intracellular to extracellular concentration ratios of MXF, LVX and GTX in the major cell types present in the cellular rim of necrotic lesions. Data were analyzed using the Friedman test (all means are significantly different from each other): *p<0.05, **p<0.01; (B) FACS analysis of Nile Red stained human bone marrow derived macrophages showing higher frequency of stained cells in macrophage populations stimulated with heat-inactivated M. tuberculosis (iMtb) compared to unstimulated macrophages. The percentage of Nile Red high cells is indicated. (C) Intracellular/extracellular drug concentration ratio of MXF, LVX, and GTX in unstimulated bone marrow derived macrophages (black bars, (M), and in iMTB stimulated foamy macrophages (green bars, FM), derived from seven individual donors (raw data in Figure 5\u2014source data 1). Data were analyzed using the Wilcoxon matched-pairs signed rank test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41115/elife-41115-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Packed Leukocytes\u00a0are carefully pipetted over\u00a0a layer of Ficoll in 50 ml falcon tubes,\u00a0and\u00a0centrifuged at 1600 rpm/530 G for 30 min with no brake. PBMC layer is extracted with a pipette and washed 2 times in PBS and the final pellet is re-suspended in RPMI to a concentration of 108 cells/mL. EasySep CD14 antibody solution is added at 100 \u03bcL/10^8 cells. Incubation at room temperature for 15 min followed by EasySep magnetic beads at 50 \u03bcL/108 cells. After 10 min incubation to allow antibody binding to beads, the tube is placed in the magnet for 5 min. CD14+ cells (monocytes) migrate to the walls of the tube leaving only CD14- cells (lymphocytes) in suspension. While the tube remains in the magnet, the supernatant is poured off and collected. The tube is removed from the magnet, RPMI added, pipetting up and down to resuspend CD14+ cells, and the tube is returned to the magnet. The process is repeated 3 times.\n\n## Discussion\n\nIn diseases with complex pathology, the distribution of drugs at the site of action is critical but challenging to study. Cellular content, vascular function and multidimensional tissue architecture all affect drug penetration in a drug class-specific manner (Gerstner et al., 2009; Saggar et al., 2013; Rippley and Stokes, 1995; Dartois, 2014; Liu et al., 2013). There is a need for in vivo, in vitro and in silico methods to study drug partitioning at diseased sites. In previous studies of antibiotic penetration in TB lesions, we showed higher accumulation of MXF in the cellular layers than in necrotic foci (caseum). MALDI MSI and traditional mass spectrometry analysis of human lesions revealed a correlation between diffusion into caseum and caseum cellularity (Prideaux et al., 2015a). Here we have combined high resolution MALDI MSI, qualification of cell types in H and E stained sections, quantitative image analysis and nonlinear modeling to show that (i) the distribution of FQs within the cellular cuff of mature TB lesions is uneven and (ii) the heterogeneous distribution of MXF in TB lesions is driven by the macrophage content, the distance from lesion border and the extent of necrosis. In vitro uptake assays in human blood cells were developed to confirm that the FQs are preferentially taken up by macrophages relative to other immune cell types typically found in TB lesions, and even more strongly so in foamy macrophages where Mtb establishes long term infection and dormancy. Our results are consistent with published data on the accumulation of FQs in macrophage cell lines (Carlier et al., 1990; Michot et al., 2006), constitute an advance over assays relying on immortal cell lines in which expression of transporters and efflux pumps can be significantly altered, and demonstrate that uptake is significantly lower in human neutrophils and lymphocytes.\n\nHigh-resolution co-localization of drug and immune cell type was achieved by MALDI imaging and H and E staining of the same tissue section. While \u2018same-section\u2019 drug imaging and histology staining has been used to map the distribution of PIK-3 inhibitors in brain tumors (Salphati et al., 2014), the precise superimposition of drug and cell types hasn\u2019t been reported to date. In the cancer field, several studies have focused on drug mapping with reference to next-section H and E staining to achieve relative quantitation of drugs in ROIs but without qualification of cell populations (Hinsenkamp et al., 2016; Marko-Varga et al., 2011; Giordano et al., 2016).\n\nThe clear correlation between MXF abundance and relative distance from the outer lesion border is in keeping with previous studies showing that functionally abnormal vasculature increases as the distance from granuloma border increases, leading to correspondingly impaired small molecule distribution (Datta et al., 2015). In these studies, the authors showed that therapies thought to achieve vessel normalization, and thus improve vascular function, appear to improve small molecule delivery to TB lesions (Datta et al., 2015) or potentiate TB therapy (Xu et al., 2018). These observations are reminiscent of oncology drug penetration concepts, where excessive angiogenesis generates a disorganized and leaky blood vessel network leading to poor drug delivery to the tumor core (Azzi et al., 2013; Di Paolo and Bocci, 2007).\n\nInterestingly, FQ uptake was higher in foamy than non-foamy macrophages. This may be due to differential regulation of transporters and efflux pumps since FQs are actively transported in and out of eukaryotic cells (Maeda et al., 2007; Weiner et al., 2018; Mulgaonkar et al., 2013; Rudin et al., 1992; Michot et al., 2005), and foamy macrophages are known to differentially express selected transporters such as ABCG1 and ABCA1 (cholesterol efflux transporters) compared to non-foamy phagocytes (Lorkowski et al., 2001; Canfr\u00e1n-Duque et al., 2017). Alternatively, processes such as pinocytosis have been implicated in foam cell biogenesis and could be upregulated in these cells (Michael et al., 2013). Lastly, many FQs carry a basic amine and could undergo enhanced trapping in the acidic organelles of foamy macrophages if the pH is more acidic than in non-foamy macrophages, which remains to be determined. Regardless of the underlying mechanism, the finding that FQs are preferentially taken up by all phagocytes has positive clinical implications since drug tolerant M. tuberculosis persisters are present in the foam cells of human lung lesions (Peyron et al., 2008). On the other hand, M. tuberculosis bacilli are also found in viable and necrotic neutrophils, which constitute a privileged site of bacterial replication (Mishra et al., 2017; Kimmey et al., 2015; Diedrich et al., 2016) and where MXF uptake was significantly lower than in macrophages.\n\nThere are a few limitations to this study. If MXF uptake is higher in foamy than in non-foamy macrophages in vivo, one should detect a ring of higher signal intensity in MALDI ion maps, corresponding to the ring of foam cells that directly subtend the caseum, visible in superimposed H and E images. However, because foam cells are mostly concentrated at the caseum border where vascularization is least effective, this confounding factor prevents the visualization of higher MXF signal at the cellular-caseum interface in MXF ion maps. Second, a single lesion was used to establish the correlation between MXF abundance and histological parameters, and cell types were identified and quantified based on H and E staining which is less accurate than immunohistochemistry or flow cytometry. In addition, the method is resource intensive and not amenable to serial analyses of H and E images. This however creates an opportunity as much as it is a limitation. Our objective is to demonstrate proof-of-concept in order to harness the power of emerging technologies that rely on multiplexed ion beam imaging (MIBI-TOF) for revealing immune environment structure and composition (Keren et al., 2018) coupled to artificial intelligence and convolutional neural networks (Wainberg et al., 2018) for image recognition applied to H and E and MALDI MS images. Future efforts will focus on exploring these approaches to automate interpretation of overlaid MALDI MS, MIBI-TOF and H and E images. While the model needs to be tested with additional lesions and other FQs, the successful train-and-test approach validates the modeling strategy as a starting point to initiate similar types of investigations with other drug classes and disease indications.\n\nThe methodology is broadly applicable to the high-resolution mapping of any drug in diseased tissue, particularly when multiple cell types are present in complex lesions, tumors, atherosclerotic plaques, to name a few. The co-localization of drugs and immune cell populations supported by in vitro uptake data is a powerful new tool to guide in silico modeling and simulations of drug distribution in TB lesions (Pienaar et al., 2017) or any complex structure where drug penetration is paramount.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>A549</td>\n      <td>Sigma Aldrich</td>\n      <td>Catalog # 86012804-1VL</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>EasySep Human CD14 Positive Selection kit</td>\n      <td>Public: StemCell Technologies</td>\n      <td>Catalog # 17858</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Ethics Statement\n\nAll animal studies were performed in Biosafety Level three facilities and approved by the Institutional Animal Care and Use Committee (IACUC protocol number 16016) of the New Jersey Medical School, Rutgers University, Newark, NJ, under the guidelines and regulations of the National Institutes of Health.\n\nImmune cells were separated and purified from fresh packed leukocytes purchased from the New York Blood Center. All samples were anonymized.\n\n### Rabbit infection and drug administration\n\nFemale New Zealand White (NZW) rabbits (Millbrook Farm, Concord, MA), weighing 2.2 to 2.6 kg, were maintained under specific pathogen-free conditions and fed water and chow ad libitum. The rabbits were infected with M. tuberculosis HN878, using a nose-only aerosol exposure system as described (Subbian et al., 2011). Three hours post-infection, one rabbit from each round of infection was sacrificed to determine the bacterial load implanted in the lungs. At defined time points from 16 to 20 weeks post-infection, rabbits received a single dose of 100 mg/kg moxifloxacin (Chemieliva Pharmaceuticals, China), 75 mg/kg levofloxacin or 100 mg/kg gatifloxacin (Chem-Impex Intl, IL), formulated in 40% sucrose and PEG400 (90:10) by oral gavage. The time points post infection were selected to ensure that mature necrotic granulomas had formed and reached a size sufficient to allow dissection and imaging of individual lesions. Blood was collected from the central ear artery of each rabbit pre-dose, and at several time points between drug administration and necropsy. Rabbits were euthanized at 2 to 12 hr post-dose, or between the time of peak plasma concentration and the end of the tissue distribution phase.\n\n### Tissue sectioning and processing for MALDI-MSI and laser-capture microdissection (LCM)\n\nTissue sections of appropriate thickness were cut from \u03b3-irradiated rabbit lung biopsies using a Microm HN505 N (Walldorf, Germany) and thaw-mounted onto either stainless steel slides for MALDI-MSI (12 \u03bcm thick), PET-Membrane FrameSlides (Leica) for LCM analyses shown in Figure 1\u2014figure supplement 2C (25 \u03bcm thick as described in Zimmerman et al., 2018), or standard glass microscope slides for H and E staining of adjacent slides (6 \u03bcm thick) shown in Figure 1. For same-section MALDI-MSI and H and E staining, 12 \u03bcm thick sections were cut and processed as described in Blanc et al., 2018 and Figure 3\u2014figure supplement 1. Tissue sections were immediately transferred to sealed containers and stored at \u221280\u00b0C.\n\nPlates containing tissue sections for MALDI-MSI were allowed to reach room temperature for 15 min prior to opening of the containers. 2,5-Dihydroxybenzoic acid matrix (25 mg/mL in 50% Methanol/0.1% TFA) (Sigma-Aldrich, St Louis, MO) was applied to the tissues via the TM-Sprayer automated MALDI tissue prep device using the following optimized conditions: 0.04 mL/min flow rate; 60\u00b0C nozzle temperature; 1.3 mm/second raster speed; 25 passes over the tissue. Linezolid-d3 (TRC, Toronto, Ontario), Gatifloxacin-d4 (TRC, Toronto, Ontario) or Moxifloxacin-d4 (Clearsynth, Ontario) was added to the matrix at 5 pmol/\u03bcL as an internal standard for LZD, GTX and MXF respectively.\n\n### MALDI-MSI analysis\n\nMALDI-MSI acquisition was performed MALDI LTQ Orbitrap XL mass spectrometer (Thermo Fisher Scientific, Bremen, Germany) with a resolution of 60,000 at m/z 400, full width at half maximum. Imaging data was acquired in full scan mode to maximize sensitivity and drug peak identities were confirmed by acquiring several MS/MS spectra directly from the dosed tissues. Instrument parameters were tuned and optimized using spiked fluoroquinolone drug standards on stainless steel plates and control mouse lung tissue. Limits of detection (LOD) were assessed as described previously (Prideaux et al., 2015a). The lower limits of detection were 100 fmol or 750 ng/g for LVX, GTX and MXF.\n\nFor LVX, GTX and MXF analysis, spectra were acquired in positive mode across the mass range m/z 300\u2013500. A laser energy of 7.5 \u00b5J was applied and five laser shots were fired at each position (total of 1 microscan per position). The laser step size was set at 50 \u00b5m which enabled small necrotic areas within lesions to be resolved without overlapping of the laser spot on adjacent acquisitions. Thermo ImageQuest software (v1.01) was used to reconstruct 2D ion images. Normalized ion images of LVX were generated by dividing LVX [M\u00a0+\u00a0H]+ signal (m/z 362.151\u00a0\u00b1\u00a00.003) by LVX-d4 [M\u00a0+\u00a0H]+ signal (m/z 365.168\u00a0\u00b1\u00a00.003). Normalized ion images of GTX were generated by dividing GTX [M\u00a0+\u00a0H]+ signal (m/z 376.167\u00a0\u00b1\u00a00.003) by GTX-d4 [M\u00a0+\u00a0H]+ signal (m/z 380.194\u00a0\u00b1\u00a00.003). Normalized ion images of MXF were generated by dividing MXF [M\u00a0+\u00a0H]+ signal (m/z 402.182\u00a0\u00b1\u00a00.003) by MXF-d4 [M\u00a0+\u00a0H]+ signal (m/z 406.208\u00a0\u00b1\u00a00.003).\n\n### Relative quantitation of fluoroquinolones within granuloma compartments\n\nRelative quantitation of MXF, LVX and GFX within caseum and cellular granuloma areas was performed using ImaBiotech Software Quantinetix (v 1.7, Loos, France), following the workflow shown in Figure 1\u2014figure supplement 1. Areas of interest for each tissue type (lung, cellular rim, caseum) were delineated by first aligning and superimposing the MS image over the optical scan of the tissue (acquired prior to MALDI matrix deposition). The MS image layer was made transparent and the areas were drawn based upon the optical scan (Figure 1\u2014figure supplement 1D) and by referral to an adjacent H and E-stained tissue section (Figure 1\u2014figure supplement 1C) as a guide rather than the MALDI ion map to avoid bias in region selection.\n\n### High-resolution relative quantitation of MXF ions in 35 regions of interest (ROI)\n\nThermo ImageQuest software (v1.01) was used to export MXF pixel intensity datasets into \u2018.imzML\u2019 format. The dataset was loaded in SCiLS Lab MVS (version 2018a Core, Bruker) and normalized to MXF-d4 [M\u00a0+\u00a0K]+ signal (m/z 444.1638\u00a0\u00b1\u00a00.003). A map of normalized MXF [M\u00a0+\u00a0K]+ signal (m/z 440.1380\u00a0\u00b1\u00a00.002) was generated and 35 regions of interest (ROIs) were drawn with \u2018polygonal region\u2019 tool, with the objective of covering the full range of relative signal intensity (Figure 3\u2014figure supplement 2A). The normalized MXF signal intensities of every pixel within each ROI were exported from SCiLS. Signal intensities of these different pixels are represented in Figure 3C. SCiLS\u2019 MXF image with area of interest was saved and loaded into Photoshop and aligned with H and E as described below, using the ion map of m/z 362.217 as the reference for alignment. After alignment, ROIs were re-drawn on the H and E image in Photoshop (Figure 3\u2014figure supplement 1B). The cellular composition of each delineated ROI was assessed by a board certified pathologist, by reference to the H and E image only.\n\n### Co-registration of MALDI MS images and H and E histology images\n\nCo-registration of MALDI MS images and histology was essentially carried out as previously described (Blanc et al., 2018). Following acquisition of the MALDI MS image, the DHB (2,5-Dihydroxybenzoic acid) matrix was washed from the tissue surface by immersing the slide for 10 s in methanol/water 1:1. The tissue was then fixed by immersing for 1 hr in 4% of paraformaldehyde (in phosphate buffer saline) prior to H and E staining. The stained tissue section was scanned using a Panoramic Desk slide scanner (3D Histech) and the full resolution image (Figure 3\u2014figure supplement 1A) was loaded into Adobe Photoshop CS6 (Adobe Systems). To align the H and E and MALDI images, the ion map of m/z 362.217, a matrix related peak, was used. This matrix-related ion is highly abundant outside of the tissue and reveals contours of the tissue border and hollow bronchioles within (Figure 3\u2014figure supplement 1B). This image was loaded into Adobe Photoshop CS6. The green square in Figure 3\u2014figure supplement 1A was used as an anchor to scale and overlay the MSI and H and E images. This imprint image was rescaled and aligned using tissue contours (Figure 3\u2014figure supplement 1C). Next, the green scale map of normalized MXF [M\u00a0+\u00a0K]+ at m/z 440.138 (normalized to MXF-d4 [M\u00a0+\u00a0K]+ signal m/z 444.1638\u00a0\u00b1\u00a00.003) was generated in Thermo ImageQuest and loaded into Adobe Photoshop CS6 (Figure 3\u2014figure supplement 1D). The normalized MXF image was aligned with the matrix marker image (m/z 362.217) using the Thermo ImageQuest image ruler (Figure 3\u2014figure supplement 1E). At this point, the MXF intensity map is aligned and overlaid with the H and E image of the same section (Figure 3\u2014figure supplement 1F).\n\n### Immune cell acquisition and purification\n\nFresh packed leukocytes were obtained from the New York Blood Center. The separation, purification and differentiation of major white blood cell types is depicted in Figure 5\u2014figure supplement 2. Human monocytes were isolated from the blood of three independent donors by Ficoll separation and isolation of peripheral blood monocytic cells (PBMCs) followed by purification of the PBMCs with CD14+ MicroBeads (StemCellTechnologies catalog #18058). Approximately 5 \u00d7 105 cells were plated in 0.5 mL of media (RPMI supplemented with 10% FBS; 1% penicillin/streptomycin; 10 ng/mL M-CSF) on 24-well plates. Cells were incubated at 37\u00b0C with 5% CO2 for 2 days, after which the culture media was replaced with fresh media. After 4 more days of incubation, the culture media was replaced with either media containing either 200 \u03bcM oleic acid or a 1:5000 dilution of \u03b3-irradiated M. tuberculosis (BEI Resources cat. NR-14819) or fresh media in the control wells, followed by 24 hr incubation at 37\u00b0C with 5% CO2. The stock of \u03b3-irradiated M. tuberculosis was vortexed with 3 mm diameter glass beads to disrupt the bacterial aggregates; the remaining large aggregates were let to sediment for 30\u201340 min and the supernatant was frozen at \u221280\u00b0C in aliquots. Since induction of foam cells by oleic acid or \u03b3-irradiated Mtb delivered the same results in a pilot drug uptake experiment, induction with \u03b3-irradiated was selected as more physiologically relevant.\n\nLymphocytes were obtained by negative selection using the CD14+ MicroBeads. Cells were counted and immediately used for drug uptake.\n\nNeutrophils were obtained using Ficoll separation on the same fresh packed leukocytes from the New York Blood Center. The fraction below the Ficoll was removed, and water lysis performed to remove the RBCs. Water lysis was performed by adding 45 mL of diH2O to the cells, solution was mixed up and down with pipette once, and very quickly 5 ml of 10x PBS were added and mixed in. Cells were pelleted at 350 G for 10 min and the process repeated up to 3 times until the pellet formed was clear (not red). Cells were counted, assessed for viability using trypan blue, and immediately used for drug uptake.\n\nThe A549 human cell line was obtained from Sigma Aldrich (86012804) and grown using Dulbecco's modified Eagles medium (DMEM) with 2% glutamine and 10% FBS in 37\u00b0C and 5% CO2. Cultures were passaged every 7 days and media replaced every 3\u20134 days. Cultures were maintained at a density between 2 \u00d7 103 and 1 \u00d7 104 cells per cm2.\n\n### Flow cytometry\n\nLipid droplets in macrophages were stained with Nile Red (100 ng/ml in PBS, 1 hr incubation) and fixed in 4% PFA for 20 min on ice to prepare cells for flow cytometry. Data was acquired on a BD FACS Celesta with red blue violet laser base configuration, and analysis of data was performed using BD FACS Diva.\n\n### Drug uptake assays in immune cells\n\nMonocytes, lymphocytes and neutrophils were separated and purified from freshly packed human leucocytes, as described below and in Figure 5\u2014figure supplement 2. Lung alveolar epithelial cells A549 were obtained from Sigma Aldrich. All cell types were cultured and differentiated when required using standard published methods.\n\n#### Macrophages and foamy macrophages\n\nMacrophages plated on 24-well plates (50,000 cells per well) were incubated in RPMI\u00a0+drug (MXF 4 \u03bcM, LVX 16 \u03bcM, GTX 4 \u03bcM or approximately 10-fold the MIC) for 30 min at 37\u00b0C, 5% CO2. Macrophages were washed three times with PBS and lysed with 0.25 mL Milli-Q deionized water. Cell lysates were stored at \u221220\u00b0C until analyzed by LC/MS for drug quantification. To quantify the total number of cells/well, 50 \u03bcL of each cell lysate was removed from each well and added to a clear bottom black-sided 96-well plate. 50 \u03bcL of deionized water and 100 \u03bcL of PicoGreen (Life Technologies) were added, and the plates were incubated for 2\u20135 min, protected from light. Fluorescence was measured at 520 nm (excitation wavelength 480 nm). Samples were blank subtracted, and cell number interpolations were made from a standard curve.\n\n#### Lymphocytes and neutrophils\n\nFive to 20 million cells were suspended in 5 mL of RPMI cell media containing drug (MXF 4 \u03bcM, LVX 16 \u03bcM, GTX 4 \u03bcM or approximately 10-fold the MIC) in conical tubes. Cells were incubated with drug for 30 min at 37\u00b0C, 5% CO2. Following incubation, cells were pelleted at 350 g for 5 min. Supernatant was poured off carefully and the pellet resuspended in 1 mL of PBS. Cell suspensions were then transferred to 1.5 mL Eppendorf tubes and pelleted at 350 g for 1 min. Supernatant was poured off carefully and pellet resuspended in 1 mL of PBS. One microliter of cell suspension was removed at this point and viable cells counted using Trypan Blue. Cells were pelleted at 350 g for 1 min, resuspended in 500 \u03bcL sterile Milli-Q deionized water for cell lysis and stored at \u221220\u00b0C until processed for LC/MS analysis.\n\n#### Lung alveolar epithelial cells\n\nA549 cells obtained from Sigma Aldrich (cat # 86012804) and cultured as described above were plated on small petri dishes and incubated for 2 days at 37\u00b0C and 5%CO2 to allow cells to become well attached and become confluent. Drug was then added to the culture media to achieve desired final extracellular drug concentration (MXF 4 \u03bcM, LVX 16 \u03bcM, GTX 4 \u03bcM), and cells incubated for 30 min. Drug containing media was poured off, and cells were washed three times with PBS (PBS was added, swirled, and immediately poured off). 100 \u03bcL of 0.25% Trypsin/EDTA solution was added for 5 min to detach cells. 400 \u03bcL diH2O was added, cells were scraped off, and collected in a 1.5 \u03bcL Eppendorf tube. 10 \u03bcL was immediately removed for cell counting. Cells were allowed to lyse for 1 hr in incubation, the supernatant was removed and stored at \u221220\u00b0C until used for LC-MS/MS analysis.\n\n#### Calculation of intracellular drug concentration\n\nAll intracellular drug uptake data are expressed as a ratio of intracellular to extracellular drug concentration (IC/EC). The starting concentration of drug added to the macrophages was used as extracellular concentration. The intracellular concentration was calculated using the drug concentration of the cell lysate determined by LC-MS/MS analysis (described below) and adjusting for the number of cells and cell volume of each particular cell type. Macrophage and foamy macrophage volume was estimated at 755.5 \u03bcm3 per cell as measured in a previous study (Chen et al., 2018); neutrophils volume was estimated at 363 \u03bcm3 per cell (Niemiec et al., 2015); lymphocyte volume was estimated at 173 \u03bcm3 per cell (Chapman et al., 1981) and epithelial cell volume was estimated at 1670 \u03bcm3 (Jiang et al., 2010). Drugs were extracted from cell lysate solutions by adding 100 \u03bcL cell lysate to 35 \u03bcL of extraction solution (32% Methanol, 68% Acetonitrile, 1 \u03bcg/ml diclofenac as internal standard) and 15 \u03bcL of 50/50 methanol/water. Extracts were stored at \u221280\u00b0C or analyzed immediately by LC-MS/MS\n\n### LC-MS/MS analysis\n\nThe following analytical methods were used to quantify fluoroquinolones in plasma, tissue homogenates and laser-capture microdissected thin section areas. Neat 1 mg/mL DMSO stocks of all compounds were serially diluted in 50/50 methanol/water to create standard curves and quality control spiking solutions. Fifteen microliters of neat spiking solutions were added to 100 \u00b5L of Milli-Q deionized water, and extraction was performed by adding 35 \u03bcL of extraction solution as described above. LC/MS-MS analysis was performed on a Sciex Applied Biosystems 4000 triple-quadrupole mass spectrometer coupled to an Agilent 1260 HPLC system to quantify LVX, GTX and MXF levels in the samples. Chromatography was performed with an Agilent Zorbax SB-C8 column (2.1 \u00d7 30 mm; particle size, 3.5 \u00b5m) using a reverse phase gradient elution. All gradients used 0.1% formic acid in Milli-Q deionized water for the aqueous mobile phase and 0.1% formic acid in acetonitrile for the organic mobile phase. Multiple-reaction monitoring of parent/daughter transitions in electrospray positive-ionization mode was used to quantify the analytes. The compounds were ionized using ESI positive mode ionization and monitored using masses MXF (402.2/358.1), LVX (362/318.5), GFX (376/261.2), and Diclofenac (296/215). Sample analysis was accepted if the concentrations of the standard and quality control samples were within 20% of the nominal concentration. Data processing was performed using Analyst software (version 1.6.2; Applied Biosystems Sciex). NZW control plasma treated with K2EDTA was obtained from Bioreclammation and used to build standard curves. LC-MS/MS analysis was performed on a Sciex Applied Biosystems 4000 triple-quadrupole mass spectrometer coupled to an Agilent 1260 HPLC system to quantify LVX, GTX and MXF levels in the samples.\n\n### Statistical and correlation analyses\n\nSpearman rank correlation was used to test the association between MXF abundance and each of the parameters recorded for the 35 ROIs (Figure 3\u2014source data 2).\n\n#### Nonlinear Mixed Effect Modeling (nonMEM) correlation analysis\n\nThe entire dataset included 5053 observations (pixel intensities) from 35 ROIs. Each ROI contained between 48 and 429 pixels. Data points below the limit of quantitation (BLOQ) were set to \u2018zero\u2019. Non-linear mixed effect modeling was applied, where two levels of random effects were implemented: a first level describing within-ROI variability and a second level of mixed effects describing between-ROI variability. All variability terms were assumed to be log normally distributed, where the median and variance terms were estimated. First, a constant baseline model was developed (the \u2018base\u2019 model) where the typical value of drug abundance is the median value of pixel intensity across all ROIs, and the between-ROI variability term represents the deviation of each individual ROI compared to the typical value. The covariate model was built using a step-wise model building procedure where all continuous predictors were tested using linear and non-linear functions (exponential, power, hockey stick). The predictors included into the covariate search were: % histiocytes, % lymphocytes, % necrotic cells, % neutrophils, % epithelial or stromal cells, relative distance to lesion border (or distance ratio), absolute distance to lesion border in pixels or in \u03bcm. The % necrotic cell values were categorized into four groups \u2013 no necrosis, low necrosis (<5%), medium necrosis (>5% and<90%) and high necrosis (\u226590%) and treated as categorical covariates. The predictors were retained in the model if they met two criteria: (i) significance level of p<0.05 in the likelihood ratio test used to compare the goodness of fit of the model with and without the corresponding predictor, and (ii) ability to decrease unexplained between-ROI variability. To visualize the contribution of each potential predictor, we built empirical Bayes estimate (EBE) plots (Savic and Karlsson, 2009), based on up to 150 repeated observations in each ROI, thus representing the true measured value. The estimate of EBE shrinkage was\u00a0<1%, confirming the biological relationship between drug abundance in ROIs and each of the predictors selected in the final model. Once finalized, the covariate model was validated using residual diagnostic plots and visual predictive checks. We employed model diagnostics which included plots of typical predictions and individual predictions versus observed values, as well as plots of conditional weighted residuals versus typical prediction and visual predictive checks. The base and final model codes are provided in Figure 4\u2014source data 1. The final model equation describing the typical drug abundance within each ROI is shown below:\n\n$$\nMXFabundance=\\theta_{1}\\timese^{\\theta_{2}\\times(Histiocytes%-0.35)}\\timese^{\\theta_{3}\\times(DistanceRatio-0.65)}\\times(1+\\theta_{Necrosis})\n$$\n\nwhere $\\theta_{1-3}and\\theta_{necrosis}$\u00a0are model estimated constants and are reported in supplementary file 1.\n\n#### Internal validation of the covariate model\n\nTo validate the approach, we also randomly split the dataset into a training and validation set. The data points were categorized into low, medium or high MXF abundance, to ensure that low, medium and high ranges of abundance were well represented in both sets. Within each category, data points were randomly split (2/3 and 1/3) and assigned to either the training or validation set. The training data set included 3277 measurements from 24 ROIs and the validation data set included 1776 measurements from 11 ROIs. The model was internally validated by predicting MXF abundance (both median value and within ROI variability) using ROI-specific measurements of histiocytes, distance ratio and % necrotic cells in the final model equation (Figure 3\u2014figure supplement 4D,E and Figure 3\u2014source data 1)\n\n#### Statistical tests\n\nTo detect statistically significant differences in drug uptake between cell types, groups were compared using the Wilcoxon matched-pairs signed rank test (non-parametric) for single comparisons and the Friedman test (non-parametric) for multiple comparisons (GraphPad Prism). p values less than 0.05 were considered statistically significant. *p<0. 05, **p<0.01, ***p<0.001. The statistical analysis summarized in Figure 1\u2014figure supplement 2 was carried out using the Wilcoxon matched-pairs signed rank test. Data shown in Figure 3\u2014figure supplement 3A were analyzed using a one-way analysis of variance (ANOVA) comparing the mean moxifloxacin abundance of each area and a Tukey post-hoc test for multiple comparisons. All data are presented as mean\u00a0\u00b1standard deviation.\n",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "9bae2ea3-9699-46a8-a1d9-6cffff985c19",
+      "submission_id": "032c3abf-d7c2-42ac-98a3-45e54bfb62fe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- Bree Aldridge, Tufts University School of Medicine United States\n\n## Review text\n\nDOI: [10.7554/eLife.41115.024](https://doi.org/10.7554/eLife.41115.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"High resolution mapping of fluoroquinolones in tuberculous lesions reveals immune cell type specific distribution\" for consideration by eLife. Your article has been reviewed by four peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Wendy Garrett as the Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Bree Aldridge (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nEffective distribution of drugs to the site of infection is critical to control TB disease, which presents with complex lung pathology, often with heterogeneous lesions at different stages of development. In their submission, Dartois and colleagues attempt to explore tissue distribution of fluoroquinolones (FQs), which are central to the treatment of drug resistant TB. Using imaging mass spectrometry, combined with histological assessment of the same sections, the authors study tissue distribution of FQs in tuberculous lesions from infected rabbits. Previous work demonstrated that FQs distribute into the cellular cuff of necrotic granulomas and in this current submission, the authors further unravel these observations. They also develop and apply interesting statistical analysis algorithms to spatially locate quantify drug distribution.\n\nKey findings:\n\n1) Moxifloxacin (MXF), levofloxacin (LVX) and gatifloxacin (GTX) distribute to a region adjacent to the caseous center of the granuloma.\n\n2) FQs preferentially distribute into foamy macrophages close to the caseum or into less-foamy macrophages in the outer layers of the granuloma.\n\n3) MXF appears to be preferentially taken up by macrophages in the granuloma cuff over other immune cell types. These observations were confirmed in drug uptake assays where FQ uptake was higher in macrophages when compared to other cell types.\n\n4) Preferential accumulation of FQs in foamy macrophages isolated from human PBMCs.\n\nThe study is clearly presented and the following should be addressed:\n\nEssential revisions:\n\n1) Mention is made of \"same-section\" analysis by MALDI and histopathology but the workflow in Figure 1\u2014figure supplement 1 suggests that MALDI is done on one section and histopathology is done on a distinct adjacent section. Adjacent is also mentioned in some figure legends. This becomes confusing again when the legend in Figure 3 mentions \"same-section\". From the text in the first paragraph of the subsection \u201cMacrophage content and distance from lesion margin drive the penetration of MXF\u201d, it seems clear that the same section was used for MALDI and histopathology, this should be kept consistent throughout the manuscript.\n\n2) The authors report a 1.5 to 2-fold increase in FQ distribution in cellular lesions when compared to uninvolved lung and caseum. This difference seems relatively small. Does it translate to meaningful differences in effective killing concentrations (MICs) in the different components of the lesion? Can statistics be provided for Figure 1\u2014figure supplement 2? What do these differences mean for bacterial clearance in these regions?\n\n3) Better images need to be provided for Figure 2\u2014figure supplement 1H \u2013 it's hard to see the bacilli, very fuzzy.\n\n4) Various quantitative analyses were conducted, which are referred to and found under different sections like statistical analysis, correlation analysis and modelling. It is difficult for the reader to follow these different sections and the manuscript would benefit of a re-arrangement of Materials and methods and Results into one section called Statistical analysis where the different types of analysis could have subsections and be presented. It is accepted that some of the statistical analysis have been presented before but as an example, the modeling part is unique to this article. As such, the description of the analysis needs to be somewhat more extensive. A more detailed model development section illustrating the development of the base model and the covariate analysis as well as information about the software used and how model diagnostics were done would be good.\n\n5) The validation step of the analysis is not clear. What does this add? The statement in the manuscript that the validation confirmed the predictive value of the model equation is somewhat questionable. A proper validation step would have required a distinct data set, generated separately from those used to build the model but with a different condition. As an example, this can include comparison of a different dose in PKPD than was used to build the model but still within the covered dose range used for model development. It would be more appropriate if all data in the current manuscript were used for model development and no validation step made. This would also most likely reduce the uncertainty in the model parameters and perhaps change the covariate analysis with respect to statistical power. Please address this.\n\n6) It seems that immune cells in tissues were identified by their morphologic characteristics on H&E which is inaccurate. A more appropriate approach, which may be technically difficult, would be to use specific immune-stains or preferably, flow cytometric separation of cells from tissue homogenates and subsequent measurement of drug levels. Flow cytometry was performed for human blood samples but not for rabbit tissues. Given that these methods were not used, please clearly state in the Abstract and concluding remarks that only H&E staining was used to differentiate cell types in rabbits and that this is a limitation of the study.\n\n7) The significance of the human blood data is unclear. In tissues, the drug distribution is affected by the tissue architecture, fibrosis, etc. but this is not accounted in the blood data. Also explain how this is an advance over Carlier et al. (1990) and Michot et al. (2006). How much drug is protein bound? Are these data simply reflecting drug lipophilicity? Finally, please add a statement regarding IRB approval/exemption.\n\n8) Supplementary figures show the tissue to plasma ratios at several time-points after drug administration. However, except at early time-points (<2 hours), wouldn't these ratios be significantly affected by the plasma clearance (half-lives ~few hours)? The tissue concentration effect noted over time may simply be due to a lower plasma level (denominator) rather than a true, absolute increase in tissue levels. Can the authors address this possibility?\n",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0e773272-527c-40ec-b271-22ead492c3f7",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C1",
+      "claim": "In human tuberculosis (TB), necrotic granulomas and cavities are the most prominent and treatment recalcitrant lesion types.",
+      "claim_type": "EXPLICIT",
+      "source": "In human tuberculosis (TB), necrotic granulomas and cavities are the most prominent and treatment recalcitrant lesion types (Canetti, 1955).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Canetti, 1955",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "65faf876-0c0f-4215-85c4-6f4718f45bfc",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C2",
+      "claim": "The major histopathological features of necrotic granulomas and cavities are a caseous or necrotic core surrounded by a cuff of immune cells including lymphocytes, epithelioid macrophages, foam cells or lipid-laden macrophages, and interspersed neutrophils and epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The major histopathological features of these lesions are a caseous or necrotic core surrounded by a cuff of immune cells including lymphocytes, epithelioid macrophages, foam cells or lipid-laden macrophages, and interspersed neutrophils and epithelial cells (Leong et al., 2011; Dannenberg, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Leong et al., 2011 and Dannenberg, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "17e85433-c05a-4cb3-b15f-5d4bf5d0728f",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C3",
+      "claim": "Mycobacterium tuberculosis is found intracellularly in macrophages and foamy macrophages in TB lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "In these lesions, Mycobacterium tuberculosis (Mtb), the etiologic agent of TB, is found intracellularly in macrophages and foamy macrophages (Peyron et al., 2008), neutrophils (Dallenga and Schaible, 2016; Berry et al., 2010), epithelial cells (Scordo et al., 2016) and dendritic cells (Tailleux et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peyron et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "f9f29610-a05a-4f66-87da-a38213965c8a",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C4",
+      "claim": "Mycobacterium tuberculosis is found intracellularly in neutrophils in TB lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "In these lesions, Mycobacterium tuberculosis (Mtb), the etiologic agent of TB, is found intracellularly in macrophages and foamy macrophages (Peyron et al., 2008), neutrophils (Dallenga and Schaible, 2016; Berry et al., 2010), epithelial cells (Scordo et al., 2016) and dendritic cells (Tailleux et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dallenga and Schaible, 2016 and Berry et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "1eda4528-5457-4c6d-8e70-25d9e7457cee",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C5",
+      "claim": "Mycobacterium tuberculosis is found intracellularly in epithelial cells in TB lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "In these lesions, Mycobacterium tuberculosis (Mtb), the etiologic agent of TB, is found intracellularly in macrophages and foamy macrophages (Peyron et al., 2008), neutrophils (Dallenga and Schaible, 2016; Berry et al., 2010), epithelial cells (Scordo et al., 2016) and dendritic cells (Tailleux et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Scordo et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "dd1afdb5-4839-4464-b67f-0d8150024917",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C6",
+      "claim": "Mycobacterium tuberculosis is found intracellularly in dendritic cells in TB lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "In these lesions, Mycobacterium tuberculosis (Mtb), the etiologic agent of TB, is found intracellularly in macrophages and foamy macrophages (Peyron et al., 2008), neutrophils (Dallenga and Schaible, 2016; Berry et al., 2010), epithelial cells (Scordo et al., 2016) and dendritic cells (Tailleux et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tailleux et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "24f28498-47e0-4a38-aa33-af80d058c940",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C7",
+      "claim": "Mtb can establish a durable infection in foamy macrophages leading to replication and/or long term survival in a dormant state.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtb can establish a durable infection in foamy macrophages leading to replication and/or long term survival in a dormant state (Peyron et al., 2008; Russell, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Peyron et al., 2008 and Russell, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "23f90797-3255-4dd8-a131-e6cdd6218918",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C8",
+      "claim": "TB granulomas present with increasingly abnormal vasculature from the periphery inward.",
+      "claim_type": "EXPLICIT",
+      "source": "TB granulomas present with increasingly abnormal vasculature from the periphery inward (Datta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Datta et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "21589e43-21e2-413b-8c68-1979d664fc5c",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C9",
+      "claim": "Most vessels are compressed along the lesion periphery and collapsed within the interior of the cellular rim in TB granulomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Most vessels are compressed along the lesion periphery and collapsed within the interior of the cellular rim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "33eae332-f844-4de1-9d79-abf85232227f",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C10",
+      "claim": "Vascular dysfunction in TB granulomas leads to impaired vascular function and a gradual decrease of small molecule penetration as the distance from the granuloma outer edge increases.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to impaired vascular function and a gradual decrease of small molecule penetration as the distance from the granuloma outer edge increases (Datta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Datta et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "140a1872-b364-46c1-b146-f4d3d89e1fc8",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C11",
+      "claim": "Vascular dysfunction culminates in a complete lack of blood vessels in the necrotic core of TB granulomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Vascular dysfunction culminates in a complete lack of blood vessels in the necrotic core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "d54b8a5e-60dc-4eb5-ba09-1a47341b7f44",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C12",
+      "claim": "Mtb-infected foam cells or foamy macrophages largely concentrate along the interface between the cellular and caseous regions of the lesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtb-infected foam cells or foamy macrophages largely concentrate along the interface between the cellular and caseous regions of the lesion (Peyron et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peyron et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "1a890ea0-11b0-43a3-8962-0a0b88723f25",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C13",
+      "claim": "Reaching adequate drug concentrations at the sites of infection is critical in achieving sterilization and clinical utility in TB disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficacy and drug distribution studies in animal models of TB disease have shown that reaching adequate drug concentrations at the sites of infection is critical in achieving sterilization and clinical utility (Irwin et al., 2014; Irwin et al., 2016; Prideaux et al., 2015a; Tanner et al., 2018; Zimmerman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Irwin et al., 2014; Irwin et al., 2016; Prideaux et al., 2015a; Tanner et al., 2018; Zimmerman et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "be4e557c-aa6b-4b3d-8dba-7dbd2751aa22",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C14",
+      "claim": "Most TB drugs exhibit differential partitioning between the cellular and necrotic regions of pulmonary lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Using analytical approaches and MALDI mass spectrometry imaging (MSI), we previously showed that most TB drugs exhibit differential partitioning between the cellular and necrotic regions of pulmonary lesions (Irwin et al., 2016; Prideaux et al., 2015a; Zimmerman et al., 2017; Prideaux et al., 2011; Prideaux et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Irwin et al., 2016; Prideaux et al., 2015a; Zimmerman et al., 2017; Prideaux et al., 2011; Prideaux et al., 2015b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "fb174115-ceab-48f8-9fbf-b5b41c309c67",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C15",
+      "claim": "In MDR-TB patients, treatment success is associated with the use of fluoroquinolones.",
+      "claim_type": "EXPLICIT",
+      "source": "In MDR-TB patients, treatment success is associated with the use of FQs (Ahuja et al., 2012) and, not surprisingly, it follows that FQ resistance is associated with poor clinical outcome (Bastos et al., 2014; Falzon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ahuja et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "6a4c624d-024c-4efe-924e-8004223612e9",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C16",
+      "claim": "FQ resistance is associated with poor clinical outcome in MDR-TB patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In MDR-TB patients, treatment success is associated with the use of FQs (Ahuja et al., 2012) and, not surprisingly, it follows that FQ resistance is associated with poor clinical outcome (Bastos et al., 2014; Falzon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bastos et al., 2014 and Falzon et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "90c4a2df-1a25-4059-8204-e8233295826b",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C17",
+      "claim": "Moxifloxacin, levofloxacin and gatifloxacin are used to treat MDR-TB.",
+      "claim_type": "EXPLICIT",
+      "source": "Moxifloxacin (MXF), levofloxacin (LVX) and gatifloxacin (GTX), three later generation FQs, are used to treat MDR-TB, although GTX production for systemic administration was recently terminated due to its side effect profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "17325646-11e8-4d38-a580-30b16ba743f4",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C18",
+      "claim": "GTX production for systemic administration was recently terminated due to its side effect profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Moxifloxacin (MXF), levofloxacin (LVX) and gatifloxacin (GTX), three later generation FQs, are used to treat MDR-TB, although GTX production for systemic administration was recently terminated due to its side effect profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "02ceedbd-8a99-4e61-a102-07fc8db7a1c8",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C19",
+      "claim": "MXF is included in many 'universal' regimens under clinical evaluation to treat both drug susceptible and MDR-TB.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MXF is included in many 'universal' regimens under clinical evaluation to treat both drug susceptible and MDR-TB ((Gillespie, 2016; Diacon et al., 2012); http://www.endtb.org/clinical-trial; ClinicalTrials.gov), and thus has the potential to become a pivotal TB drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gillespie, 2016; Diacon et al., 2012 and references to clinical trials",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "aa8a32cc-91a6-4476-96ac-955dc7d6fc69",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C20",
+      "claim": "MXF kills non-replicating Mtb persisters in ex vivo caseum at concentrations that are achieved clinically in caseous foci.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently shown that MXF kills non-replicating Mtb persisters in ex vivo caseum (Sarathy et al., 2018) at concentrations that are achieved clinically in caseous foci (Prideaux et al., 2015a; Heinrichs et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sarathy et al., 2018; Prideaux et al., 2015a; Heinrichs et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "8d2e24f9-4979-4d31-a6bb-1cec9790f8ec",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C21",
+      "claim": "MXF, LVX and GTX each formed a narrow rim of high signal intensity directly adjacent to the caseous center of the granuloma in MALDI MSI ion maps.",
+      "claim_type": "EXPLICIT",
+      "source": "In two-dimensional MALDI MSI ion maps, MXF, LVX and GTX each formed a narrow rim of high signal intensity directly adjacent to the caseous center of the granuloma, as well as additional rings or pockets of higher intensity further outward from the necrotic center (Figure 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from MALDI MSI data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "c3f6f1a4-faf1-4232-afa8-297b8885bb6b",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C22",
+      "claim": "MXF, LVX and GTX formed additional rings or pockets of higher intensity further outward from the necrotic center in MALDI MSI ion maps.",
+      "claim_type": "EXPLICIT",
+      "source": "In two-dimensional MALDI MSI ion maps, MXF, LVX and GTX each formed a narrow rim of high signal intensity directly adjacent to the caseous center of the granuloma, as well as additional rings or pockets of higher intensity further outward from the necrotic center (Figure 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from MALDI MSI data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "27b5bb6a-c64e-439e-971a-d886c0cb949a",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C23",
+      "claim": "There is approximately 1.5 to 2-fold higher signal of fluoroquinolones in cellular lesions than in uninvolved lung and caseum.",
+      "claim_type": "EXPLICIT",
+      "source": "We found approximately 1.5 to 2-fold higher signal in cellular lesions than in uninvolved lung and caseum for all three FQs (Figure 1\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis of MALDI MSI data shown in Figure 1\u2014figure supplement 2A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "e605b9d6-6cce-4370-91ea-b4ca1be26b34",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C24",
+      "claim": "MXF and GTX concentrations were higher in cellular areas than in caseum and uninvolved lung, although only marginally so.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, MXF and GTX concentrations were higher in cellular areas than in caseum and uninvolved lung, although only marginally so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from laser capture microdissection coupled with mass spectrometry data shown in Figure 1\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "0d13f5f2-3a63-4df1-ab69-b34f8beadf6b",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C25",
+      "claim": "LVX exhibited irregular patterns of distribution between the cellular and caseous regions.",
+      "claim_type": "EXPLICIT",
+      "source": "LVX exhibited irregular patterns of distribution between the cellular and caseous regions (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from laser capture microdissection coupled with mass spectrometry data shown in Figure 1\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "d76956ee-ff78-4785-bc64-cc69134f0511",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C26",
+      "claim": "High resolution H and E images of mature necrotic granulomas reveal concentric layers including a ring of foamy macrophages with high lipid droplet contents directly subtending the caseous core, a layer mostly composed of lymphocytes, and a thick layer rich in clusters of less foamy macrophages in a background of lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the drivers of heterogeneous FQ distribution in cellular granuloma regions, we generated high resolution H and E images of mature necrotic granulomas (Figure 2A\u2013F), revealing the following concentric layers from the caseum outward: a ring of foamy macrophages with high lipid droplet contents directly subtending the caseous core, a layer mostly composed of lymphocytes, and a thick layer rich in clusters of less foamy macrophages in a background of lymphocytes (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from H&E histology shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "bb7bc0d0-7ff2-400a-bfdd-8b896dcc69c2",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C27",
+      "claim": "Small clusters or ribbons of epithelial or stromal cells as well as interspersed neutrophils were found in most layers of mature necrotic granulomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Small clusters or ribbons of epithelial or stromal cells as well as interspersed neutrophils and were found in most layers (Figure 2D\u2013F and Figure 2\u2014figure supplement 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from H&E histology shown in Figure 2D-F and Figure 2\u2014figure supplement 1A-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "29dac2d9-b591-474b-8bc2-d1af6adc1d3d",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C28",
+      "claim": "Mtb bacilli were mostly found in foamy macrophages and in association with karyorrhectic neutrophils in the caseous foci of necrotic granulomas and cavities.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtb bacilli were mostly found in foamy macrophages and in association with karyorrhectic neutrophils (dying cells containing mostly fragmented chromatin irregularly distributed throughout the cytoplasm) in the caseous foci of necrotic granulomas and cavities (Figure 2\u2014figure supplement 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from histology shown in Figure 2\u2014figure supplement 1G,H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "f2164b67-7c03-42d7-957e-deb0048a842d",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C29",
+      "claim": "Average MXF contents were significantly different across the majority of ROIs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that average MXF contents were significantly different across the majority of ROIs (Figure 3\u2014figure supplement 4A) with a between-ROI variability of 43.4%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis shown in Figure 3\u2014figure supplement 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "5ccc95a8-829a-4626-b7e9-8d454493dc79",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C30",
+      "claim": "There is a between-ROI variability of 43.4% in MXF contents.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that average MXF contents were significantly different across the majority of ROIs (Figure 3\u2014figure supplement 4A) with a between-ROI variability of 43.4%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of MALDI MSI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "f7c32169-46b8-4253-9599-ed84b5203989",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C31",
+      "claim": "There is a positive association between MXF abundance and the fraction of macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Spearman rank correlation, we found a positive association between MXF abundance and the fraction of macrophages, and an inverse correlation with the relative distance from lesion border and the necrosis fraction (Figure 3\u2014source data 2 and Figure 3\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Spearman rank correlation analysis shown in Figure 3\u2014figure supplement 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "2bf176df-79af-43ee-b2cd-02e8a5a3c1b7",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C32",
+      "claim": "There is an inverse correlation between MXF abundance and the relative distance from lesion border.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Spearman rank correlation, we found a positive association between MXF abundance and the fraction of macrophages, and an inverse correlation with the relative distance from lesion border and the necrosis fraction (Figure 3\u2014source data 2 and Figure 3\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Spearman rank correlation analysis shown in Figure 3\u2014figure supplement 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "9cc46967-fa27-4627-b26a-c274e2bc9bb9",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C33",
+      "claim": "There is an inverse correlation between MXF abundance and the necrosis fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Spearman rank correlation, we found a positive association between MXF abundance and the fraction of macrophages, and an inverse correlation with the relative distance from lesion border and the necrosis fraction (Figure 3\u2014source data 2 and Figure 3\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Spearman rank correlation analysis shown in Figure 3\u2014figure supplement 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "190c0d97-a8e0-463a-ad6c-c1de215e3fb6",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C34",
+      "claim": "There was no significant association between MXF intensity signal and the percentage of other immune cell types in ROIs.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant association between MXF intensity signal and the percentage of other immune cell types in ROIs (Figure 3\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Spearman rank correlation analysis shown in Figure 3\u2014figure supplement 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "54b7b9ed-a4f2-4b5c-b7b6-cb8451734bfe",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C35",
+      "claim": "Accounting for histiocyte fraction reduced the between-ROI MXF variability from 44.0% to 28.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using nonlinear mixed effect modeling (nonMEM) with the full dataset, we found that accounting for histiocyte fraction reduced the between-ROI MXF variability from 44.0% to 28.3%, which further decreased to 20.0% when relative distance of ROI to lesion edge was integrated in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Nonlinear mixed effect modeling analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "3d3cd4f3-f74e-4cea-9bef-720bc7c2d891",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C36",
+      "claim": "Integrating relative distance of ROI to lesion edge in the model decreased the between-ROI MXF variability to 20.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using nonlinear mixed effect modeling (nonMEM) with the full dataset, we found that accounting for histiocyte fraction reduced the between-ROI MXF variability from 44.0% to 28.3%, which further decreased to 20.0% when relative distance of ROI to lesion edge was integrated in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Nonlinear mixed effect modeling analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "65f297a5-8d4c-4c12-9bc2-3be823329d02",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C37",
+      "claim": "Factoring the fraction of the ROI occupied by necrotic tissue reduced the between-ROI MXF variability from 20.0% to 18.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Factoring the fraction of the ROI occupied by necrotic tissue further reduced the variability from 20.0% to 18.9% (Table 1), significantly improving the correlation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Nonlinear mixed effect modeling analysis shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "99fb816c-063d-4db0-b9d3-383f11d7c696",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C38",
+      "claim": "Integrating the fraction of other immune cell types further decreased the residual unexplained variability but not significantly so.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating the fraction of other immune cell types further decreased the residual unexplained variability but not significantly so (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Nonlinear mixed effect modeling analysis shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "eb4a081c-3d0d-425c-81f8-5ffbfb250de6",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C39",
+      "claim": "Immune cells other than macrophages do not significantly influence the partitioning of MXF.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that immune cells other than macrophages do not significantly influence the partitioning of MXF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from nonlinear mixed effect modeling analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "785b968e-588c-4927-a86f-ba7a621242e2",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C40",
+      "claim": "The model could predict ROI-specific MXF abundance using histiocyte fraction, relative distance from lesion margin and necrosis content.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the model could predict ROI-specific MXF abundance using histiocyte fraction, relative distance from lesion margin and necrosis content (Figure 4B and Figure 3\u2014figure supplement 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model validation shown in Figure 4B and Figure 3\u2014figure supplement 4D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "ff5af583-5341-482c-9deb-d491016a64ee",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C41",
+      "claim": "MXF, LVX and GTX all accumulated in macrophages at higher levels than in lymphocytes, neutrophils and epithelial cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug uptake in each cell type revealed that MXF, LVX and GTX all accumulated in macrophages at higher levels than in lymphocytes, neutrophils and epithelial cells in vitro (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "In vitro drug uptake assay data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "d65ea0aa-064e-4a1f-aa1a-3e60707af581",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C42",
+      "claim": "More than 80% of the macrophages appeared Nile Red positive after infection with \u03b3-irradiated M. tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Foamy macrophages were derived from differentiated primary macrophages via infection with \u03b3-irradiated M. tuberculosis, upon which more than 80% of the macrophages appeared Nile Red positive, that is with a high lipid droplet content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Flow cytometry data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "df8c8161-0015-4ec8-9149-2117e46fc718",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C43",
+      "claim": "Less than 30% of the non-stimulated macrophages were Nile Red positive.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, less than 30% on the non-stimulated macrophages were Nile Red positive (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "44399579-6665-4fb3-9332-77f42fce007f",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C44",
+      "claim": "Fluoroquinolone uptake was significantly higher in foamy than in non-foamy macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluoroquinolone uptake was significantly higher in foamy than in non-foamy macrophages (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "In vitro drug uptake assay data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "3efd13f8-c1d7-42bd-8a0d-fe9288c21042",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C45",
+      "claim": "The mean ratio of macrophage versus foamy macrophage uptake for fluoroquinolones is around 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the high inter-donor variability in absolute uptake, we also plotted the macrophage versus foamy macrophage uptake ratio for each individual donor, showing a mean ratio around 2 (Figure 5\u2014figure supplement 1 and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of in vitro drug uptake data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "b000fcd0-9b3b-4e9d-8f71-54e57886013a",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C46",
+      "claim": "FQ uptake is higher in foamy macrophages, where Mtb bacilli largely reside in vivo, than in regular macrophages in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus FQ uptake is higher in foamy macrophages, where Mtb bacilli largely reside in vivo, than in regular macrophages in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from in vitro drug uptake assay data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "5b24b9b6-d29f-47eb-b56f-7f3225044e08",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C47",
+      "claim": "FQs are actively transported in and out of eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to differential regulation of transporters and efflux pumps since FQs are actively transported in and out of eukaryotic cells (Maeda et al., 2007; Weiner et al., 2018; Mulgaonkar et al., 2013; Rudin et al., 1992; Michot et al., 2005), and foamy macrophages are known to differentially express selected transporters such as ABCG1 and ABCA1 (cholesterol efflux transporters) compared to non-foamy phagocytes (Lorkowski et al., 2001; Canfr\u00e1n-Duque et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Maeda et al., 2007; Weiner et al., 2018; Mulgaonkar et al., 2013; Rudin et al., 1992; Michot et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "60af223a-ec2b-44d4-b79f-42a801fddbbd",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C48",
+      "claim": "Foamy macrophages are known to differentially express selected transporters such as ABCG1 and ABCA1 compared to non-foamy phagocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to differential regulation of transporters and efflux pumps since FQs are actively transported in and out of eukaryotic cells (Maeda et al., 2007; Weiner et al., 2018; Mulgaonkar et al., 2013; Rudin et al., 1992; Michot et al., 2005), and foamy macrophages are known to differentially express selected transporters such as ABCG1 and ABCA1 (cholesterol efflux transporters) compared to non-foamy phagocytes (Lorkowski et al., 2001; Canfr\u00e1n-Duque et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lorkowski et al., 2001 and Canfr\u00e1n-Duque et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "55610d49-0371-43f6-9690-b022e1f10cba",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C49",
+      "claim": "Processes such as pinocytosis have been implicated in foam cell biogenesis and could be upregulated in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, processes such as pinocytosis have been implicated in foam cell biogenesis and could be upregulated in these cells (Michael et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Michael et al., 2013",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "ce967899-37c4-4536-855a-ed1fb1428152",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C50",
+      "claim": "Drug tolerant M. tuberculosis persisters are present in the foam cells of human lung lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the underlying mechanism, the finding that FQs are preferentially taken up by all phagocytes has positive clinical implications since drug tolerant M. tuberculosis persisters are present in the foam cells of human lung lesions (Peyron et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peyron et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "b26e3a29-ae99-46a0-9df5-890a89c473b7",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C51",
+      "claim": "M. tuberculosis bacilli are found in viable and necrotic neutrophils, which constitute a privileged site of bacterial replication.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, M. tuberculosis bacilli are also found in viable and necrotic neutrophils, which constitute a privileged site of bacterial replication (Mishra et al., 2017; Kimmey et al., 2015; Diedrich et al., 2016) and where MXF uptake was significantly lower than in macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mishra et al., 2017; Kimmey et al., 2015; Diedrich et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "e4d70149-2b74-4c3e-a2ad-7104e1866102",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C52",
+      "claim": "MXF uptake was significantly lower in neutrophils than in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, M. tuberculosis bacilli are also found in viable and necrotic neutrophils, which constitute a privileged site of bacterial replication (Mishra et al., 2017; Kimmey et al., 2015; Diedrich et al., 2016) and where MXF uptake was significantly lower than in macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from in vitro drug uptake data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "b9c23da9-bf24-4f45-b534-1f1f217d004a",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C53",
+      "claim": "The distribution of fluoroquinolones within the cellular cuff of mature TB lesions is uneven.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have combined high resolution MALDI MSI, qualification of cell types in H and E stained sections, quantitative image analysis and nonlinear modeling to show that (i) the distribution of FQs within the cellular cuff of mature TB lesions is uneven and (ii) the heterogeneous distribution of MXF in TB lesions is driven by the macrophage content, the distance from lesion border and the extent of necrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from MALDI MSI and modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "325f26fe-d5a7-4389-ab47-bfb067a4d402",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C54",
+      "claim": "The heterogeneous distribution of MXF in TB lesions is driven by the macrophage content, the distance from lesion border and the extent of necrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have combined high resolution MALDI MSI, qualification of cell types in H and E stained sections, quantitative image analysis and nonlinear modeling to show that (i) the distribution of FQs within the cellular cuff of mature TB lesions is uneven and (ii) the heterogeneous distribution of MXF in TB lesions is driven by the macrophage content, the distance from lesion border and the extent of necrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from MALDI MSI and modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "539805c4-47c8-4535-a9f7-13a887b6cccc",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C55",
+      "claim": "FQs are preferentially taken up by macrophages relative to other immune cell types typically found in TB lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro uptake assays in human blood cells were developed to confirm that the FQs are preferentially taken up by macrophages relative to other immune cell types typically found in TB lesions, and even more strongly so in foamy macrophages where Mtb establishes long term infection and dormancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of in vitro drug uptake findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "debf9174-4afd-420c-b344-cc978ae00f79",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C56",
+      "claim": "FQs are even more strongly taken up by foamy macrophages where Mtb establishes long term infection and dormancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro uptake assays in human blood cells were developed to confirm that the FQs are preferentially taken up by macrophages relative to other immune cell types typically found in TB lesions, and even more strongly so in foamy macrophages where Mtb establishes long term infection and dormancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of in vitro drug uptake findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "1b2c4ce2-f269-4f60-8287-bf89371f48ad",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C57",
+      "claim": "The results are consistent with published data on the accumulation of FQs in macrophage cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with published data on the accumulation of FQs in macrophage cell lines (Carlier et al., 1990; Michot et al., 2006), constitute an advance over assays relying on immortal cell lines in which expression of transporters and efflux pumps can be significantly altered, and demonstrate that uptake is significantly lower in human neutrophils and lymphocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carlier et al., 1990 and Michot et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "8e86708b-4bde-4e25-b664-faecd347a1fd",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C58",
+      "claim": "Uptake of FQs is significantly lower in human neutrophils and lymphocytes compared to macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with published data on the accumulation of FQs in macrophage cell lines (Carlier et al., 1990; Michot et al., 2006), constitute an advance over assays relying on immortal cell lines in which expression of transporters and efflux pumps can be significantly altered, and demonstrate that uptake is significantly lower in human neutrophils and lymphocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "In vitro drug uptake data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "765a4e30-1f96-4dc0-900e-90bdd8691bbf",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C59",
+      "claim": "The clear correlation between MXF abundance and relative distance from the outer lesion border is in keeping with previous studies showing that functionally abnormal vasculature increases as the distance from granuloma border increases, leading to correspondingly impaired small molecule distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The clear correlation between MXF abundance and relative distance from the outer lesion border is in keeping with previous studies showing that functionally abnormal vasculature increases as the distance from granuloma border increases, leading to correspondingly impaired small molecule distribution (Datta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Datta et al., 2015",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "380d1690-c394-4233-830b-e256f5f5244d",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C60",
+      "claim": "Therapies thought to achieve vessel normalization appear to improve small molecule delivery to TB lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, the authors showed that therapies thought to achieve vessel normalization, and thus improve vascular function, appear to improve small molecule delivery to TB lesions (Datta et al., 2015) or potentiate TB therapy (Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Datta et al., 2015 and Xu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "2f41c505-f494-4909-b56c-46b07ff96070",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C61",
+      "claim": "Therapies thought to achieve vessel normalization appear to potentiate TB therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, the authors showed that therapies thought to achieve vessel normalization, and thus improve vascular function, appear to improve small molecule delivery to TB lesions (Datta et al., 2015) or potentiate TB therapy (Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "b63b19ad-85ef-47a0-b016-85d102bc9367",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C62",
+      "claim": "In oncology, excessive angiogenesis generates a disorganized and leaky blood vessel network leading to poor drug delivery to the tumor core.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are reminiscent of oncology drug penetration concepts, where excessive angiogenesis generates a disorganized and leaky blood vessel network leading to poor drug delivery to the tumor core (Azzi et al., 2013; Di Paolo and Bocci, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Azzi et al., 2013 and Di Paolo and Bocci, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "516f1229-e3c2-4d8c-b70a-fa3a3d4251a4",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C63",
+      "claim": "Foamy macrophages are known to differentially express selected transporters such as ABCG1 and ABCA1 compared to non-foamy phagocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to differential regulation of transporters and efflux pumps since FQs are actively transported in and out of eukaryotic cells (Maeda et al., 2007; Weiner et al., 2018; Mulgaonkar et al., 2013; Rudin et al., 1992; Michot et al., 2005), and foamy macrophages are known to differentially express selected transporters such as ABCG1 and ABCA1 (cholesterol efflux transporters) compared to non-foamy phagocytes (Lorkowski et al., 2001; Canfr\u00e1n-Duque et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lorkowski et al., 2001 and Canfr\u00e1n-Duque et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "d4f55960-826d-4b98-b4cf-86557d11a3d7",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C64",
+      "claim": "The methodology is broadly applicable to the high-resolution mapping of any drug in diseased tissue, particularly when multiple cell types are present in complex lesions, tumors, atherosclerotic plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "The methodology is broadly applicable to the high-resolution mapping of any drug in diseased tissue, particularly when multiple cell types are present in complex lesions, tumors, atherosclerotic plaques, to name a few.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the applicability of the methodology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "059ba13b-2b0d-4fbc-a5e0-0bcca203b860",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C65",
+      "claim": "The co-localization of drugs and immune cell populations supported by in vitro uptake data is a powerful new tool to guide in silico modeling and simulations of drug distribution in TB lesions or any complex structure where drug penetration is paramount.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-localization of drugs and immune cell populations supported by in vitro uptake data is a powerful new tool to guide in silico modeling and simulations of drug distribution in TB lesions (Pienaar et al., 2017) or any complex structure where drug penetration is paramount.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the utility of the methodology with citation to Pienaar et al., 2017",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "60ecfbd6-9101-44ca-a5f1-3601ccc50023",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C66",
+      "claim": "Female New Zealand White rabbits weighing 2.2 to 2.6 kg were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Female New Zealand White (NZW) rabbits (Millbrook Farm, Concord, MA), weighing 2.2 to 2.6 kg, were maintained under specific pathogen-free conditions and fed water and chow ad libitum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental animals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "d378213a-9886-41db-a788-a5f796997dae",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C67",
+      "claim": "The rabbits were infected with M. tuberculosis HN878 using a nose-only aerosol exposure system.",
+      "claim_type": "EXPLICIT",
+      "source": "The rabbits were infected with M. tuberculosis HN878, using a nose-only aerosol exposure system as described (Subbian et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure with citation to Subbian et al., 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "78b0f0c1-c458-4d50-872d-a3d9d02bbfae",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C68",
+      "claim": "At defined time points from 16 to 20 weeks post-infection, rabbits received a single dose of 100 mg/kg moxifloxacin, 75 mg/kg levofloxacin or 100 mg/kg gatifloxacin by oral gavage.",
+      "claim_type": "EXPLICIT",
+      "source": "At defined time points from 16 to 20 weeks post-infection, rabbits received a single dose of 100 mg/kg moxifloxacin (Chemieliva Pharmaceuticals, China), 75 mg/kg levofloxacin or 100 mg/kg gatifloxacin (Chem-Impex Intl, IL), formulated in 40% sucrose and PEG400 (90:10) by oral gavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "fc41e830-6652-4b32-abd1-ca69f9c85c65",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C69",
+      "claim": "Rabbits were euthanized at 2 to 12 hr post-dose, or between the time of peak plasma concentration and the end of the tissue distribution phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Rabbits were euthanized at 2 to 12 hr post-dose, or between the time of peak plasma concentration and the end of the tissue distribution phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "65755d33-ae74-40eb-abfa-556e2c91503d",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C70",
+      "claim": "The lower limits of detection for MALDI MSI were 100 fmol or 750 ng/g for LVX, GTX and MXF.",
+      "claim_type": "EXPLICIT",
+      "source": "Limits of detection (LOD) were assessed as described previously (Prideaux et al., 2015a). The lower limits of detection were 100 fmol or 750 ng/g for LVX, GTX and MXF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of analytical method with citation to Prideaux et al., 2015a",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "1425c43c-1409-4ac8-bb9b-8435a7bef2b0",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "claim_id": "C71",
+      "claim": "The laser step size was set at 50 \u00b5m for MALDI MSI which enabled small necrotic areas within lesions to be resolved without overlapping of the laser spot on adjacent acquisitions.",
+      "claim_type": "EXPLICIT",
+      "source": "The laser step size was set at 50 \u00b5m which enabled small necrotic areas within lesions to be resolved without overlapping of the laser spot on adjacent acquisitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of analytical method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "da46237f-46f2-415a-a3d9-1f4732028903",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TB granulomas have characteristic histopathology with necrotic cores surrounded by immune cells, harbor Mtb in various cell types (especially foamy macrophages at the cellular-caseous interface), and exhibit abnormal vasculature that worsens from periphery to center.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 are all supported by appropriate citations to prior literature. These claims establish the background knowledge about TB lesion structure, cellular composition, bacterial localization, and vascular dysfunction. All statements are properly attributed to published work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "9e5f3c22-4af5-456d-8891-e1f605d7e671",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Adequate drug concentrations at infection sites are critical for TB treatment efficacy. Most TB drugs show differential partitioning in lesions. Fluoroquinolones (MXF, LVX, GTX) are important for MDR-TB treatment, with MXF showing particular promise in universal regimens and ability to kill persisters in caseum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C20 are supported by appropriate citations to prior work from the authors' group and others. These establish the rationale for studying fluoroquinolone distribution in TB lesions and the clinical importance of these drugs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "ab55fcd4-a41b-47e8-99f2-7bf6e8dd623f",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MALDI MSI reveals that fluoroquinolones (MXF, LVX, GTX) form heterogeneous distribution patterns in TB lesions with rings of high intensity adjacent to caseum and additional pockets in outer regions. Signal is 1.5-2 fold higher in cellular lesions than uninvolved lung and caseum, though absolute concentration differences are marginal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 are supported by MALDI MSI data (Figure 1) and quantitative analyses (Figure 1\u2014figure supplement 2). The imaging clearly shows heterogeneous distribution patterns, and both relative quantitation by MALDI and absolute quantitation by LC-MS/MS are provided. The observation that aggregate analysis masks heterogeneity is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "23f45b26-236d-44b0-9170-b22a3bd61e82",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "High-resolution H&E histology reveals that mature necrotic granulomas have concentric cellular layers: foamy macrophages adjacent to caseum, a lymphocyte layer, and an outer layer of less-foamy macrophages with lymphocytes. Mtb bacilli localize primarily to foamy macrophages and karyorrhectic neutrophils in caseous foci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by detailed H&E histology images (Figure 2 and supplements). The concentric organization is clearly visible and well-described. The localization of bacteria to foamy macrophages and dying neutrophils is demonstrated by histological staining.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "1002ca8d-8de1-4391-a954-93acfbd9fe83",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MXF abundance varies significantly across 35 ROIs within a single lesion (43.4% between-ROI variability). Spearman correlation analysis reveals positive association with macrophage fraction and inverse correlations with distance from lesion border and necrosis fraction, but no significant association with other immune cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 are supported by statistical analyses shown in Figure 3\u2014figure supplement 4. The ANOVA and Spearman correlation analyses are appropriate for the data. The correlations identified are statistically significant and biologically plausible given the known biology of TB lesions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "9e811f37-3fad-45e1-9a37-4e387b351ffa",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Nonlinear mixed-effects modeling shows that macrophage fraction, relative distance from lesion edge, and necrosis content are the primary drivers of MXF distribution, reducing unexplained variability from 44% to 18.9%. Other immune cell types do not significantly influence MXF partitioning. The model successfully predicts ROI-specific MXF abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 are supported by comprehensive nonMEM analysis (Table 1, Figure 4). The modeling approach is appropriate, with proper train-test validation. The stepwise reduction in unexplained variability with addition of each predictor is clearly demonstrated. Model validation shows good predictive performance (Figure 4B, Figure 3\u2014figure supplement 4D,E).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "dc201721-fc9d-4c25-a276-411448e92fab",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In vitro drug uptake assays demonstrate that all three fluoroquinolones (MXF, LVX, GTX) accumulate preferentially in macrophages compared to lymphocytes, neutrophils, and epithelial cells. Uptake is significantly higher in foamy macrophages (induced by \u03b3-irradiated Mtb, >80% Nile Red positive) than non-foamy macrophages (<30% Nile Red positive), with a mean ratio around 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 are supported by in vitro uptake data (Figure 5A,C) and flow cytometry characterization of foamy macrophages (Figure 5B). Statistical tests (Friedman test, Wilcoxon matched-pairs) are appropriate. The use of primary human cells is a strength. However, inter-donor variability is noted as high, which is appropriately addressed by showing individual donor ratios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "65cf1e1b-0395-45d3-93a6-d9a96e2f71f3",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The differential uptake in foamy versus non-foamy macrophages may be due to differential regulation of transporters/efflux pumps (FQs are actively transported), differential expression of transporters like ABCG1/ABCA1 in foamy macrophages, or upregulated pinocytosis in foam cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C48 are supported by appropriate citations. However, C49 is explicitly speculative ('could be upregulated'). The authors present plausible mechanisms but provide no direct experimental evidence for which mechanism(s) actually explain their observations. This remains a hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "9f0e8c91-77e0-475f-a0c6-4a1eba1ca95a",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The preferential uptake of FQs by macrophages has positive clinical implications since drug-tolerant Mtb persisters reside in foamy macrophages. However, Mtb also resides in neutrophils (a site of bacterial replication) where MXF uptake is significantly lower than in macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by appropriate citations. C52 is supported by the in vitro uptake data (Figure 5A). The interpretation correctly identifies both positive (good penetration where persisters reside) and negative (poor penetration in neutrophils where bacteria replicate) implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "28573af5-43d5-45a5-bc47-27bcdee9abec",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates that FQ distribution in TB lesions is heterogeneous and driven by macrophage content, distance from lesion border, and necrosis extent. In vitro assays confirm preferential uptake by macrophages over other immune cells, with even higher uptake in foamy macrophages where Mtb establishes dormancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 accurately summarize the major findings. The combination of high-resolution MALDI MSI, quantitative modeling, and in vitro validation provides strong converging evidence. The integration of in vivo imaging with in vitro mechanistic studies is a key strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "38f54efd-187a-4d75-8244-0ef2edefc327",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The results are consistent with published data on FQ accumulation in macrophage cell lines and demonstrate significantly lower uptake in human neutrophils and lymphocytes, representing an advance over immortalized cell line studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by appropriate citations and the in vitro data. The use of primary human cells rather than cell lines is indeed a methodological advance, as the authors note that transporter/efflux pump expression can be altered in immortalized lines.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "552ae935-72fb-451c-9827-f6fa8abb888e",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The correlation between MXF abundance and distance from lesion border is consistent with prior studies showing vascular dysfunction increases with distance from granuloma edge. Vessel normalization therapies may improve drug delivery or potentiate TB therapy, analogous to oncology concepts where abnormal angiogenesis impairs drug delivery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by appropriate citations to prior work. The authors correctly place their findings in the context of vascular biology and draw appropriate parallels to oncology. However, these are interpretive claims based on prior literature rather than new experimental findings in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "baffcc5f-f338-4a48-b3bc-192eab47b440",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The methodology combining MALDI MSI, histology, and in vitro uptake is broadly applicable to drug mapping in complex diseased tissues and constitutes a powerful tool to guide in silico modeling of drug distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are reasonable assertions about the broader applicability of the methodology. The proof-of-concept is well-demonstrated for TB lesions. The potential for application to other diseases with complex immunopathology (tumors, atherosclerotic plaques) is plausible given the generality of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    },
+    {
+      "id": "577b4e89-9bf3-4155-90d3-e7414ccd67f5",
+      "content_id": "4fb46bee-02ce-40ed-a03e-128297912b49",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study used female NZW rabbits infected with M. tuberculosis HN878 via aerosol, treated with single doses of fluoroquinolones at 16-20 weeks post-infection, and euthanized at 2-12 hours post-dose. MALDI MSI was performed with 50 \u03bcm laser step size and detection limits of 100 fmol (750 ng/g).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 describe the experimental methods. These are clearly stated and appropriately detailed. The rabbit TB model is well-established (cited reference), drug doses and timing are specified, and analytical parameters are provided. The 50 \u03bcm resolution is appropriate for resolving small necrotic areas.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:56.851678Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0e773272-527c-40ec-b271-22ead492c3f7",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "65faf876-0c0f-4215-85c4-6f4718f45bfc",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "17e85433-c05a-4cb3-b15f-5d4bf5d0728f",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "f9f29610-a05a-4f66-87da-a38213965c8a",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "1eda4528-5457-4c6d-8e70-25d9e7457cee",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "dd1afdb5-4839-4464-b67f-0d8150024917",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "24f28498-47e0-4a38-aa33-af80d058c940",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "23f90797-3255-4dd8-a131-e6cdd6218918",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "21589e43-21e2-413b-8c68-1979d664fc5c",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "33eae332-f844-4de1-9d79-abf85232227f",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "140a1872-b364-46c1-b146-f4d3d89e1fc8",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "d54b8a5e-60dc-4eb5-ba09-1a47341b7f44",
+      "result_id": "da46237f-46f2-415a-a3d9-1f4732028903"
+    },
+    {
+      "claim_id": "1a890ea0-11b0-43a3-8962-0a0b88723f25",
+      "result_id": "9e5f3c22-4af5-456d-8891-e1f605d7e671"
+    },
+    {
+      "claim_id": "be4e557c-aa6b-4b3d-8dba-7dbd2751aa22",
+      "result_id": "9e5f3c22-4af5-456d-8891-e1f605d7e671"
+    },
+    {
+      "claim_id": "fb174115-ceab-48f8-9fbf-b5b41c309c67",
+      "result_id": "9e5f3c22-4af5-456d-8891-e1f605d7e671"
+    },
+    {
+      "claim_id": "6a4c624d-024c-4efe-924e-8004223612e9",
+      "result_id": "9e5f3c22-4af5-456d-8891-e1f605d7e671"
+    },
+    {
+      "claim_id": "90c4a2df-1a25-4059-8204-e8233295826b",
+      "result_id": "9e5f3c22-4af5-456d-8891-e1f605d7e671"
+    },
+    {
+      "claim_id": "17325646-11e8-4d38-a580-30b16ba743f4",
+      "result_id": "9e5f3c22-4af5-456d-8891-e1f605d7e671"
+    },
+    {
+      "claim_id": "02ceedbd-8a99-4e61-a102-07fc8db7a1c8",
+      "result_id": "9e5f3c22-4af5-456d-8891-e1f605d7e671"
+    },
+    {
+      "claim_id": "aa8a32cc-91a6-4476-96ac-955dc7d6fc69",
+      "result_id": "9e5f3c22-4af5-456d-8891-e1f605d7e671"
+    },
+    {
+      "claim_id": "8d2e24f9-4979-4d31-a6bb-1cec9790f8ec",
+      "result_id": "ab55fcd4-a41b-47e8-99f2-7bf6e8dd623f"
+    },
+    {
+      "claim_id": "c3f6f1a4-faf1-4232-afa8-297b8885bb6b",
+      "result_id": "ab55fcd4-a41b-47e8-99f2-7bf6e8dd623f"
+    },
+    {
+      "claim_id": "27b5bb6a-c64e-439e-971a-d886c0cb949a",
+      "result_id": "ab55fcd4-a41b-47e8-99f2-7bf6e8dd623f"
+    },
+    {
+      "claim_id": "e605b9d6-6cce-4370-91ea-b4ca1be26b34",
+      "result_id": "ab55fcd4-a41b-47e8-99f2-7bf6e8dd623f"
+    },
+    {
+      "claim_id": "0d13f5f2-3a63-4df1-ab69-b34f8beadf6b",
+      "result_id": "ab55fcd4-a41b-47e8-99f2-7bf6e8dd623f"
+    },
+    {
+      "claim_id": "d76956ee-ff78-4785-bc64-cc69134f0511",
+      "result_id": "23f45b26-236d-44b0-9170-b22a3bd61e82"
+    },
+    {
+      "claim_id": "bb7bc0d0-7ff2-400a-bfdd-8b896dcc69c2",
+      "result_id": "23f45b26-236d-44b0-9170-b22a3bd61e82"
+    },
+    {
+      "claim_id": "29dac2d9-b591-474b-8bc2-d1af6adc1d3d",
+      "result_id": "23f45b26-236d-44b0-9170-b22a3bd61e82"
+    },
+    {
+      "claim_id": "f2164b67-7c03-42d7-957e-deb0048a842d",
+      "result_id": "1002ca8d-8de1-4391-a954-93acfbd9fe83"
+    },
+    {
+      "claim_id": "5ccc95a8-829a-4626-b7e9-8d454493dc79",
+      "result_id": "1002ca8d-8de1-4391-a954-93acfbd9fe83"
+    },
+    {
+      "claim_id": "f7c32169-46b8-4253-9599-ed84b5203989",
+      "result_id": "1002ca8d-8de1-4391-a954-93acfbd9fe83"
+    },
+    {
+      "claim_id": "2bf176df-79af-43ee-b2cd-02e8a5a3c1b7",
+      "result_id": "1002ca8d-8de1-4391-a954-93acfbd9fe83"
+    },
+    {
+      "claim_id": "9cc46967-fa27-4627-b26a-c274e2bc9bb9",
+      "result_id": "1002ca8d-8de1-4391-a954-93acfbd9fe83"
+    },
+    {
+      "claim_id": "190c0d97-a8e0-463a-ad6c-c1de215e3fb6",
+      "result_id": "1002ca8d-8de1-4391-a954-93acfbd9fe83"
+    },
+    {
+      "claim_id": "54b7b9ed-a4f2-4b5c-b7b6-cb8451734bfe",
+      "result_id": "9e811f37-3fad-45e1-9a37-4e387b351ffa"
+    },
+    {
+      "claim_id": "3d3cd4f3-f74e-4cea-9bef-720bc7c2d891",
+      "result_id": "9e811f37-3fad-45e1-9a37-4e387b351ffa"
+    },
+    {
+      "claim_id": "65f297a5-8d4c-4c12-9bc2-3be823329d02",
+      "result_id": "9e811f37-3fad-45e1-9a37-4e387b351ffa"
+    },
+    {
+      "claim_id": "99fb816c-063d-4db0-b9d3-383f11d7c696",
+      "result_id": "9e811f37-3fad-45e1-9a37-4e387b351ffa"
+    },
+    {
+      "claim_id": "eb4a081c-3d0d-425c-81f8-5ffbfb250de6",
+      "result_id": "9e811f37-3fad-45e1-9a37-4e387b351ffa"
+    },
+    {
+      "claim_id": "785b968e-588c-4927-a86f-ba7a621242e2",
+      "result_id": "9e811f37-3fad-45e1-9a37-4e387b351ffa"
+    },
+    {
+      "claim_id": "ff5af583-5341-482c-9deb-d491016a64ee",
+      "result_id": "dc201721-fc9d-4c25-a276-411448e92fab"
+    },
+    {
+      "claim_id": "d65ea0aa-064e-4a1f-aa1a-3e60707af581",
+      "result_id": "dc201721-fc9d-4c25-a276-411448e92fab"
+    },
+    {
+      "claim_id": "df8c8161-0015-4ec8-9149-2117e46fc718",
+      "result_id": "dc201721-fc9d-4c25-a276-411448e92fab"
+    },
+    {
+      "claim_id": "44399579-6665-4fb3-9332-77f42fce007f",
+      "result_id": "dc201721-fc9d-4c25-a276-411448e92fab"
+    },
+    {
+      "claim_id": "3efd13f8-c1d7-42bd-8a0d-fe9288c21042",
+      "result_id": "dc201721-fc9d-4c25-a276-411448e92fab"
+    },
+    {
+      "claim_id": "b000fcd0-9b3b-4e9d-8f71-54e57886013a",
+      "result_id": "dc201721-fc9d-4c25-a276-411448e92fab"
+    },
+    {
+      "claim_id": "5b24b9b6-d29f-47eb-b56f-7f3225044e08",
+      "result_id": "65cf1e1b-0395-45d3-93a6-d9a96e2f71f3"
+    },
+    {
+      "claim_id": "60af223a-ec2b-44d4-b79f-42a801fddbbd",
+      "result_id": "65cf1e1b-0395-45d3-93a6-d9a96e2f71f3"
+    },
+    {
+      "claim_id": "55610d49-0371-43f6-9690-b022e1f10cba",
+      "result_id": "65cf1e1b-0395-45d3-93a6-d9a96e2f71f3"
+    },
+    {
+      "claim_id": "ce967899-37c4-4536-855a-ed1fb1428152",
+      "result_id": "9f0e8c91-77e0-475f-a0c6-4a1eba1ca95a"
+    },
+    {
+      "claim_id": "b26e3a29-ae99-46a0-9df5-890a89c473b7",
+      "result_id": "9f0e8c91-77e0-475f-a0c6-4a1eba1ca95a"
+    },
+    {
+      "claim_id": "e4d70149-2b74-4c3e-a2ad-7104e1866102",
+      "result_id": "9f0e8c91-77e0-475f-a0c6-4a1eba1ca95a"
+    },
+    {
+      "claim_id": "b9c23da9-bf24-4f45-b534-1f1f217d004a",
+      "result_id": "28573af5-43d5-45a5-bc47-27bcdee9abec"
+    },
+    {
+      "claim_id": "325f26fe-d5a7-4389-ab47-bfb067a4d402",
+      "result_id": "28573af5-43d5-45a5-bc47-27bcdee9abec"
+    },
+    {
+      "claim_id": "539805c4-47c8-4535-a9f7-13a887b6cccc",
+      "result_id": "28573af5-43d5-45a5-bc47-27bcdee9abec"
+    },
+    {
+      "claim_id": "debf9174-4afd-420c-b344-cc978ae00f79",
+      "result_id": "28573af5-43d5-45a5-bc47-27bcdee9abec"
+    },
+    {
+      "claim_id": "1b2c4ce2-f269-4f60-8287-bf89371f48ad",
+      "result_id": "38f54efd-187a-4d75-8244-0ef2edefc327"
+    },
+    {
+      "claim_id": "8e86708b-4bde-4e25-b664-faecd347a1fd",
+      "result_id": "38f54efd-187a-4d75-8244-0ef2edefc327"
+    },
+    {
+      "claim_id": "765a4e30-1f96-4dc0-900e-90bdd8691bbf",
+      "result_id": "552ae935-72fb-451c-9827-f6fa8abb888e"
+    },
+    {
+      "claim_id": "380d1690-c394-4233-830b-e256f5f5244d",
+      "result_id": "552ae935-72fb-451c-9827-f6fa8abb888e"
+    },
+    {
+      "claim_id": "2f41c505-f494-4909-b56c-46b07ff96070",
+      "result_id": "552ae935-72fb-451c-9827-f6fa8abb888e"
+    },
+    {
+      "claim_id": "b63b19ad-85ef-47a0-b016-85d102bc9367",
+      "result_id": "552ae935-72fb-451c-9827-f6fa8abb888e"
+    },
+    {
+      "claim_id": "d4f55960-826d-4b98-b4cf-86557d11a3d7",
+      "result_id": "baffcc5f-f338-4a48-b3bc-192eab47b440"
+    },
+    {
+      "claim_id": "059ba13b-2b0d-4fbc-a5e0-0bcca203b860",
+      "result_id": "baffcc5f-f338-4a48-b3bc-192eab47b440"
+    },
+    {
+      "claim_id": "60ecfbd6-9101-44ca-a5f1-3601ccc50023",
+      "result_id": "577b4e89-9bf3-4155-90d3-e7414ccd67f5"
+    },
+    {
+      "claim_id": "d378213a-9886-41db-a788-a5f796997dae",
+      "result_id": "577b4e89-9bf3-4155-90d3-e7414ccd67f5"
+    },
+    {
+      "claim_id": "78b0f0c1-c458-4d50-872d-a3d9d02bbfae",
+      "result_id": "577b4e89-9bf3-4155-90d3-e7414ccd67f5"
+    },
+    {
+      "claim_id": "fc41e830-6652-4b32-abd1-ca69f9c85c65",
+      "result_id": "577b4e89-9bf3-4155-90d3-e7414ccd67f5"
+    },
+    {
+      "claim_id": "65755d33-ae74-40eb-abfa-556e2c91503d",
+      "result_id": "577b4e89-9bf3-4155-90d3-e7414ccd67f5"
+    },
+    {
+      "claim_id": "1425c43c-1409-4ac8-bb9b-8435a7bef2b0",
+      "result_id": "577b4e89-9bf3-4155-90d3-e7414ccd67f5"
+    }
+  ],
+  "comparisons": []
+}

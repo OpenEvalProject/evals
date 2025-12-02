@@ -1,0 +1,1442 @@
+{
+  "submission": {
+    "id": "336dfc9a-95d6-40d6-b35d-be3a642ee7ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:33:30.202077Z",
+    "updated_at": "2025-12-02T06:33:30.202077Z"
+  },
+  "content": [
+    {
+      "id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "submission_id": "336dfc9a-95d6-40d6-b35d-be3a642ee7ca",
+      "content_type": "manuscript",
+      "content_text": "# Ancient mechanisms for the evolution of the bicoid homeodomain's function in fly development\n\n## Authors\n\n- Qinwen Liu<sup>1</sup>\n- Pinar Onal<sup>2</sup>\n- Rhea R Datta<sup>2</sup>\n- Julia M Rogers<sup>3</sup>\n- Urs Schmidt-Ott<sup>5</sup> ([ORCID: 0000-0002-1351-9472](https://orcid.org/0000-0002-1351-9472))\n- Martha L Bulyk<sup>3</sup>\n- Stephen Small<sup>2</sup> \u2020\n- Joseph W Thornton<sup>1</sup> ([ORCID: 0000-0001-9589-6994](https://orcid.org/0000-0001-9589-6994)) \u2020\n\n### Affiliations\n\n1. Department of Ecology and Evolution University of Chicago Chicago United States\n2. Department of Biology New York University New York United States\n3. Committee on Higher Degrees in Biophysics Harvard University Cambridge United States\n4. Division of Genetics, Department of Medicine Brigham and Women\u2019s Hospital and Harvard Medical School Boston United States\n5. Department of Organismal Biology and Anatomy University of Chicago Chicago United States\n6. Department of Pathology Brigham and Women\u2019s Hospital and Harvard Medical School Boston United States\n7. Department of Human Genetics University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ancient mechanisms that caused developmental gene regulatory networks to diversify among distantly related taxa are not well understood. Here we use ancestral protein reconstruction, biochemical experiments, and developmental assays of transgenic animals carrying reconstructed ancestral genes to investigate how the transcription factor Bicoid (Bcd) evolved its central role in anterior-posterior patterning in flies. We show that most of Bcd\u2019s derived functions are attributable to evolutionary changes within its homeodomain (HD) during a phylogenetic interval >140 million years ago. A single substitution from this period (Q50K) accounts almost entirely for the evolution of Bcd\u2019s derived DNA specificity in vitro. In transgenic embryos expressing the reconstructed ancestral HD, however, Q50K confers activation of only a few of Bcd\u2019s transcriptional targets and yields a very partial rescue of anterior development. Adding a second historical substitution (M54R) confers regulation of additional Bcd targets and further rescues anterior development. These results indicate that two epistatically interacting mutations played a major role in the evolution of Bcd\u2019s controlling regulatory role in early development. They also show how ancestral sequence reconstruction can be combined with in vivo characterization of transgenic animals to illuminate the historical mechanisms of developmental evolution.\n\n## Introduction\n\nAnimal body plans are established during development by interacting networks of transcription factors and other molecules, which organize temporal and spatial cascades of gene expression that\u00a0control cell division, differentiation, and migration (Davidson and Peter, 2015; Gilbert, 2013; Stathopoulos and Levine, 2005). How specific genetic changes during evolution modified these networks and the developmental processes they control is the fundamental question in modern studies of the evolution of development (evo-devo) (Carroll, 2008; Davidson and Erwin, 2006; Levine and Tjian, 2003; Peter and Davidson, 2011; Rebeiz et al., 2015).\n\nConsiderable progress has been made toward this goal, particularly among closely related species and populations. Comparative analyses have identified differences in gene expression that correlate with phenotypic differences, and manipulative experiments have shown that altering expression of specific genes can disrupt or mimic specific forms of developmental diversity (Angelini and Kaufman, 2005; Bhullar et al., 2015; Cretekos et al., 2008; Jarvis et al., 2012; Martin et al., 2016; Nakamura et al., 2016; Tarazona et al., 2016; Mazo-Vargas et al., 2017; Zhang et al., 2017; Roeske et al., 2018). Transgenic experiments in which cis-regulatory regions are swapped between species or populations have identified polymorphisms that reproduce diversity in gene expression and developmental outcomes, such as pigmentation patterns in insects (Gompel et al., 2005; Jeong et al., 2008) and mice (Manceau et al., 2011), patterns of cuticular projections on the abdomens of flies (Frankel et al., 2011; McGregor et al., 2007), and the presence/absence of armor, spines, and other decorations among fish populations (Chan et al., 2010; Colosimo et al., 1928; Miller et al., 2007; Shapiro et al., 2004).\n\nFor deeper taxonomic divergences, it has been more difficult to establish the specific causes of evolutionary changes in gene regulation and development (Rebeiz et al., 2015). Distantly related taxa cannot be mated to each other, so genetic crosses cannot be used. Comparisons among species have demonstrated that candidate genes in key regulatory pathways differ in expression, and experimental manipulations have provided evidence that changes in expression of transcription factors in these pathways are involved in phenotypic differences (Martin et al., 2016; Nakamura et al., 2016; Gehrke and Shubin, 2016; Leal and Cohn, 2016; Petit et al., 2017). But the specific mutations and causal mechanisms that caused loss, gain, or modification of ancestral modes of regulation and developmental outcomes have not been identified, for several reasons. Distantly related genes (or regulatory elements) typically differ at many sequence sites \u2013 not only those that caused functional change but also those that diversified during subsequent periods of functional conservation and sequence drift \u2013 complicating efforts to identify the effect of specific substitutions (Rebeiz et al., 2015; Hochberg and Thornton, 2017). Epistasis among sites within loci represents a further challenge, because mutations introduced into present-day sequences often have effects different from those they had during historical evolution (Bridgham et al., 2009; Natarajan et al., 2013; Ortlund et al., 2007). In such cases, sequence differences that were causal in the past can be masked in horizontal swap experiments, leading to false negative inferences concerning the mutation\u2019s effects; alternatively, if a sequence state from one lineage is swapped into a present-day gene with which it is epistatically incompatible, that state may appear to have been the evolutionary cause of a null phenotype, a particular problem if the diversity being studied involves the absence of a structure or function (Hochberg and Thornton, 2017). Epistasis between loci presents another difficulty: when a putatively causal factor, such as a regulatory protein or DNA element, is swapped horizontally from one species into a model organism to test its causal role and recapitulates the phenotype from the \u2018source\u2019 species, this provides strong evidence for causality, but a negative result could arise because of an epistatic \u2018mismatch\u2019 between the swapped factor and other loci. The more distantly diverged the two species, the more significant this problem becomes (Gehrke and Shubin, 2016).\n\nAncestral sequence reconstruction (ASR) can, in principle, help to address these difficulties. ASR uses statistical phylogenetic methods to infer the sequences of ancient genes or proteins, which can then be synthesized and experimentally characterized (Hochberg and Thornton, 2017; Harms and Thornton, 2010). This approach allows the direction of evolutionary change to be determined and localized to a specific interval of phylogenetic history. The relatively small number of candidate mutations that occurred during this interval can then be introduced into the appropriate ancestral protein to directly test the hypothesis that they caused the evolutionary shift in biochemical properties and/or biological function. By using the ancestral background, this approach also minimizes the confounding effect of intragenic epistasis. ASR can also help to reduce the complications of intragenic epistasis that may\u00a0affect horizontal transgenesis: the mismatch between the reconstructed ancestral protein and the genetic background of the model\u00a0organism in which it is tested is less severe, because divergence between the source and the model occurred along only one branch from the ancestor, instead of two. Moreover, testing ancestral factors from successive phylogenetic nodes, which may differ by only a few sequence sites, drastically limits the scope of the inference that might be compromised by epistasis.\n\nASR is now widely used in evolutionary molecular biology and biochemistry (Bridgham et al., 2009; Natarajan et al., 2013; Ortlund et al., 2007; Anderson et al., 2016; Bridgham et al., 2006; Finnigan et al., 2012; Hart et al., 2014; Howard et al., 2014; McKeown et al., 2014; Nguyen et al., 2016) and has been used to study the evolution of transcriptional networks in microbes (Sorrells et al., 2015; Baker et al., 2012; Baker et al., 2013). Recently, transgenic animals carrying reconstructed ancestral genes have been engineered to test the effects of historical genetic changes on physiology and fitness (Siddiq et al., 2017a), but this approach has not yet been applied to the study of development.\n\nHere we use ASR to study the mechanisms for the historical evolution of a controlling molecular determinant of the anterior-posterior (AP) axis during embryonic development in flies (Dearden and Akam, 1999; Patel, 1994). In Drosophila melanogaster and other cyclorrhaphan flies \u2013 a large taxonomic group that appeared\u00a0>140 Mya (Grimaldi and Engel, 2005) \u2013 AP patterning depends on an anterior gradient of Bicoid (Bcd), a transcription factor translated in the embryo from maternally deposited, anteriorly localized mRNA (Driever and N\u00fcsslein-Volhard, 1988a; Driever and N\u00fcsslein-Volhard, 1988b; Berleth et al., 1988; Little and Wieschaus, 2011). Embryos lacking Bcd fail to produce any head or thoracic structures, and duplicate posterior structures are formed in the embryo\u2019s anterior ([Frohnh\u00f6fer and N\u00fcsslein-Volhard, 1986]; see also Figure 1\u2014figure supplement 1 panels K, L). Bcd directly regulates transcription of dozens of target genes (McGregor et al., 2007; Chen et al., 2012; Driever et al., 1989; Struhl et al., 1989) by using its homeodomain (HD) to bind specific cis-regulatory DNA sequences, particularly variants of the canonical motif TAATCC, with flanking sequences providing some additional specificity (Driever et al., 1989; Struhl et al., 1989; Noyes et al., 2008; Treisman et al., 1989; Dave et al., 2000). Bcd also binds the 3' untranslated region of the messenger RNA of Caudal (Cad), a transcription factor involved in development of the posterior end, and represses its translation (Chan and Struhl, 1997; Rivera-Pomar et al., 1996). In some insect taxa outside the Cyclorrhapha \u2013 such as beetles, wasps, and midges \u2013 the gene regulatory network that carries out AP development is similar to that in D. melanogaster, but its anterior deployment is controlled not by Bcd but by other upstream transcription factors (Brent et al., 2007; Klomp et al., 2015; Lynch et al., 2006).\n\nBcd is unique to cyclorrhaphan flies. In winged insects, the Hox3 gene is called Zen; a duplication of this gene deep in the cyclorrhaphan lineage yielded two paralogs, Bcd and Zen (Stauber et al., 1999; Stauber et al., 2002). Bcd\u2019s developmental role, anterior localization, and DNA specificity all appear to be derived evolutionary features, whereas many of Zen\u2019s appear to be ancestral (Schmidt-Ott et al., 2010). Specifically, neither Hox3 nor Zen is anteriorly localized in the embryo or involved in establishing AP polarity, and both seem to play conserved roles in extraembryonic tissue formation (Rafiqi et al., 2008; Rafiqi et al., 2010; van der Zee et al., 2005). Both Hox3 and Zen strongly prefer the consensus DNA motif TAATTA over Bcd\u2019s TAATCC consensus motif (Noyes et al., 2008; Berger et al., 2008), and neither regulates Cad translation (Schoppmeier et al., 2009). Evolution of Bcd\u2019s developmental role in cyclorrhaphan flies therefore required, at minimum, two major changes after its emergence by gene duplication: (1) Bcd must have evolved the capacity to regulate expression of TFs that specify anterior and posterior structures and (2) maternal localization of Bcd in the anterior of the egg must also have evolved. Changes in Bcd\u2019s target loci and in proteins with which Bcd interacts may also have contributed to the evolution of Bcd function. Here, we focus on the mechanisms that drove the first category of evolutionary changes: the acquisition by the Bcd protein of the capacity to regulate its target genes.\n\nNumerous studies have addressed the sequence-structure function relations of Bcd and other HD proteins in D. melanogaster, but little is known about the mechanisms that drove the evolution of Bcd and its developmental role. Biochemical analyses in vitro suggest the hypothesis that acquisition of a lysine residue at position 50 (K50), which is located on the recognition helix (RH) that directly contacts the DNA major groove, may have played a role. K50 is present in several HD proteins that bind canonical target sites similar to Bcd\u2019s, but HDs that prefer Zen-like motifs contain a glutamine at this position (Q50). Biochemical studies have shown that swapping these two states between extant HDs affects relative affinity for these target sequences and suggest potential structural mechanisms for this effect (Noyes et al., 2008; Treisman et al., 1989; Ades and Sauer, 1994; Hanes and Brent, 1989; Niessing et al., 2000; Percival-Smith et al., 1990; Schier and Gehring, 1993; Baird-Titus et al., 2006; Otting et al., 1990). Other residues in the protein\u2019s recognition helix, including an arginine at site 54 (R54) have also been shown to affect DNA and RNA recognition in vitro (Dave et al., 2000; Niessing et al., 2000; Hanes and Brent, 1991). There has been no direct work, however, to assess what portion of the shift in DNA specificity that occurred during Bcd evolution is directly attributable to these or any other historical sequence substitutions.\n\nIn vivo, there is no evidence to indicate the extent to which Q50K or any other substitution can account for the evolution of Bcd\u2019s regulatory or developmental functions in the embryo. The only prior manipulative study to examine the in vivo effects of Q50K on Bcd function introduced this mutation into D. melanogaster Fushi tarazu (Ftz), a distantly related HD protein, and found that Q50K does not confer activation of any Bcd targets in fly embryos (Schier and Gehring, 1993) or cultured cells (Zhao et al., 2000). This observation could indicate that Q50K made no contribution to the evolution of Bcd\u2019s developmental functions; alternatively, it may have contributed to Bcd evolution, but only in combination with other Bcd-specific residues not introduced in this experiment; yet another possibility is that other characteristics of the present-day Ftz protein, not present in either Bcd or the Bcd-Zen ancestor, are incompatible with Bcd-like functions in the D. melanogaster embryo and therefore masked the contribution of Q50K in this experiment. A recent study found that replacing the HD of D. melanogaster Bcd with that of orthodenticle (otd), which also contains K50 and many other sequence differences, abolishes activation of most of Bcd\u2019s targets and does not rescue anterior development in transgenic embryos, suggesting that this residue is not sufficient to account for most of the regulatory functions of the Bcd HD (Datta et al., 2018). No studies have addressed the in vivo developmental effect of historically relevant substitutions at other sites on Bcd\u2019s functions.\n\nTo directly and explicitly test hypotheses about the effects of historical sequence changes on evolution of Bcd and its HD, we reconstructed ancestral forms of Bcd and used both in vitro and in vivo experiments to dissect the genetic and evolutionary trajectory of Bcd\u2019s functional evolution. This strategy allowed us to localize the change in Bcd function to a specific phylogenetic branch, quantify the biochemical and developmental aspects of that change, and characterize the extent to which historical amino acid substitutions within the HD, including but not limited to Q50K, were necessary and sufficient to account for the evolution of Bcd-specific functions.\n\n## Results\n\n### Developmental roles of Zen and Bcd homeodomains\n\nOnly the HD region of Bcd, Zen, and Hox3 retains sufficient phylogenetic signal to enable high-confidence ancestral sequence reconstruction. We therefore sought first to determine the extent to which the developmental functions of Bcd and Zen in extant D.melanogaster are attributable to differences between their HDs.\n\nWe established an in vivo gene replacement assay using bcd-null (bcdE1) D. melanogaster females and characterized both morphological and gene-regulatory phenotypes (Figure 1; Figure 1\u2014figure supplement 1). As expected, bcd-null females produce embryos that lack all cephalic and thoracic structures; they have only one to three of the anterior-most abdominal segments\u00a0and\u00a0develop ectopic anterior filzk\u00f6rper -- posterior structures that are normally restricted to the eighth abdominal segment (Frohnh\u00f6fer and N\u00fcsslein-Volhard, 1986) (Figure 1\u2014figure supplement 1K,L). These embryos fail to activate transcription of known Bcd target genes, including hb, kni, gt, otd, ems, btd, and the first two stripes of eve; translational repression of cad in the anterior is also lost (Figure 1\u2014figure supplement 1M\u2013T). We introduced into bcd-null embryos constructs coding for full-length or chimeric versions of D.\u00a0melanogaster Bcd or Zen under the control of the bcd promoter (BP) and the bcd 3\u2019UTR (Figure 1; See Materials\u00a0and\u00a0methods). RNAs from all transgenes were anteriorly localized in a fashion indistinguishable from the endogenous bcd mRNA pattern (Figure 1\u2014figure supplement 1EE-GG). We assessed morphological rescue by the following criteria: repression of ectopic anterior filzk\u00f6rper, development of all eight abdominal segments, development of all three thoracic segments, and development of internal skeletal elements in the cephalic region. Target gene regulation was considered partially rescued if expression in the anterior could be detected by in situ hybridization, even if the patterns were reduced or spatially shifted.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig1-v1.jpg)\n\n**Figure 1.:** Offspring of transgenic bcd-deficient D. melanogaster containing two copies of various replacement transgenes are shown in cuticle preparations of larval head (A, K, U) and whole body (B, L, V); in situ hybridization experiments and antibody stains in transgenic embryos show expression of Bcd\u2019s translational (C, M, W) and transcriptional target genes (D\u2013J, N\u2013T, X\u2013DD). Replacement transgenes were Bcd from D. melanogaster (DmBcd, A\u2013J), Zen from D. melanogaster (DmZen,\u00a0K\u2013T), and a chimera of DmZen in which the homeodomain (HD) has been replaced by the HD of DmBcd (DmZen-BcdHD, U\u2013DD). All three transgenes contain the D. melanogaster bcd promoter (BP), which directs maternal expression, and the bcd 3\u2019UTR sequence required for anterior localization of the transgenic RNA. In the icons for each construct, protein-coding sequences from DmBcd are light blue and DmZen are red. Triangles show AttB sites used for recombination-mediated cassette exchange. For cuticle preps, mouthhooks (MH), dorsal arm (DA), ventral arm (VA), cephalic structures (Ceph), thoracic segments (T1\u2013T3), abdominal segments (A1\u2013A8), and Filzk\u00f6rper (Fk) are indicated when present. An anti-Cad antibody was used to detect Cad protein. Antisense probes used in in situ hybridization experiments are indicated (hb: hunchback, kni: knirps, gt: giant, otd: orthodenticle, ems: empty-spiracle, btd: buttonhead, eve: even-skipped mRNAs). For comparison to wild-type, bcd-deficient, and a reciprocal construct of Bcd containing the ZenHD, see Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013J) Flies of genotype yw (wild-type) are not modified at the bcd locus. Shown are cuticle preparations of larval head (A) and whole body (B); embryonic expression patterns are shown for Bcd\u2019s translational regulatory target Caudal (Cad, C) and transcriptional targets (D\u2013J). (K\u2013T) Flies of genotype bcdE1 carry null alleles at the bcd locus. (U\u2013DD) Flies of genotype DmBcdZenHD are bcdE1null but carry transgenic alleles consisting of the D. melanogaster bcd locus, including the coding region (blue) but with the HD replaced by that of the D. melanogaster zen gene (red). (EE\u2013GG) Embryonic expression of bcd and zen mRNAs in wild-type and transgenic embryos: (EE) bcd mRNA in yw flies, (FF) transgenic bcd mRNA in bcdE1 flies transformed with D. melanogaster bcd, and (GG) zen mRNA in bcdE1 flies transformed with the D. melanogaster zen.\n\nAs expected, the wild-type D. melanogaster Bcd transgene (DmBcd) rescued the bcdE1 phenotype by all molecular and morphological criteria, and over 95% of embryos survived to adulthood (Figure 1A\u2013J). In contrast, Drosophila Zen (DmZen) failed to rescue any aspect of the bcd-null phenotype (Figure 1K\u2013T compared to Figure 1\u2014figure supplement 1K\u2013T). The Zen protein therefore shares few if any regulatory activities with Bcd, even when it is expressed in Bcd-like fashion.\n\nWhen DmZen was modified by replacing only its HD with that from D.melanogaster Bcd (DmZen-BcdHD, Figure 1U\u2013DD), we observed substantial rescue of morphological and regulatory phenotypes. All thoracic and abdominal segments were formed, ectopic filzk\u00f6rper structures were suppressed, and some head structures could be observed (Figure 1U,V). All seven of Bcd\u2019s transcriptional targets were activated, although their expression domains were shifted to the anterior (Figure 1X\u2013DD), and Cad translation in the most anterior regions was partially repressed (Figure 1W). In contrast, a reciprocal construct of the Bcd coding sequence containing the Zen HD (DmBcd-ZenHD) conferred no rescue of any developmental or gene regulatory phenotypes (Figure 1,\u00a0Figure 1\u2014figure supplement 1U\u2013DD). Sequence differences within the HD are therefore sufficient to explain a major portion of the Bcd protein\u2019s anterior patterning and gene regulatory activities in present-day D. melanogaster embryos, with much smaller contributions from differences elsewhere in the protein.\n\n### Reconstruction of ancestral homeodomains\n\nTo understand when and how the\u00a0Bcd\u00a0HD's functions evolved, we reconstructed the phylogenetic history of the Bcd and Zen HDs and inferred ancestral sequences. The protein family phylogeny was inferred from an alignment of 33 Bcd, Zen, and Hox3 HD sequences from cyclorrhaphan flies and other insects (Figure 2; Supplementary file 1). Branch lengths and model parameters were estimated by maximum likelihood; topological relationships were inferred by maximum likelihood (Figure 2\u2014figure supplement 1) and by constraining the topology to reflect relationships among species established in prior studies (Figure 2). As expected, both phylogenies indicate that duplication of Hox3/Zen before the radiation of the Cyclorrhapha produced two new paralogous genes \u2013 one lineage leading to cyclorrhaphan Zen and the other to Bcd. The phylogenies\u2019 branch lengths suggest that a burst of rapid evolution occurred in the Bcd HD after this duplication, whereas Zen\u2019s HD continued to evolve at a slower rate (Figure 2; Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig2-v1.jpg)\n\n**Figure 2.:** (A) Phylogeny of Bcd, Zen, and Hox3 HD amino acid sequences from insects and other arthropods. One representative sequence is shown among sequence entries with no sequence diversity. Reconstructed ancestral nodes are labeled; the mean posterior probability across sites for each maximum likelihood ancestral sequence is shown. Branch support labels show the approximate likelihood ratio statistic. Scale bar, 0.7 amino acid changes per site. The tree was constrained to reproduce well-corroborated species relationships; for the maximum likelihood phylogeny, see Figure 2\u2014figure supplement 1. For species names and sequences, see Supplementary file 1. (B) Amino acid sequences of AncZB, AncBcd and Bcd from D.\u00a0melanogaster (Dm) HDs. For AncBcd and DmBcd, only residues that differ from the AncZB HD are shown. Of these, 11 substitutions (shown in blue) are diagnostic differences conserved among all sequences in the Bcd vs. Zen clades. Differences between AncBcd and DmBcd are labeled red. For site-specific posterior probabilities of ancestral states, see Supplementary file 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The maximum likelihood phylogeny of the Hox3/Bcd/Zen homeodomain protein family obtained with no topological constraint. Scale bar, expected amino acid substitutions per site. Branch labels, statistical clade support shown as the approximate likelihood ratio statistic, defined as two times the difference in log-likelihoods of the ML tree and the next-best tree containing a topological arrangement around that node.\n\nUsing this alignment and the species-constrained phylogeny, we inferred the maximum likelihood (ML) amino acid sequence of the HD at two key ancestral nodes: (1) AncZB, the common ancestor of all Zen and Bcd proteins in cyclorrhaphan flies, which represents the single ancestral sequence that existed just before the duplication and (2) AncBcd, one of AncZB\u2019s daughter nodes, which represents the Bcd protein in the last common ancestor of all cyclorrhaphan flies (Figure 2A). Both sequences are reconstructed with little statistical ambiguity (mean posterior probability\u00a0=\u00a00.970 and 0.986, with only 3 and 2 sites ambiguously reconstructed in AncZB and AncBcd, respectively (Supplementary file 2). AncZB and AncBcd HD differ at 31 amino acid positions (Figure 2B).\n\n### Divergence of DNA-binding preferences between AncBcd and AncZB\n\nWe first characterized the evolutionary changes in DNA specificity that occurred in the Bcd gene after its birth by duplication of AncZB. We synthesized coding sequences for AncZB and AncBcd HDs and characterized each protein\u2019s global DNA specificity using protein-binding microarrays (PBMs [Berger et al., 2006]) consisting of all possible DNA 10-mers (Figure 3). AncBcd\u2019s overall occupancy of DNA motifs was very similar to that of D. melanogaster Bcd (r\u00a0=\u00a00.94, Figure 3A). In contrast, the correlation between the sequences bound by AncBcd and those bound by AncZB was far weaker (r\u00a0=\u00a00.56, Figure 3B), with thousands of target sequences changing in relative occupancy between AncZB and AncBcd. Bcd\u2019s present-day global specificity is therefore a derived state that evolved on the phylogenetic branch after duplication of AncZB but before the last common ancestor of cyclorrhaphan flies.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Protein binding microarray (PBM) analysis of the DNA specificity of AncBcd, DmBcd, and AncZB HDs. Each dot represents one DNA 6-mer, plotted according to its binding enrichment (E-scores) in PBMs performed\u00a0with two different HDs; Pearson\u2019s correlation coefficient for each comparison is shown. (C\u2013E) Energy logos showing the site-specific sequence determinants of DNA binding by AncZB, AncBcd, and DmBcd HDs as determined from PBM data. The size of each letter is proportional to the absolute value of that base\u2019s main effect on the energy of binding relative to the mean of all bases at that position. The y-axis is unitless after division by RT. (F) Affinity of ancestral HDs for consensus Zen and Bcd DNA motifs (ZM and BM, sequences shown) in a quantitative fluorescence electrophoretic mobility shift assay. Several noncanonical Bcd targets previously shown to bind Drosophila Bcd were also tested. Column heights and error bars show the mean and SEM for three replicates. (G\u2013Z) Cuticle phenotypes and gene expression patterns for offspring produced by bcdE1 females carrying two copies of a rescue construct expressing Dm Bcd protein (light blue) in which the HD has been replaced by the reconstructed AncBcd HD (dark blue, panels G-P) or the reconstructed AncZB HD (purple, panels Q-Z). Individual panels and constructs are labeled as in Figure 1. For replicates and alternative ancestral reconstructions, see Figure 3\u2014figure supplement 1, Figure 4\u2014figure supplement 1 and Supplementary files 3 and 4. For SPR analysis, see Figure 3\u2014figure supplement 2 and Supplementary file 4.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Quantitative fluorescent EMSAs were performed using alt-all versions of AncZB and AncBcd HDs, which contain the state with the second highest posterior probability at all ambiguously reconstructed sites, defined as all those sites at which more than one state has posterior probability\u00a0>0.20. Plots show the fraction of ZM and BM bound as the concentrations of AncZB HD-AltAll (A) or AncBcd HD-AltAll (B) were increased.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Association and dissociation rates of reconstructed ancestral HDs to canonical Zen and Bcd motifs (ZM, BM) were measured using a surface plasmon resonance (SPR) assay. Raw binding traces (color in black) show SPR response when different concentrations of HD were applied to sensors with immobilized BM or ZM DNA elements. Binding modes with parameters fit to the experimental data are in red. (B) Isoaffinity plots show the dissociation (koff) and association (kon) rates of AncBcd (square) and AncZB (triangle) HDs on DNA elements ZM (cyan), and to BM (red-orange) obtained from SPR. Arrows indicate the evolutionary change from AncZB to AncBcd HD. Diagonal dotted lines mark isoaffinity lines of association constants (Ka, blue labels) that differ by factors of ten. (C) Effect of historical substitutions on off- and on-rates of binding to BM. Solid arrows show the effect of q50K; dotted arrows show the effect of all 30 other substitutions from the same historical interval.\n\nTo characterize the evolutionary shift in preference for DNA motifs, we computed from the PBM data the additive effect of each possible nucleotide at each sequence position on the estimated binding energy of the protein-DNA complex (Figure 3C,D,E). AncZB, AncBcd, and DmBcd all share the core consensus motif TAAT (positions 1\u20134), but with some degeneracy. The major differences are at positions 5 and 6: AncZB prefers T or G at position 5 and A or G at position 6 (Figure 3C), but AncBcd and DmBcd strongly prefer sequences containing CC at these two positions (Figure 3D,E). An additional difference is that AncZB strongly excludes binding to motifs with T at position 2, whereas AncBcd excludes binding to C at this position (Figure 3C,D). These findings were robust to uncertainty about the sequences of the ancestral HDs: PBMs performed using alternative reconstructions of AncBcd and AncZB, which incorporated plausible alternative amino acid states at all ambiguously reconstructed sites (Eick et al., 2017), yielded almost identical results (Supplementary file 3).\n\nTo quantitatively characterize evolutionary changes in DNA preference that occurred between AncZB and AncBcd HDs, we used electrophoretic mobility shift assays (F-EMSA) to measure binding affinity to the PBM consensus Zen motif (ZM, TAATTA), the consensus Bcd motif (BM, TAATCC) and five other noncanonical motifs to which Bcd has previously been shown to bind (Dave et al., 2000; Hanes and Brent, 1991; Zhao et al., 2000; Driever and N\u00fcsslein-Volhard, 1989; Rivera-Pomar et al., 1995; Ma et al., 1996). We found that relative preference for Bcd motifs increased dramatically across the interval from AncZB and AncBcd, with affinity for BM increasing 25-fold and that for ZM declining by a factor of 10 (Figure 3F). Binding to the noncanonical motifs also increased substantially from AncZB to AncBcd. Alternative reconstructions of AncZB and AncBcd HDs yielded nearly identical results (Figure 3\u2014figure supplement 1).\n\nWe further investigated DNA binding by the ancestral proteins using a surface plasmon resonance assay (SPR) (Figure 3\u2014figure supplement 2). Corroborating the results from EMSA, AncZB\u2019s affinity for ZM is higher than for BM, whereas AncBcd prefers BM. Changes in affinity were caused primarily by changes in dissociation rates: AncBcd\u2019s off-rate from BM was 66-fold slower than AncZB\u2019s, and its off-rate from ZM was three times faster; changes in on-rates were small (Supplementary file 4). As a result, there was a strong evolutionary shift in average residence times on the two motifs: between AncZB and AncBcd, residence time on BM increased by 70-fold, while that on ZM declined by a factor of 3 (Figure 3\u2014figure supplement 2, Supplementary file 4). Although changes in preference were qualitatively similar when assessed by F-EMSA and SPR, the dissociation constants estimated by the two methods were somewhat different, presumably because buffers differ between the two techniques and because EMSA, unlike SPR, is a nonequilibrium assay.\n\nTaken together, these data indicate that during the phylogenetic interval immediately after the duplication of AncZB, a major change in DNA recognition and affinity occurred along the lineage leading to AncBcd. The ensemble of occupied DNA binding sites shifted dramatically, and the protein\u2019s preference for canonical Zen vs. Bicoid motifs was inverted.\n\n### In vivo characterization of ancestral HDs\n\nWe next tested the effects of the AncZB and AncBcd HDs on development and gene regulation in vivo. We swapped these domains precisely into the DmBcd rescue transgene and tested whether they rescue the defects of embryos from bcd-null females. The reconstructed AncBcd HD yielded a phenotype indistinguishable from that of the DmBcd transgene, with essentially complete morphological rescue (Figure 3G,H), activation of all Bcd targets (Figure 3J\u2013P), and repression of Cad (Figure 3I), with 37% of embryos surviving to adulthood. In contrast, when the AncZB HD was swapped into the same construct, no morphological or molecular rescue was observed (Figure 3Q\u2013Z). The derived in vivo functions of the Bcd homeodomain \u2013\u00a0including its capacity to regulate key developmental target genes and to specify formation of cephalic and thoracic structures in anterior regions of the embryo \u2013 therefore evolved almost entirely during the interval after duplication of AncZB but before AncBcd.\n\n### Genetic causes for the evolution of AncBcd\u2019s DNA specificity\n\nThe genetic causes for the evolutionary change in the Bcd HD\u2019s functions must be among the 31 amino acid substitutions that occurred between AncZB and AncBcd (Figure 2B). Although previous research into the genetics of Bcd function focused on specific candidate residues, we took an unbiased approach. To identify the most likely causal changes, we examined phylogenetic patterns of conservation and divergence. Eleven of the 31 amino acid substitutions that occurred between AncZB and AncBcd are phylogenetically diagnostic, with the AncBcd state conserved in all descendant Bcd proteins (Figure 2B); these diagnostic substitutions constitute an initial set of candidate causal changes.\n\nWe first tested whether each of these 11 substitutions was necessary for the evolution of AncBcd\u2019s preference for the canonical Bicoid motif (BM). We individually reverted each diagnostic residue in AncBcd HD to the state present in AncZB HD and measured the effect on DNA affinity using F-EMSA. Only one reversal \u2013 changing lysine 50 back to the ancestral glutamine (K50q) \u2013 shifted the protein\u2019s preference for BM back toward ZM; this reversion caused a 38-fold change in relative affinity and restored the ancestral preference for ZM. Mutating arginine (R) to the ancestral methionine (m) at position 54 (R54m) \u2013 had no effect on relative preference, but it lowered affinity to both BM and ZM by a factor of\u00a0~15 (Figure 4A). No other ancestral state affected affinity to either BM or ZM or relative preference by a factor of three or more in either direction, indicating that none of these were necessary for the\u00a0historical evolution of the derived DNA preference of the Bcd HD.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig4-v1.jpg)\n\n**Figure 4.:** (A) Effect of reversing diagnostic historical substitutions on AncBcd-HD\u2019s affinity for consensus Bcd and Zen motifs (BM and ZM), in a fluorescent EMSA assay. Column height and error bars show mean and SEM of three replicates. Upper and lower cases denote derived and ancestral states, respectively. (B) Effect of introducing historical substitutions to the derived state at site 50 and 54 into AncZB HD. (C) Binding of DNA motifs by AncZBHD-q50K is tightly correlated with binding by AncBcdHD. Each point is a DNA 6-mer plotted by the average of E-scores for 8-mers containing that 6-mer. Pearson correlation coefficient is shown. (E) Binding of DNA motifs by AncBcdHD-K50q is tightly correlated with binding by AncZB-HD. (D, F) The PBM energy logos of AncZBHD-q50K and AncBcdHD-K50q (compare to Figure 3C). (G) Effect of historical substitutions on global binding specificities in PBMs. Each column represents an 8-mer, colored by its PBM E-score, according to the color scale shown. Each row shows PBM of a reconstructed HD protein with or without residue 50 swapped between ancestral and derived states. 8-mers were clustered using the Manhattan distance metric. Only 8-mers with E-score\u00a0\u2265 0.45 for at least one HD variant are shown. Logos at the bottom of the heatmap were created from the 8-mers in the two large clusters.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Each row represents one 8mer sequence, and each column represents one HD protein variant, colored by E-score using the heatmap scale shown at left. Rows and columns were clustered by similarity using the Manhattan distance metric. Each protein was tested in two replicate experiments, indicated by the suffix _1 or _2. Ancestral reconstructions represent the maximum likelihood ancestral sequence (unlabeled) or the \u2018alt-all\u2019 reconstruction, which contains the state with the second-highest posterior probability at all ambiguously reconstructed sites, defined as those in which more than one site has posterior probability\u00a0>0.20. All HDs were tested with 15 additional flanking residues from the DmBcd protein (labeled B) or the DmZen protein (unlabeled). Only 8-mers with E-score\u00a0\u22650.45 for at least one protein variant are shown.\n\nTo test whether the substitutions at positions 50 and 54 were sufficient to cause the evolutionary change in DNA recognition in vitro, we introduced the derived states from AncBcd into the AncZB HD (Figure 4B). Substitution q50K had a very large effect, shifting the ancestral protein\u2019s relative binding preference by four orders of magnitude, increasing affinity for BM 100-fold and reducing that for ZM by a factor of 100 (Figure 4B). By comparison, simultaneously introducing into AncZB all 30 other substitutions from this interval except q50K (construct AncBcd-K50q) caused no improvement in affinity for BM and just a seven-fold reduction in affinity to ZM (Figure 4A). Substitution m54R alone increased affinity for both ZM and BM, but in the presence of q50K, it had no significant effect, indicating an epistatic interaction by which q50K silences the effect of m54R (Figure 4B). These data indicate that the single substitution q50K was sufficient to cause the entire historical shift in in vitro DNA preference from ZM to BM, whereas m54R did not make an observable contribution to the new specificity.\n\nWe next used PBMs to determine whether the evolution of Bcd\u2019s global DNA specificity was also attributable primarily to substitution q50K. We compared the ensemble of DNA motifs bound by AncZB to those bound by AncZB-q50K. This substitution shifted the overall enrichment and de-enrichment across all oligomers to be extremely similar to those bound by AncBcd (Figure 4C, r\u00a0=\u00a00.93, compared to r\u00a0=\u00a00.56 for the correlation of AncZB and AncBcd (Figure 3B). Substitution q50K also transformed the binding-energy logo of AncZB into one almost identical to that of AncBcd, with the \u2018CC\u2019 dinucleotide strongly favored at positions 5 and 6 and the ancestrally preferred bases now de-enriched (Figure 4D, compared to Figure 3D). Substitution q50K was therefore sufficient to confer on AncZB the derived in vitro DNA-binding profile of AncBcd.\n\nThe other HD substitutions did not contribute to the evolutionary shift in global DNA specificity, as shown by a PBM comparison of AncZB to AncBcd-K50q, which is AncZB plus all 30 other derived states that evolved in the AncZB-AncBcd interval (except for q50K). The global DNA specificity of this protein remained strongly correlated to that of AncZB (r\u00a0=\u00a00.93, Figure 4E); its binding-energy motif was also like that of AncZB, with a strong preference for G/T and A at the last two positions, and depletion of binding to the CC bases that are enriched among AncBcd\u2019s targets (Figure 4F). The overall profiles of DNA targets bound by AncZB and AncBcd-K50q are highly similar, with enrichment of sequences similar to TAATTA and de-enrichment of those similar to TAATCC; conversely, AncBcd and AncBcdq50K show the opposite pattern (Figure 4G).\n\nTaken together, these results indicate that substitution q50K was the primary determinant of the evolutionary shift in in vitro DNA-binding preferences that occurred during the transition from AncZB to AncBcd. The other 30 substitutions that occurred on this branch, including m54R, had very minor effects on the in vitro DNA-binding specificity of the evolving HD.\n\n### In vivo effects of historical substitutions on gene expression and development\n\nTo test the contribution of historical substitutions to the evolution of Bcd\u2019s role in AP specification and the regulatory network that drives it, we incorporated candidate historical residues into transgenic Bcd constructs containing the AncZB or AncBcd HDs, transformed bcd-null females with these constructs, and assayed their offspring.\n\nWe found that reversing only q50K (AncBcdHD-K50q) completely abolished the rescue conferred by AncBcd HD: larval cuticles were similar to bcd-null embryos (Figure 5A,B), expression of Bcd's transcriptional targets was completely lost (Figure 5D\u2013J), and Cad translation was no longer repressed (Figure 5C). Substitution q50K was therefore necessary for evolution of the developmental and gene regulatory functions of the Bcd HD.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34594/elife-34594-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013J) Testing the necessity of q50K for AncBcd function. Cuticle phenotypes and Bcd-target gene expression patterns of embryos from bcdE1 females carrying two copies of a Bcd rescue construct containing AncBcd-HD (dark blue) with an amino acid reversion to the AncZB ancestral state at residue 50 (purple arrow). (K\u2013NN) Testing the sufficiency of historical substitutions of q50K and m54R. Embryos expressing Bcd rescue constructs containing AncZB-HD (purple) with historical substitutions to the derived AncBcd state (blue arrows) at site 50 (K\u2013T), 54 (U\u2013DD), or both (EE\u2013NN). Individual panels and constructs are labeled as in Figure 1. Stars indicate Bcd-dependent target gene activation induced by the indicated constructs.\n\nTo determine whether q50K was also a sufficient historical cause, we introduced the derived lysine into the AncZB HD. We observed partial rescue (Figure 5K\u2013T). Ectopic filzk\u00f6rper formation was suppressed, and all eight abdominal segments were formed in\u00a0~90% of the embryos (Supplementary file 5). The posterior-most thoracic segment (T3) was observed in around 60% of larvae. These embryos failed to form anterior thoracic segments (T1 and T2) and any head structures (Figure 5K,L, Supplementary file 5). Of Bcd\u2019s seven transcriptional targets, three (hb, kni, and eve stripe 2) were activated, but four (gt, otd, ems, and btd) were not (Figure 5N\u2013T), and Cad translation was not repressed (Figure 5M). Thus, q50K partially accounts for the evolution of Bcd\u2019s role in development and gene regulation in vivo.\n\nWe therefore examined whether substitution m54R \u2013 the only other historical substitution with a significant effect on DNA binding in vitro \u2013 affected the functions of the ancestral proteins. Introducing m54R alone into AncZB HD conferred no observable rescue of developmental or gene regulatory phenotypes (Figure 5U\u2013DD). Introducing m54R together with q50K, however, yielded a notably more complete rescue than q50K alone: all larvae carrying the double substitution contained T3 and all eight abdominal segments,>80% also contained T2, and\u00a0>50% formed anterior structures similar to the sclerotized structures of the internal cephalic skeleton (Figure 5EE,FF; Supplementary file 5). Compared to the single q50K substitution, two additional Bcd-dependent transcriptional targets, gt and otd, were activated (Figure 5HH\u2013KK,NN), but two others, btd and ems, remained silent (Figure 5LL,MM), and Cad translation was still not repressed in the anterior (Figure 5GG). These data point to an epistatic interaction between m54R and q50K in vivo, in which m54R has an effect only when introduced together with q50K; this interaction differs from that\u00a0observed\u00a0in vitro, where m54R affects affinity in isolation but not in combination with q50K.\n\nThus, just two large-effect substitutions \u2013 q50K and m54R \u2013 are sufficient in the ancestral HD to recapitulate the evolution of major aspects of the Bcd HD\u2019s derived function, including regulation of many target genes and partial specification of anterior structures. Compared to the phenotype of AncBcd-HD, the rescue conferred by these two substitutions is incomplete, with several targets remaining unregulated and anterior development still compromised. Additional contributions must therefore have been made by some of the other historical substitutions in the HD during the interval between AncZB and AncBcd.\n\n## Discussion\n\n### Relation to prior work\n\nThe evolution of a molecule and its functions can be conceived of as a specific historical trajectory through the vast space of possible sequences from the ancestral to the derived form. A complete understanding of the evolution of a protein\u2019s role in development would identify the sequence substitutions that changed its functions, order them in a temporal sequence, and characterize how each change altered specific molecular and developmental processes. This \u2018vertical\u2019 approach is different from that used by most studies, which compare the molecular sequences and developmental functions of present-day proteins. For example, experiments that perturb the sequence of a present-day protein, introducing amino acid states that have different biochemical properties or are found in other proteins that have different functions, explore the local sequence space immediately surrounding that protein. Although this approach can help to identify some of the genetic and biochemical constraints that shape a molecule's current functions, it does not directly address the causal effects of the set of historical changes in gene sequence that occurred during its evolution. (Hochberg and Thornton, 2017)\n\nPrevious work investigated the genetic determinants of D. melanogaster Bcd\u2019s functions using non-vertical approaches. In vitro experiments have shown that mutating Q50 to K in distantly related extant HDs increases affinity for or activation from consensus Bcd motifs and reduces it from Zen motifs; the converse experiment in DmBcd HD has the opposite effect (Treisman et al., 1989; Ades and Sauer, 1994; Percival-Smith et al., 1990; Hanes and Brent, 1991; Hanes and Brent, 1991; Zhao et al., 2000). Mutations at some other sites, including position 54, also affect affinity and/or preference (Dave et al., 2000; Niessing et al., 2000; Damante et al., 1996). These studies established that certain residues are important for the present-day protein\u2019s functions, but their design could not characterize how much of the evolutionary acquisition of Bcd\u2019s functions was caused by these or any other historical sequence substitutions. First, they provided no evolutionary scale to refer to: the quantitative change in function that occurred during the key evolutionary interval was unknown, so how much of that change was attributable to Q50K or other substitutions could not be assessed. Second, most mutation studies (with the exception of Q50K) exchanged amino acids for non-ancestral states that never occurred during Bcd evolution. For example, mutating Bcd\u2019s Arg54 to alanine, serine, or lysine affects in vitro functions, as does introducing Arg54 into distantly related HDs that contain Ala or Tyr (Dave et al., 2000; Niessing et al., 2000; Damante et al., 1996; Pellizzari et al., 1997); however, none of these amino acids were present in the ancestral HD, so these results provided no information about the impacts of the Met-Arg substitution that occurred at this site\u00a0during Bcd evolution. Indeed, without a phylogenetic analysis, the substitutions that occurred during history\u2013 the set of transitions from ancestral to derived amino acids that temporally co-occurred with the change in Bcd function \u2013 had not been identified. Third, even when the relevant derived and ancestral states were studied, their effects were not assayed in the appropriate historical sequence context, a critical issue because mutations can have different effects on function in extant vs. ancestral backgrounds (Hochberg and Thornton, 2017). Thus, it has been unknown whether any historical substitution \u2013 even the well-studied position 50 \u2013 was an entirely sufficient cause, a partial contributor, an epistatic modifier, or causally\u00a0irrelevant in the historical evolution of Bcd\u2019s derived functions in vitro.\n\nEven less was previously known about the genetic causes of the evolution of Bcd\u2019s developmental and gene regulatory functions in vivo. Mutating Q50 to K in the HD of the distantly related protein Ftz failed to confer activation of Bcd-responsive genes in transgenic fly embryos or in cultured cells (Schier and Gehring, 1993; Zhao et al., 2000). This negative result might imply that Q50K did not cause the evolution of any of Bcd\u2019s derived functions in vivo, but it could also be an artifact of epistasis, if other sequence states in Ftz are incompatible with Bcd functions but were not present in the ancestral Bcd\u00a0protein when the substitution occurred. Q50K has also been introduced into other HDs, but effects on other developmental processes, not on Drosophila anterior development or expression of Bcd-responsive genes, were studied (Ibrahim et al., 2013; Percival-Smith et al., 1997; Capovilla et al., 1994; Plaza et al., 2001) At site 54, the mutations studied in vivo have involved states that did not occur during Bcd evolution, such as alanine and serine (Niessing et al., 2000), so the effects of M54R on its own, or in combination with Q50K, have been unknown.\n\nOur strategy was designed to directly characterize the causal contribution of historical substitutions to the acquisition of Bcd\u2019s derived functions, both in vitro and in vivo, using the reconstructed context of the ancestral proteins in which they occurred. By functionally characterizing successive ancestral nodes on the phylogeny, we found that all the derived functions of the Drosophila Bcd HD were acquired on one phylogenetic branch, which represents the evolutionary interval between the duplication of AncZB, which produced a separate bcd locus, and before the bcd gene in the last common ancestor of all cyclorrhaphan flies (AncBcd). During this interval, a dramatic shift occurred in the global set of DNA sequences to which AncBcd binds, and the relative preference for canonical BMs vs. ZMs changed by a factor of 250. This interval was also the key period for the evolution of Bcd\u2019s in vivo functions: whereas AncZB-HD rescued no Bcd-specific functions, AncBcd-HD activated all seven Bcd target genes tested, inhibited Cad translation, and organized development of many anterior structures in the embryo, yielding functions and phenotypes indistinguishable from those conferred by the D. melanogaster Bcd HD.\n\nThe sequence changes that occurred along this phylogenetic branch represent the candidate genetic causes for the evolution of Bcd HD\u2019s derived functions. We focused on the contribution of 11 substitutions from this interval, because the derived states of these are conserved among all known Bcd proteins. When each of these was introduced singly into AncZB, only Q50K made a measurable contribution to the new specificity, and this substitution alone was sufficient to recapitulate the entire evolutionary shift in local specificity (affinity for BM and ZM) and global DNA affinity (as measured in a PBM), yielding in vitro functions indistinguishable from AncBcd. The other substitutions had no effect on motif preference, and only M54R had a significant effect on affinity, conferring a nonspecific increase in binding to both motifs; however, when M54R was introduced together with Q50K, it had no measurable effect on affinity for either motif, compared to Q50K alone. Thus, a single large-effect substitution appears to provide a nearly complete causal explanation for the evolution of the Bcd HD\u2019s derived DNA specificity as measured in our in vitro assays.\n\nBy performing transgenic experiments with reconstructed ancestral HDs, we sought to directly assess the contribution of historical substitutions to the shift in embryonic gene expression and developmental phenotypes that occurred during Bcd evolution. We found that Q50K was a major evolutionary cause: introducing it into AncZB-HD conferred regulation of three of seven Bcd target genes and recovery of some aspects of anterior development. Unlike its minor role in vitro, M54R was an important causal contributor in vivo, conferring regulation of two additional targets and a more complete developmental rescue, but only when introduced together with Q50K. At least some of the 29 other substitutions that occurred during this interval made additional contributions, conferring activation of the last two transcriptional targets (ems and btd), increasing expression levels and sharpening localization of the entire suite of targets, yielding anterior repression of Cad translation, and rescuing the full anterior developmental phenotype of AncBcd-HD. Further work will be required to determine the specific contribution of these substitutions to the evolution of Bcd function.\n\n### Limitations\n\nThere are several limitations to our approach, but none are likely to undermine our major claims. First, ancestral sequences are inferred statistically and are therefore never known with certainty. The ML sequences of AncZB and AncBcd were inferred with very high confidence, with only 3 and 2 sites, respectively, having a plausible alternative amino acid, and the expected number of erroneously reconstructed sites is just 1.7 and 0.9 in the two proteins. We performed the in vitro assays using \u2018AltAll\u2019 versions of the reconstructed proteins that contain all plausible alternative residues and found no differences in function from the ML ancestors. Our inferences concerning ancestral functions therefore appear to be robust to stochastic uncertainty about the precise sequence of the ancestral proteins. We did not test these alternative reconstructions in transgenic animals and therefore cannot strictly rule out the possibility that the true ancestral sequences of AncZB and AncBcd may have functioned differently from the ML versions in vivo. But this possibility seems unlikely, given the high degree of statistical confidence and the robustness of the protein\u2019s in vitro functions to sequence uncertainty.\n\nA second limitation is that we assayed reconstructed ancestral HDs in the context of an extant model organism. The developmental gene regulatory environment is likely to have changed in some ways from the ancestral cyclorrhaphan to D. melanogaster; it is possible that the ancestral proteins that we tested could have had different effects on the ancestral organism in which they occurred. All transgenic experiments, including horizontal swaps of genes or regulatory elements from one species into a model organism, are potentially complicated by this kind of epistatic mismatch (Gehrke and Shubin, 2016). In general, epistatic mismatch should be less of a problem when ancestral genes are used because the genetic distance between ancestral gene and host organism is shorter than it is in horizontal swaps between extant species that descend from the same ancestor. We observed virtually no developmental or regulatory differences between D. melanogaster transformed with its own DmBcd-HD and those carrying the AncBcd-HD, suggesting no incompatibility between the ancestral HD and the developmental environment in which it was tested. Moreover,\u00a0our assays of AncBcd, AncZB, and variants containing Q50K and/or M54R were all carried out in the common genetic background of D. melanogaster; so our inferences would be artifacts only if interactions with this background differentially affected these very similar sequences.\n\nA third limitation is that we focused our study on evolutionary change within the Bcd HD, because only the HD can be reconstructed with confidence. Changes elsewhere in the Bcd coding sequence may have made some contribution to the emergence of the protein\u2019s new functions. But our experiments establish that changes within the HD are the predominant causes within the Bcd protein of its functional evolution: swapping just the HD of DmBcd-HD into the rest of the Zen protein confers the majority of Bcd-like in vivo functions, including regulation of all major Bcd target genes and rescue of many anterior structures. The level of expression and precise localization of some Bcd targets is not fully rescued by this Zen-BcdHD chimera, however, so amino acid changes outside the HD likely had additional, albeit relatively minor effects, on tuning Bcd\u2019s derived gene regulatory functions.\n\nBcd\u2019s evolution involved a shift in not only the protein\u2019s intrinsic functional properties but also its localization; our experimental design did not address the genetic changes that drove maternally expressed bcd to become localized in the anterior of the embryo. The evolution of Bcd functions may also have involved changes in proteins with which Bcd interacts or in Bcd\u2019s target regulatory elements. These questions could, in principle, be addressed in the future using ancestral reconstruction. Indeed, the strategy we use here can be applied to any developmental functions and phenotypes for which phylogenetic signal is adequate to allow relevant ancestral sequences to be reconstructed. Ancestral regulatory regions may be amenable to reconstruction and in vitro/in vivo characterization (Rebeiz et al., 2011; Rogers et al., 2013), if they are conserved enough that traces of the ancestral state are retained in extant sequences. It may therefore be possible, in some cases at least, to provide more complete causal explanations across biological levels for the ancient evolution of differences in development among distantly\u00a0related taxa.\n\n### Implications\n\nOur results shed light on several issues concerning developmental evolution. First, they illuminate the number and effect-size of substitutions during the evolution of development, a classic question in evolutionary genetics (Fisher, 1919; Lewontin, 1974; Orr, 2005) and evo-devo (Colosimo et al., 1928; Martin and Orgogozo, 2013; Rockman, 2012; Stern and Orgogozo, 2008). We found that two very large-effect substitutions drove the evolution of the majority of the Bcd HD\u2019s derived functions. This result is consistent with findings in other protein families that just a few historical substitutions drove evolutionary changes in biochemical specificity in enzymes, transcription factors, and binding proteins (Siddiq et al., 2017b). In contrast, previous studies of development that have identified the genetic basis of differences between populations or closely related species have mostly found a more diffuse distribution of effect sizes, with many substitutions of small effect accounting for new phenotypes (Gompel et al., 2005; Frankel et al., 2011; Linnen et al., 2013; Rebeiz et al., 2009); however, a major role for large-effect mutations has been observed when the derived phenotype is conferred by loss-of-function mutations (e.g. refs. [Colosimo et al., 1928; Jeong et al., 2006; Prud'homme et al., 2006; Hoekstra et al., 2006]).\n\nIn the case of Bcd, both large- and small-effect substitutions appear to have been important, with additional contributions by some of the 29 other substitutions on the same branch. These results are not consistent with a model by which evolution occurs through a very large number of changes of extremely small effect or a simple \u2018hopeful monster\u2019 model by which a single mutation is sufficient to confer a novel, high-fitness phenotype. Our findings are more consistent with a model in which a very small number of large-effect substitutions can yield a new but non-optimal function, which is subsequently refined by additional changes of smaller effect (Orr, 2005; Charlesworth and Charlesworth, 1975).\n\nOur results also have implications for understanding the evolution of Bcd\u2019s role in cyclorrhaphan development. The difference we observed between the in vitro and in vivo contributions of the key historical substitutions indicates that the evolution of Bcd\u2019s developmental functions cannot be explained entirely by a shift in binding to canonical ZM and BM. Q50K causes the entire shift in preference measured in vitro, but it accounts for a relatively small portion of the HD\u2019s in vivo evolution \u2013 activation of three of seven major transcriptional target genes, and only a very limited rescue of anterior development; two of these, hb and eve2, are the same targets that are activated by a construct of the D. melanogaster bcd gene containing the otd HD, which also contains K50\u00a0(Datta et al., 2018). Adding M54R to Q50K had no further effect on preference or affinity in vitro, but it conferred a notably more complete rescue in vivo. Residue Arg54 has been proposed to be critical for Cad inhibition (Niessing et al., 2000), but the AncZB-Q50K/M54R construct showed no detectable inhibition of Cad in vivo, indicating that M54R\u2019s effects are mediated by some other mechanism. Effects on non-canonical, lower-occupancy DNA targets are one possibility (Datta et al., 2018; Ramos and Barolo, 2013; Crocker et al., 2015), as are changes in cooperative interactions with some other transcription factor (Baker et al., 2012). When the remaining historical substitutions have been identified that confer inhibition of Cad translation and activation of Bcd\u2019s two remaining transcriptional targets (ems and btd), it should be possible to use the data we present here to disentangle how Bcd\u2019s regulatory effects on its various targets interact to specify AP polarity.\n\nA major puzzle is how a new transcription factor could evolve a controlling role in a crucial process of early development, because intermediate evolutionary states that would disrupt AP development would presumably be strongly selected against. It has been suggested that Bcd may have usurped its role as a primary anterior organizing transcription factor from a more ancient protein with Bcd-like specificity, such as Otd, which plays a role in anterior organization in some wasps (Lynch et al., 2006). In this scenario, as soon as Bcd\u2019s new specificity evolved, it would immediately have taken on a controlling position in the AP gene regulatory network, so long as it was localized to the embryo\u2019s anterior. There are other examples of transcription factors taking control of existing integrated regulatory networks during evolution, although the mechanisms by which they did so are not yet known (Booth et al., 2010; Mank and Avise, 2009; Matsuda et al., 2002; Wallis et al., 2008).\n\nOur finding that only one or two changes is sufficient to drastically alter Bcd\u2019s target specificity both in vitro and in vivo seems to increase the plausibility of the idea that AncBcd could have commandeered control over an ancestral suite of targets that already contained BMs. But a key premise of this model \u2014 that Otd or other HD-containing proteins with Bcd-like specificity were the ancestral anterior organizers \u2014 is not yet established. In other insect species, including some more closely related to cyclorrhaphans than are wasps and beetles, non-HD transcription factors unrelated to Otd or Bcd are the upstream controlling determinants of AP development (Klomp et al., 2015), so it is currently premature to conclude that Otd played this role in the ancestral cyclorrhaphan. Moreover, replacing the HD of D. melanogaster Bcd with that of D. melanogaster Otd in transgenic flies yields activation of only a few Bcd targets and virtually no rescue of anterior development (Datta et al., 2018); this result seem incompatible with the model that Bcd simply commandeered Otd\u2019s targets during evolution, unless subsequent evolution of the system has obscured the putative ancestral relationship.\n\nA second premise of this model is that the network of downstream genes that executes AP specification in response to Otd or some other ancestral master anterior factor was already in place in a form similar or identical to that in extant D. melanogaster, ready to be commandeered by Bcd when it evolved. Current knowledge of the mechanisms of AP specification in other species is inadequate to establish the long-term stasis of this network. Subsequent changes in the regulatory sequences of some present-day Bcd target genes may have been important in initiating or modifying their response to Bcd, after Bcd\u2019s intrinsic molecular functions were already acquired. Our experiments, which were conducted in the context of the D. melanogaster embryo, cannot address this possibility. To infer the likely components of the ancestral network and the relationships among them, it will be necessary to assess the mechanisms of AP specification in numerous non-cyclorrhaphan dipterans, as well as basally branching cyclorrhapans, and evaluate that evidence in a phylogenetic context. Such efforts will refute or corroborate the \u2018Otd replacement\u2019 hypothesis and may suggest other plausible scenarios for how the relatively rapid acquisition by Bcd of new molecular functions allowed it to evolve a controlling role in a crucial integrated process of early animal development.\n\n## Materials and methods\n\n### Drosophila stocks, cloning, and transgenesis\n\nWe used the following stocks in these experiments: yw (wild type), \u00b1/Cyo bcd+;bcdE1/bcdE1, Cyo bcd+/Sco;bcdE1/bcdE1, and \u03a6C31 (y+);38F1 (w+). We cloned an injection plasmid (piattB40-Bcd) containing two inverted \u03a6C31-specific recombination sequences (AgeI/HindIII) for Recombination Mediated Cassette Exchange (RMCE), Gmr-GFP (HindIII/AscI), and a polylinker flanked by 1.9 kb bcd promoter and 0.8 kb 3\u2019UTR (AgeI/AscI). The bcd and zen coding regions were amplified by PCR from pBS-SK\u00a0+\u00a0cDNA clones, digested with RsrII and AscI and ligated into piattB40-Bcd. We used standard cloning techniques to generate homeodomain swaps and residue changes. Gene Blocks coding for the ancestral HD and variant sequences together with the flanking Bcd coding sequence were obtained from Integrated DNA Technologies (IDT). They were digested with AscI and BspEI and ligated to the piattB40-Bcd vector digested with the same restriction enzymes. All transgenic lines were generated using the \u03a6C31 integration system, and constructs were integrated into the 38F1 landing site on the second chromosome (Bateman et al., 2006). Each transgene was crossed to Cyo bcd+/Sco; bcdE1/bcdE1 to generate Cyo bcd+/[transgene]; bcdE1/bcdE1 stocks. Embryos and larvae from homozygous transgenic females were assayed for gene expression and cuticle phenotype.\n\n### In situ hybridization, immunohistochemistry, and image processing\n\nIn situ hybridizations were performed as previously described (Kosman et al., 2004). Briefly, embryos 1\u20133 hr AEL (after egg laying) were dechorionated 2 min in bleach and fixed and devitellinized in a biphasic fixation solution containing 3 ml 1X PBS, 1 ml 37% Formaldehyde and 4 ml Heptane for 25 min on a shaker at RT. Fixed and permeabilized embryos were incubated with DIG or Fluorescein-labeled RNA probes and the labeled probes were detected by Alkaline Phosphatase (AP)-conjugated primary antibodies (Cat #11093274910 and #11426338910) by using NBT/BCIP solution. RNA expression was observed by Zeiss Axioskop microscopy. Cuticle preparations were performed on embryos aged 20\u201324 hr. Larvae were dechorionated for 2 min in bleach, and a 1:1 mixture of methanol and heptane was used to remove the vitelline membrane. Larvae were fixed overnight at 65\u00b0C in a 1:4 mixture of glycerol and acetic acid, and mounted in a 1:1 mixture of Hoyer\u2019s medium (Anderson, 1954) and lactic acid. Guinea pig anti-Cad (1:400) and Alexa Fluor conjugated 647 donkey anti-guinea pig (1:500, Invitrogen) were used to examine Cad protein expression. All antibodies were diluted in PBT (1X PBS with 0.1% Tween). Data for immunostaining images were collected on a Leica TCS SP5 confocal microscope using the Leica confocal analysis software.\n\n### Phylogenetics and ancestral sequence construction\n\nProtein sequences of Bicoid (Bcd), Zerknullt (Zen) and Hox3 orthologs were collected by BLAST against NCBI databases using Drosophila melanogaster Bcd and Zen HD sequences. Three zen cDNA sequences were reverse transcribed from insect species, Lonchoptera lutea, Platypeza consobrina and Rhajio tringarius (Stauber, 2001). Protein sequences were aligned using the multiple sequence alignment program MSAProbs (v0.9.7) (Liu et al., 2010). The alignment was manually examined and HD regions were extracted, realigned, and then checked for proper alignment according to known conserved positions. Only one representative sequence was kept if multiple sequence entries showed no sequence diversity among them. The curated HD alignment included 33 HDs from 27 insect species (Supplementary file 1). Phylogenetic analysis was performed using PHYML (v3.0) (Guindon et al., 2010) and LG model (Le and Gascuel, 2008) with gamma-distributed among-site rate variation and model defined state frequencies, which was the best-fit evolutionary model selected using the Akaike Information criterion implemented in ProtTest software (v2.4) (Abascal et al., 2005). Statistical support for each node was evaluated by calculating the approximate likelihood ratio statistic (Anisimova and Gascuel, 2006).\n\nHomedomain sequences are short and highly conserved at many sites, so they contain inadequate information to resolve some species relationships by maximum likelihood (Figure 2\u2014figure supplement 1). We therefore imposed a tree topology a priori to constrain all species relationships, which are well corroborated from extensive prior research on insect phylogenetics. Branch lengths and model parameters were then optimized on this tree by maximum likelihood. Ancestral HD sequences were reconstructed by the maximum likelihood method using the codeml module of PAML (v4.7) (Yang, 2007), assuming the constrained tree, a free four-category gamma distribution of among-site rate variation, and the LG model. A customized Python script was used to extract marginal posterior probability of each amino acid at each site for the nodes of interest from PAML output file (available at https://github.com/JoeThorntonLab/bcd_evolution; copy archived at https://github.com/elifesciences-publications/bcd_evolution). We identified all ambiguously reconstructed sites as those at which multiple states have posterior probability\u00a0>0.20; we synthesized alternative ancestral reconstructions containing the state with the second highest likelihood at all such sites (Supplementary file 2). The resulting \u2018alt-all\u2019 ancestors represent the far edge of the cloud of plausible ancestral sequences and allow a conservative experimental test (Figure 3\u2014figure supplement 1, Figure 4\u2014figure supplement 1, Supplementary file 3) of the robustness of functional inferences to statistical uncertainty about the ancestral sequences (Eick et al., 2017).\n\n### Protein synthesis and purification\n\nAncestral HD cDNA sequences were synthesized (GeneScript). For SPR and F-EMSA experiments, HD cDNAs were cloned into the pETMALc-H10T vector (Pryor and Leiting, 1997) C-terminal to a cassette containing a 6xHis tag, maltose binding protein (MBP) and a TEV protease cleavage site. For protein binding microarray experiments, cDNA sequences of ancestral HDs plus a flanking region containing 15 amino acids from D. melanogaster Bcd or Zen were synthesized (GeneScript) and cloned into the pDEST15 vector through Gateway cloning (Life Technologies) to produce N-terminal GST fusion proteins. Ancestral HDs were expressed in BL21 (DE3) pLysS Rosetta cells.\n\nProtein expression was induced by 0.5 mM IPTG at A600 of 0.8\u20131.2. Cells were then grown overnight at 18\u00b0C, harvested and frozen at \u221220\u00b0C. Cells were lysed using BPER Protein Extraction Reagent Kit (ThermoScientific). For MBP-His fusion ancestral HDs, the supernatant of the cell lysate was loaded onto a pre-equilibrated 5 mL HisTrap HP column (GE) and eluted with a linear imidazole gradient (40 mM to 1 M) in 20 mM sodium phosphate and 200 mM NaCl buffer [pH 7.4] on AKTA FPLC system. Then, ancestral HDs were cleaved from MBP-His fusions using TEV protease in dialysis buffer consisting of 20 mM sodium phosphate and 250 mM NaCl [pH 7.0]. For GST fusion ancestral HDs, the supernatant of cell lysate was loaded onto\u00a0a pre-equilibrated gravity Glutathione column (ThermoScientific), eluted with 10 mM glutathione, 125 mM Tris and 150 mM NaCl [pH 8.0], and dialysed in dialysis buffer [pH 6.0]. For the second purification step, samples were loaded onto a 5 mL HiPrep SP FF cation exchange column (GE) and eluted with a linear NaCl gradient (250 mM to 1 M) in 20 mM sodium phosphate buffer [pH 7.0]. Whenever needed, ancestral HDs were further purified on a HiPrep 16/60 Sephacryl S-100 HR size exclusion column (GE) with 20 mM Tris and 150 mM NaCl [pH 7.5]. Protein purity was assayed after purification by visualization on a 12% SDS-PAGE gel stained with Bio-Safe Coomassie G-250 stain (Bio-Rad). Purified protein aliquots were flash frozen in liquid nitrogen and stored at \u221280\u00b0C in 20 mM sodium phosphate, 150 mM NaCl, 1 mM DTT and 10% glycerol [pH7.5]. Protein folding and aggregation states were measured using circular dichroism (Jasco J-1500 CD) and dynamic light scattering (Wyatt DynaPro NanoStar) spectroscopy after freeze-thaw cycle. For biochemical assays, protein aliquots were thawed, centrifuged, and the supernatant was used for Quick StartTM Bradford Assay (BioRad) to quantify protein concentrations.\n\n### Protein binding microarray analysis\n\nProtein binding microarrays (PBM) were performed essentially as described previously (Berger et al., 2006) using a custom-designed \u2018all 10-mer\u2019 universal array (Berger et al., 2008) in the 8 \u00d7 60K array format (Agilent Technologies, Inc.; AMADID # 030236) (Nakagawa et al., 2013). All proteins were tested at a concentration of 100 nM. Duplicate PBMs were performed for each protein. The array data were quantified as described previously (Berger et al., 2006) using the Universal PBM Analysis Suite (Berger and Bulyk, 2009). Replicate experiments for each protein yielded similar results, although the signal in one replicate was in most cases stronger than in the other (Figure 4\u2014figure supplement 1, Supplementary file 6). For PBM analysis, 15 amino acids flanking the HD were included to follow previously optimized protocols (Berger et al., 2008); we found almost identical results whether these residues were those from D. melanogaster Bcd or Zen (Figure 4\u2014figure supplement 1, Supplementary file 3).\n\nFor heat-map and clustering analysis, E-scores for 8-mers scoring\u22650.45 for at least one tested construct were clustered and plotted using the heatmap.2 function in the gplots R package, with the Manhattan distance metric. Clusters of 8-mers selected from the heatmaps were aligned as described (Jiang et al., 2013), and sequence logos were made using the makePWM and seqLogo functions from the Biostrings and seqLogo R packages. For correlation analysis, binding of a HD protein to every 6-mer was calculated as the mean E-score averaged over all 8-mers containing that 6-mer; 6-mers were used because our F-EMSA and SPR experiments were performed using canonical 6-mers, and because the strongest information about sequence specificity observed in our PBMs and those of other homeodomains typically comes from 6-mers, although flanking bases can provide some additional information (see, for example, Figure 4 of [Berger et al., 2008]). The Pearson correlation coefficient was then calculated for the relationship between 6-mer E-scores of PBMs performed using two different HDs.\n\nPBM binding logos were derived from site-specific effects on binding energies estimated using a maximum likelihood method implemented in the BEEML-PBM algorithm (Zhao and Stormo, 2011). BEEML-PBM models the nonlinear relationship between the logarithm of binding probability and the binding free energy by including transcription factor concentration as a separate parameter and also taking into account background and position effects. In practice, for each ancestral HD, the normalized probe intensity data and a set of initial parameters specifying its position weight matrix (PWM) energy model were used as input files for nonlinear regression to obtain the parameters of its PWM energy model that maximize the fit to the observed probe intensity data. To evaluate PWM energy model performance, PWMs trained on replicate one were used to predict replicate 2 8-mer median intensities. Observed or predicted median intensity of an 8mer was calculated by taking the median of the observed or predicted intensities of all probes containing this 8-mer. The coefficient of determination (R2) was calculated to quantify the proportion of variance of observed median intensities that could be explained by predicted median intensities. The predictive performance was then compared with experimental reproducibility (R2 of 8mer median intensities) between the two replicates. To evaluate the robustness of our statistical sequence reconstruction, a PWM energy model trained on an alternate reconstructed ancestral HD was used to predict 8-mer median intensities of its corresponding ML ancestor. PWM energy models were graphically represented using energy logos implemented in Energy Model program (Foat et al., 2006; Zhao et al., 2012), which represent the relative energy contribution for each nucleotide at each position, and directly display binding affinity preference of favorable and unfavorable nucleotides.\n\n### Quantitative fluorescence electrophoretic mobility shift assays (F-EMSA)\n\nQuantitative F-EMSAs were used to measure the binding affinities of ancestral HDs to 14 bp 5\u2019 fluorescein-labeled dsDNA oligonucleotides (FAM-DNA). FAM-DNAs were produced by annealing equimolar complementary ssDNA strands (HPLC purified; Eurofins). 5 \u00b5M annealed FAM-DNA aliquots were stored at \u221220\u00b0C. Typical reactions consisted of 2.5 nM FAM-DNA equilibrated with varying concentrations of protein in assay buffer for 30 min at room temperature (20 mm Tris, pH 7.5, 150 mm NaCl and 1 mM DTT). Immediately prior to loading, one-twentieth volume of 30% (v/v) glycerol, 0.01% (w/v) bromcresol green was added to each reaction as a dye marker. A 10 \u00b5l sample of each reaction was loaded onto a pre-run 8% native polyacrylamide gel in pre-chilled 0.5\u00a0\u00d7\u00a0TBE buffer. The gels were run for 40 min at 100 volts then immediately scanned using a fluor-imager (Bio-Rad GelDoc) with a blue laser at 491 nm. The fluorescence intensity ratio of bound verse total FAM-DNA (F) was determined as a function of total protein concentration (P) and DNA concentration (D), and the data were fitted to a quadratic equation (Equation 1) to determine the binding association constants (KA). In Equation 1, b0 and bM represent the baseline and maximum response as normalization factor for data fitting. All procedures associated with image processing and model fitting were carried out using a customized R script.\n\n$$\nF=b_{0}+(b_{M}-b_{0})\\times[\\frac{D+P+K_{A}^{-1}-\\sqrt{(D+P+K_{A}^{-1})^{2}-4PD}}{2D}]\n$$\n\n### Surface plasmon resonance assays\n\nAll SPR kinetic experiments were performed with a four-channel Biacore 3000 biosensor system (GE) at 25\u00b0C. 20 bp 3\u2032-Biotin-labeled DNA oligonucleotides (HPLC purified; Eurofins) were captured with streptavidin on CM5 sensor chips (GE) on which the carboxymethyl groups were activated and coupled with streptavidin to amine linkages. Flow cell #1 was left blank as a control while others contained a specific immobilized DNA sequence. Preliminary experiments were done to find appropriate buffer and surface regeneration conditions, DNA immobilization levels, protein concentrations, flow rate, association and dissociation contact time for each protein variant. Low levels of DNA immobilization, 100\u00a0~\u00a0150 RUs (response unit), and fast flow rate, 30 \u00b5l /min, were used to minimize mass transfer effects. Before each kinetic experiment, the system was stabilized for 3 min by flowing HBS-PE buffer at 30 \u00b5l /min (10 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% v/v Surfactant P20). During the\u00a0kinetic association phase, a protein dilution in modified HBS-PE buffer (10 mM HEPES pH 8.5, 150 mM NaCl, 3 mM EDTA, 0.005% v/v Surfactant P20, 1 mM DTT)\u00a0was\u00a0injected. Following a kinetic dissociation phase in which only running buffer was injected, DNA binding surface was regenerated by flowing 20 \u00b5l 0.05% SDS at 100 \u00b5l /min. The kinetic parameters (kon and koff) were estimated by using BIAevaluation software (GE) to fit the observed data (R) to a function (Equation 2), with terms for concentration of protein variants (c0) at various time points (t) and correction terms for refractive index change (RRI), drifting baseline (cD) and local maximum response (Rmax).\n\n$$\nR=\\frac{k_{on}c_{0}R_{max}}{k_{on}c_{0}+k_{off}}[1-e^{-(k_{on}c_{0}+k_{off})t}]+R_{RI}+c_{D}t\n$$\n",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "51c47906-0b90-4701-8ce1-5b4127d10ee5",
+      "submission_id": "336dfc9a-95d6-40d6-b35d-be3a642ee7ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patricia J Wittkopp, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34594.022](https://doi.org/10.7554/eLife.34594.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Ancient mechanism for the evolution of Bicoid function in fly development\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Artyom Kopp (Reviewer #3). The other two reviewers remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAll three reviewers agree that the methodology is a significant strength of the paper. After discussion, however, the reviewers and editors felt that the results presented here are very much in line with what is already known about the functional changes brought about by evolutionary amino acid substitutions in the BCD homeodomain. Furthermore, the conclusions were based on testing variants in Drosophila melanogaster, which does not allow for an analysis of the contributions of \"trans\" evolutionary changes in target sequences, and in interacting proteins. In the end, it was the lack of a significantly new advance in understanding BCD protein evolution/function that led to the decision.\n\nReviewer #1:\n\nThis study sought to characterize the amino acids changes that have evolved to confer functionality on Bicoid since the ancestral duplication that produced this gene in the lineage leading to cyclorrhaphan flies. The study focused on the homeodomain and used a transgenic rescue assay to test the effect of variants on target gene expression and overall ability to rescue in vivoin vivo. These experiments were complimented by in vitroin vitro analysis of binding site preferences of variants.\n\nThe authors found that the Bcd homeodomain in an otherwise Zen protein could perform much like Bcd. They then used ancestral sequence reconstruction (ASR) to generate and test ancestral sequences. This allowed them to identify an ancestral-like sequence that could function like Bcd although it was unable to fully function like this transcription factor, in for example, repressing translation of caudal. The authors then sought to determine which Bcd specific amino acids in the homeodomain were responsible. They found that the K at position 50 conferred much of the characteristics of Bcd in vitroin vitro and in vivoin vivo and that the R at position 54 also contributed to Bcd function in vivoin vivo. None of the other amino acid differences tested made any detectable contribution, although since rescue was not complete they and other changes outside the homeodomain presumably also have minor roles.\n\nOverall the experiments are described clearly and the work confirms that the amino acids at positions 50 and 54 have made a major contribution to the evolution of Bcd functionality as inferred from several previous studies cited in the manuscript.\n\nA case is made in the Discussion sectionDiscussion section for how these amino acid changes may have facilitated the usurpation of the ancestral gene regulatory network for anterior patterning. However this study only assesses changes in the homeodomain of Bcd and therefore there appears to be an assumption that the binding sites in the target genes have not changed in sequence and nor has there been any other changes in trans. Therefore this speculation should be toned down or at least the caveats should be explained in more detail.\n\nIt would also have been interesting to determine how Otd with a Bcd homeodomain and other variants with particular amino acid substitutions performed in these assays to further test what ancestral system Bcd replaced and how this was achieved.\n\nThe Introduction sets out the case for the merits of the ASR approach to identify mutations underlying evolutionary differences. However, while ASR can be a powerful approach, I think the Introduction is too biased and there is an implication that horizontal comparisons do not generally allow the genetic changes underlying phenotypic differences to be identified (e.g. from wording such as 'differences that correlate with phenotypic differences' and 'identified allelic differences that reproduce diversity in gene expression and developmental outcomes'. On the contrary mapping approaches and functional analyses of variants between species have identified many mutations underlying population and species differences (e.g. see Martin and Orgogozo, 2013) and continue to do so. Therefore a more balanced Introduction is needed.\n\nReviewer #2:\n\nThe article by Liu et al.et al. aims to understand the evolution of the very interesting fly protein Bicoid. They use a cutting edge tool for reconstructing the most likely ancestor of it and its paralog Zen, and testing the functions of variations on the modern and ancestral proteins in establishing and patterning the anterior posterior axis. I think the work is very well done, but in the end, does not advance our knowledge of the properties and evolution of Bicoid significantly. The importance of the transition from Q50 to K50 is well known and has been for around 30 years, and it is no surprise that it is far and away the most significant change in the protein. Position 54 is also well known to have important functions.\n\nThese results should be the starting point of the paper, not the main conclusions. The really interesting thing to me is why these are not sufficient to give complete Bicoid rescue? Is it still a question of intramolecular epistasis that prevents the combination of k50 and r54 from activating all bicoid targets? If so, which sites are involved? Or is something else going on? Perhaps the cis-regulatory elements in D., melanogaster have coevolved with the Drosophila Bcd homeodomain? I realize testing the latter hypothesis is outside the scope of the approach of this paper, but a more systematic probing of the potential of interactions among residues within the homeodomain with the two large effect changes could support or eliminate the intramolecular epistasis hypothesis, and could give more support to searching for other explanations.\n\nAs it stands I feel that the field would not be advanced significantly by this work, since we are still at the point of knowing that q50 to k50 led to a big change in the sequences bound by Bicoid, but we have no further understanding of how this led to Bicoid becoming the anterior determinant of the cyclorrhaphans.\n\nReviewer #3:\n\nI think this is an exemplary paper. As the authors explain in their very eloquent Introduction, incorporating explicit phylogenetic structure and ancestral character reconstruction into comparative studies produces much more rigorous results than simple pairwise comparisons between species. This is as true for development as it is for morphology and DNA sequences, but unfortunately the application of phylogenetic approaches is much rarer in evo-devo studies than in other sub-fields of evolutionary biology \u2013 \u2013 due at least in part to the difficulty of collecting appropriate data, but also perhaps to cultural factors. This paper raises the bar in both respects. The authors have performed a very nicely structured comparison of reconstructed ancestral proteins to investigate how their function evolved through time on a defined evolutionary lineage. At the same time, they have integrated a wealth of in vivoin vivo, in vitro, and biophysical data to characterize the functions of both extant and ancestral proteins. The result is a very thorough and rigorous paper. In some respects, the results are not entirely surprising \u2013 \u2013 the single mutation that was found to play by far the largest role in the evolution of protein function is the one that has been hypothesized to do just that for decades. However, in addition to confirming the role of this mutation, the authors were able to quantify its contribution to phenotypic change at different levels of biological organization (from binding affinity/occupancy rate to target gene expression to morphological phenotype), identify a second AA substitution that acts in concert with it, and to rule out the role of multiple other fixed AA changes (within the limits of their assays, of course). So the exceptionally laborious approach taken by the authors has paid off.\n\n[The decision letter after re-review follows.]\n\nAs you know, the initial reviews and discussion identified this as interesting and unusually rigorous work demonstrating the phenotypic effects of lineage specific amino acid substitutions in flies. However, concerns were also expressed about the novelty of this work and impact on the field given that the amino acids tested had previously been suggested to be involved in the trait studied. After much debate, I decided initially to reject this work based on these grounds. You have done a great job highlighting the differences between this prior work and your new findings in the comprehensive response to reviewers and appeal letter. After consulting with all three of the original reviewers, we agree that the changes to the manuscript address our concerns. I am thus happy to now accept this work for publication.\n",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1cade2ae-f0f5-45a4-ad3d-a461e2cce120",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C1",
+      "claim": "Bicoid (Bcd) has a central role in anterior-posterior patterning in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use ancestral protein reconstruction, biochemical experiments, and developmental assays of transgenic animals carrying reconstructed ancestral genes to investigate how the transcription factor Bicoid (Bcd) evolved its central role in anterior-posterior patterning in flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as the subject of investigation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "cd43be7f-3e59-4aae-898c-508f5d57b4f0",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C2",
+      "claim": "Most of Bcd's derived functions are attributable to evolutionary changes within its homeodomain (HD) during a phylogenetic interval >140 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that most of Bcd's derived functions are attributable to evolutionary changes within its homeodomain (HD) during a phylogenetic interval >140 million years ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "b52be4a2-3b8b-44ba-8220-f0939a971fc5",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C3",
+      "claim": "A single substitution Q50K accounts almost entirely for the evolution of Bcd's derived DNA specificity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "A single substitution from this period (Q50K) accounts almost entirely for the evolution of Bcd's derived DNA specificity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by PBM and EMSA data in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "09968a88-11fe-42ac-bc03-4a99a7b16fb8",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C4",
+      "claim": "In transgenic embryos expressing the reconstructed ancestral HD, Q50K confers activation of only a few of Bcd's transcriptional targets and yields a very partial rescue of anterior development.",
+      "claim_type": "EXPLICIT",
+      "source": "In transgenic embryos expressing the reconstructed ancestral HD, however, Q50K confers activation of only a few of Bcd's transcriptional targets and yields a very partial rescue of anterior development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by transgenic experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "8e633c49-946d-4e07-a211-ce825e287499",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C5",
+      "claim": "Adding a second historical substitution (M54R) confers regulation of additional Bcd targets and further rescues anterior development.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding a second historical substitution (M54R) confers regulation of additional Bcd targets and further rescues anterior development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by transgenic experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "ec8881a9-4928-41f6-9218-6e942766fe29",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C6",
+      "claim": "Two epistatically interacting mutations played a major role in the evolution of Bcd's controlling regulatory role in early development.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that two epistatically interacting mutations played a major role in the evolution of Bcd's controlling regulatory role in early development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract based on the experimental findings regarding Q50K and M54R.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "ccf1004f-0ff4-408e-b726-548e741fa788",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C7",
+      "claim": "In Drosophila melanogaster and other cyclorrhaphan flies, AP patterning depends on an anterior gradient of Bicoid (Bcd).",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster and other cyclorrhaphan flies \u2013 a large taxonomic group that appeared >140 Mya (Grimaldi and Engel, 2005) \u2013 AP patterning depends on an anterior gradient of Bicoid (Bcd), a transcription factor translated in the embryo from maternally deposited, anteriorly localized mRNA (Driever and N\u00fcsslein-Volhard, 1988a; Driever and N\u00fcsslein-Volhard, 1988b; Berleth et al., 1988; Little and Wieschaus, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "5d93d7d6-4939-4ee6-b576-b4032a415b11",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C8",
+      "claim": "Cyclorrhaphan flies appeared >140 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster and other cyclorrhaphan flies \u2013 a large taxonomic group that appeared >140 Mya (Grimaldi and Engel, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Grimaldi and Engel, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "c2d2a1c8-b3e2-4d77-a8eb-979e0bd54df3",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C9",
+      "claim": "Embryos lacking Bcd fail to produce any head or thoracic structures, and duplicate posterior structures are formed in the embryo's anterior.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos lacking Bcd fail to produce any head or thoracic structures, and duplicate posterior structures are formed in the embryo's anterior ([Frohnh\u00f6fer and N\u00fcsslein-Volhard, 1986]; see also Figure 1\u2014figure supplement 1 panels K, L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and reference to figure panels showing the phenotype.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "71aa350c-3528-4805-ab45-0d22ca88af42",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C10",
+      "claim": "Bcd directly regulates transcription of dozens of target genes by using its homeodomain (HD) to bind specific cis-regulatory DNA sequences, particularly variants of the canonical motif TAATCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Bcd directly regulates transcription of dozens of target genes (McGregor et al., 2007; Chen et al., 2012; Driever et al., 1989; Struhl et al., 1989) by using its homeodomain (HD) to bind specific cis-regulatory DNA sequences, particularly variants of the canonical motif TAATCC, with flanking sequences providing some additional specificity (Driever et al., 1989; Struhl et al., 1989; Noyes et al., 2008; Treisman et al., 1989; Dave et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "b9025434-83fb-4bbd-8b8c-345e8b182def",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C11",
+      "claim": "Bcd binds the 3' untranslated region of the messenger RNA of Caudal (Cad) and represses its translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Bcd also binds the 3' untranslated region of the messenger RNA of Caudal (Cad), a transcription factor involved in development of the posterior end, and represses its translation (Chan and Struhl, 1997; Rivera-Pomar et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "6bd77f4e-e11e-4966-9b04-6f21b4f64a2a",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C12",
+      "claim": "In some insect taxa outside the Cyclorrhapha, the gene regulatory network that carries out AP development is similar to that in D. melanogaster, but its anterior deployment is controlled not by Bcd but by other upstream transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In some insect taxa outside the Cyclorrhapha \u2013 such as beetles, wasps, and midges \u2013 the gene regulatory network that carries out AP development is similar to that in D. melanogaster, but its anterior deployment is controlled not by Bcd but by other upstream transcription factors (Brent et al., 2007; Klomp et al., 2015; Lynch et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "efb47ec6-dde1-454e-a268-1025c32d6409",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C13",
+      "claim": "Bcd is unique to cyclorrhaphan flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Bcd is unique to cyclorrhaphan flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "a293b733-56ce-4d71-8afa-c52ccac39367",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C15",
+      "claim": "Bcd's developmental role, anterior localization, and DNA specificity all appear to be derived evolutionary features.",
+      "claim_type": "EXPLICIT",
+      "source": "Bcd's developmental role, anterior localization, and DNA specificity all appear to be derived evolutionary features, whereas many of Zen's appear to be ancestral (Schmidt-Ott et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "a16c41ec-316f-496c-acc5-6bdb83ada641",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C16",
+      "claim": "Neither Hox3 nor Zen is anteriorly localized in the embryo or involved in establishing AP polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, neither Hox3 nor Zen is anteriorly localized in the embryo or involved in establishing AP polarity, and both seem to play conserved roles in extraembryonic tissue formation (Rafiqi et al., 2008; Rafiqi et al., 2010; van der Zee et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "a16d08be-560c-4313-9501-f83a6238b3b0",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C17",
+      "claim": "Both Hox3 and Zen strongly prefer the consensus DNA motif TAATTA over Bcd's TAATCC consensus motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Hox3 and Zen strongly prefer the consensus DNA motif TAATTA over Bcd's TAATCC consensus motif (Noyes et al., 2008; Berger et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "e9f1fe5c-dbbf-4040-9cb1-5f676ebf0e03",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C18",
+      "claim": "Neither Hox3 nor Zen regulates Cad translation.",
+      "claim_type": "EXPLICIT",
+      "source": "and neither regulates Cad translation (Schoppmeier et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "4046ff57-7f25-49a3-9f26-a5ca71205226",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C19",
+      "claim": "K50 is present in several HD proteins that bind canonical target sites similar to Bcd's, but HDs that prefer Zen-like motifs contain a glutamine at this position (Q50).",
+      "claim_type": "EXPLICIT",
+      "source": "K50 is present in several HD proteins that bind canonical target sites similar to Bcd's, but HDs that prefer Zen-like motifs contain a glutamine at this position (Q50).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge based on prior biochemical studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "b7195c03-d47b-47bd-bb38-8058bc28bc2e",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C20",
+      "claim": "Biochemical studies have shown that swapping Q50 and K50 between extant HDs affects relative affinity for Bcd-like and Zen-like target sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies have shown that swapping these two states between extant HDs affects relative affinity for these target sequences and suggest potential structural mechanisms for this effect (Noyes et al., 2008; Treisman et al., 1989; Ades and Sauer, 1994; Hanes and Brent, 1989; Niessing et al., 2000; Percival-Smith et al., 1990; Schier and Gehring, 1993; Baird-Titus et al., 2006; Otting et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "417d5ba4-db90-4bea-bbbb-2282914977ab",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C21",
+      "claim": "An arginine at site 54 (R54) has been shown to affect DNA and RNA recognition in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Other residues in the protein's recognition helix, including an arginine at site 54 (R54) have also been shown to affect DNA and RNA recognition in vitro (Dave et al., 2000; Niessing et al., 2000; Hanes and Brent, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "210e9eba-701d-4cd0-a451-3f0448d06c3e",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C22",
+      "claim": "Introducing Q50K into D. melanogaster Fushi tarazu (Ftz) does not confer activation of any Bcd targets in fly embryos or cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The only prior manipulative study to examine the in vivo effects of Q50K on Bcd function introduced this mutation into D. melanogaster Fushi tarazu (Ftz), a distantly related HD protein, and found that Q50K does not confer activation of any Bcd targets in fly embryos (Schier and Gehring, 1993) or cultured cells (Zhao et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "26dc91a2-9cbb-42ef-bd8d-41ed598b49f4",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C23",
+      "claim": "Replacing the HD of D. melanogaster Bcd with that of orthodenticle (otd) abolishes activation of most of Bcd's targets and does not rescue anterior development in transgenic embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study found that replacing the HD of D. melanogaster Bcd with that of orthodenticle (otd), which also contains K50 and many other sequence differences, abolishes activation of most of Bcd's targets and does not rescue anterior development in transgenic embryos, suggesting that this residue is not sufficient to account for most of the regulatory functions of the Bcd HD (Datta et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "a07613bd-122f-4e15-9bdb-beb13fd24be2",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C24",
+      "claim": "The wild-type D. melanogaster Bcd transgene (DmBcd) rescued the bcdE1 phenotype by all molecular and morphological criteria, and over 95% of embryos survived to adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the wild-type D. melanogaster Bcd transgene (DmBcd) rescued the bcdE1 phenotype by all molecular and morphological criteria, and over 95% of embryos survived to adulthood (Figure 1A\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1A-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "a55d846e-64f4-46aa-81ef-ec6fd4d3e06e",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C25",
+      "claim": "Drosophila Zen (DmZen) failed to rescue any aspect of the bcd-null phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Drosophila Zen (DmZen) failed to rescue any aspect of the bcd-null phenotype (Figure 1K\u2013T compared to Figure 1\u2014figure supplement 1K\u2013T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1K-T.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "c89cf4f5-070a-4060-81f6-e5e67f477eb8",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C26",
+      "claim": "When DmZen was modified by replacing only its HD with that from D.melanogaster Bcd (DmZen-BcdHD), substantial rescue of morphological and regulatory phenotypes was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When DmZen was modified by replacing only its HD with that from D.melanogaster Bcd (DmZen-BcdHD, Figure 1U\u2013DD), we observed substantial rescue of morphological and regulatory phenotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1U-DD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "10f62b6e-172a-4e31-b17e-b593f6e35305",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C27",
+      "claim": "A reciprocal construct of the Bcd coding sequence containing the Zen HD (DmBcd-ZenHD) conferred no rescue of any developmental or gene regulatory phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a reciprocal construct of the Bcd coding sequence containing the Zen HD (DmBcd-ZenHD) conferred no rescue of any developmental or gene regulatory phenotypes (Figure 1, Figure 1\u2014figure supplement 1U\u2013DD).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1U-DD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "d8a260ee-49ed-40cc-9f84-bf345280223a",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C28",
+      "claim": "Sequence differences within the HD are sufficient to explain a major portion of the Bcd protein's anterior patterning and gene regulatory activities in present-day D. melanogaster embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence differences within the HD are therefore sufficient to explain a major portion of the Bcd protein's anterior patterning and gene regulatory activities in present-day D. melanogaster embryos, with much smaller contributions from differences elsewhere in the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the transgenic experiments with HD swaps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "cb3e8200-c32b-4352-95d6-2945f4ace07b",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C30",
+      "claim": "A burst of rapid evolution occurred in the Bcd HD after the duplication, whereas Zen's HD continued to evolve at a slower rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenies' branch lengths suggest that a burst of rapid evolution occurred in the Bcd HD after this duplication, whereas Zen's HD continued to evolve at a slower rate (Figure 2; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "3c5f6e28-ab72-4cbb-8d8c-5588fca1f003",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C31",
+      "claim": "AncZB and AncBcd HD differ at 31 amino acid positions.",
+      "claim_type": "EXPLICIT",
+      "source": "AncZB and AncBcd HD differ at 31 amino acid positions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "64431de4-66bc-4e78-b3af-5f231c90d9dc",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C32",
+      "claim": "AncBcd's overall occupancy of DNA motifs was very similar to that of D. melanogaster Bcd (r = 0.94).",
+      "claim_type": "EXPLICIT",
+      "source": "AncBcd's overall occupancy of DNA motifs was very similar to that of D. melanogaster Bcd (r = 0.94, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on PBM data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "4df3dbae-3bf1-49a3-9009-6140ebaeb0ea",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C33",
+      "claim": "The correlation between the sequences bound by AncBcd and those bound by AncZB was far weaker (r = 0.56).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the correlation between the sequences bound by AncBcd and those bound by AncZB was far weaker (r = 0.56, Figure 3B), with thousands of target sequences changing in relative occupancy between AncZB and AncBcd.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on PBM data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "d2507908-cc87-42fb-b54a-5cdb6a3b80aa",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C34",
+      "claim": "Bcd's present-day global specificity is a derived state that evolved on the phylogenetic branch after duplication of AncZB but before the last common ancestor of cyclorrhaphan flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Bcd's present-day global specificity is therefore a derived state that evolved on the phylogenetic branch after duplication of AncZB but before the last common ancestor of cyclorrhaphan flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the PBM data comparing AncBcd, AncZB, and DmBcd.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "5072dc77-2bd0-4f7c-8b7f-c51a0f39c2aa",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C35",
+      "claim": "AncZB, AncBcd, and DmBcd all share the core consensus motif TAAT (positions 1\u20134), but with some degeneracy.",
+      "claim_type": "EXPLICIT",
+      "source": "AncZB, AncBcd, and DmBcd all share the core consensus motif TAAT (positions 1\u20134), but with some degeneracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on energy logos derived from PBM data shown in Figure 3C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "b7203004-77c0-4fbe-b280-fed667b22afb",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C36",
+      "claim": "The major differences in DNA binding between AncZB and AncBcd/DmBcd are at positions 5 and 6: AncZB prefers T or G at position 5 and A or G at position 6, but AncBcd and DmBcd strongly prefer sequences containing CC at these two positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The major differences are at positions 5 and 6: AncZB prefers T or G at position 5 and A or G at position 6 (Figure 3C), but AncBcd and DmBcd strongly prefer sequences containing CC at these two positions (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on energy logos derived from PBM data shown in Figure 3C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "f82c4aca-993e-4587-8f4e-19cae75b79d6",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C37",
+      "claim": "Relative preference for Bcd motifs increased dramatically across the interval from AncZB and AncBcd, with affinity for BM increasing 25-fold and that for ZM declining by a factor of 10.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that relative preference for Bcd motifs increased dramatically across the interval from AncZB and AncBcd, with affinity for BM increasing 25-fold and that for ZM declining by a factor of 10 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on F-EMSA data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "ddd54f01-89ab-4125-b20a-5dbcf1c6a42a",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C38",
+      "claim": "Changes in affinity between AncZB and AncBcd were caused primarily by changes in dissociation rates: AncBcd's off-rate from BM was 66-fold slower than AncZB's, and its off-rate from ZM was three times faster.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in affinity were caused primarily by changes in dissociation rates: AncBcd's off-rate from BM was 66-fold slower than AncZB's, and its off-rate from ZM was three times faster; changes in on-rates were small (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on SPR data shown in Figure 3\u2014figure supplement 2 and Supplementary file 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "e914269f-a6b7-459a-a19c-fa0cbeacbc97",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C39",
+      "claim": "Between AncZB and AncBcd, residence time on BM increased by 70-fold, while that on ZM declined by a factor of 3.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, there was a strong evolutionary shift in average residence times on the two motifs: between AncZB and AncBcd, residence time on BM increased by 70-fold, while that on ZM declined by a factor of 3 (Figure 3\u2014figure supplement 2, Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on SPR data shown in Figure 3\u2014figure supplement 2 and Supplementary file 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "eda49470-b736-4c5f-8182-a92fc91b95fc",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C40",
+      "claim": "The reconstructed AncBcd HD yielded a phenotype indistinguishable from that of the DmBcd transgene, with essentially complete morphological rescue, activation of all Bcd targets, and repression of Cad, with 37% of embryos surviving to adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstructed AncBcd HD yielded a phenotype indistinguishable from that of the DmBcd transgene, with essentially complete morphological rescue (Figure 3G,H), activation of all Bcd targets (Figure 3J\u2013P), and repression of Cad (Figure 3I), with 37% of embryos surviving to adulthood.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transgenic experiments shown in Figure 3G-P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "b3dd38fd-b74c-42a9-9ead-4116f9fea517",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C41",
+      "claim": "When the AncZB HD was swapped into the DmBcd construct, no morphological or molecular rescue was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the AncZB HD was swapped into the same construct, no morphological or molecular rescue was observed (Figure 3Q\u2013Z).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transgenic experiments shown in Figure 3Q-Z.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "da433102-654e-4865-a8ae-df16a5b7d1b3",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C42",
+      "claim": "The derived in vivo functions of the Bcd homeodomain evolved almost entirely during the interval after duplication of AncZB but before AncBcd.",
+      "claim_type": "EXPLICIT",
+      "source": "The derived in vivo functions of the Bcd homeodomain \u2013 including its capacity to regulate key developmental target genes and to specify formation of cephalic and thoracic structures in anterior regions of the embryo \u2013 therefore evolved almost entirely during the interval after duplication of AncZB but before AncBcd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the transgenic experiments with AncBcd and AncZB HDs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "6c0b047e-d846-47f8-8bd7-70e83e581fa6",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C43",
+      "claim": "Eleven of the 31 amino acid substitutions that occurred between AncZB and AncBcd are phylogenetically diagnostic, with the AncBcd state conserved in all descendant Bcd proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven of the 31 amino acid substitutions that occurred between AncZB and AncBcd are phylogenetically diagnostic, with the AncBcd state conserved in all descendant Bcd proteins (Figure 2B); these diagnostic substitutions constitute an initial set of candidate causal changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phylogenetic analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "a533bfbe-3583-419c-8c5c-59a43e4b013d",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C44",
+      "claim": "Only one reversal \u2013 changing lysine 50 back to the ancestral glutamine (K50q) \u2013 shifted the protein's preference for BM back toward ZM; this reversion caused a 38-fold change in relative affinity and restored the ancestral preference for ZM.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one reversal \u2013 changing lysine 50 back to the ancestral glutamine (K50q) \u2013 shifted the protein's preference for BM back toward ZM; this reversion caused a 38-fold change in relative affinity and restored the ancestral preference for ZM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on F-EMSA data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "323ea993-1e08-4c64-a921-0d8af02b504b",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C45",
+      "claim": "Mutating arginine (R) to the ancestral methionine (m) at position 54 (R54m) had no effect on relative preference, but it lowered affinity to both BM and ZM by a factor of ~15.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating arginine (R) to the ancestral methionine (m) at position 54 (R54m) \u2013 had no effect on relative preference, but it lowered affinity to both BM and ZM by a factor of ~15 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on F-EMSA data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "f0f87682-54aa-451a-9a14-2e59da551f27",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C46",
+      "claim": "Substitution q50K was sufficient to cause the entire historical shift in in vitro DNA preference from ZM to BM.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution q50K had a very large effect, shifting the ancestral protein's relative binding preference by four orders of magnitude, increasing affinity for BM 100-fold and reducing that for ZM by a factor of 100 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on F-EMSA data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "9b8f36a3-0e79-461a-b11b-1b05dc293a30",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C47",
+      "claim": "Simultaneously introducing into AncZB all 30 other substitutions from this interval except q50K (construct AncBcd-K50q) caused no improvement in affinity for BM and just a seven-fold reduction in affinity to ZM.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, simultaneously introducing into AncZB all 30 other substitutions from this interval except q50K (construct AncBcd-K50q) caused no improvement in affinity for BM and just a seven-fold reduction in affinity to ZM (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on F-EMSA data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "0388407c-8332-4d2a-bd78-ca83de0a8eb0",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C48",
+      "claim": "Substitution m54R alone increased affinity for both ZM and BM, but in the presence of q50K, it had no significant effect, indicating an epistatic interaction by which q50K silences the effect of m54R.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution m54R alone increased affinity for both ZM and BM, but in the presence of q50K, it had no significant effect, indicating an epistatic interaction by which q50K silences the effect of m54R (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on F-EMSA data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "e2143aba-5e1d-46c0-8488-613939c1b16a",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C49",
+      "claim": "The single substitution q50K was sufficient to cause the entire historical shift in in vitro DNA preference from ZM to BM, whereas m54R did not make an observable contribution to the new specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the single substitution q50K was sufficient to cause the entire historical shift in in vitro DNA preference from ZM to BM, whereas m54R did not make an observable contribution to the new specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the F-EMSA data in Figure 4A-B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "4a0c0e33-4108-4bef-a11f-6b7843329866",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C50",
+      "claim": "Substitution q50K shifted the overall enrichment and de-enrichment across all oligomers to be extremely similar to those bound by AncBcd (r = 0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "This substitution shifted the overall enrichment and de-enrichment across all oligomers to be extremely similar to those bound by AncBcd (Figure 4C, r = 0.93, compared to r = 0.56 for the correlation of AncZB and AncBcd (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on PBM data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "2354aefe-c572-41f0-a8f0-950fc91a4c75",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C51",
+      "claim": "Substitution q50K transformed the binding-energy logo of AncZB into one almost identical to that of AncBcd, with the 'CC' dinucleotide strongly favored at positions 5 and 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution q50K also transformed the binding-energy logo of AncZB into one almost identical to that of AncBcd, with the 'CC' dinucleotide strongly favored at positions 5 and 6 and the ancestrally preferred bases now de-enriched (Figure 4D, compared to Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on PBM data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "14f2bce7-3cec-410c-bb0f-6c935f7ba1aa",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C52",
+      "claim": "Substitution q50K was the primary determinant of the evolutionary shift in in vitro DNA-binding preferences that occurred during the transition from AncZB to AncBcd.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that substitution q50K was the primary determinant of the evolutionary shift in in vitro DNA-binding preferences that occurred during the transition from AncZB to AncBcd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the PBM and F-EMSA data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "2325cd80-f5e4-4a42-a351-efb8fc8d291d",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C53",
+      "claim": "The other 30 substitutions that occurred on this branch, including m54R, had very minor effects on the in vitro DNA-binding specificity of the evolving HD.",
+      "claim_type": "EXPLICIT",
+      "source": "The other 30 substitutions that occurred on this branch, including m54R, had very minor effects on the in vitro DNA-binding specificity of the evolving HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the PBM and F-EMSA data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "6810a560-3cde-45d5-997e-2da14a83e604",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C54",
+      "claim": "Reversing only q50K (AncBcdHD-K50q) completely abolished the rescue conferred by AncBcd HD: larval cuticles were similar to bcd-null embryos, expression of Bcd's transcriptional targets was completely lost, and Cad translation was no longer repressed.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that reversing only q50K (AncBcdHD-K50q) completely abolished the rescue conferred by AncBcd HD: larval cuticles were similar to bcd-null embryos (Figure 5A,B), expression of Bcd's transcriptional targets was completely lost (Figure 5D\u2013J), and Cad translation was no longer repressed (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transgenic experiments shown in Figure 5A-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "18a3fafb-aa53-40c8-8f81-3275b51362e4",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C55",
+      "claim": "Substitution q50K was necessary for evolution of the developmental and gene regulatory functions of the Bcd HD.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution q50K was therefore necessary for evolution of the developmental and gene regulatory functions of the Bcd HD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the transgenic experiments shown in Figure 5A-J.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "11825e64-f97a-4e42-a713-daaa92cf813a",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C56",
+      "claim": "Introducing the derived lysine into the AncZB HD (q50K) resulted in partial rescue: ectopic filzk\u00f6rper formation was suppressed, and all eight abdominal segments were formed in ~90% of the embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed partial rescue (Figure 5K\u2013T). Ectopic filzk\u00f6rper formation was suppressed, and all eight abdominal segments were formed in ~90% of the embryos (Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transgenic experiments shown in Figure 5K-T and Supplementary file 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "ccb7ae36-8975-40a7-a011-b5fc580e496a",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C57",
+      "claim": "Embryos with AncZB HD plus q50K failed to form anterior thoracic segments (T1 and T2) and any head structures.",
+      "claim_type": "EXPLICIT",
+      "source": "These embryos failed to form anterior thoracic segments (T1 and T2) and any head structures (Figure 5K,L, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transgenic experiments shown in Figure 5K-L and Supplementary file 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "224c18d2-ba00-4552-97b8-ea6cea67c787",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C58",
+      "claim": "Of Bcd's seven transcriptional targets, three (hb, kni, and eve stripe 2) were activated by AncZB HD plus q50K, but four (gt, otd, ems, and btd) were not.",
+      "claim_type": "EXPLICIT",
+      "source": "Of Bcd's seven transcriptional targets, three (hb, kni, and eve stripe 2) were activated, but four (gt, otd, ems, and btd) were not (Figure 5N\u2013T), and Cad translation was not repressed (Figure 5M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transgenic experiments shown in Figure 5M-T.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "2f8fb8b6-f751-4b99-8f23-58fcc63836d0",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C59",
+      "claim": "q50K partially accounts for the evolution of Bcd's role in development and gene regulation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, q50K partially accounts for the evolution of Bcd's role in development and gene regulation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the transgenic experiments shown in Figure 5K-T.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "514c901e-8909-472c-a639-c6b6563f5a37",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C60",
+      "claim": "Introducing m54R alone into AncZB HD conferred no observable rescue of developmental or gene regulatory phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing m54R alone into AncZB HD conferred no observable rescue of developmental or gene regulatory phenotypes (Figure 5U\u2013DD).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transgenic experiments shown in Figure 5U-DD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "7e5478d9-3db5-48a1-8402-2afa2107c131",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C61",
+      "claim": "Introducing m54R together with q50K yielded a notably more complete rescue than q50K alone: all larvae carrying the double substitution contained T3 and all eight abdominal segments, >80% also contained T2, and >50% formed anterior structures similar to the sclerotized structures of the internal cephalic skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing m54R together with q50K, however, yielded a notably more complete rescue than q50K alone: all larvae carrying the double substitution contained T3 and all eight abdominal segments,>80% also contained T2, and >50% formed anterior structures similar to the sclerotized structures of the internal cephalic skeleton (Figure 5EE,FF; Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transgenic experiments shown in Figure 5EE-FF and Supplementary file 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "e06c5ee0-9fbc-4dc5-9adc-9bd7419a29d0",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C62",
+      "claim": "Compared to the single q50K substitution, two additional Bcd-dependent transcriptional targets, gt and otd, were activated by the double substitution q50K/m54R.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the single q50K substitution, two additional Bcd-dependent transcriptional targets, gt and otd, were activated (Figure 5HH\u2013KK,NN), but two others, btd and ems, remained silent (Figure 5LL,MM), and Cad translation was still not repressed in the anterior (Figure 5GG).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transgenic experiments shown in Figure 5GG-NN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "1ea84b85-89de-4306-9b22-b3aaa91e9427",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C63",
+      "claim": "There is an epistatic interaction between m54R and q50K in vivo, in which m54R has an effect only when introduced together with q50K.",
+      "claim_type": "EXPLICIT",
+      "source": "These data point to an epistatic interaction between m54R and q50K in vivo, in which m54R has an effect only when introduced together with q50K; this interaction differs from that observed in vitro, where m54R affects affinity in isolation but not in combination with q50K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparing the transgenic experiments in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "ec0dab08-b9c5-4bbd-b2b5-5ea92646b0d4",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C64",
+      "claim": "Just two large-effect substitutions \u2013 q50K and m54R \u2013 are sufficient in the ancestral HD to recapitulate the evolution of major aspects of the Bcd HD's derived function, including regulation of many target genes and partial specification of anterior structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, just two large-effect substitutions \u2013 q50K and m54R \u2013 are sufficient in the ancestral HD to recapitulate the evolution of major aspects of the Bcd HD's derived function, including regulation of many target genes and partial specification of anterior structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the transgenic experiments in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "97aded20-33b8-48b4-8a59-f3c46ae38044",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C65",
+      "claim": "Compared to the phenotype of AncBcd-HD, the rescue conferred by q50K and m54R is incomplete, with several targets remaining unregulated and anterior development still compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the phenotype of AncBcd-HD, the rescue conferred by these two substitutions is incomplete, with several targets remaining unregulated and anterior development still compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparing the transgenic experiments in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "610aac64-6b09-416d-9e93-8bbade540052",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C66",
+      "claim": "Additional contributions must have been made by some of the other historical substitutions in the HD during the interval between AncZB and AncBcd.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional contributions must therefore have been made by some of the other historical substitutions in the HD during the interval between AncZB and AncBcd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the incomplete rescue by q50K and m54R compared to AncBcd.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "66081972-f460-456d-a4f4-1613380029c2",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C67",
+      "claim": "The difference observed between the in vitro and in vivo contributions of the key historical substitutions indicates that the evolution of Bcd's developmental functions cannot be explained entirely by a shift in binding to canonical ZM and BM.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference we observed between the in vitro and in vivo contributions of the key historical substitutions indicates that the evolution of Bcd's developmental functions cannot be explained entirely by a shift in binding to canonical ZM and BM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparing the in vitro and in vivo results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "1d3583b3-275e-42bb-be85-aec0a330b533",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C68",
+      "claim": "Q50K causes the entire shift in preference measured in vitro, but it accounts for a relatively small portion of the HD's in vivo evolution \u2013 activation of three of seven major transcriptional target genes, and only a very limited rescue of anterior development.",
+      "claim_type": "EXPLICIT",
+      "source": "Q50K causes the entire shift in preference measured in vitro, but it accounts for a relatively small portion of the HD's in vivo evolution \u2013 activation of three of seven major transcriptional target genes, and only a very limited rescue of anterior development; two of these, hb and eve2, are the same targets that are activated by a construct of the D. melanogaster bcd gene containing the otd HD, which also contains K50 (Datta et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the in vitro and in vivo results, with a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "d84d0eec-5fbf-4794-90ce-42b34d420c38",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C69",
+      "claim": "Adding M54R to Q50K had no further effect on preference or affinity in vitro, but it conferred a notably more complete rescue in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding M54R to Q50K had no further effect on preference or affinity in vitro, but it conferred a notably more complete rescue in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparing the in vitro and in vivo results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "00322531-9375-43a7-8d67-7f430aa104af",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C70",
+      "claim": "The AncZB-Q50K/M54R construct showed no detectable inhibition of Cad in vivo, indicating that M54R's effects are mediated by some other mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Residue Arg54 has been proposed to be critical for Cad inhibition (Niessing et al., 2000), but the AncZB-Q50K/M54R construct showed no detectable inhibition of Cad in vivo, indicating that M54R's effects are mediated by some other mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the transgenic experiments shown in Figure 5GG and a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "fb0bf1b6-3c5c-4b11-960e-8c1adbb5002d",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C71",
+      "claim": "RNAs from all transgenes were anteriorly localized in a fashion indistinguishable from the endogenous bcd mRNA pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAs from all transgenes were anteriorly localized in a fashion indistinguishable from the endogenous bcd mRNA pattern (Figure 1\u2014figure supplement 1EE-GG).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in situ hybridization data shown in Figure 1\u2014figure supplement 1EE-GG.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "d72c0223-f87b-4eea-bc7d-ca8d279d083e",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C72",
+      "claim": "Both AncZB and AncBcd HD sequences are reconstructed with little statistical ambiguity (mean posterior probability = 0.970 and 0.986, with only 3 and 2 sites ambiguously reconstructed in AncZB and AncBcd, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Both sequences are reconstructed with little statistical ambiguity (mean posterior probability = 0.970 and 0.986, with only 3 and 2 sites ambiguously reconstructed in AncZB and AncBcd, respectively (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the ancestral sequence reconstruction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "4c6a2b59-db49-4f69-9abe-ab4824df5f7a",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C73",
+      "claim": "PBMs performed using alternative reconstructions of AncBcd and AncZB yielded almost identical results to the maximum likelihood reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings were robust to uncertainty about the sequences of the ancestral HDs: PBMs performed using alternative reconstructions of AncBcd and AncZB, which incorporated plausible alternative amino acid states at all ambiguously reconstructed sites (Eick et al., 2017), yielded almost identical results (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PBM data using alternative reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "ab0543ee-5319-4838-8a23-677c32af14d0",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "claim_id": "C74",
+      "claim": "Alternative reconstructions of AncZB and AncBcd HDs yielded nearly identical results in F-EMSA experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternative reconstructions of AncZB and AncBcd HDs yielded nearly identical results (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on F-EMSA data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ce0abb00-da22-419f-b689-4ed3899b8f67",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The homeodomain (HD) of Bicoid is sufficient to confer most of its developmental and gene regulatory functions in D. melanogaster. Swapping the Bcd HD into Zen rescues most Bcd functions, while the reciprocal swap (Zen HD into Bcd) abolishes rescue, demonstrating that sequence differences within the HD account for the majority of Bcd's anterior patterning activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 provide strong experimental evidence from transgenic rescue assays showing that the HD is the primary determinant of Bcd function. The data include positive controls (DmBcd), negative controls (DmZen, DmBcd-ZenHD), and the critical chimeric construct (DmZen-BcdHD) that demonstrates sufficiency. Multiple phenotypic readouts (morphology, gene expression, survival) support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "67d94cc2-d76e-4130-b9d6-0f536dc8c0ed",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The derived functions of the Bcd homeodomain evolved during the phylogenetic interval between the duplication of AncZB and the last common ancestor of cyclorrhaphan flies (AncBcd). AncBcd HD fully rescues Bcd function in transgenic embryos, while AncZB HD does not, and the DNA-binding specificity shifted dramatically during this interval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C42 combine phylogenetic reconstruction (C30-C31, C72), in vitro DNA-binding data (C32-C34), and in vivo transgenic experiments (C40-C42) to localize the functional evolution to a specific phylogenetic branch. The ancestral reconstructions have high statistical confidence (C72), and alternative reconstructions yield consistent results (C73-C74), strengthening the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "c52dcb63-a2b9-43a8-a65d-66716b09a240",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A single amino acid substitution, Q50K, accounts almost entirely for the evolutionary shift in Bcd's DNA-binding specificity in vitro. This substitution alone recapitulates the change in preference from Zen-like (TAATTA) to Bcd-like (TAATCC) motifs, while the other 30 substitutions have minimal effects on DNA specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C43-C53 provide comprehensive in vitro evidence from multiple assays (F-EMSA, PBM, SPR) demonstrating that Q50K is both necessary (C44) and sufficient (C46-C51) for the DNA specificity shift. The data show quantitative changes in affinity (25-100 fold), correlation coefficients (r=0.93), and binding energy logos. The epistatic interaction with M54R is documented (C48), showing M54R has no effect in vitro when combined with Q50K.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "ad01f947-1d25-497d-913f-5b8686c661a6",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In vivo, Q50K is necessary for Bcd HD function but only partially sufficient, conferring activation of 3 of 7 transcriptional targets and partial rescue of anterior development. Reversing Q50K in AncBcd abolishes all rescue, while introducing Q50K into AncZB activates only hb, kni, and eve stripe 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C54-C59 provide strong in vivo evidence from transgenic experiments with clear phenotypic readouts. The necessity experiment (C54-C55) shows complete loss of function when Q50K is reversed. The sufficiency experiment (C56-C59) shows partial rescue with quantitative data on segment formation and specific target gene activation. The discrepancy between in vitro (complete) and in vivo (partial) sufficiency is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "a860265b-2e4e-4af2-868a-a4410fdc5bfe",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A second substitution, M54R, epistatically interacts with Q50K to confer more complete rescue of Bcd function in vivo. M54R alone has no effect, but when combined with Q50K, it activates two additional targets (gt and otd) and improves morphological rescue, demonstrating epistasis between these two substitutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C60-C64 demonstrate epistasis through systematic testing of single and double mutants in transgenic embryos. The data show M54R has no effect alone (C60) but enhances rescue when combined with Q50K (C61-C62), with quantitative phenotypic data. The epistatic interaction differs between in vitro and in vivo contexts (C63), which is explicitly noted and discussed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "80d2bde6-4427-41e5-855c-1a1b9986f7e4",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Two epistatically interacting mutations (Q50K and M54R) played a major role in the evolution of Bcd's regulatory function, but additional substitutions among the 31 changes between AncZB and AncBcd are required for complete functional evolution, as the double mutant does not fully recapitulate AncBcd function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C65-C66 synthesize the findings from the mutational analysis. The conclusion that Q50K and M54R are major contributors is well-supported by the data, and the acknowledgment that additional substitutions are needed (C65-C66) is appropriately conservative given that some targets remain unregulated and development is not fully rescued by the double mutant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "8e0ece64-fd83-48e8-ab93-31bf20205a09",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The evolution of Bcd's developmental functions cannot be explained entirely by shifts in binding to canonical DNA motifs. Q50K causes the complete in vitro specificity shift but only partial in vivo rescue, and M54R enhances in vivo function without affecting in vitro specificity, suggesting additional mechanisms beyond canonical motif recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 identify an important discrepancy between in vitro and in vivo results and propose that mechanisms beyond canonical motif binding are involved. This is supported by the data showing Q50K's complete in vitro but partial in vivo effects (C68), M54R's differential effects (C69), and the lack of Cad repression despite M54R (C70). The conclusion is appropriately cautious and acknowledges the need for additional mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "d63030fb-e564-41e2-b08b-2d71a8e06344",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The evolutionary shift in DNA-binding specificity between AncZB and AncBcd involved changes at positions 5 and 6 of the binding motif (from T/G and A/G to CC), with a 25-fold increase in affinity for Bcd motifs and 10-fold decrease for Zen motifs, driven primarily by changes in dissociation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C35-C39 characterize the biochemical nature of the evolutionary shift using multiple complementary assays (PBM energy logos, F-EMSA, SPR). The data provide quantitative measurements of affinity changes and mechanistic insights into kinetic parameters. The findings are internally consistent across different experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "aa36c27f-3595-4628-a0b4-4e96cc1a24d2",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The ancestral sequences AncZB and AncBcd are reconstructed with high statistical confidence (mean posterior probabilities 0.970 and 0.986), and alternative reconstructions yield nearly identical functional results in both in vitro and in vivo assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 address the robustness of the ancestral sequence reconstruction. The high posterior probabilities indicate strong statistical support, and the experimental validation using alternative reconstructions (C73-C74) demonstrates that the functional conclusions are not sensitive to reconstruction uncertainty. This is critical for validating the evolutionary inferences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "d5c6357c-f577-4e23-92af-8d29e4f79c94",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "All transgenic constructs show proper anterior localization of mRNA, indistinguishable from endogenous bcd mRNA pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 provides an important control showing that differences in rescue are not due to improper mRNA localization. The in situ hybridization data support this conclusion. This validates that the experimental system is testing protein function rather than expression or localization artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on Bcd's role in anterior-posterior patterning, its evolutionary origin from Hox3/Zen duplication in cyclorrhaphan flies >140 Mya, and the derived nature of its DNA-binding specificity and developmental functions compared to ancestral Zen/Hox3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C13, C15-C18 establish the biological and evolutionary context for the study. These are well-supported by citations to prior work and represent established knowledge in the field. They provide the necessary background for understanding the significance of the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    },
+    {
+      "id": "4daac494-6459-4474-8621-6ea610698123",
+      "content_id": "aaf56fd5-c19a-4ece-b80f-f5928111e303",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior biochemical studies have shown that position 50 (Q vs K) and position 54 (R) affect DNA-binding specificity in vitro, but previous in vivo studies introducing Q50K into distantly related proteins (Ftz, Otd) did not confer Bcd-like developmental functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 summarize prior work on the functional importance of specific residues. These are supported by appropriate citations and establish the rationale for the current study's focus on these positions. The negative results from prior in vivo studies (C22-C23) motivate the use of ancestral reconstruction to test these substitutions in the appropriate evolutionary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:30.202077Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a07613bd-122f-4e15-9bdb-beb13fd24be2",
+      "result_id": "ce0abb00-da22-419f-b689-4ed3899b8f67"
+    },
+    {
+      "claim_id": "a55d846e-64f4-46aa-81ef-ec6fd4d3e06e",
+      "result_id": "ce0abb00-da22-419f-b689-4ed3899b8f67"
+    },
+    {
+      "claim_id": "c89cf4f5-070a-4060-81f6-e5e67f477eb8",
+      "result_id": "ce0abb00-da22-419f-b689-4ed3899b8f67"
+    },
+    {
+      "claim_id": "10f62b6e-172a-4e31-b17e-b593f6e35305",
+      "result_id": "ce0abb00-da22-419f-b689-4ed3899b8f67"
+    },
+    {
+      "claim_id": "d8a260ee-49ed-40cc-9f84-bf345280223a",
+      "result_id": "ce0abb00-da22-419f-b689-4ed3899b8f67"
+    },
+    {
+      "claim_id": "cb3e8200-c32b-4352-95d6-2945f4ace07b",
+      "result_id": "67d94cc2-d76e-4130-b9d6-0f536dc8c0ed"
+    },
+    {
+      "claim_id": "3c5f6e28-ab72-4cbb-8d8c-5588fca1f003",
+      "result_id": "67d94cc2-d76e-4130-b9d6-0f536dc8c0ed"
+    },
+    {
+      "claim_id": "64431de4-66bc-4e78-b3af-5f231c90d9dc",
+      "result_id": "67d94cc2-d76e-4130-b9d6-0f536dc8c0ed"
+    },
+    {
+      "claim_id": "4df3dbae-3bf1-49a3-9009-6140ebaeb0ea",
+      "result_id": "67d94cc2-d76e-4130-b9d6-0f536dc8c0ed"
+    },
+    {
+      "claim_id": "d2507908-cc87-42fb-b54a-5cdb6a3b80aa",
+      "result_id": "67d94cc2-d76e-4130-b9d6-0f536dc8c0ed"
+    },
+    {
+      "claim_id": "eda49470-b736-4c5f-8182-a92fc91b95fc",
+      "result_id": "67d94cc2-d76e-4130-b9d6-0f536dc8c0ed"
+    },
+    {
+      "claim_id": "b3dd38fd-b74c-42a9-9ead-4116f9fea517",
+      "result_id": "67d94cc2-d76e-4130-b9d6-0f536dc8c0ed"
+    },
+    {
+      "claim_id": "da433102-654e-4865-a8ae-df16a5b7d1b3",
+      "result_id": "67d94cc2-d76e-4130-b9d6-0f536dc8c0ed"
+    },
+    {
+      "claim_id": "b52be4a2-3b8b-44ba-8220-f0939a971fc5",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "6c0b047e-d846-47f8-8bd7-70e83e581fa6",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "a533bfbe-3583-419c-8c5c-59a43e4b013d",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "323ea993-1e08-4c64-a921-0d8af02b504b",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "f0f87682-54aa-451a-9a14-2e59da551f27",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "9b8f36a3-0e79-461a-b11b-1b05dc293a30",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "0388407c-8332-4d2a-bd78-ca83de0a8eb0",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "e2143aba-5e1d-46c0-8488-613939c1b16a",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "4a0c0e33-4108-4bef-a11f-6b7843329866",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "2354aefe-c572-41f0-a8f0-950fc91a4c75",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "14f2bce7-3cec-410c-bb0f-6c935f7ba1aa",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "2325cd80-f5e4-4a42-a351-efb8fc8d291d",
+      "result_id": "c52dcb63-a2b9-43a8-a65d-66716b09a240"
+    },
+    {
+      "claim_id": "09968a88-11fe-42ac-bc03-4a99a7b16fb8",
+      "result_id": "ad01f947-1d25-497d-913f-5b8686c661a6"
+    },
+    {
+      "claim_id": "6810a560-3cde-45d5-997e-2da14a83e604",
+      "result_id": "ad01f947-1d25-497d-913f-5b8686c661a6"
+    },
+    {
+      "claim_id": "18a3fafb-aa53-40c8-8f81-3275b51362e4",
+      "result_id": "ad01f947-1d25-497d-913f-5b8686c661a6"
+    },
+    {
+      "claim_id": "11825e64-f97a-4e42-a713-daaa92cf813a",
+      "result_id": "ad01f947-1d25-497d-913f-5b8686c661a6"
+    },
+    {
+      "claim_id": "ccb7ae36-8975-40a7-a011-b5fc580e496a",
+      "result_id": "ad01f947-1d25-497d-913f-5b8686c661a6"
+    },
+    {
+      "claim_id": "224c18d2-ba00-4552-97b8-ea6cea67c787",
+      "result_id": "ad01f947-1d25-497d-913f-5b8686c661a6"
+    },
+    {
+      "claim_id": "2f8fb8b6-f751-4b99-8f23-58fcc63836d0",
+      "result_id": "ad01f947-1d25-497d-913f-5b8686c661a6"
+    },
+    {
+      "claim_id": "8e633c49-946d-4e07-a211-ce825e287499",
+      "result_id": "a860265b-2e4e-4af2-868a-a4410fdc5bfe"
+    },
+    {
+      "claim_id": "514c901e-8909-472c-a639-c6b6563f5a37",
+      "result_id": "a860265b-2e4e-4af2-868a-a4410fdc5bfe"
+    },
+    {
+      "claim_id": "7e5478d9-3db5-48a1-8402-2afa2107c131",
+      "result_id": "a860265b-2e4e-4af2-868a-a4410fdc5bfe"
+    },
+    {
+      "claim_id": "e06c5ee0-9fbc-4dc5-9adc-9bd7419a29d0",
+      "result_id": "a860265b-2e4e-4af2-868a-a4410fdc5bfe"
+    },
+    {
+      "claim_id": "1ea84b85-89de-4306-9b22-b3aaa91e9427",
+      "result_id": "a860265b-2e4e-4af2-868a-a4410fdc5bfe"
+    },
+    {
+      "claim_id": "ec0dab08-b9c5-4bbd-b2b5-5ea92646b0d4",
+      "result_id": "a860265b-2e4e-4af2-868a-a4410fdc5bfe"
+    },
+    {
+      "claim_id": "ec8881a9-4928-41f6-9218-6e942766fe29",
+      "result_id": "80d2bde6-4427-41e5-855c-1a1b9986f7e4"
+    },
+    {
+      "claim_id": "97aded20-33b8-48b4-8a59-f3c46ae38044",
+      "result_id": "80d2bde6-4427-41e5-855c-1a1b9986f7e4"
+    },
+    {
+      "claim_id": "610aac64-6b09-416d-9e93-8bbade540052",
+      "result_id": "80d2bde6-4427-41e5-855c-1a1b9986f7e4"
+    },
+    {
+      "claim_id": "66081972-f460-456d-a4f4-1613380029c2",
+      "result_id": "8e0ece64-fd83-48e8-ab93-31bf20205a09"
+    },
+    {
+      "claim_id": "1d3583b3-275e-42bb-be85-aec0a330b533",
+      "result_id": "8e0ece64-fd83-48e8-ab93-31bf20205a09"
+    },
+    {
+      "claim_id": "d84d0eec-5fbf-4794-90ce-42b34d420c38",
+      "result_id": "8e0ece64-fd83-48e8-ab93-31bf20205a09"
+    },
+    {
+      "claim_id": "00322531-9375-43a7-8d67-7f430aa104af",
+      "result_id": "8e0ece64-fd83-48e8-ab93-31bf20205a09"
+    },
+    {
+      "claim_id": "cd43be7f-3e59-4aae-898c-508f5d57b4f0",
+      "result_id": "d63030fb-e564-41e2-b08b-2d71a8e06344"
+    },
+    {
+      "claim_id": "5072dc77-2bd0-4f7c-8b7f-c51a0f39c2aa",
+      "result_id": "d63030fb-e564-41e2-b08b-2d71a8e06344"
+    },
+    {
+      "claim_id": "b7203004-77c0-4fbe-b280-fed667b22afb",
+      "result_id": "d63030fb-e564-41e2-b08b-2d71a8e06344"
+    },
+    {
+      "claim_id": "f82c4aca-993e-4587-8f4e-19cae75b79d6",
+      "result_id": "d63030fb-e564-41e2-b08b-2d71a8e06344"
+    },
+    {
+      "claim_id": "ddd54f01-89ab-4125-b20a-5dbcf1c6a42a",
+      "result_id": "d63030fb-e564-41e2-b08b-2d71a8e06344"
+    },
+    {
+      "claim_id": "e914269f-a6b7-459a-a19c-fa0cbeacbc97",
+      "result_id": "d63030fb-e564-41e2-b08b-2d71a8e06344"
+    },
+    {
+      "claim_id": "d72c0223-f87b-4eea-bc7d-ca8d279d083e",
+      "result_id": "aa36c27f-3595-4628-a0b4-4e96cc1a24d2"
+    },
+    {
+      "claim_id": "4c6a2b59-db49-4f69-9abe-ab4824df5f7a",
+      "result_id": "aa36c27f-3595-4628-a0b4-4e96cc1a24d2"
+    },
+    {
+      "claim_id": "ab0543ee-5319-4838-8a23-677c32af14d0",
+      "result_id": "aa36c27f-3595-4628-a0b4-4e96cc1a24d2"
+    },
+    {
+      "claim_id": "fb0bf1b6-3c5c-4b11-960e-8c1adbb5002d",
+      "result_id": "d5c6357c-f577-4e23-92af-8d29e4f79c94"
+    },
+    {
+      "claim_id": "1cade2ae-f0f5-45a4-ad3d-a461e2cce120",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "ccf1004f-0ff4-408e-b726-548e741fa788",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "5d93d7d6-4939-4ee6-b576-b4032a415b11",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "c2d2a1c8-b3e2-4d77-a8eb-979e0bd54df3",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "71aa350c-3528-4805-ab45-0d22ca88af42",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "b9025434-83fb-4bbd-8b8c-345e8b182def",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "6bd77f4e-e11e-4966-9b04-6f21b4f64a2a",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "efb47ec6-dde1-454e-a268-1025c32d6409",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "a293b733-56ce-4d71-8afa-c52ccac39367",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "a16c41ec-316f-496c-acc5-6bdb83ada641",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "a16d08be-560c-4313-9501-f83a6238b3b0",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "e9f1fe5c-dbbf-4040-9cb1-5f676ebf0e03",
+      "result_id": "efa49a3a-1b26-40bc-97ea-5d48b2ece9bf"
+    },
+    {
+      "claim_id": "4046ff57-7f25-49a3-9f26-a5ca71205226",
+      "result_id": "4daac494-6459-4474-8621-6ea610698123"
+    },
+    {
+      "claim_id": "b7195c03-d47b-47bd-bb38-8058bc28bc2e",
+      "result_id": "4daac494-6459-4474-8621-6ea610698123"
+    },
+    {
+      "claim_id": "417d5ba4-db90-4bea-bbbb-2282914977ab",
+      "result_id": "4daac494-6459-4474-8621-6ea610698123"
+    },
+    {
+      "claim_id": "210e9eba-701d-4cd0-a451-3f0448d06c3e",
+      "result_id": "4daac494-6459-4474-8621-6ea610698123"
+    },
+    {
+      "claim_id": "26dc91a2-9cbb-42ef-bd8d-41ed598b49f4",
+      "result_id": "4daac494-6459-4474-8621-6ea610698123"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1941 @@
+{
+  "submission": {
+    "id": "047a62f8-3cb2-4f23-a930-05e67c34270f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:05:27.466278Z",
+    "updated_at": "2025-12-02T15:05:27.466278Z"
+  },
+  "content": [
+    {
+      "id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "submission_id": "047a62f8-3cb2-4f23-a930-05e67c34270f",
+      "content_type": "manuscript",
+      "content_text": "# c-Maf restrains T-bet-driven programming of CCR6-negative group 3 innate lymphoid cells\n\n## Authors\n\n- Caroline Tizian<sup>1</sup>\n- Annette Lahmann<sup>3</sup>\n- Oliver H\u00f6lsken<sup>1</sup> ([ORCID: 0000-0001-6086-9275](https://orcid.org/0000-0001-6086-9275))\n- Catalina Cosovanu<sup>1</sup>\n- Michael Kofoed-Branzk<sup>1</sup>\n- Frederik Heinrich<sup>4</sup>\n- Mir-Farzin Mashreghi<sup>4</sup> ([ORCID: 0000-0002-8015-6907](https://orcid.org/0000-0002-8015-6907))\n- Andrey Kruglov<sup>5</sup>\n- Andreas Diefenbach<sup>1</sup>\n- Christian Neumann<sup>1</sup> ([ORCID: 0000-0003-2202-1876](https://orcid.org/0000-0003-2202-1876)) \u2020\n\n### Affiliations\n\n1. Laboratory of Innate Immunity, Department of Microbiology, Infectious Diseases and Immunology, Charit\u00e9-Universit\u00e4tsmedizin Berlin Berlin Germany\n2. Mucosal and Developmental Immunology, Deutsches Rheuma-Forschungszentrum Berlin Germany\n3. Chronic Immune Reactions, Deutsches Rheuma-Forschungszentrum Berlin Germany\n4. Therapeutic Gene Regulation, Deutsches Rheuma-Forschungszentrum Berlin Germany\n5. Chronic Inflammation, Deutsches Rheuma-Forschungszentrum Berlin Germany\n6. Belozersky Institute of Physico-Chemical Biology and Biological Faculty, M.V. Lomonosov Moscow State University Moscow Russian Federation\n\n\u2020 Corresponding author\n\n## Abstract\n\nROR\u03b3t+ group 3 innate lymphoid cells (ILC3s) maintain intestinal homeostasis through secretion of type 3 cytokines such as interleukin (IL)\u221217 and IL-22. However, CCR6- ILC3s additionally co-express T-bet allowing for the acquisition of type 1 effector functions. While T-bet controls the type 1 programming of ILC3s, the molecular mechanisms governing T-bet are undefined. Here, we identify c-Maf as a crucial negative regulator of murine T-bet+ CCR6- ILC3s. Phenotypic and transcriptomic profiling of c-Maf-deficient CCR6- ILC3s revealed a hyper type 1 differentiation status, characterized by overexpression of ILC1/NK cell-related genes and downregulation of type 3 signature genes. On the molecular level, c-Maf directly restrained T-bet expression. Conversely, c-Maf expression was dependent on T-bet and regulated by IL-1\u03b2, IL-18 and Notch signals. Thus, we define c-Maf as a crucial cell-intrinsic brake in the type 1 effector acquisition which forms a negative feedback loop with T-bet to preserve the identity of CCR6- ILC3s.\n\n## Introduction\n\nTissue-resident, ROR\u03b3t-dependent group 3 innate lymphoid cells (ILC3s) protect mucosal surfaces against infections and maintain the integrity of the epithelial barrier by secretion of cytokines such as IL-17 and IL-22 (Sonnenberg et al., 2012; Gronke et al., 2019; Hern\u00e1ndez et al., 2015; Zheng et al., 2008; Gladiator et al., 2013; Satoh-Takayama et al., 2008; Zenewicz et al., 2008). In mice, ILC3s consist of two major subsets, CCR6+ ILC3s that include lymphoid tissue inducer (LTi) cells and CCR6- ILC3s that can differentiate to cells expressing type 1 effector molecules, such as IFN-\u03b3 and the natural cytotoxic receptor NKp46 (Sawa et al., 2010; Klose et al., 2013). Functionally, fetal LTi and adult LTi-like CCR6+ ILC3s are essential for lymphoid organ development (Sun et al., 2000; Eberl et al., 2004), while NKp46+ CCR6- ILC3s are implicated in type 1 inflammatory immune responses and thus may also have pathogenic functions during intestinal inflammation (Klose et al., 2013; Powell et al., 2012; Buonocore et al., 2010; Bernink et al., 2013; Vonarbourg et al., 2010; Rankin et al., 2016; Song et al., 2015).\n\nThe transcription factor (TF) ROR\u03b3t is strictly required for the development of all ILC3s, as mice deficient for ROR\u03b3t lack all ILC3 subsets (Eberl et al., 2004; Sanos et al., 2009). ROR\u03b3t also controls the functionality of ILC3s by regulating the production of effector cytokines, such as IL-17 and IL-22 (Ivanov et al., 2006; Rutz et al., 2013). Interestingly, CCR6- ILC3 co-express ROR\u03b3t and the master regulator of type 1 immunity, T-bet. T-bet is key to the differentiation of NKp46+ CCR6- ILC3s, as those cells fail to develop in mice lacking the gene encoding T-bet, Tbx21 (Klose et al., 2013; Rankin et al., 2013). Importantly, T-bet not only contributes to NKp46+ CCR6- ILC3 development, but an increasing T-bet gradient enables functional plasticity of NKp46+ CCR6- ILC3s by instructing a type 1 effector program in ILC3s (Klose et al., 2013; Scium\u00e9 et al., 2012; Klose et al., 2014; Cella et al., 2019). Tunable T-bet expression in NKp46+ CCR6- ILC3s serves as a dynamic molecular switch from a type 3 to a type 1 phenotype (Klose et al., 2013). Once T-bet expression reaches a sufficient level, it can also act as a repressor of ROR\u03b3t, resulting eventually in a full conversion of ILC3s to ILC1-like cells (referred to as ILC3-to-1 plasticity) (Vonarbourg et al., 2010; Cella et al., 2019; Bernink et al., 2015). Thus, the balance between ROR\u03b3t versus T-bet expression dictates the fate and function of CCR6- ILC3s (Fang and Zhu, 2017).\n\nImportantly, the molecular mechanisms controlling the dynamic and quantitative co-expression of ROR\u03b3t and T-bet in CCR6- ILC3s are largely undefined. Several extrinsic signals were shown to promote or restrain T-bet-dependent plasticity, most prominently cues from the microbiota, IL-23, IL-7 and Notch signaling (Klose et al., 2013; Sanos et al., 2009; Rankin et al., 2013; Viant et al., 2016; Chea et al., 2016). Moreover, exposure to pro-inflammatory cytokines, such as IL-12, IL-15 and IL-18, was reported to further support transdifferentiation to an ILC1-like fate (Vonarbourg et al., 2010; Bernink et al., 2015; Satoh-Takayama et al., 2010). However, despite this, the intrinsic molecular mediators governing ILC3 plasticity have not been discovered yet.\n\nIn the past, our group and others could identify the AP-1 TF c-Maf as a central regulator of ROR\u03b3t+ CD4+ T cells, including ROR\u03b3t+ Foxp3+ Treg cells (Neumann et al., 2019; Xu et al., 2018; Wheaton et al., 2017), ROR\u03b3t+ Th17 cells (Ciofani et al., 2012; Aschenbrenner et al., 2018; Tanaka et al., 2014) and ROR\u03b3t+ \u03b3\u03b4 T cells (Zuberbuehler et al., 2019), both in mouse and human. Specifically, c-Maf was shown to directly bind and regulate key genes of ROR\u03b3t+ T cells, including IL-22 and ROR\u03b3t itself (Tanaka et al., 2014; Zuberbuehler et al., 2019; Rutz et al., 2011). Recently, a broad transcriptional network analysis also identified c-Maf as an important regulator of the ILC3-ILC1 balance, although the precise underlying molecular mechanisms have remained unclear (Pokrovskii et al., 2019).\n\nHere, we demonstrate that c-Maf was essential for CCR6- ILC3s to establish a physiological equilibrium between type 1 and type 3 effector states. c-Maf directly restrained T-bet expression, thereby preventing CCR6- ILC3s from acquiring excessive type 1 effector functions. c-Maf expression itself was dependent on T-bet and tightly correlated with its expression level. Upstream, we identified IL-1\u00df- and IL-18-mediated NF-\u03baB, as well as Notch signals, as potent extrinsic enhancers of c-Maf expression in CCR6- ILC3s. Thus, our data define c-Maf as an integral regulator within the type 3-to-1 conversion program that acts as a cell-intrinsic gatekeeper of T-bet expression to maintain the function and lineage-stability of CCR6- ILC3s.\n\n## Results and discussion\n\n### c-Maf specifically preserves the type 3 identity of CCR6- ILC3s\n\nGiven the pivotal role of c-Maf in CD4+ T cells, we aimed to define its function in ILCs, which share a similar transcriptional program with T cells (Vivier et al., 2018). We first investigated the expression pattern of c-Maf in different ILC subsets of the small intestinal lamina propria (siLP) by staining for c-Maf. This analysis showed that ILC3s expressed higher levels of c-Maf when compared to ILC1s or ILC2s (Figure 1A, gating strategy see Figure 1\u2014figure supplement 1). Among the ILC3 subsets, c-Maf was particularly highly expressed by NKp46+ CCR6- ILC3s at levels comparable to ROR\u03b3t+ CD4+ T cells (Figure 1B). Collectively, these data suggested a potential function of c-Maf in these cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52549/elife-52549-fig1-v3.jpg)\n\n**Figure 1.:** (A) Protein expression of c-Maf by ILC1s, ILC2s and ILC3s isolated from the siLP of na\u00efve C57BL/6N wild-type mice as measured by flow cytometry (pregated on viable Lin- CD127+ cells). Representative histograms show c-Maf expression. (B) Representative histograms showing expression of c-Maf by different siLP ILC3 subsets and ROR\u03b3t+ T cells as comparison. (C) Frequencies and total numbers of ILC1s, ILC2s and ILC3s from siLP of RorcCre Maffl/fl and control mice as measured by flow cytometry (pregated on viable Lin- CD127+ cells). Representative flow cytometric profiles of ROR\u03b3t vs. T-bet and GATA3 expression (left); right, quantification (n\u00a0=\u00a05\u20136, mean\u00a0\u00b1\u00a0SEM, *p<0.05, **p<0.01). (D) Total numbers of different siLP ILC3 subsets of RorcCre Maffl/fl and control mice as measured by flow cytometry. Representative flow cytometric profiles of NKp46 vs. CCR6 expression (left); right, quantification (n\u00a0=\u00a05\u20136, mean\u00a0\u00b1\u00a0SEM, *p<0.05). (E) Expression of ROR\u03b3t by different siLP ILC3 subsets from RorcCre Maffl/fl and control mice. Representative histograms (upper panel) show ROR\u03b3t expression. Graphs below show quantification of ROR\u03b3t gMFI (n\u00a0=\u00a05\u20136, mean\u00a0\u00b1\u00a0SEM, **p<0.01, ***p<0.001). (F, G) Frequencies of IL-17A and IL-22 positive cells among different siLP ILC3 subsets of RorcCreMaffl/fl and control mice after ex vivo restimulation with PMA/ionomycin and IL-23. Representative flow cytometric profiles of IL-17A or IL-22 vs. CCR6 are shown on the left; quantification on the right (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, *p<0.05, **p<0.01). Data are representative of three independent experiments. Statistical differences were tested using an unpaired Students\u2019 t-test (two-tailed).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52549/elife-52549-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Representative flow cytometric staining of siLP cells with different lineage-defining surface markers and transcription factors. ILCs were defined as CD45+ Lineage- (Lin-) CD3- CD127+ cells. ILC1s were additionally defined as ROR\u03b3t- T-bet+, ILC2s as ROR\u03b3t- GATA3+ and ILC3s as ROR\u03b3t+. Lineage includes anti-B220, anti-Gr1, anti-Fc\u03b5RI\u03b1, anti-F4/80, anti-CD11c, anti-CD11b and anti-CD5. ROR\u03b3t+ T cells were pregated on CD45+ CD3+ CD4+ TCR\u00df+ cells.\n\nIn order to directly study the role of c-Maf in ILC3s, we crossed mice carrying floxed Maf alleles (Maffl/fl) to mice expressing Cre recombinase driven by the regulatory elements of the Rorc(\u03b3t) gene locus (Rorc-CreTg), thereby generating mice with a specific deletion of c-Maf in ROR\u03b3t+ ILC3s and T cells (RorcCre Maffl/fl). Phenotypic analysis of siLP ILCs revealed decreased frequencies of ILC3s in the absence of c-Maf, whereas frequencies and total numbers of ILC1s and ILC2s were increased in RorcCre Maffl/fl mice when compared to littermate controls (Figure 1C). Among ILC3s, we detected a selective loss of NKp46- CCR6- ILC3s in RorcCre Maffl/fl mice, while total numbers of NKp46+ CCR6- ILC3s and CCR6+ ILC3s were not significantly changed (Figure 1D).\n\nThus, c-Maf was selectively required for the maintenance of intestinal NKp46- CCR6- ILC3s. Its absence in ILC3s resulted in significant changes in the proportions of individual ILC subsets in the gut. Importantly, flow cytometric intracellular staining also revealed\u00a0a significant downregulation of ROR\u03b3t protein levels in c-Maf-deficient NKp46+ and NKp46- CCR6- ILC3s, which was not observed in CCR6+ ILC3s (Figure 1E).\n\nNext, we tested the functionality of c-Maf-deficient ILC3s by assessing their capacity to produce the type 3 signature cytokines IL-17A and IL-22. In line with the decrease in ROR\u03b3t expression, NKp46+ and NKp46- CCR6- ILC3s from RorcCre Maffl/fl mice exhibited significantly reduced frequencies of IL-17A and IL-22 producers after ex vivo restimulation as compared to control cells (Figure 1F and G). Again, no differences were detected in CCR6+ ILC3s, corroborating the selective role of c-Maf for the homeostasis and function of CCR6- ILC3s. Notably, c-Maf did not act as a repressor of IL-22 production in ILC3s, as it was shown for Th17 cells (Rutz et al., 2011), indicating essential differences in c-Maf function between ILCs and T cells.\n\nIn summary, these findings demonstrated a crucial requirement of c-Maf in maintaining the type 3 identity of CCR6- ILC3s, including their expression of ROR\u03b3t, IL-17A and IL-22.\n\n### c-Maf suppresses the acquisition of type 1 properties by CCR6- ILC3s\n\nROR\u03b3t+ CCR6- ILC3s have the capacity to acquire type 1 effector characteristics, such as IFN-\u03b3 and NKp46 expression (Vonarbourg et al., 2010). This differentiation is facilitated by graded co-expression of T-bet, together with ROR\u03b3t, enabling functional flexibility during inflammatory immune responses (Klose et al., 2013; Powell et al., 2012; Bernink et al., 2013; Rankin et al., 2013; Scium\u00e9 et al., 2012). However, the molecular mechanisms governing the T-bet-dependent type 1 programming of CCR6- ILC3s are undefined.\n\nInterestingly, c-Maf expression strongly correlated with T-bet expression in both NKp46+ and NKp46- CCR6- ILC3s (Figure 2A). More importantly, c-Maf deficiency resulted in strong upregulation of T-bet and NKp46 expression, both on the population (frequencies) and at single cell level (gMFI), in CCR6- ILC3s (Figure 2B). These data, together with the selective loss of NKp46- CCR6- ILC3s, which are considered to contain precursors of NKp46+ CCR6- ILC3s, in RorcCreMaffl/fl mice (Figure 1D), suggested an amplified type 1 conversion of CCR6- ILC3s in the absence of c-Maf.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52549/elife-52549-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative flow cytometric profiles of T-bet vs. c-Maf expression by siLP NKp46+ and NKp46- CCR6- ILC3s. (B) T-bet and NKp46 expression (frequency and gMFI) by siLP CCR6- ILC3s of RorcCreMaffl/fl and control mice. Representative flow cytometric profiles are shown on the left; quantification on the right (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, **p<0.01, ***p<0.001). (C) Frequency of IFN-\u03b3 positive cells among siLP CCR6- ILC3s of RorcCreMaffl/fl and control mice after ex vivo restimulation with PMA/ionomycin and IL-23. Representative flow cytometric profiles are shown on the left; quantification on the right (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, ***p<0.001). (D) Analysis of mixed bone marrow chimeras of CD45.1+ wild-type and CD45.2+ RorcCreMaffl/f (Maf KO) bone marrow cells. Pregated on viable Lin- CD127+ CD90.2+ ROR\u03b3t+ cells. Recipient mice were CD90.1 positive. Representative flow cytometric profiles of T-bet vs. CCR6 expression are shown left; quantification on the right (n\u00a0=\u00a07, mean\u00a0\u00b1\u00a0SEM, **p<0.01). All statistical differences were tested using an unpaired Students\u2019 t-test (two-tailed). (E) NKp46+ CCR6- ILC3s were sorted from siLP of RorcCreMaffl/fl and control mice and subjected to RNA sequencing. Vulcano plot showing comparison of gene expression between c-Maf-deficient and control NKp46+ CCR6- ILC3s. Data represent the combined analysis of three biologically independent samples. Genes considered significant (FC\u00a0>\u00a01.5, FDR\u00a0<\u00a00.05) fall into the grey background, while selected genes are highlighted in red. (F) Gene set enrichment plots showing enrichment of ILC1 and NK cell signature genes in c-Maf-deficient vs. control NKp46+ CCR6- ILC3s (FDR\u00a0<\u00a00.01). Normalized enrichment score (NES).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52549/elife-52549-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Frequencies of Ki67+ cells among siLP CCR6- ILC3s from RorcCre Maffl/fl and control mice. Representative contour plots are shown left; graph on the right shows quantification (n\u00a0=\u00a04). (B) Frequency of T-bet+ cells among siLP CCR6- ILC3s from CD4Cre Maffl/fl and control mice (n\u00a0=\u00a04). (C) T-bet and NKp46 expression level (gMFI) of siLP c-Maf- (I) and c-Maf+ (II) CD4+ T-bet+ CCR6- ILC3s from Cd4Cre Maffl/fl and control mice. Representative flow cytometric profiles of CD4 vs. CCR6 and T-bet vs. c-Maf expression (left); right, quantification (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, *p<0.05, **p<0.01). All statistical differences were tested using an unpaired Students\u2019 t-test (two-tailed).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52549/elife-52549-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Gating strategy for FACS-sorting of siLP ILC3s from RorcCre Maffl/fl and Maffl/fl control mice for RNA-seq analysis. ILC3s were defined as viable CD45+ Lin- CD127+ KLRG1- NK1.1- cells. Lineage includes anti-CD5, anti-CD8\u03b1, anti-CD3, anti-Gr-1, anti-TCR\u03b3\u03b4, anti-Fc\u03b5RI\u03b1, anti-CD19 and anti-CD11c. (B) RNA-seq based principal component analysis (PCA) of FACS-sorted ILC3s. Each dot represents an individual biological replicate. (C) Venn diagram displaying the overlap between genes differentially expressed between c-Maf-deficient and control NKp46+ CCR6- ILC3s and CCR6+ ILC3s. (D, E) RNA-seq based expression of Bcl6 (D) and Irf8 (E) in c-Maf-deficient vs. control NKp46+ CCR6- ILC3s and CCR6+ ILC3s. Each dot represents an individual biological replicate.\n\nIn accordance with the increase in T-bet expression, we also detected increased frequencies of IFN-\u03b3 producing cells within c-Maf-deficient CCR6- ILC3s as compared to c-Maf-competent control cells (Figure 2C). Of note, Ki67 staining of c-Maf-deficient CCR6- ILC3s was not altered, ruling out that proliferative differences facilitated the skewing towards a type 1 phenotype in the absence of c-Maf (Figure 2\u2014figure supplement 1A).\n\nIn addition to the lack of c-Maf expression in ILC3s, RorcCre Maffl/fl mice also harbour a c-Maf-deficient T cell compartment, due to the expression of ROR\u03b3t during T cell development (Sun et al., 2000). Moreover, conditional deletion of c-Maf in T cells (Cd4Cre Maffl/fl or Foxp3Cre Maffl/fl) was reported to cause disturbances in intestinal homeostasis (Neumann et al., 2019; Imbratta et al., 2019), raising the possibility that changes in the gut microenvironment contributed to the \u2018hyper type 1\u2019 phenotype of CCR6- ILC3s in RorcCre Maffl/fl mice. To interrogate this scenario, we analysed intestinal CCR6- ILC3s from Cd4Cre Maffl/fl mice. The expression of T-bet by CCR6- ILC3s was not altered when c-Maf was selectively deleted in T cells, excluding that T cell-dependent alterations affected the type 1 conversion of ILC3s in RorcCre Maffl/fl mice (Figure 2\u2014figure supplement 1B).\n\nInterestingly, a small subset of CCR6- ILC3s also co-expresses CD4 (ca. 2% of CCR6- ILC3s, Figure 2\u2014figure supplement 1C). Indeed, c-Maf staining of CD4+ CCR6- ILC3s from Cd4Cre Maffl/fl mice confirmed c-Maf deletion in a substantial fraction of cells (ca. 50%), allowing us to compare c-Maf-competent and c-Maf-deficient CCR6- ILC3s within the same mouse (Figure 2\u2014figure supplement 1C). We detected higher expression of T-bet and NKp46 in cells lacking c-Maf as compared to their c-Maf-expressing counterparts, indicating that the type 1 deviation of c-Maf-deficient CCR6- ILC3s was a cell-intrinsic phenomenon (Figure 2\u2014figure supplement 1C). Importantly, mixed bone marrow chimeras of wild-type and c-Maf-deficient cells confirmed the cell-intrinsic function of c-Maf in restraining T-bet expression (Figure 2D).\n\nTogether, these data identified c-Maf as a potent repressor of the T-bet-dependent type 1 conversion of CCR6- ILC3s. Notably, c-Maf has also been shown to attenuate the differentiation of Th1 cells by a yet-to-be-defined mechanism (Ho et al., 1998), suggesting a broader role of c-Maf in restraining type 1 immune effector cells.\n\n### c-Maf globally restrains type 1 and NK cell specific gene programs in CCR6- ILC3s\n\nTo better define c-Maf-dependent gene regulation, we performed RNA sequencing (RNA-seq) of siLP ILC3s of RorcCreMaffl/fl and control mice. We isolated NKp46+ CCR6- ILC3s and as a comparison CCR6+ ILC3s for our analysis (sorting strategy see Figure 2\u2014figure supplement 2A). Principal component analysis showed that c-Maf-deficient ILC3s clustered separately from their wild-type counterparts, demonstrating a unique role of c-Maf in shaping the transcriptome of ILC3s (Figure 2\u2014figure supplement 2B).\n\nWe identified 941 genes as differentially expressed (FC\u00a0>\u00a01.5, p-value\u00a0<\u00a00.05) between c-Maf-deficient and control NKp46+ CCR6- ILC3s (Figure 2E, Supplementary file 1). Interestingly, only ca. 30% of these genes (294 genes) were also found to be differentially expressed in CCR6+ ILC3s (Figure 2\u2014figure supplement 2C, Supplementary file 2), indicating a distinct function of c-Maf in NKp46+ CCR6- ILC3s. Consistent with our flow cytometry data, we detected a striking enrichment of type 1 and NK cell-related genes (e.g. Tbx21, Ifng, Nos2, Klri2, Klrc1, Klrc2, Gzmb, Gzmd, Fasl) in c-Maf-deficient NKp46+ CCR6- ILC3s (Figure 2E). In line with this, Bcl6 and Irf8, both recently described as crucial transcription factors promoting ILC1/NK cell gene programs (Pokrovskii et al., 2019; Adams et al., 2018), were also significantly upregulated in the absence of c-Maf in NKp46+ CCR6- ILC3s (Figure 2E, Figure 2\u2014figure supplement 2D and E). Conversely, several type 3 effector genes (e.g. Il17a, Il17f, Il17re, Ccl20) were downregulated in NKp46+ CCR6- ILC3s upon c-Maf-deficiency (Figure 2E).\n\nTo better understand the global c-Maf-dependent changes in gene expression programs, we performed gene set enrichment analysis (GSEA). Given the strong upregulation of type 1 and NK cell features in c-Maf-deficient CCR6- ILC3s, we made use of published RNA-seq data comparing ILC1s and NK cells with CCR6- ILC3s (Pokrovskii et al., 2019). In detail, we created sets of genes that were most highly overexpressed in ILC1s or NK cells, thereby defining ILC1 and NK cell gene signatures that distinctly separated those lineages from CCR6- ILC3s. Importantly, when applied to GSEA, both gene signatures were significantly enriched in c-Maf-deficient NKp46+ CCR6- ILC3s (Figure 2F), indicating a global shift in gene expression towards an ILC1/NK cell phenotype.\n\nIn summary, these data demonstrated that c-Maf was essential to globally balance type 1 and type 3 gene programs within CCR6- ILC3s. This function of c-Maf was specific to NKp46+ CCR6- ILC3s as opposed to CCR6+ ILC3s, most likely due to the particularly high c-Maf expression and the selective accessible of type 1 gene loci in these cells (Pokrovskii et al., 2019; Shih et al., 2016). In the absence of c-Maf, NKp46+ CCR6- ILC3s downregulated type 3 effector genes, while overexpressing numerous genes encoding for type 1 and cytotoxic effector molecules. The latter finding is particularly interesting, since NKp46+ CCR6- ILC3s are largely considered to be non-toxic cells (Melo-Gonzalez and Hepworth, 2017). Nevertheless, NKp46+ CCR6- ILC3s share a considerable transcriptional overlap with ILC1s, which also exhibit a degree of cytotoxic capacity (Robinette et al., 2015; Cortez and Colonna, 2016). Thus, c-Maf-deficiency may result in marked cytotoxicity of NKp46+ CCR6- ILC3s. More work is needed to precisely define the role of c-Maf for ILC3 functionality during homeostasis and in the context of intestinal inflammation.\n\n### c-Maf restrains T-bet expression by directly repressing the Tbx21 promoter\n\nThe strong upregulation of T-bet expression in c-Maf-deficient CCR6- ILC3s raised the possibility that c-Maf acted as a direct repressor of T-bet, thereby restraining the type 1 differentiation program. Indeed, in silico analysis identified Maf response elements (MARE) within the Tbx21 promoter, as well as in a conserved distant Tbx21 enhancer (Kataoka et al., 1994; Yang et al., 2007), both regions accessible in NKp46+ CCR6- ILC3s as evidenced by ATAC-sequencing (Shih et al., 2016; Figure 3A and B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52549/elife-52549-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative ATAC sequencing tracks across the Tbx21 locus of NKp46+ ILC3s (Shih et al., 2016). The Tbx21 promoter and enhancer regions are highlighted in red (Yang et al., 2007). ATAC sequencing tracks were visualized using the WashU browser from the Cistrome project (Mei et al., 2017). (B) Positioning of putative Maf response elements (MARE) within the Tbx21 promoter and enhancer (highlighted in blue). Depicted sequences represent selected regions of the Tbx21 promoter and enhancer. Mutated sequences are shown in lower lines in red. (C) Schematic representation of plasmids containing the Tbx21 promoter/enhancer linked to the firefly luciferase reporter gene (Luc). Blue dots indicate MARE sites within the Tbx21 promoter and enhancer region. (D) Relative luciferase activity (RLU) of different reporter constructs driven by the Tbx21 promoter alone or in combination with an enhancer sequence compared to a promoterless (w/o) control vector (pGL3 basic) (n\u00a0=\u00a03, mean\u00a0\u00b1\u00a0SEM, *p<0.05, ***p<0.001). (E) Analysis of c-Maf-dependent suppression of luciferase activity. The MARE sites within the Tbx21 promoter or the Tbx21 promoter and enhancer were mutated in the Tbx21 enhancer/promoter construct. Comparison of RLU between unmutated and mutated Tbx21 enhancer/promoter constructs upon c-Maf overexpression (n\u00a0=\u00a03, mean\u00a0\u00b1\u00a0SEM, ***p<0.001). All reporter assay data are pooled from three independent experiments. (F) Expression of c-Maf by siLP CCR6- ILC3s from T-bet-deficient (T-bet-/-) and -sufficient (T-bet+/+) mice. Representative flow cytometric profiles are shown on the left; graph on the right shows quantification of c-Maf gMFI (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, ***p<0.001). (G\u2013H) Sort-purified siLP NKp46+ CCR6- ILC3s from RorcCre R26EYFP mice were cultured in vitro for 36 hr in the presence of IL-7/SCF (w/o) or IL-7/SCF plus indicated cytokines. Subsequently, Maf expression was measured by qPCR (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, *p<0.05, **p<0.01, ***p<0.001). In one condition the NF-\u03bab inhibitor BMS-345541 (BMS) was added at 1 \u03bcM to the culture. Data are pooled from two independent experiments each with two replicate wells. (I) Sort-purified siLP NKp46+ CCR6- ILC3s from RorcCre R26EYFP mice were cultured in the presence of IL-7/SCF on OP9 or OP9-DLL1 stromal cells as indicated. After 12 days, cells were analysed by flow cytometry for the cell surface expression of NKp46. Representative contour plots are shown on the left (pregated on CCR6- ILC3s); graph on the right shows quantification of the frequency of NKp46+ cell among CCR6- ILC3s (n\u00a0=\u00a010, mean\u00a0\u00b1\u00a0SEM, ***p<0.001). Data are pooled from two independent experiments with 4 to 6 replicate wells. (J) Expression of c-Maf by NKp46+ CCR6- ILC3s cultured on OP9 or OP9-DLL1 cells. Representative histogram is shown left; graph on the right shows quantification of c-Maf gMFI (n\u00a0=\u00a010, mean\u00a0\u00b1\u00a0SEM, ***p<0.001). All statistical differences were tested using an unpaired Students\u2019 t-test (two-tailed).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52549/elife-52549-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative ATAC sequencing tracks across the Maf locus of NKp46+ ILC3s (Shih et al., 2016). ATAC sequencing peaks overlap with two conserved non-coding sequences 0.5 kb (CNS-0.5) and 1 kb (CNS-1) upstream of Maf (red boxes). (B) Representative T-bet ChIP sequencing tracks across the Maf locus of Th1 cells (G\u00f6kmen et al., 2013). Prominent T-bet binding peaks overlap with ATAC sequencing peaks within Maf CNS-0.5 and CNS-1 regions (red boxes). (C) T-bet and NF-\u03bab binding motifs as defined by HOMER software (Heinz et al., 2010). (D) In silico analysis identifies T-bet and NF-\u03bab binding sites within Maf CNS-0.5 and CNS-1 regions (highlighted in blue). ATAC and ChIP sequencing tracks were visualized using the WashU browser from the Cistrome project (Mei et al., 2017).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52549/elife-52549-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Sort-purified siLP NKp46+ CCR6- ILC3s from RorcCre Maffl/fl or control mice were cultured in vitro for 36 hr in the presence of IL-7/SCF (w/o) or IL-7/SCF plus IL-1\u00df and IL-18. Subsequently, Ifng and Il22 expression was measured by qPCR (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, *p<0.05). (B) Sort-purified siLP NKp46+ CCR6- ILC3s from RorcCre R26EYFP mice were cultured in vitro for 36 hr in the presence of IL-7/SCF (w/o) or IL-7/SCF plus indicated cytokines. Subsequently, Maf expression was measured by qPCR (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, *p<0.05, **p<0.01). (C) Protein expression of c-Maf by siLP NKp46+ ILC3s isolated from Il12a-/- or wild-type mice as measured by flow cytometry (pregated on viable Lin- CD127+ cells). Representative flow cytometric profiles of ROR\u03b3t vs. NKp46 expression (left); representative histograms showing c-Maf expression (middle); right, quantification of c-Maf gMFI (n\u00a0=\u00a03, mean\u00a0\u00b1\u00a0SEM). (D\u2013E) Sort-purified siLP NKp46+ CCR6- ILC3s from RorcCre R26EYFP mice were cultured in vitro for 36 hr in the presence of IL-7/SCF (w/o) or IL-7/SCF plus indicated cytokines. Subsequently, Tbx21 expression was measured by qPCR (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, **p<0.01, ***p<0.001). The NF-\u03bab inhibitor BMS-345541 (BMS) was added at 1 \u03bcM to the culture. (F) Sort-purified siLP NKp46+ CCR6- ILC3s from RorcCre Maffl/fl or control mice were cultured in vitro for 36 hr in the presence of IL-7/SCF (w/o) or IL-7/SCF plus IL-1\u00df and IL-18. Subsequently, Tbx21 expression was measured by qPCR (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SEM, **p<0.01). All in vitro data are pooled from two independent experiments each with two replicate wells.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52549/elife-52549-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Small intestinal NKp46+ CCR6- ILC3s were FACS-purified, labeled with a cell proliferation dye and cultured on OP9 or OP9-DLL1 feeder cells for 12 days. Representative dot plots show cell proliferation dye dilution (pre-gated on CCR6- ILC3s). Gates 1 to 4 indicate different generations of proliferating cells. (B) Representative contour plots showing NKp46 expression by distinct generations of OP9 or OP9-DLL1 cultured NKp46+ CCR6- ILC3s (gates 1 to 4). (C) Quantitative comparison of c-Maf expression (gMFI) within different generations (gates 1 to 4) of OP9 vs. OP9-DLL1 cultured NKp46+ CCR6- ILC3s (gates 1 to 4; n\u00a0=\u00a06, mean\u00a0\u00b1\u00a0SEM, **p<0.01, ***p<0.001). Statistical differences were tested using an unpaired Students\u2019 t-test (two-tailed).\n\nIn order to study the transcriptional activity of c-Maf at these sites, we cloned the Tbx21 promoter alone or in conjunction with the Tbx21 enhancer upstream of a luciferase reporter (Figure 3C). Indeed, the Tbx21 promoter showed strong transcriptional activity when compared to a promoterless control vector (Figure 3D). The Tbx21 enhancer further increased this activity when cloned upstream of the Tbx21 promoter (Figure 3D). Importantly, upon exogenous overexpression of c-Maf, we detected a strong de-repression of the reporter signal when we mutated the MARE sites within the Tbx21 promoter (Figure 3B and E). Notably, mutating the Tbx21 enhancer did not result in further increase of reporter activity, indicating that c-Maf facilitated its suppressive function mainly by acting on the Tbx21 promoter (Figure 3B and E).\n\nThus, these data identified the Tbx21 promoter as a c-Maf-responsive region through which c-Maf directly controls T-bet expression.\n\n### c-Maf expression in CCR6- ILC3s is dependent on T-bet\n\nDespite the fact that c-Maf acted as a direct repressor of T-bet, we observed strong correlation of c-Maf expression with T-bet expression in CCR6- ILC3s (Figure 2A). This finding let us hypothesize that c-Maf expression was co-regulated with T-bet expression as part of the type one conversion program. To explore this hypothesis, we studied c-Maf expression in CCR6- ILC3s from T-bet-deficient mice. Indeed, in the absence of T-bet, c-Maf expression was strongly reduced when compared to T-bet-sufficient cells (Figure 3F), indicating that T-bet positively regulated its own repressor to establish an equilibrated state within the ILC3-to-ILC1 continuum.\n\nIn silico analysis of the Maf locus using ATAC-Seq (Shih et al., 2016) and T-bet ChIP-Seq (G\u00f6kmen et al., 2013) data further identified a striking overlap of T-bet binding peaks with open chromatin regions in NKp46+ CCR6- ILC3s within two conserved non-coding sequences (CNS-0.5 and CNS-1) upstream of Maf, suggesting that T-bet directly controlled c-Maf expression in CCR6- ILC3s (Figure 3\u2014figure supplement 1).\n\n### IL-1\u03b2- and IL-18-mediated NF-\u03bab and Notch signalling promote c-Maf expression in CCR6- ILC3s\n\nNext, we aimed to identify signals that control c-Maf expression in CCR6- ILC3s. Several cytokines were shown to regulate the differentiation and function of T-bet+ CCR6- ILC3s, including IL-1\u00df, IL-12, IL-15, IL-18 and IL-23 (Klose et al., 2013; Vonarbourg et al., 2010; Bernink et al., 2015; Satoh-Takayama et al., 2010). Thus, we short-term stimulated sort-purified NKp46+ CCR6- ILC3s with these cytokines in vitro and subsequently assessed their Maf expression by qPCR. Among all tested conditions, the pro-inflammatory IL-1 family cytokines IL-1\u00df and IL-18 stood out as potent inducers of Maf expression (Figure 3G). IL-1\u00df/IL-18 stimulation also induced Ifng and Il22 expression (Figure 3\u2014figure supplement 2A). In fact, c-Maf-deficient NKp46+ CCR6- ILC3s expressed more Ifng in response to IL-1\u00df/IL-18 as compared to controls (Figure 3\u2014figure supplement 2A), functionally connecting c-Maf expression downstream of these stimuli with the control of the type 1 effector response.\n\nSince both IL-1\u00df and IL-18 signal via NF-\u03bab and a conserved NF-\u03bab binding site is present within CNS-0.5 upstream of Maf (Figure 3\u2014figure supplement 1C and D), we hypothesized that NF-\u03bab is involved in regulation of c-Maf expression downstream of IL-1\u00df/IL-18. Indeed, pharmacological inhibition of NF-\u03bab signalling completely abrogated the cytokine-mediated induction of c-Maf expression (Figure 3H). In addition to IL-1\u00df/IL-18, we found that IL-12 suppressed Maf expression (Figure 3G). However, IL-12 did not interfere with the IL-1\u00df/IL-18-mediated c-Maf induction nor was c-Maf expression altered in NKp46+ CCR6- ILC3s from Il12a-/- mice as compared to controls (Figure 3\u2014figure supplement 2B and C), questioning a dominant role of IL-12 in c-Maf regulation.\n\nOf note, the cytokine-mediated induction of Maf expression was accompanied by a concomitant decrease in Tbx21 expression (Figure 3\u2014figure supplement 2D). Yet, this suppression was independent of NF-\u03bab and c-Maf, since Tbx21 expression was similarly suppressed by IL-1\u00df/IL-18 upon NF-\u03bab inhibiton and in c-Maf-deficient NKp46+ CCR6- ILC3s (Figure 3\u2014figure supplement 2E and F). Taken together, these data demonstrate that, besides their reciprocal regulation, c-Maf and T-bet expression level are further critically controlled by cytokine signals.\n\nIn addition to cytokines, we also tested Notch signals as a potential extrinsic cue controlling both type 1 conversion of and c-Maf expression by ILC3s. Indeed, Notch was shown to be necessary for the induction and maintenance of T-bet and NKp46 expression in CCR6- ILC3s (Rankin et al., 2013; Viant et al., 2016). Similarly, we could recently identify Notch signalling as a potent inducer of c-Maf expression in T cells (Neumann et al., 2019; Neumann et al., 2014). To test the role of Notch we cultured purified NKp46+ CCR6- ILC3s on OP9 or OP9-DLL1 stromal cells, the latter ectopically express the Notch ligand Delta-like 1 (DLL1). As reported earlier, Notch signals were essential to drive type 1 conversion of NKp46+ CCR6- ILC3s, as evidenced by reduction and loss of NKp46 expression in the absence of Notch (Figure 3I). Importantly, c-Maf showed a similar expression pattern, being significantly reduced in NKp46+ CCR6- ILC3s cultured on OP9 cells as compared to cells cultured on OP9-DLL1 cells (Figure 3J). This downregulation of NKp46 and c-Maf expression in the absence of continuous Notch signalling was independent of potential survival promoting effects of Notch (Figure 3\u2014figure supplement 3), establishing a molecular link between Notch signalling and type 1 conversion of NKp46+ CCR6- ILC3s.\n\n### Concluding remarks\n\nCollectively, our study adds c-Maf as a novel key factor to the complex transcriptional network that governs the differentiation and function of ILC3s. In line with the emerging concept that co-expression and cross-regulation of multiple master regulators determines the fate and function of ILCs (Fang and Zhu, 2017), we have uncovered an essential negative feedback loop between c-Maf and T-bet, which restrains the type 1 conversion of ILC3s. Given the antagonism between T-bet and ROR\u03b3t, the c-Maf-dependent suppression of T-bet also indirectly stabilizes ROR\u03b3t expression, thus preserving the type 3 identity of ILC3s. In addition, c-Maf may also directly contribute to ROR\u03b3t expression in ILC3s, as it has been reported for T cells (Tanaka et al., 2014; Zuberbuehler et al., 2019).\u00a0Our data supports and extends the findings of a very recent report that was released after completion of this manuscript (Parker et al., 2020).\n\n## Materials and methods\n\n### Animals\n\nTo generate conditional c-Maf-deficient mice, RorcCre mice or Cd4Cre mice were crossed to Mafflox mice (provided by C. Birchmaier, MDC, Berlin, Germany) (Wende et al., 2012). Cd4Cre (Lee et al., 2001), RorcCre (Eberl and Littman, 2004), R26EYFP (Srinivas et al., 2001) and T-bet-deficient mice (Szabo et al., 2002) were described before. Il12a-/- mice were kindly provided by U. Schleicher, Erlangen. All mice were on a C57BL/6 background and bred and maintained under specific pathogen-free conditions at our animal facilities (FEM Charit\u00e9 Berlin, Germany). All animal experiments were in accordance with the ethical standards of the institution or practice at which the studies were conducted and were reviewed and approved by the responsible ethics committees of Germany (LAGeSo Berlin, I C 113 \u2013 G0172/14) and Russia.\n\n### Antibodies\n\nA list of antibodies used in this study is provided in Supplementary file 3.\n\n### Cell isolation from small intestine and flow cytometry\n\nSmall intestinal tissue was treated with HBSS buffer (without calcium and magnesium) containing 5 mM EDTA and 10 mM HEPES (pH 7.5) at 37\u00b0C for 30 min to remove epithelial cells, minced and digested in HBSS buffer (with calcium and magnesium) containing 10 mM HEPES, 4% FCS, 0.5 mg/ml Collagenase D, 0.5 mg/ml DNaseI (Sigma), 0.5 U/ml Dispase (BD) with constantly stirring at 37\u00b0C for 30 min. The supernatant was filtered and the remaining tissue was mashed through a 70 \u03bcm mesh. siLP cells were separated using a 40%/80% step-gradient (Percoll solution, GE Healthcare). Flow cytometry was performed according to previously defined guidelines (Cossarizza et al., 2019). In detail, single-cell suspensions were stained with different antibodies (Supplementary file 3). For cytokine analysis, cells were restimulated with PMA (Sigma, 10 ng/ml), ionomycin (Sigma, 1 \u03bcg/ml) and IL-23 (50 ng/ml) for 5 hr in TexMACS medium (Miltenyi Biotec) containing 10% FCS. After 1 hr of stimulation, Brefeldin A (Sigma, 5 \u03bcg/ml) was added to block cytokine secretion. For intracellular staining of cytokines and transcription factors, cells were first stained for surface markers and dead cells were labeled with Fixable Viability Dye eFluor780 (eBioscience). After that, cells were fixed in Fix/Perm buffer (eBioscience) at 4\u00b0C for 1 hr, followed by permeabilization (eBioscience) at 4\u00b0C for 2 hr in the presence of antibodies. Cells were acquired with a BD LSRFortessa X-20 and analysis was performed with FlowJo (Tree Star) software.\n\n### RNA-seq analysis\n\nNKp46+ CCR6- ILC3s and CCR6+ ILC3s were sorted from the siLP of 8\u201312 weeks old RorcCre Maffl/fl or littermate Maffl/fl control mice using a BD FACSAria sorter (sorting strategy Figure 2\u2014figure supplement 2A). RNA was isolated with the RNeasy Micro kit from Qiagen according to the manufacturer`s protocol. RNA libraries were prepared using the Smart-Seq V4 Ultra low Input RNA kit (Takara Clontech). Sequencing was performed on an Illumina Nextseq 500 generating 75 bp paired-end reads. Three biological replicates of each subset were sequenced. Raw sequence reads were mapped to the mouse GRCm38/mm10 genome with TopHat2 (Kim et al., 2013) in very-sensitive settings for Bowtie2 (Langmead and Salzberg, 2012). Gene expression was quantified either by HTSeq (Anders et al., 2015) for total RNA or featureCounts (Liao et al., 2014) for mRNA and analyzed using DESeq2 (Love et al., 2014). A cut-off (FC\u00a0>\u00a01.5 and p-value\u00a0<\u00a00.05) was applied for calling differentially expressed genes. Furthermore, differentially expressed genes were filtered for \u2018gene_type\u00a0=\u00a0protein_coding\u2019 before further analysis.\n\n### Gene set enrichment analysis (GSEA)\n\nGSEA was performed using the GSEA tool from the Broad Institute. Gene sets used in this study were generated by taking the top upregulated genes (log2FC\u00a0>\u00a02) from published differential gene expression analysis of RNA-seq data comparing ILC1s or NK cells with CCR6- ILC3s (Pokrovskii et al., 2019).\n\n### Luciferase reporter assay\n\nHEK293T cells were transfected with the pGL3 basic luciferase plasmid (Promega) containing the T-bet promoter alone or the T-bet promoter in combination with an upstream enhancer region (Yang et al., 2007), or the empty pGL3 basic in combination with an internal control pRL-TK Renilla plasmid (Promega). The T-bet enhancer/promoter plasmid was described before (Hosokawa et al., 2013) and kindly provided by H. Hosokawa (Tokai University, Japan). In order to assess gene regulation by c-Maf, putative Maf responsive elements in the promoter and enhancer were mutated using the Q5 Site-Directed Mutagenesis Kit (New England Biolabs). In addition to mutated reporter plasmids, cells were co-transfected with c-Maf coding sequence in pMSCV. Luciferase activity was measured on a SpectraMax i33 microplate reader (Molecular Devices) after 24 hr using dual luciferase assay system (Promega). Luciferase activity was determined relative to Renilla.\n\n### In vitro stimulation of NKp46+ CCR6- ILC3s with cytokines\n\nCD45+ Lineage- (Lineage: anti-CD19, anti-Gr-1, anti-CD3, anti-CD5) ROR\u03b3tfm+ CD127+ NKp46+ CCR6- cells were sort-purified from the siLP of 11\u201314 week old RorcCre R26EYFP mice. Sorted cells were transferred in complete RPMI medium to a 96 U bottom well plate at a density of 15.000 cells/well. Subsequently cells were cultured in the presence of IL-7 (20 ng/ml) and SCF (20 ng/ml) plus different cytokines (IL-1\u00df, IL-12, IL-15, IL-18, IL-23; each at 20 ng/ml) for 36 hr before mRNA analysis. For blocking NF-\u03bab activation, BMS-345541, a selective inhibitor of I\u03baB kinase (Burke et al., 2003), was added at a concentration of 1 \u03bcM to the culture.\n\n### In vitro culture of NKp46+ CCR6- ILC3s on OP9-DLL1 cells\n\nCD45+ Lineage- (Lineage: anti-CD19, anti-Gr-1, anti-CD3, anti-CD5) ROR\u03b3tfm+ CD127+ NKp46+ CCR6- cells were sort-purified from the siLP of 11\u201314 week old RorcCre R26EYFP mice. Sorted cells were transferred in complete RPMI medium to OP9 or OP9-DLL1 cells at a density of 10.000 cells/well and cultured in the presence of IL-7 (20 ng/ml) and SCF (20 ng/ml) for 12 days before flow cytometric analysis. OP9 cells are murine stromal cells derived from OP/OP mice used as feeder cells in lymphocyte differentiation assays. OP9-DLL1 cells are transfected with Notch ligand delta-like-1 (Schmitt and Z\u00fa\u00f1iga-Pfl\u00fccker, 2002). Prior to adding isolated lymphocytes, confluent feeder cells were treated with 5 \u03bcg/ml Mitomycin C (Sigma) for 3 hr at 37\u00b0C and subsequently seeded on a 96 flat bottom well plate at a density of 50.000 cells/well.\n\n### Bone marrow chimeras\n\nBone marrow cells from wild-type CD45.1+ CD90.2+ C57BL/6 and CD45.2+ CD90.2+ RorcCre Maffl/fl mice were mixed in a 1:1 ratio and intravenously injected into sub-lethally irradiated CD90.1+ wild-type recipient mice. Small and colonic lamina propria of reconstituted mice were analysed 6 weeks after cell transfer.\n\n### qPCR\n\nmRNA for real-time qPCR was isolated with the RNeasy Plus Micro Kit according to the manual of the manufacturer (QIAGEN). Reverse transcription was done with the High Capacity cDNA Reverse Transcription Kit (Applied Biosystems) as it is described in the manufacturer\u2019s protocol. qPCR was performed using a Quant Studio five system (Applied Biosystems) and the SYBR Green PCR Master Mix Kit (Applied Biosystems). The mRNA expression is presented relative to the expression of the housekeeping gene hypoxanthine-guanine phosphoribosyl-transferase (HPRT). Real-time qPCR primer can be found in Supplementary file 4.\n\n### Statistical analysis\n\nData are the mean with SEM and summarize or are representative of independent experiments as specified in the text. Statistical analyses were performed using Prism software (GraphPad) with two-tailed unpaired Student's t test (except RNA-seq data).\n",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "55589c38-ed1b-476b-a235-9bd8f6f4e000",
+      "submission_id": "047a62f8-3cb2-4f23-a930-05e67c34270f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Satyajit Rath, Indian Institute of Science Education and Research (IISER) India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52549.sa1](https://doi.org/10.7554/eLife.52549.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper describes that cMAF regulates the balance between ILC1 and ILC3, by controlling T-bet expression. This occurs in the CCR6- ILC3 population. cMAF expression regulates the dynamic acquisition of type 1 effector functions as deletion of this factor results in upregulation of NKp46, which was previously been found to be regulated by T-bet. While it is not novel that cMAF is involved in regulating the balance of ILC3 and ILC1, the present paper examines mechanisms involved. The authors provide convincing data that c-Maf negatively regulates the transition of ILC3 to ILC1 like cells. How ILC plasticity is regulated is an important in topical area of research and the identification of the role of c-Maf significantly adds to our understanding. The data provided are convincing, and support, with more insight in certain areas, a very recent paper (Parker et al., 2019), a publication that was released after completion of the present manuscript.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"c-Maf restrains T-bet-driven programming of CCR6-negative group 3 innate lymphoid cells\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Satyajit Rath as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: David Withers (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The claim that c-Maf is required for maintenance of the total CCR6- ILC3 is not really supported by the data. There is a reduction but this reduction is less than 30-40%. The strongest reduction is seen in NKp46-CCR6- cells (Figure 2). A more likely conclusion would be that cMAF is required for maintenance of the NKp46-CCR6-ILC3s. This should be clarified.\n\n2) Whereas the authors show that IL-1b and IL-18 can upregulate cMAF, the effects of IL-12 do not get much attention. IL-12 is a powerful inducer of ILC3 to ILC1 conversion and IL-12 receptor deficient mice show a strong increase in NKp46+RORgt+ ILC3 (Vonarbourg et al., 2010). One would expect a strong effect of IL-12 on c-Maf expression. Indeed, inspection of Figure 3E reveals a significant reduction of cMAF by IL-12. This should be addressed.\n\n3) In Figure 1, the authors should show total numbers of ILC populations rather than only percentages. Total numbers would clarify whether other populations were really unaffected.\n\n4) Again, in Figure 1, it would be useful to compare CCR6-NKp46- and CCR6-NKp46+ cell populations for further clarity. It is not necessary to group both CCR6- populations together. Since the CCR6-NKp46- cells are considered to be the precursors, expression of c-Maf here is of interest.\n\n5) Any evidence for T-bet binding in the Maf locus to regulate its expression, building on the observation in Figure 3D, would be very useful to add.\n",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a9e6382d-1696-47c8-9283-7a57b038685f",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C1",
+      "claim": "ROR\u03b3t+ group 3 innate lymphoid cells (ILC3s) maintain intestinal homeostasis through secretion of type 3 cytokines such as interleukin (IL)\u221217 and IL-22.",
+      "claim_type": "EXPLICIT",
+      "source": "ROR\u03b3t+ group 3 innate lymphoid cells (ILC3s) maintain intestinal homeostasis through secretion of type 3 cytokines such as interleukin (IL)\u221217 and IL-22.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sonnenberg et al., 2012; Gronke et al., 2019; Hern\u00e1ndez et al., 2015; Zheng et al., 2008; Gladiator et al., 2013; Satoh-Takayama et al., 2008; Zenewicz et al., 2008 in the full text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "7aa1a997-bbec-4090-9435-ba7b7fa41f7c",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C2",
+      "claim": "CCR6- ILC3s co-express T-bet allowing for the acquisition of type 1 effector functions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CCR6- ILC3s additionally co-express T-bet allowing for the acquisition of type 1 effector functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "c993bf05-07f8-488d-84c4-b7749d234d12",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C3",
+      "claim": "c-Maf is a crucial negative regulator of murine T-bet+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify c-Maf as a crucial negative regulator of murine T-bet+ CCR6- ILC3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript including flow cytometry and RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "951e3b17-6d6a-4dc7-bdab-32db316fb978",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C4",
+      "claim": "c-Maf-deficient CCR6- ILC3s exhibit a hyper type 1 differentiation status, characterized by overexpression of ILC1/NK cell-related genes and downregulation of type 3 signature genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic and transcriptomic profiling of c-Maf-deficient CCR6- ILC3s revealed a hyper type 1 differentiation status, characterized by overexpression of ILC1/NK cell-related genes and downregulation of type 3 signature genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data and flow cytometry analysis presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "7329d294-911f-4c94-92ff-e71fca08a8da",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C5",
+      "claim": "c-Maf directly restrains T-bet expression.",
+      "claim_type": "EXPLICIT",
+      "source": "On the molecular level, c-Maf directly restrained T-bet expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by luciferase reporter assays showing c-Maf binding to Tbx21 promoter (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "5e589b0b-c68d-4935-8ee7-48330c68837f",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C6",
+      "claim": "c-Maf expression is dependent on T-bet.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, c-Maf expression was dependent on T-bet and regulated by IL-1\u03b2, IL-18 and Notch signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data showing reduced c-Maf in T-bet-deficient mice (Figure 3F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "37e26e1a-dd9a-4ec4-a52d-0e3f5cf5e1b1",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C7",
+      "claim": "c-Maf expression is regulated by IL-1\u03b2, IL-18 and Notch signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, c-Maf expression was dependent on T-bet and regulated by IL-1\u03b2, IL-18 and Notch signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vitro stimulation experiments and qPCR data (Figure 3G-J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "73eea7bf-1865-4159-ac5d-24657f1dc188",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C8",
+      "claim": "c-Maf forms a negative feedback loop with T-bet to preserve the identity of CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we define c-Maf as a crucial cell-intrinsic brake in the type 1 effector acquisition which forms a negative feedback loop with T-bet to preserve the identity of CCR6- ILC3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined data showing c-Maf represses T-bet while T-bet promotes c-Maf expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "dcf1633f-b97f-4c20-8384-3a08d226293f",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C9",
+      "claim": "In mice, ILC3s consist of two major subsets: CCR6+ ILC3s that include lymphoid tissue inducer (LTi) cells and CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, ILC3s consist of two major subsets, CCR6+ ILC3s that include lymphoid tissue inducer (LTi) cells and CCR6- ILC3s that can differentiate to cells expressing type 1 effector molecules, such as IFN-\u03b3 and the natural cytotoxic receptor NKp46 (Sawa et al., 2010; Klose et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sawa et al., 2010; Klose et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "bbea358f-c5dd-4a1e-864f-ee461ec7a464",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C10",
+      "claim": "CCR6- ILC3s can differentiate to cells expressing type 1 effector molecules, such as IFN-\u03b3 and the natural cytotoxic receptor NKp46.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, ILC3s consist of two major subsets, CCR6+ ILC3s that include lymphoid tissue inducer (LTi) cells and CCR6- ILC3s that can differentiate to cells expressing type 1 effector molecules, such as IFN-\u03b3 and the natural cytotoxic receptor NKp46 (Sawa et al., 2010; Klose et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sawa et al., 2010; Klose et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "211d9295-6bcc-499a-be65-119091453ee4",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C11",
+      "claim": "Fetal LTi and adult LTi-like CCR6+ ILC3s are essential for lymphoid organ development.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, fetal LTi and adult LTi-like CCR6+ ILC3s are essential for lymphoid organ development (Sun et al., 2000; Eberl et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sun et al., 2000; Eberl et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "bc37b7b7-dba0-474f-9277-5b8f62f930d0",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C12",
+      "claim": "NKp46+ CCR6- ILC3s are implicated in type 1 inflammatory immune responses and may have pathogenic functions during intestinal inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "while NKp46+ CCR6- ILC3s are implicated in type 1 inflammatory immune responses and thus may also have pathogenic functions during intestinal inflammation (Klose et al., 2013; Powell et al., 2012; Buonocore et al., 2010; Bernink et al., 2013; Vonarbourg et al., 2010; Rankin et al., 2016; Song et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Klose et al., 2013; Powell et al., 2012; Buonocore et al., 2010; Bernink et al., 2013; Vonarbourg et al., 2010; Rankin et al., 2016; Song et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "0db76c75-92e0-4f7a-b4bd-7226f7f2e37e",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C13",
+      "claim": "ROR\u03b3t is strictly required for the development of all ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factor (TF) ROR\u03b3t is strictly required for the development of all ILC3s, as mice deficient for ROR\u03b3t lack all ILC3 subsets (Eberl et al., 2004; Sanos et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Eberl et al., 2004; Sanos et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "dc163938-ae48-4dc3-b92d-96c1ede59f16",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C14",
+      "claim": "Mice deficient for ROR\u03b3t lack all ILC3 subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factor (TF) ROR\u03b3t is strictly required for the development of all ILC3s, as mice deficient for ROR\u03b3t lack all ILC3 subsets (Eberl et al., 2004; Sanos et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Eberl et al., 2004; Sanos et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "1df4a934-8381-4605-9d31-aedfd17a7da5",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C15",
+      "claim": "ROR\u03b3t controls the functionality of ILC3s by regulating the production of effector cytokines, such as IL-17 and IL-22.",
+      "claim_type": "EXPLICIT",
+      "source": "ROR\u03b3t also controls the functionality of ILC3s by regulating the production of effector cytokines, such as IL-17 and IL-22 (Ivanov et al., 2006; Rutz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ivanov et al., 2006; Rutz et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "41680153-6aec-47e9-84a5-92c93ca9cb84",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C16",
+      "claim": "CCR6- ILC3 co-express ROR\u03b3t and T-bet.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CCR6- ILC3 co-express ROR\u03b3t and the master regulator of type 1 immunity, T-bet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge and citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "7f5dd795-12d3-4775-a27a-8c7fb1d7dcba",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C17",
+      "claim": "T-bet is key to the differentiation of NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "T-bet is key to the differentiation of NKp46+ CCR6- ILC3s, as those cells fail to develop in mice lacking the gene encoding T-bet, Tbx21 (Klose et al., 2013; Rankin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Klose et al., 2013; Rankin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "949e2de0-1278-4450-9e11-698f313ee61d",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C18",
+      "claim": "NKp46+ CCR6- ILC3s fail to develop in mice lacking the gene encoding T-bet, Tbx21.",
+      "claim_type": "EXPLICIT",
+      "source": "T-bet is key to the differentiation of NKp46+ CCR6- ILC3s, as those cells fail to develop in mice lacking the gene encoding T-bet, Tbx21 (Klose et al., 2013; Rankin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Klose et al., 2013; Rankin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "44739a60-1b2f-49d9-a56f-c63b5014dc13",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C19",
+      "claim": "An increasing T-bet gradient enables functional plasticity of NKp46+ CCR6- ILC3s by instructing a type 1 effector program in ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, T-bet not only contributes to NKp46+ CCR6- ILC3 development, but an increasing T-bet gradient enables functional plasticity of NKp46+ CCR6- ILC3s by instructing a type 1 effector program in ILC3s (Klose et al., 2013; Scium\u00e9 et al., 2012; Klose et al., 2014; Cella et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Klose et al., 2013; Scium\u00e9 et al., 2012; Klose et al., 2014; Cella et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "e951d913-0992-4f2d-93e7-7122bb109a2c",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C20",
+      "claim": "Tunable T-bet expression in NKp46+ CCR6- ILC3s serves as a dynamic molecular switch from a type 3 to a type 1 phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Tunable T-bet expression in NKp46+ CCR6- ILC3s serves as a dynamic molecular switch from a type 3 to a type 1 phenotype (Klose et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Klose et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "242324ed-7783-4d5b-a7ff-a8c520314041",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C21",
+      "claim": "When T-bet expression reaches a sufficient level, it can act as a repressor of ROR\u03b3t, resulting in a full conversion of ILC3s to ILC1-like cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Once T-bet expression reaches a sufficient level, it can also act as a repressor of ROR\u03b3t, resulting eventually in a full conversion of ILC3s to ILC1-like cells (referred to as ILC3-to-1 plasticity) (Vonarbourg et al., 2010; Cella et al., 2019; Bernink et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vonarbourg et al., 2010; Cella et al., 2019; Bernink et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "52cb0f1d-377c-468f-959d-c5b7e7119a00",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C22",
+      "claim": "The balance between ROR\u03b3t versus T-bet expression dictates the fate and function of CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the balance between ROR\u03b3t versus T-bet expression dictates the fate and function of CCR6- ILC3s (Fang and Zhu, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fang and Zhu, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "886e8c7c-8b84-4d54-b31e-45ff1c0ac74b",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C23",
+      "claim": "The molecular mechanisms controlling the dynamic and quantitative co-expression of ROR\u03b3t and T-bet in CCR6- ILC3s are largely undefined.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the molecular mechanisms controlling the dynamic and quantitative co-expression of ROR\u03b3t and T-bet in CCR6- ILC3s are largely undefined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "6c58e935-a276-4b71-b165-ce82a14c8479",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C24",
+      "claim": "Cues from the microbiota, IL-23, IL-7 and Notch signaling promote or restrain T-bet-dependent plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Several extrinsic signals were shown to promote or restrain T-bet-dependent plasticity, most prominently cues from the microbiota, IL-23, IL-7 and Notch signaling (Klose et al., 2013; Sanos et al., 2009; Rankin et al., 2013; Viant et al., 2016; Chea et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Klose et al., 2013; Sanos et al., 2009; Rankin et al., 2013; Viant et al., 2016; Chea et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "f367254f-85d5-4404-9311-1d149068bdb2",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C25",
+      "claim": "Exposure to pro-inflammatory cytokines, such as IL-12, IL-15 and IL-18, supports transdifferentiation to an ILC1-like fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, exposure to pro-inflammatory cytokines, such as IL-12, IL-15 and IL-18, was reported to further support transdifferentiation to an ILC1-like fate (Vonarbourg et al., 2010; Bernink et al., 2015; Satoh-Takayama et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vonarbourg et al., 2010; Bernink et al., 2015; Satoh-Takayama et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "69f021ef-a8fc-45e2-a8b5-ce9195375a80",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C26",
+      "claim": "c-Maf is a central regulator of ROR\u03b3t+ CD4+ T cells, including ROR\u03b3t+ Foxp3+ Treg cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past, our group and others could identify the AP-1 TF c-Maf as a central regulator of ROR\u03b3t+ CD4+ T cells, including ROR\u03b3t+ Foxp3+ Treg cells (Neumann et al., 2019; Xu et al., 2018; Wheaton et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Neumann et al., 2019; Xu et al., 2018; Wheaton et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "3f2b1f9d-1786-45d7-a2e0-f21573f268f5",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C27",
+      "claim": "c-Maf is a central regulator of ROR\u03b3t+ Th17 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past, our group and others could identify the AP-1 TF c-Maf as a central regulator of ROR\u03b3t+ CD4+ T cells, including ROR\u03b3t+ Foxp3+ Treg cells (Neumann et al., 2019; Xu et al., 2018; Wheaton et al., 2017), ROR\u03b3t+ Th17 cells (Ciofani et al., 2012; Aschenbrenner et al., 2018; Tanaka et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ciofani et al., 2012; Aschenbrenner et al., 2018; Tanaka et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "6f8414ca-be5c-4391-9e7f-f9c254ce7d45",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C28",
+      "claim": "c-Maf is a central regulator of ROR\u03b3t+ \u03b3\u03b4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past, our group and others could identify the AP-1 TF c-Maf as a central regulator of ROR\u03b3t+ CD4+ T cells, including ROR\u03b3t+ Foxp3+ Treg cells (Neumann et al., 2019; Xu et al., 2018; Wheaton et al., 2017), ROR\u03b3t+ Th17 cells (Ciofani et al., 2012; Aschenbrenner et al., 2018; Tanaka et al., 2014) and ROR\u03b3t+ \u03b3\u03b4 T cells (Zuberbuehler et al., 2019), both in mouse and human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zuberbuehler et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "f119e111-89cb-46b2-93be-fcbea705043b",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C29",
+      "claim": "c-Maf directly binds and regulates key genes of ROR\u03b3t+ T cells, including IL-22 and ROR\u03b3t itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, c-Maf was shown to directly bind and regulate key genes of ROR\u03b3t+ T cells, including IL-22 and ROR\u03b3t itself (Tanaka et al., 2014; Zuberbuehler et al., 2019; Rutz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tanaka et al., 2014; Zuberbuehler et al., 2019; Rutz et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "41563f90-336e-41cc-b4e9-65bc55d12317",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C30",
+      "claim": "A broad transcriptional network analysis identified c-Maf as an important regulator of the ILC3-ILC1 balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a broad transcriptional network analysis also identified c-Maf as an important regulator of the ILC3-ILC1 balance, although the precise underlying molecular mechanisms have remained unclear (Pokrovskii et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pokrovskii et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "ee8901cf-8ea7-48e5-ba20-afacd073eae0",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C31",
+      "claim": "ILC3s express higher levels of c-Maf when compared to ILC1s or ILC2s.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that ILC3s expressed higher levels of c-Maf when compared to ILC1s or ILC2s (Figure 1A, gating strategy see Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "90e7bcbd-8083-4d7d-a310-cd883908ac0f",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C32",
+      "claim": "Among the ILC3 subsets, c-Maf is particularly highly expressed by NKp46+ CCR6- ILC3s at levels comparable to ROR\u03b3t+ CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the ILC3 subsets, c-Maf was particularly highly expressed by NKp46+ CCR6- ILC3s at levels comparable to ROR\u03b3t+ CD4+ T cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "8723a2cd-2482-4e86-873b-1678d903b30a",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C33",
+      "claim": "RorcCre Maffl/fl mice show decreased frequencies of ILC3s in the small intestinal lamina propria.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic analysis of siLP ILCs revealed decreased frequencies of ILC3s in the absence of c-Maf, whereas frequencies and total numbers of ILC1s and ILC2s were increased in RorcCre Maffl/fl mice when compared to littermate controls (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "f5927e56-2b44-474c-9fb6-7058bba5fd80",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C34",
+      "claim": "RorcCre Maffl/fl mice show increased frequencies and total numbers of ILC1s and ILC2s in the small intestinal lamina propria.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic analysis of siLP ILCs revealed decreased frequencies of ILC3s in the absence of c-Maf, whereas frequencies and total numbers of ILC1s and ILC2s were increased in RorcCre Maffl/fl mice when compared to littermate controls (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "84b477f5-71e2-40f3-88d5-ebdfb59834ab",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C35",
+      "claim": "RorcCre Maffl/fl mice show a selective loss of NKp46- CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Among ILC3s, we detected a selective loss of NKp46- CCR6- ILC3s in RorcCre Maffl/fl mice, while total numbers of NKp46+ CCR6- ILC3s and CCR6+ ILC3s were not significantly changed (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "12d4fa0b-bd06-4fc8-b357-00ef904230f1",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C36",
+      "claim": "c-Maf-deficient NKp46+ and NKp46- CCR6- ILC3s show significant downregulation of ROR\u03b3t protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, flow cytometric intracellular staining also revealed a significant downregulation of ROR\u03b3t protein levels in c-Maf-deficient NKp46+ and NKp46- CCR6- ILC3s, which was not observed in CCR6+ ILC3s (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "d44b0d1f-a8a4-4706-b7a6-27d8c023f463",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C37",
+      "claim": "ROR\u03b3t protein levels are not altered in c-Maf-deficient CCR6+ ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, flow cytometric intracellular staining also revealed a significant downregulation of ROR\u03b3t protein levels in c-Maf-deficient NKp46+ and NKp46- CCR6- ILC3s, which was not observed in CCR6+ ILC3s (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "57975c8f-dc89-4b3d-88a3-bf57c2e52b15",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C38",
+      "claim": "NKp46+ and NKp46- CCR6- ILC3s from RorcCre Maffl/fl mice exhibit significantly reduced frequencies of IL-17A and IL-22 producers after ex vivo restimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the decrease in ROR\u03b3t expression, NKp46+ and NKp46- CCR6- ILC3s from RorcCre Maffl/fl mice exhibited significantly reduced frequencies of IL-17A and IL-22 producers after ex vivo restimulation as compared to control cells (Figure 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "c70b3b13-9153-461e-b4ed-22e5fb2269de",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C39",
+      "claim": "No differences in IL-17A and IL-22 production were detected in CCR6+ ILC3s from RorcCre Maffl/fl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, no differences were detected in CCR6+ ILC3s, corroborating the selective role of c-Maf for the homeostasis and function of CCR6- ILC3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data presented in Figure 1F and G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "89ebba9f-c18a-4620-a475-cfa65fa4716b",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C40",
+      "claim": "c-Maf does not act as a repressor of IL-22 production in ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, c-Maf did not act as a repressor of IL-22 production in ILC3s, as it was shown for Th17 cells (Rutz et al., 2011), indicating essential differences in c-Maf function between ILCs and T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with published data on Th17 cells (Rutz et al., 2011) and the experimental data in this manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "04704372-126b-4048-8ade-7ace6443dfb0",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C41",
+      "claim": "c-Maf expression strongly correlates with T-bet expression in both NKp46+ and NKp46- CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, c-Maf expression strongly correlated with T-bet expression in both NKp46+ and NKp46- CCR6- ILC3s (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "e9e4f961-2552-473a-a801-36d0e563b511",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C42",
+      "claim": "c-Maf deficiency results in strong upregulation of T-bet and NKp46 expression in CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, c-Maf deficiency resulted in strong upregulation of T-bet and NKp46 expression, both on the population (frequencies) and at single cell level (gMFI), in CCR6- ILC3s (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "6ca8ce2f-9070-4692-bd76-2e3b1ffee357",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C43",
+      "claim": "c-Maf-deficient CCR6- ILC3s show increased frequencies of IFN-\u03b3 producing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the increase in T-bet expression, we also detected increased frequencies of IFN-\u03b3 producing cells within c-Maf-deficient CCR6- ILC3s as compared to c-Maf-competent control cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "71ff1704-a7c0-4529-96bd-d75489f342e1",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C44",
+      "claim": "Ki67 staining of c-Maf-deficient CCR6- ILC3s is not altered.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, Ki67 staining of c-Maf-deficient CCR6- ILC3s was not altered, ruling out that proliferative differences facilitated the skewing towards a type 1 phenotype in the absence of c-Maf (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "d3806926-0316-4204-a835-84d0c3639bf1",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C45",
+      "claim": "The expression of T-bet by CCR6- ILC3s is not altered when c-Maf is selectively deleted in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of T-bet by CCR6- ILC3s was not altered when c-Maf was selectively deleted in T cells, excluding that T cell-dependent alterations affected the type 1 conversion of ILC3s in RorcCre Maffl/fl mice (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data from Cd4Cre Maffl/fl mice shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "2d7f1ec5-fdfd-4dcc-b242-08920d928c0b",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C46",
+      "claim": "c-Maf-deficient CD4+ CCR6- ILC3s show higher expression of T-bet and NKp46 compared to their c-Maf-expressing counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected higher expression of T-bet and NKp46 in cells lacking c-Maf as compared to their c-Maf-expressing counterparts, indicating that the type 1 deviation of c-Maf-deficient CCR6- ILC3s was a cell-intrinsic phenomenon (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "1de11e7a-bb1c-4aea-9061-7890fb60ef95",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C47",
+      "claim": "Mixed bone marrow chimeras confirm the cell-intrinsic function of c-Maf in restraining T-bet expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, mixed bone marrow chimeras of wild-type and c-Maf-deficient cells confirmed the cell-intrinsic function of c-Maf in restraining T-bet expression (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data from mixed bone marrow chimeras shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "2c24d03e-0cbc-4c04-b1d4-7e755381a6e1",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C48",
+      "claim": "c-Maf has been shown to attenuate the differentiation of Th1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, c-Maf has also been shown to attenuate the differentiation of Th1 cells by a yet-to-be-defined mechanism (Ho et al., 1998), suggesting a broader role of c-Maf in restraining type 1 immune effector cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ho et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "f0b12190-f5d2-4729-8477-08c562375144",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C49",
+      "claim": "941 genes are differentially expressed between c-Maf-deficient and control NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 941 genes as differentially expressed (FC > 1.5, p-value < 0.05) between c-Maf-deficient and control NKp46+ CCR6- ILC3s (Figure 2E, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2E and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "7473dbef-0cf7-4de7-8c5f-d8393a328d66",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C50",
+      "claim": "Only ca. 30% of genes differentially expressed in NKp46+ CCR6- ILC3s are also differentially expressed in CCR6+ ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only ca. 30% of these genes (294 genes) were also found to be differentially expressed in CCR6+ ILC3s (Figure 2\u2014figure supplement 2C, Supplementary file 2), indicating a distinct function of c-Maf in NKp46+ CCR6- ILC3s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2\u2014figure supplement 2C and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "112377d3-5563-44de-aaeb-7a79dfb8bb23",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C51",
+      "claim": "c-Maf-deficient NKp46+ CCR6- ILC3s show a striking enrichment of type 1 and NK cell-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our flow cytometry data, we detected a striking enrichment of type 1 and NK cell-related genes (e.g. Tbx21, Ifng, Nos2, Klri2, Klrc1, Klrc2, Gzmb, Gzmd, Fasl) in c-Maf-deficient NKp46+ CCR6- ILC3s (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "66c0559e-1af1-4253-b883-726d4e7382e0",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C52",
+      "claim": "Bcl6 and Irf8 are significantly upregulated in the absence of c-Maf in NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, Bcl6 and Irf8, both recently described as crucial transcription factors promoting ILC1/NK cell gene programs (Pokrovskii et al., 2019; Adams et al., 2018), were also significantly upregulated in the absence of c-Maf in NKp46+ CCR6- ILC3s (Figure 2E, Figure 2\u2014figure supplement 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2E and Figure 2\u2014figure supplement 2D and E, and citations to Pokrovskii et al., 2019; Adams et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "1291dbba-ec76-4e48-af15-7ffae6a0fffb",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C53",
+      "claim": "Several type 3 effector genes are downregulated in NKp46+ CCR6- ILC3s upon c-Maf-deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, several type 3 effector genes (e.g. Il17a, Il17f, Il17re, Ccl20) were downregulated in NKp46+ CCR6- ILC3s upon c-Maf-deficiency (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "82609ada-8bad-4d89-8ba5-d9a7a314a73f",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C54",
+      "claim": "ILC1 and NK cell gene signatures are significantly enriched in c-Maf-deficient NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when applied to GSEA, both gene signatures were significantly enriched in c-Maf-deficient NKp46+ CCR6- ILC3s (Figure 2F), indicating a global shift in gene expression towards an ILC1/NK cell phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "79ffbd57-4bec-4c88-8b5f-bdb3dfa94cd8",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C55",
+      "claim": "NKp46+ CCR6- ILC3s are largely considered to be non-toxic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter finding is particularly interesting, since NKp46+ CCR6- ILC3s are largely considered to be non-toxic cells (Melo-Gonzalez and Hepworth, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Melo-Gonzalez and Hepworth, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "e95e839c-0d43-4754-a547-4587b234c73b",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C56",
+      "claim": "NKp46+ CCR6- ILC3s share a considerable transcriptional overlap with ILC1s.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, NKp46+ CCR6- ILC3s share a considerable transcriptional overlap with ILC1s, which also exhibit a degree of cytotoxic capacity (Robinette et al., 2015; Cortez and Colonna, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Robinette et al., 2015; Cortez and Colonna, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "cd03171a-90bc-4653-8058-933098f0658f",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C57",
+      "claim": "ILC1s exhibit a degree of cytotoxic capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, NKp46+ CCR6- ILC3s share a considerable transcriptional overlap with ILC1s, which also exhibit a degree of cytotoxic capacity (Robinette et al., 2015; Cortez and Colonna, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Robinette et al., 2015; Cortez and Colonna, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "9f279782-437f-4e6c-905a-5c9b8bf83d76",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C58",
+      "claim": "c-Maf-deficiency may result in marked cytotoxicity of NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, c-Maf-deficiency may result in marked cytotoxicity of NKp46+ CCR6- ILC3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the observed upregulation of cytotoxic genes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "e395a58b-9fdf-4f55-8f68-349043f1b9b5",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C59",
+      "claim": "Maf response elements (MARE) are present within the Tbx21 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in silico analysis identified Maf response elements (MARE) within the Tbx21 promoter, as well as in a conserved distant Tbx21 enhancer (Kataoka et al., 1994; Yang et al., 2007), both regions accessible in NKp46+ CCR6- ILC3s as evidenced by ATAC-sequencing (Shih et al., 2016; Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in silico analysis and ATAC-seq data (Shih et al., 2016) shown in Figure 3A and B, and citations to Kataoka et al., 1994; Yang et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "53bee18b-2673-4a06-aa29-8cee74ceb668",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C60",
+      "claim": "Maf response elements (MARE) are present in a conserved distant Tbx21 enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in silico analysis identified Maf response elements (MARE) within the Tbx21 promoter, as well as in a conserved distant Tbx21 enhancer (Kataoka et al., 1994; Yang et al., 2007), both regions accessible in NKp46+ CCR6- ILC3s as evidenced by ATAC-sequencing (Shih et al., 2016; Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in silico analysis and ATAC-seq data (Shih et al., 2016) shown in Figure 3A and B, and citations to Kataoka et al., 1994; Yang et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "aca9c56a-1b31-4fcb-9101-166b1e9bac74",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C61",
+      "claim": "The Tbx21 promoter and enhancer regions are accessible in NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in silico analysis identified Maf response elements (MARE) within the Tbx21 promoter, as well as in a conserved distant Tbx21 enhancer (Kataoka et al., 1994; Yang et al., 2007), both regions accessible in NKp46+ CCR6- ILC3s as evidenced by ATAC-sequencing (Shih et al., 2016; Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ATAC-seq data (Shih et al., 2016) shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "bd7f4eea-7531-4654-8ec8-fbdf40689f7b",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C62",
+      "claim": "The Tbx21 promoter shows strong transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Tbx21 promoter showed strong transcriptional activity when compared to a promoterless control vector (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by luciferase reporter assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "4a581ef2-bcf7-4876-9f2a-390ff248bc89",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C63",
+      "claim": "The Tbx21 enhancer increases transcriptional activity when cloned upstream of the Tbx21 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tbx21 enhancer further increased this activity when cloned upstream of the Tbx21 promoter (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by luciferase reporter assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "023d7b18-3971-4373-b615-4b82363cc95e",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C64",
+      "claim": "Mutating the MARE sites within the Tbx21 promoter results in de-repression of reporter signal upon c-Maf overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, upon exogenous overexpression of c-Maf, we detected a strong de-repression of the reporter signal when we mutated the MARE sites within the Tbx21 promoter (Figure 3B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by luciferase reporter assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "b8890a99-7dd8-4331-a681-f4ab980d47d9",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C65",
+      "claim": "c-Maf facilitates its suppressive function mainly by acting on the Tbx21 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, mutating the Tbx21 enhancer did not result in further increase of reporter activity, indicating that c-Maf facilitated its suppressive function mainly by acting on the Tbx21 promoter (Figure 3B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from luciferase reporter assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "3c29cb42-c568-4fe4-bac4-973ba1b20c40",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C66",
+      "claim": "In the absence of T-bet, c-Maf expression is strongly reduced in CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the absence of T-bet, c-Maf expression was strongly reduced when compared to T-bet-sufficient cells (Figure 3F), indicating that T-bet positively regulated its own repressor to establish an equilibrated state within the ILC3-to-ILC1 continuum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data from T-bet-deficient mice shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "8e6048aa-e8a4-4374-981c-449eba49702c",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C67",
+      "claim": "T-bet positively regulates c-Maf to establish an equilibrated state within the ILC3-to-ILC1 continuum.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the absence of T-bet, c-Maf expression was strongly reduced when compared to T-bet-sufficient cells (Figure 3F), indicating that T-bet positively regulated its own repressor to establish an equilibrated state within the ILC3-to-ILC1 continuum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that c-Maf expression is reduced in T-bet-deficient mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "5eaee70d-2176-46d6-8810-fc439e884423",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C68",
+      "claim": "T-bet binding peaks overlap with open chromatin regions in NKp46+ CCR6- ILC3s within two conserved non-coding sequences upstream of Maf.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico analysis of the Maf locus using ATAC-Seq (Shih et al., 2016) and T-bet ChIP-Seq (G\u00f6kmen et al., 2013) data further identified a striking overlap of T-bet binding peaks with open chromatin regions in NKp46+ CCR6- ILC3s within two conserved non-coding sequences (CNS-0.5 and CNS-1) upstream of Maf, suggesting that T-bet directly controlled c-Maf expression in CCR6- ILC3s (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ATAC-seq (Shih et al., 2016) and T-bet ChIP-seq (G\u00f6kmen et al., 2013) data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "2000d745-7e6b-430b-9022-f45d804d342e",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C69",
+      "claim": "T-bet directly controls c-Maf expression in CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico analysis of the Maf locus using ATAC-Seq (Shih et al., 2016) and T-bet ChIP-Seq (G\u00f6kmen et al., 2013) data further identified a striking overlap of T-bet binding peaks with open chromatin regions in NKp46+ CCR6- ILC3s within two conserved non-coding sequences (CNS-0.5 and CNS-1) upstream of Maf, suggesting that T-bet directly controlled c-Maf expression in CCR6- ILC3s (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from ATAC-seq and ChIP-seq data showing T-bet binding at Maf regulatory regions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "c0e6f969-62ba-4834-b9ef-121dd28faf2a",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C70",
+      "claim": "IL-1\u03b2 and IL-18 are potent inducers of Maf expression in NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all tested conditions, the pro-inflammatory IL-1 family cytokines IL-1\u00df and IL-18 stood out as potent inducers of Maf expression (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data from in vitro stimulation experiments shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "7dbdb5b3-07a6-4ff5-848c-cd33ff309d69",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C71",
+      "claim": "IL-1\u03b2/IL-18 stimulation induces Ifng and Il22 expression in NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-1\u00df/IL-18 stimulation also induced Ifng and Il22 expression (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "4e5572e2-ea71-49da-958c-6f35a5fcd810",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C72",
+      "claim": "c-Maf-deficient NKp46+ CCR6- ILC3s express more Ifng in response to IL-1\u03b2/IL-18 compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, c-Maf-deficient NKp46+ CCR6- ILC3s expressed more Ifng in response to IL-1\u00df/IL-18 as compared to controls (Figure 3\u2014figure supplement 2A), functionally connecting c-Maf expression downstream of these stimuli with the control of the type 1 effector response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "33b29668-9fb7-48f6-815e-a374c32349a3",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C73",
+      "claim": "A conserved NF-\u03bab binding site is present within CNS-0.5 upstream of Maf.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both IL-1\u00df and IL-18 signal via NF-\u03bab and a conserved NF-\u03bab binding site is present within CNS-0.5 upstream of Maf (Figure 3\u2014figure supplement 1C and D), we hypothesized that NF-\u03bab is involved in regulation of c-Maf expression downstream of IL-1\u00df/IL-18.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in silico analysis shown in Figure 3\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "91e4e203-19b1-446e-b16c-1d49648463e2",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C74",
+      "claim": "Pharmacological inhibition of NF-\u03bab signalling completely abrogates the IL-1\u03b2/IL-18-mediated induction of c-Maf expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, pharmacological inhibition of NF-\u03bab signalling completely abrogated the cytokine-mediated induction of c-Maf expression (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data from experiments using NF-\u03bab inhibitor shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "511de4dc-0428-43d1-80ab-de56ea4f1de2",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C75",
+      "claim": "IL-12 suppresses Maf expression in NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to IL-1\u00df/IL-18, we found that IL-12 suppressed Maf expression (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "0f313936-6494-4e9b-8a94-9ae06d0a1841",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C76",
+      "claim": "IL-12 does not interfere with the IL-1\u03b2/IL-18-mediated c-Maf induction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, IL-12 did not interfere with the IL-1\u00df/IL-18-mediated c-Maf induction nor was c-Maf expression altered in NKp46+ CCR6- ILC3s from Il12a-/- mice as compared to controls (Figure 3\u2014figure supplement 2B and C), questioning a dominant role of IL-12 in c-Maf regulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR and flow cytometry data shown in Figure 3\u2014figure supplement 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "8997ad7a-4ab0-4e3c-ba54-e2d4cb059f2f",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C77",
+      "claim": "c-Maf expression is not altered in NKp46+ CCR6- ILC3s from Il12a-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, IL-12 did not interfere with the IL-1\u00df/IL-18-mediated c-Maf induction nor was c-Maf expression altered in NKp46+ CCR6- ILC3s from Il12a-/- mice as compared to controls (Figure 3\u2014figure supplement 2B and C), questioning a dominant role of IL-12 in c-Maf regulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "aa362eaa-1a01-44eb-9baa-cde2a7c4cd78",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C78",
+      "claim": "IL-1\u03b2/IL-18 stimulation is accompanied by a concomitant decrease in Tbx21 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the cytokine-mediated induction of Maf expression was accompanied by a concomitant decrease in Tbx21 expression (Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "9da0b627-aec2-4cb3-b2c5-24f7e004dd53",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C79",
+      "claim": "The suppression of Tbx21 by IL-1\u03b2/IL-18 is independent of NF-\u03bab and c-Maf.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, this suppression was independent of NF-\u03bab and c-Maf, since Tbx21 expression was similarly suppressed by IL-1\u00df/IL-18 upon NF-\u03bab inhibiton and in c-Maf-deficient NKp46+ CCR6- ILC3s (Figure 3\u2014figure supplement 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3\u2014figure supplement 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "30b444d5-8c8d-4067-9b41-bb711503769d",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C80",
+      "claim": "Notch is necessary for the induction and maintenance of T-bet and NKp46 expression in CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Notch was shown to be necessary for the induction and maintenance of T-bet and NKp46 expression in CCR6- ILC3s (Rankin et al., 2013; Viant et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rankin et al., 2013; Viant et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "e2f35db0-ff4f-4e43-a3f2-46f844e76dbb",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C81",
+      "claim": "Notch signals are essential to drive type 1 conversion of NKp46+ CCR6- ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported earlier, Notch signals were essential to drive type 1 conversion of NKp46+ CCR6- ILC3s, as evidenced by reduction and loss of NKp46 expression in the absence of Notch (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro culture data on OP9 vs OP9-DLL1 cells shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "44f25b85-90ac-4d86-822c-fa313a3196e4",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C82",
+      "claim": "c-Maf expression is significantly reduced in NKp46+ CCR6- ILC3s cultured on OP9 cells compared to cells cultured on OP9-DLL1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, c-Maf showed a similar expression pattern, being significantly reduced in NKp46+ CCR6- ILC3s cultured on OP9 cells as compared to cells cultured on OP9-DLL1 cells (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data from OP9 vs OP9-DLL1 culture experiments shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "6b01d293-1bca-44e5-ac6f-f77f2b374f5a",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C83",
+      "claim": "The downregulation of NKp46 and c-Maf expression in the absence of continuous Notch signalling is independent of potential survival promoting effects of Notch.",
+      "claim_type": "EXPLICIT",
+      "source": "This downregulation of NKp46 and c-Maf expression in the absence of continuous Notch signalling was independent of potential survival promoting effects of Notch (Figure 3\u2014figure supplement 3), establishing a molecular link between Notch signalling and type 1 conversion of NKp46+ CCR6- ILC3s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proliferation analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "96672f6f-3316-4fe0-8e05-7c41ac7967f7",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C84",
+      "claim": "Co-expression and cross-regulation of multiple master regulators determines the fate and function of ILCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our study adds c-Maf as a novel key factor to the complex transcriptional network that governs the differentiation and function of ILC3s. In line with the emerging concept that co-expression and cross-regulation of multiple master regulators determines the fate and function of ILCs (Fang and Zhu, 2017), we have uncovered an essential negative feedback loop between c-Maf and T-bet, which restrains the type 1 conversion of ILC3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fang and Zhu, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "4e1358d6-f149-4fc7-a2af-23f4bc952059",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C85",
+      "claim": "The c-Maf-dependent suppression of T-bet indirectly stabilizes ROR\u03b3t expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the antagonism between T-bet and ROR\u03b3t, the c-Maf-dependent suppression of T-bet also indirectly stabilizes ROR\u03b3t expression, thus preserving the type 3 identity of ILC3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the known antagonism between T-bet and ROR\u03b3t and the observed effects of c-Maf on T-bet.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "3b6cfb3f-0272-4151-9e80-f718841f9503",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C86",
+      "claim": "c-Maf may directly contribute to ROR\u03b3t expression in ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, c-Maf may also directly contribute to ROR\u03b3t expression in ILC3s, as it has been reported for T cells (Tanaka et al., 2014; Zuberbuehler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on findings in T cells.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "ecc8c797-e122-447b-bbee-f468fb15d06d",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C87",
+      "claim": "Notch was identified as a potent inducer of c-Maf expression in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we could recently identify Notch signalling as a potent inducer of c-Maf expression in T cells (Neumann et al., 2019; Neumann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Neumann et al., 2019; Neumann et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "f02ed79a-d8e6-4b9c-a4b6-bde075d8af8c",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C88",
+      "claim": "Conditional deletion of c-Maf in T cells causes disturbances in intestinal homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, conditional deletion of c-Maf in T cells (Cd4Cre Maffl/fl or Foxp3Cre Maffl/fl) was reported to cause disturbances in intestinal homeostasis (Neumann et al., 2019; Imbratta et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Neumann et al., 2019; Imbratta et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "4c3955a1-a194-46a3-a7cd-21ca0061decd",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C89",
+      "claim": "A small subset of CCR6- ILC3s co-expresses CD4 (ca. 2% of CCR6- ILC3s).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a small subset of CCR6- ILC3s also co-expresses CD4 (ca. 2% of CCR6- ILC3s, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "10cdf543-5ed0-4fb5-afdc-4644a02d2b84",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C90",
+      "claim": "c-Maf staining of CD4+ CCR6- ILC3s from Cd4Cre Maffl/fl mice confirms c-Maf deletion in a substantial fraction of cells (ca. 50%).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, c-Maf staining of CD4+ CCR6- ILC3s from Cd4Cre Maffl/fl mice confirmed c-Maf deletion in a substantial fraction of cells (ca. 50%), allowing us to compare c-Maf-competent and c-Maf-deficient CCR6- ILC3s within the same mouse (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "ad43f97a-9d76-4216-9794-aec2cf55acce",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C91",
+      "claim": "c-Maf-deficient ILC3s cluster separately from their wild-type counterparts in principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis showed that c-Maf-deficient ILC3s clustered separately from their wild-type counterparts, demonstrating a unique role of c-Maf in shaping the transcriptome of ILC3s (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PCA analysis of RNA-seq data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "0c6bb840-0178-49b4-8b28-c62b32b01b2b",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C92",
+      "claim": "The function of c-Maf is specific to NKp46+ CCR6- ILC3s as opposed to CCR6+ ILC3s.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these data demonstrated that c-Maf was essential to globally balance type 1 and type 3 gene programs within CCR6- ILC3s. This function of c-Maf was specific to NKp46+ CCR6- ILC3s as opposed to CCR6+ ILC3s, most likely due to the particularly high c-Maf expression and the selective accessible of type 1 gene loci in these cells (Pokrovskii et al., 2019; Shih et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential gene expression patterns and supported by citations to Pokrovskii et al., 2019; Shih et al., 2016.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "4a8c2a1a-1d78-4724-b0ca-896e996f1a3e",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C93",
+      "claim": "The particularly high c-Maf expression and the selective accessibility of type 1 gene loci in NKp46+ CCR6- ILC3s likely explain the specific function of c-Maf in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This function of c-Maf was specific to NKp46+ CCR6- ILC3s as opposed to CCR6+ ILC3s, most likely due to the particularly high c-Maf expression and the selective accessible of type 1 gene loci in these cells (Pokrovskii et al., 2019; Shih et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on observed expression patterns and chromatin accessibility data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "3ba19537-fea2-4d59-b1da-e9c72d188864",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C94",
+      "claim": "In the absence of c-Maf, NKp46+ CCR6- ILC3s downregulate type 3 effector genes while overexpressing numerous genes encoding for type 1 and cytotoxic effector molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of c-Maf, NKp46+ CCR6- ILC3s downregulated type 3 effector genes, while overexpressing numerous genes encoding for type 1 and cytotoxic effector molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "9a32176f-97f3-4eed-8262-8dad8e3413da",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "claim_id": "C95",
+      "claim": "Bcl6 and Irf8 are crucial transcription factors promoting ILC1/NK cell gene programs.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, Bcl6 and Irf8, both recently described as crucial transcription factors promoting ILC1/NK cell gene programs (Pokrovskii et al., 2019; Adams et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pokrovskii et al., 2019; Adams et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1de62a72-8a21-4790-abca-bdadf9528679",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "c-Maf is differentially expressed across ILC subsets, with ILC3s showing higher expression than ILC1s or ILC2s, and NKp46+ CCR6- ILC3s expressing particularly high levels comparable to ROR\u03b3t+ CD4+ T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 are supported by flow cytometry data in Figure 1A-B showing clear differential expression patterns. The data demonstrate both relative differences between ILC subsets and absolute expression levels in specific populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "c5c78c2e-7aa6-40c8-922f-38b0629c9a92",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "c-Maf deficiency in RorcCre Maffl/fl mice alters ILC subset composition in the small intestinal lamina propria, with decreased ILC3 frequencies, increased ILC1 and ILC2 frequencies, and selective loss of NKp46- CCR6- ILC3s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by flow cytometry data in Figure 1C-D with appropriate statistical testing (n=5-6, p<0.05). The data show consistent changes in ILC subset distributions in knockout versus control mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "789bffef-2e82-4096-b533-d9377d53d2f7",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "c-Maf deficiency selectively reduces ROR\u03b3t protein levels and IL-17A/IL-22 production in CCR6- ILC3s but not in CCR6+ ILC3s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 are supported by flow cytometry data in Figure 1E-G showing significant downregulation of ROR\u03b3t and cytokine production specifically in CCR6- ILC3 subsets. The selective effect on CCR6- versus CCR6+ populations is clearly demonstrated with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "c6cfebe8-ee47-4c46-987e-e5b7187c0b57",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "c-Maf expression correlates with T-bet expression in CCR6- ILC3s, and c-Maf deficiency results in upregulation of T-bet, NKp46, and IFN-\u03b3 production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by flow cytometry data in Figure 2A-C showing correlation between c-Maf and T-bet expression and significant increases in type 1 markers upon c-Maf deletion. Statistical significance is demonstrated with appropriate sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "0a0dc95c-5c69-4618-93c3-0c7b6bf8a3cd",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The enhanced type 1 phenotype in c-Maf-deficient CCR6- ILC3s is cell-intrinsic and not due to proliferative differences or T cell-mediated effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by multiple control experiments including Ki67 staining, T cell-specific deletion analysis, and mixed bone marrow chimeras (Figure 2D, Figure 2\u2014figure supplement 1A-C). These experiments appropriately rule out alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "b49b5983-bcc8-479b-9fc0-09b11005bb07",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNA-seq analysis reveals that c-Maf deficiency causes global transcriptional changes in NKp46+ CCR6- ILC3s, with 941 differentially expressed genes showing enrichment of type 1/NK cell genes and downregulation of type 3 genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 and C91 are supported by comprehensive RNA-seq data with appropriate statistical thresholds (FC>1.5, p<0.05), PCA analysis, and GSEA showing significant enrichment of ILC1/NK signatures. The analysis includes three biological replicates and appropriate bioinformatic methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "1498ee14-7aa7-406f-9d03-a26ad942d45d",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "c-Maf directly represses T-bet expression by binding to Maf response elements (MARE) in the Tbx21 promoter, as demonstrated by in silico analysis, ATAC-seq data, and luciferase reporter assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C65 are supported by multiple lines of evidence including in silico identification of MARE sites, ATAC-seq showing chromatin accessibility, and functional luciferase assays demonstrating de-repression upon MARE mutation (Figure 3A-E). The reporter assays include appropriate controls and replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "4ea4e421-d1bc-4314-a032-f14bcd3f88e0",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "c-Maf expression is dependent on T-bet, with T-bet directly controlling c-Maf expression through binding to conserved non-coding sequences upstream of Maf, forming a negative feedback loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 are supported by flow cytometry data from T-bet-deficient mice (Figure 3F) and in silico analysis combining ATAC-seq and ChIP-seq data (Figure 3\u2014figure supplement 1). The evidence demonstrates both the dependence of c-Maf on T-bet and the molecular mechanism through direct binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "2c20b104-d857-493b-b445-b307bdce0f2c",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "IL-1\u03b2 and IL-18 induce c-Maf expression in NKp46+ CCR6- ILC3s through NF-\u03baB signaling, as demonstrated by in vitro stimulation experiments and pharmacological inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 are supported by qPCR data from in vitro stimulation experiments (Figure 3G-H) showing cytokine-induced Maf expression and complete abrogation by NF-\u03baB inhibition. The presence of NF-\u03baB binding sites in regulatory regions provides mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "fdc3a9d0-2263-4233-8504-746621c955bd",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IL-12 suppresses Maf expression in vitro but does not interfere with IL-1\u03b2/IL-18-mediated induction, and c-Maf expression is unchanged in Il12a-/- mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 are supported by qPCR and flow cytometry data (Figure 3G, Figure 3\u2014figure supplement 2B-C). The experiments appropriately test the role of IL-12 through both in vitro stimulation and genetic deletion, concluding a non-dominant role in c-Maf regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "18f507cf-4a22-4caa-b93f-b7168822f41a",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IL-1\u03b2/IL-18 stimulation decreases Tbx21 expression independently of NF-\u03baB and c-Maf.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are supported by qPCR data showing Tbx21 suppression persists with NF-\u03baB inhibition and in c-Maf-deficient cells (Figure 3\u2014figure supplement 2D-F). The experiments appropriately test independence from the identified regulatory pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "3abcc946-b658-40a0-aed8-8beb71d183e2",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Notch signaling is essential for type 1 conversion and c-Maf expression in NKp46+ CCR6- ILC3s, as demonstrated by OP9-DLL1 co-culture experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 are supported by in vitro culture experiments comparing OP9 versus OP9-DLL1 stromal cells (Figure 3I-J, Figure 3\u2014figure supplement 3). The data show parallel reduction in both NKp46 and c-Maf expression in the absence of Notch signaling, with appropriate controls for proliferation effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "9e08348d-77c9-4ef9-ade8-d420392d1319",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "c-Maf functions as a crucial negative regulator of CCR6- ILC3s by directly restraining T-bet expression while being itself dependent on T-bet, forming a negative feedback loop that prevents excessive type 1 differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C8 represent the central conclusion of the manuscript and are supported by the convergence of multiple experimental approaches including genetic deletion, transcriptomics, luciferase assays, and mechanistic studies. The feedback loop model is well-supported by bidirectional regulation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "a69fd43d-108e-4651-b6ef-d4df7bd8e547",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "c-Maf does not act as a repressor of IL-22 production in ILC3s, unlike its function in Th17 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is supported by the observation that IL-22 production is reduced (not increased) in c-Maf-deficient ILC3s (Figure 1G), contrasting with the repressive role reported in Th17 cells. This demonstrates cell type-specific differences in c-Maf function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "113c737b-4b60-4016-9f47-71ea34ca0e08",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "c-Maf-dependent suppression of T-bet indirectly stabilizes ROR\u03b3t expression, preserving type 3 identity of ILC3s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by the observed reduction in ROR\u03b3t levels in c-Maf-deficient cells (C36) combined with known T-bet/ROR\u03b3t antagonism. The inference is logical given the established regulatory relationships, though direct evidence for this specific mechanism is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "40403d26-b1e9-4f3e-a432-b83ba77e9e24",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The function of c-Maf is specific to NKp46+ CCR6- ILC3s compared to CCR6+ ILC3s, likely due to high c-Maf expression and selective accessibility of type 1 gene loci in these cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 are supported by RNA-seq data showing only 30% overlap in differentially expressed genes between NKp46+ CCR6- and CCR6+ ILC3s (C50), combined with expression data (C32) and cited chromatin accessibility studies. The mechanistic explanation is reasonable though partially inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "285bcb8b-4818-499a-845e-14e10f0a27db",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "c-Maf deficiency may result in marked cytotoxicity of NKp46+ CCR6- ILC3s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 is speculative based on observed upregulation of cytotoxic genes (Gzmb, Gzmd, Fasl) in RNA-seq data. However, no functional cytotoxicity assays were performed to validate this prediction. Additional experiments would be needed to support this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "4feb0424-2ce1-4f52-bf6c-a92694207b4c",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "c-Maf may directly contribute to ROR\u03b3t expression in ILC3s, as reported for T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is speculative, extrapolating from T cell data without direct evidence in ILC3s. While ROR\u03b3t is reduced in c-Maf-deficient ILC3s (C36), this could be indirect through T-bet upregulation. Direct binding or regulatory studies would be needed to confirm this mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claims establishing the known biology of ILC3s, T-bet, ROR\u03b3t, c-Maf, and their regulation in various immune cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C2, C9-C30, C48, C55-C57, C80, C84, C87-C88, C95) represent established knowledge from the literature, supported by appropriate citations. They provide necessary context for the novel findings but are not original results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    },
+    {
+      "id": "de9c70d4-dec7-49c5-85b0-80c4ab9d854e",
+      "content_id": "2cabc268-a5ee-4052-9c37-5c5db6e73495",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "A small subset (~2%) of CCR6- ILC3s co-expresses CD4, and approximately 50% of these cells show c-Maf deletion in Cd4Cre Maffl/fl mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 are supported by flow cytometry data in Figure 2\u2014figure supplement 1C. This observation is used as an internal control to demonstrate cell-intrinsic effects of c-Maf deletion within the same animal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.466278Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ee8901cf-8ea7-48e5-ba20-afacd073eae0",
+      "result_id": "1de62a72-8a21-4790-abca-bdadf9528679"
+    },
+    {
+      "claim_id": "90e7bcbd-8083-4d7d-a310-cd883908ac0f",
+      "result_id": "1de62a72-8a21-4790-abca-bdadf9528679"
+    },
+    {
+      "claim_id": "8723a2cd-2482-4e86-873b-1678d903b30a",
+      "result_id": "c5c78c2e-7aa6-40c8-922f-38b0629c9a92"
+    },
+    {
+      "claim_id": "f5927e56-2b44-474c-9fb6-7058bba5fd80",
+      "result_id": "c5c78c2e-7aa6-40c8-922f-38b0629c9a92"
+    },
+    {
+      "claim_id": "84b477f5-71e2-40f3-88d5-ebdfb59834ab",
+      "result_id": "c5c78c2e-7aa6-40c8-922f-38b0629c9a92"
+    },
+    {
+      "claim_id": "12d4fa0b-bd06-4fc8-b357-00ef904230f1",
+      "result_id": "789bffef-2e82-4096-b533-d9377d53d2f7"
+    },
+    {
+      "claim_id": "d44b0d1f-a8a4-4706-b7a6-27d8c023f463",
+      "result_id": "789bffef-2e82-4096-b533-d9377d53d2f7"
+    },
+    {
+      "claim_id": "57975c8f-dc89-4b3d-88a3-bf57c2e52b15",
+      "result_id": "789bffef-2e82-4096-b533-d9377d53d2f7"
+    },
+    {
+      "claim_id": "c70b3b13-9153-461e-b4ed-22e5fb2269de",
+      "result_id": "789bffef-2e82-4096-b533-d9377d53d2f7"
+    },
+    {
+      "claim_id": "04704372-126b-4048-8ade-7ace6443dfb0",
+      "result_id": "c6cfebe8-ee47-4c46-987e-e5b7187c0b57"
+    },
+    {
+      "claim_id": "e9e4f961-2552-473a-a801-36d0e563b511",
+      "result_id": "c6cfebe8-ee47-4c46-987e-e5b7187c0b57"
+    },
+    {
+      "claim_id": "6ca8ce2f-9070-4692-bd76-2e3b1ffee357",
+      "result_id": "c6cfebe8-ee47-4c46-987e-e5b7187c0b57"
+    },
+    {
+      "claim_id": "71ff1704-a7c0-4529-96bd-d75489f342e1",
+      "result_id": "0a0dc95c-5c69-4618-93c3-0c7b6bf8a3cd"
+    },
+    {
+      "claim_id": "d3806926-0316-4204-a835-84d0c3639bf1",
+      "result_id": "0a0dc95c-5c69-4618-93c3-0c7b6bf8a3cd"
+    },
+    {
+      "claim_id": "2d7f1ec5-fdfd-4dcc-b242-08920d928c0b",
+      "result_id": "0a0dc95c-5c69-4618-93c3-0c7b6bf8a3cd"
+    },
+    {
+      "claim_id": "1de11e7a-bb1c-4aea-9061-7890fb60ef95",
+      "result_id": "0a0dc95c-5c69-4618-93c3-0c7b6bf8a3cd"
+    },
+    {
+      "claim_id": "f0b12190-f5d2-4729-8477-08c562375144",
+      "result_id": "b49b5983-bcc8-479b-9fc0-09b11005bb07"
+    },
+    {
+      "claim_id": "7473dbef-0cf7-4de7-8c5f-d8393a328d66",
+      "result_id": "b49b5983-bcc8-479b-9fc0-09b11005bb07"
+    },
+    {
+      "claim_id": "112377d3-5563-44de-aaeb-7a79dfb8bb23",
+      "result_id": "b49b5983-bcc8-479b-9fc0-09b11005bb07"
+    },
+    {
+      "claim_id": "66c0559e-1af1-4253-b883-726d4e7382e0",
+      "result_id": "b49b5983-bcc8-479b-9fc0-09b11005bb07"
+    },
+    {
+      "claim_id": "1291dbba-ec76-4e48-af15-7ffae6a0fffb",
+      "result_id": "b49b5983-bcc8-479b-9fc0-09b11005bb07"
+    },
+    {
+      "claim_id": "82609ada-8bad-4d89-8ba5-d9a7a314a73f",
+      "result_id": "b49b5983-bcc8-479b-9fc0-09b11005bb07"
+    },
+    {
+      "claim_id": "ad43f97a-9d76-4216-9794-aec2cf55acce",
+      "result_id": "b49b5983-bcc8-479b-9fc0-09b11005bb07"
+    },
+    {
+      "claim_id": "e395a58b-9fdf-4f55-8f68-349043f1b9b5",
+      "result_id": "1498ee14-7aa7-406f-9d03-a26ad942d45d"
+    },
+    {
+      "claim_id": "53bee18b-2673-4a06-aa29-8cee74ceb668",
+      "result_id": "1498ee14-7aa7-406f-9d03-a26ad942d45d"
+    },
+    {
+      "claim_id": "aca9c56a-1b31-4fcb-9101-166b1e9bac74",
+      "result_id": "1498ee14-7aa7-406f-9d03-a26ad942d45d"
+    },
+    {
+      "claim_id": "bd7f4eea-7531-4654-8ec8-fbdf40689f7b",
+      "result_id": "1498ee14-7aa7-406f-9d03-a26ad942d45d"
+    },
+    {
+      "claim_id": "4a581ef2-bcf7-4876-9f2a-390ff248bc89",
+      "result_id": "1498ee14-7aa7-406f-9d03-a26ad942d45d"
+    },
+    {
+      "claim_id": "023d7b18-3971-4373-b615-4b82363cc95e",
+      "result_id": "1498ee14-7aa7-406f-9d03-a26ad942d45d"
+    },
+    {
+      "claim_id": "b8890a99-7dd8-4331-a681-f4ab980d47d9",
+      "result_id": "1498ee14-7aa7-406f-9d03-a26ad942d45d"
+    },
+    {
+      "claim_id": "3c29cb42-c568-4fe4-bac4-973ba1b20c40",
+      "result_id": "4ea4e421-d1bc-4314-a032-f14bcd3f88e0"
+    },
+    {
+      "claim_id": "8e6048aa-e8a4-4374-981c-449eba49702c",
+      "result_id": "4ea4e421-d1bc-4314-a032-f14bcd3f88e0"
+    },
+    {
+      "claim_id": "5eaee70d-2176-46d6-8810-fc439e884423",
+      "result_id": "4ea4e421-d1bc-4314-a032-f14bcd3f88e0"
+    },
+    {
+      "claim_id": "2000d745-7e6b-430b-9022-f45d804d342e",
+      "result_id": "4ea4e421-d1bc-4314-a032-f14bcd3f88e0"
+    },
+    {
+      "claim_id": "c0e6f969-62ba-4834-b9ef-121dd28faf2a",
+      "result_id": "2c20b104-d857-493b-b445-b307bdce0f2c"
+    },
+    {
+      "claim_id": "7dbdb5b3-07a6-4ff5-848c-cd33ff309d69",
+      "result_id": "2c20b104-d857-493b-b445-b307bdce0f2c"
+    },
+    {
+      "claim_id": "4e5572e2-ea71-49da-958c-6f35a5fcd810",
+      "result_id": "2c20b104-d857-493b-b445-b307bdce0f2c"
+    },
+    {
+      "claim_id": "33b29668-9fb7-48f6-815e-a374c32349a3",
+      "result_id": "2c20b104-d857-493b-b445-b307bdce0f2c"
+    },
+    {
+      "claim_id": "91e4e203-19b1-446e-b16c-1d49648463e2",
+      "result_id": "2c20b104-d857-493b-b445-b307bdce0f2c"
+    },
+    {
+      "claim_id": "511de4dc-0428-43d1-80ab-de56ea4f1de2",
+      "result_id": "fdc3a9d0-2263-4233-8504-746621c955bd"
+    },
+    {
+      "claim_id": "0f313936-6494-4e9b-8a94-9ae06d0a1841",
+      "result_id": "fdc3a9d0-2263-4233-8504-746621c955bd"
+    },
+    {
+      "claim_id": "8997ad7a-4ab0-4e3c-ba54-e2d4cb059f2f",
+      "result_id": "fdc3a9d0-2263-4233-8504-746621c955bd"
+    },
+    {
+      "claim_id": "aa362eaa-1a01-44eb-9baa-cde2a7c4cd78",
+      "result_id": "18f507cf-4a22-4caa-b93f-b7168822f41a"
+    },
+    {
+      "claim_id": "9da0b627-aec2-4cb3-b2c5-24f7e004dd53",
+      "result_id": "18f507cf-4a22-4caa-b93f-b7168822f41a"
+    },
+    {
+      "claim_id": "e2f35db0-ff4f-4e43-a3f2-46f844e76dbb",
+      "result_id": "3abcc946-b658-40a0-aed8-8beb71d183e2"
+    },
+    {
+      "claim_id": "44f25b85-90ac-4d86-822c-fa313a3196e4",
+      "result_id": "3abcc946-b658-40a0-aed8-8beb71d183e2"
+    },
+    {
+      "claim_id": "6b01d293-1bca-44e5-ac6f-f77f2b374f5a",
+      "result_id": "3abcc946-b658-40a0-aed8-8beb71d183e2"
+    },
+    {
+      "claim_id": "c993bf05-07f8-488d-84c4-b7749d234d12",
+      "result_id": "9e08348d-77c9-4ef9-ade8-d420392d1319"
+    },
+    {
+      "claim_id": "951e3b17-6d6a-4dc7-bdab-32db316fb978",
+      "result_id": "9e08348d-77c9-4ef9-ade8-d420392d1319"
+    },
+    {
+      "claim_id": "7329d294-911f-4c94-92ff-e71fca08a8da",
+      "result_id": "9e08348d-77c9-4ef9-ade8-d420392d1319"
+    },
+    {
+      "claim_id": "5e589b0b-c68d-4935-8ee7-48330c68837f",
+      "result_id": "9e08348d-77c9-4ef9-ade8-d420392d1319"
+    },
+    {
+      "claim_id": "37e26e1a-dd9a-4ec4-a52d-0e3f5cf5e1b1",
+      "result_id": "9e08348d-77c9-4ef9-ade8-d420392d1319"
+    },
+    {
+      "claim_id": "73eea7bf-1865-4159-ac5d-24657f1dc188",
+      "result_id": "9e08348d-77c9-4ef9-ade8-d420392d1319"
+    },
+    {
+      "claim_id": "89ebba9f-c18a-4620-a475-cfa65fa4716b",
+      "result_id": "a69fd43d-108e-4651-b6ef-d4df7bd8e547"
+    },
+    {
+      "claim_id": "4e1358d6-f149-4fc7-a2af-23f4bc952059",
+      "result_id": "113c737b-4b60-4016-9f47-71ea34ca0e08"
+    },
+    {
+      "claim_id": "0c6bb840-0178-49b4-8b28-c62b32b01b2b",
+      "result_id": "40403d26-b1e9-4f3e-a432-b83ba77e9e24"
+    },
+    {
+      "claim_id": "4a8c2a1a-1d78-4724-b0ca-896e996f1a3e",
+      "result_id": "40403d26-b1e9-4f3e-a432-b83ba77e9e24"
+    },
+    {
+      "claim_id": "9f279782-437f-4e6c-905a-5c9b8bf83d76",
+      "result_id": "285bcb8b-4818-499a-845e-14e10f0a27db"
+    },
+    {
+      "claim_id": "3b6cfb3f-0272-4151-9e80-f718841f9503",
+      "result_id": "4feb0424-2ce1-4f52-bf6c-a92694207b4c"
+    },
+    {
+      "claim_id": "a9e6382d-1696-47c8-9283-7a57b038685f",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "7aa1a997-bbec-4090-9435-ba7b7fa41f7c",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "dcf1633f-b97f-4c20-8384-3a08d226293f",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "bbea358f-c5dd-4a1e-864f-ee461ec7a464",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "211d9295-6bcc-499a-be65-119091453ee4",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "bc37b7b7-dba0-474f-9277-5b8f62f930d0",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "0db76c75-92e0-4f7a-b4bd-7226f7f2e37e",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "dc163938-ae48-4dc3-b92d-96c1ede59f16",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "1df4a934-8381-4605-9d31-aedfd17a7da5",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "41680153-6aec-47e9-84a5-92c93ca9cb84",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "7f5dd795-12d3-4775-a27a-8c7fb1d7dcba",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "949e2de0-1278-4450-9e11-698f313ee61d",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "44739a60-1b2f-49d9-a56f-c63b5014dc13",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "e951d913-0992-4f2d-93e7-7122bb109a2c",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "242324ed-7783-4d5b-a7ff-a8c520314041",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "52cb0f1d-377c-468f-959d-c5b7e7119a00",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "886e8c7c-8b84-4d54-b31e-45ff1c0ac74b",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "6c58e935-a276-4b71-b165-ce82a14c8479",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "f367254f-85d5-4404-9311-1d149068bdb2",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "69f021ef-a8fc-45e2-a8b5-ce9195375a80",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "3f2b1f9d-1786-45d7-a2e0-f21573f268f5",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "6f8414ca-be5c-4391-9e7f-f9c254ce7d45",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "f119e111-89cb-46b2-93be-fcbea705043b",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "41563f90-336e-41cc-b4e9-65bc55d12317",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "2c24d03e-0cbc-4c04-b1d4-7e755381a6e1",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "79ffbd57-4bec-4c88-8b5f-bdb3dfa94cd8",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "e95e839c-0d43-4754-a547-4587b234c73b",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "cd03171a-90bc-4653-8058-933098f0658f",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "30b444d5-8c8d-4067-9b41-bb711503769d",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "96672f6f-3316-4fe0-8e05-7c41ac7967f7",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "ecc8c797-e122-447b-bbee-f468fb15d06d",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "f02ed79a-d8e6-4b9c-a4b6-bde075d8af8c",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "9a32176f-97f3-4eed-8262-8dad8e3413da",
+      "result_id": "018b6a15-2964-4c7d-9f87-09cfb6eb92d8"
+    },
+    {
+      "claim_id": "4c3955a1-a194-46a3-a7cd-21ca0061decd",
+      "result_id": "de9c70d4-dec7-49c5-85b0-80c4ab9d854e"
+    },
+    {
+      "claim_id": "10cdf543-5ed0-4fb5-afdc-4644a02d2b84",
+      "result_id": "de9c70d4-dec7-49c5-85b0-80c4ab9d854e"
+    }
+  ],
+  "comparisons": []
+}

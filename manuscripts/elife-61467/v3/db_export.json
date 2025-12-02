@@ -1,0 +1,2045 @@
+{
+  "submission": {
+    "id": "85db2781-26f7-4ac8-95e9-7fb3ebcc1647",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:24:21.792733Z",
+    "updated_at": "2025-12-02T21:24:21.792733Z"
+  },
+  "content": [
+    {
+      "id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "submission_id": "85db2781-26f7-4ac8-95e9-7fb3ebcc1647",
+      "content_type": "manuscript",
+      "content_text": "# Structural insights into the nucleic acid remodeling mechanisms of the yeast THO-Sub2 complex\n\n## Authors\n\n- Sandra K Schuller<sup>1</sup> ([ORCID: 0000-0002-1800-8014](https://orcid.org/0000-0002-1800-8014))\n- Jan M Schuller<sup>1</sup> ([ORCID: 0000-0002-9121-1764](https://orcid.org/0000-0002-9121-1764))\n- J Rajan Prabu<sup>1</sup> ([ORCID: 0000-0002-7726-9310](https://orcid.org/0000-0002-7726-9310))\n- Marc Baumg\u00e4rtner<sup>1</sup>\n- Fabien Bonneau<sup>1</sup> ([ORCID: 0000-0001-8787-7662](https://orcid.org/0000-0001-8787-7662))\n- J\u00e9r\u00f4me Basquin<sup>1</sup>\n- Elena Conti<sup>1</sup> ([ORCID: 0000-0003-1254-5588](https://orcid.org/0000-0003-1254-5588)) \u2020\n\n### Affiliations\n\n1. Department of Structural Cell Biology, Max Planck Institute of Biochemistry Munich Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe yeast THO complex is recruited to active genes and interacts with the RNA-dependent ATPase Sub2 to facilitate the formation of mature export-competent messenger ribonucleoprotein particles and to prevent the co-transcriptional formation of RNA:DNA-hybrid-containing structures. How THO-containing complexes function at the mechanistic level is unclear. Here, we elucidated a 3.4 \u00c5 resolution structure of Saccharomyces cerevisiae THO-Sub2 by cryo-electron microscopy. THO subunits Tho2 and Hpr1 intertwine to form a platform that is bound by Mft1, Thp2, and Tex1. The resulting complex homodimerizes in an asymmetric fashion, with a Sub2 molecule attached to each protomer. The homodimerization interfaces serve as a fulcrum for a seesaw-like movement concomitant with conformational changes of the Sub2 ATPase. The overall structural architecture and topology suggest the molecular mechanisms of nucleic acid remodeling during mRNA biogenesis.\n\n## Introduction\n\nThe biogenesis of eukaryotic mRNAs in the cell nucleus is an elaborate, multi-step process. As the nascent transcript is synthesized by RNA polymerase II from the corresponding DNA template, it undergoes several chemical modifications, including 5' capping, splicing and 3'-end polyadenylation. Simultaneously, the nascent transcript associates with a cohort of complementary proteins to form a mature messenger ribonucleoprotein particle (mRNP) (Wende et al., 2019; Xie and Ren, 2019; M\u00fcller-McNicoll and Neugebauer, 2013; Meinel and Str\u00e4\u00dfer, 2015; Singh et al., 2015; Wegener and M\u00fcller-McNicoll, 2018). The mature mRNP is then shuttled through the nuclear pore to the cytoplasm via specific export factors (Moore and Proudfoot, 2009; M\u00fcller-McNicoll and Neugebauer, 2013; Rond\u00f3n et al., 2010; Wende et al., 2019; Xie and Ren, 2019). The individual steps in this process are orchestrated by multi-protein complexes. Among them is the transcription-export (TREX) complex, an evolutionary conserved complex containing a multi-protein assembly (transcription-dependent hyperrecombination complex THO), an RNA helicase (Sub2 in yeast/UAP56 in human), and an hnRNP-like protein (Yra1 in yeast/Ref/Aly in human) (Heath et al., 2016; Meinel and Str\u00e4\u00dfer, 2015; Str\u00e4sser and Hurt, 2001; Str\u00e4sser et al., 2002; Xie and Ren, 2019). Sub2 and Yra1 interplay with the mRNA-export factor Mex67-Mtr2 (TAP-p15 in human) (Heath et al., 2016; Str\u00e4sser and Hurt, 2001; Xie and Ren, 2019). As the name implies, the TREX complex is believed to play pivotal roles in linking the transcription and nuclear export steps in the mRNP biogenesis pathway, but the molecular mechanisms remain unclear.\n\nThe THO complex was first identified in Saccharomyces cerevisiae and named after the phenotypes observed upon mutations of its constituent subunits, most notably an increase in recombination events connected to the accumulation of R loops during transcription (Aguilera and Klein, 1988; Ch\u00e1vez et al., 2000; Ch\u00e1vez et al., 2001; Heath et al., 2016; Huertas and Aguilera, 2003; Piruat and Aguilera, 1998). R-loops can form behind the elongating RNA polymerase II when the nascent transcript erroneously reanneals with the DNA template to create a three-stranded nucleic acid structure consisting of an RNA:DNA hybrid and an unpaired single DNA strand. R loops are particularly prominent in discrete areas of the genome and can lead to recombination events and, eventually, genomic instability (Santos-Pereira and Aguilera, 2015; Skourti-Stathaki et al., 2014). Among the subunits of the yeast THO complex, the evolutionary conserved Tho2 and Hpr1 have the most drastic impact on mutation-induced phenotypes epitomized by a DNA recombination rate of about 3000 times that found in wild-type cells (Garc\u00eda-Rubio et al., 2008; Ch\u00e1vez et al., 2000). The mechanisms with which Tho2, Hpr1, and the other yeast THO complex core subunits (Mft1, Thp1, and Tex1) protect against R loop formation are thought to involve the unwinding activity of the Sub2 helicase (Luna et al., 2019). Indeed, THO enhances the ATPase properties of Sub2 (Ren et al., 2017), but there is currently no high-resolution structure of this complex to allow a mechanistic understanding (Ren et al., 2017).\n\nYeast Sub2 is a conserved RNA-dependent ATPase of the DEAD-box family, a group of enzymes known to destabilize and unwind RNA duplexes (Linder and Jankowsky, 2011; Xie and Ren, 2019). Biochemical studies have shown that Sub2 interacts tightly with THO both in vivo and in vitro (Jimeno et al., 2002; Luna et al., 2019; Pe\u00f1a et al., 2012; Ren et al., 2017; Str\u00e4sser et al., 2002). Furthermore, THO mutant alleles are synthetic lethal with a temperature-sensitive mutant of sub2 causing a fast onset of nuclear poly(A) RNA accumulation, a hallmark of defective mRNA export (Jimeno et al., 2002; Str\u00e4sser et al., 2002; Wegener and M\u00fcller-McNicoll, 2018). The mRNA export functions of Sub2 are mediated by its interacting partner Yra1, a non-shuttling hnRNP-like protein (Heath et al., 2016; Str\u00e4sser and Hurt, 2001; Stutz et al., 2000; Xie and Ren, 2019). The propensity of Yra1 to bind genomic areas that\u00a0are\u00a0prone to R-loop formation (Garc\u00eda-Rubio et al., 2008) is underscored by its ability to bind both RNA and DNA (Abruzzi et al., 2004). Additionally, Yra1 harbors potent RNA:RNA annealing activity (Portman et al., 1997). Data from both yeast and human studies have converged on the notion that THO binds Sub2, which in turn recruits Yra1 to form the TREX complex (Heath et al., 2016; Str\u00e4sser et al., 2002; Wende et al., 2019; Zenklusen et al., 2002). This series of events is remarkably conserved in the human orthologues, the DNA\u2013RNA helicase UAP56 (DDX39B) and the RNA-binding factor Aly/Ref (ALYREF) (Heath et al., 2016; Luo et al., 2001; Str\u00e4sser et al., 2002; Wende et al., 2019). In this study, we identify the molecular mechanisms utilized by yeast THO to activate the unwinding properties of the Sub2 ATPase, thereby intimating how THO-containing complexes can fulfil their functions in R loop prevention and mRNP formation.\n\n## Results and discussion\n\n### The S. cerevisiae THO complex is a dimer upon in vitro reconstitution and upon endogenous purification\n\nS. cerevisiae Tho2 (1597 aa, 184 kDa), Hpr1 (752 aa, 88 kDa), Mft1 (392 aa, 45 kDa), and Thp2 (261 aa, 30 kDa) are all expected to contain folded N-terminal regions that encompass more than two-thirds of their polypeptide chain and to be primarily \u03b1-helical in secondary structure as predicted by the program Phyre2 (Kelley et al., 2015; Figure 1A). Tex1 (422 aa, 47 kDa) is the only non-helical subunit of the THO complex and contains a \u03b2-propeller domain (Kelley et al., 2015; Figure 1A). Since, with the exception of Tex1, it was not possible to accurately predict the domain boundaries between the structured and unstructured regions of THO complex subunits, we co-expressed them as full-length proteins in insect cells. The recombinant THO complex was purified to homogeneity using affinity and size-exclusion chromatography (Figure 1B). Full-length Sub2 (446 aa, 50 kDa) was individually expressed, purified, and added to the THO complex. The THO-Sub2 assembly eluted as a single peak by size-exclusion chromatography, albeit at an earlier elution volume than expected for a globular mass of\u00a0~450 kDa and rather consistent with the presence of a dimer (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig1-v3.jpg)\n\n**Figure 1.:** (A) Domain organization of Tho2 (yellow), Hpr1 (green), Mft1 (light blue), Thp2 (dark blue), Tex1 (cyan), and Sub2 (with the RecA1 domain in pink and the RecA2 domain in purple). Gray parts are not resolved in the structural analysis described in the paper and correspond to regions predicted to be mainly unstructured. (B) Analytical size-exclusion chromatography of THO with/without GFP-Sub2. The co-elution of GFP-Sub2 was monitored by fluorescence at excitation 490 and emission 520 nm. The green line is the 280 nm absorbance signal of THO with GFP-Sub2; the purple line is the fluorescence signal of THO with GFP-Sub2. The asterisk indicates a Tho2 degradation product. (C) Tandem affinity isolation of native THO-containing complexes from haploid and diploid yeast. A single allele of HPR1 was tagged C-terminally with a Twin-Strep-3C-Protein-A tag (TSPA) in BY4741 (haploid) or BY4743 (diploid). Eluates resulting from IgG-affinity followed by Strep-tactin (IBA) affinity purification were analyzed on 12% SDS-PAGE stained with Instant Blue (Expedeon). M, molecular weight marker; Hpr1-TS, Hpr1 twin strep.\n\nTo assess the presence of THO dimerization in a cellular environment, we integrated a C-terminal tandem-affinity purification tag (Twin-strep-3C-Protein-A) at the endogenous HPR1 locus in BY4741 (haploid) and BY4743 (diploid) S. cerevisiae strains. The haploid strain produces only a tagged version of Hpr1, whereas the diploid strain retains both tagged and untagged versions. The native complex was isolated from both yeast strain extracts by tandem affinity purification (Figure 1C). An additional band corresponding to untagged Hpr1 was also observed in the complex originating from the diploid strain, consistent with the presence of a dimer in a physiological context.\n\n### Cryo-electron microscopy (cryo-EM) analysis of a yeast THO complex bound to Sub2\n\nFor cryo-EM single-particle analysis, we stabilized the THO-Sub2 assembly with the mild crosslinker BS3 to obtain a homogeneous particle distribution suitable for high-resolution reconstructions. After iterative-rounds of particle sorting and refinements, the reconstruction revealed the presence of an asymmetric dimer, with a well-ordered protomer resolved to a resolution of 3.7 \u00c5 and a more flexible protomer with a resolution spread of 3.8\u20137 \u00c5, referred to as rigid and flexible protomers, respectively (Figure 2A and Figure 2\u2014figure supplement 1; Supplementary file 1). Focusing\u00a0on the classification of the entire dataset on the rigid protomer, we improved the density map to 3.4 \u00c5 resolution (Figure 2\u2014figure supplement 2), allowing us to build the atomic model of the pentameric THO protomer de novo (Figure 2B\u00a0and Figure 2\u2014figure supplement 3; Supplementary file 1). The final model includes the large N-terminal structured regions of the five THO-complex subunits as well as a prominent low-complexity sequence of Hpr1 (residue 501\u2013675) (Figure 1A). The densities for Sub2 were modeled using the RecA domains from the reported high-resolution crystal structure (Ren et al., 2017). The density of the flexible protomer was interpreted using the structure of the rigid protomer (Figure 2B). The THO-Sub2 homodimer has a complex intertwined architecture (Figure 2B and C). Maximum-likelihood variance analysis of the cryo-EM data revealed that the significant nonuniform distribution of resolution resulted from the remarkable dynamic character of this assembly: the two protomers swivel with respect to each other, alternating the opening and closing of each side of the homodimer (referred to as proximal and distal sides; Figure 2D; Video 1). Since the sample we characterized by cryo-EM did not contain an energy source, these fluctuations likely reflect thermal motions. In support of our cryo-EM reconstruction (Figure 2), our findings are consistent with a previous negative-stain analysis of a native THO complex purified from yeast (Pe\u00f1a et al., 2012; Figure 2\u2014figure supplement 4). Although a previous THO model based on 6 \u00c5 resolution crystallography data (Ren et al., 2017) appears different from our structure at first glance, the differences can be reconciled by reinterpreting the crystal lattice (Figure 2\u2014figure supplement 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig2-v3.jpg)\n\n**Figure 2.:** (A) Segmented cryo-EM reconstruction of the THO-Sub2 dimer. Three different views are shown; proteins and domains are colored as in Figure 1A. Features discussed in the text are indicated, including the proximal and distal sides of the asymmetric homodimer, the rigid and flexible protomers, as well as the \u2018head and \u2018body\u2019 of each protomer. (B) Cartoon representation of the structure, shown in the same orientations and colors. Helices are rendered as solid cylinders. (C) Schematic representation of the THO-Sub2 complex architecture based on the cryo-EM structure. (D) Two frames of the raw cryo-EM data outputs from the variance analysis shown in Video 1. The Tho2 C-termini of the two protomers are shown in orange and green. Different conformations are adopted as the dimer switches the proximal and distal sides.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative micrograph acquired on a 300 keV Titan Krios equipped with a post-GIF K3 detector (Gatan, 5760 \u00d7 4092 pixel) showing particle distribution and reference-free 2D class-averages. (B) Gold-standard Fourier shell correlation (0.143 \u2013 FSC) plot from the final round of refinement for the entire map (THO-Sub2) and the two independently refined maps (rigid protomer and flexible protomer). (C) Particle sorting and classification tree used for 3D reconstruction of the THO-Sub2 complex. The major analysis branch (black) outlines the processing of the dimeric THO-Sub2 complex. The rigid and flexible protomers of the dimeric THO-Sub2 complex were refined locally after density subtraction. The minor analysis branch (gray) outlines the processing focused on the rigid protomer of THO-Sub2. The resolution and map quality were improved using local per-particle CTF-correction (see Figure 2\u2014figure supplement 2). (D) Local resolution analysis of dimeric THO-Sub2, the flexible protomer (E), and the rigid protomer (F) after density subtraction and local refinement. Maps show variation in local resolution as estimated by cryoSPARC.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Segmented cryo-electron microscopy reconstruction of the rigid THO-Sub2 protomer used for de novo atomic modeling. Front and back views are shown; proteins and domains are colored as in Figure 2. (B) Local resolution analysis as estimated by cryoSPARC of the high-resolved rigid THO-Sub2 protomer. (C) 3D FSC and preferred orientation analysis of the rigid THO-Sub2 protomer density calculated using the \u2018Remote 3DFSC Processing Server\u2019 web interface. The red line represents the estimated global FSC of 3.39 \u00c5\u00a0\u00b1\u00a01 SD (green dashed lines). The\u00a0sphericity of 0.983 indicates a uniform isotropic map without preferred particle orientation bias.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Left: Ramachandran plot of the main-chain \u03c6 and \u03c8 torsional angles of the rigid protomer THO-Sub2 atomic model. Areas of favored \u03c6 and \u03c8 combinations are defined in dark blue (see also Supplementary file 1). Right: Representative regions of the THO-Sub2 (same colors as in Figure 2) and surrounding electron density maps are shown. Subunits and residue numbers are specified. Snapshots are shown for the density of both folded regions and extended regions.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Comparison with a previous negative-stain analyses of the THO complex (Pe\u00f1a et al., 2012; Ren et al., 2017). Arrows highlight areas with distinctive features in the 2D class-averages and our reconstruction. Overall there is a\u00a0good agreement between the negative stain electron microscopy analysis and our structure. (B) Comparison with a previously published low-resolution X-ray structure (Ren et al., 2017), where the polypeptides for Tho2, Hpr1, Mft1, and Thp2 could not be distinguished, and are therefore all colored the same. The rectangle comprises the portion of the previous model that corresponds to a protomer. The other region of the previous model resulted from misinterpretation of the crystal lattice.\n\n![Video 1.](https://cdn.elifesciences.org/articles/61467/elife-61467-video1.mp4.jpg)\n\n**Video 1.:** Variance analysis of the THO-Sub2 complex structure, showing the swiveling motion of the two protomers with respect to each other.\n\n### Overall structure of yeast THO-Sub2 protomer\n\nIn each THO protomer, the proteins Tho2 and Hpr1 together create the platform of the complex (Figure 3A). The platform is about 200 \u00c5 in length, with an oval \u2018head\u2019 and with an extended \u2018body\u2019 formed almost exclusively by alpha-helices. The \u2018head\u2019 is formed by helical repeats of Hpr1 and a loosely structured region of Tho2. Conversely, the \u2018body\u2019 is formed by an extended array of helical repeats of Tho2 (mostly bi-helical HEAT repeats [Andrade et al., 2001]) and a largely unstructured segment of Hpr1. The two smallest THO proteins, Mft1 and Thp2, interact to form the \u2018arm\u2019 of the complex, a striking 200 \u00c5 long coiled-coil structure that is oriented diagonally with respect to the Tho2-Hpr1 platform. The Tho2-Hpr1 platform can arbitrarily be dissected into five contiguous modules (module-1 to -5) (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig3-v3.jpg)\n\n**Figure 3.:** (A) Front view of the THO-Sub2 rigid protomer shown as a cartoon backbone representation. (B) Same view as A with the five modules of the Tho2-Hpr1 platform in different colors. The rectangles highlight the position of the zoom-ins shown in panels C\u2013H. (C\u2013H) Zoom-in views showing the intermolecular interactions between different subunits of a THO-Sub2 protomer as discussed in the text. The cartoon representations show the molecule either in the same view as panel A or after the indicated rotation. Interactions are shown between: (C) Tho2-Hpr1 module-1 and the N-terminal portion of the Mft1-Thp2 coiled-coil; (D) module-2 and central portion of the Mft1-Thp2 coiled-coil; (E) module-3 interactions: Tho2 \u03b2-hairpin, bottom surface of Tex1, and loop from the C-terminal Mft1-Thp2 coiled-coil region; (F) Tho2-Hpr1 module-3 and curved surface of Tex1 \u03b2-propeller; (G) Tho2-Hpr1 module-4 and Sub2 RecA2 domain; (H) Tho2-Hpr1 module-5 and Sub2 RecA1 domain.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** THO-Sub2 rigid protomer (front view) shown in cartoon backbone representation (colors are as in Figure 2). The rectangles highlight the position of the zoom-ins shown in panels C\u2013H (identical to Figure 3). Interacting and evolutionary conserved residues (see alignments in Figure 3\u2014figure supplements 2\u20135\u00a0are shown as sticks and labeled. Although Mft1 and Thp2 share little conservation with their metazoan orthologues, the surfaces to which they bind on Tho2-Hpr1 contain evolutionary conserved residues (Figure 3\u2014figure supplements 1\u20135), suggesting they may share conserved architectural features.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The sequence alignment includes Tho2 orthologues from Saccharomyces cerevisiae (P53552), Schizosaccharomyces pombe (Q09779), Homo sapiens (Q8NI27), Danio rerio (F1R5B5), and Drosophila melanogaster (E2QCS8). The secondary structure elements are shown above the sequences, labeled, and colored according to the modules (module-1 to -5) as in Figure 3B Conserved residues are highlighted with color, with darker shades of slate-blue indicating high conservation. This and all other sequence alignments were generated using T-coffee (Notredame et al., 2000).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The sequence alignment includes the structured elements of Hpr1 orthologues from Saccharomyces cerevisiae (P17629), Schizosaccharomyces pombe (Q9URT2), Homo sapiens (Q96FV9), Danio rerio (Q7SYB2), and Drosophila melanogaster (Q9VNI8). The secondary structure elements are shown above the sequences and colored in green. The HEAT repeats of the small lobe are labeled. Conserved residues are highlighted with color, with darker shades of slate-blue indicating high conservation.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The sequence alignment includes Tex1 orthologues from Saccharomyces cerevisiae (P53851), Schizosaccharomyces pombe (Q9USL1), Homo sapiens (Q96J01), Danio rerio (Q6AXK9), and Drosophila melanogaster (Q9VHT2). The secondary structure elements are shown above the sequences, labeled and colored in cyan. Conserved residues are highlighted with color, with darker shades of slate-blue indicating high conservation.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig3-figsupp5-v3.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The sequence alignment includes Sub2 orthologues from Saccharomyces cerevisiae (Q07478), Schizosaccharomyces pombe (O13792), Homo sapiens (Q13838), Danio rerio (Q7SXU7), and Drosophila melanogaster (Q27268). The secondary structure elements are shown above the sequences and colored in light pink for RecA1 and dark pink for RecA2. Conserved residues are highlighted with color, with darker shades of slate-blue indicating high conservation.\n\n### The \u2018head\u2019 of the Tho2-Hpr1 platform binds Mft1-Thp2\n\nThe \u2018head\u2019 of each protomer comprises the first two Tho2-Hpr1 modules and forms the binding platform for Mft1-Thp2 (Figure 3A). Module-1 consists of the N-terminal portions of Tho2-Hpr1 and recognizes the N-terminal portion of the Mft1-Thp2 coiled coil (Figure 3C and\u00a0Figure 3\u2014figure supplement 1). Here, a four-helix bundle, consisting of a pair of helices from each Mft1 and Thp2, is sandwiched between a small HEAT-repeat lobe of Hpr1 and a composite helical fold formed by intercalating helices of Tho2 and Mft1 (Figure 3A).\n\nModule-1 connects to module-2 via an extended segment of Tho2 and a large network of conserved interactions (Figure 3\u2014figure supplements 1\u20133). Module-2 contains a large helical lobe of Hpr1 packed against the beginning of the helical array of the \u2018body\u2019 (the Tho2 HEAT1-2 bihelical repeats) (Figure 3A). Module-2 recognizes the middle portion of Mft1-Thp2, a two-helix coiled coil that is clamped within the two halves of the Hpr1 large helical lobe (Figure 3D\u00a0and Figure 3\u2014figure supplement 3). Although Mft1 and Thp2 share little conservation with their metazoan orthologues, the surfaces to which they bind on Tho2-Hpr1 contain evolutionary conserved residues (Figure 3\u2014figure supplements 1\u20133), suggesting that the two predicted orthologues in the metazoan complex (THOC5 and THOC7) may share similar architectural features. In module-2, the Hpr1 large lobe and Mft1 also feature well-structured loops that latch on to module-3 (Figure 3B and D).\n\n### The \u2018body\u2019 of the Tho2-Hpr1 platform binds Tex1 and Sub2\n\nThe \u2018body\u2019 of the complex contains the other three modules organized around the helical repeat array of Tho2 and the extended region of Hpr1 encompassing residues 501\u2013605 (Figure 3A). Module-3 is a MIF4G-like fold with five Tho2 helical repeats (HEAT 3\u20137) lined underneath by Hpr1 residues 501\u2013522 (Figure 3E\u00a0and Figure 3\u2014figure supplement 2). This module is characterized by two prominent insertions. A Tho2 \u03b2-hairpin insertion (between HEAT 5 and 6) forms a 50 \u00c5 protrusion that extends longitudinally on the concave side of the domain (Figure 3E). This insertion is buttressed along its length by Mft1 and Hpr1 loops from module-2 and reaches with its tip the C-terminal coiled-coil portion of Mft1-Thp2 (Figure 3B). Module-3 provides the Tex1-binding platform: the curved surface of the Tex1 \u03b2-propeller (blades 4\u00a0and\u00a05) binds the concave side of the MIF4G-like fold (at Tho2 HEAT 6\u00a0and\u00a07) with conserved interactions (Figure 3\u2014figure supplement 1F). In addition, the bottom surface of the Tex1 \u03b2-propeller interacts with the Tho2 \u03b2-hairpin (Figure 3E\u00a0and\u00a0F\u00a0and Figure 3\u2014figure supplements 1, 2, and 4). The other prominent insertion in module-3 is a long intra-repeat segment (at Tho2 HEAT 3) that packs along the edge of the MIF4G-like repeats and continues with a loop (referred to as the \u2018handle\u2019) latching on to module-4 (Figure 3B, F, and G).\n\nThe Sub2-binding platform in the \u2018body\u2019 of the complex is formed by module-4 and module-5 (Figure 3A). Module-4 comprises a MIF4G-like fold of Tho2 flanked by tri-helical motifs at both ends (referred to as ARM 8 and ARM 12\u00a0and\u00a013) and lined on the convex side by conserved interactions with the Hpr1 extended region spanning residues 523\u2013545 (Figure 3G and\u00a0Figure 3\u2014figure supplements 1\u20133). The RecA2 domain of Sub2 interacts with the concave side of this MIF4G-like fold (at Tho2 ARM 8 and HEAT 9) and contacts the \u2018handle\u2019 from module-3 (Figure 3G and\u00a0Figure 3\u2014figure supplements 1 and 5). Module-4 also contains a Tho2 helical insertion (between HEAT 11 and ARM 12) that latches on to module-5. In module-5, Tho2 has a V-shaped fold characterized by a larger side buttressed underneath by Hpr1 residues 546\u2013605 and a smaller side also containing the helical insertion from module-4 (Figure 3B and H). In the rigid protomer, the RecA1 domain of Sub2 binds the concave surface of module-5 (Tho2 HEAT 16) and the helical insertion from module-4 (Figure 3H). In the flexible protomer, the RecA1 domain does not have ordered density. Another difference between the two protomers is at the ends of the Mft1-Thp2 pairs, which change course roughly at the point where the Tho2 \u03b2-hairpin contacts the coiled coil (Figure 4\u2014figure supplement 1). Both differences relate to the homodimerization features of the complex, described below.\n\n### THO homodimerization is mediated by Thp2-Mft1 and Tex1\n\nIn the THO homodimer, the two Tho2-Hpr1 platforms are arranged in an antiparallel fashion, i.e. the \u2018head\u2019 of one protomer faces the \u2018body\u2019 of the other (Figure 2). The coiled-coil structures of the two Mft1-Thp2 \u2018arms\u2019 extend from opposite ends toward each other forming a chevron-like structure, with the two Tex1 protomers positioned below. The major homodimerization interface in the THO complex is mediated by Mft1-Thp2. The tips of the C-terminal coiled-coil portions of the Mft1-Thp2 pairs intersect at the vertex of the chevron forming a hydrophobic dimerization core (Figure 4A). An additional smaller homodimerization interface is mediated by the N-terminal helices of the two Tex1 molecules (Figure 4B). These two homodimerization interfaces appear to be the pivot point around which the rest of the Mft1-Thp2 coiled coils and the attached Tho2-Hpr1 platforms swing with a seesaw-like movement (Video 1; Figure 2D). Variance analysis of the cryo-EM data shows\u00a0that the movement is connected to changes in the two Sub2 proteins.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig4-v3.jpg)\n\n**Figure 4.:** The central panel shows the back and front views of the THO-Sub2 homodimer, with the whole complex in gray except the dimerization elements highlighted in color: the two Mft1-Thp2 protomers (back view) and the two Tex1 protomers (front view). (A) Zoom-in view of the dimerization interface between the C-terminal coiled-coil portions of Mft1 and Thp2 rigid (r) and flexible (f) protomers (back view of the complex). (B) Zoom-in view of the dimerization interface between the N-terminal helices of the two Tex1 protomers (front view of the complex).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The flexible protomer (colored in gray) is aligned on the rigid protomer (colored as in Figure 2). The coiled-coils of Mft1-Thp2 start to bend at the point where the Tho2 \u03b2-hairpin is close to Mft1 and then cross over to form the dimerization interface.\n\n### THO dimer asymmetry is connected to different conformations of two Sub2 ATPases\n\nLike other members of the DEAD-box family of ATPases, Sub2 is expected to undergo conformational changes connected to the nucleic-acid unwinding cycle (Ozgur et al., 2015b). In the ATP-RNA-bound active state, the two RecA domains adopt a well-defined closed conformation with a deep ATP-binding crevice and a shallow single-stranded RNA-binding cleft containing a sharp bend that is thought to be important for local RNA unwinding (Ozgur et al., 2015a; Ren et al., 2017). In the inactive state, DEAD-box proteins generally adopt more variable conformations in which the two RecA domains are spatially restrained by the flexible linker connecting them (Ozgur et al., 2015b). Members of the DEAD-box family (eIF4A, Dbp5, and DDX6) have also been shown to adopt an intermediate state upon binding MIF4G-like regulators, which maintain the RecA domains in a semi-closed (activated) conformation that resembles the structure adopted in the active state (Mathys et al., 2014; Montpetit et al., 2011; Sch\u00fctz et al., 2010).\n\nIn the THO-Sub2 cryo-EM reconstruction, the Sub2 protomer at the proximal side of the homodimer adopts an intermediate semi-closed conformation, similar to that observed in other DEAD-box proteins in the activated state (Mathys et al., 2014; Montpetit et al., 2011; Sch\u00fctz et al., 2010; Figure 5 and\u00a0Figure 5\u2014figure supplement 1), rationalizing the Sub2 ATPase-activating properties of THO (Ren et al., 2017). The interactions that keep Sub2 in the activated conformation appear to be more extensive as compared to those in other DEAD-box proteins, as Sub2 binds at three sites in the \u2018body\u2019 of the rigid protomer (module-4,\u00a0-5, and the latch;\u00a0Figure 5) and appears to be additionally stabilized by contacts with the \u2018head\u2019 of the flexible protomer. These contacts are not present at the distal side of the homodimer, where the distance between the two protomers is larger and where indeed there is a higher degree of flexibility in the density map (Figure 2D). Thus, in our cryo-EM reconstruction of a THO complex in a resting state (e.g. without substrate or energy source), one Sub2 is kept in an activated conformation at the proximal side and the other Sub2 is in a flexible conformation at the distal site. Conformational changes of the Sub2 RecA domains upon substrate binding are expected to trigger changes in the connections with which the modules are sequentially latched on to each other, thus imparting directionality to the intrinsic seesaw-like movements that we observed in the resting state of the complex.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig5-v3.jpg)\n\n**Figure 5.:** (A) Sub2-Tho2 interaction at the proximal side. The zoom\u00a0views show a subset of conserved interacting residues. See also Figure 3\u2014figure supplements 2 and 5. (B) Structure of DDX6-CNOT1-4ET (Ozgur et al., 2015a) shown in the same orientation as Sub2-Tho2 in panel A after superposition of their RecA2 domains. Note that\u00a0the Tho2 \u2018handle\u2019 binds RecA2 at the equivalent position as protein 4E-T.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Comparison of the activated semi-closed Sub2 structure as found at the proximal side of the THO homodimer cryo-electron microscopy structure with the conformation of active Sub2, bound to RNA, nucleotide, and the C-terminal motif of Yra1 (C-box) (Ren et al., 2017). All structures are aligned on the N-terminal RecA1 domain. The RecA1 domain is colored in light-pink, the RecA2 in purple, and Yra1 in gray. RNA is shown in black and nucleotide in yellow.\n\n### Mechanistic model for THO/TREX function\n\nIn all DEAD-box proteins, the active ATP consumption step depends on the concomitant presence of RNA (Linder and Jankowsky, 2011; Zingler et al., 2008). In addition, Sub2 requires the last subunit of the TREX complex, Yra1, to efficiently bind RNA (Ren et al., 2017). Yra1 has an unusual domain architecture with a central RRM (RNA recognition motif)\u00a0domain connected by low-complexity sequences to similar and conserved motifs at the N- and C-termini (N-box and C-box motifs): the C-box specifically binds the Sub2 RecA1 domain while the N-box can also bind Sub2 with a similar affinity (Figure 6\u2014figure supplement 1A; Ren et al., 2017; Str\u00e4sser and Hurt, 2001; Stutz et al., 2000). Given the dimeric nature of THO-Sub2, a single Yra1 molecule could thus, in principle, bridge the Sub2 molecules at the proximal and distal sides of the complex (Figure 6 and\u00a0Figure 6\u2014figure supplement 1). We envision that the RNA-dependent ATP binding and hydrolysis steps of Sub2 allow the complex to travel along the nascent mRNA and prevent the formation of aberrant secondary structures. It is also possible that the Sub2 ATPase cycle may impact the loading of Yra1 onto the mRNA.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig6-v3.jpg)\n\n**Figure 6.:** Schematic depicts the TREX complex: on the left at resting state, with Yra1 bound to the Sub2 RecA1 domains via its N-box and C-box motifs (Ren et al., 2017); on the right in a substrate-binding state, with an RNA:DNA hybrid positioning the 5\u2019 ends of the RNA (red) and DNA (black) strands at the two opposite RecA1 domains (see also Figure 6\u2014figure supplement 1). Binding of the RNA strand to the activated Sub2 would require changes in their relative orientation. In this hypothetical model, the energy released at the RNA-dependent ATP hydrolysis step is harnessed in a mechanical movement as the separated strands are dissociated and the complex returns to the resting state. The involvement of such mechanical force explains how incorporation in the complex may allow Sub2 to resolve RNA:DNA hybrids that would otherwise be too long to be melted by a DEAD-box protein in isolation\u00a0(Garc\u00eda-Pichardo et al., 2017;\u00a0Linder and Jankowsky, 2011).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61467/elife-61467-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The scheme on the top left shows the domain organization of Yra1. The N-terminal and C-terminal regions of Yra1 bind to Sub2 with similar affinities as measured in the fluorescence anisotropy experiment on the right panel. In this experiment, we used fluorescent peptides corresponding to the N-terminal and C-terminal regions flanking the RRM, with sequences shown at the bottom right panel, in an alignment that highlights the similarities between the two motifs. Stars indicate residues that are involved in binding the C-box to Sub2 (Ren et al., 2017). The peptides were labeled with a 5\u2019\u22126-carboxy-fluorescein (6-FAM), dissolved to a concentration of 10 nM and incubated with Sub2 for 20 min at different concentrations in a buffer containing 20 mM Tris-HCl (pH 7.4), 250 mM NaCl, and 2 mM dithiothreitol, at 20\u00b0C in 50 \u00b5l reactions on an Infinite (Tecan). The excitation and emission wavelengths were 485 and 535 nm, respectively. Each titration point was measured three\u00a0times using 10 reads with an integration time of 40 \u00b5s. The data were analyzed by nonlinear regression fitting using the BIOEQS software. Both peptides bound Sub2 with a similarity affinity, with a Kd of 2.9 \u03bcM. (B) Hypothetical model of RNA:DNA hybrid recognition by THO. The cryo-EM structure of THO and Sub2 RecA2 is presented in surface representation. In the cartoon surface representation, the model is based on the superposition with the Sub2\u2013RNA\u2013ADP BeFx structure with Yra1 C-box (in gray, [Ren et al., 2017]) and fitted with an RNA:DNA hybrid (pdb code 1hys) as it positions the 5\u2019 ends of the RNA (red) and DNA (black) strands at the two opposite RecA1 domains. The duplex could bind Sub2 similarly to what has been reported for the DEAD-box protein Mss16 (Mallam et al., 2012) and consistently with the properties of the human orthologue (P\u00e9rez-Calero et al., 2020).\n\nThe dimeric nature of THO-Sub2 also has important implications for how the complex may function in preventing R loop formation. Like all other helicases, Sub2 binds an RNA strand with fixed polarity, namely with the 3' end at RecA1 and the 5' end at RecA2 (Ren et al., 2017). In addition, the human Sub2 orthologue UAP56 has been shown to bind and unwind RNA:DNA duplexes (P\u00e9rez-Calero et al., 2020). Since the two Sub2 proteins are kept in opposite orientation by the two antiparallel Tho2-Hpr1 platforms in the THO dimer, the interacting nucleic acid strands would in turn need to have an opposite orientation. The topology of Sub2 within the complex is therefore compatible with the topology of R-loops, where the two strands of the RNA:DNA hybrid have opposite polarity (Figure 6 and Figure 6\u2014figure supplement 1). We propose that after the RNA:DNA hybrid is recognized and melted by binding to the two Sub2 molecules in the complex, the individual strands are released upon ATP hydrolysis and can engage in appropriate interactions due to the vicinity of the other DNA strand and of the RNA-annealing activity of Yra1 (Figure 6). Such a mechanism reconciles the intrinsic duality of the TREX complex in mRNA biogenesis, to dissolve RNA:DNA hybrids that can form upon mRNA synthesis, thus preventing R-loop formation, and to favor the annealing of RNA:RNA structures, thus chaperoning the formation of mature mRNPs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21 Star (DE3) pRARE</td>\n      <td>EMBL Heidelberg Core Facility</td>\n      <td></td>\n      <td>Electrocompetent cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>IPLB-Sf21-AE</td>\n      <td>Gibco</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Trichoplusia ni)</td>\n      <td>BTI-Tn-5B1-4</td>\n      <td>Gibco</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>BY4741 (MATa) yeast</td>\n      <td>Euroscarf</td>\n      <td>Y00000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>BY4743 (MATa/\u03b1) yeast</td>\n      <td>Euroscarf</td>\n      <td>Y20000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-protein-A IgG (mouse, monoclonal)</td>\n      <td>Sigma Aldrich</td>\n      <td>P2921</td>\n      <td>(1:333 dilution)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Tho2</td>\n      <td>This paper (Materials and methods)</td>\n      <td>Uniprot P53552</td>\n      <td>pFastBac Hta-Tho2 Conti Lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Hpr1</td>\n      <td>This paper (Materials and\u00a0methods)</td>\n      <td>Uniprot P17629</td>\n      <td>pFastBac Hta-Hpr1 Conti Lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Mft1</td>\n      <td>This paper (Materials and\u00a0methods)</td>\n      <td>Uniprot P33441</td>\n      <td>pFastBac Hta-Mft1 Conti Lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Thp2</td>\n      <td>This paper (Materials and\u00a0methods)</td>\n      <td>Uniprot O13539</td>\n      <td>pFastBac Hta-Thp2 Conti Lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Tex1</td>\n      <td>This paper (Materials and\u00a0methods)</td>\n      <td>Uniprot P53851</td>\n      <td>pFastBac Hta-Tex1 Conti Lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Sub2</td>\n      <td>This paper (Materials and\u00a0methods)</td>\n      <td>Uniprot Q07478</td>\n      <td>3C-GST-fusion Conti Lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GFP-Sub2</td>\n      <td>This paper (Materials and\u00a0methods)</td>\n      <td></td>\n      <td>Conti Lab</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Bac-to-Bac Baculovirus Expression System</td>\n      <td>ThermoFisher Scientific</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SerialEM</td>\n      <td>https://bio3d.colorado.edu/SerialEM/</td>\n      <td>SerialEM_3-8- 0beta8_64 &amp; SerialEM_3-8- 0beta11_64</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Focus</td>\n      <td>https://focus.c-cina.unibas.ch/ wiki/doku.php</td>\n      <td>v 1.1.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryosparc</td>\n      <td>doi: 10.1038/nmeth.4169</td>\n      <td>Cryosparc2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CTFfind4</td>\n      <td>doi: 10.1016/j.jsb.2015.08.008</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TOPAZ</td>\n      <td>doi: 10.1038/s41592-019-0575-8</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>UCSF, https://www.cgl.ucsf.edu/chimera/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF ChimeraX</td>\n      <td>UCSF, https://www.rbvi.ucsf.edu/chimerax/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>http://www2.mrc-lmb.cam.ac.uk/ personal/pemsley/coot/</td>\n      <td>0.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>https://www.phenix-online.org/</td>\n      <td>PHENIX 1.18</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Molprobity</td>\n      <td>Duke Biochemistry, http://molprobity.biochem.duke.edu/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMol 2</td>\n      <td>PyMOL Molecular Graphics System, Schrodinger LLC</td>\n      <td>PyMOL 2.1</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Biochemical reconstitution\n\nS. cerevisiae Tho2 (1597 aa, 184 kDa), Hpr1 (752 aa, 88 kDa), Mft1 (392 aa, 45 kDa), and Thp2 (261 aa, 30 kDa) were co-expressed as full-length proteins in insect cells using the pFastBac system. Tex1 (422 aa, 47 kDa) was C-terminally truncated (residues 1\u2013380) to increase protein stability. The proteins were tagged with an N-terminal TEV-cleavable His tag. Cells were infected with 1% (v/v) virus and harvested 72 hr after infection. The cells were pelleted, resuspended, and lysed with a Dounce homogenizer in lysis buffer containing 50 mM Tris-HCl (pH 7.5), 500 mM NaCl, 5% glycerol, 5 mM \u03b2-mercaptoethanol, and 30 mM imidazole, supplemented with complete protease inhibitor (Roche) and benzonase. THO complex was affinity purified using nickel-based affinity chromatography (IMAC, HIS-Select resin from Sigma-Aldrich). After washing with 20 column volumes\u00a0(CVs) of lysis buffer, the bound THO complex was eluted by increasing the imidazole concentration to 300 mM. For tag-cleavage TEV protease was added and the complex was dialyzed overnight in 50 mM Tris-HCl (pH 7.5), 250 mM NaCl, 5% glycerol, and\u00a05 mM \u03b2-mercaptoethanol. For tag-removal the cleaved complex was once passed over IMAC beads and the beads were washed with an extra CV of dialysis buffer. As a final purification step the complex was concentrated with an Amicon 30 kDa cut-off filter and purified via size-exclusion chromatography (Superose6, equilibrated in 25 mM HEPES [pH 7.5], 150 mM NaCl, 5% glycerol, and 2 mM DTT).\n\nSub2 was expressed as an N-terminal 3C cleavable GST-fusion protein in E. coli STAR pRARE cells. After cell lysis by sonication and pelleting of cell debris the supernatant was incubated with GSH affinity beads in 50 mM Tris-HCl (pH 7.5), 500 mM NaCl, 5% glycerol, and\u00a02 mM DTT, supplemented with benzonase and AEBSF. After removal of the GST tag via 3C protease with on-column cleavage, the proteins were further purified via a heparin column and injected onto a size-exclusion chromatography column (Superdex200 16/60) equilibrated in 20 mM HEPES pH 7.5, 200 mM NaCl, and 2 mM DTT. Purified proteins were concentrated, flash frozen in liquid nitrogen, and stored at \u221280\u00b0C. GFP-Sub2 was purified according to the same protocol.\n\nThe analytical size-exclusion chromatography to assess the reconstitution of THO and THO-Sub2 shown in Figure 1A was carried out on a Thermo Scientific Vanquish Ultra High-Performance Liquid Chromatography (UHPLC) platform, a system with improved separation and equipped with a fluorescence detector. Using this system, the reconstituted THO complex eluted at a molecular mass expected for a dimer. Since addition of Sub2 resulted only in a minor shift of the elution peak, the analytical experiment to confirm complex formation was carried out with GFP-Sub2 and monitored at the appropriate wavelength showing that Sub2-GFP indeed co-migrated with the THO complex. The same reconstitution conditions with untagged Sub2 were used for the sample subjected to cryo-EM single particle analysis.\n\n### Native complex isolation\n\nA sequence coding for a C-terminal Twin-Strep-3C-Protein-A tandem affinity tag was inserted into the endogenous HPR1 locus in S. cerevisiae strains BY4741 (MATa) and BY4743 (MATa/\u03b1) using standard yeast genetics techniques. Yeast were grown in 500 ml YPD to OD600\u00a0=\u00a01, harvested by filtration and frozen in liquid nitrogen until processing. Frozen yeast nuggets were lysed with a cryo-mill (SPEX), resuspended in 1 ml ice-cold purification buffer (50 mM potassium phosphate pH 8\u00a0and 0.1% NP40) and incubated for 30 min with protein-G dynabeads (Life Technologies) coated with anti-protein-A IgG (Sigma-Aldrich). Beads were separated from the lysate with a magnet, washed four\u00a0times in 1 ml purification buffer, resuspended in 200 \u00b5l purification buffer containing 250 ng 3C protease, and rotated\u00a0for 30 min at 4\u00b0C. 3C-eluates were incubated for\u00a030 min at 4\u00b0C with MagStrepXT magnetic beads (IBA) before washing beads three\u00a0times in 1 ml purification buffer and eluting in 20 \u00b5l SDS-loading dye. Whole SDS-eluates were separated on 12% SDS-PAGE and stained with Instant Blue (Expedeon).\n\n### Cryo-EM sample preparation and data collection\n\nThe THO-Sub2 complex was assembled by incubating a fivefold molar excess of Sub2 together with purified THO complex and separating the excess helicase using size-exclusion chromatography. Fractions containing the full complex were pooled and the complex stabilized by mild\u00a0cross-linking using 1 mM BS3 (bissulfosuccinimidyl suberate) for 15 min at RT. The sample was quenched with ammonium bicarbonate and concentrated to 1 mg/ml using a 30 kDa cut-off table-top concentrator. For cryo-EM sample preparation, 4.0 \u03bcl of the purified complex were applied to glow discharged Quantifoil 2/1 grids, blotted for 3.5 s with force \u20184\u2019 in a Vitrobot Mark IV (Thermo Fisher) at 100% humidity and 4\u00b0C, and plunge frozen in liquid ethane cooled by liquid nitrogen.\n\nElectron micrographs were acquired with a FEI Titan Krios transmission electron microscope (ThermoFisher) using SerialEM software (Schorb et al., 2019). Movie frames were recorded at a nominal magnification of 64,000 \u00d7 (calibrated physical pixel size: 1.38 A\u030a/px) using a K3 direct electron detector (Gatan) and a GIF quantum energy filter (Gatan) at 20 eV slit width. The total electron dose of approximately 55 electrons per A\u030a2 was distributed over 40 frames. Cryo-EM micrographs were processed on-the-fly using the Focus software package (Biyani et al., 2017). For Tho-Sub2, 6689 micrographs were collected.\n\n### Cryo-EM data processing\n\nThe THO-Sub2 dataset was processed entirely in CryoSparc (Punjani et al., 2017). Dose-fractionated movies were gain-normalized, aligned, and dose-weighted using Patch Motion correction. The contrast transfer function (CTF) was determined using CTFfind4 (Rohou and Grigorieff, 2015). A total of 1000 particles were picked manually and used to train a model that was subsequently used to pick the entire dataset using TOPAZ (Bepler et al., 2019). A total of 922,935 candidate particles were extracted and cleaned using iterative-rounds of reference-free 2D classification. The 298,569 particles after 2D classification were used for ab\u00a0initio model reconstruction with the SGD algorithm to prevent model bias. The particles were further iteratively classified in 3D using heterogenous refinement. The 113,076 particles belonging to the best-aligning particles were subsequently subjected to nonuniform 3D refinement, yielding 3.93 A\u030a global resolution and a B-factor of \u221281.8 A\u030a2. Next, we carried out focused local refinement after signal subtraction on both protomers of the THO-Sub2 dimer. The reconstructions for the rigid and flexible protomers were both significantly improved, indicating a flexible dimeric interface. The flexible and rigid protomers yielded 4.01 A\u030a with a B-factor of \u221273.6 A\u030a2 and 3.69 A\u030a with a B-factor of \u221271.1 A\u030a2, respectively.\n\nTo further investigate the dynamic motion of the protomers with respect to each other we performed a variance analysis on three modes. For a cleaner visualization and to limit the influence of high-frequency noise, the resolution was filtered to 5 \u00c5. Using the \u2018simple\u2019 output, a linear movie of 20 volumes along each mode was calculated. The volume series along the second mode is shown to contain the swiveling motion anchored at the Tex1-Tex1 interface of the THO-Sub2 dimer (Video 1).\n\nThe major heterogeneity within the dimer lies in the flexibility between the two protomers. Thus, we reanalyzed the dataset with a mask around the better-resolved protomer, yielding an improved map of the rigid protomer at 3.5 \u00c5. Per-particle local CTF refinement improved the resolution to 3.4 \u00c5 with a temperature factor of \u2212108.6 \u00c52 after nonuniform refinement. This map was used for de novo model building of the THO complex.\n\n### Model building\n\nThe reconstructed density was interpreted using COOT (Emsley et al., 2010). Model building was iteratively interrupted by real-space refinements using Phenix (Liebschner et al., 2019). Statistics assessing the quality of the final model were generated using Molprobity (Chen et al., 2010). Images of the calculated density and the built model were prepared using UCSF Chimera (Pettersen et al., 2004), UCSF ChimeraX (Goddard et al., 2018), and PyMOL. The model we built de novo for the 5-subunit THO complex has very good stereochemistry (see Ramachandran plot, Figure 2\u2014figure supplement 4A).\n",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "72559e5e-4402-4ae3-a665-aa4a4ffd5ed3",
+      "submission_id": "85db2781-26f7-4ac8-95e9-7fb3ebcc1647",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karsten Weis, ETH Zurich Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61467.sa1](https://doi.org/10.7554/eLife.61467.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript describes the cryo-EM structure of the S. cerevisiae THO complex in complex with Sub2. This high-resolution structure of the THO-Sub2 complex is important for the field as it will be the basis for future mechanistic studies to unravel the function of this complex in co-transcriptional R-loop resolution and mRNA export.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural insights into the nucleic acid remodeling mechanisms of the yeast THO-Sub2 complex\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and James Manley as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript entitled, \"Structural insights into the nucleic acid remodeling mechanisms of the yeast THO-Sub2 complex\", by Schuller et al. describes the cryo-EM structure of the S. cerevisiae THO complex in complex with Sub2. As proposed previously, Tho2 and Hpr1 is shown to form a scaffolding platform of the complex. Based on the asymmetric orientation of the protomers the authors suggest a model for THO's activation of Sub2 as well as a mechanism for cellular co-transcriptional R-loop resolution. Although no biochemical experiments are performed to underline the functional significance of the structure or to test the validity of the proposed mechanism, this high-resolution structure of the THO-Sub2 complex is important for the field and will be of interest to a wide audience.\n\nEssential revisions:\n\n1) Without looking at the determined structure, the Abstract is hard to understand. The authors should try to clarify the model that is proposed.\n\n2) TREX plays an important role in mRNA export and yet the model is focussed on R-loops and their resolution, giving the superficial impression this is the sole role of THO-sub2. Are the authors suggesting that all RNA extruded from RNA polymerase II adopts an R-loop conformation initially? Genome wide mapping does not obviously suggest this and there are sequence and genomic locus preferences for R-loop formation. Therefore, can the authors expand on how they think this complex might work with RNA not in an R-loop? Is it possible that ATP hydrolysis serves mainly to load Yra1p onto the RNA when an R-loop is not present?\n\n3) In the Introduction, the authors should cite more recent reviews on mRNP biogenesis in S. cerevisiae.\n",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9e90384b-bedd-4981-8e65-9f6ea6103c78",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C1",
+      "claim": "The yeast THO complex is recruited to active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast THO complex is recruited to active genes and interacts with the RNA-dependent ATPase Sub2 to facilitate the formation of mature export-competent messenger ribonucleoprotein particles and to prevent the co-transcriptional formation of RNA:DNA-hybrid-containing structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known function of the THO complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "7d22e53d-5824-43a2-bb86-a126b876664e",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C2",
+      "claim": "The yeast THO complex interacts with the RNA-dependent ATPase Sub2.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast THO complex is recruited to active genes and interacts with the RNA-dependent ATPase Sub2 to facilitate the formation of mature export-competent messenger ribonucleoprotein particles and to prevent the co-transcriptional formation of RNA:DNA-hybrid-containing structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known interaction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "4501082a-7188-4745-90d9-839e640170bb",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C3",
+      "claim": "The yeast THO complex facilitates the formation of mature export-competent messenger ribonucleoprotein particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast THO complex is recruited to active genes and interacts with the RNA-dependent ATPase Sub2 to facilitate the formation of mature export-competent messenger ribonucleoprotein particles and to prevent the co-transcriptional formation of RNA:DNA-hybrid-containing structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known function of the THO complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "79151a8f-5f68-4286-8128-4b2f23ca8823",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C4",
+      "claim": "The yeast THO complex prevents the co-transcriptional formation of RNA:DNA-hybrid-containing structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast THO complex is recruited to active genes and interacts with the RNA-dependent ATPase Sub2 to facilitate the formation of mature export-competent messenger ribonucleoprotein particles and to prevent the co-transcriptional formation of RNA:DNA-hybrid-containing structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known function of the THO complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "025c6432-9bf0-4e8d-8acd-9d150092606d",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C5",
+      "claim": "A 3.4 \u00c5 resolution structure of Saccharomyces cerevisiae THO-Sub2 was elucidated by cryo-electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we elucidated a 3.4 \u00c5 resolution structure of Saccharomyces cerevisiae THO-Sub2 by cryo-electron microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by the cryo-EM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "8a84c4ff-7314-45ee-9e97-cb51de1bf87b",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C6",
+      "claim": "THO subunits Tho2 and Hpr1 intertwine to form a platform that is bound by Mft1, Thp2, and Tex1.",
+      "claim_type": "EXPLICIT",
+      "source": "THO subunits Tho2 and Hpr1 intertwine to form a platform that is bound by Mft1, Thp2, and Tex1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "80430263-51f5-4b49-8e17-491d9851e25d",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C7",
+      "claim": "The THO complex homodimerizes in an asymmetric fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting complex homodimerizes in an asymmetric fashion, with a Sub2 molecule attached to each protomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "7f6e7b78-60a7-430a-a38c-9b3a89e99747",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C8",
+      "claim": "A Sub2 molecule is attached to each protomer of the THO homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting complex homodimerizes in an asymmetric fashion, with a Sub2 molecule attached to each protomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "0957476f-cc72-4cff-b757-1c71036d3a04",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C9",
+      "claim": "The homodimerization interfaces serve as a fulcrum for a seesaw-like movement concomitant with conformational changes of the Sub2 ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "The homodimerization interfaces serve as a fulcrum for a seesaw-like movement concomitant with conformational changes of the Sub2 ATPase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural and dynamic finding from the cryo-EM analysis described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "1bb2d2eb-c8f5-4fb1-bc77-2fbbecebc378",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C10",
+      "claim": "The nascent transcript undergoes 5' capping during mRNA biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As the nascent transcript is synthesized by RNA polymerase II from the corresponding DNA template, it undergoes several chemical modifications, including 5' capping, splicing and 3'-end polyadenylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mRNA biogenesis cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "daa8cf1e-b1da-4826-9760-4de4de42e288",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C11",
+      "claim": "The nascent transcript undergoes splicing during mRNA biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As the nascent transcript is synthesized by RNA polymerase II from the corresponding DNA template, it undergoes several chemical modifications, including 5' capping, splicing and 3'-end polyadenylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mRNA biogenesis cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "28e19ffb-e401-4eac-8038-8cd8be50da49",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C12",
+      "claim": "The nascent transcript undergoes 3'-end polyadenylation during mRNA biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As the nascent transcript is synthesized by RNA polymerase II from the corresponding DNA template, it undergoes several chemical modifications, including 5' capping, splicing and 3'-end polyadenylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mRNA biogenesis cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "03aa1812-533d-499b-8dda-19224790646a",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C13",
+      "claim": "The nascent transcript associates with complementary proteins to form a mature messenger ribonucleoprotein particle (mRNP).",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, the nascent transcript associates with a cohort of complementary proteins to form a mature messenger ribonucleoprotein particle (mRNP) (Wende et al., 2019; Xie and Ren, 2019; M\u00fcller-McNicoll and Neugebauer, 2013; Meinel and Str\u00e4\u00dfer, 2015; Singh et al., 2015; Wegener and M\u00fcller-McNicoll, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mRNA biogenesis supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "9f022a4d-e42d-4f82-a669-b1a468b265ee",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C14",
+      "claim": "The mature mRNP is shuttled through the nuclear pore to the cytoplasm via specific export factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The mature mRNP is then shuttled through the nuclear pore to the cytoplasm via specific export factors (Moore and Proudfoot, 2009; M\u00fcller-McNicoll and Neugebauer, 2013; Rond\u00f3n et al., 2010; Wende et al., 2019; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mRNA export supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "2074a154-4ad9-43e0-8e7e-509b44b4430f",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C15",
+      "claim": "The TREX complex is an evolutionary conserved complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them is the transcription-export (TREX) complex, an evolutionary conserved complex containing a multi-protein assembly (transcription-dependent hyperrecombination complex THO), an RNA helicase (Sub2 in yeast/UAP56 in human), and an hnRNP-like protein (Yra1 in yeast/Ref/Aly in human) (Heath et al., 2016; Meinel and Str\u00e4\u00dfer, 2015; Str\u00e4sser and Hurt, 2001; Str\u00e4sser et al., 2002; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the TREX complex supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "1c9253a5-f69c-47a2-9207-a1c5b87da9a9",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C16",
+      "claim": "The TREX complex contains the THO multi-protein assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them is the transcription-export (TREX) complex, an evolutionary conserved complex containing a multi-protein assembly (transcription-dependent hyperrecombination complex THO), an RNA helicase (Sub2 in yeast/UAP56 in human), and an hnRNP-like protein (Yra1 in yeast/Ref/Aly in human) (Heath et al., 2016; Meinel and Str\u00e4\u00dfer, 2015; Str\u00e4sser and Hurt, 2001; Str\u00e4sser et al., 2002; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the TREX complex composition supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "bc43d456-0312-474e-a5af-9ecf8bd4278e",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C17",
+      "claim": "The TREX complex contains an RNA helicase (Sub2 in yeast/UAP56 in human).",
+      "claim_type": "EXPLICIT",
+      "source": "Among them is the transcription-export (TREX) complex, an evolutionary conserved complex containing a multi-protein assembly (transcription-dependent hyperrecombination complex THO), an RNA helicase (Sub2 in yeast/UAP56 in human), and an hnRNP-like protein (Yra1 in yeast/Ref/Aly in human) (Heath et al., 2016; Meinel and Str\u00e4\u00dfer, 2015; Str\u00e4sser and Hurt, 2001; Str\u00e4sser et al., 2002; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the TREX complex composition supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "0432e685-b905-48ca-915c-8707c404933a",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C18",
+      "claim": "The TREX complex contains an hnRNP-like protein (Yra1 in yeast/Ref/Aly in human).",
+      "claim_type": "EXPLICIT",
+      "source": "Among them is the transcription-export (TREX) complex, an evolutionary conserved complex containing a multi-protein assembly (transcription-dependent hyperrecombination complex THO), an RNA helicase (Sub2 in yeast/UAP56 in human), and an hnRNP-like protein (Yra1 in yeast/Ref/Aly in human) (Heath et al., 2016; Meinel and Str\u00e4\u00dfer, 2015; Str\u00e4sser and Hurt, 2001; Str\u00e4sser et al., 2002; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the TREX complex composition supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "ea1868ed-14be-4a2e-bb6d-08500971250a",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C19",
+      "claim": "Sub2 and Yra1 interplay with the mRNA-export factor Mex67-Mtr2 (TAP-p15 in human).",
+      "claim_type": "EXPLICIT",
+      "source": "Sub2 and Yra1 interplay with the mRNA-export factor Mex67-Mtr2 (TAP-p15 in human) (Heath et al., 2016; Str\u00e4sser and Hurt, 2001; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about protein interactions supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "17d1ff82-cc01-48a5-a8db-16ea845300b1",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C20",
+      "claim": "The THO complex was first identified in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "The THO complex was first identified in Saccharomyces cerevisiae and named after the phenotypes observed upon mutations of its constituent subunits, most notably an increase in recombination events connected to the accumulation of R loops during transcription (Aguilera and Klein, 1988; Ch\u00e1vez et al., 2000; Ch\u00e1vez et al., 2001; Heath et al., 2016; Huertas and Aguilera, 2003; Piruat and Aguilera, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the discovery of the THO complex supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "f10ba338-4e5a-4520-a6f4-b53879f70146",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C21",
+      "claim": "Mutations of THO complex subunits lead to an increase in recombination events connected to the accumulation of R loops during transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The THO complex was first identified in Saccharomyces cerevisiae and named after the phenotypes observed upon mutations of its constituent subunits, most notably an increase in recombination events connected to the accumulation of R loops during transcription (Aguilera and Klein, 1988; Ch\u00e1vez et al., 2000; Ch\u00e1vez et al., 2001; Heath et al., 2016; Huertas and Aguilera, 2003; Piruat and Aguilera, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about THO complex function supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "b941a84b-4708-4d70-9499-40614140ede6",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C22",
+      "claim": "R-loops form behind the elongating RNA polymerase II when the nascent transcript erroneously reanneals with the DNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loops can form behind the elongating RNA polymerase II when the nascent transcript erroneously reanneals with the DNA template to create a three-stranded nucleic acid structure consisting of an RNA:DNA hybrid and an unpaired single DNA strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about R-loop formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "ac1b0669-f188-4548-9988-d72d4710f573",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C23",
+      "claim": "R-loops create a three-stranded nucleic acid structure consisting of an RNA:DNA hybrid and an unpaired single DNA strand.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loops can form behind the elongating RNA polymerase II when the nascent transcript erroneously reanneals with the DNA template to create a three-stranded nucleic acid structure consisting of an RNA:DNA hybrid and an unpaired single DNA strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about R-loop structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "48a7158a-f23b-4657-83fb-42f884ba14f9",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C24",
+      "claim": "R loops are particularly prominent in discrete areas of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "R loops are particularly prominent in discrete areas of the genome and can lead to recombination events and, eventually, genomic instability (Santos-Pereira and Aguilera, 2015; Skourti-Stathaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about R-loop distribution supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "fe88a414-263e-47b5-bd68-763c22c27fb1",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C25",
+      "claim": "R loops can lead to recombination events and genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "R loops are particularly prominent in discrete areas of the genome and can lead to recombination events and, eventually, genomic instability (Santos-Pereira and Aguilera, 2015; Skourti-Stathaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about R-loop consequences supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "ee0da294-f296-43c0-bc05-e012bfa503e6",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C26",
+      "claim": "Tho2 and Hpr1 have the most drastic impact on mutation-induced phenotypes among the subunits of the yeast THO complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the subunits of the yeast THO complex, the evolutionary conserved Tho2 and Hpr1 have the most drastic impact on mutation-induced phenotypes epitomized by a DNA recombination rate of about 3000 times that found in wild-type cells (Garc\u00eda-Rubio et al., 2008; Ch\u00e1vez et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about THO subunit functions supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "35f85c84-92cd-4dc6-ba60-9a0342f9bbfe",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C27",
+      "claim": "Mutations in Tho2 and Hpr1 result in a DNA recombination rate of about 3000 times that found in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the subunits of the yeast THO complex, the evolutionary conserved Tho2 and Hpr1 have the most drastic impact on mutation-induced phenotypes epitomized by a DNA recombination rate of about 3000 times that found in wild-type cells (Garc\u00eda-Rubio et al., 2008; Ch\u00e1vez et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mutation phenotypes supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "5e5558d9-f527-47d2-acc3-231b48def973",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C28",
+      "claim": "The mechanisms with which Tho2, Hpr1, and the other yeast THO complex core subunits protect against R loop formation are thought to involve the unwinding activity of the Sub2 helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms with which Tho2, Hpr1, and the other yeast THO complex core subunits (Mft1, Thp1, and Tex1) protect against R loop formation are thought to involve the unwinding activity of the Sub2 helicase (Luna et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "7a989c25-d474-48a3-82c5-0b08f38d2107",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C29",
+      "claim": "THO enhances the ATPase properties of Sub2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, THO enhances the ATPase properties of Sub2 (Ren et al., 2017), but there is currently no high-resolution structure of this complex to allow a mechanistic understanding (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "b31f9bdf-d50c-432e-881f-bb5dd49624f7",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C30",
+      "claim": "Sub2 is a conserved RNA-dependent ATPase of the DEAD-box family.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast Sub2 is a conserved RNA-dependent ATPase of the DEAD-box family, a group of enzymes known to destabilize and unwind RNA duplexes (Linder and Jankowsky, 2011; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Sub2 supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "2a3f306e-e042-40d9-9bbc-580052808501",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C31",
+      "claim": "DEAD-box proteins are known to destabilize and unwind RNA duplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast Sub2 is a conserved RNA-dependent ATPase of the DEAD-box family, a group of enzymes known to destabilize and unwind RNA duplexes (Linder and Jankowsky, 2011; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DEAD-box proteins supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "aebf8bf7-77f2-4440-83e5-4db4794bbca0",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C32",
+      "claim": "Sub2 interacts tightly with THO both in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies have shown that Sub2 interacts tightly with THO both in vivo and in vitro (Jimeno et al., 2002; Luna et al., 2019; Pe\u00f1a et al., 2012; Ren et al., 2017; Str\u00e4sser et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "a2df0c2c-6664-4015-93ba-a2034f2b3fe9",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C33",
+      "claim": "THO mutant alleles are synthetic lethal with a temperature-sensitive mutant of sub2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, THO mutant alleles are synthetic lethal with a temperature-sensitive mutant of sub2 causing a fast onset of nuclear poly(A) RNA accumulation, a hallmark of defective mRNA export (Jimeno et al., 2002; Str\u00e4sser et al., 2002; Wegener and M\u00fcller-McNicoll, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "c5347b76-9a9c-4304-8a86-70f9c2252817",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C34",
+      "claim": "THO mutant alleles with a temperature-sensitive mutant of sub2 cause a fast onset of nuclear poly(A) RNA accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, THO mutant alleles are synthetic lethal with a temperature-sensitive mutant of sub2 causing a fast onset of nuclear poly(A) RNA accumulation, a hallmark of defective mRNA export (Jimeno et al., 2002; Str\u00e4sser et al., 2002; Wegener and M\u00fcller-McNicoll, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "658736bb-129e-4b32-9f01-2a1dc2894e6d",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C35",
+      "claim": "Nuclear poly(A) RNA accumulation is a hallmark of defective mRNA export.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, THO mutant alleles are synthetic lethal with a temperature-sensitive mutant of sub2 causing a fast onset of nuclear poly(A) RNA accumulation, a hallmark of defective mRNA export (Jimeno et al., 2002; Str\u00e4sser et al., 2002; Wegener and M\u00fcller-McNicoll, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "82b627a4-967d-407f-b447-1a661eb9aa33",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C36",
+      "claim": "The mRNA export functions of Sub2 are mediated by its interacting partner Yra1.",
+      "claim_type": "EXPLICIT",
+      "source": "The mRNA export functions of Sub2 are mediated by its interacting partner Yra1, a non-shuttling hnRNP-like protein (Heath et al., 2016; Str\u00e4sser and Hurt, 2001; Stutz et al., 2000; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "044300a7-a198-4a7a-8d8c-87e40204f489",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C37",
+      "claim": "Yra1 is a non-shuttling hnRNP-like protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The mRNA export functions of Sub2 are mediated by its interacting partner Yra1, a non-shuttling hnRNP-like protein (Heath et al., 2016; Str\u00e4sser and Hurt, 2001; Stutz et al., 2000; Xie and Ren, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "1ad2e410-4177-4232-839b-f65082982c70",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C38",
+      "claim": "Yra1 has the ability to bind both RNA and DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The propensity of Yra1 to bind genomic areas that are prone to R-loop formation (Garc\u00eda-Rubio et al., 2008) is underscored by its ability to bind both RNA and DNA (Abruzzi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "96649580-649f-43dc-897e-28a785c01a17",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C39",
+      "claim": "Yra1 harbors potent RNA:RNA annealing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Yra1 harbors potent RNA:RNA annealing activity (Portman et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "46cf6d52-11f5-4758-b63f-02a960e2cfb5",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C40",
+      "claim": "THO binds Sub2, which in turn recruits Yra1 to form the TREX complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from both yeast and human studies have converged on the notion that THO binds Sub2, which in turn recruits Yra1 to form the TREX complex (Heath et al., 2016; Str\u00e4sser et al., 2002; Wende et al., 2019; Zenklusen et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "902930c1-7e85-49fe-91b6-19a3c05450bd",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C41",
+      "claim": "The series of events in TREX complex formation is remarkably conserved in the human orthologues UAP56 (DDX39B) and Aly/Ref (ALYREF).",
+      "claim_type": "EXPLICIT",
+      "source": "This series of events is remarkably conserved in the human orthologues, the DNA\u2013RNA helicase UAP56 (DDX39B) and the RNA-binding factor Aly/Ref (ALYREF) (Heath et al., 2016; Luo et al., 2001; Str\u00e4sser et al., 2002; Wende et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "4155d053-7dd3-4827-b8d3-c4372d95c90a",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C42",
+      "claim": "S. cerevisiae Tho2 is expected to contain folded N-terminal regions that encompass more than two-thirds of its polypeptide chain.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae Tho2 (1597 aa, 184 kDa), Hpr1 (752 aa, 88 kDa), Mft1 (392 aa, 45 kDa), and Thp2 (261 aa, 30 kDa) are all expected to contain folded N-terminal regions that encompass more than two-thirds of their polypeptide chain and to be primarily \u03b1-helical in secondary structure as predicted by the program Phyre2 (Kelley et al., 2015; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on computational analysis using Phyre2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "9ab55c2b-be53-4bea-b521-729c876154d0",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C43",
+      "claim": "S. cerevisiae Tho2, Hpr1, Mft1, and Thp2 are expected to be primarily \u03b1-helical in secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae Tho2 (1597 aa, 184 kDa), Hpr1 (752 aa, 88 kDa), Mft1 (392 aa, 45 kDa), and Thp2 (261 aa, 30 kDa) are all expected to contain folded N-terminal regions that encompass more than two-thirds of their polypeptide chain and to be primarily \u03b1-helical in secondary structure as predicted by the program Phyre2 (Kelley et al., 2015; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on computational analysis using Phyre2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "5e5488f6-f726-4880-949b-758feae69209",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C44",
+      "claim": "Tex1 is the only non-helical subunit of the THO complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Tex1 (422 aa, 47 kDa) is the only non-helical subunit of the THO complex and contains a \u03b2-propeller domain (Kelley et al., 2015; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on computational analysis using Phyre2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "a1b2251b-31f3-4053-9f6a-8192b3f081ff",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C45",
+      "claim": "Tex1 contains a \u03b2-propeller domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Tex1 (422 aa, 47 kDa) is the only non-helical subunit of the THO complex and contains a \u03b2-propeller domain (Kelley et al., 2015; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on computational analysis using Phyre2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "0dffdd4b-27a4-42f6-9e03-800f3a25b779",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C46",
+      "claim": "The recombinant THO complex was purified to homogeneity using affinity and size-exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "The recombinant THO complex was purified to homogeneity using affinity and size-exclusion chromatography (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "573ba43b-7422-4f24-84e1-28001e7bd56a",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C47",
+      "claim": "The THO-Sub2 assembly eluted as a single peak by size-exclusion chromatography at an elution volume consistent with the presence of a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The THO-Sub2 assembly eluted as a single peak by size-exclusion chromatography, albeit at an earlier elution volume than expected for a globular mass of ~450 kDa and rather consistent with the presence of a dimer (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from size-exclusion chromatography shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "b0dad62f-a93d-44b0-b3be-c3c87fb6028f",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C48",
+      "claim": "An additional band corresponding to untagged Hpr1 was observed in the complex originating from the diploid strain.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional band corresponding to untagged Hpr1 was also observed in the complex originating from the diploid strain, consistent with the presence of a dimer in a physiological context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the native purification shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "0e48fa8f-77f4-4919-ae01-6728596bb126",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C49",
+      "claim": "The observation of untagged Hpr1 in the diploid strain is consistent with the presence of a dimer in a physiological context.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional band corresponding to untagged Hpr1 was also observed in the complex originating from the diploid strain, consistent with the presence of a dimer in a physiological context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data from the native purification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "750ebff6-fd37-41ce-ad72-03eb9037e4e8",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C50",
+      "claim": "The THO-Sub2 complex was stabilized with the mild crosslinker BS3 for cryo-EM single-particle analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For cryo-EM single-particle analysis, we stabilized the THO-Sub2 assembly with the mild crosslinker BS3 to obtain a homogeneous particle distribution suitable for high-resolution reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing sample preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "b1b08be7-4776-4b25-b1d8-612aba83c83e",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C51",
+      "claim": "The cryo-EM reconstruction revealed the presence of an asymmetric dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "After iterative-rounds of particle sorting and refinements, the reconstruction revealed the presence of an asymmetric dimer, with a well-ordered protomer resolved to a resolution of 3.7 \u00c5 and a more flexible protomer with a resolution spread of 3.8\u20137 \u00c5, referred to as rigid and flexible protomers, respectively (Figure 2A and Figure 2\u2014figure supplement 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the cryo-EM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "a36499d2-6f6d-4851-a3e3-bc7fa02f9127",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C52",
+      "claim": "The rigid protomer was resolved to a resolution of 3.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "After iterative-rounds of particle sorting and refinements, the reconstruction revealed the presence of an asymmetric dimer, with a well-ordered protomer resolved to a resolution of 3.7 \u00c5 and a more flexible protomer with a resolution spread of 3.8\u20137 \u00c5, referred to as rigid and flexible protomers, respectively (Figure 2A and Figure 2\u2014figure supplement 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the cryo-EM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "764e2926-df66-4b7e-8f16-d80de59db658",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C53",
+      "claim": "The flexible protomer has a resolution spread of 3.8\u20137 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "After iterative-rounds of particle sorting and refinements, the reconstruction revealed the presence of an asymmetric dimer, with a well-ordered protomer resolved to a resolution of 3.7 \u00c5 and a more flexible protomer with a resolution spread of 3.8\u20137 \u00c5, referred to as rigid and flexible protomers, respectively (Figure 2A and Figure 2\u2014figure supplement 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the cryo-EM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "a43a0e35-8dd0-4f2e-8198-45251d649086",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C54",
+      "claim": "Focusing on the classification of the entire dataset on the rigid protomer improved the density map to 3.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on the classification of the entire dataset on the rigid protomer, we improved the density map to 3.4 \u00c5 resolution (Figure 2\u2014figure supplement 2), allowing us to build the atomic model of the pentameric THO protomer de novo (Figure 2B and Figure 2\u2014figure supplement 3; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the cryo-EM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "13a65de1-3d60-4b58-9780-556846b4707c",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C55",
+      "claim": "The final model includes the large N-terminal structured regions of the five THO-complex subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model includes the large N-terminal structured regions of the five THO-complex subunits as well as a prominent low-complexity sequence of Hpr1 (residue 501\u2013675) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the atomic model built from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "a468e4b3-91a7-4a38-b552-17f56ab11339",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C56",
+      "claim": "The final model includes a prominent low-complexity sequence of Hpr1 (residue 501\u2013675).",
+      "claim_type": "EXPLICIT",
+      "source": "The final model includes the large N-terminal structured regions of the five THO-complex subunits as well as a prominent low-complexity sequence of Hpr1 (residue 501\u2013675) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the atomic model built from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "17834771-44b0-4017-8301-f8376dc8193a",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C57",
+      "claim": "The densities for Sub2 were modeled using the RecA domains from the reported high-resolution crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The densities for Sub2 were modeled using the RecA domains from the reported high-resolution crystal structure (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing model building.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "1436187c-ee6d-46f1-9447-990f38d550e8",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C58",
+      "claim": "The two protomers swivel with respect to each other, alternating the opening and closing of each side of the homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum-likelihood variance analysis of the cryo-EM data revealed that the significant nonuniform distribution of resolution resulted from the remarkable dynamic character of this assembly: the two protomers swivel with respect to each other, alternating the opening and closing of each side of the homodimer (referred to as proximal and distal sides; Figure 2D; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the variance analysis of the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "096ece04-c9dd-4fb3-8617-31eecf2083ce",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C59",
+      "claim": "The fluctuations observed in the cryo-EM structure likely reflect thermal motions since the sample did not contain an energy source.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the sample we characterized by cryo-EM did not contain an energy source, these fluctuations likely reflect thermal motions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed dynamics based on the experimental conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "d76780c0-75f9-4824-9073-da541b7b4d67",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C60",
+      "claim": "The cryo-EM findings are consistent with a previous negative-stain analysis of a native THO complex purified from yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of our cryo-EM reconstruction (Figure 2), our findings are consistent with a previous negative-stain analysis of a native THO complex purified from yeast (Pe\u00f1a et al., 2012; Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with previous structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "ce36e61f-f138-400d-a111-10271c6df245",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C61",
+      "claim": "The differences between the current structure and a previous THO model based on 6 \u00c5 resolution crystallography data can be reconciled by reinterpreting the crystal lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a previous THO model based on 6 \u00c5 resolution crystallography data (Ren et al., 2017) appears different from our structure at first glance, the differences can be reconciled by reinterpreting the crystal lattice (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison and reinterpretation of previous structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "65bfdc15-002f-433f-893f-ee164eedfd38",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C62",
+      "claim": "In each THO protomer, the proteins Tho2 and Hpr1 together create the platform of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In each THO protomer, the proteins Tho2 and Hpr1 together create the platform of the complex (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "1e99662d-7713-443a-9688-a65e1f92d46a",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C63",
+      "claim": "The Tho2-Hpr1 platform is about 200 \u00c5 in length.",
+      "claim_type": "EXPLICIT",
+      "source": "The platform is about 200 \u00c5 in length, with an oval 'head' and with an extended 'body' formed almost exclusively by alpha-helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural measurement from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "61756a7a-43c9-4f93-aa7a-d2603680c607",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C64",
+      "claim": "The 'head' of the Tho2-Hpr1 platform is formed by helical repeats of Hpr1 and a loosely structured region of Tho2.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'head' is formed by helical repeats of Hpr1 and a loosely structured region of Tho2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "d738f59e-0735-4926-b67a-4c06cc1321ea",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C65",
+      "claim": "The 'body' of the Tho2-Hpr1 platform is formed by an extended array of helical repeats of Tho2 and a largely unstructured segment of Hpr1.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the 'body' is formed by an extended array of helical repeats of Tho2 (mostly bi-helical HEAT repeats [Andrade et al., 2001]) and a largely unstructured segment of Hpr1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "8d2a24c8-7fcf-4608-bf71-59d3ecdf3fe5",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C66",
+      "claim": "Mft1 and Thp2 interact to form a 200 \u00c5 long coiled-coil structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The two smallest THO proteins, Mft1 and Thp2, interact to form the 'arm' of the complex, a striking 200 \u00c5 long coiled-coil structure that is oriented diagonally with respect to the Tho2-Hpr1 platform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "e30ae99b-ea6d-4d69-aa57-2343fe1d721d",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C67",
+      "claim": "The Mft1-Thp2 coiled-coil is oriented diagonally with respect to the Tho2-Hpr1 platform.",
+      "claim_type": "EXPLICIT",
+      "source": "The two smallest THO proteins, Mft1 and Thp2, interact to form the 'arm' of the complex, a striking 200 \u00c5 long coiled-coil structure that is oriented diagonally with respect to the Tho2-Hpr1 platform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "13a1ea2c-987e-4d0f-b83c-812c8279d14a",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C68",
+      "claim": "Module-1 consists of the N-terminal portions of Tho2-Hpr1 and recognizes the N-terminal portion of the Mft1-Thp2 coiled coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Module-1 consists of the N-terminal portions of Tho2-Hpr1 and recognizes the N-terminal portion of the Mft1-Thp2 coiled coil (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "886c3521-7531-4eee-956c-d815becf5bad",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C69",
+      "claim": "Module-2 contains a large helical lobe of Hpr1 packed against the beginning of the helical array of the 'body'.",
+      "claim_type": "EXPLICIT",
+      "source": "Module-2 contains a large helical lobe of Hpr1 packed against the beginning of the helical array of the 'body' (the Tho2 HEAT1-2 bihelical repeats) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "0f632889-89dc-455d-99e1-9f7d8a07e26f",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C70",
+      "claim": "Module-3 is a MIF4G-like fold with five Tho2 helical repeats (HEAT 3\u20137) lined underneath by Hpr1 residues 501\u2013522.",
+      "claim_type": "EXPLICIT",
+      "source": "Module-3 is a MIF4G-like fold with five Tho2 helical repeats (HEAT 3\u20137) lined underneath by Hpr1 residues 501\u2013522 (Figure 3E and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "89c1fede-c3df-4aae-a0cb-78c7952f538c",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C71",
+      "claim": "Module-3 provides the Tex1-binding platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Module-3 provides the Tex1-binding platform: the curved surface of the Tex1 \u03b2-propeller (blades 4 and 5) binds the concave side of the MIF4G-like fold (at Tho2 HEAT 6 and 7) with conserved interactions (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "c0b163df-6521-40a4-b00c-328835f320bb",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C72",
+      "claim": "The Sub2-binding platform in the 'body' of the complex is formed by module-4 and module-5.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sub2-binding platform in the 'body' of the complex is formed by module-4 and module-5 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "0edd556c-aa06-4883-8161-89cc7e4360e5",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C73",
+      "claim": "The RecA2 domain of Sub2 interacts with the concave side of the module-4 MIF4G-like fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The RecA2 domain of Sub2 interacts with the concave side of this MIF4G-like fold (at Tho2 ARM 8 and HEAT 9) and contacts the 'handle' from module-3 (Figure 3G and Figure 3\u2014figure supplements 1 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "4d646730-60bc-4563-b551-6a4779a871c4",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C74",
+      "claim": "In the rigid protomer, the RecA1 domain of Sub2 binds the concave surface of module-5.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rigid protomer, the RecA1 domain of Sub2 binds the concave surface of module-5 (Tho2 HEAT 16) and the helical insertion from module-4 (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "d12d1418-21c4-4b69-95c6-d17b2fa8d361",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C75",
+      "claim": "In the flexible protomer, the RecA1 domain does not have ordered density.",
+      "claim_type": "EXPLICIT",
+      "source": "In the flexible protomer, the RecA1 domain does not have ordered density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "04a9ccc4-ff26-43c2-b84f-ea790ccc72e2",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C76",
+      "claim": "In the THO homodimer, the two Tho2-Hpr1 platforms are arranged in an antiparallel fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the THO homodimer, the two Tho2-Hpr1 platforms are arranged in an antiparallel fashion, i.e. the 'head' of one protomer faces the 'body' of the other (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "8d8ff219-f8e6-42a8-9c88-1252408d1bbb",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C77",
+      "claim": "The major homodimerization interface in the THO complex is mediated by Mft1-Thp2.",
+      "claim_type": "EXPLICIT",
+      "source": "The major homodimerization interface in the THO complex is mediated by Mft1-Thp2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "32c8d5a3-703e-4e07-afd9-1663cd756010",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C78",
+      "claim": "The tips of the C-terminal coiled-coil portions of the Mft1-Thp2 pairs intersect at the vertex of the chevron forming a hydrophobic dimerization core.",
+      "claim_type": "EXPLICIT",
+      "source": "The tips of the C-terminal coiled-coil portions of the Mft1-Thp2 pairs intersect at the vertex of the chevron forming a hydrophobic dimerization core (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "9bf6bbdf-2e00-4de8-aabe-e7caec29845b",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C79",
+      "claim": "An additional smaller homodimerization interface is mediated by the N-terminal helices of the two Tex1 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional smaller homodimerization interface is mediated by the N-terminal helices of the two Tex1 molecules (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "49ffdf4a-add2-43d0-9b8b-9dd131b5a207",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C80",
+      "claim": "The two homodimerization interfaces appear to be the pivot point around which the rest of the Mft1-Thp2 coiled coils and the attached Tho2-Hpr1 platforms swing with a seesaw-like movement.",
+      "claim_type": "EXPLICIT",
+      "source": "These two homodimerization interfaces appear to be the pivot point around which the rest of the Mft1-Thp2 coiled coils and the attached Tho2-Hpr1 platforms swing with a seesaw-like movement (Video 1; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the structural dynamics observed in the cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "eeb0dc61-743d-4665-a1fb-3ed21c39a149",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C81",
+      "claim": "Variance analysis of the cryo-EM data shows that the seesaw-like movement is connected to changes in the two Sub2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Variance analysis of the cryo-EM data shows that the movement is connected to changes in the two Sub2 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the variance analysis of the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "cf129a6c-fea7-457d-b700-b409ed8fcbe2",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C82",
+      "claim": "Sub2 is expected to undergo conformational changes connected to the nucleic-acid unwinding cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other members of the DEAD-box family of ATPases, Sub2 is expected to undergo conformational changes connected to the nucleic-acid unwinding cycle (Ozgur et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DEAD-box proteins supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "943536f3-9319-429b-894d-f8b713fb3a9b",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C83",
+      "claim": "In the ATP-RNA-bound active state, the two RecA domains of DEAD-box proteins adopt a well-defined closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ATP-RNA-bound active state, the two RecA domains adopt a well-defined closed conformation with a deep ATP-binding crevice and a shallow single-stranded RNA-binding cleft containing a sharp bend that is thought to be important for local RNA unwinding (Ozgur et al., 2015a; Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DEAD-box proteins supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "2d67b050-77f6-42c7-acd3-188849486dbb",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C84",
+      "claim": "In the inactive state, DEAD-box proteins generally adopt more variable conformations in which the two RecA domains are spatially restrained by the flexible linker connecting them.",
+      "claim_type": "EXPLICIT",
+      "source": "In the inactive state, DEAD-box proteins generally adopt more variable conformations in which the two RecA domains are spatially restrained by the flexible linker connecting them (Ozgur et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DEAD-box proteins supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "1a037671-689c-41ea-be15-7547b532c941",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C85",
+      "claim": "Members of the DEAD-box family (eIF4A, Dbp5, and DDX6) adopt an intermediate state upon binding MIF4G-like regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the DEAD-box family (eIF4A, Dbp5, and DDX6) have also been shown to adopt an intermediate state upon binding MIF4G-like regulators, which maintain the RecA domains in a semi-closed (activated) conformation that resembles the structure adopted in the active state (Mathys et al., 2014; Montpetit et al., 2011; Sch\u00fctz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DEAD-box proteins supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "d4521688-6ebb-4d24-8d66-a4d423f77d47",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C86",
+      "claim": "The Sub2 protomer at the proximal side of the homodimer adopts an intermediate semi-closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the THO-Sub2 cryo-EM reconstruction, the Sub2 protomer at the proximal side of the homodimer adopts an intermediate semi-closed conformation, similar to that observed in other DEAD-box proteins in the activated state (Mathys et al., 2014; Montpetit et al., 2011; Sch\u00fctz et al., 2010; Figure 5 and Figure 5\u2014figure supplement 1), rationalizing the Sub2 ATPase-activating properties of THO (Ren et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "12bd9221-9992-426d-b0b6-d8328ea05285",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C87",
+      "claim": "The intermediate semi-closed conformation of Sub2 at the proximal side rationalizes the Sub2 ATPase-activating properties of THO.",
+      "claim_type": "EXPLICIT",
+      "source": "In the THO-Sub2 cryo-EM reconstruction, the Sub2 protomer at the proximal side of the homodimer adopts an intermediate semi-closed conformation, similar to that observed in other DEAD-box proteins in the activated state (Mathys et al., 2014; Montpetit et al., 2011; Sch\u00fctz et al., 2010; Figure 5 and Figure 5\u2014figure supplement 1), rationalizing the Sub2 ATPase-activating properties of THO (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural finding in the context of known biochemical properties.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "49a68c64-ca68-4ec5-8828-1f103d96ab80",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C88",
+      "claim": "The interactions that keep Sub2 in the activated conformation appear to be more extensive as compared to those in other DEAD-box proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions that keep Sub2 in the activated conformation appear to be more extensive as compared to those in other DEAD-box proteins, as Sub2 binds at three sites in the 'body' of the rigid protomer (module-4, -5, and the latch; Figure 5) and appears to be additionally stabilized by contacts with the 'head' of the flexible protomer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure compared to other known structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "d03456fc-d88d-45a9-894d-19c1a9f65ac3",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C89",
+      "claim": "In the cryo-EM reconstruction of a THO complex in a resting state, one Sub2 is kept in an activated conformation at the proximal side and the other Sub2 is in a flexible conformation at the distal site.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in our cryo-EM reconstruction of a THO complex in a resting state (e.g. without substrate or energy source), one Sub2 is kept in an activated conformation at the proximal side and the other Sub2 is in a flexible conformation at the distal site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the structural findings from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "5d179ef7-b0f4-485d-b682-ce510c5af638",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C90",
+      "claim": "Conformational changes of the Sub2 RecA domains upon substrate binding are expected to trigger changes in the connections with which the modules are sequentially latched on to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Conformational changes of the Sub2 RecA domains upon substrate binding are expected to trigger changes in the connections with which the modules are sequentially latched on to each other, thus imparting directionality to the intrinsic seesaw-like movements that we observed in the resting state of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis based on the structural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "f2d803b4-ddf7-47b5-98a3-7b2491235322",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C91",
+      "claim": "In all DEAD-box proteins, the active ATP consumption step depends on the concomitant presence of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In all DEAD-box proteins, the active ATP consumption step depends on the concomitant presence of RNA (Linder and Jankowsky, 2011; Zingler et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DEAD-box proteins supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "f9b223d4-97fc-4985-90b5-d3860347d3c3",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C92",
+      "claim": "Sub2 requires Yra1 to efficiently bind RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Sub2 requires the last subunit of the TREX complex, Yra1, to efficiently bind RNA (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "cdc6ad3c-32e8-4e3e-9b05-5c6f11d2222d",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C93",
+      "claim": "Yra1 has an unusual domain architecture with a central RRM domain connected by low-complexity sequences to similar and conserved motifs at the N- and C-termini (N-box and C-box motifs).",
+      "claim_type": "EXPLICIT",
+      "source": "Yra1 has an unusual domain architecture with a central RRM (RNA recognition motif) domain connected by low-complexity sequences to similar and conserved motifs at the N- and C-termini (N-box and C-box motifs): the C-box specifically binds the Sub2 RecA1 domain while the N-box can also bind Sub2 with a similar affinity (Figure 6\u2014figure supplement 1A; Ren et al., 2017; Str\u00e4sser and Hurt, 2001; Stutz et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about Yra1 structure supported by citations and experimental data shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "22c9da27-ccdd-4b83-bd7d-442609883fda",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C94",
+      "claim": "The C-box of Yra1 specifically binds the Sub2 RecA1 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Yra1 has an unusual domain architecture with a central RRM (RNA recognition motif) domain connected by low-complexity sequences to similar and conserved motifs at the N- and C-termini (N-box and C-box motifs): the C-box specifically binds the Sub2 RecA1 domain while the N-box can also bind Sub2 with a similar affinity (Figure 6\u2014figure supplement 1A; Ren et al., 2017; Str\u00e4sser and Hurt, 2001; Stutz et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "f1f373bb-bc80-4cea-a4cf-53b4e27738c5",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C95",
+      "claim": "The N-box of Yra1 can bind Sub2 with a similar affinity to the C-box.",
+      "claim_type": "EXPLICIT",
+      "source": "Yra1 has an unusual domain architecture with a central RRM (RNA recognition motif) domain connected by low-complexity sequences to similar and conserved motifs at the N- and C-termini (N-box and C-box motifs): the C-box specifically binds the Sub2 RecA1 domain while the N-box can also bind Sub2 with a similar affinity (Figure 6\u2014figure supplement 1A; Ren et al., 2017; Str\u00e4sser and Hurt, 2001; Stutz et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the fluorescence anisotropy experiment shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "fbf2861a-c71b-42fb-b764-8af6049c0599",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C96",
+      "claim": "A single Yra1 molecule could bridge the Sub2 molecules at the proximal and distal sides of the THO-Sub2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the dimeric nature of THO-Sub2, a single Yra1 molecule could thus, in principle, bridge the Sub2 molecules at the proximal and distal sides of the complex (Figure 6 and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the structural findings and binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "c9efbffb-1e3e-4af7-a0db-6a7c24623f65",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C97",
+      "claim": "The RNA-dependent ATP binding and hydrolysis steps of Sub2 allow the complex to travel along the nascent mRNA and prevent the formation of aberrant secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that the RNA-dependent ATP binding and hydrolysis steps of Sub2 allow the complex to travel along the nascent mRNA and prevent the formation of aberrant secondary structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis based on the structural findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "1b12ef05-1da6-4efc-a87b-350ec72bb2e3",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C98",
+      "claim": "The Sub2 ATPase cycle may impact the loading of Yra1 onto the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that the Sub2 ATPase cycle may impact the loading of Yra1 onto the mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "46b61deb-4b59-42fe-8e70-f87a49625c02",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C99",
+      "claim": "Sub2 binds an RNA strand with fixed polarity, with the 3' end at RecA1 and the 5' end at RecA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Like all other helicases, Sub2 binds an RNA strand with fixed polarity, namely with the 3' end at RecA1 and the 5' end at RecA2 (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Sub2 supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "c5211213-f303-4997-aa5d-72b340382499",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C100",
+      "claim": "The human Sub2 orthologue UAP56 has been shown to bind and unwind RNA:DNA duplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the human Sub2 orthologue UAP56 has been shown to bind and unwind RNA:DNA duplexes (P\u00e9rez-Calero et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "0984d855-ba60-4263-acd1-7953f76d5ba3",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C101",
+      "claim": "The two Sub2 proteins are kept in opposite orientation by the two antiparallel Tho2-Hpr1 platforms in the THO dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the two Sub2 proteins are kept in opposite orientation by the two antiparallel Tho2-Hpr1 platforms in the THO dimer, the interacting nucleic acid strands would in turn need to have an opposite orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "32b88b3a-29b2-449d-9ef9-448c4ae02e9f",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C102",
+      "claim": "The topology of Sub2 within the complex is compatible with the topology of R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "The topology of Sub2 within the complex is therefore compatible with the topology of R-loops, where the two strands of the RNA:DNA hybrid have opposite polarity (Figure 6 and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structural findings and known properties of R-loops.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "6727979a-052a-4ae9-bb35-c979b5445f81",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C103",
+      "claim": "After the RNA:DNA hybrid is recognized and melted by binding to the two Sub2 molecules in the complex, the individual strands are released upon ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that after the RNA:DNA hybrid is recognized and melted by binding to the two Sub2 molecules in the complex, the individual strands are released upon ATP hydrolysis and can engage in appropriate interactions due to the vicinity of the other DNA strand and of the RNA-annealing activity of Yra1 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic hypothesis based on the structural findings and known biochemical properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "4782a80d-75e9-4899-8040-851e8162649d",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C104",
+      "claim": "The proposed mechanism reconciles the intrinsic duality of the TREX complex in mRNA biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism reconciles the intrinsic duality of the TREX complex in mRNA biogenesis, to dissolve RNA:DNA hybrids that can form upon mRNA synthesis, thus preventing R-loop formation, and to favor the annealing of RNA:RNA structures, thus chaperoning the formation of mature mRNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis that integrates the structural findings with known functions of the TREX complex.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "e0d63c5f-0d5b-4c9f-9d29-afe8f4696048",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "claim_id": "C105",
+      "claim": "Both N-box and C-box peptides of Yra1 bound Sub2 with a Kd of 2.9 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Both peptides bound Sub2 with a similarity affinity, with a Kd of 2.9 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding from the fluorescence anisotropy experiment described in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "26762584-e05d-47f3-b643-ed5a1e7c3812",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A 3.4 \u00c5 resolution cryo-EM structure of the S. cerevisiae THO-Sub2 complex was determined, revealing an asymmetric dimer with a rigid protomer at 3.7 \u00c5 and a flexible protomer at 3.8-7 \u00c5 resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C51-C54 describe the primary structural determination by cryo-EM with specific resolution values. The methodology is well-documented with appropriate controls, iterative refinement, and validation metrics (FSC curves, local resolution maps). The resolution claims are consistent with modern cryo-EM standards and supported by supplementary data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "9a24f714-e385-406c-936c-c46f154bf9b0",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The THO complex architecture consists of Tho2 and Hpr1 forming a ~200 \u00c5 platform with distinct 'head' and 'body' regions, while Mft1 and Thp2 form a 200 \u00c5 coiled-coil 'arm' oriented diagonally to the platform.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C62-C67 describe the overall architecture of the THO protomer based on the cryo-EM structure. These structural features are directly observable in the density maps at 3.4 \u00c5 resolution, with clear secondary structure elements and domain boundaries. The measurements and structural descriptions are consistent with the presented figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "d47da6aa-b3e3-4dd4-b014-8379724ec206",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The THO complex contains five distinct modules with specific binding functions: modules 1-2 bind Mft1-Thp2, module 3 provides the Tex1-binding platform, and modules 4-5 form the Sub2-binding platform with differential RecA domain interactions between rigid and flexible protomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C75 describe detailed protein-protein interactions within the THO-Sub2 structure. These are supported by the high-resolution density maps showing specific contact residues and domain interfaces. The differential behavior of RecA1 between protomers (ordered in rigid, disordered in flexible) is consistent with the resolution differences and provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "414ab3bf-561d-4cb6-80ef-05732fc9e73b",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The THO complex forms an asymmetric homodimer with antiparallel Tho2-Hpr1 platforms, one Sub2 molecule per protomer, and dimerization mediated by Mft1-Thp2 coiled-coils and Tex1 N-terminal helices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C76-C79 describe the quaternary structure of the THO-Sub2 complex. The homodimerization is supported by both recombinant and native purification data (C47-C49), size-exclusion chromatography, and the cryo-EM structure showing specific dimerization interfaces. The asymmetry is well-documented through resolution differences and variance analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "90498400-110d-4024-834c-005ca03669f2",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The THO-Sub2 homodimer exhibits a seesaw-like movement with the dimerization interfaces serving as a fulcrum, and this movement is connected to conformational changes in the two Sub2 proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C58, C80-C81 describe the dynamic behavior of the complex revealed by variance analysis of cryo-EM data. The seesaw motion is directly visualized in Video 1 and supported by the differential resolution between protomers. The connection to Sub2 conformational changes is a reasonable interpretation of the structural data, though the mechanism requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "74e12c1e-6a51-4b5b-9df5-69428da30754",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In the resting state THO-Sub2 complex, the Sub2 at the proximal side adopts an intermediate semi-closed activated conformation with more extensive interactions than other DEAD-box proteins, while the distal Sub2 is flexible, rationalizing THO's ATPase-activating properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 describe the Sub2 conformational states and their functional implications. The semi-closed conformation is supported by structural comparison with other DEAD-box proteins (C85) and the extensive binding interfaces are visible in the structure. The interpretation that this explains ATPase activation is consistent with prior biochemical data (C29) and structural principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "8abbe3da-ad3f-436c-a6ca-e64c6e1cbe25",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The THO-Sub2 complex forms a dimer both in vitro (by size-exclusion chromatography) and in vivo (by native purification from diploid yeast showing both tagged and untagged Hpr1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 provide biochemical evidence for dimerization through two independent approaches: recombinant protein analysis and native complex purification. The observation of untagged Hpr1 in diploid extracts is direct evidence for homodimerization in a physiological context. The size-exclusion data is consistent with a dimeric assembly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "c253b812-ab14-482f-ba60-254da8c83027",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The cryo-EM structure is consistent with previous negative-stain EM analysis and can reconcile differences with a prior 6 \u00c5 crystal structure through reinterpretation of the crystal lattice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 validate the current structure against prior structural studies. The consistency with negative-stain EM (Pe\u00f1a et al., 2012) and the ability to reinterpret the crystal structure (Ren et al., 2017) strengthen confidence in the current model. Figure 2\u2014figure supplement 4 provides visual evidence for these comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "e81768bb-a696-491a-ba8e-694e40d2048a",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both the N-box and C-box peptides of Yra1 bind Sub2 with similar affinity (Kd = 2.9 \u03bcM) as measured by fluorescence anisotropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95 and C105 report quantitative binding data from fluorescence anisotropy experiments. The methodology is described in detail in the Materials and Methods, and the similar affinities for both peptides support the hypothesis that Yra1 could bridge the two Sub2 molecules. The experimental approach is appropriate and the data quality appears adequate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "3d0a3275-976c-461e-90b6-76d132362d6e",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A mechanistic model is proposed where a single Yra1 bridges the two Sub2 molecules, the complex recognizes and melts RNA:DNA hybrids through the oppositely-oriented Sub2 proteins, and ATP hydrolysis releases strands for appropriate interactions, reconciling TREX's dual role in preventing R-loops and chaperoning mRNP formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C98 and C102-C104 present a mechanistic hypothesis based on the structural findings. While the topology is compatible with R-loop structure (C102) and the binding data supports Yra1 bridging (C95, C105), the proposed mechanism lacks direct experimental validation. The model is speculative (as indicated by 'we envision', 'we propose') and requires biochemical and functional studies to confirm substrate binding, unwinding activity, and the proposed strand-release mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "e9160bf4-6aa3-4746-8d97-6bc4717364da",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The observed fluctuations in the cryo-EM structure likely reflect thermal motions since the sample lacked an energy source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 provides a reasonable interpretation of the observed dynamics. The absence of ATP or other energy sources in the cryo-EM sample preparation is documented, and thermal fluctuations are a well-established phenomenon in macromolecular structures. This interpretation is consistent with the observation of multiple conformational states in the dataset.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "49547c26-7559-432e-84a3-a0d875a3890e",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Computational predictions using Phyre2 suggest that Tho2, Hpr1, Mft1, and Thp2 contain folded N-terminal regions (>2/3 of polypeptide) that are primarily \u03b1-helical, while Tex1 is the only non-helical subunit containing a \u03b2-propeller domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 describe computational predictions that guided the experimental approach. These predictions are validated by the final cryo-EM structure, which confirms the \u03b1-helical nature of most subunits and the \u03b2-propeller fold of Tex1. The predictions were useful for experimental design, and their accuracy is retrospectively confirmed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "eaf9049b-d4e6-4afd-9676-b2aac1d60c20",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Conformational changes of Sub2 RecA domains upon substrate binding are expected to trigger changes in inter-module connections, imparting directionality to the seesaw-like movements observed in the resting state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 is a mechanistic hypothesis connecting substrate binding to directional movement. While the structural basis for the seesaw motion is established (C9, C58, C80-C81) and the module connections are visible, the proposed coupling to substrate binding lacks direct experimental evidence. This prediction requires validation through substrate-bound structures or biochemical assays monitoring conformational changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "392a109b-b0bd-4102-8013-d8aeccb94289",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge about mRNA biogenesis, THO/TREX complex composition and function, R-loop formation, DEAD-box protein properties, and prior biochemical characterization of THO-Sub2-Yra1 interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C10-C41, C82-C85, C91-C94, C99-C101 represent established knowledge from the literature, appropriately cited. These provide essential context for interpreting the structural findings. The citations appear appropriate and the knowledge claims are consistent with the field's understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    },
+    {
+      "id": "01594b7f-8783-4607-9f3f-b5472e2d3d47",
+      "content_id": "1bf6dbf9-50e5-41f4-8fd6-a70c79431565",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological details of THO-Sub2 complex preparation, including recombinant expression, purification, crosslinking with BS3, and model building incorporating structured regions and Sub2 RecA domains from prior crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C50, C55-C57 describe methodological approaches that are standard and appropriate for cryo-EM structural biology. The use of mild crosslinking (BS3) to stabilize the complex is justified for obtaining homogeneous particles. The incorporation of prior structural information for Sub2 is appropriate given the resolution and is a common practice in hybrid modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:24:21.792733Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "025c6432-9bf0-4e8d-8acd-9d150092606d",
+      "result_id": "26762584-e05d-47f3-b643-ed5a1e7c3812"
+    },
+    {
+      "claim_id": "b1b08be7-4776-4b25-b1d8-612aba83c83e",
+      "result_id": "26762584-e05d-47f3-b643-ed5a1e7c3812"
+    },
+    {
+      "claim_id": "a36499d2-6f6d-4851-a3e3-bc7fa02f9127",
+      "result_id": "26762584-e05d-47f3-b643-ed5a1e7c3812"
+    },
+    {
+      "claim_id": "764e2926-df66-4b7e-8f16-d80de59db658",
+      "result_id": "26762584-e05d-47f3-b643-ed5a1e7c3812"
+    },
+    {
+      "claim_id": "a43a0e35-8dd0-4f2e-8198-45251d649086",
+      "result_id": "26762584-e05d-47f3-b643-ed5a1e7c3812"
+    },
+    {
+      "claim_id": "8a84c4ff-7314-45ee-9e97-cb51de1bf87b",
+      "result_id": "9a24f714-e385-406c-936c-c46f154bf9b0"
+    },
+    {
+      "claim_id": "65bfdc15-002f-433f-893f-ee164eedfd38",
+      "result_id": "9a24f714-e385-406c-936c-c46f154bf9b0"
+    },
+    {
+      "claim_id": "1e99662d-7713-443a-9688-a65e1f92d46a",
+      "result_id": "9a24f714-e385-406c-936c-c46f154bf9b0"
+    },
+    {
+      "claim_id": "61756a7a-43c9-4f93-aa7a-d2603680c607",
+      "result_id": "9a24f714-e385-406c-936c-c46f154bf9b0"
+    },
+    {
+      "claim_id": "d738f59e-0735-4926-b67a-4c06cc1321ea",
+      "result_id": "9a24f714-e385-406c-936c-c46f154bf9b0"
+    },
+    {
+      "claim_id": "8d2a24c8-7fcf-4608-bf71-59d3ecdf3fe5",
+      "result_id": "9a24f714-e385-406c-936c-c46f154bf9b0"
+    },
+    {
+      "claim_id": "e30ae99b-ea6d-4d69-aa57-2343fe1d721d",
+      "result_id": "9a24f714-e385-406c-936c-c46f154bf9b0"
+    },
+    {
+      "claim_id": "13a1ea2c-987e-4d0f-b83c-812c8279d14a",
+      "result_id": "d47da6aa-b3e3-4dd4-b014-8379724ec206"
+    },
+    {
+      "claim_id": "886c3521-7531-4eee-956c-d815becf5bad",
+      "result_id": "d47da6aa-b3e3-4dd4-b014-8379724ec206"
+    },
+    {
+      "claim_id": "0f632889-89dc-455d-99e1-9f7d8a07e26f",
+      "result_id": "d47da6aa-b3e3-4dd4-b014-8379724ec206"
+    },
+    {
+      "claim_id": "89c1fede-c3df-4aae-a0cb-78c7952f538c",
+      "result_id": "d47da6aa-b3e3-4dd4-b014-8379724ec206"
+    },
+    {
+      "claim_id": "c0b163df-6521-40a4-b00c-328835f320bb",
+      "result_id": "d47da6aa-b3e3-4dd4-b014-8379724ec206"
+    },
+    {
+      "claim_id": "0edd556c-aa06-4883-8161-89cc7e4360e5",
+      "result_id": "d47da6aa-b3e3-4dd4-b014-8379724ec206"
+    },
+    {
+      "claim_id": "4d646730-60bc-4563-b551-6a4779a871c4",
+      "result_id": "d47da6aa-b3e3-4dd4-b014-8379724ec206"
+    },
+    {
+      "claim_id": "d12d1418-21c4-4b69-95c6-d17b2fa8d361",
+      "result_id": "d47da6aa-b3e3-4dd4-b014-8379724ec206"
+    },
+    {
+      "claim_id": "80430263-51f5-4b49-8e17-491d9851e25d",
+      "result_id": "414ab3bf-561d-4cb6-80ef-05732fc9e73b"
+    },
+    {
+      "claim_id": "7f6e7b78-60a7-430a-a38c-9b3a89e99747",
+      "result_id": "414ab3bf-561d-4cb6-80ef-05732fc9e73b"
+    },
+    {
+      "claim_id": "04a9ccc4-ff26-43c2-b84f-ea790ccc72e2",
+      "result_id": "414ab3bf-561d-4cb6-80ef-05732fc9e73b"
+    },
+    {
+      "claim_id": "8d8ff219-f8e6-42a8-9c88-1252408d1bbb",
+      "result_id": "414ab3bf-561d-4cb6-80ef-05732fc9e73b"
+    },
+    {
+      "claim_id": "32c8d5a3-703e-4e07-afd9-1663cd756010",
+      "result_id": "414ab3bf-561d-4cb6-80ef-05732fc9e73b"
+    },
+    {
+      "claim_id": "9bf6bbdf-2e00-4de8-aabe-e7caec29845b",
+      "result_id": "414ab3bf-561d-4cb6-80ef-05732fc9e73b"
+    },
+    {
+      "claim_id": "0957476f-cc72-4cff-b757-1c71036d3a04",
+      "result_id": "90498400-110d-4024-834c-005ca03669f2"
+    },
+    {
+      "claim_id": "1436187c-ee6d-46f1-9447-990f38d550e8",
+      "result_id": "90498400-110d-4024-834c-005ca03669f2"
+    },
+    {
+      "claim_id": "49ffdf4a-add2-43d0-9b8b-9dd131b5a207",
+      "result_id": "90498400-110d-4024-834c-005ca03669f2"
+    },
+    {
+      "claim_id": "eeb0dc61-743d-4665-a1fb-3ed21c39a149",
+      "result_id": "90498400-110d-4024-834c-005ca03669f2"
+    },
+    {
+      "claim_id": "d4521688-6ebb-4d24-8d66-a4d423f77d47",
+      "result_id": "74e12c1e-6a51-4b5b-9df5-69428da30754"
+    },
+    {
+      "claim_id": "12bd9221-9992-426d-b0b6-d8328ea05285",
+      "result_id": "74e12c1e-6a51-4b5b-9df5-69428da30754"
+    },
+    {
+      "claim_id": "49a68c64-ca68-4ec5-8828-1f103d96ab80",
+      "result_id": "74e12c1e-6a51-4b5b-9df5-69428da30754"
+    },
+    {
+      "claim_id": "d03456fc-d88d-45a9-894d-19c1a9f65ac3",
+      "result_id": "74e12c1e-6a51-4b5b-9df5-69428da30754"
+    },
+    {
+      "claim_id": "573ba43b-7422-4f24-84e1-28001e7bd56a",
+      "result_id": "8abbe3da-ad3f-436c-a6ca-e64c6e1cbe25"
+    },
+    {
+      "claim_id": "b0dad62f-a93d-44b0-b3be-c3c87fb6028f",
+      "result_id": "8abbe3da-ad3f-436c-a6ca-e64c6e1cbe25"
+    },
+    {
+      "claim_id": "0e48fa8f-77f4-4919-ae01-6728596bb126",
+      "result_id": "8abbe3da-ad3f-436c-a6ca-e64c6e1cbe25"
+    },
+    {
+      "claim_id": "d76780c0-75f9-4824-9073-da541b7b4d67",
+      "result_id": "c253b812-ab14-482f-ba60-254da8c83027"
+    },
+    {
+      "claim_id": "ce36e61f-f138-400d-a111-10271c6df245",
+      "result_id": "c253b812-ab14-482f-ba60-254da8c83027"
+    },
+    {
+      "claim_id": "f1f373bb-bc80-4cea-a4cf-53b4e27738c5",
+      "result_id": "e81768bb-a696-491a-ba8e-694e40d2048a"
+    },
+    {
+      "claim_id": "e0d63c5f-0d5b-4c9f-9d29-afe8f4696048",
+      "result_id": "e81768bb-a696-491a-ba8e-694e40d2048a"
+    },
+    {
+      "claim_id": "fbf2861a-c71b-42fb-b764-8af6049c0599",
+      "result_id": "3d0a3275-976c-461e-90b6-76d132362d6e"
+    },
+    {
+      "claim_id": "c9efbffb-1e3e-4af7-a0db-6a7c24623f65",
+      "result_id": "3d0a3275-976c-461e-90b6-76d132362d6e"
+    },
+    {
+      "claim_id": "1b12ef05-1da6-4efc-a87b-350ec72bb2e3",
+      "result_id": "3d0a3275-976c-461e-90b6-76d132362d6e"
+    },
+    {
+      "claim_id": "32b88b3a-29b2-449d-9ef9-448c4ae02e9f",
+      "result_id": "3d0a3275-976c-461e-90b6-76d132362d6e"
+    },
+    {
+      "claim_id": "6727979a-052a-4ae9-bb35-c979b5445f81",
+      "result_id": "3d0a3275-976c-461e-90b6-76d132362d6e"
+    },
+    {
+      "claim_id": "4782a80d-75e9-4899-8040-851e8162649d",
+      "result_id": "3d0a3275-976c-461e-90b6-76d132362d6e"
+    },
+    {
+      "claim_id": "096ece04-c9dd-4fb3-8617-31eecf2083ce",
+      "result_id": "e9160bf4-6aa3-4746-8d97-6bc4717364da"
+    },
+    {
+      "claim_id": "4155d053-7dd3-4827-b8d3-c4372d95c90a",
+      "result_id": "49547c26-7559-432e-84a3-a0d875a3890e"
+    },
+    {
+      "claim_id": "9ab55c2b-be53-4bea-b521-729c876154d0",
+      "result_id": "49547c26-7559-432e-84a3-a0d875a3890e"
+    },
+    {
+      "claim_id": "5e5488f6-f726-4880-949b-758feae69209",
+      "result_id": "49547c26-7559-432e-84a3-a0d875a3890e"
+    },
+    {
+      "claim_id": "a1b2251b-31f3-4053-9f6a-8192b3f081ff",
+      "result_id": "49547c26-7559-432e-84a3-a0d875a3890e"
+    },
+    {
+      "claim_id": "5d179ef7-b0f4-485d-b682-ce510c5af638",
+      "result_id": "eaf9049b-d4e6-4afd-9676-b2aac1d60c20"
+    },
+    {
+      "claim_id": "9e90384b-bedd-4981-8e65-9f6ea6103c78",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "7d22e53d-5824-43a2-bb86-a126b876664e",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "4501082a-7188-4745-90d9-839e640170bb",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "79151a8f-5f68-4286-8128-4b2f23ca8823",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "1bb2d2eb-c8f5-4fb1-bc77-2fbbecebc378",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "daa8cf1e-b1da-4826-9760-4de4de42e288",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "28e19ffb-e401-4eac-8038-8cd8be50da49",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "03aa1812-533d-499b-8dda-19224790646a",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "9f022a4d-e42d-4f82-a669-b1a468b265ee",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "2074a154-4ad9-43e0-8e7e-509b44b4430f",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "1c9253a5-f69c-47a2-9207-a1c5b87da9a9",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "bc43d456-0312-474e-a5af-9ecf8bd4278e",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "0432e685-b905-48ca-915c-8707c404933a",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "ea1868ed-14be-4a2e-bb6d-08500971250a",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "17d1ff82-cc01-48a5-a8db-16ea845300b1",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "f10ba338-4e5a-4520-a6f4-b53879f70146",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "b941a84b-4708-4d70-9499-40614140ede6",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "ac1b0669-f188-4548-9988-d72d4710f573",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "48a7158a-f23b-4657-83fb-42f884ba14f9",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "fe88a414-263e-47b5-bd68-763c22c27fb1",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "ee0da294-f296-43c0-bc05-e012bfa503e6",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "35f85c84-92cd-4dc6-ba60-9a0342f9bbfe",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "5e5558d9-f527-47d2-acc3-231b48def973",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "7a989c25-d474-48a3-82c5-0b08f38d2107",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "b31f9bdf-d50c-432e-881f-bb5dd49624f7",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "2a3f306e-e042-40d9-9bbc-580052808501",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "aebf8bf7-77f2-4440-83e5-4db4794bbca0",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "a2df0c2c-6664-4015-93ba-a2034f2b3fe9",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "c5347b76-9a9c-4304-8a86-70f9c2252817",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "658736bb-129e-4b32-9f01-2a1dc2894e6d",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "82b627a4-967d-407f-b447-1a661eb9aa33",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "044300a7-a198-4a7a-8d8c-87e40204f489",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "1ad2e410-4177-4232-839b-f65082982c70",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "96649580-649f-43dc-897e-28a785c01a17",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "46cf6d52-11f5-4758-b63f-02a960e2cfb5",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "902930c1-7e85-49fe-91b6-19a3c05450bd",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "cf129a6c-fea7-457d-b700-b409ed8fcbe2",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "943536f3-9319-429b-894d-f8b713fb3a9b",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "2d67b050-77f6-42c7-acd3-188849486dbb",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "1a037671-689c-41ea-be15-7547b532c941",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "f2d803b4-ddf7-47b5-98a3-7b2491235322",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "f9b223d4-97fc-4985-90b5-d3860347d3c3",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "cdc6ad3c-32e8-4e3e-9b05-5c6f11d2222d",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "22c9da27-ccdd-4b83-bd7d-442609883fda",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "46b61deb-4b59-42fe-8e70-f87a49625c02",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "c5211213-f303-4997-aa5d-72b340382499",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "0984d855-ba60-4263-acd1-7953f76d5ba3",
+      "result_id": "392a109b-b0bd-4102-8013-d8aeccb94289"
+    },
+    {
+      "claim_id": "0dffdd4b-27a4-42f6-9e03-800f3a25b779",
+      "result_id": "01594b7f-8783-4607-9f3f-b5472e2d3d47"
+    },
+    {
+      "claim_id": "750ebff6-fd37-41ce-ad72-03eb9037e4e8",
+      "result_id": "01594b7f-8783-4607-9f3f-b5472e2d3d47"
+    },
+    {
+      "claim_id": "13a65de1-3d60-4b58-9780-556846b4707c",
+      "result_id": "01594b7f-8783-4607-9f3f-b5472e2d3d47"
+    },
+    {
+      "claim_id": "a468e4b3-91a7-4a38-b552-17f56ab11339",
+      "result_id": "01594b7f-8783-4607-9f3f-b5472e2d3d47"
+    },
+    {
+      "claim_id": "17834771-44b0-4017-8301-f8376dc8193a",
+      "result_id": "01594b7f-8783-4607-9f3f-b5472e2d3d47"
+    }
+  ],
+  "comparisons": []
+}

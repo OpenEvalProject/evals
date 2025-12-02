@@ -1,0 +1,458 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors engineered a yeast strain expressing BiG Mito-Split-GFP, where one GFP fragment (GFP\u03b21-10) is encoded by the mitochondrial genome and translated inside mitochondria, while the other fragment (GFP\u03b211ch) is fused to nuclear-encoded proteins translated in the cytosol. This design confines GFP reconstitution to mitochondria, enabling specific detection of mitochondrial proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C22-C24, and C34-C37 collectively describe the design and principle of the BiG Mito-Split-GFP system. The system's construction is documented with detailed methods, the design rationale is clearly explained, and the compartment-restricted expression is supported by the mitochondrial genome modification strategy. The modifications to the Split-GFP fragments and the concatenation of \u03b211 strands are described with appropriate citations and methodological detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C117"
+    ],
+    "result": "The RKY112 strain (precursor to BiG Mito-Split-GFP) grew normally on respiratory carbon sources, produced ATP effectively, and expressed mitochondrial proteins normally, demonstrating that the mitochondrial genome modifications do not interfere with mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C117 are supported by data in Figures 1B-D showing growth assays, ATP synthesis rates, and mitochondrial translation products. The statistical analysis of ATP synthesis (p=0.7456, not significant) confirms no functional impairment. These controls are essential for validating that the system does not disrupt normal mitochondrial physiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C61",
+      "C63",
+      "C65"
+    ],
+    "result": "Expression of mitochondrial proteins Pam16\u03b211ch and Atp4\u03b211ch in the BiG Mito-Split-GFP strain resulted in strong GFP signals that colocalized with mitochondria, while empty plasmid controls showed no fluorescence, confirming proper expression and assembly of the split-GFP system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C61, C63, and C65 are supported by microscopy data (Figure 2B, 2D), Western blots (Figure 2C), flow cytometry (Figure 2E), and 3D reconstruction. Multiple independent validation methods (epifluorescence, confocal Airyscan, flow cytometry) consistently demonstrate mitochondrial-specific fluorescence with positive controls and absence of signal with negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C62",
+      "C64"
+    ],
+    "result": "The cytosolic protein Pgk1, which localizes at the external surface of mitochondria, showed no GFP fluorescence in the BiG Mito-Split-GFP system despite good protein expression, demonstrating that the system does not produce false-positive signals with cytosolic or externally-associated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C62, and C64 are supported by Western blot data confirming Pgk1\u03b211ch expression (Figure 2C) and multiple microscopy approaches showing absence of fluorescence (Figures 2B, 2D, Figure 2\u2014figure supplement 1B). The known external mitochondrial localization of Pgk1 (supported by citations C50) makes this a stringent negative control, validating system specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C118"
+    ],
+    "result": "The authors conclude that GFP fluorescence in the BiG Mito-Split-GFP system is a robust readout for mitochondrial importability, as only proteins localized inside the mitochondrial matrix or at the matrix-side periphery of the inner membrane trigger GFP reconstitution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C118 represent conclusions drawn from the validation experiments with positive controls (Pam16, Atp4, cERS) and negative controls (Pgk1, empty vector). The convergent evidence from multiple protein markers with different abundance levels and localizations, combined with the absence of false positives, supports this conclusion about system specificity and reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C120"
+    ],
+    "result": "The BiG Mito-Split-GFP system specifically detected the mitochondrial pool of the dual-localized protein cERS without interference from the more abundant cytosolic echoform, which is not possible with regular GFP tagging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 and C120 are supported by microscopy data (Figure 2B, Figure 2\u2014figure supplement 1A) showing mitochondrial-specific fluorescence with cERS\u03b211ch expressed from both plasmid and chromosomal integration. The dual localization of cERS and its functional role are supported by citations to previous work (C54-C55). The comparison to regular GFP (C60) is supported by citation to Frechin et al., 2009, establishing the advantage of this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C116"
+    ],
+    "result": "Comparison with an MTS-based Split-GFP approach revealed that the conventional method can generate false-positive mitochondrial fluorescence due to high-affinity self-assembly of GFP fragments in the cytosol, demonstrating the advantage of compartment-restricted expression in BiG Mito-Split-GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 and C116 are supported by the comparative experiment shown in Figure 2F, where Pgk1\u03b211ch (cytosolic negative control) produced mitochondrial signal when co-expressed with mtGatF\u03b21-10 but not in the BiG Mito-Split-GFP system. This direct comparison validates the superiority of the bi-genomic approach and identifies a potential artifact in conventional MTS-based Split-GFP methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C130"
+    ],
+    "result": "Screening of yeast cytosolic aminoacyl-tRNA synthetases using BiG Mito-Split-GFP identified two previously unknown dual-localized proteins: cFRS2 (cytosolic phenylalanyl-tRNA synthetase 2) and cytecHRS (cytosolic histidinyl-tRNA synthetase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C78, C80-C82, and C130 are supported by microscopy data in Figure 3A-C and Figure 3\u2014figure supplement 1 showing unambiguous mitochondrial fluorescence for cFRS2\u03b211ch and cytecHRS\u03b211ch. The screening covered 18 out of 20 yeast caaRSs (C78), providing comprehensive coverage. Western blots confirm protein expression (Figure 3\u2014figure supplement 1B). These are novel discoveries that expand understanding of dual-localized proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C82",
+      "C85",
+      "C137"
+    ],
+    "result": "The study confirmed the recently reported dual localization of cCRS (cytosolic cysteinyl-tRNA synthetase) and demonstrated that the N-terminal 100 amino acids contain a mitochondrial targeting signal, consistent with findings showing alternative transcription and translation starts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C82, C85, and C137 are supported by microscopy data showing mitochondrial fluorescence with N100cCRS\u03b211ch (Figure 3C) and citations to Nishimura et al., 2019 confirming the recent discovery and mechanism. This represents independent validation of a recent finding using the new BiG Mito-Split-GFP system, strengthening confidence in both the system and the original discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C77"
+    ],
+    "result": "The BiG Mito-Split-GFP system confirmed that mitochondrial echoforms of cARS, cGRS1, cHRS, and cVRS require their mitochondrial targeting sequences for mitochondrial localization, as versions lacking these sequences showed no mitochondrial fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 and C77 are supported by microscopy data in Figure 3D showing mitochondrial fluorescence with full-length mtecaaRSs but no signal with cytosolic versions lacking MTS. This negative control validates MTS-dependency and confirms the known mechanism of alternative translation/transcription initiation (supported by multiple citations in C77). The experiments provide functional validation of predicted targeting sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C123",
+      "C124"
+    ],
+    "result": "Using N-terminal deletion and truncation analysis, the authors mapped the non-conventional mitochondrial targeting sequence of cERS to the first 30 amino acids, which consists of a \u03b2-strand and a 13 amino acid \u03b1-helix structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96, C123-C124 are supported by microscopy data (Figure 4B) showing mitochondrial fluorescence with N-terminal fragments containing residues 1-30 but not with deletions lacking these residues, and Western blots confirming protein expression (Figure 4C). The structural characterization is supported by citation to Simader et al., 2006 (C96). This demonstrates the system's utility for mapping non-conventional MTSs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Testing Arabidopsis thaliana glutamyl-tRNA synthetases showed that AthcERS (predicted cytosolic) produced no mitochondrial signal while Athmt/chlERS (predicted mitochondrial/chloroplastic) showed specific mitochondrial fluorescence, demonstrating the system can analyze plant proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by computational predictions (Figure 5A), Western blots confirming expression (Figure 5C), and microscopy data (Figure 5B) showing differential localization consistent with predictions. This validates the system's utility for heterologous protein analysis and demonstrates conservation of mitochondrial import machinery between yeast and plants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C33"
+    ],
+    "result": "The BiG Mito-Split-GFP system demonstrated that mammalian Argonaute 2 (Ago2) from both mouse and human localizes inside yeast mitochondria, despite the absence of predicted mitochondrial targeting sequences, providing strong evidence for Ago2 as a multi-localized protein with a mitochondrial echoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 and C33 are supported by computational predictions showing no MTS (Figure 5D), Western blots confirming expression (Figure 5E-F), and microscopy showing specific mitochondrial fluorescence for both MmuAgo2\u03b211ch and HsaAgo2\u03b211ch (Figure 5E-F). This resolves previous uncertainty about Ago2 mitochondrial localization (C106) and demonstrates the system can identify cryptic mitochondrial targeting in heterologous proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors propose that the newly identified mtecFRS2 likely has non-canonical functions beyond tRNA charging, since a dedicated mitochondrial mtFRS already exists and functions as a monomer to generate mitochondrial Phe-tRNAPhe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 and C133-C134 are speculative interpretations (marked as SPECULATION in evidence_type) based on the existence of mtFRS (supported by citation to Koerner et al., 1987 and Sanni et al., 1991). While the dual localization of cFRS2 is experimentally demonstrated, the proposed non-canonical function is a hypothesis without direct experimental support. Additional functional studies would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The authors propose two alternative hypotheses for the observed mitochondrial fluorescence of cytecHRS: either the MTS is longer than originally characterized, or there exists a second mitochondrial echoform with a cryptic MTS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are speculative explanations (marked as SPECULATION in evidence_type) for the unexpected mitochondrial localization of cytecHRS. While the experimental observation of mitochondrial fluorescence is supported by data (C81), the mechanistic explanation remains uncertain without additional experiments to distinguish between these hypotheses or identify the actual targeting sequence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C135",
+      "C136"
+    ],
+    "result": "The failure to detect mitochondrial localization of cQRS using BiG Mito-Split-GFP contradicts a previous proposal that cQRS import compensates for the absence of mtQRS, and is consistent with the authors' previous findings that mtecERS provides mitochondrial Gln-tRNAGln via the transamidation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C135-C136 are supported by the absence of fluorescence signal for cQRS in the screening (Figure 3, Figure 3\u2014figure supplement 1) and citations to the authors' previous work (Frechin et al., 2009, 2014) establishing the transamidation pathway. This negative result, combined with positive controls demonstrating system sensitivity, provides strong evidence against the Rinehart et al., 2005 proposal and supports the alternative mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Sequence analysis of newly identified mitochondrial echoforms of caaRSs revealed no common specific motif or significant sequence similarity in N-terminal regions, though most (except cERS) show at least one \u03b1-helix within the first 50 residues and enrichment in positively-charged amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 are supported by computational analyses using MAST/MEME (cited to Bailey et al., 2009) and BLAST searches (Figure 4\u2014figure supplement 1), combined with structural predictions. The analysis appropriately acknowledges the lack of a common motif while identifying some shared features. The caveat about unknown tertiary structures is appropriately noted, indicating scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The authors' previous work established that mtecERS is essential for producing mitochondrial Gln-tRNAGln through the transamidation pathway, where it aminoacylates mitochondrial tRNAGln with Glu to produce Glu-tRNAGln, which is then converted to Gln-tRNAGln by GatFAB amidotransferase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 describe prior work by the authors, supported by citations to Frechin et al., 2009 and 2014. While this is background information rather than a new result from the current study, it provides essential context for interpreting the cERS findings and the negative cQRS result. The mechanism is well-established in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the biological context that dual-localized proteins (echoforms) are common in mitoproteomes, but conventional GFP fusion microscopy cannot reliably detect mitochondrial echoforms when the cytosolic pool is more abundant, motivating the need for a new approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C16-C21 provide background knowledge supported by multiple citations (Ben-Menachem et al., 2011; Dinur-Mills et al., 2008; Kisslov et al., 2014; Weill et al., 2018). These claims establish the scientific rationale for developing BiG Mito-Split-GFP. The limitation of conventional GFP approaches (C3, C21) is a logical inference supported by the principle that abundant cytosolic fluorescence would overwhelm weaker mitochondrial signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript provides standard background on mitochondrial biology, including their role in ATP production, other vital functions, evolutionary origin from an ancestral prokaryotic genome, and the fact that most mitochondrial proteins are nuclear-encoded and targeted via mitochondrial targeting signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 represent well-established background knowledge supported by appropriate citations (Saraste, 1999; Horvath and Daum, 2013; Lill et al., 2012; Gray, 2017; Margulis, 1975; Thorsness and Weber, 1996; Chacinska et al., 2009). These are standard introductory statements that provide context but do not represent novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "S. cerevisiae lacks genes encoding six mitochondrial aminoacyl-tRNA synthetases (mtARS, mtCRS, mtGRS, mtHRS, mtQRS, mtVRS), suggesting that cytosolic equivalents might encode mitochondrial echoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by Table 2 showing the absence of dedicated mitochondrial genes for these six aaRSs. The inference that cytosolic genes might encode mitochondrial echoforms (C76) is a reasonable hypothesis that motivated the screening experiments. This represents established knowledge about yeast genome organization that provides rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The BiG Mito-Split-GFP system requires mitochondrial genome modification, which is currently only possible in S. cerevisiae and Chlamydomonas reinhardtii, but the high conservation of mitochondrial protein import systems allows testing of proteins from various eukaryotic origins in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by citations to Remacle et al., 2006 (technical limitation) and Lithgow and Schneider, 2010 (conservation of import systems). This accurately describes both a limitation and an opportunity of the system. The successful testing of plant and mammalian proteins (demonstrated in other results) validates the conservation principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The manuscript reviews the history of Split-GFP technology, noting its evolution from studying protein-protein interactions to tracking protein localization, and describes previous applications to mitochondrial studies, while identifying that prior approaches had both GFP fragments translated in the cytosol or secretory pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 provide literature review supported by multiple citations (Hyun et al., 2015; Kaddoum et al., 2010; Kamiyama et al., 2016; K\u00fclzer et al., 2013; Pinaud and Dahan, 2011; Van Engelenburg and Palmer, 2010; Cal\u00ec et al., 2015; Yang et al., 2018; Kakimoto et al., 2018). This contextualizes the current work within the field and identifies the key innovation (compartment-restricted expression) that distinguishes BiG Mito-Split-GFP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The manuscript reports protein abundance levels for validation controls: Atp4 (30,000-40,000 copies/cell), Pam16 (3,000 copies/cell), and GatF (40-80 copies), establishing that the system can detect proteins across a wide range of abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 cite published abundance data (Morgenstern et al., 2017; V\u00f6gtle et al., 2017) for the control proteins used in validation. This information is important for assessing the sensitivity of the BiG Mito-Split-GFP system, though the manuscript notes that comprehensive sensitivity testing with GatF will be reported separately in BioRxiv.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The authors encountered technical difficulties in obtaining full-length GFP\u03b211ch-tagged versions of cCRS and cPRS despite repeated attempts, but successfully cloned the N-terminal 100 amino acids of cCRS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 honestly reports a technical limitation encountered during the study. The successful cloning of N100cCRS (which showed mitochondrial localization) partially compensated for the inability to clone full-length cCRS. This transparency about experimental challenges is appropriate, though it represents a minor gap in the comprehensive screening.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors' previous work showed that most cytosolic cERS interacts with Arc1 in fermenting yeast, but Arc1 expression is repressed during diauxic shift, allowing cERS to relocate to mitochondria, suggesting that N-terminal domain interactions regulate cERS distribution between compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 describe prior findings that provide mechanistic context for cERS dual localization. While marked as previously shown knowledge (C142-C143) and inference (C144), these claims are relevant for understanding how dual localization might be regulated. The inference about N-terminal domain importance (C144) is reasonable given the Arc1 interaction mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The manuscript discusses that while recent mitochondrial proteomics efforts have achieved high precision, challenges remain due to difficulty obtaining pure mitochondria and the presence of transiently localized proteins, with 10-20% of the yeast mitoproteome suggested to have dual localization, which the BiG Mito-Split-GFP system can help resolve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by citations to Morgenstern et al., 2017 and Ben-Menachem and Pines, 2017, establishing the current state of the field and ongoing challenges. Claim C128 is a prospective statement about the utility of the new system that is reasonable given the demonstrated capabilities, though it represents future potential rather than current achievement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "The manuscript notes that some aminoacyl-tRNA synthetases are known to relocate to different compartments for diverse cellular activities, and speculates that the newly identified dual-localized cFRS2 and cytecHRS may have additional roles beyond translation, with cFRS2 potentially functioning independently of its \u03b2-subunit partner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C129 is supported by citations (Han et al., 2012; Ko et al., 2000; Yakobov et al., 2018) establishing the general principle. However, claims C131-C132 are speculative inferences about potential non-canonical functions without direct experimental evidence. While the dual localization is demonstrated, the functional implications remain hypothetical and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "The authors conclude that the BiG Mito-Split-GFP system is robust, cost-effective, can test proteins from various organisms, and has many potential applications for studying mitochondria and their communications with other cellular compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 is supported by the comprehensive validation data and successful application to diverse proteins. The characterization as \"robust\" is justified by the consistent results across multiple proteins and methods, \"not expensive\" is reasonable given it uses standard yeast genetics, and testing proteins from various organisms is demonstrated with plant and mammalian examples. Claim C146 is a prospective statement about future applications that is reasonable but represents potential rather than demonstrated achievement.",
+    "result_type": "MINOR"
+  }
+]

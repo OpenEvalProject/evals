@@ -1,0 +1,178 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Wild-type H. pylori cells exhibit helical morphology with distinct geometric parameters (2.5\u00b10.5 \u00b5m length, 0.45\u00b10.02 \u00b5m diameter, 1.7\u00b11 \u00b5m helical pitch, 0.3\u00b10.1 \u00b5m helical diameter) that generate a multimodal distribution of sidewall Gaussian curvature with considerably higher positive and negative curvatures than straight- or curved-rod cells. The major axis is 70% longer than the minor axis, with average Gaussian curvatures of 5\u00b11 \u00b5m\u207b\u00b2 and \u221211\u00b14 \u00b5m\u207b\u00b2 at the major and minor axes, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C24, and C63-C68 are well-supported by quantitative 3D microscopy data (Figures 2, 3) and computational modeling of cell geometry. The measurements are internally consistent, replicated across multiple cells (n=231 well-fit cells from 1137 total), and the multimodal curvature distribution is clearly demonstrated. The simulation framework validates that helical pitch and diameter are the primary determinants of curvature extremes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Quantitative 3D microscopy analysis of 18-minute pulses with MurNAc-alk and D-Ala-alk metabolic probes demonstrates that cell wall growth is enhanced at both sidewall curvature extremes: enrichment increases monotonically at negative curvatures and peaks near 6 \u00b5m\u207b\u00b2 at positive curvatures. Both probes show similar enrichment patterns, though D-Ala-alk shows reduced magnitude at positive curvature. Mock labeling controls show minimal curvature bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C69-C72 are strongly supported by metabolic labeling experiments (Figures 5, 6) with appropriate controls across three biological replicates. The curvature enrichment analysis is quantitative and normalized, with 90% bootstrap confidence intervals. The mock control demonstrates specificity (3.6-4.5% of signal). However, the interpretation that D-Ala-alk reports exclusively on synthesis is complicated by its incorporation mechanism through transpeptidases, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "MreB is essential in H. pylori strain LSH100 and localizes as peripheral foci and short arcs that are depleted at poles and show monotonically increasing enrichment at increasingly negative Gaussian curvatures. Preimmune serum shows no curvature preference despite representing 36.4% of the MreB signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28-C30, C73-C75 are well-supported by transformation experiments demonstrating essentiality (Figure 7A, Figure 7\u2014figure supplement 1) and immunofluorescence with curvature enrichment analysis (Figure 7, n=1108 cells across three replicates). The essentiality conclusion is strengthened by the merodiploid rescue experiment and the observation that suppressor clones maintained mreB copies. The high preimmune background (36.4%) is concerning but the lack of curvature preference in the control validates the specific enrichment pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C37",
+      "C39",
+      "C76",
+      "C77"
+    ],
+    "result": "CcmA forms filaments, helical bundles, and skewed lattices (5.5 nm spacing, 71.5\u00b0/106.2\u00b0 angles) in vitro and localizes to the cell boundary as puncta and short arcs in vivo with marked preference for positive Gaussian curvature (peaking near 5 \u00b5m\u207b\u00b2), overlapping with the positive curvature enrichment of MurNAc-alk and D-Ala-alk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31-C33, C37, C39, C76-C77 are supported by TEM data (Figure 8A-B, Figure 8\u2014figure supplement 2) and immunofluorescence with curvature enrichment analysis (Figures 9-10, n=297 cells across three replicates). The in vitro polymerization data clearly demonstrates higher-order structure formation. The in vivo localization shows specific enrichment at positive curvature with appropriate controls (no-FLAG control at 28.9% of signal). The correlation between CcmA localization and synthesis probe enrichment is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C40"
+    ],
+    "result": "CcmA point mutants I55A and L110S show altered polymerization properties in vitro (I55A forms no structures; L110S forms shorter, straighter bundles without lattices) and fail to localize to positive curvature in vivo, resulting in rod-shaped cells indistinguishable from ccmA null strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C34-C36, C38, C40 are well-supported by TEM data (Figure 8C-D), cell shape analysis (Figure 8F, n>300 cells per strain), and immunofluorescence with curvature enrichment analysis (Figures 9-10, Figure 10\u2014figure supplement 3). The mutants show consistent loss of both in vitro polymerization and in vivo function. However, the I55A mutant shows lower steady-state protein levels, which could contribute to the phenotype independently of polymerization defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C81"
+    ],
+    "result": "The authors propose a model where CcmA and MreB promote peptidoglycan synthesis at positive and negative Gaussian curvatures, respectively, and that this patterning is one mechanism necessary for maintaining helical shape. Proper localization of CcmA to the major helical axis may be required for promoting extra cell wall synthesis at the major axis area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C81 represent the central mechanistic model, which is well-supported by the convergence of multiple lines of evidence: (1) MreB and CcmA show complementary curvature preferences, (2) synthesis probes show enrichment matching protein localizations, (3) CcmA mutants lose both localization and helical shape, and (4) \u0394ccmA cells show altered synthesis patterns. However, the model is explicitly presented as a proposal and the authors acknowledge that additional mechanisms are likely required, as the synthesis pattern alone seems insufficient to fully explain helical shape maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In \u0394ccmA cells, MreB curvature preference remains similar to wild-type (with poles excluded), but MurNAc-alk and D-Ala-alk patterning changes: there is greater relative enrichment at low magnitude negative Gaussian curvature and the enrichment at positive Gaussian curvature is less pronounced and shifted to lower curvature compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by curvature enrichment analysis of \u0394ccmA cells (Figure 11, n=814 MreB, n=686 MurNAc-alk, n=1386 D-Ala-alk cells across three replicates). The data demonstrate that loss of CcmA alters synthesis patterning while MreB localization is largely maintained. This supports the model that CcmA specifically promotes synthesis at positive curvature. However, the interpretation is complicated by the fact that \u0394ccmA cells have different geometry (rod-shaped), which affects the normalization and interpretation of curvature enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C60"
+    ],
+    "result": "The engineered H. pylori strain HJH1 (expressing AmgK and MurU) can utilize exogenous MurNAc, as demonstrated by partial rescue from fosfomycin treatment (MIC=25 \u00b5g/ml) with 4 mg/ml MurNAc supplementation. MS/MS analysis confirms incorporation of MurNAc-alk into peptidoglycan pentapeptides and tetra-pentapeptides, while D-Ala-alk is incorporated exclusively at the pentapeptide position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C60 are well-supported by fosfomycin rescue experiments (Figure 4A), MIC determination (Figure 4\u2014figure supplement 2), and MS/MS analysis (Figure 4B-D, Table 1, Figure 4\u2014figure supplements 3-4). The biochemical validation is thorough and demonstrates that both probes are incorporated into the cell wall. The exclusive pentapeptide incorporation of D-Ala-alk is clearly demonstrated by HPLC and MS data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "Background and contextual claims about H. pylori biology, bacterial cell shape mechanisms, and prior work on MreB, bactofilins, and cell wall synthesis in various organisms. These include established facts about H. pylori (helical bacterium causing gastric disease, genetically tractable), peptidoglycan structure determining cell shape, requirements for helical shape maintenance proteins, MreB function in other bacteria, and bactofilin functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16, C44-C62 are background/contextual claims supported by appropriate citations to published literature or represent established knowledge in the field. These provide necessary context for interpreting the novel findings but are not primary results of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  }
+]

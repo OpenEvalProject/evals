@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "DASC is a thermodynamics-inspired method that uses three summary statistics (d1, d2, d3) derived from intensity fluctuations to classify clathrin structures into ACs, CCPs, and outlier traces using k-medoids clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17-C20 describe the DASC method and demonstrate bimodal distributions of d1 and d2 that separate ACs from CCPs, with d3 identifying outliers. Claims C99-C102 provide the thermodynamic foundation. The method is well-documented with clear mathematical formulations and demonstrated on >200,000 structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DASC-identified ACs and CCPs exhibit distinct kinetic and structural properties: ACs have exponentially distributed short lifetimes (<20s), lower intensities, and random intensity profiles, while CCPs have Rayleigh-distributed lifetimes (~26s peak), higher intensities with a sharp minimum threshold, and characteristic rising-falling intensity profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 and C53-C55 collectively demonstrate clear differences between ACs and CCPs in lifetime distributions, intensity characteristics, and temporal dynamics. These are supported by Figure 2B-D and are consistent with structural expectations for clathrin basket formation (C24 with citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "DASC is statistically robust across movie-to-movie variations and transferable to multiple cell lines, with k=3 clusters consistently optimal across different cell types (except A549).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by permutation tests (Figure 2F-G) showing no significant differences between movies from the same condition. Claims C29-C30 demonstrate transferability across H1299, ARPE, SKML, and HPV-RPE cell lines with consistent k=3 clustering (Figure 2\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C40"
+    ],
+    "result": "DASC validation using \u03b1AP2(PIP2-) mutant cells shows increased CS initiation rate, decreased CCP stabilization (27% reduction in CCP%), and shorter CCP lifetimes compared to \u03b1AP2(WT) cells, confirming DASC's ability to detect known perturbations in CCP dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C34-C36 demonstrate DASC's sensitivity to a well-characterized perturbation (\u03b1AP2-PIP2 interactions). The results are shown in Figure 3A-C and Table 1, with C40 providing the summary conclusion. The findings are consistent with prior work (C32 citing Kadlecova et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C56",
+      "C57",
+      "C75"
+    ],
+    "result": "Dual-channel imaging reveals that DASC-identified CCPs recruit both clathrin and AP2 at significantly higher rates than ACs, with CCPs containing more AP2 complexes overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C56-C57, and C75 are supported by dual-channel mRuby2-CLCa and \u03b1-eGFP-AP2 imaging data shown in Figure 3D-E. The differential recruitment rates distinguish ACs from CCPs and validate DASC classification. C37 is additionally supported by citation to Loerke et al., 2011.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C58",
+      "C40"
+    ],
+    "result": "DASC-identified CCPs acquire significant membrane curvature (invagination depth >35nm, \u0394z/h>0.3) while ACs fail to gain curvature, establishing structural and functional distinction between the two populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C58 are supported by EPI-TIRF measurements shown in Figure 3F and Figure 3\u2014figure supplement 3. The curvature acquisition distinguishes CCPs from ACs even when controlling for intensity (Figure 3\u2014figure supplement 3E-G), providing strong validation of DASC classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C79"
+    ],
+    "result": "DASC enables stage-specific phenotyping of 11 EAP knockdowns, revealing that CALM affects initiation, stabilization, and maturation; epsin1 selectively affects stabilization; Eps15 affects initiation and stabilization; and FCHO1/2, ITSN1/2, NECAP1, Eps15/15R affect early stages without altering maturation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 demonstrate DASC's ability to dissect stage-specific EAP functions shown in Figures 4B-F and Table 1. The statistical reliability is confirmed through 300 bootstraps (C45, Figure 4G). C79 provides the summary conclusion. The differential effects across EAPs validate DASC's sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C51",
+      "C89"
+    ],
+    "result": "DASC measurements of early CME stages (CCP rate, CCP%) are more sensitive than and uncorrelated with bulk transferrin uptake assays (TfReff), with only EAPs affecting CCP maturation (CALM, SNX9, NECAP1, ITSN2) showing strong effects on cargo uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48, C51, and C89 are supported by PCA analysis (Figure 5C) showing CCP rate perpendicular to TfReff, and correlation analysis (Figure 5\u2014figure supplement 1B). The lack of correlation between early-stage perturbations and cargo uptake demonstrates DASC's unique sensitivity and the resilience of CME.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C59",
+      "C90"
+    ],
+    "result": "DASC accurately separates dynamically, structurally, and functionally distinct CS subpopulations from single-channel TIRF imaging without prior assumptions or additional markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C59, and C90 summarize DASC's capabilities validated through multiple experiments: kinetic differences (C21-C26), structural differences (C38-C39), functional differences (C37, C56-C57), and curvature acquisition (C38-C39). The method requires only single-channel clathrin imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "DASC requires specific experimental conditions: frame rate of 1 s\u207b\u00b9 to capture clathrin turnover (~2s timescale), sufficient SNR requiring ~5-fold overexpression of fluorescent clathrin, aggregation of \u2265200,000 traces from ~20 movies, and movie duration of 7.5 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C64-C66 describe DASC's technical requirements supported by citations (C61) and methodological validation. C65 is supported by Figure 2\u2014figure supplement 1 showing endogenous expression is insufficient. These requirements are necessary for the method's statistical robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Previously proposed molecular markers (dynamin recruitment, cargo loading) do not unambiguously distinguish ACs from CCPs due to significant overlap in their distributions and recruitment to both populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by multiple citations documenting the limitations of dynamin (C67-C70) and cargo (C72-C74) as definitive markers. This establishes the need for DASC and explains why previous classification methods were inadequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C3"
+    ],
+    "result": "The substantial overlap in lifetime and intensity distributions between ACs and CCPs has prevented unambiguous classification and limited mechanistic analysis of CCP dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C3 identify the core problem addressed by DASC, supported by Figure 1A-B showing overlapping distributions. This motivates the development of the new method and is validated by DASC's successful resolution of these populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The experimental system uses ARPE19/HPV16 cells stably expressing eGFP-CLCa at ~5-fold overexpression, which ensures stoichiometric incorporation into clathrin triskelia without perturbing CME, with \u226519 movies and >200,000 tracked structures per condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 describe the validated experimental system. C94 is supported by multiple citations establishing that this expression level does not perturb CME. C95 documents the data scale. These methodological details are essential for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C85",
+      "C91"
+    ],
+    "result": "Future applications of DASC include identifying molecular determinants of the endocytic checkpoint through multichannel imaging, characterizing compensatory mechanisms, and comprehensively analyzing all >70 EAPs in CME dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78, C82, C85, and C91 describe speculative future work. While DASC provides the necessary tool, these applications have not been demonstrated. The claims are reasonable extensions but represent hypotheses rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The strong effects on TfR uptake observed for CALM and SNX9 knockdown differ from some previous reports, possibly reflecting cell-type-specific expression of redundant isoforms, with effects correlating most strongly with CCP maturation changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 acknowledge discrepancies with prior work (C86 with citations) and provide plausible explanations (C87). C88 is supported by Figure 5\u2014figure supplement 1 showing correlation between maturation effects and TfR uptake. The interpretation is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The poor correlation between CCP rate and transferrin uptake, along with failure of genome-wide screens to detect EAPs, suggests compensatory mechanisms and molecular redundancy maintain CME efficiency despite perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by the data showing uncorrelated DASC and TfR measurements (Figure 5C) and multiple citations documenting screen failures (C81). The interpretation of compensatory mechanisms is reasonable but represents inference rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "CCP maturation is proposed to be controlled by an endocytic checkpoint, but its molecular nature has remained elusive due to the complexity of multi-component machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by multiple citations proposing the checkpoint model. This represents established prior work that motivates DASC development. The claim accurately represents the current state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "CME is driven by resilient machinery with >70 EAPs, where perturbation of individual EAPs often results in minor effects on biochemical measurements despite physiological consequences, motivating the need for more sensitive analytical methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C12 establish the biological context and motivation for DASC. These are supported by established knowledge (C1, C6-C9) and multiple citations (C10-C12). The resilience of CME is demonstrated throughout the manuscript and justifies DASC development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "A large fraction of detected clathrin structures are short-lived (<20s) and dimmer than mature CCPs, representing potential abortive coats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by citations to Taylor et al., 2011 and Liu et al., 2010, and represent established observations that motivated DASC development. These observations are validated by DASC's subsequent classification of these structures as ACs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "AP2 complexes recruit clathrin and undergo allosterically-regulated conformational changes to stabilize nascent CCPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 represents established knowledge about AP2 function supported by multiple citations (Kadlecova et al., 2017; Jackson et al., 2010; Kelly et al., 2008; Collins et al., 2002). This provides biological context for the \u03b1AP2 validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Bona fide CCPs have lifetimes >20s and intensities corresponding to 36-60+ triskelia, while ACs have lower intensities and disassemble at any time, with individual CS intensities highly fluctuating due to multiple technical and biological factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe expected characteristics of CCPs and ACs. C96 is supported by citation to Ehrlich et al., 2004. C98 is supported by Figure 1\u2014figure supplement 1A-B and citations documenting clathrin turnover rates. These establish the challenge DASC addresses.",
+    "result_type": "MINOR"
+  }
+]

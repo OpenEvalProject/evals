@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript describes a widely accepted model in which H3-H4 tetramers carry epigenetic memory through DNA replication. According to this model, random segregation of tetramers during replication predicts that shorter heterochromatic domains would be less stable due to increased probability of asymmetric tetramer inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 accurately describe established knowledge and theoretical predictions from the histone inheritance model. These claims are well-supported by citations to prior literature (C3, C20) and represent logical inferences from the model (C4, C5). This provides the necessary background for testing the model's predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Shortening the heterochromatic domain at HMR by deleting nucleosomes (from 14 to 7 nucleosomes) had no significant impact on silencing-loss rates, contrary to predictions from the histone inheritance model. The observed silencing-loss rate remained approximately 0.1% of cell divisions regardless of domain size, while the model predicted rates increasing from 0.006% to 1% as nucleosome number decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38-C40 are supported by experimental data from the CRASH assay (Figures 1E-F) and flow cytometry measurements. MNase-Seq data (C33-C34) confirms nucleosome positions were maintained after deletions. The discrepancy between predicted (C35, C37) and observed (C36, C38-C39) silencing-loss rates provides strong evidence against the histone inheritance model. Statistical analysis shows only minor differences between strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C92"
+    ],
+    "result": "In sir1\u0394 mutants with weakened silencer activity, HMR exists in bistable epigenetic states (silenced or expressed) that are mitotically heritable. Reducing nucleosome number at HMR (from 12 to 6 nucleosomes) did not significantly affect the rates of silencing loss or establishment, nor did it affect inheritance of the expressed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by live-cell imaging (Figure 2A, Video 1), time-lapse microscopy (Figure 2D-E), and flow cytometry data (Figure 2\u2014figure supplements 1-2). MNase-Seq confirms nucleosome positions (C46). The lack of effect of domain size on epigenetic switching rates in a sensitized background (weakened silencer activity) provides additional evidence against histone-based memory. Statistical analysis shows no significant differences between strains with different nucleosome numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C81",
+      "C82"
+    ],
+    "result": "Replisome mutations that disrupt symmetric H3-H4 tetramer inheritance (dpb3\u0394 and mcm2-3A) caused mild but significant increases in silencing-loss rates at HMR. The dpb3\u0394 mcm2-3A double mutant showed higher silencing-loss rates than either single mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C81-C82 are supported by CRASH assay data (Figure 3A-B) showing statistically significant increases in silencing loss. Prior work (C49-C52, cited studies) establishes that these mutations disrupt tetramer inheritance. However, the magnitude of the effect is modest, and the vast majority of cells still maintain silencing (C62, C83), suggesting histones play a minor role in epigenetic inheritance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In sir1\u0394 background, replisome mutants (dpb3\u0394, mcm2-3A, dpb3\u0394 mcm2-3A) showed increased frequencies of expressed cells and higher silencing-loss rates compared to wild type, as measured by FACS and time-lapse microscopy. However, the vast majority of silenced cells still faithfully transmitted the silenced state. Strains containing dpb3\u0394 showed increased silencing establishment rates and elevated GFP expression in unsilenced cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 are supported by flow cytometry (Figure 4\u2014figure supplement 1, Table 1), FACS-based switching rate measurements (Figure 4B-C, E-F), and time-lapse microscopy (Figure 4D, G). The mathematical modeling of switching rates appears sound. The dpb3\u0394-specific effects on establishment (C63) and expression levels (C65) are intriguing but complicate interpretation. The key observation is that despite disrupted tetramer inheritance, most cells maintain epigenetic states (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C84",
+      "C85"
+    ],
+    "result": "Combining replisome mutations that disrupt tetramer inheritance (dpb3\u0394 and/or mcm2-3A) with reduced nucleosome number at HMR showed no clear correlation between nucleosome number and silencing-loss rates. Even with both reduced tetramer inheritance and fewer nucleosomes available for inheritance, cells exhibited robust transmission of epigenetic states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C85 are supported by time-lapse microscopy data (Figure 5B-C) showing no correlation between nucleosome number and switching rates in replisome mutant backgrounds. Prior work (C66-C67, C84) establishes that these mutants retain some residual tetramer inheritance. This double perturbation experiment provides the strongest evidence against histone-based epigenetic memory, as even the combination of reduced tetramer inheritance and fewer nucleosomes does not dramatically destabilize silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C86",
+      "C97",
+      "C99"
+    ],
+    "result": "The authors conclude that histones carry little or no memory of the heterochromatin state through DNA replication in S. cerevisiae, and that the fidelity of H3-H4 tetramer inheritance has minimal consequences for heritability of the silenced state. These findings raise doubts about the model in which histones are significant carriers of epigenetic memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main conclusions (C8, C86, C97, C99) are well-supported by the collective experimental evidence: (1) domain size does not affect silencing stability in wild-type or sir1\u0394 backgrounds; (2) replisome mutations that disrupt tetramer inheritance cause only modest increases in silencing loss; (3) combining reduced tetramer inheritance with reduced nucleosome number does not dramatically destabilize silencing. These findings consistently contradict predictions from the histone inheritance model. The conclusions are appropriately cautious, acknowledging that histones may play a minor role (C97) while arguing against histones as the primary carriers of epigenetic memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors discuss prior evidence that silencers are necessary for heterochromatin maintenance and that epigenetic information is transmitted locally in cis. They propose that other cis-acting factors besides modified H3-H4 tetramers determine epigenetic states, potentially through self-templating of silencer complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 accurately cite prior literature on silencer removal experiments and cis-acting epigenetic inheritance. The inference that other cis-acting factors determine epigenetic states (C78) is reasonable given the experimental results. The hypothesis about silencer complex self-templating (C79) is appropriately presented as speculation. This discussion provides important context for interpreting the negative results regarding histone-based memory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C98"
+    ],
+    "result": "The expressed state of HMR in sir1\u0394 is also an epigenetic state. The authors discuss models incorporating positive feedback loops between histone modifications and transcription factors, which predict that domain size should affect heritability of both silenced and expressed states. The dpb3\u0394 mutation specifically increased silencing establishment rates and GFP expression levels, suggesting it may affect inheritance of the expressed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is supported by experimental observations. Claims C88-C91 accurately describe prior models. However, the interpretation of dpb3\u0394-specific effects (C93-C95, C98) is complicated by the paradoxical observation that increased transcription correlates with increased establishment rather than decreased establishment. The authors acknowledge this paradox (C96) but the mechanism remains unclear. The conclusion that tetramer inheritance may affect the expressed state (C98) is tentative and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C41",
+      "C80"
+    ],
+    "result": "The manuscript provides extensive background on epigenetic inheritance, histone modifications, nucleosome dynamics during replication, and the Sir-mediated silencing system in S. cerevisiae. This includes descriptions of prior studies supporting and challenging the histone inheritance model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C30, C41, C80 accurately describe established knowledge in the field, supported by appropriate citations. These claims provide essential context for understanding the experimental design and interpreting the results. The authors present a balanced view of prior evidence both supporting (C15-C17) and challenging (C18-C19, C25) the histone inheritance model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "All strains were derived from the W303 background, and replisome mutants showed similar generation times to wild type (approximately 1.96 hours in CSM media at 30\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details (C100-C102) are clearly stated and important for reproducibility. The similar generation times across genotypes indicate that the replisome mutations do not cause gross growth defects that might confound interpretation of silencing phenotypes.",
+    "result_type": "MINOR"
+  }
+]

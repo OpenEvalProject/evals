@@ -1,0 +1,1313 @@
+{
+  "submission": {
+    "id": "66751c82-4678-463e-8002-3155f693f61d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:40:44.184294Z",
+    "updated_at": "2025-12-02T18:40:44.184294Z"
+  },
+  "content": [
+    {
+      "id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "submission_id": "66751c82-4678-463e-8002-3155f693f61d",
+      "content_type": "manuscript",
+      "content_text": "# Altered expression of a quality control protease in E. coli reshapes the in vivo mutational landscape of a model enzyme\n\n## Authors\n\n- Samuel Thompson<sup>1</sup> ([ORCID: 0000-0001-6468-9538](https://orcid.org/0000-0001-6468-9538)) \u2020\n- Yang Zhang<sup>2</sup>\n- Christine Ingle<sup>3</sup> ([ORCID: 0000-0002-0203-2845](https://orcid.org/0000-0002-0203-2845))\n- Kimberly A Reynolds<sup>3</sup> ([ORCID: 0000-0003-4805-0317](https://orcid.org/0000-0003-4805-0317))\n- Tanja Kortemme<sup>1</sup> ([ORCID: 0000-0002-8494-680X](https://orcid.org/0000-0002-8494-680X)) \u2020\n\n### Affiliations\n\n1. Graduate Group in Biophysics, University of California San Francisco San Francisco United States\n2. Department of Bioengineering and Therapeutic Sciences, University of California San Francisco San Francisco United States\n3. The Green Center for Systems Biology, University of Texas Southwestern Medical Center Dallas United States\n4. Department of Biophysics, University of Texas Southwestern Medical Center Dallas United States\n5. Chan Zuckerberg Biohub San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nProtein mutational landscapes are shaped by the cellular environment, but key factors and their quantitative effects are often unknown. Here we show that Lon, a quality control protease naturally absent in common E. coli expression strains, drastically reshapes the mutational landscape of the metabolic enzyme dihydrofolate reductase (DHFR). Selection under conditions that resolve highly active mutants reveals that 23.3% of all single point mutations in DHFR are advantageous in the absence of Lon, but advantageous mutations are largely suppressed when Lon is reintroduced. Protein stability measurements demonstrate extensive activity-stability tradeoffs for the advantageous mutants and provide a mechanistic explanation for Lon\u2019s widespread impact. Our findings suggest possibilities for tuning mutational landscapes by modulating the cellular environment, with implications for protein design and combatting antibiotic resistance.\n\n## Introduction\n\nNatural protein sequences are constrained by pressures to maintain required structures and functions within a complex cellular environment. However, key cellular factors shaping protein sequences (such as interactions with cellular binding partners or with the proteostasis machinery) are often unknown. To characterize functional constraints, it has been useful to determine mutational landscapes of proteins, which we define here as the effects on growth of every possible single amino acid mutation in the protein, via deep mutational scanning (Boucher et al., 2016; Fowler and Fields, 2014). Deep mutational scanning studies have provided insights into evolution of new protein functions\u00a0(McLaughlin et al., 2012; Stiffler et al., 2015; Wrenbeck et al., 2017), protein design\u00a0(Tinberg et al., 2013; Whitehead et al., 2012), functional trade-offs\u00a0(Klesmith et al., 2017; Steinberg and Ostermeier, 2016), and adaptation to altered environments\u00a0(Hietpas et al., 2013). With a few exceptions\u00a0(Bandaru et al., 2017; Hietpas et al., 2013; Jiang et al., 2013; Stiffler et al., 2015), however, these studies find a general tolerance to mutation for residues outside of active sites and binding interfaces\u00a0(Araya et al., 2012; Boucher et al., 2016; Klesmith et al., 2017; Roscoe et al., 2013; Wrenbeck et al., 2017) that is often explained by the absence of key environmental constraints under the selection conditions\u00a0(Bandaru et al., 2017; Jiang et al., 2013; Stiffler et al., 2015).\n\nTo study the impact of multiple constraints on mutational tolerance during selection, we chose E. coli dihydrofolate reductase (DHFR) as a model system. DHFR is an essential enzyme within folate metabolism that reduces dihydrofolate to tetrahydrofolate and is necessary for thymidine production. Using this activity as the basis for an in vivo selection assay\u00a0(Reynolds et al., 2011), we aimed first to measure a mutational landscape for DHFR and then to determine how a change to the cellular environment might affect the landscape. Because DHFR is known to progress through multiple conformational states during catalysis\u00a0(Boehr et al., 2006; Sawaya and Kraut, 1997; Figure 1\u2014figure supplement 1), we expected the mutational landscape of DHFR to be constrained by the requirement to adopt these different conformations. Moreover, prior work had suggested DHFR is impacted by cellular constraints such as protein quality control\u00a0(Bershtein et al., 2013) and the build-up of a toxic metabolic intermediate\u00a0(Schober et al., 2019). We hence expected deep mutational scanning to reveal a highly constrained mutational landscape for DHFR that would contrast with the mutational tolerance observed in other systems.\n\n## Results\n\nAs the basis for our studies, we first sought to establish highly sensitive selection conditions for DHFR function that would be calibrated to DHFR enzymatic velocity (rate of DHF conversion per molecule of DHFR) and capable of resolving mutants with velocities near-to or faster-than wild-type. We anticipated that we would need to control DHFR protein expression (intracellular abundance) levels because two prior studies that modified the chromosomal DHFR gene had reported an overall high mutational tolerance under permissive selection conditions\u00a0(Garst et al., 2017) and that DHFR abundance can be reduced to\u00a0~30% without a growth impact\u00a0(Bershtein et al., 2013). We used an E. coli strain derived from ER2566 with the genes for DHFR and a downstream enzyme, thymidylate synthase, deleted in the genome and complemented on a pACYC-DUET plasmid with a weak ribosome binding site (see Materials\u00a0and\u00a0methods) that results in DHFR abundance at approximately 10% of the endogenous protein level (Figure 1\u2014figure supplement 2, Figure 1\u2014source data 1). To tightly control growth conditions, we performed selections in a turbidostat to maintain the culture in early Log phase growth (Figure 1A, Figure 1\u2014figure supplement 3A). To quantify the effects of DHFR mutations on growth, we calculated selection coefficients\u00a0(Rubin et al., 2017) from the change in allele frequency over time by deep sequencing of timepoint samples determined in biological triplicate (Figure 1B). For a panel of 14 DHFR mutants, we confirmed that the selection coefficients obtained from deep mutational scanning correlated linearly with growth rates measured separately for the individual variants in a plate reader (Figure 1\u2014figure supplement 3B, Figure 1\u2014source data 2), as expected. Furthermore, under our controlled selection conditions,\u00a0we observed a linear relationship between selection coefficient and in vitro velocity (Figure 1C) at cytosolic substrate concentrations\u00a0(Bennett et al., 2009; Kwon et al., 2008) for these DHFR mutants (Figure 1\u2014source data 3). These results confirm that selection coefficients between \u22121.5 and 1.0 in our experiment are correlated with DHFR enzymatic velocity over approximately 3 orders of magnitude, and that selection can resolve mutants with higher velocities than wild-type level velocity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig1-v2.jpg)\n\n**Figure 1.:** (A) Turbidostat schematic. Reoccurring dilutions with fresh medium keep the culture optical density (OD600) below 0.075. (B) The selection coefficient for each mutant is the slope of the linear regression of allele frequency over time. The wild-type (squares) value is normalized to zero. Advantageous (red) mutations increase and disadvantageous (blue) mutations decrease in frequency. (C) Selection coefficients from deep mutational scanning as a function of enzymatic velocity for purified DHFR point mutants measured in vitro. Velocities at 20 \u00b5M DHF were calculated from Michalis-Menten parameters. Error bars reflect the standard deviation from three biological replicates. (D) Histogram of selection coefficients. The wild-type value is indicated with a vertical black line. The median standard deviation over all mutations is the cut-off for WT-like behavior (Materials\u00a0and\u00a0methods, Figure 1\u2014figure supplement 3, Figure 1\u2014figure supplement 4) and is indicated with dashed lines. Mutation are colored as advantageous (red), disadvantageous (blue), WT-like (white), or null (grey). (E) Structural model of DHFR (PDB ID: 3QL3) with cross-section slices (a\u2013e) indicated. The DHF substrate (green) and the NADPH cofactor (purple) are represented by spheres (yellow carbons and heteroatom coloring). An arrow indicates the perspective for each slice. (a\u2013e) five cross-section slices. Color scale indicates numbers of advantageous mutations at each position. Crosshatching indicates residues with\u00a0>20% solvent accessible surface area.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The identity of each state is defined by the identity of the bound ligands (yellow spheres with heteroatom coloring) and the conformation of the M20 loop (outlined) that folds over the active site (closed or occluded). Upper models are in the closed state, and lower models are in the occluded state. All PDBs were downloaded from the PDB_REDO\u00a0(Joosten et al., 2014).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** DHFR cellular abundance is calculated from lysate activity (see Materials\u00a0and\u00a0methods). ER2566 is the parental strain (\u2013Lon). SMT102, SMT201, SMT202, SMT205 denote plasmid constructs with altered promoters and ribosome binding sites (see Figure 1\u2014source data 3) in the ER2566 \u2206folA/\u2206thyA strain. DHFR abundances in ER2566 and ER2566 \u2206folA/\u2206thyA \u2013Lon lysates are colored in grey. DHFR abundances in ER2566 \u2206folA/\u2206thyA +Lon lysates are colored in green. Error bars represent the cumulative percent error (standard deviation) from three independent experiments for velocity and three biological replicates for lysate activity.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Example turbidostat trace from a selection experiment on a library of DHFR single point mutants. The OD600 value inferred from the voltage across an IR emitter-receiver pair is plotted as a function of time. The \u2018clamp\u2019 OD value (0.075) is shown as a dashed red line. Decreases in OD correspond to dilution from automatic addition of M9 medium. (B) Comparison of selection coefficients from Figure 1C with growth rates measured in a plate reader for monocultures of the selection strain transformed with the library plasmid (SMT205, Figure 1\u2014source data 3) encoding a single DHFR variant (identified by number, in-Figure caption). Error bars reflect the standard deviation over at least three biological replicates. (C) Comparison of all pairwise replicates for selection coefficients from triplicate deep mutational scanning on DHFR. The Pearson correlation R2 value from linear regression was 0.70. (D) Distribution of standard errors for individual selection coefficients from a single replicate. Selection coefficients are the slope from a linear regression of allele frequency as a function of time in selection. The standard error here is the mean square of residuals. (E) Distribution of standard deviations of selection coefficients for individual point mutants over replicate experiments. Each mutant had a measured selection coefficient in at least 2 of the three replicates. The median of this distribution of standard deviations over all alleles was 0.2 and was used to determine the cut-offs for advantageous and disadvantageous mutations in Figure 1D.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Standard deviation of selection coefficients over biological replicates. The data were plotted as a function of a sliding window over all single point mutants sorted by selection coefficient. Each point represents the mean error (biological replicate standard deviation) over 50 consecutive selection coefficients (after sorting by value) and the error bars represent\u00a0\u00b11 standard deviation of the error. The dashed line represents median error over the entire dataset, which was used determine the for WT-like behavior in Figure 1D. The dotted line represents y\u00a0=\u00a0x for comparison between the magnitude of the error relative to the magnitude of the selection coefficient. (B) Standard deviation over synonymous codons coding for the same sequence, plotted as in A.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A\u2013C) Functionally important residues are colored green, labeled, and shown with slices of the \u2013Lon heatmap (heatmap coloring by selection coefficient is as in Figure 2). The wild-type residue is outlined in black. Positions 22, 27, 35, 57, and 113 are Intolerant, and positions 20, 28, 31, 42, 54, 121, 122, and 148 are Deleterious. In A) the closed (upper, white, PDB ID: 3QL3) and occluded (lower, grey, PDB ID: 1RX4) conformation are shown to illustrate alternate stabilization of the two conformations by D122 (closed)\u00a0(Miller and Benkovic, 1998) and S148 (occluded)\u00a0(Miller et al., 2001). For all other panels, only the closed conformation is shown.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The absorbance (ABS) at 600 nm was monitored in 96-well plate format for monocultures of the selection strain transformed with strong advantageous mutants (L24V in dark red, W47L in bright red, wild-type in black). The doubling rates (top left in plot) were calculated from the early exponential phase of growth (see Methods). All growth curves are shown as sets of three biological replicates.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (A\u2013C) Wild-type residues are colored in green on the DHFR structure (PDB ID: 3QL3) and depicted with slices of the \u2013Lon heatmap (heatmap coloring is as in Figure 2). The wild-type residue is outlined in black on the heatmap. Positions 47, 114, and 154 are in the Beneficial category, and position 41 is in the Deleterious category. In the examples here, advantageous mutations appear to disrupt core packing and a surface salt bridge.\n\nWe next analyzed the deep mutational scanning data for all possible DHFR single point mutants under the calibrated selection conditions (Figure 1D, Supplementary file 1). All pairwise replicates were related with a Pearson correlation R2 value of 0.70 and the median standard deviation between replicates for all selection coefficients was 0.2 (Figure 1\u2014figure supplement 3C\u2013E). Using this value, we defined the selection coefficient interval of 0\u00a0\u00b10.2 as WT-like behavior. Within this interval, the standard deviation of the selection coefficients between replicates was not correlated with changes in selection coefficient (Figure 1\u2014figure supplement 4A). Moreover, our WT-like threshold of 0.2 was greater than the value of 0.12 for the standard deviation for wild-type synonymous codons (Figure 1\u2014figure supplement 4B). Based on these considerations, we defined DHFR mutations with selection coefficients of\u00a0<\u22120.2 and\u00a0>0.2 as disadvantageous and advantageous, respectively. Mutations that were depleted during overnight growth (under less stringent conditions using a supplemented growth medium, see Materials\u00a0and\u00a0methods) were assigned a null phenotype. As expected, mutations at DHFR positions that are known to be functionally important (M20, W22, D27, L28, F31, T35, M42, L54, R57, T113, G121, D122, and S148) were generally disadvantageous or null mutations (Figure 1\u2014figure supplement 5). These results indicate that our selection assay is a sensitive reporter of functionally important residues and that our results are consistent with previous biochemical characterization of DHFR.\n\nIn previous deep mutational scanning experiments, stringent selection typically revealed many disadvantageous mutations\u00a0(Garst et al., 2017; Jiang et al., 2013; Mavor et al., 2016; Mavor et al., 2018; Stiffler et al., 2015). In contrast, the most striking observation under our conditions is the large fraction of advantageous mutations (red, Figure 1D): 736 of 3161 possible variants were advantageous (23.3%), and wild-type DHFR only ranked 1203rd (although 467 of the 1202 higher-ranking variants fall into the WT-like interval). In direct measurements of individual growth rates under our selection conditions, the top two DHFR variants (W47L and L24V) led to increases in growth rate of 40% and 76%, respectively, when compared to wild-type DHFR (Figure 1\u2014figure supplement 6). Advantageous mutations were widely distributed over 127 of the 159 positions of DHFR (Figure 1E). Furthermore, when we examined the DHFR structure, many of the advantageous mutations appeared to disrupt key side-chain interactions, for example by disrupting atomic packing interactions or surface salt-bridges (Figure 1\u2014figure supplement 7).\n\nTo understand the origins of this counter-intuitive prevalence of advantageous mutations, we looked for cellular factors potentially affecting our mutational landscape. Our selection strain\u00a0(Anton et al., 2016), like most standard expression strains of E. coli, is naturally deficient in Lon protease\u00a0(Gur and Sauer, 2008) due to an insertion of IS186 in the lon promoter region\u00a0(saiSree et al., 2001). Lon is a major component of protein quality control in E. coli\u00a0(Powers et al., 2012; Sauer and Baker, 2011) responsible for degrading poorly folded proteins. Moreover, Lon had previously been implicated in degrading DHFR unstable variants in E. coli\u00a0(Bershtein et al., 2013; Cho et al., 2015), and deleting Lon in an MG1655 strain of E. coli masked the deleterious impact of 2 destabilizing mutations out of a panel of 21 mutants tested in growth experiments at 30 \u00b0C\u00a0(Bershtein et al., 2013). Although these 21 mutants were selected for minimal impacts on Michaelis-Menten kinetic parameters, we reasoned that the absence of Lon could be responsible for the large fraction of advantageous but potentially destabilizing mutations observed in our selection.\n\nTo test this prediction, we reintroduced chromosomal Lon expression under the control of a constitutive promoter in our selection strain, and repeated deep mutational scanning in biological triplicate (Supplementary file 2). We refer to the two regimes as +Lon and \u2013Lon selection. The quality of +Lon selection was comparable to that of \u2013Lon selection (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2). Consistent with our hypothesis, the distribution of selection coefficients shifted towards more negative values in the +Lon selection, depleting positive selection coefficients and enriching for negative or null coefficients (Figure 2A). The number of advantageous mutations after reintroducing Lon decreased from 737 in \u2013Lon selection to 384 in +Lon selection (Figure 2B), the mean selection coefficient for advantageous mutations decreased from 0.47 to 0.37, and the rank of the wild-type sequence increased by 341 to 864th (where 479 of the 863 higher-ranked variants are in the WT-like interval) (Figure 2\u2014figure supplement 3). The median rank of the wild-type residue over all positions decreased from eight in \u2013Lon selection to five in +Lon selection (Figure 2\u2014figure supplement 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig2-v2.jpg)\n\n**Figure 2.:** (A) Histogram of selection coefficients for mutations (top) in \u2013Lon (grey) and +Lon selection (green). The difference of the histograms (bottom) is shown with grey indicating more mutants for \u2013Lon selection and green indicating more mutants for +Lon selection. The threshold for classification for advantageous and disadvantageous mutations is as in Figure 1 and indicated with dashed lines. (B) Distribution of mutations classified by selection coefficients: 0.2\u00a0\u2264\u00a0advantageous (adv.), 0.2\u00a0>\u00a0WT like > \u20130.2,\u00a0\u20130.2\u00a0\u2265\u00a0disadvantageous (disadv.), null, and no data (a mutant was not detected in the library after transformation into the selection strain). Grey bars: \u2013Lon selection; green bars: +Lon selection. (C) Distribution of sequence positions into the five mutational response categories: Beneficial, Tolerant, Mixed, Deleterious, Intolerant. Grey bars: \u2013Lon selection; green bars: +Lon selection. (D) Heatmap of DHFR selection coefficients in the \u2013Lon and +Lon strains, showing details of the distributions shown in C) (dotted border). Positions (rows) are grouped by their mutational response category for \u2013Lon and +Lon as in C) and sorted by the wild-type amino acid. Amino acid residues (columns) are organized by physiochemical similarity and indicated by their one-letter amino acid code. An asterisk indicates a stop codon. Advantageous mutations are shown in shades of red, disadvantageous mutations in shades of blue, Null mutations in grey and \u2018No data\u2019 as defined in A) in black. Wild-type amino acid residues are outlined in black.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Comparison of all pairwise replicates for +Lon selection coefficients from triplicate deep mutational scanning on DHFR. The Pearson correlation R2 value from linear regression was 0.70. (B) Distribution of standard errors for individual +Lon selection coefficients from a single replicate. Selection coefficients are the slope from a linear regression of allele frequency as a function of time in selection. The standard error here is the mean square of residuals. (C) Distribution of standard deviations of selection coefficients for individual point mutants over replicate experiments. Each mutant had a measured selection coefficient in at least 2 of the three replicates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Standard deviation of selection coefficients over biological replicates. The data were plotted as a function of a sliding window over all single point mutants sorted by selection coefficient. Each point represents the mean error (biological replicate standard deviation) over 50 consecutive selection coefficients (after sorting by value) and the error bars represent\u00a0\u00b11 standard deviation of the error. The dashed line represents median error over the entire dataset, which was used determine the for WT-like behavior in Figure 1D. The dotted line represents y\u00a0=\u00a0x for comparison between the magnitude of the error relative to the magnitude of the selection coefficient. (B) Standard deviation over synonymous codons coding for the same sequence, plotted as in A.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Despite this general trend, we note that some top advantageous mutations are not impacted by Lon activity.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Boxplot showing the distribution of wild-type amino acid residue rankings for \u2013Lon (grey) and +Lon (green) selection. The wild-type amino acid residue ranking at each position is also shown as a distribution of points. Box plots show the median (orange bar) and upper/lower quartiles. The median wild-type amino acid residue rank is eight for \u2013Lon selection and five for +Lon selection. (B) Wild-type amino acid residue rankings from \u2013Lon selection plotted against wild-type amino acid residue rankings from +Lon selection. Dashed lines show\u00a0\u00b11 standard deviation for the change in rank between \u2013Lon and +Lon selection.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Profile similarity (see Materials\u00a0and\u00a0methods) was calculated to compare the per-position distribution of amino acid frequencies between selection\u00a0\u00b1Lon (blue), between \u2013Lon selection and an MSA of DHFR orthologues (grey), and between +Lon selection and the MSA. Each point represents a single position in DHFR. A profile similarity value of 1.0 indicates identical distributions at that position, and a value of 0 represents no overlap in the distributions. The box plot shows the median (orange line), the interval between the first and third quartiles (box), and the maximum and minimum (whiskers). (B) Scatterplot comparing the similarity of amino acid preferences in the MSA to selection\u00a0\u00b1Lon. Each dot represents a single position in the DHFR sequence. X-axis values represent the profile similarity score between the MSA and \u2013Lon selection for amino acid preferences at each position. Y-axis values represent the profile similarity score between the MSA and +Lon selection for amino acid preferences at each position. The grey dashed lines represent y\u00a0=\u00a0x\u00a0\u00b1one standard deviation for |Similarity(\u2013Lon vs. MSA)position \u2013 Similarity(+Lon vs. MSA)position|. Positions in the green region have amino acid preferences more similar to the MSA for +Lon selection, and positions in the grey region have amino acid preferences more similar to the MSA for \u2013Lon selection. (C) Crystal structure model of DHFR (PDB ID: 3QL3) with positions colored by their location in the green, grey, and white regions from panel B).\n\nTo examine in more detail how the mutational response of individual residues changes between selection\u00a0\u00b1Lon, we used a K-means clustering algorithm (see Materials\u00a0and\u00a0methods) to group all DHFR sequence positions into five categories: positions where mutations were generally advantageous (Beneficial), generally WT-like (Tolerant), variably advantageous and disadvantageous (Mixed), generally disadvantageous (Restricted), and generally null (Intolerant). Grouping was performed separately for \u2013Lon and +Lon selection (Figure 3\u2014source data 1). Comparing the distributions of DHFR positions in \u2013Lon and +Lon conditions illustrates the extensive reshaping of the mutational landscape by Lon (Figure 2C,D). For \u2013Lon selection, 28 positions (17.6%) were classified as Beneficial, where nearly every mutation was preferred over the wild-type residue. In comparison, the number of Beneficial positions decreased to 10 in +Lon selection, with only three surface-exposed positions (E48, T68, D127) common between the two Beneficial sets. Simultaneously, the number of Restricted positions increased from 42 to 67 with the reintroduction of Lon into the selection strain (Figure 2C). These results support the conclusion that Lon activity broadly penalizes mutations, including a large subset of the advantageous mutations. Overall, the changes upon modulating Lon activity lead to a model in which upregulating Lon increases constraints on DHFR, and the mutational landscape changes from being permissive when Lon is absent to being more restricted when Lon is present (Figure 2D).\n\nTo analyze the constraints imposed by Lon on the DHFR mutational landscape in structural detail, we defined a \u2206selection coefficient for each amino acid residue at each position as the difference between the +Lon and \u2013Lon selections (Figure 3A). The \u2206selection coefficient values were most negative at positions in the Beneficial category and at positions with a native VILMWF or Y amino acid residue (Figure 3B, excludes Intolerant positions from \u2013Lon selection); overall, mutations at positions with native hydrophobic residues are enriched for negative \u2206selection coefficients (Figure 3\u2014figure supplement 1A). Strikingly, the mean \u2206selection coefficient was \u20130.71 for the 65 buried positions with\u00a0<20% side-chain solvent accessible surface area, compared to \u20130.27 for the 79 exposed positions (Figure 3C, Figure 3\u2014figure supplement 1B, Figure 3\u2014source data 1). These results show that Lon has a broad impact on the mutational landscape throughout the DHFR structure but imposes particularly strong constraints in the DHFR core.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig3-v2.jpg)\n\n**Figure 3.:** (A) Conceptual diagram of \u2206selection coefficients, calculated as the +Lon selection coefficient minus the \u2013Lon selection coefficient (see Materials\u00a0and\u00a0methods). (B) Heatmap of \u2206selection coefficient values for all positions not classified as Intolerant. \u2206selection coefficients values between \u20130.2 and 0.2 are shown in white; \u2206selection coefficients\u00a0>0.2 are in shades of red and \u2206selection coefficients <\u20130.2 in shades of blue. Amino acid residues (columns) are organized by physiochemical similarity and indicated by their one-letter amino acid code. The mean \u2206selection coefficient (avg) at each position is shown as a separate column and outlined with a light blue box. Positions (rows) are sorted by the wild-type amino acid and grouped by their mutational response category from the \u2013Lon selection in Figure 2C,D. Positions with a native VILMWF or Y amino acid are indicated with an orange bar to the left. (C) Per-position mean \u2206selection coefficient displayed on the structural model of DHFR. The five cross-section slices of the DHFR structure are displayed as in Figure 1E, and the color scale is as in B).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Histogram of \u2206selection coefficients (top) with mutants at positions with hydrophobic (AVILMWFY) wild-type amino acid residues in orange and at positions with polar (HKRSTNQDE) wild-type amino acid residues in grey. Selection coefficients for positions with a wild-type P, G, or C residue are not included. The difference of the histograms (bottom) is shown with grey indicating more mutants to positions with a wild-type polar residue and orange indicating more mutants to positions with a wild-type hydrophobic residue. Dotted lines indicate twice the median of standard deviations from Figure 1, Figure 1\u2014figure supplement 3. (B) Histogram of \u2206selection coefficients (top) with mutants at buried positions (solid) and at exposed positions (hatched) as listed in Figure 3\u2014source data 1. Selection coefficients for positions that were Intolerant in \u2013Lon selection are not included. The difference of the histograms (bottom) is shown with solid indicating more mutants to buried positions and hatched indicating more mutants to exposed positions.\n\nTo determine why mutations in DHFR were advantageous in the absence of Lon but less so in its presence, we selected a subset of mutations for more detailed characterization in individual experiments. We considered all positions with more than one mutation in the top 100 most advantageous mutations for the \u2013Lon condition. We describe these positions by their location in one of four structural regions that appear to be hot-spots for the top advantageous mutations (Figure 4A,B, Figure 4\u2014figure supplement 1): 1) exchanges between hydrophobic residues at core positions, 2) disruptions of surface residues on the beta-sheet near the active site, 3) disruptions of polar interactions with the adenine ring of NADPH, or 4) mutations to the active site or M20 loop that controls access to the active site. At these positions, we selected strongly advantageous mutations. Where possible, we selected two mutations at the same position but with significantly differing Lon sensitivities such that the set had a range of \u2206selection coefficients from \u22120.07 to \u22121.46, with the exception of L24V that had a positive \u2206selection coefficient. We first confirmed that the selected advantageous mutations indeed had higher cytosolic DHFR activity (the total rate of conversion of DHF to THF) in ER2566 \u2206folA/\u2206thyA (\u2013Lon) lysates relative to the activity for WT DHFR (Figure 4\u2014figure supplement 2), consistent with the deep mutational scanning results.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-v2.jpg)\n\n**Figure 4.:** (A) DHFR structure with mutational hot-spots. For positions with two or more top 100 advantageous mutations in the absence of Lon, the beta carbon is depicted as a sphere scaled according to the number of top mutations. For mutants selected for in vitro characterization, the beta carbon is colored according to its location in the DHFR structure: core (purple), surface beta-sheet (gold), proximal to the adenine ring on NADPH (blue), or proximal to the active site and M20 loop (red). Positions for advantageous mutants from the calibration set are depicted in dark grey. (B) The structure from A) rotated 90\u00b0 clockwise. (C) In vitro velocities of purified DHFR wild-type and point mutants measured at 20 \u00b5M DHF. Bars are colored in reference to the hot-spots in A). Error bars represent\u00a0\u00b11 standard deviation from three independent experiments (Materials\u00a0and\u00a0methods). The dashed line represents the velocity of WT DHFR. (D) DHFR cellular abundance calculated from the lysate DHFR activity in Figure 4\u2014figure supplement 2 and in vitro kinetics with purified enzyme (see Materials\u00a0and\u00a0methods). Error bars represent the cumulative percent error (standard deviation) from three independent experiments for velocity and three biological replicates for lysate activity. Data are shown in both the -Lon (light grey) and +Lon (green) conditions. The dashed line represents the WT expression level of DHFR in the \u2013Lon background. Mutants are in the same order as in C) (see Figure 4\u2014source data 2; four mutants were not measured). (E) Cellular abundance of DHFR vs. in vitro velocities of purified DHFR wild-type and point mutants measured at 20 \u00b5M DHF. Points are colored as in A). Error bars represent\u00a0\u00b11 standard deviation from three independent experiments (Materials\u00a0and\u00a0methods). The dashed line represents WT-level DHFR activity, i.e. DHFR abundance/velocity pairs whose product is equivalent to [DHFR]WT \u2022 velocityWT. (F) Correlation between in vitro Tm values and in vivo \u2206selection coefficients for DHFR wild-type and characterized mutants. Points are colored as in A). (G) \u2206Tm values and \u2206\u2206selection coefficient for mutations at the same position. Points representing comparison between mutants are numbered as follows: 1) D116I-M, 2) M42Y-F, 3) W30M-F, 4) I91G-A, 5) Q102W-L, 6) L62A-V, 7) I41A-V, 8) W47V-L.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013D)\u00a0For each panel, the hot spot region is indicated on a cartoon of DHFR: globular core in purple (A), the beta-sheet surface below the active site in gold (B), the base of the M20 loop in red (C) and the adenosine binding site in blue (D). Slices of the \u2013Lon and +Lon heatmaps are shown for each position within the hot spot region (heatmap coloring is as in Figure 2). The wild-type residue is outlined in black. Positions 30, 47, 85, 102, 114, 116, 154 are in the Beneficial category. Position 24, 25, 62, 91, 92, 156 are in the Mixed category. Positions 41, 42, and 98 are in the Deleterious category. For A-C) the structure shown is PDBID: 3QL3, and for D) the structure shown is PDB ID: 1RX1. In IRX1 (as in 1RX4), R98 is in proximity to the adenine ring. In 3QL3, R98 extends into bulk solvent. Residues within the hot spot cluster are labeled with their residue number.Figure 4\u2014figure supplement 2.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Lysate activity for DHFR variants under selection growth conditions (see Materials\u00a0and\u00a0methods) plotted as the rate of change in DHF concentration as a function of time monitored over the window of DHF concentration from 30 \u00b5M to 20 \u00b5M. DHFR activities in ER2566 \u2206folA/\u2206thyA \u2013Lon lysates are colored in grey. DHFR activities in ER2566 \u2206folA/\u2206thyA +Lon lysates are colored in green. Error bars represent\u00a0\u00b11 standard deviation from three biological replicates. (B) Relative lysate activities for DHFR variants. Lysate activities from A) normalized by WT-level of activity in the corresponding\u00a0\u00b1Lon cell lysate.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Velocities were measured at (A) 5, (B) 10, (C) 20, and (D) 30 \u00b5M DHF (Figure 4\u2014source data 1). For each mutant, the bar is colored by the mutation\u2019s location within the hot spots from Figure 4 and Figure 4\u2014figure supplement 1. Error bars represent\u00a0\u00b11 standard deviation from three independent experiments.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Relative expression of DHFR variants. DHFR abundances from Figure 4D normalized by WT-level of abundance in the corresponding\u00a0\u00b1Lon cell lysate. Relative DHFR abundances in ER2566 \u2206folA/\u2206thyA \u2013Lon lysates are colored in grey. Relative DHFR abundances in ER2566 \u2206folA/\u2206thyA +Lon lysates are colored in green. Error bars represent the cumulative percent error (standard deviation) from three independent experiments for velocity and three biological replicates for lysate activity.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Correlation between the ratio of cellular DHFR abundance (Figure 4D, Figure 4\u2014source data 2, [DHFR]+Lon/[DHFR]\u2013Lon) and in vivo \u2206selection coefficients\u00a0\u00b1Lon for DHFR wild-type and point mutants. Points are colored by the mutation\u2019s location within the hot spots from Figure 4 and Figure 4\u2014figure supplement 1. X-axis error bars represent the cumulative percent error (standard deviation) from three measurements of DHFR concentration with and without Lon (Materials\u00a0and\u00a0methods). Y-axis error bars the cumulative error (standard deviation) from three biological replicates for selection with and without Lon (Materials\u00a0and\u00a0methods). The ratio of expression for WT is not 1.0 because there is an increase in WT DHFR expression in ER2566 \u2206folA/\u2206thy +Lon relative to WT expression in ER2566 \u2206folA/\u2206thy \u2013Lon (see Figure 1\u2014figure supplement 2, Figure 1\u2014source data 1). The reason for the unusual behavior of L24V (positive \u2206selection coefficient), a mutation in the active site, is unknown.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Cellular abundance of DHFR vs.\u00a0in vitro velocities of purified DHFR measured at (A) 5, (B) 10, (C) 20, and (D) 30 \u00b5M DHF (see Figure 4\u2014figure supplement 3, Figure 4\u2014source data 1, Figure 4D, Figure 4\u2014source data 2).\u00a0Points are colored by the mutation\u2019s location within the hot spots from Figure 4 and Figure 4\u2014figure supplement 1. Error bars represent\u00a0\u00b11 standard deviation from three independent experiments (Materials\u00a0and\u00a0methods). The dashed line represents WT equivalent DHFR activity, where [DHFR]WT \u2022 velocityWT = [DHFR]mut \u2022 velocitymut.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-figsupp7-v2.jpg)\n\n**Figure 4\u2014figure supplement 7.:** Selection coefficients for \u2013Lon selection (grey) and +Lon selection (green) plotted against DHFR activity calculated as cellular abundance of DHFR times in vitro velocities of purified DHFR variants ([DHFR] \u2022 velocity[DHF]) measured at (A) 5, (B) 10, (C) 20, and (D) 30 \u00b5M DHF (see Figure 4D, Figure 4\u2014figure supplement 3, Figure 4\u2014source data 1, Figure 4\u2014source data 2). X-axis error bars represent the cumulative percent error (standard deviation) from three measurements of DHFR concentration with and without Lon and three independent experiments for velocity (Materials\u00a0and\u00a0methods).\u00a0Y-axis error bars represent\u00a0\u00b11 standard deviation from (Materials\u00a0and\u00a0methods).\n\n![Figure 4\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-figsupp8-v2.jpg)\n\n**Figure 4\u2014figure supplement 8.:** Selection coefficients for \u2013Lon selection (grey) and +Lon selection (green) plotted against DHFR activity calculated as cellular abundance of DHFR times in vitro velocities of purified DHFR variants ([DHFR] \u2022 velocity[DHF]) measured at (A) 5, (B) 10, (C) 20, and (D) 30 \u00b5M DHF (see Figure 4D, Figure 4\u2014figure supplement 3, Figure 4\u2014source data 1, Figure 4\u2014source data 2). X-axis error bars represent the cumulative percent error (standard deviation) from three measurements of DHFR concentration with and without Lon and three independent experiments for velocity (Materials\u00a0and\u00a0methods).Y-axis error bars represent\u00a0\u00b11 standard deviation from (Materials\u00a0and\u00a0methods).\n\n![Figure 4\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig4-figsupp9-v2.jpg)\n\n**Figure 4\u2014figure supplement 9.:** The curves are colored by the mutation\u2019s location within the hot spots from Figure 4 and Figure 4\u2014figure supplement 1. The raw data are shown with thin lines and the fitted curves are shown as thick lines. For each plot, the mutant identity and apparent Tm value are listed in the top left corner.\n\nThe lysate activity assay reports on both the enzymatic activity of a DHFR variant and its intracellular abundance, [DHFR]\u00a0(Bershtein et al., 2015b; Dykhuizen et al., 1987). To separate the two contributions, we purified each of the DHFR variants and determined their enzymatic velocity in vitro using concentrations of DHF that are consistent with estimates of cytosolic DHF concentration based on mass spectrometry measurements\u00a0(Kwon et al., 2008). At 20 \u00b5M DHF, 16 the mutants had velocities equal and up to three-fold higher than that of WT (Figure 4C, Figure 4\u2014figure supplement 3, Figure 4\u2014source data 1). In contrast, the other eight mutants had velocities as much as two-fold lower than that of WT at the same DHF concentration. These results show that the higher cytosolic DHFR activity of the advantageous mutations can only partially be explained by changes in the kinetic parameters for these mutants.\n\nWe therefore examined the soluble intracellular abundance of these mutants. In the absence of Lon, we observed that mutant abundance levels varied from close-to-wild-type levels to a 20-fold increase over wild-type (Figure 4D, Figure 4\u2014figure supplement 4, Figure 4\u2014source data 2). Importantly, abundance decreased for most mutants in the presence of Lon (Figure 4\u2014figure supplement 4), as expected, and these abundance decreases correspond to decreased selection coefficients (negative values in the \u2206selection coefficients from Figure 3 that report on the Lon impact on selection (Figure 4\u2014figure supplement 5)). Moreover, when considering both velocity and abundance the expected total cellular DHFR activity ([DHFR] \u2022 velocity) is increased compared to wild-type for the majority of advantageous mutants (Figure 4E, Figure 4\u2014figure supplement 6, positions above the dotted line indicate expected cellular activity greater than wild-type). However, the expected total cellular DHFR activity is not a strong quantitative predictor of the advantageous mutants in \u2013Lon selection (Figure 4\u2014figure supplement 7, Figure 4\u2014figure supplement 8). We attribute discrepancies at least in part to the difficulty of accurately quantifying rather small differences in activity and abundance, in addition to other potential complicating factors such as differential activity of cellular chaperones for different DHFR variants\u00a0(Cho et al., 2015), and feedback regulation that could affect cellular concentrations of the substrate DHF\u00a0(Bershtein et al., 2015a; Kwon et al., 2008). Nevertheless, our velocity and abundance measurement are in qualitative agreement with the in vivo selection. Taken together, these results suggest that increased selection coefficients arise from an interplay of effects of the mutations on cellular abundance and catalytic activity\u00a0(Dykhuizen et al., 1987), and that each parameter alone is insufficient to explain the majority of the advantageous mutations. Moreover, Lon suppresses advantageous mutations at least in part by reducing their cellular abundance.\n\nTo test more directly whether advantageous mutations in DHFR destabilize the protein and whether this destabilization could explain the sensitivity to Lon expression, we measured apparent melting temperature (Tm) values from non-reversible thermal denaturation monitored by circular dichroism spectroscopy. We found that many of the advantageous mutations considerably destabilized the protein (Figure 4F, Figure 4\u2014figure supplement 9, Figure 4\u2014source data 3). Moreover and as expected, the \u2206selection coefficients between +Lon and \u2013Lon selection (Figure 3) are correlated with Tm (Figure 4F), except for mutations near the active site. Strikingly, when we compare different mutations at the same position, the change in \u2206selection coefficients (i.e. Lon sensitivity) correlates with the change in Tm values (Figure 4G). These results indicate that the many of the selected advantageous mutations are destabilizing, and that destabilization is correlated with Lon sensitivity. One possible explanation for the selection advantage of the subset of destabilizing mutations with increased kcat (e.g. L24V, W30F/M, M42F/Y, H114V, D116I/M, E154V) is that these mutations promote breathing motions that accelerate product release, which is rate limiting for wild-type DHFR at neutral pH\u00a0(Oyen et al., 2017) and for a hyperactive DHFR mutant with a 7-fold increase in kcat\u00a0(Iwakura et al., 2006).\n\nTaken together, our data indicate that the observed widespread changes in the mutational landscape of DHFR can be explained by a penalty for destabilizing mutations from Lon expression, leading to extensive activity \u2013 stability tradeoffs for advantageous mutations. The effect of these two selection pressures is directly observable in the structural arrangement of the mutational response categories (Figure 5, Figure 5\u2014figure supplement 1). In \u2013Lon conditions, mutational responses are arranged in shells around the hydride transfer site\u00a0(Liu et al., 2013; Figure 5A, top), where the proportion of advantageous mutations increases with increasing distance (Figure 5B). This same spatial pattern also holds for +Lon selection (Figure 5A, bottom), but it is now superimposed with the additional pressure against destabilizing mutations such that there are no Beneficial positions in the core (Figure 5C, Figure 5\u2014figure supplement 2). In contrast, the mutational responses as a function of distance to other DHFR sites (e.g. C5 of the NADPH adenine ring) do not show as strong of a relationship (Figure 5\u2014figure supplement 3). These findings illustrate how the contributions from two constraints \u2013 one structural (distance from hydride transfer) and one dependent on cellular context (Lon) \u2013 can be distinguished from structural patterns in the mutational landscape.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig5-v2.jpg)\n\n**Figure 5.:** (A) Mutational response categories from \u2013Lon selection (top, categories in Figure 2C,D) and +Lon selection (bottom, categories as in Figure 2C,D) colored onto residues and displayed on slices as in Figure 1E. (B) Relationship between mutational response and distance from hydride transfer for \u2013Lon selection. The percent of positions from each mutational response category are plotted as a function of distance from the site of hydride transfer. Each category colored as in A), top). (C) Relationship between mutational response and distance from hydride transfer for +Lon selection. Each category colored as in A), bottom).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Structural model of DHFR (PDB ID: 3QL3) in ribbon representation with the DHF substrate and the NADPH cofactor represented by spheres (yellow carbon and heteroatom coloring). The residues are colored in (A,B) by mutational response category from Figure 2C,D for \u2013Lon selection, in (C,D) by mutational response category from +Lon selection, or in (E,F) by the per-position mean \u2206selection coefficient from Figure 3.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Each point represents one amino acid side chain, and the y-axis reports the average number of heavy atom neighbors within an 8 \u00c5 shell for all heavy atoms in that side chain. Box plots are overlaid on the distribution to show the median (orange bar) and upper/lower quartiles. Mutational response categories are shown for both \u2013Lon and +Lon selection. The green arrow highlights the absence of buried Beneficial positions in +Lon selection.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53476/elife-53476-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Location of hydride transfer site, the M20 residue on the M20 loop (orange), and hot spot sites from Figure 4 (the core of the globular domain represented by I41, the beta-sheet surface below the active site represented by L112, and the adenine ring on NADPH) indicated on the DHFR structure (PDB ID: 3QL3). (B\u2013F) The distance relationships between each site and the residues in each mutational response category in the \u2013Lon selection are shown (left) as boxplots with points representing the individual mutants and (right) as curves showing the percent of sequence positions in each mutational response category as a function of distance from the site. Boxplots and curves are colored by mutational response categories from \u2013Lon selection as in Figure 5.\n\n## Discussion\n\nThe naturally occurring insertion in the Lon promoter in our original selection strain, in combination with our stringent selection conditions, allowed the serendipitous discovery that advantageous mutations are remarkably prevalent throughout the DHFR structure but are also highly sensitive to Lon. The large fraction of advantageous mutations to DHFR appears to conflict with the fixation of the wild-type DHFR sequence during evolution. While Lon expression in our selection increases both the relative rank of the WT DHFR sequence (Figure 2\u2014figure supplement 4) and the similarity between amino acid preferences from selection and from bacterial DHFR orthologues (Figure 2\u2014figure supplement 5), there are still considerable differences: There are still 384 advantageous mutants that rank substantially better than the WT sequence even in the presence of Lon, and the amino preferences in the two selection experiments (\u00b1Lon) are more similar to each other than either is to the preferences from bacterial DHFR orthologues.\n\nConsidering these differences, we note several caveats in comparing our selection results to selection in evolution: First and most generally, screening DHFR variants under calibrated selection conditions (such as defined temperature, medium, and growth kept in early log phase) for a few generations is not expected to recapitulate the natural selection pressures on E. coli DHFR on evolutionary timescales. Second and more specifically, our selection conditions were intentionally engineered to be highly sensitive to mutations by dampening DHFR abundance to approximately 10% of the endogenous level (Figure 1\u2014figure supplement 2). In contrast, endogenous DHFR is expected to be buffered from mutational impacts. Increasing DHFR activity or abundance in E. coli several-fold above that in wildtype strains does not increase fitness, and, conversely, reducing DHFR abundance in E. coli does not have an impact on growth until abundance is below 30% of the endogenous level\u00a0(Bershtein et al., 2013; Bhattacharyya et al., 2016). Indeed, selection on mutations to the chromosomal DHFR gene did not reveal strong mutational impacts in the absence of the anti-folate drug trimethoprim\u00a0(Garst et al., 2017). Third, chromosomal DHFR expression is modulated through feedback mechanism\u00a0(Bershtein et al., 2015a), and it would be an interesting question how the distribution of fitness effects of DHFR mutations will be shaped by the presence of such a regulatory expression element that is absent in our selection system. Taken together, these mutational buffering effects likely explain why mutations that are advantageous in our selection are not prevalent in evolutionary DHFR sequences, and likely also explain why DHFR sequences do not vary between naturally occurring \u2013Lon and +Lon strains of E. coli.\n\nNevertheless, our engineered selection conditions yielded considerable insights into constraints on mutational landscapes that are typically hidden from observation precisely because of buffering effects in natural contexts. The increase in the number of advantageous mutations in the absence of Lon shows that decreasing cellular constraints can substantially modulate the tolerance to mutation in a deep mutational scanning experiment. Because all B type E. coli strains (e.g. BL21) have the same natural Lon deficiency as our selection strain, our results could have implications for selection experiments performed in these strains over much longer time-scales such as the E.\u00a0coli Long-Term Evolution Experiment (Tenaillon et al., 2016), or directed evolution strategies that often lead to mutations at positions distal to the active site.\n\nBeyond experiments in B-type E.\u00a0coli, we expect the fundamental principle of tuning trade-offs to play a role in other experimental systems. Prior work has illuminated the impact of chaperones on the effect of mutations, such as for GroEL in bacteria\u00a0(Tokuriki and Tawfik, 2009) and for Hsp90 in eukaryotic cells that has been shown to buffer the phenotypic impacts of deleterious mutations\u00a0(Queitsch et al., 2002). Our results highlight an opposite key role for the protein quality control machinery to tune in vivo mutational responses and lead to a model where protease activities add constraints to the mutational landscape and chaperones relieve them.\n\nThe ability to tune multiple constraints could provide a general way of controlling landscapes to drive genes into regions of sequence space that are highly responsive to external pressures. A concrete example of how this principle could be applied is in combinatorial antibiotics. Lon inactivation has been shown to increase resistance to antibiotics\u00a0(Nicoloff and Andersson, 2013). Switching between compounds capable of inhibiting or activating Lon in combination with DHFR-targeting folate inhibitors such as trimethoprim could serve to variably promote destabilized resistance mutants when Lon is inhibited and then penalize those mutations when Lon is reactivated.\n\nWhile the power in engineering individual gene sequences is well-recognized, we are only just beginning to explore the potential in engineering the general behavior of local sequence space. We anticipate that further study of tunable constraints will yield a new toolkit for fine control of the landscapes that guide movements through sequence space and enable unexplored engineering applications.\n\n## Materials and methods\n\nAll plasmid and primer sequences are listed in The Appendix. Key plasmids were deposited in the Addgene plasmid repository (accession codes are listed in The Appendix). All code and python scripts are available at https://github.com/keleayon/2019_DHFR_Lon.git with key input files and example command lines\u00a0(Thompson, 2020; copy archived at https://github.com/elifesciences-publications/2019_DHFR_Lon).\n\n### Generation of plasmids for in vivo selection assay\n\nThe vector bearing DHFR and TYMS for in vivo selection (SMT205) was derived from the pACYC-Duet vector described by Reynolds et al., 2011. The lac operon upstream of the TYMS gene was replaced with a Tet-inducible promoter. A Tet promoter fragment had been generated with overlap extension PCR and cloned into the pACYC vector (SMT101) at unique AflII/BglII sites to produce SMT201. Selection conditions that resolved increased-fitness mutations were obtained with the SMT205 plasmid where the DHFR \u2018AAGGAG\u2019 ribosome binding site (RBS) was replaced with \u2018AATGAG\u2019 based on prediction from the RBS calculator\u00a0(Salis et al., 2009) using inverse PCR. Briefly, PCR reactions were set up using 2x Q5 mastermix (NEB, cat# M0492), 10 ng of plasmid template, and 500 nM forward and reverse primers. PCR was performed in the following steps: 1) 98 \u00b0C for 30 s, 2) 98 \u00b0C for 10 s, 3) 57\u201363\u00a0\u00b0C for 30 s, 4) 72 \u00b0C for 2 min, 5) return to step 2 for 22 cycles, 6) 72 \u00b0C for 5 min. As needed, the annealing temperature (step 3) was optimized in the range of 57\u201363\u00a0\u00b0C. 25 \u00b5L of PCR reaction was mixed with 1 \u00b5L of DpnI (NEB, cat# R0176), 1 \u00b5L of T4 PNK (NEB, cat# M0201), 1 \u00b5L of T4 ligase (NEB, cat# M0202), and 3.1 \u00b5L of T4 ligase buffer (NEB, cat# B0202) at 37 \u00b0C for 2\u20134 hr. The reactions were then transformed into chemically competent Top10 cells and plated on LB agar plates with 35 \u00b5g/mL chloramphenicol (Fisher BioReagents, BP904, CAS: 56-76-7, 35 mg/mL in ethanol). The plates were incubated overnight at 37 \u00b0C. Single colonies were picked and used to inoculate 5 mL of LB medium (10 g Bacto-tryptone (Fisher BioReagent, cat# BP1415, CAS: 73049-73-7), 5 g Bacto-yeast extract (BD Difco, cat# 212720, CAS: 8013-01-2), 10 g NaCl (Fisher BioReagents, cat# BP358, CAS 7647-14-5), 0.186 g KCl (Sigma, cat# P9541, CAS: 7447-40-7), volume brought to 1 L with MilliQ water, autoclaved) + 35 mg/mL chloramphenicol. Cultures were incubated overnight in 14 mL plastic culture tubes (Falcon, cat# 352059) at 37 \u00b0C under 225 rpm shaking. Pellets were collected by centrifugation at 3500 rpm for 10 min at 4 \u00b0C in a swinging-bucket centrifuge (Beckman Coulter, Allegra X-12R) and miniprepped (Qiagen, cat# 27104). Constructs were confirmed by Sanger sequencing (Quintara Biosciences) by alignment to the template sequence in ClustalOmega.\n\n### Generation of plasmid libraries\n\nFour sublibraries were generated to cover the entire mutational space of E.\u00a0coli DHFR: positions 1\u201340 (sublibrary1, SL1), positions 41\u201380 (sublibrary2, SL2), positions 81\u2013120 (sublibrary3, SL3), and positions 121\u2013159 (sublibrary4, SL4). The single point mutant library was performed by multiple parallel inverse PCR reactions to substitute an NNS degenerate codon at every codon in DHFR. PCR primers (The Appendix) were phosphorylated in a 20 \u00b5L reaction with 1 \u00b5L T4 polynucleotide kinase and 1x T4 ligase buffer. Inverse PCR reactions were performed as described above, followed by PCR clean-up (Qiagen, cat# 28104). The cleaned PCR reactions were incubated for 4 hr with 1 \u00b5L DpnI, 1 \u00b5L of T4 ligase, and 3 \u00b5L of T4 ligase buffer. PCR reactions were analyzed by gel electrophoresis using a 1% agarose gel in TAE buffer (20 mM acetic acid (Sigma Aldrich, cat#, 695092,\u00a0CAS:\u00a064-19-7), 2 mM EDTA (ACROS Organics, cat# AC118432500, CAS: 60-00-4), 40 mM Tris, pH 8.5) with 0.01% v/v GelRed (Biotium, cat# 41003), and the product amount was quantified using gel densitometry in the FIJI image processing software package\u00a0(Schindelin et al., 2012). Samples were pooled stoichiometrically, cleaned once with a gel extraction kit (Qiagen, cat# 28115), and again with a PCR clean-up kit. The pooled and cleaned ligation products were transformed into E.\u00a0coli Top10 cells by electroporation (BioRad GenePulser Xcell, 1 mm path length cuvette (cat# 165\u20132089), 1.8 kV, time constant\u00a0~5 ms) using\u00a0~5 \u00b5L to obtain a minimum of 107 transformants as measured by dilution plating on LB-agar plates with 35 \u00b5g/mL chloramphenicol. The transformed cells were rescued in SOB medium (20 g Bacto-tryptone, 5 g Bacto-yeast extract, 0.584 g NaCl, 0.186 g KCl, 800 mL MilliQ water, pH 7.0, volume brought to 1 L with MilliQ water, autoclaved) without antibiotics for 45 min at 37 \u00b0C before culturing overnight in 10 mL SOB medium with 35 \u00b5g/mL chloramphenicol. In the morning, glycerol stocks were made by mixing 500 \u00b5L of saturated culture with 500 \u00b5L of sterile filtered 50% (v/v) glycerol. 5 mL of the culture was used to miniprep the transformed library with a Qiagen miniprep kit.\n\n### Generation of individual point mutant plasmids\n\nPoint mutants in all DHFR-containing plasmids were generated via inverse PCR as described above for the generation of SMT205 except that the appropriate antibiotic was matched with the plasmid (The Appendix). Library primer sequences (The Appendix) were used except that the \u2018NNS\u2019 sequence on the forward primer was replaced with the desired codon.\n\n### Generation of ER2566 \u2206folA \u2206thyA \u2013Lon and ER2566 \u2206folA \u2206thyA +Lon\n\nThe ER2566 \u2206folA \u2206thyA \u2013Lon strain was generated as previously described\u00a0(Reynolds et al., 2011) and a gift from Prof. Stephen Benkovic. The ER2566 \u2206folA \u2206thyA +Lon strain was generated from ER2566 \u2206folA \u2206thyA \u2013Lon by lambda red recombination using Support Protocol I from Thomason et al., 2014. The pSim6 plasmid bearing the Lamda red genes linked to a temperature sensitive promoter and the pIB279 plasmid bearing the Kan-SacB positive-negative selection marker\u00a0(Blomfield et al., 1991) were gifts from Carol Gross. The Kan-SacB cassette was amplified with 2 rounds of PCR using primers with 5\u2019 homology arms for the region upstream of the Lon gene (The Appendix). The insertion fragment containing the Anderson consensus promoter\u00a0(iGEM, 2006) with homology arms for the region upstream of Lon in the ER2566 genome was amplified from primers using overlap extension PCR.\n\n### Plate reader assay for E. coli growth\n\nGrowth rates for the selection strains bearing individual DHFR mutants were measured in 96-well plate growth assays as described for one individual mutant. The SMT205 plasmid was transformed via heat shock into chemically competent ER2566 \u2206folA \u2206thyA\u00a0\u00b1Lon cells and plated on an LB-agar plate with 30 \u00b5g/mL chloramphenicol plus 50 \u00b5g/mL thymidine and incubated overnight at 37 \u00b0C. On the second day, 2 mL M9 medium (1x M9 salts (BD Difco, cat# 248510), 0.4% glucose w/v (Fisher Chemical, cat# D16, CAS: 50-99-7), 2 mM MgSO4 (Sigma Aldrich, cat# 63138, CAS:10034-99-8)) with supplements for deficient folate metabolism (50 \u00b5g/mL thymidine (Sigma Aldrich, cat# T1895, CAS: 50-89-5), 22 \u00b5g/mL adenosine (Sigma Aldrich, cat# A9251, CAS: 56-61-7), 1 \u00b5g/mL calcium pantothenate (TCI, cat# P0012, CAS: 137-08-6), 38 \u00b5g/mL glycine (Fisher BioReagents, cat# BP381, CAS: 56-40-6), and 37.25 \u00b5g/mL methionine (Fisher BioReagents, cat# BP388, CAS 63-68-3)) and 30 \u00b5g/mL chloramphenicol in a 14 ml culture tube was inoculated with 5\u201310 colonies scraped from the plate and incubated at 37 \u00b0C at 225 rpm shaking for 12\u201314 hr. Biological replicates were obtained from separate inoculations at this step and run on the same plate. All assays were run from fresh transformations. Then, 20\u201350 \u00b5L of the previous culture was used to inoculate 5 mL of M9 medium (no supplements) with 30 \u00b5g/mL chloramphenicol in a 14 ml culture tube. This fresh culture was incubated for 6 hr at 30 \u00b0C at 225 rpm shaking. Meanwhile 2 mL of M9 medium with 30 \u00b5g/mL chloramphenicol and a transparent 96-well plate were pre-warmed at 30 \u00b0C. After the 6 hr incubation, the optical density at 600 nm (OD600) of the culture was measured on a Cary 50 spectrophotometer over a path of 1 cm. This early log-phase culture was diluted to an OD600\u00a0=\u00a00.005 in the 2 mL aliquot of warmed M9. 200 \u00b5L of the dilute culture was pipetted into a well in the 96-well plate. Technical replicates were obtained by dispensing the same dilute culture into multiple wells. Wells were covered with 50 \u00b5L of mineral oil (Sigma Aldrich, cat# M5904, CAS: 8042-47-5) using the reverse pipetting technique. The plate was then incubated for 20\u201348 hr at 30 \u00b0C in a Victor X3 multimode plate reader (Perkin Elmer). Every 10 min, the plate was shaken for 30 s with an orbital diameter of 1.8 mm under the \u2018normal\u2019 speed setting. Then, the absorbance at 600 nm (ABS600) was measured for each well. Growth rates were calculated from the slope of Log2(ABS600 \u2013 ABS600t=0) for \u2206ABS600 in the range of 0.015\u20130.04 using an in-house python script.\n\n### Deep mutational scanning experiments\n\nCompetitive growth under selection for cellular DHFR activity was performed in a continuous culture turbidostat (gift of Rama Ranganathan) as described below for a single sublibrary. Sublibraries of DHFR single point mutants were transformed via electroporation as described above into electrocompetent ER2566 \u2206folA \u2206thyA\u00a0\u00b1Lon cells using approximately 50 ng of plasmid DNA and 80 \u00b5L of competent cells with a transformation efficiency of 108 cfu/ng (based on testing with 10 ng of pACYC plasmid DNA). Immediately after electroporation, the cells were rescued with 2 mL of SOB medium with 50 \u00b5g/mL thymidine warmed to 37 \u00b0C. The rescue culture was incubated at 37 \u00b0C for 45 min at 225 rpm shaking. After the rescue step, 4 \u00b5L of the rescue medium (1/500 of the rescue volume) was serially diluted in 10-fold increments. Half the volume of each dilution (1/1000 \u2013 1/107 of the rescue volume) was plated on an LB-agar plate with 30 \u00b5g/mL chloramphenicol plus 50 \u00b5g/mL thymidine and incubated overnight at 37 \u00b0C. The colonies were counted the following morning to check for a minimum of 1000x oversampling of the theoretical diversity in the library (~106 transformants for each sublibrary). Meanwhile, the larger portion of the rescue medium was mixed with 4 mL of SOB medium with 45 \u00b5g/mL chloramphenicol (1.5x) plus 50 \u00b5g/mL thymidine warmed to 37 \u00b0C. This 6 mL culture was incubated for 5\u20136 hr at 37 \u00b0C at 225 rpm shaking in a 14 mL culture tube. After incubation, the culture was pelleted by centrifuging for 5 min at 3000 rpm at room temperature in a swinging bucket centrifuge. The cells were resuspended in 50 mL of supplemented M9 medium + 30 \u00b5g/mL chloramphenicol and incubated for 12\u201314 hr at 37 \u00b0C at 225 rpm shaking in a 250 mL flask. In the morning, 150 mL of supplemented M9 medium + 30 \u00b5g/mL chloramphenicol in a 1 L flask was inoculated with 15 mL of the overnight culture. This pre-culture was incubated at 30 \u00b0C for 4 hr at 225 rpm shaking. After 4 hr, the pre-culture was centrifuged at 3000 rpm for 5 min at room temperature in a swinging bucket centrifuge, and the OD600 was measured to ensure that the culture did not grow beyond early-mid log phase (OD600\u00a0~0.3). The supernatant was decanted, and the pellet was resuspended in 30 mL of M9 medium. Pelleting and resuspension were repeated for a total of 3 washes to remove the supplemented medium. After three washes, the OD600 was measured for the resuspended pellet using a 10-fold dilution to stay in the linear range of the spectrophotometer.\n\nThe washed pellet was then transferred to the growth chamber of the turbidostat (a 250 mL pyrex bottle) containing 150 mL of M9 medium with 50 \u00b5g/mL chloramphenicol. Selection experiments were performed with 2 of the four sublibraries at a time (two repeats of SL1-SL2 and SL3-SL4, and one repeat of SL1+SL3 and SL2+SL4 for a net of biological triplicates for every codon in the gene), and the resuspended pellet from each library was diluted in the initial culture to an OD600\u00a0=\u00a00.035. Mixing and oxygenation was provided by sterile filtered air from an aquarium pump. Every 60 s, the aquarium pump was stopped, and the optical density of the culture was read by an infrared emitter-receiver pair. The ADC (analog-to-digital converter) of the voltage over the receiver was calibrated against a spectrophotometer to convert the signal into an approximate OD600. The cells were grown at 30 \u00b0C with an OD600 threshold of 0.075. When the OD600 of the selection culture exceeded the threshold, the selection culture was diluted to OD600\u00a0~0.065 with 25 mL of M9 medium with 50 \u00b5g/mL chloramphenicol, and the additional culture volume was driven through a waste line by the positive pressure of the aquarium pump. At timepoints of t\u00a0=\u00a00, 2, 4, 6, 8, 12, 16, and 18 hr, 6 mL of the selection culture in 2 mL centrifuge tubes was pelleted at 5000 rpm for 5 min at 4 \u00b0C in a microcentrifuge (Eppendorf, 5242R). The supernatant was removed except for the last\u00a0~200 \u00b5L, and the tubes were again pelleted at 5000 rpm for 5 min at 4 \u00b0C in a microcentrifuge, and all the supernatant was carefully removed from the pellet. The pellets were stored at \u221220 \u00b0C until sequencing.\n\n### Amplicon generation\n\nAmplicons were generated by two rounds of PCR. The first round of PCR amplifies a portion of the DHFR gene from the pACYC plasmid containing 2\u20133 sublibraries. For quality control templates were 1 ng/\u00b5L plasmid solutions and the amplicons covered SL1-SL2 or SL3-SL4. Round 1 PCR reactions were set up using 1 \u00b5L of template, 1% v/v Q5 hotstart polymerase (NEB, cat# M0493), 1x Q5 Reaction Buffer, 1x Q5 High GC Enhancer, 200 \u00b5M dNTPs, and 500 nM forward and reverse primers. PCR was performed in the following steps: 1) 98 \u00b0C for 30 s, 2) 98 \u00b0C for 10 s, 3) 57 \u00b0C for 30 s, 4) 72 \u00b0C for 12 s, 5) return to step 2 for 16 cycles, 6) 72 \u00b0C for 2 min.\n\nThe Round 2 PCR uses primers that attach the Illumina adapters and the i5 (reverse) and i7 (forward) barcodes for sample identification and demultiplexing. Round 2 PCR reactions were set up and run identically to Round one reactions except that the template was 1 \u00b5L of Round 1 PCR. Round two reactions were analyzed by gel electrophoresis using a 1% TAE-agarose gel in TAE buffer with 0.01% v/v GelRed, and the product amount was quantified using gel densitometry in FIJI. Samples were pooled stoichiometrically and cleaned with a gel extraction kit (Qiagen). Because of the risk of contamination from small primer dimers, gel extraction was performed with very dilute samples. Only 20 \u00b5L of sample was loaded onto a 50 mL TAE-agarose gel (OWL EasyCast, B1A) with 8 of the 10 wells combined into a single well. The pooled amplicons were then cleaned again with a PCR clean-up kit (Zymogen, cat# D4013) to allow for small volume elution. The final amplicon concentration was measured with a NanoDrop One UV spectrophotometer and by Picogreen assay (Thermo Scientific, cat# P11496).\n\n### Sequencing for deep mutational scanning experiments\n\nTemplates for amplicon PCR were prepared from the frozen pellets. The pellets were resuspended in 20 \u00b5L of autoclaved MilliQ water and incubated on ice for 10 min. The samples were then centrifuged at 15,000 rpm for 10 min at 4 \u00b0C in a benchtop microcentrifuge. 1 \u00b5L of the supernatant was used as template in the amplicon generation protocol for sublibraries described above. The amplicons were sequenced on an Illumina NextSeq using a 300-cycle 500/550 high-output kit. Because of the limitations in the number of sequencing cycles on the Illumina NextSeq, the full amplicon was not sequenced for amplicons containing non-adjacent sublibraries (SL1+SL3, and SL2+SL4). Reads were demultiplexed into their respective selection experiment and timepoint using their TruSeq barcodes. Paired end reads were joined using FLASH\u00a0(Mago\u010d and Salzberg, 2011). For amplicons with adjacent sublibraries (SL1-SL2 and SL3-SL4), the joined reads were kept. For amplicons with distal sublibraries (SL1+SL3 and SL2+SL4), the unjoined reads were kept. Reads from all lanes of the Illumina chip were concatenated and raw counts of DHFR mutants were obtained from these reads.\n\nReads on the Illumina NextSeq (two-color chemistry, LED optics) generally have lower quality scores than reads from the Illumina MiSeq (four-color chemistry, laser optics). This lower quality leads to a background signal. This background was estimated from a WT sample. The median + one standard deviation value of background count was subtracted from every allele and the alleles were translated into the amino acid sequence, combining synonymous sequences. Counts at each timepoint were only reported for an allele if its frequency was above 2.0 \u00d7 10\u22125. Raw counts are reported in Supplementary file 3\u20135.\n\n### Analysis of deep mutational scanning data\n\nMutant counts were used to generate selection coefficients on our background-subtracted count files with Enrich2 using unweighted linear regression\u00a0(Rubin et al., 2017). The raw Enrich2 values for each unique selection experiment were combined with a post-processing script. Enrich2 does not calculate selection coefficients for mutants that have no counts at a timepoint, so some selection coefficients were recalculated using only the timepoints before the counts for that allele fell below the cutoff frequency of 2.0 \u00d7 10\u22125. Individual selection coefficients were evaluated based on two criteria: noise and number of timepoints. Individual selection coefficients were discarded 1) if the standard error from regression was greater than 0.5 + 0.5 \u2022 |selection coefficient| or 2) if there were fewer than four timepoints reporting on the mutant. The regression for the fitness value of the mutants from replicate selection experiments to the average values across all experiments was calculated and the fitness values in each replicate were scaled to correct for linear differences in the selection values between replicates. These normalized values were then averaged for the final fitness value. Averaged selection coefficients values were evaluated based on two criteria: the standard deviation of the averaged selection coefficients and the number of replicates. Averaged selection coefficients were discarded 1) if the standard deviation over the normalized replicates was greater than 0.5 + 0.25 \u2022 |selection coefficient| or 2) if there were fewer than two replicates. In Supplementary file 1 and 2 the fitness is reported as the mean normalized fitness, the standard error is reported as the combined Enrich2 standard error (from linear regression of timepoints), and the standard deviation is reported as the standard deviation of the biological replicates. The correlation and R-values of normalized replicate experiments and the distribution of standard deviations and standard errors for each mutant are reported in Figure 1\u2014figure supplement 3, Figure 1\u2014figure supplement 4, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2.\n\nSelection was evaluated by comparing selection coefficients to DHFR velocity from reported Michaelis-Menten kinetics at cytosolic concentrations of DHF (Bennett et al., 2009; Kwon et al., 2008). Kinetic values are listed in Figure 1\u2014source data 3. Based on this calibration, differences between selection coefficients below\u00a0~\u22122.5 were not considered interpretable, and a floor value of \u22122.5 was applied to all selection coefficients for the purpose of analysis.\n\nFor subtraction to calculate \u2206selection coefficients, null selection coefficients in +Lon selection were substituted with the lowest measured selection coefficient. Mutations with a null selection coefficient in \u2013Lon selection were assigned a \u2206selection coefficient of \u2018No data\u2019 (colored black). Mutations with \u2018No data\u2019 value in either selection condition were also assigned a \u2206selection coefficient of \u2018No data\u2019 here.\n\nFor clustering of positions, an in-house Python script was used for K-means clustering of positions into categories based on general mutational response at a position (i.e discarding the amino acid identities of the mutants). Spatial clustering was performed based on selection coefficients with the distance between two positions calculated in the following steps: 1) sorting the vectors of selection coefficients for each position, 2) trimming the vectors to match vector lengths after discarding \u2018no data\u2019 values, 3) calculating a \u2206 vector by subtracting the two sorted and trimmed vectors, and finally calculating the distance as the mean of the absolute value of the \u2206 vector. For the first round, categories were seeded with virtual positions that have prototypical mutational profiles for the five categories (Beneficial, Tolerant, Mixed, Restricted, and Intolerant). From this first round, all positions in DHFR were categorized into initial clusters. In subsequent rounds, the virtual positions were removed and candidate positions were compared to the non-self positions populating each cluster. The distance between a candidate position and a cluster of positions is calculated as the average of the distance between the candidate position and the three closest non-self positions in the cluster. Clustering was performed over 10 rounds following the initial seeded round, and convergence was confirmed by observing that five repetitions gave identical clusters.\n\n### Purification of his6-tagged DHFR\n\nDHFR variants were expressed from pHis8 plasmids (KR101/SMT301) for nickel affinity purification as described for one DHFR variant. The plasmid bearing the his-tagged DHFR mutant was transformed via heat shock into chemically competent ER2566 \u2206folA \u2206thyA \u2013Lon cells, then the cells were plated on LB-agar plates containing 50 \u00b5g/mL kanamycin (AMRESCO, cat# 0408, CAS: 25389-94-0, 50 mg/mL in ethanol) and 50 mg/mL thymidine. The plates were incubated overnight at 37 \u00b0C. The next day 2 mL of LB medium with 50 \u00b5g/mL kanamycin was inoculated with a single colony. This culture was incubated overnight at 37 \u00b0C at 225 rpm shaking. The next day, 25 mL of TB medium (12 g Bacto-tryptone, 24 g Bacto-yeast extract, 0.4% glycerol v/v (Sigma Aldrich, cat# G7893, CAS: 56-81-5), brought to 900 mL with MilliQ water, autoclaved, cooled, mixed with 100 mL sterile filtered buffered phosphate (0.17 M KH2PO4 (Sigma Aldrich, cat# P0662, CAS: 7778-77-0), 0.72 M K2HPO4 (Sigma Aldrich, cat# P550, CAS: 16786-57-1))) with 50 \u00b5g/mL kanamycin in a 50 mL conical tube was inoculated with 100 \u00b5L of the overnight culture. The culture was grown at 37 \u00b0C until the OD600 reached 0.5\u20130.6. Then, the culture was induced with 0.25 mM IPTG (Gold Biotechnology, cat# I2481C100, CAS: 367-93-1, 1M in autoclaved water, sterile filtered) and incubated for 18 hr at 18 \u00b0C at 225 rpm shaking. The cultures were pelleted by centrifugation at 3000 rpm for 5 min at 4 \u00b0C in a swinging-bucket centrifuge, the supernatant was discarded, and the pellet was resuspended by pipetting in 4 mL/g-pellet of B-PER (ThermoScientific, cat# 78266) with 1 mM PMSF (Millipore Sigma, cat# 7110, CAS: 329-98-6, 100 mM in ethanol), 10 \u00b5g/mL leupeptin (VWR Chemicals, cat# J583, CAS: 26305-03-3, 5 mg/mL in water), and 2 \u00b5g/mL pepstatin (VWR Chemicals, cat# J580, CAS: 103476-89-7, 2 mg/mL in water). The lysates were incubated at room temperature for 30 min on a rocker and clarified by centrifugation at 3000 rpm for 5 min at 4 \u00b0C in a swinging-bucket centrifuge. The lysate supernatant was then transferred to a fresh 50 mL conical tube and incubated for 30 min with 20 \u00b5L of NiNTA resin pre-equilibrated in Nickel Binding Buffer (50 mM Tris base (Fisher BioReagents, cat# BP152, CAS: 77-86-1) pH 8.0, 500 mM NaCl, 10 mM imidazole (Fisher Chemical, cat# 03196, CAS: 288-32-4), and then supernatant was removed by pipetting. The resin was washed 3 times for 5 min with 1 mL of Nickel Binding Buffer. Then the protein was eluted into 200 \u00b5L of Nickel Elution Buffer (100 mM Tris pH 8.0, 1 M NaCl, 400 mM imidazole) and dialyzed against DHFR Storage Buffer (50 mM Tris pH 8.0, 300 mM NaCl, 1% glycerol v/v) in 3000 Da MW cut-off Slidalyzer dialysis cups (Thermo Scientific, cat# 88401) at 4 \u00b0C. After 4 changes of dialysis buffer over 24 hr, the protein was aliquoted, flash frozen in liquid nitrogen, and stored at \u221280 \u00b0C. Proteins were purified to\u00a0~90\u201395% purity as judged from PAGE gel analysis.\n\n### In vitro assay for DHFR velocity and Michaelis-Menten kinetics\n\nIn vitro measurements of DHFR velocity were carried out by monitoring the change in UV absorbance. For each mutant screened, a purified enzyme aliquot was thawed and centrifuged at 15,000 rpm for 5 min at 4 \u00b0C in a benchtop microcentrifuge. The soluble enzyme was then transferred to a fresh tube, and the concentration was measured by UV absorption on a Nanodrop. Molar concentration of DHFR was calculated using an extinction coefficient of 33585 M\u22121 cm\u22121 at 280 nm for all variants with the following exceptions: 28085 (W30F/M, W47L/M), 35075 (M42Y, R98Y, L165Y), or 39085 (Q102W) M\u22121 cm\u22121. The enzyme was diluted to 555 nM in DHFR storage buffer. A pre-reaction mixture was prepared in MTEN buffer (5 mM MES (Sigma Aldrich, cat# 69889, CAS: 145224-94-8), 25 mM ethanolamine (Sigma Aldrich, cat# E6133, CAS: 2002-24-6), 100 mM NaCl, 25 mM Tris base, pH to 7.0) with 55.5 nM enzyme, 111 \u00b5M NADPH (Sigma Aldrich, cat# N7505, CAS: 2646-71-1) and 5 mM DTT (GoldBio, cat# DTT25, CAS: 27565-41-9, 1M in water, sterile filtered). The pre-reaction mixture and a micro quartz cuvette (Fisher Scientific, cat# 14-958-103, 10 mm path length, 2 mm window width) were pre-incubated at 30 \u00b0C. The reaction was started by adding 20 \u00b5l of 500 \u00b5M DHF (Sigma Aldrich, cat# D7006, CAS: 4033-27-6) in MTEN with 5 mM DTT to 180 \u00b5L of pre-reaction mixture. The substrate solution was made fresh from a sealed ampule on the day of the experiment. The reaction was briefly mixed by pipetting and then the reaction was monitored by reading the absorbance at 340 nm with an interval of 0.1 s in a Cary 50 spectrophotometer with the Peltier temperature set to 30 \u00b0C. The reactions were allowed to run to completion to establish the baseline, which was subtracted from the absorbance values. The real-time concentration of DHF was calculated by dividing the normalized absorbance values by the decrease in absorbance at 340 nm for the reaction, 0.0132 \u00b5M\u22121cm\u22121, the velocity of the reaction was calculated as the slope of linear regression to a 30 s window with a mean DHF concentration equal to 5, 10, 20, or 30 \u00b5M. Final velocities were normalized to enzyme concentration.\n\nMichaelis-Menten kinetics were performed as described above using 1\u20135 \u00b5M DHFR for concentrations of DHFR from 0.5 to 100 \u00b5M. Initial velocities were estimated from linear regression to the absorbance divided by the decrease in absorbance at 340 nm for the reaction, and then they were fit to the Michaelis-Menten equation using the non-linear least squares method in R.\n\n### Determining DHFR activity and abundance in cell lysates\n\nThe cellular activity of DHFR was measured in cell lysates, and then used to calculate DHFR cellular abundance using a method adapted from Guerrero et al., 2019; Rodrigues et al., 2016. For each characterized DHFR variant, a plasmid (WT DHFR in plasmids SMT102, SMT201, SMT202 and SMT205 with modified promoters and RBSs or DHFR single point mutants in the final selection plasmid SMT205, see The Appendix) was transformed via heat shock into chemically competent ER2566 \u2206folA \u2206thyA\u00a0\u00b1Lon cells, which were plated on an LB-agar plate with 30 \u00b5g/mL chloramphenicol plus 50 \u00b5g/mL thymidine and incubated overnight at 37 \u00b0C. On the second day, 2 mL M9 medium with supplements for deficient folate metabolism (50 \u00b5g/mL thymidine, 22 \u00b5g/mL adenosine, 1 \u00b5g/mL calcium pantothenate, 38 \u00b5g/mL glycine, and 37.25 \u00b5g/mL methionine) and 30 \u00b5g/mL chloramphenicol in a 14 ml culture tube was inoculated with a single colony scraped from the plate and incubated at 37 \u00b0C at 225 rpm shaking for 12\u201314 hr. Three biological replicates were obtained from separate single colonies at this step, and all biological replicates were processed in parallel for subsequent steps. All assays were run from fresh transformations. 20\u201350 \u00b5L of the previous culture were used to inoculate 20 mL of M9 medium (no supplements) with 30 \u00b5g/mL chloramphenicol in a 50 ml conical tube. This fresh culture was incubated for 12\u201318 hr at 30 \u00b0C at 225 rpm shaking until the OD600 value was between 0.3 and 0.5 on a Cary 50 spectrophotometer over a path of 1 cm. The cultures were pelleted by centrifugation at 3000 rpm for 5 min at 4 \u00b0C in a swinging-bucket centrifuge, the supernatant was discarded, and the pellet was thoroughly resuspended in 1.1 mL of M9 medium. 1 mL of the resuspension was transferred to a 1.5 mL Eppendorf tube, and the sample was pelleted at 5000 rpm for 5 min at 4 \u00b0C in a microcentrifuge. The supernatant was carefully removed from the pellet, and the pellet was stored at \u221280 \u00b0C until the next step. The remained 100 \u00b5L of resuspended pellet was mixed with 900 \u00b5L and the OD600 value was measured for each pellet to determine the number of cells in the pellet, with a conversion factor of 8 \u00d7 108 cells/mL at OD600\u00a0=\u00a01.0. Pellets for positive (ER2566) and negative (ER2566 \u2206folA \u2206thyA\u00a0\u00b1Lon) control samples were collected in a similar fashion, except that antibiotics were not used and initial plates were streaked from glycerol stocks. Additionally, the M9 medium for ER2566 \u2206folA \u2206thyA\u00a0\u00b1Lon contained folate supplements in every step.\n\nCell pellets were lysed in B-PER with 1 mM PMSF, 10 \u00b5g/mL leupeptin, and 2 \u00b5g/mL pepstatin. Volumes for lysis were calculated to have consistent lysate concentration according to the formula: lysis volume = (volume of culture for resuspended pellet)\u30fb(OD600 of culture)\u30fb(30 \u00b5L BPER lysis buffer/1 mL culture). Pellets were resuspended by pipetting in the calculated volume, and the lysates were incubated at room temperature for 30 min on a rocker. The lysates were then clarified by centrifuged at 15,000 rpm for 5 min at 4 \u00b0C in a benchtop microcentrifuge. Lysates were kept on ice while the reactions were prepared.\n\nMeasurements of DHFR activity in lysates were carried out by monitoring the change in UV absorbance in a BioTek Synergy H1 multimode plate reader. A 180 \u00b5L pre-reaction mixture was prepared with MTEN buffer (5 mM MES, 25 mM ethanolamine, 100 mM NaCl, 25 mM Tris base, pH to 7.0), 111 \u00b5M NADPH, 5 mM DTT, and containing 20 \u00b5L lysate. The pre-reaction mixtures in a UV transparent 96-well plate (Grenier Bio-One, cat# 655809) were pre-incubated at 30 \u00b0C for 10 min. The substrate solution of 500 \u00b5M DHF in MTEN with 5 mM DTT was made freshly from a sealed ampule of DHF on the day of the experiment. The reaction was started by automatic injection of 20 \u00b5l of 500 \u00b5M DHF in MTEN with 5 mM DTT into each well with pre-reaction mixture. The plate was then orbital shaken for 1 min at 365 rpm with a 2 mm amplitude. The reaction was briefly mixed by pipetting and then the reaction was monitored by reading the absorbance at 340 nm with an interval 1 min for 2 hr while incubating at 30 \u00b0C. To establish a baseline for accurate calculation of DHF concentration in each well, 50 \u00b5L of 1 \u00b5L WT DHFR in DHFR storage buffer was injected into each well, the plate was then orbital shaken for 1 min at 365 rpm with a 2 mm amplitude, and the reactions were allowed to run to completion over 10 min, before a final reading of absorbance at 340 nm was taken. In processing, this baseline value was subtracted from the absorbance values for each well. The real-time concentration of DHF was calculated by dividing the normalized absorbance values by the decrease in absorbance at 340 nm for the reaction, 0.0132 \u00b5M\u22121cm\u22121, times a correction factor of 1.5 for calibration between the plate reader and the absorbance at 340 nm using a Cary 50 spectrophotometer with a 1 cm pathlength quartz cuvette. The velocity of the reaction was calculated as the slope of linear regression for DHF concentration as a function of time over a window of DHF concentration from 20 to 30 \u00b5M. The mean slope of the negative control wells (untransformed ER2566 \u2206folA \u2206thyA\u00a0\u00b1Lon) was subtracted from all wells as a baseline. The linear regression of in vitro DHFR reactions using purified enzyme over the same window of DHF concentration from 20 to 30 \u00b5M was calculated from measurements described above (section \u2018In vitro assay for DHFR velocity\u2019, Supplementary file 6), and the DHFR abundance in each well was calculated from the ratio of activitylysate/velocitypurified enzyme. The number of DHFR molecules per cell was then calculated by dividing the total number of DHFR molecules in each 200 \u00b5L of reaction by the number of cells in 20 \u00b5L of lysate based on the OD600 measurements.\n\n### CD spectroscopy\n\nSamples for circular dichroism (CD) spectroscopy were prepared at a concentration of 10 \u00b5M in a buffer of 150 mM NaCl and 50 mM Tris, pH 8.0. CD spectra acquisition and thermal denaturation was carried out in a Jasco J-715 CD spectrometer using a cuvette with a 2 mm pathlength (Starna Cell Inc, cat# 21-Q-2). For each DHFR variant, a pre-denaturation spectra was recorded between 207 nm and 280 nm where the high tension voltage was below 600 V. Thermal denaturation data were collected at 225 nm with a bandwidth of 2 nm, a response time of 8 s, and a resolution of 0.1 \u00b0C during heating at a rate of 1 \u00b0C/min. When the curve flattened, the sample was removed from the CD spectrometer and the system was returned to 30 \u00b0C. The sample was returned to the chamber and allowed to equilibrate for 10 min. A post-denaturation spectrum was recorded after equilibration. Between samples, the cuvette was cleaned with sonication in Hellmanex III (Hellma, cat# 2805939) followed by washing with 50% concentrated nitric acid. Thermal denaturation was found to be only partially reversible based on comparisons of spectra recorded before and after denaturation. Thermal denaturation curves were fit to a sigmoidal model for the calculation of an approximate apparent Tm for all mutants as previously reported\u00a0(Smith et al., 2013).\n\n### Structural representation of DHFR\n\nAll images of the DHFR structure were prepared with UCSF Chimera, and volumetric representations were prepared using the MSMS package\u00a0(Sanner et al., 1996). Solvent accessible surface accessible surface area (SASA) was calculated using the Getarea server\u00a0(Fraczkiewicz and Braun, 1998) for four crystal structures of DHFR (1RX1, 3QL3, 1RX4, and 1RX5) representing different states in DHFR\u2019s catalytic cycle. All models were downloaded from PDB_REDO\u00a0(Joosten et al., 2014). For all positions in DHFR, if the residue had\u00a0<20% SASA in any structure, the residue was classified as buried. All other residues were classified as exposed. Burial classification is reported in Figure 3\u2014source data 1.\n\nThe distance between the positions within each mutational response category and sites within the DHFR structure (hydride transfer site, M20 loop, core of the globular domain, and the beta-sheet surface beneath the active site) were determined using a model of the transition state provided by Phil Hanoian\u00a0(Liu et al., 2013). The representative atom for the hydride transfer site is the hydride atom in the transition state model. The representative atom for the adenine ring is C5 (C18 in the pdb). The representative atom for the core of the globular domain is the alpha carbon of I41. The representative atom for the beta sheet region is the alpha carbon of D114. For all cases, the distance is defined as the distance between the representative atom and the alpha carbon of the target position.\n\nMean atom neighbors for each residue on a structure were calculated using an in-house python script. The number of non-hydrogen atoms within an 8 \u00c5 shell of each non-hydrogen atom in the structure were counted and averaged for all non-hydrogen atoms at each side chain. These values we calculated for four crystal structures of DHFR (PDB IDs: 1RX1, 3QL3, 1RX4, 1RX5) and averaged over the set.\n\n### Profile similarity analysis\n\nWe downloaded the DHFR alignment from OpenSeq.org (Ovchinnikov et al., 2014), selected all bacterial DHFR sequences, and aligned the E. coli DHFR sequence to the MSA using MUSCLE (Edgar, 2004). This multiple sequence alignment (MSA) is provided in Supplementary file 7. Frequencies for each amino acid at each sequence position in the MSA were calculated from counts in each column, with absent amino acids given an arbitrarily low frequency of 0.0001. To compare the amino acid frequencies from the MSA to the selection coefficients, we first divided the selection coefficients by ln(2) \u2022 18 hr to convert from the Enrich selection coefficients to a \u2206doubling rate. We then multiplied the \u2206doubling rate by \u22121 and back-calculated frequencies using Boltzmann weighting using a temperature (0.44 kT for \u2013Lon selection, and 0.47 kT for +Lon selection) that resulted in the mean sequence entropy to be within \u00b10.01 of that of the MSA (0.50). Then, profile similarity at each sequence position was calculated as 1 \u2013 the Jensen-Shannon Divergence of the amino acid frequencies. Profile similarity was determined over columns corresponding to positions 2\u2013158 because the DHFR library begins at position two and the DHFR MSA cuts off after position 158.\n",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "d1a8aba4-03fe-434e-bea3-6202ac2a922e",
+      "submission_id": "66751c82-4678-463e-8002-3155f693f61d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sarel Jacob Fleishman, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53476.sa1](https://doi.org/10.7554/eLife.53476.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors combined mutational scanning with structural and biochemical analysis of DHFR against different genetic backgrounds and show how these backgrounds can change the tolerance to mutations. The work provides several important mechanistic insights on the relationship between cellular proteostasis, protein structure and evolution.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Modulating the cellular context broadly reshapes the mutational landscape of a model enzyme\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Sarel Jacob Fleishman as the Reviewing Editor, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThompson et al. used deep mutational scanning of E. coli DHFR to evaluate how the constraints imposed by the cellular environment modulate the mutational tolerance of the enzyme. To this end, selection coefficients of every possible DHFR amino acid substitution were determined in the absence and presence of Lon protease. The authors demonstrate that Lon dramatically transforms the mutational landscape of DHFR. A particularly interesting finding is that Lon largely suppresses the advantageous mutations that, in the absence of Lon, constitute over 23% of all single point mutations. It is suggested that the observed phenomenon can be explained by extensive activity-stability trade-offs, whereby advantageous mutations increase the DHFR activity, but this improvement in activity comes at the expense of reduced thermodynamic stability that renders the mutants sensitive to Lon degradation. The manuscript is clearly written and interesting and nicely adds to our understanding of the relationship between cellular proteostasis and evolution.\n\nEssential revisions:\n\n1) Bacterial fitness depends on the product of the catalytic proficiency (kcat/KM) and intracellular abundance of an essential enzyme (Dykhuzien, Dean and Hartl, 1987). This dependence was also specifically demonstrated for DHFR in E. coli (Bershtein et al., 2015) but isn't discussed in this paper. In the manuscript, the activity of the DHFR mutants is measured as initial velocity at a particular concentration of DHF. However, the comparison between DHFR mutants using this type of measurement is meaningless for mutants that vary substantially in their Km(DHF) values. For example, the reported Km value of L54F is 0.7 \u03bcm and that of F31Y is 168 \u03bcm \u2013 240 fold higher (Figure 1\u2014source data 3). This means that when the initial velocity for both mutants is measured at 20 \u03bcm DHF, the L54F variant operates at a rate close to Vmax, whereas the rate of F31Y is measured way below its Km and, therefore, is far away from its Vmax value. Since the changes in kcat and KM amongst DHFR mutants are not necessarily correlated (e.g., the kcat of variant F31V is close to that of wt but its KM is 2 orders of magnitude higher, Figure 1\u2014source data 3), the differences in the initial velocities at a given concentration of DHF will be sometimes driven by kcat and sometimes by KM. The interpretation of these measurements with respect to bacterial fitness is further muddled by the fact that 1) the intracellular concentrations of the mutants are not known, and 2) the intracellular amounts of DHF can rise as a result of low DHFR abundance and/or activity (Kwon et al., 2008), thus affecting the relative importance of Km. Indeed, roughly half of analyzed adaptive mutations appear to have initial velocities lower than that of wt (Figure 4C and Figure 4\u2014figure supplement 3), although the authors claim that the initial velocities are expected to be correlated with selection coefficients (as shown in Figure 1C for a small subset of mutants). Thus, the way the activity of DHFR mutants is measured does not adequately explain the observed distribution of selection coefficients.\n\nFor proper interpretation of the selection coefficients, it is therefore important to measure the intracellular abundance of a selection of DHFR mutants on Lon+/- backgrounds and to measure kcat and KM parameters for a subset of advantageous DHFR mutants.\n\n2) Related to point (1) above, the mechanism invoked by the authors to explain why destabilization may increase activity through increased dynamics at the active site is interesting but other mechanisms related to cellular abundance have not been taken into consideration. In particular, DHFR destabilization is known to turn DHFR into a chaperonin client and this interaction may increase cellular levels. As argued in point (1) above, more detailed measurements of cellular abundance and kcat,KM determination are needed to produce a consistent interpretation of the results.\n\n3) Results \u2013 the authors show that their DMS results are nicely reproducible. However, I don't think that they correlate the DMS results with individually measured selection coefficients (it's not totally clear whether the data shown in Figure 1C is from individual measurements or the DMS). They should do this to establish that the DMS accurately recapitulates individual measurements both in E. coli and for purified protein.\n\n4) The selection system is beautifully designed to allow highly sensitive selection conditions, including the identification of better-than-wt DHFR mutants. The experimental conditions in the paper, however, are likely to be different from those that a wild type strain would face. First, the endogenous promoter of folA regulates the DHFR expression via a negative feedback loop: A drop in DHFR activity/abundance results in the upregulation of its expression (Bershtein, et al., 2015). An interesting question is how the distribution of fitness effects of DHFR mutations will be shaped by the presence of such a regulatory expression element. Second, it was demonstrated that the endogenous DHFR levels in E. coli strain carrying the chromosomal folA gene are very close to the optimal level, as the increase in activity or abundance of DHFR does not increase fitness (Bhattacharyya et al., 2016). The fact that over 23% of single point DHFR mutations increase bacterial fitness suggests that the intracellular DHFR levels in the selection system are far away from the optimum. Third, there is no difference in the DHFR sequence between naturally occurring E. coli B and K-12 strains, even though according to the authors' conclusions, the lack of Lon protease in B strains should have driven the adaptive evolution of DHFR in this strain. It would be helpful if the authors discussed these caveats in the manuscript.\n",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ecd5928a-b396-44e1-8ea4-fb9a042eea03",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C1",
+      "claim": "Lon is a quality control protease naturally absent in common E. coli expression strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Lon, a quality control protease naturally absent in common E. coli expression strains, drastically reshapes the mutational landscape of the metabolic enzyme dihydrofolate reductase (DHFR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citation in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "a5298bbd-6a45-4807-9404-a06631d6fb5f",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C2",
+      "claim": "23.3% of all single point mutations in DHFR are advantageous in the absence of Lon.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection under conditions that resolve highly active mutants reveals that 23.3% of all single point mutations in DHFR are advantageous in the absence of Lon",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the deep mutational scanning experiment reported in the abstract and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "fdc9feb4-6ee3-4d29-8482-6e2a36e148ba",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C3",
+      "claim": "Advantageous mutations in DHFR are largely suppressed when Lon is reintroduced.",
+      "claim_type": "EXPLICIT",
+      "source": "advantageous mutations are largely suppressed when Lon is reintroduced",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from comparing selection experiments with and without Lon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "752554d3-d70b-4e28-aa58-a69f9b57041f",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C4",
+      "claim": "Protein stability measurements demonstrate extensive activity-stability tradeoffs for the advantageous mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein stability measurements demonstrate extensive activity-stability tradeoffs for the advantageous mutants and provide a mechanistic explanation for Lon's widespread impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by thermal denaturation data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "f034a972-0182-44d6-9d91-177265c41067",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C5",
+      "claim": "DHFR is an essential enzyme within folate metabolism that reduces dihydrofolate to tetrahydrofolate.",
+      "claim_type": "EXPLICIT",
+      "source": "DHFR is an essential enzyme within folate metabolism that reduces dihydrofolate to tetrahydrofolate and is necessary for thymidine production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about DHFR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "ead945d9-627a-4007-b21d-219ac4edc36b",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C6",
+      "claim": "DHFR progresses through multiple conformational states during catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Because DHFR is known to progress through multiple conformational states during catalysis (Boehr et al., 2006; Sawaya and Kraut, 1997; Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior work and illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "f263bd73-455d-4299-a096-9d548f64ce6e",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C7",
+      "claim": "Prior work suggested DHFR is impacted by cellular constraints such as protein quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "prior work had suggested DHFR is impacted by cellular constraints such as protein quality control (Bershtein et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "206383a4-c7fc-4d0e-8138-567f6f2ce9de",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C8",
+      "claim": "The selection strain is derived from ER2566 with DHFR and thymidylate synthase genes deleted in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We used an E. coli strain derived from ER2566 with the genes for DHFR and a downstream enzyme, thymidylate synthase, deleted in the genome and complemented on a pACYC-DUET plasmid",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental strain construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "2447d7ae-4139-4c0e-ba9b-c4080c2ad36e",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C9",
+      "claim": "DHFR abundance in the selection strain is approximately 10% of the endogenous protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "that results in DHFR abundance at approximately 10% of the endogenous protein level (Figure 1\u2014figure supplement 2, Figure 1\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "eecee5ff-e3cd-461e-81ee-58396a84c740",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C10",
+      "claim": "Selection coefficients from deep mutational scanning correlated linearly with growth rates measured for individual variants.",
+      "claim_type": "EXPLICIT",
+      "source": "For a panel of 14 DHFR mutants, we confirmed that the selection coefficients obtained from deep mutational scanning correlated linearly with growth rates measured separately for the individual variants in a plate reader (Figure 1\u2014figure supplement 3B, Figure 1\u2014source data 2), as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation experiment comparing two measurement methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "694ae103-894a-43fd-a017-98047a0bec87",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C11",
+      "claim": "There is a linear relationship between selection coefficient and in vitro velocity for DHFR mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, under our controlled selection conditions, we observed a linear relationship between selection coefficient and in vitro velocity (Figure 1C) at cytosolic substrate concentrations (Bennett et al., 2009; Kwon et al., 2008) for these DHFR mutants (Figure 1\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and supported by citations for substrate concentrations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "4e1d5789-c2c4-4073-9aa0-b7781b457627",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C12",
+      "claim": "Selection coefficients between \u22121.5 and 1.0 are correlated with DHFR enzymatic velocity over approximately 3 orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that selection coefficients between \u22121.5 and 1.0 in our experiment are correlated with DHFR enzymatic velocity over approximately 3 orders of magnitude",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the calibration experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "a9a9fd73-1751-4fd7-ada5-a85f74b9b679",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C13",
+      "claim": "736 of 3161 possible DHFR variants were advantageous in the absence of Lon.",
+      "claim_type": "EXPLICIT",
+      "source": "736 of 3161 possible variants were advantageous (23.3%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the deep mutational scanning data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "c6ef002f-bb0e-49ec-a5de-1aa00e424508",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C14",
+      "claim": "Wild-type DHFR ranked 1203rd among all variants in the absence of Lon.",
+      "claim_type": "EXPLICIT",
+      "source": "wild-type DHFR only ranked 1203rd (although 467 of the 1202 higher-ranking variants fall into the WT-like interval)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from ranking the selection coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "812714e1-70d6-4548-bd74-04aa51170130",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C15",
+      "claim": "Advantageous mutations were widely distributed over 127 of the 159 positions of DHFR.",
+      "claim_type": "EXPLICIT",
+      "source": "Advantageous mutations were widely distributed over 127 of the 159 positions of DHFR (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E and quantified in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "74e38004-dee6-46cd-a004-c88d8faedb0e",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C16",
+      "claim": "The selection strain is naturally deficient in Lon protease due to an insertion of IS186 in the lon promoter region.",
+      "claim_type": "EXPLICIT",
+      "source": "Our selection strain (Anton et al., 2016), like most standard expression strains of E. coli, is naturally deficient in Lon protease (Gur and Sauer, 2008) due to an insertion of IS186 in the lon promoter region (saiSree et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations describing the genetic basis of Lon deficiency.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "6db599e4-009a-46c3-aa59-d12ed3289a5b",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C17",
+      "claim": "Lon is a major component of protein quality control in E. coli responsible for degrading poorly folded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Lon is a major component of protein quality control in E. coli (Powers et al., 2012; Sauer and Baker, 2011) responsible for degrading poorly folded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "cc7c9a0b-3b21-4556-bec0-f5dfa1d3e0b6",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C18",
+      "claim": "Lon had previously been implicated in degrading DHFR unstable variants in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Lon had previously been implicated in degrading DHFR unstable variants in E. coli (Bershtein et al., 2013; Cho et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "65a4ed68-5b30-4aa5-b90a-c1c6d4a07336",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C19",
+      "claim": "Deleting Lon in an MG1655 strain masked the deleterious impact of 2 destabilizing mutations out of 21 mutants tested.",
+      "claim_type": "EXPLICIT",
+      "source": "deleting Lon in an MG1655 strain of E. coli masked the deleterious impact of 2 destabilizing mutations out of a panel of 21 mutants tested in growth experiments at 30 \u00b0C (Bershtein et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from a cited prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "bd24be23-7b5c-48c8-b02d-3ae54202cef3",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C20",
+      "claim": "The number of advantageous mutations decreased from 737 in \u2013Lon selection to 384 in +Lon selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of advantageous mutations after reintroducing Lon decreased from 737 in \u2013Lon selection to 384 in +Lon selection (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "4d0a153b-4463-4b44-a087-91b212806e45",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C21",
+      "claim": "The mean selection coefficient for advantageous mutations decreased from 0.47 to 0.37 when Lon was reintroduced.",
+      "claim_type": "EXPLICIT",
+      "source": "the mean selection coefficient for advantageous mutations decreased from 0.47 to 0.37",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated statistic from the selection data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "e1e012e7-9fda-4161-9117-e67a9c35e42e",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C22",
+      "claim": "The rank of wild-type DHFR increased by 341 to 864th when Lon was reintroduced.",
+      "claim_type": "EXPLICIT",
+      "source": "the rank of the wild-type sequence increased by 341 to 864th (where 479 of the 863 higher-ranked variants are in the WT-like interval)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison of rankings between the two conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "b70b1b06-0d72-4024-aaf3-091703370e13",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C23",
+      "claim": "The median rank of the wild-type residue over all positions decreased from eight in \u2013Lon selection to five in +Lon selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The median rank of the wild-type residue over all positions decreased from eight in \u2013Lon selection to five in +Lon selection (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "690273db-ba50-4784-8856-e81795ffe353",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C24",
+      "claim": "28 positions were classified as Beneficial in \u2013Lon selection, representing 17.6% of positions.",
+      "claim_type": "EXPLICIT",
+      "source": "For \u2013Lon selection, 28 positions (17.6%) were classified as Beneficial, where nearly every mutation was preferred over the wild-type residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from K-means clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "df95384f-c85a-4a2b-bffe-4d3b66134c7c",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C25",
+      "claim": "The number of Beneficial positions decreased to 10 in +Lon selection.",
+      "claim_type": "EXPLICIT",
+      "source": "the number of Beneficial positions decreased to 10 in +Lon selection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of clustering results between conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "562e402f-8e4a-4cd3-868e-99eb7ee34056",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C26",
+      "claim": "Only three surface-exposed positions (E48, T68, D127) were common between the two Beneficial sets.",
+      "claim_type": "EXPLICIT",
+      "source": "with only three surface-exposed positions (E48, T68, D127) common between the two Beneficial sets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies specific positions that remain Beneficial in both conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "8ae1c1c8-8aef-4755-b7f9-d8ddd2ca2504",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C27",
+      "claim": "The number of Restricted positions increased from 42 to 67 with the reintroduction of Lon.",
+      "claim_type": "EXPLICIT",
+      "source": "the number of Restricted positions increased from 42 to 67 with the reintroduction of Lon into the selection strain (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C comparing the two conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "f76bbe40-2e9a-4bb1-afb4-9a41bbf5e6b4",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C28",
+      "claim": "Mutations at positions with native hydrophobic residues are enriched for negative \u2206selection coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "overall, mutations at positions with native hydrophobic residues are enriched for negative \u2206selection coefficients (Figure 3\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "a093916f-4161-4679-91f4-3f578bdd17e0",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C29",
+      "claim": "The mean \u2206selection coefficient was \u20130.71 for the 65 buried positions with <20% side-chain solvent accessible surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "the mean \u2206selection coefficient was \u20130.71 for the 65 buried positions with <20% side-chain solvent accessible surface area",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated statistic from the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "d2937497-4760-4224-b545-f68b6cf696ca",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C30",
+      "claim": "The mean \u2206selection coefficient was \u20130.27 for the 79 exposed positions.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to \u20130.27 for the 79 exposed positions (Figure 3C, Figure 3\u2014figure supplement 1B, Figure 3\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C and supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "0f3e35e0-0627-4836-af4b-33c49fc3995b",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C31",
+      "claim": "Lon has a broad impact on the mutational landscape throughout the DHFR structure but imposes particularly strong constraints in the DHFR core.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Lon has a broad impact on the mutational landscape throughout the DHFR structure but imposes particularly strong constraints in the DHFR core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the \u2206selection coefficient analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "4de6a29f-d470-4909-a2a0-4b530804ac9c",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C32",
+      "claim": "Advantageous mutations had higher cytosolic DHFR activity in ER2566 \u2206folA/\u2206thyA (\u2013Lon) lysates relative to wild-type DHFR.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed that the selected advantageous mutations indeed had higher cytosolic DHFR activity (the total rate of conversion of DHF to THF) in ER2566 \u2206folA/\u2206thyA (\u2013Lon) lysates relative to the activity for WT DHFR (Figure 4\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "3ee7d8df-787a-49f5-909c-cdb8c86a8258",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C33",
+      "claim": "At 20 \u00b5M DHF, 16 mutants had velocities equal to and up to three-fold higher than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "At 20 \u00b5M DHF, 16 the mutants had velocities equal and up to three-fold higher than that of WT (Figure 4C, Figure 4\u2014figure supplement 3, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C and supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "ca0917ac-2d7b-4412-a796-19cffb414956",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C34",
+      "claim": "Eight mutants had velocities as much as two-fold lower than wild-type at 20 \u00b5M DHF.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the other eight mutants had velocities as much as two-fold lower than that of WT at the same DHF concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the velocity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "c413a6a6-f0eb-48d9-8856-5500100b0b01",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C35",
+      "claim": "Mutant abundance levels varied from close-to-wild-type levels to a 20-fold increase over wild-type in the absence of Lon.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Lon, we observed that mutant abundance levels varied from close-to-wild-type levels to a 20-fold increase over wild-type (Figure 4D, Figure 4\u2014figure supplement 4, Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4D and supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "baf8c495-0eaa-4284-bacb-8fd8451f375d",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C36",
+      "claim": "Abundance decreased for most mutants in the presence of Lon.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, abundance decreased for most mutants in the presence of Lon (Figure 4\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "a09d1ced-7fed-45d2-a3c0-8c5075a346f7",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C37",
+      "claim": "Many of the advantageous mutations considerably destabilized the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that many of the advantageous mutations considerably destabilized the protein (Figure 4F, Figure 4\u2014figure supplement 9, Figure 4\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4F and supporting data from thermal denaturation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "d1c7984d-5515-4d09-ab96-64e3abf42042",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C38",
+      "claim": "The \u2206selection coefficients between +Lon and \u2013Lon selection are correlated with Tm, except for mutations near the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover and as expected, the \u2206selection coefficients between +Lon and \u2013Lon selection (Figure 3) are correlated with Tm (Figure 4F), except for mutations near the active site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "a32b56a2-e96d-46a8-99f7-b1f8f6a62f7f",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C39",
+      "claim": "When comparing different mutations at the same position, the change in \u2206selection coefficients correlates with the change in Tm values.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, when we compare different mutations at the same position, the change in \u2206selection coefficients (i.e. Lon sensitivity) correlates with the change in Tm values (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "2e3af406-dbea-4d80-a7b4-d6156d10b29e",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C40",
+      "claim": "Product release is rate limiting for wild-type DHFR at neutral pH.",
+      "claim_type": "EXPLICIT",
+      "source": "these mutations promote breathing motions that accelerate product release, which is rate limiting for wild-type DHFR at neutral pH (Oyen et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "d7241138-1a55-4f29-a86c-50591ca4dd04",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C41",
+      "claim": "A hyperactive DHFR mutant with a 7-fold increase in kcat has been previously characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "and for a hyperactive DHFR mutant with a 7-fold increase in kcat (Iwakura et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "0da38d35-78a8-4c3f-9ec7-e379db23ba8b",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C42",
+      "claim": "The observed widespread changes in the mutational landscape of DHFR can be explained by a penalty for destabilizing mutations from Lon expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data indicate that the observed widespread changes in the mutational landscape of DHFR can be explained by a penalty for destabilizing mutations from Lon expression, leading to extensive activity \u2013 stability tradeoffs for advantageous mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined data on stability, activity, and selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "9504a9d1-c3c7-4e9b-a6eb-141aa0cc7ad3",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C43",
+      "claim": "In \u2013Lon conditions, mutational responses are arranged in shells around the hydride transfer site.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u2013Lon conditions, mutational responses are arranged in shells around the hydride transfer site (Liu et al., 2013; Figure 5A, top)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "6a4fb581-5290-4ad9-8eff-80fbb7fb650b",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C44",
+      "claim": "The proportion of advantageous mutations increases with increasing distance from the hydride transfer site.",
+      "claim_type": "EXPLICIT",
+      "source": "where the proportion of advantageous mutations increases with increasing distance (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "2f01da89-9a05-4be2-b750-97082f1db4b1",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C45",
+      "claim": "There are no Beneficial positions in the core in +Lon selection.",
+      "claim_type": "EXPLICIT",
+      "source": "but it is now superimposed with the additional pressure against destabilizing mutations such that there are no Beneficial positions in the core (Figure 5C, Figure 5\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "49a4b94c-1a4b-4396-ac83-0c643aa75286",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C46",
+      "claim": "Lon expression in the selection increases the relative rank of the WT DHFR sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "While Lon expression in our selection increases both the relative rank of the WT DHFR sequence (Figure 2\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "eb1384c4-60c9-416f-b4c1-f3a6b09d2ad4",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C47",
+      "claim": "Lon expression increases the similarity between amino acid preferences from selection and from bacterial DHFR orthologues.",
+      "claim_type": "EXPLICIT",
+      "source": "and the similarity between amino acid preferences from selection and from bacterial DHFR orthologues (Figure 2\u2014figure supplement 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "66697f79-48a2-43c4-b5e4-07a3a200661d",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C48",
+      "claim": "There are still 384 advantageous mutants that rank substantially better than the WT sequence even in the presence of Lon.",
+      "claim_type": "EXPLICIT",
+      "source": "There are still 384 advantageous mutants that rank substantially better than the WT sequence even in the presence of Lon",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the +Lon selection data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "5b234b3f-e90b-4ca3-92b4-b692a93a7142",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C49",
+      "claim": "The amino preferences in the two selection experiments (\u00b1Lon) are more similar to each other than either is to the preferences from bacterial DHFR orthologues.",
+      "claim_type": "EXPLICIT",
+      "source": "and the amino preferences in the two selection experiments (\u00b1Lon) are more similar to each other than either is to the preferences from bacterial DHFR orthologues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the profile similarity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "c9a271ef-b63f-43d5-8dad-46f141cf6c58",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C50",
+      "claim": "The selection conditions were intentionally engineered to be highly sensitive to mutations by dampening DHFR abundance to approximately 10% of the endogenous level.",
+      "claim_type": "EXPLICIT",
+      "source": "our selection conditions were intentionally engineered to be highly sensitive to mutations by dampening DHFR abundance to approximately 10% of the endogenous level (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "5973d372-082d-4330-a2e3-24af0e5bed4d",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C51",
+      "claim": "Endogenous DHFR is expected to be buffered from mutational impacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, endogenous DHFR is expected to be buffered from mutational impacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known properties of cellular systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "2fd2b1d5-51ab-452d-aa13-8bac078320fb",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C52",
+      "claim": "Increasing DHFR activity or abundance in E. coli several-fold above that in wildtype strains does not increase fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing DHFR activity or abundance in E. coli several-fold above that in wildtype strains does not increase fitness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "62d89675-4d22-4d3d-b9f5-0bedcdcde0ff",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C53",
+      "claim": "Reducing DHFR abundance in E. coli does not have an impact on growth until abundance is below 30% of the endogenous level.",
+      "claim_type": "EXPLICIT",
+      "source": "and, conversely, reducing DHFR abundance in E. coli does not have an impact on growth until abundance is below 30% of the endogenous level (Bershtein et al., 2013; Bhattacharyya et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "8ca02cc7-c7f7-4d65-837a-04aa47c96bf9",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C54",
+      "claim": "Selection on mutations to the chromosomal DHFR gene did not reveal strong mutational impacts in the absence of the anti-folate drug trimethoprim.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, selection on mutations to the chromosomal DHFR gene did not reveal strong mutational impacts in the absence of the anti-folate drug trimethoprim (Garst et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "9c970b95-54d3-4fa4-ace7-f0bcd080b516",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C55",
+      "claim": "Chromosomal DHFR expression is modulated through feedback mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, chromosomal DHFR expression is modulated through feedback mechanism (Bershtein et al., 2015a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "0ec60b84-0c2f-4bec-89b8-0f782efedf00",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C56",
+      "claim": "All B type E. coli strains (e.g. BL21) have the same natural Lon deficiency as the selection strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Because all B type E. coli strains (e.g. BL21) have the same natural Lon deficiency as our selection strain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about B-type E. coli strains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "45976c80-0213-4645-90c5-d96d19316c07",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C57",
+      "claim": "GroEL is a chaperone in bacteria that impacts the effect of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has illuminated the impact of chaperones on the effect of mutations, such as for GroEL in bacteria (Tokuriki and Tawfik, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "ae4c7dc2-1327-4130-bab9-a0a9a8bf6ae8",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C58",
+      "claim": "Hsp90 in eukaryotic cells has been shown to buffer the phenotypic impacts of deleterious mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "and for Hsp90 in eukaryotic cells that has been shown to buffer the phenotypic impacts of deleterious mutations (Queitsch et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "50421bb8-e0fa-460c-92c3-c7b782185398",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C59",
+      "claim": "Lon inactivation has been shown to increase resistance to antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Lon inactivation has been shown to increase resistance to antibiotics (Nicoloff and Andersson, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "9010d300-1352-4f27-a80a-4eb3caa1585b",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C60",
+      "claim": "The top two DHFR variants (W47L and L24V) led to increases in growth rate of 40% and 76%, respectively, when compared to wild-type DHFR.",
+      "claim_type": "EXPLICIT",
+      "source": "In direct measurements of individual growth rates under our selection conditions, the top two DHFR variants (W47L and L24V) led to increases in growth rate of 40% and 76%, respectively, when compared to wild-type DHFR (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "3716c99e-003f-4e5d-ae9c-52efaab6c291",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C61",
+      "claim": "The Pearson correlation R2 value from linear regression of all pairwise replicates for selection coefficients from triplicate deep mutational scanning on DHFR was 0.70.",
+      "claim_type": "EXPLICIT",
+      "source": "All pairwise replicates were related with a Pearson correlation R2 value of 0.70",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical measure of reproducibility shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "46065e7a-db48-496f-a70f-95bf7aa10a49",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C62",
+      "claim": "The median standard deviation between replicates for all selection coefficients was 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "and the median standard deviation between replicates for all selection coefficients was 0.2 (Figure 1\u2014figure supplement 3C\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 3C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "b26d5696-f0d9-42e3-ab5b-32ac1e1558cc",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "claim_id": "C63",
+      "claim": "The WT-like threshold of 0.2 was greater than the value of 0.12 for the standard deviation for wild-type synonymous codons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our WT-like threshold of 0.2 was greater than the value of 0.12 for the standard deviation for wild-type synonymous codons (Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0e54a7e5-a826-4e85-b82e-d5920c24e901",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established a calibrated deep mutational scanning selection system for DHFR in E. coli with DHFR abundance at ~10% of endogenous levels. Selection coefficients from this system correlate linearly with growth rates and in vitro enzymatic velocity over approximately 3 orders of magnitude, with high reproducibility (R\u00b2 = 0.70 between replicates, median standard deviation = 0.2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 describe the experimental system design and validation. The calibration data (C10-C12) demonstrate that selection coefficients quantitatively report on DHFR activity. The reproducibility metrics (C61-C63) show acceptable technical quality. The system design (C8-C9, C50) is clearly described and validated through multiple independent measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "0330c281-6b59-4430-8ff5-6393c793be3c",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Deep mutational scanning in the absence of Lon revealed that 23.3% (736/3161) of all single point mutations in DHFR are advantageous, with advantageous mutations widely distributed across 127 of 159 positions. Wild-type DHFR ranked only 1203rd, and top variants (W47L, L24V) showed growth rate increases of 40% and 76% respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C13-C15 present consistent quantitative findings from the -Lon deep mutational scanning experiment. The widespread distribution of advantageous mutations is directly shown in the data (C15). Individual validation of top mutants (C60) confirms the deep sequencing results. The findings are internally consistent and well-supported by the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "fa243e5e-2d80-48e5-be92-3c4bd6bbedeb",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The selection strain, like most B-type E. coli expression strains, is naturally deficient in Lon protease due to an IS186 insertion in the lon promoter. Lon is a major protein quality control protease that degrades poorly folded proteins and had previously been implicated in degrading unstable DHFR variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C16-C19, C56 establish the genetic and functional context for Lon deficiency. These are well-supported by multiple citations to prior work (C16-C19) and represent established knowledge about E. coli strain genetics (C1, C56). The prior work on Lon and DHFR (C18-C19) provides important context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "4e495343-7f2a-4b1d-8242-5a1f45903eba",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Reintroducing Lon expression largely suppressed advantageous mutations: the number of advantageous mutations decreased from 737 to 384, their mean selection coefficient decreased from 0.47 to 0.37, and wild-type DHFR's rank improved by 341 positions to 864th. The median rank of wild-type residues across all positions improved from 8th to 5th.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C20-C23 present consistent quantitative comparisons between \u00b1Lon conditions from replicate deep mutational scanning experiments. The multiple metrics (count, mean coefficient, WT rank, per-position WT rank) all consistently show Lon suppresses advantageous mutations. The +Lon experiment had comparable quality to -Lon (reproducibility data provided).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "aeaf8c53-2b49-4ff2-bdeb-0b2b3d16f19b",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "K-means clustering analysis revealed that Lon reintroduction dramatically altered the mutational landscape: Beneficial positions decreased from 28 (17.6%) to 10, with only three surface-exposed positions (E48, T68, D127) remaining Beneficial in both conditions. Simultaneously, Restricted positions increased from 42 to 67.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 describe results from K-means clustering analysis that categorizes positions by mutational response. The clustering methodology is described in Methods. The quantitative changes are consistent with the overall shift in the mutational landscape (C20-C23). The identification of specific positions (C26) provides structural insight into Lon-insensitive mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "20ba7e47-1176-42a4-8465-139070550bc8",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Structural analysis of \u0394selection coefficients (difference between +Lon and -Lon) revealed that Lon has broad impact throughout DHFR but imposes particularly strong constraints in the protein core. The mean \u0394selection coefficient was -0.71 for 65 buried positions (<20% SASA) compared to -0.27 for 79 exposed positions, with mutations at hydrophobic positions enriched for negative \u0394selection coefficients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 present structural analysis correlating Lon sensitivity with burial and hydrophobicity. The quantitative differences between buried and exposed positions (C29-C30) are substantial and consistent with Lon targeting destabilized proteins. The conclusion (C31) appropriately summarizes the structural pattern. The SASA calculations are described in Methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "5efa4d5b-7cf6-4bb1-b1b6-0d0586403ee5",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Characterization of 24 selected advantageous mutants revealed that they have higher cytosolic DHFR activity in -Lon lysates. At 20 \u00b5M DHF, 16 mutants had velocities equal to or up to 3-fold higher than wild-type, while 8 had velocities up to 2-fold lower. Mutant abundance varied from near wild-type to 20-fold higher in -Lon conditions, and decreased for most mutants when Lon was present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 describe in vitro and lysate characterization of selected mutants. The lysate activity measurements (C32) confirm the selection results. The velocity measurements (C33-C34) show that increased activity alone cannot explain all advantageous mutations. The abundance measurements (C35-C36) demonstrate Lon's effect on protein levels. Multiple independent measurements support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "8deb9f95-9f13-40ea-b987-7e0a891d4776",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Thermal denaturation measurements revealed that many advantageous mutations considerably destabilized DHFR. The \u0394selection coefficients correlate with Tm values (except for active site mutations), and when comparing mutations at the same position, changes in \u0394selection coefficients correlate with changes in Tm. These data indicate that widespread changes in the mutational landscape can be explained by a penalty for destabilizing mutations from Lon expression, leading to extensive activity-stability tradeoffs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39, C42 present stability measurements and their correlation with Lon sensitivity. The Tm measurements (C37) directly demonstrate destabilization. The correlations (C38-C39) mechanistically link destabilization to Lon sensitivity. The conclusion (C42) appropriately integrates stability, activity, and selection data. The exception for active site mutations (C38) is appropriately noted and consistent with their different mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "4a673dcb-a902-4040-8a43-83e653ff3ca7",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spatial analysis revealed that in -Lon conditions, mutational responses are arranged in shells around the hydride transfer site, with the proportion of advantageous mutations increasing with distance. In +Lon selection, this pattern persists but is superimposed with pressure against destabilizing mutations such that no Beneficial positions remain in the protein core.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 describe spatial patterns in the mutational landscape relative to the catalytic site. The shell-like arrangement (C43-C44) is shown in Figure 5 and consistent with functional constraints radiating from the active site. The absence of core Beneficial positions in +Lon (C45) is consistent with the burial analysis (C29-C31) and demonstrates how two constraints (catalytic function and stability) combine.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "4232dcf1-a4f5-4d2b-a419-964486cfb1a5",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "While Lon expression increases both the relative rank of wild-type DHFR and similarity to bacterial DHFR orthologues, substantial differences remain: 384 advantageous mutants still rank better than wild-type even with Lon present, and amino acid preferences in the two selection experiments (\u00b1Lon) are more similar to each other than either is to preferences from bacterial DHFR orthologues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 compare the experimental results to evolutionary sequences. The profile similarity analysis (C47, C49) is described in Methods. The persistence of many advantageous mutations even with Lon (C48) is directly observed. These findings appropriately acknowledge that the experimental system does not fully recapitulate natural selection, setting up the Discussion's consideration of why experimental and evolutionary landscapes differ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "8a6d1808-3c1f-44bf-b0f8-5aad240bfd03",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss that endogenous DHFR is expected to be buffered from mutational impacts: increasing DHFR activity/abundance several-fold above wild-type does not increase fitness, reducing abundance below 30% is required for growth impact, chromosomal DHFR selection showed no strong effects without trimethoprim, and chromosomal DHFR expression is modulated by feedback mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 present context from prior work explaining why the experimental landscape differs from evolution. These are supported by appropriate citations (C52-C55) and represent reasonable inferences about buffering (C51). This contextualizes why advantageous mutations in the engineered system may not be advantageous in nature. The logic is sound and appropriately caveated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "c3c1f17a-4a74-43e4-b5d7-d37227e3e306",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DHFR is an essential enzyme in folate metabolism that reduces dihydrofolate to tetrahydrofolate and progresses through multiple conformational states during catalysis. Prior work suggested DHFR is impacted by cellular constraints such as protein quality control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 provide established background on DHFR function and prior work. C5 is basic biochemical knowledge. C6 is supported by citations and illustrated in supplementary figures. C7 cites prior work that motivated the current study. These provide appropriate scientific context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "f32e4c21-e001-475f-9749-f303771d4dd8",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Product release is rate limiting for wild-type DHFR at neutral pH, and a hyperactive DHFR mutant with 7-fold increased kcat has been previously characterized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 cite prior work to provide mechanistic context for how destabilizing mutations might increase activity by promoting conformational dynamics. These are appropriately cited and provide plausible mechanistic explanation for the subset of destabilizing mutations with increased kcat.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    },
+    {
+      "id": "f8eda030-1a5b-4a4b-98a1-b583f734c94a",
+      "content_id": "6ca4a4bf-5de8-4276-a587-8e013efe41ef",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has shown that chaperones like GroEL in bacteria and Hsp90 in eukaryotes impact mutation effects, with Hsp90 buffering deleterious mutations. Lon inactivation has been shown to increase antibiotic resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 cite prior work on other proteostasis components and Lon's role in antibiotic resistance. These are appropriately cited and provide broader context for the findings. The comparison to chaperones (C57-C58) helps frame Lon's opposite role in constraining rather than buffering mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:44.184294Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "206383a4-c7fc-4d0e-8138-567f6f2ce9de",
+      "result_id": "0e54a7e5-a826-4e85-b82e-d5920c24e901"
+    },
+    {
+      "claim_id": "2447d7ae-4139-4c0e-ba9b-c4080c2ad36e",
+      "result_id": "0e54a7e5-a826-4e85-b82e-d5920c24e901"
+    },
+    {
+      "claim_id": "eecee5ff-e3cd-461e-81ee-58396a84c740",
+      "result_id": "0e54a7e5-a826-4e85-b82e-d5920c24e901"
+    },
+    {
+      "claim_id": "694ae103-894a-43fd-a017-98047a0bec87",
+      "result_id": "0e54a7e5-a826-4e85-b82e-d5920c24e901"
+    },
+    {
+      "claim_id": "4e1d5789-c2c4-4073-9aa0-b7781b457627",
+      "result_id": "0e54a7e5-a826-4e85-b82e-d5920c24e901"
+    },
+    {
+      "claim_id": "c9a271ef-b63f-43d5-8dad-46f141cf6c58",
+      "result_id": "0e54a7e5-a826-4e85-b82e-d5920c24e901"
+    },
+    {
+      "claim_id": "3716c99e-003f-4e5d-ae9c-52efaab6c291",
+      "result_id": "0e54a7e5-a826-4e85-b82e-d5920c24e901"
+    },
+    {
+      "claim_id": "46065e7a-db48-496f-a70f-95bf7aa10a49",
+      "result_id": "0e54a7e5-a826-4e85-b82e-d5920c24e901"
+    },
+    {
+      "claim_id": "b26d5696-f0d9-42e3-ab5b-32ac1e1558cc",
+      "result_id": "0e54a7e5-a826-4e85-b82e-d5920c24e901"
+    },
+    {
+      "claim_id": "a5298bbd-6a45-4807-9404-a06631d6fb5f",
+      "result_id": "0330c281-6b59-4430-8ff5-6393c793be3c"
+    },
+    {
+      "claim_id": "a9a9fd73-1751-4fd7-ada5-a85f74b9b679",
+      "result_id": "0330c281-6b59-4430-8ff5-6393c793be3c"
+    },
+    {
+      "claim_id": "c6ef002f-bb0e-49ec-a5de-1aa00e424508",
+      "result_id": "0330c281-6b59-4430-8ff5-6393c793be3c"
+    },
+    {
+      "claim_id": "812714e1-70d6-4548-bd74-04aa51170130",
+      "result_id": "0330c281-6b59-4430-8ff5-6393c793be3c"
+    },
+    {
+      "claim_id": "9010d300-1352-4f27-a80a-4eb3caa1585b",
+      "result_id": "0330c281-6b59-4430-8ff5-6393c793be3c"
+    },
+    {
+      "claim_id": "ecd5928a-b396-44e1-8ea4-fb9a042eea03",
+      "result_id": "fa243e5e-2d80-48e5-be92-3c4bd6bbedeb"
+    },
+    {
+      "claim_id": "74e38004-dee6-46cd-a004-c88d8faedb0e",
+      "result_id": "fa243e5e-2d80-48e5-be92-3c4bd6bbedeb"
+    },
+    {
+      "claim_id": "6db599e4-009a-46c3-aa59-d12ed3289a5b",
+      "result_id": "fa243e5e-2d80-48e5-be92-3c4bd6bbedeb"
+    },
+    {
+      "claim_id": "cc7c9a0b-3b21-4556-bec0-f5dfa1d3e0b6",
+      "result_id": "fa243e5e-2d80-48e5-be92-3c4bd6bbedeb"
+    },
+    {
+      "claim_id": "65a4ed68-5b30-4aa5-b90a-c1c6d4a07336",
+      "result_id": "fa243e5e-2d80-48e5-be92-3c4bd6bbedeb"
+    },
+    {
+      "claim_id": "0ec60b84-0c2f-4bec-89b8-0f782efedf00",
+      "result_id": "fa243e5e-2d80-48e5-be92-3c4bd6bbedeb"
+    },
+    {
+      "claim_id": "fdc9feb4-6ee3-4d29-8482-6e2a36e148ba",
+      "result_id": "4e495343-7f2a-4b1d-8242-5a1f45903eba"
+    },
+    {
+      "claim_id": "bd24be23-7b5c-48c8-b02d-3ae54202cef3",
+      "result_id": "4e495343-7f2a-4b1d-8242-5a1f45903eba"
+    },
+    {
+      "claim_id": "4d0a153b-4463-4b44-a087-91b212806e45",
+      "result_id": "4e495343-7f2a-4b1d-8242-5a1f45903eba"
+    },
+    {
+      "claim_id": "e1e012e7-9fda-4161-9117-e67a9c35e42e",
+      "result_id": "4e495343-7f2a-4b1d-8242-5a1f45903eba"
+    },
+    {
+      "claim_id": "b70b1b06-0d72-4024-aaf3-091703370e13",
+      "result_id": "4e495343-7f2a-4b1d-8242-5a1f45903eba"
+    },
+    {
+      "claim_id": "690273db-ba50-4784-8856-e81795ffe353",
+      "result_id": "aeaf8c53-2b49-4ff2-bdeb-0b2b3d16f19b"
+    },
+    {
+      "claim_id": "df95384f-c85a-4a2b-bffe-4d3b66134c7c",
+      "result_id": "aeaf8c53-2b49-4ff2-bdeb-0b2b3d16f19b"
+    },
+    {
+      "claim_id": "562e402f-8e4a-4cd3-868e-99eb7ee34056",
+      "result_id": "aeaf8c53-2b49-4ff2-bdeb-0b2b3d16f19b"
+    },
+    {
+      "claim_id": "8ae1c1c8-8aef-4755-b7f9-d8ddd2ca2504",
+      "result_id": "aeaf8c53-2b49-4ff2-bdeb-0b2b3d16f19b"
+    },
+    {
+      "claim_id": "f76bbe40-2e9a-4bb1-afb4-9a41bbf5e6b4",
+      "result_id": "20ba7e47-1176-42a4-8465-139070550bc8"
+    },
+    {
+      "claim_id": "a093916f-4161-4679-91f4-3f578bdd17e0",
+      "result_id": "20ba7e47-1176-42a4-8465-139070550bc8"
+    },
+    {
+      "claim_id": "d2937497-4760-4224-b545-f68b6cf696ca",
+      "result_id": "20ba7e47-1176-42a4-8465-139070550bc8"
+    },
+    {
+      "claim_id": "0f3e35e0-0627-4836-af4b-33c49fc3995b",
+      "result_id": "20ba7e47-1176-42a4-8465-139070550bc8"
+    },
+    {
+      "claim_id": "4de6a29f-d470-4909-a2a0-4b530804ac9c",
+      "result_id": "5efa4d5b-7cf6-4bb1-b1b6-0d0586403ee5"
+    },
+    {
+      "claim_id": "3ee7d8df-787a-49f5-909c-cdb8c86a8258",
+      "result_id": "5efa4d5b-7cf6-4bb1-b1b6-0d0586403ee5"
+    },
+    {
+      "claim_id": "ca0917ac-2d7b-4412-a796-19cffb414956",
+      "result_id": "5efa4d5b-7cf6-4bb1-b1b6-0d0586403ee5"
+    },
+    {
+      "claim_id": "c413a6a6-f0eb-48d9-8856-5500100b0b01",
+      "result_id": "5efa4d5b-7cf6-4bb1-b1b6-0d0586403ee5"
+    },
+    {
+      "claim_id": "baf8c495-0eaa-4284-bacb-8fd8451f375d",
+      "result_id": "5efa4d5b-7cf6-4bb1-b1b6-0d0586403ee5"
+    },
+    {
+      "claim_id": "a09d1ced-7fed-45d2-a3c0-8c5075a346f7",
+      "result_id": "8deb9f95-9f13-40ea-b987-7e0a891d4776"
+    },
+    {
+      "claim_id": "d1c7984d-5515-4d09-ab96-64e3abf42042",
+      "result_id": "8deb9f95-9f13-40ea-b987-7e0a891d4776"
+    },
+    {
+      "claim_id": "a32b56a2-e96d-46a8-99f7-b1f8f6a62f7f",
+      "result_id": "8deb9f95-9f13-40ea-b987-7e0a891d4776"
+    },
+    {
+      "claim_id": "0da38d35-78a8-4c3f-9ec7-e379db23ba8b",
+      "result_id": "8deb9f95-9f13-40ea-b987-7e0a891d4776"
+    },
+    {
+      "claim_id": "9504a9d1-c3c7-4e9b-a6eb-141aa0cc7ad3",
+      "result_id": "4a673dcb-a902-4040-8a43-83e653ff3ca7"
+    },
+    {
+      "claim_id": "6a4fb581-5290-4ad9-8eff-80fbb7fb650b",
+      "result_id": "4a673dcb-a902-4040-8a43-83e653ff3ca7"
+    },
+    {
+      "claim_id": "2f01da89-9a05-4be2-b750-97082f1db4b1",
+      "result_id": "4a673dcb-a902-4040-8a43-83e653ff3ca7"
+    },
+    {
+      "claim_id": "49a4b94c-1a4b-4396-ac83-0c643aa75286",
+      "result_id": "4232dcf1-a4f5-4d2b-a419-964486cfb1a5"
+    },
+    {
+      "claim_id": "eb1384c4-60c9-416f-b4c1-f3a6b09d2ad4",
+      "result_id": "4232dcf1-a4f5-4d2b-a419-964486cfb1a5"
+    },
+    {
+      "claim_id": "66697f79-48a2-43c4-b5e4-07a3a200661d",
+      "result_id": "4232dcf1-a4f5-4d2b-a419-964486cfb1a5"
+    },
+    {
+      "claim_id": "5b234b3f-e90b-4ca3-92b4-b692a93a7142",
+      "result_id": "4232dcf1-a4f5-4d2b-a419-964486cfb1a5"
+    },
+    {
+      "claim_id": "5973d372-082d-4330-a2e3-24af0e5bed4d",
+      "result_id": "8a6d1808-3c1f-44bf-b0f8-5aad240bfd03"
+    },
+    {
+      "claim_id": "2fd2b1d5-51ab-452d-aa13-8bac078320fb",
+      "result_id": "8a6d1808-3c1f-44bf-b0f8-5aad240bfd03"
+    },
+    {
+      "claim_id": "62d89675-4d22-4d3d-b9f5-0bedcdcde0ff",
+      "result_id": "8a6d1808-3c1f-44bf-b0f8-5aad240bfd03"
+    },
+    {
+      "claim_id": "8ca02cc7-c7f7-4d65-837a-04aa47c96bf9",
+      "result_id": "8a6d1808-3c1f-44bf-b0f8-5aad240bfd03"
+    },
+    {
+      "claim_id": "9c970b95-54d3-4fa4-ace7-f0bcd080b516",
+      "result_id": "8a6d1808-3c1f-44bf-b0f8-5aad240bfd03"
+    },
+    {
+      "claim_id": "f034a972-0182-44d6-9d91-177265c41067",
+      "result_id": "c3c1f17a-4a74-43e4-b5d7-d37227e3e306"
+    },
+    {
+      "claim_id": "ead945d9-627a-4007-b21d-219ac4edc36b",
+      "result_id": "c3c1f17a-4a74-43e4-b5d7-d37227e3e306"
+    },
+    {
+      "claim_id": "f263bd73-455d-4299-a096-9d548f64ce6e",
+      "result_id": "c3c1f17a-4a74-43e4-b5d7-d37227e3e306"
+    },
+    {
+      "claim_id": "2e3af406-dbea-4d80-a7b4-d6156d10b29e",
+      "result_id": "f32e4c21-e001-475f-9749-f303771d4dd8"
+    },
+    {
+      "claim_id": "d7241138-1a55-4f29-a86c-50591ca4dd04",
+      "result_id": "f32e4c21-e001-475f-9749-f303771d4dd8"
+    },
+    {
+      "claim_id": "45976c80-0213-4645-90c5-d96d19316c07",
+      "result_id": "f8eda030-1a5b-4a4b-98a1-b583f734c94a"
+    },
+    {
+      "claim_id": "ae4c7dc2-1327-4130-bab9-a0a9a8bf6ae8",
+      "result_id": "f8eda030-1a5b-4a4b-98a1-b583f734c94a"
+    },
+    {
+      "claim_id": "50421bb8-e0fa-460c-92c3-c7b782185398",
+      "result_id": "f8eda030-1a5b-4a4b-98a1-b583f734c94a"
+    }
+  ],
+  "comparisons": []
+}

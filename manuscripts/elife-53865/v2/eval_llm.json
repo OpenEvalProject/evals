@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The HD_CFD library is a large-scale resource containing 2622 plasmids and 1739 fly stocks targeting 1513 unique genes, with a focus on kinases, phosphatases, and transcription factors. Each line expresses two sgRNAs under Gal4/UAS control, achieving coverage of 72% of transcription factors, 87% of kinases, and 68% of phosphatases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C42-C45 provide consistent, specific numerical data about the library composition and coverage. The numbers are stated explicitly and represent direct counts of generated resources, making this a well-documented descriptive result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Conditional CRISPR mutagenesis using the pCFD6 system is robust across multiple target genes and tissues. The system achieves efficient, spatially restricted mutagenesis in wing imaginal discs, midgut, and germline, with mutations transmitted to offspring and producing expected phenotypes. CRISPR mutagenesis of Notch shows more complete penetrance than RNAi, inducing overgrowth in both male and female midguts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C19-C27 collectively demonstrate tissue-specific mutagenesis across multiple genes (arm, Notch, neur, ct, Ras85D, dpp) and tissues with appropriate controls and phenotypic validation. The comparison with RNAi (C21-C22) provides additional validation. Sequencing data (C24-C26) confirms efficient germline transmission of mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A novel UAS-uCas9 series using upstream ORFs of varying length allows tunable Cas9 expression to balance gene editing activity and toxicity. Cas9 protein levels inversely correlate with uORF length, reducing apoptosis while maintaining full on-target editing activity at moderate expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 provide systematic characterization showing that uORF length inversely correlates with Cas9 expression (C32), reduces toxicity (C33), while maintaining editing efficiency (C34). The experimental design includes appropriate controls and quantification of both toxicity and activity, supporting the conclusion that this system balances these parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Spatial mutagenesis patterns can extend beyond current Gal4 expression domains, reflecting expression history. Gal80ts provides incomplete temporal control, while FLP/FRT-based systems enable precise temporal induction of Cas9 expression with tight spatial restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 demonstrate that mutagenesis patterns reflect Gal4 expression history (C37) and that Gal80ts shows incomplete suppression (C38-C39). The FLP/FRT system (C40-C41) provides an alternative with validated spatial restriction. These findings are important for proper interpretation and design of conditional CRISPR experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C8"
+    ],
+    "result": "The vast majority (26/28, 93%) of HD_CFD sgRNA lines mediate efficient gene editing on both target sites, with 23/28 (82%) achieving at least 50% editing on one site. Only one line showed no detectable editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide sequencing-based validation of editing efficiency across a random sample of 28 lines. The ICE analysis provides quantitative estimates of editing rates. The high success rate (93% showing editing on both sites) supports claim C8 about the overall efficiency of the library.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C88",
+      "C89"
+    ],
+    "result": "A large-scale lethality screen of 639 HD_CFD lines represents the largest fully transgenic CRISPR screen in any metazoan organism. The screen revealed 259 putative essential genes, including 56 poorly characterized genes, with 79% of known essential genes correctly identified as lethal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C50-C55 provide comprehensive screen statistics. The 79% true positive rate for known essential genes (C53) validates the approach. Claims C88-C89 highlight the discovery aspect. The scale (639 lines) and systematic nature support the claim of being the largest such screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "False-negative results in the lethality screen are enriched for genes highly expressed in early embryonic development and often arise from mRNA perdurance rather than inactive sgRNAs, as evidenced by efficient editing detected in 3/3 sequenced false-negative lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide a mechanistic explanation for false negatives. The sequencing data (C57) demonstrating efficient editing in false-negative lines strongly supports the perdurance hypothesis (C58) over sgRNA inactivity. The enrichment analysis (C56) provides additional supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Among 54 lines targeting genes annotated as viable, 48 (89%) correctly produced viable offspring, with only 5 (9%) false positives. Two false-positive lines target the same gene (Blos1) with independent sgRNAs, arguing against off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 demonstrate high specificity (89% true negatives) of the screen. The observation that two independent sgRNA lines targeting Blos1 both show lethality (C62) argues against off-target effects and suggests either incorrect annotation or context-dependent essentiality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The screen identified novel essential genes including CG9890 (55% similar to human ortholog) and CG6470 (Drosophila-restricted). Tissue-specific mutagenesis of dpp/TGF\u03b2 signaling components faithfully recapitulates known loss-of-function phenotypes in wing morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 identify specific novel essential genes with evolutionary context. Claims C67-C68 demonstrate phenotypic validation through tissue-specific mutagenesis, showing that the library produces expected phenotypes. This validates both the library's utility and the biological relevance of the identified genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C69",
+      "C70",
+      "C90",
+      "C91"
+    ],
+    "result": "Less than 10% of HD_CFD lines produce insufficient on-target mutations, comparing favorably to RNAi libraries where the majority of lines reduce mRNA by less than 75%. CRISPR mutagenesis reveals phenotypes that are more penetrant than or missed entirely by RNAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C90-C91 establish the performance benchmark against RNAi. Claims C69-C70 cite recent studies demonstrating CRISPR's advantages. The <10% failure rate (C71) is inferred from sequencing and phenotypic data and represents a significant improvement over RNAi's limitations (C90-C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CRISPR with transgenic components is effective across diverse cell types including postmitotic neurons and endoreplicating cells. Sequencing data showing >90% mutation rates in whole-fly DNA suggests CRISPR is effective in most cells of the animal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 cite published evidence for effectiveness in specialized cell types. Claims C74-C75 provide direct sequencing evidence for broad effectiveness. However, the inference that >90% editing in bulk DNA means effectiveness in \"most cells\" (C75) assumes relatively uniform editing across tissues, which may not be fully validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The HD_CFD library differs from other transgenic sgRNA libraries (NIG, TRIP, Weizmann) in encoding two sgRNAs per transgene and using conditional UAS vectors rather than ubiquitous U6 promoters. This design provides superior spatial/temporal control, though U6 promoters offer more consistent sgRNA expression with weak Gal4 drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C87 systematically compare library designs. The key differences (two sgRNAs vs. one, UAS vs. U6 promoters) are clearly stated with supporting citations. Claims C82-C83 cite prior work demonstrating advantages of UAS-based sgRNA expression. The trade-offs are acknowledged (C85-C87), and pCFD6.FRT is presented as offering flexibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work establishes that RNAi has limitations including incomplete penetrance and off-target effects, only 20% of Drosophila genes have mutant alleles, and tissue-specific Cas9 expression often shows leaky expression. Conditional expression of both Cas9 and sgRNAs is necessary for tight control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 summarize prior knowledge and published work that motivates the current study. All claims are supported by appropriate citations. These establish the scientific context and rationale for developing the HD_CFD library and conditional CRISPR system.",
+    "result_type": "MINOR"
+  }
+]

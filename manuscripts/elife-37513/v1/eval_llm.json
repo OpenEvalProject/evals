@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "DNA methylation is involved in development, disease, environmental responses, and various phenotypes including age, cancer, type II diabetes, and Alzheimer's disease, as demonstrated by numerous EWAS studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C12-C17 are all supported by citations to prior published work. These claims establish the biological context and motivation for the study by referencing established literature on DNA methylation's role in various biological processes and disease states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Current methods for assaying methylation-dependent regulatory activity are limited in throughput, with existing approaches either lacking locus-specific information or only testing single loci, while large-scale analyses have been restricted to in vitro assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by citations to prior work (Maeder et al. 2013, Christman 2002, Rivenbark et al. 2012, Liu et al. 2016, and others) and Table 1, which documents the limitations of existing methods. This establishes the need for the mSTARR-seq method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The pmSTARRseq1 vector was engineered to be CpG-free with an R6K\u03b3 origin of replication, eliminating bacterial Dam/Dcm methylation and avoiding technical confounds from the bacterial origin acting as a promoter or inducing interferon responses in K562 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C78-C81 are supported by experimental design details, computational promoter prediction analysis, qPCR validation data (Figure 1\u2014figure supplement 1), and citations. The vector design addresses known technical issues with previous reporter assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "mSTARR-seq successfully assayed approximately 750,000 unique DNA fragments covering 1.81 million CpG sites, representing 57% of expected MspI fragments and 13% of the K562 euchromatic genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C25-C28 are supported by experimental sequencing data and genomic coverage analysis. The scale and coverage are well-documented and comparable to or exceeding other high-throughput reporter assays (Figure 1\u2014figure supplements 2 and 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Among analyzed regions, 19,703 showed enhancer activity, with 2,969 (15%) exhibiting significant methylation-dependent activity; 86% of MD enhancers were more active when unmethylated and 14% when methylated, with only 4 of 325 CpG-free regions showing MD activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by linear model analyses with appropriate FDR correction (FDR < 10%). The low rate of MD activity in CpG-free regions (C33) serves as a negative control supporting low false discovery rates. Statistical methods are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "mSTARR-seq identified enhancers are enriched for ENCODE enhancer chromatin states in K562 cells, and mSTARR-seq activity explains 86.0% and 76.1% of variance in luciferase assays for enhancer detection and MD activity, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by Fisher's exact tests comparing to ENCODE annotations (Figure 2A) and validation experiments using conventional luciferase assays on 18 candidate regions (Figure 2C). The high R\u00b2 values demonstrate strong concordance between methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "MD enhancers have higher CpG densities and contain more CpG sites than non-MD enhancers, but CpG density explains only a small amount of variation in methylation dependence magnitude (Spearman's rho = 0.284).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by statistical comparisons (Wilcoxon-signed rank test, p < 10\u207b\u00b9\u2075) and correlation analysis shown in Figure 3C-D. The modest correlation indicates that other factors beyond CpG density contribute to MD activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A random forests model predicted MD regulatory element activity with 78.8% accuracy using 26 significant features including CpG density, chromatin accessibility, endogenous methylation levels, and TF binding sites containing CpG motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C40-C44 are supported by random forests classification analysis with permutation-based feature importance testing (FDR < 10%). The model demonstrates that MD activity is partially predictable from sequence and chromatin features (Figure 3E-F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Distinct transcription factors are associated with activity in unmethylated versus methylated DNA, with 32 TF motifs enriched in MD enhancers suppressed by methylation; motif enrichment significantly correlates with SELEX-based estimates of methylation-dependent binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C45-C47 are supported by HOMER motif enrichment analysis (FDR < 1%) and comparison to independent SELEX data from Yin et al. 2017 (R\u00b2 = 0.342, p = 1.33 \u00d7 10\u207b\u2076 for unmethylated-preferring TFs; R\u00b2 = 0.113, p = 0.028 for methylated-preferring TFs), shown in Figure 4A and Figure 5A-B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "GATA family transcription factors are strongly overrepresented (15.9x enrichment) among TF motifs associated with increased activity when methylated, consistent with their role as pioneer factors that preferentially bind methylated DNA; methylated fragments with GATA binding sites showed demethylation during experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C70-C72 are supported by hypergeometric tests (p=1.74\u00d710\u207b\u2078), analysis of DNMT knockout data (Figure 4C), bisulfite sequencing showing demethylation at GATA sites, and citations to prior work (Hu et al. 2013, Zhu et al. 2016). The convergent evidence from multiple approaches strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Post-transfection, CpG sites in human genome fragments partially converged toward endogenous K562 methylation levels, with 23.1% of unmethylated sites gaining methylation and 15.7% of methylated sites losing methylation; GATA family TFs showed consistent evidence for driving demethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C53-C61 are supported by bisulfite sequencing data (Figure 4\u2014figure supplement 1) showing correlations with endogenous methylation (rho = 0.476 and 0.223 for unmethylated and methylated conditions) and locus-specific analysis at TF binding sites. GATA family enrichment among top demethylating TFs (6.7-fold, p=3.60\u00d710\u207b\u2074) supports the pioneer TF hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "MD regulatory elements predict methylation-gene expression relationships across 1,202 individuals, with 1.6-fold enrichment among sites showing strong negative correlations; within-individual correlations are strong (mean rho = -0.152) but across-individual correlations are near zero (mean rho = 0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C62-C65 are supported by analysis of monocyte data from Reynolds et al. 2014, with Fisher's exact test showing significant enrichment (log2odds = 0.186, p=4.967\u00d710\u207b\u2078) in MD enhancers. This demonstrates the functional relevance of mSTARR-seq findings to population variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "In IFNA-challenged K562 cells, increased enhancer activity was significantly correlated with loss of DNA methylation at individual CpG sites (rho = 0.043, p=0.025), and IFNA effect magnitude predicted demethylation versus maintenance (p=0.043, R\u00b2 = 0.071).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 are supported by correlation and logistic regression analyses of IFNA experiment data. However, the effect sizes are modest (rho = 0.043, R\u00b2 = 0.071) and the correlation was not significant at the region level (p=0.687). While statistically significant, the biological significance and reproducibility of these weak correlations require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C68",
+      "C84"
+    ],
+    "result": "Not all regulatory elements are functionally methylation-dependent; MD activity is less common than methylation-independent activity in the human genome, with only 15% of enhancers showing MD activity in K562 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C68, and C84 are supported by the experimental finding that only 2,969 of 19,703 enhancers (15%) showed MD activity. This is a key conclusion of the study with important implications for interpreting EWAS results. The recommendation that functional importance should be tested empirically (C84) is a reasonable inference from this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C73"
+    ],
+    "result": "Both sequence characteristics (CpG density) and TF sensitivity to methylation predict MD elements; mSTARR-seq isolates the effects of DNA methylation alone by testing episomal constructs, identifying elements where methylation changes are sufficient to causally alter gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C73 are supported by the random forests analysis and citations to proposed models (Domcke et al. 2015, Sch\u00fcbeler 2015). The episomal nature of the assay is a logical strength that isolates methylation effects from chromatin context, though this is also a limitation (acknowledged by the authors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The effects of DNA methylation on gene expression are cell-type-dependent and may vary depending on environment, genotype, or species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by citations to multiple studies (Jirtle and Skinner 2007, Zhang and Meaney 2010, Hernando-Herraez et al. 2013, 2015, Banovich et al. 2014). These claims provide context for the study's findings and acknowledge limitations of testing in a single cell type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Power to detect enhancer activity increased with larger query fragment sizes, and the current dataset is more sensitive to strong enhancers than weak enhancers, likely missing some true weak or weakly MD enhancers after FDR correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by analyses shown in Figure 2B, Figure 2\u2014figure supplement 3, and Figure 3\u2014figure supplement 1. This is an important acknowledgment of the method's limitations and suggests that the reported MD enhancers represent a conservative estimate.",
+    "result_type": "MINOR"
+  }
+]

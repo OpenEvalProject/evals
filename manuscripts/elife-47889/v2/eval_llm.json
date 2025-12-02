@@ -1,0 +1,482 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The Tasic 2018 single-cell RNA-seq dataset comprises 22,439 isolated neurons from mouse neocortex, sampled from two cortical areas (VISp and ALM), with enrichment for GABAergic neurons resulting in roughly equal proportions of GABAergic (47%) and glutamatergic (53%) neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C70-C74 provide consistent, explicit descriptions of the dataset composition, sampling strategy, and basic characteristics. The data source is clearly identified, sample sizes are specified, and the enrichment strategy is acknowledged. These are straightforward descriptive claims about the dataset used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Among 18 select NPP genes, Npy, Sst, Vip, and Tac2 rank as the top four by peak FPKM values, with eleven genes ranking in the top percentile and all 18 ranking in the top quintile across all protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C81-C84 are directly supported by Table 1 data showing explicit rankings and percentile values for NPP gene expression. The rankings are clearly stated and the data presentation is straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C79"
+    ],
+    "result": "Very high abundance of NPP transcripts suggests that neuropeptide precursor proteins could be synthesized at very high rates, potentially indicating robust secretion of neuropeptide products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C7 make inferential leaps from mRNA abundance to protein synthesis rates and then to secretion. While the logic is reasonable, this inference chain lacks direct experimental validation of protein levels or secretion rates. The authors acknowledge this is a 'first approximation' and 'might be construed' language indicates uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C87"
+    ],
+    "result": "97% of sampled cortical neurons express at least one NPP gene at >1 CPM, and 80% express at least one NPP gene at >1,000 CPM, which may be consistent with the proposition that every cortical neuron is peptidergic when accounting for technical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by the 'Max NPP Gene' curve analysis in Figure 1A. The authors appropriately acknowledge technical limitations (C87) including transcriptional pulsatility and stochastic sampling, treating the percentages as lower limits. The cautious language ('may be consistent with') is appropriate given these limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C88",
+      "C89"
+    ],
+    "result": "NPP gene expression profiles are highly similar between VISp and ALM (\u03c1 = 0.972, p<1.72E-11), suggesting these patterns have strong connections to conserved features of cortical function rather than ephemeral variables like activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C88-C89 are supported by statistical analysis showing high correlation between areas. The inference about functional conservation is reasonable given the stark functional differences between visual and motor cortex, though alternative explanations (e.g., shared developmental programs) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C90"
+    ],
+    "result": "The modal number of co-expressed NPP genes is two in VISp and five in ALM, with distributions showing broad plateaus and substantial tails, and strong similarities between the two areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C90 are directly supported by Figure 1C data showing co-expression distributions. The modal values and distribution characteristics are explicitly stated and visually evident in the figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "98% of sampled cortical neurons express at least one NP-GPCR gene at >1 CPM, and 78% express at least one NP-GPCR gene at >100 CPM, which may be consistent with every cortical neuron expressing at least one NP-GPCR gene cognate to a cortically expressed NPP gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 parallel the NPP gene analysis and are similarly supported by the 'Max NP-GPCR Gene' curve in Figure 2A. The same technical caveats apply, and the authors use appropriately cautious language ('may be consistent with').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C97"
+    ],
+    "result": "NP-GPCR gene expression profiles are strongly similar between VISp and ALM (\u03c1 = 0.959, p<2.2E-16), with modal co-expression of six genes in both areas, suggesting functional importance of these conserved patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C97 are supported by statistical analysis and Figure 2B-C data. The correlation is strong and statistically significant, and the co-expression patterns are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Individual neurons commonly co-express cognate NPP/NP-GPCR pairs, with this patterning highly conserved between VISp and ALM, raising the possibility of cell-autonomous autocrine feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by Figure 2\u2014figure supplement 1 data. The observation of co-expression is documented, though the functional interpretation regarding autocrine feedback remains speculative and would require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Expression of all 47 NP genes is highly specific to particular neuron types, with CPM levels varying by factors exceeding 10,000 for NPP genes and 1,000 for NP-GPCR genes. Every neuron type expresses multiple genes from both categories, with GABAergic neurons showing more prolific NPP expression while glutamatergic neurons may be more prolific NP-GPCR expressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 are directly supported by the heatmaps in Figure 3. The type-specificity, expression level variations, and differential patterns between GABAergic and glutamatergic neurons are clearly visible in the data presentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The 47 NP genes achieve exceptional neuron type classification performance (average RI = 0.925, 62% correct at type level), significantly outperforming randomly selected gene sets and nearly matching 47 differentially expressed genes selected with prior taxonomic knowledge, demonstrating a fundamental connection between neuropeptide gene expression and neuron type identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C38 are supported by rigorous autoencoder analysis with appropriate statistical comparisons (Figure 4). The methodology is sound, including proper controls (random gene sets, expression-matched sets) and cross-validation. The conclusion about the connection to neuron type identity is well-justified by the data, though the mechanistic basis remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "NPP and NP-GPCR expression profiles show very strong similarities between VISp and ALM, particularly for GABAergic types, with high correlations (NPP: \u03c1 = 0.974, p<2.2e-16; NP-GPCR: \u03c1 = 0.877, p<2.2e-16) indicating robust connection between NP gene expression and cortical neuron differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by Figure 5 data and statistical analysis. The correlations are strong and highly significant. The interpretation regarding neuron differentiation is reasonable though not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The 18 NPP and 29 NP-GPCR genes comprise 37 cognate pairs predicting 37 distinct peptidergic neuromodulation networks, with neuropeptide diffusion distances suggesting local signaling within but not between cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by Table 3 enumeration of cognate pairs. Claim C43 regarding diffusion distances relies on prior knowledge cited in the Introduction and represents a reasonable assumption, though direct experimental validation of diffusion distances in cortex is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The 37 cognate pairs cumulatively predict coupling that densely tiles the entire neuron-type coupling matrix, with predictions highly conserved between VISp and ALM. All four E-I quadrants show coupling from all three G\u03b1 families, with some family predominance within quadrants and evidence for coincident signaling from multiple G\u03b1 families at individual intersections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by the ISQ maps in Figure 7. The dense tiling, conservation between areas, and G\u03b1 family distributions are clearly visible in the data. However, these are predictions based on transcript co-expression rather than demonstrated functional coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Transcripts of NPP and NP-GPCR genes are highly abundant in all or nearly all cortical neurons, with individual neurons expressing diverse subsets from palettes of 18 NPPs and 29 NP-GPCRs comprising 37 cognate pairs, enabling specific testable predictions regarding peptidergic neuromodulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 represent the core findings summarized in the Abstract. These are well-supported by the collective evidence from the manuscript, though the functional predictions remain to be experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript establishes background knowledge about neuromodulation, neuropeptides, GPCRs, and the gap in comprehensive single-cell expression data that motivated this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C69 represent well-established background knowledge supported by appropriate citations. The characterization of the literature gap (C69) is reasonable and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study used FPKM for cross-gene comparisons and CPM for within-gene comparisons across cells and types, with gene selection based on high expression (top quintile pFPKM) and cognate pairing to increase likelihood of active secretion and local paracrine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 describe methodological choices that are clearly explained and justified. The rationale for using different metrics for different comparisons is sound, and the gene selection criteria are explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "NPP and NP-GPCR genes show wide ranges of expression percentages across the sampled population, with NP-GPCR pFPKM values lower than NPP genes as expected for durable cellular components versus secreted products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 and C93-C96 are supported by data in Figures 1A and 2A and Tables 1-2. The interpretation regarding the difference between NPP and NP-GPCR expression levels (C94-C95) is reasonable based on known biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The 29 NP-GPCR genes encode receptors substantially selective for neuropeptide products of the 18 NPP genes, selected for analysis due to cognate pairing implying local intracortical signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 describe the relationship between the gene sets and the selection rationale. This is clearly documented in Table 2 and the Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The Tasic 2018 neurotaxonomy enables prediction of protein parts lists for neurons and offers prospects for experimental testing. The 115 neuron types show unique NP gene expression patterns with significant within-subclass variation justifying fine taxonomic resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 are supported by the analysis in Figure 3. The within-subclass variation (C102-C103) is quantified in Figure 3C and justifies the use of the full 115-type taxonomy rather than coarser subclass groupings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Autoencoder analysis demonstrates that both highly expressed genes and the 47 NP genes produce latent space representations that correspond well to neuron types, with the methodology validated through appropriate resolution index metrics and cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C114 describe the autoencoder methodology and validation. The approach is technically sound with appropriate metrics (resolution index) and validation procedures. The tight clustering in latent space (Figure 4A-B) supports the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Transcriptomic predictions of local peptidergic signaling are particularly compelling for GABAergic neurons due to their local anatomy, while glutamatergic neurons may signal both locally and remotely. The data suggest a 'prevailing wind' of signaling from GABAergic to glutamatergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 integrate the transcriptomic data with anatomical knowledge. The reasoning is sound, though the 'prevailing wind' interpretation (C119) is somewhat speculative and would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "The NP network predictions are consistent with prior work on peptidergic neuromodulation, but single-cell and neurotaxonomic methods now enable specific, testable predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 appropriately position the work relative to prior literature. The novelty lies in the specificity and testability of predictions enabled by single-cell resolution and neurotaxonomic framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The predictions are based on mRNA transcripts and depend on assumptions about protein synthesis, neuropeptide diffusion, and receptor signaling. These substantial uncertainties are acknowledged and will define paths for future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 represent appropriate acknowledgment of the study's limitations. The authors clearly state the inferential leaps required and acknowledge substantial uncertainties, which is scientifically responsible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Experimental validation will be essential and is now feasible using emerging tools for neuron-type-specific access and functional analysis, including genetic tools, pharmacological agents, optophysiological methods, and novel sensors for neuropeptide signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C141 outline a comprehensive experimental validation strategy. The suggested approaches are appropriate and well-supported by citations to relevant methodological advances. This represents a thoughtful roadmap for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The results suggest densely multiplexed peptidergic networks could play significant roles in cortical homeostasis, modulation, and plasticity. Understanding these networks will require theoretical and computational approaches, particularly regarding credit assignment and modulated plasticity, integrated with synaptic network data in a common neurotaxonomic framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C155 present a thoughtful discussion of the implications for understanding cortical function and learning. The connections to credit assignment and STDP are speculative but well-reasoned. The need for integrative frameworks (Figure 8) is well-articulated, though the lack of synaptic connectivity data is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The study has implications for neuropsychiatric drug development. Neuropeptide signaling systems may be more neuron-type-specific than monoamines, potentially offering advantages for drug targeting. The uncharted complexity of NPP/NP-GPCR expression may have hindered both drug discovery and experimental reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C165 present reasonable speculation about pharmaceutical implications. However, the suggestion that complexity hindered drug discovery (C158) is not directly supported by data in this study. The potential advantages of NP-targeting drugs (C161-C162) are plausible but remain to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Single-cell RNA-seq with transcriptomic neurotaxonomies reveals highly structured and abundant expression of cortical NPP and NP-GPCR genes, suggesting local neuropeptidergic signaling networks of previously unrecognized abundance and density may be involved in cortical homeostasis, modulation, and plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C171 represent the concluding synthesis of the work. The characterization of the findings as revealing 'previously unrecognized abundance and density' is justified. The suggestion about functional roles (C171) is appropriately cautious ('may involve') given that functional validation is still needed.",
+    "result_type": "MAJOR"
+  }
+]

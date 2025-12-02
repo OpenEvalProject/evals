@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C2",
+      "C19",
+      "C20"
+    ],
+    "result": "Under full adaptation to environmental statistics, the encoding rule that maximizes mutual information is identical to the rule that maximizes decision accuracy in two-alternative forced choice tasks. The optimal noise distribution is independent of the number of samples n and necessarily introduces stochasticity into systems using binary codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C2, C19, and C20 collectively establish theoretical results showing equivalence between information maximization and accuracy maximization under full adaptation, with formal derivations in Appendices 1-3. The independence of optimal noise from n (C19) and necessity of noise in binary coding systems (C20) are mathematically derived consequences of the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The encoding rule that maximizes expected reward differs from the rule that maximizes accuracy, leading to a slight loss of information transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by mathematical derivations comparing Equations 3 and 9, with empirical support from Figure 2c showing information loss. The theoretical distinction between fitness and accuracy maximization is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The relationship between prior distribution and discriminability thresholds (d \u221d 1/f(v)) holds empirically across several sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by derivations in Appendix 4 and empirical evidence across sensory modalities. The theoretical prediction matches known psychophysical relationships, providing validation for the efficient coding framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C49"
+    ],
+    "result": "Decision by Sampling (DbS) represents a special case of the efficient sampling framework that achieves near-optimal performance while using minimal environmental information (m=1), and automatically adapts encoding to changes in frequency distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C49 are supported by theoretical analysis in Appendices 6-7 and numerical simulations in Figure 2e. The demonstration that DbS achieves near-optimal performance with radically reduced m provides strong support for this as an efficient heuristic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C35",
+      "C36"
+    ],
+    "result": "In Experiment 1, human participants adapted to contextual distributions in numerosity discrimination using a DbS strategy rather than optimal accuracy or reward maximization strategies. DbS was strongly favored in 6/7 participants (perceptual) and 7/7 (value), with stable performance across days and superior predictions compared to logarithmic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, C30, C35, and C36 are supported by hierarchical Bayesian model comparison (Figure 4), individual-level analyses (Figure 4\u2014figure supplement 1), stability checks (Figure 4\u2014figure supplement 2), and model comparisons with logarithmic encoding. The convergence of population and individual-level results provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Experiment 1 tested 7 participants over 4 consecutive days (~2400 trials) in a numerosity discrimination task with two conditions: perceptual (rewarding accuracy) and value (rewarding number of dots selected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C53-C58 provide consistent descriptions of Experiment 1 design. The experimental parameters are clearly specified and internally consistent across the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Experiments 2 and 3 replicated key findings with modified task structures: Experiment 2 used threshold-based point accumulation (n=6, ~2560 trials), and Experiment 3 used a different prior distribution shape parameter (\u03b1=1 vs \u03b1=2, n=7, 3 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe experimental designs that are internally consistent and supported by results showing DbS remains favored across paradigm variations (Figure 4). The replication strengthens the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43"
+    ],
+    "result": "Participants adapted the shape parameter \u03b1 of their internal prior distribution to match experimental distributions, with faster adaptation when the target was closer to a hypothesized natural log-scale prior (\u03b1=2.58). Experiment 3 showed slower but continued adaptation toward \u03b1=1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C43 are supported by parameter recovery analyses (Figure 5a), adaptation dynamics (Figure 5c), and model comparisons (Figure 5e,f). The differential adaptation rates between Experiments 1-2 and 3 provide evidence for prior adaptation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Experimental controls included eye-tracking to ensure fixation (only 0.5% trials canceled), controlled dot sizes (0.42\u00b0-1.45\u00b0 visual angle), and counterbalancing of average dot size vs. total area across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe methodological controls that are standard for numerosity experiments. The low trial cancellation rate (C65) indicates successful implementation of fixation control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C70"
+    ],
+    "result": "All sampling models and the logarithmic model have equivalent degrees of freedom, differing only in their encoding rules while sharing identical choice structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C70 establish that model comparisons are fair, as all models have the same complexity (n for sampling models, \u03c3 for log model). This is critical for interpreting the model comparison results favoring DbS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Statistical analyses used hierarchical Bayesian modeling with MCMC (JAGS), 50,000 burn-in + 50,000 samples per chain (3 chains), confirmed convergence (R\u0302<1.05), and model comparison via leave-one-out cross-validation. Model fits excluded the first 25% of daily trials to allow prior adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C74-C78 describe rigorous statistical methods with appropriate convergence diagnostics and model comparison techniques. The exclusion of early trials (C71) is justified for studying adapted behavior, though this choice should be noted when interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Noise is not merely a source of performance degradation but a necessary feature of systems encoding information via binary codes, potentially explaining discrete coding states observed in LIP neurons and optimizing information transmission in neural population coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present theoretical implications supported by the optimal noise derivations (Equation 6) and citations to relevant neurophysiological findings. The connection to LIP neurons (C48) is appropriately framed as speculative but theoretically motivated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Sampling from memory may be metabolically less costly than optimal adaptation requiring complex neuroplastic changes, providing an efficient mechanism for quick learning and generalization without significantly sacrificing performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C52 present a plausible explanation for why DbS is favored, supported by citation to metabolic cost literature (C50) and reward learning studies (C51). However, C50 is explicitly speculative, and direct evidence for metabolic cost differences is not provided in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C4"
+    ],
+    "result": "Human decisions are inherently imprecise due to finite information, and understanding decision behavior requires accounting for biological restrictions on information coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C4 frame the research question and conclusion. They are supported by the entire body of theoretical and empirical work showing that biological constraints on information coding shape decision behavior in predictable ways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work has established efficient coding principles in early sensory processing, discrete stochastic neural coding, decision by sampling theory, and Weber's Law in numerosity perception, with connections to economic decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 accurately summarize relevant prior literature with appropriate citations. These establish the theoretical and empirical context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The brain is a metabolically expensive inference machine that has evolved to exploit statistical regularities to make productive use of limited resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 present well-established principles from neuroscience and efficient coding theory, supported by appropriate citations to foundational work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The prior distribution shape parameter was set to \u03b1=2 for Experiments 1-2 and \u03b1=1 for Experiment 3, enabling tests of adaptation dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 specifies a key experimental manipulation that is clearly described and used to test adaptation hypotheses in Figure 5. This design choice is well-justified for studying prior adaptation.",
+    "result_type": "MINOR"
+  }
+]

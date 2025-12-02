@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Two distinct viral types (High and Low) of DiNV were identified that differ 100-fold in viral titer, defined by 11 strongly linked SNPs across the viral genome. These SNPs are significantly associated with viral titer, with titer increasing as the number of High type SNPs increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 provide strong statistical evidence (FDR < 0.01, permutation tests p<0.001) for the association between 11 linked SNPs and viral titer. The 100-fold difference in titer between types (C2, C18) is directly demonstrated in Figure 1B. The linkage analysis (C19) and permutation testing (C68-C70) address potential false positives. Sample sizes are adequate (C14) and multiple testing corrections were applied (C16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The High viral type evolved recurrently at least four times independently: three times in different Arizona D. innubila populations and once in D. falleni from Georgia. Phylogenetic and population genetic analyses show the High type clusters within each population with population-specific background SNPs, and mutations appear in a similar order across populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 and C82-C84 provide converging phylogenetic, population genetic, and ancestral reconstruction evidence for recurrent evolution. The presence of 341 population-specific background SNPs shared between High and Low types within populations (C46, C83) strongly supports independent origins rather than migration. Demographic analysis (C40-C41) provides a plausible timeframe. The similar order of mutation appearance (C47) further supports convergent evolution on an epistatic landscape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C74"
+    ],
+    "result": "The High type virus suppresses the host immune system more effectively than the Low type, with reduced expression of Toll-regulated and JAK-STAT regulated antimicrobial peptides, and increased expression of viral virulence factors including gp83.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide differential expression data with appropriate statistical corrections (FDR-corrected p-value<0.01) showing reduced immune gene expression and increased viral virulence factor expression in High type infections. The data are normalized for viral titer (FPKM/titer for viral genes), which is critical for comparing expression between types with different titers. The findings are consistent with known functions of gp83 (C72) and show dose-response relationships (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The High type virus has significantly increased virulence compared to the Low type, as demonstrated by experimental infections showing reduced survival and higher viral titers over time. Viral titer is established as a reasonable proxy for virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide experimental infection data with appropriate statistical tests (Cox Hazard Ratios, GLM) showing that High type infections result in significantly lower survival and higher titers. The experiments controlled for initial viral concentration by diluting samples to equal titers before infection. The correlation between titer and survival (C31) validates titer as a virulence proxy (C75). However, the Low type showed non-significant reduction in survival compared to controls (C77), which somewhat weakens the virulence claim for the Low type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C62",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C86"
+    ],
+    "result": "Recombination is relatively common in DiNV with 307 potential recombination events detected genome-wide, but there is no evidence of recombination between complete High and Low types or between populations, despite the 11 High type SNPs being spread across the 155kb genome yet nearly perfectly linked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C78-C81 provide multiple lines of evidence for recombination (GARD, four-allele test, linkage disequilibrium analysis) while demonstrating the absence of recombination between complete types and populations. The paradox of genome-wide recombination yet perfect linkage of the 11 focal SNPs (C39) is explained by strong selection maintaining the High type haplotype (C86). The methods used (GARD, four-allele test) are appropriate for detecting recombination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Simulations demonstrate that the High type multilocus genotype can evolve and fix within 6000 generations (~1200 years) through a chain reaction of adaptation, with waiting times between mutations decreasing as titer increases due to elevated effective mutation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C87-C91 present simulation results with statistical support showing plausible timescales for recurrent evolution. The simulations incorporate realistic parameters (mutation rates from baculoviruses, recombination rates, population sizes) and account for epistasis. The key insight that effective mutation rate scales with titer (increasing Ne) is mechanistically sound. However, the simulations make several simplifying assumptions (e.g., SI model, specific epistatic function) that may not fully capture biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C92"
+    ],
+    "result": "Both High and Low viral types are present in D. azteca and D. falleni, with the High type showing significantly higher titer in both species. D. azteca viruses cluster with D. innubila from the same location, while D. falleni represents a fourth independent evolution of the High type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 and C92 provide cross-species validation with appropriate statistical tests (GLM t-values >4.28, p<0.0001). The phylogenetic clustering of D. azteca with sympatric D. innubila (C53) versus geographic separation of D. falleni (C54-C55) supports both viral transmission between host species and independent evolution. The differential frequency of High type between D. innubila and D. azteca in the same location (C56, C61) suggests host-specific fitness differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C63",
+      "C100",
+      "C101"
+    ],
+    "result": "Viral envelope and virulence genes, as well as host genes suspected of interacting with DiNV (AMPs, chorion genes, piRNA genes), show elevated signatures of adaptive evolution compared to background genes, consistent with an evolutionary arms race.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C63 provide McDonald-Kreitman-based statistics (DoS, Selection Effect) with appropriate statistical support (GLM p<0.05) showing elevated adaptive evolution in functionally relevant gene categories. The use of SnIPRE to account for total mutation counts is appropriate. The finding that differentially expressed genes show more adaptive substitutions (C100-C101) provides additional support. However, the statistical significance is modest (p<0.05) and multiple gene categories are tested, raising some concerns about multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C98",
+      "C99",
+      "C105"
+    ],
+    "result": "The frequency of the High type is positively correlated with overall infection frequency across populations and increased significantly between 2001 and 2017, with an estimated selection coefficient of 0.0055 suggesting ~350 years to fixation. However, the coalescence time suggests adaptive maintenance rather than a selective sweep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 provide statistical evidence for temporal and spatial frequency patterns. The selection coefficient calculation (C98) is based on reasonable assumptions (5 generations/year, frequency change from 52% to 71%). However, the interpretation that types are adaptively maintained rather than mid-sweep (C105) is somewhat speculative and relies on demographic inference. The 350-year fixation time (C99) seems inconsistent with finding both types over 30,000 years, which the authors acknowledge supports adaptive maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C58",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The two viral types do not co-infect individual hosts, with no individual containing more than two significantly associated SNPs segregating within the sample. A separate Helicase-2 SNP shows within-host segregation and a negative interaction with the High type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C58 are directly supported by within-host variant analysis showing absence of co-infection. The Helicase-2 SNP analysis (C64-C66) provides an interesting contrast, showing within-host segregation and negative epistasis with the High type (GLM t-value = \u22127.815, p=6.39e-14). However, the methods for distinguishing true within-host variation from sequencing error or low-level co-infection could be more explicitly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C24",
+      "C25"
+    ],
+    "result": "Comparison of differential expression between D. innubila and D. melanogaster infected with related nudiviruses shows that 12 genes are differentially expressed in the same direction in both species, including 5 AMPs and 5 chorion genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides cross-species validation of the host response to nudivirus infection. The conservation of differential expression across ~40-60 million years of host divergence suggests these responses are functionally important. However, the comparison is limited to genes with clear orthologs, and differences in experimental conditions between studies could affect the comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Host genome association study identified 13 significantly associated SNPs after controlling for viral haplotype, with piRNA genes enriched in the top 100 associated SNPs, but no significant enrichments in immune pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 reports finding 13 significant host SNPs, but notes no enrichment in expected immune genes. The piRNA enrichment (C103) is only found when expanding to the top 100 SNPs (not genome-wide significant), which raises concerns about the robustness of this finding. The lack of immune gene enrichment is surprising given the strong viral effects on immune gene expression, suggesting either insufficient power or that viral genotype is the primary determinant of titer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Permutation testing validates the association between the High type haplotype and viral titer, with no permuted differences as large as observed and the divergence from null expectation disappearing when viral haplotype is included as a covariate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide rigorous validation of the association study results through 100,000 permutations. The finding that including viral haplotype as a covariate eliminates the signal (C70) confirms that the High type drives most of the association. This is appropriate statistical validation addressing concerns about false positives from multiple testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Little evidence of gene conversion was found producing the population-specific background signature, and recombination between background SNPs occurs in the Low type but not the High type, likely because the High type sweeps to high frequency before recombination can occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 address alternative explanations for the population-specific background patterns. The inference that High type sweeps prevent recombination (C86) is mechanistically plausible and consistent with the strong selection on the High type. However, the methods for detecting gene conversion could be more explicitly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "De novo transcript assembly identified 717 putative novel genes, with 26 differentially expressed between infected and uninfected samples and 69 between High and Low types, including three novel antimicrobial peptide-like genes downregulated in High type infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe additional transcriptomic analysis identifying potentially novel genes. The finding of AMP-like genes with expression patterns consistent with known AMPs (C97) provides validation. However, the biological significance of most novel transcripts is unclear, and many may represent annotation artifacts, non-coding RNAs, or transcriptional noise. The 70.3% of annotated genes with CPM > 1 (C94) suggests reasonable annotation quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims establishing the study system: immune genes evolve rapidly in host genomes, viruses must invade, replicate and transmit to persist, natural selection optimizes virulence-transmission tradeoffs, and D. innubila is commonly infected with DiNV which has rapidly evolving envelope and replication machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 provide established background knowledge supported by appropriate citations. These claims set up the biological context for the study but do not represent novel findings. The citations appear appropriate and the claims are consistent with established evolutionary biology and virology principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C60",
+      "C62",
+      "C73",
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C111"
+    ],
+    "result": "Additional background claims about DNA virus characteristics, epidemiological models, nudivirus biology, immune pathway interactions, host biology, and protein complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C60, C62, C73, C104, C106-C108, and C111 provide background knowledge supported by citations or general knowledge. These are contextual claims that support interpretation of results but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C109",
+      "C110"
+    ],
+    "result": "Mutations appear in a similar order suggesting navigation of an epistatic fitness landscape, and unexpected chorion protein expression in males suggests DiNV may infect tissues beyond the gut and that chorion proteins are expressed in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 about epistatic landscapes is supported by the ordered appearance of mutations (C47) and simulation results (C48-C49), but the specific epistatic interactions are not directly tested. Claims C109-C110 about tissue tropism and chorion protein expression are speculative inferences from unexpected gene expression patterns. These hypotheses require direct experimental validation through tissue-specific infection assays and protein localization studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Several polymorphisms defining the High type are in genes associated with known virulence factors or viral envelope formation, including gp83 which downregulates Toll-induced AMPs and upregulates IMD-induced AMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 connect the genetic variants to functional genes with known or suspected roles in virulence. The gp83 function (C72) is supported by citation to Palmer et al., 2019. However, the causal relationship between specific SNPs and altered gene function is not directly demonstrated - the SNPs are associated with differential expression but functional validation of individual variants is not provided.",
+    "result_type": "MINOR"
+  }
+]

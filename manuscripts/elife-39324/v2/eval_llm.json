@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C59",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C74",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "After sleep-dependent consolidation, motor sequence representations show increased discriminability in dorsolateral striatum, prefrontal, secondary motor cortices, thalamus, and cerebellum, while showing decreased discriminability in hippocampus and dorsomedial striatum. This represents the first demonstration in humans of local distributed neural coding changes accompanying consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MVPA analysis using cross-validated Mahalanobis distance with appropriate statistical correction (TFCE, permutation testing) demonstrates significant regional differences in sequence discriminability between consolidated and new sequences (C36-C40, C68, C74). The behavioral data confirm consolidation occurred (performance differences between consolidated and new sequences). The methodological approach addresses prior limitations of GLM-based studies by focusing on pattern discriminability rather than activation levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C43",
+      "C45",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57"
+    ],
+    "result": "A distributed cortical network including visual, parietal, premotor, supplementary motor, primary motor/somatosensory, and dorsolateral prefrontal cortices shows significant sequence discriminability for both consolidated and newly learned sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conjunction analysis of discriminability maps for both learning stages reveals a common network carrying sequence information (C35, C43, C51). The findings are consistent with prior MVPA studies (C43, C44) and extend them to include non-motor regions involved in visual processing and working memory (C52, C53, C57). The methodological approach is sound with appropriate statistical correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Primary motor cortex (M1) shows no significant changes in representational magnitude after consolidation, consistent with prior findings that M1 representational geometry is resistant to training and that motor skills can be expressed after M1 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative finding in M1 (C61) is well-supported by the data and consistent with prior research showing M1 resistance to representational changes (C62, C63) and evidence from lesion/inactivation studies (C66). The authors appropriately interpret this as suggesting M1 representations may reflect somatotopic organization rather than sequence-specific features (C64), though they acknowledge the role of M1 in motor learning remains important (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Sequence discriminability in M1/S1 regions may be confounded by the 'first finger effect' where discrimination is driven by the initial finger press rather than the whole sequence, though the experimental design partially controls for this confound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors acknowledge a potential confound from prior research (C46) but argue their design controls for it because consolidated sequences with identical first fingers were still discriminated (C47). However, this reasoning is somewhat circular and doesn't fully address whether the M1/S1 discriminability reflects true sequence representations or somatotopic organization. The smaller spatial extent compared to prior work (C48) and design differences (C49) add uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The hippocampus shows greater discriminability for new sequences than consolidated sequences, consistent with its transient role in early motor sequence learning and encoding of sequential information, with progressive disengagement after consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding of reduced hippocampal discriminability for consolidated sequences (C74, C39) is consistent with prior research showing progressive disengagement of the hippocampus after early learning (C76) and its role in encoding sequential information (C77). The interpretation aligns with established theoretical frameworks (C75) and prior empirical findings. The MVPA approach provides novel evidence for representational changes rather than just activation changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Univariate GLM analysis contrasting consolidated and new sequences yielded no significant results after multiple comparison correction, possibly due to the absence of spatial smoothing during preprocessing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative GLM result (C41) is clearly stated and the authors provide a plausible methodological explanation (C42). This negative finding strengthens the argument that MVPA approaches are more sensitive to representational changes than traditional activation-based analyses, which is a key motivation for the study. The lack of smoothing was intentional to preserve fine-grained patterns for MVPA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study design has several acknowledged limitations including: limited number of sequences per condition (potentially reducing statistical power), inability to investigate hierarchical encoding levels, differences between training and testing task demands, potential task-switching confounds, and sequences trained on different days (potential reconsolidation effects).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors transparently acknowledge multiple design limitations (C87-C96) and provide reasonable justifications or counterarguments where possible. For example, they note that novel learning during the MVPA task seems unlikely given stable performance (C92), and that reconsolidation likely relies on similar mechanisms to consolidation (C95, C96). These limitations are important for interpreting the results but don't fundamentally undermine the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The analysis did not account for evolving performance during the session, particularly for new sequences, which may have missed representations emerging when performance plateaued. However, recent evidence suggests performance speed has limited influence on representational geometry extracted from Mahalanobis distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors acknowledge that performance evolved during the session for new sequences (C98) and that averaging across the session may have missed emerging representations (C99). While they cite evidence that speed has limited influence on representational geometry (C101), this doesn't fully address the concern about evolving representations during learning. The assumption that consolidated sequence engrams were retrieved (C102) is reasonable given behavioral advantages but doesn't resolve the issue for new sequences. This is identified as requiring future investigation (C100).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C138"
+    ],
+    "result": "The study demonstrates that learning-related representational changes can be detected in a shorter timeframe and with less training than previous studies, using cross-validated Mahalanobis distance with searchlight analysis and TFCE statistical correction, which provides increased sensitivity and statistical robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological approach is well-justified with appropriate citations (C132, C136). The use of cross-validated Mahalanobis distance addresses limitations of classification-based approaches (C25), and TFCE correction is appropriate for the sparse gray-matter sampling (C138). The claim that this enables detection of changes in shorter timeframes (C103) is supported by the successful detection of differences after limited training, though the contribution of the novel metric versus other design factors is somewhat speculative (C104).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study was not designed to investigate the information content (extrinsic vs. intrinsic encoding) of hippocampal, striatal, or cerebellar sequence representations, which remains a question for future research with dedicated experimental designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors clearly acknowledge this limitation of their study design (C80) and appropriately identify it as requiring future investigation with designs similar to prior cortical studies (C82). They also note recent findings about hippocampal connectivity that may relate to spatial planning rather than sequential learning (C83). This is an honest assessment of what the current study can and cannot address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study employed a three-day protocol with 18 participants, training two sequences on separate days followed by sleep, then testing with an MVPA task involving four sequences (two consolidated, two new) using De-Bruijn cycles to prevent systematic BOLD pattern leakage, with sequences performed without feedback to probe automatization processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with appropriate detail (C111-C124). The use of De-Bruijn cycles (C122, C123) is methodologically sound and properly cited. The sample size of 18 participants after exclusions (C111) is reasonable for an fMRI study, though not large. The design choices (no feedback, uninterrupted repetition) are justified in terms of probing automatization (C120). The three-day protocol with sleep between sessions is appropriate for investigating consolidation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "fMRI data were preprocessed using Freesurfer for anatomical segmentation and surface reconstruction, with functional data processed without smoothing to preserve fine-grained patterns. LS-S regression was used to extract block-wise beta maps for MVPA, which provides improved pattern estimates compared to standard GLM approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The preprocessing pipeline is well-described with appropriate citations (C127, C131). The decision to omit smoothing (C128, C129) is justified for MVPA applications where preserving fine-grained patterns is critical. The use of LS-S regression (C131) is supported by prior methodological work showing improved estimates for MVPA. The preprocessing approach is appropriate for the study's goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior research has established that motor sequence learning involves functional reorganization of cortico-striatal and cortico-cerebellar systems with initial hippocampal contribution, that sleep promotes consolidation, and that brain region contributions differentiate as learning progresses from fast to slow learning phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize established findings from prior research and are appropriately cited throughout (C1, C5-C15). This background provides the foundation and motivation for the current study's investigation of representational changes during consolidation. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Traditional GLM-based activation studies have limitations in interpreting learning-related changes because increases or decreases in activity can reflect multiple processes (speed, efficiency, non-specific networks) rather than sequence-specific plasticity. MVPA approaches address these limitations but prior classification-based methods had statistical issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The critique of GLM-based approaches is well-reasoned (C16-C19) and the motivation for MVPA is clear (C20). The summary of prior MVPA studies (C21-C24) is accurate and the identification of statistical limitations in classification-based approaches (C25) is supported by appropriate citations. This provides strong justification for the current study's methodological approach using distance-based MVPA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C58"
+    ],
+    "result": "The dorsolateral prefrontal cortex showed sequence discriminability, likely reflecting processing of sequence information in working memory. The cognitive demands of the task (switching, working memory, inhibition) may have magnified frontal associative representations compared to simpler designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding of DLPFC discriminability is supported by the data and consistent with prior research on working memory (C54). The interpretation that task demands magnified frontal representations (C55) is reasonable speculation supported by the task design. The authors appropriately acknowledge that discrepancies with activation-based studies may reflect both methodological differences and additional cognitive demands (C58).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C70"
+    ],
+    "result": "The tuning of premotor and parietal neural populations to coordinated movements is consolidated early after learning, and basal ganglia regions show somatotopic organization that could contribute to sequence discriminability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation of early consolidation in premotor/parietal regions (C60) is supported by the data and consistent with prior research. The discussion of basal ganglia somatotopy (C70) appropriately acknowledges that discriminability could reflect organizational principles similar to cortex rather than purely sequence-specific representations. These interpretations are reasonable given the data and prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study investigated representational changes after limited training and sleep-dependent consolidation, in contrast to prior studies using intensive multi-day training. The representations may further evolve with additional training or offline reprocessing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distinction from prior studies is clearly stated (C84, C85) and important for interpreting the results. The acknowledgment that representations may continue to evolve (C86) is appropriate speculation that doesn't undermine the current findings but rather identifies them as capturing an early stage of consolidation. This contextualizes the results appropriately within the broader learning trajectory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Future research should investigate the dynamic mechanisms mediating sleep-dependent consolidation, including how the memory trace is progressively reorganized through repeated reactivations during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate identification of future research directions based on the current findings and is supported by citations to relevant prior work on reactivation during sleep. The current study provides a snapshot of consolidated representations but doesn't address the dynamic process of how consolidation occurs, which is acknowledged as an important next step.",
+    "result_type": "MINOR"
+  }
+]

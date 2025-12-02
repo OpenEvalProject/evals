@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study employed a novel sequential decision-making task in 40 human subjects where participants navigated a 2\u00d74 state space by choosing movement directions to collect rewards. The task included 1-move and 2-move trials, with reward contingencies and spatial structure manipulated across blocks to assess behavioral flexibility. Subjects showed significant adjustment to the number of allotted moves (+0.21, SEM 0.05, p < 0.001) but with substantial individual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is well-described with appropriate sample size justification (C97), clear task structure (C14-C18, C24), and a validated behavioral measure of flexibility (C25-C26). The task effectively dissociates model-based from model-free planning through multiple manipulations, addressing prior criticisms of similar paradigms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Subjects demonstrated above-chance performance on 'blind' second moves where they had to plan two steps ahead without visual feedback (0.56, SEM 0.03; p<0.001), even immediately after task changes (0.52, SEM 0.03; p=0.01). This blind-move success correlated with the individual flexibility index (IF), indicating that more flexible subjects were better able to plan multiple steps into the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The blind-move analysis provides strong behavioral evidence for prospective planning (C32-C33) with appropriate statistical testing. The correlation with IF (C34) supports the interpretation that this reflects model-based planning capacity (C35). The design cleverly isolates multi-step planning from simple stimulus-response associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Computational modeling revealed that a hybrid model-free/model-based (MF-MB) algorithm substantially outperformed either pure algorithm (BIC: MF=40821, MB=43249, hybrid=39908). Individual flexibility was explained by three parameters controlling the MF-MB balance (84% of variance), with less flexible subjects showing enhanced model-free deployment rather than general impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model comparison uses appropriate BIC criteria (C43) and the hybrid model captures individual differences well (r=0.92 for simulated vs. real IF). The parameter analysis (C46-C48) convincingly demonstrates that flexibility reflects MF-MB balance rather than confounds like learning rate differences. Model recovery tests validate the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C42",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "MEG decoding revealed that chosen second moves became decodable during first-move choices and prior to first outcome presentation, with this early decodability correlating with IF. The decodability of chosen moves peaked 140 ms before choice execution, validating the decoding approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MEG methods are well-described (C102-C105) with appropriate preprocessing (C103) and cross-validated decoding (C104-C105). The finding that second-move decodability during first moves correlates with IF (C37, C42) provides neural evidence for prospective planning in flexible subjects. The decoder validation strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60",
+      "C106",
+      "C107"
+    ],
+    "result": "Using a 'sequenceness' measure applied to decoded MEG signals, the study found significant forward replay of state transitions following outcomes (50-330 ms and 820-950 ms post-outcome), with sequences accelerated in time (130 ms inter-image lag). Both forward and backward replay were detected for penultimate transitions in 2-move trials. Sequenceness was predominantly evident following surprising outcomes in subjects with high flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequenceness analysis is methodologically sound (C106-C107) with validation from prior work. The temporal specificity of replay (C52-C53) and directional findings (C54-C56) are statistically robust using Bayesian Gaussian Process analysis that accounts for multiple comparisons. The interaction with surprise and flexibility (C60) is theoretically motivated and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "On-task replay correlated positively with behavioral flexibility, with more flexible subjects showing greater sequenceness following surprising outcomes. Critically, high forward sequenceness predicted subsequent policy changes\u2014moves followed by strong replay were less likely to be repeated, and these changes increased reward collection by 11.1% (SEM=1.5%, p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between on-task sequenceness and flexibility (C3) is supported by robust statistical analysis. The link to policy changes (C62, C64) provides crucial behavioral validation that replay serves a functional role in re-evaluation. The finding that policy changes were advantageous strengthens the interpretation that replay supports adaptive model-based planning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70"
+    ],
+    "result": "Off-task replay during rest periods correlated negatively with behavioral flexibility (r=-0.33, p=0.03). Less flexible subjects showed greater replay of frequently chosen trajectories during rest, consistent with offline replay establishing model-free policies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative correlation between off-task sequenceness and flexibility (C69) is statistically significant and theoretically coherent with the model-free interpretation (C70). The finding that replay during rest prioritized frequent transitions supports the DYNA-like consolidation hypothesis. However, the correlation is moderate and would benefit from replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "During the rest period following instruction about reward changes, subjects replayed subsequently chosen (but not yet experienced) transitions, indicating offline re-planning using a cognitive model. However, this prospective offline replay did not correlate with enhanced flexibility, suggesting offline planning may be ill-suited for trial-to-trial flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding of prospective replay (C76) provides strong evidence for model-based offline planning, as re-planning before experience requires spatial knowledge (C77). The lack of flexibility enhancement (C80) is interpreted cautiously as speculative but is consistent with the task demands. This dissociation between prospective and retrospective offline replay is novel and important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C11",
+      "C12",
+      "C81",
+      "C92",
+      "C93"
+    ],
+    "result": "The study demonstrates that online and offline replay support distinct decision strategies: more model-based subjects replayed trajectories during learning (predominantly choices likely to be reconsidered), while more model-free subjects replayed previously experienced trajectories during rest periods, consistent with DYNA-like policy compilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dissociation between on-task and off-task replay patterns (C81, C92-C93) is well-supported by converging evidence from behavioral modeling, MEG decoding, and sequenceness analysis. The interpretation that these support distinct strategies (C6, C11-C12) is justified by the opposite correlations with flexibility and the functional consequences of replay. This is the central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The results are broadly consistent with normative models of replay, showing forward replay prioritizes frequently chosen trajectories while forward and backward replay follow new observations and predict policy changes. However, the study primarily found forward sequenceness following outcomes rather than preplay before choices, deviating from some theoretical predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to normative theory (C85-C88) appropriately contextualizes the findings. The task effectively incentivizes model-based reasoning (C84), addressing prior criticisms. The deviations from theory (C89-C90) are acknowledged and discussed thoughtfully, suggesting alternative computational strategies. The broad consistency with theory strengthens the interpretation while noting important differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C82",
+      "C83"
+    ],
+    "result": "The study addresses theoretical questions about whether online and offline replay both support flexible decision-making or serve distinct functions, building on recent MEG methodology advances and addressing criticisms of prior model-based/model-free tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical framing (C1-C2, C7-C12) appropriately situates the work within established literature. The methodological advances (C13) are properly cited. The discussion of prior task limitations (C83) and how the current task addresses them (C84) is fair and accurate. This provides important context but represents background rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The replay of state-to-state transitions during rest suggests that model-free subjects have implicit access to some form of spatial model, though likely incomplete. The lack of association between offline replay and ultimate winnings indicates that generating a policy offline may not be optimal for tasks requiring trial-to-trial flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about implicit model access (C94) is reasonable given the state-transition replay, though the evidence is indirect. The interpretation about offline policy generation being suboptimal for flexible tasks (C95) is supported by the negative correlation with flexibility and lack of performance benefit. These are thoughtful interpretations of the data with appropriate caveats.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1916 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Mass cytometry (CyTOF) is a technology that has revolutionised single-cell biology.",
+    "claim_type": "EXPLICIT",
+    "source": "Mass cytometry (CyTOF) is a technology that has revolutionised single-cell biology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the impact of CyTOF technology, representing established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "CyTOF allows the detection of over 40 proteins on millions of single cells.",
+    "claim_type": "EXPLICIT",
+    "source": "By detecting over 40 proteins on millions of single cells, CyTOF allows the characterisation of cell subpopulations in unprecedented detail.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification of CyTOF technology that is established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Most CyTOF studies require the integration of data from multiple CyTOF batches usually acquired on different days and possibly at different sites.",
+    "claim_type": "EXPLICIT",
+    "source": "However, most CyTOF studies require the integration of data from multiple CyTOF batches usually acquired on different days and possibly at different sites.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about CyTOF study design based on established practice in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The integration of CyTOF datasets remains a challenge due to technical differences arising in multiple batches.",
+    "claim_type": "EXPLICIT",
+    "source": "To date, the integration of CyTOF datasets remains a challenge due to technical differences arising in multiple batches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a known problem in the field, representing established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "CytofRUV can correct for batch effects and integrate data from large numbers of patients and conditions across batches.",
+    "claim_type": "EXPLICIT",
+    "source": "CytofRUV can correct for batch effects and integrate data from large numbers of patients and conditions across batches, to confidently compare cellular changes and correlate these with clinically relevant outcomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the capabilities of the developed method, supported by the data and analyses presented throughout the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Mass cytometry uses antibodies labelled with heavy metal ion tags to target proteins of interest.",
+    "claim_type": "EXPLICIT",
+    "source": "It uses antibodies, which are labelled with heavy metal ion tags to target the proteins of interest, and are in turn detected by time-of-flight mass spectrometry.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the technical mechanism of CyTOF, representing established knowledge about the technology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "CyTOF has been a powerful tool for delineating cell subsets in heterogeneous tissues such as blood and tumour.",
+    "claim_type": "EXPLICIT",
+    "source": "CyTOF has been a powerful tool for delineating cell subsets in heterogeneous tissues such as blood and tumour, and for correlating single-cell differences with biologically relevant outcomes (Levine et al., 2015; Qiu et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous work in the field.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "CyTOF has been useful in understanding mechanisms of resistance to BH3 mimetics in blood cancers.",
+    "claim_type": "EXPLICIT",
+    "source": "This capability has been useful in understanding the mechanisms of resistance that develop in certain blood cancers to a new class of anti-cancer drugs, termed BH3 mimetics, in early stage clinical trials of several blood cancers (Agarwal et al., 2019; Blombery et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "A major challenge in CyTOF is the high variation in instrument performance caused by differences in instrument calibration and fluctuations in signal strength.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, a major challenge in the field is the high variation in the performance observed in the CyTOF instrument, caused by both differences in instrument calibration and fluctuations in signal strength.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a known technical challenge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "A normalisation method was created to improve comparability between CyTOF measurements using control beads.",
+    "claim_type": "EXPLICIT",
+    "source": "To overcome this challenge, a normalisation method was created to improve the comparability between measurements (Finck et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to the original method publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The control bead normalisation method involves adding five types of control beads mixed with cells, each tagged with a different heavy metal element.",
+    "claim_type": "EXPLICIT",
+    "source": "Briefly, the method involves the addition of five types of control beads mixed in with cells, each type tagged with a different heavy metal element, the collection of the control beads throughout the run, and the application of a multiplicative correction at the end of the run.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of an established method from the literature, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The control bead normalisation algorithm assumes that all control bead elements vary at similar rates.",
+    "claim_type": "EXPLICIT",
+    "source": "For the multiplicative correction, the algorithm calculates smoothed intensities from each control bead element, estimates a coefficient at each control bead acquisition time-point, and corrects the instrument sensitivity at that specific time-point by computing a unique slope for all the control bead elements, assuming that they vary at similar rates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an assumption of the control bead normalisation method from the literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The use of control bead normalisation to account for intra-instrument time-drift variation has become common practice.",
+    "claim_type": "EXPLICIT",
+    "source": "The use of this normalisation to account for intra-instrument time-drift variation has become common practice, but novel correction procedures are still needed to address all other types of variation between samples between research centres, see for example (Leipold et al., 2018) and within laboratories run on different days (see below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about current practice in the field, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Batch effects in CyTOF include differential antibody staining across samples within a batch, different batches of reagents, different machines, and lab differences in multicentre studies.",
+    "claim_type": "EXPLICIT",
+    "source": "We call the batch effects we seek to remove 'unwanted variation', and their causes include: differential antibody staining across samples within a batch, different batches of reagents, different machines or the inevitable lab differences found in multicentre studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of known sources of batch effects based on established knowledge and the authors' observations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The ability to accurately distinguish true biological changes from technical artefacts is critical in CyTOF studies.",
+    "claim_type": "EXPLICIT",
+    "source": "The ability to accurately distinguish true biological changes from technical artefacts like those just mentioned is critical, and has already been done to an extent for flow cytometry assays (Finak et al., 2016; Maecker et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the importance of batch correction, supported by citations to related work in flow cytometry.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "BatchAdjust offers methods analogous to control bead normalisation, including scaling all measurements by ratios of means or medians.",
+    "claim_type": "EXPLICIT",
+    "source": "BatchAdjust (Schuyler et al., 2019) offers methods analogous to the control bead normalisation described above, which include scaling all measurements by ratios of means or medians.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the BatchAdjust method from the cited publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Technical variation can impact specific cell types differently.",
+    "claim_type": "EXPLICIT",
+    "source": "However, technical variation can impact specific cell types differently (Van Gassen et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Van Gassen et al., 2019.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "CytoNorm uses FlowSOM clustering to identify clusters prior to normalisation.",
+    "claim_type": "EXPLICIT",
+    "source": "To address this, CytoNorm (Van Gassen et al., 2019) uses the clustering algorithm FlowSOM (Van Gassen et al., 2015) to identify clusters prior to normalisation, and defines a cluster-specific goal distribution for the values of each protein measurement using the means of quantiles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the CytoNorm method from the cited publications.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "CytoNorm relies on the assumption that batch effects do not affect the clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "This method relies on the strong assumption that batch effects do not affect the clusters, and this is examined using coefficients of variation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the assumptions underlying the CytoNorm method.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "BatchAdjust and CytoNorm were shown to be effective in removing batch-to-batch variation in the datasets analysed.",
+    "claim_type": "EXPLICIT",
+    "source": "Both methods were shown to be effective in removing batch-to-batch variation in the datasets analysed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the performance of existing methods based on their original publications.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Batch differences can affect clusters differently, suggesting that a single batch adjustment to all cells is insufficient.",
+    "claim_type": "EXPLICIT",
+    "source": "The observation that batch differences can affect clusters differently (Van Gassen et al., 2019) suggests that it will not be sufficient to apply a single batch adjustment to the measurements on all cells, as it is being done in BatchAdjust (Schuyler et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the observation from Van Gassen et al., 2019 and the description of BatchAdjust.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "There are no tools or metrics to assess whether post-normalised CyTOF data are more or less consistent across batches at both protein expression and cluster levels.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, there are no tools or metrics to assess whether the post normalised CyTOF data are more or less consistent across batches, not only at the protein expression level but also at the cluster level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a gap in the field that the authors identify.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "RUV methods have been applied to microarray data.",
+    "claim_type": "EXPLICIT",
+    "source": "They have been applied to microarray (Gagnon-Bartsch and Speed, 2012), RNA-seq (Risso et al., 2014), Nanostring nCounter gene expression (Molania et al., 2019) and single-cell RNA-seq data (Lin et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to the original publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "RUV methods have been applied to RNA-seq data.",
+    "claim_type": "EXPLICIT",
+    "source": "They have been applied to microarray (Gagnon-Bartsch and Speed, 2012), RNA-seq (Risso et al., 2014), Nanostring nCounter gene expression (Molania et al., 2019) and single-cell RNA-seq data (Lin et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to the original publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "RUV methods have been applied to Nanostring nCounter gene expression data.",
+    "claim_type": "EXPLICIT",
+    "source": "They have been applied to microarray (Gagnon-Bartsch and Speed, 2012), RNA-seq (Risso et al., 2014), Nanostring nCounter gene expression (Molania et al., 2019) and single-cell RNA-seq data (Lin et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to the original publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "RUV methods have been applied to single-cell RNA-seq data.",
+    "claim_type": "EXPLICIT",
+    "source": "They have been applied to microarray (Gagnon-Bartsch and Speed, 2012), RNA-seq (Risso et al., 2014), Nanostring nCounter gene expression (Molania et al., 2019) and single-cell RNA-seq data (Lin et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to the original publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The CytofRUV method is based on the RUV-III method.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method is based on the RUV-III method (Molania et al., 2019), which uses technical replicates and negative control genes to estimate unwanted variation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the methodological basis of CytofRUV, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "RUV-III uses technical replicates and negative control genes to estimate unwanted variation.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method is based on the RUV-III method (Molania et al., 2019), which uses technical replicates and negative control genes to estimate unwanted variation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the RUV-III method from the cited publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "CytofRUV applies RUV-III to CyTOF data by exploiting pseudo-replicates to estimate unwanted variation.",
+    "claim_type": "EXPLICIT",
+    "source": "We applied RUV-III to CyTOF data by exploiting pseudo-replicates to estimate the unwanted variation and remove it.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodological approach of CytofRUV.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "CytofRUV is implemented in an R package available at www.github.com/mtrussart/CytofRUV.",
+    "claim_type": "EXPLICIT",
+    "source": "It is implemented in the R package 'CytofRUV', which is available at the following link: www.github.com/mtrussart/CytofRUV.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the software implementation and availability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "An R-Shiny application was built to exhibit batch effects using four different diagnostic plots.",
+    "claim_type": "EXPLICIT",
+    "source": "To do so, we built an R-Shiny application that exhibits any batch effects present in such samples using four different diagnostic plots and their associated numerical metrics based on protein expression distributions and clustering results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of a tool developed as part of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "CytofRUV does better at removing unwanted variation from measured protein expression compared to BatchAdjust and CytoNorm.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results suggest that not only does CytofRUV do better at removing unwanted variation from measured protein expression, it also makes the distributions of these quantities more uniform across batches, and enhances the detection of biologically important changes embodied in the data across batches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the comparative analyses presented in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "CytofRUV makes protein expression distributions more uniform across batches.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results suggest that not only does CytofRUV do better at removing unwanted variation from measured protein expression, it also makes the distributions of these quantities more uniform across batches, and enhances the detection of biologically important changes embodied in the data across batches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the comparative analyses presented in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "CytofRUV enhances the detection of biologically important changes across batches.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results suggest that not only does CytofRUV do better at removing unwanted variation from measured protein expression, it also makes the distributions of these quantities more uniform across batches, and enhances the detection of biologically important changes embodied in the data across batches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the comparative analyses presented in the Results section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "A known source of unwanted variation in CyTOF datasets is time-drift in signal intensity.",
+    "claim_type": "EXPLICIT",
+    "source": "A known source of unwanted variation in CyTOF datasets is the time-drift in signal intensity (Finck et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a known technical issue, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The dataset consists of 24 samples total, with PBMC samples from three CLL patients and nine healthy controls, each replicated across two batches.",
+    "claim_type": "EXPLICIT",
+    "source": "We created a dataset based on 24 samples in total, consisting of peripheral blood mononuclear cell (PBMC) samples from three patients with chronic lymphocytic leukaemia (CLL) and PBMC from nine healthy controls (HC), each replicated across two batches of 12 samples (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the experimental dataset, supported by Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "All samples were stained with a 31-antibody panel targeting 19 lineage and 12 functional proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "All samples were stained with a 31-antibody panel targeting 19 lineage (Table 2) and 12 functional proteins (Table 3) that were previously validated (Teh et al., 2020).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the experimental protocol, supported by Tables 2 and 3 and citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "An arcsinh-transformation defined as arcsinh(intensity/5) was applied to the data.",
+    "claim_type": "EXPLICIT",
+    "source": "After processing the data (Methods), we applied an arcsinh-transformation defined as arcsinh (intensity/5) in all that follows.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the data processing method used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The MDS plot shows that the first dimension (MDS1) separates CLL from HC samples well.",
+    "claim_type": "EXPLICIT",
+    "source": "The first dimension (MDS1) separates the CLL from the HC samples well.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The second dimension (MDS2) of the MDS plot shows batch differences, with batch one samples at the bottom and batch two samples at the top.",
+    "claim_type": "EXPLICIT",
+    "source": "The second dimension (MDS2) shows the batch differences, with samples that originate from batch one placed at the bottom of the plot and samples from batch two at the top of the plot.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The MDS plot reveals that protein expression measured in the samples is affected by batch.",
+    "claim_type": "EXPLICIT",
+    "source": "This distinction clearly reveals that the protein expression measured in the samples is affected by batch.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the MDS plot in Figure 1A.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Hierarchical clustering shows a grouping of samples by condition and by batch.",
+    "claim_type": "EXPLICIT",
+    "source": "As with the MDS plot, a grouping of samples by condition and by batch is observed.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Batch effects affect each protein differently.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that batch effects not only affect each protein differently (Figure 2\u2014figure supplement 1) but also each sample differently (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 2\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Batch effects affect each sample differently.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that batch effects not only affect each protein differently (Figure 2\u2014figure supplement 1) but also each sample differently (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 2\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The variation in BCL-2 expression distributions from a single sample across batches is comparable to that observed in BCL-2 expression for six patients at screening from a single batch.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the variation in the distributions of the BCL-2 expression from a single sample across batches (Figure 2A) is comparable to that observed in the BCL-2 expression for the six patients at screening from a single CyTOF batch (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from comparing Figure 2A and 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Batch effects due to unwanted variation can occur over a range comparable to that due to actual biological changes among patients.",
+    "claim_type": "EXPLICIT",
+    "source": "We conclude that batch effects due to unwanted variation can occur over a range comparable to that due to actual biological changes among patients (Figure 2A\u2013B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a conclusion drawn from the comparison of Figure 2A and 2B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The impacts of treatments on distinct CLL cellular phenotypes would not be confidently detected without correcting for batch effects.",
+    "claim_type": "EXPLICIT",
+    "source": "An important repercussion in this example is that the impacts of treatments on distinct CLL cellular phenotypes would not be confidently detected without correcting for batch effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the magnitude of batch effects observed.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "FlowSOM was used to partition cells into clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "We partitioned the entire collection of cells into clusters using FlowSOM as described in Nowicka et al., 2017, which appeared among the fastest and best performing clustering approaches for CyTOF data (Weber and Robinson, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the clustering method used, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "FlowSOM appeared among the fastest and best performing clustering approaches for CyTOF data.",
+    "claim_type": "EXPLICIT",
+    "source": "We partitioned the entire collection of cells into clusters using FlowSOM as described in Nowicka et al., 2017, which appeared among the fastest and best performing clustering approaches for CyTOF data (Weber and Robinson, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to Weber and Robinson, 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Clustering was carried out using 19 lineage proteins to identify 20 cell clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "In all 24 samples, we carried out this clustering using the 19 lineage proteins to identify 20 cell clusters (Figure 3A and Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the clustering analysis performed, shown in Figure 3A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The choice of 20 clusters was determined based on biological interpretation of the cell subpopulations found.",
+    "claim_type": "EXPLICIT",
+    "source": "We performed the clustering using different numbers of clusters, and the choice of 20 clusters was determined based on the biological interpretation of the cell subpopulations found.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the rationale for the clustering parameter choice.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The t-SNE plot shows that clusters assume different distributions across the replicate CyTOF runs.",
+    "claim_type": "EXPLICIT",
+    "source": "It was then possible to visualise the impact of batch differences on cell subtypes identification in the datasets by examining the t-SNE plot coloured by cluster (Figure 3A), which assumed different distributions across the replicate CyTOF runs.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 3A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The distinct positions of CLL cell clusters on the second t-SNE dimension suggest that substantial unwanted variation is altering cell population measures across batches.",
+    "claim_type": "EXPLICIT",
+    "source": "The distinct positions of these clusters on the second dimension (t-SNE2) suggested that substantial unwanted variation was altering cell population measures across the two batches.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the t-SNE plot in Figure 3B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Linear discriminant analysis shows that the first dimension (LD1) separates cell types well.",
+    "claim_type": "EXPLICIT",
+    "source": "The first dimension (LD1) separates the cell types well, while the second dimension (LD2) embodies batch differences: cells that originate from batch one are located at the top of the plot while cells from batch two are at the bottom of the plot (Figure 3E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 3E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The second dimension (LD2) of the linear discriminant analysis embodies batch differences.",
+    "claim_type": "EXPLICIT",
+    "source": "The first dimension (LD1) separates the cell types well, while the second dimension (LD2) embodies batch differences: cells that originate from batch one are located at the top of the plot while cells from batch two are at the bottom of the plot (Figure 3E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 3E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The variation in BCL-2 median expression from a single CLL sample across batches is higher than that observed across patients.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, we compared the median expression of BCL-2 for the 3 patients with CCL in the main CLL cluster nine and found that the variation from a single sample across batches is higher than that observed in the BCL-2 median expression across patients (Figure 3\u2014figure supplement 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 3\u2014figure supplement 2A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The assessment of heterogeneity of CLL patients requires correction for batch effects.",
+    "claim_type": "EXPLICIT",
+    "source": "To overcome this limitation, the assessment of heterogeneity of patients with CLL requires a correction for batch effects that would remove this unwanted variation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the observation of high batch-to-batch variation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Noticeable differences in the proportions of CLL cancer cells were detected between batch one and batch two.",
+    "claim_type": "EXPLICIT",
+    "source": "We detected a noticeable difference in the proportions of CLL cancer cells (cluster 2, cluster 6 and cluster 7) among cells that originate from the batch one compared to those from batch 2 (Figure 3F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 3F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "CytofRUV exploits the concept of pseudo-replicates in the RUV-III method.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to estimate and adjust for such unwanted variation, CytofRUV exploits the concept of pseudo-replicates (here cells) in the RUV-III method that has been successfully applied to the Nanostring nCounter gene expression platform (Molania et al., 2019) and to single-cell RNA-seq data (Lin et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodological approach, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "CytofRUV assumes that at least one cluster in the replicated samples is shared across batches.",
+    "claim_type": "EXPLICIT",
+    "source": "We cluster using FlowSOM, and we assume that at least one cluster in the replicated samples is shared across the batches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of an assumption of the CytofRUV method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Cells of clusters shared across batches are considered pseudo-replicates in CytofRUV.",
+    "claim_type": "EXPLICIT",
+    "source": "We then consider the cells of clusters shared across the batches to be pseudo-replicates (see Methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the CytofRUV method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "CytofRUV normalisation was performed using two samples as known replicated reference samples.",
+    "claim_type": "EXPLICIT",
+    "source": "We first used CytofRUV on data from the 12 samples replicated across two batches, using two samples as our known replicated reference samples. Specifically, we used HC1 for the HC samples and CLL2 for the CLL samples, defining all cells from those samples in any given cluster to be pseudo-replicates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental design for testing CytofRUV.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "After CytofRUV normalisation, protein distributions become more similar across batches for all proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that, for all the proteins, these distributions become more similar across batches (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 2\u2014figure supplement 1 and 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "After CytofRUV normalisation, the variation in BCL-2 median expression for CLL patients is reduced compared to that across patients.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, we observed that the variation in the median expression of BCL-2 for the 3 patients with CLL in the main CLL cluster is reduced compared to that observed in the BCL-2 median expression across patients (Figure 3\u2014figure supplement 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 3\u2014figure supplement 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "A decrease in batch effects was observed on t-SNE plots after CytofRUV normalisation.",
+    "claim_type": "EXPLICIT",
+    "source": "We also observed a decrease in the batch effects both on the t-SNE plots (Figure 3C and D) and in the linear discriminant analysis (Figure 3\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 3C, D and Figure 3\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Earth Movers Distance (EMD) was computed to quantify batch differences between pairs of distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "To quantify the batch differences between these pairs of distributions, we computed the Earth Movers Distance (EMD) as described in Van Gassen et al., 2019 for all the proteins and all CLL and HC samples for both the original dataset and the normalised datasets (Figure 5A and D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the analysis method used, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "For all CLL samples, CytofRUV gave the lowest EMD for all values of k = 5, 10 and 15 compared to raw data, BatchAdjust and CytoNorm.",
+    "claim_type": "EXPLICIT",
+    "source": "For all CLL samples, CytofRUV gave the lowest EMD for all values of k = 5,10 and 15, not only compared to the raw data but also compared to both BatchAdjust and CytoNorm (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "CytofRUV gave the lowest EMD for 7 out of 9 HC samples compared to BatchAdjust and CytoNorm.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, CytofRUV also gave the lowest EMD for 7 out of 9 HC samples compared to both BatchAdjust and CytoNorm (Figure 5D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "EMD revealed that CytofRUV is the method with optimal reduction in batch differences from protein expression for 11 out of 12 samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Altogether EMD revealed that CytofRUV is the method with the optimal reduction in batch differences from protein expression for 11 out of 12 samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the EMD results from Figure 5A and D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "CytoNorm gave lower EMD compared with BatchAdjust for 7 out of 12 samples.",
+    "claim_type": "EXPLICIT",
+    "source": "CytoNorm gave the lower EMD when compared with BatchAdjust for 7 out of 12 samples (Figure 5A and D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5A and D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Hellinger distance was computed between paired cluster proportions of all replicated samples.",
+    "claim_type": "EXPLICIT",
+    "source": "To assess how well CytofRUV corrects for differences in cluster proportions across batches, we computed the Hellinger distance (see Methods) between the paired cluster proportions of all replicated samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the analysis method used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "For HC samples, CytoNorm gave the lowest Hellinger distances for 4 samples out of 9 compared to CytofRUV and BatchAdjust.",
+    "claim_type": "EXPLICIT",
+    "source": "For the HC samples, CytofNorm gave the lowest Hellinger distances for 4 samples out of 9 compared to both CytofRUV and BatchAdjust.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "For all CLL samples, the lowest Hellinger distances are found for CytofRUV normalisation.",
+    "claim_type": "EXPLICIT",
+    "source": "For all the CLL samples, the lowest Hellinger distances are found for the normalisation with CytofRUV methods (Figure 5B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "CytofRUV is able to adjust cluster proportions and make them consistent across replicates to a greater extent than the two other methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall CytofRUV is able to adjust the cluster proportions and make them consistent across replicates to a greater extent than is achieved by the two others methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the Hellinger distance results from Figure 5B and E.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "CytoNorm performs well in adjusting cluster proportions.",
+    "claim_type": "EXPLICIT",
+    "source": "CytoNorm also performs well in adjusting those proportions, while BatchAjust generally leads to Hellinger distances similar to those in the raw data (Figure 5B and E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5B and E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "BatchAdjust generally leads to Hellinger distances similar to those in the raw data.",
+    "claim_type": "EXPLICIT",
+    "source": "CytoNorm also performs well in adjusting those proportions, while BatchAjust generally leads to Hellinger distances similar to those in the raw data (Figure 5B and E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5B and E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Silhouette scores are a combined measure of the degree of separation of cells within clusters and that between clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "We do this by computing Silhouette scores (see Methods), which are a combined measure of the degree of separation of cells within clusters and that between clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the Silhouette score metric.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "A normalisation method that successfully removes batch effects should lead to adjusted data with a small sbatch score.",
+    "claim_type": "EXPLICIT",
+    "source": "A normalisation method that successfully removes batch effects should lead to adjusted data with a small sbatch score, while one which preserves or enhances the biology should have high value of sbiology, at least as high as that before adjustment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the interpretation of Silhouette scores.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "A normalisation method that preserves or enhances biology should have high value of sbiology.",
+    "claim_type": "EXPLICIT",
+    "source": "A normalisation method that successfully removes batch effects should lead to adjusted data with a small sbatch score, while one which preserves or enhances the biology should have high value of sbiology, at least as high as that before adjustment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the interpretation of Silhouette scores.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "According to mean Silhouette scores of CLL samples, CytofRUV with k = 5 gives the best results.",
+    "claim_type": "EXPLICIT",
+    "source": "According to the mean Silhouette scores of the CLL samples (Figure 5C), CytofRUV with k = 5 gives the best results, not only enhancing the biology i.e. cell sub-type definition across replicates (also on t-SNE plots Figure 3C and D), but also removing the batch effects.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Using CytofRUV with k = 5 for HC samples, a higher sbiology was obtained for 8 out of 9 HC samples compared to the two other methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Using CytofRUV with k = 5 for the HC samples, we also obtained a higher sbiology for 8 out of the 9 HC samples (Figure 5F) compared to the two other methods.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The first dataset from Schuyler et al., 2019 is from peripheral whole blood samples from a single healthy donor processed to include unstimulated and stimulated conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "The first dataset (Schuyler et al., 2019) is from peripheral whole blood samples from a single healthy donor, processed at one time to include unstimulated and stimulated conditions (Lipopolysaccharide LPS+ and Resiquimod R848-), and aliquoted into 12 batches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the dataset from the cited publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "CytoNorm corrects for differences in cluster proportions in stimulated samples where the lowest Hellinger distances are found.",
+    "claim_type": "EXPLICIT",
+    "source": "Again, we observed the ability of CytoNorm to correct for differences in cluster proportions in stimulated samples where the lowest Hellinger distances are found (Figure 6\u2014figure supplement 1B), and in unstimulated samples (Figure 6\u2014figure supplement 1E), followed by CytofRUV with overall lower distances than BatchAdjust.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 6\u2014figure supplement 1B and E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "CytofRUV gave lower EMD for both stimulated and unstimulated samples compared to the two other methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Likewise, we confirmed that, overall, CytofRUV gave lower EMD for both the stimulated (Figure 6\u2014figure supplement 1A) and unstimulated samples (Figure 6\u2014figure supplement 1D) compared to the two other methods, which in some cases have some cases higher EMD than those of the raw data.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 6\u2014figure supplement 1A and D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Improved Silhouette scores were observed for CytofRUV compared with BatchAdjust and CytoNorm, which have higher sbatch.",
+    "claim_type": "EXPLICIT",
+    "source": "Again we observed improved Silhouette scores for CytofRUV compared with BatchAdjust and CytoNorm, which have higher sbatch (Figure 6\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 6\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The second dataset from Van Gassen et al., 2019 comes from the FlowRepository FR-FCM-Z247.",
+    "claim_type": "EXPLICIT",
+    "source": "The second dataset (Van Gassen et al., 2019) comes from the FlowRepository FR-FCM-Z247 which is the validation cohort of an immunoprofiling study of women during pregnancy used in CytoNorm (Van Gassen et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the dataset from the cited publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "CytofRUV with k = 5 effectively eliminates batch differences from protein expression across 10 batches.",
+    "claim_type": "EXPLICIT",
+    "source": "Using our second class of diagnostic plots, we observe that CytofRUV with k = 5 effectively eliminates batch differences from protein expression across the 10 batches (Figure 6B) compared to that in the raw data (Figure 6D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 6B and D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "CytofRUV gives the lowest EMD compared to both CytoNorm and BatchAdjust in the second normalisation of the Van Gassen dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "It also gives the lowest EMD compared to both CytoNorm and BatchAdjust (Figure 6\u2014figure supplement 3A, Figure 6\u2014figure supplement 3D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 6\u2014figure supplement 3A and D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "CytofRUV allows pooling of data from a large number of patients and conditions run across multiple batches.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method allows pooling of data from a large number of patients and conditions run across multiple batches, thereby enabling the integration of multiple CyTOF datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about the capabilities of CytofRUV based on the results presented.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "CytofRUV adapts the RUV-III procedure to CyTOF by exploiting pseudo-replicates.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach adapts the RUV-III procedure to CyTOF by exploiting pseudo-replicates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methodological approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "An R-Shiny interface was built that highlights the presence of batch effects in replicated samples using four different diagnostic plots.",
+    "claim_type": "EXPLICIT",
+    "source": "To do this, we build an R-Shiny interface that highlights the presence of any batch effects in replicated samples using four different diagnostic plots: Median Protein Expression, Protein Expression Distributions, Clustering Results and Cluster Proportions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the tool developed as part of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Batch differences in protein expression in CyTOF datasets are comparable to biologically relevant differences within a single batch.",
+    "claim_type": "EXPLICIT",
+    "source": "Using replicated samples to assess intra-site reproducibility and differences due to technical variation, we first showed how batch differences in protein expression in CyTOF datasets consisting of several CyTOF batches are comparable to biologically relevant differences within a single batch.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of findings from the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Confidently detecting the impact of diverse treatments on distinct CLL cellular phenotypes would not be possible without correcting for batch effects.",
+    "claim_type": "EXPLICIT",
+    "source": "In that context, confidently detecting of the impact of diverse treatments on distinct CLL cellular phenotypes would not be possible without correcting for such batch effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the magnitude of batch effects observed.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Batch effects are found in individual protein expression values.",
+    "claim_type": "EXPLICIT",
+    "source": "We showed that not only are batch effects found in individual protein expression values which was also found in Schuyler et al., 2019, but also that batch differences affect samples differently.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of findings, supported by citation to Schuyler et al., 2019.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Batch differences affect samples differently.",
+    "claim_type": "EXPLICIT",
+    "source": "We showed that not only are batch effects found in individual protein expression values which was also found in Schuyler et al., 2019, but also that batch differences affect samples differently.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of findings from the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Protein distributions are affected differently within cluster.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed the impact of batch differences on cell subtypes identification and how protein distributions are affected differently within cluster, something that was also found by Van Gassen et al., 2019.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of findings, supported by citation to Van Gassen et al., 2019.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "It will not be sufficient to apply a single batch adjustment to the measurements on all cells.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that it will not be sufficient to apply a single batch adjustment to the measurements on all cells, as is performed in BatchAdjust (Schuyler et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the observation that batch effects affect clusters differently.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Changes in cluster abundances across batches were noticed.",
+    "claim_type": "EXPLICIT",
+    "source": "We also noticed changes in the cluster abundances across batches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of findings from the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "RUV-III has been successfully applied to the Nanostring nCounter gene expression platform.",
+    "claim_type": "EXPLICIT",
+    "source": "RUV-III has been successfully applied to the Nanostring nCounter gene expression platform (Molania et al., 2019) and to single-cell RNA-seq data (Lin et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to the original publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "RUV-III has been successfully applied to single-cell RNA-seq data.",
+    "claim_type": "EXPLICIT",
+    "source": "RUV-III has been successfully applied to the Nanostring nCounter gene expression platform (Molania et al., 2019) and to single-cell RNA-seq data (Lin et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to the original publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "CytofRUV is adaptable and flexible, allowing the user to select different normalisations.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method is adaptable and flexible in that it allows the user to select different normalisations: it can be implemented for one or several replicated reference samples, it can also normalise specific clusters or all clusters, and the dimension (k) of the unwanted variation can vary.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the features of the CytofRUV method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "An important step of CytofRUV is the identification of biological subpopulations prior to normalisation.",
+    "claim_type": "EXPLICIT",
+    "source": "An important step of our method is the identification of biological subpopulations prior to normalisation, as this guides the selection of some or all clusters to define pseudo-replicates across batches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of a key aspect of the CytofRUV method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "CytofRUV had the best capability to make protein expression distributions more similar across batches.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, CytofRUV had the best capability to make protein expression distributions more similar across batches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the comparative analysis results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Batch differences are reduced within clusters by CytofRUV.",
+    "claim_type": "EXPLICIT",
+    "source": "We further saw that batch differences are reduced within clusters by computing EMD by cluster for all proteins.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of findings from the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "CytoNorm has the ability to correct for differences in cluster proportions.",
+    "claim_type": "EXPLICIT",
+    "source": "We also saw CytoNorm's ability to correct for differences in cluster proportions as well as CytofRUV, both having the lowest Hellinger distances in two of the four analyses performed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the comparative analysis results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "CytoNorm is performing well according to Silhouette scores in the second analysis of the third dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Likewise, CytoNorm is performing well according to Silhouette scores in the second analysis of the third dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of findings from the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "BatchAdjust has the least ability to remove batch effects in the three datasets explored.",
+    "claim_type": "EXPLICIT",
+    "source": "We also conclude that BatchAdjust has the least ability to remove batch effects in the three datasets we have explored here, according to those metrics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the comparative analysis results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The single batch adjustment performed by BatchAdjust to measurements on all cells might explain its limited ability to remove batch effects.",
+    "claim_type": "EXPLICIT",
+    "source": "This conclusion might be a result the single batch adjustment performed by BatchAdjust to the measurements on all cells, whereas CytoNorm and CytofRUV both take into account the impact of batch differences at the cluster level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation for the observed performance differences.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "CytoNorm and CytofRUV both take into account the impact of batch differences at the cluster level.",
+    "claim_type": "EXPLICIT",
+    "source": "This conclusion might be a result the single batch adjustment performed by BatchAdjust to the measurements on all cells, whereas CytoNorm and CytofRUV both take into account the impact of batch differences at the cluster level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of a key feature of CytoNorm and CytofRUV methods.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Removing batch effects might lead to removal of clusters or identification of new biologically relevant clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "We envisage that in some cases removing batch effects might lead to removal of clusters or to the identification of new biologically relevant clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential outcomes of batch correction.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Some clusters could be artefacts of batch effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Some clusters could be artefacts of the batch effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about the nature of some clusters.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "sbiology provides an evaluation of clustering validity.",
+    "claim_type": "EXPLICIT",
+    "source": "We use sbiology to determine the tightness and separation of the clustering, as it provides an evaluation of the clustering validity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the use of the sbiology metric.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "CytofRUV normalisation leads to the presence of the B cell cluster in both batches.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that the B cell cluster (Figure 3A, cluster 16) is only present in the batch 1 of the CLL1 sample, and CytofRUV normalisation leads to the presence of this cluster (Figure 3C, cluster 2) in both batches.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 3A and 3C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The user should examine and identify any new clusters post-normalisation.",
+    "claim_type": "EXPLICIT",
+    "source": "In practise, the user should examine and identify any new clusters post-normalisation, as some clusters might not be conserved after normalisation, and relate those to the clusters that were selected as pseudo-replicates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation for users of the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Exploration of different clustering resolutions is recommended using clustering tree visualisation.",
+    "claim_type": "EXPLICIT",
+    "source": "We also recommend the exploration of different clustering resolutions and how they change as the number of clusters increases, using clustering tree visualisation (Zappia and Oshlack, 2018) to relate the clusters pre and post-normalisation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation for users of the method, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "diffcyt has been developed for differential analysis that uses FlowSOM for clustering.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent methods like diffcyt (Weber et al., 2019) have been developed that also uses FlowSOM for clustering to define cell populations, and empirical Bayes moderated tests adapted from transcriptomics for differential analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the diffcyt method from the cited publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "\u0394\u0394 > 0 for most proteins in CLL samples, indicating reduction in batch differences after CytofRUV normalisation.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that \u0394\u0394 > 0 for most proteins especially for the CLL samples indicating reduction in batch differences.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 3\u2014figure supplement 4.A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "A decrease in the number of clusters with significant difference in abundance across batches was observed after normalisation.",
+    "claim_type": "EXPLICIT",
+    "source": "We also observed a decrease in the number of clusters that were found to have a significant difference in abundance across batches before normalisation (13 out of the 20 clusters) compared to that in the data after CytofNorm (7 out of 20 clusters).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the differential analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "One limitation of CytofRUV is that it relies on the assumption that at least one cell subpopulation is shared across batches.",
+    "claim_type": "EXPLICIT",
+    "source": "One limitation of our method is that CytofRUV does rely on the assumption that at least one cell subpopulation is shared across the batches that would be used as our pseudo-replicates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "In experiments where large batch effects occur and no cell subpopulation is shared between batches, CytofRUV would not be applicable.",
+    "claim_type": "EXPLICIT",
+    "source": "In experiments where large batch effects occur and no cell subpopulation is shared between batches, our method would not be applicable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "RUV methods have been applied to hundreds and thousands of samples with Nanostring technology.",
+    "claim_type": "EXPLICIT",
+    "source": "RUV methods have already been applied to hundreds and thousands of samples with Nanostring technology (Molania et al., 2019) and hundreds of samples with RNAseq.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to the original publication.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "CytofRUV can handle larger studies with no memory limitation reached so far on datasets containing hundreds of samples across several batches with up to 43 million cells.",
+    "claim_type": "EXPLICIT",
+    "source": "CytofRUV can also handle larger studies, and no memory limitation has been reached so far on other datasets containing hundreds of samples across several batches with up to 43 milllion cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the scalability of the method based on testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "A requirement of CytofRUV is the availability of enough material to have replicated reference samples in each batch.",
+    "claim_type": "EXPLICIT",
+    "source": "A requirement of the current CytofRUV method is the availability of enough material to have replicated reference samples in each batch.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a requirement of the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "To remove batch effects from all samples, it might be necessary to include more than one set of replicated reference samples in the batch.",
+    "claim_type": "EXPLICIT",
+    "source": "As previously mentioned for CytoNorm, and as we also observed for CytofRUV, in order to remove batch effects from all samples, it might be necessary to include more than one set of replicated references samples in the batch, in particular including samples that are similar to each of the main types of samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation based on observations from the study.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "Future work will explore estimating unwanted variation using different replicated reference samples present in only some batches.",
+    "claim_type": "EXPLICIT",
+    "source": "In future work, we plan to explore estimating the unwanted variation using different replicated reference samples, each present in only some of the batches, to avoid the need for replicated reference samples in every batch.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about planned future work.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "The use of a carefully designed 'bridging' set of replicated reference samples should lead to effective normalisation of large studies.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the use of a carefully designed 'bridging' set of replicated reference samples analogous to long term reference samples in metabolomics (Broadhurst et al., 2018) should lead to the normalisation of large studies that is just as effective as that achieved using the same replicated reference samples throughout.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about a potential approach, supported by analogy to metabolomics.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "CytofRUV effectively enables batch effect reduction in mass cytometry.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, we proposed here a computational algorithm called CytofRUV that effectively enables batch effect reduction in mass cytometry with an adaptable normalisation method that detects heterogeneity of cellular responses across large-scale studies with multiple patients, cell types and conditions (e.g. treatment).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about the capabilities of CytofRUV based on the results presented.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Blood was obtained from healthy donors via the Victorian Donor Blood Registry.",
+    "claim_type": "EXPLICIT",
+    "source": "Blood was obtained from healthy donors (via the Victorian Donor Blood Registry) and patients with CLL (via the Royal Melbourne Hospital, Australia).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the sample source.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Blood was obtained from CLL patients via the Royal Melbourne Hospital, Australia.",
+    "claim_type": "EXPLICIT",
+    "source": "Blood was obtained from healthy donors (via the Victorian Donor Blood Registry) and patients with CLL (via the Royal Melbourne Hospital, Australia).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the sample source.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "All patients consented under Melbourne Health HREC 2016.305.",
+    "claim_type": "EXPLICIT",
+    "source": "All patients consented under Melbourne Health HREC 2016.305 and samples were analysed under HREC 2016.066.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about ethical approval.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Samples were analysed under HREC 2016.066.",
+    "claim_type": "EXPLICIT",
+    "source": "All patients consented under Melbourne Health HREC 2016.305 and samples were analysed under HREC 2016.066.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about ethical approval.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "PBMCs were isolated using standard Ficoll-based methods and cryopreserved.",
+    "claim_type": "EXPLICIT",
+    "source": "PBMCs were isolated using standard Ficoll-based methods and cryopreserved.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the sample preparation method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "Cells were stained for viability with cisplatin.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells were thawed and stained for viability with cisplatin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Cells were fixed with paraformaldehyde to a final concentration of 1.6% for 10 min at room temperature.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells were then fixed with paraformaldehyde (PFA: Electron Microscopy Sciences, Hatfield, PA, USA) to a final concentration of 1.6% for 10 min at room temperature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "Cells were barcoded using 20-plex palladium barcoding according to manufacturer's instructions.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells were barcoded using 20-plex palladium barcoding according to manufacturer's instructions (Fluidigm, South San Francisco, CA, USA).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "Cells were stained with CD16/CD32 for 10 min and surface antibodies for 30 min at room temperature.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells were stained with CD16/CD32 for 10 min and surface antibodies (Table 2) for 30 min at room temperature.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "Cells were permeabilized with 4\u00b0C methanol for 10 min.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells were permeabilized with 4\u00b0C methanol for 10 min.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "Cells were stained with intracellular antibodies for 30 min at room temperature.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells were washed three times with CSM and stained with intracellular antibodies (Table 2) for 30 min at room temperature.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "Cells were stained with 125 nm 191Ir/193Ir DNA intercalator in PBS with 1.6% PFA at 4\u00b0C overnight.",
+    "claim_type": "EXPLICIT",
+    "source": "Cells were washed with CSM, then stained with 125 nm 191Ir/193Ir DNA intercalator (Fluidigm, South San Francisco, CA, USA) in PBS with 1.6% PFA at 4\u00b0C overnight.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "Cells were introduced at a constant rate of ~300 cells/sec during mass cytometry analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Throughout the analysis, cells were maintained at 4\u00b0C and introduced at a constant rate of ~300 cells/sec.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Data concatenation, normalisation and debarcoding were done using the R Catalyst package.",
+    "claim_type": "EXPLICIT",
+    "source": "Data concatenation, normalisation and debarcoding are done using the R Catalyst package merging the two batches (RUV_1B and RUV3B) when applying the Finck normalisation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the data processing method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The FCS files from this study are available at flow repository ID FR-FCM-Z2L2.",
+    "claim_type": "EXPLICIT",
+    "source": "The FCS files from this study are available at flow repository ID FR-FCM-Z2L2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about data availability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

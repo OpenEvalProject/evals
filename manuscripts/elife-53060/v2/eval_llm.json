@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42"
+    ],
+    "result": "The study analyzed 946 youths aged 8-23 years from the Philadelphia Neurodevelopmental Cohort after rigorous quality control exclusions. Structural white matter networks were reconstructed using diffusion imaging with probabilistic tractography and a 232-region parcellation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36-C38, C41-C42 provide comprehensive methodological details about sample selection and network reconstruction. The exclusion criteria are clearly documented (C36-C38), imaging parameters are specified (C41), and the network reconstruction approach is described (C42). The final sample size and age range are explicitly stated (C3).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Real brain networks are topologically optimized to reduce energetic costs of transitions to fronto-parietal activation states compared to null networks. The highest energetic costs were observed in fronto-parietal and ventral attention systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 demonstrate that empirical networks show significantly lower control energy (p<2\u00d710\u207b\u00b9\u2076) than degree/strength-preserved null networks (C21-C22), supporting the inference that brain topology is optimized for this transition (C23). System-level analysis shows expected patterns (C20). The comparison to null models provides strong evidence for topological optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Control energy required to activate the fronto-parietal system declines with age during adolescence, with heterogeneous effects across brain systems. Energy decreases in fronto-parietal, visual, and motor systems, but increases in limbic and default mode systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C28 provide converging evidence from whole-brain (C24), system-level (C25-C26), and nodal analyses (C27-C28) using appropriate statistical methods (GAMs with covariates). Effect sizes are modest but significant with proper multiple comparison correction. The heterogeneous developmental patterns across systems are well-documented with specific statistics and confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Developmental declines in control energy are robust to multiple sensitivity analyses, including controlling for modal controllability, network modularity, connectivity strength, and using alternative biologically-defined target states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 demonstrate that the main developmental findings persist across multiple sensitivity analyses with appropriate statistical controls. Results remain significant when controlling for modal controllability (C48), modularity (C49), connectivity strength (C50-C51), and when using an n-back task-defined target state (C52-C53). This comprehensive sensitivity testing strengthens confidence in the primary findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Multivariate patterns of regional control energy predict individual brain maturity with high accuracy (r=0.63, MAE=2.16 years) using cross-validated ridge regression. Key contributing regions include dorsolateral/ventrolateral prefrontal cortex, cingulate, superior parietal, and lateral temporal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29-C31 demonstrate successful age prediction using rigorous nested cross-validation (C29-C30). The prediction accuracy is substantial and statistically significant. Feature weights align with mass-univariate findings (C31), providing convergent validity. The methodological approach with nested parameter tuning and proper train-test splits is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C7",
+      "C34",
+      "C35",
+      "C59"
+    ],
+    "result": "Reduced control energy in bilateral middle cingulate cortex is associated with better executive function and partially mediates the age-related improvement in executive performance. However, the mediation effect is small relative to the direct age effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C32-C35, C59 provide evidence for brain-behavior relationships. The associations between cingulate control energy and executive function are statistically significant after FDR correction (C32-C33). Bootstrapped mediation analyses show significant indirect effects (C34-C35). Importantly, the authors acknowledge the small effect size of mediation (C59), providing appropriate context for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Trajectory distance and control energy are inversely related within subjects and positively correlated across subjects (r=0.97), indicating that longer state transition trajectories require more energy input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 demonstrate the expected relationship between trajectory distance and control energy, supported by both within-subject patterns (C43) and strong cross-subject correlation (C44, r=0.97, p<2\u00d710\u207b\u00b9\u2076). This validates the control energy metric and aligns with prior methodological work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Control energy calculations are robust to different constraint matrices, and developmental effects are specific to executive rather than motor systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 provide important validation analyses. The high correlation (r=0.94) between whole-brain and fronto-parietal-only constraints (C76) demonstrates robustness. The lack of age effects for motor system activation (C77) provides specificity, consistent with the hypothesis that motor development is largely complete by this age range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study has several acknowledged limitations including cross-sectional design, tractography limitations, and potential motion confounds, though appropriate quality control measures were implemented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 appropriately acknowledge study limitations. The cross-sectional design (C64) precludes within-individual inference. Tractography limitations are noted (C65) while acknowledging current state-of-the-art methods (C66). Motion artifact concerns (C67) are addressed through rigorous QA and covariate control. These represent honest and appropriate limitation statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Executive function undergoes protracted development during adolescence, relies on fronto-parietal brain regions, and is associated with intelligence, academic performance, and psychopathology. Both functional and structural connectivity among executive regions undergo developmental remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C19 establish the background knowledge for the study through appropriate citations to prior literature. These claims about executive function development, neural substrates, and connectivity changes are well-established in the field and properly referenced. This provides the necessary scientific context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Executive function was assessed using the Penn Computerized Neurocognitive Battery, with efficiency scores summarized into four factors including executive function through factor analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 describe the cognitive assessment methodology with appropriate citations. The Penn CNB is a validated battery (C39), and the factor analysis approach for deriving executive function scores is properly referenced (C40). This provides adequate methodological detail for the behavioral measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Prior literature establishes that control energy relates to network topology, cross-species differences, and brain stimulation effects. The middle cingulate is critical for executive function, and training/performance are associated with neural efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C54-C58 cite relevant prior work to contextualize the current findings. These include validation of control energy metrics (C45-C47), the role of middle cingulate in executive function (C54), and relationships between cognitive performance and neural efficiency (C55-C58). All claims are properly supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Linear models provide valid insights into nonlinear brain dynamics, with theoretical and practical justifications for using linearized control theory in neuroscience applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 address the limitation of using linear models for nonlinear systems. The authors provide appropriate theoretical justification (C60-C62) and practical examples (C63) from control theory literature. This represents a reasonable defense of the modeling approach, though the fundamental limitation remains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study's large sample provides accurate effect size estimates, and findings align with prior work on brain network topology, metabolic development, and system segregation. Modal controllability measures different aspects of network control than the current approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 provide important context for interpreting results. The discussion of sample size and effect sizes (C68-C69) is appropriate. Alignment with prior literature on network topology (C72), metabolism (C73), and segregation (C74) strengthens the findings. The distinction from modal controllability (C75) clarifies the novelty of the approach. Motor development timing (C70) contextualizes null findings.",
+    "result_type": "MINOR"
+  }
+]

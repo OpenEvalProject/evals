@@ -1,0 +1,2278 @@
+{
+  "submission": {
+    "id": "37b162d1-cb65-4085-a8a7-d516d277ef09",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:12:38.054234Z",
+    "updated_at": "2025-12-02T10:12:38.054234Z"
+  },
+  "content": [
+    {
+      "id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "submission_id": "37b162d1-cb65-4085-a8a7-d516d277ef09",
+      "content_type": "manuscript",
+      "content_text": "# Asymmetry between the two acidic patches dictates the direction of nucleosome sliding by the ISWI chromatin remodeler\n\n## Authors\n\n- Robert F Levendosky<sup>1</sup> ([ORCID: 0000-0002-5101-0810](https://orcid.org/0000-0002-5101-0810))\n- Gregory D Bowman<sup>1</sup> ([ORCID: 0000-0001-8025-4315](https://orcid.org/0000-0001-8025-4315)) \u2020\n\n### Affiliations\n\n1. TC Jenkins Department of Biophysics Johns Hopkins University Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe acidic patch is a functionally important epitope on each face of the nucleosome that affects chromatin remodeling. Although related by 2-fold symmetry of the nucleosome, each acidic patch is uniquely positioned relative to a bound remodeler. An open question is whether remodelers are distinctly responsive to each acidic patch. Previously we reported a method for homogeneously producing asymmetric nucleosomes with distinct H2A/H2B dimers (Levendosky et al., 2016). Here, we use this methodology to show that the Chd1 remodeler from Saccharomyces cerevisiae and ISWI remodelers from human and Drosophila have distinct spatial requirements for the acidic patch. Unlike Chd1, which is equally affected by entry- and exit-side mutations, ISWI remodelers strongly depend on the entry-side acidic patch. Remarkably, asymmetry in the two acidic patches stimulates ISWI to slide mononucleosomes off DNA ends, overriding the remodeler\u2019s preference to shift the histone core toward longer flanking DNA.\n\n## Introduction\n\nIn eukaryotic cells, ATP-dependent chromatin remodelers play key roles in defining the chromatin landscape by assembling, disassembling, and repositioning nucleosomes on DNA (Becker and Workman, 2013). The first chromatin remodeling family discovered, SWI/SNF, was identified for its ability to promote gene activation by disrupting nucleosomes (Hirschhorn et al., 1992; Kwon et al., 1994; Peterson and Herskowitz, 1992). In contrast, Chd1 and ISWI remodelers play an opposing role, reducing cryptic transcription in gene bodies by stimulating nucleosome assembly and organizing nucleosomes into evenly-spaced arrays (Ito et al., 1997; Lusser et al., 2005; Smolle et al., 2012). These two classes of remodelers appear to differ primarily through their responses to available DNA flanking the nucleosome. SWI/SNF enzymes can slide nucleosomes on top of transcription factors bound to flanking DNA, thereby dissociating them, whereas Chd1 and ISWI remodelers preferentially shift nucleosomes away from transcription factors, preserving their occupancy (Dechassa et al., 2010; Kang et al., 2002; Li et al., 2015; Nagaich et al., 2004; Nodelman et al., 2016).\n\nDirectional sliding by Chd1 and ISWI is achieved by coupling DNA sensing to DNA translocation by a conserved ATPase motor (Flaus et al., 2006; Nodelman et al., 2017; Yang et al., 2006). The ATPase motor can shift nucleosomes by acting at either of the two symmetrically related superhelix location 2 (SHL2) sites (McKnight et al., 2011; Schwanbeck et al., 2004; Zofall et al., 2006). At each SHL2 site, the ATPase motor always shifts DNA toward the nucleosome dyad; therefore, action at each site results in DNA movement in opposite directions. Relative to the SHL2 site where the motor acts, flanking DNA that is pulled onto the histone core, referred to as entry-side DNA, is located on the opposite edge of the nucleosome disk, whereas DNA exiting the core is on the same edge at the ATPase motor but a full superhelical turn away. As directional sliding factors, Chd1 and ISWI remodelers show highest sliding activity when DNA is longer and exposed on the entry side and shorter or inaccessible on the exit side (Nodelman et al., 2016; Yang et al., 2006). Chd1 and ISWI remodelers possess a similarly folded DNA-binding domain (DBD) that interacts with flanking DNA (Dang and Bartholomew, 2007; Gr\u00fcne et al., 2003; Nodelman et al., 2017; Ryan et al., 2011; Yamada et al., 2011). For the DBD to reach entry-side DNA with the ATPase motor simultaneously bound at SHL2, the remodeler therefore has to span across the width of the nucleosome disk.\n\nIn addition to DNA flanking the nucleosome, remodelers are also sensitive to other epitopes, presented by the histone core. Recently, the ATPase subunit of the human ISWI remodeler, called SNF2h, and the related ACF complex were shown in two studies to be sensitive to disruption of the nucleosome \u2018acidic patch\u2019 (Dann et al., 2017; Gamarra et al., 2018), a distinctive cluster of eight acidic residues on H2A and H2B that participate in chromatin condensation (Dorigo et al., 2003; Luger et al., 1997; Shogren-Knaak et al., 2006). While the acidic patch is also used by many chromatin factors for nucleosome recognition and binding (Kalashnikova et al., 2013; McGinty and Tan, 2015), Chd1 was found to only have a modest (~2 fold) defect in sliding nucleosomes with acidic patch mutations (Levendosky et al., 2016). One key difference in these studies was that for the experiments with Chd1, only the acidic patch on the entry H2A/H2B dimer was mutated, whereas for the ISWI studies, the acidic patch was mutated on both entry and exit dimers. Therefore, a possible explanation for this discrepancy was that Chd1 might rely more heavily on the exit side acidic patch, which was not tested. A different but related question is whether the ISWI remodeler SNF2h depends equally on both acidic patches, or is more sensitive to mutations on entry or exit H2A/H2B. Although the two acidic patches are related to each other by 2-fold symmetry, each is in a distinct location relative to the SHL2 site where the remodeler ATPase motor acts. Thus, determining whether entry or exit acidic patches are more deleterious is an important question because it should reveal architectural aspects of how remodelers engage key nucleosome epitopes.\n\nWe previously showed that, using the Widom 601 nucleosome positioning sequence, hexasomes can be produced in an oriented fashion, where the sole H2A/H2B dimer preferentially deposits on the so-called TA-rich side (Levendosky et al., 2016). Since nucleosomes can be generated from addition of H2A/H2B dimers to hexasomes, oriented hexasomes allows for the homogeneous production of nucleosomes having different mutations or modifications on each H2A/H2B dimer (Levendosky et al., 2016). Here, we use this methodology for producing nucleosomes having one or both acidic patches mutated in a position-specific fashion, to probe whether the Chd1 remodeler from yeast and ISWI remodelers from human and Drosophila show greater sensitivity to mutations on the entry or exit side H2A/H2B dimer. Our findings indicate that ISWI and Chd1 remodelers differ in how each remodeler responds to acidic patch asymmetry in the histone core. Whereas Chd1 is similarly affected by acidic patch mutations on entry and exit H2A/H2B dimers, ISWI depends much more strongly on having a wild type acidic patch on the entry dimer. This dependence results in strongly biased sliding of asymmetric nucleosomes by ISWI, with net movement toward the side containing the wild type acidic patch. These findings suggest that in vivo, selective blocking of one acidic patch would locally redirect ISWI action to disorganize and potentially disrupt nucleosomes.\n\n## Results\n\n### Chd1 is similarly affected by defects in the entry and exit side acidic patch\n\nTo reveal the spatial requirements that Chd1 and ISWI remodelers may have for the acidic patch, we generated several nucleosomes with acidic patch mutations (APMs, Figure 1A) on one or both sides. To generate homogeneous pools for each combination of mutant/wild type H2A, oriented hexasomes were first made with an H2A/H2B dimer that possessed either a wild type acidic patch (gray) or the APM (red) (Figure 1B). Then, addition of either wild type or APM H2A/H2B dimers to each of these hexasomes produced the four possible combinations of wild type/APM nucleosomes. Since Chd1 and ISWI preferentially shift mononucleosomes to more central positions on short DNA fragments (Stockdale et al., 2006; Yang et al., 2006), we designed the nucleosomes to be end-positioned, with 80 bp of flanking DNA on one side and zero bp on the other. We previously found that the asymmetry of the 601 sequence affected the sliding behavior of Chd1, with a preference for shifting the histone octamer toward the TA-poor side of the 601 sequence (Winger and Bowman, 2017). Therefore, we made two distinct sets of end-positioned nucleosomes, with the long 80 bp flanking DNA either extending from the TA-poor side (by convention here, to the right, referred to as a 0N80 construct), or extending from the TA-rich side (to the left, referred to as an 80N0 construct). For each nucleosome, the two H2A/H2B dimers were either both wild type (WT/WT), both mutated (APM/APM), or contained the acidic patch mutation specifically on the left (APM/WT) or the right (WT/APM).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig1-v2.jpg)\n\n**Figure 1.:** (A) The acidic patch of the nucleosome. In the overview, the surface is shown for one H2A/H2B dimer, with eight residues comprising the acidic patch highlighted in red. The acidic patch mutation (APM) consists of four alanine substitutions on H2A (E61A/E64A/D90A/E92A), highlighted in cyan. The structure shown is PDB code 1KX5 (Davey et al., 2002). (B) Strategy for making asymmetric nucleosomes using oriented hexasomes. As previously shown (Levendosky et al., 2016), hexasomes made with the Widom 601 (Lowary and Widom, 1998) preferentially lack an H2A/H2B dimer on the TA-poor side (here, the right side). Addition of either a wild type (gray) or APM H2A/H2B dimer (red) converts hexasomes to nucleosomes, allowing for production of all four combinations of H2A/H2B dimers with and without the APM. The locations of the H2A/H2B dimers and the H3/H4 tetramer on the Widom 601 is depicted in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The approximate footprint from the histone core contacts of the H2A/H2B dimers (pink) and (H3/H4)2 tetramer (gray) are shown on the Widom 601 sequence (Lowary and Widom, 1998). In hexasomes, the sole H2A/H2B dimer preferentially resides on the TA-rich side of the Widom 601, shown here on the left.\n\nTo investigate how an APM on different sides affects Chd1 activity, we performed native gel sliding assays to monitor the rate of nucleosome centering (Figure 2). For all eight nucleosomes, Chd1 shifted histone octamers away from the DNA ends, consistent with nucleosome centering activity. For both 0N80 and 80N0 constructs, the nucleosomes containing the double APM/APM were shifted most slowly, whereas single APM nucleosomes were only slightly slower than wild type. To better visualize how different nucleosome substrates affected rates, the disappearance of end-positioned nucleosome was plotted over time and fit to single exponential progress curves (Figure 2B). Compared to reactions of WT/WT and APM/APM nucleosomes, progress curves for reactions with single APM H2A/H2B dimers showed intermediate rates, with faster rates when the APM dimer was on the same side as the 80 bp flanking DNA compared to when APM was on the zero bp side.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig2-v2.jpg)\n\n**Figure 2.:** (A) Native gel nucleosome sliding assays using Chd1, with all four arrangements of APM and WT H2A/H2B dimers. Depending on which side the flanking DNA was on, the unique APM dimers were either on entry or exit sides, as indicated. The positions of the nucleosome cartoons indicate end-positioned nucleosomes in the gel, with the lower band representing residual hexasomes. Nucleosome centering is evidenced by slower migration in the gel. Reactions contained 40 nM hexasome, 60 nM H2A/H2B dimer, 200 nM Chd1, and 100 \u00b5M ATP. Note the different time series used (indicated above each gel), which helped capture sliding intermediates given the different reaction rates. Results are representative of three independent replicates. (B) Quantified data from (A) plotting the disappearance of end-positioned nucleosomes, overlaid with single exponential fits. The end-positioned band intensity was normalized to the total band intensity within each lane. Error bars show standard deviations from three replicates. (C) Mean observed rates\u00a0\u00b1\u00a0standard deviations from fits obtained in (B). (D) Relative impact of APMs on Chd1 remodeling rates. Remodeling rates for WT/WT 0N80 and 80N0 were each scaled to 1. Rates for nucleosomes containing APM substitutions were scaled relative to WT/WT made with the same DNA construct. P-values *\u22640.02; **<0.005; ***<0.0005.\n\nIn agreement with our previous findings (Levendosky et al., 2016), APM on the entry-side dimer (adjacent to the 80 bp DNA) had a rather modest effect, slowing down the sliding reaction by\u00a0~2 fold (Figure 2C,D). Here, we find that sliding was also slowed down (~3 fold) by an APM on the exit side H2A/H2B (adjacent to the zero bp DNA side). Interestingly, APM on both sides appeared to have an additive effect, resulting in 7- to 10-fold slower sliding. As we anticipated, the sliding rates for the 0N80 nucleosomes (TA-poor adjacent to 80 bp flanking DNA, Figure 2C, blue bars) was faster than 80N0 nucleosomes (TA-rich adjacent to 80 bp flanking DNA, gray bars). Yet despite these rate differences, the relative slow-down due to APM on one or both sides was remarkably similar, and therefore relatively unbiased by the underlying DNA sequence (Figure 2D). The additive effect of APM implies that either a single remodeler can sense both acidic patches, or possibly that two remodelers on opposite sides of the nucleosome can communicate in a way that is sensitive to the acidic patch. Previous experiments showed that disrupting both acidic patches (APM/APM) more dramatically reduced sliding activity of SNF2h (~200 fold) compared with ACF (~10 fold) (Gamarra et al., 2018). Therefore, the impact of the double APM nucleosomes on Chd1 activity was similar to the reduction in the rate of nucleosome centering observed for ACF.\n\n### ISWI cannot center asymmetric nucleosomes containing a single APM\n\nTo investigate whether ISWI was similarly dependent on both sides of the nucleosome, and how impactful single APM-containing H2A/H2B dimers would be, we performed similar native gel sliding experiments using human SNF2h and Drosophila ACF (Figure 3). In agreement with previous results (Dann et al., 2017; Gamarra et al., 2018), both SNF2h and ACF shifted APM/APM nucleosomes significantly more slowly than WT/WT nucleosomes. As observed with Chd1, SNF2h was sensitive to the 601 sequence orientation, sliding both WT/WT and APM/APM nucleosomes more readily in the 0N80 orientation, with the TA-poor side of 601 on the side adjacent to the 80 bp flanking DNA (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig3-v2.jpg)\n\n**Figure 3.:** (A) Native gel nucleosome sliding assays using SNF2h, with all four arrangements of WT and APM H2A/H2B dimers for 0N80 and 80N0 nucleosomes. Nucleosome centering corresponds to slower migration of nucleosome species. Asterisks highlight noticeable increases in free DNA. Remodeling reactions contained 40 nM hexasome, 80 nM H2A/H2B dimer, 1 \u00b5M SNF2h, and 2 mM ATP. Results are representative of two independent replicates. (B) Native gel nucleosome sliding experiments of 0N80 nucleosomes as in (A), but using Drosophila ACF. Remodeling reactions contained 40 nM hexasome, 70 nM H2A/H2B dimer, 100 nM ACF, and 2 mM ATP. Results are representative of two or more replicates. (C) ISWI remodelers but not Chd1 stimulate release of DNA from 0N80 nucleosomes with APM/WT histone cores. Shown is the accumulation of free DNA normalized to total band intensity from native gel experiments. All reactions tracking free DNA contained 40 nM hexasome, 70 nM H2A/H2B dimer, and 2 mM ATP with either 1 \u00b5M Snf2h, 100 nM ACF, or 200 nM Chd1. The mean and standard deviation of three or four replicates is plotted with single exponentials fits.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** To ensure that the remodeling activity observed in experiments using ACF was not caused by the Iswi ATPase subunit independently, nucleosome sliding activity was monitored after retention of the FLAG-tagged Acf1 regulatory subunit with anti-FLAG beads. Native gel nucleosome sliding experiments (see Materials\u00a0and\u00a0methods section) were conducted using 10 nM ACF complex that was incubated for 30 min on spin columns either without anti-FLAG beads (A), with anti-FLAG beads (B), or with anti-FLAG beads that were blocked with 3xFLAG peptide (C). The loss of activity observed in (B) indicated that remodeling activity from ACF was due to the complete ACF complex. Experiments were carried out in duplicate.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Nucleosome sliding experiments monitored by native acrylamide gels were carried out with 10 nM ACF, 40 nM 0N80 APM hexasomes, 70 nM WT H2A/H2B dimer and 2 mM ATP. To see if the remodeling reaction had reached equilibrium, additional time points were taken after\u00a0~17 and 90 hr. These extended time points show a different distribution, suggesting that nucleosome bands begin moving back down the gel toward the end position. Although much slower than reactions performed with 100 nM ACF, these results are consistent with the finding that ACF initially centers and then shifts asymmetric APM/WT nucleosomes toward an end position. The rightmost lane contains nucleosomes from a reaction assembled without ATP that stayed at room temperature for 5400 min alongside the remodeling reaction. Shown is a representative of three independent replicates.\n\nInterestingly, with asymmetrically placed APMs, both SNF2h and ACF showed different behaviors depending on whether the APM was on the 80 bp or 0 bp side. When the APM was on the 0 bp side, nucleosomes initially moved toward the center (up the gel, migrating more slowly) but then appeared to shift back toward the DNA ends (down the gel) (Figure 3A,B, 0N80 APM/WT and 80N0 WT/APM). After moving up the gel, the return of nucleosomes to the lower, end position coincided with the emergence of free DNA (highlighted with asterisks). For SNF2h, similar increases in free DNA were also observed for single APM-containing nucleosomes on the 80 bp side. These nucleosomes (80N0 APM/WT and 0N80 WT/APM) were different in that they did not yield any slower migrating species, suggesting that SNF2h was unable to shift these toward more central locations. Interestingly, for 80N0 nucleosomes with an APM on the 80 bp side (APM/WT), SNF2h instead produced a faster migrating species expected for hexasomes (Figure 3A).\n\nWhen quantified relative to nucleosome bands, the free DNA species clearly increased over time for both ACF and SNF2h on APM/WT 0N80 nucleosomes (Figure 3C). The same strong increase was not observed for WT/WT nucleosomes, indicating that the asymmetry of the acidic patch was essential. A similar increase in free DNA was not observed for Chd1, reinforcing the conclusion that Chd1 and ISWI respond differently to asymmetric APM/WT nucleosomes.\n\nGiven the common behaviors of ACF and SNF2h in sliding the asymmetric APM nucleosomes, one potential concern we had was whether the ATPase subunit of ACF was dissociated from Acf1. If dissociated, it would not be surprising for the two ATPases without their auxiliary subunit to exhibit similar behavior. Produced commercially, the Drosophila ACF complex was affinity purified by virtue of a FLAG tag on the Acf1 subunit. We reasoned that if the ACF complex was intact, FLAG-Acf1 would be stably associated with the ATPase subunit, allowing both subunits to be pulled down by anti-FLAG antibodies. To test this idea, we incubated ACF with anti-FLAG beads, with the expectation that retention of the intact ACF complex on anti-FLAG beads would remove all nucleosome sliding activity from the flow-through. As a positive control, ACF was passed through a spin filter without anti-FLAG beads, and the flow-through showed nucleosome sliding activity as expected (Figure 3\u2014figure supplement 1A). In contrast, when an ACF sample was incubated with anti-FLAG beads, the flow-through showed no detectable activity (Figure 3\u2014figure supplement 1B). As another control, the anti-FLAG beads were pre-treated with FLAG peptide before incubation with ACF. This pre-treatment resulted in a similar level of nucleosome sliding activity as the no-beads control, indicating that the FLAG-binding ability of the beads was necessary for retention of activity (Figure 3\u2014figure supplement 1C). These control experiments indicate that Acf1 was tightly associated with the ATPase subunit, supporting the notion that the striking sliding behavior of APM/WT 0N80 nucleosomes were characteristics of the full ACF complex.\n\nOne observation we made in the course of these experiments was that the centering-then-decentering behavior of ACF on APM/WT 0N80 nucleosomes appeared to be concentration dependent. With excess ACF over nucleosomes (100 nM ACF, 40 nM nucleosomes), ACF initially shifted end-positioned nucleosomes toward a more central position, followed by a redistribution toward a DNA end (Figure 3B, APM/WT). Yet with a limiting amount of ACF (10 nM ACF, 40 nM nucleosomes), only an initial nucleosome shift toward the center was apparent with a similar time course (Figure 3\u2014figure supplement 1). However, this apparent concentration dependence instead may simply reflect a much slower rate of equilibration with undersaturating ACF, because with extended time points (up to 90 hr), the migration pattern clearly showed a redistribution of nucleosomes back toward end positioning (Figure 3\u2014figure supplement 2).\n\nThese results show that both human SNF2h and Drosophila ACF are strikingly different from yeast Chd1 in how they remodel these asymmetric nucleosomes. Moreover, the appearance of free DNA with APM/WT 0N80 nucleosomes suggests that SNF2h and ACF can destabilize nucleosomes containing a single APM.\n\n### SNF2h slides mononucleosomes with asymmetrically mutated acidic patches off DNA ends\n\nWe suspected that for nucleosomes containing a single APM, the apparent destabilization and inability to maintain histone octamers in a central location may reflect biased, directional movement of nucleosomes. The native gel sliding experiments were consistent with the histone octamer preferentially moving toward the side possessing the wild type acidic patch. To investigate this possibility, we tracked nucleosome sliding at high resolution using histone mapping. This method labels a single cysteine histone mutant with the photo-activatable cross-linker 4-azidophencyl bromide (APB), which forms site-specific cross-links to DNA that can stimulate cleavage of the DNA backbone. Here we labeled H2B(S53C) with APB, which results in nicking one strand of the DNA duplex\u00a0~54 bp from the nucleosome dyad and can be used to report on the position of the histone octamer (Kassabov and Bartholomew, 2004). Since both DNA strands are labeled (FAM and Cy5), DNA cross-linking from both copies of H2B(S53C) allows nucleosome positions to be determined even when the histone octamer is shifted \u2018off the end\u2019 of the DNA fragment, where one H2B(S53C) site loses contact with DNA (Patel et al., 2013; Zofall et al., 2006).\n\nDue to limited quantities of available ACF, all histone mapping was carried out with SNF2h, using all eight combinations of 0N80 and 80N0 nucleosomes (Figure 4 and Figure 4\u2014figure supplement 1). For the symmetric nucleosomes, which contained either two wild type acidic patches or two APM sites, the histone octamers were shifted by SNF2h to more central locations on the DNA fragment (Figure 4A,D and Figure 4\u2014figure supplement 1A,D). For the asymmetric nucleosomes, however, the pattern of nucleosome repositioning was quite different. For both 0N80 and 80N0 nucleosomes, the histone octamer always shifted in the direction of the H2A/H2B dimer containing the wild type acidic patch, regardless of flanking DNA length. On 0N80 nucleosomes, SNF2h shifted WT/APM octamers off the zero side by up to 52 bp (Figure 4B). For the APM/WT nucleosomes, where the wild type and mutated acidic positions are swapped, SNF2h shifted the histone octamer in the opposite direction, across the entire length of the flanking 80 bp (Figure 4C). The same behavior of preferentially shifting the histone octamer toward the side with the wild type acidic patch was observed for 80N0 nucleosomes (Figure 4\u2014figure supplement 1). For all asymmetric APM/WT and WT/APM nucleosomes, the histone octamer shifted farther than the available flanking DNA, which means that portions of the DNA-binding surface of the histones became exposed as the DNA end was pulled to a more internal position on the nucleosome. In each case, the DNA end was shifted up to\u00a0~50 bp past the canonical edge of the nucleosome, which corresponds to the internal SHL2 site where the ATPase motor acts. These results are consistent with the native gel sliding experiments (Figure 3), and suggest that movement of the histone octamer off DNA ends was destabilizing and likely responsible for hexasome formation and free DNA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig4-v2.jpg)\n\n**Figure 4.:** Histone mapping of SNF2h sliding reactions, performed with 0N80 nucleosomes having the four combinations of wild type and APM H2A/H2B dimers: (A) WT/WT, (B) WT/APM, (C) APM/WT, and (D) APM/APM. Shown are scans of urea denaturing gels, which report on the locations of the histone octamer based on sites of H2B(S53C) cross-linking. Two scans are shown for each nucleosome, based on Cy5 and FAM labels on the top and bottom DNA strands, respectively. Numbering beside the gels indicates the distances (bp) the histone octamer shifted relative to the starting position, with the midpoint of the 80 bp flanking DNA highlighted with a central orange bar. Each nucleosome was generated by addition of 200 nM wild type (gray) or APM (red) H2A/H2B dimers to 100 nM wild type or APM hexasome. Cartoon schematics below each gel indicate the composition and orientation of APM and wild type H2A/H2B dimers, the sites of H2B(S53C) cross-linking (black triangles), and interpretations of sliding reactions. Sites where the histone octamer moves off DNA ends are highlighted by dotted\u00a0red boxes. Sliding reactions contained 1 \u00b5M SNF2h and 2 mM ATP, and reactions were quenched at 0, 4, and 64 min. These results are representative of two independent experiments. Analogous experiments using 80N0 nucleosomes are shown in Figure 4\u2014figure supplement 1. Extended gels are shown in Figure 4\u2014figure supplement 2 and Figure 4\u2014figure supplement 3.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Histone mapping of SNF2h sliding reactions, performed with 80N0 nucleosomes having the four combinations of wild type and APM H2A/H2B dimers: (A) WT/WT, (B) WT/APM, (C) APM/WT, and (D) APM/APM. These experiments are analogous to those of Figure 4 but with the opposite sequence orientation of the Widom 601 relative to flanking DNA. These experiments were carried out in duplicate alongside those in Figure 4. Extended gels are shown in Figure 4\u2014figure supplement 2 and Figure 4\u2014figure supplement 3.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** These extended gels include the sequencing ladders used to determine the distances of shifted cross-links for experiments shown in Figure 4 and Figure 4\u2014figure supplement 1. The dyad locations of unshifted nucleosomes are indicated.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** These extended gels include the sequencing ladders used to determine the distances of shifted cross-links for experiments shown in Figure 4 and Figure 4\u2014figure supplement 1. The dyad locations of unshifted nucleosomes are indicated.\n\nThe movement of the octamer \u2018off the end\u2019 of the DNA, means that SNF2h continued to pull DNA onto the nucleosome even after no entry-side flanking DNA was available. SWI/SNF remodelers are well known to be insensitive to DNA flanking the nucleosome, and characteristically slide histone octamers off DNA ends (Saha et al., 2005; Zofall et al., 2006). In contrast, however, ISWI remodelers typically shift histone octamers to more central locations on DNA fragments, requiring entry-side DNA for movement (Stockdale et al., 2006; Yang et al., 2006). Our observation that SNF2h slides these octamers off DNA ends suggests that for ISWI, the importance of the entry-side acidic patch outweighs the necessity of available entry-side flanking DNA.\n\n## Discussion\n\nNucleosome spacing activity, characteristic for Chd1 and ISWI remodelers, arises from an ability to sense and respond to DNA flanking the nucleosome. To generate evenly spaced nucleosomes, these remodelers act on both sides of the nucleosome, with a preference for shifting the histone core toward the side with longer available DNA (Stockdale et al., 2006; Yang et al., 2006). In this study we found that DNA length sensing by Chd1 did not appear affected when one of the two acidic patches of the nucleosome was disrupted. In contrast, asymmetric presentation of the two acidic patches appeared to dictate the direction of nucleosome sliding by ISWI, overriding the enzyme\u2019s normal requirement for flanking DNA on the entry side of the nucleosome.\n\nFor both Chd1 and ISWI remodelers, activation of the ATPase motor at SHL2 correlates with engagement of the DBD on entry-side DNA (Hwang et al., 2014; McKnight et al., 2011; Yang et al., 2006). Notably, for the DBD to simultaneously contact flanking DNA at the entry side while the ATPase motor binds SHL2, the remodeler would have to reach across one of the two faces of the nucleosome disk, where it could encounter the acidic patch of either the entry or exit H2A/H2B dimer. Chd1 was affected to a similar extent whether a single APM was on one side or the other, and although the histone octamers were asymmetric, both APM/WT and WT/APM nucleosomes were centered by Chd1 (Figure 2). This behavior is consistent with stimulation of Chd1 activity when interacting with either entry- or exit-side acidic patches, implying that Chd1 may reach from SHL2 to entry DNA across either face (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig5-v2.jpg)\n\n**Figure 5.:** (A) A cartoon representation showing the two sides of a nucleosome with a remodeler ATPase motor bound at an SHL2 site. Broken arrows show paths connecting the ATPase motor with entry or exit DNA. (B) An illustration of how sliding the histone core off DNA ends impacts flanking DNA relative to the ATPase motor. As for ISWI, if action of the ATPase motor on one side of the nucleosome is severely limited due to an acidic patch mutation (brown\u00a0\"X\"), DNA will be preferentially shifted in one direction due to ATPase action on the side with the wild type acidic patch (orange). Continued action on one side, with\u00a0insufficient counteraction on the other side, will eventually pull all entry side DNA completely onto the histone core. If translocation continues without the need for flanking DNA on the entry side, the end of the DNA will eventually reach the ATPase motor at SHL2 (dotted outline).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45472/elife-45472-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Sequence alignments for a range of orthologs of ISWI (A) and Chd1 (B) chromatin remodelers, focused on the region between that ATPase motor and the DNA binding domain. Domain boundaries were taken from representative crystal structures: 3MWY (Hauk et al., 2010), 3TED (Sharma et al., 2011) and 1OFC (Gr\u00fcne et al., 2003).\n\nSNF2h and ACF, in contrast, had a strikingly asymmetric response to nucleosomes containing one APM and one wild type acidic patch. Rather than centering, the ISWI remodelers always moved asymmetric histone cores toward the side with the wild type H2A/H2B dimer, indicating that activity relied heavily on the entry side acidic patch. Interestingly, the segment between the DBD and NegC, which immediately follows the ATPase, is shorter in ISWI (~40\u201345 residues) compared with the corresponding segment between the DBD and C-terminal bridge of Chd1 (~75\u2013130 residues) (Figure 5\u2014figure supplement 1). The shorter connecting segment for ISWI may therefore limit the path between SHL2 and entry DNA to the nucleosome face containing the entry side H2A/H2B. This potential difference in engaging with only entry side or with both faces of the nucleosome may reflect how remodeler action at the two SHL2 sites is coordinated. For both ISWI and Chd1, two copies of the remodeler can simultaneously occupy the two SHL2 sites on opposite sides of the nucleosome (Nodelman et al., 2017; Racki et al., 2009; Sundaramoorthy et al., 2018). For SNF2h and ACF, however, the remodeler binds cooperatively to nucleosomes as dimers (Racki et al., 2009), whereas no cooperativity has been reported for Chd1. Instead, Chd1 has been shown to dynamically switch between both sides of the nucleosome, perhaps helping to ensure back-and-forth motion without an opposing remodeler (Qiu et al., 2017). Consistent with acting as a monomer, Chd1 is sensitive to DNA flanking both sides of the nucleosome (Nodelman et al., 2016), requiring entry-side DNA for tethering the remodeler to the nucleosome (McKnight et al., 2011) yet also making intramolecular interactions when engaged with exit-side DNA (Farnung et al., 2017; Nodelman et al., 2017; Sundaramoorthy et al., 2018). Whether interactions with the acidic patch are favored when the Chd1 DBD is on entry or exit DNA is presently unclear.\n\nFor ISWI, the strong dependence on the entry side acidic patch resulted in the asymmetric histone cores shifting off DNA ends (Figure 4 and Figure 4\u2014figure supplement 1). This off-the-end movement correlated with the creation of free DNA (Figure 3C) and indicated that, as long as the entry-side acidic patch is available, ISWI can continue to pull DNA onto the nucleosome even after no more entry DNA is available (Figure 5B). Previously, the engagement of the ISWI DBD with entry DNA was considered to be a key step in remodeler activation, proposed to stimulate removal of the inhibitory NegC element from the ATPase motor (Clapier et al., 2017). Indeed, this idea is consistent with the recent discovery that disruption of NegC largely bypasses the need for activation by the acidic patch (Gamarra et al., 2018). However, our finding that SNF2h can pull DNA ends up to the internal SHL2 where the ATPase motor acts (Figure 4) shows significant remodeler activity in the absence of entry side DNA (Figure 5B). This conclusion does not conflict with the model that sufficiently long entry-side DNA stimulates remodeling activity, as previously proposed (Hwang et al., 2014; Yang et al., 2006). Instead, these findings show that the acidic patch is a more important nucleosomal epitope than flanking DNA, and that binding to entry DNA is not essential for activating ISWI remodeling activity.\n\nThe directional sliding we observed with these asymmetric nucleosomes suggests a potential means that ISWI activity might be modulated in vivo. Recent work (Dann et al., 2017; Gamarra et al., 2018) showed that, analogously to mutating the acidic patch, remodeling interference could be accomplished by addition of an acidic patch-binding peptide called LANA (Barbera et al., 2006). With the growing list of chromatin binding factors that interact with the acidic patch (McGinty and Tan, 2015), it is likely that competition for this important epitope in vivo impacts remodeler activity (Gamarra et al., 2018). Based on work described here, we expect that asymmetric association of an acidic patch binding factor, on only one side of the nucleosome, would temporarily disrupt the ability of ISWI remodelers to create or maintain evenly spaced nucleosome arrays. In addition, one possibility is that asymmetric blockage of the acidic patch could transform ISWI remodelers into disruptive enzymes. Remodelers like SWI/SNF that can slide mononucleosomes off DNA ends are disruptive (Hirschhorn et al., 1992; Kwon et al., 1994; Peterson and Herskowitz, 1992; Ulyanova and Schnitzler, 2005; Ulyanova and Schnitzler, 2007), at least in part because shifting a nucleosome into the territory of an adjacent nucleosome is destabilizing (Dechassa et al., 2010; Engeholm et al., 2009). We previously reported that a modified version of Chd1, with the DBD replaced by monomeric streptavidin, could shift biotinylated histones off DNA ends and disrupt canonical nucleosome wrapping in arrays (Patel et al., 2013). This showed that the ability to slide nucleosomes without regard for entry DNA is sufficient for nucleosome-disrupting activity (Patel et al., 2013). For remodelers like ISWI, a block on only one acidic patch would allow nucleosomes to be shifted into, rather than away from, neighboring nucleosomes, and would disrupt rather than preserve transcription factor binding to entry-side DNA. The breaking of inherent two-fold symmetry in the nucleosome can be accomplished through binding of chromatin factors, histone variants, and post translational modifications, and we anticipate that both masking and enhancement of nucleosome epitopes asymmetrically will provide unique strategies for altering the outcome of remodeling reactions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal ANTI-FLAG M2 Affinity Gel</td>\n      <td>Millipore Sigma</td>\n      <td>Cat #:2220</td>\n      <td>(coupled to beads)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>core Widom 601 (uppercase) and flanking DNA sequences (lowercase)</td>\n      <td>Lowary and Widom, 1998</td>\n      <td></td>\n      <td>5\u2019_gggatcctaatgaccaaggaaa gcatgattcttcacaccgagttcatcc cttatgtgatggaccctatacgcggc cgcccTGGAGAATCCCGGTGCC GAGGCCGCTCAATTGGTCGTA GacAGCTCTAGCACCGCTTAAA CGCACGTACGCGCTGTCCCCCG CGTTTTAACCGCCAAGGGGAT TACTCCCTAGTCTCCAGGCACG TGTCAGATATATACATCCTGtgcat gtattgaacagcgaccttgccggtgccag tcggatagtgttccgagctcccactctaga ggatccccgggtaccg_3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>primer: Cy5-0-601</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019/5Cy5/TGGAGAATCCCGGTGCC GAGGCCGCTCAAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>primer: 601\u201380-FAM</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019/56-FAM/cggtacccggggatcctcta gagtgggagc</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>primer: 601\u20130-Cy5</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019/5Cy5/CAGGATGTATATATCTGAC ACGTGCCTGGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>primer: FAM-80\u2013601</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019/56-FAM/gggatcctaatgaccaagg aaagcatgatt</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein (Saccharomyces cerevisiae)</td>\n      <td>ScChd1118-1274</td>\n      <td>McKnight et al., 2011</td>\n      <td></td>\n      <td>from Saccharomyces cerevisiae</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein (Homo sapiens)</td>\n      <td>HsSNF2h</td>\n      <td>Yang et al., 2006</td>\n      <td></td>\n      <td>from Homo sapiens</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein (Drosophila melanogaster)</td>\n      <td>DmACF</td>\n      <td>Actif Motif</td>\n      <td>Cat #:31509</td>\n      <td>from Drosophila melanogaster</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein (Xenopus laevis)</td>\n      <td>XlHistone H2A</td>\n      <td>Luger et al., 1997</td>\n      <td></td>\n      <td>from Xenopus laevis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein (X. laevis)</td>\n      <td>XlHistone H2A- E61A/E64A/D90A/ E92A \u2018APM\u2019</td>\n      <td>Girish et al., 2016</td>\n      <td></td>\n      <td>from Xenopus laevis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein (X. laevis)</td>\n      <td>XlHistone H2B</td>\n      <td>Luger et al., 1997</td>\n      <td></td>\n      <td>from Xenopus laevis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein (X. laevis)</td>\n      <td>XlHistone H2B-S53C</td>\n      <td>Kassabov et al., 2002</td>\n      <td></td>\n      <td>from Xenopus laevis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein (X. laevis)</td>\n      <td>XlHistone H3-C110A</td>\n      <td>Dechassa et al., 2010</td>\n      <td></td>\n      <td>from Xenopus laevis</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein (X. laevis)</td>\n      <td>XlHIistone H4</td>\n      <td>Luger et al., 1997</td>\n      <td></td>\n      <td>from Xenopus laevis</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Thermo sequenase dye primer manual cycle sequencing kit</td>\n      <td>Affymetrix</td>\n      <td>Cat #:79260</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NaCl</td>\n      <td>Fisher Scientific</td>\n      <td>Cat #:S641-500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trizma base</td>\n      <td>Sigma</td>\n      <td>Cat #:T1503-1KG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Boric Acid</td>\n      <td>Fisher Scientific</td>\n      <td>Cat #:A73-500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MgCl2</td>\n      <td>Fisher Scientific</td>\n      <td>Cat #:BP214-500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EDTA</td>\n      <td>Thermo Fisher</td>\n      <td>Cat #:AM9260G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>KCl</td>\n      <td>Fisher Scientific</td>\n      <td>Cat #:P217-500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DTT</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat #:D9779</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sucrose</td>\n      <td>Fisher Scientific</td>\n      <td>Cat #:S5-500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nonidet P-40</td>\n      <td>Fisher Scientific</td>\n      <td>Cat #:MP1RIST1315</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BSA</td>\n      <td>New England Biolabs</td>\n      <td>Cat #:B9000S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Salmon Sperm DNA</td>\n      <td>Invitrogen</td>\n      <td>Cat #:15632\u2013011</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>40% acrylamide/bis solution 19:1</td>\n      <td>Bio-Rad</td>\n      <td>Cat #:1610144</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Urea</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat #:U1250</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Acrylamide</td>\n      <td>Bio-Rad</td>\n      <td>Cat #:1610101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bis N,N\u2019-Methylene-Bis- Acrylamide</td>\n      <td>Bio-Rad</td>\n      <td>Cat #:1610201</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2-mercaptoethanol</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat #:M6250</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4-Azidophenacyl bromide</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat #:A6057</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phenol:Chloroform 5:1</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat #:P1944</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Adenosine triphosphate disodium salt hydrate</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat #:A1852</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>dNTPs</td>\n      <td>Invitrogen</td>\n      <td>Cat #:10297\u2013018</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Multipurpose Mini Spin Columns</td>\n      <td>BioVision</td>\n      <td>Cat # 6572\u201350</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HisPrep FF 16/10 (Nickel affinity)</td>\n      <td>GE</td>\n      <td>Cat # 28-9365-51</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HisTrap HP, 5 ml (Nickel affinity)</td>\n      <td>GE</td>\n      <td>Cat # 17-5248-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiTrap SP FF, 5 ml</td>\n      <td>GE</td>\n      <td>Cat # 17-5157-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiTrap Q FF, 5 ml</td>\n      <td>GE</td>\n      <td>Cat # 17-5156-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiLoad 16/600 Superdex 200, prep grade</td>\n      <td>GE</td>\n      <td>Cat # 28-9893-35</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiLoad 16/600 Superdex 75, prep grade</td>\n      <td>GE</td>\n      <td>Cat # 28-9893-33</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiPrep 26/10 Desalting</td>\n      <td>GE</td>\n      <td>Cat # 17-5087-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiPrep 16/10 Q FF</td>\n      <td>GE</td>\n      <td>Cat # 17-5190-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HiPrep 16/10 SP FF</td>\n      <td>GE</td>\n      <td>Cat # 17-5192-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>imagej.nih.gov/ij/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Mathematica</td>\n      <td>Wolfram</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagent preparation\n\nHistones, DNA and Chd1 (from S. cerevisiae, residues 118\u20131274) were prepared as previously described (Dyer et al., 2004; Hauk et al., 2010; Levendosky et al., 2016; Luger et al., 1999; Patel et al., 2011). Asymmetric nucleosomes were made from hexasomes and H2A/H2B dimers according to Levendosky et al. (2016).\n\nSNF2h (Homo sapiens) was expressed and purified as previously described (Leonard and Narlikar, 2015) with some modifications. SNF2h was expressed from a modified pET3 expression vector (pBH4, kindly provided by Geeta Narlikar), containing an N-terminal 6xHis tag followed by a TEV cut site. Using transformed Rosetta DE3 E. coli cells, cultures were grown at 37\u00b0C in 2X LB media with 1X NaCl, ampicillin (100 \u00b5g/mL) and chloramphenicol (34 \u00b5g/mL) to an optical density at 600 nm (OD600) of\u00a0~0.3 before reducing the temperature to 18\u00b0C. Growth was continued to OD600 of\u00a0~0.6 before inducing with 400 \u00b5M IPTG. After\u00a0~18 hr of expression, cells were harvested, flash frozen and stored at \u221280\u00b0C. After thawing, cells were resuspended and incubated on ice for 30 min in HisBind Buffer A (20 mM Tris-HCl pH 7.8, 500 mM NaCl, 10 mM imidazole, and 10% (v/v) glycerol) supplemented with 1 \u00b5g/mL pepstatin, 3 \u00b5g/mL leupeptin, 2 mM \u03b2-mercaptoethanol, 0.1 mM PMSF, 2.5 mM MgCl2, 0.5 mM CaCl2, 1 mg/mL lysozyme, and 10 mg/mL DNase I. Cells were sonicated and the\u00a0lysate clarified by centrifugation at 45,000 x\u00a0g at 4\u00b0C for 30 min. Clarified lysate was passed over three tandem 5 mL HisTrap HP columns (GE 17\u20135248) pre-equilibrated in HisBind buffer A. After extensive washing, protein was eluted with a gradient of HisBind B (20 mM Tris-HCl pH 7.8, 500 mM NaCl, 1M imidazole, and 10% (v/v) glycerol), with SNF2h eluting between 210 and 300 mM imidazole. Fractions containing SNF2h, as determined by 12% SDS-PAGE, were pooled and buffer exchanged into SEC buffer (25 mM HEPES pH 7.5, 300 mM KCl, 2 mM \u03b2-mercaptoethanol) using an Amicon Ultra 10,000 MWCO spin concentrator. Protein was further purified by passage over a HiPrep 16/10 Q FF column (GE 28-9365-43), with SNF2h in the flow through. Collected protein was concentrated to\u00a0<10 mL and dialyzed (6\u20138 KDa MWCO) overnight at 4\u00b0C in SEC buffer, with addition of\u00a0~1 mg of TEV to cleave the His tag. After addition of imidazole to 7 mM, the cleaved pool was passed over a single 5 mL HisTrap HP column to remove TEV and uncleaved protein. SNF2h was then concentrated and further purified by passage over a HiLoad 16/600 Superdex 200 size exclusion column (GE 28-9893-35) equilibrated in SEC buffer. Based on analysis from 12% SDS-PAGE, purified SNF2h was pooled, concentrated and brought to 10% (v/v) glycerol before flash freezing in liquid N2 and storing at \u221280\u00b0C.\n\nDrosophila ACF complex was purchased from Active Motif (cat. no. 31509). To test the integrity of the ACF complex, FLAG pulldown experiments (Figure 3\u2014figure supplement 1) were performed to see if the Acf1 subunit, which was N-terminally FLAG tagged, was stably associated with the Iswi subunit, which was necessary for nucleosome sliding. First, 10 \u00b5l of anti-FLAG M2 beads (millipore sigma 2220) was loaded onto a multipurpose spin column (BioVision 6572), with the suspension solution removed by centrifugation at 8000 x g for 30 s at 4\u00b0C. The beads were washed twice with 50 \u00b5l of slide buffer without BSA (20 mM HEPES-KOH pH 7.5, 100 mM KCl, 5 mM MgCl2, 1 mM DTT, 5% (w/v) sucrose) followed by centrifugation. Immunoprecipitation of the FLAG tag was carried out by adding 15 \u00b5l of 100 nM ACF complex to each column and incubating while shaking for 30 min at 4\u00b0C. After immunoprecipitation, the unbound remodeler was recovered into a clean microfuge tube by centrifugation. The resulting flow through was used in nucleosome sliding reactions (described below) containing 40 nM APM hexasome, 70 nM WT H2A/H2B dimer, 2 mM ATP and 10 nM ACF, observed by native acrylamide gel electrophoresis. To control for loss or degradation of protein on the column, an equivalent amount of ACF was added to a spin column without anti-FLAG beads (Figure 3\u2014figure supplement 1A). As a separate control to ensure that loss of activity was due to specific pulldown of the FLAG epitope, anti-FLAG beads were pre-blocked with 100 \u00b5l of 1 mg/mL 3xFLAG peptide for 1 hr at 4\u00b0C. Before addition of ACF, beads were washed twice with 50 \u00b5l of slide buffer without BSA to remove unbound peptide (Figure 3\u2014figure supplement 1C).\n\n### Nucleosome sliding\n\nNucleosome sliding reactions monitored by native acrylamide gels were performed as described (Levendosky et al., 2016) with some variations. Reactions were assembled at room temperature in sliding buffer (20 mM HEPES-KOH pH 7.5, 100 mM KCl, 5 mM MgCl2, 0.1 mg/mL BSA, 1 mM DTT, 5% (w/v) sucrose) beginning with the addition of 40 nM hexasome and 60\u201380 nM dimer, which were equilibrated for 10 min, followed by the addition of either Chd1 (200 nM), SNF2h (1 \u00b5M) or ACF (10 nM or 100 nM) and another 10 min equilibration. Reactions were initiated with addition of ATP and samples were collected at the indicated time-points by quenching 1 \u00b5L of the remodeling reaction into 8 \u00b5L of quench buffer (20 mM HEPES-KOH pH 7.5, 100 mM KCl, 0.1 mg/ml BSA, 1 mM DTT, 5% (w/v) sucrose, 25 mM EDTA, 2 \u00b5g/\u00b5l salmon sperm DNA) and immediately placed on ice. Quenched reactions (3 \u00b5L) were loaded on native gels (7% acrylamide with a 60:1 acrylamide:bis-acrylamide crosslinking ratio) and electrophoresed at 130V for 1.5 to 2 hr at 4 \u02daC. Gels were scanned on a Typhoon 5 multiphase scanner (GE) and band intensity was quantified using ImageJ software. For Chd1 reactions, the disappearance of starting material was fit to single exponential decay using Mathematica software (Wolfram).\n\nHistone mapping was performed as previously described (Levendosky et al., 2016) with slight modifications. Reactions (50 \u00b5L) were assembled in sliding buffer (20 mM Tris-HCl pH 7.5, 50 mM KCl, 5 mM MgCl2, 0.1 mg/mL BSA, 1 mM DTT, 5% sucrose (w/v)) with 100 nM hexasome, 200 nM H2A/H2B dimer, and 1 \u00b5M SNF2h and equilibrated for 10 min at room temperature. Reactions were initiated with addition of 2 mM ATP and quenched at the indicated time-points by adding 100 ul of quench buffer (20 mM Tris-HCl pH 7.5, 50 mM KCl, 5 mM MgCl2, 0.1 mg/mL BSA, 1 mM DTT, 5% sucrose (w/v), 25 mM EDTA and 1 \u00b5g/\u00b5L salmon sperm DNA) and transferring to ice. The remainder of the procedure was conducted as previously published (Levendosky et al., 2016).\n",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "0c2b67d8-e675-48c3-94fd-877f17491037",
+      "submission_id": "37b162d1-cb65-4085-a8a7-d516d277ef09",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jerry L Workman, Stowers Institute for Medical Research United States\n\nReviewers:\n- Jerry L Workman, Stowers Institute for Medical Research United States\n- Tom Owen-Hughes, University of Dundee United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.45472.017](https://doi.org/10.7554/eLife.45472.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"For the SNF2h chromatin remodeler, a requirement for the entry-side H2A acidic patch dominates over flanking DNA\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jerry L Workman as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Tom Owen-Hughes (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nLevendosky and Bowman describe analysis of the mechanism of ATP-dependent chromatin remodeling by the Chd1 and SNF2h remodelers, addressing the role of the acidic patch normally localized on the surface H2A/H2B dimers facing solution in the nucleosome. The Chd1 and ISWI remodelers participate in establishing the properly spaced chromatin structure. Using an elegant approach for formation of symmetrical and asymmetrical nucleosomes containing WT or mutant version of the acidic patch, the authors have shown convincingly that Chd1 and ISWI have distinct requirements for the acidic patch. Specifically, action of Chd1 nearly equally depends on the presence of the intact acidic patch at the entry and exit sides, while SNF2h much more strongly depends on the presence of entry-side acidic patch. Moreover, for SNF2h the requirement for the entry-side acidic patch is more important than the requirement for entry side DNA; this feature allows SNF2h to slide nucleosomes off DNA ends on asymmetric mutant nucleosomes containing mutant acidic patch at the exit side. Taken together, the data suggest existence of important functional differences between functionally similar Chd1 and ISWI remodelers.\n\nOverall, this high-quality, technically outstanding work is addressing an important issue, the experimental findings are interesting and important, the data presented support the primary conclusions of the authors, and the manuscript is well written. However, we have some concerns that need to be addressed by the authors:\n\nEssential revisions:\n\n1) A limitation is that it is not known how SNF2h contacts the acidic patch, and it appears this interaction may involve a contact that normally serves to limit the extent of remodelling.\n\nCross-linking is used to great effect to reveal repositioning of histones that is not evident from native gels (APM/APM 80N0 nucleosomes). The WT/APM nucleosomes are partially repositioned by gel shift, so it is important that cross-linking is applied to determine the direction with which nucleosomes are repositioned in the presence of the of the WT/APM dimer combination.\n\n2) Figure 2A: Some of the nucleosome preparations contain considerable amounts of hexasomes (especially 0N80 APM/ APM and 80N0 WT/APM samples). Hexasomes are likely remodeled at a different rate that is difficult to account for. Perhaps the experiments should be repeated for these samples using more homogeneous nucleosome preparations.\n\n3) Figure 2B: It appears from the plots that nucleosome sliding occurs with 100% efficiency for all samples, but according to Figure 2A each sample contains a fraction of nucleosomes in the original position on the gel, variable between the samples. It seems that the authors normalized the plots, considering remodeling at saturation as 100%. This presentation is misleading because the differences in the efficiency of remodeling between the samples are not reflected in the plot. The data should be replotted to reflect the differences in the efficiency of remodeling between the samples.\n\n4) Figure 3: To allow better comparison between the samples, the differences in the time scales should be emphasized. It is particularly important for low-rate reactions (e.g. WT/APM samples). The amounts of histone-free DNA should be quantified and quantitatively compared. Repositioning by SNF2h is about 4 times slower than observed with Chd1 in the presence of 5 times more enzyme. It is a concern that SNF2h is less active and not tested in the context of its normal interaction partners. If it is not possible to use ACF enzyme, the potential limitations of using SNF2h should be mentioned.\n\n5) Figure 4: Markers used to calibrate the gels should be shown in the figure. Mapping of WT/WT nucleosome remodeling should also be shown.\n\n6) The positions of both dimers (preferably and no-preferably binding to nucleosomal DNA) have to be shown on the sequence of the template, perhaps in the supplement. I did not find this description in this or in the original 2016 manuscript.\n",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eb1d1c40-10af-4c44-a78c-f26574c49245",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C1",
+      "claim": "The acidic patch is a functionally important epitope on each face of the nucleosome that affects chromatin remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "The acidic patch is a functionally important epitope on each face of the nucleosome that affects chromatin remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general statement about the acidic patch, supported by the broader literature context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "5a5087db-a863-4acc-985f-3d173d2244cb",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C2",
+      "claim": "Each acidic patch is uniquely positioned relative to a bound remodeler despite being related by 2-fold symmetry of the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Although related by 2-fold symmetry of the nucleosome, each acidic patch is uniquely positioned relative to a bound remodeler.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation based on nucleosome symmetry and remodeler binding geometry.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "6e904dbd-5bcf-4fe2-bb0d-e273e0a9a926",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C3",
+      "claim": "The Chd1 remodeler from Saccharomyces cerevisiae and ISWI remodelers from human and Drosophila have distinct spatial requirements for the acidic patch.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use this methodology to show that the Chd1 remodeler from Saccharomyces cerevisiae and ISWI remodelers from human and Drosophila have distinct spatial requirements for the acidic patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figures 2-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "48bff243-bd69-4986-b762-6c6e3b0d0082",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C4",
+      "claim": "Chd1 is equally affected by entry- and exit-side acidic patch mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Chd1, which is equally affected by entry- and exit-side mutations, ISWI remodelers strongly depend on the entry-side acidic patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data in Figure 2 showing similar effects of APM on either side for Chd1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "4ed38198-6426-426d-a5a4-c97458144f42",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C5",
+      "claim": "ISWI remodelers strongly depend on the entry-side acidic patch.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Chd1, which is equally affected by entry- and exit-side mutations, ISWI remodelers strongly depend on the entry-side acidic patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "ef200708-2e10-49fc-b8fa-23badf9c3ac7",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C6",
+      "claim": "Asymmetry in the two acidic patches stimulates ISWI to slide mononucleosomes off DNA ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, asymmetry in the two acidic patches stimulates ISWI to slide mononucleosomes off DNA ends, overriding the remodeler's preference to shift the histone core toward longer flanking DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histone mapping data in Figure 4 showing directional sliding off DNA ends.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "1c9a37ae-895d-467b-bcb1-98030e2377b8",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C7",
+      "claim": "Asymmetric acidic patches override ISWI's preference to shift the histone core toward longer flanking DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, asymmetry in the two acidic patches stimulates ISWI to slide mononucleosomes off DNA ends, overriding the remodeler's preference to shift the histone core toward longer flanking DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments in Figures 3 and 4 where ISWI slides nucleosomes toward the wild-type acidic patch regardless of DNA length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "a3f01dc2-401d-44bf-b4ae-a7af502bd3e9",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C8",
+      "claim": "SWI/SNF was the first chromatin remodeling family discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "The first chromatin remodeling family discovered, SWI/SNF, was identified for its ability to promote gene activation by disrupting nucleosomes (Hirschhorn et al., 1992; Kwon et al., 1994; Peterson and Herskowitz, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citations to the original discovery papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "8b191e2c-bb0f-4fc6-91ba-0c45b1220e23",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C9",
+      "claim": "SWI/SNF was identified for its ability to promote gene activation by disrupting nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The first chromatin remodeling family discovered, SWI/SNF, was identified for its ability to promote gene activation by disrupting nucleosomes (Hirschhorn et al., 1992; Kwon et al., 1994; Peterson and Herskowitz, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the original discovery papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "836e4ab2-bed8-451a-941b-86cbdc2f57b7",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C10",
+      "claim": "Chd1 and ISWI remodelers play an opposing role to SWI/SNF by reducing cryptic transcription in gene bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Chd1 and ISWI remodelers play an opposing role, reducing cryptic transcription in gene bodies by stimulating nucleosome assembly and organizing nucleosomes into evenly-spaced arrays (Ito et al., 1997; Lusser et al., 2005; Smolle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "c8559455-1e59-4faf-b083-e1291326875f",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C11",
+      "claim": "Chd1 and ISWI remodelers stimulate nucleosome assembly and organize nucleosomes into evenly-spaced arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Chd1 and ISWI remodelers play an opposing role, reducing cryptic transcription in gene bodies by stimulating nucleosome assembly and organizing nucleosomes into evenly-spaced arrays (Ito et al., 1997; Lusser et al., 2005; Smolle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "6aa8be70-f148-4cbb-98ed-57d7a9a55ff8",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C12",
+      "claim": "SWI/SNF enzymes can slide nucleosomes on top of transcription factors bound to flanking DNA, thereby dissociating them.",
+      "claim_type": "EXPLICIT",
+      "source": "SWI/SNF enzymes can slide nucleosomes on top of transcription factors bound to flanking DNA, thereby dissociating them, whereas Chd1 and ISWI remodelers preferentially shift nucleosomes away from transcription factors, preserving their occupancy (Dechassa et al., 2010; Kang et al., 2002; Li et al., 2015; Nagaich et al., 2004; Nodelman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "9fc3a130-7f03-43d8-b2ca-82fc0c3a55cf",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C13",
+      "claim": "Chd1 and ISWI remodelers preferentially shift nucleosomes away from transcription factors, preserving their occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "SWI/SNF enzymes can slide nucleosomes on top of transcription factors bound to flanking DNA, thereby dissociating them, whereas Chd1 and ISWI remodelers preferentially shift nucleosomes away from transcription factors, preserving their occupancy (Dechassa et al., 2010; Kang et al., 2002; Li et al., 2015; Nagaich et al., 2004; Nodelman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "3827a84d-382a-4398-aeee-95d50bba0b77",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C14",
+      "claim": "Directional sliding by Chd1 and ISWI is achieved by coupling DNA sensing to DNA translocation by a conserved ATPase motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Directional sliding by Chd1 and ISWI is achieved by coupling DNA sensing to DNA translocation by a conserved ATPase motor (Flaus et al., 2006; Nodelman et al., 2017; Yang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "7c7b5a98-16a4-4361-8339-89b00505cd96",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C15",
+      "claim": "The ATPase motor can shift nucleosomes by acting at either of the two symmetrically related superhelix location 2 (SHL2) sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATPase motor can shift nucleosomes by acting at either of the two symmetrically related superhelix location 2 (SHL2) sites (McKnight et al., 2011; Schwanbeck et al., 2004; Zofall et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "1a6f34d0-6a02-4260-b628-c688b8a53ada",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C16",
+      "claim": "At each SHL2 site, the ATPase motor always shifts DNA toward the nucleosome dyad.",
+      "claim_type": "EXPLICIT",
+      "source": "At each SHL2 site, the ATPase motor always shifts DNA toward the nucleosome dyad; therefore, action at each site results in DNA movement in opposite directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic description based on established understanding of remodeler action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "1505f6bc-0a4f-4dba-92f3-6d63ff1fd8ee",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C17",
+      "claim": "Action at each SHL2 site results in DNA movement in opposite directions.",
+      "claim_type": "EXPLICIT",
+      "source": "At each SHL2 site, the ATPase motor always shifts DNA toward the nucleosome dyad; therefore, action at each site results in DNA movement in opposite directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the motor shifting DNA toward the dyad from two symmetrically related sites.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "7d104ec0-6906-4fa9-9ea5-f8b4218825a8",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C18",
+      "claim": "Chd1 and ISWI remodelers show highest sliding activity when DNA is longer and exposed on the entry side and shorter or inaccessible on the exit side.",
+      "claim_type": "EXPLICIT",
+      "source": "As directional sliding factors, Chd1 and ISWI remodelers show highest sliding activity when DNA is longer and exposed on the entry side and shorter or inaccessible on the exit side (Nodelman et al., 2016; Yang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "64003c7e-3f1e-4169-b5d6-af38de776852",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C19",
+      "claim": "Chd1 and ISWI remodelers possess a similarly folded DNA-binding domain (DBD) that interacts with flanking DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Chd1 and ISWI remodelers possess a similarly folded DNA-binding domain (DBD) that interacts with flanking DNA (Dang and Bartholomew, 2007; Gr\u00fcne et al., 2003; Nodelman et al., 2017; Ryan et al., 2011; Yamada et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "4e050b1b-e04f-4f5c-85c2-6c48a258eb3a",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C20",
+      "claim": "For the DBD to reach entry-side DNA with the ATPase motor simultaneously bound at SHL2, the remodeler has to span across the width of the nucleosome disk.",
+      "claim_type": "EXPLICIT",
+      "source": "For the DBD to reach entry-side DNA with the ATPase motor simultaneously bound at SHL2, the remodeler therefore has to span across the width of the nucleosome disk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a geometric inference based on the positions of the DBD binding site and SHL2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "9a07d0e8-4d92-44f3-b159-cb5efb9befb4",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C21",
+      "claim": "The ATPase subunit of human ISWI remodeler SNF2h and the related ACF complex are sensitive to disruption of the nucleosome acidic patch.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the ATPase subunit of the human ISWI remodeler, called SNF2h, and the related ACF complex were shown in two studies to be sensitive to disruption of the nucleosome 'acidic patch' (Dann et al., 2017; Gamarra et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to two published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "b9557a9c-468f-4f4b-97c0-2e52d410d9ea",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C22",
+      "claim": "The acidic patch is a distinctive cluster of eight acidic residues on H2A and H2B.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the ATPase subunit of the human ISWI remodeler, called SNF2h, and the related ACF complex were shown in two studies to be sensitive to disruption of the nucleosome 'acidic patch' (Dann et al., 2017; Gamarra et al., 2018), a distinctive cluster of eight acidic residues on H2A and H2B that participate in chromatin condensation (Dorigo et al., 2003; Luger et al., 1997; Shogren-Knaak et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "867e95e5-c6f8-414a-8901-21c55ea6c6dd",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C23",
+      "claim": "The acidic patch participates in chromatin condensation.",
+      "claim_type": "EXPLICIT",
+      "source": "a distinctive cluster of eight acidic residues on H2A and H2B that participate in chromatin condensation (Dorigo et al., 2003; Luger et al., 1997; Shogren-Knaak et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "7c857160-dbfb-4db9-a3b5-8fabd657a00d",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C24",
+      "claim": "The acidic patch is used by many chromatin factors for nucleosome recognition and binding.",
+      "claim_type": "EXPLICIT",
+      "source": "While the acidic patch is also used by many chromatin factors for nucleosome recognition and binding (Kalashnikova et al., 2013; McGinty and Tan, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "6e7b91cc-782c-4183-b6cb-6781723936b2",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C25",
+      "claim": "Chd1 has only a modest (~2 fold) defect in sliding nucleosomes with acidic patch mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Chd1 was found to only have a modest (~2 fold) defect in sliding nucleosomes with acidic patch mutations (Levendosky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "05f84635-bb86-40b9-8025-f181e172324e",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C26",
+      "claim": "For experiments with Chd1, only the acidic patch on the entry H2A/H2B dimer was mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "One key difference in these studies was that for the experiments with Chd1, only the acidic patch on the entry H2A/H2B dimer was mutated, whereas for the ISWI studies, the acidic patch was mutated on both entry and exit dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design differences between previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "6e8565a0-0118-4a47-93c9-cdc1190508d3",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C27",
+      "claim": "For ISWI studies, the acidic patch was mutated on both entry and exit dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "One key difference in these studies was that for the experiments with Chd1, only the acidic patch on the entry H2A/H2B dimer was mutated, whereas for the ISWI studies, the acidic patch was mutated on both entry and exit dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of previous ISWI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "51f2af20-e3f8-47e4-b1bf-3be4090bf8fe",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C28",
+      "claim": "Using the Widom 601 nucleosome positioning sequence, hexasomes can be produced in an oriented fashion, where the sole H2A/H2B dimer preferentially deposits on the TA-rich side.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that, using the Widom 601 nucleosome positioning sequence, hexasomes can be produced in an oriented fashion, where the sole H2A/H2B dimer preferentially deposits on the so-called TA-rich side (Levendosky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "8357146a-85a6-4f79-a8c2-065918256094",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C29",
+      "claim": "Nucleosomes can be generated from addition of H2A/H2B dimers to hexasomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since nucleosomes can be generated from addition of H2A/H2B dimers to hexasomes, oriented hexasomes allows for the homogeneous production of nucleosomes having different mutations or modifications on each H2A/H2B dimer (Levendosky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "26c08b26-2edc-4c58-8092-0b0c94ab3f37",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C30",
+      "claim": "Oriented hexasomes allow for homogeneous production of nucleosomes having different mutations or modifications on each H2A/H2B dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Since nucleosomes can be generated from addition of H2A/H2B dimers to hexasomes, oriented hexasomes allows for the homogeneous production of nucleosomes having different mutations or modifications on each H2A/H2B dimer (Levendosky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "5027ec08-e406-4ce0-b547-ce8a965adc50",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C31",
+      "claim": "Chd1 is similarly affected by acidic patch mutations on entry and exit H2A/H2B dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Chd1 is similarly affected by acidic patch mutations on entry and exit H2A/H2B dimers, ISWI depends much more strongly on having a wild type acidic patch on the entry dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "96d138f7-44ea-47d2-b054-c143d1915b1c",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C32",
+      "claim": "ISWI depends much more strongly on having a wild type acidic patch on the entry dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Chd1 is similarly affected by acidic patch mutations on entry and exit H2A/H2B dimers, ISWI depends much more strongly on having a wild type acidic patch on the entry dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "0cfbc171-7b5c-4ba0-8d63-7dd7ae8de958",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C33",
+      "claim": "Asymmetry in the two acidic patches results in strongly biased sliding of asymmetric nucleosomes by ISWI, with net movement toward the side containing the wild type acidic patch.",
+      "claim_type": "EXPLICIT",
+      "source": "This dependence results in strongly biased sliding of asymmetric nucleosomes by ISWI, with net movement toward the side containing the wild type acidic patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by histone mapping data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "e55d75a7-897f-4ae4-971b-8835af125b9d",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C34",
+      "claim": "Selective blocking of one acidic patch in vivo would locally redirect ISWI action to disorganize and potentially disrupt nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that in vivo, selective blocking of one acidic patch would locally redirect ISWI action to disorganize and potentially disrupt nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "f740016c-8635-4a45-8d3e-0c8fa4beedb6",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C35",
+      "claim": "The acidic patch mutation (APM) consists of four alanine substitutions on H2A (E61A/E64A/D90A/E92A).",
+      "claim_type": "EXPLICIT",
+      "source": "The acidic patch mutation (APM) consists of four alanine substitutions on H2A (E61A/E64A/D90A/E92A), highlighted in cyan.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure legend and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "734d74a9-ccee-4217-8b47-0297d334461a",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C36",
+      "claim": "Chd1 shifted histone octamers away from DNA ends for all eight nucleosomes tested.",
+      "claim_type": "EXPLICIT",
+      "source": "For all eight nucleosomes, Chd1 shifted histone octamers away from the DNA ends, consistent with nucleosome centering activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the native gel data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "56347ea6-ff32-465e-8bc9-f20142f9601d",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C37",
+      "claim": "For both 0N80 and 80N0 constructs, nucleosomes containing the double APM/APM were shifted most slowly by Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "For both 0N80 and 80N0 constructs, the nucleosomes containing the double APM/APM were shifted most slowly, whereas single APM nucleosomes were only slightly slower than wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 2A and quantified in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "11c6f2b4-6a4e-4f16-a0d3-2efe4a077b39",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C38",
+      "claim": "Single APM nucleosomes were shifted only slightly slower than wild type by Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "For both 0N80 and 80N0 constructs, the nucleosomes containing the double APM/APM were shifted most slowly, whereas single APM nucleosomes were only slightly slower than wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 2A and quantified in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "257861d2-e986-4639-a1e4-24100df2a96c",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C39",
+      "claim": "APM on the entry-side dimer had a modest effect on Chd1, slowing down the sliding reaction by ~2 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our previous findings (Levendosky et al., 2016), APM on the entry-side dimer (adjacent to the 80 bp DNA) had a rather modest effect, slowing down the sliding reaction by ~2 fold (Figure 2C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the quantified data in Figure 2C-D and consistent with previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "5e1f0b87-00bf-4662-bc0c-5927014e5f38",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C40",
+      "claim": "Sliding by Chd1 was slowed down (~3 fold) by an APM on the exit side H2A/H2B.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that sliding was also slowed down (~3 fold) by an APM on the exit side H2A/H2B (adjacent to the zero bp DNA side).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a new finding supported by the data in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "b9ea77de-38c9-4ac1-81db-5df84091b949",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C41",
+      "claim": "APM on both sides of the nucleosome appeared to have an additive effect on Chd1 activity, resulting in 7- to 10-fold slower sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, APM on both sides appeared to have an additive effect, resulting in 7- to 10-fold slower sliding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the quantified data in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "de8c4d94-0452-43e3-b35e-fa5648393654",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C42",
+      "claim": "The sliding rates for 0N80 nucleosomes were faster than 80N0 nucleosomes for Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "As we anticipated, the sliding rates for the 0N80 nucleosomes (TA-poor adjacent to 80 bp flanking DNA, Figure 2C, blue bars) was faster than 80N0 nucleosomes (TA-rich adjacent to 80 bp flanking DNA, gray bars).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the quantified data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "88b6253c-c02b-4044-9f0a-71af31a2cc1e",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C43",
+      "claim": "The relative slow-down due to APM on one or both sides was remarkably similar for 0N80 and 80N0 nucleosomes with Chd1, and therefore relatively unbiased by the underlying DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet despite these rate differences, the relative slow-down due to APM on one or both sides was remarkably similar, and therefore relatively unbiased by the underlying DNA sequence (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the normalized data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "c22b27ae-63c1-4682-bcc6-c253d2a6b44e",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C44",
+      "claim": "The additive effect of APM on Chd1 implies that either a single remodeler can sense both acidic patches, or possibly that two remodelers on opposite sides of the nucleosome can communicate in a way that is sensitive to the acidic patch.",
+      "claim_type": "EXPLICIT",
+      "source": "The additive effect of APM implies that either a single remodeler can sense both acidic patches, or possibly that two remodelers on opposite sides of the nucleosome can communicate in a way that is sensitive to the acidic patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the additive effect observed in the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "d0ce4960-a209-47b2-990f-f6a7400ababb",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C45",
+      "claim": "Disrupting both acidic patches (APM/APM) reduced sliding activity of SNF2h ~200 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experiments showed that disrupting both acidic patches (APM/APM) more dramatically reduced sliding activity of SNF2h (~200 fold) compared with ACF (~10 fold) (Gamarra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "c9accd95-3fec-4e49-bae7-ca4bccc3fd9f",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C46",
+      "claim": "Disrupting both acidic patches (APM/APM) reduced sliding activity of ACF ~10 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experiments showed that disrupting both acidic patches (APM/APM) more dramatically reduced sliding activity of SNF2h (~200 fold) compared with ACF (~10 fold) (Gamarra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "f1f252c3-a090-4eb1-9972-1bd42cbcbaf8",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C47",
+      "claim": "The impact of double APM nucleosomes on Chd1 activity was similar to the reduction in the rate of nucleosome centering observed for ACF.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the impact of the double APM nucleosomes on Chd1 activity was similar to the reduction in the rate of nucleosome centering observed for ACF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the current findings and previous results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "420066b8-a33f-4037-80a7-0a4072cd7748",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C48",
+      "claim": "Both SNF2h and ACF shifted APM/APM nucleosomes significantly more slowly than WT/WT nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous results (Dann et al., 2017; Gamarra et al., 2018), both SNF2h and ACF shifted APM/APM nucleosomes significantly more slowly than WT/WT nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 3A-B and consistent with previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "c80f02a6-b5d1-4f99-a0ae-e55f8c34e8ed",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C49",
+      "claim": "SNF2h was sensitive to the 601 sequence orientation, sliding both WT/WT and APM/APM nucleosomes more readily in the 0N80 orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed with Chd1, SNF2h was sensitive to the 601 sequence orientation, sliding both WT/WT and APM/APM nucleosomes more readily in the 0N80 orientation, with the TA-poor side of 601 on the side adjacent to the 80 bp flanking DNA (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "fd150dfe-44b5-42c2-8676-741ef6a9d1f6",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C50",
+      "claim": "With asymmetrically placed APMs, both SNF2h and ACF showed different behaviors depending on whether the APM was on the 80 bp or 0 bp side.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, with asymmetrically placed APMs, both SNF2h and ACF showed different behaviors depending on whether the APM was on the 80 bp or 0 bp side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "bf56bda1-ccf8-463f-91cd-970ae7f6487b",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C51",
+      "claim": "When the APM was on the 0 bp side, nucleosomes initially moved toward the center but then appeared to shift back toward the DNA ends for SNF2h and ACF.",
+      "claim_type": "EXPLICIT",
+      "source": "When the APM was on the 0 bp side, nucleosomes initially moved toward the center (up the gel, migrating more slowly) but then appeared to shift back toward the DNA ends (down the gel) (Figure 3A,B, 0N80 APM/WT and 80N0 WT/APM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the native gel data in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "ffdeafb5-d1be-4d58-9676-7ae053945c21",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C52",
+      "claim": "After moving up the gel, the return of nucleosomes to the lower, end position coincided with the emergence of free DNA for SNF2h and ACF.",
+      "claim_type": "EXPLICIT",
+      "source": "After moving up the gel, the return of nucleosomes to the lower, end position coincided with the emergence of free DNA (highlighted with asterisks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the native gel data in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "0e25b789-ec80-440a-8f4d-4338152cfb44",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C53",
+      "claim": "For SNF2h, similar increases in free DNA were observed for single APM-containing nucleosomes on the 80 bp side.",
+      "claim_type": "EXPLICIT",
+      "source": "For SNF2h, similar increases in free DNA were also observed for single APM-containing nucleosomes on the 80 bp side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "d916d86c-e7c5-43b7-badf-e3f44008773b",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C54",
+      "claim": "SNF2h was unable to shift nucleosomes with APM on the 80 bp side toward more central locations.",
+      "claim_type": "EXPLICIT",
+      "source": "These nucleosomes (80N0 APM/WT and 0N80 WT/APM) were different in that they did not yield any slower migrating species, suggesting that SNF2h was unable to shift these toward more central locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the native gel data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "291230ea-aaf0-4c07-b05c-914abd6f231c",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C55",
+      "claim": "For 80N0 nucleosomes with an APM on the 80 bp side (APM/WT), SNF2h produced a faster migrating species expected for hexasomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, for 80N0 nucleosomes with an APM on the 80 bp side (APM/WT), SNF2h instead produced a faster migrating species expected for hexasomes (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the native gel data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "9ec7b754-2b9c-40aa-bd67-1c79efad7413",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C56",
+      "claim": "The free DNA species clearly increased over time for both ACF and SNF2h on APM/WT 0N80 nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "When quantified relative to nucleosome bands, the free DNA species clearly increased over time for both ACF and SNF2h on APM/WT 0N80 nucleosomes (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the quantified data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "11e69e04-acc0-44ea-a48f-897566514821",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C57",
+      "claim": "The strong increase in free DNA was not observed for WT/WT nucleosomes with SNF2h and ACF, indicating that the asymmetry of the acidic patch was essential.",
+      "claim_type": "EXPLICIT",
+      "source": "The same strong increase was not observed for WT/WT nucleosomes, indicating that the asymmetry of the acidic patch was essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the quantified data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "bfae3b0c-977c-4767-81b9-c6b7e154f01f",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C58",
+      "claim": "A similar increase in free DNA was not observed for Chd1 on APM/WT nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar increase in free DNA was not observed for Chd1, reinforcing the conclusion that Chd1 and ISWI respond differently to asymmetric APM/WT nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the quantified data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "522ce92b-1892-4341-bcc7-6c4fa8dc91ed",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C59",
+      "claim": "FLAG-Acf1 was stably associated with the ATPase subunit in the ACF complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These control experiments indicate that Acf1 was tightly associated with the ATPase subunit, supporting the notion that the striking sliding behavior of APM/WT 0N80 nucleosomes were characteristics of the full ACF complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the FLAG pulldown experiments in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "8df62d10-4713-4e28-81d9-3e2e027760f5",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C60",
+      "claim": "The centering-then-decentering behavior of ACF on APM/WT 0N80 nucleosomes appeared to be concentration dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "One observation we made in the course of these experiments was that the centering-then-decentering behavior of ACF on APM/WT 0N80 nucleosomes appeared to be concentration dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparing data at different ACF concentrations in Figure 3B and Figure 3\u2014figure supplement 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "717e9295-9c79-473f-ac8d-f87521aa1a62",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C61",
+      "claim": "With excess ACF over nucleosomes (100 nM ACF, 40 nM nucleosomes), ACF initially shifted end-positioned nucleosomes toward a more central position, followed by a redistribution toward a DNA end.",
+      "claim_type": "EXPLICIT",
+      "source": "With excess ACF over nucleosomes (100 nM ACF, 40 nM nucleosomes), ACF initially shifted end-positioned nucleosomes toward a more central position, followed by a redistribution toward a DNA end (Figure 3B, APM/WT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the native gel data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "89839b08-4e1c-4801-8313-1b96a3d5b836",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C62",
+      "claim": "With a limiting amount of ACF (10 nM ACF, 40 nM nucleosomes), only an initial nucleosome shift toward the center was apparent.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet with a limiting amount of ACF (10 nM ACF, 40 nM nucleosomes), only an initial nucleosome shift toward the center was apparent with a similar time course (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "ecafba97-fc48-417d-87eb-7be1f7ba99cf",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C63",
+      "claim": "With extended time points (up to 90 hr) and limiting ACF, the migration pattern clearly showed a redistribution of nucleosomes back toward end positioning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this apparent concentration dependence instead may simply reflect a much slower rate of equilibration with undersaturating ACF, because with extended time points (up to 90 hr), the migration pattern clearly showed a redistribution of nucleosomes back toward end positioning (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "d19cdf49-fe02-473d-ac75-cf6f251bfb6a",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C64",
+      "claim": "Both human SNF2h and Drosophila ACF are strikingly different from yeast Chd1 in how they remodel asymmetric nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that both human SNF2h and Drosophila ACF are strikingly different from yeast Chd1 in how they remodel these asymmetric nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "50296f5e-8aa6-4b44-aba7-4b0c88efcde0",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C65",
+      "claim": "The appearance of free DNA with APM/WT 0N80 nucleosomes suggests that SNF2h and ACF can destabilize nucleosomes containing a single APM.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the appearance of free DNA with APM/WT 0N80 nucleosomes suggests that SNF2h and ACF can destabilize nucleosomes containing a single APM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the free DNA data in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "6fc08f22-d95a-4ca3-8035-595d2831ef1d",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C66",
+      "claim": "For nucleosomes containing a single APM, the apparent destabilization and inability to maintain histone octamers in a central location may reflect biased, directional movement of nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspected that for nucleosomes containing a single APM, the apparent destabilization and inability to maintain histone octamers in a central location may reflect biased, directional movement of nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that motivated the histone mapping experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "98753b2c-3abf-43e1-9a7c-98b546a875bd",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C67",
+      "claim": "The native gel sliding experiments were consistent with the histone octamer preferentially moving toward the side possessing the wild type acidic patch.",
+      "claim_type": "EXPLICIT",
+      "source": "The native gel sliding experiments were consistent with the histone octamer preferentially moving toward the side possessing the wild type acidic patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the native gel data in Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "163ab105-d3fe-4f21-8089-ca9559b76e34",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C68",
+      "claim": "For symmetric nucleosomes (WT/WT or APM/APM), SNF2h shifted histone octamers to more central locations on the DNA fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "For the symmetric nucleosomes, which contained either two wild type acidic patches or two APM sites, the histone octamers were shifted by SNF2h to more central locations on the DNA fragment (Figure 4A,D and Figure 4\u2014figure supplement 1A,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the histone mapping data in Figure 4A,D and Figure 4\u2014figure supplement 1A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "ec446a2a-a1e0-4feb-9b47-41142337d13c",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C69",
+      "claim": "For asymmetric nucleosomes, the histone octamer always shifted in the direction of the H2A/H2B dimer containing the wild type acidic patch, regardless of flanking DNA length.",
+      "claim_type": "EXPLICIT",
+      "source": "For the asymmetric nucleosomes, however, the pattern of nucleosome repositioning was quite different. For both 0N80 and 80N0 nucleosomes, the histone octamer always shifted in the direction of the H2A/H2B dimer containing the wild type acidic patch, regardless of flanking DNA length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the histone mapping data in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "12c40959-11e6-4bb1-9a56-0bbf580cbabd",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C70",
+      "claim": "On 0N80 nucleosomes, SNF2h shifted WT/APM octamers off the zero side by up to 52 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "On 0N80 nucleosomes, SNF2h shifted WT/APM octamers off the zero side by up to 52 bp (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the histone mapping data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "f9ed05b9-0262-4ec3-91cc-1560d0b835b6",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C71",
+      "claim": "For APM/WT 0N80 nucleosomes, SNF2h shifted the histone octamer in the opposite direction, across the entire length of the flanking 80 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "For the APM/WT nucleosomes, where the wild type and mutated acidic positions are swapped, SNF2h shifted the histone octamer in the opposite direction, across the entire length of the flanking 80 bp (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the histone mapping data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "5843fb7d-e890-40a1-8e26-45186c3d92f1",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C72",
+      "claim": "For all asymmetric APM/WT and WT/APM nucleosomes, the histone octamer shifted farther than the available flanking DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For all asymmetric APM/WT and WT/APM nucleosomes, the histone octamer shifted farther than the available flanking DNA, which means that portions of the DNA-binding surface of the histones became exposed as the DNA end was pulled to a more internal position on the nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the histone mapping data in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "a10051c6-fd50-46d6-ae31-c1c4a95391ee",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C73",
+      "claim": "The DNA end was shifted up to ~50 bp past the canonical edge of the nucleosome, which corresponds to the internal SHL2 site where the ATPase motor acts.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the DNA end was shifted up to ~50 bp past the canonical edge of the nucleosome, which corresponds to the internal SHL2 site where the ATPase motor acts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the histone mapping data in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "002aa378-71d5-42e2-ab17-38d7d2187cc3",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C74",
+      "claim": "Movement of the histone octamer off DNA ends was destabilizing and likely responsible for hexasome formation and free DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the native gel sliding experiments (Figure 3), and suggest that movement of the histone octamer off DNA ends was destabilizing and likely responsible for hexasome formation and free DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the histone mapping data to the native gel observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "20eac260-089e-49ef-ae29-406aa7c6b18c",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C75",
+      "claim": "SNF2h continued to pull DNA onto the nucleosome even after no entry-side flanking DNA was available.",
+      "claim_type": "EXPLICIT",
+      "source": "The movement of the octamer 'off the end' of the DNA, means that SNF2h continued to pull DNA onto the nucleosome even after no entry-side flanking DNA was available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the histone mapping data showing off-the-end sliding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "3eda7376-c103-4c26-828a-3874d5ea8720",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C76",
+      "claim": "SWI/SNF remodelers are well known to be insensitive to DNA flanking the nucleosome, and characteristically slide histone octamers off DNA ends.",
+      "claim_type": "EXPLICIT",
+      "source": "SWI/SNF remodelers are well known to be insensitive to DNA flanking the nucleosome, and characteristically slide histone octamers off DNA ends (Saha et al., 2005; Zofall et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "7e573bd9-4fa3-4355-a3d6-1fdb2671aeda",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C77",
+      "claim": "ISWI remodelers typically shift histone octamers to more central locations on DNA fragments, requiring entry-side DNA for movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, however, ISWI remodelers typically shift histone octamers to more central locations on DNA fragments, requiring entry-side DNA for movement (Stockdale et al., 2006; Yang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "71165138-1200-4ddd-9a9d-36ee0237f036",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C78",
+      "claim": "The observation that SNF2h slides octamers off DNA ends suggests that for ISWI, the importance of the entry-side acidic patch outweighs the necessity of available entry-side flanking DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation that SNF2h slides these octamers off DNA ends suggests that for ISWI, the importance of the entry-side acidic patch outweighs the necessity of available entry-side flanking DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "a860e94e-cf9c-4592-9ba6-e00b12eccb92",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C79",
+      "claim": "DNA length sensing by Chd1 did not appear affected when one of the two acidic patches of the nucleosome was disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we found that DNA length sensing by Chd1 did not appear affected when one of the two acidic patches of the nucleosome was disrupted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the Chd1 findings from Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "9d7ba91d-f702-448d-a705-00534402403f",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C80",
+      "claim": "Asymmetric presentation of the two acidic patches appeared to dictate the direction of nucleosome sliding by ISWI, overriding the enzyme's normal requirement for flanking DNA on the entry side of the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, asymmetric presentation of the two acidic patches appeared to dictate the direction of nucleosome sliding by ISWI, overriding the enzyme's normal requirement for flanking DNA on the entry side of the nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the ISWI findings from Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "8d17030d-35a2-42e1-b7a6-ed9c583cfbf4",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C81",
+      "claim": "For both Chd1 and ISWI remodelers, activation of the ATPase motor at SHL2 correlates with engagement of the DBD on entry-side DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For both Chd1 and ISWI remodelers, activation of the ATPase motor at SHL2 correlates with engagement of the DBD on entry-side DNA (Hwang et al., 2014; McKnight et al., 2011; Yang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "ed22ec30-ad11-41f6-8ed8-da3c805f85b0",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C82",
+      "claim": "Chd1 was affected to a similar extent whether a single APM was on one side or the other, and both APM/WT and WT/APM nucleosomes were centered by Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "Chd1 was affected to a similar extent whether a single APM was on one side or the other, and although the histone octamers were asymmetric, both APM/WT and WT/APM nucleosomes were centered by Chd1 (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "18a9babb-9e8d-449d-8894-d877bd251e89",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C83",
+      "claim": "The behavior of Chd1 is consistent with stimulation of Chd1 activity when interacting with either entry- or exit-side acidic patches.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior is consistent with stimulation of Chd1 activity when interacting with either entry- or exit-side acidic patches, implying that Chd1 may reach from SHL2 to entry DNA across either face (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Chd1 data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "c8538d6e-da7d-42c4-b65e-8d72fedb642a",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C84",
+      "claim": "SNF2h and ACF had a strikingly asymmetric response to nucleosomes containing one APM and one wild type acidic patch.",
+      "claim_type": "EXPLICIT",
+      "source": "SNF2h and ACF, in contrast, had a strikingly asymmetric response to nucleosomes containing one APM and one wild type acidic patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "2e120489-ed45-414b-8a73-94b3398931db",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C85",
+      "claim": "ISWI remodelers always moved asymmetric histone cores toward the side with the wild type H2A/H2B dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than centering, the ISWI remodelers always moved asymmetric histone cores toward the side with the wild type H2A/H2B dimer, indicating that activity relied heavily on the entry side acidic patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "292f6f17-b8c5-4dc1-b54d-185e87867c24",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C86",
+      "claim": "The segment between the DBD and NegC is shorter in ISWI (~40\u201345 residues) compared with the corresponding segment between the DBD and C-terminal bridge of Chd1 (~75\u2013130 residues).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the segment between the DBD and NegC, which immediately follows the ATPase, is shorter in ISWI (~40\u201345 residues) compared with the corresponding segment between the DBD and C-terminal bridge of Chd1 (~75\u2013130 residues) (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignments shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "9c2322d4-bd89-4b8e-ba62-f26ca4846a5c",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C87",
+      "claim": "The shorter connecting segment for ISWI may limit the path between SHL2 and entry DNA to the nucleosome face containing the entry side H2A/H2B.",
+      "claim_type": "EXPLICIT",
+      "source": "The shorter connecting segment for ISWI may therefore limit the path between SHL2 and entry DNA to the nucleosome face containing the entry side H2A/H2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the sequence analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "11e9c202-3ec0-479e-a2c3-af2cceac23e5",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C88",
+      "claim": "For both ISWI and Chd1, two copies of the remodeler can simultaneously occupy the two SHL2 sites on opposite sides of the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "For both ISWI and Chd1, two copies of the remodeler can simultaneously occupy the two SHL2 sites on opposite sides of the nucleosome (Nodelman et al., 2017; Racki et al., 2009; Sundaramoorthy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "b53571a4-8732-44bc-8e08-8e5b50285b96",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C89",
+      "claim": "SNF2h and ACF bind cooperatively to nucleosomes as dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "For SNF2h and ACF, however, the remodeler binds cooperatively to nucleosomes as dimers (Racki et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "2e7ce393-1a62-45de-85f1-67a499a8c037",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C90",
+      "claim": "No cooperativity has been reported for Chd1.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas no cooperativity has been reported for Chd1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of reported cooperativity in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "f88602fe-2879-4324-959b-31ab21dbede0",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C91",
+      "claim": "Chd1 has been shown to dynamically switch between both sides of the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, Chd1 has been shown to dynamically switch between both sides of the nucleosome, perhaps helping to ensure back-and-forth motion without an opposing remodeler (Qiu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "6c083ce5-11d0-4009-afcb-25bf45998f94",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C92",
+      "claim": "Chd1 is sensitive to DNA flanking both sides of the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with acting as a monomer, Chd1 is sensitive to DNA flanking both sides of the nucleosome (Nodelman et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "10f4f587-a119-4bfd-9286-3836320ee3ea",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C93",
+      "claim": "Chd1 requires entry-side DNA for tethering the remodeler to the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "requiring entry-side DNA for tethering the remodeler to the nucleosome (McKnight et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "63c56b7f-c88d-426e-9cef-57213d4c8cbf",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C94",
+      "claim": "Chd1 makes intramolecular interactions when engaged with exit-side DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "yet also making intramolecular interactions when engaged with exit-side DNA (Farnung et al., 2017; Nodelman et al., 2017; Sundaramoorthy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "ddb26950-ced5-4842-9c5c-067c64e1b91b",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C95",
+      "claim": "The strong dependence on the entry side acidic patch resulted in asymmetric histone cores shifting off DNA ends for ISWI.",
+      "claim_type": "EXPLICIT",
+      "source": "For ISWI, the strong dependence on the entry side acidic patch resulted in the asymmetric histone cores shifting off DNA ends (Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the histone mapping data in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "f970d06d-d6dc-4107-85f2-1a0731d59c99",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C96",
+      "claim": "Off-the-end movement by ISWI correlated with the creation of free DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This off-the-end movement correlated with the creation of free DNA (Figure 3C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "79cc2098-f500-44b2-b883-240ed8ce4f1d",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C97",
+      "claim": "As long as the entry-side acidic patch is available, ISWI can continue to pull DNA onto the nucleosome even after no more entry DNA is available.",
+      "claim_type": "EXPLICIT",
+      "source": "and indicated that, as long as the entry-side acidic patch is available, ISWI can continue to pull DNA onto the nucleosome even after no more entry DNA is available (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the histone mapping data showing off-the-end sliding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "a8f17424-c1b6-47f0-b173-e3c1f22e8582",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C98",
+      "claim": "The engagement of the ISWI DBD with entry DNA was previously proposed to stimulate removal of the inhibitory NegC element from the ATPase motor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the engagement of the ISWI DBD with entry DNA was considered to be a key step in remodeler activation, proposed to stimulate removal of the inhibitory NegC element from the ATPase motor (Clapier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "8f1793d7-162d-4f7d-acb8-71f23d30afa7",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C99",
+      "claim": "Disruption of NegC largely bypasses the need for activation by the acidic patch.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this idea is consistent with the recent discovery that disruption of NegC largely bypasses the need for activation by the acidic patch (Gamarra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "aee6cc16-d639-4a4b-ae36-4eaae17c534b",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C100",
+      "claim": "SNF2h can pull DNA ends up to the internal SHL2 where the ATPase motor acts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our finding that SNF2h can pull DNA ends up to the internal SHL2 where the ATPase motor acts (Figure 4) shows significant remodeler activity in the absence of entry side DNA (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the histone mapping data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "a4656745-e6e0-49c9-97c7-f0837ba206ca",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C101",
+      "claim": "The acidic patch is a more important nucleosomal epitope than flanking DNA for ISWI.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, these findings show that the acidic patch is a more important nucleosomal epitope than flanking DNA, and that binding to entry DNA is not essential for activating ISWI remodeling activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "1ad14e7e-76e6-457e-b35d-f5ecbe886600",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C102",
+      "claim": "Binding to entry DNA is not essential for activating ISWI remodeling activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, these findings show that the acidic patch is a more important nucleosomal epitope than flanking DNA, and that binding to entry DNA is not essential for activating ISWI remodeling activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "867aa748-66e8-4699-bbb5-a6c834e07c90",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C103",
+      "claim": "Remodeling interference can be accomplished by addition of an acidic patch-binding peptide called LANA.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work (Dann et al., 2017; Gamarra et al., 2018) showed that, analogously to mutating the acidic patch, remodeling interference could be accomplished by addition of an acidic patch-binding peptide called LANA (Barbera et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "590de223-4f95-4553-9cee-16de04ddadb1",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C104",
+      "claim": "Competition for the acidic patch in vivo likely impacts remodeler activity.",
+      "claim_type": "EXPLICIT",
+      "source": "With the growing list of chromatin binding factors that interact with the acidic patch (McGinty and Tan, 2015), it is likely that competition for this important epitope in vivo impacts remodeler activity (Gamarra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "99aca299-fec0-4636-9aa8-475bb6b2dae0",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C105",
+      "claim": "Asymmetric association of an acidic patch binding factor would temporarily disrupt the ability of ISWI remodelers to create or maintain evenly spaced nucleosome arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on work described here, we expect that asymmetric association of an acidic patch binding factor, on only one side of the nucleosome, would temporarily disrupt the ability of ISWI remodelers to create or maintain evenly spaced nucleosome arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "f9e567a0-6b52-48c4-90b8-a2542f52cfb8",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C106",
+      "claim": "Asymmetric blockage of the acidic patch could transform ISWI remodelers into disruptive enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, one possibility is that asymmetric blockage of the acidic patch could transform ISWI remodelers into disruptive enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "7da455f1-8511-48a4-9d0e-5d8220027f48",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C107",
+      "claim": "Remodelers like SWI/SNF that can slide mononucleosomes off DNA ends are disruptive.",
+      "claim_type": "EXPLICIT",
+      "source": "Remodelers like SWI/SNF that can slide mononucleosomes off DNA ends are disruptive (Hirschhorn et al., 1992; Kwon et al., 1994; Peterson and Herskowitz, 1992; Ulyanova and Schnitzler, 2005; Ulyanova and Schnitzler, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "88a34e96-0861-4be1-bf17-5d663fb0c8d4",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C108",
+      "claim": "Shifting a nucleosome into the territory of an adjacent nucleosome is destabilizing.",
+      "claim_type": "EXPLICIT",
+      "source": "at least in part because shifting a nucleosome into the territory of an adjacent nucleosome is destabilizing (Dechassa et al., 2010; Engeholm et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "b19acee5-a02f-4974-92a5-01e58ed5db7b",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C109",
+      "claim": "A modified version of Chd1, with the DBD replaced by monomeric streptavidin, could shift biotinylated histones off DNA ends and disrupt canonical nucleosome wrapping in arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that a modified version of Chd1, with the DBD replaced by monomeric streptavidin, could shift biotinylated histones off DNA ends and disrupt canonical nucleosome wrapping in arrays (Patel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "439260c9-1983-40de-a800-7f9f961d192d",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C110",
+      "claim": "The ability to slide nucleosomes without regard for entry DNA is sufficient for nucleosome-disrupting activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that the ability to slide nucleosomes without regard for entry DNA is sufficient for nucleosome-disrupting activity (Patel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "66fc0ee2-82f8-496c-9eeb-2c9010756ebd",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C111",
+      "claim": "A block on only one acidic patch would allow nucleosomes to be shifted into, rather than away from, neighboring nucleosomes by ISWI.",
+      "claim_type": "EXPLICIT",
+      "source": "For remodelers like ISWI, a block on only one acidic patch would allow nucleosomes to be shifted into, rather than away from, neighboring nucleosomes, and would disrupt rather than preserve transcription factor binding to entry-side DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "102c1b84-1f50-4c56-94be-b0296623bb91",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C112",
+      "claim": "A block on only one acidic patch would disrupt rather than preserve transcription factor binding to entry-side DNA for ISWI.",
+      "claim_type": "EXPLICIT",
+      "source": "For remodelers like ISWI, a block on only one acidic patch would allow nucleosomes to be shifted into, rather than away from, neighboring nucleosomes, and would disrupt rather than preserve transcription factor binding to entry-side DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "9a08e0fc-d0e0-4bb0-b597-d7b0658d3d0d",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C113",
+      "claim": "Breaking of inherent two-fold symmetry in the nucleosome can be accomplished through binding of chromatin factors, histone variants, and post translational modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "The breaking of inherent two-fold symmetry in the nucleosome can be accomplished through binding of chromatin factors, histone variants, and post translational modifications",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "4be7bc26-48ef-45c8-a9e0-3343b5df7e72",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "claim_id": "C114",
+      "claim": "Both masking and enhancement of nucleosome epitopes asymmetrically will provide unique strategies for altering the outcome of remodeling reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "and we anticipate that both masking and enhancement of nucleosome epitopes asymmetrically will provide unique strategies for altering the outcome of remodeling reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f7e07e54-48fe-483c-9caf-e8f52945a64b",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The acidic patch is a functionally important nucleosome epitope consisting of eight acidic residues on H2A and H2B that participates in chromatin condensation and is used by many chromatin factors for nucleosome recognition. Despite being related by 2-fold symmetry, each acidic patch is uniquely positioned relative to a bound remodeler.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C22, C23, and C24 are well-established facts about the acidic patch supported by extensive prior literature (citations provided). These claims provide essential background context for the study and are consistently supported across the chromatin field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "3edbcc6e-f637-4257-a61f-75c147cb4834",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SWI/SNF was the first chromatin remodeling family discovered and promotes gene activation by disrupting nucleosomes and sliding them on top of transcription factors. In contrast, Chd1 and ISWI remodelers reduce cryptic transcription by stimulating nucleosome assembly, organizing nucleosomes into evenly-spaced arrays, and preferentially shifting nucleosomes away from transcription factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 describe well-established functional differences between remodeler families, all supported by appropriate citations to the original discovery papers and subsequent mechanistic studies. These are accepted facts in the chromatin remodeling field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "26eeb895-6f63-4a1b-8222-855063a7c353",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chd1 and ISWI achieve directional sliding by coupling DNA sensing to DNA translocation via a conserved ATPase motor that acts at either of two symmetrically related SHL2 sites, always shifting DNA toward the nucleosome dyad. Both remodelers possess a similarly folded DNA-binding domain (DBD) that interacts with flanking DNA, and to reach entry-side DNA while the ATPase motor is bound at SHL2, the remodeler must span across the width of the nucleosome disk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20 describe the established mechanistic basis for directional sliding by Chd1 and ISWI remodelers, supported by appropriate citations to structural and functional studies. The geometric inference about spanning the nucleosome disk (C20) is a logical consequence of the known binding sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "4dcaf647-0d71-4313-b68d-7cfd750a4e90",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Previous studies showed that ISWI remodelers (SNF2h and ACF) are sensitive to disruption of the acidic patch when both entry and exit dimers are mutated, while Chd1 showed only a modest (~2 fold) defect when only the entry-side acidic patch was mutated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C25, C26, and C27 accurately describe prior experimental findings from cited studies, including the key methodological difference that motivated the current work (asymmetric vs. symmetric mutations). These claims are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "fecf7c5a-36c1-479b-a0ae-7b94c2eae2e7",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors developed a method using oriented hexasomes with the Widom 601 sequence to produce asymmetric nucleosomes with different mutations on each H2A/H2B dimer. The acidic patch mutation (APM) consists of four alanine substitutions on H2A (E61A/E64A/D90A/E92A).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 describe the methodological approach previously developed by the authors and applied in this study, supported by citation to their prior work. Claim C35 defines the specific mutations used, shown in Figure 1A. This methodology is central to enabling the asymmetric nucleosome experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Chd1 is similarly affected by acidic patch mutations on entry and exit H2A/H2B dimers, showing ~2-3 fold slower sliding for single APMs and 7-10 fold slower sliding for double APMs. The effects appear additive and relatively unbiased by DNA sequence orientation. Chd1 centered all nucleosomes regardless of which side contained the APM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C31, C36-C43, and C82 are directly supported by the native gel sliding data in Figure 2, which shows quantified rates and statistical analysis. The finding that Chd1 is equally affected by entry- and exit-side mutations is a key result, well-supported by the data showing similar relative effects for both 0N80 and 80N0 constructs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "b7ee3779-9b31-40ec-849d-27d2fc68e1db",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The additive effect of APM on both sides implies that either a single Chd1 remodeler can sense both acidic patches, or possibly that two remodelers on opposite sides of the nucleosome can communicate in a way that is sensitive to the acidic patch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C44 presents two alternative mechanistic interpretations of the additive effect observed in Figure 2. While the additive effect is clearly demonstrated, distinguishing between these two mechanisms would require additional experiments (e.g., single-molecule studies or experiments at different Chd1 concentrations with careful stoichiometry controls).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "cbdf2cf8-2b0a-4f34-a402-81229a5afdf2",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Previous studies showed that disrupting both acidic patches reduced SNF2h activity ~200 fold and ACF activity ~10 fold. The current study confirms that both SNF2h and ACF shift APM/APM nucleosomes significantly more slowly than WT/WT nucleosomes, with Chd1's response to double APM being similar to ACF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 compare the current findings with prior literature. The comparison is appropriate and the data in Figure 3A-B confirm the prior findings for ISWI remodelers. The comparison between Chd1 and ACF (C47) is reasonable based on the quantified rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ISWI remodelers (SNF2h and ACF) strongly depend on the entry-side acidic patch and show strikingly asymmetric responses to single APM nucleosomes. When the APM is on the 0 bp side, nucleosomes initially move toward the center but then shift back toward DNA ends, coinciding with emergence of free DNA. When the APM is on the 80 bp side, SNF2h cannot shift nucleosomes to central locations. This behavior is strikingly different from Chd1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C32, C50-C58, C64, and C84 describe the asymmetric response of ISWI remodelers to single APM nucleosomes, directly supported by the native gel data in Figure 3A-B and quantified free DNA data in Figure 3C. The centering-then-decentering behavior and emergence of free DNA are clearly visible in the gels and represent a major finding distinguishing ISWI from Chd1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "93aa14aa-1cc3-44af-b278-5710b602cf86",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Control experiments confirmed that FLAG-Acf1 was stably associated with the ATPase subunit in the ACF complex. The centering-then-decentering behavior of ACF on APM/WT 0N80 nucleosomes appeared concentration-dependent, but extended time points showed that even with limiting ACF, nucleosomes eventually redistribute back toward end positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 describe important control experiments (Figure 3\u2014figure supplement 1-2) confirming that the observed behavior is due to the intact ACF complex and not just the ATPase subunit. The concentration-dependence observation is well-documented, though the interpretation that it reflects slower equilibration rather than true concentration-dependence is reasonable given the extended time course data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "0c68a606-37c2-42ac-86f0-c810b2c60798",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The appearance of free DNA with APM/WT 0N80 nucleosomes suggests that SNF2h and ACF can destabilize nucleosomes containing a single APM. The authors hypothesized that this apparent destabilization may reflect biased, directional movement of nucleosomes toward the side with the wild type acidic patch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 present reasonable interpretations of the free DNA data in Figure 3C and set up the hypothesis tested by histone mapping experiments. The inference that free DNA indicates destabilization is reasonable, and the hypothesis about directional movement is directly tested in Figure 4.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "dc78dbd8-b570-40f2-b65d-6c80543450b4",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "For asymmetric nucleosomes, SNF2h always shifted the histone octamer toward the side with the wild type acidic patch, regardless of flanking DNA length. This directional sliding moved octamers farther than the available flanking DNA (up to ~50 bp past the canonical nucleosome edge, corresponding to SHL2), causing nucleosomes to slide off DNA ends and overriding ISWI's normal preference for longer flanking DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C33, C68-C73, C80, C85, and C95 describe the major finding from histone mapping experiments (Figure 4 and Figure 4\u2014figure supplement 1). The data clearly show directional sliding toward the wild-type acidic patch and off-the-end movement for all asymmetric nucleosomes tested. This is a striking and well-supported result that represents the core mechanistic finding of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "cfc8ca04-0e2c-4309-80ba-a962fb1b20bd",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Movement of the histone octamer off DNA ends was destabilizing and likely responsible for hexasome formation and free DNA observed in native gel experiments. SNF2h continued to pull DNA onto the nucleosome even after no entry-side flanking DNA was available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 and C96-C97 connect the histone mapping results (Figure 4) to the native gel observations (Figure 3), providing a mechanistic explanation for the free DNA and hexasome formation. The interpretation that off-the-end sliding is destabilizing is reasonable and consistent with both datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "78955d15-e255-4338-8fd1-60c43d4b90ce",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Unlike SWI/SNF remodelers that characteristically slide octamers off DNA ends, ISWI remodelers typically require entry-side DNA for movement. However, the finding that SNF2h can pull DNA ends up to SHL2 shows significant remodeler activity in the absence of entry-side DNA, demonstrating that the acidic patch is a more important epitope than flanking DNA and that binding to entry DNA is not essential for activating ISWI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 and C100-C102 place the findings in context of prior understanding and draw important mechanistic conclusions. The comparison to SWI/SNF is appropriate (supported by citations), and the conclusion that the acidic patch outweighs flanking DNA importance is directly supported by the off-the-end sliding data in Figure 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "f3c3dbac-38f3-49af-8839-89710fd0feae",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DNA length sensing by Chd1 was not affected when one acidic patch was disrupted, and the symmetric response to entry- and exit-side mutations is consistent with Chd1 being stimulated when interacting with either acidic patch, implying that Chd1 may reach from SHL2 to entry DNA across either face of the nucleosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79 and C83 summarize the Chd1 findings and provide a reasonable mechanistic interpretation. The conclusion is well-supported by the data in Figure 2 showing that Chd1 centers nucleosomes regardless of which side contains the APM and is affected similarly by mutations on either side.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "2291a3a6-b961-42eb-b945-96056e5c30ab",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The segment between the DBD and NegC is shorter in ISWI (~40-45 residues) compared to the corresponding segment in Chd1 (~75-130 residues). This shorter connecting segment may limit ISWI's path between SHL2 and entry DNA to the nucleosome face containing the entry-side H2A/H2B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is supported by sequence alignments in Figure 5\u2014figure supplement 1. However, claim C87 is speculative\u2014while the shorter linker is consistent with the observed asymmetry, this interpretation would require structural validation or mutagenesis experiments to test whether linker length causally determines the asymmetric response.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "02f37d8b-bb33-4fe8-8ee7-ea16cc78b95d",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "For both Chd1 and ISWI, ATPase motor activation at SHL2 correlates with DBD engagement on entry-side DNA, and both can have two copies simultaneously occupy the two SHL2 sites. However, ISWI binds cooperatively as dimers while Chd1 shows no cooperativity and dynamically switches between both sides. Chd1 is sensitive to DNA flanking both sides, requiring entry-side DNA for tethering while also making intramolecular interactions with exit-side DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C88-C94 describe established mechanistic features of these remodelers, all supported by appropriate citations to prior structural and functional studies. These claims provide important context for interpreting the differences in how Chd1 and ISWI respond to asymmetric acidic patches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "4f3bcab5-cc99-4d57-8f1e-f97b515e2e71",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Previous models proposed that engagement of the ISWI DBD with entry DNA stimulates removal of the inhibitory NegC element from the ATPase motor, and disruption of NegC largely bypasses the need for activation by the acidic patch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98 and C99 accurately describe prior mechanistic models from cited studies. These claims provide important context for the discussion of how the current findings relate to and refine previous understanding of ISWI activation mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "6729233c-a391-47a7-aad6-247e1e9287d6",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Remodeling interference can be accomplished by acidic patch-binding peptides like LANA, and competition for the acidic patch in vivo likely impacts remodeler activity. The authors predict that asymmetric association of an acidic patch binding factor would disrupt ISWI's ability to maintain evenly spaced arrays and could transform ISWI into a disruptive enzyme by allowing nucleosomes to be shifted into neighboring nucleosomes and disrupting transcription factor binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103-C106 and C111-C112 are speculative predictions about in vivo implications. While claim C103 is supported by citations and C104 is a reasonable general statement, the specific predictions in C105, C106, C111, and C112 are hypotheses that would require in vivo experiments or experiments with acidic patch-binding factors to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "861ee609-a0cb-4244-bf8e-9ff72a5873f9",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Remodelers like SWI/SNF that slide mononucleosomes off DNA ends are disruptive, in part because shifting a nucleosome into adjacent nucleosome territory is destabilizing. Previous work showed that a modified Chd1 with the DBD replaced by monomeric streptavidin could shift biotinylated histones off DNA ends and disrupt nucleosome arrays, demonstrating that the ability to slide nucleosomes without regard for entry DNA is sufficient for disrupting activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C110 describe established principles about disruptive remodeling, supported by appropriate citations including the authors' prior work. These claims provide important context for understanding the potential functional implications of ISWI's off-the-end sliding behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    },
+    {
+      "id": "9f7a8dda-a311-4633-b1f2-04bed3bae791",
+      "content_id": "6a87e3d6-a4e0-47f4-98c1-432e19798f18",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The findings suggest that in vivo, selective blocking of one acidic patch would locally redirect ISWI action to disorganize and potentially disrupt nucleosomes. Breaking of nucleosome two-fold symmetry can be accomplished through binding of chromatin factors, histone variants, and post-translational modifications, and both masking and enhancement of nucleosome epitopes asymmetrically will provide unique strategies for altering remodeling outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34, C113, and C114 present speculative predictions about in vivo implications and future applications. While C113 is a general statement about mechanisms for breaking symmetry, the specific predictions in C34 and C114 about redirecting ISWI action and altering remodeling outcomes would require in vivo validation or experiments with asymmetrically modified nucleosomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:12:38.054234Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eb1d1c40-10af-4c44-a78c-f26574c49245",
+      "result_id": "f7e07e54-48fe-483c-9caf-e8f52945a64b"
+    },
+    {
+      "claim_id": "5a5087db-a863-4acc-985f-3d173d2244cb",
+      "result_id": "f7e07e54-48fe-483c-9caf-e8f52945a64b"
+    },
+    {
+      "claim_id": "b9557a9c-468f-4f4b-97c0-2e52d410d9ea",
+      "result_id": "f7e07e54-48fe-483c-9caf-e8f52945a64b"
+    },
+    {
+      "claim_id": "867e95e5-c6f8-414a-8901-21c55ea6c6dd",
+      "result_id": "f7e07e54-48fe-483c-9caf-e8f52945a64b"
+    },
+    {
+      "claim_id": "7c857160-dbfb-4db9-a3b5-8fabd657a00d",
+      "result_id": "f7e07e54-48fe-483c-9caf-e8f52945a64b"
+    },
+    {
+      "claim_id": "a3f01dc2-401d-44bf-b4ae-a7af502bd3e9",
+      "result_id": "3edbcc6e-f637-4257-a61f-75c147cb4834"
+    },
+    {
+      "claim_id": "8b191e2c-bb0f-4fc6-91ba-0c45b1220e23",
+      "result_id": "3edbcc6e-f637-4257-a61f-75c147cb4834"
+    },
+    {
+      "claim_id": "836e4ab2-bed8-451a-941b-86cbdc2f57b7",
+      "result_id": "3edbcc6e-f637-4257-a61f-75c147cb4834"
+    },
+    {
+      "claim_id": "c8559455-1e59-4faf-b083-e1291326875f",
+      "result_id": "3edbcc6e-f637-4257-a61f-75c147cb4834"
+    },
+    {
+      "claim_id": "6aa8be70-f148-4cbb-98ed-57d7a9a55ff8",
+      "result_id": "3edbcc6e-f637-4257-a61f-75c147cb4834"
+    },
+    {
+      "claim_id": "9fc3a130-7f03-43d8-b2ca-82fc0c3a55cf",
+      "result_id": "3edbcc6e-f637-4257-a61f-75c147cb4834"
+    },
+    {
+      "claim_id": "3827a84d-382a-4398-aeee-95d50bba0b77",
+      "result_id": "26eeb895-6f63-4a1b-8222-855063a7c353"
+    },
+    {
+      "claim_id": "7c7b5a98-16a4-4361-8339-89b00505cd96",
+      "result_id": "26eeb895-6f63-4a1b-8222-855063a7c353"
+    },
+    {
+      "claim_id": "1a6f34d0-6a02-4260-b628-c688b8a53ada",
+      "result_id": "26eeb895-6f63-4a1b-8222-855063a7c353"
+    },
+    {
+      "claim_id": "1505f6bc-0a4f-4dba-92f3-6d63ff1fd8ee",
+      "result_id": "26eeb895-6f63-4a1b-8222-855063a7c353"
+    },
+    {
+      "claim_id": "7d104ec0-6906-4fa9-9ea5-f8b4218825a8",
+      "result_id": "26eeb895-6f63-4a1b-8222-855063a7c353"
+    },
+    {
+      "claim_id": "64003c7e-3f1e-4169-b5d6-af38de776852",
+      "result_id": "26eeb895-6f63-4a1b-8222-855063a7c353"
+    },
+    {
+      "claim_id": "4e050b1b-e04f-4f5c-85c2-6c48a258eb3a",
+      "result_id": "26eeb895-6f63-4a1b-8222-855063a7c353"
+    },
+    {
+      "claim_id": "9a07d0e8-4d92-44f3-b159-cb5efb9befb4",
+      "result_id": "4dcaf647-0d71-4313-b68d-7cfd750a4e90"
+    },
+    {
+      "claim_id": "6e7b91cc-782c-4183-b6cb-6781723936b2",
+      "result_id": "4dcaf647-0d71-4313-b68d-7cfd750a4e90"
+    },
+    {
+      "claim_id": "05f84635-bb86-40b9-8025-f181e172324e",
+      "result_id": "4dcaf647-0d71-4313-b68d-7cfd750a4e90"
+    },
+    {
+      "claim_id": "6e8565a0-0118-4a47-93c9-cdc1190508d3",
+      "result_id": "4dcaf647-0d71-4313-b68d-7cfd750a4e90"
+    },
+    {
+      "claim_id": "51f2af20-e3f8-47e4-b1bf-3be4090bf8fe",
+      "result_id": "fecf7c5a-36c1-479b-a0ae-7b94c2eae2e7"
+    },
+    {
+      "claim_id": "8357146a-85a6-4f79-a8c2-065918256094",
+      "result_id": "fecf7c5a-36c1-479b-a0ae-7b94c2eae2e7"
+    },
+    {
+      "claim_id": "26c08b26-2edc-4c58-8092-0b0c94ab3f37",
+      "result_id": "fecf7c5a-36c1-479b-a0ae-7b94c2eae2e7"
+    },
+    {
+      "claim_id": "f740016c-8635-4a45-8d3e-0c8fa4beedb6",
+      "result_id": "fecf7c5a-36c1-479b-a0ae-7b94c2eae2e7"
+    },
+    {
+      "claim_id": "6e904dbd-5bcf-4fe2-bb0d-e273e0a9a926",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "48bff243-bd69-4986-b762-6c6e3b0d0082",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "5027ec08-e406-4ce0-b547-ce8a965adc50",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "734d74a9-ccee-4217-8b47-0297d334461a",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "56347ea6-ff32-465e-8bc9-f20142f9601d",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "11c6f2b4-6a4e-4f16-a0d3-2efe4a077b39",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "257861d2-e986-4639-a1e4-24100df2a96c",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "5e1f0b87-00bf-4662-bc0c-5927014e5f38",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "b9ea77de-38c9-4ac1-81db-5df84091b949",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "de8c4d94-0452-43e3-b35e-fa5648393654",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "88b6253c-c02b-4044-9f0a-71af31a2cc1e",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "ed22ec30-ad11-41f6-8ed8-da3c805f85b0",
+      "result_id": "b2da2671-7642-45b0-b5b9-24c0da9a5d06"
+    },
+    {
+      "claim_id": "c22b27ae-63c1-4682-bcc6-c253d2a6b44e",
+      "result_id": "b7ee3779-9b31-40ec-849d-27d2fc68e1db"
+    },
+    {
+      "claim_id": "d0ce4960-a209-47b2-990f-f6a7400ababb",
+      "result_id": "cbdf2cf8-2b0a-4f34-a402-81229a5afdf2"
+    },
+    {
+      "claim_id": "c9accd95-3fec-4e49-bae7-ca4bccc3fd9f",
+      "result_id": "cbdf2cf8-2b0a-4f34-a402-81229a5afdf2"
+    },
+    {
+      "claim_id": "f1f252c3-a090-4eb1-9972-1bd42cbcbaf8",
+      "result_id": "cbdf2cf8-2b0a-4f34-a402-81229a5afdf2"
+    },
+    {
+      "claim_id": "420066b8-a33f-4037-80a7-0a4072cd7748",
+      "result_id": "cbdf2cf8-2b0a-4f34-a402-81229a5afdf2"
+    },
+    {
+      "claim_id": "4ed38198-6426-426d-a5a4-c97458144f42",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "96d138f7-44ea-47d2-b054-c143d1915b1c",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "fd150dfe-44b5-42c2-8676-741ef6a9d1f6",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "bf56bda1-ccf8-463f-91cd-970ae7f6487b",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "ffdeafb5-d1be-4d58-9676-7ae053945c21",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "0e25b789-ec80-440a-8f4d-4338152cfb44",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "d916d86c-e7c5-43b7-badf-e3f44008773b",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "291230ea-aaf0-4c07-b05c-914abd6f231c",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "9ec7b754-2b9c-40aa-bd67-1c79efad7413",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "11e69e04-acc0-44ea-a48f-897566514821",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "bfae3b0c-977c-4767-81b9-c6b7e154f01f",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "d19cdf49-fe02-473d-ac75-cf6f251bfb6a",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "c8538d6e-da7d-42c4-b65e-8d72fedb642a",
+      "result_id": "5ff5b5ec-bebc-439b-8bf5-d08fcb506a0d"
+    },
+    {
+      "claim_id": "522ce92b-1892-4341-bcc7-6c4fa8dc91ed",
+      "result_id": "93aa14aa-1cc3-44af-b278-5710b602cf86"
+    },
+    {
+      "claim_id": "8df62d10-4713-4e28-81d9-3e2e027760f5",
+      "result_id": "93aa14aa-1cc3-44af-b278-5710b602cf86"
+    },
+    {
+      "claim_id": "717e9295-9c79-473f-ac8d-f87521aa1a62",
+      "result_id": "93aa14aa-1cc3-44af-b278-5710b602cf86"
+    },
+    {
+      "claim_id": "89839b08-4e1c-4801-8313-1b96a3d5b836",
+      "result_id": "93aa14aa-1cc3-44af-b278-5710b602cf86"
+    },
+    {
+      "claim_id": "ecafba97-fc48-417d-87eb-7be1f7ba99cf",
+      "result_id": "93aa14aa-1cc3-44af-b278-5710b602cf86"
+    },
+    {
+      "claim_id": "50296f5e-8aa6-4b44-aba7-4b0c88efcde0",
+      "result_id": "0c68a606-37c2-42ac-86f0-c810b2c60798"
+    },
+    {
+      "claim_id": "6fc08f22-d95a-4ca3-8035-595d2831ef1d",
+      "result_id": "0c68a606-37c2-42ac-86f0-c810b2c60798"
+    },
+    {
+      "claim_id": "98753b2c-3abf-43e1-9a7c-98b546a875bd",
+      "result_id": "0c68a606-37c2-42ac-86f0-c810b2c60798"
+    },
+    {
+      "claim_id": "ef200708-2e10-49fc-b8fa-23badf9c3ac7",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "1c9a37ae-895d-467b-bcb1-98030e2377b8",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "0cfbc171-7b5c-4ba0-8d63-7dd7ae8de958",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "163ab105-d3fe-4f21-8089-ca9559b76e34",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "ec446a2a-a1e0-4feb-9b47-41142337d13c",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "12c40959-11e6-4bb1-9a56-0bbf580cbabd",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "f9ed05b9-0262-4ec3-91cc-1560d0b835b6",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "5843fb7d-e890-40a1-8e26-45186c3d92f1",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "a10051c6-fd50-46d6-ae31-c1c4a95391ee",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "9d7ba91d-f702-448d-a705-00534402403f",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "2e120489-ed45-414b-8a73-94b3398931db",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "ddb26950-ced5-4842-9c5c-067c64e1b91b",
+      "result_id": "dc78dbd8-b570-40f2-b65d-6c80543450b4"
+    },
+    {
+      "claim_id": "002aa378-71d5-42e2-ab17-38d7d2187cc3",
+      "result_id": "cfc8ca04-0e2c-4309-80ba-a962fb1b20bd"
+    },
+    {
+      "claim_id": "20eac260-089e-49ef-ae29-406aa7c6b18c",
+      "result_id": "cfc8ca04-0e2c-4309-80ba-a962fb1b20bd"
+    },
+    {
+      "claim_id": "f970d06d-d6dc-4107-85f2-1a0731d59c99",
+      "result_id": "cfc8ca04-0e2c-4309-80ba-a962fb1b20bd"
+    },
+    {
+      "claim_id": "79cc2098-f500-44b2-b883-240ed8ce4f1d",
+      "result_id": "cfc8ca04-0e2c-4309-80ba-a962fb1b20bd"
+    },
+    {
+      "claim_id": "3eda7376-c103-4c26-828a-3874d5ea8720",
+      "result_id": "78955d15-e255-4338-8fd1-60c43d4b90ce"
+    },
+    {
+      "claim_id": "7e573bd9-4fa3-4355-a3d6-1fdb2671aeda",
+      "result_id": "78955d15-e255-4338-8fd1-60c43d4b90ce"
+    },
+    {
+      "claim_id": "71165138-1200-4ddd-9a9d-36ee0237f036",
+      "result_id": "78955d15-e255-4338-8fd1-60c43d4b90ce"
+    },
+    {
+      "claim_id": "aee6cc16-d639-4a4b-ae36-4eaae17c534b",
+      "result_id": "78955d15-e255-4338-8fd1-60c43d4b90ce"
+    },
+    {
+      "claim_id": "a4656745-e6e0-49c9-97c7-f0837ba206ca",
+      "result_id": "78955d15-e255-4338-8fd1-60c43d4b90ce"
+    },
+    {
+      "claim_id": "1ad14e7e-76e6-457e-b35d-f5ecbe886600",
+      "result_id": "78955d15-e255-4338-8fd1-60c43d4b90ce"
+    },
+    {
+      "claim_id": "a860e94e-cf9c-4592-9ba6-e00b12eccb92",
+      "result_id": "f3c3dbac-38f3-49af-8839-89710fd0feae"
+    },
+    {
+      "claim_id": "18a9babb-9e8d-449d-8894-d877bd251e89",
+      "result_id": "f3c3dbac-38f3-49af-8839-89710fd0feae"
+    },
+    {
+      "claim_id": "292f6f17-b8c5-4dc1-b54d-185e87867c24",
+      "result_id": "2291a3a6-b961-42eb-b945-96056e5c30ab"
+    },
+    {
+      "claim_id": "9c2322d4-bd89-4b8e-ba62-f26ca4846a5c",
+      "result_id": "2291a3a6-b961-42eb-b945-96056e5c30ab"
+    },
+    {
+      "claim_id": "8d17030d-35a2-42e1-b7a6-ed9c583cfbf4",
+      "result_id": "02f37d8b-bb33-4fe8-8ee7-ea16cc78b95d"
+    },
+    {
+      "claim_id": "11e9c202-3ec0-479e-a2c3-af2cceac23e5",
+      "result_id": "02f37d8b-bb33-4fe8-8ee7-ea16cc78b95d"
+    },
+    {
+      "claim_id": "b53571a4-8732-44bc-8e08-8e5b50285b96",
+      "result_id": "02f37d8b-bb33-4fe8-8ee7-ea16cc78b95d"
+    },
+    {
+      "claim_id": "2e7ce393-1a62-45de-85f1-67a499a8c037",
+      "result_id": "02f37d8b-bb33-4fe8-8ee7-ea16cc78b95d"
+    },
+    {
+      "claim_id": "f88602fe-2879-4324-959b-31ab21dbede0",
+      "result_id": "02f37d8b-bb33-4fe8-8ee7-ea16cc78b95d"
+    },
+    {
+      "claim_id": "6c083ce5-11d0-4009-afcb-25bf45998f94",
+      "result_id": "02f37d8b-bb33-4fe8-8ee7-ea16cc78b95d"
+    },
+    {
+      "claim_id": "10f4f587-a119-4bfd-9286-3836320ee3ea",
+      "result_id": "02f37d8b-bb33-4fe8-8ee7-ea16cc78b95d"
+    },
+    {
+      "claim_id": "63c56b7f-c88d-426e-9cef-57213d4c8cbf",
+      "result_id": "02f37d8b-bb33-4fe8-8ee7-ea16cc78b95d"
+    },
+    {
+      "claim_id": "a8f17424-c1b6-47f0-b173-e3c1f22e8582",
+      "result_id": "4f3bcab5-cc99-4d57-8f1e-f97b515e2e71"
+    },
+    {
+      "claim_id": "8f1793d7-162d-4f7d-acb8-71f23d30afa7",
+      "result_id": "4f3bcab5-cc99-4d57-8f1e-f97b515e2e71"
+    },
+    {
+      "claim_id": "867aa748-66e8-4699-bbb5-a6c834e07c90",
+      "result_id": "6729233c-a391-47a7-aad6-247e1e9287d6"
+    },
+    {
+      "claim_id": "590de223-4f95-4553-9cee-16de04ddadb1",
+      "result_id": "6729233c-a391-47a7-aad6-247e1e9287d6"
+    },
+    {
+      "claim_id": "99aca299-fec0-4636-9aa8-475bb6b2dae0",
+      "result_id": "6729233c-a391-47a7-aad6-247e1e9287d6"
+    },
+    {
+      "claim_id": "f9e567a0-6b52-48c4-90b8-a2542f52cfb8",
+      "result_id": "6729233c-a391-47a7-aad6-247e1e9287d6"
+    },
+    {
+      "claim_id": "66fc0ee2-82f8-496c-9eeb-2c9010756ebd",
+      "result_id": "6729233c-a391-47a7-aad6-247e1e9287d6"
+    },
+    {
+      "claim_id": "102c1b84-1f50-4c56-94be-b0296623bb91",
+      "result_id": "6729233c-a391-47a7-aad6-247e1e9287d6"
+    },
+    {
+      "claim_id": "7da455f1-8511-48a4-9d0e-5d8220027f48",
+      "result_id": "861ee609-a0cb-4244-bf8e-9ff72a5873f9"
+    },
+    {
+      "claim_id": "88a34e96-0861-4be1-bf17-5d663fb0c8d4",
+      "result_id": "861ee609-a0cb-4244-bf8e-9ff72a5873f9"
+    },
+    {
+      "claim_id": "b19acee5-a02f-4974-92a5-01e58ed5db7b",
+      "result_id": "861ee609-a0cb-4244-bf8e-9ff72a5873f9"
+    },
+    {
+      "claim_id": "439260c9-1983-40de-a800-7f9f961d192d",
+      "result_id": "861ee609-a0cb-4244-bf8e-9ff72a5873f9"
+    },
+    {
+      "claim_id": "e55d75a7-897f-4ae4-971b-8835af125b9d",
+      "result_id": "9f7a8dda-a311-4633-b1f2-04bed3bae791"
+    },
+    {
+      "claim_id": "9a08e0fc-d0e0-4bb0-b597-d7b0658d3d0d",
+      "result_id": "9f7a8dda-a311-4633-b1f2-04bed3bae791"
+    },
+    {
+      "claim_id": "4be7bc26-48ef-45c8-a9e0-3343b5df7e72",
+      "result_id": "9f7a8dda-a311-4633-b1f2-04bed3bae791"
+    }
+  ],
+  "comparisons": []
+}

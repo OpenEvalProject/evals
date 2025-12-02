@@ -1,0 +1,1953 @@
+{
+  "submission": {
+    "id": "9dde1fa0-712a-46a5-b62a-5007fb9836d2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:30:50.035051Z",
+    "updated_at": "2025-12-02T10:30:50.035051Z"
+  },
+  "content": [
+    {
+      "id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "submission_id": "9dde1fa0-712a-46a5-b62a-5007fb9836d2",
+      "content_type": "manuscript",
+      "content_text": "# The mechanism of error induction by the antibiotic viomycin provides insight into the fidelity mechanism of translation\n\n## Authors\n\n- Mikael Holm<sup>1</sup> ([ORCID: 0000-0002-4361-9554](https://orcid.org/0000-0002-4361-9554))\n- Chandra Sekhar Mandava<sup>1</sup> ([ORCID: 0000-0002-3028-3270](https://orcid.org/0000-0002-3028-3270))\n- M\u00e5ns Ehrenberg<sup>1</sup>\n- Suparna Sanyal<sup>1</sup> ([ORCID: 0000-0002-7124-792X](https://orcid.org/0000-0002-7124-792X)) \u2020\n\n### Affiliations\n\n1. Department of Cell and Molecular Biology Uppsala University Uppsala Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nApplying pre-steady state kinetics to an Escherichia-coli-based reconstituted translation system, we have studied how the antibiotic viomycin affects the accuracy of genetic code reading. We find that viomycin binds to translating ribosomes associated with a ternary complex (TC) consisting of elongation factor Tu (EF-Tu), aminoacyl tRNA and GTP, and locks the otherwise dynamically flipping monitoring bases A1492 and A1493 into their active conformation. This effectively prevents dissociation of near- and non-cognate TCs from the ribosome, thereby enhancing errors in initial selection. Moreover, viomycin shuts down proofreading-based error correction. Our results imply a mechanism in which the accuracy of initial selection is achieved by larger backward rate constants toward TC dissociation rather than by a smaller rate constant for GTP hydrolysis for near- and non-cognate TCs. Additionally, our results demonstrate that translocation inhibition, rather than error induction, is the major cause of cell growth inhibition by viomycin.\n\n## Introduction\n\nViomycin is the first discovered member of the tuberactinomycin class of bacterial protein synthesis inhibiting antibiotics (Ehrlich et al., 1951; Finlay et al., 1951), commonly used to treat infections by Mycobacterium tuberculosis strains resistant to first-line drugs (WHO, 2010). It is a cyclic pentapeptide, that is naturally synthesized by a non-ribosomal peptidyl transferase (Thomas et al., 2003). Viomycin impairs the fidelity of tRNA selection (Marrero et al., 1980) and reduces the rate of mRNA translocation (Holm et al., 2016; Modolell and V\u00e1zquez, 1977) during the elongation cycle of bacterial protein synthesis. We have recently described the kinetic mechanism by which viomycin inhibits translocation (Holm et al., 2016), and here we report on the kinetic mechanism by which viomycin impairs the accuracy of AA-tRNA selection.\n\nDuring genetic code translation, aminoacyl-transfer RNAs (AA-tRNAs) are delivered to the A site of the ribosome in ternary complex (TC) with elongation factor Tu (EF-Tu) and GTP. For fast and accurate protein synthesis, the ribosome must select for GTP hydrolysis those TCs which contain an AA-tRNA with a base triplet (anticodon) cognate to the base triplet on the mRNA (codon) displayed in the ribosomal A site. Those cognate AA-tRNAs will then be selected for A-site accommodation and peptidyl transfer. In quantitative terms, this means that cognate codon selection of AA-tRNAs for GTP hydrolysis and peptidyl transfer must be characterized by much higher catalytic efficiency ($k_{cat}/K_{M}$) than near-cognate codon selection. In enzyme kinetics, $k_{cat}$ corresponds to the maximal rate of product formation at saturating substrate concentration and the Michaelis-Menten constant to the substrate concentration at which product formation rate is half maximal. The accuracy by which the ribosome discriminates against a given codon\u2219anticodon mismatch is defined as the ratio between the $k_{cat}/K_{M}$ values of the cognate and the non-cognate reaction (Fersht, 1998).\n\nSelection of AA-tRNA by the ribosome occurs in two phases: initial codon selection before GTP hydrolysis on EF-Tu and proofreading selection after GTP hydrolysis (Ruusala et al., 1982; Thompson and Stone, 1977). Initial selection begins by TC binding to the ribosomal A/T site, from which TC is either rejected by dissociation from the ribosome or accepted by the triggering of GTP hydrolysis on EF-Tu. The accuracy of initial codon selection is amplified by A-minor interactions between the codon-anticodon helix and the 16S ribosomal RNA (rRNA) monitoring bases A1492, A1493 and G530 (E. coli numbering) of the decoding center (Carter et al., 2000). It has been suggested that the monitoring bases only flip out from their binding sites in helix 44 (h44) of 16S rRNA to form hydrogen bonds with cognate but not near- or non-cognate codon-anticodon helices (Carter et al., 2000). However, in recent crystal structures of A-site accommodated cognate and near-cognate tRNAs the monitoring bases were observed in virtually identical, flipped-out, conformations in all cases (Demeshkina et al., 2012; Demeshkina et al., 2013). Further, recent cryo-EM structures (Fislage et al., 2018; Loveland et al., 2017) show that during initial selection the decoding center builds up in an identical step-wise fashion for both cognate and near-cognate tRNAs to a common final state in which all three monitoring bases are in their activated conformations. These structural data agree with kinetics data on initial TC-selection in the absence and presence of aminoglycosides (Zhang et al., 2018), suggesting that realistic modeling of initial codon selection requires at least four ribosomal states (Fislage et al., 2018; Loveland et al., 2017; Pavlov and Ehrenberg, 2018; Zhang et al., 2018).\n\nIn crystal (Pulk and Cate, 2013; Stanley et al., 2010) and cryo-EM (Brilot et al., 2013) structures of the viomycin-bound ribosome, A1492 and A1493 are seen in their active, flipped-out conformation, and viomycin is bound to a site which is occluded by the monitoring bases in their inactive, flipped-in conformation (Schuwirth et al., 2005). From these structures it seems likely that association of viomycin to the ribosome requires bases A1492 and A1493 in their flipped-out conformation and that the presence of viomycin on the ribosome will effectively block the monitoring bases from returning from their inactive, flipped-in, conformation. This interplay between viomycin and the monitoring A1492 and A1493 bases could then potentially drive activation of the third monitoring base, G530, thereby triggering GTP hydrolysis in the TC (Loveland et al., 2017). Such a conformational-selection mode of viomycin binding agrees well with our previous result that A-site-bound tRNA greatly increases the affinity of viomycin for the ribosome (Holm et al., 2016).\n\nHere, we have examined how viomycin reduces the accuracy of tRNA selection on the mRNA translating ribosome. For this, we applied pre-steady state kinetics and mean time analysis to a cell-free protein synthesis system, reconstituted from E. coli components of high purity and in vivo like kinetic properties (Borg et al., 2015; Borg and Ehrenberg, 2015; Indrisiunaite et al., 2015; Johansson et al., 2008; Mandava et al., 2012). Our results are summarized by a kinetic model, which illustrates the mechanism of error induction by viomycin and other drugs in the tuberactinomycin class of antibiotics. We suggest that high accuracy of initial codon selection by cognate TCs is mainly achieved by much smaller backward rate constants toward dissociation of cognate than near-cognate TCs. Our data do not support the previous suggestion that cognate TCs have much larger rate constant for GTP hydrolysis than near-cognate TCs (Gromadski and Rodnina, 2004; Pape, 1999). We compare the modes of action of aminoglycosides and viomycin by highlighting their functional similarities and differences and use simple modeling techniques to estimate the frequency and distribution of viomycin-induced translational errors in the living cell. With support from the present data, we propose that translocation inhibition, rather than error induction, is the major cause of cell growth inhibition by viomycin.\n\n## Results\n\n### Viomycin acts during initial codon selection of aminoacyl-tRNAs on the ribosome\n\nTo study the impact of viomycin on translational accuracy, we designed experiments to measure its effect on the kinetic efficiency ($k_{cat}/K_{M}$) of GTP hydrolysis by EF-Tu and peptide bond formation for both cognate and near-cognate codon-anticodon interactions. A reaction mixture containing varying concentrations of viomycin and $Phe-tRNA_{GAA}^{Phe}$ in TC with EF-Tu\u00b7GTP was rapidly mixed in a quench-flow instrument with initiated 70S ribosomes displaying either cognate (UUC) or near-cognate (CUC) codons in the A site. For studying GTP hydrolysis, the TCs contained [3H]GTP and the 70S ribosomes had non-radioactive fMet-tRNAfMet in the P site, while for studying peptide bond formation the TCs contained non-radioactive GTP and the 70S ribosomes had f[3H]Met-tRNAfMet bound in the P site. The reactions were stopped at different times by addition of formic acid and the relative amounts of the reaction products were analyzed by ion-exchange chromatography ([3H]GDP) or RP-HPLC (f[3H]Met-Phe) with on-line radiation detection.\n\nThe $k_{cat}/K_{M}$ for cognate GTP hydrolysis (blue traces in Figure 1A) did not change with increasing viomycin concentration from 0 to 1 mM and its average was estimated as 41\u00a0\u00b1\u00a00.6 \u00b5M\u22121 s\u22121 (Figure 1B). In sharp contrast, the $k_{cat}/K_{M}$ of GTP hydrolysis for the near-cognate reaction (Red traces in Figure 1A) increased dramatically with increasing viomycin concentration (Figure 1B) from 0.053\u00a0\u00b1\u00a00.005 \u00b5M\u22121 s\u22121 in the absence of viomycin to 9.2\u00a0\u00b1\u00a00.7 \u00b5M\u22121 s\u22121 in the presence of 1 mM viomycin, corresponding to a 170-fold reduction in the accuracy of initial codon selection. Viomycin is known to bind to ribosomes with a cognate codon\u00b7anticodon interaction in the A site (Brilot et al., 2013; Feldman et al., 2010; Holm et al., 2016; Stanley et al., 2010; Zhou et al., 2012) and to strongly stabilize such complexes (Peske et al., 2004). Hence, these results imply that during initial codon selection viomycin acts on a ribosomal state from which near-cognate, but not cognate, substrates are likely to be rejected in the absence of the drug.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46124/elife-46124-fig1-v2.jpg)\n\n**Figure 1.:** (A) Time courses of [3H]\u00a0GDP formation by Phe-tRNAPhe\u00a0containing EF-Tu TCs reacting with 0.5 \u00b5M 70S ribosomes with fMet-tRNAfMet\u00a0in the P site, displaying either a cognate UUC or near-cognate CUC codon in the A site, at the indicated viomycin concentrations. Solid lines represent fits of single exponential equations to the data.\u00a0(B)\u00a0of GTP hydrolysis by Phe-tRNAPhe\u00a0containing TCs estimated from experiments such as those in (A). Solid lines represent either a fit of a constant value (UUC) or Equation 3 (CUC) to the data.\u00a0(C) Time courses of f[3H]\u00a0Met-Phe dipeptide formation for 1 \u00b5M Phe-tRNAPhe\u00a0containing EF-Tu TCs reacting with 70S ribosomes with f[3H]Met-tRNAfMet\u00a0in the P site, displaying either a cognate UUC or near-cognate CUC codon in the A site, at the indicated viomycin concentrations. Solid lines represent fits of single exponential equations to the data.\u00a0(D)\u00a0of dipeptide formation by Phe-tRNAPhe\u00a0containing EF-Tu TCs estimated from experiments such as those in (C). Solid lines represent either a fit of a constant value (UUC) or Equation 3 (CUC) to the data. All error bars represent SEM.\n\nSimilar to GTP hydrolysis the $k_{cat}/K_{M}$\u00a0of dipeptide formation with a cognate UUC codon in the ribosomal A site (blue traces in Figure 1C) did not change with the addition of viomycin and its average was estimated as 38.3\u00a0\u00b1\u00a00.7 \u00b5M\u22121 s\u22121 (Figure 1D). As with GTP hydrolysis, the $k_{cat}/K_{M}$\u00a0of dipeptide formation with a near-cognate CUC codon in the ribosomal A site (red traces in Figure 1C) increased dramatically with increasing viomycin concentration (Figure 1D), from 0.0005\u00a0\u00b1\u00a00.00004 \u00b5M\u22121 s\u22121 in the absence of viomycin to 9.4\u00a0\u00b1\u00a00.8 \u00b5M\u22121 s\u22121 at 1 mM viomycin. This corresponds to a 21,000 fold reduction in total accuracy from 83,500\u00a0\u00b1\u00a08000 to 4.0\u00a0\u00b1\u00a00.3.\n\nThe large difference between the $k_{cat}/K_{M}$\u00a0value for near-cognate dipeptide formation (0.0005\u00a0\u00b1\u00a00. 00004 \u00b5M\u22121 s\u22121) and near-cognate GTP hydrolysis (0.053\u00a0\u00b1\u00a00.005 \u00b5M\u22121 s\u22121) in the absence of viomycin is due to proofreading selection. The ratio of these two $k_{cat}/K_{M}$\u00a0values estimates the accuracy of proofreading selection as 115\u00a0\u00b1\u00a015 (Zhang et al., 2016). In contrast, at all tested viomycin concentrations the $k_{cat}/K_{M}$ values of near cognate GTP hydrolysis and dipeptide formation were virtually identical (Figure 1B and D). This means that viomycin-bound ribosomes are incapable of performing proofreading selection; all near- and non-cognate tRNAs that \u2018survive\u2019 initial selection go on to form peptide bonds. Furthermore, even at very low drug concentration almost all near-cognate tRNAs that pass initial selection do so due to the presence of viomycin.\n\n### Viomycin stabilizes a GTPase-deficient TC in contact with both cognate and near-cognate codons on the ribosome\n\nViomycin is known to strongly stabilize peptidyl-tRNA in the ribosomal A site (Holm et al., 2016; Peske et al., 2004). To address whether viomycin also stabilizes TCs in the A site during initial codon selection, we estimated the rate of dissociation of both cognate and near-cognate tRNAs in TC (TC H84A) with a GTPase-deficient mutant of EF-Tu (EF-TuH84A). In this EF-Tu mutant, an essential histidine in the G-domain has been replaced by alanine (Daviter et al., 2003), but formation of TC H84A is unhindered and the mutant TC carries out all partial reactions during initial codon selection, excluding GTP hydrolysis (Daviter et al., 2003; Gromadski and Rodnina, 2004). Initiated 70S ribosomes with f[3H]Met-tRNAfMet in the P site and a cognate (UUC) or near-cognate (CUC) codon in the A site were equilibrated with TCH84A containing\u00a0$Phe-tRNA_{GAA}^{Phe}$ and GTP in the presence of varying concentrations of viomycin. TCH84As were chased from the A site by addition of GTPase proficient TC, containing WT EF-Tu (EF-TuWT) and either $Phe-tRNA_{GAA}^{Phe}$\u00a0or $Leu-tRNA_{GAG}^{Leu2}$, whichever was cognate for the codon in the A site. The dissociation rate for TCH84A s from the A site, defined as the inverse of the average dissociation time, was then estimated from the rate of f[3H]Met-Phe or f[3H]Met-Leu formation (supplementary methods).\n\nThe rate of TCH84A dissociation from ribosomes displaying the cognate UUC codon (Figure 2A) was 1.21\u00a0\u00b1\u00a00.088 s\u22121 in the absence of viomycin and decreased from 0.616\u00a0\u00b1\u00a00.044 s\u22121 in the presence of 1 \u00b5M viomycin to 0.198\u00a0\u00b1\u00a00.0275 s\u22121 at 10 \u00b5M viomycin. The corresponding viomycin-induced increase in dissociation mean time ($\\tau_{diss}$) is shown in Figure 2B. In comparison, dissociation of $Phe-tRNA_{GAA}^{Phe}$-\u00a0containing TC H84A from ribosomes displaying the near-cognate CUC codon (Figure 2C) was too fast to be estimated using manual mixing techniques in the absence of viomycin, consistent with previous reports (Gromadski and Rodnina, 2004; Johansson et al., 2008; Pape, 1999). In the presence of 50 \u00b5M viomycin, the apparent near-cognate dissociation rate was 0.264\u00a0\u00b1\u00a00.055 s\u22121 and decreased modestly to 0.209\u00a0\u00b1\u00a00.066 s\u22121 at 200 \u00b5M viomycin.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46124/elife-46124-fig2-v2.jpg)\n\n**Figure 2.:** (A) Time courses of chase experiments were f[3H]Met-Phe dipeptide is formed after chasing of 5 \u00b5M containing EF-TuH84A\u00a0TCs from 70S ribosomes with f[3H]\u00a0Met-tRNAfMet\u00a0in the P site, displaying a cognate UUC codon in the A site, by 0.5 \u00b5M\u00a0containing EF-TuWT\u00a0TCs at the indicated viomycin concentrations. Solid lines represent fits of single exponential equations to the data.\u00a0(B) Mean times of f[3H]\u00a0Met-Phe dipeptide formation reflecting the mean times of\u00a0containing EF-TuH84A\u00a0TC dissociation estimated from experiments such as those in (A). Error bars represent SEM. The solid line represents a linear fit to the data.\u00a0(C) Time courses of chase experiments where f[3H]Met-Leu dipeptide is formed after chasing of 5 \u00b5M Phe-tRNAPheGAA\u00a0containing EF-TuH84A\u00a0TCs from 70S ribosomes with f[3H]\u00a0Met-tRNAfMet\u00a0in the P site, displaying a near-cognate CUC codon in the A site, by 0.5 \u00b5M\u00a0containing EF-TuWT\u00a0TCs at the indicated viomycin concentrations. Solid lines represent fits of single exponential equations to the data.\n\nEven in the absence of viomycin, dissociation of cognate TC is much slower (Figure 2A) than the forward rate constant of GTP hydrolysis (Figure 1A). This indicates that the frequency of cognate tRNA rejection from the state probed by these experiments is very small. However, the fact that cognate TCs are frequently rejected by the ribosome (Geggier et al., 2010; Johansson et al., 2012; Zhang et al., 2015; Zhang et al., 2016) suggests the existence of an early initial binding state from which TC rapidly dissociates, as suggested previously (Geggier et al., 2010; Gromadski and Rodnina, 2004; Pape et al., 1998). Together, the decrease in the cognate dissociation rate with increasing viomycin concentration (Figure 2B) and the lack of an effect of viomycin on the cognate kinetic efficiency (kcat/Km) observed above (Figure 1B and D) implies that viomycin does not stabilize this initial binding state. The drug might, however, further stabilize a late binding state from which cognate TC continues to GTP hydrolysis with high probability whether or not the ribosome is viomycin bound. A correspondingly large viomycin-dependent stabilization of near-cognate TC in the very same late binding state would readily explain the viomycin-induced increase in kinetic efficiency of the near-cognate reaction (Figure 2) and the decrease in dissociation rate of TC in the cognate reaction (Figure 2A) (Carter et al., 2000).\n\n### A kinetic model for inhibition of translational fidelity by viomycin\n\nAs shown above, viomycin binding stabilizes both cognate and near-cognate TC on the ribosome but increases the kinetic efficiency only for near-cognate reactions, even though cognate TCs are frequently rejected by the ribosome. These observations can be accounted for by the existence of an initial binding state where any TC lacks codon\u2219anticodon interaction (Figure 3) in accordance with previous work on initial selection (Geggier et al., 2010; Gromadski and Rodnina, 2004; Loveland et al., 2017; Pape et al., 1998; Pavlov and Ehrenberg, 2018; Zhang et al., 2018). In this case, cognate and near-cognate TCs have equal probability of dissociating from the ribosome rather than proceeding to formation of codon\u00b7anticodon contact in the decoding site and subsequent activation of the monitoring bases. In these latter states, near-cognate tRNA has high probability of moving backward to the preceding state while cognate tRNA has high probability of moving forward to the upcoming state. Viomycin binds to the state with activated monitoring bases, and when this happens any TC present in the A site is prevented from moving backwards, eventually leading to GTP hydrolysis by EF-Tu and subsequent peptide bond formation with 100% probability. The viomycin dependence of $k_{cat}/K_{M}$ for GTP hydrolysis in such a mechanism is given by (supplementary methods):\n\n$$\n\u27eek_{cat}/K_{M}\u27ef^{c,nc}=\\frac{k_{1}}{1+\\frac{q_{2}}{k_{2}}\u27ee1+\\frac{q_{3}^{c,nc}q_{4}^{c,nc}}{k_{3}(k_{4}+k_{V}[V])}\u27ef}\n$$\n\nwhich for cognate substrates simplifies to (supplementary methods):\n\n$$\n(\\frac{k_{cat}}{K_{M}})^{c}=\\frac{k_{1}}{1+\\frac{q_{2}}{k_{2}}}\n$$\n\nHere $k_{1}$\u00a0and $q_{2}$ are the rate constants for ternary complex association to and dissociation from the initial binding state C2. Parameters $k_{2}$ and $q_{3}^{c,nc}$ are the rate constants for entry into and return from the first codon recognition state, C3. Parameters $k_{3}$ and $q_{4}^{c,nc}$ are the rate constants for entry into and return from the second codon recognition state, C4 where k4 is the rate constant for GTP hydrolysis by EF-Tu (Figure 3). The suffixes c and nc denote parameters that vary between cognate and near-cognate reactions, respectively. With a cognate codon\u00b7anticodon interaction $q_{3}^{c}q_{4}^{c}/(k_{3}k_{4})$ is expected to be much smaller than one, due to small backward and large forward rate constants (Pavlov and Ehrenberg, 2018; Zhang et al., 2018), which is what gives rise to the simplified expression for the $k_{cat}/K_{M}$ (Equation 2). With a near-cognate codon\u00b7anticodon interaction $q_{3}^{nc}q_{4}^{nc}/(k_{3}k_{4})$ is expected to be much larger than one, due to comparatively large backward rate constants (Pavlov and Ehrenberg, 2018; Zhang et al., 2018). This leads to much larger $k_{cat}/K_{M}$ for cognate than for near-cognate reactions and thereby high accuracy. It also explains why the cognate $k_{cat}/K_{M}$\u00a0is insensitive to viomycin while the near-cognate $k_{cat}/K_{M}$\u00a0increases sharply with increasing drug concentration leading to sharply decreasing accuracy.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46124/elife-46124-fig3-v2.jpg)\n\n**Figure 3.:** TC binds to a ribosome with an empty A site with rate constant\u00a0k1\u00a0to form a viomycin-insensitive initial binding complex where the codon\u00b7anticodon interaction is not yet established. From this state either the TC dissociates with rate constant\u00a0q2\u00a0or the ribosome proceeds along the selection pathway, with rate constant\u00a0k2\u00a0to codon anticodon contact. From this state the ribosome can either return to the initial binding state with rate constantq3or proceed to a viomycin-sensitive state, with rate constant\u00a0k3, where the codon\u00b7anticodon interaction is monitored by the activated monitoring bases A1492 and A1493. In this state three events can take place; the ribosome can return to the previous state with rate constant\u00a0q4, the ribosome can proceed with hydrolysis of EF-Tu bound GTP with rate constant\u00a0k4\u00a0or viomycin can bind with rate constant\u00a0kvio. After GTP hydrolysis viomycin-free ribosomes can either form a peptide bond with rate constant\u00a0k5\u00a0or reject the tRNA in the A site with rate constant\u00a0kF. Viomycin-bound ribosomes are unable to reject the tRNA present in the A site and therefore will always proceed with GTP hydrolysis and peptide bond formation regardless of the nature of the codon\u00b7anticodon interaction.\n\nIt follows from Equation 1 that in the presence of viomycin the normalized accuracy, A, for initial codon selection, defined as the ratio between cognate and near-cognate $k_{cat}/K_{M}$-\u00a0values for GTP hydrolysis, is approximated by:\n\n$$\nA=\\frac{1+\\frac{q_{2}}{k_{2}}(1+\\frac{q_{3}^{nc}q_{4}^{nc}}{k_{3}(k_{4}+k_{V}[V])})}{1+\\frac{q_{2}}{k_{2}}}\n$$\n\nIt is clear from Equation 3 that the value of A depends on the ratio between the selective back reaction product $q_{3}^{nc}q_{4}^{nc}$ and the non-selective forward rate constant k3 multiplied by a non-selective total forward rate constant, $k_{4}+k_{V}[V]$, leading directly or via viomycin binding to GTP hydrolysis. As explained further in the Discussion and supplementary materials, we have assumed rate constants $k_{4}$\u00a0and $k_{V}$\u00a0to be the same in cognate and near-cognate cases. This is supported by crystal (Demeshkina et al., 2012; Demeshkina et al., 2013) and cryo-EM (Fislage et al., 2018; Loveland et al., 2017) structures showing virtually identical geometries for cognate and near-cognate codon\u00b7anticodon interactions as well as kinetics data (Zhang et al., 2018). It follows directly from Equation 3 that as long as $k_{V}[V]>>k_{4}$ we can write (Geggier et al., 2010; Gromadski and Rodnina, 2004; Johansson et al., 2008; Pape et al., 1998; Wohlgemuth et al., 2010)\u00a0(supplementary methods):\n\n$$\n(k_{cat}/K_{M})^{nc}=(k_{cat}/K_{M})^{c}\u22c5\\frac{[V]}{[V]+K_{I}^{nc}},\n$$\n\nwhere\u00a0$K_{I}^{nc}$\u00a0is the viomycin concentration at which the accuracy, A, has decreased to just two:\n\n$$\nK_{I}^{nc}=\\frac{q_{2}}{q_{2}+k_{2}}\u22c5\\frac{q_{3}^{nc}q_{4}^{nc}}{k_{3}k_{V}}\n$$\n\nBy fitting of Equation 4 to the experimental data points in Figure 1B and Figure 1D the $K_{I}$ value for $tRNA_{GAA}^{Phe}$ reading the near-cognate codon CUC was estimated as (3.1\u00a0\u00b1\u00a00.2) mM from GTP hydrolysis (Figure 1B) and as (3.3\u00a0\u00b1\u00a00.1) mM from dipeptide formation (Figure 1D). While these concentrations may appear high, it should be noted that at a viomycin concentration equal to $K_{I}$ the near cognate kcat/Km parameter is half that of the cognate one meaning that accuracy has been reduced to only 2. The ribosome would be unable to produce functional proteins even at far lower drug concentrations. Another type of $K_{I}$ value can be estimated for the cognate reaction from the chase experiment data in Figure 2B by linear fitting of the following expression (supplementary methods):\n\n$$\n\\tau_{diss}=\\tau_{diss}^{0}+\\frac{1}{q_{V}}(1+\\frac{[V]}{K_{I}^{c}}),\n$$\n\nHere, the first term, $\\tau_{diss}^{0}$, is a contribution to the mean time of TC dissociation that remains unaltered as the fraction of viomycin-bound ribosomes increases from zero to 100%. Parameter $q_{V}$ is the rate constant for viomycin dissociation from the ribosome and $K_{I}^{c}$ is the viomycin concentration at which the rate of viomycin rebinding to a ribosome with bound TC is equal to the rate of TC dissociation when unhindered by rebinding of viomycin. Note that all ribosomes are assumed to be viomycin bound in Equation 6. It follows that $K_{I}^{c}$\u00a0is given by (supplementary material)\n\n$$\nK_{I}^{c}=\\frac{q_{2}}{q_{2}+k_{2}}\u22c5\\frac{q_{3}^{c}q_{4}^{c}}{k_{3}k_{V}}\n$$\n\nThis gives a $K_{I}^{c}$ value for $tRNA_{GAA}^{Phe}$ reading the cognate codon UUC of (9.4\u00a0\u00b1\u00a03.3) \u00b5M.\n\nFrom these expressions, it can be seen that $K_{I}$ increases when the compounded back rate constant for rejection of tRNA from the codon recognition states, $q_{3}^{c/nc}q_{4}^{c/nc}$, increases. This is because larger values of $q_{3}^{c/nc}q_{4}^{c/nc}$ leave a smaller time window for viomycin to bind before the tRNA is rejected. $K_{I}$ decreases when the ratio $q_{2}/k_{2}$ decreases. Small values of this ratio mean that each time a TC returns to the non-selective initial binding state it has a larger probability to return to the codon-selective states for GTPase activation, affording viomycin multiple chances to bind. Note that $K_{I}$ is completely insensitive to the rate constant for GTP hydrolysis k4.\n\n### The viomycin sensitivity of a mismatched codon\u00b7anticodon pair correlates strongly with the accuracy of initial codon selection\n\nThe model presented above predicts that viomycin sensitivity ($K_{I}^{nc}$) for any codon\u00b7anticodon pair depends on the accuracy of initial codon selection as defined by the product of the near-cognate back reaction rate constants $q_{3}^{nc}$\u00a0and $q_{4}^{nc}$ (Equations 4 and 5) in the absence as well as presence of viomycin. For different codon\u00b7anticodon pairs initial codon selectivity varies over more than two orders of magnitude (Johansson et al., 2012; Zhang et al., 2015) implying that viomycin sensitivity could also vary significantly from pair to pair. To test this prediction, we measured how the $k_{cat}/K_{M}$\u00a0of dipeptide formation varied with viomycin concentration for $tRNA_{GAA}^{Phe}$ reading three additional near-cognate codons (Figure 4A); AUC, UAC or UUA (the underlined base differs from the cognate codon UUC). We quantified the viomycin sensitivity of each codon by estimating its $K_{I}$ value by fitting of Equation 4 to plots of $k_{cat}/K_{M}$ versus viomycin concentration (Figure 4B). We also estimated the accuracies of initial selection by measuring $k_{cat}/K_{M}$ for GTP hydrolysis with the three codons in the absence of viomycin. Both sets of experiments were carried out exactly as described above. This gave $K_{I}$ values of 7 \u00b1 0.3 mM for AUC, 29.0 \u00b1 2.7 mM for UAC and 3.25 \u00b1 0.20 mM for UUA and accuracies of initial selection of 2400 \u00b1 120 for AUC, 6400 \u00b1 670 for UAC and 580 \u00b1 47 for UUA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46124/elife-46124-fig4-v2.jpg)\n\n**Figure 4.:** (A) Time courses of f[3H]Met-Phe dipeptide formation for 1 \u00b5M Phe-tRNAPheGAA\u00a0containing TCs reacting with 70S ribosomes, displaying either a cognate UUC codon or one of the near-cognate codons\u00a0CUC,\u00a0AUC, UAC or UUAin the A site (the underlined base differs from the cognate codon), in the presence of 250 \u00b5M viomycin. Solid lines represent fits of single exponential equations to the data.\u00a0(B)\u00a0of dipeptide formation by Phe-tRNAPheGAA\u00a0containing TCs reacting with 70S ribosomes, displaying the near-cognate codons\u00a0CUC,\u00a0AUC, UAC or UUAin the A site, at varying concentrations of viomycin. Solid lines represent fits of Equation 3 to the data.\u00a0(C) The accuracy of initial selection for Phe-tRNAPhecontaining TCs reading the indicated codons plotted against the concentration of viomycin required to increase the efficiency of each near-cognate reaction to half that of the cognate reaction ( ). The dotted line is a linear regression of the data illustrating the correlation predicted by Equation 2. All error bars represent SEM.\n\nPlotting the accuracies of initial selection versus the $K_{I}$ values shows a clear correlation between the two (Figure 4C). This indicates that differences in viomycin sensitivity and accuracy of initial selection between different codon\u00b7anticodon pairs depend on differences in the same elemental rate constants. This is in line with the hypothesis that the rate constant $k_{4}$ is neutral to the cognate or near-cognate nature of the codon\u2219anticodon interaction and that accuracy only varies with the product $q_{3}^{nc}q_{4}^{nc}$ (Equation 3) (Geggier et al., 2010; Thompson, 1988;\u00a0Gromadski and Rodnina, 2004; Pape, 1999).\n\n### A model to quantify viomycin-induced translational errors\n\nWe can now construct a model to estimate the frequency of extra missense errors induced by viomycin during translation. The probability that a given tRNA is trapped by viomycin on a ribosome displaying a given codon in the A site will depend on the intracellular concentration of that tRNA species as well as on how long it remains bound in the ribosomal A site during initial selection. This leads to the following expression for the probability that a missense error is caused by viomycin (supplementary methods):\n\n$$\nP(E)=\\frac{1}{1+\\frac{[T_{3}^{c}]}{\\sumk[T_{3}]_{k}^{nc}\\frac{[Vio]}{[Vio]+K_{Ik}}}}\n$$\n\nHere, $[T_{3}]_{k}^{nc}$ is the concentration of near- or non-cognate TC species $k$, $[T_{3}]^{c}$ is the cognate TC concentration and $K_{Ik}$ is the $K_{I}$ value for tRNA of type $k$ reading the codon in the A site. As an example, from our in vitro experiments; 80\u00a0\u00b1\u00a08 nM viomycin is required to double the rate at which tRNAPhe reads the codon CUC; this would roughly double the error rate assuming that there were equal concentrations of UUC and CUC displaying ribosomes in the reaction mixture.\n\n## Discussion\n\nBased on the results presented above, we have constructed a kinetic model for how viomycin reduces the fidelity of mRNA decoding (Figure 3). We also show that the loss of translational fidelity due to viomycin is to a good approximation governed by a single kinetic parameter ($K_{I}^{nc}$) for each codon\u00b7anticodon pair, and we have precisely determined its value for four such pairs. In this model, when a ternary complex first binds to the ribosome the codon\u00b7anticodon interaction is not yet established, the ribosome is not yet sensitive to viomycin and the monitoring bases are inactive. Subsequent establishment of codon\u00b7anticodon interaction and activation of the monitoring bases then leads to a highly selective ribosomal state to which viomycin can bind. The viomycin sensitivity of a ribosome with a given codon\u00b7anticodon pair in the A site is defined by the $K_{I}^{nc}$-value, which depends on how much time the ribosome spends in this viomycin-sensitive \u2018codon recognition\u2019 state before TC dissociates (Equation 5). Viomycin binding to this state effectively traps the tRNA present in the A site, abolishing the ability of the ribosome to discriminate between cognate and non-cognate tRNAs in both initial selection and proofreading selection, committing the viomycin-bound ribosome to GTP hydrolysis and peptide bond formation with 100% probability.\n\nIt has been suggested that most of the high accuracy of translation is achieved through larger forward rate constants of GTP hydrolysis and tRNA accommodation for cognate than for near- and non-cognate substrates (Gromadski and Rodnina, 2004; Pape, 1999). Such a mechanism would imply that a large part of the variation in the accuracy of initial selection between different mismatched codon\u00b7anticodon pairs comes from variation of the rate of GTP hydrolysis rather than from variation of the tRNA rejection rate. More recently, high -resolution ribosome structures from crystallography (Demeshkina et al., 2012; Demeshkina et al., 2013) and cryo-EM (Fislage et al., 2018; Loveland et al., 2017) have revealed that cognate and near-cognate codon-anticodon complexes from tRNAs (Demeshkina et al., 2012; Demeshkina et al., 2013) or TCs (Loveland et al., 2017) have very similar structures. This suggests the existence of a highly selective state in which cognate and near-cognate TCs have the same orientation in the A/T state and, by inference, the same rate constant for GTP hydrolysis. This suggestion of a codon\u00b7anticodon insensitive rate constant k4 is fully compatible with earlier kinetics results showing that the maximal rate of GTP hydrolysis (kcat) is lower in near-cognate than cognate cases and becomes equal upon addition of aminoglycosides (Pape, 1999; Pavlov and Ehrenberg, 2018; Zhang et al., 2018). We suggest that in those earlier studies the increase in the Michaelis-Menten parameter kcat, due to decreasing back reaction rate constants on drug addition, was instead mistakenly interpreted (Gromadski and Rodnina, 2004; Pape, 1999) as an increase of the catalytic rate constant, k4, for GTP hydrolysis (Pavlov and Ehrenberg, 2018; Zhang et al., 2018).\n\nFurthermore, our observation of a strong correlation between the accuracy of initial codon selection in the absence of viomycin and the viomycin sensitivity ($K_{I}^{nc}$) (Figure 4C) is fully in line with the present hypothesis of a codon-anticodon insensitive rate constant for GTP hydrolysis. This type of correlation requires that virtually all the variation in accuracy between different codon\u00b7anticodon pairs comes from variation of tRNA rejection rates rather than from variation of GTP hydrolysis rates. If all non-cognate tRNAs remained on the ribosome for approximately the same amount of time and accuracy was primarily determined by their propensity to trigger GTP hydrolysis,\u00a0that\u00a0is by variation in $k_{4}$ (Gromadski and Rodnina, 2004), we would observe approximately the same $K_{I}^{nc}$ for all codon\u00b7anticodon pairs (Equation 5), which is not the case (Figure 4C).\n\nIn all available structures of viomycin-bound ribosomes the drug is positioned between rRNA helices h44 and H69 in the space vacated by the bases A1492 and A1493 when they flip out to interact with the codon\u00b7anticodon minihelix (Brilot et al., 2013; Pulk and Cate, 2013; Stanley et al., 2010; Zhou et al., 2012). Of these structures two contain an A-site tRNA (Brilot et al., 2013; Stanley et al., 2010) and in both cases it is a cognate tRNA; leaving open the question of how viomycin can bind rapidly to a ribosome with a non-cognate tRNA where A1492 and A1493 are thought to occupy the drug binding site (Carter et al., 2000). Rapid binding of viomycin to non-cognate ribosome\u00b7tRNA complexes is explained by recent observations that A1492 and A1493 flip out after initial binding of a tRNA to the A site regardless of Watson-Crick base pairing between the codon and the anticodon (Loveland et al., 2017). The less a given codon\u00b7anticodon helix can be stabilized by interactions with A1492 and A1493 the less energetically favorable the flipped-out conformation becomes. Thus, the more easily a tRNA can be rejected by the ribosome the less time A1492 and A1493 spend in their flipped-out conformation. This link between the accuracy and the length of the time window during which the viomycin binding site is open explains our observed correlation between accuracy and viomycin sensitivity. Thus, it is likely that the bases A1492 and A1493 rapidly fluctuate between their active flipped-out and inactive flipped-in conformations when any tRNA is present in the A site. Such a model has been suggested previously from studies of A-site dynamics in the absence of tRNA (Fourmy et al., 1998; Sanbonmatsu, 2006; Vaiana and Sanbonmatsu, 2009) and recently based on structural studies of tRNA selection by both mammalian and bacterial ribosomes (Fislage et al., 2018; Loveland et al., 2017; Shao et al., 2016). In particular, Loveland et al. (2017) shows that flipping-out of A1492 and A1493 happens early in decoding for both cognate and near-cognate tRNAs, binding of viomycin would then force A1492 and A1493 to remain in their flipped-out positions, leading to activation of G530, followed by closure of the 30S subunit and GTP hydrolysis. The complete absence of proofreading selection by viomycin-bound ribosomes further implies that the A1492 and A1493 play a role also in this process and that proofreading may be mediated by the same conformational changes of the decoding center as initial selection.\n\nEquation 6 provides a model to evaluate the probability for a given viomycin-induced missense error at any codon. To fully evaluate this expression for the situation in a living cell, it is necessary to know the concentration of all tRNA species as well as the $K_{I}^{nc}$ values for all codon\u00b7anticodon pairs. However, some conclusions can be drawn even without this information. The viomycin-induced error frequency is large when the concentration of cognate tRNA is small and when there is a high concentration of near- or non-cognate tRNAs that are not efficiently discriminated against during initial selection. These are the same conditions that cause naturally occurring translational error hot-spots, implying that in the cell viomycin primarily acts to enhance such pre-existing hot-spots. Further, since proofreading selection is completely disabled on viomycin-bound ribosomes, it is unable to carry out its suggested function in neutralizing error hot-spots in initial selection (Zhang et al., 2016). This means that viomycin will alter not just the overall frequency of translational errors but also their distribution.\n\nThe $K_{I}^{nc}$ values estimated here are remarkably large considering how little viomycin is required to significantly reduce the rate of translocation (Holm et al., 2016) but direct comparison of the error-induction and translocation inhibition effects of viomycin is difficult as it is largely unknown how changes in the translational error rate affect bacterial growth rate. From the available data (Hughes, 1991), it seems that small changes in translational fidelity cause significantly smaller changes in growth rate than what is caused by comparable changes in translation speed. Given the parameter estimates in this and our previous study on translocation inhibition by viomycin (Holm et al., 2016), the error-inducing effect of the drug is likely responsible for only a small fraction of its antimicrobial activity under typical laboratory conditions, but may be more important in the clinical setting. The clinical target of the tuberactinomycins, the slow growing M. tuberculosis, normally maintains a smaller number of ribosomes per cell compared to faster growing bacteria (Cox, 2003). It could therefore potentially significantly reduce the effectiveness of translation speed inhibition, but not inhibition of translational accuracy, by overproduction of ribosomes (Dennis, 1976; Feldman et al., 2010; Maitra and Dill, 2016).\n\nAntibiotics of the aminoglycoside class bind to the ribosome in a site that partially overlaps with that of viomycin (Carter et al., 2000; Stanley et al., 2010),\u00a0suggesting that aminoglycosides and viomycin have overlapping modes of action. The detailed effects of three types of aminoglycosides on the accuracy of tRNA selection were recently investigated in a study (Zhang et al., 2018) which, together with the present study, clarifies differences and similarities of the modes of action of these two groups of antibiotics. Unlike viomycin, aminoglycosides bind to the ribosome with high affinity independently of the presence of an A-site-bound tRNA or ternary complex (Feldman et al., 2010; Pape et al., 2000; Zhang et al., 2018). Like viomycin, aminoglycosides alter the equilibrium between the active and inactive conformations of the monitoring bases A1492 and A1493, although the aminoglycoside-induced equilibrium shift is much smaller (Fislage et al., 2018; Zhang et al., 2018) than that of viomycin. Thus, the modes of action of these two classes of drugs are structurally similar in that they both force the ribosome into a state where the A-site tRNA is stabilized by activation of the monitoring bases. At the same time, their modes of action are kinetically distinct, since the two drugs bind to the ribosome during different stages of the ternary complex selection process and viomycin must be present at a much higher concentration for effective error induction than an aminoglycoside.\n\nIn summary, we have provided a quantitative kinetic model for the error-inducing effect of viomycin which together with our previous study on translocation inhibition (Holm et al., 2016) covers both known functions of the tuberactinomycin antibiotics. The model for initial selection of tRNA by the ribosome and the function of the monitoring bases suggested by our results is strongly supported by recent structural studies (Loveland et al., 2017; Shao et al., 2016) and calls into question prevailing ideas of how the high accuracy of translation is achieved. Our models and methods can be used to characterize the antimicrobial mechanisms of other tuberactinomycins and potential new tuberactinomycin derivatives and to understand the mechanisms of tuberactinomycin resistance mutations, which is highly relevant in terms of treatment of tuberculosis and related diseases.\n\n## Materials and methods\n\n### Buffers and reagents\n\nAll experiments were performed at 37\u00b0C in HEPES-polymix buffer (95 mM KCl, 5 mM NH4Cl, 0.5 mM CaCl2, 8 mM putrescine, 1 mM spermidine, 5 mM Mg(OAc)2, 1 mM dithioerythritol and 5 mM HEPES pH 7.5). All reaction mixes contained 10 mM phosphoenolpyruvate (PEP), 1 \u00b5g/ml pyruvate kinase (PK) and 0.1 \u00b5g/ml myokinase (MK). His-tagged initiation factors IF1, IF2 and IF3, elongation factor Ts, and phenylalanine and leucine aminoacyl tRNA-synthetases were purified using nickel-affinity chromatography (HisTrap GE Healthcare). Wild-type elongation factor Tu was prepared as in Ehrenberg et al. (1990). All protein concentrations were determined using the Bradford assay. Ribosomes (E. coli MRE600) and f[3H]Met-tRNAfMet were prepared according to Antoun et al. (2004); ribosome concentration was determined spectrophotometrically. XR7 mRNAs with coding sequences AUG-UUC, AUG-CUC, AUG-UAC and AUG-UUA were prepared as in Borg and Ehrenberg (2015), see theGV Appendix I for full mRNA sequences. tRNAPhe was prepared as in Holm et al. (2016). [3H]Met and [3H]GTP were from Perkin-Elmer, viomycin was from USP, all other chemicals were from either Merck or Sigma-Aldrich.\n\n### Construction and purification of EF-TuH84A\n\nThe wild type tufA gene from E. coli Mg1655 was cloned in the pET21b vector with a C-terminal hexahistidine tag. Using this construct, the Histidine at position 84 was changed to Alanine by following the standard protocol from the QIAGEN site directed mutagenesis kit. Successful mutation was confirmed by DNA sequencing. His-tagged EF-TuH84A was overexpressed in E. coli BL21(DE3) and purified using nickel-affinity chromatography (HisTrap GE Healthcare). The identity and purity of the H84A mutant protein was confirmed by mass spectrometry.\n\n### GTP-hydrolysis experiments\n\nTwo mixtures were prepared. The ribosome mixture contained 70S ribosomes (1.0\u20132.0 \u00b5M), IF1, IF2 and IF3 (2 \u00b5M each), fMet-tRNAfMet(1.5\u20133.0 \u00b5M), mRNA (3 \u00b5M), GTP (1 mM) and ATP (1 mM). The TC mixture contained EF-Tu (0.3\u20130.6 \u00b5M), phenylalanine (200 \u00b5M), PheRS (0.5 \u00b5M), tRNAPhe (2 \u00b5M), viomycin (0\u20132000 \u00b5M), [3H]GTP (0.3\u20130.6 \u00b5M) and ATP (2 mM). After 15 min incubation at 37\u00b0C, equal volumes of the two mixes were rapidly mixed and the reaction quenched at different time points with formic acid (17% final concentration) using a quench-flow instrument (RQF-3 KinTek corp.). After quenching, the samples were centrifuged at 20,800 g. The supernatant, containing the [3H]GTP and [3H]GDP was analyzed by anion exchange chromatography with on-line scintillation counting (\u03b2-RAM model 4 IN/US systems). A Mono-Q GL column (GE Healthcare) was used and the mobile phase was a multistep gradient of 0\u20132 M NaCl in 20 mM Tris (pH 7.5).\n\n### Dipeptide formation experiments\n\nTwo mixtures were prepared. The ribosome mixture contained 70S ribosomes (0.5 \u00b5M), IF1, IF2 and IF3 (1 \u00b5M each), f[3H]Met-tRNAfMet (1 \u00b5M), mRNA (2 \u00b5M), GTP (1 mM) and ATP (1 mM). The TC mixture contained EF-Tu (1\u201310 \u00b5M), EF-Ts (1 \u00b5M), phenylalanine (200 \u00b5M), PheRS (0.5 \u00b5M), tRNAPhe (12 \u00b5M), viomycin (0\u20132000 \u00b5M), GTP (1 mM) and ATP (1 mM). After 15 min incubation at 37\u00b0C, equal volumes of the two mixes were rapidly mixed and the reaction quenched at different time points with formic acid (17% final concentration) using a quench-flow instrument (RQF-3 KinTek corp.). After quenching, the samples were centrifuged at 20,800 g and the supernatant discarded. The pellet was dissolved in 165 \u00b5l 0.5 M KOH to cleave the peptides from the tRNA. After 10 min 13 \u00b5l of 100% formic acid was added, the samples were centrifuged at 20,800 g and the radioactive peptides in the supernatant were analyzed by RP-HPLC using a H2O/MeOH/trifluoroacetic acid (58/42/0.1 by volume) mobile phase and a C-18 column (Merck) with on-line scintillation counting (\u03b2-RAM model 4 IN/US systems) to quantify the relative amounts of f[3H]Met and f[3H]Met-Phe.\n\n### EF-TuH84A chase experiments\n\nThree mixtures were prepared. The ribosome mixture contained 70S ribosomes (0.75 \u00b5M), IF1, IF2 and IF3 (1 \u00b5M each), f[3H]Met-tRNAfMet (1 \u00b5M), mRNA (2 \u00b5M), GTP (1 mM) and ATP (1 mM). The first TC mixture contained EF-TuH84A (15 \u00b5M), phenylalanine (200 \u00b5M), PheRS (0.5 \u00b5M), tRNAPhe (15 \u00b5M), viomycin (0\u2013400 \u00b5M), GTP (1 mM) and ATP (1 mM). The second TC mixture contained EF-Tu (1.5 or 12 \u00b5M), EF-Ts (1 \u00b5M), phenylalanine (200 \u00b5M) or leucine (200 \u00b5M), PheRS (0.5 \u00b5M) or LeuRS (0.5 \u00b5M), tRNAPhe (2 \u00b5M) or bulk tRNA of which 2 \u00b5M was tRNALeu2 and an additional 10 \u00b5M were other leucine tRNA isoacceptors, viomycin (0\u2013600 \u00b5M), GTP (1 mM) and ATP (1 mM). All three mixes were incubated at 37\u00b0C for 15 min. During the experiment, one volume of the ribosome mixture was mixed with one volume of the first TC mixture, the resulting mixture was incubated for 5\u201310 s and then one volume of the second TC mixture was added. The reaction was quenched at different time points after the addition of the second TC mixture using formic acid (17% final). The samples were treated as the quench flow peptide samples above.\n\n### Data analysis and curve fitting\n\nReaction rates were estimated by fitting of single exponential functions to the experimental time courses except for the GTP hydrolysis reactions without viomycin on near-cognate codons which were analyzed as in Johansson et al. (2012). $k_{cat}/K_{M}$ values were estimated by fitting of the Michaelis-Menten equation to plots of reaction rates versus concentration. The linear regression in Figure 4C was based on the method in York et al. (2004). All curve-fittings were implemented in Matlab R2015b. For derivations of the equations used in the main text see Appendix I.\n",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "53e1dd23-a76b-47dc-bff2-cb782f5732e2",
+      "submission_id": "9dde1fa0-712a-46a5-b62a-5007fb9836d2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alan G Hinnebusch, Eunice Kennedy Shriver National Institute of Child Health and Human Development United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.46124.009](https://doi.org/10.7554/eLife.46124.009)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Insights into the fidelity mechanism of mRNA decoding from characterization of viomycin induced miscoding in translation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor, Alan Hinnebusch, and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nSummary:\n\nThis paper examines the mechanism of miscoding in translation by the drug viomycin, concluding that drug binding increases initial selection of the near-cognate tRNA complexes rather GTP hydrolysis by the near-cognate ternary complex. Based on the results obtained and various theoretical considerations, the paper also challenges two aspects of the current induced-fit model for tRNA selection accuracy, concluding that (i) accuracy in the tRNA selection phase of decoding is enforced primarily by increased rates of near-cognate tRNA dissociation resulting from a higher rate of the back reaction from the codon recognition state to the initial binding state, rather than from a reduced rate of GTP hydrolysis for non-cognate versus cognate tRNAs; and (ii) interactions of bases A1492/A1493 with the tRNA anticodon stem loop is not restricted to cognate tRNA, with the unstated implication that these interactions play no important role in monitoring codon:anticodon helices in the A-site. Using pre-steady-state kinetic analysis with a quench-flow apparatus, they measure the catalytic efficiency (kcat/Km) for cognate versus near-cognate codons in the A-site in the presence of increasing concentrations of viomycin, for both GTP hydrolysis by the EF-Tu-GTP-aatRNAPhe ternary complex in the step of initial selection prior to proof-reading and for peptide-bond formation following proof-reading. The results show no effect of viomycin on kcat / Km for cognate UUC, but a marked increase in kcat / Km for near-cognate CUC; which leads to a large reduction in accuracy, defined as the ratio of (kcat / Km)-cognate to (kcat / Km)-near-cognate. Rather than finding that the near-cognate codon exhibits a much smaller kcat / Kmfor peptide bond formation versus GTP hydrolysis owing to proof-reading, they are identical in the presence of drug, which means that proof-reading is disabled by the drug. They conclude, reasonably, that drug binding increases initial selection of the near-cognate complexes and that all near-cognates that pass initial selection go on to form peptide bonds.\n\nThe authors construct a kinetic model for drug action based on a current model in which the initial binding of cognate and near-cognate occurs at the same rate and only after transition to a codon-recognition state is the near-cognate tRNA rejected, returning to the initial binding state if GTP hydrolysis does not occur first. They propose that viomycin binds to the codon-recognition state and traps the tRNA in the A-site, preventing dissociation to the initial binding state and allowing GTP hydrolysis to occur. This has little effect on cognate tRNA because the rate of conversion to the initial binding state is slow and/or GTP hydrolysis is fast; but it dramatically increases the efficiency for near-cognate by preventing conversion to the initial binding state. In principle the drug could also increase the rate of GTP hydrolysis by near-cognate, but they approximate the equations that give a complete theoretical description of the kinetics with an expression in which the drug concentration required to increase the efficiency of each near-cognate reaction to one-half that of the cognate reaction, Ki, is governed by only the forward and back rates of the conversion from initial binding to codon-recognition states, and is independent of the rate of GTP hydrolysis. They go on to repeat the previous experiment for three different near-cognate codons and find a linear relationship between accuracy, (kcat / Km)-cognate/(kcat / Km)-near-cognate and KI for the four different near-cognates. They claim that this relationship indicates that the accuracy of initial selection for different near-cognates is determined primarily by different rates of tRNA rejection (the back reaction to initial binding state) rather than different rates of GTP hydrolysis in the manner proposed by the current model.\n\nIn the Discussion, they present the argument that, because viomycin binding to the A site requires that rRNA bases A1492/A1493 are in their \"flipped out\" conformation capable of interacting with the anticodon stem-loop of A site tRNA, that drug binding in the presence of a near-cognate codon requires that flipping out of the bases is not restricted to cognate codons, at odds with the recent model that these bases mediate an induced fit in the A site that triggers GTP hydrolysis. Thus, they propose that A1492/A1493 flipping out occurs dynamically when any tRNA is present in the A-site.\n\nSummary of reviewer's comments:\n\nThere is agreement among the reviewers that your analysis of the mechanism of viomycin action has been well-designed and executed, and that it leads convincingly to the conclusion that drug binding increases initial selection of the near-cognate complexes, with attendant GTP hydrolysis, and that all near-cognates that pass initial selection go on to form peptide bonds owing to the fact that viomycin disables proofreading. In addition, it is considered significant that the inhibition of selection accuracy by the drug is in the millimolar range, whereas viomycin is known to inhibit tRNA translocation at low \u03bcM concentrations, implying that the main effect of viomycin on cellular translation is by inhibiting translocation and not by inducing decoding errors.\n\nHowever, two of the reviewers object strongly to the second, more theoretical aspects of the paper where you argue from the linear relationship in Figure 3C that the accuracy of initial selection for different near-cognates is determined primarily by different rates of tRNA rejection rather than different rates of GTP hydrolysis-at odds with a leading model based on the work of Rodnina and colleagues. Both reviewers felt that this was too speculative, and that to argue convincingly against the prevailing model, it is necessary to directly measure ternary complex and/or aa-tRNA association/dissociation rates, in particular the dissociation rates of cognate and near-cognate tRNA, as you cannot currently determine whether viomycin slows down the dissociation of the ternary complex from the ribosome (as you conclude) or that viomycin accelerates GTP hydrolysis for near-cognates. It is difficult to follow the logic of your arguments, and it is questionable whether the approximation of the full set of equations required for a complete theoretical description of the kinetics you adopted in order to analyze the relationship between accuracy and KI is valid. The reviewing editor also had difficulty following these arguments and was concerned that the logic used to claim that accuracy is determined primarily by different rates of tRNA rejection rather than GTP hydrolysis may be circular, as you have used an approximation of the parameter KI in deriving equations 3-4 that doesn't include a term for GTP hydrolysis.\n\nThere was also objections to your second argument, that because viomycin binding requires A1492/A1493 to be in the flipped-out conformation, its binding to near-cognate/ribosome complexes necessitates that A1492/A1493 be flipped out for near-cognate as well as cognate tRNA-at odds with proposals that flipping out of A1492/A1493 is restricted to cognate tRNAs as a key step of the induced fit mechanism that accelerates GTP hydrolysis for cognate tRNAs. Your conclusion has been criticized because there is no crystal structure of ribosome/drug/near-cognate tRNA ternary complexes, and so the mode of viomycin binding in the presence of near-cognate tRNA is unknown; and also because there is no way to exclude that viomycin simply binds first and flips out the bases prior to tRNA binding. It was also noted in the discussion session that the available structural data do not assess the codon-recognition state, which is necessarily transient and distinct from the state probed by Ramakrishan and colleagues by stalling the ribosome with non-hydrolyzable GTP analogues or GTPase deficient mutants. Thus, we do not yet know the nature of the codon-anticodon interaction in the codon recognition state and viomycin's interactions with the ribosome and/or the codon-anticodon pair. Again, it was stated in the reviews that you should experimentally measure the conformational dynamics of A1492/A1493 during accommodation and viomycin binding to make mechanistic claims on this topic.\n\nFinally, there was the criticism that extended into the discussion session among the reviewers, that you have failed to cite or discuss the previous study of Pape et al. (Rodnina) on the mechanistically similar antibiotic paromomycin, which involved separate measurements of the effect of paromomycin on GTP hydrolysis and aa-tRNA dissociation (measured using non-hydrolyzable GTP), leading to the conclusion that both steps are affected in the case of near-cognate aa-tRNA. It was objected that your study argues with that work without citing it, but with less experimental data (i.e. no tRNA dissociation analyses) to make the argument and using complex mathematical analyses based on questionable assumptions. While it was noted that there are reasons to question the conclusions of Pape et al., challenging them should be justified by the appropriate experimental data, such as measuring tRNA disassociation rates using a GTPase-deficient mutant of EF-Tu.\n\nThe reviewing editor originally recommended that the paper be sent out for review primarily because if your speculative arguments were judged to be compelling by expert reviewers, then they would have the impact of swaying the field towards accepting a revision of the tRNA selection mechanisms proposed by others in the field. However, with these speculations being strongly challenged by two of the three reviewers, it is now judged that the solid aspects of the paper concerning the mechanism of viomycin action and implications for its biological impact are not of sufficient general interest on their own for eLife.\n\nReviewer #2:\n\nThe manuscript by Holm et al. presents a clear kinetic description of the established miscoding impact of viomycin on tRNA selection (REF 5 and Wurmbach and Nierhaus Eur. J. Biochem 1983) using modern pre-steady state methods. A big picture message of the manuscript is that viomycin operates by preventing the ribosome from efficiently rejecting near-cognate tRNA at early stages of the selection process, which has larger implications regarding the fidelity mechanism. The authors' key conclusion from their finding is that viomycin impacts tRNA selection at a step prior to GTP hydrolysis and after conserved decoding site residues have contacted the mRNA-tRNA pair (i.e. during early steps of initial selection). This conclusion seems to be well supported by the data presented and fits with some, but not other, group's interpretations of the selection mechanism. Thus, the presented findings may have the broader impact of swaying the field towards accepting revision of the tRNA selection mechanisms proposed by Rodnina and colleagues that currently serves as the most widely accepted mechanistic framework. The experiments appear to have been rigorously performed, properly analyzed and kinetically modeled. The manuscript is well written and the findings appear to be appropriately interpreted in the context of existing literature. For these reasons, publication is recommended.\n\nReviewer #3:\n\nHolm and Sanyal performed kinetic analysis of ribosome miscoding induced by the antibiotic viomycin. The authors measured the rate of GTP hydrolysis by EF-Tu and the rate of dipeptide formation to examine the effect of viomycin on initial tRNA selection and complete accommodation of tRNA to the A site, respectively. The authors found that accommodation of cognate tRNA is not affected by viomycin. By contrast, viomycin dramatically enhances rates of GTP hydrolysis and dipetide formation in the case of near-cognate tRNA. Kinetic data also suggest that viomycin completely abrogates proofreading step of tRNA selection. The experiments are well-executed. Observations made by the authors are of substantial interest to the protein synthesis community.\n\nHowever, the authors went further and made a number of additional conclusions that are not related to experimental results in an obvious way. (\"Viomycin binds to the ribosome during initial selection of tRNA, after binding of ternary complex but before GTP hydrolysis by EF-Tu\". \"In contrast to current ideas about 'induced-fit', accuracy in initial selection is achieved primarily by increase dissociation rates for near-cognate tRNAs rather than by decreased rates of GTP hydrolysis. Furthermore, the 'monitoring' bases A1492 and A1493 rapidly fluctuate between active and inactive conformations both when cognate and near-cognate tRNAs are present in the A site\"). These conclusions are inferred from kinetic analysis of the authors' data. The authors acknowledge that they did not directly measure most of the rate constants required to obtain the complete kinetic description of tRNA accommodation. In particular, the authors did not directly measure the rate of tRNA disassociation of the codon recognition complex (the Rodnina's group used GTPase deficient mutant of EF-Tu to determine this rate constant experimentally). Hence, the authors' experiments cannot directly delineate whether viomycin slows down the dissociation of the EF-Tu ternary complex from the ribosome (as the authors conclude) or viomycin accelerates GTP hydrolysis. Furthermore, the authors did not directly examine the conformational dynamics of bases A1492 and A1493 of 16S rRNA during accommodation and viomycin binding. I could not completely follow the line of theoretical arguments that the authors used in support of their conclusions. I also could not fully understand the authors' justification for the \"approximation\" of complete kinetic description of the tRNA accommodation process to a simpler kinetic equation (equation 3) that the authors used. Hence, I might not be able to adequately judge the validity of main conclusions of the manuscript. Nevertheless, it seems to me that the authors' conclusions are made based on a number of assumptions that are not directly drawn from experimental results. Besides, the manuscript does not seem very accessible to a wide audience of readers and is rather addressed to a narrow group of scientists specialized in the kinetics of the tRNA accommodation process. I therefore doubt that this manuscript is suitable for publication in eLife.\n\nReviewer #4:\n\nHolm and Sanyal employ pre-steady-state kinetics to study how the translation inhibitor viomycin affects the accuracy of aminoacyl-tRNA selection. The miscoding effect of viomycin has been reported before, e.g. by Marrero et al., 1980, also by Wurmbach and Nierhaus, 1982 (the authors do not cite the latter paper). The current study provides a more detailed assessment of miscoding of near-UUC codons by Phe-tRNAPhe. The authors find that the rates of GTP hydrolysis and dipeptide formation on near-cognate tRNA increase with the increasing concentrations of viomycin. The authors interpret that the concentration dependence reflects an equilibrium shift in the binding of near-cognate aminoacyl-tRNA to the A site. The authors find that the inhibition of selection accuracy (Ki) is in the millimolar range. This contrasts the effect of viomycin on tRNA translocation, which viomycin inhibits at low \u03bcM concentrations (Holms et al., 2016). As such, the study suggests that the main effect of viomycin on cellular translation is via the translocation step and not via decoding errors.\n\nIn addition to the conclusion about the mechanism of action of viomycin, the authors attempt to extend their findings to understand the mechanism of aa-tRNA decoding. Specifically, they ask whether the accuracy of selection is achieved via (1) \"induced fit\" of the ternary complex resulting in slow GTP hydrolysis on near-cognate aa-tRNA or (2) dissociation of near-cognate aa-tRNA. The authors also discuss the involvement of the decoding-center nucleotides A1492 and A1493 in tRNA selection. This part is speculative because the authors' findings do not directly report on tRNA association/dissociation or dynamics of the decoding center or even the binding mode (site and conformation) of viomycin in the presence of near-cognate tRNA. The rationalization of decoding accuracy in this work is not robust because it relies heavily on previous work, including crystal structures of near-cognate tRNAs or structures of viomycin-bound ribosomes. A mechanistic scheme is presented, in which viomycin binds following the ternary complex \u2013 but how was the order established, in which viomycin and the ternary complex bind? Surprisingly, the authors do not discuss a kinetic study of aa-tRNA miscoding by paromomycin (Pape, Wintermeyer and Rodnina, 2000), which addresses individual steps of ternary complex acceptance/rejection. That earlier work is particularly relevant because paromomycin' and viomycin's binding sites within h44 overlap and these antibiotics induce nearly identical rearrangements of A1492-A1493, so their mechanisms of tRNA miscoding are likely similar.\n\nIn summary, the detailed biochemical dissection of viomycin action on decoding in this work is interesting as it suggests that miscoding is not the primary mode of viomycin's antimicrobial action. However the implications for a general mechanism of translation accuracy are indirect and would require substantial additional work (e.g. direct measurements of ternary complex and/or aa-tRNA association/dissociation rates).\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration. After a subsequent appeal, the manuscript was accepted for publication.]\n\nThank you for submitting your work entitled \"The mechanism of error induction by the antibiotic viomycin provides insight into the fidelity mechanism of translation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAlthough both reviewers felt that the work was well done, noting improvements over the original version of the paper, they also agreed that the findings add only incrementally to knowledge regarding the mechanisms of viomycin action and decoding in relation to previously published biochemical and structural studies on these topics. As such, neither felt that the paper satisfies the journal's standards for publishing work of the greatest importance to the field, and indicated that it would be of interest to only a very small group of specialists.\n\nReviewer #1:\n\nHolm et al. performed kinetic analysis of ribosome miscoding induced by antibiotic viomycin. This manuscript is much improved in comparison to the earlier version of the paper. The manuscript is well written. Experiments and data analysis were meticulously done. The authors' conclusions are compelling. Important experiments with GTPase deficient mutant of EF-Tu that were missing from the previous version of the paper are now included. However, my enthusiasm is dampened because the manuscript does not offer many new insights regarding the mechanism of viomycin action or the mechanism of decoding. Most of authors' observations are consistent with previously published biochemical and structural studies of decoding/viomycin including authors' own works (e.g. Holm et al., 2016, Zhang et al., 2018). Furthermore, the authors conclude (and state this in the Abstract of manuscript) that viomycin-induced miscoding is not the cause of cell growth inhibition by viomycin. This conclusion further diminishes biological and medicinal significance of the study.\n\nReviewer #2:\n\nThe authors biochemically dissect how viomycin induces miscoding. They demonstrate that viomycin increases the rates of (1) EF-Tu-catalyzed GTP hydrolysis and (2) peptide bond formation for the near-cognate ternary complexes. Viomycin sensitivity (Ki) of different near-sense codons correlates with the accuracy for cognate tRNA over these codons (Figure 4), consistent with interference of viomycin with the decoding step(s). A competition assay is used to demonstrate that viomycin stabilizes near-cognate tRNA on the ribosome with catalytically-inactive EF-Tu, suggesting that the mechanism for GTPase activation on near-cognate tRNAs is due to stabilization of the ASL in the decoding center. These findings are consistent with previous biochemical and structural work showing that viomycin potently stabilizes tRNA in the A site, thus inducing miscoding and inhibiting translocation.\n\nAlthough this work describes a well-designed and detailed biochemical study of viomycin's effect on near-cognate tRNA, these findings only incrementally add to what's been known. Increased binding of near-cognate tRNA to the A site in the presence of viomycin was demonstrated earlier (e.g. in Wurmbach and Nierhaus, Eur J. Biochem, 1983, but this work is not cited in the submitted manuscript). Next, the effect of viomycin on A1492 and A1493 constitutes bulk of the mechanistic insights discussed in the paper. But these insights are based almost entirely on previous structural studies because present biochemical assays do not directly report on the conformational changes in the decoding center. This discussion could as well be part of a review article, in the absence of the presented data. Furthermore, in vivo relevance of increased miscoding is not shown in this work. It is possible that these in vitro findings are not relevant because translocation inhibition is the prevalent mode of action of viomycin, so that mistranslated proteins do not contribute to cellular toxicity.\n\nA minor note: The authors somewhat unexpectedly (for a broader readership) bring up aminoglycosides in the Introduction of the decoding mechanism. How relevant is this given that viomycin is not an aminoglycoside? If the modes of aminoglycosides and viomycin are deemed similar, what is the rationale for this study in the light of the known mechanism of miscoding by aminoglycosides?\n",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "addf5e0a-b402-477c-8d56-cb1a6096e175",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C1",
+      "claim": "Viomycin is the first discovered member of the tuberactinomycin class of bacterial protein synthesis inhibiting antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Viomycin is the first discovered member of the tuberactinomycin class of bacterial protein synthesis inhibiting antibiotics (Ehrlich et al., 1951; Finlay et al., 1951), commonly used to treat infections by Mycobacterium tuberculosis strains resistant to first-line drugs (WHO, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ehrlich et al., 1951 and Finlay et al., 1951",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "a106208f-58e2-44cc-a161-c7ef4a8cf323",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C2",
+      "claim": "Viomycin is commonly used to treat infections by Mycobacterium tuberculosis strains resistant to first-line drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Viomycin is the first discovered member of the tuberactinomycin class of bacterial protein synthesis inhibiting antibiotics (Ehrlich et al., 1951; Finlay et al., 1951), commonly used to treat infections by Mycobacterium tuberculosis strains resistant to first-line drugs (WHO, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "38352f4d-0e73-401f-b070-92b049e6e220",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C3",
+      "claim": "Viomycin is a cyclic pentapeptide that is naturally synthesized by a non-ribosomal peptidyl transferase.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a cyclic pentapeptide, that is naturally synthesized by a non-ribosomal peptidyl transferase (Thomas et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thomas et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "acefca36-e296-42e2-bebd-ecd7f4ea91dd",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C4",
+      "claim": "Viomycin impairs the fidelity of tRNA selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Viomycin impairs the fidelity of tRNA selection (Marrero et al., 1980) and reduces the rate of mRNA translocation (Holm et al., 2016; Modolell and V\u00e1zquez, 1977) during the elongation cycle of bacterial protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marrero et al., 1980",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "8dde73a3-d09d-4d65-a13e-4d0ee59a0591",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C5",
+      "claim": "Viomycin reduces the rate of mRNA translocation during the elongation cycle of bacterial protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Viomycin impairs the fidelity of tRNA selection (Marrero et al., 1980) and reduces the rate of mRNA translocation (Holm et al., 2016; Modolell and V\u00e1zquez, 1977) during the elongation cycle of bacterial protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Holm et al., 2016 and Modolell and V\u00e1zquez, 1977",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "7e11690f-d177-47d8-bcd5-75db628f126b",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C6",
+      "claim": "Viomycin binds to translating ribosomes associated with a ternary complex consisting of elongation factor Tu (EF-Tu), aminoacyl tRNA and GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that viomycin binds to translating ribosomes associated with a ternary complex (TC) consisting of elongation factor Tu (EF-Tu), aminoacyl tRNA and GTP, and locks the otherwise dynamically flipping monitoring bases A1492 and A1493 into their active conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated finding from the study's experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "4c9d201c-0ed8-411b-9f82-97c6190aecf4",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C7",
+      "claim": "Viomycin locks the monitoring bases A1492 and A1493 into their active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that viomycin binds to translating ribosomes associated with a ternary complex (TC) consisting of elongation factor Tu (EF-Tu), aminoacyl tRNA and GTP, and locks the otherwise dynamically flipping monitoring bases A1492 and A1493 into their active conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated finding from the study's experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "b1d958e3-de2f-496c-8290-c6f775e7b24e",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C8",
+      "claim": "The monitoring bases A1492 and A1493 dynamically flip in the absence of viomycin.",
+      "claim_type": "IMPLICIT",
+      "source": "We find that viomycin binds to translating ribosomes associated with a ternary complex (TC) consisting of elongation factor Tu (EF-Tu), aminoacyl tRNA and GTP, and locks the otherwise dynamically flipping monitoring bases A1492 and A1493 into their active conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Implied by the phrase 'otherwise dynamically flipping' which indicates the bases flip when viomycin is not present",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "68c76917-3f2d-4bd7-aa42-ea7e0c5c4ca7",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C9",
+      "claim": "Viomycin prevents dissociation of near- and non-cognate TCs from the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This effectively prevents dissociation of near- and non-cognate TCs from the ribosome, thereby enhancing errors in initial selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated finding from the study's experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "f4d39ea4-c1d4-47b8-90cd-482adab16418",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C10",
+      "claim": "Viomycin enhances errors in initial selection by preventing dissociation of near- and non-cognate TCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This effectively prevents dissociation of near- and non-cognate TCs from the ribosome, thereby enhancing errors in initial selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated finding from the study's experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "9a2bc82b-11fe-4616-ab53-d6ed88553f2d",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C11",
+      "claim": "Viomycin shuts down proofreading-based error correction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, viomycin shuts down proofreading-based error correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated finding from the study's experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "ce7c1c51-892c-4b66-b4ee-195db7880b87",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C12",
+      "claim": "The accuracy of initial selection is achieved by larger backward rate constants toward TC dissociation for near- and non-cognate TCs rather than by a smaller rate constant for GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results imply a mechanism in which the accuracy of initial selection is achieved by larger backward rate constants toward TC dissociation rather than by a smaller rate constant for GTP hydrolysis for near- and non-cognate TCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the experimental data and kinetic modeling presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "cc56bf3f-c85f-4f27-a714-7b902e60c369",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C13",
+      "claim": "Translocation inhibition, rather than error induction, is the major cause of cell growth inhibition by viomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our results demonstrate that translocation inhibition, rather than error induction, is the major cause of cell growth inhibition by viomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the experimental data and modeling presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "17f38120-9c0d-4c63-943b-c7621b3aced2",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C14",
+      "claim": "During genetic code translation, aminoacyl-transfer RNAs (AA-tRNAs) are delivered to the A site of the ribosome in ternary complex with elongation factor Tu (EF-Tu) and GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "During genetic code translation, aminoacyl-transfer RNAs (AA-tRNAs) are delivered to the A site of the ribosome in ternary complex (TC) with elongation factor Tu (EF-Tu) and GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about translation mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "4f2789d9-fc47-4950-8088-327c0ddada2b",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C15",
+      "claim": "The ribosome must select for GTP hydrolysis those TCs which contain an AA-tRNA with an anticodon cognate to the codon displayed in the ribosomal A site.",
+      "claim_type": "EXPLICIT",
+      "source": "For fast and accurate protein synthesis, the ribosome must select for GTP hydrolysis those TCs which contain an AA-tRNA with a base triplet (anticodon) cognate to the base triplet on the mRNA (codon) displayed in the ribosomal A site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about translation fidelity",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "61e965ff-d494-44b9-a84f-f7daa281e1eb",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C18",
+      "claim": "Selection of AA-tRNA by the ribosome occurs in two phases: initial codon selection before GTP hydrolysis on EF-Tu and proofreading selection after GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection of AA-tRNA by the ribosome occurs in two phases: initial codon selection before GTP hydrolysis on EF-Tu and proofreading selection after GTP hydrolysis (Ruusala et al., 1982; Thompson and Stone, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by citations to Ruusala et al., 1982 and Thompson and Stone, 1977",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "57687b06-3ef2-4e28-b3e1-73388fc41a22",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C19",
+      "claim": "Initial selection begins by TC binding to the ribosomal A/T site, from which TC is either rejected by dissociation from the ribosome or accepted by the triggering of GTP hydrolysis on EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial selection begins by TC binding to the ribosomal A/T site, from which TC is either rejected by dissociation from the ribosome or accepted by the triggering of GTP hydrolysis on EF-Tu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about the initial selection mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "a9713885-b90d-47a4-8e15-64bd4a93cf61",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C20",
+      "claim": "The accuracy of initial codon selection is amplified by A-minor interactions between the codon-anticodon helix and the 16S ribosomal RNA (rRNA) monitoring bases A1492, A1493 and G530 of the decoding center.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of initial codon selection is amplified by A-minor interactions between the codon-anticodon helix and the 16S ribosomal RNA (rRNA) monitoring bases A1492, A1493 and G530 (E. coli numbering) of the decoding center (Carter et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge supported by citation to Carter et al., 2000",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "76999955-076a-4d9e-901d-d8eea2ed42be",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C21",
+      "claim": "It has been suggested that the monitoring bases only flip out from their binding sites in helix 44 (h44) of 16S rRNA to form hydrogen bonds with cognate but not near- or non-cognate codon-anticodon helices.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the monitoring bases only flip out from their binding sites in helix 44 (h44) of 16S rRNA to form hydrogen bonds with cognate but not near- or non-cognate codon-anticodon helices (Carter et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Previous hypothesis cited from Carter et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "d6ebcaa8-b059-43bf-b31b-aa64b19821c8",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C22",
+      "claim": "In recent crystal structures of A-site accommodated cognate and near-cognate tRNAs the monitoring bases were observed in virtually identical, flipped-out, conformations in all cases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in recent crystal structures of A-site accommodated cognate and near-cognate tRNAs the monitoring bases were observed in virtually identical, flipped-out, conformations in all cases (Demeshkina et al., 2012; Demeshkina et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural data from cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "7c41df1a-24b9-4011-955b-6dd79d164ef9",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C23",
+      "claim": "Recent cryo-EM structures show that during initial selection the decoding center builds up in an identical step-wise fashion for both cognate and near-cognate tRNAs to a common final state in which all three monitoring bases are in their activated conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, recent cryo-EM structures (Fislage et al., 2018; Loveland et al., 2017) show that during initial selection the decoding center builds up in an identical step-wise fashion for both cognate and near-cognate tRNAs to a common final state in which all three monitoring bases are in their activated conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural data from cited cryo-EM studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "e7f8f486-386d-47ac-aaa9-32fa94722550",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C24",
+      "claim": "Structural data agree with kinetics data on initial TC-selection in the absence and presence of aminoglycosides, suggesting that realistic modeling of initial codon selection requires at least four ribosomal states.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural data agree with kinetics data on initial TC-selection in the absence and presence of aminoglycosides (Zhang et al., 2018), suggesting that realistic modeling of initial codon selection requires at least four ribosomal states (Fislage et al., 2018; Loveland et al., 2017; Pavlov and Ehrenberg, 2018; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple cited studies combining structural and kinetic data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "a2e2d007-3da6-4c46-923e-f100ef47771d",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C25",
+      "claim": "In crystal and cryo-EM structures of the viomycin-bound ribosome, A1492 and A1493 are seen in their active, flipped-out conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In crystal (Pulk and Cate, 2013; Stanley et al., 2010) and cryo-EM (Brilot et al., 2013) structures of the viomycin-bound ribosome, A1492 and A1493 are seen in their active, flipped-out conformation, and viomycin is bound to a site which is occluded by the monitoring bases in their inactive, flipped-in conformation (Schuwirth et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural data from cited crystal and cryo-EM studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "c8c05343-e4ea-43dd-b8a0-0c80b9fff9ce",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C26",
+      "claim": "Viomycin is bound to a site which is occluded by the monitoring bases in their inactive, flipped-in conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In crystal (Pulk and Cate, 2013; Stanley et al., 2010) and cryo-EM (Brilot et al., 2013) structures of the viomycin-bound ribosome, A1492 and A1493 are seen in their active, flipped-out conformation, and viomycin is bound to a site which is occluded by the monitoring bases in their inactive, flipped-in conformation (Schuwirth et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural data from cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "67d0615a-8b44-4abd-b723-02786dbf200f",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C27",
+      "claim": "Association of viomycin to the ribosome requires bases A1492 and A1493 in their flipped-out conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "From these structures it seems likely that association of viomycin to the ribosome requires bases A1492 and A1493 in their flipped-out conformation and that the presence of viomycin on the ribosome will effectively block the monitoring bases from returning from their inactive, flipped-in, conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from structural data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "d60ad6f5-08ea-4e60-9f5d-7eaf4a0d7c3d",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C28",
+      "claim": "The presence of viomycin on the ribosome will effectively block the monitoring bases from returning from their inactive, flipped-in, conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "From these structures it seems likely that association of viomycin to the ribosome requires bases A1492 and A1493 in their flipped-out conformation and that the presence of viomycin on the ribosome will effectively block the monitoring bases from returning from their inactive, flipped-in, conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from structural data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "b20125c7-49f0-4011-99cc-2fa2a7690d2f",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C29",
+      "claim": "The interplay between viomycin and the monitoring A1492 and A1493 bases could potentially drive activation of the third monitoring base, G530, thereby triggering GTP hydrolysis in the TC.",
+      "claim_type": "EXPLICIT",
+      "source": "This interplay between viomycin and the monitoring A1492 and A1493 bases could then potentially drive activation of the third monitoring base, G530, thereby triggering GTP hydrolysis in the TC (Loveland et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism based on structural data and cited study",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "a67ef646-a70c-4f81-9f56-06a314ad4f4e",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C30",
+      "claim": "A conformational-selection mode of viomycin binding agrees well with the result that A-site-bound tRNA greatly increases the affinity of viomycin for the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a conformational-selection mode of viomycin binding agrees well with our previous result that A-site-bound tRNA greatly increases the affinity of viomycin for the ribosome (Holm et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference connecting structural model to previous experimental result",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "1d7b0235-572c-4efa-b52a-ffa3bea6177c",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C34",
+      "claim": "Viomycin is known to bind to ribosomes with a cognate codon\u00b7anticodon interaction in the A site.",
+      "claim_type": "EXPLICIT",
+      "source": "Viomycin is known to bind to ribosomes with a cognate codon\u00b7anticodon interaction in the A site (Brilot et al., 2013; Feldman et al., 2010; Holm et al., 2016; Stanley et al., 2010; Zhou et al., 2012) and to strongly stabilize such complexes (Peske et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from multiple cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "e7132244-def9-47dd-9356-7837b067cdbd",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C35",
+      "claim": "Viomycin strongly stabilizes ribosome complexes with cognate codon\u00b7anticodon interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Viomycin is known to bind to ribosomes with a cognate codon\u00b7anticodon interaction in the A site (Brilot et al., 2013; Feldman et al., 2010; Holm et al., 2016; Stanley et al., 2010; Zhou et al., 2012) and to strongly stabilize such complexes (Peske et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "44783a93-55e8-4dcd-a75f-b06ec18dd36c",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C36",
+      "claim": "During initial codon selection viomycin acts on a ribosomal state from which near-cognate, but not cognate, substrates are likely to be rejected in the absence of the drug.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, these results imply that during initial codon selection viomycin acts on a ribosomal state from which near-cognate, but not cognate, substrates are likely to be rejected in the absence of the drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the experimental results showing differential effects on cognate vs near-cognate reactions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "c0cd8cab-81ba-4728-8cbe-3558e867c576",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C39",
+      "claim": "Viomycin causes a 21,000 fold reduction in total accuracy from 83,500 \u00b1 8000 to 4.0 \u00b1 0.3 for dipeptide formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to a 21,000 fold reduction in total accuracy from 83,500 \u00b1 8000 to 4.0 \u00b1 0.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental data on dipeptide formation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "c4ac9f45-fe13-4c6e-a6f7-17932aa9de6a",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C42",
+      "claim": "Viomycin-bound ribosomes are incapable of performing proofreading selection.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that viomycin-bound ribosomes are incapable of performing proofreading selection; all near- and non-cognate tRNAs that 'survive' initial selection go on to form peptide bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the experimental observation that kcat/KM values are identical for GTP hydrolysis and dipeptide formation in the presence of viomycin",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "975766a9-cdb1-4c0d-9c6c-20d3e9cc5d05",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C43",
+      "claim": "All near- and non-cognate tRNAs that survive initial selection on viomycin-bound ribosomes go on to form peptide bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that viomycin-bound ribosomes are incapable of performing proofreading selection; all near- and non-cognate tRNAs that 'survive' initial selection go on to form peptide bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data showing no proofreading on viomycin-bound ribosomes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "8cf49342-17b2-43c3-b72a-9bd358f98310",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C44",
+      "claim": "Even at very low drug concentration almost all near-cognate tRNAs that pass initial selection do so due to the presence of viomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, even at very low drug concentration almost all near-cognate tRNAs that pass initial selection do so due to the presence of viomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the experimental data on viomycin effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "91b9a524-1636-439c-87f2-ac1f9797db0e",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C45",
+      "claim": "Viomycin strongly stabilizes peptidyl-tRNA in the ribosomal A site.",
+      "claim_type": "EXPLICIT",
+      "source": "Viomycin is known to strongly stabilize peptidyl-tRNA in the ribosomal A site (Holm et al., 2016; Peske et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "df5211b8-4a97-414e-91ec-85101a29afa1",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C46",
+      "claim": "The rate of TCH84A dissociation from ribosomes displaying the cognate UUC codon was 1.21 \u00b1 0.088 s\u22121 in the absence of viomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of TCH84A dissociation from ribosomes displaying the cognate UUC codon (Figure 2A) was 1.21 \u00b1 0.088 s\u22121 in the absence of viomycin and decreased from 0.616 \u00b1 0.044 s\u22121 in the presence of 1 \u00b5M viomycin to 0.198 \u00b1 0.0275 s\u22121 at 10 \u00b5M viomycin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental measurement from the study shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "b5aa4a31-c4dd-47a9-a374-ba6c4df491c9",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C47",
+      "claim": "The rate of TCH84A dissociation from ribosomes displaying the cognate UUC codon decreased from 0.616 \u00b1 0.044 s\u22121 in the presence of 1 \u00b5M viomycin to 0.198 \u00b1 0.0275 s\u22121 at 10 \u00b5M viomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of TCH84A dissociation from ribosomes displaying the cognate UUC codon (Figure 2A) was 1.21 \u00b1 0.088 s\u22121 in the absence of viomycin and decreased from 0.616 \u00b1 0.044 s\u22121 in the presence of 1 \u00b5M viomycin to 0.198 \u00b1 0.0275 s\u22121 at 10 \u00b5M viomycin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental measurement from the study shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "5a863404-6a1e-409c-b4c6-2043b2767574",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C49",
+      "claim": "In the presence of 50 \u00b5M viomycin, the apparent near-cognate dissociation rate was 0.264 \u00b1 0.055 s\u22121 and decreased modestly to 0.209 \u00b1 0.066 s\u22121 at 200 \u00b5M viomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 50 \u00b5M viomycin, the apparent near-cognate dissociation rate was 0.264 \u00b1 0.055 s\u22121 and decreased modestly to 0.209 \u00b1 0.066 s\u22121 at 200 \u00b5M viomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental measurement from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "5dec5c0c-1509-4256-9083-f83064880299",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C50",
+      "claim": "Even in the absence of viomycin, dissociation of cognate TC is much slower than the forward rate constant of GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the absence of viomycin, dissociation of cognate TC is much slower (Figure 2A) than the forward rate constant of GTP hydrolysis (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of experimental data from Figures 1A and 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "3805d4fe-3b58-480d-866a-8a8369126b4b",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C51",
+      "claim": "The frequency of cognate tRNA rejection from the state probed by the TCH84A experiments is very small.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the frequency of cognate tRNA rejection from the state probed by these experiments is very small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the comparison of dissociation and GTP hydrolysis rates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "ccafa88e-3e3b-4349-8b32-781fdd4f36f8",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C52",
+      "claim": "Cognate TCs are frequently rejected by the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fact that cognate TCs are frequently rejected by the ribosome (Geggier et al., 2010; Johansson et al., 2012; Zhang et al., 2015; Zhang et al., 2016) suggests the existence of an early initial binding state from which TC rapidly dissociates, as suggested previously (Geggier et al., 2010; Gromadski and Rodnina, 2004; Pape et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from multiple cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "899f944d-b5fd-43e0-8d0b-7cf0486f4230",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C53",
+      "claim": "There exists an early initial binding state from which TC rapidly dissociates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fact that cognate TCs are frequently rejected by the ribosome (Geggier et al., 2010; Johansson et al., 2012; Zhang et al., 2015; Zhang et al., 2016) suggests the existence of an early initial binding state from which TC rapidly dissociates, as suggested previously (Geggier et al., 2010; Gromadski and Rodnina, 2004; Pape et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from cited studies and current experimental observations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "de139eb0-a9f6-4658-961d-f25f3889b7c6",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C54",
+      "claim": "Viomycin does not stabilize the initial binding state from which TC rapidly dissociates.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the decrease in the cognate dissociation rate with increasing viomycin concentration (Figure 2B) and the lack of an effect of viomycin on the cognate kinetic efficiency (kcat/Km) observed above (Figure 1B and D) implies that viomycin does not stabilize this initial binding state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from experimental data in Figures 1 and 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "8af1c62b-e005-434b-8f69-349047e1939d",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C55",
+      "claim": "Viomycin stabilizes a late binding state from which cognate TC continues to GTP hydrolysis with high probability whether or not the ribosome is viomycin bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The drug might, however, further stabilize a late binding state from which cognate TC continues to GTP hydrolysis with high probability whether or not the ribosome is viomycin bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "72b7a260-91d2-488c-947f-31cc6f7bd4d4",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C56",
+      "claim": "A large viomycin-dependent stabilization of near-cognate TC in the late binding state would explain the viomycin-induced increase in kinetic efficiency of the near-cognate reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "A correspondingly large viomycin-dependent stabilization of near-cognate TC in the very same late binding state would readily explain the viomycin-induced increase in kinetic efficiency of the near-cognate reaction (Figure 2) and the decrease in dissociation rate of TC in the cognate reaction (Figure 2A) (Carter et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference connecting experimental observations to mechanistic explanation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "06d59615-904d-4cc1-8158-4fdb84fe8606",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C57",
+      "claim": "There exists an initial binding state where any TC lacks codon\u00b7anticodon interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations can be accounted for by the existence of an initial binding state where any TC lacks codon\u2219anticodon interaction (Figure 3) in accordance with previous work on initial selection (Geggier et al., 2010; Gromadski and Rodnina, 2004; Loveland et al., 2017; Pape et al., 1998; Pavlov and Ehrenberg, 2018; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model proposed based on current data and supported by multiple cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "5031f36b-6cff-4315-beed-b6822a3dd953",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C58",
+      "claim": "In the initial binding state, cognate and near-cognate TCs have equal probability of dissociating from the ribosome rather than proceeding to formation of codon\u00b7anticodon contact.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, cognate and near-cognate TCs have equal probability of dissociating from the ribosome rather than proceeding to formation of codon\u00b7anticodon contact in the decoding site and subsequent activation of the monitoring bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the kinetic model proposed based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "c3017bee-8541-4047-b84e-7fd87d069a48",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C59",
+      "claim": "In states with codon\u00b7anticodon contact and activated monitoring bases, near-cognate tRNA has high probability of moving backward to the preceding state while cognate tRNA has high probability of moving forward to the upcoming state.",
+      "claim_type": "EXPLICIT",
+      "source": "In these latter states, near-cognate tRNA has high probability of moving backward to the preceding state while cognate tRNA has high probability of moving forward to the upcoming state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the kinetic model based on experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "3b5e2a7b-01b9-4a89-b0d6-fc0c9e0a18ce",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C60",
+      "claim": "Viomycin binds to the state with activated monitoring bases.",
+      "claim_type": "EXPLICIT",
+      "source": "Viomycin binds to the state with activated monitoring bases, and when this happens any TC present in the A site is prevented from moving backwards, eventually leading to GTP hydrolysis by EF-Tu and subsequent peptide bond formation with 100% probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the kinetic model based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "b514e7f5-6906-47c6-8664-e1eaf7d13498",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C61",
+      "claim": "When viomycin binds to the ribosome, any TC present in the A site is prevented from moving backwards, eventually leading to GTP hydrolysis by EF-Tu and subsequent peptide bond formation with 100% probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Viomycin binds to the state with activated monitoring bases, and when this happens any TC present in the A site is prevented from moving backwards, eventually leading to GTP hydrolysis by EF-Tu and subsequent peptide bond formation with 100% probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the kinetic model based on experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "504bdee7-c9f3-4c0e-8cd5-e8dd25021313",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C65",
+      "claim": "The ribosome would be unable to produce functional proteins even at viomycin concentrations far lower than KI.",
+      "claim_type": "EXPLICIT",
+      "source": "The ribosome would be unable to produce functional proteins even at far lower drug concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about biological consequences based on the accuracy reduction",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "f64093b9-0e47-48d6-bd28-e72dff31c389",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C70",
+      "claim": "Small values of q2/k2 mean that each time a TC returns to the initial binding state it has a larger probability to return to the codon-selective states for GTPase activation, affording viomycin multiple chances to bind.",
+      "claim_type": "EXPLICIT",
+      "source": "Small values of this ratio mean that each time a TC returns to the non-selective initial binding state it has a larger probability to return to the codon-selective states for GTPase activation, affording viomycin multiple chances to bind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic explanation of the mathematical relationship",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "b4da9e46-8f50-40e4-a8d0-4c3fdbaabaf3",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C73",
+      "claim": "For different codon\u00b7anticodon pairs initial codon selectivity varies over more than two orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "For different codon\u00b7anticodon pairs initial codon selectivity varies over more than two orders of magnitude (Johansson et al., 2012; Zhang et al., 2015) implying that viomycin sensitivity could also vary significantly from pair to pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "31a15c15-0c1e-407c-ab0e-7a6da75e98c4",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C74",
+      "claim": "Viomycin sensitivity could vary significantly from codon\u00b7anticodon pair to pair.",
+      "claim_type": "EXPLICIT",
+      "source": "For different codon\u00b7anticodon pairs initial codon selectivity varies over more than two orders of magnitude (Johansson et al., 2012; Zhang et al., 2015) implying that viomycin sensitivity could also vary significantly from pair to pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from cited data and the kinetic model",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "48d37a0b-82dd-4e19-80d4-1799e91c398e",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C82",
+      "claim": "Differences in viomycin sensitivity and accuracy of initial selection between different codon\u00b7anticodon pairs depend on differences in the same elemental rate constants.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that differences in viomycin sensitivity and accuracy of initial selection between different codon\u00b7anticodon pairs depend on differences in the same elemental rate constants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observed correlation between accuracy and KI values",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "43cc5dc3-25c6-45e3-81ed-e2de9a0805be",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C85",
+      "claim": "80 \u00b1 8 nM viomycin is required to double the rate at which tRNAPhe reads the codon CUC.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, from our in vitro experiments; 80 \u00b1 8 nM viomycin is required to double the rate at which tRNAPhe reads the codon CUC; this would roughly double the error rate assuming that there were equal concentrations of UUC and CUC displaying ribosomes in the reaction mixture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "057f67a7-2476-483a-8e6d-fa7581bbe25f",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C86",
+      "claim": "It has been suggested that most of the high accuracy of translation is achieved through larger forward rate constants of GTP hydrolysis and tRNA accommodation for cognate than for near- and non-cognate substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that most of the high accuracy of translation is achieved through larger forward rate constants of GTP hydrolysis and tRNA accommodation for cognate than for near- and non-cognate substrates (Gromadski and Rodnina, 2004; Pape, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Previous hypothesis from cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "188ad241-746e-4ab5-b36f-0d7f9eca0010",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C87",
+      "claim": "A mechanism where accuracy is achieved through larger forward rate constants would imply that a large part of the variation in the accuracy of initial selection between different mismatched codon\u00b7anticodon pairs comes from variation of the rate of GTP hydrolysis rather than from variation of the tRNA rejection rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism would imply that a large part of the variation in the accuracy of initial selection between different mismatched codon\u00b7anticodon pairs comes from variation of the rate of GTP hydrolysis rather than from variation of the tRNA rejection rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the previous hypothesis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "07fd028f-e372-4e8c-ac9f-d7e21788cf45",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C88",
+      "claim": "High-resolution ribosome structures from crystallography and cryo-EM have revealed that cognate and near-cognate codon-anticodon complexes from tRNAs or TCs have very similar structures.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, high -resolution ribosome structures from crystallography (Demeshkina et al., 2012; Demeshkina et al., 2013) and cryo-EM (Fislage et al., 2018; Loveland et al., 2017) have revealed that cognate and near-cognate codon-anticodon complexes from tRNAs (Demeshkina et al., 2012; Demeshkina et al., 2013) or TCs (Loveland et al., 2017) have very similar structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural data from cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "43e836d4-f681-4e00-ba3f-0ec388fa7b57",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C89",
+      "claim": "The structural similarity of cognate and near-cognate complexes suggests the existence of a highly selective state in which cognate and near-cognate TCs have the same orientation in the A/T state and the same rate constant for GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the existence of a highly selective state in which cognate and near-cognate TCs have the same orientation in the A/T state and, by inference, the same rate constant for GTP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "1d49afe3-fce2-48e4-90aa-17500852ed62",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C90",
+      "claim": "The suggestion of a codon\u00b7anticodon insensitive rate constant k4 is fully compatible with earlier kinetics results showing that the maximal rate of GTP hydrolysis (kcat) is lower in near-cognate than cognate cases and becomes equal upon addition of aminoglycosides.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggestion of a codon\u00b7anticodon insensitive rate constant k4 is fully compatible with earlier kinetics results showing that the maximal rate of GTP hydrolysis (kcat) is lower in near-cognate than cognate cases and becomes equal upon addition of aminoglycosides (Pape, 1999; Pavlov and Ehrenberg, 2018; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reconciliation of current model with previous kinetic data from cited studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "4b7dabf7-128a-4110-8262-fe48233aa596",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C91",
+      "claim": "In earlier studies the increase in the Michaelis-Menten parameter kcat, due to decreasing back reaction rate constants on drug addition, was mistakenly interpreted as an increase of the catalytic rate constant k4 for GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that in those earlier studies the increase in the Michaelis-Menten parameter kcat, due to decreasing back reaction rate constants on drug addition, was instead mistakenly interpreted (Gromadski and Rodnina, 2004; Pape, 1999) as an increase of the catalytic rate constant, k4, for GTP hydrolysis (Pavlov and Ehrenberg, 2018; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reinterpretation of previous studies based on current understanding",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "0f56f1d2-983a-42e7-b8e2-fd0a8c618def",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C93",
+      "claim": "The observed correlation requires that virtually all the variation in accuracy between different codon\u00b7anticodon pairs comes from variation of tRNA rejection rates rather than from variation of GTP hydrolysis rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of correlation requires that virtually all the variation in accuracy between different codon\u00b7anticodon pairs comes from variation of tRNA rejection rates rather than from variation of GTP hydrolysis rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the observed correlation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "939b6ee2-77c7-450a-8c82-b0802a18c69a",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C95",
+      "claim": "In all available structures of viomycin-bound ribosomes the drug is positioned between rRNA helices h44 and H69 in the space vacated by the bases A1492 and A1493 when they flip out to interact with the codon\u00b7anticodon minihelix.",
+      "claim_type": "EXPLICIT",
+      "source": "In all available structures of viomycin-bound ribosomes the drug is positioned between rRNA helices h44 and H69 in the space vacated by the bases A1492 and A1493 when they flip out to interact with the codon\u00b7anticodon minihelix (Brilot et al., 2013; Pulk and Cate, 2013; Stanley et al., 2010; Zhou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural data from multiple cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "006cb345-1790-4f90-9c88-a87798d8efab",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C96",
+      "claim": "Of the viomycin-bound ribosome structures, two contain an A-site tRNA and in both cases it is a cognate tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these structures two contain an A-site tRNA (Brilot et al., 2013; Stanley et al., 2010) and in both cases it is a cognate tRNA; leaving open the question of how viomycin can bind rapidly to a ribosome with a non-cognate tRNA where A1492 and A1493 are thought to occupy the drug binding site (Carter et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from cited structural studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "b439e6c9-7201-45a3-bb99-fb5b1945516f",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C97",
+      "claim": "Rapid binding of viomycin to non-cognate ribosome\u00b7tRNA complexes is explained by recent observations that A1492 and A1493 flip out after initial binding of a tRNA to the A site regardless of Watson-Crick base pairing between the codon and the anticodon.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid binding of viomycin to non-cognate ribosome\u00b7tRNA complexes is explained by recent observations that A1492 and A1493 flip out after initial binding of a tRNA to the A site regardless of Watson-Crick base pairing between the codon and the anticodon (Loveland et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation based on cited structural study",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "c5785416-7a77-4729-863f-8b760bfcf309",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C98",
+      "claim": "The less a given codon\u00b7anticodon helix can be stabilized by interactions with A1492 and A1493 the less energetically favorable the flipped-out conformation becomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The less a given codon\u00b7anticodon helix can be stabilized by interactions with A1492 and A1493 the less energetically favorable the flipped-out conformation becomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about thermodynamic relationships",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "5cd30c67-4617-49ca-bf88-4dad16df206d",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C99",
+      "claim": "The more easily a tRNA can be rejected by the ribosome the less time A1492 and A1493 spend in their flipped-out conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the more easily a tRNA can be rejected by the ribosome the less time A1492 and A1493 spend in their flipped-out conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about kinetic consequences of thermodynamic relationships",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "258adf0b-45a6-40e4-8247-e6d48acd04e6",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C100",
+      "claim": "The link between the accuracy and the length of the time window during which the viomycin binding site is open explains the observed correlation between accuracy and viomycin sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This link between the accuracy and the length of the time window during which the viomycin binding site is open explains our observed correlation between accuracy and viomycin sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic explanation of the experimental observation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "11a09e73-4873-46c9-bc8d-00eb7268591a",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C101",
+      "claim": "It is likely that the bases A1492 and A1493 rapidly fluctuate between their active flipped-out and inactive flipped-in conformations when any tRNA is present in the A site.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is likely that the bases A1492 and A1493 rapidly fluctuate between their active flipped-out and inactive flipped-in conformations when any tRNA is present in the A site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the current data and mechanistic model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "79dc68f3-d9f3-4690-bdd0-38900cad975b",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C102",
+      "claim": "A model where A1492 and A1493 fluctuate between conformations has been suggested previously from studies of A-site dynamics in the absence of tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a model has been suggested previously from studies of A-site dynamics in the absence of tRNA (Fourmy et al., 1998; Sanbonmatsu, 2006; Vaiana and Sanbonmatsu, 2009) and recently based on structural studies of tRNA selection by both mammalian and bacterial ribosomes (Fislage et al., 2018; Loveland et al., 2017; Shao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Previous models from cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "8db51ebb-94bb-49f9-9c57-163f74e18c81",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C103",
+      "claim": "Loveland et al. (2017) shows that flipping-out of A1492 and A1493 happens early in decoding for both cognate and near-cognate tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Loveland et al. (2017) shows that flipping-out of A1492 and A1493 happens early in decoding for both cognate and near-cognate tRNAs, binding of viomycin would then force A1492 and A1493 to remain in their flipped-out positions, leading to activation of G530, followed by closure of the 30S subunit and GTP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural data from cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "2ff35134-062c-4f57-aea5-b33e7979698b",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C104",
+      "claim": "Binding of viomycin forces A1492 and A1493 to remain in their flipped-out positions, leading to activation of G530, followed by closure of the 30S subunit and GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Loveland et al. (2017) shows that flipping-out of A1492 and A1493 happens early in decoding for both cognate and near-cognate tRNAs, binding of viomycin would then force A1492 and A1493 to remain in their flipped-out positions, leading to activation of G530, followed by closure of the 30S subunit and GTP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic inference based on cited structural data and current model",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "d9c76f9f-4000-468c-9392-05d60eb98dde",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C105",
+      "claim": "The complete absence of proofreading selection by viomycin-bound ribosomes implies that the A1492 and A1493 play a role also in proofreading.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete absence of proofreading selection by viomycin-bound ribosomes further implies that the A1492 and A1493 play a role also in this process and that proofreading may be mediated by the same conformational changes of the decoding center as initial selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the experimental observation that viomycin abolishes proofreading",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "602ed489-74a5-42be-9040-30c7b144be08",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C106",
+      "claim": "Proofreading may be mediated by the same conformational changes of the decoding center as initial selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete absence of proofreading selection by viomycin-bound ribosomes further implies that the A1492 and A1493 play a role also in this process and that proofreading may be mediated by the same conformational changes of the decoding center as initial selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the experimental observation that viomycin affects both initial selection and proofreading",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "6776935b-4742-4925-9f00-06663b0497fb",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C107",
+      "claim": "The viomycin-induced error frequency is large when the concentration of cognate tRNA is small and when there is a high concentration of near- or non-cognate tRNAs that are not efficiently discriminated against during initial selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The viomycin-induced error frequency is large when the concentration of cognate tRNA is small and when there is a high concentration of near- or non-cognate tRNAs that are not efficiently discriminated against during initial selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the mathematical model (Equation 8)",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "9e743b9c-2d30-4b73-9933-42cf835ec499",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C108",
+      "claim": "Viomycin primarily acts to enhance pre-existing translational error hot-spots in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These are the same conditions that cause naturally occurring translational error hot-spots, implying that in the cell viomycin primarily acts to enhance such pre-existing hot-spots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the model and comparison to natural error patterns",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "006294bf-8410-49b1-a9e1-e009b492f272",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C109",
+      "claim": "Proofreading selection has a suggested function in neutralizing error hot-spots in initial selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, since proofreading selection is completely disabled on viomycin-bound ribosomes, it is unable to carry out its suggested function in neutralizing error hot-spots in initial selection (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited hypothesis from Zhang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "db7de6ea-36f7-40f9-9965-401708ac37fd",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C110",
+      "claim": "Viomycin will alter not just the overall frequency of translational errors but also their distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that viomycin will alter not just the overall frequency of translational errors but also their distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation that viomycin disables proofreading which normally neutralizes error hot-spots",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "01610ef7-cc0f-4105-9ffb-f071b544596d",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C112",
+      "claim": "Small changes in translational fidelity cause significantly smaller changes in growth rate than what is caused by comparable changes in translation speed.",
+      "claim_type": "EXPLICIT",
+      "source": "From the available data (Hughes, 1991), it seems that small changes in translational fidelity cause significantly smaller changes in growth rate than what is caused by comparable changes in translation speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from cited data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "ff898c02-8743-44bd-8c2f-851998f938c0",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C113",
+      "claim": "The error-inducing effect of viomycin is likely responsible for only a small fraction of its antimicrobial activity under typical laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the parameter estimates in this and our previous study on translocation inhibition by viomycin (Holm et al., 2016), the error-inducing effect of the drug is likely responsible for only a small fraction of its antimicrobial activity under typical laboratory conditions, but may be more important in the clinical setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the current and previous study's parameter estimates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "4cbd4bef-1a37-4a36-bf86-ee55db3397fe",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C114",
+      "claim": "The error-inducing effect of viomycin may be more important in the clinical setting than under laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the parameter estimates in this and our previous study on translocation inhibition by viomycin (Holm et al., 2016), the error-inducing effect of the drug is likely responsible for only a small fraction of its antimicrobial activity under typical laboratory conditions, but may be more important in the clinical setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about clinical relevance",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "72b666a0-5316-4c68-8d8b-b57d66c2ee1d",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C115",
+      "claim": "M. tuberculosis normally maintains a smaller number of ribosomes per cell compared to faster growing bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical target of the tuberactinomycins, the slow growing M. tuberculosis, normally maintains a smaller number of ribosomes per cell compared to faster growing bacteria (Cox, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "8f958093-f4ff-4500-a9d9-623a70cc5bb1",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C116",
+      "claim": "M. tuberculosis could potentially significantly reduce the effectiveness of translation speed inhibition, but not inhibition of translational accuracy, by overproduction of ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "It could therefore potentially significantly reduce the effectiveness of translation speed inhibition, but not inhibition of translational accuracy, by overproduction of ribosomes (Dennis, 1976; Feldman et al., 2010; Maitra and Dill, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on cited studies about bacterial adaptation mechanisms",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "f4a6647d-2159-4372-b4e7-e6bfeff391ce",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C117",
+      "claim": "Antibiotics of the aminoglycoside class bind to the ribosome in a site that partially overlaps with that of viomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotics of the aminoglycoside class bind to the ribosome in a site that partially overlaps with that of viomycin (Carter et al., 2000; Stanley et al., 2010), suggesting that aminoglycosides and viomycin have overlapping modes of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural data from cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "505f4fa3-a1ea-40e7-abf8-ec392934db50",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C118",
+      "claim": "Aminoglycosides and viomycin have overlapping modes of action.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotics of the aminoglycoside class bind to the ribosome in a site that partially overlaps with that of viomycin (Carter et al., 2000; Stanley et al., 2010), suggesting that aminoglycosides and viomycin have overlapping modes of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural data showing overlapping binding sites",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "d8ede278-0d46-4886-aa08-16a514107369",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C119",
+      "claim": "Unlike viomycin, aminoglycosides bind to the ribosome with high affinity independently of the presence of an A-site-bound tRNA or ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike viomycin, aminoglycosides bind to the ribosome with high affinity independently of the presence of an A-site-bound tRNA or ternary complex (Feldman et al., 2010; Pape et al., 2000; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "3a7f849e-d6d4-4b2d-8a44-13af3dc97534",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C120",
+      "claim": "Like viomycin, aminoglycosides alter the equilibrium between the active and inactive conformations of the monitoring bases A1492 and A1493.",
+      "claim_type": "EXPLICIT",
+      "source": "Like viomycin, aminoglycosides alter the equilibrium between the active and inactive conformations of the monitoring bases A1492 and A1493, although the aminoglycoside-induced equilibrium shift is much smaller (Fislage et al., 2018; Zhang et al., 2018) than that of viomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison based on cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "4676ac80-f674-4631-9192-df61b16302b0",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C121",
+      "claim": "The aminoglycoside-induced equilibrium shift of the monitoring bases is much smaller than that of viomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Like viomycin, aminoglycosides alter the equilibrium between the active and inactive conformations of the monitoring bases A1492 and A1493, although the aminoglycoside-induced equilibrium shift is much smaller (Fislage et al., 2018; Zhang et al., 2018) than that of viomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison based on cited studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "87f3a635-b623-4b6e-b799-ed8ac8017d3e",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C122",
+      "claim": "The modes of action of aminoglycosides and viomycin are structurally similar in that they both force the ribosome into a state where the A-site tRNA is stabilized by activation of the monitoring bases.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the modes of action of these two classes of drugs are structurally similar in that they both force the ribosome into a state where the A-site tRNA is stabilized by activation of the monitoring bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison and synthesis of structural and mechanistic data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "4ed1dd5b-0289-4c19-af44-5c540719b8ab",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C123",
+      "claim": "The modes of action of aminoglycosides and viomycin are kinetically distinct, since the two drugs bind to the ribosome during different stages of the ternary complex selection process.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, their modes of action are kinetically distinct, since the two drugs bind to the ribosome during different stages of the ternary complex selection process and viomycin must be present at a much higher concentration for effective error induction than an aminoglycoside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison based on kinetic data from current and cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "cf64e4be-df98-4c83-937f-236dbf98e1cb",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "claim_id": "C124",
+      "claim": "Viomycin must be present at a much higher concentration for effective error induction than an aminoglycoside.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, their modes of action are kinetically distinct, since the two drugs bind to the ribosome during different stages of the ternary complex selection process and viomycin must be present at a much higher concentration for effective error induction than an aminoglycoside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison based on kinetic data from current and cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f3079985-24f6-4a15-8a21-4512b23c3e24",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background claims establish that viomycin is a tuberactinomycin antibiotic used to treat drug-resistant M. tuberculosis, is a cyclic pentapeptide synthesized non-ribosomally, and impairs tRNA selection fidelity while reducing mRNA translocation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are well-supported by appropriate citations to prior literature (Ehrlich et al., 1951; Finlay et al., 1951; WHO, 2010; Thomas et al., 2003; Marrero et al., 1980; Holm et al., 2016; Modolell and V\u00e1zquez, 1977). These are established background facts that provide context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "ee6b2c8a-7558-445f-bbdf-c6c0586e810f",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Viomycin binds to ribosomes with ternary complexes and locks monitoring bases A1492 and A1493 in their active conformation, preventing dissociation of near- and non-cognate TCs and thereby enhancing errors in initial selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 represent the core mechanistic findings of the study. The experimental data in Figures 1 and 2 directly demonstrate viomycin's effects on TC binding and dissociation. The inference about dynamic flipping (C8) is reasonable given the phrase 'otherwise dynamically flipping.' The mechanism is well-supported by kinetic measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "69991738-7dda-4f0f-a8f7-021c1305e53c",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Viomycin completely abolishes proofreading-based error correction, such that all near- and non-cognate tRNAs that survive initial selection proceed to form peptide bonds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C42, and C43 are strongly supported by the experimental observation that kcat/KM values for GTP hydrolysis and dipeptide formation are identical in the presence of viomycin (Figure 1B and D), indicating no proofreading occurs. This is a key finding demonstrating viomycin's dual effect on both selection phases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "1353286e-16a1-4d74-8c24-de0d1bbc48bc",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The accuracy of initial selection is achieved primarily by larger backward rate constants toward TC dissociation for near-cognate TCs rather than by smaller forward rate constants for GTP hydrolysis, challenging previous models that emphasized differential GTP hydrolysis rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C86-C93 present a mechanistic reinterpretation of translation fidelity. The correlation between accuracy and viomycin sensitivity (Figure 4C) strongly supports that variation in accuracy comes from tRNA rejection rates rather than GTP hydrolysis rates. The structural data cited (C88) showing similar cognate/near-cognate geometries supports a codon-insensitive k4. This represents a significant conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "79c0c8ba-2ca4-4d8c-a60c-97dca33d56ce",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Viomycin causes a 21,000-fold reduction in total accuracy for dipeptide formation, from 83,500 \u00b1 8000 to 4.0 \u00b1 0.3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is directly calculated from the experimental kcat/KM values shown in Figure 1D. The measurements appear robust with appropriate error estimates. This quantifies the dramatic effect of viomycin on translational fidelity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "1c417341-ff85-4cbc-b81f-b2571ce79455",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Viomycin stabilizes both cognate and near-cognate TCs on the ribosome, with cognate TC dissociation rates decreasing from 1.21 \u00b1 0.088 s\u207b\u00b9 to 0.198 \u00b1 0.0275 s\u207b\u00b9 as viomycin increases from 0 to 10 \u00b5M.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 are supported by the EF-TuH84A chase experiments shown in Figure 2. The measurements demonstrate dose-dependent stabilization of TCs by viomycin. The inference that cognate rejection frequency is small in the probed state (C51) is reasonable given the slow dissociation relative to GTP hydrolysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "67e1c634-caa6-4f77-bbac-d0600b102415",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "There exists an early initial binding state from which TCs rapidly dissociate, which viomycin does not stabilize, and a late binding state that viomycin does stabilize, explaining the differential effects on cognate versus near-cognate reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 propose a multi-state model to reconcile the observation that cognate TCs are frequently rejected (C52, supported by citations) yet viomycin doesn't affect cognate kcat/KM. The model is well-supported by the experimental data showing viomycin stabilizes late states (Figure 2) without affecting cognate kinetic efficiency (Figure 1B, D).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "206e0d4d-d6d1-4d24-b5bc-f445acce37e6",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A kinetic model is proposed where TC initially binds without codon-anticodon interaction, then progresses through states with activated monitoring bases where viomycin can bind and prevent backward movement, committing to GTP hydrolysis with 100% probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 present the comprehensive kinetic model (Figure 3) that explains all experimental observations. The model is consistent with prior work (multiple citations) and accounts for the differential effects on cognate versus near-cognate reactions. The mathematical framework (Equations 1-7) provides quantitative predictions that match experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "d2e39abe-fb30-46bb-b5e7-b1c24f51db22",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Viomycin sensitivity varies significantly between different codon-anticodon pairs, correlating strongly with the accuracy of initial selection, indicating both depend on the same elemental rate constants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73, C74, C82, and C100 are supported by the experiments with multiple codon-anticodon pairs (Figure 4). The observed correlation between accuracy and KI values (Figure 4C) provides strong evidence that both parameters depend on tRNA rejection rates. This validates key predictions of the kinetic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "35e0e22b-a04d-414a-9429-ca8c76f9137a",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Translocation inhibition, rather than error induction, is the major cause of cell growth inhibition by viomycin under typical laboratory conditions, as small changes in translational fidelity cause smaller growth rate changes than comparable changes in translation speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C112, and C113 integrate findings from this study with prior work on translocation inhibition (Holm et al., 2016). The high KI values for error induction compared to translocation inhibition, combined with cited data on growth rate effects (Hughes, 1991), support this conclusion. The reasoning is sound though somewhat indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "d6dbe761-05e3-4a00-b423-8bab6f97fdf6",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Structural studies show that in viomycin-bound ribosomes, A1492 and A1493 are in their active flipped-out conformation, with viomycin occupying a site that would be blocked by these bases in their inactive conformation, suggesting viomycin requires and stabilizes the flipped-out state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28, C95, and C96 accurately summarize structural data from multiple cited studies (Pulk and Cate, 2013; Stanley et al., 2010; Brilot et al., 2013; Schuwirth et al., 2005). The inference that viomycin binding requires flipped-out bases (C27) is reasonable given the structural constraints. These structural insights support the kinetic model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "4b185654-12f0-4b0b-84e1-0d4a9c2740b3",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A1492 and A1493 likely fluctuate rapidly between active and inactive conformations when tRNA is present, with the time spent in the flipped-out conformation determining both accuracy and viomycin sensitivity, explaining the observed correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C104 propose a dynamic model of monitoring base behavior that reconciles structural and kinetic data. The model is supported by cited structural studies (Loveland et al., 2017; Fourmy et al., 1998; Sanbonmatsu, 2006) and explains the correlation between accuracy and viomycin sensitivity. The thermodynamic and kinetic reasoning (C98-C99) is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "8d084f90-9656-42cb-a069-cb415e1fc4d0",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The complete absence of proofreading by viomycin-bound ribosomes implies that A1492 and A1493 play a role in proofreading, and that proofreading may be mediated by the same conformational changes as initial selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105 and C106 draw mechanistic inferences from the experimental observation that viomycin abolishes proofreading. The inference that A1492/A1493 are involved in proofreading (C105) is well-supported. The suggestion that proofreading uses the same conformational changes as initial selection (C106) is more speculative but reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "fa639f7a-2c87-456a-abaf-957aba78e649",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Viomycin-induced errors are most frequent when cognate tRNA concentration is low and near-cognate tRNA concentration is high, conditions that create natural error hot-spots, implying viomycin enhances pre-existing hot-spots and alters error distribution by disabling proofreading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C110 apply the kinetic model (Equation 8) to predict cellular error patterns. The reasoning is sound: viomycin's mechanism naturally targets the same conditions that cause natural errors, and disabling proofreading (which normally neutralizes hot-spots per Zhang et al., 2016) would alter error distribution. The logic is well-supported though the predictions are not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "91581407-c12b-4eb7-81bc-693f097b0b83",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Aminoglycosides and viomycin have structurally similar but kinetically distinct modes of action: both stabilize A-site tRNA through monitoring base activation, but aminoglycosides bind independently of tRNA with smaller equilibrium shifts, while viomycin requires tRNA and must be present at much higher concentrations for error induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C124 provide a comprehensive comparison with aminoglycosides based on cited structural data (Carter et al., 2000; Stanley et al., 2010) and recent kinetic studies (Zhang et al., 2018; Feldman et al., 2010). The comparison is well-supported and highlights important mechanistic differences between these antibiotic classes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on translation mechanism: AA-tRNAs are delivered in ternary complexes, selection occurs in two phases (initial and proofreading), and recent structural data show monitoring bases adopt similar activated conformations for both cognate and near-cognate tRNAs, requiring multi-state models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C24 provide essential background on translation mechanisms, all well-supported by appropriate citations to established literature. These claims set up the context for understanding the current study's findings and are accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "c529d7fb-ed00-4f4e-b05e-8aa72001bc6e",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The interplay between viomycin and monitoring bases A1492/A1493 could potentially drive activation of G530 and trigger GTP hydrolysis, consistent with a conformational-selection binding mode that agrees with previous findings that A-site-bound tRNA increases viomycin affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29 and C30 are speculative mechanistic proposals. While C30 connects to previous experimental results (Holm et al., 2016), C29 is explicitly speculative ('could potentially'). The mechanism is plausible but not directly demonstrated in this study. More direct evidence would be needed to fully support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "f56bedaf-02ad-473b-aada-7940907b4d74",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Viomycin binds to and stabilizes ribosomes with cognate codon-anticodon interactions, acting during initial selection on a state from which near-cognate substrates would normally be rejected, such that even at low concentrations almost all near-cognate tRNAs passing initial selection do so due to viomycin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C44 integrate established knowledge (C34-C35, well-cited) with new experimental inferences (C36, C44). The inference that viomycin acts on a rejection-prone state (C36) is well-supported by the differential effects on cognate versus near-cognate reactions. Claim C44 is a strong inference from the kinetic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "217abb66-228b-4bea-a89e-cd8c1020ffd7",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Viomycin strongly stabilizes peptidyl-tRNA in the ribosomal A site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is established knowledge from cited studies (Holm et al., 2016; Peske et al., 2004) and provides context for the current experiments. This is well-supported background information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "bdf3bec3-9055-4c4d-91c3-4cc84988c5c6",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The ribosome would be unable to produce functional proteins even at viomycin concentrations far lower than KI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 is a speculative inference about biological consequences. While the dramatic accuracy reduction supports this claim, it is not directly tested. The statement is reasonable but would require experimental validation of protein function at sub-KI concentrations to be fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "a1497c35-60d0-4a5a-aec5-7e4c06a9d421",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Small values of q2/k2 mean that TCs returning to the initial binding state have higher probability of re-entering codon-selective states, affording viomycin multiple binding opportunities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is a mechanistic explanation of the mathematical relationship in the kinetic model. The reasoning is sound and follows logically from the model structure. This helps explain why certain parameters affect viomycin sensitivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "c9e1b9e4-9aa5-4394-92b2-ae949b6b1118",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "80 \u00b1 8 nM viomycin is required to double the rate at which tRNAPhe reads the codon CUC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is a specific quantitative prediction calculated from the experimental data. The value is derived from the measured KI and provides a concrete example of viomycin's potency for error induction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    },
+    {
+      "id": "15836a85-6573-46e6-8c62-da130992de5c",
+      "content_id": "715272b8-c986-4a43-9210-fe40c7b238d9",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The error-inducing effect of viomycin may be more important clinically than in laboratory conditions, as M. tuberculosis maintains fewer ribosomes and could potentially compensate for translation speed inhibition but not accuracy inhibition by overproducing ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C114-C116 are speculative about clinical relevance. While C115 is supported by citation (Cox, 2003), claims C114 and C116 are hypothetical scenarios not directly tested. The reasoning is plausible but would require clinical or in vivo data to be fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:30:50.035051Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "addf5e0a-b402-477c-8d56-cb1a6096e175",
+      "result_id": "f3079985-24f6-4a15-8a21-4512b23c3e24"
+    },
+    {
+      "claim_id": "a106208f-58e2-44cc-a161-c7ef4a8cf323",
+      "result_id": "f3079985-24f6-4a15-8a21-4512b23c3e24"
+    },
+    {
+      "claim_id": "38352f4d-0e73-401f-b070-92b049e6e220",
+      "result_id": "f3079985-24f6-4a15-8a21-4512b23c3e24"
+    },
+    {
+      "claim_id": "acefca36-e296-42e2-bebd-ecd7f4ea91dd",
+      "result_id": "f3079985-24f6-4a15-8a21-4512b23c3e24"
+    },
+    {
+      "claim_id": "8dde73a3-d09d-4d65-a13e-4d0ee59a0591",
+      "result_id": "f3079985-24f6-4a15-8a21-4512b23c3e24"
+    },
+    {
+      "claim_id": "7e11690f-d177-47d8-bcd5-75db628f126b",
+      "result_id": "ee6b2c8a-7558-445f-bbdf-c6c0586e810f"
+    },
+    {
+      "claim_id": "4c9d201c-0ed8-411b-9f82-97c6190aecf4",
+      "result_id": "ee6b2c8a-7558-445f-bbdf-c6c0586e810f"
+    },
+    {
+      "claim_id": "b1d958e3-de2f-496c-8290-c6f775e7b24e",
+      "result_id": "ee6b2c8a-7558-445f-bbdf-c6c0586e810f"
+    },
+    {
+      "claim_id": "68c76917-3f2d-4bd7-aa42-ea7e0c5c4ca7",
+      "result_id": "ee6b2c8a-7558-445f-bbdf-c6c0586e810f"
+    },
+    {
+      "claim_id": "f4d39ea4-c1d4-47b8-90cd-482adab16418",
+      "result_id": "ee6b2c8a-7558-445f-bbdf-c6c0586e810f"
+    },
+    {
+      "claim_id": "9a2bc82b-11fe-4616-ab53-d6ed88553f2d",
+      "result_id": "69991738-7dda-4f0f-a8f7-021c1305e53c"
+    },
+    {
+      "claim_id": "c4ac9f45-fe13-4c6e-a6f7-17932aa9de6a",
+      "result_id": "69991738-7dda-4f0f-a8f7-021c1305e53c"
+    },
+    {
+      "claim_id": "975766a9-cdb1-4c0d-9c6c-20d3e9cc5d05",
+      "result_id": "69991738-7dda-4f0f-a8f7-021c1305e53c"
+    },
+    {
+      "claim_id": "ce7c1c51-892c-4b66-b4ee-195db7880b87",
+      "result_id": "1353286e-16a1-4d74-8c24-de0d1bbc48bc"
+    },
+    {
+      "claim_id": "057f67a7-2476-483a-8e6d-fa7581bbe25f",
+      "result_id": "1353286e-16a1-4d74-8c24-de0d1bbc48bc"
+    },
+    {
+      "claim_id": "188ad241-746e-4ab5-b36f-0d7f9eca0010",
+      "result_id": "1353286e-16a1-4d74-8c24-de0d1bbc48bc"
+    },
+    {
+      "claim_id": "07fd028f-e372-4e8c-ac9f-d7e21788cf45",
+      "result_id": "1353286e-16a1-4d74-8c24-de0d1bbc48bc"
+    },
+    {
+      "claim_id": "43e836d4-f681-4e00-ba3f-0ec388fa7b57",
+      "result_id": "1353286e-16a1-4d74-8c24-de0d1bbc48bc"
+    },
+    {
+      "claim_id": "1d49afe3-fce2-48e4-90aa-17500852ed62",
+      "result_id": "1353286e-16a1-4d74-8c24-de0d1bbc48bc"
+    },
+    {
+      "claim_id": "4b7dabf7-128a-4110-8262-fe48233aa596",
+      "result_id": "1353286e-16a1-4d74-8c24-de0d1bbc48bc"
+    },
+    {
+      "claim_id": "0f56f1d2-983a-42e7-b8e2-fd0a8c618def",
+      "result_id": "1353286e-16a1-4d74-8c24-de0d1bbc48bc"
+    },
+    {
+      "claim_id": "c0cd8cab-81ba-4728-8cbe-3558e867c576",
+      "result_id": "79c0c8ba-2ca4-4d8c-a60c-97dca33d56ce"
+    },
+    {
+      "claim_id": "df5211b8-4a97-414e-91ec-85101a29afa1",
+      "result_id": "1c417341-ff85-4cbc-b81f-b2571ce79455"
+    },
+    {
+      "claim_id": "b5aa4a31-c4dd-47a9-a374-ba6c4df491c9",
+      "result_id": "1c417341-ff85-4cbc-b81f-b2571ce79455"
+    },
+    {
+      "claim_id": "5a863404-6a1e-409c-b4c6-2043b2767574",
+      "result_id": "1c417341-ff85-4cbc-b81f-b2571ce79455"
+    },
+    {
+      "claim_id": "5dec5c0c-1509-4256-9083-f83064880299",
+      "result_id": "1c417341-ff85-4cbc-b81f-b2571ce79455"
+    },
+    {
+      "claim_id": "3805d4fe-3b58-480d-866a-8a8369126b4b",
+      "result_id": "1c417341-ff85-4cbc-b81f-b2571ce79455"
+    },
+    {
+      "claim_id": "ccafa88e-3e3b-4349-8b32-781fdd4f36f8",
+      "result_id": "67e1c634-caa6-4f77-bbac-d0600b102415"
+    },
+    {
+      "claim_id": "899f944d-b5fd-43e0-8d0b-7cf0486f4230",
+      "result_id": "67e1c634-caa6-4f77-bbac-d0600b102415"
+    },
+    {
+      "claim_id": "de139eb0-a9f6-4658-961d-f25f3889b7c6",
+      "result_id": "67e1c634-caa6-4f77-bbac-d0600b102415"
+    },
+    {
+      "claim_id": "8af1c62b-e005-434b-8f69-349047e1939d",
+      "result_id": "67e1c634-caa6-4f77-bbac-d0600b102415"
+    },
+    {
+      "claim_id": "72b7a260-91d2-488c-947f-31cc6f7bd4d4",
+      "result_id": "67e1c634-caa6-4f77-bbac-d0600b102415"
+    },
+    {
+      "claim_id": "06d59615-904d-4cc1-8158-4fdb84fe8606",
+      "result_id": "206e0d4d-d6d1-4d24-b5bc-f445acce37e6"
+    },
+    {
+      "claim_id": "5031f36b-6cff-4315-beed-b6822a3dd953",
+      "result_id": "206e0d4d-d6d1-4d24-b5bc-f445acce37e6"
+    },
+    {
+      "claim_id": "c3017bee-8541-4047-b84e-7fd87d069a48",
+      "result_id": "206e0d4d-d6d1-4d24-b5bc-f445acce37e6"
+    },
+    {
+      "claim_id": "3b5e2a7b-01b9-4a89-b0d6-fc0c9e0a18ce",
+      "result_id": "206e0d4d-d6d1-4d24-b5bc-f445acce37e6"
+    },
+    {
+      "claim_id": "b514e7f5-6906-47c6-8664-e1eaf7d13498",
+      "result_id": "206e0d4d-d6d1-4d24-b5bc-f445acce37e6"
+    },
+    {
+      "claim_id": "b4da9e46-8f50-40e4-a8d0-4c3fdbaabaf3",
+      "result_id": "d2e39abe-fb30-46bb-b5e7-b1c24f51db22"
+    },
+    {
+      "claim_id": "31a15c15-0c1e-407c-ab0e-7a6da75e98c4",
+      "result_id": "d2e39abe-fb30-46bb-b5e7-b1c24f51db22"
+    },
+    {
+      "claim_id": "48d37a0b-82dd-4e19-80d4-1799e91c398e",
+      "result_id": "d2e39abe-fb30-46bb-b5e7-b1c24f51db22"
+    },
+    {
+      "claim_id": "258adf0b-45a6-40e4-8247-e6d48acd04e6",
+      "result_id": "d2e39abe-fb30-46bb-b5e7-b1c24f51db22"
+    },
+    {
+      "claim_id": "cc56bf3f-c85f-4f27-a714-7b902e60c369",
+      "result_id": "35e0e22b-a04d-414a-9429-ca8c76f9137a"
+    },
+    {
+      "claim_id": "01610ef7-cc0f-4105-9ffb-f071b544596d",
+      "result_id": "35e0e22b-a04d-414a-9429-ca8c76f9137a"
+    },
+    {
+      "claim_id": "ff898c02-8743-44bd-8c2f-851998f938c0",
+      "result_id": "35e0e22b-a04d-414a-9429-ca8c76f9137a"
+    },
+    {
+      "claim_id": "a2e2d007-3da6-4c46-923e-f100ef47771d",
+      "result_id": "d6dbe761-05e3-4a00-b423-8bab6f97fdf6"
+    },
+    {
+      "claim_id": "c8c05343-e4ea-43dd-b8a0-0c80b9fff9ce",
+      "result_id": "d6dbe761-05e3-4a00-b423-8bab6f97fdf6"
+    },
+    {
+      "claim_id": "67d0615a-8b44-4abd-b723-02786dbf200f",
+      "result_id": "d6dbe761-05e3-4a00-b423-8bab6f97fdf6"
+    },
+    {
+      "claim_id": "d60ad6f5-08ea-4e60-9f5d-7eaf4a0d7c3d",
+      "result_id": "d6dbe761-05e3-4a00-b423-8bab6f97fdf6"
+    },
+    {
+      "claim_id": "939b6ee2-77c7-450a-8c82-b0802a18c69a",
+      "result_id": "d6dbe761-05e3-4a00-b423-8bab6f97fdf6"
+    },
+    {
+      "claim_id": "006cb345-1790-4f90-9c88-a87798d8efab",
+      "result_id": "d6dbe761-05e3-4a00-b423-8bab6f97fdf6"
+    },
+    {
+      "claim_id": "b439e6c9-7201-45a3-bb99-fb5b1945516f",
+      "result_id": "4b185654-12f0-4b0b-84e1-0d4a9c2740b3"
+    },
+    {
+      "claim_id": "c5785416-7a77-4729-863f-8b760bfcf309",
+      "result_id": "4b185654-12f0-4b0b-84e1-0d4a9c2740b3"
+    },
+    {
+      "claim_id": "5cd30c67-4617-49ca-bf88-4dad16df206d",
+      "result_id": "4b185654-12f0-4b0b-84e1-0d4a9c2740b3"
+    },
+    {
+      "claim_id": "11a09e73-4873-46c9-bc8d-00eb7268591a",
+      "result_id": "4b185654-12f0-4b0b-84e1-0d4a9c2740b3"
+    },
+    {
+      "claim_id": "79dc68f3-d9f3-4690-bdd0-38900cad975b",
+      "result_id": "4b185654-12f0-4b0b-84e1-0d4a9c2740b3"
+    },
+    {
+      "claim_id": "8db51ebb-94bb-49f9-9c57-163f74e18c81",
+      "result_id": "4b185654-12f0-4b0b-84e1-0d4a9c2740b3"
+    },
+    {
+      "claim_id": "2ff35134-062c-4f57-aea5-b33e7979698b",
+      "result_id": "4b185654-12f0-4b0b-84e1-0d4a9c2740b3"
+    },
+    {
+      "claim_id": "d9c76f9f-4000-468c-9392-05d60eb98dde",
+      "result_id": "8d084f90-9656-42cb-a069-cb415e1fc4d0"
+    },
+    {
+      "claim_id": "602ed489-74a5-42be-9040-30c7b144be08",
+      "result_id": "8d084f90-9656-42cb-a069-cb415e1fc4d0"
+    },
+    {
+      "claim_id": "6776935b-4742-4925-9f00-06663b0497fb",
+      "result_id": "fa639f7a-2c87-456a-abaf-957aba78e649"
+    },
+    {
+      "claim_id": "9e743b9c-2d30-4b73-9933-42cf835ec499",
+      "result_id": "fa639f7a-2c87-456a-abaf-957aba78e649"
+    },
+    {
+      "claim_id": "006294bf-8410-49b1-a9e1-e009b492f272",
+      "result_id": "fa639f7a-2c87-456a-abaf-957aba78e649"
+    },
+    {
+      "claim_id": "db7de6ea-36f7-40f9-9965-401708ac37fd",
+      "result_id": "fa639f7a-2c87-456a-abaf-957aba78e649"
+    },
+    {
+      "claim_id": "f4a6647d-2159-4372-b4e7-e6bfeff391ce",
+      "result_id": "91581407-c12b-4eb7-81bc-693f097b0b83"
+    },
+    {
+      "claim_id": "505f4fa3-a1ea-40e7-abf8-ec392934db50",
+      "result_id": "91581407-c12b-4eb7-81bc-693f097b0b83"
+    },
+    {
+      "claim_id": "d8ede278-0d46-4886-aa08-16a514107369",
+      "result_id": "91581407-c12b-4eb7-81bc-693f097b0b83"
+    },
+    {
+      "claim_id": "3a7f849e-d6d4-4b2d-8a44-13af3dc97534",
+      "result_id": "91581407-c12b-4eb7-81bc-693f097b0b83"
+    },
+    {
+      "claim_id": "4676ac80-f674-4631-9192-df61b16302b0",
+      "result_id": "91581407-c12b-4eb7-81bc-693f097b0b83"
+    },
+    {
+      "claim_id": "87f3a635-b623-4b6e-b799-ed8ac8017d3e",
+      "result_id": "91581407-c12b-4eb7-81bc-693f097b0b83"
+    },
+    {
+      "claim_id": "4ed1dd5b-0289-4c19-af44-5c540719b8ab",
+      "result_id": "91581407-c12b-4eb7-81bc-693f097b0b83"
+    },
+    {
+      "claim_id": "cf64e4be-df98-4c83-937f-236dbf98e1cb",
+      "result_id": "91581407-c12b-4eb7-81bc-693f097b0b83"
+    },
+    {
+      "claim_id": "17f38120-9c0d-4c63-943b-c7621b3aced2",
+      "result_id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882"
+    },
+    {
+      "claim_id": "4f2789d9-fc47-4950-8088-327c0ddada2b",
+      "result_id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882"
+    },
+    {
+      "claim_id": "61e965ff-d494-44b9-a84f-f7daa281e1eb",
+      "result_id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882"
+    },
+    {
+      "claim_id": "57687b06-3ef2-4e28-b3e1-73388fc41a22",
+      "result_id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882"
+    },
+    {
+      "claim_id": "a9713885-b90d-47a4-8e15-64bd4a93cf61",
+      "result_id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882"
+    },
+    {
+      "claim_id": "76999955-076a-4d9e-901d-d8eea2ed42be",
+      "result_id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882"
+    },
+    {
+      "claim_id": "d6ebcaa8-b059-43bf-b31b-aa64b19821c8",
+      "result_id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882"
+    },
+    {
+      "claim_id": "7c41df1a-24b9-4011-955b-6dd79d164ef9",
+      "result_id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882"
+    },
+    {
+      "claim_id": "e7f8f486-386d-47ac-aaa9-32fa94722550",
+      "result_id": "67e5b411-1a7a-4ffc-98d8-5f47ab53b882"
+    },
+    {
+      "claim_id": "b20125c7-49f0-4011-99cc-2fa2a7690d2f",
+      "result_id": "c529d7fb-ed00-4f4e-b05e-8aa72001bc6e"
+    },
+    {
+      "claim_id": "a67ef646-a70c-4f81-9f56-06a314ad4f4e",
+      "result_id": "c529d7fb-ed00-4f4e-b05e-8aa72001bc6e"
+    },
+    {
+      "claim_id": "1d7b0235-572c-4efa-b52a-ffa3bea6177c",
+      "result_id": "f56bedaf-02ad-473b-aada-7940907b4d74"
+    },
+    {
+      "claim_id": "e7132244-def9-47dd-9356-7837b067cdbd",
+      "result_id": "f56bedaf-02ad-473b-aada-7940907b4d74"
+    },
+    {
+      "claim_id": "44783a93-55e8-4dcd-a75f-b06ec18dd36c",
+      "result_id": "f56bedaf-02ad-473b-aada-7940907b4d74"
+    },
+    {
+      "claim_id": "8cf49342-17b2-43c3-b72a-9bd358f98310",
+      "result_id": "f56bedaf-02ad-473b-aada-7940907b4d74"
+    },
+    {
+      "claim_id": "91b9a524-1636-439c-87f2-ac1f9797db0e",
+      "result_id": "217abb66-228b-4bea-a89e-cd8c1020ffd7"
+    },
+    {
+      "claim_id": "504bdee7-c9f3-4c0e-8cd5-e8dd25021313",
+      "result_id": "bdf3bec3-9055-4c4d-91c3-4cc84988c5c6"
+    },
+    {
+      "claim_id": "f64093b9-0e47-48d6-bd28-e72dff31c389",
+      "result_id": "a1497c35-60d0-4a5a-aec5-7e4c06a9d421"
+    },
+    {
+      "claim_id": "43cc5dc3-25c6-45e3-81ed-e2de9a0805be",
+      "result_id": "c9e1b9e4-9aa5-4394-92b2-ae949b6b1118"
+    },
+    {
+      "claim_id": "4cbd4bef-1a37-4a36-bf86-ee55db3397fe",
+      "result_id": "15836a85-6573-46e6-8c62-da130992de5c"
+    },
+    {
+      "claim_id": "72b666a0-5316-4c68-8d8b-b57d66c2ee1d",
+      "result_id": "15836a85-6573-46e6-8c62-da130992de5c"
+    },
+    {
+      "claim_id": "8f958093-f4ff-4500-a9d9-623a70cc5bb1",
+      "result_id": "15836a85-6573-46e6-8c62-da130992de5c"
+    }
+  ],
+  "comparisons": []
+}

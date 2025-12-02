@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The mammalian circadian clock operates through a transcription-based feedback loop where CLOCK:BMAL1 drives expression of repressors PER1/2 and CRY1/2, which then interact with CLOCK:BMAL1 to close the loop with ~24 hr periodicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 describe the well-established core mechanism of the mammalian circadian clock. This is foundational knowledge in the field, supported by extensive prior research and serves as the context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30"
+    ],
+    "result": "Both CRY1 and CRY2 bind the BMAL1 TAD with similar low micromolar affinity, either independently or in complex with PER2 CBD, to sequester it from coactivators and repress CLOCK:BMAL1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, and C30 are directly supported by fluorescence polarization binding data in Figure 1C and 1E showing similar Kd values (~0.9-1.6 \u03bcM) for both CRY1 and CRY2 binding to BMAL1 TAD, with or without PER2 CBD. The data are consistent and replicated (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "CRY1 binds to the CLOCK:BMAL1 PAS domain core with approximately 20-fold higher affinity (Kd = 65 \u00b1 6 nM) than CRY2 (Kd = 1.2 \u00b1 0.2 \u03bcM), as demonstrated by gel filtration and BLI assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C34 are strongly supported by multiple complementary techniques: gel filtration showing only CRY1 co-migrates with CLOCK:BMAL1 (Figure 2A-B), and quantitative BLI measurements (Figure 2C-D) showing the 20-fold difference in affinity. The experiments are well-controlled and replicated (n=2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Addition of the BMAL1 C-terminus containing the TAD to the CLOCK:BMAL1 heterodimer enables stable complex formation with CRY2, demonstrating that multivalent interactions facilitate CRY2 binding despite its lower affinity for the PAS domain core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are supported by gel filtration data (Figure 2\u2014figure supplement 1C) showing CRY2 co-elutes with full-length BMAL1 but not with the truncated bHLH-PAS core. This provides direct evidence for the importance of multivalent binding in stabilizing CRY2 complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A dynamic serine-rich loop adjacent to the secondary pocket differentially regulates CRY1 and CRY2 binding to CLOCK:BMAL1, with CRY1 exhibiting higher flexibility at this loop despite 80% sequence identity and 1.4 \u00c5 structural similarity between the PHR domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C37-C44 are supported by multiple lines of evidence: MD simulations showing differential RMSF values (Figure 3B), structural comparisons (Figure 3A), crystal structure analysis showing missing density in CRY1 vs. helical structure in CRY2, and sequence analysis identifying only two amino acid differences (G43/A61 and N46/S64) in the serine loop.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The A61G/S64N substitutions in the serine loop increase flexibility and decrease secondary pocket volume in CRY2, making it more CRY1-like, as demonstrated by MD simulations and cellular reconstitution assays showing shortened circadian period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by MD simulation data showing increased RMSF and decreased pocket volume (Figure 3D, 3F), statistical analysis (p<0.001, Wilcoxon ranksum test), and citation to prior cellular data (C47). The computational predictions are validated by experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Mutations in the serine loop and secondary pocket enhance CRY2 affinity for CLOCK:BMAL1, with the CRY2 7M mutant showing 10-fold enhancement (Kd = 130 \u00b1 12 nM) and the CRY2 2M mutant showing ~4-fold enhancement (Kd = 343.8 \u00b1 26.9 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 are directly supported by BLI binding data (Figure 3H, Figure 3\u2014figure supplement 2B) with replicated measurements (n=2). The results validate computational predictions and demonstrate that serine loop mutations are sufficient to modulate binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The serine loop in CRY2 is stabilized by intra-loop hydrogen bonds, while in CRY1, N46 forms high-frequency hydrogen bonds with E382 and E383, contributing to differential loop dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 are supported by hydrogen bond analysis from MD simulations (Supplementary file 1b, Figure 3\u2014figure supplement 3). The analysis provides mechanistic insight into the structural basis for differential loop flexibility, though the functional significance could be further validated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C58"
+    ],
+    "result": "In the CRY1 PHR:PER2 CBD complex, the serine loop maintains most of its flexibility with only modest structuring at the C-terminal end (residues 44-47), as shown by a new crystal structure at improved resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C58 are supported by the new crystal structure (PDB: 6OF7, Figure 4B, Figure 5A) showing partially ordered serine loop and high structural similarity to prior structure (0.76 \u00c5 RMSD). The structure addresses artifacts in previous crystallographic studies and provides clearer insight into loop dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Mutation of W362 to alanine in the CLOCK PAS-B HI loop reduces CRY1 binding nearly 100-fold (Kd = 6.6 \u00b1 2.6 \u03bcM) and CRY2 binding ~10-fold (Kd = 10.2 \u00b1 0.2 \u03bcM), confirming the critical role of this residue in CRY recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C57 are supported by BLI data (Figure 4\u2014figure supplement 3) showing dramatic loss of binding for both CRYs with the W362A mutant. This validates the importance of the CLOCK PAS-B interaction and is consistent with prior functional studies cited in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "PER2 binding modestly weakens CRY1 interaction with CLOCK:BMAL1 by ~3-fold (from Kd = 65 \u00b1 6 nM to 196 \u00b1 34 nM), likely due to partial ordering of the serine loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by BLI data (Figure 5B) comparing CRY1 alone vs. CRY1:PER2 CBD complex binding to CLOCK:BMAL1 PAS-AB. The measurements are replicated (n=2) and consistent with structural observations of modest loop structuring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PER2 binding causes major structural reorganization of the CRY2 serine loop, moving S64 out of the secondary pocket by ~9 \u00c5 and causing unfolding of the short \u03b1-helix with A61 translating ~5 \u00c5 toward the pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by structural comparison of apo and PER2-bound CRY2 (Figure 5C) showing dramatic conformational changes. The specific distance measurements provide quantitative evidence for the major remodeling of the serine loop upon PER2 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PER2 binding enhances CRY2 affinity for CLOCK:BMAL1 by 2-fold (from Kd = 1.2 \u00b1 0.2 \u03bcM to 604 \u00b1 29 nM) through remodeling of the serine loop, not through direct PER2-CLOCK:BMAL1 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by BLI data (Figure 5D, Figure 5\u2014figure supplement 3) showing enhanced CRY2 binding in the presence of PER2 and no detectable direct PER2-CLOCK:BMAL1 interaction. The measurements are replicated (n=2) and provide mechanistic insight into PER2's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "When bound to PER2, CRY1 and CRY2 have similar affinities for CLOCK:BMAL1 (within ~3-fold: 196 \u00b1 34 nM vs. 604 \u00b1 29 nM), compared to the 20-fold difference without PER2, with the CRY2 7M mutant behaving like CRY1 (Kd = 159 \u00b1 66 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 are supported by BLI data (Figure 5E) showing convergence of CRY1 and CRY2 affinities in the presence of PER2. This provides strong evidence for PER2 acting as a 'molecular equalizer' and validates the serine loop mechanism through the CRY2 7M mutant behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70"
+    ],
+    "result": "CRY1 serves as a stronger repressor that lengthens circadian period through its higher affinity for CLOCK:BMAL1, while PER2 acts as a molecular equalizer by enhancing CRY2 binding and reducing CRY1 binding through differential serine loop remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69, and C70 integrate the biochemical findings with functional implications. While C5 relies on inference from prior studies, the mechanistic model (C69-C70) is well-supported by the collective structural and binding data showing how serine loop dynamics control differential affinity and how PER2 modulates this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "CRY1 and CRY2 likely function similarly within PER-containing early repressive complexes due to equalized affinities, while CRY1's 20-fold higher affinity for CLOCK:BMAL1 enables its unique participation in PER-free late repressive complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C72 are inferences supported by the biochemical data and consistent with prior observations of temporal CRY recruitment patterns. The model logically connects the differential binding affinities to known functional differences, though direct validation of complex composition in vivo would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior studies established that CRY1 and CRY2 have distinct roles in period regulation (Cry1-/- mice have short periods, Cry2-/- mice have long periods), with CRY1 being a stronger repressor, and that these differences are encoded in protein structure/dynamics rather than expression timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 summarize well-established prior work from the field, appropriately cited throughout. These provide essential context for the current study and are supported by multiple independent studies. The authors correctly attribute these findings to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Cryptochromes contain a conserved PHR domain required for rhythmicity and divergent C-terminal tails that modulate rhythm parameters, with CRY1 interacting with both CLOCK PAS-B (via the secondary pocket) and BMAL1 TAD (via the CC helix) for repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe established structural and functional features of cryptochromes from prior work by these authors and others, appropriately cited. These provide the structural framework for understanding the current findings about differential CRY1/CRY2 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The secondary pocket in mammalian cryptochromes is larger than in photoreceptive cryptochromes or photolyases, and cryptochrome recruitment to the PAS domain core represents a key regulatory node in the clock, as the BMAL1 TAD is the primary driver of CLOCK:BMAL1 transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 integrate evolutionary context and functional significance, supported by citations to prior structural and functional studies. C75 is a reasonable inference from the collective data showing differential PAS domain binding correlates with period regulation, though it represents a model rather than direct demonstration.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C115"
+    ],
+    "result": "Cap-G is expressed and localized in post-mitotic neurons of Drosophila. Cap-G mRNA and protein are detected in neurons throughout development, with nuclear localization in post-mitotic neurons and strongest expression in newly born neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence (in situ hybridization C20, C38, C39; immunofluorescence with Cap-GEGFP C21-C23, C40-C43; comparison to interphase localization C115) consistently demonstrate Cap-G expression in post-mitotic neurons. The observation of strongest signal in newly born neurons (C44) is supported by imaging data, though the functional interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "The deGradFP system achieves neuron-specific Cap-G knockdown without affecting neural stem cells. Quantification shows no significant changes in Cap-G levels in NSCs, NSC numbers, or cell division rates in elav-KD embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple quantitative analyses (C53-C57, C60) demonstrate no effects on NSC division or Cap-G levels in NSCs. The immunofluorescence data (C51) directly shows reduced GFP in neurons but not NSCs. This addresses a critical concern about potential mitotic artifacts and validates the post-mitotic specificity of the knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73"
+    ],
+    "result": "Neuron-specific Cap-G knockdown causes severe developmental lethality and reduced survival. Only 17% of elav-KD embryos reach pupal stage and 4% reach adulthood, compared to 71% and 66% in controls, with statistical significance (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The survival data (C64-C72) are quantitative with appropriate statistical analysis and large sample sizes (n=300). The phenotypes are consistent across two independent GAL4 drivers (elav and nSyb), with elav-KD showing more severe effects as expected from its earlier expression pattern. The conclusion (C73) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Cap-G knockdown in neurons causes severe locomotion defects in larvae and adults. Knockdown larvae move 4 cm/min less than controls (p<0.0001), and adult nSyb-KD flies show compromised climbing ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Behavioral phenotypes are quantified with appropriate statistics (C75, C77) and adequate sample sizes (n=30). The consistency of defects across developmental stages and between two knockdown conditions strengthens the conclusion. However, the authors appropriately note that surviving adults may represent escapers with less severe knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C125"
+    ],
+    "result": "Cap-G depletion in neurons causes increased DNA damage. A two- to three-fold increase in \u03b3-H2Av+ neurons is observed in both elav-KD and nSyb-KD compared to controls (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DNA damage phenotype is quantified with appropriate statistics (C79) and uses an established marker (\u03b3-H2Av). However, the similar levels of DNA damage in elav-KD and nSyb-KD despite different gene expression changes (C131) suggest DNA damage may not directly cause the transcriptional phenotypes, as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Cap-G knockdown does not affect nuclear size in neurons. No significant difference in nuclear area is observed between Cap-G KD and controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nuclear area quantification (C80) is based on large cell numbers (>1000 cells/replicate, 7 replicates) with appropriate statistical analysis. This negative result is important for ruling out gross chromatin compaction defects and is consistent with a more specific regulatory role for Cap-G.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cap-G shows dynamic, cell-type-specific DNA binding patterns across NSCs and differentiated neurons. Cap-G binds to different genes in NSCs (e.g., dpn, CycE) versus neurons (e.g., nSyb), with significant differences in bound genes between cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TaDa data show strong correlation between replicates (r~0.9, C81) and clear cell-type-specific binding patterns (C82-C87). The Venn diagram analysis (C86) quantifies the overlap and unique binding. The conclusion of dynamic binding (C88) is well-supported by the data, though the functional significance requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Cap-G binding is enriched in gene bodies and repressive chromatin states, but depleted at accessible chromatin and known enhancers. Cap-G shows strongest association with 'black' repressive chromatin and negative correlation with chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary analyses support this conclusion: genomic annotation (C89), comparison to REDfly enhancers (C93-C94), CATaDa analysis (C95, C97), and chromatin state analysis (C98-C100). The consistency across different approaches strengthens the conclusion, though it contrasts with some prior studies in other systems (C91-C92, C142-C143).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Cap-G knockdown causes dramatic gene expression changes in neurons, with downregulation of neuron-specific genes and ectopic upregulation of non-CNS genes. elav-KD shows 1360 upregulated and 1308 downregulated genes, while nSyb-KD shows more modest changes (152 up, 126 down).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data are comprehensive with appropriate replicates and statistical thresholds (log2FC >1 or <-1, FDR<0.05). GO term analysis (C107) and tissue expression analysis (C108-C109) support the interpretation. The consistency of expression patterns in overlapping genes (C106) and the difference in magnitude between elav-KD and nSyb-KD (C104-C105) are consistent with the timing of knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C136"
+    ],
+    "result": "The majority of misregulated genes upon Cap-G knockdown are directly bound by Cap-G. In elav neurons, 80% of downregulated and 72% of upregulated genes are Cap-G bound; in mature neurons, 63-65% of differentially expressed genes are bound (p<10^-20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overlap analysis between TaDa and RNA-seq data (C111-C113) is statistically significant with appropriate testing (Fisher's exact test). However, the authors appropriately acknowledge that 20-37% of differentially expressed genes are not directly bound (C147), indicating indirect effects. The high overlap supports but does not prove direct transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C164"
+    ],
+    "result": "Cap-G plays a more prominent role in newly born neurons than in mature neurons. elav-KD (targeting newly born and mature neurons) shows more severe phenotypes and gene expression changes than nSyb-KD (targeting only mature neurons), consistent with higher Cap-G levels in newly born neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential severity between elav-KD and nSyb-KD is consistently observed across multiple phenotypes (survival C69, gene expression C104-C105, behavior C9). The observation of higher Cap-G levels in newly born neurons (C159, C164) provides a molecular basis for this difference. However, the interpretation is complicated by the different cell populations targeted by the two drivers (C157).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Cap-G knockdown causes a small but statistically significant increase in neuronal apoptosis. A modest increase in Elav-positive apoptotic neurons is observed in elav-KD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TUNEL staining data (C62) show statistical significance, though the effect is described as small. The authors appropriately interpret this cautiously (C63) as suggesting decreased cell survival. However, the magnitude of apoptosis appears insufficient to explain the severe phenotypes observed, suggesting other mechanisms are more important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C166",
+      "C167"
+    ],
+    "result": "Cap-G is essential for proper gene expression in neurons and plays an important role during early neuronal development, implicating condensin I in a previously uncharacterized post-mitotic role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion integrates multiple lines of evidence: expression data (C3), knockdown phenotypes (C4-C5), gene expression changes (C6-C8), and DNA binding data (C10). The novelty of the post-mitotic role (C167) is supported by the careful validation that NSC division is unaffected (C61). However, the mechanistic details of how Cap-G regulates gene expression remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C149",
+      "C151",
+      "C152"
+    ],
+    "result": "Cap-G may regulate gene expression through multiple mechanisms, potentially including maintenance of repressive chromatin states and remodeling of 3D chromatin structure. Both direct and indirect effects on gene expression are observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative (C102, C149, C151, C152) and represent interpretations of the data rather than direct observations. While the association with repressive chromatin (C144) is supported, the observation of both up- and downregulated genes (C146) and the presence of indirect effects (C147) indicate the mechanism is complex and not fully resolved. Additional experiments would be needed to test these hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C135"
+    ],
+    "result": "The gene expression changes observed are likely not directly caused by DNA damage, as similar DNA damage levels are seen in elav-KD and nSyb-KD despite different magnitudes of gene expression changes. The effects are attributed to post-mitotic Cap-G depletion rather than mitotic defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reasoning (C131) is sound: similar DNA damage but different gene expression changes between conditions suggests DNA damage is not the primary driver of transcriptional changes. The conclusion about post-mitotic effects (C135) is supported by the extensive validation that NSC division is unaffected (C61). However, this remains correlative rather than mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The observed phenotypes result from post-mitotic Cap-G depletion in neurons, with minimal contribution from progenitor cell defects. However, the possibility of undetected low-level knockdown in progenitors cannot be completely excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion (C160) is based on extensive negative data showing no effects on NSCs (C53-C57, C60-C61). The use of two independent GAL4 drivers (C162) strengthens confidence. The authors appropriately acknowledge the limitation (C161) that very low-level knockdown in a subset of progenitors cannot be completely ruled out, demonstrating scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C165"
+    ],
+    "result": "Cap-G/condensin I may act together with the transcription factor Lola-N to maintain the neuronal transcriptome in differentiating neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative (C165) and based only on a potential yeast-2-hybrid interaction mentioned in the introduction and similar expression patterns/timing (C163-C164). No functional data are presented to test this interaction. This represents a hypothesis for future work rather than a supported result.",
+    "result_type": "MINOR"
+  }
+]

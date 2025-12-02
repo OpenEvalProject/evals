@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C35",
+      "C36",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Single-cell RNA-seq reveals that embryonic pigment cells segregate into two distinct populations: a mitotic cluster (cluster 13) expressing cell cycle genes and a post-mitotic differentiated cluster (cluster 2). Both clusters express pigment cell markers (gcm, pks1, fmo3, fmo5-1, sult1c2), but cluster 13 uniquely expresses S-phase and mitotic markers including cdk1, pcna, DNA polymerases, DNA ligases, condensins, and centromere proteins. EdU pulse labeling confirmed that 34% of pigment cells are in S-phase and are broadly distributed throughout embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C35-C36, C39, C44-C50 provide converging evidence from scRNA-seq (tSNE clustering, differential gene expression, violin plots) and EdU pulse-chase experiments with Sp1 antibody staining. The identification of two pigment cell clusters with distinct transcriptional profiles is well-supported by multiple orthogonal approaches including cluster analysis, marker gene expression, and in vivo validation of mitotic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C51",
+      "C52",
+      "C93"
+    ],
+    "result": "Gcm is transiently and dynamically expressed across multiple cell states during development, first detected at the 64-cell stage and expressed in 7 distinct cell states across developmental time points. In blastulae and gastrulae, gcm and pks1 are co-expressed in pigment cells, but in larvae, pks1 expression is maintained in pigment cells while gcm expression transitions to the left coelomic pouch. This suggests gcm may initiate gene expression programs that are subsequently maintained by other transcriptional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C40-C43, C51-C52, C93 are supported by integrated scRNA-seq analysis across developmental stages and double FISH validation. The dynamic expression pattern is demonstrated through tSNE integration of multiple timepoints and spatial validation. The interpretation that gcm initiates but does not maintain gene expression is reasonable given the transient expression pattern, though this mechanistic claim (C42) is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C91",
+      "C92",
+      "C96"
+    ],
+    "result": "Gcm is essential for pigment cell specification, not just for driving expression of pigment cell genes. In gcm morphants, the pigment cell cluster population decreased by a factor of 7, and surviving pigment cells showed reduced expression of pigment markers and were randomly dispersed throughout the aboral ectoderm rather than properly localized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C91-C92, C96 are supported by scRNA-seq of gcm morphants showing dramatic reduction in pigment cell cluster size (7-fold decrease with statistical significance p<0.001), reduced marker gene expression, and Sp1 antibody staining showing fewer and mislocalized pigment cells. The conclusion that gcm specifies rather than just activates pigment cells is well-supported by the quantitative reduction in cell numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "Phylogenetic analysis identified 4 fmo clades in S. purpuratus, but only clade 1 fmos (fmo5-1, fmo3, fmo2-2) are significantly enriched in embryonic pigment cells and adult coelomocytes. Clade 1 fmos are highly expressed in embryos (>10,000 transcripts/embryo), while clades 2, 3, and 4 are poorly expressed in embryos but expressed in adult spines. This suggests functional specialization of fmo families across different pigmented cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71, C74-C76, C79 are supported by phylogenetic analysis (Figure 4A), scRNA-seq expression data (violin plots, heatmaps), double FISH validation, transcript abundance quantification, and qPCR of adult tissues. The convergence of multiple methods (phylogenetics, expression profiling, spatial validation, adult tissue analysis) provides strong support for the differential expression and potential functional specialization of fmo clades.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C105",
+      "C106",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Embryonic pigment cells and adult coelomocytes share expression of gcm, pks1, and clade 1 fmos, and both cell types have immune functions. This suggests that pigmented cells with immune functions (larval pigment cells and adult red spherule cells) share biosynthetic and cell fate pathways, with gcm, pks1, and group 1 fmos working together to produce echinochrome A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C105-C106, C111-C114 are supported by qPCR data showing shared gene expression between embryonic pigment cells and adult coelomocytes (Figure 5E), combined with citations to prior work on immune functions. The inference that these genes work together to produce echinochrome A is reasonable given the shared expression pattern in cells known to produce this pigment, though the mechanistic details are not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C95"
+    ],
+    "result": "Cluster 12 represents mesodermal pigment cell progenitors that express gcm, pks1, six1, and eya but lack expression of terminal differentiation markers. This cluster is interpreted as determined but not yet differentiated pigment cell precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C95 are supported by scRNA-seq data showing cluster 12 expresses early markers (gcm, pks1, six1, eya) but lacks terminal differentiation markers expressed in clusters 2 and 13. The interpretation as progenitor cells is reasonable given the marker profile and citations to prior work on six1/eya expression in aboral secondary mesoderm, though lineage tracing would provide stronger evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Novel pigment cell markers identified by scRNA-seq include abcg11 (ATP-binding cassette transporter), mif5 (macrophage inhibitory factor), sult1c2 (sulfotransferase), oprk (opioid receptor), and gluR6 (glutamate receptor). These genes show differential expression patterns, with some (abcg11, mif5, sult1c2) exclusively in pigment cells and others (oprk, gluR6) also expressed in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C57, C59-C63 are supported by scRNA-seq expression data (violin plots, feature plots) and validated by double FISH showing spatial co-localization with gcm/pks1. The identification of neuronal receptor expression in pigment cells is particularly well-validated by showing expression in both pigment cells and ciliary band neurons. The conclusion that functional genes are restricted to clusters 2 and 13 (not cluster 12) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "CRISPR/Cas9 knockout of pks1 does not affect pigment cell number, distribution, or expression of candidate genes, indicating that pigmentation itself does not regulate pigment cell positioning, density, or physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by Sp1 antibody staining showing no difference in pigment cell number or distribution between pks1 knockout and controls, and qPCR showing unchanged expression of candidate genes. This provides a clear negative control demonstrating that pigment production per se is not required for pigment cell development or positioning, strengthening conclusions about gcm's role in cell specification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In gcm morphants, expression of genes with broader expression patterns (gluR6, fmo2) was unchanged, while pigment cell-specific genes (fmo2-2) were downregulated and non-pigment cell genes (fmo2-3, fmo5) were unchanged, demonstrating specificity of gcm's regulatory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by qPCR data (Figure 6E) showing differential effects of gcm knockdown on different gene classes. This provides important specificity controls demonstrating that gcm specifically regulates pigment cell genes rather than having broad non-specific effects. The data support the conclusion that gcm has selective regulatory functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Single-cell RNA-seq of ectoderm-enriched embryos at 48hpf and 72hpf revealed multiple cell types of predominantly ectodermal origin, with highly reproducible cluster organization between timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by tSNE plots (Figure 1B) showing consistent cluster organization across timepoints and identification of expected ectodermal cell types. This establishes the technical quality and reproducibility of the scRNA-seq approach, though this is a methodological validation rather than a primary biological finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Pks1 is highly expressed in adult immune cells but only at low levels in spines and tube feet, suggesting that low levels of polyketide synthase activity are sufficient for maintenance pigmentation in immune-quiescent animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is supported by qPCR data showing differential pks1 expression across adult tissues. However, claim C78 is speculative interpretation without direct experimental support. The inference about 'maintenance levels' and 'immune-quiescent' conditions is not tested. Alternative explanations (e.g., different pigment biosynthetic pathways, post-transcriptional regulation, protein stability) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Despite gcm being necessary to specify most pigment cells, gcm-independent mechanisms appear to activate pigment cell identity when gcm activity is depleted, as evidenced by residual pigment cells in gcm morphants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is based on the observation of residual pigment cells in gcm morphants (C91). However, the authors acknowledge they cannot exclude residual gcm expression activating these cells. Without lineage tracing or complete gcm knockout validation, it's uncertain whether this represents true gcm-independent specification or incomplete knockdown. The claim of 'gcm-independent mechanisms' is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C108",
+      "C110"
+    ],
+    "result": "The mitotic pigment cell cluster may represent a stem cell population based on distinct transcript profile and resistance to gcm knockdown. These cells are distributed throughout the embryo rather than in a specific niche and may serve to replenish larval and/or adult pigment cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99, C101-C103, C108, C110 are largely speculative interpretations (marked as SPECULATION in evidence_type). While the existence of a mitotic cluster is well-supported, the stem cell hypothesis lacks direct evidence such as lineage tracing, self-renewal assays, or differentiation potential experiments. The 'resistance to gcm knockdown' is not clearly demonstrated in the data. These are reasonable hypotheses for future work but not supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background claims about pigmentation in nature, sea urchin pigment biochemistry, developmental origins of pigment cells, and the Delta/Notch-Gcm regulatory pathway are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C32 are background information supported by citations to prior work. These establish the context for the current study but are not new findings. The authors appropriately cite previous literature for these established facts about pigment cell biology, development, and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C56",
+      "C58",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Background information on gene functions (ABCG11 as transporter, MIF as cytokine, OPRK as receptor, FMO functions across species) is provided from prior literature to contextualize the sea urchin findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C56, C58, C115-C120 are background knowledge claims supported by citations to prior work in other organisms. These provide important context for interpreting the sea urchin gene expression patterns but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C80",
+      "C98",
+      "C100",
+      "C104",
+      "C107"
+    ],
+    "result": "Prior work in sea urchins has shown that fmo3 knockout affects adult pigmentation, gcm knockdown reduces pigmentation and marker expression, pigment cell numbers expand upon immune challenge, and pigment cells can be induced to differentiate in adult coelomic fluid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C80, C98, C100, C104, C107 are citations to prior work that provide context for the current findings. These are appropriately attributed to previous studies and help establish the rationale for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C122",
+      "C124"
+    ],
+    "result": "Speculative hypotheses are proposed about gcm function (initiating vs. maintaining gene expression), fmo clade 2 function in spines (detoxification), and fmo family expansion (xenobiotic detoxification in diverse ecosystems).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C122, C124 are explicitly speculative (marked as SPECULATION in evidence_type). These are reasonable hypotheses based on the data and prior knowledge, but they are not tested in this study. They represent appropriate suggestions for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C123"
+    ],
+    "result": "Sea urchin spines are covered by epithelium populated by Sp1-positive pigmented cells (likely red spherule cells), and S. purpuratus has at least 12 expressed fmo genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 is supported by Sp1 staining of spines (Figure 5C) combined with citation to prior work on spine epithelium. Claim C123 is supported by the expression analysis showing all 12 identified fmos are expressed at some developmental stage or tissue. These are straightforward descriptive findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C22",
+      "C175",
+      "C176"
+    ],
+    "result": "CDMD is a novel automated method for refining atomistic models into cryo-EM maps across a wide resolution range (near-atomic to subnanometer). The method combines a chemically accurate force field with thermodynamic sampling, employs gradual resolution increase and simulated annealing, and requires no manual intervention or additional restraints. It has been implemented in the GPU-accelerated GROMACS MD suite with only three control parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C22, C175-C176 collectively establish the core methodology of CDMD. The abstract and introduction provide clear descriptions of the method's capabilities, technical approach, and implementation. The method is well-defined with specific technical details about the force field, sampling strategy, and automation features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "CDMD was validated on diverse test cases at resolutions of 2.6-7 \u00c5 and demonstrated superior performance compared to established methods (Phenix, Rosetta, Refmac) in most cases. The method has a radius of convergence of at least 6-7 \u00c5 (overall RMSD) and 25 \u00c5 (local deviations), which is comparable to recent MDFF versions and superior to non-MD methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C24, C160-C162 are supported by extensive comparative testing across multiple systems (aldolase, tubulin, TRPV1, NSF, nucleosome, ribosome, CorA). The manuscript provides detailed quantitative comparisons with alternative methods and demonstrates CDMD's advantages in convergence and accuracy across different resolution ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "For the aldolase system (2.6 \u00c5 resolution), CDMD successfully refined a starting model with RMSD \u22486.6 \u00c5 to achieve RMSDref \u22481.8 \u00c5 from the reference structure. The refinement maintained good geometry throughout and showed no overfitting based on half-map cross-validation. Only Rosetta achieved comparable convergence among alternative methods, while Phenix and Refmac showed poorer performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C51 describe the aldolase refinement results with specific quantitative metrics (RMSD values, force constants, FSC analysis). The half-map validation protocol (C39, C43) provides evidence against overfitting. Comparisons with control X-ray structures (C38, C50) and alternative methods (C47-C49) support the conclusions about CDMD's performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "For the tubulin system (4.1 \u00c5 medium-resolution map), CDMD refined a curved GDP-tubulin structure to the straight microtubule-like conformation, achieving reciprocal-space correlation comparable to high-resolution control structures (3.3-3.5 \u00c5). The method demonstrated ability to provide plausible local geometries when information is not fully present in the map, with only Phenix producing comparable results among alternative methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 are supported by detailed FSC analysis (C55), cross-validation (C56), stereochemical quality assessment (C57-C58), and comparisons with control structures and alternative methods (C59-C61). The results demonstrate CDMD's capability at medium resolutions where the force field must compensate for incomplete density information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "For the TRPV1 system (3.2 \u00c5 with local resolution 2.5-7 \u00c5), CDMD successfully refined a distant starting model (RMSDref \u22485 \u00c5 with local deviations up to \u224820 \u00c5) to achieve RMSDref \u22482.5 \u00c5 with good geometry. The method handled highly heterogeneous local resolution, with three independent refinements producing consistent structures in high-resolution regions and expected variability in low-resolution regions. Alternative methods failed to achieve comparable convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C74 demonstrate CDMD's robustness to heterogeneous resolution and large initial deviations. The reproducibility analysis (C73) and comparison with alternative methods (C70-C72) support the conclusions. The results show CDMD's ability to handle challenging cases where local resolution varies dramatically across the structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In comparisons with previously published Rosetta and ReMDFF models for TRPV1, CDMD produced models with comparable or superior quality. The CDMD model outperformed ReMDFF in both reciprocal-space correlation and model geometry, particularly in the low-resolution ARD region, despite ReMDFF also using an atomistic force field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 provide direct comparisons with published models from other MD-based methods. The quantitative comparisons (FSC, geometry statistics) support the superiority of CDMD over ReMDFF (C80-C82). The comparison is fair as both methods use atomistic force fields, highlighting the advantage of CDMD's correlation-based potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C90",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "For the NSF system (3.9 \u00c5), CDMD was compared with the newest Phenix protocol using optimized parameters. Without half-maps for validation, multiple refinements at different force constants (2-8 \u00d7 10^5 kJ/mol) were performed. The CDMD model showed substantially lower clashscore and systematically lower RMSD to control structures (\u22480.2 \u00c5 difference) compared to the deposited Phenix model, with better ATP binding pocket geometry. Alternative methods showed only \u22480.5 \u00c5 improvement versus \u22482 \u00c5 for CDMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C101 describe a rigorous comparison with state-of-the-art Phenix refinement. The systematic testing of force constants (C88, C90) addresses the lack of half-maps. Comparisons with high-resolution X-ray controls (C87, C95-C96) validate the superior accuracy of CDMD. The results demonstrate CDMD's advantages even when compared to optimized protocols from established methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "For the nucleosome system (3.7 \u00c5), CDMD refined a 'breathing' nucleosome structure into the canonical state, involving non-rigid-body transitions including DNA shift by \u22481 base pair. The CDMD model achieved high DNA quality (RMSD \u22481.4 \u00c5 to controls) without geometry restraints, despite using the CHARMM force field which is inaccurate for DNA in plain MD simulations. Only CDMD achieved model accuracy comparable to the deposited reference among tested methods, with alternative methods showing poor DNA refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C119 demonstrate CDMD's capability for complex protein-DNA systems undergoing non-trivial conformational changes. The DNA quality achievement (C111, C113) is particularly remarkable given the force field limitations, supporting the importance of the 'soft' fitting potential (C114). Comparisons with alternative methods (C115-C119) show clear advantages for CDMD in handling mixed protein-DNA systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "For the 70S ribosome system, a distant starting model in the codon reading state (PDB ID: 5LZC) was prepared and refined into the GTPase-activated state map (3.4 \u00c5). The system was prepared using AMBERFF12sb force field with appropriate ion placement and solvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C174 describe the ribosome system preparation with appropriate citations. The methods are clearly documented and follow established protocols for large RNA-protein complexes. This represents proper experimental design for testing CDMD on a very large and complex system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "For the CorA magnesium transporter (7.1 \u00c5 low-resolution map), CDMD refined the closed symmetric structure into an asymmetric open state with RMSD \u224825 \u00c5 in some regions. The CDMD model showed gate opening with increased pore volume and solvation, consistent with biochemical and simulation data. In contrast, MDFF (with or without restraints) failed to induce gate opening, attributed to the 'hard' MDFF potential restricting the model to highest-density regions, while CDMD's 'soft' correlation-based potential allows more internal flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C139 demonstrate CDMD's capability for low-resolution refinement involving large conformational changes. The comparison with MDFF (C125-C138) is particularly informative, showing that CDMD's correlation-based potential enables biologically relevant transitions that MDFF cannot achieve. The agreement with prior biochemical data (C134) provides external validation, though the authors appropriately note that higher-resolution controls are still needed for full validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Analysis of rotamer and Ramachandran outliers in CDMD models revealed that structural errors are likely a combination of cryo-EM data-specific outliers and force field artifacts. CDMD refinement reduces overall outlier occurrence, but certain residue types (aspartates, leucines, tryptophans, valines for CHARMM; threonines and valines for AMBER) show systematic force-field-specific errors. The reduction in steric clashes by CDMD often comes at the cost of increased rotamer/Ramachandran outliers compared to deposited models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C148 provide a thorough per-residue analysis of structural errors with appropriate statistical support. The analysis distinguishes between force-field-specific systematic errors (C145-C147) and data-driven improvements (C143-C144), supporting the conclusion of combined effects (C148). This represents an honest assessment of method limitations and their sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The quality of refined structures is limited by the experimental map quality, with potential issues from 3D classification, particle alignment, and conformational heterogeneity. The study focused on single-structure refinement, which is appropriate for high-resolution maps but may not be optimal for medium/low-resolution maps where ensemble refinement might be needed. Despite force field limitations, CDMD generates models with quality consistent with established methods given the map quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C159 provide appropriate caveats and context for interpreting the results. The discussion of ensemble refinement (C151, C154-C155) acknowledges limitations of single-structure approaches. The acknowledgment of force field development challenges (C156-C158) is honest and appropriate. The conclusion (C159) is appropriately qualified given the identified limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C166",
+      "C167"
+    ],
+    "result": "CDMD addresses the challenge of reconciling local refinement accuracy with large convergence radius through proper treatment of concerted molecular motions. The method overcomes shortcomings of existing methods (poor convergence/accuracy of non-MD methods at medium/low resolution; poor performance of MD-based methods at high resolution) by integrating established techniques (correlation potential, simulated annealing) with chemically accurate force fields, adaptive resolution, and half-map validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C164, C166-C167 summarize the key advantages of CDMD based on the extensive validation across multiple systems. The conclusions are well-supported by the comparative results showing CDMD's superior performance across different resolution ranges and system types. The integration of multiple techniques into an optimized protocol represents a significant methodological advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C34",
+      "C35"
+    ],
+    "result": "CDMD employs several technical innovations: only the simulated density is resampled (not the experimental density), higher force constants are used at late stages for high-resolution maps to ensure accurate side chain fitting, and high-temperature simulated annealing enhances local map-model agreement while preserving well-refined regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C34-C35 describe specific technical features of the CDMD protocol with appropriate citations to distinguish from previous approaches. These features are well-justified based on the physical considerations (thermal fluctuations, sampling efficiency) and are demonstrated to work effectively in the test cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "CDMD is flexible and can be used for quick re-refinement of close starting models against high-resolution maps or flexible fitting of distant models into low-resolution maps. The GPU-accelerated GROMACS implementation provides good trade-off between refinement time and hardware cost. Combined with de novo building tools, CDMD provides a fully automated framework for cryo-EM data interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C170 describe the practical utility and implementation of CDMD. The flexibility claim (C168) is supported by the diverse test cases. The computational efficiency claim (C169) is supported by benchmark data in the methods section. The automation claim (C170) is supported by the demonstrated protocol requiring no manual intervention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C177",
+      "C178"
+    ],
+    "result": "Different force fields were used for different systems: CHARMM36m for CorA (for consistency with MDFF comparison), CHARMM22* for other non-ribosomal systems, and AMBERFF12sb for the ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C178 document the force field choices with appropriate citations. The choice of CHARMM36m for CorA to enable fair comparison with MDFF is methodologically sound. The documentation of force field choices is important for reproducibility and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The introduction establishes the context for CDMD by reviewing the state of cryo-EM and existing refinement methods. Cryo-EM has achieved near-atomic resolution, but methods for deriving accurate atomistic models lag behind. Existing non-MD methods have limitations at medium/low resolution (clashes, poor geometry), while MD-based methods face challenges at high resolution (trapping, force field dependencies). No existing method simultaneously achieves resolution-independent fitting, stereochemical accuracy, and automation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C21 provide appropriate background with extensive citations to support each statement about the field. The characterization of existing methods' limitations is fair and well-documented. The identification of the gap that CDMD addresses (C21) is well-justified based on the cited literature.",
+    "result_type": "MINOR"
+  }
+]

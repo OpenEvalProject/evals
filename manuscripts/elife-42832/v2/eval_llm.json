@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C17",
+      "C18"
+    ],
+    "result": "The gap gene system of dipteran insects lacks structural modularity but exhibits dynamical modularity. The system is composed of dynamical modules that share the same regulatory structure but differ in components and sensitivity to regulatory interactions. This emergent network structure cannot be partitioned into structural clusters due to its small size and high connection density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C3, C13, C17, and C18 collectively establish that the gap gene system is not structurally modular but is composed of dynamical modules. The evidence from network analysis (C13, Figure 1A) and comparison with computational screens (C17, C18) supports this characterization. The finding that all dynamical modules share the same regulatory structure (C3, Figure 2) provides strong evidence for the emergent nature of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Three AC/DC subcircuits were identified in distinct regions of the embryo through node sensitivity analysis. All three subcircuits share the same regulatory structure combining negative feedback loops with double-negative (positive) feedback loops, despite involving different sets of gap genes and interaction strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe the identification and characterization of AC/DC subcircuits through node sensitivity analysis (Figure 2A). The finding that all three subcircuits share the same AC/DC regulatory structure (C32, C33) despite different components is well-supported by the data shown in Figure 2B and C. The historical context (C34) provides appropriate attribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "AC/DC subcircuits faithfully reproduce the expression dynamics and phase space topology of the full gap gene model in their respective regions of influence (35-63% A-P position). The subcircuits recover multistable dynamics in the anterior and monostable dynamics in the posterior, establishing them as true dynamical modules. However, identical transient behavior can arise from different phase space topologies in time-variant systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C54 provide comprehensive evidence that AC/DC subcircuits reproduce the dynamics of the full model through phase space analysis (Figure 3, Figure 3\u2014figure supplements 1-2). The finding that different phase space topologies can generate equivalent transient dynamics (C47-C49) is well-documented. Minor discrepancies (C38, C52) are acknowledged and do not undermine the main conclusion that these are true dynamical modules (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "AC/DC1 and AC/DC3 are structurally stable with consistent dynamical regimes across their regions, while AC/DC2 is in a state of criticality, exhibiting a bifurcation at 52% A-P position that separates static anterior from shifting posterior gap domain boundaries. The gap gene network of D. melanogaster is critical to maternal inputs only in the middle region where AC/DC2 is active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 establish differential criticality among the dynamical modules based on bifurcation analysis. The evidence from phase space analysis (Figures 1-3) clearly demonstrates the bifurcation at 52% A-P position in AC/DC2 (C57) and the structural stability of AC/DC1 and AC/DC3 (C55, C56). The conclusion about regional criticality (C59) follows logically from the bifurcation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Gap gene patterning in D. melanogaster is robust to variation in maternal gradient concentrations within species. The bifurcation boundary in AC/DC2 is sensitive to Bcd concentration (threshold at ~15 arbitrary units) but entirely insensitive to Cad concentration. Cad serves as a general activator but does not directly control the position of gap gene expression features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C64-C68 describe the differential sensitivity of the bifurcation boundary to maternal gradients through phase diagram analysis (Figure 4). The threshold response to Bcd (C64, C65) and insensitivity to Cad (C66, C67) are clearly demonstrated in Figure 4B and C. The conclusion about Cad's role (C68) is supported by both current analysis and cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The position of the bifurcation boundary between static and shifting gap domains is evolutionarily labile among dipteran species. In M. abdita, the bifurcation is located more anteriorly (40% A-P) despite higher Bcd levels. This shift is explained by changes in gap-gap cross-regulatory interactions, specifically increased repression of hb by Kr, which eliminates the bifurcation in AC/DC2 and shifts criticality to AC/DC1. Small changes in interaction strengths specifically affect the extent of shifting versus static patterning regimes while the basic staggered arrangement remains stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C83 provide a comprehensive evolutionary analysis linking changes in regulatory interactions to shifts in bifurcation position. The phase diagram analysis (Figure 5) demonstrates how varying the strength of hb repression by Kr affects the bifurcation boundary (C74, C75). The prediction that AC/DC2 becomes structurally stable in M. abdita while AC/DC1 becomes critical (C77, C80) is well-supported by the analysis. The explanation for differential evolvability (C82, C83) follows logically from the criticality analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27"
+    ],
+    "result": "Differential criticality of dynamical modules explains the observed differential evolvability of expression features in the gap gene system. Mutations affecting network components involved in multiple dynamical regimes have strong effects on critical behaviors while leaving structurally stable behaviors unaltered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C27 connect the criticality analysis to evolvability. The evidence from bifurcation analysis (Figures 3-5) demonstrates that some modules are critical while others are structurally stable. The logical connection between criticality and differential evolvability (C5, C27) is well-established through the analysis of inter-specific variation (C61-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "AC/DC circuits can be induced to drive sustained limit-cycle oscillations with small parameter changes. Gap genes in T. castaneum show repeated waves of shifting expression, and pair-rule genes may be regulated by AC/DC-like subcircuits. This suggests that regulatory changes required to transition from sequential to simultaneous segmentation may be more subtle than commonly thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91 extend the analysis to oscillatory dynamics and evolutionary implications for arthropod segmentation. While C87 is supported by extended analysis (Figure 6, Appendix 1), claims C88-C91 rely heavily on speculation and cited work from other species. The connection between AC/DC circuits in Drosophila and segmentation mechanisms in T. castaneum (C90, C91) is presented as a possibility requiring further validation. The evolutionary hypothesis (C91) is interesting but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Strong positive feedback is required for the basic staggered arrangement of gap domains, while weaker negative feedback drives anterior shifts in gap domain position over time in the posterior trunk region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 describe established mechanisms from prior work that are cited extensively. These findings provide important context for understanding the AC/DC subcircuits but represent prior knowledge rather than new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The full gap gene model used in this study accurately reproduces spatio-temporal expression dynamics and is consistent with experimental evidence. Diffusion of gap proteins is not essential for pattern formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe the validation of the computational model used throughout the study. The model's accuracy is demonstrated in Figure 1B and supported by extensive citations to prior work. These are important methodological validations but represent model description rather than new biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C34",
+      "C92",
+      "C93"
+    ],
+    "result": "The manuscript provides extensive background on structural modularity, network analysis approaches, gap gene biology, and dynamical modules. Most regulatory networks exhibit dynamical rather than structural modularity, and dynamical behavior is more tightly integrated with biological function than regulatory structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C26, C34, C92-C93 provide essential background knowledge and definitions that frame the study. These claims are well-supported by citations and establish the conceptual framework for the analysis. While not representing new experimental findings, they are important for understanding the significance of the dynamical modularity approach. Claims C92-C93 draw broader conclusions about regulatory networks based on cited computational screens.",
+    "result_type": "MINOR"
+  }
+]

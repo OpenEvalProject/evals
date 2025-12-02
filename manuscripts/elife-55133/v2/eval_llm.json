@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C146",
+      "C147",
+      "C150",
+      "C151",
+      "C154",
+      "C155"
+    ],
+    "result": "The authors analyzed 240 original research articles from eight biomedical journals and found that 77% (185/240) contained original images, with 52% of all figures containing imaging data. Developmental biology and cell biology journals had the highest proportion of imaging content (74-79% of figures), while immunology journals had the lowest (21%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is clearly described (C13, C87-C94) and the quantitative findings are consistently reported across multiple claims with specific percentages and counts. The control analysis (C93-C94) validates the figure classification approach, showing minimal difference between whole-figure and panel-level analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C148",
+      "C152",
+      "C156"
+    ],
+    "result": "The authors found that imaging methods were described very briefly in the materials and methods sections, with an average of only 138 words (7% of total methods text) devoted to image acquisition details. Developmental biology journals devoted even less text (5%), and 11 articles contained no information whatsoever on image acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative analysis of methods text is well-documented with specific percentages for each journal (C130-C137, C148, C152, C156). The methodology for text quantification is clearly described (C95-C98), including what was and was not counted. The finding of 11 articles with zero imaging information (C24) is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C149",
+      "C153"
+    ],
+    "result": "Using a low-stringency quality test requiring minimal information (objective lens characteristics, digitization parameters, and spectral settings for fluorescence), only 16.7% of articles passed. Pass rates varied dramatically by journal, from 3% (Developmental Biology) to 50% (Biophysical Journal).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quality evaluation criteria are explicitly defined and justified based on established microscopy principles (C99-C107). The authors acknowledge the test was of very low stringency (C27-C28), making the low pass rates even more concerning. The quantitative results are specific and verifiable (C138-C145, C149, C153).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C50"
+    ],
+    "result": "Despite all examined journals requiring sufficient information for replication in their instructions to authors, spot-checks revealed much more careful reporting of molecular biology experiments compared to imaging methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that journals require adequate methods reporting (C30) but imaging is poorly reported while molecular biology is well-reported (C31, C50) reveals a systematic inconsistency. However, the evidence is based on 'spot-checks' rather than systematic quantification, which limits the strength of this comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "While reporting of antibodies and their sources has improved due to new journal requirements, sample preparation methods remain inadequately reported. Only 4 of 14 papers with electron microscopy images included sufficient detail to replicate sample preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The improvement in antibody reporting (C32) is noted as an observational finding. The importance of sample preparation is well-supported by citations (C33-C34, C37). The quantitative finding for EM sample preparation (C36) is specific and concerning, though the sample size is small (n=14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "New reporting requirements such as STAR methods (Developmental Cell) and Nature Research Life Sciences Reporting Summary (Nature Immunology) have not resulted in adequate reporting of imaging methods, with only 9% and 11% of articles passing the quality test, respectively. These reporting frameworks lack specific questionnaires for optical imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specific pass rates for journals with enhanced reporting requirements (C39, C40) demonstrate that these interventions are ineffective for imaging. The observation that Nature's reporting summary lacks optical imaging questionnaires (C54-C55) provides a plausible explanation. The inference that current requirements don't cover imaging appropriately (C41, C56) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Many articles contained little or no information about image processing, analysis, or quantification procedures. Without knowing processing steps, quantitative analysis cannot be replicated, as identical images can be processed multiple ways with different results. Most image-analysis programs do not record processing steps in metadata, though OMERO is an exception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation about poor reporting of image processing (C42) is qualitative but consistent with the overall findings. The importance of processing details is well-supported by citation (C43) and logical reasoning (C44). The limitation of current software (C45) and the exception of OMERO (C46) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Editors and publishers are not enforcing their own requirements. For example, despite Journal of Cell Biology requiring numerical aperture reporting, almost a quarter (7/29) of articles from this journal failed to disclose this information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specific example of JCB's requirement (C60) and the quantitative finding of non-compliance (C61) provides concrete evidence for the inference that enforcement is lacking (C59). This is a clear case where stated policy does not match actual practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C63",
+      "C64"
+    ],
+    "result": "The imaging reproducibility problem is actually a 'preproducibility' crisis\u2014there is generally insufficient information to even attempt replication of imaging experiments. This represents a serious waste of resources and undermines the fundamental principle that describing how research was done is as important as describing what was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization as a 'preproducibility' crisis (C47) is well-supported by the extensive quantitative data showing inadequate methods reporting. The inference is supported by citation (C48) and the overall study findings. The importance of detailed methods (C49, C64) is supported by citations and represents established scientific principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Authors may not understand what matters in imaging experiments because formal training in microscopy and imaging is rarely part of undergraduate and graduate biomedical curricula, unlike biochemistry, genetics, and molecular biology which are mandatory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the observation about curriculum differences (C51-C52) is based on general knowledge, the inference that this explains poor reporting (C53) is speculative. The authors acknowledge this is their 'suspicion' and provide supporting citations, but no direct evidence links training gaps to reporting quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Reviewers and editors appear unable to accurately evaluate manuscripts when experimental methods are inadequately described, seemingly taking results at face value without considering methodological limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference (C57-C58) is logical given that poorly described methods are being published. However, this is an indirect inference rather than direct evidence of reviewer behavior. The fact that inadequate methods pass peer review strongly suggests reviewers are not critically evaluating methodological details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The problem of underreporting imaging methods likely extends to other biomedical disciplines beyond those examined, such as physiology and cancer biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C62) is explicitly speculative, as the authors acknowledge they have not completed exhaustive analysis of other areas. While the inference is reasonable given the patterns observed, it lacks direct empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C86"
+    ],
+    "result": "The authors propose a multi-stakeholder solution requiring: authors to improve their understanding of imaging techniques; reviewers and editors to insist on adequate information; mandatory deposit of images with metadata in repositories like OMERO or BioImage Archive; vendors to standardize metadata recording; imaging facility staff to educate users and vet manuscripts; and professional societies to develop reporting checklists in coordination with publishers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These recommendations (C65-C82, C86) are logical responses to the documented problems, though they represent proposed solutions rather than tested interventions. The recommendations are appropriately supported by citations where relevant (C67-C70, C81) and build on the authors' expertise as imaging facility staff (C72-C74).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors developed MethodsJ, a FIJI script that extracts metadata from microscopy images to generate methods text. While it can reliably retrieve some parameters (objective lens magnification, NA, voxel size), retrieving excitation/emission wavelengths is more difficult, and standardization of metadata by manufacturers would improve robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of MethodsJ (C75) is concrete and supported by citations. The capabilities (C76) and limitations (C77) are clearly stated. The inference about standardization benefits (C78) is reasonable. This represents a practical tool developed by the authors to address the identified problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript contextualizes the imaging reporting problem within the broader reproducibility crisis in biomedical research, noting that microscopy has evolved into a powerful quantitative tool while reproducibility concerns have grown due to multiple factors including inadequate reagent characterization, incomplete methods reporting, bias, inadequate statistics, and fraud. Various interventions including TOP guidelines and publisher checklists have shown some positive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C12) are well-supported by appropriate citations and provide necessary context for the study. They represent established knowledge in the field rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Several proposals over the years have addressed metadata standards for imaging files.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C29) is supported by multiple citations and provides context for the need for standardized reporting. It represents prior work rather than a finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "US funding agencies (NIH and NSF) and many journals already require that experimental methodology be reported and made publicly available, and proactive editorial approaches appear to improve reporting rigor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C83-C85) about existing requirements and editorial effects are based on general knowledge and supported by citation (C85). They provide context for the enforcement recommendations but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

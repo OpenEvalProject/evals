@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C29",
+      "C30",
+      "C31",
+      "C51",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "Methylphenidate (MPH) enhanced participants' ability to adapt learning rates to environmental volatility, specifically for experienced-value learning but not inferred-value learning. Under MPH compared to placebo, participants exhibited higher learning rates in volatile relative to stable phases, but this effect was significant only for direct learning based on their own experience (C4, C5, C30, C31). This pattern was confirmed through both win-stay lose-shift (WSLS) analysis (C22, C23, C24) and computational modeling of learning rates (C29, C30, C31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by converging evidence from multiple analytical approaches. Statistical tests show significant drug \u00d7 volatility \u00d7 learning type interactions for both WSLS behavior (C22, C23) and learning rates (C29, C30), with post-hoc analyses confirming effects specific to experienced-value learning. Bayesian analyses provide additional support for null effects on inferred-value learning (C24, C31). The experimental design with 102 participants in a double-blind crossover study (C3, C101) provides adequate power and controls for order effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C34",
+      "C35",
+      "C90",
+      "C99"
+    ],
+    "result": "The effect of methylphenidate on learning rate adaptation did not differ between social and non-social groups. Statistical analyses revealed no significant drug \u00d7 volatility \u00d7 learning type \u00d7 group interactions for either WSLS behavior (C27) or learning rates (C34), with Bayesian analyses providing moderate support for the null hypothesis (C28, C35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The absence of group differences is well-supported by both frequentist statistics showing non-significant interactions (C27, C34) and Bayesian analyses with BF01 values of 4.3 and 4.66 (C28, C35), which constitute moderate evidence for the null hypothesis. The authors appropriately controlled for task comprehension (C91), strengthening confidence in this null result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C84",
+      "C85"
+    ],
+    "result": "In a subgroup of 'keen inferred-value learners' (participants whose responses were primarily driven by inferred-value learning under placebo), MPH still selectively affected experienced-value learning but not inferred-value learning. The same significant drug \u00d7 volatility \u00d7 learning type interaction was observed (C36), with no significant effects on inferred-value learning even in this subgroup (C38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This subgroup analysis (N=45) strengthens the main finding by demonstrating that the lack of MPH effects on inferred-value learning is not due to participants ignoring the frame (C85). The statistical pattern replicates the main analysis (C36), and Bayesian analysis supports the null effect on inferred-value learning (C38, BF01=3.25). This addresses a potential confound and provides converging evidence for the specificity of MPH effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C42"
+    ],
+    "result": "Under placebo, participants exhibited a bias toward over-estimating volatility, with learning rates generally higher than optimal learner estimates (C56), particularly in stable phases (C57). MPH reduced learning rates in stable contexts, bringing them closer to optimal values (C58), but did not improve learning rates in volatile contexts (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optimal learner analysis provides a normative benchmark for evaluating learning rate adjustments. The findings are supported by statistical comparisons between participant learning rates and optimal learner estimates derived from 100 synthetic datasets. The pattern suggests MPH corrects a specific bias (over-estimation of volatility in stable contexts) rather than globally optimizing learning rates. However, the claim that this represents a 'trend' (C42) suggests the statistical evidence may be marginal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C47",
+      "C49",
+      "C50",
+      "C54"
+    ],
+    "result": "Despite significant effects on learning rate adaptation, MPH did not significantly affect overall accuracy. Regression analyses revealed that accuracy was predominantly predicted by the weighting parameter \u03b6 (38% of variance; C47), which controls the balance between experienced- and inferred-value learning, rather than by learning rate parameters (C50). Participants showing the greatest accuracy benefit from MPH were those with the greatest decrease in \u03b6 (C49), indicating increased reliance on experienced-value learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hierarchical regression analysis provides clear evidence that accuracy is dissociable from learning rate adaptation in this task. The finding that \u03b6 accounts for 38% of variance while learning rates account for only 7% (C47) is well-supported statistically. This explains the apparent paradox of improved learning rate adaptation without improved accuracy and is consistent with the task structure where both information sources must be integrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose that MPH may enhance learning rate adjustment through dopaminergic mechanisms. By blocking dopamine reuptake, MPH likely prolongs phasic dopamine signals (C64), which could enhance learning about environmental structure (C65). Additionally, under MPH, phasic bursting may increase tonic dopamine levels via synaptic overflow (C66) and transporter internalization (C67), potentially increasing dependency between phasic and tonic signals (C68). This could result in lower learning rates in reward-rich (stable) environments (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These mechanistic claims are largely speculative (C65, C68, C69 are explicitly labeled as speculation) and are based on pharmacological properties of MPH and theoretical models rather than direct empirical evidence from the current study. While the proposed mechanisms are plausible and grounded in cited literature (C64, C66, C67), they remain hypothetical explanations for the observed behavioral effects. The study design does not allow for testing these specific neurobiological mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose that MPH may enhance learning rate adjustment through noradrenergic mechanisms. Noradrenaline is associated with 'higher level' learning about environmental changes (C70) and may act as a 'neural interrupt signal' for detecting volatility changes (C71). MPH may increase synaptic noradrenaline and shift locus coeruleus activity toward a phasic mode (C74, C75), enhancing responses to salient events like volatility switches. The authors suggest MPH may affect multiple processes including learning about environmental structure, learning rate optimization, and change detection (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These mechanistic claims are speculative and based on prior literature rather than direct evidence from the current study. While the cited evidence for noradrenaline's role in volatility processing is substantial (C71, C72, C73), the specific effects of MPH on noradrenergic function in this task are inferred rather than measured. The proposal that multiple processes work in concert (C76) is plausible but remains untested. The study design using a dual catecholamine transporter blocker cannot distinguish dopaminergic from noradrenergic contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors propose that the lack of MPH effects on inferred-value learning may relate to MPH's effects on working memory. Based on prior work (C86), MPH improves distractor resistance while impairing working memory updating. Because the direct source (boxes) appeared before the indirect source (frame), positive effects of MPH on ignoring rather than updating would selectively benefit experienced-value learning (C88), potentially by making it more robust against misleading frame information (C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This explanation is speculative and based on extrapolation from prior work (Fallon et al., 2017) to the current task structure. While the temporal sequence of information presentation is a fact (C88), the proposed mechanism linking this to differential MPH effects is not directly tested. The explanation is plausible given dual state theory (C87) and task structure, but remains a post-hoc interpretation without independent empirical support from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors establish the theoretical background that meta-learning involves hierarchically nested learning systems (C1, C7) and that humans adjust learning strategies based on environmental volatility (C8, C9). Various computational models converge on the hypothesis that catecholamines play a central role in meta-reinforcement learning (C10), with specific proposals involving dopamine (C11, C12) and noradrenaline (C13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent the theoretical and empirical background from the cited literature. They provide appropriate context for the current study's hypotheses and are well-supported by multiple citations to relevant prior work. These are standard literature review claims that establish the rationale for the experimental investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior studies have shown that learning rates increase with increasing catecholamine availability (C14) and decrease with reduced availability (C15). However, existing studies have limitations: they either explicitly signaled environmental changes or used constantly volatile environments where no learning rate adjustment was required (C17). Computational models have demonstrated the ability to adjust learning rates based on inferred volatility (C16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide an accurate critical analysis of prior literature, identifying a gap that the current study addresses. The characterization of previous studies' limitations (C17) is supported by citations and provides clear justification for the current experimental design. This establishes the novelty and importance of testing learning rate adjustment in environments with changing volatility levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors claim that previous studies demonstrating learning rate adjustment used simpler tasks with single information sources or explicit probabilities (C61), and that the current experiment is the first to estimate learning rates when participants simultaneously learn from two sources (C62). They suggest that the lack of adaptation under placebo may be due to high demands from dual-source learning, which is rescued by MPH (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior literature (C61) is accurate based on the cited studies. The novelty claim (C62) appears justified given the specific combination of dual information sources and volatile/stable phases. The interpretation regarding task demands (C63) is somewhat speculative but is grounded in the empirical observation that participants under placebo did not show significant learning rate differences between volatile and stable phases, unlike in simpler prior tasks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study employed a double-blind crossover design with counterbalanced drug order (C101), with task administration timed to coincide with peak plasma concentration of MPH (C102, C103). Participants were allocated to four randomization groups with counterbalanced probabilistic schedules (C106, C107) and completed 120 trials over approximately 25 minutes (C108, C109).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly stated and appropriate for the research question. The crossover design with counterbalancing controls for order effects, the timing ensures drug efficacy, and the counterbalancing of schedules addresses potential confounds. These design features strengthen the internal validity of the findings.",
+    "result_type": "MINOR"
+  }
+]

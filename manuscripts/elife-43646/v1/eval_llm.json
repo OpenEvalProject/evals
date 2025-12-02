@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C19",
+      "C20"
+    ],
+    "result": "PS1/\u03b3-secretase is required for axon growth in developing mouse brain and cultured hippocampal neurons. Psen1-/- embryos show reduced neurofilament, tau, and nestin staining in hippocampus and ventricular zone, with ~50% reduction in axon length in cultured neurons. Both genetic deletion (Psen1-/-) and pharmacological inhibition (DAPT, GM6001) reduce axon length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (genetic knockout, pharmacological inhibition, in vivo and in vitro models) consistently demonstrate PS1/\u03b3-secretase requirement for axon growth. The specificity is supported by Psen2-/- neurons showing no defect (C15), and statistical significance is reported (p<0.05). Controls include wild-type comparisons and vehicle treatments. The convergent evidence from immunohistochemistry, DiI labeling, and cultured neuron measurements provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "EphA3 is a relevant candidate for PS1/\u03b3-secretase-mediated axon growth based on expression patterns and PS1 interaction. EphA3 mRNA decreases during late axon elongation (4-7 DIV), protein peaks at 2-4 DIV, and EphA3 colocalizes with PS1 (~50%) in axons and growth cones. Co-immunoprecipitation confirms PS1-EphA3 binding in brain and cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rationale for focusing on EphA3 is well-supported by temporal expression patterns (C25, C27), spatial colocalization (C29, C30), and biochemical interaction (C31, C32). The ~50% colocalization is quantified, and co-IP experiments include appropriate controls (PS1 alone shows no binding, C32). This provides strong justification for investigating EphA3 as a PS1 substrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "EphA3 undergoes sequential proteolytic processing by metalloproteases and PS1/\u03b3-secretase to generate an intracellular domain (ICD). EphA3 CTF (~49 kDa) accumulates in PS1-/- brains and neurons and upon \u03b3-secretase inhibition. Metalloprotease inhibitors reduce CTF accumulation. Mass spectrometry identifies the \u03b3-secretase cleavage site at Y560, generating EphA3 ICD (~47-49 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequential processing model is supported by multiple lines of evidence: CTF accumulation in PS1-/- cells (C33, C34), DAPT-induced CTF increase (C36), metalloprotease inhibitor effects (C38, C40), and direct detection of ICD generation (C41, C42). The cleavage site identification by LC-MS/MS (C43) and bioinformatic validation provides molecular precision. The use of multiple antibodies and cell systems strengthens the findings. However, the in vitro \u03b3-secretase assay conditions may not fully reflect in vivo processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "EphA3 ICD is sufficient to rescue axon length defects in PS1/\u03b3-secretase-deficient neurons. EphA3 ICD, but not full-length or \u0394ICD, reverses axon defects in Psen1-/- and DAPT-treated neurons in vitro and in vivo (in utero electroporation). EphA3 ICD also reduces collapsed growth cones in Psen1-/- neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments provide strong functional validation using multiple approaches: cultured neurons (C45, C47), in utero electroporation (C49, C50), and growth cone morphology (C48). The specificity is demonstrated by comparing ICD to full-length and \u0394ICD constructs. Statistical significance is reported (p<0.0001 for in vivo, p=0.61 for ICD rescue in Psen1-/- vs +/+). The convergence of in vitro and in vivo evidence is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PS1/\u03b3-secretase-mediated EphA3 processing occurs independently of ephrin-A5 ligand binding. Ephrin-A5 enhances EphA3 phosphorylation and reduces axon length but does not affect EphA3 CTF levels. Ephrin-A5 has no additional effect in EphA3-deficient or DAPT-treated neurons. EphA3 full-length, but not \u0394LBD or \u0394PDZ mutants, rescues axon defects in EphA3-deficient neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ligand-independence is demonstrated through multiple lines of evidence: ephrin-A5 does not alter CTF levels (C54), has no additive effect with EphA3 knockdown or DAPT (C56, C58), and EphA3 ICD rescues defects without ligand stimulation. However, the requirement for LBD and PDZ domains in full-length rescue (C59) is puzzling and suggests structural requirements beyond simple ICD generation. This complexity is acknowledged but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "RhoA signaling is involved in PS/\u03b3-secretase/EphA3-mediated axon growth, but may not be the sole mechanism. ROCK inhibition (Y27632) and dominant-negative RhoA reverse axon defects in PS-deficient neurons. Constitutively active RhoA blocks EphA3 ICD rescue. However, EphA3 ICD does not consistently reduce RhoA activity in primary neurons, though it does in SK-N-AS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The genetic and pharmacological evidence supports RhoA involvement (C61, C62, C63), and epistasis experiments suggest EphA3 acts upstream of RhoA (C64). However, the inconsistent effects of EphA3 ICD on RhoA activity in primary neurons (C66) versus cell lines (C65) raises questions about the directness of this mechanism. The authors appropriately conclude that RhoA signaling alone is unlikely to fully explain the phenotype (C69), suggesting additional mechanisms are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "EphA3 ICD binds to non-muscle myosin IIA (NMIIA) and increases its phosphorylation at Ser1943. Proteomic analysis identified NMIIA as an EphA3 ICD-interacting protein. EphA3 ICD elevates phosphorylated NMIIA (Ser1943) in axons, particularly in Psen1-/- neurons. Ser1943 phosphorylation is known to promote NMIIA filament disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The NMIIA interaction is supported by unbiased proteomic screening (C70), co-immunoprecipitation (C72), and functional phosphorylation assays (C73). The use of established knowledge about Ser1943 phosphorylation function (C7, C71) provides mechanistic context. The specificity of the interaction and the quantification of phosphorylation changes strengthen the findings. However, the mechanism by which EphA3 ICD increases NMIIA phosphorylation is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "PS/\u03b3-secretase deficiency decreases NMIIA phosphorylation and alters NMIIA localization, consistent with increased filament assembly. \u03b3-Secretase-deficient neurons show decreased phosphorylated NMIIA, reduced pNMIIA/actin colocalization, decreased soluble NMIIA, and increased insoluble NMIIA. A non-phosphorylatable NMIIA mutant (S1943A) reduces axon length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical and imaging data consistently support altered NMIIA regulation in PS-deficient neurons (C74, C75, C77, C78). The fractionation experiments showing decreased soluble and increased insoluble NMIIA (C77, C78) support the filament assembly model. The S1943A mutant experiment (C80) provides functional validation of the phosphorylation site's importance. However, total NMIIA levels are unchanged (C79), supporting a regulatory rather than expression-level mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Pharmacological NMII inhibition with blebbistatin reverses axon defects in PS/\u03b3-secretase-deficient neurons and occludes EphA3 ICD effects. Active blebbistatin, but not inactive enantiomer, increases axon length in DAPT-treated neurons and shows no additional effect with EphA3 ICD, indicating NMIIA acts downstream of PS/\u03b3-secretase/EphA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The blebbistatin experiments provide strong pharmacological validation with appropriate controls (inactive enantiomer, C83). The occlusion experiment (C82, C145) is critical for establishing epistasis and supports NMIIA as a downstream effector. The convergence of genetic, biochemical, and pharmacological evidence strongly supports the model that PS1/\u03b3-secretase/EphA3 signaling promotes axon growth by regulating NMIIA filament disassembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C110",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "PS/\u03b3-secretase-dependent EphA3 cleavage mediates axon growth through a ligand-independent mechanism involving RhoA signaling and NMIIA regulation. This represents a novel function of EphA3 that is opposite to its ligand-dependent role in axon retraction. Both mechanisms appear to operate in developing neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the collective evidence from multiple experimental approaches. The dual role of EphA3 (ligand-dependent inhibition vs. processing-dependent promotion of axon growth) is demonstrated through complementary experiments. The structural requirements (C131) and the coexistence of both mechanisms (C129, C130) add complexity but are supported by data. This represents a significant conceptual advance in understanding EphA3 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C140",
+      "C142",
+      "C143"
+    ],
+    "result": "The proposed mechanism integrates RhoA inhibition and NMIIA regulation: PS1/\u03b3-secretase cleaves EphA3 to generate ICD, which inhibits RhoA signaling and increases NMIIA phosphorylation, promoting filament disassembly and axon growth. PS-deficient neurons show increased RhoA activity and decreased NMIIA phosphorylation, leading to filament assembly and axon retraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic model is supported by multiple lines of evidence linking PS1/\u03b3-secretase, EphA3 processing, RhoA signaling, and NMIIA regulation. The bidirectional effects (PS deficiency increases RhoA and decreases pNMIIA; EphA3 ICD has opposite effects) are consistent with the model. However, the incomplete effect of EphA3 ICD on RhoA activity in primary neurons (C66) suggests the mechanism may be more complex than a simple linear pathway. The model is well-supported but may require refinement.",
+    "result_type": "MAJOR"
+  }
+]

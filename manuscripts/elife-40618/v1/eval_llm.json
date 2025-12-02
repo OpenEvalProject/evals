@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors introduce a novel methodology called 'allelic manifolds' for measuring Gibbs free energy of transcription factor interactions in living cells. This approach involves measuring phenotypic strength of sequence variants across multiple experimental contexts, expecting data to collapse to a lower-dimensional manifold that can be modeled to infer biophysical parameters with high precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C20-C25 collectively establish the conceptual framework and theoretical basis for the allelic manifold approach. The methodology is clearly defined (C3-C5, C21), the theoretical expectation of dimensional collapse is stated (C23), and the claim of high precision is supported by experimental results presented throughout the manuscript (C25, C7). The approach is demonstrated across multiple experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C64",
+      "C67"
+    ],
+    "result": "The allelic manifold approach was used to measure CRP-DNA binding with a precision of ~0.1 kcal/mol, yielding \u0394G_F = -1.96 \u00b1 0.07 kcal/mol (F = 23.9). This indicates that in living cells, the enthalpy from CRP-DNA interactions is nearly canceled by entropic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 and C57 describe the experimental design and data quality for measuring CRP-DNA binding. The reported precision (C7, C64) is supported by the bootstrap confidence intervals shown in Figure 2B. The interpretation regarding enthalpy-entropy compensation (C67) is a reasonable thermodynamic inference from the measured \u0394G value. The presence of outliers (C52-C54) is acknowledged and appropriately handled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C81",
+      "C82",
+      "C83",
+      "C86"
+    ],
+    "result": "Varying cAMP concentrations changes the in vivo concentration of active CRP in E. coli strain JK10, with a power law relationship F \u221d [cAMP]^1.41\u00b10.18 observed, deviating from simple proportionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C81-C82 describe the experimental observation and potential explanations. Figure 3C shows the power law relationship with appropriate error bars. The deviation from proportionality is statistically supported by the regression analysis. The speculative explanations (C81-C82) are appropriately labeled as such and represent reasonable hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C98",
+      "C101",
+      "C103",
+      "C104",
+      "C107",
+      "C108",
+      "C113",
+      "C116",
+      "C117"
+    ],
+    "result": "Class I CRP-RNAP interactions were systematically measured at 12 different promoter architectures, revealing cooperativity values (\u03b1) ranging from ~1 to ~760-fold. The observed cooperativity at -61.5 bp (\u03b1 = 712) is substantially stronger than previously reported values from early in vivo experiments (10-50 fold) and more recent modeling studies (~220-240 fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C117 establish the experimental design and results for class I activation. Figure 5 and Table 1 provide comprehensive data showing clear 1D manifold collapse at all 12 positions tested (C117). The comparison to prior literature (C107-C108, C113) is well-documented with appropriate citations. The higher cooperativity values are supported by the data and the simpler model with fewer parameters (C113) provides a methodological advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C135",
+      "C136",
+      "C137",
+      "C178"
+    ],
+    "result": "Comparison of measured RNAP-DNA binding energies to predictions from an established position-specific affinity matrix (PSAM) reveals substantial deviations (\u22651 kcal/mol, corresponding to \u22655-fold differences in binding factor P), indicating that even for well-studied proteins, sequence-based predictions of in vivo binding affinity remain crude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C137 and C178 describe the comparison between measured and predicted binding energies. Figure 6B clearly shows systematic deviations from the PSAM predictions. The conclusion (C136, C178) is well-supported by the data. The PSAM model is appropriately contextualized as state-of-the-art (C127-C132), making the observed deviations particularly significant. This represents an important validation of the allelic manifold approach's ability to sidestep sequence-based modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C154",
+      "C179"
+    ],
+    "result": "Class I activation by CRP at -61.5 bp occurs through stabilization without acceleration (\u03b2 \u2248 1), confirming previous in vitro results. This was demonstrated by testing promoters with consensus RNAP binding sites, which showed data falling along the stabilization-only manifold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 establish the biological context and prior knowledge. Claims C146-C150 describe the experimental test, and C154 provides the conclusion. Figure 8B clearly shows data points falling on the stabilization manifold with saturation at t_sat, supporting \u03b2 \u2248 1. Figure 8C shows \u03b2 values centered around 1 for multiple CRP positions. The conclusion appropriately validates prior in vitro work (C154).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C160",
+      "C161",
+      "C167"
+    ],
+    "result": "At the class II position -41.5 bp, CRP activates transcription in vivo solely through stabilization without acceleration, contradicting prior in vitro studies that reported a combination of stabilization and acceleration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C158 establish the biological context and prior in vitro findings. Claims C160-C161 and C167 present the contradictory in vivo result. Figure 9B shows the allelic manifold plateauing at t_sat = 15.1 a.u., consistent with stabilization-only activation. This represents a clear discrepancy with prior literature (C158, C161) that is well-documented and appropriately discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C169"
+    ],
+    "result": "At the class II position -40.5 bp, data do not collapse to a 1D allelic manifold, with some promoters showing activation, others repression, and others no regulation. This falsifies the simple biophysical models and indicates that RNAP binding site sequence controls additional functionally important parameters beyond binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C166 describe the unexpected observation at -40.5 bp. Figure 9D clearly shows 2D scatter without manifold collapse, supporting C163-C164. The conclusion that this falsifies the simple models (C165) is logically sound. The interpretation that additional parameters are involved (C166) is a reasonable inference. The speculative explanation (C169) is appropriately tentative and mechanistically plausible given the intimate positioning of CRP and RNAP at class II promoters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C73"
+    ],
+    "result": "The measured in vivo CRP binding factor (F \u2248 24) is ~10^5-fold weaker than expected from in vitro measurements, potentially due to nonspecific binding to genomic DNA and limited DNA accessibility in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 provides a speculative explanation for the large discrepancy between in vivo and in vitro measurements. While the measured in vivo value is well-supported (from Result 2), the comparison to in vitro values relies on literature estimates and calculations that are not directly validated in this study. The proposed explanations (nonspecific binding, limited accessibility) are plausible but remain speculative without additional experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C174",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Across nearly all promoter architectures studied, data collapsed to 1D allelic manifolds as predicted, though outliers were observed at low frequency and deviations from the model were often larger than experimental noise, suggesting potential biological complexity beyond the assumed models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C172 and C174 summarize the overall experimental approach and success. Claims C184-C188 address data quality and model limitations. The observation of manifold collapse in all but one architecture (C174) strongly supports the approach. The acknowledgment of outliers (C185-C186) and larger-than-noise deviations (C187-C188) demonstrates appropriate scientific caution. The biological explanation for outliers (C186) is reasonable, though the suggestion that outliers may not be qualitatively different from smaller deviations (C188) indicates some uncertainty about model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C192",
+      "C193",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C201",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "The allelic manifold approach is compatible with massively parallel reporter assays (MPRAs) and could be scaled to measure ~100 allelic manifolds simultaneously. The approach should be applicable to eukaryotes, though interpretability may be challenging due to greater regulatory complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C199, C201, C203, and C212 make forward-looking statements about scalability and MPRA compatibility. While the technical feasibility is supported by citations to established MPRA methods (C204), the actual implementation and validation of this scaled approach is not demonstrated in the current work. Claims C205-C208 appropriately acknowledge uncertainty about eukaryotic applications. These represent reasonable extrapolations and future directions but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19"
+    ],
+    "result": "Understanding cis-regulatory grammar requires quantitative measurement of TF-DNA and TF-TF interaction energies, but such measurements remain difficult. While biophysical models have succeeded for a few well-studied systems (requiring decades of work), new systematic and scalable approaches are needed for general understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C19 establish the scientific context and motivation for the study. These claims are well-supported by citations to established literature (C10, C13, C15) and represent accurate characterizations of the field. The statement about decades of focused study (C18) is supported by the historical record of lac and \u03bb phage research. This provides appropriate motivation for the methodological development presented in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "The authors advocate a bottom-up approach to studying cis-regulatory grammar through focused studies of specific TF binding site arrangements using allelic manifolds, rather than attempting to identify single models explaining many different arrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C211 articulate the authors' methodological philosophy. This perspective is well-supported by the demonstrated success of the allelic manifold approach throughout the manuscript and the identified limitations of existing sequence-based models (Result 5). The contrast with prior top-down approaches (C210) is appropriately cited. This represents a coherent and evidence-based advocacy for a particular research strategy.",
+    "result_type": "MINOR"
+  }
+]

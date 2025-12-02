@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes the biological context that morphogen profiles allow cells to determine their position in developing organisms, but different mechanisms exist for profile formation, including synthesis-diffusion-clearance (SDC) and direct transport (DT) via cytonemes. Cells use this positional information with extremely high precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, C8, and C9 are well-established background knowledge supported by multiple citations to experimental literature. These claims provide the foundational context for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Experimental evidence supports both SDC and DT mechanisms in different biological contexts. Morphogen concentration profiles follow exponential distributions, accumulation times match SDC predictions in Drosophila, Fgf8 dynamics are consistent with Brownian diffusion in zebrafish, and Hedgehog and Wnt morphogens are associated with cytoneme formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 summarize experimental findings from cited literature that support the existence of both mechanisms. These are appropriately attributed to prior work and provide justification for comparing the two models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript identifies a knowledge gap regarding which mechanism allows more precise morphogen sensing under different biological parameters. The authors justify their steady-state modeling approach based on experimental measurements and define precision as depending on both stochastic fluctuations and profile shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 appropriately identify the research gap and justify the modeling approach. The steady-state assumption is supported by citations showing when measurements were taken (C16), and the precision definition (C17) is consistent with prior theoretical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript reviews prior work on cytoneme structure and the DT model, noting that while previous models reproduced accumulation times, the noise properties were not previously analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 accurately describe cytoneme biology and prior theoretical work. The identification of the gap in noise analysis (C22) is appropriately supported by citations and sets up the novel contribution of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C3"
+    ],
+    "result": "The manuscript proves that any system where molecules can only degrade in target cells and cannot leave has the steady-state statistical properties of a birth-death process. This theoretical result shows that the DT transport process adds no noise to the morphogen count in target cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C3 present a key theoretical finding with a mathematical proof shown in Figure 2. The logic is sound: if molecules arrive independently and can only leave by degradation, the system reduces to a birth-death process with Poisson statistics. This is a rigorous theoretical result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C61"
+    ],
+    "result": "In the DT model, precision is optimized at an intermediate shape parameter \u03c6 between exponential and power-law profiles, balancing the trade-off between profile amplitude and steepness. The DT model benefits from larger molecule numbers and no added noise from transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C61 describe properties of the DT model derived from the theoretical analysis and shown in Figure 3A. The optimization over \u03c6 is mathematically justified by the competing effects of amplitude and steepness on precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C62"
+    ],
+    "result": "In the SDC model, molecules can diffuse both into and out of target cells, violating the birth-death condition. This allows cells to measure a greater number of effectively unique molecules through a higher refresh rate, as molecules leave not only by degradation but also by diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C37, and C62 correctly identify the key mechanistic difference between SDC and DT models. The mathematical analysis in Equation 9 shows that the correlation time is reduced by diffusion, increasing the effective number of independent measurements. This is theoretically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C41",
+      "C43"
+    ],
+    "result": "The theoretical analysis predicts a crossover lengthscale: DT is more precise for short profiles due to larger amplitude, while SDC is more precise for long profiles due to higher molecular refresh rate. This crossover holds across 1D, 2D, and 3D geometries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C41, and C43 present the central theoretical prediction shown in Figure 3B. The mathematical derivations for both models support this conclusion, with the crossover arising from competing effects of amplitude, steepness, and correlation time. The extension to multiple geometries strengthens the generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The manuscript categorizes known morphogens by their transport mechanisms based on experimental evidence: Wg and Hh show evidence for DT via cytonemes; Bicoid, Fgf8, and Nodal/Lefty components show evidence for SDC via diffusion; Dorsal and Dpp show evidence for multiple or complex mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 appropriately summarize experimental evidence from cited literature to categorize morphogens by mechanism. The authors acknowledge complexity (e.g., Dorsal's nonuniform degradation, Dpp's multiple mechanisms), which is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C6",
+      "C60",
+      "C65"
+    ],
+    "result": "The theoretical prediction of a crossover lengthscale is quantitatively supported by experimental data from morphogens in Drosophila and zebrafish. Morphogens with evidence for DT, SDC, or multiple mechanisms correspond to short, long, and intermediate profile lengths, respectively, as predicted by theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C6, and C65 present the comparison between theory and data shown in Figure 4. The qualitative agreement (Figure 4A) and quantitative agreement (Figure 4B) support the prediction. However, the sample size is limited (10 morphogens), and some categorizations rely on indirect evidence. The agreement is compelling but would benefit from more data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The manuscript predicts that morphogen profiles with shorter lengths should utilize direct transport mechanisms like cytonemes, while morphogens with longer profiles should rely on extracellular diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C64 state the main prediction derived from the theoretical analysis. This prediction follows logically from the crossover behavior and is supported by the data comparison in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors acknowledge limitations of their minimal models, including potential violations from subdiffusive behavior in crowded environments, dynamic cytoneme behavior, molecular interactions that could introduce super-Poissonian noise, and the possibility of hybrid mechanisms not yet experimentally observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 appropriately discuss limitations and future directions. The authors acknowledge that their models are minimal and may not apply to all systems, which is scientifically appropriate. These limitations do not invalidate the main results but suggest areas for future work.",
+    "result_type": "MINOR"
+  }
+]

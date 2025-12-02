@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The Longshanks selection experiment successfully produced a rapid and significant increase in tibia length over 20 generations in two replicate lines (LS1 and LS2), with 12.7% and 13.1% increases respectively, while a Control line showed no directional change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C15 collectively establish the experimental design, selection protocol, and phenotypic outcomes with specific quantitative measurements and statistical tests. The data show strong, replicated selection response in tibia length in LS1 and LS2 but not in Control, with appropriate statistical validation (p-values, effect sizes) and comparison to literature rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C18",
+      "C19",
+      "C24",
+      "C25"
+    ],
+    "result": "A simulation framework based on the infinitesimal model with linkage accurately recapitulated the selection experiment, predicting inbreeding and diversity changes, and established significance thresholds for detecting discrete loci beyond polygenic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C18-C19, C24-C25 describe the simulation methodology and validation. The simulations matched observed inbreeding patterns (C18) and correctly predicted that the 13% drop in diversity was due to drift rather than selection (C24-C25), providing a rigorous null model for identifying major-effect loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Whole-genome sequencing of F0 and F17 generations revealed similar initial diversity across lines (~6.7M SNPs) with negligible founder divergence (FST ~10^-4), and a 13% reduction in diversity by F17 consistent with drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 present sequencing coverage, diversity metrics, and population structure statistics. The data show appropriate sequencing depth (2.91\u00d7 average), high initial diversity, minimal founder differentiation, and diversity loss consistent with theoretical predictions from drift in small populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The selection response involved both polygenic adaptation and discrete loci of major effect, with eight significant loci identified in Longshanks lines containing candidate genes enriched for bone/limb developmental functions, predominantly involving regulatory rather than coding changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C29 establish a mixed genetic architecture. The identification of 169 windows in 8 loci with significant allele frequency shifts (C26), enrichment for limb/bone genes (C27-C28, p\u22640.032), and predominance of regulatory variants (C29) collectively support the conclusion of discrete major loci against a polygenic background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Parallel selection between replicates was significantly enriched (p\u22641\u00d710^-10) and concentrated among the strongest loci, with the two top-ranked loci (s>0.3) showing parallel selection while six of eight loci were line-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C33 demonstrate that parallelism depends on both selection pressure and large effect sizes. The correlation analysis (C30), statistical tests (C33), and ranking by selection coefficient (C32) show that parallelism is enriched in selected lines and concentrated among loci with greatest selective advantage, consistent with theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The chromosome 5 locus at 41-42 Mbp, containing Nkx3-2, showed the strongest selection signature with a 1 Mbp selective sweep, no recombination, no coding changes, and robust limb expression of Nkx3-2 and Rab28 but not Bod1l.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 characterize the top-ranked locus through multiple lines of evidence: selection coefficient estimation, sweep pattern, recombination analysis, coding variant screening, and expression analysis. The convergent evidence from genomic and expression data supports Nkx3-2 as the likely target gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Three enhancer candidates (N1, N2, N3) were identified at the Nkx3-2 locus, with N1 and N3 showing long-range contacts with the Nkx3-2 promoter and loss-of-function in F17 alleles compared to F0 alleles in transgenic reporter assays, consistent with Nkx3-2's role as a bone maturation repressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 provide functional validation through chromatin profiling (C40), 4C-Seq (C41), and transgenic reporter assays (C42-C44). The nearly complete loss of enhancer activity in F17 alleles (C43-C44) is consistent with known Nkx3-2 function (C45), providing strong mechanistic support for regulatory changes driving selection response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The Nkx3-2 locus showed steady allele frequency increase from ~0.17 to 0.85-0.98 in selected lines, corresponding to a selection coefficient of ~0.24\u00b10.12 and contributing approximately 4-9.4% of the total selection response based on two independent estimation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 quantify the evolutionary impact through targeted genotyping (C46), population genetic modeling (C47-C48), and animal model analysis (C49-C50). The convergence of two independent methods (simulation: 9.4%, animal model: 4%) provides robust estimates of the locus's contribution, though the range suggests some uncertainty in the exact magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Selection response can be steady and robust in extremely bottlenecked populations (14-16 breeding pairs, Ne~46), comparable to natural populations, because generation 17 was only a fraction of the way to the expected selection limit at ~2Ne generations (~90 generations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 interpret the experimental results in the context of population genetic theory and natural populations. The sustained response despite small population size is explained by sufficient standing variation and distance from theoretical limits (C53), with appropriate comparisons to natural populations (C54) and theoretical expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "For short-term selection (20 generations), the response depends overwhelmingly on standing genetic variation with little contribution from de novo mutations, consistent with broad empirical support from nature and breeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 place the results in theoretical context with appropriate citations. The distinction between short-term (standing variation) and long-term (de novo mutations) dynamics is well-established in the literature (C55-C56), and the claim of broad empirical support is appropriately cited (C57).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The mixed genetic architecture observed in Longshanks (polygenic background with major-effect loci) contrasts with highly polygenic human height but resembles domesticated animals (horses, dogs) where strong selection in small populations has concentrated effects in fewer loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 contextualize the findings through comparisons with other species. The contrast between human height (highly polygenic, C60) and domesticated animals (few major loci, C61-C62) is well-documented in cited literature and provides appropriate context for interpreting the Longshanks results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Parallelism depends on both shared selection pressure and availability of large-effect loci, as demonstrated by significant parallelism between selected replicates but not between selected lines and Control or between simulated replicates under the infinitesimal model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 establish the conditions for parallelism through empirical observation and comparison to simulations. The lack of parallelism in Control comparisons (C64) and infinitesimal simulations (C65) demonstrates that both selection and large-effect loci are necessary, consistent with evolutionary theory (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The F0 N1 enhancer allele shows deep functional conservation (recapitulates fish fin expression) yet was disfavored in Longshanks selection, demonstrating that selective value depends on selection regime; both loss-of-function (Nkx3-2) and gain-of-function (Gli3) variants were favored, matching tissue-specific effects in human SMMD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 demonstrate context-dependent selective value through cross-species functional validation (C66), allele frequency trajectories (C67), functional characterization of two loci (C68), and connection to human disease (C69-C71). The convergence of evolutionary, functional, and clinical data provides strong support for the tissue-specific regulatory model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "It is possible to connect individual base-pair changes to overall selection response, with selection favoring de-repression of bone growth through inactivating Nkx3-2 limb enhancers, and discrete large-effect loci revealed by their parallel response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C72-C74 represent the study's main conclusions, synthesizing the genomic, functional, and evolutionary analyses. The identification of specific SNPs affecting enhancer function (C4), quantification of their contribution (C72), and demonstration that parallelism reveals major loci (C74) collectively support the conclusion that base-pair changes can be connected to selection response (C5, C73).",
+    "result_type": "MAJOR"
+  }
+]

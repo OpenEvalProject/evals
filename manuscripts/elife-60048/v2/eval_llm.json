@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The eL22-HA/Puro PLA produces a robust, specific signal in RiboTag glioma cells treated with puromycin. The signal is blocked by anisomycin pretreatment, requires both antibodies, and is cell-type specific (minimal signal in U87 cells lacking eL22-HA). Quantification reveals ~200 puncta per cell, reduced to <8 when either antibody is omitted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 provide converging evidence from multiple controls (anisomycin blocking, antibody omission, cell-type specificity) demonstrating that the eL22-HA/Puro PLA is technically functional and specific. The data in Figure 1C and supplementary figures support these claims with appropriate statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Contrary to expectations based on the RPM model, emetine pretreatment produces only a minor decrease in eL22-HA/Puro PLA signal. After puromycin washout (up to 45 min) or harringtonine runoff, the eL22-HA/Puro PLA signal remains robust. The authors conclude that the PLA reports primarily on cytoplasmic abundance of puromycylated NPCs regardless of ribosome binding status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 are well-supported by experimental data showing that manipulations expected to eliminate ribosome-bound puromycylated NPCs (washout, harringtonine runoff) do not eliminate PLA signal. This contradicts the RPM model premise and suggests the PLA detects free puromycylated NPCs. The statistical significance is documented and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Biochemical fractionation and immunoprecipitation experiments demonstrate that puromycylated NPCs are not stably associated with ribosomes even after emetine or cycloheximide pretreatment. Puromycin immunoreactivity is found in free fractions, not polysome fractions. Co-IP experiments show no evidence of puromycylated NPCs co-precipitating with ribosomal proteins, while emetine does prevent polysome breakdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C58 are strongly supported by sucrose gradient fractionation (Figure 2A-B) and co-IP experiments (Figure 2D). The data clearly show separation of puromycylated NPCs from polysomes, with appropriate controls demonstrating that emetine prevents polysome breakdown but not NPC release. This is consistent with prior literature (C50) and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C96",
+      "C97",
+      "C100"
+    ],
+    "result": "Live cell imaging using the SunTag system reveals that puromycylated NPCs rapidly dissociate from ribosomes with kinetics dependent on elongation inhibitor pretreatment. Cycloheximide slows but does not prevent release (half-life extended by ~2 min). Emetine enhances initial release kinetics (half-life <40 s). All SunTag puncta disappear within ~5 min regardless of pretreatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C100 are well-supported by quantitative live imaging data (Figure 3C-D) with appropriate statistical analysis. The kinetic measurements are reproducible across replicates and consistent with previous literature (C62, C64). The finding that elongation is not required for release (C69) is supported by the data showing release occurs even with elongation inhibitors present.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C94"
+    ],
+    "result": "Structural modeling demonstrates that anti-puromycin antibodies cannot access puromycin within intact ribosomes due to steric clashes. Twelve models of Fab positioning near puromycin all show severe steric clashes (MolProbity scores 85.79-246.3, 0th percentile). The best-fit model minimizing clashes positions the Fab 29.1 \u00c5 from puromycin, too far for antibody recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C94 are supported by rigorous structural modeling using appropriate high-resolution structures (C80-C82) and validated clash analysis (MolProbity). The finding that all models attempting to position the antibody near puromycin result in severe steric clashes (0th percentile scores) provides strong evidence that antibodies cannot access intra-ribosomal puromycin. The 29.1 \u00c5 distance in the best-fit model is well outside antibody recognition range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C95",
+      "C98",
+      "C101",
+      "C103",
+      "C106"
+    ],
+    "result": "The authors conclude that elongation inhibitors do not prevent release of puromycylated NPCs from ribosomes, and that the vast majority of puromycylated NPCs are not crosslinked to their ribosomal origin during fixation. Therefore, anti-puromycin immunostaining does not accurately report on the original ribosomal translation site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22, C95-C106 represent the main conclusions drawn from the experimental data (biochemical assays, live imaging, structural modeling). These conclusions are well-supported by the convergent evidence from multiple experimental approaches. The inference that NPCs continue to be released during washing and fixation (C101, C103) is reasonable given the measured kinetics and fixation times from literature (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C104",
+      "C105"
+    ],
+    "result": "Structural modeling reveals that antibodies are unlikely to directly contact puromycin within the PTC of intact ribosomes due to steric hindrance. The authors conclude that anti-puromycin immunostaining occurs only on puromycylated nascent chains released from ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C104-C105 are supported by the structural modeling data (Figure 4) showing severe steric clashes. The conclusion that immunostaining occurs only on released chains is a reasonable inference from the modeling combined with the kinetic data showing rapid release. However, the authors acknowledge (C78) that a small subpopulation might be fixed, though these would be inaccessible to antibodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The eL22-HA/Puro PLA results contribute to concerns that PLA can produce false positive signals when both antigens are highly abundant and have overlapping distributions ('non-specific proximity'). Given that cells harbor ~1 million ribosomes and puromycin treatment produces immense numbers of puromycylated NPCs, the ~200 PLA puncta per cell likely reflect non-specific proximity rather than true ribosome-puromycin complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C118 are supported by the experimental data showing PLA signal persists after washout/runoff (when ribosome-NPC complexes should be absent) and by literature on PLA false positives (C44, C114). The inference that high antigen abundance explains the PLA signal is reasonable. However, the authors note their assay is an outlier due to extremely high abundance of both antigens (C119).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The results do not preclude that released puromycylated NPCs may be bound by neighboring proteins or complexes (signal recognition particle, chaperones, RNA granules) immediately adjacent to translation sites. Context-specific binding within ribonucleoprotein complexes could explain puromycin-resistant SunTag puncta observed in dendrites, and such interactions likely occur outside the ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 represent reasonable caveats and alternative interpretations. The authors appropriately note what their data do not rule out (C107) and cite relevant literature on puromycin-resistant complexes (C109). The inference that such interactions occur outside the ribosome (C112-C113) is consistent with the structural modeling showing antibodies cannot access intra-ribosomal puromycin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors challenge a common assumption in the field that anti-puromycin staining accurately reports on original translation sites when elongation inhibitors are used (the RPM assay premise). Their proximity ligation assay found no evidence to support this assumption, suggesting that attempts to define precise subcellular translation sites using anti-puromycin immunostaining may be confounded by NPC release prior to fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C19-C21 accurately describe the field assumption being challenged and the authors' main finding. The characterization of the RPM assay premise (C20-C21) is supported by appropriate citations. The conclusion that this approach may be confounded (C7) is well-supported by the experimental data showing rapid NPC release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The mechanisms by which cycloheximide and emetine affect puromycin incorporation and NPC release are described based on literature. Cycloheximide binds the 60S E site preventing tRNA exit; emetine binds the 40S E site preventing translocation. Previous work showed cycloheximide slows but does not prevent puromycylated NPC release, possibly by slowing puromycin binding or causing A-site crowding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C68 accurately summarize established mechanisms from literature with appropriate citations. These provide important context for interpreting the authors' kinetic data. The inference that cycloheximide slows puromycin binding (C67) is supported by cited literature (C65-C66) and is consistent with the proposed A-site crowding mechanism (C68).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The SunTag translation reporter system used comprises an mRNA encoding 24 GCN4 repeats, scFv-GCN4-sfGFP that binds rapidly to emerging NPCs, and OsTIR1 for protein degradation. Translating polysomes are visualized as bright SunTag puncta above cytoplasmic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 accurately describe the experimental system with appropriate citation (Wu et al., 2016). The description is consistent with the images shown (Figure 3B) and is necessary methodological context for interpreting the live imaging results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The structural modeling used a 2.8 \u00c5 cryo-EM structure of a mammalian 80S ribosome with P-site tRNA in the non-rotated/classical conformation and a 2.8 \u00c5 crystal structure of mouse IgG2a (the exact isotype used experimentally). The non-rotated conformation is likely favored by cycloheximide and emetine; the rotated state would make antibody access even less likely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C93 appropriately describe the structural models used with proper citations. The choice of the non-rotated state is justified by literature (C91-C92). The inference that the rotated state would further restrict antibody access (C93) is reasonable based on known structural changes. Using the exact antibody isotype (C82) strengthens the modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C99"
+    ],
+    "result": "The authors speculate about mechanisms underlying the observed kinetic differences. Emetine-bound ribosomes may have higher affinity for puromycin or enhanced reaction efficiency, consistent with previous work. Puromycin may be small enough to bypass the P-site tRNA and exit directly through the tunnel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C75, and C99 are explicitly speculative (C74, C99 use 'possible' and 'suspect'). While C75 notes consistency with previous literature, these remain hypotheses rather than demonstrated mechanisms. The speculation is reasonable but lacks direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The authors hypothesize that puromycylated NPCs could directly bind to PVDF membranes in the David et al. 2012 method, creating the appearance that they remain tethered to ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 is explicitly a hypothesis ('could') proposed to explain discrepancies with previous work. While this is a plausible alternative explanation for the David et al. results, it is not directly tested in this study. The speculation is reasonable given the authors' data showing NPC release, but remains unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background information on puromycin as a tRNA analog, its mechanism of action, the development of puromycin labeling techniques, and challenges in visualizing subcellular translation sites, particularly in polarized cells like neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide established background knowledge supported by appropriate citations. These are accurate descriptions of the field context and are not novel findings of this study. They establish the rationale for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33",
+      "C38",
+      "C39",
+      "C50",
+      "C51",
+      "C102",
+      "C120"
+    ],
+    "result": "Various methodological details and literature context: previous studies showed puromycylated NPCs dissociate in minutes without elongation inhibitors; harringtonine stalls initiating ribosomes; David et al. used PVDF-bound polysomes; fixation takes >15 min; direct-conjugated PLA probes may reduce false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C38-C39, C50-C51, C102, C120 provide methodological context and literature background with appropriate citations. These are accurate descriptions that support interpretation of the experimental results but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Logical inferences about requirements for puromycylated NPCs to remain tethered to ribosomes and accessibility to antibodies. For tethering, puromycin must be in the PTC or exit tunnel. While some NPCs might be fixed in ribosomes, antibodies cannot access puromycin in the narrow exit tunnel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 represent logical inferences based on structural knowledge. C77 is a reasonable requirement for tethering. C78 acknowledges a possibility despite rapid release kinetics. C79 is a strong inference based on known ribosome structure and antibody size, supported by the subsequent modeling (C83-C89).",
+    "result_type": "MINOR"
+  }
+]

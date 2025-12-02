@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Petal number is invariant in A. thaliana but variable in C. hirsuta, representing a species-level difference. A. thaliana consistently produces four petals across diverse accessions, while C. hirsuta displays 0-4 petals with similar frequencies across natural accessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C29-C31 are well-supported by data in Figure 1a-b showing petal number distributions across multiple accessions of both species. The histograms clearly demonstrate invariant four-petal phenotype in A. thaliana (n=3725 flowers) versus variable petal number in C. hirsuta (n=3362 flowers).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Petal number variation in C. hirsuta is determined at early developmental stages through failure of petal primordia initiation. When present, C. hirsuta petal primordia develop normally and can occupy any of four positions in whorl two.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by SEM and histological data in Figure 1c-f and supplements showing presence/absence of petal primordia at early stages. The developmental analysis demonstrates that variation arises from initiation failure rather than later developmental defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Auxin activity maxima form reliably at petal initiation sites in A. thaliana (83% observation rate) but frequently fail to form in C. hirsuta (36% observation rate), with aberrant localization between sepals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by time-lapse DR5::VENUS imaging data in Figure 2a-d and quantification in Figure 2\u2014figure supplement 1. The differential auxin response patterns correlate with species-specific petal number phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "PTL function does not account for petal number differences between species. AtPTL::AtPTL:YFP rescues A. thaliana ptl mutants but does not alter C. hirsuta petal number despite correct expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by complementation data in Figure 2e-g showing functional rescue in ptl-1 but no effect in C. hirsuta. Expression analysis confirms proper localization, ruling out PTL as the causal factor for species differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In C. hirsuta ag mutants, third whorl petals with ectopic AP1 expression show invariant number (four), while second whorl petals with endogenous AP1 expression remain variable, demonstrating position-dependent effects of AP1 on petal number robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by ag mutant phenotypic data in Figure 2h-i and AP1 expression analysis in Figure 2j. The differential petal number variance between whorls with different AP1 expression contexts provides strong evidence for AP1's role in robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "AtAP1::AtAP1:GFP converts C. hirsuta petal number from variable to robust (four petals), while ChAP1::ChAP1:GFP maintains variability, demonstrating functional divergence in AP1 between species for petal number specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are strongly supported by complementation experiments in Figure 3a-e with appropriate statistical tests (Mann-Whitney U, p=2.4e-08). The differential complementation clearly demonstrates AP1 functional divergence as a major contributor to species differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A. thaliana AP1 masks the phenotypic effects of at least 9 C. hirsuta petal number QTL through epistasis. No QTL map to the AP1 locus itself, indicating AP1 polymorphisms do not contribute directly to within-species variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by QTL mapping data in Figure 3f-g and Table 1 showing 9 QTL with effects detectable only in absence of AtAP1 transgene. The epistatic masking provides strong evidence for AP1's role in canalizing petal number by buffering genetic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "ChAP1::ChAP1:GFP fails to restore robust petal number in A. thaliana ap1 mutants (maintains variability similar to C. hirsuta) but rescues floral meristem identity defects, demonstrating separable functions of AP1 in petal number versus meristem identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by complementation data in Figure 4a-b with statistical validation (Levene's test, p=0.282 for variance; Mann-Whitney U test, p=2.08e-07 for mean). The differential rescue of pleiotropic functions demonstrates specificity of AP1 divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Functional differences in AP1 responsible for petal number variation map to regulatory regions rather than coding sequences. The A. thaliana AP1 promoter significantly elevates petal number regardless of coding sequence origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by chimeric construct experiments in Figure 4c with two-way ANOVA showing significant promoter effect (p=9.45e-08) but no coding sequence effect (p=0.103). All constructs equally rescue ectopic flowers (Figure 4\u2014figure supplement 1), confirming regulatory divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ChAP1 shows reduced expression levels and a smaller spatial domain compared to AtAP1. ChAP1 expression is restricted to sepals while AtAP1 extends ~5 \u00b5m further into whorl two, without changes in flower size or geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by qPCR data (Figure 4d) and confocal imaging with quantitative measurements (Figure 4e-g). The spatial expression analysis is rigorous with multiple samples (n=7 each genotype) and appropriate statistical tests (Wilcoxon, p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Natural C. hirsuta accessions lack four-petalled phenotypes despite sufficient standing genetic variation to produce them through recombination in experimental populations (RILs), suggesting active maintenance of variable petal number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by comparison of natural accession distributions (Figure 5a) with RIL distributions (Figure 5b). The presence of four-petal phenotypes in RILs but not natural populations demonstrates cryptic genetic variation and suggests constraints on phenotypic evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Higher petal number is associated with increased outcrossing rate in field conditions (Chi-square p<0.05, Monte-Carlo permutation p<0.001), but no fitness differences were detected in standard growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by fitness measurements (Figure 5\u2014figure supplement 1) and field paternity testing (Figure 5c-d, Figure 5\u2014figure supplement 2). The statistical analysis is rigorous with appropriate tests, though the ecological relevance requires field validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "AP1 divergence is a gene of major effect in the evolutionary transition from robust to variable petal number. Regulatory changes in AP1 relaxed epistasis over cryptic QTL, exposing genetic variation that maintains petal number variability in C. hirsuta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C89-C92 represent the main conclusions synthesizing multiple lines of evidence: complementation experiments, QTL mapping showing epistasis, expression divergence, and population genetics. The decanalization model is well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "AP1 genes from A. thaliana and C. hirsuta diverged in their ability to specify invariant petal number through regulatory rather than coding changes, without altering AP1 function in flower initiation or sepal specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 summarize key findings supported by chimeric construct experiments (Figure 4c) and ectopic flower rescue data (Figure 4b, Figure 4\u2014figure supplement 1). The modular evolution of AP1 function is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Differences in AP1 expression (reduced transcript levels and protein abundance in petal initiation regions) are associated with functional divergence between A. thaliana and C. hirsuta AP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by qPCR data (Figure 4d) and confocal imaging (Figure 4e-g). The expression differences provide a mechanistic link between regulatory divergence and functional outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The authors propose a dose-response model where AtAP1 expression defines a robust range buffering petal number against perturbations, while ChAP1 expression falls below this threshold, allowing variation in response to genetic, environmental, and stochastic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 present a speculative model (Figure 6a) based on the expression and functional data. While the model is consistent with observations and analogous to other systems (C103), direct demonstration of threshold effects and dose-response curves is lacking. The model requires quantitative validation of AP1 expression thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Petal number shows phylogenetic patterns in angiosperms: three petals in monocots, five in core eudicots, with greater lability in basal angiosperms, suggesting evolutionary canalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by appropriate citations to published literature (Endress, 2011; Specht and Bartlett, 2009). These provide established context for the study, though C11 involves inference about evolutionary processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Petals function to open flowers and attract pollinators, and stable petal number could ensure reliable reproductive organ display and pollinator cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by citations (Fenster et al., 2004; van Doorn and Van Meeteren, 2003). Claim C13 is speculative but reasonable. These provide biological context for why petal number robustness might be adaptive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on A. thaliana flower development: Brassicaceae have four petals, petal identity requires A- and B-class genes (ABC model), and petal initiation involves complex processes including meristem size, boundaries, and auxin maxima. Few mutants specifically affect petal number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 provide established background supported by appropriate citations. These are well-accepted facts in the field that contextualize the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "C. hirsuta is closely related to A. thaliana and shows variable petal number (0-4) influenced by seasonal cues, temperature, and polygenic genetic variation with small to moderate effect QTL. The allelic architecture maintains variation rather than robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 are supported by citations to published work (Hay et al., 2014; Monniaux et al., 2016; Pieper et al., 2016; McKim et al., 2017) and data in the current manuscript. These establish the biological system and prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "ap1 mutants in both C. hirsuta and A. thaliana show variable petal loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by citations (Bowman et al., 1993; Monniaux et al., 2017). This provides rationale for investigating AP1 as a candidate gene.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "C. hirsuta AP1::AP1:RFP expression is enriched in regions between sepals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by co-localization imaging in Figure 4\u2014figure supplement 7. This observation may be relevant for understanding petal number variation but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Petal number became decanalized in C. hirsuta through AP1 divergence allowing cryptic loci to affect the phenotype. Allelic variation at QTL maintains the distribution of petal numbers in natural accessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 synthesize the main findings. C80 is well-supported by the experimental data. C81 is supported by citation to Pieper et al., 2016. These represent summary statements of the decanalization model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "AP1 functions as a transcriptional repressor during floral initiation and activator during sepal/petal initiation, and is described as a 'true hub' in the flower development gene regulatory network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by citation to Kaufmann et al., 2010. This provides important context for understanding AP1's pleiotropic functions and why regulatory changes might affect specific functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Regulatory sequence divergence can disable specific linkages in gene regulatory networks while maintaining pleiotropic functions in other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is a general principle supported by citation (Rebeiz and Tsiantis, 2017) and inferred from the AP1 data. This provides conceptual framework for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Robustness in developmental systems often results from nonlinear dose-response curves. Example: C. elegans vulva development is robust to lin-3 expression variation within a specific range (15-50 mRNA molecules).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by citations (F\u00e9lix and Barkoulas, 2015; Barkoulas et al., 2013). These provide conceptual framework and precedent for the dose-response model proposed for AP1.",
+    "result_type": "MINOR"
+  }
+]

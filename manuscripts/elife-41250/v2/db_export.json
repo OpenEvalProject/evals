@@ -1,0 +1,1804 @@
+{
+  "submission": {
+    "id": "b5739986-6137-4b83-addc-9d4c3f389d84",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:25:21.338277Z",
+    "updated_at": "2025-12-02T08:25:21.338277Z"
+  },
+  "content": [
+    {
+      "id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "submission_id": "b5739986-6137-4b83-addc-9d4c3f389d84",
+      "content_type": "manuscript",
+      "content_text": "# Quantitative uniqueness of human brain evolution revealed through phylogenetic comparative analysis\n\n## Authors\n\n- Ian F Miller<sup>1</sup> ([ORCID: 0000-0002-2673-9618](https://orcid.org/0000-0002-2673-9618)) \u2020\n- Robert A Barton<sup>3</sup>\n- Charles L Nunn<sup>2</sup> ([ORCID: 0000-0001-9330-2873](https://orcid.org/0000-0001-9330-2873))\n\n### Affiliations\n\n1. Ecology and Evolutionary Biology Princeton University Princeton United States\n2. Department of Evolutionary Anthropology Duke University Durham United States\n3. Evolutionary Anthropology Research Group, Department of Anthropology University of Durham Durham United Kingdom\n4. Duke Global Health Institute Duke University Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhile the human brain is clearly large relative to body size, less is known about the timing of brain and brain component expansion within primates and the relative magnitude of volumetric increases. Using Bayesian phylogenetic comparative methods and data for both extant and fossil species, we identified that a distinct shift in brain-body scaling occurred as hominins diverged from other primates, and again as humans and Neanderthals diverged from other hominins. Within hominins, we detected a pattern of directional and accelerating evolution towards larger brains, consistent with a positive feedback process in the evolution of the human brain. Contrary to widespread assumptions, we found that the human neocortex is not exceptionally large relative to other brain structures. Instead, our analyses revealed a single increase in relative neocortex volume at the origin of haplorrhines, and an increase in relative cerebellar volume in apes.\n\n## Introduction\n\nPrimates vary almost a thousand-fold in endocranial volume \u2013 a measure which closely approximates brain size \u2013 ranging from 1.63 mL in mouse lemurs (Isler et al., 2008) to 1478 mL in humans (Robson and Wood, 2008). Body size is perhaps the most important statistical predictor of brain size across primates, with larger bodied species having larger brains, but substantial variation remains after accounting for the effects of body size (Isler et al., 2008). While numerous comparative studies have sought to identify ecological, behavioral, and cognitive correlates of this variability (Barton, 1999; MacLean et al., 2014; DeCasien et al., 2017; Powell et al., 2017; Noonan et al., 2018), much less is known about the evolutionary patterns and processes that generated extant variation in brain size within the primate clade, how these differ for different components of the brain, or the degree to which the brain phenotypes of particular species, such as humans, are the result of exceptional patterns of evolutionary change.\n\nA common approach to investigating human uniqueness is to test whether humans fall \u2018significantly\u2019 far from a regression line, for example by regressing brain size on body mass (Azevedo et al., 2009; de Sousa et al., 2010; Herculano-Houzel and Kaas, 2011). One surprising recent result reported from such an analysis is that the mass of the human brain is only 10% greater than expected for a primate of human body mass (Azevedo et al., 2009). However, such non-phylogenetic methods may give misleading results because they fail to incorporate trait co-variation among species that results from shared evolutionary history. Valid analysis requires methods that account for phylogeny both when estimating scaling parameters and when evaluating deviations from scaling\u00a0patterns exhibited by individual species (Garland and Ives, 2000; Ross et al., 2004; Organ et al., 2011). An additional source of error arises if the species being investigated is included in the regression model (e.g. Azevedo et al., 2009), particularly when, as for humans, the phenotypic trait lies at the extreme of the distribution for the other species in the analysis. This procedure would reduce the magnitude of deviations from expected trait values for lineages that have undergone exceptional change, and in the case of humans, would bias the results toward failing to detect uniqueness.\n\nComparative methods make it possible to incorporate phylogeny into analyses and to model phenotypic evolution in ways that uncover hitherto hidden patterns. Such methods are now being applied to a wide variety of traits (e.g.\u00a0Vining and Nunn, 2016; Pagel, 1999; Orme, 2013), including brain size. Pagel (2002) estimated phylogenetic scaling parameters to characterize the evolutionary trajectory of endocranial volume (ECV) in fossil hominins. His analyses revealed that ECV evolution accelerated towards the present. As this analysis did not account for body size, it is not clear to what extent this pattern reflects changes in brain size independent of body size. Montgomery et al. (2010) used ancestral state reconstruction with fossil data to demonstrate a directional trend in primate brain size evolution and to identify branches in the primate phylogeny along which exceptional evolutionary change occurred. They found that while the absolute change in the mass of the human brain was exceptional, the rate of change relative to body size was not. Phylogenetic methods have also been used to examine how specific brain components evolved and the extent to which the branch leading to humans exhibited unusual amounts or rates of change in the size of these components (Barton and Venditti, 2013; Barton and Venditti, 2014). Recently, Lewitus (2018) suggested that comparative analyses of neuroanatomical data can be improved by incorporating and comparing results from different evolutionary models.\n\nHere, we use phylogenetic methods to model the evolution of brain size and to identify exceptional evolutionary change along phylogenetic branches. We employ three methods: The first method models trait evolution both as a multi-optima Ornstein-Uhlenbeck (OU) process (which incorporates stabilizing selection and drift) and as a Brownian motion process (Felsenstein, 1985), and then compares the fit of the two models. In cases where the OU model is favored, exceptional patterns of trait evolution are indicated by recent shifts in adaptive optima in humans\u2019 (or other species\u2019) evolutionary lineage. In cases where the Brownian model is favored, we apply our second method, which is a phylogenetic outlier test that uses phylogenetic generalized least squares (PGLS) to predict a phenotype for a species and then compares observed and predicted values. With this method, we can assess whether humans are a phylogenetic \u2018outlier\u2019 relative to expectations based on their phylogenetic position and trait covariation in other primate species. Our last method tests for directional and accelerating evolution by fitting phylogenetic scaling parameters to data on deviation from trait expectations and evolutionary time, building on previous efforts with these approaches (Pagel, 2002).\n\nUsing the first two methods, we investigate the evolution of absolute brain size and brain size relative to body mass within primates. Absolute brain volume has been shown to predict cognitive ability in primates better than other metrics that account for body mass (MacLean et al., 2014; Deaner et al., 2007). However, brain size is highly correlated with body size (Isler et al., 2008), and as such it is difficult to interpret the significance of brain size alone. Additionally, accounting for body mass gives more insights into the significance of brain size in life history processes, as relative brain size better approximates relative investment in cognitive ability. Accounting for body mass is also important as the relationship between this trait and brain size is associated with scaling effects that reflect conservation of neural function, such as preservation of somatosensory acuity across large surface areas (St Wecker and Farel, 1994) and compensation for increased neural conduction distances in larger animals through (i) larger neuron and axon sizes, increased myelination, and increased white matter volume, all of which result in reduced neuron density (Barton, 2012; Wang et al., 2008; Collins et al., 2013) and (ii) increased neural resources devoted to prediction-based sensorimotor control that result from escalating neural conduction delays as body size increases (More et al., 2010). Other measures of relative brain size such as encephalization quotients, ratios, and residuals have been used in the past, but all make theoretical assumptions about the underlying relationship between brain and body size evolution that may not hold. Using relative measures can bias parameter estimates and is not recommended as a good statistical practice (Freckleton, 2002). Instead, an empirical approach is preferred in which the covariation of brain size with body size is accounted for within a statistical model that also accounts for phylogenetic history (such as PGLS).\n\nWe also apply the first two phylogenetic comparative methods to investigate the evolution of major brain structures involving the neocortex, cerebellum, and medulla. It is widely assumed that the neocortex expanded disproportionately relative to other brain structures during the evolution of anthropoid primates and most particularly in human evolution (Kriegstein et al., 2006; Geschwind and Rakic, 2013; Florio and Huttner, 2014). Surprisingly however, direct tests of this hypothesis are lacking, despite the focus of much evolutionary and developmental neuroscience on the neocortex as the site of interest for understanding human uniqueness and its developmental mechanisms (Mitchell and Silver, 2017). Recent evidence suggests that the cerebellum may have contributed more to human brain evolution than previously appreciated: it underwent rapid evolutionary expansion in the great ape clade including hominins (Barton and Venditti, 2014; Smaers et al., 2018) and has been implicated in shape changes of the brain in hominin fossil endocasts (Kochiyama et al., 2018; Neubauer et al., 2018). Molecular evidence now corroborates the proposal that selection on cerebellar function was an important feature of hominoid and hominin brain evolution (Sousa et al., 2017), with changes in protein-coding genes implicated in cerebellar development more likely to have evolved adaptively in apes than those implicated in neocortical development (Harrison and Montgomery, 2017). It therefore appears that the neocortex and cerebellum have had different evolutionary trajectories in primate evolutionary history. More research is needed to document and understand these patterns.\n\nWe examined volumetric change in the neocortex and cerebellum relative to both body mass and the volume of the rest of the brain. As a check to establish whether changes in evolutionary patterns for relative neocortex and cerebellum size are primarily attributable to changes in those structures or to changes in the rest of the brain, we investigated the evolution of the rest of the brain relative to body mass. We also conducted analyses of the volume of the medulla relative to body mass and the volume of the rest of the brain. The relative volume of the medulla does not vary significantly across clades (Barton, 2000) and as such it has not been attributed a major role in brain expansion. For the analyses of fossil species, brain component volumes are not available; thus, analyses of these lineages are restricted to overall brain size (ECV).\n\nAlthough our main focus is on broad patterns across primate phylogeny and on the extent to which human brain evolution fits or departs from these patterns, we also examined brain evolution in other species that are considered to be unusually large-brained, such as the aye-aye (Daubentonia) and capuchins (Cebinae) (Isler et al., 2008; Pagel and Harvey, 1989). Our analyses also help to identify other primate species that have experienced exceptional expansion or reduction of the brain or its components, generating new questions for future research on exceptional brain evolution in primates.\n\nWe used our third method to characterize patterns of brain evolution in humans and extinct hominins. Pagel (2002) conducted similar analyses of raw ECV. Our analyses advance his findings in two ways. First, we incorporate body mass as a predictor. Second, we focus on the deviation from brain size expectations, based on the PGLS methods used to assess outlier status. Our findings therefore provide insights to the evolutionary trajectory of exceptional hominin ECV relative to primate-wide brain-body mass scaling relationships.\n\n## Materials and methods\n\n### Comparative data\n\nWe compiled ECV and female body mass data on non-human primates (Isler et al., 2008) as well as humans and fossil hominins (Robson and Wood, 2008, Tables 1 and 2). Given that sex specific body mass estimates are available for ancient humans and extinct hominins (Robson and Wood, 2008), we used female values for body mass because female values are more tightly linked to ecological and life-history factors (Gordon, 2006) and sexual selection can drive increases in male body mass unlinked to ecology, obscuring brain-body scaling relationships (Fitzpatrick et al., 2012). We also compiled data on neocortex, cerebellum, and medulla volume (Barton and Venditti, 2014; Stephan et al., 1981; Bush and Allman, 2004). Values used to compute predictor variables (described below) for analyses of brain sub-structures were taken from Isler et al. (2008). We used several phylogenies in our analyses. For analyses of hominin ECV, we constructed a \u2018hominin phylogeny\u2019 by combining the hominin consensus tree from Organ et al. (2011) and the non-human primate consensus tree from 10kTrees version 3 (Arnold et al., 2010). To ensure that our results in this set of analyses were not dependent upon the topology of the hominin phylogeny, we repeated them using an \u2018alternate hominin phylogeny,\u2019 constructed in a similar manner using another hominin tree from Organ et al. (2011). Details of the tree construction process are given in Appendix 1. In all other analyses we used either the consensus primate phylogeny or a block of 100 primate phylogenies from 10kTrees, version 3.\n\n**Table 1.**\n Hominin ECV and body mass data details.All values are from Robson and Wood (2008).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>ECV (mL)</th>\n      <th>Sample size</th>\n      <th>Female body mass (kg)</th>\n      <th>Sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Australopithecus africanus</td>\n      <td>464.00</td>\n      <td>8</td>\n      <td>30</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Homo erectus</td>\n      <td>969.00</td>\n      <td>40</td>\n      <td>57</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Homo habilis</td>\n      <td>609.00</td>\n      <td>6</td>\n      <td>32</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Homo rudolfensis</td>\n      <td>726.00</td>\n      <td>3</td>\n      <td>51</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Homo sapiens neanderthalensis</td>\n      <td>1426.00</td>\n      <td>23</td>\n      <td>65</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Homo sapiens</td>\n      <td>1478.00</td>\n      <td>66</td>\n      <td>57</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>Paranthropus boisei</td>\n      <td>481.00</td>\n      <td>10</td>\n      <td>34</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Paranthropus robustus</td>\n      <td>563.00</td>\n      <td>2</td>\n      <td>32</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Australopithecus afarensis</td>\n      <td>458.00</td>\n      <td>6</td>\n      <td>30</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Human brain data.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Brain trait</th>\n      <th>Value</th>\n      <th>Source</th>\n      <th>Notes</th>\n      <th>Dataset</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ECV</td>\n      <td>1478.00 mL</td>\n      <td>(Robson and Wood, 2008)</td>\n      <td>Composite of values from 66 fossil specimens from locations across Eurasia and africa</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Brain volume</td>\n      <td>1267.65 mL</td>\n      <td>(Barton and Harvey, 2000)</td>\n      <td>Average of measurements of modern human brains</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Brain volume</td>\n      <td>1251.85 mL</td>\n      <td>(Stephan et al., 1981)</td>\n      <td>Measurement of modern human brain</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\nTo determine whether patterns of exceptional evolution represent absolute or relative changes in scaling, we included several predictor variables in our analyses. To investigate whether the volumes of structures changed relative to body size, we used body mass as a predictor variable, while we used a \u2018rest-of-brain\u2019 metric as a predictor variable to investigate whether the volumes of structures changed relative to other brain structures. For the analyses of all structures other than the medulla, the \u2018rest-of-brain\u2019 was computed as whole brain volume \u2013 (neocortex volume\u00a0+cerebellum vol). In analyses of the medulla, we calculated \u2018rest-of-brain\u2019 volume as brain volume - medulla volume. We also analyzed the volume of the \u2018rest-of-brain\u2019 [whole brain volume \u2013 (neocortex volume\u00a0+cerebellum vol)] relative to body mass. The data sets used in all analyses, along with more detailed descriptions, are given in Appendix 1.\n\n### Characterizing patterns of phenotypic evolution\n\nWe compared the fit of multi-optima Ornstein-Uhlenbeck (OU) models of evolution and Brownian models of evolution using a developmental version of the R package bayou (Uyeda and Harmon, 2014; Uyeda, 2017). OU models of evolution incorporate stabilizing selection and drift, while Brownian models only include drift. Bayou fits multi-optima OU models to a phylogeny using a Markov-Chain Monte Carlo (MCMC) approach. A shift in selection regime refers to a change in the parameters that determine the optimum trait value (towards which species evolve) at a specific location on a phylogeny. Thus, inferred changes in selective regime provide insights to how lineages differ. Shifts in selection regime along terminal branches of a tree would provide particularly strong evidence for a species\u2019 uniqueness.\n\nGrabowski et al. (2016) proposed the following OU model to describe the evolution of a trait, y, as a function of a predictor variable, x:\n\nEquation 1:\n\n$$\ndy=\u00a0\u2212\u00a0\\alpha\u00a0(y\u2212\u00a0y_{0})\u00a0dt+\u00a0\\sigma^{2}\u00a0dB\n$$\n\nEquation 2:\n\n$$\ny_{0}=\u00a0\\theta+x\\beta\n$$\n\nIn these equations, dy is the change in the trait value, \u03b1 is the magnitude of the selective 'pull' towards the optimum trait value, y0, and \u03c32 is the variance of the white noise process dB. The variables $\\theta$\u00a0and $\\beta$\u00a0can be interpreted as the intercept and slope of the optimum regression line specified in Equation 2. The optimum regression line represents the state that a species is evolving towards rather than the actual evolutionary trajectory.\n\nThis model has limited utility when data for x are only available for the tips of the phylogeny because the values of x must be known along the branches of the phylogeny to infer the expected value of y for a lineage. We utilize two similar models implemented in the developmental version of bayou \u2013 the unweighted predictor model and the weighted predictor model (corresponding to \u2018immediate\u2019 and \u2018alphaweighted\u2019 options for \u2018slopechange\u2019 in bayou) \u2013 as these circumvent the issue of unknown phenotypes in ancestral lineages while incorporating a predictor variable into the OU model. The weighted predictor model considers the evolutionary history of the predictor variable while fitting models, and the unweighted predictor model only considers the values of the predictor variables at the tips of the phylogeny while fitting models. The details of these two models are provided in Appendix 2.\n\nBayou uses a MCMC to parameterize the models to fit the data by inferring the location and magnitude of concurrent shifts $\\theta$\u00a0and\u00a0$\\beta$ on a phylogeny and by inferring the values of $\\alpha$\u00a0and\u00a0$\\sigma^{2}$, which remain constant across the phylogeny. The parameters $\\alpha$\u00a0and $\\sigma^{2}$ are used in the calculation of the variance-covariance matrices used in evaluating model fit to the phylogeny. The phylogenetic half-life, the time needed for a trait to evolve halfway to the optimum, is computed as ln(2) / \u03b1. We present phylogenetic half-life in units of tree height. A phylogenetic half-life less than tree height indicates that the evolutionary processes can 'pull' parameter values to the optimum within the timescale in question, while a phylogenetic half-life that exceeds tree height or constitutes a large percentage of tree height indicates that evolutionary processes have a weak 'pull' and trait values are not expected to closely approach the optimum during the timescale in question. The expected variance in trait values evolving to the same optima at equilibrium (stationary variance) can be computed as\u00a0$\\frac{\\sigma^{2}}{2\\alpha}$.\n\nFor each analysis, we ran the weighted and unweighted predictor models. We also ran a Brownian motion model in which the strength of stabilizing selection (\u03b1) was fixed at 10\u22126 (resulting in a phylogenetic half-life\u00a0~9500 times greater than tree height; bayou cannot compute model likelihoods when \u03b1 is 0), and no shifts away from the root regime were allowed. The predictor variable is still incorporated in the Brownian motion model, but no changes in its coefficient occur on the phylogeny. We used the hominin tree for the analysis of ECV and the consensus tree of extant primates for all other analyses. All MCMCs were run for 5,005,000 time steps, sampling every 10 time steps. The priors used are given in Table 3. For each analysis, two chains were run and checked for convergence in terms of likelihood, \u03b1, and \u03c32 (see Appendix 3 for discussion of chain non-convergence issues in analyses of ECV). We also checked for correlation in branch-wise posterior shift probability between chains. Diagnostic plots pertaining to chain convergence are given in Source data 1. The two chains were combined, with the first 30% of samples being discarded as burn in. We then obtained the likelihood of each model and calculated Bayes factors for each model pairing (Kass and Raftery, 1995; Jeffreys, 1998) using the steppingstone algorithm in bayou, which implements the method of Fan et al. (2011). We imposed a posterior probability cutoff of 0.3 for shift detection.\n\n**Table 3.**\n Priors for bayou MCMC analyses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model parameter</th>\n      <th>Prior distribution</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03b1</td>\n      <td>Half-cauchy with scale factor 1. Fixed at 0 in Brownian model.</td>\n    </tr>\n    <tr>\n      <td>\u03c32</td>\n      <td>Half-cauchy with scale factor 0.1</td>\n    </tr>\n    <tr>\n      <td>\u03b2</td>\n      <td>Normal distribution with standard deviation\u00a0=\u00a00.5, mean\u00a0=\u00a0slope of linear model of trait and predictor data</td>\n    </tr>\n    <tr>\n      <td>\u03b8</td>\n      <td>Normal distribution with standard deviation\u00a0=\u00a01, mean\u00a0=\u00a0intercept of linear model of trait and predictor data</td>\n    </tr>\n    <tr>\n      <td>Number of shifts per branch</td>\n      <td>Fixed at one</td>\n    </tr>\n    <tr>\n      <td>Branch-wise shift probability</td>\n      <td>Uniform</td>\n    </tr>\n    <tr>\n      <td>Number of shifts</td>\n      <td>Conditional Poisson distribution* with mean\u00a0=\u00a00.1*number of edges on phylogeny and maximum\u00a0=\u00a0number of edges on phylogeny. Fixed at 0 in Brownian model.</td>\n    </tr>\n    <tr>\n      <td>Location of shift along branch</td>\n      <td>Uniform</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Calculated using \u2018cdpois\u2019 option in bayou._\n\nWhen the multi-optima OU model was selected over the Brownian motion model, we used the location and magnitude of shifts in adaptive optima to assess changes in patterns of evolution. The inference of a shift on a terminal branch would indicate an exceptional pattern of evolution for a given species.\n\nHo and An\u00e9 (2013) identified several potential problems with OU models, including un-identifiability of parameters and over-fitting, but acknowledged that such models may be necessary, and recommended that Bayesian models, specifically bayou, be used to overcome these problems. Several other phylogenetic OU models have been developed (most notably Hansen, 1997), but none utilized Bayesian parameter estimation. Cooper et al. (2016) echoed the concerns of Ho and An\u00e9 (2013) and again recommended using Bayesian approaches. Additionally, they recommended weighing the fit of an OU model of evolution against that of a Brownian model, which do through our model selection process.\n\n### Outlier detection using PGLS\n\nWhen bayou indicated that the Brownian model of trait evolution was favored over the multi-optima OU model, we conducted a phylogenetic outlier test. This was accomplished using BayesModelS, an R script that generates distributions of predicted trait values for a species or several species based on phylogenetically controlled analyses of trait covariation with predictor variables (Nunn and Zhu, 2014). BayesModelS uses a Markov-Chain Monte Carlo (MCMC) to fit parameters of a PGLS model and assumes a Brownian motion model of evolutionary change. The PGLS models are used to generate trait value predictions for the species of interest. Uncertainty in phylogenetic structure can be accounted for by sampling from a set of trees (Pagel, 2002).\n\nBayesModelS accounts for phylogenetic non-independence of residual trait values by incorporating branch scaling factors when fitting PGLS models. The MCMC samples between two branch length scaling factors, \u03bb and \u03ba, to improve the fit of the models. The parameter \u03bb scales the internal branches of the phylogeny and measures phylogenetic signal (Nunn, 2011). Values for \u03bb were constrained to be in the interval [0, 1]. In the \u03ba model phylogenetic tree branch lengths are raised to the power \u03ba. The value of \u03ba has previously been used to assess support for a \u2018speciational\u2019 mode of evolution (see Pagel, 2002).\n\nWhen predicting the value of a trait for a species (or a group of species), its data were excluded from the BayesModelS analysis to avoid biasing the predictions. BayesModelS was then used to generate a posterior probability distribution of predicted values for that species, based on the predictor variable, estimated phylogenetic signal, and estimated trait co-variation with the other species in the analysis. Species were identified as outliers when their trait value was more extreme than 97.5% of the predicted trait values (i.e. when trait values fell outside 95% credible interval). A species was identified as a positive outlier when its true value fell above the majority of predictions, and a negative outlier when the opposite was true.\n\nThe analyses conducted using BayesModelS proceeded as follows. First, we investigated whether hominins follow primate brain size to body mass scaling rules by using BayesModelS to predict ECV based on body mass and phylogeny. We tested each hominin species for outlier status while excluding data on all hominins when generating predictions. When computing mean estimates for hominin ECV, we corrected for back transformation bias using the quasi-maximum likelihood estimator method described in Smith (1993). We used the hominin phylogeny or the alternate hominin phylogeny in these analysis, and the data spanned 225 extant primate species (including humans) and 10 extinct hominin species.\n\nNext, we identified individual primate species that are evolutionary outliers for ECV and other brain structures (neocortex, cerebellum, medulla, rest-of-brain). In these analyses, we accounted for phylogenetic uncertainty by using the block of 100 trees, which included H. sapiens and H. neanderthalensis but no other hominins. We iteratively tested each species in the data set for outlier status. Our analysis for ECV included data from 145 species, and our analyses for other brain structures structures included data from between 39 and 53 species.\n\nMCMC chains were run for 1,000,000 time steps, and the first 200,000 time steps were discarded as burn in. Flat priors were used for all variables being predicted. To assess whether the post-burn in results were drawn from a stable distribution, we used the \u2018heidel.diag\u2019 function in the R package coda (Plummer et al., 2006). When post-burn-in results were not drawn from a stable distribution, we discarded an additional portion of the chain (as indicated by \u2018heidel-diag\u2019) so that only results drawn from a stable distribution remained. We ensured that the effective sample sizes for the PGLS model parameters (slope, intercept, most frequently selected phylogenetic scaling parameter) were greater than 1000 using the \u2018effectiveSize\u2019 function in coda (Plummer et al., 2006). Details of the MCMC diagnostics are given in supplementary materials S6, along with detailed results concerning the posterior predicted distribution and phylogenetic scaling parameters for each species in each analysis.\n\n### Characterizing the tempo of ECV evolution in hominins\n\nWe investigated the evolutionary trajectory of brain-body scaling in hominins relative to other primates. We calculated the difference between observed ECV and the mean BayesModelS prediction for brain size (generated in the first described BayesModelS analysis in which data for all hominin species was excluded while generating predictions) for each of the hominin species. This difference, which we call \u2018brain size deviation\u2019 represents the magnitude and direction of the deviation in brain size from what would be expected under primate brain-body scaling rules. We fit four PGLS model to hominin brain size deviation to examine how brain size deviation covaried with the phylogenetic distance from the hominin-Pan split: First, we fit a \u2018Brownian\u2019 model of brain size deviation with no predictor. We fixed \u03bb at one in this and all subsequent models. Next, we fit a \u2018directional\u2019 model of brain size deviation predicted by phylogenetic distance from the hominin-Pan split, expecting to find a positive relationship between these variables if brain volume relative to body size has increased since the split of hominins and Pan. To determine whether evolutionary rates in brain size deviation have accelerated over time, we fit an \u2018acceleration\u2019 model that included the phylogenetic scaling parameter \u03b4 (Pagel, 2002; Pagel, 1999). Values of \u03b4 greater than one are consistent with accelerating evolution, but not necessarily directional evolution. Finally, we fit a \u2018directional acceleration\u2019 model in which we fit the parameter \u03b4 and used phylogenetic distance from the hominin-Pan split as a predictor of brain size deviation. In this model, a positive relationship between brain size deviation and phylogenetic distance, along with a value of \u03b4 greater than 1, would indicate that brain volume relative to body size has increased at an accelerating rate since the divergence of hominins from Pan. We compared these models using AICc. Analyses were conducted in the R package caper (Orme, 2013).\n\n## Results\n\n### Endocranial volume (ECV)\n\nIn the bayou analysis of ECV predicted by body mass using the hominin phylogeny, the Brownian model was favored over the weighted and unweighted predictor OU models with Bayes factors greater than 22. When we repeated this analysis using the alternate hominin phylogeny, we found that the un-weighted predictor OU model was favored over the weighted predictor OU model and the Brownian model with Bayes factors greater than 42, despite displaying poor convergence in terms of \u03b1 and \u03c32. However, both chains inferred a similar set of shifts, indicating that this is likely an issue related to parameter identifiability rather than to shift identifiability. In this model, progressive shifts towards larger ECV relative to body mass were detected within the hominin clade along the human lineage (Figure 1A,B). Shifts towards larger relative brain size were also detected on the terminal branch leading to D. madagascariensis and the internal branches leading to the Lemuridae and Cebinae, clades, and shifts towards smaller relative brain size were detected on the branch leading to the Alouatta clade, the branch leading to the clade containing the Aotidae and Callitrichidae families, and the branch leading to the Colobinae sub-family (Figure 1\u2014figure supplement 1). The rejected weighted predictor OU model, as well as both OU models that were rejected in the bayou analysis using the hominin phylogeny, detected a very similar set of shifts that included shifts towards progressively larger ECV relative to body mass along the human lineage (Source data 1). Because the Brownian model was favored in the bayou analysis using the hominin phylogeny, we proceeded with BayesModels analyses using both the hominin and alternate hominin phylogenies.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41250/elife-41250-fig1-v2.jpg)\n\n**Figure 1.:** A shows the location of the selection regimes identified in an OU model of ECV predicted by body mass.\u00a0Panel B shows the corresponding optimum regression lines representing the various selection regimes, along with body mass and ECV data. Data are colored by their corresponding selection regimes. All results are from the un-weighted predictor OU model in the bayou analysis using the alternate hominin phylogeny. Only the great ape clade is shown; selection regimes across the entire primate phylogeny are show in\u00a0Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41250/elife-41250-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Figure 1 displays the same results, but only for great apes. Panel A shows the location of the selection regimes. Panel B shows the optimum regression lines representing the various selection regimes, along with body mass and ECV data. Data in panel B are colored according to the corresponding regimes shown in panel A.\n\nIn the BayesModelS analysis predicting ECV based on body mass while excluding all hominin data, the observed values for H. sapiens and H. neanderthalensis exceeded the mean values predicted by BayesModelS by 7.63 and 6.96 standard deviations respectively (Figure 2C). All hominin species were strongly supported positive outliers, with more than 99.9% of predictions falling below the observed values for ECV. The mean ECV prediction for a primate with the body mass of H. sapiens was 438 mL. Remarkably, the observed value for humans is 1478 mL, which is 238% greater than the mean of the predicted posterior distribution. A similar result was found for H. neanderthalensis; the observed ECV for this species exceeded the mean predicted value for a primate of their body mass by 952 mL, or 201%. Humans exceeded their predicted ECV by the greatest percentage, but all hominins exceeded predictions by at least 51% (Figure 2C, Table 4). We obtained similar results using the alternate hominin phylogeny (Figure 2\u2014figure supplement 1, Table 5).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41250/elife-41250-fig2-v2.jpg)\n\n**Figure 2.:** Panel (A) shows a scatter plot of primate ECV and body mass data. Panel (B) shows the topology of the great ape portion of the hominin phylogeny used in the BayesModelS analyses of hominin ECV. Panel (C) shows the posterior distributions of predicted ECV values generated by BayesModelS for hominin species with body mass used as the predictor variable. Vertical lines indicated observed values.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41250/elife-41250-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Panel (A) shows a scatter plot of primate ECV and body mass data.\u00a0Panel (B) shows the topology of the great ape portion of the alternate hominin phylogeny used in the BayesModelS analyses of hominin ECV. Panel (C) shows the posterior distributions of predicted ECV values generated by BayesModelS for hominin species with body mass used as the predictor variable. Vertical lines indicated observed values. The observed value for H. sapiens s exceeded the mean value predicted by BayesModelS by more than seven standard deviations. All hominin species were strongly supported positive outliers, with\u00a0>99.9% of predictions falling below the observed values for ECV.\n\n**Table 4.**\n Predicted Hominin ECV values\u00a0from BayesModelS analysis using the hominin phylogeny.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>True value (ml)</th>\n      <th>Corrected prediction (ml)</th>\n      <th>Difference (ml)</th>\n      <th>% difference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Australopithecus africanus</td>\n      <td>464.00</td>\n      <td>294.73</td>\n      <td>169.27</td>\n      <td>57.43</td>\n    </tr>\n    <tr>\n      <td>Homo erectus</td>\n      <td>969.00</td>\n      <td>438.24</td>\n      <td>530.76</td>\n      <td>121.11</td>\n    </tr>\n    <tr>\n      <td>Homo habilis</td>\n      <td>609.00</td>\n      <td>306.83</td>\n      <td>302.17</td>\n      <td>98.48</td>\n    </tr>\n    <tr>\n      <td>Homo rudolfensis</td>\n      <td>726.00</td>\n      <td>409.63</td>\n      <td>316.37</td>\n      <td>77.23</td>\n    </tr>\n    <tr>\n      <td>Homo sapiens</td>\n      <td>1478.00</td>\n      <td>437.76</td>\n      <td>1040.24</td>\n      <td>237.63</td>\n    </tr>\n    <tr>\n      <td>Homo sapiens neanderthalensis</td>\n      <td>1426.00</td>\n      <td>474.46</td>\n      <td>951.54</td>\n      <td>200.55</td>\n    </tr>\n    <tr>\n      <td>Paranthropus boisei</td>\n      <td>481.00</td>\n      <td>319.00</td>\n      <td>162.00</td>\n      <td>50.78</td>\n    </tr>\n    <tr>\n      <td>Paranthropus robustus</td>\n      <td>563.00</td>\n      <td>307.60</td>\n      <td>255.40</td>\n      <td>83.03</td>\n    </tr>\n    <tr>\n      <td>Australopithecus afarensis</td>\n      <td>458.00</td>\n      <td>288.52</td>\n      <td>169.48</td>\n      <td>58.74</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 5.**\n Predicted Hominin ECV values from BayesModelS analysis using the alternate hominin phylogeny.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>True value (ml)</th>\n      <th>Corrected prediction (ml)</th>\n      <th>Difference (ml)</th>\n      <th>% difference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Australopithecus africanus</td>\n      <td>464.00</td>\n      <td>288.18</td>\n      <td>175.82</td>\n      <td>61.00</td>\n    </tr>\n    <tr>\n      <td>Homo erectus</td>\n      <td>969.00</td>\n      <td>431.04</td>\n      <td>537.96</td>\n      <td>124.81</td>\n    </tr>\n    <tr>\n      <td>Homo habilis</td>\n      <td>609.00</td>\n      <td>300.16</td>\n      <td>308.84</td>\n      <td>102.89</td>\n    </tr>\n    <tr>\n      <td>Homo rudolfensis</td>\n      <td>726.00</td>\n      <td>401.94</td>\n      <td>324.06</td>\n      <td>80.62</td>\n    </tr>\n    <tr>\n      <td>Homo sapiens</td>\n      <td>1478.00</td>\n      <td>431.20</td>\n      <td>1046.80</td>\n      <td>242.76</td>\n    </tr>\n    <tr>\n      <td>Homo sapiens neanderthalensis</td>\n      <td>1426.00</td>\n      <td>468.41</td>\n      <td>957.59</td>\n      <td>204.44</td>\n    </tr>\n    <tr>\n      <td>Paranthropus boisei</td>\n      <td>481.00</td>\n      <td>311.41</td>\n      <td>169.59</td>\n      <td>54.46</td>\n    </tr>\n    <tr>\n      <td>Paranthropus robustus</td>\n      <td>563.00</td>\n      <td>299.74</td>\n      <td>263.26</td>\n      <td>87.83</td>\n    </tr>\n    <tr>\n      <td>Australopithecus afarensis</td>\n      <td>458.00</td>\n      <td>281.59</td>\n      <td>176.41</td>\n      <td>62.65</td>\n    </tr>\n  </tbody>\n</table>\n\nWhen we iteratively predicted ECV based on body mass and phylogeny for each species in the data set (no hominins besides H. sapiens and H. neanderthalensis were included in this analysis) and while using all data to generate predictions. We again found that humans were strongly supported positive outliers (Figure 4A). H. neanderthalensis was not identified as an outlier, perhaps because these analyses included all species except for the one being predicted, and thus inclusion of H. sapiens resulted in a wide posterior distribution when predicting ECV in H. neanderthalensis. Indeed, when we excluded H. sapiens in this analysis we found that H. neanderthalensis was identified as a strongly supported positive outlier (Source data 1). We also identified several other primate species as outliers (see Table 6 and Source data 1).\n\n**Table 6.**\n Summary of evidence for exceptional brain evolution among non-human primates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species/Clade</th>\n      <th>Exceptional trait</th>\n      <th>Evidence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Alouatta</td>\n      <td>Reduced ECV relative to body mass</td>\n      <td>Shift in OU model</td>\n    </tr>\n    <tr>\n      <td>Aotidae and Callitrichidae</td>\n      <td>Reduced ECV relative to body mass</td>\n      <td>Shift in OU model</td>\n    </tr>\n    <tr>\n      <td>Cacajao calvus</td>\n      <td>Increased ECV relative to body mass</td>\n      <td>Outlier Detection</td>\n    </tr>\n    <tr>\n      <td>Cebinae</td>\n      <td>Increased ECV relative to body mass</td>\n      <td>Shift in OU model</td>\n    </tr>\n    <tr>\n      <td>Cebus albifrons</td>\n      <td>Increased cerebellum relative to body mass</td>\n      <td>Outlier detection</td>\n    </tr>\n    <tr>\n      <td>Chiropotes satanas</td>\n      <td>Reduced ECV relative to body mass</td>\n      <td>Outlier Detection</td>\n    </tr>\n    <tr>\n      <td>Colobinae</td>\n      <td>Reduced ECV relative to body mass</td>\n      <td>Shift in OU model</td>\n    </tr>\n    <tr>\n      <td>Daubentonia madagascariensis</td>\n      <td>Increased ECV relative to body mass</td>\n      <td>Shift in OU model</td>\n    </tr>\n    <tr>\n      <td>Gorilla beringei*</td>\n      <td>Reduced ECV relative to body mass</td>\n      <td>Outlier Detection</td>\n    </tr>\n    <tr>\n      <td>Gorilla gorilla*</td>\n      <td>Reduced neocortex relative to body mass</td>\n      <td>Outlier Detection</td>\n    </tr>\n    <tr>\n      <td>Lemuridae</td>\n      <td>Increased ECV relative to body mass</td>\n      <td>Shift in OU model</td>\n    </tr>\n    <tr>\n      <td>Loris tardigradus</td>\n      <td>Reduced medulla relative to the rest of brain</td>\n      <td>Outlier Detection</td>\n    </tr>\n    <tr>\n      <td>Microcebus murinus</td>\n      <td>Reduced medulla relative to the rest of brain</td>\n      <td>Outlier Detection</td>\n    </tr>\n    <tr>\n      <td>Nasalis larvatus</td>\n      <td>Reduced neocortex relative to the rest of the brain</td>\n      <td>Shift in OU model</td>\n    </tr>\n    <tr>\n      <td>Otolemur crassicaudatus</td>\n      <td>Reduced neocortex, cerebellum relative to body mass</td>\n      <td>Outlier Detection</td>\n    </tr>\n    <tr>\n      <td>Pan troglodytes schweinfurthii</td>\n      <td>Increased ECV relative to body mass</td>\n      <td>Outlier Detection</td>\n    </tr>\n    <tr>\n      <td>Pan troglodytes troglodytes</td>\n      <td>Reduced ECV relative to body mass</td>\n      <td>Outlier Detection</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The dataset for this analysis did not contain any other gorilla species._\n\nIn the bayou analysis of ECV with no predictor variable using the hominin phylogeny, the Brownian model was selected over the un-weighted predictor OU models (in which the influence of the predictor was set to 0) with a Bayes factor\u00a0>10. No weighted predictor model was run, as it would have been equivalent to the unweighted model given that no predictor variable was incorporated. An equivalent result was found when we repeated the analysis using the alternate hominin phylogeny. We then proceeded with the BayesModelS analysis, iteratively testing the outlier status of each species in the data set. We used the tree block for this analysis, and as such H. sapiens and neanderthalensis were the only hominins included. We found that neither humans nor Neanderthals were detected as an outlier (figure 4\u2014figure supplement 1; Source data 1), indicating that without correcting for body mass, the variance in ECV across primates is great enough to prevent humans\u2019 brains from being detected as exceptionally large.\n\n### Evolutionary trajectory of ECV in hominins\n\nWe conducted PGLS analyses of brain size deviation conducted to characterize the evolution of exceptional brain size in hominins (data shown in Figure 3). The analyses revealed evidence for both accelerated evolution of brain size deviation and directional evolution towards larger brain size deviations, as indicated by the directional acceleration model (AICc\u00a0=\u00a0\u221223.38) being favored over the acceleration (AICc\u00a0=\u00a0\u221221.93), directional (AICc\u00a0=\u00a0\u221217.56), and Brownian (AICc\u00a0=\u00a0\u221214.58) evolution models. In this best model, there was evidence of directional evolution towards larger brain size relative to body size (slope\u00a0=\u00a00.04) over time, and of accelerating evolution (\u03b4\u00a0=\u00a08.36). These results suggest that the exceptionality of the human brain evolved recently. We found similar results when we repeated this analysis using the alternate hominin phylogeny (Figure 3\u2014figure supplement 1). These analyses therefore support a model of accelerating evolution towards larger brain volume relative to body mass in Homo sapiens.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41250/elife-41250-fig3-v2.jpg)\n\n**Figure 3.:** (A) Brain size deviation was calculated as the difference between the mean BayesModelS prediction (made while excluding all hominin data from analysis and using the hominin phylogeny) and the observed value. Phylogenetic distance was measured as time since the shared ancestor of hominins and Pan at 7.43 mya. (B) Hominin clade in the hominin phylogeny after \u03b4 transformation, with \u03b4\u00a0=\u00a08.36 following the directional acceleration model.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41250/elife-41250-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Brain size deviation was calculated as the difference between the mean BayesModelS prediction (made while excluding all hominin data from analysis and using the alternate hominin phylogeny) and the observed value. Phylogenetic distance was measured as time since the shared ancestor of hominins and Pan at 9.28 mya. (B) Hominin portion of the alternate hominin phylogeny after \u03b4 transformation, with \u03b4\u00a0=\u00a03.745 following the directional acceleration model. Among the PGLS models fit to this data, the directional acceleration model (AICc\u00a0=\u00a0\u221223.88) was favored, as it outperformed the the Brownian (AICc\u00a0=\u00a0\u221215.71), directional (AICc\u00a0=\u00a0\u221222.12), and accelerating (AICc\u00a0=\u00a0\u221222.38) evolution models. This model gave evidence for both evolution towards larger brain volume relative to body mass (slope\u00a0=\u00a00.06) and for accelerating evolution (\u03b4\u00a0=\u00a03.745).\n\n### Neocortex\n\nIn the bayou analysis of neocortex volume as predicted by body mass, the Brownian motion model was strongly favored over the weighted and unweighted predictor OU models, with Bayes factors\u00a0>\u00a018. Humans were detected as strongly supported positive outliers for neocortex volume by BayesModelS when body mass was used as the predictor variable (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41250/elife-41250-fig4-v2.jpg)\n\n**Figure 4.:** Vertical bars represent the observed values.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41250/elife-41250-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Results for other species are given in Source data 1. Because BayesModelS requires a predictor variable, we assigned each species a random number for the predictor trait. This resulted in the predictor variable not being included in the PGLS model in\u00a0~98% of post burn-in MCMC samples. We discarded the remaining samples that included the predictor in the PGLS model before generating predictions.\n\nIn the bayou analysis of neocortex volume with \u2018rest-of-brain\u2019 as the predictor variable, the weighted predictor model was selected over the unweighted predictor and Brownian motion models with Bayes Factors\u00a0>\u00a09.2. In the weighted predictor model, different scaling patterns were detected for strepsirrhines and haplorhines, with the optimum regression line for haplorhines falling above that of strepsirrhines. The only other detected transition in scaling occurred on the terminal branch leading to Nasalis larvatus, indicating a shift towards lower relative neocortex size (Figure 5A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41250/elife-41250-fig5-v2.jpg)\n\n**Figure 5.:** (A and B) correspond to the OU weighted predictor model of neocortex volume predicted by the rest-of-brain. (C and D) correspond to the OU unweighted predictor model of cerebellum volume predicted by the rest-of-brain. (E and F) correspond to the OU weighted predictor model of the rest-of-brain volume predicted by body mass. (A,\u00a0C) and (E) show the location of selection regimes on the primate phylogeny. (B,\u00a0D) and (F) show the optimum regression lines associated with the selection regimes. Points show primate trait and predictor data; colors correspond to the selection regimes. Colors in (A,\u00a0C) and (E) match those in (B,\u00a0D) and (F).\n\n### Cerebellum\n\nIn the bayou analysis of cerebellar volume predicted by body mass, the Brownian motion model was favored over the weighted predictor and unweighted predictor OU models, with Bayes factors of 11.96 and 22.79, respectively. BayesModelS identified humans as strongly supported positive outliers for cerebellum volume when body mass was used as the predictor variable (Figure 4C).\n\nIn the bayou analysis of cerebellum volume relative to the rest-of-brain, the comparison between the unweighted predictor model and the Brownian motion model gave a Bayes factor of 10.65, while the comparison between the unweighted and weighted predictor models gave a Bayes factor of 0.20. This indicates that the OU models clearly outperform the Brownian model, but that neither OU model performs significantly better than the other. Both OU models detected a shift on the branch leading to apes associated with an increase in optimum cerebellar volume relative to the \u2018rest-of-brain\u2019 volume (Figure 5C,D).\n\n### Medulla\n\nIn the bayou analysis of medulla volume predicted by body mass, the Brownian motion model was selected over the two OU models with Bayes factors\u00a0>\u00a07.4. BayesModelS identified humans as strongly supported positive outliers for medulla volume (Figure 4D). No other species were identified as exceptional in this analysis. When medulla was predicted by the \u2018rest-of-brain\u2019 volume, the Brownian motion model was again selected over the OU models, with Bayes factors\u00a0>\u00a03.8. Humans were identified as strongly supported negative outliers (Figure 4E).\n\n### Rest-of-brain\n\nIn the bayou analyses of the rest-of-brain relative to body mass, the OU models were selected over the Brownian motion model, with Bayes factors\u00a0>\u00a013. However, the comparison between the two OU models gave a Bayes factor of 0.20, indicating that neither model is supported relative to the other. No shifts were detected in either model (Figure 5E,F).\n\n## Discussion\n\nOur phylogenetic analyses revealed that the human brain is 238% larger than the size expected for a primate of similar body mass and phylogenetic position. The exceptional size of the human brain was achieved through progressive scaling shifts towards larger size over several million years of hominin evolution, and the evolution towards increased brain size relative to expectations based on primate scaling patterns accelerated over time. These findings add an important dimension to previous observations of gradual phyletic increases in hominin brain size. Du et al. (2018) fit six evolutionary models to within- and between-lineage change in hominin brain sizes (random walk, gradualism, stasis, punctuated equilibrium, stasis-random walk and stasis-gradualism), obtaining the best fit for a gradualism model. However, their non-phylogenetic analysis did not test explicitly for accelerating directional increase. Our findings extend the results obtained by Pagel (2002) on absolute cranial volume, as the pattern of accelerating evolution is found even after accounting for body size. The pattern of accelerating brain size increase documented here is consistent with hypotheses that postulate a co-evolutionary positive feedback process driving human brain evolution, such as feedback between brain size and culture or language (Wills, 1993; Deacon, 1998) or between the brain sizes of conspecifics engaged in a socio-cognitive evolutionary arms race (Dunbar, 1998; Miller, 2011).\n\nWhile humans clearly have the largest relative brain size among extant primates, anatomically modern humans were closely matched by H. neanderthalensis. However, even when accounting for the close phylogenetic relationship between humans and H. neanderthalensis and the exceptionally large brain of the latter, the human brain is still much larger than expected: humans were identified as strongly supported outliers when their ECV (relative to body mass) was predicted by phenotypic data from all primates, including H. neanderthalensis. This pattern was not reciprocal, however; H. neanderthalensis was not significantly different from other primates when H. sapiens was included in the model.\n\nSignificant variation exists between estimates of ECV and body mass made from different fossil specimens of the same hominin species (Robson and Wood, 2008). Thus, using single specimens to represent a species would not be a good statistical practice. We used a dataset in which almost all mean species values were calculated from multiple fossil specimens (Table 1). Unfortunately, we could not explicitly account for intraspecific variation in our analyses, as the multi-optima OU model fitting approach and the outlier test are unable to account for variation in both a trait and predictor variable. It would therefore be worthwhile to revisit our analyses as new phylogenetic comparative methods that can account for intraspecific variation become available. Additionally, data quality will likely improve over time. More hominin fossils will be discovered, increasing sample sizes for estimated ECV and body mass.\n\nThe hominin phylogeny will also likely become better resolved and more complete. We accounted for some phylogenetic uncertainty by repeating our analyses with an alternate phylogeny. The use of different phylogenies influenced outcomes of some statistical tests, as the Brownian model favored when we used the hominin phylogeny and OU model was favored when we used the alternate hominin phylogeny. However, we found that all of the OU models we fit inferred the same pattern of evolution towards larger ECV along the human lineage. The results of our outlier tests and PGLS model fitting \u2013 which assume a Brownian mode of evolution \u2013 also detected this pattern on different phylogenies. Collectively, these results indicate that our findings are likely to be robust to variations in assumed evolutionary relationships, and potentially to assumptions about the mode of evolution.\n\nIt is widely assumed that primate brain size evolution in general, and the large size of the human brain in particular, reflects expansion of the neocortex relative to other brain structures (Kriegstein et al., 2006; Rakic, 2009). Our results contradict this assumption: human neocortical volume was exceptionally large relative to body mass, but not exceptional relative the volume of the rest of the brain. We documented only one shift in neocortex size relative to the rest of the brain during primate evolution: an increase at the origin of all haplorrhines. This shift may be related to the visual specializations of haplorrhines for high-acuity photic vision, mediated by extensive cortical visual areas that make up over 50% of the cortex in these species (Drury et al., 1996; Barton, 1998; Barton, 2007). On branches postdating the split between haplorrhines and strepsirrhines, neocortex size is largely predictable from its scaling relationship to the rest of the brain, in line with the proposed importance of cortical-subcortical connectivity in primate brain evolution (Whiting and Barton, 2003).\n\nIn contrast, we found that the cerebellum increased in size relative to the rest of the brain on the branch leading to apes. This finding is consistent with the results of recent studies implicating the cerebellum, and especially the lateral cerebellum, in brain expansion in apes and some other mammalian lineages (Barton and Venditti, 2014; Smaers et al., 2018; MacLeod et al., 2003). Our findings also reinforce the argument that subcortical structures should be given greater consideration in studies of mammalian brain evolution and cognition (Barton, 2012; Miller and Clark, 2018). Cerebellar specialization in apes may have been initiated by the demands on motor control and route-planning imposed by arboreal below-branch locomotion and/or by complex extractive foraging (Barton and Venditti, 2014; Barton, 2012). The fact that shifts in the relative size of neocortex and cerebellum occurred on different parts of the tree supports the theory of mosaic brain evolution (Barton and Harvey, 2000) and suggests that no single adaptive hypothesis is likely to be capable of accounting for primate brain evolution; rather, different selection pressures, on different information-processing capacities, likely operated at different times on different lineages.\n\nConsistent with previous studies, we found that the medulla expanded in humans (positive outlier status for medulla volume relative to body mass), but to a lesser degree than other structures (negative outlier status for medulla volume relative to the rest of the brain). Relative to body mass, medulla volume has been shown to be much less variable across taxa than other brain structures, particularly compared to the neocortex and cerebellum. For example, unlike neocortex and cerebellum, medulla volume does not differ significantly between insectivores, strepsirrhines and haplorrhines (Barton, 2000). Accordingly, we found that after controlling for either body mass or brain size, the evolution of the medulla was not modulated by selection towards a stationary optimum in the primate clade. These results further support mosaic brain evolution (Barton and Harvey, 2000), and also suggest that scaling constraints related to connectivity with other brain regions (Montgomery et al., 2016) was less critical for the medulla than for the neocortex and cerebellum.\n\nSeveral non-human primate species exhibited exceptional brain evolution in one trait or another, but only humans showed exceptional brain evolution for multiple brain components. As predicted, we detected shifts towards larger brain size on the terminal branches leading to D. madagascariensis, and on the branch leading to the Cebinae clade. Large brain size in Daubentonia and Cebinae has been attributed to extractive foraging and tool use (Kaufman, 2005;\u00a0Melin et al., 2014; Parker, 2015). Although not one of our a priori expectations, we also documented shifts towards smaller brain size on branches leading to several clades, including Alouatta. We also found that two Gorilla species exhibit a smaller brain or neocortex size relative to body mass than expected. Given the extremely large body mass of Gorilla species, these unique traits may be the byproduct of a body mass increase rather than a reduction in brain size. Also unexpectedly, two Pan troglodytes sub-species were found to have exceptionally large and small ECV relative to body mass respectively. However, because more closely related species are weighed more heavily when BayesModelS generates distributions of predicted trait values, sister taxa deviating from expectations in opposite directions could result in both taxa being identified as outliers, even if they both conform to patterns of brain-body scaling for other primates. If the trait distributions for each species overlap significantly, then accounting for intraspecific variation in future analyses could remedy this problem.\n\nThe unexpected patterns that we observed amongst non-human primates raise several questions for further research. Given the well-established positive correlation between overall brain size and extended life history (Isler and van Schaik, 2009; Sol, 2009; Gonz\u00e1lez-Lagos et al., 2010), what are the life history implications of mosaic shifts in the sizes of different structures, and do these support any specific interpretations of the correlation between brain size and life histories? One hypothesis, the developmental costs hypothesis, is that large brains simply take longer to grow and mature, leading to extended periods of maternal investment and slower maturation, with other life history correlates of brain size being byproducts of developmental prolongation. Support for this hypothesis is provided by the finding that, amongst mammals, the durations of gestation and lactation have independent effects on pre- and postnatal brain growth, and once these effects are accounted for, other life history correlates are non-significant (Barton and Capellini, 2011). Despite their generally correlated evolution (MacLeod et al., 2003), we found shifts in the relative size of neocortex and cerebellum on different parts of the phylogenetic tree. Because these two structures have different developmental trajectories, the developmental costs hypothesis predicts different life history correlates; this prediction has now received support (Powell et al., 2019). Further work is needed to establish exactly what developmental changes allowed for the neocortex and cerebellum to rest-of-brain scaling rules to change at the origin of haplorrhines and hominoids, respectively.\n\nAnother area of interest concerns the cases we found of brain or brain component size reduction. Montgomery et al. (2010) found that brain size reductions were rare during primate evolution, and that there was a general trend for brain size to increase across multiple branches of the phylogeny. This raises questions for future work concerning the causes, developmental mechanisms and functional implications of specific types of size reduction, such as those that we uncovered in brain size relative to body size in Alouatta and other clades, and in neocortex size relative to the rest of the brain in N. larvatus.\n\nFinally, a key question that has attracted considerable attention concerns the ecological and social drivers of brain size and structure across large-scale evolutionary radiations. It has become increasingly apparent that correlations between overall brain size and behavioral ecology needed to be treated with caution (Powell et al., 2017; Healy and Rowe, 2007; Wartel et al., 2018). However, as suggested by the hypothesis of mosaic brain evolution, correlations between ecology and individual, less functionally heterogenous brain components may be more reliable and robust (Barton and Venditti, 2014; Barton, 2012; Barton, 2007; Whiting and Barton, 2003; Montgomery et al., 2016; Barton et al., 1995). Our analyses focused on gross subdivisions within the brain, and we suggest that further insights could be obtained by applying the phylogenetic methods used in this paper to more fine-grained neuro-anatomical data, using this approach to tease apart the contributions of correlated and mosaic change among brain components (Melin et al., 2014) and by incorporating ecological, behavioral, and developmental predictor variables that may account for additional variation in the traits of interest.\n\nIn conclusion, we provided robust evidence for directional and accelerating selection towards larger brain size over the course of human evolution, resulting in the human brain being exceptionally large for a primate of similar body mass. We also found that the sizes of human brain components \u2013 including the neocortex, cerebellum, and the rest of the brain \u2013 are not larger or smaller than expected relative to the size of the rest of the brain, but all are larger than expected for a primate of similar body mass. These results suggest that relative neocortical expansion is not a hallmark of our species. The diversity of evolutionary patterns for various brain components that we observed within primates suggests that no single factor fully explains primate brain evolution; instead, comparative research should investigate how different selection pressures influenced the evolution of different neuroanatomical components at different times on different parts of the phylogenetic tree. Additionally, future work should seek to analyze the evolution of other brain traits, including neuronal composition, using similar phylogenetic comparative methods that account for the non-independence of data from related species.\n",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "03278714-307c-4a2c-9065-a59f36fef096",
+      "submission_id": "b5739986-6137-4b83-addc-9d4c3f389d84",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jessica C Thompson, Yale United States\n\nReviewers:\n- Christopher Heesy, Midwestern University United States\n- Theodore Stankowich, California State Long Beach United States\n- Dietrich Stout, Emory University United States\n\n## Review text\n\nDOI: [10.7554/eLife.41250.026](https://doi.org/10.7554/eLife.41250.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Quantitative uniqueness of human brain evolution revealed through phylogenetic comparative analysis\" for consideration by eLife. Your article has been reviewed by four peer reviewers, and the evaluation has been overseen by Jessica Thompson as the Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Christopher Heesy (Reviewer #2); Theodore Stankowich (Reviewer #3); Dietrich Stout (Reviewer #4).\n\nThese reviewers were all in general agreement that this is an important topic and the manuscript should be published after some revisions. To add strength to this, all came from different perspectives (paleoanthropology, neuroanatomy, phylogenetics), and all were careful not to overstep the boundaries of their individual knowledge. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a well-written manuscript that addresses an important issue in hominin evolutionary studies. The authors provide an excellent and up-to-date summary of current research, and identify clear gaps in information that need to be addressed through future research. Their results are novel, interesting, and will certainly stimulate much discussion. The authors apply a newer Bayesian modeling approach to the pattern of primate brain volume evolution for the purpose of evaluating brain volume evolution in living and fossil humans. Their analyses that demonstrate differential rates and directions of brain volume evolution among primates and within certain clades are novel because they are shown within a single analysis, and not piecemeal across various studies. The comparisons between varying assumption sets and data sets are carefully handled and provide illuminating results.\n\nThis is clearly an important contribution to an important topic, and the impact statement conveys this. The topic of human brain expansion has been of enduring interest for a long time, and the particular contribution is very timely in light of recent papers (cited by the authors) that are either contradicted or meaningfully extended by the work presented.\n\nThe essential revisions are consolidated below. In general, these coalesce into the following recommendation: the authors should de-emphasize some of the implications of their results, publish a more comprehensive description of their sample set, and re-run some analyses with different sample subsets in order to explore some of the patterns that seem to have manifested in the first round of analysis. There should also be some minor expansion of discussion of some key points that were uncovered through their analysis, and give a bit more time to discussion of the literature and issues detailed in the comments below.\n\nEssential revisions:\n\nAnalytical Revisions:\n\n1) What was not addressed by the current study was the relevance to the Herculano-Houzel lab's analyses. The authors bring up objections to the methods (and, obliquely, the conclusions) of studies on scaling of neuronal and non-neuronal cells numbers in primate CNS, but do not conduct comparable analyses. The authors use volumetric data, but the relationship between CNS volume and cell number, composition, size, variability, and density are not directly comparable. I see two solutions. The authors could just tone down or eliminate their discussion of the cell number and density studies or, and this would be my preference, they could also re-analyze the neuronal + non-neuronal cell data using modern phylogenetic approaches. Whichever the authors decide, I still believe that this paper should be published.\n\n2) Subsection \u201cEndocranial volume (ECV)\u201d: If the exceptionally strong effects of H. sapiens \"washed out\" any potential effect on H. neanderthalensis and probably many other species, why not rerun these tests excluding H. sapiens when testing H. neanderthalensis and both of these species when testing the other primates? It may allow detection of more subtle changes in brain evolution that are smaller in effect, but equally interesting, and greater patterns may emerge.\n\nDataset revisions:\n\n1) It is good to hold sex constant, but of course sex cannot be known for most extinct hominins. Therefore, it seems that averages of both males and females (brain and body sizes) would be more appropriate comparisons in analyses where fossil hominins are included. If the authors choose not to do this, they should justify it.\n\n2) Although there is some clarity about the phylogenetic relationships of extant primates, there is less consensus about the relationships of fossil hominins. The authors use a consensus tree of their own making, but it is not clear how the analysis would change if small details of this tree were shifted around. It would be extremely helpful if at least one alternative phylogeny was demonstrated to have little impact on the results. Otherwise, a minor shift in the phylogenetic status of a fossil taxon could invalidate the big take-home from this study.\n\n3) It would be very useful to include in the supplementary information a list of which specimens (museum numbers) of which fossil hominins went into the figure in each of the datasets. Sample sizes are so small for many of these, that a single cranium can make a big difference in this computation. The use and quality of different data sets has been a huge issue for this field, which has been bedeviled by small sample sizes, difficulties in dealing with intraspecific variation, and the use of estimated metrics (ECV, body mass) that may be derived in different ways esp. across fossil and extant species. Both ECV and body mass estimates are notoriously variable in hominin paleontology even for individual fossils, let alone in terms of a \"species norm\". This is a general issue that really needs to be discussed for the whole data set, but I would point to one particular point of concern, which would be the source of the Homo sapiens data. From which population or populations, fossil or modern, does this derive? Implications esp. for body size could potentially be a factor in the different modeling results for H.s. vs. Neanderthals, just as the authors point out that unique traits of Gorilla may be a \"byproduct\" of body size change rather than brain change.\n\n4) It is not clear why only a single non-African species \u2013 H. neanderthalensis \u2013 was included in this analysis, when there are many examples of ECV for H. erectus and H. heidelbergensis. If it is to restrict the analysis to evolutionary trajectories that could feasibly have led to modern humans, that is acceptable \u2013 but the authors should explicitly explain these decisions.\n\n5) Similarly, I do not understand why African H. heidelbergensis was not included in this analysis. Is this because its phylogenetic position is poorly-understood, and the authors were restricting themselves to African specimens where there is still debate over the number of Middle Pleistocene species of Homo? At the very least, this omission should be justified. It is a critical link between H. ergaster and H. sapiens.\n\nDiscussion Revisions:\n\n1) The current level of discussion of the results on medulla size evolution should be more explicit about their medulla analyses or just consider de-emphasizing these results. This is because predictions about why medulla volume might vary among primates is elusive. Either the authors should be more explicit about their medulla analyses or just consider de-emphasizing these results.\n\n2) Subsection \u201cEndocranial volume (ECV)\u201d: If the weak OU model provides a better fit and suggests that all primates experienced similar evolutionary trajectories, how does that mesh with the previous result that they show variation among taxa in evolutionary rate? More explanation and interpretation of this result seems warranted.\n\n3) Results of the non-human primates should be more thorough. Given the volume of interesting results, particularly in Table 2, spending more time probing and hypothesizing about individual changes is warranted. Analysis without interpretation and suggestion for future work leaves this section flat. There is some discussion of this here but given the support in the dataset, outlining some potential new specific hypotheses for how primate life history influences brain evolution would make this a much more powerful paper.\n\n4) There are of course many different ways to characterize the \"size\" of the human brain: absolute, relative to body, relative to other brain part, relative to range size, relative to phylogeny, etc. As it stands the discussion seems to imply that our task is simply to select and apply the one correct way, but I suspect/hope the authors would agree that the most appropriate method depends on the question being asked. For example, many studies of comparative cognition suggest we should actually focus on absolute rather than relative brain size whereas the choice to control for body size or phylogeny is also related to certain assumptions and interests. These authors would be very well suited to provide a definitive discussion of this issue that would be a useful touchstone for the field, and would also more clearly articulate the specifically evolutionary (e.g. as opposed to functional) questions their method is optimized to address. Some of this is indirectly reflected in the discussion of the unexpected results for the chimpanzee sub-species and it would be nice to see a more comprehensive treatment.\n",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "60a28344-7ae6-49d8-b552-59af5034767b",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C1",
+      "claim": "Primates vary almost a thousand-fold in endocranial volume, ranging from 1.63 mL in mouse lemurs to 1478 mL in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Primates vary almost a thousand-fold in endocranial volume \u2013 a measure which closely approximates brain size \u2013 ranging from 1.63 mL in mouse lemurs (Isler et al., 2008) to 1478 mL in humans (Robson and Wood, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published data sources (Isler et al., 2008; Robson and Wood, 2008)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "a8617ae4-57ac-40d8-bfcc-ddc81aa9f6d4",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C2",
+      "claim": "Endocranial volume closely approximates brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "Primates vary almost a thousand-fold in endocranial volume \u2013 a measure which closely approximates brain size \u2013 ranging from 1.63 mL in mouse lemurs (Isler et al., 2008) to 1478 mL in humans (Robson and Wood, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about the relationship between endocranial volume and brain size",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "b550366a-fcb4-4952-9e05-0d5e65b63f45",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C3",
+      "claim": "Body size is the most important statistical predictor of brain size across primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Body size is perhaps the most important statistical predictor of brain size across primates, with larger bodied species having larger brains, but substantial variation remains after accounting for the effects of body size (Isler et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Isler et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "96ef84e7-6f65-4e19-bf15-94bb520c6890",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C4",
+      "claim": "Larger bodied primate species have larger brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Body size is perhaps the most important statistical predictor of brain size across primates, with larger bodied species having larger brains, but substantial variation remains after accounting for the effects of body size (Isler et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Isler et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "024a24a6-7591-4d3c-8fa5-d93492d689eb",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C5",
+      "claim": "Substantial variation in brain size remains after accounting for the effects of body size.",
+      "claim_type": "EXPLICIT",
+      "source": "Body size is perhaps the most important statistical predictor of brain size across primates, with larger bodied species having larger brains, but substantial variation remains after accounting for the effects of body size (Isler et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Isler et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "627a2256-c8ce-4a9e-a16d-443a63a195cf",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C6",
+      "claim": "Much less is known about the evolutionary patterns and processes that generated extant variation in brain size within the primate clade compared to ecological, behavioral, and cognitive correlates.",
+      "claim_type": "EXPLICIT",
+      "source": "While numerous comparative studies have sought to identify ecological, behavioral, and cognitive correlates of this variability (Barton, 1999; MacLean et al., 2014; DeCasien et al., 2017; Powell et al., 2017; Noonan et al., 2018), much less is known about the evolutionary patterns and processes that generated extant variation in brain size within the primate clade, how these differ for different components of the brain, or the degree to which the brain phenotypes of particular species, such as humans, are the result of exceptional patterns of evolutionary change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple comparative studies and inference about gaps in knowledge",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "28cd518e-1009-404e-a165-c4c926801eca",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C7",
+      "claim": "The mass of the human brain is only 10% greater than expected for a primate of human body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "One surprising recent result reported from such an analysis is that the mass of the human brain is only 10% greater than expected for a primate of human body mass (Azevedo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Azevedo et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "06049ce4-ec39-4eeb-af62-c47d3b744770",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C8",
+      "claim": "Non-phylogenetic methods may give misleading results because they fail to incorporate trait co-variation among species that results from shared evolutionary history.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such non-phylogenetic methods may give misleading results because they fail to incorporate trait co-variation among species that results from shared evolutionary history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about phylogenetic comparative methods",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "6677b7d8-eee4-454d-90a4-f328bbb1bc36",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C9",
+      "claim": "Valid analysis requires methods that account for phylogeny both when estimating scaling parameters and when evaluating deviations from scaling patterns exhibited by individual species.",
+      "claim_type": "EXPLICIT",
+      "source": "Valid analysis requires methods that account for phylogeny both when estimating scaling parameters and when evaluating deviations from scaling patterns exhibited by individual species (Garland and Ives, 2000; Ross et al., 2004; Organ et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to methodological papers",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "adddf1df-64ca-410b-9535-275833bd7cba",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C10",
+      "claim": "Including the species being investigated in the regression model can introduce error, particularly when the phenotypic trait lies at the extreme of the distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional source of error arises if the species being investigated is included in the regression model (e.g. Azevedo et al., 2009), particularly when, as for humans, the phenotypic trait lies at the extreme of the distribution for the other species in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about statistical methodology with citation to an example",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "a9aa51b9-24a5-49aa-848c-606a97650b68",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C11",
+      "claim": "Including extreme species in regression models would reduce the magnitude of deviations from expected trait values for lineages that have undergone exceptional change.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure would reduce the magnitude of deviations from expected trait values for lineages that have undergone exceptional change, and in the case of humans, would bias the results toward failing to detect uniqueness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about statistical methodology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "cf9da0de-b525-4a70-9a67-537f0816d1e7",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C12",
+      "claim": "Pagel (2002) found that ECV evolution accelerated towards the present in fossil hominins.",
+      "claim_type": "EXPLICIT",
+      "source": "Pagel (2002) estimated phylogenetic scaling parameters to characterize the evolutionary trajectory of endocranial volume (ECV) in fossil hominins. His analyses revealed that ECV evolution accelerated towards the present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pagel (2002)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "744586ee-4f46-4710-8ea7-8c975eb3edb3",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C13",
+      "claim": "Pagel's (2002) analysis did not account for body size, making it unclear to what extent the pattern reflects changes in brain size independent of body size.",
+      "claim_type": "EXPLICIT",
+      "source": "As this analysis did not account for body size, it is not clear to what extent this pattern reflects changes in brain size independent of body size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about limitations of Pagel's (2002) analysis",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "d2af2034-bba2-40e1-a26f-088b188cab00",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C14",
+      "claim": "Montgomery et al. (2010) demonstrated a directional trend in primate brain size evolution using ancestral state reconstruction with fossil data.",
+      "claim_type": "EXPLICIT",
+      "source": "Montgomery et al. (2010) used ancestral state reconstruction with fossil data to demonstrate a directional trend in primate brain size evolution and to identify branches in the primate phylogeny along which exceptional evolutionary change occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Montgomery et al. (2010)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "5a3049a8-43b0-47e0-ae33-de63a085ceaa",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C15",
+      "claim": "Montgomery et al. (2010) found that while the absolute change in the mass of the human brain was exceptional, the rate of change relative to body size was not.",
+      "claim_type": "EXPLICIT",
+      "source": "They found that while the absolute change in the mass of the human brain was exceptional, the rate of change relative to body size was not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Montgomery et al. (2010)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "6f316044-55b0-4550-a3e5-19a69a22d931",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C16",
+      "claim": "Absolute brain volume predicts cognitive ability in primates better than other metrics that account for body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Absolute brain volume has been shown to predict cognitive ability in primates better than other metrics that account for body mass (MacLean et al., 2014; Deaner et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to MacLean et al., 2014 and Deaner et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "9a1e47b6-f5e3-4be5-88aa-2fe3f5a2d4db",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C17",
+      "claim": "Brain size is highly correlated with body size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, brain size is highly correlated with body size (Isler et al., 2008), and as such it is difficult to interpret the significance of brain size alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Isler et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "234f8c68-4fd8-46b6-b271-047766840fd2",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C18",
+      "claim": "Accounting for body mass gives more insights into the significance of brain size in life history processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, accounting for body mass gives more insights into the significance of brain size in life history processes, as relative brain size better approximates relative investment in cognitive ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about the relationship between relative brain size and cognitive investment",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "0c1a9515-82c8-4adf-ae2a-0a2712718a54",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C19",
+      "claim": "Relative brain size better approximates relative investment in cognitive ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, accounting for body mass gives more insights into the significance of brain size in life history processes, as relative brain size better approximates relative investment in cognitive ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about the relationship between relative brain size and cognitive investment",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "36297956-4a77-469c-9f15-7c480538dbf8",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C20",
+      "claim": "The relationship between body mass and brain size is associated with scaling effects that reflect conservation of neural function.",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for body mass is also important as the relationship between this trait and brain size is associated with scaling effects that reflect conservation of neural function, such as preservation of somatosensory acuity across large surface areas (St Wecker and Farel, 1994) and compensation for increased neural conduction distances in larger animals through (i) larger neuron and axon sizes, increased myelination, and increased white matter volume, all of which result in reduced neuron density (Barton, 2012; Wang et al., 2008; Collins et al., 2013) and (ii) increased neural resources devoted to prediction-based sensorimotor control that result from escalating neural conduction delays as body size increases (More et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on neural scaling",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "f3979d2e-691a-4c9b-adcf-d2b3b1accb19",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C21",
+      "claim": "Using relative measures of brain size can bias parameter estimates and is not recommended as good statistical practice.",
+      "claim_type": "EXPLICIT",
+      "source": "Other measures of relative brain size such as encephalization quotients, ratios, and residuals have been used in the past, but all make theoretical assumptions about the underlying relationship between brain and body size evolution that may not hold. Using relative measures can bias parameter estimates and is not recommended as a good statistical practice (Freckleton, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Freckleton, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "dec96629-6371-4962-a471-8acc4342cc6b",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C22",
+      "claim": "It is widely assumed that the neocortex expanded disproportionately relative to other brain structures during the evolution of anthropoid primates and most particularly in human evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely assumed that primate brain size evolution in general, and the large size of the human brain in particular, reflects expansion of the neocortex relative to other brain structures (Kriegstein et al., 2006; Rakic, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kriegstein et al., 2006 and Rakic, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "63e3d9fe-dba9-4164-a540-98853cf284b0",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C23",
+      "claim": "Direct tests of the hypothesis that the neocortex expanded disproportionately in human evolution are lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly however, direct tests of this hypothesis are lacking, despite the focus of much evolutionary and developmental neuroscience on the neocortex as the site of interest for understanding human uniqueness and its developmental mechanisms (Mitchell and Silver, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about gaps in the literature with citation to Mitchell and Silver, 2017",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "66563a60-6cfc-4036-9fd7-cb5104199d1d",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C24",
+      "claim": "The cerebellum underwent rapid evolutionary expansion in the great ape clade including hominins.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence suggests that the cerebellum may have contributed more to human brain evolution than previously appreciated: it underwent rapid evolutionary expansion in the great ape clade including hominins (Barton and Venditti, 2014; Smaers et al., 2018) and has been implicated in shape changes of the brain in hominin fossil endocasts (Kochiyama et al., 2018; Neubauer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barton and Venditti, 2014 and Smaers et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "1a7f20da-8d1d-447e-b6c2-88f56dee7915",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C25",
+      "claim": "The cerebellum has been implicated in shape changes of the brain in hominin fossil endocasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence suggests that the cerebellum may have contributed more to human brain evolution than previously appreciated: it underwent rapid evolutionary expansion in the great ape clade including hominins (Barton and Venditti, 2014; Smaers et al., 2018) and has been implicated in shape changes of the brain in hominin fossil endocasts (Kochiyama et al., 2018; Neubauer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kochiyama et al., 2018 and Neubauer et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "5ec5bb10-d5d2-4ec7-a3da-92958f656314",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C26",
+      "claim": "Changes in protein-coding genes implicated in cerebellar development are more likely to have evolved adaptively in apes than those implicated in neocortical development.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular evidence now corroborates the proposal that selection on cerebellar function was an important feature of hominoid and hominin brain evolution (Sousa et al., 2017), with changes in protein-coding genes implicated in cerebellar development more likely to have evolved adaptively in apes than those implicated in neocortical development (Harrison and Montgomery, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Harrison and Montgomery, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "05774d1c-c15c-4197-88a6-aae8fdbdb9d0",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C27",
+      "claim": "Relative medulla volume does not vary significantly across primate clades.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to body mass, medulla volume has been shown to be much less variable across taxa than other brain structures, particularly compared to the neocortex and cerebellum. For example, unlike neocortex and cerebellum, medulla volume does not differ significantly between insectivores, strepsirrhines and haplorrhines (Barton, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barton, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "77b87bac-3c6d-43af-89a1-0eec00c3d275",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C28",
+      "claim": "The medulla has not been attributed a major role in brain expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative volume of the medulla does not vary significantly across clades (Barton, 2000) and as such it has not been attributed a major role in brain expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from citation to Barton, 2000",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "630ac7bd-689c-49f1-9c8f-39a690200cb9",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C29",
+      "claim": "Female body mass values are more tightly linked to ecological and life-history factors than male values.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that sex specific body mass estimates are available for ancient humans and extinct hominins (Robson and Wood, 2008), we used female values for body mass because female values are more tightly linked to ecological and life-history factors (Gordon, 2006) and sexual selection can drive increases in male body mass unlinked to ecology, obscuring brain-body scaling relationships (Fitzpatrick et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gordon, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "4074956d-b0e2-428e-ad18-8e0d7a8ed726",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C30",
+      "claim": "Sexual selection can drive increases in male body mass unlinked to ecology, obscuring brain-body scaling relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that sex specific body mass estimates are available for ancient humans and extinct hominins (Robson and Wood, 2008), we used female values for body mass because female values are more tightly linked to ecological and life-history factors (Gordon, 2006) and sexual selection can drive increases in male body mass unlinked to ecology, obscuring brain-body scaling relationships (Fitzpatrick et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fitzpatrick et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "88971612-faa5-4be1-9e5b-dfe11160321f",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C31",
+      "claim": "The Brownian model of ECV evolution was favored over the weighted and unweighted predictor OU models when using the hominin phylogeny, with Bayes factors greater than 22.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bayou analysis of ECV predicted by body mass using the hominin phylogeny, the Brownian model was favored over the weighted and unweighted predictor OU models with Bayes factors greater than 22.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "446e962a-8955-4709-9829-36ab1986db25",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C32",
+      "claim": "When using the alternate hominin phylogeny, the un-weighted predictor OU model was favored over the weighted predictor OU model and the Brownian model with Bayes factors greater than 42.",
+      "claim_type": "EXPLICIT",
+      "source": "When we repeated this analysis using the alternate hominin phylogeny, we found that the un-weighted predictor OU model was favored over the weighted predictor OU model and the Brownian model with Bayes factors greater than 42, despite displaying poor convergence in terms of \u03b1 and \u03c32.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis using the alternate phylogeny",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "a303bb1f-f438-4f62-a547-9fd7f1230746",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C33",
+      "claim": "Progressive shifts towards larger ECV relative to body mass were detected within the hominin clade along the human lineage in the un-weighted predictor OU model using the alternate hominin phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, progressive shifts towards larger ECV relative to body mass were detected within the hominin clade along the human lineage (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the bayou analysis and shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "31fc8a84-922d-49db-8316-ea72459528bf",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C34",
+      "claim": "Shifts towards larger relative brain size were detected on the terminal branch leading to D. madagascariensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifts towards larger relative brain size were also detected on the terminal branch leading to D. madagascariensis and the internal branches leading to the Lemuridae and Cebinae, clades, and shifts towards smaller relative brain size were detected on the branch leading to the Alouatta clade, the branch leading to the clade containing the Aotidae and Callitrichidae families, and the branch leading to the Colobinae sub-family (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the bayou analysis and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "d2b1c94e-e5a3-44d5-9a10-7a8eacee3a2b",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C35",
+      "claim": "Shifts towards larger relative brain size were detected on internal branches leading to the Lemuridae and Cebinae clades.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifts towards larger relative brain size were also detected on the terminal branch leading to D. madagascariensis and the internal branches leading to the Lemuridae and Cebinae, clades, and shifts towards smaller relative brain size were detected on the branch leading to the Alouatta clade, the branch leading to the clade containing the Aotidae and Callitrichidae families, and the branch leading to the Colobinae sub-family (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the bayou analysis and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "042895e4-8bd8-4f25-bc1f-8ecbe105f494",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C36",
+      "claim": "Shifts towards smaller relative brain size were detected on the branch leading to the Alouatta clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifts towards larger relative brain size were also detected on the terminal branch leading to D. madagascariensis and the internal branches leading to the Lemuridae and Cebinae, clades, and shifts towards smaller relative brain size were detected on the branch leading to the Alouatta clade, the branch leading to the clade containing the Aotidae and Callitrichidae families, and the branch leading to the Colobinae sub-family (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the bayou analysis and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "b4920281-b3a0-4299-9474-44f3a3f46b8c",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C37",
+      "claim": "Shifts towards smaller relative brain size were detected on the branch leading to the clade containing the Aotidae and Callitrichidae families.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifts towards larger relative brain size were also detected on the terminal branch leading to D. madagascariensis and the internal branches leading to the Lemuridae and Cebinae, clades, and shifts towards smaller relative brain size were detected on the branch leading to the Alouatta clade, the branch leading to the clade containing the Aotidae and Callitrichidae families, and the branch leading to the Colobinae sub-family (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the bayou analysis and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "d341da82-b6a8-4678-99f4-0143a188aad0",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C38",
+      "claim": "Shifts towards smaller relative brain size were detected on the branch leading to the Colobinae sub-family.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifts towards larger relative brain size were also detected on the terminal branch leading to D. madagascariensis and the internal branches leading to the Lemuridae and Cebinae, clades, and shifts towards smaller relative brain size were detected on the branch leading to the Alouatta clade, the branch leading to the clade containing the Aotidae and Callitrichidae families, and the branch leading to the Colobinae sub-family (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the bayou analysis and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "29b444a6-a319-4458-aab7-f30c7bb72c1d",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C39",
+      "claim": "The observed ECV value for H. sapiens exceeded the mean value predicted by BayesModelS by 7.63 standard deviations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the BayesModelS analysis predicting ECV based on body mass while excluding all hominin data, the observed values for H. sapiens and H. neanderthalensis exceeded the mean values predicted by BayesModelS by 7.63 and 6.96 standard deviations respectively (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the BayesModelS analysis shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "bb602c9a-e1b0-4b32-9e89-eb871594919b",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C40",
+      "claim": "The observed ECV value for H. neanderthalensis exceeded the mean value predicted by BayesModelS by 6.96 standard deviations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the BayesModelS analysis predicting ECV based on body mass while excluding all hominin data, the observed values for H. sapiens and H. neanderthalensis exceeded the mean values predicted by BayesModelS by 7.63 and 6.96 standard deviations respectively (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the BayesModelS analysis shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "55441119-e38c-4194-93c0-93cf472e771e",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C41",
+      "claim": "All hominin species were strongly supported positive outliers, with more than 99.9% of predictions falling below the observed values for ECV.",
+      "claim_type": "EXPLICIT",
+      "source": "All hominin species were strongly supported positive outliers, with more than 99.9% of predictions falling below the observed values for ECV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the BayesModelS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "d6d01829-e422-4df8-b929-d4bb2a2d10a9",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C42",
+      "claim": "The mean ECV prediction for a primate with the body mass of H. sapiens was 438 mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean ECV prediction for a primate with the body mass of H. sapiens was 438 mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the BayesModelS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "0ce0bf95-2b09-4a79-b795-cb7c71dd3ead",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C43",
+      "claim": "The observed ECV value for humans (1478 mL) is 238% greater than the mean of the predicted posterior distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the observed value for humans is 1478 mL, which is 238% greater than the mean of the predicted posterior distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the BayesModelS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "3d803603-4fb0-48f5-8f76-00b23dd2c254",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C44",
+      "claim": "The observed ECV for H. neanderthalensis exceeded the mean predicted value for a primate of their body mass by 952 mL, or 201%.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar result was found for H. neanderthalensis; the observed ECV for this species exceeded the mean predicted value for a primate of their body mass by 952 mL, or 201%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the BayesModelS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "d1da7309-62d3-4618-b6a6-684bf3b8c32e",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C45",
+      "claim": "Humans exceeded their predicted ECV by the greatest percentage among hominins.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans exceeded their predicted ECV by the greatest percentage, but all hominins exceeded predictions by at least 51% (Figure 2C, Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the BayesModelS analysis shown in Figure 2C and Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "71a420e2-ba14-4c48-a145-c6a32fe0c02b",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C46",
+      "claim": "All hominins exceeded ECV predictions by at least 51%.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans exceeded their predicted ECV by the greatest percentage, but all hominins exceeded predictions by at least 51% (Figure 2C, Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the BayesModelS analysis shown in Figure 2C and Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "3918b4aa-a63a-4cff-8a7f-93636a0f9698",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C47",
+      "claim": "Humans were identified as strongly supported positive outliers for ECV when each species in the data set was iteratively predicted.",
+      "claim_type": "EXPLICIT",
+      "source": "When we iteratively predicted ECV based on body mass and phylogeny for each species in the data set (no hominins besides H. sapiens and H. neanderthalensis were included in this analysis) and while using all data to generate predictions. We again found that humans were strongly supported positive outliers (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the BayesModelS analysis shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "1492f5db-2d2c-48c8-987d-ee52de4e5327",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C48",
+      "claim": "H. neanderthalensis was not identified as an outlier when H. sapiens was included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "H. neanderthalensis was not identified as an outlier, perhaps because these analyses included all species except for the one being predicted, and thus inclusion of H. sapiens resulted in a wide posterior distribution when predicting ECV in H. neanderthalensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the BayesModelS analysis with inference about the cause",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "95cba95f-bce9-48cf-ac8c-ce3c37860b5d",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C49",
+      "claim": "When H. sapiens was excluded from the analysis, H. neanderthalensis was identified as a strongly supported positive outlier.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we excluded H. sapiens in this analysis we found that H. neanderthalensis was identified as a strongly supported positive outlier (Source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the BayesModelS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "04d6d956-5a43-4d98-bfc8-b659bcf5e68a",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C50",
+      "claim": "The directional acceleration model (AICc = \u221223.38) was favored over the acceleration (AICc = \u221221.93), directional (AICc = \u221217.56), and Brownian (AICc = \u221214.58) evolution models for brain size deviation.",
+      "claim_type": "EXPLICIT",
+      "source": "The analyses revealed evidence for both accelerated evolution of brain size deviation and directional evolution towards larger brain size deviations, as indicated by the directional acceleration model (AICc = \u221223.38) being favored over the acceleration (AICc = \u221221.93), directional (AICc = \u221217.56), and Brownian (AICc = \u221214.58) evolution models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the PGLS analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "41837a82-50e0-4ab7-98c0-8996f93acbac",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C51",
+      "claim": "There was evidence of directional evolution towards larger brain size relative to body size (slope = 0.04) over time in the directional acceleration model.",
+      "claim_type": "EXPLICIT",
+      "source": "In this best model, there was evidence of directional evolution towards larger brain size relative to body size (slope = 0.04) over time, and of accelerating evolution (\u03b4 = 8.36).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the PGLS analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "8897ac84-4c5e-4d2c-91f7-b3c691f6d300",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C52",
+      "claim": "There was evidence of accelerating evolution (\u03b4 = 8.36) in the directional acceleration model.",
+      "claim_type": "EXPLICIT",
+      "source": "In this best model, there was evidence of directional evolution towards larger brain size relative to body size (slope = 0.04) over time, and of accelerating evolution (\u03b4 = 8.36).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the PGLS analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "a6ae2cec-7c88-457b-b227-badd79a1e041",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C53",
+      "claim": "The Brownian motion model was strongly favored over the weighted and unweighted predictor OU models for neocortex volume predicted by body mass, with Bayes factors > 18.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bayou analysis of neocortex volume as predicted by body mass, the Brownian motion model was strongly favored over the weighted and unweighted predictor OU models, with Bayes factors > 18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "f48dd2ef-789f-4ce8-b80d-7a650965b2b9",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C54",
+      "claim": "Humans were detected as strongly supported positive outliers for neocortex volume when body mass was used as the predictor variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans were detected as strongly supported positive outliers for neocortex volume by BayesModelS when body mass was used as the predictor variable (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the BayesModelS analysis shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "3bfeead2-bf77-4c77-be7e-014653b27dc5",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C55",
+      "claim": "The weighted predictor model was selected over the unweighted predictor and Brownian motion models for neocortex volume with 'rest-of-brain' as the predictor variable, with Bayes Factors > 9.2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bayou analysis of neocortex volume with 'rest-of-brain' as the predictor variable, the weighted predictor model was selected over the unweighted predictor and Brownian motion models with Bayes Factors > 9.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "9a065f59-a48b-475d-88b7-7cffc1878970",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C56",
+      "claim": "Different scaling patterns for neocortex volume were detected for strepsirrhines and haplorhines, with the optimum regression line for haplorhines falling above that of strepsirrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "In the weighted predictor model, different scaling patterns were detected for strepsirrhines and haplorhines, with the optimum regression line for haplorhines falling above that of strepsirrhines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "d3be9a22-a6e4-49a5-8464-f2a51a5bf0c3",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C57",
+      "claim": "A transition in neocortex scaling occurred on the terminal branch leading to Nasalis larvatus, indicating a shift towards lower relative neocortex size.",
+      "claim_type": "EXPLICIT",
+      "source": "The only other detected transition in scaling occurred on the terminal branch leading to Nasalis larvatus, indicating a shift towards lower relative neocortex size (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the bayou analysis shown in Figure 5A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "90951e29-c1ad-4b8f-9a71-604256b082eb",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C58",
+      "claim": "The Brownian motion model was favored over the weighted predictor and unweighted predictor OU models for cerebellar volume predicted by body mass, with Bayes factors of 11.96 and 22.79, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bayou analysis of cerebellar volume predicted by body mass, the Brownian motion model was favored over the weighted predictor and unweighted predictor OU models, with Bayes factors of 11.96 and 22.79, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "b4648bc9-d255-4ff9-83f4-de8a5860a659",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C59",
+      "claim": "Humans were identified as strongly supported positive outliers for cerebellum volume when body mass was used as the predictor variable.",
+      "claim_type": "EXPLICIT",
+      "source": "BayesModelS identified humans as strongly supported positive outliers for cerebellum volume when body mass was used as the predictor variable (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the BayesModelS analysis shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "fa096027-da7d-459e-bee7-416fe1b4f547",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C60",
+      "claim": "For cerebellum volume relative to the rest-of-brain, the OU models clearly outperform the Brownian model, but neither OU model performs significantly better than the other.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bayou analysis of cerebellum volume relative to the rest-of-brain, the comparison between the unweighted predictor model and the Brownian motion model gave a Bayes factor of 10.65, while the comparison between the unweighted and weighted predictor models gave a Bayes factor of 0.20. This indicates that the OU models clearly outperform the Brownian model, but that neither OU model performs significantly better than the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "3163667c-255f-4c13-8680-7dbbb42350cf",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C61",
+      "claim": "Both OU models detected a shift on the branch leading to apes associated with an increase in optimum cerebellar volume relative to the 'rest-of-brain' volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Both OU models detected a shift on the branch leading to apes associated with an increase in optimum cerebellar volume relative to the 'rest-of-brain' volume (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the bayou analysis shown in Figure 5C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "5bf528bc-4753-4ae9-944f-f522bc96883e",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C62",
+      "claim": "The Brownian motion model was selected over the two OU models for medulla volume predicted by body mass, with Bayes factors > 7.4.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bayou analysis of medulla volume predicted by body mass, the Brownian motion model was selected over the two OU models with Bayes factors > 7.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "f20a66f3-f2f0-4f47-9edb-f8b04df88135",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C63",
+      "claim": "Humans were identified as strongly supported positive outliers for medulla volume relative to body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "BayesModelS identified humans as strongly supported positive outliers for medulla volume (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the BayesModelS analysis shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "bc13b8a6-b298-46c3-aeca-eadf1fa26a8f",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C64",
+      "claim": "When medulla was predicted by the 'rest-of-brain' volume, the Brownian motion model was again selected over the OU models, with Bayes factors > 3.8.",
+      "claim_type": "EXPLICIT",
+      "source": "When medulla was predicted by the 'rest-of-brain' volume, the Brownian motion model was again selected over the OU models, with Bayes factors > 3.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "42205e73-b609-486f-b047-473b6db3fd15",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C65",
+      "claim": "Humans were identified as strongly supported negative outliers for medulla volume relative to the rest of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans were identified as strongly supported negative outliers (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the BayesModelS analysis shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "9bf7fbdf-8f05-4bf0-ac16-3a914b36b06c",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C66",
+      "claim": "The OU models were selected over the Brownian motion model for the rest-of-brain relative to body mass, with Bayes factors > 13.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bayou analyses of the rest-of-brain relative to body mass, the OU models were selected over the Brownian motion model, with Bayes factors > 13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the bayou analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "15c9136d-caa9-4399-991e-f32ca2d07f31",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C67",
+      "claim": "No shifts were detected in either OU model for the rest-of-brain relative to body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "No shifts were detected in either model (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the bayou analysis shown in Figure 5E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "1f864558-e134-42b0-8a45-d6b885d33072",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C68",
+      "claim": "The human brain is 238% larger than the size expected for a primate of similar body mass and phylogenetic position.",
+      "claim_type": "EXPLICIT",
+      "source": "Our phylogenetic analyses revealed that the human brain is 238% larger than the size expected for a primate of similar body mass and phylogenetic position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "79c395d4-db00-40dc-8520-838c37262bdb",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C69",
+      "claim": "The exceptional size of the human brain was achieved through progressive scaling shifts towards larger size over several million years of hominin evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The exceptional size of the human brain was achieved through progressive scaling shifts towards larger size over several million years of hominin evolution, and the evolution towards increased brain size relative to expectations based on primate scaling patterns accelerated over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "4c86fc44-011f-4d89-beb6-bc20b1ddff08",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C70",
+      "claim": "The evolution towards increased brain size relative to expectations based on primate scaling patterns accelerated over time in hominins.",
+      "claim_type": "EXPLICIT",
+      "source": "The exceptional size of the human brain was achieved through progressive scaling shifts towards larger size over several million years of hominin evolution, and the evolution towards increased brain size relative to expectations based on primate scaling patterns accelerated over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "8d8909c8-0456-4aca-9d45-8e2926f5eb09",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C71",
+      "claim": "Du et al. (2018) obtained the best fit for a gradualism model when fitting six evolutionary models to within- and between-lineage change in hominin brain sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Du et al. (2018) fit six evolutionary models to within- and between-lineage change in hominin brain sizes (random walk, gradualism, stasis, punctuated equilibrium, stasis-random walk and stasis-gradualism), obtaining the best fit for a gradualism model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Du et al. (2018)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "e255e307-ab55-453a-bd80-8fa287b0af50",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C72",
+      "claim": "Du et al.'s (2018) non-phylogenetic analysis did not test explicitly for accelerating directional increase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their non-phylogenetic analysis did not test explicitly for accelerating directional increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference about limitations of Du et al.'s (2018) analysis",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "3d8e8a62-0d71-4faa-ba5d-86cde8bb93c2",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C73",
+      "claim": "The pattern of accelerating brain size increase is consistent with hypotheses that postulate a co-evolutionary positive feedback process driving human brain evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of accelerating brain size increase documented here is consistent with hypotheses that postulate a co-evolutionary positive feedback process driving human brain evolution, such as feedback between brain size and culture or language (Wills, 1993; Deacon, 1998) or between the brain sizes of conspecifics engaged in a socio-cognitive evolutionary arms race (Dunbar, 1998; Miller, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference connecting the data to existing hypotheses with citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "fdcc7284-091d-419b-85bf-d21bb837b49c",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C74",
+      "claim": "Anatomically modern humans were closely matched in brain size by H. neanderthalensis.",
+      "claim_type": "EXPLICIT",
+      "source": "While humans clearly have the largest relative brain size among extant primates, anatomically modern humans were closely matched by H. neanderthalensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "c15beed5-18f7-4ca4-bad2-998822e51932",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C75",
+      "claim": "Even when accounting for the close phylogenetic relationship between humans and H. neanderthalensis and the exceptionally large brain of the latter, the human brain is still much larger than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even when accounting for the close phylogenetic relationship between humans and H. neanderthalensis and the exceptionally large brain of the latter, the human brain is still much larger than expected: humans were identified as strongly supported outliers when their ECV (relative to body mass) was predicted by phenotypic data from all primates, including H. neanderthalensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the BayesModelS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "f6d8465e-1dfa-4478-8b8b-6ec1d207dcbb",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C76",
+      "claim": "Human neocortical volume was exceptionally large relative to body mass, but not exceptional relative the volume of the rest of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results contradict this assumption: human neocortical volume was exceptionally large relative to body mass, but not exceptional relative the volume of the rest of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "2cc962e0-cb06-4d87-9cc6-1d2169f4eec4",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C78",
+      "claim": "The shift in neocortex size at the origin of haplorrhines may be related to the visual specializations of haplorrhines for high-acuity photic vision.",
+      "claim_type": "EXPLICIT",
+      "source": "This shift may be related to the visual specializations of haplorrhines for high-acuity photic vision, mediated by extensive cortical visual areas that make up over 50% of the cortex in these species (Drury et al., 1996; Barton, 1998; Barton, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation with citations to supporting literature",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "21549172-36a4-48f4-81aa-bfc85bb685c8",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C79",
+      "claim": "On branches postdating the split between haplorrhines and strepsirrhines, neocortex size is largely predictable from its scaling relationship to the rest of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "On branches postdating the split between haplorrhines and strepsirrhines, neocortex size is largely predictable from its scaling relationship to the rest of the brain, in line with the proposed importance of cortical-subcortical connectivity in primate brain evolution (Whiting and Barton, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "22a9e31d-3fb0-4687-b0db-840c14fcee13",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C80",
+      "claim": "The cerebellum increased in size relative to the rest of the brain on the branch leading to apes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that the cerebellum increased in size relative to the rest of the brain on the branch leading to apes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "9f1ad4d1-49d5-4f9c-be99-838489753f3c",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C81",
+      "claim": "The finding that the cerebellum increased in size in apes is consistent with recent studies implicating the cerebellum in brain expansion in apes and some other mammalian lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the results of recent studies implicating the cerebellum, and especially the lateral cerebellum, in brain expansion in apes and some other mammalian lineages (Barton and Venditti, 2014; Smaers et al., 2018; MacLeod et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "ce6a63c2-6267-493b-be5e-a2b21ac7cc27",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C82",
+      "claim": "The fact that shifts in the relative size of neocortex and cerebellum occurred on different parts of the tree supports the theory of mosaic brain evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that shifts in the relative size of neocortex and cerebellum occurred on different parts of the tree supports the theory of mosaic brain evolution (Barton and Harvey, 2000) and suggests that no single adaptive hypothesis is likely to be capable of accounting for primate brain evolution; rather, different selection pressures, on different information-processing capacities, likely operated at different times on different lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the data with citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "5041d566-46a1-47fc-9ccd-3e0a83e5fb23",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C83",
+      "claim": "No single adaptive hypothesis is likely to be capable of accounting for primate brain evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that shifts in the relative size of neocortex and cerebellum occurred on different parts of the tree supports the theory of mosaic brain evolution (Barton and Harvey, 2000) and suggests that no single adaptive hypothesis is likely to be capable of accounting for primate brain evolution; rather, different selection pressures, on different information-processing capacities, likely operated at different times on different lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "e793857c-2a0f-4ae7-a97e-72c9dd2ac14d",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C84",
+      "claim": "Different selection pressures, on different information-processing capacities, likely operated at different times on different lineages in primate brain evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that shifts in the relative size of neocortex and cerebellum occurred on different parts of the tree supports the theory of mosaic brain evolution (Barton and Harvey, 2000) and suggests that no single adaptive hypothesis is likely to be capable of accounting for primate brain evolution; rather, different selection pressures, on different information-processing capacities, likely operated at different times on different lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "a4987864-f14e-4e71-beac-396282e715c3",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C85",
+      "claim": "The medulla expanded in humans relative to body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we found that the medulla expanded in humans (positive outlier status for medulla volume relative to body mass), but to a lesser degree than other structures (negative outlier status for medulla volume relative to the rest of the brain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "8a5abc26-65e6-4a22-83e5-bae617380897",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C86",
+      "claim": "The medulla expanded to a lesser degree than other brain structures in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we found that the medulla expanded in humans (positive outlier status for medulla volume relative to body mass), but to a lesser degree than other structures (negative outlier status for medulla volume relative to the rest of the brain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "f881b624-068e-45ec-859a-311cb235c0a1",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C87",
+      "claim": "After controlling for either body mass or brain size, the evolution of the medulla was not modulated by selection towards a stationary optimum in the primate clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that after controlling for either body mass or brain size, the evolution of the medulla was not modulated by selection towards a stationary optimum in the primate clade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "c50d9ddc-54f6-4ea3-b2ac-cf7546e91365",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C88",
+      "claim": "Scaling constraints related to connectivity with other brain regions was less critical for the medulla than for the neocortex and cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further support mosaic brain evolution (Barton and Harvey, 2000), and also suggest that scaling constraints related to connectivity with other brain regions (Montgomery et al., 2016) was less critical for the medulla than for the neocortex and cerebellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the data with citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "20d89ee2-b18d-4743-aa82-d1ebae3d6f66",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C89",
+      "claim": "Only humans showed exceptional brain evolution for multiple brain components among primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Several non-human primate species exhibited exceptional brain evolution in one trait or another, but only humans showed exceptional brain evolution for multiple brain components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "71fa4286-9775-4f6b-b54f-7c1c432141a7",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C90",
+      "claim": "Large brain size in Daubentonia and Cebinae has been attributed to extractive foraging and tool use.",
+      "claim_type": "EXPLICIT",
+      "source": "Large brain size in Daubentonia and Cebinae has been attributed to extractive foraging and tool use (Kaufman, 2005; Melin et al., 2014; Parker, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on Daubentonia and Cebinae",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "6fa05b79-877d-4d6a-961c-450fbcdf849c",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C91",
+      "claim": "Two Gorilla species exhibit a smaller brain or neocortex size relative to body mass than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that two Gorilla species exhibit a smaller brain or neocortex size relative to body mass than expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "8fda94ae-e960-46dc-ad27-8468efe0a4ac",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C92",
+      "claim": "The unique traits in Gorilla species may be the byproduct of a body mass increase rather than a reduction in brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the extremely large body mass of Gorilla species, these unique traits may be the byproduct of a body mass increase rather than a reduction in brain size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about the cause of the observed pattern",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "7e11fe91-03e0-4695-93f8-7d80ad9762da",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C93",
+      "claim": "Two Pan troglodytes sub-species were found to have exceptionally large and small ECV relative to body mass respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Also unexpectedly, two Pan troglodytes sub-species were found to have exceptionally large and small ECV relative to body mass respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "d842f0a3-fbb3-470b-aae8-ba953888aa0c",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C94",
+      "claim": "A distinct shift in brain-body scaling occurred as hominins diverged from other primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Bayesian phylogenetic comparative methods and data for both extant and fossil species, we identified that a distinct shift in brain-body scaling occurred as hominins diverged from other primates, and again as humans and Neanderthals diverged from other hominins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "828b64e5-a4e9-4a59-ac78-f9d8c8766520",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C95",
+      "claim": "A distinct shift in brain-body scaling occurred as humans and Neanderthals diverged from other hominins.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Bayesian phylogenetic comparative methods and data for both extant and fossil species, we identified that a distinct shift in brain-body scaling occurred as hominins diverged from other primates, and again as humans and Neanderthals diverged from other hominins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "6194013b-0cbe-46fc-8d18-e991392a04e0",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C96",
+      "claim": "Within hominins, a pattern of directional and accelerating evolution towards larger brains was detected, consistent with a positive feedback process in the evolution of the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Within hominins, we detected a pattern of directional and accelerating evolution towards larger brains, consistent with a positive feedback process in the evolution of the human brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "45ac95db-598e-4c81-816f-3a052faeb3a9",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C97",
+      "claim": "The human neocortex is not exceptionally large relative to other brain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to widespread assumptions, we found that the human neocortex is not exceptionally large relative to other brain structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "fef52593-7d45-46cc-b8e2-52c1ab7dd753",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C98",
+      "claim": "A single increase in relative neocortex volume occurred at the origin of haplorrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our analyses revealed a single increase in relative neocortex volume at the origin of haplorrhines, and an increase in relative cerebellar volume in apes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "181443ca-43e1-4b28-8e76-0abef2105e82",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "claim_id": "C99",
+      "claim": "An increase in relative cerebellar volume occurred in apes.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our analyses revealed a single increase in relative neocortex volume at the origin of haplorrhines, and an increase in relative cerebellar volume in apes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The human brain is 238% larger than expected for a primate of similar body mass and phylogenetic position. All hominin species were strongly supported positive outliers, with H. sapiens exceeding predictions by 7.63 standard deviations and H. neanderthalensis by 6.96 standard deviations. Even when accounting for the close phylogenetic relationship with H. neanderthalensis, humans remain exceptional outliers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C47 and C68, C75 provide converging evidence from BayesModelS analyses using phylogenetically-controlled methods. The statistical support is strong (>99.9% of predictions below observed values), and the finding is robust across different analytical approaches. The magnitude of deviation (238% larger than expected) is substantial and well-quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "4106d167-6f45-411a-87c3-4f7a160037e3",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Progressive shifts towards larger brain size relative to body mass occurred along the human lineage within hominins, with evolution showing both directional increase (slope = 0.04) and acceleration (\u03b4 = 8.36). Distinct shifts in brain-body scaling occurred at the hominin-primate divergence and at the human-Neanderthal divergence from other hominins. Additional shifts were detected in other primate lineages including increases in Lemuridae and Cebinae, and decreases in Alouatta and Colobinae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 and C50-C52 are supported by bayou OU model analyses and PGLS model comparisons showing the directional acceleration model was favored (AICc = -23.38). Claims C69-C70 and C94-C96 synthesize these findings. The convergence of multiple analytical approaches (OU models, PGLS with \u03b4 transformation) strengthens the conclusion. However, C32 notes convergence issues with \u03b1 and \u03c3\u00b2 parameters in one phylogeny, though shift detection remained consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "1c74080c-5c22-4f0a-9f36-6155a08bbca0",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Human neocortex volume is exceptionally large relative to body mass but not relative to the rest of the brain. A single shift in neocortex scaling occurred at the origin of haplorrhines, with different scaling patterns detected between strepsirrhines and haplorrhines. No exceptional neocortex expansion occurred specifically in the human lineage relative to other brain structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by bayou analyses (Bayes factors > 18 for Brownian model vs. OU models when predicting from body mass; Bayes factors > 9.2 for weighted predictor model when predicting from rest-of-brain). Claims C76, C97-C98 synthesize these findings. This contradicts widespread assumptions (C22) but is well-supported by the data. The finding that humans are outliers for neocortex vs. body mass (C54) but not vs. rest-of-brain is internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "e7580a0c-e294-47e8-9c0e-27a6de659495",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Human cerebellum volume is exceptionally large relative to body mass. A shift towards increased cerebellar volume relative to rest-of-brain occurred on the branch leading to apes. OU models outperformed Brownian models for cerebellum evolution relative to rest-of-brain (Bayes factor 10.65), though weighted and unweighted OU models performed similarly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are supported by bayou analyses with clear Bayes factors (11.96 and 22.79 favoring Brownian over OU models for body mass prediction; 10.65 favoring OU over Brownian for rest-of-brain prediction). Claims C80 and C99 synthesize these findings. The detection of a shift at the ape branch (C61) is consistent across both OU models, strengthening confidence despite model ambiguity (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "fafa97d8-af31-410c-8f6b-301cbe52fd31",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The medulla expanded in humans relative to body mass (positive outlier status) but to a lesser degree than other brain structures (negative outlier status relative to rest-of-brain). Medulla evolution was not modulated by selection towards a stationary optimum, with Brownian models favored over OU models (Bayes factors > 7.4 for body mass, > 3.8 for rest-of-brain).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 and C85-C87 are supported by consistent bayou and BayesModelS analyses. The finding that humans are positive outliers for medulla vs. body mass but negative outliers vs. rest-of-brain is internally consistent and indicates differential expansion. The Brownian model preference indicates lack of stabilizing selection, consistent with prior literature (C27-C28).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "4c07d783-281b-4bdc-979c-18f25ba71755",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For rest-of-brain volume relative to body mass, OU models were selected over Brownian models (Bayes factors > 13), but no shifts in scaling regime were detected in either OU model across the primate phylogeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by bayou analyses with clear Bayes factors. The absence of detected shifts despite OU model preference suggests stabilizing selection without regime changes. This serves as a control showing that the method can distinguish between evolution with and without shifts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "23cca912-6b38-41d1-86a1-43d30bf184d5",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The differential timing of shifts in neocortex (at haplorrhine origin) and cerebellum (at ape origin) supports mosaic brain evolution theory. This suggests no single adaptive hypothesis can account for primate brain evolution; rather, different selection pressures on different information-processing capacities operated at different times on different lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 and C88 represent valid inferences from the empirical findings about neocortex (C56, C98) and cerebellum (C61, C99) shifts occurring on different phylogenetic branches. The mosaic pattern is directly demonstrated by the data. However, these are interpretive claims about evolutionary process rather than direct empirical observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "c6c452e8-5484-480b-bc69-111aa07ae665",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Model selection between Brownian and OU models for ECV evolution was sensitive to phylogeny choice. Using the hominin phylogeny, the Brownian model was favored (Bayes factors > 22), while using the alternate hominin phylogeny, the unweighted predictor OU model was favored (Bayes factors > 42), though with poor convergence for \u03b1 and \u03c3\u00b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C32 reveal methodological sensitivity to phylogenetic assumptions. The poor convergence noted in C32 for \u03b1 and \u03c3\u00b2 parameters raises concerns about parameter identifiability, though shift detection remained consistent. The authors acknowledge this issue but argue shift identification is robust. This uncertainty affects confidence in the specific evolutionary model but not the broader pattern of shifts along the human lineage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "c66661c7-c7f8-417d-90d8-a0201bb833c7",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Several non-human primate species showed exceptional brain evolution for individual traits, but only humans showed exceptional evolution across multiple brain components. Large brain size in Daubentonia and Cebinae has been attributed to extractive foraging and tool use. Two Gorilla species and two Pan troglodytes subspecies showed unexpected patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is supported by the comprehensive analyses across multiple brain structures. Claims C90-C93 identify specific species with exceptional patterns. However, C92 is speculative about Gorilla patterns being byproducts of body mass increase. The Pan troglodytes subspecies finding (C93) may reflect methodological artifacts as the authors note sister taxa deviating in opposite directions could both be identified as outliers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "e886a8ce-b060-4984-bc02-02d1165292a0",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Non-phylogenetic methods may give misleading results by failing to incorporate trait covariation from shared evolutionary history. Valid analysis requires phylogenetic methods for both estimating scaling parameters and evaluating deviations. Including the species being investigated in regression models can introduce error, especially for extreme phenotypes. Using relative measures like encephalization quotients can bias parameter estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 and C21 represent established methodological principles in phylogenetic comparative methods, supported by citations to methodological literature (Garland and Ives, 2000; Ross et al., 2004; Organ et al., 2011; Freckleton, 2002). These claims justify the analytical approach but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "cb0ecf66-ae90-40cf-a8ec-3ceed0159caf",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work by Azevedo et al. (2009) found human brain mass only 10% greater than expected, but this used non-phylogenetic methods. Pagel (2002) found accelerating ECV evolution in hominins but did not account for body size. Montgomery et al. (2010) found exceptional absolute change in human brain mass but not exceptional rate of change relative to body size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C13, and C15 accurately represent prior work based on the cited sources. These provide context for the current study's findings and highlight how methodological choices (phylogenetic vs. non-phylogenetic, accounting for body size) affect conclusions. The current study's findings (238% larger than expected) differ substantially from Azevedo et al.'s 10% estimate, likely due to methodological improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "af7509c6-f9d3-430e-ae83-15fb89458e17",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The pattern of accelerating brain size increase is consistent with hypotheses postulating co-evolutionary positive feedback processes driving human brain evolution, such as feedback between brain size and culture/language or socio-cognitive evolutionary arms races.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 represents a valid inference connecting the empirical finding of accelerating evolution (C50-C52) to existing theoretical frameworks. However, this is interpretive rather than a direct test of these hypotheses. The data are consistent with but do not prove these specific mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "b4fed773-c480-4db1-87dc-b25018b41e87",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "H. neanderthalensis was not identified as an outlier when H. sapiens was included in the analysis, but was identified as a strongly supported positive outlier when H. sapiens was excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 demonstrate the sensitivity of outlier detection to which species are included in the analysis. This is methodologically important and the authors provide a reasonable explanation (inclusion of H. sapiens creates wide posterior distribution). This supports their decision to exclude all hominins when testing hominin outlier status.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    },
+    {
+      "id": "5fee4f29-93d2-4082-9690-d8f471c6825f",
+      "content_id": "8381b4e3-c33b-43f0-b914-0c8523e8690a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The shift in neocortex size at the origin of haplorrhines may be related to visual specializations for high-acuity photic vision, mediated by extensive cortical visual areas that make up over 50% of cortex in these species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 is explicitly speculative ('may be related') and represents a hypothesis rather than a tested conclusion. While supported by citations to relevant literature on haplorrhine visual systems, this functional interpretation of the neocortex shift is not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:25:21.338277Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "29b444a6-a319-4458-aab7-f30c7bb72c1d",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "bb602c9a-e1b0-4b32-9e89-eb871594919b",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "55441119-e38c-4194-93c0-93cf472e771e",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "d6d01829-e422-4df8-b929-d4bb2a2d10a9",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "0ce0bf95-2b09-4a79-b795-cb7c71dd3ead",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "3d803603-4fb0-48f5-8f76-00b23dd2c254",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "d1da7309-62d3-4618-b6a6-684bf3b8c32e",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "71a420e2-ba14-4c48-a145-c6a32fe0c02b",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "3918b4aa-a63a-4cff-8a7f-93636a0f9698",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "1f864558-e134-42b0-8a45-d6b885d33072",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "c15beed5-18f7-4ca4-bad2-998822e51932",
+      "result_id": "c5511fc7-7bd1-4ebf-97ed-b75b0169578d"
+    },
+    {
+      "claim_id": "a303bb1f-f438-4f62-a547-9fd7f1230746",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "31fc8a84-922d-49db-8316-ea72459528bf",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "d2b1c94e-e5a3-44d5-9a10-7a8eacee3a2b",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "042895e4-8bd8-4f25-bc1f-8ecbe105f494",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "b4920281-b3a0-4299-9474-44f3a3f46b8c",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "d341da82-b6a8-4678-99f4-0143a188aad0",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "04d6d956-5a43-4d98-bfc8-b659bcf5e68a",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "41837a82-50e0-4ab7-98c0-8996f93acbac",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "8897ac84-4c5e-4d2c-91f7-b3c691f6d300",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "79c395d4-db00-40dc-8520-838c37262bdb",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "4c86fc44-011f-4d89-beb6-bc20b1ddff08",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "d842f0a3-fbb3-470b-aae8-ba953888aa0c",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "828b64e5-a4e9-4a59-ac78-f9d8c8766520",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "6194013b-0cbe-46fc-8d18-e991392a04e0",
+      "result_id": "4106d167-6f45-411a-87c3-4f7a160037e3"
+    },
+    {
+      "claim_id": "a6ae2cec-7c88-457b-b227-badd79a1e041",
+      "result_id": "1c74080c-5c22-4f0a-9f36-6155a08bbca0"
+    },
+    {
+      "claim_id": "f48dd2ef-789f-4ce8-b80d-7a650965b2b9",
+      "result_id": "1c74080c-5c22-4f0a-9f36-6155a08bbca0"
+    },
+    {
+      "claim_id": "3bfeead2-bf77-4c77-be7e-014653b27dc5",
+      "result_id": "1c74080c-5c22-4f0a-9f36-6155a08bbca0"
+    },
+    {
+      "claim_id": "9a065f59-a48b-475d-88b7-7cffc1878970",
+      "result_id": "1c74080c-5c22-4f0a-9f36-6155a08bbca0"
+    },
+    {
+      "claim_id": "d3be9a22-a6e4-49a5-8464-f2a51a5bf0c3",
+      "result_id": "1c74080c-5c22-4f0a-9f36-6155a08bbca0"
+    },
+    {
+      "claim_id": "f6d8465e-1dfa-4478-8b8b-6ec1d207dcbb",
+      "result_id": "1c74080c-5c22-4f0a-9f36-6155a08bbca0"
+    },
+    {
+      "claim_id": "45ac95db-598e-4c81-816f-3a052faeb3a9",
+      "result_id": "1c74080c-5c22-4f0a-9f36-6155a08bbca0"
+    },
+    {
+      "claim_id": "fef52593-7d45-46cc-b8e2-52c1ab7dd753",
+      "result_id": "1c74080c-5c22-4f0a-9f36-6155a08bbca0"
+    },
+    {
+      "claim_id": "90951e29-c1ad-4b8f-9a71-604256b082eb",
+      "result_id": "e7580a0c-e294-47e8-9c0e-27a6de659495"
+    },
+    {
+      "claim_id": "b4648bc9-d255-4ff9-83f4-de8a5860a659",
+      "result_id": "e7580a0c-e294-47e8-9c0e-27a6de659495"
+    },
+    {
+      "claim_id": "fa096027-da7d-459e-bee7-416fe1b4f547",
+      "result_id": "e7580a0c-e294-47e8-9c0e-27a6de659495"
+    },
+    {
+      "claim_id": "3163667c-255f-4c13-8680-7dbbb42350cf",
+      "result_id": "e7580a0c-e294-47e8-9c0e-27a6de659495"
+    },
+    {
+      "claim_id": "22a9e31d-3fb0-4687-b0db-840c14fcee13",
+      "result_id": "e7580a0c-e294-47e8-9c0e-27a6de659495"
+    },
+    {
+      "claim_id": "181443ca-43e1-4b28-8e76-0abef2105e82",
+      "result_id": "e7580a0c-e294-47e8-9c0e-27a6de659495"
+    },
+    {
+      "claim_id": "5bf528bc-4753-4ae9-944f-f522bc96883e",
+      "result_id": "fafa97d8-af31-410c-8f6b-301cbe52fd31"
+    },
+    {
+      "claim_id": "f20a66f3-f2f0-4f47-9edb-f8b04df88135",
+      "result_id": "fafa97d8-af31-410c-8f6b-301cbe52fd31"
+    },
+    {
+      "claim_id": "bc13b8a6-b298-46c3-aeca-eadf1fa26a8f",
+      "result_id": "fafa97d8-af31-410c-8f6b-301cbe52fd31"
+    },
+    {
+      "claim_id": "42205e73-b609-486f-b047-473b6db3fd15",
+      "result_id": "fafa97d8-af31-410c-8f6b-301cbe52fd31"
+    },
+    {
+      "claim_id": "a4987864-f14e-4e71-beac-396282e715c3",
+      "result_id": "fafa97d8-af31-410c-8f6b-301cbe52fd31"
+    },
+    {
+      "claim_id": "8a5abc26-65e6-4a22-83e5-bae617380897",
+      "result_id": "fafa97d8-af31-410c-8f6b-301cbe52fd31"
+    },
+    {
+      "claim_id": "f881b624-068e-45ec-859a-311cb235c0a1",
+      "result_id": "fafa97d8-af31-410c-8f6b-301cbe52fd31"
+    },
+    {
+      "claim_id": "9bf7fbdf-8f05-4bf0-ac16-3a914b36b06c",
+      "result_id": "4c07d783-281b-4bdc-979c-18f25ba71755"
+    },
+    {
+      "claim_id": "15c9136d-caa9-4399-991e-f32ca2d07f31",
+      "result_id": "4c07d783-281b-4bdc-979c-18f25ba71755"
+    },
+    {
+      "claim_id": "ce6a63c2-6267-493b-be5e-a2b21ac7cc27",
+      "result_id": "23cca912-6b38-41d1-86a1-43d30bf184d5"
+    },
+    {
+      "claim_id": "5041d566-46a1-47fc-9ccd-3e0a83e5fb23",
+      "result_id": "23cca912-6b38-41d1-86a1-43d30bf184d5"
+    },
+    {
+      "claim_id": "e793857c-2a0f-4ae7-a97e-72c9dd2ac14d",
+      "result_id": "23cca912-6b38-41d1-86a1-43d30bf184d5"
+    },
+    {
+      "claim_id": "c50d9ddc-54f6-4ea3-b2ac-cf7546e91365",
+      "result_id": "23cca912-6b38-41d1-86a1-43d30bf184d5"
+    },
+    {
+      "claim_id": "88971612-faa5-4be1-9e5b-dfe11160321f",
+      "result_id": "c6c452e8-5484-480b-bc69-111aa07ae665"
+    },
+    {
+      "claim_id": "446e962a-8955-4709-9829-36ab1986db25",
+      "result_id": "c6c452e8-5484-480b-bc69-111aa07ae665"
+    },
+    {
+      "claim_id": "20d89ee2-b18d-4743-aa82-d1ebae3d6f66",
+      "result_id": "c66661c7-c7f8-417d-90d8-a0201bb833c7"
+    },
+    {
+      "claim_id": "71fa4286-9775-4f6b-b54f-7c1c432141a7",
+      "result_id": "c66661c7-c7f8-417d-90d8-a0201bb833c7"
+    },
+    {
+      "claim_id": "6fa05b79-877d-4d6a-961c-450fbcdf849c",
+      "result_id": "c66661c7-c7f8-417d-90d8-a0201bb833c7"
+    },
+    {
+      "claim_id": "8fda94ae-e960-46dc-ad27-8468efe0a4ac",
+      "result_id": "c66661c7-c7f8-417d-90d8-a0201bb833c7"
+    },
+    {
+      "claim_id": "7e11fe91-03e0-4695-93f8-7d80ad9762da",
+      "result_id": "c66661c7-c7f8-417d-90d8-a0201bb833c7"
+    },
+    {
+      "claim_id": "06049ce4-ec39-4eeb-af62-c47d3b744770",
+      "result_id": "e886a8ce-b060-4984-bc02-02d1165292a0"
+    },
+    {
+      "claim_id": "6677b7d8-eee4-454d-90a4-f328bbb1bc36",
+      "result_id": "e886a8ce-b060-4984-bc02-02d1165292a0"
+    },
+    {
+      "claim_id": "adddf1df-64ca-410b-9535-275833bd7cba",
+      "result_id": "e886a8ce-b060-4984-bc02-02d1165292a0"
+    },
+    {
+      "claim_id": "a9aa51b9-24a5-49aa-848c-606a97650b68",
+      "result_id": "e886a8ce-b060-4984-bc02-02d1165292a0"
+    },
+    {
+      "claim_id": "f3979d2e-691a-4c9b-adcf-d2b3b1accb19",
+      "result_id": "e886a8ce-b060-4984-bc02-02d1165292a0"
+    },
+    {
+      "claim_id": "28cd518e-1009-404e-a165-c4c926801eca",
+      "result_id": "cb0ecf66-ae90-40cf-a8ec-3ceed0159caf"
+    },
+    {
+      "claim_id": "744586ee-4f46-4710-8ea7-8c975eb3edb3",
+      "result_id": "cb0ecf66-ae90-40cf-a8ec-3ceed0159caf"
+    },
+    {
+      "claim_id": "5a3049a8-43b0-47e0-ae33-de63a085ceaa",
+      "result_id": "cb0ecf66-ae90-40cf-a8ec-3ceed0159caf"
+    },
+    {
+      "claim_id": "3d8e8a62-0d71-4faa-ba5d-86cde8bb93c2",
+      "result_id": "af7509c6-f9d3-430e-ae83-15fb89458e17"
+    },
+    {
+      "claim_id": "1492f5db-2d2c-48c8-987d-ee52de4e5327",
+      "result_id": "b4fed773-c480-4db1-87dc-b25018b41e87"
+    },
+    {
+      "claim_id": "95cba95f-bce9-48cf-ac8c-ce3c37860b5d",
+      "result_id": "b4fed773-c480-4db1-87dc-b25018b41e87"
+    },
+    {
+      "claim_id": "2cc962e0-cb06-4d87-9cc6-1d2169f4eec4",
+      "result_id": "5fee4f29-93d2-4082-9690-d8f471c6825f"
+    }
+  ],
+  "comparisons": []
+}

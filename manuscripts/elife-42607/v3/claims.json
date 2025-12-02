@@ -1,0 +1,1987 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "A key goal of model-based cognitive neuroscience is to estimate the trial-by-trial fluctuations of cognitive model parameters in order to link these fluctuations to brain signals.",
+    "claim_type": "EXPLICIT",
+    "source": "A key goal of model-based cognitive neuroscience is to estimate the trial-by-trial fluctuations of cognitive model parameters in order to link these fluctuations to brain signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the goals of the field, supported by the context of the research and citations throughout the manuscript.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Previously developed methods for estimating trial-by-trial parameter fluctuations are limited by being difficult to implement, time-consuming, or model-specific.",
+    "claim_type": "EXPLICIT",
+    "source": "However, previously developed methods are limited by being difficult to implement, time-consuming, or model-specific.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the comparison with other methods throughout the manuscript and citations to previous work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "LOTO is an easy, efficient and general approach to estimating trial-wise changes in parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we propose an easy, efficient and general approach to estimating trial-wise changes in parameters: Leave-One-Trial-Out (LOTO).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main claim of the paper, supported by simulations and comparisons throughout the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The rationale behind LOTO is that the difference between parameter estimates for the complete dataset and for the dataset with one omitted trial reflects the parameter value in the omitted trial.",
+    "claim_type": "EXPLICIT",
+    "source": "The rationale behind LOTO is that the difference between parameter estimates for the complete dataset and for the dataset with one omitted trial reflects the parameter value in the omitted trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the core principle of LOTO, explained conceptually and demonstrated through mathematical derivations and simulations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "LOTO is superior to estimating parameter values from single trials.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that LOTO is superior to estimating parameter values from single trials and compare it to previously proposed approaches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulation results comparing LOTO to single-trial fitting methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "LOTO makes it possible to distinguish true variability in a parameter from noise and from other sources of variability.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the method makes it possible to distinguish true variability in a parameter from noise and from other sources of variability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through the non-parametric test for systematic variability presented in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Model-based cognitive neuroscience attempts to link mathematical models of cognitive processes to neural data in order to advance our knowledge of the mind and brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Model-based cognitive neuroscience attempts to link mathematical models of cognitive processes to neural data in order to advance our knowledge of the mind and brain (Forstmann et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the field, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Deriving trial-specific values for parameters of cognitive models and relating these values to trial-specific brain data offers insights into cognitive and neural principles at a highly detailed level of analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "A particularly promising but challenging approach in this regard is to derive trial-specific values for parameters of cognitive models and to relate these values to trial-specific brain data, which offers insights into cognitive and neural principles at a highly detailed level of analysis (Gluth and Rieskamp, 2017; van Maanen et al., 2011; Turner et al., 2017; Wiecki et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous work in the field.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The difficulty in linking momentary fluctuations in cognitive states to neural measures lies in specifying the variability in the cognitive model.",
+    "claim_type": "EXPLICIT",
+    "source": "Primarily, the difficulty in linking momentary fluctuations in cognitive states to neural measures lies in specifying the variability in the cognitive model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual claim about the challenges in the field.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Cognitive models often specify the distribution from which variability is assumed to originate but remain silent about its direction and extent in single trials.",
+    "claim_type": "EXPLICIT",
+    "source": "Often, cognitive models specify the distribution from which this variability is assumed to originate (e.g., a normal distribution), but remain silent about its direction and extent in single trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about cognitive modeling practices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Previous attempts to capture parameter variability have often been specific to a single model.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous attempts to capture parameter variability have often been specific to a single model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by examples of model-specific methods discussed in the manuscript.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "van Maanen et al. (2011) derived maximum likelihood estimates for two single-trial parameters of the Linear Ballistic Accumulator (LBA) model.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, van Maanen et al. (2011) derived maximum likelihood estimates for two single-trial parameters of the Linear Ballistic Accumulator (LBA) model (Brown and Heathcote, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about previous work, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The LBA model belongs to the class of sequential sampling models of decision making.",
+    "claim_type": "EXPLICIT",
+    "source": "The LBA belongs to the class of sequential sampling models of decision making, which assume that decisions arise from an evidence-accumulation process that continues until a threshold has been reached, indicating that the required amount of evidence for a decision has been gathered.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the LBA model based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Three critical parameters of the LBA are the rate of evidence accumulation (drift rate), the amount of evidence required to reach a decision (decision threshold), and the point from which the accumulation begins (start point).",
+    "claim_type": "EXPLICIT",
+    "source": "Three critical parameters of the LBA are the rate of evidence accumulation (drift rate), the amount of evidence required to reach a decision (decision threshold), and the point from which the accumulation begins (start point).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the LBA model parameters based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Sequential sampling models such as LBA predict accuracy rates and the shape of response times (RT) distributions conjointly.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, sequential sampling models such as LBA predict accuracy rates and the shape of response times (RT) distributions conjointly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a characteristic of sequential sampling models based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Wiecki et al. (2013) introduced a hierarchical Bayesian modeling tool for the Diffusion Decision Model (DDM).",
+    "claim_type": "EXPLICIT",
+    "source": "Wiecki et al. (2013) introduced a hierarchical Bayesian modeling tool for another sequential sampling model, the Diffusion Decision Model (DDM) (Ratcliff, 1978).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about previous work, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The Wiecki et al. (2013) tool allows the regression of single-trial parameters of the DDM onto trial-by-trial neural measures such as EEG or fMRI recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "Their tool allows the regresssion of single-trial parameters of the DDM onto trial-by-trial neural measures such as electroencephalography (EEG) or event-related functional magnetic resonance imaging (fMRI) recordings (similar regression-based approaches were proposed by Hawkins et al. (2017) and by Nunez et al. (2017)).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the capabilities of the Wiecki et al. tool, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Turner and colleagues proposed a method whose rationale is to model behavioral and neuroimaging data jointly under a common hierarchical Bayesian umbrella.",
+    "claim_type": "EXPLICIT",
+    "source": "Turner and colleagues proposed a related method, whose rationale is to model behavioral and neuroimaging data jointly under a common (hierarchical Bayesian) umbrella (Palestro et al., 2018; Turner et al., 2013; Turner et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the Turner et al. method, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The Turner et al. approach was tested within the DDM framework but may be generalized to any other cognitive model.",
+    "claim_type": "EXPLICIT",
+    "source": "Although the approach was again tested within the DDM framework, it may be generalized to any other cognitive model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the generalizability of the Turner et al. method.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The complexity of the Turner et al. approach might discourage many cognitive neuroscientists from applying it.",
+    "claim_type": "EXPLICIT",
+    "source": "As we have argued before, however, the complexity of this approach might discourage many cognitive neuroscientists from applying it (Gluth and Rieskamp, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an opinion supported by a previous publication by the authors.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Gluth and Rieskamp (2017) proposed a comparatively simple and very general approach to capture trial-by-trial variability in cognitive model parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "We recently proposed a comparatively simple and very general approach to capture trial-by-trial variability in cognitive model parameters (Gluth and Rieskamp, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the authors' previous work, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The Gluth and Rieskamp (2017) approach is based on Bayesian principles and specifies the posterior probability of a parameter value in a specific trial.",
+    "claim_type": "EXPLICIT",
+    "source": "Again, the approach is based on Bayesian principles: it specifies the posterior probability of a parameter value in a specific trial, using the 'average' parameter value across all trials and the behavior in the specific trial as the prior and likelihood, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the GR17 method based on the authors' previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The Gluth and Rieskamp (2017) approach can require high amounts of computation time, particularly when seeking to estimate variability in more than one parameter simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "While this approach is both general and comparatively simple, it can require high amounts of computation time, in particular when one seeks to estimate variability in more than one parameter simultaneously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a limitation of the GR17 method acknowledged by the authors.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "LOTO tries to overcome the shortcomings of specificity, complexity, and inefficiency of previous approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "In the current work, we propose a novel approach to capturing trial-by-trial variability in cognitive model parameters that tries to overcome the shortcomings of specificity, complexity, and inefficiency: Leave-One-Trial-Out (LOTO).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the goals of LOTO, to be evaluated through the manuscript's analyses.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The idea of LOTO is that the difference in the parameter estimates based on all trials vs. those based on all trials except a single trial provides a reflection of the 'true' parameter value in the left-out trial.",
+    "claim_type": "EXPLICIT",
+    "source": "Briefly, the idea of LOTO is that the difference in the parameter estimates that are based on all trials vs. those that are based on all trials except a single trial provides a reflection of the 'true' parameter value in the left-out trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the core principle of LOTO, explained and demonstrated throughout the manuscript.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "LOTO does not provide single-trial parameter estimates in an absolute sense but provides information about the direction and relative amount of deviation of single-trial parameter values from the average.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, it should be obvious that LOTO does not provide single-trial parameter estimates in an absolute sense. Rather, the method provides information about the direction and (relative) amount of deviation of single-trial parameter values from the average.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an important clarification about what LOTO estimates represent.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The change in LOTO is inversely related to the number of trials.",
+    "claim_type": "EXPLICIT",
+    "source": "Equation 3 also reveals a general property of LOTO, namely that the change in LOTO is inversely related to the number of trials: naturally, the influence of a single trial on the estimation of a parameter decreases as the number of trials increases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical property derived from the LOTO formula.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The Fisher information of the Bernoulli distribution indicates that observations are more informative about the underlying parameter at the extremes.",
+    "claim_type": "EXPLICIT",
+    "source": "As can be seen in the left panel of Figure 1A, the Fisher information of the Bernoulli distribution indicates that observations are more informative about the underlying parameter at the extremes.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by the mathematical formula and the figure showing Fisher information.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "LOTO's performance depends on the range of \u03b8t, with higher correlation when \u03b8 is close to 0 or close to 1.",
+    "claim_type": "EXPLICIT",
+    "source": "As predicted by the Fisher information, the correlation is higher when \u03b8 is close to 0 or close to 1.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The performance of LOTO can be improved by assuming that \u03b8 does not change from trial to trial but remains constant over a certain number of trials m.",
+    "claim_type": "EXPLICIT",
+    "source": "Fortunately, the performance can be improved by assuming that \u03b8 does not change from trial to trial but remains constant over a certain number of trials, which we denote m. The larger m, the more different values LOTO can take (and at the same time, our confidence in the estimate of \u03b8 increases).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 1B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Fisher information and LOTO's performance increase as m increases.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 1B illustrates the increases in Fisher information and LOTO's performance as m increases.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "It might be more promising to track fluctuations over multiple trials than to try to capture parameter values in each and every trial.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, it might be more promising to track fluctuations over multiple trials (e.g., short blocks or sessions) than to try to capture parameter values in each and every trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation based on the simulation results showing improved performance with larger m.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "LOTO is not particularly helpful for the Bernoulli and binomial distributions because it does not provide novel information over and above what is already known from the observations.",
+    "claim_type": "EXPLICIT",
+    "source": "We see that LOTO can be applied to the Bernoulli and binomial distributions, but it should be (again) noted that LOTO is not particularly helpful in these cases. This is because LOTO will not provide us with any novel information over and above what is already known from the observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explained by the fact that LOTO's estimates are perfectly correlated with the observations for these simple models.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "There are two ways to make LOTO more useful: introduce variations in the task linked to model predictions, or apply cognitive models that predict a richer set of data.",
+    "claim_type": "EXPLICIT",
+    "source": "In principle, there are two ways to make LOTO (and any other method for tracking trial-by-trial variability in parameters) more useful. First, one could introduce variations in the task, with these variations being directly linked to the predictions of the cognitive model. Second, one could apply cognitive models that predict a 'richer' set of data (e.g., sequential sampling models that predict accuracy rates and RT distributions conjointly; see above).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "These are recommendations based on the analysis of LOTO's performance.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The first derivative of the log-likelihood of the HD model with respect to \u03ba depends on features of the task, namely the amount and delay of the delayed option and the amount of the immediate option.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, we see that in contrast to the derivatives of the binomial distribution, the derivatives of the HD model depend on features of the task, namely on the amount and delay of the delayed option (i.e., xj and dj) and on the amount of the immediate option (i.e., xi), which is hidden in pi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through mathematical derivations in the manuscript.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "By setting the derivatives of the HD model to 0 to obtain the MLEs, parameter \u03bat will take the highest possible value when the immediate option is chosen and the lowest possible value when the delayed option is chosen.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, by setting the derivatives in Equation 8a and Equation 8b to 0 to obtain the MLEs, parameter \u03bat will take the highest possible value (i.e., \u03bat = 1) whenever the immediate option is chosen and the lowest possible value (i.e., \u03bat = 0) whenever the delayed option is chosen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical result from analyzing the derivatives of the HD model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The caveat of extreme parameter estimates disappears as soon as each option is chosen at least once.",
+    "claim_type": "EXPLICIT",
+    "source": "Critically, however, this caveat disappears as soon as each option (i and j) is chosen at least once.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through mathematical derivations showing non-extreme estimates when both options are chosen.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "LOTO can extract more information about \u03bat than that given by the observations when both choice options have been chosen at least once in the n/n-1 trials.",
+    "claim_type": "EXPLICIT",
+    "source": "As explicated above, these two MLEs will depend on the task features in the n/n\u20131 trials as long as both choice options (e.g., immediate, delayed) have been chosen at least once in the n/n\u20131 trials (so that we get non-extreme estimates of \u03ba from the n/n\u20131 trials).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explained through the mathematical properties of the HD model and LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "LOTO outperforms single-trial fitting of parameter \u03ba of the HD model in extracting additional information about the true \u03bat over and above what is already provided by the observations.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we show that LOTO but not single-trial fitting of parameter \u03ba of the HD model is able to extract additional information about the true \u03bat, over and above what is already provided by the observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The estimates of LOTO are correlated with the true \u03bat after accounting for the observations, whereas single-trial fitting estimates are not.",
+    "claim_type": "EXPLICIT",
+    "source": "As can be seen in Figure 3, the estimates of LOTO (left panel) but not of single-trial fitting (right panel) are correlated with the true \u03bat after accounting for the observations (i.e., whether the immediate or the delayed option was chosen).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The positive correlation between \u03bat and the LOTO estimates is driven by how expectable or surprising a decision is given the trial features.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, the positive correlation between \u03bat and the single-trial estimates (dashed magenta line) can be attributed entirely to the fact that higher values of \u03bat lead to more choices of the immediate option, but the positive correlation between \u03bat and the LOTO estimates is further driven by how expectable or surprising a decision is (given the trial features xi,t, xj,t, and dj,t).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the simulation results shown in Figure 3.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Using LOTO to recover trial-specific parameter values of models that predict only binary outcomes is possible but somewhat limited.",
+    "claim_type": "EXPLICIT",
+    "source": "Using LOTO to recover trial-specific parameter values of models that predict only binary outcomes, such as choices or accuracy rates, is possible but somewhat limited.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explained by the fact that LOTO estimates strictly separate choices in binary outcome models.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "LOTO's estimates are always higher when the immediate option was chosen in the HD model.",
+    "claim_type": "EXPLICIT",
+    "source": "This can be seen when looking at the left panel of Figure 3, which suggests that LOTO's estimates are always higher when the immediate option was chosen.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Extending the model to take RT data into account can overcome the limitation of strict choice-dependent separation in LOTO estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this strict choice-dependent separation might not be plausible; for example, it could very well be that the delayed option is chosen in a trial in which this option offered a very high reward xj with a very low delay dj, even though the actual discount factor in that trial (i.e., \u03bat) was higher than on average. To overcome this limitation, we suggest that the model is extended so that it can take RT data into account.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed solution demonstrated through the HD-LBA model simulations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Applying LOTO to the HD-LBA model yields much improved performance compared to applying LOTO to the HD model alone.",
+    "claim_type": "EXPLICIT",
+    "source": "For HD-LBA, the correlation is much improved, and LOTO's estimates do not strictly separate choices of the immediate and delayed options anymore. The improved performance of LOTO is confirmed when comparing the correlations of all 30 simulated participants (Figure 4C; immediate chosen: t(29) = 10.79, p < .001, Cohen's d = 1.97, Bayes Factor in favor of the alternative hypothesis BF10 > 1,000; delayed chosen: t(29) = 8.79, p < .001, d = 1.61, BF10 > 1,000).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The single-trial fitting method applied to the HD-LBA model is able to capture some variability over and above the information contained in the decisions.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the single-trial fitting method applied to the HD-LBA model is also able to capture some variability over and above the information that is already contained in the decisions (Figure 4). This is because RT (and the interplay between RT and decisions) add further information about \u03bat that can be picked up by single-trial fitting.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Applying LOTO to HD-LBA yields significantly better recovery of trial-wise parameter values than single-trial fitting applied to HD-LBA.",
+    "claim_type": "EXPLICIT",
+    "source": "Nonetheless, applying LOTO to HD-LBA yields significantly better recovery of the trial-wise parameter values (Figure 4C; immediate chosen: t(29) = 7.24, p < .001, d = 1.32, BF10 > 1,000; delayed chosen: t(29) = 7.71, p < .001, d = 1.41, BF10 > 1,000).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 4C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Recovering trial-by-trial changes in a parameter with LOTO is much more efficient when the model is able to predict a rich set of single-trial observations, such as RT in addition to choices or accuracy rates.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, recovering trial-by-trial changes in a parameter of a cognitive model with LOTO (but also with other techniques) is much more efficient when the model is able to predict a rich set of single-trial observations, such as RT (and possibly even continuous ratings of choice confidence as in Pleskac and Busemeyer, 2010) in addition to choices or accuracy rates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results comparing HD and HD-LBA models.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The assumption of systematic variability in a parameter does not have to be correct, even when overt behavior appears to be stochastic.",
+    "claim_type": "EXPLICIT",
+    "source": "As we have argued before, however, this assumption does not have to be correct \u2014 not even when the overt behavior appears to be stochastic (Gluth and Rieskamp, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual point about the nature of behavioral variability, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Stochasticity could be induced by random fluctuations that are not accounted for by the cognitive model.",
+    "claim_type": "EXPLICIT",
+    "source": "It could be that stochasticity is induced by random fluctuations that are not accounted for by the cognitive model (e.g., randomness in motor execution).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual point about sources of behavioral variability.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "When assuming variability in a specific parameter, the risk is that unsystematic variability is taken up by LOTO even in the absence of any systematic variability in the parameter.",
+    "claim_type": "EXPLICIT",
+    "source": "When assuming variability in a specific parameter, the risk is that such unsystematic variability is taken up by LOTO even in the absence of any systematic variability in the parameter.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a potential limitation of LOTO that motivates the need for testing systematic variability.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "A non-parametric and simulation-based approach can test for the presence of systematic trial-by-trial variability by exploiting the improvement in model fit by LOTO.",
+    "claim_type": "EXPLICIT",
+    "source": "To test for the presence of systematic trial-by-trial variability, we propose a non-parametric and simulation-based approach that exploits the improvement in model fit by LOTO: if a model is fitted to n\u20131 trials, the fit statistic (e.g., the deviance) will improve for two reasons: i) the statistic for the left-out trial is excluded; and ii) the parameter estimate is adjusted so that it optimally fits the n\u20131 dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed method for testing systematic variability, demonstrated through simulations.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The improvement in fit attributable to parameter adjustment will be lower when there is no systematic trial-by-trial variability compared to when there is systematic variability.",
+    "claim_type": "EXPLICIT",
+    "source": "The rationale of our proposed approach is that the improvement in fit that is attributable to the second reason (i.e., the adjustment) will be lower when there is no systematic trial-by-trial variability in the parameter of interest compared to when there is systematic variability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the rationale behind the test for systematic variability.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The test for systematic variability in the HD model shows that improvement in model fit is significantly higher when variability is actually present, except for the lowest level of variability.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the continuous vertical lines, which show the results for the simulations with true variability of increasing amount (from blue to red), indicate significantly higher improvements in fit when variability is actually present \u2014 except for the lowest level of variability (the dashed black line indicates the 95% threshold).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The improvement in goodness-of-fit when trying to explain variability in \u03b2 by modeling variability in \u03ba using LOTO does not exceed the improvement under the null hypothesis.",
+    "claim_type": "EXPLICIT",
+    "source": "As can be seen in Figure 5B, the improvement in goodness-of-fit when trying to explain variability in \u03b2 by modeling variability in \u03ba using LOTO does not exceed the improvement under the null hypothesis, and there is no systematic relationship with the amount of variability in \u03b2.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Finding a significantly higher improvement in fit compared to simulated data under the null hypothesis cannot be due to a misattribution of variability in \u03b2 to variability in \u03ba.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we can conclude that finding a significantly higher improvement in fit in our data compared to simulated data under the null hypothesis cannot be due to a misattribution of variability in \u03b2 to variability in \u03ba.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results shown in Figure 5B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Variability in behavior and neural activity may derive from variability in the processes used to infer the input and output signals of a computation.",
+    "claim_type": "EXPLICIT",
+    "source": "Variability in behavior (and neural activity) may derive not only from variability in model parameters but also from the processes used to infer the input and output signals of a computation (Drugowitsch et al., 2016; Findling et al., 2018; Loomes et al., 2002; Polan\u00eda et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual point about sources of variability, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "LOTO does not misattribute variability in amounts to \u03ba, but for some simulations of delay-based and utility-based variability, a misattribution could not be ruled out.",
+    "claim_type": "EXPLICIT",
+    "source": "As can be seen in Figure 5\u2014figure supplement 1, LOTO does not misattribute variability in amounts, but for 3 out of 10 simulations of delay-based variability and for 4 of 10 simulations of utility-based variability, a misattribution could not be ruled out.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 5\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Changing the intertemporal choice task by increasing the number of options to three improves the separability of the discount factor \u03ba from the input and output variables.",
+    "claim_type": "EXPLICIT",
+    "source": "How can the separability of the discount factor \u03ba from the input and output variables x, d, and u be improved? We reasoned that changing the intertemporal choice task by increasing the number of options should help: whereas the discount factor can be assumed to be stable across options (and to vary only from trial to trial), the variability in the input and output variables can be assumed to differ between options (i.e., they are drawn from independent distributions for each option).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed solution demonstrated through simulations with three-option tasks.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "In the three-option intertemporal choice task, a significant improvement in model fit over and above the improvement under the null hypothesis was only found for \u03ba but not for any of the input or output variables.",
+    "claim_type": "EXPLICIT",
+    "source": "As predicted, a significant improvement in model fit over and above the improvement under the null hypothesis of no variability was only found for \u03ba but not for any of the input or output variables (Figure 5\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 5\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "LOTO might be an efficient tool to dissociate parameter variability from variability in the input and output signals of computational processes, assuming an appropriate experimental design and careful simulations.",
+    "claim_type": "EXPLICIT",
+    "source": "In conclusion, LOTO might be an efficient tool to dissociate parameter variability from variability in the input and output signals of computational processes, assuming an appropriate experimental design and careful simulations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results testing separability of parameter variability.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "An advantageous feature of LOTO is that the duration of applying the method is almost independent of the number of parameters for which trial-by-trial variability is inferred.",
+    "claim_type": "EXPLICIT",
+    "source": "An advantageous feature of LOTO is that the duration of applying the method is almost independent of the number of parameters for which trial-by-trial variability is inferred.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a stated advantage of LOTO based on its computational properties.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The non-parametric test for systematic variability in the HD-LBA model with variability in \u03ba and b confirmed that only 19 of 1,000 simulations under the null hypothesis provided a better fit than the simulation with true variability.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we used the non-parametric test from the previous section to check for the presence of systematic variability. In doing this, we simulated 1,000 sets of 30 participants under the null hypothesis and tested whether the simulation with true variability in \u03ba and b provides a significantly improved deviance than those simulations. This was confirmed as only 19 of the 1,000 simulations under the null hypothesis provided a better fit.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the test for systematic variability applied to the HD-LBA model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "LOTO is capable of recovering the variability in parameter \u03ba from trial to trial for both types of decisions (immediate and delayed) when inferring variability in two parameters simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in the upper left panel of Figure 6A, LOTO is still capable of recovering the variability in parameter \u03ba from trial to trial for both types of decisions (i.e., immediate and delayed).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "LOTO captures the variability in parameter b when inferring variability in two parameters simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, LOTO captures the variability in parameter b (lower right panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "When the immediate option was chosen, the correlations between true parameter values and 'wrong' LOTO estimates are negative; when the delayed option was chosen, the correlations are positive.",
+    "claim_type": "EXPLICIT",
+    "source": "When the immediate option was chosen, the correlations are negative; when the delayed option was chosen, the correlations are positive.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The observations (choices and RT) can explain away the undesired correlations between true parameter values and 'wrong' LOTO estimates while not affecting the desired correlations.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, these results indicate that the observations (i.e., choices and RT) could explain away the undesired correlations while not affecting the desired correlations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is tested through regression analyses shown in Figure 6C.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The standardized regression coefficient for LOTO's estimate of \u03bat when explaining variance in true \u03bat was significantly positive with a very high effect size (t(29) = 28.48, p < .001, d = 5.20, BF10 > 1,000).",
+    "claim_type": "EXPLICIT",
+    "source": "The standardized regression coefficient (averaged across simulated participants) for LOTO's estimate of \u03bat when explaining variance in true \u03bat was indeed significantly positive with a very high effect size (t(29) = 28.48, p < .001, d = 5.20, BF10 > 1,000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from regression analyses shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The coefficient for the 'wrong' estimate of bt when explaining variance in \u03bat reached significance, but the effect was much weaker (t(29) = 3.01, p = .005, d = 0.55, BF10 = 7.74).",
+    "claim_type": "EXPLICIT",
+    "source": "The coefficient for the 'wrong' estimate of bt when explaining variance in \u03bat also reached significance, but the effect was much weaker (t(29) = 3.01, p = .005, d = 0.55, BF10 = 7.74).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from regression analyses shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "With respect to explaining variance in true bt, only LOTO's estimate of the 'correct' estimate of bt was significant and strong (t(29) = 30.40, p < .001, d = 5.55, BF10 > 1,000).",
+    "claim_type": "EXPLICIT",
+    "source": "With respect to explaining variance in true bt, only LOTO's estimate of the 'correct' estimate of bt was significant and strong (t(29) = 30.40, p < .001, d = 5.55, BF10 > 1,000), whereas the effect for the 'wrong' estimate of \u03bat did not reach significance (t(29) = \u22121.93, p = .063, d = \u22120.45, BF10 = 0.99).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from regression analyses shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "LOTO makes it possible to infer trial-by-trial variability in more than one parameter within the same model, revealing information over and above that provided by the observations.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, LOTO makes it possible to infer trial-by-trial variability in more than one parameter within the same model, revealing information over and above that provided by the observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results with two parameters.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "LOTO's misattributions of variability to other parameters are largely explained away by the observations.",
+    "claim_type": "EXPLICIT",
+    "source": "At the same time, LOTO's misattributions of variability to other parameters are largely explained away by the observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the regression analyses shown in Figure 6C.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Trial numbers in neuroimaging studies are often low, with fMRI studies being particularly limited because scanning hours are expensive and the low temporal resolution requires long inter-trial intervals.",
+    "claim_type": "EXPLICIT",
+    "source": "Trial numbers in neuroimaging studies are often low. fMRI studies are particularly limited because scanning hours are expensive, and because the low temporal resolution of fMRI requires long inter-trial intervals in the case of event-related fMRI (which is most suitable for trial-by-trial analyses).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about practical constraints in neuroimaging research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The average extent of the correlations between the true parameter values and the respective estimates of LOTO are largely unaffected by the number of trials.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 7A, the average extent of the correlations between the true parameter values and the respective estimates of LOTO are largely unaffected by the number of trials.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 7A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The recovery performance is slightly reduced for the threshold parameter b of the HD-LBA model in the case of 20 trials.",
+    "claim_type": "EXPLICIT",
+    "source": "The recovery performance is slightly reduced for the threshold parameter b of the HD-LBA model in the case of 20 trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 7A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The variance of the correlations decreases as the number of trials increases.",
+    "claim_type": "EXPLICIT",
+    "source": "Note, however, that the variance of the correlations decreases as the number of trials increases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 7A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "LOTO still benefits from increasing the number of trials in terms of achieving higher statistical power.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, LOTO still benefits from increasing the number of trials in terms of achieving higher statistical power, as we show in 'Results: Section X'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the variance reduction with more trials and power analyses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "If the number of trials is very high, the improvement in model fit from a change in parameter value might become smaller than the default tolerance criterion set by the minimization algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "If the number of trials is very high, then the improvement in model fit that results from a change in the parameter value might become smaller than the default tolerance criterion set by the minimization algorithm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical consideration about the implementation of LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "In the case of 1,600 trials, the tolerance criterion matters: if the default criterion is used, the LOTO estimates exhibit discrete jumps.",
+    "claim_type": "EXPLICIT",
+    "source": "In the case of 1,600 trials, the tolerance criterion matters: if the default criterion is used, the LOTO estimates exhibit discrete jumps, that is, the same parameter value is estimated for trials with relatively similar observations, because a more fine-graded estimation does not improve the fit beyond the default tolerance criterion.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "In the case of 160 trials, the correlations obtained using the strict and the default tolerance criterion are not significantly different (t(29) = 1.27, p = .213, d = 0.23, BF10 = 0.40).",
+    "claim_type": "EXPLICIT",
+    "source": "In the case of 160 trials, the correlations obtained using the strict and the default tolerance criterion are not significantly different (t(29) = 1.27, p = .213, d = 0.23, BF10 = 0.40).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from comparing tolerance criteria.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "In the case of 1,600 trials, there is a significant difference between strict and default tolerance criteria (t(29) = 4.59, p < .001, d = 0.84, BF10 = 323.03), but the difference is small in absolute terms.",
+    "claim_type": "EXPLICIT",
+    "source": "In the case of 1,600 trials, there is a significant difference (t(29) = 4.59, p < .001, d = 0.84, BF10 = 323.03), but the difference is small in absolute terms (i.e., on average the correlation is reduced by only .003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from comparing tolerance criteria.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "It is recommended to check the potential impact of the tolerance criterion on LOTO's performance by running simulations, particularly when LOTO is applied to a task with many trials (\u2265 1,000).",
+    "claim_type": "EXPLICIT",
+    "source": "In general, we recommend checking the potential impact of the tolerance criterion on LOTO's performance by running simulations, in particular when LOTO is applied to a task with many trials (i.e., \u2265 1,000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation based on the analysis of tolerance criterion effects.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "In contrast to some other methods for inferring trial-by-trial variability in model parameters, LOTO does not require the assumption that parameters are drawn from specific distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to some other methods for inferring trial-by-trial variability in model parameters (van Maanen et al., 2011; Turner et al., 2015), LOTO does not require the assumption that parameters are drawn from specific distributions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a stated advantage of LOTO compared to other methods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The distributions of the true parameter values of \u03b8m are markedly different for normal and uniform distributions, whereas the distributions of LOTO estimates are very similar.",
+    "claim_type": "EXPLICIT",
+    "source": "The distributions of the true parameter values are markedly different, whereas the distributions of LOTO estimates are very similar.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 8A and 8B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The distribution of LOTO estimates is mostly invariant to the distribution of the underlying parameters but depends much more on how the parameter values map onto the observations via the model and its likelihood function.",
+    "claim_type": "EXPLICIT",
+    "source": "Generally speaking, the distribution of LOTO estimates is mostly invariant to the distribution of the underlying parameters but depends much more on how the parameter values map onto the observations via the model and its likelihood function.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulations with different parameter distributions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "For the HD-LBA model, the distributions of LOTO estimates appear to be invariant to the shape of the underlying parameter distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "Again, the distributions of LOTO estimates appear to be invariant to the shape of the underlying parameter distributions.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 8\u2014figure supplements 1 and 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The performance of LOTO (in terms of the correlation between true parameter values and LOTO estimates) does not seem to depend much on the distribution of the underlying parameter values.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, our simulations of the HD-LBA model also suggest that the performance of LOTO (in terms of the correlation between true parameter values and LOTO estimates) does not seem to depend much on the distribution of the underlying parameter values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 8\u2014figure supplements 1 and 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "LOTO cannot be used to infer the shape of the underlying parameter distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, we conclude that LOTO cannot be used to infer the shape of the underlying parameter distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the invariance of LOTO estimates to parameter distributions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "LOTO is highly efficient in detecting significant relationships between cognitive model parameters and neural data, regardless of the underlying parameter distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this limitation, LOTO is highly efficient in detecting significant relationships between cognitive model parameters and neural data, regardless of the underlying parameter distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion about LOTO's utility despite its inability to infer parameter distributions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "LOTO and GR17 yield very similar results when applied to the LBA model.",
+    "claim_type": "EXPLICIT",
+    "source": "From the example correlations, we see that LOTO and GR17 yield very similar results. This is to be expected because the two approaches employ similar principles.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "LOTO performs significantly better than GR17 for both drift rate and start point parameters of the LBA model.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the comparison across multiple simulations reveals that LOTO performs significantly better than GR17 for both parameters (drift rate: t(19) = 3.76, p = .001, d = 0.84, BF10 = 28.75; start point: t(19) = 4.86, p < .001, d = 1.09, BF10 = 259.17).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from comparing LOTO and GR17.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The reason LOTO performs better than GR17 is that the performance of GR17 depends on the step size with which the range of possible parameter values is scanned, and an intermediate step size was chosen to avoid excessive computation times.",
+    "claim_type": "EXPLICIT",
+    "source": "The reason for this is that the performance of GR17 depends on the step size with which the range of possible parameter values is scanned, and we were forced to choose an immediate step size to avoid excessive computation times.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation for the performance difference between LOTO and GR17.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The advantage of LOTO over GR17 is its higher processing speed, which is particularly relevant when modeling variability in multiple parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, the advantage of LOTO over GR17 is its higher processing speed, which is particularly relevant when modeling variability in multiple parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion about the practical advantages of LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The 'single-trial fitting' approach yields acceptable results for the drift rate but is still outperformed by LOTO (t(19) = 19.72, p < .001, d = 4.41, BF10 > 1,000).",
+    "claim_type": "EXPLICIT",
+    "source": "The 'single-trial fitting' approach yields acceptable results for the drift rate, but is still outperformed by LOTO (t(19) = 19.72, p < .001, d = 4.41, BF10 > 1,000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from comparing LOTO and single-trial fitting.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The single-trial fitting method fails completely with respect to recovering the start point values of the LBA model.",
+    "claim_type": "EXPLICIT",
+    "source": "More dramatically, the method fails completely with respect to recovering the start point values.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the simulation results shown in Figure 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The STLBA method performs worse than LOTO with respect to the drift rate (t(19) = 52.60, p < .001, d = 11.76, BF10 > 1,000) but better with respect to the start point (t(19) = \u221230.08, p < .001, d = \u22126.73, BF10 > 1,000).",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, the STLBA method performs worse than LOTO with respect to the drift rate (t(19) = 52.60, p < .001, d = 11.76, BF10 > 1,000) but better with respect to the start point (t(19) = \u221230.08, p < .001, d = \u22126.73, BF10 > 1,000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from comparing LOTO and STLBA.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "LOTO appears to provide comparatively good, and in fact mostly superior, results when compared to alternative approaches for capturing trial-by-trial variability in cognitive model parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, LOTO appears to provide comparatively good, and in fact mostly superior, results when compared to alternative approaches for capturing trial-by-trial variability in cognitive model parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the comparisons with other methods.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "All three methods (LOTO, Bayesian modeling, and joint modeling) provided significant relationships with the true model parameters and with the neural data (all p < .001, all BF10 > 1,000).",
+    "claim_type": "EXPLICIT",
+    "source": "First of all, all three methods provided significant relationships with the true model parameters and with the neural data (all p < .001, all BF10 > 1,000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from comparing the three methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The joint modeling approach outperformed non-joint Bayesian modeling with respect to both \u03bat (t(29) = 3.61, p = .001, d = 0.66, BF10 = 21.96) and F(\u03ba)t (t(29) = 4.32, p < .001, d = 0.79, BF10 = 131.84).",
+    "claim_type": "EXPLICIT",
+    "source": "Expectedly, the correlations illustrate that the Bayesian modeling and the joint modeling approach yielded similar estimates. Averaged over the simulated participants, however, the joint modeling approach outperformed (non-joint) Bayesian modeling with respect to both \u03bat (t(29) = 3.61, p = .001, d = 0.66, BF10 = 21.96) and F(\u03ba)t (t(29) = 4.32, p < .001, d = 0.79, BF10 = 131.84).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from comparing Bayesian and joint modeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "LOTO outperformed Bayesian modeling (t(29) = 2.82, p = .009, d = 0.51, BF10 = 6.07) as well as the joint modeling approach (t(29) = 2.51, p = .018, d = 0.46, BF10 = 3.33) with respect to \u03bat.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, LOTO outperformed Bayesian modeling (t(29) = 2.82, p = .009, d = 0.51, BF10 = 6.07) as well as the joint modeling approach (t(29) = 2.51, p = .018, d = 0.46, BF10 = 3.33) with respect to \u03bat.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from comparing LOTO with Bayesian and joint modeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "With respect to the neural signal F(\u03ba)t, LOTO yielded similar correlations compared to Bayesian modeling (t(29) = \u22120.62, p = .540, d = \u22120.11, BF10 = 0.26) and was outperformed by the joint modeling approach (t(29) = \u22123.03, p = .005, d = \u22120.55, BF10 = 13.78).",
+    "claim_type": "EXPLICIT",
+    "source": "With respect to the neural signal F(\u03ba)t, however, LOTO yielded similar correlations compared to Bayesian modeling (t(29) = \u22120.62, p = .540, d = \u22120.11, BF10 = 0.26) and was outperformed by the joint modeling approach (t(29) = \u22123.03, p = .005, d = \u22120.55, BF10 = 13.78).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from comparing LOTO with Bayesian and joint modeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Taking flexibility and difficulty of implementation into account, LOTO appears to offer an expedient alternative to joint modeling.",
+    "claim_type": "EXPLICIT",
+    "source": "Taking flexibility and difficulty of implementation into account, LOTO appears to offer an expedient alternative to joint modeling (see also 'Discussion').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion about the practical utility of LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The ultimate goal of LOTO is to establish a link between the inferred trial-by-trial variability in parameters of cognitive models and the brain activity measured with tools such as fMRI or EEG.",
+    "claim_type": "EXPLICIT",
+    "source": "The ultimate goal of LOTO (and related approaches) is to establish a link between the inferred trial-by-trial variability in parameters of cognitive models and the brain activity measured with tools such as fMRI or EEG.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the purpose of LOTO.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The question of whether LOTO is appropriate for a given experiment should be answered by testing whether LOTO can be expected to recover the truly existing correlation between a neural signal and a parameter.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the question of whether LOTO is an appropriate tool for a given experiment with a specific design (including task, number of trials, number of participants etc.), cognitive model, and parameter(s) of interest should be answered by testing whether LOTO can be expected to recover the (truly existing) correlation between a neural signal and a parameter.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation for how to evaluate LOTO's suitability.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Any approach for investigating the neural correlates of trial-by-trial parameter variability should be accompanied by analyses of statistical power (sensitivity) and false-positive rates (specificity).",
+    "claim_type": "EXPLICIT",
+    "source": "We emphasize here that these requirements are not unique to LOTO. Any approach for investigating the neural correlates of trial-by-trial parameter variability should be accompanied by such analyses of statistical power (i.e., sensitivity) and false-positive rates (i.e., specificity).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general recommendation for methods in this field.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "LOTO achieves a statistical power of 67% for parameter \u03ba and of 76% for parameter b with 30 participants and 160 trials.",
+    "claim_type": "EXPLICIT",
+    "source": "According to these results, LOTO achieves a statistical power (or sensitivity) of 67% for parameter \u03ba and of 76% for parameter b, values that are slightly below the threshold of 80% that is usually deemed acceptable.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the power analysis shown in Figure 10A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "The false-positive rate of LOTO is good, with values lying just slightly above the 5% error rate.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, the false-positive rate (or specificity) of LOTO is good, with values lying just slightly above the 5% error rate.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the power analysis shown in Figure 10A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "The small misattribution of parameter variability does not carry over much to a misattribution of the neural signal.",
+    "claim_type": "EXPLICIT",
+    "source": "This means that the small misattribution of parameter variability seen in 'Results: Section VI' does not carry over much to a misattribution of the neural signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the false-positive rate analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Increasing the sample size to 50 participants improves the statistical power of LOTO to acceptable ranges.",
+    "claim_type": "EXPLICIT",
+    "source": "In Figure 10B, we repeated the analysis for a sample size that is increased by two-thirds (i.e., 50 instead of 30 simulated participants). Expectedly, the statistical power of LOTO improves and lies within acceptable ranges.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through power analysis shown in Figure 10B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Increasing the number of trials per participant to 267 provides comparable improvement in statistical power to increasing the sample size to 50 participants.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 10C depicts the results when the number of participants is kept to 30 but the number of trials is increased by two-thirds (i.e., 267 instead of 160 trials). The improvement in statistical power is comparable to that resulting from the increased sample size.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through power analysis shown in Figure 10C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Investigating the neural basis of trial-by-trial variability in parameters \u03ba and b of the HD-LBA model might require testing more than 30 participants or more than 160 trials per participant.",
+    "claim_type": "EXPLICIT",
+    "source": "Accordingly, one would conclude from these analyses that investigating the neural basis of trial-by-trial variability in parameters \u03ba and b of the HD-LBA model might require testing more than 30 participants or testing more than 160 trials per participant, whatever is more suitable in a given context (e.g., adding trials might be difficult for event-related fMRI designs that require long inter-trial intervals but less problematic for EEG designs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the power analyses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "In the Gluth et al. (2015) study, participants made preferential choices from memory by deciding between pairs of food snacks while seeing only the snacks' screen positions.",
+    "claim_type": "EXPLICIT",
+    "source": "The dataset is taken from a previously published fMRI study (Gluth et al., 2015), in which participants were asked to make preferential choices from memory. More specifically, participants first encoded associations between food snacks and screen positions and then decided between pairs of food snacks while seeing only the snacks' screen positions (Figure 11A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the experimental task from the cited study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Participants had either one or five seconds in which to retrieve the item\u2013location associations and to deliberate upon the preferred snack option.",
+    "claim_type": "EXPLICIT",
+    "source": "Participants had either one or five seconds in which to retrieve the item\u2013location associations and to deliberate upon the preferred snack option.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental manipulation from the cited study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Choice behavior was modeled using an unbounded sequential sampling model that predicted more accurate decisions with more deliberation time.",
+    "claim_type": "EXPLICIT",
+    "source": "Choice behavior was modeled using an unbounded sequential sampling model that predicted more accurate decisions (i.e., decisions that are more consistent with evaluations of the food snacks in a separate task) with more deliberation time (details on the model and the fMRI analyses are provided in 'Materials and methods'; see also Figure 3 in Gluth et al. (2015)).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the cognitive model used in the analysis.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "The model estimates the average memory performance of a participant, that is, the probability of accurately remembering a snack when making decisions.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the model estimates the average memory performance of a participant, that is, the probability of accurately remembering a snack when making decisions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of what the cognitive model estimates.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "LOTO takes advantage of the fact that each snack is a choice option in multiple (three) choice trials.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, LOTO takes advantage of the fact that each snack is a choice option in multiple (i.e., three) choice trials (see 'Results: Section II').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about how LOTO is applied in this specific context.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "A model-based analysis of the subsequent memory effect predicts that variations in memory performance should be positively correlated with activation of the hippocampus.",
+    "claim_type": "EXPLICIT",
+    "source": "Ultimately, LOTO's item-specific estimate of memory performance is applied to the fMRI analysis of the encoding phase. In other words, a model-based analysis of the well-established difference in subsequent memory effect (Paller and Wagner, 2002) is conducted with the prediction that variations in memory performance should be positively correlated with activation of the hippocampus (as has been found in our original publication).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction based on established neuroscience literature and the original study.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "The LOTO-based estimate of memory explained variance in cued recall performance over and above other predictor variables (t(29) = 7.44, p < .001, d = 1.36, BF10 > 1,000).",
+    "claim_type": "EXPLICIT",
+    "source": "As can be seen in Figure 12A, the LOTO-based estimate of memory explained variance in cued recall performance over and above the other predictor variables (t(29) = 7.44, p < .001, d = 1.36, BF10 > 1,000).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical result from the logistic regression analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The improvement in the real data was much larger than in any of the datasets generated under the null hypothesis of no variability in memory performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the improvement in the real data was much larger than in any of the datasets generated under the null hypothesis (Figure 12B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the test for systematic variability shown in Figure 12B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "LOTO does not appear to misattribute variability in \u03c3 to the memory-related parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "As can be seen in Figure 12\u2014figure supplement 1, LOTO does not appear to misattribute variability in \u03c3 to the memory-related parameters.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 12\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "The fMRI analysis revealed signals in bilateral hippocampus that surpassed the statistical threshold corrected for multiple comparisons (left: Z = 3.73; p = .033; right: Z = 4.46, p = .002).",
+    "claim_type": "EXPLICIT",
+    "source": "As can be seen in Figure 12C, this analysis revealed fMRI signals in bilateral hippocampus (MNI coordinates of peak voxel in left hippocampus: x = \u221218, y = \u221210, z = \u221212; right hippocampus: 38,\u201312, \u221226) that surpassed the statistical threshold corrected for multiple comparisons (left: Z = 3.73; p = .033; right: Z = 4.46, p = .002).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the fMRI analysis shown in Figure 12C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "The fMRI effects are in line with those reported in the original publication, which were based on the GR2017 method.",
+    "claim_type": "EXPLICIT",
+    "source": "These effects are in line with those reported in the original publication, which were based on the GR2017 method and also showed a significant relationship between item-specific memory strength and hippocampal activation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with the results from the original study.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "The average signals in the left and right hippocampal ROIs were significantly related to the LOTO-based parametric modulator (left: t(29) = 2.93, p = .007, d = 0.53, BF10 = 6.42; right: t(29) = 4.36, p < .001, d = 0.80, BF10 = 182.52).",
+    "claim_type": "EXPLICIT",
+    "source": "The average signals in these ROIs were significantly related to the LOTO-based PM (left: t(29) = 2.93, p = .007, d = 0.53, BF10 = 6.42; right: t(29) = 4.36, p < .001, d = 0.80, BF10 = 182.52).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical result from the ROI analysis shown in Figure 12D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "The findings demonstrate that the analysis of a model-based subsequent memory effect reported by Gluth et al. (2015) was reproduced using LOTO.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, these findings demonstrate that we were able to reproduce the analysis of a model-based subsequent memory effect reported by Gluth et al. (2015) using LOTO.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion about the successful application of LOTO to real data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "LOTO is a simple yet efficient technique to capture trial-by-trial measures of parameters of cognitive models so that these measures can be related to neural or physiological data.",
+    "claim_type": "EXPLICIT",
+    "source": "In this work, we introduce LOTO, a simple yet efficient technique to capture trial-by-trial measures of parameters of cognitive models so that these measures can be related to neural or physiological data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "The core principle of LOTO is to infer single-trial values from the difference in the parameter estimates when fitting a model with all trials vs. a model with one trial being left out.",
+    "claim_type": "EXPLICIT",
+    "source": "The core principle is to infer single-trial values from the difference in the parameter estimates when fitting a model with all trials vs. a model with one trial being left out.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a restatement of the core principle of LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The application of LOTO is simple: first, the full set of parameters is estimated for all n trials; then, the parameters of interest are estimated again n times with each trial being left out once.",
+    "claim_type": "EXPLICIT",
+    "source": "The application of LOTO is simple: first, the full set of parameters of a model is estimated for all n trials; then, the parameters of interest are estimated again n times with each trial being left out once, while the remaining parameters are fixed to their all-trial estimates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of how to apply LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "LOTO is comparatively fast: if fitting a model once to all trials takes u time units, then LOTO's runtime will be u \u00d7 n at most.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to its simplicity, LOTO is also comparatively fast: if fitting a model once to all trials takes u time units, then LOTO's runtime will be u \u00d7 n at most (in fact, it can be expected to be even faster because not all parameters are estimated again).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the computational efficiency of LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "In contrast to the GR2017 approach, the LOTO runtime will not increase much if variability in more than one parameter is estimated.",
+    "claim_type": "EXPLICIT",
+    "source": "And in contrast to the GR2017 approach, the LOTO runtime will not increase (much) if variability in more than one parameter is estimated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of computational efficiency between LOTO and GR2017.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "Compared to related methods, LOTO appears to provide mostly comparable or even superior results.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to related methods, LOTO appears to provide mostly comparable or even superior results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the comparison results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "LOTO is a very general approach for capturing variability in parameters and can be applied to any cognitive model in principle.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, it is a very general approach for capturing variability in parameters. In principle, it can be applied to any cognitive model, although we stress the importance of testing the feasibility of LOTO for each model and study design anew.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the generality of LOTO with a caveat about testing.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "Steps 1 and 2 of the LOTO recipe are to be performed before conducting the experiment, so LOTO is not suitable for post-hoc analyses of data acquired with different study goals in mind.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, Steps 1 and 2 of this recipe are to be performed before conducting the experiment. Therefore, LOTO is not suitable for post-hoc analyses of data that have already been acquired with different study goals in mind.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a limitation of LOTO regarding its application.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "The test for the presence of variability and the power analyses are very time-consuming because they require the simulation of a large number of entire experiments and the application of LOTO to the resulting data.",
+    "claim_type": "EXPLICIT",
+    "source": "Of note, the test for the presence of variability ('Results: Section V'; Steps 2b and 3) and the power analyses ('Results: Section X'; Step 2c) are very time-consuming because they require the simulation of a large number (e.g., 1,000) of entire experiments and the application of LOTO to the resulting data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the computational demands of testing LOTO.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "For the first power analysis reported in Results Section X, 1,000 simulations of 30 participants with 160 trials each were run, meaning that the HD-LBA model had to be estimated ~5 million times.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, for the first power analysis reported in 'Results: Section X', we ran 1,000 simulations of 30 participants with 160 trials each, meaning that the HD-LBA model had to be estimated ~5 million times.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the computational demands of the power analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Other approaches such as GR17 or hierarchical Bayesian modeling can be much more time-consuming than LOTO, so that even the simplest simulation-based power analyses would become infeasible using these approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "Note, however, that other approaches such as GR17 or hierarchical Bayesian modeling can be much more time-consuming than LOTO, so that even the simplest simulation-based power analyses would become infeasible using these approaches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of computational demands between LOTO and other methods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "The idea of leaving one data point out, also termed the 'jackknife' principle, is not new and was proposed by statisticians in the 1950s.",
+    "claim_type": "EXPLICIT",
+    "source": "The idea of leaving one data point out, also termed the 'jackknife' principle, is not new. In fact, the approach was proposed by statisticians in the 1950s (Quenouille, 1956; Tukey, 1958) as a way to estimate the variance and bias of estimators when dealing with small samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical note about the jackknife principle, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "LOTO bears obvious similarities to statistical methods such as Bayesian leave-one-out cross-validation, which is employed in classification-based analyses, Bayesian model evaluation, or the leave-one-subject-out approach used in fMRI data analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "From a technical point of view, LOTO bears obvious similarities to statistical methods such as (Bayesian) leave-one-out cross-validation, which is employed in classification-based analyses (Bishop, 2006), Bayesian model evaluation (Vehtari et al., 2017), or the leave-one-subject-out approach, which is used to circumvent the non-independence error in statistical analyses of fMRI data (Esterman et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of LOTO to related statistical methods, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The jackknife principle has been adopted for inferring trial-specific onset latencies of ERPs and for quantifying trial-specific functional connectivity between different brain regions.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the jackknife principle has also been adopted for inferring trial-specific onset latencies of ERPs (Miller et al., 1998; Stahl and Gibbons, 2004) and for quantifying trial-specific functional connectivity between different brain regions (Richter et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about previous applications of the jackknife principle, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "A combination of LOTO for inferring variability in cognitive model parameters with the jackknife principle used for identifying trial-specific brain activation patterns could be a promising approach for future research in model-based cognitive neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, a combination of LOTO for inferring variability in cognitive model parameters with the same principle used for identifying trial-specific brain activation patterns could be a promising approach for future research in model-based cognitive neuroscience (e.g., Benwell et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion for future research directions.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "LOTO is a 'two-stage approach' to model-based cognitive neuroscience, in which the modeling of behavior precedes the analysis of brain data.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, LOTO is a 'two-stage approach' to model-based cognitive neuroscience, in which the modeling of behavior precedes the analysis of brain data (as exemplified in 'Results: Section XI').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a characterization of LOTO's approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "The two-stage approach misses out on the advantage of reciprocity exhibited by the joint modeling approach.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach misses out on the advantage of reciprocity exhibited by the joint modeling approach (Turner et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of a limitation of LOTO compared to joint modeling.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "LOTO's strength lies in its ease, speed and generality of application.",
+    "claim_type": "EXPLICIT",
+    "source": "However, LOTO's strength lies in its ease, speed and generality of application.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the advantages of LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "LOTO retains the flexibility of the two-stage approach with respect to identifying the neural correlates of trial-by-trial parameters without requiring an a priori hypothesis of which brain region or EEG component might be related to variability in a model parameter.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, it retains the flexibility of the two-stage approach with respect to identifying the neural correlates of trial-by-trial parameters: it does not require an a priori hypothesis of which brain region or EEG component might be related to variability in a model parameter. Instead, the variability estimate captured by LOTO can simply be plugged into, for instance, a GLM-based fMRI whole-brain analysis (Gluth and Rieskamp, 2017; O'Doherty et al., 2007; see also Figure 12C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the flexibility of LOTO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "LOTO retains the flexibility of testing different functional relationships between brain and behavior and thus lends itself to exploring different linking functions for subsequent, confirmatory studies.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, LOTO also retains the flexibility of testing different functional relationships between brain and behavior (e.g., linear, quadratic, exponential) and thus lends itself to exploring different linking functions for subsequent, confirmatory studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the flexibility of LOTO for exploratory research.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "Neuroimaging and psychophysiological techniques such as fMRI, EEG and eye-tracking allow us to shed light on the process of single actions.",
+    "claim_type": "EXPLICIT",
+    "source": "Today, neuroimaging and psychophysiological techniques such as fMRI, EEG and eye-tracking allow us to shed light on the process of single actions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the capabilities of modern neuroscience methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "The development of cognitive models has only partially kept up with advances in neuroimaging because the central tenet of cognitive modeling is still the identification of invariant features of behavior by averaging over repeated observations.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the development of cognitive models has only partially kept up with these advances because the central tenet of cognitive modeling is still the identification of invariant features of behavior by averaging over repeated observations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the state of cognitive modeling.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "LOTO has the potential to fill the gap between single-trial neuroimaging data and cognitive models that average over trials.",
+    "claim_type": "EXPLICIT",
+    "source": "LOTO has the potential to fill this gap, in particular because it will not be restricted to a handful of specific models or to a handful of experts in the field who are highly proficient in computational modeling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the potential impact of LOTO.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  }
+]

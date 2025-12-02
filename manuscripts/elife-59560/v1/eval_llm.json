@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors developed a novel in vitro assay to measure DNA entrapment within cohesin's S-K ring using thiol-specific crosslinking. BMOE-induced crosslinking of cysteine pairs at all three interfaces (hinge, Smc1-Scc1, Smc3-Scc1) produces a covalently circular cohesin species. When incubated with circular DNA, Scc2, Scc3, and ATP, this produces a ladder of retarded DNA species indicative of successive entrapment by multiple S-K rings. Ladder formation requires all three cysteine pairs, BMOE, and ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide converging evidence for a rigorous topological entrapment assay. The requirement for all three interface cysteines, BMOE crosslinker, circular DNA, and ATP provides strong controls demonstrating that the observed DNA ladders represent bona fide S-K ring entrapment rather than non-specific association. The approach addresses limitations of prior salt-resistance assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C8"
+    ],
+    "result": "S-K entrapment requires both Scc2 and Scc3, with Scc3 being essential and Scc2 providing stimulation. The process is slow, increasing over 40 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C8 are supported by time-course experiments showing that omission of Scc3 almost completely abolishes S-K entrapment while omission of Scc2 greatly reduces it. The kinetic data demonstrating slow accumulation over 40 minutes is consistent across multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "S-K entrapment depends on ATP binding to Smc3 and is stimulated by ATP hydrolysis. The Smc3K38I mutation (abolishing ATP binding to Smc3) nearly eliminates entrapment, while Walker B mutations (EQEQ, inhibiting hydrolysis) cause modest reduction. Smc3K112Q K113Q mutations also reduce S-K entrapment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by systematic mutagenesis experiments with appropriate controls. The differential effects of ATP-binding versus ATP-hydrolysis mutations provide insight into mechanism. The K112Q K113Q result parallels in vivo loading defects, strengthening physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Scc3's DNA binding activity is essential for S-K entrapment and cohesin loading in vivo. The Scc3-6E mutation (K224E K225E R226E K423E K513E K520E) abolishes DNA binding, is lethal, eliminates genome-wide cohesin association except at centromeres, causes exceptional accumulation at CENs, and fails to support S-K entrapment in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 provide comprehensive evidence linking Scc3's DNA binding to multiple functions. The convergence of in vitro DNA binding assays, in vitro entrapment assays, in vivo ChIP-seq, and viability data strongly supports the conclusion. The CEN accumulation phenotype is particularly informative, suggesting complexes stall at loading sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Scc2 binds DNA and this activity is important for S-K entrapment. The Scc2-4E quadruple mutant (S717E K721E K788E H789E) greatly reduces both DNA binding and S-K entrapment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by EMSA and entrapment assays. The structure-guided mutagenesis targeting conserved residues in the putative DNA-binding surface provides mechanistic insight. The parallel effects on DNA binding and entrapment support a functional connection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "DNAs are never entrapped within J-S compartments and only rarely within J-K compartments under conditions that promote efficient S-K entrapment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by crosslinking experiments using J-state specific cysteine pairs. The negative result for J-S and rare J-K entrapment, despite efficient J-state crosslinking, suggests that most S-K entrapped DNAs have engaged or disengaged (not juxtaposed) heads.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C6",
+      "C7",
+      "C60"
+    ],
+    "result": "Scc2 alone promotes rapid (within 2 minutes) entrapment of DNAs in both E-S and E-K compartments in an ATP-dependent but ATP-hydrolysis-independent manner. This process is Scc3-independent and is not accompanied by S-K entrapment. E-S/E-K entrapment is much faster than S-K entrapment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C53-C56, C6, C60 provide strong evidence for a novel Scc2-driven entrapment mechanism distinct from S-K entrapment. The rapid kinetics (2 min vs 40 min), Scc3-independence, lack of requirement for ATP hydrolysis (EQEQ has no effect), and absence of S-K entrapment at early timepoints all support this conclusion. The simultaneous E-S and E-K entrapment suggests a unified mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "E-S/E-K entrapment by Scc2 depends partially on Scc2's DNA binding (reduced by Scc2-4E), does not require ATP hydrolysis (unaffected by EQEQ), and requires ATP binding primarily to Smc1 (only modestly reduced by Smc3K38I).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by systematic analysis of mutants. The Scc2-4E effect links DNA binding to entrapment. The EQEQ result distinguishes E-S/E-K from S-K entrapment mechanistically. The Smc3K38I result suggests asymmetric ATP requirements, though the modest effect requires careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Entrapment of DNAs within E-S compartments is accompanied by dissociation of Smc1/Smc3 coiled coils near the joint region. Despite efficient crosslinking of coiled coil and hinge or engaged head cysteine pairs, DNAs are not entrapped in the C-H or E-C sub-compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 provide evidence for coiled coil dissociation during E-S entrapment through a clever use of sub-compartment crosslinking. The negative results for C-H and E-C entrapment, despite efficient double crosslinking, support the inference that coiled coils dissociate in DNA-bound complexes. However, C64 is explicitly labeled as an inference/deduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C10",
+      "C11"
+    ],
+    "result": "Cryo-EM structures reveal that DNAs entrapped in E-S/E-K compartments are 'clamped' between Scc2 and ATP-bound engaged heads whose coiled coils are folded around their elbow. The structure with circular DNA (7.3 \u00c5) is virtually identical to that with linear DNA (3.4 \u00c5), confirming E-S/E-K but not S-K entrapment topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C10-C11 are supported by high-quality cryo-EM structures at 3.4 \u00c5 and 7.3 \u00c5 resolution. The similarity between linear and circular DNA structures is crucial for inferring topology. The clamped state provides molecular explanation for E-S/E-K entrapment. The structures are consistent with biochemical data and provide atomic-level mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "DNA enters the clamped E-S/E-K state without loop formation. A single DNA segment must have passed between the heads prior to their engagement, as circular DNA is not highly bent when clamped.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are logical inferences from the cryo-EM structure showing unbent circular DNA in the clamped state. The reasoning is sound: if DNA were inserted as a loop, it would need to be bent ~180\u00b0, which is not observed. However, these are explicitly labeled as inferences rather than direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The 3.4 \u00c5 cryo-EM structure reveals detailed molecular interactions in the clamped state. Scc2 binds DNA through a curved basic/polar surface and contacts both Smc1 (via HEAT repeats 18-24 docking on F-loop) and Smc3 (via \u03b2-strand and salt bridges with K112/K113). Engaged Smc1/Smc3 heads form a pseudo-symmetrical heterodimer binding DNA at two sites two turns apart. Scc1's structured domains bind canonically to Smc3's neck and Smc1's base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 describe structural features directly observed in the 3.4 \u00c5 cryo-EM map with atomic models built and refined. The resolution is sufficient to identify specific residues and interactions. The pseudo-symmetry of DNA binding and the detailed Scc2-SMC contacts provide mechanistic insights. The canonical Scc1 binding contradicts some prior models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "In the absence of ATP, addition of both Scc2 and DNA causes ~50% reduction in J-state crosslinking, suggesting they drive or hold ATPase heads apart to facilitate DNA passage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by crosslinking experiments, though C79 is explicitly a suggestion/speculation. The observation is reproducible and provides insight into how DNA might access the space between heads. However, the mechanism by which Scc2 and DNA promote head separation remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The in vitro S-K entrapment activity involves mechanisms similar or identical to those of cohesin operating within cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is explicitly labeled as speculation. While the in vitro system recapitulates several in vivo properties (ATP dependence, Scc2/Scc3 requirements, effects of mutations that affect loading), direct demonstration that the mechanisms are identical would require additional experiments. The correlation is suggestive but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C12",
+      "C13",
+      "C83"
+    ],
+    "result": "E-S/E-K entrapment by Scc2 may be a precursor to S-K entrapment. The clamped conformation may be a recurrent feature of loop-extruding cohesin and may precede S-K entrapment required for sister chromatid cohesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83, C12-C13 are explicitly labeled as suggestions/speculation. While the kinetic data (order of magnitude faster E-S/E-K vs S-K) and the requirement for Scc2 in both processes are consistent with a precursor-product relationship, direct demonstration of this pathway is lacking. The model is plausible but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Clamping and release of DNA between Scc2 and engaged heads may drive cohesin's translocation along DNA during loop extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is explicitly speculation. While consistent with Scc2's roles in ATPase stimulation and loop extrusion, the model lacks direct experimental support. The clamped structure provides a plausible intermediate, but demonstrating its role in translocation would require additional experiments, likely single-molecule studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Scc3 has a unique role in promoting DNA entry into the S-K ring. This depends on its DNA binding via two sets of residues (K224/K225/R226 and K423/K513/K520). The 6E mutation abolishing both sets is lethal, eliminates S-K entrapment, but does not affect E-S/E-K entrapment. Complete Scc3 depletion has additional DNA-binding-independent functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C88-C91 are supported by comprehensive genetic, biochemical, and structural data. The differential effects of single vs. double mutations, the specific loss of S-K but not E-S/E-K entrapment with Scc3-6E, and the more severe phenotype of complete depletion provide strong evidence for Scc3's role in S-K entrapment and additional functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "S-K entrapment in vivo is not abolished by fusing Scc1 domains to SMC heads, implying DNA enters through the hinge or via SMC-kleisin interface dissociation. Coiled coil folding brings the hinge near DNA bound to heads, and Scc3 interacts with half-opened hinges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 cite prior work to support possible mechanisms for S-K entrapment. The citations appear appropriate and the logic is sound. However, these are primarily literature-based claims rather than new findings from this study. The authors appropriately note that distinguishing between hinge vs. kleisin gate mechanisms remains unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background claims about cohesin structure, function, and regulation based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C15-C32 are background knowledge claims supported by appropriate citations. These establish the context for the current work and appear accurately represented based on the cited literature. These are not novel findings but rather established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "All three cohesin activities (loop extrusion, G1 entrapment, S-phase entrapment) require Scc2 and Scc3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C3 is stated as a finding but is somewhat imprecise. The manuscript shows that S-K entrapment requires both Scc2 and Scc3, while E-S/E-K entrapment requires only Scc2. The claim that 'all three activities' require both proteins needs clarification about what exactly is meant by 'G1 entrapment' vs 'S-phase entrapment' and how these relate to the measured E-S/E-K vs S-K entrapment.",
+    "result_type": "MAJOR"
+  }
+]

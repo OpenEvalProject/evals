@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study demonstrates a sequential developmental pathway from naive CD4+ T cells to central memory (TCM) to effector memory (TEM) cells. This conclusion is based on the observation that donor chimerism in TEM lags behind TCM, ruling out TEM as a direct precursor of TCM, and model comparison showing stronger support for TCM rather than naive T cells as the source of TEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C34 provide converging evidence from kinetic data (C32) and statistical model comparison (C34) that support the sequential naive\u2192TCM\u2192TEM pathway. The lag in TEM chimerism relative to TCM (C32) provides temporal evidence, while AICc-based model selection (C34, Table 1) provides quantitative statistical support for this developmental sequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C110"
+    ],
+    "result": "Both TCM and TEM memory subsets exhibit kinetic heterogeneity in their turnover rates. For TCM, an age-dependent loss model is statistically favored, while for TEM a two-phase model provides the best fit. Both models indicate progressive lengthening of clonal lifetimes, with newly recruited memory lost on timescales of days to weeks and established memory persisting for several months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C36-C41, and C110 collectively demonstrate heterogeneity through rigorous model comparison (C36-C38) and parameter estimation (C39-C41). The rejection of homogeneous models (C36) and strong statistical support for models incorporating heterogeneity (C37-C38), combined with quantitative estimates of clonal half-lives (C40-C41), provide robust evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C43",
+      "C44",
+      "C6",
+      "C74",
+      "C86",
+      "C87"
+    ],
+    "result": "In adult mice, the constitutive generation of CD4+ memory T cells occurs at rates independent of environmental antigenic burden. Donor-derived memory cells accumulated at similar rates in clean and dirty environments, with no substantial differences in loss rates or Ki67 expression across environments, indicating that self-recognition drives continuous memory generation in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C43-C44, C6, C74, C86-C87 provide multiple lines of converging evidence: similar donor cell accumulation (C30), similar loss rates (C43), and similar Ki67 expression (C73-C74, C86) across environments. The synthesis in C87 appropriately integrates these observations to conclude that self-recognition is the major driver of adult memory homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C88",
+      "C89"
+    ],
+    "result": "Early life exposure to environmental antigens establishes memory compartments at sizes determined by environmental 'dirtiness', with dirty mice having 3-5 times more memory cells than clean mice. These differences are sustained into adulthood through slow turnover of early-established memory populations. Modeling indicates that dirty mice require a 2.7-fold higher force of recruitment into TCM during the first weeks of life compared to clean adult mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29, C57-C58, C62-C63, C88-C89 provide consistent evidence from cell counts (C29, C88), modeling predictions (C61-C63, C89), and inference about persistence (C57-C58). The quantitative modeling (C62-C63, C77) successfully explains observed differences in compartment sizes, and the predictive failure when using adult parameters for young mice (C59, C61) strengthens the conclusion about elevated early-life recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C82",
+      "C85"
+    ],
+    "result": "Analysis of germ-free mice reveals that both self-antigens and commensal antigens contribute to memory generation, but their contributions differ temporally. Substantial memory cells are present in germ-free mice (C64-C65), but dirty mice have ~5-fold more memory cells than germ-free mice (C69), indicating commensals are substantial drivers of expansion. The rate of TCM generation in young mice reflects both self and environmental antigens (C82), but commensal contribution is largely restricted to the neonatal period (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70, C82, and C85 provide a coherent picture supported by cell counts across multiple facilities (C64-C69) and modeling analysis (C75-C77, C82). The presence of memory in germ-free mice (C64-C65) demonstrates self-antigen contribution, while the quantitative differences between germ-free and dirty mice (C69-C70) demonstrate commensal contribution. The temporal restriction to neonatal period (C85) is supported by the adult data showing environment-independent rates (C6, C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Quantitative modeling reveals that 2-3 fold changes in the force of recruitment into TCM during early life are sufficient to explain memory compartment sizes across all environments (germ-free, clean, and dirty). Remarkably, the rate of TEM development from TCM is independent of both age and environment, with TEM numbers explained solely by differences in TCM precursor population sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 and C83 demonstrate successful quantitative prediction across environments. The model's ability to predict TEM numbers in all three environments using a single set of adult parameters (C78) and the sufficiency of 2-3 fold recruitment changes to explain TCM differences (C79) provide strong support. The independence of TEM development from environment (C80-C81, C83) is a robust, model-supported conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "Environmental factors impact naive T cell maintenance, with naive T cell numbers declining almost twice as fast in dirty mice (half-life 143 days) compared to clean mice (half-life 228 days). This difference derives from more rapid thymic involution in the dirty environment, as evidenced by similar decline rates in single-positive thymocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 and C102 provide quantitative evidence from both peripheral (C97) and thymic (C99) compartments showing parallel declines. The similar rates of decline in thymocytes and peripheral naive cells (C98-C99) support the interpretation that thymic output, not peripheral lifespan, drives the difference. The quantitative estimates include confidence intervals (C48-C49, C97, C99), strengthening the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The busulfan chimera model preserves normal peripheral T cell compartment sizes. Total numbers of CD4+ naive, TCM, and TEM cells in busulfan chimeric mice were comparable to untreated wild-type controls, validating the experimental system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 establish the validity of the experimental model through comparison with wild-type controls (C25, Figure 1\u2014figure supplement 1) and citation to previous validation studies (C26). This is essential methodological validation that supports the interpretation of all subsequent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Limited replacement of host TCM by donor cells in adult chimeras results from three factors: age-related decline in naive T cell numbers due to thymic involution (with half-lives of 228 days in clean and 143 days in dirty mice), slow average turnover rates of memory cells, and increased persistence of established memory cells compared to newly recruited cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C45-C49 synthesize multiple observations into a mechanistic explanation. The quantitative estimates of naive T cell decline (C47-C49) are well-supported by exponential fits to data, and the synthesis (C50) appropriately integrates these with the modeling results on memory turnover and heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The two-phase and age-dependent loss models make different predictions about memory establishment efficiency. The two-phase model predicts inefficient establishment with only 2-10% of TEM and 3-5% of TCM surviving to become persistent slow memory, but substantial influxes maintain comparable fast and slow population sizes. The age-dependent loss model predicts more efficient establishment with newly generated memory having 20-40 day half-lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 accurately describe model-specific predictions with quantitative parameter estimates (C52-C53, Table 2). The acknowledgment of model-dependence and presentation of predictions from both favored models (C51, C55-C56) is appropriate given the statistical support for different models in TCM vs TEM (C37-C38). The consistency with previous BrdU data (C54) provides independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Adult model parameters show differential predictive power for early life dynamics. For clean mice, adult TCM parameters slightly underestimated numbers and failed to capture rapid early accumulation, but adult TEM parameters predicted TEM establishment remarkably well using observed TCM as source. For dirty mice, adult parameters underestimated TCM numbers at 14 weeks by ~4-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe the predictive performance of models when extrapolated to young mice (Figure 5). The success for TEM (C60) and failure for TCM (C59, C61) provide important validation and falsification tests that strengthen the overall conclusions about age-dependent recruitment forces.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "There is limited evidence for homeostatic regulation of circulating memory T cells in SPF mice. Memory cell numbers vary only 2-3 fold between environments with similar loss rates, memory compartments do not rapidly fill with large clones in young mice, and they appear expandable following infections in older animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 provide multiple lines of evidence against strong homeostatic regulation: limited variation in numbers (C103), similar loss rates (C104), lack of rapid saturation (C107), and expandability (C108). The cautious interpretation (C105) appropriately acknowledges that regulation at higher densities cannot be ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The kinetic substructure differs between TCM and TEM. For TCM in adults, there is evidence for slow, continuous changes in net loss rates as cells age, supported by slow convergence of Ki67 levels in donor and host cells. For TEM, data more strongly support a discrete two-phase model with rapid transition from fast to slow memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 appropriately distinguish between the best-supported models for each subset based on statistical comparison (C37-C38) and provide independent supporting evidence from Ki67 dynamics (C113). The reference to previous BrdU data (C115) provides additional context, though the authors note difficulty in direct comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The interpretation of germ-free mouse data is complicated by potential confounding factors. The seven-fold difference in recruitment force between germ-free and dirty mice suggests self-recognition accounts for ~14% of memory in dirty mice, but smaller memory compartments in germ-free mice may also derive from smaller lymph nodes due to lack of bacterial stimulation of dendritic cell migration. Additionally, lymphopenia-driven memory generation may contribute to neonatal recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C95 appropriately acknowledge important caveats and alternative explanations. The quantitative interpretation (C90) is based on modeling, but the authors correctly note (C91-C93) that indirect effects of commensals on lymphoid development cannot be easily separated from direct effects on memory generation. The speculation about lymphopenia (C94-C95) is supported by citation but represents an untested alternative mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Memory subsets are likely more heterogeneous than any single model suggests. Alternative mechanisms such as generation of memory with a distribution of intrinsic fitness levels, with selection for clones with lower net loss rates over time, could explain observations and may be difficult to distinguish from age-dependent changes in fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C119 represent appropriate speculation about model limitations and alternative mechanisms. While the authors acknowledge these possibilities (C116-C117) and note they could explain key observations (C118), they also recognize the difficulty in distinguishing mechanisms (C119). This represents honest acknowledgment of uncertainty rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "From age 10 weeks onwards, naive CD4+ T cell numbers were broadly similar between clean and dirty mice, and total memory subset sizes remained relatively stable over the analysis timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe basic observational data shown in Figure 1B. These are straightforward descriptive claims supported by the presented data, though C28 notes stability 'over the time frame of analysis' which is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "There is lower proportional replacement of pre-existing memory cells with donor memory cells in dirty mice compared to clean mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is a direct inference from C29 (larger memory compartments in dirty mice) and C30 (similar donor accumulation in both environments), shown in Figure 1D. This is a logical consequence of the two observations and is appropriately characterized as an inference.",
+    "result_type": "MINOR"
+  }
+]

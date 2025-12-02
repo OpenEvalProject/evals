@@ -1,0 +1,1390 @@
+{
+  "submission": {
+    "id": "64cc6e4d-9386-4361-a757-d2abba2e848e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:32:43.112952Z",
+    "updated_at": "2025-12-02T18:32:43.112952Z"
+  },
+  "content": [
+    {
+      "id": "32e42d46-2645-411b-a243-f271df96304f",
+      "submission_id": "64cc6e4d-9386-4361-a757-d2abba2e848e",
+      "content_type": "manuscript",
+      "content_text": "# Universality of clonal dynamics poses fundamental limits to identify stem cell self-renewal strategies\n\n## Authors\n\n- Cristina Parigini<sup>1</sup>\n- Philip Greulich<sup>1</sup> ([ORCID: 0000-0001-5247-6738](https://orcid.org/0000-0001-5247-6738)) \u2020\n\n### Affiliations\n\n1. School of Mathematical Science, University of Southampton Southampton United Kingdom\n2. Institute for Life Sciences, University of Southampton Southampton United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow adult stem cells maintain self-renewing tissues is commonly assessed by analysing clonal data from in vivo cell lineage-tracing assays. To identify strategies of stem cell self-renewal requires that different models of stem cell fate choice predict sufficiently different clonal statistics. Here, we show that models of cell fate choice can, in homeostatic tissues, be categorized by exactly two \u2018universality classes\u2019, whereby models of the same class predict, under asymptotic conditions, the same clonal statistics. Those classes relate to generalizations of the canonical asymmetric vs. symmetric stem cell self-renewal strategies and are distinguished by a conservation law. This poses both challenges and opportunities to identify stem cell self-renewal strategies: while under asymptotic conditions, self-renewal models of the same universality class cannot be distinguished by clonal data only, models of different classes can be distinguished by simple means.\n\n## Introduction\n\nAdult stem cells are the key players for maintaining and renewing biological tissue, due to their ability to persistently produce tissue cells through cell division and differentiation (National Institute of Health, 2009). For maintaining tissues in a homeostatic state, it is crucial that stem cells adopt suitable self-renewal strategies, a pattern of stem cell fate choices that balances proliferation and differentiation; otherwise, imbalanced proliferation may lead to hyperplasia and cancer. Therefore, the understanding and identification of stem cell self-renewal strategies has been a major goal of stem cell biology ever since the discovery of adult stem cells.\n\nClassically, two stem cell self-renewal strategies have been proposed (Potten and Loeffler, 1990; Simons and Clevers, 2011a): following the Invariant Asymmetric division (IA) strategy, stem cells undertake only asymmetric divisions, whose outcome is one differentiating cell and one stem cell as daughter cells. The other proposed strategy, Population Asymmetry (PA) (Potten and Loeffler, 1990; Simons and Clevers, 2011a; Watt and Hogan, 2000; Klein and Simons, 2011), features additionally symmetric divisions, which produce either two stem cells or two differentiating cells as daughters, yet in balanced proportions. Both patterns of cell fate choice leave the number of cells on average unchanged and thus can maintain homeostasis. Assessing stem cell self-renewal strategies experimentally is difficult in vivo, since direct observation of cell divisions is rarely possible. Yet, through genetic cell lineage-tracing assays, the statistics of clones \u2013 the progeny of individual cells \u2013 can be obtained, and via mathematical modeling assessing cell fate dynamics became possible. With such an approach several studies suggested that population asymmetry prevails in many mouse tissues (e.g. Clayton et al., 2007; Lopez-Garcia et al., 2010; Simons and Clevers, 2011b; Doup\u00e9 et al., 2012; Klein et al., 2010).\n\nHowever, the interpretation of those studies has been challenged by a suggested alternative self-renewal strategy, called Dynamic Heterogeneity (DH), featuring some degree of cell fate plasticity (Greulich and Simons, 2016). In this model, all stem cell divisions are asymmetric, yet it is in agreement with the experimental clonal data that had previously been shown to agree also with the population asymmetry strategy. Thus, those two strategies are not distinguishable in view of the clonal data.\n\nThis raises the question to what extent different stem cell self-renewal strategies can be distinguished at all via clonal data (Klein and Simons, 2011; Greulich, 2019). Here, we address this question by studying models for stem cell fate choice, which define the self-renewal strategies, in their most generic form. We show that many cell fate models predict, under asymptotic conditions, the same clonal statistics and thus cannot be distinguished via clonal data from cell lineage-tracing experiments. In particular, we find that there exist two particular classes of stem cell self-renewal strategies: one class of models which all generate an Exponential distribution of clone sizes (the number of cells in a clone) after sufficiently large time, and one which generates a Normal distribution under sufficiently fast stem cell proliferation. Crucially, these two classes are not differentiated via the classical definitions of symmetric and asymmetric stem cell divisions, but by whether or not a subset of cells is conserved. These classes thus bear resemblance to 'universality classes' known from statistical physics, as suggested in Klein and Simons, 2011. This leads us to a more generic, and in this context more useful, definition of the terms \u2018symmetric\u2019 and \u2018asymmetric\u2019 divisions. Notably, however, we find that the conditions for the emergence of universality are not always fulfilled in real tissues, which provides chances, but also further challenges, for the identification of stem cell fate choices in homeostatic tissues.\n\n### Strategies for stem cell self-renewal\n\nThe two classical stem cell self-renewal strategies, Invariant Asymmetry (IA) and Population Asymmetry (PA) (Potten and Loeffler, 1990; Simons and Clevers, 2011a; Watt and Hogan, 2000; Klein and Simons, 2011), are commonly described in terms of two cell types: stem cells (S) which can self-renew (i.e. divide without reducing their potential to divide in the future); and differentiating cells (D). Both strategies can be expressed in terms of a single parametrized stochastic model, a multi-type branching process (Haccou et al., 2005), defined by the outcomes of cell divisions (the cell fate choices),\n\n$$\nS\u27f6\\lambda{S+Swith probability\u00a0rS+Dwith probability\u00a01\u22122rD+Dwith probability\u00a0r,\n$$\n\nwhere cells of type S divide with rate \u03bb. Here, a daughter cell configuration $S+S$ corresponds to symmetric self-renewal division and $D+D$ to symmetric differentiation, while daughter cells of different type, $S+D$, marks an asymmetric division. In the basic model version, a cell of type D is eventually lost with rate \u03b3, $D\u2062\u27f6\ud835\udefe\u2062\u2205$ (corresponding to death, shedding, or emigration of D-cells), while other versions may include the possibility of limited proliferation as committed progenitor cells. The two self-renewal strategies, IA and PA, are distinguished by the value of the symmetric division fraction r: the PA model corresponds to any $0<r\\leq\\frac{1}{2}$; the IA model is defined by $r=0$, that\u00a0is, only asymmetric divisions occur.\n\nTo maintain homeostasis, the number of cells must stay, on average, constant. Thus cells following the PA strategy must regulate the probabilities of symmetric self-renewal and differentiation to be exactly equal, whereas for the IA model this is trivially assured. However, only for the IA model is the number of stem cells strictly conserved, that\u00a0is, no gain or loss of stem cells is possible.\n\nA way to assess self-renewal strategies experimentally is via genetic cell-lineage tracing (Kretzschmar and Watt, 2012; Blanpain and Simons, 2013): By marking single cells with an inheritable genetic marker (through a Cre-Lox system [Soriano, 1999; Sauer, 1998]) each cell\u2019s progeny, called a clone, which retain that marker, can be traced. The number of cells per clone, that is the clone size, is measured and the statistical frequency distribution of clone sizes (clone size distribution) determined. To test the cell fate choice models on that data, one evaluates the models with a single cell as initial condition and samples the outcome in terms of the final cell numbers \u2013 the size of a virtual clone. In the basic version of the model (i.e. when $D\u2062\u27f6\ud835\udefe\u2062\u2205$), the IA and PA models predict, respectively, a Poisson and an Exponential clone size distribution for large times (Klein and Simons, 2011; Antal and Krapivsky, 2010) (see also the Appendix, 'Invariant Asymmetry and Population Asymmetry models'). Thus, they are fundamentally different and can easily be distinguished when compared with clonal data. By a series of lineage-tracing experiments it was confirmed that Exponential clone size distributions prevail for most mouse tissues, which thus exclude the IA model and support the PA strategy (Clayton et al., 2007; Lopez-Garcia et al., 2010; Simons and Clevers, 2011b; Doup\u00e9 et al., 2012; Klein et al., 2010).\n\nWhile this seemed to settle the case in favour of the PA strategy, at least for most adult mouse tissues, this was challenged by a third type of strategy, the DH model (Greulich and Simons, 2016). Motivated by the emerging view of prevailing cell plasticity (Blanpain and Fuchs, 2014; Tetteh et al., 2015; Tetteh et al., 2016; Donati and Watt, 2015), the DH model considers the possibility of reversible switching between two cell types:\n\n$$\nS\u2192\\lambdaS+D,S\u21cc\\omega_{S}\\omega_{D}D,D\u2192\\gamma\u2205.\n$$\n\nwhere symbols at arrows denote the process rates (frequency of events). This strategy is also capable of maintaining a homeostatic population if $\\gamma/\\lambda=\\omega_{S}/\\omega_{D}$. Notably, the DH model only features asymmetric divisions (in that daughter cells are of different type), like the IA model, yet the DH model predicts clonal statistics that are indistinguishable from the PA model (Greulich and Simons, 2016). This means that in view of the existing clonal data for mouse tissues, the DH model, may as well describe the real cell fate dynamics. More fundamentally, this implies that the PA and DH model cannot be distinguished via plain clonal data, which poses fundamental limitations to the common approach to use lineage tracing for determining cell fate choices.\n\nThis demonstrates that the classical definition of asymmetric and symmetric divisions is not always suitable to distinguish cell fate strategies in view of clonal data alone. In general, cell fate dynamics may be much more complex than the simplified models described above, as there may exists a plethora of cell (sub-)types in a tissue. However, to what extent would it be possible to distinguish details of potentially rather complex cell fate dynamics models through comparison with clonal data at all? This is only the case if the clonal statistics are sufficiently different. In the following, we study cell fate models in their most generic form, and analyze what clonal statistics would be expected.\n\n## Results\n\n### Model generalization\n\nLet us consider the dynamics of a generic system of cells, characterized by a number m of possible cell states Xi, $i=1,\u2026,m$. We define a cell state here as a group of cells showing common properties (e.g. any cell sub-type classification). Most generally, cells in a state Xi may be able to divide, producing daughter cells of any cell states Xj and Xk (where $i=j=k$, that\u00a0is, simple cell duplication, is possible). Furthermore, any cell state Xi may turn into another state Xj or may be lost (through emigration, shedding, or death). Hence, we can write a generic cell fate model as,\n\n$$\n\u00a0cell division:\u00a0X_{i}\u2192\\lambda_{i}r_{i}^{jk}X_{j}+X_{k}\n$$\n\n\n\n$$\n\u00a0cell state change:\u00a0X_{i}\u2192\\omega_{ij}X_{j}\n$$\n\n\n\n$$\n\u00a0cell loss:\u00a0X_{i}\u2192\\gamma_{i}\u2205,\n$$\n\nwhere $i,j,k=1,\u2026,m$. In this model, $\\lambda_{i}$ is the rate of division of cells in state Xi and the parameter $r_{i}^{j\u2062k}$ corresponds to the proportion of division outcomes producing daughter cells of state Xj and state Xk; \u03c9ij is the transition rate from state Xi to state Xj and $\\gamma_{i}$ the loss rate from state Xi.\n\nThe dynamics of each cell in Equations 3-5 could depend on the cell environment through spatial, cell-extrinsic regulation of cell fate. However, the clonal statistics of spatial models that include cell-extrinsic regulation of cell fate (models of the voter type [Clifford and Sudbury, 1973]) are, in the long term, the same as for the corresponding branching\u00a0process\u00a0models (Haccou et al., 2005),\u00a0as\u00a0Equations 3-5\u00a0are, except for one-dimensional arrangements of cells (as shown in Klein and Simons, 2011; Bramson and Griffeath, 1980). Here, we are focussing on the long-term clonal statistics of self-renewal strategies, and since this is not affected by cell-extrinsic regulation, for tissues with two-dimensional or three-dimensional arrangements of dividing cells (like epithelial sheets, and volumnar tissue), we wish to keep the analysis simple and therefore choose dynamics (and thus the parameters $\\lambda_{i},\\omega_{i\u2062j},r_{i}^{j\u2062k},\\gamma_{i}$) to be independent of the cell environment.\n\nIn the following, we study the dynamics of cell numbers in each state Xi, $n_{i}$. To gain initial insight into those dynamics, let us first consider the time evolution of the mean cell numbers, $n\u00af_{i}=\u27e8n_{i}\u27e9$, given by,\n\n$$\n\\frac{d}{d\u2062t}\u2062n\u00af_{i}=\\sumj(\\lambda_{j}\u20622\u2062r_{j}^{i}+\\omega_{j\u2062i})\u2062n\u00af_{j}-(\\lambda_{i}+\\sumj\\omega_{i\u2062j}+\\gamma_{i})\u2062n\u00af_{i}.\n$$\n\nin which $r_{i}^{j}=\\sum_{k}(r_{i}^{j\u2062k}+r_{i}^{k\u2062j})/2$ is the probability of having a daughter cell in state Xj produced upon division of a cell in state Xi. This linear system of differential equations can be written more compactly in terms of the mean cell number vector $\ud835\udc8f\u00af=(n\u00af_{1},n\u00af_{2},\u2026,n\u00af_{m})$,\n\n$$\n\\frac{d}{d\u2062t}\u2062\ud835\udc8f\u00af=A\u2062\ud835\udc8f\u00af,\n$$\n\nwith $A$ being the $m\\timesm$ matrix\n\n$$\nA=(\u03ba_{11}-\\delta_{1}\u03ba_{21}\u03ba_{31}\u22ef\u03ba_{12}\u03ba_{22}-\\delta_{2}\u03ba_{32}\u22ef\u03ba_{1\u2062m}\u03ba_{2\u2062m}\u22ef\u03ba_{m\u2062m}-\\delta_{m}),\n$$\n\nwhere we defined the total transition rate $\u03ba_{i\u2062j}=\\lambda_{i}\u20622\u2062r_{i}^{j}+\\omega_{i\u2062j}$, combining all transitions from Xi to Xj by cell divisions and direct transitions, and the local loss rate $\\delta_{i}=\\lambda_{i}+\\sum_{j}\\omega_{i\u2062j}+\\gamma_{i}$.\n\nModels of the form Equations 3\u20135 are not generally in homeostasis, which in this context is defined by the existence of a stationary state $\ud835\udc8f\u00af^{*}$, with $d\u2062\ud835\udc8f\u00af^{*}/d\u2062t=0$, that is (Lyapunov)\u00a0stable and non-trivial\u00a0(for a discussion, see the Appendix 'Conditions for homeostasis'). This can in principle be assessed through the spectral properties of A (\u00c5str\u00f6m and Murray, 2008), but applying spectral conditions explicitly is unwieldy and difficult to interpret biologically. For a more intuitive view, we interpret the system, Equation 7, as a network (graph): the matrix A can be interpreted as the adjacency matrix of the cell state network. This is a weighted directed graph in which cell states correspond to the graph\u2019s nodes and a link from state Xi to Xj exists where a transition is possible, that\u00a0is, when $\u03ba_{i\u2062j}>0$. The value of $\u03ba_{i\u2062j}$ also denotes the link weights (diagonal elements of A can be considered as self-links). Now, we note that Equation 7 is linear and cooperative, that\u00a0is, the off-diagonal elements of matrix A are non-negative, and for such systems more simple and intuitive conditions for homeostasis exist (Greulich et al., 2019), based on a decomposition into the network\u2019s Strongly Connected Component (SCC). An SCC is a sub-graph that groups nodes which are strongly connected, that\u00a0is, which are mutually connected by paths (more accurately: two nodes, Xi and Xj are strongly connected if there exists a path from Xi to Xj and from Xj to Xi on the network). An example of such a decomposition, which yields an acyclic condensed network that contains SCCs as nodes and directed links between them, is shown in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56532/elife-56532-fig1-v2.jpg)\n\n**Figure 1.:** (Left): An example cell state network representing the matrix $A$ in Equation 8 (self-links not displayed). The dashed circles denote the network\u2019s Strongly Connected Components (SCCs ) (see definition in text). (Middle): The Condensed network is the corresponding network of SCCs, $S_{k}$, wherein SCCs are the nodes and a link between two SCCs exists if any of their states are connected. For homeostatic networks, an SCC with dominant eigenvalue $\\mu=0$ is at the apex, while other SCCs have $\\mu<0$. (Right): We distinguish two compartments, the Renewing compartment $\u211b$, consisting of the apex SCC, with $\\mu=0$, and the Committed compartment $\ud835\udc9e$ consisting of the remainder, with $\\mu<0$.\n\nThe stability of systems like Equation 7 is then determined by the dominant eigenvalues $\\mu_{k}$ of each strongly connected component $k$, for $k=1,\u2026,m_{S}$ where $m_{S}$ is the number of SCCs, and their topological arrangement\u00a0(the Perron-Frobenius theorem assures that for adjacency matrices of SCCs of cooperative systems, a unique, real, maximal eigenvalue exists, which is the dominant eigenvalue [Arrow, 1989; Greulich et al., 2019]). In brief, according to Greulich et al., 2019, the conditions for existence of a homeostatic state are that, at the apex of each lineage (the condensed cell state network), there must be an SCC with dominant eigenvalue $\\mu_{k}=0$, while all SCCs downstream of the former must have $\\mu_{k}<0$ (see detailed discussion in the Appendix, 'Conditions for homeostasis'). Given this structure of homeostatic models, we can define two compartments in the cell state transition network: (1) the (self-) Renewing compartment ($\u211b$), which is the SCC at the apex of the lineage tree; and (2) the Committed compartment ($\ud835\udc9e$), which consists of all SCCs with $\\mu_{k}<0$, that\u00a0is, those downstream of the apex SCC. Importantly, cells in states forming $\u211b$ have the potential to return to any state within the same compartment and this population maintains itself. Instead, the cell population in $\ud835\udc9e$ would vanish without external input, since the combined dominant eigenvalue of all those SCCs is negative (it is the maximum of all SCCs\u2019 $\\mu_{k}<0$), thus the progeny of each cell in the committed compartment will eventually be lost. We can thereby classify cells as being of a (self-)Renewing type (R) if their state is within $\u211b$, and of a Committed type (C) if their state is in $\ud835\udc9e$. With this coarse-grained classification, a generic homeostatic model can be represented in terms of compartments $\u211b$ and $\ud835\udc9e$ as,\n\n$$\nR\u2192\\lambda_{R}{R+Rwithprobabilityr_{RR}R+Cwithprobability1\u2212r_{RR}\u2212r_{CC}C+Cwithprobabilityr_{CC},\n$$\n\n\n\n$$\nR\u2192\\omega_{RC}C,C\u2192\\lambda_{C}C+C,C\u2192\\gamma_{C}\u2205,\n$$\n\nwhere the symbols above arrows are the effective rates of those events, denoting the average frequency at which they occur (loss events $R\u2192\u2205$ are not explicitly included, since they can be approximated by a short lived state $X_{d}$ in $\ud835\udc9e$, as $R\u2192X_{d}\u2192\u2205$). To be compatible with a homeostatic condition, it is further required that (i) the R-population remains on average constant ($\\mu_{k}=0$), that\u00a0is, $\\lambda_{R}\u2062r_{R\u2062R}=\\lambda_{R}\u2062r_{C\u2062C}+\\omega$, and (ii) the loss rate of C must exceed its proliferation rate ($\\mu_{k}<0$), that\u00a0is, $\\gamma_{C}>\\lambda_{C}$. Figure 1 shows how a generic homeostatic cell state network can be condensed into an effective model of renewing and committed cell states, according to Equation 9. It has to be noted, however, that the events depicted in Equation 9 are not Markovian, that\u00a0is, the timing of events is not independent from each other and depends on their history. Thus, the \u2018rates\u2019 $\\lambda_{R}$, $\\lambda_{C}$, $\\omega_{R\u2062C}$, and \u03b3C are not constant rates in the Markovian sense, yet we can define them by the mean frequency of events occurring (see Appendix 'Approximation of generic GIA models' and 'Asymptotic clone size distributions: mathematical analysis').\n\nThe formulation in terms of renewing and committed states can help us to gain insights into potential behaviors of generic homeostatic cell fate models. In particular, we define generalized asymmetric divisions as events of the type $R\u2192R+C$, and generalized symmetric divisions as events of the type $R\u2192R+R$ (symmetric renewal) and $R\u2192C+C$ (symmetric commitment). With these definitions, we can categorize homeostatic cell fate models into two classes: Generalized Invariant Asymmetry (GIA) models are those which only exhibit $R\u2192R+C$ divisions in the renewing compartment, while Generalized Population Asymmetry (GPA) are models for which such restriction does not hold. We note that the two classes are equivalently characterized by a conservation law: For GIA models, the number of cells in $\u211b$ is strictly conserved, while for GPA models, no such conservation law holds. Since $\\mu=0$ is necessary for conservation, the only possible conserved cell states in homeostasis are those in $\u211b$. Naturally, the previously discussed IA model is a GIA model and the PA model is a GPA model. Notably, the DH model (Equation 2) is of the GPA category, since in that model S and D cells form a single SCC at the apex of the lineage hierarchy, and thus they are both part of $\u211b$. Therefore, a division $S\u2192S+D$ in the DH model, which is asymmetric in the conventional sense, corresponds to $R\u2192R+R$ in terms of compartments (Equation 9) and thus it is a generalised symmetric division. According to this classification, PA and DH models are both in the same category (GPA), and indeed, both predict the same type of clone size distribution, an Exponential one (Greulich and Simons, 2016).\n\n### Numerical simulation of random cell fate models\n\nTo check whether the correspondence between model class, GIA vs. GPA, and predicted clonal statistics holds in general, we analyze the clonal dynamics numerically, by generating and testing a large number of random stochastic models, implemented via random generation of the parameters \u03bbi, \u03c9ij, \u03b3i and $r_{i}^{j\u2062k}$. To simulate clones, we perform stochastic simulations based on the Gillespie algorithm (Gillespie, 1977), assuming a Markov process following the rules of Equation 3-5. We run, for each model, a large number of simulations with initially one cell in the compartment $\u211b$, thus the cell population of each simulation run represents one clone. Then we sample their outcomes, the total cell numbers per clone (the clone size) $n=\\sum_{i}n_{i}$, to obtain predictions for clonal statistics, namely the frequency distribution of clone sizes (clone size distribution) and mean clone sizes (see Materials and methods).\n\nWe first study the mean clone size of surviving clones (with $n>0$), $n\u00af_{s}=\u27e8n\u27e9|_{n>0}$, shown in Figure 2, respectively, for the GIA and GPA models, as a function of time (the final time $\\tau=20/\\alpha_{min}$ where $\\alpha_{min}$ is the minimal process rate, $\\alpha_{min}=min\u2061(\\lambda_{1},\u2026,\\omega_{12},\u2026,d_{m})$). We note that indeed a common behavior is seen in each case. While for every simulated GIA model, $n\u00af_{s}$ saturates at a plateau value, it steadily increases for every GPA model. This is expected, and can be understood given that clones in a GPA model can go extinct while those in a GIA model not. Assume that there are initially a large number $N_{c}$ of clones, such that the total number of cells is $n_{tot}=N_{c}\u2062n\u00af_{s}$. Since the system is homeostatic, it will reach a constant steady state $n_{tot}^{*}$ after a sufficient amount of time, meaning that the mean clone size is $n\u00af_{s}=n_{tot}^{*}/N_{c}$. If no clones go extinct, as in GIA models, $N_{c}$ is constant and thus $n\u00af_{s}$ approaches a constant. However, in non-conserved multi-type branching processes, as GPA models are, the clone number $N_{c}$ decreases through progressive extinction of clones (Haccou et al., 2005), and therefore $n\u00af_{s}$ increases, despite the cell population as a whole staying stationary.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56532/elife-56532-fig2-v2.jpg)\n\n**Figure 2.:** Mean size of surviving clones, $n\u00af_{s}$, as a function of time for random GIA models (a), and GPA models (b).In (a), $\\tau=20/\\alpha_{min}$, in (b), $\\tau$ is the time at 98% clone extinction. The grey shade represents the percentile of all the simulations (black lines limit the 5-95%ile range); the blue curves correspond to some illustrative selected simulations. Simulations for which the final mean is below two and where the final condition is not achieved (due to computational limitations) are not included: this results in 238 and 571 models, respectively for the GIA and GPA cases.\n\nThe resulting clone size distributions for the two model classes are shown in Figure 3. Here, clones sizes $n$ are rescaled by the mean value $n\u00af_{s}$ and compared to an Exponential distribution of unitary mean (green curve). As conjectured, all simulated GPA models shown in panel (b) predict asymptotically the same rescaled clone size distribution, namely a standard Exponential distribution. Deviations exist for small times and small clone sizes, but these deviations vanish in the large time limit (details on the convergence are shown in the Appendix, 'Analysis of the generalized Population Asymmetry model'). This means that different models within the GPA class cannot be distinguished in the long-term limit, since they differ only by the mean clone size, which is a free fit parameter. In analogy to statistical physics, we can categorize them as a universality class (Klein and Simons, 2011), meaning that the details of the model do not affect the (scaled) outcomes for assymptotic conditions, which is a form of weak convergence of random variables (Billingsley, 1968). However, the same cannot be said about the GIA models. In fact, we see all kind of shapes in the clone size distributions, both peaked distributions and non-peaked ones, and in fact, some distributions are even close to an Exponential form, and can thus not be distinguished from GPA models. The question is whether we can yet find other parameters for which, when large, also GIA models exhibit universality, that\u00a0is, yield the same rescaled clone size distribution. For this purpose, we will in the following sections develop a deeper theoretical understanding of the model classes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56532/elife-56532-fig3-v2.jpg)\n\n**Figure 3.:** Rescaled clone size distributions (expected relative frequency $P$ of clone sizes) for random GIA models (a), and GPA models (b), in terms of the rescaled clone size $x=n/n\u00af_{s}$, at final time $t=\\tau$ (see Figure 2 for definition).The grey shade represents the percentile of all the simulations (black lines limit the 5-95%ile range); the blue curves correspond to some selected simulations. A reference curve corresponding to an Exponential distribution of unitary mean (\u2019Exp(1)\u2019) is shown in green.\n\n### Mathematical analysis: Markovian approximation of compartment model\n\nTo obtain a deeper understanding of the numerical results, we study the cell fate models in terms of the compartment representation, Equation 9. In this representation models are not Markovian, yet we can study their Markovian counterpart, as an approximation. While this is not expected to yield accurate clone size distributions in general, the limiting distributions of non-Markovian processes are commonly well estimated by their Markovian counterparts.\n\nFor GIA models, which only feature $R\u2192R+C$ transitions between the renewing compartment, $\ud835\udc9e$, and the committed compartment, $\ud835\udc9e$, a corresponding Markovian model reads,\n\n$$\nX_{1}\u27f6\\lambda_{1}X_{1}+X_{2},X_{2}\u27f6\\lambda_{2}X_{2}+X_{2},X_{2}\u27f6\\gamma\u2205,\n$$\n\nin which $X_{1}$ represents a single state in $\u211b$ and $X_{2}$ in $\ud835\udc9e$, and symbols at arrows are the process rates. The number of cells in $X_{1}$, $n_{1}$, is conserved, that\u00a0is, given an single $X_{1}$-cell initially, it always remains at $n_{1}=1$. Thus, we only need to consider the dynamics of cells in $X_{2}$, $n_{2}$. This Markov process can be solved analytically, and for sufficiently large steady state mean number of $X_{2}$-cells, $n\u00af_{2}=\u27e8n_{2}\u27e9=\\lambda_{1}/(\\gamma-\\lambda_{2})$ (see Appendix, 'GIA0 test case: steady state distribution and limiting behavior'), the rescaled distribution of cells in $X_{2}$ is,\n\n$$\nP\u2062(x_{2})=(1-\\lambda^_{2})^{\\frac{\\lambda^_{1}}{\\lambda^_{2}}}\u2062\\lambda^_{2}^{\\frac{\\lambda^_{1}\u2062x_{2}}{(1-\\lambda^_{2})}}\u2062\\frac{\u0393\u2062(\\frac{\\lambda^_{1}}{\\lambda^_{2}}+\\frac{\\lambda^_{1}}{1-\\lambda^_{2}}\u2062x_{2})}{x_{2}\u2062\u0393\u2062(\\frac{\\lambda^_{1}}{\\lambda^_{2}})\u2062\u0393\u2062(\\frac{\\lambda^_{1}}{1-\\lambda^_{2}}\u2062x_{2})},\n$$\n\nin which $x_{2}=n_{2}/n\u00af_{2}$, $\\lambda^_{1}=\\lambda_{1}/\\gamma$ and $\\lambda^_{2}=\\lambda_{2}/\\gamma$\u00a0and $\u0393\u2062(\u2026)$ is the Gamma function (Abramowitz and Stegun, 1972). We note that this distribution exhibits a large variety of shapes: for large $\\lambda^_{1}$ the distribution is peaked, while for small $\\lambda^_{1}$ is loses its peak. Notably, for $\\lambda^_{1}\u21921$ and $\\lambda^_{2}\u21921$, the distribution becomes Exponential and in this case it cannot be distinguished from the GPA case. On the other hand, for $\\lambda^_{1}\u2192\u221e$, that\u00a0is, when the ratio of asymmetric divisions over the loss rate is high, this distribution tends to a Normal distribution with unitary mean and variance equal to $1/\\lambda^_{1}$. These different behaviors are graphically shown in the Appendix (see Appendix 1\u2014figure 6, 7 and 8).\n\nFor the GPA models, a Markovian approximation reads, accordingly,\n\n$$\nX_{1}\u27f6\\lambda_{1}{X_{1}+X_{1}withprobabilityr_{1}X_{1}+X_{2}withprobability1\u2212r_{1}\u2212r_{2}X_{2}+X_{2}withprobabilityr_{2},\n$$\n\n\n\n$$\nX_{1}\u27f6\\omegaX_{2},X_{2}\u27f6\\lambda_{2}X_{2}+X_{2},X_{2}\u27f6\\gamma\u2205.\n$$\n\nwhereby for homeostasis to prevail, $\\lambda_{1}\u2062r_{1}=\\lambda_{1}\u2062r_{2}+\\omega$ and $\\lambda_{2}<\\gamma$ must hold. We note that the dynamics of $X_{1}$ are independent of $X_{2}$ and thus for the number of cells in $X_{1}$ in homeostasis holds\n\n$$\nn_{1}\u2192\\lambda_{1}r_{1}n_{1}n_{1}\\pm1,\n$$\n\nwhich corresponds to a simple continuous-time branching process with two offspring, for which it is known that the resulting distribution of cell numbers is Exponential, that\u00a0is, $P_{1}\u2062(n_{1})=n\u00af_{1,s}^{-1}\u2062e^{-n_{1}/n\u00af_{1,s}}$, where $n\u00af_{1,s}\u2243\\lambda_{1}\u2062r_{1}\u2062t$ is the mean number of cells in the surviving clones (Haccou et al., 2005).\n\n$X_{2}$ cells produced according to 12 follow the same fate as in the two-state GIA model above. While it is not assured that the distribution of $X_{2}$ cells is identical to that of Equation 11 (due to simultaneous production events of type $X_{1}\u2192X_{2}+X_{2}$), we show in the Appendix, 'Asymptotic clone size distributions: mathematical analysis', that for large rates of production of C-cells, the distribution of C-cells \u2013 here: cells in state $X_{2}$ \u2013 attains a Normal distribution with mean $n\u00af_{2}$ equal to its variance $\\sigma_{n_{2}}^{2}=\u27e8(n_{2}-n\u00af_{2})^{2}\u27e9=n\u00af_{2}$. As each $X_{1}$ cell contributes independently to the production of $X_{2}$-cells, we have that $n\u00af_{2}\u223cn_{1,s}\u223ct$. Crucially, this means that in terms of the rescaled variable $x_{2}=n_{2}/n\u00af_{s}$ the standard deviation $\\sigma_{x_{2}}=\\frac{\\sigma_{n_{2}}}{n\u00af_{s}}\\leq\\frac{1}{\\sqrt{n\u00af_{2}}}\u223ct^{-1/2}$ vanishes for large times, since $n\u00af_{2}\u223cn_{1,s}\u223ct\u2192\u221e$. Hence, given fixed $x_{1}$, $x_{2}$ can be approximated by a constant random number $x_{2}|_{x_{1}}\u223cx\u00af_{1}=n_{1}/n\u00af_{s}$. Therefore, the rescaled distribution of the total number of cells is $P\u2062(x)=P_{1}\u2062(x-x_{2})=e^{-x}$, where $x\u00af=x\u00af_{1}+x\u00af_{2}\u223cx\u00af_{1}$. Thus, the rescaled distribution of the total clone size, $x=n/n\u00af_{s}$, is as well an Exponential.\n\n### Universality of generic cell fate models\n\nFor generic GIA or GPA models, the compartment representation, Equation 9, is not Markovian and one would not expect exactly the distributions we found in the previous section. Fortunately, the limiting distributions of non-Markovian processes and their Markovian counterparts are often, under certain conditions on the parameters, the same. While we reserve the technical arguments for the Appendix ('Asymptotic clone size distributions: mathematical analysis'), we note that this independence of the limiting distribution on the Markov property related to the central limit theorem, which does not rely on the Markov property.\n\nTo identify the correct limiting parameters for more complex cell fate models, we need to express the effective non-Markovian rates (i.e. the mean frequency of events) of representation nine in terms of the original model, 3\u20135. As discussed in the Appendix ('Approximation of generic GIA models' and 'Asymptotic clone size distributions: Mathematical analysis'), we identify those effective rates by the total rates of cell divisions, $\\lambda_{R}=\\sum_{i\\in\u211b}\\lambda_{i}\u2062P_{i}^{R}$, $\\gamma_{C}=\\sum_{i\\in\ud835\udc9e}\\gamma_{i}\u2062P_{i}^{C}$, and $\\omega_{R\u2062C}=\\sum_{i\\in\u211b,j\\in\ud835\udc9e}\\omega_{i\u2062j}\u2062P_{i}^{R}$ where, for each compartment, $P_{i}^{R,C}=n\u00af_{i}/\\sum_{j\\in\u211b,\ud835\udc9e}n\u00af_{j}$ is the probability of a single cell being in state Xi of $\u211b$, respectively ($n\u00af_{i}$ are the solutions to Equation 6). In the Appendix, 'Asymptotic clone size distributions: mathematical analysis', we reason that all GPA models are expected to generate Exponential clone size distributions for large times t. This is indeed what is observed in Figure 3(b). Correspondingly, for GIA models we expect that for large $\\lambda^_{R}=\\lambda_{R}/\\gamma_{C}$ the clone size distribution of GIA models would tend to a Normal distribution. To test this prediction, we simulated the same GIA models as for Figure 3 before, but we tuned parameters in $\u211b$ such that the effective parameter $\\lambda^_{R}$ becomes large (see details in the Appendix, 'GIA model for large\u00a0$\\lambda^_{R}$'). The result is shown in Figure 4: for an illustrative case shown in panel (a), increasing $\\lambda^_{R}$ changes the distribution from an exponential form to a peaked form akin to a Normal distribution, and for all simulated random GIA models, shown in panel (b), a Normal distribution is approached when $\\lambda^_{R}$ becomes large.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56532/elife-56532-fig4-v2.jpg)\n\n**Figure 4.:** Rescaled clone size distributions (expected relative frequency P of clone sizes) for random GIA models as in Figure 3, at time $t=\\tau$ (see definition in Figure 2).Sensitivity to parameter $\\lambda^_{R}$ is shown for one illustrative case in panel (a), and all GIA models for $\\lambda^_{R}=30$ in panel (b). The distributions are shown in terms of the rescaled variables $x=n/n\u00af_{s}$ for panel (a) and $x~=(n-n\u00af_{s})/\\sigma_{n}$, where $\\sigma_{n}$ is the distributions variance, in panel (b). In (b), the grey shade represents the percentile of all simulations (black lines limit the 5-95%ile range); the blue curves correspond to some selected simulations. A reference curve corresponding to a Normal distribution of zero mean and unitary variance is shown in green. Simulations for which $t=\\tau$ is not reached (due to computational limitations) are not included, resulting in 922 model instances.\n\nWe note that when taking the limit of large $\\lambda^_{R}$, as shown in Figure 4, also all other process rates \u03c9ij with i,j within $\u211b$ increased as well. What if instead some process rates in $\u211b$ do not scale to become large with $\\lambda^_{R}$? To assess this situation, we studied a simple test case similar to model 10 but containing two states in $\u211b$, connected via direct state transition (see Appendix, 'GIAB test case: bimodal distribution'). As discussed there, if all rates within $\u211b$ are large compared to the rates in $\ud835\udc9e$ then indeed we observe a Normal clone size distribution, as expected. However, if the direct transition rates between the states of $\u211b$ are smaller or of equal magnitude as \u03b3C, and in addition, one of the two division rates is higher then the other, then we observe a bimodal clone size distribution. The reason is that if the transitions between the two states in $\u211b$ are rare compared to the life time of cells, $1/\\gamma_{C}$, they become essentially separated and each of those states generate separate Normal distributions with different mean (due to different cell division rates in those two states) which, when overlaid, generate a bimodal clone size distribution (see detailed arguments in the Appendix, 'Asymptotic clone size distributions: mathematical analysis').\n\nFinally, from those considerations follows:\n\nHence, the GIA and GPA model classes, each represent a universality class, that\u00a0is, a scaling limit exists in which all models of the same class yield the same rescaled clonal statistics.\n\n## Discussion\n\nOur analysis shows that intrinsic limitations exist for identifying strategies of stem cell self-renewal through clonal data from cell lineage-tracing experiments. This is due to different models of cell fate choice generating the same type of clonal statistics (clone size distributions), so that model inference based on clonal statistics \u2013 currently still the most prevalent method to determine stem cell self-renewal strategies \u2013 fails to distinguish them. The feature that different models asymptotically generate the same statistics is a form of weak convergence of random variables (Billingsley, 1968) and corresponds to universality, as known from statistical physics.\n\nCell fate models can in principle be very complex, with a plethora of cell (sub-)types in a tissue. We introduced a new categorization of cell types, distinguishing between cell states that are committed (C-cells), whose progeny is inevitably lost eventually, and non-committed or (self-)renewing cell states (R-cells), which retain the potential to remain or return to the apex of the lineage hierarchy. According to this categorization we classified generic models of cell fate choice as Generalized Invariant Asymmetry (GIA), if only generalized asymmetric divisions of the form $R\u2192R+C$ occur for R-cells, and Generalized Population Asymmetry (GPA), when all kind of divisions can occur, as long as gain and loss of R-cells are balanced. Models of the GIA category are also characterized by a conservation law, since the number of R-cells is strictly conserved, while GPA models do not exhibit such a conservation law.\n\nWe found that the classification in GIA and GPA models mirrors the clonal statistics generated by them: models of the GPA class all generate clonal statistics which with time converge to an Exponential clone size distribution. Thus, two GPA models can therefore not be distinguished through clonal data, once some time has passed after induction of clones. For GIA models, distributions can generally vary, but if the rates of divisions and transitions in the $\u211b$ compartment are much larger that the rate of cell loss, the clone size distribution of all those models becomes a Normal distribution. In that case, two GIA models can not be distinguished by the clonal data.\u00a0While here we do not explicitly consider cell-extrinsic regulation of cell fate, this kind of regulation does not affect long-term clone size distributions, except when cells are arranged one-dimensionally (Klein and Simons, 2011; Bramson and Griffeath, 1980). Thus, our results cover cell dynamics in most renewing tissues, such as epithelial sheets or volumnar organs, but not (quasi-)one-dimensional arrangements of stem cells, as found in the seminiferous tubule, or in intestinal crypts, where clonal statistics may differ. Hence, our analysis shows that models of cell fate choice cannot in general be distinguished with further resolution beyond the R vs. C categorization of cell types. The universality of the model dynamics also shows that effective, simplistic models are often equally accurate to model experimental data, yet with a higher statistical power due to less free parameters.\n\nWhile at first glance, this analysis seems to discourage efforts to unravel details of cell fate dynamics, room remains in regimes where the limiting conditions for asymptotic distributions are not fulfilled. In particular, if fast cycling committed progenitor cells are present, while stem cells are slow cycling, then the condition that the division rate of R-cells is much larger than the cell loss rate is not fulfilled. In that case, details of the model dynamics may affect the shape of the clone size distribution and thus allow distinction between models. However, caution should be given when an Exponential clone size distribution is observed, since this could indicate either a GIA model with high activity of committed progenitor cells, or a GPA model. In that case, the mean clone size needs to be consulted to distinguish models (see Figure 2). Differentiating between models within the GPA category is more difficult, since the predicted statistics from different models always become more similar over time. Short-term measurements would in principle allow such a distinction, but since in reality the underlying processes are not truly Markovian (as assumed for the modeling purpose) they are not necessarily a good representation of the real cell dynamics at short times. At long times, however, Markovian approximations are increasingly accurate, precisely because of the feature of universality.\n\nHow could the resolution of cell fate modeling be improved? The state-of-the-art approach to determine cell fate trajectories is via analysis and modeling of single-cell RNA-sequencing (scRNA-seq) data. However, many limitations to this method exist, discussed in Weinreb et al., 2018, and neither reversible trajectories nor the modes of cell division, such as asymmetric vs symmetric divisions, can be inferred. Intravital live imaging, on the other hand, allows to trace individual clones over time (Ritsma et al., 2012; Pittet and Weissleder, 2011; Hara et al., 2014; Rompolas et al., 2016), and thus can obtain details of cell fate trajectories, yet this technique is limited to few tissue types which are accessible for invasive long-term imaging. Nonetheless, while each of those experimental assays alone is prone to limitations in defining self-renewal strategies, advanced model inference schemes, that integrate data from different experimental sources, might be the way forward in the future to finally reveal the details of stem cell self-renewal strategies.\n\n## Materials and methods\n\nThe numerical analysis of the random cell fate model was implemented in Matlab. The description of the stochastic models definition, the random model generation and the simulation campaign is detailed in the Appendix, 'Stochastic process modelling'. Additionally, as a validation of the implemented simulator, based on the Gillespie algorithm (Gillespie, 1977), the IA and PA models were simulated and the results analyzed in the Appendix, 'Invariant Asymmetry and Population Asymmetry models'.\n\nAnalytical solutions were partially obtained using Mathematica.\n",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "c85864c6-cb0f-4f0a-8016-f76f603c8045",
+      "submission_id": "64cc6e4d-9386-4361-a757-d2abba2e848e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yukiko M Yamashita, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56532.sa1](https://doi.org/10.7554/eLife.56532.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work builds on several recent high-profile applications of statistical physics to infer the mode of stem cell fate choice in mammalian tissues based on clone size distributions obtained via cell lineage tracing. The work makes a solid contribution especially in clarifying how a broad class of models conceptually and quantitatively fits with the population asymmetry or the invariant asymmetry model. Such universality argument may have been already taken for granted by physicists/mathematicians but may have not been obvious to biologists who have specific systems in mind that have much richer cell state structure than the original simplified models.\n\nThrough a detailed mathematical analysis, the authors demonstrate that this large set of models can, in homeostatic tissues, be decomposed into two 'universality classes' in terms of their predicted asymptotic clone size statistics. This limits our ability to qualitatively distinguish between different models of stem cell fate choice based on clone size data only.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Universality of clonal dynamics poses fundamental limits to identify stem cell self-renewal strategies\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript provides an important contribution to the field of stem cell biology regarding their 'division modes' (symmetric vs. asymmetric divisions), as detailed in individual comments from reviewers.\n\nEssential revisions:\n\nThe reviewers felt that the concerns can be mainly addressed textual changes as detailed in individual comments.\n\nReviewer #1:\n\nThis manuscript describes a general framework of understanding fate decision models, which have been previously proposed in explaining the dynamics of tissue stem cells in homeostasis. The work makes a solid contribution especially in clarifying how a broad class of models conceptually and quantitatively fits with the population asymmetry or the invariant asymmetry model. Such universality argument may have been already taken for granted by physicists/mathematicians but may have not been obvious to biologists who have specific systems in mind that have much richer cell state structure than the original simplified models.\n\nThe main criticism I have about the work is that the manuscript may misguide the readers to think that the GIA and GPA models are the only models that have been discussed in explaining the clonal statistics. As one of the authors showed in their previous paper (Greulich and Simons, 2016), the basic statistics such as the clone size distribution will change when adding spatial regulation to the voter model class, which is distinct from what is obtained by GIA or GPA. In fact, for all the tissues that have been studied so far, including the gut (10.1016/j.cell.2010.09.016, Lopez-Garcia et al., 2010), seminiferous tubule (Klein et al., 2010, Hara et al., 214, and 10.1016/j.stem.2018.11.013), and the skin (10.1016/j.stem.2018.09.005), experiments suggest that the spatial correlation between the fates are non-negligible and therefore the asymptotic statistics should follow the voter model. I would assume that there needs to be at least a justification in only studying the cases without spatial interactions here, especially if the authors do not know any specific example that nicely corresponds to their model.\n\nReviewer #2:\n\nThis work builds on several recent high-profile applications of statistical physics to infer the mode of stem cell fate choice in mammalian tissues based on clone size distributions obtained via cell lineage tracing.\n\nThe authors note that two conceptually distinct 'models' of stem cell fate choice, the Population Asymmetry (PA) and Dynamic Heterogeneity (DH) models, exhibit the same asymptotic clone size distributions. They then consider a more general set of possible models for the proliferation, differentiation and loss of a multi-type population of cells in a tissue.\n\nThrough a detailed mathematical analysis, the authors demonstrate that this large set of models can, in homeostatic tissues, be decomposed into two 'universality classes' in terms of their predicted asymptotic clone size statistics. This limits our ability to qualitatively distinguish between different models of stem cell fate choice based on clone size data only.\n\nOverall I found this work, though technically complex, to be well motivated and well explained. The authors provide a significant advance to our understanding of how different descriptions of stem cell fate choice may be qualitatively distinguished experimentally (though, as the authors note, we may nevertheless apply parameter inference techniques and model selection to quantitatively distinguish competing models based on given datasets).\n",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8bce162d-1857-491e-bf77-be76dd7da75f",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C1",
+      "claim": "Adult stem cells maintain self-renewing tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "How adult stem cells maintain self-renewing tissues is commonly assessed by analysing clonal data from in vivo cell lineage-tracing assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract and introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "5a68ffdc-4ed5-46e7-a438-753fcccc88b4",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C2",
+      "claim": "Models of cell fate choice in homeostatic tissues can be categorized by exactly two 'universality classes'.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that models of cell fate choice can, in homeostatic tissues, be categorized by exactly two 'universality classes', whereby models of the same class predict, under asymptotic conditions, the same clonal statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by mathematical analysis and numerical simulations presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "b93a534d-ce70-4c24-80d3-812d15e65c7b",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C3",
+      "claim": "Models of the same universality class predict the same clonal statistics under asymptotic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that models of cell fate choice can, in homeostatic tissues, be categorized by exactly two 'universality classes', whereby models of the same class predict, under asymptotic conditions, the same clonal statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis and numerical simulations shown in Figures 2-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "62e7be28-3395-4003-974f-7e17fceeee94",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C4",
+      "claim": "The two universality classes relate to generalizations of the canonical asymmetric vs. symmetric stem cell self-renewal strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Those classes relate to generalizations of the canonical asymmetric vs. symmetric stem cell self-renewal strategies and are distinguished by a conservation law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained through the definition of GIA and GPA models and their relationship to classical IA and PA strategies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "62af459e-c535-4cb4-99a3-bc83f78296d6",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C5",
+      "claim": "The two universality classes are distinguished by a conservation law.",
+      "claim_type": "EXPLICIT",
+      "source": "Those classes relate to generalizations of the canonical asymmetric vs. symmetric stem cell self-renewal strategies and are distinguished by a conservation law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains that GIA models conserve the number of R-cells while GPA models do not.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "83f16ec6-9a0f-43ad-ac54-6e556061f88b",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C6",
+      "claim": "Self-renewal models of the same universality class cannot be distinguished by clonal data only under asymptotic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This poses both challenges and opportunities to identify stem cell self-renewal strategies: while under asymptotic conditions, self-renewal models of the same universality class cannot be distinguished by clonal data only, models of different classes can be distinguished by simple means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the convergence of clone size distributions shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "70c4a549-4b3d-4657-914e-e1998ee70ef1",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C7",
+      "claim": "Models of different universality classes can be distinguished by simple means.",
+      "claim_type": "EXPLICIT",
+      "source": "This poses both challenges and opportunities to identify stem cell self-renewal strategies: while under asymptotic conditions, self-renewal models of the same universality class cannot be distinguished by clonal data only, models of different classes can be distinguished by simple means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the different asymptotic distributions (Exponential vs. Normal) predicted by GPA and GIA models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "5ee4f6fe-8a53-4bb3-b38e-b39ab0602485",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C8",
+      "claim": "Adult stem cells persistently produce tissue cells through cell division and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult stem cells are the key players for maintaining and renewing biological tissue, due to their ability to persistently produce tissue cells through cell division and differentiation (National Institute of Health, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the National Institute of Health.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "76fdf990-bee2-40c1-9010-26eca97ae559",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C9",
+      "claim": "Imbalanced proliferation may lead to hyperplasia and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For maintaining tissues in a homeostatic state, it is crucial that stem cells adopt suitable self-renewal strategies, a pattern of stem cell fate choices that balances proliferation and differentiation; otherwise, imbalanced proliferation may lead to hyperplasia and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about tissue homeostasis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "ea751629-a7f2-459b-9301-db3b3ce9064d",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C10",
+      "claim": "Two classical stem cell self-renewal strategies have been proposed: Invariant Asymmetric division (IA) and Population Asymmetry (PA).",
+      "claim_type": "EXPLICIT",
+      "source": "Classically, two stem cell self-renewal strategies have been proposed (Potten and Loeffler, 1990; Simons and Clevers, 2011a): following the Invariant Asymmetric division (IA) strategy, stem cells undertake only asymmetric divisions, whose outcome is one differentiating cell and one stem cell as daughter cells. The other proposed strategy, Population Asymmetry (PA) (Potten and Loeffler, 1990; Simons and Clevers, 2011a; Watt and Hogan, 2000; Klein and Simons, 2011), features additionally symmetric divisions, which produce either two stem cells or two differentiating cells as daughters, yet in balanced proportions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "bc6d82b1-db1a-476a-8832-c2397dbb8139",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C11",
+      "claim": "In the IA strategy, stem cells undertake only asymmetric divisions producing one differentiating cell and one stem cell.",
+      "claim_type": "EXPLICIT",
+      "source": "following the Invariant Asymmetric division (IA) strategy, stem cells undertake only asymmetric divisions, whose outcome is one differentiating cell and one stem cell as daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition cited from prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "4b092129-a919-4944-a7ce-e34c5fb519aa",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C12",
+      "claim": "The PA strategy features symmetric divisions that produce either two stem cells or two differentiating cells in balanced proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "The other proposed strategy, Population Asymmetry (PA) (Potten and Loeffler, 1990; Simons and Clevers, 2011a; Watt and Hogan, 2000; Klein and Simons, 2011), features additionally symmetric divisions, which produce either two stem cells or two differentiating cells as daughters, yet in balanced proportions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition cited from prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "69d71978-e2ca-4c31-b878-ed1660367600",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C13",
+      "claim": "Both IA and PA patterns of cell fate choice leave the number of cells on average unchanged and can maintain homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Both patterns of cell fate choice leave the number of cells on average unchanged and thus can maintain homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained as a logical consequence of the definitions of IA and PA strategies.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "50050b93-a620-4b4f-9fda-7c30c6336802",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C14",
+      "claim": "Direct observation of cell divisions is rarely possible in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessing stem cell self-renewal strategies experimentally is difficult in vivo, since direct observation of cell divisions is rarely possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of experimental methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "7c816b83-bd32-4194-865a-f5f40563bdb0",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C15",
+      "claim": "Genetic cell lineage-tracing assays allow obtaining statistics of clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, through genetic cell lineage-tracing assays, the statistics of clones \u2013 the progeny of individual cells \u2013 can be obtained, and via mathematical modeling assessing cell fate dynamics became possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established experimental approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "77ec3532-9f76-40a5-a897-520744a0b668",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C16",
+      "claim": "Several studies suggested that population asymmetry prevails in many mouse tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "With such an approach several studies suggested that population asymmetry prevails in many mouse tissues (e.g. Clayton et al., 2007; Lopez-Garcia et al., 2010; Simons and Clevers, 2011b; Doup\u00e9 et al., 2012; Klein et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "709c6582-476a-4720-a6e5-55910112c30e",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C17",
+      "claim": "The Dynamic Heterogeneity (DH) model features some degree of cell fate plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the interpretation of those studies has been challenged by a suggested alternative self-renewal strategy, called Dynamic Heterogeneity (DH), featuring some degree of cell fate plasticity (Greulich and Simons, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work by Greulich and Simons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "f63ad741-bd22-4cc2-9fb3-473521120988",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C18",
+      "claim": "In the DH model, all stem cell divisions are asymmetric.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, all stem cell divisions are asymmetric, yet it is in agreement with the experimental clonal data that had previously been shown to agree also with the population asymmetry strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the DH model from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "c86e29a4-c460-407a-9181-0b6504c7cec2",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C19",
+      "claim": "The DH model is in agreement with experimental clonal data that also agrees with the PA strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, all stem cell divisions are asymmetric, yet it is in agreement with the experimental clonal data that had previously been shown to agree also with the population asymmetry strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work by Greulich and Simons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "f8d1a5f6-247c-48d3-8383-10b7fcacf0d8",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C21",
+      "claim": "There exist two particular classes of stem cell self-renewal strategies: one generating an Exponential distribution of clone sizes and one generating a Normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we find that there exist two particular classes of stem cell self-renewal strategies: one class of models which all generate an Exponential distribution of clone sizes (the number of cells in a clone) after sufficiently large time, and one which generates a Normal distribution under sufficiently fast stem cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical analysis and numerical simulations in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "21faa467-52e5-4cdb-96dc-828712c414c4",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C22",
+      "claim": "The two classes are differentiated by whether or not a subset of cells is conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, these two classes are not differentiated via the classical definitions of symmetric and asymmetric stem cell divisions, but by whether or not a subset of cells is conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained through the definition of GIA and GPA models and their conservation properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "91a4a13c-40c7-40f2-8b3c-f961dd2cd41e",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C23",
+      "claim": "These classes bear resemblance to 'universality classes' known from statistical physics.",
+      "claim_type": "EXPLICIT",
+      "source": "These classes thus bear resemblance to 'universality classes' known from statistical physics, as suggested in Klein and Simons, 2011.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy drawn to concepts from statistical physics, with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "c324ee6c-b79c-4a63-b76f-66cf909db4bc",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C24",
+      "claim": "The conditions for the emergence of universality are not always fulfilled in real tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, we find that the conditions for the emergence of universality are not always fulfilled in real tissues, which provides chances, but also further challenges, for the identification of stem cell fate choices in homeostatic tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is discussed as an implication of the theoretical findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "de1db543-2ebe-4b60-8fbb-d101dcc5d208",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C25",
+      "claim": "The IA model corresponds to r=0 (only asymmetric divisions occur).",
+      "claim_type": "EXPLICIT",
+      "source": "the IA model is defined by r=0, that is, only asymmetric divisions occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical definition of the IA model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "e015cd0a-897d-4eed-a12f-2c72f4844173",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C27",
+      "claim": "For the IA model, the number of stem cells is strictly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only for the IA model is the number of stem cells strictly conserved, that is, no gain or loss of stem cells is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the mathematical definition of the IA model where r=0.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "938f1322-16f9-46e7-8136-d96e14133d30",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C29",
+      "claim": "Exponential clone size distributions prevail for most mouse tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "By a series of lineage-tracing experiments it was confirmed that Exponential clone size distributions prevail for most mouse tissues, which thus exclude the IA model and support the PA strategy (Clayton et al., 2007; Lopez-Garcia et al., 2010; Simons and Clevers, 2011b; Doup\u00e9 et al., 2012; Klein et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "d8ff249c-09a9-45c3-8b2d-5218c8ecfbf5",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C30",
+      "claim": "The DH model predicts clonal statistics that are indistinguishable from the PA model.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the DH model only features asymmetric divisions (in that daughter cells are of different type), like the IA model, yet the DH model predicts clonal statistics that are indistinguishable from the PA model (Greulich and Simons, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work by Greulich and Simons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "be86bcb0-9615-4060-9d64-c1e27df9e20f",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C31",
+      "claim": "The PA and DH model cannot be distinguished via plain clonal data.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that in view of the existing clonal data for mouse tissues, the DH model, may as well describe the real cell fate dynamics. More fundamentally, this implies that the PA and DH model cannot be distinguished via plain clonal data, which poses fundamental limitations to the common approach to use lineage tracing for determining cell fate choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that both models predict the same clonal statistics.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "14ec0abf-003b-40ea-b002-9ef7acb7cee2",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C32",
+      "claim": "The classical definition of asymmetric and symmetric divisions is not always suitable to distinguish cell fate strategies in view of clonal data alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the classical definition of asymmetric and symmetric divisions is not always suitable to distinguish cell fate strategies in view of clonal data alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inability to distinguish PA and DH models despite their different division types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "830fa814-b4d8-46c2-a2f4-7201c789903f",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C33",
+      "claim": "For homeostatic networks, an SCC with dominant eigenvalue \u03bc=0 is at the apex, while other SCCs have \u03bc<0.",
+      "claim_type": "EXPLICIT",
+      "source": "For homeostatic networks, an SCC with dominant eigenvalue \u03bc=0 is at the apex, while other SCCs have \u03bc<0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and explained in the text and Appendix.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "d8f95471-55bf-4d6c-8e89-2b522cd8747a",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C34",
+      "claim": "The Renewing compartment (R) consists of the apex SCC with \u03bc=0.",
+      "claim_type": "EXPLICIT",
+      "source": "We distinguish two compartments, the Renewing compartment \u211b, consisting of the apex SCC, with \u03bc=0, and the Committed compartment \ud835\udc9e consisting of the remainder, with \u03bc<0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is defined in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "b89e7e73-1c33-493e-864e-527ea544678b",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C35",
+      "claim": "The Committed compartment (C) consists of all SCCs with \u03bc<0.",
+      "claim_type": "EXPLICIT",
+      "source": "We distinguish two compartments, the Renewing compartment \u211b, consisting of the apex SCC, with \u03bc=0, and the Committed compartment \ud835\udc9e consisting of the remainder, with \u03bc<0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is defined in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "e4526b86-1ce6-4d05-a186-86232ca0490c",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C36",
+      "claim": "Cells in states forming R have the potential to return to any state within the same compartment and this population maintains itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, cells in states forming \u211b have the potential to return to any state within the same compartment and this population maintains itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the definition of strongly connected components and the eigenvalue condition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "e2c8e152-da68-4588-80fe-587671cfca1d",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C37",
+      "claim": "The progeny of each cell in the committed compartment will eventually be lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the cell population in \ud835\udc9e would vanish without external input, since the combined dominant eigenvalue of all those SCCs is negative (it is the maximum of all SCCs' \u03bck<0), thus the progeny of each cell in the committed compartment will eventually be lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the negative eigenvalue condition for the committed compartment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "dd25cc82-4729-4459-9f7a-51a266c82c1e",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C38",
+      "claim": "GIA models are those which only exhibit R\u2192R+C divisions in the renewing compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Generalized Invariant Asymmetry (GIA) models are those which only exhibit R\u2192R+C divisions in the renewing compartment, while Generalized Population Asymmetry (GPA) are models for which such restriction does not hold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition introduced in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "790396eb-226d-46c0-83eb-70ea8711ac39",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C39",
+      "claim": "GPA models are those for which the restriction to only R\u2192R+C divisions does not hold.",
+      "claim_type": "EXPLICIT",
+      "source": "Generalized Invariant Asymmetry (GIA) models are those which only exhibit R\u2192R+C divisions in the renewing compartment, while Generalized Population Asymmetry (GPA) are models for which such restriction does not hold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition introduced in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "82ee776b-a291-41db-960d-34e253f10447",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C40",
+      "claim": "For GIA models, the number of cells in R is strictly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the two classes are equivalently characterized by a conservation law: For GIA models, the number of cells in \u211b is strictly conserved, while for GPA models, no such conservation law holds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the definition of GIA models where only R\u2192R+C divisions occur.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "55e81bef-ac57-4df6-b902-26a050314d2e",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C41",
+      "claim": "For GPA models, no conservation law holds.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the two classes are equivalently characterized by a conservation law: For GIA models, the number of cells in \u211b is strictly conserved, while for GPA models, no such conservation law holds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the definition of GPA models which allow R\u2192R+R and R\u2192C+C divisions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "a6a2c24f-8e39-4c38-8f7e-fe7b41056b3f",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C42",
+      "claim": "The IA model is a GIA model.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally, the previously discussed IA model is a GIA model and the PA model is a GPA model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the definitions of IA and GIA models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "09fa2aae-2924-4c09-a401-857e23afb198",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C43",
+      "claim": "The PA model is a GPA model.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally, the previously discussed IA model is a GIA model and the PA model is a GPA model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the definitions of PA and GPA models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "304bd9b7-b6b6-4568-90a1-f5fb344e1c38",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C44",
+      "claim": "The DH model is of the GPA category.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the DH model (Equation 2) is of the GPA category, since in that model S and D cells form a single SCC at the apex of the lineage hierarchy, and thus they are both part of \u211b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained through analysis of the DH model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "54025d18-1481-47e4-9939-70a9056f4d9e",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C45",
+      "claim": "A division S\u2192S+D in the DH model corresponds to R\u2192R+R in terms of compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a division S\u2192S+D in the DH model, which is asymmetric in the conventional sense, corresponds to R\u2192R+R in terms of compartments (Equation 9) and thus it is a generalised symmetric division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained through the compartment analysis of the DH model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "ffe53e8d-61e6-4c0e-a974-8d2181a7f398",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C46",
+      "claim": "PA and DH models both predict the same type of clone size distribution, an Exponential one.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this classification, PA and DH models are both in the same category (GPA), and indeed, both predict the same type of clone size distribution, an Exponential one (Greulich and Simons, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work and the theoretical analysis in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "c50282f4-589c-4991-9a69-ff1628b39c8f",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C47",
+      "claim": "For every simulated GIA model, the mean clone size saturates at a plateau value.",
+      "claim_type": "EXPLICIT",
+      "source": "While for every simulated GIA model, n\u00afs saturates at a plateau value, it steadily increases for every GPA model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2(a) from numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "8bfcbe2e-50b8-42a3-aaa7-9423ce4de43f",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C48",
+      "claim": "For every simulated GPA model, the mean clone size steadily increases.",
+      "claim_type": "EXPLICIT",
+      "source": "While for every simulated GIA model, n\u00afs saturates at a plateau value, it steadily increases for every GPA model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2(b) from numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "f986a66f-e4fb-4313-917b-e28cd2a6e898",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C49",
+      "claim": "In non-conserved multi-type branching processes, the clone number decreases through progressive extinction of clones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in non-conserved multi-type branching processes, as GPA models are, the clone number Nc decreases through progressive extinction of clones (Haccou et al., 2005), and therefore n\u00afs increases, despite the cell population as a whole staying stationary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from branching process theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "3a3dfb28-572c-41fe-8448-ba22bf9b1e27",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C50",
+      "claim": "All simulated GPA models predict asymptotically the same rescaled clone size distribution, namely a standard Exponential distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "As conjectured, all simulated GPA models shown in panel (b) predict asymptotically the same rescaled clone size distribution, namely a standard Exponential distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3(b) from numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "a41abf8b-dd0b-4c23-92e2-17b2f5dc1c91",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C51",
+      "claim": "Different models within the GPA class cannot be distinguished in the long-term limit, since they differ only by the mean clone size.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that different models within the GPA class cannot be distinguished in the long-term limit, since they differ only by the mean clone size, which is a free fit parameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that all GPA models converge to the same rescaled distribution.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "f571b5bf-f91f-42ad-b777-1ad62d1512b8",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C57",
+      "claim": "All GPA models are expected to generate Exponential clone size distributions for large times.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Appendix, 'Asymptotic clone size distributions: mathematical analysis', we reason that all GPA models are expected to generate Exponential clone size distributions for large times t.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived in the Appendix through mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "d0558404-f66e-42fe-af24-3b2b57418c75",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C61",
+      "claim": "The GIA and GPA model classes each represent a universality class.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the GIA and GPA model classes, each represent a universality class, that is, a scaling limit exists in which all models of the same class yield the same rescaled clonal statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the mathematical and numerical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "6d6f5573-1481-4e4f-a48e-1a0625ccd09d",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C62",
+      "claim": "Intrinsic limitations exist for identifying strategies of stem cell self-renewal through clonal data from cell lineage-tracing experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that intrinsic limitations exist for identifying strategies of stem cell self-renewal through clonal data from cell lineage-tracing experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the Discussion section based on the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "d979e767-fdb1-4186-87d2-2bea233f0c4a",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C63",
+      "claim": "Different models of cell fate choice can generate the same type of clonal statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to different models of cell fate choice generating the same type of clonal statistics (clone size distributions), so that model inference based on clonal statistics \u2013 currently still the most prevalent method to determine stem cell self-renewal strategies \u2013 fails to distinguish them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the numerical and mathematical analysis in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "158d5351-a43a-4c07-a529-3b9f6f646be4",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C64",
+      "claim": "The feature that different models asymptotically generate the same statistics corresponds to universality, as known from statistical physics.",
+      "claim_type": "EXPLICIT",
+      "source": "The feature that different models asymptotically generate the same statistics is a form of weak convergence of random variables (Billingsley, 1968) and corresponds to universality, as known from statistical physics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy drawn to concepts from statistical physics and probability theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "a6a07cef-26ef-423f-9f95-1607df494b18",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C65",
+      "claim": "Models of cell fate choice cannot in general be distinguished with further resolution beyond the R vs. C categorization of cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our analysis shows that models of cell fate choice cannot in general be distinguished with further resolution beyond the R vs. C categorization of cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the universality of clonal statistics within each model class.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "80791f0c-4a24-4a2e-942a-0e2f8c1aed94",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C66",
+      "claim": "The universality of the model dynamics shows that effective, simplistic models are often equally accurate to model experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "The universality of the model dynamics also shows that effective, simplistic models are often equally accurate to model experimental data, yet with a higher statistical power due to less free parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical implication of the universality finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "8dba2761-fd33-4aba-919c-c94a235c5efc",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C67",
+      "claim": "Room remains for model distinction in regimes where the limiting conditions for asymptotic distributions are not fulfilled.",
+      "claim_type": "EXPLICIT",
+      "source": "While at first glance, this analysis seems to discourage efforts to unravel details of cell fate dynamics, room remains in regimes where the limiting conditions for asymptotic distributions are not fulfilled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is discussed as an opportunity for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "caa586af-bff8-458c-b34d-10682026c8d7",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C68",
+      "claim": "If fast cycling committed progenitor cells are present while stem cells are slow cycling, details of the model dynamics may affect the shape of the clone size distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, if fast cycling committed progenitor cells are present, while stem cells are slow cycling, then the condition that the division rate of R-cells is much larger than the cell loss rate is not fulfilled. In that case, details of the model dynamics may affect the shape of the clone size distribution and thus allow distinction between models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is discussed as a scenario where universality breaks down.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "221f1ae1-0ae3-43aa-af11-10d5216a4b17",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C69",
+      "claim": "When an Exponential clone size distribution is observed, it could indicate either a GIA model with high activity of committed progenitor cells, or a GPA model.",
+      "claim_type": "EXPLICIT",
+      "source": "However, caution should be given when an Exponential clone size distribution is observed, since this could indicate either a GIA model with high activity of committed progenitor cells, or a GPA model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that GIA models can also produce Exponential distributions under certain conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "f814c62e-bb6e-4ce4-9a36-3de39825f5a5",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C70",
+      "claim": "Markovian approximations are increasingly accurate at long times because of the feature of universality.",
+      "claim_type": "EXPLICIT",
+      "source": "At long times, however, Markovian approximations are increasingly accurate, precisely because of the feature of universality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained as a consequence of universality.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "4925c359-d3a1-45c4-9709-8f9afc7b218c",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C71",
+      "claim": "Many limitations exist to determining cell fate trajectories via scRNA-seq data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many limitations to this method exist, discussed in Weinreb et al., 2018, and neither reversible trajectories nor the modes of cell division, such as asymmetric vs symmetric divisions, can be inferred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature discussing limitations of scRNA-seq.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "d50778ac-dd93-486b-93a7-4e722a3b91c9",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C72",
+      "claim": "Intravital live imaging allows tracing individual clones over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Intravital live imaging, on the other hand, allows to trace individual clones over time (Ritsma et al., 2012; Pittet and Weissleder, 2011; Hara et al., 2014; Rompolas et al., 2016), and thus can obtain details of cell fate trajectories, yet this technique is limited to few tissue types which are accessible for invasive long-term imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature on imaging techniques.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "1c9c668c-fbf7-45b2-9dc7-04fe70de5bbd",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C73",
+      "claim": "Advanced model inference schemes that integrate data from different experimental sources might reveal details of stem cell self-renewal strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, while each of those experimental assays alone is prone to limitations in defining self-renewal strategies, advanced model inference schemes, that integrate data from different experimental sources, might be the way forward in the future to finally reveal the details of stem cell self-renewal strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as a future direction for research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "708e4e89-b729-474e-8599-65de1e9f012a",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C74",
+      "claim": "The clonal statistics of spatial models that include cell-extrinsic regulation of cell fate are, in the long term, the same as for the corresponding branching process models, except for one-dimensional arrangements of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the clonal statistics of spatial models that include cell-extrinsic regulation of cell fate (models of the voter type [Clifford and Sudbury, 1973]) are, in the long term, the same as for the corresponding branching process models (Haccou et al., 2005), as Equations 3-5 are, except for one-dimensional arrangements of cells (as shown in Klein and Simons, 2011; Bramson and Griffeath, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior theoretical work on spatial models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "6ea8f480-40bd-4bf6-a08a-a077a655ddc7",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "claim_id": "C75",
+      "claim": "The results cover cell dynamics in most renewing tissues, such as epithelial sheets or volumnar organs, but not (quasi-)one-dimensional arrangements of stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results cover cell dynamics in most renewing tissues, such as epithelial sheets or volumnar organs, but not (quasi-)one-dimensional arrangements of stem cells, as found in the seminiferous tubule, or in intestinal crypts, where clonal statistics may differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the theoretical considerations about spatial arrangements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef826add-06af-4f90-9689-d79500b25edf",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cell fate choice models in homeostatic tissues can be categorized into exactly two universality classes (GIA and GPA), distinguished by a conservation law. Models within the same class predict identical clonal statistics under asymptotic conditions, with GIA models conserving R-cell numbers and GPA models lacking such conservation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5, C21-C22, C38-C41, and C61 collectively establish the core theoretical framework through mathematical analysis (Equations 3-9, Figure 1) and demonstrate convergence through numerical simulations (Figures 2-4). The conservation law distinction is rigorously defined and the universality property is demonstrated both analytically (Appendix) and numerically across randomly generated models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "cc4755ec-e37a-44a7-a857-1973fa16c0cd",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Models within the same universality class cannot be distinguished by clonal data under asymptotic conditions, while models from different classes can be distinguished. Specifically, all GPA models converge to an Exponential clone size distribution at large times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C50-C51 are strongly supported by numerical simulations in Figure 3(b) showing convergence of all GPA models to the same rescaled Exponential distribution. Claim C57 is supported by mathematical analysis in the Appendix. The distinction between classes (C7) follows from their different limiting distributions (Exponential vs. Normal).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "676440a1-a61e-4870-96dd-1ff4088fdcea",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mean clone size dynamics differ fundamentally between model classes: GIA models exhibit saturation to a plateau value while GPA models show steady increase over time due to progressive clone extinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are directly demonstrated in Figure 2 through numerical simulations of randomly generated models. Claim C49 provides the theoretical explanation citing branching process theory (Haccou et al., 2005), which is appropriate for this well-established result. The mechanistic explanation is logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "f29fa029-02c8-4df1-b02e-ce187f85dc36",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Homeostatic cell state networks can be decomposed into two compartments based on eigenvalue analysis: a Renewing compartment (R) at the apex with \u03bc=0 that maintains itself, and a Committed compartment (C) with \u03bc<0 whose progeny is eventually lost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 establish the mathematical framework for compartment decomposition, illustrated in Figure 1. The eigenvalue conditions and their biological interpretation are rigorously derived from the linear system (Equation 7) and strongly connected component analysis. The Appendix provides detailed mathematical justification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "9c4d103e-1891-4807-b158-a63fc222586e",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Classical models (IA, PA, DH) can be reclassified under the new framework: IA is GIA, while both PA and DH are GPA models. This explains why PA and DH predict identical Exponential clone size distributions despite having different division types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 demonstrate how the new classification resolves the PA/DH indistinguishability problem. The reclassification follows logically from the definitions (C38-C39) and compartment analysis. Claim C46 is supported by citation to prior work (Greulich and Simons, 2016) and the current theoretical framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "c0377bf5-f06d-45a7-a196-b7f8ba456c90",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Intrinsic limitations exist for identifying stem cell self-renewal strategies through clonal data because different models generate identical clonal statistics. Model distinction is fundamentally limited to the R vs. C categorization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 and C65 represent the main biological conclusion, directly supported by the universality results (C2-C3, C50-C51, C61). The limitation is demonstrated through both mathematical analysis and numerical simulations showing convergence of diverse models to identical distributions within each class.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "1ef1c97c-89cb-4f4e-843e-83afcfe565c4",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The DH and PA models cannot be distinguished via clonal data alone, demonstrating that classical definitions of asymmetric and symmetric divisions are insufficient for distinguishing cell fate strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by citation to prior work (Greulich and Simons, 2016) and provide key motivation for the current study. The indistinguishability is explained by both models being GPA (C44-C46), which is rigorously demonstrated in the current work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "f1f704c7-04d6-4a04-9ae9-f9671577b4f1",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Model distinction remains possible in regimes where asymptotic conditions are not fulfilled, particularly when committed progenitor cells cycle faster than stem cells. However, caution is needed as Exponential distributions can arise from either GIA or GPA models under certain conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C69 discuss scenarios where universality breaks down, but these are largely speculative (C67, C68 marked as SPECULATION in evidence). While the logic is sound, no direct experimental or simulation data is provided to validate these predictions. Claim C69 is an inference without supporting data showing GIA models producing Exponential distributions under the specified conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "7da5725b-cbf0-46b8-aa4f-8bed3de08f31",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The convergence of different models to identical statistics represents weak convergence of random variables and corresponds to universality as known from statistical physics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64 and C23 establish the connection to statistical physics concepts. The analogy is appropriate and supported by citation to probability theory (Billingsley, 1968) and prior work (Klein and Simons, 2011). The mathematical framework of weak convergence correctly describes the observed phenomena.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "7aa6a54e-cdfc-4a64-b4cd-a5fa55f3dd35",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Universality implies that simplistic models are often equally accurate for experimental data with higher statistical power, and Markovian approximations become increasingly accurate at long times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C70 represent practical implications of the universality finding. These follow logically from the main results: if models converge to the same statistics, simpler models with fewer parameters are preferable (C66), and the convergence property justifies Markovian approximations at long times (C70).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "e02f96fe-3060-406c-adf4-eacc2811c38e",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Advanced model inference schemes integrating data from different experimental sources might reveal details of stem cell self-renewal strategies in the future.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C73 is marked as SPECULATION in the evidence and represents a future direction rather than a demonstrated result. While reasonable as a suggestion, no evidence or framework is provided to support the feasibility or methodology of such integration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "be88b836-1e71-4f13-9208-5231a96c9e5a",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The results apply to most renewing tissues (epithelial sheets, volumnar organs) but not to one-dimensional arrangements of stem cells, where spatial models may produce different clonal statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 appropriately scope the applicability of the results based on cited theoretical work (Klein and Simons, 2011; Bramson and Griffeath, 1980). The limitation to non-1D arrangements is well-established in the literature and correctly acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "5903f290-fd8f-402a-9e85-902a9e54342a",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Two classical stem cell self-renewal strategies exist: Invariant Asymmetry (IA) with only asymmetric divisions (r=0) that strictly conserves stem cell numbers, and Population Asymmetry (PA) with balanced symmetric divisions that maintains homeostasis on average.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 and C25, C27 describe established knowledge supported by multiple citations to prior literature (Potten and Loeffler, 1990; Simons and Clevers, 2011a; Watt and Hogan, 2000; Klein and Simons, 2011). The mathematical definitions are standard and the conservation property of IA follows directly from r=0.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "2016591b-824b-4f3b-906b-b374da40e470",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Experimental lineage-tracing studies have shown that Exponential clone size distributions prevail in most mouse tissues, supporting the PA strategy over IA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C29 summarize prior experimental findings supported by multiple citations (Clayton et al., 2007; Lopez-Garcia et al., 2010; Simons and Clevers, 2011b; Doup\u00e9 et al., 2012; Klein et al., 2010). This represents established experimental knowledge that motivates the current theoretical study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "bb9606c1-22c4-4414-9aed-678745925cd5",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Adult stem cells maintain self-renewing tissues through cell division and differentiation. Direct observation of divisions is rarely possible in vivo, but genetic lineage-tracing assays enable assessment of clonal statistics and cell fate dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C9, C14-C15 represent established background knowledge supported by appropriate citations (National Institute of Health, 2009) and standard understanding of experimental methods. These provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "cbdd9f00-5e5b-49a4-8acf-17e3b62b804a",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The Dynamic Heterogeneity (DH) model features cell fate plasticity with asymmetric divisions and agrees with experimental clonal data that also supports the PA strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 accurately describe the DH model from prior work (Greulich and Simons, 2016). The citation is appropriate and the description is consistent with the original work. This provides key motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "a68e59ea-b4bc-4154-b865-b0922e32e757",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Alternative experimental approaches (scRNA-seq, intravital imaging) have limitations: scRNA-seq cannot infer reversible trajectories or division modes, while intravital imaging is limited to accessible tissue types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 summarize limitations of alternative experimental approaches based on appropriate citations (Weinreb et al., 2018; Ritsma et al., 2012; Pittet and Weissleder, 2011; Hara et al., 2014; Rompolas et al., 2016). These represent established knowledge about experimental constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    },
+    {
+      "id": "caac68b5-205f-490a-a98b-fdfa90bb9044",
+      "content_id": "32e42d46-2645-411b-a243-f271df96304f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The conditions for emergence of universality are not always fulfilled in real tissues, providing both challenges and opportunities for identifying stem cell fate choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C24 is marked as INFERENCE in the evidence and represents a general statement about applicability. While logically consistent with the theoretical findings, no specific analysis of real tissue parameters is provided to determine when conditions are or are not fulfilled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:32:43.112952Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5a68ffdc-4ed5-46e7-a438-753fcccc88b4",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "b93a534d-ce70-4c24-80d3-812d15e65c7b",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "62e7be28-3395-4003-974f-7e17fceeee94",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "62af459e-c535-4cb4-99a3-bc83f78296d6",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "f8d1a5f6-247c-48d3-8383-10b7fcacf0d8",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "21faa467-52e5-4cdb-96dc-828712c414c4",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "dd25cc82-4729-4459-9f7a-51a266c82c1e",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "790396eb-226d-46c0-83eb-70ea8711ac39",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "82ee776b-a291-41db-960d-34e253f10447",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "55e81bef-ac57-4df6-b902-26a050314d2e",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "d0558404-f66e-42fe-af24-3b2b57418c75",
+      "result_id": "ef826add-06af-4f90-9689-d79500b25edf"
+    },
+    {
+      "claim_id": "83f16ec6-9a0f-43ad-ac54-6e556061f88b",
+      "result_id": "cc4755ec-e37a-44a7-a857-1973fa16c0cd"
+    },
+    {
+      "claim_id": "70c4a549-4b3d-4657-914e-e1998ee70ef1",
+      "result_id": "cc4755ec-e37a-44a7-a857-1973fa16c0cd"
+    },
+    {
+      "claim_id": "3a3dfb28-572c-41fe-8448-ba22bf9b1e27",
+      "result_id": "cc4755ec-e37a-44a7-a857-1973fa16c0cd"
+    },
+    {
+      "claim_id": "a41abf8b-dd0b-4c23-92e2-17b2f5dc1c91",
+      "result_id": "cc4755ec-e37a-44a7-a857-1973fa16c0cd"
+    },
+    {
+      "claim_id": "f571b5bf-f91f-42ad-b777-1ad62d1512b8",
+      "result_id": "cc4755ec-e37a-44a7-a857-1973fa16c0cd"
+    },
+    {
+      "claim_id": "c50282f4-589c-4991-9a69-ff1628b39c8f",
+      "result_id": "676440a1-a61e-4870-96dd-1ff4088fdcea"
+    },
+    {
+      "claim_id": "8bfcbe2e-50b8-42a3-aaa7-9423ce4de43f",
+      "result_id": "676440a1-a61e-4870-96dd-1ff4088fdcea"
+    },
+    {
+      "claim_id": "f986a66f-e4fb-4313-917b-e28cd2a6e898",
+      "result_id": "676440a1-a61e-4870-96dd-1ff4088fdcea"
+    },
+    {
+      "claim_id": "830fa814-b4d8-46c2-a2f4-7201c789903f",
+      "result_id": "f29fa029-02c8-4df1-b02e-ce187f85dc36"
+    },
+    {
+      "claim_id": "d8f95471-55bf-4d6c-8e89-2b522cd8747a",
+      "result_id": "f29fa029-02c8-4df1-b02e-ce187f85dc36"
+    },
+    {
+      "claim_id": "b89e7e73-1c33-493e-864e-527ea544678b",
+      "result_id": "f29fa029-02c8-4df1-b02e-ce187f85dc36"
+    },
+    {
+      "claim_id": "e4526b86-1ce6-4d05-a186-86232ca0490c",
+      "result_id": "f29fa029-02c8-4df1-b02e-ce187f85dc36"
+    },
+    {
+      "claim_id": "e2c8e152-da68-4588-80fe-587671cfca1d",
+      "result_id": "f29fa029-02c8-4df1-b02e-ce187f85dc36"
+    },
+    {
+      "claim_id": "a6a2c24f-8e39-4c38-8f7e-fe7b41056b3f",
+      "result_id": "9c4d103e-1891-4807-b158-a63fc222586e"
+    },
+    {
+      "claim_id": "09fa2aae-2924-4c09-a401-857e23afb198",
+      "result_id": "9c4d103e-1891-4807-b158-a63fc222586e"
+    },
+    {
+      "claim_id": "304bd9b7-b6b6-4568-90a1-f5fb344e1c38",
+      "result_id": "9c4d103e-1891-4807-b158-a63fc222586e"
+    },
+    {
+      "claim_id": "54025d18-1481-47e4-9939-70a9056f4d9e",
+      "result_id": "9c4d103e-1891-4807-b158-a63fc222586e"
+    },
+    {
+      "claim_id": "ffe53e8d-61e6-4c0e-a974-8d2181a7f398",
+      "result_id": "9c4d103e-1891-4807-b158-a63fc222586e"
+    },
+    {
+      "claim_id": "6d6f5573-1481-4e4f-a48e-1a0625ccd09d",
+      "result_id": "c0377bf5-f06d-45a7-a196-b7f8ba456c90"
+    },
+    {
+      "claim_id": "d979e767-fdb1-4186-87d2-2bea233f0c4a",
+      "result_id": "c0377bf5-f06d-45a7-a196-b7f8ba456c90"
+    },
+    {
+      "claim_id": "a6a07cef-26ef-423f-9f95-1607df494b18",
+      "result_id": "c0377bf5-f06d-45a7-a196-b7f8ba456c90"
+    },
+    {
+      "claim_id": "d8ff249c-09a9-45c3-8b2d-5218c8ecfbf5",
+      "result_id": "1ef1c97c-89cb-4f4e-843e-83afcfe565c4"
+    },
+    {
+      "claim_id": "be86bcb0-9615-4060-9d64-c1e27df9e20f",
+      "result_id": "1ef1c97c-89cb-4f4e-843e-83afcfe565c4"
+    },
+    {
+      "claim_id": "14ec0abf-003b-40ea-b002-9ef7acb7cee2",
+      "result_id": "1ef1c97c-89cb-4f4e-843e-83afcfe565c4"
+    },
+    {
+      "claim_id": "8dba2761-fd33-4aba-919c-c94a235c5efc",
+      "result_id": "f1f704c7-04d6-4a04-9ae9-f9671577b4f1"
+    },
+    {
+      "claim_id": "caa586af-bff8-458c-b34d-10682026c8d7",
+      "result_id": "f1f704c7-04d6-4a04-9ae9-f9671577b4f1"
+    },
+    {
+      "claim_id": "221f1ae1-0ae3-43aa-af11-10d5216a4b17",
+      "result_id": "f1f704c7-04d6-4a04-9ae9-f9671577b4f1"
+    },
+    {
+      "claim_id": "158d5351-a43a-4c07-a529-3b9f6f646be4",
+      "result_id": "7da5725b-cbf0-46b8-aa4f-8bed3de08f31"
+    },
+    {
+      "claim_id": "91a4a13c-40c7-40f2-8b3c-f961dd2cd41e",
+      "result_id": "7da5725b-cbf0-46b8-aa4f-8bed3de08f31"
+    },
+    {
+      "claim_id": "80791f0c-4a24-4a2e-942a-0e2f8c1aed94",
+      "result_id": "7aa6a54e-cdfc-4a64-b4cd-a5fa55f3dd35"
+    },
+    {
+      "claim_id": "f814c62e-bb6e-4ce4-9a36-3de39825f5a5",
+      "result_id": "7aa6a54e-cdfc-4a64-b4cd-a5fa55f3dd35"
+    },
+    {
+      "claim_id": "1c9c668c-fbf7-45b2-9dc7-04fe70de5bbd",
+      "result_id": "e02f96fe-3060-406c-adf4-eacc2811c38e"
+    },
+    {
+      "claim_id": "708e4e89-b729-474e-8599-65de1e9f012a",
+      "result_id": "be88b836-1e71-4f13-9208-5231a96c9e5a"
+    },
+    {
+      "claim_id": "6ea8f480-40bd-4bf6-a08a-a077a655ddc7",
+      "result_id": "be88b836-1e71-4f13-9208-5231a96c9e5a"
+    },
+    {
+      "claim_id": "ea751629-a7f2-459b-9301-db3b3ce9064d",
+      "result_id": "5903f290-fd8f-402a-9e85-902a9e54342a"
+    },
+    {
+      "claim_id": "bc6d82b1-db1a-476a-8832-c2397dbb8139",
+      "result_id": "5903f290-fd8f-402a-9e85-902a9e54342a"
+    },
+    {
+      "claim_id": "4b092129-a919-4944-a7ce-e34c5fb519aa",
+      "result_id": "5903f290-fd8f-402a-9e85-902a9e54342a"
+    },
+    {
+      "claim_id": "69d71978-e2ca-4c31-b878-ed1660367600",
+      "result_id": "5903f290-fd8f-402a-9e85-902a9e54342a"
+    },
+    {
+      "claim_id": "de1db543-2ebe-4b60-8fbb-d101dcc5d208",
+      "result_id": "5903f290-fd8f-402a-9e85-902a9e54342a"
+    },
+    {
+      "claim_id": "e015cd0a-897d-4eed-a12f-2c72f4844173",
+      "result_id": "5903f290-fd8f-402a-9e85-902a9e54342a"
+    },
+    {
+      "claim_id": "77ec3532-9f76-40a5-a897-520744a0b668",
+      "result_id": "2016591b-824b-4f3b-906b-b374da40e470"
+    },
+    {
+      "claim_id": "938f1322-16f9-46e7-8136-d96e14133d30",
+      "result_id": "2016591b-824b-4f3b-906b-b374da40e470"
+    },
+    {
+      "claim_id": "8bce162d-1857-491e-bf77-be76dd7da75f",
+      "result_id": "bb9606c1-22c4-4414-9aed-678745925cd5"
+    },
+    {
+      "claim_id": "5ee4f6fe-8a53-4bb3-b38e-b39ab0602485",
+      "result_id": "bb9606c1-22c4-4414-9aed-678745925cd5"
+    },
+    {
+      "claim_id": "76fdf990-bee2-40c1-9010-26eca97ae559",
+      "result_id": "bb9606c1-22c4-4414-9aed-678745925cd5"
+    },
+    {
+      "claim_id": "50050b93-a620-4b4f-9fda-7c30c6336802",
+      "result_id": "bb9606c1-22c4-4414-9aed-678745925cd5"
+    },
+    {
+      "claim_id": "7c816b83-bd32-4194-865a-f5f40563bdb0",
+      "result_id": "bb9606c1-22c4-4414-9aed-678745925cd5"
+    },
+    {
+      "claim_id": "709c6582-476a-4720-a6e5-55910112c30e",
+      "result_id": "cbdd9f00-5e5b-49a4-8acf-17e3b62b804a"
+    },
+    {
+      "claim_id": "f63ad741-bd22-4cc2-9fb3-473521120988",
+      "result_id": "cbdd9f00-5e5b-49a4-8acf-17e3b62b804a"
+    },
+    {
+      "claim_id": "c86e29a4-c460-407a-9181-0b6504c7cec2",
+      "result_id": "cbdd9f00-5e5b-49a4-8acf-17e3b62b804a"
+    },
+    {
+      "claim_id": "4925c359-d3a1-45c4-9709-8f9afc7b218c",
+      "result_id": "a68e59ea-b4bc-4154-b865-b0922e32e757"
+    },
+    {
+      "claim_id": "d50778ac-dd93-486b-93a7-4e722a3b91c9",
+      "result_id": "a68e59ea-b4bc-4154-b865-b0922e32e757"
+    },
+    {
+      "claim_id": "c324ee6c-b79c-4a63-b76f-66cf909db4bc",
+      "result_id": "caac68b5-205f-490a-a98b-fdfa90bb9044"
+    }
+  ],
+  "comparisons": []
+}

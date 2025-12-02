@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Ftz-f1 protein is transiently expressed in follicle cells specifically at stages 10B-12 during Drosophila oogenesis. Multiple reporters (antibody staining, GFP-tagged protein, and \u03b2Gal enhancer trap) confirm this temporal expression pattern, with Ftz-f1 absent before stage 10B, dramatically upregulated at stage 10B, and progressively decreasing through stage 12 until undetectable at stages 13-14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 provide converging evidence from three independent reporter systems (antibody, GFP tag, and \u03b2Gal) showing consistent temporal expression patterns. The data are internally consistent and use appropriate controls. The inference about \u03b2Gal stability (C40) is reasonable given established knowledge about reporter protein stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Ftz-f1 expression in stage-10B follicle cells is induced by ecdysone signaling but appears insensitive to ecdysone levels. Blocking ecdysone signaling with EcRDN eliminates Ftz-f1 expression, but exogenous 20E cannot induce premature expression, and manipulation of Cyp18a1 (which affects ecdysone titer) does not alter Ftz-f1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 demonstrate that ecdysone signaling is necessary (C42-C43) but not sufficient (C44-C45) for Ftz-f1 expression. The Cyp18a1 experiments (C46-C47) appropriately test whether ecdysone titer matters, finding it does not. The conclusion (C48) is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Ftz-f1 and Ttk69 are independently induced by ecdysone signaling at stage 10B and do not regulate each other. Ttk69 knockdown does not affect Ftz-f1 expression, ftz-f1 mutants show normal Ttk69 expression and proper transition to gene amplification, indicating parallel rather than sequential regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 use reciprocal genetic experiments (knockdown and mutant analyses) to demonstrate independence of Ftz-f1 and Ttk69 regulation. The EdU staining (C51) provides functional confirmation that ftz-f1 mutants undergo the Ttk69-dependent transition normally. The inference of parallel pathways (C52) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Knockdown of ftz-f1 in follicle cells from stage 10B onward causes severe ovulation defects. Two independent RNAi lines show efficient knockdown, reduced egg laying, retention of stage-14 follicles, and dramatically reduced follicle rupture in response to octopamine stimulation (from ~67-83% in controls to 2-18% in knockdowns).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 demonstrate robust phenotypes using two independent RNAi lines with appropriate controls. The use of two different reporters (47A04-LexA>GFP and Oamb-RFP) for isolating mature follicles strengthens the findings. Statistical significance is indicated (***p<0.001). The conclusion (C62) is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ftz-f1 knockdown follicles fail to express key ovulatory genes and cannot rupture even with calcium ionophore stimulation. These follicles show complete loss of Mmp2 expression, defective superoxide production (indicating Nox defects), patchy Oamb expression, and morphological abnormalities including dorsal appendage defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 systematically dissect the molecular basis of the ovulation defect. The ionomycin experiment (C64-C66) is particularly informative, showing the defect is downstream of or parallel to calcium signaling. Multiple molecular markers (Mmp2, Nox activity, Oamb) are disrupted. Claim C69 appropriately uses cautious language ('might be disrupted') for the inference about Nox. The overall conclusion (C73) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Ftz-f1 is required cell-autonomously for follicle cells to differentiate from stage 10B into the final maturation stage (stage 14). ftz-f1 mutant clones fail to upregulate stage-14 markers (Hnt) and continue expressing stage-10B/11 markers (Cut, Ttk69, EcR.A, EcR.B1, Br-C) and gene amplification activity, indicating arrest at the end of stage 10B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C88 use MARCM clonal analysis to demonstrate cell-autonomous function. Multiple stage-specific markers are examined, showing consistent arrest at stage 10B. The molecular characterization is thorough (Hnt, Cut, Ttk69, EcR isoforms, Br-C, EdU incorporation). The inference of arrest at end of stage 10B (C87) is well-justified by the marker analysis. The conclusion of cell-autonomous function (C88) is directly supported by the clonal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "RNA-seq and CUT&RUN analyses identify 15 likely direct targets of Ftz-f1 in follicle cells. RNA-seq shows 197 downregulated and 192 upregulated genes in ftz-f1 knockdown. CUT&RUN identifies Ftz-f1 binding sites with motifs matching the canonical Ftz-f1 binding sequence, predominantly near transcription start sites. Among direct targets, only two encode transcription factors: Eip74EF and sim.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C104 describe rigorous genomic analyses. The PCA (C89) confirms sample quality. The CUT&RUN analysis includes appropriate validation: multiple replicates (C92-C93), motif discovery matching known Ftz-f1 motifs (C96), footprinting analysis (C97-C99), and symmetric profiles (C99). The integration of RNA-seq and CUT&RUN to identify direct targets (C102) uses appropriate stringent criteria. The identification of only two transcription factors among targets (C104) is a key finding for understanding the regulatory cascade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The transcription factor Sim is identified as a likely direct target of Ftz-f1. A single Ftz-f1 binding peak is found at the proximal promoter of sim transcript FBtr0334613, which is the only sim transcript expressed in stage-10B\u201312 follicles and is downregulated in ftz-f1 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 focus on Sim as a key target. The specificity is notable: only one binding site (C107), only one transcript expressed (C108), and that transcript is downregulated in knockdown (C109). This convergent evidence strongly supports Sim as a direct target. The transcript-level analysis (C108-C109) using HISAT-Stringtie adds important specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Sim protein expression mirrors Ftz-f1 temporal pattern and depends on Ftz-f1 but not Ttk69. Sim is absent before stage 10B, dramatically upregulated at stage 10B/11, progressively downregulated through stage 13, then re-upregulated at stage 14. ftz-f1 mutants completely lack Sim at stages 10B-12, while ttk knockdown shows normal Sim. Misexpression of ftz-f1 induces premature Sim.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C118 establish Sim as downstream of Ftz-f1 through multiple approaches: temporal correlation (C110-C113), loss-of-function (C114), independence from Ttk69 (C115), and gain-of-function (C116). The disruption of stage 10A/10B transition by premature ftz-f1 expression (C117) provides additional functional insight. The conclusion (C118) is well-supported by the genetic epistasis experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Sim is essential for follicle cell differentiation, phenocopying ftz-f1 mutants. sim knockdown follicle cells fail to upregulate stage-14 markers (Hnt) and fail to downregulate stage-10B markers (Cut, Ttk69, EcR.A, EcR.B1, Br-C), with similar molecular signatures to ftz-f1 mutants. Sim does not regulate Ftz-f1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 demonstrate that Sim phenocopies Ftz-f1, supporting a linear pathway. The molecular characterization is thorough, examining the same markers as for ftz-f1 mutants. The control showing Sim doesn't regulate Ftz-f1 (C123) confirms the directionality. The conclusion (C124) is well-justified by the phenotypic similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Precise temporal and quantitative control of Sim expression is critical for proper follicle cell differentiation. Ectopic sim expression causes severe developmental defects including disrupted follicle cell organization, abnormal marker expression, and morphological abnormalities. Attempts to rescue ftz-f1 knockdown with ectopic sim show at most mild rescue with persistent abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 demonstrate that simply expressing Sim is insufficient to rescue ftz-f1 defects, indicating additional complexity. The observation of defects with ectopic expression (C125-C127) is important for understanding the pathway. The inference about temporal/quantitative control (C128) is reasonable. However, the failure to achieve clean rescue limits the strength of the conclusion that Sim acts downstream (C129), though the phenotypic similarity and expression dependence still support this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Ectopic expression of ftz-f1 can rescue ftz-f1 RNAi knockdown defects in follicle cell differentiation. Rescue clones show restored Ftz-f1 expression (though slightly weaker than wild-type), complete rescue of Hnt and Cut expression, and no premature Sim induction (unlike ftz-f1 overexpression alone).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 provide important positive controls showing that the RNAi phenotype is specifically due to loss of ftz-f1. The slightly weaker expression (C130) is appropriately explained by RNAi targeting both endogenous and ectopic transcripts (C131). The rescue of molecular markers (C132) and absence of premature Sim (C133) validate the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Mouse SF-1 (mSF-1) can functionally replace Drosophila Ftz-f1 in promoting follicle cell differentiation and maturation. mSF-1 rescues ftz-f1 knockdown defects, restoring normal Hnt upregulation and Cut downregulation at stage 14. Moreover, ectopic mSF-1 is sufficient to promote premature follicle cell differentiation, causing premature changes in Hnt and Cut expression at earlier stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C143 demonstrate functional conservation between fly and mouse NR5A receptors. The rescue experiments (C134-C137) are well-controlled and show restoration of key markers. The gain-of-function experiments (C138-C143) provide additional evidence that mSF-1 can drive the differentiation program. The observation of cytoplasmic Cut (C142) adds mechanistic insight. This is strong evidence for functional conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "mSF-1 can induce Sim expression in the absence of Ftz-f1, and promotes premature follicle cell differentiation via Sim. mSF-1 rescues Sim expression in ftz-f1 knockdown follicles and can prematurely induce Sim at stage 10A (but not earlier), with corresponding premature differentiation marker changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 extend the conservation findings to show that mSF-1 acts through the same downstream target (Sim) as Ftz-f1. The stage-specific competence (premature induction at 10A but not earlier, C146) is an interesting observation suggesting additional regulatory constraints. The inference that mSF-1 acts via Sim (C148) is well-supported by the correlated expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The study demonstrates that ecdysone-induced Ftz-f1 promotes follicle cell differentiation and maturation partly via Sim, and this regulatory role is functionally conserved between Drosophila and mammals. The DNA binding domains of NR5A receptors are >80% similar between flies and humans, and mSF-1 can rescue Ftz-f1 function and induce Sim expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 synthesize the major findings. The conservation of DNA binding domains (C150) is supported by citation. The functional conservation (C151-C153) is demonstrated by the rescue experiments. The ability of mSF-1 to induce Sim (C154) completes the conservation argument. The qualifier 'partly' in C149 is appropriate given that rescue experiments with Sim alone were not fully successful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establish that NR5A nuclear receptors are conserved and important for mammalian ovarian function, while their roles in Drosophila ovaries are largely unknown. The Drosophila homolog ftz-f1 has well-characterized roles in embryogenesis and development but limited study in adult oogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide literature context supported by appropriate citations. These establish the rationale for the study: NR5A receptors are important in mammals (C1, C7-C10) but understudied in Drosophila ovaries (C2, C21), despite extensive knowledge of ftz-f1 in other developmental contexts (C12-C20). This background appropriately motivates the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background claims describe the established biology of Drosophila oogenesis, including ovariole structure, the 14 developmental stages, follicle cell composition, and known transitions at stages 10A/10B and stage 14. The gap in knowledge is how follicle cells differentiate from stage 10B to stage 14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C34 provide essential background on Drosophila oogenesis, supported by appropriate citations to established literature. These claims set up the biological context and identify the specific knowledge gap (C34) that the study addresses. This background is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The mammalian Sim homologs (Sim1 and Sim2) have not been studied for roles in female fertility, though Sim2 appears to be expressed in human ovarian follicle cells according to the Human Protein Atlas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 identify a potential avenue for future research by noting that mammalian Sim homologs exist (C155), haven't been studied in fertility (C156), but show suggestive expression patterns (C157). The reliance on database information (C157) is appropriately qualified with 'seems to be' and citation to the source.",
+    "result_type": "MINOR"
+  }
+]

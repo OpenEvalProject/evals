@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C80"
+    ],
+    "result": "Epe1 has a non-enzymatic function that opposes heterochromatin assembly, and the putative catalytic JmjC domain is at least partially dispensable for its anti-silencing function in cells. This challenges the paradigm that enzymatic erasure is the primary mechanism reversing epigenetic silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25, and C80 are supported by multiple lines of evidence including reporter gene assays showing that the Epe1 C-terminus (lacking the JmjC domain) can partially restore anti-silencing activity (C25, Figure 3C-D), and the complete blockage of heterochromatin establishment by the C-terminus alone (C52, Figure 3E). The lack of detectable demethylase activity in vitro (C22, C46) combined with functional activity in cells supports a non-enzymatic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C37",
+      "C39"
+    ],
+    "result": "Point mutations within the putative catalytic JmjC domain of Epe1 (H297A, Y307A, Y370A) disrupt its interaction with Swi6HP1 and lead to loss of Epe1 activity in cells, including loss of heterochromatin localization and increased heterochromatin spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28, C29, C37, and C39 are well-supported by co-immunoprecipitation data (Figure 2A), ChIP-qPCR showing reduced Epe1 occupancy at heterochromatin (Figure 2B), live cell imaging showing loss of co-localization (Figure 1F), and reporter gene assays showing red/sectored colonies (Figure 1B). The consistency across multiple experimental approaches strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48"
+    ],
+    "result": "The C-terminus of Epe1 (amino acids 434-948) directly interacts with Swi6HP1, and this C-terminal fragment exhibits enhanced binding to Swi6HP1 compared to full-length Epe1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47, and C48 are supported by in vitro translation assays (Figure 3\u2014figure supplement 1B), in vitro binding assays showing increased interaction of the C-terminal fragment with Swi6HP1 (Figure 3A), and co-immunoprecipitation experiments in cells (Figure 3\u2014figure supplement 1D). The convergence of in vitro and in vivo data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "H3K9 methylation stimulates the protein-protein interaction between Epe1 and Swi6HP1 in vitro and in vivo. The interaction is obliterated in H3K9 methylation-deficient mutants (clr4\u0394 and H3K9R) and is specifically enhanced by H3K9me2/me3 peptides but not H3K4me3 peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53, C54, C55, C56, and C57 are supported by co-immunoprecipitation experiments showing loss of interaction in clr4\u0394 and H3K9R mutants (Figure 4A), in vitro binding assays demonstrating peptide-dependent stimulation (Figures 4C, 4D, Figure 4\u2014figure supplement 1B), and the specificity for H3K9 methylation over H3K4 methylation. The requirement for functional heterochromatin (C54) further supports the H3K9me-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C49",
+      "C63"
+    ],
+    "result": "A cis interaction between the Epe1 N- and C-terminus inhibits Swi6HP1 binding, and H3K9 methylation binding attenuates this intramolecular interaction to promote Swi6HP1 binding. The addition of H3K9me3 peptides or recombinant Swi6HP1 disrupts the trans interaction between Epe1-N and Epe1-C fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C49, and C63 are supported by in vitro binding assays showing that Swi6HP1 can disrupt the Epe1-N/Epe1-C trans interaction (Figure 3B) and that H3K9me3 peptides specifically eliminate this interaction (Figure 5C). The enhanced binding of the C-terminal fragment alone (C48) provides additional support for an auto-inhibitory mechanism. However, the cis interaction is inferred from trans binding data, which is a reasonable but indirect inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Epe1 directly binds to H3K9me3 peptides and selectively interacts with H3K9 methylated histones as opposed to H3K4 methylated histones. The N-terminal region of Epe1 (Epe1-\u0394C) also exhibits this H3K9 methylation binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, and C62 are supported by peptide binding assays (Figure 5A), histone binding assays showing selectivity for H3K9me over H3K4me (Figure 5B), and similar binding activity of the Epe1-\u0394C fragment (Figure 5\u2014figure supplement 1A,B). These data suggest the JmjC domain (amino acids 233-434) is responsible for H3K9 methylation recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Expressing the Epe1 C-terminus is sufficient to disrupt heterochromatin by outcompeting the histone deacetylase Clr3 from sites of heterochromatin formation. In Epe1 H297A mutants, the interaction between Swi6HP1 and Clr3 substantially increases, and Epe1 enrichment increases at pericentromeric repeats in clr3\u0394 strains but is lost at telomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C52, C68, C69, C70, and C71 are supported by reporter gene assays showing complete blockage of heterochromatin establishment by the Epe1 C-terminus (Figure 3E), co-immunoprecipitation showing increased Clr3-Swi6HP1 interaction in Epe1 H297A background (Figure 6A), and ChIP-qPCR data showing altered Epe1 localization patterns in clr3\u0394 cells (Figures 6C-E). The data support a competitive displacement model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Constitutive tethering of Clr3 (but not Sir2) at an ectopic site promotes epigenetic inheritance and renders heterochromatin refractory to Epe1 anti-silencing effects. However, Clr3 cannot initiate H3K9 methylation de novo and must be recruited in cis. The inheritance of H3K9 methylation still depends on the read-write activity of Clr4Suv39h even when Clr3 is constitutively tethered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C73, C74, C75, C76, and C77 are supported by reporter gene assays (Figures 7B, 7E, Figure 7\u2014figure supplement 1A-C) and ChIP-qPCR measurements (Figures 7C-D, 7F-G). The requirement for Clr4 chromodomain (C76-C77) demonstrates that read-write activity remains essential. The specificity for Clr3 over Sir2 and the requirement for cis recruitment are well-documented. However, the mechanism by which Clr3 opposes Epe1 is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The Epe1 C-terminal truncation mutant (Epe1-\u0394C, lacking the C-terminus) exhibits substantially enhanced binding to Swi6HP1 compared to full-length Epe1, and this interaction is insensitive to H3K9 methylation. Unlike full-length Epe1, Epe1-\u0394C interacts with Swi6HP1 in both clr4+ and clr4\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C65, C66, and C67 are supported by co-immunoprecipitation data (Figure 5\u2014figure supplement 1C, 1D) and in vitro binding assays (Figures 5D, 5E). The data demonstrate that the C-terminus enforces H3K9 methylation-dependent binding, and its removal results in constitutive, H3K9me-independent interaction. This supports the auto-inhibition model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Despite Swi6HP1 W104A being unable to bind H3K9me3 peptides, the interaction between Epe1 and Swi6HP1 W104A is still stimulated by H3K9me3 peptides. Similarly, Epe1 remains responsive to H3K9me3 peptides even when Swi6HP1 is constitutively released from auto-inhibition (Loop-X mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 are supported by in vitro binding assays (Figure 4E, Figure 4\u2014figure supplement 1E) and peptide binding assays confirming that Swi6HP1 W104A cannot bind H3K9me3 (Figure 4\u2014figure supplement 1D). These data suggest that Epe1 directly binds H3K9me3 and that this binding, rather than Swi6HP1 conformational changes, drives the stimulation of the Epe1-Swi6HP1 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C46"
+    ],
+    "result": "Epe1 purified from fission yeast or insect cells exhibits no H3K9 demethylase activity in vitro, and Swi6HP1 binding to Epe1 is not sufficient to activate its putative enzymatic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C46 are supported by mass spectrometry-based demethylase assays showing no mass shift corresponding to demethylation in reactions with Epe1 alone or Epe1 in complex with Swi6HP1 (Figure 2\u2014figure supplement 2A), while the positive control JMJD2A shows clear demethylase activity (Figure 2\u2014figure supplement 2B). The addition of co-factors also did not alter the interaction or activate enzymatic activity (C45). However, the possibility remains that specific substrates or conditions not tested could reconstitute activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Wild-type Epe1 and Epe1 H297A exhibit similar thermal stability, indicating the mutation does not destabilize the protein. Recombinant Epe1 preferentially interacts with Swi6HP1 over Chp2HP1, and this interaction requires Swi6HP1 dimerization (CSD domain). The Epe1 H297A mutant shows reduced binding to Swi6HP1, and this interaction is independent of divalent metal ions (EDTA insensitive) and co-factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by differential scanning calorimetry (Figure 2\u2014figure supplement 1D), in vitro binding assays (Figures 2C, 2D, 2E, Figure 2\u2014figure supplement 1E), and the consistency of results with E. coli and S. pombe purified Swi6HP1 (Figure 2\u2014figure supplement 1F-G). The data rule out protein misfolding and demonstrate that the JmjC domain mutations affect protein-protein interactions rather than co-factor binding per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Both wild-type and Epe1 mutant strains exhibit high levels of H3K9me2 during heterochromatin establishment. Wild-type cells lose H3K9me2 approximately 24 hours after tetracycline addition, while Epe1 mutants retain high levels of H3K9 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C32 are directly supported by ChIP-qPCR data (Figures 1C, 1D). The data demonstrate that Epe1 activity is specifically required for the maintenance phase rather than establishment, consistent with its role in opposing epigenetic inheritance. The N=2 replicates are adequate for this type of measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Epe1 is localized at sites of constitutive heterochromatin through its interactions with Swi6HP1. mNeonGreen-Epe1 co-localizes with mCherry-Swi6HP1, but the Epe1 Y307A mutant fails to co-localize and exhibits a diffuse nuclear signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, and C35 are supported by live cell imaging data (Figures 1E, 1F) and are consistent with prior literature (C33). The loss of co-localization in the Y307A mutant is consistent with the co-immunoprecipitation and ChIP data showing loss of Swi6HP1 interaction and heterochromatin localization. The elevated cytoplasmic signal in the mutant is attributed to autofluorescence based on control experiments (Figure 1\u2014figure supplement 1C).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C38"
+    ],
+    "result": "Swi6HP1 is enriched in Epe1 pull-down experiments in wild-type cells, and Epe1 is enriched at pericentromeric dg repeats in wild-type cells. This heterochromatin-specific occupancy pattern is disrupted in swi6\u0394 and clr4\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C38 are supported by co-immunoprecipitation data (Figure 2A) and ChIP-qPCR data (Figure 2B). The dependence on both Swi6HP1 and H3K9 methylation (Clr4) for Epe1 localization is consistent with the model that Epe1 requires both factors for heterochromatin recruitment. The N=2 replicates for ChIP are adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Expressing the Epe1 C-terminal fragment (Epe1434-948) results in a phenotype substantially different from Epe1 co-factor binding mutants or epe1\u0394 cells, with a three-fold reduction in red or sectored colonies compared to epe1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 are supported by reporter gene assays (Figure 3C) and quantification (Figure 3D). The partial restoration of anti-silencing activity by the C-terminus alone demonstrates that the JmjC domain is at least partially dispensable. However, the incomplete restoration suggests additional functions for other Epe1 domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing the role of H3K9 methylation in heterochromatin formation, the functions of Clr4Suv39h and HP1 proteins (Swi6HP1 and Chp2HP1), and the known effects of Epe1 loss on heterochromatin spreading and epigenetic inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C19 are background knowledge supported by citations to established literature. These claims provide the necessary context for understanding the significance of the current work but do not represent novel findings from this study. They are well-established in the field of epigenetics and heterochromatin biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "Epe1 resembles JmjC domain-containing histone demethylases but harbors a non-canonical HXE...Y motif instead of the typical HxD/E...H motif. Point mutations affecting co-factor binding affect Epe1 activity in cells, and overexpression of these mutants can suppress heterochromatin spreading defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C23, and C24 are supported by sequence alignment data (Figure 1\u2014figure supplement 1A), citations to previous work, and data from this study (Figure 1B-D). The non-canonical motif and the effects of mutations are well-documented. The suppression by overexpression (C24) is from prior literature and supports the non-enzymatic function hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Discussion claims contextualizing the findings within the broader literature on epigenetic regulation, histone turnover, auto-inhibition mechanisms, and examples of other histone-modifying enzyme mimics with non-enzymatic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C79, C81-C87, C89, C92-C93, C96-C99 are discussion points supported by citations to relevant literature. These claims place the current findings in context and draw parallels to other systems (e.g., dKDM4A, JARID2, SUVH2/SUVH9, DMM-1). They represent established knowledge and reasonable interpretations rather than novel experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Model and speculative claims proposing that histone deacetylases like Clr3 create a chromatin environment promoting Clr4Suv39h read-write activity, that Epe1 prevents Clr3-mediated histone hypoacetylation by forming an inhibitory complex with Swi6HP1, and that Epe1's enzymatic and non-enzymatic functions may operate on different timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C91, C100-C104 are models and speculative inferences based on the experimental data. While the data support the non-enzymatic function and the displacement of Clr3, the mechanistic details of how Clr3 promotes Clr4 activity (C90) and the temporal dynamics of enzymatic vs. non-enzymatic functions (C102-C104) are not directly tested. These represent reasonable hypotheses for future investigation but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Speculative claims that unique substrates or conditions may be required to reconstitute Epe1 enzymatic activity, and that Bdf2 (a BRD4 homolog) may activate latent enzymatic functions of Epe1 at heterochromatin boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94 and C95 are speculative inferences based on the partial restoration of activity by the C-terminus (Figure 3C-D) and the co-localization of Bdf2 and Epe1 at boundaries (cited work). These represent hypotheses for future investigation but are not tested in this study. The speculation is reasonable given the data but lacks direct experimental support.",
+    "result_type": "MINOR"
+  }
+]

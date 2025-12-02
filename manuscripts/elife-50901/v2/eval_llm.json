@@ -1,0 +1,489 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study assembled and characterized a collection of 100 genetic driver lines covering 67 cell types in the Drosophila visual system, mushroom body, and central complex using split-GAL4 intersectional methods and anatomical validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C20-C26 collectively describe the assembly and characterization of genetic driver lines. The specific numbers (100 drivers, 67 cell types) are stated explicitly (C3), methods are described (C22), and validation approaches including imaging and stochastic labeling are documented (C23, C24). While some contamination is acknowledged (C25), the tools are stated to be the most specific available (C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The study developed TAPIN (tandem affinity purification of INTACT nuclei), a new method that uses IdeZ protease-mediated antibody cleavage and two-step capture to purify nuclei with higher throughput, purity, and sensitivity than INTACT, particularly enabling profiling of sparse cell types (<50 cells/brain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C45 describe the development and advantages of TAPIN. The method is clearly described (C28-C32), its advantages over INTACT are documented with data (C33-C37, C41-C45), and specific improvements are quantified (e.g., 5-6 fold background reduction in C45). The claims are supported by referenced figures showing empirical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The study generated 250 RNA-seq libraries from 242 samples (46 INTACT, 196 TAPIN, 8 dissected), focusing on 203 high-quality libraries from 100 drivers covering 67 cell types that met quality criteria (\u22658500 genes detected, \u22653\u00b5g cDNA yield, \u22650.85 correlation between replicates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 provide specific quantitative details about library generation and quality control. The numbers are explicit (C50, C54), quality metrics are defined (C53), and relationships between library quality metrics are documented with figure references (C52). The methodological choices are justified (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "TAPIN-seq measurements were validated by recovering known transcription factors in developing neurons and showing concordance with independent FACS-seq data for 12 cell types, arguing against major differences between nuclear and cytoplasmic transcriptomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 describe validation of TAPIN-seq through comparison to prior work (C56) and independent datasets (C57), with concordance supporting the method's accuracy. The inference about nuclear vs. cytoplasmic transcriptomes (C58) is reasonable given the concordance with FACS-seq, which measures whole-cell RNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study developed a mixture modeling approach to interpret transcript abundance as binary 'on' and 'off' states using two log-normal distributions, successfully addressing challenges like determining expression thresholds and transcript carryover, with 95% median concordance between replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C70 describe the mixture modeling approach and its performance. The method is clearly defined (C61), successfully applied to specific genes (C62, C64), addresses technical issues like carryover (C63), and shows high reproducibility (C66). The biological patterns observed (C67-C70) are consistent with known gene functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The mixture modeling approach achieved 93% concordance with FlyBase protein expression data (183/197 matches) and was further validated by comparing transcript predictions to protein expression for fkh (27/28 matches) and Ets65A (9/11 matches) using BAC-GFP transgenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 provide extensive validation of the mixture model. Quantitative concordance with FlyBase is documented (C71), sources of discordance are analyzed (C72-C74), and independent protein-level validation is performed for two genes with wide dynamic ranges (C75-C81). The high agreement rates support model accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Expression-based dendrogram analysis with bootstrap resampling showed well-supported broad groupings (muscle, glia, photoreceptors, neurons by brain region) and fine groupings of related cell types, but mid-level branchings were poorly supported, indicating lack of simple hierarchical relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 describe dendrogram construction and interpretation. The method is specified (C83), major patterns are documented (C84-C87), and limitations are acknowledged (C86). Unexpected groupings are explained by contamination (C88-C89), which is reasonable given prior acknowledgment of driver line imperfections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study identified marker genes for major cell groups including photoreceptors (n=108), glia (n=60), muscle (n=76), and pigment cells (n=18), including both known markers and novel candidates, with some markers for unprofiled cell types identified from dissected samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 document marker gene identification with specific numbers and examples. The approach is systematic (C91), examples include both known and novel markers (C92), and the use of contamination and dissected samples to identify markers for unprofiled cells is creative (C93-C95).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Analysis of gene family expression breadth showed HOX-like homeobox TFs were most specifically expressed while core cellular machinery was broadly expressed; DIP genes were more specific (median 6 cells) than beat (25.5 cells) or DPR genes (51 cells), with all lamina cell pairs expressing mRNAs for tens of interacting protein pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 describe expression breadth patterns across gene families with specific quantitative data. The patterns are biologically sensible (C96-C97), specific numbers are provided for cell adhesion molecules (C98-C99), and the broad potential for interactions is documented (C100).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study identified TfAP-2 as differentially expressed between closely related T4 and T5 cells (390 vs 6 TPM) and confirmed this at protein level; comparison of T5 subtype drivers identified known markers (Con, bi, dac) and novel markers (dysf, klg, Dscam3) with layer-specific expression validated for klg protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 demonstrate the resource's utility for distinguishing closely related cell types. Differential expression is quantified (C101), validated at protein level (C102), and extended to subtypes with both confirmation of known markers and identification of novel ones (C103-C104), with protein validation (C105).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Comparison to published scRNA-seq maps revealed that single-cell clusters (52 in optic lobe, 87 in brain) underestimate known cell type diversity (>100 in optic lobe) and do not proportionally represent cell type abundance (ranging from ~5x fewer to ~7x more than expected), suggesting caution when interpreting scRNA-seq cell type frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 provide critical evaluation of scRNA-seq maps using known anatomy as ground truth. The discrepancies in both diversity (C106-C108) and abundance (C109-C110) are documented with specific numbers, and the conclusion about caution (C111) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Non-negative least squares regression comparing TAPIN-seq to single-cell clusters revealed few one-to-one matches, many one-to-many matches, and suggested alternative labels for several clusters (e.g., TmY14 cluster matches TmY5a, Dm2 cluster matches Mi15, cluster #76 is pigment cells), demonstrating that bulk transcriptomes can help interpret single-cell data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C124 describe systematic comparison of bulk and single-cell data. The method is appropriate (C112), patterns are documented (C113-C116), and specific examples of relabeling are provided with supporting evidence (C117-C124). The conclusion that bulk data aids single-cell interpretation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study predicted neurotransmitter phenotypes using marker genes (Hdc, Gad1, VAChT, VGlut for histamine, GABA, acetylcholine, glutamate; ple/ddc/Vmat/DAT for dopamine), finding nearly all neurons express a single fast transmitter, with T1 expressing none and lacking bruchpilot, consistent with few presynaptic specializations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C133 describe neurotransmitter prediction with clear methodology (C125, C129) and results (C126, C130). The T1 case is particularly well-supported, with both transcript (C131-C132) and EM data (C133) converging on minimal synaptic output.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Neurotransmitter assignments generally agreed with prior work (e.g., cholinergic Kenyon cells, ChAT/Gad1/VGlut in Mi1/Mi4/Mi9) but differed from some transgene-based studies, attributed to unfaithful transgene expression; one likely error (Gad1 in Mi9) was attributed to Mi4 contamination based on lower abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C139 provide balanced evaluation of results against prior work. Concordance is documented (C134-C136), discrepancies are explained (C137), and potential errors are acknowledged with reasonable explanations (C138-C139). The self-critical assessment strengthens credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The study identified transcription factors informative of neurotransmitter phenotype (e.g., apterous for cholinergic, Lim3 for GABAergic in some contexts), with several having conserved roles in worm/mouse, indicating context-dependent and combinatorial regulation of neuronal features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C150 describe TF-neurotransmitter associations. The expanded search strategy is justified (C141-C142), examples are provided with evolutionary context (C143-C145), context-dependence is documented (C146-C149), and the conclusion about combinatorial regulation is reasonable (C150).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The study found evidence for co-transmission: Mi15 expresses dopaminergic and cholinergic markers (Vmat protein confirmed), R8 expresses cholinergic and histaminergic markers; nitric oxide synthase (Nos) was specifically expressed in lamina (C2, C3, Lawf2) and medulla neurons (Mi4, Pm4, Tm4, Mi15) with C3 protein confirmation; neuropeptides showed specific patterns (e.g., AstA only in Pm3) with broader receptor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C164 document co-transmission with protein validation for key cases (C153, C157, C160). The patterns are specific and biologically plausible, with receptor expression patterns consistent with known anatomy (C164). The R8 case is further validated in later claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The study identified photoreceptor-specific expression of orphan transporters CG8468 (SLC16 family) and lovit/CG45782 (SLC45 family, recently reported as putative histamine transporter), suggesting candidates for histamine transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C167 identify candidate genes for histamine transport. The expression patterns are specific (C165, C167), and the speculation about function (C166) is reasonable given the gene families and cell type. The lovit identification is supported by recent literature (C167).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Neurotransmitter receptors were broadly expressed with cell-type specific patterns: GluClalpha in most but not all cells, EKAR only in photoreceptors, nearly all cells expressing receptors for ACh/GABA/glutamate, and widespread neuromodulator receptors (e.g., octopamine receptors with Oamb protein confirmed in lamina neurons/glia including octopamine-sensitive Lawf2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C174 document receptor expression patterns. The broad expression is documented (C168), specific examples are provided (C169-C170), general patterns are described (C171-C172), and protein validation is included (C174). The patterns are consistent with known circuit organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C175",
+      "C176"
+    ],
+    "result": "Analysis of motion detection circuit inputs revealed all T5 inputs (Tm1, Tm2, Tm4, Tm9) are cholinergic while T4 inputs are mixed (GABAergic C3/Mi4, cholinergic Mi1/Tm3, glutamatergic Mi9), suggesting different input signs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C176 apply the neurotransmitter predictions to a well-studied circuit. The results are clearly stated and have important implications for understanding motion detection mechanisms, as acknowledged in the referenced figure supplement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "R8 photoreceptors express both histaminergic (Hdc) and cholinergic (ChAT, VAChT) markers, confirmed by VAChT-HA protein in R8 medulla terminals including dorsal rim; R8 postsynaptic partners (Dm9, Mi1, Mi4, Mi15, R7, L1, Tm20) all express nAChR subunits but only L1/Tm20/Dm9 express histamine receptors (ort), with EM analysis showing cells with/without histamine receptors often near same R8 presynapse, consistent with co-release or independent release at same sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C190 provide extensive evidence for R8 co-transmission. Transcript data (C177), protein validation (C178-C180), connectivity data (C181), receptor expression (C182-C186), and synapse-level analysis (C187-C188) all converge. The spatial pattern analysis (C188) is particularly strong evidence, though the mechanism (C190) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Combined cholinergic/histaminergic phenotype was previously reported for Hofbauer-Buchner eyelet but unexpected for compound eye R-cells; double histamine receptor mutants are not completely blind, consistent with histamine-independent transmission; recent work suggests cholinergic R8 signaling role in circadian entrainment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C193 place the R8 findings in context of prior work. The citations support the statements, and the convergence of evidence from mutant phenotypes (C192) and recent functional studies (C193) strengthens the case for functional significance of R8 cholinergic signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "GABA-A receptor subunit expression suggests potentially excitatory GABA signaling in L1/L2: in vitro data show Rdl/Lcch3 form chloride channels while Lcch3/Grd form cation channels; L1/L2 uniquely lack Rdl but express Grd/Lcch3/CG8916, suggesting cation channels; Musca lamina monopolar cells depolarize to GABA, identifying potential link between in vivo physiology, in vitro receptor properties, and subunit expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C204 integrate in vitro receptor data (C194-C195), expression patterns (C197-C201), and cross-species physiology (C203) to generate a testable hypothesis about L1/L2 GABA responses (C202, C204). The logic is sound though the hypothesis requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "Based on connectivity and transmitter data, main GABAergic inputs to L1/L2 are C2/C3, with L1 being main input to C2/C3; strong reciprocal connections indicate functional significance of GABA input sign; cells with different GABA-A profiles can be postsynaptic at same synapse; Grd expression in other cells (Dm8, Mi4) raises questions about synapse-specific distribution or novel receptor properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C205-C212 integrate connectivity and expression data to analyze circuit function. The connectivity patterns are documented (C205-C206), functional significance is inferred (C207), synapse-level analysis is performed (C210), and additional complexity is acknowledged (C211-C212).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "Diverse glutamate receptor expression in lamina includes photoreceptor-specific EKAR, absence of GluClalpha from photoreceptors, strong GluClalpha in epithelial glia, CG3822 enrichment in Lai (suggesting presynaptic function), and strong Eaat1 in T1 rather than glia (potential clue to T1 function); this prompted exploration of glutamatergic signaling to photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C213-C219 document unusual glutamate receptor patterns. The patterns are specific and unexpected (C214), functional inferences are reasonable (C215-C216, C218), and the observations motivate further analysis (C219). The T1 pattern is particularly intriguing given T1's enigmatic function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231"
+    ],
+    "result": "Analysis suggests Dm9 as medulla counterpart of Lai for photoreceptor feedback: both are glutamatergic, express ort, span multiple columns with variable innervation, and are major pre/postsynaptic partners of photoreceptors; Dm9 predicted to receive hyperpolarizing R7/R8 input via ort and excitatory input from L3/Dm8, potentially increasing photoreceptor output under low light; Dm9 integrates multiple spectral inputs (R7, R8, R1-6 via L3) suggesting role in color processing, matching proposed ort-expressing cell for R7/R8 color opponent signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C220-C231 build a compelling case for Lai/Dm9 functional similarity through multiple lines of evidence: connectivity (C223), anatomy (C224), molecular properties (C225), predicted inputs (C226), and functional implications (C227, C230-C231). The hypothesis is well-developed though requires experimental validation.",
+    "result_type": "MAJOR"
+  }
+]

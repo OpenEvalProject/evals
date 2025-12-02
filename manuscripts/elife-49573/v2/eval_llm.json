@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes foundational knowledge about glycan structure and function. Glycans are branched sugar oligomers attached to cell-surface proteins and lipids, synthesized in an assembly-line fashion in the Golgi apparatus by glycosyltransferase (GTase) enzymes. They encode cell identity and mediate intercellular interactions critical for development, species recognition, and host-pathogen coevolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C13 present well-established background knowledge about glycan structure, biosynthesis, and function, supported by appropriate citations to the literature. These claims provide necessary context but do not represent novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C16",
+      "C24",
+      "C25",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "GTase enzymes exhibit promiscuity and stochasticity, acting on multiple oligomer types despite chemical precision. This creates potential for enormous variability, as seen in prokaryotic glycans. However, eukaryotic glycoproteins maintain narrow, specific glycan profiles. The pigeonhole principle dictates that individual GTase enzymes must be promiscuous since there are far fewer enzymes than observed glycan oligomers, and conserved enzymes are found across species with distinct glycans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C14-C16, C24-C25, C42-C47 establish the paradox that motivates the study: promiscuous enzymes should create high variability, yet eukaryotic glycans show controlled specificity. The pigeonhole principle argument (C44) is logically sound given the cited evidence about enzyme-to-oligomer ratios. This sets up the central question addressed by the mathematical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The manuscript defines three classes of GTase enzymes based on promiscuity levels: context-free enzymes (maximally promiscuous, recognizing single monomers), ideal branch-sensitive enzymes (intermediate promiscuity, recognizing acceptor monomers with specific branches), and ideal root-sensitive enzymes (minimally promiscuous, recognizing acceptor monomers linked to specific root chains).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C48-C50 establish a classification system for enzyme promiscuity that is central to the mathematical framework. The examples (Fut2, GTB, \u03b24GalNT1) are cited from the literature, and the classification scheme is clearly defined and logically consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The manuscript describes the mechanistic basis of glycan synthesis in the Golgi. O-glycan synthesis begins with root monomer attachment to serine/threonine residues. The Golgi consists of ordered, compositionally distinct compartments containing specific GTase enzyme sets. Oligomers encounter enzymes stochastically as a Markov process, and reactions are irreversible since O-glycans are not pruned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41, C51-C53 describe established mechanisms of Golgi function and glycan biosynthesis, supported by appropriate citations. The Markov process modeling assumption (C52) is standard for stochastic chemical reactions and appropriately cited (Gillespie, 1977). These provide the biological foundation for the mathematical model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The manuscript rigorously identifies three sources of glycan variability in assembly-line reactions: truncated reactions (producing intermediate oligomers when residence time is insufficient), runaway reactions (producing tandem repeats when linkage networks contain loops), and divergent reactions (producing mutually exclusive fates when enzyme actions create acceptor blocks). Each pattern corresponds to specific enzymatic causes and has been observed in real glycan datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C66 present the core mathematical analysis identifying sources of variability. The three-way classification is proven in Appendix 2 (C54), and each type is rigorously connected to enzymatic causes through mathematical lemmas. The correspondence to real datasets (C55, Figure 2) provides empirical validation. The mathematical reasoning appears sound and the proofs are referenced appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Variability can be systematically eliminated by: (1) requiring high enzyme concentrations to eliminate truncated reactions, (2) removing enzymes involved in linkage loops to eliminate runaway reactions, and (3) removing enzymes involved in acceptor blocks to eliminate divergent reactions. This creates an 'algorithmic compartment' that specifically synthesizes a unique output for each input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 present constructive solutions to eliminate each source of variability, proven in Appendix 2, Lemma 3. The concept of an 'algorithmic compartment' is well-defined and follows logically from the elimination of all three variability sources. This represents a key theoretical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C72"
+    ],
+    "result": "Theorem 1 establishes that a target oligomer can be specifically synthesized from an input if and only if it can be synthesized in a series of single-enzyme compartments. For ideal root-sensitive enzymes, a single compartment always suffices since every growth order is algorithmic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C72 present the main theoretical results (Theorems 1 and 2, Lemma 4). These are proven in Appendix 2 and provide rigorous mathematical foundations for understanding compartmentalization requirements. The theorems are clearly stated and the proofs are referenced. This is the central mathematical contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23",
+      "C76",
+      "C77"
+    ],
+    "result": "The main finding: cells can specifically synthesize a larger repertoire of glycan oligomers by partitioning promiscuous enzymes across multiple Golgi compartments. Ideal root-sensitive enzymes can synthesize any product in a single compartment, while more promiscuous branch-sensitive and context-free enzymes require multiple compartments. To synthesize oligomers without byproducts, cells must either decrease enzyme promiscuity or increase compartment number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22-C23, C76-C77 state the central conclusion demonstrated through mathematical theorems. The result is rigorously proven and illustrated in Figures 1D and 4. The trade-off between enzyme promiscuity and compartment number is a logical consequence of the mathematical framework and represents the key biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C73"
+    ],
+    "result": "Glycan microheterogeneity becomes unavoidable when the number of compartments is limited or enzymes are excessively promiscuous. Some oligomers can never be synthesized without byproducts regardless of compartment number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C73 present fundamental limits on controlled glycan synthesis derived from the mathematical analysis. These follow logically from the theorems about compartmentalization requirements and represent important constraints on biological glycan synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Using the blood group B-antigen synthesis as an example, the manuscript demonstrates that increased enzyme promiscuity leads to tandem repeat byproducts when enzymes are in a single compartment, but specific synthesis is restored when promiscuous Fut2 and GTB enzymes are placed in separate compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C31-C33 provide a concrete biological example (Figure 1C) illustrating the theoretical principles. The B-antigen synthesis is well-characterized (cited), and the hypothetical promiscuous versions demonstrate the compartmentalization principle. This effectively bridges theory and biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Specific glycan profiles are functionally relevant, being associated with distinct species, individuals (e.g., ABO blood groups), and cell types. Altered glycan profiles are implicated in various disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 establish the biological importance of controlled glycan synthesis through multiple literature citations. This provides motivation for understanding control mechanisms but does not represent novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior simulations suggested enzyme localization plays a key role in controlling variability. The manuscript argues that having multiple compartments is crucial for limiting glycan variability in real cells, given that most GTases are promiscuous. This represents a trade-off since maintaining distinct compartments requires extensive membrane traffic machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C78-C82 discuss the biological context and trade-offs. The argument about compartment necessity (C82) follows logically from the mathematical results combined with empirical observations about enzyme promiscuity (C80-C81, cited). The trade-off discussion (C78-C79) is conceptually sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The manuscript proposes biological implications: enzyme redistribution within the Golgi could enable cell-type-specific glycan profiles, explain rapid glycan changes during infection/inflammation, facilitate evolutionary adaptation, but also means localization errors could be pathological (as in tumor invasiveness and congenital glycosylation disorders).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C88 present speculative biological implications. While C83 is supported by citations and follows from the theory, C84-C85 are explicitly speculative (C85 uses 'could facilitate'). C86-C88 cite correlations between localization errors and disease but do not establish causation. These represent plausible hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript concludes that compartmental organization of the Golgi allows control of glycan synthesis despite enzymatic promiscuity, potentially explaining why the Golgi is universally conserved across eukaryotes. The ability to generate specific glycan profiles would have enabled sophisticated intercellular interactions underlying sex, cooperation, and multicellularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C89-C92 present broad evolutionary interpretations. While C90 (Golgi conservation) is cited, the causal connection to glycan control (C89) is speculative ('potentially explaining'). The evolutionary advantages (C91-C92) are plausible but speculative. These represent interesting hypotheses but go beyond what the mathematical analysis directly demonstrates.",
+    "result_type": "MINOR"
+  }
+]

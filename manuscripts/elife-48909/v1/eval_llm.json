@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "PISEMA NMR spectroscopy of wild-type/L51I and wild-type/I62L heterodimers reveals that wild-type EmrE preferentially adopts the monomer B conformation while the mutants (L51I or I62L) prefer monomer A in the proton-bound state. This demonstrates that a single conservative mutation can strongly influence the conformational equilibrium of the EmrE dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are well-supported by solid-state NMR data (PISEMA spectra) shown in Figure 2. The spectra clearly show distinct peak patterns for heterodimers where either wild-type or mutant is isotopically labeled, demonstrating conformational preferences. The experimental design appropriately uses isotopic labeling to distinguish monomers, and the conclusion that a single conservative mutation influences conformational equilibrium is directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Solution NMR experiments confirm that the skewed conformational equilibrium observed in solid-state NMR is preserved under different sample conditions (isotropic vs aligned bicelles) and when Glu14 is deprotonated (pH 9.1). Quantitative analysis estimates wild-type EmrE assumes monomer B in the heterodimer at ~96% (pH 9.1), corresponding to a free energy change of ~1.8 kcal/mol induced by the L51I mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by solution NMR data (HMQC spectra) shown in Figure 3. The experiments systematically test different conditions and show consistent conformational bias. The quantitative analysis using peak intensities is described in the Methods section with appropriate equations. However, the error range (90-99%) is relatively large, and the calculation assumes complete heterodimer formation based on statistical mixing, which may introduce some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Addition of ethidium to wild-type/L51I heterodimers induces significant spectral broadening in solution NMR, suggesting intermediate chemical exchange between inward-open and outward-open states. This indicates the conformational bias is reduced upon ethidium binding and that drug-induced dynamics enable conformational exchange needed for transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by solution NMR data shown in Figure 3C. The spectral broadening upon ethidium addition is clearly observed and appropriately interpreted as intermediate exchange. The inference that conformational bias is reduced is logical based on the broadening pattern. However, the claim is somewhat indirect\u2014the authors infer reduced bias from broadening rather than directly measuring populations, which introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Tetraphenylphosphonium binding to wild-type/L51I heterodimers shows well-resolved NMR peaks (slow exchange regime) with wild-type preferring monomer B at ~86% (79-92% range), corresponding to ~1.1 kcal/mol free energy change. This demonstrates that drug binding does not trap the transporter in a single conformation and that the conformational bias is less pronounced in drug-bound states compared to drug-free states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by solution NMR data in Figure 3D and prior literature. The well-resolved peaks allow quantitative population analysis, which is more reliable than the ethidium-bound case. The comparison between drug-free (~96% monomer B) and TPP-bound (~86% monomer B) states supports the conclusion that drug binding reduces but does not eliminate conformational bias. The interpretation is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Growth inhibition assays show that L51I and I62L homodimers display strong ethidium resistance phenotypes indistinguishable from wild-type EmrE, indicating these mutations are fully functional and able to couple to the electrochemical potential for active drug efflux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by growth inhibition data in Figure 4A. The serial dilution assays clearly show comparable resistance for wild-type, L51I, and I62L. However, the conclusion that mutations are 'fully functional' is somewhat overstated\u2014the assay only tests one substrate (ethidium) under specific conditions and does not comprehensively assess all transport functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Transporter complementation experiments demonstrate that EmrEin and EmrEout individually cannot confer ethidium resistance, but co-expression restores function. Wild-type co-expressed with EmrEin or EmrEout shows wild-type-level resistance, while co-expression with E14Qin or E14Qout (lacking essential glutamate) shows growth inhibition, confirming heterodimer formation in the cell membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are well-supported by resistance assay data in Figures 4B and 5A. The experimental design appropriately uses single-topology variants and E14Q controls to demonstrate heterodimer formation. The logic is sound: if heterodimers did not form, wild-type + E14Q variants would show wild-type resistance, but instead show reduced resistance, confirming heterodimer formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "When L51I or I62L mutants are co-expressed with EmrEin, a significant reduction in ethidium resistance is observed on agar plates and in liquid culture compared to co-expression with EmrEout. This demonstrates that the conformational equilibrium shift observed by NMR has functional consequences in bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by resistance assay data in Figures 5B and 5C. The differential phenotypes between mutant+EmrEin vs mutant+EmrEout are clearly observed and reproducible. The connection to NMR-observed conformational changes is logical given the topology constraints. However, the manuscript does not rule out alternative explanations such as differential expression levels or stability of the heterodimers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Ethidium efflux assays show that L51I co-expressed with EmrEout exhibits ~3-fold faster initial fluorescence decrease and significantly lower steady-state fluorescence compared to L51I co-expressed with EmrEin. This supports the conclusion that conformational equilibrium changes directly influence the overall rate of drug efflux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by efflux assay data in Figures 5D and 5E. The ~3-fold difference in initial rate and the difference in steady-state fluorescence are clearly observed. The conclusion linking conformational equilibrium to efflux rate is well-supported by the combined NMR and functional data. The experiments include appropriate controls (vector) and error bars indicating reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Based on NMR data and topology information, the mutant paired with EmrEout favors the inward-open/cytoplasmic-facing conformation, while the mutant paired with EmrEin favors the outward-open/periplasmic-facing conformation. Resistance assays suggest that favoring the outward-open state has a deleterious impact on transport, while favoring the inward-open state shows no measurable reduction in phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 represent logical inferences connecting NMR structural data with functional outcomes. The reasoning is sound: given the antiparallel topology and the NMR observation that mutants prefer monomer A, the predicted conformational preferences follow. The functional data (reduced resistance for mutant+EmrEin but not mutant+EmrEout) support these predictions. However, this is an inference rather than direct structural determination of the conformations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors hypothesize that the primary kinetic steps influencing the observed phenotype are the inward-open to outward-open and outward-open to inward-open transition rates for the drug-free heterodimer. This is based on observations that populations are more skewed for drug-free states than drug-bound states, and that conformational exchange is not halted in the heterodimer (no locked state).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 represent a hypothesis supported by multiple lines of evidence: NMR data showing greater population skewing in drug-free vs drug-bound states (C65), ethidium-induced dynamics (C66), and functional data showing the mutants remain active (C67). The hypothesis is reasonable and consistent with the data, though it remains a hypothesis rather than a directly tested mechanism. The logic connecting these observations to specific rate constants is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Numerical simulations using a kinetic model show that drug transport is ~5.6-fold faster for mutant/EmrEout heterodimers versus mutant/EmrEin heterodimers. This provides computational evidence that shifting conformational equilibria via specific rate constants has a direct impact on functional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by computational simulations described in Figure 5\u2014figure supplement 2. The simulations use a published kinetic model with modified rate constants based on experimentally determined population ratios. The ~5.6-fold difference correlates well with the ~3-fold difference observed experimentally in efflux assays. However, the simulations make several assumptions about which rate constants to modify, and the model's validity depends on the accuracy of the underlying kinetic scheme.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The authors conclude that a minimal heterodimer with a single conservative mutation is sufficient to disrupt the preferred resting conformation, demonstrating a dynamic energy landscape with relatively small energy differences (~1-2 kcal/mol) among conformations in the transport cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are well-supported by the combined NMR and functional data. The free energy changes of ~1.1-1.8 kcal/mol are directly calculated from population measurements (C34-C35, C41-C42). These values are indeed relatively small on a biological scale, supporting the conclusion of a dynamic energy landscape. The claim that a single conservative mutation is sufficient is directly demonstrated by the L51I and I62L data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "The authors hypothesize that there may be evolutionary fitness advantages for having separate genes forming hetero-oligomers or fused genes with inverted repeats, as single mutations in hetero-oligomers can influence conformational equilibria and function in ways not possible for homo-oligomers. This could provide modest evolutionary paths for achieving symport or antiport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73 and C75 are speculative hypotheses about evolutionary implications. While the experimental data demonstrate that single mutations in heterodimers can shift conformational equilibria and function, the evolutionary claims are not directly tested. The connection to symport/antiport evolution (C75) is particularly speculative, though it is supported by citation C74 showing EmrE can perform symport under certain conditions. These remain interesting hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The introduction establishes background knowledge about membrane transporters, the alternating access model, inverted repeat domains, and the SMR family structure and evolution. These claims provide context for the study but represent established knowledge from prior work rather than new findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 are background claims supported by appropriate citations to prior literature. These are well-established concepts in the field and provide necessary context for understanding the significance of the current work. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The Methods section describes protein expression, labeling strategies, sample preparation protocols, NMR instrumentation, and construct design for transporter complementation experiments. These methodological details enable reproducibility of the experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 describe experimental methods with sufficient detail for reproducibility. The protein expression, isotopic labeling, sample preparation, and NMR acquisition parameters are clearly specified. The construct designs for EmrEin and EmrEout are described with specific mutations listed. These are standard methodological descriptions that are appropriately detailed.",
+    "result_type": "MINOR"
+  }
+]

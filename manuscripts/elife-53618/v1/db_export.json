@@ -1,0 +1,1824 @@
+{
+  "submission": {
+    "id": "ffb0ec3d-40f0-485a-99c8-f77f7ec8492c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:00:43.102165Z",
+    "updated_at": "2025-12-02T18:00:43.102165Z"
+  },
+  "content": [
+    {
+      "id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "submission_id": "ffb0ec3d-40f0-485a-99c8-f77f7ec8492c",
+      "content_type": "manuscript",
+      "content_text": "# Combined deletion of Glut1 and Glut3 impairs lung adenocarcinoma growth\n\n## Authors\n\n- Caroline Contat<sup>1</sup>\n- Pierre-Benoit Ancey<sup>1</sup>\n- Nadine Zangger<sup>1</sup>\n- Silvia Sabatino<sup>1</sup>\n- Justine Pascual<sup>1</sup>\n- St\u00e9phane Escrig<sup>4</sup>\n- Louise Jensen<sup>4</sup>\n- Christine Goepfert<sup>5</sup>\n- Bernard Lanz<sup>6</sup>\n- Mario Lepore<sup>7</sup>\n- Rolf Gruetter<sup>6</sup>\n- Anouk Rossier<sup>1</sup>\n- Sabina Berezowska<sup>8</sup>\n- Christina Neppl<sup>8</sup>\n- Inti Zlobec<sup>8</sup>\n- St\u00e9phanie Clerc-Rosset<sup>9</sup>\n- Graham William Knott<sup>9</sup> ([ORCID: 0000-0002-2956-9052](https://orcid.org/0000-0002-2956-9052))\n- Jeffrey C Rathmell<sup>10</sup>\n- E Dale Abel<sup>11</sup> ([ORCID: 0000-0001-5290-0738](https://orcid.org/0000-0001-5290-0738))\n- Anders Meibom<sup>4</sup>\n- Etienne Meylan<sup>1</sup> ([ORCID: 0000-0002-0899-2230](https://orcid.org/0000-0002-0899-2230)) \u2020\n\n### Affiliations\n\n1. Swiss Institute for Experimental Cancer Research (ISREC), School of Life Sciences, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n2. Swiss Cancer Center L\u00e9man Lausanne Switzerland\n3. Bioinformatics Core Facility, Swiss Institute of Bioinformatics Lausanne Switzerland\n4. Laboratory for Biological Geochemistry, School of Architecture, Civil and Environmental Engineering, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n5. Institute of Animal Pathology (COMPATH), University of Bern, CH-3012 Bern, and Histology Core Facility, School of Life Sciences, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n6. Laboratory for Functional and Metabolic Imaging (LIFMET), Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n7. Center for Biomedical Imaging (CIBM), Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n8. Institute of Pathology, University of Bern Bern Switzerland\n9. BioEM Facility, School of Life Sciences, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n10. Vanderbilt Center for Immunobiology, Vanderbilt University Medical Center Nashville United States\n11. Fraternal Order of Eagles Diabetes Research Center and Division of Endocrinology and Metabolism, Carver College of Medicine, University of Iowa Iowa City United States\n12. Center for Advanced Surface Analysis, Faculty of Geosciences and Environment, University of Lausanne Lausanne Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nGlucose utilization increases in tumors, a metabolic process that is observed clinically by 18F-fluorodeoxyglucose positron emission tomography (18F-FDG-PET). However, is increased glucose uptake important for tumor cells, and which transporters are implicated in vivo? In a genetically-engineered mouse model of lung adenocarcinoma, we show that the deletion of only one highly expressed glucose transporter, Glut1 or Glut3, in cancer cells does not impair tumor growth, whereas their combined loss diminishes tumor development. 18F-FDG-PET analyses of tumors demonstrate that Glut1 and Glut3 loss decreases glucose uptake, which is mainly dependent on Glut1. Using 13C-glucose tracing with correlated nanoscale secondary ion mass spectrometry (NanoSIMS) and electron microscopy, we also report the presence of lamellar body-like organelles in tumor cells accumulating glucose-derived biomass, depending partially on Glut1. Our results demonstrate the requirement for two glucose transporters in lung adenocarcinoma, the dual blockade of which could reach therapeutic responses not achieved by individual targeting.\n\n## Introduction\n\nGlucose transporters are the first and rate-limiting step for cellular glucose utilization, a process often exacerbated in tumor cells that enables their growth and proliferation (Ancey et al., 2018; Lunt and Vander Heiden, 2011). Although inhibiting glucose metabolism in lung tumors could become an efficient treatment strategy (Hensley et al., 2016; Patra et al., 2013; Xie et al., 2014), whether and which glucose transporter(s) should be targeted remains unclear because of their possible functional redundancy. Additionally, in solid cancers, tumor cell growth can be fueled by nutrients other than glucose, or by using transporter-independent metabolic processes including autophagy and macropinocytosis (Commisso et al., 2013; Karsli-Uzunbas et al., 2014; Romero et al., 2017; Son et al., 2013).\n\nIn this study, we exploited the KrasLSL-G12D/WT; Trp53Flox/Flox (KP) mouse model of lung adenocarcinoma to explore the importance of glucose transporters, expressed by tumor cells, in disease development. By glucose tracing and ultrastructural analyses, we identified the presence of lamellar body-like organelles in tumor cells, which are the primary site of glucose-derived biomass accumulation, occurring partly in a Glut1-dependent manner. We show that the deletion of Glut1 or Glut3 is not sufficient to decrease tumor progression, which is only affected significantly upon combined Glut1 and Glut3 loss.\n\n## Results and discussion\n\nTo interrogate the importance of particular glucose transporters in the most frequent subtype of lung cancer, lung adenocarcinoma (LUAD), we used The Cancer Genome Atlas specific for LUAD (TCGA-LUAD) to compare gene expression within the facilitated glucose transporter (GLUT, gene name SLC2A) family. SLC2A1 (GLUT1) followed by SLC2A3 (GLUT3) were the most expressed members, (Figure 1a) and high SLC2A1 expression was correlated with poor overall survival (Figure 1\u2014figure supplement 1a). From a human tissue microarray comprising 18 cases of stage IB-IIB LUAD and 18 cases of stage IA-IIB lung squamous cell carcinoma (LUSC), GLUT1 protein was detected in all tumors. Specifically, it showed intermediate and strong GLUT1 expression in 44% (8/18) and 56% (10/18) of the LUAD lesions, respectively (Figure 1b). In LUSCs, GLUT1 exhibited strong staining in all samples (Figure 1b), confirming previous results obtained from squamous cell carcinomas of lung and other tissues (Goodwin et al., 2017; Hsieh et al., 2019). To obtain more information about SLC2A1 expression in LUAD, we applied a non-negative matrix factorization of TCGA-LUAD samples, which generated four distinct clusters (NMF1-4, Figure 1\u2014figure supplement 1b). SLC2A1 and SLC2A3 were the most expressed in NMF4, which contains the highest percentage of the TP53 mutation (Figure 1c). In the immunocompetent KrasLSL-G12D/WT; Trp53Flox/Flox (KP) mouse model where tumors consist of pure LUADs all harboring Trp53 gene deletion, RNA sequencing analyses of bulk tumor samples revealed a predominance of NMF4-like lesions (Figure 1\u2014figure supplement 1c). Glut1 protein levels in tumor cells gradually increased along tumor progression, with the majority of advanced grade lesions being positive with intermediate or strong Glut1 staining (Figure 1\u2014figure supplement 2a). In normal lung, Glut1 was only weakly expressed or undetectable in the alveolar compartment that comprises alveolar type-1 and 2 (AT1, AT2) cells, endothelial cells and alveolar macrophages (Figure 1\u2014figure supplement 2b), AT2 cells being considered as the principal tumor cell-of-origin in this model (Desai et al., 2014; Sutherland et al., 2014; Xu et al., 2012). In contrast, Glut1 was strongly expressed in the bronchiolar epithelial compartment that contains Club cells, another cell type permissive to tumor initiation (Sutherland et al., 2014; Figure 1\u2014figure supplement 2b). To determine the contribution of Glut1 for tumor development, we crossed KP mice to Slc2a1Flox/Flox (G1)\u00a0animals (Young et al., 2011), and initiated tumors in the resulting KPG1 mice and control KP mice by intratracheal lentiviral-Cre instillation (Lenti.PGK-Cre, Figure 1\u2014figure supplement 2c\u2013d). During tumor progression, we detected slightly but not significantly reduced changes in tumor growth rates monitored by X-rays micro-computed tomography (\u03bcCT) (Figure 1d). At sacrifice, although no significant difference was observed in the weight or in the number of lesions (Figure 1e\u2013f), a significant reduction of high grade tumors (grades 4 and 5) was determined upon Glut1 loss in KP lesions (Figure 1g). Because there was no significant increase in KPG1 mouse survival (Figure 1h), these data together fail to reveal a clear impact of Glut1 deletion in the tumor epithelial cells on disease progression.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig1-v1.jpg)\n\n**Figure 1.:** (a) Gene expression level (RSEM) of glucose transporters in TCGA-LUAD samples (n = 511). (b) Immunohistochemistry (IHC) from a next-generation tissue microarray of human LUAD and LUSC showing score 1 (intermediate) or score 2 (strong) GLUT1 staining. The number of cases per score and histology are indicated. Scale bars: 100 \u03bcm. (c) Expression level (log2 normalized) of SLC2A1 and SLC2A3 in the 4 NMF LUAD subtypes. Percent of TP53 mutation in each subtype is indicated. (d) Graph with mean \u00b1 s.e.m. shows the fold changes of KP and KPG1 tumor volumes (n = 32 and 26, respectively) monitored during 28 days by \u03bcCT, starting at 16 weeks and 6 days post-tumor initiation with tumor volumes set to 1. ns: not significant by Mann-Whitney test. (e) Dot plot with mean \u00b1 s.d. shows KP and KPG1 tumor weights (n = 17 and 21) at sacrifice 29 weeks post-tumor initiation. ns: not significant by Mann-Whitney test. (f) Dot plot with mean \u00b1 s.d. shows the average number of KP and KPG1 tumors per mouse (n = 7 and 6 mice). ns: not significant by Mann-Whitney test. (g) Percent of KP (n = 128) and KPG1 (n = 102) lesions classified by tumor grades, either detailed from alveolar hyperplasia (AH) to grade 5 or discriminated between alveolar hyperplasia and adenomas, and adenocarcinomas. Alveolar hyperplasia and adenomas include the AH and the tumor grades 1, 2, and 3. Adenocarcinomas contain the tumor grades 4 and 5. **: p < 0.01. Fisher test was applied when comparing AH, grade 1, grade 2, grade 3, grade 4, and grade 5. Chi-square for trend was applied when comparing alveolar hyperplasia and adenomas, and adenocarcinomas. (h) Kaplan-Meier survival analysis of KP (n = 8) and KPG1 (n = 6) mice. ns: not significant by Log-rank test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Kaplan-Meier survival analyses of glucose transporters in TCGA-LUAD (n = 448). Samples are split by median expression into high and low groups. p-values were computed with Wald test. (b) Heatmap showing gene expression (log2 normalized) of 935 metagenes selected by NMF to identify the 4 LUAD subtypes: NMF1-4 (top bar 1). Top bars 2 and 3: SLC2A1 and SLC2A3 expression, respectively. Top bar 4: TP53 mutation status. Top bar 5: samples identified as proximal proliferative, proximal inflammatory and terminal respiratory unit (The Cancer Genome Atlas Research Network, 2014). (c) NMF subtype prediction applied to KP mouse bulk Lenti tumors; NMF1: 8%, NMF2: 26%, NMF3: 18% and NMF4: 48% (average of 4 samples).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) (upper panels) Representative examples of Glut1 staining by immunohistochemistry (IHC) in KP tumors showing weak, intermediate or strong expression. Scale bars: 100 \u03bcm. (lower panel) IHC quantification of KP lesions from alveolar hyperplasia (AH) to grade 5 tumors shows percent of Glut1 staining defined as weak, intermediate or strong. The number of lesions monitored per grade is indicated. (b) Representative Glut1 staining in a KP lung, showing weak expression in the alveolar compartment and strong staining in the bronchiolar epithelium. Scale bar: 20 \u03bcm. (c) Mouse models and viral vectors used. (d) Validation of Glut1 or Glut3 deletion by (upper panels) real-time PCR from purified CD45 - tumor fractions (KP & KPG1: n = 19, 32, respectively; KP & KPG3: n = 14, 13, respectively; KP & KPG1G3: n = 8, 10, respectively) or by (lower panels) Glut1 or Glut3 staining with IHC. ns: not significant by Mann-Whitney test; *: p < 0.05 by Mann-Whitney test; ****: p < 0.0001 by Mann-Whitney test. Scale bars: 200 \u03bcm (KP, KPG1 and KPG3 rows). Scale bars: 100 \u03bcm (KPG1G3 row).\n\nTo detect if there are measurable changes in glucose utilization secondary to Glut1 deletion in vivo, we decided to monitor glucose-derived biomass accumulation in tumors with ultrastructural resolution. Specifically, we performed 13C-glucose injections followed by nanoscale secondary ion mass spectrometry (NanoSIMS) imaging (Hoppe et al., 2013) correlated with electron microscopy (EM) (Figure 2a). Intense 13C enrichments inside tumors revealed a compartmentalized intracellular accumulation of glucose-derived biomass, which can be attributed to a specific organelle of tumor cells visualized by the superposition of images obtained from scanning EM (SEM) and NanoSIMS (Figure 2b). From SEM and transmission EM (TEM), these organelles resemble lamellar bodies (LBs) based on their size, secretory behavior and morphology, which exhibit more or less packed, occasionally visible lamellae (Figure 2b\u2013c). LBs are lipid-rich secretory organelles specifically produced in the lung by AT2 cells, responsible for surfactant production and release into the alveolar space. Within tumor cells, these LB-like organelles (LBOs) were typically from 200 nm to 2 \u03bcm in diameter, irregularly shaped and darkly stained. Often these contained more heavily stained regions and discernible tightly packed lamellae at higher magnifications (Figure 2c). Quantitative NanoSIMS images of these organelles revealed a lower 13C-enrichment signal intensity in KPG1 compared to KP tumor cells (Figure 2d), demonstrating the consequence of Glut1 loss in vivo.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig2-v1.jpg)\n\n**Figure 2.:** (a) Experimental setting. (b) Representative examples of a scanning electron microscopy (SEM) images (left), NanoSIMS isotopic image (middle) and their superposition (right) obtained from a KP tumor. Scale bar: 2 \u03bcm. (c) (upper panels) Representative transmission electron microscopy (TEM) images from KP tumors showing lamellar body-like organelles (LBOs) with different sizes, secretory behavior and presence of lamellae. (lower panels) High-resolution TEM micrographs showing high magnification lamellae (left), and LBOs with morphologies reminiscent of immature lamellar bodies (LBs) (middle and right). (d) Dot plot with mean \u00b1 s.d. showing the NanoSIMS quantification of 13C-enrichments in LBOs from KP and KPG1 tumors. Each dot represents the measurement of an individual LBO (n = 239 KP LBOs and n = 325 KPG1 LBOs). ****: p < 0.0001 by Mann-Whitney test. Representative NanoSIMS isotopic images of a (left) KP and (right) KPG1 tumor cell.\n\nDespite the differences measured by NanoSIMS, Glut1 deficiency only minimally affected tumor progression (see Figure 1d\u2013h). We therefore hypothesized the existence of an alternative mechanism that sustains lung tumor growth. First, we isolated KP and KPG1 tumors, prepared single cell suspensions and tested their glycolytic capacity. In this ex vivo experimental setting, KPG1 tumors failed to stimulate glycolysis in response to glucose (Figure 3a and Figure 3\u2014figure supplement 1a). As exception, one KPG1 tumor displayed the strongest glycolytic response of all tested tumors, which coincided with elevated expression of another high-affinity glucose transporter, Glut3 (Figure 3a). To understand better the mechanisms of Glut1-deficient tumor progression, we also performed RNA sequencing analyses from the non-immune (CD45-) fraction of KP and KPG1 tumors. To increase the relevance of this comparison, we analysed three cohorts of mice, where tumors were initiated with Lenti.PGK-Cre, Ad5.SPC-Cre or Ad5.CC10-Cre, the latter two providing SPC+- or CC10+-cell restricted Cre expression for tumor initiation in distinct cell types (Sutherland et al., 2014) (see Figure 1\u2014figure supplement 2c). Gene Set Enrichment Analysis (GSEA) highlighted, from all the Hallmark and KEGG up- and downregulated pathways, a unique significantly shared pathway between the three cohorts, which was upregulated in KPG1: \u2018Hallmark_bile acid metabolism\u2019 (Figure 3\u2014figure supplement 2a). Upon closer examination of the genes included in this pathway, we identified several target genes of peroxisome proliferator-activated receptor alpha (PPAR\u03b1) (Figure 3b), a crucial transcription factor in fatty acid catabolism (Reddy and Hashimoto, 2001). Furthermore, when interrogating the expression of known PPAR\u03b1 targets (Rakhshandehroo et al., 2010), GSEA highlighted their enrichment in KPG1 compared to KP tumors (Figure 3c). Thus, KPG1 tumors have a stronger expression of known PPAR\u03b1-target genes than KP lesions. Together, our metabolic and molecular analyses suggested two possible and distinct routes for Glut1-deficient tumor growth: the uptake of the same nutrient through another glucose transporter, Glut3, or via a PPAR\u03b1-dependent metabolic shift (Figure 3d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig3-v1.jpg)\n\n**Figure 3.:** (a) (left) Tumor-derived single cell preparations were placed in a Seahorse XF analyzer and subjected to longitudinal extracellular acidification rate (ECAR) measurements. Glucose or 2-deoxyglucose (2-DG) were added where indicated. Data are means \u00b1 s.e.m. of 3 KP and 3 KPG1 tumor-derived single cells each analyzed in ten or five technical replicates. The data from the outlier KPG1 are shown separately (orange) from the 2 other KPG1 tumors (red). (right) Real-time PCR and western blot analyses of Glut1 and Glut3 from the samples analyzed by Seahorse. (b) Bile acid metabolism genes from Hallmark collection (mSigDB) induced in KPG1 compared to KP from SPC-Cre, CC10-Cre and PGK-Cre tumors. Expression above the median is shown in red, below in green. Genes in red are PPAR\u03b1 targets (Rakhshandehroo et al., 2010). (c) Gene Set Enrichment Analysis (GSEA) of PPAR\u03b1 targets on genes ranked based on t-statistics when comparing KPG1 and KP tumors in SPC-Cre, CC10-Cre and PGK-Cre. p-values were obtained by normalized enrichment score (NES) of 105 random permutations. (d) Model illustrating two possible alternatives to Glut1 deficiency for tumor growth.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Freshly-isolated tumor-derived cells were placed in a Seahorse XF analyzer and subjected to longitudinal extracellular acidification rate (ECAR) measurements. Glucose or 2-deoxyglucose (2-DG) were added where indicated. Data are means \u00b1 s.e.m. of 3 KP and 3 KPG1 tumor-derived cells each analysed in ten technical replicates.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) (left panels) Top 20 Hallmark pathways enriched in genes induced in KPG1 versus KP in SPC-Cre (top left), CC10-Cre (middle left) and PGK-Cre (bottom left). Bar length shows the normalized enrichment score obtained by Gene Set Enrichment Analysis (GSEA). Genesets with significant enrichment (p-value < 0.05) are shown in dark gray. Bile acid metabolism pathway is highlighted in blue. (right panel) Venn diagram showing induced pathways shared between SPC-Cre, CC10-Cre and PGK-Cre tumors in KPG1 compared to KP tumors.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Mouse models and viral vector used for in vivo PPAR\u03b1\u039413 induction in tumor cells. (b) Western blot from transfected 293T cells\u2019 extracts validating the doxycycline-mediated PPAR\u03b1\u039413 induction in presence of a co-transfected rtTA construct, indicated by the asterisk. (c) Graph with mean \u00b1 s.e.m. shows the fold changes of KP, KP-PPAR\u03b1\u039413, KPG1 and KPG1-PPAR\u03b1\u039413 (n = 11, 16, 11 and 8, respectively) tumor volumes monitored during 23 days by \u03bcCT, before and during doxycycline diet, starting at 22 weeks and 4 days post-tumor initiation with tumor volumes set to 1. ns: not significant by Mann-Whitney test. (d) Hallmark and KEGG pathways regulated (induced in red and repressed in blue) by PPAR\u03b1\u039413 versus control in KP (top panels) and KPG1 (bottom panels) tumors. Bar length represents the normalized enrichment score (NES) obtained by GSEA. Genesets with significant enrichment (p-value < 0.05) are shown.\n\nTo test the hypothesis of an involvement of PPAR\u03b1 in lung tumor progression, we cloned a mouse PPAR\u03b1-dominant negative construct, PPAR\u03b1\u039413 (Michalik et al., 2005), into a bi-promoter Lenti.Cre vector allowing doxycycline-inducible expression (Lenti.TRE-PPAR\u03b1\u039413_PGK-Cre) in KP and KPG1 tumors (mice were crossed to CCSP-rtTA transgenic mice [Meylan et al., 2009; Figure 3\u2014figure supplement 3a\u2013b]). Doxycycline-mediated PPAR\u03b1\u039413 induction in KP mice led only to a trend toward a reduction in tumor growth rates, comparable to the growth of KPG1 versus KP tumors. Within the KPG1 group, PPAR\u03b1\u039413 induction did not further reduce tumor growth (Figure 3\u2014figure supplement 3c). Global gene expression analyses from tumor samples confirmed the functionality of the PPAR\u03b1\u039413 construct in both KP and KPG1 tumors, as \u2018Hallmark_bile acid metabolism\u2019, \u2018Hallmark_fatty acid metabolism\u2019, \u2018KEGG_peroxisome\u2019 and \u2018KEGG_ fatty acid metabolism\u2019 pathways were repressed in tumors harboring this construct compared to tumors from KP-rtTA or KPG1-rtTA mice not fed on a doxycycline diet (Figure 3\u2014figure supplement 3d). Thus, although PPAR\u03b1\u039413 downregulates PPAR\u03b1-related pathways in tumors, it fails to affect their growth even in absence of Glut1.\n\nTo test our second hypothesis, we initially monitored Glut3 expression in tumors. By real-time PCR, Slc2a3 was expressed to varying levels but not significantly differently between KP and KPG1 tumors (Figure 4\u2014figure supplement 1a). In contrast, Slc2a3 was almost undetectable in tumors from KrasLSL-G12D; Stk11Flox/Flox (KL) mice (Figure 4\u2014figure supplement 1a), another lung cancer model where Lkb1 (Stk11)-deficient tumors progressing from an adeno- to a squamous histology become exquisitely Glut1-dependent (Hsieh et al., 2019). In absence of Glut1 (KLG1), Slc2a3 mRNA expression remained very low (Figure 4\u2014figure supplement 1a). Accordingly, Glut3 protein was undetectable by immunohistochemistry in KL and KLG1 tumors, whereas it was expressed in KP and KPG1 lesions (Figure 4\u2014figure supplement 1b). More specifically, Glut3 stained at the tumor cell membrane in a minority (37%) of small and a majority (76%) of big KP lesions (Figure 4\u2014figure supplement 1c). Furthermore, within Glut3-expressing KP tumors, areas positive for Glut3 frequently correlated with a stronger expression of Glut1 (Figure 4a and Figure 4\u2014figure supplement 1d), suggesting intra-tumor heterogeneity in glucose utilization in this mouse model, as demonstrated earlier in human non-small cell lung cancer (Hensley et al., 2016). We then crossed KP mice to Slc2a3Flox/Flox mice (generating KPG3 mice, see Figure 1\u2014figure supplement 2c\u2013d). When comparing tumor development in KP and KPG3 animals, we failed to detect differences in overall tumor growth rates, ex vivo glycolysis, mouse survival, or tumor grade distribution (Figure 4\u2014figure supplement 2a\u2013d). Although this indicates that Glut3 deletion alone does not affect tumors in a detectable manner, we next wanted to evaluate its importance in a Glut1-deficient context. To do this, we generated KPG1G3 mice by interbreeding KP mice with Slc2a1Flox/Flox and Slc2a3Flox/Flox mice (see Figure 1\u2014figure supplement 2c\u2013d). Deletion of the two glucose transporters, Glut1 and Glut3, from the tumor epithelial cell compartment resulted in a decreased number of tumors (Figure 4b). Furthermore, contrasting with our data obtained from each separately-targeted Gluts, combined Glut1 and Glut3 deletion led to a significant reduction of tumor growth rates monitored by \u03bcCT scans, to a reduced tumor size with an absence of big (>50 mg) lesions at sacrifice, to a decrease of high grade tumors, and to an extended mouse survival (Figure 4c\u2013g and Figure 4\u2014figure supplement 3a\u2013b). This synergistic action of the dual Glut1 and Glut3 deletion was also demonstrated in vitro with four different human NSCLC cell lines, on which the strongest reduction of tumor cell viability resulted from the combined knockdown of these glucose transporters (Figure 4\u2014figure supplement 3c\u2013f). Together, these data position Glut1 and Glut3 as a coordinated glucose transport unit required to fuel the growth of LUAD.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig4-v1.jpg)\n\n**Figure 4.:** (a) Representative examples of H&E, Glut1 or Glut3 staining by IHC from serial sections of a KP tumor showing Glut1-3 co-localization. Scale bars: 200 \u03bcm. (b) Histogram with mean \u00b1 s.d. shows the average number of KP and KPG1G3 tumors per mouse (n = 4 and 6 mice). *: p < 0.05 by Mann-Whitney test. (c) Graph with mean \u00b1 s.e.m. shows the fold changes of KP and KPG1G3 tumor volumes (n = 8 and 9 tumors) monitored during 43 days by \u03bcCT, starting at 15 weeks and 2 days post-tumor initiation with tumor volumes set to 1. ns: not significant by Mann-Whitney test; *: p < 0.05 by Mann-Whitney test. (d) Dot plot with mean \u00b1 s.d. shows tumor areas in KP and KPG1G3 mice (n = 115 and 101 tumors) calculated from lung sections. **: p < 0.01 by Mann-Whitney test. (e) Dot plot with mean \u00b1 s.d. shows KP and KPG1G3 tumor weights (n = 8 and 9 tumors, respectively) at sacrifice. **: p < 0.01 by Mann-Whitney test. (f) Percent of KP (n = 150) and KPG1G3 (n = 170) lesions classified by tumor grades, either detailed from alveolar hyperplasia (AH) to grade 5 or discriminated between alveolar hyperplasia and adenomas, and adenocarcinomas. Alveolar hyperplasia and adenomas include the AH and the tumor grades 1, 2, and 3. Adenocarcinomas contain the tumor grades 4 and 5. *: p < 0.05; **: p < 0.01. Fisher test was applied when comparing AH, grade 1, grade 2, grade 3, grade 4, and grade 5. Chi-square for trend was applied when comparing alveolar hyperplasia and adenomas, and adenocarcinomas. (g) Kaplan-Meier survival analysis of KP (n = 8) and KPG1G3 (n = 6) mice. *: p < 0.05 by Log-rank test. (h) Representative (upper panels) positron emission tomography (PET) scan and (lower panels) \u03bcCT scan images illustrating the 18F-FDG absorption of KP, KPG1, KPG3 and KPG1G3 tumors. (i) Dot plot with mean \u00b1 s.d. displays maximum standardized uptake value (SUV max ) of KP (n = 17), KPG1 (n = 24), KPG3 (n = 32) and KPG1G3 (n = 38) lesions. ns: not significant by Mann-Whitney test; ****: p < 0.0001 by Mann-Whitney test. (j) Model illustrating the dependency on glucose transporters for KP and KL tumor progression.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Real time PCR for Slc2a3 on KP (n = 19), KPG1 (n = 32), KL (n = 12) and KLG1 (n = 11) tumors. ns: not significant by Mann-Whitney test; ****: p < 0.0001 by Mann-Whitney test. (b) Representative examples of Glut3 staining by immunohistochemistry (IHC) from KP, KPG1, KL and KLG1 tumor-bearing lungs. (left panels) Scale bars: 1 mm. (right panels) Scale bars: 100 \u03bcm. (c) Percent of KP tumors showing Glut3 positive staining in small and big lesions assessed by IHC. (d) (left panels) Representative example of H&E, Glut1 or Glut3 staining by IHC from serial sections of a KP tumor shows co-localization. Arrows indicate localization of strong Glut1 and Glut3 expression. Scale bars: 500 \u03bcm. (right panel) Percent of Glut3 positive KP tumors showing Glut1 and Glut3 expression correlation, no correlation or anti-correlation assessed by IHC.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Graph with mean \u00b1 s.e.m. shows the fold changes of KP and KPG3 tumor volumes (n = 7, respectively) monitored during 56 days by \u03bcCT, starting at 16 weeks post-tumor initiation with tumor volumes set to 1. ns: not significant by Mann-Whitney test. (b) Freshly-isolated tumor-derived cells were placed in a Seahorse XF analyzer and subjected to longitudinal extracellular acidification rate (ECAR) measurements. Glucose or 2-deoxyglucose (2-DG) were added where indicated. Data are means \u00b1 s.e.m. of 4 KP and 2 KPG3 tumor-derived cells each analysed in ten technical replicates. (c) Kaplan-Meier survival analysis of KP (n = 8) and KPG3 (n = 9) mice. ns: not significant by Log-rank test. (d) Percent of KP (n = 86) and KPG3 (n = 54) lesions classified by tumor grades, either detailed from alveolar hyperplasia (AH) to grade 5 or discriminated between alveolar hyperplasia and adenomas, and adenocarcinomas. Alveolar hyperplasia and adenomas include the AH and the tumor grades 1, 2, and 3. Adenocarcinomas contain the tumor grades 4 and 5. ns: not significant. Fisher test was applied when comparing AH, grade 1, grade 2, grade 3, grade 4, and grade 5. Chi-square for trend was applied when comparing alveolar hyperplasia and adenomas, and adenocarcinomas.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a) Graph with mean \u00b1 s.e.m. shows the fold changes of KP and KPG1G3 tumor volumes (n = 32 and 20, respectively) monitored during 28 days by X-rays micro-computed tomography (\u03bcCT), starting at 16 weeks and 6 days post-tumor initiation with tumor volumes set to 1. ns: not significant by Mann-Whitney test; *: p < 0.05 by Mann-Whitney test. (b) Model illustrating the different studied scenarios. (c-f) Dot plots with mean \u00b1 s.d. exhibit the average number of cells 72 hours after transfection with siCTR, siGLUT1, siGLUT3, or siGLUT1 + siGLUT3 in (c) A549, (d) H460, (e) Calu-6, and (f) SW 1573 cells. Each condition was performed in 3 technical replicates. ns: not significant by t-test; *: p < 0.05 by t-test; **: p < 0.01 by t-test; ***: p < 0.001 by t-test.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53618/elife-53618-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (a) Dot plots with mean \u00b1 s.d. show the relative glucose transporter mRNA expression in CD45 negative fraction from KP and KPG1G3 tumors (Slc2a1 and Slc2a3: n = 8 and 10 tumors, respectively; Slc2a2, Slc2a4, Slc2a5, Slc2a6, Slc2a7, Slc2a8, Slc2a9, Slc2a10, Slc2a12, Slc2a13 and Slc50a1: n = 7 and 3 tumors, respectively). ns: not significant by Mann-Whitney test; ****: p < 0.0001 by Mann-Whitney test\n\nTo trace and compare directly glucose uptake in tumors from the different mouse genotypes, we used positron emission tomography with 18F-fluorodeoxyglucose (18F-FDG-PET) in KP, KPG1, KPG3, and KPG1G3 tumors. The maximum standardized uptake value (SUVmax) of each tumor revealed that Glut1-deficient KP tumors incorporated significantly less 18F-FDG than control lesions (Figure 4h\u2013i), which strengthens the NanoSIMS data (see Figure 2d). Glut3-deficient and control KP tumors presented a similar 18F-FDG absorption (Figure 4h\u2013i). This result might be explained by the fact that Glut3 positive KP tumors mainly co-express Glut1 and Glut3 (see Figure 4\u2014figure supplement 1d). Thus, in absence of Glut3, lesions might certainly incorporate 18F-FDG via Glut1. The 18F-FDG absorption of Glut1- and Glut3-deficient KP tumors was significantly reduced as compared to control KP lesions (Figure 4h\u2013i). Because glucose uptake was not significantly lower in KPG3 compared to KP tumors, and in KPG1G3 compared to KPG1 tumors, a possible explanation is that most tumors analyzed had not yet gained Glut3 expression and become dependent on it, which agrees with an elevated Glut3 expression specifically in big lesions (see Figure 4\u2014figure supplement 1c). Finally, to investigate if Glut1- and Glut3-deficient tumors might incorporate glucose via another glucose transporter, we performed a gene expression analysis of glucose transporter family members on KP and KPG1G3 lesions. This analysis showed that the expression of no other glucose transporter was changed upon dual Glut1 and Glut3 deletion in KP tumors (Figure 4\u2014figure supplement 4a). Altogether, these data demonstrate that deleting Glut1 and Glut3 in KP tumors reduces glucose uptake, and that Glut1 highly contributes to glucose uptake in KP tumors. These results may also lead to the hypothesis that at least a part of the remaining 18F-FDG-PET signal detected in KPG1G3 tumors might come from glucose uptake by the cells of the tumor immune microenvironment.\n\nRecently, pharmacological inhibition of a secondary active, Na+-dependent glucose transporter, Sglt2, showed its role in premalignant KP lung lesions (Scafoglio et al., 2018), while a glycolytic switch was identified in advanced compared to early tumors (Kerr et al., 2016). These studies, together with our gene targeting approaches, definitively demonstrate the importance of glucose utilization for LUAD development in vivo. In the KL model, Glut1 deletion impairs LUSC development (Hsieh et al., 2019), and we find that Lkb1-deficient lung tumors lack detectable Glut3, precluding any compensation occurring through this transporter. In contrast, in pure LUAD our results indicate that Trp53-deficient tumor cells depend on glucose uptake based on a redundant system, whereby the expression of either Glut1 or Glut3 is sufficient to sustain tumor growth (Figure 4j). For clinical perspectives, we anticipate that dual Glut1 and Glut3 blockade will be necessary to achieve strong anti-tumor efficacy.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (M. musculus, male, female)</td>\n      <td>K</td>\n      <td>The Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:008179</td>\n      <td>KrasLSL-G12D/WT Trp53Flox/Flox K and P interbred at EPFL</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, male, female)</td>\n      <td>P</td>\n      <td>The Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:008462</td>\n      <td>KrasLSL-G12D/WT Trp53Flox/Flox K and P interbred at EPFL</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, male, female)</td>\n      <td>KPG1</td>\n      <td>Interbred at EPFL</td>\n      <td></td>\n      <td>KrasLSL-G12D/WT Trp53Flox/Flox Slc2a1Flox/Flox</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, male, female)</td>\n      <td>KPG3</td>\n      <td>Interbred at EPFL</td>\n      <td></td>\n      <td>KrasLSL-G12D/WT Trp53Flox/Flox Slc2a3Flox/Flox</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, male, female)</td>\n      <td>KPG1G3</td>\n      <td>Interbred at EPFL</td>\n      <td></td>\n      <td>KrasLSL-G12D/WT Trp53Flox/Flox Slc2a1Flox/Flox Slc2a3Flox/Flox</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, male, female)</td>\n      <td>KPR</td>\n      <td>Interbred at EPFL</td>\n      <td></td>\n      <td>KrasLSL-G12D/WT Trp53Flox/Flox CCSP-rtTA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, male, female)</td>\n      <td>KPRG1</td>\n      <td>Interbred at EPFL</td>\n      <td></td>\n      <td>KrasLSL-G12D/WT Trp53Flox/Flox Slc2a1Flox/Flox CCSP-rtTA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, male, female)</td>\n      <td>KL</td>\n      <td>Interbred at EPFL</td>\n      <td></td>\n      <td>KrasLSL-G12D/WT Stk11Flox/Flox</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, male, female)</td>\n      <td>KLG1</td>\n      <td>Interbred at EPFL</td>\n      <td></td>\n      <td>KrasLSL-G12D/WT Stk11Flox/Flox Slc2a1Flox/Flox</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>A549</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0023</td>\n      <td>Authentication: 100%</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Calu-6</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0236</td>\n      <td>Authentication: 100%</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>H460</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0459</td>\n      <td>Authentication: 100%</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>SW 1573</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_1720</td>\n      <td>Authentication: 93.3%</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens and M. musculus)</td>\n      <td>siCTR</td>\n      <td>Invitrogen</td>\n      <td>Cat# 4390843</td>\n      <td>Transfected construct</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>siSLC2A1#1</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12926 Cat# 4390824</td>\n      <td>Transfected construct</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>siSLC2A1#2</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12927 Cat# 4390824</td>\n      <td>Transfected construct</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>siSLC2A3#1</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12931 Cat# 4390824</td>\n      <td>Transfected construct</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>siSLC2A3#2</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12932 Cat# 4390824</td>\n      <td>Transfected construct</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GLUT1 (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_10903230</td>\n      <td>IHC (1:650)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GLUT1 (Rabbit polyclonal)</td>\n      <td>Millipore</td>\n      <td>RRID:AB_1587074</td>\n      <td>IHC (ngTMA) (1:5000); WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GLUT3 (Rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_732609</td>\n      <td>IHC (1:200); WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PPAR\u03b1 (Rabbit polyclonal)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>RRID:AB_2165595</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b2-tubulin (Rabbit polyclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>RRID:AB_2241191</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b3-tubulin (Mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>RRID:AB_477584</td>\n      <td>WB (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>rtTA (plasmid)</td>\n      <td>Produced at EPFL</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lenti.PGK-Cre (Viral construct)</td>\n      <td>Produced at EPFL</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lenti.TRE-PPAR\u03b1\u039413_ PGK-Cre (Viral construct)</td>\n      <td>Produced at EPFL</td>\n      <td></td>\n      <td>Cloned from PPAR\u03b1\u039413 plasmid (L. Michalik, UNIL, Lausanne)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Ade5.SPC-Cre (Viral construct)</td>\n      <td>University of Iowa Viral Vector Core Facility</td>\n      <td>Ade5. SPC-Cre</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Ade5.CC10-Cre (Viral construct)</td>\n      <td>University of Iowa Viral Vector Core Facility</td>\n      <td>Ade5. CC10-Cre</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Rpl30 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm01611464_g1 Cat# 4331182</td>\n      <td>Taqman probe (Housekeeping gene)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a1 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00441480_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a2 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00446229_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a3 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00441483_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a4 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00436615_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a5 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00600311_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a6 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00554217_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a7 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm01260610_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a8 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00444634_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a9 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00455122_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a10 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm01249519_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a12 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm02375931_s1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc2a13 (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm01306489_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc5a2 (Sglt2) (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00453831_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Slc50a1 (Sweet) (M. musculus)</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Mm00485707_m1 Cat# 4331182</td>\n      <td>Taqman probe</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CD45 microbeads</td>\n      <td>Miltenyi Biotec</td>\n      <td>130-052-301</td>\n      <td>CD45 magnetic cell sorting</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Doxycycline diet (dox)</td>\n      <td>Kliba Nafag</td>\n      <td>3242 diet + DOX 0.625 g kg\u22121</td>\n      <td>625 mg kg\u22121</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Doxycycline (dox)</td>\n      <td>Sigma-Aldrich</td>\n      <td>D9891</td>\n      <td>2 \u03bcg ml\u22121</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Analyze 12.0</td>\n      <td>PerkinElmer</td>\n      <td>Analyze 12.0</td>\n      <td>Tumor volume analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>OsiriX MD</td>\n      <td>Pixmeo</td>\n      <td>RRID:SCR_013618</td>\n      <td>Tumor volume analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>QuPath</td>\n      <td>QuPath</td>\n      <td>RRID:SCR_018257 DOI: https://doi.org/10.1038/s41598-017-17204-5</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### TCGA data processing\n\nThe Cancer Genome Atlas (TCGA) Lung Adenocarcinoma (LUAD) dataset was retrieved from http://cancergenome.nih.gov. Samples with clinical information and mRNA (RNASEQV2) expression data were selected (511 samples including 448 samples with survival data), and the data were downloaded using the RTCGAtoolbox (v2.12.1). RSEM gene quantifications as provided by TCGA were taken, counts were converted to log2 normalized counts expression and batch effect was removed using voom and removeBatchEffect functions from the limma package (v3.38.3).\n\n### Non-negative matrix factorization\n\nNon-negative matrix factorization (NMF) was done with the NMF package (v0.21.0) and standard strategies applied to the matrix in 511 normalized TCGA-LUAD samples. Negative values present in the dataset were zeroed to obtain a non-negative matrix, and the NMF was performed for ranks 2 to 6 using the Brunet algorithm. Two hundred runs were performed per rank with random seeding. For each rank, the cophenetic correlation coefficient and silhouette score were computed from the 200 solutions and the factorization achieving the minimum residual error was kept as the solution for further analyses. The cophenetic correlation coefficients and silhouette scores were directly obtained using the plot function of the NMF package. As a control, the NMF was also performed on a randomized dataset built by taking within each patient a random permutation of the gene expression values, using the randomize function of the NMF package. After having selected rank four as the best one, the NMF was rerun only for rank four and for a superior number of runs (500 runs). The final NMF-based matrix is composed of 935 metagenes and 511 samples split into four subtypes (shown as a heatmap). Correspondence to the three subtypes found by the Cancer Genome Atlas Research Network (The Cancer Genome Atlas Research Network, 2014) (proximal proliferative, proximal inflammatory and terminal respiratory unit) and presence of TP53 mutation are shown on top bars.\n\nTo identify which human NMF subtype corresponds the most to KP mouse bulk Lenti tumors, we combined mouse and human normalized expression data, removed batch effect using ComBat (package sva v3.30.1), fitted a logistic regression to the human data set using glmnet package (v2.0\u201318) and 10-fold cross-validation with default parameters, and applied the fitted model as prediction method to the mouse data. Human and mouse orthologous genes were obtained using biomaRt (v2.38.0) and only genes in common between mouse and human were used.\n\n### Human survival analysis\n\nUnivariate analyses of overall survival (OS) were performed using Cox proportional hazard regression models available in the survival package (v2.44\u20131.1). Survival curves were computed with the Kaplan-Meier method. p-values were computed with Wald test.\n\n### Study approval\n\nAll mouse experiments were performed with the permission of the Veterinary Authority of Canton de Vaud, Switzerland (license numbers: VD2391 and VD2663).\n\n### Animal models\n\nKrasLSL-G12D/WT (K) (RRID:IMSR_JAX:008179) and Trp53Flox/Flox mice (P) (RRID:IMSR_JAX:008462) in a C57BL6/J background were purchased from The Jackson Laboratory, and were crossed to obtain KrasLSL-G12D/WT; Trp53Flox/Flox (KP) mice. Stk11Flox/Flox mice in a mixed background (FVB; 129S6) were obtained from R. DePinho (The University of Texas MD Anderson Cancer Center) through the National Cancer Institute mouse repository, were backcrossed seven times to C57BL6/J and were bred with KrasLSL-G12D/WT mice to obtain KrasLSL-G12D/WT; Stk11Flox/Flox (KL) mice. The generation of the Slc2a1Flox/Flox (G1) mice and Slc2a1 genotyping were described previously (Young et al., 2011). Slc2a3Flox/Flox (G3) mice were produced at the Duke University Transgenic Facility upon blastocyst microinjection of targeted ES cells obtained from KOMP Repository (project CSD48048). The resulting mice were then crossed to Flp transgenic mice to remove the neomycin resistance cassette and generate mice with a Slc2a3Flox allele, in which exon six is flanked by LoxP sites. Slc2a3 genotyping was performed by PCR (94\u00b0C 5 min, followed by 40 cycles of 94\u00b0C 30 s, 56\u00b0C 30 s and 72\u00b0C 30 s, followed by 72\u00b0C 7 min) using oligos 5'-TAGTGCCCAGGAATGTGAGGTCAG-3' and 5'-GCCCCACCAGATTTACCAAAGG-3'. While heterozygous mice were identified this way, in cases with only one detected band, DNA sequencing was further performed to discriminate without ambiguity between wild-type and floxed using 5'-TAGTGCCCAGGAATGTGAGGTCAG-3'.\n\nKP mice\u00a0were bred to G1 or G3 to obtain KPG1, KPG3 or KPG1G3 mice. KL mice\u00a0were bred to G1 to obtain KLG1 mice. Control mice used throughout the study carry two wild-type (WT) copies of Slc2a1 (or Slc2a3) or are heterozygotes (Slc2a1WT/Flox), as we did not notice any difference of tumor development comparing Slc2a1WT/WT to Slc2a1WT/Flox conditions. CCSP-rtTA mice were obtained from The Jackson Laboratory and were crossed to KP and KPG1 mice to enable doxycycline-mediated PPAR\u03b1\u039413 transgene expression. For transgene induction, mice were fed on a diet of doxycycline-containing pellets (625 mg kg\u22121; 3242 diet + DOX 0.625 g kg\u22121; Kliba Nafag) for 15 days, or on a regular diet as control.\n\n### Viral constructs\n\nThe dominant-negative mouse PPAR\u03b1 construct, PPAR\u03b1\u039413 (Michalik et al., 2005), was cloned into bi-promoter Lenti.Cre vectors for doxycycline-inducible expression (Lenti.TRE-PPAR\u03b1\u039413_PGK-Cre). Lentivirus preparation and titration have been described before (Faget et al., 2017). Lenti.TRE-PPAR\u03b1\u039413_PGK-Cre vectors were intratracheally instilled at 6000 lentiviral units per mouse. Lenti.PGK-Cre vectors were used either at 3000 lentiviral units per mouse or at 4000 lentiviral units per mouse. Adenoviral vectors Ad5.SPC-Cre and Ad5.CC10-Cre were purchased from the University of Iowa Viral Vector Core Facility and used for intratracheal instillation at 2.108 PFU per mouse.\n\n### Tumor volume measurements\n\nLongitudinal tumor volume monitoring was performed by X-rays micro-computed tomography (\u03bcCT; Quantum FX; PerkinElmer). Mice were anaesthetized using isoflurane (Piramal, 56.761.002) before the scanning procedure. Animals were then maintained under anesthesia during lung imaging set at 50 \u03bcm voxel size, with retrospective gating. Individual tumor volumes were measured and calculated either with Analyze 12.0 software (PerkinElmer) or with OsiriX MD software (Pixmeo; RRID:SCR_013618).\n\n### Mouse survival analysis\n\nOverall mouse survival was evaluated considering actual mouse death or when lung tumor burden compelled to sacrifice. Control KP mice were the same for the three Kaplan-Meier analyses performed.\n\n### Assessment of tumor parameters\n\nTumor grading was assessed from haematoxylin and eosin (H and E) stained lung sections by an experienced veterinary pathologist (CG), based on a previous classification system (Jackson et al., 2005). Briefly, lesions were categorized as alveolar hyperplasia (AH), or as tumor on a 1\u20135 severity grading scale from grade one adenomas to grade five adenocarcinomas. Glut1 staining (defined as weak, intermediate or strong) was monitored in all grades. Tumor numbers were counted from lung sections. Tumor areas were calculated from lung sections using QuPath (Bankhead et al., 2017; RRID:SCR_018257). To evaluate Glut3 staining, tumors were categorized into small or big lesions based on their diameter on histology sections (small\u00a0<0.82 mm<\u00a0big); this diameter was chosen because it was the median diameter of all tumors from a test KP cohort. To determine tumor weights, the biggest visible tumors per mouse at autopsy were macro-dissected and immediately weighed. To determine Glut1-3 correlation, KP tumor-bearing lung serial sections stained for Glut1 or Glut3 were analyzed.\n\n### Preparation of lung tumors for electron microscopy (TEM and SEM) and NanoSIMS\n\nTumor-bearing KP and KPG1 mice at 21 weeks post-tumor initiation were injected intraperitoneally with a solution containing 13C-glucose (or 12C-glucose as control), four times every 45 min, beginning 3 hr prior to sacrifice, for a total of 7.5 g kg\u22121. Mice were then perfused via the heart with a buffered mix of 1.0% glutaraldehyde and 2.0% paraformaldehyde in 0.1 M phosphate buffer (pH 7.4). After 2 hr, the lungs were removed and placed in the same fixative overnight. They were then sectioned with a vibratome (VT1200, Leica Microsystems) at a thickness of 100 \u03bcm, and the sections of interest, showing distinct tumors, washed thoroughly with cacodylate buffer (0.1\u00a0M, pH 7.4). These were then postfixed for 40 min in 1.0% osmium tetroxide with 1.5% potassium ferrocyanide in cacodylate buffer, and then 40 min in 1.0% osmium tetroxide alone (in cacodylate buffer). They were finally stained for 30 min in 1% uranyl acetate in H2O before being dehydrated through increasing concentrations of EtOH and then embedded in Durcupan ACM (EMS, USA) resin. The resin-embedded sections were hardened for 24 hr in an oven at 65\u00b0C. Regions of interest were sectioned either at 50 nm thickness, and collected on single slot grids, for transmission electron microscopy (TEM), or at 0.5 \u00b5m thickness, and collected on silicon wafers, for scanning electron microscopy (SEM) and NanoSIMS analysis. Sections collected on grids were further contrasted with lead citrate and uranyl acetate solutions, and images taken using a transmission electron microscope (Spirit TEM, operating at 80 kV, FEI Company) with digital camera (Eagle CCD camera; FEI Company). SEM imaging of sections on silicon wafers for correlation with NanoSIMS images was performed using a Zeiss GeminiSEM 500. Imaging was done at 3 kV, using an energy selective backscatter detector (EsB) with a grid bias of 1500 V. NanoSIMS images of cells selected from SEM images were acquired using a Cs+ primary beam. Selected areas (usually 50 \u00d7 50 \u03bcm for entire cell images or 25 \u00d7 25 \u03bcm for specific areas within a cell) were first implanted in order to clean up the surface and reach stable emission conditions. The areas were then imaged by scanning the Cs+-beam focused on the surface of the sample; beam diameter was about 200 \u03bcm and current 1.8 pA for the 50 \u00d7 50 \u03bcm images and about 100 \u03bcm with a current of 0.5 pA for the 25 \u00d7 25 \u03bcm images. Number of pixels were always 256 \u00d7 256 and dwell time 5 \u03bcs/pixel. For each image, eight layers were acquired and processed using LookatNanosims software (Polerecky et al., 2012). The layers were aligned and stacked. Using a SEM image aligned with the NanoSIMS images, areas of interests were drawn for every LBO.\n\n### Protein extraction for western blot\n\nFor transient transfection, 293 T cells were co-transfected with an rtTA plasmid and the Lenti.TRE-PPAR\u03b1\u039413_PGK-Cre construct using LF2000 (ThermoFisher Scientific), and were treated (or not) with 2 \u03bcg ml\u22121 doxycycline one day later for 24 hr to monitor PPAR\u03b1\u039413 induction. For all experiments, cells were lysed in RIPA (150 mM NaCl, 20 mM Tris pH 7.4, 0.1% SDS, 0.5% NP-40, 0.5% sodium deoxycholate, 1 mM sodium orthovanadate, one protease inhibitor cocktail tablet (11836145001, Roche)). Proteins were quantified using a BCA assay, and 50 \u03bcg (or 5 \u03bcg after Seahorse) was used for western blot. Antibodies used are anti-PPAR\u03b1 (PA1-822A, ThermoFisher Scientific, 1:1000; RRID:AB_2165595), anti-GLUT1 (07\u20131401, Millipore, 1:1000; RRID:AB_1587074), anti-GLUT3 (ab41525, Abcam, 1:1000; RRID:AB_732609), anti-\u03b2-tubulin (sc-9104, Santa Cruz Biotechnology, 1:1000; RRID:AB_2241191), and anti-\u03b3-tubulin (T6557, Sigma-Aldrich, 1:10\u2019000; RRID:AB_477584).\n\n### Immunohistochemistry on mouse tissues\n\nFor histological analyses, lung lobes from tumor-bearing mice were fixed in 3,6% formaldehyde (VWR Chemicals, 20909.290) at 4\u00b0C for 24 hr, then rinsed once in PBS1x followed by a washing and a keeping in 70% absolute ethanol (VWR, C20820.362) before paraffin embedding. Lung paraffin blocks were sectioned at 4 \u03bcm using a rotary microtome (Thermo Scientific, HM325), mounted on slides, dried at 37\u00b0C overnight before being stored at 4\u00b0C. Lung tissue sections were dewaxed, followed by antigen retrieval in a 10 mM Trisodium Citrate buffer pH 6.0 for 20 min at 95\u00b0C. Slides were then washed three times for 5 min in PBS1x before endogenous peroxidase blockade with 0.3% hydrogen peroxide (VWR, 1.07209.0250) for 10 min at room temperature (RT). Next, lung sections were washed three times for 5 min in PBS1x + 0.2% Triton X-100 (Sigma Aldrich, 93420), and blocked in 5% goat serum in PBS1x + 0.2% Triton X-100 for 1 hr at RT. Mouse tissue sections were stained with anti-GLUT1 (ab115730, Abcam, 1:650; RRID:AB_10903230) or anti-GLUT3 (ab41525, Abcam, 1:200; RRID:AB_732609) antibodies in blocking solution, 5% goat serum in PBS1x + 0.2% Triton X-100, overnight at 4\u00b0C. The day after, slides were incubated 30 min at RT, and washed three times for 5 min in PBS1x + 0.2% Triton X-100. Tissue sections were incubated 1 hr in biotin-conjugated secondary antibodies in blocking solution, 5% goat serum in PBS1x + 0.2% Triton X-100. Sections were then washed three times for 5 min in PBS1x + 0.2% Triton X-100, incubated for 30 min in avidin-biotin HRP complexes (Vector Laboratories, Vectastain Elite ABC HRP kit, PK-6105), and revealed with a 3,3\u2019-diaminobenzidine (DAB) peroxidase substrate kit (Vector Laboratories, SK-4100). Harris haematoxylin counterstains were performed. Sections immunohistochemically stained were imaged with a Leica microscope (Olympus BX43/U-HGLGPS), or scanned using a slide scanner (Olympus, VS120-L100).\n\n### Human microarray and immunohistochemistry\n\nA tissue microarray (TMA) comprising 36 randomly selected human non-small cell lung cancers (18 stage IB-IIB LUAD, 18 stage IA-IIB LUSC based on the 7th Edition of the UICC TNM classification) was generated by SB using the Translational Research Unit Platform of the Institute of Pathology, University of Bern, as described previously (Zlobec et al., 2013). Tumors were resected between 1990 and 2007. Representative H&E slides from all cases were scanned using a digital slide scanner (Pannoramic P250, Budapest, Hungary). Using a digital TMA annotation tool, each scan was marked using eight cores per tumor of 0.6 mm diameter each. Annotated images were aligned with the tumor block and cored out automatically (TMA Grand Master, 3DHistech, Hungary), producing a next-generation Tissue Microarray (ngTMA). The ngTMA block was cut at 4 \u03bcm and a double IHC using anti-GLUT1 (AEC chromogen, red staining) and anti-HIF1\u03b1 (DAB chromogen, brown staining) was performed. Data on HIF1\u03b1 were not considered in this study. Anti-GLUT1 (07\u20131401, Millipore, 1:5000; RRID:AB_1587074) was incubated for 30 min. Antigen retrieval was done in citrate buffer for 30 min at 100\u00b0C. GLUT1 membrane staining on tumor cells was classified by an experienced pathologist (CN) into score 0 (no or weak staining in tumor cells in all eight cores), score 1 (intermediate staining in tumor cells in at least 1 of the eight cores) or score 2 (strong staining in tumor cells in at least 1 of the eight cores). No score 0 was present. Visual scoring was done using Scorenado, an automated core-wise digital image display and documentation tool based on QuPath elements (Lytle et al., 2019).\n\n### RNA isolation, reverse transcription and real-time PCR\n\nSingle cell suspensions from macro-dissected tumors were obtained using a gentleMACS Octo Dissociator (Miltenyi Biotec). RNA was prepared for sequencing from bulk tumors (bulk Lenti) or from CD45- (non-immune) tumor fractions (PGK-Cre, SPC-Cre and CC10-Cre). In the latter case, magnetic cell sorting to remove immune cells was performed using anti-CD45 MicroBeads (130-052-301, Miltenyi Biotec). RNA for real-time PCR or sequencing was extracted using TRIzol (15596018, ThermoFisher Scientific). For real-time PCR, 1 \u03bcg RNA was used for reverse transcription using High-Capacity cDNA Reverse Transcription Kit (4368814, ThermoFisher Scientific). Real-time PCR was done using Taqman universal PCR master mix (4324018, ThermoFisher Scientific) and Taqman probes for the following genes: Slc2a1: Mm00441480_m1; Slc2a3: Mm00441483_m1; Slc2a2: Mm00446229_m1; Slc2a4: Mm00436615_m1; Slc2a5: Mm00600311_m1; Slc2a6: Mm00554217_m1; Slc2a7: Mm01260610_m1; Slc2a8: Mm00444634_m1; Slc2a9: Mm00455122_m1; Slc2a10: Mm01249519_m1; Slc2a12: Mm02375931_s1; Slc2a13: Mm01306489_m1; Slc5a2: Mm00453831_m1; Slc50a1: Mm00485707_m1; gene expression level normalization gene Rpl30: Mm01611464_g1 (all from ThermoFisher Scientific, Catalog number: 4331182). Data were presented as \u0394CT values.\n\n### Mouse mRNA sequencing, differential expression, and pathway analyses\n\nMultiplexed libraries for mRNA-seq were prepared with the TruSeq stranded mRNA kit (Illumina) starting from 500 ng of good-quality total RNAs (RNA quality scores\u00a0>\u00a07 on the Fragment Analyzer). Sequencing was subsequently performed on a NextSeq 500 instrument (Illumina) on a high-output flow cell, yielding single-end reads of 85 nucleotides. Adapter sequences and low-quality ends were removed with Cutadapt (v1.9.1), trimming for TrueSeq and polyA sequences. Reads were aligned to mouse genome build mm10 using HISAT2 aligner (v2.0.3beta). Genes with low expression were filtered out (average transcripts per kilobase million\u00a0<\u00a020). Counts were normalized for library size using TMM method from EdgeR (v3.24.3) and voom from limma. Differential expression was computed with limma between Glut1-KO and WT control, or PPAR\u03b1\u039413 and control.\n\nWe investigated pathways as defined in the Hallmark and KEGG collections of MSigDB (v6.0; Subramanian et al., 2005). Gene Set Enrichment Analysis (GSEA) was performed on genes ranked based on t-statistics obtained when comparing Glut1-KO and WT control, or PPAR\u03b1\u039413 and control. Statistical significance was calculated by permutation tests (number of random permutations\u00a0=\u00a0105).\n\n### Seahorse analyses\n\nSingle cell suspensions were prepared from macro-dissected tumors using gentleMACS Octo Dissociator (Miltenyi Biotec). Macro-dissected tumors were weighted and processed into DMEM, no glucose (11966025, ThermoFisher Scientific). Ten or five technical replicates per tumor (5 mg of tumor per replicate) were plated in a XF96 V3-PS cell culture microplate (Seahorse Bioscience, North Billerica) and the rest of cell suspensions were saved for real-time PCR. Cells were incubated during 2 hr in DMEM, no glucose at 37\u00b0C. Extracellular acidification rates (ECAR) were then measured using XFe96 Extracellular Flux Analyzer (Seahorse Bioscience, North Billerica, MA). ECAR measurements were performed at 37\u00b0C, with measurement cycles broken down into 2 min of mixing, 2 min of waiting and 3 min of data acquisition. During Seahorse assay, 10 mM of glucose was added, followed by 50 mM of 2-deoxyglucose (2-DG). ECAR measurements were reported as normalized to protein concentration. After Seahorse analysis, proteins were extracted from the cells for western blot analyses.\n\n### Cell line authentication\n\nCell line authentication was performed by Microsynth AG. Profiling of the human cell lines was done using highly polymorphic short tandem repeat loci (STRs). STR loci were amplified using the PowerPlex 16 HS System (Promega). Fragment analysis was done on an ABI3730xl (Life Technologies) and the resulting data were analyzed with GeneMarker HID software (Softgenetics). A549, Calu-6, and H460 cell lines matched 100% to the DNA profile of A549 (ATCC CRM-CCL-185TM; RRID:CVCL_0023), Calu-6 (ATCC HTB-56TM; RRID:CVCL_0236), and NCI-H460 [H460] (ATCC HTB-177TM; RRID:CVCL_0459), respectively. SW 1573 cell line matched 93,3% to the DNA profile of the SW 1573 [SW-1573, SW1573] (ATCC CRL-2170TM; RRID:CVCL_1720).\n\n### Mycoplasma test on human cell lines\n\nMycoplasma test (13100\u201301, Mycoplasma Detection Kit, SouthernBiotech) was performed on the 4 cell lines used for the in vitro experiments. All cell lines were mycoplasma negative.\n\n### In vitro human non-small cell lung cancer experiments\n\nMycoplasma negative and authenticated human Calu-6, H460, A549 and SW 1573 cell lines were plated in 6-well culture plates in RPMI (Gibco, 21875\u2013034) supplemented with 10% FBS (Gibco, 10270106) at 1.105 cells per well. One day later, cells were transfected using lipofectamine RNAi max (Life Technologies, 13778150) with siRNAs: siCTR, siSLC2A1, siSLC2A3, or siSLC2A1 + siSLC2A3. References and mixes of the siRNAs used for the different conditions are found in Table 1. 72 hr after transfection, cells were counted using Trypan blue dye exclusion assay (Invitrogen, T10282) and an automated cell counter (Invitrogen, Countess Automated Cell Counter). Cells were then lysed into TRIzol (Invitrogen, 15596018) to extract RNA.\n\n**Table 1.**\n References of the siRNAs used for in vitro experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>siRNA</th>\n      <th>Mixes of</th>\n      <th>Species</th>\n      <th>Supplier</th>\n      <th>References</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>siCTR</td>\n      <td>siCTR</td>\n      <td>Human and Mouse</td>\n      <td>Invitrogen</td>\n      <td>Cat# 4390843</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">siSLC2A1</td>\n      <td>siSLC2A1#1</td>\n      <td>Human</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12926 Cat# 4390824</td>\n    </tr>\n    <tr>\n      <td>siSLC2A1#2</td>\n      <td>Human</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12927 Cat# 4390824</td>\n    </tr>\n    <tr>\n      <td>siCTR</td>\n      <td>Human and Mouse</td>\n      <td>Invitrogen</td>\n      <td>4390843</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">siSLC2A3</td>\n      <td>siSLC2A3#1</td>\n      <td>Human</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12931 Cat# 4390824</td>\n    </tr>\n    <tr>\n      <td>siSLC2A3#2</td>\n      <td>Human</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12932 Cat# 4390824</td>\n    </tr>\n    <tr>\n      <td>siCTR</td>\n      <td>Human and Mouse</td>\n      <td>Invitrogen</td>\n      <td>Cat# 4390843</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">siSLC2A1 + siSLC2A3</td>\n      <td>siSLC2A1#1</td>\n      <td>Human</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12926 Cat# 4390824</td>\n    </tr>\n    <tr>\n      <td>siSLC2A1#2</td>\n      <td>Human</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12927 Cat# 4390824</td>\n    </tr>\n    <tr>\n      <td>siSLC2A3#1</td>\n      <td>Human</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12931 Cat# 4390824</td>\n    </tr>\n    <tr>\n      <td>siSLC2A3#2</td>\n      <td>Human</td>\n      <td>ThermoFisher Scientific</td>\n      <td>s12932 Cat# 4390824</td>\n    </tr>\n  </tbody>\n</table>\n\n### 18F-fluorodeoxyglucose with positron emission tomography (18F-FDG PET)\n\nIn vivo measurements of the tumors\u2019 glucose uptake were performed on a group of animals (n\u00a0=\u00a014, i.e. 3 KP, 4 KPG1, 3 KPG3 and 4 KPG1G3, fasted overnight) with positron emission tomography (PET) as previously described in detail (Lanz et al., 2014). Mice were anesthetized with a mixture of 4% isoflurane (vol/vol) in 100% O2 for 2 min and then maintained with a mixture of 1.5% isoflurane in 100% O2 (0.9 L/min) during tail catheter insertion and initial glycaemia measurement. PET data were acquired on an avalanche photodiode\u2013based LabPET-4 small-animal scanner (Gamma Medica, Sherbrook, Canada). Mice were prone positioned on a heat-regulated scanner bed with respiratory cushion and rectal temperature measurement probe, with the PET scanner field of view adjusted to cover the chest area. A bolus injection of 18F-fluorodeoxyglucose (18F-FDG) (~20 MBq) was administered through the tail vein catheter within the first 30 s of the PET scan, followed by 150\u2013200 \u00b5l of saline chase solution. During the 60 min scan, mice were maintained under 1.5\u20132% (vol/vol) isoflurane anesthesia in oxygen (0.9 L/min). Monitored temperature and breathing rate were maintained within a physiological range. Raw data were reconstructed with a maximum likelihood expectation maximization (MLEM) algorithm on a circular FOV of 60 mm of diameter and a standard voxel size of 0.5\u00b70.5\u00b71.18 mm, in three time frames of 20 min. The last time frame (labeling steady-state) was used to derive standardized uptake values (SUV) images and measure maximal SUV (SUVmax) values over tumor regions.\n\n$$\nSUVg/ml=\\frac{R_{ROI}[kBq/ml]}{A_{inj}kBq/w[g]}\n$$\n\nwhere RROI represents the radioactivity concentration measured in the region of interest (ROI), $A_{inj}$ is the injected activity corrected for the radiotracer decay and w is the mouse weight.\n\nPMOD 2.95 software (PMOD Technologies, Zurich) was used for the determination of the standardized uptake value (SUV) and for the delineation of the tumors\u2019 ROIs, based on a visual slice-by-slice matching with the corresponding \u03bcCT images. Tumors appearing on consecutive slices were grouped as single VOIs for the calculation of the SUVmax.\n\n### Statistical analyses and graphic design\n\nStatistical analyses were performed, and graphics produced using R version 3.5.1, Prism version eight or Microsoft Excel version 16.\n",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "b4f406e2-615d-4a37-b0e2-838da9d58ef8",
+      "submission_id": "ffb0ec3d-40f0-485a-99c8-f77f7ec8492c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthew G Vander Heiden, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53618.sa1](https://doi.org/10.7554/eLife.53618.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study uses conditional mice to show that GLUT1 inactivation is dispensable for tumor growth in a mouse model of lung cancer, while combined GLUT1/GLUT3 deletion leads to smaller tumors and longer survival. This supports a requirement for glucose uptake in lung cancer.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Combined deletion of Glut1 and Glut3 impairs lung adenocarcinoma growth\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Maureen Murphy as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Georgia Konstantinidou (Reviewer #2).\n\nAll reviewers appreciated the amount of work and potential importance, although also noted that some findings were expected or less novel and that further work would be needed to meet what is expected in eLife. After discussion amongst the reviewers, we would be willing to consider a substantially revised version that incorporates points raised during review. A list of essential revisions is included first, and then the full comments from the three reviewers. Please write a response to all reviewer points, but your revised manuscript should incorporate the essential revisions.\n\nEssential revisions:\n\nWe appreciate the value in formally examining the requirement for GLUT1 and GLUT3 in lung cancers, however it was noted that glucose uptake was not formally examined in any system. This could be done using FDG-PET scan, and some data to assess how glucose uptake changes would strengthen the conclusions. We recognize that this may take longer than 2 months, but think it would greatly enhance the impact of the paper.\n\nMore evidence on how tumor histopathology is altered by GLUT1 and GLUT3 knockout should be included. For example, do double knockouts have no difference in adenoma growth but reduced progression to invasive cancers?\n\nAll appreciated is that cultured cells may be rewired by selection in high glucose media, and thus may not be the same as autochthonous tumors, but we agreed the comment regarding the human cancer cells lines from reviewer 2 should be fully addressed.\n\nReviewer #1:\n\nThe authors show that GLUT1 inactivation does not significant affect the growth of tumors in the KP GEM model of lung cancer, whereas combined GLUT1/GLUT3 deletion leads to smaller tumors and longer survival. The data are clear and are of potential relevance to therapy and understanding metabolic adaptations in lung cancer subsets. However, the findings are descriptive and provide only limited new information about cancer mechanisms. Moreover, the organization of the manuscript could be improved, with less attention to the negative results on PPAR\u03b1 and ultrastructural data of uncertain significance and additional characterization of the tumor phenotypes.\n\n1) There are limitations in novelty and mechanistic insight. Prior reports (cited by the authors) anticipate some of the results-with the study by Scafoglio showing expression of GLUT1 as a late event in the KP model and in human specimens, and preferential early reliance on the Sglt2 transporter. Similarly data from the Hsieh study indicate that GLUT1 is dispensable for adenoma/adenocarcinoma development in the context of the KL model. The finding that co-deletion of GLU1 and GLUT3 does impact tumor growth in the KP model is interesting, but provides an overall incremental advance.\n\n2) The relevance of the model to make predictions about glucose transport in human NSCLC is not certain. Although increasing GLUT3 levels are reported during tumor progression in patient samples, no functional data are shown using human-derived models. Moreover, relevance of GLUT1 vs GLUT3 in established tumors would be best addressed using acute inactivation methods.\n\n3) More details should be provided in the analysis of the mouse models. Is the histology/grade affected by GLUT1 or GLUT1+GLUT3 inactivation?\n\nReviewer #2:\n\nIn this manuscript, Contat et al. proved that Glut1 deficiency fails to suppress tumorigenesis and they identified Glut3 as a compensatory mechanism. The combined deletion of Glut1 and Glut3 suppressed tumor growth, decreased tumor number and increased mouse survival.\n\nOverall, the manuscript is well-written and the experiments are well performed.\n\nMajor Comments:\n\n1) Goodwin et al., 2017, reported that GLUT1 is elevated at both the mRNA (TCGA) and protein levels in squamous lung cancer but is minimally expressed in lung adenocarcinomas. Instead, the authors here show similar high protein levels of GLUT1 in Figure 1B. This discrepancy should at least be discussed.\n\n2) All the data in the manuscript are based on experimental evidence derived from mouse models. Although this is excellent, the authors can try to reproduce this synergistic action of GLUT1/3 inhibition in lung adenocarcinoma cell lines.\n\n3) Figure 4. The suppression of tumor growth and tumor number is due to reduced cell proliferation or there`s also increased cell death?\n\nReviewer #3:\n\nContat et al. assess the role of Glut1 and Glut3 expression in the KP mouse model of lung cancer. They show that either transporter alone is dispensible for tumor growth, but deletion of both transporters extends mouse survival. Using nanoSIMS, they also show that glucose carbon accumulates in lamellar bodies, although what these structures are or how they relate to tumor growth is not clear. Overall, this work supports some requirement for glucose uptake in lung cancer and is consistent with another paper showing Glut1 is required for tumor growth in a different lung cancer model. The major deficiency of the study is that glucose uptake is never directly assessed in vivo. Some other points to consider are listed below.\n\n1) The Abstract implies that glucose uptake may not be important based on Glut1 deletion, although then suggests it is important since Glut3 is required if Glut1 is absent. Also it is stated that expression of two glucose transporters is needed, but it also may be their function is redundant. While many would argue that a role for glucose metabolism in tumors is well established, some work has questioned this recently and being clear about their findings in the Abstract is important to prevent further confusion in the field.\n\n2) The use of nanoSIMS to assess glucose fate following glucose transporter deletion is interesting, however this is a poor surrogate for glucose uptake (see below). Given that FDG-PET is a commonly used way to assess glucose uptake in patients and mice, one is left wondering what effect Glut1 loss has on overall glucose uptake. Can FDG-PET be compared in KP and KPG1 mice?\n\n3) IP injection of 13C-labeled glucose will achieve a steady state labeling and thus differences in accumulation in lamellar bodies could be caused by differences in uptake between different models. This is another reason why assessment of FDG-PET uptake would be useful to interpret these data.\n\n4) It is implied based on ex vivo data that some cells adapt to Glut1 loss via Glut3 expression while other rely on PPAR\u03b1. This is speculative at best, particularly when the dominant negative construct had a marginal effect. A simpler experiment test might be to ask if PPAR\u03b1 expression anti-correlates with Glut3 expression via IHC in tumors?\n\n5) For completeness the effect of Glut3 loss, and combined Glut1/Glut3 loss on FDG-PET uptake would improve the study.\n\n6) As the authors point out, Glut1 is required for tumor growth in the KL model. The fact that KL tumors fail to express Glut3 is a nice explanation for why Glut1 is not needed in the KP model. If the authors also have data on Glut1 and Glut3 deletion in the KL model it would make this point more clearly and be nice to include, although if the data are not available it would take too long to generate these data for this paper.\n\n7) The extension in mouse survival with dual deletion of Glut1 and Glut3 is fairly modest. Is their data on whether the tumors that eventually form still take up glucose via another mechanism?\n",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "157c8908-bcdf-4892-b88b-0b36bbeca218",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C1",
+      "claim": "SLC2A1 (GLUT1) followed by SLC2A3 (GLUT3) were the most expressed glucose transporter family members in TCGA-LUAD samples.",
+      "claim_type": "EXPLICIT",
+      "source": "SLC2A1 (GLUT1) followed by SLC2A3 (GLUT3) were the most expressed members, (Figure 1a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data from TCGA-LUAD shown in Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "f1e946b9-67ff-4c4e-8df4-efa7894e3f29",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C2",
+      "claim": "High SLC2A1 expression was correlated with poor overall survival in TCGA-LUAD.",
+      "claim_type": "EXPLICIT",
+      "source": "high SLC2A1 expression was correlated with poor overall survival (Figure 1\u2014figure supplement 1a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by survival analysis data shown in Figure 1\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "f78b910d-b305-4565-8209-08f7866b4b0e",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C3",
+      "claim": "GLUT1 protein showed intermediate and strong expression in 44% and 56% of LUAD lesions, respectively, in a human tissue microarray.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it showed intermediate and strong GLUT1 expression in 44% (8/18) and 56% (10/18) of the LUAD lesions, respectively (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data from human tissue microarray shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "6b25e41f-3126-4891-99bb-dfa571b0b75d",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C4",
+      "claim": "GLUT1 exhibited strong staining in all LUSC samples in the tissue microarray.",
+      "claim_type": "EXPLICIT",
+      "source": "In LUSCs, GLUT1 exhibited strong staining in all samples (Figure 1b), confirming previous results obtained from squamous cell carcinomas of lung and other tissues (Goodwin et al., 2017; Hsieh et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 1b and confirmed by cited previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "d5467539-0e39-478f-9784-3b43641672df",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C5",
+      "claim": "SLC2A1 and SLC2A3 were most expressed in NMF4 subtype of TCGA-LUAD.",
+      "claim_type": "EXPLICIT",
+      "source": "SLC2A1 and SLC2A3 were the most expressed in NMF4, which contains the highest percentage of the TP53 mutation (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMF analysis data shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "2d01037b-4ac8-4cdc-b2de-3483d9ec6608",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C6",
+      "claim": "NMF4 contains the highest percentage of TP53 mutation among TCGA-LUAD subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "SLC2A1 and SLC2A3 were the most expressed in NMF4, which contains the highest percentage of the TP53 mutation (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMF analysis data shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "20945763-bea5-4e16-b416-b7fc89c28c89",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C7",
+      "claim": "KP mouse model tumors are predominantly NMF4-like lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA sequencing analyses of bulk tumor samples revealed a predominance of NMF4-like lesions (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA sequencing data and NMF subtype prediction shown in Figure 1\u2014figure supplement 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "f8b11526-7bb7-4adb-a483-2d1085871378",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C8",
+      "claim": "Glut1 protein levels in tumor cells gradually increased along tumor progression in the KP model.",
+      "claim_type": "EXPLICIT",
+      "source": "Glut1 protein levels in tumor cells gradually increased along tumor progression, with the majority of advanced grade lesions being positive with intermediate or strong Glut1 staining (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry quantification data shown in Figure 1\u2014figure supplement 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "67d40750-ada4-46fd-8361-050799d11407",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C9",
+      "claim": "Glut1 was only weakly expressed or undetectable in the alveolar compartment of normal lung.",
+      "claim_type": "EXPLICIT",
+      "source": "In normal lung, Glut1 was only weakly expressed or undetectable in the alveolar compartment that comprises alveolar type-1 and 2 (AT1, AT2) cells, endothelial cells and alveolar macrophages (Figure 1\u2014figure supplement 2b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 1\u2014figure supplement 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "3815baf8-81d4-4221-9ed2-59107b16ce9e",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C10",
+      "claim": "AT2 cells are considered as the principal tumor cell-of-origin in the KP model.",
+      "claim_type": "EXPLICIT",
+      "source": "AT2 cells being considered as the principal tumor cell-of-origin in this model (Desai et al., 2014; Sutherland et al., 2014; Xu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "26f00504-7a2c-4fc1-b347-3e5c3cd4009b",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C11",
+      "claim": "Glut1 was strongly expressed in the bronchiolar epithelial compartment containing Club cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Glut1 was strongly expressed in the bronchiolar epithelial compartment that contains Club cells, another cell type permissive to tumor initiation (Sutherland et al., 2014; Figure 1\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 1\u2014figure supplement 2b and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "fd4e2733-baf8-49e4-a767-fefae7880d0c",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C12",
+      "claim": "Club cells are another cell type permissive to tumor initiation in the KP model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Glut1 was strongly expressed in the bronchiolar epithelial compartment that contains Club cells, another cell type permissive to tumor initiation (Sutherland et al., 2014; Figure 1\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "cb1c725e-6813-4d14-8a33-f29c53c322f8",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C13",
+      "claim": "Glut1 deletion in KP tumors did not significantly reduce tumor growth rates monitored by \u03bcCT.",
+      "claim_type": "EXPLICIT",
+      "source": "During tumor progression, we detected slightly but not significantly reduced changes in tumor growth rates monitored by X-rays micro-computed tomography (\u03bcCT) (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by \u03bcCT tumor volume measurements shown in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "ecf4be24-769d-4cb0-afd3-32b9c8c0aef3",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C14",
+      "claim": "No significant difference was observed in the weight of KP versus KPG1 tumors at sacrifice.",
+      "claim_type": "EXPLICIT",
+      "source": "At sacrifice, although no significant difference was observed in the weight or in the number of lesions (Figure 1e\u2013f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor weight measurements shown in Figure 1e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "61314495-a333-45f6-a75f-adbeb41f045f",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C15",
+      "claim": "No significant difference was observed in the number of KP versus KPG1 lesions at sacrifice.",
+      "claim_type": "EXPLICIT",
+      "source": "At sacrifice, although no significant difference was observed in the weight or in the number of lesions (Figure 1e\u2013f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor number counts shown in Figure 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "925890ba-0451-46fc-85b7-72a047248478",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C16",
+      "claim": "A significant reduction of high grade tumors (grades 4 and 5) was determined upon Glut1 loss in KP lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "a significant reduction of high grade tumors (grades 4 and 5) was determined upon Glut1 loss in KP lesions (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor grading data shown in Figure 1g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "3bbe94d5-980e-4907-a5df-e4d81efc3f04",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C17",
+      "claim": "There was no significant increase in KPG1 mouse survival compared to KP mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Because there was no significant increase in KPG1 mouse survival (Figure 1h), these data together fail to reveal a clear impact of Glut1 deletion in the tumor epithelial cells on disease progression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Kaplan-Meier survival analysis shown in Figure 1h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "aef4cb2e-3d8f-4c77-8d1f-4e7cb074bdd5",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C18",
+      "claim": "Glut1 deletion in tumor epithelial cells does not clearly impact disease progression in the KP model.",
+      "claim_type": "EXPLICIT",
+      "source": "Because there was no significant increase in KPG1 mouse survival (Figure 1h), these data together fail to reveal a clear impact of Glut1 deletion in the tumor epithelial cells on disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental results including survival, tumor growth, and tumor grade data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "e1f2e2f2-4bb3-42fb-9a17-76a4846aacdb",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C19",
+      "claim": "Intense 13C enrichments inside tumors revealed a compartmentalized intracellular accumulation of glucose-derived biomass in specific organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Intense 13C enrichments inside tumors revealed a compartmentalized intracellular accumulation of glucose-derived biomass, which can be attributed to a specific organelle of tumor cells visualized by the superposition of images obtained from scanning EM (SEM) and NanoSIMS (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NanoSIMS and SEM imaging data shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "964a0536-4b3c-453d-84a2-216772351395",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C20",
+      "claim": "The organelles accumulating glucose-derived biomass resemble lamellar bodies based on their size, secretory behavior and morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "From SEM and transmission EM (TEM), these organelles resemble lamellar bodies (LBs) based on their size, secretory behavior and morphology, which exhibit more or less packed, occasionally visible lamellae (Figure 2b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SEM and TEM imaging data shown in Figures 2b-c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "de446739-cb1d-4134-b501-6f699a7aaa52",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C21",
+      "claim": "Lamellar bodies are lipid-rich secretory organelles specifically produced in the lung by AT2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "LBs are lipid-rich secretory organelles specifically produced in the lung by AT2 cells, responsible for surfactant production and release into the alveolar space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about lamellar bodies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "0aa09ad6-dd3e-4180-8786-4db23051bbb9",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C22",
+      "claim": "Lamellar bodies are responsible for surfactant production and release into the alveolar space.",
+      "claim_type": "EXPLICIT",
+      "source": "LBs are lipid-rich secretory organelles specifically produced in the lung by AT2 cells, responsible for surfactant production and release into the alveolar space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about lamellar body function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "ceb7c3fa-81a0-451f-bd59-ac720afb8b64",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C23",
+      "claim": "Lamellar body-like organelles in tumor cells were typically from 200 nm to 2 \u03bcm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Within tumor cells, these LB-like organelles (LBOs) were typically from 200 nm to 2 \u03bcm in diameter, irregularly shaped and darkly stained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electron microscopy observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "e7591d62-a05f-4d2e-9787-14331d985006",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C24",
+      "claim": "Lamellar body-like organelles in tumor cells were irregularly shaped and darkly stained.",
+      "claim_type": "EXPLICIT",
+      "source": "Within tumor cells, these LB-like organelles (LBOs) were typically from 200 nm to 2 \u03bcm in diameter, irregularly shaped and darkly stained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electron microscopy observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "ea2d1f1a-06f9-4418-b370-2e0560cf037c",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C25",
+      "claim": "Lamellar body-like organelles often contained more heavily stained regions and discernible tightly packed lamellae at higher magnifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Often these contained more heavily stained regions and discernible tightly packed lamellae at higher magnifications (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by high-resolution TEM imaging shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "924ba531-3ef9-43c0-974d-6856215d3e12",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C26",
+      "claim": "KPG1 tumor cells showed lower 13C-enrichment signal intensity in lamellar body-like organelles compared to KP tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative NanoSIMS images of these organelles revealed a lower 13C-enrichment signal intensity in KPG1 compared to KP tumor cells (Figure 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative NanoSIMS measurements shown in Figure 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "b0918cb4-9e70-489c-91f1-0cf005ced9bb",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C27",
+      "claim": "The lower 13C-enrichment in KPG1 tumor cells demonstrates the consequence of Glut1 loss in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative NanoSIMS images of these organelles revealed a lower 13C-enrichment signal intensity in KPG1 compared to KP tumor cells (Figure 2d), demonstrating the consequence of Glut1 loss in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of 13C-enrichment between KP and KPG1 tumors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "86668531-a70d-42a5-b098-f2b1425d5e32",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C28",
+      "claim": "KPG1 tumors failed to stimulate glycolysis in response to glucose in ex vivo experimental setting.",
+      "claim_type": "EXPLICIT",
+      "source": "In this ex vivo experimental setting, KPG1 tumors failed to stimulate glycolysis in response to glucose (Figure 3a and Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Seahorse extracellular acidification rate measurements shown in Figure 3a and Figure 3\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "8abcc937-88ab-46bb-b608-78562b247684",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C29",
+      "claim": "One KPG1 tumor displayed the strongest glycolytic response of all tested tumors, which coincided with elevated expression of Glut3.",
+      "claim_type": "EXPLICIT",
+      "source": "As exception, one KPG1 tumor displayed the strongest glycolytic response of all tested tumors, which coincided with elevated expression of another high-affinity glucose transporter, Glut3 (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Seahorse measurements and Glut3 expression analysis shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "b8bffcdf-cd00-4b79-ac85-4eafc167090a",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C30",
+      "claim": "'Hallmark_bile acid metabolism' was the unique significantly shared upregulated pathway between the three KPG1 cohorts compared to KP.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Set Enrichment Analysis (GSEA) highlighted, from all the Hallmark and KEGG up- and downregulated pathways, a unique significantly shared pathway between the three cohorts, which was upregulated in KPG1: 'Hallmark_bile acid metabolism' (Figure 3\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 3\u2014figure supplement 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "bc875d1f-5d4f-4955-9dc0-db1c7c1794a8",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C31",
+      "claim": "Several target genes of PPAR\u03b1 were identified in the 'Hallmark_bile acid metabolism' pathway upregulated in KPG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon closer examination of the genes included in this pathway, we identified several target genes of peroxisome proliferator-activated receptor alpha (PPAR\u03b1) (Figure 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression analysis shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "f74ed6ee-eab7-459a-93b9-292ec36601c3",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C32",
+      "claim": "PPAR\u03b1 is a crucial transcription factor in fatty acid catabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "we identified several target genes of peroxisome proliferator-activated receptor alpha (PPAR\u03b1) (Figure 3b), a crucial transcription factor in fatty acid catabolism (Reddy and Hashimoto, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "9d6edad9-33ff-47f0-8f05-1e4871b03e9b",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C33",
+      "claim": "GSEA highlighted enrichment of known PPAR\u03b1 targets in KPG1 compared to KP tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when interrogating the expression of known PPAR\u03b1 targets (Rakhshandehroo et al., 2010), GSEA highlighted their enrichment in KPG1 compared to KP tumors (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 3c and citation to PPAR\u03b1 target genes",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "c159fede-6b45-4404-87bb-74c043f8793a",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C34",
+      "claim": "KPG1 tumors have a stronger expression of known PPAR\u03b1-target genes than KP lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, KPG1 tumors have a stronger expression of known PPAR\u03b1-target genes than KP lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from GSEA analysis of PPAR\u03b1 target genes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "cb7cb091-b7c8-4067-9792-c77fc861884c",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C35",
+      "claim": "Two possible routes for Glut1-deficient tumor growth are uptake through Glut3 or via a PPAR\u03b1-dependent metabolic shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our metabolic and molecular analyses suggested two possible and distinct routes for Glut1-deficient tumor growth: the uptake of the same nutrient through another glucose transporter, Glut3, or via a PPAR\u03b1-dependent metabolic shift (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from metabolic and molecular analyses including Seahorse data and gene expression analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "6c0d1eaa-ed08-43e6-bcc4-12957dd56781",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C36",
+      "claim": "Doxycycline-mediated PPAR\u03b1\u039413 induction in KP mice led only to a trend toward a reduction in tumor growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Doxycycline-mediated PPAR\u03b1\u039413 induction in KP mice led only to a trend toward a reduction in tumor growth rates, comparable to the growth of KPG1 versus KP tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by \u03bcCT tumor volume measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "67e5c013-ff57-4f6e-926d-16143253607a",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C37",
+      "claim": "Within the KPG1 group, PPAR\u03b1\u039413 induction did not further reduce tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the KPG1 group, PPAR\u03b1\u039413 induction did not further reduce tumor growth (Figure 3\u2014figure supplement 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by \u03bcCT tumor volume measurements shown in Figure 3\u2014figure supplement 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "8f4c9818-0461-4d4c-974d-13866325d455",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C38",
+      "claim": "PPAR\u03b1\u039413 downregulates PPAR\u03b1-related pathways in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Global gene expression analyses from tumor samples confirmed the functionality of the PPAR\u03b1\u039413 construct in both KP and KPG1 tumors, as 'Hallmark_bile acid metabolism', 'Hallmark_fatty acid metabolism', 'KEGG_peroxisome' and 'KEGG_ fatty acid metabolism' pathways were repressed in tumors harboring this construct compared to tumors from KP-rtTA or KPG1-rtTA mice not fed on a doxycycline diet (Figure 3\u2014figure supplement 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression analyses shown in Figure 3\u2014figure supplement 3d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "2931bf77-71af-454b-a6a9-f5feface03d3",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C39",
+      "claim": "PPAR\u03b1\u039413 fails to affect tumor growth even in absence of Glut1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although PPAR\u03b1\u039413 downregulates PPAR\u03b1-related pathways in tumors, it fails to affect their growth even in absence of Glut1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from tumor growth measurements and gene expression analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "b10cce33-8dce-43ba-90c9-c598bcab1d5a",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C40",
+      "claim": "Slc2a3 was almost undetectable in tumors from KL mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Slc2a3 was almost undetectable in tumors from KrasLSL-G12D; Stk11Flox/Flox (KL) mice (Figure 4\u2014figure supplement 1a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by real-time PCR data shown in Figure 4\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "20257791-7548-47f4-ad22-99ac191573c2",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C41",
+      "claim": "KL mice are a lung cancer model where Lkb1-deficient tumors progress from an adeno- to a squamous histology.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Slc2a3 was almost undetectable in tumors from KrasLSL-G12D; Stk11Flox/Flox (KL) mice (Figure 4\u2014figure supplement 1a), another lung cancer model where Lkb1 (Stk11)-deficient tumors progressing from an adeno- to a squamous histology become exquisitely Glut1-dependent (Hsieh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "1c8e835b-c753-45c9-93e6-b4a433b0a588",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C42",
+      "claim": "Lkb1-deficient tumors become exquisitely Glut1-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Slc2a3 was almost undetectable in tumors from KrasLSL-G12D; Stk11Flox/Flox (KL) mice (Figure 4\u2014figure supplement 1a), another lung cancer model where Lkb1 (Stk11)-deficient tumors progressing from an adeno- to a squamous histology become exquisitely Glut1-dependent (Hsieh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "3a13a353-0896-4d27-a9af-723fc49ce4fd",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C43",
+      "claim": "In absence of Glut1 (KLG1), Slc2a3 mRNA expression remained very low.",
+      "claim_type": "EXPLICIT",
+      "source": "In absence of Glut1 (KLG1), Slc2a3 mRNA expression remained very low (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by real-time PCR data shown in Figure 4\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "f37ffafd-5c0b-41d9-94e5-a6bbcdc68015",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C44",
+      "claim": "Glut3 protein was undetectable by immunohistochemistry in KL and KLG1 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Glut3 protein was undetectable by immunohistochemistry in KL and KLG1 tumors, whereas it was expressed in KP and KPG1 lesions (Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 4\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "acc51b50-a2a7-4e66-aadb-f37796080982",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C45",
+      "claim": "Glut3 protein was expressed in KP and KPG1 lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Glut3 protein was undetectable by immunohistochemistry in KL and KLG1 tumors, whereas it was expressed in KP and KPG1 lesions (Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 4\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "b5cabe3a-7af0-459c-8304-57b4308ec339",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C46",
+      "claim": "Glut3 stained at the tumor cell membrane in 37% of small and 76% of big KP lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, Glut3 stained at the tumor cell membrane in a minority (37%) of small and a majority (76%) of big KP lesions (Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry quantification shown in Figure 4\u2014figure supplement 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "0c705c52-72b4-4926-9268-df39fd60eb78",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C47",
+      "claim": "Within Glut3-expressing KP tumors, areas positive for Glut3 frequently correlated with a stronger expression of Glut1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, within Glut3-expressing KP tumors, areas positive for Glut3 frequently correlated with a stronger expression of Glut1 (Figure 4a and Figure 4\u2014figure supplement 1d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 4a and Figure 4\u2014figure supplement 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "c060f389-5c95-45c4-99f6-155c6233d43a",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C48",
+      "claim": "There is intra-tumor heterogeneity in glucose utilization in the KP mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, within Glut3-expressing KP tumors, areas positive for Glut3 frequently correlated with a stronger expression of Glut1 (Figure 4a and Figure 4\u2014figure supplement 1d), suggesting intra-tumor heterogeneity in glucose utilization in this mouse model, as demonstrated earlier in human non-small cell lung cancer (Hensley et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Glut1 and Glut3 co-localization data and supported by citation to previous study in human NSCLC",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "f826772a-5b53-4417-995c-7cdf7c5a20b1",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C49",
+      "claim": "Intra-tumor heterogeneity in glucose utilization was demonstrated earlier in human non-small cell lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, within Glut3-expressing KP tumors, areas positive for Glut3 frequently correlated with a stronger expression of Glut1 (Figure 4a and Figure 4\u2014figure supplement 1d), suggesting intra-tumor heterogeneity in glucose utilization in this mouse model, as demonstrated earlier in human non-small cell lung cancer (Hensley et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "b9e81fc8-3d57-45b9-86ec-9b7e7b7cb55e",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C50",
+      "claim": "No differences were detected in overall tumor growth rates between KP and KPG3 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing tumor development in KP and KPG3 animals, we failed to detect differences in overall tumor growth rates, ex vivo glycolysis, mouse survival, or tumor grade distribution (Figure 4\u2014figure supplement 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by \u03bcCT tumor volume measurements shown in Figure 4\u2014figure supplement 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "08e926db-19b8-4081-bb34-d1e323d1afea",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C51",
+      "claim": "No differences were detected in ex vivo glycolysis between KP and KPG3 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing tumor development in KP and KPG3 animals, we failed to detect differences in overall tumor growth rates, ex vivo glycolysis, mouse survival, or tumor grade distribution (Figure 4\u2014figure supplement 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Seahorse measurements shown in Figure 4\u2014figure supplement 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "6dc32b0c-7164-4d9c-8261-ab7e34eebe60",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C52",
+      "claim": "No differences were detected in mouse survival between KP and KPG3 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing tumor development in KP and KPG3 animals, we failed to detect differences in overall tumor growth rates, ex vivo glycolysis, mouse survival, or tumor grade distribution (Figure 4\u2014figure supplement 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Kaplan-Meier survival analysis shown in Figure 4\u2014figure supplement 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "1870a0e0-8c3e-4800-b94f-a966cd44f158",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C53",
+      "claim": "No differences were detected in tumor grade distribution between KP and KPG3 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing tumor development in KP and KPG3 animals, we failed to detect differences in overall tumor growth rates, ex vivo glycolysis, mouse survival, or tumor grade distribution (Figure 4\u2014figure supplement 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor grading data shown in Figure 4\u2014figure supplement 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "17abfc6a-a508-40d7-bb74-95121844594d",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C54",
+      "claim": "Glut3 deletion alone does not affect tumors in a detectable manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this indicates that Glut3 deletion alone does not affect tumors in a detectable manner, we next wanted to evaluate its importance in a Glut1-deficient context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental results comparing KP and KPG3 tumors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "5df9647f-2b88-42dd-b66e-625c72bd0724",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C55",
+      "claim": "Combined deletion of Glut1 and Glut3 from tumor epithelial cells resulted in a decreased number of tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the two glucose transporters, Glut1 and Glut3, from the tumor epithelial cell compartment resulted in a decreased number of tumors (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor number counts shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "73ef1c41-d822-421e-b697-5d8e57e10cb8",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C56",
+      "claim": "Combined Glut1 and Glut3 deletion led to a significant reduction of tumor growth rates monitored by \u03bcCT scans.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, contrasting with our data obtained from each separately-targeted Gluts, combined Glut1 and Glut3 deletion led to a significant reduction of tumor growth rates monitored by \u03bcCT scans, to a reduced tumor size with an absence of big (>50 mg) lesions at sacrifice, to a decrease of high grade tumors, and to an extended mouse survival (Figure 4c\u2013g and Figure 4\u2014figure supplement 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by \u03bcCT tumor volume measurements shown in Figure 4c and Figure 4\u2014figure supplement 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "66d96de3-b4ff-48c8-bd9c-42fb9afa2f32",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C57",
+      "claim": "Combined Glut1 and Glut3 deletion led to a reduced tumor size with an absence of big (>50 mg) lesions at sacrifice.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, contrasting with our data obtained from each separately-targeted Gluts, combined Glut1 and Glut3 deletion led to a significant reduction of tumor growth rates monitored by \u03bcCT scans, to a reduced tumor size with an absence of big (>50 mg) lesions at sacrifice, to a decrease of high grade tumors, and to an extended mouse survival (Figure 4c\u2013g and Figure 4\u2014figure supplement 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor weight and area measurements shown in Figures 4d-e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "221ee82a-e890-4600-a20c-3298c45f4e01",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C58",
+      "claim": "Combined Glut1 and Glut3 deletion led to a decrease of high grade tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, contrasting with our data obtained from each separately-targeted Gluts, combined Glut1 and Glut3 deletion led to a significant reduction of tumor growth rates monitored by \u03bcCT scans, to a reduced tumor size with an absence of big (>50 mg) lesions at sacrifice, to a decrease of high grade tumors, and to an extended mouse survival (Figure 4c\u2013g and Figure 4\u2014figure supplement 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor grading data shown in Figure 4f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "2d862db5-9d42-4463-ade1-a09384a7bb76",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C59",
+      "claim": "Combined Glut1 and Glut3 deletion led to an extended mouse survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, contrasting with our data obtained from each separately-targeted Gluts, combined Glut1 and Glut3 deletion led to a significant reduction of tumor growth rates monitored by \u03bcCT scans, to a reduced tumor size with an absence of big (>50 mg) lesions at sacrifice, to a decrease of high grade tumors, and to an extended mouse survival (Figure 4c\u2013g and Figure 4\u2014figure supplement 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Kaplan-Meier survival analysis shown in Figure 4g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "cd88dc13-cbb4-4052-8098-e8145c27c0f6",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C60",
+      "claim": "The synergistic action of dual Glut1 and Glut3 deletion was demonstrated in vitro with four different human NSCLC cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "This synergistic action of the dual Glut1 and Glut3 deletion was also demonstrated in vitro with four different human NSCLC cell lines, on which the strongest reduction of tumor cell viability resulted from the combined knockdown of these glucose transporters (Figure 4\u2014figure supplement 3c\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell viability assays shown in Figure 4\u2014figure supplement 3c-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "9fd265b2-263e-4b21-b2f6-edd68d22d9b4",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C61",
+      "claim": "The strongest reduction of tumor cell viability resulted from the combined knockdown of Glut1 and Glut3 in human NSCLC cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "This synergistic action of the dual Glut1 and Glut3 deletion was also demonstrated in vitro with four different human NSCLC cell lines, on which the strongest reduction of tumor cell viability resulted from the combined knockdown of these glucose transporters (Figure 4\u2014figure supplement 3c\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell viability assays shown in Figure 4\u2014figure supplement 3c-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "a31ffe4a-5e8a-407a-b8d9-a20e3335ac44",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C62",
+      "claim": "Glut1 and Glut3 function as a coordinated glucose transport unit required to fuel the growth of LUAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data position Glut1 and Glut3 as a coordinated glucose transport unit required to fuel the growth of LUAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental results showing synergistic effects of dual Glut1 and Glut3 deletion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "77e62f7e-1f58-4f89-b6ec-ddfd30f0752a",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C63",
+      "claim": "Glut1-deficient KP tumors incorporated significantly less 18F-FDG than control lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum standardized uptake value (SUVmax) of each tumor revealed that Glut1-deficient KP tumors incorporated significantly less 18F-FDG than control lesions (Figure 4h\u2013i)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 18F-FDG-PET measurements shown in Figures 4h-i",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "7935550c-fb6f-4bda-b844-bfc1505ad9a5",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C64",
+      "claim": "Glut3-deficient and control KP tumors presented a similar 18F-FDG absorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Glut3-deficient and control KP tumors presented a similar 18F-FDG absorption (Figure 4h\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 18F-FDG-PET measurements shown in Figures 4h-i",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "50d5d92d-c8f6-4592-bef7-8a8f0126db3b",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C65",
+      "claim": "In absence of Glut3, lesions might incorporate 18F-FDG via Glut1 because Glut3 positive KP tumors mainly co-express Glut1 and Glut3.",
+      "claim_type": "EXPLICIT",
+      "source": "This result might be explained by the fact that Glut3 positive KP tumors mainly co-express Glut1 and Glut3 (see Figure 4\u2014figure supplement 1d). Thus, in absence of Glut3, lesions might certainly incorporate 18F-FDG via Glut1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Glut1 and Glut3 co-expression data and 18F-FDG-PET results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "241026b7-4edc-408b-a2b6-dc54441f520f",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C66",
+      "claim": "The 18F-FDG absorption of Glut1- and Glut3-deficient KP tumors was significantly reduced as compared to control KP lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The 18F-FDG absorption of Glut1- and Glut3-deficient KP tumors was significantly reduced as compared to control KP lesions (Figure 4h\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 18F-FDG-PET measurements shown in Figures 4h-i",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "c264ce89-bdb8-43d8-bfc3-4ebb942ef6a3",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C67",
+      "claim": "Most tumors analyzed had not yet gained Glut3 expression and become dependent on it, which agrees with an elevated Glut3 expression specifically in big lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Because glucose uptake was not significantly lower in KPG3 compared to KP tumors, and in KPG1G3 compared to KPG1 tumors, a possible explanation is that most tumors analyzed had not yet gained Glut3 expression and become dependent on it, which agrees with an elevated Glut3 expression specifically in big lesions (see Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from 18F-FDG-PET results and Glut3 expression data in small versus big lesions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "c0bba972-3c39-4c63-9116-70b2de82b6f6",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C68",
+      "claim": "The expression of no other glucose transporter was changed upon dual Glut1 and Glut3 deletion in KP tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to investigate if Glut1- and Glut3-deficient tumors might incorporate glucose via another glucose transporter, we performed a gene expression analysis of glucose transporter family members on KP and KPG1G3 lesions. This analysis showed that the expression of no other glucose transporter was changed upon dual Glut1 and Glut3 deletion in KP tumors (Figure 4\u2014figure supplement 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression analysis shown in Figure 4\u2014figure supplement 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "784f8b95-80bd-4844-8529-6a7d008de2db",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C69",
+      "claim": "Deleting Glut1 and Glut3 in KP tumors reduces glucose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data demonstrate that deleting Glut1 and Glut3 in KP tumors reduces glucose uptake, and that Glut1 highly contributes to glucose uptake in KP tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from 18F-FDG-PET measurements and NanoSIMS data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "e4f98cac-a616-4070-b563-31c40ee96612",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C70",
+      "claim": "Glut1 highly contributes to glucose uptake in KP tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data demonstrate that deleting Glut1 and Glut3 in KP tumors reduces glucose uptake, and that Glut1 highly contributes to glucose uptake in KP tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from 18F-FDG-PET measurements showing significant reduction in KPG1 tumors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "62f19b63-1b11-4450-b2fc-26d970d3a8df",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C71",
+      "claim": "At least a part of the remaining 18F-FDG-PET signal detected in KPG1G3 tumors might come from glucose uptake by the cells of the tumor immune microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results may also lead to the hypothesis that at least a part of the remaining 18F-FDG-PET signal detected in KPG1G3 tumors might come from glucose uptake by the cells of the tumor immune microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis based on remaining 18F-FDG signal in KPG1G3 tumors",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "6d2fca0e-d073-45df-b905-f89547b152ab",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C72",
+      "claim": "Pharmacological inhibition of Sglt2 showed its role in premalignant KP lung lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, pharmacological inhibition of a secondary active, Na+-dependent glucose transporter, Sglt2, showed its role in premalignant KP lung lesions (Scafoglio et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "0a44ee3f-5767-4d5a-b134-0a2727e9d103",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C73",
+      "claim": "A glycolytic switch was identified in advanced compared to early KP tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "while a glycolytic switch was identified in advanced compared to early tumors (Kerr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "6e500e17-7544-4e65-b88d-d58fea0867e1",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C74",
+      "claim": "Glucose utilization is important for LUAD development in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies, together with our gene targeting approaches, definitively demonstrate the importance of glucose utilization for LUAD development in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from current study results and cited previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "480ef076-da30-4955-8c58-a73ab5c34650",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C75",
+      "claim": "Glut1 deletion impairs LUSC development in the KL model.",
+      "claim_type": "EXPLICIT",
+      "source": "In the KL model, Glut1 deletion impairs LUSC development (Hsieh et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "97564504-910b-4e90-b8c3-0e330273ce39",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C76",
+      "claim": "Lkb1-deficient lung tumors lack detectable Glut3, precluding any compensation occurring through this transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "and we find that Lkb1-deficient lung tumors lack detectable Glut3, precluding any compensation occurring through this transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Glut3 expression data from KL and KLG1 tumors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "ce4e1699-f66b-42e0-84a9-feafe88db446",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C77",
+      "claim": "Trp53-deficient tumor cells depend on glucose uptake based on a redundant system, whereby the expression of either Glut1 or Glut3 is sufficient to sustain tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in pure LUAD our results indicate that Trp53-deficient tumor cells depend on glucose uptake based on a redundant system, whereby the expression of either Glut1 or Glut3 is sufficient to sustain tumor growth (Figure 4j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental results showing that only combined Glut1 and Glut3 deletion impairs tumor growth",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "f23b8c72-4260-40df-8a18-c78d8ccb2141",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C78",
+      "claim": "Dual Glut1 and Glut3 blockade will be necessary to achieve strong anti-tumor efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "For clinical perspectives, we anticipate that dual Glut1 and Glut3 blockade will be necessary to achieve strong anti-tumor efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on experimental results showing synergistic effects of dual deletion",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "e40a5c7d-c95b-4701-b804-1f4e4ba0e2a8",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C79",
+      "claim": "Glucose transporters are the first and rate-limiting step for cellular glucose utilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose transporters are the first and rate-limiting step for cellular glucose utilization, a process often exacerbated in tumor cells that enables their growth and proliferation (Ancey et al., 2018; Lunt and Vander Heiden, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "c7747817-d8f2-4489-a280-c213062824b6",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C80",
+      "claim": "Glucose utilization is a process often exacerbated in tumor cells that enables their growth and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose transporters are the first and rate-limiting step for cellular glucose utilization, a process often exacerbated in tumor cells that enables their growth and proliferation (Ancey et al., 2018; Lunt and Vander Heiden, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "6c689ef4-3612-4c51-a8d3-3db26674f5ed",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C81",
+      "claim": "Inhibiting glucose metabolism in lung tumors could become an efficient treatment strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Although inhibiting glucose metabolism in lung tumors could become an efficient treatment strategy (Hensley et al., 2016; Patra et al., 2013; Xie et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "c7765cec-49b1-490f-a21b-3ac277a9f1b5",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C82",
+      "claim": "It remains unclear whether and which glucose transporter(s) should be targeted because of their possible functional redundancy.",
+      "claim_type": "EXPLICIT",
+      "source": "whether and which glucose transporter(s) should be targeted remains unclear because of their possible functional redundancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about glucose transporter redundancy",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "9cbaf823-bbe5-4b5f-a10a-6d6687b1e755",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C83",
+      "claim": "In solid cancers, tumor cell growth can be fueled by nutrients other than glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in solid cancers, tumor cell growth can be fueled by nutrients other than glucose, or by using transporter-independent metabolic processes including autophagy and macropinocytosis (Commisso et al., 2013; Karsli-Uzunbas et al., 2014; Romero et al., 2017; Son et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "4a1ef11d-3bb1-4db9-8fb0-ccb91d4ceee7",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C84",
+      "claim": "Tumor cell growth can be fueled by transporter-independent metabolic processes including autophagy and macropinocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in solid cancers, tumor cell growth can be fueled by nutrients other than glucose, or by using transporter-independent metabolic processes including autophagy and macropinocytosis (Commisso et al., 2013; Karsli-Uzunbas et al., 2014; Romero et al., 2017; Son et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "8c10145b-5939-4276-9a2a-d340520f1fda",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C85",
+      "claim": "Lamellar body-like organelles in tumor cells are the primary site of glucose-derived biomass accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "By glucose tracing and ultrastructural analyses, we identified the presence of lamellar body-like organelles in tumor cells, which are the primary site of glucose-derived biomass accumulation, occurring partly in a Glut1-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NanoSIMS and electron microscopy data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "0fdad506-e647-4ae8-929d-b60c4602e44a",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C86",
+      "claim": "Glucose-derived biomass accumulation in lamellar body-like organelles occurs partly in a Glut1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "By glucose tracing and ultrastructural analyses, we identified the presence of lamellar body-like organelles in tumor cells, which are the primary site of glucose-derived biomass accumulation, occurring partly in a Glut1-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NanoSIMS data showing reduced 13C-enrichment in KPG1 tumors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "a3fabe8e-9bca-43c4-8bf9-ceea895608af",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C87",
+      "claim": "The deletion of Glut1 or Glut3 alone in cancer cells does not impair tumor growth in the KP model.",
+      "claim_type": "EXPLICIT",
+      "source": "In a genetically-engineered mouse model of lung adenocarcinoma, we show that the deletion of only one highly expressed glucose transporter, Glut1 or Glut3, in cancer cells does not impair tumor growth, whereas their combined loss diminishes tumor development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by tumor growth, survival, and grading data from KPG1 and KPG3 mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "2f87db35-5248-4e00-84c5-d448ba0eccc7",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C88",
+      "claim": "Combined loss of Glut1 and Glut3 diminishes tumor development in the KP model.",
+      "claim_type": "EXPLICIT",
+      "source": "In a genetically-engineered mouse model of lung adenocarcinoma, we show that the deletion of only one highly expressed glucose transporter, Glut1 or Glut3, in cancer cells does not impair tumor growth, whereas their combined loss diminishes tumor development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by tumor growth, survival, and grading data from KPG1G3 mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "8f74bdfb-0332-4185-b28e-edbe4e2b4e08",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C89",
+      "claim": "18F-FDG-PET analyses demonstrate that Glut1 and Glut3 loss decreases glucose uptake in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "18F-FDG-PET analyses of tumors demonstrate that Glut1 and Glut3 loss decreases glucose uptake, which is mainly dependent on Glut1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 18F-FDG-PET measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "c4d0d68a-f441-4c02-a21d-74580dff669a",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C90",
+      "claim": "Glucose uptake in KP tumors is mainly dependent on Glut1.",
+      "claim_type": "EXPLICIT",
+      "source": "18F-FDG-PET analyses of tumors demonstrate that Glut1 and Glut3 loss decreases glucose uptake, which is mainly dependent on Glut1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 18F-FDG-PET measurements showing significant reduction in KPG1 tumors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "8614e5af-f309-4891-a43f-1df3ac4e631b",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C91",
+      "claim": "Glucose utilization increases in tumors, a metabolic process that is observed clinically by 18F-FDG-PET.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose utilization increases in tumors, a metabolic process that is observed clinically by 18F-fluorodeoxyglucose positron emission tomography (18F-FDG-PET).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established clinical knowledge about 18F-FDG-PET imaging",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "b68e1128-d35f-4ef6-988b-33b4c48f9ea2",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "claim_id": "C92",
+      "claim": "Dual blockade of Glut1 and Glut3 could reach therapeutic responses not achieved by individual targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate the requirement for two glucose transporters in lung adenocarcinoma, the dual blockade of which could reach therapeutic responses not achieved by individual targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results showing synergistic effects of dual deletion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "554a3bf1-df56-4eed-82c2-ecd095fe33ce",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GLUT1 (SLC2A1) and GLUT3 (SLC2A3) are highly expressed in human LUAD and correlate with poor prognosis. In the KP mouse model, which predominantly resembles the NMF4 LUAD subtype with high TP53 mutation frequency, Glut1 expression increases with tumor progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide converging evidence from human TCGA data, tissue microarrays, and mouse models demonstrating high GLUT1/GLUT3 expression in LUAD. The data are internally consistent across multiple platforms (gene expression, IHC, survival analysis) and appropriately link human and mouse models through NMF subtype analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "343dac03-0f25-444a-8e86-4515ec297377",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single deletion of Glut1 in the KP mouse model does not significantly impair overall tumor growth, tumor number, or mouse survival, though it reduces the proportion of high-grade tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 consistently show minimal effects of Glut1 deletion alone across multiple metrics (\u03bcCT growth rates, tumor weight, tumor number, survival). The only significant effect is on tumor grading (C16), which is appropriately measured and statistically supported. The conclusion (C18) appropriately reflects the mixed results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Glucose-derived biomass accumulates in lamellar body-like organelles within KP tumor cells, and this accumulation is partially dependent on Glut1 as demonstrated by reduced 13C-enrichment in KPG1 tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27, C85-C86 describe a novel finding using sophisticated NanoSIMS and electron microscopy techniques. The organelle identification is based on multiple morphological criteria (size, shape, lamellae), and the Glut1-dependence is demonstrated by quantitative comparison between KP and KPG1 tumors with appropriate statistical analysis (C26, p<0.0001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "51065ef5-42dc-42dc-943e-04490528a1fa",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KPG1 tumors show impaired glycolysis ex vivo, except for one outlier with elevated Glut3 expression. Gene expression analysis reveals upregulation of PPAR\u03b1-dependent metabolic pathways in KPG1 tumors, suggesting two potential compensatory mechanisms: Glut3 upregulation or PPAR\u03b1-mediated metabolic shift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C35 provide mechanistic insight into Glut1-deficient tumor adaptation. The Seahorse data (C28-C29) identify both the general phenotype and an important exception. The RNA-seq analysis (C30-C34) is rigorous, using three independent cohorts and GSEA, though the conclusion (C35) is appropriately framed as hypothesis-generating rather than definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "4aab8dad-a3ff-420d-a632-4dcaaf7883e3",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Inducible expression of dominant-negative PPAR\u03b1\u039413 successfully downregulates PPAR\u03b1-related pathways but fails to reduce tumor growth in either KP or KPG1 mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 test the PPAR\u03b1 hypothesis directly through genetic manipulation. The construct functionality is validated by gene expression analysis (C38), but the lack of phenotypic effect (C36-C37, C39) appropriately refutes PPAR\u03b1 as a major compensatory mechanism. This negative result is important and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "9ac06e26-022f-40c8-93bf-fe11795f3de1",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Glut3 expression patterns differ between KP and KL tumor models. In KP tumors, Glut3 is expressed heterogeneously, more frequently in larger lesions, and often co-localizes with Glut1. In contrast, Lkb1-deficient KL tumors lack detectable Glut3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C49, C76 characterize Glut3 expression across different tumor models using multiple techniques (RT-PCR, IHC). The data reveal important context-dependent differences: KP tumors show heterogeneous Glut3 expression that increases with tumor size (C46), while KL tumors lack Glut3 (C40, C44). This establishes the biological rationale for testing Glut3 deletion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "23744937-596e-493b-88da-49fc18ec5638",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Single deletion of Glut3 in the KP mouse model does not affect tumor growth rates, ex vivo glycolysis, mouse survival, or tumor grade distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 demonstrate that Glut3 deletion alone has no detectable phenotype across comprehensive metrics. The data are consistent across multiple assays (\u03bcCT, Seahorse, survival, grading), and the conclusion (C54) appropriately summarizes the null findings. This establishes the need for dual deletion experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "97f41389-5186-465c-be84-957e0371c357",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Combined deletion of Glut1 and Glut3 significantly impairs tumor development in the KP model, reducing tumor number, growth rate, size, grade, and extending mouse survival. This synergistic effect is also observed in vitro across multiple human NSCLC cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C62, C87-C88 represent the central finding of the manuscript. The dual deletion phenotype is robust and consistent across multiple independent metrics in vivo (tumor number, growth rate, size, grade, survival) with appropriate statistical significance. The in vitro validation (C60-C61) in four human cell lines strengthens translational relevance. The synergy is clearly demonstrated by comparing single versus dual deletions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "4b3554bc-ae29-4fb0-805b-c5312887511b",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "18F-FDG-PET imaging demonstrates that Glut1 is the major contributor to glucose uptake in KP tumors. Glut1 deletion significantly reduces FDG uptake, while Glut3 deletion alone does not. Combined Glut1/Glut3 deletion further reduces uptake, and no compensatory upregulation of other glucose transporters occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C70, C89-C90 provide functional validation of glucose transporter roles using clinically relevant PET imaging. The data clearly establish Glut1 as the dominant transporter (C63, C70, C90) and show additive effects of dual deletion (C66). The gene expression analysis (C68) rules out compensation by other family members. The interpretation regarding tumor size and Glut3 dependence (C67) is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "3190c53a-f91c-460f-b201-de15f59cd485",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Residual 18F-FDG-PET signal in KPG1G3 tumors may derive from glucose uptake by tumor immune microenvironment cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is explicitly framed as a hypothesis ('might come from') without direct experimental evidence. While plausible given that immune cells can take up FDG and the genetic deletions are tumor-specific, this remains speculative. Testing would require immune cell-specific imaging or depletion experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "6f337a75-57b5-4095-9cc3-fa1745bb27a1",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In Trp53-deficient LUAD, tumor cells depend on a redundant glucose uptake system where either Glut1 or Glut3 is sufficient for tumor growth, and dual blockade is necessary for therapeutic efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77 and C92 synthesize the major findings into a mechanistic model. The redundancy conclusion (C77) is well-supported by the differential effects of single versus dual deletions across all phenotypic measures. The therapeutic implication (C92) logically follows from the data, though appropriately framed as potential ('could reach') rather than proven efficacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "3ea5dc43-0da9-46e1-a460-6cd01402d66a",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior studies have demonstrated the importance of glucose metabolism in lung cancer through Sglt2 inhibition and identification of a glycolytic switch, and Glut1 deletion impairs LUSC development in the KL model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 appropriately contextualize the current work within prior literature. The citations are relevant and accurately represented. These claims establish the scientific foundation and distinguish the current findings (LUAD with Trp53 deficiency) from prior work (LUSC with Lkb1 deficiency).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "d1ad7487-a31c-4772-827c-5ac0bb9fc703",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Dual Glut1 and Glut3 blockade will be necessary to achieve strong anti-tumor efficacy in clinical applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 is a forward-looking clinical prediction ('we anticipate') based on the mouse and in vitro data. While the preclinical evidence is strong, translation to human therapy faces uncertainties including: (1) potential toxicity of dual blockade, (2) differences between genetic deletion and pharmacological inhibition, (3) tumor heterogeneity in human patients, and (4) lack of actual therapeutic studies. The claim is appropriately framed as anticipatory rather than definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "c58a8a1b-f595-41f9-9706-a9814b852e0f",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In normal mouse lung, Glut1 expression is weak in the alveolar compartment (containing AT2 cells, the principal cell-of-origin) but strong in bronchiolar epithelium (containing Club cells, another permissive cell type for tumor initiation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 characterize baseline Glut1 expression in normal tissue and identify cells of origin. The IHC data (C9, C11) are clear, and the cell-of-origin claims (C10, C12) are appropriately supported by citations to prior studies. This provides important context for interpreting tumor-specific effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    },
+    {
+      "id": "479bfd99-02f5-481e-9488-90fed4db9f40",
+      "content_id": "6743266c-2860-49f0-ae53-1fab2dddcb41",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Glucose transporters are rate-limiting for glucose utilization in tumors, which is clinically observed by 18F-FDG-PET. However, targeting glucose transporters is complicated by potential functional redundancy and alternative nutrient sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84, C91 establish the scientific rationale and clinical context for the study. These are well-established concepts appropriately supported by citations. They frame the key question addressed by the manuscript: which glucose transporters should be targeted given potential redundancy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:00:43.102165Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "157c8908-bcdf-4892-b88b-0b36bbeca218",
+      "result_id": "554a3bf1-df56-4eed-82c2-ecd095fe33ce"
+    },
+    {
+      "claim_id": "f1e946b9-67ff-4c4e-8df4-efa7894e3f29",
+      "result_id": "554a3bf1-df56-4eed-82c2-ecd095fe33ce"
+    },
+    {
+      "claim_id": "f78b910d-b305-4565-8209-08f7866b4b0e",
+      "result_id": "554a3bf1-df56-4eed-82c2-ecd095fe33ce"
+    },
+    {
+      "claim_id": "6b25e41f-3126-4891-99bb-dfa571b0b75d",
+      "result_id": "554a3bf1-df56-4eed-82c2-ecd095fe33ce"
+    },
+    {
+      "claim_id": "d5467539-0e39-478f-9784-3b43641672df",
+      "result_id": "554a3bf1-df56-4eed-82c2-ecd095fe33ce"
+    },
+    {
+      "claim_id": "2d01037b-4ac8-4cdc-b2de-3483d9ec6608",
+      "result_id": "554a3bf1-df56-4eed-82c2-ecd095fe33ce"
+    },
+    {
+      "claim_id": "20945763-bea5-4e16-b416-b7fc89c28c89",
+      "result_id": "554a3bf1-df56-4eed-82c2-ecd095fe33ce"
+    },
+    {
+      "claim_id": "f8b11526-7bb7-4adb-a483-2d1085871378",
+      "result_id": "554a3bf1-df56-4eed-82c2-ecd095fe33ce"
+    },
+    {
+      "claim_id": "cb1c725e-6813-4d14-8a33-f29c53c322f8",
+      "result_id": "343dac03-0f25-444a-8e86-4515ec297377"
+    },
+    {
+      "claim_id": "ecf4be24-769d-4cb0-afd3-32b9c8c0aef3",
+      "result_id": "343dac03-0f25-444a-8e86-4515ec297377"
+    },
+    {
+      "claim_id": "61314495-a333-45f6-a75f-adbeb41f045f",
+      "result_id": "343dac03-0f25-444a-8e86-4515ec297377"
+    },
+    {
+      "claim_id": "925890ba-0451-46fc-85b7-72a047248478",
+      "result_id": "343dac03-0f25-444a-8e86-4515ec297377"
+    },
+    {
+      "claim_id": "3bbe94d5-980e-4907-a5df-e4d81efc3f04",
+      "result_id": "343dac03-0f25-444a-8e86-4515ec297377"
+    },
+    {
+      "claim_id": "aef4cb2e-3d8f-4c77-8d1f-4e7cb074bdd5",
+      "result_id": "343dac03-0f25-444a-8e86-4515ec297377"
+    },
+    {
+      "claim_id": "e1f2e2f2-4bb3-42fb-9a17-76a4846aacdb",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "964a0536-4b3c-453d-84a2-216772351395",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "de446739-cb1d-4134-b501-6f699a7aaa52",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "0aa09ad6-dd3e-4180-8786-4db23051bbb9",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "ceb7c3fa-81a0-451f-bd59-ac720afb8b64",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "e7591d62-a05f-4d2e-9787-14331d985006",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "ea2d1f1a-06f9-4418-b370-2e0560cf037c",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "924ba531-3ef9-43c0-974d-6856215d3e12",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "b0918cb4-9e70-489c-91f1-0cf005ced9bb",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "8c10145b-5939-4276-9a2a-d340520f1fda",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "0fdad506-e647-4ae8-929d-b60c4602e44a",
+      "result_id": "31b84d3e-5df2-49db-b673-1a5d2aa8f0e4"
+    },
+    {
+      "claim_id": "86668531-a70d-42a5-b098-f2b1425d5e32",
+      "result_id": "51065ef5-42dc-42dc-943e-04490528a1fa"
+    },
+    {
+      "claim_id": "8abcc937-88ab-46bb-b608-78562b247684",
+      "result_id": "51065ef5-42dc-42dc-943e-04490528a1fa"
+    },
+    {
+      "claim_id": "b8bffcdf-cd00-4b79-ac85-4eafc167090a",
+      "result_id": "51065ef5-42dc-42dc-943e-04490528a1fa"
+    },
+    {
+      "claim_id": "bc875d1f-5d4f-4955-9dc0-db1c7c1794a8",
+      "result_id": "51065ef5-42dc-42dc-943e-04490528a1fa"
+    },
+    {
+      "claim_id": "f74ed6ee-eab7-459a-93b9-292ec36601c3",
+      "result_id": "51065ef5-42dc-42dc-943e-04490528a1fa"
+    },
+    {
+      "claim_id": "9d6edad9-33ff-47f0-8f05-1e4871b03e9b",
+      "result_id": "51065ef5-42dc-42dc-943e-04490528a1fa"
+    },
+    {
+      "claim_id": "c159fede-6b45-4404-87bb-74c043f8793a",
+      "result_id": "51065ef5-42dc-42dc-943e-04490528a1fa"
+    },
+    {
+      "claim_id": "cb7cb091-b7c8-4067-9792-c77fc861884c",
+      "result_id": "51065ef5-42dc-42dc-943e-04490528a1fa"
+    },
+    {
+      "claim_id": "6c0d1eaa-ed08-43e6-bcc4-12957dd56781",
+      "result_id": "4aab8dad-a3ff-420d-a632-4dcaaf7883e3"
+    },
+    {
+      "claim_id": "67e5c013-ff57-4f6e-926d-16143253607a",
+      "result_id": "4aab8dad-a3ff-420d-a632-4dcaaf7883e3"
+    },
+    {
+      "claim_id": "8f4c9818-0461-4d4c-974d-13866325d455",
+      "result_id": "4aab8dad-a3ff-420d-a632-4dcaaf7883e3"
+    },
+    {
+      "claim_id": "2931bf77-71af-454b-a6a9-f5feface03d3",
+      "result_id": "4aab8dad-a3ff-420d-a632-4dcaaf7883e3"
+    },
+    {
+      "claim_id": "b10cce33-8dce-43ba-90c9-c598bcab1d5a",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "20257791-7548-47f4-ad22-99ac191573c2",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "1c8e835b-c753-45c9-93e6-b4a433b0a588",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "3a13a353-0896-4d27-a9af-723fc49ce4fd",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "f37ffafd-5c0b-41d9-94e5-a6bbcdc68015",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "acc51b50-a2a7-4e66-aadb-f37796080982",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "b5cabe3a-7af0-459c-8304-57b4308ec339",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "0c705c52-72b4-4926-9268-df39fd60eb78",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "c060f389-5c95-45c4-99f6-155c6233d43a",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "f826772a-5b53-4417-995c-7cdf7c5a20b1",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "97564504-910b-4e90-b8c3-0e330273ce39",
+      "result_id": "9ac06e26-022f-40c8-93bf-fe11795f3de1"
+    },
+    {
+      "claim_id": "b9e81fc8-3d57-45b9-86ec-9b7e7b7cb55e",
+      "result_id": "23744937-596e-493b-88da-49fc18ec5638"
+    },
+    {
+      "claim_id": "08e926db-19b8-4081-bb34-d1e323d1afea",
+      "result_id": "23744937-596e-493b-88da-49fc18ec5638"
+    },
+    {
+      "claim_id": "6dc32b0c-7164-4d9c-8261-ab7e34eebe60",
+      "result_id": "23744937-596e-493b-88da-49fc18ec5638"
+    },
+    {
+      "claim_id": "1870a0e0-8c3e-4800-b94f-a966cd44f158",
+      "result_id": "23744937-596e-493b-88da-49fc18ec5638"
+    },
+    {
+      "claim_id": "17abfc6a-a508-40d7-bb74-95121844594d",
+      "result_id": "23744937-596e-493b-88da-49fc18ec5638"
+    },
+    {
+      "claim_id": "5df9647f-2b88-42dd-b66e-625c72bd0724",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "73ef1c41-d822-421e-b697-5d8e57e10cb8",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "66d96de3-b4ff-48c8-bd9c-42fb9afa2f32",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "221ee82a-e890-4600-a20c-3298c45f4e01",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "2d862db5-9d42-4463-ade1-a09384a7bb76",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "cd88dc13-cbb4-4052-8098-e8145c27c0f6",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "9fd265b2-263e-4b21-b2f6-edd68d22d9b4",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "a31ffe4a-5e8a-407a-b8d9-a20e3335ac44",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "a3fabe8e-9bca-43c4-8bf9-ceea895608af",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "2f87db35-5248-4e00-84c5-d448ba0eccc7",
+      "result_id": "97f41389-5186-465c-be84-957e0371c357"
+    },
+    {
+      "claim_id": "77e62f7e-1f58-4f89-b6ec-ddfd30f0752a",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "7935550c-fb6f-4bda-b844-bfc1505ad9a5",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "50d5d92d-c8f6-4592-bef7-8a8f0126db3b",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "241026b7-4edc-408b-a2b6-dc54441f520f",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "c264ce89-bdb8-43d8-bfc3-4ebb942ef6a3",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "c0bba972-3c39-4c63-9116-70b2de82b6f6",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "784f8b95-80bd-4844-8529-6a7d008de2db",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "e4f98cac-a616-4070-b563-31c40ee96612",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "8f74bdfb-0332-4185-b28e-edbe4e2b4e08",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "c4d0d68a-f441-4c02-a21d-74580dff669a",
+      "result_id": "4b3554bc-ae29-4fb0-805b-c5312887511b"
+    },
+    {
+      "claim_id": "62f19b63-1b11-4450-b2fc-26d970d3a8df",
+      "result_id": "3190c53a-f91c-460f-b201-de15f59cd485"
+    },
+    {
+      "claim_id": "ce4e1699-f66b-42e0-84a9-feafe88db446",
+      "result_id": "6f337a75-57b5-4095-9cc3-fa1745bb27a1"
+    },
+    {
+      "claim_id": "b68e1128-d35f-4ef6-988b-33b4c48f9ea2",
+      "result_id": "6f337a75-57b5-4095-9cc3-fa1745bb27a1"
+    },
+    {
+      "claim_id": "6d2fca0e-d073-45df-b905-f89547b152ab",
+      "result_id": "3ea5dc43-0da9-46e1-a460-6cd01402d66a"
+    },
+    {
+      "claim_id": "0a44ee3f-5767-4d5a-b134-0a2727e9d103",
+      "result_id": "3ea5dc43-0da9-46e1-a460-6cd01402d66a"
+    },
+    {
+      "claim_id": "6e500e17-7544-4e65-b88d-d58fea0867e1",
+      "result_id": "3ea5dc43-0da9-46e1-a460-6cd01402d66a"
+    },
+    {
+      "claim_id": "480ef076-da30-4955-8c58-a73ab5c34650",
+      "result_id": "3ea5dc43-0da9-46e1-a460-6cd01402d66a"
+    },
+    {
+      "claim_id": "f23b8c72-4260-40df-8a18-c78d8ccb2141",
+      "result_id": "d1ad7487-a31c-4772-827c-5ac0bb9fc703"
+    },
+    {
+      "claim_id": "67d40750-ada4-46fd-8361-050799d11407",
+      "result_id": "c58a8a1b-f595-41f9-9706-a9814b852e0f"
+    },
+    {
+      "claim_id": "3815baf8-81d4-4221-9ed2-59107b16ce9e",
+      "result_id": "c58a8a1b-f595-41f9-9706-a9814b852e0f"
+    },
+    {
+      "claim_id": "26f00504-7a2c-4fc1-b347-3e5c3cd4009b",
+      "result_id": "c58a8a1b-f595-41f9-9706-a9814b852e0f"
+    },
+    {
+      "claim_id": "fd4e2733-baf8-49e4-a767-fefae7880d0c",
+      "result_id": "c58a8a1b-f595-41f9-9706-a9814b852e0f"
+    },
+    {
+      "claim_id": "e40a5c7d-c95b-4701-b804-1f4e4ba0e2a8",
+      "result_id": "479bfd99-02f5-481e-9488-90fed4db9f40"
+    },
+    {
+      "claim_id": "c7747817-d8f2-4489-a280-c213062824b6",
+      "result_id": "479bfd99-02f5-481e-9488-90fed4db9f40"
+    },
+    {
+      "claim_id": "6c689ef4-3612-4c51-a8d3-3db26674f5ed",
+      "result_id": "479bfd99-02f5-481e-9488-90fed4db9f40"
+    },
+    {
+      "claim_id": "c7765cec-49b1-490f-a21b-3ac277a9f1b5",
+      "result_id": "479bfd99-02f5-481e-9488-90fed4db9f40"
+    },
+    {
+      "claim_id": "9cbaf823-bbe5-4b5f-a10a-6d6687b1e755",
+      "result_id": "479bfd99-02f5-481e-9488-90fed4db9f40"
+    },
+    {
+      "claim_id": "4a1ef11d-3bb1-4db9-8fb0-ccb91d4ceee7",
+      "result_id": "479bfd99-02f5-481e-9488-90fed4db9f40"
+    },
+    {
+      "claim_id": "8614e5af-f309-4891-a43f-1df3ac4e631b",
+      "result_id": "479bfd99-02f5-481e-9488-90fed4db9f40"
+    }
+  ],
+  "comparisons": []
+}

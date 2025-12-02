@@ -1,0 +1,2252 @@
+{
+  "submission": {
+    "id": "231ca7f3-6ef1-4af7-8c4e-3c5744273f09",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:04:27.341801Z",
+    "updated_at": "2025-12-02T12:04:27.341801Z"
+  },
+  "content": [
+    {
+      "id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "submission_id": "231ca7f3-6ef1-4af7-8c4e-3c5744273f09",
+      "content_type": "manuscript",
+      "content_text": "# Regulation of Eag1 gating by its intracellular domains\n\n## Authors\n\n- Jonathan R Whicher<sup>1</sup> ([ORCID: 0000-0002-3427-2501](https://orcid.org/0000-0002-3427-2501))\n- Roderick MacKinnon<sup>1</sup> ([ORCID: 0000-0001-7605-4679](https://orcid.org/0000-0001-7605-4679)) \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Neurobiology and Biophysics The Rockefeller University, Howard Hughes Medical Institute New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nVoltage-gated potassium channels (Kvs) are gated by transmembrane voltage sensors (VS) that move in response to changes in membrane voltage. Kv10.1 or Eag1 also has three intracellular domains: PAS, C-linker, and CNBHD. We demonstrate that the Eag1 intracellular domains are not required for voltage-dependent gating but likely interact with the VS to modulate gating. We identified specific interactions between the PAS, CNBHD, and VS that modulate voltage-dependent gating and provide evidence that VS movement destabilizes these interactions to promote channel opening. Additionally, mutation of these interactions renders Eag1 insensitive to calmodulin inhibition. The structure of the calmodulin insensitive mutant in a pre-open conformation suggests that channel opening may occur through a rotation of the intracellular domains and calmodulin may prevent this rotation by stabilizing interactions between the VS and intracellular domains. Intracellular domains likely play a similar modulatory role in voltage-dependent gating of the related Kv11-12 channels.\n\n## Introduction\n\nVoltage-gated potassium channels (Kvs) conduct potassium ions in response to changes in membrane voltage. All Kvs are tetramers and consist of 6 transmembrane segments (S1-S6) (Jiang et al., 2003; Long et al., 2005a; Long et al., 2007; Sun and MacKinnon, 2017; Wang and MacKinnon, 2017; Whicher and MacKinnon, 2016). S1-S4 form the voltage sensor (VS) and S5-S6 form the potassium pore. The S4 helix of the VS is positively charged and was proposed to move within the membrane in response to changes in membrane voltage (Aggarwal and MacKinnon, 1996; Seoh et al., 1996). Upon membrane hyperpolarization the S4 was predicted to move \u2018down\u2019 towards in the intracellular side of the membrane to close the potassium pore and upon membrane depolarization the S4 was predicted to move \u2018up\u2019 to the extracellular side of the membrane to open the potassium pore. In Kvs 1\u20139 movement of S4 is coupled to the potassium pore by a\u00a0~\u00a015 residue, helical S4-S5 linker, which forms a domain-swapped linkage between S4 and S5 that positions it directly above the pore lining S6 helix (Long et al., 2005a; Long et al., 2007; Sun and MacKinnon, 2017). In this position, the S4-S5 linker was proposed to function as a mechanical lever to couple movement of the S4 to the S6 helices to open and close the pore (Long et al., 2005b). However, in Kvs 10\u201312 the S4-S5 linker is only six residues, which is not long enough to form the domain-swapped linkage observed in Kvs 1\u20139. Indeed, recent structures of Eag1 (Kv10.1) and hErg (Kv11.1) revealed that the S4-S5 linker forms a non-domain swapped linkage between S4 and S5 and is unlikely to be domain swapped in any conformation (Figure 1a,b,c) (Wang and MacKinnon, 2017; Whicher and MacKinnon, 2016). Due to the non-domain swapped transmembrane architecture, the S4-S5 linker is not in the same position and does not appear to form a similar mechanical lever, suggesting an alternative mechanism of voltage-dependent gating in Kvs 10\u201312 (L\u00f6rinczi et al., 2015; Tomczak et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig1-v1.jpg)\n\n**Figure 1.:** (A) Structure of Eag1 (PDB: 5K7L) in the closed conformation (PAS is orange, VS is yellow, S4-S5 linker is blue, pore is green, C-linker is red, CNBHD is cyan, CaM is purple, and membrane is indicated by gray bars) with a black box indicating the view for panel (B). (B) View of interaction between PAS loop, VS and CNBHD in the closed conformation of Eag1 with the same coloring as in (A). The N-terminus of the protein is shown as a sphere. The PAS loop N-terminus is not observed in this structure. (C) View of the interaction between PAS loop, VS and CNBHD in the open conformation of hErg (PDB: 5VA2) with the same coloring and orientation as in (B). The N-terminus is shown as a sphere and the PAS loop N-terminus is shown in gray.\n\nKvs 10\u201312 have three intracellular domains: an N-terminal Per-ARNT-Sim domain (PAS), a C-terminal C-linker domain, and a C-terminal cyclic nucleotide binding homology domain (CNBHD). Interactions between the VS and intracellular domain observed in the structure of Eag1 suggests that the intracellular domains may function in voltage-dependent gating (Whicher and MacKinnon, 2016) (Figure 1a). For example, the PAS domain, which is positioned directly below the VS, has a 15-residue N-terminal loop (PAS loop) that is directed, through interactions with the VS and CNBHD, towards the S4-S5 linker (Figure 1b). The PAS loop has been implicated in voltage-dependent gating and the large Cole-Moore effect observed in Eag1, in which more hyperpolarized (negative) resting membrane potentials result in slower rates of activation (Cole and Moore, 1960; Ju and Wray, 2006; Ludwig et al., 1994; Terlau et al., 1997). In addition, the C-linker forms an intracellular ring directly below the S6 helices, which are positioned to couple movements of the intracellular domains to the pore (Figure 1a). The C-linker ring is near the S4-S5 linker and the S4, which adopts a depolarized or up conformation in the Eag1 structure (Whicher and MacKinnon, 2016). Since the S4-S5 linker of Eag1 appeared unlikely to function as a mechanical lever, we proposed a voltage-dependent gating mechanism in which the S4 helix moves towards the intracellular side of the membrane during hyperpolarization to interact with and rotate the C-linker and S6 helices to close the potassium pore (Whicher and MacKinnon, 2016). This proposal was based on structural data alone and awaits further examination by functional analysis.\n\nIn addition to voltage-dependent gating, Eag1 is also gated by the calcium sensor calmodulin (CaM) (Sch\u00f6nherr et al., 2000; Ziechner et al., 2006). CaM binds to Eag1 only in the presence of calcium and holds the pore closed even during membrane depolarization. Each PAS and CNBHD domain has a CaM binding site and thus there are eight binding sites per tetramer. In the Eag1 structure, each CaM molecule occupies two binding sites, one on the PAS and one on the CNBHD, clamping the two domains together (Figure 1a) (Whicher and MacKinnon, 2016). This binding orientation was shown to be essential for channel inhibition but it is unclear how CaM binding prevents opening of the pore. Here we investigate the role of the intracellular domains in voltage-dependent gating and CaM inhibition. We identify interactions between the VS, PAS loop, and CNBHD that modulate voltage-dependent gating and are essential for CaM inhibition. We provide evidence that VS movement during depolarization may destabilize this interface between the PAS loop and the CNBHD to promote channel opening and find that CaM seems to function by stabilizing this interface to inhibit the channel. Finally, we determine a new structure of an Eag1 channel mutant that is insensitive to CaM inhibition. The structure revealed a pre-open conformation of Eag1 (i.e. a conformation that plausibly lies on the conformational pathway leading to opening) and suggests that channel opening may occur through a rotation of the intracellular domains.\n\n## Results\n\n### Role of the Eag1 intracellular domains in voltage-dependent gating\n\nBased on the previous structure of Eag1, we proposed that membrane hyperpolarization causes S4 to interact with and rotate the C-linker to close the pore. To test this hypothesis, we characterized an Eag1 channel in which the PAS, C-linker, and CNBHD were deleted (Eag1TM). The C-terminal assembly domain (887-962) was included in Eag1TM as this domain is needed for tetramer assembly (Ludwig et al., 1997). Eag1TM forms functional channels that are voltage dependent (Figure 2a,b), indicating that the intracellular domains are not essential for voltage-dependent gating and that an interaction between the S4 and C-linker is not required to close the potassium pore. However, the intracellular domains do modify the gating kinetics, which was demonstrated by both the Eag1TM construct and the Eag1/hErg chimera where the PAS, C-linker and CNBHD from hErg were inserted onto Eag1TM (Figure 2a,b). Eag1TM had a right shifted V0.5 of 46 mV (zero-slope on the activation curve was not reached up to 100 mV and therefore an accurate value for V0.5 could not be measured) compared to the WT Eag1 (19 mV). In addition, the Eag1/hErg chimera has a V0.5 (2.5 mV) that is in between that of WT Eag1 and hErg (\u221222 mV) and exhibits slow rates of channel closure (deactivation), a characteristic of hErg channels. We also recorded the Cole-Moore effect for each construct by holding the cell at increasing holding potentials, from \u2212190 mV to the voltage of channel activation, and stepping to the same depolarized voltage (Figure 2c). To compare the Cole-Moore effect from different mutants we plotted holding potential as a function of current at 10 ms following the depolarization step. Then we fit the plot with a Boltzmann function (defined in the Materials\u00a0and\u00a0methods) to estimate the holding potential that produces half maximal rates of activation (V0.5CM) (Figure 2d). Neither mutant channel exhibits a Cole-Moore effect (Figure 2c), which, along with the slow deactivation of the Eag1/hErg chimera and the shifted V0.5 of both channels, demonstrates that the intracellular domains influence voltage-dependent gating kinetics. In addition, this result suggests that the Cole-Moore effect may arise from an interaction between the transmembrane and intracellular domains.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig2-v1.jpg)\n\n**Figure 2.:** (A) Voltage family current trace of WT Eag1, Eag1TM, and the Eag1/hErg chimera with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot for WT Eag1 (black\u00a0square, n\u00a0=\u00a06), Eag1TM (green\u00a0circle, n\u00a0=\u00a04), and the Eag1/hErg chimera (red\u00a0triangle, n\u00a0=\u00a04) with V0.5 values (mean\u00a0\u00b1\u00a0sd). Eag1TM did not reach saturation up to 100 mV. (C) Cole-Moore effect of WT Eag1, Eag1TM, and the Eag1/hErg chimera with the voltage-pulse protocol shown above. (D) Plot of normalized current at 10 ms following the depolarization step vs holding potential for WT Eag1 (Cole-Moore I-V plot). The Cole-Moore I-V plot was fit with a Boltzmann function to estimate the holding potential that produces half maximal rates of activation (V0.5CM\ufeff\u00a0= \u2212126\u00a0\u00b1\u00a00.9 mV, mean\u00a0\u00b1\u00a0sd, n\u00a0=\u00a06).\n\n### Interactions between the voltage sensor and intracellular domains\n\nTo search for contacts between the intracellular domains and the transmembrane domains that influence gating properties we searched for mutations that modified or resulted in the loss of the Cole-Moore effect in Eag1. Using the structures of Eag1 and hErg as a guide, we first modified by alanine scanning mutagenesis the C-terminus of S4 and the S4-S5 linker (residues 343\u2013348), which are near the PAS loop in both structures (Figure 1b, Figure 3, and Figure 3\u2014figure supplement 1a,b) (Gianulis et al., 2013; Wang et al., 1998). These results suggest that the S4-S5 linker plays a role in voltage-dependent gating as we observed both negative (H343A, Y344A) and positive (D342A, I345A, E346A) shifted V0.5 values. Furthermore, H343A, Y344A, I345A, E346A, and Y347A all exhibit a Cole-Moore effect with both negative (H343A, I345A) and positive (E346A, Y347A) shifts in the V0.5CM (Figure 3\u2014figure supplement 1c,d). We note that only mutation of Asp 342 to Ala (D342A) results in complete loss of the Cole-Moore effect, suggesting that Asp 342 may interact with the intracellular domains (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig3-v1.jpg)\n\n**Figure 3.:** (A) Voltage family current trace for D342A, R7A/R8A, and \u03943\u20139 with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black\u00a0square, n\u00a0=\u00a06), D342A (green\u00a0triangle,\u00a0n\u00a0=\u00a05), R7A/R8A (orange\u00a0circle, n\u00a0=\u00a05), and \u03943\u20139 (red\u00a0diamond, n\u00a0=\u00a05) with V0.5 values (mean\u00a0\u00b1\u00a0sd). D342A, R7A/R8A, and \u03943\u20139 did not reach saturation up to 100 mV. (C) Cole-Moore effect of D342A, R7A/R8A, and \u03943\u20139 with the voltage-pulse protocol shown above. (D) Cole-Moore I-V plot for WT Eag1 (black\u00a0square, n\u00a0=\u00a06), R7A/R8A (orange\u00a0cirlce, n\u00a0=\u00a05), and \u03943\u20139 (red\u00a0diamond, n\u00a0=\u00a05) with V0.5CM values (mean\u00a0\u00b1\u00a0sd).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Voltage family current trace for H343A, Y344A, I345A, E346A, and Y347A with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black\u00a0square, n\u00a0=\u00a06), H343A (cyan\u00a0triangle, n\u00a0=\u00a04), Y344A (green\u00a0triangle, n\u00a0=\u00a05), I345A (red\u00a0diamond, n\u00a0=\u00a05), E346A (orange\u00a0circle, n\u00a0=\u00a06), and Y347A (blue\u00a0unfilled\u00a0square, n\u00a0=\u00a05) with V0.5 values (mean\u00a0\u00b1\u00a0sd). (C) Cole-Moore effect of H343A, Y344A, I345A, E346A, and Y347A with the voltage-pulse protocol shown above. (D) Cole-Moore I-V plot for WT Eag1 (black\u00a0square, n\u00a0=\u00a06), H343A (cyan\u00a0triangle n\u00a0=\u00a03), Y344A (green\u00a0triangle, n\u00a0=\u00a05), I345A (red\u00a0diamond, n\u00a0=\u00a04), E346A (orange\u00a0circle, n\u00a0=\u00a04), and Y347A (blue\u00a0unfilled\u00a0square, n\u00a0=\u00a05) with V0.5CM values (mean\u00a0\u00b1\u00a0sd).\n\nAsp 342 is located at the C-terminus of S4 and is highly conserved in Kvs 10\u201312. In the closed conformation of Eag1, Asp 342 does not interact with the intracellular domains (Figure 1b) (Whicher and MacKinnon, 2016). However, in the open conformation of hErg the homologous Asp is near (~6 \u00c5) two Arg residues in the PAS loop (Figure 1c) (Wang and MacKinnon, 2017). In all Kvs 10\u201312 the PAS loop has at least one positively charged residue. In Eag1, the corresponding Arg residues are Arg 7 and 8. We mutated the Arg residues to Ala (R7A/R8A) and deleted residues 3\u20139 (\u03943\u20139) (Figure 3). The V0.5 of R7A/R8A and \u03943\u20139 are right shifted to a similar extent as Eag1TM and the D342A mutant. Therefore, Arg 7 and 8 promote channel opening, like Asp 342, and mutation of these residues has a similar effect on V0.5 as loss of the intracellular domains. In addition, the R7A/R8A and \u03943\u20139 mutations result in a right-shifted V0.5CM, indicating that more depolarized holding potentials are required for fast activation of these mutants than WT Eag1. The right shifted V0.5 and the modified Cole-Moore effect of R7A/R8A and \u03943\u20139 suggest that Arg 7 and 8 might form a functional interaction with Asp 342. Furthermore, since mutation of Arg 7 and 8 did not result in complete loss of the Cole-Moore effect, Asp 342 likely interacts with additional residues on the intracellular domains. Taken together, the functional data along with the proximity of the PAS loop and Asp 342 in the open conformation of hErg suggest that an interaction between Asp 342 and the PAS loop may occur in the open conformation to promote channel opening.\n\n### Implications for voltage-dependent gating\n\nHow might an interaction between the PAS loop and Asp 342 promote channel opening? One hypothesis is that the interaction between the PAS loop and Asp 342 stabilizes the depolarized state of the voltage sensor. This hypothesis would explain why deletion of the intracellular domains (Eag1TM) and mutation of Asp 342 and Arg 7 and 8 disfavors channel opening as indicated by a right shift in the voltage-dependence of activation. However, further analysis of PAS loop residues that are adjacent to Arg 7 and 8, Leu 10, Val 11, Ala 12, and Pro 13, revealed an additional function of the PAS loop in voltage-dependent gating. Leu 10, Val 11, Ala 12, and Pro 13 interact with Tyr 639, a conserved residue in Kvs 10\u201312 that is located on the CNBHD, and Tyr 213, a Phe, Tyr or Cys in Kvs 10\u201312 that is located on the loop before S1 of the VS (Figure 1b) (Whicher and MacKinnon, 2016). In this position, residues 10\u201313 link the VS and the intracellular CNBHD. To study the functional consequences of\u00a0altering this region of contact, we generated Tyr 213 to Ala (Y213A) and Tyr 639 to Arg (Y639R) mutant channels and PAS loop mutant channels with successive deletions of residues 10\u201313 (\u03943\u201310, \u03943\u201311, \u03943\u201312, and \u03943\u201313). These mutants show inactivation and hooked tail currents at more depolarized potentials (40\u2013100 mV), as was previously shown (Terlau et al., 1997) (Figure 4a,b and Figure 4\u2014figure supplement 1a,b). These mutants also produce channels that open at more negative (hyperpolarized) potentials than WT Eag1 (\u221280 mV) and exhibit slow deactivation, demonstrating that the interaction between residues 10\u201313, Tyr 213, and Tyr 639 promotes the closed state of Eag1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig4-v1.jpg)\n\n**Figure 4.:** (A) Voltage family current trace for the \u03943\u201313, Y213A, and Y639R with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black\u00a0square, n\u00a0=\u00a06), \u03943\u201313 (orange\u00a0triangle, n\u00a0=\u00a05), Y213A (green\u00a0circle, n\u00a0=\u00a05), and Y639R (cyan\u00a0diamond, n\u00a0=\u00a05) (mean\u00a0\u00b1\u00a0sd). (C) Cole-Moore effect of \u03943\u201313, Y213A, and Y639R with the voltage-pulse protocol shown above.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Voltage family current trace for \u03943\u201310, \u03943\u201311, and \u03943\u201312 with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black\u00a0square, n\u00a0=\u00a06), \u03943\u201310 (orange\u00a0circle, n\u00a0=\u00a05), \u03943\u201311 (red\u00a0diamond, n\u00a0=\u00a03), and \u03943\u201312 (blue\u00a0triangle, n\u00a0=\u00a03). (C) Cole-Moore effect of \u03943\u201310, \u03943\u201311, and \u03943\u201312 with the voltage-pulse protocol shown above (mean\u00a0\u00b1\u00a0sd).\n\nBased on these data, the PAS loop can be divided into two functionally distinct segments: the N-terminus (residues 1\u20139; not observed in the Eag1 structure) and the C-terminus (residues 10\u201313) (Figure 1c). The N-terminus seems to promote channel opening and may interact with Asp 342 of the S4-S5 linker. The C-terminus seems to promote channel closure and interacts with the CNBHD. Furthermore, in the open state structure of hErg the PAS loop C-terminus does not interact with either Tyr 403 (equivalent to Tyr 213 in Eag1) or Tyr 827 (equivalent to Tyr 639 in Eag1) (Figure 1c) suggesting that destabilization of this interface might be necessary for channel opening (Wang and MacKinnon, 2017). Therefore, we propose that the following structural interactions take place in association with voltage dependent gating. Upon depolarization, Asp 342 interacts with the PAS loop N-terminus to stabilize the open state of the VS and destabilize the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to promote channel opening (Figure 1c). When the VS is hyperpolarized, movement of the S4 disrupts the interaction between Asp 342 and the PAS loop N-terminus, allowing the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to form and promote channel closing (Figure 1b).\n\nTwo experiments support this hypothesis for the role of the intracellular domains in voltage-dependent gating. First, co-expression of two halves of a split Eag1 construct (L341 split), in which the N-terminal half of the channel includes Met 1-Leu 341 and the C-terminal half includes Asp 342-Ser 962, produces a partially constitutively open channel (Figure 5a) (Tomczak et al., 2017). This functional behavior can be explained by the above hypothesis because in the split Eag1 construct Asp 342 is no longer connected to S4 of the VS and thus is no longer forced to move when the VS moves. Consequently, Asp 342 can maintain its interaction with the PAS loop to promote channel opening. Therefore, if Arg 7 and 8 and Asp 342 functionally interact to promote channel opening then mutation of this interface should produce a split channel that is no longer constitutively open. In agreement with this conclusion, introduction of the D342A and \u03943\u20139 mutations into the Eag1 split construct produce channels that close at hyperpolarized potentials (Figure 5b,c) (Tomczak et al., 2017). Second, this mechanism provides an explanation for the Cole-Moore effect. The Cole-Moore effect was proposed to be due to the existence of multiple closed states that the VS must transition through in order to reach an active or depolarized conformation (Cole and Moore, 1960). At more negative potentials the VS must transition through more closed states to reach an active conformation, which results in slower activation times. In Eag, at more negative holding potentials the VS might have to transition through more closed states in order for the S4 and Asp 342 to interact with the PAS loop N-terminus, which will result in slower activation times. Therefore, if we remove the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639, which we propose is destabilized when Asp 342 interacts with the PAS loop N-terminus, then the Cole-Moore effect should be lost. In agreement with this line of reasoning, \u03943\u201312 and \u03943\u201313 do not exhibit a Cole-Moore effect while Y213A, Y639R, \u03943\u201310, and \u03943\u201311 show a reduced Cole-Moore effect compared to the WT channel (Figure 4c and Figure 4\u2014figure supplement 1c).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig5-v1.jpg)\n\n**Figure 5.:** Voltage family current trace for the L341 split (A), D342A L341 split (B), and \u03943\u20139 L341 split (C) with the voltage-pulse protocol shown above. (D) Normalized current vs depolarization voltage for L341 split (black\u00a0square, n\u00a0=\u00a011), D342A L341 split (red\u00a0diamond, n\u00a0=\u00a07), and \u03943\u20139 L341 split (orange\u00a0circle, n\u00a0=\u00a07) (mean\u00a0\u00b1\u00a0sd).\n\n### Structure of constitutively open Eag1\n\nTo better understand how the channel opens and how CaM inhibits opening we sought to determine the structure of an open Eag1 channel. In the presence of Ca2+/CaM, Eag1 \u03943\u201313 remains open at hyperpolarized voltages (Figure 6a). Therefore, we determined the Cryo-EM structure of Eag1 \u03943\u201313 in the presence of calcium and bound to CaM (Eag1 \u03943\u201313/CaM) (Figure 6b,c and Figure 6\u2014figure supplements 1, 2, 3 and 4). Two different conformations were identified for Eag1 \u03943\u201313/CaM: conformation 1 at 3.7 \u00c5 and conformation 2 at 4.0 \u00c5 resolution. In both conformations, the S4 helices adopt a depolarized conformation and intracellular domains are rotated in a counterclockwise direction when viewed from the extracellular side of the membrane, but in conformation two the extent of the rotation is larger (2.4\u00b0 degrees for conformation 1 and 8.6\u00b0 degrees for conformation 2) (Figure 6b,c and Figure 6\u2014figure supplement 4). The rotation observed in these conformations is in a similar direction as the intracellular domains in the open conformation structure of hErg (Wang and MacKinnon, 2017) (Figure 6d). However, the extent of the rotation of the Eag1 intracellular domains is not as large as the 20\u00b0 rotation observed in hErg and the S6 helices remain closed (Figure 6d,e). As a result, we believe that conformation 1 and conformation 2 represent pre-open conformations of Eag1 on the pathway from closed to fully open.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-v1.jpg)\n\n**Figure 6.:** (A) Left, Voltage family current trace for Eag1 \u03943\u201313 in the presence of 1 mM CaCl2 with the voltage-pulse protocol shown above. Right, normalized current vs depolarization voltage for Eag1 \u03943\u201313 in the presence of 1 mM CaCl2 (black\u00a0square, n\u00a0=\u00a03) with reversal potential (Erev) (mean\u00a0\u00b1\u00a0sd). (B) Structural superposition of Eag1 \u03943\u201313/CaM conformation 1 (cyan) and Eag1/CaM (PDB-5K7L, (gray) using the selectivity filter. Only the intracellular domains are shown from an extracellular view and the location of the S6 helices are indicated with spheres. Degree of rotation is indicated by the arrow. (C) Structural superposition of Eag1 \u03943\u201313/CaM conformation 2 (green) and Eag1/CaM (gray) using the selectivity filter with the same view as (B). (D) Structural superposition of Eag1 \u03943\u201313/CaM conformation 2 (green C, red O, blue N), Eag1/CaM (gray C, red O, blue N), and hErg (PDB-5VA2, yellow C, red O, blue N) using the selectivity filter. Location of the intracellular gate Gln (Q476 for Eag1 and Q664 for hErg) are shown as ball and stick. (E) Plot of pore diameter for Eag1 \u03943\u201313/CaM conformation 2 (green), Eag1 (gray), and hErg (yellow). The location of the selectivity filter and intracellular gate are indicated and the dashed gray line at 6 \u00c5 indicates the diameter of hydrated potassium.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) SDS-PAGE gel of fractions from the final gel filtration column of Eag1 \u03943\u201313/CaM (molecular weight standards are in kDa). (B) Representative micrograph of Eag1 \u03943\u201313/CaM in vitreous ice (scale bar\u00a0=\u00a0500 \u00c5). (C) Representative class averages from 2D classification (scale bar\u00a0=\u00a0100 \u00c5). (D) Gold standard FSC of conformation 1 (green) and conformation 2 (black) of Eag1 \u03943\u201313 bound to CaM. The dotted line indicates the 0.143 FSC cutoff which corresponds to the indicated resolutions. Orientation distribution of particles in the final reconstruction of conformation 1 (E) and conformation 2 (F) of Eag1 \u03943\u201313 bound to CaM. Each column indicates one view and the number of particles in each view is indicated by the size and color of the column (larger columns colored red contain a higher number of particles).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Cryo-EM maps of conformation 1 (A) and conformation 2 (B) colored based on local resolution estimated by ResMap. Slices of the transmembrane domain (top panel) and intracellular domains (bottom panel) colored by local resolution are shown on the right.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** ( A) FSC cross validation between the Eag1 \u03943\u201313/CaM model and the full map used for refinement for conformation 1 (green) and conformation 2 (black). (B). Collection parameters and refinement statistics for Eag1 \u03943\u201313/CaM conformation 1 and 2.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A) Side view of conformation 1 of Eag1 \u03943\u201313 bound to CaM. Position of the membrane is indicated by gray lines and domain coloring is as follows: PAS-orange, VS-yellow, S5-S6-green, C-linker-red, CNBHD-cyan, and CaM-purple. Black trace indicates the subunit shown in (B) and (C). (B) Structural superposition of the intracellular domains of Eag1 \u03943\u201313/CaM conformation 1 (colored) and Eag1/CaM (PDB-5K7L, gray) using the selectivity filter for alignment. (C) Structural superposition of the intracellular domains of Eag1 \u03943\u201313/CaM conformation 1 (colored) and Eag1/CaM (gray) using the intracellular domains for alignment. (D) Side view of conformation 2 of Eag1 \u03943\u201313 bound to CaM. Position of the membrane is indicated by gray lines and domain coloring is the same as in (A). Black trace indicates the subunit shown in (E) and (F). (E) Structural superposition of the intracellular domains of Eag1 \u03943\u201313/CaM conformation 2 (colored) and Eag1/CaM (gray) using the selectivity filter for alignment. (F) Structural superposition of the intracellular domains of Eag1 \u03943\u201313/CaM conformation 2 (colored) and Eag1/CaM (gray) using the intracellular domains for alignment.\n\nA hypothesis for why the pore remains closed in the structure of Eag1 \u03943\u201313/CaM is that, compared to hErg, Eag1 might be more stable in a closed conformation. This hypothesis is consistent with a number of observations on the function. First, insertion of the intracellular domains of hErg onto Eag1 (Eag1/hErg chimera) causes a 20 mV left shift in the V0.5 (Figure 2a,b). Second, the V0.5 of Eag1 is right-shifted by 40 mV compared with hErg and Eag1TM is right shifted by 80 mV when compared to a hErg channel lacking the intracellular domains (Figure 2a,b) (Hausammann and Gr\u00fctter, 2013; Wang and MacKinnon, 2017). What might cause Eag1 to be more stable in a closed conformation? In Eag1, Phe 475 and Gln 477 are located at the interface of the S6 helices on either side of Gln 476, the intracellular gate. In Kv11 and Kv12, which have a left shifted V0.5 compared to Eag1, these residues are Ile and Arg respectively (Bauer and Schwarz, 2018). The Eag1 double mutant F475I/Q477R causes a 50 mV left shift in the V0.5 to \u221220 mV when introduced into the full-length channel and a 16 mV left shift in the V0.5 to 30 mV when introduced into Eag1TM (Figure 7a,b,c). In addition, when the F475I/Q477R mutation is introduced into the Eag1/hErg chimera the channel remains open at hyperpolarized potentials (Figure 7d). Taken together, these data suggest that the intracellular domains and Phe 475 and Gln 477 cause Eag1 to be more stable in a closed conformation. Therefore, we propose that the Eag1 intracellular domains, when viewed from the extracellular side, rotate in a counterclockwise direction to promote the opening of the pore. However, due to the stability of Eag1 in a closed conformation and the conditions under which the Cryo-EM structure was determined we suspect that pore opening is transient and thus not observed in the Eag1 \u03943\u201313/CaM structure.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig7-v1.jpg)\n\n**Figure 7.:** (A) Phe 475 and Gln 477 (shown as green sticks, with red O, and blue N) are at the interface of the S6 helices (green). C-linker is shown in red. (B) Voltage family current trace for F475I/Q477R and Eag1TM F475I/Q477R with the voltage-pulse protocol shown above. (C) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black\u00a0square, n\u00a0=\u00a06), F475I/Q477R (green\u00a0triangle, n\u00a0=\u00a07), and Eag1TM F475I/Q477R (red\u00a0diamond, n\u00a0=\u00a06) with V0.5 values (mean\u00a0\u00b1\u00a0sd). (D) Top, Voltage family current trace for Eag1/hErg chimera F475I/Q477R with the voltage-pulse protocol shown above. Bottom, normalized current vs depolarization voltage for Eag1/hErg chimera F475I/Q477R (black\u00a0square, n\u00a0=\u00a05) with reversal potential (Erev) (mean\u00a0\u00b1\u00a0sd).\n\n### CaM inhibition\n\nRotation of the intracellular domains observed in the different conformations of Eag1 \u03943\u201313/CaM occurs with CaM bound to the channel in the same orientation as observed in the WT structure (Figure 6\u2014figure supplement 4) (Whicher and MacKinnon, 2016). This finding suggests that binding of CaM does not clamp the PAS and CNBHD domains together to prevent rotation of the intracellular domains and channel opening as we previously proposed. Instead, we think that more likely CaM binding to the channel helps to stabilize the hydrophobic interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639. As discussed above, this interaction seems to be important for channel closure. Thus, by stabilizing this interaction CaM can inhibit the channel. In support of this hypothesis, deletion of this interaction by removing residues 3\u201313 results in a channel that is no longer inhibited by CaM (Figure 6a). In addition, a similar effect was observed in Eag1 mutants that lack the PAS cap (residues 1\u201326) or the entire PAS domain (27-135) (L\u00f6rinczi et al., 2016).\n\n## Discussion\n\nIn summary, the data presented here provide many insights into the mechanism of voltage-dependent gating and calmodulin inhibition in Eag1. First, the intracellular domains are not required for voltage-dependent gating but do modulate voltage-dependent gating kinetics and cause the Cole-Moore effect. Second, an interaction between Asp 342 at the intracellular side of the S4 helix and the intracellular domains is essential for the Cole-Moore effect. Through mutagenesis in full length and split channels, we identified Arg 7 and 8 in the PAS loop N-terminus as potential interaction partners for Asp 342. However, mutation of Arg 7 and 8 results in modification but not complete loss of the Cole-Moore effect, suggesting that Asp 342 may interact with other residues on the intracellular domains. Third, interaction between the PAS loop C-terminus, Tyr 213 of the VS, and Tyr 639 of the CNBHD plays an important role in gating of Eag1. Deletion of residues 3\u201313 from the PAS loop produces a channel that opens at more hyperpolarized potentials than WT Eag1 and has slow deactivation kinetics, suggesting that this interaction promotes channel closure. In addition, this interface is important for the mechanism of CaM inhibition as Eag1 \u03943\u201313 is constitutively open in the presence of Ca2+/CaM. Finally, the structure of Eag1 \u03943\u201313 bound to CaM in a pre-open conformation demonstrates that channel opening may occur through a rotation of the intracellular domains in a counterclockwise direction when viewed from the extracellular side of the membrane.\n\nBased on the data, we propose the following general mechanism of modulation of voltage-dependent gating by the intracellular domains. In the depolarized conformation of the VS, Asp 342 interacts with the PAS loop N-terminus to stabilize the depolarized state of the VS as well as destabilize the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to promote channel opening (Figure 1c). In the hyperpolarized conformation of the VS, movement of the S4 disrupts the interaction between Asp 342 and the PAS loop N-terminus to allow for the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to form and promote channel closing (Figure 1b). The structure of Eag1 \u03943\u201313/CaM in a pre-open conformation suggests that channel opening may occur through a counterclockwise rotation of the intracellular domains and channel closing may occur through a clockwise rotation of the intracellular domains. This mechanism is consistent with previous functional data examining split Eag1 channels that do not have a covalent linkage between the VS and pore and provides an explanation for the Cole-Moore effect (L\u00f6rinczi et al., 2015; Tomczak et al., 2017). At more negative holding potentials the S4 and Asp 342 may have to transition through more closed states in order to interact with the PAS loop N-terminus, which will result in slower activation times. Furthermore, CaM seems to function through this proposed mechanism by stabilizing the interaction between residues 10\u201313, Tyr 213, and Tyr 639 to prevent pore opening. Perhaps by binding to the PAS domain, CaM may be able to stabilize the PAS loop in a closed conformation.\n\nThese interactions also help to understand the gating of related channels. For hErg, which does not exhibit a Cole-Moore effect, the PAS loop Arg residues (Arg 4 and 5) and the S4 Asp (Asp 540) function in slow deactivation (Morais Cabral et al., 1998; Muskett et al., 2011; Ng et al., 2011; Sanguinetti and Xu, 1999). How do equivalent residues in Eag1 and hErg function in different voltage-dependent gating outcomes? As discussed above, in Eag1 deletion of the intracellular domains or mutation of Asp 342 causes a positive shift in the V0.5, suggesting that the interaction between the PAS loop N-terminus and Asp 342 is important for channel activation and thus functions in the Cole-Moore effect. However, in hErg deletion of the intracellular domains and mutation of Asp 540 does not change the V0.5, suggesting that the interaction between the PAS N-terminus and Asp 540 is not important for channel activation (Hausammann and Gr\u00fctter, 2013; Morais Cabral et al., 1998; Sanguinetti and Xu, 1999). Instead, we propose that in hErg, which we have shown apparently has a more stable open conformation than Eag1, the interaction between Asp 540 and the PAS loop forms after channel activation and prevents pore closing, which results in slow deactivation. Like Eag1, the interaction between Asp 540 and the PAS loop N-terminus in hErg may prevent pore closing by destabilizing the interaction between the PAS loop C-terminus, Tyr 403, and Tyr 827. In support of this idea, splitting the hErg channel, analogous to the Eag1 L341 split, so that Asp 540 is not covalently linked to the voltage sensor, produces a channel that displays slowed deactivation compared to WT hErg (de la Pe\u00f1a et al., 2018).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Rattus norvegicus)</td>\n      <td>Kv10.1/Eag1/Kcnh1</td>\n      <td>Synthetic</td>\n      <td>Uniprot: Q63472</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>Calmodulin</td>\n      <td>Synthetic</td>\n      <td>Uniprot: P0DP24</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293S GnTI-</td>\n      <td>ATCC</td>\n      <td>ATCC: CRL-3022 RRID:CVCL_A785</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodopterafrugiperda)</td>\n      <td>Sf9</td>\n      <td>ATCC</td>\n      <td>ATCC: CRL-1711 RRID:CVCL_0549</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Cricetulus griseus)</td>\n      <td>Chinese Hamster Ovary cells</td>\n      <td>Sigma</td>\n      <td>RRID: CVCL_0213</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEG Bacmam</td>\n      <td>doi:\u00a0https://doi.org/10.1038/nprot.2014.173</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEM-T vector</td>\n      <td>Promega</td>\n      <td>Catalog number: A1360</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClampfit 10.5</td>\n      <td>Molecular Devices</td>\n      <td>RRID: SCR_011323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>doi: 10.1038/nmeth.4193</td>\n      <td>RRID: SCR_016499</td>\n      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CTFFIND4</td>\n      <td>doi: 10.1016/j.jsb.2015.08.008</td>\n      <td>RRID: SCR_016732</td>\n      <td>http://grigoriefflab.janelia.org/ctffind4</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION-3</td>\n      <td>doi: 10.1016/j.jsb.2012.09.006</td>\n      <td>RRID: SCR_016274</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page</td>\n    </tr>\n    <tr>\n      <td>Ssoftware, algorithm</td>\n      <td>ResMap</td>\n      <td>doi: 10.1038/nmeth.2727</td>\n      <td></td>\n      <td>http://resmap.sourceforge.net</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>doi: 10.1107/S0907444910007493</td>\n      <td>RRID: SCR_014222</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>doi: 10.1107/S0907444909052925</td>\n      <td>RRID: SCR_014224</td>\n      <td>http://phenix-online.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pymol</td>\n      <td>PyMOL Molecular Graphics System, Schr\u00f6dinger, LLC</td>\n      <td>RRID: SCR_000305</td>\n      <td>http://www.pymol.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>UCSF Resource for Biocomputing, Visualization,and Bioinformatics</td>\n      <td>RRID: SCR_004097</td>\n      <td>http://plato.cgl.ucsf.edu/chimera/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HOLE</td>\n      <td>doi:10.1016/S0263-7855(97)00009-X</td>\n      <td></td>\n      <td>http://www.holeprogram.org</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning of Eag1 constructs\n\nCloning of rat Eag1 into the BacMam (Goehring et al., 2014) expression vector with a C-terminal green fluorescent protein (GFP)-His6 tag was described previously (Whicher and MacKinnon, 2016). All constructs presented here are in the BacMam vector except for the L341 split constructs. For the Eag1TM construct, residues 197\u2013481 (S1-S6) were fused to residues 887\u2013962 (C-terminal tetramer assembly domain). For the Eag1/hErg1 chimera, residues 1\u2013389 (PAS) and 670\u20131159 (C-linker, CNBHD, and C-terminal assembly domain) of hErg were fused to the N- and C-termini of Eag1 residues 197\u2013481 (S1-S6), respectively. For the L341 split, the N-terminal half (1-341) and C-terminal half (342-963) were each cloned into a pGEM vector for oocyte expression. Mutagenesis and deletions were performed with standard protocols and constructs were confirmed by sequencing. Calmodulin (CaM) was cloned into a BacMam vector as described previously (Whicher and MacKinnon, 2016).\n\n### Electrophysiological recordings of Eag1 constructs in CHO cells\n\nAll recordings of Eag1 constructs in BacMam vectors were from Chinese hamster ovary (CHO) cells. CHO cells cultured in DMEM-F12 (Gibco) with 10% FBS were transfected with the Eag1 construct using the FuGENE HD transfection reagent (Promega). 48 hr following transfection, the media was replaced with bath solution (10 mM HEPES pH 7.4, 60 mM KCl, 95 mM NaCl, 1 mM CaCl2) and experiments were performed at room temperature using the whole cell patch clamp technique. Polished borosilicate glass pipettes with resistance between 2\u20134 M\u03a9 were filled with 10 mM HEPES pH 7.4, 165 mM KCl, 5 mM EDTA. To record Eag1 \u03943\u201313 in the presence of calcium, the 5 mM EDTA was replaced with 1 mM CaCl2 in the pipette solution. Voltage-family recordings were measured by holding the cells at \u2212100 mV, stepping to depolarized voltages up to 100 mV in 20 mV steps, and then stepping back to \u221280 mV. To determine the V0.5 value, normalized tail current vs. voltage was plotted and fit with a Boltzmann function. Cole-Moore effect recordings were measured by holding cells for 500 ms at increasing holding potentials from \u2212190 mV to the voltage of channel activation (either \u2212110 mV, \u221250 mV or \u221230 mV depending on the construct) in 20 mV steps followed by a step to 40 mV. To estimate the holding potential that produces half maximal rates of activation (V0.5CM), we plotted holding potential vs normalized current at 10 ms following the depolarization step and fit the plot with a Boltzmann function:\n\n$$\n(I\u2212I_{min})/(I_{max}\u2212I_{min})=1/1+exp(\u2212ZF/RT(V\u2212V_{0.5cm}))\n$$\n\nwhere (I-Imin )/(Imax -Imin ) is the normalized current at 10 ms following the depolarization step, V is the hyperpolarization voltage preceding the depolarization step, V0.5cm is the hyperpolarization voltage that produces half maximal rates of activation, F is the Faraday\u2019s constant, R is the gas constant, T is the absolute temperature, and Z is the apparent valence of voltage dependence.\n\nTo determine reversal potential, we plotted normalized outward current vs depolarization voltage and determined the X intercept. All recordings were measured with pClamp10.5 software (Molecular Devices), an Axopatch 200B amplifier (Molecular Devices), and an Axon digidata 1550 digitizer (Molecular Devices). Recordings were filtered at 1 kHz and sampled at 10 kHz. No leak current was subtracted from the current traces.\n\n### Electrophysiological recordings of Eag1 L341 split constructs in oocytes\n\nThe mMessage mMachine T7 transcription kit (Ambion) was used to produce cRNA of the Eag1 split constructs linearized with NdeI. The MEGAclear kit was used to purify cRNAs, which were injected into oocytes. A total of 10 ng of cRNA was injected per oocyte at a ratio of 1:1 N-terminal half:C-terminal half. Oocytes were stored at 18\u00b0C for 24\u201348 hr after injection in ND96 (96 mM NaCl, 2 mM KCl, 1.8 mM CaCl2, 1.0 mM MgCl2, 5 mM HEPES pH 7.6 with NaOH, 50 \u03bcg/ml gentamycin) and used for recordings. The bath solution was 55 mM NaCl, 60 mM KCl, 1.8 mM CaCl2, and 10 mM HEPES pH 7.2 with NaOH and the pipette solution was 3M KCl. The voltage family protocol was as follows: hold at \u221220 mV, step to depolarized voltages from \u2212120 to 100 mV in 20 mV steps, and then step back to \u221280 mV. All recordings were measured at room temperature with pClamp10.5 software (Molecular Devices), Gene Clamp 500 amplifier (Molecular Devices), and an Axon digidata 1440A digitizer (Molecular Devices) in two electrode voltage-clamp configuration. The recorded signal was filtered at 1 kHz and sampled at 10 kHz. No leak or capacitive currents were subtracted from the current traces.\n\n### Expression and purification of Eag1 \u03943\u201313/CaM\n\nThe C-terminal unstructured region (773-886) of the Eag1 \u03943\u201313 was removed as described previously to improve expression and stability. This mutation does not affect the functional properties of the channel (Whicher and MacKinnon, 2016). Baculovirus for Eag1 \u03943\u201313 and CaM, were produced by transfecting bacmids into SF9 cells in Grace\u2019s media supplemented with 10% FBS with the cellfectin II reagent (Invitrogen). Then the baculovirus was amplified in 1L suspension cultures of SF9 cells at 27\u00b0C. 1L cultures of HEK293S GnTI- at 3 \u00d7 106 cells/mL in Freestyle 293 media (Gibco) supplemented with 2% FBS were infected with both Eag1 \u03943\u201313 and CaM baculovirus at a 4:1 Eag1 \u03943\u201313:CaM ratio. Following infection, the cells were incubated at 37\u00b0C for 18 hr, induced by adding 10 \u03bcM sodium butyrate, incubated at 30\u00b0C for 48 hr, and harvested.\n\n4L of cell pellet was resuspended in lysis buffer (20 mM Tris pH 8, 1 mM CaCl2, 1 \u03bcg/ml leupepetin, 1 \u03bcg/ml pepstatin, 1 mM benzamidine, 1 \u03bcg/ml aprotonin, 0.01 mg/ml DNase, 1 mM PMSF), incubated at RT with stirring for 20 min, and centrifuged for 40 min at 35,000xg. Pellets were resuspended in extraction buffer (50 mM Tris pH 8, 300 mM KCl, 1 mM CaCl2, 8 mM Lauryl Maltose Neopentyl Glycol (LMNG), 2 mM Cholesteryl hemisuccinate (CHS), 1 \u03bcg/ml leupepetin, 1 \u03bcg/ml pepstatin, 1 mM benzamidine, 1 \u03bcg/ml aprotonin, 0.01 mg/ml DNase, 1 mM PMSF), incubated at 4\u00b0C for 2 hr with stirring, and centrifuged for 90 min at 35,000xg. The supernatant was incubated for 2 hr at 4\u00b0C with CNBR-activated sepharose beads (GE healthcare) coupled to a nanobody with high affinity for GFP (GFP-NB) (Kirchhofer et al., 2010). The beads were washed with superose\u00a06 buffer (20 mM Tris pH 8, 300 mM KCl, 1 mM CaCl2, 0.05% Digitonin) first with and then without 10 mM MgCl2 and 5 mM adenosine triphosphate (ATP) to remove bound heat shock proteins. The washed beads were incubated overnight at 4\u00b0C with PreScission protease (10:1 w/w ratio) to remove the GFP tag from Eag1 \u03943\u201313. The protein was eluted with wash buffer, concentrated, and purified on a superose\u00a06 column (GE healthcare) equilibrated with superose\u00a06 buffer. Peak fractions of Eag1 \u03943\u201313 bound to CaM (Eag1 \u03943\u201313/CaM) (Figure 6\u2014figure supplement 1a) were pooled and concentrated to 5 mg/ml for single particle Cryo-EM structure determination.\n\n### EM sample preparation and imaging of Eag1 \u03943\u201313/CaM\n\nIn a Vitrobot Mark IV (FEI), 3.5 \u03bcl of 5 mg/ml Eag1 \u03943\u201313/CaM was pipetted onto Quantifoil R1.2/1.3 gold holey carbon grids (Quantifoil) with 400 mesh that were glow-discharged for 10 s. The grids were blotted for 4 s at 100% humidity and frozen in liquid nitrogen cooled liquid ethane. Images were collected in a 300keV Titan Krios (FEI) with a Gatan K2 Summit direct electron detector (Gatan) with Serial EM (Mastronarde, 2005) in super-resolution counting mode, with a super resolution pixel size of 0.5 \u00c5, and a defocus range of 1.2 to 2.4 \u03bcm. Data were collected with a dose of 8 electrons per physical pixel per second (pixel size of 1.0 \u00c5 at the specimen) and images were recorded with a 10 s exposure and 200 ms subframes (50 total frames) to give a total dose of 80 electrons per \u00c52 (1.6 electrons per \u00c52 per subframe).\n\n### Image processing and map generation\n\nDose fractionated subframes were binned by 2 (giving a pixel size of 1.0 \u00c5), aligned, and summed using MotionCor2 (Zheng et al., 2017) with 5 \u00d7 5 patches (Figure 6\u2014figure supplement 1b). The contrast transfer function was estimated for each summed image using CTFFIND4 (Rohou and Grigorieff, 2015). Three projection averages from the previous structure of Eag1 bound to CaM (Whicher and MacKinnon, 2016) were used as templates for automated picking in RELION (Scheres, 2012). The automatically selected particles were manually inspected to remove false positives and subjected to 2D classification in RELION specifying 200 classes (Figure 6\u2014figure supplement 1c). The lowest populated classes were removed resulting in a data set of 378,000 particles. 3D classification of this data set, with Eag1/CaM as a reference (Whicher and MacKinnon, 2016), resulted in five classes with similar numbers of particles and resolution. Therefore, all 378,000 particles were combined for 3D refinement, with C4 symmetry imposed, producing a map at 4.5 \u00c5 resolution estimated by gold standard FSC at the 0.143 cutoff criteria (Scheres and Chen, 2012). The refined particles were subjected to further rounds of 3D classification without image alignment, which produced 2 subsets of particles: conformation 1 and conformation 2. Conformation 1 of Eag1 \u03943\u201313/CaM has 43,137 particles and a similar overall structure to Eag1/CaM (Whicher and MacKinnon, 2016). Conformation 2 of Eag1 \u03943\u201313/CaM has 54,530 particles and the intracellular domains are rotated with respect to the transmembrane domains. Bayesian particle polishing and 3D refinement, with C4 symmetry imposed, of the particle subsets in RELION resulted in 3.67 \u00c5 for conformation 1 and 4 \u00c5 for conformation 2. Gold standard FSC curves were calculated with a mask that excludes the detergent micelle and resolution values were estimated with the FSC\u00a0=\u00a00.143 cutoff criteria (Figure 6\u2014figure supplement 1d\u2013f) (Scheres and Chen, 2012). Local resolutions were estimated by ResMap (Figure 6\u2014figure supplement 2) (Kucukelbir et al., 2014).\n\n### Model building\n\nThe models of conformation 1 and conformation 2 were built in Coot (Emsley et al., 2010). For both conformations, first the S1-S6 and then the intracellular domains (PAS, C-linker, CNBHD, and CaM) from the structure of Eag1/CaM (Whicher and MacKinnon, 2016) (pdb-5K7L) were placed into the density as a rigid body. Following rigid body fitting, the model was manually inspected to fix regions that did not agree with the map or delete regions where there was no density. In conformation 1, we did not observe density for residues 244\u2013246 (S1-S2 linker), 305\u2013322 (S3-S4 linker), 407\u2013411, 697\u2013703, and 721-C-terminus. In conformation 2, we did not observe density for residues 202\u2013213, 243\u2013246 (S1-S2 linker), 274\u2013283 (S2-S3 linker), 305\u2013323 (S3-S4 linker), 407\u2013411, 697\u2013705, and 721-C-terminus. The side chains were modeled as alanine in lower resolution regions. Phenix real space refinement was used to refine the tetramer model of conformation 1 and conformation 2. Final models were validated using MolProbity and by comparing FSCs between the refined model and the EM map (Figure 6\u2014figure supplement 3). Figures were generated with Chimera (Pettersen et al., 2004), Pymol (The PyMOL Molecular Graphics System, Version 1.8 Schr\u00f6dinger, LLC.), HOLE (Smart et al., 1996), and structure calculations were performed with the SBgrid suite of programs (Morin et al., 2013).\n",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "016aadc2-4b91-4d70-a01b-fca6ac55eb83",
+      "submission_id": "231ca7f3-6ef1-4af7-8c4e-3c5744273f09",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary Yellen, Harvard Medical School United States\n\nReviewers:\n- Gary Yellen, Harvard Medical School United States\n- Kenton Jon Swartz, National Institute of Neurological Disorders and Stroke, National Institutes of Health United States\n\n## Review text\n\nDOI: [10.7554/eLife.49188.025](https://doi.org/10.7554/eLife.49188.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Regulation of Eag1 gating by its intracellular domains\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Gary Yellen as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor. The following individual involved in review of your submission has also agreed to reveal his identity: Kenton J Swartz (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper addresses the molecular mechanisms by which the voltage gating of the Eag1 (Kv10.1) channel and other Kv10-12 family members are regulated by their intracellular PAS, C-linker, and CNBHD domains. These channels have a different architecture from the Kv1-9 channels, which couple voltage sensing to gating using an apparently mechanical linkage (the S4-S5 linker). The authors show that the intracellular domains of Eag1 are not required for voltage gating (contrary to their earlier proposal) but that they both substantially modulate the open-closed bias of the channels and can produce the classic \"Cole-Moore\" effect (a pronounced delay in channel opening after strong hyperpolarization). This extends earlier functional exploration by Pardo and colleagues (2015) and Tomczak et al., 2017, and others, as well as previous structural work by the present authors. The work also addresses the interesting structural and functional analogy between the Cole-Moore effect (delayed opening after strong hyperpolarization) of the Kv10 channels and the slowed deactivation of hErg (Kv11.1) channels.\n\nEssential revisions:\n\nNo new experiments are requested, but revisions to the text and figures are important for making the complex arguments here more transparent to the readers, for improving the precision of the explanations, and for providing access to relevant previous studies that bear on the conclusions here.\n\nThe paper should include at least one and probably two additional display elements to help explain the proposed model. The Introduction discusses many interesting structural elements in EAG and would greatly benefit from adding a new Figure 1 (or an additional panel) to help the reader see these features. The existing Figure 2 doesn't really suffice for this, and it also doesn't suffice to show all of the residues mutated or deleted. We would suggest a figure that shows everything in detail that is relevant to this study, including residues in the S4-S5 linker or loop. It would also be helpful to include a figure or table that explains the different general gating states essential to thinking about the authors' proposal (something similar to stably shut, pre-open, open, and stably open) and which interactions are thought to occur (for instance PAS-C/Y213/Y639, PAS-N/D342, clockwise or counterclockwise rotation), for both the Eag1 and hErg channels. This would help readers follow the proposal, and it might also help explain more precisely the analogy between the Cole-Moore shift in Eag1 and the slow closure of hErg.\n\nThe explanation (in the Discussion, third paragraph) for the slow deactivation of hErg is confusing. The idea is vaguely apparent, but the statement that the slow deactivation in hErg (which arises from open-state stabilization) \"arises from the same mechanism as the Cole-Moore effect\" (which is a pronounced closed-state stabilization) is not helpful. For the hErg channels, the N-PAS \u2013 D342 interaction stabilizes the open state (kinetically if not thermodynamically); for the Eag1 channels, it stabilizes the open state thermodynamically and speeds entry into it. In hErg channels, this produces slow deactivation; in Eag1 channels, the disappearance of this interaction at extreme negative voltages produces the Cole-Moore shift, a kinetic delay in subsequent opening that appears due to the slowness of the re-establishment of this interaction. However, as the authors point out, a simple stabilization in hErg channels does not quite fit, because there is no shift in activation midpoint. Instead, the interaction \"prevent<s> pore closing\" (but through a kinetic effect). The parallels between the Cole-Moore shift and the slow deactivation are interesting, but the authors should state their case more precisely here.\n\nThe authors propose a hypothesis for why the Eag1 delta3-13/CaM structures (the new structures here) remain closed \u2013 the Eag1 channels are more biased to closing than the hErg channels [p 10 \"A hypothesis for why the pore remains closed in the Eag1 \u03943-13/CaM structure is that, compared to hErg, Eag1 may be more stable in a closed conformation.\"]. But the fact remains that this exact construct is constitutively open when studied functionally (Figure 6A). So the discrepancy cannot really be explained as a difference between family members \u2013 it is clearly a difference between the bilayer and the cryoEM conditions.\n\nIn general, please consider alternatives to the proposed model, and explain why you think that your model is better. For instance, the proposed mechanism has the interaction between D342 and the PAS loop as promoting opening by destabilizing closed state interactions between Y213/Y639 and the PAS loop. Instead, or in addition, could the D342-PAS interaction directly stabilize the open state? Or the activated state of the voltage sensor?\n\nPlease also address the following questions in the revision, to help clarify the model and the interpretation of the data:\n\n1) If the primary effect of the intracellular domains is to inhibit opening, as suggested in the Abstract (\"\u2026provide evidence that VS movement destabilizes these interactions to promote channel opening\") and other places in the paper, then why does deletion of intracellular domains, mutation of D342, mutations R7A/R8A, and \u03943-9, destabilize opening (shift the voltage-dependence to the right)?\n\n2) Since there are no estimates of the energetics of the interactions in the structure or the energetic effects of the mutations, the paper should be more cautious about attributing the interactions proposed to the total effects of the intracellular domains.\n\n3) Abstract: \"The structure of the calmodulin insensitive mutant suggests that rotation of the intracellular domains promotes channel opening.\" This sentence is misleading. It should be indicated in the Abstract that the structure presented here is closed, like the original structure of Eag1. It is not clear how a closed structure tells us anything about promoting opening since Ca-CAM doesn't promote opening in Eag1\u03943-13 (does it?). Also, while it seems plausible that the counterclockwise rotation of the intracellular domains is helpful for opening, do we know that it is necessary (it is clearly not sufficient)?\n\n4) Introduction section: \"Due to the non-domain swapped transmembrane architecture, the S4-S5 linker is not in the correct position and does not have the required structure to function as a mechanical lever, suggesting an alternative mechanism of voltage-dependent gating in Kvs 10-12.\" This sentence should be supported by citing previous split experiments.\n\n5) Subsection \u201cInteractions between the voltage sensor and intracellular domains\u201d: \"\u2026we first investigated the S4-S5 linker.\u2026by alanine scanning mutagenesis \" Wasn't alanine scanning and cysteine scanning mutagenesis previously done on the S4-S5 linker of hErg channels (Gianulis et al., 2013, and Wang et al., 1998 respectively)? This work should be cited.\n\n6) Subsection \u201cInsights into voltage-dependent gating\u201d: \"Furthermore, in the open state structure of hErg the PAS loop and the CNBHD Tyr do not interact (Figure 2B)\u2026\" What about interaction of the PAS loop and the 213 equivalent residue in the hErg structure?\n\n7) Subsection \u201cInsights into voltage-dependent gating\u201d and elsewhere \"\u2026this mechanism provides an explanation for the Cole-Moore effect because at more negative holding potentials the S4 and Asp 342 will be driven further down and away from the PAS loop N-terminus, which will result in slower activation times.\" Further down from what? Are you suggesting that there is a down state of the VS that is further down than the normal resting state? Wouldn't any movement down prevent interactions of the N-terminal end of the PAS loop with D342?\n\n8) Subsection \u201cStructure of constitutively open Eag1\u201d: \"\u2026 this opening is transient and thus not observed in the Eag1 \u0394 3-13/CaM structure.\" This is the first mention I found of the previous finding that PAS loop deletions in Eag cause inactivation. This should be mentioned earlier and properly cited.\n\n9) Could the authors discuss why they think the new structures are not inactivated? Could they comment on the position of the S4 helix? Does it appear to be activated as suggested by the earlier CaM-inhibited structure?\n\n10) The IV plots in Figure 5D, 6A and 7D look rather odd because they reverse near -20 mV (the holding voltage) rather than at a voltage near EK+. Oocytes normally have internal K+ set to 100K+, and according to the Materials and methods, these recording were obtained using an external solution with only 2.5 mM K+, which puts EK near to -100 mV. The simplest explanation I can think of is that these plots were obtained with much higher external K+, perhaps around 50-60 mM, but again the Materials and methods state it is 2.5 mM. Might the authors have plotted the difference between current measured at the holding voltage of -20 mV and each test potential, in some cases then normalized to that difference measured at +100 mV? But this is rather unconventional, and nothing is stated about how this was done. If -20 mV really is the Vrev for these constructs and external K- is 2.5 mM, then either these constructs are no longer K-selective, or the internal concentration of K is way off due to expressing these constructs. Please explain and fix as appropriate. In addition, are the oocytes currents being manipulated in any way? The capacitive currents seem to be largely compensated or subtracted, but nothing is stated in the Materials and methods. Are all the whole-cell CHO currents are not leak subtracted? It would be good to state this specifically. It would also be good to add dashed lines to all traces to indicate the zero-current level. Finally, in the traces shown in Figure 6A, it appears you have lost voltage-clamp in the last few traces. Perhaps replace with another recording or remove those traces?\n",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fae096ae-181e-43b9-88ed-bd5314ce5788",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C1",
+      "claim": "Voltage-gated potassium channels (Kvs) are gated by transmembrane voltage sensors (VS) that move in response to changes in membrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-gated potassium channels (Kvs) are gated by transmembrane voltage sensors (VS) that move in response to changes in membrane voltage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about voltage-gated potassium channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "c5d461f8-f92e-4858-9117-392dc4c2810e",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C2",
+      "claim": "Kv10.1 (Eag1) has three intracellular domains: PAS, C-linker, and CNBHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Kv10.1 or Eag1 also has three intracellular domains: PAS, C-linker, and CNBHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "495f1c75-0f1b-45d5-a061-1ff611b13050",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C3",
+      "claim": "The Eag1 intracellular domains are not required for voltage-dependent gating.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the Eag1 intracellular domains are not required for voltage-dependent gating but likely interact with the VS to modulate gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by functional data from the Eag1TM construct shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "4e890664-2de1-4a33-b6ae-5fffa304e27a",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C4",
+      "claim": "The Eag1 intracellular domains interact with the VS to modulate gating.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the Eag1 intracellular domains are not required for voltage-dependent gating but likely interact with the VS to modulate gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by functional data showing differences in gating kinetics between WT and mutant channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "34e0fb11-0723-4799-82a6-4b9e0761eba9",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C5",
+      "claim": "Specific interactions between the PAS, CNBHD, and VS modulate voltage-dependent gating.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified specific interactions between the PAS, CNBHD, and VS that modulate voltage-dependent gating and provide evidence that VS movement destabilizes these interactions to promote channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mutagenesis data and structural analysis presented in Figures 3-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "8b6e0511-e3c9-488b-86fd-32586e1868f2",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C6",
+      "claim": "VS movement destabilizes interactions between PAS, CNBHD, and VS to promote channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified specific interactions between the PAS, CNBHD, and VS that modulate voltage-dependent gating and provide evidence that VS movement destabilizes these interactions to promote channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional data on mutants and split channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "d5b0b3e4-4266-461b-9904-ab51ff37adb6",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C7",
+      "claim": "Mutation of interactions between PAS, CNBHD, and VS renders Eag1 insensitive to calmodulin inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, mutation of these interactions renders Eag1 insensitive to calmodulin inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by functional data on the \u03943-13 mutant shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "35563a47-f34a-425f-ba2b-e9d8a440a943",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C8",
+      "claim": "Channel opening may occur through a rotation of the intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the calmodulin insensitive mutant in a pre-open conformation suggests that channel opening may occur through a rotation of the intracellular domains and calmodulin may prevent this rotation by stabilizing interactions between the VS and intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural data from the Eag1 \u03943-13/CaM structure shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "9154df48-ca08-4126-80e0-fe0f413e82e2",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C9",
+      "claim": "Calmodulin may prevent channel opening by stabilizing interactions between the VS and intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the calmodulin insensitive mutant in a pre-open conformation suggests that channel opening may occur through a rotation of the intracellular domains and calmodulin may prevent this rotation by stabilizing interactions between the VS and intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural and functional data on CaM binding and inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "6aac3d1f-1573-4569-b1ee-887e6d17d609",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C10",
+      "claim": "All Kvs are tetramers and consist of 6 transmembrane segments (S1-S6).",
+      "claim_type": "EXPLICIT",
+      "source": "All Kvs are tetramers and consist of 6 transmembrane segments (S1-S6) (Jiang et al., 2003; Long et al., 2005a; Long et al., 2007; Sun and MacKinnon, 2017; Wang and MacKinnon, 2017; Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "94e345eb-7157-4e6c-a396-0d415e883a80",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C11",
+      "claim": "S1-S4 form the voltage sensor (VS) and S5-S6 form the potassium pore.",
+      "claim_type": "EXPLICIT",
+      "source": "S1-S4 form the voltage sensor (VS) and S5-S6 form the potassium pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Kv channel architecture.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "663c64ab-7f82-4025-84b3-6b25379261f3",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C12",
+      "claim": "The S4 helix of the VS is positively charged and was proposed to move within the membrane in response to changes in membrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "The S4 helix of the VS is positively charged and was proposed to move within the membrane in response to changes in membrane voltage (Aggarwal and MacKinnon, 1996; Seoh et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "757b470b-68e8-4205-9717-805fc6016523",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C13",
+      "claim": "Upon membrane hyperpolarization the S4 was predicted to move 'down' towards the intracellular side of the membrane to close the potassium pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon membrane hyperpolarization the S4 was predicted to move 'down' towards in the intracellular side of the membrane to close the potassium pore and upon membrane depolarization the S4 was predicted to move 'up' to the extracellular side of the membrane to open the potassium pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on established models of voltage-gated channel function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "29ea44c8-a52d-4a76-a695-7b6ed43f9666",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C14",
+      "claim": "Upon membrane depolarization the S4 was predicted to move 'up' to the extracellular side of the membrane to open the potassium pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon membrane hyperpolarization the S4 was predicted to move 'down' towards in the intracellular side of the membrane to close the potassium pore and upon membrane depolarization the S4 was predicted to move 'up' to the extracellular side of the membrane to open the potassium pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on established models of voltage-gated channel function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "4fa60277-63c3-4602-8f34-6b54ccbcce8c",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C15",
+      "claim": "In Kvs 1\u20139 movement of S4 is coupled to the potassium pore by a ~15 residue, helical S4-S5 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "In Kvs 1\u20139 movement of S4 is coupled to the potassium pore by a ~ 15 residue, helical S4-S5 linker, which forms a domain-swapped linkage between S4 and S5 that positions it directly above the pore lining S6 helix (Long et al., 2005a; Long et al., 2007; Sun and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "5ca37a6b-f329-46ac-8137-30a54f54dc26",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C16",
+      "claim": "The S4-S5 linker in Kvs 1-9 forms a domain-swapped linkage between S4 and S5 that positions it directly above the pore lining S6 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In Kvs 1\u20139 movement of S4 is coupled to the potassium pore by a ~ 15 residue, helical S4-S5 linker, which forms a domain-swapped linkage between S4 and S5 that positions it directly above the pore lining S6 helix (Long et al., 2005a; Long et al., 2007; Sun and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "2835fff6-8fdb-4ff9-be08-e56820f42cca",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C17",
+      "claim": "The S4-S5 linker was proposed to function as a mechanical lever to couple movement of the S4 to the S6 helices to open and close the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In this position, the S4-S5 linker was proposed to function as a mechanical lever to couple movement of the S4 to the S6 helices to open and close the pore (Long et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "b194b5bf-4775-457a-90f0-680b3b253733",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C18",
+      "claim": "In Kvs 10\u201312 the S4-S5 linker is only six residues, which is not long enough to form the domain-swapped linkage observed in Kvs 1\u20139.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in Kvs 10\u201312 the S4-S5 linker is only six residues, which is not long enough to form the domain-swapped linkage observed in Kvs 1\u20139.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation based on sequence analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "fff54286-a8b8-4784-8a72-405afbc46073",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C19",
+      "claim": "Recent structures of Eag1 (Kv10.1) and hErg (Kv11.1) revealed that the S4-S5 linker forms a non-domain swapped linkage between S4 and S5.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent structures of Eag1 (Kv10.1) and hErg (Kv11.1) revealed that the S4-S5 linker forms a non-domain swapped linkage between S4 and S5 and is unlikely to be domain swapped in any conformation (Figure 1a,b,c) (Wang and MacKinnon, 2017; Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data from cited studies and Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "534eeec7-3dd1-4a9b-9d05-58cce51eb4c3",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C20",
+      "claim": "The S4-S5 linker in Kvs 10-12 is unlikely to be domain swapped in any conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent structures of Eag1 (Kv10.1) and hErg (Kv11.1) revealed that the S4-S5 linker forms a non-domain swapped linkage between S4 and S5 and is unlikely to be domain swapped in any conformation (Figure 1a,b,c) (Wang and MacKinnon, 2017; Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "71a102f0-36ad-40c9-ba49-d3cebb038bb3",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C21",
+      "claim": "Due to the non-domain swapped transmembrane architecture, the S4-S5 linker is not in the same position and does not appear to form a similar mechanical lever.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the non-domain swapped transmembrane architecture, the S4-S5 linker is not in the same position and does not appear to form a similar mechanical lever, suggesting an alternative mechanism of voltage-dependent gating in Kvs 10\u201312 (L\u00f6rinczi et al., 2015; Tomczak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural observations and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "50b75946-a8a2-41e8-84d9-48dd188e20cd",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C22",
+      "claim": "An alternative mechanism of voltage-dependent gating exists in Kvs 10\u201312.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the non-domain swapped transmembrane architecture, the S4-S5 linker is not in the same position and does not appear to form a similar mechanical lever, suggesting an alternative mechanism of voltage-dependent gating in Kvs 10\u201312 (L\u00f6rinczi et al., 2015; Tomczak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural and functional data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "6d7c25c8-52f8-4b78-8733-5e54495bfee4",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C23",
+      "claim": "The PAS domain is positioned directly below the VS.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the PAS domain, which is positioned directly below the VS, has a 15-residue N-terminal loop (PAS loop) that is directed, through interactions with the VS and CNBHD, towards the S4-S5 linker (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "c1afe10a-099e-4b22-b8b3-baf0f36e84cc",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C24",
+      "claim": "The PAS domain has a 15-residue N-terminal loop (PAS loop) that is directed, through interactions with the VS and CNBHD, towards the S4-S5 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the PAS domain, which is positioned directly below the VS, has a 15-residue N-terminal loop (PAS loop) that is directed, through interactions with the VS and CNBHD, towards the S4-S5 linker (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "f80dd1ab-cab1-463f-add0-f5271814f6de",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C25",
+      "claim": "The PAS loop has been implicated in voltage-dependent gating and the large Cole-Moore effect observed in Eag1.",
+      "claim_type": "EXPLICIT",
+      "source": "The PAS loop has been implicated in voltage-dependent gating and the large Cole-Moore effect observed in Eag1, in which more hyperpolarized (negative) resting membrane potentials result in slower rates of activation (Cole and Moore, 1960; Ju and Wray, 2006; Ludwig et al., 1994; Terlau et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "7e722b57-1675-412a-a80e-c8f9e7e52cc9",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C26",
+      "claim": "In the Cole-Moore effect, more hyperpolarized (negative) resting membrane potentials result in slower rates of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The PAS loop has been implicated in voltage-dependent gating and the large Cole-Moore effect observed in Eag1, in which more hyperpolarized (negative) resting membrane potentials result in slower rates of activation (Cole and Moore, 1960; Ju and Wray, 2006; Ludwig et al., 1994; Terlau et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the Cole-Moore effect supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "2feaff61-8ecd-4319-a1c8-2c1b40204fc3",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C27",
+      "claim": "The C-linker forms an intracellular ring directly below the S6 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the C-linker forms an intracellular ring directly below the S6 helices, which are positioned to couple movements of the intracellular domains to the pore (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "26d5235b-f862-4ea5-9370-b1bc8d2ac70b",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C28",
+      "claim": "The S6 helices are positioned to couple movements of the intracellular domains to the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the C-linker forms an intracellular ring directly below the S6 helices, which are positioned to couple movements of the intracellular domains to the pore (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "5055d5d0-e806-4af6-8101-d5083aad5ba7",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C29",
+      "claim": "The C-linker ring is near the S4-S5 linker and the S4, which adopts a depolarized or up conformation in the Eag1 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-linker ring is near the S4-S5 linker and the S4, which adopts a depolarized or up conformation in the Eag1 structure (Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural data from a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "be31a44e-c0ce-4631-9e8c-befa761f9f81",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C30",
+      "claim": "The S4 helix moves towards the intracellular side of the membrane during hyperpolarization to interact with and rotate the C-linker and S6 helices to close the potassium pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the S4-S5 linker of Eag1 appeared unlikely to function as a mechanical lever, we proposed a voltage-dependent gating mechanism in which the S4 helix moves towards the intracellular side of the membrane during hyperpolarization to interact with and rotate the C-linker and S6 helices to close the potassium pore (Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "1e5250c7-a8a8-4332-a4c9-993725537df8",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C31",
+      "claim": "Eag1 is gated by the calcium sensor calmodulin (CaM).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to voltage-dependent gating, Eag1 is also gated by the calcium sensor calmodulin (CaM) (Sch\u00f6nherr et al., 2000; Ziechner et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "4d24f3df-4718-481b-b2b9-34efb2730405",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C32",
+      "claim": "CaM binds to Eag1 only in the presence of calcium and holds the pore closed even during membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "CaM binds to Eag1 only in the presence of calcium and holds the pore closed even during membrane depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CaM regulation of Eag1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "05664627-10a1-4b5f-ac83-d4e9db8766bd",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C33",
+      "claim": "Each PAS and CNBHD domain has a CaM binding site and thus there are eight binding sites per tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Each PAS and CNBHD domain has a CaM binding site and thus there are eight binding sites per tetramer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "77619e11-c792-40c9-a4d5-4a9f72e7cfef",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C34",
+      "claim": "In the Eag1 structure, each CaM molecule occupies two binding sites, one on the PAS and one on the CNBHD, clamping the two domains together.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Eag1 structure, each CaM molecule occupies two binding sites, one on the PAS and one on the CNBHD, clamping the two domains together (Figure 1a) (Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data from a cited study and Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "a64e6655-5b35-436c-82d7-78a8e40d2162",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C35",
+      "claim": "The CaM binding orientation is essential for channel inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This binding orientation was shown to be essential for channel inhibition but it is unclear how CaM binding prevents opening of the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous functional studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "676f31b7-85e1-491a-8605-875b11e9cbf9",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C36",
+      "claim": "Eag1TM forms functional channels that are voltage dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Eag1TM forms functional channels that are voltage dependent (Figure 2a,b), indicating that the intracellular domains are not essential for voltage-dependent gating and that an interaction between the S4 and C-linker is not required to close the potassium pore.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by functional data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "1c8212e5-b55c-4a83-a43d-18278b5b4de0",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C37",
+      "claim": "An interaction between the S4 and C-linker is not required to close the potassium pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Eag1TM forms functional channels that are voltage dependent (Figure 2a,b), indicating that the intracellular domains are not essential for voltage-dependent gating and that an interaction between the S4 and C-linker is not required to close the potassium pore.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from functional data on Eag1TM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "15673df8-f50e-4449-84ee-7be68c9401ff",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C38",
+      "claim": "Eag1TM had a right shifted V0.5 of 46 mV compared to the WT Eag1 (19 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "Eag1TM had a right shifted V0.5 of 46 mV (zero-slope on the activation curve was not reached up to 100 mV and therefore an accurate value for V0.5 could not be measured) compared to the WT Eag1 (19 mV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "c73e1a64-7b3a-4686-b182-af8533711989",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C39",
+      "claim": "The Eag1/hErg chimera has a V0.5 (2.5 mV) that is in between that of WT Eag1 and hErg (\u221222 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Eag1/hErg chimera has a V0.5 (2.5 mV) that is in between that of WT Eag1 and hErg (\u221222 mV) and exhibits slow rates of channel closure (deactivation), a characteristic of hErg channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "451be2ee-30e7-41e7-86e3-8916db9a7d72",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C40",
+      "claim": "The Eag1/hErg chimera exhibits slow rates of channel closure (deactivation), a characteristic of hErg channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Eag1/hErg chimera has a V0.5 (2.5 mV) that is in between that of WT Eag1 and hErg (\u221222 mV) and exhibits slow rates of channel closure (deactivation), a characteristic of hErg channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "73603c32-e8f9-409b-b540-a79556ce0094",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C41",
+      "claim": "Neither Eag1TM nor the Eag1/hErg chimera exhibits a Cole-Moore effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither mutant channel exhibits a Cole-Moore effect (Figure 2c), which, along with the slow deactivation of the Eag1/hErg chimera and the shifted V0.5 of both channels, demonstrates that the intracellular domains influence voltage-dependent gating kinetics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by functional data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "3245b2f7-7579-4d90-819c-8c848d4e0d2c",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C42",
+      "claim": "The intracellular domains influence voltage-dependent gating kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither mutant channel exhibits a Cole-Moore effect (Figure 2c), which, along with the slow deactivation of the Eag1/hErg chimera and the shifted V0.5 of both channels, demonstrates that the intracellular domains influence voltage-dependent gating kinetics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from functional data on multiple mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "98a36090-8efd-403d-b1ba-46d9f2d27493",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C43",
+      "claim": "The Cole-Moore effect may arise from an interaction between the transmembrane and intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this result suggests that the Cole-Moore effect may arise from an interaction between the transmembrane and intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the loss of Cole-Moore effect in mutants lacking intracellular domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "20fb5f1a-e6a7-46d2-97aa-770e4c7df698",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C44",
+      "claim": "Mutation of Asp 342 to Ala (D342A) results in complete loss of the Cole-Moore effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that only mutation of Asp 342 to Ala (D342A) results in complete loss of the Cole-Moore effect, suggesting that Asp 342 may interact with the intracellular domains (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by functional data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "7a482543-a2f8-48dd-ba7c-47ab9673c18c",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C45",
+      "claim": "Asp 342 may interact with the intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that only mutation of Asp 342 to Ala (D342A) results in complete loss of the Cole-Moore effect, suggesting that Asp 342 may interact with the intracellular domains (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from functional data on the D342A mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "8a62a690-9b8e-4845-9a5e-60bc205201c6",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C46",
+      "claim": "Asp 342 is located at the C-terminus of S4 and is highly conserved in Kvs 10\u201312.",
+      "claim_type": "EXPLICIT",
+      "source": "Asp 342 is located at the C-terminus of S4 and is highly conserved in Kvs 10\u201312.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and structural data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "10b9dab1-3de5-43e4-a126-4f7c347ad929",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C47",
+      "claim": "In the closed conformation of Eag1, Asp 342 does not interact with the intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In the closed conformation of Eag1, Asp 342 does not interact with the intracellular domains (Figure 1b) (Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data from a cited study and Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "b7489111-937e-4535-9d55-a0869be79b60",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C48",
+      "claim": "In the open conformation of hErg the homologous Asp is near (~6 \u00c5) two Arg residues in the PAS loop.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the open conformation of hErg the homologous Asp is near (~6 \u00c5) two Arg residues in the PAS loop (Figure 1c) (Wang and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data from a cited study and Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "3556f65c-b47d-4ffa-a89e-1b9a5ca068a8",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C49",
+      "claim": "In all Kvs 10\u201312 the PAS loop has at least one positively charged residue.",
+      "claim_type": "EXPLICIT",
+      "source": "In all Kvs 10\u201312 the PAS loop has at least one positively charged residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "9c22a245-bb62-4ac1-9c81-31a1158d5505",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C50",
+      "claim": "In Eag1, the corresponding Arg residues are Arg 7 and 8.",
+      "claim_type": "EXPLICIT",
+      "source": "In Eag1, the corresponding Arg residues are Arg 7 and 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and structural comparison.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "d67d5605-7895-49a2-9f11-b7ab1f6b7fb7",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C51",
+      "claim": "The V0.5 of R7A/R8A and \u03943\u20139 are right shifted to a similar extent as Eag1TM and the D342A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The V0.5 of R7A/R8A and \u03943\u20139 are right shifted to a similar extent as Eag1TM and the D342A mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "5fc69236-56d9-4cfe-830d-dd880e4fc95e",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C52",
+      "claim": "Arg 7 and 8 promote channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Arg 7 and 8 promote channel opening, like Asp 342, and mutation of these residues has a similar effect on V0.5 as loss of the intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional data on R7A/R8A and \u03943-9 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "b7136167-dcf5-4345-a495-b4f90021a9ff",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C53",
+      "claim": "Mutation of Arg 7 and 8 has a similar effect on V0.5 as loss of the intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Arg 7 and 8 promote channel opening, like Asp 342, and mutation of these residues has a similar effect on V0.5 as loss of the intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data comparing mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "6af700db-e1ae-42a8-b27a-1a8fa28ff87a",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C54",
+      "claim": "The R7A/R8A and \u03943\u20139 mutations result in a right-shifted V0.5CM.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the R7A/R8A and \u03943\u20139 mutations result in a right-shifted V0.5CM, indicating that more depolarized holding potentials are required for fast activation of these mutants than WT Eag1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "8afa16c3-55d7-49ac-8920-5b8994463464",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C55",
+      "claim": "More depolarized holding potentials are required for fast activation of R7A/R8A and \u03943-9 mutants than WT Eag1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the R7A/R8A and \u03943\u20139 mutations result in a right-shifted V0.5CM, indicating that more depolarized holding potentials are required for fast activation of these mutants than WT Eag1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the right-shifted V0.5CM values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "09b83ace-6649-43b6-9955-0eb829fb91b2",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C56",
+      "claim": "Arg 7 and 8 might form a functional interaction with Asp 342.",
+      "claim_type": "EXPLICIT",
+      "source": "The right shifted V0.5 and the modified Cole-Moore effect of R7A/R8A and \u03943\u20139 suggest that Arg 7 and 8 might form a functional interaction with Asp 342.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional data on mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "dfbdb713-086c-4089-8c29-983aef8cf055",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C57",
+      "claim": "Asp 342 likely interacts with additional residues on the intracellular domains beyond Arg 7 and 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since mutation of Arg 7 and 8 did not result in complete loss of the Cole-Moore effect, Asp 342 likely interacts with additional residues on the intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the incomplete loss of Cole-Moore effect in R7A/R8A mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "d1bf416c-0f23-461e-8ca4-75573e8597a3",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C58",
+      "claim": "An interaction between Asp 342 and the PAS loop may occur in the open conformation to promote channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the functional data along with the proximity of the PAS loop and Asp 342 in the open conformation of hErg suggest that an interaction between Asp 342 and the PAS loop may occur in the open conformation to promote channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional and structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "a4511510-b227-4f0e-8a77-99cebf58b6e6",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C59",
+      "claim": "Leu 10, Val 11, Ala 12, and Pro 13 interact with Tyr 639 and Tyr 213.",
+      "claim_type": "EXPLICIT",
+      "source": "Leu 10, Val 11, Ala 12, and Pro 13 interact with Tyr 639, a conserved residue in Kvs 10\u201312 that is located on the CNBHD, and Tyr 213, a Phe, Tyr or Cys in Kvs 10\u201312 that is located on the loop before S1 of the VS (Figure 1b) (Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data from a cited study and Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "3a5b0ff7-dc1d-4c9c-810c-42d38ddc6f8d",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C60",
+      "claim": "Tyr 639 is a conserved residue in Kvs 10\u201312 that is located on the CNBHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Leu 10, Val 11, Ala 12, and Pro 13 interact with Tyr 639, a conserved residue in Kvs 10\u201312 that is located on the CNBHD, and Tyr 213, a Phe, Tyr or Cys in Kvs 10\u201312 that is located on the loop before S1 of the VS (Figure 1b) (Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis and structural data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "cd3b5287-6b16-4570-8891-7831fbb566cb",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C61",
+      "claim": "Tyr 213 is a Phe, Tyr or Cys in Kvs 10\u201312 that is located on the loop before S1 of the VS.",
+      "claim_type": "EXPLICIT",
+      "source": "Leu 10, Val 11, Ala 12, and Pro 13 interact with Tyr 639, a conserved residue in Kvs 10\u201312 that is located on the CNBHD, and Tyr 213, a Phe, Tyr or Cys in Kvs 10\u201312 that is located on the loop before S1 of the VS (Figure 1b) (Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis and structural data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "a56ad670-1787-4ed5-b2f1-2ad0a9cb9f3c",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C62",
+      "claim": "Residues 10\u201313 link the VS and the intracellular CNBHD.",
+      "claim_type": "EXPLICIT",
+      "source": "In this position, residues 10\u201313 link the VS and the intracellular CNBHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "4aefea54-7bc5-4833-a789-11c8e72bdb71",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C63",
+      "claim": "Y213A, Y639R, and PAS loop mutants with successive deletions of residues 10\u201313 show inactivation and hooked tail currents at more depolarized potentials (40\u2013100 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "These mutants show inactivation and hooked tail currents at more depolarized potentials (40\u2013100 mV), as was previously shown (Terlau et al., 1997) (Figure 4a,b and Figure 4\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 4 and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "df076254-066b-408c-9de5-607fec53e32b",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C64",
+      "claim": "Y213A, Y639R, and PAS loop deletion mutants produce channels that open at more negative (hyperpolarized) potentials than WT Eag1 (\u221280 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "These mutants also produce channels that open at more negative (hyperpolarized) potentials than WT Eag1 (\u221280 mV) and exhibit slow deactivation, demonstrating that the interaction between residues 10\u201313, Tyr 213, and Tyr 639 promotes the closed state of Eag1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "631216cc-7b3b-432d-9a62-ffe03f2c2eb3",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C65",
+      "claim": "Y213A, Y639R, and PAS loop deletion mutants exhibit slow deactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutants also produce channels that open at more negative (hyperpolarized) potentials than WT Eag1 (\u221280 mV) and exhibit slow deactivation, demonstrating that the interaction between residues 10\u201313, Tyr 213, and Tyr 639 promotes the closed state of Eag1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "f23fea29-2a16-46a5-a7f2-18218492b8ef",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C66",
+      "claim": "The interaction between residues 10\u201313, Tyr 213, and Tyr 639 promotes the closed state of Eag1.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutants also produce channels that open at more negative (hyperpolarized) potentials than WT Eag1 (\u221280 mV) and exhibit slow deactivation, demonstrating that the interaction between residues 10\u201313, Tyr 213, and Tyr 639 promotes the closed state of Eag1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional data on mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "c0a88f93-dd94-4827-b329-6470498de026",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C67",
+      "claim": "The PAS loop can be divided into two functionally distinct segments: the N-terminus (residues 1\u20139) and the C-terminus (residues 10\u201313).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these data, the PAS loop can be divided into two functionally distinct segments: the N-terminus (residues 1\u20139; not observed in the Eag1 structure) and the C-terminus (residues 10\u201313) (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from functional data on different PAS loop mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "2c04e4e7-048f-4710-ad70-519da89cd4ec",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C68",
+      "claim": "The PAS loop N-terminus (residues 1-9) seems to promote channel opening and may interact with Asp 342 of the S4-S5 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminus seems to promote channel opening and may interact with Asp 342 of the S4-S5 linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional data on mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "b8859a9e-0c03-4d35-aa87-ba8ffc03141a",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C69",
+      "claim": "The PAS loop C-terminus (residues 10-13) seems to promote channel closure and interacts with the CNBHD.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminus seems to promote channel closure and interacts with the CNBHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional data on mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "866f652a-da1b-4af3-89eb-458435579d46",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C70",
+      "claim": "In the open state structure of hErg the PAS loop C-terminus does not interact with either Tyr 403 or Tyr 827.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the open state structure of hErg the PAS loop C-terminus does not interact with either Tyr 403 (equivalent to Tyr 213 in Eag1) or Tyr 827 (equivalent to Tyr 639 in Eag1) (Figure 1c) suggesting that destabilization of this interface might be necessary for channel opening (Wang and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data from a cited study and Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "65d45069-3eea-438f-81eb-28b3f67c22d9",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C71",
+      "claim": "Destabilization of the interface between PAS loop C-terminus, Tyr 213, and Tyr 639 might be necessary for channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the open state structure of hErg the PAS loop C-terminus does not interact with either Tyr 403 (equivalent to Tyr 213 in Eag1) or Tyr 827 (equivalent to Tyr 639 in Eag1) (Figure 1c) suggesting that destabilization of this interface might be necessary for channel opening (Wang and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "3c0e4b35-dc3b-4f16-ba63-39721dcf5120",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C72",
+      "claim": "Upon depolarization, Asp 342 interacts with the PAS loop N-terminus to stabilize the open state of the VS and destabilize the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to promote channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that the following structural interactions take place in association with voltage dependent gating. Upon depolarization, Asp 342 interacts with the PAS loop N-terminus to stabilize the open state of the VS and destabilize the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to promote channel opening (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on functional and structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "5560ac4a-2f2f-4abe-81a5-5797a01ab4f9",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C73",
+      "claim": "When the VS is hyperpolarized, movement of the S4 disrupts the interaction between Asp 342 and the PAS loop N-terminus, allowing the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to form and promote channel closing.",
+      "claim_type": "EXPLICIT",
+      "source": "When the VS is hyperpolarized, movement of the S4 disrupts the interaction between Asp 342 and the PAS loop N-terminus, allowing the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to form and promote channel closing (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on functional and structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "71505e7c-23f9-4a3e-9e5e-310d7d329751",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C74",
+      "claim": "Co-expression of two halves of a split Eag1 construct (L341 split) produces a partially constitutively open channel.",
+      "claim_type": "EXPLICIT",
+      "source": "First, co-expression of two halves of a split Eag1 construct (L341 split), in which the N-terminal half of the channel includes Met 1-Leu 341 and the C-terminal half includes Asp 342-Ser 962, produces a partially constitutively open channel (Figure 5a) (Tomczak et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 5 and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "f2359c2a-fbd3-45f7-b602-0df846f02603",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C75",
+      "claim": "In the split Eag1 construct Asp 342 is no longer connected to S4 of the VS and thus is no longer forced to move when the VS moves.",
+      "claim_type": "EXPLICIT",
+      "source": "This functional behavior can be explained by the above hypothesis because in the split Eag1 construct Asp 342 is no longer connected to S4 of the VS and thus is no longer forced to move when the VS moves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the split construct.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "2296ac9c-6db8-4ece-a167-312b9cad0057",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C76",
+      "claim": "Asp 342 can maintain its interaction with the PAS loop to promote channel opening in the split construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, Asp 342 can maintain its interaction with the PAS loop to promote channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the constitutively open phenotype of the split channel.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "5ca5c821-2184-4e6f-b285-f654030694b3",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C77",
+      "claim": "Introduction of the D342A and \u03943\u20139 mutations into the Eag1 split construct produce channels that close at hyperpolarized potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this conclusion, introduction of the D342A and \u03943\u20139 mutations into the Eag1 split construct produce channels that close at hyperpolarized potentials (Figure 5b,c) (Tomczak et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 5 and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "d32dc4e7-5687-4f42-b5d4-96fd26a41af6",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C78",
+      "claim": "The Cole-Moore effect was proposed to be due to the existence of multiple closed states that the VS must transition through in order to reach an active or depolarized conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, this mechanism provides an explanation for the Cole-Moore effect. The Cole-Moore effect was proposed to be due to the existence of multiple closed states that the VS must transition through in order to reach an active or depolarized conformation (Cole and Moore, 1960).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "dc27db6c-8e87-414c-9194-afc859c88de4",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C80",
+      "claim": "At more negative holding potentials the VS might have to transition through more closed states in order for the S4 and Asp 342 to interact with the PAS loop N-terminus, which will result in slower activation times.",
+      "claim_type": "EXPLICIT",
+      "source": "In Eag, at more negative holding potentials the VS might have to transition through more closed states in order for the S4 and Asp 342 to interact with the PAS loop N-terminus, which will result in slower activation times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism to explain the Cole-Moore effect in Eag1.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "1475b3d1-7404-4328-a973-1fb20b92185d",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C81",
+      "claim": "If we remove the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639, then the Cole-Moore effect should be lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if we remove the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639, which we propose is destabilized when Asp 342 interacts with the PAS loop N-terminus, then the Cole-Moore effect should be lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "6bcc6157-f6e7-42af-a9d8-ec33b037181f",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C82",
+      "claim": "\u03943\u201312 and \u03943\u201313 do not exhibit a Cole-Moore effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this line of reasoning, \u03943\u201312 and \u03943\u201313 do not exhibit a Cole-Moore effect while Y213A, Y639R, \u03943\u201310, and \u03943\u201311 show a reduced Cole-Moore effect compared to the WT channel (Figure 4c and Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "13470e76-c1be-480f-ad95-8a763c5dcb65",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C83",
+      "claim": "Y213A, Y639R, \u03943\u201310, and \u03943\u201311 show a reduced Cole-Moore effect compared to the WT channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this line of reasoning, \u03943\u201312 and \u03943\u201313 do not exhibit a Cole-Moore effect while Y213A, Y639R, \u03943\u201310, and \u03943\u201311 show a reduced Cole-Moore effect compared to the WT channel (Figure 4c and Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "c35afebe-f20c-4e4c-ad59-97f1bcb35b5e",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C84",
+      "claim": "In the presence of Ca2+/CaM, Eag1 \u03943\u201313 remains open at hyperpolarized voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of Ca2+/CaM, Eag1 \u03943\u201313 remains open at hyperpolarized voltages (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "c63aef22-43d2-4b68-9c32-5781184ed1e9",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C85",
+      "claim": "Two different conformations were identified for Eag1 \u03943\u201313/CaM: conformation 1 at 3.7 \u00c5 and conformation 2 at 4.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Two different conformations were identified for Eag1 \u03943\u201313/CaM: conformation 1 at 3.7 \u00c5 and conformation 2 at 4.0 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Cryo-EM structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "7634915b-cea7-41cc-ab42-f53b1266fc7d",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C86",
+      "claim": "In both conformations of Eag1 \u03943-13/CaM, the S4 helices adopt a depolarized conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In both conformations, the S4 helices adopt a depolarized conformation and intracellular domains are rotated in a counterclockwise direction when viewed from the extracellular side of the membrane, but in conformation two the extent of the rotation is larger (2.4\u00b0 degrees for conformation 1 and 8.6\u00b0 degrees for conformation 2) (Figure 6b,c and Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "2750f7c4-8220-45ba-89fe-b4defa5cde39",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C87",
+      "claim": "In both conformations of Eag1 \u03943-13/CaM, intracellular domains are rotated in a counterclockwise direction when viewed from the extracellular side of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In both conformations, the S4 helices adopt a depolarized conformation and intracellular domains are rotated in a counterclockwise direction when viewed from the extracellular side of the membrane, but in conformation two the extent of the rotation is larger (2.4\u00b0 degrees for conformation 1 and 8.6\u00b0 degrees for conformation 2) (Figure 6b,c and Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "524599e7-23b2-4555-ba1d-dae847be5b80",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C88",
+      "claim": "In conformation 1 of Eag1 \u03943-13/CaM the rotation is 2.4 degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "In both conformations, the S4 helices adopt a depolarized conformation and intracellular domains are rotated in a counterclockwise direction when viewed from the extracellular side of the membrane, but in conformation two the extent of the rotation is larger (2.4\u00b0 degrees for conformation 1 and 8.6\u00b0 degrees for conformation 2) (Figure 6b,c and Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "8a4be932-effd-45d0-bc3c-2f67dd70943a",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C89",
+      "claim": "In conformation 2 of Eag1 \u03943-13/CaM the rotation is 8.6 degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "In both conformations, the S4 helices adopt a depolarized conformation and intracellular domains are rotated in a counterclockwise direction when viewed from the extracellular side of the membrane, but in conformation two the extent of the rotation is larger (2.4\u00b0 degrees for conformation 1 and 8.6\u00b0 degrees for conformation 2) (Figure 6b,c and Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "93e8dab3-7d0f-4926-ad5c-152c8575bee9",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C90",
+      "claim": "The rotation observed in Eag1 \u03943-13/CaM conformations is in a similar direction as the intracellular domains in the open conformation structure of hErg.",
+      "claim_type": "EXPLICIT",
+      "source": "The rotation observed in these conformations is in a similar direction as the intracellular domains in the open conformation structure of hErg (Wang and MacKinnon, 2017) (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison shown in Figure 6d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "57268de3-34cb-4a58-861a-32c07700a326",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C91",
+      "claim": "The extent of the rotation of the Eag1 intracellular domains is not as large as the 20\u00b0 rotation observed in hErg.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the extent of the rotation of the Eag1 intracellular domains is not as large as the 20\u00b0 rotation observed in hErg and the S6 helices remain closed (Figure 6d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "6371fdd0-853c-4344-9710-5cabaa79c005",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C92",
+      "claim": "The S6 helices remain closed in the Eag1 \u03943-13/CaM structures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the extent of the rotation of the Eag1 intracellular domains is not as large as the 20\u00b0 rotation observed in hErg and the S6 helices remain closed (Figure 6d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "3f30b2f0-0ab1-4b16-a7ba-9c2b4a35cf1a",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C93",
+      "claim": "Conformation 1 and conformation 2 of Eag1 \u03943-13/CaM represent pre-open conformations of Eag1 on the pathway from closed to fully open.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we believe that conformation 1 and conformation 2 represent pre-open conformations of Eag1 on the pathway from closed to fully open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural data showing partial rotation with closed pore.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "738dec7f-9a70-4450-a99f-f8872b5e7da6",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C94",
+      "claim": "Eag1 might be more stable in a closed conformation compared to hErg.",
+      "claim_type": "EXPLICIT",
+      "source": "A hypothesis for why the pore remains closed in the structure of Eag1 \u03943\u201313/CaM is that, compared to hErg, Eag1 might be more stable in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis to explain the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "0cad3494-b3c4-4846-b128-42233677747f",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C95",
+      "claim": "Insertion of the intracellular domains of hErg onto Eag1 (Eag1/hErg chimera) causes a 20 mV left shift in the V0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "First, insertion of the intracellular domains of hErg onto Eag1 (Eag1/hErg chimera) causes a 20 mV left shift in the V0.5 (Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "87dad2eb-648a-4c3b-a78b-482b330124b3",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C96",
+      "claim": "The V0.5 of Eag1 is right-shifted by 40 mV compared with hErg.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the V0.5 of Eag1 is right-shifted by 40 mV compared with hErg and Eag1TM is right shifted by 80 mV when compared to a hErg channel lacking the intracellular domains (Figure 2a,b) (Hausammann and Gr\u00fctter, 2013; Wang and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 2 and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "667113ba-f204-4e3c-bb0d-c6628955f529",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C97",
+      "claim": "Eag1TM is right shifted by 80 mV when compared to a hErg channel lacking the intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the V0.5 of Eag1 is right-shifted by 40 mV compared with hErg and Eag1TM is right shifted by 80 mV when compared to a hErg channel lacking the intracellular domains (Figure 2a,b) (Hausammann and Gr\u00fctter, 2013; Wang and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 2 and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "76c84031-7dfe-4cdf-afd4-7aeb0646607f",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C98",
+      "claim": "In Eag1, Phe 475 and Gln 477 are located at the interface of the S6 helices on either side of Gln 476, the intracellular gate.",
+      "claim_type": "EXPLICIT",
+      "source": "In Eag1, Phe 475 and Gln 477 are located at the interface of the S6 helices on either side of Gln 476, the intracellular gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "e6760e93-02d4-40b0-bf1a-b7991853349b",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C99",
+      "claim": "In Kv11 and Kv12, which have a left shifted V0.5 compared to Eag1, the residues corresponding to Phe 475 and Gln 477 are Ile and Arg respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In Kv11 and Kv12, which have a left shifted V0.5 compared to Eag1, these residues are Ile and Arg respectively (Bauer and Schwarz, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "aea4d83b-45a4-4c18-8adb-ce314987c92b",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C100",
+      "claim": "The Eag1 double mutant F475I/Q477R causes a 50 mV left shift in the V0.5 to \u221220 mV when introduced into the full-length channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The Eag1 double mutant F475I/Q477R causes a 50 mV left shift in the V0.5 to \u221220 mV when introduced into the full-length channel and a 16 mV left shift in the V0.5 to 30 mV when introduced into Eag1TM (Figure 7a,b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "7db8736f-4401-456f-aa37-39013960b1f5",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C101",
+      "claim": "The F475I/Q477R mutation causes a 16 mV left shift in the V0.5 to 30 mV when introduced into Eag1TM.",
+      "claim_type": "EXPLICIT",
+      "source": "The Eag1 double mutant F475I/Q477R causes a 50 mV left shift in the V0.5 to \u221220 mV when introduced into the full-length channel and a 16 mV left shift in the V0.5 to 30 mV when introduced into Eag1TM (Figure 7a,b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "068a4d4d-4b8d-40c5-a38f-9ec9e2a32ad1",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C102",
+      "claim": "When the F475I/Q477R mutation is introduced into the Eag1/hErg chimera the channel remains open at hyperpolarized potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when the F475I/Q477R mutation is introduced into the Eag1/hErg chimera the channel remains open at hyperpolarized potentials (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "cd3df64a-9625-4a7a-9645-e391f8cd85a2",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C103",
+      "claim": "The intracellular domains and Phe 475 and Gln 477 cause Eag1 to be more stable in a closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that the intracellular domains and Phe 475 and Gln 477 cause Eag1 to be more stable in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional data on mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "8f92a97d-7df8-465b-9491-1fd4acf9071a",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C104",
+      "claim": "The Eag1 intracellular domains, when viewed from the extracellular side, rotate in a counterclockwise direction to promote the opening of the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that the Eag1 intracellular domains, when viewed from the extracellular side, rotate in a counterclockwise direction to promote the opening of the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "35425cc9-10e1-4f91-988d-1b403eab4cd7",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C105",
+      "claim": "Due to the stability of Eag1 in a closed conformation and the conditions under which the Cryo-EM structure was determined, pore opening is transient and thus not observed in the Eag1 \u03943\u201313/CaM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the stability of Eag1 in a closed conformation and the conditions under which the Cryo-EM structure was determined we suspect that pore opening is transient and thus not observed in the Eag1 \u03943\u201313/CaM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why the pore remains closed in the structure.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "ef8ac4e2-95f5-4125-bc10-2b0a778d9aa7",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C106",
+      "claim": "Rotation of the intracellular domains observed in the different conformations of Eag1 \u03943\u201313/CaM occurs with CaM bound to the channel in the same orientation as observed in the WT structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Rotation of the intracellular domains observed in the different conformations of Eag1 \u03943\u201313/CaM occurs with CaM bound to the channel in the same orientation as observed in the WT structure (Figure 6\u2014figure supplement 4) (Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural data shown in Figure 6 supplement 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "0c0b311d-4e89-482b-b8c2-b498d9863ccd",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C107",
+      "claim": "Binding of CaM does not clamp the PAS and CNBHD domains together to prevent rotation of the intracellular domains and channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that binding of CaM does not clamp the PAS and CNBHD domains together to prevent rotation of the intracellular domains and channel opening as we previously proposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural data showing rotation with CaM bound.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "2414d1e6-8aef-4983-996e-b43385d4742e",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C108",
+      "claim": "CaM binding to the channel helps to stabilize the hydrophobic interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we think that more likely CaM binding to the channel helps to stabilize the hydrophobic interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism for CaM inhibition.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "0f5bc285-1bfd-4da6-9b22-5b0fb2bc46cc",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C109",
+      "claim": "By stabilizing the interaction between PAS loop C-terminus, Tyr 213, and Tyr 639, CaM can inhibit the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed above, this interaction seems to be important for channel closure. Thus, by stabilizing this interaction CaM can inhibit the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism for CaM inhibition.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "8b53e649-c4fe-421b-b819-9d40faa3c13a",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C110",
+      "claim": "Deletion of the interaction between PAS loop C-terminus, Tyr 213, and Tyr 639 by removing residues 3\u201313 results in a channel that is no longer inhibited by CaM.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, deletion of this interaction by removing residues 3\u201313 results in a channel that is no longer inhibited by CaM (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "192d37ff-37fe-4b6f-9260-6f8983914b74",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C111",
+      "claim": "A similar effect to \u03943-13 was observed in Eag1 mutants that lack the PAS cap (residues 1\u201326) or the entire PAS domain (27-135).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a similar effect was observed in Eag1 mutants that lack the PAS cap (residues 1\u201326) or the entire PAS domain (27-135) (L\u00f6rinczi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "3b5a5df9-4952-4406-a63b-f30ef00b0df4",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C112",
+      "claim": "Intracellular domains likely play a similar modulatory role in voltage-dependent gating of the related Kv11-12 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular domains likely play a similar modulatory role in voltage-dependent gating of the related Kv11-12 channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of Kv10-12 channels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "0ab10b44-412e-4a58-a33d-99e6567498d0",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C113",
+      "claim": "In hErg deletion of the intracellular domains and mutation of Asp 540 does not change the V0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in hErg deletion of the intracellular domains and mutation of Asp 540 does not change the V0.5, suggesting that the interaction between the PAS N-terminus and Asp 540 is not important for channel activation (Hausammann and Gr\u00fctter, 2013; Morais Cabral et al., 1998; Sanguinetti and Xu, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "0c762554-1c3a-4fc4-9e63-0fdb64c10762",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C114",
+      "claim": "The interaction between the PAS N-terminus and Asp 540 is not important for channel activation in hErg.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in hErg deletion of the intracellular domains and mutation of Asp 540 does not change the V0.5, suggesting that the interaction between the PAS N-terminus and Asp 540 is not important for channel activation (Hausammann and Gr\u00fctter, 2013; Morais Cabral et al., 1998; Sanguinetti and Xu, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from functional data in cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "9d0f88f7-e24d-430a-880b-98636a625622",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C115",
+      "claim": "In hErg, the interaction between Asp 540 and the PAS loop forms after channel activation and prevents pore closing, which results in slow deactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we propose that in hErg, which we have shown apparently has a more stable open conformation than Eag1, the interaction between Asp 540 and the PAS loop forms after channel activation and prevents pore closing, which results in slow deactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism for hErg slow deactivation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "2e1290e1-6b93-4733-911b-22abe7ad67ba",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C116",
+      "claim": "The interaction between Asp 540 and the PAS loop N-terminus in hErg may prevent pore closing by destabilizing the interaction between the PAS loop C-terminus, Tyr 403, and Tyr 827.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Eag1, the interaction between Asp 540 and the PAS loop N-terminus in hErg may prevent pore closing by destabilizing the interaction between the PAS loop C-terminus, Tyr 403, and Tyr 827.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on analogy to Eag1.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "beb5586b-30b5-4359-a688-8317690ed648",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C117",
+      "claim": "Splitting the hErg channel so that Asp 540 is not covalently linked to the voltage sensor produces a channel that displays slowed deactivation compared to WT hErg.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, splitting the hErg channel, analogous to the Eag1 L341 split, so that Asp 540 is not covalently linked to the voltage sensor, produces a channel that displays slowed deactivation compared to WT hErg (de la Pe\u00f1a et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "c3f3e683-5c49-470e-ad81-04eb88ee9af1",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C118",
+      "claim": "CaM may be able to stabilize the PAS loop in a closed conformation by binding to the PAS domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps by binding to the PAS domain, CaM may be able to stabilize the PAS loop in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism for CaM inhibition.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "969c1a66-9ff2-440a-b0b9-ea78b22ebd5b",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C119",
+      "claim": "Channel opening may occur through a counterclockwise rotation of the intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of Eag1 \u03943\u201313/CaM in a pre-open conformation suggests that channel opening may occur through a counterclockwise rotation of the intracellular domains and channel closing may occur through a clockwise rotation of the intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "cce8c6df-28aa-4acd-b4a9-589521d69c91",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C120",
+      "claim": "Channel closing may occur through a clockwise rotation of the intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of Eag1 \u03943\u201313/CaM in a pre-open conformation suggests that channel opening may occur through a counterclockwise rotation of the intracellular domains and channel closing may occur through a clockwise rotation of the intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "19f6910d-c4ad-432d-97a7-c94887e4f1d7",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "claim_id": "C121",
+      "claim": "CaM seems to function by stabilizing the interaction between residues 10\u201313, Tyr 213, and Tyr 639 to prevent pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CaM seems to function through this proposed mechanism by stabilizing the interaction between residues 10\u201313, Tyr 213, and Tyr 639 to prevent pore opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism for CaM inhibition.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dfdf3626-e1d0-4830-a9bf-ddde76139823",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The intracellular domains of Eag1 are not required for voltage-dependent gating but modulate gating kinetics. The Eag1TM construct (lacking PAS, C-linker, and CNBHD) forms functional voltage-dependent channels with a right-shifted V0.5 (46 mV vs 19 mV for WT) and lacks the Cole-Moore effect, demonstrating that intracellular domains influence gating kinetics but are not essential for voltage-dependent gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C36-C38, C41-C42 are well-supported by functional electrophysiology data from the Eag1TM construct shown in Figure 2. The data clearly demonstrate that channels lacking intracellular domains remain voltage-dependent but exhibit altered gating properties (shifted V0.5, loss of Cole-Moore effect), supporting both the dispensability and modulatory role of these domains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Asp 342 at the C-terminus of S4 functionally interacts with Arg 7 and 8 in the PAS loop N-terminus to promote channel opening. The D342A mutation results in complete loss of the Cole-Moore effect and right-shifted V0.5. Similarly, R7A/R8A and \u03943-9 mutations produce right-shifted V0.5 and modified Cole-Moore effects, suggesting these residues form a functional interaction that stabilizes the open state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C58 are supported by systematic mutagenesis data in Figures 3 and structural comparisons with hErg. The functional data showing similar phenotypes for D342A, R7A/R8A, and \u03943-9 mutations provide strong evidence for a functional interaction. However, the incomplete loss of Cole-Moore effect in R7A/R8A suggests additional interactions exist, which is appropriately acknowledged in C57.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The PAS loop C-terminus (residues 10-13) interacts with Tyr 213 (VS) and Tyr 639 (CNBHD) to promote the closed state of Eag1. Mutations disrupting this interface (Y213A, Y639R, \u03943-10 to \u03943-13) produce channels that open at hyperpolarized potentials and exhibit slow deactivation. The PAS loop can be functionally divided into N-terminus (1-9, promotes opening) and C-terminus (10-13, promotes closure).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C71 are well-supported by functional data in Figure 4 and structural data from Eag1 and hErg structures. The systematic deletion series (\u03943-10 through \u03943-13) provides strong evidence for the functional division of the PAS loop. The structural observation that these interactions are absent in open hErg (C70) supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "c902dbaa-a62f-4286-9658-4f8d2ffbeb79",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A proposed voltage-dependent gating mechanism where VS movement modulates PAS loop interactions: upon depolarization, Asp 342 interacts with PAS loop N-terminus to stabilize the open VS and destabilize the PAS loop C-terminus/Tyr 213/Tyr 639 interaction; upon hyperpolarization, S4 movement disrupts the Asp 342-PAS loop N-terminus interaction, allowing the closing interaction to form. Split channel experiments support this model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C77 present a mechanistic model supported by split channel data in Figure 5. The L341 split produces constitutively open channels, while D342A and \u03943-9 mutations in the split construct restore voltage-dependent closure, providing strong functional validation of the proposed mechanism. However, the mechanism involves some inference from structural and functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "b6ef31d5-11bf-4ef5-b136-bb01d2c396e1",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Cole-Moore effect in Eag1 arises from the interaction between PAS loop C-terminus, Tyr 213, and Tyr 639. At more negative holding potentials, the VS must transition through more closed states for Asp 342 to interact with the PAS loop N-terminus. Deletion of residues 10-13 (\u03943-12, \u03943-13) eliminates the Cole-Moore effect, while partial deletions or point mutations reduce it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 provide a mechanistic explanation for the Cole-Moore effect supported by functional data in Figure 4. The systematic deletion series showing progressive loss of Cole-Moore effect with increasing deletion of PAS loop C-terminus residues provides strong support. The proposed mechanism is consistent with the classical interpretation of the Cole-Moore effect (C78).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "2fb100a8-63bb-43ab-b274-96a0a0da3f3b",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mutation of the PAS loop C-terminus/Tyr 213/Tyr 639 interaction (\u03943-13) renders Eag1 insensitive to calmodulin inhibition. CaM does not prevent rotation of intracellular domains but instead stabilizes the interaction between residues 10-13, Tyr 213, and Tyr 639 to inhibit channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C84, C107-C110, C121 are supported by functional data showing Eag1 \u03943-13 remains open in the presence of Ca2+/CaM (Figure 6a) and structural data showing CaM bound in the same orientation during domain rotation (Figure 6 supplement 4). This provides strong evidence for a revised mechanism of CaM inhibition compared to the authors' previous proposal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "7bb98747-c957-4499-a3e3-a6aaf01749fd",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Channel opening occurs through counterclockwise rotation of the intracellular domains. Two pre-open conformations of Eag1 \u03943-13/CaM were captured by cryo-EM at 3.7 \u00c5 and 4.0 \u00c5 resolution, showing 2.4\u00b0 and 8.6\u00b0 counterclockwise rotations respectively with S4 in depolarized conformation but S6 helices remaining closed. The rotation direction is similar to open hErg but less extensive (20\u00b0 in hErg).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C85-C93, C104, C119-C120 are supported by high-resolution cryo-EM structures showing two distinct conformations with progressive rotation (Figure 6). The structural data clearly demonstrate counterclockwise rotation of intracellular domains with closed pore, supporting the interpretation as pre-open conformations. The comparison with hErg provides additional validation of the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "20da1468-b1f9-48ae-8582-4af490de005a",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Eag1 is more stable in a closed conformation compared to hErg due to specific residues at the S6 helix interface (Phe 475 and Gln 477 in Eag1 vs Ile and Arg in Kv11/12). The F475I/Q477R mutation causes a 50 mV left shift in V0.5 in full-length Eag1 and produces constitutively open channels in the Eag1/hErg chimera, explaining why the pore remains closed in the Eag1 \u03943-13/CaM structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C103, C105 are supported by functional data in Figure 7 and comparative analysis with hErg. The F475I/Q477R mutation data provide strong evidence that these residues contribute to closed-state stability. The hypothesis that this explains the closed pore in the structure (C105) is reasonable but involves some speculation about experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "dc53505e-ec3c-4546-893f-5849c29d5df0",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Intracellular domains likely play similar modulatory roles in related Kv11-12 channels, but with functional differences. In hErg, the interaction between Asp 540 and the PAS loop forms after channel activation to prevent pore closing (causing slow deactivation), rather than promoting activation as in Eag1. Split hErg channels show slowed deactivation, supporting this model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C117 extend the findings to related channels based on cited literature and comparative analysis. The proposed mechanism for hErg (C115-C116) is consistent with known functional differences and supported by split channel data from cited work (C117). However, this represents extrapolation from the Eag1 data rather than direct experimental evidence in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "3fb3a512-f93b-4b52-929d-bf26addb3365",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on voltage-gated potassium channel structure and gating mechanisms. Kvs 1-9 use a domain-swapped S4-S5 linker as a mechanical lever, while Kvs 10-12 have a shorter, non-domain-swapped S4-S5 linker suggesting an alternative gating mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C10-C22 provide established background knowledge supported by multiple citations and structural data. These claims accurately represent the current understanding of Kv channel architecture and the structural differences between Kv subfamilies that motivate the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "77e92067-24ed-4dd4-9999-705a7b833d82",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Structural features of Eag1 relevant to gating: PAS domain positioned below VS with 15-residue PAS loop directed toward S4-S5 linker; C-linker forms ring below S6 helices; CaM binds to both PAS and CNBHD in presence of calcium. The PAS loop has been implicated in voltage-dependent gating and the Cole-Moore effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C35 describe structural features from previous work (primarily Whicher and MacKinnon 2016) and established knowledge about CaM regulation. These provide essential context for the current study and are well-supported by cited structural and functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "8aa49752-bf1a-4b5a-bbf0-a3c82fd6877d",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Eag1/hErg chimera has intermediate V0.5 (2.5 mV) between Eag1 and hErg, exhibits slow deactivation characteristic of hErg, and lacks the Cole-Moore effect, suggesting the Cole-Moore effect arises from transmembrane-intracellular domain interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40, C43 are supported by functional data in Figure 2. The chimera data provide additional evidence for the modulatory role of intracellular domains and support the hypothesis about the origin of the Cole-Moore effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    },
+    {
+      "id": "863113f5-499f-4104-af11-d077c6f50649",
+      "content_id": "0a95e3af-1350-454c-b26c-7b59f39759b9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Additional observations on CaM mechanism: rotation occurs with CaM bound in the same orientation as WT structure; similar CaM insensitivity observed in mutants lacking PAS cap or entire PAS domain; CaM may stabilize the PAS loop in a closed conformation by binding to the PAS domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106, C111, C118 provide supporting observations for the CaM mechanism. C106 is supported by structural data, C111 by cited literature, and C118 is speculative but reasonable. These claims support the main conclusions about CaM function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:04:27.341801Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "495f1c75-0f1b-45d5-a061-1ff611b13050",
+      "result_id": "dfdf3626-e1d0-4830-a9bf-ddde76139823"
+    },
+    {
+      "claim_id": "676f31b7-85e1-491a-8605-875b11e9cbf9",
+      "result_id": "dfdf3626-e1d0-4830-a9bf-ddde76139823"
+    },
+    {
+      "claim_id": "1c8212e5-b55c-4a83-a43d-18278b5b4de0",
+      "result_id": "dfdf3626-e1d0-4830-a9bf-ddde76139823"
+    },
+    {
+      "claim_id": "15673df8-f50e-4449-84ee-7be68c9401ff",
+      "result_id": "dfdf3626-e1d0-4830-a9bf-ddde76139823"
+    },
+    {
+      "claim_id": "73603c32-e8f9-409b-b540-a79556ce0094",
+      "result_id": "dfdf3626-e1d0-4830-a9bf-ddde76139823"
+    },
+    {
+      "claim_id": "3245b2f7-7579-4d90-819c-8c848d4e0d2c",
+      "result_id": "dfdf3626-e1d0-4830-a9bf-ddde76139823"
+    },
+    {
+      "claim_id": "20fb5f1a-e6a7-46d2-97aa-770e4c7df698",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "7a482543-a2f8-48dd-ba7c-47ab9673c18c",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "8a62a690-9b8e-4845-9a5e-60bc205201c6",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "10b9dab1-3de5-43e4-a126-4f7c347ad929",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "b7489111-937e-4535-9d55-a0869be79b60",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "9c22a245-bb62-4ac1-9c81-31a1158d5505",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "d67d5605-7895-49a2-9f11-b7ab1f6b7fb7",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "5fc69236-56d9-4cfe-830d-dd880e4fc95e",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "b7136167-dcf5-4345-a495-b4f90021a9ff",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "6af700db-e1ae-42a8-b27a-1a8fa28ff87a",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "8afa16c3-55d7-49ac-8920-5b8994463464",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "09b83ace-6649-43b6-9955-0eb829fb91b2",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "dfbdb713-086c-4089-8c29-983aef8cf055",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "d1bf416c-0f23-461e-8ca4-75573e8597a3",
+      "result_id": "d1dbb72e-3798-4e6c-9f27-ab263409dad9"
+    },
+    {
+      "claim_id": "a4511510-b227-4f0e-8a77-99cebf58b6e6",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "3a5b0ff7-dc1d-4c9c-810c-42d38ddc6f8d",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "cd3b5287-6b16-4570-8891-7831fbb566cb",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "a56ad670-1787-4ed5-b2f1-2ad0a9cb9f3c",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "4aefea54-7bc5-4833-a789-11c8e72bdb71",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "df076254-066b-408c-9de5-607fec53e32b",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "631216cc-7b3b-432d-9a62-ffe03f2c2eb3",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "f23fea29-2a16-46a5-a7f2-18218492b8ef",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "c0a88f93-dd94-4827-b329-6470498de026",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "2c04e4e7-048f-4710-ad70-519da89cd4ec",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "b8859a9e-0c03-4d35-aa87-ba8ffc03141a",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "866f652a-da1b-4af3-89eb-458435579d46",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "65d45069-3eea-438f-81eb-28b3f67c22d9",
+      "result_id": "bd7b25c5-b828-4ece-b5b5-b9eea17bdecb"
+    },
+    {
+      "claim_id": "3c0e4b35-dc3b-4f16-ba63-39721dcf5120",
+      "result_id": "c902dbaa-a62f-4286-9658-4f8d2ffbeb79"
+    },
+    {
+      "claim_id": "5560ac4a-2f2f-4abe-81a5-5797a01ab4f9",
+      "result_id": "c902dbaa-a62f-4286-9658-4f8d2ffbeb79"
+    },
+    {
+      "claim_id": "71505e7c-23f9-4a3e-9e5e-310d7d329751",
+      "result_id": "c902dbaa-a62f-4286-9658-4f8d2ffbeb79"
+    },
+    {
+      "claim_id": "f2359c2a-fbd3-45f7-b602-0df846f02603",
+      "result_id": "c902dbaa-a62f-4286-9658-4f8d2ffbeb79"
+    },
+    {
+      "claim_id": "2296ac9c-6db8-4ece-a167-312b9cad0057",
+      "result_id": "c902dbaa-a62f-4286-9658-4f8d2ffbeb79"
+    },
+    {
+      "claim_id": "5ca5c821-2184-4e6f-b285-f654030694b3",
+      "result_id": "c902dbaa-a62f-4286-9658-4f8d2ffbeb79"
+    },
+    {
+      "claim_id": "d32dc4e7-5687-4f42-b5d4-96fd26a41af6",
+      "result_id": "b6ef31d5-11bf-4ef5-b136-bb01d2c396e1"
+    },
+    {
+      "claim_id": "dc27db6c-8e87-414c-9194-afc859c88de4",
+      "result_id": "b6ef31d5-11bf-4ef5-b136-bb01d2c396e1"
+    },
+    {
+      "claim_id": "1475b3d1-7404-4328-a973-1fb20b92185d",
+      "result_id": "b6ef31d5-11bf-4ef5-b136-bb01d2c396e1"
+    },
+    {
+      "claim_id": "6bcc6157-f6e7-42af-a9d8-ec33b037181f",
+      "result_id": "b6ef31d5-11bf-4ef5-b136-bb01d2c396e1"
+    },
+    {
+      "claim_id": "13470e76-c1be-480f-ad95-8a763c5dcb65",
+      "result_id": "b6ef31d5-11bf-4ef5-b136-bb01d2c396e1"
+    },
+    {
+      "claim_id": "d5b0b3e4-4266-461b-9904-ab51ff37adb6",
+      "result_id": "2fb100a8-63bb-43ab-b274-96a0a0da3f3b"
+    },
+    {
+      "claim_id": "c35afebe-f20c-4e4c-ad59-97f1bcb35b5e",
+      "result_id": "2fb100a8-63bb-43ab-b274-96a0a0da3f3b"
+    },
+    {
+      "claim_id": "8b53e649-c4fe-421b-b819-9d40faa3c13a",
+      "result_id": "2fb100a8-63bb-43ab-b274-96a0a0da3f3b"
+    },
+    {
+      "claim_id": "0c0b311d-4e89-482b-b8c2-b498d9863ccd",
+      "result_id": "2fb100a8-63bb-43ab-b274-96a0a0da3f3b"
+    },
+    {
+      "claim_id": "2414d1e6-8aef-4983-996e-b43385d4742e",
+      "result_id": "2fb100a8-63bb-43ab-b274-96a0a0da3f3b"
+    },
+    {
+      "claim_id": "0f5bc285-1bfd-4da6-9b22-5b0fb2bc46cc",
+      "result_id": "2fb100a8-63bb-43ab-b274-96a0a0da3f3b"
+    },
+    {
+      "claim_id": "19f6910d-c4ad-432d-97a7-c94887e4f1d7",
+      "result_id": "2fb100a8-63bb-43ab-b274-96a0a0da3f3b"
+    },
+    {
+      "claim_id": "35563a47-f34a-425f-ba2b-e9d8a440a943",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "c63aef22-43d2-4b68-9c32-5781184ed1e9",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "7634915b-cea7-41cc-ab42-f53b1266fc7d",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "2750f7c4-8220-45ba-89fe-b4defa5cde39",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "524599e7-23b2-4555-ba1d-dae847be5b80",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "8a4be932-effd-45d0-bc3c-2f67dd70943a",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "93e8dab3-7d0f-4926-ad5c-152c8575bee9",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "57268de3-34cb-4a58-861a-32c07700a326",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "6371fdd0-853c-4344-9710-5cabaa79c005",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "3f30b2f0-0ab1-4b16-a7ba-9c2b4a35cf1a",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "8f92a97d-7df8-465b-9491-1fd4acf9071a",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "969c1a66-9ff2-440a-b0b9-ea78b22ebd5b",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "cce8c6df-28aa-4acd-b4a9-589521d69c91",
+      "result_id": "7bb98747-c957-4499-a3e3-a6aaf01749fd"
+    },
+    {
+      "claim_id": "738dec7f-9a70-4450-a99f-f8872b5e7da6",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "0cad3494-b3c4-4846-b128-42233677747f",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "87dad2eb-648a-4c3b-a78b-482b330124b3",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "667113ba-f204-4e3c-bb0d-c6628955f529",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "76c84031-7dfe-4cdf-afd4-7aeb0646607f",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "e6760e93-02d4-40b0-bf1a-b7991853349b",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "aea4d83b-45a4-4c18-8adb-ce314987c92b",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "7db8736f-4401-456f-aa37-39013960b1f5",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "068a4d4d-4b8d-40c5-a38f-9ec9e2a32ad1",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "cd3df64a-9625-4a7a-9645-e391f8cd85a2",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "35425cc9-10e1-4f91-988d-1b403eab4cd7",
+      "result_id": "20da1468-b1f9-48ae-8582-4af490de005a"
+    },
+    {
+      "claim_id": "3b5a5df9-4952-4406-a63b-f30ef00b0df4",
+      "result_id": "dc53505e-ec3c-4546-893f-5849c29d5df0"
+    },
+    {
+      "claim_id": "0ab10b44-412e-4a58-a33d-99e6567498d0",
+      "result_id": "dc53505e-ec3c-4546-893f-5849c29d5df0"
+    },
+    {
+      "claim_id": "0c762554-1c3a-4fc4-9e63-0fdb64c10762",
+      "result_id": "dc53505e-ec3c-4546-893f-5849c29d5df0"
+    },
+    {
+      "claim_id": "9d0f88f7-e24d-430a-880b-98636a625622",
+      "result_id": "dc53505e-ec3c-4546-893f-5849c29d5df0"
+    },
+    {
+      "claim_id": "2e1290e1-6b93-4733-911b-22abe7ad67ba",
+      "result_id": "dc53505e-ec3c-4546-893f-5849c29d5df0"
+    },
+    {
+      "claim_id": "beb5586b-30b5-4359-a688-8317690ed648",
+      "result_id": "dc53505e-ec3c-4546-893f-5849c29d5df0"
+    },
+    {
+      "claim_id": "fae096ae-181e-43b9-88ed-bd5314ce5788",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "c5d461f8-f92e-4858-9117-392dc4c2810e",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "6aac3d1f-1573-4569-b1ee-887e6d17d609",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "94e345eb-7157-4e6c-a396-0d415e883a80",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "663c64ab-7f82-4025-84b3-6b25379261f3",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "757b470b-68e8-4205-9717-805fc6016523",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "29ea44c8-a52d-4a76-a695-7b6ed43f9666",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "4fa60277-63c3-4602-8f34-6b54ccbcce8c",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "5ca37a6b-f329-46ac-8137-30a54f54dc26",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "2835fff6-8fdb-4ff9-be08-e56820f42cca",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "b194b5bf-4775-457a-90f0-680b3b253733",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "fff54286-a8b8-4784-8a72-405afbc46073",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "534eeec7-3dd1-4a9b-9d05-58cce51eb4c3",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "71a102f0-36ad-40c9-ba49-d3cebb038bb3",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "50b75946-a8a2-41e8-84d9-48dd188e20cd",
+      "result_id": "3fb3a512-f93b-4b52-929d-bf26addb3365"
+    },
+    {
+      "claim_id": "6d7c25c8-52f8-4b78-8733-5e54495bfee4",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "c1afe10a-099e-4b22-b8b3-baf0f36e84cc",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "f80dd1ab-cab1-463f-add0-f5271814f6de",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "7e722b57-1675-412a-a80e-c8f9e7e52cc9",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "2feaff61-8ecd-4319-a1c8-2c1b40204fc3",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "26d5235b-f862-4ea5-9370-b1bc8d2ac70b",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "5055d5d0-e806-4af6-8101-d5083aad5ba7",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "be31a44e-c0ce-4631-9e8c-befa761f9f81",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "1e5250c7-a8a8-4332-a4c9-993725537df8",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "4d24f3df-4718-481b-b2b9-34efb2730405",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "05664627-10a1-4b5f-ac83-d4e9db8766bd",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "77619e11-c792-40c9-a4d5-4a9f72e7cfef",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "a64e6655-5b35-436c-82d7-78a8e40d2162",
+      "result_id": "77e92067-24ed-4dd4-9999-705a7b833d82"
+    },
+    {
+      "claim_id": "c73e1a64-7b3a-4686-b182-af8533711989",
+      "result_id": "8aa49752-bf1a-4b5a-bbf0-a3c82fd6877d"
+    },
+    {
+      "claim_id": "451be2ee-30e7-41e7-86e3-8916db9a7d72",
+      "result_id": "8aa49752-bf1a-4b5a-bbf0-a3c82fd6877d"
+    },
+    {
+      "claim_id": "98a36090-8efd-403d-b1ba-46d9f2d27493",
+      "result_id": "8aa49752-bf1a-4b5a-bbf0-a3c82fd6877d"
+    },
+    {
+      "claim_id": "ef8ac4e2-95f5-4125-bc10-2b0a778d9aa7",
+      "result_id": "863113f5-499f-4104-af11-d077c6f50649"
+    },
+    {
+      "claim_id": "192d37ff-37fe-4b6f-9260-6f8983914b74",
+      "result_id": "863113f5-499f-4104-af11-d077c6f50649"
+    },
+    {
+      "claim_id": "c3f3e683-5c49-470e-ad81-04eb88ee9af1",
+      "result_id": "863113f5-499f-4104-af11-d077c6f50649"
+    }
+  ],
+  "comparisons": []
+}

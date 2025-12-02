@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C50"
+    ],
+    "result": "Atg1 kinase activity is essential for autophagy in S. pombe. The D193A and T208A mutations, which are equivalent to kinase-inactivating mutations in S. cerevisiae Atg1, abolish both autophagy and Atg1 kinase activity in S. pombe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C50 are well-supported by mYFP-Atg8 processing assays and in vitro kinase assays showing that kinase-dead mutations abolish both autophagy and autophosphorylation. The mutations are appropriately designed based on established knowledge from S. cerevisiae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C7"
+    ],
+    "result": "In S. pombe, Atg11 but not Atg13, Atg17, or Atg101 is required for Atg1 kinase activity. Atg11 is necessary for Atg1 autophosphorylation and phosphorylation of non-self substrates, and Atg11(522-583) is sufficient to support this kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C7 are supported by in vitro kinase assays comparing Atg1 activity from different deletion mutants and rescue experiments. The data show clear differences in Atg1 autophosphorylation and substrate phosphorylation between wild type and atg11\u0394, with quantification provided in Figure 1\u2014figure supplement 1A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C17",
+      "C23"
+    ],
+    "result": "Atg11(522-583), a 62 amino acid fragment, is necessary and sufficient for the autophagy function of Atg11. This fragment is composed of two separable functional modules: an Atg1-binding domain and a homodimerization domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C17, and C23 are supported by multiple complementary assays (mYFP-Atg8 processing, Pho8\u039460, truncation analysis) showing that Atg11(522-583) can fully rescue atg11\u0394, while Atg11(522-583)\u0394 cannot. The modular architecture is demonstrated by showing that Atg11(522-552) binds Atg1 but cannot rescue autophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Atg11(522-544) mediates a direct physical interaction with the tMIT domain of Atg1. This interaction depends on conserved aromatic residues F526 and Y527 and is required for the autophagy function of Atg11(522-583).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 are supported by multiple orthogonal approaches: AP-MS, coimmunoprecipitation, Pil1 co-tethering assay, Y2H assay, sequence alignment, point mutagenesis, and in vitro pull-down with recombinant proteins. The convergence of evidence from these diverse methods strongly supports the direct Atg11-Atg1 interaction and its functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C51"
+    ],
+    "result": "Atg11(522-583) forms a homodimer through its C-terminal region (546-583). Both the minimal fragment and full-length Atg11 can self-interact independently of Atg1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C51 are supported by coimmunoprecipitation, Y2H assays, and gel filtration chromatography. The gel filtration data provides quantitative evidence for dimerization (elution volume corresponding to ~102 kD for a protein with calculated MW of 50.6 kD). The independence from Atg1 is demonstrated by coimmunoprecipitation in atg1\u0394 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Dimerization mediated by Atg11(546-583) is essential for Atg11 function. Deletion of this region abolishes self-interaction, autophagy function, and Atg1 kinase activity support. A heterologous leucine zipper dimerization domain can functionally replace the native dimerization domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, and C52-C54 are supported by loss-of-function experiments with Atg11(546-583)\u0394 and gain-of-function experiments with leucine zipper fusions. The ability of a heterologous dimerization domain to restore function provides strong evidence that dimerization is the primary function of this region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C55",
+      "C56"
+    ],
+    "result": "ER stress-induced selective ER-phagy requires Atg11 in S. pombe, and Atg11(522-583) is sufficient to support this selective autophagy pathway. The dimerization ability of Atg11 is important for supporting selective autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C55, and C56 are supported by Erg11-CFP processing assays showing DTT-induced ER-phagy is blocked in atg11\u0394 and rescued by Atg11(522-583) or Atg11(522-552)-LZ but not Atg11(522-552). The data appropriately cite Zhao et al., 2020 for the ER-phagy pathway characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Artificial dimerization of Atg1 using a leucine zipper motif can bypass the requirement for Atg11 in both autophagy and Atg1 kinase activity. This demonstrates that the main role of Atg11 is to dimerize Atg1, thereby causing Atg1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by mYFP-Atg8 processing assays and in vitro kinase assays showing that Atg1-LZ rescues atg1\u0394 atg11\u0394 double mutants. This is a critical experiment that directly tests the hypothesis that Atg11's primary function is to dimerize Atg1. The logic is sound and the data are convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Atg1 can be activated by dimerization-induced cis-autophosphorylation. Using GFP-GBP heterodimerization, the authors show that only one active kinase in an Atg1 dimer is sufficient for activation, indicating that trans-autophosphorylation is not required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C57-C59 are supported by elegant experiments using GFP-GBP heterodimerization with kinase-dead mutants. The data show that mixed dimers (one active, one inactive kinase) can rescue autophagy, while dimers with two inactive kinases cannot. This provides strong evidence for cis-autophosphorylation. The experimental design appropriately controls for the possibility that GFP or GBP fusion affects function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C49"
+    ],
+    "result": "The manuscript provides extensive background on Atg1 activation mechanisms in different organisms and contexts, including S. cerevisiae bulk autophagy and Cvt pathway, mammalian autophagy, and other eukaryotes. These claims establish the context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C45 and C49 are supported by appropriate citations to the literature. These are background claims that establish the context and motivation for the current study. The citations appear appropriate and the claims accurately represent prior work based on the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors propose that Atg11-mediated Atg1 activation may be a more ancient and universal mechanism than Atg17-dependent activation, that mediating Atg1 oligomerization and activation may be a conserved function of Atg11/FIP200 family proteins, and that cis-autophosphorylation may be a general mechanism of Atg1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C48 are speculative proposals based on the findings in S. pombe and phylogenetic considerations. While the proposals are reasonable and supported by the observation that animals and plants have Atg11/FIP200 but not Atg17, these remain hypotheses that would require experimental validation in other organisms. The authors appropriately present these as proposals rather than established facts.",
+    "result_type": "MINOR"
+  }
+]

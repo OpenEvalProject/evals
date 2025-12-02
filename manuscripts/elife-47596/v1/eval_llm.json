@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C28",
+      "C32"
+    ],
+    "result": "IT population response magnitude strongly correlates with image memorability (r=0.68, p=1\u00d710\u207b\u00b9\u2075), with this correlation remaining robust across individual monkeys, time windows, alternative magnitude metrics, and when excluding high-firing units. Changes in image content produce ~20% variation in IT population response magnitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 provide converging statistical evidence with highly significant p-values and multiple control analyses. The correlation is strong (r=0.68) and survives numerous robustness checks including individual monkey analyses, temporal windows, and exclusion of high-firing units. The effect size (~20% variation, C32) is substantial and biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C52"
+    ],
+    "result": "The correlation between IT response magnitude and memorability remains strong (r=0.62, p=2\u00d710\u207b\u00b9\u2070) when excluding images containing faces/bodies, indicating results are not artifacts of recording from face/body-selective patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 provide important control analysis showing the effect persists when face/body images (only 19% of stimuli, C52) are excluded. This addresses a potential confound given known face/body patches in IT. The correlation remains highly significant with only modest reduction in strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The memorability-magnitude correlation persists for both novel (r=0.62, p=2\u00d710\u207b\u00b9\u00b2) and familiar (r=0.58, p=8\u00d710\u207b\u00b9\u00b9) image presentations, despite IT showing 6.2% repetition suppression for familiar images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 demonstrate the effect is not driven by novelty/familiarity status. The correlation remains highly significant in both conditions with similar effect sizes, even though repetition suppression is present. This strengthens the interpretation that memorability is an intrinsic image property reflected in IT responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Human-based memorability scores predict which images monkeys find most memorable during the single-exposure visual memory task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C22 reports cross-species validation but the manuscript notes monkey behavioral data are binary (correct/incorrect) rather than graded memorability scores. Figure 2c shows a trend but the statistical power for this cross-species comparison is limited. The correlation exists but its strength and reliability require further validation with larger behavioral datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C24"
+    ],
+    "result": "In CNNs trained for object categorization (HybridCNN), the correlation between image memorability and population response magnitude is significantly higher in trained versus randomly initialized networks across all layers, with correlation strength generally increasing across the network hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 provide clear statistical evidence (p<0.0001 for all layers) that training for object recognition produces memorability-magnitude correlations. The hierarchical increase (C24, Figure 3) parallels the IT findings. The comparison to random networks is an appropriate control demonstrating the effect requires training.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The memorability-response magnitude correlation pattern replicates in two additional CNN architectures (AlexNet and VGG-16), with correlation strength increasing across network hierarchies, suggesting the signature is not unique to a particular architecture or training procedure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 demonstrates replication across multiple architectures with similar hierarchical patterns. However, VGG-16 shows non-significant effects in early layers (p=0.2-0.9 for Conv 1.1-2.2), indicating some architecture-dependence. The overall pattern supports generalization but with nuances across architectures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C35",
+      "C42"
+    ],
+    "result": "Variation in IT population response magnitude is proposed as a natural consequence of optimizations required for visual processing (object recognition), with memorability emerging from feedforward computations rather than requiring top-down attention or memory-specific plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C27, C35, C42 make mechanistic inferences from CNN modeling. While CNNs trained only for object recognition do show memorability-magnitude correlations (supporting C35, C42), this demonstrates correlation not causation. The claim that memorability is a \"natural consequence\" of visual processing optimizations (C4) is a reasonable hypothesis but requires additional experiments manipulating training objectives or testing untrained biological systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C31"
+    ],
+    "result": "Memorability is reflected in IT via a representational scheme (response magnitude) that is largely orthogonal to how IT encodes object identity (response direction), revealing previously unappreciated variation in robustness of visual representations within natural images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C31 present a coherent theoretical framework supported by the empirical findings. The orthogonality claim is well-justified: identity is decoded from response patterns (direction) while memorability correlates with magnitude. This explains how IT can multiplex both types of information and why standard analyses normalizing magnitude would miss memorability effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Neural data were collected from 707 IT units across 27 recording sessions in two rhesus monkeys performing a single-exposure visual memory task, with data concatenated into pseudopopulations by aligning images with similar memorability scores to enable accurate population response magnitude estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C57 describe the experimental methods. While the data collection appears rigorous (appropriate screening, quality control, ethical compliance), the pseudopopulation construction (C45) raises concerns. Aligning images by memorability scores (average SD=0.05, C57) could introduce circularity bias\u2014grouping images by the dependent variable (memorability) before testing correlation with neural responses. This methodological choice requires careful justification and sensitivity analyses to rule out artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Image memorability scores were obtained using MemNet, a CNN trained on 60K images from LaMem dataset with human memorability scores, achieving 0.64 rank correlation with human estimates (near the 0.68 human consistency upper bound).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe the memorability scoring method with appropriate citations. MemNet's performance (0.64 correlation) approaches human consistency limits (0.68), validating its use as a proxy for human memorability judgments. This is a well-established method from prior work (Khosla et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CNN analyses used three architectures (HybridCNN, AlexNet, VGG-16) evaluated on 10,000 LaMem test images, with 95% confidence intervals obtained via bootstrapping over 10,000 samples, comparing trained networks to randomly initialized controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 describe appropriate computational methods. The sample size (10,000 images) is substantial, bootstrapping provides valid confidence intervals, and the random initialization control is essential for interpretation. The methods are clearly described and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C30"
+    ],
+    "result": "Prior understanding holds that IT encodes object identity as distinct spike patterns (response direction) accessible via linear decoding, with population response magnitude typically assumed unimportant and disregarded in representational similarity analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C30 accurately characterize established knowledge about IT coding schemes with appropriate citations (DiCarlo et al., 2012; Kriegeskorte et al., 2008; Chang and Tsao, 2017). This provides necessary context for the novelty of examining response magnitude.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Image memorability refers to consistent cross-individual variation in how well images are remembered, with neural correlates residing in higher visual areas where memorability can be decoded from fMRI/MEG, and more memorable images evoking larger fMRI responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 accurately summarize prior memorability research with appropriate citations (Isola et al., 2011; Khosla et al., 2015; Bainbridge et al., 2017; Mohsenzadeh et al., 2019). This establishes the foundation for the current study's focus on IT and response magnitude.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The findings relate to subsequent memory effects, CNN models of IT object representations, cross-species similarities in object processing, and distinctions between memorability and salience, as established in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 provide appropriate contextualization with relevant citations. These accurately represent prior work on subsequent memory effects (Paller & Wagner, 2002), CNN-IT correspondence (Yamins & DiCarlo, 2016), human-monkey similarities (Rajalingham et al., 2015), and memorability-salience distinctions (Bainbridge et al., 2013, 2017). This situates the current findings within the broader literature.",
+    "result_type": "MINOR"
+  }
+]

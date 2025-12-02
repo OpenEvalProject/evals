@@ -1,0 +1,440 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "PTPRK is stabilized at cell-cell contacts in epithelial cells through homophilic trans-interactions. PTPRK localizes to puncta at basal cell-cell contacts that partially overlap with E-Cadherin, and its protein levels increase with cell density. Co-culture experiments demonstrate that PTPRK is absent from wildtype-KO cell contacts, and protein microarray screening did not identify additional ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C8 provide converging evidence from multiple experimental approaches (structured illumination microscopy, co-culture experiments, density-dependent expression, and microarray screening) that consistently support PTPRK localization and stabilization at cell-cell contacts through homophilic interactions. The data are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The PTPRK interactome is enriched with cell junction proteins and shows both unique and redundant interactions with PTPRM. Substrate-trapping experiments identified distinct sets of proteins enriched on D1057A (MAP4K4, RAPGEF6) and C1089S (PARD3, Afadin, PLEKHA6) mutants. Many proteins bind PTPRK independently of phosphorylation or through the D2 pseudophosphatase domain, and the PTPRK-D2 domain alone is sufficient to pull down approximately one-third of PTPRK ICD interactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C33 are supported by comprehensive AP-MS data from multiple cell lines (MCF10A and Hs27), substrate-trapping experiments, vanadate competition assays, and comparative analysis with PTPRM. The data demonstrate both phosphorylation-dependent and -independent interactions, with appropriate controls and statistical analysis (p<0.05, n=3-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C47"
+    ],
+    "result": "Quantitative tyrosine phosphoproteomics identified 282 phosphotyrosine sites on 185 proteins, with 15 sites statistically upregulated in PTPRK KO cells. Substrate-trapped proteins (Afadin, PARD3, PLEKHA6) and \u03b4-catenin family members (p120Cat, PKP2, PKP3, PKP4) showed hyperphosphorylation in PTPRK KO cells. Total proteome analysis confirmed these changes were not due to protein abundance differences (except PLEKHA6), and PTPRK KO cells showed downregulation of epithelial markers and upregulation of mesenchymal markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40, C47 are supported by rigorous SILAC-based quantitative phosphoproteomics with appropriate statistical analysis (FDR=0.01, n=3) and total proteome controls. The integration of phosphoproteomics with interactome data provides strong evidence for PTPRK's non-redundant cellular phosphatase activity. The observation of EMT-like changes adds biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PTPRK shows limited sequence selectivity with a slight bias against basic residues immediately adjacent to phosphotyrosine, consistent with its positively charged active site entrance. Several identified phosphosites are growth factor- and Src kinase-dependent, but Src-Y419 is 1.6-fold lower in PTPRK KO cells, indicating kinase activity does not explain the observed phosphorylation differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by sequence analysis of candidate substrates, structural modeling, and phosphoproteomics data. The findings are consistent with previous literature (Barr et al., 2009) and provide mechanistic insight into PTPRK substrate recognition. The control for Src kinase activity strengthens the conclusion that observed changes are PTPRK-specific.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "BioID experiments in confluent MCF10A cells confirmed proximity interactions between PTPRK-C1089S and candidate substrates (Afadin, PARD3, p120Cat, PKP3, PKP4, ABLIM3, EGFR). Several interactors (MINK1, PKP4, PTPN14, DLG5) were previously identified by PTPRK BioID in HEK293 cells, validating the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by BioID experiments with appropriate controls (truncated PTPRK lacking ICD). The validation of findings across different cell types (MCF10A and HEK293) and consistency with previous studies (St-Denis et al., 2016) strengthen confidence in the results. The speculative interpretation about endocytic signals (C48) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In vitro dephosphorylation assays demonstrate that PTPRK and PTPRM have overlapping substrate specificities for \u03b4-catenin proteins (p120Cat, PKP3, PKP4), ABLIM3, and PARD3, while PTPRK-ICD selectively dephosphorylates Afadin. The PTPRK-ICD requires three-fold higher concentration than D1 alone for equivalent activity, suggesting D2 reduces D1 enzyme activity. Previously reported R2B substrates (E-Cadherin, STAT3, \u03b2-Catenin, Paxillin, EGFR-pY1068) were not dephosphorylated under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by systematic in-lysate dephosphorylation assays with multiple controls and comparison to PTPRM. The pNPP assay data (C51-C52) are consistent with previous literature (Barr et al., 2009). The selective dephosphorylation of Afadin by PTPRK-ICD but not D1 or PTPRM provides strong evidence for domain-specific substrate recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Chimeric protein experiments demonstrate that the PTPRK-D2 pseudophosphatase domain is necessary and sufficient for recruitment of Afadin for dephosphorylation by PTPRM-D1, while p120Cat is dephosphorylated by all domain combinations. Paxillin is not dephosphorylated by any PTPRK or PTPRM combinations, confirming substrate selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by elegant chimeric protein experiments that dissect the roles of D1 and D2 domains in substrate recognition and catalysis. The data provide strong mechanistic insight into how the D2 domain confers substrate specificity, particularly for Afadin. The negative control (Paxillin) strengthens the conclusion of selective dephosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The PTPRK D2 domain substrate recognition mechanism does not require substrate phosphorylation. Afadin binding to D2 is not depleted by vanadate or dephosphorylation. Mutations to reactivate the D2 domain had no impact on activity (similar to failed attempts with PTPRE D2), and did not abrogate binding to interactors. Homology modeling shows the D2 domain surface charge significantly diverges from D1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by vanadate competition experiments, mutagenesis studies, pNPP assays, pull-down experiments, and structural modeling. The findings are consistent with previous failed attempts to reactivate PTPRE D2 (Lountos et al., 2018) and provide mechanistic insight into phosphorylation-independent substrate recognition by the D2 domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PTPRK is an active and selective tyrosine phosphatase for p120Cat in confluent MCF10A cells. PTPRK-D1 and ICD (but not catalytically inactive C1089S) almost completely dephosphorylate p120Cat-pY228 and -pY904 sites in vitro. These sites are increased 3-4-fold in PTPRK KO cells, and doxycycline-induction of PTPRK (but not C1089S) dose-dependently reduces these phosphorylation levels without affecting total p120Cat or Paxillin-pY118.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 are supported by multiple lines of evidence: in-lysate dephosphorylation assays with site-specific antibodies, immunoblot analysis of KO cells (n=4), and rescue experiments with inducible PTPRK expression (n=5). The data demonstrate both in vitro and cellular dephosphorylation activity with appropriate negative controls (C1089S mutant, Paxillin-pY118). The site selectivity is supported by unchanged p120Cat-pY257 levels in phosphoproteomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Afadin, PARD3, PKP3, PKP4, and p120Cat are high confidence substrates for PTPRK, with PLEKHA6, MAP4K4, PKP2, KIAA1217, ABLIM3, and Girdin as good candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by the integration of multiple experimental approaches: substrate-trapping (C20-C21), phosphoproteomics (C35-C37), BioID (C49), and direct dephosphorylation assays (C54-C56, C69-C75). The classification into high confidence and good candidates is appropriate based on the strength and convergence of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "PTPRK loss leads to disrupted cell junction organization and integrity. PTPRK KO cells show large gaps between cells, reduced cell height, ~50% reduction in TEER, increased permeability, and ~20% decrease in F-actin, E-Cadherin, DSG3, and p120Cat intensity with reduced colocalization with F-actin. Junctional protein levels are unchanged. TEER and F-actin intensity require PTPRK catalytic activity for rescue, while E-Cadherin intensity can be partially rescued by catalytically inactive PTPRK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C86 are supported by multiple complementary assays: electron microscopy, TEER measurements, permeability assays, immunofluorescence quantification, and rescue experiments. The data consistently demonstrate impaired junction integrity in PTPRK KO cells. The differential requirement for catalytic activity in rescuing different phenotypes (C84-C86) provides mechanistic insight. Sample sizes are adequate (n\u22653) with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PTPRK loss promotes invasive behavior in 3D spheroid cultures. While PTPRK KO cells mostly form normal acini with normal Golgi polarization, ~20% exhibit branched or protrusive morphology after 14 days, and spheroids are significantly larger than wildtype despite similar 2D proliferation rates. These results support a role for PTPRK in promoting cell-cell junctions and repressing invasive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by 3D culture experiments with quantification of spheroid morphology and diameter. The findings are consistent with previous shRNA studies (Ramesh et al., 2015; C87) and provide additional evidence for PTPRK's tumor suppressor function. The control for proliferation rates (C91) strengthens the conclusion that increased spheroid size is not due to increased proliferation. The inference about mechanism (C92) is appropriately qualified as 'probably'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PTPRK displays striking substrate selectivity with distinct requirements for its two intracellular phosphatase domains for substrate recognition. PTPRK loss perturbs epithelial junction integrity and promotes invasive behaviors in spheroid cultures, consistent with its putative tumor suppressor role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are summary statements supported by the totality of experimental evidence from multiple approaches (proteomics, dephosphorylation assays, domain dissection, junction integrity assays, spheroid invasion assays). The conclusions are well-supported by the data and appropriately integrate findings across different experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The C1089S substrate trap was effective but too restrictive in identifying substrates. Five trapped proteins were hyperphosphorylated in PTPRK KO cells, but other PTPRK-binding partners were also hyperphosphorylated, indicating the traps alone missed potential substrates. The PTPRK pseudophosphatase D2 domain was sufficient for substrate recognition and binds most proteins independently of tyrosine phosphorylation, which may have masked the effect of substrate traps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 provide a critical assessment of the substrate-trapping approach's limitations. The evaluation is supported by comparing trapped proteins with hyperphosphorylated proteins in KO cells and demonstrating phosphorylation-independent D2 domain binding. This honest assessment of methodological limitations strengthens confidence in the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Most candidate PTPRK substrates have orthologs in Drosophila, yet the R2B receptor family first appears in chordates, suggesting PTPRK regulates pre-established functional protein complexes rather than co-evolving with substrates. This would have introduced new regulation to existing signaling networks for chordate and vertebrate-specific organization. Genetic links exist between orthologs for RAPGEF6, PARD3, and Afadin in Drosophila AJ formation, and PARD3 and p120Cat orthologs control E-Cadherin trafficking. Several PTPRK substrates belong to the \u03b4-catenin family, which expands from one gene in Drosophila to seven in vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by evolutionary analysis and citations to previous studies on receptor evolution (Chen et al., 2017), Drosophila genetics (Bonello et al., 2018; Bulgakova and Brown, 2016), and \u03b4-catenin family expansion (Carnahan et al., 2010). The evolutionary interpretation (C100-C101) is appropriately qualified as inference and speculation, providing interesting context for PTPRK function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "PTPRK dephosphorylates p120Cat in cells, and phosphatase activity is necessary to rescue junctional deficits. Afadin is a unique PTPRK substrate not dephosphorylated by PTPRM, with the highest fold increase in tyrosine phosphorylation in PTPRK KO cells. This specificity is determined largely by the PTPRK D2 pseudophosphatase domain, which is sufficient to recruit Afadin for dephosphorylation by PTPRM D1. There is little evidence for a PTPRK substrate consensus sequence beyond bias against basic residues adjacent to phosphotyrosine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 integrate findings on p120Cat and Afadin as key substrates with mechanistic insights into substrate recognition. The data are supported by dephosphorylation assays, phosphoproteomics, chimeric protein experiments, and sequence analysis. The findings are consistent with previous literature (Barr et al., 2009) and provide novel mechanistic insight into D2 domain function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The PTPRK D2 pseudophosphatase domain plays a key role in substrate recognition rather than regulating D1 activity. While PTPRK-ICD shows three-fold reduced activity compared to D1 alone, free D2 added to free D1 has no impact on activity. The D2 domain could not be easily reactivated by mutation (unlike LAR), and a role for D2 in phosphotyrosine recognition was ruled out using dephosphorylated lysates, vanadate competition, and homology modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 are supported by pNPP assays, mutagenesis experiments, vanadate competition, and structural modeling. The findings contrast with previous suggestions of D2-mediated D1 regulation (Toledano-Katchalski et al., 2003) but are consistent with CD45/PTPRC findings (Nam et al., 2005). The data provide strong evidence for a substrate recognition rather than catalytic regulation role for the D2 domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Wildtype PTPs can interact with substrates in a dephosphorylated state. PTPRK might serve as a scaffold for dephosphorylated proteins either by recruiting non-phosphorylated proteins or by dephosphorylating already phosphorylated proteins upon recruitment. The combination of recognition and dephosphorylation is likely important for full PTPRK function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C120 are appropriately qualified as speculative (C119-C120 use 'might' and 'likely'). While C118 is supported by citations to previous studies, C119-C120 are interpretations based on experimental observations but lack direct experimental validation. The scaffold hypothesis is plausible but requires additional experiments to test directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "PTPRK and PTPRM both dephosphorylate PARD3, p120Cat, PKP3, and PKP4 in lysates, but hyperphosphorylation of sites on these proteins in PTPRK KO cells indicates PTPRM cannot fully compensate for PTPRK loss. This could be due to lower PTPRM expression in MCF10A cells, possible differences in site selectivity, or intrinsically lower catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by in-lysate dephosphorylation assays and phosphoproteomics data from PTPRK KO cells. The interpretation of why PTPRM cannot compensate (C123) is appropriately qualified as speculative and considers multiple plausible explanations supported by data (expression levels, site selectivity, catalytic activity differences).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Vertebrate genomes encode at least 4 R2B family members with distinct expression profiles. The receptors display divergent expression patterns in adult mouse cerebellum. Assuming similar regulation by cell-cell contact, receptor expression patterns will determine subtly distinct responses to cell contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by expression data and citation to previous studies (Besco et al., 2004). The inference about functional consequences (C126) is appropriately qualified ('assuming') and is a reasonable interpretation based on the demonstrated receptor specificity and expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Several PTPRK-regulated phosphosites have been previously characterized. p120Cat-Y228 is phosphorylated in response to EGFR, and phosphorylation-deficient mutations rescue adhesion phenotypes, while phosphomimetic Y228E increases RhoA recruitment. Afadin Y1237 phosphorylation mediates SHP2 recruitment, implicating it in Ras-MAPK signaling. PTPRK-mediated dephosphorylation of Afadin Y1230 supports its role in tumor suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by citations to previous studies (Mariner et al., 2004; Casta\u00f1o et al., 2007; Nakata et al., 2007). The inference about tumor suppression (C130) is reasonable based on the established role of Afadin phosphorylation in Ras-MAPK signaling and PTPRK's demonstrated dephosphorylation of this site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "PTPRK is the only R2B family member implicated in cancer progression by mouse forward genetics and is involved in RSPO3 gene fusions in colorectal cancers. PTPRK is the predominant R2B receptor in mouse intestinal epithelium. Findings of abrogated junction organization, spheroid overgrowth, and invasive behavior support its tumor suppressor role. Several PTPRK substrates are linked to cancer, and their combined dysregulation could contribute to pathological phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 are supported by citations to previous studies and experimental data from this manuscript. The inference about combined substrate dysregulation (C136) is appropriately qualified as speculative but is a reasonable interpretation based on the known cancer-related functions of individual substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Compromised epithelial barrier integrity is linked to inflammatory bowel disease susceptibility, suggesting PTPRK SNPs linked to celiac disease should be investigated. PTPRK is a TGF\u03b2 target gene and functions to suppress EMT, indicating a negative feedback role that could lead to pathological effects if perturbed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 are supported by established knowledge, citations to previous studies (Trynka et al., 2011; Wang et al., 2005; Brabletz et al., 2018), and experimental data showing EMT-like changes in PTPRK KO cells (C39). The suggestion to investigate PTPRK SNPs (C137) is a reasonable recommendation based on the demonstrated role in barrier integrity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "PTPRK does not dephosphorylate EGFR but interacts with it by BioID. EGFR family interactions with R2B receptors have been reported. Growth factor stimulation leads to PTPRK tyrosine phosphorylation, and RTK-induced PTP inhibition by oxidation may impact signaling. Several PTPRK substrates are phosphorylated in a Src-dependent manner. PTPRK might provide feedback in cell contact by dephosphorylating substrates to promote junctional integrity. Overexpression of v-Src leads to junction disassembly and EMT. PTPs could act as interpreters of cellular context, analogous to the contact-sensing RTK EphA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C148 integrate findings with broader context from previous literature. Most claims are supported by citations to previous studies. The speculative interpretations (C145, C147) are appropriately qualified and provide reasonable hypotheses for future investigation. The analogy to EphA2 (C148) is supported by citation (Stallaert et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Defining the substrate repertoire of PTPRK reveals mechanistic insight into its tumor suppressor role through control of cell-cell junctions and suppression of EMT. The study raises questions about phosphoregulation of junctional proteins and implicates PTPRK as a sensor and mediator of cell adhesion. The PTPRK D2 domain is critical for substrate recognition yet binds proteins independently of phosphorylation. PTPRK does not recognize a peptide consensus sequence, highlighting the need for the comprehensive approach taken. The study provides a framework for systematically identifying RPTP substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 are summary statements supported by the totality of experimental evidence. The conclusions appropriately integrate findings and acknowledge knowledge gaps (C152). The methodological contribution (C154) is valid and represents an important advance in studying RPTP substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background information on R2B receptor family structure, PTPRK's identification in cancer and disease genetics, regulation by proteolytic cascade, potential substrates, expression patterns, and regulation by TGF\u03b2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 provide background context supported by citations to previous literature and established knowledge. These claims appropriately set the stage for the current study. The speculative nature of potential substrates (C15) is appropriately qualified with 'might'.",
+    "result_type": "MINOR"
+  }
+]

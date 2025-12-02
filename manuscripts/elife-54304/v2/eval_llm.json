@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Mosaic loss of Apc in embryonic skin results in overactivation of WNT signaling, leading to severely perturbed hair follicle patterning. Apc-null clusters display intense nuclear \u03b2-catenin and LEF1, are non-proliferative, fail to develop into hair buds, and create an expanded WNTlo region in surrounding tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C22 collectively demonstrate that Apc loss causes WNT overactivation (C9, C11) with disrupted patterning (C10, C12, C13) and failure to generate WNTlo suprabasal cells (C14, C15). The phenotype is well-characterized with multiple markers (C16-C20) and the expanded WNTlo boundary (C21, C22) is documented. The experimental design using mosaic lentiviral transduction is appropriate and the phenotypic characterization is thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "RNA-seq analysis reveals that WNT-reporterhi epidermal progenitors null for Apc show robust upregulation of WNT target genes including both WNT activators and inhibitors (NOTUM, WIF1, DKK4, APCDD1). Wild-type basal hair bud progenitors share strong transcriptional similarities with Apc-null progenitors, with WNT signaling factors displaying expression specificity for WNThi cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by RNA-seq data (Figure 2, Figure 3) showing differential gene expression in Apc-null versus heterozygous cells, and comparison with wild-type WNThi progenitors. The identification of WNT inhibitors as WNT-sensitive genes (C24) is a key finding validated by in situ hybridization (C28). The transcriptional overlap between Apc-null and wild-type WNThi cells (C26, C27) provides validation that the Apc-null signature reflects physiological WNT signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "BMP4 exhibits strong WNT signaling dependency and acts in a long-range negative feedback loop to create a bud-free environment around WNT-specified hair buds. Nuclear pSMAD1/5/9 persists multiple cell layers away from Apc-null clusters, and mosaic BMP overexpression suppresses hair bud formation in adjacent wild-type skin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 demonstrate BMP4's role as a long-range inhibitor through RNA-seq data (C29), immunofluorescence showing extended pSMAD1/5/9 signaling (C30), and functional experiments with BMP overexpression (C31). The conclusion about BMP4's role in creating bud-free zones (C32) is well-supported by the data, though it represents a somewhat expected finding given prior knowledge cited in C79-C80.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "WNTs function locally in embryonic skin, as elevated WNT10B within Apc-null clusters does not lead to long-range expansion of nuclear \u03b2-catenin/LEF1 or WNT inhibitors into surrounding wild-type skin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by immunofluorescence data (Figure 3\u2014figure supplement 4A and B) showing no long-range expansion of WNT signaling markers despite elevated WNT10B in Apc-null clusters. This finding is consistent with prior work in intestine (Farin et al., 2016) and contrasts with the long-range action of BMP4, establishing an important distinction between these morphogens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "WNT inhibitors WIF1 and NOTUM localize apically in basal cells of developing hair follicles, creating a WNT-inhibitor free zone at the epithelial-mesenchymal interface. This apical localization is impaired by Tunicamycin treatment, suggesting N-glycosylation dependence. Nuclear LEF1 is reduced in suprabasal cells at the WNT-inhibitor interface but remains robust in basal cells and dermal condensate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 demonstrate polarized localization of WNT inhibitors through immunofluorescence (Figure 4) with quantitative pixel intensity analysis. The Tunicamycin experiment (C35) provides mechanistic insight into apical targeting. The inference of a WNT-inhibitor free zone (C40) and presence of active WNT ligands (C41) is logical given the LEF1 distribution pattern (C37-C39). The spatial organization is well-documented and represents a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "WNT ligands (WNT10B and WNT3) are preferentially polarized at the basal membrane of hair bud progenitors, opposite to WNT inhibitors, while Frizzled-10 WNT receptor localizes uniformly to all cell borders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by immunofluorescence and pixel intensity analysis (Figure 5D, Figure 5E, Figure 5\u2014figure supplement 3). The opposite polarization of WNT ligands versus inhibitors is a central finding of the paper. The uniform distribution of FZD10 receptor (C43) is important as it indicates that differential signaling is achieved through ligand/inhibitor polarization rather than receptor localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Functional perturbation experiments demonstrate that elevating WNT inhibitors or blocking WNT secretion with LGK974 impairs hair follicle specification. Low doses of LGK974 prevent nuclear LEF1 in basal hair bud cells and cause them to adopt SOX9+ fate, while higher doses also affect the dermal condensate. The effects are reversible upon inhibitor washout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide functional validation through multiple approaches: WNT inhibitor overexpression (C44), porcupine inhibitor treatment at different doses (C45-C47), and washout experiments (C48). The dose-dependent effects (C47) and reversibility (C48) strengthen the conclusions. The data support the importance of the WNT gradient for fate specification (C46), though the experiments are conducted on explants which may have limitations compared to in vivo conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "LEF1 co-localizes with TCF1/7 in basal cells of developing hair follicles, and WNT-reporterhi, LEF1+ progenitor cells co-express other WNT signaling components including FZD10 and WIF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 provide validation that LEF1 is a reliable proxy for WNT signaling through co-localization with TCF1/7 and co-expression with other WNT pathway components (Figure 6\u2014figure supplement 4). This is important methodologically as the study relies heavily on LEF1 as a WNT signaling readout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Mispolarizing WNT inhibitors to the basal membrane using AQP4 tags reduces hair follicle formation and decreases nuclear LEF1 signal in basal progenitors, with NOTUM-AQP4 showing more efficient basal targeting and more pronounced effects than WIF1-AQP4. Mispolarization results in expansion of WNTlo SOX9+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 demonstrate functional importance of WNT inhibitor polarization through clever mispolarization experiments using AQP4 tags (Figure 6B-D). The differential efficiency between NOTUM and WIF1 (C51) and the quantitative reduction in LEF1 signal (C52) provide strong evidence. The expansion of SOX9+ cells (C53) shows functional consequences for cell fate specification. This is a key experiment demonstrating causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Genetic ablation of Notum increases both the proportion of LEF1+ cells and their nuclear LEF1 signal intensity within developing hair buds, with effects largely confined to the apical region of the hair bud rather than the underlying dermal condensate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 provide loss-of-function validation of NOTUM's role through conditional knockout experiments (Figure 7). The spatial restriction of effects to the apical region (C55) is consistent with the apical localization of NOTUM and supports the short-range function of apically localized WNT inhibitors. This complements the gain-of-function and mispolarization experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C67"
+    ],
+    "result": "Hair progenitors produce both WNT activators and inhibitors which oppositely polarize rather than forming a negative feedback loop, establishing a short-range morphogen gradient essential for 3D pattern formation. This allows progenitors to maintain their own WNT signaling identity and that of underlying mesenchyme while restricting WNT signaling in overlying epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C56-C60, C67 represent the main conclusions synthesizing the experimental findings. The opposite polarization of WNT activators and inhibitors (C2) is well-supported by the localization data. The essentiality for 3D pattern formation (C3) is supported by the functional perturbation experiments. The preservation of progenitor identity while restricting suprabasal signaling (C4, C5, C57, C58, C60) is demonstrated through multiple lines of evidence. The model of using polarization to build local boundaries (C59, C67) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background and prior work establishing the context for hair follicle development, WNT signaling components, and morphogen function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C69-C92 represent background information and citations to prior work. These are appropriately cited and provide necessary context. The claims about LEF1 as a WNT signaling proxy (C6-C8) are validated by the current work (C49-C50). The prior work on hair follicle development, WNT signaling, and morphogen gradients is accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "Discussion of mechanisms and broader implications, including comparisons to Drosophila development, potential roles of N-glycosylation in WNT trafficking, and advantages of cellular-level morphogen gradients for development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C66, C68 represent discussion points and speculation about mechanisms. The comparison to Drosophila (C61, C90, C91) is appropriate but the mechanistic differences (C62) are noted. The speculation about N-glycosylation (C63-C65) and ECM retention (C66, C92) is reasonable given the Tunicamycin data (C35) but remains speculative. The broader implications (C68) are plausible but not directly tested. These represent reasonable interpretations and future directions rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

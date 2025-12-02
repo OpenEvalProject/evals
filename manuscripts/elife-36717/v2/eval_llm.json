@@ -1,0 +1,156 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The study addresses a knowledge gap regarding the quantitative variability in ion channel conductances across genetically diverse populations and its origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 establish the motivation for the study by identifying that while conductance variability is expected across populations with different gene expression patterns, the quantitative extent and mechanistic origin of this variability remain unknown. These claims are well-supported as they accurately describe the state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors propose and validate a Ca2+-centric computational approach showing that combinations of Ca2+ and K+ conductances compensate each other to generate normal Ca2+ transients, suggesting Ca2+ sensing suffices to regulate ionic conductances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, and C6 describe the central methodological innovation and main finding. The computational GES search constrained by Ca2+ transient features (C3) predicts compensatory relationships between inward Ca2+ and outward K+ currents (C5), which is experimentally validated in HMDP strains. The inference that Ca2+ feedback sensing regulates conductances (C6) is well-supported by both computational predictions and experimental validation showing similar contractile function despite different conductances.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The HMDP experimental system successfully distinguishes inter-strain from intra-strain variability in ion channel conductances, and demonstrates that different strains with distinguishable conductances maintain similar contractile function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C33, and C34 establish the experimental validation framework. The use of isogenic HMDP strains (C4) enables statistical distinction between cell-to-cell and inter-strain variability (C32, supported by p=0.000024 for ICa,L). The finding that cell shortening does not vary significantly across strains (C33, C34, p=0.4136) validates the hypothesis that compensation maintains similar Ca2+ transients despite different conductances.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Compensation between Ca2+ and K+ currents remains operative at the organ scale, with gap junctional coupling reducing CaT amplitude variability to promote uniform organ-level behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 demonstrate through tissue-scale computational simulations that the compensation mechanism identified at the single-cell level persists at the organ scale. The finding that CaT amplitude histograms have similar means with and without electrical coupling (C35) is supported by simulation data in Figure 5E. The additional effect of gap junctional coupling in reducing variability (C36) is a logical inference from the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The study connects baseline ICa,L conductance to cardiac hypertrophic response to isoproterenol, with Ca2+ overload playing a major role in hypertrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C38 cites prior work (Bers, 2008) establishing that Ca2+ overload activates hypertrophic signaling pathways. While Figure 6 shows a correlation (r=0.86, p=3e-4) between baseline ICa,L and hypertrophic response, the authors acknowledge that many factors contribute to hypertrophy and that demonstrating Ca2+ overload as the causal mechanism would require additional experiments beyond the scope of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C44"
+    ],
+    "result": "Ca2+ sensing alone produces physiological AP waveforms with durations comparable to experimental measurements, and GES exhibit similar CaT amplitude-frequency relationships across a broad range of pacing frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C44 demonstrate the robustness of the Ca2+-centric approach. The finding that Ca2+ sensing produces physiological AP durations without voltage constraints (C41) is supported by comparison of computational results (Figure 5C) with experimental data (Figure 5\u2014figure supplement 1). The consistency of CaT amplitude-frequency curves across GES (C44) is validated against experimental measurements from Bondarenko et al., 2004.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors review prior work establishing that population-averaged models have limitations, and that ion channel conductances exhibit activity-dependent plasticity and inter-individual variability, with Ca2+ serving as a feedback mechanism in neuronal systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 provide comprehensive background from prior literature. These claims accurately cite and describe previous work on cardiac electrophysiology models (C7, C8), limitations of population-averaged models (C9), and pioneering neuroscience studies demonstrating conductance variability and Ca2+-mediated feedback regulation (C10-C15). All claims are appropriately supported by citations to primary literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Increasing SERCA magnitude has opposing effects on CaT amplitude and cytosolic Ca2+ depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 describes a mechanistic inference about SERCA's dual effects on Ca2+ dynamics. This is supported by the model behavior shown in Figure 2A,B and is consistent with established understanding of SR Ca2+ cycling. The claim correctly identifies that SERCA increases SR load (increasing CaT amplitude) while simultaneously depleting cytosolic Ca2+.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The HMDP consists of over 100 inbred mouse strains designed for genetic mapping with renewable resources, and the cell isolation procedure yielded 30-50% viable myocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, and C47 describe the experimental system and methods. The description of the HMDP (C45, C46) is supported by citation to Ghazalpour et al., 2012, and accurately describes the design goals of this resource. The cell isolation yield (C47) is a straightforward methodological detail reporting experimental outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "The authors developed a novel mouse ventricular myocyte model combining elements from previous models, validated to reproduce mouse electrophysiological phenotype and force-frequency relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C52, C53, C54, and C56 describe the computational model development and validation. The model appropriately combines validated components from prior work (C50, C52, C53), and the authors verified that it reproduces the mouse phenotype (C54) and correct force-frequency relationships (C56). These validation steps are essential for ensuring the model's reliability for the GES search.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The computational code used in this work is publicly available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 provides information about code availability, which is verifiable and supports reproducibility of the computational results. This is a straightforward methodological detail.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1987 @@
+{
+  "submission": {
+    "id": "a20400b5-0148-4423-abdc-52e886eac466",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:07:16.348604Z",
+    "updated_at": "2025-12-02T17:07:16.348604Z"
+  },
+  "content": [
+    {
+      "id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "submission_id": "a20400b5-0148-4423-abdc-52e886eac466",
+      "content_type": "manuscript",
+      "content_text": "# Single-cell transcriptome reveals the novel role of T-bet in suppressing the immature NK gene signature\n\n## Authors\n\n- Chao Yang<sup>1</sup>\n- Jason R Siebert<sup>1</sup>\n- Robert Burns<sup>3</sup>\n- Yongwei Zheng<sup>4</sup>\n- Ao Mei<sup>1</sup>\n- Benedetta Bonacci<sup>5</sup>\n- Demin Wang<sup>4</sup>\n- Raul A Urrutia<sup>6</sup>\n- Matthew J Riese<sup>2</sup>\n- Sridhar Rao<sup>9</sup>\n- Karen-Sue Carlson<sup>8</sup>\n- Monica S Thakar<sup>1</sup>\n- Subramaniam Malarkannan<sup>1</sup> ([ORCID: 0000-0002-7511-2731](https://orcid.org/0000-0002-7511-2731)) \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Immunology and Immunotherapy, Blood Research Institute, Blood Center of Wisconsin Milwaukee United States\n2. Department of Microbiology and Immunology, Medical College of Wisconsin Milwaukee United States\n3. Bioinfomatics Core, Blood Research Institute, Blood Center of Wisconsin Milwaukee United States\n4. Laboratory of B-Cell Lymphopoiesis, Blood Research Institute, Blood Center of Wisconsin Milwaukee United States\n5. Flow Cytometry Core, Blood Research Institute, Blood Center of Wisconsin Milwaukee United States\n6. Department of Surgery, Medical College of Wisconsin Milwaukee United States\n7. Laboratory of Lymphocyte Biology, Blood Research Institute, Blood Center of Wisconsin Milwaukee United States\n8. Department of Medicine, Medical College of Wisconsin Milwaukee United States\n9. Laboratory of Stem Cell Transcriptional Regulation, Blood Research Institute, Blood Center of Wisconsin Milwaukee United States\n10. Laboratory of Coagulation Biology, Blood Research Institute, Blood Center of Wisconsin Milwaukee United States\n11. Department of Pediatrics, Medical College of Wisconsin Milwaukee United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe transcriptional activation and repression during NK cell ontology are poorly understood. Here, using single-cell RNA-sequencing, we reveal a novel role for T-bet in suppressing the immature gene signature during murine NK cell development. Based on transcriptome, we identified five distinct NK cell clusters and define their relative developmental maturity in the bone marrow. Transcriptome-based machine-learning classifiers revealed that half of the mTORC2-deficient NK cells belongs to the least mature NK cluster. Mechanistically, loss of mTORC2 results in an increased expression of signature genes representing immature NK cells. Since mTORC2 regulates the expression of T-bet through AktS473-FoxO1 axis, we further characterized the T-bet-deficient NK cells and found an augmented immature transcriptomic signature. Moreover, deletion of Foxo1 restores the expression of T-bet and corrects the abnormal expression of immature NK genes. Collectively, our study reveals a novel role for mTORC2-AktS473-FoxO1-T-bet axis in suppressing the transcriptional signature of immature NK cells.\n\n## Introduction\n\nNK cells are type one innate lymphoid cells known for their function in mediating both cytotoxicity and cytokine production in response to transformed or virally-infected cells (Sun and Lanier, 2011; Vivier et al., 2008). In the bone marrow (BM) of mice, the expression of IL-15/IL-2 receptor \u03b2 chain (CD122) is the hallmark of commitment to the NK cell lineage from the common lymphoid progenitor (CLP) cells (Rosmaraki et al., 2001). Thus, the canonical definition of NK progenitor (NKP) is a Lin\u2212CD122+ cell without cell surface expression of NK-lineage marker NK1.1. However, the Lin\u2212CD122+NK1.1\u2212 cells are still a heterogeneous population as approximately only one in ten cells can give rise to NK cells in vitro (Vosshenrich and Di Santo, 2013). Recently, the definition of NKPs has been refined to Lin\u2212Flt3\u2212CD27+2B4+CD127+CD122+NK1.1\u2212 cells which have a 50% chance to develop into NK cells in vitro (Carotta et al., 2011; Fathman et al., 2011). The other lineage cell type in the heterogenous Lin\u2212CD122+NK1.1\u2212 population is yet to be fully-defined.\n\nFollowing commitment, NK lineage cells go through step-wise developmental process to become functionally mature NK cells. The Lin\u2212CD122+NK1.1+CD27+CD49b\u2212 population represents the least mature NK cells (Di Santo, 2006; Kim et al., 2002; Williams et al., 2000; Arase et al., 2001). Subsequent to the expression of CD49b, the developmental stages of murine NK cells further classified into three stages based on two cell surface markers CD27 and CD11b (Kim et al., 2002; Hayakawa and Smyth, 2006). The relatively immature CD27+CD11b\u2212 (CD27 single positive, SP) NK cells develop into CD27\u2212CD11b+ (CD11b single positive, SP) terminally mature with a transitional stage of CD27+CD11b+ (double positive, DP) cells (Chiossone et al., 2009). The terminal CD11b SP NK cells are also marked with expression of KLRG1 (Huntington et al., 2007).\n\nThe developmental process is controlled by temporal activation of stage-specific transcription factors. Ets-1 and PU.1 regulate the transition from CLPs to NKPs, while E4BP4 is critical in the induction of CD122 and NKP commitment (Barton et al., 1998; Colucci et al., 2001; Gascoyne et al., 2009; Kamizono et al., 2009). E4BP4 also induces the expression of Id2 and Eomes, both of which are critical in immature NK cells development and the transition to the later stages (Male et al., 2014; Yokota et al., 1999; Boos et al., 2007; Delconte et al., 2016; Gordon et al., 2012). T-bet and Zeb2 have been shown to be critical for terminal NK cell maturation (Townsend et al., 2004; van Helden et al., 2015). The signaling downstream of IL-15 receptors are essential for regulating the expression of these transcription factors. PDK1 is required for the induction of E4BP4 during early NK cell development (Yang et al., 2015). We have previously reported that mTORC1 is required for the expression of Eomes and the transition from CD27 SP to DP NK stage, while mTORC2 is required for the terminal CD11b SP NK cell maturation through mTORC2-AktS473-FoxO1 axis (Yang et al., 2018).\n\nAlthough the cell surface markers have been useful in studying the development of NK cells, there are inherent limitations associated with them. The spectrum of NK cell developmental heterogeneity is unlikely to be fully defined by the current cell surface markers-defined stages. Based on the CD27/CD11b-defined stages, NK cells deficient in Id2, Eomes or Gata3 all fail to progress from CD27 SP to DP stages (Delconte et al., 2016; Gordon et al., 2012; Ali et al., 2016). Currently no well-defined model clearly explains developmental differences between these three NK models. In addition, the altered expression of CD27/CD11b in genetically-engineered mice does not necessarily result from developmental changes. The recent breakthrough in the quantification of transcriptome at a single-cell level has offered an unprecedented methodology in determining the cell identity and exploration of cellular heterogeneity. The definition of cell identities based on the expression of thousands of transcripts seems more reliable than the detection of limited number of cell surface markers. Crinier et al., 2018 has explored the murine and human NK cells from spleen and blood using single-cell RNA-sequencing (scRNA-seq) technology and identified a novel population in the mouse spleen and revealed the conserved NK subsets in human and mice. However, the developmental heterogeneity of NK cells in the BM, the critical anatomic location of murine NK cell development, has not been explored.\n\nIn this study, we define the heterogeneity of murine CD3\u03b5\u2212CD122+ cell from BM of wide type (WT) mice using scRNA-seq technology. The single-cell transcriptome analyses revealed three major cell types from the CD3\u03b5\u2212CD122+ compartment: conventional NK cells, innate lymphoid cells 1 (ILC1), and cells with high transcripts contents of Cd3d/e/g. We define five distinct NK developmental subsets: an immature NK (iNK) cell cluster, three transitional NK (transNK) cell clusters, and a terminally mature NK (termNK) cell cluster. We explored the transcriptome-based cellular stage of Raptor- or Rictor-deficient NK cells. Unexpectedly, half of the Rictor-deficient NK cells are classified into the least mature iNK cluster which only comprise 25% of the WT NK cell in the BM. This is contradictory to cell surface markers-defined maturity with only the loss of terminally mature NK cells in Rictor conditional knockout (cKO) mice. As we previously proposed that mTORC2 regulates terminal NK cell maturation through promoting the expression of T-bet via AktS473-FoxO1 axis, we explored the maturation status of T-bet deficient NK cells using scRNA-seq. Strikingly, more than 65% of T-bet-deficient NK cells are classified into the least mature iNK cluster and the expression of immature NK signature genes are highly up-regulated in the T-bet-deficient NK cells. Finally, deletion of Foxo1 successfully rescued the developmental impairment of Rictor-deficient NK cells defined by both cell surface markers and developmental transcriptome markers. These findings revealed previously unappreciated role of mTORC2-AktS473-FoxO1-T-bet axis in suppressing the immature NK transcriptional signature during the development of NK cells.\n\n## Results\n\n### Single-cell transcriptome-based heterogeneity among CD3\u03b5\u2212CD122+ cells\n\nThe BM is the anatomic location where most conventional murine NK cells develop. Thus, we decided to study the developmental heterogeneity of BM NK cells at single cell level using the 10X Genomics single cell gene expression system. To cover the broad NK cell developmental stages, we sorted the CD3\u03b5\u2212CD122+ population from BM of the Rptorfl/fl Ncr1Cre/WT, Rictorfl/fl Ncr1Cre/WT, or Tbx21\u2212/\u2212 mouse and the corresponding WT control mouse. The post-sorting purity ranged from 90% to 98% (Figure 1\u2014figure supplement 1A). To validate the NK cell development phenotype specifically in these six mice used, we detected the expression of CD27 and CD11b via flow cytometry using the cells from BM and spleen of these six mice. Consistent with our previous observation (Yang et al., 2018), in the BM, most of the NK cells from the Rptorfl/fl Ncr1Cre/WT mouse were CD27 SP. The NK cells from the Rictorfl/fl Ncr1Cre/WT mouse were unable to fully progress to the CD11b SP stage (Figure 1\u2014figure supplement 1B), and the T-bet-deficient mouse completely lost the CD11b SP NK compartment (Figure 1\u2014figure supplement 1B; Gordon et al., 2012). The expression pattern of CD27 and CD11b on NK cells in the spleen also matched with previous reports (Figure 1\u2014figure supplement 1B; Gordon et al., 2012; Yang et al., 2018). There was no difference in surface expression of CD27/CD11b among the three WT mice (Figure 1\u2014figure supplement 1B).\n\nAfter sequencing the libraries, the initial quality control (QC) analysis indicates successful library assembly, optimal sequencing and good cell viability. (Figure 1\u2014figure supplement 1C). We started our analyses with a focus on exploring the heterogeneity of CD3\u03b5\u2212CD122+ cells from WT mice using principal component analysis (PCA). To increase the clustering efficiency, cells from three WT mice were combined for analysis (Andrews and Hemberg, 2018). After initial quality control and clustering analysis, we filtered out the contaminating cells from other lineages, particularly those that did not express Il2rb (data not shown). The clustering analysis of the remaining pure CD3\u03b5\u2212CD122+ cells revealed that the cells from Tbx21+/+ mouse ordered from the Jackson Laboratory clustered separately from the Rptorfl/fl Ncr1WT/WT and Rictorfl/fl Ncr1WT/WT mice housed at the Medical College of Wisconsin animal facility (Figure 1\u2014figure supplement 1D and E). These data revealed that different housing conditions could result in alteration in the transcriptome profile that leads to individual-specific phenotype in scRNA-seq analysis of NK cells.\n\nTherefore, we scaled the sample variance to ensure the cells from different WT mice cluster together. At low clustering resolution, we found five distinct clusters of CD3\u03b5\u2212CD122+ cells (Figure 1A). Through exploring the differential expressed genes (DEGs) of each cluster, we found that Cluster #1 were conventional NK cells with high expression of Ncr1 and three subunits (Klrb1a, Klrb1b, and Klrb1c) of NK1.1 and comprised majority of the CD3\u03b5\u2212CD122+ cells (Figure 1A and B). The expression of Mki67 indicated that cells in Cluster #2 were cycling (Figure 1B). Cluster #3 contained ILC1 cells indicated by the high expression of Tmem176a/b and Cxcr6 (Figure 1B; Robinette et al., 2015). Notably, Ncr1 and Klrb1a/b/c were abundantly expressed in the ILC1 cluster that was higher than the NK cluster (Figure 1B). Cluster #4 was marked with high expression of Cd3d/e/g and low Ncr1 and Klrb1a/b/c expression (Figure 1B). This population has been reported before in the scRNA-seq dataset of group 1 ILC in the lung and is potentially related to NK-T lineage (Ferrari de Andrade et al., 2018). We referred to it as Cd3high cluster. ILC1, Cd3high cells and NKP potentially make up the Lin\u2212CD122+NK1.1\u2212 cells. Cells in Cluster #5 were activated by inflammatory stimuli as made evident by the high expression of interferon-induced genes (Figure 1B). Clusters #2 and #5 cells did not express Tmem176a/b, Cxcr6, Cd3d/e/g, or other lineage-defining transcripts, and therefore, were likely to be conventional NK cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig1-v2.jpg)\n\n**Figure 1.:** (A) With low clustering resolution (0.2), the bulk CD3\u03b5\u2212CD122+ BM cells from three WT mice were clustered into five distinct populations demonstrated in the tSNE plot. (B) The expression of selected genes associated with the identity of each cluster in (A) were shown in a dot plot. The size of the dot indicates the percentage of cells expressing the gene within each cluster (pct.exp). The color of the dot indicates the average expression of the gene within each cluster (avg.exp). (C) Five distinct clusters identified through unbiased clustering analysis of the NK cluster in (A). (D) The composition of the five NK clusters in each of the WT mouse. (E) Violin plots demonstrate the expression of Cd27, Itgam (CD11b), and Klrg1 in each NK cluster. The y-axis represents log-normalized expression value. (F) The average expression of the top 10 up-regulated DEGs (ranked by log fold-change) of each NK cluster were plotted using heatmap. The transNK2 cluster only contained three up-regulated DEGs with the 0.25 average log fold-change cutoff. * indicates genes that are DEGs of more than one cluster.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Post-sort purity of the six samples that went through the scRNA-seq experiment. (B) The expression of CD27 and CD11b on NK cells (gated on CD3\u03b5\u2212NK1.1+) from BM and spleen of the six mice used in the scRNA-seq experiment. (C) nUMI, nGene and percentage of mitochondria genes in the transcriptome (percent.mito) of all cells from six samples were shown in Violin plots. (D) Seven clusters generated from the unbiased clustering analysis of NK cells from three WT mice without scaling the sample origin. (E) The composition of the three WT mice within each cluster. The input cell number from each mouse was normalized to be equal. (F) Violin plots demonstrate the expression of six Ly49 family members in each NK cluster from Figure 1C. The y-axis represents log-normalized expression value.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Module scores were calculated using all the genes encoding ribosomal subunits and plotted via violin plots. Statistical analysis was conducted using Two-way ANOVA followed by Tukey Honest Significant test. ***p<0.0001 (B, C) Significant enrichment of MYC, E2F (B) and metabolic pathways (C) in the tranNK1 cluster compared to all other cells.\n\n### Single-cell transcriptomic analysis of murine BM NK cells reveals five distinct clusters\n\nNext, we removed Clusters #2 to #5 to focus on the analysis of the heterogeneity of the canonical NK cells. Unbiased clustering analysis revealed five distinct NK clusters as shown using a tSNE plot (Figure 1C). The three WT mice contributed relatively equal to each cluster, and each wild type had relatively similar proportions of each cluster (Figure 1D). Clusters #1 through #5 accounted for 25%, 20%, 25%, 10%, and 20% of the total NK cells, respectively (Figure 1D). Based on the expression of several NK cell maturation-defining markers, we found that Cluster #1 represented the most immature NK cells with high expression of Cd27 and low expression of Itgam (CD11b) and Ly49s (Klra1/3/4/7/8/9) (Figure 1E and Figure 1\u2014figure supplement 1F). The immature nature of Cluster #1 was further supported by the high transcriptional expression of Ltb, Thy1, Cd3d/g, and Cd7 (Figure 1F), all of which have been shown to be highly expressed in the immature CD27 SP NK cells (Chiossone et al., 2009). In comparison, the low expression of Cd27 and high expression of Itgam (CD11b) and Klrg1 marked Cluster #5 as the terminally mature NK cells (Figure 1E). NK cells are known to acquire effector functions as they mature. The high expression of functional molecules including Gzma and Gzmb further demonstrated the terminal maturity of cells in Cluster #5 (Figure 1F). Based on this information, we deemed Cluster #1 and #5 as immature NK (iNK) cluster and terminally mature NK (termNK) cluster, respectively. We further defined Clusters #2, 3, and four as transitional NK stages (transNK1, 2, and 3, respectively).\n\nNext, we sought to explore the identity of the three transNK clusters. TransNK1 represented a unique NK sub-population with high expression of genes encoding proteins involved in ribosomal biogenesis including ribonucleoproteins (Nop10, Nhp2, Gar1, Npm1, Npm3), RNA modification enzymes (Mettl1, Ddx21, Fbl), and GTPase related to nucleocytoplasmic transport (Ran, Ranbp1). We also found high expression of genes encoding the ribosomal subunits in this cluster (Figure 1\u2014figure supplement 2A). Gene set enrichment analysis (GSEA) revealed significantly enrichment of transcription factors MYC and E2F in transNK1 cluster compared to all other cells, both of which are involved in cell growth and proliferation (Figure 1\u2014figure supplement 2B; Conacci-Sorrell et al., 2014; Chen et al., 2009). We also found major metabolic pathways were enriched in this cluster including glycolysis, oxidative phosphorylation and fatty acid metabolism (Figure 1\u2014figure supplement 2C). Fewer up-regulated transcripts were identified within the transNK2 cluster (Figure 1F). This cluster was featured with high expression of Ly49 family members especially Klra4 (Ly49D) and Klra8 (Ly49H) (Figure 1F and Figure 1\u2014figure supplement 1F). As for the transNK3 cluster, we found multiple genes that belong to the category of immediate early genes (IEGs) were up-regulated (Nr4a1, Nr4a2, Nr4a3, Dusp1, Junb, Nfkbia, Nfkbid, Nfkbiz, Egr1, Supplementary file 1). This cluster is transcriptionally similar to the novel NK_3 cluster defined previously in the mouse spleen with up-regulation of genes including Pim1, Gadd45b, Bhlhe40, Irf8, Ccl3, Ccl4 besides the IEGs (Supplementary file 1; Crinier et al., 2018).\n\nTo further elucidate the relative maturity of the three transitional NK clusters, we explored the transcriptomic progression along the maturation process. The Euclidean distance indicated transcriptional similarity between transNK1 and transNK2, both of which had higher transcriptional similarity to the iNK cluster (Figure 2A). In comparison, the transNK3 had higher transcriptional similarity to the termNK cluster (Figure 2A). As NK cells progress along the developmental stages, a gradual expression and loss of distinct set of genes are expected to occur temporally. Most of these genes are uniquely and abundantly expressed at the two developmental extremes: the immature and terminally mature stages. Therefore, we calculated the module score of all five clusters based on the up-regulated or down-regulated DEGs of the iNK and termNK clusters. When we ordered the five clusters as iNK\u2192transNK1\u2192transNK2\u2192transNK3\u2192termNK, the module score based on the up-regulated DEGs of the iNK cluster or the down-regulated DEGs of the termNK cluster gradually declined (Figure 2B). In contrast, the module score based on the up-regulated DEGs of the termNK or the down-regulated DEGs of the iNK cluster gradually increased (Figure 2B). This indicated a sequential developmental progression of these five clusters in the order listed above. To further validate this notion, we analyzed the bulk RNA-seq dataset of CD27 SP, DP and CD11b SP NK subsets published previously and defined the up-regulated DEGs from both CD27 SP and CD11b SP NK subsets as the target gene list (named as \u2018CD27/CD11b gene sets\u2019 here) to calculate the module score (Figure 2C; Delconte et al., 2016). The overall low module score yield indicated the low coverage of the transcriptome in the 10X-based scRNA-seq dataset. Nevertheless, we still found a trend in increasing expression of genes for terminally mature NK cells and decreasing expression of genes for immature NK cells validating the order of clusters (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig2-v2.jpg)\n\n**Figure 2.:** (A) The transcriptome similarity among the five NK clusters was evaluated by the hierarchical clustering analysis and visualized via heatmap. Each row represents one of the highly variable genes across all cells and each column represents the average expression of these genes within one cluster. (B) Module scores were calculated using up-regulated or down-regulated DEGs of iNK and termNK clusters and plotted via violin plots. (C) The up-regulated genes in the CD27 SP and CD11b SP subset were extracted from the CD27/CD11b bulk RNA-seq dataset. The expression level of these genes in the five NK clusters were evaluated via calculating module scores and plotted via violin plots. (D) Distribution of all five NK clusters along the pseudotime trajectory. (E) The relative maturity of the developmental trajectory displayed across pseudotime. (F) Distribution of each NK clusters along the pseudotime trajectory.\n\nTo further establish the developmental progression of these five clusters, we used the Monocle2 pseudotime analysis to simulate the maturation trajectory in an unbiased manner. Based on the transcriptional information, each cell from the five clusters were assigned to the pseudotime trajectory (Figure 2D). The pseudotime progression indicated the maturation order. As shown in Figure 2E, we picked the far-left side of the trajectory as the root point as we found cells from iNK and transNK1 clusters mostly resided here (Figure 2F). Based on this root point, the pseudotime dictated that the far-right side of the trajectory was the most mature population which was dominated by the termNK cluster (Figure 2E and F). The cells in transNK2 and transNK3 clusters spread across the trajectory (Figure 2F). In conclusion, based on the transcriptome signature associated with each cluster and the unbiased analysis of the maturation trajectory, we define the relative maturity of this five NK clusters as iNK\u2192transNK1\u2192transNK2\u2192transNK3\u2192termNK. It is important to point out that this relative maturity does not necessarily imply distinct developmental stages that all NK cells follow. As an example, the high expression of IEGs in transNK3 cluster implies an activated state. In this regard, transNK3 cluster may be a heterogenous population consists of NK cells from different developmental stages. Nevertheless, this relative maturity is instrumental in characterizing the NK cells from the knockout mice as shown below.\n\n### Transcriptional alterations of raptor- or Rictor-deficient NK cells at single-cell level\n\nThe expression of cell surface markers has been conventionally used to define cellular identity. Although it is useful in many cases, there are limitations and potential drawbacks associated with this methodology especially in disordered conditions seen in patients or transgenic mice. Previously, we have characterized the development of Raptor- or Rictor-deficient NK cells that do not possess mTORC1 or mTORC2, respectively (Yang et al., 2018). We found differential maturation impairment with Raptor-deficient NK cells accumulating at the CD27 SP stage while Rictor-deficient NK cells are impaired in transition from DP to terminal CD11b SP stage. We profiled the BM CD3\u2212CD122+ cells using scRNA-seq in these transgenic mice to validate whether transcriptome-based cell stage classification match with previous cell surface markers-defined maturity. We combined the mutant cells with their corresponding WT cells and conducted PCA-based clustering analysis. Strikingly, nearly all the Raptor-deficient CD3\u2212CD122+ cells clustered distinctly from the WT cells (Figure 3A). As illustrated in the t-SNE plot, Cluster #1 through #5 were dominated by WT cells, while Cluster #6 and #7 were mostly Raptor-deficient cells (Figure 3A and Figure 3\u2014figure supplement 1A). This is consistent with our previous demonstration of a large transcriptome alteration in the absence of Raptor (Yang et al., 2018). Cluster #8 is the only shared group with both Raptor-deficient and WT cells (Figure 3A and Figure 3\u2014figure supplement 1A). The high expression of Tmem176a/b and Cxcr6 revealed Cluster #8 were ILC1 while all the rest seven clusters were NK cells (Figure 3\u2014figure supplement 1B). Comparatively, Cluster #1 had higher expression of Cd3d/e/g, however, this was not Cd3high cluster defined previously based on the high expression of Ncr1. Instead, cluster #1 were iNK cells and the higher transcripts level of CD3 chains has been reported before in immature NK cells (Lanier et al., 1992). We did not find cycling or inflamed cluster in this analysis presumably due to lower cell number from these two samples compared to the previous combined WT NK cell analysis (Figure 3\u2014figure supplement 1B). As the expression of iCre driven by Ncr1 presumably also occurred in the ILC1, this data indicated that mTORC1 is potentially dispensable for the development of ILC1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig3-v2.jpg)\n\n**Figure 3.:** (A) Clustering analysis of CD3\u03b5\u2212CD122+ cells from BM of Raptor cKO mouse and the littermate WT mouse. The clusters are displayed as tSNE plots on the left. The cell origin was labeled in the same tSNE plot on the right. (B) Module scores were calculated using up-regulated or down-regulated DEGs of iNK and termNK clusters and plotted in all the NK clusters formed by WT and Raptor-deficient cells. (C) The transcriptome similarity among the NK clusters formed by WT and Raptor-deficient cells was evaluated by the hierarchical clustering analysis and visualized via heatmap. (D\u2013F) (D), (E) and (F) are same analysis using WT and Rictor-deficient NK cells as (A), (B), and (C), respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The composition of the WT and Raptor-deficient cells within each cluster. The input cell number from each mouse was normalized to be equal. (B) A list of genes defining NK, ILC1, Cd3high, cycling, and inflamed cells was used to evaluate the identity of each cluster formed by WT and Raptor-deficient cells. (C) The expression level of CD27 SP and CD11b SP subset signature genes in the NK clusters formed by WT and Raptor-deficient cells were evaluated via calculating module scores and plotted via violin plots. (D\u2013F) (D), (E) and (F) are same analysis using WT and Rictor-deficient NK cells as (A), (B), and (C), respectively.\n\nNext, we examined the relationship between the five WT NK clusters and the two Raptor-deficient NK clusters. The DEGs revealed Cluster #1 and #5 represent the least and most mature NK clusters in the WT sample, respectively (Supplementary file 2). Module scores based on DEGs of iNK and termNK from above combined WT analysis supported this identity of Cluster #1 and #5 (Figure 3B). Consistent with their immature phenotype, Raptor-deficient NK cells from Cluster #6 and #7 expressed the termNK signature genes at low levels (Figure 3B). We calculated the module score based on the CD27/CD11b gene sets. The iNK and termNK features of Cluster #1 and #5 were consistent (Figure 3\u2014figure supplement 1C). The Cluster #6 and #7 from the Rptor cKO mouse demonstrated similar level of CD27 SP stage signature gene expression as Cluster #1 and had lowest CD11b SP stage signature gene expression (Figure 3\u2014figure supplement 1C). The Euclidean distance further emphasized the large transcriptome alteration of Raptor-deficient NK cells as Cluster #6 and #7 were distant from the WT clusters (Figure 3C).\n\nCompared to Raptor-deficiency, Rictor-deficient NK cells have a more restricted transcriptomic alteration (Yang et al., 2018). Nevertheless, clustering analysis largely separated the WT NK cells with the Rictor-deficient NK cells (Figure 3D and Figure 3\u2014figure supplement 1D). Within the nine identified clusters from the CD3\u03b5\u2212CD122+ cells, Clusters #1 through #4 were mostly comprised with WT NK cells, while Clusters #5 through #7 were dominated by Rictor-deficient NK cells (Figure 3D and Figure 3\u2014figure supplement 1D). We identified Cluster #8 and #9 as ILC1 and cycling cells indicated by the expression of Tmem176a/b, Cxcr6 and Mki67, respectively (Figure 3\u2014figure supplement 1E). The reduced contribution of Rictor cKO mice to the ILC1 cluster was potentially due to the impaired expression of T-bet which is critical to the ILC1 lineage (Figure 3\u2014figure supplement 1D; Klose et al., 2014). The reduced cycling cells from the Rictor cKO mice was consistent with our previous report (Yang et al., 2018).\n\nWhen we focused on the analysis of NK cells, the DEGs and module scores based on DEGs of iNK and termNK of combined WT analysis indicated that Cluster #1 and #4 represent the iNK and termNK in the Rictorfl/fl Ncr1WT/WT mouse, respectively, with Cluster #2 and #3 being the transitional stages (Figure 3E and Supplementary file 3). Interestingly, all three Rictor-deficient NK cells-dominated clusters (#5, 6, 7) had high expression of up-regulated genes in the iNK cluster to the level similar to the least mature Cluster #1 of WT NK cells (Figure 3E, iNK_up). The module scores based on CD27/CD11b gene sets demonstrated similar phenomenon, though less striking (Figure 3\u2014figure supplement 1F, CD27 SP_up). The relative expression of signature genes associated with terminally mature NK cells in Rictor-deficient NK clusters (#5, 6, 7) was similar to the transitional NK clusters (#2, 3) from WT mouse (Figure 3E and Figure 3\u2014figure supplement 1F). Strikingly, the hierarchical clustering analysis indicated that nearly all the Rictor-deficient NK cell-dominated clusters (#5, 6, 7) had more transcriptome similarity to the most immature cluster #1 and the less mature transitional cluster #2 of WT mouse (Figure 3F). The fact that cluster #1 and #2 only accounted for less than 50% of the WT NK cells emphasized that the Rictor-deficient NK cells were less mature than previously cell surface CD27/CD11b-defined maturity (Figure 1\u2014figure supplement 1B).\n\n### Transcriptome-defined maturity of raptor- or Rictor-deficient NK cells\n\nAs both Raptor- and Rictor-deficient NK cells clustered separate from their corresponding WT NK cells, we decided to apply machine-learning-based algorithm to classify the developmental stages of these genetically modified NK cells based on the WT controls. In total, we utilized five different machine-learning algorithms including generalized linear classifier (GL), gradient boosting classifier (GB), extreme gradient boosting classifier (XGB), random forest classifier (RF), and deep learning classifier (DL, neural networks). To train the classifiers, we randomly sampled 80% of the cells from the combined WT analysis. We tested the prediction accuracy of each classifier using the remaining 20% of the cells which were not included in the initial training process. As summarized in the Figure 4\u2014figure supplement 1A, the overall accuracy of all classifiers ranged from 60% to 70% with deep learning (DL) classifier being the most accurate with the lowest error rate. Importantly, all five NK clusters were identified by the classifiers except for the RF classifier which failed to detect the transNK3 subset (Figure 4A). The overall composition of the five NK clusters assigned by the machine-learning classifiers were similar to the original identity defined in the PCA analysis (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig4-v2.jpg)\n\n**Figure 4.:** (A) The original composition of the five NK clusters in the 20% WT testing cells (referred as \u2018Orig.ident\u2019) along with the composition determined by the machine-learning classifiers were plotted in the bar graph. GL, GB, XGBoost, RF, and DL represents generalized linear classifier, gradient boosting classifier, extreme gradient boosting classifier, random forest classifier, and deep learning classifier, respectively. (B) The identity of each WT and Raptor-deficient NK cells were assigned by the deep learning classifier as shown in the tSNE plots. (C) The composition of the five NK clusters in Raptor-deficient NK cells determined by the machine-learning classifiers. (D, E) (D) and (E) are same analysis using WT and Rictor-deficient NK cells as (B) and (C), respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) A table summarizing the accuracy and error rates of the five distinct machine-learning classifiers. (B, C) The identity of each Raptor-deficient NK cells (B) or Rictor-deficient NK cells (C) and their corresponding WT cells were assigned by distinct classifiers as shown in the tSNE plots. GL, GB, XGBoost, and RF represents generalized linear classifier, gradient boosting classifier, extreme gradient boosting classifier, and random forest classifier, respectively.\n\nWhen we applied the classifier algorithms to the Rptor cKO samples, we barely detected transNK3 and termNK clusters (Figure 4B and C and Figure 4\u2014figure supplement 1B). The most dominant cluster of the Rptorfl/fl Ncr1Cre/WT mouse was transNK2 accounting for more than 50% of the total Raptor-deficient NK cells (Figure 4C). The classification of Rictor-deficient NK cells resulted in 50% of all cells fell into the category of iNK cluster (Figure 4D and E and Figure 4\u2014figure supplement 1C). This is a drastic contradiction to the cell surface markers-defined maturity which revealed only terminal maturation defects of Rictor-deficient NK cells (Figure 1\u2014figure supplement 1B). This result was consistent with the high expression of iNK signature genes in Rictor cKO NK cells and short Euclidean distance between the WT immature NK compartments and all the Rictor-deficient NK cells (Figure 3E and F). Unlike the Rptor cKO sample, we could still detect transNK3 and termNK clusters in Rictor cKO NK cells with a reduction in percentage of termNK clusters compared to the littermate WT mouse consistent with reduced CD11b SP cells in Rictor cKO mice (Figure 4A and E). In summary, through machine-learning based classification, we found new insights into the maturity of Rictor-deficient NK cells that were previously masked by the cell surface markers-based definition.\n\n### T-bet-deficient NK cells had a transcriptional profile similar to the iNK cluster\n\nIn our previous report, we proposed that mTORC2 regulates the terminal maturation of NK cells through AktS473-FoxO1-T-bet axis (Yang et al., 2018). As the impaired expression of T-bet in Rictor-deficient NK cells is potentially responsible for the maturation defects, we reasoned whether a large proportion of the T-bet-deficient NK cells are also transcriptionally similar to immature NK cells in WT, a phenomenon seen in Rictor cKO NK cells. To test this, we conducted the scRNA-seq experiment using CD3\u03b5\u2212CD122+ cells from BM of WT and Tbx21\u2212/\u2212 mice purchased from the Jackson Laboratory. The PCA-based clustering analysis of CD3\u03b5\u2212CD122+ cells from WT and Tbx21 KO mice resulted in 12 distinct clusters with nearly complete separation between WT and Tbx21 KO cells (Figure 5\u2014figure supplement 1A and B). Based on the expression of key markers (Figure 5\u2014figure supplement 1C), we found that Clusters #1\u20137 comprised of NK cells. Clusters #8\u201310 were ILC1, Cd3high, and inflamed clusters, respectively. Both Cluster #11 and #12 were cycling cells with high expression of Mki67 (Ki-67) (Figure 5\u2014figure supplement 1C). The G2M.Score (module score of genes associated with G2M phase of cell cycle) and S.Score (module score of genes associated with S phase of cell cycle) indicated that cells in the Cluster #11 were mostly in the S phase while cells in the Cluster #12 were mostly in the G2M phase (data not shown). Illustrated by the distribution, there was almost no ILC1 (#8) and Cd3high (#9) cluster cells in the Tbx21\u2212/\u2212 sample (Figure 5\u2014figure supplement 1B). This was consistent with T-bet being the master transcription factor of ILC1 lineage (Klose et al., 2014), and the Cd3high cluster being a lineage related to NK-T cells which is nearly absent in Tbx21\u2212/\u2212 mice (Townsend et al., 2004). The dominance of inflamed Cluster (#10) by T-bet-deficient NK cells indicated perturbation of inflammatory response resulted from global deletion of Tbx21\u00a0(Figure 5\u2014figure supplement 1B).\n\nNext, we focused on the analysis of Clusters #1 through #7 comprised of NK cells. DEGs and module scores indicated that Cluster #1 and #4 were the least and most mature NK cluster of WT mouse, respectively (Figure 5A and Supplementary file 4). All three T-bet-deficient NK cells-dominated clusters (#5, 6, 7) presented similar module score pattern as the immature cluster #1 in all up- or down-regulated DEGs of iNK or termNK cluster (Figure 5A). This pattern was also present in the module scores calculated based on the CD27/CD11b gene set (Figure 5\u2014figure supplement 1D). The transcriptional similarity between the least immature WT NK cells (Cluster #1) and the bulk T-bet-deficient NK cells (Clusters #5, #6, #7) were further manifested by the hierarchical clustering analysis (Figure 5B). The short Euclidean distance among these clusters was even more striking when compared to the Rictor-deficient NK sample (Figure 3F). When we applied the machine-learning-based classifiers, more than 60% of the T-bet-deficient NK cells were categorized into the iNK cluster and there were only few cells in the transNK3 and termNK clusters (Figure 5C and D and Figure 5\u2014figure supplement 1E). Collectively, these data revealed that T-bet-deficient NK cells were less mature than previously defined by cell surface markers. Direct comparison of the bulk WT and Tbx21\u2212/\u2212 NK cells in the scRNA-seq dataset revealed that T-bet deficiency resulted in up-regulation of immature NK signature genes and down-regulation of terminally mature NK genes (Figure 5E). Within the 14 up-regulated genes (average logFC\u00a0\u22650.25) in the iNK cluster from three WT combined analysis, we found 10 of those genes with significantly increased expression in T-bet-deficient NK cells compared to WT NK cells (Figure 5E). Within the 56 termNK cluster signature genes (average logFC\u00a0\u22650.25), we also observed decreased expression of 18 genes in T-bet-deficient NK cells compared to WT NK cells (Figure 5E). These results imply that the large proportion of T-bet-deficient NK cells are halted at the transcriptionally immature NK cell stage.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig5-v2.jpg)\n\n**Figure 5.:** (A) Module scores were calculated using up-regulated or down-regulated DEGs of iNK and termNK clusters and plotted in all the NK clusters formed by WT and T-bet-deficient cells. (B) The transcriptome similarity among the NK clusters formed by WT and T-bet-deficient cells was evaluated by the hierarchical clustering analysis and visualized via heatmap. (C) The identity of each WT and T-bet-deficient NK cells were assigned by the deep learning (DL) classifier as shown in the tSNE plot. (D) The composition of the five NK clusters in T-bet-deficient NK cells determined by the machine-learning classifiers. GL, GB, XGBoost, RF, and DL represents generalized linear classifier, gradient boosting classifier, extreme gradient boosting classifier, random forest classifier, and deep learning classifier, respectively. (E) With a minimum of 0.25 average log fold-change threshold, the iNK signature genes that were significantly up-regulated and the termNK signature genes that were significantly down-regulated in T-bet-deficient NK cells compared to WT NK cells were listed in the table. (F) The expression level of genes listed in (E) was further validated in the bulk RNA-seq analysis of the CD27+ WT and T-bet-deficient NK cells and shown in the heatmap. (G) The enrichment of CD27 SP NK subset signature genes in the T-bet-deficient NK cells compared to the WT NK cells.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Clustering analysis of CD3\u03b5\u2212CD122+ cells from BM of the Tbx21 KO mouse and the WT mouse. The clusters are displayed as tSNE plots on the left. The cell origin was labeled in the same tSNE plot on the right. (B) The composition of the WT and T-bet-deficient cells within each cluster. The input cell number from each mouse was normalized to be equal. (C) A list of genes defining NK, ILC1, Cd3high, cycling, and inflamed cells were used to evaluate the identity of each cluster formed by WT and T-bet-deficient cells. (D) The expression level of CD27 SP and CD11b SP subset signature genes in the NK clusters formed by WT and T-bet-deficient cells were evaluated via calculating module scores and plotted via violin plots. (E) The identity of each WT and T-bet-deficient NK cells were assigned by distinct classifiers as shown in the tSNE plots. GL, GB, XGBoost, and RF represents generalized linear classifier, gradient boosting classifier, extreme gradient boosting classifier, and random forest classifier, respectively.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Mixed BM chimera experiment was conducted using BM cells from CD45.1+ WT mice and CD45.2+ Tbx21\u2212/\u2212 mice and CD45.2+Rag1\u2212/\u2212Il2rg\u2212/\u2212 as recipient mice. (A, B) Phenotypical analysis of CD27/CD11b (A) and KLRG1 (B) on splenic NK cells from recipient mice eight weeks after donor cell injection. n = 5 (C) The expression level of genes listed in Figure 5E was evaluated in the bulk RNA-seq analysis of the CD27+ WT and T-bet-deficient NK cells sorted from BM of recipient mice. Cells derived from the same donor were pooled. (D) The expression level of genes listed in Figure 5E was evaluated in the bulk RNA-seq analysis of the CD27+ WT and Rictor-deficient NK cells and shown in the heatmap. Statistical significance was calculated using Two-way ANOVA (A) or unpaired Student t.test (B). *p < 005; **p < 0.01; ***p < 0.001.\n\nThe technical limitation of 10X-based scRNA-seq with capture of the most abundant transcripts only covered partial iNK signature transcripts. The extent to which T-bet suppresses the expression of immature NK signature genes is still unknown. To achieve a fair comparison and in-depth coverage of the transcriptome, we conducted bulk RNA-seq analysis using only the CD27+ NK cells from BM of both Tbx21 WT and KO mice. We first validated the expression of those 28 genes identified in the scRNA-seq dataset (Figure 5E). As demonstrated in the heatmap, indeed nearly all the 10 iNK signature genes were significantly up-regulated and the 18 termNK signature genes were significantly down-regulated in the T-bet-deficient NK cells comparing to the WT cells (Figure 5F). To investigate whether this up-regulation of immature NK signature genes is intrinsic to the loss of T-bet, we conducted mixed bone marrow chimera experiment and performed bulk\u00a0RNA-seq analysis using CD27+ NK cells from BM. Consistent with previous report (Townsend et al., 2004), we found absence of CD11b SP NK cells and significantly reduced KLRG1 expression on NK cells developed from T-bet KO donors (Figure 5\u2014figure supplement 2A and B). RNAseq analysis indicated up-regulation of immature NK genes in the absent of T-bet, emphasizing cell-intrinsic defects (Figure 5\u2014figure supplement 2C). Through analyzing the bulk RNA-seq dataset from Rictor-deficient CD27+ NK cells we published previously (Yang et al., 2018), we found a similar pattern when we evaluated the expression of these 28 genes, consistent with the immaturity of the Rictor-deficient NK cells (Figure 5\u2014figure supplement 2D). Next, to obtain a larger immature NK transcriptional signature, we analyzed the CD27/CD11b bulk RNA-seq dataset and found genes that have highest expression in the CD27 SP NK subset with more than one-fold increased expression comparing to both DP and CD11b SP NK cells. In total, we found 796 genes representing the transcriptional signature of the relatively immature CD27 SP NK subset. GSEA revealed that these 796 immature NK signature genes were significantly enriched in the T-bet-deficient NK cells comparing to the WT counterparts, emphasizing that T-bet is required to suppress the expression of genes associated with immature NK cells to a large extent (Figure 5G). In summary, these data revealed the previously unappreciated role of T-bet in suppressing the immature NK transcriptional signature during the development of NK cells.\n\n### T-bet is unlikely to directly bind and suppress the expression of the bulk immature NK genes\n\nWith the novel finding that T-bet is required for the suppression of immature NK transcriptional signature, we sought to explore the potential mechanisms for the induction of immature NK genes in T-bet-deficient NK cells. One potential explanation is that T-bet, as a transcription factor, directly binds to the regulatory elements associated with immature NK genes and actively suppresses the expression of these genes. we reanalyzed the recently published T-bet ChIP-seq dataset generated using splenic NK cells and assessed whether T-bet directly targets the immature NK genes (Shih et al., 2016). With q-value set at 1\u00a0\u00d7\u00a010\u22125 and focus on the protein-coding genes, we found a list of 654 T-bet-binding genes. Next, we used the GSEA to determine whether the T-bet-binding genes were enriched in the signature genes associated with either iNK cluster or CD27 SP NK subset. We found a significant depletion of T-bet-binding genes in the iNK cluster compared to all other cells, indicating that T-bet does not directly bind to the majority of these iNK signature genes (Figure 6A, left). On the contrary, we found the T-bet-binding genes were significantly enriched in the termNK cluster comparing to all other cells (Figure 6A, right). Similarly, when comparing the CD27 SP with the CD11b SP NK subset in the bulk RNA-seq dataset, we found significant enrichment of the T-bet ChIP-seq peaks in the CD11b SP NK cells compared to the CD27 SP compartment (Figure 6B). These data were consistent with T-bet being the master transcription factor in driving terminal maturation of NK cells. Nevertheless, we found several immature NK signature genes that are up-regulated in T-bet-deficient NK cells with direct T-bet binding of the regulatory regions (Figure 6C). The expression of these genes might be subject to direct suppression from T-bet. In conclusion, T-bet is unlikely to directly bind and suppress the bulk of the immature NK genes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig6-v2.jpg)\n\n**Figure 6.:** (A) Depletion of the T-bet ChIP-seq peaks in the iNK cluster compared to all other cells (left) and enrichment of the T-bet ChIP-seq peaks in the termNK cluster compared to all other cells (right). (B) The T-bet ChIP-seq peaks were significantly enriched in the CD11b SP NK subset compared to the CD27 SP NK subset. (C) Examples of immature NK genes up-regulated in T-bet-deficient NK cells with significant binding of T-bet in the regulatory elements. Arrows point the significantly enriched peaks. (D) Enrichment of transcription factor FoxO1 in the T-bet-deficient NK cells compared to the WT NK cells. (E) The transcripts level of Foxo1 in the CD27+ WT and T-bet-deficient NK cells. TPM stands for transcripts per million. (F) Significant enrichment of T-bet ChIP-seq peaks at the regulatory elements associated with the Foxo1 locus. Arrows point the significantly enriched peaks.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A, B) The mRNA level of transcription factors essential for NK cell development in the CD27+ T-bet- (A) or Rictor-deficient (B) NK cells and their corresponding WT control. TPM stands for transcripts per million.\n\nOur second hypothesis was that T-bet regulates the expression and/or activity of other transcription factors which in turn regulate the expression of immature NK signature genes. We examined the expression of transcription factors that are known to play a role in the development of NK cells and found majority of them have an expression profile in either T-bet- or Rictor-deficient NK cells comparable to the WT (Figure 6\u2014figure supplement 1A and B; Hesslein and Lanier, 2011). Next, we explored the GSEA and looked for enriched or depleted transcription factors in both T-bet- and Rictor-deficient NK cells. Interestingly, we found that transcription factor FoxO1 was enriched in the T-bet-deficient NK cells comparing to WT controls (Figure 6D), a phenomenon that we have previously established in the Rictor-deficient NK cells (Yang et al., 2018). We also found the transcripts level of Foxo1 was significantly higher in the T-bet-deficient NK cells indicating that T-bet may suppress the expression of Foxo1 (Figure 6E). The direct binding of T-bet in the intron region and the regulatory region up-stream of transcription starting site of Foxo1 locus further supported this possibility (Figure 6F). These data prompted us to hypothesize that Foxo1, which has the highest expression in the CD27 SP subset (Deng et al., 2015), is essential in driving the expression of immature NK signature genes.\n\n### Deletion of Foxo1 rescues the maturation of Rictor-deficient NK cells\n\nPreviously we proposed that hyperactive FoxO1 suppresses the expression of T-bet in Rictor-deficient NK cells leading to the terminal maturation defects (Yang et al., 2018). Based on the data we presented above, we hypothesized that FoxO1 promotes the expression of immature NK genes in both T-bet- and Rictor-deficient NK cells. Therefore, we asked the question whether deletion of Foxo1 in Rictor-deficient NK cells could not only rescue the impaired expression of T-bet and the terminal maturation defect, but also correct the abnormal induction of the immature NK transcriptional signature. To address this question, we bred the Rictorfl/flNcr1Cre/WT mice with Foxo1fl/flNcr1WT/WT mice. To ensure efficient generation of experimental mice with littermate control, we used Rictorfl/+Foxo1fl/+Ncr1Cre/WT mice as the WT control mice since both Rictor and FoxO1 are haplo-sufficient to the development of NK cells (data not shown). Due to the mixed background of these mice, we had large variation among each genotype most pronounced in terms of the number of NK cells in these mice (Figure 7\u2014figure supplement 1A and B). Nevertheless, consistent with previous report (Yang et al., 2018), we found a decrease in both percentage and absolute number of NK cells in the spleen of Rictor cKO mice compared to the WT control (Figure 7\u2014figure supplement 1A and B). Importantly, deletion of Foxo1 in Rictor cKO mice rescued the number of NK cells in the spleen to the level compatible to the WT control (Figure 7\u2014figure supplement 1A and B). Specific to the maturation of NK cells, Rictor cKO mice had a smaller terminally-mature population compared to the WT control indicated by either the percentage of CD11b SP subset or the KLRG1+ NK cells (Figure 7A and B, Figure 7\u2014figure supplement 1C and D), although the difference is less pronounced compared to the previous report likely due to the fact that the mixed background mice had generally more mature NK cells than the pure B6 background mice at the age of eight weeks (Figure 7\u2014figure supplement 1C and D and Figure 1\u2014figure supplement 1B). Notably, deletion of Foxo1 in Rictor-deficient NK cells completely rescued the percentage of CD11b SP subset or the KLRG1+ NK cells to the level compatible to the WT control (Figure 7A and B, Figure 7\u2014figure supplement 1C and D). These data indicated that FoxO1 is the transcription factor suppressing the terminal maturation program in Rictor-deficient NK cells. To further explore whether the impaired expression of T-bet is the downstream of hyperactive FoxO1 in Rictor-deficient NK cells, we evaluated the expression of T-bet in the Rictor/Foxo1 cDKO mice. Gated on three subsets of NK cells from the spleen, we found deletion of Foxo1 in the Rictor-deficient NK cells rescued the expression of T-bet in the CD27 SP and DP subsets to the level of the corresponding WT control (Figure 7\u2014figure supplement 1E). The rescue was incomplete in the terminal CD11b SP NK compartments (Figure 7\u2014figure supplement 1E). Deletion of Foxo1 alone resulted in almost a fold increasing of the T-bet protein level in all three developmental stages compared to the WT control. These data indicated that, in addition to FoxO1, other factors downstream of mTORC2 are involved in the regulation of T-bet expression.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig7-v2.jpg)\n\n**Figure 7.:** (A) Quantification of each NK subsets defined by the expression of CD27 and CD11b in BM and spleen of the four group mice (gated on CD3\u03b5\u2212NCR1+). n\u00a0\u2265\u00a06, pooled from six independent experiments. (B) Quantification of the percentage KLRG1+ NK cells in the four group mice (gated on CD3\u03b5\u2212NCR1+). n\u00a0\u2265\u00a06, pooled from six independent experiments. (C) The composition of the five NK clusters in the littermate Rictorfl/flFoxo1fl/+NcrCre/WT and Rictorfl/flFoxo1fl/flNcrCre/WT mice determined by the machine-learning classifiers. GL, GB, XGBoost, RF, and DL represents Generalized Linear classifier, Gradient Boosting classifier, extreme gradient boosting classifier, Random Forest classifier, and Deep Learning classifier, respectively. (D) The expression of iNK and termNK signature genes in NK cells from Rictorfl/flFoxo1fl/+NcrCre/WT and Rictorfl/flFoxo1fl/flNcrCre/WT mice were evaluated by module scores and plotted as violin plots. (E) The expression of several iNK signature genes in NK cells from Rictorfl/flFoxo1fl/+NcrCre/WT and Rictorfl/flFoxo1fl/flNcrCre/WT mice were demonstrated via violin plots. Statistical significance was calculated using Two-way ANOVA (A and B) or unpaired Student t.test (D). *p<005; **p<0.01; ***p<0.001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51339/elife-51339-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Quantification of the percentage of NK cells in the BM and spleen of the four group mice (gated on CD3\u03b5\u2212NCR1+). Pooled from eight independent experiments. (B) Quantification of the absolute number of NK cells in the BM and spleen of the four group mice (gated on CD3\u03b5\u2212NCR1+). Pooled from eight independent experiments. (C, D) Representative flow plots demonstrating the expression of CD27/CD11b (C) and KLRG1 (D) in the NK cells from BM and spleen of the four group mice (gated on CD3\u03b5\u2212NCR1+). (E) The protein level of T-bet in three NK subsets defined by the expression of CD27 and CD11b were evaluated by intracellular staining and gated on CD3\u03b5\u2212NCR1+ cells from spleen of the four group mice. The representative flow plots were shown on the left. The mean fluorescent intensity (MFI) of T-bet was quantified and shown as fold-change normalized to the CD27 SP population from WT control as shown on the right. n\u00a0\u2265\u00a03, pooled from three independent experiments. Statistical significance was calculated using Two-way ANOVA. The data from Rictorfl/+Foxo1fl/flNcrCre/WT mice were not included in the statistical analysis for Figure E. *p<005; **p<0.01; ***p<0.001.\n\nNext, we wanted to assess whether the transcriptome-defined maturation defects in Rictor-deficient NK cells were also rescued via deletion of Foxo1. We profiled the CD3\u03b5\u2212CD122+ cells from BM of littermate Rictorfl/flFoxo1fl/+Ncr1Cre/WT and Rictorfl/flFoxo1fl/flNcr1Cre/WT mice using scRNA-seq and classified the NK cells from these mice with machine-learning algorithms (Figure 7C). Compared to the Rictor cKO mouse, the Rictor/Foxo1 cDKO mouse harbored reduced percentage of iNK cluster and substantially increased percentage of termNK population indicating successful rescue of the Rictor-deficient NK cells via deletion of Foxo1 (Figure 7C). We further explored the expression of the immature NK genes in both samples and found reduced expression of iNK signature genes in the Rictor/Foxo1 cDKO mouse compared to the Rictor cKO mouse (Figure 7D). Consistent with the rescue, we also found increased expression of termNK signature genes in the Rictor/Foxo1 cDKO mouse compared to the Rictor cKO mouse (Figure 7D). The correction of the abnormal expression of iNK signature genes in the Rictor-deficient NK cells via deletion of Foxo1 were further manifested with the reduced expression of a few mostly highly expressed iNK genes in the Rictor/Foxo1 cDKO mouse sample (Figure 7E). Whether the restored expression of T-bet, complete loss of FoxO1, or potentially both are responsible for the correction of the iNK gene expression requires further dissection in the future.\n\n## Discussion\n\nThe transcriptional programs that regulate NK cell development is not yet fully understood. Specifically, the transcriptional activation or repression during NK cell ontology is poorly defined. Here, we used scRNA-seq technology and found five distinct NK clusters in the BM of WT mice. Based on the expression of known markers and transcriptional similarity, we delineated the relative maturity of these five NK clusters. Based on the transcriptome information of the WT clusters, we utilized the machine-learning classifiers to define the identity of Raptor- or Rictor-deficient NK cells and found maturation profiles of these mutant NK cells distinct from the cell surface markers-based definition that we previously reported (Yang et al., 2018). The striking immaturity of the Rictor-deficient NK cells promoted us to evaluate the maturation of the T-bet-deficient NK cells with single-cell transcriptome analysis. We found a higher percentage of immature NK cells in Tbx21 KO mice than the Rictor cKO mice and significant up-regulation of immature NK transcriptional signature in T-bet-deficient NK cells, a phenomenon that was not previously appreciated. Lastly, through deletion of Foxo1, we completely rescued the maturation defects of the Rictor-deficient NK cells defined by both cell surface markers and the transcriptome.\n\nWith the profiling of CD3\u03b5\u2212CD122+ cells from the BM of WT mice, we found two distinct cell subsets, the ILC1 and Cd3high cells, besides the conventional NK population. These two cell populations presumably contribute to the heterogeneity of CD3\u03b5\u2212CD122+NK1.1\u2212 cells, the original definition of the NKP subset. We believe the Cd3high cells are related to the NK-T cell lineage as this population contains high transcripts level of Cd3d/e/g and is nearly absent in the Tbx21 KO mice which have fewer NK-T cells (Townsend et al., 2004). Further investigation of these unique Cd3high cells is warranted to determine their developmental and functional relevance. Specific to the five clusters formed by the conventional NK cells, besides the reliably identifiable least mature (iNK) and most mature (termNK) clusters, we named the rest three clusters as the transitional NK subsets. TransNK1 are transcriptionally closer to the iNK cluster and demonstrates a proliferative phenotype with high ribosomal contents and active metabolic profile. TransNK3 represents a unique NK subset with high expression of IEGs similar to the novel NK_3 cluster defined previously in the mouse spleen (Crinier et al., 2018). This group may be upregulating IEG\u2019s as a part of the developmental process or they may be a unique NK subset that branches off late in the developmental process.\n\nAlthough we could not find reliable cell surface markers to faithfully define these five WT NK clusters, it provides an important dataset that we can utilize to profile the NK cells from mutant mice whose transcriptomic profiles are distinct from WT cells. Previously, we have reported the differential role mTORC1 and mTORC2 in regulating the development of NK cells (Yang et al., 2018). Based on the cell surface markers expression, we found mTORC1 is important for the early NK cell maturation from the CD27 SP to the DP stage, while mTORC2 governs the terminal maturation program, transiting from the DP to the CD11 SP stage. However, through utilizing machine-learning classifiers, we found more immature NK cells in the Rictor cKO mice as compared to the Rptor cKO mice, contradictory to the cell-surface markers-defined developmental maturity. We further profiled the T-bet-deficient NK cells as we previously proposed that the impaired expression of T-bet is responsible for the terminal maturation defect of Rictor-deficient NK cells. Strikingly, we found even more immature NK cells in the Tbx21 KO mice and a significant up-regulation of immature NK signature genes in the T-bet-deficient NK cells, which reveals a previously unappreciated role of T-bet in suppressing the immature program of NK cells.\n\nThe further exploration of the mechanisms underlining the suppressive role of T-bet in regulating the expression of immature NK genes indicated that T-bet binds the regulatory elements of only a few immature NK genes and suppresses their transcription in mature NK cells. The increased expression of large number of immature NK genes implied additional transcription factors downstream of T-bet may play a role. We proposed that, in addition to the well-established role of FoxO1 in suppressing the expression of T-bet (Deng et al., 2015), T-bet can also suppress the expression of FoxO1 as the expression and activity of FoxO1 are increased in T-bet-deficient NK cells, and that this negative feedback loop is part of what transcriptionally defines mature NK cells as a lineage. Based on this information, we hypothesized that hyperactive FoxO1 in both the Rictor- and T-bet-deficient NK cells drive the expression of immature NK genes. One evidence to support this hypothesis is that deletion of Foxo1 in Rictor-deficient NK cells not only rescues the terminal maturation defects but also corrects the abnormal expression of immature NK genes. Additional experiments are required to fully establish the reciprocal regulation between FoxO1 and T-bet during the development of NK cells and their precise role in regulating the immature and terminal maturation programs.\n\nIn conclusion, we utilized scRNA-seq technology to define the developmental heterogeneity of NK cells in the BM. We further utilized these transcriptome-defined developmental clusters to reveal a previously unappreciated role of mTORC2-AktS473-FoxO1-T-bet axis in regulating the expression of immature NK genes during NK cell development. More importantly, through using machine-learning algorithms, we present a novel approach to define cellular differentiation.\n\n## Materials and methods\n\n### Mice and reagents\n\nRptorfl/fl, Rictorfl/fl, Foxo1fl/fl, and Tbx21\u2212/\u2212 mice were purchased from the Jackson Laboratory (Bar Harbor, ME). Ncr1iCre mice were a generous gift from Dr. Eric Vivier (Narni-Mancinelli et al., 2011). Rptorfl/fl, Rictorfl/fl, Tbx21\u2212/\u2212, and Ncr1iCre mice are in C57BL/6 background. The Foxo1fl/fl mice were in FVB background. All mice were maintained in pathogen-free conditions in the Biological Resource Center at the Medical College of Wisconsin. All animal protocols were approved by Institutional Animal Care and Use Committees. The following antibodies and reagents were used in this study: CD3 (17A2), NK1.1 (PK136), CD27 (LG.7F9), CD11b (M1/70), KLRG1 (2F1), NCR1 (29A1.4), CD122 (5H4), T-bet (4B10) are from Thermo-Fisher Scientific (Waltham, MA).\n\n### Cell separation, flow cytometry and cell sorting. Bone marrow cells were flushed, and single-cell suspensions were made by passing through the syringe/needles\n\nCells from spleen were prepared by gently grinding the dissected organs with micro slides (VWR, Radnor, PA). Flow cytometry analyses were conducted in LSR-II (BD Biosciences, San Jose, CA) or MACSQuant Analyzer 10 (Miltenyi Biotec, Bergisch Gladbach, Germany) and analyzed with FlowJo software (FlowJo LLC, Ashland, OR). For cell sorting, the bulk BM cells were used to isolate the CD3\u03b5\u2212CD122+ cells for scRNA-seq experiments. Specific to the bulk RNA-seq experiment, NK cells were first enriched using negative selection kit (STEMCELL Technologies, Vancouver, Canada). The CD27+ NK cells were further sorted by FACSAria (BD Biosciences, San Jose, CA), and the purity was generally above 95%.\n\n### Mixed bone marrow chimera\n\nBM from CD45.1+ WT mice and CD45.2+ Tbx21\u2212/\u2212 mice were mixed at 1:2 ratio. 10 million cell mixture was injected into each sub-lethally irradiated CD45.2+Rag1\u2212/\u2212Il2rg\u2212/\u2212 recipient mouse. A pair of donor cells were injected into three recipients and the other pair of donor cells were injected into two recipients. 8 weeks later, BM CD27+ NK cells from recipients were sorted and subject to bulkRNA-seq analysis (cells derived from the same donor were pooled.). Splenocytes were also collected for phenotypical analysis using flow cytometry.\n\n### Single-cell RNA-sequencing\n\nAfter sorting, cells were washed once with ice-cold PBS containing 10% FBS post-sorting and counted using hemocytometer. After that, the cells were loaded to 10X Chromium system (10X Genomics, San Francisco, CA) and run through the library preparation following guidance from the Chromium Single Cell 3\u2019 Reagent Kits v2. The libraries were quantified using NEBNext Library Quant Kit (NEW ENGLAND Biolabs, Ipswich, MA) and sequenced via Illumina NextSeq 550 (Illumina, San Diego, CA).\n\n### scRNA-seq data analyses\n\nAfter the sequencing, the raw data from each sample was demultiplexed, aligned to mm10 reference genome, and UMI counts were quantified using the 10X Genomics Cell Ranger pipeline (v2.1.1, 10X Genomics). Then, we continued the data analysis with the filtered barcode matrix files using the Seurat package (v2.3.1) (Butler et al., 2018) in R (v3.4.3 or above). For initial quality control, we filtered out the cells that expressed less than 200 genes or more than 2500 genes. We also removed cells with more than 5% mitochondrial transcripts content. Gene expression values for each cell were log-normalized and scaled by a factor of 10,000. To prevent clusters from being biased by cellular library size and mitochondrial transcript content, gene expression values were scaled based on the number of UMIs in each cell and the cell mitochondrial transcript content. We combined cells from all three WT mice to increase the power of unsupervised clustering analysis (Andrews and Hemberg, 2018). Based on the PCElbowPlot, we picked certain number of principal components (PCs) for the clustering analysis when that number reached to the baseline of the standard deviation of PC. Specific to the choice of cluster resolution, we used the \u2018Clustree\u2019 function to visualize the clustering progression and picked the highest resolution that still gave stable clusters (Zappia and Oshlack, 2018). Cell clusters were visualized using t-distributed Stochastic Neighbor Embedding plots (t-SNE). For differential gene expression, we used Model-based Analysis of Single-cell Transcriptomics (MAST) test (Finak et al., 2015) with genes detected in a minimum of 10% of all cells, a minimum of 0.25 average log fold-change (logFC), and a minimum of 0.05 adjusted p value. For gene set enrichment analysis (GSEA), we used fgsea function with gene sets from the Broad Institute\u2019s molecular signatures database (MSigDB) (Subramanian et al., 2005; Liberzon et al., 2011). All the p-value shown in the figures were adjusted for multiple gene sets enrichment comparison. In order to predict cellular differentiation, cells were ordered in pseudotime using Monocle2 (v2.6.4) (Qiu et al., 2017). All significant DEGs across five NK clusters with more than 0.25 average logFC were used to order the cells. Finally, to predict the developmental cluster of the cells from the knock out mice, we utilized one of several classifiers including: a generalized linear model, a gradient boosting model, a deep learning neural network model, and a extreme gradient boosting model, from the H2O Python Module (Aiello et al., 2018). Further, we used the Seurat wrapper for the random forest classifier from the ranger package (Schwarz et al., 2010). These classifiers were trained on a random sample made up of 80 percent of the WT NK cell non-scaled transcription data, using cross-validation and accuracy as a target end-point for the classifier to avoid overfitting. The accuracy and error of the machine-learning classifiers was measured by using the classifier to predict the developmental cluster of the remaining 20 percent of the WT NK cells which had a known cluster identity and had not been used in the initial training.\n\n### Bulk RNA-sequencing and data analysis\n\nThe bulk RNA-seq experiment using the CD27+ NK cells from Tbx21\u2212/\u2212 and the WT mice (n=4 per group) was performed as previously described (Yang et al., 2018). The final libraries were sequenced via Illumina NextSeq 550 (Illumina, San Diego, CA). The dataset from the Rictor cKO mice was generated in the previous study (Yang et al., 2018). Fastq sequence data were pseudo-aligned and quantified using Salmon v0.12 (Patro et al., 2017), with an index built on the mm10 reference transcriptome (Casper et al., 2018) downloaded from the UCSC genome browser. Following pseudo-alignment, we used tximport (Soneson et al., 2015) and DESeq2 (Love et al., 2014) to analyze differential gene expression between WT and KO NK cells. Finally, we used gene set enrichment analysis via fgsea (explained above) to identify potential downstream transcription factor targets and enrichment of T-bet targets from the T-bet ChIP-Seq analysis.\n\n### ChIP-seq analysis\n\nThe T-bet ChIP-seq dataset was published previously (Shih et al., 2016). After downloading the fastq files from Sequence Read Archive (SRA), the raw fastq sequence data from the T-bet ChIP sample and the input sample were aligned to the mouse genome mm10 individually using bowtie2 (Langmead and Salzberg, 2012). Significant T-bet binding peaks were identified using MACS2 with a peak q-value cutoff of 1\u00a0\u00d7\u00a0105 (Zhang et al., 2008). These significant peaks were then annotated using the \u2018annotate peaks\u2019 tool from the HOMER package (Heinz et al., 2010). A gene set of potential T-bet target genes was produced by selecting protein-coding genes with significant T-bet peaks within the gene-body or promoter. This gene set of potential T-bet targets was used in GSEA analyses with both combined WT scRNAs-seq dataset and the CD27/CD11b bulk RNA-seq dataset.\n",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "ebfdd2e6-ef8a-4bc7-bbf7-fa837b811804",
+      "submission_id": "a20400b5-0148-4423-abdc-52e886eac466",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Florent Ginhoux, Agency for Science Technology and Research Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51339.sa1](https://doi.org/10.7554/eLife.51339.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe editors and the reviewers recognised the novelty and the importance of your work describing new insights in NK development and the transcriptional program regulating T-bet in NK cell differentiation. Your data represent an interesting resource for the community to investigate and mine.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single-cell transcriptome reveals the novel role of T-bet in suppressing the immature NK gene signature\" for consideration by eLife. Your article has been reviewed by Satyajit Rath as the Senior Editor, a Reviewing Editor, and two reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Nicholas Huntington (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript provides new insights in NK development and the transcriptional program regulating T-bet in NK cell differentiation and represent an interesting resource for the community to investigate and mine. Aiming to understand better the role of T-bet in defining NK cell maturation and using single cell RNA-seq and bulk population RNA-seq of NK cells from Tbx21-/- mice, the authors identify concordance in expression between Rictor KO and Tbet KO NK cells. This allowed the identification of a novel role of mTorc2/FoxO1/Tbet axis in the maturation program of NK cells.\n\nEssential revisions:\n\nBelow are the essential revision requirements to address:\n\n1) We recommend the use of Tbx21 conditional mice to validate the essential observations made as complete knockout mice have been used for the T-bet-deficient analyses and indirect effect due the full KO context may have additional phenotypes that could impact on the data. For example, a recent paper in Cell described expression of Tbx21 in conventional type 2 dendritic cells. Alternatively mixed bone marrow chimeras (WT:Tbx21-/-) would resolve this issue.\n\n2) How were the Bcl2 and BH3 only member impacted by loss of Rictor? Is Foxo1 rescuing this phenotype via regulation of Bcl2l11? Foxo1 has been shown to regulate Bcl2l11 in NK cells.\n\n3) Only one mouse per condition was sequenced for the single-cell analysis. This should be consolidated. The authors should explain how they correct for batch effect as well as explain why a LogFC > 0.25 was used as a cutoff for differential gene expression as Typically 1.5 or 1.2 is used. They should also provide the average number of genes for samples.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for sending your article entitled \"Single-cell transcriptome reveals the novel role of T-bet in suppressing the immature NK gene signature\" for peer review at eLife. Your article is being evaluated by peer reviewers, and the evaluation is being overseen by a Reviewing Editor and Satyajit Rath as the Senior Editor.\n\nThe consensus reached between us suggests that to reach a favourable decision, data from either the use of Tbx21-conditional mice, or mixed Tbx21 bone marrow chimeras, are needed to avoid any possible indirect and unforeseen effects.\n\nGiven the need for this essential revision, the editors and reviewers invite you to respond with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a formal decision. Do please note that eLife understands the current difficult situation, so please do not hesitate to let us know realistic estimates.\n",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4fd7d791-5ff4-4969-aad6-1921ddd5e85d",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C1",
+      "claim": "Using single-cell RNA-sequencing, five distinct NK cell clusters were identified in murine bone marrow based on transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on transcriptome, we identified five distinct NK cell clusters and define their relative developmental maturity in the bone marrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the identification of five NK clusters through scRNA-seq analysis and presents this in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "4e6d380b-9b02-4b35-a2ea-09043a688da3",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C2",
+      "claim": "Half of the mTORC2-deficient NK cells belong to the least mature NK cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptome-based machine-learning classifiers revealed that half of the mTORC2-deficient NK cells belongs to the least mature NK cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Machine-learning classification results shown in Figure 4E demonstrate approximately 50% of Rictor-deficient NK cells classified as iNK cluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "ddeafb7d-af31-4a7b-b7a8-ff8214adc69f",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C3",
+      "claim": "Loss of mTORC2 results in increased expression of signature genes representing immature NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, loss of mTORC2 results in an increased expression of signature genes representing immature NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Module score analysis in Figure 3E shows elevated expression of iNK signature genes in Rictor-deficient NK cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "d8ea5f86-5b54-4886-ab16-40481f25707c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C4",
+      "claim": "mTORC2 regulates the expression of T-bet through AktS473-FoxO1 axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Since mTORC2 regulates the expression of T-bet through AktS473-FoxO1 axis, we further characterized the T-bet-deficient NK cells and found an augmented immature transcriptomic signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous work by the authors (Yang et al., 2018) and is validated by rescue experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "b16451a3-672a-44e8-97b7-92ed65cf1822",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C5",
+      "claim": "T-bet-deficient NK cells have an augmented immature transcriptomic signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Since mTORC2 regulates the expression of T-bet through AktS473-FoxO1 axis, we further characterized the T-bet-deficient NK cells and found an augmented immature transcriptomic signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5E and 5F demonstrate up-regulation of immature NK signature genes in T-bet-deficient NK cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "1f30b401-2486-406a-b38b-d52290c43c46",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C6",
+      "claim": "Deletion of Foxo1 restores the expression of T-bet in Rictor-deficient NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, deletion of Foxo1 restores the expression of T-bet and corrects the abnormal expression of immature NK genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 7\u2014figure supplement 1E shows rescued T-bet expression in Rictor/Foxo1 double knockout NK cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "001902ba-d920-49b8-a021-ce810c7a87a6",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C7",
+      "claim": "Deletion of Foxo1 corrects the abnormal expression of immature NK genes in Rictor-deficient NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, deletion of Foxo1 restores the expression of T-bet and corrects the abnormal expression of immature NK genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 7D and 7E demonstrate reduced expression of iNK signature genes in Rictor/Foxo1 double knockout compared to Rictor single knockout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "185bbc0c-be68-414e-a26b-1e6b5cbbdf1c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C8",
+      "claim": "The mTORC2-AktS473-FoxO1-T-bet axis suppresses the transcriptional signature of immature NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our study reveals a novel role for mTORC2-AktS473-FoxO1-T-bet axis in suppressing the transcriptional signature of immature NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the combined data from Rictor, T-bet, and Foxo1 knockout experiments showing increased immature gene expression and rescue upon Foxo1 deletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "ef10fda3-2374-4dc2-840b-3a8e79052234",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C9",
+      "claim": "The expression of IL-15/IL-2 receptor \u03b2 chain (CD122) is the hallmark of commitment to the NK cell lineage from the common lymphoid progenitor (CLP) cells in mouse bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bone marrow (BM) of mice, the expression of IL-15/IL-2 receptor \u03b2 chain (CD122) is the hallmark of commitment to the NK cell lineage from the common lymphoid progenitor (CLP) cells (Rosmaraki et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rosmaraki et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "198807fc-9b52-4e7c-9c8e-43e409997b90",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C10",
+      "claim": "The canonical definition of NK progenitor (NKP) is a Lin\u2212CD122+ cell without cell surface expression of NK-lineage marker NK1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the canonical definition of NK progenitor (NKP) is a Lin\u2212CD122+ cell without cell surface expression of NK-lineage marker NK1.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field based on the previous statement about CD122 expression.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "102f2157-e3f2-4068-ba1b-511bccfb32dc",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C11",
+      "claim": "Approximately only one in ten Lin\u2212CD122+NK1.1\u2212 cells can give rise to NK cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Lin\u2212CD122+NK1.1\u2212 cells are still a heterogeneous population as approximately only one in ten cells can give rise to NK cells in vitro (Vosshenrich and Di Santo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Vosshenrich and Di Santo, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "26779844-f216-4b2f-87f0-9c248ec2ebc5",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C12",
+      "claim": "Lin\u2212Flt3\u2212CD27+2B4+CD127+CD122+NK1.1\u2212 cells have a 50% chance to develop into NK cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the definition of NKPs has been refined to Lin\u2212Flt3\u2212CD27+2B4+CD127+CD122+NK1.1\u2212 cells which have a 50% chance to develop into NK cells in vitro (Carotta et al., 2011; Fathman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Carotta et al., 2011 and Fathman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "ad8da56e-29f2-48b7-8292-42151142f287",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C13",
+      "claim": "The Lin\u2212CD122+NK1.1+CD27+CD49b\u2212 population represents the least mature NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lin\u2212CD122+NK1.1+CD27+CD49b\u2212 population represents the least mature NK cells (Di Santo, 2006; Kim et al., 2002; Williams et al., 2000; Arase et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations: Di Santo, 2006; Kim et al., 2002; Williams et al., 2000; Arase et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "b5013610-cb64-4df8-a769-b3440a03db61",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C14",
+      "claim": "Murine NK cells are classified into three developmental stages based on CD27 and CD11b expression: CD27+CD11b\u2212 (CD27 single positive), CD27+CD11b+ (double positive), and CD27\u2212CD11b+ (CD11b single positive).",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent to the expression of CD49b, the developmental stages of murine NK cells further classified into three stages based on two cell surface markers CD27 and CD11b (Kim et al., 2002; Hayakawa and Smyth, 2006). The relatively immature CD27+CD11b\u2212 (CD27 single positive, SP) NK cells develop into CD27\u2212CD11b+ (CD11b single positive, SP) terminally mature with a transitional stage of CD27+CD11b+ (double positive, DP) cells (Chiossone et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kim et al., 2002; Hayakawa and Smyth, 2006; and Chiossone et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "94e6ee28-7929-4690-99cc-6a25a9ba017a",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C15",
+      "claim": "Terminal CD11b SP NK cells are marked with expression of KLRG1.",
+      "claim_type": "EXPLICIT",
+      "source": "The terminal CD11b SP NK cells are also marked with expression of KLRG1 (Huntington et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Huntington et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "b48c8964-b09f-48b5-a444-3375cb167896",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C16",
+      "claim": "Ets-1 and PU.1 regulate the transition from CLPs to NKPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ets-1 and PU.1 regulate the transition from CLPs to NKPs, while E4BP4 is critical in the induction of CD122 and NKP commitment (Barton et al., 1998; Colucci et al., 2001; Gascoyne et al., 2009; Kamizono et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Barton et al., 1998 and Colucci et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "7a6eb357-3c2c-4039-a408-730585199863",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C17",
+      "claim": "E4BP4 is critical in the induction of CD122 and NKP commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ets-1 and PU.1 regulate the transition from CLPs to NKPs, while E4BP4 is critical in the induction of CD122 and NKP commitment (Barton et al., 1998; Colucci et al., 2001; Gascoyne et al., 2009; Kamizono et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gascoyne et al., 2009 and Kamizono et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "565f33c3-28f4-42f2-8cca-53b3b2529fa2",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C18",
+      "claim": "E4BP4 induces the expression of Id2 and Eomes, both of which are critical in immature NK cells development.",
+      "claim_type": "EXPLICIT",
+      "source": "E4BP4 also induces the expression of Id2 and Eomes, both of which are critical in immature NK cells development and the transition to the later stages (Male et al., 2014; Yokota et al., 1999; Boos et al., 2007; Delconte et al., 2016; Gordon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Male et al., 2014; Yokota et al., 1999; Boos et al., 2007; Delconte et al., 2016; Gordon et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "6e0cddc4-2305-4f4a-9b2d-f4235d4b636c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C19",
+      "claim": "T-bet and Zeb2 are critical for terminal NK cell maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "T-bet and Zeb2 have been shown to be critical for terminal NK cell maturation (Townsend et al., 2004; van Helden et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Townsend et al., 2004 and van Helden et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "426be742-53ce-4ccf-9446-cbcf544c0d9f",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C20",
+      "claim": "PDK1 is required for the induction of E4BP4 during early NK cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "PDK1 is required for the induction of E4BP4 during early NK cell development (Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "641cb628-5e27-4edc-b053-4ebb6d41deb5",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C21",
+      "claim": "mTORC1 is required for the expression of Eomes and the transition from CD27 SP to DP NK stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously reported that mTORC1 is required for the expression of Eomes and the transition from CD27 SP to DP NK stage, while mTORC2 is required for the terminal CD11b SP NK cell maturation through mTORC2-AktS473-FoxO1 axis (Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yang et al., 2018, which is the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "a395836b-8d28-4feb-945d-166de5a23b5e",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C22",
+      "claim": "mTORC2 is required for the terminal CD11b SP NK cell maturation through mTORC2-AktS473-FoxO1 axis.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously reported that mTORC1 is required for the expression of Eomes and the transition from CD27 SP to DP NK stage, while mTORC2 is required for the terminal CD11b SP NK cell maturation through mTORC2-AktS473-FoxO1 axis (Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yang et al., 2018, which is the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "14d8e07a-a374-49d5-8c02-07b3f12d360c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C23",
+      "claim": "NK cells deficient in Id2, Eomes or Gata3 all fail to progress from CD27 SP to DP stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the CD27/CD11b-defined stages, NK cells deficient in Id2, Eomes or Gata3 all fail to progress from CD27 SP to DP stages (Delconte et al., 2016; Gordon et al., 2012; Ali et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Delconte et al., 2016; Gordon et al., 2012; and Ali et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "dac2640e-a89a-4e93-9d1c-08931713e69f",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C24",
+      "claim": "Crinier et al., 2018 identified a novel population in the mouse spleen and revealed conserved NK subsets in human and mice using scRNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Crinier et al., 2018 has explored the murine and human NK cells from spleen and blood using single-cell RNA-sequencing (scRNA-seq) technology and identified a novel population in the mouse spleen and revealed the conserved NK subsets in human and mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Crinier et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "2032ee5e-51e6-4370-8469-f86edfd20217",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C25",
+      "claim": "CD3\u03b5\u2212CD122+ cells from bone marrow contain three major cell types: conventional NK cells, innate lymphoid cells 1 (ILC1), and cells with high transcripts contents of Cd3d/e/g.",
+      "claim_type": "EXPLICIT",
+      "source": "The single-cell transcriptome analyses revealed three major cell types from the CD3\u03b5\u2212CD122+ compartment: conventional NK cells, innate lymphoid cells 1 (ILC1), and cells with high transcripts contents of Cd3d/e/g.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 1A and 1B showing distinct clusters with different marker expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "c74faf5b-060d-47bb-8019-4855332a98b9",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C26",
+      "claim": "Five distinct NK developmental subsets were identified: an immature NK (iNK) cell cluster, three transitional NK (transNK) cell clusters, and a terminally mature NK (termNK) cell cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "We define five distinct NK developmental subsets: an immature NK (iNK) cell cluster, three transitional NK (transNK) cell clusters, and a terminally mature NK (termNK) cell cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1C with five distinct clusters identified through unbiased clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "4e136e77-fcce-49c4-9924-4b7b2094797b",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C27",
+      "claim": "More than 65% of T-bet-deficient NK cells are classified into the least mature iNK cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, more than 65% of T-bet-deficient NK cells are classified into the least mature iNK cluster and the expression of immature NK signature genes are highly up-regulated in the T-bet-deficient NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 5D showing machine-learning classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "ac8d0177-ab02-4bde-9e5a-3599b7109dce",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C28",
+      "claim": "The expression of immature NK signature genes are highly up-regulated in T-bet-deficient NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, more than 65% of T-bet-deficient NK cells are classified into the least mature iNK cluster and the expression of immature NK signature genes are highly up-regulated in the T-bet-deficient NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5E and 5F with specific genes listed and their expression levels compared.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "f9cb7a14-72c3-4bd6-afb4-736cb397853f",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C29",
+      "claim": "Deletion of Foxo1 rescues the developmental impairment of Rictor-deficient NK cells defined by both cell surface markers and developmental transcriptome markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, deletion of Foxo1 successfully rescued the developmental impairment of Rictor-deficient NK cells defined by both cell surface markers and developmental transcriptome markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 7A, 7B, 7C, and 7D showing rescue of maturation phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "2432a18a-f8e2-4609-a59b-24f8037e3b21",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C30",
+      "claim": "Different housing conditions can result in alteration in the transcriptome profile that leads to individual-specific phenotype in scRNA-seq analysis of NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed that different housing conditions could result in alteration in the transcriptome profile that leads to individual-specific phenotype in scRNA-seq analysis of NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the observation in Figure 1\u2014figure supplement 1D and E showing separate clustering of mice from different facilities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "fd12c217-e89a-42c2-a45d-a3f3bd0809d0",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C31",
+      "claim": "Cluster #1 represents conventional NK cells with high expression of Ncr1 and three subunits (Klrb1a, Klrb1b, and Klrb1c) of NK1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Through exploring the differential expressed genes (DEGs) of each cluster, we found that Cluster #1 were conventional NK cells with high expression of Ncr1 and three subunits (Klrb1a, Klrb1b, and Klrb1c) of NK1.1 and comprised majority of the CD3\u03b5\u2212CD122+ cells (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1B showing expression levels of these markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "7f228748-56bf-4d5f-a2ca-b7f3d30624c1",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C32",
+      "claim": "Cluster #2 contains cycling cells indicated by the expression of Mki67.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Mki67 indicated that cells in Cluster #2 were cycling (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B with Mki67 expression pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "0a3386c9-0d36-4966-91e7-b5f5bd13d26d",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C33",
+      "claim": "Cluster #3 contains ILC1 cells indicated by the high expression of Tmem176a/b and Cxcr6.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster #3 contained ILC1 cells indicated by the high expression of Tmem176a/b and Cxcr6 (Figure 1B; Robinette et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and supported by citation to Robinette et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "abe4e790-2b98-4d89-bc39-52d342390591",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C34",
+      "claim": "Ncr1 and Klrb1a/b/c are more abundantly expressed in the ILC1 cluster than in the NK cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Ncr1 and Klrb1a/b/c were abundantly expressed in the ILC1 cluster that was higher than the NK cluster (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1B showing comparative expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "b93ef176-24e0-44e4-a7d4-c7ecf889062d",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C35",
+      "claim": "Cluster #4 is marked with high expression of Cd3d/e/g and low Ncr1 and Klrb1a/b/c expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster #4 was marked with high expression of Cd3d/e/g and low Ncr1 and Klrb1a/b/c expression (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B with expression patterns of these markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "3eb91337-8e0a-4d11-b16b-8210fd879f89",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C36",
+      "claim": "The Cd3high population has been reported in scRNA-seq dataset of group 1 ILC in the lung and is potentially related to NK-T lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This population has been reported before in the scRNA-seq dataset of group 1 ILC in the lung and is potentially related to NK-T lineage (Ferrari de Andrade et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ferrari de Andrade et al., 2018 and includes speculation about lineage relationship.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "1ade8532-859b-46b4-8549-a4f5f07fa69c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C37",
+      "claim": "Cells in Cluster #5 were activated by inflammatory stimuli as evidenced by high expression of interferon-induced genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells in Cluster #5 were activated by inflammatory stimuli as made evident by the high expression of interferon-induced genes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and represents an inference about cell state based on gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "f13720d5-678b-4154-be24-e1a045ab6ce8",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C38",
+      "claim": "Cluster #1 represents the most immature NK cells with high expression of Cd27 and low expression of Itgam (CD11b) and Ly49s.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the expression of several NK cell maturation-defining markers, we found that Cluster #1 represented the most immature NK cells with high expression of Cd27 and low expression of Itgam (CD11b) and Ly49s (Klra1/3/4/7/8/9) (Figure 1E and Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1E and Figure 1\u2014figure supplement 1F showing expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "a1bab455-83f7-4542-a2a7-4aaa2b1bee7d",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C39",
+      "claim": "The immature nature of Cluster #1 is supported by high transcriptional expression of Ltb, Thy1, Cd3d/g, and Cd7, all of which are highly expressed in immature CD27 SP NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The immature nature of Cluster #1 was further supported by the high transcriptional expression of Ltb, Thy1, Cd3d/g, and Cd7 (Figure 1F), all of which have been shown to be highly expressed in the immature CD27 SP NK cells (Chiossone et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1F and supported by citation to Chiossone et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "c9e02b49-b28c-43e4-89fc-1e8f9626d342",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C40",
+      "claim": "Cluster #5 represents terminally mature NK cells marked by low expression of Cd27 and high expression of Itgam (CD11b) and Klrg1.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the low expression of Cd27 and high expression of Itgam (CD11b) and Klrg1 marked Cluster #5 as the terminally mature NK cells (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1E showing expression patterns of maturation markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "e2fb12b9-8477-4204-8b37-66c1a12f38ba",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C41",
+      "claim": "The high expression of functional molecules including Gzma and Gzmb demonstrates the terminal maturity of cells in Cluster #5.",
+      "claim_type": "EXPLICIT",
+      "source": "The high expression of functional molecules including Gzma and Gzmb further demonstrated the terminal maturity of cells in Cluster #5 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1F with expression of effector molecules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "bb7daec5-bd8f-429f-b7d5-921a40b3e722",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C42",
+      "claim": "TransNK1 cluster has high expression of genes encoding proteins involved in ribosomal biogenesis including ribonucleoproteins (Nop10, Nhp2, Gar1, Npm1, Npm3), RNA modification enzymes (Mettl1, Ddx21, Fbl), and GTPase related to nucleocytoplasmic transport (Ran, Ranbp1).",
+      "claim_type": "EXPLICIT",
+      "source": "TransNK1 represented a unique NK sub-population with high expression of genes encoding proteins involved in ribosomal biogenesis including ribonucleoproteins (Nop10, Nhp2, Gar1, Npm1, Npm3), RNA modification enzymes (Mettl1, Ddx21, Fbl), and GTPase related to nucleocytoplasmic transport (Ran, Ranbp1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of differentially expressed genes in the transNK1 cluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "87c7e0e3-e789-4fd6-bc76-8b6c6ba69691",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C43",
+      "claim": "TransNK1 cluster has high expression of genes encoding ribosomal subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found high expression of genes encoding the ribosomal subunits in this cluster (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2A with module score analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "4ac06dd5-131f-4c84-bede-ba1d18a36fcd",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C44",
+      "claim": "Transcription factors MYC and E2F are significantly enriched in transNK1 cluster compared to all other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis (GSEA) revealed significantly enrichment of transcription factors MYC and E2F in transNK1 cluster compared to all other cells, both of which are involved in cell growth and proliferation (Figure 1\u2014figure supplement 2B; Conacci-Sorrell et al., 2014; Chen et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2B and supported by citations to Conacci-Sorrell et al., 2014 and Chen et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "c241d4fa-9534-4557-8f91-27d68935f1ee",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C45",
+      "claim": "Major metabolic pathways including glycolysis, oxidative phosphorylation and fatty acid metabolism are enriched in transNK1 cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found major metabolic pathways were enriched in this cluster including glycolysis, oxidative phosphorylation and fatty acid metabolism (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2C through GSEA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "eba977cf-4ea2-4fff-bf0c-1dfa35a88005",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C46",
+      "claim": "TransNK2 cluster is featured with high expression of Ly49 family members especially Klra4 (Ly49D) and Klra8 (Ly49H).",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster was featured with high expression of Ly49 family members especially Klra4 (Ly49D) and Klra8 (Ly49H) (Figure 1F and Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1F and Figure 1\u2014figure supplement 1F showing expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "e0167ab3-c6dd-491b-b0b4-7931c47141ac",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C47",
+      "claim": "TransNK3 cluster has multiple genes that belong to the category of immediate early genes (IEGs) that are up-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the transNK3 cluster, we found multiple genes that belong to the category of immediate early genes (IEGs) were up-regulated (Nr4a1, Nr4a2, Nr4a3, Dusp1, Junb, Nfkbia, Nfkbid, Nfkbiz, Egr1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on differential gene expression analysis with specific genes listed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "a2b4f6b5-c78f-43bb-9ee4-78a9368cf878",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C48",
+      "claim": "TransNK3 cluster is transcriptionally similar to the novel NK_3 cluster defined previously in the mouse spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster is transcriptionally similar to the novel NK_3 cluster defined previously in the mouse spleen with up-regulation of genes including Pim1, Gadd45b, Bhlhe40, Irf8, Ccl3, Ccl4 besides the IEGs (Supplementary file 1; Crinier et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with published data from Crinier et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "5dcde870-685a-4ceb-a01e-173d5c6d780c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C49",
+      "claim": "The Euclidean distance indicates transcriptional similarity between transNK1 and transNK2, both of which have higher transcriptional similarity to the iNK cluster than to termNK cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The Euclidean distance indicated transcriptional similarity between transNK1 and transNK2, both of which had higher transcriptional similarity to the iNK cluster (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A through hierarchical clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "c5858846-503d-48b0-a66b-e66b720fd82e",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C50",
+      "claim": "TransNK3 has higher transcriptional similarity to the termNK cluster than to the iNK cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the transNK3 had higher transcriptional similarity to the termNK cluster (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A through hierarchical clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "d1c906e4-ef63-4a83-9517-bafce7b6af91",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C51",
+      "claim": "When NK clusters are ordered as iNK\u2192transNK1\u2192transNK2\u2192transNK3\u2192termNK, the module score based on up-regulated DEGs of iNK cluster gradually declines.",
+      "claim_type": "EXPLICIT",
+      "source": "When we ordered the five clusters as iNK\u2192transNK1\u2192transNK2\u2192transNK3\u2192termNK, the module score based on the up-regulated DEGs of the iNK cluster or the down-regulated DEGs of the termNK cluster gradually declined (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2B showing module score progression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "3b70f076-ec2b-4191-a96c-c930f7c00939",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C52",
+      "claim": "When NK clusters are ordered as iNK\u2192transNK1\u2192transNK2\u2192transNK3\u2192termNK, the module score based on up-regulated DEGs of termNK cluster gradually increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the module score based on the up-regulated DEGs of the termNK or the down-regulated DEGs of the iNK cluster gradually increased (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2B showing module score progression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "5302a329-d52a-4ae6-8d0b-7757a655f1ef",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C53",
+      "claim": "The pseudotime analysis indicates the maturation order of NK clusters with iNK and transNK1 at the beginning and termNK at the end of the trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the transcriptional information, each cell from the five clusters were assigned to the pseudotime trajectory (Figure 2D). The pseudotime progression indicated the maturation order. As shown in Figure 2E, we picked the far-left side of the trajectory as the root point as we found cells from iNK and transNK1 clusters mostly resided here (Figure 2F). Based on this root point, the pseudotime dictated that the far-right side of the trajectory was the most mature population which was dominated by the termNK cluster (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D, 2E, and 2F through Monocle2 pseudotime analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "755ff438-8131-45e3-82b1-ea47958ad385",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C54",
+      "claim": "Nearly all Raptor-deficient CD3\u2212CD122+ cells cluster distinctly from WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, nearly all the Raptor-deficient CD3\u2212CD122+ cells clustered distinctly from the WT cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3A showing separate clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "787904bd-0ffe-4b92-90e0-59be4b48cea0",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C55",
+      "claim": "Cluster #8 in the Raptor analysis is ILC1 indicated by high expression of Tmem176a/b and Cxcr6.",
+      "claim_type": "EXPLICIT",
+      "source": "The high expression of Tmem176a/b and Cxcr6 revealed Cluster #8 were ILC1 while all the rest seven clusters were NK cells (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1B with marker expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "8bfd2963-c597-4160-b49e-96bb5d98c4d2",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C56",
+      "claim": "mTORC1 is potentially dispensable for the development of ILC1.",
+      "claim_type": "EXPLICIT",
+      "source": "As the expression of iCre driven by Ncr1 presumably also occurred in the ILC1, this data indicated that mTORC1 is potentially dispensable for the development of ILC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ILC1 cluster contains both WT and Raptor-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "94b51f62-c948-4d05-98dd-6db9b4fd8563",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C57",
+      "claim": "All three Rictor-deficient NK cell-dominated clusters have high expression of up-regulated genes in the iNK cluster to the level similar to the least mature Cluster #1 of WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all three Rictor-deficient NK cells-dominated clusters (#5, 6, 7) had high expression of up-regulated genes in the iNK cluster to the level similar to the least mature Cluster #1 of WT NK cells (Figure 3E, iNK_up).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3E showing module score analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "60ecf15d-ee06-45ca-86e8-6f43fd09a4d0",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C58",
+      "claim": "Nearly all Rictor-deficient NK cell-dominated clusters have more transcriptome similarity to the most immature cluster #1 and the less mature transitional cluster #2 of WT mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the hierarchical clustering analysis indicated that nearly all the Rictor-deficient NK cell-dominated clusters (#5, 6, 7) had more transcriptome similarity to the most immature cluster #1 and the less mature transitional cluster #2 of WT mouse (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3F through hierarchical clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "85e2e7f0-95ad-4552-bef8-25a7482a2f3a",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C59",
+      "claim": "The deep learning (DL) classifier is the most accurate machine-learning classifier with the lowest error rate for NK cell classification.",
+      "claim_type": "EXPLICIT",
+      "source": "As summarized in the Figure 4\u2014figure supplement 1A, the overall accuracy of all classifiers ranged from 60% to 70% with deep learning (DL) classifier being the most accurate with the lowest error rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1A comparing classifier performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "a2c1fdd9-c7ef-49e8-b01f-3e487684b246",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C60",
+      "claim": "All five NK clusters were identified by the classifiers except for the RF classifier which failed to detect the transNK3 subset.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all five NK clusters were identified by the classifiers except for the RF classifier which failed to detect the transNK3 subset (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4A showing classification results from different algorithms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "f6e5a6c8-8990-4232-a804-c779f34b54e1",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C61",
+      "claim": "The most dominant cluster of Raptor-deficient NK cells is transNK2 accounting for more than 50% of total Raptor-deficient NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The most dominant cluster of the Rptorfl/fl Ncr1Cre/WT mouse was transNK2 accounting for more than 50% of the total Raptor-deficient NK cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C with machine-learning classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "c48419e8-1c17-4b80-89e5-3403bb4562ce",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C62",
+      "claim": "50% of Rictor-deficient NK cells fall into the category of iNK cluster based on machine-learning classification.",
+      "claim_type": "EXPLICIT",
+      "source": "The classification of Rictor-deficient NK cells resulted in 50% of all cells fell into the category of iNK cluster (Figure 4D and E and Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4E showing classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "eddda040-f3c7-49a7-b802-3786e31e7130",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C63",
+      "claim": "The classification of Rictor-deficient NK cells contradicts cell surface markers-defined maturity which revealed only terminal maturation defects.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a drastic contradiction to the cell surface markers-defined maturity which revealed only terminal maturation defects of Rictor-deficient NK cells (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison between machine-learning classification results and flow cytometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "73264c9a-b8d0-42fa-87df-3b308711ba35",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C64",
+      "claim": "There is almost no ILC1 and Cd3high cluster cells in the Tbx21\u2212/\u2212 sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Illustrated by the distribution, there was almost no ILC1 (#8) and Cd3high (#9) cluster cells in the Tbx21\u2212/\u2212 sample (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1B with cluster composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "23aefaa3-f137-42f9-af3a-092fba97cfbc",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C65",
+      "claim": "T-bet is the master transcription factor of ILC1 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This was consistent with T-bet being the master transcription factor of ILC1 lineage (Klose et al., 2014), and the Cd3high cluster being a lineage related to NK-T cells which is nearly absent in Tbx21\u2212/\u2212 mice (Townsend et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Klose et al., 2014 and Townsend et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "05af55e2-53cf-47a7-9036-c08f3057b343",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C66",
+      "claim": "NK-T cells are nearly absent in Tbx21\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This was consistent with T-bet being the master transcription factor of ILC1 lineage (Klose et al., 2014), and the Cd3high cluster being a lineage related to NK-T cells which is nearly absent in Tbx21\u2212/\u2212 mice (Townsend et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Townsend et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "b24e65b0-31d8-4671-ba85-dcf5cddc4f9a",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C67",
+      "claim": "All three T-bet-deficient NK cell-dominated clusters present similar module score pattern as the immature cluster #1 in all up- or down-regulated DEGs of iNK or termNK cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "All three T-bet-deficient NK cells-dominated clusters (#5, 6, 7) presented similar module score pattern as the immature cluster #1 in all up- or down-regulated DEGs of iNK or termNK cluster (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5A showing module score analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "735863cc-0f02-43c2-a46e-274696e0a0a3",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C68",
+      "claim": "The transcriptional similarity between the least immature WT NK cells (Cluster #1) and the bulk T-bet-deficient NK cells (Clusters #5, #6, #7) is manifested by hierarchical clustering analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptional similarity between the least immature WT NK cells (Cluster #1) and the bulk T-bet-deficient NK cells (Clusters #5, #6, #7) were further manifested by the hierarchical clustering analysis (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B through hierarchical clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "960bfaad-2953-4dae-b3d8-1f78761d3182",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C69",
+      "claim": "More than 60% of T-bet-deficient NK cells are categorized into the iNK cluster by machine-learning classifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "When we applied the machine-learning-based classifiers, more than 60% of the T-bet-deficient NK cells were categorized into the iNK cluster and there were only few cells in the transNK3 and termNK clusters (Figure 5C and D and Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5D showing classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "97f3af03-0c78-4171-82c2-4855e6f7f293",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C70",
+      "claim": "T-bet deficiency results in up-regulation of immature NK signature genes and down-regulation of terminally mature NK genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct comparison of the bulk WT and Tbx21\u2212/\u2212 NK cells in the scRNA-seq dataset revealed that T-bet deficiency resulted in up-regulation of immature NK signature genes and down-regulation of terminally mature NK genes (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5E with specific genes listed and their expression changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "2c7fb91c-a957-4330-88db-fa58cb673d65",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C71",
+      "claim": "Within 14 up-regulated genes in the iNK cluster, 10 genes have significantly increased expression in T-bet-deficient NK cells compared to WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the 14 up-regulated genes (average logFC \u22650.25) in the iNK cluster from three WT combined analysis, we found 10 of those genes with significantly increased expression in T-bet-deficient NK cells compared to WT NK cells (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5E listing specific genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "f1e0c2dc-0177-4185-9d99-c7a9373b44e4",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C72",
+      "claim": "Within 56 termNK cluster signature genes, 18 genes have decreased expression in T-bet-deficient NK cells compared to WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the 56 termNK cluster signature genes (average logFC \u22650.25), we also observed decreased expression of 18 genes in T-bet-deficient NK cells compared to WT NK cells (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5E listing specific genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "37d33377-66c6-45a3-81bb-9e75aaabeaad",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C73",
+      "claim": "796 genes represent the transcriptional signature of the relatively immature CD27 SP NK subset.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we found 796 genes representing the transcriptional signature of the relatively immature CD27 SP NK subset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of bulk RNA-seq dataset comparing CD27 SP with DP and CD11b SP NK cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "61e8d0fa-faba-4911-9f60-8b1a1522c55e",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C74",
+      "claim": "796 immature NK signature genes are significantly enriched in T-bet-deficient NK cells compared to WT counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "GSEA revealed that these 796 immature NK signature genes were significantly enriched in the T-bet-deficient NK cells comparing to the WT counterparts, emphasizing that T-bet is required to suppress the expression of genes associated with immature NK cells to a large extent (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5G through GSEA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "29658b33-907e-46be-a761-b5f822e33313",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C75",
+      "claim": "T-bet is required to suppress the expression of genes associated with immature NK cells to a large extent.",
+      "claim_type": "EXPLICIT",
+      "source": "GSEA revealed that these 796 immature NK signature genes were significantly enriched in the T-bet-deficient NK cells comparing to the WT counterparts, emphasizing that T-bet is required to suppress the expression of genes associated with immature NK cells to a large extent (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GSEA results shown in Figure 5G and represents an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "d0808561-6cb8-4956-a6b3-cd93b466fe39",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C76",
+      "claim": "654 T-bet-binding genes were identified from T-bet ChIP-seq dataset using splenic NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "we reanalyzed the recently published T-bet ChIP-seq dataset generated using splenic NK cells and assessed whether T-bet directly targets the immature NK genes (Shih et al., 2016). With q-value set at 1 \u00d7 10\u22125 and focus on the protein-coding genes, we found a list of 654 T-bet-binding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on reanalysis of published ChIP-seq data from Shih et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "e9ee1263-0951-4ef5-957f-a7abce419d4c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C77",
+      "claim": "T-bet-binding genes are significantly depleted in the iNK cluster compared to all other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant depletion of T-bet-binding genes in the iNK cluster compared to all other cells, indicating that T-bet does not directly bind to the majority of these iNK signature genes (Figure 6A, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A through GSEA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "3e233c70-d256-4658-8f9a-19b0f49b01b0",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C78",
+      "claim": "T-bet does not directly bind to the majority of iNK signature genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant depletion of T-bet-binding genes in the iNK cluster compared to all other cells, indicating that T-bet does not directly bind to the majority of these iNK signature genes (Figure 6A, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the depletion of T-bet ChIP-seq peaks in iNK signature genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "d110c0bb-12b6-479d-bef4-2a7151ff93ac",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C79",
+      "claim": "T-bet-binding genes are significantly enriched in the termNK cluster compared to all other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, we found the T-bet-binding genes were significantly enriched in the termNK cluster comparing to all other cells (Figure 6A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A through GSEA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "32bcc067-6a2a-4f4c-b860-6d9e817b0e54",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C80",
+      "claim": "T-bet ChIP-seq peaks are significantly enriched in CD11b SP NK cells compared to CD27 SP compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when comparing the CD27 SP with the CD11b SP NK subset in the bulk RNA-seq dataset, we found significant enrichment of the T-bet ChIP-seq peaks in the CD11b SP NK cells compared to the CD27 SP compartment (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B through GSEA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "800bae14-9c1e-4348-b354-a6d36b83d0e4",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C81",
+      "claim": "Several immature NK signature genes that are up-regulated in T-bet-deficient NK cells have direct T-bet binding of regulatory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we found several immature NK signature genes that are up-regulated in T-bet-deficient NK cells with direct T-bet binding of the regulatory regions (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6C with examples of ChIP-seq peaks at specific gene loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "d9942891-25ee-4bbe-bdd3-2d6a7180992c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C82",
+      "claim": "T-bet is unlikely to directly bind and suppress the bulk of the immature NK genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, T-bet is unlikely to directly bind and suppress the bulk of the immature NK genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the depletion of T-bet ChIP-seq peaks in iNK signature genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "f152354d-a948-42c6-9298-cec17c040303",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C83",
+      "claim": "Transcription factor FoxO1 is enriched in T-bet-deficient NK cells compared to WT controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that transcription factor FoxO1 was enriched in the T-bet-deficient NK cells comparing to WT controls (Figure 6D), a phenomenon that we have previously established in the Rictor-deficient NK cells (Yang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6D through GSEA analysis and supported by previous work (Yang et al., 2018).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "e93012eb-8778-4658-abc0-ea3d78475bcc",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C84",
+      "claim": "The transcript level of Foxo1 is significantly higher in T-bet-deficient NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found the transcripts level of Foxo1 was significantly higher in the T-bet-deficient NK cells indicating that T-bet may suppress the expression of Foxo1 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6E with TPM values from bulk RNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "b68ac104-c44e-4da7-90f5-09c09df081f7",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C85",
+      "claim": "T-bet may suppress the expression of Foxo1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found the transcripts level of Foxo1 was significantly higher in the T-bet-deficient NK cells indicating that T-bet may suppress the expression of Foxo1 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from increased Foxo1 expression in T-bet-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "c240e048-2e8d-427b-906c-94220eb86014",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C86",
+      "claim": "T-bet directly binds to the intron region and regulatory region upstream of transcription starting site of Foxo1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct binding of T-bet in the intron region and the regulatory region up-stream of transcription starting site of Foxo1 locus further supported this possibility (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6F with ChIP-seq peaks at Foxo1 locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "56cb678d-4357-46a8-8780-873e2e74972e",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C87",
+      "claim": "FoxO1 has the highest expression in the CD27 SP subset.",
+      "claim_type": "EXPLICIT",
+      "source": "These data prompted us to hypothesize that Foxo1, which has the highest expression in the CD27 SP subset (Deng et al., 2015), is essential in driving the expression of immature NK signature genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Deng et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "b93fb6ad-6ab9-4ad5-87db-9ce4c6059a9c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C88",
+      "claim": "FoxO1 is essential in driving the expression of immature NK signature genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data prompted us to hypothesize that Foxo1, which has the highest expression in the CD27 SP subset (Deng et al., 2015), is essential in driving the expression of immature NK signature genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the enrichment of FoxO1 in immature NK cells and its increased activity in T-bet and Rictor-deficient cells.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "4793a91a-058f-4d86-96c9-9c8ae547397c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C89",
+      "claim": "Hyperactive FoxO1 suppresses the expression of T-bet in Rictor-deficient NK cells leading to terminal maturation defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we proposed that hyperactive FoxO1 suppresses the expression of T-bet in Rictor-deficient NK cells leading to the terminal maturation defects (Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous work by the authors (Yang et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "a79a58c9-aaa8-46fc-a55c-41056dc61f25",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C90",
+      "claim": "Deletion of Foxo1 in Rictor-deficient NK cells rescues the number of NK cells in the spleen to the level compatible to WT control.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, deletion of Foxo1 in Rictor cKO mice rescued the number of NK cells in the spleen to the level compatible to the WT control (Figure 7\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7\u2014figure supplement 1A and B with quantification of NK cell numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "e7f90a39-eebb-4de0-bed0-ef0f875eb2a2",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C91",
+      "claim": "Deletion of Foxo1 in Rictor-deficient NK cells completely rescues the percentage of CD11b SP subset and KLRG1+ NK cells to the level compatible to WT control.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, deletion of Foxo1 in Rictor-deficient NK cells completely rescued the percentage of CD11b SP subset or the KLRG1+ NK cells to the level compatible to the WT control (Figure 7A and B, Figure 7\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7A and B with quantification of maturation markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "1122ec14-33a3-42de-b121-8dbb73079ecc",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C92",
+      "claim": "FoxO1 is the transcription factor suppressing the terminal maturation program in Rictor-deficient NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicated that FoxO1 is the transcription factor suppressing the terminal maturation program in Rictor-deficient NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue of maturation defects upon Foxo1 deletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "9ea97765-8214-4da2-960a-a69b2d7e5a2f",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C93",
+      "claim": "Deletion of Foxo1 in Rictor-deficient NK cells rescues the expression of T-bet in CD27 SP and DP subsets to the level of corresponding WT control.",
+      "claim_type": "EXPLICIT",
+      "source": "Gated on three subsets of NK cells from the spleen, we found deletion of Foxo1 in the Rictor-deficient NK cells rescued the expression of T-bet in the CD27 SP and DP subsets to the level of the corresponding WT control (Figure 7\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7\u2014figure supplement 1E with T-bet protein levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "2f7d2ff0-2b56-4811-b077-95d111db4f99",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C94",
+      "claim": "The rescue of T-bet expression is incomplete in terminal CD11b SP NK compartments upon Foxo1 deletion in Rictor-deficient NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The rescue was incomplete in the terminal CD11b SP NK compartments (Figure 7\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7\u2014figure supplement 1E with T-bet protein levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "9db2bcbd-3a31-4f4c-92d8-6d666b8f80b9",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C95",
+      "claim": "Deletion of Foxo1 alone results in almost a fold increase of T-bet protein level in all three developmental stages compared to WT control.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of Foxo1 alone resulted in almost a fold increasing of the T-bet protein level in all three developmental stages compared to the WT control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data from Figure 7\u2014figure supplement 1E comparing Foxo1 single knockout to WT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "24af59ad-8f24-4fea-87e5-178075055fb4",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C96",
+      "claim": "In addition to FoxO1, other factors downstream of mTORC2 are involved in the regulation of T-bet expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicated that, in addition to FoxO1, other factors downstream of mTORC2 are involved in the regulation of T-bet expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the incomplete rescue of T-bet expression in some NK subsets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "33906200-9873-4734-b249-03fd099b484c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C97",
+      "claim": "Rictor/Foxo1 double knockout mouse harbors reduced percentage of iNK cluster and substantially increased percentage of termNK population compared to Rictor single knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the Rictor cKO mouse, the Rictor/Foxo1 cDKO mouse harbored reduced percentage of iNK cluster and substantially increased percentage of termNK population indicating successful rescue of the Rictor-deficient NK cells via deletion of Foxo1 (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7C with machine-learning classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "550bc394-63df-429d-be24-27759d2e4319",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C98",
+      "claim": "Rictor/Foxo1 double knockout mouse has reduced expression of iNK signature genes compared to Rictor single knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "We further explored the expression of the immature NK genes in both samples and found reduced expression of iNK signature genes in the Rictor/Foxo1 cDKO mouse compared to the Rictor cKO mouse (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7D with module score analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "c98a92ac-4c32-436a-a91f-a011d2a103ee",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C99",
+      "claim": "Rictor/Foxo1 double knockout mouse has increased expression of termNK signature genes compared to Rictor single knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the rescue, we also found increased expression of termNK signature genes in the Rictor/Foxo1 cDKO mouse compared to the Rictor cKO mouse (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7D with module score analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "2da2366c-4e1c-402b-bfb3-534d43647be7",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C100",
+      "claim": "Both Rictor and FoxO1 are haplo-sufficient to the development of NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure efficient generation of experimental mice with littermate control, we used Rictorfl/+Foxo1fl/+Ncr1Cre/WT mice as the WT control mice since both Rictor and FoxO1 are haplo-sufficient to the development of NK cells (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated by the authors based on their unpublished observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "f66010d6-716f-4090-8a97-620e756f4c2f",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "claim_id": "C101",
+      "claim": "There is a negative feedback loop between FoxO1 and T-bet that is part of what transcriptionally defines mature NK cells as a lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "We proposed that, in addition to the well-established role of FoxO1 in suppressing the expression of T-bet (Deng et al., 2015), T-bet can also suppress the expression of FoxO1 as the expression and activity of FoxO1 are increased in T-bet-deficient NK cells, and that this negative feedback loop is part of what transcriptionally defines mature NK cells as a lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings and previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "751bdc31-8762-4296-bc39-a44168c54469",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Five distinct NK cell developmental clusters were identified in murine bone marrow using scRNA-seq: an immature NK (iNK) cluster, three transitional NK (transNK1, transNK2, transNK3) clusters, and a terminally mature NK (termNK) cluster. These clusters were characterized by differential expression of maturation markers (CD27, CD11b, KLRG1), functional molecules (Gzma, Gzmb), and cluster-specific gene signatures. Pseudotime analysis and module score progression support the developmental ordering: iNK\u2192transNK1\u2192transNK2\u2192transNK3\u2192termNK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of five NK clusters is well-supported by multiple complementary analyses including unbiased clustering (C1, C26), differential gene expression (C31-C48), hierarchical clustering showing transcriptional similarity (C49-C50), module score progression (C51-C52), and pseudotime trajectory analysis (C53). The characterization includes appropriate markers and is validated through multiple analytical approaches. The data in Figures 1 and 2 provide strong visual and quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "d49beb1f-7f26-4dab-9b87-4581f1ab2b27",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Machine-learning classification reveals that approximately 50% of Rictor-deficient (mTORC2-deficient) NK cells belong to the least mature iNK cluster, contradicting cell surface marker-based classification which showed only terminal maturation defects. Rictor-deficient NK cells exhibit elevated expression of immature NK signature genes and cluster transcriptionally with the most immature WT NK populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claim is well-supported by machine-learning classification results (C2, C62), module score analysis showing elevated iNK signature gene expression (C3, C57), and hierarchical clustering demonstrating transcriptional similarity to immature WT clusters (C58). The contradiction with surface marker-based classification (C63) is appropriately documented. Multiple classifiers converge on similar results (Figure 4), strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "81aaa7b6-08de-42a7-8456-784dcced6647",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "T-bet-deficient NK cells exhibit a pronounced immature transcriptomic signature, with more than 60% classified as iNK cluster by machine-learning. T-bet deficiency results in up-regulation of immature NK signature genes (10 of 14 iNK genes) and down-regulation of terminally mature NK genes (18 of 56 termNK genes). GSEA analysis of 796 CD27 SP signature genes shows significant enrichment in T-bet-deficient NK cells, indicating T-bet is required to suppress immature NK gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are strongly supported by convergent evidence from machine-learning classification (C27, C69), direct gene expression comparison in scRNA-seq (C70-C72), bulk RNA-seq validation (C73-C74), and GSEA analysis (C74-C75). The module score analysis (C67) and hierarchical clustering (C68) provide additional support. The data span multiple experimental approaches and are validated in both scRNA-seq and bulk RNA-seq datasets (Figure 5).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "1650996d-6379-4b91-87f1-b330da7e31e1",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Deletion of Foxo1 rescues the developmental impairment of Rictor-deficient NK cells at both the cell surface marker level (CD11b SP and KLRG1+ populations) and transcriptome level (reduced iNK signature, increased termNK signature). Foxo1 deletion restores T-bet expression in CD27 SP and DP subsets, though rescue is incomplete in CD11b SP compartment, suggesting additional mTORC2-dependent factors regulate T-bet expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The rescue is well-documented through multiple measurements: cell numbers (C90), maturation markers (C91), T-bet protein levels (C6, C93), machine-learning classification (C97), and gene expression signatures (C7, C98-C99). The incomplete rescue in some contexts (C94) and evidence for additional regulatory factors (C96) appropriately acknowledge limitations. The data in Figure 7 provide comprehensive support across multiple analytical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "e84cc6b9-e352-4b54-9462-84c6be7da9ab",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The mTORC2-AktS473-FoxO1-T-bet axis suppresses the transcriptional signature of immature NK cells during development. The authors propose a negative feedback loop between FoxO1 and T-bet, where T-bet suppresses FoxO1 expression and FoxO1 suppresses T-bet expression, with this reciprocal regulation defining mature NK cell transcriptional identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the rescue experiments (C6-C7, C29) and gene expression data (C3, C5, C28) support a role for this axis in suppressing immature gene expression, several aspects remain speculative. The claim that T-bet suppresses FoxO1 (C85, C101) is based on correlative evidence rather than direct mechanistic proof. The proposed negative feedback loop (C101) is a hypothesis requiring additional validation. The mechanism by which FoxO1 drives immature gene expression (C88) is inferred but not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "44f700b9-2040-4621-9c3d-925fc47b5c44",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "T-bet does not directly bind and suppress the majority of immature NK signature genes. ChIP-seq analysis shows T-bet-binding genes are significantly depleted in the iNK cluster and enriched in the termNK cluster. While several immature NK genes show direct T-bet binding at regulatory regions, the bulk of immature gene suppression appears to be indirect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reanalysis of published ChIP-seq data (C76) is appropriate, and the GSEA showing depletion of T-bet-binding genes in iNK signature (C77) and enrichment in termNK signature (C79-C80) provides strong evidence. The identification of some direct targets (C81) appropriately acknowledges exceptions. The conclusion that T-bet acts primarily indirectly (C78, C82) is a reasonable inference from the data presented in Figure 6A-C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "cb6906b5-27fe-45c6-9847-a89a871b42ac",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FoxO1 is enriched in T-bet-deficient NK cells, with significantly higher Foxo1 transcript levels. T-bet directly binds to regulatory regions of the Foxo1 locus (intron and upstream of TSS), suggesting T-bet may suppress Foxo1 expression. FoxO1 has highest expression in the CD27 SP subset and may be essential for driving immature NK signature gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The enrichment of FoxO1 in T-bet-deficient cells (C83) and elevated Foxo1 transcripts (C84) are well-supported by data. The ChIP-seq evidence for direct T-bet binding at Foxo1 locus (C86) is strong. However, the claim that T-bet suppresses Foxo1 expression (C85) is speculative, based on correlation rather than direct mechanistic evidence. The hypothesis that FoxO1 drives immature gene expression (C88) is reasonable but requires additional validation beyond the correlative and rescue data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "4bd3f836-7671-4681-902f-2bb409cfd892",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Different housing conditions result in alterations in transcriptome profiles that lead to individual-specific phenotypes in scRNA-seq analysis of NK cells, as evidenced by separate clustering of mice from different facilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation is clearly documented in Figure 1\u2014figure supplement 1D and E, showing that mice from Jackson Laboratory clustered separately from mice housed at MCW. This is an important technical observation for scRNA-seq studies. The authors appropriately addressed this by scaling sample variance in subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "6e3a502f-4718-453e-96f1-6799379c9ce8",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CD3\u03b5\u2212CD122+ cells from bone marrow contain three major cell types: conventional NK cells, ILC1, and Cd3high cells (potentially related to NK-T lineage).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of these three populations is well-supported by differential marker expression shown in Figure 1A-B. The NK cells express Ncr1 and Klrb1a/b/c, ILC1 express Tmem176a/b and Cxcr6 (C33), and Cd3high cells express Cd3d/e/g (C35). The characterization is consistent with established markers for these populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "e4e8c8c1-7857-4afe-a789-b7c0802e2abe",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Nearly all Raptor-deficient NK cells cluster distinctly from WT cells, with the most dominant cluster being transNK2 (>50% of Raptor-deficient NK cells). ILC1 cluster contains both WT and Raptor-deficient cells, suggesting mTORC1 may be dispensable for ILC1 development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The distinct clustering of Raptor-deficient cells is clearly shown in Figure 3A (C54). The identification of ILC1 by marker expression (C55) and the presence of both genotypes in this cluster (C56) support the inference about mTORC1 dispensability for ILC1, though this is appropriately stated as speculative. The classification showing transNK2 dominance (C61) is supported by machine-learning results in Figure 4C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "b5bab8f4-2091-46ba-b3aa-cc72b5933459",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Among five machine-learning classifiers tested (GL, GB, XGB, RF, DL), the deep learning classifier achieved the highest accuracy (70%) with the lowest error rate for NK cell classification. All classifiers identified the five NK clusters except RF, which failed to detect transNK3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison of classifier performance is clearly documented in Figure 4\u2014figure supplement 1A (C59), showing test accuracies ranging from 60-70%. The identification of clusters by different classifiers (C60) is shown in Figure 4A. This represents appropriate validation of the machine-learning approach through multiple algorithms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "f0f87e3b-6d11-43ec-bec8-cc3afdf440e8",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ILC1 and Cd3high cluster cells are nearly absent in Tbx21\u2212/\u2212 samples, consistent with T-bet being the master transcription factor of ILC1 lineage and NK-T cells being nearly absent in Tbx21\u2212/\u2212 mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation is documented in Figure 5\u2014figure supplement 1B (C64) and is consistent with established knowledge about T-bet's role in ILC1 (C65, supported by Klose et al., 2014) and NK-T cells (C66, supported by Townsend et al., 2004). This serves as an internal validation of the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "94508adc-ffa4-40ea-b31d-27e579e54872",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Both Rictor and FoxO1 are haplo-sufficient for NK cell development, as Rictorfl/+Foxo1fl/+Ncr1Cre/WT mice were used as WT controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The authors state this is based on unpublished data (\"data not shown\"). While this is likely true and is a reasonable experimental design choice, the lack of presented data means this claim cannot be independently evaluated from the manuscript. This is a minor methodological detail but should have supporting data included.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    },
+    {
+      "id": "492891ba-c71f-4f10-81fc-2e30f389025c",
+      "content_id": "6da80ab8-067d-406a-98a1-63c312130b18",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge claims about NK cell development, including markers of lineage commitment (CD122), developmental stages (CD27/CD11b/KLRG1), transcription factors (Ets-1, PU.1, E4BP4, Id2, Eomes, T-bet, Zeb2), and signaling pathways (PDK1, mTORC1, mTORC2) that regulate NK cell maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge in the field, appropriately cited to primary literature (C9-C24). They provide necessary context for the current study and are not novel findings of this manuscript. The citations appear appropriate and the claims are consistent with the field's understanding of NK cell biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:16.348604Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4fd7d791-5ff4-4969-aad6-1921ddd5e85d",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "c74faf5b-060d-47bb-8019-4855332a98b9",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "fd12c217-e89a-42c2-a45d-a3f3bd0809d0",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "7f228748-56bf-4d5f-a2ca-b7f3d30624c1",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "0a3386c9-0d36-4966-91e7-b5f5bd13d26d",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "abe4e790-2b98-4d89-bc39-52d342390591",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "b93ef176-24e0-44e4-a7d4-c7ecf889062d",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "3eb91337-8e0a-4d11-b16b-8210fd879f89",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "1ade8532-859b-46b4-8549-a4f5f07fa69c",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "f13720d5-678b-4154-be24-e1a045ab6ce8",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "a1bab455-83f7-4542-a2a7-4aaa2b1bee7d",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "c9e02b49-b28c-43e4-89fc-1e8f9626d342",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "e2fb12b9-8477-4204-8b37-66c1a12f38ba",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "bb7daec5-bd8f-429f-b7d5-921a40b3e722",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "87c7e0e3-e789-4fd6-bc76-8b6c6ba69691",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "4ac06dd5-131f-4c84-bede-ba1d18a36fcd",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "c241d4fa-9534-4557-8f91-27d68935f1ee",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "eba977cf-4ea2-4fff-bf0c-1dfa35a88005",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "e0167ab3-c6dd-491b-b0b4-7931c47141ac",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "a2b4f6b5-c78f-43bb-9ee4-78a9368cf878",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "5dcde870-685a-4ceb-a01e-173d5c6d780c",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "c5858846-503d-48b0-a66b-e66b720fd82e",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "d1c906e4-ef63-4a83-9517-bafce7b6af91",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "3b70f076-ec2b-4191-a96c-c930f7c00939",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "5302a329-d52a-4ae6-8d0b-7757a655f1ef",
+      "result_id": "751bdc31-8762-4296-bc39-a44168c54469"
+    },
+    {
+      "claim_id": "4e6d380b-9b02-4b35-a2ea-09043a688da3",
+      "result_id": "d49beb1f-7f26-4dab-9b87-4581f1ab2b27"
+    },
+    {
+      "claim_id": "ddeafb7d-af31-4a7b-b7a8-ff8214adc69f",
+      "result_id": "d49beb1f-7f26-4dab-9b87-4581f1ab2b27"
+    },
+    {
+      "claim_id": "755ff438-8131-45e3-82b1-ea47958ad385",
+      "result_id": "d49beb1f-7f26-4dab-9b87-4581f1ab2b27"
+    },
+    {
+      "claim_id": "94b51f62-c948-4d05-98dd-6db9b4fd8563",
+      "result_id": "d49beb1f-7f26-4dab-9b87-4581f1ab2b27"
+    },
+    {
+      "claim_id": "60ecf15d-ee06-45ca-86e8-6f43fd09a4d0",
+      "result_id": "d49beb1f-7f26-4dab-9b87-4581f1ab2b27"
+    },
+    {
+      "claim_id": "c48419e8-1c17-4b80-89e5-3403bb4562ce",
+      "result_id": "d49beb1f-7f26-4dab-9b87-4581f1ab2b27"
+    },
+    {
+      "claim_id": "eddda040-f3c7-49a7-b802-3786e31e7130",
+      "result_id": "d49beb1f-7f26-4dab-9b87-4581f1ab2b27"
+    },
+    {
+      "claim_id": "b16451a3-672a-44e8-97b7-92ed65cf1822",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "4e136e77-fcce-49c4-9924-4b7b2094797b",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "ac8d0177-ab02-4bde-9e5a-3599b7109dce",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "73264c9a-b8d0-42fa-87df-3b308711ba35",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "b24e65b0-31d8-4671-ba85-dcf5cddc4f9a",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "735863cc-0f02-43c2-a46e-274696e0a0a3",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "960bfaad-2953-4dae-b3d8-1f78761d3182",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "97f3af03-0c78-4171-82c2-4855e6f7f293",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "2c7fb91c-a957-4330-88db-fa58cb673d65",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "f1e0c2dc-0177-4185-9d99-c7a9373b44e4",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "37d33377-66c6-45a3-81bb-9e75aaabeaad",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "61e8d0fa-faba-4911-9f60-8b1a1522c55e",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "29658b33-907e-46be-a761-b5f822e33313",
+      "result_id": "81aaa7b6-08de-42a7-8456-784dcced6647"
+    },
+    {
+      "claim_id": "d8ea5f86-5b54-4886-ab16-40481f25707c",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "1f30b401-2486-406a-b38b-d52290c43c46",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "001902ba-d920-49b8-a021-ce810c7a87a6",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "f9cb7a14-72c3-4bd6-afb4-736cb397853f",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "4793a91a-058f-4d86-96c9-9c8ae547397c",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "a79a58c9-aaa8-46fc-a55c-41056dc61f25",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "e7f90a39-eebb-4de0-bed0-ef0f875eb2a2",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "1122ec14-33a3-42de-b121-8dbb73079ecc",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "9ea97765-8214-4da2-960a-a69b2d7e5a2f",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "2f7d2ff0-2b56-4811-b077-95d111db4f99",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "9db2bcbd-3a31-4f4c-92d8-6d666b8f80b9",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "24af59ad-8f24-4fea-87e5-178075055fb4",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "33906200-9873-4734-b249-03fd099b484c",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "550bc394-63df-429d-be24-27759d2e4319",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "c98a92ac-4c32-436a-a91f-a011d2a103ee",
+      "result_id": "1650996d-6379-4b91-87f1-b330da7e31e1"
+    },
+    {
+      "claim_id": "185bbc0c-be68-414e-a26b-1e6b5cbbdf1c",
+      "result_id": "e84cc6b9-e352-4b54-9462-84c6be7da9ab"
+    },
+    {
+      "claim_id": "a395836b-8d28-4feb-945d-166de5a23b5e",
+      "result_id": "e84cc6b9-e352-4b54-9462-84c6be7da9ab"
+    },
+    {
+      "claim_id": "29658b33-907e-46be-a761-b5f822e33313",
+      "result_id": "e84cc6b9-e352-4b54-9462-84c6be7da9ab"
+    },
+    {
+      "claim_id": "d9942891-25ee-4bbe-bdd3-2d6a7180992c",
+      "result_id": "e84cc6b9-e352-4b54-9462-84c6be7da9ab"
+    },
+    {
+      "claim_id": "b93fb6ad-6ab9-4ad5-87db-9ce4c6059a9c",
+      "result_id": "e84cc6b9-e352-4b54-9462-84c6be7da9ab"
+    },
+    {
+      "claim_id": "1122ec14-33a3-42de-b121-8dbb73079ecc",
+      "result_id": "e84cc6b9-e352-4b54-9462-84c6be7da9ab"
+    },
+    {
+      "claim_id": "f66010d6-716f-4090-8a97-620e756f4c2f",
+      "result_id": "e84cc6b9-e352-4b54-9462-84c6be7da9ab"
+    },
+    {
+      "claim_id": "d0808561-6cb8-4956-a6b3-cd93b466fe39",
+      "result_id": "44f700b9-2040-4621-9c3d-925fc47b5c44"
+    },
+    {
+      "claim_id": "e9ee1263-0951-4ef5-957f-a7abce419d4c",
+      "result_id": "44f700b9-2040-4621-9c3d-925fc47b5c44"
+    },
+    {
+      "claim_id": "3e233c70-d256-4658-8f9a-19b0f49b01b0",
+      "result_id": "44f700b9-2040-4621-9c3d-925fc47b5c44"
+    },
+    {
+      "claim_id": "d110c0bb-12b6-479d-bef4-2a7151ff93ac",
+      "result_id": "44f700b9-2040-4621-9c3d-925fc47b5c44"
+    },
+    {
+      "claim_id": "32bcc067-6a2a-4f4c-b860-6d9e817b0e54",
+      "result_id": "44f700b9-2040-4621-9c3d-925fc47b5c44"
+    },
+    {
+      "claim_id": "800bae14-9c1e-4348-b354-a6d36b83d0e4",
+      "result_id": "44f700b9-2040-4621-9c3d-925fc47b5c44"
+    },
+    {
+      "claim_id": "d9942891-25ee-4bbe-bdd3-2d6a7180992c",
+      "result_id": "44f700b9-2040-4621-9c3d-925fc47b5c44"
+    },
+    {
+      "claim_id": "f152354d-a948-42c6-9298-cec17c040303",
+      "result_id": "cb6906b5-27fe-45c6-9847-a89a871b42ac"
+    },
+    {
+      "claim_id": "e93012eb-8778-4658-abc0-ea3d78475bcc",
+      "result_id": "cb6906b5-27fe-45c6-9847-a89a871b42ac"
+    },
+    {
+      "claim_id": "b68ac104-c44e-4da7-90f5-09c09df081f7",
+      "result_id": "cb6906b5-27fe-45c6-9847-a89a871b42ac"
+    },
+    {
+      "claim_id": "c240e048-2e8d-427b-906c-94220eb86014",
+      "result_id": "cb6906b5-27fe-45c6-9847-a89a871b42ac"
+    },
+    {
+      "claim_id": "56cb678d-4357-46a8-8780-873e2e74972e",
+      "result_id": "cb6906b5-27fe-45c6-9847-a89a871b42ac"
+    },
+    {
+      "claim_id": "2432a18a-f8e2-4609-a59b-24f8037e3b21",
+      "result_id": "4bd3f836-7671-4681-902f-2bb409cfd892"
+    },
+    {
+      "claim_id": "2032ee5e-51e6-4370-8469-f86edfd20217",
+      "result_id": "6e3a502f-4718-453e-96f1-6799379c9ce8"
+    },
+    {
+      "claim_id": "755ff438-8131-45e3-82b1-ea47958ad385",
+      "result_id": "e4e8c8c1-7857-4afe-a789-b7c0802e2abe"
+    },
+    {
+      "claim_id": "787904bd-0ffe-4b92-90e0-59be4b48cea0",
+      "result_id": "e4e8c8c1-7857-4afe-a789-b7c0802e2abe"
+    },
+    {
+      "claim_id": "8bfd2963-c597-4160-b49e-96bb5d98c4d2",
+      "result_id": "e4e8c8c1-7857-4afe-a789-b7c0802e2abe"
+    },
+    {
+      "claim_id": "f6e5a6c8-8990-4232-a804-c779f34b54e1",
+      "result_id": "e4e8c8c1-7857-4afe-a789-b7c0802e2abe"
+    },
+    {
+      "claim_id": "85e2e7f0-95ad-4552-bef8-25a7482a2f3a",
+      "result_id": "b5bab8f4-2091-46ba-b3aa-cc72b5933459"
+    },
+    {
+      "claim_id": "a2c1fdd9-c7ef-49e8-b01f-3e487684b246",
+      "result_id": "b5bab8f4-2091-46ba-b3aa-cc72b5933459"
+    },
+    {
+      "claim_id": "73264c9a-b8d0-42fa-87df-3b308711ba35",
+      "result_id": "f0f87e3b-6d11-43ec-bec8-cc3afdf440e8"
+    },
+    {
+      "claim_id": "23aefaa3-f137-42f9-af3a-092fba97cfbc",
+      "result_id": "f0f87e3b-6d11-43ec-bec8-cc3afdf440e8"
+    },
+    {
+      "claim_id": "05af55e2-53cf-47a7-9036-c08f3057b343",
+      "result_id": "f0f87e3b-6d11-43ec-bec8-cc3afdf440e8"
+    },
+    {
+      "claim_id": "2da2366c-4e1c-402b-bfb3-534d43647be7",
+      "result_id": "94508adc-ffa4-40ea-b31d-27e579e54872"
+    },
+    {
+      "claim_id": "ef10fda3-2374-4dc2-840b-3a8e79052234",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "198807fc-9b52-4e7c-9c8e-43e409997b90",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "102f2157-e3f2-4068-ba1b-511bccfb32dc",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "26779844-f216-4b2f-87f0-9c248ec2ebc5",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "ad8da56e-29f2-48b7-8292-42151142f287",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "b5013610-cb64-4df8-a769-b3440a03db61",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "94e6ee28-7929-4690-99cc-6a25a9ba017a",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "b48c8964-b09f-48b5-a444-3375cb167896",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "7a6eb357-3c2c-4039-a408-730585199863",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "565f33c3-28f4-42f2-8cca-53b3b2529fa2",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "6e0cddc4-2305-4f4a-9b2d-f4235d4b636c",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "426be742-53ce-4ccf-9446-cbcf544c0d9f",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "641cb628-5e27-4edc-b053-4ebb6d41deb5",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "a395836b-8d28-4feb-945d-166de5a23b5e",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "14d8e07a-a374-49d5-8c02-07b3f12d360c",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    },
+    {
+      "claim_id": "dac2640e-a89a-4e93-9d1c-08931713e69f",
+      "result_id": "492891ba-c71f-4f10-81fc-2e30f389025c"
+    }
+  ],
+  "comparisons": []
+}

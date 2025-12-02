@@ -1,0 +1,2104 @@
+{
+  "submission": {
+    "id": "93c1e0bb-a2b8-4f94-a3a9-da60f02d745e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:25:17.912084Z",
+    "updated_at": "2025-12-02T13:25:17.912084Z"
+  },
+  "content": [
+    {
+      "id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "submission_id": "93c1e0bb-a2b8-4f94-a3a9-da60f02d745e",
+      "content_type": "manuscript",
+      "content_text": "# Shifts in myeloarchitecture characterise adolescent development of cortical gradients\n\n## Authors\n\n- Casey Paquola<sup>1</sup> ([ORCID: 0000-0002-0190-4103](https://orcid.org/0000-0002-0190-4103)) \u2020\n- Richard AI Bethlehem<sup>2</sup> ([ORCID: 0000-0002-0714-0685](https://orcid.org/0000-0002-0714-0685)) \u2020\n- Jakob Seidlitz<sup>2</sup> ([ORCID: 0000-0002-8164-7476](https://orcid.org/0000-0002-8164-7476))\n- Konrad Wagstyl<sup>2</sup>\n- Rafael Romero-Garcia<sup>2</sup>\n- Kirstie J Whitaker<sup>2</sup>\n- Reinder Vos de Wael<sup>1</sup>\n- Guy B Williams<sup>6</sup>\n- Petra E V\u00e9rtes<sup>2</sup> ([ORCID: 0000-0002-0992-3210](https://orcid.org/0000-0002-0992-3210))\n- Daniel S Margulies<sup>7</sup>\n- Boris Bernhardt<sup>1</sup> ([ORCID: 0000-0001-9256-6041](https://orcid.org/0000-0001-9256-6041)) \u2020\n- Edward T Bullmore<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Multimodal Imaging and Connectome Analysis Lab, McConnell Brain Imaging Centre, Montreal Neurological Institute and Hospital McGill University Montreal Canada\n2. Department of Psychiatry University of Cambridge Cambridge United Kingdom\n3. Autism Research Centre, Department of Psychiatry University of Cambridge Cambridge United Kingdom\n4. Developmental Neurogenomics Unit National Institute of Mental Health Bethesda United States\n5. The Alan Turing Institute London United Kingdom\n6. Department of Clinical Neurosciences, Wolfson Brain Imaging Centre University of Cambridge Cambridge United Kingdom\n7. Frontlab Institut du Cerveau et de la Moelle \u00e9pini\u00e8re, UPMC UMRS 1127, Inserm U 1127, CNRS UMR 7225 Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe studied an accelerated longitudinal cohort of adolescents and young adults (n = 234, two time points) to investigate dynamic reconfigurations in myeloarchitecture. Intracortical profiles were generated using magnetization transfer (MT) data, a myelin-sensitive magnetic resonance imaging contrast. Mixed-effect models of depth specific intracortical profiles demonstrated two separate processes i) overall increases in MT, and ii) flattening of the MT profile related to enhanced signal in mid-to-deeper layers, especially in heteromodal and unimodal association cortices. This development was independent of morphological changes. Enhanced MT in mid-to-deeper layers was found to spatially co-localise specifically with gene expression markers of oligodendrocytes. Interregional covariance analysis revealed that these intracortical changes contributed to a gradual differentiation of higher-order from lower-order systems. Depth-dependent trajectories of intracortical myeloarchitectural development contribute to the maturation of structural hierarchies in the human neocortex, providing a model for adolescent development that bridges microstructural and macroscopic scales of brain organisation.\n\n## Introduction\n\nAdolescence is a crucial phase in biological and psychosocial maturation and involves large-scale reconfigurations of brain anatomy (Paus et al., 2008). Previous histopathological and neuroimaging studies have shown marked age-related changes in brain structure during this sensitive period (Giedd et al., 2015; Raznahan et al., 2011; Sowell et al., 2004). This is particularly evident in magnetic resonance imaging (MRI) assessments of the macro-structural morphology of cortical regions, which have revealed regionally-variable dynamics of cortical thinning in adolescence (Giedd et al., 2015; Raznahan et al., 2011; Sowell et al., 2004). While these findings confirm the existence of strong biological forces shaping adolescent brain anatomy, morphometric analyses typically only quantify shape changes of the inner and outer cortical boundaries. In turn, these analyses may not be specific for microstructural changes occurring within the cortical mantle, which ultimately play key roles in adolescent development of cortical connectivity and function (Huntenburg et al., 2017). Several recent neuroimaging studies assessed intracortical microstructure in adolescence. One promising imaging technique is magnetisation transfer (MT), an MRI acquisition sequence that is sensitive to how water molecules interact with macromolecules in the brain, notably myelin (Schmierer et al., 2007). Although techniques such as MT cannot be equated with cortical myelin content per se (Serres et al., 2009a; Serres et al., 2009b), the MT parameter is dominated by myelin-related molecules making this technique a viable in vivo proxy for the contrast seen histologically in myelin basic protein (Koenig, 1991; Odrobina et al., 2005; Whitaker et al., 2016). A post mortem study in patients with multiple sclerosis has also shown that MT measures scale with demyelination and remyelination, suggesting dependence of this measure on myelin content (Schmierer et al., 2007). While correlated with alternative myelin-sensitive imaging, MT is arguably the strongest in vivo marker of myelin, based on its spatial correspondence with myelin basic protein (Whitaker et al., 2016). While recent studies confirmed associations between adolescence and changes in myelin-markers (Carey et al., 2018; Grydeland et al., 2019; Kwon et al., 2018; Whitaker et al., 2016), findings have been mainly cross-sectional, precluding inferences on intra-individual trajectories. Furthermore, studies have generally focused on specific depths or intracortical averages, ignoring depth-dependent dynamics and thus not addressing potential systematic shifts in cortical myeloarchitecture and lamination in adolescence.\n\nQuantitative profiling of intracortical properties across cortical depths, and specifically parameterization using central moments (Papoulis and Unnikrishna Pillai, 2002), has been proposed to characterise cytoarchitecture in seminal histological work (Schleicher et al., 1999) and capture inter-individual variation (Amunts et al., 1999). In essence, studying the mean (first moment) of MT profiles perpendicular to the cortical mantle allows inferences on overall myelin content while higher order moments can address depth-dependent changes (Figure 1). Analysis of skewness (third moment) can contrast relative properties of deep and superficial cortical layers, and depth is a critical dimension of laminar differentiation that relates to architectural complexity (Zilles et al., 2002) and cortical hierarchy (Mesulam, 1998). Applied to adolescence, such an analysis offers a non-invasive window into cortical architecture, which may recapitulate and expand classical histological findings showing overall increases in cortical myelin in adolescence (Kaes, 1907) as well as transcriptional analyses suggesting that laminar signatures reflect cortical development (Miller et al., 2014). In addition to studying regional variations in cortical architecture, depth-dependent profiling theoretically lends a framework to tap into the large-scale coordination of different brain areas. One such approach, known as microstructure profile covariance (MPC), quantifies inter-regional similarity in microstructure at a single subject-level (Paquola et al., 2019). Previous research has demonstrated the utility of MPC for understanding large-scale patterns of cortical architecture, specifically illustrating a sensory-fugal gradient of microstructural differentiation in both post mortem and in vivo datasets (Paquola et al., 2019). This axis describes gradual transitions from primary sensory and motor regions with high laminar differentiation, through association cortex toward paralimbic areas with increasingly dysgranular appearance (Mesulam, 1998). Given prior evidence that microstructural similarity predicts cortico-cortical connectivity (Barbas and Rempel-Clower, 1997), tracking age-related changes in MPC provides an unprecedented way to probe coordinated maturation of microstructural networks during the critical adolescent period, moving towards a network perspective of structural brain development (Alexander-Bloch et al., 2013; V\u00e1\u0161a et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left. Equivolumetric surfaces overlaid on an MT image of a single subject, also showing an example vertex along which MT intensity is sampled (example MT profile in grey, with lighter tones represent higher MT intensity). Right. Schema of first and third moments. (B) Left. Examples of microscopic myelin-stained sections (inverted image shows myelin in lighter tones) (Vogt and Vogt, 1919; Vogt, 1911), with corresponding profiles and group-average MT profile from the same regions extracted in vivo. V1\u00a0=\u00a0primary visual cortex. V2\u00a0=\u00a0secondary visual area. SPL\u00a0=\u00a0superior parietal lobule. ACC\u00a0=\u00a0anterior cingulate cortex. Right. Dot-plots showing the moments for each exemplar profile. (C) Baseline group-average of first and third moment plotted on the cortical surface, and within levels of laminar differentiation (Mesulam, 2002; Paquola et al., 2019). The scatterplot shows the spatial overlap between first and third moment, coloured by level of laminar differentiation. Findings on the second and fourth moment are shown in Figure 1\u2014figure supplement 1, and with an alternative cytoarchitectural taxonomy in Figure 1\u2014figure supplement 2. (D) Microstructure profile covariance (MPC) was estimated between each pair of nodes based on the partial correlation of two nodes\u2019 MT profiles (black), controlling for the cortex-wide mean intensity profile (grey dashed). Baseline MPC matrices were averaged across the group, and diffusion map embedding was employed to order regions according to the principal gradient of microstructural differentiation (G1MPC). Scatterplots show the relationship between node-wise loadings onto the principle gradient with MT moments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Examples of hyper-stained myelin pictures (Nieuwenhuys and Broere, 2017; Vogt and Vogt, 1919; Vogt, 1911) with corresponding myelin profile and group-average MT profile from the same region. V1\u00a0=\u00a0primary visual cortex. V2\u00a0=\u00a0secondary visual area. SPL\u00a0=\u00a0superior parietal lobule. ACC\u00a0=\u00a0anterior cingulate cortex. Atlas of laminar differentiation projected on the cortical surface (Nieuwenhuys and Broere, 2017; Vogt, 1911). (B) Moment values across levels of laminar differentiation from the myelin pictures shown in (A). (C) Moment values from across levels of laminar differentiation from the MT profile shown in (A). (D) Group-average MT moment per node projected onto the cortical surface. SD captures a very similar pattern to the mean (spatial overlap: mean\u00a0~SD: r\u00a0=\u00a00.62, p<0.001), whereas kurtosis was correlated to skewness (r\u00a0=\u00a00.58, p<0.001). (E) Density plots depict the distribution of group-average MT moments for each node within levels of laminar differentiation.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Distribution of values across each cortical class. (B) Z-scores of relative over or under-representation of parcels showing an age-related effect within each class. Classes showing a significant effect of age related changes are denoted by asterixis (***=p\u00a0<\u00a00.001, *=p\u00a0<\u00a00.05).\n\nThe present study examined adolescent maturation of cortical architecture and microstructure using an accelerated longitudinal NeuroScience in Psychiatry Network dataset (Kiddle et al., 2018; 234 participants scanned twice). We translated quantitative profile analysis via statistical moment parameterisation, previously proposed for histological data, to surface-based MT imaging data and cross-referenced findings against established atlases of cytoarchitectural complexity and laminar differentiation (Von Economo and Koskinas, 2008). We tracked longitudinal changes in MT profile moments using linear mixed effect models, which leverage subject- and group-level effects to estimate microstructural changes across the entire age range (Carey et al., 2018). Based on histological work (Palomero-Gallagher and Zilles, 2019; Zilles et al., 2002), we hypothesized that specifically the first (mean) and third (skewness) central moments of the MT profiles would capture different biological mechanisms and exhibit divergent maturational trajectories. The mean was expected to largely encompass similar changes to those captured by previous in vivo imaging studies on overall MT changes (Carey et al., 2018; Grydeland et al., 2019; Kwon et al., 2018; Whitaker et al., 2016) corresponding to a shift in the overall cortical myelin content. Conversely, we anticipated skewness would capture shifts of MT intensity in the depth dimension of the intensity profile. Intracortical MT profile analysis was complemented by a series of cortical thickness and transcriptomic overlap analyses to assess morphological correlates and molecular underpinnings. In addition to studying regional MT profiles, we leveraged the MPC framework to tap into cortex-wide coordination of adolescent MT profile changes between different brain areas and consolidate our findings at a system level.\n\n## Results\n\n### Characterization of intracortical MT profiles\n\nWe studied the NSPN dataset, an accelerated longitudinal cohort that aggregates multimodal imaging data from 234 adolescents and young adults aged 14\u201327 (for details on cohort selection, processing, and quality control, see Materials\u00a0and\u00a0methods). Briefly, we generated cortical surface models based on T1-weighted MRI and co-registered the corresponding MT volumes to these surfaces. We systematically generated equivolumetric intracortical surfaces and sampled MT intensities along matched vertices perpendicular to the cortical mantle to build intracortical MT profiles (Figure 1A). Our vertex-wise technique leverages equivolumetric transformations that critically adjust surface placement in accordance to the folded cortical sheet (Wagstyl et al., 2018), thereby better coinciding with the position of the putative cortical laminae than equidistant or Laplace-field guided techniques (Waehnert et al., 2014). Our intracortical approach thus offered better precision and biological validity over conventional voxel-based morphometry techniques that may be agnostic to cortical topology and intracortical architecture, and that may amplify mixing of different tissue types (Ziegler et al., 2019). MT profiles at each vertex were parcellated in 1012 approximately equal sized nodes and parameterized via central statistical moments (Zilles et al., 2002). We focused on the first moment (mean across all cortical depths) and third moment (skewness across cortical depths), which are readily interpretable in terms of, respectively, mean myelin content and the ratio of myelination in deeper compared to more superficial layers; and have been studied in prior histological work (Zilles et al., 2002).\n\n### Baseline MT profiles, moments and covariance\n\nAt baseline (i.e., using the average across timepoint 1), the cortex-wide average MT profile shows a non-linear increase in intensity from the superficial layers, adjacent to the pial boundary, towards the deeper layers approaching the white matter boundary, consistent with prior literature (Whitaker et al., 2016; Figure 1A). We first assessed the correspondence of intracortical MT profiles with myeloarchitecture by comparing MT profiles with histological myelin stains from four regions of interest, representing the four levels of laminar differentiation (Mesulam, 2002; Palomero-Gallagher and Zilles, 2019; Vogt and Vogt, 1919; Vogt, 1911; Figure 1B, see Materials\u00a0and\u00a0methods for details on profile quantification). Although post mortem myelin stained sections and in vivo MT profiles differ in terms of resolution and specificity to myelin, we observed similar variations in mean and skewness of profiles across levels of laminar differentiation (Figure 1B), supporting the extension of profile analysis from histology to in vivo MT imaging. At a whole cortex-level, mean MT was highest in idiotypic cortex and decreased with less laminar differentiation, while skewness exhibited an opposite pattern (spatial correlation\u00a0=\u00a0\u22120.23, pspin\u00a0<0.001; Figure 1C, Figure 1\u2014figure supplements 1\u20132, Appendix 1\u2014figure 1). Negative or near-zero skewness was observed in idiotypic and unimodal areas, relating to more even distribution of MT across cortical depths, whereas more positive skewness was observed in heteromodal and paralimbic areas, related to higher MT intensities in infragranular compared to supragranular layers (Zilles et al., 2002; Figure 1C).\n\nWe explored the topology of intracortical MT patterns using microstructure profile covariance (MPC). By correlating depth-wise MT profiles, the MPC procedure estimates inter-regional microstructural similarity and has previously been validated using a combination of post mortem and in vivo data (Paquola et al., 2019; Figure 1D). Diffusion map embedding, a nonlinear dimensionality reduction technique, was employed to resolve the principal axis of microstructural differentiation. The relative positioning of nodes in this embedding space informs on similarity of their covariance patterns. In line with previous work (Paquola et al., 2019), the first principal gradient within the baseline cohort was anchored on one end by idiotypic sensory regions and by paralimbic regions on the other end. This sensory-fugal gradient reflects systematic variations in the MT profiles; it was strongly correlated with MT profile skewness (r\u00a0=\u00a00.91, pspin\u00a0<0.001; Figure 1D) and weakly with mean MT (r\u00a0=\u00a00.19, pspin\u00a0<0.001).\n\n### Age-related changes in cortical depth MT profiles\n\nStudying age-related changes in MT moments, we observed that adolescence led to a significant increase in the mean (qFDR\u00a0<0.00625, % rate of change: [4.8 14.7] 95% CIs; Figure 2, Figure 2\u2014figure supplement 1), suggesting overall increases in intracortical myelin content. Conversely, we observed a unique spatial pattern of decreases in skewness (qFDR\u00a0<0.00625, % rate of change: [\u2212179.2\u201334.6] 95% CIs; Figure 2). Depth-wise changes in MT intensity suggest that these decreases in skewness reflected a preferential increases in MT in mid to deeper layers, suggesting accumulation in myelin. Controlling for overall mean MT trajectories resulted in virtually identical patterns of skewness change, suggesting relative independence between skewness and mean MT trajectories in adolescence (Appendix 1\u2014figures 2\u20134). The differential impact of age across levels of laminar differentiation was subsequently assessed by spin permutations (Alexander-Bloch et al., 2018). Across all moments, age-related changes in skewness were preferentially located in heteromodal (z\u00a0>\u00a03.06, p<0.043) and unimodal cortex (z\u00a0>\u00a03.24, p<0.024), while idiotypic nodes were less prominently represented than expected by chance (Figure 2\u2014figure supplement 1 and Supplementary file 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig2-v1.jpg)\n\n**Figure 2.:** (A) Shifts in MT profiles and moments from lowest to highest age strata shown for exemplar regions of laminar differentiation (Figure 1). (B) Upper. Age-related changes in MT moments (qFDR\u00a0<0.00625). Middle. t-statistic (mean\u00a0\u00b1\u00a0SD) of age-related changes in MT intensity at each intracortical surface across significant regions. Mean increases were balanced across surfaces, whereas decreases in skewness were driven by preferential intensity increases at mid-to-deeper surfaces. Lower. Individual changes across significant regions, with regression lines depicting age-related changes across the investigated range.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Upper t-statistics projected on the cortical surfaces depict significant age-related changes in MT moments. Lower Scatter plots depict individual changes in average moment value across significant regions, with regression lines depicting the age-related changes. SD showed a steady increase during adolescence and preferentially impacted heteromodal cortices (z\u00a0=\u00a03.42, p=0.012), while paralimbic cortex was under-represented (z\u00a0=\u00a0\u22125.60, p<0.001) as assessed using spin premutation and count tables of significant regions per class of laminar differentiation. Kurtosis showed a steady and robust decrease during adolescent development that preferentially affected heteromodal cortex (z\u00a0=\u00a08.80, p<0.001). (B) Bar plots show the z-scores of the number of regions passing FDR correction for each class relative to a null-distribution generated from spin permutations of the t-statistic map (Alexander-Bloch et al., 2018). Significance is indicated by asterixis and based on Bonferroni corrected p-values across all moments and classes (***=p\u00a0<\u00a00.001, *=p\u00a0<\u00a00.05). Positive significant z-scores indicate that the number of regions passing FDR for that class are significantly higher than expected by chance, negative significant z-scores indicate the number is significantly lower (tables provided below).\n\n### Independence of age-related intracortical MT profiles changes from cortical morphology\n\nTo examine the specificity of MT profile trajectories to intracortical variations, we assessed robustness of findings against changes in cortical morphology and boundary definition (Bernhardt et al., 2018; Whitaker et al., 2016). To this end, we computed residual MT moments by controlling for thickness or interface blurring at each vertex within node-wise linear models. The spatial distribution of MT profile mean and skewness were virtually unchanged when data were additionally controlled for morphological and intensity confounds (r\u00a0>\u00a00.99; Appendix 1\u2014figures 2\u20134). Age-related changes in MT moments were also virtually identical when using MT profile data corrected for cortical thickness and interface blurring (r\u00a0>\u00a00.98, Appendix 1\u2014figures 2\u20134), supporting that MT profile trajectories were primarily driven by intracortical factors. Furthermore, spatial correlations suggested that MT moments were relatively independent of regional variations in laminar thickness derived from a post mortem volumetric reconstruction of a Merker-stained human brain (Wagstyl et al., 2018) (mean: \u22120.06\u00a0< r < 0.05. skewness: \u22120.17\u00a0< r < 0.02; Appendix 1\u2014figure 5).\n\n### Age-related change in MT profiles co-localised with expression of oligodendroglial genes\n\nTo explore molecular substrates of our imaging results, we referenced our findings against post mortem gene expression maps provided by the Allen Institute for Brain Sciences using Neurovault API gene decoding (Gorgolewski et al., 2015; Gorgolewski et al., 2014; Hawrylycz et al., 2012). We identified genes whose expression pattern spatially resembled the maps of the age-related change from our in vivo MT analysis (Figure 2B; Hawrylycz et al., 2012). Including only those genes that passed multiple comparisons corrections (pFDR\u00a0<0.05), we conducted enrichment analysis of standard mammalian phenotypes (Smith and Eppig, 2012), cell-specific expression analysis and developmental expression analysis across developmental time windows (Dougherty et al., 2010).\n\nThe pattern of age-related change in skewness showed a significant and specific transcriptomic signature (for unthresholded lists, see Data Availability). Cell specific expression analysis (Dougherty et al., 2010) suggested enrichment exclusively with oligodendrocytes (p<0.001 [at a specificity index threshold of 0.0001]; Figure 3A), confirming the association between myelination and decreased MT skewness. Developmental expression analysis (Dougherty et al., 2010) showed selective enrichment for adolescence and young adulthood (Figure 3B). Both analyses thus confirmed a spatial overlap of our findings from NSPN with genes associated with myelin processes, that are also enriched during adolescence. It should be noted however that individual gene expression assays only provide a snapshot of inherently dynamic processes (ArnatkevicI\u016bt\u0117 et al., 2019). We detected enrichment of adolescent-linked genes based on cross-sectional developmental gene expression data. Specifically, genes showing significant spatial overlap in adult post-mortem brains from the AIBS were identical to those showing significant expression differences during adolescence in the BrainSpan dataset. While there was evidence for an adolescent developmental signal results are nevertheless indirect, also given that glial and oligodendrocyte associated genes may undergo expression changes during other periods of the lifespan (Soreq et al., 2017). Furthermore, we performed gene ontology analysis using a modified Fishers exact test, which captures the deviation from the expected gene rank (Kuleshov et al., 2016), on genes associated with decreasing skewness.\u00a0This indicated a negative association with demyelination (Z\u00a0=\u00a0\u22122.16, p=0.001) and axon degeneration (Z\u00a0=\u00a0\u22122.34, p=0.011), reinforcing associations to myelin. In sum, genes negatively associated with age-related skewness reduction were less likely to be enriched for demyelination and were exclusively associated with oligodendrocytes. Given that the present data are based on healthy cortex, those same areas are not high in expression of \u2018demyelinating\u2019 genes, but instead show a negative signal (e.g., negative z-scores). This is expected since those areas of high expressing myelin genes are most vulnerable (Seidlitz et al., 2019). Thus, MT skewness changes during adolescent development appear to be strongly reflective of changes in myelination. None of the other moments provided a list of genes passing the threshold set by the false discovery rate procedure. However, exploratory rank-based correlations on the weights of each gene indicated a small correlation between mean and skewness related genes (rho\u00a0=\u00a00.14, p<0.001), indicating mean and skewness share a modest transcriptomic signature. Finally, it should be noted that the same analysis on baseline data only (average across a single scan per subject) from this cohort did not identify a whole genome transcriptional profile that overlapped with any of the baseline MT moments (Figure 3\u2014figure supplement 1), reinforcing the added value of developmental data (e.g. measuring an age-related change) in detecting human neurodevelopmental processes by myelin-sensitive MRI.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig3-v1.jpg)\n\n**Figure 3.:** Only genes negatively relating to age-related changes in skewness are shown as only these genes survived FDR\u00a0<\u00a00.05. No other moments had any significantly associated genes. Cell-type-specific expression, showing selective enrichment for oligodendrocytes, reinforcing the link between profile skewness and myelination. Hexagon rings denote significance at different pSI thresholds (from p<0.05 in the outer ring to 0.00001 in the centre). (B) Developmental cortical enrichment, showing enrichment specifically in adolescence and young adulthood.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Results from this spatial overlap analysis show no clear or unique ontological profile for any of the genes and when p-values were corrected for FDR across the four moments and positive and negative gene-lists, none survived correction.\n\n### Adolescent reconfiguration of microstructure profile covariance networks\n\nAdopting the MPC framework, we subsequently assessed inter-regional coordination of myeloarchitectural development. MPC networks were constructed for each participant, and we modelled age-related changes in microstructural similarity between all node pairs (Figure 4A). At the node-to-node edge-level, adolescent development was primarily related to increases in MPC (1564 increases vs 534 decreases at qFDR\u00a0<0.025; Figure 4\u2014figure supplement 1). To express the spatial pattern of myeloarchitectural development in a lower dimensional, and more readily interpretable space, we implemented diffusion map embedding (Margulies et al., 2016; Figure 4A). Nodes closer in this embedding space have more similar patterns of age-related change in MPC, whereas distant nodes undergo dissimilar development. The first principal component (G1DEV) illustrated a sensory-fugal gradient, explaining 33% variance (Figure 4A). On one end of the gradient, idiotypic sensory and motor areas became increasingly coupled in adolescence, and more segregated from the opposite anchor constituted mainly of paralimbic nodes. The concordance of the developmental gradient (G1DEV) with the baseline MPC gradient (r\u00a0=\u00a00.89, p<0.001, Figure 1D) suggested that the axis of microstructural differentiation expands during adolescence. To synoptically visualise these dimensional changes, we generated, aligned, and contrasted cross-sectional MPC gradients (G1MPC) within the youngest (<16 years) and oldest (>24 years) age strata. Similar results were observed using alternative age windows. Heteromodal and unimodal cortex, occupying central regions of the gradient, were drawn outwards towards one of the gradient anchors in older individuals (Figure 4B), forming a more bimodal distribution (Figure 4\u2014figure supplement 2). Specifically, prefrontal and medial parietal areas were increasingly coupled with sensory areas, and temporal regions increased in similarity to paralimbic regions (Figure 4B). By relating the age-related shifts in MPC to anchors with age-related changes in MT moments, we found that greater decreases in MT skewness were related to sensory anchor coupling (r\u00a0=\u00a0\u22120.63, pspin\u00a0<0.001; Figure 4C; Figure 4\u2014figure supplement 3). Conversely, restricted age-related skewness changes were associated with paralimbic anchor coupling (r\u00a0=\u00a00.65, pspin\u00a0<0.001). Together, these findings demonstrate how depth-dependent myelination during adolescence reshapes myeloarchitecture and underpins macro-scale reorganisation of cortical networks.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig4-v1.jpg)\n\n**Figure 4.:** (A) Subject-specific MPC matrices (stacked) were used in mixed effect models to calculate age-related changes in microstructural similarity between each node pair, generating a t-statistic matrix (middle). Diffusion map embedding ordered this matrix along the principal axis (G1DEV) (right). Rows of the matrix were coloured according to G1DEV. Surface projection of G1DEV illustrates a transition from primary sensory (purple) through association (pink) to limbic cortices (yellow). (B) Left. Principal axis of microstructural differentiation within extreme age strata (G1MPC), show a sensory-fugal axis similar to the baseline and developmental analysis. Middle. Shifts in average G1MPC within ten discrete bins of G1DEV, and corresponding Cohen\u2019s d effect size. Central regions of G1DEV, aligning with association cortices, expand from the centre of G1MPC, towards either sensory or paralimbic anchors. Right. Age-related shifts towards anchors visualised via age-strata difference in MPC. The average MPC to each anchor was calculated within each extreme age-strata then subtracted. Prefrontal and parietal areas increased in microstructural similarity with the sensory anchor (top), whereas temporal regions became more coupled with the paralimbic anchor. (C) Left. Age-related change in MT moments (unthresholded maps from Figure 2B). Middle. Age-related shifts in mean and skewness within each bin of the gradient. Right. Correlation betweeBn age-related change in MT moments (Figure 2B) and shifts to anchors (B\u00a0right).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Age-related changes in MPC stratified by increases (red) and decreases (blue). (B) Edge-wise changes in MPC were stratified by level of laminar differentiation. Raincloud plots illustrate the range of t-statistic values within and between different classes. Lines depict the 25%, 50% and 75% quartiles. I\u00a0=\u00a0idiotypic. U\u00a0=\u00a0unimodal. H\u00a0=\u00a0heteromodal. p=paralimbic. (C) Ridgeplot depicting distribution of thresholded (z\u00a0>\u00a02) gradient values across NeuroSynth composite terms, ranked from high to low mean value.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (Left) Matrices showing the Pearson correlation between average MT profiles within ten discrete bins of principal developmental gradient (G1Dev) for young (<16 years) and old (>24 years). (Right) Ridge plots of G1MPC by level of laminar differentiation show an increasingly bimodal distribution of G1MPC for association cortices.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50482/elife-50482-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Absolute difference in MT moment values between each pair of regions was calculated for each participant and transformed into a node x node matrix. In the same manner as developmental gradient construction, linear mixed effects models estimated the age-related changes of each edge and the resultant t-statistic matrix was subjected to diffusion map embedding. Variance explained by diffusion embedding components, t-statistic matrices ordered by the first components, the first components projected onto the cortical surface, scatterplot depicting the similarity of moment-based developmental gradients (G1AGE-MOMENT) to MPC-based developmental gradients (G1AGE-MPC; Figure 4B).\n\n## Discussion\n\nOur longitudinal analyses revealed marked alterations in intracortical myeloarchitecture during adolescence, which was accompanied by large-scale reorganisation of microstructural gradients. Changes to intracortical myelin can be generally characterised by two developmental processes, one involving overall increases in mean MT and one involving preferential MT increases in mid-to-deeper cortical layers. Both processes particularly affected unimodal and heteromodal association cortices that\u00a0is areas between low-level sensory and motor areas on the one end of the cortical hierarchy and high-level transmodal and limbic regions on the other end. A series of complementary explorations, based on alternative neuroimaging features known to undergo large-scale changes in adolescence (Giedd et al., 2015; Raznahan et al., 2011; Sowell et al., 2004), demonstrated the independence of these intracortical microstructural changes from age-related effects on overall cortical morphology and tissue contrast. In addition, cross-referencing our findings against post mortem gene expression maps showed that patterns of age-related change overlapped with genes associated with oligodendrocyte processes, supporting the specificity of MT changes to myelin. Leveraging microstructure profile covariance analysis, we explored coordination of intracortical microstructure characteristics across distributed areas (Paquola et al., 2019). This showed that local processes were paralleled by a cortex-wide differentiation along the sensory-fugal axis. This axis ultimately underpins the segregation of lower- from higher-order components of the putative cortical hierarchy.\n\nInspired by classical histological studies operating on 2D sections (Amunts et al., 1999; Schleicher et al., 1999; Zilles et al., 2002), our work formulated a surface-based approach to quantify myeloarchitecture in vivo via systematic profiling of intracortical MT intensities in the direction of cortical columns and its parameterization via the profiles\u2019 central moments. The skewness of the MT profile, reflecting nonlinear increases in myelin towards deeper layers (Dinse et al., 2015; Sprooten et al., 2019; Waehnert et al., 2014), tilts from infragranular-dominant in paralimbic regions towards a more even distribution across cortical depths in sensory regions. This graded shift parallels changes in the laminar origin of projections, where paralimbic regions engaged in feedback processing project from infragranular layers and sensory regions providing feedforward information project predominantly from supragranular layers (Felleman and Van Essen, 1991). Meanwhile, mean myelin increased from polar towards sensory regions, recapitulating prior post mortem evidence (Vogt and Vogt, 1919; Vogt, 1911), established atlases of cytoarchitecture (Von Economo and Koskinas, 2008), and resting-state functional connectivity gradients (Hong et al., 2017; Margulies et al., 2016). These baseline analyses demonstrate the power of this framework to profile human myeloarchitecture in vivo.\n\nTracking longitudinal change in intracortical MT profiles, we found concomitant but independent developmental patterns in the trajectory of mean and skewness. Both sets of age-related changes were strongly and preferentially located in heteromodal and unimodal association cortex; yet, they only partially overlapped, a finding also supported by gene expression analysis. Only skewness changes, but not mean MT changes, were spatially associated with oligodendrocyte gene expression patterns. Additional analyses indicated that skewness effects occurred rather independently of MRI-based measures of cortical interface blurring and variations in cortical thickness, supporting specificity to intracortical microstructure. Our findings may align with several mechanisms of experience-dependent myelination (de Faria et al., 2018). Increasing mean MT likely reflects myelination of previously unmyelinated axons. On the other hand, as skewness changes persisted even after controlling for changes in the mean, these more likely capture architectural reconfigurations or laminar specific changes in axonal myelination. Underlying mechanisms may include de novo generation of oligodendrocytes (Zuccaro and Arlotta, 2013), activity-dependent modifications in neuronal and oligodendrocyte precursors (Gibson et al., 2014), and tuning of the distance between nodes of Ranvier along both cortico-cortical as well as long-range axons (Arancibia-C\u00e1rcamo et al., 2017). The putative functional role of myelin in cortical grey matter may be to insulate fibres from making new synaptic connections, thus enhancing stability (Braitenberg, 1962; Braitenberg and Sch\u00fcz, 1998; Micheva et al., 2016). Conversely, overall lower myelin content in transmodal regions might indicate a higher potential for plasticity (Huntenburg et al., 2017), possibly making these areas more suitable to support adaptive behaviour and learning that are core to many integrative functions that mature during adolescence. Rodent experiments suggest that experience-induced oligodendrocyte remodelling supports the development of positive social behaviour (Makinodan et al., 2012). Conversely, abnormal myelination has been implicated in several brain disorders, however, studies on intracortical myeloarchitecture are scarce\u00a0(Mighdoll et al., 2015; Stedehouder and Kushner, 2017; Bernhardt et al., 2018). The architectural changes observed in the present cohort may represent a microstructural substrate that could determine overall cognitive and social capacities or susceptibility to a range of neuropsychiatric and neurological conditions occurring in late childhood and adolescence.\n\nAdaptation of a recent microstructure profile covariance analysis framework to longitudinal MT data illustrated the macroscale impact of microstructural changes. Specifically, decreases in MT profile skewness pushed regions to a more sensory-like architecture (which was coupled with high mean MT). In contrast, increases in skewness pushed regions towards a paralimbic-like MT profile. These regions also underwent protracted increases in mean MT, but still did not reach the high levels observed in sensory regions. These two regionally distinct developmental patterns within the association cortex promoted a more bimodal distribution of myeloarchitectural types across the cortex. Similar properties of modular segregation in tractography-based networks have been shown to mediate age-related improvements in executive function throughout adolescence (Baum et al., 2017), reinforcing the importance of these processes for understanding psychosocial maturation. Drifts in association cortex towards either sensory-like or paralimbic-like architecture represents, thus, an expansion of the sensory-fugal gradient of microstructural differentiation (Paquola et al., 2019). Such a sensory-fugal gradient was previously described by Mesulam (1998) based on non-human primate research to encapsulate cortex-wide variations in architecture and connectivity, and has since been suggested to reflect increasing synaptic plasticity towards transmodal regions (Garc\u00eda-Cabezas et al., 2017). Systematic variations in the degree of experience-dependent plasticity may explain why myelin-derived markers develop differently along the sensory-fugal gradient (de Faria et al., 2018), in contrast to other known developmental gradients such as the rostro-caudal timing of terminal neurogenesis (Rakic, 1974). Differentiation of association cortices also conforms with notions of the \u2018tethering hypothesis\u2019 of cortical evolution (Buckner and Krienen, 2013). According to this framework, intermediate regions of the cortical hierarchy are less constrained by extrinsic inputs and intrinsic signaling molecules, which has allowed for massive surface area expansion throughout mammalian evolution. Our findings suggest that reduced constraints on association cortices allow for protracted development of myeloarchitecture, whereas the sensory and limbic anchors are well-defined prior to adolescence.\n\nOur work suggests that myelination during adolescence is unlikely to be a question of simply more or less. Instead, our longitudinal findings show that the type of change is topologically divergent when we take depth into consideration. Expanding upon previous evidence of adolescent increases in overall mean intracortical myelin content, our findings demonstrate a relative preferential specific accumulation of myelin towards mid-to-deeper infragranular layers mainly in association cortices. As our analyses have shown, these findings are not explainable by changes in overall cortical morphology during adolescence, but instead likely reflect architectural changes associated with oligodendrocyte related processes. The coordinated change patterns strengthen the notion that the forces of adolescent development further widen the existing axis of macroscale cortical organization, driving association cortex either closer towards sensory or limbic systems. Thus, our findings illustrate how cell-type and layer specific microstructural changes assessed in the direction of cortical columns contribute to the maturation of macroscale cortical organisation and suggest adolescent calibration of structural hierarchical gradients.\n\n## Materials and methods\n\n### Imaging acquisition and processing\n\nThe present study included a subset of individuals from the NeuroScience in Psychiatry Network (NSPN) study (Whitaker et al., 2016; Kiddle et al., 2018). For a visualization of the sampling design, see Appendix 1\u2014figure 6. In brief, the NSPN study comprises a primary cohort of 2402 healthy young people, recruited from schools, colleges, NHS primary care services and direct advertisements in north London and Cambridgeshire. Participants were stratified into five age groups (14\u201315, 16\u201317, 18\u201319, 20\u201321 and 22\u201325 years) and each stratum was evenly balanced for sex and ethnicity. Primary participants completed demographic, medical, childhood trauma and mental health questionnaires by post. The secondary cohort sub-sampled approximately 60 individuals from each stratum in the primary cohort, maintaining the sex and ethnicity balance. Secondary participants completed MRI scanning as part of a whole-day assessment at one of two sites (Cambridge and London, UK), on at least two occasions. Cohort retention for the MRI follow-up was 74% (Kiddle et al., 2018). Further inclusion criteria for the present study were availability of T1w and MT data available at two timepoints, resulting in 234 healthy adolescents. Following additional quality control on raw images, surface reconstructions and MT profiles, detailed below, the sample included 180 individuals (age stratification at baseline, n\u00a0=\u00a039/41/39/33/26, inter-scan interval\u00a0=\u00a015.4\u00a0\u00b1\u00a03.5 months, 86 females).\n\nT1w and MT imaging were acquired as part of the quantitative multiparameter mapping (MPM) sequence (Weiskopf et al., 2013) on three identical TIM Trio 3T scanners; two located in Cambridge and one located in London. The MPM sequence comprises several multi-echo 3D FLASH (fast low angle shot) scans (Weiskopf et al., 2013). MT-weighting was achieved by applying an off-resonance Gaussian-shaped RF pulse (4 ms duration, 220\u00b0 nominal flip angle, 2 kHz frequency offset from water resonance) prior to the excitation with TR/\u03b1\u00a0=\u00a023.7 ms/6\u00b0. Multiple gradient echoes were acquired with alternating readout polarity at six equidistant echo times (TE) between 2.2 and 14.7 ms. for MT weighted acquisition. The MT saturation parameter decouples the MT signal from the longitudinal relaxation rate, making it a semi-quantitative measure that is robust to relaxation times and field inhomogeneities (Weiskopf et al., 2013; Hagiwara et al., 2018). Other acquisition parameters were: 1 mm isotropic resolution, 176 sagittal partitions, field of view (FOV)\u00a0=\u00a0256\u00a0\u00d7\u00a0240 mm, matrix\u00a0=\u00a0256\u00a0\u00d7\u00a0240\u00d7176, parallel imaging using GRAPPA factor two in phase-encoding (PE) direction (AP), 6/8 partial Fourier in partition direction, non-selective RF excitation, readout bandwidth BW\u00a0=\u00a0425 Hz/pixel, RF spoiling phase increment\u00a0=\u00a050\u00b0.\n\nAll raw images were visually inspected by experienced researchers and 11 participants were excluded due to excessive motion artefacts. Surface reconstructions were visually inspected and manually edited for all scans, up to 10 times (Romero-Garcia et al., 2018). At each iteration, control points and grey/white matter edits were included, and the surface reconstruction was repeated. 10 participants were excluded due to poor surface reconstructions. Following cortical surface reconstruction and surface-based co-registration between T1w and MT weighted scans, we generated 14 equivolumetric cortical surfaces within the cortex (Wagstyl et al., 2018), and systematically sampled MT intensity along these surfaces (Paquola et al., 2019; Figure 1). Next, depth-wise MT profiles were calculated across all vertices in native space and MT profiles were averaged within 1012 equally sized nodes (Figure 1). Given 1 mm isotropic voxels and 1.4\u20134.2 mm cortical thickness in present dataset, we estimate that each vertex-wise depth profile contains approximately 2\u20135 voxels. Using trilinear volume interpolation to each intracortical surface allowed for greater nuance in the intensity estimates along the depth profile. In total, each parcel-wise profile contains 71\u00a0\u00b1\u00a05.4 voxels. The parcellation scheme was mapped from a standard space (fsaverage) to native space for each subject using surface-based registration (Hong et al., 2017). We corrected for depth-specific partial volume effects (PVE) of cerebrospinal fluid using a mixed tissue class model (Kim et al., 2005) to reduce potential bias of averaging MT values in voxels with CSF (Mossahebi et al., 2015). Specifically, we fitted a linear model at each node (n) and each surface (s) of the form\n\n$$\nMT(n,s)\u223cb_{0}+b_{1}CSF(n,s)\n$$\n\nwhere MT(n,s) and CSF(n,s) represent node-specific, surface-specific MT value and CSF partial volume effect estimates. Final CSF-corrected MT values were calculated as the sum of the residuals [MTc(n,s)=T1(n,s) \u2013 (b0+b1*CSF(n,s))] and the uncorrected group average MT value.\n\n### Baseline analysis of MT profiles\n\nWe characterised the MT profiles by the central moments of the intensity distributions; mean, standard deviation (SD), skewness, and kurtosis (Zilles et al., 2002). We focused our main analysis on the first and third moments (Figure 1), owing to the collinearity of SD with mean and kurtosis with skewness (see also Appendix 1\u2014figure 1), the clearer biological interpretation of mean and skewness for the MT profiles, as well as how the first and third moments capture different dimensions of the intensity distribution. Prior to statistical assessment, we identified and removed outlier individuals (n\u00a0=\u00a033). Outliers were defined as individuals with\u00a0>1% nodes that deviated from the age-stratified median of nodal mean MT by\u00a0>3 interquartile ranges. In an effort to validate the relationship between MT and myelin, which is discussed in more detail elsewhere (Heath et al., 2018; Schmierer et al., 2007; Weiskopf et al., 2013), we examined MT-derived and post mortem derived myelin profiles in matched regions of the cortex. To further understand architectural and cellular underpinnings of the in vivo MT profiles, we assessed the similarity of the MT-derived profiles with intracortical myelin profiles computed from previously published post mortem myelin sections. While there are clear differences in the resolution and specificity to myelin between the histological staining and our in vivo proxy data, findings were overall supportive of a close association between in vivo MT profiles and those derived from myelin stained sections. This line of evidence supports the specificity of the MT features to intracortical myeloarchitecture and motivates efforts to increase the availability of post mortem histological measures for more detailed cross-validation studies of putative MRI markers of myelin. We selected hyper-stained myelin pictures from classical literature (Vogt and Vogt, 1919; Vogt, 1911) that represent different levels of cytoarchitectural complexity and have been well characterised in recent work (Palomero-Gallagher and Zilles, 2019). We extracted a rectangle section of each image (spanning from the pial layer to the white matter boundary; Figure 1A), inverted the colour to align with MT imaging (i.e.,: myelin is more white), obtained intensity values per pixel by reading the image into MATLAB (v2017b), then generated a region-specific intensity profile by averaging values row-wise. Finally, we calculated the MT moments for each region and contrasted these values with baseline group-average MT moments for matched regions. Additionally, we contrasted baseline group-average MT moments across levels of laminar differentiation (Mesulam, 2002; Paquola et al., 2019) and cytoarchitectonic type (Von Economo and Koskinas, 2008; Whitaker et al., 2016) to determine whether the in vivo derived MT moments recapitulate histological evidence of cytoarchitectonic variation. MPC networks were calculated as the pairwise Pearson correlation between nodal MT profiles, controlling for the average whole-cortex MT profile. In line with previous work (Paquola et al., 2019), we performed nonlinear dimensionality reduction to characterise the principle gradient of variance in MPC. We assessed the correspondence of the MPC gradient with the MT moments using a node-wise Spearman correlations, with p-values determined against 10000 null models obtained from spin permutations (Alexander-Bloch et al., 2018). All spatial correlations were estimated and tested in the same way throughout the study.\n\n### Longitudinal assessment of age-related changes in MT moments\n\nAge-related changes in MT moments were estimated at each node within four linear mixed effect models (LME) using SurfStat (Worsley et al., 2009) for Matlab, accounting for the non-independence of subjects as well as sex, using the following model:\n\n$$\nmoment(n)\u223cb_{0}+b_{1}age+b_{2}sex+(1|subject+\\epsilon)\n$$\n\nwhere n represents the node. The addition of person-specific random intercepts significantly improves model fit in accelerated longitudinal designs. LMEs were performed on each node and t-statistics were projected onto the cortical surface. Additionally, we examined the relationship between level of laminar differentiation and adolescent development of MT moments. To assess the relative over- or under-representation of significant regions per laminar class we generated 10,000 spin permutations of the t-maps, which controls for spatial contiguity and hemispheric symmetry across permutations (Alexander-Bloch et al., 2018; Seidlitz et al., 2019; V\u00e1\u0161a et al., 2018). Specifically, we differently rotated the t-maps 10,000 times and for each permutation of this spin or rotation we computed counts per laminar class that passed a false discovery rate (FDR) correction for multiple comparisons (Benjamini and Hochberg, 1995) to create a null-distribution of the counts table. Based on the null distribution, we computed Z-scores and two-sided p-values for the actual count table and corrected for multiple comparisons across the entire table using conservative Bonferroni correction.\n\n### Gene expression analyses\n\nWe measured the spatial overlap between our baseline maps of MT moments (e.g., one scan per subject; Figure 1E) and t-statistics (Figure 2A) and maps of post mortem gene expression from the Allen Institute for Brain Sciences (AIBS). We used Neurovault gene decoding of the AIBS dataset to identify the significant associations of spatial gene expression with t-maps (Hawrylycz et al., 2012; Gorgolewski et al., 2015). Neurovault implements a non-linear co-registration of each AIBS donor brain to a standard MNI template. Visual inspection revealed that one donor required additional manual correction due to a cerebellar deformations. Then, 4 mm spheres were drawn around each probe coordinate and values from the input t-maps, already in MNI space, were averaged within each sphere. Mixed effect analysis modelled the associations between each individual gene across the six donors and each input t-map. Meta-data from the gene probes (i.e., their EntrezID\u2019s) were downloaded within the same pipeline and thus always had the latest information available from AIBS. Genes without EntrezID were excluded from subsequent analysis. Filtering was omitted on the genes to ensure a fully data-driven approach. Resultant gene associations p-values were corrected at an FDR level of 0.05 across all included genes and only genes passing correction were included in subsequent analyses. Enrichment analyses were conducted using Enrichr (Chen et al., 2013; Kuleshov et al., 2016), using a Z-score modification of Fisher\u2019s exact test and FDR correction. It should be noted that the AIBS data are based on adult post-mortem and that the developmental associations are indirect associations between the enriched gene-set from spatial overlap analysis and a different developmental gene-expression dataset. Specifically, the t-statistic maps of age-related changes in the moments were spatially correlated with gene expression maps from the AIBS dataset using Neurovault (https://github.com/NeuroVault/NeuroVault/tree/master/ahba_docker). The genes derived from this spatial analysis were subsequently compared against developmental expression profiles from the BrainSpan dataset (http://www.brainspan.org/) using the CSEA developmental expression tool developed by the Dougherty lab (http://genetics.wustl.edu/jdlab/csea-tool-2/).\n\n### Spatial topography of age-related changes in MT profiles\n\nAge-related changes in inter-regional microstructural similarity were assessed by applying the same LME to individual edges of subject specific MPC networks (Paquola et al., 2019). Age-related changes were deemed significant using a two-tailed qFDR\u00a0<0.05. Diffusion map embedding, a non-linear dimensionality reduction technique (Coifman and Lafon, 2006), was applied to the resultant t-statistic matrix to discern the spatial topography of age-related changes. The first principal component represents the principal axis of variation in age-related changes in MPC. Nodal loadings onto the principal component, otherwise known as gradient values (G1DEV), depict the similarity of nodal patterns of MPC change. Similar to previous analyses (Paquola et al., 2019), we examined whether G1DEV differed across levels of laminar differentiation using ridge plots (Wilke, 2018). For closer inspection of MT profile changes across the developmental gradient, we generated group-average MT profiles for the youngest (<16 years, n\u00a0=\u00a043) and oldest (>25 years, n\u00a0=\u00a030) age strata. To probe the impact of developmental differentiation on the maturity of the underlying microstructure map, we generated group-average MPC matrices within the youngest, oldest as well as a mid-range (20\u201322 years) age-strata. MPC matrices were subjected to diffusion map embedding\u00a0(Vos de Wael et al., 2019), then the young and old embeddings were aligned to the mid-range embedding using Procrustes rotation (Langs et al., 2015). We rank ordered and binned G1into ten, approximately equal sized bins (nodes per bin\u00a0~110). Age-related differences in MPC gradients were assessed by (i) bin-wise difference average G1MPC values, (ii) bin-wise Cohen\u2019s d effect size change of gradient values, (iii) node-wise difference in MPC to the gradient anchors, that is the extreme bins, and (iv) bin-wise difference in MT moment values. To reconcile macroscale changes in the MPC gradients to microstructural alterations, we performed a spatial Pearson correlation between unthresholded t-statistic maps of age-related changes in MT mean and skewness (from Figure 2B) with shifts relative to anchors (map iii, Figure 4B left).\n\n### Data and code availability\n\nPreprocessed microstructure profiles are available via GitHub: https://github.com/MICA-MNI/micaopen/tree/master/a_moment_of_change (Paquola, 2019; copy archived at https://github.com/elifesciences-publications/micaopen/tree/master/a_moment_of_change).\n\nThe repository also includes Matlab and R scripts to reproduce the primary analyses and figures.\n",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "21015a24-8aac-4352-b403-7a43a0f026ae",
+      "submission_id": "93c1e0bb-a2b8-4f94-a3a9-da60f02d745e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Theodore Satterthwaite, University of Pennsylvania United States\n\nReviewers:\n- Kate Mills, University of Oregon United States\n- Ben Fulcher, University of Sydney Australia\n\n## Review text\n\nDOI: [10.7554/eLife.50482.023](https://doi.org/10.7554/eLife.50482.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nAcceptance Summary:\n\nThis novel and important study capitalizes upon a large sample of youths scanned twice with magnetization transfer imaging, in order to map developmental profiles of cortical myelin. The authors use this approach to demonstrate that the human cortex undergoes dissociable, depth-specific changes in cortical myeloarchitecture during development. Critically, greater imaging markers of myelin were spatially associated with gene expression markers of oligodentrocytes, and align with a gradient ranging from primary sensory to higher-order association cortex. Together, this approach provides a new understanding of how cortical myelin develops during the critical period of adolescence. Furthermore, this data has numerous implications for understanding both healthy brain maturation and abnormal brain development associated with neuropsychiatric syndromes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Shifts in myeloarchitecture characterise adolescent development of cortical gradients\" for consideration by eLife. Your article has been reviewed by Joshua Gold as the Senior Editor, a Reviewing Editor, and two reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Kate Mills (Reviewer #1); Ben Fulcher (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a study investigating intracortical microstructure in a sample of 223 individuals scanned twice between ages 14-27 years. Authors estimated myelin content in the cortex of magnetic resonance images using magnetization transfer, and by using central moments to test the hypothesis that mean and skewness of the magnetization transfer profiles would show different developmental trajectories and relate to different gene expression patterns. The study is comprehensive and the methods are sound. Writing and presentation are excellent, and code for reproducing the analyses is made available (and processed data where possible), further enhancing the impact of this work. Nonetheless, reviewers felt that several aspects of the work could be strengthened on revision.\n\nEssential revisions:\n\n1) NSPN sample. More details about the full sample (the full NSPN sample) compared to the included sample for this study would be useful. A visualization of the sampling design would be helpful.\n\n2) Quality control. More details regarding the exclusion criteria and brain image quality control procedures are needed. What was the procedure for inspection, criteria used to determine exclusion, and number of scans excluded? Were both the raw images and processed images inspected for quality? Please describe the extent of manual intervention of processed images, including the protocol and number of scans that were successfully processed post-intervention and included in analyses.\n\n3) AIBS. Further details regarding the processing of the gene expression maps is necessary (see: Arnatkevici\u016bt\u0117 et al., 2019). Furthermore, authors should clearly state that AIBS data are based on adult postmortem oligodendrocyte density. As such, it seems warranted to temper their claims (example: \"confirmed a spatio-temporal overlap of our findings from NSPN with myelin processes during adolescence\").\n\n4) MT and myelin. The authors should clarify how sensitive is MT to myelin. The strength of this link is crucial to a lot of the interpretation and biological novelty of the results. MT (like T1w:T2w) may be sensitive not just to myelin, but also potentially other biological variables. Some evidence/discussion of this, and the extent to which the reader can safely make the association to myelin content would be helpful in the introduction. Furthermore, many features are different between the myelin stains and MT profiles (Figure 1B). Some brief discussion of the differences would be helpful. Finally, it would be useful to clarify if to the author's knowledge this is the first time anyone has matched MT depth profiles to a histological measurement (or discuss relevant literature of past efforts).\n\n5) MT skewness and relative layer thickness. MT skewness may depend on the relative thickness of the different layers. It would be useful to clarify how much results explain the data beyond a simple cytoarchitectural analysis (e.g., are the depth profiles acting as a quantitative substitute for cytoarchitecture 'types', or is the inferred connection to myeloarchitecture relevant?) Furthermore, it would be useful to clarify if every node is squashed to the same absolute depth? This could impact interpretation: two areas with an identical ratio of myelination in deep relative to superficial layers would have different skewnesses if their middle layer was made thicker or thinner (thicker middle layer could push out the skewness). If this is the case, MT skewness could not simply be interpreted as a \"ratio of myelination in deeper compared to more superficial layers\"; it would more represent a measure of the preferential distribution of MT closer to the white matter boundary. Clarification is needed.\n\n6) Statistical testing. Every time a statistical analysis is performed (and a test statistic/p-value quoted), it should be clearly stated to the reader what it is. Non-normal distributions seem common in this data; Spearman's correlations may be appropriate. Furthermore, it appears that the spin-test based permutations are only used for some analyses but not others (e.g., only from the \"Age-related changes\u2026 MT profiles\" section onwards). Were spin tests used for earlier spatial association analyses? If not, can this be justified?\n\n7) Utility of low-dimensional embedding. Regarding this statement: \"Nodes closer in this embedding space increase in microstructural similarity during adolescence, whereas distant nodes decouple\", it is unclear why a low-dimensional embedding is useful a direct measurement of change is available. Couldn't you more easily do an analysis directly (e.g., investigate the structure of the 'increasing' edges?) What is gained from this harder-to-interpret nonlinear embedding that helps test/interpret your hypotheses? Perhaps more importantly, it is unclear if this statement is supported by the data: Wouldn't the embedding put nodes close in the space that have similar \"patterns\" of age-related MPC change with other network nodes? In the plot of the behavior of G1_dev, it does not display the claimed behavior (Figure 4B) \u2013 instead, it seems like the largest values of G1_dev already have ~maximal G1_MPC, and thus barely change at all between the <16 and >24 groups. Clarification is warranted.\n\n8) Biological interpretation. In the discussion, the biological interpretation of the results at times is rather thin. If MT is a strong myelin marker, then why would myeloarchitecture be reorganizing like this (e.g., to support what behavior)? Axonal myelination improves transmission speeds and prevents the formation of new synaptic connections. Could you speculate on how this might alter behavior relevant to the longitudinal changes analyzed? Relevant papers to consider include:\n\n*Micheva et al., (2016).\n\n*Braitenberg, (1962).\n\n*Huntenburg et al., (2017).\n",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f46c0dec-3cab-4372-9d51-20e3a796a001",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C1",
+      "claim": "The study included an accelerated longitudinal cohort of 234 adolescents and young adults scanned at two time points.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied an accelerated longitudinal cohort of adolescents and young adults (n = 234, two time points) to investigate dynamic reconfigurations in myeloarchitecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the abstract with specific sample size and design details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "1fb914c8-3127-46d7-8f5f-003c03893871",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C2",
+      "claim": "Intracortical profiles were generated using magnetization transfer (MT) data, a myelin-sensitive magnetic resonance imaging contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracortical profiles were generated using magnetization transfer (MT) data, a myelin-sensitive magnetic resonance imaging contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated methodology in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "59effe52-699e-4f16-9db3-e8fdf419fdcf",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C3",
+      "claim": "Mixed-effect models demonstrated two separate developmental processes: overall increases in MT and flattening of the MT profile related to enhanced signal in mid-to-deeper layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Mixed-effect models of depth specific intracortical profiles demonstrated two separate processes i) overall increases in MT, and ii) flattening of the MT profile related to enhanced signal in mid-to-deeper layers, especially in heteromodal and unimodal association cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding stated in abstract based on statistical modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "44f35b54-68ee-4ca6-b389-d98b86bfce9a",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C4",
+      "claim": "MT profile changes especially affected heteromodal and unimodal association cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Mixed-effect models of depth specific intracortical profiles demonstrated two separate processes i) overall increases in MT, and ii) flattening of the MT profile related to enhanced signal in mid-to-deeper layers, especially in heteromodal and unimodal association cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Spatial specificity of findings stated in abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "7fd5681f-1cea-4cd2-bb26-9db22075ffc1",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C5",
+      "claim": "MT profile development was independent of morphological changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This development was independent of morphological changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "ddf490c9-41c1-4697-8517-f4dd64794da4",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C6",
+      "claim": "Enhanced MT in mid-to-deeper layers spatially co-localized with gene expression markers of oligodendrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced MT in mid-to-deeper layers was found to spatially co-localise specifically with gene expression markers of oligodendrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from gene expression analysis stated in abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "b57ac432-6c04-403c-b778-64840ee9b1d7",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C7",
+      "claim": "Intracortical changes contributed to a gradual differentiation of higher-order from lower-order systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Interregional covariance analysis revealed that these intracortical changes contributed to a gradual differentiation of higher-order from lower-order systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from covariance analysis stated in abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "3c0999da-d650-4922-9a0e-214c0461a9aa",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C8",
+      "claim": "Adolescence is a crucial phase in biological and psychosocial maturation involving large-scale reconfigurations of brain anatomy.",
+      "claim_type": "EXPLICIT",
+      "source": "Adolescence is a crucial phase in biological and psychosocial maturation and involves large-scale reconfigurations of brain anatomy (Paus et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "31d06d92-bb8e-40bf-afca-848ffe184504",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C9",
+      "claim": "Previous studies have shown marked age-related changes in brain structure during adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous histopathological and neuroimaging studies have shown marked age-related changes in brain structure during this sensitive period (Giedd et al., 2015; Raznahan et al., 2011; Sowell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "25f87eb2-c048-4d1c-a95a-317886b459e3",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C10",
+      "claim": "MRI assessments have revealed regionally-variable dynamics of cortical thinning in adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly evident in magnetic resonance imaging (MRI) assessments of the macro-structural morphology of cortical regions, which have revealed regionally-variable dynamics of cortical thinning in adolescence (Giedd et al., 2015; Raznahan et al., 2011; Sowell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior MRI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "ec9c5bef-15f0-4d90-9923-e1fac5f32e6d",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C11",
+      "claim": "Morphometric analyses typically only quantify shape changes of the inner and outer cortical boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "While these findings confirm the existence of strong biological forces shaping adolescent brain anatomy, morphometric analyses typically only quantify shape changes of the inner and outer cortical boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of existing methods based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "1a080c64-2b2c-4f35-a0f0-656ae242ab1e",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C12",
+      "claim": "Morphometric analyses may not be specific for microstructural changes occurring within the cortical mantle.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, these analyses may not be specific for microstructural changes occurring within the cortical mantle, which ultimately play key roles in adolescent development of cortical connectivity and function (Huntenburg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about limitations supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "1abf343a-6460-4646-9b4a-d2dd925b15d9",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C13",
+      "claim": "Magnetisation transfer (MT) is an MRI acquisition sequence sensitive to how water molecules interact with macromolecules in the brain, notably myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "One promising imaging technique is magnetisation transfer (MT), an MRI acquisition sequence that is sensitive to how water molecules interact with macromolecules in the brain, notably myelin (Schmierer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Technical description supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "4c67376a-70ce-47ef-b799-f9732b152391",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C14",
+      "claim": "MT cannot be equated with cortical myelin content per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Although techniques such as MT cannot be equated with cortical myelin content per se (Serres et al., 2009a; Serres et al., 2009b), the MT parameter is dominated by myelin-related molecules making this technique a viable in vivo proxy for the contrast seen histologically in myelin basic protein (Koenig, 1991; Odrobina et al., 2005; Whitaker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Limitation acknowledged with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "97110ced-d848-4dff-bb29-29923628f2f8",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C15",
+      "claim": "The MT parameter is dominated by myelin-related molecules making it a viable in vivo proxy for myelin basic protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Although techniques such as MT cannot be equated with cortical myelin content per se (Serres et al., 2009a; Serres et al., 2009b), the MT parameter is dominated by myelin-related molecules making this technique a viable in vivo proxy for the contrast seen histologically in myelin basic protein (Koenig, 1991; Odrobina et al., 2005; Whitaker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "47bee59b-f7fb-4dd0-a02a-9b2db39e12ce",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C16",
+      "claim": "A post mortem study in multiple sclerosis patients showed that MT measures scale with demyelination and remyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "A post mortem study in patients with multiple sclerosis has also shown that MT measures scale with demyelination and remyelination, suggesting dependence of this measure on myelin content (Schmierer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "afb0f836-7985-49b6-8266-cb2ecb451fa2",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C17",
+      "claim": "MT is arguably the strongest in vivo marker of myelin based on its spatial correspondence with myelin basic protein.",
+      "claim_type": "EXPLICIT",
+      "source": "While correlated with alternative myelin-sensitive imaging, MT is arguably the strongest in vivo marker of myelin, based on its spatial correspondence with myelin basic protein (Whitaker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative claim supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "300d4d4e-20ea-4d6e-8e8f-48ec4289e665",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C18",
+      "claim": "Recent studies confirmed associations between adolescence and changes in myelin-markers.",
+      "claim_type": "EXPLICIT",
+      "source": "While recent studies confirmed associations between adolescence and changes in myelin-markers (Carey et al., 2018; Grydeland et al., 2019; Kwon et al., 2018; Whitaker et al., 2016), findings have been mainly cross-sectional, precluding inferences on intra-individual trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "23f79ac4-7ad6-4b80-b5b6-f8373b3100cb",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C19",
+      "claim": "Previous myelin-marker studies have been mainly cross-sectional, precluding inferences on intra-individual trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "While recent studies confirmed associations between adolescence and changes in myelin-markers (Carey et al., 2018; Grydeland et al., 2019; Kwon et al., 2018; Whitaker et al., 2016), findings have been mainly cross-sectional, precluding inferences on intra-individual trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Limitation of prior work stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "33d8dc82-45be-4fdc-971c-5df9285e9c9b",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C20",
+      "claim": "Previous studies have generally focused on specific depths or intracortical averages, ignoring depth-dependent dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, studies have generally focused on specific depths or intracortical averages, ignoring depth-dependent dynamics and thus not addressing potential systematic shifts in cortical myeloarchitecture and lamination in adolescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Critique of prior literature based on review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "9d165021-192d-47ff-a344-b2cf6b48d44e",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C21",
+      "claim": "Quantitative profiling of intracortical properties using central moments has been proposed to characterise cytoarchitecture in seminal histological work.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative profiling of intracortical properties across cortical depths, and specifically parameterization using central moments (Papoulis and Unnikrishna Pillai, 2002), has been proposed to characterise cytoarchitecture in seminal histological work (Schleicher et al., 1999) and capture inter-individual variation (Amunts et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to methodological papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "d4b12636-b187-4beb-98f9-51676c175929",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C22",
+      "claim": "The mean (first moment) of MT profiles allows inferences on overall myelin content.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, studying the mean (first moment) of MT profiles perpendicular to the cortical mantle allows inferences on overall myelin content while higher order moments can address depth-dependent changes (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Methodological interpretation with figure reference.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "81d371ab-ac61-4c6d-b086-41cfcedb19be",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C23",
+      "claim": "Higher order moments can address depth-dependent changes in MT profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, studying the mean (first moment) of MT profiles perpendicular to the cortical mantle allows inferences on overall myelin content while higher order moments can address depth-dependent changes (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Methodological interpretation with figure reference.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "9a1f2dca-fe7b-44a3-a607-71182bf1e60c",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C24",
+      "claim": "Analysis of skewness (third moment) can contrast relative properties of deep and superficial cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of skewness (third moment) can contrast relative properties of deep and superficial cortical layers, and depth is a critical dimension of laminar differentiation that relates to architectural complexity (Zilles et al., 2002) and cortical hierarchy (Mesulam, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological interpretation supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "4deb26e8-78a1-49b5-98e3-3dd9d7557b92",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C25",
+      "claim": "Depth is a critical dimension of laminar differentiation that relates to architectural complexity and cortical hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of skewness (third moment) can contrast relative properties of deep and superficial cortical layers, and depth is a critical dimension of laminar differentiation that relates to architectural complexity (Zilles et al., 2002) and cortical hierarchy (Mesulam, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "8bcb748f-0f00-44cc-a4fb-5779cda98283",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C26",
+      "claim": "Classical histological findings showed overall increases in cortical myelin in adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to adolescence, such an analysis offers a non-invasive window into cortical architecture, which may recapitulate and expand classical histological findings showing overall increases in cortical myelin in adolescence (Kaes, 1907) as well as transcriptional analyses suggesting that laminar signatures reflect cortical development (Miller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to classical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "6e227ff9-8cf8-4606-b022-c148496c9e50",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C27",
+      "claim": "Transcriptional analyses suggest that laminar signatures reflect cortical development.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to adolescence, such an analysis offers a non-invasive window into cortical architecture, which may recapitulate and expand classical histological findings showing overall increases in cortical myelin in adolescence (Kaes, 1907) as well as transcriptional analyses suggesting that laminar signatures reflect cortical development (Miller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "d600a0a5-a715-4bc8-8f3f-31f5b7530463",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C28",
+      "claim": "Microstructure profile covariance (MPC) quantifies inter-regional similarity in microstructure at a single subject-level.",
+      "claim_type": "EXPLICIT",
+      "source": "One such approach, known as microstructure profile covariance (MPC), quantifies inter-regional similarity in microstructure at a single subject-level (Paquola et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological description supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "8fa7ed46-078e-4ea9-b216-6ab0399416e1",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C29",
+      "claim": "MPC has demonstrated utility for understanding large-scale patterns of cortical architecture, illustrating a sensory-fugal gradient of microstructural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has demonstrated the utility of MPC for understanding large-scale patterns of cortical architecture, specifically illustrating a sensory-fugal gradient of microstructural differentiation in both post mortem and in vivo datasets (Paquola et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "b77423b7-47b0-45d1-905b-08430f7c73c1",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C30",
+      "claim": "The sensory-fugal gradient describes gradual transitions from primary sensory and motor regions with high laminar differentiation through association cortex toward paralimbic areas with increasingly dysgranular appearance.",
+      "claim_type": "EXPLICIT",
+      "source": "This axis describes gradual transitions from primary sensory and motor regions with high laminar differentiation, through association cortex toward paralimbic areas with increasingly dysgranular appearance (Mesulam, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "13b76089-bffc-4b20-8a5f-5579bb6d1cc5",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C31",
+      "claim": "Microstructural similarity predicts cortico-cortical connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given prior evidence that microstructural similarity predicts cortico-cortical connectivity (Barbas and Rempel-Clower, 1997), tracking age-related changes in MPC provides an unprecedented way to probe coordinated maturation of microstructural networks during the critical adolescent period, moving towards a network perspective of structural brain development (Alexander-Bloch et al., 2013; V\u00e1\u0161a et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "8f835130-72bb-4d88-9f58-ae6c3430e31c",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C32",
+      "claim": "The cortex-wide average MT profile shows a non-linear increase in intensity from superficial layers towards deeper layers.",
+      "claim_type": "EXPLICIT",
+      "source": "At baseline (i.e., using the average across timepoint 1), the cortex-wide average MT profile shows a non-linear increase in intensity from the superficial layers, adjacent to the pial boundary, towards the deeper layers approaching the white matter boundary, consistent with prior literature (Whitaker et al., 2016; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Baseline finding supported by citation and figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "62f0a625-fc0c-4712-9105-2d13bdbcb5e0",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C33",
+      "claim": "MT profiles show similar variations in mean and skewness across levels of laminar differentiation as post mortem myelin stained sections.",
+      "claim_type": "EXPLICIT",
+      "source": "Although post mortem myelin stained sections and in vivo MT profiles differ in terms of resolution and specificity to myelin, we observed similar variations in mean and skewness of profiles across levels of laminar differentiation (Figure 1B), supporting the extension of profile analysis from histology to in vivo MT imaging.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "ffe91b5c-bdc6-4b14-ab04-8d8ebc7dd91e",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C34",
+      "claim": "Mean MT was highest in idiotypic cortex and decreased with less laminar differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "At a whole cortex-level, mean MT was highest in idiotypic cortex and decreased with less laminar differentiation, while skewness exhibited an opposite pattern (spatial correlation = \u22120.23, pspin <0.001; Figure 1C, Figure 1\u2014figure supplements 1\u20132, Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Baseline finding with statistical support and figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "b9d54016-0eac-4aa6-a6cb-7d8b86d8926b",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C35",
+      "claim": "Skewness exhibited an opposite pattern to mean MT across levels of laminar differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "At a whole cortex-level, mean MT was highest in idiotypic cortex and decreased with less laminar differentiation, while skewness exhibited an opposite pattern (spatial correlation = \u22120.23, pspin <0.001; Figure 1C, Figure 1\u2014figure supplements 1\u20132, Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Baseline finding with statistical support and figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "797141a4-694d-40a5-ad69-260e5003fcf6",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C36",
+      "claim": "Negative or near-zero skewness was observed in idiotypic and unimodal areas, relating to more even distribution of MT across cortical depths.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative or near-zero skewness was observed in idiotypic and unimodal areas, relating to more even distribution of MT across cortical depths, whereas more positive skewness was observed in heteromodal and paralimbic areas, related to higher MT intensities in infragranular compared to supragranular layers (Zilles et al., 2002; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Baseline finding with citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "d8153b49-d674-4944-a7d5-3b9584546794",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C37",
+      "claim": "More positive skewness was observed in heteromodal and paralimbic areas, related to higher MT intensities in infragranular compared to supragranular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative or near-zero skewness was observed in idiotypic and unimodal areas, relating to more even distribution of MT across cortical depths, whereas more positive skewness was observed in heteromodal and paralimbic areas, related to higher MT intensities in infragranular compared to supragranular layers (Zilles et al., 2002; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Baseline finding with citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "40f2d201-5ed0-4498-ab05-6505933ba598",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C38",
+      "claim": "The first principal gradient of MPC was anchored on one end by idiotypic sensory regions and by paralimbic regions on the other end.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous work (Paquola et al., 2019), the first principal gradient within the baseline cohort was anchored on one end by idiotypic sensory regions and by paralimbic regions on the other end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Baseline finding supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "fa8ca1d8-9110-4983-93bf-9faad1cc4040",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C39",
+      "claim": "The sensory-fugal gradient was strongly correlated with MT profile skewness (r = 0.91, pspin <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "This sensory-fugal gradient reflects systematic variations in the MT profiles; it was strongly correlated with MT profile skewness (r = 0.91, pspin <0.001; Figure 1D) and weakly with mean MT (r = 0.19, pspin <0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "a524a2cb-8e41-461b-966f-9861522dc1b4",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C40",
+      "claim": "The sensory-fugal gradient was weakly correlated with mean MT (r = 0.19, pspin <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "This sensory-fugal gradient reflects systematic variations in the MT profiles; it was strongly correlated with MT profile skewness (r = 0.91, pspin <0.001; Figure 1D) and weakly with mean MT (r = 0.19, pspin <0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "0c5c82c4-de93-46d4-824b-fb9df71f7e24",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C41",
+      "claim": "Adolescence led to a significant increase in mean MT (qFDR <0.00625, % rate of change: [4.8 14.7] 95% CIs).",
+      "claim_type": "EXPLICIT",
+      "source": "Studying age-related changes in MT moments, we observed that adolescence led to a significant increase in the mean (qFDR <0.00625, % rate of change: [4.8 14.7] 95% CIs; Figure 2, Figure 2\u2014figure supplement 1), suggesting overall increases in intracortical myelin content.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Primary longitudinal finding with statistical support and figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c0c2fd09-8066-402f-989e-2ff969c11d9a",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C42",
+      "claim": "Adolescence led to decreases in skewness (qFDR <0.00625, % rate of change: [\u2212179.2\u201334.6] 95% CIs).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we observed a unique spatial pattern of decreases in skewness (qFDR <0.00625, % rate of change: [\u2212179.2\u201334.6] 95% CIs; Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Primary longitudinal finding with statistical support and figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "7a7a03f2-ed8a-4144-950d-a05281de503a",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C43",
+      "claim": "Decreases in skewness reflected preferential increases in MT in mid to deeper layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Depth-wise changes in MT intensity suggest that these decreases in skewness reflected a preferential increases in MT in mid to deeper layers, suggesting accumulation in myelin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of depth-wise data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "06095843-e954-4fdd-a2a0-d2f9146f1e2f",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C44",
+      "claim": "Controlling for overall mean MT trajectories resulted in virtually identical patterns of skewness change.",
+      "claim_type": "EXPLICIT",
+      "source": "Controlling for overall mean MT trajectories resulted in virtually identical patterns of skewness change, suggesting relative independence between skewness and mean MT trajectories in adolescence (Appendix 1\u2014figures 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control analysis finding with figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "eaf28fe9-a9b0-4862-9e4d-3b1a9587762b",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C45",
+      "claim": "Age-related changes in skewness were preferentially located in heteromodal (z > 3.06, p<0.043) and unimodal cortex (z > 3.24, p<0.024).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all moments, age-related changes in skewness were preferentially located in heteromodal (z > 3.06, p<0.043) and unimodal cortex (z > 3.24, p<0.024), while idiotypic nodes were less prominently represented than expected by chance (Figure 2\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding with figure and supplementary file references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "e3a265ac-18fd-46f2-a70d-3c599735eaa7",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C46",
+      "claim": "Idiotypic nodes were less prominently represented in age-related skewness changes than expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all moments, age-related changes in skewness were preferentially located in heteromodal (z > 3.06, p<0.043) and unimodal cortex (z > 3.24, p<0.024), while idiotypic nodes were less prominently represented than expected by chance (Figure 2\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding with figure and supplementary file references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "4f3c8d98-468a-4735-9fbb-0b195b571499",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C47",
+      "claim": "The spatial distribution of MT profile mean and skewness were virtually unchanged when controlled for morphological and intensity confounds (r > 0.99).",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we computed residual MT moments by controlling for thickness or interface blurring at each vertex within node-wise linear models. The spatial distribution of MT profile mean and skewness were virtually unchanged when data were additionally controlled for morphological and intensity confounds (r > 0.99; Appendix 1\u2014figures 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control analysis finding with figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c0fb4bce-a6c4-4ef9-9c7a-551f92ede16f",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C48",
+      "claim": "Age-related changes in MT moments were virtually identical when using MT profile data corrected for cortical thickness and interface blurring (r > 0.98).",
+      "claim_type": "EXPLICIT",
+      "source": "Age-related changes in MT moments were also virtually identical when using MT profile data corrected for cortical thickness and interface blurring (r > 0.98, Appendix 1\u2014figures 2\u20134), supporting that MT profile trajectories were primarily driven by intracortical factors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control analysis finding with figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c01d7570-fd5d-4ecc-a5a6-d359103d9ea9",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C49",
+      "claim": "MT moments were relatively independent of regional variations in laminar thickness derived from post mortem volumetric reconstruction (mean: \u22120.06 < r < 0.05. skewness: \u22120.17 < r < 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, spatial correlations suggested that MT moments were relatively independent of regional variations in laminar thickness derived from a post mortem volumetric reconstruction of a Merker-stained human brain (Wagstyl et al., 2018) (mean: \u22120.06 < r < 0.05. skewness: \u22120.17 < r < 0.02; Appendix 1\u2014figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison analysis with citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "31245857-4a36-4cda-9101-00e9206e5a44",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C50",
+      "claim": "The pattern of age-related change in skewness showed enrichment exclusively with oligodendrocytes (p<0.001 at a specificity index threshold of 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Cell specific expression analysis (Dougherty et al., 2010) suggested enrichment exclusively with oligodendrocytes (p<0.001 [at a specificity index threshold of 0.0001]; Figure 3A), confirming the association between myelination and decreased MT skewness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene expression analysis finding with citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "5680c870-e34a-4a9a-9ffb-692929a0fbf6",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C51",
+      "claim": "Developmental expression analysis showed selective enrichment for adolescence and young adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental expression analysis (Dougherty et al., 2010) showed selective enrichment for adolescence and young adulthood (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene expression analysis finding with citation and figure reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "b53ffdaf-6f0d-44ae-ba27-ec00f1e3f939",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C52",
+      "claim": "Gene ontology analysis indicated a negative association with demyelination (Z = \u22122.16, p=0.001) and axon degeneration (Z = \u22122.34, p=0.011).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we performed gene ontology analysis using a modified Fishers exact test, which captures the deviation from the expected gene rank (Kuleshov et al., 2016), on genes associated with decreasing skewness. This indicated a negative association with demyelination (Z = \u22122.16, p=0.001) and axon degeneration (Z = \u22122.34, p=0.011), reinforcing associations to myelin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology analysis finding with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "4d940f5a-0944-4cdf-91d6-1cd2231c2ad5",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C53",
+      "claim": "Genes negatively associated with age-related skewness reduction were less likely to be enriched for demyelination and were exclusively associated with oligodendrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, genes negatively associated with age-related skewness reduction were less likely to be enriched for demyelination and were exclusively associated with oligodendrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of gene expression findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c28efbdc-8aee-4ffc-8369-4399475ecc79",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C54",
+      "claim": "MT skewness changes during adolescent development appear to be strongly reflective of changes in myelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MT skewness changes during adolescent development appear to be strongly reflective of changes in myelination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation based on gene expression analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "2e3cc325-b5ef-4df7-a155-82daf08599ac",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C55",
+      "claim": "Exploratory rank-based correlations indicated a small correlation between mean and skewness related genes (rho = 0.14, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "However, exploratory rank-based correlations on the weights of each gene indicated a small correlation between mean and skewness related genes (rho = 0.14, p<0.001), indicating mean and skewness share a modest transcriptomic signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical finding from gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "388aae81-54ea-43c1-a626-ae7f17f320c9",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C56",
+      "claim": "Baseline data analysis did not identify a whole genome transcriptional profile that overlapped with any of the baseline MT moments.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it should be noted that the same analysis on baseline data only (average across a single scan per subject) from this cohort did not identify a whole genome transcriptional profile that overlapped with any of the baseline MT moments (Figure 3\u2014figure supplement 1), reinforcing the added value of developmental data (e.g. measuring an age-related change) in detecting human neurodevelopmental processes by myelin-sensitive MRI.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Negative finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "513773c1-119d-4193-8be7-4dd8dd1e7b67",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C57",
+      "claim": "At the edge-level, adolescent development was primarily related to increases in MPC (1564 increases vs 534 decreases at qFDR <0.025).",
+      "claim_type": "EXPLICIT",
+      "source": "At the node-to-node edge-level, adolescent development was primarily related to increases in MPC (1564 increases vs 534 decreases at qFDR <0.025; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MPC analysis finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "9c5e086b-04d6-4599-8863-e36ec46a2ddb",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C58",
+      "claim": "The first principal component (G1DEV) illustrated a sensory-fugal gradient, explaining 33% variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The first principal component (G1DEV) illustrated a sensory-fugal gradient, explaining 33% variance (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Dimensionality reduction finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "e7fc20f0-31b5-4b57-b85a-17a9a9715f79",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C59",
+      "claim": "Idiotypic sensory and motor areas became increasingly coupled in adolescence, and more segregated from paralimbic nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "On one end of the gradient, idiotypic sensory and motor areas became increasingly coupled in adolescence, and more segregated from the opposite anchor constituted mainly of paralimbic nodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of gradient analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "a3ff1127-16e8-48e2-8d75-e85d03acdce9",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C60",
+      "claim": "The concordance of the developmental gradient (G1DEV) with the baseline MPC gradient (r = 0.89, p<0.001) suggested that the axis of microstructural differentiation expands during adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "The concordance of the developmental gradient (G1DEV) with the baseline MPC gradient (r = 0.89, p<0.001, Figure 1D) suggested that the axis of microstructural differentiation expands during adolescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical finding with interpretation and figure reference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "8011cfd3-599c-4dd5-92ed-1bbeaab96f03",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C61",
+      "claim": "Heteromodal and unimodal cortex were drawn outwards towards one of the gradient anchors in older individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Heteromodal and unimodal cortex, occupying central regions of the gradient, were drawn outwards towards one of the gradient anchors in older individuals (Figure 4B), forming a more bimodal distribution (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Age-strata comparison finding with figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c46a10c4-6fef-406e-946c-32571adc2655",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C62",
+      "claim": "Prefrontal and medial parietal areas were increasingly coupled with sensory areas in older individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, prefrontal and medial parietal areas were increasingly coupled with sensory areas, and temporal regions increased in similarity to paralimbic regions (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Age-strata comparison finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "5812675c-5a13-4b82-91f3-69a07bccae75",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C63",
+      "claim": "Temporal regions increased in similarity to paralimbic regions in older individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, prefrontal and medial parietal areas were increasingly coupled with sensory areas, and temporal regions increased in similarity to paralimbic regions (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Age-strata comparison finding with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "d27f9f05-fc83-41c8-814c-7db9c4224ae1",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C64",
+      "claim": "Greater decreases in MT skewness were related to sensory anchor coupling (r = \u22120.63, pspin <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "By relating the age-related shifts in MPC to anchors with age-related changes in MT moments, we found that greater decreases in MT skewness were related to sensory anchor coupling (r = \u22120.63, pspin <0.001; Figure 4C; Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation finding with figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "f064ec49-86c9-4ef3-8869-7ddb84a5b992",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C65",
+      "claim": "Restricted age-related skewness changes were associated with paralimbic anchor coupling (r = 0.65, pspin <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, restricted age-related skewness changes were associated with paralimbic anchor coupling (r = 0.65, pspin <0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Correlation finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "65d168eb-4abe-4d4a-945e-14de075cf9b6",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C66",
+      "claim": "Depth-dependent myelination during adolescence reshapes myeloarchitecture and underpins macro-scale reorganisation of cortical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings demonstrate how depth-dependent myelination during adolescence reshapes myeloarchitecture and underpins macro-scale reorganisation of cortical networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary interpretation of findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c5dc0954-eb1a-4f9d-8788-652140689521",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C67",
+      "claim": "Adolescent development was characterized by two developmental processes: one involving overall increases in mean MT and one involving preferential MT increases in mid-to-deeper cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes to intracortical myelin can be generally characterised by two developmental processes, one involving overall increases in mean MT and one involving preferential MT increases in mid-to-deeper cortical layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of primary findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "bb5b226f-62fe-4baf-94e1-b86e187df98d",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C68",
+      "claim": "Both developmental processes particularly affected unimodal and heteromodal association cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Both processes particularly affected unimodal and heteromodal association cortices that is areas between low-level sensory and motor areas on the one end of the cortical hierarchy and high-level transmodal and limbic regions on the other end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of spatial findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "d7a744db-ab1b-45d7-9e6a-6f889e240083",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C69",
+      "claim": "Intracortical microstructural changes were independent from age-related effects on overall cortical morphology and tissue contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "A series of complementary explorations, based on alternative neuroimaging features known to undergo large-scale changes in adolescence (Giedd et al., 2015; Raznahan et al., 2011; Sowell et al., 2004), demonstrated the independence of these intracortical microstructural changes from age-related effects on overall cortical morphology and tissue contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of control analyses with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "82b1a772-efa4-4334-b75b-62973faa03d2",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C70",
+      "claim": "Patterns of age-related change overlapped with genes associated with oligodendrocyte processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cross-referencing our findings against post mortem gene expression maps showed that patterns of age-related change overlapped with genes associated with oligodendrocyte processes, supporting the specificity of MT changes to myelin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of gene expression findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c5ce98bf-9454-42b3-9ff2-b5ab26f4c031",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C71",
+      "claim": "Local processes were paralleled by a cortex-wide differentiation along the sensory-fugal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging microstructure profile covariance analysis, we explored coordination of intracortical microstructure characteristics across distributed areas (Paquola et al., 2019). This showed that local processes were paralleled by a cortex-wide differentiation along the sensory-fugal axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of MPC findings with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "8d1741e8-4e61-424f-b6be-7dafdf99dc74",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C72",
+      "claim": "The sensory-fugal axis underpins the segregation of lower- from higher-order components of the putative cortical hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "This axis ultimately underpins the segregation of lower- from higher-order components of the putative cortical hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of gradient findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "e8e44010-718f-418f-817d-c956c739519a",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C73",
+      "claim": "The skewness of the MT profile tilts from infragranular-dominant in paralimbic regions towards a more even distribution across cortical depths in sensory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The skewness of the MT profile, reflecting nonlinear increases in myelin towards deeper layers (Dinse et al., 2015; Sprooten et al., 2019; Waehnert et al., 2014), tilts from infragranular-dominant in paralimbic regions towards a more even distribution across cortical depths in sensory regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of baseline findings with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "81593cbb-e04f-4e13-a5fe-132d7f01803f",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C74",
+      "claim": "The graded shift in skewness parallels changes in the laminar origin of projections.",
+      "claim_type": "EXPLICIT",
+      "source": "This graded shift parallels changes in the laminar origin of projections, where paralimbic regions engaged in feedback processing project from infragranular layers and sensory regions providing feedforward information project predominantly from supragranular layers (Felleman and Van Essen, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation linking findings to known connectivity patterns with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "0589dc83-0b54-4b16-a7c6-f41e1e076d20",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C75",
+      "claim": "Mean myelin increased from polar towards sensory regions, recapitulating prior post mortem evidence and established atlases of cytoarchitecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, mean myelin increased from polar towards sensory regions, recapitulating prior post mortem evidence (Vogt and Vogt, 1919; Vogt, 1911), established atlases of cytoarchitecture (Von Economo and Koskinas, 2008), and resting-state functional connectivity gradients (Hong et al., 2017; Margulies et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Baseline finding supported by multiple citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "db04a510-e7b3-4d1a-9d7b-0194b282f08c",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C76",
+      "claim": "Mean and skewness trajectories showed concomitant but independent developmental patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracking longitudinal change in intracortical MT profiles, we found concomitant but independent developmental patterns in the trajectory of mean and skewness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of longitudinal findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "af033f93-c5d3-461a-8c34-0fae075e5149",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C77",
+      "claim": "Both mean and skewness changes were strongly and preferentially located in heteromodal and unimodal association cortex, yet they only partially overlapped.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sets of age-related changes were strongly and preferentially located in heteromodal and unimodal association cortex; yet, they only partially overlapped, a finding also supported by gene expression analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of spatial and gene expression findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "51a0b1fd-3fc9-4e7c-962c-9f1d70fe4886",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C78",
+      "claim": "Only skewness changes, but not mean MT changes, were spatially associated with oligodendrocyte gene expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Only skewness changes, but not mean MT changes, were spatially associated with oligodendrocyte gene expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene expression finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "958ec732-4d82-46e1-bd5a-2662e9ea1f56",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C79",
+      "claim": "Skewness effects occurred independently of MRI-based measures of cortical interface blurring and variations in cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional analyses indicated that skewness effects occurred rather independently of MRI-based measures of cortical interface blurring and variations in cortical thickness, supporting specificity to intracortical microstructure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of control analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "60e82c40-e956-4ac5-8f92-e07f8c1fda07",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C80",
+      "claim": "Increasing mean MT likely reflects myelination of previously unmyelinated axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings may align with several mechanisms of experience-dependent myelination (de Faria et al., 2018). Increasing mean MT likely reflects myelination of previously unmyelinated axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c306e43c-3182-4582-bfea-7d1852df8b79",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C81",
+      "claim": "Skewness changes likely capture architectural reconfigurations or laminar specific changes in axonal myelination.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, as skewness changes persisted even after controlling for changes in the mean, these more likely capture architectural reconfigurations or laminar specific changes in axonal myelination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation based on control analyses.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "f8dc0c67-7b7f-4bb0-beb6-8853c38412c5",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C82",
+      "claim": "Underlying mechanisms may include de novo generation of oligodendrocytes, activity-dependent modifications in neuronal and oligodendrocyte precursors, and tuning of the distance between nodes of Ranvier.",
+      "claim_type": "EXPLICIT",
+      "source": "Underlying mechanisms may include de novo generation of oligodendrocytes (Zuccaro and Arlotta, 2013), activity-dependent modifications in neuronal and oligodendrocyte precursors (Gibson et al., 2014), and tuning of the distance between nodes of Ranvier along both cortico-cortical as well as long-range axons (Arancibia-C\u00e1rcamo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about mechanisms supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "7381367d-a45e-4c1a-8a59-f943e827ac61",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C83",
+      "claim": "The putative functional role of myelin in cortical grey matter may be to insulate fibres from making new synaptic connections, thus enhancing stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The putative functional role of myelin in cortical grey matter may be to insulate fibres from making new synaptic connections, thus enhancing stability (Braitenberg, 1962; Braitenberg and Sch\u00fcz, 1998; Micheva et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about function supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "2a75f001-a706-43ca-b80e-e592349832f4",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C84",
+      "claim": "Overall lower myelin content in transmodal regions might indicate a higher potential for plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, overall lower myelin content in transmodal regions might indicate a higher potential for plasticity (Huntenburg et al., 2017), possibly making these areas more suitable to support adaptive behaviour and learning that are core to many integrative functions that mature during adolescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "f87a05aa-21af-48fc-af6a-434eee6e990d",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C85",
+      "claim": "Rodent experiments suggest that experience-induced oligodendrocyte remodelling supports the development of positive social behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Rodent experiments suggest that experience-induced oligodendrocyte remodelling supports the development of positive social behaviour (Makinodan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to animal studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "aeaeaf55-bd92-4fef-924f-02c1f77a940b",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C86",
+      "claim": "Abnormal myelination has been implicated in several brain disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, abnormal myelination has been implicated in several brain disorders, however, studies on intracortical myeloarchitecture are scarce (Mighdoll et al., 2015; Stedehouder and Kushner, 2017; Bernhardt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c85e6520-f1bf-40a0-9dbf-466e0b4963f9",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C87",
+      "claim": "The architectural changes observed may represent a microstructural substrate that could determine overall cognitive and social capacities or susceptibility to neuropsychiatric and neurological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The architectural changes observed in the present cohort may represent a microstructural substrate that could determine overall cognitive and social capacities or susceptibility to a range of neuropsychiatric and neurological conditions occurring in late childhood and adolescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "2c66945e-9e9f-4c00-94f0-912a018ae01e",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C88",
+      "claim": "Decreases in MT profile skewness pushed regions to a more sensory-like architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, decreases in MT profile skewness pushed regions to a more sensory-like architecture (which was coupled with high mean MT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of MPC findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "e3a5670c-ebe6-418d-a909-b1aeafdd8930",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C89",
+      "claim": "Increases in skewness pushed regions towards a paralimbic-like MT profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, increases in skewness pushed regions towards a paralimbic-like MT profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of MPC findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "fb7c33dd-2ba5-4a37-bbac-7badfd7179b4",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C90",
+      "claim": "Two regionally distinct developmental patterns within the association cortex promoted a more bimodal distribution of myeloarchitectural types across the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "These two regionally distinct developmental patterns within the association cortex promoted a more bimodal distribution of myeloarchitectural types across the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary interpretation of findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "8448a223-138a-4333-b83c-651a48b98c67",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C91",
+      "claim": "Similar properties of modular segregation in tractography-based networks have been shown to mediate age-related improvements in executive function throughout adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar properties of modular segregation in tractography-based networks have been shown to mediate age-related improvements in executive function throughout adolescence (Baum et al., 2017), reinforcing the importance of these processes for understanding psychosocial maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "7e7c720e-fbde-4f14-a58d-78454bb351b2",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C92",
+      "claim": "Drifts in association cortex towards either sensory-like or paralimbic-like architecture represents an expansion of the sensory-fugal gradient of microstructural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Drifts in association cortex towards either sensory-like or paralimbic-like architecture represents, thus, an expansion of the sensory-fugal gradient of microstructural differentiation (Paquola et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "7615ef38-6000-48cc-9b08-1245242702a1",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C93",
+      "claim": "The sensory-fugal gradient was previously described by Mesulam based on non-human primate research to encapsulate cortex-wide variations in architecture and connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a sensory-fugal gradient was previously described by Mesulam (1998) based on non-human primate research to encapsulate cortex-wide variations in architecture and connectivity, and has since been suggested to reflect increasing synaptic plasticity towards transmodal regions (Garc\u00eda-Cabezas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "3ba0320c-0433-4967-a2a4-460f2ca5cf5c",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C94",
+      "claim": "Systematic variations in the degree of experience-dependent plasticity may explain why myelin-derived markers develop differently along the sensory-fugal gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Systematic variations in the degree of experience-dependent plasticity may explain why myelin-derived markers develop differently along the sensory-fugal gradient (de Faria et al., 2018), in contrast to other known developmental gradients such as the rostro-caudal timing of terminal neurogenesis (Rakic, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "aa59beb7-5ad2-4921-bfc3-7568674ba97f",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C95",
+      "claim": "Differentiation of association cortices conforms with notions of the 'tethering hypothesis' of cortical evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiation of association cortices also conforms with notions of the 'tethering hypothesis' of cortical evolution (Buckner and Krienen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "19a6fccc-2d15-4c4e-bfcf-47130f3d31dc",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C96",
+      "claim": "According to the tethering hypothesis, intermediate regions of the cortical hierarchy are less constrained by extrinsic inputs and intrinsic signaling molecules, which has allowed for massive surface area expansion throughout mammalian evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this framework, intermediate regions of the cortical hierarchy are less constrained by extrinsic inputs and intrinsic signaling molecules, which has allowed for massive surface area expansion throughout mammalian evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of cited framework.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "fe9c169d-5215-486d-a154-c7abc789cf84",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C97",
+      "claim": "Reduced constraints on association cortices allow for protracted development of myeloarchitecture, whereas the sensory and limbic anchors are well-defined prior to adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that reduced constraints on association cortices allow for protracted development of myeloarchitecture, whereas the sensory and limbic anchors are well-defined prior to adolescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings in context of tethering hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "f88d5e16-67d8-4bc8-94b1-b563699ee88c",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C98",
+      "claim": "The NSPN study comprises a primary cohort of 2402 healthy young people recruited from schools, colleges, NHS primary care services and direct advertisements in north London and Cambridgeshire.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, the NSPN study comprises a primary cohort of 2402 healthy young people, recruited from schools, colleges, NHS primary care services and direct advertisements in north London and Cambridgeshire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "24f6a342-7bff-4f50-9068-b79e6ef7e37a",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C99",
+      "claim": "Participants were stratified into five age groups (14\u201315, 16\u201317, 18\u201319, 20\u201321 and 22\u201325 years) and each stratum was evenly balanced for sex and ethnicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were stratified into five age groups (14\u201315, 16\u201317, 18\u201319, 20\u201321 and 22\u201325 years) and each stratum was evenly balanced for sex and ethnicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "000760fd-882c-417d-8f81-42b7e67e2d26",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C100",
+      "claim": "The secondary cohort sub-sampled approximately 60 individuals from each stratum in the primary cohort, maintaining the sex and ethnicity balance.",
+      "claim_type": "EXPLICIT",
+      "source": "The secondary cohort sub-sampled approximately 60 individuals from each stratum in the primary cohort, maintaining the sex and ethnicity balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "6bc00fd6-7813-4771-8369-77ab3fac7c5a",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C101",
+      "claim": "Cohort retention for the MRI follow-up was 74%.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort retention for the MRI follow-up was 74% (Kiddle et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Retention statistic with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "f2e08772-1a58-466c-94c4-1f11d18bd240",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C102",
+      "claim": "Following quality control, the final sample included 180 individuals (age stratification at baseline, n = 39/41/39/33/26, inter-scan interval = 15.4 \u00b1 3.5 months, 86 females).",
+      "claim_type": "EXPLICIT",
+      "source": "Further inclusion criteria for the present study were availability of T1w and MT data available at two timepoints, resulting in 234 healthy adolescents. Following additional quality control on raw images, surface reconstructions and MT profiles, detailed below, the sample included 180 individuals (age stratification at baseline, n = 39/41/39/33/26, inter-scan interval = 15.4 \u00b1 3.5 months, 86 females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Final sample characteristics after quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "f1964749-d7fd-4d91-a0d6-7e563877c951",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C103",
+      "claim": "T1w and MT imaging were acquired as part of the quantitative multiparameter mapping (MPM) sequence on three identical TIM Trio 3T scanners.",
+      "claim_type": "EXPLICIT",
+      "source": "T1w and MT imaging were acquired as part of the quantitative multiparameter mapping (MPM) sequence (Weiskopf et al., 2013) on three identical TIM Trio 3T scanners; two located in Cambridge and one located in London.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acquisition details with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "308c47ff-c005-4ce5-b993-55b5f95514f6",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C104",
+      "claim": "The MT saturation parameter decouples the MT signal from the longitudinal relaxation rate, making it a semi-quantitative measure that is robust to relaxation times and field inhomogeneities.",
+      "claim_type": "EXPLICIT",
+      "source": "The MT saturation parameter decouples the MT signal from the longitudinal relaxation rate, making it a semi-quantitative measure that is robust to relaxation times and field inhomogeneities (Weiskopf et al., 2013; Hagiwara et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Technical description supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "88241e1c-420f-441f-9c5a-265aed7f59c2",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C105",
+      "claim": "Equivolumetric intracortical surfaces better coincide with the position of the putative cortical laminae than equidistant or Laplace-field guided techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Our vertex-wise technique leverages equivolumetric transformations that critically adjust surface placement in accordance to the folded cortical sheet (Wagstyl et al., 2018), thereby better coinciding with the position of the putative cortical laminae than equidistant or Laplace-field guided techniques (Waehnert et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological comparison supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "da918175-bb34-433c-aadf-2598473521c7",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "claim_id": "C106",
+      "claim": "The intracortical approach offered better precision and biological validity over conventional voxel-based morphometry techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Our intracortical approach thus offered better precision and biological validity over conventional voxel-based morphometry techniques that may be agnostic to cortical topology and intracortical architecture, and that may amplify mixing of different tissue types (Ziegler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological comparison with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "88b3615c-d078-4550-be50-854857789a75",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used an accelerated longitudinal cohort design with 180 adolescents and young adults (aged 14-27) scanned at two time points using magnetization transfer (MT) imaging to generate intracortical profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C98-C103 collectively describe the study design, sample characteristics, and imaging methodology. The cohort design is well-documented with specific sample sizes (234 initially, 180 after quality control), age stratification, retention rates (74%), and technical acquisition details. The methodology is appropriately described with citations supporting the MT imaging approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mixed-effect models revealed two independent developmental processes during adolescence: overall increases in mean MT and decreases in MT skewness (reflecting preferential increases in mid-to-deeper layers), both preferentially affecting heteromodal and unimodal association cortices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C41-C46, C67-C68 describe the primary longitudinal findings with appropriate statistical support (qFDR <0.00625, specific effect sizes with confidence intervals). The independence of the two processes is demonstrated through control analyses (C44), and spatial specificity is confirmed with permutation testing (C45-C46). The statistical approach using linear mixed-effect models is appropriate for the accelerated longitudinal design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "54ea1712-ac7b-437f-8090-d13c01378800",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MT profile developmental changes were independent of morphological changes including cortical thickness and interface blurring, as demonstrated by control analyses showing virtually identical patterns when correcting for these confounds (r > 0.98-0.99).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C47-C49, C69, C79 describe comprehensive control analyses demonstrating independence from morphological confounds. The high correlations (r > 0.98-0.99) between corrected and uncorrected data provide strong quantitative evidence. Additional validation against post-mortem laminar thickness data (C49) further supports specificity to intracortical microstructure rather than morphology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "c2ef57e7-0f60-476a-b839-1ab521844724",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Age-related changes in MT skewness spatially co-localized with oligodendrocyte gene expression markers, showing cell-type specific enrichment (p<0.001) and developmental enrichment for adolescence/young adulthood, with negative associations to demyelination processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C50-C54, C70, C78 describe gene expression validation analyses with appropriate statistical thresholds (pFDR <0.05, specificity index 0.0001). The cell-type specificity to oligodendrocytes and developmental timing enrichment provide biological validation. However, the authors appropriately acknowledge limitations: gene expression data are cross-sectional adult post-mortem samples, making developmental inferences indirect. The negative finding for baseline data (C56) strengthens the specificity of the longitudinal signal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Microstructure profile covariance (MPC) analysis revealed that intracortical changes contributed to expansion of the sensory-fugal gradient, with heteromodal and unimodal cortices differentiating toward either sensory or paralimbic anchors, forming a more bimodal distribution in older individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C57-C66, C71-C72 describe the MPC network analysis findings with appropriate statistical support. The developmental gradient (G1DEV) explained 33% variance and showed high concordance with baseline gradients (r=0.89). The relationship between MT moment changes and gradient shifts is quantified with significant correlations (r=-0.63 to 0.65, pspin <0.001). The analysis appropriately uses diffusion map embedding and Procrustes alignment for cross-sectional comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "f3774b04-f506-4550-84e1-ba9f58fd32aa",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Baseline MT profiles showed non-linear increases from superficial to deeper layers, with mean MT highest in idiotypic cortex and skewness showing opposite patterns. MT profile variations corresponded to post-mortem myelin staining patterns and established cytoarchitectural gradients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40, C73, C75 describe baseline characterization with appropriate validation against histological data and prior literature. The spatial correlation between mean and skewness (r=-0.23, pspin <0.001) and strong correlation of the MPC gradient with skewness (r=0.91) provide quantitative support. Comparison with post-mortem myelin stains (C33) provides qualitative validation, though the authors appropriately acknowledge differences in resolution and specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "9cee0501-b8d8-44b7-b7d0-fa37079b4a9b",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mean (first moment) of MT profiles captures overall myelin content while skewness (third moment) captures depth-dependent changes contrasting deep versus superficial layers, based on established histological profiling methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 describe the methodological framework with appropriate citations to histological work (Schleicher et al., 1999; Amunts et al., 1999; Zilles et al., 2002). The interpretation of moments is consistent with established statistical theory and prior cytoarchitectural applications. The biological interpretation linking depth to laminar differentiation and cortical hierarchy is well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "a271d069-d636-4b83-ac88-b9d31b3e9f54",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The equivolumetric surface-based approach provides better biological validity and precision than conventional voxel-based morphometry by accounting for cortical folding and reducing partial volume effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C106 describe methodological advantages with appropriate citations (Wagstyl et al., 2018; Waehnert et al., 2014; Ziegler et al., 2019). The equivolumetric approach is validated against post-mortem data in cited work. CSF correction using mixed tissue models (described in methods) addresses partial volume effects. The claims are appropriately framed as methodological improvements rather than absolute validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "fae82185-2fac-4119-b105-a12580dd035d",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MT imaging is sensitive to myelin-related molecules and serves as a viable in vivo proxy for myelin basic protein, though it cannot be directly equated with cortical myelin content per se.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 appropriately characterize MT imaging with balanced discussion of strengths and limitations, supported by multiple citations. The authors correctly acknowledge that MT cannot be equated with myelin content (C14) while presenting evidence for its utility as a myelin proxy (C15-C17). The claim that MT is 'arguably the strongest' marker (C17) is appropriately hedged and citation-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "3aaa7bc2-64bc-4557-a481-8eebe62248ad",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mean and skewness-related genes showed modest transcriptomic overlap (rho=0.14, p<0.001), and baseline MT moments did not show significant whole-genome transcriptional associations, highlighting the value of longitudinal developmental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 describe exploratory and negative findings that strengthen the main gene expression results. The small correlation (rho=0.14) between mean and skewness gene signatures supports their independence. The negative baseline finding (C56) is important for demonstrating specificity of the developmental signal, though the authors appropriately note this reinforces rather than proves the developmental associations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "1a033d17-2736-469a-b7ca-b902caf0621f",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mean and skewness trajectories showed concomitant but independent developmental patterns, both preferentially located in heteromodal and unimodal association cortex with only partial spatial overlap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 summarize the relationship between the two developmental processes, supported by the detailed findings in other claim groups. The independence is demonstrated through control analyses (C44) and gene expression patterns (C78). The partial spatial overlap is consistent with the statistical findings showing both processes affect association cortices but with different spatial distributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "d12c462d-4cb0-4209-8156-7fa7c277d159",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that increasing mean MT reflects myelination of previously unmyelinated axons while skewness changes capture architectural reconfigurations or laminar-specific myelination changes, with potential implications for cognitive development and disease susceptibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C84, C87, C94, C97 are explicitly speculative interpretations about mechanisms and functional implications. While these speculations are appropriately hedged with language like 'likely,' 'may,' and 'might,' and are supported by citations to relevant literature, they extend beyond what the data directly demonstrate. The proposed mechanisms (C82) and functional roles (C83-C84) are plausible but not tested in this study. These remain hypotheses for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "130d4e4a-cfcd-4aa9-97a7-acd68a0d2187",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Decreases in MT skewness pushed regions toward sensory-like architecture while increases pushed regions toward paralimbic-like profiles, promoting a more bimodal distribution and representing expansion of the sensory-fugal gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90, C92 interpret the MPC findings in terms of architectural differentiation. These interpretations are supported by the quantitative findings (C61-C65) showing differential shifts along the gradient and correlations between MT changes and anchor coupling. The bimodal distribution is documented in supplementary figures. The interpretation as gradient expansion is consistent with the high correlation between developmental and baseline gradients (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "808fc312-de67-4f05-a7d8-5f3af9e7c403",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior literature established that adolescence involves large-scale brain reconfigurations with regionally-variable cortical thinning, but previous myelin-marker studies were mainly cross-sectional and focused on specific depths rather than depth-dependent dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C18-C20 accurately summarize prior literature with appropriate citations. The characterization of limitations in prior work (C19-C20) provides appropriate context for the current study's contributions. These claims establish the rationale for the longitudinal, depth-dependent approach used in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study builds on classical histological findings of adolescent myelin increases and extends frameworks including the sensory-fugal gradient concept and the tethering hypothesis of cortical evolution to understand adolescent myeloarchitectural development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31, C93, C95-C96 appropriately contextualize the work within established theoretical frameworks, all supported by citations. The sensory-fugal gradient concept (Mesulam, 1998) and tethering hypothesis (Buckner & Krienen, 2013) provide interpretive frameworks for the findings. The authors appropriately distinguish between recapitulating classical findings (C26) and extending them with new in vivo longitudinal data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "69bcb133-069d-4550-b425-c5feb2feeee4",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Morphometric analyses typically only quantify cortical boundary changes and may not be specific for microstructural changes within the cortical mantle that are important for adolescent development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 accurately characterize limitations of conventional morphometric approaches, supported by citation (Huntenburg et al., 2017). This provides appropriate motivation for the intracortical profiling approach. The limitation is well-established in the neuroimaging literature and the characterization is fair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "f7ddd313-b203-4f80-8b2b-91831000b20f",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work in rodents and humans suggests that oligodendrocyte remodeling supports social behavior development, abnormal myelination is implicated in brain disorders, and modular network segregation mediates executive function improvements in adolescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86, C91 accurately cite prior literature to provide context for functional and clinical implications. These are appropriately presented as established findings from other studies rather than claims from the current work. The citations support the statements made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    },
+    {
+      "id": "6d2fd8ee-97fa-444e-89d4-8a05ba1afbaa",
+      "content_id": "6937b904-4fc4-48e5-ae33-b04830a07339",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The graded shift in MT skewness parallels changes in laminar origin of projections, where paralimbic regions project from infragranular layers and sensory regions project from supragranular layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 links the observed MT skewness gradient to known anatomical connectivity patterns, supported by citation (Felleman & Van Essen, 1991). This interpretation connects the microstructural findings to established principles of cortical organization. The parallel between skewness patterns and projection origins is a reasonable inference supported by the cited anatomical literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:25:17.912084Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f46c0dec-3cab-4372-9d51-20e3a796a001",
+      "result_id": "88b3615c-d078-4550-be50-854857789a75"
+    },
+    {
+      "claim_id": "1fb914c8-3127-46d7-8f5f-003c03893871",
+      "result_id": "88b3615c-d078-4550-be50-854857789a75"
+    },
+    {
+      "claim_id": "f88d5e16-67d8-4bc8-94b1-b563699ee88c",
+      "result_id": "88b3615c-d078-4550-be50-854857789a75"
+    },
+    {
+      "claim_id": "24f6a342-7bff-4f50-9068-b79e6ef7e37a",
+      "result_id": "88b3615c-d078-4550-be50-854857789a75"
+    },
+    {
+      "claim_id": "000760fd-882c-417d-8f81-42b7e67e2d26",
+      "result_id": "88b3615c-d078-4550-be50-854857789a75"
+    },
+    {
+      "claim_id": "6bc00fd6-7813-4771-8369-77ab3fac7c5a",
+      "result_id": "88b3615c-d078-4550-be50-854857789a75"
+    },
+    {
+      "claim_id": "f2e08772-1a58-466c-94c4-1f11d18bd240",
+      "result_id": "88b3615c-d078-4550-be50-854857789a75"
+    },
+    {
+      "claim_id": "f1964749-d7fd-4d91-a0d6-7e563877c951",
+      "result_id": "88b3615c-d078-4550-be50-854857789a75"
+    },
+    {
+      "claim_id": "59effe52-699e-4f16-9db3-e8fdf419fdcf",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "44f35b54-68ee-4ca6-b389-d98b86bfce9a",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "0c5c82c4-de93-46d4-824b-fb9df71f7e24",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "c0c2fd09-8066-402f-989e-2ff969c11d9a",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "7a7a03f2-ed8a-4144-950d-a05281de503a",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "06095843-e954-4fdd-a2a0-d2f9146f1e2f",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "eaf28fe9-a9b0-4862-9e4d-3b1a9587762b",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "e3a265ac-18fd-46f2-a70d-3c599735eaa7",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "c5dc0954-eb1a-4f9d-8788-652140689521",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "bb5b226f-62fe-4baf-94e1-b86e187df98d",
+      "result_id": "57037ee7-dee4-454c-8e5b-93ae9ee586c5"
+    },
+    {
+      "claim_id": "7fd5681f-1cea-4cd2-bb26-9db22075ffc1",
+      "result_id": "54ea1712-ac7b-437f-8090-d13c01378800"
+    },
+    {
+      "claim_id": "4f3c8d98-468a-4735-9fbb-0b195b571499",
+      "result_id": "54ea1712-ac7b-437f-8090-d13c01378800"
+    },
+    {
+      "claim_id": "c0fb4bce-a6c4-4ef9-9c7a-551f92ede16f",
+      "result_id": "54ea1712-ac7b-437f-8090-d13c01378800"
+    },
+    {
+      "claim_id": "c01d7570-fd5d-4ecc-a5a6-d359103d9ea9",
+      "result_id": "54ea1712-ac7b-437f-8090-d13c01378800"
+    },
+    {
+      "claim_id": "d7a744db-ab1b-45d7-9e6a-6f889e240083",
+      "result_id": "54ea1712-ac7b-437f-8090-d13c01378800"
+    },
+    {
+      "claim_id": "958ec732-4d82-46e1-bd5a-2662e9ea1f56",
+      "result_id": "54ea1712-ac7b-437f-8090-d13c01378800"
+    },
+    {
+      "claim_id": "ddf490c9-41c1-4697-8517-f4dd64794da4",
+      "result_id": "c2ef57e7-0f60-476a-b839-1ab521844724"
+    },
+    {
+      "claim_id": "31245857-4a36-4cda-9101-00e9206e5a44",
+      "result_id": "c2ef57e7-0f60-476a-b839-1ab521844724"
+    },
+    {
+      "claim_id": "5680c870-e34a-4a9a-9ffb-692929a0fbf6",
+      "result_id": "c2ef57e7-0f60-476a-b839-1ab521844724"
+    },
+    {
+      "claim_id": "b53ffdaf-6f0d-44ae-ba27-ec00f1e3f939",
+      "result_id": "c2ef57e7-0f60-476a-b839-1ab521844724"
+    },
+    {
+      "claim_id": "4d940f5a-0944-4cdf-91d6-1cd2231c2ad5",
+      "result_id": "c2ef57e7-0f60-476a-b839-1ab521844724"
+    },
+    {
+      "claim_id": "c28efbdc-8aee-4ffc-8369-4399475ecc79",
+      "result_id": "c2ef57e7-0f60-476a-b839-1ab521844724"
+    },
+    {
+      "claim_id": "82b1a772-efa4-4334-b75b-62973faa03d2",
+      "result_id": "c2ef57e7-0f60-476a-b839-1ab521844724"
+    },
+    {
+      "claim_id": "51a0b1fd-3fc9-4e7c-962c-9f1d70fe4886",
+      "result_id": "c2ef57e7-0f60-476a-b839-1ab521844724"
+    },
+    {
+      "claim_id": "b57ac432-6c04-403c-b778-64840ee9b1d7",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "513773c1-119d-4193-8be7-4dd8dd1e7b67",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "9c5e086b-04d6-4599-8863-e36ec46a2ddb",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "e7fc20f0-31b5-4b57-b85a-17a9a9715f79",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "a3ff1127-16e8-48e2-8d75-e85d03acdce9",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "8011cfd3-599c-4dd5-92ed-1bbeaab96f03",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "c46a10c4-6fef-406e-946c-32571adc2655",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "5812675c-5a13-4b82-91f3-69a07bccae75",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "d27f9f05-fc83-41c8-814c-7db9c4224ae1",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "f064ec49-86c9-4ef3-8869-7ddb84a5b992",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "65d168eb-4abe-4d4a-945e-14de075cf9b6",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "c5ce98bf-9454-42b3-9ff2-b5ab26f4c031",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "8d1741e8-4e61-424f-b6be-7dafdf99dc74",
+      "result_id": "d369a60c-d5a1-42a2-99a2-dbb38200d20a"
+    },
+    {
+      "claim_id": "8f835130-72bb-4d88-9f58-ae6c3430e31c",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "62f0a625-fc0c-4712-9105-2d13bdbcb5e0",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "ffe91b5c-bdc6-4b14-ab04-8d8ebc7dd91e",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "b9d54016-0eac-4aa6-a6cb-7d8b86d8926b",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "797141a4-694d-40a5-ad69-260e5003fcf6",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "d8153b49-d674-4944-a7d5-3b9584546794",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "40f2d201-5ed0-4498-ab05-6505933ba598",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "fa8ca1d8-9110-4983-93bf-9faad1cc4040",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "a524a2cb-8e41-461b-966f-9861522dc1b4",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "e8e44010-718f-418f-817d-c956c739519a",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "0589dc83-0b54-4b16-a7c6-f41e1e076d20",
+      "result_id": "f3774b04-f506-4550-84e1-ba9f58fd32aa"
+    },
+    {
+      "claim_id": "d4b12636-b187-4beb-98f9-51676c175929",
+      "result_id": "9cee0501-b8d8-44b7-b7d0-fa37079b4a9b"
+    },
+    {
+      "claim_id": "81d371ab-ac61-4c6d-b086-41cfcedb19be",
+      "result_id": "9cee0501-b8d8-44b7-b7d0-fa37079b4a9b"
+    },
+    {
+      "claim_id": "9a1f2dca-fe7b-44a3-a607-71182bf1e60c",
+      "result_id": "9cee0501-b8d8-44b7-b7d0-fa37079b4a9b"
+    },
+    {
+      "claim_id": "4deb26e8-78a1-49b5-98e3-3dd9d7557b92",
+      "result_id": "9cee0501-b8d8-44b7-b7d0-fa37079b4a9b"
+    },
+    {
+      "claim_id": "9d165021-192d-47ff-a344-b2cf6b48d44e",
+      "result_id": "9cee0501-b8d8-44b7-b7d0-fa37079b4a9b"
+    },
+    {
+      "claim_id": "88241e1c-420f-441f-9c5a-265aed7f59c2",
+      "result_id": "a271d069-d636-4b83-ac88-b9d31b3e9f54"
+    },
+    {
+      "claim_id": "da918175-bb34-433c-aadf-2598473521c7",
+      "result_id": "a271d069-d636-4b83-ac88-b9d31b3e9f54"
+    },
+    {
+      "claim_id": "308c47ff-c005-4ce5-b993-55b5f95514f6",
+      "result_id": "a271d069-d636-4b83-ac88-b9d31b3e9f54"
+    },
+    {
+      "claim_id": "1abf343a-6460-4646-9b4a-d2dd925b15d9",
+      "result_id": "fae82185-2fac-4119-b105-a12580dd035d"
+    },
+    {
+      "claim_id": "4c67376a-70ce-47ef-b799-f9732b152391",
+      "result_id": "fae82185-2fac-4119-b105-a12580dd035d"
+    },
+    {
+      "claim_id": "97110ced-d848-4dff-bb29-29923628f2f8",
+      "result_id": "fae82185-2fac-4119-b105-a12580dd035d"
+    },
+    {
+      "claim_id": "47bee59b-f7fb-4dd0-a02a-9b2db39e12ce",
+      "result_id": "fae82185-2fac-4119-b105-a12580dd035d"
+    },
+    {
+      "claim_id": "afb0f836-7985-49b6-8266-cb2ecb451fa2",
+      "result_id": "fae82185-2fac-4119-b105-a12580dd035d"
+    },
+    {
+      "claim_id": "2e3cc325-b5ef-4df7-a155-82daf08599ac",
+      "result_id": "3aaa7bc2-64bc-4557-a481-8eebe62248ad"
+    },
+    {
+      "claim_id": "388aae81-54ea-43c1-a626-ae7f17f320c9",
+      "result_id": "3aaa7bc2-64bc-4557-a481-8eebe62248ad"
+    },
+    {
+      "claim_id": "db04a510-e7b3-4d1a-9d7b-0194b282f08c",
+      "result_id": "1a033d17-2736-469a-b7ca-b902caf0621f"
+    },
+    {
+      "claim_id": "af033f93-c5d3-461a-8c34-0fae075e5149",
+      "result_id": "1a033d17-2736-469a-b7ca-b902caf0621f"
+    },
+    {
+      "claim_id": "60e82c40-e956-4ac5-8f92-e07f8c1fda07",
+      "result_id": "d12c462d-4cb0-4209-8156-7fa7c277d159"
+    },
+    {
+      "claim_id": "c306e43c-3182-4582-bfea-7d1852df8b79",
+      "result_id": "d12c462d-4cb0-4209-8156-7fa7c277d159"
+    },
+    {
+      "claim_id": "f8dc0c67-7b7f-4bb0-beb6-8853c38412c5",
+      "result_id": "d12c462d-4cb0-4209-8156-7fa7c277d159"
+    },
+    {
+      "claim_id": "7381367d-a45e-4c1a-8a59-f943e827ac61",
+      "result_id": "d12c462d-4cb0-4209-8156-7fa7c277d159"
+    },
+    {
+      "claim_id": "2a75f001-a706-43ca-b80e-e592349832f4",
+      "result_id": "d12c462d-4cb0-4209-8156-7fa7c277d159"
+    },
+    {
+      "claim_id": "c85e6520-f1bf-40a0-9dbf-466e0b4963f9",
+      "result_id": "d12c462d-4cb0-4209-8156-7fa7c277d159"
+    },
+    {
+      "claim_id": "3ba0320c-0433-4967-a2a4-460f2ca5cf5c",
+      "result_id": "d12c462d-4cb0-4209-8156-7fa7c277d159"
+    },
+    {
+      "claim_id": "fe9c169d-5215-486d-a154-c7abc789cf84",
+      "result_id": "d12c462d-4cb0-4209-8156-7fa7c277d159"
+    },
+    {
+      "claim_id": "2c66945e-9e9f-4c00-94f0-912a018ae01e",
+      "result_id": "130d4e4a-cfcd-4aa9-97a7-acd68a0d2187"
+    },
+    {
+      "claim_id": "e3a5670c-ebe6-418d-a909-b1aeafdd8930",
+      "result_id": "130d4e4a-cfcd-4aa9-97a7-acd68a0d2187"
+    },
+    {
+      "claim_id": "fb7c33dd-2ba5-4a37-bbac-7badfd7179b4",
+      "result_id": "130d4e4a-cfcd-4aa9-97a7-acd68a0d2187"
+    },
+    {
+      "claim_id": "7e7c720e-fbde-4f14-a58d-78454bb351b2",
+      "result_id": "130d4e4a-cfcd-4aa9-97a7-acd68a0d2187"
+    },
+    {
+      "claim_id": "3c0999da-d650-4922-9a0e-214c0461a9aa",
+      "result_id": "808fc312-de67-4f05-a7d8-5f3af9e7c403"
+    },
+    {
+      "claim_id": "31d06d92-bb8e-40bf-afca-848ffe184504",
+      "result_id": "808fc312-de67-4f05-a7d8-5f3af9e7c403"
+    },
+    {
+      "claim_id": "25f87eb2-c048-4d1c-a95a-317886b459e3",
+      "result_id": "808fc312-de67-4f05-a7d8-5f3af9e7c403"
+    },
+    {
+      "claim_id": "300d4d4e-20ea-4d6e-8e8f-48ec4289e665",
+      "result_id": "808fc312-de67-4f05-a7d8-5f3af9e7c403"
+    },
+    {
+      "claim_id": "23f79ac4-7ad6-4b80-b5b6-f8373b3100cb",
+      "result_id": "808fc312-de67-4f05-a7d8-5f3af9e7c403"
+    },
+    {
+      "claim_id": "33d8dc82-45be-4fdc-971c-5df9285e9c9b",
+      "result_id": "808fc312-de67-4f05-a7d8-5f3af9e7c403"
+    },
+    {
+      "claim_id": "8bcb748f-0f00-44cc-a4fb-5779cda98283",
+      "result_id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273"
+    },
+    {
+      "claim_id": "6e227ff9-8cf8-4606-b022-c148496c9e50",
+      "result_id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273"
+    },
+    {
+      "claim_id": "d600a0a5-a715-4bc8-8f3f-31f5b7530463",
+      "result_id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273"
+    },
+    {
+      "claim_id": "8fa7ed46-078e-4ea9-b216-6ab0399416e1",
+      "result_id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273"
+    },
+    {
+      "claim_id": "b77423b7-47b0-45d1-905b-08430f7c73c1",
+      "result_id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273"
+    },
+    {
+      "claim_id": "13b76089-bffc-4b20-8a5f-5579bb6d1cc5",
+      "result_id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273"
+    },
+    {
+      "claim_id": "7615ef38-6000-48cc-9b08-1245242702a1",
+      "result_id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273"
+    },
+    {
+      "claim_id": "aa59beb7-5ad2-4921-bfc3-7568674ba97f",
+      "result_id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273"
+    },
+    {
+      "claim_id": "19a6fccc-2d15-4c4e-bfcf-47130f3d31dc",
+      "result_id": "7fd39b03-bad2-4a40-87bb-8b9df9a4e273"
+    },
+    {
+      "claim_id": "ec9c5bef-15f0-4d90-9923-e1fac5f32e6d",
+      "result_id": "69bcb133-069d-4550-b425-c5feb2feeee4"
+    },
+    {
+      "claim_id": "1a080c64-2b2c-4f35-a0f0-656ae242ab1e",
+      "result_id": "69bcb133-069d-4550-b425-c5feb2feeee4"
+    },
+    {
+      "claim_id": "f87a05aa-21af-48fc-af6a-434eee6e990d",
+      "result_id": "f7ddd313-b203-4f80-8b2b-91831000b20f"
+    },
+    {
+      "claim_id": "aeaeaf55-bd92-4fef-924f-02c1f77a940b",
+      "result_id": "f7ddd313-b203-4f80-8b2b-91831000b20f"
+    },
+    {
+      "claim_id": "8448a223-138a-4333-b83c-651a48b98c67",
+      "result_id": "f7ddd313-b203-4f80-8b2b-91831000b20f"
+    },
+    {
+      "claim_id": "81593cbb-e04f-4e13-a5fe-132d7f01803f",
+      "result_id": "6d2fd8ee-97fa-444e-89d4-8a05ba1afbaa"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "VPS13A is a peripheral membrane protein. Biochemical fractionation experiments show that VPS13A is enriched in membrane fractions (C35, C36), is solubilized by alkaline and urea treatments similar to peripheral membrane proteins (C37), and co-fractionates with organelle markers (C38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent biochemical approaches (high-speed centrifugation, digitonin extraction, alkaline/urea treatment, sucrose gradient fractionation) consistently demonstrate peripheral membrane association of VPS13A. The data are internally consistent and use appropriate positive controls (ATP5A as peripheral membrane protein, EGFR as integral membrane protein).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C98"
+    ],
+    "result": "VPS13A associates with mitochondria via its C-terminal domain. VPS13A-GFP decorates mitochondrial periphery (C39), the C-terminal region (aa 2615-3174) localizes to mitochondria (C40), VPS13A is enriched in mitochondrial fractions (C41), behaves as a peripheral membrane protein on mitochondria (C42, C43), and co-fractionates with the outer mitochondrial membrane marker TOMM20 (C98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitochondrial localization is demonstrated through multiple complementary approaches: microscopy (co-localization with Mitotracker and TOMM20), biochemical fractionation, domain mapping with truncation constructs, and proteinase K sensitivity assays. The C-terminal domain is specifically identified as mediating this interaction through deletion analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C93",
+      "C99"
+    ],
+    "result": "VPS13A associates with the ER through its FFAT domain binding to VAP-A. VPS13A co-localizes with ER markers VAP-A and Sec61B (C44, C45), co-immunoprecipitates with VAP-A (C46, C47), and this interaction is mediated by the FFAT motif (aa 842-848) (C48, C49, C93). Deletion of the FFAT domain abolishes ER localization and VAP-A binding (C50, C51, C52) but the FFAT domain alone is insufficient for ER targeting in vivo (C99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ER association is rigorously demonstrated through co-localization, co-immunoprecipitation, in vitro binding assays, and functional validation using FFAT deletion mutants and point mutations. The requirement for the FFAT domain is clearly established, though additional domains appear necessary for proper ER targeting in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C9",
+      "C55",
+      "C102",
+      "C103"
+    ],
+    "result": "VPS13A localizes at ER-mitochondria contact sites and is required for their formation/maintenance. VPS13A is present at sites where ER and mitochondria are in close contact (C6), and VPS13A depletion significantly decreases both narrow and wide ER-mitochondria contact sites as measured by the SPLICS assay (C9, C55). VPS13A can simultaneously associate with both organelles via its C-terminus (mitochondria) and FFAT domain (ER) (C103).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization at ER-mitochondria contact sites is supported by co-localization with both ER and mitochondrial markers, and the functional requirement is demonstrated using the SPLICS assay in knockout cells. The dual-targeting mechanism through distinct domains provides a molecular basis for the tethering function. The SPLICS assay is an established method for measuring organelle contact sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C56",
+      "C57",
+      "C59",
+      "C105"
+    ],
+    "result": "VPS13A depletion causes mitochondrial fragmentation and impaired fusion. VPS13A KO cells contain fewer elongated mitochondria under normal conditions (C56) and show reduced elongation upon starvation compared to controls (C57). This is accompanied by increased S616 phosphorylation of Drp1, associated with decreased fusion and increased fission (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitochondrial morphology phenotype is demonstrated through quantitative microscopy analysis with clear categorization of mitochondrial types. The molecular mechanism is supported by Drp1 phosphorylation data. However, the causal link between reduced ER-mitochondria contact sites and mitochondrial fragmentation is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C58"
+    ],
+    "result": "VPS13A depletion impairs mitophagy. VPS13A KO cells show reduced capacity to eliminate damaged mitochondria after CCCP treatment and Parkin overexpression (C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitophagy defect is demonstrated using an established assay (CCCP + Parkin overexpression) with quantification of TOMM20 fluorescence intensity. The statistical significance is shown (Figure 5D). However, the mechanism linking VPS13A loss to impaired mitophagy is not directly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C12",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C82"
+    ],
+    "result": "VPS13A localizes to lipid droplets in a FFAT-independent manner. VPS13A co-localizes with lipid droplet markers BODIPY-FA and LipidTox (C60), uniformly encircles large LDs at their periphery (C61), and shifts to LD fractions upon OA induction (C62, C63). The FFAT deletion mutant still localizes to LDs (C64, C82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LD localization is demonstrated through multiple approaches: co-localization microscopy, line scan analysis showing peripheral enrichment, and biochemical fractionation showing enrichment in LD fractions after OA treatment. The FFAT-independence is clearly shown with the deletion mutant. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C68",
+      "C69",
+      "C88",
+      "C113"
+    ],
+    "result": "VPS13A negatively regulates lipid droplet motility. VPS13A-positive LDs show slow, random oscillation, while LDs temporarily dissociated from VPS13A move faster and directionally (C68). VPS13A overexpression increases the fraction of non-moving LDs (C69, C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The effect on LD motility is demonstrated through live-cell imaging and quantitative analysis comparing VPS13A-positive and VPS13A-negative cells. The data show statistical significance. However, the mechanism by which VPS13A restricts LD movement is not established, and the biological significance of this regulation is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14",
+      "C65",
+      "C66",
+      "C67",
+      "C114"
+    ],
+    "result": "VPS13A depletion increases lipid droplet numbers. VPS13A KO cells show increased LD numbers under normal conditions (C65) and increased Nile red intensity by FACS (C66). However, OA-induced LD formation is comparable to controls (C67), indicating VPS13A is not required for LD formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increased LD numbers are demonstrated through multiple quantitative approaches (microscopy counting and FACS analysis) with statistical significance. The normal response to OA induction provides important mechanistic insight that VPS13A affects LD turnover rather than formation. However, the specific mechanism causing LD accumulation is not directly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C111",
+      "C112"
+    ],
+    "result": "Drosophila Vps13 mutants show increased lipid droplets in eyes, and this phenotype is rescued by human VPS13A expression. Five-day-old Vps13 mutants have increased LDs in eyes compared to wildtype (C70), and overexpression of human VPS13A rescues this phenotype (C71), indicating functional conservation between Drosophila Vps13 and human VPS13A (C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Drosophila phenotype is clearly demonstrated through Nile red staining, and the rescue experiment provides strong evidence for functional conservation. Western blot confirms expression of human VPS13A in the rescue flies. This cross-species complementation is a powerful demonstration of conserved function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C100",
+      "C101"
+    ],
+    "result": "The VPS13A-VAP-A interaction is regulated by calcium levels. Treatment with thapsigargin (TG), which increases cytosolic calcium, increases VPS13A binding to VAP-A in a dose-dependent manner (C53, C54). This is consistent with calcium regulation of membrane contact site assembly (C100, C101).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium-dependent regulation is demonstrated through GFP-trap assays after TG treatment with dose-response quantification showing statistical significance. The mechanism is consistent with established knowledge about calcium regulation of contact sites. However, direct calcium measurements were not performed, and the specific molecular mechanism is not elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "VPS13A also interacts with VAP-B in a FFAT-dependent manner. Co-immunoprecipitation experiments show VPS13A interacts with VAP-B, and this interaction is lost in the FFAT deletion mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The VAP-B interaction is demonstrated through co-immunoprecipitation and GFP-trap assays (Figure 4\u2014figure supplements 2-3), with FFAT-dependence shown using the deletion mutant. This is consistent with known redundancy between VAP-A and VAP-B functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "VPS13A does not co-localize with endosomal/lysosomal markers. Co-localization studies show VPS13A does not overlap with Rab5, Rab7, LAMP1, or FYCO1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of co-localization with endosomal/lysosomal markers is clearly shown in Figure 2\u2014figure supplements 1-2. This negative result is important for defining the specific subcellular localizations of VPS13A and distinguishing it from endosomal/lysosomal compartments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "A VPS13A knockout cell line was generated using CRISPR/Cas9. The MRC5 VPS13A KO cell line (Clone #4) shows no detectable VPS13A protein while VPS13C levels appear normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The knockout is validated by Western blot showing absence of VPS13A protein while the related protein VPS13C is present at normal levels (Figure 5\u2014figure supplements 1-2). This is an important methodological result enabling the loss-of-function studies. The specificity of the knockout is confirmed by normal VPS13C levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C81",
+      "C103"
+    ],
+    "result": "VPS13A is required for establishing membrane contact sites between organelles to enable lipid transfer. The authors propose a model where VPS13A tethers ER to mitochondria and LDs to enable lipid transfer, based on their localization, interaction, and knockout phenotype data combined with published literature on yeast Vps13 lipid transfer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a model/conclusion that integrates the experimental findings with published work (particularly Kumar et al. 2018 showing lipid transfer activity of yeast Vps13). While the localization and contact site data support a tethering role, direct demonstration of lipid transfer by human VPS13A is not provided in this manuscript. The model is plausible and consistent with the data, but requires additional experiments (e.g., lipid transfer assays, lipidomics) for full validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C27",
+      "C28"
+    ],
+    "result": "Background information on VPS13A and Chorea Acanthocytosis. VPS13A is associated with the neurodegenerative disorder ChAc (C1, C18), is part of a four-member protein family (C16), is located at chromosome 9q21 and encodes a 3174 amino acid protein (C27, C28), and is ubiquitously expressed (C21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, properly cited. They provide important context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C73"
+    ],
+    "result": "Background information on yeast Vps13. In yeast, Vps13 is a peripheral membrane protein at various contact sites (C22), shows synthetic lethality with ERMES mutants (C23), is involved in protein transport (C24, C25), and is required for multiple cellular processes (C26). The peripheral membrane characteristics are conserved across VPS13 family members (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established findings from the yeast literature, properly cited. They provide important evolutionary context and justify the study's focus on contact sites and peripheral membrane association.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background information on VPS13A loss-of-function phenotypes. Loss of VPS13A in various model systems is associated with diverse phenotypes including impaired autophagy (C29), defective protein homeostasis (C30), delayed endocytic/phagocytic processing (C31), actin polymerization defects (C32), abnormal calcium homeostasis (C33), and association with multiple organelles (C34).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established findings from the literature, properly cited. They demonstrate the pleiotropic effects of VPS13A loss and justify investigating its subcellular localization and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C83",
+      "C86",
+      "C87",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Discussion points relating findings to published literature. The authors discuss how their findings relate to published work on VAP proteins (C74), Kumar et al. 2018 (C76, C77, C78, C80, C94), Bean et al. 2018 on adaptor proteins (C83), organelle motility regulation (C86, C87), and lipid droplets in neurodegeneration (C95, C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion points appropriately contextualize the findings within the existing literature. The comparisons to Kumar et al. 2018 are particularly important as that work was published around the same time and reached similar conclusions about VPS13A localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C84",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Speculative mechanistic explanations in the discussion. The authors propose several speculative mechanisms including: abnormal lipid composition explaining mitochondrial phenotypes (C79), existence of organelle-specific adaptor proteins (C84, C108, C109), mechanisms for increased LD numbers (C89, C90), potential explanations for neurodegeneration in ChAc (C91, C92), origin of LD-associated VPS13A (C107), and VPS13A function at LDs (C110).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative explanations in the discussion section. While plausible and consistent with the data, they are not directly tested in this manuscript. They represent reasonable hypotheses for future investigation but should not be considered established findings. The authors appropriately present these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  }
+]

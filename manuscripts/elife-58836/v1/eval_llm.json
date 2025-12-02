@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C102",
+      "C103"
+    ],
+    "result": "TIER-seq analysis using a temperature-sensitive RNase E mutant (rne-3071) identified approximately 25,000 RNase E-dependent cleavage sites in V. cholerae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9-C12, C102-C103 collectively demonstrate successful generation of a temperature-sensitive RNase E variant and its use in TIER-seq to identify ~25,000 cleavage sites. The validation with known substrates (9S rRNA, MicX) and high-quality sequencing data (~187 million reads) provide strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "RNase E cleavage sites in V. cholerae occur at a frequency of 2.8-6.3 sites/kb, predominantly in coding sequences (69.1%), with a conserved consensus motif 'RN\u2193WUU' similar to other bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 and C99-C101 provide comprehensive characterization of RNase E cleavage patterns supported by TIER-seq data analysis. The consensus motif determination and comparison with other species (S. enterica, R. sphaeroides) are well-supported by the data shown in Figures 1B-D and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C105"
+    ],
+    "result": "17 candidate 3' UTR-derived sRNAs show potential RNase E-dependent maturation, with 9 confirmed by Northern blot analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 demonstrate a systematic approach combining bioinformatic prediction with experimental validation. The Northern blot confirmation of 9 out of 17 candidates provides strong support, though the remaining 8 candidates lack experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "OppZ is a 52-bp Hfq-dependent sRNA processed by RNase E from the 3' UTR of the oppABCDF operon and co-expressed with all five opp genes from a single promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C29 provide comprehensive characterization of OppZ biogenesis supported by multiple experimental approaches including Northern blots, Western blots, promoter replacement experiments, co-IP, and stability assays. The data consistently demonstrate RNase E-dependent processing and Hfq-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "OppZ base-pairs with the oppB translation initiation site to repress oppBCDF genes without affecting oppA, requiring RNase E-dependent maturation and Hfq for activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 demonstrate OppZ-mediated regulation through RNA-seq, qRT-PCR, RNA-hybrid predictions, compensatory base-pair exchange experiments, and GFP reporter assays. The requirement for RNase E processing (M2 mutation) and Hfq-dependence are well-established through multiple independent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "OppZ exerts autoregulation of its own transcript through a mechanism dependent on oppB translation but independent of cellular OppB protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 demonstrate OppZ autoregulation using a 'regulator OppZ' construct with a mutated stem-loop and oppB start codon mutations. The data show that OppZ production requires oppB translation initiation but not OppB protein accumulation, supported by Western blots, Northern blots, and complementation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C109"
+    ],
+    "result": "OppZ-mediated autoregulation involves both translation inhibition and Rho-dependent transcription termination, with termination likely occurring at or near codon 115 of oppB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51-C56, C109 demonstrate Rho-dependent termination using bicyclomycin (BCM) treatment, Term-Seq analysis, and STOP codon mutagenesis. The BCM rescue experiments and genetic mapping provide strong evidence for Rho involvement, though the exact termination site remains approximate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Systematic STOP codon mutagenesis reveals that Rho-dependent termination in oppB occurs in the distal part of the oppB sequence, with mutations at codons 2-65 reducing OppZ levels while mutations at codons 115-215 restore expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide detailed genetic mapping of the Rho-dependent termination site through systematic STOP codon placement. The Northern blot data clearly show the transition point between reduced and restored OppZ expression, supporting the conclusion about termination location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CarZ is an autoregulatory sRNA from the carAB operon that inhibits CarA and CarB protein expression as well as its own synthesis, with expression dependent on active translation of both carA and carB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C75 demonstrate that CarZ functions analogously to OppZ as an autoregulatory sRNA. The data include RNA-hybrid predictions, compensatory mutations, GFP reporters, Hfq co-IP, promoter replacement, and STOP codon mutagenesis. The coupled translation of carA and carB adds complexity but is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "CarZ-mediated repression (~10-fold) is stronger than OppZ-mediated repression (~1.8-fold), potentially due to CarZ employing both accelerated mRNA decay and Rho-dependent termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 compare the regulatory mechanisms and strengths of CarZ and OppZ. The transcript stability experiments and fluorescence measurements support the conclusion that CarZ uses dual mechanisms (mRNA decay + Rho termination) while OppZ primarily uses Rho termination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Autoregulation by 3' UTR-derived sRNAs may be widespread and could be engineered into synthetic systems or exist in higher organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76, C96-C98 are speculative proposals based on the OppZ and CarZ examples and the existence of 3' UTR-derived RNAs in humans. While the portability experiments (C95) support potential synthetic applications, the broader prevalence and existence in higher organisms remain undemonstrated hypotheses requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "OppZ autoregulation modifies the dynamics of oppB expression, delaying the response time from ~52 min (wild-type) to ~78 min (\u0394oppZ) while allowing suboperonic regulation that affects oppB but not oppA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 demonstrate the kinetic effects of OppZ autoregulation using inducible promoter experiments and time-course Western blots. The quantification of response times and the selective effect on OppB versus OppA provide strong support for the conclusion about post-transcriptional dynamics and discoordinate operon expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Rho plays a global role in V. cholerae comparable to E. coli, with 699 genes affected by bicyclomycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 demonstrate Rho's global role through BCM treatment and RNA-seq. The comparison with E. coli (25-30% of genes) is reasonable given the 699 affected genes, though the inference of 'equally global' role could be more rigorously quantified relative to total gene numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C45",
+      "C51",
+      "C62",
+      "C75"
+    ],
+    "result": "3' UTR-derived sRNAs (OppZ and CarZ) serve as autoregulatory elements enabling negative feedback control at the post-transcriptional level through translation inhibition and transcription termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38, C45, C51, C62, C75 represent the main conclusions synthesized from all experimental data. The comprehensive characterization of OppZ and CarZ through multiple experimental approaches (TIER-seq, Northern/Western blots, reporter assays, mutagenesis, BCM treatment) provides strong support for this novel mechanism of post-transcriptional autoregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C104"
+    ],
+    "result": "Background knowledge claims about negative feedback regulation, RNase E, and the biological functions of oppABCDF and carAB operons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C8, C86-C94, C104 represent established knowledge from the literature, properly cited and used to provide context for the study. These are not novel findings but appropriate background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "OppZ and CarZ can be efficiently processed from foreign genes such as gfp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by experiments shown in Figure 3\u2014figure supplement 3 and Figure 7C demonstrating that both sRNAs can be clipped from gfp transcripts. This supports the potential for synthetic biology applications, though broader testing would strengthen the claim of general portability.",
+    "result_type": "MINOR"
+  }
+]

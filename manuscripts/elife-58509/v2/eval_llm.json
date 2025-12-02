@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Direction selectivity increases significantly from naive to experienced animals at both subthreshold (Vm) and suprathreshold (spike) levels. The increase is driven primarily by enhanced responses to the preferred direction rather than suppression of null direction responses. While Vm responses to the preferred direction increased modestly (32%), spiking responses increased dramatically (274%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C28 provide comprehensive statistical evidence (p<0.001 for multiple comparisons, n=23 naive, n=29 experienced) showing developmental increases in direction selectivity. The data clearly demonstrate that both F0 and F1 components become more direction-selective, and the discrepancy between modest Vm changes (32%) and dramatic spike changes (274%) is well-documented with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C58",
+      "C59"
+    ],
+    "result": "Spatiotemporal receptive fields undergo significant reorganization during development. Experienced cells show more elongated and narrower receptive field subunits with increased eccentricity, smaller orientation angles, and extended temporal range achieved by incorporating shorter latency responses. Six of nine shape parameters differed significantly between groups, and these structural changes correlate with increased direction selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 provide detailed quantitative analysis of receptive field structure with appropriate statistical tests (p<0.001 to p<0.05 for six parameters). The correlation analyses (C39, C40) linking structural parameters to direction selectivity strengthen the interpretation. The finding that minimum latencies decreased while maximum latencies remained constant (C36) is particularly well-supported with specific p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "Cell-intrinsic excitability increases with visual experience, characterized by lower spike threshold, increased maximum dV/dt, narrower action potentials, and enhanced voltage-to-firing rate gain. These changes were observed both in vivo and confirmed in synaptically isolated slice preparations, indicating they are intrinsic cellular properties rather than network effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C54 provide robust evidence from both in vivo (C47-C49) and ex vivo (C50-C51) measurements with strong statistical significance (p<2.0e-04 to p<4.3e-04). The convergence of in vivo and slice data (C50) strengthens the conclusion that these are intrinsic changes. The voltage-to-firing rate analysis (C54) is supported by appropriate methods and Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C15",
+      "C44",
+      "C55",
+      "C56",
+      "C57",
+      "C70",
+      "C71"
+    ],
+    "result": "Both synaptic input reorganization and increased intrinsic excitability are necessary to explain the full developmental enhancement of direction selectivity and firing rates. Modeling simulations demonstrate that changes in voltage selectivity alone can increase direction selectivity but cannot account for the dramatic increases in firing rates without also incorporating the enhanced voltage-to-firing rate gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe bootstrap simulations (10,000 iterations) that systematically test the contributions of voltage changes versus gain changes. The phenomenological model successfully reproduces actual firing rates (C55), and the simulations clearly demonstrate that both mechanisms are required (C56-C57). This represents a rigorous computational dissection of the two mechanisms supported by Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The fraction of cells firing action potentials in response to visual stimuli increased significantly with experience. All experienced cells (29/29) fired spikes, while 9/23 naive cells did not fire at all.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide clear statistical evidence (p<0.05, Fisher Exact test) for both simple and complex cells. The complete absence of spiking in 9/23 naive cells versus 0/29 experienced cells is a striking and well-documented finding that supports the overall developmental narrative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Firing rate versus input current curves (F-I curves) measured in slice preparations were not significantly different between naive and experienced groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 reports a non-significant result (p<0.068, Kruskal-Wallis test) that is appropriately interpreted in the Discussion. The authors provide a reasonable explanation for why F-I curves might not differ despite increased excitability in vivo, relating to the opposing effects of decreased input resistance and lowered spike threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study used two age groups of female ferrets (naive: P30-34, n=10 animals, 23 cells; experienced: P40-60, n=11 animals, 29 cells). Cells were classified as simple or complex based on spike modulation ratio, yielding 10 simple and 13 complex cells in the naive group, and 16 simple and 13 complex cells in the experienced group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C75-C78 describe the experimental design and dataset composition. The classification criteria are clearly stated and supported by citations (C76). The justification for using only females (C75) is provided. These methodological details are straightforward and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Direction selectivity in ferret visual cortex develops rapidly after eye opening. At eye opening, neurons exhibit orientation selectivity but respond equally to opposite motion directions. The mechanisms underlying this development, particularly the role of cell-intrinsic properties, remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7-C12 establish the background knowledge and motivation for the study. These are appropriately cited to prior literature (Hatta et al., 1998; Li et al., 2006; Clemens et al., 2012; Smith et al., 2015; DeAngelis et al., 1993b; Jagadeesh et al., 1993; McLean et al., 1994; Livingstone, 1998). The identification of knowledge gaps (C11-C12) appropriately motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The findings are consistent with prior literature showing developmental changes in visual system properties, including reduced response latencies in LGN, decreased input resistance, increased synapse formation, and decreased spike threshold during early visual development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C60-C66, C72-C74 appropriately cite and contextualize the current findings within established developmental neuroscience literature. The comparisons to prior work (Tavazoie and Reid, 2000; Kasper et al., 1994; Desai et al., 2002; Chen and Regehr, 2000; Huttenlocher, 1990; etc.) are appropriate and strengthen the interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Feed-forward synaptic contributions to visual cortex are likely increasing during development, and increases in sodium channel density at the axon initial segment may underlie the observed changes in spike properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 are explicitly stated as hypotheses and speculation by the authors. C67 acknowledges the lack of direct measurements, and C68 proposes a mechanism based on analogy to prior work but without direct evidence. These are reasonable hypotheses but remain unconfirmed by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The spike threshold non-linearity contributes substantially to cortical direction selectivity in mature animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is appropriately cited to established literature (Reid et al., 1987; Jagadeesh et al., 1993; Priebe et al., 2004; Priebe and Ferster, 2005) and provides important context for interpreting the developmental changes in spike threshold observed in the current study.",
+    "result_type": "MINOR"
+  }
+]

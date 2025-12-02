@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C39",
+      "C113"
+    ],
+    "result": "A 3D agent-based model was developed incorporating nutrient diffusion, cell-cell and cell-agar mechanical interactions, and a novel cell-level surface tension model. The model captures key dynamical features of E. coli colony growth on hard agar with a single parameter set, including conic shape and linear radial and vertical expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C17-C19, C39, and C113 collectively demonstrate successful model development. The model reproduces experimental observations (Figures 1, 3) including colony shape, linear growth dynamics, and buckling transitions. The achievement of capturing diverse behaviors with fixed parameters (C113) is validated by quantitative comparisons between simulation and experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C28",
+      "C32"
+    ],
+    "result": "Experimental characterization of E. coli colony growth shows initial monolayer growth for ~13 hours, followed by buckling and 3D colony development with linear radial expansion (VR\u224845.2 \u03bcm/h) and vertical growth (VH\u224812.4 \u03bcm/h) during the establishment phase (14-24h), after which vertical growth slows while radial expansion continues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C24, C28, and C32 describe experimental observations supported by confocal microscopy data (Figure 1) and repeated measurements (Figure 1\u2014figure supplement 1). The temporal dynamics are well-documented with quantitative measurements of radii, heights, and growth rates. Statistical validation through multiple replicates strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C57",
+      "C136",
+      "C137"
+    ],
+    "result": "Vertical colony growth is driven by a disc-shaped growth zone (~10 \u03bcm thick) at the colony bottom where cells divide and push vertically-oriented cells upward. The growth zone thickness is determined by nutrient penetration depth, which exhibits quadratic decay near the agar surface and exponential decay at larger heights, with the vertical expansion speed limited by nutrient diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47, C50-C52, C54, C57, C136-C137 are supported by simulation data (Figures 4, 5) showing cell orientations, velocity fields, age distributions, and nutrient profiles. The prediction of horizontal cell orientation at the top surface is validated experimentally (Figure 4\u2014figure supplement 1B). The analytical treatment of nutrient diffusion (Appendix A2.3, Figure 5\u2014figure supplement 1) provides theoretical support for the growth zone thickness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C88",
+      "C104",
+      "C110",
+      "C111",
+      "C112",
+      "C116",
+      "C152"
+    ],
+    "result": "Radial colony expansion is not limited by nutrients but by mechanical forces. Growth occurs in a narrow annulus (~20 \u03bcm) at the periphery where horizontally-oriented cells expand radially. The annulus width is determined by mechanical buckling when pressure from cell-agar friction and cell growth overcomes surface tension, with buckling occurring at a critical pressure level set by surface tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C66, C68-C71, C73-C76, C78, C88, C104, C110-C112, C116, and C152 are supported by simulation data (Figures 6, 7, 8) showing director fields, velocity fields, pressure distributions, and nutrient profiles. Experimental validation (Figure 9C-D) confirms that varying glucose concentration affects vertical but not radial growth, while varying agar density (affecting friction) affects radial but not vertical growth, directly supporting the mechanistic claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C102",
+      "C106",
+      "C126",
+      "C127",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The model correctly predicts that radial expansion speed is proportional to cell growth rate (linear dependence) when using dynamic friction, while static friction alone produces sublinear dependence incompatible with experimental data. Experimental tests varying glucose concentration and agar density validate the model's prediction that nutrients limit vertical but not radial growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C106, C126-C127, C130-C132 are supported by both simulation (Figure 8F) and experimental data (Figure 9). The comparison between dynamic and static friction models (Figure 8F) demonstrates that only dynamic friction reproduces the observed linear growth-rate dependence. The experimental manipulations (Figure 9C-D) provide direct validation of the model's mechanistic predictions about nutrient vs. mechanical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C115",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C191",
+      "C198"
+    ],
+    "result": "A novel cell-level surface tension model was introduced that acts only on cells at the colony surface, enabling capture of dynamics from initial single-layer growth through buckling to macroscopic colony formation. This surface tension presses cells into the agar, generating friction that causes buckling and vertical growth, and is the source of all mechanical interactions in the colony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C121-C124, C191, and C198 describe the novel surface tension implementation. The model successfully captures layer-by-layer growth and thin peripheral layers (Figures 1, 3, 14) that coarse-grained approaches cannot describe (C190). The mechanistic role of surface tension in buckling is demonstrated through pressure analysis (Figure 8D) and the model's ability to reproduce the buckling transition quantitatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C125",
+      "C135"
+    ],
+    "result": "The findings of linear vertical growth disagree with earlier work by Pirt but align with later studies by Wimpenny. The mechanical basis for linear radial growth, while recently proposed, is here demonstrated quantitatively for the first time with a physically realistic model, contrasting with prior toy models using unrealistic forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C117-C120, C125, and C135 place the work in historical context with appropriate citations. The disagreement with Pirt (C30) is noted with explanation (C31). The critique of prior models (C120, C125) is justified by demonstrating superior performance of the current approach. The claim of first quantitative dissection of vertical growth (C135) is supported by the detailed analysis in Figures 4-5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C65",
+      "C108"
+    ],
+    "result": "The simulated expansion speeds (VR\u224818 \u03bcm/h, VH\u22486 \u03bcm/h) are approximately 2-fold lower than experimental values due to parameter choices (lower nutrient concentration and higher friction) made to limit computational time, but the experimental range can be obtained by adjusting parameter combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C65, and C108 acknowledge and explain the quantitative discrepancy between simulation and experiment. The explanation is supported by parameter sensitivity analysis (Figure 9A-B) showing that adjusting nutrient concentration and friction can recover experimental values. This transparent acknowledgment of computational constraints and demonstration that the model can reach experimental values strengthens rather than weakens the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Cell verticalization is predicted to occur in plain bacterial colonies without EPS at large colony sizes (~250 \u03bcm radius) due to mechanical instability from interplay among surface tension, cell-agar friction, and growth forces. This has not been directly observed experimentally in the current study due to optical limitations but is consistent with observations in Vibrio species that produce EPS and verticalize at smaller sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C143 make predictions about verticalization supported by simulation data (Figure 4\u2014figure supplement 2) and comparison to prior work. However, C141 explicitly states the prediction has not been validated experimentally in this system due to technical limitations. While the mechanism is plausible and consistent with observations in other species (C138), the lack of direct experimental validation in the studied system prevents full support of this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C150",
+      "C151"
+    ],
+    "result": "The model predicts that changing agar hardness or humidity will affect colony aspect ratio through effects on surface tension and buckling width, and that oxygen limitation in later growth stages will slow vertical but not radial growth through pH effects. Late-stage flattening observed experimentally is qualitatively consistent with these predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C148, C150-C151 make predictions about environmental effects and late-stage growth. While C148 notes qualitative agreement between late-stage observations and pH predictions, these remain largely untested hypotheses (C146-C147 are speculative). The predictions are logical extensions of the model but require experimental validation. The speculation about applicability to range expansion studies (C150-C151) is reasonable but unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Insights from simple colony growth inform understanding of biofilms: radial growth is mechanically rather than nutrient-limited (less problematic in lower-density biofilms), vertical growth is nutrient-limited (alleviated by lower density and channel formation in biofilms), and verticalization occurs through similar mechanical instabilities but at different scales. These factors enable biofilms to expand faster both horizontally and vertically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C160 extrapolate findings to biofilms. While C152 and C155 are supported by the current work, the inferences about biofilms (C153-C154, C156-C157, C159-C160) are logical but speculative. The comparison of verticalization (C158) cites relevant literature but the mechanistic similarity (C159) remains to be demonstrated. These represent reasonable hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The model can be used to interpret high-throughput colony growth data and serves as a platform for future extensions including complex metabolism, extracellular matrix, multiple species, and coarse-grained hydrodynamic models incorporating surface tension and dynamic friction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C163 describe potential applications and future directions. These are reasonable proposals given the model's demonstrated capabilities, but they represent aspirational goals rather than demonstrated results. The claims are appropriately framed as possibilities (C161: 'can be used', C162: 'can be used as a launching pad', C163: 'will be an interesting challenge') but lack supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C180",
+      "C181",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "The experimental system uses E. coli K12 strain EQ59 (derived from NCM3722) which is non-motile and biofilm-suppressed. The computational model uses dynamic friction from granular solid models, velocity Verlet integration, multi-resolution adaptive grids, and OpenMP parallelization, achieving simulation of millions of cells in 24 hours with code available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165, C180-C181, C208-C211 describe methodological details that are well-documented with appropriate citations. The strain characteristics (C164-C165) are verified by citations. The computational methods (C180-C181, C208-C209) cite established approaches. The performance claim (C210) is specific and testable. Code availability (C211) enhances reproducibility. These are straightforward methodological descriptions.",
+    "result_type": "MINOR"
+  }
+]

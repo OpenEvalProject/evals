@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Reb1 binds to DNA and nucleosomes with similar affinities. EMSA measurements show that Reb1 binds to naked DNA with S1/2 = 2.3 \u00b1 0.2 nM and to nucleosomes at positions P3, P8, P13, and P18 with S1/2 values ranging from 1.5 to 11.2 nM, which are comparable to DNA binding. This behavior mimics that of pioneer factors in higher eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C27-C34 provide direct EMSA measurements showing similar binding affinities for Reb1 to DNA and nucleosomes across multiple positions (P3, P8, P13, P18). The S1/2 values are within the same order of magnitude (1.5-11.2 nM for nucleosomes vs 2.3 nM for DNA), supporting the conclusion that Reb1 binds nucleosomes with similar affinity to naked DNA. The comparison to pioneer factors (C34) is appropriately supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Reb1 traps nucleosomes in a partially unwrapped state without histone eviction. FRET experiments show that Reb1 binding to P3 and P8 nucleosomes progressively lowers FRET efficiency to ~20% with S1/2 values (7.9 \u00b1 1.3 nM and 2.4 \u00b1 0.3 nM) that agree with EMSA measurements. EMSA data confirm that the Reb1-nucleosome complex contains both DNA and histones, demonstrating no histone eviction occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C36-C46 provide converging evidence from FRET and EMSA experiments. The FRET data (C36-C38) show structural changes upon Reb1 binding with S1/2 values matching EMSA measurements (C39), indicating the FRET change reflects binding. The observation that both Cy3-DNA and Cy5-histones remain in the complex (referenced in C4 evidence) demonstrates no histone eviction. Control experiments (C45) confirm site-specificity. The conclusion that Reb1 uses the site exposure mechanism (C46) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Reb1 binding and dissociation rates are significantly slower at nucleosomal sites compared to naked DNA, with the reduction in dissociation rate compensating for reduced binding rate. Single-molecule measurements show kon is reduced 53-fold (from 0.032 s\u207b\u00b9nM\u207b\u00b9 on DNA to 0.0006 s\u207b\u00b9nM\u207b\u00b9 on nucleosomes) while koff is reduced 130-fold (from 0.58 s\u207b\u00b9 on DNA to 0.0044 s\u207b\u00b9 on nucleosomes), resulting in similar overall affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C54, C58-C65 provide direct single-molecule kinetic measurements showing both reduced binding and dissociation rates for nucleosomes versus DNA. The quantitative data are internally consistent: the ~50-130 fold reductions in both kon and koff explain the similar overall affinities observed in ensemble measurements. The interpretation that reduced koff compensates for reduced kon (C65) is mathematically sound given that KD = koff/kon. The comparison to the site exposure mechanism (C59) is appropriately supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C101",
+      "C102"
+    ],
+    "result": "Reb1 and Cbf1 achieve high affinity to nucleosomes through a dissociation rate compensation mechanism. By increasing dwell time on nucleosomes (reducing koff) to compensate for reduced binding rates (reduced kon), these factors maintain similar overall binding affinities to nucleosomes and DNA, allowing them to function as pioneer factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C101-C102 represent the main mechanistic conclusion of the paper. This interpretation is well-supported by the kinetic data for both Reb1 (C5, C54, C58-C65) and Cbf1 (C74-C82), which show that both factors exhibit reduced kon and koff rates on nucleosomes with the reductions being of similar magnitude. The mathematical relationship KD = koff/kon supports the conclusion that compensatory changes in these rates maintain similar affinities. This mechanism is presented as the key finding distinguishing these factors from traditional TFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cbf1 exhibits similar kinetic behavior to Reb1, with slower binding and dissociation rates on nucleosomes compared to DNA. Cbf1 binds DNA with S1/2 = 1.3 \u00b1 0.3 nM and nucleosomes with S1/2 = 12 \u00b1 2 nM (~10-fold difference). Single-molecule measurements show kon is reduced 120-fold and koff is reduced 25-fold on nucleosomes, with the decreased dissociation rate partially compensating for decreased binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 provide parallel evidence for Cbf1 using the same experimental approaches as for Reb1. The ensemble measurements (C73, C76-C77) show ~10-fold lower affinity for nucleosomes versus DNA, and single-molecule kinetics (C74-C75, C78-C81) demonstrate reduced kon (120-fold) and koff (25-fold) rates. The partial compensation (C82) is consistent with the observed 10-fold difference in affinity. The data quality and internal consistency support the conclusions, though the compensation is less complete than for Reb1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C119",
+      "C120"
+    ],
+    "result": "The acidic N-terminal tail of Reb1 is not required for its pioneer activity. Reb1-\u0394N (lacking residues 1-395) binds DNA and P8 nucleosomes with only 1.5-fold difference in affinity, similar to full-length Reb1 (2.1-fold). Single-molecule measurements show Reb1-\u0394N has the same primary dissociation rate from nucleosomes as full-length Reb1, indicating the C-terminal DNA-binding domain is responsible for pioneer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 and C119-C120 provide direct experimental evidence using a deletion mutant. The ensemble measurements (C86-C87) show Reb1-\u0394N retains similar relative binding to DNA and nucleosomes as full-length Reb1. The single-molecule data (C89-C90) show that koff is unchanged while kon is only 2-fold slower, demonstrating the N-terminal domain is not responsible for the slow dissociation. The conclusion that the C-terminal domain mediates pioneer activity (C92, C120) is a reasonable inference from these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Reb1 shows slow exchange kinetics in vivo with a FRAP half-life of 25.8 \u00b1 2.5 s, similar to mammalian pioneer factors. This is intermediate between the very slow exchange of histone H3 (>60 s) and faster exchange of other chromatin-interacting proteins (Sth1: 7.8 s, Nhp6A: <1 s), supporting that Reb1 functions as a pioneer factor in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C94-C100 provide FRAP measurements for Reb1 and appropriate controls. The measured half-life of 25.8 \u00b1 2.5 s (C94) is directly supported by the data in Figure 7. The comparisons to H3, Sth1, and Nhp6A (C96-C98) provide important context showing Reb1's intermediate exchange rate. The comparison to mammalian pioneer factors (C95, C100) is appropriately supported by citations. The FRAP data complement the in vitro kinetic measurements and support the pioneer factor model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C102",
+      "C103"
+    ],
+    "result": "The dissociation rate compensation mechanism appears conserved from yeast to humans, though the structural impacts on nucleosomes are more diverse. The properties of Reb1 and Cbf1 are similar to human pioneer factors in terms of binding kinetics, but differ in their effects on nucleosome structure (e.g., FoxA repositions nucleosomes, Oct4/Sox2 do not disrupt nucleosomes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9 and C102-C103 make broad comparative statements about conservation across species. While the kinetic similarity between yeast factors and human pioneer factors is supported by the experimental data and appropriate citations (C8), the claim of conservation (C9, C102) is speculative as it relies on comparison to published data rather than direct experimental evidence in this study. The statement about diverse structural impacts (C103) is supported by citations but represents a synthesis of literature rather than new findings. These claims require additional cross-species experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The site exposure model alone cannot explain Reb1's similar affinity for nucleosomes and DNA. The model predicts ~100-fold reduction in binding rate due to reduced site exposure probability, but does not account for the compensatory reduction in dissociation rate that maintains overall affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide important context for interpreting the kinetic data. The prediction of ~100-fold reduction in binding rate (C47) is supported by citation to Li et al., 2005 and is consistent with the observed ~50-fold reduction. The logical inference that the site exposure model alone is insufficient (C48) is valid because the model only addresses binding rates, not dissociation rates. This reasoning motivates the dissociation rate compensation mechanism as the key finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "Single-molecule PIFE measurements establish Reb1-DNA binding kinetics. Reb1 binding to DNA induces 1.5-fold increase in Cy3 fluorescence with S1/2 = 5.1 \u00b1 0.2 nM. The primary dissociation rate is koff = 0.58 \u00b1 0.08 s\u207b\u00b9 and binding rate is kon = 0.032 \u00b1 0.003 s\u207b\u00b9nM\u207b\u00b9, indicating Reb1 remains bound for ~1.7 s with occasional transitions to longer-lived states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 describe the single-molecule PIFE methodology and results for Reb1-DNA interactions. The ensemble PIFE measurements (C49-C50) agree with EMSA data (C52), validating the approach. The single-molecule kinetic measurements (C53-C54) are directly supported by the data in Figure 3F. The interpretation of double-exponential kinetics (C55) is reasonable given the data, though the biological significance of the secondary rate is uncertain. These measurements provide the baseline for comparison to nucleosome binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C62"
+    ],
+    "result": "Single-molecule FRET measurements of Reb1-nucleosome binding use nucleosomes with 75-bp linker DNA. The ensemble FRET S1/2 = 2.2 \u00b1 0.2 nM is similar to 147-bp nucleosomes, demonstrating the linker does not affect binding. The majority (>60%) of Reb1 bound events belong to the slower dissociation population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C62 describe technical validation and characterization of the single-molecule FRET system. The comparison of linker-containing and linker-free nucleosomes (C56-C57) is important for validating that the single-molecule construct behaves like the ensemble system. The observation that >60% of events belong to the slower dissociation population (C62) is directly supported by Figure 4\u2014figure supplement 1D and justifies using the primary rate as the dominant dissociation mode. These are important methodological validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The six budding yeast TFs that efficiently create NDRs, including Reb1 and Cbf1, are all highly acidic compared to proteins without this activity. Both Reb1 and Cbf1 contain long acidic N-terminal tails that could potentially interact with exposed histone surfaces in partially unwrapped nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 provide context about the structural features of nucleosome-displacing factors. The observation about high acidity (C84) is supported by Figure 6\u2014figure supplement 1A and citation to Yan et al., 2018. The statement about acidic N-terminal tails (C85) is established knowledge about these proteins. However, the functional significance of these features is undermined by the Reb1-\u0394N experiments (C86-C92) showing the N-terminal tail is not required for pioneer activity. These claims provide useful context but do not represent major findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "Reb1 has 22-fold specificity for its nucleosomal binding site, which is lower than traditional TFs (LacI, Gal4) but comparable to the pioneer factor FoxA (2-fold specificity). The long residence time on specific nucleosomal sites may be required for recruiting co-activators, and cooperative binding with other factors may enhance specificity in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 and C114 discuss Reb1 specificity and its functional implications. The 22-fold specificity calculation (C107) is directly supported by the data in Figure 1B. The comparisons to other TFs (C108-C110) are appropriately supported by citations. The speculation about residence time and co-activator recruitment (C111-C114) is reasonable given the kinetic data but lacks direct experimental support. These claims provide important context for interpreting the biological significance of the findings but are not central results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Reb1 binds P3 with 3.3-fold lower affinity than P8, despite P3 being 5 bp closer to the nucleosome edge. This may be due to less histone surface exposure at P3 or the 180-degree rotation of the binding site relative to the histone octamer, which could orient Reb1 away from the exposed histone surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C126 address the unexpected observation that P3 binds more weakly than P8. The 3.3-fold difference (C122) is directly supported by the data. However, the explanations offered (C124, C126) are entirely speculative with no experimental validation. The 180-degree rotation (C125) is a reasonable geometric inference, but its functional consequences are not tested. These claims identify an interesting observation but the mechanistic explanations remain uncertain without additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C136"
+    ],
+    "result": "Reb1 binding to P18 (27 bp into the nucleosome) does not trap the nucleosome in an unwrapped state, indicating a distinct binding mode from P3/P8. However, P18 binding remains site-specific (2.9-fold over non-specific), similar to FoxA. The increased energy cost of unwrapping at this position may mean Reb1 binds partially within a fully wrapped nucleosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C132 and C136 describe Reb1 binding at P18. The observation that P18 binding does not induce FRET change (C127) is directly supported by Figure 2B, and the maintained site-specificity (C129) is supported by EMSA data. However, the interpretation of the binding mode (C128, C136) is speculative. The energy calculations (C133-C135) are based on cited literature but the conclusion that Reb1 binds within a fully wrapped nucleosome (C136) lacks direct experimental evidence. Additional structural studies would be needed to validate this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C142",
+      "C143"
+    ],
+    "result": "The observation that Reb1 and Cbf1 stably engage nucleosomes supports a direct binding mechanism rather than passive invasion during histone turnover. These factors do not evict histones in vitro, and their long dwell time may allow recruitment of other factors like histone chaperones or remodelers to establish NDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 discuss the mechanism of nucleosome invasion. The stable engagement of nucleosomes (C139) is well-supported by the EMSA and kinetic data throughout the paper. The observation that histones are not evicted (C140) is supported by the EMSA data showing both DNA and histones in the complex. The speculation about recruiting other factors (C143) is reasonable given the long dwell times but lacks direct experimental evidence. The distinction from passive invasion (C137-C138) is appropriately contextualized with citation. These claims provide important mechanistic context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background and context claims about nucleosome structure, TF-nucleosome interactions, pioneer factors, and Reb1's known properties in yeast. These include established knowledge about nucleosome structure, the site exposure mechanism, pioneer factor definition, and Reb1's role in NDR formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C26 provide essential background context for the study. These claims are appropriately supported by citations to established literature (Luger et al., 1997; Wolffe, 1992; Li and Widom, 2004; Polach and Widom, 1995; Luo et al., 2014b; Zaret and Carroll, 2011; Lee et al., 2007; Koerber et al., 2009; Yan et al., 2018). The claims accurately represent prior knowledge and set up the rationale for the current study. These are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C35",
+      "C66",
+      "C115"
+    ],
+    "result": "Comparison to other TFs (Gal4, LexA) that exhibit different kinetic behavior. Gal4 and LexA require >1000-fold higher concentrations to bind nucleosomes versus DNA and show ~1000-fold acceleration in dissociation rates from nucleosomes, contrasting with Reb1 and Cbf1's behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C66, and C115 provide important comparative context by referencing published data on Gal4 and LexA from Luo et al., 2014b and Chen and Bundschuh, 2014. These comparisons are essential for establishing that Reb1 and Cbf1 behave differently from traditional TFs. The citations are appropriate and the comparisons are accurately represented. However, these are not novel findings from this study but rather contextualization of the results using prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cbf1 structural characteristics and comparison to Reb1. Cbf1 is a member of the NDR-generating TFs in yeast, contains one myc-like DNA-binding domain, is 39 kDa, binds as a dimer, and has a negatively charged, unstructured N-terminus like Reb1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 provide background information about Cbf1 structure and properties. These claims are appropriately supported by citations to Yan et al., 2018; Wieland et al., 2001; and Rost et al., 2004. The information accurately represents established knowledge about Cbf1 and sets up the rationale for studying this factor as a comparison to Reb1. These are not novel findings but necessary background for interpreting the Cbf1 experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Comparison of structural impacts of different pioneer factors. FoxA traps mobile nucleosomes in distinct positions and competes with linker histones, while Oct4 and Sox2 do not appear to disrupt nucleosomes upon binding to the entry-exit region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 summarize published findings about human pioneer factors from Cirillo et al., 2002; Cirillo and Zaret, 1999; and Soufi et al., 2015. These comparisons are appropriately cited and provide important context for discussing the diversity of pioneer factor mechanisms. However, these are not novel findings from this study but rather synthesis of prior literature to support the discussion of mechanistic conservation versus structural diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C117",
+      "C118",
+      "C121"
+    ],
+    "result": "Speculative statements about functional implications and mechanisms. These include speculation about the role of long residence time in recruiting co-activators, the location of Reb1 sites in promoters, potential histone contacts stabilizing binding, and the function of the N-terminal domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 and C117-C118 and C121 are explicitly speculative statements about functional implications and mechanisms that are not directly tested in this study. While these speculations are reasonable given the data (e.g., long residence times could facilitate co-activator recruitment), they lack experimental validation. The comparison to FoxA-H3 contacts (C117-C118) is based on analogy rather than direct evidence. These claims represent reasonable hypotheses for future work but are not supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Acknowledgment of limitations and citation of energetic parameters. The authors acknowledge uncertainty about why Reb1 and Cbf1 dwell longer on nucleosomes, and cite literature values for DNA-histone contact energies and unwrapping probabilities at different positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116 and C133-C135 represent appropriate acknowledgment of limitations (C116) and citation of relevant biophysical parameters from Hall et al., 2009 and Forties et al., 2011 (C133-C135). The energy calculations (C135) are correctly derived from the cited 5 kBT value using Boltzmann statistics. These claims provide important context for interpreting the P18 binding data but do not represent novel findings.",
+    "result_type": "MINOR"
+  }
+]

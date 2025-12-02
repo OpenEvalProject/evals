@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "A genetic screen identified histone residues at the nucleosome DNA entry-exit site that are required for transcription termination. Nine H3 and one H4 amino acid substitutions caused readthrough of the SNR47 terminator, with H3 T45A and H3 R52A showing the strongest defects at SNR47 and SNR13 genes. H2A mutants (H113A, L117A, S121A) also showed termination defects, and these residues map near the H3 DNA entry-exit site residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C65-C68 are supported by growth assays (Figure 1B), northern blots (Figure 1D, 1F), and structural mapping (Figure 1E). The screen successfully identified mutants with termination defects, validated by multiple independent assays. The H3 R40A mutant was appropriately identified as a false positive (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C69"
+    ],
+    "result": "Genome-wide RNA-seq analysis revealed widespread transcription termination defects at snoRNA genes in H3 T45A and H3 R52A mutants. 41.1% of snoRNAs showed \u22651.5-fold readthrough in H3 T45A and 58.9% in H3 R52A. NUT levels increased 2.19-fold and 2.57-fold in H3 T45A and H3 R52A mutants, respectively. The two mutants showed strong correlation in their readthrough patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 and C69 are supported by spike-in normalized RNA-seq data (Figures 2A-B, Figure 2\u2014figure supplement 1D, Figure 2\u2014figure supplement 2). The quantitative measurements are clearly presented with appropriate controls and biological replicates showing high correlation (Figure 2\u2014figure supplement 1A-C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C36",
+      "C40",
+      "C41",
+      "C70",
+      "C71"
+    ],
+    "result": "DNA entry-exit site mutants exhibit altered transcription at protein-coding genes, with modest but statistically significant increases in sense-strand RNA 150 bp downstream of the CPS and increased antisense transcription. Nascent transcript analysis revealed enrichment of 5' transcription at divergent genes and 3' transcription at convergent genes, with divergent gene enrichment not attributable to readthrough from neighboring genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C36, C40-C41, C70-C71 are supported by RNA-seq (Figure 3B, Figure 3\u2014figure supplement 1A, 1C) and 4tU-seq data (Figure 4A-B). Statistical significance is demonstrated (Figure 3\u2014figure supplement 1A), and the orientation-specific patterns are clearly shown. The inference about divergent genes (C70) is logically sound based on gene orientation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Decreased Pol II occupancy in H3 R52A mutants may reflect increased elongation rate due to disrupted nucleosome structure. Differences between RNA-seq and 4tU-seq profiles suggest increased transcript stabilization at steady state, consistent with buffering of reduced RNA synthesis by increased RNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C39 are speculative interpretations of the data. While the observations (decreased Pol II occupancy, differences in RNA-seq vs 4tU-seq) are supported by data (Figure 3A, Figure 3\u2014figure supplement 1B), the mechanistic explanations are inferred and acknowledged as speculative by the authors ('might reflect', 'suggest'). Alternative explanations are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C49",
+      "C74",
+      "C75"
+    ],
+    "result": "H3 K36me3 levels are greatly reduced in H3 R49A and H3 R52A mutants, with modest decreases in other DNA entry-exit site mutants including H3 T45A. Both mutants showed >4-fold upregulation of SRATs, though the difference between H3 T45A and H3 R52A was not statistically significant. The severity of termination defects did not correlate with H3 K36me3 defect strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C49, C74-C75 are supported by western blot data (Figure 5A) and RNA-seq analysis (Figure 5B, Figure 5\u2014figure supplement 1). The lack of correlation between termination defects and H3 K36me3 levels (C75) is an important observation supported by comparing Figures 1D and 5A. Statistical analysis confirms the non-significant difference in SRATs between mutants (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C51",
+      "C52",
+      "C53",
+      "C76",
+      "C77"
+    ],
+    "result": "H3 R52A shows synthetic lethality with set2\u0394 and with H3 K36A, indicating that H3 R52A and H3 K36 function through at least partially separate pathways. The H3 K36A, R52A double mutant is inviable, and this inviability is not due to lack of protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C51-C53, C76-C77 are supported by plasmid shuffle assays (Figures 5C-D) and western blot confirmation of protein expression (Figure 5E). The synthetic lethality provides strong genetic evidence for separate pathways. The control experiment (C76) appropriately rules out a trivial explanation for the inviability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C54",
+      "C55",
+      "C56",
+      "C78"
+    ],
+    "result": "DNA entry-exit site mutants do not display global reductions in H3 K56ac, and H3 K56A was not identified as termination-defective in the screen, despite structural evidence that Rtt109 binds near these residues. This suggests transcription defects are not due to loss of H3 K56ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C54-C56, C78 are supported by western blot data (Figure 5\u2014figure supplement 2) and the screen results. The structural evidence for Rtt109 binding (C54) is appropriately cited. The inference that defects are not due to H3 K56ac loss (C78) is reasonable given the negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C44",
+      "C45",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The H3 R52A mutant shows reduced nucleosome occupancy genome-wide, particularly at the 3' ends of genes, and altered nucleosome positioning with peaks shifting downstream and widening. Reduced nucleosome occupancy correlates with reduced Pol II occupancy. Aneuploidy was detected in MNase-seq replicates, but computational removal of aneuploid chromosomes confirmed the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C44-C45, C80-C83 are supported by MNase-seq data (Figures 6A-E, Figure 6\u2014figure supplement 1). The authors appropriately identified and addressed the aneuploidy issue (C81-C83), demonstrating that results hold after removing affected chromosomes. The correlation between nucleosome and Pol II occupancy (C45, C80) is clearly shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C84"
+    ],
+    "result": "The H3 R52A substitution may disrupt nucleosomes that normally slow Pol II transit in the termination region, and reduced nucleosome occupancy over the CPS may contribute to transcriptional readthrough. However, nucleosome loss does not directly correlate with RNA levels at all genes, suggesting other factors like RNA degradation pathways contribute to 3'-extended transcript accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C48, C84 are speculative interpretations ('suggesting', 'may', 'does not appear to be directly correlated'). While the observations are data-supported, the mechanistic explanations are inferred. The acknowledgment that other factors contribute (C47-C48) indicates the authors recognize the complexity and uncertainty in the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "A nucleosome superbinder sequence inserted downstream of SNR48 increased nucleosome occupancy ~3-fold in wild-type and ~2.5-fold in H3 R52A cells. This suppressed the termination defect in H3 R52A to wild-type levels and suppressed basal readthrough in wild-type. The superbinder removed a Reb1 binding site but increased rather than decreased termination, suggesting multiple mechanisms facilitate termination at SNR48.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C89-C92 are supported by ChIP-qPCR (Figure 7C) and northern blot data (Figure 7D, Figure 7\u2014figure supplement 1). This is a direct test of the nucleosome roadblock hypothesis. The observation about Reb1 binding site removal (C90-C92) is appropriately cited and provides important context about multiple termination mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C60",
+      "C63",
+      "C64",
+      "C93"
+    ],
+    "result": "The DNA entry-exit site contributes to transcription fidelity through mechanisms distinct from and in addition to promoting H3 K36 methylation. One mechanism is through controlling nucleosome stability and imposing a barrier to Pol II progression. The superbinder results support that nucleosomes can facilitate termination by slowing Pol II and providing time for termination factors to engage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C60, C63-C64, C93 represent the major conclusions of the paper. They are supported by the synthetic lethality data (C50), the superbinder experiment (C60, C93), and the genome-wide analyses (C63-C64). While some mechanistic details are inferred, the overall conclusions are well-supported by multiple lines of evidence including genetic, biochemical, and genomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "DNA entry-exit site mutants exhibit Spt-, Bur-, and cryptic initiation phenotypes but not the Sin- phenotype, indicating they affect transcription differently from previously published Sin- mutants like H3 V117A. These phenotypes are consistent with altered chromatin structure and transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C85-C88 are supported by growth assay data (Figure 6\u2014figure supplement 2). The differential phenotype pattern (presence of Spt-, Bur-, cryptic initiation but absence of Sin-) provides important mechanistic insight. The inference about different mechanisms (C43) is reasonable based on the phenotypic differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C72",
+      "C73"
+    ],
+    "result": "The accumulation of intergenic and genic transcripts in H3 T45A and H3 R52A mutants is due to increased sense-strand transcription 5' and 3' to gene bodies and antisense transcription overlapping gene bodies. However, some genes show normal transcription patterns, and additional studies are needed to understand gene-specific differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C72-C73 are supported by RNA-seq and 4tU-seq data (Figures 3-4, Figure 4\u2014figure supplement 1B). The observation that some genes are unaffected (C72) is important for understanding the specificity of the effects. The statement about future work (C73) is appropriate given the incomplete understanding of gene-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The broad transcriptional effects of DNA entry-exit site substitutions likely accrue from combined loss of interactions with multiple regulatory factors and potential indirect effects. The accumulation of extended and antisense transcripts likely imposes a burden on RNA surveillance pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 are speculative ('it is reasonable to assume', 'likely') and represent discussion-level interpretations rather than directly tested hypotheses. While plausible given the known roles of the DNA entry-exit site, these claims lack direct experimental support in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C54",
+      "C57",
+      "C58",
+      "C79",
+      "C94",
+      "C95"
+    ],
+    "result": "Background claims about nucleosome structure, transcription termination pathways, chromatin regulation, and prior work on the DNA entry-exit site and histone modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C6, C24-C35, C39, C54, C57-C58, C79, C94-C95) represent established knowledge from the literature, appropriately cited. They provide necessary context for the study but are not novel findings. All citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  }
+]

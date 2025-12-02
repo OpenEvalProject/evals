@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C32",
+      "C33",
+      "C34",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors developed an APM score (APS) using GSVA methodology applied to 18 APM genes across ~10,000 TCGA tumors from 32 cancer types. Large variance in APS was observed across cancer types, indicating significant differences in antigen-processing and -presenting efficiency among different cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C32, C33, C34, C95, and C96 collectively describe the methodology and findings for APS calculation. The GSVA method is appropriately applied (C96), the gene selection is justified by citation (C32), and the pan-cancer variance is supported by Figure 1A (C33, C34). The dataset size and scope are clearly stated (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C97"
+    ],
+    "result": "The APS quantified in this study is highly correlated with a previous 7-gene APM signature but shows no significant correlation with PHBR scores, likely because APS measures gene expression while PHBR measures MHC genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by Figure 1\u2014figure supplement 1 showing correlation with prior work and lack of correlation with PHBR. The explanation (C37) for the lack of correlation is reasonable given the different biological information captured by each method. C97 provides appropriate context for PHBR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "APS shows variable association with cancer patient survival across individual cancer types, but meta-analysis across all TCGA cancer types suggests APS does not associate with prognosis in patients not treated with immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are both supported by Cox regression and meta-analysis shown in Figure 1B. The finding that APS does not predict prognosis in non-immunotherapy patients is important for establishing that APS is specifically relevant to immunotherapy response rather than general prognosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C81"
+    ],
+    "result": "High APS is strongly associated with interferon alpha/gamma signaling pathways, as demonstrated by GSEA showing enrichment of interferon response signatures in APS-High tumors. This is consistent with prior reports that interferon gamma regulates APM gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, C42, and C81 are well-supported by GSEA results in Figure 2A and Figure 2\u2014figure supplement 1, with appropriate citations to prior work (Beatty and Paterson, 2001; Ikeda et al., 2002). The biological interpretation linking interferon signaling to APM expression is consistent with established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C51",
+      "C98"
+    ],
+    "result": "APS shows significant positive correlation with immune infiltration score (IIS) at both the individual patient level and cancer type level, with independent gene lists used for each score. This correlation is validated by TIMER analysis and extends to specific immune cell types including cytotoxic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C51, and C98 are supported by data in Figures 2B, 2C, 2\u2014figure supplement 2, and 2\u2014figure supplement 4. The independence of gene lists (C45) strengthens the finding. Validation with TIMER (C98) provides additional confidence in the IIS calculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "TMB and IIS show relatively weak intercorrelation across cancer types and individual patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by correlation data shown in Figure 2D and E. This finding is important for establishing that TMB and immune infiltration represent relatively independent aspects of tumor biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The authors propose two speculative mechanisms for the correlation between APS and IIS: interferon signaling coordinating both APS and IIS, or immunogenicity contributed by APS stimulating immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53 and C54 are explicitly speculative explanations for the observed APS-IIS correlation. While biologically plausible, these mechanisms are not directly tested in the study. The authors appropriately present these as hypotheses rather than demonstrated mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In TCGA patients not treated with immunotherapy, high TMB tends to be associated with poor prognosis across cancer types (meta-analysis), though individual cancer types show variable associations. The authors interpret this as TMB being associated with late-stage cancer due to genome instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by data in Figure 2\u2014figure supplement 3. The meta-analysis (C47) provides appropriate statistical support. The interpretation (C49, C50) is reasonable but somewhat speculative. The distinction between TMB's prognostic value in immunotherapy vs. non-immunotherapy contexts is important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors developed TIGS by multiplying normalized APS by log(TMB+1), based on the principle that tumor immunogenicity is determined by two independent factors: tumor antigenicity (represented by TMB) and antigen presentation efficiency (represented by APS). Log(TMB) was chosen because it shows Gaussian distribution and linear correlation with immunotherapy ORR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C55-C59, C99-C101 describe the TIGS methodology and rationale. The mathematical formulation is clearly stated. The use of log(TMB) is justified by prior work (C59) and distributional properties (C58). The normalization of APS and adjustment for B2M mutations (C101) are appropriate. The theoretical framework (C55, C56) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "TIGS values vary across TCGA cancer types, with high TIGS observed in melanoma, DLBC, colon adenocarcinoma, and head/neck squamous cell carcinoma. TIGS shows variable association with survival across cancer types, with meta-analysis suggesting high TIGS is associated with poor prognosis in non-immunotherapy patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by data in Figure 3A and 3B. The survival associations parallel those observed for TMB, which is consistent with TIGS incorporating TMB. The finding that TIGS does not predict good prognosis in non-immunotherapy patients is important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C102"
+    ],
+    "result": "In pan-cancer ORR correlation analysis across 25 cancer types, TIGS (R\u00b2=0.60, p=5.4e-6) outperformed both TMB (R\u00b2=0.50, p=6.8e-5) and APS (R\u00b2=0.18, p=0.038) in explaining variance in objective response rates to anti-PD-1/PD-L1 therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 and C102 are well-supported by correlation analyses shown in Figure 4. The statistical significance is appropriate, and the comparison clearly demonstrates TIGS superiority. The R\u00b2 values and their interpretation as variance explained are correctly calculated. This is a key finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "In three independent ICI clinical datasets (Van Allen 2015, Hugo 2016, Snyder 2017), TIGS consistently outperformed TMB in predicting clinical response. TIGS showed comparable performance to TIDE in melanoma datasets but superior performance in urothelial cancer where TIDE failed. TIGS also outperformed other gene-expression-based biomarkers (IIS, IFNG, ISG.RS, IFNG.GS, CD8) in all three datasets, while random gene controls failed to predict response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 and C103-C106 are supported by ROC curve analyses in Figure 5A-F and supplementary figures. The consistent superiority of TIGS across multiple datasets and cancer types is compelling. The inclusion of negative controls (C76) strengthens the findings. The dataset descriptions (C104-C106) provide appropriate context for interpreting results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "TIGS-High patients showed significantly better overall survival than TIGS-Low patients in all three ICI datasets, while TMB-based stratification did not reach significance in any dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by Kaplan-Meier survival analyses in Figure 5J-L. The consistent survival benefit associated with high TIGS across all three datasets provides strong evidence for TIGS as a prognostic biomarker in immunotherapy-treated patients. The comparison with TMB (which failed to show significant survival differences) further supports TIGS superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The authors conclude that TIGS outperforms TMB and other gene-expression-based biomarkers in predicting immunotherapy response and pan-cancer applicability, attributing this to TIGS capturing both antigen presentation and tumor antigenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 represent appropriate summary conclusions based on the collective evidence from pan-cancer ORR correlations and individual patient response predictions. The mechanistic interpretation (C79) is reasonable given the design of TIGS to capture both components of immunogenicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors propose that TIGS can guide therapeutic strategies to enhance tumor immunogenicity, such as stimulating interferon signaling to increase APS in cancers with low APS (e.g., breast and prostate cancer). They also propose using a linear formula (ORR = 21.4 \u00d7 TIGS \u2013 2.7) to predict ORR in untested cancer types, predicting 12.3% ORR for endometrial cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C82-C86 represent speculative applications of TIGS. While the linear formula (C85) is derived from the data in Figure 4C, its application to predict ORR in untested cancer types (C86) requires validation. The therapeutic strategies (C80, C82) are reasonable hypotheses but lack experimental support. The interpretations about specific cancer types (C83, C84) are plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors acknowledge several limitations: TIGS could be improved by incorporating additional factors (germline antigens, CNV, tumor purity, heterogeneity), using protein-level APM measurements instead of mRNA, considering dendritic cell function, and extending to MHC class II pathways. They also note potential sex differences in predictive power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 appropriately acknowledge limitations and future directions. These are reasonable scientific considerations that demonstrate critical self-assessment. The focus on MHC class I (C90) is clearly stated as a scope limitation. The mention of sex differences (C91) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors position TIGS as a tumor cell-based biomarker distinct from tumor microenvironment-based biomarkers (immunophenoscore, TIDE), arguing that TIGS can both predict immunotherapy response and guide strategies to manipulate tumor immunogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 appropriately distinguish TIGS from other biomarkers with proper citations. The distinction between tumor-inherent and microenvironment-based biomarkers is valid. The dual utility claim (C94) is partially speculative regarding manipulation of immunogenicity but is a reasonable conclusion based on the TIGS framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C70"
+    ],
+    "result": "The authors establish the scientific context and rationale for TIGS by reviewing prior knowledge about ICI response rates, factors affecting ICI effectiveness, tumor immunogenicity determinants, and the APM pathway. They cite extensive prior work supporting the importance of antigen presentation in immunotherapy response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C23, C25-C31, and C70 provide appropriate background and context, all supported by relevant citations. These claims establish the scientific foundation for developing TIGS. The theoretical framework linking immunogenicity to ICI response (C17-C19) is reasonable. The description of the APM pathway (C25-C30) is accurate and well-cited.",
+    "result_type": "MINOR"
+  }
+]

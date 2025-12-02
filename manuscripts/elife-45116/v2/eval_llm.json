@@ -1,0 +1,168 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "PAMs directly activate mGluR2 independently of the LBD. LY48 produces large, reversible GIRK currents (~70% of glutamate response) that are blocked by NAMs, occur in glutamate-insensitive mutants, persist when LBD closure is prevented by competitive antagonists, and occur in isolated TMDs lacking the extracellular domain. PAMs do not induce LBD closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C15-C20 provide converging evidence from multiple experimental approaches (GIRK activation, mutant analysis, competitive antagonism, domain deletion, FRET) demonstrating that PAMs can activate mGluR2 through the TMD independently of LBD conformational changes. The data are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "mGluR2 TMDs show enhanced dimerization propensity compared to other mGluRs and class A GPCRs. Single-molecule photobleaching reveals ~60% dimers for mGluR2-TMD versus ~40% for mGluR1/3/5-TMDs and ~10% for \u03b22AR. TMD dimerization is insensitive to PAM or NAM application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C21-C25 demonstrate subtype-specific TMD dimerization using single-molecule subunit counting with appropriate controls. The photobleaching step distributions are consistent with the proposed stoichiometries given the stated labeling efficiency (~80%). The lack of ligand-induced changes in stoichiometry supports the interpretation that conformational rearrangement rather than assembly/disassembly occurs upon activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A novel inter-TMD FRET assay reveals LBD-independent, reversible conformational rearrangements upon PAM binding. The FRET response is repeatable, non-desensitizing, blocked by NAMs, dose-dependent, enhanced by dominant-negative G-protein, and depends on the N735 'trigger switch' residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C31 establish a new conformational assay with appropriate controls demonstrating that it reports on functionally relevant TMD rearrangements. The correlation with functional measurements (GIRK activation), sensitivity to known mechanistic mutations (N735D), and modulation by G-protein coupling all support the validity of the assay. The assay is generalizable to mGluR5 (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Different PAMs show variable efficacy, affinity, and functional effects. PAMs produce different maximal inter-TMD FRET changes (TASP ~1.3x, BINA ~0.8x relative to LY48) with no correlation between affinity and efficacy. Maximal inter-TMD FRET correlates with both allosteric modulation of agonist responses and direct G-protein activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C32-C37 demonstrate pharmacological diversity among PAMs using the inter-TMD FRET assay. The correlations between inter-TMD FRET efficacy and both functional readouts (modulation and activation) are compelling and suggest the assay reports on a physiologically relevant conformational state. The lack of correlation between affinity and efficacy is an important pharmacological observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Xanthurenic acid (XA) does not act as an mGluR2 PAM. No inter-TMD FRET changes or GIRK currents were observed at concentrations up to 50 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 provides negative data using two independent assays (FRET and GIRK) at concentrations well above those previously reported for XA activity. This addresses a controversial claim in the literature and demonstrates the utility of the inter-TMD FRET assay for drug screening.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "PAM-induced responses show distinct kinetics compared to glutamate and between different PAMs. Glutamate-induced inter-LBD FRET changes are faster than LY48-induced inter-TMD FRET changes. BINA shows drastically slower kinetics (3 min to steady state) and irreversibility compared to other PAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 demonstrate kinetic heterogeneity among PAMs using both FRET and GIRK assays. The slower kinetics of PAMs versus glutamate and the dramatic differences between BINA and other PAMs are clearly documented. Statistical significance is provided for key comparisons (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "BINA's slow kinetics and irreversibility are attributed to membrane partitioning. MNI 137 reverses BINA-induced FRET, but FRET increases again after NAM washout without BINA reapplication. BINA produces the greatest changes in membrane properties in a gramicidin-based assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide a mechanistic explanation for BINA's unique kinetic profile. The gramicidin assay provides independent evidence for membrane interaction. The observation that MNI 137 can reverse BINA effects but that FRET returns after NAM washout supports a membrane reservoir model. However, alternative explanations (e.g., different binding sites) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "NAMs show distinct mechanisms: MNI 137 is a neutral antagonist while Ro 64 is an inverse agonist. MNI 137 produces minimal inter-TMD FRET changes and no basal GIRK current changes. Ro 64 produces robust inter-TMD FRET increases, slow OFF kinetics, and small outward GIRK currents. Both NAMs partially antagonize agonist responses and do not alter LBD conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C46-C55 comprehensively characterize two NAMs using multiple assays (inter-TMD FRET, GIRK, inter-LBD FRET, gramicidin). The classification of Ro 64 as an inverse agonist is supported by the observation of outward GIRK currents (C52) and inter-TMD FRET increases (C47) in the absence of agonist. The distinction from MNI 137 is clear and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C53"
+    ],
+    "result": "A three-state model of TMD activation is proposed where PAMs and inverse agonists stabilize different high-FRET states, while neutral antagonists stabilize a low-FRET resting state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C53, supported by the data showing that both PAMs (C26-C27, C32) and the inverse agonist Ro 64 (C47) increase inter-TMD FRET while the neutral antagonist MNI 137 does not (C46), provide evidence for at least three distinct conformational states. The model is consistent with all experimental observations, though the structural basis requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background and context claims about mGluR structure, function, dimerization, and prior work on PAMs and TMD activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C10 provide established background information supported by appropriate citations to prior literature. These claims accurately represent the current state of knowledge and provide context for the current work.",
+    "result_type": "MINOR"
+  }
+]

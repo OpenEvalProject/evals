@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C62",
+      "C63"
+    ],
+    "result": "SILAC labeling efficiency in MB135 myoblasts exceeded 95% after one week of labeling, and labeling time was extended to three weeks to achieve maximal labeling for the proteomics experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C62, and C63 describe the establishment and optimization of SILAC labeling conditions. The >95% labeling efficiency is directly supported by mass spectrometry data (Figure 1\u2014figure supplement 1A), and the decision to extend labeling to three weeks is a logical methodological optimization based on these results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C39",
+      "C40"
+    ],
+    "result": "DUX4 transcriptional targets, including germline and early embryonic genes normally not expressed in adult muscle, are efficiently translated into stable proteins in DUX4-expressing muscle cells, with all quantified FSHD biomarker genes showing high protein-level induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C11, C12, C39, and C40 collectively demonstrate robust translation of DUX4 targets. The proteomics data (Figure 1D,E) show that all 8 biomarker genes in vDUX4 and all 25 in iDUX4 datasets exhibited high protein induction, directly supporting the claim that DUX4-induced transcripts are efficiently translated despite being germline/embryonic genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The vDUX4 and iDUX4 cell culture systems accurately capture the transcriptional program of FSHD cells, suggesting that DUX4-induced transcripts are likely translated into stable proteins in FSHD muscle, though further validation in patient samples is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C43 rely on previous validation work (Jagannathan et al., 2016) to extrapolate from cell culture to patient muscle. While C41 is supported by prior citation, C42 is an inference, and C43 explicitly acknowledges the need for further validation. The extrapolation from cell culture to patient tissue remains unconfirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C50",
+      "C51",
+      "C66",
+      "C67"
+    ],
+    "result": "Quantitative proteomics data were obtained for 4005 genes in the iDUX4 dataset, with 3961 genes having corresponding RNA-seq measurements. The two experimental systems (vDUX4 and iDUX4) showed strong correlation despite differences in dataset depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14, C50, C51, C66, and C67 describe the dataset characteristics and internal consistency. The strong correlations between replicates (r=0.81 for vDUX4, r=0.79 and 0.77 between iDUX4 and vDUX4) and the consistency of fold changes between systems support the robustness of the proteomics measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A small subset of proteins (103 proteins, 2.6%) in iDUX4 replicate 2 did not label efficiently, a known SILAC issue, which was addressed by taking the median H/L ratio across replicates and calculating p-values using a bootstrap approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe a technical challenge and its resolution. The poor correlation in replicate 2 is attributed to incomplete labeling, a well-documented SILAC problem (Park et al., 2012). The use of median values across replicates is a standard approach (Park et al., 2012; Ong and Mann, 2006), and the bootstrap method for p-value calculation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C44",
+      "C45"
+    ],
+    "result": "RNA and protein expression changes upon DUX4 expression show substantial discordance, with only 40-50% concordance for upregulated genes, a Pearson correlation of 0.51, and distinct pathways affected at each level, indicating that transcriptome analysis alone provides an incomplete picture of DUX4 biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, C16, C44, and C45 collectively demonstrate RNA-protein discordance. The quantitative correlation (r=0.51, p<2.2e-16) and overlap analysis (40-50% concordance for upregulated genes) are directly supported by data in Figure 2A-B. The conclusion that transcriptome analysis is incomplete (C45) is a reasonable inference from this discordance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Gene Ontology analysis revealed that transcript-level changes affect genes involved in transcription and mRNA processing, while protein-level changes impact distinct pathways including humoral immune response, proteolysis, and exocytosis, with the exocytosis pathway not previously implicated in DUX4 studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, and C19 describe GO analysis results shown in Figure 2C. The distinct pathways affected at RNA vs. protein levels are directly supported by the data. C19's claim about exocytosis being novel is based on literature review and is reasonable, though the comprehensiveness of this literature review cannot be fully verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "DUX4 expression causes severe Golgi apparatus fragmentation, with the percentage of cells showing fragmented Golgi comparable to the percentage expressing DUX4, indicating perturbation of cellular secretory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20, C21, and C22 describe Golgi fragmentation. The observation is directly supported by immunofluorescence microscopy (Figure 2D) and quantification (Figure 2E). The correlation between DUX4-positive cells and fragmented Golgi strengthens the causal link. C21 appropriately cites literature (Bexiga and Simpson, 2013) for the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C46",
+      "C47"
+    ],
+    "result": "678 genes showed post-transcriptional buffering with transcriptional changes but no protein changes, particularly stress-response genes. HSPA5 transcriptional upregulation coincides temporally with eIF2\u03b1 phosphorylation and reduced translation, preventing DUX4-expressing cells from mounting a robust stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 and C46-C47 describe post-transcriptional buffering of stress response genes. The identification of 678 buffered genes (Figure 3A) and specific examples (Figure 3B) are data-supported. The temporal correlation between HSPA5 upregulation, eIF2\u03b1 phosphorylation, and reduced methionine incorporation (Figure 3C-E) provides strong mechanistic evidence. C28 and C47 are reasonable inferences from these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C48"
+    ],
+    "result": "198 genes showed protein-level changes with opposite or no RNA changes, including key NMD pathway components (UPF1, UPF2, UPF3B, XRN1, SMG6) that were downregulated at the protein level, explaining the severe NMD inhibition and reduced RNA quality control in DUX4-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29, C30, C31, C32, C33, and C48 describe post-transcriptional downregulation of RNA surveillance proteins. The identification of 198 discordant genes (Figure 4A) and specific downregulation of NMD components (Figure 4B) are directly supported by proteomics data. The mechanistic explanation linking this to NMD inhibition is a reasonable inference, though C32 notes SMG6 was filtered due to single peptide detection, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C34",
+      "C35"
+    ],
+    "result": "DUX4 induces proteasome-mediated degradation of UPF1, and affects expression of several ubiquitin proteasome pathway genes that may underlie this rapid degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C34, and C35 link DUX4 to UPF1 degradation via the proteasome. C9 and C34 cite previous work (Feng et al., 2015) establishing proteasome-mediated UPF1 degradation. C35 identifies changes in ubiquitin proteasome regulators (Figure 4C) that could mediate this effect, providing a mechanistic hypothesis supported by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Post-transcriptional gene regulation plays a critical role in inhibiting NMD and perturbing proteostasis in DUX4-expressing cells, and may underlie key aspects of FSHD pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36, C37, and C38 represent the authors' overarching model. While C36 and C37 are supported by the data showing post-transcriptional regulation of NMD components and stress response genes, C38's claim that this 'may underlie key aspects of FSHD pathology' is speculative. The connection to actual disease pathology in patients requires validation beyond cell culture models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "A web tool was developed for visualization of the RNA-seq and proteomics data, freely accessible at https://dynamicrna.shinyapps.io/dataviz/.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 describe a data visualization tool. The tool's existence is documented with a screenshot (Figure 5) and URL. This represents a valuable resource for the community, though the long-term maintenance and accessibility of the tool cannot be assessed from the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C49",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Background context: DUX4 misexpression causes FSHD through complex effects on hundreds of genes and interconnected pathways. RNA and protein levels are not always concordant, and the study used two validated DUX4 expression systems to ensure robust results despite proteomics having lower sensitivity than RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C7, C8, C49, C59, C60, and C61 provide background context and methodological rationale. These are well-supported by citations to established literature and previous validation work. They appropriately frame the study's motivation and experimental design choices.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "KChIP3 expression is upregulated during differentiation of HT29-18N2 cells into mucin-secreting goblet cells, and stable knockdown achieves 80% reduction in KCNIP3 mRNA without affecting other KChIP family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are supported by qPCR data showing 3.3-fold increase in KChIP3 mRNA upon differentiation and specific 80% knockdown in KChIP3-KD cells. The specificity of knockdown is confirmed by showing no effect on other KChIP family members, providing strong evidence for the experimental model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "KChIP3 negatively regulates baseline mucin secretion: depletion increases MUC5AC secretion 2.5-fold and MUC2 secretion 5.7-fold, while overexpression reduces secretion by 30% (MUC5AC) and 70% (MUC2), without affecting ATP-stimulated secretion or total intracellular mucin levels. These changes correlate with altered granule numbers and sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C11 collectively demonstrate KChIP3's specific role in baseline secretion through multiple complementary measurements: dot blot quantification of secreted mucins, immunofluorescence quantification of granule numbers and volumes, and demonstration that total intracellular mucin levels remain unchanged. The bidirectional effects (knockdown vs. overexpression) and specificity for baseline (not stimulated) secretion provide strong converging evidence. Statistical significance is reported for key findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "HT29-18N2 goblet cells exhibit spontaneous Ca\u00b2\u207a oscillations (30% of cells) originating from internal ER stores via ryanodine receptors. Removing extracellular Ca\u00b2\u207a increases oscillations to 96% of cells, while RYR inhibition with dandrolene reduces oscillations to 13%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by Fura-2AM calcium imaging data showing spontaneous oscillations and their modulation by EGTA and dandrolene. The inference that ER is the source (C15) is reasonable based on the effects of extracellular Ca\u00b2\u207a removal and RYR inhibition, though direct measurement of ER Ca\u00b2\u207a would strengthen this conclusion. The role of RYRs (C16) is well-supported by pharmacological inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Intracellular Ca\u00b2\u207a oscillations regulate baseline mucin secretion: increasing oscillations with EGTA increases secretion by 60%, while reducing oscillations with dandrolene decreases secretion by 40%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by dot blot analysis showing correlation between Ca\u00b2\u207a oscillation frequency and mucin secretion levels. The bidirectional manipulation (increasing and decreasing oscillations) with corresponding changes in secretion provides strong evidence for the regulatory relationship. However, the correlation does not definitively prove causation without additional mechanistic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Ca\u00b2\u207a oscillations regulate baseline mucin secretion through KChIP3's Ca\u00b2\u207a-binding ability: EGTA treatment increases secretion in control but not KChIP3-KD cells, abolishing differences between genotypes. KChIP3-MUT (Ca\u00b2\u207a-binding deficient) shows reduced response to EGTA (11% vs. 47% increase) but normal response to dandrolene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 provide strong evidence that Ca\u00b2\u207a oscillations act through KChIP3's Ca\u00b2\u207a-binding capability. The genetic epistasis experiments (KChIP3-KD abolishes EGTA effect) and the Ca\u00b2\u207a-binding mutant experiments (KChIP3-MUT shows blunted EGTA response) together demonstrate that KChIP3 functions downstream of Ca\u00b2\u207a oscillations and requires Ca\u00b2\u207a-binding for full activity. The data are internally consistent and support the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "KChIP3 does not affect Ca\u00b2\u207a homeostasis: neither KChIP3 depletion nor overexpression alters basal Ca\u00b2\u207a levels, ATP-induced Ca\u00b2\u207a entry, or the frequency of spontaneous Ca\u00b2\u207a oscillations (30-37% of cells across all genotypes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by Fura-2AM calcium imaging showing no differences in basal Ca\u00b2\u207a, ATP responses, or oscillation frequency between control, KChIP3-KD, and KChIP3-GFP cells. This is critical for establishing that KChIP3 acts downstream of Ca\u00b2\u207a signals rather than regulating Ca\u00b2\u207a itself. The data effectively rule out the alternative hypothesis that KChIP3 controls secretion by modulating Ca\u00b2\u207a oscillations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Ca\u00b2\u207a oscillations are sensed by KChIP3 to control baseline mucin secretion, with Ca\u00b2\u207a-free KChIP3 acting as a repressor of secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 represent reasonable inferences from the combined data showing: (1) Ca\u00b2\u207a oscillations regulate secretion, (2) KChIP3 regulates secretion, (3) KChIP3 does not affect Ca\u00b2\u207a oscillations, (4) Ca\u00b2\u207a-binding mutant KChIP3 shows altered function, and (5) KChIP3-MUT shows higher granule association. The model that Ca\u00b2\u207a-free KChIP3 acts as a repressor is consistent with all observations, though direct biochemical evidence for the repressor mechanism is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "KChIP3 localizes to a subset of MUC5AC granules: 10-15% of total granules contain KChIP3-GFP, with 40.6% of KChIP3-GFP signal colocalizing with MUC5AC. KChIP3-MUT shows higher colocalization (59%), suggesting Ca\u00b2\u207a-free KChIP3 preferentially associates with granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by quantitative colocalization analysis using Manders' coefficient. The higher colocalization of KChIP3-MUT (which cannot bind Ca\u00b2\u207a) with granules supports the inference that Ca\u00b2\u207a-free KChIP3 associates with granules. However, the permeabilization and wash procedure used may preferentially remove cytoplasmic KChIP3, potentially affecting the quantification. The conclusion (C36) is a reasonable inference but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Intracellular Ca\u00b2\u207a oscillations regulate KChIP3 localization to granules in a Ca\u00b2\u207a-binding-dependent manner: EGTA treatment reduces KChIP3-GFP on granules (from 34% to 19% colocalization) but does not affect KChIP3-MUT localization (52% vs. 54%). Dandrolene has no significant effect on either form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are supported by colocalization analysis showing differential effects of EGTA on wild-type vs. mutant KChIP3. The observation that KChIP3-MUT localization is insensitive to Ca\u00b2\u207a oscillations while KChIP3-GFP responds to increased oscillations provides strong evidence for Ca\u00b2\u207a-dependent regulation of KChIP3 localization. The lack of effect with dandrolene suggests a threshold or that basal oscillations are sufficient to maintain the steady-state distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Kcnip3 is expressed in mouse colon, its deletion does not affect other KChIP family members, and Kcnip3-/- mice show decreased pain behaviors without major defects in locomotion, learning, or memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by qPCR data from mouse colon. Claim C47 is supported by citation to previous literature (Cheng et al., 2002) and provides important context for the mouse model, though it is not a finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Kcnip3-/- mice show significantly increased colonic mucus layer thickness compared to wild-type mice in the distal colon (77.0 vs. 43.0 \u00b5m by PAS; 73.6 vs. 40.5 \u00b5m by PAS-AB) and a trend toward increased thickness in medial colon (4 of 5 mice). The mucus layer appears denser, suggesting altered viscoelastic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by histological analysis with quantification of mucus layer thickness using two complementary staining methods (PAS and PAS-AB). The statistical significance in distal colon and consistent trend in medial colon provide strong in vivo validation of the cell culture findings. Claim C51 regarding density and viscoelastic properties is speculative based on visual observation and would require rheological measurements for confirmation, but the observation of altered appearance is valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Background on mucin biology and secretion: mucins are encoded by 21 genes, are major components of protective mucus layers, undergo extensive glycosylation in the ER and Golgi, are stored in large secretory granules, and are released via Ca\u00b2\u207a-regulated baseline and stimulated pathways. Baseline secretion is independent of Syt2, involves SNAP23 and Munc13-2, and can exceed stimulated secretion over 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C71 represent established knowledge from the literature, supported by appropriate citations. These provide essential context for understanding the significance of the current findings but are not results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "KChIP3 is proposed as the high-affinity Ca\u00b2\u207a sensor that negatively regulates baseline mucin secretion, complementing Syt2 which acts as a low-affinity Ca\u00b2\u207a sensor for stimulated secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 represent the main conclusions of the study. C72 and C73 are well-supported by the experimental data showing: (1) KChIP3 is a high-affinity Ca\u00b2\u207a-binding protein, (2) it specifically regulates baseline but not stimulated secretion, (3) its function depends on Ca\u00b2\u207a-binding, (4) it acts downstream of Ca\u00b2\u207a oscillations, and (5) loss-of-function increases secretion while gain-of-function decreases it. C74 is supported by citation to previous literature. The complementary roles of KChIP3 and Syt2 provide an elegant model for differential regulation of baseline vs. stimulated secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Proposed mechanisms and conservation: mature granules may be pre-docked at the plasma membrane requiring a brake (KChIP3) to prevent fusion, or KChIP3 may compete with positive regulators. KChIP3 function is proposed to be conserved across tissues despite differences in mucin secretion mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 are speculative proposals about mechanisms and conservation. C75 and C76 represent reasonable hypotheses but lack direct experimental support in this study. C77 regarding conservation across tissues is inferred from the cell culture data and known similarities in secretion mechanisms, but would require testing in airway cells or other tissues for validation. These represent important future directions but are not established by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Tissue-specific differences and broader implications: airway secretion is affected by shear stress and independent of extracellular Ca\u00b2\u207a, while intestinal secretion requires extracellular Ca\u00b2\u207a for stimulated release. Both require intracellular Ca\u00b2\u207a, suggesting conserved use of high-affinity (KChIP3) and low-affinity (Syt2) Ca\u00b2\u207a sensors. KChIP3 may play important roles in mucin-related pathologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by citations to previous literature and provide important context. C82 is a reasonable inference from the current data combined with previous knowledge about Syt2. C83 regarding pathological implications is speculative but reasonable given the demonstrated role in baseline secretion and the importance of mucin dysregulation in disease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Proposed mechanism linking ER Ca\u00b2\u207a to secretion: KChIP3 interacts with RYRs in neurons to affect ER Ca\u00b2\u207a content and CICR. Since ER is near mucin granules in goblet cells, KChIP3 may couple ER-based Ca\u00b2\u207a oscillations to baseline mucin secretion through RYR interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 are supported by citations to previous literature. C86-C87 represent speculative mechanistic proposals based on combining the current findings with previous knowledge about KChIP3-RYR interactions in neurons. While plausible, direct evidence for KChIP3-RYR interaction in goblet cells and its role in the secretion mechanism is not provided. This represents an important hypothesis for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Proposed molecular mechanism: Ca\u00b2\u207a-bound KChIP3 is soluble and cytoplasmic, allowing mucin release. Granule-bound (Ca\u00b2\u207a-free) KChIP3 inhibits SNARE-mediated fusion. Ca\u00b2\u207a binding changes KChIP3 conformation, affecting granule interaction, analogous to its dissociation from DRE sites in transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 are reasonable inferences from the localization and functional data, but lack direct biochemical evidence. C90 regarding inhibition of SNARE-mediated fusion is speculative without direct evidence of KChIP3-SNARE interactions or fusion assays. C91 regarding Ca\u00b2\u207a threshold is a reasonable model but not directly tested. C92 regarding conformational change is plausible but not demonstrated. C93 is supported by citation regarding KChIP3's transcriptional role, providing an analogy but not direct evidence for the secretion mechanism. These represent a coherent model but require additional biochemical and structural studies for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Proposed model for KChIP3 function: post-Golgi mucin granules mature and recruit Ca\u00b2\u207a-free KChIP3, which stalls fusion to the plasma membrane, acting as a brake. Upon Ca\u00b2\u207a oscillations, KChIP3 binds Ca\u00b2\u207a and detaches, triggering SNARE-dependent fusion and mucin release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 represent the integrated model based on all experimental findings. The model is well-supported by: (1) KChIP3 localization to granules, (2) higher association of Ca\u00b2\u207a-binding-deficient mutant with granules, (3) Ca\u00b2\u207a-dependent dissociation from granules, (4) negative regulation of secretion, (5) dependence on Ca\u00b2\u207a oscillations, and (6) in vivo validation in knockout mice. While some mechanistic details remain to be proven (e.g., direct inhibition of SNARE machinery), the overall model is consistent with all observations and provides a coherent framework for understanding baseline mucin secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "General conclusion: specialized secretory cells employ different Ca\u00b2\u207a-binding proteins based on Ca\u00b2\u207a source - low-affinity sensors like Syt2 for agonist-dependent extracellular Ca\u00b2\u207a-mediated fast release, and high-affinity sensors like KChIP3 for agonist-independent intracellular Ca\u00b2\u207a oscillation-mediated baseline release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 represent the overarching conclusion integrating the current findings with previous knowledge. C101 is supported by previous literature on Syt2. C102 is well-supported by the experimental data presented. The general principle (C100) is a reasonable extrapolation that provides a conceptual framework for understanding regulated secretion, though it would require validation in other secretory cell types.",
+    "result_type": "MAJOR"
+  }
+]

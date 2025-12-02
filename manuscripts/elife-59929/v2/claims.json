@@ -1,0 +1,1298 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "RNA-seq data were analyzed from postmortem primary heart tissue samples of 39 human and 39 chimpanzee individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "We analyzed RNA-seq data from postmortem primary heart tissue samples of 39 human and 39 chimpanzee individuals (Figure 1\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript directly states the sample sizes and tissue types used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Data from 11 humans and 18 chimpanzees were previously collected and published by Pavlovic et al., 2018.",
+    "claim_type": "EXPLICIT",
+    "source": "Data from 11 of these humans and 18 of the chimpanzees were previously collected in our lab and published (Pavlovic et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a previous publication as the source of a subset of the data.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Additional human data were obtained from the GTEx consortium from post-mortem heart left ventricle samples.",
+    "claim_type": "EXPLICIT",
+    "source": "We obtained additional human data from the GTEx consortium (post-mortem heart, left ventricle), filtering for high quality samples with sufficient read depth (Figure 1A\u2013B, see Materials and methods for filtering criteria).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the source of additional human samples.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "New RNA-seq data were generated from primary heart samples of 21 additional chimpanzee individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "To complement the published data from chimpanzees, we generated new RNA-seq data from primary heart samples of 21 additional chimpanzee individuals (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states that new data were generated for 21 chimpanzees.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The study design introduces technical batch effects that are partly confounded with species.",
+    "claim_type": "EXPLICIT",
+    "source": "Because the data were collected at different times, and some of the data from humans were collected in different labs (the GTEx data), our overall study design introduces clear technical batch effects that are partly confounded with species (Figure 1B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges the presence of batch effects in the study design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Batch effects are expected to have minimal impact on the reported results because the focus is on within-species comparisons.",
+    "claim_type": "EXPLICIT",
+    "source": "Our focus, however, is on inter-species comparisons of gene expression variability and eQTLs, which are estimated and identified using the within-species data. The batch effects are therefore expected to have only a minimal impact on the reported results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides reasoning for why batch effects should not substantially affect the conclusions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Samples primarily separate by species in principal component analysis and unsupervised clustering.",
+    "claim_type": "EXPLICIT",
+    "source": "Principle component analysis (Figure 1C) and unsupervised clustering (Figure 1B) of the data show that, as expected, samples primarily separate by species, and not by source or batch, although as we pointed out, some technical batches are partly confounded with species in this study.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the results of PCA and clustering analyses shown in figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "8,880 differentially expressed genes were identified between species at FDR < 0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a linear model framework (see Materials and methods), we identified 8880 differentially expressed (DE) genes between species (FDR < 0.05), including 6,409 DE genes with effect sizes smaller than a twofold change (Figure 1\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the number of DE genes identified using statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "6,409 differentially expressed genes have effect sizes smaller than a twofold change.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a linear model framework (see Materials and methods), we identified 8880 differentially expressed (DE) genes between species (FDR < 0.05), including 6,409 DE genes with effect sizes smaller than a twofold change (Figure 1\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript provides specific counts of DE genes with small effect sizes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The number of individuals, not sequencing depth, is the primary driver of power to detect inter-species differences in gene expression.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, we found that the number of individuals, not sequencing depth (within the range of 10M to >25M reads per sample), is the primary driver of power to detect inter-species differences in gene expression (Figure 1\u2014figure supplement 2F\u2013O).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports findings from subsampling analyses comparing sample size and sequencing depth effects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Comparative studies with small sample sizes are underpowered but their reports of differentially expressed genes are generally robust.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results indicate that while comparative studies with small sample sizes are underpowered, their reports of differentially expressed genes are generally robust.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript draws a conclusion from the subsampling analysis about the robustness of small sample studies.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "A study with only four individuals from each species identified a median of 1,373 DE genes at FDR < 0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, when we used a sample size of only four chimpanzee individuals and four human individuals, we identified a median of 1,373 (869\u20132131 interquartile range across 100 resamples) DE genes (FDR < 0.05), or just 15% (10\u201324% IQR) of the genes identified as DE in the analysis of the full set of samples (Figure 1\u2014figure supplement 3A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports specific results from subsampling analysis with n=4 per species.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Studies with four individuals per species capture only a median of 5% of DE genes with effect sizes smaller than a twofold change.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, a study with only four individuals from each species is particularly underpowered to identify subtle inter-species differences (Figure 1\u2014figure supplement 2D), only capturing a median of 5% (2\u201312% IQR) of the DE genes with effect sizes smaller than a twofold change.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript quantifies the power to detect small effect size DE genes in small sample studies.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Estimated effect sizes in small sample studies are typically upwardly biased due to winner's curse effects.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, of the DE genes identified at this sample size, the estimated magnitude effect sizes are typically upwardly biased (Figure 1\u2014figure supplement 2E) due to the winner's curse effects (G\u00f6ring et al., 2001; Ioannidis, 2008), which particularly affect under-powered study designs (Figure 1\u2014figure supplement 2E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript cites literature on winner's curse and shows empirical evidence of this bias.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "At small sample sizes with FDR of 5%, the empirically estimated false discovery rate is a median of 2%.",
+    "claim_type": "EXPLICIT",
+    "source": "However, even at this small sample size, the false positive rate associated with the classification of DE genes is well calibrated; when we used an FDR of 5% to classify genes as DE between the species, we empirically estimated a median of 2% (1\u20135% IQR) false discoveries based on the gold standard reference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports empirical FDR estimates from subsampling analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Some of the chimpanzees collected are first-degree relatives.",
+    "claim_type": "EXPLICIT",
+    "source": "Considering that some of the chimpanzees we collected data from are first-degree relatives, we wondered if the presence of highly related chimpanzee samples plays a meaningful role in the interspecies DE comparisons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states that relatedness exists among chimpanzee samples.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Technical factors such as RNA extraction batch play a larger role in explaining gene expression variance than inter-relatedness.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that technical factors, such as RNA extraction batch, play a larger role in explaining gene expression variance (Figure 1\u2014figure supplement 3C\u2013D) than the inter-relatedness.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from variance partitioning analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The presence of inter-related samples plays a minimal role in altering interspecies DE analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we repeated the DE analysis procedures with subsamples of only the inter-related chimpanzee individuals, and did not find any meaningful difference in number of DE genes or estimated false discovery rate compared to subsamples of less related individuals (Figure 1\u2014figure supplement 3E\u2013F). We conclude that the presence of inter-related samples plays a minimal role in altering interspecies DE analyses.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from DE analysis with different levels of relatedness and draws a conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Overdispersion was estimated for each gene in chimpanzees and humans separately using a negative binomial regression model.",
+    "claim_type": "EXPLICIT",
+    "source": "To do so, we estimated overdispersion for each gene in chimpanzees and humans separately (see Materials and methods). Briefly, we assumed that the measurement process is captured by Poisson sampling, and that true gene expression follows a Gamma distribution. These assumptions are supported by theory (Pachter, 2011) and empirical data (Marioni et al., 2008). Accordingly, we used a negative binomial regression model to fit the RNA-seq data (22,23).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the statistical model used for variability estimation with supporting citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Overdispersion is strongly correlated with mean expression.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with previous findings (Ecker et al., 2017; Eling et al., 2018; Robinson et al., 2010), we observed that overdispersion is strongly correlated with mean expression, due to reasons which may be technical or biological in nature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports an observation consistent with prior literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Mean expression was regressed out from overdispersion estimates to obtain a mean-corrected summary of variability called 'dispersion'.",
+    "claim_type": "EXPLICIT",
+    "source": "To understand the properties of gene expression variability that are independent of mean gene expression level, we regressed out the mean from the overdispersion estimates, to obtain a gene-wise mean-corrected summary of variability, hereafter referred to as 'dispersion' (Figure 2A\u2013B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the method for calculating dispersion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "2,658 inter-species differentially dispersed genes were identified at FDR < 0.1.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, we identified 2658 inter-species differentially dispersed genes (FDR < 0.1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the number of differentially dispersed genes identified.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Differentially dispersed genes are generally not differentially expressed.",
+    "claim_type": "EXPLICIT",
+    "source": "Inter-species differences in mean expression levels cannot explain this finding, as differentially dispersed genes are generally not differentially expressed (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript states that differential dispersion is independent of differential expression.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Gene-wise dispersion estimates are well correlated in humans and chimpanzees (R = 0.60).",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the identification of thousands of differentially dispersed genes between the species, gene-wise dispersion estimates are well correlated in humans and chimpanzees overall (R = 0.60, Figure 2C), suggesting similar determinants of variability in the two species.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a correlation coefficient and interprets its meaning.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Lower dispersion in expression levels is associated with higher protein coding conservation.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, when we ranked and grouped genes by degree of protein coding conservation (assessed by percent amino acid identity between human and chimpanzee; Figure 3A), or by the ratio of nonsynonymous to synonymous codon changes (dN/dS) across mammals (Figure 3B), we found that lower dispersion in expression levels is associated with higher protein coding conservation.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports an association between dispersion and coding conservation metrics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The trend of lower dispersion with higher conservation is most significant for genes in immune function categories.",
+    "claim_type": "EXPLICIT",
+    "source": "This trend is most significant for genes in functional categories (Gene Ontology; GO categories) related to immune function (Figure 3\u2014figure supplement 1), consistent with immune-related genes being targets of rapid evolution by diversifying selection pressures, which may increase dispersion.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from GO category analysis and provides an interpretation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Loss-of-function-intolerant genes have lower dispersion than loss-of-function-tolerant genes.",
+    "claim_type": "EXPLICIT",
+    "source": "To further establish the relationship between evolutionary coding conservation and dispersion, we utilized the prevalence of genetic diversity data from humans to categorize genes as loss-of-function-tolerant (ExAC pLI score <0.1) or loss-of-function-intolerant (ExAC pLI score >0.9) (Lek et al., 2016). We found that the expression of loss-of-function-intolerant genes is associated with lower dispersion (Figure 3C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports an association between pLI scores and dispersion with citation to the data source.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "TATA box genes are associated with higher dispersion.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, consistent with previous reports (de Jong et al., 2019; Hagai et al., 2018; Ravarani et al., 2016), we found that genes with TATA boxes are associated with higher dispersion (Figure 3D), potentially because TATA boxes are associated with higher transcriptional noise at the molecular level (Blake et al., 2006; Raser and O'Shea, 2004; Ravarani et al., 2016).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports an observation consistent with prior literature and provides citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "TATA box genes are enriched among cell-type-specific genes.",
+    "claim_type": "EXPLICIT",
+    "source": "However, a possible technical explanation for this observation is that TATA box genes are enriched among cell-type-specific genes (Schug et al., 2005) and cell-type heterogeneity between individuals or samples could contribute to the observed dispersion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites literature on TATA box gene properties and suggests an alternative explanation.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Genes with housekeeping functions are among the most enriched gene categories associated with low dispersion.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that genes with housekeeping functions universal to all cell-types, such as genes related to transcription initiation and tRNA modification, are among the most enriched gene categories associated with low dispersion (Figure 3E, Figure 3\u2014figure supplement 1E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from gene set enrichment analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Genes with high dispersion are enriched for cardiovascular related functions.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, genes with high dispersion are enriched for categories like fibrinolysis (the breakdown of blood clots), oxygen sensing, and other cardiovascular related functions (Figure 3E, Figure 3\u2014figure supplement 1E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from gene set enrichment analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The most highly dispersed genes in bulk samples have more cell-type-specific expression in single-cell RNA-seq datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Qualitatively, we observed that the most highly dispersed genes in our bulk chimpanzee and human samples have more cell-type-specific expression among the nine heart cell types identified in Tabula Muris (Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports observations from comparing bulk dispersion to single-cell data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The lowest dispersed genes are more evenly expressed across cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, the lowest dispersed genes are more evenly expressed across cell types (Figure 4B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports observations from comparing bulk dispersion to single-cell data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Dispersion is strongly correlated with cell-type-specificity (R = 0.32, p<2\u00d710\u221216).",
+    "claim_type": "EXPLICIT",
+    "source": "More generally, when we summarized the level of cell-type-specific expression for each gene as a single summary statistic, \u03c4 (Kryuchkova-Mostacci and Robinson-Rechavi, 2016; Yanai et al., 2005), we found that dispersion is strongly correlated with cell-type-specificity (R = 0.32, p<2\u00d710\u221216; Figure 4C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a correlation with statistical significance and cites the method used.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The correlation between cell-type-specificity and dispersion may be downwardly biased due to using mouse heart data.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the degree of cell-type-specificity is derived from data from mouse hearts, which may have diverged cell type expression profiles compared with primates. The correlation between cell-type-specificity and dispersion may therefore be downwardly biased as a result of error in estimating the true degree of cell-type-specificity of genes expressed primate hearts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges a potential limitation in the analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Cell type proportions between chimpanzee and human hearts are qualitatively similar.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, cell type proportions between chimpanzee and human hearts are qualitatively similar, although much inter-individual variation exists in both species for particular cell types, such as cardiac muscle cells and myofibroblasts (Figure 4\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from cell type deconvolution analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Deconvoluted expression profiles for different cell types cluster tightly by cell type rather than species.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the deconvoluted expression profiles for different cell types cluster tightly by cell type rather than species, as expected.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports clustering results from deconvoluted data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Dispersion estimates from deconvoluted data cluster in a pattern more strongly influenced by species than by cell type.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the dispersion estimates cluster in a complex pattern that is more strongly influenced by species. This is consistent with the idea that genetic variation, which nearly completely segregates by species, plays a meaningful role is explaining dispersion when cell composition variation is corrected for.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports clustering results and provides an interpretation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Inter-individual dispersion in humans and chimpanzees is driven by genetic differences as well as cell type heterogeneity between samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Put together, these analyses indicate that the levels of inter-individual dispersion we observed in humans and chimpanzees, and the high similarity in dispersion observed across species, are driven genetic differences as well as cell type heterogeneity between samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript draws a conclusion from multiple analyses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The estimated fraction of cardiac muscle cells is highly correlated between atrial appendage and left ventricle samples from matched individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the estimated fraction of cardiac muscle cells, the most common cell type in both tissue sections, is highly correlated between atrial appendage and left ventricle samples from matched individuals (Figure 4\u2014figure supplement 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from analyzing matched tissue samples.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Individual level factors generally explain more variance in cell type composition than tissue level factors.",
+    "claim_type": "EXPLICIT",
+    "source": "We used a linear mixed model (Hoffman and Schadt, 2016) to quantify the contribution of individual level versus tissue level factors to explain cell type composition estimates, and found that the individual level factor generally explains more variance (Figure 4\u2014figure supplement 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from variance partitioning analysis with citation to the method.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Sample-to-sample differences captured by dispersion estimates are driven largely by true differences between individuals rather than technical differences.",
+    "claim_type": "EXPLICIT",
+    "source": "We interpret this as strong evidence that the sample-to-sample differences captured by our dispersion estimates are driven largely by true differences between individuals, rather than random technical differences in sample acquisition and dissection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an interpretation of the variance partitioning results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The interspecies difference in dispersion is much less likely to be driven by cell type heterogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, we find that the interspecies difference in dispersion is much less likely to be driven by cell type heterogeneity, although there is a relatively small but significant correlation with \u03c4 (R = 0.07, p=2.2\u00d710\u221212; Figure 4D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a correlation and interprets its implications.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Genes more variable in human are enriched for mitotic regulators.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that genes more variable in human are enriched for mitotic regulators (Figure 4\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from gene set enrichment analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The enrichment for mitotic regulators may reflect the highly variable life histories in GTEx samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Given evidence that ischemia may induce mitosis in adult mammalian cardiac cells (Kajstura et al., 1998; Kimura et al., 2017; Nakada et al., 2017), the enrichment for mitotic regulators may reflect the highly variable life histories in GTEx samples, a large fraction of which are sourced from organ donors with ischemic cardiovascular disease.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an interpretation with supporting citations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Genes related to immune function are more variable in chimpanzee.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, we found that genes related to immune function are more variable in chimpanzee.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports results from gene set enrichment analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Genes with particularly low dispersion in human compared to chimpanzee display more constraint at the coding level in human than in chimpanzee.",
+    "claim_type": "EXPLICIT",
+    "source": "More specifically, we expect that genes with particularly low dispersion in human compared to chimpanzee will also display more constraint at the coding level in human than in chimpanzee.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a hypothesis to be tested.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "High-coverage whole genome sequencing was performed on 39 chimpanzee samples with >30X genome coverage obtained in all samples.",
+    "claim_type": "EXPLICIT",
+    "source": "We obtained human genotype data from the GTEx consortium, and chimpanzee data by performing high-coverage whole genome sequencing on the 39 chimpanzee samples used in this study (>30X genome coverage obtained in all samples, Supplementary file 2); these data represent roughly a 50% increase in the number of high-coverage Pan troglodytes genomes currently available (de Manuel et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the generation of new genomic data with citation to prior work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Nearly 2.9 million novel chimpanzee SNPs with MAF greater than 10% were identified.",
+    "claim_type": "EXPLICIT",
+    "source": "We used the sequencing data to identify nearly 2.9 million novel chimpanzee SNPs with a minor allele frequency (MAF) greater than 10%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the number of SNPs identified from the sequencing data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Loss-of-function tolerant genes have higher Pn/Ps than loss-of-function intolerant genes.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, we found that loss-of-function tolerant genes have higher Pn/Ps than loss-of-function intolerant genes (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports an expected result from analyzing polymorphism data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The inter-species ratio of Pn/Ps is positively correlated with the difference in gene expression dispersion between species.",
+    "claim_type": "EXPLICIT",
+    "source": "When we compared Pn/Ps between humans and chimpanzees, we found that the inter-species ratio of Pn/Ps is positively correlated with the difference in gene expression dispersion between species (Figure 5B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a correlation between genetic and expression variability metrics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Genes with higher dispersion in chimpanzees than in humans have a higher abundance of non-synonymous polymorphisms in chimpanzees compared to humans.",
+    "claim_type": "EXPLICIT",
+    "source": "That is, on average, genes with higher dispersion in chimpanzees than in humans have a higher abundance of non-synonymous polymorphisms (Pn/Ps) in chimpanzees compared to the orthologous genes in humans.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the correlation between Pn/Ps ratio and dispersion difference.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Inter-species differences in selection pressures at polymorphic loci play a role in the observed inter-species differences in expression dispersion.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that inter-species differences in selection pressures at polymorphic loci play a role in the observed inter-species differences in expression dispersion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript draws a conclusion from the Pn/Ps analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "310 eGenes were identified in chimpanzee hearts at FDR < 0.1.",
+    "claim_type": "EXPLICIT",
+    "source": "Using this approach, we identified 310 eGenes in chimpanzee hearts (FDR < 0.1; Figure 6\u2014figure supplement 1A\u2013B, Supplementary file 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the number of eGenes identified in chimpanzees.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Chimpanzee eQTL SNPs are enriched near transcription start sites.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with previous eQTL studies in primates (Jasinska et al., 2017; Pickrell et al., 2010; Tung et al., 2015; Veyrieras et al., 2008), we found that the chimpanzee eQTL SNPs are enriched near transcription start sites (Figure 6\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports an observation consistent with prior literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "There is no significant overlap of eGenes between humans and chimpanzees when considering one-to-one orthologs tested in both species using the full GTEx dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "When considering only one-to-one orthologs tested for eGenes in both species, there is no significant overlap of eGenes in the two species (Odds Ratio = 1.03, p=0.46, hypergeometric test, Figure 6\u2014figure supplement 3A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a statistical test result for eGene overlap.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "When using similar sample sizes, there is a greater overlap of eGenes between humans and chimpanzees than expected by chance.",
+    "claim_type": "EXPLICIT",
+    "source": "When we compared lists of eGenes identified in humans and chimpanzees using similar sample sizes, we found a greater overlap of eGenes in the two species than expected by chance (Figure 6\u2014figure supplement 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from subsampling analysis to account for power differences.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Of the top 500 significant GTEx eGenes, 21 are also found to be eGenes in chimpanzee at FDR < 0.1, a significant enrichment.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, of the top 500 significant GTEx eGenes (Figure 6A, Figure 6\u2014figure supplement 3C), 21 are also found to be eGenes in chimpanzee (FDR < 0.1), a significant enrichment (Odds Ratio = 2.05, p=0.003, hypergeometric test).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a statistically significant overlap of eGenes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Species-specific eGenes have higher species-specific dispersion.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, we found that species-specific eGenes have higher species-specific dispersion (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports an association between eGene classification and dispersion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "eGenes identified in chimpanzees but not humans have higher dispersion in chimpanzees and vice versa.",
+    "claim_type": "EXPLICIT",
+    "source": "That is, eGenes identified in chimpanzees but not humans have higher dispersion in chimpanzees and vice versa (p=3.7\u00d710\u221211; Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a statistically significant association.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Within each species, eGenes tend to have higher dispersion than non-eGenes.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, within each species, eGenes tend to have higher dispersion than non-eGenes (Figure 6\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a comparison of dispersion between eGenes and non-eGenes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The observation that more eGenes are shared among humans and chimpanzees than expected by chance suggests that the regulation of these genes evolves under less evolutionary constraint.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the observation that more eGenes are shared among humans and chimpanzees than expected by chance suggests that the regulation of these genes evolves under less evolutionary constraint.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an interpretation of the eGene overlap results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "eGenes have higher inter-species differences in expression levels than non-eGenes.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that eGenes have higher inter-species differences in expression levels than non-eGenes (Figure 7A), and eGenes identified in both species have even larger differences in mean expression levels between species than eGenes identified only in chimpanzees or humans.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a comparison of differential expression between eGene categories.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "eGenes tend to have lower levels of coding conservation in both species.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, eGenes tend to have lower levels of coding conservation in both species, as measured by amino acid identity between human and chimpanzee (Figure 7B) or dN/dS across mammals (Figure 7C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports associations between eGene status and coding conservation metrics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The 21 genes identified as shared eGenes are strongly enriched for immune response genes, including MHC genes.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that these genes are strongly enriched for immune response genes, including major histocompatibility complex (MHC) genes (Figure 7\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from gene ontology enrichment analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The enrichment of immune genes among shared eGenes is consistent with immune genes evolving under strong directional and balancing selection pressures across vertebrates.",
+    "claim_type": "EXPLICIT",
+    "source": "This observation is consistent with previous reports that immune genes evolve under strong directional and balancing selection pressures across vertebrates, in part to respond to ever-evolving pathogen challenges (Ejsmond and Radwan, 2015; Hagai et al., 2018; Lam et al., 2017; Shultz and Sackton, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the enrichment result in the context of prior literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "148 chimpanzee-specific eGenes were identified and are significantly enriched for transcriptional regulation terms.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 148 chimpanzee-specific eGenes, which we found to be significantly enriched for transcriptional regulation terms (Figure 7\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from gene ontology enrichment analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "A previous study identified 125 trans-species polymorphic haplotypes outside of the MHC region that are shared between chimpanzee and human.",
+    "claim_type": "EXPLICIT",
+    "source": "A previous study identified 125 trans-species polymorphic haplotypes outside of the MHC region that are shared between chimpanzee and human, all but two of which are in noncoding regions (Leffler et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a previous study that identified trans-species polymorphisms.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Genes nearest to trans-species SNPs have higher median levels of dispersion than distal genes, though the effect is small and may be due to chance (p=0.053).",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the set of genes nearest to these trans-species SNPs have higher median levels of dispersion than distal genes, though the effect is small and may be due to chance (p=0.053, Figure 8\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a marginally significant association.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "37 out of 192 trans-species SNPs have a clear eQTL signal (FDR < 0.1) in the human dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We detected 37/192 trans-species SNPs with a clear eQTL signal (FDR < 0.1) in the well-powered human dataset, such as rs257899, which associates with SLC27A6 expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the number of trans-species SNPs with eQTL activity in humans.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "No significant cis eQTL activity was identified for rs257899 in chimpanzee.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we did not identify any significant cis eQTL activity for this SNP in chimpanzee (Figure 8A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the absence of eQTL activity for a specific SNP in chimpanzees.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "No inter-species correlation of regulatory effect size estimates was found among the 12 trans-species haplotypes with an eQTL in human that were also tested in chimpanzee.",
+    "claim_type": "EXPLICIT",
+    "source": "More generally, we did not find any inter-species correlation of regulatory effect size estimates among the 12 trans-species haplotypes with an eQTL in human (FDR < 0.1; Figure 8B) that were also tested in chimpanzee (Methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the absence of correlation in eQTL effect sizes across species.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "No evidence was found for regulatory effects of trans-species SNPs in chimpanzee compared to control SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "Considering all trans-species SNPs, we did not find any evidence for their regulatory effects in chimpanzee, compared to a set of control SNPs (Figure 8C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a comparison of trans-species SNPs to control SNPs in chimpanzees.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Trans-species SNPs have measurable regulatory activity in the human dataset, but it is not significantly different than that of control SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "While we found these SNPs to have measurable regulatory activity in the human dataset, it was not significantly different than that of control SNPs (Figure 8D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a comparison of trans-species SNPs to control SNPs in humans.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "No compelling evidence was found that trans-species polymorphisms have strong regulatory activity in either species.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, we found no compelling evidence that these trans-species polymorphisms have strong regulatory activity in either species.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes the findings on trans-species polymorphisms.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Inter-individual expression variability is highly correlated in humans and chimpanzees.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that inter-individual expression variability is highly correlated in humans and chimpanzees.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a main finding of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Cell type heterogeneity is a major driver of the degree to which gene expression varies in the population.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that, across genes, cell type heterogeneity is a major driver of the degree to which gene expression varies in the population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a key finding about sources of variability.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Natural selection has played a role in shaping inter-species similarities and differences in gene expression variability.",
+    "claim_type": "EXPLICIT",
+    "source": "Notwithstanding these complications, our observations do indicate that natural selection has played a role in shaping inter-species similarities and differences in gene expression variability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript draws a conclusion about the role of selection.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Differences in cellular composition cannot explain the observed correlation between dispersion and measures of nucleotide divergence and diversity.",
+    "claim_type": "EXPLICIT",
+    "source": "Differences in cellular composition cannot explain the observed correlation between dispersion and measures of nucleotide divergence and diversity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript argues that cellular composition cannot fully explain certain observations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The observation that species-specific eGenes have higher variability in the species in which the eQTL was detected directly points to a genetic basis for differences in expression dispersion between humans and chimpanzees.",
+    "claim_type": "EXPLICIT",
+    "source": "With that in mind, our observation that species-specific eGenes have higher variability in the species in which the eQTL was detected is significant, because it directly points to a genetic basis for differences in expression dispersion between humans and chimpanzees.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the significance of the eGene-dispersion association.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Genetic variation within species contributes to the overall inter-species divergence in gene regulation.",
+    "claim_type": "EXPLICIT",
+    "source": "This observation is also consistent with the notion that genetic variation within species contributes to the overall inter-species divergence in gene regulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an interpretation of the findings.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Stronger signals of coding selection were observed for non-eGenes than eGenes in both species.",
+    "claim_type": "EXPLICIT",
+    "source": "That said, we also observed stronger signals of coding selection for non-eGenes than eGenes in both species, further suggesting selection on the eGenes themselves (this is not expected if our observations are to be explained by differences in cellular composition).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports an observation and provides an interpretation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "eQTLs may be a subtle indicator of dosage insensitivity for relatively neutrally evolving genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Collectively, our observations suggest that, across species, eQTLs may be a subtle indicator of dosage insensitivity for relatively neutrally evolving genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript draws a conclusion from multiple observations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "An inter-species analysis of population variability in gene expression may be a relatively simple way to complement existing methods to assess differences in selection pressures between lineages.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we believe that an inter-species analysis of population variability in gene expression may be a relatively simple way to complement existing methods to assess differences in selection pressures between lineages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes a methodological contribution based on the findings.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The eGenes identified only in chimpanzee are slightly enriched for transcription regulatory processes.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the eGenes we identified only in chimpanzee, but not in human, are slightly enriched for transcription regulatory processes, reminiscent of a previous observation that transcription factors seem to be enriched among the genes positively selected for in the human lineage (Blekhman et al., 2008; Gilad et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports an enrichment result and relates it to prior literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Genes involved in immune response are among the most variably expressed and strongly enriched among species-shared eGenes in both human and chimpanzee.",
+    "claim_type": "EXPLICIT",
+    "source": "In both human and chimpanzee, we found that genes involved in immune response are among the most variably expressed and strongly enriched among species-shared eGenes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes findings about immune genes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The enrichment of immune genes is consistent with diversifying selective pressure on immune related cell-surface receptor genes to combat diverse and evolving pathogens.",
+    "claim_type": "EXPLICIT",
+    "source": "This is consistent with a body of literature (Croze et al., 2016; Ejsmond and Radwan, 2015; Hagai et al., 2018; Shultz and Sackton, 2019) that points to diversifying selective pressure on immune related cell-surface receptor genes to identify and combat diverse and ever-evolving pathogens.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the immune gene enrichment in the context of prior literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The extent to which quantitative regulation of gene expression is functionally important to pathogen defense and thus the target of selection is unclear.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the extent to which quantitative regulation of gene expression is functionally important to pathogen defense and thus the target of selection is unclear.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges uncertainty about the functional importance of regulatory variation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Regulatory variants may be hitchhiking with functionally important and tightly linked coding variants under strong positive or balancing selection.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternatively, these regulatory variants may be hitchhiking with functionally important and tightly linked coding variants under strong positive or balancing selection (D'Antonio et al., 2019; Meyer et al., 2018; Shiina et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes an alternative explanation with supporting citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The study may be underpowered to detect subtle conserved regulatory effects in chimpanzee.",
+    "claim_type": "EXPLICIT",
+    "source": "We acknowledge that we may be underpowered to detect subtle conserved regulatory effects in chimpanzee.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges a limitation of the study.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Some trans-species polymorphisms may have important regulatory functions that are tissue-, cell-type-, or context-dependent.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, some of these trans-species polymorphisms may have important regulatory functions; albeit this function may also be tissue-, cell-type-, or context-dependent and not present in our assessment of heart and other GTEx bulk tissues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges the possibility of context-dependent regulatory effects.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "A deeper understanding of differences in selection on gene expression may be gained by assessing mean differences, variability, and eQTL contributions in various tissue types across primate groups.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, we performed a comparative assessment of expression variability and eQTL mapping and found signatures of stabilizing selection on gene regulation in both species. A deeper understanding of differences in selection on gene expression may be gained by further assessing mean differences, variability, and eQTL contributions in various tissue types across primate groups.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes future research directions.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Future studies may benefit from single-cell techniques due to strong contributions of cell-type heterogeneity in the analysis of variability.",
+    "claim_type": "EXPLICIT",
+    "source": "Such studies may benefit from single-cell techniques, as we find strong contributions of cell-type heterogeneity in our analysis of variability, which may be biological or technical in nature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript recommends methodological approaches for future studies based on the findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  }
+]

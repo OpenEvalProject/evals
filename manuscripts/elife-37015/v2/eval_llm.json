@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C84"
+    ],
+    "result": "A double-blind phase I trial randomized 42 healthy adult volunteers into placebo and three WCV dose cohorts (100 \u03bcg, 300 \u03bcg, 600 \u03bcg), with serum samples planned at baseline and 28 days after each of three doses. The study analyzed 130 samples from 35 participants, with sample distribution varying by cohort and timepoint due to incomplete trial completion. Each sample was treated as a biological replicate without technical replicates, justified by pilot data showing reproducible inter-individual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C9-C13, and C84 provide consistent documentation of trial design, sample collection, and analytical approach. The trial registration (C84), explicit sample numbers (C9-C10), and methodological justification from pilot data (C12-C13) support the study design. Figure 1 corroborates the sample distribution across cohorts and timepoints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The WCV strain RM200 was genetically engineered to contain the complete serotype 3 capsule polysaccharide synthesis locus from S. pneumoniae OXC141, with modifications to the ply gene (three amino acid substitutions eliminating cytolytic activity via pDP28 shuttle vector insertion-duplication mutagenesis) and replacement of lytA with the Janus cassette through allelic replacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 describe the genetic engineering of the vaccine strain with explicit molecular details. Figure 1\u2014figure supplement 1 provides visual evidence of the genomic modifications, showing alignments that confirm the presence of the cps locus and the specific genetic alterations to ply and lytA. The molecular biology is internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C78",
+      "C79"
+    ],
+    "result": "Individuals exhibited distinctive antibody 'fingerprints' that remained stable throughout the trial independent of vaccination dose, as demonstrated by t-SNE analysis. These fingerprints persisted when DCL were excluded or when only conserved proteins were analyzed, indicating they represent unique IgG response patterns to common antigens rather than exposure histories to variable proteins. The fingerprints were sufficiently robust to withstand WCV administration, suggesting mature antibody repertoires shaped by multiple pneumococcal encounters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 and C78-C79 are strongly supported by Figure 2 and supplementary figures showing t-SNE clustering of longitudinal samples from the same individuals. The consistency across different analytical approaches (excluding DCL in C15, using only conserved proteins) strengthens the interpretation that these represent responses to common antigens (C16-C17). The stability despite vaccination (C18) is visually evident in the clustering patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "While there was no significant difference in median IgG binding between cohorts before vaccination (Kruskal-Wallis p=0.98) or in per-individual median \u03940\u219284 (p=0.37), linear mixed effects models revealed a significant cohort effect when analyzing per-probe data (\u03c7\u00b2=8.96, p=0.030), which became more significant when restricted to immunoreactive probes (\u03c7\u00b2=11.8, p=0.0081). This indicates the WCV had a detectable effect on specific proteins rather than broad responses across all individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 present a coherent statistical narrative supported by appropriate tests. The contrast between per-individual (C19-C21) and per-probe analyses (C22-C24) is methodologically sound and explains why the vaccine effect was initially not apparent. The restriction to immunoreactive probes (C23) appropriately filters biologically uninformative changes. Figure 4\u2014figure supplement 1 supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Vaccinated groups showed a statistically significant positive correlation between pre-vaccine IgG binding and post-vaccine rise (Pearson p<10\u207b\u00b9\u2076), consistent with anamnestic response upregulation, while placebo recipients showed a negative correlation possibly representing regression to the mean. However, these general trends were small compared to large increases in IgG binding to specific protein subsets, indicating post-vaccine changes primarily represented strong responses to select proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by Figure 3A-D showing scatter plots with correlation statistics. The contrast between vaccinated and placebo groups (C25-C26) is statistically robust with highly significant p-values. The interpretation that responses target specific proteins (C27) is supported by the visual distribution of points showing outliers with large \u03940\u219284 values above the general correlation trend.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Antibody-binding targets (ABTs) were significantly enriched among probes showing increased IgG binding post-vaccination across all three cohorts (5.95-fold, 4.06-fold, and 5.40-fold enrichment for cohorts 1-3 respectively, all p<10\u207b\u2075). The distinction between proteins with little reaction and those eliciting large IgG increases was consistent within and between vaccinated cohorts, suggesting non-stochastic, reproducible responses independent of individual antibody profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 present consistent enrichment statistics with appropriate Fisher's exact tests across all cohorts. The fold-enrichment values and p-values demonstrate strong statistical significance. Figure 3E-F supports the consistency claim (C30) by showing correlation between cohorts in their response patterns. The interpretation that responses are not stochastic is justified by the reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Using an empirically-determined 90% amino acid sequence identity threshold, 1602 proteins (1647 probes) matched RM200 proteins while 455 proteins (476 probes) lacked close orthologues. Overall, there was no significant difference in \u03940\u219284 between these groups (p=0.33), but when restricted to ABTs, those with RM200 orthologues showed significantly stronger antibody rises (p=6.5\u00d710\u207b\u2075), suggesting vaccine-induced IgG responses primarily target naturally immunogenic proteins expressed by the WCV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 present a logical analytical framework with appropriate statistical tests. The 90% threshold (C31) is empirically justified by Figure 4\u2014figure supplement 4. The contrast between overall analysis (C33) and ABT-restricted analysis (C34) is methodologically sound and leads to a reasonable interpretation (C35). Figure 4A provides visual support for these statistical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "There was no significant difference in \u03940\u219284 for ABTs conserved in S. mitis and S. pseudopneumoniae compared to more divergent ABTs (Figure 4A), nor in pre-vaccination IgG binding to ABTs in the WCV (p=0.20) or those conserved across species (p=0.62), suggesting asymptomatic carriage of naturally unencapsulated streptococci is unlikely to play a major role in WCV-induced immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by appropriate Wilcoxon rank sum tests with non-significant p-values and visual evidence in Figure 4A (right panel) and Figure 4\u2014figure supplement 3. The interpretation that commensal carriage doesn't drive responses is reasonable given the lack of differential responses to conserved proteins. However, the negative result interpretation should be considered cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Complementary statistical analyses identified proteins with significantly changed IgG binding: empirical Bayes analysis found 88 probes significant in cohort 3 vs placebo (FDR<0.05) but none in cohorts 1 or 2, while linear mixed effects models identified 127 probes with significant changes across immunizations (all but one increasing). No proteins showed significant dose-response, likely due to anomalous cohort 2 behavior. Combined, these approaches identified 138 probes (highly consistent with 129 probes from threshold-based analysis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 describe complementary statistical approaches with appropriate multiple testing corrections (Benjamini-Hochberg FDR<0.05). The lack of dose-response (C41) is explained by cohort 2's anomalous behavior visible in Figure 3. The consistency between methods (C43) is demonstrated in Figure 4\u2014figure supplement 7. The combined approach strengthens confidence in the identified antigens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Among the 112 putative antigens, 71 (63.4%) were from the 208 previously-defined ABTs, representing a 6.16-fold enrichment (p<10\u207b\u00b9\u2076). When limited to proteins with \u226590% similarity between WCV and array, ABTs showed even stronger enrichment: 39 of 71 significant increases (54.9%, 16.01-fold enrichment, p<10\u207b\u00b9\u2076) versus 34 of 991 non-significant proteins (3.43%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 present robust enrichment statistics with highly significant p-values from Fisher's exact tests. The progressive enrichment when restricting to high-similarity proteins (C45) strengthens the biological interpretation. The statistical approach is appropriate for categorical enrichment analysis, and the fold-enrichment values are substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The most statistically significant increase in IgG binding was to a choline-binding domain (CBD) oligomer probe, though this represented a small increase on a low baseline despite previous evidence of CBD immunogenicity. Excluding the CBD oligomer and grouping orthologous variants, the 112 WCV antigens corresponded to 72 functionally distinct proteins, with all but four attributable to RM200 genome sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by Figure 4B showing the CBD as the top hit in the volcano plot. The characterization as a small increase on low baseline (C47) is consistent with the data and appropriately cites previous work (Giefing et al., 2008). The reduction to 72 functionally distinct proteins (C48) is a reasonable analytical consolidation documented in Supplementary files.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Multivariable analysis of protein characteristics found significant associations between increased IgG binding and signal peptides (odds ratio=6.76, p=1.38\u00d710\u207b\u2075), Transpeptidase domains (associated with peptidoglycan remodeling), and SBP_bac_3 domains (associated with ABC transporter solute-binding proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 report results from an appropriate multivariable generalized linear model with significant odds ratios and p-values documented in Supplementary file 3. The association with signal peptides (C49) is biologically plausible for surface-exposed proteins. The functional domains identified (C50-C51) align with the broader finding of enrichment for transporters and cell wall proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Solute-binding proteins (SBPs) were significantly enriched in WCV responses: 11 of 25 SBPs in RM200 (44.0%) provoked substantial IgG increases versus 60 of 1037 non-SBPs (7.60-fold enrichment, p=1.16\u00d710\u207b\u2077). Among ABTs, SBPs showed 3.54-fold enrichment in proteins with significant IgG rises (p=0.014). Immunogenic SBPs included siderophore transporters PiaA and PiuA (potential vaccine candidates) and seven amino acid/peptide-binding proteins including TcyA, GlnH, GlnPH4, and GlnPH1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 present consistent enrichment statistics with appropriate Fisher's exact tests. The identification of specific SBPs (C54-C55) is supported by Figure 4B and Table 1. The citation of PiaA and PiuA as vaccine candidates (Jomaa et al., 2006) provides context. The functional characterization of the seven amino acid/peptide transporters is specific and verifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cell wall metabolism proteins showed significant enrichment: 16 of 25 previously-defined ABTs (64.0%) were among the 71 ABTs with significant IgG increases (3.43-fold enrichment, p=0.0014). The penicillin-binding protein sequences in RM200 are most similar to ancestral \u03b2-lactam sensitive variants. Two PclA protein variants with elevated IgG binding were most similar to the RM200 PclA sequence, while truncated and divergent variants showed no increases. No increased IgG binding to pilus subunits or serine-rich glycoproteins was observed, consistent with their absence from RM200.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by appropriate statistical tests (C56), phylogenetic analysis in Figure 4\u2014figure supplement 10 (C57), and Figure 4\u2014figure supplements 12-14 (C58-C59). The consistency between protein presence/absence in RM200 and antibody responses (C59) provides internal validation. The enrichment statistics are significant and biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Diverse core locus (DCL) proteins showed variant-specific responses. PspA variants showed significant IgG increases in cohort 3 but not placebo, with binding rising against multiple variants consistent with broadly protective immunity. PspC response was strongly evident only to variant 42 (intermediate similarity to RM200). ZmpB showed significant increase only to the single variant most closely related to RM200 (all others >20% divergent), while ZmpA showed increases to many variants, with strongest responses to those <20% divergent from RM200.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by Figures 4B and 5A-D showing heatmaps of variant-specific responses. The differential patterns between PspA (broad, C61), PspC (narrow, C62), ZmpB (highly specific, C63), and ZmpA (intermediate, C64-C65) are visually evident and consistent with cited literature on PspA cross-reactivity (Nabors et al., 2000; Tart et al., 1996). The sequence divergence thresholds provide quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Temporal analysis revealed differential response kinetics: for SBPs, cell wall metabolism proteins, and ZmpA variants, responses were generally maximal after a single injection, particularly in cohort 3. Using a 0.2 threshold, 112 probes increased substantially after the first dose (median pre-vaccination IgG=2.53, likely anamnestic responses), while only 27 probes showed similar increases after the third dose. These late-responding probes had significantly lower pre-vaccination IgG binding (median=1.43, p=0.0013), probably representing slower primary immune responses to proteins not previously recognized, indicating multiple WCV doses can elicit antibodies to proteins not commonly recognized by pre-existing immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 present a coherent temporal analysis supported by Figures 6 and 7. The differential kinetics between protein categories (C66) is visually evident. The statistical comparison of pre-vaccination IgG levels between early and late responders (C70) uses appropriate Wilcoxon test with significant p-value. The interpretation of anamnestic (C68) versus primary (C71) responses based on pre-vaccination IgG levels is biologically reasonable. The conclusion (C72) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Despite the phase I trial being primarily designed for safety outcomes (potentially limiting statistical power for proteome-scale immunogenicity), complementary statistical analyses identified significantly elevated IgG binding to 137 probes corresponding to 112 protein sequences, representing 72 functionally-distinct proteins including multiple conserved antigens. These changes appear to represent a combination of boosting anamnestic responses and inducing novel antibodies, with speculation that administration to immunologically-na\u00efve infants would likely result in a much higher proportion of novel responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 provide appropriate context and summary. The acknowledgment of trial design limitations (C73) is scientifically honest. The summary statistics (C74-C75) are consistent with earlier detailed claims. The interpretation of mixed anamnestic and novel responses (C76) is supported by the temporal analysis. The speculation about infant responses (C77) is appropriately qualified as speculation and is biologically reasonable given adult pre-existing immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Despite pre-existing differences in adaptive immune responses, WCV-induced alterations in antibody profiles were remarkably consistent between individuals. Only a subset of proteins, enriched for naturally immunogenic ABTs, provoked strong post-WCV responses. Surface-associated proteins enriched among WCV antigens may be important for protective IgG responses through agglutination or opsonophagocytosis, though high-throughput array measurements cannot currently substitute for functional assays in determining protection sufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 provide appropriate synthesis and limitations. The consistency between individuals (C79) is supported by Figures 3E-F and 5. The enrichment for ABTs (C80) is documented throughout. The mechanistic speculation about protection (C81) appropriately cites relevant literature (Mitsi et al., 2017; Hyams et al., 2010). The acknowledgment of limitations (C82) is scientifically appropriate and honest about what the array technology can and cannot determine.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Human cGAScat exhibits intrinsic dimerization without dsDNA, with a dimerization constant of ~20 \u00b5M. SEC and SAXS experiments demonstrate concentration-dependent monomer-dimer equilibrium, with the dimeric fraction proportional to protein concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C6-C9 provide converging evidence from SEC and SAXS experiments showing concentration-dependent dimerization. The dimerization constant was quantitatively estimated using multiple analytical methods (SAXS molecular weight estimation and OLIGOMER analysis), and the data are internally consistent across techniques.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "cGAScat binds dsDNA in a length-dependent manner and this binding is directly coupled to dimerization. FRET experiments show that longer dsDNA (optimum ~300 bp) induces dimerization more efficiently, with Hill constants between 1.5-2 indicating cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 present a coherent set of FRET-based dimerization experiments complemented by binding assays. The length-dependent KFRET values, increased maximal FRET changes with longer dsDNA, and Hill constants all support the coupling between dsDNA binding and dimerization. The data are quantitative and reproducible (n=3, \u00b1SD reported).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ATP/GTP substrates can induce dimerization of cGAScat in the absence of dsDNA, though less efficiently than long dsDNA. The fraction of active dimeric cGAS is partitioned according to both dsDNA length and substrate availability, consistent with classical allosteric enzyme behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 demonstrate substrate-induced dimerization through FRET experiments and establish quantitative binding parameters (Ki for analogues, KM for ATP/GTP). The allosteric framework is well-supported by the experimental data showing that multiple ligands can shift the monomer-dimer equilibrium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A PPiase-coupled assay provides a robust quantitative method for monitoring cGAS enzymatic activity. The assay shows that cGAScat produces PPi most efficiently with equimolar ATP/GTP plus dsDNA, with no activity from inactive mutants and non-rate-limiting PPiase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 establish the validity of the PPiase-coupled assay through appropriate controls (inactive mutant, PPiase kinetics, substrate specificity). The validation is thorough and the method enables subsequent kinetic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "dsDNA length regulates both the binding affinity (Kact) and maximal activity (kmax) of cGAScat, resulting in two-stage length discrimination. The overall signaling efficiency changes ~100-fold between 24-339 bp dsDNA, contrasting with previous reports that length only affects binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 present systematic activity measurements across dsDNA lengths showing that both Kact and kmax are length-dependent. The data directly contradict prior models (C46 cites Andreeva et al., 2017) and provide quantitative evidence for dual-stage discrimination. The 100-fold change in efficiency is calculated from experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Steady-state kinetics reveal that dsDNA length modulates both KM (~2-fold change) and kcat (~4-fold change) for ATP/GTP, resulting in up to 8-fold variation in catalytic efficiency. Hill constants near 2 suggest substrate-substrate cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C61 provide comprehensive steady-state kinetic analysis with appropriate replication (n=3, \u00b1SD). The KM and kcat values are consistent with prior literature (C51, C52), and the Hill constants support the cooperativity interpretation. The 8-fold change in kcat/KM is directly calculated from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Full-length cGAS (cGASFL) has enhanced dimerization propensity compared to cGAScat (dimerization constant ~7.5 \u00b5M vs ~20 \u00b5M). The N-domain itself can dimerize and potentiates the overall dimerization of cGAS, while cGASFL operates within the same molecular framework as cGAScat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C79 provide multiple lines of evidence (SEC, SAXS, FRET, activity assays) showing that cGASFL dimerizes more readily than cGAScat. The N-domain dimerization is directly demonstrated (C66-C67), and the enhanced coupling of substrate/dsDNA binding to dimerization is quantitatively shown. The conclusion that both operate in the same framework is supported by parallel behavior in all assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The K394E mutation prevents dimerization of cGAS, and this monomeric mutant shows basal activity without dsDNA but cannot be stimulated by dsDNA regardless of length. This demonstrates that dimerization is necessary for dsDNA-dependent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 use the K394E mutant as a critical test of the dimerization requirement. SEC and SAXS confirm the mutant is monomeric (C86-C87), and activity assays show it retains basal activity but loses dsDNA responsiveness (C91-C94). This is strong evidence that dimerization is required for activation, though the interpretation assumes the mutation specifically disrupts dimerization without affecting other functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C112"
+    ],
+    "result": "Negative-stain EM shows that cGAS dimers randomly decorate dsDNA rather than forming ordered ladder-like structures. With excess dsDNA, cGAS particles (matching dimeric Dmax) are distributed randomly, and ladder arrangements are rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C112 present nsEM observations, but the interpretation is limited by the low resolution of the technique (acknowledged in the manuscript). While the images show random decoration rather than ordered arrays, nsEM cannot definitively rule out transient or dynamic ordered structures. The particle size measurements (C104) provide supporting evidence, but higher-resolution structural studies are needed to conclusively establish the arrangement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The dependence of cGAS activity on dsDNA length is context-dependent, varying from 8-fold (low enzyme/substrate) to 1.5-fold (high enzyme/substrate) difference between short and long dsDNA. This reconciles conflicting prior reports and shows cGAS generates graded output based on cellular conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 systematically vary enzyme and substrate concentrations to demonstrate context-dependent length discrimination. The experimental design directly tests the hypothesis that conflicting literature arose from different reaction conditions. The data are quantitative (n=3, \u00b1SD) and the trend is consistent across both cGAScat and cGASFL (C123). This provides a unifying explanation for prior discrepancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C35",
+      "C36",
+      "C85",
+      "C97",
+      "C100",
+      "C115",
+      "C116",
+      "C117",
+      "C124",
+      "C125",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "cGAS functions as a classical allosteric enzyme with an intrinsic monomer-dimer equilibrium. Substrate binding, dsDNA length, enzyme concentration, and the N-domain synergistically regulate the dimeric fraction, enabling switch-like, context-dependent signaling responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching model integrates multiple experimental findings (dimerization, ligand binding, activity modulation) into a coherent allosteric framework. The model is supported by the cooperative binding (Hill constants 1.5-2), ligand-dependent equilibrium shifts, and context-dependent activation. However, the model is primarily phenomenological\u2014the structural basis for allostery and the detailed mechanism of how dimerization activates catalysis remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Based on measured kinetic parameters and intracellular ATP/GTP concentrations (>1 mM and ~500 \u00b5M), cGAS would generate one cGAMP in <20 s with dsDNA versus ~15 min without dsDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 perform straightforward calculations based on measured kcat values and literature-reported intracellular nucleotide concentrations. The calculations are mathematically sound, though they assume steady-state conditions and don't account for potential regulatory mechanisms or local concentration variations in cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The isolated N-domain (cGASN) binds dsDNA much more weakly (KD >10 \u00b5M) than cGAScat in solution equilibrium assays, contrasting with non-equilibrium mobility assays from prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 presents direct binding measurements using fluorescence anisotropy, a well-established equilibrium method. The contrast with Tao et al.'s mobility assay (cited in C68) highlights important methodological differences between equilibrium and non-equilibrium techniques. The data support the conclusion but suggest the N-domain's dsDNA binding may be more complex than initially appreciated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Mouse cGAScat behaved as a monomer in previous studies, and the authors speculate that mouse cGAScat intrinsically dimerizes more weakly than human cGAScat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C4 accurately cites prior work, but C5 is explicitly speculative without direct experimental evidence comparing mouse and human cGAS under identical conditions. The speculation is reasonable given the observed differences, but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C84",
+      "C85"
+    ],
+    "result": "24 bp dsDNA activates cGAS to a significant extent despite failing to induce dimerization, which is explained by ATP/GTP increasing the dimeric fraction and allowing short dsDNA to activate cGAS to some degree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 present an apparent paradox (activation without dimerization) and resolve it through the allosteric model. The FRET data (C80) and activity data (C81, C84) are direct observations, and the interpretation (C85) is consistent with the substrate-induced dimerization shown in C30-C31. However, the magnitude of activation by 24 bp dsDNA is modest, and alternative explanations (e.g., monomeric activity) cannot be completely excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The residual dsDNA length dependence of K394E-cGASFL likely arises from dimerization of the N-domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is explicitly speculative ('we predict') and lacks direct experimental evidence. While the speculation is logical given that K394E disrupts catalytic domain dimerization but leaves the N-domain intact, it requires validation through additional experiments (e.g., testing K394E with N-domain deletion).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The observed cGAS\u2022dsDNA clusters in nsEM may reflect recently reported phase-shifting condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is explicitly speculative ('it is possible') and connects the nsEM observations to a separate phenomenon (phase separation) reported by Du and Chen, 2018. While the speculation is interesting, nsEM alone cannot establish whether the clusters represent phase-separated condensates, and further experiments would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "While it was thought that cGAS does not bind ATP/GTP without dsDNA, analysis of crystal structure B-factors suggests cGAS might weakly interact with ATP/GTP even without dsDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C26 cites prior work, C27 states established knowledge, but C28-C29 are speculative inferences from B-factor analysis. B-factors indicate flexibility but don't directly demonstrate binding. The subsequent FRET experiments (C30-C31) provide evidence for substrate-induced dimerization, which indirectly supports weak substrate binding, but direct binding measurements without dsDNA are not presented.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The single-chromosome yeast strains SY14 (linear) and SY15 (circular) were created via CRISPR-Cas9 and maintain stable genomes through successive passages. Both strains show consistent colony size, growth rates, chromosome integrity, and telomere length (~1.3 \u00b1 0.1 kb) over 63 re-streaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 are well-supported by experimental data including growth assays (Figure 1B-E), PFGE analysis (Figure 1\u2014figure supplement 1), and Southern blotting (Figure 1F). The data demonstrate genomic stability across multiple passages with appropriate controls and replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C101"
+    ],
+    "result": "The essentiality of the CST complex (Cdc13-Stn1-Ten1) is attributed to its role in telomere protection rather than other cellular functions. Deletion of CDC13, STN1, or TEN1 is lethal in linear-chromosome SY14 cells but not in circular-chromosome SY15 cells, while RAP1 remains essential in both strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 and C101 are supported by experimental data (Figure 2A-C) showing differential viability and growth effects in SY14 versus SY15 strains upon CST deletion. The comparison with RAP1 deletion provides appropriate controls, though the conclusion assumes no other essential CST functions exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The CST complex does not affect replication of interstitial telomeric sequences (ITSs). Inserted 255 bp telomeric sequences (TG255/CA255) were stably transmitted through ~100 population doublings in SY15 CST deletion mutants without mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by Southern blotting (Figure 2\u2014figure supplement 1), PCR analysis (Figure 2E), and sequencing data (Figure 2\u2014figure supplement 2). However, the authors acknowledge that rare replication difficulties or low-frequency expansion/contraction events might not be detected within ~100 generations, indicating some uncertainty in the generalizability of the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Deletion of CDC13 in SY14 leads to telomere erosion and intrachromosome end-to-end fusion. Approximately 1\u2030 of SY14 cdc13\u0394 cells survive through chromosomal circularization, with most survivors (27/30) showing fusion between the telomeric TG1-3 region of Chr XVI-L and a (CA)17 region 43.9 kb from the Chr X-R telomere, with retained TG sequences ranging from 21-374 bp (average 126 bp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C65-C69 are well-supported by comprehensive experimental data including Southern blotting (Figure 3A), PCR mapping (Figure 3C, Figure 3\u2014figure supplement 1), and sequencing of 68 independent clones (Figure 3\u2014figure supplements 2-3, Figure 4A). The characterization of fusion junctions is thorough with appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Chromosome end-to-end fusion in SY14 cdc13\u0394 depends on Rad52 but not Yku. Deletion of RAD52 reduces fusion efficiency by over 60-fold, while deletion of YKU70 has no significant effect. The NHEJ pathway contributes little to chromosomal fusion, indicating that fusions are mainly mediated by the Rad52 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C70-C73 are supported by quantitative survivor formation assays (Figure 4C) and fusion type analysis (Figure 4D). The plasmid repair assay (Figure 4\u2014figure supplement 4) confirms that NHEJ is functional in SY14, ruling out the alternative explanation that Rad52 dominance is due to defective NHEJ. Statistical significance is demonstrated through fold-change comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C105"
+    ],
+    "result": "Chromosomal circularization in SY14 cdc13\u0394 survivors partially depends on Pol32. Deletion of POL32 results in an approximately 3-fold decrease in chromosome fusion rates compared to CDC13 deletion alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 and C105 are supported by quantitative survivor formation assays (Figure 4E). The partial dependence on Pol32 suggests involvement of MMEJ or BIR pathways in addition to SSA. However, the magnitude of the effect is modest (3-fold) compared to the RAD52 effect (60-fold), and the mechanistic interpretation remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C76",
+      "C102"
+    ],
+    "result": "Cdc13 plays a predominant role in inhibiting telomere fusion compared to Stn1 and Ten1. The emergence frequency of survivors in SY14 cdc13\u0394 was ~29-fold higher than in stn1\u0394 or ten1\u0394 mutants (1.14\u2030 vs 0.04\u2030), demonstrating nonequivalent roles of CST subunits in telomere capping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C76, and C102 are supported by quantitative survivor formation assays (Figure 5A) showing statistically significant differences in fusion frequencies. The data from 46 stn1\u0394 and 43 ten1\u0394 clones (Figure 5B) provide adequate sample sizes. The conclusion is further supported by the observation that only ~30% of stn1\u0394/ten1\u0394 survivors are rTG Type compared to 92% in cdc13\u0394.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Independent of Cdc13, Stn1 and Ten1 play roles in inhibiting chromosome fusion. Double deletion of CDC13 with STN1 or TEN1 results in 10- and 6-fold increases in fusion rates compared to single STN1 or TEN1 deletion, but fusion rates remain significantly lower than in cdc13\u0394 alone. The percentage of rTG Type fusions increases to 86-89% in double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by quantitative assays (Figure 5C) and fusion type characterization (Figure 5D, Figure 5\u2014figure supplements 4-5). The data demonstrate that CST subunits are not fully epistatic, with Stn1 and Ten1 having Cdc13-independent protective functions. Sample sizes (35 clones each for double mutants) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Chromosome circularization preferentially occurs at sites where complementary sequences exist on two telomeres. In SY14CA255 cst\u2206 survivors with an inserted 255 bp CA sequence 20.9 kb from the Chr X-R telomere, all clones were rTG Type and utilized the inserted CA255 sequence instead of the more distal (CA)17 repeat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by experimental data (Figure 5\u2014figure supplement 6) showing preferential use of the more proximal CA255 sequence. This elegant experiment demonstrates sequence-dependent fusion site selection. However, the sample size is not explicitly stated, and alternative explanations (e.g., chromatin structure effects) are acknowledged but not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Chromosomal fusion readily occurs in telomerase-null SY14 tlc1\u0394 cells. Telomeres shorten with increasing passages until senescence at ~75 generations, after which survivors emerge. Most survivors (84%) undergo chromosomal circularization via homologous TG1-3/C1-3A sequences, with retained TG sequences of 18-58 bp (average 36 bp) at fusion junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C83-C87 are supported by growth assays (Figure 6A-C), Southern blotting (Figure 6B, D), and sequencing of 42 clones (Figure 6\u2014figure supplement 3). The shorter retained TG sequences in tlc1\u0394 survivors (36 bp average) compared to cdc13\u0394 survivors (126 bp average) supports the interpretation that fusion occurs after extensive telomere shortening in tlc1\u0394 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "In SY14 tlc1\u0394 cells, chromosome fusion takes place passively after telomeres experience extensive shortening (crisis), while in SY14 cdc13\u0394 cells, fusion occurs immediately upon telomere deprotection via loss of Cdc13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are inferred from the comparison of retained TG sequence lengths between tlc1\u0394 (36 bp average) and cdc13\u0394 (126 bp average) survivors. While this interpretation is reasonable and consistent with the data, it remains somewhat speculative as the timing of fusion events was not directly measured. The difference in retained sequences provides strong indirect evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The efficiency of telomere recombination is affected by chromosome number in budding yeast. With reduction in chromosome numbers, Type II survivor frequency decreases while Type I survivors increase. In strains with eight or fewer chromosomes, chromosome fusions might exist based on distinct bands observed in Southern blots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 are supported by Southern blotting data (Figure 6\u2014figure supplement 4B-E) showing changes in survivor types across strains with different chromosome numbers. However, C92 is highly speculative, as the distinct bands could represent various telomere structures rather than chromosome fusions. The authors acknowledge that most telomerase-null cells prefer canonical recombination pathways, and fusion events were not definitively characterized in these strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The RAD52 pathway plays a dominant role in chromosomal end-to-end fusion in SY14 tlc1\u0394 cells. Double deletion of TLC1 and RAD52 accelerates senescence and makes survivor generation much more difficult, with no rTG Type survivors generated. In contrast, deletion of YKU70 does not affect rTG Type survivor generation (81% vs 84%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by growth assays (Figure 7A), Southern blotting (Figure 7B), and fusion type analysis (Figure 7C, Figure 7\u2014figure supplements 1-4). Sample sizes are adequate (34 rad52\u0394 clones, 36 yku70\u0394 clones). The data clearly demonstrate RAD52 dependence, though the qualitative assessment that survivors are 'much more difficult to obtain' could benefit from quantitative measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Pol32 is not required for generation of rTG Type survivors but might function in non-TG Type development in SY14 tlc1\u0394 cells. Deletion of POL32 does not affect survivor development timing, but increases the rTG Type survivor rate to 100% compared to 84% in tlc1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by senescence assays (Figure 7D) and fusion type analysis (Figure 7C, Figure 7\u2014figure supplement 5). The increase in rTG Type percentage from 84% to 100% suggests Pol32 may facilitate non-TG Type fusions. However, C100 is somewhat speculative, and the discrepancy with the cdc13\u0394 results (where Pol32 affects fusion rates) is noted but not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "rTG Type and non-TG Type chromosomal fusions are proposed to be mainly achieved through the single-strand annealing (SSA) pathway, though MMEJ or BIR pathways cannot be ruled out. The model is based on observations of end resection and homologous sequence pairing at fusion junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C103 is speculative, inferred from the characteristics of fusion events (end resection, homologous pairing) rather than direct mechanistic evidence. C104 appropriately acknowledges alternative possibilities. While the SSA model is reasonable given the Rad52 dependence and sequence homology at junctions, definitive pathway identification would require additional genetic and biochemical experiments. The partial Pol32 dependence suggests pathway complexity.",
+    "result_type": "MINOR"
+  }
+]

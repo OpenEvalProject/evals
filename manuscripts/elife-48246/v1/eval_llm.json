@@ -1,0 +1,470 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors mapped mRNA contacts with 18S rRNA in the ES6S region of the 48S-PIC using crosslinking and RNA-seq. Crosslinking sites concentrated in ES6S helices (ES6SE, ES6SC-D, ES6SB, ES6SA), with contacts only at surface-exposed regions. An mRNA path was drawn extending from ES6SE to ES6SC-D, flanked by ribosomal proteins eS7, eS4, and uS4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 provide converging evidence from crosslinking experiments with both unstructured and structured (SFV-DLP) mRNAs. The RTTS assay and RNA-seq data (C36) identify specific crosslinking sites, and the inference that mRNA contacts only surface-exposed regions (C37) is reasonable. The drawn mRNA path (C39) is a valid interpretation of the crosslinking data shown in Figure 1a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "Proteomic analysis identified ribosomal proteins crosslinked with mRNA in the 48S-PIC. uS5 showed the highest score and coverage, localizing between the mRNA entry channel and ES6S region, extending ~48 \u00c5 along the channel. Other crosslinked proteins included uS3, uS4, eS4, eS6, eS24 (solvent side), eS19 (decoding site), and uS17 (exit channel).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44, and C45 describe proteomic findings from mass spectrometry analysis shown in Figure 1b. The identification of uS5 as the top hit is data-driven, and its structural localization (C44) is based on known 40S structure. The detection of other crosslinked proteins (C45) provides additional mapping information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Crosslinking experiments with 4-thio-U at different positions mapped eIF3g and eIF4A placement in the 48S-PIC. eIF3g showed maximum crosslinking at +24 nt (consistent with placement near ES6SA), while eIF4A showed maximum crosslinking at +27 nt (between ES6SA and ES6SB helices). Unstructured mRNA showed strong eIF3g but minimal eIF4A crosslinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 describe systematic crosslinking experiments shown in Figure 2. The differential crosslinking patterns between structured and unstructured mRNAs (C47-C48) are experimentally demonstrated. The positional mapping (C50-C51) provides spatial resolution, and the modeling-based placement interpretations (C52-C53) are reasonable given the structural constraints and previous literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "VIC-oligo 4 transfection specifically inhibited protein synthesis in mammalian cells. The effect was rapid (4-6 hpt), independent of fluorochrome type, and resulted in 80S accumulation with decreased polysomes, indicating translation initiation blockade. Control oligo 5.4 showed no effect, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 describe functional validation experiments shown in Figure 3b. The metabolic labeling data (C54), specificity controls (C55-C56), fluorochrome independence (C57), time-course (C59), and polysome profiling (C61) provide converging evidence for translation initiation blockade. The inferences about mechanism (C60, C62) are well-supported by the polysome profile changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "VIC-oligo 4 treatment did not significantly alter 28S/18S rRNA ratios or ribosomal protein distribution across sucrose gradients, suggesting 40S biogenesis was not affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 provide control data shown in Figure 3\u2014figure supplement 3. The RNA analysis (C63) and western blot data (C64) support the inference that 40S biogenesis is unaffected (C65), ruling out an indirect effect through ribosome assembly disruption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "ES6S blockage by VIC-oligo 4 drastically reduced eIF4A/eIF3g crosslinking with mRNA, suggesting disruption of mRNA interaction with the ES6S region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 describe crosslinking experiments shown in Figure 3\u2014figure supplement 4. The dramatic reduction in crosslinking (C66) directly supports the inference that VIC-oligo 4 disturbs mRNA-ES6S interactions (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "eS4-EGFP fusion protein was incorporated into 40S and 80S particles with similar efficiency as endogenous eS4, but showed differential 40S accumulation suggesting pre-initiation blockade. Protein synthesis was inhibited to an extent comparable to cycloheximide treatment, without affecting eIF distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe an alternative ES6S blocking approach using eS4-EGFP fusion shown in Figure 3c-d. The microscopy (C68), gradient analysis (C69), and OPP incorporation data (C71) are experimentally demonstrated. The inference about pre-initiation blockade (C70) is supported by the differential 40S accumulation pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "VIC-oligo 4 differentially affected translation of luciferase mRNAs based on 5' UTR characteristics. mRNAs with long (656 nt) or structured (SL20) 5' UTRs showed dramatic inhibition (50-80-fold), while short 5' UTR (33 nt) mRNAs showed minimal effect (~2-fold). HCV IRES-driven translation was only modestly affected (2-3-fold), and sensitivity increased with 5' UTR length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 describe reporter assay results shown in Figure 4a and supplements. The differential effects based on 5' UTR structure and length are experimentally demonstrated across multiple constructs. The minimal effect on IRES-driven translation (C76) provides important mechanistic insight about cap-dependent vs. IRES-mediated initiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "VIC-oligo 4 differentially affected viral mRNA translation: IRES-driven viruses (EMC, PV) were not significantly affected, while cap-dependent viruses (SFV, VSV) were dramatically inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe viral infection experiments shown in Figure 4\u2014figure supplement 1. The differential effects on IRES vs. cap-dependent viral translation provide orthogonal validation of the mechanism identified with reporter constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "VIC-oligo 4 prevented luciferase accumulation from ATF-4 5' UTR reporter upon thapsigargin treatment, demonstrating blockade of scanning and/or reinitiation on this scanning-dependent mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 describe ATF-4 reporter experiments shown in Figure 4c. The prevention of stress-induced ATF-4 translation (C80) supports the inference about scanning/reinitiation blockade (C81), as ATF-4 is a well-established model for scanning-dependent reinitiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Genome-wide polysome profiling revealed that mRNA sensitivity to VIC-oligo 4 varied >30-fold, with distribution skewed toward translation inhibition. Total mRNA abundance showed minimal differences between oligo 4 and VIC-oligo 4 treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe genome-wide analysis shown in Figure 5a and supplements. The polysome profiling data (C82-C83) demonstrate broad but variable effects, and the RNA-seq control (C84) rules out transcriptional effects, supporting a translation-specific mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Gene ontology analysis revealed that 'TE down' mRNAs were enriched in cell signaling/growth pathways (especially GPCR and Ras signaling) and cancer-related pathways, encoding membrane proteins. 'TE up' mRNAs were enriched in RNA metabolism functions, encoding nuclear proteins with RNA binding activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe GO analysis results shown in Figure 5b and supplements. The enrichment analyses are statistically supported and provide biological context for the differential translation effects. The functional categorization is data-driven from the polysome profiling dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "5' UTR features distinguishing 'TE down' from 'TE up' groups included higher G+C content (74% vs 63%, p=3\u00d710\u207b\u2074\u2079), more stable predicted secondary structure (-72.5 vs -27.7 kcal/mol, p=3\u00d710\u207b\u00b2\u00b3), and longer length (p=6\u00d710\u207b\u00b9\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe computational analysis of 5' UTR features shown in Figure 5c. The statistical comparisons are properly conducted with appropriate tests (Mann-Whitney U test), and the highly significant p-values support the distinctions between groups. The PCA analysis (C89) validates these as the most discriminating features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The 'TE down' group showed strong enrichment of (GGC/A)\u2084 motifs (E-value=2.7\u00d710\u207b\u2077\u2076 for 15-mer) and G-quadruplex motifs (G\u2083N\u2081\u208b\u2081\u2082)\u2084 (\u03c7\u00b2<10\u207b\u2074, 3-fold higher than 'TE up'). These motifs were absent in 'TE up' group, and ~75% of 'TE down' mRNAs contained either motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 describe motif enrichment analysis shown in Figure 5d and supplements. The MEME analysis (C93-C94) and QuadBase2 analysis (C95) provide complementary computational evidence. The high statistical significance and the prevalence data (C96) strongly support enrichment of G-rich structural elements in ES6S-sensitive mRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "In vitro translation experiments demonstrated that G4 motifs rendered luciferase mRNA more sensitive to VIC-oligo 4 than (GGC)\u2084 motifs, with a correlation between predicted G4 stability and extent of translation inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 describe in vitro validation experiments shown in Figure 5e. The differential effects of G4 vs. (GGC)\u2084 motifs (C97-C98) and the correlation with predicted stability (C99) provide functional validation of the computational predictions and demonstrate a structure-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Western blot analysis showed dramatic reduction in CCND3, ODC-1, HRas, and AKT1 proteins upon VIC-oligo 4 transfection, with GRK2 showing lesser reduction. Time-course confirmed high CCND3 sensitivity, with rapid disappearance likely due to its short half-life (~30 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 describe validation of specific targets shown in Figure 6b. The western blot data demonstrate differential protein-level effects consistent with the polysome profiling. The inference about CCND3 kinetics (C103) is reasonable given known protein stability, though this represents an interpretation rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Comparison of VIC-oligo 4 with hippuristanol (eIF4A inhibitor) showed overlapping but distinct effects. Both reduced GRK2, AKT1, and CCND3, but HRAS was unaffected by hippuristanol while eIF4B increased with both treatments, suggesting partial functional overlap between ES6S and eIF4A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 describe comparative pharmacology shown in Figure 6c. The differential effects (C105-C107) demonstrate that ES6S blockade and eIF4A inhibition are not identical, supporting the inference of partial overlap (C108). However, the mechanism underlying the differences requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Comparison with published eIF4A-dependent mRNA datasets showed that ~50% of eIF4A-dependent mRNAs were also VIC-oligo 4-sensitive, but ES6S blockage appeared to have wider impact on translation than eIF4A downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 describe meta-analysis shown in Figure 6\u2014figure supplement 2. The overlap analysis (C110) is quantitative, and the inference about broader impact (C111) is supported by comparison with multiple published datasets. However, differences in experimental systems and conditions should be considered when interpreting these comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "eS4-EGFP overexpression strongly inhibited AKT-1 translation while less affecting GRK2 and HRAS, with slight eIF4B increase. This confirmed comparable effects between VIC-oligo 4 and eS4-EGFP ES6S blockage methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe validation with the alternative blocking method shown in Figure 6d. The differential effects on specific targets are experimentally demonstrated. The inference about comparable effects (C115) is supported by the similar patterns observed with both blocking approaches, validating the specificity of ES6S involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In vitro translation experiments showed VIC-oligo 4 drastically inhibited mRNAs with structured 5' UTRs but stimulated translation of short, unstructured 5' UTRs (63 nt, G-less) at endpoint measurements. Real-time analysis revealed FITC-oligo 4 accelerated luciferase accumulation and reduced full translation time (FTT) by 2 min for G-less mRNA, suggesting accelerated scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 describe in vitro kinetics shown in Figure 7a-c. The endpoint measurements (C116-C117) and real-time data (C118) are experimentally demonstrated. The FTT analysis (C119) provides quantitative support for accelerated scanning, though the inference assumes FTT primarily reflects scanning time rather than other rate-limiting steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "For structured 5' UTR-SL20 mRNA, FITC-oligo 4 drastically reduced luciferase accumulation without altering FTT (suggesting arrest rather than delay), while hippuristanol delayed accumulation and increased FTT by 2 min (suggesting scanning delay). The effects were similar but not identical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 describe comparative kinetics shown in Figure 7b-c. The differential effects on FTT between FITC-oligo 4 and hippuristanol (C120-C122) provide mechanistic insight. The inference about arrest vs. delay (C120, C122) is reasonable based on the kinetic profiles, and the conclusion about similar but distinct effects (C123) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Combined treatment with VIC-oligo 4 and hippuristanol showed dramatic synergistic inhibition of 5' UTR-SL30 mRNA translation (60-fold) and lesser effect on 5' UTR-G41 (12-fold), strongly suggesting convergence of eIF4A helicase and ES6S region functions during initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 describe combination experiments shown in Figure 7d. The synergistic inhibition is experimentally demonstrated with quantitative measurements. The inference about functional convergence (C126) is well-supported by the synergy data, as independent pathways would show additive rather than synergistic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C127",
+      "C138"
+    ],
+    "result": "The authors propose that the ES6S region constitutes an extended mRNA-binding channel with open topology (rather than narrow cleft) that makes scanning slower but more processive. This model explains the differential sensitivity of mRNAs to ES6S blockage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7, C127, and C138 represent the central model proposed by the authors. The model is well-supported by converging evidence from crosslinking (structural data), functional assays (differential effects), and kinetics (slower but more processive). The topology interpretation (C127) is based on structural data, and the slower-but-more-processive characterization (C7, C138) is supported by the in vitro kinetics and differential mRNA sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The model proposes that mRNAs with short, unstructured 5' UTRs can bypass ES6S under blockage conditions, threading directly into the classical mRNA channel and accelerating scanning. This would make ES6S participation dispensable for some mRNAs like 5' TOP mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 describe the proposed mechanism for unstructured mRNAs shown in Figure 8b. The bypass model (C140) is supported by the accelerated translation observed in vitro (C117-C119) and the upregulation of some mRNAs in cells (C87). The connection to 5' TOP mRNAs (C142) is supported by their known eIF4A-independence and their enrichment in the 'TE up' group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "For mRNAs with long, structured 5' UTRs, the model proposes that ES6S blockage reduces scanning processivity, causing secondary structures to stack at the mRNA entry channel, resulting in stalling and/or 48S-PIC dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 describe the proposed mechanism for structured mRNAs. The reduced processivity inference (C145) is supported by the dramatic inhibition observed for structured mRNAs (C74, C116) and the arrest kinetics (C120). The stacking mechanism (C146) is a reasonable inference though not directly visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "ES6S blockage inhibited cap-dependent translation of mRNAs with structured 5' UTRs (including G-quadruplexes), many involved in signal transduction and growth, but did not affect IRES-driven translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 summarize key functional findings. The inhibition of structured 5' UTR mRNAs (C3) is demonstrated by reporter assays (C74) and genome-wide analysis (C82-C96). The GO enrichment (C4) is shown in C85-C86. The lack of IRES effect (C5) is demonstrated by HCV IRES (C76) and viral experiments (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Genome-wide analysis revealed great diversity in ES6S-mediated scanning dependency across mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is directly supported by the polysome profiling data showing >30-fold variation in sensitivity (C82) and the identification of distinct 'TE up' and 'TE down' groups with different 5' UTR characteristics (C89-C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors propose that ES6S extensions (especially ES6SA and ES6SB) may flexibly assist mRNA placement according to secondary structure content, similar to tentacle-like structures in 60S subunit. eIF4F likely participates directly in mRNA accommodation in ES6S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C130 represent speculative interpretations. While the comparison to 60S structures (C129) is supported by citations, the flexibility hypothesis (C128) and eIF4F participation (C130) are inferences from indirect evidence (conformational changes C30, eIF4G contacts C20). Direct demonstration of flexibility and eIF4F's role in ES6S accommodation would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C131",
+      "C133"
+    ],
+    "result": "The exact placement of eIF4A in the scanning complex could not be mapped, likely due to dynamic eIF4A-mRNA interactions. The possibility that other helicases (DDX3, DHX9, DHX36) associate with ES6S deserves investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C133 acknowledge limitations and future directions. The inability to precisely map eIF4A (C131) is an honest assessment of the data's resolution limits. The speculation about other helicases (C133) is reasonable given their known roles in translation, though it represents future work rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The blocking activity of oligo 4 required conjugation of bulky molecules (fluorophores) at the 5' end, which likely project toward the ES6S cavity. Alternative mechanisms involving restriction of ES6SA/ES6SB conformational changes cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 describe the blocking mechanism. The requirement for bulky conjugates (C134) is experimentally demonstrated (C57). The projection hypothesis (C135) is a reasonable inference from structural modeling, though the exact arrangement wasn't determined. The acknowledgment of alternative mechanisms (C136) shows appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C144",
+      "C147",
+      "C148"
+    ],
+    "result": "Several mechanistic questions remain open: whether mRNA threads into ES6S during attachment or after cap entry; whether 48S-PICs bypassing stem-loops are productive; and DHX29's role in alleviating structure stacking at the entry channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144, C147, and C148 acknowledge limitations and open questions. These represent honest assessments of what the current data cannot resolve and appropriately identify areas requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "The authors propose ES6S as a potential therapeutic target for small molecules to block translation of mRNAs involved in signal transduction and oncogenesis, potentially offering a more specific alternative to eIF4A inhibitors as anti-cancer drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C150 represent speculative therapeutic applications. While the enrichment of cancer-related mRNAs in the 'TE down' group (C86) provides rationale, these claims represent future possibilities rather than demonstrated therapeutic utility. No drug development, specificity testing, or efficacy data in disease models are presented.",
+    "result_type": "MINOR"
+  }
+]

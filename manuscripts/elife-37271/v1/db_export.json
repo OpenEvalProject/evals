@@ -1,0 +1,1568 @@
+{
+  "submission": {
+    "id": "15314d47-f994-4e96-99dd-531caeffd504",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:54:24.159737Z",
+    "updated_at": "2025-12-02T08:54:24.159737Z"
+  },
+  "content": [
+    {
+      "id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "submission_id": "15314d47-f994-4e96-99dd-531caeffd504",
+      "content_type": "manuscript",
+      "content_text": "# EFHC1, implicated in juvenile myoclonic epilepsy, functions at the cilium and synapse to modulate dopamine signaling\n\n## Authors\n\n- Catrina M Loucks<sup>1</sup>\n- Kwangjin Park<sup>1</sup>\n- Denise S Walker<sup>3</sup>\n- Andrea H McEwan<sup>4</sup>\n- Tiffany A Timbers<sup>1</sup>\n- Evan L Ardiel<sup>4</sup>\n- Laura J Grundy<sup>3</sup>\n- Chunmei Li<sup>1</sup>\n- Jacque-Lynne Johnson<sup>1</sup>\n- Julie Kennedy<sup>5</sup>\n- Oliver E Blacque<sup>5</sup>\n- William Schafer<sup>3</sup>\n- Catharine H Rankin<sup>4</sup>\n- Michel R Leroux<sup>1</sup> ([ORCID: 0000-0003-0788-9298](https://orcid.org/0000-0003-0788-9298)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and Biochemistry Simon Fraser University Burnaby Canada\n2. Centre for Cell Biology, Development, and Disease Simon Fraser University Burnaby Canada\n3. Neurobiology Division MRC Laboratory of Molecular Biology Cambridge United Kingdom\n4. Djavad Mowfaghian Centre for Brain Health University of British Columbia Vancouver Canada\n5. School of Biomolecular and Biomedical Science University College Dublin Dublin Ireland\n6. Department of Psychology University of British Columbia Vancouver Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeurons throughout the mammalian brain possess non-motile cilia, organelles with varied functions in sensory physiology and cellular signaling. Yet, the roles of cilia in these neurons are poorly understood. To shed light into their functions, we studied EFHC1, an evolutionarily conserved protein required for motile cilia function and linked to a common form of inherited epilepsy in humans, juvenile myoclonic epilepsy (JME). We demonstrate that C. elegans EFHC-1 functions within specialized non-motile mechanosensory cilia, where it regulates neuronal activation and dopamine signaling. EFHC-1 also localizes at the synapse, where it further modulates dopamine signaling in cooperation with the orthologue of an R-type voltage-gated calcium channel. Our findings unveil a previously undescribed dual-regulation of neuronal excitability at sites of neuronal sensory input (cilium) and neuronal output (synapse). Such a distributed regulatory mechanism may be essential for establishing neuronal activation thresholds under physiological conditions, and when impaired, may represent a novel pathomechanism for epilepsy.\n\n## Introduction\n\nJuvenile myoclonic epilepsy (JME) is the most common form of idiopathic epilepsy in humans, making up 10\u201330% of cases (Delgado-Escueta, 1984). Most genes implicated in idiopathic epilepsies encode ion channels with predictable consequences on neuronal excitability, yet disruption of EFHC1, a non-ion channel protein, has been reported as the most frequent cause of JME (Delgado-Escueta, 2007). While several neuronal roles have been proposed for EFHC1 (de Nijs et al., 2012; de Nijs et al., 2006; de Nijs et al., 2009; Rossetto et al., 2011; Suzuki et al., 2004), it remains unclear how mutations in EFHC1 lead to epilepsy. Interestingly, EFHC1 is also specifically associated with motile cilia that project from specialized cells to enable fluid flow (Conte et al., 2009; Suzuki et al., 2008; Suzuki et al., 2009), but a role for EFHC1 in non-motile cilia that emanate from most cell types to allow for sensory and signaling functions largely remains unexplored (Zhao et al., 2016).\n\nIn the human brain, there are both motile cilia, which enable cerebrospinal fluid flow, and non-motile cilia, which project from the cell bodies of all or most neurons (Bishop et al., 2007). Although EFHC1 dysfunction impairs motility of ependymal cilia in mice, the accompanying ventricle enlargement does not correlate with epilepsy (Suzuki et al., 2009). Furthermore, although several neuronal functions have been attributed to EFHC1, including regulation of ion channels, apoptosis, cell division, neuronal migration, neurite architecture and neurotransmitter release (de Nijs et al., 2012; de Nijs et al., 2006; de Nijs et al., 2009; Rossetto et al., 2011; Suzuki et al., 2004), a possible role for EFHC1 in non-motile cilia of neuronal cells has not been explored. As a core component of the protofilament ribbon structure of motile cilia thought to dictate the ordered attachment/arrangement of proteins required for motility (Ikeda et al., 2003; Linck et al., 2014), EFHC1 may play a similar role in neuronal cilia to anchor/regulate signaling molecules and modulate neuronal excitability.\n\nHere we demonstrate that rather than being a core component of ciliary motility-associated machinery, the C. elegans orthologue of EFHC-1 is required for mechanosensation in a class of non-motile cilia, where it regulates neuronal activation and dopamine signaling. Interestingly, EFHC-1-mediated signaling also occurs at the synapse in cooperation with a known EFHC1-interaction partner, an R-type voltage-gated calcium channel. Our work highlights the importance of exaptation (functional adaptation) of a cilium motility protein in non-motile sensory cilia. Moreover, our findings reveal a previously undescribed dual-regulation of neuronal excitability at the site of sensory neuron input (cilium) and sensory neuron output (synapse) and suggest an important correspondance between dopamine neurotransmission and epilepsy.\n\n## Results\n\n### EFHC-1 localizes to cilia and synapses of mechanosensory dopaminergic neurons and to the distal regions of male-specific dopaminergic ray neurons\n\nTo isolate possible non-motile ciliary functions of EFHC1, we took advantage of Caenorhabditis elegans, a nematode which only has non-motile sensory cilia. We generated a GFP reporter of C. elegans EFHC-1 driven by its own promoter, and found that the efhc-1::gfp fusion construct is specifically expressed in a small subset of ciliated mechanosensory neurons: the dopaminergic CEP, ADE and PDE neurons, and the glutamatergic OLQ neurons (Figure 1A). Both classes of neurons terminate in cilia embedded in the cuticle, ideally positioned to mediate mechanosensation at various locations along the body: four CEP neurons paired with four OLQ neurons project cilia in the nose, two ADE neurons position cilia in the anterior body, and two PDE neurons localize cilia to the posterior body (Inglis et al., 2007; Sulston et al., 1975; White et al., 1986) (Figure 1A). Additionally, EFHC-1::GFP is found in the distal regions of sex-specific dopaminergic ray neurons in the male tail (Figure 1B, Figure 1\u2014figure supplement 1). Importantly, these expression patterns were confirmed by tagging endogenous EFHC-1 with GFP using the CRISPR/Cas9 technique (Figure 1\u2014figure supplement 2A\u2013B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig1-v1.jpg)\n\n**Figure 1.:** (A) EFHC-1::GFP protein marker is expressed in all classes of dopaminergic neurons shared by both hermaphrodites and males (CEP, ADE and PDE), as well as in the mechanosensory OLQ neurons. Localization is enriched in cilia (arrowheads). Scale bar, 10 \u03bcm. (B) EFHC-1::GFP is also expressed in dopaminergic ray RnA neurons in the male tail (rays 5, 7 and 9) distal to dendrites. Scale bar, 10 \u03bcm. (C) In CEP and OLQ cilia, EFHC-1::GFP localization surrounds the axoneme marked by the intraflagellar transport protein XBX-1::tdTomato. Scale bar, 10 \u03bcm. (D) Human (Hs) EFHC1 is composed of three DM10 domains of unknown function and a C-terminal EF-hand (EFH) domain that is thought to bind calcium. In C. elegans (Ce), only the first two DM10 domains are conserved. A truncation protein harboring the first DM10 domain shows non-specific localization, while a truncation protein containing only the second DM10 domain shows specific ciliary localization in OLQ and CEP neurons. Scale bar, 10 \u03bcm. (E) EFHC-1::GFP also localizes to synaptic regions in CEP neurons, partially overlapping with the synaptic protein, SNB-1::tdTomato. Scale bar, 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) EFHC-1::GFP localizes to regions distal to the dendrites of dopaminergic ray RnA neurons in the male tail (rays 5, 7 and 9). In contrast, XBX-1::tdTomato driven in ciliated cells by the bbs-8 promoter that represents the ciliary axoneme is found in all ray neurons of the male tail. EFHC-1::GFP is also observed in some cell bodies within the male tail, although the identities of these neurons were not determined. Scale bar, 10 \u03bcm. (B) XBX-1::tdTomato only localizes to the ciliary axonemes of RnB neurons but appears to localize to dendrites and basal bodies of both RnA and RnB neurons. EFHC-1::GFP is found distal to the basal body in dopaminergic RnA neurons. Scale bar, 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Endogenously GFP-tagged EFHC-1 is found in dopaminergic and mechanosensory neurons (CEP, ADE, and OLQ). EFHC-1::GFP predominantly accumulates in cilia (white arrows and yellow arrowheads) of OLQ and ADE neurons, but is weakly present in CEP cilia (white arrowheads). Scale bar, 4 \u03bcm (i) and 18 \u03bcm (ii). (B) EFHC-1::GFP is highly enriched in the distal end of the dendrite in the male tail (ray 7), but it is not observed in the additional dopaminergic ray neurons (possibly due to lower expression levels that are below detection abilities). Scale bar, 18 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** EFHC-1 (1\u2013216)::GFP is mainly present at cell bodies and dendrites of OLQ and dopaminergic neurons (CEP, ADE and PDE), while EFHC-1 (217\u2013447)::GFP mostly accumulates within cilia. Arrows point to CEP and OLQ cell bodies and arrowheads represent ADE cell bodies. Asterisk indicates the ADE cilium. Scale bar, 22 \u03bcm.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** When distal regions of the CEP cilium in the EFHC-1::GFP overexpression strain (A) and middle regions of the OLQ cilium in the efhc-1::gfp CRISPR-knock-in strain (B) are photobleached, the GFP signal does not fully recover within 30 s. Pre-bleach ratios are normalized to 1. Scale bar, 3 \u03bcm. (C) Kymographs of IFT-20::GFP in ADL cilia (left), EFHC-1::GFP in CEP cilia (middle) and EFHC-1::GFP in OLQ cilia (right). PS, proximal segment. Scale bar, 3 \u03bcm (D) ODR-10 predominantly localizes to AWB olfactory cilia in wild-type, but it diffuses to dendrites in unc-101 (m1) mutant animals. Ciliary localizations of EFHC-1::GFP in OLQ and CEP neurons (arrows and arrowheads, respectively) are not disrupted in unc-101 mutants. Scale bar, 4 \u03bcm. (E) While CEP ciliary structure is disrupted in the absence of the ciliary DAF-19 transcription factor, EFHC-1::GFP is still expressed. Scale bar, 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A,B) EFHC-1::GFP in CEP axons colocalizes with synaptic vesicles (marked by Pdat-1::mCherry::RAB-3) and active zones (marked by Pdat-1::ELKS-1::tdTomato). While RAB-3 is mislocalized in unc-104 (e1265) mutant animals, the presynaptic localizations of EFHC-1 and ELKS-1 are not changed. Z-stack images are deconvoluted for three-dimensional reconstruction. Yellow arrowheads represent synaptic vesicles (A) and active zones (B) in presynaptic regions. White arrows, CEP cell bodies; White arrowheads, OLQ cell bodies. Scale bar, 8.12 \u03bcm. (C) EFHC-1 shows partial colocalization with ELKS-1 in CEP axons (illustrated using Thresholded Pearson\u2019s correlation coefficients), and this pattern is unchanged in unc-104 mutants. Each dot represents a single axon measured from an individual worm. The statistical significance was calculated using Tukey\u2019s HSD (honest significant difference) test. ns, not significant.\n\nThe ciliated dopaminergic neurons mechanically sense bacteria to modulate behaviors based on food availability (Ezcurra et al., 2011; Kindt et al., 2007a; Sanyal et al., 2004; Sawin et al., 2000), while OLQ neurons sense light touch to the nose and control the rate and bending angle of foraging (side-to-side head movements) (Hart et al., 1995; Kaplan and Horvitz, 1993). In these ciliated neurons, the generated EFHC-1::GFP fusion protein is enriched within cilia, alongside the intraflagellar transport protein (IFT) XBX-1 (DLIC orthologue) which marks ciliary basal bodies and axonemes (Figure 1C). Interestingly, while endogenously GFP-tagged EFHC-1 mostly accumulates in both OLQ and ADE cilia, it is weakly present in CEP cilia (Figure 1\u2014figure supplement 2A), possibly reflecting a lower abundance and/or a tight incorporation with the microtubules at regular intervals within the CEP cilia that limits/masks the fluorescence associated with endogenously GFP-tagged EFHC-1. Ciliary localization of EFHC-1 is further supported by the ability of a truncated protein (C-terminal fragment containing the second of two evolutionarily conserved DM10 domains of unknown function) to specifically localize to OLQ, CEP, ADE and PDE cilia in a manner indistinguishable from the full-length protein (Figure 1D and Figure 1\u2014figure supplement 3). This is in contrast to a second truncated protein (N-terminal fragment containing the first DM10 domain) that displays non-specific localization throughout all neuronal processes of glutamatergic (OLQ) and dopaminergic (CEP, ADE and PDE) neurons (Figure 1D and Figure 1\u2014figure supplement 3).\n\nGiven that EFHC-1 is a core component of the protofilament ribbon structure of motile cilia that closely associates with microtubules and is ideally positioned to anchor proteins at specific locations along cilia, we hypothesized that ciliary localization of EFHC-1 is largely static. Consistent with this, when either the distal or middle portions of CEP and OLQ cilia are photobleached, the EFHC-1::GFP signal does not rapidly recover within 30 s, as would be expected for proteins dependent on diffusion to maintain their proper ciliary localizations, such as ARL-13 (Cevik et al., 2013) (Figure 1\u2014figure supplement 4A\u2013B). Moreover, kymograph analyses suggest that EFHC-1 proteins present in CEP and OLQ cilia are not associated with IFT (Figure 1\u2014figure supplement 4C). EFHC-1 localization is also not dependent on UNC-101, a protein required for dendritic transport and proper ciliary localization of a set of ciliary proteins (Dwyer et al., 2001) (Figure 1\u2014figure supplement 4D). For example, ODR-10 expressed in AWB olfactory neurons of wild-type animals predominantly accumulates in cilia, but in unc-101 mutant animals it no longer concentrates inside cilia and diffuses to dendrites, cell bodies, and axons (Figure 1\u2014figure supplement 4D). Interestingly, ciliary expression of EFHC-1 is not dependent on DAF-19 (Figure 1\u2014figure supplement 4E), a transcription factor required for the expression of many ciliary genes, again suggesting the unique nature of this ciliary protein, typically associated with motility, which has been retained in C. elegans to facilitate ciliary mechanosensation.\n\nIn addition to EFHC-1\u2019s ciliary localization, we find that the EFHC-1::GFP fusion protein is present at presynaptic regions in dopaminergic neurons, partially overlapping with the synaptic vesicle protein, synaptobrevin (SNB-1) (Figure 1E). By tagging endogenous EFHC-1 with GFP, we confirm that EFHC-1 localizes to these presynaptic regions, where it partially overlaps with a second synaptic vesicle protein (RAB-3) (Figure 1\u2014figure supplement 5A). More specifically, EFHC-1 is found to partially colocalize with the active zone protein (ELKS-1) (Figure 1\u2014figure supplement 5B\u2013C), where it is ideally positioned to regulate synaptic release in C. elegans. Since the presynaptic localization of synaptic vesicle proteins such as RAB-3, but not some active zone proteins like ELKS-1, depends on the kinesin-3 motor, UNC-104 (Deken et al., 2005; Nonet et al., 1997), we examined whether EFHC-1 also requires UNC-104 for its synaptic localization in CEP neurons. While RAB-3 localization is abrogated in unc-104 mutants, accumulating in cell bodies and diffusing to dendrites/axons of CEP neurons, UNC-104 is dispensable for both ELKS-1 and EFHC-1 localization (and consequently their partial colocalization pattern) to presynaptic regions (Figure 1\u2014figure supplement 5A\u2013C). The presence of EFHC-1 at both the cilium and presynaptic regions of dopaminergic neurons suggests that it may play important roles in both sensation and regulation of neuronal output.\n\n### EFHC-1 influences habituation to a mechanical stimulus by modulating dopamine signaling\n\nWe first investigated a possible role for EFHC-1 in dopamine signaling. In the presence of food, ciliary TRP-4 channels (orthologous to TRPN/NOMPC) are mechanically activated, resulting in the release of dopamine that modulates several behaviors through dopamine receptors (DOP-1, DOP-3 and DOP-4) on various postsynaptic/target cells (Chase et al., 2004; Ezcurra et al., 2011; Sanyal et al., 2004) (Figure 2A). One such behavior is the basal slowing response, where wild-type animals slow in the presence of food. Disrupting tyrosine hydroxylase, CAT-2, a rate-limiting enzyme for dopamine synthesis, impairs dopamine signaling and prevents slowing in the presence of food (Sawin et al., 2000) (Figure 2A). In contrast, loss-of-function efhc-1(gk424336) mutants are able to slow in the presence of food (Figure 2\u2014figure supplement 1A), suggesting that they can release dopamine in the presence of food. Given that EFHC-1 also localizes to the distal regions of male dopaminergic neurons that are required for the coordination of locomotory events that enable male mating behvaiours (Correa et al., 2012), we assessed if efhc-1 mutants are able to release dopamine to facilitate male mating. As expected, while cat-2 mutant males show reduced mating potency due to impaired dopamine signaling, efhc-1 mutant males show mating potency similar to wild-type animals (Figure 2\u2014figure supplement 1B). Together, these results show that efhc-1 mutants are able to release dopamine in appropriate behavioural contexts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig2-v1.jpg)\n\n**Figure 2.:** (A) The molecular components of dopamine signaling in C. elegans. Food (bacteria) mechanically stimulates the ciliated dopaminergic neurons (dark pink), resulting in the release of dopamine that modulates several behaviors through dopamine receptors on various postsynaptic/target cells (blue). (B) In the presence of food, efhc-1 mutants habituate slower than wild-type animals, and similar to dat-1 mutants that have increased dopamine signaling (DA: dopamine). At each tap, the points represent the number of worms reversing over the total number of worms tracked per strain, and the error bars represent the binomial confidence intervals. Binomial logistic regression followed by Tukey\u2019s HSD (honest significant difference) test was used to determine significance of the habituated level (proportion reversing at tap 30) for each pair of strains. All strains are statistically different from each other (p\u00a0<\u00a00.001). (C) A second allele of efhc-1, tm6235, also leads to a slow habituation phenotype that is statistically different from wild-type (p\u00a0<\u00a00.001). All strains are statistically different from each other (p\u00a0<\u00a00.001). (D) The habituation phenotype seen in efhc-1 mutants is abolished in efhc-1;cat-2 double mutants, suggesting that the slow habituation phenotype of efhc-1 mutants depends on dopamine. All strains are statistically different from each other (p\u00a0<\u00a00.001) except for cat-2 and efhc-1;cat-2 (p\u00a0=\u00a00.69). (E) efhc-1 mutants also show defects in the dopamine-dependent swimming-induced paralysis phenotype, with an intermediate level of paralysis after 10 min compared to wild-type and dat-1 mutants. Each bar represents the number of worms swimming after 10 min over the total number of worms per strain, and the error bars represent the binomial confidence intervals (n\u00a0=\u00a0160 for each strain). Binomial logistic regression followed by Tukey\u2019s HSD (honest significant difference) test was used to determine significance for each pair of strains. All strains are statistically different from each other except for the two efhc-1 strains (ns\u00a0=\u00a0not significant, p\u00a0=\u00a00.115). For sample sizes (n) for tap habituation experiments and complete statistical comparisons (p values) see Supplementary files 1 and 2, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) EFHC-1 is not required for the dopamine-dependent basal slowing response, a behavior where animals slow their locomotion in the presence of food. Bars represent mean and error bars represent SEM. (B) Unlike dopamine deficient cat-2 mutant males, both efhc-1 mutant males (tm6235 and gk424336) have similar mating potency to wild-type. The statistical significance was calculated using the fisher\u2019s exact test. ***, p\u00a0<\u00a00.001; ns, not significant.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Neural circuit outlining how dopaminergic neurons influence touch receptor neuron activity (with some connections omitted for clarity). Food (bacteria) mechanically stimulates the dopaminergic CEP and ADE neurons to release dopamine. This dopamine acts extra-synaptically to modulate the sensitivity of the anterior touch receptor neurons (ALM and AVM) to touch. ALM and AVM neurons are activated by anterior touch (or tap) to promote backward movement, while the posterior touch receptor neuron PLM is activated by posterior touch to promote forward movement. This circuit is further fine-tuned by activation of CEP neurons by touch receptor neurons (not shown). (B) efhc-1 mutants show slower habituation compared to wild-type animals off food. At each tap, the points represent the number of worms reversing over the total number of worms tracked per strain, and the error bars represent the binomial confidence intervals. Binomial logistic regression followed by Tukey\u2019s HSD (honest significant difference) test was used to determine significance of the habituated level (proportion reversing at tap 30) for each pair of strains. All strains are statistically different from each other (p\u00a0<\u00a00.001). (C) efhc-1 mutants off food mimic the habituation seen in wild-type animals on food. All strains are statistically different (p\u00a0<\u00a00.001) except for wild-type animals on food and efhc-1 mutants off food (p\u00a0<\u00a00.484). (D) An automated swimming-induced paralysis (SWIP) assay shows intermediate thrashing frequencies for the two efhc-1 alleles compared to dat-1 and wild-type animals. Each point represents the mean of thrashes counted over 5 s (divided by 5), and the error bars represent SEM. (E) efhc-1 mutants show an intermediate thrashing frequency compared to wild-type and dat-1 mutants. An unc-2(gain-of-function) mutation expressed throughout the animals, an unc-2(gain-of-function) mutation driven in EFHC-1-expressing cells, and efhc-1 mutants with the addition of the unc-2(gain-of-function) mutation driven in EFHC-1-expressing cells all show an increased thrashing frequency compared to efhc-1 animals but decreased compared to wild-type animals. For sample sizes (n) for tap habituation experiments and complete statistical comparisons (p values) see Supplementary files 1 and 2, respectively.\n\nTo investigate the possibility that dopamine signaling may be increased in efhc-1 mutants, we assessed their behavior in tap habituation, a form of non-associative learning and memory (Rankin et al., 1990) modulated by dopamine (Kindt et al., 2007a; Sanyal et al., 2004). When animals experience a non-localized mechanical stimulus (tap), the touch receptor neurons are stimulated, and worms execute an escape response most often seen as reversals (Rankin et al., 1990) (Figure 2\u2014figure supplement 2A). The proportion of animals responding with a reversal decreases with repeated taps (Rankin et al., 1990), and dopamine modulates this habituation (Kindt et al., 2007a; Sanyal et al., 2004). Decreased dopamine signaling in cat-2 mutants results in fast habituation, while increased dopamine signaling in mutants that lack the dopamine re-uptake transporter DAT-1 results in slow habituation (Kindt et al., 2007a; Sanyal et al., 2004) (Figure 2B). Habituation in efhc-1 mutants closely resembles that of dat-1 mutants, suggesting that abrogating EFHC-1 increases dopamine signaling (Figure 2B). A second efhc-1 allele (tm6235) lacking most of the gene also presents a slow habituation phenotype (Figure 2C), confirming that slow habituation is a result of EFHC-1 dysfunction. Furthermore, introducing the cat-2 mutation into the efhc-1 genetic background abolishes the slow habituation phenotype, resulting in fast habituation indistinguishable from cat-2 (Figure 2D). This indicates that the slow habituation phenotype in efhc-1 mutant animals requires (stems from) increased dopamine signaling.\n\nTo further investigate the dopamine signaling defect in efhc-1 mutants, we analysed their behavior in the absence of food, and found that they again show slow habituation compared to wild-type animals (Figure 2\u2014figure supplement 2B). Interestingly, efhc-1 mutants off food mimic the habituation phenotype of wild-type animals on food, while dat-1 mutants habituate slightly slower than efhc-1 mutants off food Figure 2\u2014figure supplement 2C). This suggests that although both mutants increase dopamine signaling, they likely do so in different ways, and to different extents. We further confirm this possibility by exploiting the dopamine-dependent swimming-induced paralysis (SWIP) phenotype seen in dat-1 mutants, which is attributed to excessive dopamine signaling (McDonald et al., 2007) (Figure 2A). Whereas most wild-type animals continue swimming 10 min after being submersed in water, most dat-1 animals are paralysed (Figure 2E), exhibiting an average thrashing frequency consistently lower than wild-type animals (Figure 2\u2014figure supplement 2D). In this assay, both efhc-1 alleles show intermediate levels of paralysis at 10 min compared to wild-type and dat-1 mutants (Figure 2E), and corresponding intermediate thrashing frequencies (Figure 2\u2014figure supplement 2D). Together, our data are consistent with efhc-1 mutants having increased dopamine signaling compared to wild-type animals, but less than dat-1 mutants.\n\n### EFHC-1, similar to TRP-4, is required for mechanosensation in non-motile CEP cilia\n\nA possible explanation for the increased dopamine signaling in efhc-1 mutants is increased ciliary activation, even in the absence of food. To directly interrogate mechanosensory activation in efhc-1 mutants, we used a genetically-encoded calcium indicator (cameleon) specifically expressed in dopaminergic neurons (Kindt et al., 2007a). Two different mechanical stimuli to the nose were applied using a glass probe: a gentle stimulus consisting of vibrations to the nose for 3.7 s, expected to mimic the presence of food (buzz), and a stronger stimulus of a firm press to the nose for 1 s (press) (Kindt et al., 2007a). Wild-type animals show a calcium response to each stimulus\u00a0~50% of the time, as measured by a change in the YFP/CFP ratio (Figure 3A). In contrast, efhc-1(gk424336) mutants rarely respond upon gentle stimulation but respond at wild-type levels to the stronger stimulation (Figure 3A). Interestingly, when efhc-1 mutants do exhibit calcium responses to either stimulus, they are of a comparable amplitude and shape as wild-type responses (Figure 3B and Figure 3\u2014figure supplement 1). This behavior is remarkably similar to that seen in animals lacking the cilium-localized mechanosensitive TRP-4 channel, which is required for food sensation (Kang et al., 2010; Kindt et al., 2007a). This suggests that like TRP-4, EFHC-1 has a specific role in mediating the likelihood of mechanosensory transduction upon gentle stimulation, as seen when an animal encounters food. In contrast, mechanosensory transduction in non-dopaminergic OLQ neurons is not impaired in efhc-1 mutants and OLQ-mediated foraging behaviors are similarly unaffected (Figure 3\u2014figure supplement 2A\u2013E). This implies a specific mechanosensory function for EFHC-1 in CEP dopaminergic neurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig3-v1.jpg)\n\n**Figure 3.:** (A) Loss of EFHC-1 or TRP-4 impairs activation of CEP neurons upon gentle mechanical stimulation (buzz), resulting in fewer animals responding to the stimulus compared to wild-type animals. In contrast, efhc-1 or trp-4 mutants can respond to stronger stimulation (press). In this panel, n represents the total number of animals assessed. Each bar represents the number of worms responding to mechanical stimulation over the total number of worms assessed per strain, and the error bars represent the binomial confidence intervals. Binomial logistic regression followed by Tukey\u2019s HSD (honest significant difference) test was used to determine significance for each pair of strains. Differences between all strains subjected to the press stimulus are not significant, but differences between wild-type and efhc-1 (p\u00a0<\u00a00.01) or trp-4 (p\u00a0<\u00a00.05) mutants subjected to the buzz stimulus are significant. (B) The peak ratio change (%), representing the amplitude of the neuronal response, is similar between strains for animals responding to each stimulus. In this panel, n represents the number of animals responding to the stimulus over the total number of animals assessed. (C) The axonemal structure of CEP neurons by TEM cross-section (refer to schematic) is not abrogated in efhc-1 mutants. Scale bars, 100 nm. (D) The localization of the mechanosensory channel, TRP-4, which is comparable to that of EFHC-1, is unaffected in efhc-1 mutants. Lengths of CEP and OLQ cilia measured in trp-4 and trp-4;efhc-1 mutants are indistinguishable. Each dot represents one cilium. Kruskal-Wallis rank sum test (CEP cilia lengths) and Tukey's Honest Significant Differences (OLQ cilia lengths) were used for calculating the statistical significance. ns, not significant. Scale bar, 3 \u03bcm. For complete statistical comparisons (p values) see Supplementary file 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Average traces of calcium responses in CEP neurons upon the mechanical buzz or press stimuli (black), and SEM values associated with the calcium traces (grey). The duration of the mechanical stimulus is shown in blue (buzz) or purple (press). All worms responding to mechanical stimuli from Figure 3B were included in this analysis.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Loss of EFHC-1 has no effect on the activation of OLQ neurons upon gentle mechanical stimulation (buzz) (p\u00a0=\u00a00.943) or a stronger stimulation (press) (p\u00a0=\u00a00.597). In this panel, n represents the total number of animals assessed. Each bar represents the number of worms responding to mechanical stimulation over the total number of worms assessed per strain, and the error bars represent the binomial confidence intervals. Binomial logistic regression followed by Tukey\u2019s HSD (honest significant difference) test was used to determine significance for each pair of strains. Differences between all strains are not significant. (B) The peak ratio change (%) representing the amplitude of the neuronal response is similar between strains for animals responding to each stimulus. In this panel, n represents the number of animals responding to the stimulus over the total number of animals assessed. (C) efhc-1 mutants showed similar foraging speeds and (D) foraging amplitudes, two behaviors mediated by the OLQ neurons. Here the absolute values of the forward foraging speed/amplitude are depicted. (E) EFHC-1 is also not involved in the suppression of foraging, a behavior in which worms subjected to mechanical stimulation of the anterior body suppress their foraging movements. OLQ neurons play a role in regulating this behavior and mutants like tdc-1 are unable to suppress their foraging movements when reversing. Each bar represents the number of worms that suppressed foraging over the total number of worms assessed per strain, and the error bars represent the binomial confidence intervals. Binomial logistic regression followed by Tukey\u2019s HSD (honest significant difference) test was used to determine significance for each pair of strains, and efhc-1 mutants are not statistically different than wild-type animals. (F) Axonemal structure of OLQ neurons is not abrogated in efhc-1 mutants. Scale bars, 100 nm. For complete statistical comparisons (p values) see Supplementary file 2.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Transmission electron microscopy (TEM) serial cross-section images of amphid channel cilia in wild-type animals and efhc-1 mutants shows that axonemal structure of conventional cilia is unaffected in efhc-1 mutants. Each amphid channel contains 10 cilia composed of singlet microtubules in the distal pore, doublet microtubules and inner singlet microtubules in the middle pore and a transition zone with Y-link connectors between the microtubules and the membrane in the proximal pore. Large panels show the entire amphid ciliary bundle at low magnification; smaller panels show individual cilia at high magnification. Scale bars: 200 nm (low-magnification images); 100 nm (high-magnification images).\n\nGiven the hypothesis that EFHC-1 helps to anchor, position, and/or regulate ciliary proteins along the ciliary axoneme in motile cilia, it is possible that it has been adapted in non-motile cilia to anchor sensory proteins such as TRP-4. We first confirmed by transmission electron microscopy (TEM) that 'conventional' cilia not harboring EFHC-1::GFP (as determined by our localization analyses) are structurally normal in efhc-1 mutants, displaying nine outer doublet microtubules that become singlets in more distal regions (Figure 3\u2014figure supplement 3). Notably, EFHC-1-containing CEP and OLQ cilia\u2014which have supernumerary singlet microtubules interspersed with tubule-associated material or unique arrangement of doublets in their distal regions, respectively\u2014 also appear structurally normal in efhc-1 mutants (Figure 3C and Figure 3\u2014figure supplement 2F). Hence, EFHC-1 does not play an essential role in specifying, or maintaining, non-motile cilia ultrastructure in this metazoan. Furthermore, TRP-4::YFP localization along the axoneme of CEP cilia is retained in efhc-1 mutants (Figure 3D), suggesting that in the absence of EFHC-1, ciliary localization of TRP-4 still occurs, but its function might be perturbed. For example, EFHC-1 may be required for regulating TRP-4 activity, or anchoring/regulating other signaling molecules required for mechanosensory transduction.\n\n### EFHC-1-mediated regulation of dopamine signaling occurs, in part, downstream of cilia\n\nGiven that mechanical activation by food is required for dopamine release and that EFHC-1 is required for efficient mechanosensation, efhc-1 mutants were expected to show phenotypes consistent with decreased dopamine signaling. However, the increased dopamine signaling in efhc-1 mutants suggests that EFHC-1 may regulate dopamine release at the synapse, independent of its role in ciliary-based signal transduction. Specifically, while loss of EFHC-1 function at the cilium reduces the likelihood of mechanical activation by food, its loss at the synapse may stimulate the release of dopamine in the absence of mechanosensory stimuli and/or amplify infrequent mechanosensory stimuli. We first confirmed that synaptic regions are intact in efhc-1 mutants (Figure 4\u2014figure supplement 1). Next, we asked if the fast habituation seen in trp-4 mutants, due to an inability to mechanically sense bacteria at the cilium and subsequently release dopamine (Figure 2A) (Kindt et al., 2007a), is affected by loss of EFHC-1 function. Interestingly, efhc-1;trp-4 double mutants show slower habituation than trp-4 mutants (Figure 4A), consistent with a rise in dopamine signaling independent of ciliary TRP-4-associated mechanosensation. In other words, loss of EFHC-1 function at the synapse may inappropriately stimulate dopamine release in the absence of TRP-4-mediated mechanosensation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig4-v1.jpg)\n\n**Figure 4.:** (A) Double mutants of efhc-1 and trp-4 show intermediate habituation compared to the trp-4 and efhc-1 single mutants. At each tap, the points represent the number of worms reversing over the total number of worms tracked per strain, and the error bars represent the binomial confidence intervals. Binomial logistic regression followed by Tukey\u2019s HSD (honest significant difference) test was used to determine significance of the habituated level (proportion reversing at tap 30) for each pair of strains. All strains are statistically different from each other (p\u00a0<\u00a00.001). (B) efhc-1 mutants with absent cilia due to a daf-19 mutation show intermediate habituation compared to daf-19 and efhc-1 single mutants. All strains are statistically different from each other (p\u00a0<\u00a00.001). (C) An unc-2(gain-of-function) mutation driven in EFHC-1-expressing cells shows slow habituation compared to wild-type animals, but faster habituation compared to animals with the unc-2(gain-of-function) mutation expressed throughout. Furthermore, efhc-1 mutants with the addition of an unc-2(gain-of-function) mutation driven in EFHC-1-expressing cells does not exacerbate the habituation phenotype. All strains are statistically different from each other (p\u00a0<\u00a00.001). For sample sizes (n) for tap habituation experiments and complete statistical comparisons (p values) see Supplementary files 1 and 2, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Soluble GFP protein expressed under the dat-1 promoter marks CEP and ADE neurons including dendrites, axons and cell bodies in head.\u00a0Z-stack images are taken with 40x oil immersion (top) and 63x water immersion (bottom) objective lens. Arrowheads indicate ADE cell bodies and arrows represent CEP cell bodies. Scale bar, 22 \u03bcm (top) and 7 \u03bcm (bottom).\n\nTo confirm that EFHC-1 functions downstream of cilia, likely at the synapse, to modulate dopamine signaling, efhc-1 was combined with a daf-19 mutant lacking cilia in many sensory neurons, including dopaminergic neurons (daf-19 encodes a transcription factor required for the expression of many ciliary genes, but not efhc-1 - see Figure 1\u2014figure supplement 4E). Interestingly, daf-19 mutants respond weakly to tap stimuli and habituate rapidly, likely due to loss or misregulation of many cilium-dependent sensory inputs required to fine-tune mechanosensation and habituation; notably, this phenotype is similar to the loss of TRP-4, which requires cilia to function (Figure 4B). In contrast, the efhc-1;daf-19 double mutants show responsiveness and habituation phenotypes that are intermediate between the daf-19 and efhc-1 single mutants (Figure 4B), again suggesting that the loss of EFHC-1 results in increased dopamine signaling downstream of ciliary function. These data, together with the localization of EFHC-1 at synaptic regions, are consistent with EFHC-1 preventing spontaneous release of dopamine at synapses in the absence of mechanical stimulation by food.\n\nThe release of dopamine at the synapse requires the activation of voltage-gated calcium channels at presynaptic termini, which allows for calcium influx and subsequent dopamine-bearing vesicle fusion (Figure 2A). In humans, EFHC1 physically interacts with and modulates the alpha subunit of the R-type voltage-gated calcium channel (Suzuki et al., 2004), which is most closely related to UNC-2 in C. elegans. We therefore hypothesized that EFHC-1 prevents spontaneous activity of UNC-2 in C. elegans dopaminergic neurons, such that loss of efhc-1 would stimulate UNC-2 activity even in the absence of mechanosensation at the cilium and result in increased dopamine release. Since unc-2 mutants are uncoordinated and cannot be tested for habituation defects, we took advantage of a gain-of-function (gf) allele that shows slow habituation compared to both wild-type animals and efhc-1 mutants (Figure 4C). Also, because unc-2 expression is found in many neurons apart from the dopaminergic neurons that may modulate tap habituation, a construct was made with UNC-2(gf) under the control of the efhc-1 promoter. Remarkably, expressing overactive UNC-2 specifically in efhc-1-expressing cells results in a slow habituation phenotype similar (but not identical) to that seen in efhc-1 mutants; crossing the UNC-2(gf) construct into efhc-1 mutants did not result in slower habituation, but instead leads to habituation similar to that seen in animals with UNC-2(gf) specifically in efhc-1-expressing cells (Figure 4C). Similarly, these trends were replicated in SWIP assays (Figure 2\u2014figure supplement 2E). Our findings therefore provide evidence that independent of its sensory/activation role at the cilium, EFHC-1 may negatively regulate UNC-2, such that loss of EFHC-1 results in maximum activation of the voltage-gated channel at the synapse.\n\n## Discussion\n\nAlthough the cilia of multicellular organisms are typically classified as either motile or non-motile, unicellular organisms possess one or more cilia responsible for both producing movement and responding to mechanosensory cues to modulate movement (Figure 5). Despite an established role for EFHC1 in ciliary motility (Conte et al., 2009; Suzuki et al., 2008; Suzuki et al., 2009), its disruption has no effect on ciliary structure (Suzuki et al., 2009), raising the possibility that it plays a role in regulating motility\u2014for example in the mechanosensory feedback required to support normal ciliary motility. Our work in a representative eumetazoan (C. elegans) that lacks motile cilia supports this idea, where EFHC-1 has been adapted to function in a specific class of non-motile ciliated mechanosensory cells, the dopaminergic neurons (see model in Figure 5), where it is required for mechanosensation and proper dopamine signaling, yet dispensable for non-motile ciliary structure.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37271/elife-37271-fig5-v1.jpg)\n\n**Figure 5.:** The role of EFHC1 in extant protists (and probably the ancestral eukaryote) is likely to regulate ciliary motility (Ikeda et al., 2003), potentially by acting as a mechanosensor together with a TRP family (or other) calcium channel. In metazoans, this function was retained for motile cilia (Suzuki et al., 2009), and adapted for mechanosensation and potentially other signaling roles in non-motile cilia. EFHC1 evolved in C. elegans, and potentially other neuron-bearing eumetazoans, to also regulate synaptic transmission. In C. elegans, the combined functions for EFHC-1 at cilia (mechanosensory input) and at the synapse (output) help to regulate neuronal excitability and dopamine signaling, both of which may be relevant to epilepsy in human patients with mutations in EFHC1. Motile and non-motile cilia are shown in red and orange, and synapses in green.\n\nOur findings suggest that EFHC1, by being an integral part of the ciliary axoneme and by potentially modulating TRP (or other types of) mechanosensitive calcium channels (Katano et al., 2012) may have adapted its mechanosensation role from motile cilia (e.g., for environmental sensing and/or internal sensation and regulation of motile cilium movement) to a strictly sensory role in non-motile cilia. We also find that in C. elegans, EFHC-1 functions at the synapses of dopaminergic neurons (Figure 5). Importantly, this role is also likely related to the modulation of a calcium channel, namely UNC-2, that localizes to presynaptic active zones of sensory neurons (Saheki and Bargmann, 2009), where it may play an important role in evoked neurotransmitter release (Mathews et al., 2003; Richmond et al., 2001; Schafer and Kenyon, 1995). Together, our results make strides to reconcile the association of a non-ion channel protein with epilepsy by suggesting a possible role for EFHC-1 in modulating ion channels to fine-tune neuronal excitation/transmission both at the cilium, the site for sensory input (mechanosensation), and at the synapse, the site for sensory output that regulates the amount of neurotransmitter released.\n\nPrevious work has identified EFHC1 at both ciliary (Conte et al., 2009;\u00a0Ikeda et al., 2003; Ikeda et al., 2005; Suzuki et al., 2008; Suzuki et al., 2009) and synaptic (Rossetto et al., 2011) regions, yet proposed functions at either location have only been considered separately. Our work in C. elegans provides a unique perspective given that EFHC-1-containing cells harbor both ciliary and synaptic regions, thus raising the intriguing possibility of differential trafficking to these two distinct locations within single cells. We show that EFHC-1\u2019s ciliary localization is independent of UNC-101 and synaptic localization is independent of UNC-104, indicating that EFHC-1\u2019s unique localization pattern does not rely on these known active transport mechanisms. While it is possible that EFHC-1\u2019s localization pattern is dictated by other transport mechanisms, it could also result from diffusion of EFHC-1 throughout cells, followed by ciliary/synaptic retention through interactions with cytoskeletal arrangements, or specific proteins, unique to each location that enable scaffolding (e.g., microtubule-associated proteins for ciliary localization [Ikeda et al., 2005] and actin-associated proteins for synaptic localization [Torres and Inestrosa, 2018]). These possibilities warrant further attention to help better understand EFHC-1\u2019s mechanism of action at each site.\n\nBy identifying an epilepsy-related protein that directly modulates dopamine signaling in C. elegans, our work helps to strengthen the potential link between dopamine signaling and epilepsy, where evidence is accumulating to suggest that inappropriate regulation of dopamine signaling may contribute to various forms of epilepsy (Bozzi and Borrelli, 2013). A role for dopamine is particularly relevant in JME because patients also display several deficits in cognitive functions influenced by dopamine, such as behavioral disturbances, social integration problems, impaired executive functions, reduced cognitive speed and impaired working memory (Bailet and Turk, 2000; Devinsky et al., 1997; Janz, 1985; Pascalicchio et al., 2007; Swartz et al., 1996). Interrogation of the dopaminergic system in JME patients has revealed that dopamine signaling is indeed dysregulated in JME patients (Ciumas et al., 2008; Ciumas et al., 2010; Odano et al., 2012). In combination with our work, this suggests that dopamine may play a role in the onset of seizures and/or cognitive impairments associated with JME.\n\nIn conclusion, we propose that our discovery of a dual ciliary (sensory input) - synapse (neuronal output) mechanism that regulates neuronal activity may not only apply to C. elegans dopaminergic neurons, but could be relevant to mammalian brain neurons as well, which have non-motile cilia. Indeed, dopamine receptors (DRD1, 2, 5) themselves are found on cilia, as are numerous other receptors, including for serotonin, Melanin-concentrating hormone, somatostatin, galanin, and neuropeptide (FF/YY) (Hilgendorf et al., 2016). In such neurons (and others), cilia may modulate neuronal excitation thresholds and thus play important roles in collectively influencing behavior, energy homeostasis and other aspects of mammalian physiology. More generally, our work supports the notion that the relationship between sensory structures and synapses (Kang et al., 2010) represents an important biological phenomenon that deserves further attention.\n\n## Materials and methods\n\n### Strains\n\nAll strains were grown and cultured according to standard procedures on nematode growth medium (NGM) plates with OP50 bacteria as a food source. The efhc-1(gk424336) mutant strain with a nonsense mutation approximately halfway through the gene was obtained from the Million Mutation Project (MMP) collection, and the efhc-1(tm6235) mutant strain with an in-frame deletion of exons 3\u20137 was obtained from the Mitani lab. Both mutant strains were backcrossed six times before being used in experiments or crosses (MX1661 efhc-1(gk424336) (6X), MX1977 efhc-1(tm6235) (6X)). The wild-type strain used in all experiments was the N2 Bristol strain obtained from the Caenorhabditis Genetics Center (CGC). Other strains used were as follows: MX081 N2;nxEx[Y49A10A.1::gfp\u00a0+xbx-1::tdTomato\u00a0+rol-6(su1006)]; CB1112 cat-2(e1112); RM2702 dat-1(ok157); AQ2044 ljIs103[Pcat-1::YCD3]; AQ2815 trp-4(gk341);ljIs103[Pcat-1::YCD3]; AQ2829 ljEx421[Pocr-4::YC3.60 codon optimized]; VC818 trp-4(gk341); TQ420 trp-4(sy695);xuEx542[trp-4::yfp\u00a0+Podr-1::rfp]; DR86 daf-19(m86); OW47 unc-2(zf35); CX3877 lin-15(n765);kyIs156[str-1p::odr-10::gfp\u00a0+lin-15(+)].\n\nThe following strains were created in this work: MX79 nxEx279[pefhc-1::efhc-1::gfp\u00a0+Posm-5::xbx-1::tdTomato\u00a0+rol-6(su1006)]; MX1971 efhc-1(gk424336); nxEx[pefhc-1::efhc-1 (217\u2013447)::gfp\u00a0+ccgfp]; MX2192 efhc-1(gk424336); nxEx[pefhc-1:: efhc-1 (1\u2013216)::GFP\u00a0+Posm-5::xbx-1::tdTomato\u00a0+ccgfp]; MX2195 nxEx[pefhc-1::efhc-1::gfp\u00a0+pefhc-1::xbx-1::tdtomato\u00a0+cc::gfp]; MX2194 N2;nxEx[snb-1::tdtomato\u00a0+Y49A10A.1::gfp\u00a0+cc::gfp]; MX2132 efhc-1(gk424336);cat-2(e1112); MX2403 efhc-1(gk424336);ljIs103[Pcat-1::YCD3]; MX2317 efhc-1(gk424336);trp-4(sy695);xuEx542[trp-4::yfp\u00a0+Podr-1::rfp]; MX2129 efhc-1(gk424336);trp-4(gk341); MX2316 efhc-1(gk424336);daf-19(m86); MX1973 daf-19(m86) II;daf-12(sa204);nxEx[efhc-1::gfp\u00a0+cc::gfp]; MX2185 dpy-5(e907);nxEx[pefhc-1::unc-2(zf35)\u00a0+cc::gfp\u00a0+dpy-5(+)]; MX2341 efhc-1(gk424336);dpy-5(e907);nxEx[pefhc-1::unc-2(zf35)\u00a0+cc::gfp\u00a0+dpy-5(+)]; MX2317 efhc-1(gk424336);trp-4(sy695);xuEx542[trp-4::yfp\u00a0+Podr-1::rfp]; MX2137 efhc-1(gk424336);ljEx421[Pocr-4::YC3.60 codon optimized]. MX2724 efhc-1(nx163[efhc-1::gfp::3xflag])X; MX2727 N2;egIs1[pdat-1::gfp];nxEx2714[Pdat-1::elks-1::tdtomato\u00a0+rol-6(su1006)]; MX2726 efhc-1(gk424336);egIs1[pdat-1::gfp];nxEx2714[Pdat-1::elks-1::tdtomato\u00a0+rol-6(su1006)]; MX2742 efhc-1(nx163[efhc-1::gfp::3xflag])X; nxEx2714[Pdat-1::elks-1::tdtomato\u00a0+rol-6(su1006)]; MX2754 efhc-1(nx163[efhc-1::gfp::3xflag])X; nxEx2754[Pdat-1::elks-1::tdTomato\u00a0+rol-6(su1006)]; MX2769 efhc-1(nx163[efhc-1::gfp::3xflag])X; nxEx2769 [Pdat-1::mcherry::rab-3+rol-6(su1006)]; MX2904 unc-104(e1265); efhc-1(nx163[efhc-1::gfp::3xFlag])X;nxEx2769[Pdat-1::mCherry::rab-3+rol-6(su1006)]; MX2905 unc-104(e1265); efhc-1(nx163[efhc-1::gfp::3xFlag])X; nxEx2754[Pdat-1::ELKS-1::tdTomato\u00a0+rol-6(su1006)]; MX2908 unc-101(m1); efhc-1(nx163[efhc-1::gfp::3xFlag])X; nxEx2769[Pdat-1::mCherry::rab-3+rol-6(su1006)]; MX2909 unc-101(m1); lin-15(n765); kyIs156[str-1p::odr-10::gfp\u00a0+lin-15(+)]\n\n### Generation and visualisation of transgenic animals\n\n#### Generation of fusion constucts\n\nBoth the pefhc-1::XBX-1::tdTomato and pefhc-1::SNB-1::tdTomato constructs were created using 2036 bp of efhc-1\u2019s endogenous upstream promoter fused to all the exons/introns of xbx-1 or snb-1 and then fused in-frame to tdTomato. The pefhc-1::unc-2(gf) construct was again created using 2036 bp of efhc-1\u2019s endogenous upstream promoter fused to the cDNA of unc-2 with a gain-of-function mutation and a synthetic intron. To construct the presynaptic markers, mcherry::rab-3::unc-10 3\u2019 UTR was cloned from a plasmid (kindly provided by the Mizumoto lab), and elks-1 was amplified from genomic DNA and stitched to the tdTomato::unc-54 3\u2019 UTR. Both amplified PCR fragments were stitched to the dat-1 promoter (~700 bp) to drive expression in the dopaminergic neurons (CEP, ADE and PDE).\n\n#### Generation of an efhc-1::gfp knock-in strain\n\nThe unc-119 guide RNA sequence in pU6::unc-119 sgRNA vector (Addgene #46169) was replaced with the predicted efhc-1 CRISPR guide RNA sequence (5\u2019- GTACAGTCTAGTGGAGAGA-3\u2019), which is present in exon 10 of efhc-1 using site-directed mutagenesis technique (http://crispr.mit.edu/) (Friedland et al., 2013). The donor template for the C-terminal GFP knock-in was prepared from pDD282 (Addgene #66823) (Dickinson et al., 2015). The pDD282 was digested with SpeI and AvrII to remove ccdB markers and mixed with upstream and downstream homology (500\u00a0~\u00a0650 bp) arms for efhc-1. The donor plasmid was cloned using Gibson Assembly. The GFP donor template plasmid contains T434T silent mutation in PAM site. The mixture (50 ng/\u03bcl coel::RFP (Addgene #8938), 50 ng/\u03bcl pCAS9 (Addgene #46168), 50 ng/\u03bcl efhc-1 sgRNA, and 50 ng/\u03bcl donor template) was injected into 30 adult worms. F1 worms were screened using 250 \u03bcg/ml hygromycin solution followed by picking 100% roller F2. A self-excising drug selection cassette (SEC), which contains sqt-1, hs::Cre, and hygR, was removed by heat shock at 34\u00b0C for 4 hr. This worm strain was confirmed by Sanger DNA sequencing.\n\n#### Visualization of transgenic animals\n\nFluorescently-tagged proteins were visualized by first immobilizing animals using 0.5 \u03bcl of 10 mM levamisole and 0.5 \u03bcL of 0.1 \u03bcm diameter polystyrene microspheres (Polysciences 00876\u201315, 2.5% w/v suspension) on 5% agarose pads. Z-stack images were collected using a spinning disc confocal microscope (WaveFX; Quorum Technologies), a Hammamatsu 9100 EMCCD camera and Volocity software (PerkinElmer). Fluorescence recovery after photobleaching (FRAP) assay was performed using LSM880 laser scanning microscope with Airyscan and ZEN 2.3 software. Thresholded Pearson\u2019s correlation coefficients for the colocalization of EFHC-1::GFP and ELKS-1::tdTomato in CEP axons were calculated using Volocity 6.3 software.\n\n### Mating efficiency test\n\nAn OP50 culture was grown at 37\u00b0C for 16 hr. To make mating plates, 20 \u03bcl of the culture was pipetted onto an NGM agar plate and the seeded plates were incubated at 25\u00b0C for 20 hr. One heat-shock generated homozygous L4 stage male (wild-type or mutant) and one L4 stage wild-type hermaphrodite were placed onto the bacterial lawn of the mating plate. All mating plates were incubated at 20\u00b0C for 4 days. The plates containing male progeny were counted as successful matings.\n\n### Behavioral analyses\n\nAll behavioral analyses were conducted on at least two separate days to account for day-to-day differences.\n\n#### Tap habituation\n\nWorms were age synchronized by allowing five gravid adults to lay eggs for 3\u20134 hr on individual NGM plates seeded with E. coli OP50 bacteria and testing the worms after 4 days. At least one hour before testing, 20\u201330 worms were transferred to fresh NGM plates, with or without food. Plates with food were seeded with 50 \u03bcL of liquid culture OP50 bacteria in lysogeny broth (LB) 24 hr beforehand, while plates without food were seeded with 50 \u03bcL LB. Plates with worms were then placed into the Multi-Worm Tracker (MWT), and after a 300 or 600 s acclimatization period, 30 taps were administered to the side of the plate using a solenoid tapper at 10 s interstimulus intervals (ISI) [31]. The script used for tap habituation analysis is\u00a0available\u00a0at\u00a0Loucks (2018) (copy archived at https://github.com/elifesciences-publications/dopamine_habituation).\u00a0All experiments were done at 20\u00b0C, and in most experiments strains were cultured at 20\u00b0C. In the habituation experiment involving daf-19(m86), all strains were cultured at 15\u00b0C for four days then moved to 20\u00b0C for two days to enrich for non-dauer worms in daf-19 and daf-19;efhc-1 worms. The script for analysis is available at: https://github.com/cloucks/dopamine_habituation). Experiments from individual days were only included if at least 80% of wild-type animals responded to the initial tap, indicating that laboratory conditions (temperature, age and humidity) were appropriate for the subsequent analyses. Given that the MWT does not track every animal on a plate at a given time, minimum sample sizes for a single tap in a given experiment are presented in Supplementary file 1.\n\n#### Swimming-induced paralysis (SWIP)\n\nWorms were age synchronized by allowing 10 gravid adults to lay eggs for 3 hr on individual NGM plates seeded with OP50 bacteria. L4 worms were tested after 2 days at 20\u00b0C. Two different SWIP assays were performed: one manual and one automated. For both assays, ten L4 animals were placed in 30 \u03bcL of tap water in a single well of a Pyrex Spot Plate (Fisher). For the manual assay, animals were assessed for paralysis at 10 min, defined as no C-shaped bends for at least 5 s. For the automated assay, the plate was analysed using the Multi-worm tracker (MWT) to assess thrashing frequency of animals over 11 min (script available at: https://github.com/cloucks/dopamine_swimming).\n\n#### Basal slowing response\n\nWorms were age synchronized by allowing five gravid adults to lay eggs for 3\u20134 hr on individual NGM plates seeded with OP50 bacteria and testing the worms after 3 days. On the day of testing, worms were washed off their individual plates with M9 buffer and transferred to individual NGM with or without food. Plates with food were seeded with 100 \u00b5L HB101 24 hr beforehand, while plates without food were seeded with 100 \u03bcL LB. Plates with worms were then placed into the Multi-Worm Tracker (MWT) (Swierczek et al., 2011) for 600 s. Body bends were counted for animals persisting from 60 to 120 s.\n\n#### Suppression of foraging\n\nSuppression of foraging was performed as described previously (Kindt et al., 2007b; Loucks et al., 2016).\n\n#### Single worm tracking behavioral assessment\n\nSingle-worm tracking was performed as described previously (Loucks et al., 2016; Yemini et al., 2013).\n\n### Calcium imaging of CEP and OLQ neurons\n\nCalcium imaging of nose touch stimulation of glued animals was performed using identical protocols to our previous work (Loucks et al., 2016), which was essentially as described previously, using a 1 s \u2018press\u2019 or 3.7 s \u2018buzz\u2019 stimulus (Kindt et al., 2007a; Kindt et al., 2007b). Images were recorded at 10 Hz using an iXon EM camera (Andor Technology), captured using IQ1.9 software (Andor Technology) and analysed using a Matlab (MathWorks) program custom written by Ithai Rabinowitch. A rectangular region of interest (ROI) was drawn around the cell body and for every frame the ROI was shifted according to the new position of the centre of mass. Fluorescence intensity, F, was computed as the difference between the sum of pixel intensities and the faintest 10% pixels (background) within the ROI. Fluorescence ratio R\u00a0=\u00a0Fyellow/Fcyan (after correcting for bleed through) was used for computing ratio change, expressed as a percentage of R0 (the average R within the first 3 s of recording) (Rabinowitch et al., 2013).\n\n### Transmission electron microscopy (TEM)\n\nDay one adult worms were fixed (glutaraldehyde), embedded, serial sectioned and imaged as previously described (Sanders et al., 2015). The one exception is the wild type image in Figure 3C, which was obtained from sections of adult day one worms fixed and embedded using high pressure freezing (Leica EMPACT2) and freeze substititution (FS), as previously described (Cohen et al., 2008). The FS step was performed using a solid metal block placed at \u221275\u00b0C for 48 hr, followed by \u221220\u00b0C for 24 hr, and then room temperature for 3 hr.\n\n### Statistical tests\n\nLogistic regression was used for the statistical analyses performed because the dependent variables (proportion reversing to tap, proportion swimming and proportion responding) are not continuous but instead represent binary outcomes (e.g. reversing or not reversing). Futhermore, our data meet the assumptions required for logistic regression, including the independence of sample outcomes, an absence of strongly influential outliers and a sufficient number of recorded events (Stoltzfus, 2011). Sample sizes for each behavioral assay were chosen to be either equal to or greater than sample sizes reported in the literature that were sufficient to detect biologically relevant differences.\n",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "d993319d-144f-4cd1-a51c-3a93c82a9dea",
+      "submission_id": "15314d47-f994-4e96-99dd-531caeffd504",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37271.024](https://doi.org/10.7554/eLife.37271.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"EFHC1, implicated in juvenile myoclonic epilepsy, functions at the cilium and synapse to modulate dopamine signaling\" for consideration by eLife. Your article has been reviewed by Gary Westbrook as the Senior Editor, a Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers appreciated the importance of the overall findings but have a number of requests for improvement. The most major issue, crystallized during discussions, is the assessment of active transport to synapses and cilia. For the active synapse transport analysis, we recommend that you use the unc-104 mutant, a commonly used tool to confirm synaptic transport. For cilia transport, we recommend standard live visualization of transport (e.g. in combination with FRAP).\n\nReviewer #1:\n\nThis is an interesting paper describing the role of the protein EFHC1 in mechanosensation in C. elegans. The authors show that the protein localizes to dopaminergic neurons in the head of the animal at both the sensory nonmotile cilium and the synapse. The authors describe defects in the EFHC1 mutant that appear to mimic increase dopaminergic transmission. They suggest that this protein acts independently of the main cilium TRP channel that transduces mechanical stimuli, and may act together with a synaptic calcium channel, UNC2.\n\nEFHC1 mutations are associated with human disease, and the biology of cilia is generally not very well understood. Since these organelles are prevalent, any additional studies are of interest. Here, the coupling between cilium and synapses is intriguing. In that respect, the authors should cite highly relevant previous work in this area (e.g. Shaham, 2010).\n\nThe paper is clearly written and the conclusions drawn generally justified. The connection to dopamine signaling is convincing. The paper does not quite address what EFHC1 is doing, however. Some obvious possibilities, such as localization of the TRP channel are ruled out. The UNC2 studies are interesting, but physical association and a clear functional relationship are not established, as the authors use an activated UNC2 allele which may have activities not normally seen in the wild type.\n\nIn sum- the data in the paper are solid and convincing. However, a mechanism for EFHC1 function is not established.\n\nReviewer #2:\n\nThe manuscript by Loucks et al. characterizes the C. elegans ortholog of the ciliary protein EFHC1 that has been linked to Juvenile Myoclonic Epilepsy. Based on its axonal localization, authors argue that EFHC-1 act at this site to modulate dopamine signaling and conclude \"Our findings unveil a previously undescribed dual-regulation of neuronal excitability at sites of neuronal sensory input (cilium) and neuronal output (synapse).\" While it is clear that EFHC-1 modulates harsh touch habituation (as measured by behavioral assays and calcium imaging), I do not think authors data support the assertion that EFHC-1 functions at the synapse and cilium. Figure 1 shows EFHC-1::GFP localization throughout neurons, including cilia, dendrites, and axons and EFHC-1 colocalization with RAB-3 and ELKS-1 is not convincing (Supplemental figure 2). However, authors do have the tools to address my major concern. Is EFHC-1 actively transported in dendrites and axons to its site of action? Active transport to axons would be convincing \u2013 diffusion would not.\n\nDoes EFHC-1 ciliary vs synaptic localization rely on the same elements? Authors show that EFHC-1(217-417), a construct containing only the second DM10 domain, still localized to cilia. How do EFHC-1 (1-216) and EFHC-1(217-417) look in the rest of the neuron?\n\nAuthors show that efhc-1 CEP cilia (by TEM) and synapses (by ELKS-1::tdTomato) look normal. The former is convincing, the latter not. How does neuronal architecture look in the efhc-1 mutant (TEM not required, a soluble GFP showing that axonal architecture would suffice).\n\nFigure 3C is really striking. The tubule associated material appears to be surrounded by singlet microtubules. Is there a stereotypical pattern in WT and is this changed at all in efhc-1 mutant? How many cilia were analyzed in WT and efhc-1 animals?\n\nFigure 3D. Authors show TRP-4 localization in WT and efhc-1 cilia and conclude there is no difference. To my eyes, the efhc-1 cilia look longer and TRP-4 more distally located. Please quantitate TRP-4 distribution.\n\nPlease provide information on the nature of the efhc-1 alleles.\n\nFigure 1B and Figure 1\u2014figure supplement 1: In the male tail, what is the circular structure outlined by efhc-1::GFP?\n\nDo efhc-1 males display any ray-mediated mating defects?\n\nFigure 2\u2014figure supplement 1: why show amphid channel ultrastructure of efhc-1 mutants if the gene is not expressed in these ciliated cell types? It would be more informative to more carefully analyze CEP and OLQ ultrastructure in efhc-1 animals.\n\n[Editors\u2019 note: the decision after re-review follows.]\n\nThank you for submitting your work entitled \"EFHC1, implicated in juvenile myoclonic epilepsy, functions at the cilium and synapse to modulate dopamine signaling\" for consideration by eLife. Your revised article has been re-reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. Our decision has been reached after consultation between the reviewers that is summarized below. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nSummary of reviewer discussion:\n\nThe authors have done the suggested experiments, but we still don't know if EFHC1 is acting in the axon. The negative results are interesting, suggesting that targeting of EFHC1 occurs by some novel mechanism. However, the bottom line is a bit unsatisfying, as we still don't know details about the mechanism of localization or function. The colocalization of EFHC-1 and ELKS-1 at active zones (which the authors say is better imaged in new Figure 1\u2014figure supplement 5BFigure) is not convincing without seeing yellow puncta and without any quantification. This also puts in question the argument that these active zone proteins don't require UNC-104 for location because the data do not provide convincing evidence that EFHC-1 is an active zone protein. Overall, EFHC1 seems to be in the vicinity of synapses, but whether this means anything functionally has not been determined, nor has it been determined the mechanism of differential localization. Without more evidence along these lines, we think the manuscript would be better suited to another journal. We hope that the reviewer comments will be helpful to you.\n\n[Editors\u2019 note: the editors agreed to consider a further resubmission, in which the authors discuss how they interpret the unc-10/unc-104 results and also provide the requested quantification.]\n",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "150a01a1-d1ab-4f50-b436-34e2a048bea5",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C1",
+      "claim": "Juvenile myoclonic epilepsy (JME) is the most common form of idiopathic epilepsy in humans, making up 10\u201330% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Juvenile myoclonic epilepsy (JME) is the most common form of idiopathic epilepsy in humans, making up 10\u201330% of cases (Delgado-Escueta, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Delgado-Escueta, 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "634807eb-e4e7-44c8-a635-11059edca3d2",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C2",
+      "claim": "Disruption of EFHC1 has been reported as the most frequent cause of JME.",
+      "claim_type": "EXPLICIT",
+      "source": "yet disruption of EFHC1, a non-ion channel protein, has been reported as the most frequent cause of JME (Delgado-Escueta, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Delgado-Escueta, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "dedbc1b4-d6ba-49ad-925e-e82ae210618f",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C3",
+      "claim": "EFHC1 is specifically associated with motile cilia that project from specialized cells to enable fluid flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, EFHC1 is also specifically associated with motile cilia that project from specialized cells to enable fluid flow (Conte et al., 2009; Suzuki et al., 2008; Suzuki et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Conte et al., 2009; Suzuki et al., 2008; Suzuki et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "32ce1f1b-a68e-4856-bf2d-b8f7ed49e73a",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C4",
+      "claim": "In the human brain, there are both motile cilia, which enable cerebrospinal fluid flow, and non-motile cilia, which project from the cell bodies of all or most neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human brain, there are both motile cilia, which enable cerebrospinal fluid flow, and non-motile cilia, which project from the cell bodies of all or most neurons (Bishop et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bishop et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "7fcdbe9e-6269-4b6b-896e-dd33a857d55c",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C5",
+      "claim": "EFHC1 dysfunction impairs motility of ependymal cilia in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EFHC1 dysfunction impairs motility of ependymal cilia in mice, the accompanying ventricle enlargement does not correlate with epilepsy (Suzuki et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Suzuki et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "7807fd81-f25a-4a31-b56e-25fe2d43965f",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C6",
+      "claim": "The ventricle enlargement accompanying EFHC1 dysfunction in mice does not correlate with epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Although EFHC1 dysfunction impairs motility of ependymal cilia in mice, the accompanying ventricle enlargement does not correlate with epilepsy (Suzuki et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Suzuki et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "848f76a6-5185-4325-88f3-eeca48018d0e",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C7",
+      "claim": "EFHC1 is a core component of the protofilament ribbon structure of motile cilia thought to dictate the ordered attachment/arrangement of proteins required for motility.",
+      "claim_type": "EXPLICIT",
+      "source": "As a core component of the protofilament ribbon structure of motile cilia thought to dictate the ordered attachment/arrangement of proteins required for motility (Ikeda et al., 2003; Linck et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ikeda et al., 2003; Linck et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "f9aab794-5da3-47ad-bf65-480f4c8ea35a",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C8",
+      "claim": "C. elegans EFHC-1 is required for mechanosensation in a class of non-motile cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that rather than being a core component of ciliary motility-associated machinery, the C. elegans orthologue of EFHC-1 is required for mechanosensation in a class of non-motile cilia, where it regulates neuronal activation and dopamine signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript, including calcium imaging and behavioral assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "4503c1f3-beb7-4d51-840a-ed4181411c49",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C9",
+      "claim": "C. elegans EFHC-1 regulates neuronal activation and dopamine signaling in non-motile cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that rather than being a core component of ciliary motility-associated machinery, the C. elegans orthologue of EFHC-1 is required for mechanosensation in a class of non-motile cilia, where it regulates neuronal activation and dopamine signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data including habituation assays and SWIP assays showing altered dopamine signaling in efhc-1 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "f74196d1-d0bc-45a3-bac0-4f6cbf0dfe54",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C10",
+      "claim": "EFHC-1 localizes at the synapse where it modulates dopamine signaling in cooperation with the orthologue of an R-type voltage-gated calcium channel.",
+      "claim_type": "EXPLICIT",
+      "source": "EFHC-1 also localizes at the synapse, where it further modulates dopamine signaling in cooperation with the orthologue of an R-type voltage-gated calcium channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by localization data showing EFHC-1 at synapses and genetic interaction data with unc-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "672e933f-9cbe-41c9-a60e-35f22c21326f",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C11",
+      "claim": "The efhc-1::gfp fusion construct is specifically expressed in dopaminergic CEP, ADE and PDE neurons, and glutamatergic OLQ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a GFP reporter of C. elegans EFHC-1 driven by its own promoter, and found that the efhc-1::gfp fusion construct is specifically expressed in a small subset of ciliated mechanosensory neurons: the dopaminergic CEP, ADE and PDE neurons, and the glutamatergic OLQ neurons (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "3ff94052-464d-4c45-9fee-7dd85e411778",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C12",
+      "claim": "Four CEP neurons paired with four OLQ neurons project cilia in the nose.",
+      "claim_type": "EXPLICIT",
+      "source": "four CEP neurons paired with four OLQ neurons project cilia in the nose, two ADE neurons position cilia in the anterior body, and two PDE neurons localize cilia to the posterior body (Inglis et al., 2007; Sulston et al., 1975; White et al., 1986) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Inglis et al., 2007; Sulston et al., 1975; White et al., 1986 and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "97ee9294-293f-4a3e-a16d-75819672fea5",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C13",
+      "claim": "Two ADE neurons position cilia in the anterior body.",
+      "claim_type": "EXPLICIT",
+      "source": "four CEP neurons paired with four OLQ neurons project cilia in the nose, two ADE neurons position cilia in the anterior body, and two PDE neurons localize cilia to the posterior body (Inglis et al., 2007; Sulston et al., 1975; White et al., 1986) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Inglis et al., 2007; Sulston et al., 1975; White et al., 1986 and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "819584dc-e258-453e-a74c-e8aff8f11ae2",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C14",
+      "claim": "Two PDE neurons localize cilia to the posterior body.",
+      "claim_type": "EXPLICIT",
+      "source": "four CEP neurons paired with four OLQ neurons project cilia in the nose, two ADE neurons position cilia in the anterior body, and two PDE neurons localize cilia to the posterior body (Inglis et al., 2007; Sulston et al., 1975; White et al., 1986) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Inglis et al., 2007; Sulston et al., 1975; White et al., 1986 and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "718e76fd-ab26-46fd-ab4d-f069b298f60d",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C15",
+      "claim": "EFHC-1::GFP is found in the distal regions of sex-specific dopaminergic ray neurons in the male tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, EFHC-1::GFP is found in the distal regions of sex-specific dopaminergic ray neurons in the male tail (Figure 1B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "a32f57d3-76cc-46e0-bcd5-a3d2d6dac6ca",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C16",
+      "claim": "Endogenously GFP-tagged EFHC-1 predominantly accumulates in cilia of OLQ and ADE neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while endogenously GFP-tagged EFHC-1 mostly accumulates in both OLQ and ADE cilia, it is weakly present in CEP cilia (Figure 1\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CRISPR knock-in data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "5534af29-bdcf-4316-8a01-908255546ab5",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C17",
+      "claim": "Endogenously GFP-tagged EFHC-1 is weakly present in CEP cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while endogenously GFP-tagged EFHC-1 mostly accumulates in both OLQ and ADE cilia, it is weakly present in CEP cilia (Figure 1\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CRISPR knock-in data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "b6305040-a653-4583-a0ea-ed31e0697ba5",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C18",
+      "claim": "The C-terminal fragment of EFHC-1 containing the second DM10 domain specifically localizes to OLQ, CEP, ADE and PDE cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Ciliary localization of EFHC-1 is further supported by the ability of a truncated protein (C-terminal fragment containing the second of two evolutionarily conserved DM10 domains of unknown function) to specifically localize to OLQ, CEP, ADE and PDE cilia in a manner indistinguishable from the full-length protein (Figure 1D and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 1D and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "cdf66d1d-f210-46c9-bd85-c1ad37f7b0d0",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C19",
+      "claim": "The N-terminal fragment of EFHC-1 containing the first DM10 domain displays non-specific localization throughout all neuronal processes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to a second truncated protein (N-terminal fragment containing the first DM10 domain) that displays non-specific localization throughout all neuronal processes of glutamatergic (OLQ) and dopaminergic (CEP, ADE and PDE) neurons (Figure 1D and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 1D and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "aa3cc81f-5eb7-455a-9e1e-8828c8c06d42",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C20",
+      "claim": "When distal or middle portions of CEP and OLQ cilia are photobleached, the EFHC-1::GFP signal does not rapidly recover within 30 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, when either the distal or middle portions of CEP and OLQ cilia are photobleached, the EFHC-1::GFP signal does not rapidly recover within 30 s, as would be expected for proteins dependent on diffusion to maintain their proper ciliary localizations, such as ARL-13 (Cevik et al., 2013) (Figure 1\u2014figure supplement 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FRAP data shown in Figure 1\u2014figure supplement 4A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "6f41bbbe-ae86-4b3d-ab06-a60e59a58ae9",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C21",
+      "claim": "EFHC-1 proteins present in CEP and OLQ cilia are not associated with IFT.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, kymograph analyses suggest that EFHC-1 proteins present in CEP and OLQ cilia are not associated with IFT (Figure 1\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by kymograph analysis shown in Figure 1\u2014figure supplement 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "e17eedec-4e02-4013-9605-f07cc4a93c8c",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C22",
+      "claim": "EFHC-1 localization is not dependent on UNC-101.",
+      "claim_type": "EXPLICIT",
+      "source": "EFHC-1 localization is also not dependent on UNC-101, a protein required for dendritic transport and proper ciliary localization of a set of ciliary proteins (Dwyer et al., 2001) (Figure 1\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by localization data in unc-101 mutants shown in Figure 1\u2014figure supplement 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "eb97f047-5262-4c94-9a14-b607338e86b5",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C23",
+      "claim": "Ciliary expression of EFHC-1 is not dependent on DAF-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ciliary expression of EFHC-1 is not dependent on DAF-19 (Figure 1\u2014figure supplement 4E), a transcription factor required for the expression of many ciliary genes",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by expression data in daf-19 mutants shown in Figure 1\u2014figure supplement 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "310ec485-3993-44c9-bb0b-ccc87ad53c09",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C24",
+      "claim": "EFHC-1::GFP fusion protein is present at presynaptic regions in dopaminergic neurons, partially overlapping with the synaptic vesicle protein, synaptobrevin (SNB-1).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to EFHC-1's ciliary localization, we find that the EFHC-1::GFP fusion protein is present at presynaptic regions in dopaminergic neurons, partially overlapping with the synaptic vesicle protein, synaptobrevin (SNB-1) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colocalization data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "592b1052-f571-4595-9547-59de07840508",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C25",
+      "claim": "Endogenous EFHC-1 localizes to presynaptic regions where it partially overlaps with RAB-3.",
+      "claim_type": "EXPLICIT",
+      "source": "By tagging endogenous EFHC-1 with GFP, we confirm that EFHC-1 localizes to these presynaptic regions, where it partially overlaps with a second synaptic vesicle protein (RAB-3) (Figure 1\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CRISPR knock-in colocalization data shown in Figure 1\u2014figure supplement 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "a8e5a429-4ac5-469d-b9c3-c0cc55bb53bc",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C26",
+      "claim": "EFHC-1 partially colocalizes with the active zone protein ELKS-1.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, EFHC-1 is found to partially colocalize with the active zone protein (ELKS-1) (Figure 1\u2014figure supplement 5B\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colocalization data shown in Figure 1\u2014figure supplement 5B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "8496ac49-1307-4b48-b0bc-6e4f6693a688",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C27",
+      "claim": "UNC-104 is dispensable for EFHC-1 localization to presynaptic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "While RAB-3 localization is abrogated in unc-104 mutants, accumulating in cell bodies and diffusing to dendrites/axons of CEP neurons, UNC-104 is dispensable for both ELKS-1 and EFHC-1 localization (and consequently their partial colocalization pattern) to presynaptic regions (Figure 1\u2014figure supplement 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by localization data in unc-104 mutants shown in Figure 1\u2014figure supplement 5A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "429f662d-2f55-41f9-b38f-d1792c45b49a",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C28",
+      "claim": "Ciliary TRP-4 channels are mechanically activated in the presence of food, resulting in the release of dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of food, ciliary TRP-4 channels (orthologous to TRPN/NOMPC) are mechanically activated, resulting in the release of dopamine that modulates several behaviors through dopamine receptors (DOP-1, DOP-3 and DOP-4) on various postsynaptic/target cells (Chase et al., 2004; Ezcurra et al., 2011; Sanyal et al., 2004) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Chase et al., 2004; Ezcurra et al., 2011; Sanyal et al., 2004 and Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "59d1439a-d064-44ed-9f83-ccfeb3b7a83a",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C29",
+      "claim": "Disrupting tyrosine hydroxylase CAT-2 impairs dopamine signaling and prevents slowing in the presence of food.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting tyrosine hydroxylase, CAT-2, a rate-limiting enzyme for dopamine synthesis, impairs dopamine signaling and prevents slowing in the presence of food (Sawin et al., 2000) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Sawin et al., 2000 and Figure 2A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "011ba551-bd14-448e-8812-fd00f69869b5",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C30",
+      "claim": "Loss-of-function efhc-1(gk424336) mutants are able to slow in the presence of food.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, loss-of-function efhc-1(gk424336) mutants are able to slow in the presence of food (Figure 2\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by basal slowing response data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "265db735-0bc9-4136-865f-8ba586c5c926",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C31",
+      "claim": "efhc-1 mutant males show mating potency similar to wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, while cat-2 mutant males show reduced mating potency due to impaired dopamine signaling, efhc-1 mutant males show mating potency similar to wild-type animals (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mating efficiency data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "088f15c6-fea5-4ffb-866d-0bbcc544481d",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C32",
+      "claim": "efhc-1 mutants are able to release dopamine in appropriate behavioural contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that efhc-1 mutants are able to release dopamine in appropriate behavioural contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from basal slowing and mating potency data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "5c3ab751-1ec0-417d-9855-fcfe0c46c069",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C33",
+      "claim": "In the presence of food, efhc-1 mutants habituate slower than wild-type animals, and similar to dat-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of food, efhc-1 mutants habituate slower than wild-type animals, and similar to dat-1 mutants that have increased dopamine signaling (DA: dopamine). At each tap, the points represent the number of worms reversing over the total number of worms tracked per strain, and the error bars represent the binomial confidence intervals. Binomial logistic regression followed by Tukey's HSD (honest significant difference) test was used to determine significance of the habituated level (proportion reversing at tap 30) for each pair of strains. All strains are statistically different from each other (p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tap habituation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "db128915-9a33-4ec7-987a-b95293bae117",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C34",
+      "claim": "A second allele of efhc-1, tm6235, leads to a slow habituation phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "A second allele of efhc-1, tm6235, also leads to a slow habituation phenotype that is statistically different from wild-type (p < 0.001). All strains are statistically different from each other (p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tap habituation data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "22bc6eff-44a5-4edd-bde8-22d1f58ffd45",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C35",
+      "claim": "The habituation phenotype seen in efhc-1 mutants is abolished in efhc-1;cat-2 double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The habituation phenotype seen in efhc-1 mutants is abolished in efhc-1;cat-2 double mutants, suggesting that the slow habituation phenotype of efhc-1 mutants depends on dopamine. All strains are statistically different from each other (p < 0.001) except for cat-2 and efhc-1;cat-2 (p = 0.69).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tap habituation data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "ab111517-7d86-4416-bfba-1d8b1bebf3aa",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C36",
+      "claim": "The slow habituation phenotype of efhc-1 mutants depends on dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "The habituation phenotype seen in efhc-1 mutants is abolished in efhc-1;cat-2 double mutants, suggesting that the slow habituation phenotype of efhc-1 mutants depends on dopamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the genetic interaction data showing that cat-2 mutation suppresses the efhc-1 phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "411bb633-3d1f-4316-99d2-ca565fb1090d",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C37",
+      "claim": "efhc-1 mutants show defects in the dopamine-dependent swimming-induced paralysis phenotype, with an intermediate level of paralysis after 10 min compared to wild-type and dat-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "efhc-1 mutants also show defects in the dopamine-dependent swimming-induced paralysis phenotype, with an intermediate level of paralysis after 10 min compared to wild-type and dat-1 mutants. Each bar represents the number of worms swimming after 10 min over the total number of worms per strain, and the error bars represent the binomial confidence intervals (n = 160 for each strain). Binomial logistic regression followed by Tukey's HSD (honest significant difference) test was used to determine significance for each pair of strains. All strains are statistically different from each other except for the two efhc-1 strains (ns = not significant, p = 0.115).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SWIP data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "c5dc1a23-c91a-417b-98fd-8f07f1102441",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C38",
+      "claim": "efhc-1 mutants show slower habituation compared to wild-type animals off food.",
+      "claim_type": "EXPLICIT",
+      "source": "efhc-1 mutants show slower habituation compared to wild-type animals off food. At each tap, the points represent the number of worms reversing over the total number of worms tracked per strain, and the error bars represent the binomial confidence intervals. Binomial logistic regression followed by Tukey's HSD (honest significant difference) test was used to determine significance of the habituated level (proportion reversing at tap 30) for each pair of strains. All strains are statistically different from each other (p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tap habituation data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "813563c0-c195-49bf-9ed0-e2112f1b459d",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C39",
+      "claim": "efhc-1 mutants off food mimic the habituation seen in wild-type animals on food.",
+      "claim_type": "EXPLICIT",
+      "source": "efhc-1 mutants off food mimic the habituation phenotype of wild-type animals on food, while dat-1 mutants habituate slightly slower than efhc-1 mutants off food Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tap habituation data shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "c539cfab-56f0-4805-9d25-16f4fa0a68e2",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C40",
+      "claim": "Both efhc-1 alleles show intermediate thrashing frequencies compared to wild-type and dat-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas most wild-type animals continue swimming 10 min after being submersed in water, most dat-1 animals are paralysed (Figure 2E), exhibiting an average thrashing frequency consistently lower than wild-type animals (Figure 2\u2014figure supplement 2D). In this assay, both efhc-1 alleles show intermediate levels of paralysis at 10 min compared to wild-type and dat-1 mutants (Figure 2E), and corresponding intermediate thrashing frequencies (Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by thrashing frequency data shown in Figure 2\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "ee23a6fb-e0ef-427a-b15c-3341e7d91626",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C41",
+      "claim": "efhc-1 mutants have increased dopamine signaling compared to wild-type animals, but less than dat-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data are consistent with efhc-1 mutants having increased dopamine signaling compared to wild-type animals, but less than dat-1 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple behavioral assays including habituation and SWIP.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "fc90d1d6-ed2b-4bc3-b644-9e2ca429d5b5",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C42",
+      "claim": "Wild-type animals show a calcium response to gentle (buzz) and strong (press) mechanical stimuli to the nose ~50% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type animals show a calcium response to each stimulus ~50% of the time, as measured by a change in the YFP/CFP ratio (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calcium imaging data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "d3ed3156-3b90-4688-8e06-5b930b37f1d1",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C43",
+      "claim": "efhc-1(gk424336) mutants rarely respond upon gentle stimulation but respond at wild-type levels to stronger stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, efhc-1(gk424336) mutants rarely respond upon gentle stimulation but respond at wild-type levels to the stronger stimulation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calcium imaging data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "2e9ba9bc-4f33-4c30-9502-62dfb4a51232",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C44",
+      "claim": "When efhc-1 mutants do exhibit calcium responses to either stimulus, they are of a comparable amplitude and shape as wild-type responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when efhc-1 mutants do exhibit calcium responses to either stimulus, they are of a comparable amplitude and shape as wild-type responses (Figure 3B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calcium imaging data shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "3e7f57b4-95ab-49bc-b547-53716e4f4d51",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C45",
+      "claim": "EFHC-1 has a specific role in mediating the likelihood of mechanosensory transduction upon gentle stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that like TRP-4, EFHC-1 has a specific role in mediating the likelihood of mechanosensory transduction upon gentle stimulation, as seen when an animal encounters food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the similarity of efhc-1 and trp-4 phenotypes in calcium imaging experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "0130764f-d1ab-454b-8407-a86a78db92f7",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C46",
+      "claim": "Mechanosensory transduction in non-dopaminergic OLQ neurons is not impaired in efhc-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mechanosensory transduction in non-dopaminergic OLQ neurons is not impaired in efhc-1 mutants and OLQ-mediated foraging behaviors are similarly unaffected (Figure 3\u2014figure supplement 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calcium imaging and behavioral data shown in Figure 3\u2014figure supplement 2A\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "1b55c5d3-f1a7-4a8a-9f05-facc62b56bf8",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C47",
+      "claim": "EFHC-1 has a specific mechanosensory function in CEP dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies a specific mechanosensory function for EFHC-1 in CEP dopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that EFHC-1 affects mechanosensation in CEP but not OLQ neurons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "801d83c9-b9c5-4017-98bc-33e5ddfab3d6",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C48",
+      "claim": "The axonemal structure of CEP neurons is not abrogated in efhc-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The axonemal structure of CEP neurons by TEM cross-section (refer to schematic) is not abrogated in efhc-1 mutants. Scale bars, 100 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TEM data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "0193763d-95b3-4fd3-aa3d-11745bcb29df",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C49",
+      "claim": "The localization of TRP-4 is unaffected in efhc-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The localization of the mechanosensory channel, TRP-4, which is comparable to that of EFHC-1, is unaffected in efhc-1 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "705fb4a5-fbd7-46c2-b12d-2c9327e14aad",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C50",
+      "claim": "Lengths of CEP and OLQ cilia measured in trp-4 and trp-4;efhc-1 mutants are indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "Lengths of CEP and OLQ cilia measured in trp-4 and trp-4;efhc-1 mutants are indistinguishable. Each dot represents one cilium. Kruskal-Wallis rank sum test (CEP cilia lengths) and Tukey's Honest Significant Differences (OLQ cilia lengths) were used for calculating the statistical significance. ns, not significant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ciliary length measurements shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "76343949-98e5-40de-83f2-0e8edcb7bb81",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C51",
+      "claim": "EFHC-1 does not play an essential role in specifying or maintaining non-motile cilia ultrastructure.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, EFHC-1 does not play an essential role in specifying, or maintaining, non-motile cilia ultrastructure in this metazoan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from TEM data showing normal ciliary structure in efhc-1 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "ae6d8c21-38fb-4e27-a52e-b50b9942d04a",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C52",
+      "claim": "Synaptic regions are intact in efhc-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed that synaptic regions are intact in efhc-1 mutants (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "cd6bd522-5ae4-48ab-ac75-90059aab1873",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C53",
+      "claim": "efhc-1;trp-4 double mutants show slower habituation than trp-4 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, efhc-1;trp-4 double mutants show slower habituation than trp-4 mutants (Figure 4A), consistent with a rise in dopamine signaling independent of ciliary TRP-4-associated mechanosensation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tap habituation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "aa316f41-4e46-4c65-b262-f281b4235ab7",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C54",
+      "claim": "Loss of EFHC-1 function at the synapse may inappropriately stimulate dopamine release in the absence of TRP-4-mediated mechanosensation.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, loss of EFHC-1 function at the synapse may inappropriately stimulate dopamine release in the absence of TRP-4-mediated mechanosensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the genetic interaction between efhc-1 and trp-4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "9abe4e11-6b33-4be2-9ee9-c4cb3060a230",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C55",
+      "claim": "efhc-1;daf-19 double mutants show responsiveness and habituation phenotypes that are intermediate between the daf-19 and efhc-1 single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the efhc-1;daf-19 double mutants show responsiveness and habituation phenotypes that are intermediate between the daf-19 and efhc-1 single mutants (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tap habituation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "e9b8bbe1-1b5b-45d6-8d04-2fbd3ecdc5f2",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C56",
+      "claim": "The loss of EFHC-1 results in increased dopamine signaling downstream of ciliary function.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the efhc-1;daf-19 double mutants show responsiveness and habituation phenotypes that are intermediate between the daf-19 and efhc-1 single mutants (Figure 4B), again suggesting that the loss of EFHC-1 results in increased dopamine signaling downstream of ciliary function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the genetic interaction between efhc-1 and daf-19.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "24e1632f-5819-45c7-bd4d-02f7cbdc37f2",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C57",
+      "claim": "EFHC1 physically interacts with and modulates the alpha subunit of the R-type voltage-gated calcium channel in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, EFHC1 physically interacts with and modulates the alpha subunit of the R-type voltage-gated calcium channel (Suzuki et al., 2004), which is most closely related to UNC-2 in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Suzuki et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "70c9a816-6f93-4b64-9614-427832119e84",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C58",
+      "claim": "The R-type voltage-gated calcium channel in humans is most closely related to UNC-2 in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, EFHC1 physically interacts with and modulates the alpha subunit of the R-type voltage-gated calcium channel (Suzuki et al., 2004), which is most closely related to UNC-2 in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of orthology relationships.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "9f09c499-1989-4d16-837c-a03ceac4f82c",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C59",
+      "claim": "unc-2 gain-of-function mutants show slow habituation compared to both wild-type animals and efhc-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Since unc-2 mutants are uncoordinated and cannot be tested for habituation defects, we took advantage of a gain-of-function (gf) allele that shows slow habituation compared to both wild-type animals and efhc-1 mutants (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tap habituation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "2d03ea0d-c051-48db-a7c8-e4a3c1d1968f",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C60",
+      "claim": "Expressing overactive UNC-2 specifically in efhc-1-expressing cells results in a slow habituation phenotype similar to that seen in efhc-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, expressing overactive UNC-2 specifically in efhc-1-expressing cells results in a slow habituation phenotype similar (but not identical) to that seen in efhc-1 mutants; crossing the UNC-2(gf) construct into efhc-1 mutants did not result in slower habituation, but instead leads to habituation similar to that seen in animals with UNC-2(gf) specifically in efhc-1-expressing cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tap habituation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "dcf02e53-3aa0-45ef-9ebb-c2069107a4ff",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C61",
+      "claim": "EFHC-1 may negatively regulate UNC-2, such that loss of EFHC-1 results in maximum activation of the voltage-gated channel at the synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings therefore provide evidence that independent of its sensory/activation role at the cilium, EFHC-1 may negatively regulate UNC-2, such that loss of EFHC-1 results in maximum activation of the voltage-gated channel at the synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the genetic interaction data between efhc-1 and unc-2(gf).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "0c987b5c-3aec-4d66-9d99-72e2176883af",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C62",
+      "claim": "EFHC1 has been adapted to function in a specific class of non-motile ciliated mechanosensory cells in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work in a representative eumetazoan (C. elegans) that lacks motile cilia supports this idea, where EFHC-1 has been adapted to function in a specific class of non-motile ciliated mechanosensory cells, the dopaminergic neurons (see model in Figure 5), where it is required for mechanosensation and proper dopamine signaling, yet dispensable for non-motile ciliary structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the collective experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "828366cb-013d-47ad-ab5f-b9b990d333fa",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C63",
+      "claim": "EFHC1 may have adapted its mechanosensation role from motile cilia to a strictly sensory role in non-motile cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that EFHC1, by being an integral part of the ciliary axoneme and by potentially modulating TRP (or other types of) mechanosensitive calcium channels (Katano et al., 2012) may have adapted its mechanosensation role from motile cilia (e.g., for environmental sensing and/or internal sensation and regulation of motile cilium movement) to a strictly sensory role in non-motile cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the data and a citation to Katano et al., 2012.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "b786b7b3-e4d4-4ca4-ab9b-54cc90d3d501",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C64",
+      "claim": "EFHC-1 functions at the synapses of dopaminergic neurons in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that in C. elegans, EFHC-1 functions at the synapses of dopaminergic neurons (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by localization and functional data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "ff764dfb-e834-4567-b664-641060c8e750",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C65",
+      "claim": "UNC-2 localizes to presynaptic active zones of sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this role is also likely related to the modulation of a calcium channel, namely UNC-2, that localizes to presynaptic active zones of sensory neurons (Saheki and Bargmann, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Saheki and Bargmann, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "ffeeaf1e-ae88-44ea-9110-4bc8198a29e1",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C66",
+      "claim": "UNC-2 may play an important role in evoked neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this role is also likely related to the modulation of a calcium channel, namely UNC-2, that localizes to presynaptic active zones of sensory neurons (Saheki and Bargmann, 2009), where it may play an important role in evoked neurotransmitter release (Mathews et al., 2003; Richmond et al., 2001; Schafer and Kenyon, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mathews et al., 2003; Richmond et al., 2001; Schafer and Kenyon, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "671be06a-b7c9-4223-8e40-2625d6865e42",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C67",
+      "claim": "Inappropriate regulation of dopamine signaling may contribute to various forms of epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "By identifying an epilepsy-related protein that directly modulates dopamine signaling in C. elegans, our work helps to strengthen the potential link between dopamine signaling and epilepsy, where evidence is accumulating to suggest that inappropriate regulation of dopamine signaling may contribute to various forms of epilepsy (Bozzi and Borrelli, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bozzi and Borrelli, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "7b043349-434e-424b-a067-2b4e80e4bce6",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C68",
+      "claim": "JME patients display several deficits in cognitive functions influenced by dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for dopamine is particularly relevant in JME because patients also display several deficits in cognitive functions influenced by dopamine, such as behavioral disturbances, social integration problems, impaired executive functions, reduced cognitive speed and impaired working memory (Bailet and Turk, 2000; Devinsky et al., 1997; Janz, 1985; Pascalicchio et al., 2007; Swartz et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bailet and Turk, 2000; Devinsky et al., 1997; Janz, 1985; Pascalicchio et al., 2007; Swartz et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "e494ebde-4e9b-44fc-b370-ff3eebe433bf",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C69",
+      "claim": "Dopamine signaling is dysregulated in JME patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Interrogation of the dopaminergic system in JME patients has revealed that dopamine signaling is indeed dysregulated in JME patients (Ciumas et al., 2008; Ciumas et al., 2010; Odano et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ciumas et al., 2008; Ciumas et al., 2010; Odano et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "422d51a4-8c79-4b20-b190-9494a2153055",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C70",
+      "claim": "Dopamine may play a role in the onset of seizures and/or cognitive impairments associated with JME.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with our work, this suggests that dopamine may play a role in the onset of seizures and/or cognitive impairments associated with JME.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, inferred from the combination of the authors' data and literature on dopamine dysregulation in JME.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "e35b33eb-19fd-4229-8b7f-b205e015fd42",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C71",
+      "claim": "Dopamine receptors (DRD1, 2, 5) are found on cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, dopamine receptors (DRD1, 2, 5) themselves are found on cilia, as are numerous other receptors, including for serotonin, Melanin-concentrating hormone, somatostatin, galanin, and neuropeptide (FF/YY) (Hilgendorf et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hilgendorf et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "a2e6080c-7e9d-49dd-a3ce-0fe2fd0f15ea",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "claim_id": "C72",
+      "claim": "Cilia may modulate neuronal excitation thresholds and play important roles in collectively influencing behavior, energy homeostasis and other aspects of mammalian physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "In such neurons (and others), cilia may modulate neuronal excitation thresholds and thus play important roles in collectively influencing behavior, energy homeostasis and other aspects of mammalian physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the authors' findings in C. elegans and knowledge of ciliary receptors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "452e395b-4e49-4536-9770-0619700a05fa",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background context for EFHC1 in epilepsy and cilia. JME is the most common idiopathic epilepsy (10-30% of cases), with EFHC1 disruption reported as the most frequent cause. EFHC1 is associated with motile cilia in specialized cells and is a core component of the protofilament ribbon structure. In mice, EFHC1 dysfunction impairs ependymal cilia motility, but ventricle enlargement does not correlate with epilepsy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are all supported by appropriate citations to prior literature (Delgado-Escueta 1984, 2007; Conte et al. 2009; Suzuki et al. 2008, 2009; Bishop et al. 2007; Ikeda et al. 2003; Linck et al. 2014). These claims establish the known background and motivate the current study. However, it should be noted that claim C2 stating EFHC1 disruption is the \"most frequent cause\" of JME may be contested in the literature and represents a strong assertion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "7e15be2e-63c4-461c-a725-32e4f1929186",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EFHC-1::GFP is specifically expressed in a subset of ciliated mechanosensory neurons in C. elegans, including dopaminergic CEP, ADE, and PDE neurons, and glutamatergic OLQ neurons. These neurons project cilia at specific body locations: CEP and OLQ in the nose, ADE in the anterior body, and PDE in the posterior body. EFHC-1::GFP is also found in distal regions of male-specific dopaminergic ray neurons. Endogenously tagged EFHC-1 predominantly accumulates in OLQ and ADE cilia but is weakly present in CEP cilia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17 are well-supported by fluorescence microscopy data (Figure 1A, 1B, Figure 1\u2014figure supplement 1, 2A) using both overexpression constructs and CRISPR knock-in strains. The localization patterns are confirmed by multiple approaches and are consistent with prior anatomical knowledge cited from the literature. The differential accumulation in different neuronal types (strong in OLQ/ADE, weak in CEP) is an interesting observation that is documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "6d18caad-084b-418b-a500-01e3c8a0b1bf",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Domain mapping reveals that the C-terminal fragment of EFHC-1 containing the second DM10 domain specifically localizes to cilia (OLQ, CEP, ADE, PDE), while the N-terminal fragment containing the first DM10 domain shows non-specific localization throughout neuronal processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by fluorescence microscopy data (Figure 1D, Figure 1\u2014figure supplement 3) showing differential localization of truncation constructs. This provides insight into the functional domains responsible for ciliary targeting. The experiments are straightforward and the conclusions are appropriately drawn from the imaging data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "67e9c6ac-c4d9-45ef-90c7-56b8bab25a98",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EFHC-1 in CEP and OLQ cilia is largely static, not rapidly recovering after photobleaching within 30 seconds, not associated with IFT, and its localization is independent of UNC-101 and DAF-19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 are supported by FRAP experiments (Figure 1\u2014figure supplement 4A-B), kymograph analysis (Figure 1\u2014figure supplement 4C), and localization studies in unc-101 and daf-19 mutants (Figure 1\u2014figure supplement 4D-E). These experiments collectively demonstrate that EFHC-1 ciliary localization has unique properties distinct from other ciliary proteins, suggesting it may be structurally incorporated rather than dynamically trafficked.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "11f61a20-6481-4fda-86b5-a4283dd2ec2d",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EFHC-1 localizes to presynaptic regions in dopaminergic neurons, where it partially overlaps with synaptic vesicle proteins (SNB-1, RAB-3) and the active zone protein ELKS-1. This synaptic localization is independent of the kinesin-3 motor UNC-104.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by colocalization data using both overexpression and CRISPR knock-in strains (Figure 1E, Figure 1\u2014figure supplement 5A-C). The partial colocalization with synaptic markers is quantified using Pearson's correlation coefficients. The independence from UNC-104 distinguishes EFHC-1 from synaptic vesicle proteins like RAB-3, suggesting a distinct trafficking mechanism. The data are convincing and appropriately analyzed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "7f23ebda-ebca-485b-96ef-77cd878b67fd",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "efhc-1 mutants are able to slow in the presence of food (basal slowing response) and efhc-1 mutant males show normal mating potency, indicating that efhc-1 mutants can release dopamine in appropriate behavioral contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by behavioral assays (Figure 2\u2014figure supplement 1A-B). These control experiments establish that efhc-1 mutants retain basic dopamine signaling capacity, which is important for interpreting the subsequent habituation phenotypes. The inference in C32 is reasonable given the dopamine-dependence of these behaviors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "c76d0d40-d5ac-4a92-b1fa-f11da23bf888",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "efhc-1 mutants show slower habituation to tap stimuli compared to wild-type animals, similar to dat-1 mutants with increased dopamine signaling. This phenotype is observed with two independent efhc-1 alleles and is abolished in efhc-1;cat-2 double mutants, demonstrating that the slow habituation depends on dopamine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are strongly supported by tap habituation data (Figure 2B-D) with appropriate statistical analysis (binomial logistic regression, Tukey's HSD). The use of two independent alleles (C34) strengthens the conclusion that the phenotype is due to loss of efhc-1. The genetic epistasis experiment with cat-2 (C35-C36) provides compelling evidence that the phenotype is dopamine-dependent. Sample sizes appear adequate and statistical methods are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "1833d057-896c-40eb-a7f2-6e3c93e93aef",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "efhc-1 mutants show intermediate levels of swimming-induced paralysis (SWIP) and thrashing frequency compared to wild-type and dat-1 mutants. They also show slower habituation off food, mimicking wild-type animals on food. Together, these data indicate that efhc-1 mutants have increased dopamine signaling compared to wild-type, but less than dat-1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by SWIP assays (Figure 2E), thrashing frequency measurements (Figure 2\u2014figure supplement 2D), and habituation assays off food (Figure 2\u2014figure supplement 2B-C). The intermediate phenotypes consistently suggest a moderate increase in dopamine signaling. The inference in C41 is well-supported by the convergent evidence from multiple behavioral assays. Statistical analyses are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "93233082-6644-4959-ad7c-e912a181649e",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Calcium imaging reveals that efhc-1 mutants rarely respond to gentle mechanical stimulation (buzz) but respond normally to stronger stimulation (press). When responses do occur, they are of comparable amplitude and shape to wild-type. This suggests EFHC-1 has a specific role in mediating the likelihood of mechanosensory transduction upon gentle stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by calcium imaging data in CEP neurons (Figure 3A-B, Figure 3\u2014figure supplement 1). The phenotype is similar to trp-4 mutants, suggesting a role in mechanosensation. The distinction between response probability and response amplitude is important and well-documented. The inference in C45 is reasonable given the similarity to trp-4 phenotypes. However, the mechanism by which EFHC-1 affects response probability remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "3b84d04f-a161-4891-abf1-cbe190383499",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mechanosensory transduction in non-dopaminergic OLQ neurons is not impaired in efhc-1 mutants, and OLQ-mediated foraging behaviors are unaffected, implying a specific mechanosensory function for EFHC-1 in CEP dopaminergic neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by calcium imaging and behavioral data in OLQ neurons (Figure 3\u2014figure supplement 2A-E). This cell-type specificity is important for understanding EFHC-1 function and suggests it is not a general ciliary mechanosensory component. The inference in C47 is well-supported by the differential effects in CEP vs. OLQ neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "2a0882b7-eec3-4808-ac60-aebcd55a4ee8",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The axonemal structure of CEP neurons is normal in efhc-1 mutants by TEM, TRP-4 localization is unaffected, and ciliary lengths are normal. This indicates that EFHC-1 does not play an essential role in specifying or maintaining non-motile cilia ultrastructure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by TEM data (Figure 3C), fluorescence microscopy of TRP-4::YFP (Figure 3D), and ciliary length measurements (Figure 3D). These control experiments are important for ruling out structural defects as the cause of the mechanosensory phenotype. The inference in C51 is appropriate given the normal ultrastructure. Additional TEM data in Figure 3\u2014figure supplement 3 further support normal ciliary structure in conventional cilia.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "2d82f068-d655-44e2-8700-07d11a663584",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Synaptic regions are intact in efhc-1 mutants. efhc-1;trp-4 double mutants show slower habituation than trp-4 mutants, suggesting that loss of EFHC-1 function at the synapse may inappropriately stimulate dopamine release in the absence of TRP-4-mediated mechanosensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by fluorescence microscopy (Figure 4\u2014figure supplement 1) and genetic interaction data (Figure 4A). The epistasis experiment is well-designed and the interpretation in C54 is reasonable: if efhc-1 only affected ciliary function, the double mutant should resemble trp-4 alone. The slower habituation in the double mutant suggests an additional synaptic function. However, alternative explanations (e.g., effects on other sensory pathways) are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "e2faa3bf-acb5-41b6-aa10-335a1e497f31",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "efhc-1;daf-19 double mutants show intermediate habituation phenotypes between daf-19 and efhc-1 single mutants, suggesting that loss of EFHC-1 results in increased dopamine signaling downstream of ciliary function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by tap habituation data (Figure 4B). The genetic interaction with daf-19 (which eliminates cilia) provides additional evidence for a non-ciliary function of EFHC-1. The intermediate phenotype is consistent with EFHC-1 having both ciliary and synaptic functions. However, the interpretation is complicated by the pleiotropic effects of daf-19 mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "a0b09d02-b683-4a6f-b87f-65a7c13d27bb",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "unc-2 gain-of-function mutants show slow habituation. Expressing overactive UNC-2 specifically in efhc-1-expressing cells produces a slow habituation phenotype similar to efhc-1 mutants, and this is not exacerbated in efhc-1 mutants. This suggests EFHC-1 may negatively regulate UNC-2, such that loss of EFHC-1 results in maximum activation of the voltage-gated channel at the synapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by tap habituation data with unc-2 gain-of-function alleles (Figure 4C). The genetic interaction experiments are well-designed and provide evidence for a functional relationship between EFHC-1 and UNC-2. The lack of additivity between efhc-1 mutation and UNC-2(gf) expression suggests they act in the same pathway. However, the inference in C61 that EFHC-1 \"negatively regulates\" UNC-2 is somewhat speculative\u2014the data are consistent with this model but do not directly demonstrate it.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "d2e9f588-099c-4039-aa4e-acd4edff7d33",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "C. elegans EFHC-1 is required for mechanosensation in non-motile cilia of dopaminergic neurons, where it regulates neuronal activation and dopamine signaling. EFHC-1 also functions at synapses to modulate dopamine signaling in cooperation with UNC-2. EFHC1 has been adapted to function in a specific class of non-motile ciliated mechanosensory cells in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 and C62 represent the main conclusions of the manuscript, integrating findings from localization, calcium imaging, behavioral assays, and genetic interactions. The evidence collectively supports a dual role for EFHC-1 at cilia (mechanosensation) and synapses (modulation of dopamine release). The adaptation from motile to non-motile cilia function is a compelling evolutionary interpretation supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "7b75703a-4b75-4112-97c1-5970057b8ba9",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "EFHC1 may have adapted its mechanosensation role from motile cilia (for environmental sensing and/or regulation of cilium movement) to a strictly sensory role in non-motile cilia, potentially by modulating TRP or other mechanosensitive calcium channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is speculative and represents an evolutionary hypothesis based on the authors' findings. While the data support a mechanosensory role for EFHC-1 in non-motile cilia, the proposed evolutionary trajectory and mechanism (modulation of TRP channels) are inferred rather than directly demonstrated. The citation to Katano et al. 2012 provides some support, but direct evidence for EFHC-1 modulating TRP-4 is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "fcc1c77a-d569-40ee-89aa-31c351d46ba5",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "EFHC-1 functions at synapses of dopaminergic neurons in C. elegans, likely related to modulation of UNC-2, which localizes to presynaptic active zones and may play an important role in evoked neurotransmitter release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 integrate the authors' localization and functional data (C64) with prior literature on UNC-2 (C65-C66, supported by citations to Saheki and Bargmann 2009; Mathews et al. 2003; Richmond et al. 2001; Schafer and Kenyon 1995). The connection between EFHC-1 and UNC-2 is supported by the genetic interaction data, though the molecular mechanism remains to be elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "3dba12fe-8cbd-4e7d-ac76-c0f88d7e4eb0",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The work strengthens the link between dopamine signaling and epilepsy. JME patients display cognitive deficits influenced by dopamine and have dysregulated dopamine signaling. This suggests dopamine may play a role in seizures and/or cognitive impairments associated with JME.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C69 are supported by appropriate citations to the literature (Bozzi and Borrelli 2013; Bailet and Turk 2000; Devinsky et al. 1997; Janz 1985; Pascalicchio et al. 2007; Swartz et al. 1996; Ciumas et al. 2008, 2010; Odano et al. 2012). However, claim C70 is speculative, extrapolating from C. elegans findings to human JME. While the connection is plausible and the authors appropriately use cautious language (\"may play a role\"), direct evidence linking EFHC1-mediated dopamine dysregulation to JME pathology in humans is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "b560bf8c-1820-4139-8ec4-fbdd70bd42ae",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Dopamine receptors are found on cilia in mammalian neurons, where cilia may modulate neuronal excitation thresholds and influence behavior, energy homeostasis, and other aspects of physiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is supported by citation to Hilgendorf et al. 2016. However, claim C72 is speculative, extrapolating from the authors' C. elegans findings to mammalian physiology. While the hypothesis is reasonable and the authors use appropriate cautious language (\"may modulate\"), direct evidence for this role in mammals is not provided. This represents an interesting direction for future research but is not demonstrated in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "99ccedc8-2239-4ec5-8bce-c51025b009b3",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "In C. elegans, ciliary TRP-4 channels are mechanically activated by food, resulting in dopamine release. Disrupting tyrosine hydroxylase CAT-2 impairs dopamine signaling and prevents food-induced slowing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 describe established background knowledge about dopamine signaling in C. elegans, supported by appropriate citations (Chase et al. 2004; Ezcurra et al. 2011; Sanyal et al. 2004; Sawin et al. 2000). These claims provide essential context for interpreting the authors' findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    },
+    {
+      "id": "40c6efb0-3790-4deb-8ffc-c7ad715445e2",
+      "content_id": "6d9cd6e6-c56b-4617-a241-049ee255e886",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "In humans, EFHC1 physically interacts with and modulates the alpha subunit of the R-type voltage-gated calcium channel, which is most closely related to UNC-2 in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by citation to Suzuki et al. 2004 (C57) and established orthology relationships (C58). This prior knowledge motivates the investigation of EFHC-1/UNC-2 interactions in C. elegans and provides a mechanistic link to the human disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:54:24.159737Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "150a01a1-d1ab-4f50-b436-34e2a048bea5",
+      "result_id": "452e395b-4e49-4536-9770-0619700a05fa"
+    },
+    {
+      "claim_id": "634807eb-e4e7-44c8-a635-11059edca3d2",
+      "result_id": "452e395b-4e49-4536-9770-0619700a05fa"
+    },
+    {
+      "claim_id": "dedbc1b4-d6ba-49ad-925e-e82ae210618f",
+      "result_id": "452e395b-4e49-4536-9770-0619700a05fa"
+    },
+    {
+      "claim_id": "32ce1f1b-a68e-4856-bf2d-b8f7ed49e73a",
+      "result_id": "452e395b-4e49-4536-9770-0619700a05fa"
+    },
+    {
+      "claim_id": "7fcdbe9e-6269-4b6b-896e-dd33a857d55c",
+      "result_id": "452e395b-4e49-4536-9770-0619700a05fa"
+    },
+    {
+      "claim_id": "7807fd81-f25a-4a31-b56e-25fe2d43965f",
+      "result_id": "452e395b-4e49-4536-9770-0619700a05fa"
+    },
+    {
+      "claim_id": "848f76a6-5185-4325-88f3-eeca48018d0e",
+      "result_id": "452e395b-4e49-4536-9770-0619700a05fa"
+    },
+    {
+      "claim_id": "672e933f-9cbe-41c9-a60e-35f22c21326f",
+      "result_id": "7e15be2e-63c4-461c-a725-32e4f1929186"
+    },
+    {
+      "claim_id": "3ff94052-464d-4c45-9fee-7dd85e411778",
+      "result_id": "7e15be2e-63c4-461c-a725-32e4f1929186"
+    },
+    {
+      "claim_id": "97ee9294-293f-4a3e-a16d-75819672fea5",
+      "result_id": "7e15be2e-63c4-461c-a725-32e4f1929186"
+    },
+    {
+      "claim_id": "819584dc-e258-453e-a74c-e8aff8f11ae2",
+      "result_id": "7e15be2e-63c4-461c-a725-32e4f1929186"
+    },
+    {
+      "claim_id": "718e76fd-ab26-46fd-ab4d-f069b298f60d",
+      "result_id": "7e15be2e-63c4-461c-a725-32e4f1929186"
+    },
+    {
+      "claim_id": "a32f57d3-76cc-46e0-bcd5-a3d2d6dac6ca",
+      "result_id": "7e15be2e-63c4-461c-a725-32e4f1929186"
+    },
+    {
+      "claim_id": "5534af29-bdcf-4316-8a01-908255546ab5",
+      "result_id": "7e15be2e-63c4-461c-a725-32e4f1929186"
+    },
+    {
+      "claim_id": "b6305040-a653-4583-a0ea-ed31e0697ba5",
+      "result_id": "6d18caad-084b-418b-a500-01e3c8a0b1bf"
+    },
+    {
+      "claim_id": "cdf66d1d-f210-46c9-bd85-c1ad37f7b0d0",
+      "result_id": "6d18caad-084b-418b-a500-01e3c8a0b1bf"
+    },
+    {
+      "claim_id": "aa3cc81f-5eb7-455a-9e1e-8828c8c06d42",
+      "result_id": "67e9c6ac-c4d9-45ef-90c7-56b8bab25a98"
+    },
+    {
+      "claim_id": "6f41bbbe-ae86-4b3d-ab06-a60e59a58ae9",
+      "result_id": "67e9c6ac-c4d9-45ef-90c7-56b8bab25a98"
+    },
+    {
+      "claim_id": "e17eedec-4e02-4013-9605-f07cc4a93c8c",
+      "result_id": "67e9c6ac-c4d9-45ef-90c7-56b8bab25a98"
+    },
+    {
+      "claim_id": "eb97f047-5262-4c94-9a14-b607338e86b5",
+      "result_id": "67e9c6ac-c4d9-45ef-90c7-56b8bab25a98"
+    },
+    {
+      "claim_id": "310ec485-3993-44c9-bb0b-ccc87ad53c09",
+      "result_id": "11f61a20-6481-4fda-86b5-a4283dd2ec2d"
+    },
+    {
+      "claim_id": "592b1052-f571-4595-9547-59de07840508",
+      "result_id": "11f61a20-6481-4fda-86b5-a4283dd2ec2d"
+    },
+    {
+      "claim_id": "a8e5a429-4ac5-469d-b9c3-c0cc55bb53bc",
+      "result_id": "11f61a20-6481-4fda-86b5-a4283dd2ec2d"
+    },
+    {
+      "claim_id": "8496ac49-1307-4b48-b0bc-6e4f6693a688",
+      "result_id": "11f61a20-6481-4fda-86b5-a4283dd2ec2d"
+    },
+    {
+      "claim_id": "011ba551-bd14-448e-8812-fd00f69869b5",
+      "result_id": "7f23ebda-ebca-485b-96ef-77cd878b67fd"
+    },
+    {
+      "claim_id": "265db735-0bc9-4136-865f-8ba586c5c926",
+      "result_id": "7f23ebda-ebca-485b-96ef-77cd878b67fd"
+    },
+    {
+      "claim_id": "088f15c6-fea5-4ffb-866d-0bbcc544481d",
+      "result_id": "7f23ebda-ebca-485b-96ef-77cd878b67fd"
+    },
+    {
+      "claim_id": "5c3ab751-1ec0-417d-9855-fcfe0c46c069",
+      "result_id": "c76d0d40-d5ac-4a92-b1fa-f11da23bf888"
+    },
+    {
+      "claim_id": "db128915-9a33-4ec7-987a-b95293bae117",
+      "result_id": "c76d0d40-d5ac-4a92-b1fa-f11da23bf888"
+    },
+    {
+      "claim_id": "22bc6eff-44a5-4edd-bde8-22d1f58ffd45",
+      "result_id": "c76d0d40-d5ac-4a92-b1fa-f11da23bf888"
+    },
+    {
+      "claim_id": "ab111517-7d86-4416-bfba-1d8b1bebf3aa",
+      "result_id": "c76d0d40-d5ac-4a92-b1fa-f11da23bf888"
+    },
+    {
+      "claim_id": "411bb633-3d1f-4316-99d2-ca565fb1090d",
+      "result_id": "1833d057-896c-40eb-a7f2-6e3c93e93aef"
+    },
+    {
+      "claim_id": "c5dc1a23-c91a-417b-98fd-8f07f1102441",
+      "result_id": "1833d057-896c-40eb-a7f2-6e3c93e93aef"
+    },
+    {
+      "claim_id": "813563c0-c195-49bf-9ed0-e2112f1b459d",
+      "result_id": "1833d057-896c-40eb-a7f2-6e3c93e93aef"
+    },
+    {
+      "claim_id": "c539cfab-56f0-4805-9d25-16f4fa0a68e2",
+      "result_id": "1833d057-896c-40eb-a7f2-6e3c93e93aef"
+    },
+    {
+      "claim_id": "ee23a6fb-e0ef-427a-b15c-3341e7d91626",
+      "result_id": "1833d057-896c-40eb-a7f2-6e3c93e93aef"
+    },
+    {
+      "claim_id": "fc90d1d6-ed2b-4bc3-b644-9e2ca429d5b5",
+      "result_id": "93233082-6644-4959-ad7c-e912a181649e"
+    },
+    {
+      "claim_id": "d3ed3156-3b90-4688-8e06-5b930b37f1d1",
+      "result_id": "93233082-6644-4959-ad7c-e912a181649e"
+    },
+    {
+      "claim_id": "2e9ba9bc-4f33-4c30-9502-62dfb4a51232",
+      "result_id": "93233082-6644-4959-ad7c-e912a181649e"
+    },
+    {
+      "claim_id": "3e7f57b4-95ab-49bc-b547-53716e4f4d51",
+      "result_id": "93233082-6644-4959-ad7c-e912a181649e"
+    },
+    {
+      "claim_id": "0130764f-d1ab-454b-8407-a86a78db92f7",
+      "result_id": "3b84d04f-a161-4891-abf1-cbe190383499"
+    },
+    {
+      "claim_id": "1b55c5d3-f1a7-4a8a-9f05-facc62b56bf8",
+      "result_id": "3b84d04f-a161-4891-abf1-cbe190383499"
+    },
+    {
+      "claim_id": "801d83c9-b9c5-4017-98bc-33e5ddfab3d6",
+      "result_id": "2a0882b7-eec3-4808-ac60-aebcd55a4ee8"
+    },
+    {
+      "claim_id": "0193763d-95b3-4fd3-aa3d-11745bcb29df",
+      "result_id": "2a0882b7-eec3-4808-ac60-aebcd55a4ee8"
+    },
+    {
+      "claim_id": "705fb4a5-fbd7-46c2-b12d-2c9327e14aad",
+      "result_id": "2a0882b7-eec3-4808-ac60-aebcd55a4ee8"
+    },
+    {
+      "claim_id": "76343949-98e5-40de-83f2-0e8edcb7bb81",
+      "result_id": "2a0882b7-eec3-4808-ac60-aebcd55a4ee8"
+    },
+    {
+      "claim_id": "ae6d8c21-38fb-4e27-a52e-b50b9942d04a",
+      "result_id": "2d82f068-d655-44e2-8700-07d11a663584"
+    },
+    {
+      "claim_id": "cd6bd522-5ae4-48ab-ac75-90059aab1873",
+      "result_id": "2d82f068-d655-44e2-8700-07d11a663584"
+    },
+    {
+      "claim_id": "aa316f41-4e46-4c65-b262-f281b4235ab7",
+      "result_id": "2d82f068-d655-44e2-8700-07d11a663584"
+    },
+    {
+      "claim_id": "9abe4e11-6b33-4be2-9ee9-c4cb3060a230",
+      "result_id": "e2faa3bf-acb5-41b6-aa10-335a1e497f31"
+    },
+    {
+      "claim_id": "e9b8bbe1-1b5b-45d6-8d04-2fbd3ecdc5f2",
+      "result_id": "e2faa3bf-acb5-41b6-aa10-335a1e497f31"
+    },
+    {
+      "claim_id": "9f09c499-1989-4d16-837c-a03ceac4f82c",
+      "result_id": "a0b09d02-b683-4a6f-b87f-65a7c13d27bb"
+    },
+    {
+      "claim_id": "2d03ea0d-c051-48db-a7c8-e4a3c1d1968f",
+      "result_id": "a0b09d02-b683-4a6f-b87f-65a7c13d27bb"
+    },
+    {
+      "claim_id": "dcf02e53-3aa0-45ef-9ebb-c2069107a4ff",
+      "result_id": "a0b09d02-b683-4a6f-b87f-65a7c13d27bb"
+    },
+    {
+      "claim_id": "f9aab794-5da3-47ad-bf65-480f4c8ea35a",
+      "result_id": "d2e9f588-099c-4039-aa4e-acd4edff7d33"
+    },
+    {
+      "claim_id": "4503c1f3-beb7-4d51-840a-ed4181411c49",
+      "result_id": "d2e9f588-099c-4039-aa4e-acd4edff7d33"
+    },
+    {
+      "claim_id": "f74196d1-d0bc-45a3-bac0-4f6cbf0dfe54",
+      "result_id": "d2e9f588-099c-4039-aa4e-acd4edff7d33"
+    },
+    {
+      "claim_id": "0c987b5c-3aec-4d66-9d99-72e2176883af",
+      "result_id": "d2e9f588-099c-4039-aa4e-acd4edff7d33"
+    },
+    {
+      "claim_id": "828366cb-013d-47ad-ab5f-b9b990d333fa",
+      "result_id": "7b75703a-4b75-4112-97c1-5970057b8ba9"
+    },
+    {
+      "claim_id": "b786b7b3-e4d4-4ca4-ab9b-54cc90d3d501",
+      "result_id": "fcc1c77a-d569-40ee-89aa-31c351d46ba5"
+    },
+    {
+      "claim_id": "ff764dfb-e834-4567-b664-641060c8e750",
+      "result_id": "fcc1c77a-d569-40ee-89aa-31c351d46ba5"
+    },
+    {
+      "claim_id": "ffeeaf1e-ae88-44ea-9110-4bc8198a29e1",
+      "result_id": "fcc1c77a-d569-40ee-89aa-31c351d46ba5"
+    },
+    {
+      "claim_id": "671be06a-b7c9-4223-8e40-2625d6865e42",
+      "result_id": "3dba12fe-8cbd-4e7d-ac76-c0f88d7e4eb0"
+    },
+    {
+      "claim_id": "7b043349-434e-424b-a067-2b4e80e4bce6",
+      "result_id": "3dba12fe-8cbd-4e7d-ac76-c0f88d7e4eb0"
+    },
+    {
+      "claim_id": "e494ebde-4e9b-44fc-b370-ff3eebe433bf",
+      "result_id": "3dba12fe-8cbd-4e7d-ac76-c0f88d7e4eb0"
+    },
+    {
+      "claim_id": "422d51a4-8c79-4b20-b190-9494a2153055",
+      "result_id": "3dba12fe-8cbd-4e7d-ac76-c0f88d7e4eb0"
+    },
+    {
+      "claim_id": "e35b33eb-19fd-4229-8b7f-b205e015fd42",
+      "result_id": "b560bf8c-1820-4139-8ec4-fbdd70bd42ae"
+    },
+    {
+      "claim_id": "a2e6080c-7e9d-49dd-a3ce-0fe2fd0f15ea",
+      "result_id": "b560bf8c-1820-4139-8ec4-fbdd70bd42ae"
+    },
+    {
+      "claim_id": "429f662d-2f55-41f9-b38f-d1792c45b49a",
+      "result_id": "99ccedc8-2239-4ec5-8bce-c51025b009b3"
+    },
+    {
+      "claim_id": "59d1439a-d064-44ed-9f83-ccfeb3b7a83a",
+      "result_id": "99ccedc8-2239-4ec5-8bce-c51025b009b3"
+    },
+    {
+      "claim_id": "24e1632f-5819-45c7-bd4d-02f7cbdc37f2",
+      "result_id": "40c6efb0-3790-4deb-8ffc-c7ad715445e2"
+    },
+    {
+      "claim_id": "70c9a816-6f93-4b64-9614-427832119e84",
+      "result_id": "40c6efb0-3790-4deb-8ffc-c7ad715445e2"
+    }
+  ],
+  "comparisons": []
+}

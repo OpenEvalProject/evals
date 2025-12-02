@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Dvl2 DIX forms an antiparallel double-stranded helical filament in solution with a global resolution of 3.6 \u00c5 as determined by cryo-EM. The structure reveals successive protomers related by a 48.0 \u00b1 0.2\u00b0 rotation and 13.5 \u00b1 0.3 \u00c5 rise, with a helical pitch of 101.3 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C14 are well-supported by high-resolution cryo-EM structural data (Figure 2, Table 1). The structural parameters are precisely measured and the antiparallel double-stranded architecture is clearly demonstrated, contrasting with previous single-stranded crystal structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The DIX double helix is stabilized by head-to-tail intra-strand interactions (e.g., Y27 with F56/K68) and inter-strand contacts mediated by \u03b23-\u03b24 and \u03b24-\u03b25 loops (residues M60, G65, N82). Mutations disrupting these interfaces reduce oligomer size and impair Wnt signaling, with Y27D abolishing filament formation and signaling, while inter-strand mutants show intermediate defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C28 are supported by converging structural (cryo-EM), biochemical (SEC), and functional (TOPFLASH) data. The structure-function relationships are validated through systematic mutagenesis showing that both intra-strand and inter-strand contacts are functionally important for signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C109"
+    ],
+    "result": "Purified DIX filaments range from 4.9-9.5 MDa by SEC-MALS and sediment starting at ~12 \u03bcM concentration, which is lower than expected given the estimated DIX-DIX KD of 5-20 \u03bcM from previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C109 are supported by direct SEC-MALS measurements (Figure 1b) and sedimentation assays (Figure 1c,d). The observation that filaments form at concentrations below the estimated KD is explained by cooperative inter-strand stabilization (C27), providing internal consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Axin DAX forms small single-stranded oligomers (up to octamers at 24 \u03bcM) with stronger self-association (KD ~0.9 \u03bcM) than DIX-DIX (5-20 \u03bcM). The D and I regions do not affect DAX oligomerization, and protomers interact through the head-to-tail interface as shown by Y760D producing monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C29-C37 are well-supported by SEC-MALS data (Figure 4b, Tables 2-3) showing concentration-dependent oligomerization and quantitative KD determination. The mutagenesis data (Y760D) confirms head-to-tail interactions, and DI-DAX behaves like DAX alone, validating that flanking regions don't affect oligomerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "DAX cannot form inter-strand contacts due to electrostatic repulsion (E815 vs. E794) and a two-residue insertion (D796-C797) in the \u03b23-\u03b24 loop. DIX insertion mutants (60*DE*61, 64*DC*65) prevent filament formation but retain some head-to-tail interactions. Converting DAX to enable inter-strand contacts (E815N/E816G mutations) produces double-stranded filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 are supported by structural analysis, sequence alignments (Figure 4c, Figure 4\u2014figure supplement 1), SEC data on insertion mutants (Figure 3\u2014figure supplement 1), and gain-of-function experiments showing DAX NG/NQ-NG mutants form filaments (Figure 4a,d). The logic connecting sequence differences to structural consequences is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "DAX disrupts DIX filaments through its head-to-tail interface, as shown by sedimentation, TIRF, and native gel assays. DAX mutants with either head (Y760D) or tail (V800A/F801A) mutations can still solubilize filaments, but the double mutant cannot. Half-maximal solubilization occurs at ~15 \u03bcM DAX with 10 \u03bcM DIX input, indicating DAX-DIX affinity is comparable to DIX-DIX but weaker than DAX-DAX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C60 are supported by multiple orthogonal assays (sedimentation Figure 5a,b; TIRF Figure 5c; native gel Figure 5\u2014figure supplement 2). The mutagenesis logic is sound: disrupting either interface alone still allows solubilization, but disrupting both prevents it, demonstrating head-to-tail binding. The concentration dependence provides affinity estimates consistent with other data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "DAX caps the ends of DIX oligomers such that a double-stranded DIX oligomer has at most four DAX binding sites (two ends per strand). This capping/severing mechanism is distinct from co-polymerization models that would not limit Axin stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C101-C104 are supported by the filament disruption data (C47-C60) combined with structural evidence that DAX cannot form inter-strand contacts (C38-C46). The geometric calculation of four binding sites is straightforward. The distinction from co-polymerization is logically sound and mechanistically important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A conserved electronegative groove (E22, E24) runs along the DIX filament. Mutating these residues to glutamines (QQ) or lysines (KK) produces hyperstabilized filaments that cannot be solubilized by DAX and show impaired signaling, suggesting these residues tune oligomer stability to allow DAX incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are supported by structural observation (Figure 5\u2014figure supplement 3a), sequence conservation (Figure 4\u2014figure supplement 1), EM showing filament formation (Figure 5\u2014figure supplement 3b), sedimentation showing resistance to DAX (Figure 5\u2014figure supplement 3c), and TOPFLASH showing reduced signaling (Figure 5\u2014figure supplement 3d). The hypothesis about tuning stability is reasonable but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "DIX oligomerization provides avidity that compensates for weak DAX-DIX interaction. Insertion mutants that disrupt inter-strand contacts abolish signaling, while replacing DIX with DAX quadruples signaling due to higher DAX-DAX affinity. Adding Sm1 heptamer to DIX enhances signaling ~3-fold, and Sm1 can rescue signaling of non-oligomerizing DAX Y760D. Tankyrase2 SAM domain replacement also restores signaling by recruiting Axin indirectly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C83 are supported by systematic TOPFLASH assays with diverse constructs (Figure 6). The avidity hypothesis is tested through multiple approaches: domain swaps, oligomerization-deficient mutants, and heterologous oligomerization domains. The results consistently support that oligomerization-mediated avidity is critical for Axin recruitment and signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C99"
+    ],
+    "result": "At endogenous expression levels in HEK293T cells, Dvl2 forms small oligomers typically containing fewer than 10 molecules. TIRF imaging shows 90% of membrane-associated Dvl2-GFP spots have intensities within 10x of single GFP, with no significant change upon Wnt3A stimulation. Most cells show diffuse signal with ~20% having 1-2 puncta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C88-C95, C99 are supported by quantitative TIRF imaging with single-particle tracking and Gaussian mixture modeling (Figure 7c). The endogenous tagging approach avoids overexpression artifacts. The statistical analysis (Mann-Whitney, bootstrapping) is appropriate. The lack of Wnt-induced oligomerization change is clearly stated and challenges prior models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "The double-stranded DIX oligomer structure is functionally relevant for Wnt signaling, as disrupting inter-strand interfaces reduces signaling. A minimum of 4 DIX protomers (two head-tail dimers) is likely required to form a stable double-stranded structure based on the more severe effects of head-to-tail mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by the correlation between structural requirements and signaling activity shown through mutagenesis (Figures 3, 6). The inference about minimum oligomer size is reasonable based on comparing severity of head-to-tail versus inter-strand mutations, though direct structural evidence for the minimal unit is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "While prior models proposed that Wnt binding promotes Dvl oligomerization needed for Axin binding, TIRF data show no major change in Dvl oligomeric state at the membrane upon Wnt activation. How Wnt activates Dvl for Axin recruitment remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 accurately cite prior models and contrast them with the current TIRF data (Figure 7c, C107). The acknowledgment that the activation mechanism remains unclear is appropriate given the data. This represents an important unresolved question rather than a weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Previous studies using head-to-tail mutants suggested weak DAX-DAX and DAX-DIX affinities. However, SEC-MALS data indicate DAX-DAX interaction (~0.9 \u03bcM) is ~10x stronger than DIX-DIX or DIX-DAX (5-20 \u03bcM). Filament disruption experiments indicate DIX-DAX affinity is comparable to DIX-DIX. Previous mutants may have effects beyond simple interface disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by SEC-MALS measurements (Figure 4b, Tables 2-3) and filament disruption assays (Figure 5). The discrepancy with previous studies is acknowledged and a reasonable explanation (energetic coupling between interfaces) is proposed. The current measurements using wild-type proteins are more reliable than previous mutant-based estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The destruction complex is assembled by Axin DAX oligomerization and Axin-APC binding, possibly forming a phase-separated structure. Limited DAX oligomerization matches APC's multiple Axin-binding sites. The stronger DAX-DAX interaction may prevent disruption by cytoplasmic Dvl absent Wnt signal, while Dvl DIX oligomerization provides avidity to overcome this and recruit the destruction complex upon signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C126 integrate the current findings with established knowledge and cited literature about destruction complex organization. The model is logically consistent with the measured affinities and stoichiometries. The citations to prior work on destruction complex function, phase separation, and overexpression effects are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Upon Wnt signaling, activated Dvl recruits the destruction complex through high-avidity DAX-DIX binding. This model explains why DAX substitution enhances signaling (higher DAX-DAX affinity) and why Sm1 heptamer can rescue signaling of non-oligomerizing mutants. Loop insertion mutants may reduce signaling by lowering avidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 present a mechanistic model supported by the TOPFLASH data with various constructs (Figure 6). The model integrates structural, biochemical, and functional data coherently. The explanation for different mutant phenotypes is consistent with the avidity hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The limit of four Axin-binding sites per Dvl oligomer may provide optimal stoichiometry for GSK-3 inhibition. Given cellular Axin and GSK-3 concentrations (tens-hundreds nM), high-affinity Axin-GSK-3 binding (KD = 8 nM), and LRP6 inhibition of GSK-3 (Ki = 2 \u03bcM), a limited number of Axin/GSK-3 complexes per receptor could maximize inhibition, though multiple receptors may be needed for sufficient \u03b2-catenin stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C138 present a speculative model about optimal stoichiometry. While the cited concentrations and affinities are from literature or unpublished data (C133), the functional implications are not directly tested. The model is plausible but remains hypothetical without experimental validation of the proposed stoichiometric relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The activated signalosome may be a crosslinked, phase-separated structure with multiple receptor copies. The presence of <10 Dvl molecules and DAX capping of DIX ends suggests roughly matched Axin and Dvl numbers, providing appropriate stoichiometry for signalosome crosslinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 integrate current findings (TIRF data, capping model) with cited models of signalosome organization. The inference about matched stoichiometry is logical given the structural and quantitative data. However, the phase separation aspect and precise signalosome composition remain to be directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Overexpression of fluorescently tagged Dvl or Axin produces membrane-proximal puncta upon Wnt activation, correlating with DIX domain oligomerization ability. Dvl DIX polymerization mutants prevent signaling, indicating oligomerization is necessary for signal transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 cite established observations from prior overexpression studies and are supported by the current mutagenesis data (Figures 3c, 5). The correlation between oligomerization and puncta formation is well-documented, and the necessity of oligomerization for signaling is demonstrated by multiple mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "FRAP measurements indicate that Dvl polymers are highly dynamic in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 cites previous FRAP studies showing Dvl polymer dynamics. This is established prior work that provides context for interpreting the filament disruption mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Previous crystal structures showed single-stranded DIX helices with pitches of 85 \u00c5 (Dvl2 Y27D) and 88 \u00c5 (Dvl2 Y27W/C80S), and antiparallel Dvl1 Y17D packing with 140 \u00c5 pitch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 accurately cite previous structural studies. These provide important context for the novelty of the current double-stranded structure with 101.3 \u00c5 pitch.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The DIX domain of Wnt activator Ccd1 disrupts Dvl DIX filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 cites a previous study showing Ccd1 DIX disrupts filaments, providing precedent for the DAX disruption mechanism observed here.",
+    "result_type": "MINOR"
+  }
+]

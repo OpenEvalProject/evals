@@ -1,0 +1,1736 @@
+{
+  "submission": {
+    "id": "b9ced363-7748-4f9e-83d2-a7029cd3760b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:27:07.004877Z",
+    "updated_at": "2025-12-02T12:27:07.004877Z"
+  },
+  "content": [
+    {
+      "id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "submission_id": "b9ced363-7748-4f9e-83d2-a7029cd3760b",
+      "content_type": "manuscript",
+      "content_text": "# A toolbox of nanobodies developed and validated for use as intrabodies and nanoscale immunolabels in mammalian brain neurons\n\n## Authors\n\n- Jie-Xian Dong<sup>1</sup>\n- Yongam Lee<sup>1</sup>\n- Michael Kirmiz<sup>1</sup>\n- Stephanie Palacio<sup>1</sup>\n- Camelia Dumitras<sup>1</sup>\n- Claudia M Moreno<sup>2</sup>\n- Richard Sando<sup>4</sup>\n- L Fernando Santana<sup>2</sup> ([ORCID: 0000-0002-4297-8029](https://orcid.org/0000-0002-4297-8029))\n- Thomas C S\u00fcdhof<sup>4</sup>\n- Belvin Gong<sup>1</sup>\n- Karl D Murray<sup>1</sup>\n- James S Trimmer<sup>1</sup> ([ORCID: 0000-0002-6117-3912](https://orcid.org/0000-0002-6117-3912)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology, Physiology and Behavior University of California, Davis Davis United States\n2. Department of Physiology and Membrane Biology University of California, Davis Davis United States\n3. Department of Physiology and Biophysics University of Washington Seattle United States\n4. Department of Molecular and Cellular Physiology Howard Hughes Medical Institute, Stanford School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNanobodies (nAbs) are small, minimal antibodies that have distinct attributes that make them uniquely suited for certain biomedical research, diagnostic and therapeutic applications. Prominent uses include as intracellular antibodies or intrabodies to bind and deliver cargo to specific proteins and/or subcellular sites within cells, and as nanoscale immunolabels for enhanced tissue penetration and improved spatial imaging resolution. Here, we report the generation and validation of nAbs against a set of proteins prominently expressed at specific subcellular sites in mammalian brain neurons. We describe a novel hierarchical validation pipeline to systematically evaluate nAbs isolated by phage display for effective and specific use as intrabodies and immunolabels in mammalian cells including brain neurons. These nAbs form part of a robust toolbox for targeting proteins with distinct and highly spatially-restricted subcellular localization in mammalian brain neurons, allowing for visualization and/or modulation of structure and function at those sites.\n\n## Introduction\n\nNanobodies (nAbs) are the recombinant minimal antigen binding fragments derived from the atypical monomeric immunoglobulins present in camelid mammals and cartilaginous fish (Hamers-Casterman et al., 1993; Muyldermans, 2013; Desmyter et al., 2015; Beghein and Gettemans, 2017; K\u00f6nning et al., 2017; De Meyer et al., 2014). They have broad utility as biomedical research reagents, diagnostics and therapeutics. nAbs are ideally suited for use as intracellular antibodies (intrabodies) in living cells (Lafaye et al., 2009; Beghein et al., 2016; Staus et al., 2014; Bertier et al., 2017; Van Audenhove and Gettemans, 2016; Schumacher et al., 2018), as they fold efficiently and remain stable under a wide range of conditions, including the reducing cytoplasmic environment (Gahrtz and Conrad, 2009; B\u00f6ldicke et al., 2005; Goenaga et al., 2007; Lynch et al., 2008). In addition to their potential utility as intrabodies, nAbs also have advantages as immunolabeling reagents, as their small size (\u22481/10 of conventional IgG antibodies) improves penetration of the cell or tissue samples (Perruchini et al., 2009; Fang et al., 2018). Importantly, nAbs improve imaging resolution by reducing the distance between the immunolabeling signal and the target protein from the 10\u201320 nm obtained with conventional primary and secondary antibodies down to 2\u20134 nm (Beghein and Gettemans, 2017; Ries et al., 2012; Szymborska et al., 2013; Pleiner et al., 2015). Their ability to precisely target specific proteins in living cells, and/or label them in post vivo samples with a high degree of efficacy and spatial resolution make nAbs attractive for numerous biomedical research applications, including in neuroscience research (S\u00fcdhof, 2018). However, their uses in neuroscience have largely been limited to samples exogenously expressing GFP-tagged proteins [e.g., (Fang et al., 2018; Ekstrand et al., 2014; Tang et al., 2013; Chamma et al., 2016; Joensuu et al., 2016; Modi et al., 2018)], or in studies targeting proteins expressed in non-neuronal brain cells (Fang et al., 2018), although a set of recent studies have employed nAbs against neuronal targets [e.g., (Schoonaert et al., 2017; Schenck et al., 2017; Scholler et al., 2017; Maidorn et al., 2019).\n\nMammalian brain neurons are distinguished from other cells by extreme molecular and structural complexity that is intimately linked to the array of intra- and inter-cellular signaling events that underlie brain function. Integral to the functional complexity of neurons is the diversity of proteins they express (estimated to encompass the products of two-thirds of the genome), a complexity markedly enhanced by compartmentalization of specific proteins at highly restricted sites within the neuron\u2019s complex structure. This includes not only the basic polarized compartments (dendrite, cell body, axon), but also distinct subcompartments within these domains (e.g., dendritic spines, the axon initial segment [AIS], nodes of Ranvier, presynaptic terminals, etc.). Each of these sites is responsible for distinct events in neuronal signaling and function, creating opportunities for specific delivery of reporters and actuators to these sites with high subcellular resolution to report on or influence, respectively, specific aspects of neuronal function.\n\nHere, we describe the development and characterization of recombinant nAbs with specificity for a set of neuronal proteins with restricted expression in subcellular compartments associated with discrete signaling events crucial to mammalian brain neuron function and plasticity. These targets are the postsynaptic scaffolding proteins Homer1 (Brandst\u00e4tter et al., 2004), IRSp53 (Soltau et al., 2002), and SAPAP2 (Takeuchi et al., 1997) that are present at partially overlapping sets of excitatory synapses, Gephyrin (Kneussel et al., 2001) found postsynaptically at most inhibitory synapses, and the Kv2 channel auxiliary subunit AMIGO-1 (36) found in large clusters at endoplasmic reticulum-plasma membrane (ER-PM) junctions present on the soma, proximal dendrites and AIS.\n\n## Results\n\n### Generation of nAbs against brain target proteins and their isolation by panning phage display libraries prepared from an immunized llama\n\nNeuronal proteins with a restricted localization in specific subcellular compartments were targeted for nAb development (Figure 1). We isolated lymphocytes from a single llama immunized with recombinant fragments of these five target proteins and generated nAb phage display cDNA libraries that were subsequently used to isolate target-specific nAbs via phage binding to the individual target proteins. After verifying target specificity by ELISA, we sequenced and evaluated unique ELISA-positive nAbs for use as intrabodies in heterologously expressing mammalian cells and in cultured hippocampal neurons expressing endogenous target proteins. We also evaluated unique ELISA-positive nAbs for use as immunolabels for immunofluorescence immunocytochemistry (IF-ICC) on heterologous cells, immunohistochemistry (IHC) on rat brain sections, and immunoblots (IB) on crude rat brain membranes. This stepwise screening approach (Figure 1) led to the identification of novel nAbs for use as intrabodies and as immunolabels (Table 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of nAb generation pipeline. See text for details. (B) Schematic of pipeline for validating ELISA-positive nAbs for utility as intrabodies and immunolabels.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Representative images of the intrabody positive anti-Homer1 nAb HS22 validated in the heterologous COS-1 cell intrabody assay. (A) Images of HS22-EGFP (green) and Homer1 (red) expressed alone in COS-1 cells. The scale bar on the top left panel is 10 \u03bcm and holds for all panels in the figure. (B) Images of HS22-EGFP (green) and Homer1 (red) coexpressed in COS-1 cells and demonstrating the loss of HS22-EGFP nuclear localization and its cytoplasmic colocalization with coexpressed Homer1. The graph shows the normalized fluorescence intensity values across the line scan depicted by the white line in the merged image, with the corresponding R2 value. (C) Images of EGFP (green) and Homer1 (red) coexpressed in COS-1 cells and demonstrating the lack of ran effect of Homer1 coexpression on the nuclear localization of EGFP. The graph shows the normalized fluorescence intensity values across the line scan depicted by the white line in the merged image, with the corresponding R2 value. Note the concordance of the red and green intensity values for HS22-EGFP and Homer1 but not EGFP and Homer1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Representative images of intrabody-positive nAbs bound to endogenous excitatory synapse targets after expression in cultured hippocampal neurons. (A) The top left panel shops the pattern of EGFP expression in the dendrites of a transfected neuron. The subsequent rows show neurons expressing nAb-EGFP fusions and showing EGFP fluorescence (green), target-specific mAb labeling (magenta), and the merged image, with an adjacent panel showing a magnified image of the inset marked by the dashed box. Panels to the far right of each row are the normalized fluorescence intensity values across the individual line scans from the magnified inset, with the corresponding R2 values. Note the concordance of the magenta and green intensity values for the target and the positive nAb-EGFP fusions, but not for EGFP itself. The scale bar in the top left panel is 5 \u03bcm and holds for all panels in figure except the magnified insets, for which the scale bar is 2 \u03bcm. (B) Graph of Pearson\u2019s Correlation Coefficient (PCC) values between nAb-EGFP and anti-target mAb labeling (Homer1: L113/130; IRSp53: L117/1; pan-SAPAP:N459/94). PCC values of Homer1 and IRSp53 mAb immunolabeling with EGFP fluorescence in cells expressing EGFP are also shown. (C) Size analysis of mAb-labeled puncta of target proteins between nAb-EGFP transfected and untransfected cells. Homer1: ns, p=0.3828; IRSp53: ns, p=0.5410; pan-SAPAP: ns, p=0.0706; two-tailed unpaired t-tests. Bars on all graphs are mean\u00a0\u00b1\u00a0SD.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Representative images of intrabody-positive nAbs bound to endogenous targets after expression in cultured hippocampal neurons. (A) The top row shows the diffuse localization of EGFP in the dendrite (left) and soma (right) of an EGFP-transfected neuron. The subsequent rows show neurons expressing nAb-EGFP fusions and showing EGFP fluorescence (green), target-specific mAb labeling (magenta), and the merged image, with an adjacent panel showing a magnified image of the inset marked by the dashed box. The scale bar in the top left panel is 5 \u03bcm and holds for all panels in figure except the magnified insets, for which the scale bar is 2 \u03bcm. Panels to the far right of each row are the normalized fluorescence intensity values across the individual line scans from the magnified inset, with the corresponding R2 values. Note the concordance of the nAb (green) and anti-target mAb (magenta) intensity values. (B) Graph of PCC values between nAb-EGFP fusions and anti-target mAb labeling (Gephyrin: L106/23; AMIGO-1: L86A/37). PCC values of Gephyrin and AMIGO-1 mAb immunolabeling with EGFP fluorescence in cells expressing EGFP are also shown. (C) Size analysis of mAb labeled puncta of target proteins between nAb-EGFP transfected and untransfected cells. Gephyrin: ns, p=0.8758; AMIGO-1: ns, p=0.1091; two-tailed unpaired t-tests. Bars on all graphs are mean\u00a0\u00b1\u00a0SD.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Each row shows representative images of a nAb against an excitatory synaptic protein (Homer1L, IRSp53, SAPAP2) expressed in neurons as nAb-EGFP fusions (green), and immunolabeling for a mAb (K28/43) against the synaptic marker PSD95 (magenta). The scale bar in the top left panel is 5 \u03bcm and holds for all panels in figure except the magnified insets, for which the scale bar is 2 \u03bcm. Panels to the far right of each row are the normalized fluorescence intensity values across the individual line scans from the magnified inset, with the corresponding R2 values. Note the concordance of the intensity values for the nAb-EGFP fusions (green) with PSD-95 labeling (magenta). (B) Graph of PCC values between the different nAb-GFP fusions and EGFP with immunolabeling for anti-PSD-95 mAb K28/43. (C) Size analysis of mAb labeled puncta of PSD-95 between nAb-EGFP transfected and untransfected cells. Homer1: ns, p=0.2093; IRSp53: ns, p=0.7063; pan-SAPAP: ns, p=0.2683; two-tailed unpaired t-tests. Bars on all graphs are mean\u00a0\u00b1\u00a0SD.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Representative images of the colabeling for proteins related to targets of nAbs and expressed nAbs-EGFP in neurons. (A) Each row shows representative images of a nAb-EGFP fusions (green) against the inhibitory synaptic protein Gephyrin (top row) or the ER-PM junction protein AMIGO-1 (second row) and in magenta immunolabeling with mAbs that label synapses (the pan-synapsin mAb L125/129 that sees all synapsin isoforms,) or Kv2 channel-containing ER-PM junctions (mAb K89/34 against Kv2.1 to label. The scale bar in the top left panel is 5 \u03bcm and holds for all panels in figure except the magnified insets, for which the scale bar is 2 \u03bcm. Panels to the far right of each row are the normalized fluorescence intensity values across the individual line scans from the magnified inset, with the corresponding R2 values. Note the concordance of the intensity values for the nAb-EGFP fusions (green) with labeling for the compartment-specific markers (magenta). (B) Graph of PCC values between the different nAb-GFP fusions and EGFP with immunolabeling for synapses (L125/129) or ER-PM junctions (K89/34). (C) Size analysis of mAb labeled puncta. Left: synapses (labeled with anti-pan-synapsin mAb L125/126) in anti-Gephyrin nAb-EGFP transfected and untransfected cells: ns, p=0.7063. Right: Kv2.1-containing ER-PM junctions (labeled with anti-Kv2.1 mAb K89/34) in anti-AMIGO-1 nAb-EGFP transfected and untransfected cells: ns, p=0.6513. Two-tailed unpaired t-tests. Bars on all graphs are mean\u00a0\u00b1\u00a0SD.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Representative images of anti-Homer1 nAb labeling (green) of transiently transfected COS-1 cells expressing Homer1L double-labeled with the anti-Homer1 mAb L113/27 (red). The left column shows a mosaic of transfected and untransfected cells, nuclei are stained with Hoechst dye in blue. Note overlap of nAb and mAb labeling at both the cellular and subcellular level. The scale bar in the top left panel is 50 \u03bcm and holds for all panels in column. The three panels to the right show higher magnification views of the cells labeled with the asterisk in the left panels. The scale bar in the top left panel is 5 \u03bcm and holds for all panels in column. The graph to the right shows the normalized fluorescence intensity values across the line scans depicted by the white line in the merged images, with the corresponding R2 values.\n\n**Table 1.**\n Summary of nanobody generation and validation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Primary selection and validation</th>\n      <th colspan=\"2\">Validation as intrabodies</th>\n      <th colspan=\"3\">Validation as immunolabels</th>\n    </tr>\n    <tr>\n      <th>Target</th>\n      <th>Phage clones selected</th>\n      <th>ELISA positives</th>\n      <th>Unique ELISA positives</th>\n      <th>COS-1 intrabody positives</th>\n      <th>Neuron intrabody positives</th>\n      <th>COS-1 IF-ICC positives</th>\n      <th>Brain IHC positives</th>\n      <th>Brain IB positives</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Homer1</td>\n      <td>180</td>\n      <td>135</td>\n      <td>39</td>\n      <td>32</td>\n      <td>12</td>\n      <td>33</td>\n      <td>25</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>IRSp53</td>\n      <td>160</td>\n      <td>33</td>\n      <td>17</td>\n      <td>8</td>\n      <td>3</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>SAPAP2</td>\n      <td>172</td>\n      <td>32</td>\n      <td>15</td>\n      <td>7</td>\n      <td>2</td>\n      <td>0</td>\n      <td>4</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Gephyrin</td>\n      <td>182</td>\n      <td>78</td>\n      <td>24</td>\n      <td>9</td>\n      <td>5</td>\n      <td>0</td>\n      <td>1</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>AMIGO-1</td>\n      <td>173</td>\n      <td>38</td>\n      <td>18</td>\n      <td>13</td>\n      <td>5</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\nThe immunogens used were recombinant fragments of intracellular domains from a strategically chosen set of five neuronal protein targets involved in synaptic signaling and neuronal excitability (Homer1, IRSp53, SAPAP2, Gephyrin and AMIGO-1). Recombinant protein fragments were produced and purified from E. coli and combined in a cocktail to immunize a single llama (Figure 1). Antiserum was collected at intervals and assayed for immunoreactivity against the separate recombinant protein fragments by ELISA. We also purified IgG fractions corresponding to the conventional heavy and light chain subclass versus the heavy chain-only subclasses and assayed them for immunoreactivity against the individual target proteins by ELISA. Once a sufficient titer was achieved, we obtained whole blood and isolated the leukocytes to use as source of total RNA that served as a template for RT-PCR to specifically amplify cDNAs corresponding to the IgG heavy-chain variable fragments. These cDNAs were ligated into the pComb3XSS phagemid which allows for expression of the cDNA-encoded nAbs as PIII protein fusions on the pili of phage (Andris-Widhopf et al., 2000).\n\nWe subjected this phage display library (complexity \u2248 8 \u00d7 107) to panning against the individual purified recombinant target proteins immobilized in wells of a microtiter plate. Bound and eluted phage were assayed by phage ELISA against the individual target proteins, which demonstrated substantial enrichment of immunoreactivity after one round of panning (not shown). We also used \u2018sandwich\u2019 panning, in which wells of a microtiter plate were coated with pooled IgG fractions purified from the immunized llama to capture and display the individual recombinant target protein fragments. The bound and eluted phage from sandwich panning were subjected to two more rounds of sandwich panning. Table 1 contains a summary of the outcome of the phage display.\n\nIsolated phage were used to infect fresh cultures of E. coli bacteria ER2738 which were plated onto bacterial culture plates, from which single colonies were isolated and grown in liquid culture to express and secrete soluble nAbs. After centrifugation to remove bacteria, we validated the resultant nAb-containing bacteria culture supernatants (BC supes) by conventional ELISA against wells of microtiter plates coated with the respective purified recombinant target protein fragments. We next isolated phagemid DNA from the ELISA-positive bacterial colonies for sequencing. A summary of the results from these efforts is shown in Table 1. Plasmids with unique nAb sequences were archived as glycerol stocks and used as a source of DNA for cloning into mammalian expression plasmids for expression as intrabodies in mammalian cells or used as a source of bacterially-secreted nAbs for use as immunolabels.\n\n### A subset of ELISA-positive nAbs function as intrabodies that recognize exogenously expressed target proteins in mammalian cells\n\nWe determined which unique nAbs could function as intrabodies when expressed in the reducing environment of the mammalian cell cytoplasm. cDNA inserts encoding each of the 113 unique ELISA-positive nAbs listed in Table 1 were transferred from the pComb3XSS phagemid into the pEGFP-N1 or pEYFP-N1 mammalian expression plasmids by Gibson assembly (Gibson et al., 2009). This also involved the removal of the N-terminal bacterial leader sequence, addition of a start codon and removal of the sequences encoding the C-terminal PIII protein. The linker region containing 6XHis and HA tags between the nAb and C-terminal GFP was retained. After sequence verification, each of the 113 nAb mammalian expression plasmids was tested for nAb expression and intrabody function in mammalian cells by transient transfection into COS-1 cells. This assay entailed expression of each nAb and target protein either alone or together in separate wells of a 96 well microtiter plate. After two days of expression, cells were fixed, permeabilized, and subjected to IF-ICC performed with validated monoclonal antibodies (mAbs) against each target protein and analyses of the expression and subcellular localization of the nAb and target protein. Of note, COS-1 cells do not express detectable levels of any of these target proteins.\n\nWe found that the vast majority of COS-1 cells expressing EGFP- or EYFP-tagged nAb alone had substantial fluorescence signal in the nucleus (Figure 1\u2014figure supplement 1). Substantial nuclear localization was also observed for these fluorescent proteins alone, as expected from prior studies showing nuclear localization of GFP [e.g., (Seibel et al., 2007)]. In contrast, when the target proteins, such as Homer1 (Figure 1\u2014figure supplement 1) were exogenously expressed in COS-1 cells, they were predominantly found in the cytoplasm, with the exception of the type I transmembrane protein AMIGO-1 (Kuja-Panula et al., 2003), which primarily accumulates in the ER membrane (Bishop et al., 2018). We next evaluated whether target protein coexpression led to a change in nAb subcellular localization, which we interpreted as being due to nAb binding to the cytoplasmic- or ER-localized target protein. We visually determined whether coexpression of the predominantly nuclear nAb with the cytoplasmic/ER target protein would alter the nuclear localization of the nAb such that it colocalized with the target protein, as an indication that the nAb functioned as a target-binding intrabody. Figure 1\u2014figure supplement 1 shows a representative example of an anti-Homer1 nAb that was scored as a positive in this assay. While there was some variability in the extent of the target-protein-dependent impact on nAb localization between different cells in the population, and between different nAbs, likely reflecting cell-specific differences in the relative expression levels of nAb and target protein, the target protein-dependent altered distribution of nAbs provided a facile assay that allowed us to test every ELISA-positive nAb for whether they functioned as intrabodies in mammalian cells. A summary of the results of these intrabody screening assays on heterologous COS-1 cells is shown in Table 1.\n\n### A subset of the nAbs that function as intrabodies in heterologous cells recognize endogenously expressed target proteins in cultured rat and\u00a0mouse\u00a0hippocampal neurons\n\nThese experiments in heterologous cells yielded a subset of nAbs that exhibited altered localization in the presence of target proteins when expressed in mammalian cells, indicating that they functioned as intrabodies. We next tested whether these nAbs could recognize endogenous target proteins when expressed in cultured rat hippocampal neurons (CHNs). Each of the GFP-or YFP-tagged nAbs that were scored as positive as intrabodies in heterologous cells was subsequently transfected into CHNs at 7\u201310 DIV. At 48 hr post-transfection, the neurons were fixed and subjected to IF-ICC with target-specific mAbs, or with markers for specific subcellular compartments. We evaluated colocalization between the GFP- or YFP-tagged nAbs and target protein immunolabeling, relative to CHNs expressing GFP or YFP alone. For each target, we identified nAbs that colocalized with the endogenously expressed target protein (results summarized in Table 1). Examples of CHNs expressing nAbs for each target with the corresponding target-specific immunolabeling are shown in Figure 1\u2014figure supplement 2 for the excitatory synaptic proteins Homer1, IRSp53 and SAPAP2, and Figure 1\u2014figure supplement 3 for Gephyrin and AMIGO-1. Analysis by Pearson\u2019s Correlation Coefficient (PCC) demonstrated that the nAb-GFP intrabodies were colocalized with the corresponding endogenous target protein (Figure 1\u2014figure supplements 2 and 3). Importantly, the expression and subcellular localization of the endogenous target proteins were not altered by nAb expression, as quantified by a lack of significant change in target protein puncta size (Figure 1\u2014figure supplements 2 and 3). For nAbs targeting the excitatory postsynaptic target proteins Homer1, IRSp53 and SAPAP proteins (Figure 1\u2014figure supplement 2), the punctate pattern of nAb localization in dendrites was closely associated with immunolabeling for PSD95, a marker of the excitatory postsynaptic compartment (Figure 1\u2014figure supplement 4), supporting that the nAb puncta were at excitatory synapses. Moreover, expression of the nAbs against target proteins at excitatory synapses did not impact the sizes of PSD-95 puncta (Figure 1\u2014figure supplement 4). Similarly, anti-Gephyrin nAbs had a subcellular localization that not only colocalized with endogenous Gephyrin (Figure 1\u2014figure supplement 3) but were also frequently found opposed to immunolabeling for the synaptic vesicle protein Synapsin (Figure 1\u2014figure supplement 5), supporting the observation that these nAbs were localized at synapses. The sizes of the puncta of Gephyrin and Synapsin immunolabeling were not impacted by expression of anti-Gephyrin nAbs (Figure 1\u2014figure supplements 3 and 5). In the case of AMIGO-1, we identified nAbs that colocalized with endogenous AMIGO-1 (Figure 1\u2014figure supplement 3), which is present in large clusters at ER-PM junctions on the soma and proximal dendrites of CHNs (Bishop et al., 2018). Moreover, the AMIGO-1 nAb colocalized with labeling for Kv2.1, a partner subunit of AMIGO-1 in Kv2 channel complexes found at these sites (Figure 1\u2014figure supplement 5). The sizes of AMIGO-1 and Kv2.1 puncta were not impacted by expression of anti-AMIGO-1 nAbs (Figure 1\u2014figure supplements 3 and 5). These results indicate that these nAbs act as intrabodies that recognize their endogenous target proteins in CHNs, and the expression of the nAbs has little discernible impact on the expression and subcellular localization of their endogenous targets.\n\nA subset of the anti-Homer1 nAbs were expressed in mouse\u00a0CHNs over a longer time period from recombinant lentivirus under the control of the neuron-enriched Synapsin promoter (Figure 2A). At 10 days post-infection CHNs were subjected to IF-ICC with an anti-Homer1 mAb and an antibody against the dendritic marker MAP2. As shown in Figure 2B, in spite of such long-term expression of the cytoplasmically synthesized nAbs, nAbs such as HC20 exhibited little cytoplasmic accumulation of the nAb-YFP fluorescence (green) within the cell body (asterisk in the merged panel in Figure 2B). However, there was robust nAb-YFP fluorescence throughout the MAP2-positive (blue) dendrites of the expressing neuron, where it was present in puncta that precisely overlapped with punctate anti-Homer1 immunolabeling (red) (Figure 2B). An analysis of the localization of a number of anti-Homer1 nAb-YFP fusions after such long-term expression revealed that a subset of the nAb-YFP fusions (green), such as HC20 and HC87, exhibited precise colocalization with Homer1 immunolabeling (red), with little or no detectable signal in dendritic shafts, consistent with their binding to and accumulation at Homer1 clustered in dendritic spines (Figure 2C,D). However, other nAbs yielded more diffuse localization throughout the dendritic shafts, similar to that obtained with YFP alone, although most of these nAbs also exhibited a significantly higher degree of colocalization with Homer1 than YFP alone (Figure 2C,D). In spite of these differences in binding, in no case did long-term expression of the anti-Homer1 nAbs lead to significant changes in the overall sizes or density of Homer1 puncta (Figure 2D), showing that the long-term expression of these nAbs and their binding to synaptic Homer1 did not detectably impact Homer1 expression and localization.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of the lentivirus targeting construct. (B) Image shows a representative field of a CHN culture infected at 5 days in vitro (DIV) with recombinant lentivirus encoding the anti-Homer1 HC20-YFP nAb fusion (green) and imaged at 14 DIV after immunolabeling for endogenous Homer1 (red) and the dendritic marker MAP2 (blue). (C) Images show representative fields of dendrites of infected CHNs expressing different nAb-YFP fusions as indicated (green) and immunolabeled for endogenous Homer1 (red). The scale bar in the top left Control panel is 5 \u03bcm and holds for all panels in C. (D) The top graph shows Pearson\u2019s Correlation Coefficient values between YFP or the different nAb-YFP fusions and anti-Homer1 immunolabeling. *p<0.01; **p<0.001; ***p<0.0001 for values of different anti-Homer1 nAb-YFP fusions versus for YFP alone. ns\u00a0=\u00a0not significant versus YFP alone. Values were analyzed by a one-way ANOVA followed by a Dunnett's post hoc test. The middle graph shows a size analysis of anti-Homer1 Ab labeled synaptic puncta in CHNs expressing YFP or the different anti-Homer1 nAb-YFP fusions. The bottom graph shows the density of anti-Homer1 Ab labeled synaptic puncta in CHNs expressing YFP or the different anti-Homer1 nAb-YFP fusions. Values for the size and density of anti-Homer1 Ab labeled synaptic puncta in CHNs expressing different anti-Homer1 nAb-YFP fusions are not significantly different than in CHNs expressing YFP alone. Bars on all graphs are mean\u00a0\u00b1\u00a0S.E.M.\n\nCompared to similarly sized mobile transport\u00a0vesicles, synaptic puncta are relatively stable structures. We next determined whether the discrete target protein-containing puncta labeled by GFP-tagged nAbs expressed as intrabodies in CHNs label stable structures or target protein containing transport vesicles (or other mobile structures). We performed short term time-lapse total internal reflection fluorescence (TIRF) imaging of live nAb-expressing CHNs. Over the course of one-minute recordings collected at 1 Hz, we observed that the nAb-GFP puncta (which we observed colocalized with the target proteins in the experiments mentioned in the previous section) were marking stable structures present in the TIRF field, such that overlaid time-lapse images of nAb-GFP localization yielded tightly colocalized structures (Figure 3). Similar to what we observed in fixed neurons (Figure 2; Figure 1\u2014figure supplements 2 and 3), in live neurons GFP expression was diffuse and did not form punctate structures (Figure 3). These live cell imaging experiments are consistent with the immunocytochemistry date above that nAbs expressed in neurons accumulate at subcellular sites of stable target protein clustering (synapses, ER-PM junctions) and provide further evidence that these nAbs act as intrabodies to stably bind to their targets in living CHNs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig3-v2.jpg)\n\n**Figure 3.:** TIRF images of live cultured rat hippocampal neurons transfected with GFP (shown in A), or nAb-GFP fusions against Homer1 (clone HC12, shown in B), IRSp53 (clone IC65, shown in C), SAPAP2 (clone SS80, shown in D), Gephyrin (clone GC52, shown in E), or AMIGO-1 (clone AC50, shown in F). For each, two images (of the same field of view) taken one min apart are shown. To the right is an overlay of the initial image (in green) and the subsequent image (in magenta). Overlap of green and magenta yields a white signal. Arrows point to punctate structures. The column to the far right shows an analysis of the extent of overlap of pixels between the initial and subsequent images. The scale bar in the top left panel is 5 \u03bcm and holds for all panels in figure.\n\n### A distinct subset of nAbs function as immunolabels in heterologous cells and brain sections\n\nBecause of their relatively small size (\u224815 kD, \u22482\u20134 nm in length), nAbs are potentially advantageous for immunolabeling due to enhanced sample penetration and a reduced distance between the labeling signal and target compared to conventional antibodies. However, a systematic evaluation of the utility of nAbs for immunolabeling endogenous target proteins in brain neurons has not been reported. Here, we took an unbiased approach by testing all of the ELISA-positive nAbs for immunolabeling of conventional formaldehyde fixed transfected heterologous cells and brain sections. We first transformed E. coli with each of the ELISA-positive nAb phagemids, and after induction of nAb expression and overnight culture, collected the bacterial cell culture media as bacterial culture supernatants (BC supes) containing secreted nAbs. We first tested these nAb-containing BC supes in IF-ICC against fixed COS-1 cells transiently transfected to heterologously express their cognate brain target protein in a subset of cells, an assay we routinely use for screening mAbs (Bekele-Arcuri et al., 1996; Gong et al., 2016). This assay allows for a facile determination of which candidate antibodies detect the target protein after fixation by providing a mosaic of numerous target-expressing and non-expressing cells in the same field. Here, we double-immunolabeled cells with candidate nAb BC supes and previously validated mouse mAbs against the same target protein to distinguish expressing versus non-expressing cells. We found that a substantial subset (33/39) of the ELISA-positive anti-Homer1 nAb BC supes tested exhibited robust immunolabeling of fixed and permeabilized COS-1 cells expressing Homer1L. Examples of positive immunolabeling with anti-Homer1 nAb BC supes are shown in Figure 1\u2014figure supplement 6, which shows robust nAb labeling (green) that colocalizes with Homer1 mAb labeling (red). In contrast, none of the unique ELISA-positive nAb BC supes against the other targets yielded detectable immunoreactivity in this assay (Table 1).\n\nWe next determined whether the anti-Homer1 nAbs exhibiting positive immunolabeling of Homer1L exogenously expressed in COS-1 cells would label endogenous Homer1 in brain sections. We evaluated each of the BC supes for labeling in sections prepared from perfusion-fixed adult rat brains. We found that a large proportion (25/33) of the BC supes tested yielded robust immunolabeling of brain sections, with the remainder exhibiting no detectable immunolabeling (Table 1). Each of the 25 brain IHC-positive nAbs was also scored as positive in the heterologous COS-1 cell IF-ICC assay. As shown in Figure 4A for nAb HS15, the positive anti-Homer1 nAbs exhibited substantial immunolabeling of neuropil in caudate putamen (CPU), cerebral cortex (CTX) and hippocampus (HC). In hippocampus, immunolabeling for the positive anti-Homer1 nAbs (note that the HS12 nAb was scored as negative in this application) was especially prominent in subiculum and CA1 stratum oriens and radiatum (Figure 4B). The pattern of immunolabeling obtained with the anti-Homer1 nAbs matched closely that obtained with validated anti-Homer1 mouse mAbs (Figure 4A,B). While Homer1 labeling in the CA1 region of the hippocampus was consistently high for all nAbs that were scored as exhibiting positive immunolabeling, different nAbs exhibited variation in signal intensity in the CA2-CA3 regions and dentate gyrus (Figure 4). All nAbs that showed positive immunolabeling in these areas also had strong signals in olfactory bulb, and relatively weak or undetectable labeling in numerous other brain regions (thalamus, globus pallidus, brainstem, cerebellum), consistent with Homer1 mRNA expression in brain (Clifton et al., 2017; Lein et al., 2007). Furthermore, the nAb labeling pattern matched the localization of Homer1 protein from previous IHC studies (Shiraishi et al., 2004; Shiraishi-Yamaguchi and Furuichi, 2007), and immunolabeling obtained with anti-Homer1 mAbs recognizing both the long and short (L113/130) or only the long (L113/27) splice variants (Figure 4C). These results support that these nAbs can specifically bind to Homer1 in brain tissue.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative images of a whole brain section labeled with a nAb BC supe against Homer1 (HS15, in green), a mouse mAb against Homer1 (L113/27, in magenta) and a nuclear label (Hoechst, in grayscale) showing brain regions with high Homer1 labeling. Merge is of antibody labeling only. CPu\u00a0=\u00a0caudate putamen; CTX\u00a0=\u00a0cerebral cortex; HC\u00a0=\u00a0hippocampus. The scale bar in the HS15 panel is 1 mm and holds for all four panels. (B) Representative images of HC and CPu from brain sections labeled with several anti-Homer1 nAb BC supes (green) and a mouse mAb against Homer1 (L113/27, in magenta). Note that nAb HS12 was scored as negative in this application. The scale bar in the top L113/27 panel is 500 \u03bcm and holds for all panels in B and C. (C) Representative images from brain sections labeled with mouse mAb L113/130 that recognizes both the long and short splice variants of Homer1 (green), and mouse mAb L113/27 that recognizes only the long splice variants of Homer1 (magenta).\n\n### Directly conjugated nAbs function as nanoscale immunolabeling reagents for super-resolution fluorescence imaging of subcellular structures\n\nTo fully utilize the small size of nAbs as nanoscale immunolabeling reagents requires direct conjugation to detection reagents such as fluorescent organic dyes or gold particles. We selected a subset of nAbs that immunolabeled brain sections and made purified nAb preparations, taking advantage of the 6XHis tag engineered into the nAb C-terminus. We first validated the purified nAbs by immunolabeling brain sections (data not shown). We next directly conjugated a purified nAb (HS69) to the fluorescent organic dye Alexa Fluor 647 (Alexa647). We performed super-resolution microscopy employing a ground-state depletion system (Bretschneider et al., 2007; F\u00f6lling et al., 2008) to determine whether the Alexa647-nAb provided enhanced spatial resolution. In these experiments we compared CHNs immunolabeled with the directly conjugated HS69 nAb to that obtained with unlabeled HS69 nAb detected with Alexa647-conjugated anti-HA mAb, and that from a conventional anti-Homer1 mouse mAb (L113/27) detected with Alexa647-conjugated secondary antibody. As shown in Figure 5, there was a significant difference in the size of immunolabeled puncta for each of the labeling reagent combinations used. Directly conjugated Alexa647 nAb had the smallest overall cluster size, followed by the unlabeled nAb detected with the Alexa647-conjugated anti-HA antibody, with the conventional mAb detected with an Alexa647-conjugated secondary antibody having the largest cluster size (Figure 5). This provides an empirical demonstration that immunolabeling with a directly labeled nAb allows for enhanced resolution of target detection in super-resolution light microscopy.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative TIRF images of CHNs. Neurons were immunolabeled with anti-Homer1 nAb plus a mouse mAb against Homer1 (L113/27, in red), and an antibody against MAP2 (blue). Top row: Dendrites of a CHN immunolabeled with nAb HS69 directly conjugated to Alexa647 (HS69-647, in green). Bottom row: Dendrites of a CHN immunolabeled with HA-tagged HS69 nAb plus Alexa647 conjugated anti-HA mAb (HS69 + anti-HA-647, in green). Scale bar is 5 \u03bcm and holds for all panels in A. (B) Representative super-resolution Homer1 localization maps of neurons immunolabeled for\u00a0Homer1 with a mouse mAb plus Alexa647-conjugated secondary Ab (L113/27 + anti IgG2a-647), with HS69 nAb plus Alexa647-conjugated anti-HA antibody (HS69 + anti-HA-647), or with directly Alexa647-conjugated HS69 nAb (HS69-647). Scale bar is 200 nm and holds for all images in panel B. (C) Bar plot of the mean Homer1 cluster area\u00a0\u00b1\u00a0SD for the three different labeling groups described in B (n\u00a0=\u00a0227, 403, and 593 clusters respectively from five different cells per group). p values were calculated using a one-way ANOVA and a Bonferroni\u2019s multiple comparisons test.\n\n### Validation of nAbs as immunolabels for use in immunoblot analyses\n\nTo complete the validation of nAbs for standard immunolabeling applications, we evaluated the utility of nAbs in our collection as immunolabels for detecting their respective target proteins in brain samples on immunoblots. We evaluated all 113 ELISA-positive unique nAb BC supes for immunolabeling of \u2018strip\u2019 blots containing a crude fraction of rat brain membrane proteins (Bekele-Arcuri et al., 1996; Gong et al., 2016; Rhodes et al., 1995). We found that a subset of the unique ELISA-positive nAbs against Homer1 (13/39; Table 1) detected a single robust band at the characteristic electrophoretic mobility of Homer1 (\u224847 kDa) (Saito et al., 2002). The band recognized by the nAbs had characteristics corresponding to the band obtained with the validated anti-Homer1 mouse mAb L113/130 (Figure 6). A small subset of the unique ELISA-positive nAbs against Gephyrin (2/24; Table 1) detected a single band at the characteristic electrophoretic mobility (\u224880 kDa) of Gephyrin (Feng et al., 1998) that comigrated with the immunoreactive band for the validated anti-Gephyrin mouse mAb L106/93 (Figure 6). No specific immunolabeling was detected with any of the ELISA-positive nAb BC supes against the other targets (Table 1). These results demonstrate that a subset of ELISA-positive nAbs can be used in IB-based applications.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig6-v2.jpg)\n\n**Figure 6.:** (A) Positive immunoblot\u00a0labeling with anti-Homer1\u00a0nAbs expressed from E. coli Top10F\u2019 cells; (B) Positive immunoblot\u00a0labeling with\u00a0anti-Gephyrin nAbs expressed from E. coli Top10F\u2019 cells. Control lanes are the respective positive control monoclonal antibodies, and negative controls the SB bacterial culture medium (\u2018media\u2019) and conditioned medium from culture of the non-secreting SP2/0 myeloma cell line\u00a0(\"SP2/0\").\n\n## Discussion\n\nIn this study, we report the development and validation of a novel toolbox of nAbs targeting a select set of neuronal proteins with specific subcellular localizations at sites mediating crucial neuronal signaling events. These include the postsynaptic scaffolding proteins Homer1 (Brandst\u00e4tter et al., 2004), IRSp53 (Soltau et al., 2002), and SAPAP2 (Takeuchi et al., 1997), present at partially overlapping sets of excitatory synapses, Gephyrin (Kneussel et al., 2001), found at most inhibitory synapses, and the Kv2 channel auxiliary subunit AMIGO-1, found at ER-PM junctions on the soma, proximal dendrites and AIS (Bishop et al., 2018). We validated these nAbs for use as intrabodies in living neurons, and a subset as immunolabels in ICC, IHC, and IB applications. Since their initial discovery, nAbs have been employed in diverse applications in biomedical research (Hamers-Casterman et al., 1993; Muyldermans, 2013; Desmyter et al., 2015; Beghein and Gettemans, 2017; K\u00f6nning et al., 2017; De Meyer et al., 2014) and have shown promise as human therapeutics (K\u00f6nning et al., 2017; Steeland et al., 2016). However, few nAbs have been developed against neuronal proteins for use in neuroscience research applications. We report the feasibility of generating nAbs against a diverse set of neuronal target proteins with restricted subcellular distribution at sites mediating crucial neuronal signaling events and their validation in brain neurons as intrabodies and immunolabels, representing a valuable toolbox for neuroscience research applications that will be made publicly available in plasmid form.\n\nOur approach relied on isolating nAbs from a library derived from immunized llamas. Numerous other studies demonstrated the feasibility of isolating nAbs from synthetic libraries, or libraries derived from nonimmunized animals (de Kruif et al., 1995; Liang et al., 2007; Park et al., 2005). However, these approaches often yield low affinity binders that need to be matured by molecular evolution in vitro (Gustchina et al., 2009; Gram et al., 1992; Jackson et al., 1995), which is a time and labor-consuming process. Therefore, we elected to use immunizations to increase the representation of high affinity binders in the llama used as the source of our nAb cDNA library. One advantage of using large animals, like llamas, is that each animal can be simultaneously immunized with multiple targets (Pardon et al., 2014). This reduces the number of animals used and has the advantage that obtaining leukocytes for cDNA library generation does not require that the animal is sacrificed.\n\nOur overall strategy generated at least one nAb that functioned as an intrabody in neurons for each of the five targeted brain proteins. These nAbs have potential use in a variety of research applications in living neurons, including visualizing endogenous target protein localization and dynamics, or\u00a0modifying expression or function of the target protein. Moreover, they can be used to deliver cargo to specific sites, for example genetically-encoded Ca2+ or membrane potential indicators to report on signaling events occurring in the specific subcellular compartments in which the target proteins are selectively localized. In addition, they could be used to target actuators to specific sites to locally modify membrane potential, enzymatic activity, or specific cell signaling events. The nAb intrabodies that we developed provide an array of specificities to target discrete neuronal compartments (excitatory and inhibitory synapses, ER-PM junctions) that play crucial and distinct roles in neuronal function, and importantly, do so without detectably altering the expression and localization of their target proteins. That the nAbs we evaluated by live cell imaging label stable structures within cultured rat hippocampal neurons suggests that the nAbs are primarily binding their targets at final subcellular location, as opposed to binding to the proteins while in transit to these sites, or otherwise targeting mobile structures. This may contribute to the lack of a detectable effect of nAb expression on target protein expression and localization.\n\nIn addition to developing nAbs as intrabodies for use in live cells, we also validated a subset of anti-Homer1 nAbs for use as immunolabels that recognize Homer1 in aldehyde-fixed samples of brain neurons. These nAbs exhibit the enhanced resolution in super-resolution light microscopy predicted for such nanoscale labeling reagents (Beghein and Gettemans, 2017; Ries et al., 2012; Szymborska et al., 2013; Pleiner et al., 2018). It is surprising to us that among the five proteins targeted in the nAb development efforts described here, only the Homer1 nAb project yielded large pools of nAbs positive for immunolabeling transfected heterologous cells and brain sections (Table 1), given that we had previously performed mouse mAb projects against each of these targets, using the same recombinant proteins as immunogens and in screening, and for each obtained a substantial number of mAbs positive for these applications (Supplementary file 1). We do not know the basis of this distinction between the Homer1 nAb project relative to the other nAb projects, and the overall differences between the corresponding llama nAb and mouse mAb projects. However, a retrospective analysis of the antiserum from the immunized llama by IF-ICC against transfected COS-1 cells expressing the individual target proteins yielded substantial immunolabeling only for cells expressing Homer1 (not shown), suggesting a fundamental lack of an immune response against epitopes preserved in aldehyde-fixed samples, and not a failure of phage display selection to capture immunolabeling-competent nAbs. A similar scenario held for epitopes present on SDS-denatured target proteins detected on immunoblots blots, with the Homer1 nAb project yielding substantial numbers of positive nAbs, the Gephyrin project two, and the other projects none (Table 1), again in contrast to the corresponding mouse mAb projects (Supplementary file 1). It has been suggested that nAbs preferentially bind to target proteins via a convex paratope (Wurch et al., 2012), which could contribute to the inability of the nAbs against the targets with the exception of Homer1 to detect aldehyde-fixed and/or denatured target proteins. While nAbs have widespread use in binding to native protein, which enhances their utility as chaperones for crystallography (Pardon et al., 2014), certain\u00a0nAbs\u00a0generated against GFP and other proteins have been used as immunolabels for immunohistochemistry (Fang et al., 2018; Yamagata and Sanes, 2018) and immunoblots (Bruce and McNaughton, 2017).\n\nIn summary, we have generated a series of validated nAbs against neuronal proteins selectively expressed in specific subcellular compartments in brain neurons. These nAbs represent a valuable toolbox of reagents available to the neuroscience community for diverse applications. The pipeline we employed is an exemplar that can be used in developing nAbs against other neuronal targets to enhance the spectrum of experimental approaches available to researchers.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Cercopithecus aethiops)</td>\n      <td>COS-1</td>\n      <td>ATCC Cat # CRL-1650, Lot # 59102713; PMID: 6260373</td>\n      <td>RRID:CVCL_0223</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>numerous</td>\n      <td></td>\n      <td></td>\n      <td>See\u00a0Supplementary file 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pComb3XSS</td>\n      <td>PMID: 10986398</td>\n      <td>Addgene #63890 (Addgene RRID:SCR_002037)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Photoshop</td>\n      <td>Adobe Systems</td>\n      <td>RRID:SCR_014199</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Axiovision</td>\n      <td>Carl Zeiss MicroImaging</td>\n      <td>RRID:SCR_002677</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Fiji</td>\n      <td>PMID: 22743772</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nAll procedures involving llamas were performed at Triple J Farms of Kent Laboratories (Bellingham, WA) in strict accordance with the Guide for the Care and Use of Laboratory Animals of the NIH. All procedures involving rats were approved by the University of California, Davis, Institutional Animal Care and Use Committee (IACUC) under protocols 20485 and 21265 and were performed in strict accordance with the Guide for the Care and Use of Laboratory Animals of the NIH. All rats were maintained under standard light-dark cycles and allowed to feed and drink ad libitum. All procedures involving mice were approved by the Stanford University IACUC under protocol 18846 and were performed in strict accordance with the Guide for the Care and Use of Laboratory Animals of the NIH.\n\n### Llama immunization and characterization of immune responses\n\nRecombinant fragments of neuronal target proteins (Supplementary file 2) were expressed in and purified from E. coli. Llama immunizations were performed using cocktail of these recombinant protein fragments employing five subcutaneous injections given at biweekly intervals. For each injection a total of 1 mg protein (200 \u00b5g of each protein in the cocktail) was mixed with Freund\u2019s complete adjuvant (Sigma-Aldrich Cat# F5581) for the first immunization and Freund\u2019s incomplete adjuvant (Sigma-Aldrich Cat# F5506) for all subsequent immunizations. The llama immune response against the individual target proteins was evaluated by ELISA beginning with antiserum collected after the third immunization.\n\nA whole IgG fraction was purified from llama antiserum on rProtein A/G GraviTrap columns (GE Healthcare Cat# GE28-9852-56). Briefly, 0.5 mL of llama antiserum was diluted with an equal volume of phosphate-buffered saline (PBS, 5.2 mM Na2HPO4; 1.7 mM KH2PO4; 0.15 M NaCl, pH 7.4). The mixture was loaded onto a Protein A/G GraviTrap column, the unbound fraction collected, and the column washed with 20 mL PBS. The whole IgG fraction was eluted with 0.1 M Glycine-HCl buffer (pH 2.7). All fractions were neutralized with 1:10 vol of 1 M Tris-HCl (pH 9.0) upon collection.\n\nConventional heavy and light chain IgG1 and heavy chain-only IgG2 and IgG3 subclasses were purified from llama antiserum on rProtein A GraviTrap (GE Healthcare Cat# GE28-9852-54) and Protein G GraviTrap (GE Healthcare Cat# GE28-9852-55) columns. Briefly, 0.5 mL of llama antiserum was diluted with an equal volume of phosphate-buffered saline (PBS, 5.2 mM Na2HPO4; 1.7 mM KH2PO4; 0.15 M NaCl, pH 7.4). The mixture was loaded onto a Protein G GraviTrap column, the unbound fraction collected, and the column washed with 20 mL PBS. The IgG3 fraction was first eluted with 58% acetic acid buffer (pH 3.5) containing 0.15 M NaCl. The IgG1 fraction was subsequently eluted with 0.1 M Glycine-HCl buffer (pH 2.7). The unbound fraction from the Protein G column was loaded onto on an rProtein A GraviTrap column, and the column washed with 20 mL PBS. The IgG2 fraction was eluted with 58% acetic acid buffer (pH 4.5) containing 0.15 M NaCl. All fractions were neutralized with 1:10 vol of 1 M Tris-HCl (pH 9.0) upon collection.\n\n### Phage display library construction and panning\n\nA phage display library for nAb isolation was prepared in the pComb3XSS phagemid (AddGene #63890). This allows for generation of 6xHis and HA-tagged nAbs as PIII protein fusions on phage pili for phage display, and also for subsequent production of soluble protein lacking the PIII fusion partner in non-amber suppressor E. coli strains (Andris-Widhopf et al., 2000). Llama blood was collected after the fifth immunization and 10 mL used for isolation of total RNA using a LeukoLOCK total RNA isolation system (ThermoFisher Cat# AM1923). The resulting total RNA was reverse-transcribed to cDNA using the SuperScript III First Strand Synthesis System (ThermoFisher Cat# 18080\u2013051). The IgG heavy chain variable fragments were amplified by PCR with llama-optimized primers\u00a0(Supplementary file 3). The amplified PCR product and the phagemid vector pComb3XSS were digested with the Sfi I restriction enzyme (NEB Cat# R0123S) and the resulting fragments ligated. The ligation was transformed by electroporation into electrocompetent ER2738 E. coli bacteria (Lucigen Cat# 60522\u20132). The transformants were infected with M13KO7 helper phage (NEB Cat# N0315S) for packaging into phage displaying the nAb library on pili as PIII fusions. The library complexity was calculated as 8.0 \u00d7 107.\n\nTarget-specific nAbs were enriched by panning against the individual target proteins bound to wells of 96 well microplates (Greiner Bio-One Cat# 655061). For conventional panning, microplate wells were coated overnight at 4\u00b0C with 10 \u00b5g of target protein in PBS. After blocking with BSA (5 mg/mL in PBS) for 1 hr at room temperature (RT, \u224822\u00b0C), 1011 phage particles were added to each well and incubated for 1 hr at RT. Following eight rinses with PBST buffer (0.5% Tween-20 in PBS) and eight rinses with PBS buffer to remove unbound phage, bound phage were eluted by incubation with 10 mg/mL trypsin (Sigma-Aldrich Cat# T4799) in TBSC (50 mM Tris\u2013HCl pH 7.4, 100 mM NaCl, 1 mM CaCl2) containing 3% (w/v) BSA for 30 min at 37\u00b0C.\n\nThe eluted phage were collected and used to reinfect 5 mL of log-phase ER2738 E. coli bacteria. After 2 hr of incubation, the reinfected culture was transferred to a 250 mL flask with the addition of 35 mL 2xYT medium, 1012 M13KO7 helper phage, and antibiotics (tetracycline: 20 \u00b5g/mL; kanamycin: 50 \u00b5g/mL; and ampicillin\u00a0or\u00a0AMP: 100 \u00b5g/mL) and the culture incubated overnight at 37\u00b0C with shaking at 250 rpm. Phage were collected and used for a second round of panning.\n\nFor Homer1, SAPAP2 and Gephyrin, a parallel round of panning was performed using target proteins displayed using a sandwich technique. After confirmation of immunoreactivity against each of the individual target proteins by ELISA, 10 \u00b5g of a whole IgG fraction purified from antiserum obtained from the immunized llama was added to individual wells of a 96 well microplate and incubated at 4\u00b0C overnight. After removing unbound IgG by two rinses with PBS, 10 \u00b5g of individual target protein was added to the separate wells and incubated for 1 hr at RT. Unbound target protein was removed by eight rinses with PBST and eight rinses with PBS. The remainder of the panning procedure was then carried out as described above.\n\n### Production of soluble nAbs\n\nPhage display positive samples were grown in liquid culture and plated onto LB + AMP plates. To prepare bacterially-expressed nAb culture supernatant (BC supe) for protein ELISA validation, isolated colonies were picked into 2 mL capacity deep well plates containing 0.5 mL of LB + AMP medium per well. After overnight incubation at 37\u00b0C with shaking at 250 rpm, 50 \u00b5L of these cultures were transferred into 1 mL of Super Broth + AMP until an A600 of 0.3\u20130.6 was reached. Expression of the nAb-PIII fusion proteins was induced by addition of 1 mM isopropyl-\u03b2-D-thiogalactopyranoside and incubation for 16 hr at 37\u00b0C. The media was harvested, and the BC supe collected after centrifugation at 1990 x g for 15 min at RT to pellet the bacteria.\n\nTo prepare purified soluble nAbs lacking the PIII fusion protein, a subset of the nAb-pComb3XSS plasmids were isolated and transformed into the amber suppressor E. coli strain Top10F\u2019. The induction of soluble nAb expression was performed in 1 L of Super Broth + AMP as described above. After pelleting the cells by centrifugation at 16,900 x g for 10 min at 4\u00b0C, the periplasmic proteins were released by osmotic shock (Olichon et al., 2007). The periplasmic extract was loaded onto a column of HisPur Ni-NTA Resin (ThermoFisher Cat# 88221), and after washing with 10 mL of PBS and 10 mL of 40 mM imidazole in PBS, the bound proteins were eluted with 5 mL of 200 mM imidazole in PBS. The eluted fraction was dialyzed against PBS to remove the imidazole. The protein concentration was determined by A280, and the concentration verified, and protein purity evaluated by SDS-PAGE and Coomassie blue staining.\n\n### Phage and nAb ELISAs\n\nThe binding activity of nAbs in vitro was evaluated by ELISA. Individual wells of a 96 well microtiter plate (Greiner Bio-One Cat# 655081) were coated overnight at 4\u00b0C with 10 \u00b5g of the individual target proteins. After removing unbound target protein by four rinses with PBST buffer, wells were blocked for 1 hr at RT with BLOTTO (4% nonfat dry milk powder in TBS-T buffer). Phage (for phage ELISAs) or soluble nAb (for nAb ELISAs) samples were added, followed by incubation for 1 hr at RT. For phage ELISAs, 1010 phage particles were added per well, while for nAb ELISAs, 50 \u00b5L of BC supe was added per well. Following four rinses with PBST buffer, wells were incubated for 1 hr at RT with 50 \u00b5L of anti-HA mouse IgG2b mAb 12CA5 at 1.14 \u00b5g/mL in BLOTTO. Following four rinses with PBST, wells were incubated for 1 hr at RT with 50 \u03bcL of goat anti-mouse IgG2b-HRP conjugated secondary antibody (Jackson Immunoresearch Laboratories Cat# 115-005-207) diluted 1:5000 in BLOTTO. Following four rinses with PBST buffer, wells were incubated with TMB substrate (Sigma-Aldrich Cat# T2885). Wells lacking phage or nAbs were used as negative controls. Phage or nAbs exhibiting an OD450 signal three-fold higher than the negative \u2018no primary\u2019 control were selected for further analysis. For target proteins that were fusions with GST (i.e., IRSp53 and AMIGO-1), parallel ELISAs were performed on plates whose wells were coated with an equal amount of GST protein. Phage or nAbs exhibiting a three-fold higher OD450 signal for the GST-target protein fusion versus GST alone were selected for further analysis.\n\n### Sequencing and transfer of unique nAbs into mammalian expression plasmids\n\nDNA in pComb3XSS phagemid was prepared from the ER2738 strain of E. coli bacteria for all ELISA-positive nAbs and the forward strand of the nAb insert subjected was sequenced using a primer (5\u2019-TTAGGCACCCCAGGCTTTACACT-3\u2019) that binds to the leader sequence of the pComb3XSS phagemid.\n\nAll unique ELISA-positive nAb sequences were amplified by PCR and ligated into the pEYFP-N1 or pEGFP-N1 mammalian expression plasmids as GFP fusions by Gibson Assembly, employing a commercial Master Mix (NEB Cat# E2611S) according to the manufacturer's protocol, and employing a SmaI (NEB Cat# R0141S) restriction site present in the pEYFP-N1 or pEGFP-N1 plasmid. The primers used for the Gibson assembly reaction were Forward: 5\u2019-ATTCTGCAGTCGACGGTACCGCGGGCCCTGGTTTCGCTACCGTGGCCCAGGCGGCC-3\u2019 or 5'-CTTCGAATTCTGCAGTCGACGGTACCGCGGGGCCATGCAGKTGCAGCTCGTGGAGTC-3'; Reverse: 5\u2019-CTCACCATGGTGGCGACCGGTGGATCCCTAGCGTAGTCCGGAACGTCGTACGGGTA-3\u2019. Two independent colonies for each construct were selected for plasmid preparation, sequence determination and expression in mammalian cells. Plasmids encoding validated nAbs will be made publicly available in plasmid form from Addgene.\n\n### Mammalian COS-1 cell culture and transfection\n\nCOS-1 cells were obtained from ATCC. These were verified by ATCC to be exclusively of Cercopithecus aethiops (African green monkey) origin by cytochrome oxidase I (COI) assay, and to be mycoplasma negative at the time of cryopreservation. COS-1 cell cultures were subsequently tested for mycoplasma contamination on a monthly basis using the MycoAlert Mycoplasma Detection Kit (Lonza Catalog#: LT07-318). COS-1 cells were maintained in Dulbecco\u2019s modified Eagle\u2019s medium (ThermoFisher Cat# 11995065) supplemented with 10% Bovine Calf Serum (HyClone Cat# SH30072.04), 1% penicillin/streptomycin (ThermoFisher Cat# 15140122), and 1X GlutaMAX (ThermoFisher Cat# 35050061) in a humidified incubator at 37\u00b0C with 5% CO2. For testing nAbs for intrabody function, 2,500 COS-1 cells were plated in each well of a 96 well plate (Greiner Bio-One Cat# 655090), cultured overnight at 37 \u00b0C and then transfected using Lipofectamine 2000 (ThermoFisher Cat# 11668027) following the manufacturer\u2019s protocol. Sets of individual wells were transfected with nAb or target expression plasmids separately, or cotransfected together, using 0.1 \u00b5g each of each plasmid. Cells were transiently transfected in DMEM without supplements, then returned to regular growth media 4 hr after transfection. Cells were used 40\u201348 hr post-transfection for IF-ICC.\n\nFor testing nAbs for immunolabel function by IF-ICC, 3 \u00d7 104 COS-1 cells were plated on number 1.5 glass coverslips coated with poly-L lysine in 35 mm Petri dishes and incubated overnight. COS-1 cells were transiently transfected using Lipofectamine 2000 (ThermoFisher Cat# 11668027) with 1 \u00b5g of target protein plasmid following the manufacturer\u2019s protocol. Mammalian expression plasmids encoding full-length mouse Homer1 (Origene Cat# MR222523), human IRSp53 (Addgene Plasmid# 31656), rat SAPAP2 (Addgene Plasmid# 40216), human Gephyrin (a gift from Dr. Stephen J. Moss, Tufts University), and mouse AMIGO-1 (a gift from Dr. Heikki Rauvala, University of Helsinki) were used for expression of the corresponding target proteins in COS-1cells.\n\n### Culture and transfection of rat hippocampal neurons\n\nHippocampi were dissected from embryonic day 18 rat embryos and dissociated enzymatically for 20 min at 37\u00b0C in 0.25% (w/v) trypsin (ThermoFisher Cat# 15050065) in HBSS and dissociated mechanically by triturating with glass polished Pasteur pipettes. Dissociated cells were suspended in plating medium containing Neurobasal (ThermoFisher Cat# 21103049) supplemented with 10% FBS (ThermoFisher Cat# 16140071), 2% B27 (ThermoFisher Cat# 17504044), 2% GlutaMAX (ThermoFisher Cat# 35050061), and 0.001% gentamycin (ThermoFisher Cat# 15710064) and plated at 60,000 cells per dish in glass bottom dishes (MatTek Cat# P35G-1.5\u201314 C) coated with 0.5 mg/mL poly-L-lysine (Sigma-Aldrich Cat# P2636). At 7 days in vitro (DIV), cytosine-D-arabinofuranoside (Sigma-Aldrich Cat# 251010) was added to a final concentration of 5 \u00b5M to inhibit non-neuronal cell growth. Neurons were transiently transfected with 1 \u00b5g of each nAb mammalian expression plasmid at 7\u201310 DIV using Lipofectamine 2000 (ThermoFisher Cat# 11668019) for 1.5 hr as described by the manufacturer. Neurons were used 40\u201348 hr post transfection for IF-ICC.\n\n### Examination of Homer1 nAbs delivered via lentivirus\n\nPrimary hippocampal cultures were generated by dissecting hippocampi from P0 CD1 mice, and cells were dissociated by papain (Worthington Cat# LS003127) digestion for 20 min at 37\u00b0C, filtered through a 70 \u00b5m cell strainer (Falcon Cat# 352350), and plated on Matrigel (Corning Cat# 356235)-coated 0 thickness glass coverslips (Assistant Cat# 01105209) in 24-well plates. Plating media contained 5% fetal bovine serum (Atlanta Biologicals Cat# S11550), B27 (ThermoFisher Cat# 17504044), 0.4% glucose (Sigma Cat# G8270), 2 mM glutamine (ThermoFisher Cat# 25030164), in 1x MEM (ThermoFisher Cat# 51200038). Culture media was exchanged to Growth media 24 hr later (1 DIV), which contained 5% fetal bovine serum, B27, 2 mM glutamine in Neurobasal A (ThermoFisher Cat# 10888022). Cytosine arabinofuranoside (Santa Cruz Biotechnology Cat# 221454A) was added at a final concentration of 4 \u00b5M on or around 3 DIV based on glial cell density in a 50% growth media exchange. Cultures were subsequently infected at 5 DIV and analyzed at 14 DIV. For production of lentiviruses, the lentiviral expression shuttle vector and three helper plasmids [pRSV-REV, pMDLg/pRRE and vesicular stomatitis virus G protein (VSVG)] were co-transfected into HEK293T cells (ATCC), using 5 \u00b5g of each plasmid per 25 cm2 culture area, respectively. Transfections were performed using the calcium-phosphate method in media lacking antibiotic (DMEM + 10% FBS). Media with viruses was collected at 48 hr after transfection, centrifuged at 5000 x g for 5 min to remove debris, and 50 \u00b5L of viral conditioned media was added directly to each well. For IF-ICC analysis, all solutions were made fresh and filtered with a 0.2 \u00b5m filter prior to starting experiments. Cells were washed briefly with PBS, fixed with 4% formaldehyde/FA (freshly prepared from paraformaldehyde/PFA)/4% sucrose/PBS for 20 min at 4\u00b0C, washed 3 \u00d7 5 min each in PBS, and permeabilized in 0.2% Triton X-100/PBS for 5 min at RT. Cells were subsequently placed in blocking buffer (5% BSA/PBS) for 1 hr at RT, and incubated with primary antibodies\u00a0[Supplementary file 4; chicken anti-GFP (Aves Labs Cat# GFP1020, RRID:AB_10000240); rabbit anti-Homer1 (Synaptic Systems Cat# 160003, RRID:AB_887730), anti-MAP2 mouse IgG1 mAb AP-20 (Sigma Cat# M1406, RRID:AB_477171)] diluted in blocking buffer overnight at 4\u00b0C. Cells were washed 3 \u00d7 5 min each in PBS, incubated with diluted fluorescently-conjugated secondary antibodies (Life Technologies Cat# A11039, A11012, A21236) in blocking buffer for 1 hr, washed 3 \u00d7 5 min each in PBS, and mounted on UltraClear microscope slides (Denville Scientific Cat# M1021) using DAPI Fluoromount-G (Southern Biotech Cat# 010020).\n\n### Immunofluorescence immunocytochemistry\n\nFixation of COS-1 cells was performed as previously described (Bishop et al., 2015). Briefly, COS-1 cells were fixed in ice-cold 4% FA (freshly prepared from PFA, Sigma-Aldrich Cat# 158127) in PBS containing 0.1% Triton-X 100 for 15 min at 4\u00b0C, and CHNs in ice-cold 4% FA/4% sucrose in PBS for 15 min at 4\u00b0C. All subsequent procedures were performed at RT. Cells were washed for 3 \u00d7 5 min each in PBS and blocked and permeabilized for 1 hr in BLOTTO + 0.1% Triton-X 100 (BLOTTO-T). For assays determining the efficacy of nAbs as intrabodies, incubation with primary antibodies\u00a0(Supplementary file 4) was performed using mAb tissue culture supernatants (TC supes) diluted 1:2 in BLOTTO-T for 1 h T. Following primary antibody incubation, and 3 \u00d7 5 min each washes in BLOTTO-T, cells were incubated with mouse IgG subclass-specific Alexa Fluor-conjugated secondary antibodies (all secondary antibodies from ThermoFisher) diluted 1:1500 in BLOTTO-T containing 500 ng/mL Hoechst 33258 (ThermoFisher Cat# H1399) for 1 hr, washed 3 \u00d7 5 min each in PBS, and mounted onto microscope slides using Prolong Gold (ThermoFisher Cat# P36930). For assays determining the efficacy of nAbs as immunolabels, a 1 hr primary antibody incubation was performed using undiluted nAb BC supes, followed by a 1 hr incubation with mouse mAb TC supes\u00a0(Supplementary file 4) diluted 1:5 in BLOTTO-T. Following these serial primary antibody incubations, and 3 \u00d7 5 min each washes in BLOTTO-T, cells were incubated with anti-HA mouse IgG1 mAb 16B12 conjugated to Alexa Fluor 488 (ThermoFisher Cat# A-21287) diluted to 0.67 \u03bcg/mL in blocking solution to detect bound nAb, and mouse IgG subclass-specific Alexa Fluor 555 conjugated secondary antibodies (all secondary antibodies from ThermoFisher) diluted 1:1500 in BLOTTO-T to detect bound mAb, with dilutions performed in BLOTTO-T containing 500 ng/mL of the chromatin dye Hoechst 33258 (ThermoFisher Cat# H1399). After a 1 hr incubation, cells were washed 3 \u00d7 5 min each in PBS and mounted onto microscope slides using Prolong Gold (ThermoFisher Cat# P36930).\n\n### Immunofluorescence immunocytochemistry for super-resolution imaging\n\nThe HS69 anti-Homer1 nAb (100 \u03bcg in 1 mL of 0.1 M sodium bicarbonate buffer, pH 8.3) was directly conjugated to Alexa647 using succinimidyl-Alexa647 (ThermoFisher Cat# A20186) for 1 hr at RT, followed by addition of 0.1 mL of 1.5 M hydroxylamine. Conjugated nAb was separated from free dye on a Sephadex G-25 column, followed by dialysis against PBS. Validation of immunolabeling of CHNs at 24 DIV with directly conjugated HS69-647 nAb as shown in Figure 5A was performed essentially as described in the previous section. For primary and secondary antibody incubations, neurons were divided into two groups. CHNs in both groups were immunolabeled with primary antibodies mouse anti-Homer1 mouse IgG2b mAb L113/27 TC supe at a 1:2 dilution, and rabbit anti-MAP2 (Millipore-Sigma, Cat# AB5662-I) at a 1:100 dilution, and with secondary antibodies goat anti-mouse IgG2b-subclass-specific Alexa Fluor 555-conjugated secondary antibody (ThermoFisher Cat# A21147) at a 1:1500 dilution to detect the anti-Homer1 mouse IgG2b mAb L113/27, and goat anti-rabbit IgG (H+L) Alexa Fluor 350-conjugated secondary antibody (ThermoFisher Cat# A-11046) at 1:1500 dilution to detect the rabbit anti-MAP2. For one set of CHNs, the primary antibody cocktail also included anti-Homer1 nAb HS69 directly conjugated to Alexa 647 (HS69-647) diluted to 10 \u03bcg/mL. For the other set, the primary antibody cocktail included unconjugated anti-Homer1 HS69 nAb diluted to 10 \u03bcg/mL, and the secondary antibody cocktail anti-HA mouse IgG1 mAb 2\u20132.2.14 conjugated to Alexa 647 (ThermoFisher Cat# 26183-A647) diluted to 1 \u03bcg/mL.\n\nFor super-resolution imaging experiments (Figure 11B, C) CHNs at 24 DIV were fixed in ice-cold 3% FA (freshly prepared from PFA, Sigma-Aldrich Cat# 158127)/0.1% glutaraldehyde (Sigma-Aldrich Cat# G7651) in PBS for 15 min at 4\u00b0C. Unless otherwise stated, all remaining procedures were performed at RT. Fixed CHNs were washed for 3 \u00d7 5 min each in PBS, and free aldehydes reduced by incubating in 0.1% NBH4 (Sigma-Aldrich Cat# 213462) in dH2O for 5 min, followed by 3 \u00d7 5 min each washes in PBS. Neurons were blocked and permeabilized for 60 min in 3% BSA with 0.25% Triton-X 100 in PBS (blocking solution). For primary and secondary antibody incubations, neurons were divided into three groups. Group 1, mAb plus secondary: CHNs were incubated overnight at 4\u00b0C with anti-Homer1 mouse IgG2b mAb L113/27 TC supe at a 1:2 dilution in blocking solution, washed for 3 \u00d7 5 min each in blocking solution, and incubated for 1 hr with goat anti-mouse IgG2b secondary antibody conjugated to Alexa 647 (ThermoFisher Cat# A-21242) diluted to 1 \u03bcg/mL in blocking solution, followed by 3 \u00d7 5 min each washes in PBS. Group 2, nAb plus anti-HA-647: CHNs were incubated overnight at 4\u00b0C with HS69 anti-Homer1 nAb diluted to 10 \u03bcg/mL in blocking solution, washed for 3 \u00d7 5 min each in blocking solution, and incubated for 1 hr with anti-HA mouse IgG1 mAb 2\u20132.2.14 conjugated to Alexa 647 (ThermoFisher Cat# 26183-A647) diluted to 1 \u03bcg/mL in blocking solution, followed by 3 \u00d7 5 min each washes in PBS. Group 3, directly-conjugated nAb: CHNs were incubated overnight at 4\u00b0C with anti-Homer1 nAb HS69 directly conjugated to Alexa 647 (HS69-647) diluted to 10 \u03bcg/mL in blocking solution followed by 3 \u00d7 5 min each washes in PBS. Coverslips were mounted on microscope slides with a round cavity (NeoLab Migge Laborbedarf-Vertriebs GmbH, Germany) and sealed with Twinsil (Picodent, Germany). The imaging buffer contained 10 mM Cysteamine-HCl (Sigma-Aldrich Cat# M6500), 0.56 mg/mL glucose oxidase (Sigma-Aldrich Cat# G2133), 3.4 \u03bcg/ml catalase (Sigma-Aldrich Cat# C100), and 10% w/v glucose in 200 mM Tris-HCl pH 8, 10 mM NaCl.\n\n### Multiplexed fluorescence immunohistochemistry on brain sections\n\nRats were deeply anesthetized with 70 mg/kg Na-pentobarbital salt (Sigma-Aldrich Cat# P3761) in 0.9% NaCl solution through intraperitoneal injection, followed by boosts as needed. Once completely anesthetized, rats were transcardially perfused with 25 mL of ice-cold PBS containing 10 U/mL heparin, followed by an ice-cold fixative solution of 4% FA (freshly prepared from PFA, Sigma-Aldrich Cat# 158127) in 0.1 M sodium phosphate buffer (PB), pH 7.4, using a volume of 0.5 mL fixative solution per gram of rat weight. Following perfusions, brains were removed from the skull and cryoprotected in 10% sucrose in 0.1 M PB overnight at 4\u00b0C, then transferred to a solution of 30% sucrose in 0.1 M PB for 24\u201348 hr, until they sank to the bottom of the tube. Following cryoprotection, all brains were frozen, and cut on a freezing stage sliding microtome (Richard Allen Scientific) to obtain 30 \u00b5m-thick sagittal sections. Sections were collected in 0.1 M PB containing 10 mM sodium azide and processed for immunohistochemistry as free-floating sections.\n\nMultiplex immunofluorescence labeling of nAbs was performed on rat brain sections essentially as previously described (Manning et al., 2012). All incubations and washes were at RT with slow agitation, unless stated otherwise. Briefly, free-floating sections were washed 3 \u00d7 5 min each in 0.1 M PB and 10 mM sodium azide. Sections were incubated in blocking buffer (10% goat serum in 0.1 M PB, 0.3% Triton X-100, and 10 mM sodium azide) for 1 hr. Immediately after blocking, sections were incubated with the primary antibody cocktail containing the candidate nAb BC supe and the mouse anti-Homer1 mouse IgG2b mAb L113/27 TC supe, both diluted 1:5 in blocking buffer, followed by overnight incubation at 4\u00b0C with slow agitation. Sections were then washed 3 \u00d7 10 min each in 0.1 M PB and incubated for 1 hr with a secondary antibody cocktail of anti-HA mouse IgG1 mAb 16B12 conjugated to Alexa Fluor 488 (ThermoFisher Cat# A-21287), to detect bound nAb, and goat anti-mouse IgG2b-subclass-specific Alexa Fluor 555-conjugated secondary antibody (ThermoFisher Cat# A21147) to detect the L113/27 mAb, both diluted 1:2000 in blocking buffer containing 500 ng/mL Hoechst 33258. After 3 \u00d7 10 min each washes in 0.1 M PB, sections were mounted and dried onto gelatin-coated slides, treated with 0.05% Sudan Black (EM Sciences Cat# 21610) in 70% ethanol for 2 min, extensively washed in water, and coverslipped using Prolong Gold (ThermoFisher Cat# P36930) mounting medium.\n\n### Conventional diffraction-limited and super-resolution light microscopy\n\nImages of fixed samples were acquired with an AxioCam MRm digital camera installed on a Zeiss AxioImager M2 microscope or with an AxioCam HRm digital camera installed on a Zeiss AxioObserver Z1 microscope with a 20X/0.8 NA plan-Apochromat objective or a 63X/1.40 NA plan-Apochromat oil immersion objective using an ApoTome structured illumination system for optical sectioning, with image acquisition controlled by Axiovision software (Zeiss, Oberkochen, Germany).\n\nImages of the distribution of anti-Homer1 nAbs expressed in primary hippocampal cultures via lentivirus infection were acquired using a Nikon A1 Eclipse Ti confocal microscope with a 60x objective, operated by NIS Elements AR acquisition software (Nikon Instruments Inc, Melville, NY).\n\nLive cell imaging of transfected hippocampal neurons was performed at the UC Davis MCB Imaging Facility using Total Internal Reflection Fluorescence (TIRF) microscopy as previously described (Kirmiz et al., 2018a). Live neurons cultured on glass bottom dishes were imaged in a physiological saline solution (4.7 mM KCl, 146 mM NaCl, 2.5 mM CaCl2, 0.6 mM MgSO4, 1.6 mM NaHCO3. 0.15 mM NaH2PO4, 20 mM HEPES, pH 7.4) containing 8 mM glucose and 0.1 mM ascorbic acid. Cells were maintained at 37\u00b0C during the course of imaging with a heated stage and objective heater. Images were obtained with an Andor iXon EMCCD camera installed on a TIRF/widefield equipped Nikon Eclipse Ti microscope using a Nikon LUA4 laser launch with 405, 488, 561, and 647 nm lasers and a 100X PlanApo TIRF, 1.49 NA objective run with NIS Elements software (Nikon). Images were collected within NIS Elements as ND2 images. Time lapse movies, collected at 1 Hz, were collected for 1 min.\n\nA super resolution ground-state depletion system (SR-GSD, Leica) based on stochastic single-molecule localization was used to generate super-resolution images. Images were obtained using a 160X HCX Plan-Apochromat (NA 1.43) oil-immersion lens and an EMCCD camera (iXon3 897; Andor Technology). For all experiments, the camera was running in frame-transfer mode at a frame rate of 100 Hz. A total of 35,000 images were used to construct the localization maps. Homer1 cluster sizes were determined using binary masks of the images in ImageJ software (NIH).\n\n### Image analysis and statistics\n\nAll post-acquisition image analysis was performed using Fiji (Schindelin et al., 2012) except for analyses of images of anti-Homer1 nAb localization in primary hippocampal cultures via lentivirus, which was performed using Nikon Elements Analysis software. For line scan analyses of fluorescence intensity, the raw intensity values in the line scan analyses were collected within FIJI and normalized to the maximum value collected. The linear relationship between the fluorescence intensity of the signals was performed in Excel using the normalized values. Pearson\u2019s Correlation Coefficient (PCC) measurements were collected from ROIs manually drawn around dendrites (for nAbs targeting post-synaptic targets) or around the soma and proximal dendrites (for nAbs targeting AMIGO-1). Puncta size quantification was performed essentially as previous reported (Bishop et al., 2018; Kirmiz et al., 2018a; Kirmiz et al., 2018b). Briefly, images were identically background subtracted with a rolling ball radius of 10 pixels and converted into a binary image using automated local thresholding (Bernsen, 1986). Puncta sizes were then quantified using the \u2018analyze particles\u2019 function in Fiji. All data sets were imported into Prism Graphpad for statistical analysis and presentation. Statistical tests were performed as noted in each figure legend.\n\n### Immunoblotting against brain samples\n\nImmunoblots were performed on crude membrane fractions prepared from adult rat brain as previously described (Trimmer, 1991). Following determination of protein concentration by BCA assay (ThermoFisher Cat# 23227), 3 mg of RBM protein was loaded onto a single well that spanned the entire SDS-PAGE gel, electrophoresed to size-fractionate the proteins, and transferred onto a nitrocellulose membrane (BioRad Cat# 1620115). The nitrocellulose membrane was cut into 30 vertical strips so that each contained 100 \u00b5g of RBM protein. All remaining procedures were performed at RT. Strips were blocked for 1 hr in BLOTTO. Primary antibody incubation was performed using nAb BC supes diluted 1:2 in BLOTTO for 1 hr. Positive control antibodies were anti-Homer1 mouse IgG1 mAb L113/130 and anti-Gephyrin mouse IgG2a mAb L106/93, both used as TC supes diluted 1:2 in BLOTTO. Following primary antibody incubation, and 3 \u00d7 5 min each washes in BLOTTO, nAb strips were incubated for 1 hr in anti-HA rat IgG1 mAb 3F10 conjugated to HRP (Sigma-Aldrich Cat# 12013819001) diluted 1:2000 in BLOTTO, or HRP-conjugated goat anti-mouse IgG H+L (SeraCare Cat# 52200458) diluted 1:10,000 in BLOTTO. Following 3 \u00d7 5 min each washes in PBS, the chemiluminescent signal was generated by incubation in Western Lightning Plus ECL substrate (Fisher Scientific Cat# 509049325) and subsequently visualized on HyBlot CL film (Denville Scientific Cat# E3018).\n",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "11a4d5dd-f2be-4c6b-8265-64aee0ed2a9c",
+      "submission_id": "b9ced363-7748-4f9e-83d2-a7029cd3760b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graeme W Davis, University of California, San Francisco United States\n\nReviewers:\n- Graeme W Davis, University of California, San Francisco United States\n\n## Review text\n\nDOI: [10.7554/eLife.48750.021](https://doi.org/10.7554/eLife.48750.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the article was accepted after an appeal against the decision. The first decision letter following peer review is shown below]\n\nThank you for submitting your work entitled \"A toolbox of nanobodies developed and validated for use as intrabodies and nanoscale immunolabels in brain neurons\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Graeme W Davis as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor.\n\nThe work was reviewed by three senior reviewers with experience directly relevant to the proposed resource. As you can appreciate from the reviews, there was general enthusiasm for the nature of the work, particularly the generation of reagents that could be used by the community. There were very few concerns, let alone suggestions regarding the generation of the tools or their demonstrated effectiveness and value. However, during the online discussion, a compelling argument was made that the actual resource that is being provided to the community is a relatively modest contribution and does not adhere to the ELife guidelines regarding a substantive contribution to the community. The decision hinged on the notion that the paper essentially contributed nanobodies to five antigens, which is not a large number and the nature of the pipeline lacks novelty in the current environment. Please see the comments of reviewer number 2. Further, in reference to the lack of novelty regarding the pipeline, it was noted that several papers have described similar pipelines. An older example is Fridy PC, Li Y, Keegan S, Thompson MK, Nudelman I, Scheid JF, Oeffinger M, Nussenzweig MC, Feny\u00f6 D, Chait BT, Rout MP. A robust pipeline for rapid production of versatile nanobody repertoires \u2013 published in Nat Methods. 2014 Dec;11(12):1253-60. There are others and a fair number of these are dutifully cited by the current authors. Ultimately, it is becoming standard to generate nanobodies. At least three companies offer the service. https://discover.abcore.com/nanobodies/. https://nano-tag.com/services. https://www.creative-biolabs.com. In conclusion, the reviewers are generally complimentary about the work and the presentation of the work. However, the novelty and impact of the resource was not deemed substantial enough to justify publication in eLife.\n\nReviewer #1:\n\nThe authors describe the generation and validation of nanobodies that can function as intrabodies. Several aspects are worth noting including the use of animal immunization rather than a synthetic approach. One of the intrabodies is validated for use in super-resolution microscopy. Ultimately, these will be valuable reagents for the community. There may be a general commitment toward further reagent generation in the future. In general, as a community resource, it seems to me that the paper succeeds.\n\nReviewer #2:\n\nIn this Tools and Resources paper, Trimmer and colleagues describe generation of nanobodies to 5 neuronal proteins, and their use for immunolabeling neurons. In brief, they generated and pooled recombinant fragments of the 5 proteins, immunized a llama with the pool, generated a library from lymphocyte RNA, isolated antibodies by phage display, transferred the cDNAs to mammalian expression vectors containing a GFP tag, and screened them by expression in heterologous cells. They then introduced a subset of them into neurons by electroporation or lentiviral infection, and used them as \"intrabodies\" to localize endogenous proteins at short and long intervals. Finally, they showed that a subset of the nanobodies could be used to label antigen in brain sections and on immunoblots.\n\nThe manuscript is clear, complete and very-well illustrated. On the other hand, I do not think it reports an advance of sufficient novelty or utility to merit publication in eLife. Editorial guidance provided to the reviewers states that Tools and Resources papers should report \"significant technological or methodological advances, genomic or other datasets, collections of biological resources, software tools, and so on.\" In this case, all of the methods for generating and using nanobodies and intrabodies have been described previously by multiple groups; many of the relevant papers are cited, so I won't list them here. In this respect, it differs from this group's recent paper on generating recombinant monoclonal antibodies (Andrews et al., eLife, 2019), which introduces a suite of methods that had been little used and are likely to be broadly useful. The \"biological resource\" is the set of new nanobodies, but with only 5 targets, it is quite small in comparison to previous datasets from this and other groups.\n\nReviewer #3:\n\nDong and colleagues have developed a toolbox of nanobodies that can be used to recognize a collection proteins expressed at excitatory and inhibitory synapses as well as at the ER-PM interface. They perform a series of experiments testing/validating the utility of these nAbs by expressing them in COS cells and neurons as well as purifying them for use in staining in fixed tissue. This tool kit will be generally useful and provides a platform for future derivative uses.\n\nI recommend publication, pending addressing a few concerns.\n\n1) The authors show in Figure 2 that with the \"long term\" expression of homer nAb, puncta can still be resolved. Is this the case for the other nAbs? This is really the crux of the utility of the tools and should be shown.\n\n2) Data illustrated in Figures 3 and 4 need quantification or some sort.\n\n3) A table with rank ordering or quality assessment of the efficacy of all nAbs would be useful. It is transparent, but not necessarily user friendly, to provide a collection of nAbs without some ranking of which one(s) people should try first.\n\n4) The Arnold lab has made intrabodies recognizing PSD-95 and gephryin. This should be referenced and discussed. How is this strategy better/different?\n",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "79e4c74a-8c8a-4208-a87f-9a5c079b1ace",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C1",
+      "claim": "Nanobodies (nAbs) are the recombinant minimal antigen binding fragments derived from the atypical monomeric immunoglobulins present in camelid mammals and cartilaginous fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies (nAbs) are the recombinant minimal antigen binding fragments derived from the atypical monomeric immunoglobulins present in camelid mammals and cartilaginous fish (Hamers-Casterman et al., 1993; Muyldermans, 2013; Desmyter et al., 2015; Beghein and Gettemans, 2017; K\u00f6nning et al., 2017; De Meyer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature establishing the origin and nature of nanobodies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "3defd6db-2b28-40bc-8316-15b2fec75e32",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C2",
+      "claim": "nAbs are ideally suited for use as intracellular antibodies (intrabodies) in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "nAbs are ideally suited for use as intracellular antibodies (intrabodies) in living cells (Lafaye et al., 2009; Beghein et al., 2016; Staus et al., 2014; Bertier et al., 2017; Van Audenhove and Gettemans, 2016; Schumacher et al., 2018), as they fold efficiently and remain stable under a wide range of conditions, including the reducing cytoplasmic environment (Gahrtz and Conrad, 2009; B\u00f6ldicke et al., 2005; Goenaga et al., 2007; Lynch et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies demonstrating the utility of nAbs as intrabodies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "d5c27cb3-8937-48bc-a8c9-86844179d695",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C3",
+      "claim": "nAbs fold efficiently and remain stable under a wide range of conditions, including the reducing cytoplasmic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "nAbs are ideally suited for use as intracellular antibodies (intrabodies) in living cells (Lafaye et al., 2009; Beghein et al., 2016; Staus et al., 2014; Bertier et al., 2017; Van Audenhove and Gettemans, 2016; Schumacher et al., 2018), as they fold efficiently and remain stable under a wide range of conditions, including the reducing cytoplasmic environment (Gahrtz and Conrad, 2009; B\u00f6ldicke et al., 2005; Goenaga et al., 2007; Lynch et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies on nAb stability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "06dcdeb1-ebfd-4e55-ac06-51d789c1ae5a",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C4",
+      "claim": "The small size of nAbs (\u22481/10 of conventional IgG antibodies) improves penetration of cell or tissue samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their potential utility as intrabodies, nAbs also have advantages as immunolabeling reagents, as their small size (\u22481/10 of conventional IgG antibodies) improves penetration of the cell or tissue samples (Perruchini et al., 2009; Fang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies demonstrating improved tissue penetration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "e88b072a-352b-4584-b95a-a7202ce2a5f4",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C5",
+      "claim": "nAbs improve imaging resolution by reducing the distance between the immunolabeling signal and the target protein from the 10\u201320 nm obtained with conventional primary and secondary antibodies down to 2\u20134 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, nAbs improve imaging resolution by reducing the distance between the immunolabeling signal and the target protein from the 10\u201320 nm obtained with conventional primary and secondary antibodies down to 2\u20134 nm (Beghein and Gettemans, 2017; Ries et al., 2012; Szymborska et al., 2013; Pleiner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies on imaging resolution improvements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "6a712644-76e7-48b9-ab05-fb74ec882dce",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C6",
+      "claim": "Mammalian brain neurons express proteins estimated to encompass the products of two-thirds of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Integral to the functional complexity of neurons is the diversity of proteins they express (estimated to encompass the products of two-thirds of the genome), a complexity markedly enhanced by compartmentalization of specific proteins at highly restricted sites within the neuron's complex structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about neuronal protein diversity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "90901de9-3371-4dfc-8c53-63db1a709de9",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C7",
+      "claim": "Homer1 is a postsynaptic scaffolding protein present at partially overlapping sets of excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "These targets are the postsynaptic scaffolding proteins Homer1 (Brandst\u00e4tter et al., 2004), IRSp53 (Soltau et al., 2002), and SAPAP2 (Takeuchi et al., 1997) that are present at partially overlapping sets of excitatory synapses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on Homer1 localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "87bbeaf1-4340-477d-95e1-1d9c662c19f8",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C8",
+      "claim": "IRSp53 is a postsynaptic scaffolding protein present at partially overlapping sets of excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "These targets are the postsynaptic scaffolding proteins Homer1 (Brandst\u00e4tter et al., 2004), IRSp53 (Soltau et al., 2002), and SAPAP2 (Takeuchi et al., 1997) that are present at partially overlapping sets of excitatory synapses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on IRSp53 localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "c6829c7f-0cf7-4063-9f24-3b80886d1ddd",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C9",
+      "claim": "SAPAP2 is a postsynaptic scaffolding protein present at partially overlapping sets of excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "These targets are the postsynaptic scaffolding proteins Homer1 (Brandst\u00e4tter et al., 2004), IRSp53 (Soltau et al., 2002), and SAPAP2 (Takeuchi et al., 1997) that are present at partially overlapping sets of excitatory synapses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on SAPAP2 localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "c529847b-5668-43c2-9f16-0b2ecbcdf8e1",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C10",
+      "claim": "Gephyrin is found postsynaptically at most inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Gephyrin (Kneussel et al., 2001) found postsynaptically at most inhibitory synapses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on Gephyrin localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "47d145f1-ba96-4768-8e06-d2855b06d08b",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C11",
+      "claim": "AMIGO-1 is a Kv2 channel auxiliary subunit found in large clusters at endoplasmic reticulum-plasma membrane (ER-PM) junctions present on the soma, proximal dendrites and AIS.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Kv2 channel auxiliary subunit AMIGO-1 (36) found in large clusters at endoplasmic reticulum-plasma membrane (ER-PM) junctions present on the soma, proximal dendrites and AIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation (reference 36) to prior literature on AMIGO-1 localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "c31e9948-f435-4c53-b8a8-9b340d4ce1f4",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C12",
+      "claim": "A phage display library with complexity \u2248 8 \u00d7 10^7 was generated from an immunized llama.",
+      "claim_type": "EXPLICIT",
+      "source": "We subjected this phage display library (complexity \u2248 8 \u00d7 107) to panning against the individual purified recombinant target proteins immobilized in wells of a microtiter plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the phage display library construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "40b11b67-07eb-43aa-b0c3-8b97768f2722",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C13",
+      "claim": "180 phage clones were selected for Homer1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "00830459-1757-493e-a8ed-88aad4a1e165",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C14",
+      "claim": "135 ELISA-positive clones were obtained for Homer1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "442e58df-37b8-453d-b1db-f422a4444a68",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C15",
+      "claim": "39 unique ELISA-positive clones were obtained for Homer1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "33edb473-8525-4f1c-9c09-77f8921f15f7",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C16",
+      "claim": "32 COS-1 intrabody-positive clones were obtained for Homer1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "6224aa24-64a2-43b7-bc64-2fbde5449fe4",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C17",
+      "claim": "12 neuron intrabody-positive clones were obtained for Homer1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "73d9a045-6156-4ec5-8f68-20d46050c279",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C18",
+      "claim": "33 COS-1 IF-ICC positive clones were obtained for Homer1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "2770efb9-bb6c-497d-bedc-35bf5b2d3d21",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C19",
+      "claim": "25 brain IHC positive clones were obtained for Homer1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "e35cc6c2-0527-4499-90b5-94fde1b33ab1",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C20",
+      "claim": "13 brain IB positive clones were obtained for Homer1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "3bb2e726-c625-4da3-932f-53eff5ad3c79",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C21",
+      "claim": "The vast majority of COS-1 cells expressing EGFP- or EYFP-tagged nAb alone had substantial fluorescence signal in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the vast majority of COS-1 cells expressing EGFP- or EYFP-tagged nAb alone had substantial fluorescence signal in the nucleus (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "060227d5-a3c5-4240-b743-3be050270dcd",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C22",
+      "claim": "Target protein coexpression led to a change in nAb subcellular localization, which was interpreted as being due to nAb binding to the cytoplasmic- or ER-localized target protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We next evaluated whether target protein coexpression led to a change in nAb subcellular localization, which we interpreted as being due to nAb binding to the cytoplasmic- or ER-localized target protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations and interpretation of the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "ade97b7e-adf3-4336-aea7-0439b5135413",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C23",
+      "claim": "The expression and subcellular localization of the endogenous target proteins were not altered by nAb expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the expression and subcellular localization of the endogenous target proteins were not altered by nAb expression, as quantified by a lack of significant change in target protein puncta size (Figure 1\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "cb24012e-41bf-4def-870a-bf206950bc53",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C24",
+      "claim": "Expression of the nAbs against target proteins at excitatory synapses did not impact the sizes of PSD-95 puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, expression of the nAbs against target proteins at excitatory synapses did not impact the sizes of PSD-95 puncta (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "e5013827-e16f-4d46-aed3-f8ea34dfeff4",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C25",
+      "claim": "The sizes of the puncta of Gephyrin and Synapsin immunolabeling were not impacted by expression of anti-Gephyrin nAbs.",
+      "claim_type": "EXPLICIT",
+      "source": "The sizes of the puncta of Gephyrin and Synapsin immunolabeling were not impacted by expression of anti-Gephyrin nAbs (Figure 1\u2014figure supplements 3 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1\u2014figure supplements 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "ae32fd0c-7973-4181-a2b2-ef37c901d791",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C26",
+      "claim": "The sizes of AMIGO-1 and Kv2.1 puncta were not impacted by expression of anti-AMIGO-1 nAbs.",
+      "claim_type": "EXPLICIT",
+      "source": "The sizes of AMIGO-1 and Kv2.1 puncta were not impacted by expression of anti-AMIGO-1 nAbs (Figure 1\u2014figure supplements 3 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1\u2014figure supplements 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "a1b39f1d-fa1d-4165-9f4f-411cc9882b93",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C27",
+      "claim": "Anti-Homer1 nAbs such as HC20 and HC87 exhibited precise colocalization with Homer1 immunolabeling after long-term expression.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of the localization of a number of anti-Homer1 nAb-YFP fusions after such long-term expression revealed that a subset of the nAb-YFP fusions (green), such as HC20 and HC87, exhibited precise colocalization with Homer1 immunolabeling (red), with little or no detectable signal in dendritic shafts, consistent with their binding to and accumulation at Homer1 clustered in dendritic spines (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "b31e0190-eaaa-42ea-b7e8-720115f9b1e2",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C28",
+      "claim": "Long-term expression of anti-Homer1 nAbs did not lead to significant changes in the overall sizes or density of Homer1 puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of these differences in binding, in no case did long-term expression of the anti-Homer1 nAbs lead to significant changes in the overall sizes or density of Homer1 puncta (Figure 2D), showing that the long-term expression of these nAbs and their binding to synaptic Homer1 did not detectably impact Homer1 expression and localization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "398a3d88-4dd2-4e22-8993-7d9e24364c69",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C29",
+      "claim": "The nAb-GFP puncta were marking stable structures present in the TIRF field over the course of one-minute recordings collected at 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of one-minute recordings collected at 1 Hz, we observed that the nAb-GFP puncta (which we observed colocalized with the target proteins in the experiments mentioned in the previous section) were marking stable structures present in the TIRF field, such that overlaid time-lapse images of nAb-GFP localization yielded tightly colocalized structures (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by live cell imaging data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "b42cfa5e-618d-479c-a878-3015fd831c09",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C30",
+      "claim": "A substantial subset (33/39) of the ELISA-positive anti-Homer1 nAb BC supes tested exhibited robust immunolabeling of fixed and permeabilized COS-1 cells expressing Homer1L.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a substantial subset (33/39) of the ELISA-positive anti-Homer1 nAb BC supes tested exhibited robust immunolabeling of fixed and permeabilized COS-1 cells expressing Homer1L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from immunolabeling assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "68fc1cb7-aada-41b7-8d28-a1ee9d5fe453",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C31",
+      "claim": "None of the unique ELISA-positive nAb BC supes against the other targets (IRSp53, SAPAP2, Gephyrin, AMIGO-1) yielded detectable immunoreactivity in the COS-1 cell IF-ICC assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, none of the unique ELISA-positive nAb BC supes against the other targets yielded detectable immunoreactivity in this assay (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "65c97e37-e552-48ba-8086-f859154245d7",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C32",
+      "claim": "A large proportion (25/33) of the anti-Homer1 BC supes tested yielded robust immunolabeling of brain sections.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a large proportion (25/33) of the BC supes tested yielded robust immunolabeling of brain sections, with the remainder exhibiting no detectable immunolabeling (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "14beb368-6ead-4800-9394-1f6e6f029d97",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C33",
+      "claim": "Each of the 25 brain IHC-positive nAbs was also scored as positive in the heterologous COS-1 cell IF-ICC assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the 25 brain IHC-positive nAbs was also scored as positive in the heterologous COS-1 cell IF-ICC assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from both IHC and IF-ICC assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "44c2fca9-d191-4622-ac28-3dfc80ff57d6",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C34",
+      "claim": "The pattern of immunolabeling obtained with the anti-Homer1 nAbs matched closely that obtained with validated anti-Homer1 mouse mAbs.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of immunolabeling obtained with the anti-Homer1 nAbs matched closely that obtained with validated anti-Homer1 mouse mAbs (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative immunolabeling data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "bd7ac31a-2da0-4b92-858b-5e70f83a1adb",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C35",
+      "claim": "Directly conjugated Alexa647 nAb had the smallest overall cluster size compared to unlabeled nAb detected with Alexa647-conjugated anti-HA antibody and conventional mAb detected with Alexa647-conjugated secondary antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5, there was a significant difference in the size of immunolabeled puncta for each of the labeling reagent combinations used. Directly conjugated Alexa647 nAb had the smallest overall cluster size, followed by the unlabeled nAb detected with the Alexa647-conjugated anti-HA antibody, with the conventional mAb detected with an Alexa647-conjugated secondary antibody having the largest cluster size (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative super-resolution imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "d2fd9630-015f-4223-99d7-efca3f2e3324",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C36",
+      "claim": "A subset of the unique ELISA-positive nAbs against Homer1 (13/39) detected a single robust band at the characteristic electrophoretic mobility of Homer1 (\u224847 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a subset of the unique ELISA-positive nAbs against Homer1 (13/39; Table 1) detected a single robust band at the characteristic electrophoretic mobility of Homer1 (\u224847 kDa) (Saito et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data and citation to prior literature on Homer1 molecular weight.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "46c93441-ce66-40c8-9c8e-090339345f3b",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C37",
+      "claim": "A small subset of the unique ELISA-positive nAbs against Gephyrin (2/24) detected a single band at the characteristic electrophoretic mobility (\u224880 kDa) of Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "A small subset of the unique ELISA-positive nAbs against Gephyrin (2/24; Table 1) detected a single band at the characteristic electrophoretic mobility (\u224880 kDa) of Gephyrin (Feng et al., 1998) that comigrated with the immunoreactive band for the validated anti-Gephyrin mouse mAb L106/93 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 6 and citation to prior literature on Gephyrin molecular weight.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "97b9f5a5-0f71-41ab-bef5-bd09e3be9dc2",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C38",
+      "claim": "No specific immunolabeling was detected with any of the ELISA-positive nAb BC supes against IRSp53, SAPAP2, or AMIGO-1 in immunoblot applications.",
+      "claim_type": "EXPLICIT",
+      "source": "No specific immunolabeling was detected with any of the ELISA-positive nAb BC supes against the other targets (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "124fecda-7e43-4ec6-836d-66ff261aec2c",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C39",
+      "claim": "The nAbs developed in this study have little discernible impact on the expression and subcellular localization of their endogenous targets when expressed in cultured hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that these nAbs act as intrabodies that recognize their endogenous target proteins in CHNs, and the expression of the nAbs has little discernible impact on the expression and subcellular localization of their endogenous targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations and quantitative analyses of target protein expression and localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "db097bd7-834c-40f2-9d8c-ed8d2d23370d",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C40",
+      "claim": "Immunizations to increase the representation of high affinity binders in the llama were used as the source of the nAb cDNA library.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these approaches often yield low affinity binders that need to be matured by molecular evolution in vitro (Gustchina et al., 2009; Gram et al., 1992; Jackson et al., 1995), which is a time and labor-consuming process. Therefore, we elected to use immunizations to increase the representation of high affinity binders in the llama used as the source of our nAb cDNA library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on affinity maturation and the authors' methodological choice.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "fa5e4128-7f63-4c31-9f91-a23523e4855e",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C41",
+      "claim": "The overall strategy generated at least one nAb that functioned as an intrabody in neurons for each of the five targeted brain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our overall strategy generated at least one nAb that functioned as an intrabody in neurons for each of the five targeted brain proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results summarized in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "39deff3d-de72-4333-a78e-95b65222aa14",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C42",
+      "claim": "The nAbs that were evaluated by live cell imaging label stable structures within cultured rat hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "That the nAbs we evaluated by live cell imaging label stable structures within cultured rat hippocampal neurons suggests that the nAbs are primarily binding their targets at final subcellular location, as opposed to binding to the proteins while in transit to these sites, or otherwise targeting mobile structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on live cell imaging data shown in Figure 3 and the authors' interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "44d2d3fa-709e-417c-b109-84b9a1eab0ed",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C43",
+      "claim": "A subset of anti-Homer1 nAbs exhibit enhanced resolution in super-resolution light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "These nAbs exhibit the enhanced resolution in super-resolution light microscopy predicted for such nanoscale labeling reagents (Beghein and Gettemans, 2017; Ries et al., 2012; Szymborska et al., 2013; Pleiner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by super-resolution imaging data shown in Figure 5 and citations to prior literature predicting this enhancement.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "09619333-8520-4bb4-99be-d386c28e4a66",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C44",
+      "claim": "Among the five proteins targeted in the nAb development efforts, only the Homer1 nAb project yielded large pools of nAbs positive for immunolabeling transfected heterologous cells and brain sections.",
+      "claim_type": "EXPLICIT",
+      "source": "It is surprising to us that among the five proteins targeted in the nAb development efforts described here, only the Homer1 nAb project yielded large pools of nAbs positive for immunolabeling transfected heterologous cells and brain sections (Table 1), given that we had previously performed mouse mAb projects against each of these targets, using the same recombinant proteins as immunogens and in screening, and for each obtained a substantial number of mAbs positive for these applications (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "cfe8883e-13ee-40cc-aeb9-588bc81d1135",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C45",
+      "claim": "A retrospective analysis of the antiserum from the immunized llama by IF-ICC against transfected COS-1 cells expressing the individual target proteins yielded substantial immunolabeling only for cells expressing Homer1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a retrospective analysis of the antiserum from the immunized llama by IF-ICC against transfected COS-1 cells expressing the individual target proteins yielded substantial immunolabeling only for cells expressing Homer1 (not shown), suggesting a fundamental lack of an immune response against epitopes preserved in aldehyde-fixed samples, and not a failure of phage display selection to capture immunolabeling-competent nAbs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations from retrospective analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "86f8f456-2a34-493c-a4c8-a2075086441a",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C46",
+      "claim": "160 phage clones were selected for IRSp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "8886983f-329e-47f9-bd71-641eeef74b8c",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C47",
+      "claim": "33 ELISA-positive clones were obtained for IRSp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "d8f68b6e-d2f8-4cbc-8fd1-39e195959879",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C48",
+      "claim": "17 unique ELISA-positive clones were obtained for IRSp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "15a10d71-d395-4c12-89e3-be8472baef87",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C49",
+      "claim": "8 COS-1 intrabody-positive clones were obtained for IRSp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "5739edfd-b57a-47f4-bf27-d0b3f30250df",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C50",
+      "claim": "3 neuron intrabody-positive clones were obtained for IRSp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "e5d1ae0b-e7e7-454e-b642-7ff4cf94264d",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C51",
+      "claim": "0 COS-1 IF-ICC positive clones were obtained for IRSp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "22fa196c-9a15-476c-b250-f40fc0e72d7c",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C52",
+      "claim": "0 brain IHC positive clones were obtained for IRSp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "994b9575-2085-4797-93dc-9ce9f8c4155a",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C53",
+      "claim": "0 brain IB positive clones were obtained for IRSp53.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "aaba114a-5c41-4632-a70d-22444527e9f6",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C54",
+      "claim": "172 phage clones were selected for SAPAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "ed71be2b-f0ab-4363-993d-c900cb54d610",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C55",
+      "claim": "32 ELISA-positive clones were obtained for SAPAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "324f29ec-e42f-4227-8238-f67c829a0f4b",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C56",
+      "claim": "15 unique ELISA-positive clones were obtained for SAPAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "c5ea3383-e734-4a8b-8ae0-91822ea6b830",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C57",
+      "claim": "7 COS-1 intrabody-positive clones were obtained for SAPAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "707501ac-43ba-48ee-a741-df925b29de8e",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C58",
+      "claim": "2 neuron intrabody-positive clones were obtained for SAPAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "026abfd0-cb91-44d2-af60-298ac93f832b",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C59",
+      "claim": "0 COS-1 IF-ICC positive clones were obtained for SAPAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "6aafae15-1a69-4a44-a78a-c848e3b24a4f",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C60",
+      "claim": "4 brain IHC positive clones were obtained for SAPAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "4167fc39-ff03-4aa2-ac5b-48551d7f0c70",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C61",
+      "claim": "0 brain IB positive clones were obtained for SAPAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "fb33e2f7-a5b9-4690-9e46-aa8b64fbca7b",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C62",
+      "claim": "182 phage clones were selected for Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "a3838e0f-8576-4c46-8c8d-b47ec565821c",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C63",
+      "claim": "78 ELISA-positive clones were obtained for Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "ab72cfea-db35-4cae-b0fe-48b7eba08da4",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C64",
+      "claim": "24 unique ELISA-positive clones were obtained for Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "c4765743-c184-48b0-9d68-c6c4d6364ddd",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C65",
+      "claim": "9 COS-1 intrabody-positive clones were obtained for Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "3edd8078-e2cc-4bb8-b59e-71b3f26afce9",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C66",
+      "claim": "5 neuron intrabody-positive clones were obtained for Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "94ad50d6-0324-4054-8655-e33cdc33281a",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C67",
+      "claim": "0 COS-1 IF-ICC positive clones were obtained for Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "ff3cf186-e009-486f-83d3-d19d2b52c2c6",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C68",
+      "claim": "1 brain IHC positive clone was obtained for Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "9c60be8b-0335-49f8-aae4-9ae5ff050ccb",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C69",
+      "claim": "2 brain IB positive clones were obtained for Gephyrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "e284397b-d979-41fb-bb10-e4dc98bf2f53",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C70",
+      "claim": "173 phage clones were selected for AMIGO-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "a350fcce-8541-411a-a789-515fe24eab73",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C71",
+      "claim": "38 ELISA-positive clones were obtained for AMIGO-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "db385b54-73f7-40cd-aae9-4d6ed6355214",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C72",
+      "claim": "18 unique ELISA-positive clones were obtained for AMIGO-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "2453b07f-83a2-48e4-82a0-292a30b9c548",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C73",
+      "claim": "13 COS-1 intrabody-positive clones were obtained for AMIGO-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "aecd5d90-46b6-4b01-8387-a5d2837e1bd8",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C74",
+      "claim": "5 neuron intrabody-positive clones were obtained for AMIGO-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "47d67ad5-a373-45d6-8e09-cf2d30e799b1",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C75",
+      "claim": "0 COS-1 IF-ICC positive clones were obtained for AMIGO-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "63272757-d81d-4579-8315-50d4fbb730a0",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C76",
+      "claim": "0 brain IHC positive clones were obtained for AMIGO-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "431fe745-6bd1-4428-84d3-bc30add8fafc",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C77",
+      "claim": "0 brain IB positive clones were obtained for AMIGO-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 contains a summary of the outcome of the phage display.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "f734c210-bcfe-4b94-a424-064734883b80",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C86",
+      "claim": "The positive anti-Homer1 nAbs exhibited substantial immunolabeling of neuropil in caudate putamen (CPU), cerebral cortex (CTX) and hippocampus (HC).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4A for nAb HS15, the positive anti-Homer1 nAbs exhibited substantial immunolabeling of neuropil in caudate putamen (CPU), cerebral cortex (CTX) and hippocampus (HC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "e5477b67-7205-4c22-bcc6-c2b361ada12c",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C87",
+      "claim": "Immunolabeling for the positive anti-Homer1 nAbs was especially prominent in subiculum and CA1 stratum oriens and radiatum in hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In hippocampus, immunolabeling for the positive anti-Homer1 nAbs (note that the HS12 nAb was scored as negative in this application) was especially prominent in subiculum and CA1 stratum oriens and radiatum (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "d7e2cf76-4f4f-47fd-b699-344e6986c2fd",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C88",
+      "claim": "All nAbs that showed positive immunolabeling in brain regions also had strong signals in olfactory bulb, and relatively weak or undetectable labeling in numerous other brain regions (thalamus, globus pallidus, brainstem, cerebellum).",
+      "claim_type": "EXPLICIT",
+      "source": "All nAbs that showed positive immunolabeling in these areas also had strong signals in olfactory bulb, and relatively weak or undetectable labeling in numerous other brain regions (thalamus, globus pallidus, brainstem, cerebellum), consistent with Homer1 mRNA expression in brain (Clifton et al., 2017; Lein et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and citations to prior literature on Homer1 mRNA expression.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "2a360367-29e8-4d77-b894-992342ea80c4",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C89",
+      "claim": "The nAb labeling pattern matched the localization of Homer1 protein from previous IHC studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the nAb labeling pattern matched the localization of Homer1 protein from previous IHC studies (Shiraishi et al., 2004; Shiraishi-Yamaguchi and Furuichi, 2007), and immunolabeling obtained with anti-Homer1 mAbs recognizing both the long and short (L113/130) or only the long (L113/27) splice variants (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison with prior literature and imaging data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "54ecbd78-75a1-4ba9-885f-9fa3c08d501a",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C90",
+      "claim": "Immunolabeling with a directly labeled nAb allows for enhanced resolution of target detection in super-resolution light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides an empirical demonstration that immunolabeling with a directly labeled nAb allows for enhanced resolution of target detection in super-resolution light microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "2c0db685-b9f5-419c-85f2-113e1a0ca07c",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C91",
+      "claim": "The band recognized by the anti-Homer1 nAbs had characteristics corresponding to the band obtained with the validated anti-Homer1 mouse mAb L113/130.",
+      "claim_type": "EXPLICIT",
+      "source": "The band recognized by the nAbs had characteristics corresponding to the band obtained with the validated anti-Homer1 mouse mAb L113/130 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "e1cd0dad-b181-4667-88ac-d673a699d22f",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C92",
+      "claim": "The immunoreactive band for anti-Gephyrin nAbs comigrated with the immunoreactive band for the validated anti-Gephyrin mouse mAb L106/93.",
+      "claim_type": "EXPLICIT",
+      "source": "A small subset of the unique ELISA-positive nAbs against Gephyrin (2/24; Table 1) detected a single band at the characteristic electrophoretic mobility (\u224880 kDa) of Gephyrin (Feng et al., 1998) that comigrated with the immunoreactive band for the validated anti-Gephyrin mouse mAb L106/93 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "c490023c-cbc9-443e-b588-56b54f906c9d",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C93",
+      "claim": "The nAbs developed in this study represent a valuable toolbox of reagents available to the neuroscience community for diverse applications.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have generated a series of validated nAbs against neuronal proteins selectively expressed in specific subcellular compartments in brain neurons. These nAbs represent a valuable toolbox of reagents available to the neuroscience community for diverse applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the overall results of the study and represents the authors' conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "6e3ebb3e-d3ba-4810-ad3e-535030c949a3",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "claim_id": "C94",
+      "claim": "The pipeline employed in this study can be used in developing nAbs against other neuronal targets to enhance the spectrum of experimental approaches available to researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "The pipeline we employed is an exemplar that can be used in developing nAbs against other neuronal targets to enhance the spectrum of experimental approaches available to researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the authors' conclusion about the broader applicability of their methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "74652325-d021-479e-8246-8f5177c4f87a",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nanobodies (nAbs) are small antibody fragments derived from camelid immunoglobulins that are well-suited for use as intrabodies and immunolabeling reagents due to their stability in reducing environments, small size enabling better tissue penetration, and ability to reduce the distance between immunolabeling signal and target protein to 2-4 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are all supported by multiple citations to prior literature establishing the properties and advantages of nanobodies. These are well-established facts in the field and provide appropriate background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "0a9ea895-c888-458b-bf27-198474836b72",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study targets five neuronal proteins with restricted subcellular localization: Homer1, IRSp53, and SAPAP2 at excitatory synapses; Gephyrin at inhibitory synapses; and AMIGO-1 at ER-PM junctions. These proteins are expressed in mammalian brain neurons which express products of approximately two-thirds of the genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 are supported by citations to prior literature establishing the localization and function of these target proteins. The claim about neuronal protein diversity (C6) is established knowledge in neuroscience. These claims appropriately establish the rationale for target selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "923c2236-bbca-4563-8b41-f4165fa1f29e",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A phage display library with complexity ~8\u00d710^7 was generated from an immunized llama and subjected to panning, yielding 180 phage clones for Homer1 (135 ELISA-positive, 39 unique), 160 for IRSp53 (33 ELISA-positive, 17 unique), 172 for SAPAP2 (32 ELISA-positive, 15 unique), 182 for Gephyrin (78 ELISA-positive, 24 unique), and 173 for AMIGO-1 (38 ELISA-positive, 18 unique).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 and C46-C77 are supported by experimental data presented in Table 1. The library complexity and selection outcomes are clearly documented. The methodology follows established phage display protocols and the data are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "47a4f425-c56d-435e-8fba-3b69a3a5a371",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Validation of nAbs as intrabodies in COS-1 cells and cultured hippocampal neurons yielded positive clones for all five targets: Homer1 (32 COS-1, 12 neuron), IRSp53 (8 COS-1, 3 neuron), SAPAP2 (7 COS-1, 2 neuron), Gephyrin (9 COS-1, 5 neuron), and AMIGO-1 (13 COS-1, 5 neuron).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by data in Table 1 and experimental validation shown in Figures 1-3 and supplementary figures. The hierarchical validation pipeline from heterologous cells to neurons is methodologically sound and provides strong evidence for intrabody function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "83e7217d-5e0c-435e-8c34-2be2d10924b0",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EGFP/EYFP-tagged nAbs alone showed substantial nuclear fluorescence in COS-1 cells, but coexpression with target proteins led to redistribution of nAb localization, interpreted as binding to cytoplasmic or ER-localized target proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are supported by experimental observations in Figure 1\u2014figure supplement 1. The nuclear localization of GFP-tagged proteins is expected, and the redistribution upon target coexpression provides evidence of binding. However, the interpretation (C22) relies on inference rather than direct binding measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "c612d542-3cf2-4b39-9566-431353e68950",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Expression of nAbs did not alter the expression, subcellular localization, or puncta sizes of endogenous target proteins (Homer1, IRSp53, SAPAP2, Gephyrin, AMIGO-1) or synaptic markers (PSD-95, Synapsin, Kv2.1) in cultured hippocampal neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 and C39 are supported by quantitative data in Figure 1\u2014figure supplements 2-5 showing no significant changes in puncta sizes. Statistical tests (two-tailed unpaired t-tests) show p>0.05 for all comparisons. This is important validation that nAbs do not perturb endogenous protein organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "832b1f63-5643-4042-95a6-faeecb655455",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Long-term expression of anti-Homer1 nAbs (HC20, HC87) via lentivirus in mouse hippocampal neurons showed precise colocalization with Homer1 at dendritic spines without significantly altering Homer1 puncta size or density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by data in Figure 2C-D showing colocalization and quantitative analysis demonstrating no significant changes in puncta size or density. This extends the validation to long-term expression and demonstrates stability of nAb binding without disrupting target protein organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "d8c83b00-8986-430f-a278-58033f036766",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Live cell TIRF imaging showed that nAb-GFP puncta marked stable structures over one-minute recordings at 1 Hz, suggesting nAbs bind targets at their final subcellular locations rather than during transit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C42 are supported by live cell imaging data in Figure 3. The stability of puncta over time provides evidence for binding at final locations. However, the interpretation that nAbs bind at final locations rather than during transit (C42) is inferential and not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "41834365-4924-4c0a-9851-08b7857229dd",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For immunolabeling of fixed cells, 33/39 anti-Homer1 nAbs were positive in COS-1 IF-ICC, while none of the ELISA-positive nAbs against IRSp53, SAPAP2, Gephyrin, or AMIGO-1 showed detectable immunoreactivity in this assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by data in Table 1 and experimental validation described in the text and Figure 1\u2014figure supplement 6. The striking difference between Homer1 and other targets is notable and discussed by the authors as surprising given their prior success with mouse mAbs against these targets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "df18d789-6cad-4dd0-bc8a-fc07f1fa3066",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For brain immunohistochemistry, 25/33 anti-Homer1 nAbs tested positive, with all brain IHC-positive nAbs also positive in COS-1 IF-ICC. The immunolabeling pattern matched that of validated anti-Homer1 mouse mAbs. Only 1 Gephyrin nAb and 4 SAPAP2 nAbs showed positive brain IHC, while IRSp53 and AMIGO-1 nAbs showed no positive brain IHC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C32-C34, C52, C60, C68, C76 are supported by data in Table 1 and Figure 4A-B showing immunolabeling patterns. The concordance between nAb and mAb labeling patterns (C34) provides strong validation. The regional distribution matches known Homer1 expression patterns cited from prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "941d4747-0468-4c9c-bec9-1c00e9c0627f",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Anti-Homer1 nAbs exhibited substantial immunolabeling in caudate putamen, cerebral cortex, and hippocampus (especially subiculum and CA1 stratum oriens/radiatum), with strong signals in olfactory bulb and weak/undetectable labeling in thalamus, globus pallidus, brainstem, and cerebellum, matching Homer1 mRNA expression patterns and prior IHC studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 are supported by imaging data in Figure 4 and citations to prior literature on Homer1 expression. The regional distribution pattern is consistent with known Homer1 localization, providing strong validation of nAb specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "b088c511-e839-4593-a7a9-133b297c48f6",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Super-resolution imaging demonstrated that directly conjugated Alexa647 nAb had significantly smaller cluster sizes compared to unlabeled nAb detected with anti-HA antibody or conventional mAb with secondary antibody, providing empirical demonstration of enhanced resolution with directly labeled nAbs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C43, C90 are supported by quantitative super-resolution imaging data in Figure 5 showing significant differences in cluster sizes (p<0.0001 by one-way ANOVA with Bonferroni post-hoc test). This provides direct experimental validation of the predicted advantage of nAbs for super-resolution microscopy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "398485d7-ee94-4d95-90ad-a53960359d41",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "For immunoblot applications, 13/39 anti-Homer1 nAbs and 2/24 anti-Gephyrin nAbs detected single bands at the characteristic molecular weights (~47 kDa for Homer1, ~80 kDa for Gephyrin) that comigrated with validated mAbs. No specific immunolabeling was detected for IRSp53, SAPAP2, or AMIGO-1 nAbs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C36-C38, C53, C61, C69, C77, C91-C92 are supported by immunoblot data in Table 1 and Figure 6. The comigration with validated mAbs and detection of bands at expected molecular weights provides strong validation of specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "ea9273c4-602b-4b61-aff5-34bc6ad746df",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study used immunization of a llama to increase representation of high-affinity binders in the nAb library, and this strategy successfully generated at least one functional intrabody for each of the five targeted brain proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by the experimental design and results summarized in Table 1. The rationale for using immunization (C40) is supported by citations to prior literature on the limitations of synthetic libraries. The success in generating intrabodies for all five targets (C41) is demonstrated by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "e3ddf325-9c5d-45c3-a719-b90f876c215a",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Among the five targets, only Homer1 yielded large pools of nAbs positive for immunolabeling in heterologous cells and brain sections. Retrospective analysis of llama antiserum showed substantial immunolabeling only for Homer1-expressing cells, suggesting a fundamental lack of immune response against epitopes preserved in fixed samples for the other targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by data in Table 1 and Supplementary file 1, and the retrospective antiserum analysis. This is an important observation about the limitations of the approach, though the authors acknowledge they do not fully understand the basis for this difference. The interpretation (C45) is reasonable but inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    },
+    {
+      "id": "59ccecd9-7188-4470-b6c8-58beacd5789e",
+      "content_id": "5a9dd7b7-218b-4f82-9e1b-babce99a957c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors conclude that the validated nAbs represent a valuable toolbox for the neuroscience community and that the pipeline can be used to develop nAbs against other neuronal targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 represent the authors' conclusions based on the overall results. These are reasonable conclusions supported by the successful generation and validation of nAbs for multiple targets and applications. However, the limitation that only Homer1 nAbs worked well for immunolabeling applications somewhat tempers the generalizability claim in C94.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:27:07.004877Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "79e4c74a-8c8a-4208-a87f-9a5c079b1ace",
+      "result_id": "74652325-d021-479e-8246-8f5177c4f87a"
+    },
+    {
+      "claim_id": "3defd6db-2b28-40bc-8316-15b2fec75e32",
+      "result_id": "74652325-d021-479e-8246-8f5177c4f87a"
+    },
+    {
+      "claim_id": "d5c27cb3-8937-48bc-a8c9-86844179d695",
+      "result_id": "74652325-d021-479e-8246-8f5177c4f87a"
+    },
+    {
+      "claim_id": "06dcdeb1-ebfd-4e55-ac06-51d789c1ae5a",
+      "result_id": "74652325-d021-479e-8246-8f5177c4f87a"
+    },
+    {
+      "claim_id": "e88b072a-352b-4584-b95a-a7202ce2a5f4",
+      "result_id": "74652325-d021-479e-8246-8f5177c4f87a"
+    },
+    {
+      "claim_id": "6a712644-76e7-48b9-ab05-fb74ec882dce",
+      "result_id": "0a9ea895-c888-458b-bf27-198474836b72"
+    },
+    {
+      "claim_id": "90901de9-3371-4dfc-8c53-63db1a709de9",
+      "result_id": "0a9ea895-c888-458b-bf27-198474836b72"
+    },
+    {
+      "claim_id": "87bbeaf1-4340-477d-95e1-1d9c662c19f8",
+      "result_id": "0a9ea895-c888-458b-bf27-198474836b72"
+    },
+    {
+      "claim_id": "c6829c7f-0cf7-4063-9f24-3b80886d1ddd",
+      "result_id": "0a9ea895-c888-458b-bf27-198474836b72"
+    },
+    {
+      "claim_id": "c529847b-5668-43c2-9f16-0b2ecbcdf8e1",
+      "result_id": "0a9ea895-c888-458b-bf27-198474836b72"
+    },
+    {
+      "claim_id": "47d145f1-ba96-4768-8e06-d2855b06d08b",
+      "result_id": "0a9ea895-c888-458b-bf27-198474836b72"
+    },
+    {
+      "claim_id": "c31e9948-f435-4c53-b8a8-9b340d4ce1f4",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "40b11b67-07eb-43aa-b0c3-8b97768f2722",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "00830459-1757-493e-a8ed-88aad4a1e165",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "442e58df-37b8-453d-b1db-f422a4444a68",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "86f8f456-2a34-493c-a4c8-a2075086441a",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "8886983f-329e-47f9-bd71-641eeef74b8c",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "d8f68b6e-d2f8-4cbc-8fd1-39e195959879",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "aaba114a-5c41-4632-a70d-22444527e9f6",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "ed71be2b-f0ab-4363-993d-c900cb54d610",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "324f29ec-e42f-4227-8238-f67c829a0f4b",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "fb33e2f7-a5b9-4690-9e46-aa8b64fbca7b",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "a3838e0f-8576-4c46-8c8d-b47ec565821c",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "ab72cfea-db35-4cae-b0fe-48b7eba08da4",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "e284397b-d979-41fb-bb10-e4dc98bf2f53",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "a350fcce-8541-411a-a789-515fe24eab73",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "db385b54-73f7-40cd-aae9-4d6ed6355214",
+      "result_id": "923c2236-bbca-4563-8b41-f4165fa1f29e"
+    },
+    {
+      "claim_id": "33edb473-8525-4f1c-9c09-77f8921f15f7",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "6224aa24-64a2-43b7-bc64-2fbde5449fe4",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "15a10d71-d395-4c12-89e3-be8472baef87",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "5739edfd-b57a-47f4-bf27-d0b3f30250df",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "c5ea3383-e734-4a8b-8ae0-91822ea6b830",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "707501ac-43ba-48ee-a741-df925b29de8e",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "c4765743-c184-48b0-9d68-c6c4d6364ddd",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "3edd8078-e2cc-4bb8-b59e-71b3f26afce9",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "2453b07f-83a2-48e4-82a0-292a30b9c548",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "aecd5d90-46b6-4b01-8387-a5d2837e1bd8",
+      "result_id": "47a4f425-c56d-435e-8fba-3b69a3a5a371"
+    },
+    {
+      "claim_id": "3bb2e726-c625-4da3-932f-53eff5ad3c79",
+      "result_id": "83e7217d-5e0c-435e-8c34-2be2d10924b0"
+    },
+    {
+      "claim_id": "060227d5-a3c5-4240-b743-3be050270dcd",
+      "result_id": "83e7217d-5e0c-435e-8c34-2be2d10924b0"
+    },
+    {
+      "claim_id": "ade97b7e-adf3-4336-aea7-0439b5135413",
+      "result_id": "c612d542-3cf2-4b39-9566-431353e68950"
+    },
+    {
+      "claim_id": "cb24012e-41bf-4def-870a-bf206950bc53",
+      "result_id": "c612d542-3cf2-4b39-9566-431353e68950"
+    },
+    {
+      "claim_id": "e5013827-e16f-4d46-aed3-f8ea34dfeff4",
+      "result_id": "c612d542-3cf2-4b39-9566-431353e68950"
+    },
+    {
+      "claim_id": "ae32fd0c-7973-4181-a2b2-ef37c901d791",
+      "result_id": "c612d542-3cf2-4b39-9566-431353e68950"
+    },
+    {
+      "claim_id": "124fecda-7e43-4ec6-836d-66ff261aec2c",
+      "result_id": "c612d542-3cf2-4b39-9566-431353e68950"
+    },
+    {
+      "claim_id": "a1b39f1d-fa1d-4165-9f4f-411cc9882b93",
+      "result_id": "832b1f63-5643-4042-95a6-faeecb655455"
+    },
+    {
+      "claim_id": "b31e0190-eaaa-42ea-b7e8-720115f9b1e2",
+      "result_id": "832b1f63-5643-4042-95a6-faeecb655455"
+    },
+    {
+      "claim_id": "398a3d88-4dd2-4e22-8993-7d9e24364c69",
+      "result_id": "d8c83b00-8986-430f-a278-58033f036766"
+    },
+    {
+      "claim_id": "39deff3d-de72-4333-a78e-95b65222aa14",
+      "result_id": "d8c83b00-8986-430f-a278-58033f036766"
+    },
+    {
+      "claim_id": "73d9a045-6156-4ec5-8f68-20d46050c279",
+      "result_id": "41834365-4924-4c0a-9851-08b7857229dd"
+    },
+    {
+      "claim_id": "b42cfa5e-618d-479c-a878-3015fd831c09",
+      "result_id": "41834365-4924-4c0a-9851-08b7857229dd"
+    },
+    {
+      "claim_id": "68fc1cb7-aada-41b7-8d28-a1ee9d5fe453",
+      "result_id": "41834365-4924-4c0a-9851-08b7857229dd"
+    },
+    {
+      "claim_id": "e5d1ae0b-e7e7-454e-b642-7ff4cf94264d",
+      "result_id": "41834365-4924-4c0a-9851-08b7857229dd"
+    },
+    {
+      "claim_id": "026abfd0-cb91-44d2-af60-298ac93f832b",
+      "result_id": "41834365-4924-4c0a-9851-08b7857229dd"
+    },
+    {
+      "claim_id": "94ad50d6-0324-4054-8655-e33cdc33281a",
+      "result_id": "41834365-4924-4c0a-9851-08b7857229dd"
+    },
+    {
+      "claim_id": "47d67ad5-a373-45d6-8e09-cf2d30e799b1",
+      "result_id": "41834365-4924-4c0a-9851-08b7857229dd"
+    },
+    {
+      "claim_id": "2770efb9-bb6c-497d-bedc-35bf5b2d3d21",
+      "result_id": "df18d789-6cad-4dd0-bc8a-fc07f1fa3066"
+    },
+    {
+      "claim_id": "65c97e37-e552-48ba-8086-f859154245d7",
+      "result_id": "df18d789-6cad-4dd0-bc8a-fc07f1fa3066"
+    },
+    {
+      "claim_id": "14beb368-6ead-4800-9394-1f6e6f029d97",
+      "result_id": "df18d789-6cad-4dd0-bc8a-fc07f1fa3066"
+    },
+    {
+      "claim_id": "44c2fca9-d191-4622-ac28-3dfc80ff57d6",
+      "result_id": "df18d789-6cad-4dd0-bc8a-fc07f1fa3066"
+    },
+    {
+      "claim_id": "22fa196c-9a15-476c-b250-f40fc0e72d7c",
+      "result_id": "df18d789-6cad-4dd0-bc8a-fc07f1fa3066"
+    },
+    {
+      "claim_id": "6aafae15-1a69-4a44-a78a-c848e3b24a4f",
+      "result_id": "df18d789-6cad-4dd0-bc8a-fc07f1fa3066"
+    },
+    {
+      "claim_id": "ff3cf186-e009-486f-83d3-d19d2b52c2c6",
+      "result_id": "df18d789-6cad-4dd0-bc8a-fc07f1fa3066"
+    },
+    {
+      "claim_id": "63272757-d81d-4579-8315-50d4fbb730a0",
+      "result_id": "df18d789-6cad-4dd0-bc8a-fc07f1fa3066"
+    },
+    {
+      "claim_id": "f734c210-bcfe-4b94-a424-064734883b80",
+      "result_id": "941d4747-0468-4c9c-bec9-1c00e9c0627f"
+    },
+    {
+      "claim_id": "e5477b67-7205-4c22-bcc6-c2b361ada12c",
+      "result_id": "941d4747-0468-4c9c-bec9-1c00e9c0627f"
+    },
+    {
+      "claim_id": "d7e2cf76-4f4f-47fd-b699-344e6986c2fd",
+      "result_id": "941d4747-0468-4c9c-bec9-1c00e9c0627f"
+    },
+    {
+      "claim_id": "2a360367-29e8-4d77-b894-992342ea80c4",
+      "result_id": "941d4747-0468-4c9c-bec9-1c00e9c0627f"
+    },
+    {
+      "claim_id": "bd7ac31a-2da0-4b92-858b-5e70f83a1adb",
+      "result_id": "b088c511-e839-4593-a7a9-133b297c48f6"
+    },
+    {
+      "claim_id": "44d2d3fa-709e-417c-b109-84b9a1eab0ed",
+      "result_id": "b088c511-e839-4593-a7a9-133b297c48f6"
+    },
+    {
+      "claim_id": "54ecbd78-75a1-4ba9-885f-9fa3c08d501a",
+      "result_id": "b088c511-e839-4593-a7a9-133b297c48f6"
+    },
+    {
+      "claim_id": "e35cc6c2-0527-4499-90b5-94fde1b33ab1",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "d2fd9630-015f-4223-99d7-efca3f2e3324",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "46c93441-ce66-40c8-9c8e-090339345f3b",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "97b9f5a5-0f71-41ab-bef5-bd09e3be9dc2",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "994b9575-2085-4797-93dc-9ce9f8c4155a",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "4167fc39-ff03-4aa2-ac5b-48551d7f0c70",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "9c60be8b-0335-49f8-aae4-9ae5ff050ccb",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "431fe745-6bd1-4428-84d3-bc30add8fafc",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "2c0db685-b9f5-419c-85f2-113e1a0ca07c",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "e1cd0dad-b181-4667-88ac-d673a699d22f",
+      "result_id": "398485d7-ee94-4d95-90ad-a53960359d41"
+    },
+    {
+      "claim_id": "db097bd7-834c-40f2-9d8c-ed8d2d23370d",
+      "result_id": "ea9273c4-602b-4b61-aff5-34bc6ad746df"
+    },
+    {
+      "claim_id": "fa5e4128-7f63-4c31-9f91-a23523e4855e",
+      "result_id": "ea9273c4-602b-4b61-aff5-34bc6ad746df"
+    },
+    {
+      "claim_id": "09619333-8520-4bb4-99be-d386c28e4a66",
+      "result_id": "e3ddf325-9c5d-45c3-a719-b90f876c215a"
+    },
+    {
+      "claim_id": "cfe8883e-13ee-40cc-aeb9-588bc81d1135",
+      "result_id": "e3ddf325-9c5d-45c3-a719-b90f876c215a"
+    },
+    {
+      "claim_id": "c490023c-cbc9-443e-b588-56b54f906c9d",
+      "result_id": "59ccecd9-7188-4470-b6c8-58beacd5789e"
+    },
+    {
+      "claim_id": "6e3ebb3e-d3ba-4810-ad3e-535030c949a3",
+      "result_id": "59ccecd9-7188-4470-b6c8-58beacd5789e"
+    }
+  ],
+  "comparisons": []
+}

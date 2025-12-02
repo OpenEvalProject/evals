@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Single-cell RNA sequencing of injured zebrafish hearts identified transcriptionally distinct cardiomyocyte populations, with border zone cardiomyocytes (cluster 7) enriched for nppa:mCitrine expression and proliferation markers, distinguishable from remote cardiomyocytes (cluster 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 provide converging evidence from histochemical analysis (C7), sequencing metrics (C8-C9), clustering analysis (C10-C11), fluorescence intensity measurements (C12), and marker gene expression (C13) that collectively support the identification of transcriptionally distinct border zone cardiomyocytes. The methodology is appropriate and the data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Border zone cardiomyocytes (cluster 7) transcriptionally resemble embryonic cardiomyocytes, with only 257 differentially expressed genes between them compared to over 1000 genes differentially expressed between embryonic and remote cardiomyocytes (cluster 2), suggesting dedifferentiation along a gradient from remote to border zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 present a coherent analysis using differential gene expression (C15-C16), hierarchical clustering (C17), specific gene re-expression (C18), StemID entropy analysis (C19), and integration of multiple lines of evidence (C20). The statistical thresholds (p<0.01) and analytical approaches are appropriate for single-cell RNA-seq data, supporting the dedifferentiation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Border zone cardiomyocytes undergo metabolic reprogramming from mitochondrial OXPHOS to glycolysis and lactate fermentation, evidenced by reduced SDH activity, immature mitochondrial morphology, upregulation of glycolytic genes, enhanced glucose uptake, and increased lactate transporter expression, with glycolysis induction preceding embryonic gene expression and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 provide multi-modal validation of metabolic reprogramming through enzyme activity assays (C21), electron microscopy (C22), gene set enrichment analysis (C23), in situ hybridization (C24), glucose uptake measurements (C25), and temporal analysis (C28). The integration of functional, morphological, and transcriptional data strongly supports the metabolic switch conclusion (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Pharmacological inhibition of glycolysis with 2-DG significantly impairs cardiomyocyte proliferation in the border zone of injured zebrafish hearts, demonstrating that glycolysis is necessary for cell cycle reentry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 provide experimental evidence through 2-DG treatment showing significant impairment of proliferation (Figure 5b,c). However, the causal inference (C30) relies on a single pharmacological inhibitor, which could have off-target effects. Additional genetic or alternative pharmacological validation would strengthen the necessity claim, but the data presented are consistent with the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "HIF signaling is not required for glycolysis gene expression induction in border zone cardiomyocytes, based on lack of correlation between phd3:GFP reporter activity and ldha expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C32 rely on negative correlation data from a single reporter line. The absence of correlation does not definitively exclude HIF involvement, as the phd3:GFP reporter may not capture all aspects of HIF signaling, temporal dynamics may differ, or HIF-independent mechanisms may predominate. Genetic loss-of-function experiments would be needed to conclusively demonstrate that HIF signaling is not required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Nrg1/ErbB2 signaling induces glycolytic gene expression in cardiomyocytes both in the presence and absence of injury, and endogenous Nrg1/ErbB2 signaling mediates metabolic rewiring during zebrafish heart regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide gain-of-function evidence (Nrg1 overexpression, C33-C34) and loss-of-function evidence (AG1478 inhibition, C35) supporting Nrg1/ErbB2 as an upstream regulator of glycolysis. The exception of hk1 not being reduced by AG1478 (C35) suggests pathway redundancy but does not undermine the overall conclusion. The integration of genetic and pharmacological approaches supports the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In murine hearts, constitutively active ErbB2 overexpression upregulates glycolytic genes and glucose/lactate transporters while downregulating mitochondrial genes, with increased PDH phosphorylation and stronger metabolic reprogramming in MI conditions correlating with enhanced cardiomyocyte proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 demonstrate conservation of the metabolic reprogramming mechanism in mice through qPCR (C38-C39), immunohistochemistry (C40), and MI experiments (C41). The correlation with enhanced proliferation (C42) is supported by citation to prior work (D'Uva et al., 2015), though the causal relationship between metabolic changes and proliferation requires functional validation addressed in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In murine caErbB2 overexpressing cardiomyocytes, glycolysis inhibitors (2-DG and lonidamine) significantly impair both cell cycle reentry and cytokinesis, demonstrating that ErbB2-driven metabolic switch to glycolysis is required for cardiomyocyte proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide functional validation in the murine system using two independent glycolysis inhibitors affecting both cell cycle entry (C43) and cytokinesis (C44). The use of multiple inhibitors and multiple proliferation readouts strengthens the conclusion (C45) that glycolysis is required for ErbB2-induced proliferation. The in vitro system allows controlled testing but may not fully recapitulate in vivo conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Zebrafish heart regeneration involves proliferation of preexisting cardiomyocytes that dedifferentiate, with border zone cardiomyocytes reentering the cell cycle starting at 3 dpi and peaking at 7 dpi, expressing embryonic cardiac transcription factors and showing sarcomere disorganization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 establish the biological context through citations to established literature. These are well-accepted findings in the field that provide the foundation for the current study. The claims are appropriately supported by multiple independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The metabolic switch in cardiomyocytes is beneficial for heart regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 is explicitly stated as speculation ('suggest') and represents an inference beyond the direct experimental evidence. While the correlation between metabolic reprogramming and proliferation is demonstrated, direct evidence that the metabolic switch improves regenerative outcomes (e.g., functional recovery, scar reduction) is not provided. This remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Background context on mammalian heart regeneration capacity, metabolic changes during development, and the role of glycolysis in proliferating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C60 provide established background knowledge supported by appropriate citations. These claims contextualize the study within existing literature on cardiac regeneration, metabolic regulation, and cell proliferation. They are not novel findings but appropriately cited prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The current study demonstrates that Nrg1/ErbB2 signaling induces profound metabolic reprogramming in cardiomyocytes, which is required for efficient cardiomyocyte proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 synthesize the major findings of the study, building on prior work (C61, cited) with new mechanistic insights (C62). The conclusion is supported by the experimental evidence from both zebrafish and mouse models presented in the manuscript, integrating multiple lines of evidence from transcriptomics, functional assays, and pharmacological/genetic manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Cellular reprogramming to embryo-like states during regeneration represents a common strategy in tissues lacking clear stem cell populations, with zebrafish heart regeneration showing similarities to limb regeneration and murine Yap-induced proliferation, though involving different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 place the findings in broader context of regeneration biology through comparison with other systems. The claims appropriately cite supporting literature (C63-C64, C66-C67) and make reasonable inferences about common regenerative strategies (C65). The acknowledgment of mechanistic differences (C66) demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

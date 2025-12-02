@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Ag+ reversibly blocks TRPV1 channels in a voltage-dependent and state-dependent manner, binding within the pore with higher affinity in closed states, suggesting the selectivity filter undergoes conformational changes during activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 collectively demonstrate that Ag+ blocks TRPV1 by binding within the pore (C17-C18), with voltage-dependent affinity (C16-C17) and state-dependent affinity that increases >10-fold at lower open probability (C19-C20). The experimental data from multiple figures support these observations, and the inference that the filter undergoes conformational changes (C20) is well-justified by the state-dependent affinity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C33"
+    ],
+    "result": "External Ag+ has similar accessibility to I679C in both open and closed states of TRPV1 channels, with modification rates differing by <3-fold despite >100-fold changes in Po, demonstrating that the selectivity filter does not function as an activation gate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 and C33 provide strong experimental evidence that Ag+ modification rates at I679C are similar in open and closed states (<3-fold difference, C28) despite >100-fold changes in Po (C27). The control experiments (C22-C25) establish the validity of the approach, and the conclusion that the filter is not an activation gate (C29, C33) is well-supported by the data showing state-independent accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The rate of Ag+ modification at I679C is near the diffusion limit and shows concentration-dependent changes in both open and closed states, confirming that modification rates accurately report on Ag+ accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 demonstrate that modification rates are limited by accessibility rather than reaction kinetics. The rate in the open state (3.27\u00b10.57\u00d710^7 M^-1s^-1, C30) is near the diffusion limit and comparable to other channels. The concentration-dependent changes in both states (C31-C32) with constant state-dependent ratios validate that the measurements accurately reflect accessibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Negative membrane potentials strongly enhance Ag+ modification rates at I679C in both open and closed states, indicating that Ag+ permeates through a large fraction of the transmembrane electric field to reach this site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 show voltage-dependent modification in both states (C34, Figure 3F) and interpret this as evidence for Ag+ permeation through the electric field (C35). The interpretation is supported by citations to established theoretical frameworks and is consistent with the pore-blocking mechanism established in earlier claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Ag+ accessibility experiments with alternative cysteine positions (C157A+I679C and Cys-less \u0394turret+I642C) confirm that modification rates show minimal state-dependence (<10-fold) despite >100-fold changes in Po, with no consistent correlation between modification rates and Po changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 extend the main finding to different constructs and cysteine positions. Both C157A+I679C (C36) and I642C (C37) show <10-fold state-dependence despite >100-fold Po changes. The lack of voltage-dependence at I642C (C38) and absence of correlation between modification rates and Po (C39) further support the conclusion that the filter is not an activation gate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In TRPV2-QM+I642C channels, rundown-corrected Ag+ modification rates in open and closed states differ by <3-fold despite >100-fold changes in Po, indicating that the selectivity filter is not an activation gate in TRPV2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 demonstrate that the findings extend to TRPV2. Despite pronounced rundown (C45), rundown-corrected modification rates differ by <3-fold (C47) while Po changes >100-fold (C48), leading to the conclusion that the filter is not an activation gate in TRPV2 (C49). The rundown correction methodology is appropriate and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In TRPV3 channels with I674C or I637C mutations, Ag+ modification rates show minimal state-dependence that is smaller than Po changes, with evidence that Na+ ions in the pore contribute to the observed state-dependence, confirming that the selectivity filter is not an activation gate in TRPV3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 extend the findings to TRPV3. Despite complications from baseline activity (C52-C53) and interactions with Na+ (C56-C57), modification rates show state-dependence smaller than Po changes (C54) at both I674C and I637C positions (C58), supporting the conclusion that the filter is not an activation gate (C55, C59). The Na+ interaction experiments (C56-C57) provide mechanistic insight into the small observed state-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "MTSEA+ can access I679C in both open and closed states of TRPV1 channels, with modification ~20-fold faster in the open state, but this state-dependence is smaller than the >50-fold change in Po, suggesting the filter does not fully gate access to MTSEA+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 demonstrate that the larger organic cation MTSEA+ can access I679C in both states (C62-C63), with ~20-fold faster modification in the open state (C64). The comparison to >50-fold Po change (C65) supports the conclusion that the filter does not fully gate access (C66). The pH experiments (C67) and modeling confirm that MTSEA+ is the active species (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MTSET shows slow accessibility in the open state and undetectable accessibility in the closed state, with state-dependence larger than Po changes, indicating that state-dependence of accessibility increases with cation size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 show that the larger MTSET molecule exhibits greater state-dependence than smaller cations. The ratio of modification time constants exceeds the Po change (C70), and the conclusion that state-dependence increases with cation size (C71) is well-supported by the progressive trend from Ag+ to MTSEA+ to MTSET.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "TRPV1, TRPV2, and TRPV3 channels are gated by the S6 helices on the cytosolic side of the pore, and this gating mechanism likely extends to all TRP channel family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 draw broad conclusions from the experimental findings. The inference that S6 helices gate TRPV1-3 (C72) is strongly supported by the experimental data showing the filter is not an activation gate. The extension to all TRP channels (C73) is supported by structural data across subfamilies showing conserved cytosolic constrictions, though this is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The selectivity filter of TRPV1 is a dynamic structure in equilibrium between distinct conformations, with channel activation favoring conformations that enable more rapid permeation of large cations, but permeability does not continue to increase after activation reaches equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 propose a model for filter dynamics. The evidence from structural studies (C76-C77), single-channel recordings (C78, C81-C82), and the current study's data on size-dependent state-dependence support the dynamic equilibrium model (C79). The rejection of progressive pore dilation (C80) is supported by the lack of slow current increases and stable single-channel amplitudes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "The selectivity filter functions as an actuator that, after adopting its active conformation, stabilizes the cytosolic gate in an open conformation, providing a mechanism for coupling between external pore stimuli and cytosolic gate opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 and C87 propose a mechanistic model for filter-gate coupling. While this model is consistent with the experimental data and structural observations, it remains speculative (C84 is labeled as SPECULATION). The principle of microscopic reversibility (C87) provides theoretical support, but direct experimental evidence for this actuator function is not provided in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background information on TRP channels establishes their biological importance, structural organization, and the prior hypothesis that TRPV1 contains two gates (selectivity filter and S6 helices).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide established background knowledge about TRP channels and TRPV1, supported by citations to prior literature. These claims establish the context for the study and the hypothesis being tested. The information is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Multiple stimuli target the external pore of TRPV1, while no such modulators are known for TRPV2 and TRPV3; structural studies show the TRPV2 filter adopts non-conducting conformations while the TRPV3 filter is more accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide background on differences between TRPV1, TRPV2, and TRPV3 based on prior literature. These claims establish the rationale for extending the accessibility studies to TRPV2 and TRPV3. The information is supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Prior hypotheses about pore dilation in TRPV1 and TRPV2 channels, and similar observations in P2X receptors, provide context for interpreting the current findings on large cation permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C81-C83 summarize prior literature on pore dilation and large cation permeability. These claims provide context for the current study's findings on MTSEA and MTSET accessibility. The citations support the statements about prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Prior studies and molecular dynamics simulations suggest mechanisms for cytosolic gate function and potential coupling between the selectivity filter and S6 gate, with possible roles in temperature sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 and C88-C91 cite prior work on gate mechanisms and filter-gate coupling. These claims provide context for interpreting the current findings and suggest future directions. The speculative nature of C91 is appropriately qualified. The citations support the statements about prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Diverse stimuli including H+, cations, toxins, and possibly heat target the external pore of TRPV1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 summarizes prior literature on TRPV1 activators that target the external pore. This is well-supported by multiple citations and provides context for the proposed actuator model.",
+    "result_type": "MINOR"
+  }
+]

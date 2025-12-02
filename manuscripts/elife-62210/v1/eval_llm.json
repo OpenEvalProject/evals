@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors generated a comprehensive proteomic database of mouse HSCs and progenitors, detecting 7917 proteins across all cell types with HSCs showing the lowest protein diversity (4030 proteins) despite similar mRNA diversity across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C96-C100 collectively establish the proteomic coverage and experimental design. The data show robust technical replication (6 replicates for young adult cells, 4 for old MPPs) with diminishing returns on additional replicates (C100), supporting data quality. The finding that HSCs have lower protein diversity than progenitors (C9-C10) contrasts with transcriptomic reports (C11), establishing a key observation. The methodological details (C96-C99) demonstrate appropriate experimental design with sufficient biological and technical replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "PCA analysis and marker protein validation demonstrate that the proteomic data accurately distinguishes HSCs from progenitor populations and validates sample purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 show that PCA successfully separates cell types along biologically meaningful axes. Claims C14-C20 validate detection of known cell-type-specific markers (cKit, CD150, Ly6d, Ki67, Flt3, CD16/32, IL7Ra) consistent with established expression patterns. The inability to detect Sca1 (C21) is consistent with previous studies, adding credibility. Together, these claims provide strong validation of sample purity and data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "HSCs show significantly reduced abundance of cell cycle and DNA damage repair proteins compared to progenitors, consistent with their quiescent state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 presents gene set enrichment analysis showing reduced cell cycle and DNA repair proteins in HSCs, supported by citations to functional studies. Claim C23 provides context that 80-90% of HSCs are quiescent, explaining the observation. Claim C24 provides a specific example (Rad51 absent in HSCs but present in other cell types). The data are internally consistent and align with established HSC biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Validation experiments using flow cytometry and fluorescence microscopy confirm differential protein expression patterns detected by mass spectrometry for Esam and Pfkl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 show that Esam expression detected by MS is recapitulated by flow cytometry, providing orthogonal validation. Claim C27 validates Pfkl differential expression by fluorescence microscopy. These independent validation experiments strengthen confidence in the MS data quality and demonstrate that the proteomic findings reflect true biological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Dnmt3a protein is absent in quiescent HSCs but accumulates when HSCs enter cell cycle, suggesting cell cycle-dependent regulation of this key epigenetic regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 establish that Dnmt3a is undetected in HSCs by MS and microscopy. Claims C30-C32 provide biological context about Dnmt3a's role in HSC differentiation and disease. Claim C33 shows cultured HSCs have increased Ki67 and Dnmt3a, directly linking cell cycle entry to Dnmt3a expression. Claim C34 synthesizes these findings into a coherent model. The data are internally consistent and well-validated by multiple methods. Claim C35 is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The absence of Igf1r and CD81 in young adult HSCs is consistent with previous literature reports on these proliferation-associated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 show that the current MS data align with previous single-cell studies on Igf1r and CD81 expression patterns. This provides additional validation of the dataset quality and demonstrates consistency with established literature. The findings support the quiescent nature of bone marrow-resident HSCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Analysis of cell-type-specific protein expression reveals 619 proteins absent in HSCs but present in all other cell types, and identifies lineage-specific proteins such as GMP-specific markers and HSC-specific Igf2bp2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 characterize unique and shared protein expression patterns across cell types. The identification of 619 proteins absent in HSCs (C39) is a key finding. The detection of known GMP-specific proteins (C40) and HSC-specific Igf2bp2 (C41) validates the biological relevance of the unique protein lists. The data are consistent with known lineage markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Comparison with a previous proteomic study shows 70.43% overlap in detected proteins and consistent differential expression patterns for 37 of 49 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 demonstrate substantial overlap and consistency with the Cabezas-Wallscheid et al. dataset. The 70% overlap is reasonable given different methodologies, and the consistency in differential expression for 75% of overlapping proteins (37/49) provides strong validation. The authors appropriately acknowledge potential sources of discrepancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Old HSCs show 35% increased protein diversity compared to young HSCs and lose their distinctness along PC1 while occupying a unique position along PC2, with increased cKit and CD150 levels consistent with myeloid bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 establish the key finding that old HSCs have increased protein diversity and altered proteomic signatures. Claims C47-C49 show increased cKit and CD150 variation in old HSCs, consistent with myeloid bias (C48 cites previous work). Claims C50-C51 show Ki67 is still lower in old HSCs than progenitors but higher than young HSCs. The data are internally consistent and align with known aging phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Old HSCs show increased levels of proteins associated with myeloid bias including vWF and Itgb3 (CD61), consistent with age-related changes in HSC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 show increased vWF in old HSCs, supported by citations linking vWF to myeloid/platelet bias. Claims C54-C56 examine integrin proteins, finding increased Itgb3 in old HSCs consistent with previous studies (C56), though no significant change in Itga2b (C55). The findings align with established aging phenotypes and are supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Old HSCs maintain lower levels of cell cycle and DNA repair proteins compared to progenitors, but show enrichment of these proteins compared to young HSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 show that old HSCs occupy an intermediate position between young HSCs and progenitors for cell cycle/DNA repair proteins. The gene set enrichment analysis supports both comparisons. This finding suggests age-related changes in HSC quiescence and DNA repair capacity, consistent with aging biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "HSCs show the lowest correlation between mRNA and protein levels (\u03c1=0.300) among all cell types, with the largest differences in protein/mRNA fold changes when comparing HSCs to MPPs, supporting unique post-transcriptional regulation in HSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 present correlation analyses showing HSCs have lower mRNA-protein correlation than progenitors and the largest fold-change differences. Claim C61 validates this against human data. Claim C63 interprets these findings as evidence for post-transcriptional regulation, supported by citations. The statistical analyses are appropriate and the interpretation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Proteins undetected in HSCs despite mRNA presence are enriched beyond random chance, suggesting biological rather than technical reasons for reduced protein diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 use statistical analysis comparing observed to expected distributions to demonstrate non-random enrichment of undetected proteins in HSCs. The use of a null distribution (described in methods) provides appropriate statistical rigor. This finding strengthens the argument for biological regulation of protein diversity in HSCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Specific genes including Dnmt3a and Adnp show mRNA-protein decoupling uniquely in HSCs, while the housekeeping protein Hprt1 shows consistent mRNA and protein levels across all cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 identify specific examples of mRNA-protein decoupling in HSCs for biologically relevant genes. Claim C68 provides an important control showing that the housekeeping gene Hprt1 maintains consistent mRNA-protein correlation, demonstrating that the decoupling is gene-specific rather than a global technical artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "HSCs show reduced translation rates, lower ribosomal protein abundance, and decreased total RNA content (~1 pg/cell) compared to progenitors, supporting translational regulation as a mechanism for reduced protein diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 present converging evidence from literature (C69), gene set enrichment (C70), experimental RNA quantification (C71-C72), and MS data (C73) all supporting reduced translational capacity in HSCs. Claim C74 synthesizes these findings into a coherent model. The multiple lines of evidence and appropriate normalization (by cell size, C72) strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "miRNA target analysis reveals that 881 genes uniquely undetected as proteins in HSCs are enriched for miRNA targets beyond random chance, including targets of known HSC-relevant miRNAs such as Mir29a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 establish that miRNA targets are enriched among undetected HSC proteins using appropriate statistical analysis. Claims C78-C81 identify specific miRNAs including Mir29a (known to regulate Dnmt3a and HSC self-renewal) and Mir551 (associated with human HSCs and AML). The analysis is rigorous and identifies biologically relevant miRNAs, though the mechanism remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "88% of proteins uniquely undetected in young HSCs are detected in old HSCs, coinciding with increased ribosomal protein detection and enrichment of epigenetic regulation proteins, suggesting altered regulatory mechanisms in aged HSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 present data showing that old HSCs recover much of the protein diversity absent in young HSCs, with increased ribosomal proteins and epigenetic regulators. Claim C85 proposes a model of altered regulation in aging, though acknowledging this is not well-studied. The data support the conclusion but the mechanistic model (C85) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors propose that HSCs shift primary regulatory mechanisms downstream of transcription toward translation, based on open chromatin, reduced translation rates, and low mRNA-protein correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 cite literature on chromatin accessibility and translation in HSCs. Claim C88 proposes a model of post-transcriptional regulation as the primary mechanism. Claim C89 cites supporting human data. While the model is consistent with the data presented, it remains a hypothesis. The claim of 'primary' regulatory shift (C88) is not definitively proven - chromatin accessibility and transcriptional regulation could still play major roles. The model is reasonable but requires additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Analysis of ubiquitination-associated proteins suggests proteasomal degradation is not a major contributor to reduced protein levels in young HSCs, though lysosomal degradation remains unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 cite literature on protein misfolding and proteasomal stress in HSCs. Claim C92 shows reduced monoubiquitination proteins in HSCs. Claim C93 infers that proteasomal degradation is not a major factor, appropriately noting this is specific to young HSCs. Claim C94 acknowledges the limitation that lysosomal degradation was not examined. The inference is reasonable but the conclusion is limited by the indirect nature of the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establishing HSC biology, the importance of proteomics, and the discordance between mRNA and protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish basic HSC biology and clinical relevance, supported by appropriate citations. Claims C5-C7 establish the rationale for proteomic studies by citing literature on mRNA-protein discordance and HSC-specific translational regulation. These are well-established background claims that appropriately frame the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The study utilizes state-of-the-art mass spectrometry technology capable of analyzing low cell numbers (~7000 cells per replicate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 cites the Mann laboratory's development of sensitive MS technology. This is a methodological claim supported by appropriate citation and is consistent with the experimental design described in the methods.",
+    "result_type": "MINOR"
+  }
+]

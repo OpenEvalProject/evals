@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Elg1 deletion dramatically reduces RTS1-induced recombination without weakening the RTS1 barrier. In elg1\u0394 mutants, gene conversions decrease ~20-fold and deletions ~4-fold compared to wild-type, while 2DGE analysis shows similar levels of blocked replication forks in both strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C51-C53 provide converging evidence that Elg1 promotes RTS1-induced recombination. The dramatic reduction in recombination frequencies (C51) is supported by quantitative data in Figure 1D, and the 2DGE control (C52-C53) rules out barrier weakening as an explanation. The experimental design appropriately controls for alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Elg1 promotes template switching downstream of RTS1. At the 12.4 kb site, elg1\u0394 reduces gene conversions and deletions ~5-6 fold. When ori-1253 is deleted to provide more time for template switching, wild-type shows ~21-fold increase in gene conversions versus only ~6-fold in elg1\u0394, suggesting Elg1 affects template switching kinetics and/or RDR efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 demonstrate that Elg1 promotes template switching using the 12.4 kb reporter system. The ori-1253 deletion experiment (C66-C67) provides strong evidence by manipulating the time available for template switching. The differential response between wild-type and elg1\u0394 (Figure 1E,F) supports the conclusion about kinetics, though alternative interpretations are acknowledged (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "PCNA removal from DNA at the end of S-phase is delayed in elg1\u0394 mutants. Time-lapse microscopy shows that while S-phase initiation is normal, elg1\u0394 cells exhibit persistent PCNA foci (pattern c*) 30-40 min after S-phase start, with large patches of bright fluorescence lasting up to 40 min before transitioning to pattern d.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 describe detailed CFP-PCNA dynamics through the cell cycle using time-lapse microscopy (Figure 2). The emergence of pattern c* specifically in elg1\u0394 (C86-C87) and persistence of PCNA foci (C89) provide direct visual evidence for deficient PCNA unloading. The temporal resolution (5 min intervals) and staging relative to anaphase strengthen the conclusions. Sample sizes (n=52 wild-type, n=85 elg1\u0394) appear adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The pcn1-D150E mutation, which renders PCNA prone to disassembly, fully suppresses elg1\u0394 hypo-recombination. While elg1\u0394 in a pcn1+ background reduces gene conversions ~9-fold and deletions ~3-fold at RTS1-AO, deleting elg1 in a pcn1-D150E background causes no reduction in recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C97-C99 provide genetic evidence that Elg1 promotes recombination through PCNA unloading. The pcn1-D150E suppression experiment (Figure 3B) is a strong epistasis test. However, C92-C93 note that the pcn1+ strain with the natMX4 marker shows 2-3-fold increased spontaneous recombination, suggesting potential marker effects that could complicate interpretation. Despite this caveat, the complete suppression by pcn1-D150E strongly supports the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Srs2 is partly responsible for reduced recombination in elg1\u0394 mutants. While srs2\u0394 single mutants show greatly increased RTS1-induced recombination, the srs2\u0394 elg1\u0394 double mutant shows ~13-fold reduction in gene conversions and ~4-fold reduction in deletions. The partial suppression of gene conversions (13-fold vs 20-fold) suggests Srs2 contributes to but does not fully explain the elg1\u0394 phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 use genetic epistasis to assess Srs2's role. The data in Figure 4 show that much of the srs2\u0394 hyper-recombination is suppressed by elg1\u0394, indicating Elg1's function is largely independent of Srs2 (C110). The differential effect on gene conversions versus deletions (C107-C108) adds nuance. The viability and drug sensitivity controls (C113-C116) rule out general fitness defects as confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Fbh1 is responsible for most of the reduction in RTS1-induced recombination in elg1\u0394 mutants. The fbh1\u0394 elg1\u0394 double mutant shows only slight reduction compared to fbh1\u0394 single mutant, with deletions unchanged and gene conversions decreasing only ~1.8-fold. This contrasts with the ~20-fold reduction in gene conversions seen in elg1\u0394 alone, suggesting Fbh1 accounts for most of the elg1\u0394 phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 provide strong genetic evidence that Fbh1 is the primary anti-recombinogenic factor regulated by Elg1. The near-complete suppression by fbh1\u0394 (Figure 4) is more dramatic than srs2\u0394 suppression. The comparison with Fbh1 overexpression data (C129-C131) strengthens the interpretation. However, C133-C134 note that no direct Fbh1-PCNA interaction was detected by co-IP, leaving the mechanism uncertain. The speculation about Pfh1 as an intermediary (C137) is reasonable but untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Rad51 and Rad52 recruitment/retention to RTS1 is reduced in elg1\u0394 mutants. While overall percentages of cells with Rad51/Rad52 foci are similar between wild-type and elg1\u0394, the percentage of foci co-localizing with RTS1 drops from ~44% to ~10% for Rad51 and from ~55% to ~28% for Rad52 in elg1\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 use fluorescence microscopy with lacO/LacI marking of RTS1 (Figure 5) to directly visualize recombination protein localization. The dramatic reduction in co-localization (C142-C143) while maintaining overall foci levels (C139) suggests specific defects at RTS1 rather than global effects. The data support enhanced Fbh1/Srs2 activity (C145). Sample size (~100 cells per experiment, 4 replicates) and statistical analysis (unpaired t-test) are appropriate. The unexpected Rad52 reduction (C146) is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C163"
+    ],
+    "result": "Elg1 promotes both Rad51-dependent and Rad51-independent recombination at RTS1. Using a 5 kb spacer to enhance inter-fork strand annealing, elg1\u0394 reduces deletions ~12-fold (versus ~4-fold without spacer). In rad51\u0394 background, deletions remain unchanged while gene conversions drop ~12-fold. Importantly, rad51\u0394 elg1\u0394 double mutant shows ~2-fold reduction in deletions and ~30-fold reduction in gene conversions compared to rad51\u0394 alone, indicating Elg1 promotes Rad52-mediated IFSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C163 use the 5 kb spacer system (Figure 6) to separate Rad51-dependent and -independent pathways. The differential effects on deletions versus gene conversions across genotypes provide clear evidence for dual roles of Elg1. The rad51\u0394 elg1\u0394 epistasis (C159-C160) is particularly informative. The logic connecting Rad51-independent recombination to Rad52-mediated IFSA (C162-C163) relies on prior work (citations provided). The experimental design is sound, though C164 acknowledges residual Rad52 activity as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C99",
+      "C165",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "PCNA unloading by Elg1 promotes recombination at collapsed replication forks by limiting Fbh1 and Srs2 activity. The model proposes that Elg1 unloads PCNA from blocked forks, thereby limiting the activities of Fbh1 and Srs2, which are promoted directly or indirectly by PCNA. In the absence of Elg1, retained PCNA leads to excessive anti-recombinogenic helicase activity and reduced recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C9, C99, C165, C169-C171 synthesize the major findings into a mechanistic model (Figure 7). The model is well-supported by: (1) pcn1-D150E suppression showing PCNA unloading is key (C99), (2) fbh1\u0394 and srs2\u0394 partial suppression showing these helicases mediate the effect (C6-C7), (3) reduced Rad51/Rad52 at RTS1 in elg1\u0394 consistent with enhanced helicase activity (C144-C145). However, the model leaves open whether PCNA directly or indirectly promotes Fbh1/Srs2 (C169), as no direct interaction was detected (C134). The speculation about Pfh1 as intermediary (C137) is reasonable but untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "2DGE analysis shows similar levels of large Y-shaped and double Y-shaped DNA molecules at RTS1-AO in wild-type and elg1\u0394, suggesting no apparent deficiency in RDR. However, the authors acknowledge that 2DGE does not provide definitive measures of replication restart efficiency because accumulation depends on both frequency and half-life of intermediates, and cannot exclude the possibility that Elg1 promotes RDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C77 present 2DGE data (Figure 1\u2014figure supplement 1B,C) but extensively discuss its limitations. While the data show similar replication intermediate patterns (C69), the authors provide detailed reasoning (C73-C76) for why this doesn't rule out RDR deficiency. The acknowledgment of alternative interpretations (C77) is scientifically appropriate but leaves the question of whether Elg1 affects RDR efficiency versus template switching unresolved. The claims about 2DGE limitations (C73-C75) are logical but speculative. Additional assays would be needed to definitively assess RDR efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C57",
+      "C58"
+    ],
+    "result": "Elg1 has both anti-recombinogenic and pro-recombinogenic functions. Spontaneous recombination is slightly elevated in elg1\u0394 mutants with RTS1-IO (suggesting anti-recombinogenic function), though this is not observed in all genetic backgrounds. The pro-recombinogenic function is specifically required for RFB-induced recombination, which may explain reduced MMS/phleomycin-induced recombination in budding yeast elg1\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C54, C57-C58 describe dual functions of Elg1. The modest increase in spontaneous recombination (C48, Figure 1C) is consistent with budding yeast data (C54), though the inconsistency across backgrounds (C50, Figure 3A) weakens this conclusion. The pro-recombinogenic function at RFBs (C57) is well-supported by the main results. The connection to budding yeast MMS/phleomycin data (C58) is reasonable inference but relies on cross-species comparison. The dual function concept is supported but the anti-recombinogenic role is less robust than the pro-recombinogenic role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The pcn1-D150E mutant is viable with similar growth to wild-type but exhibits 2-3-fold higher spontaneous recombination than pcn1+, suggesting proper PCNA retention is important for suppressing spontaneous recombination. The linked natMX4 marker may affect pcn1 expression. Deletion of elg1 has no effect on spontaneous recombination in either pcn1+ or pcn1-D150E backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 characterize the pcn1-D150E strain used for suppression experiments. The viability and growth data (C91) establish the strain is functional. The elevated spontaneous recombination in both pcn1+ and pcn1-D150E strains with natMX4 (C92, C94) is concerning and appropriately noted (C93). The lack of elg1\u0394 effect on spontaneous recombination in these backgrounds (C96) contrasts with C48 and highlights genetic background effects. These observations are important controls but the marker effect complicates interpretation of the suppression experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Fission yeast srs2\u0394 elg1\u0394 and fbh1\u0394 elg1\u0394 double mutants are viable with distinct drug sensitivity profiles. The srs2\u0394 elg1\u0394 double mutant shows synergistic MMS sensitivity but no growth defect and CPT sensitivity similar to srs2\u0394 alone. The fbh1\u0394 elg1\u0394 double mutant shows synergistic sensitivity to both MMS and CPT but no exacerbated growth defect beyond fbh1\u0394 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116, C122-C124 provide important controls showing that the recombination phenotypes are not due to general fitness defects. The spot assays (Figure 4\u2014figure supplement 1) are appropriate for assessing viability and drug sensitivity. The contrast with budding yeast srs2\u0394 elg1\u0394 (C111) is noted. These data rule out trivial explanations for the genetic interactions but are primarily negative controls supporting the main conclusions rather than novel findings themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C136",
+      "C137"
+    ],
+    "result": "Fbh1 activity at RTS1 is presumably dependent on PCNA, but no direct interaction between Fbh1 and PCNA was detected by co-immunoprecipitation. Pfh1 helicase interacts with both PCNA and Fbh1, suggesting Fbh1 recruitment/retention might be mediated by Pfh1, which depends on PCNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C134 report a negative result (no Fbh1-PCNA co-IP), while C136-C137 propose an alternative model involving Pfh1 as intermediary. The negative co-IP result (C134) is stated but no data are shown. The Pfh1 model (C137) is reasonable speculation based on known interactions (C136, citation provided) but is entirely untested. This represents a significant gap in understanding the mechanism by which PCNA retention promotes Fbh1 activity. The speculation is logical but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Rad52 foci co-localizing with RTS1 are reduced in elg1\u0394 mutants, which was unexpected since Fbh1 overexpression affects Rad51 but not Rad52 foci. This reduction might be due to increased Srs2 activity, as budding yeast Srs2 can dislodge Rad52 from ssDNA in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C149 address an unexpected observation about Rad52 foci. The reduction in Rad52 co-localization (C143) is well-documented, but the explanation is speculative. The contrast with Fbh1 overexpression (C147) suggests a different mechanism. The Srs2 hypothesis (C148) is reasonable given in vitro data from budding yeast (C149), but this is cross-species extrapolation without direct evidence in fission yeast. The observation is solid but the mechanistic explanation remains uncertain.",
+    "result_type": "MINOR"
+  }
+]

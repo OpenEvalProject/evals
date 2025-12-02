@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Octopaminergic neurons projecting to the ovary (dsx+ Tdc2+ neurons) are essential for mating-induced GSC increase. The neuronal activity of these neurons is required, as demonstrated by RNAi knockdown of octopamine biosynthesis genes (Tdc2, T\u03b2H), optogenetic activation (TrpA1), and neuronal silencing (TNT) experiments. These neurons are activated after mating as shown by TRIC calcium reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches converge on the same conclusion: RNAi knockdown impairs GSC increase (C98), OA feeding rescues the phenotype (C99), optogenetic activation is sufficient to induce GSC increase (C104-C105), neuronal silencing blocks the response (C108), and TRIC assays show mating-induced activation (C110-C112). The use of intersectional genetics (dsx-FLP) provides cell-type specificity (C102-C103). The requirement for Oamb in TrpA1-mediated effects (C106-C107) establishes functional connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C21",
+      "C22",
+      "C23",
+      "C40",
+      "C42"
+    ],
+    "result": "The octopamine receptor Oamb in escort cells is required for mating-induced GSC increase. RNAi knockdown with c587-GAL4 impairs the response, confirmed with two independent RNAi lines and CRISPR/Cas9 mutants. Other octopamine receptors (Oct\u03b21R, Oct\u03b22R, Oct\u03b23R) are not required. Rescue experiments restore the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is well-supported by multiple lines of evidence: two independent RNAi lines (C13), specificity controls showing other OA receptors are not involved (C14), genetic null mutants (C21), and rescue experiments (C22). The ex vivo experiments showing OA treatment fails to increase GSCs in Oamb RNAi ovaries (C40, C42) provide additional functional validation. The use of multiple GAL4 drivers to map Oamb function to escort cells strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Oamb signaling induces intracellular Ca2+ flux in escort cells, which is necessary and sufficient for GSC increase. OA treatment evokes GCaMP6s fluorescence in escort cells in an Oamb-dependent manner. Optogenetic activation of Ca2+ flux (CsChrimson) is sufficient to induce GSC increase and increase pMad levels. Manipulation of Insp3R, which releases Ca2+ from ER, affects GSC numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium signaling mechanism is demonstrated through multiple complementary approaches: direct calcium imaging with GCaMP6s shows OA-induced Ca2+ elevation (C45-C47), optogenetic Ca2+ channel activation is sufficient (C49-C51), and genetic manipulation of Insp3R shows necessity (C53) and sufficiency (C54). The ex vivo experiments (C55) and the observation that forced Ca2+ flux increases pMad (C51) link Ca2+ signaling to downstream BMP pathway activation. The convergence of loss-of-function, gain-of-function, and direct imaging provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C73",
+      "C74",
+      "C75",
+      "C79",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Matrix metalloproteinase 2 (Mmp2) acts downstream of OA-Oamb-Ca2+ signaling in escort cells and cap cells to induce GSC increase. Mmp2 RNAi impairs mating-induced GSC increase, while Timp (Mmp2 inhibitor) knockdown increases GSCs in virgins and overexpression suppresses the mating response. Ex vivo OA treatment fails to increase GSCs in Mmp2 RNAi ovaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The role of Mmp2 is supported by RNAi in multiple cell types (C73-C74), complementary Timp manipulation experiments (C81-C82), and ex vivo functional assays showing Mmp2 acts downstream of OA (C86-C87). The observation that Mmp2 RNAi suppresses OA-dependent pMad upregulation (C88) links Mmp2 to BMP signaling activation. The tissue-specificity controls (C76-C78) strengthen the conclusion that Mmp2 acts in niche cells rather than other ovarian tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Ovarian ecdysteroid biosynthesis and signaling are required for OA-induced GSC increase, but ecdysteroids alone are not sufficient. RNAi of nvd (ecdysteroid biosynthesis enzyme) and EcR (ecdysone receptor) block mating-induced GSC increase. Ex vivo experiments show OA-mediated GSC increase requires nvd, and 20E can rescue nvd RNAi but cannot induce GSC increase without OA. Epistasis experiments place ecdysteroid signaling downstream of Ca2+ signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for ecdysteroid signaling is demonstrated through RNAi (C59-C60), temperature-sensitive mutants (C67-C68), and ex vivo rescue experiments (C61-C63). The key finding that 20E is necessary but not sufficient (C65-C66) is well-supported by the observation that 20E alone does not increase GSCs (C63) but can rescue nvd RNAi in the presence of OA (C62). The epistasis experiments (C94-C96) properly order the pathway components, showing ecdysteroid signaling acts downstream of Ca2+ but upstream of or parallel to Mmp2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Sex peptide sensory neurons (SPSNs) relay the mating signal to dsx+ Tdc2+ neurons via cholinergic signaling through nicotinic acetylcholine receptors (nAChRs). GRASP analysis shows physical connection between SPSNs and Tdc2+ neurons. SPSNs are cholinergic, and ChAT RNAi in SPSNs increases GSCs in virgins. Multiple nAChR subunits (\u03b11, \u03b12, \u03b13, \u03b21, \u03b22) in Tdc2+ neurons suppress GSC increase in virgins. Epistasis experiments show Tdc2+ neurons and OA-Oamb-Ca2+ signaling act downstream of SPSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The neuronal circuit is well-characterized through multiple approaches: GRASP demonstrates physical proximity (C116), co-labeling confirms SPSNs are cholinergic (C118-C119), functional experiments show ChAT RNAi phenocopies SPSN silencing (C120-C121), and multiple nAChR subunits are implicated through RNAi (C123), expression analysis (C124), and genetic mutants with rescue (C126-C127). The epistasis experiments (C129-C133) properly order the pathway. However, the mechanism by which nAChRs exert inhibitory effects remains unexplained, as the authors acknowledge nAChRs typically activate neurons (C164). This represents a gap in mechanistic understanding, though the functional data are solid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C41",
+      "C42",
+      "C43",
+      "C88"
+    ],
+    "result": "Oamb signaling activates BMP/Dpp signaling in GSCs to promote cell cycle progression rather than affecting apoptosis. Mating increases pMad levels and Dad-LacZ reporter expression in GSCs, and this increase is blocked by Oamb RNAi. Mating increases the frequency of GSCs in M phase, which is blocked by Oamb RNAi, while apoptosis is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The link to BMP signaling is demonstrated through multiple readouts: pMad immunostaining (C31-C32), Dad-LacZ reporter (C33-C34), and pH3 staining for M-phase cells (C24-C25). The observation that apoptosis is unchanged (C26) supports the interpretation that Oamb promotes proliferation rather than affecting cell death (C27-C28). The ex vivo experiments (C41-C42) and the finding that Mmp2 RNAi blocks OA-dependent pMad upregulation (C88) strengthen the mechanistic link. The convergence of multiple BMP pathway readouts provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C29",
+      "C30"
+    ],
+    "result": "Mating induces GSC increase through sex peptide (SP) signaling. SP is a male-derived seminal fluid peptide received by SPR in SPSNs located in the uterine lumen. SP-SPR signaling stimulates ovarian ecdysteroid biosynthesis, which plays an essential role in mating-induced GSC increase. The increase is mediated by GSC niche signals, particularly Dpp/BMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the biological context and are supported by citations to established literature (C7-C11, C29-C30) and confirmed by the current study's data showing increased GSC numbers in mated vs virgin females (C6). The claims about SP, SPR, and SPSNs are well-established in the field through the cited references. The current study builds on this foundation to identify the downstream neuronal and molecular mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C36",
+      "C37",
+      "C89",
+      "C90"
+    ],
+    "result": "Oamb and Mmp2 function in mating-induced GSC increase is independent of ovulation and does not affect overall niche architecture. Oamb RNAi in stage-14 follicle cells, oviduct, or nervous system does not affect GSC increase. Oamb and Mmp2 RNAi do not change cap cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tissue-specificity controls are important for establishing that the observed effects are specific to the germarium and not secondary to effects on ovulation or general niche disruption. The use of multiple tissue-specific GAL4 drivers (C18, C20) and quantification of cap cell numbers (C36, C89) provide solid negative controls. These experiments rule out alternative explanations and strengthen the conclusion that Oamb and Mmp2 act specifically in escort cells/cap cells to regulate GSC increase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Ex vivo culture of ovaries with octopamine is sufficient to induce GSC increase. The minimal effective OA concentration is 1 \u03bcM, with effects plateauing at 100 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ex vivo culture system is well-validated through dose-response experiments (C39) and provides a key tool for dissecting the mechanism. The observation that OA treatment is sufficient to induce GSC increase ex vivo (C38) demonstrates that OA can act directly on the ovary without requiring other systemic signals. This experimental system is used extensively throughout the study to test genetic manipulations and establish epistatic relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Viking/Collagen VI is not the substrate of Mmp2 in mating-induced GSC increase, despite being a known Mmp2 substrate in follicle rupture. Mmp2 RNAi does not affect Vkg::GFP levels around cap cells. The authors speculate that Dally-like (Dlp), which controls Dpp and Wnt distribution, may be the relevant substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result regarding Viking/Collagen VI is well-documented through Vkg::GFP imaging (C92) and is important for distinguishing the mechanism in GSC increase from that in follicle rupture. The speculation about Dlp as an alternative substrate (C153-C155) is reasonable given the literature citations but remains untested. This represents an important gap in the mechanistic understanding\u2014while Mmp2 is clearly required, its substrate in this context remains unknown. The authors appropriately present this as speculation rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The authors propose that OA from dsx+ Tdc2+ neurons reaches escort cells in the germarium through volume transmission, despite the neurons projecting to the distal ovary rather than the germarium. This is supported by the observation that Oamb RNAi in germarium-specific cells impairs GSC increase and OA evokes Ca2+ elevation in germarium cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anatomical disconnect between where dsx+ Tdc2+ neurons project (distal ovary, C143) and where Oamb functions (germarium, C141-C142) is acknowledged by the authors. The volume transmission hypothesis (C144-C145) is plausible and supported by literature on monoamine neurotransmitters, but direct evidence for OA diffusion from distal to proximal ovary is lacking. Alternative explanations, such as additional OA-producing neurons or indirect signaling mechanisms, are not fully excluded. The functional data are solid, but the anatomical mechanism remains incompletely resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The authors speculate that acetylcholine-nAChR signaling may generate a virgin-specific temporal spike pattern in dsx+ Tdc2+ neurons rather than simple depolarization, drawing an analogy to firing pattern control in clock neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation (C165) to explain the paradoxical inhibitory effect of nAChRs, which typically activate neurons (C164). The analogy to clock neurons (C166-C167) provides a conceptual framework but does not constitute evidence for this mechanism in dsx+ Tdc2+ neurons. Electrophysiological recordings would be needed to test this hypothesis. The speculation is reasonable but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Ecdysteroid signaling acts downstream of Ca2+ signaling in mating-induced GSC increase. The mechanism by which ecdysteroids regulate Mmp2 activity is unknown, as Mmp2 protein levels are not changed in EcR mutants. The authors speculate that ecdysteroids may regulate Mmp2 enzymatic activity through an unknown mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistatic relationship between Ca2+ signaling and ecdysteroid signaling is well-established through genetic experiments (C157). However, the mechanism by which ecdysteroids regulate Mmp2 remains unclear. The observation that Mmp2 protein levels are unchanged in EcR mutants (C158) is from cited literature and suggests post-translational regulation. The speculation about enzymatic activity regulation (C159-C160) is reasonable but untested. This represents an important mechanistic gap, though the functional requirement for ecdysteroids is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "D. melanogaster female GSCs are systemically regulated by multiple humoral factors from different organs: DILPs from brain, ecdysteroids from ovary, NPF from midgut, and OA from abdominal ganglion neurons. These factors are received by niche cells (except ecdysteroids, which also act on GSCs) and signal through distinct pathways (PI3K, EcR/USP, cAMP, Ca2+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis integrates the current findings with established literature to present a comprehensive view of systemic GSC regulation. The claims about DILPs, NPF, and ecdysteroids are supported by extensive citations (C168, C175-C179), while the current study establishes OA as a new component (C172, C180). The conclusion about interorgan communication (C174) is well-supported by the diversity of humoral factor sources. This represents an important conceptual contribution, placing the current findings in broader context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "The steroid hormone- and noradrenergic nerve-dependent control of stem cell homeostasis is likely conserved across animal species. In mammals, estrogen regulates various stem cell types, and noradrenergic neurons regulate hematopoietic stem cell niche remodeling. The Drosophila reproductive system serves as a model for understanding conserved mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evolutionary conservation argument is supported by extensive citations to mammalian literature (C183-C184). The parallel between Drosophila octopamine/ecdysteroids and mammalian noradrenaline/estrogen is conceptually sound, though direct homology is not established. The claim about conservation (C185) is appropriately qualified as \"likely\" rather than definitive. This represents an important broader impact statement, though the degree of mechanistic conservation remains to be tested experimentally.",
+    "result_type": "MINOR"
+  }
+]

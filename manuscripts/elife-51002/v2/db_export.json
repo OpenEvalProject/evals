@@ -1,0 +1,1549 @@
+{
+  "submission": {
+    "id": "08a181e0-c9f9-4369-92f6-122a738a0d31",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:46:01.029326Z",
+    "updated_at": "2025-12-02T14:46:01.029326Z"
+  },
+  "content": [
+    {
+      "id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "submission_id": "08a181e0-c9f9-4369-92f6-122a738a0d31",
+      "content_type": "manuscript",
+      "content_text": "# Hidden long-range memories of growth and cycle speed correlate cell cycles in lineage trees\n\n## Authors\n\n- Erika E Kuchen<sup>1</sup>\n- Nils B Becker<sup>1</sup> ([ORCID: 0000-0002-7490-6425](https://orcid.org/0000-0002-7490-6425))\n- Nina Claudino<sup>1</sup>\n- Thomas H\u00f6fer<sup>1</sup> ([ORCID: 0000-0003-3560-8780](https://orcid.org/0000-0003-3560-8780)) \u2020\n\n### Affiliations\n\n1. Theoretical Systems Biology German Cancer Research Center (DKFZ) Heidelberg Germany\n2. Bioquant Center University of Heidelberg Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell heterogeneity may be caused by stochastic or deterministic effects. The inheritance of regulators through cell division is a key deterministic force, but identifying inheritance effects in a systematic manner has been challenging. Here, we measure and analyze cell cycles in deep lineage trees of human cancer cells and mouse embryonic stem cells and develop a statistical framework to infer underlying rules of inheritance. The observed long-range intra-generational correlations in cell-cycle duration, up to second cousins, seem paradoxical because ancestral correlations decay rapidly. However, this correlation pattern is naturally explained by the inheritance of both cell size and cell-cycle speed over several generations, provided that cell growth and division are coupled through a minimum-size checkpoint. This model correctly predicts the effects of inhibiting cell growth or cycle progression. In sum, we show how fluctuations of cell cycles across lineage trees help in understanding the coordination of cell growth and division.\n\n## Introduction\n\nCells of the same type growing in homogeneous conditions often have highly heterogeneous cycle lengths (Smith and Martin, 1973). The minimal duration of the cell cycle will be determined by the maximal cellular growth rate in a given condition (Kafri et al., 2016). However, many cells, in particular, in multicellular organisms, do not grow at maximum rate, and their cycle length appears to be set by the progression of regulatory machinery through a series of checkpoints (Novak et al., 2007). While much is known about the molecular mechanisms of cell-cycle regulation, we have little quantitative understanding of the mechanisms that control duration and variability of the cell cycle.\n\nRecently, extensive live-cell imaging data of cell lineages have become available, characterizing, for example, lymphocyte activation (Mitchell et al., 2018; Duffy et al., 2012; Hawkins et al., 2009), stem cell dynamics (Filipczyk et al., 2015), cancer cell proliferation (Spencer et al., 2013; Barr et al., 2017; Ryl et al., 2017), or nematode development (Du et al., 2015). Such studies across many cell types have found that cycle lengths are similar in sister cells, which may be due to the inheritance of molecular regulators across mitosis (Spencer et al., 2013; Mitchell et al., 2018; Yang et al., 2017; Barr et al., 2017; Arora et al., 2017). By contrast, ancestral correlations in cycle length fade rapidly, often disappearing between grandmother and granddaughter cells, or already between mother and daughter cells.\n\nRemarkably, however, the cycle lengths of cousin cells are found to be correlated, indicating that the grandmothers exert concealed effects through at least two generations. High intra-generational correlations in the face of weak ancestral correlations have been observed in cells as diverse as bacteria (Powell, 1958), cyanobacteria (Yang et al., 2010), lymphocytes (Markham et al., 2010) and mammalian cancer cells (Staudte et al., 1984; Sandler et al., 2015; Chakrabarti et al., 2018). The ubiquity of this puzzling phenomenon suggests that it may help reveal basic principles that control cell-cycle duration.\n\nTheoretical work has shown that more than one heritable factor is required to generate the observed cell-cycle correlations in T cell lineage trees, while the nature of these heritable factors has remained unclear (Markham et al., 2010). Stimulated by the idea of circadian gating of the cell cycle in cyanobacteria (Mori et al., 1996; Yang et al., 2010), recent comprehensive analyses of cell lineage trees across different species have proposed circadian clock control as a source of cell-cycle variability that can produce the observed high intra-generational correlations (Sandler et al., 2015; Mosheiff et al., 2018; Martins et al., 2018; Py et al., 2019); such a model also reproduced observed cycle correlations in colon cancer cells during chemotherapy (Chakrabarti et al., 2018). However, in proliferating mammalian cells in culture, the circadian clock has been found to be entrained by the cell cycle (Bieler et al., 2014; Feillet et al., 2014). Moreover, the circadian clock is strongly damped or even abrogated by oncogenes such as MYC (Altman et al., 2015; Shostak et al., 2016) yet MYC-driven cancer cells retain high intra-generational correlations (Ryl et al., 2017).\n\nUltimately, the cell cycle must coordinate growth and division in order to maintain a well-defined cell size over many generations. Yeast species have long served as model systems. Here, it is assumed that growth drives cell-cycle progression, although molecular mechanisms of size sensing remain controversial (Facchetti et al., 2017; Schmoller and Skotheim, 2015). By contrast, animal cells can grow very large without dividing (Conlon and Raff, 2003), and recent precise measurements suggest that growth control involves both modulation of growth rate and cell-cycle length (Sung et al., 2013; Tzur et al., 2009; Cadart et al., 2018; Ginzberg et al., 2018; Liu et al., 2018). A minimal requirement for maintaining cell size is that cells reach a critical size before dividing, which can be achieved by delaying S phase (Shields et al., 1978).\n\nHere, we present a systematic approach to learning mechanisms from measured correlation patterns of cell cycles in deep lineage trees. First, we develop an unbiased statistical framework to identify the minimal model capable of accounting for our experimental data. We then propose a biological realization of this abstract model based on growth, inheritance and a size checkpoint, and experimentally test specific predictions of the biological model.\n\n## Results\n\n### Lineage trees exhibit extended intra-generational correlations\n\nTo study how far intra-generational cell-cycle correlations extend within cell pedigrees, we generated extensive lineage trees by imaging and tracking TET21N neuroblastoma cells for up to ten generations during exponential growth (Figure 1A, Figure 1\u2014video 1, Figure 1\u2014source data 1 and Figure 1\u2014figure supplement 1A).\u00a0Autonomous cycling of these cells is controlled by ectopic expression of the MYC-family oncogene MYCN, overcoming the restriction point and thus mimicking the presence of mitogenic stimuli (Ryl et al., 2017). High MYCN also downregulated circadian clock genes (Figure 1\u2014figure supplement 2). The distribution of cycle lengths (Figure 1B and Figure 1\u2014figure supplement 1B) was constant throughout the experiment (Figure 1C and Figure 1\u2014figure supplement 1C) and similar across lineages (Figure 1\u2014figure supplement 1D), showing absence of experimental drift and of strong founder cell effects, respectively. To determine cycle-length correlations without censoring bias caused by finite observation time (Figure 1\u2014figure supplement 3A; Sandler et al., 2015), we truncated all trees after the last generation completed by the vast majority (>95%) of lineages. The resulting trees were 5\u20137 generations deep, enabling us to reliably calculate Spearman rank correlations between relatives up to second cousins (Figure 1D,E and Figure 1\u2014figure supplement 3B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-v2.jpg)\n\n**Figure 1.:** (A) Live-cell microscopy of neuroblastoma TET21N cell lineages. Sample trees shown with cells marked that were lost from observation (dot) or died (cross). (B) Distribution of cycle lengths, showing median length (and interquartile range). (C) Cycle length over cell birth time shows no trend over the duration of the experiment. (D) Lineage tree showing the relation of cells with a reference cell (red); ancestral lineage (light blue), first side-branch (dark blue) and second side branch (green). (E) Spearman rank correlations of cycle lengths between relatives (with bootstrap 95%-confidence bounds) of three independent microscopy experiments. Color code as in D. B and C show replicate rep3.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Change in cell number over time in the three independent time-lapse imaging experiments (rep, solid lines). An exponential growth model (dashed lines) was fitted to the count data. (B and C) Cycle length distributions of the two independent experiments not shown in Figure 1B,C, displaying (B) the median and interquartile range, and (C) cycle lengths with respect to cell birth time. (D) Cycle lengths of individual lineages for the three replicate experiments displaying individual cells and the lineage median. No cells were excluded from the analysis except for a very small number of cells that left the observation window early and hence did not allow reconstructing deep lineage trees. Trees shown consist of \u2265\u00a010 cells.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Test for differential expression of circadian clock genes in TET21N cells with high versus low MYCN expression using edgeR (Robinson and Smyth, 2008), based on estimating dispersion for each gene using the negative binomial distribution. Differentially expressed genes are PER1, CRY2, NR1D1, and PER3, with p values <\u00a00.05. The results remain the same when average dispersion is estimated for all genes together. (B) Comparison of expression of the entire circadian clock module (via averaged fold change) with 104 randomly drawn gene modules with comparable dispersion. The circadian clock module (black\u00a0dot)\u00a0is significantly downregulated (p value\u00a0=\u00a00.016). Experimental data taken from Ryl et al. (2017).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Simulation exemplifying censoring bias in correlations. Lineage trees of random Gaussian cycle lengths with mean 15 hr, standard deviation 3 hr and 10 generations were generated. Trees were truncated depending on the observation limit before calculating mother-daughter and sister cycle length correlations. Shaded areas show 95%-confidence bounds. Gray line shows the real correlation (of zero). (B) Experimentally measured Spearman rank cell-cycle length correlations of selected family members with bootstrap 95%-confidence bounds and N the number of cell pairs. (C\u2013E) Confounding-factor analysis of the three independent replicate experiments. (C) Spearman rank correlations and bootstrap 95%-confidence bounds calculated as above (black), from randomly paired cells (gray) and by partial correlations with respect to the cycle length of the last common ancestor (red), the mean birth time of each cell pair (green), the birth time of the reference cell (blue) and the birth time of the other relative (brown). (D) Spatial position of cells at division colored by lineage (left) and cycle length (right). Shaded boxes show median cycle length within that square. White backgrounds indicate insufficient cell numbers (<5 cells). No significant differences in cycle length distributions were detected between the spatial regions at a 5% significance level using a Kolmogorov-Smirnov test and the Benjamini-Hochberg procedure to correct for multiple testing. (E) Correlation of the Euclidean distance between first cousins and their difference in cycle length showing Spearman rank correlation coefficient and bootstrap 95%-confidence bounds.\n\nCycle-length correlations of cells with their ancestors decreased rapidly with each generation (Figure 1E). However, the correlations increased again when moving down from ancestors along side-branches\u2014from the grandmother toward the first cousins and also from the great-grandmother toward the second cousins (Figure 1E). The correlations among second cousins varied somewhat between replicates (we will show below that we can control these correlations experimentally by applying molecular perturbations). If cell-cycle length alone were inherited (e.g. by passing on regulators of the cell cycle to daughter cells), causing a correlation coefficient of $\u03c1_{md}$ between mother and daughter cycle lengths, and sisters are correlated by $\u03c1_{ss}$, then first and second cousins would be expected to have cycle length correlation $\u03c1_{ss}\u03c1_{md}^{2}$ and $\u03c1_{ss}\u03c1_{md}^{4}$, respectively (Staudte et al., 1984). The actually observed cousin correlations are much larger, confirming previous observations on first cousins as summarized in Sandler et al. (2015) and extending them to second cousins. This discrepancy between simple theoretical expectation and experimental data was not due to spatial inhomogeneity or temporal drift in the data (Figure 1; Figure 1\u2014figure supplement 3C-E). Thus, the lineage trees show long-ranging intra-generational correlations that cannot be explained by the inheritance of cell-cycle length.\n\n### Correlation patterns are explained by long-range memories of two antagonistic latent variables\n\nWe used these data to search for the minimal model of cell-cycle control that accounts for the observed correlation pattern of lineage trees (Materials and methods and Appendix 2). To be unbiased, we assumed that cycle length $\\tau$ is controlled jointly by a yet unknown number $d$ of cellular quantities that are inherited from mother to daughter, $x=(x_{1},\u2026,x_{d})^{T}$, such that $\\tau=\\tau\u2062(\\sum_{l=1}^{d}\\alpha_{l}\u2062x_{l})$, with positive weights $\\alpha$. We take $x$ to be a Gaussian latent variable and, generalizing previous work (Cowan and Staudte, 1986), describe its inheritance by a generic model accounting for inter-generational inheritance as follows: In any given cell $i$, $x^{i}$ is composed of an inherited component, determined by $x$ in the mother, and a cell-intrinsic component that is uncorrelated with the mother. The inherited component is specified by an inheritance matrix $\ud835\udc00$, such that the mean of $x^{i}$ conditioned on the mother\u2019s $x$ is $\u27e8x^{i}|x\u27e9=Ax$ (Figure 2A). The cell-intrinsic component causes variations around this mean with covariance\u00a0$\u27e8(x^{i}\u2212Ax)(x^{i}\u2212Ax)^{T}|x\u27e9=I$, where, with appropriate normalization of the latent variables, $\ud835\udc08$ is the unit matrix. Additional positive correlations in sister cells may arise due to inherited factors accumulated during, but not affecting, the mother\u2019s cycle (Arora et al., 2017; Barr et al., 2017; Yang et al., 2017); additional negative correlations may result from partitioning noise (Sung et al., 2013). These are captured by the cross-covariance between the intrinsic components in sister 1 and 2, $\u27e8(x^{1}\u2212Ax)(x^{2}\u2212Ax)^{T}|x\u27e9=\\gammaI$. In total, $d\u2062(d+1)$ parameters can be adjusted to fit the correlation pattern of the lineage trees: the components $a_{l\u2062m}$ of the inheritance matrix $\ud835\udc00$, the weights $\\alpha_{l}$ and the sister correlation $\\gamma$. Together, these inheritance rules specify bifurcating first-order autoregressive (BAR) models for multiple latent variables governing cell-cycle duration.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig2-v2.jpg)\n\n**Figure 2.:** (A) Coupled inheritance of $d$ Gaussian latent variables $x_{l}$ and cell-intrinsic fluctuations generate cycle lengths. (B) Relative model evidences calculated for $d=1,2$, for the indicated inheritance matrices $\ud835\udc00=[a_{l\u2062m}]$ and sister coupling $\\gamma$. Although Model VII is the most parsimonious for replicates rep2 and rep3 (blue and gray bars), only Model V with unidirectionally coupled inheritance explains all data well, including rep1 (bordeaux bars). Error bars from Monte-Carlo integration. (C) Model fits for rep1. Single-variable inheritance (Model II) and pure cross-inheritance (VII) fails to generate strong intra-generational correlations; uncoupled inheritance (III) fails to generate low ancestral correlations; Model V fits the data best. Rank correlations of the data shown with bootstrap 95%-confidence bounds (black bars). Model prediction bands (colored bars) were generated from the range of the parameter sets with likelihood higher than 15% of the best fit, corresponding to a Gaussian 95% credible region. (D) Model V, best-fit ancestral autocorrelation functions, for cycle lengths $\\tau$ and latent variables. Long-range memory in the latent variables is anticorrelated and masked in observed cycle times.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Model VII generates intra-generational correlations only up to first cousins which is compatible with rep2 and rep3 but not rep1.\n\nTo determine the most parsimonious BAR model supported by the experimental data, we employed a standard Bayesian model selection scheme. Selection is based on the Bayesian evidence, which rewards fit quality while naturally penalizing models of higher complexity (defined as being able to fit more diverse data sets; for details see Appendix 2, Evidence calculation). Specifically, we evaluated the likelihood of the measured lineage trees for a given BAR model, used it to compute the Bayesian evidence, and ranked BAR models accordingly (Figure 2B).\n\nThe simplest model that generated high intra-generational correlations was based on the independent inheritance of two latent variables (Model III; Figure 2C, cyan dots), whereas one-variable models failed to meet this criterion (Model II, Figure 2C, blue dots and Model I). However, Model III consistently overestimated ancestral correlations and hence its relative evidence was low (<10% for all data sets). To allow additional degrees of freedom, we accounted for interactions of latent variables. The most general two-variable model with bidirectional interactions (Model VI), overfitted the experimental data and consequently had low evidence. The models best supported by the data had unidirectional coupling, such that $x_{2}$ in the mother negatively influenced $x_{1}$ inherited by the daughters, that\u00a0is with $a_{12}<0$ and $a_{21}=0$ (Figure 2B, Models IV, V and VII). Among these, Model VII, with a single inheritance parameter $a_{12}$, is simplest, but was not compatible with experimental replicate rep1 as it could not generate second-cousin correlations (Figure 2B,C). Both Models IV and V were compatible with all replicates; however, Model V with only one self-inheritance parameter for both variables ($a_{11}=a_{22}>0)$ was preferred (Model V, Figure 2B,C, orange dots). Model V produced a remarkable inheritance pattern (Figure 2D): Individually, both latent variables had long-ranging memories, with \u223c50% decay over 2\u20133 generations. However, the negative unidirectional coupling cross-correlated the variables negatively along an ancestral line, resulting in cycle-length correlations that essentially vanished after one generation. Nevertheless, strong intra-generational correlations were reproduced by the model due to long-range memories of latent variables together with positive sister-cell correlations ($\\gamma>0$). We conclude that the coexistence of rapidly decaying ancestral correlations and extended intra-generational correlations can be explained by the inheritance of two latent variables, one of which inhibits the other.\n\n### Cell size and speed of cell-cycle progression are antagonistic heritable variables\n\nDuring symmetric cell division, both cell size and regulators of cell-cycle progression are passed on from the mother to the daughter cells (Spencer et al., 2013; Yang et al., 2017; Arora et al., 2017; Barr et al., 2017). We now show that simple and generic inheritance rules for these two variables provide a physical realization for BAR Model V.\n\nTo divide, cells need to both grow to a minimum size (Shields et al., 1978) and receive license to progress through the cell cycle from the regulatory machinery (Novak et al., 2007). Indeed, growth and cell-cycle progression can be separately manipulated experimentally in mammalian cells (Fingar et al., 2002). In particular, cells continue to grow in size when regulatory license is withheld, for\u00a0example in the absence of mitogens, and growth is not otherwise constrained, for\u00a0example by mechanical force or growth inhibitors (Fingar et al., 2002; Conlon and Raff, 2003).\n\nWhile growth and cell-cycle progression are separable and heritable processes, they also interact. At the very least, the length of the cell cycle needs to ensure that cells grow to a sufficient size for division. This interaction alone implies an effect of one inherited variable, cycle progression, on the other, cell growth, that anti-correlates subsequent cell cycles (as required by BAR model V): If a delayed regulatory license prolongs the mother\u2019s cell cycle, it will grow large. By size inheritance, its daughters will be large at birth, reach a size sufficient for division quickly and hence may have shorter cell cycles. Thus, despite inheritance of growth and cell-cycle regulators mothers and daughters may have very different cycle lengths due to this interaction.\n\nBased on these ideas, we formulated a simple quantitative model of growth and cell-cycle progression on cell lineage trees. We introduced the variables \u2018cell size\u2019 $s$, measuring metabolic, enzymatic and structural resources accumulated during growth, and $p$, characterizing the progression of the cell-cycle regulatory machinery. Unlike the latent variables of the BAR model $x_{1}$ and $x_{2}$, their mechanistic counterparts $s$ and $p$, respectively, are governed by rules reflecting basic biological mechanisms (Figure 3A, Appendix 3). Size $s$ grows exponentially and is divided equally between the daughters upon division. We found that under some experimental conditions generating long cell cycles (downregulation of MYCN, see below), stable cell size distributions required feedback regulation of growth rate, as seen experimentally (Sung et al., 2013; Tzur et al., 2009); we implemented this as a logistic limitation of growth rate at large sizes for these conditions. The progression variable $p$ determines the time taken for the regulatory machinery to complete the cell cycle, which is controlled by the balance of activators and inhibitors of cyclin-dependent kinases. These regulators are inherited across mitosis (Spencer et al., 2013; Yang et al., 2017; Arora et al., 2017; Barr et al., 2017) and hence the value of $p$ is passed on to both daughter cells with some noise. Cells divide when they have exceeded a critical size, requiring time $\\tau_{g}$, and the regulatory machinery has progressed through the cycle, which takes an approximately log-normally distributed time (Ryl et al., 2017; Mitchell et al., 2018) modeled as $\\tau_{p}=exp\u2061(p)$. Hence the cycle length is $\\tau=max\u2061(\\tau_{g},\\tau_{p})$. Apart from requiring a minimum cell size for division, the growth-progression model does not implement a drive of the cell cycle by growth and thus allows cells to grow large during long cell cycles. By this mechanism, the cell size variable $s$ is influenced by cycle progression, analogous to the BAR variable $x_{1}$. By contrast, the progression variable $p$ is not influenced by cell size, analogous to the variable $x_{2}$ in the BAR model.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig3-v2.jpg)\n\n**Figure 3.:** (A) Scheme of the growth-progression model with heritable variables relating to cell size $s$ and cycle progression timing $p$. (B) Measured and simulated cell-cycle length distributions (upper). Model distribution resolved by the division-limiting process (lower). (C) Measured and modeled correlation pattern with Spearman rank correlation coefficient and bootstrap 95%-confidence bounds. (D) Proportion of simulated cells limited by growth or progression. (E) Correlation of simulated mother-daughter cycle lengths colored by their division limitation: both by $\\tau_{g}$ (black), both by $\\tau_{p}$ (green), mother $\\tau_{p}$ \u2013 daughter $\\tau_{g}$ (magenta), mother $\\tau_{g}$ \u2013 daughter $\\tau_{p}$ (cyan). Percentage of cells in each subgroup and their correlation coefficients are shown. (F) Correlation of simulated cousin-cousin cycle length colored by the limitation of the common grandmother: by $\\tau_{g}$ (orange) or $\\tau_{p}$ (blue). (G) Autocorrelations along ancestral line of cycle length $\\tau$, growth time $\\tau_{g}$ and the progression time $\\tau_{p}$, and the cross-correlation $\\tau_{p}\u2062\\tau_{g}$.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Best fit (red dot) and confidence bounds of the six model parameters fitted individually to each dataset by Approximate Bayesian Computation at a tolerance $\u03f5$ = 2. See Appendix 3 for details. (B) Simulated distributions of cell age and cell size over time showing median (black line) and interquartile range (gray). (C and D) Parameterized model fit to the experimental data, showing (C) the distribution of cycle length (upper) resolved by the division-limitation (lower) and (D) the correlation pattern with bootstrap 95%-confidence bounds. (E) Frequency of simulated cells limited by growth or progression showing the mean of 100 simulations using best-fit parameters. (F) Correlation of simulated cousin-cousin cycle length colored by the size common grandmother: smaller than the median value (orange) or larger (blue). (G) Best-fit predicted Spearman rank autocorrelations of the cycle length $\\tau$, the growth time $\\tau_{g}$ and the progression time $\\tau_{p}$, and the cross-correlation $\\tau_{g}\u2062\\tau_{p}$.\n\nWe fitted this model to the measured lineage trees by Approximate Bayesian Computation (Figure 3\u2014figure supplement 1A and Figure 3\u2014source data 1). The parameterized model yielded a stationary cell size distribution (Figure 3\u2014figure supplement 1B) and reproduced the cycle-length distribution (Figure 3B and Figure 3\u2014figure supplement 1C) as well as the ancestral and intra-generational correlations (Figure 3C and Figure 3\u2014figure supplement 1D). Thus, the dynamics of cell growth and cell-cycle progression, coupled only through a minimum-size requirement, account for the intricate cycle-length patterns in lineage trees.\n\nTo gain intuition on the inheritance patterns of cycle length, we first considered ancestral correlations, focusing on mother-daughter pairs. Individual cell cycles in the model are either growth-limited, that\u00a0is division happens upon reaching the minimum size, or progression-limited, that\u00a0is the cell grows beyond the minimum size until the cycle is completed (Figure 3D and Figure 3\u2014figure supplement 1E). If both mother and daughter are progression-limited (i.e., the threshold size is exceeded by both), their cycles are positively correlated (Figure 3E, green dots). As in this case size inheritance is inconsequential, this positive correlation is explained by the inheritance of the cell-cycle progression variable $p$ alone. By contrast, all mother-daughter pairs that involve at least one growth limitation show near-zero (Figure 3E, cyan dots) or negative correlations (Figure 3E, magenta and black dots). This pattern is explained by the anti-correlating effect that daughters of longer-lived and hence larger mother cells require on average shorter times to reach the size threshold. Next, we considered intra-generational correlations, focusing on first cousins (Figure 3F). While cousins are positively correlated overall, this correlation is carried specifically by cousins that descend from a grandmother with a progression-limited cell cycle (Figure 3F, blue dots), whereas cousins stemming from a growth-limited grandmother are hardly correlated (Figure 3F, orange dots). Since progression-limited cells can grow large, this observation indicates that cousin correlations are mediated by inheritance of excess size, as is confirmed by conditioning cousin correlations on grandmother size (Figure 3\u2014figure supplement 1F). Size inheritance over several generations is also evident in the autocorrelation of the time required to grow to minimum size, $\\tau_{g}$ (Figure 3G and Figure 3\u2014figure supplement 1G, black dots). The autocorrelation of the progression time $\\tau_{p}$ is also positive (but less long-ranging; Figure 3G and Figure 3\u2014figure supplement 1G, green squares), while the negative interaction with growth is reflected in the negative cross-correlation (Figure 3G and Figure 3\u2014figure supplement 1G, red triangles). In sum, the long-range memories of cell-cycle progression and cell growth are masked by negative coupling of these processes, causing rapid decay of cell-cycle length correlations along ancestral lines (Figure 3G and Figure 3\u2014figure supplement 1G, orange triangles). These inheritance characteristics of the growth-progression model mirror those of BAR model V (see Figure 2D).\n\n### Effects of molecular perturbations on cell-cycle correlations are correctly predicted by the model\n\nIf the growth-progression model captures the key determinants of the cell-cycle patterns in lineage trees, it should be experimentally testable by separately perturbing growth versus cell-cycle progression. We first derived model predictions for these experiments. Intuitively, if growth limitation were abolished by slowing cell-cycle progression, only progression would be inherited and therefore mother-daughter correlations of cycle time could no longer be masked. As a result, we expect intra-generational correlations to be reduced relative to ancestral correlations when inhibiting cycle progression; conversely, inhibiting growth (and thereby increasing growth limitation) should raise them. Indeed, using the model to simulate perturbation experiments (Figure 3\u2014source data 1), we found that growth inhibition increased cousin correlations relative to mother-daughter correlations, whereas slowing cell-cycle progression decreased these correlations (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig4-v2.jpg)\n\n**Figure 4.:** (A) Predictions for changes in the ratio $\u03c1_{c}/\u03c1_{m\u2062d}$ of cousin to mother-daughter correlations, when slowing growth or cycle progress compared to the best-fit parameters (control). $\u03c1_{c\u20621}=$ first cousins, $\u03c1_{c\u20622}=$ second cousins. (B\u2013F) Experimental perturbations of cycle progress and growth by MYCN inhibition and rapamycin treatment, respectively. (B) Cell size distribution. Areal forward scatter measured experimentally by flow cytometry for control high-MYCN, MYCN-inhibited and rapamycin-treated (40 nM) TET21N neuroblastoma cells; shown are two biological replicates, indicated by solid and dashed lines, that were measured with the same FACS settings. (C) Measured and best-fit model cycle length distributions. Median and interquartile range are indicated. (D) Measured (black) and best-fit correlation pattern of MYCN-inhibited and rapamycin-treated cells with Spearman rank correlation coefficient and 95%-confidence bounds. (E) Measured cousin/mother daughter correlation ratios. (F) Proportion of simulated cells limited by growth or progression, using best-fit parameters for MYCN inhibition or rapamycin-treatment.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) mTOR mRNA expression in TET21N cells measured by RNA-Seq, $n=2$, mean and SEM. No significant difference in mTOR expression between high-MYCN control and MYCN-inhibited cells with paired t-test, $p=0.632$. (B) MYCN protein expression in TET21N neuroblastoma cells under various experimental conditions, measured by flow cytometry, $n=2$, representative experiment shown. (C and D) Data and model fit of the two replicate experiments not shown in Figure 4C,D. Data shown in black and model fits in blue (MYCN-inhibited) and pink (rapamycin-treated). (C) Distribution of cycle lengths showing median and interquartile range (D) Correlation pattern with bootstrapp 95%-confidence bounds. (E) Model simulated cell size distribution of population at one point in time comparable to Figure 4B. (F) Proportion of simulated MYCN-inhibited and rapamycin-treated cells limited by growth or progression using the growth-progression model showing mean of 100 simulations. Data and model fit of the two replicates not shown in Figure 4F. (G) Evidences relative to model V (as in Figure 2\u2014figure supplement 1A) but for MYCN-inhibited cells. (I) Corresponding correlations. The simpler correlation structure without long-range lateral correlation favors model VII for both replicates -myc1 and -myc2. (H, J) as (G, I) but for rapamycin-treated cells. Strong intra-generational correlations favor model IV and V and exclude model VII. Model III (independent processes) explains only the replicate rap1, shown leftmost in H and in J.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Growth-progression model with logistic cell growth. Model (colors) fitted to the summary statistics of the perturbed time-lapse imaging datasets (black) including, (A) cell-cycle length distributions and (B) Spearman rank correlations with 95% bootstrap confidence bounds. (C) Autocorrelations and cross-correlations along the ancestral line of simulated lineage trees for fit to replicate rep1.\n\nTo test this prediction, we slowed cell-cycle progression experimentally by reducing MYCN, exploiting the doxycycline-tunable MYCN gene integrated in the TET21N cells. Cells grew to larger average size (Figure 4B,\u00a0blue lines) over longer and more variable cell cycles (Figure 4C). These data show that lowering MYCN slowed cell-cycle progression while allowing considerable cell growth. Further consistent with this phenotype, expression of mTOR, a central regulator of metabolism and growth (Fingar et al., 2002), was not lowered (Figure 4\u2014figure supplement 1A). In a separate experiment, we inhibited cell growth by applying the mTOR inhibitor rapamycin, which reduced cell size by a small but reproducible amount (Figure 4B, red lines). This treatment also lengthened the cell cycle slightly (Figure 4C) but without changing MYCN protein levels (Figure 4\u2014figure supplement 1B). Thus, lowering MYCN and inhibiting mTOR are orthogonal perturbations that act on cell-cycle progression and cell growth, respectively. As predicted by the growth-progression model, these perturbations resulted in markedly different cycle-length correlation patterns within lineage trees (Figure 4D,E and Figure 4\u2014figure supplement 1C,D): Lowering MYCN decreased intra-generational correlation and, in particular, removed second-cousin correlations. By contrast, rapamycin treatment strongly increased intra-generational correlations and caused ancestral correlations to decline only weakly. Collectively, these findings support the growth-progression model of cell-cycle regulation.\n\n### Cousin correlations reflect active cell-size checkpoint\n\nWe then asked whether the cycle-length correlation patterns experimentally observed in lineage trees contain information about the underlying regulation. To this end, we fitted the BAR and growth-progression models to MYCN and rapamycin perturbation data. We again obtained good agreement with the data (Figure 4C,D and Figure 4\u2014figure supplement 1C\u2013E,G\u2013J). MYCN knockdown cells grew larger; to obtain a stable cell-size distribution for the corresponding model fits, we implemented logistic regulation of growth rate at large cell sizes. When we applied, for comparison, this regulation to the control and rapamycin treatment data, the model fits (Figure 4\u2014figure supplement 2) were not noticeably affected compared to purely exponential growth. This result indicates that growth rate regulation affecting large cells, as found experimentally (Ginzberg et al., 2018), is compatible with long-range intra-generational correlations in cell-cycle length.\n\nIn terms of fit parameters of the model, MYCN inhibition caused considerable slowing of cycle progression and also a moderate decrease in growth rate (Figure 3\u2014figure supplement 1A, parameters $\\mu$ and $k$, respectively). As a result, the vast majority of cell cycles were progression-limited (Figure 4F and Figure 4\u2014figure supplement 1F). For the rapamycin-treated cells, we estimated growth rates that were lower than for the control experiments on average, as expected (Figure 3\u2014figure supplement 1A, parameter $k$). Also, correlations in cell-cycle progression increased in mother-daughter and sister pairs (parameters $a$ and $\\gamma$, respectively). This is consistent with rapamycin inhibiting mTOR and hence growth, but not affecting drivers of the cell cycle, ERK and PI3K (Adlung et al., 2017), since then lengthening of the cell cycle due to slower growth may allow prolonged degradation of cell-cycle inhibitors, which would increase inheritance of cell-cycle length (Smith and Martin, 1973). Taken together, rapamycin treatment increased the fraction of growth-limited cell cycles (Figure 4F and Figure 4\u2014figure supplement 1F) and inheritance of cell-cycle progression speed, thus causing increased ancestral and intra-generational correlations.\n\nWe hypothesized that growth may be limiting primarily for rapidly proliferating cell types, even without specific growth inhibition. We analyzed time-lapse microscopy data of non-transformed mouse embryonic stem cells (Filipczyk et al., 2015) that proliferate much faster than the neuroblastoma cells (Figure 5A and Figure 5\u2014figure supplement 1A). Side-branch correlations of cycle length were again large (Figure 5B Figure 5\u2014figure supplement 1B), as seen in the previous data except for the MYCN-inhibited cells. Interestingly, the strength of the intra-generational correlations was most similar to the much more slowly dividing rapamycin-treated cells (cf. Figure 4D). As before, the BAR model required two negatively coupled variables to account for these data (Figure 5C, Figure 5\u2014figure supplement 1D,E). Fitting the growth-progression model to the data (Figure 5A,B), we found that the majority (\u223c60%) of cell cycles were limited by growth (Figure 5D, Figure 5\u2014figure supplement 1C), indicating that cycle length of fast proliferating mammalian cells is, to a large extent, controlled by growth.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cycle length distribution of data (black) and growth-progression model (purple). (B) Measured (black) and modeled (purple) correlation pattern using the growth-progression model. (C) Model evidences of the BAR model, version numbering as in Figure 2B. (D) Proportion of simulated cells limited by growth or progression. Data from Filipczyk et al. (2015) reanalyzed for cell-cycle duration.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51002/elife-51002-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A,B) Embryonic stem cell data (black) provided by Filipczyk et al. (2015) and model fit (purple) of the two replicate experiments not shown in Figure 5A\u2013C. showing (A) distribution of cycle lengths with median and interquartile range and (B) correlation pattern with bootstrap 95%-confidence bounds. (C) Proportion of simulated embryonic stem cells limited by growth or progression using the growth-progression model showing mean of 100 simulations. (D, E) As Figure 4\u2014figure supplement 1G\u2013J but for embryonic stem cells. Model V (orange\u00a0dots)\u00a0is favored by short-ranged ancestral and extended intra-generational correlations in all three replicates (for legend see Figure 4\u2014figure supplement 1I,\u00a0J).\n\n## Discussion\n\nHere, we showed that the seemingly paradoxical pattern of cell-cycle lengths in lineage trees, with rapidly decaying ancestral and long-range intra-generational correlations, can be accounted for by the inheritance of two types of quantities: resources accumulated during the cell cycle (cell \u2018size\u2019) and regulators governing the speed of cell-cycle progression. The fact that these are fundamental processes in dividing cells may help explain the ubiquity of the paradoxical cell-cycle pattern. Targeted experimental perturbations of cell growth and cell-cycle progression support our model.\n\nAs an alternative mechanism underlying the observed cell-cycle variability and cousin correlations, modulation of the cell cycle by the circadian clock has been suggested, with strongest experimental evidence to date for cyanobacteria (Sandler et al., 2015; Mosheiff et al., 2018; Py et al., 2019). Unlike cyanobacteria, proliferating mammalian cells show entrainment of the circadian clock to the cell cycle with periods well below 24 hr (Bieler et al., 2014; Feillet et al., 2014). Whether in this setting the circadian clock could still influence cell-cycle correlations remains to be studied.\n\nOur proposed mechanism for cycle length correlations was motivated by Bayesian model selection. All data sets which displayed long-range correlation patterns (control replicate rep1 and rapamycin treatment of neuroblastoma cells as well as ESCs) selected a BAR model featuring long-range inheritance of two memory variables, which is masked in mother-daughter pairs by an anticorrelating interaction between them. The growth-progression model shares these essential features. Size inheritance is predicted to be particularly long-range by the fits of the growth-progression model to the experimental data. This memory emerges because growth does not force cell-cycle progression, allowing cells to grow large in progression-limited cycles and then pass on size over several generations. Such weak coupling between concurrent processes echoes recent work in E. coli on timing of cell division (Micali et al., 2018) and on the existence of two parallel adder processes for replication and division (Witz et al., 2019). Of note, the latter paper also utilizes a statistical framework for systematic model selection against experimentally observed correlation patterns akin to our approach.\n\nOur findings raise the question of the mechanistic modes by which cells coordinate cell cycle and growth, which has been a long-standing problem;\u00a0see Shields et al. (1978) for historical references and Ho et al. (2018) for a recent review. Recent work on this problem has shown the existence of negative feedback of cell size on growth rate (Ginzberg et al., 2018). We have found that our results remain robust when implementing a simple form of such a feedback (logistic dependence of growth rate on size) in the growth-progression model. Another recent study has shown that growth of many mammalian cells during the cell cycle adds a volume that only weakly increases with cell volume at birth (termed near-adder behavior, Cadart et al., 2018). This behavior appears to be caused by a combination of growth-rate regulation and cell-size effects on cell-cycle progression. We expect that factoring in the\u00a0cell-cycle length correlations studied\u00a0here\u00a0will help uncover the mechanistic details of cell size regulation. Refining our model in this direction may also help capture yet more detail of the correlation structure, such as the apparent increasing trend from aunt to first cousins and greataunt to second cousins. Moreover, we envisage that our inference approach could be extended to include finely\u00a0resolved data on cell-cycle phases (Chao et al., 2019) as well as multiple cell fates via asymmetric division and differentiation (Duffy et al., 2012).\n\n## Materials and methods\n\n### Experimental methods\n\nMYCN-tunable mammalian neuroblastoma SH-EP TET21N (RRID:CVCL_9812) cells were cultured as in Lutz et al. (1996). These TET21N cells were obtained from Dr. Frank Westermann (German Cancer Research Center, DKFZ) whose lab generated this line. This cell line is regularly authenticated by an in-house DKFZ service using STR profiling. Mycoplasma contamination testing was negative. MYCN and mTOR were inhibited using 1 \u03bcg/ml doxycycline or 20\u201340 nM rapamycin (Calbiochem, 553210\u2013100 UG), respectively. Cells were grown on ibidi \u03bc-slides and phase contrast images (Nikon Ti-E) acquired every 6\u201315 min for up to 7 days under controlled growth conditions. The presented data consists of independent biological and technical replicates with n\u00a0=\u00a03 for untreated TET21N cells, n\u00a0=\u00a02 for MYCN-inhibited and rapamycin-treated cells. Cells were tracked in Fiji (version 1.48d) using the tracking plugin MTrackJ (Meijering et al., 2012). For flow cytometry, cells were stained with MYCN primary antibody (Santa Cruz Biotechnology, Cat# sc-53993; RRID:AB_831602), secondary fluorescence-conjugated antibody goat anti-mouse Alexa Fluor 488 IgG (Life Technologies Cat#A-11001; RRID:AB_2534069) and measured on a Miltenyi VYB MACSQuant Analyser. See Appendix 1 for details.\n\n### Data analysis\n\nMATLAB (R2016b) was used for all data analyses. Correlations represent Spearman rank correlations or, for the BAR model, Pearson correlation coefficients between the Gaussian-transformed cycle times. The difference between these two methods was far smaller than the experimental error. Error bounds were estimated by bootstrap re-sampling on the level of lineage trees. Censoring bias was avoided by truncating lineage trees after the last generation completed by all lineages within the experiment (see e.g. Sandler et al., 2015 and Appendix 1), truncating the trees to 7, 6 and 5 generations for the three MYCN amplified experiments. MYCN-inhibited and rapamycin-treated trees were five generations deep.\n\n### Bifurcating autoregressive (BAR) model\n\nWe constructed BAR models of cell-cycle inheritance, as described in detail in Appendix 2. Briefly, the cell state is determined by a vector of Gaussian (latent) variables which are inherited from the mother to the daughter cells by a linear map plus a cell-intrinsic noise term, which is correlated between daughters. The model is thus a Gaussian latent-variable model, where inheritance takes the form of an autoregressive vector-AR(1) process defined on a lineage tree. The cycle time is then calculated by an data-derived (approximately exponential) function of a weighted sum of the cellular state. We calculated whole-lineage tree log-likelihood functions analytically and used them to evaluate Bayesian Evidences (Bayes factors) that quantify the relative support from the data for various model variants.\n\n### The growth-progression model\n\nCell-cycle progression is modeled by a fluctuating, centered Gaussian heritable variable $q$, analogous to version II of the BAR model. Variables were scaled and shifted, $p=\\sigma_{p}\u2062q+\\mu$, yielding log-normal progression durations $\\tau_{p}=exp\u2061(p)$. Size accumulation was modeled by exponential growth or for MYCN inhibition logistic growth. The normalized critical cell size $s_{th}$ fluctuates slightly and independently in each cell as $s_{th}=1+\u03b6$ with $\u03b6\u223c\ud835\udca9\u2062(0,\\sigma_{g}^{2})$. The growth-progression model was implemented in Matlab (R2016b), R (3.4.3) and OCaml (4.06) and 30 trees of 7 generations simulated, corresponding to the experimental dataset sizes. The simulation was repeated 100 times to generate confidence bounds. Parameters were fitted using Approximate Bayesian Computation independently for each dataset. See Appendix 3 for details.\n",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "5dee2f1e-d7a4-4106-80f7-8a65b4407b06",
+      "submission_id": "08a181e0-c9f9-4369-92f6-122a738a0d31",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51002.sa1](https://doi.org/10.7554/eLife.51002.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nKuchen et al. have developed a general model that can explain the high degree of intra-generational correlation in cell cycle times that have been observed in multiple systems. Based on insight provided by this general model, they show that these correlations can arise from a unidirectional coupling of cell size and cell-cycle speed by a minimal cell-size checkpoint, which they verify using perturbation experiments.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Hidden long-range memories of growth and cycle speed correlate cell cycles in lineage trees\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Naama Barkai as the Senior and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nKuchen et al. have developed an interesting and general model that can explain the high degree of intra-generational correlation in cell cycle times that have been observed in multiple systems. First, using Bayesian inference on their own time-lapse data, they find that a model of two unidirectionally coupled heritable components that affect cell-cycle time best explains their data. They go on to propose that these components can be cell size and cell-cycle speed, provided that growth and division are coupled via a minimum size checkpoint. They then verify this model through perturbation experiments.\n\nEssential Revisions:\n\nPlease address all comments below.\n\nIn particular please pay a special attention to the following two points:\n\n1) The concerns over reproducibility between datasets,\n\n2) Provide much clearer explanation of the unbiased model-selection.\n\nReviewer #1:\n\nThe paper studies division time correlations within neuroblastoma cells through time-lapse microscopy. Their approach uses unbiased statistical models to infer a minimal model that they claim recapitulates the experimentally observed correlations within populations of cells based on a set of heritable factors influencing interdivision times. The authors then study a model of division times based on growth to a threshold size and the inheritance of cell cycle progression factors that determine the rate of passage through the cell cycle. The authors claim that this second model recapitulates WT data in addition to matching the correlations observed in cells either grown with rapamycin (to limit cell growth) or cells with a reduced rate of passage through the cell cycle obtained by restricting the expression of the oncogene MYCN.\n\nI found their unbiased statistical approach of particular interest since they considered a range of hierarchical models and used a metric for evaluating them which accounts for potential effects of overfitting with larger numbers of fitting parameters. However, to interpret this section with a critical eye requires more intuition for the metric of discrimination between these hierarchical models. In particular, Equation 12 which appears to address this should be referenced and discussed in the main text. With regards to the rest of the paper, the predictions of the authors when varying the limitations of either growth or cell cycle progression were unclear. This would be greatly aided by giving the reader intuition about what one would expect for either \"pure\" model (either a pure sizer for size control or cells which are completely limited by cell cycle progression).\n\nAdditionally, the following main comments should be addressed:\n\n1) How are the fitting parameters re-evaluated when inhibiting growth or cell cycle progression relative to the control case?\n\n2) Why do the authors switch to logistic growth during the MYCN growth? This is currently not even mentioned in the main text. It is concerning that in order to fit the MYCN growth case this fundamental assumption needed to be altered.\n\n3) Is the agreement between the model predictions and the observed division time correlations robust to variations in the cell size control strategies assumed? There is increasing evidence that many mammalian cells follow an \"adder\" model (see for example Cadart et al., 2018 which is incorrectly referred to in the paper as supporting a critical size), so testing the model for this size control strategy would be an important test of the proposed model.\n\n4) The choice of cell cycle timing as a feature of interest was not adequately justified. The results would be stronger if the authors can use data on correlations in cell size between relatives to test Model V and its predictions.\n\n5) The explanation of the results shown in Figure 4 does not provide clear intuition for why the correlations should be altered in the observed fashion. It would be helpful if the authors took more care when explaining this. For example: The authors show in Figure 3E that growth-limited cells have negative mother-daughter correlations in cell cycle timing. This being the case, why is it that the mother-daughter correlations in the presence of rapamycin (Figure 4D) are in fact larger than those correlations measured in the MYCN treated cells?\n\nReviewer #2:\n\nIn the present manuscript, Kuchen and colleagues investigate how regulation of cell cycle progression and cell growth are coupled using analysis of extended cell lineages and mathematical modeling. Initially, they performed time-resolved live-cell microscopy of a MYCN \u2013 over-expressing neuroblastoma line to generate cell lineage trees spanning 5-7 generations. As previously reported, they observed higher intra-generational than ancestral correlations, which has so far been attributed to coupling between cell cycle and circadian clock (Sandler et al., 2015, Chakrabarti et al., 2018). The authors now took an unbiased approached based on a Gaussian latent variables and propose a model where two unidirectionally coupled variables are inherited to daughter cells. They mechanistically implement these two variables as cell growth and cell-cycle progression and show that it is sufficient to couple both through a minimal-size checkpoint to account for the observed correlation patterns in lineage trees. This model is supported by experimental perturbations of cell growth (via mTOR inhibition) and cell cycle progression (decreasing MYCN levels) as well as by analysis of existing lineage data from rapidly cycling human ES cells.\n\nThe paper is well written and easy to follow. The authors present a very plausible alternative explanations for the non-intuitive correlation patterns in lineage trees and provide further evidence for a size checkpoint in mammalian cell cycle regulation. As the focus of the manuscript is on the use of abstracted mathematical models to explain a complex cellular phenotype (inheritance of cell cycle length), there is little mechanistic/molecular inside regarding the details of the observed phenomena (e.g. minimal cell size checkpoint). However, the provided experimental validation provides strong support for the presented hypothesis. As an experimentalist, I would have liked to see additional orthogonal perturbations to further strengthen the data, but believe that this would be beyond the scope of this study.\n\nMain points:\n\n1) While the modelling results match the data within the estimated error bounds, the correlation patterns seem to be less pronounced. For example, the increased correlation to first cousins compared to aunts in Figure 3C (and Figure 3\u2014figure supplement 1D) is hardly reproduced in the model. Similarly, the correlations to the removed side-branch seem to be about equal for all generations in the model, while the data indicates increased intra-generational correlations. It would be helpful if the authors comment on and explain such deviations or limitations of the model.\n\n2) As a main assumption of the authors is that MYCN over-expression disrupts the circadian clock which has been previously linked to the inheritance patterns of cell cycle length, they should validate this in the cell line used. This could be done for example by quantifying BMAL1 expression in the presence/absence of doxycycline (see Figure 4\u2014figure supplement 1A.\n\nReviewer #3:\n\nKuchen et al. have developed an interesting and general model that can explain the high degree of intra-generational correlation in cell cycle times that have been observed in multiple systems. First, using Bayesian inference on their own time-lapse data, they find that a model of two unidirectionally coupled heritable components that affect cell-cycle time best explains their data. They go on to propose that these components can be cell size and cell-cycle speed, provided that growth and division are coupled via a minimum size checkpoint. They then verify this model through perturbation experiments. Although the paper appears to be of general interest to eLife readers, there are several points that require clarification before publication.\n\n1) Representation of data. The authors present 3 repeats of the time-lapse microscopy for neuroblastoma TET21N cell lineages. (Figure 1E). For the Bayesian analysis (Figure 2) they only show the different models plotted against Repeat 1 in the main and supplemental figures (which appears to be the bottom dataset of Figure 1E \u2013 it would be helpful if the different repeats were labelled in this figure). However, there appears to be significant differences between the 3 repeats shown in Figure 1E. Although it is difficult to see (in part because the horizontal line across each axis is at a different value of the Cross correlation coefficient \u2013 how was this value selected?) it appears that in repeats 2 and 3 the level of correlation in distant side branches is much lower (around 0). This appears particularly worrying given the results of the Bayesian analysis for Model VII (Figure 2\u2014figure supplement 1). Although this model results in no correlation past first cousins, it gives the best fit to data for repeat 2 and 3 (better in fact than model 5, Figure 2\u2014figure supplement 1), and only fails to reproduce replicate 1. This suggests that for 2 out of 3 datasets a model that assumes no correlations past first cousins is being selected as the best model from the Bayesian analysis. The authors should address this issue, and show plots of the Bayesian analysis against all 3 repeats.\n\nIn the rest of the figures, which dataset chosen is not consistent. Although they do display a fit of their growth/progression model to repeat 1 and 2 in the Figure 3\u2014figure supplement 1, they now chose repeat 3 to display in Figure 3 \u2013 which appears to be the best fit to the model. In Figure 4, panel C shows cell-cycle lengths for repeat 3, but it is not clear which repeat(s) is/are used in the calculation of the correlation ratios. It would be helpful if the authors were consistent with their data selection in the main figures and supplements throughout the paper.\n\n2) Experimental evidence for cell size/cell cycle checkpoint model. The authors relate latent variables x1 and x2 to cell size and the cycling of cell cycle factors respectively. However, since these quantities are not dynamically tracked throughout cell growth, I have some questions about the authors' interpretation and model. First, the model assumes the existence of a size threshold. If size does not affect cell cycle progression (another assumption), that suggests small-born cells are under a sizer-type control, whereas large-born cells (progression limited) are under a timer-type control. Such a model seems difficult to square with ongoing work in other organisms, which typically find adder-type (many single-cell microbes but also a number of mammalian cell lines, cf. Cadart et al., 2018) or sizer-type (e.g. fission yeast) control. Could the authors comment on how their model is biologically justified and how does it relate to alternative models of cell growth? Timer control is usually not considered because, on its own, it does not generate stable cell size. Indeed, in the appendix the authors note that, in the progression-limited regime, their model generates cells that are too large, so they implemented logistic, rather than exponential growth. In my understanding, this effectively implements a sizer again. What evidence do the authors have for these assumptions?\n\nOn the other hand, in subsection \u201cEffects ofmolecular perturbations on cell-cycle correlations correctly predicted by the model\u201d the authors claim that the growth of MYCN-inhibited cells is not affected. How did the authors verify this? If growth is logistic, as in the model, then growth rate is clearly affected beyond a certain size. Naively, I would also expect slower growth rates if growth is exponential and cell size is homeostatic. Additionally, the effects on cell size due to the addition of rapamycin appears weak (Figure 4B) \u2013 Is it possible to quantify this difference, with an estimation of errors?\n",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b1202719-e028-4418-8ca0-7a89ad069a04",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C1",
+      "claim": "TET21N neuroblastoma cells were imaged and tracked for up to ten generations during exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "To study how far intra-generational cell-cycle correlations extend within cell pedigrees, we generated extensive lineage trees by imaging and tracking TET21N neuroblastoma cells for up to ten generations during exponential growth (Figure 1A, Figure 1\u2014video 1, Figure 1\u2014source data 1 and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental procedure of imaging and tracking cells, which is a direct observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "127b0664-b724-447f-8325-d1f9a7b05a7e",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C2",
+      "claim": "Autonomous cycling of TET21N cells is controlled by ectopic expression of the MYC-family oncogene MYCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Autonomous cycling of these cells is controlled by ectopic expression of the MYC-family oncogene MYCN, overcoming the restriction point and thus mimicking the presence of mitogenic stimuli (Ryl et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ryl et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "7c440829-6572-42ab-bd86-2a1d4c7ff8b3",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C3",
+      "claim": "High MYCN downregulated circadian clock genes in TET21N cells.",
+      "claim_type": "EXPLICIT",
+      "source": "High MYCN also downregulated circadian clock genes (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "5e15c00e-cc86-48d7-8c43-0ac7004c84d7",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C4",
+      "claim": "The distribution of cycle lengths was constant throughout the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of cycle lengths (Figure 1B and Figure 1\u2014figure supplement 1B) was constant throughout the experiment (Figure 1C and Figure 1\u2014figure supplement 1C) and similar across lineages (Figure 1\u2014figure supplement 1D), showing absence of experimental drift and of strong founder cell effects, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in multiple figures (1B, 1C, and supplements).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "fa720f90-f0c4-4569-9324-748763cb2bee",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C5",
+      "claim": "The distribution of cycle lengths was similar across lineages, showing absence of strong founder cell effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of cycle lengths (Figure 1B and Figure 1\u2014figure supplement 1B) was constant throughout the experiment (Figure 1C and Figure 1\u2014figure supplement 1C) and similar across lineages (Figure 1\u2014figure supplement 1D), showing absence of experimental drift and of strong founder cell effects, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "cd249023-5694-4bb5-be31-d9494a66b6c4",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C6",
+      "claim": "Lineage trees were truncated after the last generation completed by the vast majority (>95%) of lineages to avoid censoring bias.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine cycle-length correlations without censoring bias caused by finite observation time (Figure 1\u2014figure supplement 3A; Sandler et al., 2015), we truncated all trees after the last generation completed by the vast majority (>95%) of lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision supported by citation to Sandler et al., 2015 and data in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "c75b8afa-6e92-4889-90ad-2993ca8dd227",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C7",
+      "claim": "The resulting lineage trees were 5\u20137 generations deep.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting trees were 5\u20137 generations deep, enabling us to reliably calculate Spearman rank correlations between relatives up to second cousins (Figure 1D,E and Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "a9484d73-d48e-4693-bb70-d19b7a3fdfb6",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C8",
+      "claim": "Cycle-length correlations of cells with their ancestors decreased rapidly with each generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycle-length correlations of cells with their ancestors decreased rapidly with each generation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "1ef6c9d6-ac96-46a0-9099-c37bedee249f",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C9",
+      "claim": "The correlations increased when moving down from ancestors along side-branches\u2014from the grandmother toward the first cousins and also from the great-grandmother toward the second cousins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the correlations increased again when moving down from ancestors along side-branches\u2014from the grandmother toward the first cousins and also from the great-grandmother toward the second cousins (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "248795b1-6b0c-491f-97af-a04949d52bcb",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C11",
+      "claim": "The actually observed cousin correlations are much larger than expected from simple inheritance of cell-cycle length alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The actually observed cousin correlations are much larger, confirming previous observations on first cousins as summarized in Sandler et al. (2015) and extending them to second cousins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of data to theoretical expectations and citation to Sandler et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "3bc98f40-a901-4cf7-bac2-5e15e1e5c21c",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C12",
+      "claim": "The discrepancy between simple theoretical expectation and experimental data was not due to spatial inhomogeneity or temporal drift in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy between simple theoretical expectation and experimental data was not due to spatial inhomogeneity or temporal drift in the data (Figure 1; Figure 1\u2014figure supplement 3C-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control analyses shown in Figure 1 and Figure 1\u2014figure supplement 3C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "1c6ce137-7f36-458e-9f6c-49e76bb2ba98",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C13",
+      "claim": "The lineage trees show long-ranging intra-generational correlations that cannot be explained by the inheritance of cell-cycle length.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the lineage trees show long-ranging intra-generational correlations that cannot be explained by the inheritance of cell-cycle length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of observed data to theoretical expectations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "a53de48a-0cb4-4071-8a67-385e3636da42",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C14",
+      "claim": "More than one heritable factor is required to generate the observed cell-cycle correlations in T cell lineage trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical work has shown that more than one heritable factor is required to generate the observed cell-cycle correlations in T cell lineage trees, while the nature of these heritable factors has remained unclear (Markham et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Markham et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "3d12f6e6-a249-4651-8022-ddafb9fcc4fe",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C15",
+      "claim": "High intra-generational correlations in the face of weak ancestral correlations have been observed in cells as diverse as bacteria, cyanobacteria, lymphocytes and mammalian cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "High intra-generational correlations in the face of weak ancestral correlations have been observed in cells as diverse as bacteria (Powell, 1958), cyanobacteria (Yang et al., 2010), lymphocytes (Markham et al., 2010) and mammalian cancer cells (Staudte et al., 1984; Sandler et al., 2015; Chakrabarti et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "47564978-157f-41d4-a7db-5431ac8784e1",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C16",
+      "claim": "The ubiquity of the puzzling phenomenon of high intra-generational correlations suggests that it may help reveal basic principles that control cell-cycle duration.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquity of this puzzling phenomenon suggests that it may help reveal basic principles that control cell-cycle duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the observed ubiquity of the phenomenon.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "bddda731-007d-4e5b-a180-bac5bbc14195",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C17",
+      "claim": "In proliferating mammalian cells in culture, the circadian clock has been found to be entrained by the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in proliferating mammalian cells in culture, the circadian clock has been found to be entrained by the cell cycle (Bieler et al., 2014; Feillet et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bieler et al., 2014 and Feillet et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "f585ae01-0350-4138-a5a2-f5c68c6dd815",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C18",
+      "claim": "The circadian clock is strongly damped or even abrogated by oncogenes such as MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the circadian clock is strongly damped or even abrogated by oncogenes such as MYC (Altman et al., 2015; Shostak et al., 2016) yet MYC-driven cancer cells retain high intra-generational correlations (Ryl et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Altman et al., 2015 and Shostak et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "0790a33c-eaa6-4335-975f-c5ad2c5f9ff0",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C19",
+      "claim": "MYC-driven cancer cells retain high intra-generational correlations despite circadian clock disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the circadian clock is strongly damped or even abrogated by oncogenes such as MYC (Altman et al., 2015; Shostak et al., 2016) yet MYC-driven cancer cells retain high intra-generational correlations (Ryl et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ryl et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "28211d94-a6fa-4571-a540-7312300ebd62",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C20",
+      "claim": "A minimal requirement for maintaining cell size is that cells reach a critical size before dividing, which can be achieved by delaying S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "A minimal requirement for maintaining cell size is that cells reach a critical size before dividing, which can be achieved by delaying S phase (Shields et al., 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shields et al., 1978.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "ff3e6fb3-584b-4653-b734-d29c2680967b",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C21",
+      "claim": "The simplest model that generated high intra-generational correlations was based on the independent inheritance of two latent variables (Model III).",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest model that generated high intra-generational correlations was based on the independent inheritance of two latent variables (Model III; Figure 2C, cyan dots), whereas one-variable models failed to meet this criterion (Model II, Figure 2C, blue dots and Model I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model comparison shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "d3353e35-5b22-40c6-859a-50517f4b396f",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C22",
+      "claim": "Model III consistently overestimated ancestral correlations and hence its relative evidence was low (<10% for all data sets).",
+      "claim_type": "EXPLICIT",
+      "source": "However, Model III consistently overestimated ancestral correlations and hence its relative evidence was low (<10% for all data sets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Bayesian model comparison using the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "4ae0440d-0828-4958-9749-877ed23bfdf0",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C25",
+      "claim": "In Model V, both latent variables had long-ranging memories, with \u223c50% decay over 2\u20133 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Model V produced a remarkable inheritance pattern (Figure 2D): Individually, both latent variables had long-ranging memories, with \u223c50% decay over 2\u20133 generations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of Model V shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "4447bf89-d5a7-47ac-86e2-7d24e6a0d147",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C26",
+      "claim": "The negative unidirectional coupling in Model V cross-correlated the variables negatively along an ancestral line, resulting in cycle-length correlations that essentially vanished after one generation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the negative unidirectional coupling cross-correlated the variables negatively along an ancestral line, resulting in cycle-length correlations that essentially vanished after one generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of Model V properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "e163b49d-512c-4ea4-be82-d4a42a112a26",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C27",
+      "claim": "The coexistence of rapidly decaying ancestral correlations and extended intra-generational correlations can be explained by the inheritance of two latent variables, one of which inhibits the other.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the coexistence of rapidly decaying ancestral correlations and extended intra-generational correlations can be explained by the inheritance of two latent variables, one of which inhibits the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the BAR model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "6c1de770-7f42-4acd-a584-d377a5b90ce4",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C28",
+      "claim": "During symmetric cell division, both cell size and regulators of cell-cycle progression are passed on from the mother to the daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During symmetric cell division, both cell size and regulators of cell-cycle progression are passed on from the mother to the daughter cells (Spencer et al., 2013; Yang et al., 2017; Arora et al., 2017; Barr et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "78551225-e6d6-4001-a16d-9601fb2e98ef",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C29",
+      "claim": "Growth and cell-cycle progression can be separately manipulated experimentally in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, growth and cell-cycle progression can be separately manipulated experimentally in mammalian cells (Fingar et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fingar et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "25445ff5-59dd-4022-aea0-af36fdad76ef",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C30",
+      "claim": "Cells continue to grow in size when regulatory license is withheld, for example in the absence of mitogens, and growth is not otherwise constrained.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, cells continue to grow in size when regulatory license is withheld, for example in the absence of mitogens, and growth is not otherwise constrained, for example by mechanical force or growth inhibitors (Fingar et al., 2002; Conlon and Raff, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fingar et al., 2002 and Conlon and Raff, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "de92ed88-42ea-49b1-984f-8fe3ddc741ff",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C31",
+      "claim": "If a delayed regulatory license prolongs the mother's cell cycle, it will grow large, and by size inheritance, its daughters will be large at birth, reach a size sufficient for division quickly and hence may have shorter cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction alone implies an effect of one inherited variable, cycle progression, on the other, cell growth, that anti-correlates subsequent cell cycles (as required by BAR model V): If a delayed regulatory license prolongs the mother's cell cycle, it will grow large. By size inheritance, its daughters will be large at birth, reach a size sufficient for division quickly and hence may have shorter cell cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of the growth-progression model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "e4358118-ab34-4bb6-8b54-7456c3009bf3",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C32",
+      "claim": "The growth-progression model reproduced the cycle-length distribution and the ancestral and intra-generational correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameterized model yielded a stationary cell size distribution (Figure 3\u2014figure supplement 1B) and reproduced the cycle-length distribution (Figure 3B and Figure 3\u2014figure supplement 1C) as well as the ancestral and intra-generational correlations (Figure 3C and Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model fits shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "50b32528-78b3-473f-8de4-9eca4fa0b395",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C33",
+      "claim": "The dynamics of cell growth and cell-cycle progression, coupled only through a minimum-size requirement, account for the intricate cycle-length patterns in lineage trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the dynamics of cell growth and cell-cycle progression, coupled only through a minimum-size requirement, account for the intricate cycle-length patterns in lineage trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model fitting results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "6c2ca54a-94b9-4d73-b865-787ae231c9ef",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C34",
+      "claim": "Individual cell cycles in the model are either growth-limited (division happens upon reaching the minimum size) or progression-limited (the cell grows beyond the minimum size until the cycle is completed).",
+      "claim_type": "EXPLICIT",
+      "source": "Individual cell cycles in the model are either growth-limited, that is division happens upon reaching the minimum size, or progression-limited, that is the cell grows beyond the minimum size until the cycle is completed (Figure 3D and Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model behavior shown in figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "c9034b2c-771b-4484-ae27-8eef7e9d4fa7",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C35",
+      "claim": "If both mother and daughter are progression-limited, their cycles are positively correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "If both mother and daughter are progression-limited (i.e., the threshold size is exceeded by both), their cycles are positively correlated (Figure 3E, green dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulation results shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "c5743473-40ab-48cd-bd69-18e73845a988",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C36",
+      "claim": "Mother-daughter pairs that involve at least one growth limitation show near-zero or negative correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, all mother-daughter pairs that involve at least one growth limitation show near-zero (Figure 3E, cyan dots) or negative correlations (Figure 3E, magenta and black dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulation results shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "344de7d4-9f08-4140-93d5-db1de1d0392c",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C37",
+      "claim": "Cousin correlations are carried specifically by cousins that descend from a grandmother with a progression-limited cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "While cousins are positively correlated overall, this correlation is carried specifically by cousins that descend from a grandmother with a progression-limited cell cycle (Figure 3F, blue dots), whereas cousins stemming from a growth-limited grandmother are hardly correlated (Figure 3F, orange dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulation results shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "a69d4c68-6bbe-4338-b0bd-3226d862c509",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C38",
+      "claim": "Growth inhibition increased cousin correlations relative to mother-daughter correlations, whereas slowing cell-cycle progression decreased these correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using the model to simulate perturbation experiments (Figure 3\u2014source data 1), we found that growth inhibition increased cousin correlations relative to mother-daughter correlations, whereas slowing cell-cycle progression decreased these correlations (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model predictions shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "35c81788-3bee-4217-acb6-748abc1c0713",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C39",
+      "claim": "Lowering MYCN slowed cell-cycle progression while allowing considerable cell growth, as evidenced by cells growing to larger average size over longer and more variable cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells grew to larger average size (Figure 4B, blue lines) over longer and more variable cell cycles (Figure 4C). These data show that lowering MYCN slowed cell-cycle progression while allowing considerable cell growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "43f35aff-6eb7-44f4-8306-44b0f37330f2",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C40",
+      "claim": "Expression of mTOR was not lowered by MYCN inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Further consistent with this phenotype, expression of mTOR, a central regulator of metabolism and growth (Fingar et al., 2002), was not lowered (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "bac12635-062f-4560-92de-141d99b93c88",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C41",
+      "claim": "Rapamycin treatment reduced cell size by a small but reproducible amount.",
+      "claim_type": "EXPLICIT",
+      "source": "In a separate experiment, we inhibited cell growth by applying the mTOR inhibitor rapamycin, which reduced cell size by a small but reproducible amount (Figure 4B, red lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "56a9415c-d5ed-4a58-a5af-8338e77b0396",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C42",
+      "claim": "Rapamycin treatment lengthened the cell cycle slightly without changing MYCN protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This treatment also lengthened the cell cycle slightly (Figure 4C) but without changing MYCN protein levels (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 4C and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "4623797b-7180-4630-80b5-cb1b83878289",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C43",
+      "claim": "Lowering MYCN and inhibiting mTOR are orthogonal perturbations that act on cell-cycle progression and cell growth, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, lowering MYCN and inhibiting mTOR are orthogonal perturbations that act on cell-cycle progression and cell growth, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "17d53c95-4e7e-4891-80e9-3c7151b90857",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C44",
+      "claim": "Lowering MYCN decreased intra-generational correlation and removed second-cousin correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the growth-progression model, these perturbations resulted in markedly different cycle-length correlation patterns within lineage trees (Figure 4D,E and Figure 4\u2014figure supplement 1C,D): Lowering MYCN decreased intra-generational correlation and, in particular, removed second-cousin correlations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 4D,E and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "c069e36e-e203-4c23-bc83-65af97fe8ac4",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C45",
+      "claim": "Rapamycin treatment strongly increased intra-generational correlations and caused ancestral correlations to decline only weakly.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, rapamycin treatment strongly increased intra-generational correlations and caused ancestral correlations to decline only weakly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data shown in Figure 4D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "4ec549c8-8d0f-4860-bc4c-5a805bf03d32",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C46",
+      "claim": "MYCN knockdown cells grew larger, requiring logistic regulation of growth rate at large cell sizes to obtain a stable cell-size distribution in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "MYCN knockdown cells grew larger; to obtain a stable cell-size distribution for the corresponding model fits, we implemented logistic regulation of growth rate at large cell sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations and modeling requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "088a8c7f-5675-43ad-9cfa-2d3d7b285b02",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C48",
+      "claim": "The vast majority of cell cycles were progression-limited after MYCN inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the vast majority of cell cycles were progression-limited (Figure 4F and Figure 4\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulation results shown in Figure 4F and supplement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "e9859dd9-f317-49f6-ad30-70a61ac1e242",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C51",
+      "claim": "Rapamycin treatment increased the fraction of growth-limited cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, rapamycin treatment increased the fraction of growth-limited cell cycles (Figure 4F and Figure 4\u2014figure supplement 1F) and inheritance of cell-cycle progression speed, thus causing increased ancestral and intra-generational correlations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulation results shown in Figure 4F and supplement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "04baab73-fd4b-4432-8583-b7558b559382",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C52",
+      "claim": "Growth may be limiting primarily for rapidly proliferating cell types, even without specific growth inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that growth may be limiting primarily for rapidly proliferating cell types, even without specific growth inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "5a87063d-7540-4c56-9d32-627d732e7bf9",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C53",
+      "claim": "Mouse embryonic stem cells proliferate much faster than the neuroblastoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed time-lapse microscopy data of non-transformed mouse embryonic stem cells (Filipczyk et al., 2015) that proliferate much faster than the neuroblastoma cells (Figure 5A and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of data from Filipczyk et al., 2015 shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "ad98336f-d6af-47fc-98df-51459d691896",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C54",
+      "claim": "Side-branch correlations of cycle length were large in mouse embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Side-branch correlations of cycle length were again large (Figure 5B Figure 5\u2014figure supplement 1B), as seen in the previous data except for the MYCN-inhibited cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "26e40327-23aa-4a1f-8019-29fd669acf8c",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C55",
+      "claim": "The BAR model required two negatively coupled variables to account for the mouse embryonic stem cell data.",
+      "claim_type": "EXPLICIT",
+      "source": "As before, the BAR model required two negatively coupled variables to account for these data (Figure 5C, Figure 5\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model comparison shown in Figure 5C and supplements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "132714b8-7d2b-4ed0-aaf6-568a04580db8",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C56",
+      "claim": "The majority (\u223c60%) of cell cycles were limited by growth in mouse embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the growth-progression model to the data (Figure 5A,B), we found that the majority (\u223c60%) of cell cycles were limited by growth (Figure 5D, Figure 5\u2014figure supplement 1C), indicating that cycle length of fast proliferating mammalian cells is, to a large extent, controlled by growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model fitting results shown in Figure 5D and supplement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "75d0f8fe-ed04-44bb-8fd2-af4d4591636e",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C57",
+      "claim": "Cycle length of fast proliferating mammalian cells is, to a large extent, controlled by growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the growth-progression model to the data (Figure 5A,B), we found that the majority (\u223c60%) of cell cycles were limited by growth (Figure 5D, Figure 5\u2014figure supplement 1C), indicating that cycle length of fast proliferating mammalian cells is, to a large extent, controlled by growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model fitting results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "fc8dc655-ae5c-40bd-8232-6ecdb2b9e870",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C58",
+      "claim": "The seemingly paradoxical pattern of cell-cycle lengths in lineage trees can be accounted for by the inheritance of two types of quantities: resources accumulated during the cell cycle (cell 'size') and regulators governing the speed of cell-cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we showed that the seemingly paradoxical pattern of cell-cycle lengths in lineage trees, with rapidly decaying ancestral and long-range intra-generational correlations, can be accounted for by the inheritance of two types of quantities: resources accumulated during the cell cycle (cell 'size') and regulators governing the speed of cell-cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the presented data and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "bc50c7c0-9d9f-48d6-8312-d3b93c057730",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C59",
+      "claim": "The fact that cell size and cell-cycle progression are fundamental processes in dividing cells may help explain the ubiquity of the paradoxical cell-cycle pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that these are fundamental processes in dividing cells may help explain the ubiquity of the paradoxical cell-cycle pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "24da2411-784e-4509-aee8-091646dc7bc6",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C60",
+      "claim": "Targeted experimental perturbations of cell growth and cell-cycle progression support the growth-progression model.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted experimental perturbations of cell growth and cell-cycle progression support our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental perturbation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "9e9dd272-4d7a-42a3-a173-baa544b6e79e",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C61",
+      "claim": "Modulation of the cell cycle by the circadian clock has been suggested as an alternative mechanism underlying the observed cell-cycle variability and cousin correlations, with strongest experimental evidence to date for cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative mechanism underlying the observed cell-cycle variability and cousin correlations, modulation of the cell cycle by the circadian clock has been suggested, with strongest experimental evidence to date for cyanobacteria (Sandler et al., 2015; Mosheiff et al., 2018; Py et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "2f0f262c-f386-45bf-9260-5a9be4bd6494",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C62",
+      "claim": "Unlike cyanobacteria, proliferating mammalian cells show entrainment of the circadian clock to the cell cycle with periods well below 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike cyanobacteria, proliferating mammalian cells show entrainment of the circadian clock to the cell cycle with periods well below 24 hr (Bieler et al., 2014; Feillet et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bieler et al., 2014 and Feillet et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "02b29987-3140-470b-aae4-504c5d85ef77",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C63",
+      "claim": "All data sets which displayed long-range correlation patterns selected a BAR model featuring long-range inheritance of two memory variables, which is masked in mother-daughter pairs by an anticorrelating interaction between them.",
+      "claim_type": "EXPLICIT",
+      "source": "All data sets which displayed long-range correlation patterns (control replicate rep1 and rapamycin treatment of neuroblastoma cells as well as ESCs) selected a BAR model featuring long-range inheritance of two memory variables, which is masked in mother-daughter pairs by an anticorrelating interaction between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the Bayesian model selection analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "91bf2eb9-f76c-49d8-a2a7-257c31bcd356",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C64",
+      "claim": "Size inheritance is predicted to be particularly long-range by the fits of the growth-progression model to the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Size inheritance is predicted to be particularly long-range by the fits of the growth-progression model to the experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model fitting results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "47b88f63-eae0-4f8f-97c8-ce96a002745e",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C65",
+      "claim": "Long-range memory of size emerges because growth does not force cell-cycle progression, allowing cells to grow large in progression-limited cycles and then pass on size over several generations.",
+      "claim_type": "EXPLICIT",
+      "source": "This memory emerges because growth does not force cell-cycle progression, allowing cells to grow large in progression-limited cycles and then pass on size over several generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "1a9dcdfa-f068-4e5f-818e-aa40b7acead6",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C66",
+      "claim": "Recent work has shown the existence of negative feedback of cell size on growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work on this problem has shown the existence of negative feedback of cell size on growth rate (Ginzberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ginzberg et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "d7bbae27-0bb5-44af-958b-1270d1330709",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C67",
+      "claim": "The results remain robust when implementing logistic dependence of growth rate on size in the growth-progression model.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that our results remain robust when implementing a simple form of such a feedback (logistic dependence of growth rate on size) in the growth-progression model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on additional model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "ceb600e7-d1ef-4acb-9df3-9bbb315d1927",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C68",
+      "claim": "Growth of many mammalian cells during the cell cycle adds a volume that only weakly increases with cell volume at birth (termed near-adder behavior).",
+      "claim_type": "EXPLICIT",
+      "source": "Another recent study has shown that growth of many mammalian cells during the cell cycle adds a volume that only weakly increases with cell volume at birth (termed near-adder behavior, Cadart et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cadart et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "e0d7e7a0-4072-40e5-9d70-4c04542ed590",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C69",
+      "claim": "Near-adder behavior appears to be caused by a combination of growth-rate regulation and cell-size effects on cell-cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior appears to be caused by a combination of growth-rate regulation and cell-size effects on cell-cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the interpretation of previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "ba855d8b-9e6e-49d1-ab3e-4193482be0f1",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C70",
+      "claim": "Factoring in the cell-cycle length correlations studied here will help uncover the mechanistic details of cell size regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that factoring in the cell-cycle length correlations studied here will help uncover the mechanistic details of cell size regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "a9495704-442a-4e59-b88b-5476542e93aa",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C71",
+      "claim": "The inference approach could be extended to include finely resolved data on cell-cycle phases as well as multiple cell fates via asymmetric division and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we envisage that our inference approach could be extended to include finely resolved data on cell-cycle phases (Chao et al., 2019) as well as multiple cell fates via asymmetric division and differentiation (Duffy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "e258949d-7ce4-4892-b74a-089a9fcb0b05",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C72",
+      "claim": "Cells of the same type growing in homogeneous conditions often have highly heterogeneous cycle lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells of the same type growing in homogeneous conditions often have highly heterogeneous cycle lengths (Smith and Martin, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Smith and Martin, 1973.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "37d5010c-2ec7-4666-8791-206768e16e36",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C73",
+      "claim": "The minimal duration of the cell cycle will be determined by the maximal cellular growth rate in a given condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimal duration of the cell cycle will be determined by the maximal cellular growth rate in a given condition (Kafri et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kafri et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "1acf3050-80a3-4a81-924f-98280bf956fe",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C74",
+      "claim": "Many cells, in particular in multicellular organisms, do not grow at maximum rate, and their cycle length appears to be set by the progression of regulatory machinery through a series of checkpoints.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many cells, in particular, in multicellular organisms, do not grow at maximum rate, and their cycle length appears to be set by the progression of regulatory machinery through a series of checkpoints (Novak et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Novak et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "204bcf41-8e75-42c1-acd7-a022c1366245",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C75",
+      "claim": "Cycle lengths are similar in sister cells, which may be due to the inheritance of molecular regulators across mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such studies across many cell types have found that cycle lengths are similar in sister cells, which may be due to the inheritance of molecular regulators across mitosis (Spencer et al., 2013; Mitchell et al., 2018; Yang et al., 2017; Barr et al., 2017; Arora et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "96650527-527e-4215-b9e0-4b840a6e0838",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C76",
+      "claim": "Ancestral correlations in cycle length fade rapidly, often disappearing between grandmother and granddaughter cells, or already between mother and daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, ancestral correlations in cycle length fade rapidly, often disappearing between grandmother and granddaughter cells, or already between mother and daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "77c57c32-1768-4a3e-94d6-627799d748e3",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C77",
+      "claim": "The cycle lengths of cousin cells are found to be correlated, indicating that the grandmothers exert concealed effects through at least two generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, however, the cycle lengths of cousin cells are found to be correlated, indicating that the grandmothers exert concealed effects through at least two generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "bf31cfd0-ec86-4663-a9f3-f5e933891f06",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C78",
+      "claim": "Animal cells can grow very large without dividing.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, animal cells can grow very large without dividing (Conlon and Raff, 2003), and recent precise measurements suggest that growth control involves both modulation of growth rate and cell-cycle length (Sung et al., 2013; Tzur et al., 2009; Cadart et al., 2018; Ginzberg et al., 2018; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Conlon and Raff, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "e65f207b-11b7-4494-b7e7-38d07a0b1fe3",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C79",
+      "claim": "Recent precise measurements suggest that growth control involves both modulation of growth rate and cell-cycle length.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, animal cells can grow very large without dividing (Conlon and Raff, 2003), and recent precise measurements suggest that growth control involves both modulation of growth rate and cell-cycle length (Sung et al., 2013; Tzur et al., 2009; Cadart et al., 2018; Ginzberg et al., 2018; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "63fff37f-d3d7-455a-802c-5fc40f78d16c",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C80",
+      "claim": "PER1, CRY2, NR1D1, and PER3 are differentially expressed in TET21N cells with high versus low MYCN expression with p values < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Test for differential expression of circadian clock genes in TET21N cells with high versus low MYCN expression using edgeR (Robinson and Smyth, 2008), based on estimating dispersion for each gene using the negative binomial distribution. Differentially expressed genes are PER1, CRY2, NR1D1, and PER3, with p values < 0.05.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential expression analysis shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "2a2ed543-5e23-40a8-aeab-9ddeae369c8a",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "claim_id": "C81",
+      "claim": "The circadian clock module is significantly downregulated in TET21N cells with high MYCN (p value = 0.016).",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Comparison of expression of the entire circadian clock module (via averaged fold change) with 104 randomly drawn gene modules with comparable dispersion. The circadian clock module (black dot) is significantly downregulated (p value = 0.016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene module analysis shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "274009c3-e9ae-4283-a6f7-58b781602ced",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TET21N neuroblastoma cells with MYCN-driven autonomous cycling were imaged for up to 10 generations, yielding lineage trees 5-7 generations deep after truncation to avoid censoring bias. The cell cycle length distribution was constant over time and similar across lineages, with high MYCN downregulating circadian clock genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 describe the experimental setup and basic data quality controls. The imaging methodology, truncation strategy (C6), and validation of temporal/spatial consistency (C4, C5) are well-documented with appropriate figures. The circadian clock downregulation (C3) is supported by differential expression analysis with statistical testing (C80, C81).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "5e3a0ca9-ffe9-4214-a228-afb969b913b8",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cell cycle length correlations decay rapidly along ancestral lines but increase along side-branches toward cousins. The observed cousin correlations are much larger than expected from simple inheritance of cell-cycle length alone, and this pattern cannot be explained by spatial inhomogeneity or temporal drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 describe the core experimental observation. The correlation patterns are shown in Figure 1E with bootstrap confidence intervals. Control analyses (C12, Figure 1\u2014figure supplement 3C-E) rule out confounding factors. The comparison to theoretical expectations (C11) is appropriate, though the theoretical model assumptions could be more explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "e0eb2443-de00-4d3f-ad32-2c31aeeecdea",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The phenomenon of high intra-generational correlations with weak ancestral correlations is ubiquitous across diverse cell types and persists in MYC-driven cancer cells despite circadian clock disruption. Prior theoretical work suggests multiple heritable factors are required, though the circadian clock's role in mammalian cells is unclear given entrainment by the cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 accurately summarize prior literature with appropriate citations. The statements about circadian clock entrainment (C17) and disruption by MYC (C18) are well-supported by cited work. However, C16 is speculative about revealing \"basic principles\" and should be treated cautiously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "b9d3e13c-0e6a-4ced-b661-fe460966a6c0",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bayesian model selection identified Model V with two latent variables coupled by negative unidirectional inhibition as the best explanation for the correlation patterns. Both variables show long-range memory (~50% decay over 2-3 generations), but negative coupling causes rapid decay of cycle-length correlations along ancestral lines while preserving intra-generational correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 describe the BAR model selection results. The Bayesian evidence calculations (Figure 2B) appropriately penalize model complexity. Model V is consistently favored across replicates. However, the relative evidence for Model V is not overwhelmingly high (<10% for some datasets per C22), and Model VII performs comparably for some replicates (Figure 2\u2014figure supplement 1), suggesting some uncertainty in model selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "9e48fe11-a3bd-49fe-92e4-63bcf413b6b4",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A growth-progression model where cells inherit both size and cell-cycle progression speed, coupled through a minimum-size checkpoint, reproduces the observed correlation patterns. If regulatory license is delayed, mothers grow large and pass on size to daughters who then divide quickly, creating anti-correlation between generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 present the mechanistic growth-progression model. The model is grounded in established biology (C28-C30 with appropriate citations). The model successfully reproduces cycle-length distributions and correlation patterns (C32, Figure 3B-C). The mechanistic explanation for anti-correlation (C31) is logically sound. However, the model involves several parameters fitted by ABC, and parameter identifiability is not fully addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "638f4fe6-4d97-42dd-b152-883a3d8fff5a",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual cell cycles are either growth-limited or progression-limited. Mother-daughter pairs show positive correlation only when both are progression-limited; pairs involving growth limitation show near-zero or negative correlations. Cousin correlations are carried specifically by descendants of progression-limited grandmothers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 describe model predictions about the mechanistic basis of correlations. The classification into growth- vs. progression-limited cycles is clearly defined. The correlation patterns conditional on limitation type (Figure 3E-F) support the claims. However, these are model-based inferences rather than direct experimental observations, and experimental validation of the limitation status of individual cells would strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "92971a3b-7613-473c-b313-04178c8c7b99",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Model predictions were tested by orthogonal perturbations: MYCN inhibition slowed cell-cycle progression (cells grew larger over longer cycles) without affecting mTOR expression, while rapamycin treatment reduced cell size and slightly lengthened cycles without changing MYCN levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 describe perturbation experiments testing model predictions. The model prediction (C38, Figure 4A) is clear. The experimental perturbations are well-characterized: MYCN inhibition affects progression (C39, Figure 4B-C), mTOR expression is unchanged (C40), rapamycin affects growth (C41-C42), and MYCN is unchanged (C42). The orthogonality claim (C43) is supported by the data, though some cross-talk between pathways cannot be completely ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "d3dc117f-92be-4bb0-a412-2b7e20d5febf",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MYCN inhibition decreased intra-generational correlations and removed second-cousin correlations, while rapamycin treatment strongly increased intra-generational correlations and caused only weak decline in ancestral correlations, as predicted by the growth-progression model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 report the experimental outcomes of perturbations. The correlation patterns (Figure 4D-E) match model predictions (Figure 4A). The effects are qualitatively clear and consistent across replicates. This provides strong support for the growth-progression model. However, quantitative agreement could be better assessed, and confidence intervals for some correlations are wide.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "cf2f4326-6a28-4343-a2aa-002bf32670c1",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Model fitting to perturbed cells revealed that MYCN inhibition resulted in mostly progression-limited cycles, while rapamycin treatment increased the fraction of growth-limited cycles. Logistic growth regulation was required for MYCN-inhibited cells to maintain stable size distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C48, C51 describe model fits to perturbation data. The need for logistic growth regulation (C46) is a modeling requirement to achieve stability. The predictions about limitation types (C48, C51, Figure 4F) are model-based inferences consistent with the experimental observations. However, these are indirect inferences from correlation patterns rather than direct measurements of limitation status.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "aba688f1-2981-4760-a5c8-7143242c56b5",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Analysis of fast-proliferating mouse embryonic stem cells showed large side-branch correlations requiring two negatively coupled BAR variables. Model fitting revealed that ~60% of cycles were growth-limited, indicating that cycle length in fast-proliferating mammalian cells is largely controlled by growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 extend the analysis to ESCs. The hypothesis (C52) is reasonable. The ESC data (C53, from Filipczyk et al. 2015) shows similar correlation patterns (C54, Figure 5B). BAR model selection (C55, Figure 5C) and growth-progression model fitting (C56, Figure 5D) support the conclusions. However, C57 is a strong inference from model fitting rather than direct measurement, and the ~60% estimate has uncertainty that should be quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "aeeb040c-b5db-4841-9433-f382df680434",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The paradoxical pattern of rapidly decaying ancestral correlations with long-range intra-generational correlations can be explained by inheritance of cell size and cell-cycle progression speed. The fundamental nature of these processes may explain the ubiquity of this pattern, and experimental perturbations support the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 present the main conclusions. C58 is well-supported by the combined modeling and experimental evidence. C59 is speculative but reasonable. C60 accurately summarizes the perturbation experiments. The overall conclusion is supported, though alternative mechanisms (e.g., circadian clock in some contexts) are not definitively ruled out for all cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "5412fe65-6dd5-4fbd-94a6-93768207ce58",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While circadian clock modulation has been proposed as an alternative mechanism (strongest evidence in cyanobacteria), proliferating mammalian cells show entrainment of the circadian clock to the cell cycle with periods below 24 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 discuss alternative mechanisms. Both claims are supported by appropriate citations. The distinction between cyanobacteria and mammalian cells is important for contextualizing the current work. However, the possibility of circadian influence in mammalian cells is not completely excluded, only noted as less likely given entrainment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "595301b2-03d2-4631-8814-17057ef5df08",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "All datasets with long-range correlations selected BAR Model V with two memory variables masked by anti-correlation. The growth-progression model predicts particularly long-range size inheritance because growth does not force cell-cycle progression, allowing cells to grow large in progression-limited cycles and pass on size over generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 synthesize model selection results and mechanistic insights. C63 accurately summarizes BAR model selection across datasets. C64-C65 explain the mechanistic basis for long-range size memory. The logic is sound and consistent with model behavior. However, the claim of \"particularly long-range\" size inheritance (C64) could benefit from more quantitative comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "58e2d215-b682-4d56-b7f6-ab2b142aeafb",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Recent work shows negative feedback of cell size on growth rate and near-adder behavior in mammalian cells. The growth-progression model remains robust when implementing logistic growth regulation. Future work could extend the inference approach to include cell-cycle phases and asymmetric division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 discuss connections to recent literature and future directions. C66 and C68 accurately cite recent findings. C67 reports robustness analysis (Figure 4\u2014figure supplement 2). C69 interprets prior work reasonably. C70-C71 are speculative about future work but appropriate for a Discussion. The robustness to logistic growth (C67) is important for reconciling the model with recent findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "179f1b81-d2f8-4c7d-b312-7854589bc289",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge claims about cell cycle regulation, size control, and correlation patterns in lineage trees are established in the literature. Cells require a critical size for division, cycle lengths are heterogeneous, and sister cells show similar cycle lengths while ancestral correlations decay rapidly despite cousin correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C72-C79 present background knowledge with appropriate citations. These are well-established facts in the field and accurately represent prior work. The citations are appropriate and the statements provide necessary context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    },
+    {
+      "id": "3b410946-b287-493b-8fce-179299f22b1f",
+      "content_id": "974830e0-6d40-4c38-962f-faa74ef6b170",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Differential expression analysis shows that PER1, CRY2, NR1D1, and PER3 are differentially expressed (p < 0.05) in TET21N cells with high vs. low MYCN, and the circadian clock module as a whole is significantly downregulated (p = 0.016).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 report statistical analysis of circadian clock gene expression. The analysis uses appropriate methods (edgeR with negative binomial distribution). Individual gene p-values (C80) and module-level analysis (C81) both show significant downregulation. The p-value of 0.016 for the module is based on comparison to random gene sets, which is a reasonable approach. However, multiple testing correction for individual genes is mentioned but details are limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:46:01.029326Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b1202719-e028-4418-8ca0-7a89ad069a04",
+      "result_id": "274009c3-e9ae-4283-a6f7-58b781602ced"
+    },
+    {
+      "claim_id": "127b0664-b724-447f-8325-d1f9a7b05a7e",
+      "result_id": "274009c3-e9ae-4283-a6f7-58b781602ced"
+    },
+    {
+      "claim_id": "7c440829-6572-42ab-bd86-2a1d4c7ff8b3",
+      "result_id": "274009c3-e9ae-4283-a6f7-58b781602ced"
+    },
+    {
+      "claim_id": "5e15c00e-cc86-48d7-8c43-0ac7004c84d7",
+      "result_id": "274009c3-e9ae-4283-a6f7-58b781602ced"
+    },
+    {
+      "claim_id": "fa720f90-f0c4-4569-9324-748763cb2bee",
+      "result_id": "274009c3-e9ae-4283-a6f7-58b781602ced"
+    },
+    {
+      "claim_id": "cd249023-5694-4bb5-be31-d9494a66b6c4",
+      "result_id": "274009c3-e9ae-4283-a6f7-58b781602ced"
+    },
+    {
+      "claim_id": "c75b8afa-6e92-4889-90ad-2993ca8dd227",
+      "result_id": "274009c3-e9ae-4283-a6f7-58b781602ced"
+    },
+    {
+      "claim_id": "a9484d73-d48e-4693-bb70-d19b7a3fdfb6",
+      "result_id": "5e3a0ca9-ffe9-4214-a228-afb969b913b8"
+    },
+    {
+      "claim_id": "1ef6c9d6-ac96-46a0-9099-c37bedee249f",
+      "result_id": "5e3a0ca9-ffe9-4214-a228-afb969b913b8"
+    },
+    {
+      "claim_id": "248795b1-6b0c-491f-97af-a04949d52bcb",
+      "result_id": "5e3a0ca9-ffe9-4214-a228-afb969b913b8"
+    },
+    {
+      "claim_id": "3bc98f40-a901-4cf7-bac2-5e15e1e5c21c",
+      "result_id": "5e3a0ca9-ffe9-4214-a228-afb969b913b8"
+    },
+    {
+      "claim_id": "1c6ce137-7f36-458e-9f6c-49e76bb2ba98",
+      "result_id": "5e3a0ca9-ffe9-4214-a228-afb969b913b8"
+    },
+    {
+      "claim_id": "a53de48a-0cb4-4071-8a67-385e3636da42",
+      "result_id": "e0eb2443-de00-4d3f-ad32-2c31aeeecdea"
+    },
+    {
+      "claim_id": "3d12f6e6-a249-4651-8022-ddafb9fcc4fe",
+      "result_id": "e0eb2443-de00-4d3f-ad32-2c31aeeecdea"
+    },
+    {
+      "claim_id": "47564978-157f-41d4-a7db-5431ac8784e1",
+      "result_id": "e0eb2443-de00-4d3f-ad32-2c31aeeecdea"
+    },
+    {
+      "claim_id": "bddda731-007d-4e5b-a180-bac5bbc14195",
+      "result_id": "e0eb2443-de00-4d3f-ad32-2c31aeeecdea"
+    },
+    {
+      "claim_id": "f585ae01-0350-4138-a5a2-f5c68c6dd815",
+      "result_id": "e0eb2443-de00-4d3f-ad32-2c31aeeecdea"
+    },
+    {
+      "claim_id": "0790a33c-eaa6-4335-975f-c5ad2c5f9ff0",
+      "result_id": "e0eb2443-de00-4d3f-ad32-2c31aeeecdea"
+    },
+    {
+      "claim_id": "ff3e6fb3-584b-4653-b734-d29c2680967b",
+      "result_id": "b9d3e13c-0e6a-4ced-b661-fe460966a6c0"
+    },
+    {
+      "claim_id": "d3353e35-5b22-40c6-859a-50517f4b396f",
+      "result_id": "b9d3e13c-0e6a-4ced-b661-fe460966a6c0"
+    },
+    {
+      "claim_id": "4ae0440d-0828-4958-9749-877ed23bfdf0",
+      "result_id": "b9d3e13c-0e6a-4ced-b661-fe460966a6c0"
+    },
+    {
+      "claim_id": "4447bf89-d5a7-47ac-86e2-7d24e6a0d147",
+      "result_id": "b9d3e13c-0e6a-4ced-b661-fe460966a6c0"
+    },
+    {
+      "claim_id": "e163b49d-512c-4ea4-be82-d4a42a112a26",
+      "result_id": "b9d3e13c-0e6a-4ced-b661-fe460966a6c0"
+    },
+    {
+      "claim_id": "6c1de770-7f42-4acd-a584-d377a5b90ce4",
+      "result_id": "9e48fe11-a3bd-49fe-92e4-63bcf413b6b4"
+    },
+    {
+      "claim_id": "78551225-e6d6-4001-a16d-9601fb2e98ef",
+      "result_id": "9e48fe11-a3bd-49fe-92e4-63bcf413b6b4"
+    },
+    {
+      "claim_id": "25445ff5-59dd-4022-aea0-af36fdad76ef",
+      "result_id": "9e48fe11-a3bd-49fe-92e4-63bcf413b6b4"
+    },
+    {
+      "claim_id": "de92ed88-42ea-49b1-984f-8fe3ddc741ff",
+      "result_id": "9e48fe11-a3bd-49fe-92e4-63bcf413b6b4"
+    },
+    {
+      "claim_id": "e4358118-ab34-4bb6-8b54-7456c3009bf3",
+      "result_id": "9e48fe11-a3bd-49fe-92e4-63bcf413b6b4"
+    },
+    {
+      "claim_id": "50b32528-78b3-473f-8de4-9eca4fa0b395",
+      "result_id": "9e48fe11-a3bd-49fe-92e4-63bcf413b6b4"
+    },
+    {
+      "claim_id": "6c2ca54a-94b9-4d73-b865-787ae231c9ef",
+      "result_id": "638f4fe6-4d97-42dd-b152-883a3d8fff5a"
+    },
+    {
+      "claim_id": "c9034b2c-771b-4484-ae27-8eef7e9d4fa7",
+      "result_id": "638f4fe6-4d97-42dd-b152-883a3d8fff5a"
+    },
+    {
+      "claim_id": "c5743473-40ab-48cd-bd69-18e73845a988",
+      "result_id": "638f4fe6-4d97-42dd-b152-883a3d8fff5a"
+    },
+    {
+      "claim_id": "344de7d4-9f08-4140-93d5-db1de1d0392c",
+      "result_id": "638f4fe6-4d97-42dd-b152-883a3d8fff5a"
+    },
+    {
+      "claim_id": "a69d4c68-6bbe-4338-b0bd-3226d862c509",
+      "result_id": "92971a3b-7613-473c-b313-04178c8c7b99"
+    },
+    {
+      "claim_id": "35c81788-3bee-4217-acb6-748abc1c0713",
+      "result_id": "92971a3b-7613-473c-b313-04178c8c7b99"
+    },
+    {
+      "claim_id": "43f35aff-6eb7-44f4-8306-44b0f37330f2",
+      "result_id": "92971a3b-7613-473c-b313-04178c8c7b99"
+    },
+    {
+      "claim_id": "bac12635-062f-4560-92de-141d99b93c88",
+      "result_id": "92971a3b-7613-473c-b313-04178c8c7b99"
+    },
+    {
+      "claim_id": "56a9415c-d5ed-4a58-a5af-8338e77b0396",
+      "result_id": "92971a3b-7613-473c-b313-04178c8c7b99"
+    },
+    {
+      "claim_id": "4623797b-7180-4630-80b5-cb1b83878289",
+      "result_id": "92971a3b-7613-473c-b313-04178c8c7b99"
+    },
+    {
+      "claim_id": "17d53c95-4e7e-4891-80e9-3c7151b90857",
+      "result_id": "d3dc117f-92be-4bb0-a412-2b7e20d5febf"
+    },
+    {
+      "claim_id": "c069e36e-e203-4c23-bc83-65af97fe8ac4",
+      "result_id": "d3dc117f-92be-4bb0-a412-2b7e20d5febf"
+    },
+    {
+      "claim_id": "4ec549c8-8d0f-4860-bc4c-5a805bf03d32",
+      "result_id": "cf2f4326-6a28-4343-a2aa-002bf32670c1"
+    },
+    {
+      "claim_id": "088a8c7f-5675-43ad-9cfa-2d3d7b285b02",
+      "result_id": "cf2f4326-6a28-4343-a2aa-002bf32670c1"
+    },
+    {
+      "claim_id": "e9859dd9-f317-49f6-ad30-70a61ac1e242",
+      "result_id": "cf2f4326-6a28-4343-a2aa-002bf32670c1"
+    },
+    {
+      "claim_id": "04baab73-fd4b-4432-8583-b7558b559382",
+      "result_id": "aba688f1-2981-4760-a5c8-7143242c56b5"
+    },
+    {
+      "claim_id": "5a87063d-7540-4c56-9d32-627d732e7bf9",
+      "result_id": "aba688f1-2981-4760-a5c8-7143242c56b5"
+    },
+    {
+      "claim_id": "ad98336f-d6af-47fc-98df-51459d691896",
+      "result_id": "aba688f1-2981-4760-a5c8-7143242c56b5"
+    },
+    {
+      "claim_id": "26e40327-23aa-4a1f-8019-29fd669acf8c",
+      "result_id": "aba688f1-2981-4760-a5c8-7143242c56b5"
+    },
+    {
+      "claim_id": "132714b8-7d2b-4ed0-aaf6-568a04580db8",
+      "result_id": "aba688f1-2981-4760-a5c8-7143242c56b5"
+    },
+    {
+      "claim_id": "75d0f8fe-ed04-44bb-8fd2-af4d4591636e",
+      "result_id": "aba688f1-2981-4760-a5c8-7143242c56b5"
+    },
+    {
+      "claim_id": "fc8dc655-ae5c-40bd-8232-6ecdb2b9e870",
+      "result_id": "aeeb040c-b5db-4841-9433-f382df680434"
+    },
+    {
+      "claim_id": "bc50c7c0-9d9f-48d6-8312-d3b93c057730",
+      "result_id": "aeeb040c-b5db-4841-9433-f382df680434"
+    },
+    {
+      "claim_id": "24da2411-784e-4509-aee8-091646dc7bc6",
+      "result_id": "aeeb040c-b5db-4841-9433-f382df680434"
+    },
+    {
+      "claim_id": "9e9dd272-4d7a-42a3-a173-baa544b6e79e",
+      "result_id": "5412fe65-6dd5-4fbd-94a6-93768207ce58"
+    },
+    {
+      "claim_id": "2f0f262c-f386-45bf-9260-5a9be4bd6494",
+      "result_id": "5412fe65-6dd5-4fbd-94a6-93768207ce58"
+    },
+    {
+      "claim_id": "02b29987-3140-470b-aae4-504c5d85ef77",
+      "result_id": "595301b2-03d2-4631-8814-17057ef5df08"
+    },
+    {
+      "claim_id": "91bf2eb9-f76c-49d8-a2a7-257c31bcd356",
+      "result_id": "595301b2-03d2-4631-8814-17057ef5df08"
+    },
+    {
+      "claim_id": "47b88f63-eae0-4f8f-97c8-ce96a002745e",
+      "result_id": "595301b2-03d2-4631-8814-17057ef5df08"
+    },
+    {
+      "claim_id": "1a9dcdfa-f068-4e5f-818e-aa40b7acead6",
+      "result_id": "58e2d215-b682-4d56-b7f6-ab2b142aeafb"
+    },
+    {
+      "claim_id": "d7bbae27-0bb5-44af-958b-1270d1330709",
+      "result_id": "58e2d215-b682-4d56-b7f6-ab2b142aeafb"
+    },
+    {
+      "claim_id": "ceb600e7-d1ef-4acb-9df3-9bbb315d1927",
+      "result_id": "58e2d215-b682-4d56-b7f6-ab2b142aeafb"
+    },
+    {
+      "claim_id": "e0d7e7a0-4072-40e5-9d70-4c04542ed590",
+      "result_id": "58e2d215-b682-4d56-b7f6-ab2b142aeafb"
+    },
+    {
+      "claim_id": "ba855d8b-9e6e-49d1-ab3e-4193482be0f1",
+      "result_id": "58e2d215-b682-4d56-b7f6-ab2b142aeafb"
+    },
+    {
+      "claim_id": "a9495704-442a-4e59-b88b-5476542e93aa",
+      "result_id": "58e2d215-b682-4d56-b7f6-ab2b142aeafb"
+    },
+    {
+      "claim_id": "28211d94-a6fa-4571-a540-7312300ebd62",
+      "result_id": "179f1b81-d2f8-4c7d-b312-7854589bc289"
+    },
+    {
+      "claim_id": "e258949d-7ce4-4892-b74a-089a9fcb0b05",
+      "result_id": "179f1b81-d2f8-4c7d-b312-7854589bc289"
+    },
+    {
+      "claim_id": "37d5010c-2ec7-4666-8791-206768e16e36",
+      "result_id": "179f1b81-d2f8-4c7d-b312-7854589bc289"
+    },
+    {
+      "claim_id": "1acf3050-80a3-4a81-924f-98280bf956fe",
+      "result_id": "179f1b81-d2f8-4c7d-b312-7854589bc289"
+    },
+    {
+      "claim_id": "204bcf41-8e75-42c1-acd7-a022c1366245",
+      "result_id": "179f1b81-d2f8-4c7d-b312-7854589bc289"
+    },
+    {
+      "claim_id": "96650527-527e-4215-b9e0-4b840a6e0838",
+      "result_id": "179f1b81-d2f8-4c7d-b312-7854589bc289"
+    },
+    {
+      "claim_id": "77c57c32-1768-4a3e-94d6-627799d748e3",
+      "result_id": "179f1b81-d2f8-4c7d-b312-7854589bc289"
+    },
+    {
+      "claim_id": "bf31cfd0-ec86-4663-a9f3-f5e933891f06",
+      "result_id": "179f1b81-d2f8-4c7d-b312-7854589bc289"
+    },
+    {
+      "claim_id": "e65f207b-11b7-4494-b7e7-38d07a0b1fe3",
+      "result_id": "179f1b81-d2f8-4c7d-b312-7854589bc289"
+    },
+    {
+      "claim_id": "63fff37f-d3d7-455a-802c-5fc40f78d16c",
+      "result_id": "3b410946-b287-493b-8fce-179299f22b1f"
+    },
+    {
+      "claim_id": "2a2ed543-5e23-40a8-aeab-9ddeae369c8a",
+      "result_id": "3b410946-b287-493b-8fce-179299f22b1f"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1601 @@
+{
+  "submission": {
+    "id": "c5a05d47-d2f4-410c-b692-60108d206979",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:43:35.303683Z",
+    "updated_at": "2025-12-02T18:43:35.303683Z"
+  },
+  "content": [
+    {
+      "id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "submission_id": "c5a05d47-d2f4-410c-b692-60108d206979",
+      "content_type": "manuscript",
+      "content_text": "# Measuring protein stability in the GroEL chaperonin cage reveals massive destabilization\n\n## Authors\n\n- Ilia Korobko<sup>1</sup>\n- Hisham Mazal<sup>2</sup> ([ORCID: 0000-0002-2071-9552](https://orcid.org/0000-0002-2071-9552))\n- Gilad Haran<sup>2</sup> ([ORCID: 0000-0003-1837-9779](https://orcid.org/0000-0003-1837-9779))\n- Amnon Horovitz<sup>1</sup> ([ORCID: 0000-0001-7952-6790](https://orcid.org/0000-0001-7952-6790)) \u2020\n\n### Affiliations\n\n1. Departments of Structural Biology, Weizmann Institute of Science Rehovot Israel\n2. Chemical and Biological Physics, Weizmann Institute of Science Rehovot Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe thermodynamics of protein folding in bulk solution have been thoroughly investigated for decades. By contrast, measurements of protein substrate stability inside the GroEL/ES chaperonin cage have not been reported. Such measurements require stable encapsulation, that is no escape of the substrate into bulk solution during experiments, and a way to perturb protein stability without affecting the chaperonin system itself. Here, by establishing such conditions, we show that protein stability in the chaperonin cage is reduced dramatically by more than 5 kcal mol\u22121 compared to that in bulk solution. Given that steric confinement alone is stabilizing, our results indicate that hydrophobic and/or electrostatic effects in the cavity are strongly destabilizing. Our findings are consistent with the iterative annealing mechanism of action proposed for the chaperonin GroEL.\n\n## Introduction\n\nThe Escherichia coli GroE chaperonin system, which comprises GroEL and its co-factor GroES, assists protein folding in vivo and in vitro in an ATP-dependent manner (Thirumalai and Lorimer, 2001; Saibil et al., 2013; Hayer-Hartl et al., 2016; Gruber and Horovitz, 2016). Binding of GroES to GroEL forms a cage in which encapsulated substrate proteins can fold in isolation from bulk solution. The GroE system has been studied intensively for more than three decades, but it is still unclear and controversial whether its cavity is a \u2018passive cage\u2019 in which protein substrate aggregation is prevented but the folding pathway is unchanged or a chamber in which the folding process is altered in some manner. It is also unclear whether encapsulation in the GroE cavity is thermodynamically stabilizing, for\u00a0example because of confinement, or destabilizing owing, for example, to a diminished hydrophobic effect.\n\nThe effects of encapsulation on folding kinetics have been examined in different studies but it has been difficult to generalize its impact, in part, because it may depend on the properties of the protein substrate studied such as its size and charge. According to some studies, encapsulation prevents aggregation but does not alter the protein substrate\u2019s folding pathway and kinetics (Horst et al., 2007; Tyagi et al., 2011). In the case of rhodanese, for example, it was reported that encapsulation retards the folding of its C-terminal domain but has no effect on its N-terminal domain (Hofmann et al., 2010). By contrast, other studies have suggested more \u2018active\u2019 models according to which folding is accelerated in the GroEL cavity compared to bulk solution. Recent work showed, for example, that GroEL repairs a folding defect of a mutant of maltose-binding protein by accelerating the formation of an on-pathway intermediate (Ye et al., 2018). Accelerated folding upon encapsulation has been attributed to steric confinement and the negative charges of the cavity walls (Tang et al., 2006). It has also been attributed to substrate interactions with the cavity-protruding C-terminal tails of GroEL, which comprise Gly-Gly-Met repeats (Tang et al., 2006; Weaver and Rye, 2014; Weaver et al., 2017). In addition, GroEL-mediated folding can be affected by the cavity-confined water, which can enhance the hydrophobic effect (and thus accelerate folding) by accumulating near the cavity walls (England et al., 2008) or diminish it (and thus slow folding) by being more ordered. Finally, an even more \u2018active\u2019 mechanism has been proposed according to which encapsulated misfolded protein substrates undergo ATP-promoted forced-unfolding (Weaver and Rye, 2014), in accordance with the iterative annealing model (Todd et al., 1996), thereby giving them further opportunity to fold correctly. The iterative annealing model predicts higher folding yields but it has been suggested that annealing can also lead to accelerated folding (Tang et al., 2006; Gupta et al., 2014; Weaver and Rye, 2014; Weaver et al., 2017).\n\nIn contrast with the many and often conflicting studies on the kinetic effects of encapsulation, there have been virtually no reports on the thermodynamic effects of encapsulation. One complication in understanding the thermodynamic effects of encapsulation has been that protein substrates spend variable amounts of time folding in the cavity and in bulk solution because of GroEL-GroES cycling and the leakiness of its cavity (Motojima and Yoshida, 2010). As shown below, such leakiness is even greater in the complex of single-ring GroEL with GroES, which was used in some studies (Hofmann et al., 2010) and has been suggested to form during GroEL\u2019s normal reaction cycle (Yan et al., 2018). Another complication has been that measuring protein stability usually involves perturbations such as temperature or solution changes, which could also affect the stability of the chaperonin itself. The goal of the work described here was, therefore, to establish a system that would allow measuring the stability of an encapsulated protein in a non-leaky and unperturbed GroE complex. An appropriate system was found to be a chimera of dihydrofolate reductase from Moritella profunda (DHFRMp) fused to eGFP, which is encapsulated in the football-shaped and non-cycling BeFx-stabilized GroEL-GroES2 complex (Figure 1). Consequently, we were able to isolate the thermodynamic effect of encapsulation from other effects associated with GroEL-GroES cycling. Our results show that protein stability in the GroEL cavity is reduced dramatically in comparison with bulk solution.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig1-v3.jpg)\n\n**Figure 1.:** A chimera was formed by fusing dihydrofolate reductase from Moritella profunda (DHFRMp, PDB ID: 3IA4) to the C-terminus of eGFP (PDB ID: 2Y0G) via a linker. This chimera was then encapsulated in the cavity of the BeFx-stabilized football\u2013shaped GroEL-GroES2 complex, which is depicted schematically with GroEL in purple and GroES in green. The cavity volume is about 175,000 \u00c53 whereas that of the chimera (which is not drawn to scale) is about 58,000 \u00c53 assuming 1.23 \u00c53 per Da.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Freshly assembled eGFP-containing \u2018football\u2019 complexes were applied to a gel-filtration column and elution was monitored by measuring protein and eGFP absorbance at 280 and 485 nm, respectively. The inset shows SDS-PAGE analysis of a peak one fraction, which contains \u2018football\u2019 complexes with encapsulated eGFP. (B) A sample of \u2018football\u2019 complexes with encapsulated eGFP was kept at room temperature overnight and then analyzed by gel-filtration as above. Only one protein-containing fraction was observed and no free eGFP could be detected. SDS-PAGE analysis of this fraction (inset) showed that it contains GroEL, GroES and eGFP. Taken together, these results show that the GroEL-GroES2 football-shaped complexes remained intact and that eGFP did not escape outside during the overnight incubation. These experiments were repeated at least five times.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Freshly assembled eGFP-containing single-ring GroEL (SR1) complexes with GroES were applied to a gel-filtration column. The fractions were analyzed by SDS-PAGE (inset). The first peak, which was found to contain GroEL, GroES and eGFP, corresponds to eGFP-containing SR1 in complex with GroES. (B) Samples of eGFP-containing SR1 in complex with GroES were kept at overnight at room temperature and then analyzed by gel-filtration. Most of the eGFP was found in fractions (peak 3) that contain no GroEL and GroES (inset), thereby indicating that eGFP escaped from the cavity of the complex of SR1 with GroES. These experiments were repeated twice.\n\n## Results\n\n### Design and construction of a model protein substrate\n\nWe chose to use dihydrofolate reductase from Moritella profunda, a psychrophilic bacterium with an optimal growth temperature at 2\u00b0C, as a model substrate since it is a relatively unstable protein at room temperature Xu et al., 2003\u00a0whose folding can be monitored easily by measuring the regain in enzyme activity. DHFRMp was fused to the C-terminus of enhanced green fluorescent protein (eGFP) in order to further destabilize it as observed before for other proteins (Sokolovski et al., 2015; Dave et al., 2016). The fusion to eGFP also facilitated easy and sensitive determination of the location of the substrate, that\u00a0is whether it is in the cavity or has leaked outside of it. Under our conditions, the apparent melting temperature, Tm, in bulk solution of DHFRMp alone was found to be about 41.2 (\u00b11.8) \u00b0C whereas DHFRMp fused to eGFP was found to be strongly destabilized with a Tm of 22.8 (\u00b11.1) \u00b0C (Figure 2). eGFP in the chimera was also found to be destabilized in bulk solution relative to eGFP alone, but to a lesser extent, with Tm values of 76.3 (\u00b10.3) and 81.3 (\u00b11.3) \u00b0C, respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig2-v3.jpg)\n\n**Figure 2.:** (A) DHFRMp, eGFP and a chimera of these proteins were subjected to temperature denaturation in bulk solution using a Real-Time PCR machine. Denaturation was monitored by measuring the change in fluorescence of the SYPRO Orange reagent. Each trace represents the average of at least six experiments. (B) Plots of the first derivatives of the denaturation curves as a function of temperature. Melting points were determined from these plots by using the StepOne Software v2.3.\n\n### Identifying conditions for minimizing escape of encapsulated substrates\n\nGroEL and GroES can form either GroEL-GroES bullet-shaped or GroEL-GroES2 football-shaped complexes. It has been reported that the GroEL-GroES2 complex is stabilized in the presence of BeFx (Taguchi et al., 2004). We, therefore, tested whether eGFP remains encapsulated in the BeFx-stabilized \u2018football\u2019 complex over a sufficiently long period of time. BeFx-stabilized and eGFP-containing \u2018football\u2019 complexes were prepared, purified by gel-filtration and then allowed to stand overnight at room temperature. The samples were then analyzed by gel-filtration in order to determine the extent, if any, of substrate escape. The results show that all the eGFP co-eluted with GroEL and GroES, thereby indicating that the complex remained intact and no escape occurred (Figure 1\u2014figure supplement 1). Two other proteins, the p53 core domain and a chimera of the engrailed homeodomain transcription factor with eGFP with respective masses of 22.4 and 42.9 kDa, were also tested in this manner and found to not escape (data not shown). Previously, it was believed that substrates encapsulated in the cage formed by single-ring GroEL in complex with GroES cannot escape since dissociation of GroES from one ring of GroEL is triggered by ATP binding to the opposite ring (Rye et al., 1997). Experiments carried out with eGFP encapsulated in the cavity of single-ring GroEL in complex with GroES showed, however, that massive substrate leakage took place (Figure 1\u2014figure supplement 2).\n\n### Folding of the DHFRMp part of the chimera in the GroEL cavity\n\nBeFx-stabilized \u2018football\u2019 complexes containing the chimera were purified and the DHFR activity of the encapsulated chimera was monitored at 23\u00b0C (i.e. near the apparent Tm of the fused DHFRMp in bulk solution) by following the change in absorbance at 340 nm, upon addition of the substrates NADPH and dihydrofolate (DHF). The data show a lag phase followed by a linear phase (Figure 3) before activity starts to diminish owing to substrate depletion. Strikingly, the lag phase is absent when the chimera is free in bulk solution (Figure 3). One possible reason for the presence of the lag phase, in the case of the encapsulated chimera, is that the added substrates (DHF and NADPH) need to diffuse into the cavity. In such a case, the rate constant associated with the lag phase should increase with increasing substrate concentrations. Alternatively, the lag phase may reflect substrate (DHF and/or NADPH)-promoted folding of the DHFRMp part of the chimera, which is destabilized in the cavity relative to bulk solution. Substrate (DHF and/or NADPH)-promoted folding of the DHFRMp part of the chimera can take place via a mechanism of conformational selection, that\u00a0is the substrates bind only to the folded state, thereby shifting the equilibrium in its favor. In such a case, the rate constant associated with the lag phase should decrease with increasing substrate concentrations (Vogt and Di Cera, 2012). Alternatively, substrate-promoted folding of the DHFRMp part of the chimera can also occur via a mechanism of induced fit in which case the rate constant associated with the lag phase should increase with increasing substrate concentrations. In other words, an increase in the rate constant of the lag phase with increasing substrate concentration can be due to substrate penetration or induced fit, whereas a decrease is evidence for conformational selection. Discriminating between these mechanisms can, therefore, be achieved by measuring the substrate concentration dependence of the rate constant of the lag phase.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative traces are shown for the DHFRMp activities of free (29 nM) and GroE-encapsulated (40 nM) chimera upon addition of 250 \u03bcM dihydrofolic acid and 300 \u03bcM NADPH. The reactions were monitored by measuring the decrease in absorbance at 340 nm as a function of time. An initial lag phase is observed in the case of the encapsulated chimera but not the free one. (B) The lag and linear phases in the data for the encapsulated chimera were fitted to Equation 1. (C) Good fits were obtained as indicated by plots of the residuals with random deviations about zero. See Materials and methods for additional details.\n\nThe change in the absorbance at 340 nm due to the enzyme activity of the encapsulated or free chimera was, therefore, monitored in the presence of different concentrations of DHF and a fixed concentration of NADPH. The data were fitted to:\n\n$$\n[P]=Vt+A(e^{\u2212\\lambdat}\u22121)\n$$\n\nwhere [P] is the product concentration (or the absorbance at 340 nm which is proportional to it), V is the slope that corresponds to the linear steady-state velocity of the reaction and A and \u03bb are the respective amplitude and rate constant of the lag phase. Equation 1 can be derived for the reaction scheme $E_{U}\u21c4E_{F}\u21c4ES$, where EU, EF and ES designate the respective unfolded, folded and substrate-bound folded states of the protein (E), assuming that ligand binding is fast relative to the folding and unfolding steps. In such a case, the rate constant, \u03bb, is given by\u00a0Vogt and Di Cera, 2012:\n\n$$\n\\lambda=k_{1}+\\frac{k_{-1}k_{-2}}{k_{2}[S]+k_{-2}}=k_{1}+\\frac{k_{-1}}{K_{a}[S]+1}\n$$\n\nwhere k1 and k-1 are the respective folding and unfolding rate constants, k2 and k-2 are the respective substrate association and dissociation rate constants and Ka = k2/k-2 is the substrate association constant. Inspection of Equation 2 shows that the value of the observed rate constant, \u03bb, decreases with increasing substrate concentration as observed here in the case of the encapsulated chimera (Figure 4A). This finding indicates that the DHFRMp part of the chimera is significantly destabilized in the cavity, but not in bulk solution (where the lag phase is absent), and that the substrates DHF and NADPH shift its equilibrium toward the folded state via a conformational selection mechanism. In agreement with this finding, temperature melts of the chimera in bulk solution show that both DHF and NADPH stabilize its DHFRMp part (Figure 4\u2014figure supplement 1). It should be noted that, in principle, a similar kinetic behavior would be observed for a scheme $E'\u21c4E_{F}\u21c4ES$, that\u00a0is when the equilibrium is between the folded protein and a mis-folded inactive species, E\u2019 (instead of between the folded and unfolded species). This possibility is unlikely, however, because it was found that only 20% of human DHFR mis-folds inside the cavity of the non-cycling complex of single-ring GroEL with GroES (Horst et al., 2007). In such a case, the expected lag phase due to the mis-folded population would not be observed owing to the activity of the remaining DHFR, which does not mis-fold. Moreover, according to this model, the mis-folded state is much more stable than the folded state, which is in violation of Anfinsen\u2019s dogma that the native state is at the minimum free energy if the conditions in the cavity are assumed to favor folding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig4-v3.jpg)\n\n**Figure 4.:** (A) Plot of the observed folding rate constant, \u03bb, of the DHFRMp part of the chimera inside the cavity as a function of the DHF concentration. The data were fitted to Equation 2, thereby yielding estimates of the folding and unfolding rate constants. These experiments were carried out in duplicate. (B) Reduced \u03c72 surfaces for the folding and unfolding rate constants k1 and k-1, respectively. The relatively steep chi-squared surfaces suggest that the extracted parameters are well defined with relatively narrow confidence intervals. (C) Plot of the initial enzyme velocity of the DHFRMp part of the chimera inside the cavity and in bulk solution, as a function of the DHF concentration. The data were fitted to the Michaelis-Menten equation. In the case of the encapsulated chimera, the initial enzyme velocities were obtained by fitting the data of decrease in absorption at 340 nm as a function of time to Equation 1. Error bars in both panels represent standard errors.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The chimera (5 \u00b5M) alone or in the presence of 500 \u00b5M NADPH or DHF was subjected to temperature denaturation using a Real-Time PCR machine as described under Materials and methods. Each trace represents the average of at least six experiments. (B) Plots of the first derivatives of the denaturation curves as a function of temperature. Melting points were determined from these plots by using the StepOne Software v2.3. Under the conditions here, the melting temperature of the DHFRMp part of the chimera increases, in the presence of NADPH and DHF, by about 8\u00b0C and 31\u00b0C, respectively.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The stability of the DHFRMp part of the chimera was determined as a function of GuHCl concentration at different fixed concentrations of NADPH. Shown are representative data for denaturation in the presence of 0.05 and 2.9 \u00b5M NADPH. The data were fitted using Equation 3. (B) Plot of the free energies of unfolding, in the absence of GuHCl, as a function of the concentration of NADPH. The data were fitted using Equation 4. The m-values are essentially independent of the concentration of NADPH and were found to have an average value of 1.4 (\u00b10.1) kcal mol\u22121 M\u22121. Error bars represent standard errors.\n\nValues of the folding and unfolding rate constants were obtained by fitting the plot of \u03bb as a function of substrate (DHF) concentration to Equation 2 and found to be 1.4 (\u00b10.4) x 10\u22124 and 7.3 (\u00b10.8) x 10\u22123 sec, respectively (Figure 4A,B). Consequently, the stability of the cavity-confined fused DHFRMp, in the absence of the substrates DHF and NADPH, is 2.4 (\u00b10.2) kcal mol\u22121, that\u00a0is the folded state is extremely destabilized so that it\u00a0is less stable than the unfolded state. By contrast, the stability in bulk solution of fused DHFRMp, in the absence of the substrates DHF and NADPH, is \u22123.45 (\u00b10.09) kcal mol\u22121 (Figure 4\u2014figure supplement 2). This value was determined by measuring the stability of fused DHFRMp, in the presence of different concentrations of NADPH, in order to minimize aggregation that takes place in bulk solution, and then extrapolating to zero concentration of NADPH. Taken together, the results obtained here show that encapsulation in the GroEL cavity destabilizes the DHFRMp part of the chimera by more than five kcal mol\u22121 relative to bulk solution. Interestingly, analysis of the linear phase in the progress curves (e.g. in Figure 3) shows that the steady-state enzyme activity of DHFRMp is also affected by encapsulation. The Km value of the encapsulated fused DHFRMp for DHF is about 0.28 (\u00b10.09) mM and, thus, about 10-fold higher than the value of 33 (\u00b12) \u00b5M measured in bulk solution (Figure 4C), in agreement with a previous determination (Xu et al., 2003). The value of kcat may also be affected but these values are difficult to determine because of uncertainties regarding the active protein concentrations.\n\nIn order to test whether the destabilization of the cavity-confined fused DHFRMp is due to its interaction with the cavity walls, we carried out fluorescence anisotropy decay measurements. Fits of the decay curves for the free and caged chimeras yielded similar rotational times of 22.85 (\u00b10.30) ns and 25.40 (\u00b10.45) ns, respectively (Figure 5). Likewise, the fits of the decay curves for free and caged eGFPs yielded similar rotational times of 14.38 (\u00b10.20) ns and 15.90 (\u00b10.25) ns, respectively (Figure 5\u2014figure supplement 1), in agreement with previous work (Striker et al., 1999). The results indicate free mobility of the chimera and eGFP inside the GroEL football complex. It is, therefore, unlikely that the cavity-induced thermodynamic destabilization of the fused DHFRMp is due to interactions with the cavity walls.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig5-v3.jpg)\n\n**Figure 5.:** (A) Fluorescence anisotropy decay curves of free (green) and caged (red) chimeras were measured as described in the Materials and methods. Fits of the decay curves for free and caged chimera to a single exponential (green and red solid lines, respectively) yielded rotational times of 22.85 (\u00b10.30) ns and 25.40 (\u00b10.45) ns, respectively. The results indicate no restriction on the mobility of the chimera inside the GroEL football complex. Each experiment was carried out in duplicate. (B) Plots of the residuals for the fits in panel A.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56511/elife-56511-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Fluorescence anisotropy decay curves of free (green) and GroEL-caged (red) eGFP were measured as described in the Materials and methods. Fits of the fluorescence anisotropy decay curves for free and caged eGFP to a single exponential (black and blue solid lines, respectively) yielded rotational times of 14.38 (\u00b10.20) ns and 15.90 (\u00b10.25) ns, respectively, in agreement with previous work (Striker et al., 1999). These results indicate no restriction mobility of eGFP inside the GroEL football complex. Each experiment was carried out in duplicate. (B) Plots of the residuals for both curves.\n\n## Discussion\n\nOur results show that protein stability in the chaperonin cage is reduced dramatically by more than 5 kcal mol\u22121 compared to that in bulk solution. Given that steric confinement alone is expected to be stabilizing, our results indicate that protein destabilization in the cavity is likely to be due to hydrophobic and/or electrostatic effects. One possibility is that water in the cavity becomes more ordered in the presence of a substrate protein, thereby leading to a diminished hydrophobic effect. All-atom molecular dynamics simulations have shown that pairwise hydrophobic interactions are destabilized in hydrophobic nanopores when they contain water at bulk density (Vaitheeswaran and Thirumalai, 2008), as indicated by some evidence in the case of the GroEL cavity (Franck et al., 2014). The cavity walls of the \u2018football\u2019 complexes in our experiments are, however, charged and the extent of destabilization would, therefore, depend on many factors including the distribution of charges on the cavity walls, the cavity geometry and the presence of regions where the water structure is disrupted. Future simulations should test how these various factors affect pairwise interactions under confinement.\n\nSimilar to man-made machines, biological machines such as GroEL cycle between states that differ in their structural and functional properties. Substrate proteins first bind to GroEL in its apo state and can become destabilized through binding to its hydrophobic cavity walls (see, for example, Libich et al., 2015). ATP binding to the GroEL-protein substrate complex, which follows, can cause further unfolding due to a stretching force applied to the substrate protein upon ATP-binding-promoted conformational changes (Weaver et al., 2017). Next, protein substrates are encapsulated in the GroES-capped cavity for 1\u201310 s (Bigman and Horovitz, 2019) before being discharged into bulk solution. Here, we have succeeded in isolating the effect of this key step on substrate stability and found that it can also lead to protein destabilization. It is important to point out, however, that the magnitude (and possibly direction) of the effect is likely to depend on the protein substrate\u2019s size and other properties. Hence, future studies should employ the strategy developed here to examine other proteins.\n\nFinally, it is important to note that our finding that the cavity environment is destabilizing supports the iterative annealing mechanism of action proposed for the chaperonin GroEL (Todd et al., 1996; Thirumalai et al., 2020). According to this mechanism, protein substrates undergo kinetic partitioning, during each reaction cycle of GroEL, between productive folding to the native state and mis-folding. The remaining fraction of mis-folded protein substrates are then rebound to GroEL and (partially) unfolded, thereby giving them new opportunity to fold correctly. Our results show that (partial) unfolding is achieved not only because of binding to the hydrophobic cavity of the apo state and ATP-promoted forced unfolding, as shown before by others, but also because it is strongly favored thermodynamically under the conditions in the GroES-capped cavity.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Pet21d plasmid for expressing DHFRMp</td>\n      <td>Gift from Prof. S. Fleishman</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Pet21a plasmid for expressing eGFP</td>\n      <td>PMID:29066625</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>E. coli Rosetta cells</td>\n      <td>Novagen</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>E. coli BL21 cells</td>\n      <td>PMID:3537305</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TEV site insertion -forward</td>\n      <td>This work</td>\n      <td>PCR primer</td>\n      <td>5\u2019-ACTCGAGCACCACCACCACCACCACTGA-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TEV site insertion -reverse</td>\n      <td>This work</td>\n      <td>PCR primer</td>\n      <td>5\u2019-GCTGTATAAGGGCAACCTGTATTTTCAGGGCACTCGAGCACCACC-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DHFRMp cloning -forward</td>\n      <td>This work</td>\n      <td>RF cloning primer</td>\n      <td>5\u2019-CCTGTATTTTCAGGGCATGATCGTAAGCATGATTGCCGCACTGGCG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DHFRMp cloning -reverse</td>\n      <td>This work</td>\n      <td>RF cloning primer</td>\n      <td>5\u2019-GGTGGTGGTGGTGCTCGAGTTCACTCGAGTTTGACTCTTTCAAGTAGAC-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SYPRO Orange protein gel stain</td>\n      <td>Sigma</td>\n      <td>Cat#S5692</td>\n      <td>Used at a dilution of 1:5000</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB 2015b</td>\n      <td>MathWorks</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HisTrap 5 ml columns</td>\n      <td>GE Healthcare</td>\n      <td>Cat#17-5248-02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>PD 10 desalting columns</td>\n      <td>GE Healthcare</td>\n      <td>Cat#17-0851-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superdex 75 10/300 column</td>\n      <td>GE Healthcare</td>\n      <td>Cat#29-1487-21</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superose 6 10/300 column</td>\n      <td>GE Healthcare</td>\n      <td>Cat#17-5172-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Q Sepharose column</td>\n      <td>GE Healthcare</td>\n      <td>Cat#17-1014-01</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Construction of the chimera of DHFRMp with eGFP\n\nThe Pet21a plasmid containing the gene for eGFP (with the mutation A206K that stabilizes its monomeric state) and an N-terminal His7-tag (Bandyopadhyay et al., 2017) was amplified by PCR using the following respective forward and reverse primers:\n\n5\u2019-ACTCGAGCACCACCACCACCACCACTGA-3\u2019\n\n5\u2019-GCTGTATAAGGGCAACCTGTATTTTCAGGGCACTCGAGCACCACC-3\u2019. This amplification resulted in introducing a TEV protease cleavage site at the C-terminus of eGFP. The gene coding for DHFRMp was then introduced at the 3\u2019 end of the TEV coding sequence by restriction-free cloning using the forward and reverse primers:\n\n5\u2019-CCTGTATTTTCAGGGCATGATCGTAAGCATGATTGCCGCACTGGCG-3\u2019\n\n5\u2019-GGTGGTGGTGGTGCTCGAGTTCACTCGAGTTTGACTCTTTCAAGTAGAC-3\u2019, respectively. The final gene product codes for eGFP with an N-terminal His7-tag fused at its C-terminus to DHFRMp via a linker sequence containing a TEV protease cleavage site.\n\n### Expression and purification of the chimera of DHFRMp with eGFP\n\nE. coli BL21 cells (Studier and Moffatt, 1986) harboring the Pet21d plasmid containing the gene for the chimera were inoculated into 250 ml 2 x TY with 100 \u00b5g/ml ampicillin and grown at 37\u00b0C until an O.D. of 0.6 was reached. Expression was induced by addition of 0.5 mM IPTG and growth was continued overnight at 16\u00b0C. The cells were then spun at 11,970 g for 20 min at 4\u00b0C, resuspended in 10% sucrose solution, spun again at 3,452 g for 30 min at 4\u00b0C and the pellet was stored at \u221280\u00b0C until purification. The pellet was resuspended in 30 ml of 50 mM Tris-HCl buffer (pH 7.5) containing 10 mM NaCl and 1 mM DTT (buffer A) with 8 M urea to prevent proteolysis. The cells were lysed using a French press (three passes) and sonication (4 cycles of 20 s sonication at 70% intensity and 60 s intervals). The lysate was then centrifuged at room temperature for 10 min at 24,610 g and again at 38,720 g for 30 min. The supernatant was diluted with buffer A to 6 M urea and loaded on a 140 ml Q-Sepharose column pre-equilibrated with buffer A containing 6 M urea. The column was then washed with 200 ml buffer A containing 6 M urea and with 150 ml of this buffer containing also 150 mM NaCl. A 5 ml HisTrap column, which was pre-equilibrated with buffer A containing 6 M urea, was connected downstream to the Q-Sepharose column and both columns were washed with 200 ml of buffer A with 1 M NaCl. The Q-Sepharose column was then removed and the HisTrap column was washed at room temperature with 75 ml of 50 mM Tris-HCl buffer (pH 7.5) containing 100 mM NaCl, 15 mM imidazole and 1 mM DTT (buffer B) with 5 M urea. Elution was carried out with a 75 ml linear gradient of 15 to 500 mM imidazole in buffer B with 5 M urea. Fractions were analyzed with SDS-PAGE and those containing the chimera were combined and concentrated to\u00a0~8 ml. The protein was then refolded at 4\u00b0C by mixing it with buffer B at a ratio of 1.5:98.5, respectively, during loading on a HisTrap 5 ml column. After loading, the column was washed with 25 ml buffer B and the protein was eluted with a 75 ml linear gradient from 15 to 500 mM imidazole in buffer B. Fractions containing the pure chimera were identified by SDS-PAGE and pooled and the buffer was then exchanged to 20 mM Hepes (pH 8.0) containing 100 mM KCl, 50 mM MgCl2, 50 mM Na2SO4, 10 mM NaF, 1 mM BeSO4 and 1 mM DTT (working buffer) using a PD 10 desalting column at 4\u00b0C. The concentration was determined from the absorption at 280 nm using an extinction coefficient of 50435 M\u22121 cm\u22121 and the protein was aliquoted and stored at \u221280\u00b0C for further use.\n\n### Expression and purification of DHFRMp\n\nExpression and purification of DHFRMp were achieved as before (Xu et al., 2003) with the following changes. E. coli Rosetta cells harboring the Pet21d plasmid containing the DHFRMp gene were inoculated into 7 L 2 x TY medium and grown at 37\u00b0C until an O.D. of 1 was reached. IPTG (0.5 mM) was then added to induce protein expression and the cells were grown at 37\u00b0C for another 5 hr. Harvesting was carried out by spinning the cells at 11,970 g for 20 min at room temperature and then resuspending them in 100 ml buffer B containing 10 \u00b5g/ml aprotinin, 5 \u00b5g/ml antipain, 5 \u00b5g/ml pepstatin, 5 \u00b5g/ml chymostatin, 10 \u00b5g/ml leupeptin, 50 \u03bcl EDTA-free protease inhibitor cocktail (Calbiochem), 1.5 \u03bcM PMSF, 6 \u03bcg/ml RNase A, 30 \u00b5g/ml DNase and 0.22 mg/ml folate. The cells were lysed by sonication (4 cycles of 20 s sonication at 70% intensity and 60 s intervals) and one passage through a French press at 1500 atm. The lysate was centrifuged at 4\u00b0C for 30 min at 24,610\u00a0g\u00a0and then for 30 min at 38,720 g. The supernatant was applied to a 5 ml His-Trap column, which was then washed with 25 ml buffer B, 25 ml buffer B containing 1 mM ATP and 50 mM MgCl2 and then with 25 ml buffer B again. DHFRMp was eluted with a 50 ml linear gradient of 15 mM to 500 mM imidazole in buffer B. Fractions were analyzed with SDS-PAGE and those containing DHFRMp were combined, concentrated and the buffer was exchanged to 50 mM Tris-HCl (pH 8.0) containing 250 mM NaCl, 5 mM EDTA, 5 mM \u03b2-mercaptoethanol (buffer C) using a PD-10 desalting column at 4\u00b0C. The protein was applied to a 5 ml methotrexate column, which was then washed with 20 ml buffer C. DHFRMp was eluted with a linear gradient of 70 ml from 0 to 1 mM folate and 0.25 to 1 M NaCl in buffer C. Fractions were analyzed with SDS-PAGE and those containing DHFRMp were combined, concentrated, mixed with 1 mM ATP and 50 mM MgCl2 and then applied to a Superdex 75 10/300 gel-filtration column equilibrated with working buffer. Fractions were analyzed by SDS-PAGE and those containing pure DHFRMp were combined, aliquoted and stored at \u221280\u00b0C. The protein concentration was determined using the Bradford assay and a BSA-based calibration curve.\n\n### Measurements of melting temperatures of eGFP and DHFRMp\n\nThe melting temperatures of eGFP and DHFRMp alone and in the chimera were measured by differential scanning fluorimetry using a StepOne real-time PCR instrument (Applied Biosystems). The protein (5 \u00b5M) alone or in the presence of 500 \u00b5M NADPH or dihydrofolate was mixed with 1X SYPRO Orange reagent (Sigma) in a 20 \u00b5l reaction volume of working buffer. The sample was heated from 4\u00b0C to 94\u00b0C with a temperature increment of 0.5\u00b0C every 45 s. The fluorescence of SYPRO Orange was measured after each temperature increment by exciting at 492 nm and measuring the emission at 610 nm. Analysis of the data was carried out using the StepOne software V2.3.\n\n### Stability measurements of the DHFRMp part of the chimera in bulk solution\n\nThe stability of the DHFRMp part of the chimera was determined by measuring the fluorescence emission at 330 nm upon excitation at 280 nm (using an ISS PC1 fluorimeter with excitation and emission bandwidths of 16 nm) as a function of GuHCl concentration at different fixed concentrations of NADPH. Measurements were made at 23\u00b0C for samples containing about 1.4 \u03bcM of the chimera in working buffer after incubation for 10 min at the same temperature. The concentration of the stock solution of GuHCl was determined by measuring the refraction index at 23\u00b0C. The data were fitted using the following equation:\n\n$$\nF=\\frac{F_{U}^{0}+a[D]+(F_{N}^{0}+b[D])e^{\\frac{\u2212\u0394G^{0}+m[D]}{RT}}}{1+e^{\\frac{\u2212\u0394G^{0}+m[D]}{RT}}}\n$$\n\nwhere \u0394G0 is the free energy of unfolding in the absence of denaturant, [D] is the GuHCl concentration, m is the GuHCl-concentration dependence of the free energy of unfolding ($m=\\frac{\u2202\u0394G}{\u2202[D]}$), T is the temperature and R is the gas constant. The fluorescence of the native (N) and denatured (U) states are expressed as linear functions of the GuHCl concentration with slopes of a and b, respectively. This analysis is based on the assumption that the melting curves reflect the denaturation of only the DHFRMp part of the chimera, which is justified since eGFP is very stable under our conditions and the fluorescence of its single tryptophan residue changes very little (and in a linear fashion) as a function of GuHCl concentration. The values of \u0394G0 obtained from the fits to Equation 3 were then plotted as a function of the concentration of NADPH and the data were fitted using the following equation:\n\n$$\n\u0394G=\u0394G^{0}\u2212RTln(1+[S]/K_{m})\n$$\n\nwhere [S] is the concentration of NADPH and Km is its Michaelis-Menten constant of 13 \u00b5M (Evans et al., 2010). Here, \u0394G0 is the free energy of unfolding in the absence of both GuHCl and NADPH.\n\n### Encapsulation of protein substrates in GroE footballs\n\nEncapsulation of eGFP and the chimera in the GroEL-GroES2 football was performed using different methods of denaturation. In the case of eGFP, the substrate (7.5 nmol) was denatured in 200 \u00b5l of 60 mM HCl in a siliconized test-tube. The denatured eGFP was then added slowly to 20 ml of 50 mM Tris-HCl buffer (pH 7.5) containing 100 mM KCl, 50 mM MgCl2, 1 mM DTT, 0.05 \u00b5M GroEL oligomer and 0.125 \u00b5M GroES oligomer (folding buffer) and left for 40 min at room temperature with mild stirring. Football assembly was initiated by adding 2 ml containing 550 mM Na2SO4, 110 mM NaF, 11 mM BeSO4 and 11 mM ATP (activation mix) to the folding buffer. The mixture was then stirred for 15 min at room temperature, concentrated and fractionated using a Sepharose 6 (10/300) gel-filtration column in working buffer. Fractions were analyzed by SDS-PAGE and those containing GroE-encapsulated eGFP were kept for further work. In the case of the chimera, a binary complex was first formed by incubating 9 nmol of the native chimera with\u00a0~5 nmol of GroEL oligomer in 300 \u00b5l of working buffer overnight at room temperature. The mixture was then added to a 200 \u00b5l solution containing 135 mM Na2SO4, 25 mM NaF, 2.5 mM BeSO4, 2.5 mM ATP and\u00a0~10 nmol of GroES oligomer, stirred for 15 min at room temperature and applied to a Superose 6 10/300 gel-filtration column.\n\n### DHFR activity assays\n\nActivity assays were performed at 23\u00b0C in working buffer using an Infinite M200pro (TECA Group Ltd.) plate reader. Reactions were initiated by mixing 190 \u00b5l of the protein with 10 \u00b5l of NADPH (350 \u00b5M final concentration) and different concentrations of DHF. The reaction progress was followed by measuring the decrease in absorption at 340 nm as a function of time. The chimera concentrations were verified from measurements of the fluorescence emission at 509 nm upon excitation at 488 nm (with bandwidths of 4, 8 or 16 nm depending on the protein concentration) and using an eGFP-based calibration curve. Analysis and fitting of the data were performed using MatLab 2015b software.\n\n### Time-resolved fluorescence anisotropy measurements\n\nFluorescence anisotropy decay curves of the target proteins were measured using a MicroTime200 fluorescence microscope (PicoQuant). Samples of eGFP and the chimera were diluted to 50\u2013100 nM in the working buffer containing 0.01% TWEEN 20 and then loaded into a flow cell pre-coated with a lipid bilayer (Mazal et al., 2019). Molecules were excited with a 485 nm diode laser pulsed at a repetition rate of 20 MHz and with a power of 10 \u00b5W. Emitted photons were divided based on their polarization using a polarizing beam splitter cube, followed by filtration using band-pass filters (520/35 nm, BrightLine). Photon arrival times relative to the excitation pulse were registered with a resolution of 16 ps using two single-photon avalanche photo-diodes detectors (Excelitas SPCM-AQR-14-TR) coupled to a time-correlated single-photon counting module (HydraHarp 400, PicoQuant). The parallel and perpendicular fluorescence decays were constructed from the data and background corrected. Fluorescence anisotropy decays were then calculated using the following relation: $rt=\\frac{I_{\u2225(t)}-GI_{\u22a5(t)}}{I_{\u2225(t)}+2GI_{\u22a5(t)}}$, where $I_{\u2225(t)}$ and $I_{\u22a5(t)}$ are the time-dependent fluorescence intensities of the parallel and perpendicular components, and G is the polarization sensitivity factor (whose value was determined to be 1). Fluorescence anisotropy decays were fitted to a single exponential function to obtain the rotational correlation times of the proteins.\n",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "3e2b9852-5855-44f8-a981-ce306dbfeace",
+      "submission_id": "c5a05d47-d2f4-410c-b692-60108d206979",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lewis E Kay, University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56511.sa1](https://doi.org/10.7554/eLife.56511.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Measuring protein stability in the GroEL chaperonin cage reveals massive destabilization\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by David Ron as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThere is enthusiasm for the innovative approach to learn how the interior of the GroEL chaperonin chamber influences protein stability. The reviewers felt that this study potentially addresses a number of important questions about substrate confinement and GroEL mechanism. However, the implications of the work were not clearly articulated and consequently the impact of your study to the readership may not be as significant as it could be. Moreover, all reviewers felt that significantly more detail is required for a careful evaluation of the manuscript. Although no new experiments are required, a thoughtful major revision would be necessary where additional details are included. In a suitably revised version it is requested that the following points be considered:\n\nEssential revisions:\n\n1) Can the authors provide more evidence that the substrate is unfolded inside the cavity prior to addition of DHF/NADPH. I presume that the temperature used is close to the melting temperature of the substrate (but I could not find it listed \u2013 please put this in the text), but the melting temp of the substrate is measured outside of the cage so it is difficult to make the argument about what is happening inside the cavity based simply on temperatures.\n\n2) A related question to 1. How can the authors be certain that the transition E to E' is actually U to N? Could this not be some binding incompetent state to one that is competent, but not necessarily U to N? And if this is the case then are the authors measuring folding/unfolding from k1 and k-1?\n\n3) Could the authors please provide chi-sq surfaces of k1 and k-1, as the data from which they are extracted are quite noisy.\n\n4) While I could derive the equations for induced fit and conformational exchange (although the authors may wish to see if there is a sign error in the eigenvalues \u2013 negative of what they are listed), I could not understand Equation 1. Please derive this equation as well, as it is critical to understanding the paper, making the link between the derivation that the authors have given for the lamda in appendix and how this explicitly relates to product formation as per Equation 1.\n\n5) A major concern is that the authors use a species of GroEL/ES that is favored by beryllium fluoride with two GroES rings bound to the GroEL tetradecamer. This state is meant to mimic a state after a substrate is released into the cavity and in general would be assumed to be favored to fold. However, the relevance of the state the authors have used, apparently because it is stable and does not allow leakage of the trapped protein, to the mechanism of GroEL/ES is not argued convincingly. So the goal of the study is not clear: is it to show that entrapment in a small cavity can have destabilizing effects on a protein? or is it to contribute to understanding of the GroEL mechanism?\n\n6) It was shown that eGFP doesn't leak from the GroEL/ES bullet, but not the chimera. Why was this not tested?\n\n7) The paper is very brief and lacks a clear conclusion about the significance of the observations. The authors refer to the iterative annealing mechanism without any description or explanation of how their result relates.\n\n8) It was unclear what the authors did differently that enabled them to confine the chimera in the cavity where previous attempts failed. Perhaps, the authors can spell this out.\n\n9) The attachment of eGFP does destabilize DHFR a lot and eGFP as well. One assumes that the results in Figure 2 and subsection \u201cDesign and construction of a model protein substrate\u201d are in bulk, although this was not spelt out explicitly. Please confirm.\n\n10) The argument, in the last paragraph of the subsection \u201cFolding of the DHFRMp part of the chimera in the GroEL cavity\u201d, that the decay of fluorescence anisotropy of the two proteins are similar in the cavity and bulk, which is the basis for ruling out interaction with the wall being the cause of the destabilization. This is reasonable. Two na\u00efve questions:\n\ni) The decay simply suggests that the overall shape is the same but cannot rule out weak interactions. The decrease in the amplitude is not very large in either situations. Does this mean a \"preferred\" orientation?\n\nii) On time scales greater that about 18 ns (Figure 5) there is more dispersion (conformational variability?) in the caged construct. Is there an explanation or does this not matter?\n\n11) The authors conclude that the effect could be due to diminished hydrophobic effect in the confined space. The authors might want to know that this was established in MD simulations (PNAS 105: 17636 (2008)) by calculating the potential of mean force between a few amino acid side chains (polar, charged, and hydrophobic). Among these it was clear that interactions between hydrophobic residues were diminished in a cylindrical cavity, supporting the conclusion here, whereas others are more nuanced. The authors realize that the results that the magnitude of the effects could be substrate specific. But given that the hydrophobic interactions might be the determining factor (assuming it holds) do they the authors think that the results are very general. In other words, destabilization should be the norm, which is in accord with the expectation of the iterative annealing mechanism.\n",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "629da2aa-f829-4952-b371-fc66b44dd0a7",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C1",
+      "claim": "The Escherichia coli GroE chaperonin system comprises GroEL and its co-factor GroES.",
+      "claim_type": "EXPLICIT",
+      "source": "The Escherichia coli GroE chaperonin system, which comprises GroEL and its co-factor GroES, assists protein folding in vivo and in vitro in an ATP-dependent manner (Thirumalai and Lorimer, 2001; Saibil et al., 2013; Hayer-Hartl et al., 2016; Gruber and Horovitz, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "4b66693e-e7ff-487a-a0a8-8ecaf5886e76",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C2",
+      "claim": "The GroE chaperonin system assists protein folding in vivo and in vitro in an ATP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The Escherichia coli GroE chaperonin system, which comprises GroEL and its co-factor GroES, assists protein folding in vivo and in vitro in an ATP-dependent manner (Thirumalai and Lorimer, 2001; Saibil et al., 2013; Hayer-Hartl et al., 2016; Gruber and Horovitz, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "791eb04d-7896-4fbe-bffd-f5d4a034f50e",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C3",
+      "claim": "Binding of GroES to GroEL forms a cage in which encapsulated substrate proteins can fold in isolation from bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of GroES to GroEL forms a cage in which encapsulated substrate proteins can fold in isolation from bulk solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the structural and functional consequence of GroES binding to GroEL.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "29cee58d-632d-4527-a832-924fd9ba7cf9",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C4",
+      "claim": "It is unclear whether the GroE cavity is a 'passive cage' in which protein substrate aggregation is prevented but the folding pathway is unchanged or a chamber in which the folding process is altered.",
+      "claim_type": "EXPLICIT",
+      "source": "The GroE system has been studied intensively for more than three decades, but it is still unclear and controversial whether its cavity is a 'passive cage' in which protein substrate aggregation is prevented but the folding pathway is unchanged or a chamber in which the folding process is altered in some manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an unresolved question in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "51a798d9-0f49-4812-8a06-4b7a03c63776",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C5",
+      "claim": "It is unclear whether encapsulation in the GroE cavity is thermodynamically stabilizing or destabilizing.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also unclear whether encapsulation in the GroE cavity is thermodynamically stabilizing, for example because of confinement, or destabilizing owing, for example, to a diminished hydrophobic effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an open question regarding the thermodynamic effects of encapsulation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "d3addc19-0eb3-43cb-ad12-f5c1a8022cca",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C6",
+      "claim": "According to some studies, encapsulation prevents aggregation but does not alter the protein substrate's folding pathway and kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "According to some studies, encapsulation prevents aggregation but does not alter the protein substrate's folding pathway and kinetics (Horst et al., 2007; Tyagi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "bbff323c-390c-4b0f-8145-a791c7d1ca01",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C7",
+      "claim": "Encapsulation retards the folding of rhodanese's C-terminal domain but has no effect on its N-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of rhodanese, for example, it was reported that encapsulation retards the folding of its C-terminal domain but has no effect on its N-terminal domain (Hofmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "28bf9f7b-e719-4d48-93b4-1719f9330179",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C8",
+      "claim": "GroEL repairs a folding defect of a mutant of maltose-binding protein by accelerating the formation of an on-pathway intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work showed, for example, that GroEL repairs a folding defect of a mutant of maltose-binding protein by accelerating the formation of an on-pathway intermediate (Ye et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "b3c6022d-349d-4463-99be-6f1fdfbfc950",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C9",
+      "claim": "Accelerated folding upon encapsulation has been attributed to steric confinement and the negative charges of the cavity walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Accelerated folding upon encapsulation has been attributed to steric confinement and the negative charges of the cavity walls (Tang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "8ed05602-e827-4033-9cc9-899fd60b131e",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C10",
+      "claim": "Accelerated folding upon encapsulation has been attributed to substrate interactions with the cavity-protruding C-terminal tails of GroEL, which comprise Gly-Gly-Met repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been attributed to substrate interactions with the cavity-protruding C-terminal tails of GroEL, which comprise Gly-Gly-Met repeats (Tang et al., 2006; Weaver and Rye, 2014; Weaver et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "be9ed499-ed7d-4753-bcc9-9347781dc261",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C11",
+      "claim": "Cavity-confined water can enhance the hydrophobic effect by accumulating near the cavity walls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, GroEL-mediated folding can be affected by the cavity-confined water, which can enhance the hydrophobic effect (and thus accelerate folding) by accumulating near the cavity walls (England et al., 2008) or diminish it (and thus slow folding) by being more ordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "0fc90a62-c162-49ea-8229-64b6e57ba8df",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C12",
+      "claim": "Cavity-confined water can diminish the hydrophobic effect by being more ordered.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, GroEL-mediated folding can be affected by the cavity-confined water, which can enhance the hydrophobic effect (and thus accelerate folding) by accumulating near the cavity walls (England et al., 2008) or diminish it (and thus slow folding) by being more ordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation inferred from the discussion of water structure effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "a38469b3-b9c2-424c-b720-ef80affeb125",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C13",
+      "claim": "According to the iterative annealing model, encapsulated misfolded protein substrates undergo ATP-promoted forced-unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, an even more 'active' mechanism has been proposed according to which encapsulated misfolded protein substrates undergo ATP-promoted forced-unfolding (Weaver and Rye, 2014), in accordance with the iterative annealing model (Todd et al., 1996), thereby giving them further opportunity to fold correctly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "9c0cbabf-2ce6-483d-b1a9-71d4007d2560",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C14",
+      "claim": "The iterative annealing model predicts higher folding yields.",
+      "claim_type": "EXPLICIT",
+      "source": "The iterative annealing model predicts higher folding yields but it has been suggested that annealing can also lead to accelerated folding (Tang et al., 2006; Gupta et al., 2014; Weaver and Rye, 2014; Weaver et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction of the iterative annealing model supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "aa16d7dc-cfdc-4f51-b03f-99859b9227a2",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C15",
+      "claim": "Annealing can lead to accelerated folding.",
+      "claim_type": "EXPLICIT",
+      "source": "The iterative annealing model predicts higher folding yields but it has been suggested that annealing can also lead to accelerated folding (Tang et al., 2006; Gupta et al., 2014; Weaver and Rye, 2014; Weaver et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "47ebcc22-b7d9-4624-846e-0f0dd22edeaa",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C16",
+      "claim": "Protein substrates spend variable amounts of time folding in the cavity and in bulk solution because of GroEL-GroES cycling and the leakiness of its cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "One complication in understanding the thermodynamic effects of encapsulation has been that protein substrates spend variable amounts of time folding in the cavity and in bulk solution because of GroEL-GroES cycling and the leakiness of its cavity (Motojima and Yoshida, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a complication noted in the literature, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "999c868e-057e-4646-a1b3-02428da588b7",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C17",
+      "claim": "The complex of single-ring GroEL with GroES has been suggested to form during GroEL's normal reaction cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown below, such leakiness is even greater in the complex of single-ring GroEL with GroES, which was used in some studies (Hofmann et al., 2010) and has been suggested to form during GroEL's normal reaction cycle (Yan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "2556edde-cb51-420b-94d3-df30abb3d740",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C18",
+      "claim": "A chimera of dihydrofolate reductase from Moritella profunda (DHFRMp) fused to eGFP is encapsulated in the BeFx-stabilized GroEL-GroES2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "An appropriate system was found to be a chimera of dihydrofolate reductase from Moritella profunda (DHFRMp) fused to eGFP, which is encapsulated in the football-shaped and non-cycling BeFx-stabilized GroEL-GroES2 complex (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "48557bd3-e4d1-428b-a70e-ccb572490c97",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C19",
+      "claim": "Protein stability in the GroEL cavity is reduced dramatically in comparison with bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that protein stability in the GroEL cavity is reduced dramatically in comparison with bulk solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "18362ed5-dc57-4a98-a63b-a01c6378e358",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C20",
+      "claim": "The cavity volume of the GroEL-GroES2 complex is about 175,000 \u00c53.",
+      "claim_type": "EXPLICIT",
+      "source": "The cavity volume is about 175,000 \u00c53 whereas that of the chimera (which is not drawn to scale) is about 58,000 \u00c53 assuming 1.23 \u00c53 per Da.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "1cf44fa1-3572-4a4e-8b08-a382dad1a841",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C21",
+      "claim": "The volume of the DHFRMp-eGFP chimera is about 58,000 \u00c53 assuming 1.23 \u00c53 per Da.",
+      "claim_type": "EXPLICIT",
+      "source": "The cavity volume is about 175,000 \u00c53 whereas that of the chimera (which is not drawn to scale) is about 58,000 \u00c53 assuming 1.23 \u00c53 per Da.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption and calculated based on a standard conversion factor.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "d983bd67-e7fb-479a-918a-167ae4a9787b",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C22",
+      "claim": "eGFP-containing 'football' complexes remain intact and eGFP does not escape during overnight incubation at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that the GroEL-GroES2 football-shaped complexes remained intact and that eGFP did not escape outside during the overnight incubation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from gel-filtration and SDS-PAGE data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "55080f45-327e-496f-8cfc-89096bf7b3d8",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C23",
+      "claim": "Most of the eGFP escaped from the cavity of the complex of single-ring GroEL with GroES after overnight incubation at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the eGFP was found in fractions (peak 3) that contain no GroEL and GroES (inset), thereby indicating that eGFP escaped from the cavity of the complex of SR1 with GroES.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from gel-filtration and SDS-PAGE data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "a29c17c7-bda2-4b0a-b4aa-d973bd2bfadd",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C24",
+      "claim": "Dihydrofolate reductase from Moritella profunda is a relatively unstable protein at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to use dihydrofolate reductase from Moritella profunda, a psychrophilic bacterium with an optimal growth temperature at 2\u00b0C, as a model substrate since it is a relatively unstable protein at room temperature Xu et al., 2003 whose folding can be monitored easily by measuring the regain in enzyme activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "fe2769d4-8211-40c5-87e3-70a34488d505",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C25",
+      "claim": "Moritella profunda is a psychrophilic bacterium with an optimal growth temperature at 2\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to use dihydrofolate reductase from Moritella profunda, a psychrophilic bacterium with an optimal growth temperature at 2\u00b0C, as a model substrate since it is a relatively unstable protein at room temperature Xu et al., 2003 whose folding can be monitored easily by measuring the regain in enzyme activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "32cd8394-e247-46de-83c5-a4246789a106",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C26",
+      "claim": "DHFRMp folding can be monitored easily by measuring the regain in enzyme activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to use dihydrofolate reductase from Moritella profunda, a psychrophilic bacterium with an optimal growth temperature at 2\u00b0C, as a model substrate since it is a relatively unstable protein at room temperature Xu et al., 2003 whose folding can be monitored easily by measuring the regain in enzyme activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for choosing this protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "597b4048-8211-41dc-881b-7041c1f71c59",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C27",
+      "claim": "DHFRMp was fused to the C-terminus of eGFP in order to further destabilize it.",
+      "claim_type": "EXPLICIT",
+      "source": "DHFRMp was fused to the C-terminus of enhanced green fluorescent protein (eGFP) in order to further destabilize it as observed before for other proteins (Sokolovski et al., 2015; Dave et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design rationale supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "8d0d2acd-0b43-4619-a540-988f06351413",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C28",
+      "claim": "The fusion to eGFP facilitated easy and sensitive determination of the location of the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion to eGFP also facilitated easy and sensitive determination of the location of the substrate, that is whether it is in the cavity or has leaked outside of it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical advantage of the fusion design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "4179e200-c9b3-492d-877c-57f64864a0fa",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C29",
+      "claim": "The apparent melting temperature of DHFRMp alone in bulk solution is about 41.2 (\u00b11.8) \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our conditions, the apparent melting temperature, Tm, in bulk solution of DHFRMp alone was found to be about 41.2 (\u00b11.8) \u00b0C whereas DHFRMp fused to eGFP was found to be strongly destabilized with a Tm of 22.8 (\u00b11.1) \u00b0C (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value reported in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "0e5845a5-b852-4c0f-add7-da4439051fca",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C30",
+      "claim": "DHFRMp fused to eGFP is strongly destabilized with a Tm of 22.8 (\u00b11.1) \u00b0C in bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our conditions, the apparent melting temperature, Tm, in bulk solution of DHFRMp alone was found to be about 41.2 (\u00b11.8) \u00b0C whereas DHFRMp fused to eGFP was found to be strongly destabilized with a Tm of 22.8 (\u00b11.1) \u00b0C (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value reported in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "4d3ce389-6cf7-4254-a52e-3a737877835a",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C31",
+      "claim": "eGFP in the chimera is destabilized in bulk solution relative to eGFP alone, with Tm values of 76.3 (\u00b10.3) and 81.3 (\u00b11.3) \u00b0C, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "eGFP in the chimera was also found to be destabilized in bulk solution relative to eGFP alone, but to a lesser extent, with Tm values of 76.3 (\u00b10.3) and 81.3 (\u00b11.3) \u00b0C, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured comparison reported in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "6265d825-15b2-4a85-89e7-9c4437ae89dc",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C32",
+      "claim": "The BeFx-stabilized GroEL-GroES2 'football' complex is stabilized in the presence of BeFx.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that the GroEL-GroES2 complex is stabilized in the presence of BeFx (Taguchi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "9301dd5e-6d72-42d0-93d6-e68a9130576c",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C33",
+      "claim": "A lag phase is observed in the DHFR activity of the encapsulated chimera but not the free chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show a lag phase followed by a linear phase (Figure 3) before activity starts to diminish owing to substrate depletion. Strikingly, the lag phase is absent when the chimera is free in bulk solution (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "042029ac-e62e-48d2-a776-2443e899bd83",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C34",
+      "claim": "The rate constant associated with the lag phase decreases with increasing substrate concentrations for the encapsulated chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of Equation 2 shows that the value of the observed rate constant, \u03bb, decreases with increasing substrate concentration as observed here in the case of the encapsulated chimera (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "2a911cd3-ff35-46be-85f5-ed9f5610bcc9",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C35",
+      "claim": "The DHFRMp part of the chimera is significantly destabilized in the cavity, but not in bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that the DHFRMp part of the chimera is significantly destabilized in the cavity, but not in bulk solution (where the lag phase is absent), and that the substrates DHF and NADPH shift its equilibrium toward the folded state via a conformational selection mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the kinetic data showing substrate concentration dependence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "a09e356c-b67e-40de-b74c-93d9c94d3fe8",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C36",
+      "claim": "The substrates DHF and NADPH shift the equilibrium of the DHFRMp part of the chimera toward the folded state via a conformational selection mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that the DHFRMp part of the chimera is significantly destabilized in the cavity, but not in bulk solution (where the lag phase is absent), and that the substrates DHF and NADPH shift its equilibrium toward the folded state via a conformational selection mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the kinetic data showing substrate concentration dependence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "d15a10a6-6046-487a-9cf6-38a45667b84b",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C37",
+      "claim": "Both DHF and NADPH stabilize the DHFRMp part of the chimera in bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this finding, temperature melts of the chimera in bulk solution show that both DHF and NADPH stabilize its DHFRMp part (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the temperature melt data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "f4bb17b0-970f-4d5a-a0f9-b9924a83ceef",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C38",
+      "claim": "Only 20% of human DHFR mis-folds inside the cavity of the non-cycling complex of single-ring GroEL with GroES.",
+      "claim_type": "EXPLICIT",
+      "source": "This possibility is unlikely, however, because it was found that only 20% of human DHFR mis-folds inside the cavity of the non-cycling complex of single-ring GroEL with GroES (Horst et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study used to support an argument.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "e4d689cf-8035-48b6-a051-e03c3eae7b48",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C39",
+      "claim": "The folding rate constant of the DHFRMp part of the chimera inside the cavity is 1.4 (\u00b10.4) x 10\u22124 sec\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Values of the folding and unfolding rate constants were obtained by fitting the plot of \u03bb as a function of substrate (DHF) concentration to Equation 2 and found to be 1.4 (\u00b10.4) x 10\u22124 and 7.3 (\u00b10.8) x 10\u22123 sec, respectively (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value obtained from fitting experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "651950b3-b93c-40a6-b918-1f320d1754b0",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C40",
+      "claim": "The unfolding rate constant of the DHFRMp part of the chimera inside the cavity is 7.3 (\u00b10.8) x 10\u22123 sec\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Values of the folding and unfolding rate constants were obtained by fitting the plot of \u03bb as a function of substrate (DHF) concentration to Equation 2 and found to be 1.4 (\u00b10.4) x 10\u22124 and 7.3 (\u00b10.8) x 10\u22123 sec, respectively (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value obtained from fitting experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "56e51f71-d00f-499a-94b4-191901be65ce",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C41",
+      "claim": "The stability of the cavity-confined fused DHFRMp, in the absence of the substrates DHF and NADPH, is 2.4 (\u00b10.2) kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the stability of the cavity-confined fused DHFRMp, in the absence of the substrates DHF and NADPH, is 2.4 (\u00b10.2) kcal mol\u22121, that is the folded state is extremely destabilized so that it is less stable than the unfolded state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the measured folding and unfolding rate constants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "4e387402-4ccc-448b-bc97-3cc26f97d4e1",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C42",
+      "claim": "The folded state of cavity-confined fused DHFRMp is extremely destabilized so that it is less stable than the unfolded state.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the stability of the cavity-confined fused DHFRMp, in the absence of the substrates DHF and NADPH, is 2.4 (\u00b10.2) kcal mol\u22121, that is the folded state is extremely destabilized so that it is less stable than the unfolded state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the positive free energy value.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "4eceeab7-b0c8-476a-af30-1eb00249de24",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C43",
+      "claim": "The stability in bulk solution of fused DHFRMp, in the absence of the substrates DHF and NADPH, is \u22123.45 (\u00b10.09) kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the stability in bulk solution of fused DHFRMp, in the absence of the substrates DHF and NADPH, is \u22123.45 (\u00b10.09) kcal mol\u22121 (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value obtained from GuHCl denaturation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "85dd8a02-8e5a-425f-a3ab-c65c8bfa6bbc",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C44",
+      "claim": "Encapsulation in the GroEL cavity destabilizes the DHFRMp part of the chimera by more than five kcal mol\u22121 relative to bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results obtained here show that encapsulation in the GroEL cavity destabilizes the DHFRMp part of the chimera by more than five kcal mol\u22121 relative to bulk solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the difference in stability values between caged and free protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "caa0f7e8-367e-4d58-a35d-3d13f71cffb1",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C45",
+      "claim": "The Km value of the encapsulated fused DHFRMp for DHF is about 0.28 (\u00b10.09) mM.",
+      "claim_type": "EXPLICIT",
+      "source": "The Km value of the encapsulated fused DHFRMp for DHF is about 0.28 (\u00b10.09) mM and, thus, about 10-fold higher than the value of 33 (\u00b12) \u00b5M measured in bulk solution (Figure 4C), in agreement with a previous determination (Xu et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from enzyme kinetics experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "abd47015-acbe-4cd7-a735-470dbf52e800",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C46",
+      "claim": "The Km value of the free fused DHFRMp for DHF is 33 (\u00b12) \u00b5M in bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The Km value of the encapsulated fused DHFRMp for DHF is about 0.28 (\u00b10.09) mM and, thus, about 10-fold higher than the value of 33 (\u00b12) \u00b5M measured in bulk solution (Figure 4C), in agreement with a previous determination (Xu et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from enzyme kinetics experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "68cc5739-73ad-4b93-b600-dcdf57c9bb4e",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C47",
+      "claim": "The Km value of encapsulated fused DHFRMp is about 10-fold higher than that in bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The Km value of the encapsulated fused DHFRMp for DHF is about 0.28 (\u00b10.09) mM and, thus, about 10-fold higher than the value of 33 (\u00b12) \u00b5M measured in bulk solution (Figure 4C), in agreement with a previous determination (Xu et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the measured Km values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "c0b71729-9204-4852-a378-694741300167",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C48",
+      "claim": "The rotational time of the free chimera is 22.85 (\u00b10.30) ns.",
+      "claim_type": "EXPLICIT",
+      "source": "Fits of the decay curves for the free and caged chimeras yielded similar rotational times of 22.85 (\u00b10.30) ns and 25.40 (\u00b10.45) ns, respectively (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy decay experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "37805a88-523e-4412-b08f-4fc27f2fd36d",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C49",
+      "claim": "The rotational time of the caged chimera is 25.40 (\u00b10.45) ns.",
+      "claim_type": "EXPLICIT",
+      "source": "Fits of the decay curves for the free and caged chimeras yielded similar rotational times of 22.85 (\u00b10.30) ns and 25.40 (\u00b10.45) ns, respectively (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy decay experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "0660c4c2-993f-4e1b-a3d9-705cdeb1d161",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C50",
+      "claim": "The rotational time of free eGFP is 14.38 (\u00b10.20) ns.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the fits of the decay curves for free and caged eGFPs yielded similar rotational times of 14.38 (\u00b10.20) ns and 15.90 (\u00b10.25) ns, respectively (Figure 5\u2014figure supplement 1), in agreement with previous work (Striker et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy decay experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "fc40f9bc-d094-45ff-a5da-82f1f2727605",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C51",
+      "claim": "The rotational time of caged eGFP is 15.90 (\u00b10.25) ns.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the fits of the decay curves for free and caged eGFPs yielded similar rotational times of 14.38 (\u00b10.20) ns and 15.90 (\u00b10.25) ns, respectively (Figure 5\u2014figure supplement 1), in agreement with previous work (Striker et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured value from fluorescence anisotropy decay experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "ca54d34b-bfe7-4814-9438-eac7ea353bb2",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C52",
+      "claim": "The results indicate free mobility of the chimera inside the GroEL football complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate free mobility of the chimera and eGFP inside the GroEL football complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the similar rotational times of free and caged proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "e2211dca-2c11-4d70-bf07-ffabb28d9c43",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C53",
+      "claim": "It is unlikely that the cavity-induced thermodynamic destabilization of the fused DHFRMp is due to interactions with the cavity walls.",
+      "claim_type": "EXPLICIT",
+      "source": "It is, therefore, unlikely that the cavity-induced thermodynamic destabilization of the fused DHFRMp is due to interactions with the cavity walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the fluorescence anisotropy data showing free mobility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "ea2e5e28-0ff9-472d-8d9a-eef0b569b5e7",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C54",
+      "claim": "Protein stability in the chaperonin cage is reduced dramatically by more than 5 kcal mol\u22121 compared to that in bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that protein stability in the chaperonin cage is reduced dramatically by more than 5 kcal mol\u22121 compared to that in bulk solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "dba21906-d070-4a1a-b5d7-25e19cce76ed",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C55",
+      "claim": "Steric confinement alone is expected to be stabilizing.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that steric confinement alone is expected to be stabilizing, our results indicate that protein destabilization in the cavity is likely to be due to hydrophobic and/or electrostatic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "68cf6267-b6a0-4787-a517-fbcb9c0116ef",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C56",
+      "claim": "Protein destabilization in the cavity is likely to be due to hydrophobic and/or electrostatic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that steric confinement alone is expected to be stabilizing, our results indicate that protein destabilization in the cavity is likely to be due to hydrophobic and/or electrostatic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that destabilization occurs despite confinement being stabilizing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "aa658036-8f43-4a0f-9466-6feb6e47c420",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C57",
+      "claim": "Water in the cavity may become more ordered in the presence of a substrate protein, thereby leading to a diminished hydrophobic effect.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that water in the cavity becomes more ordered in the presence of a substrate protein, thereby leading to a diminished hydrophobic effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as a possible mechanism for the observed destabilization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "40f6e0a8-9121-4a21-8289-229f0502b0ba",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C58",
+      "claim": "All-atom molecular dynamics simulations have shown that pairwise hydrophobic interactions are destabilized in hydrophobic nanopores when they contain water at bulk density.",
+      "claim_type": "EXPLICIT",
+      "source": "All-atom molecular dynamics simulations have shown that pairwise hydrophobic interactions are destabilized in hydrophobic nanopores when they contain water at bulk density (Vaitheeswaran and Thirumalai, 2008), as indicated by some evidence in the case of the GroEL cavity (Franck et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited simulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "eac29773-a88f-4bf7-8e95-9df2d1adf0a0",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C59",
+      "claim": "There is some evidence that the GroEL cavity contains water at bulk density.",
+      "claim_type": "EXPLICIT",
+      "source": "All-atom molecular dynamics simulations have shown that pairwise hydrophobic interactions are destabilized in hydrophobic nanopores when they contain water at bulk density (Vaitheeswaran and Thirumalai, 2008), as indicated by some evidence in the case of the GroEL cavity (Franck et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is indicated by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "919e04c8-05de-4431-a0a4-092e864211d3",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C60",
+      "claim": "The cavity walls of the 'football' complexes are charged.",
+      "claim_type": "EXPLICIT",
+      "source": "The cavity walls of the 'football' complexes in our experiments are, however, charged and the extent of destabilization would, therefore, depend on many factors including the distribution of charges on the cavity walls, the cavity geometry and the presence of regions where the water structure is disrupted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the experimental system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "700e6f8e-51a6-4e68-9c56-cc96d0d24bcb",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C61",
+      "claim": "Substrate proteins first bind to GroEL in its apo state and can become destabilized through binding to its hydrophobic cavity walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Substrate proteins first bind to GroEL in its apo state and can become destabilized through binding to its hydrophobic cavity walls (see, for example, Libich et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the GroEL mechanism and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "cfc47c71-8337-4516-96dd-51df38a822c4",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C62",
+      "claim": "ATP binding to the GroEL-protein substrate complex can cause further unfolding due to a stretching force applied to the substrate protein upon ATP-binding-promoted conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP binding to the GroEL-protein substrate complex, which follows, can cause further unfolding due to a stretching force applied to the substrate protein upon ATP-binding-promoted conformational changes (Weaver et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the GroEL mechanism and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "9ba9b617-3e2c-4022-9e31-77f87066165d",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C63",
+      "claim": "Protein substrates are encapsulated in the GroES-capped cavity for 1\u201310 s before being discharged into bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, protein substrates are encapsulated in the GroES-capped cavity for 1\u201310 s (Bigman and Horovitz, 2019) before being discharged into bulk solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the GroEL mechanism and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "8161c1f6-d16e-4e5e-a751-27ed688aa0e9",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C64",
+      "claim": "The magnitude and possibly direction of the encapsulation effect is likely to depend on the protein substrate's size and other properties.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to point out, however, that the magnitude (and possibly direction) of the effect is likely to depend on the protein substrate's size and other properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a caveat to the generalizability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "9ce7502b-cbc3-4d22-9bb2-1c2357e55c86",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C65",
+      "claim": "The finding that the cavity environment is destabilizing supports the iterative annealing mechanism of action proposed for the chaperonin GroEL.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is important to note that our finding that the cavity environment is destabilizing supports the iterative annealing mechanism of action proposed for the chaperonin GroEL (Todd et al., 1996; Thirumalai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an implication of the findings, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "65f04d24-1391-438d-beb3-d1a173968857",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C66",
+      "claim": "According to the iterative annealing mechanism, protein substrates undergo kinetic partitioning, during each reaction cycle of GroEL, between productive folding to the native state and mis-folding.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this mechanism, protein substrates undergo kinetic partitioning, during each reaction cycle of GroEL, between productive folding to the native state and mis-folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the iterative annealing mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "4c621c34-0a3f-44bc-bea4-6c43c2bc760c",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C67",
+      "claim": "The remaining fraction of mis-folded protein substrates are rebound to GroEL and (partially) unfolded, thereby giving them new opportunity to fold correctly.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining fraction of mis-folded protein substrates are then rebound to GroEL and (partially) unfolded, thereby giving them new opportunity to fold correctly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the iterative annealing mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "4985e62b-cfa3-4b57-b135-46729fdb4bd6",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C68",
+      "claim": "(Partial) unfolding is achieved not only because of binding to the hydrophobic cavity of the apo state and ATP-promoted forced unfolding, but also because it is strongly favored thermodynamically under the conditions in the GroES-capped cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that (partial) unfolding is achieved not only because of binding to the hydrophobic cavity of the apo state and ATP-promoted forced unfolding, as shown before by others, but also because it is strongly favored thermodynamically under the conditions in the GroES-capped cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion integrating the current findings with previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "4cb15577-ed16-48a9-b3c7-1be2e9b3cd95",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C69",
+      "claim": "The melting temperature of the DHFRMp part of the chimera increases by about 8\u00b0C in the presence of NADPH.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the conditions here, the melting temperature of the DHFRMp part of the chimera increases, in the presence of NADPH and DHF, by about 8\u00b0C and 31\u00b0C, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "231867f9-7d15-4168-88b8-46a557728fb7",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C70",
+      "claim": "The melting temperature of the DHFRMp part of the chimera increases by about 31\u00b0C in the presence of DHF.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the conditions here, the melting temperature of the DHFRMp part of the chimera increases, in the presence of NADPH and DHF, by about 8\u00b0C and 31\u00b0C, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "114d3ff7-8c22-4560-ab4c-a876fa4f346a",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C71",
+      "claim": "The m-values for GuHCl denaturation are essentially independent of the concentration of NADPH and have an average value of 1.4 (\u00b10.1) kcal mol\u22121 M\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The m-values are essentially independent of the concentration of NADPH and were found to have an average value of 1.4 (\u00b10.1) kcal mol\u22121 M\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "9c30f99e-7884-4942-9374-bf905e8f8999",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C72",
+      "claim": "The chimera contains an N-terminal His7-tag.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pet21a plasmid containing the gene for eGFP (with the mutation A206K that stabilizes its monomeric state) and an N-terminal His7-tag (Bandyopadhyay et al., 2017) was amplified by PCR using the following respective forward and reverse primers:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "c3b7955c-2930-41bc-9fc1-6508ded4e28e",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C73",
+      "claim": "The eGFP in the chimera contains the mutation A206K that stabilizes its monomeric state.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pet21a plasmid containing the gene for eGFP (with the mutation A206K that stabilizes its monomeric state) and an N-terminal His7-tag (Bandyopadhyay et al., 2017) was amplified by PCR using the following respective forward and reverse primers:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "f60c7d7b-1c32-4a12-9a0e-e67fbfd1b6ed",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C74",
+      "claim": "A TEV protease cleavage site was introduced at the C-terminus of eGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "This amplification resulted in introducing a TEV protease cleavage site at the C-terminus of eGFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "7b43f679-1445-4d41-8683-17e4f901770f",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "claim_id": "C75",
+      "claim": "The Km of NADPH for DHFRMp is 13 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "where [S] is the concentration of NADPH and Km is its Michaelis-Menten constant of 13 \u00b5M (Evans et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9220cc54-9b50-4aa3-a7d7-0e2dd6c92f22",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The GroE chaperonin system comprises GroEL and GroES, assists ATP-dependent protein folding in vivo and in vitro, and forms a cage that allows substrate proteins to fold in isolation from bulk solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 describe well-established background knowledge about the GroE system, supported by multiple literature citations. These are foundational facts about the system under study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The literature presents conflicting views on whether the GroE cavity is a passive cage or actively alters folding, whether encapsulation is thermodynamically stabilizing or destabilizing, and the mechanisms by which encapsulation affects folding kinetics and yields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C17 accurately summarize the state of controversy in the field regarding GroE mechanism, supported by appropriate citations. These claims establish the motivation for the current study by identifying unresolved questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A DHFRMp-eGFP chimera was designed and constructed for encapsulation in the BeFx-stabilized GroEL-GroES2 complex, where DHFRMp is an unstable psychrophilic enzyme whose folding can be monitored by activity, and eGFP fusion further destabilizes DHFRMp while enabling location tracking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C24-C28, and C72-C74 describe the experimental design and construction of the model system. The rationale is well-justified with citations, and the molecular biology details are clearly documented in the methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "14844ec5-8f0a-4f95-8d00-01321488b151",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The cavity volume of the GroEL-GroES2 complex is approximately 175,000 \u00c5\u00b3, while the DHFRMp-eGFP chimera occupies about 58,000 \u00c5\u00b3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 provide structural context using standard volume calculations (1.23 \u00c5\u00b3 per Da). These are straightforward calculations based on known molecular weights and established conversion factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "e60d9ef4-d958-4874-8e0c-545e858ccecf",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The BeFx-stabilized GroEL-GroES2 'football' complex remains intact with no substrate escape during overnight incubation at room temperature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C32 are supported by gel-filtration and SDS-PAGE data (Figure 1\u2014figure supplement 1) showing co-elution of all components. This validates a critical requirement for the thermodynamic measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "35e8157e-bcf1-431f-9fa2-9fe2c41dd5cf",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Most eGFP escapes from the cavity of single-ring GroEL-GroES complexes after overnight incubation at room temperature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 is supported by gel-filtration data (Figure 1\u2014figure supplement 2) showing eGFP in fractions lacking GroEL/GroES. This demonstrates why the football complex is necessary for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "43477ce4-cf5e-41d2-b31e-cc093b20b9d1",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fusion to eGFP dramatically destabilizes DHFRMp, reducing its Tm from 41.2\u00b0C to 22.8\u00b0C, while eGFP itself is modestly destabilized from 81.3\u00b0C to 76.3\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 report measured Tm values from differential scanning fluorimetry (Figure 2) with appropriate error estimates. The destabilization of DHFRMp by fusion is consistent with cited precedent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "972a48fb-efe6-4c1f-8b73-ab79e32c02bc",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Encapsulated DHFRMp-eGFP chimera shows a lag phase in DHFR activity that is absent in bulk solution, with the lag phase rate constant decreasing with increasing substrate concentration, indicating that DHFRMp is destabilized in the cavity and substrates shift equilibrium toward the folded state via conformational selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are supported by kinetic data (Figure 3, Figure 4A) showing substrate concentration-dependent behavior consistent with conformational selection. The mathematical framework (Equations 1-2) appropriately describes the observed kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "e95ff64e-8341-4a31-9932-482fa131d2aa",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DHF and NADPH stabilize the DHFRMp part of the chimera in bulk solution, increasing Tm by approximately 31\u00b0C and 8\u00b0C, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C69-C70 are supported by temperature melt data (Figure 4\u2014figure supplement 1) showing substrate-induced stabilization. This validates the conformational selection mechanism proposed for the encapsulated protein.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "e0b740bc-3bfc-4037-89a6-6e86652aa9e4",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Only 20% of human DHFR mis-folds inside the cavity of non-cycling single-ring GroEL-GroES complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 cites prior work (Horst et al., 2007) to argue against an alternative explanation involving mis-folding. The citation appears appropriate for this supporting argument.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "41ca597f-4997-46b2-bbc6-c18051ebc66f",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The folding and unfolding rate constants of cavity-confined DHFRMp are 1.4\u00d710\u207b\u2074 s\u207b\u00b9 and 7.3\u00d710\u207b\u00b3 s\u207b\u00b9, respectively, yielding a positive free energy of unfolding of +2.4 kcal/mol, indicating the folded state is less stable than the unfolded state in the cavity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 report kinetic parameters derived from fitting experimental data (Figure 4A,B) to the conformational selection model. The chi-squared surfaces indicate well-defined parameters, and the thermodynamic interpretation is mathematically correct.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "bace6d85-84b3-4037-a663-ae7db1523785",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The stability of DHFRMp-eGFP in bulk solution is -3.45 kcal/mol in the absence of substrates, determined by GuHCl denaturation with m-values independent of NADPH concentration (average 1.4 kcal mol\u207b\u00b9 M\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C71 report stability measurements from GuHCl denaturation (Figure 4\u2014figure supplement 2) using standard analysis (Equation 3-4). The extrapolation to zero NADPH is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "2654965b-1acd-4b73-bc3a-fd455e383c64",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Encapsulation in the GroEL cavity destabilizes DHFRMp by more than 5 kcal/mol relative to bulk solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C54 represent the central finding, calculated from the difference between cavity (+2.4 kcal/mol) and bulk (-3.45 kcal/mol) stabilities. The calculation is straightforward and the conclusion is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "7b4918a0-7a17-4804-9f74-ce14d8fa8d69",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Km of encapsulated DHFRMp-eGFP for DHF is 0.28 mM, approximately 10-fold higher than the 33 \u03bcM value in bulk solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 report Km values from Michaelis-Menten analysis (Figure 4C). The bulk solution value agrees with prior literature (Xu et al., 2003), and the increase upon encapsulation is consistent with destabilization. Claim C75 provides the NADPH Km from literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "a2939ea6-df25-4d08-bd63-ccc584c29cac",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Fluorescence anisotropy measurements show similar rotational times for free and caged chimera (22.85 vs 25.40 ns) and eGFP (14.38 vs 15.90 ns), indicating free mobility inside the cavity and suggesting destabilization is not due to wall interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 report time-resolved fluorescence anisotropy data (Figure 5, Figure 5\u2014figure supplement 1) showing minimal difference between free and caged proteins. The interpretation that similar rotational times indicate free mobility is reasonable, though the small increases could reflect some constraint.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "ffe2728b-80ae-40ba-8806-51bf6fab2828",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Since steric confinement alone is expected to be stabilizing, the observed destabilization is likely due to hydrophobic and/or electrostatic effects, possibly from more ordered cavity water diminishing the hydrophobic effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 provide mechanistic interpretation. C55 states established knowledge about confinement effects. C56 is a logical inference from the data. C57 proposes a specific mechanism, appropriately framed as speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "f1eaf229-050b-42fb-bbd4-442b08cc80aa",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations show hydrophobic interactions are destabilized in hydrophobic nanopores containing water at bulk density, with some evidence this applies to the GroEL cavity, though the cavity walls are charged which may affect the extent of destabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 cite relevant simulation studies and acknowledge the complexity of the actual system. The authors appropriately note that their charged cavity differs from the simulated hydrophobic pores.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "823b0612-a6cd-46c3-9380-e5b8a9d9cbde",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The GroEL mechanism involves substrate binding to the apo state with destabilization, ATP-promoted forced unfolding, encapsulation for 1-10 seconds, and iterative annealing where mis-folded substrates are rebound and partially unfolded for additional folding attempts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63, C66-C67 summarize the established GroEL mechanism from literature, appropriately cited. These provide context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "160b8dc9-95d3-430b-bd8a-a6134c059143",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The magnitude and possibly direction of the encapsulation effect likely depends on the protein substrate's size and other properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 appropriately acknowledges limitations in generalizing from a single substrate. This is a reasonable caveat given the diversity of GroEL substrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    },
+    {
+      "id": "c7b3978d-1fa1-4128-b9fa-385b7e6cd1ae",
+      "content_id": "ff1c1c2c-9030-4973-a236-9d91ffec0c1a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The finding that the cavity environment is destabilizing supports the iterative annealing mechanism, showing that partial unfolding is achieved not only by binding to the apo state and ATP-promoted forced unfolding, but also because it is thermodynamically favored in the GroES-capped cavity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65 and C68 connect the experimental findings to the iterative annealing model. The data demonstrating thermodynamic destabilization in the cavity provides new support for this mechanism, complementing previously known kinetic effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:43:35.303683Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "629da2aa-f829-4952-b371-fc66b44dd0a7",
+      "result_id": "9220cc54-9b50-4aa3-a7d7-0e2dd6c92f22"
+    },
+    {
+      "claim_id": "4b66693e-e7ff-487a-a0a8-8ecaf5886e76",
+      "result_id": "9220cc54-9b50-4aa3-a7d7-0e2dd6c92f22"
+    },
+    {
+      "claim_id": "791eb04d-7896-4fbe-bffd-f5d4a034f50e",
+      "result_id": "9220cc54-9b50-4aa3-a7d7-0e2dd6c92f22"
+    },
+    {
+      "claim_id": "29cee58d-632d-4527-a832-924fd9ba7cf9",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "51a798d9-0f49-4812-8a06-4b7a03c63776",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "d3addc19-0eb3-43cb-ad12-f5c1a8022cca",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "bbff323c-390c-4b0f-8145-a791c7d1ca01",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "28bf9f7b-e719-4d48-93b4-1719f9330179",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "b3c6022d-349d-4463-99be-6f1fdfbfc950",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "8ed05602-e827-4033-9cc9-899fd60b131e",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "be9ed499-ed7d-4753-bcc9-9347781dc261",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "0fc90a62-c162-49ea-8229-64b6e57ba8df",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "a38469b3-b9c2-424c-b720-ef80affeb125",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "9c0cbabf-2ce6-483d-b1a9-71d4007d2560",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "aa16d7dc-cfdc-4f51-b03f-99859b9227a2",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "47ebcc22-b7d9-4624-846e-0f0dd22edeaa",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "999c868e-057e-4646-a1b3-02428da588b7",
+      "result_id": "0e87d150-65b0-4af6-8270-4ecf9acea7b9"
+    },
+    {
+      "claim_id": "2556edde-cb51-420b-94d3-df30abb3d740",
+      "result_id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab"
+    },
+    {
+      "claim_id": "a29c17c7-bda2-4b0a-b4aa-d973bd2bfadd",
+      "result_id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab"
+    },
+    {
+      "claim_id": "fe2769d4-8211-40c5-87e3-70a34488d505",
+      "result_id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab"
+    },
+    {
+      "claim_id": "32cd8394-e247-46de-83c5-a4246789a106",
+      "result_id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab"
+    },
+    {
+      "claim_id": "597b4048-8211-41dc-881b-7041c1f71c59",
+      "result_id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab"
+    },
+    {
+      "claim_id": "8d0d2acd-0b43-4619-a540-988f06351413",
+      "result_id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab"
+    },
+    {
+      "claim_id": "9c30f99e-7884-4942-9374-bf905e8f8999",
+      "result_id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab"
+    },
+    {
+      "claim_id": "c3b7955c-2930-41bc-9fc1-6508ded4e28e",
+      "result_id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab"
+    },
+    {
+      "claim_id": "f60c7d7b-1c32-4a12-9a0e-e67fbfd1b6ed",
+      "result_id": "becfac64-6a5e-4c81-b4c0-e1d48083c1ab"
+    },
+    {
+      "claim_id": "18362ed5-dc57-4a98-a63b-a01c6378e358",
+      "result_id": "14844ec5-8f0a-4f95-8d00-01321488b151"
+    },
+    {
+      "claim_id": "1cf44fa1-3572-4a4e-8b08-a382dad1a841",
+      "result_id": "14844ec5-8f0a-4f95-8d00-01321488b151"
+    },
+    {
+      "claim_id": "d983bd67-e7fb-479a-918a-167ae4a9787b",
+      "result_id": "e60d9ef4-d958-4874-8e0c-545e858ccecf"
+    },
+    {
+      "claim_id": "6265d825-15b2-4a85-89e7-9c4437ae89dc",
+      "result_id": "e60d9ef4-d958-4874-8e0c-545e858ccecf"
+    },
+    {
+      "claim_id": "55080f45-327e-496f-8cfc-89096bf7b3d8",
+      "result_id": "35e8157e-bcf1-431f-9fa2-9fe2c41dd5cf"
+    },
+    {
+      "claim_id": "4179e200-c9b3-492d-877c-57f64864a0fa",
+      "result_id": "43477ce4-cf5e-41d2-b31e-cc093b20b9d1"
+    },
+    {
+      "claim_id": "0e5845a5-b852-4c0f-add7-da4439051fca",
+      "result_id": "43477ce4-cf5e-41d2-b31e-cc093b20b9d1"
+    },
+    {
+      "claim_id": "4d3ce389-6cf7-4254-a52e-3a737877835a",
+      "result_id": "43477ce4-cf5e-41d2-b31e-cc093b20b9d1"
+    },
+    {
+      "claim_id": "9301dd5e-6d72-42d0-93d6-e68a9130576c",
+      "result_id": "972a48fb-efe6-4c1f-8b73-ab79e32c02bc"
+    },
+    {
+      "claim_id": "042029ac-e62e-48d2-a776-2443e899bd83",
+      "result_id": "972a48fb-efe6-4c1f-8b73-ab79e32c02bc"
+    },
+    {
+      "claim_id": "2a911cd3-ff35-46be-85f5-ed9f5610bcc9",
+      "result_id": "972a48fb-efe6-4c1f-8b73-ab79e32c02bc"
+    },
+    {
+      "claim_id": "a09e356c-b67e-40de-b74c-93d9c94d3fe8",
+      "result_id": "972a48fb-efe6-4c1f-8b73-ab79e32c02bc"
+    },
+    {
+      "claim_id": "d15a10a6-6046-487a-9cf6-38a45667b84b",
+      "result_id": "e95ff64e-8341-4a31-9932-482fa131d2aa"
+    },
+    {
+      "claim_id": "4cb15577-ed16-48a9-b3c7-1be2e9b3cd95",
+      "result_id": "e95ff64e-8341-4a31-9932-482fa131d2aa"
+    },
+    {
+      "claim_id": "231867f9-7d15-4168-88b8-46a557728fb7",
+      "result_id": "e95ff64e-8341-4a31-9932-482fa131d2aa"
+    },
+    {
+      "claim_id": "f4bb17b0-970f-4d5a-a0f9-b9924a83ceef",
+      "result_id": "e0b740bc-3bfc-4037-89a6-6e86652aa9e4"
+    },
+    {
+      "claim_id": "e4d689cf-8035-48b6-a051-e03c3eae7b48",
+      "result_id": "41ca597f-4997-46b2-bbc6-c18051ebc66f"
+    },
+    {
+      "claim_id": "651950b3-b93c-40a6-b918-1f320d1754b0",
+      "result_id": "41ca597f-4997-46b2-bbc6-c18051ebc66f"
+    },
+    {
+      "claim_id": "56e51f71-d00f-499a-94b4-191901be65ce",
+      "result_id": "41ca597f-4997-46b2-bbc6-c18051ebc66f"
+    },
+    {
+      "claim_id": "4e387402-4ccc-448b-bc97-3cc26f97d4e1",
+      "result_id": "41ca597f-4997-46b2-bbc6-c18051ebc66f"
+    },
+    {
+      "claim_id": "4eceeab7-b0c8-476a-af30-1eb00249de24",
+      "result_id": "bace6d85-84b3-4037-a663-ae7db1523785"
+    },
+    {
+      "claim_id": "114d3ff7-8c22-4560-ab4c-a876fa4f346a",
+      "result_id": "bace6d85-84b3-4037-a663-ae7db1523785"
+    },
+    {
+      "claim_id": "85dd8a02-8e5a-425f-a3ab-c65c8bfa6bbc",
+      "result_id": "2654965b-1acd-4b73-bc3a-fd455e383c64"
+    },
+    {
+      "claim_id": "ea2e5e28-0ff9-472d-8d9a-eef0b569b5e7",
+      "result_id": "2654965b-1acd-4b73-bc3a-fd455e383c64"
+    },
+    {
+      "claim_id": "caa0f7e8-367e-4d58-a35d-3d13f71cffb1",
+      "result_id": "7b4918a0-7a17-4804-9f74-ce14d8fa8d69"
+    },
+    {
+      "claim_id": "abd47015-acbe-4cd7-a735-470dbf52e800",
+      "result_id": "7b4918a0-7a17-4804-9f74-ce14d8fa8d69"
+    },
+    {
+      "claim_id": "68cc5739-73ad-4b93-b600-dcdf57c9bb4e",
+      "result_id": "7b4918a0-7a17-4804-9f74-ce14d8fa8d69"
+    },
+    {
+      "claim_id": "7b43f679-1445-4d41-8683-17e4f901770f",
+      "result_id": "7b4918a0-7a17-4804-9f74-ce14d8fa8d69"
+    },
+    {
+      "claim_id": "c0b71729-9204-4852-a378-694741300167",
+      "result_id": "a2939ea6-df25-4d08-bd63-ccc584c29cac"
+    },
+    {
+      "claim_id": "37805a88-523e-4412-b08f-4fc27f2fd36d",
+      "result_id": "a2939ea6-df25-4d08-bd63-ccc584c29cac"
+    },
+    {
+      "claim_id": "0660c4c2-993f-4e1b-a3d9-705cdeb1d161",
+      "result_id": "a2939ea6-df25-4d08-bd63-ccc584c29cac"
+    },
+    {
+      "claim_id": "fc40f9bc-d094-45ff-a5da-82f1f2727605",
+      "result_id": "a2939ea6-df25-4d08-bd63-ccc584c29cac"
+    },
+    {
+      "claim_id": "ca54d34b-bfe7-4814-9438-eac7ea353bb2",
+      "result_id": "a2939ea6-df25-4d08-bd63-ccc584c29cac"
+    },
+    {
+      "claim_id": "e2211dca-2c11-4d70-bf07-ffabb28d9c43",
+      "result_id": "a2939ea6-df25-4d08-bd63-ccc584c29cac"
+    },
+    {
+      "claim_id": "dba21906-d070-4a1a-b5d7-25e19cce76ed",
+      "result_id": "ffe2728b-80ae-40ba-8806-51bf6fab2828"
+    },
+    {
+      "claim_id": "68cf6267-b6a0-4787-a517-fbcb9c0116ef",
+      "result_id": "ffe2728b-80ae-40ba-8806-51bf6fab2828"
+    },
+    {
+      "claim_id": "aa658036-8f43-4a0f-9466-6feb6e47c420",
+      "result_id": "ffe2728b-80ae-40ba-8806-51bf6fab2828"
+    },
+    {
+      "claim_id": "40f6e0a8-9121-4a21-8289-229f0502b0ba",
+      "result_id": "f1eaf229-050b-42fb-bbd4-442b08cc80aa"
+    },
+    {
+      "claim_id": "eac29773-a88f-4bf7-8e95-9df2d1adf0a0",
+      "result_id": "f1eaf229-050b-42fb-bbd4-442b08cc80aa"
+    },
+    {
+      "claim_id": "919e04c8-05de-4431-a0a4-092e864211d3",
+      "result_id": "f1eaf229-050b-42fb-bbd4-442b08cc80aa"
+    },
+    {
+      "claim_id": "700e6f8e-51a6-4e68-9c56-cc96d0d24bcb",
+      "result_id": "823b0612-a6cd-46c3-9380-e5b8a9d9cbde"
+    },
+    {
+      "claim_id": "cfc47c71-8337-4516-96dd-51df38a822c4",
+      "result_id": "823b0612-a6cd-46c3-9380-e5b8a9d9cbde"
+    },
+    {
+      "claim_id": "9ba9b617-3e2c-4022-9e31-77f87066165d",
+      "result_id": "823b0612-a6cd-46c3-9380-e5b8a9d9cbde"
+    },
+    {
+      "claim_id": "65f04d24-1391-438d-beb3-d1a173968857",
+      "result_id": "823b0612-a6cd-46c3-9380-e5b8a9d9cbde"
+    },
+    {
+      "claim_id": "4c621c34-0a3f-44bc-bea4-6c43c2bc760c",
+      "result_id": "823b0612-a6cd-46c3-9380-e5b8a9d9cbde"
+    },
+    {
+      "claim_id": "8161c1f6-d16e-4e5e-a751-27ed688aa0e9",
+      "result_id": "160b8dc9-95d3-430b-bd8a-a6134c059143"
+    },
+    {
+      "claim_id": "9ce7502b-cbc3-4d22-9bb2-1c2357e55c86",
+      "result_id": "c7b3978d-1fa1-4128-b9fa-385b7e6cd1ae"
+    },
+    {
+      "claim_id": "4985e62b-cfa3-4b57-b135-46729fdb4bd6",
+      "result_id": "c7b3978d-1fa1-4128-b9fa-385b7e6cd1ae"
+    }
+  ],
+  "comparisons": []
+}

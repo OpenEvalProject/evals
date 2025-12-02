@@ -1,0 +1,2339 @@
+{
+  "submission": {
+    "id": "52ebf865-0b27-4cf4-a0c9-1800124b5d3b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:41:18.497934Z",
+    "updated_at": "2025-12-02T17:41:18.497934Z"
+  },
+  "content": [
+    {
+      "id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "submission_id": "52ebf865-0b27-4cf4-a0c9-1800124b5d3b",
+      "content_type": "manuscript",
+      "content_text": "# A non-canonical role for the EDC4 decapping factor in regulating MARF1-mediated mRNA decay\n\n## Authors\n\n- William R Brothers<sup>1</sup> ([ORCID: 0000-0001-8962-7974](https://orcid.org/0000-0001-8962-7974))\n- Steven Hebert<sup>1</sup>\n- Claudia L Kleinman<sup>1</sup>\n- Marc R Fabian<sup>1</sup> ([ORCID: 0000-0003-3700-7604](https://orcid.org/0000-0003-3700-7604)) \u2020\n\n### Affiliations\n\n1. Lady Davis Institute for Medical Research, Jewish General Hospital Montreal Canada\n2. Department of Human Genetics, McGill University Montreal Canada\n3. Department of Biochemistry, McGill University Montreal Canada\n4. Department of Oncology, McGill University Montreal Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nEDC4 is a core component of processing (P)-bodies that binds the DCP2 decapping enzyme and stimulates mRNA decay. EDC4 also interacts with mammalian MARF1, a recently identified endoribonuclease that promotes oogenesis and contains a number of RNA binding domains, including two RRMs and multiple LOTUS domains. How EDC4 regulates MARF1 action and the identity of MARF1 target mRNAs is not known. Our transcriptome-wide analysis identifies bona fide MARF1 target mRNAs and indicates that MARF1 predominantly binds their 3\u2019 UTRs via its LOTUS domains to promote their decay. We also show that a MARF1 RRM plays an essential role in enhancing its endonuclease activity. Importantly, we establish that EDC4 impairs MARF1 activity by preventing its LOTUS domains from binding target mRNAs. Thus, EDC4 not only serves as an enhancer of mRNA turnover that binds DCP2, but also as a repressor that binds MARF1 to prevent the decay of MARF1 target mRNAs.\n\n## Introduction\n\nThe regulated decay of eukaryotic mRNA populations plays an important role in the post-transcriptional control (PTC) of gene expression. These PTC programs are, in turn, critical for regulating a number of biological processes, including during early development, cell proliferation and immune response. The major mRNA decay pathway in eukaryotes initiates with the shortening of the mRNA poly(A) tail (deadenylation), which is carried out by the CCR4-NOT deadenylase complex (Yamashita et al., 2005). mRNA deadenylation is then followed by recruitment of the DCP1-DCP2 decapping complex that hydrolyzes the mRNA 5\u2019-cap structure. This complex is comprised of the DCP2 decapping enzyme, DCP1 (associates with DCP2) and enhancers of mRNA decapping (EDC) proteins (i.e. EDC3 and EDC4). EDC4 enhances mRNA decapping by binding both DCP1 and DCP2 stimulating DCP2 activity (Chang et al., 2014). Once the 5\u2019-cap is removed to yield a 5\u2019 monophosphate, the mRNA is committed for degradation by the 5\u2019-to-3\u2019 exonuclease XRN1. Many proteins that play a role in mRNA metabolism, including EDC4 and other mRNA decapping factors, are found associated with processing (P)-bodies, cytoplasmic ribonucleoprotein granules that contain translationally repressed mRNAs (Hubstenberger et al., 2017; Standart and Weil, 2018). In addition to binding DCP1 and DCP2, human EDC4 also interacts with the RNA binding protein MARF1 (meiosis regulator and mRNA stability factor 1), a recently characterized endonuclease that promotes oogenesis (Bloch et al., 2014; Kanemitsu et al., 2017; Nishimura et al., 2018; Su et al., 2012a; Yao et al., 2018).\n\nMammalian MARF1 proteins contain a NYN endonuclease domain (Figure 1A) that adopts a PIN-like fold (Nishimura et al., 2018; Su et al., 2012a; Yao et al., 2018). In addition to its NYN domain, MARF1 also contains a number of RNA binding modules, including two RRMs and eight tandem winged helix-turn-helix (wHTH) LOTUS (Limkain, Oskar, and Tudor containing proteins 5 and 7) domains. Drosophila MARF1 also contains several tandem LOTUS domains, but has only one RRM and lacks a nuclease domain (Zhu et al., 2018). Instead, the first of its LOTUS domains recruits the CCR4-NOT complex to initiate deadenylation-dependent mRNA decay. In contrast, mammalian MARF1 does not directly associate with the CCR4-NOT complex but rather uses a C-terminal motif to physically interact with EDC4, DCP1 and DCP2 (Bloch et al., 2014; Nishimura et al., 2018). How EDC4 and other decapping factors regulate MARF1 action is not known.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic diagram of full-length MARF1. (B) Distribution of crosslinked sequence reads. (C) Venn diagram illustrating the relationship of MARF1 target mRNAs identified by iCLIP in HEK293 cells with transcripts that were upregulated in Marf1-/- and Marf1D272A/D272A and germinal vesicle-stage mouse oocytes as compared to wild-type. (D) A partial list of mRNAs identified by iCLIP that were upregulated in both Marf1-/- and Marf1D272A/D272A and germinal vesicle-stage mouse oocytes as compared to wild-type.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The negative control iCLIP from HEK293 cells not expressing FLAG-MARF1\u0394NYN shows negligible background.\n\nMARF1 is robustly expressed in mouse oocytes where it plays a critical role in regulating their meiotic progression based on the finding that female Marf1-/- mice are sterile (Su et al., 2012a). In addition to regulating the development of the mammalian germline, MARF1 is also expressed in the developing brain where it has been reported to regulate neuronal differentiation in the embryonic cortex (Kanemitsu et al., 2017). While knocking out MARF1 in oocytes dramatically alters gene expression, it is currently unclear which mRNAs are directly targeted by MARF1 and which of its RNA binding modules mediate target RNA recognition.\n\nTo investigate which mRNAs are directly targeted by MARF1 and how MARF1 interfaces with them, we carried out transcriptome-wide analysis of MARF1-targeted mRNAs by individual-nucleotide resolution UV crosslinking and immunoprecipitation (iCLIP). We demonstrate that MARF1 interacts with a select set of mRNAs by predominantly binding to their 3\u2019UTRs. We further show that MARF1 utilizes its tandem LOTUS domains to bind target mRNAs, with several core LOTUS domain being essential. While the MARF1 LOTUS domains are involved in target recognition, we further show that RRM1 plays a critical role in NYN-mediated decay of targets following initial MARF1 binding. Importantly, we demonstrate that EDC4 binding to MARF1 impairs MARF1-mediated repression by preventing MARF1 from binding to target mRNAs.\n\n## Results\n\n### Human MARF1 protein binds to the 3\u2019UTR of target mRNAs\n\nTo comprehensively identify MARF1-associated mRNAs, we performed iCLIP using engineered HEK293 cells stably expressing a doxycycline (Dox)-inducible FLAG-tagged MARF1 that lacks RNAse activity (F-MARF1\u0394NYN). Briefly, F-MARF1\u0394NYN -expressing cells were UV-crosslinked, cell lysates were partially digested with RNAseI and MARF1-RNA complexes were subsequently immunoprecipitated with a FLAG antibody. RNA fragments bound to MARF1 were then isolated, converted into cDNA libraries and analyzed by deep sequencing. We also carried out a parallel iCLIP experiment with a FLAG antibody using control HEK293 cells that do not express a FLAG-tagged MARF1 protein. This allowed us to stringently control for non-specific background in FLAG immunoprecipitations. Recovered RNAs from two biological experiments were sequenced, PCR artifacts and multi-mapping reads were removed and primary genome-aligned reads were clustered to generate peaks (Supplementary file 1). This analysis identified only 108 high-confidence mRNAs bound by F-MARF1\u0394NYN with the vast majority of assigned peaks mapping to 3\u2019UTRs (Figure 1B and exemplified in Figure 1\u2014figure supplement 1). The observation that most of the crosslinked reads derived from exonic sequences is consistent with the cytosolic localization of MARF1 (Bloch et al., 2014).\n\nIt was recently reported that disruption of the Marf1 gene by genetrap (GT) or inserting an inactivating mutation into the MARF1 NYN domain (D272A) led to dramatic changes in oocyte gene expression (Yao et al., 2018). A comparison of our iCLIP data with these gene expression datasets identified 34 iCLIP targets that were upregulated in Marf1GT/GT or Marf1D272A/D272A oocytes, with the majority of these targets (29) being upregulated in both contexts (Figure 1C and Supplementary file 2). These include Maml1, Zfp36l2, Atxn7l3, Faf2, Pgam1, Igf2bp1 and Cpsf7, whose levels were increased anywhere from 5- to 261-fold (Figure 1D).\n\nFull-length \u03bbNHA-MARF1 efficiently represses a Renilla luciferase (RL) reporter mRNA in HEK293 cells when it is artificially tethered via the bacteriophage \u03bbN-BoxB tethering system to its 3\u2019UTR (RL-5BoxB) (Figure 2A through C) (Bos et al., 2016; Nishimura et al., 2018). Moreover, this repression is NYN-dependent as a MARF1 mutant lacking the NYN domain (\u03bbNHA-MARF1\u0394NYN) did not efficiently silence the RL-5BoxB reporter. To determine if MARF1 has the potential to repress targets identified by iCLIP, we constructed a set of RL reporters containing 3\u2019UTRs of MARF1 targets, including those of Maml1, Notch2, Zfp36l2, Atxn7l3, Faf2, Pgam1, Igf2bp1 and Cpsf7. We also generated a RL reporter with the 3\u2019UTR of Interleukin 6 (IL-6), an mRNA 3\u2019UTR that was not identified as a MARF1 target. MARF1-expressing plasmids were transfected along with RL-3\u2019UTR constructs and a FL construct as a transfection control. In keeping with our results using the RL-5BoxB reporter, full-length \u03bbNHA-MARF1 efficiently repressed these reporters in a NYN-dependent manner (Figure 2D).\u00a0Moreover, repression was specific to bona fide targets, as MARF1 was not able to silence the IL-6 reporter. This repression also appeared to be at the level of mRNA decay, as full-length MARF1 significantly reduced the steady state levels of RL-MAML1 and RL-NOTCH2 mRNAs (Figure 2E) and the stability of RL-MAML1 mRNA (Figure 2F) in a NYN-dependent manner, as assessed by RT-qPCR. Similarly, overexpressing wild-type MARF1 resulted in marked decrease of the steady-state levels of both endogenous Notch2 and Maml1 mRNAs as compared to cells expressing MARF1\u0394NYN (Figure 2G). Although our iCLIP data demonstrated MARF1 binding to numerous mRNA 3\u2019UTRs, we were not able to identify any short sequence motifs enriched in MARF1 peaks. This suggests that structural motifs in the target RNAs and/or other positional elements are likely to determine the 3\u2019UTR binding specificity of MARF1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic diagram of the basic Renilla luciferase (RL)-encoding mRNA reporter, containing five 19-nt BoxB hairpins, interacting with \u03bbN-HA-MARF1, as well as a RL reporter with a 3\u2019UTR from endogenous mRNAs. (B) Schematic diagram of full-length MARF1 and MARF1 fragments used in tethering assays. (C) Western blot analysis of HEK293 cells expressing indicated proteins. (D) RL activity detected in extracts from HEK293 cells expressing the indicated proteins. Cells were cotransfected with constructs expressing the RL-5BoxB reporter, FL, and indicated fusion proteins. Histograms represented normalized mean values of RL activity from a minimum of three experiments. RL activity values seen in the presence of \u03bbNHA-LacZ were set as 100. (E) RL-MAML1 (left panel) and RL-NOTCH2 (right panel) mRNA levels detected in extracts from HEK293 cells expressing the indicated proteins. Histograms represented mean values of RL-MAML1 or RL-NOTCH2 mRNAs normalized to FL mRNA from a minimum of three experiments. mRNA levels values seen in the presence of \u03bbNHA-LacZ were set as 100. (F) The stability of RL-MAML1 was assessed by using actinomycin D (5 \u03bcg/ml) for the indicated amount of time. Total RNA was isolated, reverse transcribed and RL-MAML1 RNA was quantified by qPCR. RL-MAML1 mRNA decay rates were normalized to FL mRNA levels with the zero time point set at 100. (G) Endogenous MAML1 and NOTCH2 mRNA levels detected in extracts from HEK293 cells expressing the indicated proteins. mRNA levels were normalized to GAPDH mRNA levels for a minimum of three experiments. mRNA levels in the presence of \u03bbNHA-LacZ were set as 100. Error bars represent the SEM of multiple independent experiments.\n\n### MARF1 recognizes endogenous targets using a core subset of LOTUS domains\n\nMARF1 contains several domains with RNA binding capacity, including two RRMs and eight LOTUS domains as well as a C-terminal motif that interacts with mRNA decapping factors (Nishimura et al., 2018). We set out to determine how MARF1 recognizes target mRNAs by generating a number of C-terminal deletion mutants (Figure 3A). A MARF1 mutant lacking the decapping factor interaction motif (\u0394C-term) efficiently silenced both the RL-MAML1 and the RL-5BoxB reporters (Figure 3B). In contrast, a MARF1 N-terminal fragment (\u03bbNHA-MARF1N-term) that lacks both the LOTUS domains and the decapping factor interaction motif efficiently silenced RL-5BoxB but failed to repress the RL-MAML1 reporter. Sequence alignment of human MARF1 protein LOTUS domains revealed that the central LOTUS domains 3 and 5 are highly conserved in MARF1 homologs, including Xenopus tropicalis, Drosophila melanogaster and Dario rerio (Figure 3\u2014figure supplement 1A). In addition, human MARF1 LOTUS domains 3 and 5 also share a high degree of sequence identity with each other (Figure 3\u2014figure supplement 1B). Based on these data, we hypothesized that specific LOTUS domains may play a more important role in MARF1-mediated repression than others. To determine which LOTUS domains in MARF1 are required for target RNA repression, we deleted each LOTUS domain individually from full-length \u03bbNHA-MARF1 and tested their abilities to repress RL-MAML1 (Figure 3C and Figure 3\u2014figure supplement 1). We observed that MARF1 mutants lacking LOTUS domains 1, 2, 6, 7 or eight efficiently silenced RL-MAML1 and RL-5BoxB mRNAs. However, MARF1 mutants lacking LOTUS domains 3, 4 or 5 were unable to efficiently silence RL-MAML1. Nevertheless, MARF1 proteins lacking LOTUS domains 3, 4 or 5 efficiently repressed the RL-5BoxB reporter mRNA, suggesting that deleting these core LOTUS domains did not impact MARF1 nuclease activity but rather its binding to endogenously targeted mRNA 3\u2019UTRs (Figure 3C). In addition to not being able to repress RL-MAML1, we also observed that \u03bbNHA-MARF1 lacking the LOTUS domain 4 (\u03bbNHA-MARF1\u0394LOTUS4) failed to silence a number of other RL reporters containing MARF1 target 3\u2019UTRs, including Zfp36l2, Atxn7l3, Faf2, Igf2bp1 and Cpsf7 (Figure 3D). All in all, these data indicated that MARF1 utilizes its central LOTUS domains to bind target mRNAs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic diagram of wild-type MARF1 protein, as well C-terminal deletion mutants. Core LOTUS domains required for MARF1-mediated repression are bordered in red. (B\u2013D) RL activity detected in extracts from HEK293 cells expressing the indicated proteins. Cells were cotransfected with constructs expressing the RL-MAML1 reporter or RL-5BoxB reporter, along with FL, and indicated fusion proteins. Histograms represented normalized mean values of RL activity from a minimum of three experiments. RL activity values seen in the presence of \u03bbNHA-MARF1\u0394NYN were set as 100.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig3-figsupp1-v1.jpg)\n\n### MARF1 RRM1 is critical for NYN activity\n\nTo examine if MARF1 also utilizes its RRMs to bind targeted mRNAs we also generated a series of MARF1 deletion mutants lacking either RRM1 (\u03bbNHA-MARF1\u0394RRM1), RRM2 (\u03bbNHA-MARF1\u0394RRM2), or both RRMs (\u03bbNHA-MARF1\u0394RRMs) (Figure 4A). MARF1-expressing plasmids were transfected along with RL-MAML1 target mRNA plasmid and a FL reporter plasmid as a transfection control (Figure 4A and B). We observed that deleting both RRMs rendered MARF1 unable to repress RL-MAML1. Moreover, while \u03bbNHA-MARF1\u0394RRM2 efficiently silenced the RL-MAML1 reporter, \u03bbNHA-MARF1\u0394RRM1 was unable to do so. Similarly, \u03bbNHA-MARF1\u0394RRM1 was unable to efficiently repress other RL reporter mRNAs containing MARF1-targeted 3\u2019UTRs, including ATXN7L3, CPSF7, IGF2BP1, NOTCH2, PGAM1 and ZFP36L2 (Figure 4\u2014figure supplement 1A). Previous studies established that RRM1 binds single-stranded RNA (Yao et al., 2018). To assess if the RNA-binding capacity of RRM1 plays a role in MARF1-mediated repression we mutated a number of amino acid residues on the predicted canonical RNA-binding surface of the RRM1 domain (Y515A, Y517A, I552A, F582A), which would be expected to abolish its RNA binding capacity (\u03bbNHA-MARF1RRM1mut) (Figure 4\u2014figure supplement 1B). In agreement with this hypothesis, this RRM1 mutant was unable to silence the RL-MAML1 reporter (Figure 4C). In addition to using reporter mRNAs containing MARF1-targeted 3\u2019UTRs, we also tested the silencing capacity of these \u03bbN-tagged MARF1 mutant constructs by tethering them to RL-5BoxB mRNA to rule out any mutations interfering with MARF1 function independent of its mode of recruitment (Figure 4D). Surprisingly, deleting or mutating RRM1 also abrogated \u03bbNHA-MARF1 repression of the RL-5BoxB reporter RNA. In addition, deleting RRM1 in the context of \u03bbNHA-MARF1N-term also abolished the repressive activity on RL-5BoxB mRNA (Figure 4E and F). These results are in contrast to deleting the MARF1 LOTUS domains, which impaired only reporters with endogenous 3\u2019UTRs and had no effect on the RL-5BoxB mRNA (Figure 3). Taken together, these data indicate that RRM1 is required for NYN-mediated cleavage of MARF1-targeted mRNAs irrespective of how MARF1 is recruited to the targeted mRNA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic diagram of wild-type MARF1 protein, as well as RRM mutants. (B and E) Western blot analysis HEK293 cells transfected with plasmids expressing full-length (B) or N-terminal fragments (E). (C, D and F) RL activity detected in extracts from HEK293 cells expressing the indicated proteins. Cells were cotransfected with constructs expressing the RL-MAML1 reporter (C) or the RL-5BoxB reporter (D and F), FL, and indicated fusion proteins. Histograms represented normalized mean values of RL activity from a minimum of three experiments. RL activity values seen in the presence of \u03bbNHA-MARF1\u0394NYN were set as 100. (E).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) RL activity detected in extracts from HEK293 cells expressing the indicated proteins. Cells were cotransfected with constructs expressing the RL reporter mRNAs containing the 3\u2019UTRs of MARF1 target mRNAs along with FL, and indicated fusion proteins. Histograms represented normalized mean values of RL activity from a minimum of three experiments. RL activity values seen in the presence of \u03bbNHA-MARF1\u0394NYN were set as 100. (B) Structural model of MARF1 RRM1. The model was generated using the Phyre2 structure prediction server (Kelley et al., 2015) and is shown in ribbon format. Conserved surface residues on the putative RNA binding surface are shown in stick format. These residues were substituted with alanines in the RRM1mut protein.\n\n### The mRNA decapping factor EDC4 antagonizes MARF1 repression\n\nEDC4 serves as a large scaffold that binds both DCP1 and DCP2 thereby promoting their association and mRNA decapping (Chang et al., 2014; Yu et al., 2005). In addition, EDC4 has been reported to associate with miRISC as well as the RNA binding protein TTP and enhance miRNA-mediated gene silencing (Brodersen et al., 2008; Eulalio et al., 2007; Nishihara et al., 2013). MARF1 also physically interacts via its C-terminal motif with EDC4 (Bloch et al., 2014; Fenger-Gr\u00f8n et al., 2005; Hubstenberger et al., 2017; Nishimura et al., 2018; Youn et al., 2018). Nevertheless, a MARF1 mutant lacking its C-terminal motif (\u03bbNHA-MARF1\u0394C-term) showed no functional defect in repressing a RL-5BoxB reporter construct when artificially tethered to it or the RL-MAML1 reporter (Figure 3B). We speculated that endogenous EDC4 levels may be limiting in cells such that the majority of ectopic MARF1 is not bound by endogenous decapping factors to enhance repression of target mRNAs. To test this hypothesis, we co-transfected the RL-MAML1 reporter with decreasing amounts of plasmid encoding either full-length \u03bbNHA-MARF1 or \u03bbNHA-MARF1\u0394C-term to titrate MARF1 expression (Figure 5A). Surprisingly, we observed that at low levels of expression, full-length MARF1 did not repress the RL-MAML1 reporter, whereas \u03bbNHA-MARF1\u0394C-term remained able to silence RL-MAML1 mRNA when expressed at a comparable level (Figure 5B). In addition, this effect was specific to how MARF1 was recruited to a target mRNA, as low-level expression of \u03bbNHA-MARF1 efficiently repressed RL-5BoxB when artificially tethered (Figure 5C). Based on these data, we hypothesized that MARF1 association with EDC4 and other decapping factors may impair its ability to repress a target mRNA rather than enhance it. To determine if decapping factors play a role in impairing MARF1 function when expressed at low levels we depleted endogenous EDC4 and DCP2 by RNA interference. Knocking down EDC4 rescued wild-type \u03bbNHA-MARF1-mediated repression to the level achieved by \u03bbNHA-MARF1\u0394C-term (Figure 5D and E). EDC4 depletion also co-depleted DCP2 (Figure 5D), as has been previously reported (Erickson et al., 2015). However, knocking down DCP2, which does not change EDC4 expression (Figure 5D), did not enhance \u03bbNHA-MARF1 repression of RL-MAML1 (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig5-v1.jpg)\n\n**Figure 5.:** (A) Western blot analysis HEK293 cells transfected with different amounts [low (0.1 \u03bcg), medium (1.0 \u03bcg) and high (3.0 \u03bcg)] of wild-type \u03bbNHA-MARF1 and \u03bbNHA-MARF1\u0394C-term plasmids. HA Western blot signals are quantified relative to actin and marked below each lane, with \u2018medium\u2019 HA signal set to 100%. (B and C) RL activity detected in extracts from HEK293 cells. Cells were cotransfected with constructs expressing the RL-MAML1 reporter (B) or RL-5BoxB reporter (C), along with FL and different amounts (low, medium and high) of wild-type \u03bbNHA-MARF1 and \u03bbNHA-MARF1\u0394C-term plasmids. (D) Western blot analysis HEK293 cells depleted of EDC4 or DCP2 by siRNA-mediated knockdown. siGFP represents a negative control. (E) siRNA-treated cells were subsequently cotransfected with constructs expressing the RL-MAML1 reporter, FL, and low levels of \u03bbNHA-MARF1 or \u03bbNHA-MARF1\u0394C-term plasmids, and RL activity detected in extracts. (F through J) RL activity and mRNA levels detected in extracts from HEK293 cells normalized to FL activity and mRNA levels. Cells were cotransfected with constructs expressing the RL-MAML1 reporter (F and I), RL-NOTCH2 reporter (G and J) or RL-5BoxB reporter (H), along with FL, V5-tagged EDC4 and high amounts of wild-type \u03bbNHA-MARF1 and \u03bbNHA-MARF1\u0394C-term plasmids. All Histograms represented normalized mean values of RL activity (F through H) or mRNA levels (G and I) from a minimum of three experiments. RL activity values seen in the presence of \u03bbNHA-MARF1\u0394NYN and mRNA levels seen in the presence of \u03bbNHA-LacZ were set as 100.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Western blot analysis of endogenous EDC4 expression versus ectopic overexpression of V5-tagged EDC4.\n\nTo test if overexpressing EDC4 could impact MARF1-mediated repression when MARF1 is expressed at high levels we co-transfected cells with a plasmid coding for V5-tagged EDC4 along with expression plasmids for either the RL-MAML1 or RL-NOTCH2 reporters and high levels of full-length \u03bbNHA-MARF1 or \u03bbNHA-MARF1\u0394C-term (Figure 5F and G and Figure 5\u2014figure supplement 1). Overexpressing EDC4 dramatically impaired wild-type \u03bbNHA-MARF1-mediated repression of RL-MAML1 and RL-NOTCH2 reporters, as compared to cells expressing only endogenous EDC4. In contrast, EDC4 overexpression had no effect on the repressive activity of \u03bbNHA-MARF1\u0394C-term. Moreover, EDC4 had no noticeable impact on the ability of full-length \u03bbNHA-MARF1 to repress a RL-5BoxB mRNA (Figure 5H). To demonstrate that the inhibitory effect of EDC4 on MARF1-mediated gene repression is not unique to the luciferase reporter system, the steady state mRNA levels of Maml1 and Notch2 were assessed by RT-qPCR in cells transfected with either \u03bbNHA-LacZ, \u03bbNHA-MARF1, \u03bbNHA-MARF1\u0394NYN, or \u03bbNHA-MARF1\u0394C-term and co-transfected with V5-tagged EDC4 (Figure 5I and J). Consistent with the luciferase reporter data, overexpression of EDC4 increased the steady state levels of Maml1 and Notch2 mRNAs in \u03bbNHA-MARF1 expressing cells but had no effect on their levels in \u03bbNHA-MARF1\u0394C-term expressing cells. Taken together, these data indicate that EDC4 antagonizes MARF1-mediated repression of target mRNAs.\n\n### EDC4-MARF1 interaction localizes MARF1 to P-bodies and impairs MARF1-mediated repression\n\nMARF1 has been reported to localize with EDC4 in P-bodies (Bloch et al., 2014; Hubstenberger et al., 2017; Youn et al., 2018). We next set out to determine if MARF1 utilizes its C-terminal domain, which interacts with EDC4 (Figure 6A), to localize to P-bodies and whether disrupting MARF1 localization to P-bodies enhances its ability to repress a target mRNA. To this end, we used immunofluorescence microscopy to assess the subcellular localization of our HA-tagged wild-type and C-terminal deletion mutant MARF1 proteins in HeLa cells expressing V5-tagged EDC4. Full-length \u03bbNHA-MARF1 localized to P-bodies, as determined by co-localization with EDC4 (Figure 6B, left panels), whereas a \u03bbNHA-MARF1 mutant lacking its C-terminal motif did not localize with EDC4 to P-bodies but rather exhibited a diffuse cytoplasmic distribution (Figure 6B, middle panels). To test whether the interaction between EDC4 and MARF1 is what is responsible for EDC4 impairing the repressive activity of MARF1, we took advantage of the MARF1 C-terminal motif, which is sufficient on its own to interact with EDC4 (Nishimura et al., 2018) and also co-localizes with EDC4 in P-bodies (Figure 6\u2014figure supplement 1A and B). We hypothesized that expressing MARF1C-term might rescue wild-type MARF1 silencing in trans by competing for binding to EDC4, thus preventing EDC4 from binding to wild-type MARF1 (Figure 6A). To this end, wild-type \u03bbNHA-MARF1 or the C-terminal deletion mutant were expressed at low levels, along with the RL-MAML1 reporter and a plasmid encoding a FLAG-tagged MARF1C-term fragment. Similar to the effects observed upon EDC4 depletion, expressing the MARF1C-term enhanced wild-type MARF1-mediated silencing of the RL-MAML1 reporter to the level of repression observed with the \u03bbNHA-MARF1\u0394C-term protein (Figure 6C). In addition, expression of FLAG-tagged MARF1C-term shifted the distribution of wild-type MARF1 from strongly co-localizing with EDC4 in P-bodies to being more diffuse in the cytoplasm (Figure 6B, right panels). Taken together, these data indicate that the EDC4-MARF1 interaction localizes MARF1 to P-bodies and prevents MARF1 from efficiently repressing target mRNAs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic model of MARF1 C-terminus competition assay. MARF1 contains a C-terminal motif (red) that interacts with the mRNA decapping machinery, including EDC4, DCP1, DCP2 and XRN1. Co-transfecting a plasmid encoding the MARF1 C-terminal motif may compete with full-length MARF1 in binding to the decapping machinery. (B) Confocal fluorescence micrographs of fixed HeLa cells expressing wild-type \u03bbNHA-MARF1 (with or without FLAG-tagged MARF1C-term) and \u03bbNHA-MARF1\u0394C-term, along with EDC4. Cells were stained with anti\u2010HA (red) and anti\u2010EDC4 (green) antibodies. The merged images show the HA signal in red and the EDC4 signal in green. (C) RL activity detected in extracts from HEK293 cells expressing the indicated proteins. Cells were co-transfected with constructs expressing the RL-MAML1 reporter, FL, low amounts of indicated \u03bbNHA-MARF1 constructs, along with/without a plasmid coding for MARF1 C-terminal motif. Histograms represented normalized mean values of RL activity from a minimum of three experiments. RL activity values seen in the presence of \u03bbNHA-MARF1\u0394NYN were set as 100. (D) RNA immunoprecipitation of RL-MAML1 reporter by FLAG-tagged MARF1\u0394NYN in HEK293 cells plus/minus EDC4 overexpression.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) MARF1\u00a0C-terminus interfaces with the mRNA decapping machinery and localizes to P-bodies. Schematic diagram of FLAG-tagged\u00a0MARF1Cterminteracting\u00a0with the mRNA decapping machinery, including EDC4, DCP1, DCP2 and XRN1\u00a0.\u00a0(B) Confocal fluorescence micrographs of fixed HeLa cells expressing FLAG-tagged MARF1C-term and EDC4. Cells were stained with anti\u2010FLAG (red) and anti\u2010EDC4 (green) antibodies. The merged image shows the FLAG signal in red and the EDC4 signal in green.\n\n### EDC4-MARF1 interaction inhibits MARF1 binding to target mRNAs\n\nNotwithstanding that EDC4 impairs the ability of MARF1 to silence reporters with MARF-targeted endogenous 3\u2019UTRs, EDC4 had no noticeable impact on the ability of full-length \u03bbNHA-MARF1 to repress a RL-5BoxB mRNA (Figure 5H). As MARF1 is recruited to these mRNAs via different modes (\u03bbN-tag-BoxB tethering as opposed to LOTUS domains) our data suggest that EDC4 does not impair MARF1 activity but rather prevents MARF1 from binding to endogenous target 3\u2019UTRs. To test this hypothesis, we co-transfected RL-MAML1 and FL plasmids into HEK293 cells that express FLAG-tagged MARF1\u0394NYN, together with or without a plasmid coding for V5-tagged EDC4. Transfected cells were subsequently UV crosslinked and cell extracts were immunopurified with FLAG antibody. RT-qPCR of immunopurified RNAs demonstrated enrichment of RL-MAML1 mRNA with FLAG-tagged MARF1\u0394NYN (~9 fold) (Figure 6D). In contrast, the ability of MARF1 to co-precipitate RL-MAML1 mRNA in EDC4 overexpressing cells was dramatically impaired (~2 fold). These data therefore support the hypothesis that EDC4 impairs MARF1 repression of endogenous target mRNAs by preventing MARF1 from binding to targeted 3\u2019UTRs.\n\n## Discussion\n\nIn this study we identify endogenous targets of the human endonuclease MARF1. We show that MARF1 predominantly binds the 3\u2019UTRs of target mRNAs and reveal that different RNA binding domains in MARF1 are required for initial target binding as well as subsequent target decay. Importantly, we uncover a novel role for the enhancer of mRNA decapping protein EDC4 in that its binding to MARF1 localizes MARF1 to P-bodies and impairs MARF1-mediated repression.\n\n### MARF1 binds target mRNAs 3\u2019UTRs via core LOTUS repeats\n\nMammalian MARF1 is an endoribonuclease that possesses multiple RNA binding domains and physically interacts with the mRNA decapping machinery (Bloch et al., 2014; Nishimura et al., 2018). Knocking out MARF1 or impairing its RNase activity in female mice leads to meiotic arrest during oogenesis and to wide-spread changes to the transcriptome (Su et al., 2012a; Yao et al., 2018). Our iCLIP analysis of MARF1 in HEK293 cells identified 108 mRNAs bound by MARF1 and demonstrates that MARF1 binds to the majority of these mRNAs via their 3\u2019UTRs. Moreover, we provide evidence using mRNA reporters containing 3\u2019UTRs of endogenous target mRNAs that MARF1 represses them in a NYN-dependent manner. While luciferase reporter assays demonstrated that MARF1 represses gene expression in a NYN-dependent manner, some degree residual repression of the reporters was observed in cells expressing a MARF1 variant lacking its endonuclease NYN domain (Figure 2D). It is possible that MARF1\u0394NYN binding to select mRNA 3\u2019UTRs may alter 3\u2019UTR topology in such a way as to impair reporter mRNA translation without altering their stability. This is further supported by the fact that MARF1\u0394NYN did not significantly repress mRNA levels of several target mRNAs as compared to LacZ (Figure 2E and G).\n\nImportantly, many MARF1-targeted mRNAs identified by iCLIP are upregulated in MARF1 knockout mouse oocytes as compared to wild-type oocytes. Notwithstanding the validation of a number of MARF1-targeted mRNAs, prediction algorithms including DREME (Bailey, 2011) did not identify a motif within the iCLIP peaks, suggesting that MARF1 may recognize structural motifs rather than specific nucleotide sequences. Our CLIP experiments were carried out in the presence of endogenous EDC4, which we now know is sufficient to partially inhibit MARF1 from interfacing with target mRNAs in a dose-dependent manner (Figure 5). It is possible that MARF1-targeted mRNAs are underrepresented in our CLIP dataset due to the presence of endogenous EDC4. It will therefore be important to determine if altering EDC4-MARF1 dynamics identifies a larger set of MARF1 target mRNAs.\n\nOur data indicate that MARF1 is recruited to target mRNAs via its tandem LOTUS domains. The LOTUS domain is a wHTH fold that is conserved from bacteria to humans (Callebaut and Mornon, 2010; Jeske et al., 2017; Yao et al., 2018). The fact that wHTH folds have also been reported to bind double-stranded RNA\u2014including in human La, mouse MARF1 and the signal recognition particle (Dong et al., 2004; Keenan et al., 1998; Yao et al., 2018)\u2014supports a model whereby MARF1 contacts structural elements within the 3\u2019UTRs of target mRNAs. MARF1 proteins contain several (between six and eight) tandem LOTUS domains. Drosophila MARF1 protein lacks a NYN domain; however, its first LOTUS domain has been reported to recruit the CCR4-NOT complex to bring about deadenylation of targeted mRNAs (Zhu et al., 2018). Both mouse and human MARF1 proteins contain eight LOTUS domains. However, in contrast to results obtained with Drosophila MARF1, human MARF1 interacts with the mRNA decapping machinery but not with the CCR4-NOT complex (Nishimura et al., 2018). Moreover, tethering an N-terminal fragment of human MARF1 that contains the NYN domain and RRMs but lacks all eight LOTUS domains efficiently represses a reporter mRNA when artificially tethered to it (RL-5BoxB). Although mammalian MARF1 proteins contain eight LOTUS domains, our deletion analyses suggest that certain core LOTUS domains (3 through 5) are critical for MARF1-mediated repression, whereas other adjacent LOTUS domains are not. Importantly, while all MARF1 proteins contain between 6 and 8 LOTUS domains, LOTUS domains 3 and 5 are not only highly conserved across MARF1 orthologs but also share an extremely high degree of homology to each other. While our data does not exclude the possibility that adjacent LOTUS domains also bind to target mRNAs, they do suggest that the central LOTUS domains are critical for the initial steps of target mRNA recognition. Exactly how LOTUS domains 3 and 5 contact MARF1 target elements remains to be explored.\n\n### RRM1 is a NYN coactivator module\n\nAll MARF1 proteins that contain a NYN domain (with Drosophila MARF1 being the exception) also contain two RRMs, the functions of which are not known. We show here that human MARF1 requires RRM1 to efficiently repress target mRNAs. MARF1 mutants lacking RRM1 or containing amino acid substitutions within its putative RNA binding surface are unable to efficiently silence reporter mRNAs containing MARF1-targeted 3\u2019UTRs. Importantly, these mutants were also unable to silence the RL-5BoxB reporter when artificially tethered to it. In marked contrast to this, a MARF1 deletion mutant lacking its LOTUS domains, which could repress the RL-5BoxB construct was unable to silence reporters with endogenous 3\u2019UTR sequences targeted by MARF1. All in all, these data suggest that RRM1 does not play a role in initial target mRNA recognition but rather in subsequent NYN-mediated cleavage of a targeted mRNA. We speculate that RRM1 may function to properly position the NYN domain on a target mRNA in order to promote efficient cleavage. The fact that all MARF1 proteins that contain a NYN domain also maintain RRM1, whereas the Drosophila MARF1 protein that lacks a NYN domain does not contain an analogous domain to RRM1, lends credence to this model.\n\n### A non-canonical role for EDC4 in regulating mRNA decay\n\nThe mRNA decapping machinery, comprising DCP1 and DCP2, EDC4 and other factors, plays an important role in promoting mRNA turnover by hydrolyzing the mRNA 5\u2019 cap, thus making it accessible to 5\u2019\u22123\u2019 decay by the XRN1 exonuclease. EDC4 also associates with the miRISC and enhances microRNA-mediated mRNA decay (Brodersen et al., 2008; Eulalio et al., 2007; Nishihara et al., 2013). Similar to the miRISC, MARF1 physically interacts with mRNA decapping factors, including EDC4 (Bloch et al., 2014; Nishimura et al., 2018). Importantly, we show here that instead of stimulating the decay of MARF1-targeted mRNAs, EDC4 has the opposite effect. Overexpressing EDC4 impairs MARF1 repression of target RNAs but has no effect on the silencing potential of a MARF1 mutant that cannot bind EDC4. In addition, depleting endogenous EDC4 or preventing MARF1 association with EDC4 enhances MARF1-mediated repression. Importantly, our data indicate that EDC4 only impairs MARF1 repression only when it is recruited to a target mRNA via its LOTUS domains, whereas EDC4 association with MARF1 has no impact on MARF1 repression when it is artificially tethered to a reporter mRNA in a LOTUS-independent manner (i.e. \u03bbN-BoxB tethering). Moreover, RNA immunoprecipitation experiments indicate that EDC4 negatively regulates MARF1-mediated repression by preventing target mRNA association as opposed to inhibiting NYN-mediated target cleavage. Based on these data, we hypothesize that EDC4 binding to the MARF1 C-terminal motif precludes the LOTUS domains from binding to endogenous MARF1 target mRNAs (Figure 7). To our knowledge, this is the first example of the mRNA decapping machinery stabilizing mRNAs (albeit indirectly) by inhibiting an RNA binding protein from interacting with its targets, rather than promoting their turnover.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/54995/elife-54995-fig7-v1.jpg)\n\n**Figure 7.:** MARF1 recognizes target mRNAs via LOTUS domains 3 through 5. Subsequently, RRM1 enhances NYN-mediated cleavage of target mRNAs, potentially by assisting in positioning the NYN domain on target. EDC4 regulates MARF1-mediated repression by interacting with the MARF1 C-terminus, segregating MARF1 to P-bodies and preventing MARF1 from binding target mRNAs, potentially by interfering with LOTUS domain-RNA interactions.\n\nWhile metazoan cells contain a number of mRNA-targeting endonucleases including SMG6 and Regnase, MARF1 is unique in that it physically interacts with mRNA decapping factors. Moreover, SMG6 does not require decapping proteins to promote nonsense-mediated mRNA decay (Boehm et al., 2016). We speculate that this form of regulation may serve to prevent MARF1 protein from binding to mRNAs when MARF1 is expressed at low levels. Only when MARF1 gene expression is dramatically upregulated, as is the case during certain stages of oogenesis (Su et al., 2012a; Su et al., 2012b) and bind to target mRNAs in a LOTUS domain-dependent manner. Whether EDC4 has a similar mode of action for other RNA binding proteins remains to be investigated.\n\nEDC4 is a core component of P-bodies, membraneless granules that contain proteins involved in mRNA metabolism (Standart and Weil, 2018; Yu et al., 2005). However, instead of promoting mRNA decay, mRNAs trapped in P-bodies exist in a translationally-repressed state (Hubstenberger et al., 2017). Our data demonstrate that the MARF1 endonuclease localizes to P-bodies via its interaction with EDC4. However, it also suggests that MARF1 is \u2018trapped\u2019 in P-bodies and unable to interface with endogenous target mRNAs. Taken together, these data suggest that P-bodies may also regulate mRNA metabolism by impounding specific effectors of mRNA decay (e.g. MARF1) such that they are unable to efficiently bind target mRNAs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>MARF1</td>\n      <td></td>\n      <td>HGNC:HGNC:29562</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>EDC4</td>\n      <td></td>\n      <td>HGNC:HGNC:17157</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>293T</td>\n      <td>ATCC</td>\n      <td>CRL-3216</td>\n      <td>Cell line maintained in DMEM + 10% FBS,50 U/mL penicillin, and50 ug/mL streptomycin</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HeLa</td>\n      <td>ATCC</td>\n      <td>CCL-2</td>\n      <td>Cell line maintained in DMEM + 10% FBS,50 U/mL penicillin, and50 ug/mL streptomycin</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Flp-In T-REx 293</td>\n      <td>Thermo Fisher</td>\n      <td>R78007</td>\n      <td>Cell line maintained in DMEM + 10% FBS,50 U/mL penicillin, and50 ug/mL streptomycin</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA mouse monoclonal</td>\n      <td>Covance</td>\n      <td>901533</td>\n      <td>WB(1:1000); IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-FLAG M2 mouse monoclonal</td>\n      <td>Sigma-Aldrich</td>\n      <td>F1804</td>\n      <td>WB(1:1000); IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-V5 Rabbit monoclonal</td>\n      <td>Cell Signaling</td>\n      <td>13202</td>\n      <td>WB(1:1000); IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human/mouse EDC4 Rabbit monoclonal</td>\n      <td>Bethyl</td>\n      <td>A300-745A</td>\n      <td>WB(1:1000); IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human/mouse DCP2 Rabbit monoclonal</td>\n      <td>Bethyl</td>\n      <td>A302-597A</td>\n      <td>WB(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human Actin Mouse monoclonal</td>\n      <td>Cell Signaling</td>\n      <td>3700</td>\n      <td>WB(1:30000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488 anti-rabbit</td>\n      <td>Invitrogen</td>\n      <td>A32731</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 594 anti-mouse</td>\n      <td>Invitrogen</td>\n      <td>A32742</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PLKO.1-Puro (plasmid)</td>\n      <td>Sigma-Aldrich</td>\n      <td>RRID :Addgene10878</td>\n      <td>shRNA backbone used for selecting transfected cells with puromycin</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCI-neo</td>\n      <td>Promega</td>\n      <td>E1731</td>\n      <td>For all constructs labelled \u2018LNHA\u2019 and \u2018RL\u2019</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBABE-3xFLAG-MARF1Cterm</td>\n      <td>Nishimura et al., 2018</td>\n      <td></td>\n      <td>Construct expressing a fragment of MARF1 previously validated by our group to be sufficient to physically interact with the mRNA decapping machinery.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA-DEST40</td>\n      <td>Thermo Fisher</td>\n      <td>12274015</td>\n      <td>For expression of gateway cloned V5-tagged EDC4</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MAML1 3\u2019UTR cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: CGGCGCCGCTCTAGAGGTGTTGGGACAGCAGGATA REV: CGGCGCCGCGCGGCCGCCATAGCTCCCCCAAAACACAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>NOTCH2 3\u2019UTR cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: CGGCGCCGCGTCAGCGAGAGTCCACCTCCAGTGTAGAG REV: CGGCGCCGCGCGGCCGCCATGTTCAAATATCTCACTGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ZFP36L2 3'UTR cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GCAGTAATTCTAGAGGCAAGAGGGCGCCAGTGAGGAGGA REV: GCAGTAATGCGGCCGCCCCAAAAATTTTATTGGGGGAAAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ATXN7L3 3'UTR cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GCAGTAATTCTAGACTTGGGTGCAAGGGATAGCCTTTGG REV: GCAGTAATGCGGCCGCCCAACGGGAGATGCAGTTTATTTAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>FAF2 3'UTR cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GCAGTAATGCTAGCCCTCCTACCCCAGTCCCTAAAAGAA REV: GCAGTAATGCGGCCGCCTGAAACTCTTTGCTTGGCCTTGGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CPSF7 3'UTR cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GCAGTAATTCTAGAGGAGTCTGGTTGGAAGCAAATGTTT REV: GCAGTAATGCGGCCGCTCACCGACAACAGGGGGACGGGACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>IGF2BP1 3'UTR cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GCAGTAATGCTAGCGGAGAACAGGCCTGGTGGGAAAGGC REV: GCAGTAATGCGGCCGCGTAGTTACTAGCACTGCTGGTTCCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PGAM1 3\u2019UTR cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GGCGCCGCGGCTAGCCCCACCTGCACATGTCACACTGACCAC REV: GGCGCCGCGCGGCCGCATACTGATATGGAAAAAGGATTTAGTACAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394NYNcloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GTGCTAGAAAACTTACCCTTCATTTCCGACTTGCCCCCCAGGTTACCAC REV: GGCAAGTCGGAAATGAAGGGTAAGTTTTCTAGCACCTGTCCAGCTACTGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394RRM1cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: AAAAATGCCACAGACTCCAAAAAATAGAGAACTCTGTG REV: TTCTCTATTTTTTGGAGTCTGTGGCATTTTTAGTGGTAACCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394RRM2cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: TGCCCAGACCCACTCTCTTTACTGAGTGCAGAAACAATG REV: CACTCAGTAAAGAGAGTGGGTCTGGGCAGTCGGCTTCGCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1Y513A/Y515Acloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GCTCGCTGTTGCTAACCTACCAGCAAATAAGGATGGC REV: GTAGGTTAGCAACAGCGAGCAGAGTGTGGCACTGTGGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1I552A cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: CTGCAGTGCAGCTCTCCGCTTCATAAACCAAGATAGTG REV: GAAGCGGAGAGCTGCACTGCAGCCTGTGATACTCAGCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1F582A cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: TTGTGTCAGCTACTCCAAAAAATAGAGAACTCTGTGAAAC REV: TTTGGAGTAGCTGACACAATGATCCTATTACCAAAGACATC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394LOTUS1cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: TGGTCTCACTTGCCACCGGGGCTGCCAGCAAATCACTACCCAGCAGTCAGGCCCGCCAGA REV: GGGGCTCTGGCGGGCCTGACTGCTGGGTAGTGATTTGCTGGCAGCCCCGGTGGCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394LOTUS2cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: TCTTACAAGATTCCTTTTGTGATTCTTTCTATTCACAACAAGCCCCCGCC REV: AGTGTTGGGAGGCGGGGGCTTGTTGTGAATAGAAAGAATCACAAAAGGAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394LOTUS3 cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: CGTTCGAAGAGTCCTGTAGGTAACCCCCAGCACAGGGCCCAGGTGAAGCGCTTTA REV: CTGAGTAAAGCGCTTCACCTGGGCCCTGTGCTGGGGGTTACCTACAGGACTCTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394LOTUS4 cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: CGTCTGCTGACCCTTACCCACAGGGCCCAGCCCAAAAGAGAACGCACTCAGGATG REV: TATTTCATCCTGAGTGCGTTCTCTTTTGGGCTGGGCCCTGTGGGTAAGGGTCAGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394LOTUS5 cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: AGAGAACGCACTCAGGATGAAATAGAAAGGCTTTTCTTCGAGCGGTTCAAAGCTC REV: AGCTAGAGCTTTGAACCGCTCGAAGAAAAGCCTTTCTATTTCATCCTGAGTGCGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394LOTUS6 cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: TGTCAGAGTAAGGATCTTTTCTTCGAGCGGATCAACCGAAAGTCTCTGCGATCTC REV: AGTGAGAGATCGCAGAGACTTTCGGTTGATCCGCTCGAAGAAAAGATCCTTACTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394LOTUS7 cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: AGACAGATTCAGCTGATCAACCGAAAGTCTACAAGTCTGTATTTGTTTGC REV: CACATTCTTTGCAAACAAATACAGACTTGTAGACTTTCGGTTGATCAGCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Full length MARF1 cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GGACGATCTGCAATTGGAAGGAAACGGAACTGAGAACTCCTGC REV: GCGCCGCGCGGCCGCTTAAAGCTTGGTTATAGGTGCTAAGGAAAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1\u0394Ctermcloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GGACGATCTGCAATTGGAAGGAAACGGAACTGAGAACTCCTGC REV: GCGCCGCGCGGCCGCTTAGAGACTGAGTGAACTCAAACGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MARF1N-termcloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GGACGATCTGCAATTGGAAGGAAACGGAACTGAGAACTCCTGC REV: GCGCCGCGCGGCCGCTTACCCGGTGGCAAGTGAGACCAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>EDC4 Gateway cloning primers</td>\n      <td>This paper</td>\n      <td>PCR Primer</td>\n      <td>FWD: GGGGACAAGTTTGTACAAAAAAGCAGGCTACCATGGCCTCCTGCGCGAGCATCGACATCG REV: GGGGACCACTTTGTACAAGAAAGCTGGGTCAGGGAGGCTGGGGGTCACGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>FL qPCR primers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>FWD: CCTTCGATAGGGACAAGACAA REV: AATCTCACGCAGGCAGTTCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RL qPCR primers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>FWD: GAGTTCGCTGCCTACCTGGAGCCAT REV: GGATCTCGCGAGGCCAGGAGAG</td>\n    </tr>\n    <tr>\n      <td>S1equence-based reagent</td>\n      <td>GAPDH qPCR primers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>FWD: GTGGAGATTGTTGCCATCAACGA REV: CCCATTCTCGGCCTTGACTGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MAML1 qPCR primers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>FWD: GACTCTCTCAACAAAAAGCGTCT REV: AGGAAATGACTCACTGGGGTTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>NOTCH2 qPCR primers</td>\n      <td>This paper</td>\n      <td></td>\n      <td>FWD: CTCCAGGAGAGGTGTGCTTG REV: TGATGTCTCCCTCACAACGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>GFP siRNA</td>\n      <td>Dharmacon</td>\n      <td>D-001940-01-05</td>\n      <td>Accell eGFP control siRNA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>EDC4 siRNA</td>\n      <td>Dharmacon</td>\n      <td>L-016635-00-0005</td>\n      <td>SMARTpool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DCP2 siRNA</td>\n      <td>Dharmacon</td>\n      <td>L-008425-01-0005</td>\n      <td>SMARTpool</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Actinomycin D</td>\n      <td>Sigma-Aldrich</td>\n      <td>A1410</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>GoTaq qPCR Master Mix</td>\n      <td>Promega</td>\n      <td>A6001</td>\n      <td>Reagent for all qPCR assays</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dual-Luciferase Assay</td>\n      <td>Promega</td>\n      <td>E1910</td>\n      <td>Reagent for all luciferase assays</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Invitrogen</td>\n      <td>D1306</td>\n      <td>(1 \u00b5g/mL)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and transfection\n\nHuman embryonic kidney HEK293 cells and epithelioid carcinoma HeLa cells were obtained from ATCC. Flp-In T-REx 293 Cell Line were obtained from Thermo Fisher Scientific. Cell lines identity was established via morphology but has not been authenticated and all cells were tested negative for mycoplasma contamination. HEK293 and HeLa cells were grown in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) supplemented with 10% fetal bovine serum, 50 U/mL penicillin, and 50 ug/mL streptomycin. Plasmid transfections were performed using polyethyleneimine (PEI).\n\n### iCLIP experimental procedures\n\nCrosslink immunoprecipitation experiments were conducted using a modified single-end (se)CLIP approach (Van Nostrand et al., 2017). All experiments were conducted using HEK293 cells (negative control), or HEK293 cells that express FLAG-tagged MARF\u0394NYN. Briefly, FLAG-tagged MARF1\u0394NYN expression was induced in a 15 cm dish of HEK293 cells with 100 ng/mL of doxycycline for 12 hr. Following induction, 2 \u00d7 107 cells were lysed in iCLIP lysis buffer and sonicated (BioRuptor). Lysates were treated with RNAseI (Thermo) to shear RNA, after which FLAG-tagged MARF1\u0394NYN-RNA complexes were immunoprecipitated with FLAG antibody. Stringent washes were performed, during wish RNA was dephosphorylated with FastAP (Thermo) and T4 PNK (NEB). Following dephosphorylation, a 3\u2019 RNA adaptor was ligated onto the RNA with T4 RNA ligase (NEB). Protein-RNA complexes were resolved by SDS-PAGE, transferred to nitrocellulose membranes, and RNA was isolated from the membrane region corresponding to the migration of MARF1 and 75 kDa above. Isolated RNA was subsequently reverse transcribed with AffinityScript (Agilent) and the 3\u2019 DNA adaptor was ligated onto the cDNA with T4 RNA ligase (NEB). Libraries were then amplified with Q5 PCR mix (NEB).\n\n### seCLIP-seq read processing and clustal analysis\n\nBiological duplicate libraries were sequenced by single-end 50 bp sequencing on a Hi-Seq2500 (Sick Kids, Toronto). RNA sequencing reads were trimmed using Trimmomatic (v0.32) (Bolger et al., 2014), removing adaptor and other Illumina-specific sequences, and low-quality bases at the end of each read, using a 4 bp sliding window to trim where average window quality fell below 30 (phred33\u00a0<30). Trimmed reads with less than 15 bases were discarded. The resulting clean set of reads were then aligned to the hg19 (GRCh37) reference genome using STAR (v2.3.0e) (Dobin et al., 2013) with default parameters. Reads mapping to more than 10 locations in the genome (MAPQ\u00a0<1) were discarded. Secondary alignment reads were removed using samtools (v1.9) (1000 Genome Project Data Processing Subgroup et al., 2009) and duplicates were removed using Picard (v2.10.7) MarkDuplicates. Peaks were then called on the resulting bam files using macs2 (v2.1.1) callpeak using the nomodel option, an extension size of 100 and a FDR threshold of 0.05. The list of final peaks reported is the intersection of peaks detected in the pairwise peak calling of MARF1 replicates (n\u00a0=\u00a02) against control without flag replicates (n\u00a0=\u00a02). Peaks were then annotated with Homer (v4.10) annotatePeaks using the hg19 reference. Integrative Genomic Viewer (IGV) was used for visualization (Thorvaldsd\u00f3ttir et al., 2013).\n\n### Plasmids\n\nPlasmids pCI-\u03bbNHA-MARF1 variant plasmids were generated by conventional molecular cloning techniques using MfeI and NotI restriction enzyme sites. Point and deletion mutations within the coding sequence of MARF1 were made through site-directed mutagenesis with Phusion Hot-Start II DNA polymerase. Similarly, Renilla luciferase (RL) reporter plasmids containing gene-specific 3\u2019UTR regions were generated through conventional cloning using XbaI and NotI restriction enzyme sites. The RL-5BoxB and firefly luciferase (FL) plasmids have been previously described (Nishimura et al., 2018). V5-tagged EDC4 was generated by Gateway cloning pDONR-EDC4 into pcDNA-DEST40 vector (thermo).\n\n### siRNAs and antibodies\n\nAntibodies against HA, FLAG, V5, and 4E-T were purchased from Covance, Sigma, Cell Signaling, and Abcam, respectively. The antibodies against EDC4 and DCP2 were both purchased from Bethyl Laboratories. For siRNA-mediated knockdowns HEK293T cells were seeded at a density of\u00a0~15% confluency and transfected with siRNAs against GFP, EDC4 and DCP2 (Dharmacon) at a final concentration of 150 nM using Lipofectamine 2000 reagent (Invitrogen). 24 hr post-transfection, cell culture media was replaced and cells were permitted to grow for an additional 48 hr before being harvested.\n\n### Luciferase and RT-qPCR analyses\n\nHEK293T cells were seeded at a density of\u00a0~35% confluency and transfected 24 hr post-seeding. After an additional 24 hr post-transfection, cells were harvested and lysed in Passive Lysis Buffer (Promega). The activity levels of the Renilla (RL) and firefly (FL) luciferase reporters was measured using Dual-Luciferase Assay (Promega). Cell lysate was also analyzed by western blotting in order to determine relative protein expression levels. For RT-qPCR analysis HEK293T cells were seeded at a density of\u00a0~20% confluency and co-transfected with MARF1 variants, RL-MAML1, FL (control) and an empty puromycin-resistance selection cassette 24 hr post-seeding. 24 hr post-transfection, the cell culture media was replaced with complete cell culture media containing 2 ug/mL of puromycin. After an additional 24 hr post-puromycin selection, cells were harvested and RNA was extracted using EZ-10 Spin Column RNA Miniprep Kit (Biobasic). Extracted RNA was DNaseI treated (Invitrogen) for 1 hr and inactivated using inactivating reagent (Invitrogen). The DNaseI treated RNA was random hexamer-primed and reverse transcribed following the protocol for Maxima H Minus Reverse Transcriptase (Thermofisher). Quantitative PCR on the generated cDNA was carried out with GoTaq qPCR Master Mix (Promega) and primers (IDT) against the ORF of RL-MAML1 and FL (control) plasmids and against the coding sequence of endogenous GAPDH (control), MAML1, and NOTCH2 transcripts.\n\n### Structural modelling of RRM1\n\nThe structural model of the MARF1 RRM1 domain was generate using the Phyre2 structure prediction server (Kelley et al., 2015). Amino acids putatively involved in RNA binding were identified by superposition with structures of other RRM domain proteins, including Nab3 (Hobor et al., 2011).\n\n### Immunofluorescent staining\n\nHeLa cells were seeded at a confluency of\u00a0~25% grown on coverslips for 24 hr. Post-seeding, cells were transfected with combinations of HA-tagged MARF1WT or MARF1\u0394C-term, V5-tagged EDC4 and 3xFLAG-tagged MARF1C-term. 24 hr post-transfection, cells were washed twice with PBS and then subsequently fixed with 10% formaldehyde in PBS for 20 min. After formaldehyde fixing, cells were washed four times with PBS and then permeabilized with 0.1% triton in PBS (PBS-T) for 20 min. After permeabilization, the samples were blocked in 4% bovine serum albumin (BSA) in PBS at room temperature (RT) for 1 hr. Primary antibodies were diluted 1:200 for anti-HA and 1:500 for anti-FLAG and anti-EDC4 in 4% BSA. Diluted antibodies were added to the coverslips after blocking and left to incubate at 4\u00b0C overnight. The next day, cells were washed three times with PBS-t. Secondary antibodies were diluted 1:500 for both Alexa Fluor 488 goat anti-rabbit and Alexa Fluor 594 goat anti-mouse in 4% BSA (ThermoFisher). Secondary antibody was added to the coverslips and incubated at RT for 45 min, shielded from light. Post-secondary incubation, coverslips were washed once with PBS-t and then three additional times with PBS to remove any residual triton. Nuclei were stained with DAPI for 15 min at RT, shielded from light. Coverslips were washed four times with PBS before being mounted onto glass slides with ProLong Gold media (ThermoFisher). Images were taken using a Zeiss Confocal LSM 800 microscope at 40X magnification and processed with Fiji to add scale bars.\n\n### RNA immunoprecipitation assay\n\nExperiments were conducted using HEK293 cells that express FLAG-tagged MARF\u0394NYN. Briefly, FLAG-tagged MARF\u0394NYN expression was induced in a 10 cm dish of HEK293 cells using 2 ug/mL of doxycycline for 24 hr. Concurrently, cells were transfected with either plasmids coding for GFP (control) or V5-tagged EDC4. 24 hr post-transfection, cells were washed with PBS and UV crosslinked at 150 mJ cm\u22122. Cells were harvested and lysed in lysis buffer (50 mM Tris-HCl, pH 7.4; 100 mM NaCl; 1% NP40 (Igepal CA630); 0.1% SDS; 0.5% sodium deoxycholate; protease inhibitor; in RNase-free water). Lysates were incubated overnight with empty protein G magnetic beads (control) or beads coupled to FLAG antibody. Aliquots were taken for RNA and Protein inputs. Beads were then magnetized and stringently washed as outlined in the eCLIP protocol. 20% of the washed beads were taken for validation by western blot with the \u2018Protein Input\u2019 samples. The remaining beads were Proteinase K treated for 20 min at 37C, shaking at 1200 rpm. Post-proteinase K treatment, input and IP samples were RNA-extracted using EZ-10 Spin Column RNA Miniprep Kit (Biobasic). Extracted RNA was DNaseI-treated (Invitrogen) for 1 hr and inactivated using inactivating reagent (Invitrogen). RNA was reverse transcribed using random hexamer following the protocol for Maxima H Minus Reverse Transcriptase (Thermofisher). Quantitative PCR on the generated cDNAs was carried out with GoTaq qPCR Master Mix (Promega) and primers (IDT) against the ORF of our RL-MAML1 and FL (control) plasmids. To measure MARF1-target mRNA enrichment levels, the input and IP samples were first analyzed separately. The CT values of the RL-MAML1 mRNA as determined by qPCR were first normalized to the FL mRNA CT values (\u0394CT). This \u0394CT value for the FLAG immunoprecipitation samples was then normalized to the \u0394CT value of the uncoupled beads (\u0394\u0394CT). Finally, the relative fold-change of the \u0394\u0394CT value was determined by calculating 2-\u0394\u0394CT. After the relative fold-changes were calculated, the enrichment between the IP and input values was determined by dividing the IP relative fold-change by the input relative fold-change.\n\n### mRNA stability assays\n\nHEK293 cells were transiently transfected with plasmids coding for RL-MAML1, FL and various \u03bbNHA-expressing proteins using PEI reagent (Polysciences). 24 hr later, cells were treated with Actinomycin D (5 \u03bcg/ml) for various amounts of time and lysed. Total RNA was extracted and RT-qPCR was performed on these samples as outlined above with primers against the coding sequences of RL and FL.\n",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "d3c64d6b-1b9d-4ab6-bda0-031a664a680c",
+      "submission_id": "52ebf865-0b27-4cf4-a0c9-1800124b5d3b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Torben Heick Jensen, Aarhus University Denmark\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54995.sa1](https://doi.org/10.7554/eLife.54995.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript presents evidence that a recently identified RNA endonuclease MARF1, which was previously shown to be required for normal oogenesis in mice, is negatively regulated by a core component of the mRNA decapping complex, EDC4. In addition, the potential RNA targets of the MARF1 endonuclease are identified by iCLIP, disclosing important mechanistic insights into MARF1 ribonuclease function, its regulation, and its targets in somatic cells.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A non-canonical role for the EDC4 decapping factor in regulating MARF1-mediated mRNA decay\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and James Manley as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWhile the reviewers consider the manuscript to represent a solid and interesting study disclosing important mechanistic insight into the nuclease function of MARF1, they also raise important reservation about the biological relevance. This criticism mostly concerns the uniform use of the luciferase reporter to address mRNA decay relationships as well as the use of somatic cells, where MARF1 has to be overexpressed to allow its study. To consider the manuscript for publication in eLife, revision is therefore required addressing the below points.\n\nEssential revisions:\n\n1) According to the model, EDC4 inhibits MARF1 mRNA binding. Since iCLIP was performed in the presence of endogenous EDC4, the low number of identified mRNAs might reflect that over expressed MARF1 is in a rather inactive state. The authors should perform iCLIP with the \u0394C-term mutant and compare the results with the full-length dataset (\u0394NYN). Alternatively, EDC4 knock down could be performed and MARF1 could be clipped. This would solidify the presented model and add further physiologically relevant data to the study.\n\n2) Nearly all reported effects of MARF1 activity on mRNA decay is provided by reporter constructs with a protein read-out (luciferase activity), and in all cases exogenously expressed MARF1. It is essential to demonstrate, at least initially, that the luciferase output reflects mRNA steady-state levels, and preferably also mRNA decay rates. Also, the demonstrated effects of manipulation with EDC4 expression on luciferase reporters elicited by MARF1 (EDC4 knockdown and EDC4 overexpression; e.g. Figure 5) needs to be recapitulated with endogenous targets.\n",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c708945c-b981-4d75-855e-8a8bedd3926a",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C1",
+      "claim": "EDC4 is a core component of processing (P)-bodies that binds the DCP2 decapping enzyme and stimulates mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "EDC4 is a core component of processing (P)-bodies that binds the DCP2 decapping enzyme and stimulates mRNA decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "1a360cf6-8ebf-4108-b04b-a275879a34c1",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C2",
+      "claim": "EDC4 interacts with mammalian MARF1.",
+      "claim_type": "EXPLICIT",
+      "source": "EDC4 also interacts with mammalian MARF1, a recently identified endoribonuclease that promotes oogenesis and contains a number of RNA binding domains, including two RRMs and multiple LOTUS domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction (Bloch et al., 2014; Nishimura et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "13aab008-d04d-4a8b-9150-4c2ec8b9b604",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C3",
+      "claim": "MARF1 is a recently identified endoribonuclease that promotes oogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "EDC4 also interacts with mammalian MARF1, a recently identified endoribonuclease that promotes oogenesis and contains a number of RNA binding domains, including two RRMs and multiple LOTUS domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "624cd47e-27cf-426e-896a-4c8593c542cc",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C4",
+      "claim": "MARF1 contains two RRMs and multiple LOTUS domains.",
+      "claim_type": "EXPLICIT",
+      "source": "EDC4 also interacts with mammalian MARF1, a recently identified endoribonuclease that promotes oogenesis and contains a number of RNA binding domains, including two RRMs and multiple LOTUS domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "a2fbae0c-3ea4-4d5f-a297-423450c9a70f",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C5",
+      "claim": "MARF1 predominantly binds the 3' UTRs of target mRNAs via its LOTUS domains to promote their decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Our transcriptome-wide analysis identifies bona fide MARF1 target mRNAs and indicates that MARF1 predominantly binds their 3' UTRs via its LOTUS domains to promote their decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by iCLIP data shown in Figure 1B and deletion mutant experiments in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "40b3f793-f24c-43cd-98d9-7593a9218050",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C6",
+      "claim": "A MARF1 RRM plays an essential role in enhancing its endonuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that a MARF1 RRM plays an essential role in enhancing its endonuclease activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "30f79ae2-f17f-4d71-b38f-9ac443b76f08",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C7",
+      "claim": "EDC4 impairs MARF1 activity by preventing its LOTUS domains from binding target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we establish that EDC4 impairs MARF1 activity by preventing its LOTUS domains from binding target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "46e42852-7127-4ff5-851b-1c4949f12c6f",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C8",
+      "claim": "EDC4 serves as an enhancer of mRNA turnover that binds DCP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, EDC4 not only serves as an enhancer of mRNA turnover that binds DCP2, but also as a repressor that binds MARF1 to prevent the decay of MARF1 target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations in the introduction (Chang et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0953ffaf-5592-4150-8783-cef98be1d3d4",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C9",
+      "claim": "EDC4 acts as a repressor that binds MARF1 to prevent the decay of MARF1 target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, EDC4 not only serves as an enhancer of mRNA turnover that binds DCP2, but also as a repressor that binds MARF1 to prevent the decay of MARF1 target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "d1454d1b-59d6-4633-81c5-13cbfe209104",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C10",
+      "claim": "The major mRNA decay pathway in eukaryotes initiates with deadenylation carried out by the CCR4-NOT deadenylase complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The major mRNA decay pathway in eukaryotes initiates with the shortening of the mRNA poly(A) tail (deadenylation), which is carried out by the CCR4-NOT deadenylase complex (Yamashita et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "3115cc81-71d7-4427-a4db-bb3256f08041",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C11",
+      "claim": "mRNA deadenylation is followed by recruitment of the DCP1-DCP2 decapping complex that hydrolyzes the mRNA 5'-cap structure.",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA deadenylation is then followed by recruitment of the DCP1-DCP2 decapping complex that hydrolyzes the mRNA 5'-cap structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "829b80ec-f67e-4acc-b767-268573b595b8",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C12",
+      "claim": "The DCP1-DCP2 decapping complex is comprised of the DCP2 decapping enzyme, DCP1, and enhancers of mRNA decapping (EDC) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex is comprised of the DCP2 decapping enzyme, DCP1 (associates with DCP2) and enhancers of mRNA decapping (EDC) proteins (i.e. EDC3 and EDC4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "ff265ef9-2911-4fc2-8381-98443c245e7c",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C13",
+      "claim": "EDC4 enhances mRNA decapping by binding both DCP1 and DCP2 stimulating DCP2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "EDC4 enhances mRNA decapping by binding both DCP1 and DCP2 stimulating DCP2 activity (Chang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "13c3440d-a336-4ab1-a636-f1924e720e1c",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C14",
+      "claim": "Once the 5'-cap is removed to yield a 5' monophosphate, the mRNA is committed for degradation by the 5'-to-3' exonuclease XRN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the 5'-cap is removed to yield a 5' monophosphate, the mRNA is committed for degradation by the 5'-to-3' exonuclease XRN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "88ff1b73-840c-4cfb-83f9-fa693bbb5b9f",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C15",
+      "claim": "EDC4 and other mRNA decapping factors are found associated with processing (P)-bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Many proteins that play a role in mRNA metabolism, including EDC4 and other mRNA decapping factors, are found associated with processing (P)-bodies, cytoplasmic ribonucleoprotein granules that contain translationally repressed mRNAs (Hubstenberger et al., 2017; Standart and Weil, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "ef757e36-e3e6-4e4e-bb56-1396e52655ba",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C16",
+      "claim": "P-bodies are cytoplasmic ribonucleoprotein granules that contain translationally repressed mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Many proteins that play a role in mRNA metabolism, including EDC4 and other mRNA decapping factors, are found associated with processing (P)-bodies, cytoplasmic ribonucleoprotein granules that contain translationally repressed mRNAs (Hubstenberger et al., 2017; Standart and Weil, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "48840718-2f33-414d-98e3-872f37dcacc3",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C17",
+      "claim": "Human EDC4 interacts with the RNA binding protein MARF1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to binding DCP1 and DCP2, human EDC4 also interacts with the RNA binding protein MARF1 (meiosis regulator and mRNA stability factor 1), a recently characterized endonuclease that promotes oogenesis (Bloch et al., 2014; Kanemitsu et al., 2017; Nishimura et al., 2018; Su et al., 2012a; Yao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "25571a1e-67ff-424d-b223-46784721a9ab",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C18",
+      "claim": "Mammalian MARF1 proteins contain a NYN endonuclease domain that adopts a PIN-like fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian MARF1 proteins contain a NYN endonuclease domain (Figure 1A) that adopts a PIN-like fold (Nishimura et al., 2018; Su et al., 2012a; Yao et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by citations and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "4889bc6e-964f-4cbe-93c6-e158d0858025",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C19",
+      "claim": "MARF1 contains eight tandem winged helix-turn-helix (wHTH) LOTUS domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its NYN domain, MARF1 also contains a number of RNA binding modules, including two RRMs and eight tandem winged helix-turn-helix (wHTH) LOTUS (Limkain, Oskar, and Tudor containing proteins 5 and 7) domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "1be4c722-a9fc-4213-8ae3-d3ecb1093f14",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C20",
+      "claim": "Drosophila MARF1 contains several tandem LOTUS domains but has only one RRM and lacks a nuclease domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila MARF1 also contains several tandem LOTUS domains, but has only one RRM and lacks a nuclease domain (Zhu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0769730f-37a5-4be5-b224-83a9c43a41d4",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C21",
+      "claim": "The first LOTUS domain of Drosophila MARF1 recruits the CCR4-NOT complex to initiate deadenylation-dependent mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the first of its LOTUS domains recruits the CCR4-NOT complex to initiate deadenylation-dependent mRNA decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction referring to Drosophila MARF1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "6b807053-9001-4e01-ba6a-b4c8610a7e7b",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C22",
+      "claim": "Mammalian MARF1 does not directly associate with the CCR4-NOT complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mammalian MARF1 does not directly associate with the CCR4-NOT complex but rather uses a C-terminal motif to physically interact with EDC4, DCP1 and DCP2 (Bloch et al., 2014; Nishimura et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "04cf4ce1-cdf4-4302-8a42-640201bdd4de",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C23",
+      "claim": "Mammalian MARF1 uses a C-terminal motif to physically interact with EDC4, DCP1 and DCP2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mammalian MARF1 does not directly associate with the CCR4-NOT complex but rather uses a C-terminal motif to physically interact with EDC4, DCP1 and DCP2 (Bloch et al., 2014; Nishimura et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "87807b52-0348-415c-9343-0922942d8f5d",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C24",
+      "claim": "MARF1 is robustly expressed in mouse oocytes where it plays a critical role in regulating their meiotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "MARF1 is robustly expressed in mouse oocytes where it plays a critical role in regulating their meiotic progression based on the finding that female Marf1-/- mice are sterile (Su et al., 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0541b84a-95d4-43a7-9958-b3f373b11f68",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C25",
+      "claim": "Female Marf1-/- mice are sterile.",
+      "claim_type": "EXPLICIT",
+      "source": "MARF1 is robustly expressed in mouse oocytes where it plays a critical role in regulating their meiotic progression based on the finding that female Marf1-/- mice are sterile (Su et al., 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "818eaea9-742b-46b0-8376-c3c82dc59a9c",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C26",
+      "claim": "MARF1 is expressed in the developing brain where it regulates neuronal differentiation in the embryonic cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to regulating the development of the mammalian germline, MARF1 is also expressed in the developing brain where it has been reported to regulate neuronal differentiation in the embryonic cortex (Kanemitsu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "6085ec14-0c5c-46dc-b542-f7264446c9eb",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C27",
+      "claim": "Knocking out MARF1 in oocytes dramatically alters gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While knocking out MARF1 in oocytes dramatically alters gene expression, it is currently unclear which mRNAs are directly targeted by MARF1 and which of its RNA binding modules mediate target RNA recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "ca07d43e-d569-4243-bfda-2680bab8393a",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C28",
+      "claim": "iCLIP analysis identified 108 high-confidence mRNAs bound by F-MARF1\u0394NYN.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified only 108 high-confidence mRNAs bound by F-MARF1\u0394NYN with the vast majority of assigned peaks mapping to 3'UTRs (Figure 1B and exemplified in Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "674dcbe7-0b9e-40db-a019-280d07202bd5",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C29",
+      "claim": "The vast majority of MARF1-bound mRNA peaks map to 3'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified only 108 high-confidence mRNAs bound by F-MARF1\u0394NYN with the vast majority of assigned peaks mapping to 3'UTRs (Figure 1B and exemplified in Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "22fa713d-cf9d-4487-a0b9-dac3e2e611ce",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C30",
+      "claim": "Most of the crosslinked reads derived from exonic sequences, consistent with the cytosolic localization of MARF1.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that most of the crosslinked reads derived from exonic sequences is consistent with the cytosolic localization of MARF1 (Bloch et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "c51fd012-496f-4102-8683-97b3b428f07a",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C31",
+      "claim": "34 iCLIP targets were upregulated in Marf1GT/GT or Marf1D272A/D272A oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of our iCLIP data with these gene expression datasets identified 34 iCLIP targets that were upregulated in Marf1GT/GT or Marf1D272A/D272A oocytes, with the majority of these targets (29) being upregulated in both contexts (Figure 1C and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0f7c71d4-cad6-4f5c-8069-8a957e017acf",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C32",
+      "claim": "29 iCLIP targets were upregulated in both Marf1GT/GT and Marf1D272A/D272A oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of our iCLIP data with these gene expression datasets identified 34 iCLIP targets that were upregulated in Marf1GT/GT or Marf1D272A/D272A oocytes, with the majority of these targets (29) being upregulated in both contexts (Figure 1C and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "1c77734b-2692-4890-8cf3-ad24e04d482b",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C33",
+      "claim": "Full-length \u03bbNHA-MARF1 efficiently represses a Renilla luciferase (RL) reporter mRNA when tethered via the \u03bbN-BoxB system to its 3'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length \u03bbNHA-MARF1 efficiently represses a Renilla luciferase (RL) reporter mRNA in HEK293 cells when it is artificially tethered via the bacteriophage \u03bbN-BoxB tethering system to its 3'UTR (RL-5BoxB) (Figure 2A through C) (Bos et al., 2016; Nishimura et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "375c0bed-4cd3-41d4-b88f-ec6bd5578b00",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C34",
+      "claim": "MARF1-mediated repression is NYN-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this repression is NYN-dependent as a MARF1 mutant lacking the NYN domain (\u03bbNHA-MARF1\u0394NYN) did not efficiently silence the RL-5BoxB reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "3e3192f1-902e-4b94-b51e-fe0ede28ef5e",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C35",
+      "claim": "Full-length \u03bbNHA-MARF1 efficiently repressed RL reporters containing 3'UTRs of MARF1 targets in a NYN-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with our results using the RL-5BoxB reporter, full-length \u03bbNHA-MARF1 efficiently repressed these reporters in a NYN-dependent manner (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "3b5564d0-ec24-45d8-9bf7-b03ef899ce24",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C36",
+      "claim": "MARF1 was not able to silence the IL-6 reporter, demonstrating specificity to bona fide targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, repression was specific to bona fide targets, as MARF1 was not able to silence the IL-6 reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "99391981-08fd-4131-8ff9-443b6522c594",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C37",
+      "claim": "Full-length MARF1 significantly reduced the steady state levels of RL-MAML1 and RL-NOTCH2 mRNAs in a NYN-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This repression also appeared to be at the level of mRNA decay, as full-length MARF1 significantly reduced the steady state levels of RL-MAML1 and RL-NOTCH2 mRNAs (Figure 2E) and the stability of RL-MAML1 mRNA (Figure 2F) in a NYN-dependent manner, as assessed by RT-qPCR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figures 2E and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "4ff9364b-a04b-46b8-8c7f-ffcb155ba6f7",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C38",
+      "claim": "Full-length MARF1 reduced the stability of RL-MAML1 mRNA in a NYN-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This repression also appeared to be at the level of mRNA decay, as full-length MARF1 significantly reduced the steady state levels of RL-MAML1 and RL-NOTCH2 mRNAs (Figure 2E) and the stability of RL-MAML1 mRNA (Figure 2F) in a NYN-dependent manner, as assessed by RT-qPCR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "a2667585-e9e6-483f-99a6-24003e2ee0c2",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C39",
+      "claim": "Overexpressing wild-type MARF1 resulted in marked decrease of the steady-state levels of both endogenous Notch2 and Maml1 mRNAs as compared to cells expressing MARF1\u0394NYN.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, overexpressing wild-type MARF1 resulted in marked decrease of the steady-state levels of both endogenous Notch2 and Maml1 mRNAs as compared to cells expressing MARF1\u0394NYN (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0fd00bf7-df66-4b9d-9bec-3009662b21cb",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C40",
+      "claim": "No short sequence motifs were identified as enriched in MARF1 peaks by iCLIP analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our iCLIP data demonstrated MARF1 binding to numerous mRNA 3'UTRs, we were not able to identify any short sequence motifs enriched in MARF1 peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "73648329-261c-4408-85db-eea37cd41d0c",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C41",
+      "claim": "Structural motifs in the target RNAs and/or other positional elements are likely to determine the 3'UTR binding specificity of MARF1.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that structural motifs in the target RNAs and/or other positional elements are likely to determine the 3'UTR binding specificity of MARF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an inference from the lack of sequence motifs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "dfc56961-f3f5-4777-9da1-14c8395e93a5",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C42",
+      "claim": "A MARF1 mutant lacking the decapping factor interaction motif (\u0394C-term) efficiently silenced both the RL-MAML1 and the RL-5BoxB reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "A MARF1 mutant lacking the decapping factor interaction motif (\u0394C-term) efficiently silenced both the RL-MAML1 and the RL-5BoxB reporters (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "4e284e2c-8172-489e-a4a8-a32d9adff4b1",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C43",
+      "claim": "A MARF1 N-terminal fragment (\u03bbNHA-MARF1N-term) that lacks both the LOTUS domains and the decapping factor interaction motif efficiently silenced RL-5BoxB but failed to repress the RL-MAML1 reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a MARF1 N-terminal fragment (\u03bbNHA-MARF1N-term) that lacks both the LOTUS domains and the decapping factor interaction motif efficiently silenced RL-5BoxB but failed to repress the RL-MAML1 reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "4572dd2e-7520-418b-827a-5846a7fedcdc",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C44",
+      "claim": "Human MARF1 protein LOTUS domains 3 and 5 are highly conserved in MARF1 homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignment of human MARF1 protein LOTUS domains revealed that the central LOTUS domains 3 and 5 are highly conserved in MARF1 homologs, including Xenopus tropicalis, Drosophila melanogaster and Dario rerio (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "67b6b7a4-2d9b-4457-929e-81112189afb3",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C45",
+      "claim": "Human MARF1 LOTUS domains 3 and 5 share a high degree of sequence identity with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, human MARF1 LOTUS domains 3 and 5 also share a high degree of sequence identity with each other (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "fba5c770-bed7-4b36-b1a6-87fb730c5846",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C46",
+      "claim": "MARF1 mutants lacking LOTUS domains 1, 2, 6, 7 or 8 efficiently silenced RL-MAML1 and RL-5BoxB mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that MARF1 mutants lacking LOTUS domains 1, 2, 6, 7 or eight efficiently silenced RL-MAML1 and RL-5BoxB mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "670786e8-00f0-464e-ab16-9a0f21a7eba9",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C47",
+      "claim": "MARF1 mutants lacking LOTUS domains 3, 4 or 5 were unable to efficiently silence RL-MAML1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MARF1 mutants lacking LOTUS domains 3, 4 or 5 were unable to efficiently silence RL-MAML1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "7e05fdd6-e180-4289-ae9c-00aacc75d007",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C48",
+      "claim": "MARF1 proteins lacking LOTUS domains 3, 4 or 5 efficiently repressed the RL-5BoxB reporter mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, MARF1 proteins lacking LOTUS domains 3, 4 or 5 efficiently repressed the RL-5BoxB reporter mRNA, suggesting that deleting these core LOTUS domains did not impact MARF1 nuclease activity but rather its binding to endogenously targeted mRNA 3'UTRs (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "5a00bc21-7d9e-40bb-b545-9722da90d2dc",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C49",
+      "claim": "Deleting LOTUS domains 3, 4 or 5 did not impact MARF1 nuclease activity but rather its binding to endogenously targeted mRNA 3'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, MARF1 proteins lacking LOTUS domains 3, 4 or 5 efficiently repressed the RL-5BoxB reporter mRNA, suggesting that deleting these core LOTUS domains did not impact MARF1 nuclease activity but rather its binding to endogenously targeted mRNA 3'UTRs (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "bf896e33-90b1-415f-b358-d08c2e4244ac",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C50",
+      "claim": "\u03bbNHA-MARF1\u0394LOTUS4 failed to silence a number of RL reporters containing MARF1 target 3'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to not being able to repress RL-MAML1, we also observed that \u03bbNHA-MARF1 lacking the LOTUS domain 4 (\u03bbNHA-MARF1\u0394LOTUS4) failed to silence a number of other RL reporters containing MARF1 target 3'UTRs, including Zfp36l2, Atxn7l3, Faf2, Igf2bp1 and Cpsf7 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "ff4d68c3-4b58-47ae-a70b-0687e46e8bd3",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C51",
+      "claim": "MARF1 utilizes its central LOTUS domains to bind target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "All in all, these data indicated that MARF1 utilizes its central LOTUS domains to bind target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the deletion mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "5a8961f1-5e8c-4f3c-a013-cf12ab41704e",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C52",
+      "claim": "Deleting both RRMs rendered MARF1 unable to repress RL-MAML1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that deleting both RRMs rendered MARF1 unable to repress RL-MAML1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "3fc61fc6-2ca9-48cf-8644-8c311c39e93f",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C53",
+      "claim": "\u03bbNHA-MARF1\u0394RRM2 efficiently silenced the RL-MAML1 reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while \u03bbNHA-MARF1\u0394RRM2 efficiently silenced the RL-MAML1 reporter, \u03bbNHA-MARF1\u0394RRM1 was unable to do so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "449298e2-7dab-4a6a-af11-46102df91e01",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C54",
+      "claim": "\u03bbNHA-MARF1\u0394RRM1 was unable to efficiently silence the RL-MAML1 reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while \u03bbNHA-MARF1\u0394RRM2 efficiently silenced the RL-MAML1 reporter, \u03bbNHA-MARF1\u0394RRM1 was unable to do so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "01566616-c165-483f-8537-85bd1bdbe5a7",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C55",
+      "claim": "\u03bbNHA-MARF1\u0394RRM1 was unable to efficiently repress other RL reporter mRNAs containing MARF1-targeted 3'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, \u03bbNHA-MARF1\u0394RRM1 was unable to efficiently repress other RL reporter mRNAs containing MARF1-targeted 3'UTRs, including ATXN7L3, CPSF7, IGF2BP1, NOTCH2, PGAM1 and ZFP36L2 (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "37632a76-4181-4f9a-ad2b-057e82cdbc0a",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C56",
+      "claim": "RRM1 binds single-stranded RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies established that RRM1 binds single-stranded RNA (Yao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "207ff7f1-8dbf-48a0-93da-60b90c3bbf88",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C57",
+      "claim": "The RRM1 mutant (\u03bbNHA-MARF1RRM1mut) was unable to silence the RL-MAML1 reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this hypothesis, this RRM1 mutant was unable to silence the RL-MAML1 reporter (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "5e9ea46e-3ab2-43aa-bda8-91f68a89b061",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C58",
+      "claim": "Deleting or mutating RRM1 abrogated \u03bbNHA-MARF1 repression of the RL-5BoxB reporter RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, deleting or mutating RRM1 also abrogated \u03bbNHA-MARF1 repression of the RL-5BoxB reporter RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "17f11cb3-723c-40fb-aeb1-3c11c8ad6b13",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C59",
+      "claim": "Deleting RRM1 in the context of \u03bbNHA-MARF1N-term abolished the repressive activity on RL-5BoxB mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, deleting RRM1 in the context of \u03bbNHA-MARF1N-term also abolished the repressive activity on RL-5BoxB mRNA (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figures 4E and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "ba0b42c1-fbc2-43f6-b9e8-4d2088fe65b4",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C60",
+      "claim": "RRM1 is required for NYN-mediated cleavage of MARF1-targeted mRNAs irrespective of how MARF1 is recruited to the targeted mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that RRM1 is required for NYN-mediated cleavage of MARF1-targeted mRNAs irrespective of how MARF1 is recruited to the targeted mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "83fb33d3-e414-48bc-8d05-0bf64e9cef24",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C61",
+      "claim": "EDC4 serves as a large scaffold that binds both DCP1 and DCP2 thereby promoting their association and mRNA decapping.",
+      "claim_type": "EXPLICIT",
+      "source": "EDC4 serves as a large scaffold that binds both DCP1 and DCP2 thereby promoting their association and mRNA decapping (Chang et al., 2014; Yu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "7ae408ea-c7c6-4b4e-ac2c-b80c282cdcca",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C62",
+      "claim": "EDC4 has been reported to associate with miRISC and the RNA binding protein TTP and enhance miRNA-mediated gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, EDC4 has been reported to associate with miRISC as well as the RNA binding protein TTP and enhance miRNA-mediated gene silencing (Brodersen et al., 2008; Eulalio et al., 2007; Nishihara et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "ead7d32f-8f07-4255-acf7-6896775aadc1",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C63",
+      "claim": "MARF1 physically interacts via its C-terminal motif with EDC4.",
+      "claim_type": "EXPLICIT",
+      "source": "MARF1 also physically interacts via its C-terminal motif with EDC4 (Bloch et al., 2014; Fenger-Gr\u00f8n et al., 2005; Hubstenberger et al., 2017; Nishimura et al., 2018; Youn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "857af734-87d5-44f0-a102-e8bd60f5c1e2",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C64",
+      "claim": "A MARF1 mutant lacking its C-terminal motif (\u03bbNHA-MARF1\u0394C-term) showed no functional defect in repressing a RL-5BoxB reporter construct when artificially tethered to it or the RL-MAML1 reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a MARF1 mutant lacking its C-terminal motif (\u03bbNHA-MARF1\u0394C-term) showed no functional defect in repressing a RL-5BoxB reporter construct when artificially tethered to it or the RL-MAML1 reporter (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "7646fcc7-502a-415c-b09d-e5f94ed3ed78",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C65",
+      "claim": "At low levels of expression, full-length MARF1 did not repress the RL-MAML1 reporter, whereas \u03bbNHA-MARF1\u0394C-term remained able to silence RL-MAML1 mRNA when expressed at a comparable level.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed that at low levels of expression, full-length MARF1 did not repress the RL-MAML1 reporter, whereas \u03bbNHA-MARF1\u0394C-term remained able to silence RL-MAML1 mRNA when expressed at a comparable level (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "84997a23-1002-445a-9ee8-bc689c670535",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C66",
+      "claim": "Low-level expression of \u03bbNHA-MARF1 efficiently repressed RL-5BoxB when artificially tethered.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this effect was specific to how MARF1 was recruited to a target mRNA, as low-level expression of \u03bbNHA-MARF1 efficiently repressed RL-5BoxB when artificially tethered (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "33d58f9b-ca6b-4daf-a94a-b97114aa1ed9",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C67",
+      "claim": "Knocking down EDC4 rescued wild-type \u03bbNHA-MARF1-mediated repression to the level achieved by \u03bbNHA-MARF1\u0394C-term.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down EDC4 rescued wild-type \u03bbNHA-MARF1-mediated repression to the level achieved by \u03bbNHA-MARF1\u0394C-term (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "4e4dc5cf-cfab-44bd-9998-ade8c137afcd",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C68",
+      "claim": "EDC4 depletion co-depleted DCP2.",
+      "claim_type": "EXPLICIT",
+      "source": "EDC4 depletion also co-depleted DCP2 (Figure 5D), as has been previously reported (Erickson et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5D and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "fc21afe0-28db-4c3e-b3b8-834a970a6e5b",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C69",
+      "claim": "Knocking down DCP2 did not enhance \u03bbNHA-MARF1 repression of RL-MAML1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, knocking down DCP2, which does not change EDC4 expression (Figure 5D), did not enhance \u03bbNHA-MARF1 repression of RL-MAML1 (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "7b7d7141-9e67-4d7e-a768-1da26b96d505",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C70",
+      "claim": "Overexpressing EDC4 dramatically impaired wild-type \u03bbNHA-MARF1-mediated repression of RL-MAML1 and RL-NOTCH2 reporters, as compared to cells expressing only endogenous EDC4.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing EDC4 dramatically impaired wild-type \u03bbNHA-MARF1-mediated repression of RL-MAML1 and RL-NOTCH2 reporters, as compared to cells expressing only endogenous EDC4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figures 5F and 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "5cd871f9-c92c-46f1-946e-2a5b0370adf1",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C71",
+      "claim": "EDC4 overexpression had no effect on the repressive activity of \u03bbNHA-MARF1\u0394C-term.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, EDC4 overexpression had no effect on the repressive activity of \u03bbNHA-MARF1\u0394C-term.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figures 5F and 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "922e3557-cf3a-4985-ab9a-2378e6d84299",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C72",
+      "claim": "EDC4 had no noticeable impact on the ability of full-length \u03bbNHA-MARF1 to repress a RL-5BoxB mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, EDC4 had no noticeable impact on the ability of full-length \u03bbNHA-MARF1 to repress a RL-5BoxB mRNA (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "7748615e-c007-4491-be2b-486b966f142a",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C73",
+      "claim": "Overexpression of EDC4 increased the steady state levels of Maml1 and Notch2 mRNAs in \u03bbNHA-MARF1 expressing cells but had no effect on their levels in \u03bbNHA-MARF1\u0394C-term expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the luciferase reporter data, overexpression of EDC4 increased the steady state levels of Maml1 and Notch2 mRNAs in \u03bbNHA-MARF1 expressing cells but had no effect on their levels in \u03bbNHA-MARF1\u0394C-term expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figures 5I and 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "6904ec2f-7e56-4c13-90c1-eaebb32978b4",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C74",
+      "claim": "EDC4 antagonizes MARF1-mediated repression of target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that EDC4 antagonizes MARF1-mediated repression of target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "629f35b7-952e-415b-8aaf-a24299e87d1c",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C75",
+      "claim": "MARF1 has been reported to localize with EDC4 in P-bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "MARF1 has been reported to localize with EDC4 in P-bodies (Bloch et al., 2014; Hubstenberger et al., 2017; Youn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "a558402b-523e-405e-97b4-fe567a46295a",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C76",
+      "claim": "Full-length \u03bbNHA-MARF1 localized to P-bodies, as determined by co-localization with EDC4.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length \u03bbNHA-MARF1 localized to P-bodies, as determined by co-localization with EDC4 (Figure 6B, left panels), whereas a \u03bbNHA-MARF1 mutant lacking its C-terminal motif did not localize with EDC4 to P-bodies but rather exhibited a diffuse cytoplasmic distribution (Figure 6B, middle panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0b25c538-8e82-4b1f-addd-9bb26bfa97ce",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C77",
+      "claim": "A \u03bbNHA-MARF1 mutant lacking its C-terminal motif did not localize with EDC4 to P-bodies but rather exhibited a diffuse cytoplasmic distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length \u03bbNHA-MARF1 localized to P-bodies, as determined by co-localization with EDC4 (Figure 6B, left panels), whereas a \u03bbNHA-MARF1 mutant lacking its C-terminal motif did not localize with EDC4 to P-bodies but rather exhibited a diffuse cytoplasmic distribution (Figure 6B, middle panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "143bc8bf-358f-4087-bd8e-30269bc6b26c",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C78",
+      "claim": "The MARF1 C-terminal motif is sufficient on its own to interact with EDC4.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the interaction between EDC4 and MARF1 is what is responsible for EDC4 impairing the repressive activity of MARF1, we took advantage of the MARF1 C-terminal motif, which is sufficient on its own to interact with EDC4 (Nishimura et al., 2018) and also co-localizes with EDC4 in P-bodies (Figure 6\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by a citation and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "68068f44-abee-4d21-86fa-d088faa8a685",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C79",
+      "claim": "The MARF1 C-terminal motif co-localizes with EDC4 in P-bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the interaction between EDC4 and MARF1 is what is responsible for EDC4 impairing the repressive activity of MARF1, we took advantage of the MARF1 C-terminal motif, which is sufficient on its own to interact with EDC4 (Nishimura et al., 2018) and also co-localizes with EDC4 in P-bodies (Figure 6\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "1de82ff9-5f83-42dd-9bda-4a9c1f16c441",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C80",
+      "claim": "Expressing the MARF1C-term enhanced wild-type MARF1-mediated silencing of the RL-MAML1 reporter to the level of repression observed with the \u03bbNHA-MARF1\u0394C-term protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the effects observed upon EDC4 depletion, expressing the MARF1C-term enhanced wild-type MARF1-mediated silencing of the RL-MAML1 reporter to the level of repression observed with the \u03bbNHA-MARF1\u0394C-term protein (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0882565c-1347-4fff-9af1-5a3689afc238",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C81",
+      "claim": "Expression of FLAG-tagged MARF1C-term shifted the distribution of wild-type MARF1 from strongly co-localizing with EDC4 in P-bodies to being more diffuse in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, expression of FLAG-tagged MARF1C-term shifted the distribution of wild-type MARF1 from strongly co-localizing with EDC4 in P-bodies to being more diffuse in the cytoplasm (Figure 6B, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "2bf9e91e-78b9-4bcc-ad04-484e9004ab38",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C82",
+      "claim": "The EDC4-MARF1 interaction localizes MARF1 to P-bodies and prevents MARF1 from efficiently repressing target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that the EDC4-MARF1 interaction localizes MARF1 to P-bodies and prevents MARF1 from efficiently repressing target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "9588558b-22c7-4288-8e16-174b255591f3",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C83",
+      "claim": "The ability of MARF1 to co-precipitate RL-MAML1 mRNA in EDC4 overexpressing cells was dramatically impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR of immunopurified RNAs demonstrated enrichment of RL-MAML1 mRNA with FLAG-tagged MARF1\u0394NYN (~9 fold) (Figure 6D). In contrast, the ability of MARF1 to co-precipitate RL-MAML1 mRNA in EDC4 overexpressing cells was dramatically impaired (~2 fold).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "b0dc87cc-f082-4134-97e2-7018b3df4022",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C84",
+      "claim": "EDC4 impairs MARF1 repression of endogenous target mRNAs by preventing MARF1 from binding to targeted 3'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data therefore support the hypothesis that EDC4 impairs MARF1 repression of endogenous target mRNAs by preventing MARF1 from binding to targeted 3'UTRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the RNA immunoprecipitation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "6bce110c-e8e5-4846-a644-cda946c4c4f9",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C85",
+      "claim": "Different RNA binding domains in MARF1 are required for initial target binding as well as subsequent target decay.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that MARF1 predominantly binds the 3'UTRs of target mRNAs and reveal that different RNA binding domains in MARF1 are required for initial target binding as well as subsequent target decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "b7361b79-28c7-408f-91e4-ed4546abe85a",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C86",
+      "claim": "EDC4 binding to MARF1 localizes MARF1 to P-bodies and impairs MARF1-mediated repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we uncover a novel role for the enhancer of mRNA decapping protein EDC4 in that its binding to MARF1 localizes MARF1 to P-bodies and impairs MARF1-mediated repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "80e2277d-efce-455a-ad53-f255b371e884",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C87",
+      "claim": "Many MARF1-targeted mRNAs identified by iCLIP are upregulated in MARF1 knockout mouse oocytes as compared to wild-type oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, many MARF1-targeted mRNAs identified by iCLIP are upregulated in MARF1 knockout mouse oocytes as compared to wild-type oocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "9bab7328-f530-4634-8c3e-254929f9a303",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C88",
+      "claim": "MARF1 may recognize structural motifs rather than specific nucleotide sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Notwithstanding the validation of a number of MARF1-targeted mRNAs, prediction algorithms including DREME (Bailey, 2011) did not identify a motif within the iCLIP peaks, suggesting that MARF1 may recognize structural motifs rather than specific nucleotide sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the lack of sequence motifs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "e25f90a7-02b0-4b38-8471-6eed8c0005d1",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C89",
+      "claim": "MARF1-targeted mRNAs may be underrepresented in the CLIP dataset due to the presence of endogenous EDC4.",
+      "claim_type": "EXPLICIT",
+      "source": "Our CLIP experiments were carried out in the presence of endogenous EDC4, which we now know is sufficient to partially inhibit MARF1 from interfacing with target mRNAs in a dose-dependent manner (Figure 5). It is possible that MARF1-targeted mRNAs are underrepresented in our CLIP dataset due to the presence of endogenous EDC4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "38776070-3eaf-4601-955a-2f0101ae735b",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C90",
+      "claim": "The LOTUS domain is a wHTH fold that is conserved from bacteria to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The LOTUS domain is a wHTH fold that is conserved from bacteria to humans (Callebaut and Mornon, 2010; Jeske et al., 2017; Yao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "7d6f277d-ec10-4f6d-b9ca-0694203e04ef",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C91",
+      "claim": "wHTH folds have been reported to bind double-stranded RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that wHTH folds have also been reported to bind double-stranded RNA\u2014including in human La, mouse MARF1 and the signal recognition particle (Dong et al., 2004; Keenan et al., 1998; Yao et al., 2018)\u2014supports a model whereby MARF1 contacts structural elements within the 3'UTRs of target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "47fbd5fb-a480-4927-b044-5d272a4b9bfa",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C92",
+      "claim": "MARF1 contacts structural elements within the 3'UTRs of target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that wHTH folds have also been reported to bind double-stranded RNA\u2014including in human La, mouse MARF1 and the signal recognition particle (Dong et al., 2004; Keenan et al., 1998; Yao et al., 2018)\u2014supports a model whereby MARF1 contacts structural elements within the 3'UTRs of target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a model supported by inference.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0125a465-be31-4b00-a3fb-42ad31320833",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C93",
+      "claim": "Drosophila MARF1 protein lacks a NYN domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila MARF1 protein lacks a NYN domain; however, its first LOTUS domain has been reported to recruit the CCR4-NOT complex to bring about deadenylation of targeted mRNAs (Zhu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "8150645c-fe44-4038-86ce-0bbf4bb6887b",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C94",
+      "claim": "The first LOTUS domain of Drosophila MARF1 recruits the CCR4-NOT complex to bring about deadenylation of targeted mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila MARF1 protein lacks a NYN domain; however, its first LOTUS domain has been reported to recruit the CCR4-NOT complex to bring about deadenylation of targeted mRNAs (Zhu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "bc86eb11-338f-4c04-8be6-54b27fad9df0",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C95",
+      "claim": "Human MARF1 interacts with the mRNA decapping machinery but not with the CCR4-NOT complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to results obtained with Drosophila MARF1, human MARF1 interacts with the mRNA decapping machinery but not with the CCR4-NOT complex (Nishimura et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "2d22ea7a-4304-4d84-8834-9e214ef75ff3",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C96",
+      "claim": "Tethering an N-terminal fragment of human MARF1 that contains the NYN domain and RRMs but lacks all eight LOTUS domains efficiently represses a reporter mRNA when artificially tethered to it.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, tethering an N-terminal fragment of human MARF1 that contains the NYN domain and RRMs but lacks all eight LOTUS domains efficiently represses a reporter mRNA when artificially tethered to it (RL-5BoxB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "b4fe9cf5-0137-452f-9b8d-34fac299a8ab",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C97",
+      "claim": "Certain core LOTUS domains (3 through 5) are critical for MARF1-mediated repression, whereas other adjacent LOTUS domains are not.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mammalian MARF1 proteins contain eight LOTUS domains, our deletion analyses suggest that certain core LOTUS domains (3 through 5) are critical for MARF1-mediated repression, whereas other adjacent LOTUS domains are not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the deletion mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "7e70eaeb-fc39-40ce-b764-3db45324d6ef",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C98",
+      "claim": "LOTUS domains 3 and 5 are not only highly conserved across MARF1 orthologs but also share an extremely high degree of homology to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while all MARF1 proteins contain between 6 and 8 LOTUS domains, LOTUS domains 3 and 5 are not only highly conserved across MARF1 orthologs but also share an extremely high degree of homology to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "58dfd0bb-0d52-4083-a610-4ad9fdf22cc0",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C99",
+      "claim": "The central LOTUS domains are critical for the initial steps of target mRNA recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "While our data does not exclude the possibility that adjacent LOTUS domains also bind to target mRNAs, they do suggest that the central LOTUS domains are critical for the initial steps of target mRNA recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "9745690b-ad15-43ec-8372-da536e6ee4d5",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C100",
+      "claim": "All MARF1 proteins that contain a NYN domain also contain two RRMs.",
+      "claim_type": "EXPLICIT",
+      "source": "All MARF1 proteins that contain a NYN domain (with Drosophila MARF1 being the exception) also contain two RRMs, the functions of which are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "696eb572-ada8-4499-861f-fd44787d4448",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C101",
+      "claim": "Human MARF1 requires RRM1 to efficiently repress target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that human MARF1 requires RRM1 to efficiently repress target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "53349634-a66c-45e9-b398-f6bad65541d4",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C102",
+      "claim": "RRM1 does not play a role in initial target mRNA recognition but rather in subsequent NYN-mediated cleavage of a targeted mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "All in all, these data suggest that RRM1 does not play a role in initial target mRNA recognition but rather in subsequent NYN-mediated cleavage of a targeted mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "74de7e7e-dc41-44ae-baa0-c4d53b0a68c4",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C103",
+      "claim": "RRM1 may function to properly position the NYN domain on a target mRNA in order to promote efficient cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that RRM1 may function to properly position the NYN domain on a target mRNA in order to promote efficient cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "cd10dbe2-6919-481f-8587-a7ec596b6695",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C104",
+      "claim": "All MARF1 proteins that contain a NYN domain also maintain RRM1, whereas the Drosophila MARF1 protein that lacks a NYN domain does not contain an analogous domain to RRM1.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that all MARF1 proteins that contain a NYN domain also maintain RRM1, whereas the Drosophila MARF1 protein that lacks a NYN domain does not contain an analogous domain to RRM1, lends credence to this model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as supporting evidence for the speculation about RRM1 function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "6b119cd0-0a48-4d74-9eb0-64b8b797ab11",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C105",
+      "claim": "EDC4 associates with the miRISC and enhances microRNA-mediated mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "EDC4 also associates with the miRISC and enhances microRNA-mediated mRNA decay (Brodersen et al., 2008; Eulalio et al., 2007; Nishihara et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "3eac1bbe-e83e-4cb6-b4d0-87339d95bfdd",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C106",
+      "claim": "Instead of stimulating the decay of MARF1-targeted mRNAs, EDC4 has the opposite effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the miRISC, MARF1 physically interacts with mRNA decapping factors, including EDC4 (Bloch et al., 2014; Nishimura et al., 2018). Importantly, we show here that instead of stimulating the decay of MARF1-targeted mRNAs, EDC4 has the opposite effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "3143116f-d41e-4dae-855a-da7b2cf8c980",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C107",
+      "claim": "EDC4 only impairs MARF1 repression when MARF1 is recruited to a target mRNA via its LOTUS domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data indicate that EDC4 only impairs MARF1 repression only when it is recruited to a target mRNA via its LOTUS domains, whereas EDC4 association with MARF1 has no impact on MARF1 repression when it is artificially tethered to a reporter mRNA in a LOTUS-independent manner (i.e. \u03bbN-BoxB tethering).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "8ba02cc2-0657-40b0-a5e9-af0a97cf8ebd",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C108",
+      "claim": "EDC4 binding to the MARF1 C-terminal motif precludes the LOTUS domains from binding to endogenous MARF1 target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these data, we hypothesize that EDC4 binding to the MARF1 C-terminal motif precludes the LOTUS domains from binding to endogenous MARF1 target mRNAs (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion as a hypothesis and shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "9c80d983-295f-40fa-8f1f-c68f641c071b",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C109",
+      "claim": "This is the first example of the mRNA decapping machinery stabilizing mRNAs by inhibiting an RNA binding protein from interacting with its targets.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first example of the mRNA decapping machinery stabilizing mRNAs (albeit indirectly) by inhibiting an RNA binding protein from interacting with its targets, rather than promoting their turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a claim about the novelty of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "dded1ce7-8855-478e-adb6-0ef11a6a0e02",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C110",
+      "claim": "Metazoan cells contain a number of mRNA-targeting endonucleases including SMG6 and Regnase.",
+      "claim_type": "EXPLICIT",
+      "source": "While metazoan cells contain a number of mRNA-targeting endonucleases including SMG6 and Regnase, MARF1 is unique in that it physically interacts with mRNA decapping factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "c788379f-0c28-44f9-94a7-35b7dd24c14d",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C111",
+      "claim": "MARF1 is unique in that it physically interacts with mRNA decapping factors.",
+      "claim_type": "EXPLICIT",
+      "source": "While metazoan cells contain a number of mRNA-targeting endonucleases including SMG6 and Regnase, MARF1 is unique in that it physically interacts with mRNA decapping factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "8351245e-b608-4d46-a758-d54376095501",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C112",
+      "claim": "SMG6 does not require decapping proteins to promote nonsense-mediated mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, SMG6 does not require decapping proteins to promote nonsense-mediated mRNA decay (Boehm et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "5d72ca86-f382-46cd-8b00-c6698f57df06",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C113",
+      "claim": "This form of regulation may serve to prevent MARF1 protein from binding to mRNAs when MARF1 is expressed at low levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this form of regulation may serve to prevent MARF1 protein from binding to mRNAs when MARF1 is expressed at low levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "1cc48766-55ee-4f17-83b0-822ebb2c8128",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C114",
+      "claim": "MARF1 can bind to target mRNAs in a LOTUS domain-dependent manner only when MARF1 gene expression is dramatically upregulated, as is the case during certain stages of oogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Only when MARF1 gene expression is dramatically upregulated, as is the case during certain stages of oogenesis (Su et al., 2012a; Su et al., 2012b) and bind to target mRNAs in a LOTUS domain-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0408b58c-8427-4364-95f8-4b0f14ad07b0",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C115",
+      "claim": "EDC4 is a core component of P-bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "EDC4 is a core component of P-bodies, membraneless granules that contain proteins involved in mRNA metabolism (Standart and Weil, 2018; Yu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0b45fd2d-2a2f-4a3d-a00d-851bc8b18359",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C116",
+      "claim": "mRNAs trapped in P-bodies exist in a translationally-repressed state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, instead of promoting mRNA decay, mRNAs trapped in P-bodies exist in a translationally-repressed state (Hubstenberger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "6b7a3344-e9b4-484e-b8d6-046a4bb28eb2",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C117",
+      "claim": "The MARF1 endonuclease localizes to P-bodies via its interaction with EDC4.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that the MARF1 endonuclease localizes to P-bodies via its interaction with EDC4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "4b96d6d0-39a4-440d-9ebe-287875605837",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C118",
+      "claim": "MARF1 is 'trapped' in P-bodies and unable to interface with endogenous target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it also suggests that MARF1 is 'trapped' in P-bodies and unable to interface with endogenous target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "4ad59d23-84bf-473d-8489-6c8de2e6f356",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "claim_id": "C119",
+      "claim": "P-bodies may regulate mRNA metabolism by impounding specific effectors of mRNA decay such that they are unable to efficiently bind target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that P-bodies may also regulate mRNA metabolism by impounding specific effectors of mRNA decay (e.g. MARF1) such that they are unable to efficiently bind target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "46ebdf4f-50fb-4874-acfc-4467f502a22f",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "iCLIP analysis identified 108 high-confidence MARF1-bound mRNAs, with the vast majority of peaks mapping to 3'UTRs. 34 of these targets were upregulated in Marf1 knockout or catalytically inactive mouse oocytes, with 29 upregulated in both contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 and C87 are well-supported by the iCLIP data shown in Figure 1B-D and comparison with published oocyte transcriptome datasets. The methodology is appropriate and the overlap between iCLIP targets and upregulated mRNAs in knockout oocytes provides strong validation of direct MARF1 targets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "51ad8134-4336-45a4-96b7-ba2ef2ff3c39",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Full-length MARF1 efficiently represses luciferase reporters containing MARF1 target 3'UTRs in a NYN endonuclease-dependent manner, reducing both reporter activity and mRNA stability. MARF1 also reduces steady-state levels of endogenous target mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 are supported by multiple complementary assays shown in Figure 2, including luciferase reporter assays, RT-qPCR of mRNA levels, and mRNA stability measurements. The NYN-dependence is demonstrated by loss of activity in \u0394NYN mutants. Controls with non-target IL-6 demonstrate specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "dfc79d15-4a63-40f9-90aa-16682829b3ab",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "No short sequence motifs were identified in MARF1 iCLIP peaks, suggesting MARF1 may recognize structural motifs rather than specific nucleotide sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40, C41, and C88 report negative results from motif analysis and propose an alternative hypothesis. While the absence of sequence motifs is noted, the inference that MARF1 recognizes structural motifs is speculative and not directly tested. Additional structural analysis of target RNAs would be needed to support this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MARF1 utilizes its central LOTUS domains (3-5) to bind target mRNAs. Deletion of LOTUS domains 3, 4, or 5 abolishes repression of reporters with endogenous 3'UTRs but not artificially tethered reporters, indicating these domains are required for target recognition but not nuclease activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C51, C97, and C99 are well-supported by systematic deletion analysis shown in Figure 3. The differential effects on endogenous versus tethered reporters provide strong evidence that central LOTUS domains mediate target recognition. Multiple target 3'UTRs were tested, demonstrating generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "e0305713-4b86-4009-9a9e-3abb82c35b53",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LOTUS domains 3 and 5 are highly conserved across MARF1 orthologs and share high sequence identity with each other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C45, and C98 are supported by sequence alignment data shown in Figure 3\u2014figure supplement 1. The conservation analysis provides evolutionary support for the functional importance of these domains identified experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "18444f66-0073-4ef3-b052-fdc378d3f8f7",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RRM1 is required for MARF1-mediated repression of target mRNAs irrespective of recruitment mode. Deletion or mutation of RRM1 abolishes repression of both endogenous and artificially tethered reporters, indicating RRM1 is required for NYN-mediated cleavage rather than target recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C60, C101, and C102 are supported by deletion and point mutation analysis shown in Figure 4. The key observation that RRM1 is required even for tethered reporters (unlike LOTUS domains) provides strong evidence for a role in catalysis rather than target binding. Multiple target 3'UTRs were tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "07068808-a86a-4148-81bc-fc3eb55aea32",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RRM1 may function to properly position the NYN domain on target mRNAs to promote efficient cleavage, supported by the observation that all MARF1 proteins with NYN domains also contain RRM1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103 and C104 present a mechanistic hypothesis about RRM1 function based on experimental observations and evolutionary conservation. While the hypothesis is reasonable, it is explicitly stated as speculation and lacks direct structural or biochemical evidence for the proposed positioning mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "38173b4a-403a-478a-89cc-9834584d5bd1",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EDC4 antagonizes MARF1-mediated repression of target mRNAs in a dose-dependent manner. EDC4 depletion or overexpression reciprocally affects MARF1 activity, but only when MARF1 is recruited via LOTUS domains, not when artificially tethered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C74, C106, and C107 are supported by multiple complementary experiments in Figure 5, including titration experiments, siRNA knockdowns, and overexpression studies. The specificity for LOTUS-dependent recruitment (C72, C107) is a key observation that constrains the mechanism. Both luciferase and endogenous mRNA measurements support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The EDC4-MARF1 interaction localizes MARF1 to P-bodies and prevents MARF1 from efficiently repressing target mRNAs. MARF1 lacking its C-terminal EDC4-binding motif shows diffuse cytoplasmic localization, and expressing the C-terminal motif in trans rescues MARF1 activity by competing for EDC4 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C82 and C117 are supported by immunofluorescence microscopy (Figure 6B) and functional competition experiments (Figure 6C). The competition experiment provides strong evidence that the EDC4-MARF1 interaction is responsible for inhibition. The localization data directly demonstrate P-body sequestration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "7ee4bd9f-cbea-4a56-9d96-bc998141f066",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "EDC4 impairs MARF1 repression by preventing MARF1 from binding to targeted 3'UTRs. RNA immunoprecipitation shows that EDC4 overexpression dramatically reduces MARF1 co-precipitation with target mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C84, and C108 are supported by RNA immunoprecipitation experiments shown in Figure 6D. The ~4.5-fold reduction in target mRNA binding upon EDC4 overexpression provides direct mechanistic evidence that EDC4 prevents MARF1-RNA interactions. This is consistent with all prior observations about LOTUS domain-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "0e25c6f3-1f8f-4484-a173-46d2b596f3bc",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MARF1-targeted mRNAs may be underrepresented in the CLIP dataset due to the presence of endogenous EDC4 during the experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is explicitly stated as speculation in the discussion. While the hypothesis is consistent with the finding that EDC4 inhibits MARF1-RNA binding, the iCLIP experiments were not designed to test this possibility (e.g., by depleting EDC4 prior to CLIP). This remains an untested hypothesis that could guide future experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "09c9293c-ba0f-4f31-a1f7-99fa4dad6337",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The LOTUS domain is a conserved wHTH fold that can bind double-stranded RNA, supporting a model whereby MARF1 contacts structural elements within target 3'UTRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 are supported by citations to structural and biochemical studies of LOTUS domains. While the specific structural recognition by MARF1 LOTUS domains is not directly demonstrated in this study, the model is well-supported by prior literature and consistent with the lack of sequence motifs observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "11d632e8-8a18-42bf-a70a-96264f5ca489",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "EDC4-mediated regulation may prevent MARF1 from binding mRNAs when expressed at low levels, with MARF1 only able to bind targets when dramatically upregulated (e.g., during oogenesis). P-bodies may regulate mRNA metabolism by sequestering decay effectors like MARF1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C113, C114, and C119 are explicitly stated as speculation in the discussion. While consistent with the dose-dependent effects observed and MARF1's high expression in oocytes, these physiological regulatory models are not directly tested. The P-body sequestration model is supported by localization data but its broader regulatory significance remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "63591568-f4c8-4541-89a4-ea85cd463065",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "This is the first example of mRNA decapping machinery stabilizing mRNAs by inhibiting an RNA binding protein from interacting with targets. MARF1 is unique among metazoan endonucleases in physically interacting with decapping factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109 and C111 make novelty claims about the findings. The uniqueness of MARF1's interaction with decapping factors is supported by comparison with other endonucleases (C110, C112). The non-canonical stabilizing role of EDC4 is well-demonstrated by the experimental data. These claims appropriately characterize the significance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "323cb08b-1074-48cc-b6da-e84b3ac69373",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about mRNA decay pathways, MARF1 and EDC4 properties, and prior characterization of these proteins in various systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8, C10-C27, C56, C61-C63, C93-C95, C100, C105, C110, C112, C115-C116 represent established knowledge from prior literature, appropriately cited. These provide necessary context for the current study and are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "5ac45270-db19-44f9-81e5-644aaf9df350",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Summary claims about the overall findings: MARF1 is an endoribonuclease that promotes oogenesis and contains multiple RNA binding domains; different domains are required for target binding versus decay; EDC4 binding localizes MARF1 to P-bodies and impairs its activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C85-C86 are high-level summary statements of the study's findings. These are well-supported by the collective experimental evidence from multiple result groups above. They accurately synthesize the major conclusions of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "e1f7cee0-0fcf-413a-bbe7-e4805792f31f",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Abstract summary claims: MARF1 predominantly binds 3'UTRs via LOTUS domains to promote decay; RRM1 enhances endonuclease activity; EDC4 impairs MARF1 by preventing LOTUS domain binding; EDC4 acts as both enhancer and repressor of mRNA decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C9 are abstract-level summaries of the major findings. All are well-supported by the detailed experimental results described in other result groups. These accurately capture the key discoveries of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "76d60b17-56a4-4da1-ad7a-00dff224663f",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "An N-terminal MARF1 fragment containing NYN and RRMs but lacking LOTUS domains efficiently represses tethered reporter mRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is supported by data in Figure 3B showing that the N-terminal fragment represses RL-5BoxB. This observation is important for demonstrating that LOTUS domains are specifically required for target recognition, not for nuclease activity per se.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    },
+    {
+      "id": "b2a57c0c-d1c4-482f-bf97-135d7d8cb18a",
+      "content_id": "46fd4907-f54c-46b4-8b3c-69d5c08d8a15",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "MARF1 is 'trapped' in P-bodies and unable to interface with endogenous target mRNAs when bound to EDC4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C118 is supported by the combination of localization data (Figure 6B) showing P-body sequestration and RNA-IP data (Figure 6D) showing reduced target binding. The 'trapping' model is a reasonable inference from these observations, though the precise mechanism of how P-body localization prevents RNA binding could be further explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:41:18.497934Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ca07d43e-d569-4243-bfda-2680bab8393a",
+      "result_id": "46ebdf4f-50fb-4874-acfc-4467f502a22f"
+    },
+    {
+      "claim_id": "674dcbe7-0b9e-40db-a019-280d07202bd5",
+      "result_id": "46ebdf4f-50fb-4874-acfc-4467f502a22f"
+    },
+    {
+      "claim_id": "22fa713d-cf9d-4487-a0b9-dac3e2e611ce",
+      "result_id": "46ebdf4f-50fb-4874-acfc-4467f502a22f"
+    },
+    {
+      "claim_id": "c51fd012-496f-4102-8683-97b3b428f07a",
+      "result_id": "46ebdf4f-50fb-4874-acfc-4467f502a22f"
+    },
+    {
+      "claim_id": "0f7c71d4-cad6-4f5c-8069-8a957e017acf",
+      "result_id": "46ebdf4f-50fb-4874-acfc-4467f502a22f"
+    },
+    {
+      "claim_id": "80e2277d-efce-455a-ad53-f255b371e884",
+      "result_id": "46ebdf4f-50fb-4874-acfc-4467f502a22f"
+    },
+    {
+      "claim_id": "1c77734b-2692-4890-8cf3-ad24e04d482b",
+      "result_id": "51ad8134-4336-45a4-96b7-ba2ef2ff3c39"
+    },
+    {
+      "claim_id": "375c0bed-4cd3-41d4-b88f-ec6bd5578b00",
+      "result_id": "51ad8134-4336-45a4-96b7-ba2ef2ff3c39"
+    },
+    {
+      "claim_id": "3e3192f1-902e-4b94-b51e-fe0ede28ef5e",
+      "result_id": "51ad8134-4336-45a4-96b7-ba2ef2ff3c39"
+    },
+    {
+      "claim_id": "3b5564d0-ec24-45d8-9bf7-b03ef899ce24",
+      "result_id": "51ad8134-4336-45a4-96b7-ba2ef2ff3c39"
+    },
+    {
+      "claim_id": "99391981-08fd-4131-8ff9-443b6522c594",
+      "result_id": "51ad8134-4336-45a4-96b7-ba2ef2ff3c39"
+    },
+    {
+      "claim_id": "4ff9364b-a04b-46b8-8c7f-ffcb155ba6f7",
+      "result_id": "51ad8134-4336-45a4-96b7-ba2ef2ff3c39"
+    },
+    {
+      "claim_id": "a2667585-e9e6-483f-99a6-24003e2ee0c2",
+      "result_id": "51ad8134-4336-45a4-96b7-ba2ef2ff3c39"
+    },
+    {
+      "claim_id": "0fd00bf7-df66-4b9d-9bec-3009662b21cb",
+      "result_id": "dfc79d15-4a63-40f9-90aa-16682829b3ab"
+    },
+    {
+      "claim_id": "73648329-261c-4408-85db-eea37cd41d0c",
+      "result_id": "dfc79d15-4a63-40f9-90aa-16682829b3ab"
+    },
+    {
+      "claim_id": "9bab7328-f530-4634-8c3e-254929f9a303",
+      "result_id": "dfc79d15-4a63-40f9-90aa-16682829b3ab"
+    },
+    {
+      "claim_id": "dfc56961-f3f5-4777-9da1-14c8395e93a5",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "4e284e2c-8172-489e-a4a8-a32d9adff4b1",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "fba5c770-bed7-4b36-b1a6-87fb730c5846",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "670786e8-00f0-464e-ab16-9a0f21a7eba9",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "7e05fdd6-e180-4289-ae9c-00aacc75d007",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "5a00bc21-7d9e-40bb-b545-9722da90d2dc",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "bf896e33-90b1-415f-b358-d08c2e4244ac",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "ff4d68c3-4b58-47ae-a70b-0687e46e8bd3",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "b4fe9cf5-0137-452f-9b8d-34fac299a8ab",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "58dfd0bb-0d52-4083-a610-4ad9fdf22cc0",
+      "result_id": "5a723c5c-b421-4951-92ef-e825d0b6ab0d"
+    },
+    {
+      "claim_id": "4572dd2e-7520-418b-827a-5846a7fedcdc",
+      "result_id": "e0305713-4b86-4009-9a9e-3abb82c35b53"
+    },
+    {
+      "claim_id": "67b6b7a4-2d9b-4457-929e-81112189afb3",
+      "result_id": "e0305713-4b86-4009-9a9e-3abb82c35b53"
+    },
+    {
+      "claim_id": "7e70eaeb-fc39-40ce-b764-3db45324d6ef",
+      "result_id": "e0305713-4b86-4009-9a9e-3abb82c35b53"
+    },
+    {
+      "claim_id": "5a8961f1-5e8c-4f3c-a013-cf12ab41704e",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "3fc61fc6-2ca9-48cf-8644-8c311c39e93f",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "449298e2-7dab-4a6a-af11-46102df91e01",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "01566616-c165-483f-8537-85bd1bdbe5a7",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "207ff7f1-8dbf-48a0-93da-60b90c3bbf88",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "5e9ea46e-3ab2-43aa-bda8-91f68a89b061",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "17f11cb3-723c-40fb-aeb1-3c11c8ad6b13",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "ba0b42c1-fbc2-43f6-b9e8-4d2088fe65b4",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "696eb572-ada8-4499-861f-fd44787d4448",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "53349634-a66c-45e9-b398-f6bad65541d4",
+      "result_id": "18444f66-0073-4ef3-b052-fdc378d3f8f7"
+    },
+    {
+      "claim_id": "74de7e7e-dc41-44ae-baa0-c4d53b0a68c4",
+      "result_id": "07068808-a86a-4148-81bc-fc3eb55aea32"
+    },
+    {
+      "claim_id": "cd10dbe2-6919-481f-8587-a7ec596b6695",
+      "result_id": "07068808-a86a-4148-81bc-fc3eb55aea32"
+    },
+    {
+      "claim_id": "857af734-87d5-44f0-a102-e8bd60f5c1e2",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "7646fcc7-502a-415c-b09d-e5f94ed3ed78",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "84997a23-1002-445a-9ee8-bc689c670535",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "33d58f9b-ca6b-4daf-a94a-b97114aa1ed9",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "4e4dc5cf-cfab-44bd-9998-ade8c137afcd",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "fc21afe0-28db-4c3e-b3b8-834a970a6e5b",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "7b7d7141-9e67-4d7e-a768-1da26b96d505",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "5cd871f9-c92c-46f1-946e-2a5b0370adf1",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "922e3557-cf3a-4985-ab9a-2378e6d84299",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "7748615e-c007-4491-be2b-486b966f142a",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "6904ec2f-7e56-4c13-90c1-eaebb32978b4",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "3eac1bbe-e83e-4cb6-b4d0-87339d95bfdd",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "3143116f-d41e-4dae-855a-da7b2cf8c980",
+      "result_id": "38173b4a-403a-478a-89cc-9834584d5bd1"
+    },
+    {
+      "claim_id": "629f35b7-952e-415b-8aaf-a24299e87d1c",
+      "result_id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf"
+    },
+    {
+      "claim_id": "a558402b-523e-405e-97b4-fe567a46295a",
+      "result_id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf"
+    },
+    {
+      "claim_id": "0b25c538-8e82-4b1f-addd-9bb26bfa97ce",
+      "result_id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf"
+    },
+    {
+      "claim_id": "143bc8bf-358f-4087-bd8e-30269bc6b26c",
+      "result_id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf"
+    },
+    {
+      "claim_id": "68068f44-abee-4d21-86fa-d088faa8a685",
+      "result_id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf"
+    },
+    {
+      "claim_id": "1de82ff9-5f83-42dd-9bda-4a9c1f16c441",
+      "result_id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf"
+    },
+    {
+      "claim_id": "0882565c-1347-4fff-9af1-5a3689afc238",
+      "result_id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf"
+    },
+    {
+      "claim_id": "2bf9e91e-78b9-4bcc-ad04-484e9004ab38",
+      "result_id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf"
+    },
+    {
+      "claim_id": "6b7a3344-e9b4-484e-b8d6-046a4bb28eb2",
+      "result_id": "21db6dde-6590-451b-b4c2-7313d9d1e0cf"
+    },
+    {
+      "claim_id": "9588558b-22c7-4288-8e16-174b255591f3",
+      "result_id": "7ee4bd9f-cbea-4a56-9d96-bc998141f066"
+    },
+    {
+      "claim_id": "b0dc87cc-f082-4134-97e2-7018b3df4022",
+      "result_id": "7ee4bd9f-cbea-4a56-9d96-bc998141f066"
+    },
+    {
+      "claim_id": "8ba02cc2-0657-40b0-a5e9-af0a97cf8ebd",
+      "result_id": "7ee4bd9f-cbea-4a56-9d96-bc998141f066"
+    },
+    {
+      "claim_id": "e25f90a7-02b0-4b38-8471-6eed8c0005d1",
+      "result_id": "0e25c6f3-1f8f-4484-a173-46d2b596f3bc"
+    },
+    {
+      "claim_id": "38776070-3eaf-4601-955a-2f0101ae735b",
+      "result_id": "09c9293c-ba0f-4f31-a1f7-99fa4dad6337"
+    },
+    {
+      "claim_id": "7d6f277d-ec10-4f6d-b9ca-0694203e04ef",
+      "result_id": "09c9293c-ba0f-4f31-a1f7-99fa4dad6337"
+    },
+    {
+      "claim_id": "47fbd5fb-a480-4927-b044-5d272a4b9bfa",
+      "result_id": "09c9293c-ba0f-4f31-a1f7-99fa4dad6337"
+    },
+    {
+      "claim_id": "5d72ca86-f382-46cd-8b00-c6698f57df06",
+      "result_id": "11d632e8-8a18-42bf-a70a-96264f5ca489"
+    },
+    {
+      "claim_id": "1cc48766-55ee-4f17-83b0-822ebb2c8128",
+      "result_id": "11d632e8-8a18-42bf-a70a-96264f5ca489"
+    },
+    {
+      "claim_id": "4ad59d23-84bf-473d-8489-6c8de2e6f356",
+      "result_id": "11d632e8-8a18-42bf-a70a-96264f5ca489"
+    },
+    {
+      "claim_id": "9c80d983-295f-40fa-8f1f-c68f641c071b",
+      "result_id": "63591568-f4c8-4541-89a4-ea85cd463065"
+    },
+    {
+      "claim_id": "c788379f-0c28-44f9-94a7-35b7dd24c14d",
+      "result_id": "63591568-f4c8-4541-89a4-ea85cd463065"
+    },
+    {
+      "claim_id": "c708945c-b981-4d75-855e-8a8bedd3926a",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "1a360cf6-8ebf-4108-b04b-a275879a34c1",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "46e42852-7127-4ff5-851b-1c4949f12c6f",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "d1454d1b-59d6-4633-81c5-13cbfe209104",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "3115cc81-71d7-4427-a4db-bb3256f08041",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "829b80ec-f67e-4acc-b767-268573b595b8",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "ff265ef9-2911-4fc2-8381-98443c245e7c",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "13c3440d-a336-4ab1-a636-f1924e720e1c",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "88ff1b73-840c-4cfb-83f9-fa693bbb5b9f",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "ef757e36-e3e6-4e4e-bb56-1396e52655ba",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "48840718-2f33-414d-98e3-872f37dcacc3",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "25571a1e-67ff-424d-b223-46784721a9ab",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "4889bc6e-964f-4cbe-93c6-e158d0858025",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "1be4c722-a9fc-4213-8ae3-d3ecb1093f14",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "0769730f-37a5-4be5-b224-83a9c43a41d4",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "6b807053-9001-4e01-ba6a-b4c8610a7e7b",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "04cf4ce1-cdf4-4302-8a42-640201bdd4de",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "87807b52-0348-415c-9343-0922942d8f5d",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "0541b84a-95d4-43a7-9958-b3f373b11f68",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "818eaea9-742b-46b0-8376-c3c82dc59a9c",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "6085ec14-0c5c-46dc-b542-f7264446c9eb",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "37632a76-4181-4f9a-ad2b-057e82cdbc0a",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "83fb33d3-e414-48bc-8d05-0bf64e9cef24",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "7ae408ea-c7c6-4b4e-ac2c-b80c282cdcca",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "ead7d32f-8f07-4255-acf7-6896775aadc1",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "0125a465-be31-4b00-a3fb-42ad31320833",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "8150645c-fe44-4038-86ce-0bbf4bb6887b",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "bc86eb11-338f-4c04-8be6-54b27fad9df0",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "9745690b-ad15-43ec-8372-da536e6ee4d5",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "6b119cd0-0a48-4d74-9eb0-64b8b797ab11",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "dded1ce7-8855-478e-adb6-0ef11a6a0e02",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "8351245e-b608-4d46-a758-d54376095501",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "0408b58c-8427-4364-95f8-4b0f14ad07b0",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "0b45fd2d-2a2f-4a3d-a00d-851bc8b18359",
+      "result_id": "323cb08b-1074-48cc-b6da-e84b3ac69373"
+    },
+    {
+      "claim_id": "13aab008-d04d-4a8b-9150-4c2ec8b9b604",
+      "result_id": "5ac45270-db19-44f9-81e5-644aaf9df350"
+    },
+    {
+      "claim_id": "624cd47e-27cf-426e-896a-4c8593c542cc",
+      "result_id": "5ac45270-db19-44f9-81e5-644aaf9df350"
+    },
+    {
+      "claim_id": "6bce110c-e8e5-4846-a644-cda946c4c4f9",
+      "result_id": "5ac45270-db19-44f9-81e5-644aaf9df350"
+    },
+    {
+      "claim_id": "b7361b79-28c7-408f-91e4-ed4546abe85a",
+      "result_id": "5ac45270-db19-44f9-81e5-644aaf9df350"
+    },
+    {
+      "claim_id": "a2fbae0c-3ea4-4d5f-a297-423450c9a70f",
+      "result_id": "e1f7cee0-0fcf-413a-bbe7-e4805792f31f"
+    },
+    {
+      "claim_id": "40b3f793-f24c-43cd-98d9-7593a9218050",
+      "result_id": "e1f7cee0-0fcf-413a-bbe7-e4805792f31f"
+    },
+    {
+      "claim_id": "30f79ae2-f17f-4d71-b38f-9ac443b76f08",
+      "result_id": "e1f7cee0-0fcf-413a-bbe7-e4805792f31f"
+    },
+    {
+      "claim_id": "0953ffaf-5592-4150-8783-cef98be1d3d4",
+      "result_id": "e1f7cee0-0fcf-413a-bbe7-e4805792f31f"
+    },
+    {
+      "claim_id": "2d22ea7a-4304-4d84-8834-9e214ef75ff3",
+      "result_id": "76d60b17-56a4-4da1-ad7a-00dff224663f"
+    },
+    {
+      "claim_id": "4b96d6d0-39a4-440d-9ebe-287875605837",
+      "result_id": "b2a57c0c-d1c4-482f-bf97-135d7d8cb18a"
+    }
+  ],
+  "comparisons": []
+}

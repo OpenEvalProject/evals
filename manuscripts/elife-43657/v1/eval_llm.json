@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study constructed 162 PRS using SNPs with p<5\u00d710\u207b\u2075 and r\u00b2<0.001 from 1000 Genomes reference data, and analyzed associations with 551 heritable UK Biobank traits in 334,398 individuals of European ancestry. PRS were normalized and analyses adjusted for age, sex, 10 principal components, and genotyping chip, with 11 PRS left unweighted due to sample overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C24, C80-C82 collectively describe the study design, sample selection, PRS construction methodology, and analytical approach. The methods are clearly documented with appropriate quality control measures (relatedness exclusion, ancestry restriction, covariate adjustment), though the p<5\u00d710\u207b\u2075 threshold is more lenient than conventional GWAS standards and sample overlap for 11 traits introduces potential overfitting bias that is acknowledged but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C76",
+      "C77"
+    ],
+    "result": "Simulation studies (1000 iterations, 10,000 samples, 50 SNPs) demonstrated that PRS approaches provide higher statistical power than IVW methods but suffer from substantive false positive rates due to horizontal pleiotropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C76-C77 describe simulation parameters and results shown in Figure 1. The simulation design is adequately specified and the trade-off between power and false positive rate is clearly demonstrated, providing empirical justification for the need for extensive sensitivity analyses when using PRS for causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The CHD PRS showed strong predictive ability (OR=3.64 comparing extreme deciles), comparable to prior work, and combining it with established risk factor PRS (LDL, MI) improved prediction, though hypothesis-free integration of all associated scores hindered performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 report validation results for CHD prediction with appropriate comparison to published work (Khera et al., 2018) and acknowledge differences in AUC. Figure 2 supports the finding that targeted combination of mechanistically-related PRS improves prediction while indiscriminate combination does not, demonstrating both the utility and limitations of multi-PRS approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "PRS demonstrated strong predictive associations across diverse phenotypes, including educational attainment (OR=2.43 for university degree with years of schooling PRS), medication use (OR=3.48 for atorvastatin with LDL PRS), and disease outcomes (OR=5.36 for ulcerative colitis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 report specific effect sizes with appropriate precision. These examples demonstrate the atlas's coverage across diverse phenotypic domains and the predictive utility of PRS, though they represent selected positive findings and may not reflect the full distribution of effect sizes across all 89,262 tests performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Schizophrenia PRS showed strong associations with psychiatric/neurological traits including seeing a psychiatrist (OR=1.09), neuroticism (\u03b2=0.066), being tense/highly strung (OR=1.07), and self-reported depression (OR=1.07). MR analyses provided evidence of causal effects from schizophrenia liability to these traits (except depression where only IVW showed significance), with no evidence of directional pleiotropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 report associations with appropriate statistical measures and describe comprehensive MR follow-up analyses. The use of multiple MR methods, pleiotropy assessment via MR-Egger, and directionality filtering provide robust evidence for causal relationships, though the weaker evidence for depression (IVW only) appropriately tempers conclusions for that specific trait.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Schizophrenia genetic liability was associated with reduced cognitive function (fluid intelligence \u03b2=-0.083, memory task errors \u03b2=0.020). MR analyses with multiple methods supported a causal effect of schizophrenia liability on cognitive outcomes, with no strong evidence for reverse causation, leading to the conclusion that schizophrenia genetic liability may lead to reduced cognitive function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 present associations supported by bi-directional MR analyses, sensitivity analyses, and leave-one-out analyses (Appendix 1 Figures 1-2). The convergence of evidence from multiple methods and the asymmetry in bi-directional analyses (stronger evidence for schizophrenia\u2192cognition than cognition\u2192schizophrenia) provides robust support for the causal interpretation, consistent with established literature (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Schizophrenia PRS was associated with unsuccessful smoking cessation attempts (\u03b2=0.028) and reduced odds of being a past smoker (OR=0.97). MR analyses provided strong evidence that schizophrenia liability influences smoking cessation outcomes, with weak evidence for reverse causation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C46 report associations and MR results, but the manuscript acknowledges that the smoking cessation outcome could only be instrumented with a single variant, limiting the robustness of causal inference. While leave-one-out analyses were performed (Appendix 1 Figures 3-4) and a recent study (Wootton, 2018) found bi-directional effects, the weak instrument limitation and inability to fully replicate bi-directional findings introduces uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Strong inverse associations were observed between schizophrenia PRS and anthropometric traits, but MR analyses evaluating the schizophrenia-BMI relationship provided weak evidence of causal effects in both directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 appropriately distinguish between observed associations and causal inference. The finding of strong PRS associations but weak MR evidence illustrates the importance of follow-up causal analyses and demonstrates that not all PRS associations reflect causal relationships, supporting the study's methodological framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "For gout prediction, the urate PRS (OR=1.75, AUC=0.65) substantially outperformed the gout PRS itself (OR=1.16, AUC=0.54), with triglycerides (OR=1.14) and BMI (OR=1.09) also showing positive associations. Similarly, height PRS was the strongest predictor of birth weight in the atlas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate that the strongest PRS predictor for an outcome may not be the trait-matched PRS, supported by Figure 4 showing ROC curves. This finding is plausibly explained by differences in GWAS sample sizes (gout N=2,115 vs urate N=110,347) and trait measurement (binary vs continuous), highlighting important considerations for PRS construction and interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Mediation MR analyses revealed a causal pathway where BMI influences triglycerides, which affects urate levels, which in turn influences gout risk. Using IVW effect estimates, 77% of BMI's total effect on gout was estimated to be mediated through this pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C58 describe a mediation analysis with a specific quantitative estimate (77% mediation). While the directional relationships are supported by multiple MR methods and are biologically plausible (C68), the precise 77% estimate relies on strong assumptions about the absence of unmeasured confounding and correct model specification. The calculation method is described but uncertainty intervals for the mediation proportion are not provided, and the estimate may be sensitive to violations of MR assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Multivariable MR analyses showed that BMI and triglyceride effects on gout attenuated when analyzed jointly with urate, and triglyceride effects attenuated when accounting for urate, supporting the mediation pathway identified in the mediation MR framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe multivariable MR results that corroborate the mediation analysis findings (C55-C58). The attenuation patterns are consistent with the proposed causal pathway and provide complementary evidence using a different analytical approach (Figure 5b), strengthening confidence in the overall conclusion about the BMI\u2192TG\u2192urate\u2192gout pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study's findings on schizophrenia-cognition and schizophrenia-smoking associations are contextualized within established literature showing cognitive impairment and high smoking rates in schizophrenia patients. The authors interpret their results as suggesting that inability to quit smoking may explain high smoking rates in schizophrenia patients, and that smoking behavior may explain inverse associations with anthropometric traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 appropriately contextualize findings within prior literature (Mohamed et al., 1999; Sacco et al., 2005) and offer plausible interpretations. However, C63-C64 and C67 involve speculation about clinical applications and mechanistic explanations that extend beyond the direct evidence, which the manuscript appropriately signals through cautious language ('may', 'could be attributed').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The mediation MR findings for the BMI\u2192TG\u2192urate\u2192gout pathway recapitulate known biology about gout etiology. The authors interpret their results as suggesting that genetic drivers of appetite influencing BMI predominantly affect gout risk via increased urate levels, with genetic factors potentially having greater impact than environmental factors like diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 appropriately contextualize findings within established biological knowledge (Matsubara et al., 1989; Li et al., 2017; Major et al., 2018). The interpretation about genetic vs environmental factors is supported by citation to Major et al., 2018, though C69 is explicitly labeled as speculative and C71 represents an inference from the data rather than a direct observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The study acknowledges important limitations: findings may not generalize to non-European populations, and residual population stratification from geographic clustering may remain despite adjustment for 10 principal components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 appropriately acknowledge key limitations of the study design. The restriction to European ancestry (C21) limits generalizability, and the potential for residual stratification despite PC adjustment is a recognized issue in genetic studies (Abdellaoui et al., 2018). These limitations are important for interpreting the atlas and appropriately disclosed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C74",
+      "C75"
+    ],
+    "result": "The study developed a web application (http://mrcieu.mrsoftware.org/PRS_atlas/) to disseminate findings, with the authors concluding that PRS hold promise for identifying high-risk individuals and that the atlas should prove powerful for future causal inference studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C74-C75 describe the resource and its potential utility. The web application is a concrete deliverable (C2), while C74-C75 represent forward-looking statements about the potential impact of PRS and the atlas. These conclusions are reasonable given the demonstrated applications in the manuscript, though they involve speculation about future utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study employed comprehensive MR methodology including multiple methods (IVW, weighted median, weighted mode), sensitivity analyses (MR-Egger for pleiotropy, Cochran's Q for heterogeneity, leave-one-out analyses, MR directionality filtering), bi-directional MR, and advanced techniques (mediation MR, multivariable MR). GWAS selection criteria and instrumental variable selection (p<5\u00d710\u207b\u2078) were specified to minimize bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C83-C89 comprehensively document the MR methodology with appropriate citations. The use of multiple MR methods with different assumptions, extensive sensitivity analyses, and advanced techniques represents rigorous practice in the field. The methods are sufficiently detailed to allow replication, though access to the full UK Biobank data would be required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes background knowledge about GWAS, PRS, and MR methodology, including the evolution of PRS performance, limitations of conventional MR approaches, and the rationale for using more lenient p-value thresholds to capture additional heritability while acknowledging increased risk of horizontal pleiotropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C13, C15-C16 present established knowledge appropriately supported by citations to key papers in the field. The progression from GWAS discoveries (C4-C5) through PRS development and improvement (C6-C9) to MR methodology and its limitations (C10-C13) provides appropriate context. The discussion of horizontal pleiotropy (C15-C16) sets up the study's methodological approach.",
+    "result_type": "MINOR"
+  }
+]

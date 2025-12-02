@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims establish puromycin as a tyrosyl-tRNA mimic that acts as a substrate for peptidyl-transferase, leading to nascent peptide release. Puromycin antibodies and derivatized analogs have enabled its use as a metabolic probe for quantifying active translation in bulk and single-cell assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C14 describe well-established knowledge about puromycin's mechanism and historical use, supported by appropriate citations to foundational literature (Nathans 1964, Fujiwara et al. 1982, Liu et al. 2012, Schmidt et al. 2009). These are accurate descriptions of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work claimed that puromycylation assays with elongation inhibitors (cycloheximide/emetine) could localize translating ribosomes subcellularly. However, these inhibitors bind the E-site far from the peptidyl-transferase center, and earlier studies showed they prevent ribosome splitting but not peptide release. Some studies omit inhibitors, claiming short labeling times prevent diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C15-C21 accurately describe prior literature and its claims, supported by appropriate citations (David et al. 2012, Garreau de Loubresse et al. 2014, Grollman 1968, Colombo et al. 1965). The authors correctly identify the contradiction between claimed mechanism and known inhibitor binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In live C. elegans germlines, OPP labeling was most intense in nuclei/nucleoli rather than cytoplasm (where most ribosomes reside). Nuclear labeling was abolished by anisomycin but unaffected by emetine, indicating OPP labels translational products but does not necessarily identify sites of active translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are supported by experimental data in Figure 2, showing differential effects of anisomycin (competitive inhibitor at peptidyl-transferase center) versus emetine (E-site inhibitor). The observation that emetine doesn't prevent nuclear labeling while anisomycin does is consistent with peptide release and diffusion. Statistical analysis shows significant differences (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In rabbit reticulocyte lysate with truncated luciferase mRNA, puromycin caused rapid release of nascent peptides (detected by luminescence increase), which was completely unaffected by emetine pretreatment but blocked by anisomycin. This demonstrates emetine does not prevent puromycin-induced peptide release in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C37-C42 are supported by experimental data in Figure 3. The luciferase assay is well-validated (Kolb et al. 1994, Frydman et al. 1994). The experiments include appropriate controls (GDPNP to equalize translation time, anisomycin as positive control for blocking puromycin). The results clearly show emetine does not prevent the luminescence increase, indicating peptide release occurs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Using the SunTag reporter system in fixed U-2OS cells, puromycin treatment (5 min) reduced mRNA-nascent chain colocalization from 63% to 3%. Emetine pretreatment did not prevent this dissociation (5% colocalization), while anisomycin maintained colocalization at 50%, demonstrating emetine does not prevent puromycin-induced peptide release in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C43-C51 are supported by single-molecule FISH-IF data in Figure 4. The SunTag system is well-established for visualizing translation. Statistical analysis shows highly significant differences (p<0.0001) between untreated and puromycin-treated conditions. The similar effects of puromycin alone versus emetine+puromycin, contrasted with anisomycin+puromycin, provide strong evidence that emetine does not prevent peptide release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C52",
+      "C53",
+      "C54",
+      "C68",
+      "C69"
+    ],
+    "result": "Diffusion calculations based on GFP's measured diffusion coefficient predict proteins can diffuse ~100 \u03bcm in <1 min even in 1D (most restrictive case). This distance exceeds the scale of neuronal structures (~tens of microns) and HeLa cell diameter (~20 microns) where the method was applied, indicating short treatment times do not ensure spatial confinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C52-C54, C68-C69 present straightforward diffusion calculations using established diffusion coefficients (Di Rienzo et al. 2014) and the equation <x\u00b2>=2nDt. The mathematical approach is sound and the comparison to relevant cellular dimensions (supported by citations) is appropriate. The conclusion that minutes-long treatments allow extensive diffusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C22",
+      "C27",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The main conclusion is that puromycin-based methods do not accurately localize translation at the subcellular level because puromycylated peptides are released and diffuse away from ribosomes even with elongation inhibitors, and accumulate at sites (like nuclei) that do not coincide with active translation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C22, C27, C55-C57 represent the study's main conclusions, which are well-supported by converging evidence from three experimental systems (C. elegans OPP labeling, rabbit reticulocyte lysate, SunTag in mammalian cells) plus diffusion calculations. The conclusions logically follow from the experimental data and address the central hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The findings agree with prior polysome gradient and SunTag studies showing elongation inhibitors don't prevent peptide release. The authors conclude that detected subcellular localizations likely reflect trafficking/diffusion of puromycylated peptides (e.g., nucleolar labeling reflects ribosomal protein trafficking), and caution is warranted even in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 appropriately contextualize findings with prior work (Colombo et al. 1965, Grollman 1968, Wang et al. 2016) and provide reasonable interpretations. The nucleolar labeling explanation (C60) is supported by citations about ribosomal protein trafficking (Kubota et al. 1999, Schmidt et al. 1995). The cautionary recommendation is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors suggest alternative approaches: reporter-based methods using rapid single-turnover chemistry (e.g., flash luciferases) or derivatizing puromycin with moieties large enough to obstruct the ribosome exit tunnel (as demonstrated by RiboLace, though not cell-permeable).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C65 are speculative suggestions for future work. While C62 and C64 cite relevant methods (Na et al. 2016, Clamer et al. 2018), these are proposals rather than tested solutions. The suggestion in C63 is theoretical and untested. These represent reasonable directions but lack experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Supporting mechanistic claims establish that anisomycin is a competitive inhibitor binding the peptidyl-transferase center (preventing puromycin reaction), and that cytoplasm contains the majority of functional ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are well-established facts supported by appropriate citations (Grollman 1967, Klinge and Woolford 2019). These provide necessary context for interpreting the experimental results, particularly the differential effects of anisomycin versus emetine.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Under urethane anesthesia, rat auditory cortex spontaneously transitions between inactive states (characterized by globally correlated low-frequency fluctuations, up-down states) and active states (characterized by tonic, uncorrelated firing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 collectively describe well-established brain state dynamics under urethane anesthesia, supported by both citations to prior work (Clement et al., 2008; Curto et al., 2009; Renart et al., 2010) and visual evidence in Figure 1A-B showing raster plots. The characterization is consistent with known literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Rodents rely on ILD for sound localization in the horizontal plane, and auditory cortex neurons represent ILD with broad tuning curves having maximum slope near zero ILD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are well-supported by multiple citations to established literature (Wesolek et al., 2010; Lauer et al., 2011; Stecker et al., 2005; Campbell et al., 2006; Yao et al., 2013). These are established facts about rodent auditory processing that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C12"
+    ],
+    "result": "In inactive states, population-averaged responses show strong contralateral and loud preference with ABL-dependent gain modulation of ILD tuning. In active states, responses to different stimuli overlap with weak, flat tuning near the midline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C11-C12 describe population-averaged tuning differences across states, supported by quantitative data (specific slope values) and visual evidence in Figures 2A-G. The contrast between states is clearly demonstrated with numerical measurements and appropriate statistical comparisons (r=0.74, p=0.00005 for state dependence).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C18"
+    ],
+    "result": "In active states, single neurons show heterogeneous tuning with roughly symmetric distribution of ILD and ABL preferences, and this heterogeneity is not explained by physical location in tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C18 are supported by data in Figures 3D-F and Figure 3\u2014figure supplement 4 showing diverse tuning across neurons within individual recording shanks. The analysis appropriately controls for spatial organization, strengthening the conclusion about genuine tuning heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Up-down fluctuations in inactive states induce positive correlations between most neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is well-supported by citations to established mechanisms (Renart et al., 2010; Ecker et al., 2014; Okun et al., 2015) and is consistent with the data shown in Figure 1A and the noise correlation analysis in Figure 4. This is an established phenomenon being confirmed in this dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "In active states, different stimuli evoke approximately the same total number of spikes from the population, whereas in inactive states different stimuli evoke different numbers of spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by the geometric analysis showing the angle between signal plane and global axis is negatively correlated with CV (r=-0.67, p=0.0005, Figure 5G). This inference follows logically from the orthogonality analysis and is consistent with the population-averaged tuning data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "ILD sign decoding shows ABL-dependent bias and reduced performance in inactive states, but ABL-invariant, symmetric performance in active states with JND (2.5-3.4 dB) matching behavioral performance in rats (2.2 dB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by decoding analysis with logistic fits (Figure 6A-B) and comparison to behavioral data (Pardo-Vazquez et al., 2018). However, the comparison between neural and behavioral JND should be interpreted cautiously as acknowledged by the authors, since decoder performance depends on number of neurons and time window (C31-C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Classification accuracy increases with neuron number without saturation in both states, increases with time window in active states without saturation at 150 ms, but saturates at ~50 ms in inactive states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by systematic analysis in Figure 6\u2014figure supplement 1 showing how decoder performance scales with population size and integration time. These analyses appropriately qualify the main decoding results and demonstrate that the conclusions are not artifacts of limited sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "In active states, ILD sign can be classified with an ABL-invariant decoder, but in inactive states, ABL-specialized decoders perform better.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by comparison of common vs. ABL-specialized classifiers (Figure 6F). The difference is statistically significant in inactive states (0.019\u00b10.023, p=0.0004) but absent in active states, consistent with the geometric analysis showing orthogonal ILD/ABL representations in active states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Noise correlations impair coding accuracy in inactive states but do not significantly constrain accuracy in active states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by trial-shuffling analysis (Figure 6G-H) showing performance changes only in inactive states. The analysis appropriately distinguishes between effects on optimal decoding strategy (training shuffle) vs. decoder performance (test shuffle), providing mechanistic insight into how noise structure affects coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In active states, the number of significantly tuned neurons increases from onset to late period, many neurons show inhibitory responses especially late, and the balance of excitatory/inhibitory responses explains weak population-averaged modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by time-resolved analysis (Figure 6\u2014figure supplement 1A-C, Figure 2\u2014figure supplement 2). The increase in tuned neurons (23.1% to 41.8%, p=0.00001) and presence of inhibitory responses provide mechanistic explanation for temporal dynamics of decoding accuracy and population responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "State-dependent differences in tuning heterogeneity and population geometry are maintained in onset responses (0-50 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by onset-specific analysis (Figure 3\u2014figure supplement 3, Figure 5\u2014figure supplement 1). While some correlations weaken slightly for onset responses (e.g., ABL/ILD angle correlation drops to r=-0.36), the qualitative patterns persist, indicating state effects are not solely due to late response dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "State transitions under urethane resemble sleep state transitions with cholinergic origin, and cortical activation can be mediated by changes in adaptation, nucleus basalis activation, or somatostatin interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 cite established literature on mechanisms of cortical state transitions. These provide appropriate context for interpreting the observed state-dependent changes but are not novel findings of this study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Brain activation occurs during attentive wakefulness and active sampling, inactivation during immobility and sleep, with functional implications for discrimination vs. memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 cite established literature on behavioral correlates and functional roles of brain states. These provide appropriate context for the Discussion but are not novel findings. The citations appear accurate and the interpretations are reasonable, though speculative regarding functional implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Cortical activation is associated with reorganization from an intensity code (where spike count reflects ILD, ABL, and noise) to an identity code (where stimulus information is in which neurons respond, not total spike count).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 represent the main conceptual conclusion, integrating findings about population geometry, tuning diversity, and decoding. This is well-supported by the collective evidence from geometric analysis (Figure 5), single-neuron tuning (Figure 3), and decoding results (Figure 6), though it represents a high-level interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Recordings were obtained from 18 female Long-Evans rats under urethane anesthesia using 64-channel silicon probes, with 150 ms broadband noise stimuli varying in ILD (12 levels) and ABL (3 levels), each presented 100 times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe the experimental methods, which are clearly stated and appropriately detailed. The methods appear sound and sufficient for the analyses performed. Quality control procedures (spike sorting, session splitting) are described in Materials and methods.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "TT-seq was performed after different 4sU-labeling time points in human K562 cells. The TT-seq protocol includes RNA fragmentation before purification, which eliminates 5' bias present in 4sU-seq. The experiments were highly reproducible, with TT-seq signals covering both introns and exons, and the relative number of intronic reads decreased with labeling time while exonic reads increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C55 collectively describe the TT-seq experimental approach and its advantages over 4sU-seq. The data shown in Figures 1A-C and supplementary figures demonstrate high reproducibility, appropriate coverage patterns, and elimination of 5' bias. The experimental design and quality control metrics support the validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study identified 341,855 putative introns, with about half mapping to previously annotated splice sites in GENCODE and half representing novel splice sites. More than 99% of non-annotated introns had canonical GT|AG dinucleotides, and 38% mapped to both non-annotated donor and acceptor sites, indicating that the number of splice sites has been previously underestimated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C64 describe the discovery of novel splice sites. The data in Figure 1D and the text provide clear evidence for the identification of both annotated and novel introns with appropriate sequence characteristics. The findings are consistent with recent large-scale studies (C64), supporting the conclusion that splice site diversity has been underestimated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study developed a kinetic modeling approach that models the steady-state rates of synthesis and degradation of three different phosphodiester bonds individually: donor, acceptor, and junction bonds. Spike-ins were used to estimate sequencing depth variations and cross-contamination. The model was fitted to 162,134 donor, 177,543 acceptor, and 156,825 junction bonds, with TT-seq read counts agreeing well with model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C78 describe the kinetic modeling framework. Figure 2A illustrates the model and shows good agreement between observed and predicted counts. The use of spike-ins for normalization (C73-C75) and the high correlation between synthesis rates and half-lives from distinct splice junctions (C78) demonstrate the robustness of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Extensive simulations were conducted to validate the kinetic modeling approach. The method leads to unbiased estimates of ground truth synthesis rates, splicing half-times, and half-life times based on simulated data. Simulations showed that lowering read coverage below 100 reads or estimating half-lives outside the range of 1 min to 3 days would lead to median errors exceeding 100%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 describe validation through simulations. The results shown in Appendix figures 12, 13, 23, and 24 demonstrate that the method is unbiased within appropriate parameter ranges and identify the limitations of the approach. This provides important context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Splicing occurs in the range of minutes, with synthesis rates and half-lives of donors and acceptors ranging over two orders of magnitude when averaged within major isoforms. mRNAs were spliced significantly faster (median 7.2 min) than lincRNAs (median 11 min) and had the longest junction bond half-lives (median 316 min). These results agree with many previous estimates but argue against fast splicing within less than a minute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C83-C90 describe the overall splicing kinetics. The data in Figures 2B-D show clear distributions of rates and half-lives across RNA classes. The agreement with previous studies (C86, Figure 2\u2014figure supplement 1D) and the statistical significance of differences between RNA classes (C87) support these conclusions. The minute-scale timescale is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C3"
+    ],
+    "result": "Intron length influences splicing kinetics in multiple ways. The minimal intron length is about 80 nt. For introns shorter than 2,000 nt, donor and acceptor bond half-lives decrease with increasing intron length. For longer introns, acceptor bond half-life plateaus at ~4 min while donor bond half-life increases up to ~8 min for introns >7,700 nt. Donor half-life is limited by transcription elongation for long introns, with very few introns violating the predicted limit based on a maximum polymerase elongation velocity of 4 kb/min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C102 and C3 describe intron length effects on splicing kinetics. The data in Figures 3A-D clearly show the relationship between intron length and bond half-lives. The interpretation that donor bond half-life is limited by transcription elongation for long introns (C101, C3) is well-supported by the data in Figure 3C showing few introns violating the predicted elongation limit. The difference between first and other introns (C98-C99) is consistent with known slower transcription of first introns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C4",
+      "C5"
+    ],
+    "result": "A linear model was built to estimate the effects of single nucleotide changes on donor bond half-life, explaining 19% of variance. Nucleotide deviations from consensus increase donor bond half-life, consistent with evolutionary pressure for fast splicing. The model results correlate with known RNA-RNA interactions in spliceosome structures, including U1 snRNA interactions during 5' splice site recognition, U5 snRNA interactions in the B complex, and interactions in the C* complex. Nucleotides interacting with snRNAs during 5' splice site recognition showed the strongest effects on donor bond half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C116, C4, and C5 describe sequence determinants of donor bond half-life. The model performance shown in Figure 4A is reasonable given the complexity of splicing. The correlation between predicted nucleotide effects and known structural interactions (Figures 4B-D) provides strong support for the biological relevance of the model. The observation that positions with no predicted contacts show the least effects (C116) further validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "A regression model predicting acceptor bond half-life from sequence explained 20% of variance. Single nucleotide changes around the acceptor site had larger effects on acceptor bond half-life (reflecting step two kinetics), while changes around the donor site had greater effects on donor bond half-life (reflecting step one kinetics). A non-canonical G branchpoint increases donor but not acceptor bond half-life. The predominant G at the donor \u22121 position leads to fast donor cleavage but slow acceptor cleavage kinetics, yet is maintained presumably because it improves donor site recognition by U1 snRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 describe sequence determinants of acceptor bond half-life. The model performance (Figure 5B) is similar to the donor model. The differential effects of nucleotide changes on donor vs. acceptor bond half-lives (Figure 5C-D) support the interpretation that these models capture distinct aspects of the two-step splicing reaction. The trade-off between donor recognition and acceptor cleavage kinetics at the donor \u22121 position (C121-C122) is a particularly interesting finding, though the mechanistic explanation is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Extended models including single nucleotide effects and RNA octamers in extended intronic regions substantially increased variance explained from 19% to 26% for donor bond half-life and from 20% to 29% for acceptor bond half-life. Feature selection identified 551 octamers predicting donor bond half-life and 2,319 octamers predicting acceptor bond half-life. Many octamers matched binding sites of RNA-binding proteins including serine/arginine-rich and hnRNP proteins. Predictive octamers showed significantly higher phylogenetic conservation compared to random octamers (except for the region 100 nt downstream of the donor site).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C135 describe the extended octamer models. The improved variance explained (Figure 6B-C) demonstrates that regulatory sequences beyond core splice sites contribute to splicing kinetics. The matching of octamers to known RNA-binding protein motifs (Figure 6D, Figure 6\u2014figure supplement 1C) and their phylogenetic conservation (Figure 6E) provide strong evidence for biological relevance. The position-dependent effects of Ptpb1 binding sites (C134) illustrate the complexity of splicing regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C7",
+      "C8",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study introduced 'splicing yield' as the proportion of precursor RNA successfully converted into spliced RNA. Splicing yield was much higher for mRNAs (median 1.2) than for antisense RNAs (median 0.2), lincRNAs (median 0.3), and other non-coding RNAs (median 0.5), suggesting that degradation pathways compete more intensively with splicing for non-coding RNAs. Introns targeted by the minor spliceosome showed two-fold slower donor and acceptor bond half-lives but reached similar splicing yields as the major spliceosome. Sequence-based models showed that deviations from consensus and nucleotides distant from splice sites led to lower splicing yield. Rate and yield are distinct aspects of splicing that may have evolved independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C136-C146 describe the novel concept of splicing yield. The data in Figures 7A-E clearly show differences in splicing yield between RNA classes and the relationship to sequence features. The observation that minor spliceosome introns have similar yields despite slower kinetics (C141) supports the independence of rate and yield (C145). However, the computational constraint that yields are not bounded by 1 (mentioned in text) and the systematic biases acknowledged for different kinetic models raise some concerns about the absolute accuracy of yield estimates, though the relative comparisons appear robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Previously reported estimation of splicing rates with 4sU-seq overestimated splicing rates for 5' introns compared to 3' introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by the comparison of 4sU-seq and TT-seq data shown in Figure 1C, which demonstrates that split read coverage decreases with distance from the TSS in 4sU-seq but not in TT-seq. This provides direct evidence for the 5' bias in 4sU-seq and its correction by TT-seq.",
+    "result_type": "MINOR"
+  }
+]

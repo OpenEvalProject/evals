@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes the biological context and motivation for studying macrophage activation in CVD. Pro-inflammatory macrophage activation plays a prominent role in CVD, existing treatments like statins do not eliminate residual risk, and characterizing macrophage activation mechanisms is challenging due to functional heterogeneity and the spectrum nature of activation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by multiple citations to published literature and represent well-established background knowledge in the field. These claims provide appropriate context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript describes the network medicine framework and limitations of current interactomes. Complex diseases arise from networks of gene interactions, disease determinants form 'disease modules', but current interactomes are incomplete, biased toward well-studied proteins, and context-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 are supported by citations to published literature and accurately describe the current state of network medicine and known limitations of interactomes. These establish the rationale for the study's approach but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study uses mass spectrometry-based proteomics from macrophage activation models to enhance the literature-curated interactome with cell type- and condition-specific information, using IFN\u03b3 as a model of pro-inflammatory activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 accurately describe the study's methodological approach. The use of proteomics to add context-specificity to interactomes is the core methodological innovation, and the experimental design is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Co-abundance networks were constructed for three macrophage phenotypes and display distinct topological properties compared to the PPI network. Co-abundance networks have higher edge densities, broad degree distributions, high clustering coefficients, but are more locally clustered and less compact than the PPI network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by network analysis data presented in figures and supplementary files. The topological characterization is thorough and the comparisons with PPI networks are quantitatively documented. The complementary topology conclusion (C27) is appropriately inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Co-abundance networks fill in sparse regions of the PPI network in condition-specific patterns and show significant enrichment for shared GO terms, literature-curated PPIs, and protein complex interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by visual network analysis (Figure 1B) and statistical enrichment tests (Figure 1C). The enrichment analysis validates that co-abundance edges capture biologically meaningful relationships, though the authors appropriately note these are not necessarily direct physical interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Addition of co-abundance edges to the PPI network shortens the average shortest distances to known CVD drug targets compared to PPI alone, and this effect is significantly greater than random edge addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by network distance analysis with appropriate statistical controls (Figure 1D). The use of degree-preserving randomization as a control is methodologically sound and demonstrates the effect is not simply due to adding edges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Addition of co-abundance edges significantly improves CVD drug target prediction performance compared to PPI network alone, as measured by AUROC and ranking distributions, and this improvement exceeds random edge addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by ROC analysis with k-fold cross-validation and appropriate statistical tests (Figure 2B-D). The paired t-test following cross-validation is appropriate, and the comparison with degree-preserving randomization strengthens the conclusion. P-values are reported for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Top-ranked proteins from the network prioritization show significant enrichment in inflammation, immune response, and CAD signatures, with condition-specific pathway enrichments reflecting the biology of each macrophage activation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by enrichment analysis (Supplementary file 3) and pathway analysis (Figure 3). The condition-specific pathways appropriately reflect known biology of pro-inflammatory (M(IFN\u03b3)) and anti-inflammatory (M(IL-4)) macrophage activation, validating the biological relevance of the prioritization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Combined ranking integrating network topology, protein abundance, and gene expression identified GBP1, WARS, TGM2, NAMPT, and STAT1 as top candidates for M(IFN\u03b3), with GBP1 and WARS showing the most dramatic expression changes. For M(IL-4), top candidates were LIPA, TGM2, EVL, PFKP, and LRRFIP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by the combined ranking methodology and expression data (Figure 4). The integration of multiple data types is methodologically sound, though the filtering thresholds involve some arbitrary choices. The identification of STAT1 as a known CVD-related molecule (C42-C43) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "WARS silencing enhanced CCL2 mRNA expression and protein secretion in IFN\u03b3-stimulated THP-1 cells and primary macrophages, but had no effect on TNF\u03b1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by experimental data from siRNA knockdown experiments in both THP-1 cells and primary macrophages from multiple donors (Figure 5A and supplement). The specificity for CCL2 but not TNF\u03b1 (C52) is an important control showing selective effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "WARS silencing did not change transcriptional levels of STAT1 and JAK2, but increased STAT1 phosphorylation at Ser701 in both THP-1 cells and primary macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by RT-PCR and Western blot data (Figure 5A-B and supplements). The dissociation between transcriptional levels and phosphorylation suggests post-translational regulation, which is biologically plausible and mechanistically informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "GBP1 silencing decreased CCL2 protein secretion without changing its mRNA levels at 24 hr in IFN\u03b3-stimulated primary macrophages, and did not affect TNF\u03b1 or JAK2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by experimental data from four different PBMC donors (Figure 5C). The dissociation between mRNA and protein levels (C62) suggests post-transcriptional or translational regulation, which is mechanistically distinct from WARS effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "NSC756093 treatment resulted in dose-dependent decreases in CCL2 and TNF\u03b1 secretion without changing their mRNA levels or the mRNA levels of JAK2 and GBP1 in IFN\u03b3-stimulated primary macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by pharmacological inhibition experiments (Figure 5D). The dose-dependent effect strengthens the conclusion, and the lack of mRNA changes suggests post-transcriptional effects. However, NSC756093 targets the GBP1-PIM1 interaction, so effects may be indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "GBP1 silencing decreased JAK2 and phospho-STAT1 expression at 6 hr of IFN\u03b3 stimulation in THP-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by Western blot data (Figure 5 supplement 1D). The time-dependent effects (6 hr vs 24 hr) suggest dynamic regulation, though the mechanism linking GBP1 to JAK2/STAT1 at early timepoints requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "In silico druggability analysis showed that all top five candidates contain binding sites suitable for small molecules, with WARS and GBP1 having the highest percentage of druggable structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by computational analysis using the DrugEBIlity database (Figure 5 supplement 2). The analysis provides supporting evidence for therapeutic potential, though in silico predictions require experimental validation of actual druggability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study demonstrates that proteomics-derived co-abundance edges contribute to less characterized parts of the interactome, reflect macrophage stimulation conditions, increase CVD target prediction performance, and show enrichment with immune and CVD signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 represent the main conclusions of the study and are supported by the collective evidence from network analysis, prediction performance, and enrichment studies. These claims synthesize multiple lines of evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Integration of network topology, transcriptomics, and proteomics identified GBP1 and WARS as top candidate drivers of inflammation, which was validated by in vitro loss-of-function experiments showing they regulate CCL2 expression and STAT1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 represent the integrated conclusion combining computational prediction and experimental validation. The experimental data (C50-C56, C61-C69) support the regulatory roles, though the specific mechanisms require further investigation. The opposite effects of WARS and GBP1 on CCL2 are particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Prior literature has linked WARS to vascular angiogenesis and myocardial infarction, though genetic-epidemiological studies found no significant associations with MI risk. Recent work showed WARS secretion is induced by pro-inflammatory stimuli including LPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 accurately summarize prior literature on WARS with appropriate citations. The acknowledgment of conflicting evidence (C48) demonstrates balanced reporting. These claims provide context for the current findings but are not novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "GBP1 is a member of the IFN\u03b3-inducible GBP family, whose members are protective against bacterial and parasite infection. GBP3 and GBP6 expression increases during foam cell formation in mice on Western diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 accurately summarize prior literature on the GBP family with appropriate citations. These provide biological context for GBP1 as a candidate but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The literature-based PPI network contains 170,303 interactions between 14,213 proteins, with the largest connected component having 170,253 interactions and 14,115 proteins, displaying specific topological properties (average degree 24.12, clustering coefficient 0.210, diameter 12, average path length 3.54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe the PPI network construction and properties. These are methodological details that are clearly documented and provide necessary context for the analysis. The network properties are standard metrics appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "THP-1 cells were originally derived from a 1-year-old male infant with acute monocytic leukemia and were differentiated into macrophage-like cells using 200 ng/mL PMA for 48 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe the cell line origin and differentiation protocol. These are standard methodological details that are appropriately documented. The use of THP-1 cells is a common model for macrophage studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "NSC756093 interrupts the GBP1-PIM1 interaction and has been shown to potentially revert paclitaxel resistance in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by citation to published literature. This provides context for the choice of inhibitor but is not a novel finding. The relevance of the GBP1-PIM1 interaction to macrophage inflammation is not established in prior literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Optogenetic photostimulation of PV interneurons produces layer-specific and region-specific responses in mouse cortex. In ALM layer 2/3, PV activity increases monotonically with light intensity while PC activity decreases. In ALM layer 5 and S1, both PC and PV activities paradoxically decrease together at low light intensities, with proportional suppression observed in S1 (slope ratio PV/PC = 1 \u00b1 0.29 in S1, 0.62 \u00b1 0.28 in ALM layer 5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental findings are well-documented with appropriate statistical tests (C40: p<0.005, unpaired t-test), quantitative measurements (C38, C42), and consistent observations across multiple brain regions (C29-C42). The data clearly demonstrate differential responses between cortical layers and regions, with figures providing visual confirmation of the paradoxical effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The experimental approach used ReaChR expression in PV interneurons of 9 transgenic mice (PV-Ires-Cre x R26-CAG-LSL-ReaChR-mCitrine), with 594 nm orange light illuminating a 2 mm diameter area. Neurons were classified as putative PCs (wide spikes) or PV neurons (narrow spikes, fast-spiking) based on spike width, with recordings from both ALM (6 mice) and S1 (3 mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental methods are clearly described with appropriate detail (C24-C28, C137-C140). The spike width classification method is standard and supported by citations (C28). Sample sizes are stated, and ethical approval is documented (C140). The approach is methodologically sound for addressing the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "Two-population network models (one excitatory, one inhibitory) fail to fully account for the experimental observations. These models predict that the minimum PV activity occurs only when excitatory neurons are virtually completely silenced, contradicting experimental data where PCs remain 40% active in ALM layer 5 and 25% active in S1. Additionally, proportional PC-PV suppression requires fine-tuning of the interaction matrix determinant to near zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations of two-population models are demonstrated through both analytical calculations (C53, with reference to Appendix 1B) and numerical simulations (C51, C54). The discrepancies between model predictions and experimental observations are clearly articulated with specific quantitative comparisons (C51). This conclusion is well-justified and motivates the need for more complex models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A four-population network model (Model 1) with V1-like architecture comprising PC, PV, SOM, and VIP neurons can account for responses in both ALM layer 2/3 and layer 5. The model predicts non-paradoxical PV responses when \u03c1 = J_EE/J_EE* > 1 (suitable for layer 2/3) and paradoxical responses when \u03c1 < 1 (suitable for layer 5), where J_EE* = J_VE\u00b7J_ES/J_VS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Model 1 is well-defined with clear architectural constraints based on prior literature (C56-C58 with citations). The mathematical criterion for paradoxical vs. non-paradoxical responses (C61-C62) provides testable predictions. The model successfully accounts for layer-specific differences in ALM (C63-C64) without requiring the complete silencing of PCs that plagued two-population models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A second four-population model (Model 2) with a modified architecture where SOM neurons receive inputs only from PCs and PV neurons (not from a third inhibitory population X) robustly accounts for the proportional PC-PV suppression observed in S1. This proportionality stems directly from the balance equation J_SE\u00b7r_E = J_SI\u00b7r_I, making it an architectural feature rather than requiring parameter fine-tuning as in Model 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Model 2 addresses a specific limitation of Model 1 (C65) by providing a robust mechanism for proportional PC-PV responses (C66). The architectural difference is clearly defined (C68), and the mathematical basis for proportionality is explicit. The model successfully explains the S1 data including the observation that PV activity minimum occurs while PCs remain active (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C109"
+    ],
+    "result": "In four-population balanced networks, the paradoxical effect occurs through disinhibitory loops rather than requiring strong recurrent excitation as in two-population inhibition-stabilized networks (ISN). In fact, strong recurrent excitation prevents the paradoxical effect in these models. Therefore, observing the paradoxical effect does not provide evidence that the network operates in an ISN regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a key theoretical insight that distinguishes the mechanisms in multi-population networks from classical two-population ISN theory. The claim is supported by the mathematical analysis showing that paradoxical effects in Model 1 require J_EE < J_EE* (weak recurrent excitation) and in Model 2 depend on disinhibitory loop gains (C109). This fundamentally reinterprets the meaning of paradoxical effects in cortical circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Single neuron responses to PV photostimulation are highly heterogeneous in both experimental data and model simulations, despite all simulated neurons being identical and receiving the same external input. In the balanced excitation/inhibition regime, small heterogeneity in connectivity (number of connections per neuron) is amplified to substantial heterogeneity in responses. This demonstrates that response heterogeneity does not necessarily indicate heterogeneity in channelrhodopsin expression or intrinsic neuronal properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental heterogeneity is well-documented (C72-C76), and the modeling results (C77-C81) provide a mechanistic explanation. The key insight that balanced networks amplify connectivity heterogeneity (C80, supported by citations) is theoretically sound. The conclusion that heterogeneity doesn't require heterogeneous opsin expression (C81) is important for interpreting optogenetic experiments, though it would benefit from quantitative comparison of heterogeneity levels between data and simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Model 1 generates testable predictions for ALM layer 2/3: (1) SOM and VIP activities should decrease upon PV photostimulation; (2) upon PC photoinhibition, PV activity should increase while SOM and VIP activities decrease; (3) VIP photostimulation should increase PV activity. These predictions follow from the mathematical relationships between susceptibilities (\u03c7_EI < 0 implies \u03c7_IE < 0 when \u03c7_EI\u00b7\u03c7_IE > 0) and balance equations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The predictions are logically derived from the model structure and mathematical analysis (C118-C122, with references to appendices). They are specific, testable, and grounded in both the model's balance equations and prior experimental observations in other cortical areas (C123). The predictions provide clear experimental tests to validate or refute Model 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Model 2 predicts that in S1: (1) PC and PV activities will decrease proportionally upon PC photoinhibition; (2) photostimulation of SOM neurons will disrupt this proportionality; (3) simultaneous PV photostimulation and constant SOM photostimulation will maintain the paradoxical effect but eliminate proportional PC-PV responses. These predictions provide experimental tests to distinguish between Model 1 and Model 2 architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The predictions are mathematically grounded in the balance equation J_SE\u00b7r_E = J_SI\u00b7r_I (C125, with reference to Equation 3 and Appendix 1D). The proposed dual-laser experiment (C127-C128) is technically feasible and provides a clear test of the model's architectural assumptions. The predictions are specific and falsifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Individual PV neuron responses show substantial heterogeneity within each cortical region. In ALM layer 2/3, most PV neurons increase firing with photostimulation, though some initially decrease. In ALM layer 5 and S1, most PV neurons decrease activity at low light intensity, but at high intensity (5 mW/mm\u00b2), half of the neurons (6/12 in ALM layer 5, 6/10 in S1) exceed baseline while the rest remain suppressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heterogeneity is documented with specific quantitative data (C45) and consistent observations across regions (C32-C34, C43-C44). The findings are presented with appropriate detail about the diversity of responses. This heterogeneity is important for understanding population-level responses and is later explained by the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The models do not account for interlaminar interactions, despite ReaChR being expressed in all PV neurons across all ALM layers and PCs in layer 2/3 projecting to and receiving feedback from layer 5. Including strong interlaminar connections could alter the interpretations of the layer-specific responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an honest acknowledgment of a significant limitation (C86-C87). The experimental conditions are clearly described (C82-C83), and the anatomical basis for potential interlaminar effects is cited (C84). The speculation about how this might affect interpretations (C85, C87) is appropriately cautious. This limitation is important for future work but doesn't invalidate the within-layer analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The models use static synapses and do not incorporate short-term plasticity, despite experimental evidence that different synapse types exhibit diverse dynamics (e.g., PC-to-PV synapses are depressing while PC-to-SOM synapses are facilitating). Including synaptic dynamics could make network responses depend on photostimulation duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This limitation is clearly stated (C91) with appropriate citations to relevant experimental findings (C88-C89). The potential impact on model predictions is reasonably speculated (C90). The use of static synapses is a simplification that makes the analysis tractable but may miss important temporal dynamics. This is an appropriate limitation to acknowledge for future model refinement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The models consider only three populations of identical interneurons (PV, SOM, and VIP/X), despite growing evidence that these populations include different subtypes with potentially distinct connectivity patterns. This simplification limits the models' ability to capture the full complexity of cortical inhibitory circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitation is clearly acknowledged (C94) with appropriate context about cortical interneuron diversity (C92-C93, with citations). The authors appropriately note that increasing the number of populations would greatly increase model complexity. This represents a reasonable trade-off between model complexity and interpretability for addressing the specific experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the conceptual framework by defining GABAergic interneuron subclasses, describing cortical network complexity, and defining the 'paradoxical effect' as the phenomenon where stimulation of inhibitory neurons decreases both PC activity and the activity of the stimulated population itself. In two-population models, this occurs in inhibition-stabilized networks (ISN) where strong recurrent excitation requires inhibition to prevent activity blow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established concepts appropriately cited from prior literature (C1, C9-C10, C15-C17). The definitions are clear and provide necessary background for understanding the experimental results and modeling work. However, C1 contains an error: it states 'serotonin positive neurons' when it should refer to '5HT3aR expressing interneurons' or similar, as serotonin is a neurotransmitter, not a cell type marker.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Prior theoretical work on the paradoxical effect used weak interaction scaling (j_\u03b1\u03b2 ~ 1/K) in small networks operating in the ISN regime, where the effect depends on supralinear transfer functions and background rates. These studies considered networks too small to extrapolate to mouse cortex and did not address the strong interaction regime relevant to cortical circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comprehensive review of prior work (C95-C107) appropriately cites relevant studies and accurately characterizes their approaches and limitations. The distinction between weak (1/K) and strong (1/\u221aK) interaction scaling is clearly explained, and the critique that prior models used unrealistically small networks (C107) is valid. This sets up the rationale for the current study's approach using large networks with strong interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "With static synapses, the balance equations are linear, so changes in background rates cannot reverse the paradoxical effect in the models. Introducing short-term plasticity would make the balance equations nonlinear and could recover the reversal of paradoxical effects observed in some prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a clear mathematical statement about the model's properties (C110-C111) with appropriate speculation about how to extend it (C112). The linearity of balance equations with static synapses is a direct consequence of the model formulation. The suggestion about short-term plasticity is reasonable and connects to the earlier discussion of synaptic dynamics limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Future directions include extending the theory to incorporate spatial dependencies and laser beam width effects, investigating whether supralinear stabilized networks (SSN) can account for the data (particularly response heterogeneity and proportional PC-PV responses in S1), and determining if such investigations could discriminate between balanced network and SSN theories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are reasonable and well-motivated future directions (C129-C136). The spatial extension (C129-C130) addresses a known limitation. The SSN alternative (C133-C136) is appropriately cited and represents a legitimate competing hypothesis. The questions posed are specific and would advance understanding of cortical circuit mechanisms. These represent appropriate speculation about future work rather than unsupported claims about current results.",
+    "result_type": "MINOR"
+  }
+]

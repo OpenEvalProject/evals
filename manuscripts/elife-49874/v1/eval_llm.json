@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The study analyzed skeletal muscle biopsies from 58 healthy participants aged 20-87 years using TMT-based quantitative proteomics, identifying 5891 proteins from 400,000 tryptic peptides. After quality filtering, 4380 proteins were retained for age-association analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe the study cohort, proteomic methodology, and data filtering criteria with specific quantitative details. The methodology is well-established (TMT labeling with cited references), sample size is adequate for cross-sectional analysis, and quality control criteria are explicitly stated. The exclusion of proteins not quantifiable in at least 3 participants per age stratum is a reasonable quality threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C12",
+      "C13"
+    ],
+    "result": "Approximately 29% of the skeletal muscle proteome (1265 proteins) changed significantly with aging, with 71% overrepresented and 29% underrepresented in older age. Hierarchical clustering revealed the strongest differences between young (20-34) and old (80+) groups, with minimal changes before age 50 but substantial differences (three log-fold on average) after age 50, accelerating after age 64.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C12-C13 provide consistent quantitative evidence for age-associated proteomic changes with appropriate statistical corrections (BH correction, p<0.05). The hierarchical clustering analysis supports the interpretation of accelerated changes after middle age. The linear mixed model adjusted for multiple confounders (sex, race, physical activity, fiber ratio, BMI, TMT batch), strengthening the validity of age associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The proteins most strongly associated with older age were LSm14A (\u03b2=0.023, p=0.0109), TIMP-3 (\u03b2=0.0219, p=0.00026), and APCS (\u03b2=0.0164, p=1.26E-11). LSm14A is involved in mRNA turnover and innate immunity, TIMP3 regulates adipogenic differentiation potentially explaining fat infiltration in aging muscle, and APCS (serum amyloid P-component) overrepresentation in aging muscle is a novel finding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 identify specific proteins with strong statistical associations (highly significant p-values) and provide biological context through literature citations. The functional interpretations for LSm14A and TIMP3 are supported by cited references. The novelty claim for APCS is explicitly stated and represents a new observation, though functional validation would strengthen this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The most underrepresented proteins with older age included HLA-DRB1 (p=0.024), DOCK4 (p=0.025), MYBPH (p=0.0005), and MFAP4 (p=0.000002). MYBPH maintains muscle structural integrity and its decreased expression has been associated with muscle weakness in age-related disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 identify significantly underrepresented proteins with appropriate statistical support. The functional interpretation of MYBPH is supported by a citation. However, the manuscript notes HLA-DRB1 was only present in 53% of donors, which may limit the generalizability of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Contractile and architectural proteins showed age-related changes: the slow/fast fiber ratio increased with age (p=0.005), 95 sarcomere-stabilizing proteins decreased, while some sarcoglycans (SGCD, SGCG) increased consistent with mouse studies. MAPT (tau) was significantly underrepresented, while Syne-1 and beta-2-syntrophin increased with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 describe coordinated changes in muscle structural proteins with appropriate statistical support and specific beta coefficients. The fiber ratio analysis provides important context for interpreting protein changes. The comparison to mouse studies (C16) strengthens the findings through cross-species validation. The changes in NMJ-related proteins are biologically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mitochondrial protein coverage ranged from 52-92% across subcellular compartments. Of mitochondrial proteins, 25% (173 proteins) changed with age, with 70% declining. Respiratory chain proteins (99 total, 28 significant) mostly declined, though outer membrane protein CYB5R3 and assembly factor SDHAF2 were overrepresented. Of 22 TCA cycle proteins, only 4 (MDH1, IDH1, FH, SUCLG1) significantly decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide comprehensive analysis of mitochondrial proteome changes with appropriate coverage assessment and statistical support. The finding that most mitochondrial proteins decline while some outer membrane proteins increase is internally consistent. The exception of SDHAF2 is acknowledged as surprising and requiring further investigation, demonstrating appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "NAD+ metabolism proteins showed age-related changes: NNT (\u03b2=-0.003, p=0.001) and NADK2 (\u03b2=-0.001, p=0.052) decreased, while NNMT (\u03b2=0.007, p=0.016), PARP1 (\u03b2=0.002, p=0.003), and CD73 (\u03b2=0.004, p=0.056) increased with age. NMRK1 decreased (\u03b2=-0.003, p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe coordinated changes in NAD+ metabolism with appropriate statistical support. The pattern of changes (decreased synthesis enzymes, increased consuming enzymes) is biologically coherent and consistent with known age-related NAD+ decline. However, NADK2 (p=0.052) and CD73 (p=0.056) are marginally non-significant at the p<0.05 threshold, which should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Genomic maintenance and senescence-related proteins increased with age, including DNA damage repair proteins (MRE11, XRCC5, SMC1A), nuclear lamina proteins (LMNA, LMNB1, LMNB2), and 40 senescence-associated proteins. SIRT2 (\u03b2=-0.0013, p=0.032) decreased with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe coordinated upregulation of genomic maintenance machinery with appropriate statistical support. The increase in DNA repair proteins and nuclear lamina components is consistent with compensatory responses to accumulated damage. The decrease in SIRT2 is notable given its role in genomic stability. The senescence protein findings are appropriately qualified regarding their cellular origin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Of 69 age-associated transcription-regulatory proteins, 61 were overrepresented and 8 underrepresented with age. KLHL31 (\u03b2=-0.0017, p=0.003), essential for muscle development, decreased, while its regulator MEF2D (\u03b2=0.003, p=0.018) increased, possibly as compensation. CTCF (\u03b2=0.009, p=0.026) increased with age, contrary to earlier reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 describe transcriptional regulatory changes with appropriate statistical support. The inverse relationship between KLHL31 and MEF2D is biologically interesting and the compensatory mechanism interpretation is reasonable though speculative. The CTCF finding contradicting prior reports is appropriately noted and represents a potentially important observation requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Spliceosome proteins showed marked age-related increases: 99 of ~300 spliceosome proteins and 57 spliceosome-associated factors were overrepresented in older muscle, with overall ~15% increase between ages 20-87. LSM14A showed the largest increase (20-fold) among assembly proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe a striking and novel finding of widespread spliceosome upregulation with age. The quantification is specific and well-supported. The 20-fold increase in LSM14A is particularly notable and consistent with its identification as the most age-associated protein overall (C6). This represents a major discovery regarding splicing machinery changes in aging muscle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RNA-seq analysis of 144,830 transcripts revealed 3.7% (5459 transcripts, 6255 events) showed age-related alternative splicing changes, with 2714 events less frequent and 3545 more frequent in older age. Alternative splicing events increased significantly with age (r\u00b2=0.33, p=6.001e-06). Among 4967 protein-coding alternatively spliced transcripts, 8.9% (385) were reflected in protein changes, suggesting 30% of age-associated proteins undergo alternative splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide comprehensive RNA-seq validation of the proteomic findings regarding splicing machinery. The statistical support is strong (highly significant p-value, moderate r\u00b2). The integration of transcriptomic and proteomic data is methodologically sound. The 8.9% overlap between AS transcripts and protein changes is modest but reasonable given post-transcriptional regulation. The conclusion that 30% of age-associated proteins undergo AS is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "All 60S and 40S ribosomal proteins were globally reduced in older muscle, with exceptions of RPL12, RPL3, DKC1, and NOP58 which were overrepresented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 describes a clear pattern of ribosomal protein decline with specific exceptions. The statistical support for individual proteins is provided. This finding is consistent with reduced protein synthesis capacity in aging and is biologically coherent. The exceptions (proteins involved in viral translation and ribosomal biogenesis) are interesting and appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Of 239 proteostasis-related proteins, 31% changed with age (24 underrepresented, 50 overrepresented). Most underrepresented proteins were chaperones including DNAJA1/Hsp40 (\u03b2=-0.0021, p=0.003), Hsp27 (\u03b2=-0.004, p=0.0001), and HSPA8 (\u03b2=-0.002, p=2.34E-07). Most overrepresented proteostasis proteins were autophagy-related, except HSPA8 and EIF4G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 describe coordinated changes in proteostasis machinery with strong statistical support. The pattern of decreased chaperones and increased autophagy proteins is biologically coherent and consistent with known aging phenotypes. The highly significant p-values for key chaperones strengthen the findings. This represents a major aspect of the aging muscle phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Autophagy-related proteins showed age-dependent changes: TDP-43 (TARDBP, \u03b2=0.002, p=0.0002), which forms aggregates and is involved in autophagy, increased significantly. Calreticulin (CALR, \u03b2=0.001, p=0.022), an ER stress-induced chaperone that stimulates autophagy, was significantly higher in older participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 identify specific autophagy-related proteins with strong statistical support. The functional context for both proteins is well-established through citations. The increase in TDP-43 is particularly notable given its role in neurodegenerative diseases. The CALR finding is appropriately contextualized as a biomarker of age-related diseases and frailty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Of 32 immune-related age-associated proteins, many macrophage-function proteins (CD14, LGALS3, CAPG, INPPL1, MAST2) were dysregulated toward a pro-inflammatory phenotype. Pro-inflammatory proteins CD14 (\u03b2=0.003, p=0.009), E2AK2 (\u03b2=0.0008, p=0.046), and PYCARD (\u03b2=0.006, p=0.025) increased, while NF-\u03baB attenuators MAST2 (\u03b2=-0.002, p=0.023) and INPPL1 (\u03b2=-0.0009, p=0.036) decreased. The alarmin HMGB2 (\u03b2=0.004, p=0.001) increased with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe a coordinated pro-inflammatory shift in the immune proteome with appropriate statistical support and mechanistic context through citations. The pattern of increased activators and decreased attenuators of NF-\u03baB is biologically coherent and consistent with inflammaging. The HMGB2 finding adds to the pro-inflammatory picture. This represents strong evidence for chronic inflammation in aging muscle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Anti-inflammatory proteins also increased with age: Annexin A1 (ANXA1, \u03b2=0.008, p=0.00001), linked to inflammation resolution, showed strong upregulation. Adiponectin (ADIPOQ, \u03b2=0.002, p=0.008), produced by adipocytes, was elevated, likely reflecting increased adipogenic activity but potentially having anti-inflammatory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 identify counter-regulatory anti-inflammatory responses with strong statistical support. The ANXA1 finding is particularly robust (very low p-value) and appropriately contextualized through citation. The ADIPOQ interpretation acknowledges both its origin (adipocytes) and potential anti-inflammatory role, demonstrating appropriate nuance. This suggests complex immune regulation rather than simple pro-inflammatory shift.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Complement pathway proteins showed coordinate upregulation: CFAH (\u03b2=0.003, p=0.028), CFAD (\u03b2=0.003, p=0.039), and CD55 (\u03b2=0.006, p=0.00007) increased, indicating ongoing innate immune activity. IGHG4 (\u03b2=0.008, p=0.019), an antibody isotype implicated in autoimmune responses, increased with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 describe complement pathway activation with appropriate statistical support. The coordinate upregulation of multiple complement components strengthens the interpretation of ongoing innate immune activity. The IGHG4 finding is interesting given its association with autoimmune conditions, though the functional significance in aging muscle requires further investigation. The authors appropriately note this as an area for future research.",
+    "result_type": "MAJOR"
+  }
+]

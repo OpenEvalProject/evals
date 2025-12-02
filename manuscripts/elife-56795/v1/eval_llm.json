@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Fast oscillatory activity in the mPFC emerges during the second postnatal week, starting at ~20 Hz at P12, and progressively increases in frequency and amplitude until stabilizing at 50-60 Hz (gamma range) by P25. Both peak frequency and amplitude show significant correlation with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C15, C17-C23 collectively demonstrate the developmental trajectory of prefrontal gamma oscillations with appropriate statistical support (Mann-Kendall tests, linear regression). The data in Figure 1 provides clear visual evidence of the frequency acceleration and amplitude increase. The claim about initial frequency (~15 Hz in abstract vs ~20 Hz at P12 in results) shows minor inconsistency but the overall developmental pattern is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "PV expression in the mPFC begins at the end of the second postnatal week, increases until P25, and stabilizes thereafter, following similar developmental dynamics as fast oscillation maturation. In contrast, SOM neuron numbers remain stable throughout development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by immunohistochemistry data (Figure 2a,b) with appropriate statistical analysis (Mann-Kendall tests). The parallel maturation of PV expression and gamma oscillations provides correlative evidence for their relationship, though causation is not directly demonstrated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C88"
+    ],
+    "result": "FS units (putatively PV-expressing interneurons) are first detected at the end of the second postnatal week and progressively mature until P25, with significant decreases in waveform features (trough-to-peak duration, half width, amplitude). This maturation follows similar dynamics as gamma oscillation development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36, C88 are supported by novel single-unit classification using t-SNE and hierarchical clustering (Figure 2c-i), avoiding age-dependent bias in traditional classification. Statistical support is robust (Mann-Kendall tests, linear regression R\u00b2=0.550). The consistency with prior in vitro work (C35) strengthens the findings. The method's limitation (cannot identify RS interneurons, incomplete overlap with PV expression) is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C77"
+    ],
+    "result": "Optogenetic activation of L2/3 pyramidal neurons drives oscillatory activity throughout development with frequencies that progressively increase from 15-20 Hz to 50-60 Hz by P25, mirroring spontaneous activity development. Control stimulations confirm specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C45, C77 are supported by optogenetic experiments with appropriate controls (Figure 3). The correlation between induced and spontaneous activity (R\u00b2=0.16 for frequency, R\u00b2=0.206 for amplitude) is statistically significant but modest, suggesting other factors contribute. The broader peaks in spontaneous activity (C78) indicate the stimulation may not capture full diversity of gamma activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "During optogenetic ramp stimulation, RS and FS units show age-dependent changes in firing rate responses. RS units show increasing activation with age and decreasing proportion of positively modulated units, while FS units show stable average responses but mixed individual modulation throughout development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by single-unit analysis during optogenetic stimulation (Figure 4). However, the interpretation is complex: while average RS firing increases with age (C47, p=0.07, marginally non-significant), individual unit analysis shows decreasing proportion of activated units (C50, p=1.52\u00d710\u207b\u00b9\u2074). This apparent contradiction suggests heterogeneity in RS population responses that requires careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "RS and FS units fire rhythmically during optogenetic stimulation, with prominent rhythmic firing emerging around P15 and increasing in frequency until P25. Single unit rhythmicity is reflected in LFP oscillations, with RS units tending to skip gamma cycles more than FS units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 are supported by autocorrelation and spike-triggered LFP analysis (Figure 5). The consistency between single-unit autocorrelation and spike-triggered LFP power (multifactorial ANOVA with highly significant effects) strongly supports the link between cellular and network rhythmicity. The inference about RS units skipping cycles (C57) is appropriately qualified as a suggestion based on inter-spike interval data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C92"
+    ],
+    "result": "Inhibitory feedback in response to L2/3 pyramidal neuron activation matures with age. Young mice show strong attenuation to repetitive stimulation, which decreases with development. Post-stimulation firing depression emerges during late development, indicating increasing inhibitory feedback that follows the same dynamics as gamma oscillation development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67, C92 are supported by pulse stimulation experiments (Figure 6). The developmental increase in post-stimulation depression (C66: RS p=6.9\u00d710\u207b\u00b3, FS p=0.07) provides direct evidence for maturing inhibitory feedback. The inference about similar delays for RS and FS units suggesting indirect activation (C64) is reasonable but speculative. Overall, the data support the conclusion about maturing inhibitory feedback.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C93"
+    ],
+    "result": "Stepwise linear regression identifies FS unit characteristics (action potential half width) and single unit rhythmicity (autocorrelation power) as best predictors of gamma frequency, while firing rate changes and spike-triggered LFP power best predict gamma amplitude. FS maturation and unit rhythmicity correlate with accelerating gamma activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71, C74, C93 are supported by stepwise linear regression analysis. However, the model for frequency prediction is weak (R\u00b2=0.136, p=0.036), while amplitude prediction is stronger (R\u00b2=0.716, p=4.35\u00d710\u207b\u00b9\u00b2). The weak frequency model suggests other unmeasured factors significantly contribute to frequency determination. The conclusions are appropriately qualified but the predictive power for frequency is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C76"
+    ],
+    "result": "The acceleration of fast oscillation frequency follows similar temporal dynamics as the maturation of fast-spiking interneurons and inhibitory feedback. The interplay between excitatory and inhibitory neurons is critical for both adult gamma generation and its developmental emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C75, C76 represent the main integrative conclusions of the study. They are supported by the convergence of multiple lines of evidence: parallel maturation timelines (PV expression, FS units, gamma frequency), optogenetic manipulation showing L2/3 pyramidal drive throughout development, and maturing inhibitory feedback. While correlative rather than causally definitive, the evidence strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The broader peaks in spontaneous activity power spectra compared to stimulation-induced activity suggest that optogenetic stimulation may not capture the full diversity of spontaneous gamma activity, potentially explaining the absence of clear single unit rhythmicity during spontaneous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are speculative interpretations (acknowledged as such in C79) based on observed differences between spontaneous and induced activity. While the observation of broader spontaneous peaks is valid, the causal explanation for lack of spontaneous rhythmicity is not directly tested. Alternative explanations (e.g., state-dependence, task requirements) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Classical frequency bands are preserved across mammalian species, but developmental oscillations should not be classified according to adult frequency bands. Fast oscillations in developing mPFC start at lower frequencies (~20 Hz) and progressively increase, similar to visual cortex development after eye opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by citations to prior literature (C80-C85) and the current findings. The recommendation to avoid adult frequency band classifications for developing circuits (C86) is a reasonable inference from the data showing progressive frequency increases. This represents appropriate contextualization of the findings within the broader developmental neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "PV expression and FS characteristics do not completely overlap. SOM neurons might contribute to early oscillatory activity (12-20 Hz) before FS interneuron maturation. Pyramidal neuron developmental changes, though not detected in extracellular recordings, likely contribute to gamma maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87, C89-C91 acknowledge limitations and propose speculative mechanisms. C87 is supported by citations. C89 is explicitly speculative about SOM contribution at early ages. C91 infers pyramidal contributions based on prior literature rather than current data. These are reasonable hypotheses but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "GABAergic transmission matures during postnatal development, with GABA switching from depolarizing to hyperpolarizing during the second postnatal week and IPSC kinetics accelerating until the fourth week. The observed gamma frequency increase provides experimental evidence for computational predictions linking IPSC kinetics to gamma frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 integrate prior literature (C94-C99, supported by citations) with current findings (C100). The connection between known GABAergic maturation and observed gamma acceleration is logical and well-supported. However, this is correlative evidence; direct manipulation of IPSC kinetics was not performed. The claim appropriately positions the findings as 'experimental evidence' rather than proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C72",
+      "C73",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Gamma oscillations are prominent in cerebral cortex and important for cognitive function. Gamma dysfunction occurs in neurodevelopmental disorders and emerges during development. Understanding developmental gamma dynamics may reveal the timeline of disease-related deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14, C72-C73, C101-C103 provide background context and motivation, all supported by appropriate citations to prior literature. C103 is speculative about future implications but appropriately qualified. These claims establish the scientific rationale for the study rather than presenting new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "The temporal dynamics of fast oscillations are similar in anesthetized and non-anesthetized states, though magnitude is higher in non-anesthetized mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by experimental data comparing both conditions (Figure 1d shows both) and citation to prior work. This validates that the developmental trajectory is not an artifact of anesthesia, strengthening the biological relevance of the findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1672 @@
+{
+  "submission": {
+    "id": "bf39309a-3253-4729-a495-b7a43f8b51f2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:41:42.002142Z",
+    "updated_at": "2025-12-02T06:41:42.002142Z"
+  },
+  "content": [
+    {
+      "id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "submission_id": "bf39309a-3253-4729-a495-b7a43f8b51f2",
+      "content_type": "manuscript",
+      "content_text": "# Can Hamilton\u2019s rule be violated?\n\n## Authors\n\n- Matthijs van Veelen<sup>1</sup> ([ORCID: 0000-0002-8290-9212](https://orcid.org/0000-0002-8290-9212)) \u2020\n\n### Affiliations\n\n1. CREED University of Amsterdam Amsterdam The Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow generally Hamilton\u2019s rule holds is a much debated question. The answer to that question depends on how costs and benefits are defined. When using the regression method to define costs and benefits, there is no scope for violations of Hamilton\u2019s rule. We introduce a general model for assortative group compositions to show that, when using the counterfactual method for computing costs and benefits, there is room for violations. The model also shows that there are limitations to observing violations in equilibrium, as the discrepancies between Hamilton\u2019s rule and the direction of selection may imply that selection will take the population out of the region of disagreement, precluding observations of violations in equilibrium. Given what it takes to create a violation, empirical tests of Hamilton\u2019s rule, both in and out of equilibrium, require the use of statistical models that allow for identifying non-linearities in the fitness function.\n\n## Introduction\n\nHamilton\u2019s rule (Hamilton, 1964a; Hamilton, 1964b) states that pro-social, altruistic behaviour will be selected for if $rb>c$, where $b$ are the benefits to the recipient, $c$ the costs to the donor, and $r$ is the relatedness between them. There is however no consensus concerning how generally this rule applies. Some claim that Hamilton\u2019s rule is completely general (Abbot et al., 2011). Others claim that is almost always wrong (Nowak et al., 2010). Recently it has been suggested that the reason why there is disagreement about the generality of Hamilton\u2019s rule, is that different participants in the debate have different definitions of costs and benefits (Birch, 2014; Birch and Okasha, 2015; van Veelen et al., 2017). Some define costs and benefits using the regression method (Gardner et al., 2011; Marshall, 2011). With this definition, Hamilton\u2019s rule is claimed to always hold, and this version of Hamilton\u2019s rule therefore is also referred to as the general version of Hamilton\u2019s rule, or HRG (Birch, 2014). Others use the counterfactual method to determine costs and benefits (Karlin and Matessi, 1983; Matessi and Karlin, 1984; Matessi and Karlin, 1986; van Veelen et al., 2017). With this definition, Hamilton\u2019s rule is claimed to hold only if the interaction is characterized by \u2018generalized equal gains from switching\u2019, or, in other words, if the fitness effects of one individual changing from defection to cooperation are independent of the behaviour of the others, including the recipient (van Veelen et al., 2017).\n\nIn what follows, we will consider both definitions, and explore the scope for violations. With the regression method, we will see that there is an identification problem; there are cases in which there are actually multiple linear specifications, leading to multiple Hamilton\u2019s rules, all of which hold. Hamilton\u2019s rule, using the regression method, therefore is not necessarily uniquely defined. For every given specification, however, Hamilton\u2019s rule cannot be violated. This is a short summary of a point made in Section 4 of van Veelen et al., 2017.\n\nIn the main part of the paper, we will present a general model of assortative group compositions, which we combine with the counterfactual method for computing costs and benefits. For this model, we define population structure profiles, which reflect the distribution of group compositions that the population structure puts typical mutants in. In combination with the shape of the fitness function, these population structure profiles determine whether invading co-operators, or invading defectors, have a selective advantage. We will find that this allows for violations of Hamilton\u2019s rule. Part of the reason why these violations can occur, is that relatedness $r$ in Hamilton\u2019s rule is a one-dimensional measure for population structure, while the population structure profile that is relevant for the direction of selection is a richer description of population structure. Violations in equilibrium, however, may not always be possible, because selection can also take a population out of the region where Hamilton\u2019s rule and the direction of selection disagree. This happens, for instance, in examples with synergies.\n\nIn the final section, we discuss implications for empirical tests of Hamilton\u2019s rule. The empirical literature is regularly lacking a precise description of what violations would look like, or how to identify them in the data. Because the regression method does not allow for violations, an empirical test of Hamilton\u2019s rule, using the regression method, is not a meaningful exercise. With the counterfactual method, violations are possible, although observing them either requires studying out-of-equilibrium dynamics, or studying systems that allow for in-equilibrium violations. In both cases non-linear statistical models should be allowed for.\n\n## The regression method\n\nThe regression method defines costs and benefits according to an ordinary least squares regression. The fitness of individuals is regressed on two or more variables. One of those variables is their own level of cooperation, which may be a binary value, in case there are only co-operators and defectors. We will denote this variable by $x_{se}$ \u2013 with\u00a0$se$ for self \u2013 and minus the regression coefficient of that variable is then defined as the cost of cooperation. The other variables are levels of cooperation for different types of interactants \u2013 such as, for instance, $x_{si}$ for siblings and $x_{co}$ for cousins. The benefits of having a cooperative sibling then is the regression coefficient of $x_{si}$, and the benefits of having a cooperative cousin is the regression coefficient of $x_{co}$. Many models and many empirical studies focus on one type of interaction \u2013 such as interactions between siblings only \u2013 but here we also want to discuss the issue of model specification, and therefore it will be useful to allow for the possibility that there are different types of interactions happening at the same time \u2013 as Hamilton did in the original paper (Hamilton, 1964a; Hamilton, 1964b). This allows us to consider different specifications. In what follows, we will think of an example in which both siblings and cousins may have an effect, where roman numeral I refers to a linear specification that includes siblings only, and II to a linear specification that includes both siblings and cousins.\n\nThe relatedness between siblings in this version of Hamilton\u2019s rule is the covariance of $x_{se}$ and $x_{si}$, divided by the variance of $x_{se}$, and the relatedness between cousins is defined in the same way. With this definition of costs, benefits and relatedness, Hamilton\u2019s rule always holds, but it is important to realize that it does so regardless of the linear specification that is chosen (van Veelen et al., 2017). In our example, with siblings and cousins, that means that for any two time periods, be it in a model or in a dataset, the change in average cooperativeness $\u0394x\u00af$ equals both\n\n$$\n\u0394x\u00af=r_{si}b_{si,I}\u2212c_{I}\n$$\n\nand\n\n$$\n\u0394x\u00af=r_{si}b_{si,II}+r_{co}b_{co,II}\u2212c_{II}\n$$\n\nThe costs and benefits of cooperation carry and index I or II in the subscript, because the value of the regression coefficients may depend on the specification (see Figure 1). Not including cousins in the specification means that $b_{co,I}$ is set to $0$. It is important to realize that Hamilton\u2019s rule holding does not mean that the specification chosen accurately reflects the way in which fitness\u2019s depend on whether one is a co-operator oneself, and on how many siblings and how many cousins are co-operators. Neither specification might represent the true fitness function, and still Hamilton\u2019s rule will hold for both. Relatednesses here do not depend on the model specification (see Section 4 of van Veelen et al., 2017 for a formal derivation).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41901/elife-41901-fig1-v2.jpg)\n\n**Figure 1.:** The value of coefficients $\\beta_{se}$ and $\\beta_{si}$ may depend on the specification chosen.If $x_{co}$ is included (as in specification II), these values will be different from when $x_{co}$ is not included (specification I). Including an interaction term (III) or a quadratic term (IV) will also make a difference for the value of $\\beta_{se}$ and $\\beta_{si}$. All specifications that are linear, result in Hamilton\u2019s rules, all of which agree with the direction of selection. Hamilton\u2019s rule with specification I says that $r_{si}b_{si,I}\u2212c_{I}>0$ if and only if $\u0394x\u00af>0$ \u2013 where $b_{si,I}$ is the value of $\\beta_{si}$, and $c_{I}$ is minus the value of $\\beta_{se}$ in this specification. Hamilton\u2019s rule with specification II says that $r_{si}b_{si,II}+r_{co}b_{co,II}\u2212c_{II}>0$ if and only if $\u0394x\u00af>0$ \u2013 where $b_{si,II}$ is the value of $\\beta_{si}$, $b_{co,II}$ is the value of $\\beta_{co}$, and $c_{II}$ is minus the value of $\\beta_{se}$ in this specification.\n\nHamilton\u2019s rule according to the regression method therefore is not necessarily uniquely defined; only if it happens to be the case that $b_{co,II}=0$ do both versions coincide in this example. To make it uniquely defined, the regression method would need to be combined with a way to choose between specifications \u2013 and with data, applying statistical tests seems to be a natural way to do that. Such a way to choose should then also be applied, not just when choosing between linear specifications, but also when choosing between linear and non-linear ones, and between different non-linear ones. Hamilton\u2019s rule according to the regression method therefore cannot both be uniquely defined, and fully general, because having it well-defined would imply that in some cases non-linear specifications would have to be chosen, while Hamilton\u2019s rule being general crucially depends on the specification being linear. But even if Hamilton\u2019s rule is not always uniquely defined, it still holds for any given linear specification. Whichever linear specification is chosen, this should therefore never lead to a violation.\n\n## The counterfactual method, applied to a general model of assortment in groups of equal size\n\nWith the counterfactual method, the cost of cooperation is defined as the difference between an individual\u2019s fitness if it defects, and its fitness if it cooperates. Similarly, the benefits to another individual are defined as the difference cooperation makes for that other individual\u2019s fitness. In the relatively simple setup considered here, we assume that individuals interact within groups of size $n$, which implies that a model of dyadic interactions would mean $n=2$. Their fitnesses will depend on the number of co-operators in their interaction group, and on whether they are a co-operator or a defector themselves; $\\pi_{C}(i)$ is the fitness of a co-operator in a group that contains $i$ co-operators, including the individual itself, and $\\pi_{D}(i)$ is the fitness of a defector in a group that contains $i$ co-operators. The cost of cooperation an individual faces, as well as the benefits cooperation confers on the others, thereby may also depend on what the rest of the group it finds itself in consists of.\n\nA population structure here is a function that represents how the composition of the population depends on the overall frequency $p$ of co-operators; $f_{i}(p)$ is the fraction of groups with $i$ co-operators in it, at overall frequency $p$. These have to be defined consistently, so that these frequencies always add up to one ($\\sum_{i=0}^{n}f_{i}(p)=1$), and so that $p$ is indeed the overall frequency of co-operators ($\\sum_{i=0}^{n}\\frac{i}{n}f_{i}(p)=p$). The cost of cooperation in a population is now the average cost, given the distribution of group types, and these may very well vary with $p$.\n\nThe counterfactual method dates back to Karlin and Matessi, 1983, Matessi and Karlin, 1984,\u00a0and Matessi and Karlin, 1986, who in their evaluation of whether or not Hamilton\u2019s rule holds moreover did not allow for costs to vary with $p$. We do allow for costs and benefits to depend on $p$. Section 3 in van Veelen et al., 2017 also discusses some additional differences between the original definition and the one used here.\n\n### Selection\n\nIn order to answer the question whether or not mutant co-operators will be able to invade a population of defectors, one would have to consider the type of group the average mutant co-operator would find itself in, given the population structure. The probability that a mutant co-operator finds itself in a group with in total $i$ co-operators is\n\n$$\nu__{i}=limp\u21930\\frac{\\frac{i}{n}f_{i}(p)}{p},i=0,...,n\n$$\n\nThe vector $u_$, with elements as defined above, could be called the \u201cpopulation structure profile\u201d at\u00a0$p=0$. Its counterpart $u\u00af$ at $p=1$\u00a0will be defined in the same way:\n\n$$\nu\u00af_{i}=limp\u21911\\frac{\\frac{n\u2212i}{n}f_{i}(p)}{1\u2212p},i=0,...,n\n$$\n\nCo-operators can invade defectors if their average fitness at $p=0$ is larger than the average fitness of defectors, who at $p=0$ only find themselves in groups with defectors only, for any population structure.\n\n$$\n\\sumi=1n\u00a0u__{i}\\pi_{C}(i)>\\pi_{D}(0)\n$$\n\nDefectors on the other hand can invade co-operators if their average fitness at $p=1$ is larger than the average fitness of co-operators, who at $p=1$ only find themselves in groups with co-operators only.\n\n$$\n\\sumi=0n\u22121\u00a0u\u00af_{i}\\pi_{D}(i)>\\pi_{C}(n)\n$$\n\n### Hamilton\u2019s rule\n\nHamilton\u2019s rule says that cooperation will be selected for if $rb>c$. We will rewrite this, at $p=0$ and at $p=1$, so as to get inequalities that look more like Equations 1 and 2. Relatedness $r$ measures how much more likely co-operators are to be matched with other co-operators, compared to how likely defectors are to be matched with co-operators; $r=P(C|C)\u2212P(C|D)$. In the limit of $p\u21930$, the share of defectors that is matched with co-operators goes to $0$, whatever the population structure. With population structure, the average mutant co-operator however might encounter fellow mutant co-operators. This therefore reduces to $r=P(C|C)$, which one can rewrite as $r=\\sum_{i=0}^{n\u22121}u__{i}\\frac{i\u22121}{n\u22121}$. With the counterfactual method, aggregate benefits at $p=0$ are $(n\u22121)[\\pi_{D}(1)\u2212\\pi_{D}(0)]$, while costs are $\\pi_{D}(0)\u2212\\pi_{C}(1)$. With those, one can rewrite Hamilton\u2019s rule at $p=0$ as follows (see Appendix\u00a01 for more details):\n\n$$\n\\sumi=1n\u00a0u__{i}{\\pi_{C}(1)+(i\u22121)[\\pi_{D}(1)\u2212\\pi_{D}(0)]}>\\pi_{D}(0)\n$$\n\nComparing the equation that indicates when cooperation is selected for (Equation 1) and the one for Hamilton\u2019s rule (Equation 3), we first of all find that they are one and the same equation if the fitness function satisfies $\\pi_{C}(i)=\\pi_{C}(1)+(i\u22121)[\\pi_{D}(1)\u2212\\pi_{D}(0)]$. In this case, every additional co-operator increases the payoff of a fellow co-operator by just as much as the first co-operator increased the payoff of the defectors in an otherwise all-defector group. Hamilton\u2019s rule will then hold at $p=0$ for any population structure profile $u_$.\n\nIf the fitness function satisfies $\\pi_{C}(i)\\geq\\pi_{C}(1)+(i\u22121)[\\pi_{D}(1)\u2212\\pi_{D}(0)]$ for all $i=1,...,n$, then Hamilton\u2019s rule can be violated at $p=0$. Many cases with synergies would fall under this category. In this case Hamilton\u2019s rule can, however, still not be violated by a population that is in equilibrium at $p=0$. If cooperation is selected against at $p=0$, then that by definition means that Equation 1 does not hold. The left hand side of Equation 3 now is even smaller than the left hand side of Equation 1, so if Equation 1 does not hold, and co-operators are selected against at $p=0$, also Equation 3 does not hold, and $rb<c$. This implies that there is no violation. If, on the other hand, cooperation is selected for at $p=0$, then, by definition, Equation 1 does hold. Now it is possible that Equation 3 does not hold, and $rb<0$, but since cooperation is selected for, the population moves away from $p=0$, and therefore it moves away from where the violation is. Therefore the violation at $p=0$ cannot be observed in equilibrium.\n\nAt the other end, where $p=1$, Hamilton\u2019s rule can be rewritten in a similar way. Here, $rb<c$ if\n\n$$\n\\sumi=0n\u22121\u00a0u\u00af_{i}{\\pi_{D}(n\u22121)\u2212(n\u2212i\u22121)[\\pi_{C}(n)\u2212\\pi_{C}(n\u22121)]}>\\pi_{C}(n)\n$$\n\nHere, Equation 2 and Equation 4 are one and the same equation if the fitness function satisfies $\\pi_{D}(i)=\\pi_{D}(n\u22121)\u2212(n\u2212i\u22121)[\\pi_{C}(n)\u2212\\pi_{C}(n\u22121)]$. In this case, every additional defector decreases the payoff of a fellow defector by just as much as the first defector did to the co-operators in an otherwise all-co-operator group. If this is true, then Hamilton\u2019s rule will hold at $p=1$ for any population structure profile $u\u00af$.\n\nIf the fitness function satisfies $\\pi_{D}(i)\\geq\\pi_{D}(n\u22121)\u2212(n\u2212i\u22121)[\\pi_{C}(n)\u2212\\pi_{C}(n\u22121)]$ for all $i=0,...,n\u22121$, then Hamilton\u2019s rule can be violated at $p=1$, but, again, not in equilibrium. If defection is selected against at $p=1$, then Equation 2 by definition does not hold. Under the condition on the fitness function, the left hand side of Equation 4 is now even smaller than the left hand side of Equation 2, so if defectors are selected against at $p=1$, then also Equation 4 does not hold, and $rb>c$. This, again, implies that there is no violation. If, on the other hand, defection is selected for at $p=1$, there can be a violation, but this cannot be observed in equilibrium, because defectors being selected for means that the population actually moves away from where the violation is.\n\nSo far we have an inequality that prevents violations in equilibrium at $p=0$, and another one that prevents violations at $p=1$. Both concern only the fitness function. If, on top of that, the population structure and the fitness function combined imply that the difference in fitness between co-operators and defectors increases in $p$, then the system does not allow for any violations in equilibrium. The reason is that the latter condition would imply that there simply are no stable interior equilibria. Many systems with synergies will satisfy all three conditions, and therefore preclude in-equilibrium violations of Hamilton\u2019s rule. Systems with anti-synergies are much more conducive to violations in equilibrium, especially in mixed equilibria, in which co-operators and defectors coexist. Both Figures 2 and 3 illustrate that.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41901/elife-41901-fig2-v2.jpg)\n\n**Figure 2.:** In panels A, B and C the bottom part depicts population structure profiles of mutant co-operators at $p=0$ (blue) and of mutant defectors at $p=1$ (red). In panel D the bottom part depicts the distribution of what group types co-operators (blue) and defectors (red) find themselves in, both at the same intermediate equilibrium value for $p$. No violations of Hamilton\u2019s rule with equal gains from switching. In panels A and B, the fitness function is $\\pi_{C}(i)=0.6+2(i/n)$ and $\\pi_{D}(i)=1+2(i/n)$. In panel A the difference in average fitness between co-operators and defectors is $\\pi\u00af_{C}\u2212\\pi\u00af_{D}=\u22120.128$, both at $p=0$ and at $p=1$. Cooperation therefore is selected against at both ends. Inclusive fitness is also $\u22120.128$ at both ends. Panel B has a more assorted population structure, for which this difference, as well as inclusive fitness, is $+0.16$ at both ends, and cooperation is selected for. No violations in equilibrium with synergies. Panel C has the same population structure profiles as panel B, but a different fitness function: $\\pi_{C}(i)=0.5+2(i/n)^{2}$ and $\\pi_{D}(i)=1+2(i/n)^{2}$. Here cooperation is selected against at $p=0$, where $\\pi\u00af_{C}\u2212\\pi\u00af_{D}=\u22120.33$, and selected for at $p=1$, where $\\pi\u00af_{C}\u2212\\pi\u00af_{D}=+0.45$. Inclusive fitness is $\u22120.48$ at $p=0$ and $+0.6$ at $p=1$. Violation in a mixed equilibrium. In panel D, the fitness function is $\\pi_{C}(i)=0.5+2(i/n)^{0.5}$ and $\\pi_{D}(i)=1+2(i/n)^{0.5}$. Here, $\\pi\u00af_{C}\u2212\\pi\u00af_{D}=0$ at $p=0.473$ \u2013 which makes it an equilibrium \u2013 while inclusive fitness is $0.113\\neq0$. Details are in Appendix\u00a01, as are computations of inclusive fitness with costs and benefits according to the regression method instead of the counterfactual method.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41901/elife-41901-fig3-v2.jpg)\n\n**Figure 3.:** Every point in the simplex represents a population state $(f_{0},f_{1},f_{2})$.\u00a0The left down corner is $(1,0,0)$, which has only groups with $0$ co-operators; the right down corner is $(0,0,1)$, which has only groups with $2$ co-operators; the top corner is $(0,1,0)$, which has only groups with $1$ co-operator. The grey lines represent different population structures, all with constant relatedness. Any given grey line gives a population state for every overall frequency $p$ of co-operators. Dynamics make populations move along the line that represents the population structure it faces. All grey lines go through the left down corner, where $p=0$, and the right down corner, where $p=1$. The straight line on the bottom reflects a totally assorted population that has no mixed groups. The higher up, the more mixed groups there are, and the less assortment there is. The highest up grey line represents a well-mixed population. No violations of Hamilton\u2019s rule in equilibrium with synergies. In panel A, $\\pi_{C}(1)=0.1$, $\\pi_{C}(2)=3$, $\\pi_{D}(0)=2$ and $\\pi_{D}(1)=3.1$. The regions where cooperation is selected for (green), and where inclusive fitness is positive (blue) are not the same, but selection always takes populations out of the parts where they disagree. Violations with anti-synergies. In panel B $\\pi_{C}(1)=1.9$, $\\pi_{C}(2)=3$, $\\pi_{D}(0)=2$ and $\\pi_{D}(1)=4.9$. Here populations can settle at mixed equilibria, while inclusive fitness is not $0$. Violations at $p=0$ and $p=1$ are also possible for more extreme choices of $r$.\n\nThe fitness function used in panels A and B of Figure 2 is linear in the number of co-operators in the group. This makes Equation 1 and Equation 3 coincide, as well as Equation 2 and Equation 4. With the quadratic fitness function in panel C, both $\\pi_{C}(i)\\geq\\pi_{C}(1)+(i\u22121)[\\pi_{D}(1)\u2212\\pi_{D}(0)]$ and $\\pi_{D}(i)\\geq\\pi_{D}(n\u22121)\u2212(n\u2212i\u22121)[\\pi_{C}(n)\u2212\\pi_{C}(n\u22121)]$ hold, which implies that there can be no violation in equilibrium, either at $p=0$ or at $p=1$. This fitness function would be unambiguously synergistic; benefits from cooperation increase, and costs decrease with $i$. Combined with a simple population structure, elaborated on in Appendix\u00a01, $\\pi\u00af_{C}(p)\u2212\\pi\u00af_{D}(p)$ moreover increases in $p$, precluding any in-equilibrium violation. Panel D gives an example of a fitness function with anti-synergies, where cooperation is selected for at $p=0$, and selected against at $p=1$, and where there is an equilibrium frequency of co-operators in between $0$ and $1$. At that equilibrium $p$, inclusive fitness is not $0$, which makes Hamilton\u2019s rule disagree with the direction of selection.\n\nGames with 2 players and 2 actions are naturally subsumed under this framework, and they allow for whole trajectories to be depicted (Figure 3). A natural way to define population structures with 2 players and constant relatedness $r$ would be to choose $f_{0}(p)=(1\u2212r)(1\u2212p)^{2}+r(1\u2212p)$; $f_{1}(p)=(1\u2212r)2p(1\u2212p)$; and $f_{2}(p)=(1\u2212r)p^{2}+rp$. In this case $u_=[0,1\u2212r,r]$ \u2013 implying that a mutant co-operator never finds itself in a group with 2 defectors, obviously; faces a defector with probability $1\u2212r$; and another co-operator with probability $r$ \u2013 and $u\u00af=[r,1\u2212r,0]$. This is combined with two prisoners dilemma\u2019s; one with synergies for panel A:\n\n$$\nCDC30.1D3.12\n$$\n\nand one with the opposite for panel B:\n\n$$\nCDC31.9D4.92\n$$\n\nIn the first one, selection always takes the population out of the region where inclusive fitness disagrees with the direction of selection. In the second one there are mixed equilibria, where neither co-operators or defectors are selected for, while inclusive fitness is not $0$.\n\nA similar point is made with Figures 30 and 31 in van Veelen et al. (2017). The conclusion there \u2013 that there is \u2018no scope for finding violations in equilibria where either one has gone to fixation\u2019 \u2013 is too strong though; with anti-synergies, violations at $p=0$ and $p=1$ are possible.\n\nWhether or not Hamilton\u2019s rule will hold, with costs and benefits defined according to the counterfactual method, depends on the combination of fitness function and population structure. How often we should expect Hamilton\u2019s rule to hold therefore depends on what we think the distribution of fitness functions and population structures is. Whether reasonable assumptions concerning these distributions lead to many or not so many violations of Hamilton\u2019s rule is an interesting question for further research that we do not pursue here.\n\n## Implications for empirical tests of Hamilton\u2019s rule\n\nThere is a number of studies that explicitly set out to test Hamilton\u2019s rule empirically. A recent survey by Bourke (2014) includes Bourke (1997); Emlen and Wrege (1989); Gadagkar (2010); Hogendoorn and Leys (1993); Krakauer (2005); Loeb (2003); Metcalf and Whitt (1977); Nonacs and Reeve (1995); Noonan (1981); Pfennig et al. (1999); Queller and Strassmann (1988); Richards et al. (2005) and Stark (1992). These studies typically consider a behaviour that is present, and therefore presumably selected for, estimate its benefits and costs by linear regression, estimate relatedness, and decide that Hamilton\u2019s rule holds if $rb>c$, and is violated if $rb<0$, where the $r$, $b$ and $c$ now refer to the estimated values of relatedness, costs and benefits. Although intuitively appealing, it is worth realizing that this does not constitute a test of either of the two versions of Hamilton\u2019s rule \u2013 where it should be noted that these empirical studies were done before it was even recognized that there are different ways to define costs and benefits to begin with.\n\nIf we think of Hamilton\u2019s rule with costs and benefits defined according to the regression method, then we have seen that this version of Hamilton\u2019s rule will hold for any linear specification, applied to any thinkable way in which fitnesses in reality could depend on the behaviour of individuals themselves, and on the behaviour of those they interact with. In other words, if we were to treat Hamilton\u2019s rule being valid as the hypothesis, then the hypothesis covers everything, and the null hypothesis is void, as no true way in which fitness would be determined by the behaviour of self and others would go with Hamilton\u2019s rule not holding (see also Nowak et al., 2017). This would also inevitably hamper a good statistical analysis, because, given that there is no true model for which Hamilton\u2019s rule does not hold, there is no meaningful way to define the distribution of inclusive fitnesses (values of $rb\u2212c$) under the null hypothesis, which one then would want to use to test if $rb\u2212c$ really is larger than $0$.\n\nOn the other hand, if we think of Hamilton\u2019s rule with costs and benefits defined according to the counterfactual method, then estimating costs and benefits in a linear model without considering the possibility of non-linearities would not allow us to uncover violations, because those, as we have seen, require the fitnesses to be non-linear. One solid way to decide that Hamilton\u2019s rule is not violated would be to allow for a non-linear model, and reject all non-linearities, in favour of a linear model. That, however, is not what these papers do.\n\nOur observations therefore first of all imply that meaningful empirical tests would have to consider the version of Hamilton\u2019s rule that uses the counterfactual method for computing costs and benefits, and that they should use statistical models that allow for non-linearities. Our observations moreover indicate where to look for violations, and where not to look, as there is a variety of settings in which violations are not expected. First of all, one should look at systems where how much being a co-operator instead of a defector contributes to the fitness of others, and takes away from the fitness of oneself, depends on what the others do. Moreover, if we consider a system that is in equilibrium, we would not observe violations if the three 'synergy-conditions\u2019 are satisfied, while systems that (also) have anti-synergies do allow for in-equilibrium violations (see Figure 4). The presence of polymorphisms, where co-operators and defectors coexist, can be a good indication that such anti-synergies are present.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41901/elife-41901-fig4-v2.jpg)\n\n**Figure 4.:** The three synergy conditions are that $\\pi_{C}(i)\\geq\\pi_{C}(1)+(i\u22121)[\\pi_{D}(1)\u2212\\pi_{D}(0)]$ for all $i=1,...,n$, that $\\pi_{D}(i)\\geq\\pi_{D}(n\u22121)\u2212(n\u2212i\u22121)[\\pi_{C}(n)\u2212\\pi_{C}(n\u22121)]$ for all\u00a0$i=0,...,n\u22121$, and that $\\pi\u00af_{C}(p)\u2212\\pi\u00af_{D}(p)$ increases with $p$.\n\n### Distinct types\n\nWe would also not expect violations in cases where the level of help is a continuous trait, the fitness function is smooth, and where the levels of cooperation across individuals are relatively homogeneous, making fitness effects approximately linear. In models with continuous levels of help, populations can then settle at an equilibrium value of cooperation, where Hamilton\u2019s rule is satisfied, provided that there are no branching events (see Section 6 in van Veelen et al., 2017). What is needed for violations, therefore, is that there are distinct types; co-operators and defectors. Some behaviours or properties are binary by nature; one either jumps into a river in an effort to save someone, or not. Also eating a fellow brood member is an all or nothing trait (Pfennig et al., 1999). When the level of cooperation is a continuous trait, one can however also get distinct types to evolve after a branching event (Doebeli et al., 2004). Notice that also at a singular point where the system branches, Hamilton\u2019s rule, which predicts no change, does not agree with what happens (Doebeli and Hauert, 2006).\n\n### Spurious violations\n\nWhen $b$ and $c$ are estimated linearly, we should not expect violations of Hamilton\u2019s rule. This makes it all the more surprising that 4 out of the 12 explicit tests of Hamilton\u2019s rule, surveyed in (Bourke, 2014), all of which estimate costs and benefits with a linear model, do find apparent violations. A natural question to ask is where those violations come from. One prime candidate has to do with the fact that the result that Hamilton\u2019s rule always holds, if costs and benefits are defined using the regression method, depends on using the cooperativenesses of the individuals involved, not just for computing costs and benefits, but also in the formula for relatedness. The relatedness between siblings, for instance, in this version of Hamilton\u2019s rule, would be $cov(x_{se},x_{si})/var(x_{se})$, where $x_{se}$ refers to the cooperativeness of self and $x_{si}$ to the cooperativeness of the sibling. Here it is good to notice that if these variables refer to data, this is best described, not as relatedness itself, but as an estimator of relatedness. If a different estimator of relatedness is used, for instance based on gene sequencing, then that would include genes for traits other than cooperative behaviour. The difference between these two estimators can make for a violation. The probability of this happening decreases as sample size increases. For all sample sizes, large and small, Hamilton\u2019s rule, using $cov(x_{se},x_{si})/var(x_{se})$ for relatedness, will hold. With small samples, costs, benefits, and relatedness may all vary quite a bit \u2013 although only in concert, because Hamilton\u2019s rule will still have to hold \u2013 and with $cov(x_{se},x_{si})/var(x_{se})$ possibly being far away from the true relatedness, the discrepancy between it and another estimator for relatedness might be large enough to create an apparent violation of Hamilton\u2019s rule. Other reasons for finding violations when estimating costs and benefits linearly are also possible (see Section 8 of van Veelen et al., 2017), and all of them are spurious.\n\n### Smith et al., 2010\n\nIn order to be able to find violations of Hamilton\u2019s rule, with benefits and costs defined according to the counterfactual method, one must allow for a non-linear statistical model. The study that comes closest to that ideal is Smith et al., 2010 (see also Chuang et al., 2009; Chuang et al., 2010). This experiment does a non-linear estimation of sporulation efficiency of Myxococcus xanthus, resulting in fitness functions that would imply that, already in a well-mixed population, co-operators can invade defectors, and defectors can invade co-operators. Combined with a range of population structures, this would make a population settle at mixed overall frequencies of co-operators. This study however also has a few conceptual imperfections. Most of the non-linearity it picks up, results from considering Wrightian fitness\u2019s (numbers of offspring) rather than Malthusian fitness\u2019s (growth rates); see Wu et al. (2013). For small fitness effects that would not matter too much, but the aggregate fitness effects are not small here. Another drawback is that the experiment does not include an independent observation of a population structure. For the experiment, a combination of group compositions is chosen. The growth rates at these different group compositions are used to estimate the fitness function \u2013 which it is perfect for. The group compositions themselves, as chosen by the experimenter, are also the sole input for calculations characterizing population structure, which makes it not a proper empirical observation of a population structure. In spite of these drawbacks, this study is the closest to a proper empirical test of Hamilton\u2019s rule.\n\n### Polymorphisms\n\nWhile systems of microorganisms with mixed equilibria seem good candidates, one will have to be careful with identifying the reasons for polymorphisms. In systems where one type can invade the other, and vice versa, already in a well-mixed population (Smith et al., 2010; MacLean and Gudelj, 2006; MacLean et al., 2010; Gore et al., 2009), the reason for stable coexistence may have nothing to do with population structure. If fitness is moreover maximized at intermediate mixtures, it also hard to unambiguously qualify one strain as cooperative and the other as defecting (MacLean et al., 2010). Systems like this might nonetheless point to possible candidates, if there is in fact structure in the population. With microorganisms, one would then naturally want to switch from counting discrete numbers of co-operators to a continuous variable for group compositions, measuring the within group frequency of co-operators. Appendix\u00a01 provides a continuous version that allows for all the equivalent computations needed to establish whether or not Hamilton\u2019s rule is violated empirically.\n\n### Wang and Lu, 2018\n\nA study that does look at polymorphisms is Wang and Lu (2018). In this study, players have one of two different roles; there are breeding pairs, which are the potential recipients of help, and potential helpers. This implies that there is no room for the strategic interaction that could create the non-linearities needed for possible violations; costs and benefits of helping at the nest cannot depend on the recipient type, because the recipient is not facing the same choice. Also in this study, therefore, there is no scope for violations of Hamilton\u2019s rule.\n",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "42c57dc0-2b37-49c2-9fa4-a4f031ed9d1c",
+      "submission_id": "bf39309a-3253-4729-a495-b7a43f8b51f2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Doebeli, University of British Columbia Canada\n\nReviewers:\n- Burt Simon, University of Colorado, Denver United States\n\n## Review text\n\nDOI: [10.7554/eLife.41901.016](https://doi.org/10.7554/eLife.41901.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"How to test Hamilton's rule empirically\" for consideration by eLife. Your article has been reviewed by a Senior Editor, a Reviewing Editor and three peer reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Burt Simon (Reviewer #1); E\u00f6rs Szathm\u00e1ry (Reviewer #2).\n\nAs you can see from the reviewer reports, opinions are divided about the merits of the paper. Based on these reports, your paper is unfortunately not publishable in eLife in its current form. However, we encourage you to resubmit a new version of your manuscript, as we think that it contains an important and useful message.\n\nI strongly encourage you to consider the following points in case you decide to submit a new version of the paper.\n\n1) Two reviewers mentioned that the paper should have a different title, and one report goes into some details explaining the reasons for this. I concur with those explanations. Essentially, your paper contains a nice mathematical model that allows you to apply the counterfactual method for calculating HR and to classify situations in which HR predicts the directions of evolution, and situations in which it does not. After explaining that HR always trivially makes the right predictions when HR is calculated using the regression method, I think the model and the classification of different cases should take central stage. I concur with reviewer 1 that putting the question of empirical tests of HR in the centre misses the mark, and that the empirical perspective should be scaled back and only discussed after the model is explained. I encourage you to take the comments of reviewer 1 into consideration in this regard. Putting the experimental perspective upfront, and in particular putting it in the title, slants the paper in wrong direction in our view. (My suggestion for a title would e.g. contain something like \"testing HR with a mathematical model\u2026\".)\n\n2) One of the reviewers suggest that your results are not new. I agree with this to some extent, e.g. with regard to the tautological nature of the regression method. I do not share the reviewer's view with regard to the counterfactual model. The reviewer points to two figures in one of your 2017 papers, however, despite those figures being similar to Figure 4 in the current paper, the model used here is quite different, and more general, and I therefore think that its publication is warranted. However, I would urge you to explain in some detail what is different from previous publications, and in that regard, it would again seem advantageous to put the model at central stage (rather than the empirical question).\n\n3) It would be good to present some results as to the overall \"likelihood\" that HR fails in the model presented. There are a few places where the argumentation is vague, and it would be good if it were made more quantitative. For example, the paper states that when the system moves away from (unstable) equilibria at which HR fails, it then moves into regions where HR holds again (e.g. subsection \u201cHamilton\u2019s rule\u201d). But as far as I can tell, the claim that HR holds in the regions into which the systems moves is not substantiated. Also, the first paragraph of the Discussion section seems to imply that HR always holds with continuous traits, but the logic there is not clear. E.g. it says that \"Alternatively,\u2026\", but then does not go into whether HR holds or not in the case of branching, but only states that rather obvious fact that branching leads to conclusion. In fact, I would say that HR does not hold at a branching point, because at such a point HR predicts that there is no evolution (HR=0), even though in fact all (nearby) types can invade! Perhaps this should be discussed in more detail.\n\n4) Finally, I would recommend to think about whether it would be a good idea to comment on the possibility of HR failing in other \"general\" models, e.g. the one by Lehmann et al., 2016 (Please note that including such material is not a requirement for a resubmission, I would simply recommend considering this.)\n\nWhen resubmitting your paper, please address the above points, as well as all the points raised by the reviews whenever possible.\n\nReviewer #1:\n\nI think the population model in the appendix is worthy of publication on its own. it contains enough parameters and flexibility to study the evolution of cooperation in a wide variety of idealized structured populations. The mathematics is both nontrivial and aesthetically pleasing, and there are a number of important aspects of the model that can be analyzed exactly. It's a very nice model that is (literally) tailor made for studying Hamilton's rule.\n\nI'm not nearly as enthusiastic about some of the other aspects of the paper. To start, I don't think the title is a good description of the contents. From the title I was expecting the paper to describe an experiment designed to test Hamilton's rule that a scientist could perform with (say) microbes, and/or an informative review/critique of previous attempts to test HR empirically. The review of previous experiments in the last section of the main text assumes the reader is already familiar with those experiments. I was not familiar with them, and after reading the present paper, I still don't know how those experiments were designed or why the results did or didn't support HR.\n\nSo the paper is not really about empirical experiments for testing HR. What it seems to really be about is being specific about what it means for Hamilton's rule to fail in a mathematical model, and in which scenarios this is even possible. So, a better title might be \"How to test Hamilton's rule with a mathematical model\".\n\nA scientist could (perhaps) read this paper and then design a proper experiment to test HR. If this is the intended purpose of the paper, then it has mostly succeeded. The reason the paper doesn't fully succeed (in my view) is that as nice as the mathematical model is, it may not really apply to any biological experiment that could actually be performed. In order for the mathematics to be relevant, the microbes would need to be cooperators or defectors with an unambiguous way to tell which is which, and groups would need to be carefully placed into separate containers so the desired population structure is in place. It would also need to be true that reproduction in the population is synchronized. It may be possible to do all these things. But (in my view) the experiment wouldn't really be necessary anyway. If someone can find parameter settings for the model where HR fails, where the parameters at least loosely align with a real biological system, then the case is closed: HR does not always hold. Why isn't this enough? If the author can make the (philosophical) argument that to show HR doesn't always hold, it is sufficient to consider mathematical models, I think that would be an important contribution.\n\nMy suggestion is that the paper should be rearranged so the model and its analysis (the Appendix) is center stage. It would be nice to then see an example worked out where (of course) the regression method yields {r,b,c} that is consistent with HR, but the counterfactual method yields a different {r,b,c} that is not. Perhaps parameter settings could be chosen randomly (repeatedly) and statistics gathered to get at the interesting question of how often HR holds in the model.\n\nReviewer #2:\n\nThis is very valuable paper. It contributes a lot of clarity to a field that traditionally has been shaped substantially by belief and/of tautology. There are stronger philosophical contributions to be drawn later - but that is another (scary) matter.\n\nThe paper can be published as it is.\n\nReviewer #3:\n\nThis paper is titled \"How to test Hamilton's rule empirically.\" From this title, one might expect a series of instructions or guidelines on what to measure to test Hamilton's Rule in the real world, or at least a discussion and critique of how existing empirical tests have gone about doing this. But instead, the paper is almost entirely a disquisition on when different versions of Hamilton's rule may or may not hold at the equilibrium of a discrete, two-trait model.\n\nThere are two arguments in the paper, one for the regression definition of HR and one for the HR defined by what the author calls the \"counter-factual\" method. The summary of the two arguments are below:\n\n1) Linear regression definition of HR always holds by construction, so no data is required, but the regression coefficients will depend on model specification.\n\n2) The \"counter-factual\" HR always holds with additive fitness, and with positive non-additivity at the two edge equilibria, but with negative non-additivity, it may not hold at the interior equilibrium.\n\nBefore moving on to the content of these arguments (which I think is weak), I should say that both points have been both made, in a substantively identical way, in a previous paper by Van Veelen et al.,(2017). Point 1 is found in their section 4 and point 2 is essentially a rearranged version of the argument in their Sections 3 and 8. In fact, one of the figures in this manuscript, Figure 4, is essentially a replication of Figure 30 and Figure 31 in Van Veelen et al. As far as I can see, the only technically new addition here might be an extension of the argument for non-additive games to N-players but that is a relatively minor technical extension (the mathematical machinery of this is also present in Van Veelen et al.,). I would therefore say this manuscript essentially reproduces previously published material, with no new points being made. Thus, on novelty grounds I don't see why this is publishable in eLife.\n\n1) It is trivially true that the model specification will of course change the regression coefficients inferred from a given statistical model. Does that mean any statistical fitting exercise is just futile? No, because the model fit (or the likelihood of data) given different specifications is informative about potential causal effects. This is of course the purpose of the time-honored theory of quantitative genetics which the author makes not even a passing reference to (e.g., reading McGlothlin et al., 2014, Phil Trans can give the author some idea of how one might use regression and allied statistical methods productively).\n\nBut the author isn't even technically correct when he asserts HR regression cannot fail: *of course* it can: in the sense that RB-C can be positive, but the trait might be going down in frequency due to environmental effects, correlated selection and genetic constraints, etc. The world is not identical to our models which is why we go out and test then.\n\n2) The \"failure\" of the counterfactual method (at the mixed equilibrium of a game with negative synergy) essentially stems from trying to pretend non-additive model can be used to describe an additive system. So, this is not a surprise here (quite apart from the fact that the same author has already made the point), and I think this simple fact is much less useful than the author seems to think. I do believe that empirical researchers tend to use too simplistic versions of HR without thinking carefully about the structure of the interaction in their model system (e.g., see Akcay and Van Cleve, 2016), but there is nothing in the current treatment that provides any positive insight beyond essentially a rehashing of the non-additivity issue in a vaguely hostile way.\n\nIn short, I don't see why this manuscript adds to the literature on empirical testing, certainly beyond other recent papers by the same author. Therefore, I cannot recommend publication.\n",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d5efe9f-b6d3-4d52-a1ac-32619db2bb7c",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C2",
+      "claim": "There is no consensus concerning how generally Hamilton's rule applies.",
+      "claim_type": "EXPLICIT",
+      "source": "There is however no consensus concerning how generally this rule applies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the subsequent citations showing disagreement in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "d91033e3-6743-4c0e-88e1-bb1edfc9a817",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C3",
+      "claim": "Some claim that Hamilton's rule is completely general (Abbot et al., 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "Some claim that Hamilton's rule is completely general (Abbot et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Abbot et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "ef21e1ef-76b0-466a-b2ba-2912ae41b163",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C4",
+      "claim": "Others claim that Hamilton's rule is almost always wrong (Nowak et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "Others claim that is almost always wrong (Nowak et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nowak et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "9c07e1db-b266-4b97-8452-9a921ff32c3f",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C5",
+      "claim": "The reason why there is disagreement about the generality of Hamilton's rule is that different participants in the debate have different definitions of costs and benefits (Birch, 2014; Birch and Okasha, 2015; van Veelen et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently it has been suggested that the reason why there is disagreement about the generality of Hamilton's rule, is that different participants in the debate have different definitions of costs and benefits (Birch, 2014; Birch and Okasha, 2015; van Veelen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Birch, 2014; Birch and Okasha, 2015; van Veelen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "9fafa3d1-9476-4383-93f2-f85247154d80",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C6",
+      "claim": "Some define costs and benefits using the regression method (Gardner et al., 2011; Marshall, 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "Some define costs and benefits using the regression method (Gardner et al., 2011; Marshall, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gardner et al., 2011; Marshall, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "656d3804-4203-4630-837d-9dcce03a6ac2",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C7",
+      "claim": "With the regression method definition, Hamilton's rule is claimed to always hold, and this version is also referred to as the general version of Hamilton's rule, or HRG (Birch, 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "With this definition, Hamilton's rule is claimed to always hold, and this version of Hamilton's rule therefore is also referred to as the general version of Hamilton's rule, or HRG (Birch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Birch, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "4ce4b23b-af6c-4486-9c00-af1273d912a5",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C8",
+      "claim": "Others use the counterfactual method to determine costs and benefits (Karlin and Matessi, 1983; Matessi and Karlin, 1984; Matessi and Karlin, 1986; van Veelen et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Others use the counterfactual method to determine costs and benefits (Karlin and Matessi, 1983; Matessi and Karlin, 1984; Matessi and Karlin, 1986; van Veelen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Karlin and Matessi, 1983; Matessi and Karlin, 1984; Matessi and Karlin, 1986; van Veelen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "449c2d92-74ae-493b-94a9-2393e7e689b9",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C9",
+      "claim": "With the counterfactual method definition, Hamilton's rule is claimed to hold only if the interaction is characterized by 'generalized equal gains from switching', or if the fitness effects of one individual changing from defection to cooperation are independent of the behaviour of the others, including the recipient (van Veelen et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "With this definition, Hamilton's rule is claimed to hold only if the interaction is characterized by 'generalized equal gains from switching', or, in other words, if the fitness effects of one individual changing from defection to cooperation are independent of the behaviour of the others, including the recipient (van Veelen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to van Veelen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "fe8173f6-aec5-4c12-a992-f5adb837065d",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C10",
+      "claim": "With the regression method, there is an identification problem where there are cases in which there are actually multiple linear specifications, leading to multiple Hamilton's rules, all of which hold.",
+      "claim_type": "EXPLICIT",
+      "source": "With the regression method, we will see that there is an identification problem; there are cases in which there are actually multiple linear specifications, leading to multiple Hamilton's rules, all of which hold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the subsequent mathematical derivations in the manuscript and reference to van Veelen et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "2507f6fe-4df1-49c3-9a2e-894222fd62e0",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C11",
+      "claim": "Hamilton's rule, using the regression method, is not necessarily uniquely defined.",
+      "claim_type": "EXPLICIT",
+      "source": "Hamilton's rule, using the regression method, therefore is not necessarily uniquely defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the mathematical analysis showing multiple specifications can lead to different Hamilton's rules.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "1136bd59-a17c-46c0-acef-0c407234bc0c",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C12",
+      "claim": "For every given specification using the regression method, Hamilton's rule cannot be violated.",
+      "claim_type": "EXPLICIT",
+      "source": "For every given specification, however, Hamilton's rule cannot be violated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical derivation and reference to Section 4 of van Veelen et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "c71a0e14-8dc1-4086-9d88-f27e199489f6",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C13",
+      "claim": "When using the counterfactual method for computing costs and benefits, there is room for violations of Hamilton's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduce a general model for assortative group compositions to show that, when using the counterfactual method for computing costs and benefits, there is room for violations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the mathematical model and examples presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "b21fb55b-f5cf-46da-8be3-383909105023",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C14",
+      "claim": "There are limitations to observing violations in equilibrium, as the discrepancies between Hamilton's rule and the direction of selection may imply that selection will take the population out of the region of disagreement.",
+      "claim_type": "EXPLICIT",
+      "source": "The model also shows that there are limitations to observing violations in equilibrium, as the discrepancies between Hamilton's rule and the direction of selection may imply that selection will take the population out of the region of disagreement, precluding observations of violations in equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the mathematical analysis and examples in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "4ab8f585-2c1c-407f-b6d8-16843058e790",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C15",
+      "claim": "Empirical tests of Hamilton's rule, both in and out of equilibrium, require the use of statistical models that allow for identifying non-linearities in the fitness function.",
+      "claim_type": "EXPLICIT",
+      "source": "Given what it takes to create a violation, empirical tests of Hamilton's rule, both in and out of equilibrium, require the use of statistical models that allow for identifying non-linearities in the fitness function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the analysis showing that violations depend on non-linear fitness functions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "f9ed2e74-8c6e-4022-8f1e-28c71435bbe2",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C16",
+      "claim": "The regression method defines costs and benefits according to an ordinary least squares regression.",
+      "claim_type": "EXPLICIT",
+      "source": "The regression method defines costs and benefits according to an ordinary least squares regression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about the regression method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "24f62d63-c469-4a31-93c6-4bdfd5b3f717",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C20",
+      "claim": "With the regression method definition of costs, benefits and relatedness, Hamilton's rule always holds regardless of the linear specification that is chosen (van Veelen et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "With this definition of costs, benefits and relatedness, Hamilton's rule always holds, but it is important to realize that it does so regardless of the linear specification that is chosen (van Veelen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to van Veelen et al., 2017 and the mathematical derivations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "c22d531e-0502-48a9-932a-56de4e01673c",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C21",
+      "claim": "The costs and benefits of cooperation may depend on the model specification chosen.",
+      "claim_type": "EXPLICIT",
+      "source": "The costs and benefits of cooperation carry and index I or II in the subscript, because the value of the regression coefficients may depend on the specification (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the mathematical notation and Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "0b735d33-eeae-41df-9715-99873a031987",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C22",
+      "claim": "Relatednesses do not depend on the model specification (see Section 4 of van Veelen et al., 2017 for a formal derivation).",
+      "claim_type": "EXPLICIT",
+      "source": "Relatednesses here do not depend on the model specification (see Section 4 of van Veelen et al., 2017 for a formal derivation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to van Veelen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "c62b4189-9362-4934-b79c-183078de2121",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C23",
+      "claim": "Hamilton's rule holding does not mean that the specification chosen accurately reflects the way in which fitnesses depend on whether one is a co-operator oneself, and on how many siblings and how many cousins are co-operators.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to realize that Hamilton's rule holding does not mean that the specification chosen accurately reflects the way in which fitness's depend on whether one is a co-operator oneself, and on how many siblings and how many cousins are co-operators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mathematical analysis showing that Hamilton's rule holds for any linear specification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "ab1320bd-56b1-4b1a-897d-72625faf9923",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C24",
+      "claim": "Neither specification might represent the true fitness function, and still Hamilton's rule will hold for both.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither specification might represent the true fitness function, and still Hamilton's rule will hold for both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "baa3e44c-45e0-49f5-b851-fbfa3cb7af6e",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C26",
+      "claim": "To make Hamilton's rule uniquely defined, the regression method would need to be combined with a way to choose between specifications.",
+      "claim_type": "EXPLICIT",
+      "source": "To make it uniquely defined, the regression method would need to be combined with a way to choose between specifications \u2013 and with data, applying statistical tests seems to be a natural way to do that.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about what would be needed to resolve the identification problem.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "6feee412-c2b3-49c9-b075-17c2a35d11de",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C27",
+      "claim": "Hamilton's rule according to the regression method cannot both be uniquely defined and fully general, because having it well-defined would imply that in some cases non-linear specifications would have to be chosen, while Hamilton's rule being general crucially depends on the specification being linear.",
+      "claim_type": "EXPLICIT",
+      "source": "Hamilton's rule according to the regression method therefore cannot both be uniquely defined, and fully general, because having it well-defined would imply that in some cases non-linear specifications would have to be chosen, while Hamilton's rule being general crucially depends on the specification being linear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the analysis of the regression method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "1861711e-981b-468e-adeb-5ce95e2e1734",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C28",
+      "claim": "Whichever linear specification is chosen using the regression method, this should never lead to a violation of Hamilton's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "But even if Hamilton's rule is not always uniquely defined, it still holds for any given linear specification. Whichever linear specification is chosen, this should therefore never lead to a violation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "d1335e45-38f6-42a5-b9e4-c125de401bfa",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C29",
+      "claim": "With the counterfactual method, the cost of cooperation is defined as the difference between an individual's fitness if it defects, and its fitness if it cooperates.",
+      "claim_type": "EXPLICIT",
+      "source": "With the counterfactual method, the cost of cooperation is defined as the difference between an individual's fitness if it defects, and its fitness if it cooperates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about the counterfactual method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "8709c90c-c394-4de2-9e9c-d86fd69ec684",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C30",
+      "claim": "With the counterfactual method, the benefits to another individual are defined as the difference cooperation makes for that other individual's fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the benefits to another individual are defined as the difference cooperation makes for that other individual's fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about the counterfactual method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "b2ec5873-dce5-4536-9e59-dca31c16bb5b",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C40",
+      "claim": "Many cases with synergies would fall under the category where \u03c0_C(i)\u2265\u03c0_C(1)+(i\u22121)[\u03c0_D(1)\u2212\u03c0_D(0)] for all i.",
+      "claim_type": "EXPLICIT",
+      "source": "Many cases with synergies would fall under this category.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the types of fitness functions that satisfy the condition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "a9c4afa1-81db-4a4f-a418-e65c30f8b54b",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C49",
+      "claim": "Many systems with synergies will satisfy all three conditions (the two synergy conditions and increasing fitness difference), and therefore preclude in-equilibrium violations of Hamilton's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Many systems with synergies will satisfy all three conditions, and therefore preclude in-equilibrium violations of Hamilton's rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the types of systems that satisfy the conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "f883602c-63a7-4b9e-b592-ffe2b6be77f3",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C50",
+      "claim": "Systems with anti-synergies are much more conducive to violations in equilibrium, especially in mixed equilibria, in which co-operators and defectors coexist.",
+      "claim_type": "EXPLICIT",
+      "source": "Systems with anti-synergies are much more conducive to violations in equilibrium, especially in mixed equilibria, in which co-operators and defectors coexist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the mathematical analysis and illustrated in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "c9162e71-4d6a-4783-825f-2385619870f6",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C51",
+      "claim": "Figures 2 and 3 illustrate that systems with anti-synergies are more conducive to violations in equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Figures 2 and 3 illustrate that.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim references Figures 2 and 3 as visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "d98f3758-d1bf-4171-b9dd-e6ba42470085",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C53",
+      "claim": "In panel A of Figure 2, cooperation is selected against at both p=0 and p=1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperation therefore is selected against at both ends.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from the fitness difference data in Figure 2 panel A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "fba0a1e5-1b2e-47a9-861d-779665801783",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C64",
+      "claim": "The fitness function used in panels A and B of Figure 2 is linear in the number of co-operators in the group.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness function used in panels A and B of Figure 2 is linear in the number of co-operators in the group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the fitness functions shown in Figure 2 panels A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "0f4b131f-2064-48ac-8c6c-7a28e338c930",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C65",
+      "claim": "With the linear fitness function in panels A and B of Figure 2, Equation 1 and Equation 3 coincide, as well as Equation 2 and Equation 4.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes Equation 1 and Equation 3 coincide, as well as Equation 2 and Equation 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from mathematical analysis of the linear fitness function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "6934a8cb-c073-4fe0-947b-ea345dcfd805",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C73",
+      "claim": "In the prisoners dilemma with synergies shown in Figure 3 panel A, selection always takes the population out of the region where inclusive fitness disagrees with the direction of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first one, selection always takes the population out of the region where inclusive fitness disagrees with the direction of selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visual representation and analysis in Figure 3 panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "ede05e3a-48a6-46e6-8315-55502fd1e766",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C75",
+      "claim": "A similar point about violations is made with Figures 30 and 31 in van Veelen et al. (2017).",
+      "claim_type": "EXPLICIT",
+      "source": "A similar point is made with Figures 30 and 31 in van Veelen et al. (2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to van Veelen et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "84524bcc-8ea1-4a8e-8d7e-730a85dee57c",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C77",
+      "claim": "Whether or not Hamilton's rule will hold, with costs and benefits defined according to the counterfactual method, depends on the combination of fitness function and population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether or not Hamilton's rule will hold, with costs and benefits defined according to the counterfactual method, depends on the combination of fitness function and population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "7c0545cc-c968-4b16-962c-21eaeca542dd",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C78",
+      "claim": "How often we should expect Hamilton's rule to hold depends on what we think the distribution of fitness functions and population structures is.",
+      "claim_type": "EXPLICIT",
+      "source": "How often we should expect Hamilton's rule to hold therefore depends on what we think the distribution of fitness functions and population structures is.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the previous claim.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "3e967d8d-888b-42f6-9f35-8ddd30657005",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C79",
+      "claim": "Whether reasonable assumptions concerning the distributions of fitness functions and population structures lead to many or not so many violations of Hamilton's rule is an interesting question for further research that is not pursued in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether reasonable assumptions concerning these distributions lead to many or not so many violations of Hamilton's rule is an interesting question for further research that we do not pursue here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scope and limitations of the current study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "b56a24e9-f936-4190-a45d-9b475bf49a80",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C80",
+      "claim": "A recent survey by Bourke (2014) includes studies that explicitly set out to test Hamilton's rule empirically.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent survey by Bourke (2014) includes Bourke (1997); Emlen and Wrege (1989); Gadagkar (2010); Hogendoorn and Leys (1993); Krakauer (2005); Loeb (2003); Metcalf and Whitt (1977); Nonacs and Reeve (1995); Noonan (1981); Pfennig et al. (1999); Queller and Strassmann (1988); Richards et al. (2005) and Stark (1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bourke (2014) and the list of studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "190f2e3f-58c1-418e-a83e-554d508d3599",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C82",
+      "claim": "The typical approach to testing Hamilton's rule empirically does not constitute a test of either of the two versions of Hamilton's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Although intuitively appealing, it is worth realizing that this does not constitute a test of either of the two versions of Hamilton's rule \u2013 where it should be noted that these empirical studies were done before it was even recognized that there are different ways to define costs and benefits to begin with.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of the two methods for defining costs and benefits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "59ea6e1a-563e-46e0-993e-6473d664b9e9",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C83",
+      "claim": "If we treat Hamilton's rule being valid (using the regression method) as the hypothesis, then the hypothesis covers everything, and the null hypothesis is void, as no true way in which fitness would be determined would go with Hamilton's rule not holding (see also Nowak et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, if we were to treat Hamilton's rule being valid as the hypothesis, then the hypothesis covers everything, and the null hypothesis is void, as no true way in which fitness would be determined by the behaviour of self and others would go with Hamilton's rule not holding (see also Nowak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the analysis and supported by citation to Nowak et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "5b4d2884-a272-42cb-8b77-c78096e92a17",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C85",
+      "claim": "If we think of Hamilton's rule with costs and benefits defined according to the counterfactual method, then estimating costs and benefits in a linear model without considering the possibility of non-linearities would not allow us to uncover violations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, if we think of Hamilton's rule with costs and benefits defined according to the counterfactual method, then estimating costs and benefits in a linear model without considering the possibility of non-linearities would not allow us to uncover violations, because those, as we have seen, require the fitnesses to be non-linear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis showing that violations require non-linear fitness functions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "fed9ae98-4de0-4425-aa0f-92b70aad190b",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C86",
+      "claim": "One solid way to decide that Hamilton's rule is not violated would be to allow for a non-linear model, and reject all non-linearities, in favour of a linear model.",
+      "claim_type": "EXPLICIT",
+      "source": "One solid way to decide that Hamilton's rule is not violated would be to allow for a non-linear model, and reject all non-linearities, in favour of a linear model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for empirical testing methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "416e5595-8f0b-4fa1-b5d0-8e05fc91ff79",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C87",
+      "claim": "The empirical studies surveyed by Bourke (2014) do not allow for non-linear models to test for violations.",
+      "claim_type": "EXPLICIT",
+      "source": "That, however, is not what these papers do.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of the methodology used in the surveyed studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "af47ccff-1d0a-4c0a-9dbf-3d7208e0ee4a",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C88",
+      "claim": "Meaningful empirical tests would have to consider the version of Hamilton's rule that uses the counterfactual method for computing costs and benefits, and should use statistical models that allow for non-linearities.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations therefore first of all imply that meaningful empirical tests would have to consider the version of Hamilton's rule that uses the counterfactual method for computing costs and benefits, and that they should use statistical models that allow for non-linearities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the analysis in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "e675bf2d-9870-4e3f-be3f-c7e7aa0481f4",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C89",
+      "claim": "One should look for violations in systems where how much being a co-operator instead of a defector contributes to the fitness of others, and takes away from the fitness of oneself, depends on what the others do.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, one should look at systems where how much being a co-operator instead of a defector contributes to the fitness of others, and takes away from the fitness of oneself, depends on what the others do.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the analysis showing that violations require fitness effects to depend on group composition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "df161d8c-e86b-4224-abae-3ad334be3d16",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C90",
+      "claim": "If we consider a system that is in equilibrium, we would not observe violations if the three 'synergy-conditions' are satisfied.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if we consider a system that is in equilibrium, we would not observe violations if the three 'synergy-conditions' are satisfied, while systems that (also) have anti-synergies do allow for in-equilibrium violations (see Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the mathematical analysis and Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "9e009fe7-ad25-4348-bda0-61662f2e558c",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C91",
+      "claim": "Systems that have anti-synergies do allow for in-equilibrium violations (see Figure 4).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if we consider a system that is in equilibrium, we would not observe violations if the three 'synergy-conditions' are satisfied, while systems that (also) have anti-synergies do allow for in-equilibrium violations (see Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the mathematical analysis and Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "927f3cbc-4e8a-47a4-98e4-b058121a2885",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C92",
+      "claim": "The presence of polymorphisms, where co-operators and defectors coexist, can be a good indication that anti-synergies are present.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of polymorphisms, where co-operators and defectors coexist, can be a good indication that such anti-synergies are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about what polymorphisms indicate about the fitness function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "849bfc6e-4329-4c85-b274-7a5670cf645d",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C93",
+      "claim": "We would not expect violations in cases where the level of help is a continuous trait, the fitness function is smooth, and where the levels of cooperation across individuals are relatively homogeneous, making fitness effects approximately linear.",
+      "claim_type": "EXPLICIT",
+      "source": "We would also not expect violations in cases where the level of help is a continuous trait, the fitness function is smooth, and where the levels of cooperation across individuals are relatively homogeneous, making fitness effects approximately linear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about when violations would not be expected.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "6aefcdaf-1ab5-48f5-b513-b0cf17e9625a",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C94",
+      "claim": "In models with continuous levels of help, populations can settle at an equilibrium value of cooperation, where Hamilton's rule is satisfied, provided that there are no branching events (see Section 6 in van Veelen et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "In models with continuous levels of help, populations can then settle at an equilibrium value of cooperation, where Hamilton's rule is satisfied, provided that there are no branching events (see Section 6 in van Veelen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to van Veelen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "1db2d660-168b-4ac7-9e4e-56c2e5b7bb5a",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C95",
+      "claim": "What is needed for violations is that there are distinct types; co-operators and defectors.",
+      "claim_type": "EXPLICIT",
+      "source": "What is needed for violations, therefore, is that there are distinct types; co-operators and defectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis about the conditions for violations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "d9fbb2bf-4689-4328-bc64-6750ba0eb98c",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C96",
+      "claim": "Some behaviours or properties are binary by nature; one either jumps into a river in an effort to save someone, or not.",
+      "claim_type": "EXPLICIT",
+      "source": "Some behaviours or properties are binary by nature; one either jumps into a river in an effort to save someone, or not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example based on common knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "33aa73b7-cfe3-47c3-9226-850838c5c5af",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C97",
+      "claim": "Eating a fellow brood member is an all or nothing trait (Pfennig et al., 1999).",
+      "claim_type": "EXPLICIT",
+      "source": "Also eating a fellow brood member is an all or nothing trait (Pfennig et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pfennig et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "5e0ebe8d-49a6-4f68-b62a-15e967bac643",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C98",
+      "claim": "When the level of cooperation is a continuous trait, one can get distinct types to evolve after a branching event (Doebeli et al., 2004).",
+      "claim_type": "EXPLICIT",
+      "source": "When the level of cooperation is a continuous trait, one can however also get distinct types to evolve after a branching event (Doebeli et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Doebeli et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "d60e9314-9402-43b2-8fd1-a5282afd9d0b",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C99",
+      "claim": "At a singular point where the system branches, Hamilton's rule, which predicts no change, does not agree with what happens (Doebeli and Hauert, 2006).",
+      "claim_type": "EXPLICIT",
+      "source": "Notice that also at a singular point where the system branches, Hamilton's rule, which predicts no change, does not agree with what happens (Doebeli and Hauert, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Doebeli and Hauert, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "120f8b54-39d6-46d7-9138-b6aedae82d3a",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C101",
+      "claim": "4 out of the 12 explicit tests of Hamilton's rule surveyed in Bourke (2014), all of which estimate costs and benefits with a linear model, find apparent violations.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes it all the more surprising that 4 out of the 12 explicit tests of Hamilton's rule, surveyed in (Bourke, 2014), all of which estimate costs and benefits with a linear model, do find apparent violations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to the survey by Bourke (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "82f79000-2dd4-4d88-b1f4-396605f06355",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C102",
+      "claim": "One prime candidate for spurious violations has to do with the fact that the result that Hamilton's rule always holds, if costs and benefits are defined using the regression method, depends on using the cooperativenesses of the individuals involved, not just for computing costs and benefits, but also in the formula for relatedness.",
+      "claim_type": "EXPLICIT",
+      "source": "One prime candidate has to do with the fact that the result that Hamilton's rule always holds, if costs and benefits are defined using the regression method, depends on using the cooperativenesses of the individuals involved, not just for computing costs and benefits, but also in the formula for relatedness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a source of spurious violations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "ebf8099c-7667-4787-bbec-08f552a9b931",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C103",
+      "claim": "If a different estimator of relatedness is used, for instance based on gene sequencing, then that would include genes for traits other than cooperative behaviour, and the difference between these two estimators can make for a violation.",
+      "claim_type": "EXPLICIT",
+      "source": "If a different estimator of relatedness is used, for instance based on gene sequencing, then that would include genes for traits other than cooperative behaviour. The difference between these two estimators can make for a violation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how using different estimators can create spurious violations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "d0bf39c3-d33a-4f02-959e-d1e1f02fda97",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C104",
+      "claim": "The probability of spurious violations happening decreases as sample size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of this happening decreases as sample size increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on statistical principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "9449b0ba-0c3a-45ef-8cce-1200815aab37",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C107",
+      "claim": "Other reasons for finding violations when estimating costs and benefits linearly are also possible (see Section 8 of van Veelen et al., 2017), and all of them are spurious.",
+      "claim_type": "EXPLICIT",
+      "source": "Other reasons for finding violations when estimating costs and benefits linearly are also possible (see Section 8 of van Veelen et al., 2017), and all of them are spurious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to van Veelen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "69a70d58-1a7d-43f7-9228-852b1c77d1f1",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C108",
+      "claim": "In order to be able to find violations of Hamilton's rule, with benefits and costs defined according to the counterfactual method, one must allow for a non-linear statistical model.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to be able to find violations of Hamilton's rule, with benefits and costs defined according to the counterfactual method, one must allow for a non-linear statistical model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis showing that violations require non-linear fitness functions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "8a3f093e-d0f8-4eb3-bec5-68bf7029e564",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C109",
+      "claim": "The study that comes closest to the ideal of allowing for non-linear statistical models is Smith et al., 2010 (see also Chuang et al., 2009; Chuang et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "The study that comes closest to that ideal is Smith et al., 2010 (see also Chuang et al., 2009; Chuang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Smith et al., 2010; Chuang et al., 2009; Chuang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "35ba8e78-1cda-49c8-9b90-44bc40d9635e",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C110",
+      "claim": "The Smith et al., 2010 experiment does a non-linear estimation of sporulation efficiency of Myxococcus xanthus, resulting in fitness functions that would imply that, already in a well-mixed population, co-operators can invade defectors, and defectors can invade co-operators.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment does a non-linear estimation of sporulation efficiency of Myxococcus xanthus, resulting in fitness functions that would imply that, already in a well-mixed population, co-operators can invade defectors, and defectors can invade co-operators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to Smith et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "01b382d6-6a34-42a7-beac-ee5092021f20",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C111",
+      "claim": "Combined with a range of population structures, the fitness functions from Smith et al., 2010 would make a population settle at mixed overall frequencies of co-operators.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with a range of population structures, this would make a population settle at mixed overall frequencies of co-operators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the fitness functions reported in Smith et al., 2010.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "6fed7640-94d3-47ba-a000-b12dadd98fc1",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C112",
+      "claim": "Most of the non-linearity picked up in Smith et al., 2010 results from considering Wrightian fitness's (numbers of offspring) rather than Malthusian fitness's (growth rates); see Wu et al. (2013).",
+      "claim_type": "EXPLICIT",
+      "source": "This study however also has a few conceptual imperfections. Most of the non-linearity it picks up, results from considering Wrightian fitness's (numbers of offspring) rather than Malthusian fitness's (growth rates); see Wu et al. (2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wu et al. (2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "8a7f41b3-91e0-4baf-8ad3-1b39e9986ee3",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C113",
+      "claim": "For small fitness effects, the difference between Wrightian and Malthusian fitness would not matter too much, but the aggregate fitness effects in Smith et al., 2010 are not small.",
+      "claim_type": "EXPLICIT",
+      "source": "For small fitness effects that would not matter too much, but the aggregate fitness effects are not small here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of the Smith et al., 2010 study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "044bee91-7801-4576-8375-930a9e8cb5ef",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C114",
+      "claim": "Another drawback of Smith et al., 2010 is that the experiment does not include an independent observation of a population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Another drawback is that the experiment does not include an independent observation of a population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of the Smith et al., 2010 study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "a34531df-6bbf-4039-970c-88c384489a58",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C115",
+      "claim": "In Smith et al., 2010, the group compositions chosen by the experimenter are used both to estimate the fitness function and as the sole input for calculations characterizing population structure, which makes it not a proper empirical observation of a population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "For the experiment, a combination of group compositions is chosen. The growth rates at these different group compositions are used to estimate the fitness function \u2013 which it is perfect for. The group compositions themselves, as chosen by the experimenter, are also the sole input for calculations characterizing population structure, which makes it not a proper empirical observation of a population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of the methodology in Smith et al., 2010.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "e84a3fde-20b9-402f-a81d-1fb7232ddef5",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C116",
+      "claim": "In spite of its drawbacks, Smith et al., 2010 is the closest to a proper empirical test of Hamilton's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of these drawbacks, this study is the closest to a proper empirical test of Hamilton's rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evaluation of the Smith et al., 2010 study relative to others.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "5c5ca8a5-5cfa-48e2-81c3-a33f182f45f1",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C117",
+      "claim": "Systems of microorganisms with mixed equilibria seem good candidates for testing Hamilton's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "While systems of microorganisms with mixed equilibria seem good candidates, one will have to be careful with identifying the reasons for polymorphisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for where to look for violations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "6e03d7c5-9a94-4c98-adf8-57b549a74b2b",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C118",
+      "claim": "In systems where one type can invade the other, and vice versa, already in a well-mixed population (Smith et al., 2010; MacLean and Gudelj, 2006; MacLean et al., 2010; Gore et al., 2009), the reason for stable coexistence may have nothing to do with population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In systems where one type can invade the other, and vice versa, already in a well-mixed population (Smith et al., 2010; MacLean and Gudelj, 2006; MacLean et al., 2010; Gore et al., 2009), the reason for stable coexistence may have nothing to do with population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Smith et al., 2010; MacLean and Gudelj, 2006; MacLean et al., 2010; Gore et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "828fcc4f-35a9-4b18-8e33-5cb9dc6655e8",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C119",
+      "claim": "If fitness is maximized at intermediate mixtures, it is hard to unambiguously qualify one strain as cooperative and the other as defecting (MacLean et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "If fitness is moreover maximized at intermediate mixtures, it also hard to unambiguously qualify one strain as cooperative and the other as defecting (MacLean et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to MacLean et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "83843259-f55d-4e83-b3f8-5d68aa719bdc",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C120",
+      "claim": "Systems with microorganisms might point to possible candidates for testing Hamilton's rule, if there is in fact structure in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Systems like this might nonetheless point to possible candidates, if there is in fact structure in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for empirical testing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "9b42e2d2-483d-4170-b6af-7a3057bca578",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C121",
+      "claim": "With microorganisms, one would naturally want to switch from counting discrete numbers of co-operators to a continuous variable for group compositions, measuring the within group frequency of co-operators.",
+      "claim_type": "EXPLICIT",
+      "source": "With microorganisms, one would then naturally want to switch from counting discrete numbers of co-operators to a continuous variable for group compositions, measuring the within group frequency of co-operators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for modeling approach with microorganisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "51b10b0d-b1d6-4cd2-88b1-b63853787d77",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C122",
+      "claim": "Appendix 1 provides a continuous version that allows for all the equivalent computations needed to establish whether or not Hamilton's rule is violated empirically.",
+      "claim_type": "EXPLICIT",
+      "source": "Appendix 1 provides a continuous version that allows for all the equivalent computations needed to establish whether or not Hamilton's rule is violated empirically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the content of Appendix 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "d4ae52a8-22ef-448d-968f-926325010f37",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C123",
+      "claim": "Wang and Lu (2018) is a study that looks at polymorphisms.",
+      "claim_type": "EXPLICIT",
+      "source": "A study that does look at polymorphisms is Wang and Lu (2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wang and Lu (2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "1b3949d6-12d7-41a4-b8bc-e8e87e5359b2",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C124",
+      "claim": "In Wang and Lu (2018), players have one of two different roles; there are breeding pairs, which are the potential recipients of help, and potential helpers.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, players have one of two different roles; there are breeding pairs, which are the potential recipients of help, and potential helpers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Wang and Lu (2018) study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "a88d1a4d-71d2-4ae6-991e-d58a6db46a2c",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C125",
+      "claim": "In Wang and Lu (2018), there is no room for the strategic interaction that could create the non-linearities needed for possible violations.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that there is no room for the strategic interaction that could create the non-linearities needed for possible violations; costs and benefits of helping at the nest cannot depend on the recipient type, because the recipient is not facing the same choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the Wang and Lu (2018) study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "db3eca93-6a9f-46ac-bfbc-c40e913e10f3",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C126",
+      "claim": "In Wang and Lu (2018), there is no scope for violations of Hamilton's rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Also in this study, therefore, there is no scope for violations of Hamilton's rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the Wang and Lu (2018) study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "b2af52d4-fe51-4166-a4ec-b1f7f6c401a1",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "claim_id": "C128",
+      "claim": "An empirical test of Hamilton's rule, using the regression method, is not a meaningful exercise because the regression method does not allow for violations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the regression method does not allow for violations, an empirical test of Hamilton's rule, using the regression method, is not a meaningful exercise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of the regression method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f69642c9-40a2-4793-af91-2bf0e0a06e35",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "There is no consensus on the generality of Hamilton's rule, with some claiming it is completely general and others claiming it is almost always wrong. The disagreement stems from different definitions of costs and benefits used by different researchers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 establish the controversy through appropriate citations (Abbot et al., 2011; Nowak et al., 2010; Birch, 2014; Birch and Okasha, 2015; van Veelen et al., 2017). The claims accurately represent prior work and provide context for the manuscript's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "975b264a-6cae-41e1-a41c-447f53b583ab",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The regression method defines costs and benefits using ordinary least squares regression, and with this definition Hamilton's rule always holds regardless of the linear specification chosen. Costs and benefits may depend on model specification, but relatedness does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C16, C20-C22 accurately describe the regression method with appropriate citations (Gardner et al., 2011; Marshall, 2011; Birch, 2014; van Veelen et al., 2017). The mathematical framework and Figure 1 support the claim that different specifications yield different cost/benefit values while relatedness remains constant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "4b9233b8-efa1-41ad-8c53-645b2d35ca58",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The regression method has an identification problem: multiple linear specifications can lead to multiple Hamilton's rules, all of which hold. Hamilton's rule using the regression method is not necessarily uniquely defined, and it cannot both be uniquely defined and fully general. However, for any given linear specification, Hamilton's rule cannot be violated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C23-C24, C26-C28 present a logical argument supported by mathematical analysis and Figure 1. The reasoning that uniqueness requires specification choice, which may necessitate non-linear models (incompatible with generality), is sound. The claim that violations are impossible for any given linear specification is supported by citation to van Veelen et al., 2017.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "caa687bc-f116-48a3-9352-426d41a23a75",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The counterfactual method defines costs as the difference between an individual's fitness if it defects versus cooperates, and benefits as the difference cooperation makes for another individual's fitness. With this definition, Hamilton's rule holds only under specific conditions (generalized equal gains from switching).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C29-C30 accurately describe the counterfactual method with appropriate citations (Karlin and Matessi, 1983; Matessi and Karlin, 1984; Matessi and Karlin, 1986; van Veelen et al., 2017). The definitional statements are clear and the conditions for Hamilton's rule to hold are properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "a18f0ff4-6aa6-45cd-9c36-758e25e8e2e0",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "When using the counterfactual method, there is room for violations of Hamilton's rule. Whether Hamilton's rule holds depends on the combination of fitness function and population structure, and how often violations occur depends on the distribution of these factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C77-C78 are supported by the mathematical model and examples presented in the manuscript (Figures 2 and 3). The general model of assortative group compositions provides a framework for demonstrating violations, and the logical inference about dependence on fitness functions and population structures is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "35c4a2c9-4ef4-4060-b892-ec4e37f50cec",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "There are limitations to observing violations in equilibrium because selection may take the population out of regions where Hamilton's rule and selection disagree. Many systems with synergies satisfy conditions that preclude in-equilibrium violations, and in such systems selection moves populations away from regions of disagreement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C40, C49, C73 are supported by mathematical analysis and visual evidence in Figures 2 and 3. The logical argument that selection dynamics can prevent observation of violations in equilibrium is sound, and the specific conditions for synergistic systems are mathematically derived.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "74ee7cc8-68d9-4b9c-9cc5-1738ecbe8775",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Systems with anti-synergies are much more conducive to violations in equilibrium, especially in mixed equilibria where cooperators and defectors coexist. This is illustrated in Figures 2 and 3. Linear fitness functions make certain equations coincide, while non-linear functions allow for violations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51, C64-C65 are well-supported by Figures 2 and 3, which provide visual evidence of violations in systems with anti-synergies. The mathematical analysis showing that linear fitness functions make key equations coincide is sound, and the contrast with non-linear functions is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "076c336d-6aa2-4aac-88c8-e9a853a5bf3a",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In equilibrium systems, violations would not be observed if three synergy-conditions are satisfied, while systems with anti-synergies allow for in-equilibrium violations. The presence of polymorphisms (coexistence of cooperators and defectors) can indicate anti-synergies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 are supported by mathematical analysis and Figure 4. The three synergy conditions are mathematically defined, and the inference that polymorphisms indicate anti-synergies is logical given the analysis of mixed equilibria.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "ac51fc9e-fd81-498b-bc9c-2013cdf56ae8",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Empirical tests of Hamilton's rule require statistical models that allow for identifying non-linearities in the fitness function. When using the counterfactual method, linear models cannot uncover violations because violations require non-linear fitness functions. Meaningful empirical tests must use the counterfactual method and allow for non-linear statistical models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C85-C88, C108 present a logical argument based on the mathematical analysis showing that violations require non-linear fitness functions. The recommendation for empirical testing methodology follows directly from this analysis and is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "0fef1156-91ab-4710-a97f-6a41d0cf1f9b",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Existing empirical studies that test Hamilton's rule do not constitute proper tests of either version of Hamilton's rule. Testing Hamilton's rule using the regression method is not meaningful because the hypothesis covers everything and the null hypothesis is void.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C82-C83, C128 provide a critical evaluation of existing empirical literature (Bourke, 2014) with appropriate citations. The logical argument that the regression method makes testing meaningless (because violations are impossible by construction) is sound and supported by citation to Nowak et al., 2017.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "3af9b94c-6e76-49e0-beb9-51718b252512",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Violations should be sought in systems where fitness effects depend on what others do, and where there are distinct types (cooperators and defectors). Violations are not expected when cooperation is a continuous trait with smooth fitness functions and homogeneous cooperation levels. Some behaviors are binary by nature, while distinct types can also evolve after branching events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89, C93, C95-C99 provide recommendations for where to look for violations, supported by logical inference from the mathematical analysis and appropriate citations (Pfennig et al., 1999; Doebeli et al., 2004; Doebeli and Hauert, 2006). The reasoning about continuous versus discrete traits is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "8e63dc25-c951-40ff-88c4-9a28daf611f0",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Four out of twelve empirical tests surveyed found apparent violations despite using linear models. These are likely spurious violations caused by using different estimators of relatedness (e.g., gene sequencing versus behavioral covariance), with probability decreasing as sample size increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C104, C107 identify a puzzle (violations found with linear models) and provide a plausible explanation supported by statistical reasoning and citation to van Veelen et al., 2017. The argument about estimator discrepancy is logical, though the claim that all such violations are spurious is strong.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "d0962389-7b76-4f36-b6fc-142098003208",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Smith et al. (2010) comes closest to a proper empirical test by using non-linear estimation of fitness functions in Myxococcus xanthus. However, the study has conceptual imperfections: most non-linearity results from using Wrightian rather than Malthusian fitness (problematic given large fitness effects), and it lacks independent observation of population structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C116 provide a balanced evaluation of Smith et al. (2010) with appropriate citations (including Chuang et al., 2009; Chuang et al., 2010; Wu et al., 2013). The critiques are specific and well-justified, though the claim that it is still the closest to a proper test is a relative judgment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "e0c3fd74-0c3f-4651-80ba-0c4fc6918211",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Microorganism systems with mixed equilibria are good candidates for testing Hamilton's rule, but one must be careful identifying reasons for polymorphisms. In some systems, stable coexistence may have nothing to do with population structure. For microorganisms, one should use continuous variables for group composition rather than discrete counts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C122 provide practical recommendations for empirical testing with appropriate citations (Smith et al., 2010; MacLean and Gudelj, 2006; MacLean et al., 2010; Gore et al., 2009). The cautions about interpreting polymorphisms are well-justified, and the reference to Appendix 1 for continuous models is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "f3a47b2e-c600-4785-8c9b-6206a054828d",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Wang and Lu (2018) examines polymorphisms but involves players with different roles (breeding pairs and helpers). This asymmetry means there is no room for strategic interaction that could create non-linearities needed for violations, so there is no scope for violations of Hamilton's rule in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C126 provide a critical evaluation of Wang and Lu (2018) with appropriate citation. The logical argument that role asymmetry precludes the strategic interactions necessary for violations is sound and follows from the manuscript's analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "dca9db03-84ec-4cda-8ae0-452ff7ad8ef8",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Whether reasonable assumptions about distributions of fitness functions and population structures lead to many or few violations is an interesting question for further research that is not pursued in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 appropriately acknowledges a limitation of the current work and identifies an important direction for future research. This is a reasonable statement about scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "f46b68af-aad1-47bd-aa22-625da8f02dab",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A similar point about violations is made with Figures 30 and 31 in van Veelen et al. (2017).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 appropriately references prior work (van Veelen et al., 2017) to support the current analysis. This is a valid citation of related findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "d0175943-d199-43a0-bae1-686f8d64fa8b",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In panel A of Figure 2, cooperation is selected against at both p=0 and p=1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 accurately describes the data shown in Figure 2 panel A. The fitness difference values support this interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    },
+    {
+      "id": "215d3cc6-6121-477e-8b11-62a7fae05891",
+      "content_id": "95790ec6-600c-4451-9d74-086b5fbc600c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In models with continuous levels of help, populations can settle at an equilibrium value of cooperation where Hamilton's rule is satisfied, provided there are no branching events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is supported by citation to Section 6 of van Veelen et al., 2017. This appropriately references prior work to support the current argument.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:41:42.002142Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5d5efe9f-b6d3-4d52-a1ac-32619db2bb7c",
+      "result_id": "f69642c9-40a2-4793-af91-2bf0e0a06e35"
+    },
+    {
+      "claim_id": "d91033e3-6743-4c0e-88e1-bb1edfc9a817",
+      "result_id": "f69642c9-40a2-4793-af91-2bf0e0a06e35"
+    },
+    {
+      "claim_id": "ef21e1ef-76b0-466a-b2ba-2912ae41b163",
+      "result_id": "f69642c9-40a2-4793-af91-2bf0e0a06e35"
+    },
+    {
+      "claim_id": "9c07e1db-b266-4b97-8452-9a921ff32c3f",
+      "result_id": "f69642c9-40a2-4793-af91-2bf0e0a06e35"
+    },
+    {
+      "claim_id": "9fafa3d1-9476-4383-93f2-f85247154d80",
+      "result_id": "975b264a-6cae-41e1-a41c-447f53b583ab"
+    },
+    {
+      "claim_id": "656d3804-4203-4630-837d-9dcce03a6ac2",
+      "result_id": "975b264a-6cae-41e1-a41c-447f53b583ab"
+    },
+    {
+      "claim_id": "f9ed2e74-8c6e-4022-8f1e-28c71435bbe2",
+      "result_id": "975b264a-6cae-41e1-a41c-447f53b583ab"
+    },
+    {
+      "claim_id": "24f62d63-c469-4a31-93c6-4bdfd5b3f717",
+      "result_id": "975b264a-6cae-41e1-a41c-447f53b583ab"
+    },
+    {
+      "claim_id": "c22d531e-0502-48a9-932a-56de4e01673c",
+      "result_id": "975b264a-6cae-41e1-a41c-447f53b583ab"
+    },
+    {
+      "claim_id": "0b735d33-eeae-41df-9715-99873a031987",
+      "result_id": "975b264a-6cae-41e1-a41c-447f53b583ab"
+    },
+    {
+      "claim_id": "fe8173f6-aec5-4c12-a992-f5adb837065d",
+      "result_id": "4b9233b8-efa1-41ad-8c53-645b2d35ca58"
+    },
+    {
+      "claim_id": "2507f6fe-4df1-49c3-9a2e-894222fd62e0",
+      "result_id": "4b9233b8-efa1-41ad-8c53-645b2d35ca58"
+    },
+    {
+      "claim_id": "c62b4189-9362-4934-b79c-183078de2121",
+      "result_id": "4b9233b8-efa1-41ad-8c53-645b2d35ca58"
+    },
+    {
+      "claim_id": "ab1320bd-56b1-4b1a-897d-72625faf9923",
+      "result_id": "4b9233b8-efa1-41ad-8c53-645b2d35ca58"
+    },
+    {
+      "claim_id": "baa3e44c-45e0-49f5-b851-fbfa3cb7af6e",
+      "result_id": "4b9233b8-efa1-41ad-8c53-645b2d35ca58"
+    },
+    {
+      "claim_id": "6feee412-c2b3-49c9-b075-17c2a35d11de",
+      "result_id": "4b9233b8-efa1-41ad-8c53-645b2d35ca58"
+    },
+    {
+      "claim_id": "1861711e-981b-468e-adeb-5ce95e2e1734",
+      "result_id": "4b9233b8-efa1-41ad-8c53-645b2d35ca58"
+    },
+    {
+      "claim_id": "4ce4b23b-af6c-4486-9c00-af1273d912a5",
+      "result_id": "caa687bc-f116-48a3-9352-426d41a23a75"
+    },
+    {
+      "claim_id": "449c2d92-74ae-493b-94a9-2393e7e689b9",
+      "result_id": "caa687bc-f116-48a3-9352-426d41a23a75"
+    },
+    {
+      "claim_id": "d1335e45-38f6-42a5-b9e4-c125de401bfa",
+      "result_id": "caa687bc-f116-48a3-9352-426d41a23a75"
+    },
+    {
+      "claim_id": "8709c90c-c394-4de2-9e9c-d86fd69ec684",
+      "result_id": "caa687bc-f116-48a3-9352-426d41a23a75"
+    },
+    {
+      "claim_id": "c71a0e14-8dc1-4086-9d88-f27e199489f6",
+      "result_id": "a18f0ff4-6aa6-45cd-9c36-758e25e8e2e0"
+    },
+    {
+      "claim_id": "84524bcc-8ea1-4a8e-8d7e-730a85dee57c",
+      "result_id": "a18f0ff4-6aa6-45cd-9c36-758e25e8e2e0"
+    },
+    {
+      "claim_id": "7c0545cc-c968-4b16-962c-21eaeca542dd",
+      "result_id": "a18f0ff4-6aa6-45cd-9c36-758e25e8e2e0"
+    },
+    {
+      "claim_id": "b21fb55b-f5cf-46da-8be3-383909105023",
+      "result_id": "35c4a2c9-4ef4-4060-b892-ec4e37f50cec"
+    },
+    {
+      "claim_id": "b2ec5873-dce5-4536-9e59-dca31c16bb5b",
+      "result_id": "35c4a2c9-4ef4-4060-b892-ec4e37f50cec"
+    },
+    {
+      "claim_id": "a9c4afa1-81db-4a4f-a418-e65c30f8b54b",
+      "result_id": "35c4a2c9-4ef4-4060-b892-ec4e37f50cec"
+    },
+    {
+      "claim_id": "6934a8cb-c073-4fe0-947b-ea345dcfd805",
+      "result_id": "35c4a2c9-4ef4-4060-b892-ec4e37f50cec"
+    },
+    {
+      "claim_id": "f883602c-63a7-4b9e-b592-ffe2b6be77f3",
+      "result_id": "74ee7cc8-68d9-4b9c-9cc5-1738ecbe8775"
+    },
+    {
+      "claim_id": "c9162e71-4d6a-4783-825f-2385619870f6",
+      "result_id": "74ee7cc8-68d9-4b9c-9cc5-1738ecbe8775"
+    },
+    {
+      "claim_id": "fba0a1e5-1b2e-47a9-861d-779665801783",
+      "result_id": "74ee7cc8-68d9-4b9c-9cc5-1738ecbe8775"
+    },
+    {
+      "claim_id": "0f4b131f-2064-48ac-8c6c-7a28e338c930",
+      "result_id": "74ee7cc8-68d9-4b9c-9cc5-1738ecbe8775"
+    },
+    {
+      "claim_id": "df161d8c-e86b-4224-abae-3ad334be3d16",
+      "result_id": "076c336d-6aa2-4aac-88c8-e9a853a5bf3a"
+    },
+    {
+      "claim_id": "9e009fe7-ad25-4348-bda0-61662f2e558c",
+      "result_id": "076c336d-6aa2-4aac-88c8-e9a853a5bf3a"
+    },
+    {
+      "claim_id": "927f3cbc-4e8a-47a4-98e4-b058121a2885",
+      "result_id": "076c336d-6aa2-4aac-88c8-e9a853a5bf3a"
+    },
+    {
+      "claim_id": "4ab8f585-2c1c-407f-b6d8-16843058e790",
+      "result_id": "ac51fc9e-fd81-498b-bc9c-2013cdf56ae8"
+    },
+    {
+      "claim_id": "5b4d2884-a272-42cb-8b77-c78096e92a17",
+      "result_id": "ac51fc9e-fd81-498b-bc9c-2013cdf56ae8"
+    },
+    {
+      "claim_id": "fed9ae98-4de0-4425-aa0f-92b70aad190b",
+      "result_id": "ac51fc9e-fd81-498b-bc9c-2013cdf56ae8"
+    },
+    {
+      "claim_id": "416e5595-8f0b-4fa1-b5d0-8e05fc91ff79",
+      "result_id": "ac51fc9e-fd81-498b-bc9c-2013cdf56ae8"
+    },
+    {
+      "claim_id": "af47ccff-1d0a-4c0a-9dbf-3d7208e0ee4a",
+      "result_id": "ac51fc9e-fd81-498b-bc9c-2013cdf56ae8"
+    },
+    {
+      "claim_id": "69a70d58-1a7d-43f7-9228-852b1c77d1f1",
+      "result_id": "ac51fc9e-fd81-498b-bc9c-2013cdf56ae8"
+    },
+    {
+      "claim_id": "b56a24e9-f936-4190-a45d-9b475bf49a80",
+      "result_id": "0fef1156-91ab-4710-a97f-6a41d0cf1f9b"
+    },
+    {
+      "claim_id": "190f2e3f-58c1-418e-a83e-554d508d3599",
+      "result_id": "0fef1156-91ab-4710-a97f-6a41d0cf1f9b"
+    },
+    {
+      "claim_id": "59ea6e1a-563e-46e0-993e-6473d664b9e9",
+      "result_id": "0fef1156-91ab-4710-a97f-6a41d0cf1f9b"
+    },
+    {
+      "claim_id": "b2af52d4-fe51-4166-a4ec-b1f7f6c401a1",
+      "result_id": "0fef1156-91ab-4710-a97f-6a41d0cf1f9b"
+    },
+    {
+      "claim_id": "e675bf2d-9870-4e3f-be3f-c7e7aa0481f4",
+      "result_id": "3af9b94c-6e76-49e0-beb9-51718b252512"
+    },
+    {
+      "claim_id": "849bfc6e-4329-4c85-b274-7a5670cf645d",
+      "result_id": "3af9b94c-6e76-49e0-beb9-51718b252512"
+    },
+    {
+      "claim_id": "1db2d660-168b-4ac7-9e4e-56c2e5b7bb5a",
+      "result_id": "3af9b94c-6e76-49e0-beb9-51718b252512"
+    },
+    {
+      "claim_id": "d9fbb2bf-4689-4328-bc64-6750ba0eb98c",
+      "result_id": "3af9b94c-6e76-49e0-beb9-51718b252512"
+    },
+    {
+      "claim_id": "33aa73b7-cfe3-47c3-9226-850838c5c5af",
+      "result_id": "3af9b94c-6e76-49e0-beb9-51718b252512"
+    },
+    {
+      "claim_id": "5e0ebe8d-49a6-4f68-b62a-15e967bac643",
+      "result_id": "3af9b94c-6e76-49e0-beb9-51718b252512"
+    },
+    {
+      "claim_id": "d60e9314-9402-43b2-8fd1-a5282afd9d0b",
+      "result_id": "3af9b94c-6e76-49e0-beb9-51718b252512"
+    },
+    {
+      "claim_id": "120f8b54-39d6-46d7-9138-b6aedae82d3a",
+      "result_id": "8e63dc25-c951-40ff-88c4-9a28daf611f0"
+    },
+    {
+      "claim_id": "82f79000-2dd4-4d88-b1f4-396605f06355",
+      "result_id": "8e63dc25-c951-40ff-88c4-9a28daf611f0"
+    },
+    {
+      "claim_id": "ebf8099c-7667-4787-bbec-08f552a9b931",
+      "result_id": "8e63dc25-c951-40ff-88c4-9a28daf611f0"
+    },
+    {
+      "claim_id": "d0bf39c3-d33a-4f02-959e-d1e1f02fda97",
+      "result_id": "8e63dc25-c951-40ff-88c4-9a28daf611f0"
+    },
+    {
+      "claim_id": "9449b0ba-0c3a-45ef-8cce-1200815aab37",
+      "result_id": "8e63dc25-c951-40ff-88c4-9a28daf611f0"
+    },
+    {
+      "claim_id": "8a3f093e-d0f8-4eb3-bec5-68bf7029e564",
+      "result_id": "d0962389-7b76-4f36-b6fc-142098003208"
+    },
+    {
+      "claim_id": "35ba8e78-1cda-49c8-9b90-44bc40d9635e",
+      "result_id": "d0962389-7b76-4f36-b6fc-142098003208"
+    },
+    {
+      "claim_id": "01b382d6-6a34-42a7-beac-ee5092021f20",
+      "result_id": "d0962389-7b76-4f36-b6fc-142098003208"
+    },
+    {
+      "claim_id": "6fed7640-94d3-47ba-a000-b12dadd98fc1",
+      "result_id": "d0962389-7b76-4f36-b6fc-142098003208"
+    },
+    {
+      "claim_id": "8a7f41b3-91e0-4baf-8ad3-1b39e9986ee3",
+      "result_id": "d0962389-7b76-4f36-b6fc-142098003208"
+    },
+    {
+      "claim_id": "044bee91-7801-4576-8375-930a9e8cb5ef",
+      "result_id": "d0962389-7b76-4f36-b6fc-142098003208"
+    },
+    {
+      "claim_id": "a34531df-6bbf-4039-970c-88c384489a58",
+      "result_id": "d0962389-7b76-4f36-b6fc-142098003208"
+    },
+    {
+      "claim_id": "e84a3fde-20b9-402f-a81d-1fb7232ddef5",
+      "result_id": "d0962389-7b76-4f36-b6fc-142098003208"
+    },
+    {
+      "claim_id": "5c5ca8a5-5cfa-48e2-81c3-a33f182f45f1",
+      "result_id": "e0c3fd74-0c3f-4651-80ba-0c4fc6918211"
+    },
+    {
+      "claim_id": "6e03d7c5-9a94-4c98-adf8-57b549a74b2b",
+      "result_id": "e0c3fd74-0c3f-4651-80ba-0c4fc6918211"
+    },
+    {
+      "claim_id": "828fcc4f-35a9-4b18-8e33-5cb9dc6655e8",
+      "result_id": "e0c3fd74-0c3f-4651-80ba-0c4fc6918211"
+    },
+    {
+      "claim_id": "83843259-f55d-4e83-b3f8-5d68aa719bdc",
+      "result_id": "e0c3fd74-0c3f-4651-80ba-0c4fc6918211"
+    },
+    {
+      "claim_id": "9b42e2d2-483d-4170-b6af-7a3057bca578",
+      "result_id": "e0c3fd74-0c3f-4651-80ba-0c4fc6918211"
+    },
+    {
+      "claim_id": "51b10b0d-b1d6-4cd2-88b1-b63853787d77",
+      "result_id": "e0c3fd74-0c3f-4651-80ba-0c4fc6918211"
+    },
+    {
+      "claim_id": "d4ae52a8-22ef-448d-968f-926325010f37",
+      "result_id": "f3a47b2e-c600-4785-8c9b-6206a054828d"
+    },
+    {
+      "claim_id": "1b3949d6-12d7-41a4-b8bc-e8e87e5359b2",
+      "result_id": "f3a47b2e-c600-4785-8c9b-6206a054828d"
+    },
+    {
+      "claim_id": "a88d1a4d-71d2-4ae6-991e-d58a6db46a2c",
+      "result_id": "f3a47b2e-c600-4785-8c9b-6206a054828d"
+    },
+    {
+      "claim_id": "db3eca93-6a9f-46ac-bfbc-c40e913e10f3",
+      "result_id": "f3a47b2e-c600-4785-8c9b-6206a054828d"
+    },
+    {
+      "claim_id": "3e967d8d-888b-42f6-9f35-8ddd30657005",
+      "result_id": "dca9db03-84ec-4cda-8ae0-452ff7ad8ef8"
+    },
+    {
+      "claim_id": "ede05e3a-48a6-46e6-8315-55502fd1e766",
+      "result_id": "f46b68af-aad1-47bd-aa22-625da8f02dab"
+    },
+    {
+      "claim_id": "d98f3758-d1bf-4171-b9dd-e6ba42470085",
+      "result_id": "d0175943-d199-43a0-bae1-686f8d64fa8b"
+    },
+    {
+      "claim_id": "6aefcdaf-1ab5-48f5-b513-b0cf17e9625a",
+      "result_id": "215d3cc6-6121-477e-8b11-62a7fae05891"
+    }
+  ],
+  "comparisons": []
+}

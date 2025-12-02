@@ -1,0 +1,2461 @@
+{
+  "submission": {
+    "id": "5cae9a1c-9ed3-4f02-9aec-4173080ff8cf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:46:57.183142Z",
+    "updated_at": "2025-12-02T10:46:57.183142Z"
+  },
+  "content": [
+    {
+      "id": "e841b010-66ed-4875-99d2-89761af12241",
+      "submission_id": "5cae9a1c-9ed3-4f02-9aec-4173080ff8cf",
+      "content_type": "manuscript",
+      "content_text": "# Functional divergence of Plexin B structural motifs in distinct steps of Drosophila olfactory circuit assembly\n\n## Authors\n\n- Ricardo Guajardo<sup>1</sup> ([ORCID: 0000-0003-2379-3480](https://orcid.org/0000-0003-2379-3480))\n- David J Luginbuhl<sup>1</sup>\n- Shuo Han<sup>2</sup>\n- Liqun Luo<sup>1</sup> ([ORCID: 0000-0001-5467-9264](https://orcid.org/0000-0001-5467-9264)) \u2020\n- Jiefu Li<sup>1</sup> ([ORCID: 0000-0002-0062-4652](https://orcid.org/0000-0002-0062-4652))\n\n### Affiliations\n\n1. Department of Biology Howard Hughes Medical Institute, Stanford University Stanford United States\n2. Department of Chemistry Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPlexins exhibit multitudinous, evolutionarily conserved functions in neural development. How Plexins employ their diverse structural motifs in vivo to perform distinct roles is unclear. We previously reported that Plexin B (PlexB) controls multiple steps during the assembly of the Drosophila olfactory circuit (Li et al., 2018b). Here, we systematically mutagenized structural motifs of PlexB and examined the function of these variants in these multiple steps: axon fasciculation, trajectory choice, and synaptic partner selection. We found that the extracellular Sema domain is essential for all three steps, the catalytic site of the intracellular RapGAP is engaged in none, and the intracellular GTPase-binding motifs are essential for trajectory choice and synaptic partner selection, but are dispensable for fasciculation. Moreover, extracellular PlexB cleavage serves as a regulatory mechanism of PlexB signaling. Thus, the divergent roles of PlexB motifs in distinct steps of neural development contribute to its functional versatility in neural circuit assembly.\n\n## Introduction\n\nNervous systems are composed of intricately structured assemblies of neurons. Indeed, their proper function requires highly specified circuit organization, wherein neurons make precise connections with their synaptic partners. The study of neural circuit assembly has generated an ever-expanding catalog of wiring molecules, whose biological roles ensure the fidelity of neuronal connections and thus of information transmission (Hong and Luo, 2014; Jan and Jan, 2010; Kolodkin and Tessier-Lavigne, 2011; Li et al., 2018a; Sanes and Yamagata, 2009; Zipursky and Sanes, 2010). While structural and biophysical studies have advanced our understanding of the atomic architectures of these wiring molecules, for most of them it remains largely unknown how their structural motifs behave in specific neurodevelopmental processes in vivo.\n\nPlexins, a conserved family of single-pass transmembrane receptors, play varied roles in the development and homeostasis of diverse tissues in both vertebrates and invertebrates. Through the effort of many laboratories in the past two decades (Alto and Terman, 2017; Koropouli and Kolodkin, 2014; Kruger et al., 2005; Pascoe et al., 2015; Pasterkamp, 2012; Siebold and Jones, 2013; Worzfeld and Offermanns, 2014), genetic functions and biochemical properties of Plexins have been substantially characterized. However, even for Plexins, we have sparse knowledge on the connection between their structural motifs and their in vivo cellular functions, especially in the context of multi-step neural circuit assembly.\n\nOver 600 million years old, Plexin-family receptors display high degrees of conservation across evolutionarily distant species for both extracellular and cytoplasmic domains (Junqueira Alves et al., 2019). Structural and biochemical investigations have identified several core domains required for Plexin signaling (Bell et al., 2011; He et al., 2009; Janssen et al., 2010; Janssen et al., 2012; Kong et al., 2016; Liu et al., 2010; Nogi et al., 2010; Shang et al., 2017; Tong et al., 2009; Tong et al., 2007; Tong et al., 2008; Wang et al., 2012; Wang et al., 2013): the extracellular Sema domain, the intracellular Rac and Rho GTPase-binding sites, and the intracellular catalytic RapGAP domain (Figure 1A). Besides the Mical and CRMP (collapsin response mediator protein) pathways for certain Plexins (Alto and Terman, 2017), the current working model of Plexin signal transduction suggests that concomitant Semaphorin extracellular binding and Rac intracellular binding lead to Plexin dimerization, which subsequently activates the catalytic GAP domain to hydrolyze Rap-GTP for downstream signaling (Pascoe et al., 2015). However, the in vivo functional relevance of this model has yet to be determined. Notably, the catalytic GAP domain has been shown to be essential in neural tube closure (Worzfeld et al., 2014) but not in motor axon guidance (Yang et al., 2016), suggesting that Plexins may use structural motifs differentially in distinct developmental contexts. Moreover, certain Plexin motifs have yet to be functionally characterized. We particularly note the convertase cleavage site \u2013 a conserved signature of all class B Plexins (Artigiani et al., 2003). Despite its conservation across hundreds of millions of years, to our knowledge no biological function has ever been reported since its discovery over a decade ago. Considering that the cleavage event breaks the Plexin protein and thus physically separates the extracellular and transmembrane-cytoplasmic parts, it can activate, inactivate, or serve a more complex regulatory role in Plexin B signaling.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48594/elife-48594-fig1-v2.jpg)\n\n**Figure 1.:** (A) The PlexB protein consists of several conserved structural motifs, including an extracellular Sema domain, a juxtamembrane convertase cleavage site, a cytoplasmic GTPase-binding region for Rac1 and Rho1, and a cytoplasmic bipartite GAP domain. (B) Schematic summary of PlexB variants generated in this study. Each variant encodes either a mutated form of PlexB with one structural motif disrupted or a cleaved product of PlexB. (C) In the developing antennal lobe, ORN axons first fasciculate into bundles. Each ORN axon chooses a defined trajectory along the edge of the antennal lobe, in part responding to the extracellular Sema-2a/2b gradients (orange). Subsequently, ORN axons innervate the antennal lobe to interact with dendrites of prospective projection neuron partners and thus establish specific synaptic connections. PlexB participates in all these processes (Li et al., 2018b), providing an in vivo platform for examining the functionality of PlexB variants in multiple, distinct wiring steps.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48594/elife-48594-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Transgenically expressed PlexB variants, driven by pan-neural C155-GAL4, were extracted from brains and ventral nerve cords of third-instar larvae. Full-length PlexB and cleaved C-terminal fragments were detected by the C-terminal V5 tag. As in our previous observation (Li et al., 2018b), only a small fraction of PlexB proteins exist in the full-length form. Controls consisting of N-cadherin and actin were blotted after stripping the membrane.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48594/elife-48594-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** UniProt was used for alignment. Asterisk, identical residue; colon, strongly similar residue (scoring\u00a0>0.5 in the Gonnet PAM 250 matrix); period, weakly similar residue (scoring\u00a0=<\u00a00.5 in the Gonnet PAM 250 matrix).\n\nWe recently reported that PlexB plays indispensable roles in multiple steps during the assembly of the Drosophila olfactory map, with level-independent functions in the axon fasciculation of olfactory receptor neurons (ORNs) and level-dependent tasks in ORN axon trajectory choice and subsequent glomerular targeting (Li et al., 2018b). These findings reveal that, within one system, PlexB regulates several fundamental cellular processes of neural wiring, namely axon-axon interaction (fasciculation), axon guidance (trajectory choice), and synaptic partner selection (glomerular targeting) (Figure 1C). Given that this level dependence is only observed in trajectory choice and glomerular targeting but not in fasciculation, it is likely that PlexB signals in different ways when executing these distinct tasks. The multi-step development of the fly olfactory map thus provides an excellent system for characterizing the structure-to-function relationship of Plexin in vivo.\n\nThrough systematic mutagenesis of PlexB structural motifs (Figure 1A,B) and functional interrogation in the context of fly olfactory circuit assembly (Figure 1C), we report here the differential engagement of PlexB structural motifs in distinct neurodevelopmental processes. From the global necessity of Sema domain to the overall expendability of GAP catalytic integrity, as well as the involvement of GTPase-binding motifs in trajectory choice and glomerular targeting but not in fasciculation, our findings link the categorical diversity of PlexB-dependent wiring processes to its varied utilization of distinct signaling modules. Moreover, we identified a regulatory role of PlexB cleavage in vivo and surprisingly found that the cleaved fragments can functionally reconstitute for signaling. Collectively, our analysis reveals how a single molecule, PlexB, plays multitudinous roles in instructing cellular behaviors through the varied use of its distinct structural motifs.\n\n## Results\n\n### Systematic mutagenesis of PlexB structural motifs and in vivo functional assays\n\nTo dissect the structure-to-function relationship of PlexB in the assembly of the fly olfactory map, we generated nine UAS transgenic lines carrying PlexB variants (described below; Figure 1B) produced by site-directed mutagenesis. A V5 tag was added to the C-terminus of each variant. To obtain comparable expression levels, all transgenes were mutagenized from a single wild-type UAS-PlexB construct (Joo et al., 2013) and integrated into the same genomic locus, ZH-attP-86Fb (Bischof et al., 2007). Their expression in Drosophila neurons in vivo was verified by Western blotting with an anti-V5 antibody (Figure 1\u2014figure supplement 1).\n\n#### Sema Domain\n\nThe extracellular Sema domain is a molecular signature of Plexins and Semaphorins \u2013 the canonical Plexin ligands. It mediates binding between Plexins and Semaphorins and triggers Plexin signal transduction (Janssen et al., 2010; Nogi et al., 2010). PlexB with its entire Sema domain deleted (\u2206Sema) was expressed and cleaved normally in vivo (Figure 1\u2014figure supplement 1).\n\n#### Catalytic RapGAP domain\n\nA bipartite GTPase-activating protein (GAP) domain resides in the cytoplasmic part of Plexins. Recent studies identified the Ras homolog Rap as its substrate for signal transduction (Wang et al., 2012; Wang et al., 2013). With homology alignment (Figure 1\u2014figure supplement 2), we identified the three arginine residues that are essential for the GAP catalytic activity (Wang et al., 2012; Worzfeld et al., 2014) in fly PlexB and generated a variant with all three arginines mutated (R1570A, R1571G, R1899A; noted as GAPmut). These point mutations did not affect PlexB\u2019s expression and cleavage in vivo (Figure 1\u2014figure supplement 1).\n\n#### GTPase-binding sites\n\nSitting between the two arms of the RapGAP domain, the GTPase-binding region of fly PlexB has been shown to interact with small GTPases Rac1 and Rho1 (Hu et al., 2001). Within this region, two phylogenetically conserved sites mediate the PlexB-Rac1 interaction. Structural analysis found that class B Plexins can interact simultaneously with two Rac1 molecules, with one bound at each site (Bell et al., 2011). Thus, we built two PlexB variants that independently disrupt the Rac1-binding sites: \u2206Rac1, which contains a small deletion in the first Rac1-binding site (Hu et al., 2001), and Rac1mut, which has two amino acid substitutions (T1835E, R1836A) in the second site (Bell et al., 2011). We also generated a small deletion (\u2206Rho1) that abolishes the PlexB-Rho1 interaction (Hu et al., 2001).\n\nIntriguingly, while full-length PlexB proteins were present normally, the cleaved C-terminal fragment was markedly reduced in \u2206Rac1 or \u2206Rho1 variants (Figure 1\u2014figure supplement 1), as previously observed in cell culture (Artigiani et al., 2003). We will elaborate on this observation in the context of developmental function in the Discussion section.\n\n#### Cleavage site\n\nThe functionally uncharacterized cleavage is a conserved signature of all class B Plexins from flies to mammals. In developing fly brains, only a small fraction of endogenous PlexB proteins are present in the full-length form (Li et al., 2018b). Notably, the cleaved C-terminal fragment is not degraded in vivo. This is consistent with a previous observation that cleaved PlexB products stably associate in a complex in cell culture (Artigiani et al., 2003), suggesting that cleaved PlexB may be functional in signaling. To investigate the function of PlexB cleavage in vivo, we generated a PlexB variant with its cleavage sites mutated (R1196A, R1199A; noted as Uncleav), as well as constructs expressing cleaved N-terminal and C-terminal products (CleavSec and CleavTMCyto, respectively). Indeed, the two arginine mutations abolished PlexB cleavage and increased the presence of full-length PlexB (Figure 1\u2014figure supplement 1). We also observed two faint bands around 100 kDa, the pattern of which was distinct from the original cleavage (Figure 1\u2014figure supplement 1). PlexB possibly undergoes atypical processing when the convertase site is mutated. The cleaved fragments, when individually expressed, were also stable in vivo (Figure 1\u2014figure supplement 1).\n\nTo determine the developmental function of these PlexB structural motifs, we tested the efficacy of these variants at recapitulating the activity of wild-type PlexB in multiple wiring tasks in developing fly olfactory receptor neurons: axon fasciculation, axon trajectory choice, and synaptic partner selection (Figure 1C). While all of them are PlexB-dependent, these wiring processes occur sequentially and can be assayed independently (Li et al., 2018b), thus providing a platform for examining the functional engagement of individual motifs in distinct developmental tasks.\n\n### Axon fasciculation\n\nAt about 18 hours after puparium formation (hAPF), ORN axons arrive at the antennal lobe and fasciculate with neighboring axons, forming two discrete bundles. Over the next 6 hr, these two axon bundles circumnavigate the antennal lobe (Figure 2A, left panel). Previously, we found that ORN axon fasciculation is mediated by PlexB-dependent axon-axon interactions (Joo et al., 2013; Li et al., 2018b). In PlexB loss-of-function mutants (plexB\u2013/\u2013), ORN axon defasciculation was observed in almost every antennal lobe with differing severity (Figure 2A, middle and right panels; Figure 2B). To quantify the fasciculation defects, we blindly binned 24hAPF antennal lobes into one of the three following categories: 1) no defasciculation (Figure 2A, left panel); 2) mild defasciculation, in which fasciculation defects were present but axon bundles that normally circumnavigate the antennal lobe were clearly preserved (Figure 2A, middle panel); and 3) severe defasciculation, where pronounced invasion of the central antennal lobe by ORN axons was observed, along with the loss of axon bundles (Figure 2A, right panel). In plexB\u2013/\u2013 flies, expression of a wild-type PlexB transgene in ORNs significantly restored axon fasciculation (Figure 2B). However, ORN-specific rescue was not complete (Figure 2B), suggesting that PlexB supplied by other cellular sources may also contribute to ORN axon fasciculation. Nonetheless, the rescue assay provides a quantifiable readout with a large dynamic range to examine if each PlexB structural motif participates in axon fasciculation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48594/elife-48594-fig2-v2.jpg)\n\n**Figure 2.:** (A) In a wild-type fly brain at 24hAPF, ORN axons fasciculate into two bundles (left panel; white arrowheads) surrounding the antennal lobe without innervating it (left panel; empty white arrowhead). Loss of PlexB (plexB\u2013/\u2013) causes defasciculation of ORN axons with differing severity (middle and right panels; red arrowheads). In the severe cases, axon bundles are completely missing (right panel; empty blue arrowheads). ORN axons were labeled by pan-ORN Peb-GAL4 (Sweeney et al., 2007) driven mtdTomato expression. (B) Quantification of fasciculation defects by binning antennal lobes into three categories \u2013 no, mild, and severe defasciculation. Expressing wild-type PlexB in ORNs significantly but not completely restores ORN axon fasciculation in plexB mutant flies. \u2018Rescue\u2019 hereafter denotes ORN-specific expression of PlexB variants in plexB\u2013/\u2013 flies. (C\u2013K) Quantification of fasciculation defects in ORN-specific rescue experiments with respective PlexB variants. Sample sizes are noted in parentheses. Significance of the contingency tables in Figure 2B\u2013K was determined by Fisher\u2019s exact test. ns, not significant; **p<0.01; ***p<0.001; ****p<0.0001. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u00b5m. Axes, D (dorsal), L (lateral).\n\nAs shown in Figure 2C, the rescue by Sema domain-deleted PlexB completely failed, indicating the necessity of the Sema domain in PlexB-mediated fasciculation. On the other hand, none of the intracellular motifs we assayed were required, as none of the mutants displayed a compromised ability to rescue fasciculation defects (Figure 2D\u2013G). These data suggest that either the cytoplasmic signaling is not required for fasciculation, or that different motifs play redundant roles in mediating fasciculation.\n\nNotably, uncleavable PlexB appeared to exhibit better rescue than wild-type PlexB, with only one severe defasciculation case out of 47 examined (Figure 2H). Considering that uncleavable PlexB only supplies full-length PlexB proteins, this finding suggests that the full-length PlexB proteins play a predominant role in mediating axon fasciculation. Consistently, neither the N- nor C- terminal cleaved products, when expressed separately (Figure 2I,J) or together (Figure 2K), exhibited any rescue effects.\n\nTaken together, our data suggest that PlexB-dependent axon fasciculation is mediated by full-length PlexB but not the cleaved fragments. Moreover, fasciculation appears to not require any individual cytoplasmic signaling motif but relies on the extracellular Sema domain. Thus, PlexB-dependent axon fasciculation is likely an intercellular adhesion process, in which full-length PlexB proteins bundle axons together through Sema domain-mediated molecular adhesion.\n\n### Axon trajectory choice\n\nAfter their arrival at the ventrolateral corner of the antennal lobe at around 18hAPF, individual ORN axons choose one of the two trajectories \u2013 dorsolateral (DL) or ventromedial (VM) \u2013 and then circumnavigate the antennal lobe in the next 6 hours (Figure 3A; left panels) (Jefferis et al., 2004). Importantly, axons of each ORN class stereotypically choose one defined trajectory. We previously found that trajectory choice is regulated by the axonal PlexB level: a high PlexB level drives axons to the DL trajectory while a low PlexB level confers a VM choice (Li et al., 2018b). Consequently, PlexB overexpression in ORNs shifts axons to the DL trajectory (Figure 3A; right panels) (Li et al., 2018b). This PlexB level-dependent trajectory choice thus provides an opportunity to examine the involvement of individual structural motifs in an axon guidance task. Theoretically, this could also be examined in a rescue context, in which the functionality of PlexB variants is tested in a plexB null background. However, plexB null mutants exhibit axon fasciculation defects that cannot be completely rescued even by wild-type PlexB, as described above (Figure 2B). The abundance of defasciculated axons precludes proper quantification of trajectory choice, making it impracticable to test the structural motifs in a rescue assay. Thus, we assessed the functional engagement of PlexB structural motifs in trajectory choice by examining overexpression-induced DL shifting of ORN axons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48594/elife-48594-fig3-v2.jpg)\n\n**Figure 3.:** Both full-length and reconstituted fragments of PlexB transduce signal in trajectory choice. (A) In wild-type pupal brains at 24hAPF, ORN axons form the dorsolateral (DL) and ventromedial (VM) trajectories circumnavigating the antennal lobe (left panels). Overexpression of PlexB in ORNs shifts ORN axons to the DL trajectory (right panels). ORN axons were labeled by pan-ORN Peb-GAL4 (Sweeney et al., 2007) driven mtdTomato expression. Antennal lobes were co-stained with a neuropil marker N-cadherin (NCad). (B) Fluorescence intensity ratios of ORN axon trajectories (DL/VM) in wild-type and PlexB overexpression brains at 24hAPF. Geometric means: control, 0.68; WT OE, 0.94. \u2018OE\u2019 hereafter denotes ORN-specific overexpression of PlexB variants. (C\u2013K) Fluorescence intensity ratios of ORN axon trajectories (DL/VM) for respective PlexB variants. Geometric means: \u2206Sema, 0.68; GAPmut, 1.01; \u2206Rac1, 0.73; Rac1mut, 0.84; \u2206Rho1, 0.81; Uncleav, 1.04; CleavSec, 0.69; CleavTMCyto, 0.65; CleavSec\u00a0+\u00a0CleavTMCyto, 0.82. Sample sizes are noted in parentheses. Significance among multiple groups in Figure 3B\u2013K was determined by one-way ANOVA with Tukey\u2019s test for multiple comparisons. ns, not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u00b5m. Axes, D (dorsal), L (lateral).\n\nAs described previously (Li et al., 2018b), we quantified the trajectory choice by a ratio of the fluorescence intensity of DL and VM axons (DL/VM; Figure 3B). Recapitulating our previous observations, overexpression of wild-type PlexB in ORNs drove axons to the DL bundle, raising the mean DL/VM ratio to 0.94 from 0.67 of controls (Figure 3A,B). We note that the DL shifting observed here was not as severe as we previously reported (Li et al., 2018b), probably due to lower expression of the newly generated transgene, which was inserted at a genomic locus different from that of the randomly integrated transgene used previously.\n\nBetween 18\u201324hAPF, the canonical ligands of PlexB\u2014Sema2a and Sema2b\u2014establish a gradient along the VM-to-DL axis to instruct PlexB-expressing ORN axons in trajectory choice (Joo et al., 2013). In line with this, deletion of the Sema domain that mediates the Plexin-Semaphorin interaction completely disrupted the ability of PlexB to drive a DL shift (Figure 3C). Regarding the cytoplasmic motifs, mutating either Rac1- or Rho1- binding sites impaired, at least partially, the DL shift caused by PlexB overexpression (Figure 3E\u2013G), revealing the functional necessity of PlexB-GTPase interactions in trajectory choice. Notably, while deleting the first of the Rac1-binding sites (\u2206Rac1) entirely abolished the DL shift caused by PlexB overexpression (Figure 3E), mutating the second Rac1-binding site (Rac1mut) only partially weakened the phenotype (Figure 3F), suggesting the differential importance of these sites in mediating the PlexB-Rac1 interaction. Interestingly, the catalytic RapGAP domain was not required (Figure 3D), as in PlexA-dependent motor axon guidance (Yang et al., 2016).\n\nWe then examined the involvement of PlexB cleavage in trajectory choice and found that uncleavable PlexB was significantly more potent than wild-type PlexB at driving DL shift (Figure 3H), suggesting that full-length PlexB proteins are more active for this function. Considering that trajectory choice is a PlexB level-dependent process (Li et al., 2018b), the cleavage of PlexB thus limits the level of full-length PlexB proteins (Figure 1\u2014figure supplement 1) and can potentially regulate the fidelity of trajectory choice. Intriguingly, while the cleaved fragments did not show any function individually (Figure 3I,J), simultaneous expression of both partially but significantly promoted DL shift of ORN axons (Figure 3K), indicating the functional reconstitution of cleaved fragments in vivo for signaling in trajectory choice. In line with this, a previous study observed that the cleaved Plexin B products are biochemically associated with each other as a complex (Artigiani et al., 2003).\n\nIn summary, distinct from its adhesion-like function in axon fasciculation (Figure 2), PlexB instructs axon trajectory choice by engaging both extracellular and cytoplasmic components, although the RapGAP catalytic activity appears dispensable. Cleavage of PlexB can regulate the strength of PlexB signaling, as the full-length protein appeared to be more active, while the reconstituted fragments also exhibited activity in trajectory choice.\n\n### Synaptic partner selection\n\nBetween 24\u201348hAPF, ORN axons innervate the antennal lobe and search for the dendrites of their synaptic partners\u2014olfactory projection neurons (PNs). By 48hAPF, the antennal lobe has been divided into roughly 50 proto-glomeruli, where the axons and dendrites of matching ORNs and PNs interact (Jefferis et al., 2004). We previously found that PlexB plays a level-dependent role in instructing glomerular selection of ORN axons, independently of trajectory choice (Li et al., 2018b). Specifically, ORN axons targeting to several discrete glomeruli express higher levels of PlexB than their neighbors. These PlexB-high glomeruli localize mainly in the medial antennal lobe, such as DM1 and DM5, along with a few scattered glomeruli, like VA4. PlexB overexpression in ORNs promotes mistargeting of ORN axons to PlexB-high glomeruli, while RNAi-based knockdown shows the opposite preference (Li et al., 2018b).\n\nIn line with our previous observations, PlexB overexpression caused mistargeting of VA2 ORN axons stereotypically to the DM5 glomerulus (Figure 4A,B). Like the weakened DL shift in trajectory choice due to the new UAS transgene (Figure 3B), we also note that the mistargeting preference changed from VA4 to DM5, whose PlexB level is lower than VA4 (Li et al., 2018b). Similarly, the phenotypic penetrance of mistargeting dropped to about 30% (Figure 4B) from the original 70% (Li et al., 2018b). Nonetheless, the glomerular mistargeting caused by PlexB overexpression provides a clear and quantifiable readout for examining the functional engagement of PlexB structural motifs in synaptic partner selection.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48594/elife-48594-fig4-v2.jpg)\n\n**Figure 4.:** (A) In wild-type fly brains, Or92a+\u00a0ORN axons exclusively innervate the VA2 glomerulus at the ventromedial corner of an antennal lobe (left panels; white arrowhead). Overexpression of PlexB in ORNs causes stereotypical mistargeting to the medial DM5 glomerulus (right panels; red arrowhead). Or92a+\u00a0ORN axons were labeled by membrane-localized rCD2 driven by an Or92a promoter. Antennal lobes were co-stained with a neuropil marker N-cadherin (NCad). (B) Penetrance of glomerular mistargeting in wild-type and PlexB overexpression brains. \u2018OE\u2019 hereafter denotes ORN-specific overexpression of PlexB variants. (C\u2013K) Penetrance of glomerular mistargeting for respective PlexB variants. Sample sizes are noted in parentheses. Significance of the contingency tables in Figure 4B\u2013K was determined by Fisher\u2019s exact test. ns, not significant; **p<0.01; ***p<0.001; ****p<0.0001. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u00b5m. Axes, D (dorsal), L (lateral).\n\nPlexB without its Sema domain failed to induce glomerular mistargeting (Figure 4C), emphasizing the global necessity of Sema domain in all wiring processes examined. In contrast, the RapGAP catalytic site was not essential for any tested processes, including synaptic partner selection (Figure 4D). As in trajectory choice, glomerular targeting required PlexB-GTPase interactions, as the variants disrupting Rac1- or Rho1- binding sites substantially reduced glomerular mistargeting events caused by PlexB overexpression (Figure 4E\u2013G). Notably, deletion of the first Rac1-binding site again resulted in greater functional disruption than substitution at the second site (Figure 4E,F; as well as Figure 3E,F), further supporting the differential importance of these two regions in bridging PlexB and Rac1.\n\nOverexpression of the cleaved products, either independently or together, was insufficient to drive mistargeting (Figure 4I\u2013K), suggesting that synaptic partner selection is likely mediated by the full-length PlexB. However, uncleavable PlexB, which produces more full-length proteins than wild-type (Figure 1\u2014figure supplement 1), did not increase the phenotypic penetrance (Figure 4H). We note that the quantification of glomerular mistargeting, as a binary binning, is less sensitive than the fluorescence measurement in quantifying trajectory choice. Thus, the resolution of this assay may not be sufficient to detect any small effect here.\n\nCollectively, PlexB-mediated synaptic partner selection engages both extracellular and cytoplasmic modules for signaling, resembling trajectory choice but not axon fasciculation. Moreover, extracellular cleavage of PlexB does not appear to be critical in synaptic partner selection.\n\n## Discussion\n\nOur systematic in vivo analysis shows the divergent engagement of different PlexB structural motifs in distinct neurodevelopmental processes (Figure 5), arguing against a singular signaling mechanism for PlexB. We further identify cleavage as a regulatory mechanism of PlexB signaling in vivo, highlighting the functional significance of the evolutionarily conserved cleavage of class B Plexins. These experiments reveal how a single molecule, PlexB, achieves functional versatility in neurodevelopment by diversified and task-specific motif engagement, in conjunction with temporally-regulated expression and level-dependent signaling as we previously discovered (Li et al., 2018b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48594/elife-48594-fig5-v2.jpg)\n\n**Figure 5.:** As illustrated in columns, each distinct wiring step in the development of the fly olfactory map employs a unique combination of signaling motifs. From the perspective of individual structural motifs shown in rows, each one exhibits differing importance at different developmental stages, except the universally required Sema domain and the generally expendable GAP catalytic unit.\n\n### Differential engagement of structural motifs in distinct developmental tasks\n\nThe extracellular Sema domain is highly conserved in all Plexins and Semaphorins (Goodman et al., 1999). Structural and biochemical studies have highlighted its central role in mediating Plexin-Semaphorin interactions (Janssen et al., 2010; Nogi et al., 2010). Consistently, we found that all three wiring steps examined here rely on the integrity of the Sema domain, further emphasizing its functional necessity.\n\nOn the other hand, the catalytic site of the RapGAP domain appears to be dispensable for all PlexB-mediated wiring processes examined. Although structural and in vitro studies have pinned down Rap as the substrate for Plexin\u2019s GAP domains (Wang et al., 2012; Wang et al., 2013), in vivo studies in different developmental systems have yielded contrasting observations regarding the functional significance of its catalytic activity (Worzfeld et al., 2014; Yang et al., 2016). Thus, RapGAP-mediated catalysis provides one, but not the only, signaling output of Plexins, further supporting the notion that Plexins diversely engage signaling motifs for distinct developmental tasks. Although the catalytic arginine residues are conserved and are individually indispensable across species and across Plexin sub-families (Oinuma et al., 2004; Rohm et al., 2000; Saito et al., 2009; Sakurai et al., 2010; Wang et al., 2012; Wang et al., 2013), our results presented here do not exclude the possibility that Drosophila PlexB retains some GAP activity in our triple arginine mutant through an alternative mechanism.\n\nIt has been shown that the integrity of GTPase-binding sites is crucial for PlexB-mediated axon guidance of embryonic motor neurons (Hu et al., 2001). Here, we analyzed the functional involvement of these motifs in three distinct neurodevelopmental tasks and observed differential necessity among them. While the GTPase-binding sites are entirely dispensable for bundling ORN axons, both axon trajectory choice and synaptic partner selection require proper GTPase binding. Notably, the two distinct Rac1-binding sites are of different importance in mediating the PlexB-Rac1 interaction.\n\nWe note that the expression levels of our transgenes, while comparable to each other (Figure 1\u2014figure supplement 1), may be different from endogenous PlexB. Thus, a negative observation (e.g., the expendability of the RapGAP catalytic unit) can possibly be caused by overexpression-induced compensation of a partial loss-of-function mutant. Editing the endogenous PlexB locus would overcome this caveat, at the expense of losing cell type specificity in genetic manipulation, which is of more concern for a widely expressed protein like PlexB. Despite the technical limitations, the comparative analysis here allowed us to functionally characterize PlexB structural motifs individually in vivo and reveals how the task-specific, combinatorial engagement of structural motifs enables a single molecule like PlexB to accomplish multiple distinct developmental tasks in neural circuit assembly (Figure 5).\n\n### Cleavage of class B plexins \u2013 one protein, two functional forms\n\nNumerous cell-surface proteins, including wiring molecules, are cleaved by extracellular convertases (Duckert et al., 2004). However, for most of them, it remains unclear how cleavage affects their signaling and functional output. For instance, all class B Plexins possess an extracellular convertase site (Artigiani et al., 2003), whose biological function, until now, had remained unknown. Intriguingly, cleaved PlexB fragments are not degraded but remain biochemically associated in a complex (Artigiani et al., 2003), suggesting that cleaved fragments participate in PlexB signaling.\n\nWe previously found that only a small fraction of endogenous PlexB proteins in brains are in a full-length form (Li et al., 2018b), suggesting that cleavage may play a role in tuning PlexB signaling. In the current study, we found that uncleavable PlexB produces more full-length proteins in vivo (Figure 1\u2014figure supplement 1) and possesses higher activity in axon fasciculation and trajectory choice than wild-type PlexB. On the other hand, the two cleaved fragments when expressed together via separate transgenes could functionally reconstitute PlexB activity in the trajectory choice assay. Taken together, our findings support the existence of two functional forms of PlexB proteins: full-length and reconstituted fragments. Considering their distinct biophysical states, we anticipate that these two forms have different signaling properties. However, the complex and indirect readouts of in vivo developmental consequences make it difficult to quantitatively determine these properties.\n\nConsistent with previous observations in vitro (Artigiani et al., 2003), we found that disrupting Rac1 or Rho1 binding reduced the presence of cleaved fragments in brains (Figure 1\u2014figure supplement 1). As mutations at GTPase-binding sites did not affect the rescue of fasciculation defects (Figure 2), it is unlikely that these mutations disturb membrane localization, leading to insufficient cleavage. Rather, it is more likely that losing GTPase binding destabilizes the C-terminal cleaved fragment, which contains a short, degradation-prone extracellular motif. Considering that the cleaved fragments are capable of signaling, the interaction between GTPase binding and cleavage adds another layer of complexity to PlexB signaling. Disrupting GTPase binding may thus cause secondary defects by reducing cleaved PlexB.\n\nTaken together, cleavage brings new properties and regulatory potentials to PlexB. It demands collective efforts from structural, biochemical, and functional approaches to understand this conserved feature of class B Plexins, as well as many other cleavable wiring molecules.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>C155-GAL4</td>\n      <td>Lin and Goodman, 1994</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Pebbled-GAL4</td>\n      <td>Sweeney et al., 2007</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Or92a-rCD2</td>\n      <td>Li et al., 2018b</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mtdTomato</td>\n      <td>Potter et al., 2010</td>\n      <td>RRID:BDSC_30124</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>plexBKG00878</td>\n      <td>Bellen et al., 2004</td>\n      <td>RRID:BDSC_14579</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-PlexB (WT)</td>\n      <td>this study</td>\n      <td></td>\n      <td rowspan=\"9\">Transgenic flies of UAS-PlexB variants, described in Figure 1B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-PlexB (\u0394Sema)</td>\n      <td>this study</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-PlexB (GAPmut)</td>\n      <td>this study</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-PlexB (\u0394Rac1)</td>\n      <td>this study</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-PlexB (Rac1mut)</td>\n      <td>this study</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-PlexB (\u0394Rho1)</td>\n      <td>this study</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-PlexB (Uncleav)</td>\n      <td>this study</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-PlexB (CleavSec)</td>\n      <td>this study</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-PlexB (CleavTMCyto)</td>\n      <td>this study</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rat anti-Ncad</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>RRID:AB_528121</td>\n      <td>1:40 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-DsRed</td>\n      <td>Clontech</td>\n      <td>RRID:AB_10013483</td>\n      <td>1:200 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-rat CD2</td>\n      <td>Bio-Rad</td>\n      <td>RRID:AB_321238</td>\n      <td>1:200 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-V5</td>\n      <td>Thermo Fisher</td>\n      <td>RRID:AB_2556564</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>ZEN</td>\n      <td>Carl Zeiss</td>\n      <td>RRID:SCR_013672</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>ImageJ</td>\n      <td>National Institutes of Health</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Photoshop</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_014199</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Illustrator</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_010279</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Drosophila stocks and genotypes\n\nFlies were raised on standard cornmeal medium with a 12 hours/12 hours light cycle at 25\u00b0C (excepting experiments described in Figure 4, where 29\u00b0C was used for enhanced transgenic expression). The following lines were used: C155-GAL4 (pan-neuronal) (Lin and Goodman, 1994), Pebbled-GAL4 (Peb-GAL4, pan-ORN) (Sweeney et al., 2007), Or92a-rCD2 (VA2 ORNs) (Li et al., 2018b), UAS-mtdTomato (Potter et al., 2010), plexBKG00878 (PlexB mutant) (Bellen et al., 2004), as well as our newly generated UAS transgenes encoding PlexB variants: WT, \u2206Sema, GAPmut, \u2206Rac1, Rac1mut, \u2206Rho1, Uncleav, CleavSec, and CleavTMCyto. Complete genotypes of figure panels are described in Supplementary file 1.\n\n### Generation of UAS transgenes encoding PlexB variants\n\nThe sequence encoding wild-type PlexB (Joo et al., 2013) was amplified by Q5 hot-start high-fidelity DNA polymerase (New England Biolabs, Ipswich, MA, USA) and assembled into a pUAST-attB vector (Li et al., 2017) by NEBuilder HiFi DNA assembly master mix (New England Biolabs, Ipswich, MA, USA). A V5 tag was inserted before the stop codon by Q5 site-directed mutagenesis kit (New England Biolabs, Ipswich, MA, USA). Afterwards, deletions and point mutations were introduced by Q5 site-directed mutagenesis kit (New England Biolabs, Ipswich, MA, USA). All constructs were transformed into NEB stable competent E. coli (New England Biolabs, Ipswich, MA, USA), extracted by QIAprep spin miniprep kit (QIAGEN, Hilden, Germany), and verified by full-length sequencing (Elim Biopharmaceuticals, Hayward, CA, USA). Constructs were then injected into vas-int.Dm;;ZH-attP-86Fb embryos (Bischof et al., 2007). White+\u00a0progenies were individually balanced by TM3 or TM6B, with the vas-int.Dm transgene removed.\n\n### Immunocytochemistry\n\nFly brains were dissected and immunostained according to previously described methods (Wu and Luo, 2006; Wu et al., 2017). Briefly, brains were dissected in phosphate buffered saline (PBS) (Thermo Fisher, Waltham, MA) and subsequently fixed in 4% paraformaldehyde (Electron Microscopy Scineces, Hatfield, PA, USA) in PBS with 0.015% Triton X-100 (Sigma-Aldrich, St. Louis, MO, USA) for 20 min on a nutator at room temperature. Once fixed, brains were washed with PBST (0.3% Triton X-100 in PBS) four times, each time for 20 min on a nutator at room temperature. Brains were then blocked in 5% normal donkey serum (Jackson ImmunoResearch, West Grove, PA, USA) in PBST overnight at 4\u00b0C or for 1 hour at room temperature on a nutator. Then, brains were incubated in primary antibody diluted in the blocking solution for 36\u201348 hours on a 4\u00b0 C nutator. Brains were then washed 4 times in PBST, each time nutating for 20 min at room temperature. Next, brains were incubated with secondary antibodies diluted in the blocking solution and nutated in the dark for 36\u201348 hours at 4\u00b0C. Brains were again washed with PBST four times, each time on a nutator for 20 min at room temperature. Once immunostained, brains were mounted on slides with SlowFade antifade reagent (Thermo Fisher, Waltham, MA, USA) and stored at 4\u00b0 C prior to imaging.\n\nPrimary antibodies used in this study include: rat anti-NCad (1:40; DN-Ex#8, Developmental Studies Hybridoma Bank, Iowa City, IA, USA), rabbit anti-DsRed (1:200; 632496, Clontech, Mountain View, CA, USA), mouse anti-rat CD2 (1:200; OX-34, Bio-Rad, Hercules, CA, USA). Donkey secondary antibodies conjugated to Alexa Fluor 405/568/647 (Jackson ImmunoResearch, West Grove, PA, USA) were used at 1:250.\n\n### Image acquisition, processing, and quantification\n\nImages were acquired by a Zeiss LSM 780 laser-scanning confocal microscope (Carl Zeiss, Oberkochen, Germany), with a 40x/1.4 Plan-Apochromat oil objective (Carl Zeiss, Oberkochen, Germany). Confocal z-stacks were obtained by 1 \u03bcm intervals at the resolution of 512\u00a0\u00d7\u00a0512.\n\nFor quantification of fasciculation defects, a single scorer binned antennal lobes into three categories \u2013 \u2018no defasciculation\u2019, \u2018mild defasciculation\u2019, and \u2018severe defasciculation\u2019 \u2013 while blinded to the genotypes. Antennal lobes with clear trajectories and lacking axon invasion into the lobe were binned as \u2018no defasciculation\u2019. Both \u2018mild defasciculation\u2019 and \u2018severe defasciculation\u2019 indicate axon invasion into the antennal lobe, while the \u2018severe\u2019 cases also showed the loss of trajectories.\n\nWe quantified ORN axon trajectories at 24hAPF as previously described (Li et al., 2018b). Briefly, the z-stack of an antennal lobe was collapsed to one image by maximum intensity projection (ZEN software, Carl Zeiss, Oberkochen, Germany). Each antennal lobe was divided into two halves (DL and VM) by the line from the ORN axon entry point to the commissure merging point. The fluorescence intensities of the DL and VM halves and an area outside of the antennal lobe (background) were measured by ImageJ (NIH, Bethesda, MD, USA). Background fluorescence intensity was deducted to obtain the corrected intensities of the DL and VM axon trajectories. The DL/VM ratio was calculated by Excel (Microsoft, Redmond, WA, USA).\n\nImages were exported as maximum projections by ZEN (Carl Zeiss, Oberkochen, Germany) in the format of TIFF. Preview (Apple, Cupertino, CA, USA) was used for image rotation and cropping. Illustrator (Adobe, San Jose, CA) was used to make diagrams and assemble figures.\n\n### Western blot\n\nBrains and ventral nerve cords of third-instar larvae were dissected in the Schneider\u2019s Drosophila medium (Thermo Fisher, Waltham, MA, USA) and snap frozen in liquid nitrogen before stored at \u201380\u00b0C. Samples were lysed on ice in pre-cooled RIPA buffer (Thermo Fisher, Waltham, MA, USA) with protease inhibitors (100X Halt cocktail; Thermo Fisher, Waltham, MA, USA) and then rotated for 2 hours at 4\u00b0C. After centrifugation for 30 min at 16000 RCF (relative centrifugal force) at 4\u00b0C, the supernatant was collected and kept on ice. Laemmli sample buffer (Bio-Rad, Hercules, CA, USA) and 20 mM dithiothreitol (Sigma-Aldrich, St. Louis, MO, USA) were added to the sample, followed by heating at 95\u00b0C for 10 min. Precision Plus Protein Kaleidoscope prestained protein standard (Bio-Rad, Hercules, CA, USA) was used as the molecular weight marker. Electrophoresis with the NuPAGE Tris-acetate gel and PVDF membrane transfer (Thermo Fisher, Waltham, MA, USA) were performed according to the manufacturer\u2019s protocols. We note that the PlexB protein level is extremely low in vivo, even in the context of overexpression (Li et al., 2018b). Accordingly, routine blocking reagents, such as nonfat dry milk or bovine serum albumin, and conventional substrates for HRP were not able to yield clear blotting results. The membrane was blocked by TBS-buffered SuperBlock solution (Thermo Fisher, Waltham, MA, USA) and incubated with the primary antibody (mouse anti-V5, 1:300, R960-25; Thermo Fisher, Waltham, MA, USA) in SuperBlock for 72 hours on a 4\u00b0C orbital shaker. After washing with TBST (25 mM Tris, 0.15M NaCl, 0.05% Tween-20, pH 7.5; Thermo Fisher, Waltham, MA, USA), the membrane was incubated with the secondary antibody (goat anti-mouse HRP-conjugated, 1:2500; Thermo Fisher, Waltham, MA, USA) for 2 hours on an orbital shaker at room temperature. The signal was developed with Clarity Max Western ECL substrate (Bio-Rad, Hercules, CA, USA) and captured by the ChemiDoc XRS+\u00a0system (Bio-Rad, Hercules, CA, USA). Afterwards, the membrane was stripped in Restore PLUS Western blot stripping buffer for 15 min at 37\u00b0C with occasional shaking, followed by re-blocking with TBS-buffered SuperBlock. N-cadherin and actin controls were blotted in a routine Western procedure with the following antibodies: rat anti-NCad (1:300; DN-Ex#8, Developmental Studies Hybridoma Bank, Iowa City, IA, USA) and mouse anti-actin (1:2000; ab8224, Abcam, Cambridge, UK).\n\n### Statistical analysis\n\nNo statistical methods were used to determine sample sizes, but our sample sizes were similar to those generally employed in the field. Antennal lobes damaged in dissection were excluded from analysis; otherwise, all samples were included. Except for scoring the fasciculation defects, data collection and analysis were not performed blind to the conditions of the experiments. GraphPad Prism (GraphPad Software, La Jolla, CA, USA) was used for statistical analysis and plotting. Significance among multiple groups was determined by one-way ANOVA with Tukey\u2019s test for multiple comparisons. Significance of contingency tables was determined by Fisher's exact test.\n",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "e781023c-65a5-4af5-884b-c94b691c6a36",
+      "submission_id": "5cae9a1c-9ed3-4f02-9aec-4173080ff8cf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley United States\n\nReviewers:\n- Takahiro Chihara, Hiroshima University Japan\n- Bing Ye, University of Michigan United States\n\n## Review text\n\nDOI: [10.7554/eLife.48594.013](https://doi.org/10.7554/eLife.48594.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Functional divergence of Plexin B structural motifs in distinct steps of Drosophila olfactory circuit assembly\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Kristin Scott as the Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Takahiro Chihara (Reviewer #1); Bing Ye (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nGuajardo et al. provide in vivo evidence for the functional requirements of Plexin B functional motifs in Drosophila olfactory receptor neurons, ORNs. The authors generated a series of transgenic lines expressing mutated Plexin B and performed genetic rescue experiments for axon bundle formation (fasciculation) and overexpression in ORNs for axon trajectory choice and synaptic partner selection. The authors found differential requirements of the Plexin B domains. For example, the Sema domain is required for all the steps but the GTPase-binding domains are involved in trajectory choice and synaptic partner choice but not in axon fasciculation. The study nicely builds on the authors' previous work to elucidate novel concepts. It also offers an in vivo test of ideas based on previous biochemical findings (e.g., the function of the RapGAP domain). The study is well designed and the results are convincing. The paper is clearly written and requires only minor text changes.\n\nEssential revisions:\n\n1) The authors find that the GAP domain is not involved in any steps of ORN assembly. Is there experimental evidence showing GAP activity is really abolished in the Drosophila Plexin B mutant GAPmut (R1570A, R1571G, R1899A)? The authors should indicate the relevant references or experimental evidence or consider the possibility that activity is not abolished in the text.\n\n2) The findings and discussion regarding the cleavage of Plexin B are intriguing. Based on the results, the uncleavable Plexin B is more effective (functional) than wild-type Plexin B (except glomerular selection). The authors discussed the potential physiological significance of Plexin B cleavage, stating that \"Plexin B cleavage is a way of tuning the Plexin B level (function)\". Can authors provide any genetic evidence or references supporting this claim? More discussion here is warranted.\n",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "57726229-1ab6-4aae-b0b1-9c789d821b7b",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C1",
+      "claim": "Plexins exhibit multitudinous, evolutionarily conserved functions in neural development.",
+      "claim_type": "EXPLICIT",
+      "source": "Plexins exhibit multitudinous, evolutionarily conserved functions in neural development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the broader scientific literature on Plexins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "e20fb1ff-b91f-4b1d-9073-fb32139731a0",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C2",
+      "claim": "PlexB controls multiple steps during the assembly of the Drosophila olfactory circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that Plexin B (PlexB) controls multiple steps during the assembly of the Drosophila olfactory circuit (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "01e324fd-178a-4b71-b0f9-7e2e42728072",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C3",
+      "claim": "The extracellular Sema domain is essential for axon fasciculation, trajectory choice, and synaptic partner selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the extracellular Sema domain is essential for all three steps",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 2C, 3C, and 4C showing that deletion of the Sema domain abolishes PlexB function in all three processes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "a62a65b6-09b6-4be8-848e-52b12cfb7e23",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C4",
+      "claim": "The catalytic site of the intracellular RapGAP is not engaged in axon fasciculation, trajectory choice, or synaptic partner selection.",
+      "claim_type": "EXPLICIT",
+      "source": "the catalytic site of the intracellular RapGAP is engaged in none",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 2D, 3D, and 4D showing that the GAPmut variant rescues or functions similarly to wild-type PlexB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "2fbb80c8-8174-4d2b-8087-4df57a03e17f",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C5",
+      "claim": "The intracellular GTPase-binding motifs are essential for trajectory choice and synaptic partner selection.",
+      "claim_type": "EXPLICIT",
+      "source": "the intracellular GTPase-binding motifs are essential for trajectory choice and synaptic partner selection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 3E-G and 4E-G showing that disruption of GTPase-binding sites impairs these functions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "518ece7f-1bbc-439b-a5d8-0d69bcbc7b66",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C6",
+      "claim": "The intracellular GTPase-binding motifs are dispensable for fasciculation.",
+      "claim_type": "EXPLICIT",
+      "source": "the intracellular GTPase-binding motifs are essential for trajectory choice and synaptic partner selection, but are dispensable for fasciculation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 2E-G showing that GTPase-binding mutants can rescue fasciculation defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "04373575-471b-43d5-ae75-96100090ef7d",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C7",
+      "claim": "Extracellular PlexB cleavage serves as a regulatory mechanism of PlexB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, extracellular PlexB cleavage serves as a regulatory mechanism of PlexB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that uncleavable PlexB has enhanced activity (Figures 2H, 3H) and that cleaved fragments can reconstitute function (Figure 3K).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "d7707d3e-0635-4762-a8e7-4dd38032a3c3",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C8",
+      "claim": "The divergent roles of PlexB motifs in distinct steps of neural development contribute to its functional versatility in neural circuit assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the divergent roles of PlexB motifs in distinct steps of neural development contribute to its functional versatility in neural circuit assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data showing differential motif requirements across developmental processes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "cd07ab26-abc3-4336-acfe-3551eaebb0f5",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C9",
+      "claim": "Plexin-family receptors are over 600 million years old.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 600 million years old, Plexin-family receptors display high degrees of conservation across evolutionarily distant species for both extracellular and cytoplasmic domains (Junqueira Alves et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published work on Plexin evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "84a19cec-60c9-4c63-903e-43b5e067ce45",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C10",
+      "claim": "Plexin-family receptors display high degrees of conservation across evolutionarily distant species for both extracellular and cytoplasmic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 600 million years old, Plexin-family receptors display high degrees of conservation across evolutionarily distant species for both extracellular and cytoplasmic domains (Junqueira Alves et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published work on Plexin conservation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "c4dd0259-160e-46f6-83f5-6f0535aa2ac3",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C11",
+      "claim": "The extracellular Sema domain is a core domain required for Plexin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and biochemical investigations have identified several core domains required for Plexin signaling (Bell et al., 2011; He et al., 2009; Janssen et al., 2010; Janssen et al., 2012; Kong et al., 2016; Liu et al., 2010; Nogi et al., 2010; Shang et al., 2017; Tong et al., 2009; Tong et al., 2007; Tong et al., 2008; Wang et al., 2012; Wang et al., 2013): the extracellular Sema domain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "0f3c16fd-f074-4e6e-a98c-2f8c02e8cf5d",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C12",
+      "claim": "The intracellular Rac and Rho GTPase-binding sites are core domains required for Plexin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and biochemical investigations have identified several core domains required for Plexin signaling (Bell et al., 2011; He et al., 2009; Janssen et al., 2010; Janssen et al., 2012; Kong et al., 2016; Liu et al., 2010; Nogi et al., 2010; Shang et al., 2017; Tong et al., 2009; Tong et al., 2007; Tong et al., 2008; Wang et al., 2012; Wang et al., 2013): the extracellular Sema domain, the intracellular Rac and Rho GTPase-binding sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "914e100e-76d6-48a6-b6ea-941388f78de7",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C13",
+      "claim": "The intracellular catalytic RapGAP domain is a core domain required for Plexin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and biochemical investigations have identified several core domains required for Plexin signaling (Bell et al., 2011; He et al., 2009; Janssen et al., 2010; Janssen et al., 2012; Kong et al., 2016; Liu et al., 2010; Nogi et al., 2010; Shang et al., 2017; Tong et al., 2009; Tong et al., 2007; Tong et al., 2008; Wang et al., 2012; Wang et al., 2013): the extracellular Sema domain, the intracellular Rac and Rho GTPase-binding sites, and the intracellular catalytic RapGAP domain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to structural and biochemical studies, though the authors' data suggests it may not be universally required.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "827a6851-4d43-44e9-afb7-7723c33953c0",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C14",
+      "claim": "Concomitant Semaphorin extracellular binding and Rac intracellular binding lead to Plexin dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "the current working model of Plexin signal transduction suggests that concomitant Semaphorin extracellular binding and Rac intracellular binding lead to Plexin dimerization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the current working model in the field, supported by citation to a review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "2b59d7df-ec8d-4d18-a4ee-f26f565462ef",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C15",
+      "claim": "Plexin dimerization activates the catalytic GAP domain to hydrolyze Rap-GTP for downstream signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "the current working model of Plexin signal transduction suggests that concomitant Semaphorin extracellular binding and Rac intracellular binding lead to Plexin dimerization, which subsequently activates the catalytic GAP domain to hydrolyze Rap-GTP for downstream signaling (Pascoe et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the current working model in the field, supported by citation to a review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "9bd52bb4-d21b-4de4-ad13-fa614f3b753a",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C16",
+      "claim": "The catalytic GAP domain is essential in neural tube closure.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the catalytic GAP domain has been shown to be essential in neural tube closure (Worzfeld et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "1f3b881c-4433-445d-9ae7-c126e05f9aa9",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C17",
+      "claim": "The catalytic GAP domain is not essential in motor axon guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the catalytic GAP domain has been shown to be essential in neural tube closure (Worzfeld et al., 2014) but not in motor axon guidance (Yang et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "27658049-12a5-41b8-9161-fb6bbb56bae8",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C18",
+      "claim": "Plexins may use structural motifs differentially in distinct developmental contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that Plexins may use structural motifs differentially in distinct developmental contexts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the differential requirement of the GAP domain in different processes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "f28bb2eb-4e38-4c68-b29c-b7dfa2d45193",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C19",
+      "claim": "The convertase cleavage site is a conserved signature of all class B Plexins.",
+      "claim_type": "EXPLICIT",
+      "source": "We particularly note the convertase cleavage site \u2013 a conserved signature of all class B Plexins (Artigiani et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study and is consistent with established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "137ebf21-66a1-41cd-bdeb-80334ab7318f",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C20",
+      "claim": "No biological function of the convertase cleavage site has been reported since its discovery over a decade ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its conservation across hundreds of millions of years, to our knowledge no biological function has ever been reported since its discovery over a decade ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field at the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "0ea7afa5-f063-4ba4-a895-680bd6256428",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C21",
+      "claim": "The cleavage event physically separates the extracellular and transmembrane-cytoplasmic parts of Plexin.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the cleavage event breaks the Plexin protein and thus physically separates the extracellular and transmembrane-cytoplasmic parts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the nature of protein cleavage.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "fca40904-ae51-4397-a9b5-9472f57e87f8",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C22",
+      "claim": "PlexB plays indispensable roles in multiple steps during the assembly of the Drosophila olfactory map.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that PlexB plays indispensable roles in multiple steps during the assembly of the Drosophila olfactory map, with level-independent functions in the axon fasciculation of olfactory receptor neurons (ORNs) and level-dependent tasks in ORN axon trajectory choice and subsequent glomerular targeting (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "9aa14134-09df-4151-9040-46f8f5415ba7",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C23",
+      "claim": "PlexB has level-independent functions in the axon fasciculation of olfactory receptor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that PlexB plays indispensable roles in multiple steps during the assembly of the Drosophila olfactory map, with level-independent functions in the axon fasciculation of olfactory receptor neurons (ORNs) and level-dependent tasks in ORN axon trajectory choice and subsequent glomerular targeting (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "c3a77f0a-aef6-49b7-95fe-81ec56d39570",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C24",
+      "claim": "PlexB has level-dependent tasks in ORN axon trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that PlexB plays indispensable roles in multiple steps during the assembly of the Drosophila olfactory map, with level-independent functions in the axon fasciculation of olfactory receptor neurons (ORNs) and level-dependent tasks in ORN axon trajectory choice and subsequent glomerular targeting (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "e759b44d-0d69-4fe4-86ba-650e32d407b7",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C25",
+      "claim": "PlexB has level-dependent tasks in glomerular targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that PlexB plays indispensable roles in multiple steps during the assembly of the Drosophila olfactory map, with level-independent functions in the axon fasciculation of olfactory receptor neurons (ORNs) and level-dependent tasks in ORN axon trajectory choice and subsequent glomerular targeting (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "8771a2e4-8a15-434b-b461-bb7004c88dd6",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C26",
+      "claim": "PlexB regulates axon-axon interaction (fasciculation) in the Drosophila olfactory system.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal that, within one system, PlexB regulates several fundamental cellular processes of neural wiring, namely axon-axon interaction (fasciculation), axon guidance (trajectory choice), and synaptic partner selection (glomerular targeting) (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work and data presented in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "eb9dfe0d-da85-4fd4-a754-5c873a1f7ada",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C27",
+      "claim": "PlexB regulates axon guidance (trajectory choice) in the Drosophila olfactory system.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal that, within one system, PlexB regulates several fundamental cellular processes of neural wiring, namely axon-axon interaction (fasciculation), axon guidance (trajectory choice), and synaptic partner selection (glomerular targeting) (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work and data presented in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "5c7e2f41-b059-4b96-9deb-f8e9ee25b81c",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C28",
+      "claim": "PlexB regulates synaptic partner selection (glomerular targeting) in the Drosophila olfactory system.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal that, within one system, PlexB regulates several fundamental cellular processes of neural wiring, namely axon-axon interaction (fasciculation), axon guidance (trajectory choice), and synaptic partner selection (glomerular targeting) (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work and data presented in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "4bb266a3-0ece-42e5-a1e1-205b68c88051",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C29",
+      "claim": "PlexB likely signals in different ways when executing distinct developmental tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that this level dependence is only observed in trajectory choice and glomerular targeting but not in fasciculation, it is likely that PlexB signals in different ways when executing these distinct tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the differential level-dependence of PlexB functions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "f336fc57-b38a-474c-bcd4-f862046e5f4f",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C30",
+      "claim": "Nine UAS transgenic lines carrying PlexB variants were generated.",
+      "claim_type": "EXPLICIT",
+      "source": "To dissect the structure-to-function relationship of PlexB in the assembly of the fly olfactory map, we generated nine UAS transgenic lines carrying PlexB variants (described below; Figure 1B) produced by site-directed mutagenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "932dad5a-d1e0-43f1-9af8-54db478718ac",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C31",
+      "claim": "A V5 tag was added to the C-terminus of each PlexB variant.",
+      "claim_type": "EXPLICIT",
+      "source": "A V5 tag was added to the C-terminus of each variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "a46ceea3-25f0-49c2-9892-57d69b4b3c1c",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C32",
+      "claim": "All PlexB transgenes were integrated into the same genomic locus, ZH-attP-86Fb.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain comparable expression levels, all transgenes were mutagenized from a single wild-type UAS-PlexB construct (Joo et al., 2013) and integrated into the same genomic locus, ZH-attP-86Fb (Bischof et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "d09b1f48-59e8-4804-aa7a-3a4249774d51",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C33",
+      "claim": "Expression of PlexB variants in Drosophila neurons in vivo was verified by Western blotting with an anti-V5 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Their expression in Drosophila neurons in vivo was verified by Western blotting with an anti-V5 antibody (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "a3318591-be06-49dd-b909-e228f9ce84e3",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C34",
+      "claim": "The extracellular Sema domain mediates binding between Plexins and Semaphorins.",
+      "claim_type": "EXPLICIT",
+      "source": "It mediates binding between Plexins and Semaphorins and triggers Plexin signal transduction (Janssen et al., 2010; Nogi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ec345cab-f850-4507-be3e-43de2c35231b",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C35",
+      "claim": "The Sema domain triggers Plexin signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "It mediates binding between Plexins and Semaphorins and triggers Plexin signal transduction (Janssen et al., 2010; Nogi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "0d7107f5-de7a-4244-9054-0b0eed2ace72",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C36",
+      "claim": "PlexB with its entire Sema domain deleted (\u2206Sema) was expressed and cleaved normally in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "PlexB with its entire Sema domain deleted (\u2206Sema) was expressed and cleaved normally in vivo (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "498d89bc-170e-4840-a5ca-f7d22113219f",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C37",
+      "claim": "The Ras homolog Rap is the substrate of the Plexin GAP domain for signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies identified the Ras homolog Rap as its substrate for signal transduction (Wang et al., 2012; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "af1eaff0-4722-4db9-bf96-0575b776b552",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C38",
+      "claim": "Three arginine residues are essential for the GAP catalytic activity in fly PlexB.",
+      "claim_type": "EXPLICIT",
+      "source": "With homology alignment (Figure 1\u2014figure supplement 2), we identified the three arginine residues that are essential for the GAP catalytic activity (Wang et al., 2012; Worzfeld et al., 2014) in fly PlexB",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by homology alignment data and citations to published studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ddccf94c-4927-4643-bceb-cb286d651a86",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C39",
+      "claim": "The GAPmut variant (R1570A, R1571G, R1899A) did not affect PlexB's expression and cleavage in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These point mutations did not affect PlexB's expression and cleavage in vivo (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "56696b49-c6d0-42af-bcab-2047f3c886eb",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C40",
+      "claim": "The GTPase-binding region of fly PlexB interacts with small GTPases Rac1 and Rho1.",
+      "claim_type": "EXPLICIT",
+      "source": "Sitting between the two arms of the RapGAP domain, the GTPase-binding region of fly PlexB has been shown to interact with small GTPases Rac1 and Rho1 (Hu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "b0b1e658-ef6a-45a6-8efd-c87776b0c665",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C41",
+      "claim": "Class B Plexins can interact simultaneously with two Rac1 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural analysis found that class B Plexins can interact simultaneously with two Rac1 molecules, with one bound at each site (Bell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ea37b7a2-915a-49ef-9a72-4c2b96c190cd",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C42",
+      "claim": "Disrupting Rac1 or Rho1 binding reduced the presence of cleaved fragments in brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, while full-length PlexB proteins were present normally, the cleaved C-terminal fragment was markedly reduced in \u2206Rac1 or \u2206Rho1 variants (Figure 1\u2014figure supplement 1), as previously observed in cell culture (Artigiani et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1\u2014figure supplement 1 and citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "924c5ff2-55d2-4b50-83a0-449dde9f2cec",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C43",
+      "claim": "Only a small fraction of endogenous PlexB proteins are present in the full-length form in developing fly brains.",
+      "claim_type": "EXPLICIT",
+      "source": "In developing fly brains, only a small fraction of endogenous PlexB proteins are present in the full-length form (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "9a268c6b-11e3-47b9-b660-5e88b0c6209d",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C44",
+      "claim": "The cleaved C-terminal fragment of PlexB is not degraded in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the cleaved C-terminal fragment is not degraded in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data showing stable cleaved fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "a70cd1b1-1d04-4613-b4d9-81d1b1b95c06",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C45",
+      "claim": "Cleaved PlexB products stably associate in a complex in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a previous observation that cleaved PlexB products stably associate in a complex in cell culture (Artigiani et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "b2024fa3-bf9b-46ea-b3d1-8d528dd41a16",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C46",
+      "claim": "The two arginine mutations (R1196A, R1199A) abolished PlexB cleavage and increased the presence of full-length PlexB.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the two arginine mutations abolished PlexB cleavage and increased the presence of full-length PlexB (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "1d9e014c-56b2-4e37-b2f5-c96cbeb6c5e0",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C47",
+      "claim": "The cleaved fragments, when individually expressed, were stable in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The cleaved fragments, when individually expressed, were also stable in vivo (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "b6c16b2b-1c66-4cab-88cb-179464ebce4d",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C48",
+      "claim": "At about 18 hours after puparium formation (hAPF), ORN axons arrive at the antennal lobe and fasciculate with neighboring axons, forming two discrete bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "At about 18 hours after puparium formation (hAPF), ORN axons arrive at the antennal lobe and fasciculate with neighboring axons, forming two discrete bundles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the developmental process based on established knowledge of the system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "fa36d6f0-3ab3-448a-9986-5041dbee6548",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C49",
+      "claim": "Over 6 hours after arrival, ORN axon bundles circumnavigate the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the next 6 hr, these two axon bundles circumnavigate the antennal lobe (Figure 2A, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the developmental process supported by imaging data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "f162ae42-f63c-4913-aa00-5ce557ee16e8",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C50",
+      "claim": "ORN axon fasciculation is mediated by PlexB-dependent axon-axon interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we found that ORN axon fasciculation is mediated by PlexB-dependent axon-axon interactions (Joo et al., 2013; Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "7f3932b7-6ecd-4a0d-a3bb-b644daecc9be",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C51",
+      "claim": "In PlexB loss-of-function mutants (plexB\u2013/\u2013), ORN axon defasciculation was observed in almost every antennal lobe with differing severity.",
+      "claim_type": "EXPLICIT",
+      "source": "In PlexB loss-of-function mutants (plexB\u2013/\u2013), ORN axon defasciculation was observed in almost every antennal lobe with differing severity (Figure 2A, middle and right panels; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2A and quantification in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ffa6dd5d-db62-4a0b-82aa-580ab39c3514",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C52",
+      "claim": "Expression of a wild-type PlexB transgene in ORNs significantly restored axon fasciculation in plexB\u2013/\u2013 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In plexB\u2013/\u2013 flies, expression of a wild-type PlexB transgene in ORNs significantly restored axon fasciculation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "b2f1fa80-1756-4543-a8ad-8f19d836ff52",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C53",
+      "claim": "ORN-specific rescue of PlexB was not complete.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ORN-specific rescue was not complete (Figure 2B), suggesting that PlexB supplied by other cellular sources may also contribute to ORN axon fasciculation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "d99d5015-d08f-4ba5-8b54-bd985ed6e6fc",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C54",
+      "claim": "PlexB supplied by other cellular sources may contribute to ORN axon fasciculation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ORN-specific rescue was not complete (Figure 2B), suggesting that PlexB supplied by other cellular sources may also contribute to ORN axon fasciculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the incomplete rescue observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "c8005f02-be51-49c4-b8b4-25d408c3b6cf",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C55",
+      "claim": "The rescue by Sema domain-deleted PlexB completely failed in fasciculation.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2C, the rescue by Sema domain-deleted PlexB completely failed, indicating the necessity of the Sema domain in PlexB-mediated fasciculation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "8700da95-dbf3-4f3e-b746-a9c5bb5cdfa0",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C56",
+      "claim": "The Sema domain is necessary for PlexB-mediated fasciculation.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2C, the rescue by Sema domain-deleted PlexB completely failed, indicating the necessity of the Sema domain in PlexB-mediated fasciculation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "028da0b9-decc-4ce4-b47c-d0e8df909f62",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C57",
+      "claim": "None of the intracellular motifs assayed were required for fasciculation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, none of the intracellular motifs we assayed were required, as none of the mutants displayed a compromised ability to rescue fasciculation defects (Figure 2D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figures 2D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "68f9a746-1f22-422d-a632-c35d6d25aa97",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C58",
+      "claim": "Either the cytoplasmic signaling is not required for fasciculation, or different motifs play redundant roles in mediating fasciculation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that either the cytoplasmic signaling is not required for fasciculation, or that different motifs play redundant roles in mediating fasciculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data regarding the role of cytoplasmic motifs.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "78b6abba-f3a7-4322-abec-890d43fb2368",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C59",
+      "claim": "Uncleavable PlexB exhibited better rescue than wild-type PlexB in fasciculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, uncleavable PlexB appeared to exhibit better rescue than wild-type PlexB, with only one severe defasciculation case out of 47 examined (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "9fbad445-fc6d-4a2e-bbe5-fae3513594fd",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C60",
+      "claim": "Full-length PlexB proteins play a predominant role in mediating axon fasciculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that uncleavable PlexB only supplies full-length PlexB proteins, this finding suggests that the full-length PlexB proteins play a predominant role in mediating axon fasciculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the enhanced activity of uncleavable PlexB.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "3e8f69ae-3034-45f0-8a67-11258bdfd2bf",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C61",
+      "claim": "Neither the N- nor C- terminal cleaved products exhibited any rescue effects in fasciculation when expressed separately.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, neither the N- nor C- terminal cleaved products, when expressed separately (Figure 2I,J) or together (Figure 2K), exhibited any rescue effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figures 2I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "d330b25f-ec08-4b42-b11a-9b9ab1c645a0",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C62",
+      "claim": "The N- and C- terminal cleaved products did not exhibit rescue effects when expressed together in fasciculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, neither the N- nor C- terminal cleaved products, when expressed separately (Figure 2I,J) or together (Figure 2K), exhibited any rescue effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ee1f5d0c-449e-4862-9f4b-929905e40bf5",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C63",
+      "claim": "PlexB-dependent axon fasciculation is mediated by full-length PlexB but not the cleaved fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that PlexB-dependent axon fasciculation is mediated by full-length PlexB but not the cleaved fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data on fasciculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "aad487a8-766b-4614-b075-692793d096ff",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C64",
+      "claim": "Fasciculation does not require any individual cytoplasmic signaling motif but relies on the extracellular Sema domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, fasciculation appears to not require any individual cytoplasmic signaling motif but relies on the extracellular Sema domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data on fasciculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "0dfa8eab-0865-43f9-933f-13bb65d62168",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C65",
+      "claim": "PlexB-dependent axon fasciculation is likely an intercellular adhesion process.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PlexB-dependent axon fasciculation is likely an intercellular adhesion process, in which full-length PlexB proteins bundle axons together through Sema domain-mediated molecular adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the data based on the requirement for the Sema domain and dispensability of cytoplasmic motifs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "fec67ed3-92d2-4170-97c4-14821bad7c7c",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C66",
+      "claim": "Individual ORN axons choose one of two trajectories \u2013 dorsolateral (DL) or ventromedial (VM) \u2013 after arrival at the ventrolateral corner of the antennal lobe at around 18hAPF.",
+      "claim_type": "EXPLICIT",
+      "source": "After their arrival at the ventrolateral corner of the antennal lobe at around 18hAPF, individual ORN axons choose one of the two trajectories \u2013 dorsolateral (DL) or ventromedial (VM) \u2013 and then circumnavigate the antennal lobe in the next 6 hours (Figure 3A; left panels) (Jefferis et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the developmental process supported by citation and imaging data.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "7b42abd6-928e-4ee5-97ee-15839dd28ad2",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C67",
+      "claim": "Axons of each ORN class stereotypically choose one defined trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, axons of each ORN class stereotypically choose one defined trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the olfactory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "bb7ebad8-8c6c-4b5c-bac2-08468458c320",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C68",
+      "claim": "Trajectory choice is regulated by the axonal PlexB level.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that trajectory choice is regulated by the axonal PlexB level: a high PlexB level drives axons to the DL trajectory while a low PlexB level confers a VM choice (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "db37cd4c-5ce3-4fdf-94a6-937bb93feb42",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C69",
+      "claim": "A high PlexB level drives axons to the DL trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that trajectory choice is regulated by the axonal PlexB level: a high PlexB level drives axons to the DL trajectory while a low PlexB level confers a VM choice (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "f90a61c7-1643-489d-8a17-8e7ac87e8314",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C70",
+      "claim": "A low PlexB level confers a VM trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that trajectory choice is regulated by the axonal PlexB level: a high PlexB level drives axons to the DL trajectory while a low PlexB level confers a VM choice (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "95cdf157-83c6-4269-bd4e-880c3c0743aa",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C71",
+      "claim": "PlexB overexpression in ORNs shifts axons to the DL trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, PlexB overexpression in ORNs shifts axons to the DL trajectory (Figure 3A; right panels) (Li et al., 2018b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data in Figure 3A and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "56c21f3e-9027-4764-824a-a2404978406b",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C72",
+      "claim": "Overexpression of wild-type PlexB in ORNs raised the mean DL/VM ratio to 0.94 from 0.67 of controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Recapitulating our previous observations, overexpression of wild-type PlexB in ORNs drove axons to the DL bundle, raising the mean DL/VM ratio to 0.94 from 0.67 of controls (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ecf2c9a0-6310-4b71-8790-a3205aa84209",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C73",
+      "claim": "Sema2a and Sema2b establish a gradient along the VM-to-DL axis between 18\u201324hAPF to instruct PlexB-expressing ORN axons in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 18\u201324hAPF, the canonical ligands of PlexB\u2014Sema2a and Sema2b\u2014establish a gradient along the VM-to-DL axis to instruct PlexB-expressing ORN axons in trajectory choice (Joo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "0952027b-8f57-4b32-b07f-037f3706ec1a",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C74",
+      "claim": "Deletion of the Sema domain completely disrupted the ability of PlexB to drive a DL shift in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, deletion of the Sema domain that mediates the Plexin-Semaphorin interaction completely disrupted the ability of PlexB to drive a DL shift (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "46137802-6961-4734-b4cc-1c8d70df5b78",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C75",
+      "claim": "Mutating either Rac1- or Rho1- binding sites impaired the DL shift caused by PlexB overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the cytoplasmic motifs, mutating either Rac1- or Rho1- binding sites impaired, at least partially, the DL shift caused by PlexB overexpression (Figure 3E\u2013G), revealing the functional necessity of PlexB-GTPase interactions in trajectory choice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figures 3E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "9ba84696-a71d-419b-aef6-e049947df9d9",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C76",
+      "claim": "PlexB-GTPase interactions are functionally necessary in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the cytoplasmic motifs, mutating either Rac1- or Rho1- binding sites impaired, at least partially, the DL shift caused by PlexB overexpression (Figure 3E\u2013G), revealing the functional necessity of PlexB-GTPase interactions in trajectory choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figures 3E-G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "73a1de86-8310-44be-97fb-74d1ed08cd9e",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C77",
+      "claim": "Deleting the first Rac1-binding site (\u2206Rac1) entirely abolished the DL shift caused by PlexB overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, while deleting the first of the Rac1-binding sites (\u2206Rac1) entirely abolished the DL shift caused by PlexB overexpression (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "2c488e31-7013-4cbc-8461-2de9842e1713",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C78",
+      "claim": "Mutating the second Rac1-binding site (Rac1mut) only partially weakened the DL shift phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "mutating the second Rac1-binding site (Rac1mut) only partially weakened the phenotype (Figure 3F), suggesting the differential importance of these sites in mediating the PlexB-Rac1 interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "8ebcf1b1-38c2-45c1-90a2-6e78318ac749",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C79",
+      "claim": "The two Rac1-binding sites have differential importance in mediating the PlexB-Rac1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "mutating the second Rac1-binding site (Rac1mut) only partially weakened the phenotype (Figure 3F), suggesting the differential importance of these sites in mediating the PlexB-Rac1 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the differential effects of mutating the two Rac1-binding sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "e7fe58df-523a-4bd3-9e01-8a251ad74849",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C80",
+      "claim": "The catalytic RapGAP domain was not required for trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the catalytic RapGAP domain was not required (Figure 3D), as in PlexA-dependent motor axon guidance (Yang et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 3D and comparison to a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "651cfccb-b5cc-4c93-9537-1fcc7c4a1084",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C81",
+      "claim": "Uncleavable PlexB was significantly more potent than wild-type PlexB at driving DL shift in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We then examined the involvement of PlexB cleavage in trajectory choice and found that uncleavable PlexB was significantly more potent than wild-type PlexB at driving DL shift (Figure 3H), suggesting that full-length PlexB proteins are more active for this function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "a6cbc36c-d414-4b83-865d-1121649ed320",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C82",
+      "claim": "Full-length PlexB proteins are more active for trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We then examined the involvement of PlexB cleavage in trajectory choice and found that uncleavable PlexB was significantly more potent than wild-type PlexB at driving DL shift (Figure 3H), suggesting that full-length PlexB proteins are more active for this function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the enhanced activity of uncleavable PlexB.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ce7c07d7-0b40-4ea3-9247-943a11fc4ad7",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C83",
+      "claim": "The cleavage of PlexB limits the level of full-length PlexB proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that trajectory choice is a PlexB level-dependent process (Li et al., 2018b), the cleavage of PlexB thus limits the level of full-length PlexB proteins (Figure 1\u2014figure supplement 1) and can potentially regulate the fidelity of trajectory choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the level-dependence of trajectory choice and the effect of cleavage on full-length protein levels.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "4ce73f6c-495c-4a46-8132-4a2eabe7c403",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C84",
+      "claim": "PlexB cleavage can potentially regulate the fidelity of trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that trajectory choice is a PlexB level-dependent process (Li et al., 2018b), the cleavage of PlexB thus limits the level of full-length PlexB proteins (Figure 1\u2014figure supplement 1) and can potentially regulate the fidelity of trajectory choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation about the regulatory role of cleavage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "59ec41b5-fa4e-4976-832b-d86a65703c68",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C85",
+      "claim": "The cleaved fragments did not show any function individually in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, while the cleaved fragments did not show any function individually (Figure 3I,J), simultaneous expression of both partially but significantly promoted DL shift of ORN axons (Figure 3K)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figures 3I and 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "c95c7682-35fe-4bbb-a736-00326a875e34",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C86",
+      "claim": "Simultaneous expression of both cleaved fragments partially but significantly promoted DL shift of ORN axons in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, while the cleaved fragments did not show any function individually (Figure 3I,J), simultaneous expression of both partially but significantly promoted DL shift of ORN axons (Figure 3K), indicating the functional reconstitution of cleaved fragments in vivo for signaling in trajectory choice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "18ba4e4a-3427-4331-adb6-00884e65433f",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C87",
+      "claim": "Cleaved fragments can functionally reconstitute in vivo for signaling in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, while the cleaved fragments did not show any function individually (Figure 3I,J), simultaneous expression of both partially but significantly promoted DL shift of ORN axons (Figure 3K), indicating the functional reconstitution of cleaved fragments in vivo for signaling in trajectory choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that co-expression of both fragments has activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "aa72689f-8667-4ebf-b7d3-79724d712825",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C88",
+      "claim": "PlexB instructs axon trajectory choice by engaging both extracellular and cytoplasmic components.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, distinct from its adhesion-like function in axon fasciculation (Figure 2), PlexB instructs axon trajectory choice by engaging both extracellular and cytoplasmic components, although the RapGAP catalytic activity appears dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data on trajectory choice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "1c5656a4-9b61-4572-851b-08232b013751",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C89",
+      "claim": "The RapGAP catalytic activity appears dispensable for trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, distinct from its adhesion-like function in axon fasciculation (Figure 2), PlexB instructs axon trajectory choice by engaging both extracellular and cytoplasmic components, although the RapGAP catalytic activity appears dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data showing that GAPmut can function in trajectory choice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "e01b345f-ee6e-4f07-98a6-73a158127879",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C90",
+      "claim": "Cleavage of PlexB can regulate the strength of PlexB signaling in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage of PlexB can regulate the strength of PlexB signaling, as the full-length protein appeared to be more active, while the reconstituted fragments also exhibited activity in trajectory choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data on the effects of cleavage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "8d9ba55c-accb-441f-9d62-5f9e7e4c2af3",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C91",
+      "claim": "Between 24\u201348hAPF, ORN axons innervate the antennal lobe and search for the dendrites of their synaptic partners\u2014olfactory projection neurons (PNs).",
+      "claim_type": "EXPLICIT",
+      "source": "Between 24\u201348hAPF, ORN axons innervate the antennal lobe and search for the dendrites of their synaptic partners\u2014olfactory projection neurons (PNs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the developmental process based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "944b2eaf-71a6-4546-b1a7-fe625ab67d5c",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C92",
+      "claim": "By 48hAPF, the antennal lobe has been divided into roughly 50 proto-glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "By 48hAPF, the antennal lobe has been divided into roughly 50 proto-glomeruli, where the axons and dendrites of matching ORNs and PNs interact (Jefferis et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the developmental process supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "655a81f1-b69a-43a4-adaa-634abaf95a23",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C93",
+      "claim": "PlexB plays a level-dependent role in instructing glomerular selection of ORN axons, independently of trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that PlexB plays a level-dependent role in instructing glomerular selection of ORN axons, independently of trajectory choice (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "96211f44-cca8-4ace-a907-c09712f84ccb",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C94",
+      "claim": "ORN axons targeting to several discrete glomeruli express higher levels of PlexB than their neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, ORN axons targeting to several discrete glomeruli express higher levels of PlexB than their neighbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the expression pattern based on previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "6b73678e-902c-4f3b-aba3-486befeceda7",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C95",
+      "claim": "PlexB-high glomeruli localize mainly in the medial antennal lobe, such as DM1 and DM5, along with a few scattered glomeruli, like VA4.",
+      "claim_type": "EXPLICIT",
+      "source": "These PlexB-high glomeruli localize mainly in the medial antennal lobe, such as DM1 and DM5, along with a few scattered glomeruli, like VA4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the spatial distribution of PlexB-high glomeruli based on previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "78872513-e42e-4586-b934-9fadf178e959",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C96",
+      "claim": "PlexB overexpression in ORNs promotes mistargeting of ORN axons to PlexB-high glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "PlexB overexpression in ORNs promotes mistargeting of ORN axons to PlexB-high glomeruli, while RNAi-based knockdown shows the opposite preference (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "60c2d569-9231-4fbb-87fe-c7d84283d148",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C97",
+      "claim": "RNAi-based knockdown of PlexB shows the opposite preference to overexpression in glomerular targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "PlexB overexpression in ORNs promotes mistargeting of ORN axons to PlexB-high glomeruli, while RNAi-based knockdown shows the opposite preference (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "def9159a-d82d-42b4-b623-c46cf31790ca",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C98",
+      "claim": "PlexB overexpression caused mistargeting of VA2 ORN axons stereotypically to the DM5 glomerulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our previous observations, PlexB overexpression caused mistargeting of VA2 ORN axons stereotypically to the DM5 glomerulus (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging and quantification data shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "eb2cf6b9-d7b6-4b7d-9840-61deeb2882f0",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C99",
+      "claim": "PlexB without its Sema domain failed to induce glomerular mistargeting.",
+      "claim_type": "EXPLICIT",
+      "source": "PlexB without its Sema domain failed to induce glomerular mistargeting (Figure 4C), emphasizing the global necessity of Sema domain in all wiring processes examined.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "8adeb501-6b71-4822-9bf9-e77f940f2970",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C100",
+      "claim": "The Sema domain is globally necessary in all wiring processes examined.",
+      "claim_type": "EXPLICIT",
+      "source": "PlexB without its Sema domain failed to induce glomerular mistargeting (Figure 4C), emphasizing the global necessity of Sema domain in all wiring processes examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the requirement of the Sema domain in all three processes tested.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "01448c37-c045-45d1-8b45-a2edce5f1e33",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C101",
+      "claim": "The RapGAP catalytic site was not essential for synaptic partner selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the RapGAP catalytic site was not essential for any tested processes, including synaptic partner selection (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "3c540b9c-3cff-4f93-bfc9-5640d9aeb962",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C102",
+      "claim": "Glomerular targeting required PlexB-GTPase interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As in trajectory choice, glomerular targeting required PlexB-GTPase interactions, as the variants disrupting Rac1- or Rho1- binding sites substantially reduced glomerular mistargeting events caused by PlexB overexpression (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figures 4E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ca63a580-c299-4243-8ae3-2daddd00b25e",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C103",
+      "claim": "Variants disrupting Rac1- or Rho1- binding sites substantially reduced glomerular mistargeting events caused by PlexB overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "As in trajectory choice, glomerular targeting required PlexB-GTPase interactions, as the variants disrupting Rac1- or Rho1- binding sites substantially reduced glomerular mistargeting events caused by PlexB overexpression (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figures 4E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "abc52eec-69bd-4bcd-98e5-db61fd9f2bc6",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C104",
+      "claim": "Deletion of the first Rac1-binding site resulted in greater functional disruption than substitution at the second site in glomerular targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, deletion of the first Rac1-binding site again resulted in greater functional disruption than substitution at the second site (Figure 4E,F; as well as Figure 3E,F), further supporting the differential importance of these two regions in bridging PlexB and Rac1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figures 4E and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "c1e8a9e2-c307-4964-8eff-3ca038c482b0",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C105",
+      "claim": "The two Rac1-binding regions have differential importance in bridging PlexB and Rac1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, deletion of the first Rac1-binding site again resulted in greater functional disruption than substitution at the second site (Figure 4E,F; as well as Figure 3E,F), further supporting the differential importance of these two regions in bridging PlexB and Rac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the differential effects observed across multiple assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "9e6727b0-c228-4897-947f-f857ad887545",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C106",
+      "claim": "Overexpression of the cleaved products, either independently or together, was insufficient to drive mistargeting in synaptic partner selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of the cleaved products, either independently or together, was insufficient to drive mistargeting (Figure 4I\u2013K), suggesting that synaptic partner selection is likely mediated by the full-length PlexB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figures 4I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "af50b0a0-bd2d-407a-b1d8-7f528724d0e4",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C107",
+      "claim": "Synaptic partner selection is likely mediated by the full-length PlexB.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of the cleaved products, either independently or together, was insufficient to drive mistargeting (Figure 4I\u2013K), suggesting that synaptic partner selection is likely mediated by the full-length PlexB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the lack of activity of cleaved fragments in this assay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "c50db85c-836d-41e6-be88-9191129bac42",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C108",
+      "claim": "Uncleavable PlexB did not increase the phenotypic penetrance in synaptic partner selection compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, uncleavable PlexB, which produces more full-length proteins than wild-type (Figure 1\u2014figure supplement 1), did not increase the phenotypic penetrance (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "d8137d04-e2f3-429d-92a3-464a0dea4cc9",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C109",
+      "claim": "PlexB-mediated synaptic partner selection engages both extracellular and cytoplasmic modules for signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, PlexB-mediated synaptic partner selection engages both extracellular and cytoplasmic modules for signaling, resembling trajectory choice but not axon fasciculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data on synaptic partner selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "b177d6f2-f626-47c2-a1c3-1efb449b5ab8",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C110",
+      "claim": "PlexB-mediated synaptic partner selection resembles trajectory choice but not axon fasciculation in terms of motif engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, PlexB-mediated synaptic partner selection engages both extracellular and cytoplasmic modules for signaling, resembling trajectory choice but not axon fasciculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative conclusion drawn from the patterns of motif requirements across the three processes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "46193fc6-9e17-4b91-811a-674a1ebdeaad",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C111",
+      "claim": "Extracellular cleavage of PlexB does not appear to be critical in synaptic partner selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, extracellular cleavage of PlexB does not appear to be critical in synaptic partner selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the lack of enhanced activity of uncleavable PlexB in this assay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "4c577fbc-c612-4d95-90b6-59719a269813",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C112",
+      "claim": "PlexB achieves functional versatility in neurodevelopment by diversified and task-specific motif engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments reveal how a single molecule, PlexB, achieves functional versatility in neurodevelopment by diversified and task-specific motif engagement, in conjunction with temporally-regulated expression and level-dependent signaling as we previously discovered (Li et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion integrating the current findings with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "d84b2c68-8187-4180-a76c-177fc7afd424",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C113",
+      "claim": "The systematic in vivo analysis shows the divergent engagement of different PlexB structural motifs in distinct neurodevelopmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our systematic in vivo analysis shows the divergent engagement of different PlexB structural motifs in distinct neurodevelopmental processes (Figure 5), arguing against a singular signaling mechanism for PlexB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary conclusion drawn from the comprehensive analysis presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "b2844ccf-ad34-41fc-8c8f-b5bf66456721",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C114",
+      "claim": "The findings argue against a singular signaling mechanism for PlexB.",
+      "claim_type": "EXPLICIT",
+      "source": "Our systematic in vivo analysis shows the divergent engagement of different PlexB structural motifs in distinct neurodevelopmental processes (Figure 5), arguing against a singular signaling mechanism for PlexB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation of differential motif requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "a8529140-8f97-4673-ad4d-1500a9cfb47f",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C115",
+      "claim": "Cleavage is a regulatory mechanism of PlexB signaling in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We further identify cleavage as a regulatory mechanism of PlexB signaling in vivo, highlighting the functional significance of the evolutionarily conserved cleavage of class B Plexins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data on cleavage effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "64269615-12a3-42c6-8eea-2ed13daf92bc",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C116",
+      "claim": "The evolutionarily conserved cleavage of class B Plexins has functional significance.",
+      "claim_type": "EXPLICIT",
+      "source": "We further identify cleavage as a regulatory mechanism of PlexB signaling in vivo, highlighting the functional significance of the evolutionarily conserved cleavage of class B Plexins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the demonstration of cleavage's regulatory role.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "8b3e3114-f59f-488c-b79c-d3dfa25e8c65",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C117",
+      "claim": "In vivo studies in different developmental systems have yielded contrasting observations regarding the functional significance of the RapGAP catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although structural and in vitro studies have pinned down Rap as the substrate for Plexin's GAP domains (Wang et al., 2012; Wang et al., 2013), in vivo studies in different developmental systems have yielded contrasting observations regarding the functional significance of its catalytic activity (Worzfeld et al., 2014; Yang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies showing different requirements for GAP activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "55e3347b-6fdb-4a21-a58e-7225465e4ff6",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C118",
+      "claim": "RapGAP-mediated catalysis provides one, but not the only, signaling output of Plexins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RapGAP-mediated catalysis provides one, but not the only, signaling output of Plexins, further supporting the notion that Plexins diversely engage signaling motifs for distinct developmental tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that GAP activity is not universally required.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "90042795-e09e-4c5b-a838-71d13febb06f",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C119",
+      "claim": "Plexins diversely engage signaling motifs for distinct developmental tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RapGAP-mediated catalysis provides one, but not the only, signaling output of Plexins, further supporting the notion that Plexins diversely engage signaling motifs for distinct developmental tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the differential motif requirements observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "bd454b83-5bfe-4d7a-8a60-fed1b33c4f5b",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C120",
+      "claim": "The catalytic arginine residues are conserved and are individually indispensable across species and across Plexin sub-families.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the catalytic arginine residues are conserved and are individually indispensable across species and across Plexin sub-families (Oinuma et al., 2004; Rohm et al., 2000; Saito et al., 2009; Sakurai et al., 2010; Wang et al., 2012; Wang et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "704ec008-4844-4352-b09e-a8b6ef7cfaa4",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C121",
+      "claim": "The integrity of GTPase-binding sites is crucial for PlexB-mediated axon guidance of embryonic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the integrity of GTPase-binding sites is crucial for PlexB-mediated axon guidance of embryonic motor neurons (Hu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "62cd00e8-7b79-4364-84fd-4f741319c7d6",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C122",
+      "claim": "The GTPase-binding sites are entirely dispensable for bundling ORN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "While the GTPase-binding sites are entirely dispensable for bundling ORN axons, both axon trajectory choice and synaptic partner selection require proper GTPase binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data on fasciculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "c3e569ce-ba4a-4d95-a3be-4ee4f7c6b7b4",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C123",
+      "claim": "Both axon trajectory choice and synaptic partner selection require proper GTPase binding.",
+      "claim_type": "EXPLICIT",
+      "source": "While the GTPase-binding sites are entirely dispensable for bundling ORN axons, both axon trajectory choice and synaptic partner selection require proper GTPase binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the experimental data on trajectory choice and synaptic partner selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "e69c7c2f-76a7-4f53-b157-12396ada5f04",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C124",
+      "claim": "The two distinct Rac1-binding sites are of different importance in mediating the PlexB-Rac1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the two distinct Rac1-binding sites are of different importance in mediating the PlexB-Rac1 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the differential effects of mutating the two sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "bfcb79d0-9c94-4f13-9e3c-0830cffd9be9",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C125",
+      "claim": "Disrupting GTPase binding may cause secondary defects by reducing cleaved PlexB.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting GTPase binding may thus cause secondary defects by reducing cleaved PlexB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observation that GTPase-binding mutants have reduced cleaved fragments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "00024651-5b07-4c0f-a2ee-ab9133cf7a5e",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C126",
+      "claim": "Losing GTPase binding destabilizes the C-terminal cleaved fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, it is more likely that losing GTPase binding destabilizes the C-terminal cleaved fragment, which contains a short, degradation-prone extracellular motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that GTPase-binding mutants have reduced cleaved fragments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "fe6cfe60-1460-4230-8cbd-a46c66e2049a",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C127",
+      "claim": "The cleaved fragments are capable of signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the cleaved fragments are capable of signaling, the interaction between GTPase binding and cleavage adds another layer of complexity to PlexB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data showing that co-expressed fragments can reconstitute activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "83c50d50-78f2-44e6-bf6d-6b1cf4f2f7e8",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C128",
+      "claim": "The interaction between GTPase binding and cleavage adds another layer of complexity to PlexB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the cleaved fragments are capable of signaling, the interaction between GTPase binding and cleavage adds another layer of complexity to PlexB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that GTPase binding affects cleavage and both affect signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "3e11bca3-db39-4a28-937a-b5bb9df2ccb4",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "claim_id": "C129",
+      "claim": "Cleavage brings new properties and regulatory potentials to PlexB.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, cleavage brings new properties and regulatory potentials to PlexB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the various effects of cleavage observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ad8752d1-1d5f-4bf3-bab3-6eeb5eaf2c5c",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The extracellular Sema domain is essential for all three developmental processes examined: axon fasciculation, trajectory choice, and synaptic partner selection. Deletion of the Sema domain (\u0394Sema) completely abolished PlexB function in rescue assays for fasciculation (C55, Figure 2C), trajectory choice (C74, Figure 3C), and synaptic partner selection (C99, Figure 4C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C55, C74, and C99 are directly supported by experimental data from Figures 2C, 3C, and 4C showing complete loss of function when the Sema domain is deleted across all three assays. The consistency across multiple independent functional readouts strongly supports the universal requirement of the Sema domain. Statistical significance is demonstrated in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "15a12d78-6545-4476-8263-a54636e9cd2f",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The catalytic RapGAP domain is dispensable for all three PlexB-mediated developmental processes examined. The GAPmut variant (with mutations R1570A, R1571G, R1899A) rescued fasciculation defects (Figure 2D), drove DL trajectory shifts (Figure 3D), and induced glomerular mistargeting (Figure 4D) comparably to wild-type PlexB, despite lacking catalytic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C80, C89, and C101 are supported by experimental data showing that GAPmut functions similarly to wild-type across all three assays (Figures 2D, 3D, 4D). This contrasts with prior literature showing context-dependent GAP requirement (C117), supporting the conclusion that RapGAP catalysis is not universally required (C118). The authors acknowledge potential caveats regarding overexpression and possible residual GAP activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "460304a4-8250-452a-b400-21b5ff020e41",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GTPase-binding motifs are essential for trajectory choice and synaptic partner selection but dispensable for fasciculation. Mutations disrupting Rac1-binding (\u0394Rac1, Rac1mut) or Rho1-binding (\u0394Rho1) impaired trajectory choice (Figures 3E-G) and synaptic partner selection (Figures 4E-G), but did not compromise fasciculation rescue (Figures 2E-G). The two Rac1-binding sites showed differential importance, with the first site being more critical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are well-supported by systematic mutagenesis data across all three developmental processes. The differential requirement is clearly demonstrated: GTPase-binding mutants rescue fasciculation (C57, Figures 2E-G) but show impaired function in trajectory choice (C75, Figures 3E-G) and synaptic partner selection (C102-103, Figures 4E-G). The differential importance of the two Rac1-binding sites is consistently observed across assays (C77-79, C104-105).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "c7038a57-adee-4412-9a33-627337bce835",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Axon fasciculation mediated by PlexB does not require intracellular signaling motifs but relies on the extracellular Sema domain. None of the intracellular motif mutants (GAPmut, \u0394Rac1, Rac1mut, \u0394Rho1) showed compromised ability to rescue fasciculation defects (Figures 2D-G), suggesting PlexB-dependent fasciculation is an intercellular adhesion process mediated by Sema domain interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C6 are directly supported by rescue data in Figures 2D-G showing that all intracellular motif mutants rescue fasciculation comparably to wild-type. Combined with the absolute requirement for the Sema domain (C55-56), this supports the mechanistic interpretation that fasciculation is an adhesion-like process (C65). The alternative explanation of redundancy (C58) is acknowledged but the data pattern more strongly supports dispensability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "63a23035-d8f3-4a54-947a-12d5b6292bce",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Extracellular cleavage of PlexB serves as a regulatory mechanism that modulates signaling strength. Uncleavable PlexB (Uncleav) showed enhanced activity compared to wild-type in fasciculation (Figure 2H) and trajectory choice (Figure 3H), producing more full-length protein (Figure 1-supplement 1). This demonstrates that cleavage limits full-length PlexB levels and thereby regulates signaling output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C81 are supported by quantitative data showing uncleavable PlexB has enhanced activity in fasciculation and trajectory choice assays. Western blot data (C46, Figure 1-supplement 1) confirms increased full-length protein levels. The regulatory interpretation (C7, C83, C90, C115) is a reasonable inference from these observations. This represents the first functional characterization of the conserved class B Plexin cleavage site (C20, C116).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "19847002-51b8-4239-aea5-752fcaf2e26c",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cleaved PlexB fragments can functionally reconstitute for signaling in trajectory choice. While individually inactive (Figures 3I-J), simultaneous expression of both N-terminal (CleavSec) and C-terminal (CleavTMCyto) fragments partially but significantly promoted DL shift of ORN axons (Figure 3K), indicating the cleaved fragments can reassociate and signal in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-86 are directly supported by experimental data in Figures 3I-K showing that co-expression of both fragments has activity while individual fragments do not. This functional reconstitution (C87, C127) is consistent with prior biochemical observations that cleaved fragments remain associated (C45). However, the reconstituted activity is partial compared to full-length protein, and this was only observed in trajectory choice, not in fasciculation (C61-62) or synaptic partner selection (C106).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "2b4b5f51-f1d9-4985-89be-3f6667758535",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Full-length PlexB, rather than cleaved fragments, mediates axon fasciculation and synaptic partner selection. Neither N- nor C-terminal cleaved products, expressed separately or together, exhibited rescue effects in fasciculation (Figures 2I-K) or induced mistargeting in synaptic partner selection (Figures 4I-K).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-62 and C106 are directly supported by negative results in Figures 2I-K and 4I-K. The inference that full-length PlexB mediates these processes (C63, C107) is reasonable given the enhanced activity of uncleavable PlexB (C59) and the lack of fragment activity. This contrasts with trajectory choice where fragments can reconstitute function (C86-87), highlighting process-specific mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "c9c0bc0f-2d37-4d8b-9ac4-a07822906322",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PlexB achieves functional versatility through divergent, task-specific engagement of structural motifs across distinct developmental processes. The systematic analysis reveals that different wiring steps employ unique combinations of PlexB domains (Figure 5), arguing against a singular signaling mechanism and demonstrating how one molecule can accomplish multiple developmental tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion (C8, C112-114, C119) is well-supported by the comprehensive experimental analysis showing differential motif requirements across the three developmental processes. The Sema domain is universally required, GTPase-binding sites are selectively required for trajectory choice and partner selection but not fasciculation, and the GAP catalytic site is dispensable for all processes examined. This pattern is clearly summarized in Figure 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "e7fd2877-11a5-444c-842e-5576a3f3151c",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Nine UAS transgenic PlexB variants were generated, validated, and integrated at the same genomic locus for comparable expression. All variants were C-terminally V5-tagged, integrated at ZH-attP-86Fb, and their expression verified by Western blot (Figure 1-supplement 1). The variants showed expected molecular weights and cleavage patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-33 describe the experimental design and are supported by methods and Figure 1-supplement 1. Western blot validation (C33, C36, C39, C46-47) confirms expression and expected properties of the variants. The use of a common genomic integration site (C32) is appropriate for controlling expression levels, though the authors acknowledge expression may differ from endogenous levels. This methodological foundation is essential for the comparative functional analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ef3575e4-8374-4f7c-8dee-df986202ac18",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Disrupting Rac1 or Rho1 binding reduces the presence of cleaved C-terminal fragments in vivo. The \u0394Rac1 and \u0394Rho1 variants showed markedly reduced cleaved C-terminal fragments while full-length protein was present normally (Figure 1-supplement 1), likely due to destabilization of the C-terminal fragment rather than impaired cleavage or membrane localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is directly supported by Western blot data in Figure 1-supplement 1 and is consistent with prior cell culture observations (Artigiani et al., 2003). The mechanistic interpretation (C126) that GTPase binding stabilizes the cleaved fragment is reasonable given that these mutations don't affect fasciculation rescue (ruling out mislocalization). However, C125 correctly notes this creates complexity in interpreting the functional data, as reduced cleaved fragments could contribute to the observed phenotypes in trajectory choice and partner selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "01f7f895-59e1-46de-90cb-3e4efecbc6b9",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PlexB plays multiple roles in Drosophila olfactory circuit assembly with differential level-dependence. Previous work (Li et al., 2018b) established that PlexB has level-independent functions in axon fasciculation and level-dependent roles in trajectory choice and glomerular targeting, suggesting PlexB signals differently when executing these distinct tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-28 accurately summarize prior work (Li et al., 2018b) that established the multi-step roles of PlexB and provided the foundation for the current structure-function analysis. The inference that PlexB signals differently in these processes (C29) is reasonable given the level-dependence pattern and is validated by the current study's findings of differential motif requirements. These claims provide essential context but represent prior rather than current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "8f363630-c8b0-4d12-b8d0-9b4e18984a22",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PlexB loss-of-function causes ORN axon defasciculation that can be partially rescued by ORN-specific PlexB expression. In plexB\u2212/\u2212 mutants, defasciculation was observed in almost every antennal lobe (Figure 2A-B). Wild-type PlexB expression in ORNs significantly but incompletely restored fasciculation (Figure 2B), suggesting contributions from PlexB in other cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-52 are directly supported by imaging and quantification in Figures 2A-B. The incomplete rescue (C53) is clearly shown in the data, and the inference about non-cell-autonomous contributions (C54) is reasonable. This incomplete rescue is appropriately acknowledged as a limitation that prevents using the rescue assay for trajectory choice analysis. The quantification method (binning into three categories) is appropriate for the phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "16797d88-d417-4fb9-8630-f609e28795e3",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ORN axon trajectory choice is regulated by PlexB levels and Semaphorin gradients. After arriving at the antennal lobe at ~18hAPF, ORN axons choose between dorsolateral (DL) or ventromedial (VM) trajectories in a stereotyped manner. High PlexB levels drive DL trajectory choice while low levels confer VM choice. PlexB overexpression shifts axons to the DL trajectory (raising DL/VM ratio from 0.67 to 0.94), responding to Sema2a/2b gradients established between 18-24hAPF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-67 describe established developmental biology (Jefferis et al., 2004). Claims C68-72 summarize prior work (Li et al., 2018b) and are recapitulated in the current study (Figure 3A-B). Claim C73 about Semaphorin gradients is supported by citation (Joo et al., 2013). These claims provide essential biological context for the trajectory choice experiments and the level-dependent nature of this process is key to understanding why uncleavable PlexB shows enhanced activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "51424422-9ce7-47b2-ae22-7ef9b6ce1760",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PlexB plays a level-dependent role in glomerular targeting/synaptic partner selection. Between 24-48hAPF, ORN axons innervate the antennal lobe and form ~50 proto-glomeruli. ORNs targeting certain glomeruli (e.g., DM1, DM5, VA4) express higher PlexB levels. PlexB overexpression promotes mistargeting to PlexB-high glomeruli, with VA2 ORN axons stereotypically mistargeting to DM5 (Figures 4A-B).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-97 summarize prior work (Li et al., 2018b) establishing the level-dependent role of PlexB in glomerular targeting. Claim C98 recapitulates this in the current study (Figures 4A-B). The authors note the mistargeting target changed from VA4 to DM5 and penetrance decreased compared to prior work, attributed to lower expression from the new transgene insertion site. This provides the functional readout for testing structural motifs in synaptic partner selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "15b7f057-dd67-45c9-93cb-c50e2340ac8c",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Uncleavable PlexB did not increase phenotypic penetrance in synaptic partner selection compared to wild-type, suggesting cleavage is not critical for this process. Unlike in fasciculation and trajectory choice, uncleavable PlexB showed no enhanced activity in the glomerular mistargeting assay (Figure 4H).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C108 is supported by data in Figure 4H showing no difference between wild-type and uncleavable PlexB. However, the authors appropriately note that the binary scoring method for glomerular mistargeting may lack sensitivity to detect small differences (in contrast to the continuous fluorescence ratio measurement for trajectory choice). The conclusion that cleavage is not critical (C111) may be premature given this methodological limitation. Additional quantitative measures might reveal subtle effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "ed1ede6a-1006-4175-83af-f25b31314d80",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims about Plexin biology, evolution, and signaling mechanisms. These include statements about Plexin conservation, structural domains identified by prior studies, the current working model of Plexin signaling, context-dependent GAP domain requirements, and the conserved but functionally uncharacterized cleavage site of class B Plexins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-21 provide literature context and are supported by appropriate citations. These establish the rationale for the study: while Plexin structure and biochemistry are well-characterized, the in vivo functional requirements of specific motifs in different developmental contexts remain unclear (C18), and the cleavage site has never been functionally characterized (C20). These background claims appropriately frame the study's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    },
+    {
+      "id": "749d541b-7dc8-4609-93c8-f567823e8179",
+      "content_id": "e841b010-66ed-4875-99d2-89761af12241",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Additional background and methodological claims about PlexB domains, developmental processes, and prior findings. These include the role of the Sema domain in ligand binding, Rap as the GAP substrate, GTPase-binding sites, cleavage properties, and the developmental timeline of ORN axon pathfinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C34-35, C37-38, C40-41, C43-45, C48-50, C120-121) provide necessary biological and technical context, supported by appropriate citations and established knowledge. They describe known properties of PlexB domains, the developmental system, and prior findings that inform the experimental design and interpretation. These are accurately presented and appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:57.183142Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "01e324fd-178a-4b71-b0f9-7e2e42728072",
+      "result_id": "ad8752d1-1d5f-4bf3-bab3-6eeb5eaf2c5c"
+    },
+    {
+      "claim_id": "c8005f02-be51-49c4-b8b4-25d408c3b6cf",
+      "result_id": "ad8752d1-1d5f-4bf3-bab3-6eeb5eaf2c5c"
+    },
+    {
+      "claim_id": "8700da95-dbf3-4f3e-b746-a9c5bb5cdfa0",
+      "result_id": "ad8752d1-1d5f-4bf3-bab3-6eeb5eaf2c5c"
+    },
+    {
+      "claim_id": "0952027b-8f57-4b32-b07f-037f3706ec1a",
+      "result_id": "ad8752d1-1d5f-4bf3-bab3-6eeb5eaf2c5c"
+    },
+    {
+      "claim_id": "eb2cf6b9-d7b6-4b7d-9840-61deeb2882f0",
+      "result_id": "ad8752d1-1d5f-4bf3-bab3-6eeb5eaf2c5c"
+    },
+    {
+      "claim_id": "8adeb501-6b71-4822-9bf9-e77f940f2970",
+      "result_id": "ad8752d1-1d5f-4bf3-bab3-6eeb5eaf2c5c"
+    },
+    {
+      "claim_id": "a62a65b6-09b6-4be8-848e-52b12cfb7e23",
+      "result_id": "15a12d78-6545-4476-8263-a54636e9cd2f"
+    },
+    {
+      "claim_id": "e7fe58df-523a-4bd3-9e01-8a251ad74849",
+      "result_id": "15a12d78-6545-4476-8263-a54636e9cd2f"
+    },
+    {
+      "claim_id": "1c5656a4-9b61-4572-851b-08232b013751",
+      "result_id": "15a12d78-6545-4476-8263-a54636e9cd2f"
+    },
+    {
+      "claim_id": "01448c37-c045-45d1-8b45-a2edce5f1e33",
+      "result_id": "15a12d78-6545-4476-8263-a54636e9cd2f"
+    },
+    {
+      "claim_id": "8b3e3114-f59f-488c-b79c-d3dfa25e8c65",
+      "result_id": "15a12d78-6545-4476-8263-a54636e9cd2f"
+    },
+    {
+      "claim_id": "55e3347b-6fdb-4a21-a58e-7225465e4ff6",
+      "result_id": "15a12d78-6545-4476-8263-a54636e9cd2f"
+    },
+    {
+      "claim_id": "2fbb80c8-8174-4d2b-8087-4df57a03e17f",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "46137802-6961-4734-b4cc-1c8d70df5b78",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "9ba84696-a71d-419b-aef6-e049947df9d9",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "73a1de86-8310-44be-97fb-74d1ed08cd9e",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "2c488e31-7013-4cbc-8461-2de9842e1713",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "8ebcf1b1-38c2-45c1-90a2-6e78318ac749",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "3c540b9c-3cff-4f93-bfc9-5640d9aeb962",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "ca63a580-c299-4243-8ae3-2daddd00b25e",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "abc52eec-69bd-4bcd-98e5-db61fd9f2bc6",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "c1e8a9e2-c307-4964-8eff-3ca038c482b0",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "62cd00e8-7b79-4364-84fd-4f741319c7d6",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "c3e569ce-ba4a-4d95-a3be-4ee4f7c6b7b4",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "e69c7c2f-76a7-4f53-b157-12396ada5f04",
+      "result_id": "460304a4-8250-452a-b400-21b5ff020e41"
+    },
+    {
+      "claim_id": "518ece7f-1bbc-439b-a5d8-0d69bcbc7b66",
+      "result_id": "c7038a57-adee-4412-9a33-627337bce835"
+    },
+    {
+      "claim_id": "028da0b9-decc-4ce4-b47c-d0e8df909f62",
+      "result_id": "c7038a57-adee-4412-9a33-627337bce835"
+    },
+    {
+      "claim_id": "68f9a746-1f22-422d-a632-c35d6d25aa97",
+      "result_id": "c7038a57-adee-4412-9a33-627337bce835"
+    },
+    {
+      "claim_id": "aad487a8-766b-4614-b075-692793d096ff",
+      "result_id": "c7038a57-adee-4412-9a33-627337bce835"
+    },
+    {
+      "claim_id": "0dfa8eab-0865-43f9-933f-13bb65d62168",
+      "result_id": "c7038a57-adee-4412-9a33-627337bce835"
+    },
+    {
+      "claim_id": "04373575-471b-43d5-ae75-96100090ef7d",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "78b6abba-f3a7-4322-abec-890d43fb2368",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "9fbad445-fc6d-4a2e-bbe5-fae3513594fd",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "651cfccb-b5cc-4c93-9537-1fcc7c4a1084",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "a6cbc36c-d414-4b83-865d-1121649ed320",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "ce7c07d7-0b40-4ea3-9247-943a11fc4ad7",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "e01b345f-ee6e-4f07-98a6-73a158127879",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "a8529140-8f97-4673-ad4d-1500a9cfb47f",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "64269615-12a3-42c6-8eea-2ed13daf92bc",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "3e11bca3-db39-4a28-937a-b5bb9df2ccb4",
+      "result_id": "63a23035-d8f3-4a54-947a-12d5b6292bce"
+    },
+    {
+      "claim_id": "59ec41b5-fa4e-4976-832b-d86a65703c68",
+      "result_id": "19847002-51b8-4239-aea5-752fcaf2e26c"
+    },
+    {
+      "claim_id": "c95c7682-35fe-4bbb-a736-00326a875e34",
+      "result_id": "19847002-51b8-4239-aea5-752fcaf2e26c"
+    },
+    {
+      "claim_id": "18ba4e4a-3427-4331-adb6-00884e65433f",
+      "result_id": "19847002-51b8-4239-aea5-752fcaf2e26c"
+    },
+    {
+      "claim_id": "fe6cfe60-1460-4230-8cbd-a46c66e2049a",
+      "result_id": "19847002-51b8-4239-aea5-752fcaf2e26c"
+    },
+    {
+      "claim_id": "3e8f69ae-3034-45f0-8a67-11258bdfd2bf",
+      "result_id": "2b4b5f51-f1d9-4985-89be-3f6667758535"
+    },
+    {
+      "claim_id": "d330b25f-ec08-4b42-b11a-9b9ab1c645a0",
+      "result_id": "2b4b5f51-f1d9-4985-89be-3f6667758535"
+    },
+    {
+      "claim_id": "ee1f5d0c-449e-4862-9f4b-929905e40bf5",
+      "result_id": "2b4b5f51-f1d9-4985-89be-3f6667758535"
+    },
+    {
+      "claim_id": "9e6727b0-c228-4897-947f-f857ad887545",
+      "result_id": "2b4b5f51-f1d9-4985-89be-3f6667758535"
+    },
+    {
+      "claim_id": "af50b0a0-bd2d-407a-b1d8-7f528724d0e4",
+      "result_id": "2b4b5f51-f1d9-4985-89be-3f6667758535"
+    },
+    {
+      "claim_id": "d7707d3e-0635-4762-a8e7-4dd38032a3c3",
+      "result_id": "c9c0bc0f-2d37-4d8b-9ac4-a07822906322"
+    },
+    {
+      "claim_id": "4c577fbc-c612-4d95-90b6-59719a269813",
+      "result_id": "c9c0bc0f-2d37-4d8b-9ac4-a07822906322"
+    },
+    {
+      "claim_id": "d84b2c68-8187-4180-a76c-177fc7afd424",
+      "result_id": "c9c0bc0f-2d37-4d8b-9ac4-a07822906322"
+    },
+    {
+      "claim_id": "b2844ccf-ad34-41fc-8c8f-b5bf66456721",
+      "result_id": "c9c0bc0f-2d37-4d8b-9ac4-a07822906322"
+    },
+    {
+      "claim_id": "90042795-e09e-4c5b-a838-71d13febb06f",
+      "result_id": "c9c0bc0f-2d37-4d8b-9ac4-a07822906322"
+    },
+    {
+      "claim_id": "f336fc57-b38a-474c-bcd4-f862046e5f4f",
+      "result_id": "e7fd2877-11a5-444c-842e-5576a3f3151c"
+    },
+    {
+      "claim_id": "932dad5a-d1e0-43f1-9af8-54db478718ac",
+      "result_id": "e7fd2877-11a5-444c-842e-5576a3f3151c"
+    },
+    {
+      "claim_id": "a46ceea3-25f0-49c2-9892-57d69b4b3c1c",
+      "result_id": "e7fd2877-11a5-444c-842e-5576a3f3151c"
+    },
+    {
+      "claim_id": "d09b1f48-59e8-4804-aa7a-3a4249774d51",
+      "result_id": "e7fd2877-11a5-444c-842e-5576a3f3151c"
+    },
+    {
+      "claim_id": "0d7107f5-de7a-4244-9054-0b0eed2ace72",
+      "result_id": "e7fd2877-11a5-444c-842e-5576a3f3151c"
+    },
+    {
+      "claim_id": "ddccf94c-4927-4643-bceb-cb286d651a86",
+      "result_id": "e7fd2877-11a5-444c-842e-5576a3f3151c"
+    },
+    {
+      "claim_id": "b2024fa3-bf9b-46ea-b3d1-8d528dd41a16",
+      "result_id": "e7fd2877-11a5-444c-842e-5576a3f3151c"
+    },
+    {
+      "claim_id": "1d9e014c-56b2-4e37-b2f5-c96cbeb6c5e0",
+      "result_id": "e7fd2877-11a5-444c-842e-5576a3f3151c"
+    },
+    {
+      "claim_id": "ea37b7a2-915a-49ef-9a72-4c2b96c190cd",
+      "result_id": "ef3575e4-8374-4f7c-8dee-df986202ac18"
+    },
+    {
+      "claim_id": "bfcb79d0-9c94-4f13-9e3c-0830cffd9be9",
+      "result_id": "ef3575e4-8374-4f7c-8dee-df986202ac18"
+    },
+    {
+      "claim_id": "00024651-5b07-4c0f-a2ee-ab9133cf7a5e",
+      "result_id": "ef3575e4-8374-4f7c-8dee-df986202ac18"
+    },
+    {
+      "claim_id": "83c50d50-78f2-44e6-bf6d-6b1cf4f2f7e8",
+      "result_id": "ef3575e4-8374-4f7c-8dee-df986202ac18"
+    },
+    {
+      "claim_id": "fca40904-ae51-4397-a9b5-9472f57e87f8",
+      "result_id": "01f7f895-59e1-46de-90cb-3e4efecbc6b9"
+    },
+    {
+      "claim_id": "9aa14134-09df-4151-9040-46f8f5415ba7",
+      "result_id": "01f7f895-59e1-46de-90cb-3e4efecbc6b9"
+    },
+    {
+      "claim_id": "c3a77f0a-aef6-49b7-95fe-81ec56d39570",
+      "result_id": "01f7f895-59e1-46de-90cb-3e4efecbc6b9"
+    },
+    {
+      "claim_id": "e759b44d-0d69-4fe4-86ba-650e32d407b7",
+      "result_id": "01f7f895-59e1-46de-90cb-3e4efecbc6b9"
+    },
+    {
+      "claim_id": "8771a2e4-8a15-434b-b461-bb7004c88dd6",
+      "result_id": "01f7f895-59e1-46de-90cb-3e4efecbc6b9"
+    },
+    {
+      "claim_id": "eb9dfe0d-da85-4fd4-a754-5c873a1f7ada",
+      "result_id": "01f7f895-59e1-46de-90cb-3e4efecbc6b9"
+    },
+    {
+      "claim_id": "5c7e2f41-b059-4b96-9deb-f8e9ee25b81c",
+      "result_id": "01f7f895-59e1-46de-90cb-3e4efecbc6b9"
+    },
+    {
+      "claim_id": "4bb266a3-0ece-42e5-a1e1-205b68c88051",
+      "result_id": "01f7f895-59e1-46de-90cb-3e4efecbc6b9"
+    },
+    {
+      "claim_id": "7f3932b7-6ecd-4a0d-a3bb-b644daecc9be",
+      "result_id": "8f363630-c8b0-4d12-b8d0-9b4e18984a22"
+    },
+    {
+      "claim_id": "ffa6dd5d-db62-4a0b-82aa-580ab39c3514",
+      "result_id": "8f363630-c8b0-4d12-b8d0-9b4e18984a22"
+    },
+    {
+      "claim_id": "b2f1fa80-1756-4543-a8ad-8f19d836ff52",
+      "result_id": "8f363630-c8b0-4d12-b8d0-9b4e18984a22"
+    },
+    {
+      "claim_id": "d99d5015-d08f-4ba5-8b54-bd985ed6e6fc",
+      "result_id": "8f363630-c8b0-4d12-b8d0-9b4e18984a22"
+    },
+    {
+      "claim_id": "fec67ed3-92d2-4170-97c4-14821bad7c7c",
+      "result_id": "16797d88-d417-4fb9-8630-f609e28795e3"
+    },
+    {
+      "claim_id": "7b42abd6-928e-4ee5-97ee-15839dd28ad2",
+      "result_id": "16797d88-d417-4fb9-8630-f609e28795e3"
+    },
+    {
+      "claim_id": "bb7ebad8-8c6c-4b5c-bac2-08468458c320",
+      "result_id": "16797d88-d417-4fb9-8630-f609e28795e3"
+    },
+    {
+      "claim_id": "db37cd4c-5ce3-4fdf-94a6-937bb93feb42",
+      "result_id": "16797d88-d417-4fb9-8630-f609e28795e3"
+    },
+    {
+      "claim_id": "f90a61c7-1643-489d-8a17-8e7ac87e8314",
+      "result_id": "16797d88-d417-4fb9-8630-f609e28795e3"
+    },
+    {
+      "claim_id": "95cdf157-83c6-4269-bd4e-880c3c0743aa",
+      "result_id": "16797d88-d417-4fb9-8630-f609e28795e3"
+    },
+    {
+      "claim_id": "56c21f3e-9027-4764-824a-a2404978406b",
+      "result_id": "16797d88-d417-4fb9-8630-f609e28795e3"
+    },
+    {
+      "claim_id": "ecf2c9a0-6310-4b71-8790-a3205aa84209",
+      "result_id": "16797d88-d417-4fb9-8630-f609e28795e3"
+    },
+    {
+      "claim_id": "8d9ba55c-accb-441f-9d62-5f9e7e4c2af3",
+      "result_id": "51424422-9ce7-47b2-ae22-7ef9b6ce1760"
+    },
+    {
+      "claim_id": "944b2eaf-71a6-4546-b1a7-fe625ab67d5c",
+      "result_id": "51424422-9ce7-47b2-ae22-7ef9b6ce1760"
+    },
+    {
+      "claim_id": "655a81f1-b69a-43a4-adaa-634abaf95a23",
+      "result_id": "51424422-9ce7-47b2-ae22-7ef9b6ce1760"
+    },
+    {
+      "claim_id": "96211f44-cca8-4ace-a907-c09712f84ccb",
+      "result_id": "51424422-9ce7-47b2-ae22-7ef9b6ce1760"
+    },
+    {
+      "claim_id": "6b73678e-902c-4f3b-aba3-486befeceda7",
+      "result_id": "51424422-9ce7-47b2-ae22-7ef9b6ce1760"
+    },
+    {
+      "claim_id": "78872513-e42e-4586-b934-9fadf178e959",
+      "result_id": "51424422-9ce7-47b2-ae22-7ef9b6ce1760"
+    },
+    {
+      "claim_id": "60c2d569-9231-4fbb-87fe-c7d84283d148",
+      "result_id": "51424422-9ce7-47b2-ae22-7ef9b6ce1760"
+    },
+    {
+      "claim_id": "def9159a-d82d-42b4-b623-c46cf31790ca",
+      "result_id": "51424422-9ce7-47b2-ae22-7ef9b6ce1760"
+    },
+    {
+      "claim_id": "c50db85c-836d-41e6-be88-9191129bac42",
+      "result_id": "15b7f057-dd67-45c9-93cb-c50e2340ac8c"
+    },
+    {
+      "claim_id": "46193fc6-9e17-4b91-811a-674a1ebdeaad",
+      "result_id": "15b7f057-dd67-45c9-93cb-c50e2340ac8c"
+    },
+    {
+      "claim_id": "57726229-1ab6-4aae-b0b1-9c789d821b7b",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "cd07ab26-abc3-4336-acfe-3551eaebb0f5",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "84a19cec-60c9-4c63-903e-43b5e067ce45",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "c4dd0259-160e-46f6-83f5-6f0535aa2ac3",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "0f3c16fd-f074-4e6e-a98c-2f8c02e8cf5d",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "914e100e-76d6-48a6-b6ea-941388f78de7",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "827a6851-4d43-44e9-afb7-7723c33953c0",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "2b59d7df-ec8d-4d18-a4ee-f26f565462ef",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "9bd52bb4-d21b-4de4-ad13-fa614f3b753a",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "1f3b881c-4433-445d-9ae7-c126e05f9aa9",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "27658049-12a5-41b8-9161-fb6bbb56bae8",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "f28bb2eb-4e38-4c68-b29c-b7dfa2d45193",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "137ebf21-66a1-41cd-bdeb-80334ab7318f",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "0ea7afa5-f063-4ba4-a895-680bd6256428",
+      "result_id": "ed1ede6a-1006-4175-83af-f25b31314d80"
+    },
+    {
+      "claim_id": "a3318591-be06-49dd-b909-e228f9ce84e3",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "ec345cab-f850-4507-be3e-43de2c35231b",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "498d89bc-170e-4840-a5ca-f7d22113219f",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "af1eaff0-4722-4db9-bf96-0575b776b552",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "56696b49-c6d0-42af-bcab-2047f3c886eb",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "b0b1e658-ef6a-45a6-8efd-c87776b0c665",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "924c5ff2-55d2-4b50-83a0-449dde9f2cec",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "9a268c6b-11e3-47b9-b660-5e88b0c6209d",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "a70cd1b1-1d04-4613-b4d9-81d1b1b95c06",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "b6c16b2b-1c66-4cab-88cb-179464ebce4d",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "fa36d6f0-3ab3-448a-9986-5041dbee6548",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "f162ae42-f63c-4913-aa00-5ce557ee16e8",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "bd454b83-5bfe-4d7a-8a60-fed1b33c4f5b",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    },
+    {
+      "claim_id": "704ec008-4844-4352-b09e-a8b6ef7cfaa4",
+      "result_id": "749d541b-7dc8-4609-93c8-f567823e8179"
+    }
+  ],
+  "comparisons": []
+}

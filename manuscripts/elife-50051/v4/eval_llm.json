@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A focused CRISPR screen targeting 1244 lipid-related genes identified cholesterol biosynthesis pathway genes as positive regulators and sphingolipid biosynthesis pathway genes as negative regulators of HH signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C27 describe the CRISPR screen design, validation with positive controls (C19-C20), and identification of two major lipid pathways affecting HH signaling (C26-C27). The screen correctly identified known regulators and revealed statistically significant clustering in cholesterol and sphingolipid pathways, supported by Figure 1B-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cholesterol biosynthesis genes are required for HH signaling, and cholesterol itself (rather than precursors or metabolites like 24(S),25-epoxycholesterol) is the endogenous sterol regulating SMO activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 demonstrate that CRISPR knockout of cholesterol biosynthesis genes (Lss, Dhcr7, Dhcr24) impairs HH signaling, with rescue by exogenous cholesterol in Lss-/- and Dhcr7-/- but not Dhcr24-/- cells. The Dhcr24 result (C40-C41) provides genetic evidence against 24(S),25-epoxycholesterol as the key regulator, supporting cholesterol itself (C42). Mass spectrometry data (C34-C35) confirm expected sterol changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Sphingomyelin (SM) negatively regulates HH signaling, as demonstrated by pharmacological depletion with myriocin or fumonisin B1 potentiating HH responses, with effects reversed by SM addition and opposite effects with SM elevation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 provide convergent pharmacological evidence: myriocin (SM depletion) potentiates HH signaling in multiple cell types (NIH/3T3, MEFs, NPCs), fumonisin B1 (different mechanism, same outcome) shows similar effects (C51), SM add-back reverses myriocin effects (C52), and staurosporine (increases SM) reduces signaling (C53). The identification of Sgms1 in the screen (C45) supports SM as the relevant sphingolipid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Myriocin-induced potentiation of HH signaling acts at the level of SMO or upstream, without affecting ciliary structure, protein abundances, or trafficking of negative regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 demonstrate myriocin does not affect HH pathway protein levels, ciliation frequency/length, or PTCH1/GPR161 localization. Claims C60-C62 show myriocin effects require SMO (blocked by Vismodegib, absent in Smo-/- cells), localizing the effect to SMO or upstream. Enhanced SMO ciliary accumulation (C59) supports SMO activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "SM regulates SMO activity through the cholesterol-binding CRD site, as mutations in the CRD (D99A/Y134F) but not the TMD site (D477G) reduce myriocin-driven HH activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 provide critical mutagenesis data showing CRD mutations (which abolish cholesterol binding, C64) reduce myriocin effects while TMD mutations (which affect SAG binding, C65) do not. This supports the inference (C68) that SM regulates SMO by controlling cholesterol availability to the CRD. The structural context (C63) and prior characterization (C64-C65) provide necessary background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SM sequesters cholesterol into complexes with low chemical activity, and SM depletion increases accessible cholesterol without changing total cholesterol, thereby enhancing HH signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 establish the three-pool model of membrane cholesterol from prior work. Claims C71-C75 demonstrate that toxin-based probes (PFO*, OlyA, OlyA_E69A) can distinguish these pools and show myriocin increases accessible cholesterol (PFO* staining) while depleting SM. Claim C76 confirms total cholesterol is unchanged. The rescue experiment (C77) showing M\u03b2CD reverses myriocin effects supports the model (C78) that SM sequesters cholesterol from SMO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Accessible cholesterol, not total cholesterol, regulates HH signaling, as demonstrated by ALOD4 (which traps accessible cholesterol without removing it) blocking HH signaling similarly to M\u03b2CD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 establish ALOD4 as an orthogonal tool that traps accessible cholesterol without changing total levels, confirmed by Hmgcr induction (C82) and no effect on ciliation (C83). Claims C84-C86 show opposite effects of myriocin (increases accessible cholesterol, enhances signaling) and ALOD4 (decreases accessible cholesterol, blocks signaling), both without changing total cholesterol. This strongly supports C87 that accessible cholesterol is the regulatory pool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The ciliary membrane has a high SM:cholesterol ratio resulting in low accessible cholesterol, with SM providing the major restraint on cholesterol accessibility at cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 show that untreated cilia have high total SM (OlyA_E69A) but low SM-cholesterol complexes (OlyA) and accessible cholesterol (PFO*), indicating high SM:cholesterol ratio. Claims C92-C93 demonstrate cholesterol loading and myriocin treatment increase ciliary accessible cholesterol. Claim C94 shows myriocin has greater effects than cholesterol loading, supporting SM as the major restraint. The resistance to permeabilization (C95) provides independent support for this lipid organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "SHH ligands increase accessible cholesterol specifically in the ciliary membrane (not bulk plasma membrane) in a PTCH1-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 shows SHH does not significantly affect bulk plasma membrane accessible cholesterol. Claim C97 demonstrates SHH rapidly increases ciliary accessible cholesterol in myriocin-treated or cholesterol-loaded cells. Controls with Ptch1-/- cells (C98) and SAG treatment (C99) show this effect requires PTCH1 activity (C100), supporting the model that PTCH1 inactivation by SHH increases ciliary accessible cholesterol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Accessible cholesterol regulation of SMO is confined to the primary cilium, where only 2-15% of total membrane cholesterol is accessible and changes are compartmentalized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 synthesize the key findings that only a small fraction of cholesterol is accessible (citing prior work) and that regulatory changes are confined to the cilium where PTCH1 and SMO colocalize. Claim C103 places this in broader context of dynamic ciliary lipid regulation. These claims are well-supported by the compartmentalized changes shown in C96-C97.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "A proposed 'pump-leak' model suggests PTCH1 selectively transports accessible cholesterol from the ciliary membrane, with SM levels setting the threshold for SMO activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C114 present a speculative mechanistic model for how PTCH1 might regulate ciliary accessible cholesterol. While the model is consistent with the data (C115-C116 provide supporting observations), key aspects remain untested: the direction of cholesterol transport (C108-C109), the identity of acceptors (C106), and the energetics of the pump-leak system (C111-C112). The model is plausible but requires direct demonstration of PTCH1 transport activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "SM is localized in the outer leaflet of the plasma membrane where it plays key roles in membrane organization including formation of ordered microdomains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 describe established properties of SM from prior work (multiple citations), providing necessary background for understanding SM's role in cholesterol sequestration. This is well-established knowledge appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "SM depletion affects cholesterol accessibility in both membrane leaflets due to rapid cholesterol flip-flop, potentially impacting both CRD and TMD cholesterol-binding sites on SMO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 explain how SM (outer leaflet only) depletion affects both leaflets through cholesterol flip-flop, supported by citations. Claims C118-C121 describe the two cholesterol-binding sites on SMO and their potential regulation. This discussion appropriately acknowledges that the experiments cannot distinguish which leaflet/site is more important, showing appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The lack of cholesterol biosynthesis regulation in Drosophila may explain why HH signaling is not confined to primary cilia in insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C128 accurately describe differences between Drosophila and vertebrate cholesterol biology (supported by citations). However, C129 is highly speculative, proposing an evolutionary explanation without direct evidence. While intellectually interesting, this hypothesis would require comparative functional studies to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior work established that cholesterol binds and activates SMO, and proposed that PTCH1 regulates SMO by restricting cholesterol access, though PTCH1 transport activity remains undemonstrated in purified systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C11 accurately cite prior work establishing cholesterol-SMO interaction and PTCH1's structural similarity to cholesterol transporters. Claims C12-C13 appropriately note limitations of existing evidence (resolution of structures, lack of direct transport demonstration), providing context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Cholesterol is highly abundant (up to 50% of plasma membrane lipids), and other lipids including oxysterols can also regulate SMO activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 provide background on cholesterol abundance and alternative SMO-regulating lipids, appropriately cited to prior work. This contextualizes the challenge of how an abundant lipid can serve as a specific regulator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Accessible cholesterol in the ciliary membrane drives SMO activation and HH signaling, regulated by sphingomyelin sequestration and PTCH1-mediated changes in response to HH ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims (C2-C7) summarize the main findings of the paper. They are well-supported by the detailed experimental results grouped in other result categories. This represents an accurate high-level summary of the work's major conclusions.",
+    "result_type": "MAJOR"
+  }
+]

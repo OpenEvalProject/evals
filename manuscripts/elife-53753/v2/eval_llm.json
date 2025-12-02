@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "BYSMV P protein directly interacts with barley HvCCR4 through specific domains. The interaction was demonstrated through GST pull-down, Co-IP, and BiFC assays. The N-terminal zf-MYND-like domain of HvCCR4 and the central domain (P60-183) of BYSMV P are responsible for forming mobile punctate bodies that traffic along the actin/ER network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent biochemical and imaging approaches (C32, C33, C34) consistently demonstrate the P-HvCCR4 interaction. Domain mapping experiments (C39, C40) identify specific interaction regions. The data are internally consistent and use appropriate controls (GST, GFP, P6 as negatives).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C98",
+      "C99"
+    ],
+    "result": "The P-CCR4 interaction is conserved across cytorhabdoviruses and extends to insect vectors. NCMV P protein interacts with HvCCR4, and BYSMV P interacts with the insect LsCCR4 through its N-terminal LRR domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BiFC and GST pull-down data (C43, C98, C99) demonstrate interactions with both NCMV P and insect CCR4. This supports the generalizability of the P-CCR4 interaction mechanism, though testing is limited to two related viruses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "BYSMV P protein recruits HvCCR4 from processing bodies (PBs) into viroplasm-like bodies. HvCCR4 normally colocalizes with the PB marker DCP1, but in the presence of P protein, HvCCR4 is relocated to P-containing bodies that are adjacent to but distinct from PBs. The N protein does not cause this relocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Extensive colocalization data (C46-C53) with quantitative analysis clearly demonstrate P-dependent relocalization of CCR4 from PBs. The use of DCP1 as a PB marker is appropriate, and the differential effects of P versus N proteins (C51-C54) provide strong evidence for specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "BYSMV P acts as a central tethering protein that recruits HvCCR4, N, and L proteins into viroplasm-like bodies. Co-IP experiments demonstrate that P is required for the formation of complexes containing all four proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Colocalization (C56, C57, C58) and Co-IP data (C59, C60) consistently show P-dependent complex formation. The negative control lacking P (C60) is critical and demonstrates P's essential role. The conclusion that P is a tethering protein (C61, C62) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "HvCCR4 overexpression promotes BYSMV minigenome replication but not transcription, and this enhancement requires the deadenylase activity of CCR4. Full-length HvCCR4 increased RFP foci and minigenome RNA levels 2.28-fold, while truncated forms and deadenylase-deficient mutants (N260A/E305A) had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (fluorescence foci, Western blots, qRT-PCR) consistently show CCR4-dependent enhancement of replication (C64, C69, C72) but not transcription (C74). The requirement for deadenylase activity is demonstrated by the inactive mutant (C67, C73). The independence from N/P accumulation (C70, C71) strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "HvCCR4 overexpression facilitates full-length BYSMV infection in both N. benthamiana and barley plants. BYR-HvCCR4 showed 110% increase in RFP accumulation in N. benthamiana and 133% increase in barley compared to controls, with more severe disease symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Full-length virus experiments (C90-C97) confirm the minigenome results in authentic infection contexts. The consistency across two plant species and multiple readouts (fluorescence, protein accumulation, symptoms) provides strong support. The deadenylase-deficient mutant control (C92) reinforces the mechanistic requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Knockdown of LsCCR4 in insect vectors inhibits BYSMV infection and transmission to plants. dsRNA-mediated knockdown reduced viral N and RFP accumulation by at least 36% in planthoppers and significantly reduced transmission to barley plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dsRNA knockdown experiments (C100-C102) show consistent reduction in viral markers with appropriate controls (dsGFP). The transmission experiments (C104-C106) demonstrate functional consequences. However, RNAi knockdown is incomplete, and off-target effects cannot be fully excluded. The result is supported but would benefit from additional validation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C128"
+    ],
+    "result": "CCR4 is recruited into N-RNA complexes by P protein and triggers turnover of N-bound cellular mRNAs, releasing RNA-free N protein to bind viral genomic RNA. The N-P complex enhances CCR4 deadenylase activity, and CCR4 increases the specificity of N binding to viral RNA by 133% compared to N alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic model is supported by multiple lines of evidence: Northwestern blots showing N binds RNA but CCR4 does not (C109-C112), in vitro deadenylation assays showing N-P enhances CCR4 activity (C113-C118), and RNA binding specificity assays (C122-C125). The requirement for deadenylase activity is confirmed by the inactive mutant (C117, C124). This represents a coherent molecular mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "HvCAF1 negatively affects BYSMV replication by competing with P protein for binding to the HvCCR4 N-terminal domain. Overexpression of CAF1 reduced minigenome infection and competitively inhibited P-CCR4 interactions in a dose-dependent manner, suggesting that P selectively hijacks CCR4 alone rather than the complete CCR4-NOT1 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competitive relationship is demonstrated through multiple approaches: functional assays showing CAF1 inhibits infection (C80, C81), direct binding assays (C83), and competitive binding experiments (C84-C86). The dose-dependent inhibition (C86) strengthens the competitive model. However, the conclusion that P hijacks CCR4 alone (C89) is somewhat inferential and could benefit from additional direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "BYSMV infection increases CCR4 protein accumulation without increasing CCR4 mRNA levels in both barley and N. benthamiana plants, indicating post-transcriptional regulation of CCR4 protein levels during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blotting (C28, C29) and qRT-PCR (C30) data consistently show increased protein but not mRNA. This suggests post-transcriptional or post-translational regulation. However, the mechanism of this increase is not explored, and protein stability/degradation rates were not measured. The observation is solid but mechanistically incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "P-CCR4 bodies are mobile structures that traffic along the actin/ER network. Movement is abolished by the actin-depolymerizing agent latrunculin B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Time-lapse microscopy (C35) and pharmacological inhibition (C36) provide direct evidence for actin-dependent movement. This is consistent with previous work on P protein (C37). The use of LatB is appropriate, though additional cytoskeletal inhibitors would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C45",
+      "C108",
+      "C119",
+      "C126",
+      "C127"
+    ],
+    "result": "Background information on CCR4 function, rhabdovirus biology, and BYSMV characteristics. CCR4 is a conserved deadenylase in the CCR4-NOT complex, plant CCR4s contain zf-MYND domains instead of LRR domains, and rhabdoviruses require RNA-free N protein for replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, appropriately cited (C1, C9-C23, C45, C108, C126, C127). The structural characterization of CCR4 domains (C13, C14, C25-C27) is supported by sequence analysis in the figures. This provides necessary context but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "A barley CCR4 fragment was identified by LC-MS/MS from GST-P immunoprecipitation products from infected barley leaves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the initial discovery that led to the study. The mass spectrometry identification is mentioned but detailed data are in supplementary files. This is a standard proteomics approach and the result is credible, though the fragment identification alone is preliminary without validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The host HvCCR4 protein functions in virus replication and/or transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This speculative claim (C63) is actually well-supported by the subsequent functional experiments showing CCR4 promotes replication (C64-C75). While initially presented as a suggestion, the data strongly support a role in replication specifically, not transcription.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "CCR4-mediated turnover of N-bound cellular mRNAs could potentially release RNA-free N0 to specifically bind genome RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic hypothesis (C120) is supported by the experimental data showing CCR4 enhances N binding specificity to viral RNA (C122-C125) and triggers mRNA decay (C113-C118). While presented as speculative, the subsequent experiments provide strong support for this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "BYSMV P and HvCCR4 interactions probably interfere with HvCAF1 and HvCCR4 binding, thereby inhibiting formation of HvCCR4-NOT1 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the competitive binding data (C84-C86) showing CAF1 can displace CCR4 from P, and vice versa. The reciprocal competition is logical given both proteins bind the same CCR4 domain (C79). However, direct evidence for disruption of CCR4-NOT1 complexes during infection is not provided.",
+    "result_type": "MINOR"
+  }
+]

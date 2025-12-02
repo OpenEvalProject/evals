@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The CSF flow in the central canal of 30 hpf zebrafish embryos is bidirectional with a characteristic bimodal velocity profile. The flow is positive (rostral to caudal) ventrally with maximal speed of 4.78 \u00b1 0.79 \u03bcm/s and negative (caudal to rostral) dorsally with minimal speed of -4.80 \u00b1 0.82 \u03bcm/s, reversing at relative D-V position 0.53. The average flow rate through a cross-section is null.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 provide detailed quantitative measurements from 110 WT embryos showing the bidirectional nature of the flow with specific velocity values and positions. The symmetry of the profile and null average flow rate are well-documented with appropriate sample sizes and statistical measures (mean \u00b1 s.d.). The automated kymograph analysis method is described in detail in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47"
+    ],
+    "result": "The bidirectional CSF flow is generated locally by caudally-polarized motile cilia along the ventral wall of the central canal. Ventral motile cilia (4x more numerous than dorsal) are typically 5.8 \u03bcm long, beat at 38.1 Hz with a 62.6\u00b0 caudal tilt, occupying about half the canal height (2.7 \u03bcm). A theoretical model based on these parameters accurately predicts the observed velocity profiles in 57 embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C43 provide comprehensive quantitative characterization of cilia properties from 89 embryos (1704 motile cilia analyzed). The theoretical model (C3, C47) incorporating these measured parameters successfully predicts experimental velocity profiles, providing strong convergent evidence. The refutation of a global pressure gradient (C31) is logically sound based on the null average flow rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The closed geometry of the central canal imposes a null average flow rate, explaining the bidirectionality. The flow is generated locally and does not rely on a global pressure gradient from the ventricles, as demonstrated by photoablation experiments isolating canal segments that maintain bidirectional flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The geometric constraint explanation (C4) is supported by both theoretical modeling and experimental evidence. The photoablation experiments (C62) provide direct experimental validation that isolated ~200 \u03bcm canal segments maintain bidirectional flow with similar velocity profiles, confirming local generation. The observation that caudal regions can show bidirectional flow even after regions without cilia (C61) further supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C18",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C113",
+      "C114",
+      "C117",
+      "C118"
+    ],
+    "result": "Motile cilia are required for proper formation of the central canal. In mutants with defective cilia (elipsa, lrrc50, foxj1a, kurly), the canal diameter is dramatically reduced and flattened along the D-V axis, while scospondin mutants with normal cilia activity show no diameter reduction. The motile cilia maintaining canal geometry originate from ependymal cells specifically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 report consistent observations across multiple independent mutant lines affecting different aspects of cilia function. The control experiment with scospondin mutants (C56) that are curled but have normal cilia activity shows no canal diameter reduction, establishing that the effect is specific to cilia function rather than body curvature. The foxj1a mutant analysis (C117-C118) provides additional specificity by showing ependymal cells are the critical source.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C51",
+      "C59",
+      "C115",
+      "C116"
+    ],
+    "result": "A 'sparse cilia' model predicts that spatial heterogeneity in cilia distribution creates recirculation regions between active ciliated areas. This is confirmed by observations in elipsa and kurly mutants showing residual flow with many recirculation zones, consistent with their partial loss of cilia motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The numerical simulations (C48, C51) make specific predictions about recirculation patterns that are confirmed by experimental observations in mutants with partial cilia loss (C59, C114, C115). The model successfully accounts for previously reported reduced transport in kif3b mutants (C116), providing additional validation across independent datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Muscle contractions transiently enhance bidirectional CSF flow in the central canal. Following each contraction, rapid CSF displacements occur followed by slower counter-flow, with robust flow rate increases observed after 204 contractions from 22 embryos. The enhancement is likely due to changes in brain ventricle volume rather than local canal diameter changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 provide detailed temporal characterization of flow changes associated with contractions, with substantial sample size (204 contractions, 22 embryos). The lack of correlation between flow direction and contraction direction/strength (C66) is appropriately noted. The proposed mechanism (C69) is reasonable given the citation to similar observations in larvae and the lack of canal diameter changes (C68), though this remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The bidirectional flow accelerates particle transport in the CSF via a coupled convective-diffusive process (Taylor-Aris dispersion). Transport follows an apparent diffusive law but is faster than pure diffusion and slower than ballistic transport. Muscle contractions further accelerate transport, and enhancement occurs in both rostro-caudal and caudo-rostral directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C79 provide comprehensive experimental evidence (particle tracking in paralyzed vs. contracting embryos) supported by theoretical modeling of Taylor-Aris dispersion. The bidirectional enhancement (C77-C79) is demonstrated experimentally with caudal injections showing rostral transport. The timescale arguments (C74) and size-dependence observations (C72) are consistent with the proposed mechanism. The theoretical derivation in Appendix 2 provides mathematical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CSF flows unidirectionally from the diencephalic/mesencephalic ventricle to the central canal entrance. Two-photon ablation of this connection leads to reduced embryo size and increased body-axis curvature 30 hr post-ablation, indicating that global CSF circulation and particle transport between brain and spinal cord are critical for embryonic growth and development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ablation experiments (C91-C92) provide direct functional evidence with appropriate controls (yolk extension ablation, no ablation). The phenotypic effects on length and curvature are statistically significant (p-values provided in Figure 8). However, the mechanistic link to particle transport (C94) remains somewhat inferential, though supported by the broader context of the study including vesicle observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105"
+    ],
+    "result": "Cilia activity combined with muscle contractions sustains long-range transport of extracellular lipidic particles (50-250 nm diameter), including exosomes and other vesicles, enabling embryonic growth. These vesicles are abundant in the CSF and undergo bidirectional flow, with transport accelerated for all particles larger than 10 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 provide multiple lines of evidence for vesicle presence and transport: FF-OCT imaging, electron microscopy with immunogold labeling, and fluorescent CD63 labeling. The size range (C99) is appropriate for Taylor-Aris dispersion effects. The connection to embryonic growth (C101, C105) is supported by the ablation experiments showing growth defects when circulation is disrupted, though the specific molecular cargo remains to be fully characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C119",
+      "C120"
+    ],
+    "result": "At 30 hpf, a specific CSF circulation is established between brain ventricles and the central canal through transient primitive lumen openings. The ventral opening of the RV primitive lumen (7.1 \u00b1 0.7 \u03bcm diameter, 233 \u00b1 24 \u03bcm long) has unidirectional flow toward the central canal. The dorsal and ventral openings of the central canal primitive lumen converge at 3 dpf and merge into a single lumen at 5 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 provide detailed anatomical characterization with quantitative measurements from 11 embryos. The developmental progression is documented with imaging at multiple time points (30 hpf, 3 dpf, 5 dpf) and is consistent with previous reports (citations provided). The functional importance (C120) is supported by the ablation experiments. The observation that brain ventricle flow is mostly Brownian at this stage (C81-C82) appropriately distinguishes the developmental timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C58"
+    ],
+    "result": "In anesthetized mutants with defective cilia (elipsa, lrrc50, foxj1a, kurly), no particles enter the central canal even hours post-injection, consistent with altered long-range transport. However, allowing mutant embryos to spontaneously twitch facilitates bead transport down the canal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 document consistent observations across multiple mutant lines and are consistent with previous reports (citations provided). The rescue by muscle contractions (C58) is an important observation that connects to the role of contractions in enhancing flow. However, the inability to measure local flow in anesthetized mutants limits direct characterization of the flow defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The model predicts establishment of positive pressure in the central canal increasing linearly toward the caudal direction, which decreases with lower cilia density. This pressure maintains canal integrity, necessary for proper body axis formation. The model draws analogy to small vein collapse under decreased inner pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pressure predictions (C108-C109) follow logically from the theoretical model and are illustrated in Figure 3\u2014figure supplement 1A. The connection to canal integrity (C110) is supported by the mutant phenotypes showing reduced diameter. However, the fixation artifact speculation (C112) and the vein analogy (C111) are more tentative. The overall reasoning is sound but some aspects remain to be directly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The hydrodynamic model uses a single fitting parameter (\u03b1 = 0.5) corresponding to a force of 10 pN per cilium, consistent with literature values. The model is robust to force profile variations and can predict flow profiles for various aspect ratios and ciliary beating frequencies, including flows in artificial magnetic cilia microchannels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model validation (C125) shows good agreement with literature values (Hill et al., 2010). The robustness tests (C126) and versatility demonstrations (C127-C128) strengthen confidence in the modeling approach. The successful prediction of Shields et al. (2010) data provides independent validation. The model's simplifications are acknowledged and justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The model neglects dorsal cilia contribution (representing ~20% of motile cilia) because dorsal cilia, also oriented caudally, tend to cancel ventral cilia contributions locally and can create recirculation regions. The bidirectional flow is affected by at most 20% due to sparse dorsal cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The justification for neglecting dorsal cilia (C129-C132) is reasonable given their sparse distribution and opposing geometric position. The 20% estimate provides an upper bound on the error. The linearity of Stokes equations supports the superposition argument. However, this remains a modeling approximation that could be tested more rigorously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The Reissner fiber (RF) was neglected in the model because it does not compartmentalize fluid in 3D and should not qualitatively modify flow bidirectionality, confirmed by velocity profiles in scospondin mutants lacking RF. However, RF absence may alter CSF-contacting neuron activity due to changed mechanical forces. The working model proposes that lack of motile cilia reduces canal diameter, altering RF polymerization and URP peptide expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The justification for neglecting the RF (C133-C135) is supported by experimental data from scospondin mutants. The speculation about neuron activity changes (C136) is appropriately cautious. The working model (C137-C138) integrates multiple observations but remains somewhat speculative regarding the mechanistic sequence. The acknowledgment that why RF fails to form in smaller canals remains unknown is appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C106",
+      "C107"
+    ],
+    "result": "CSF circulation contributes to body axis formation and brain development. The study focused on embryogenesis when CSF is concentrated in extracellular lipid vesicles and blood flow is not established for transport. Various biological flows use different mechanisms: blood flow uses heart-driven pressure gradients, intestinal/lymph flows use peristalsis, and cilia-driven flows are critical for left/right asymmetry and CSF circulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C13) provide established background knowledge supported by appropriate citations. The rationale for focusing on embryogenesis (C106-C107) is well-justified. These are primarily contextual claims that frame the study rather than novel findings, but they are accurately stated and properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Previous work by the authors showed bidirectional CSF flow in 24-30 hpf zebrafish embryos. Body-axis defects in cilia mutants appear by 30 hpf, before brain ventricle cilia become motile, suggesting that proper CSF flow dynamics in the central canal rather than brain ventricles is critical for embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 accurately cite previous work including the authors' own studies and others. The inference about central canal importance (C16) is logical based on the temporal sequence, though it remains somewhat indirect. This provides important context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The study demonstrates that steady bidirectional CSF flow is driven by ventral motile cilia and body movements create additional transient flows. Zebrafish transparency enables characterization of CSF flow and cilia dynamics in the central canal, which is challenging in other species but well-conserved among vertebrates. Findings are expected to guide future mammalian investigations and may impact understanding of development, inflammatory response, and motor circuit functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 accurately summarize the main findings. The rationale for using zebrafish (C139-C140) is sound. The expectations about future impact (C141-C143) are appropriately framed as speculation. These are summary and forward-looking statements that are reasonable given the presented evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The transient architecture and circulation within primitive lumens may be specific to teleost species where neural tube formation occurs by tissue internalization and cavitation, unlike amniotes where it occurs by tissue folding and fusion. However, evidence exists for similar ventricular wall appositions in amniotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative developmental biology claims (C121-C123) are appropriately cautious and supported by citations. The acknowledgment of potential similarities across species despite different developmental mechanisms is scientifically sound. This represents appropriate contextualization of the findings within broader vertebrate biology.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1274 @@
+{
+  "submission": {
+    "id": "75392d3b-7850-47d4-88d1-b1224e9cd1c3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:56:33.687260Z",
+    "updated_at": "2025-12-02T12:56:33.687260Z"
+  },
+  "content": [
+    {
+      "id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "submission_id": "75392d3b-7850-47d4-88d1-b1224e9cd1c3",
+      "content_type": "manuscript",
+      "content_text": "# Discovery proteomics in aging human skeletal muscle finds change in spliceosome, immunity, proteostasis and mitochondria\n\n## Authors\n\n- Ceereena Ubaida-Mohien<sup>1</sup>\n- Alexey Lyashkov<sup>1</sup>\n- Marta Gonzalez-Freire<sup>1</sup>\n- Ravi Tharakan<sup>1</sup>\n- Michelle Shardell<sup>1</sup>\n- Ruin Moaddel<sup>1</sup>\n- Richard D Semba<sup>2</sup>\n- Chee W Chia<sup>1</sup>\n- Myriam Gorospe<sup>1</sup>\n- Ranjan Sen<sup>1</sup>\n- Luigi Ferrucci<sup>1</sup> ([ORCID: 0000-0002-6273-1613](https://orcid.org/0000-0002-6273-1613)) \u2020\n\n### Affiliations\n\n1. Intramural Research Program National Institute on Aging, National Institutes of Health Baltimore United States\n2. Johns Hopkins Medical Institute Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA decline of skeletal muscle strength with aging is a primary cause of mobility loss and frailty in older persons, but the molecular mechanisms of such decline are not understood. Here, we performed quantitative proteomic analysis from skeletal muscle collected from 58 healthy persons aged 20 to 87 years. In muscle from older persons, ribosomal proteins and proteins related to energetic metabolism, including those related to the TCA cycle, mitochondria respiration, and glycolysis, were underrepresented, while proteins implicated in innate and adaptive immunity, proteostasis, and alternative splicing were overrepresented. Consistent with reports in animal models, older human muscle was characterized by deranged energetic metabolism, a pro-inflammatory environment and increased proteolysis. Changes in alternative splicing with aging were confirmed by RNA-seq analysis. We propose that changes in the splicing machinery enables muscle cells to respond to a rise in damage with aging.\n\n## Introduction\n\nOne of the most striking phenotypes of aging is the decline of skeletal muscle strength, which occurs in all aging individuals and contributes to the impairment of lower extremity performance and loss of mobility (Cruz-Jentoft et al., 2010; Studenski et al., 2014; Cesari et al., 2015). The magnitude of decline in strength is higher than that expected from the loss of muscle mass, suggesting that the contractile capacity of each unit of muscle mass is progressively lower with aging. The reasons for such a decline of contractile capacity are unclear, and several hypotheses have been proposed (Moore et al., 2014). Studies conducted in humans by 31P magnetic resonance spectroscopy as well as \u2018ex vivo\u2019 respirometry have shown that skeletal muscle oxidative capacity declines with aging and such decline affects mobility performance (Gianni et al., 2004; Hepple, 2016; Zane et al., 2017; Gonzalez-Freire et al., 2018). Ample evidence from animal models, and more limited evidence from human studies also suggest that aging causes progressive muscle denervation, with enlargement of the motor units and degeneration of the neuromuscular junction, but whether these changes account for the change of contractile performance of human muscle with aging has not been studied (Wang et al., 2005; Messi et al., 2016; Delbono, 2003; Spendiff et al., 2016; Gonzalez-Freire et al., 2014).\n\nCurrently, no treatment is available to prevent or delay the decline of muscle strength and function with aging. Thus, understanding the mechanisms driving the decline in muscle contractile capacity with aging is essential to identify new targets of intervention. Previous studies attempted to address this question by performing cross-sectional untargeted proteomic analysis in skeletal muscle biopsy specimens from young and old individuals. However, these studies were limited in size, focused on cancer cachexia, analyzed single fibers, did not account for levels of physical activity or did not explore the effect of aging over its continuous range and, therefore, could not distinguish changes due to aging from those due to disease or sedentary state (Doran et al., 2009; Murgia et al., 2017; Waldera-Lupa et al., 2014; Brocca et al., 2017; Ebhardt et al., 2017). To overcome these earlier limitations, we have performed a quantitative mass spectrometry-based proteome analysis (tandem mass tag, TMT) of skeletal muscle biopsies obtained from individuals distributed over a wide age range, who were healthy based on strict objective clinical criteria. We characterized proteins that were overrepresented and underrepresented in older individuals and using these data we made inferences about molecular pathways affected by aging in skeletal muscle.\n\n## Results and discussion\n\n### Quantitative skeletal muscle proteome analysis of healthy aging\n\nSkeletal muscle biopsies were collected from 60 healthy participants of the Genetic and Epigenetic Study of Aging Laboratory Testing (GESTALT) aged 20 to 87 years who were defined as \u2018healthy\u2019 based on very strict evaluation criteria at the National Institute on Aging Clinical Unit in Baltimore (Tanaka et al., 2018). Exclusion criteria included any diseases that required chronic treatment (except for mild hypertension fully controlled with one drug only), any physical or cognitive impairment, and any abnormal values in pre-defined list of blood clinical tests (see Materials\u00a0and\u00a0methods for details). Participants who consented for a muscle biopsy were homogeneously distributed across the age strata 20\u201334 (n\u00a0=\u00a013), 35\u201349 (n\u00a0=\u00a011), 50\u201364 (n\u00a0=\u00a012), 65\u201379 (n\u00a0=\u00a012) and 80+ (n\u00a0=\u00a010), and biopsies were analyzed by tandem shotgun mass spectrometry-based quantitative proteomics method (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 1, Figure 1\u2014source data 2). Using multiplexed isobaric labeling tags (TMT) and a customized analytical strategy (Kammers et al., 2015; Herbrich et al., 2013), we identified 400,000 tryptic peptides from 6.7 million spectra (396 multiplexed MS runs from 12 TMT 6-plex experiments), which allowed the quantification of 5891 proteins (Figure 1\u2014source data 1, PXD011967).\n\nTo control for batch variability and avoid bias, we included a reference sample in all 12 TMT sets. A loading normalization was implemented that assumed that the sums of all intensities from all the proteins across the samples in a single TMT experiment were equal and that the sample loading effects, peptide bias effects and the residual error were normally distributed across a constant variance across samples (Figure 1\u2014figure supplement 2A). To test the effectiveness of these approaches, we examined TMT batch effects in several analyses, allowing for experiment-specific random effects. We then averaged the expression values from each TMT across the sample groups and found that the ranks between TMTs were highly correlated (Figure 1\u2014figure supplement 1B\u2013C, Figure 1\u2014figure supplement 2B). Together, these findings indicate that the protein quantification across the 12 TMT experiments was robust.\n\nOf the initial 5891 proteins detected, we excluded from the analysis 1511 proteins that were not quantifiable in at least three participants per age strata (at least 15 participants total) and performed the analysis in the remaining 4380 proteins detected in more than 15 donors (three per age strata), which were quantified from 46,834 unique peptides and 2.7 million spectra (Figure 1\u2014figure supplement 1D). We used Partial Least Squares (PLS) analysis to explore the overall clustering of the 4380 proteins across age groups (Figure 1\u2014figure supplement 1E). The age groups (color-coded) were well separated along at least one axis in the three-dimensional clustering classification (Figure 1\u2014figure supplement 1C). As expected, most of the proteins identified were classified as \u2018muscle proteins\u2019, and the top 10 most abundant muscle proteins accounted for 45% of the total spectral abundance (Figure 1\u2014figure supplement 2C). Low-abundant mitochondrial proteins, such as cardiac phospholamban (PLN), were also quantified.\n\n### Focus on the aging biological mechanisms\n\nThe relationship of age with the skeletal muscle proteins was estimated by linear mixed regression models that included sex, race, level of physical activity, type I/type II muscle fiber ratio, body mass index (BMI) and TMT batch effect as covariates (Materials\u00a0and\u00a0method). Of note, the age beta-coefficients (aging effect size) are small because they express the difference in protein \u2018per year\u2019 of age. For example, the difference in protein between two individuals that differ by 20 years would be 20 times the size of the beta coefficient. We adjusted for physical activity because it both tends to decline with age and strongly affects biological processes in muscle cells (Egan and Zierath, 2013; McGee and Walder, 2017; Bauman et al., 2016). Previous studies demonstrated that gender and race strongly affect body composition and muscle mass (Gallagher et al., 1997). Skeletal muscle tissue includes different myofiber types: type I fibers (slow-twitch), type IIa fibers (fast-oxidative), and IIb fibers (fast glycolytic muscle fibers containing four different myosin isoforms), each supported by different energetic metabolism and with different protein composition. An analysis for a proxy measure of \u2018muscle fiber ratio\u2019 (Schiaffino and Reggiani, 2011) was estimated by calculating the ratio of myosin 7 (MYH7), the slow-twitch fiber isoform, and the sum of fast-twitch fiber isoforms (MYH1, MYH2 and MYH4) (Figure 1\u2014figure supplement 3 A1-A4); as expected, the fiber ratio of slow/fast was higher with older age (Figure 1\u2014figure supplement 3 A5). The slight change of slow/fast fiber ratio was significant and outweighed the wide variability among individuals (p=0.005); BMI was adjusted because obese persons tend to have muscle fat infiltration and lower muscle quality and muscle-fat interaction may affect muscle composition and function (Moore et al., 2014; Silva and Martins, 2017). Gender may also have an impact on protein expression in skeletal muscle, as males and females are known to have differences in muscle mass; however, because of the limited sample size, we did not stratify the analysis by gender. This analysis should be done in future larger studies.\n\nProteins were then deemed significantly underrepresented or overrepresented in older age based on p-values for age-coefficients in the regression equation, calculated from Satterthwaite's t-tests (Figure 1\u2014figure supplement 3B). There were 1265 proteins significantly associated with age (p<0.05, with BH correction\u00a0<0.1, 917 proteins), suggesting that approximately 29% of the skeletal muscle proteome changed with aging after 20 years of age (Figure 1\u2014source data 3). Of these, 29% (361) were significantly underrepresented and 71% (904) were overrepresented with older age. The age-associated analysis across the experimental dataset and across multiple comparisons was highly robust (Figure 1\u2014figure supplement 3C).\n\nNotably, the proteins most strongly associated with older age (Figure 1A, right) were LSM14 homolog A (LSm14A, \u03b2\u00a0=\u00a00.023, p=0.0109), tissue metalloproteinase inhibitor 3 (TIMP-3, \u03b2\u00a0=\u00a00.0219, p=0.00026) and serum amyloid P-component (APCS, \u03b2\u00a0=\u00a00.0164, p=1.26E-11). Protein LSm14A is implicated in processing the assembly of processing bodies, involved in mRNA turnover, and can also bind to viral nucleic acids and initiate IFN-\u03b2 production, contributing to innate immunity (Li et al., 2012). TIMP3 regulates the adipogenic differentiation of fibro/adipogenic progenitors (FAPs) in skeletal muscle, and its overrepresentation may explain the tendency for fat infiltration in aging muscle (Kopinke et al., 2017). Consistent with this hypothesis, Perilipin 1 (PLIN1, \u03b2\u00a0=\u00a00.014, p=0.0003), a lipid droplet-coating protein, and adipogenesis regulatory factor (ADIRF, \u03b2\u00a0=\u00a00.01173, p=1.78E-05), a protein that is only expressed in adipose tissue, were among the most overrepresented proteins in old muscle. APCS is indicative of systemic amyloid, and its overrepresentation in aging muscle has never been previously described.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig1-v1.jpg)\n\n**Figure 1.:** (A) Effect of age on protein expression levels.\u00a0The x-axis represents the size and sign of the beta coefficient of the specific protein regressed to age (adjusted for covariates) and the y-axis represents the relative -log10 p-value. Each dot is a protein and all significant proteins are indicated in blue and red (age-associated 1265 proteins, p<0.05). (B) The heatmap of the 1265 significantly age-associated proteins reveals changing expression profiles across aging. (C) PLS analysis of age-associated proteins were classified into three age groups: 20\u201349 (young), 50\u201364 years (middle age), and 65+ (old) years old. (D) Percent distribution of categories of all quantified proteins, percent distribution of the same categories among proteins that were significantly downregulated and upregulated with aging. Proteins which are not considered directly related to mechanisms of aging are annotated as others and their subclassification is shown in the bar plot. (E\u2013F) Log2 protein abundance of contractile, architectural and NMJ proteins. Simple linear regression was shown for age (x-axis) and protein (y-axis) correlation, confounders were not adjusted, and raw p-values were shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Study design, TMT assessment, and bioinformatics platform for protein quantification and age-associated protein analysis. (B) Correlation among all TMTs after using COMBAT experimental bias correction. Note that the R-values are all\u00a0>0.99. (C) Principal Component Analysis (PCA) of 12 TMT batches, each circle indicating a sample from a TMT batch, five samples in each batch, overall 58 samples represented, and no substantial batch effect detectable. (D) Total number of proteins quantified from 12 TMT experiments from 58 donors, according to age group. 4036 proteins were detected in at least three samples in all age groups and were used for further statistical analysis. (E) Partial Least Square (PLS) analysis revealed variance in the component1, 2, and three for all donors. All 4036 proteins were used for PLS analysis, where each circle is a donor and the age groups are color-coded.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0Normalized relative protein expression from all participants. Bar plot of log2 normalized protein relative expression abundance from all 58 participants. Each circle is a protein. Median levels for all proteins (5891) from all samples are plotted, 25th and 75th percentiles are represented with first and third quartiles. Age groups are color-coded. This analysis was followed by a median polish and median sweep normalization by subtracting the spectrum median log2 intensity from the observed log2 spectrum intensities. (B) Spectral Count Correlation Across 12 TMT Experiments. The heatmap figure shows the protein correlation across all 12 TMT experiments. Since we have 12 TMT batches across all samples, we looked at the data robustness across all 12 TMTs. The proteins identified in each TMT are ranked based on spectral abundance, and the ranks between TMTs are correlated. Correlation coefficients between 12 TMT experiments are from 0.99 to 0.85, demonstrating that the relative abundance of proteins is robustly replicated across TMT sets. (C) Skeletal Muscle Proteins Detected According to Abundance and Mass. The abundance of proteins quantified, the x-axis is the mass distribution of the protein and the y\u2014 axis is the average spectral abundance of the proteins. Proteins are color-coded to visualize enrichments of muscle protein.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A1-A5)\u00a0Protein biomarkers of slow-twitch and fast-twitch fiber types and estimated muscle fiber ratios. Log2-normalized fiber expression intensity from all the 58 donors are shown for fast fiber-twitch type proteins MYH4, MYH1, MYH2 and slow-twitch fiber type protein MYH7 (A1\u2013A4). The estimated ratios of slow-twitch fiber to fast-twitch fiber (A5) suggest that slow-twitch fiber type expression increases with age. (B) Statistical ignificance of the proteins and robustness of age-association. p-Value distribution for quantified proteins and their association with age. The p-values are calculated from t-tests use Satterthwaite's approximations of the F-statistics using lmerTest. To account for multiple comparisons, we performed a Benjamini-Hochberg (BH) correction, and we still found 917 proteins that have a BH corrected p-value<0.1 .\u00a0(C) Robustness of the estimated beta coefficients for age for quantified proteins across all 12 TMT experiments. To assess the robustness in the identification of the 1265 age-associated proteins across all 12 TMT experiments, we estimated the effect of age (beta coefficient) on single proteins in regression analyses run in two separate sets of 6 TMT sets selected at random from the 12 available and estimated the average correlation coefficient between proteins quantified in the two sets. Then, we repeated this analysis 100 times and plotted the distribution of correlation coefficients. The results of the linear mixed models appear to be robust against TMT variability. (D) Clusters of proteins dysregulated with aging- NMJ related Proteins. Neuromuscular protein abundance with age. Agrin and Acetylcholineesterase proteins are not significantly associated with age.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A)\u00a0Dysregulation of proteins involved in genomic maintenance. A large number of proteins involved in genetic maintenance are overrepresented at older ages.\u00a0(B) Prelamin. Protein levels increase significantly with age. (C) Sirtuin 2. Raw protein abundance of SIRT2 is plotted according to age and shows no age association. However, adjusting for confounders the negative association with age becomes statistically significant (p=0.032). (D) Dysregulation of proteins involved in cellular senescence. Age-associated proteins of cellular senescence. Log2 raw protein abundance and age correlation is shown from simple linear regression method. Unadjusted p-values are represented with r2.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A)\u00a0Depletion of ribosomal proteins with age. Age-associated ribosome proteins and interacting partners. Different categories of ribosome proteins are color-coded. (B) Protein-protein interaction of age-associated ribosome proteins from co-expression. The protein-protein interaction enrichment score p-value<1.0e-16. Color node shows query proteins and black edge represent co-expressed protein association. The top left cluster NOP58 is required for the biogenesis of the 60S ribosomal subunit and the biogenesis of box C/D snoRNAs such as U3, U8 and U14 snoRNA. (C) Log2 raw protein abundance of NOP58, a nucleolar protein important for ribosomal biogenesis, according to age. Unadjusted p-value is shown with r2.\n\nThe most underrepresented proteins (age \u03b2\u00a0<\u22120.01 and p<0.05) with old age (Figure 1A, left) were HLA class II histocompatibility antigen (HLA-DRB1, p=0.024), dedicator of cytokinesis protein 4 (DOCK4, p=0.025), myosin-binding protein H (MYBPH, p=0.0005), and microfibril-associated glycoprotein 4 (MFAP4, p=0.000002). Although HLA-DRB1 is the most altered protein, it is present only in 53% of the donors. MYBPH maintains the structural integrity of the muscle and its decreased expression has been associated with muscle weakness in age-related disorders (Hundley et al., 2006).\n\nTo explore differences of protein expression profiles across the lifespan, we generated a heatmap of the 1265 age-associated proteins and looked for clusters of proteins showing parallel changes with age (Figure 1B). Hierarchical clustering of protein expression suggested that the strongest difference was between young (20-34) and old (80+). There were small differences before the age of 50, but afterwards there was on average three log fold protein expression differences, and even more substantial differences after the age of 64. The separation of protein expression among three age groups (20\u201349, 50\u201364, and 65+) was confirmed by PLS analysis (Figure 1C). These findings are consistent with changes in energy metabolism observed in rhesus monkeys and attributed to changes in PGC-1\u03b1-driven mitochondrial biogenesis, and with data showing that the age-associated decline of muscle strength is already detectable during the fourth decade of life and substantially accelerates after the age of 70 (Dodds et al., 2014; Pugh et al., 2013).\n\nNext, we grouped all quantified proteins according to the main biological mechanisms of aging (Figure 1D.1). Because the tissue examined was skeletal muscle, we also included a category for all contractile and architectural muscle proteins (named hereafter \u2018muscle proteins\u2019). Though the highest abundance proteins detected correspond to muscle proteins, the largest category were mitochondria proteins (15%). Each of the other categories represented\u00a0<9% of total proteins. Protein classes that differed between those underrepresented and overrepresented with older age are summarized (Figure 1D.2 and 1D.3) and are described in detail in subsequent sections. Specifically, proteins implicated in muscle contraction, muscle architecture, mitochondria metabolism, as well as ribosome function decreased with older age. By contrast, proteins related to genomic maintenance, transcriptional regulators, splicing, neuromuscular junction, proteostasis, senescence and immune function increased with age. Other smaller subcategories of proteins were also differentially abundant in older muscle (Figure 1D.3).\n\n### Contractile, architectural and neuromuscular junction proteins (NMJ)\n\nSince many proteins decreasing with age were contractile proteins, we classified these further by function. The top 95 proteins in this class are involved in the architectural and functional stabilization of the sarcomere, including sarcospan (SSPN, \u03b2\u00a0=\u00a00.002, p=0.016) (Figure 1E), a dystrophin-associated protein complex important for muscle regeneration, actin-binding LIM domain and actin-binding protein 1 (LIMA1, \u03b2\u00a0=\u00a00.003, p=0.009), a cytoskeleton-binding protein that stabilizes actin filaments, and plectin (PLEC, \u03b2\u00a0=\u00a00.0007, p=0.036), a large cytoskeleton protein that preserves interactions within the acto-myosin complex. Increases in delta sarcoglycan (SGCD, \u03b2\u00a0=\u00a00.0019, p=0.00004), and gamma sarcoglycan (SGCG, \u03b2\u00a0=\u00a00.0016, p=0.0062) were consistent with mouse studies showing that dystrophin, sarcoglycan subcomplex \u03b3- and \u03b4-sarcoglycan were overexpressed with aging, perhaps a compensatory mechanism to avoid damage in the sarcomere during contraction or as biomarkers of continuous repair (Hughes et al., 2015). Interestingly, MAPT (tau, mostly expressed in neurons and involved in the assembly and stabilization of microtubules), was also significantly underrepresented in older muscle (Figure 1E). A crucial component of muscle function is the neuromuscular junction (NMJ), and since the abundance of all NMJ-related proteins increased with age we examined the agrin signaling pathway of NMJ. Agrin (AGRN) and acetylcholine esterase (ACHE) increased with age but not significantly (Figure 1\u2014figure supplement 3D). By contrast, the levels of Syne-1 which anchors both synaptic and non-synaptic myonuclei for proper neuron innervation and respiration increased with age (SYNE1 \u03b2\u00a0=\u00a00.002, p=0.005) as did beta-2-syntrophin, which is believed to be involved in acetylcholine receptor clustering (SNTB2, \u03b2\u00a0=\u00a00.0029, p=0.0003).\n\n### Decline of mitochondrial proteins with age\n\nBecause of the striking difference in abundance of mitochondrial and energy metabolism proteins with age, we studied these proteins by protein annotations using Uniprot keywords, GO ontology terms and extensive manual curation based on the most recent literature. The coverage of mitochondrial proteins quantified by our analysis compared to those described in the literature ranged from 92% for TCA proteins to 52% for proteins located in outer mitochondrial membrane [possibly due to incomplete tissue disruption (Morgenstern et al., 2017; Zhao et al., 2014)] (Figure 2A). The coverage of the bioenergetics and mitochondrial proteome in our dataset is similar to that reported by other authors (Murgia et al., 2017; Morgenstern et al., 2017). Of the mitochondrial proteins identified, the abundance of 25% of them (173 proteins) changed with age, mostly (70%) declining with age. Notably, however, outer membrane proteins were more abundant (Figure 2B); for example, NADH-cytochrome b5 reductase 3 (CYB5R3), an NADH\u2010dehydrogenase located in the outer membrane of ER and mitochondria, whose overexpression is known to mimic many effects of caloric restriction, was significantly overrepresented in older age (Figure 2\u2014figure supplement 1A) (Martin-Montalvo et al., 2016; Diaz-Ruiz et al., 2018). The permanence of mitochondrial protein debris in aging muscle has been previously reported - attributed to defective autophagy, and through to cause activation of the inflammasome and a proinflammatory state (Ferrucci and Fabbri, 2018).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig2-v1.jpg)\n\n**Figure 2.:** (A) Percent coverage within categories of skeletal muscle proteins compared to the Uniprot database.\u00a0The top section shows various energetics categories, while the z axis indicates the number of proteins identified for each protein category and in parenthesis the number of proteins reported in Uniprot for the same category. (B) Subcellular location of age-associated mitochondrial proteins based on up- or downregulation. Of note, most of the mitochondrial proteins are downregulated. (C) Age-dependent decline of respiratory and electron transport chain proteins. All mitochondrial proteins in the respiratory and electron transport chain that are significantly associated with age are downregulated (p<0.05) except SDHAF2. The inset panel reports data on the proteins that are significantly upregulated with aging, SDHAF2 (mitochondrial) and the membrane protein CD73.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Age-associated protein abundance of CYB5R3 protein. The abundance of this protein is significantly higher at older age; age groups are color-coded. (B) Respiratory Chain Complex I-V and Aging. Electron Transport Chain Protein Quantification. Proteins quantified from Complex I, Complex II, Complex III, Complex IV, Complex V and Assembly complex proteins are represented. Age-associated proteins are marked by a red asterisk (*). Log2 fold ratios of the gene are on x axis; arrows pointing to left shows underrepresented proteins and arrows pointing to the right are overrepresented proteins. (C) Dysregulation of Bioenergetic Pathway. Proteins quantified from glycolysis and TCA cycle are shown. (Left) Of the 26 glycolysis proteins quantified, six are significantly underrepresented with age. (Right) Of the TCA cycle gene products shown, four are significantly decreased with aging. A red asterisk indicates genes significantly changed with age (p<0.05).\n\nOf the enzymatic mitochondrial proteins, 99 were respiratory chain proteins (Complex I-V and assembly complex proteins), and most of them declined with aging (28 proteins p<0.05; Figure 2C). Surprisingly, succinate dehydrogenase complex assembly factor 2 (SDHAF2), required for covalent FAD insertion into complex II, the electron transport chain, and the TCA cycle, were significantly overrepresented with older age (Figure 2C inset). The reason for this exception is unclear and if replicated in other analysis requires further work.\n\nWe then analyzed proteins from complex I to V and found that 16 proteins were significantly lower at older age (Figure 2C, Figure 2\u2014figure supplement 1B). Among 41 proteins involved in energy production, most were underrepresented at older ages. Of 22 proteins quantified for TCA cycle, only malate dehydrogenase (MDH1), isocitrate dehydrogenase (IDH1), fumarate hydratase (FH) and succinate--CoA ligase (SUCLG1) (Figure 2\u2014figure supplement 1C) were significantly lower at older ages. The decreasing levels of IDH-1 with age is unsurprising, as previous studies have shown a decrease in abundance of IDH-1 in older C.\u00a0elegans (Copes et al., 2015). IDH1 converts isocitrate to \u03b1-ketoglutarate by reducing NADP+ to NADPH in the process. In addition, to IDH1, NADP+ is also reduced to NADPH via the mitochondrial NAD(P)-malic enzyme (ME2) (Sauer et al., 2004) and predominantly through NNT (NAD(P) transhydrogenase) and the pentose phosphate pathway. In our study, NNT (\u03b2\u00a0=\u00a0\u22120.003, p=0.001) significantly decreased with aging. Interestingly, the decrease in expression levels of both NNT and IDH1 with age, suggests a decreased capacity of the mitochondria to maintain proton gradients and results in oxidative damage. Further, NADK (NAD+ Kinase), which is highly regulated by the redox state of the cell and regulates NADP+ synthesis in vivo decreased with age (NADK2, \u03b2\u00a0=\u00a0\u22120.001, p=0.052). The changes in the NADP+/NADPH levels influence cellular metabolism, calcium signaling and anti-inflammatory processes and regeneration of glutathione (Sheeran et al., 2010).\n\nNAD+ declines with age in several tissues and its metabolism has been implicated in the aging process and age-related pathologies including loss of skeletal muscle mass (Fang et al., 2016; Goody and Henry, 2018). NAD+ is synthesized in vivo predominantly via the salvage pathway and the de novo and Preiss-Handler pathways (Verdin, 2015; Bogan and Brenner, 2008). We specifically examined age differences in abundance of proteins from these pathways. We found that NAM-N-methyl transferase (NNMT, \u03b2\u00a0=\u00a00.007, p=0.016), nicotinamide ribose kinases (NMRK1, \u03b2\u00a0=\u00a0\u22120.003, p=0.002), poly-ADP-ribose polymerases (PARP1, \u03b2\u00a0=\u00a00.002, p=0.003) and CD73 (NT5E, \u03b2\u00a0=\u00a00.004, p=0.056) were significantly increased with at older ages, while only NMRK1 decreased with age (Figure 2D). NAMPT, which converts NAM to NMN, was not significantly different with age while NMRK1, which converts NR to NMN, was significantly lower in the muscle of older participants. These findings may explain the mechanism by which NMN tends to be lower in tissue from older compared to younger persons. Two additional mechanisms may exacerbate the decline in NMN and NAD+ with aging, namely the increased expression levels of CD73 that converts NMN to NR and the increase in expression levels of PARP1, which converts NAD+ into NAM and ADP-ribose.\n\nThe findings described above are consistent with those reported in model organisms, including non-human primates, suggesting that changes in muscle with aging are characterized by profound changes in energy metabolism and, in particular, oxidative phosphorylation, because of either defects in mitochondrial biogenesis or impaired autophagy flux that hampers the recycling of dysfunctional mitochondria (Pugh et al., 2013; Azzu and Valencak, 2017). Changes in energy metabolism occur in parallel to changes in body composition, although it is still unclear what changes occur first (Speakman and Westerterp, 2010). In addition, changes similar to those mentioned above for mitochondria and intramuscular lipid metabolism were previously found in muscle from frail mice, suggesting that the pathogenesis of frailty in mice and humans may be interpreted as \u2018accelerated aging\u2019 (Huang et al., 2019). Also, we and others have previously demonstrated that changes in skeletal muscle proteins that occur with aging, including those identified in this study, are partially reversed by physical activity (Ubaida-Mohien et al., 2019; Hood et al., 2019). The partial overlap between the effects of aging and exercise suggests that despite opposite physiologic effects, aging and exercise affect skeletal muscle tissue though different root mechanisms (Hood et al., 2019). This conclusion is\u00a0consistent with the finding reported by\u00a0Phillips et al. (2013), after analyzing gene expression patterns in humans.\n\n### Changes of proteins involved in genomic maintenance and cellular senescence\n\nMost genomic maintenance proteins increased in abundance with age, especially those involved in DNA damage recognition and repair, such as double-strand break repair protein (MRE11), X-ray repair cross-complementing protein 5 (XRCC5), and structural maintenance of chromosomes protein 1A (SMC1A) (Figure 1\u2014figure supplement 4A). Prelamin-A/C (LMNA), Lamin-B1 (LMNB1) and Lamin-B2 (LMNB2), members of the LMN family of protein components of nuclear lamina that help maintain nuclear and genome architecture, were all overrepresented with older age (Figure 1\u2014figure supplement 4B). Sirtuin 2 (SIRT2, \u03b2\u00a0=\u00a0\u22120.0013, p=0.032), implicated in genomic stability, metabolism and aging, was also found to be lower in older skeletal muscle (Figure 1\u2014figure supplement 4C). The increased abundance of genomic maintenance proteins may represent an attempt to compensate for the accumulation of somatic mutations in myocytes, and especially in satellite cells, as previously demonstrated in humans (Franco et al., 2018).\n\nForty proteins that in the literature have been implicated in cellular senescence were significantly overrepresented with age. These included extracellular superoxide dismutase (SOD3, \u03b2\u00a0=\u00a00.005, p=0.000009) and Transgelin-2 (TAGLN2, \u03b2\u00a0=\u00a00.005, p=0.0002), a potential oncogenic factor and senescence-associated protein. Proteins that decreased with age were GOT1, MAP2K3 (\u03b2\u00a0=\u00a0\u22120.003 and \u22120.0021, respectively), and casein kinase II subunit alpha (CSNK2A1, \u03b2\u00a0=\u00a0\u22120.0016, p=0.014). Interestingly, in addition to regulating\u00a0the cell cycle, CSNK2A1 plays a central role in many other biological mechanisms, including apoptosis, which is suppressed in senescent cells (Figure 1\u2014figure supplement 4D). These observations suggest that senescent cells from different possible origins (e.g. myocytes, adipocytes or fibroblasts) may accumulate in old muscle. However, since previous studies were unable to detect direct biomarkers of senescence in human skeletal muscle, we cannot exclude the possibility that proteins related to senescence overrepresented in this study were expressed in intramuscular fat or other non-muscular cells (Justice et al., 2018).\n\n### Transcription and splicing\n\nOf all the 69 age-associated transcription-regulatory proteins quantified, 61 were overrepresented and only eight were underrepresented with older age. This last subset included kelch-like protein 31 (KLHL31, \u03b2\u00a0=\u00a0\u22120.0017, p=0.003), which is essential for muscle development and perhaps also muscle repair (Abou-Elhamd et al., 2009). This protein is expressed before MYOD in developing skeletal muscle and contributes to myogenic commitment, probably by acting as a transcriptional regulator in the MAPK/JNK signaling pathway. Deficiency in KLHl31 causes congenital myopathy in mice (Papizan et al., 2017). Of note, the levels of myocyte-specific enhancer factor 2D (MEF2D, \u03b2\u00a0=\u00a00.003, p=0.018), essential for myogenesis and muscle regeneration and the primary regulator of KLHL31 production, increased, possibly as a compensatory mechanism (Schiaffino et al., 2018). Contrary to earlier reports, CTCF (\u03b2\u00a0=\u00a00.009, p=0.026), a transcriptional activator and repressor protein that fine-tunes chromatin architecture, also increased with age (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig3-v1.jpg)\n\n**Figure 3.:** (A) Log2 protein abundance of age-associated transcriptional regulation proteins.\u00a0Simple linear regression was shown for age (x axis) and protein (y axis) correlation, unadjusted p-values were shown. (B) Spliceosome major complex pathway protein expression abundance and dsysregulation. KEGG major spliceosome complex pathway representation and spliceosome complex proteins quantified (associated with splicing RNAs U1, U2, U4/U6, and U5) as plotted in the side square boxes. (C) The log2 abundance expression of 57 spliceosome complex proteins associated with age (p<0.05) are depicted as magenta circles, while all other quantified proteins are black circles. All snRNPs and spliceosome regulatory proteins are upregulated with age. (D) The average of all age-associated spliceosome proteins within each age group reveals an upregulation of spliceosome proteins with age. (E) Effect of age (one-year difference) on the 57 proteins of the spliceosome major complex and color coded based on spliceosome domains. Inset (left) is a legend for the complex domains and inset (right) shows that PRPF8 protein is robustly overrepresented with age.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Spliceosome protein abundance and expression variation across ages. A total of 99 spliceosomal proteins are detected across all five age groups. The abundance of each protein is represented as a heatmap; each column represents a study participant and each row indicates a specific protein. The x-axis scatter plot across the top is the average of spliceosomal protein abundance for each donor, revealing an increase in spliceosome abundance with age. The y-axis scatterplot on the right is the average log2 protein abundance from all donors for each protein, showing that most of the spliceosome proteins are highly abundant. (B) Spliceosomal protein categories and age association.\n\nA major unexpected finding of our analysis was the strong increase in the main spliceosome complex proteins with aging (Figure 3\u2014figure supplement 1A). The spliceosome comprises five small nuclear RNAs (snRNAs), U1, U2, U4, U5, and U6, that form functional complexes with proteins to regulate alternative splicing, a process by which different exons of one pre-mRNA are variably combined to generate different proteins (Papasaikas and Valc\u00e1rcel, 2016). We found differential expression of many proteins widely distributed across the five spliceosome complexes and other spliceosome-associated protein factors essential for mRNA maturation and gene expression (Figure 3B). In particular, of the\u00a0~300 proteins and spliceosome-associated factors described (Zhou et al., 2002; Rappsilber et al., 2002), we found that 99 and 57 of them, respectively, were overrepresented in older muscle (Figure 3C). Overall, spliceosomal proteins increased by\u00a0~15% between the ages of 20 and 87 years (Figure 3D). Spliceosome components are actively rearranged during assembly, catalysis, disassembly and recycling, each step involving recruitment and recycling of several proteins (Wahl et al., 2009).\n\nTo understand whether aging affects preferentially one of these biological steps, we categorized the spliceosomal complexes and snRNPs into E complex, A complex, and B complex (assembly complex, 37 proteins), Bact complex and C complex (catalysis complex, seven proteins) and snRNPs (recycling, SART1 protein) (Figure 3E), but we found no evidence of proteins from a specific complex being more overrepresented with aging than proteins from other complexes (Figure 3\u2014figure supplement 1B). LSm RNA-binding protein (LSM14A) was the most overrepresented assembly protein, displaying a 20-fold increase with age. The overrepresentation of spliceosomal proteins, such as the pre-mRNA-processing-splicing factor 8 (PRPF8) (Figure 3E, inset), the key catalytic core and the largest and most conserved protein in the spliceosome, suggests that pre-RNA processing may be upregulated in older skeletal muscle.\n\nSystematic changes in the splicing machinery with older age was previously suggested by epidemiological studies (Holly et al., 2013), transcriptomic analyses\u00a0of\u00a0skeletal muscle biopsies (Giresi et al., 2005; Welle et al., 2003), and human peripheral blood leukocytes (Harries et al., 2011) of young and old individuals. In these studies, processing of mRNAs was the feature that best discriminated between younger and older persons, suggesting that modulation of alternative splicing is one of the signatures of aging (Latorre and Harries, 2017). Although the mechanisms and consequences of the rise in splicing factors with aging are unknown, they may indicate either a dysregulation of the splicing apparatus or a shift toward increased splicing and/or altered splice isoform diversity with aging (Welle et al., 2003). Consistent with this view, a defect in alternative splicing is implicated in some fundamental mechanisms of aging, such as cellular senescence (Latorre and Harries, 2017; Desch\u00eanes and Chabot, 2017), as well as in many chronic, age-related conditions, such as Alzheimer Disease and cancer-related cachexia (Raj et al., 2018; Narasimhan et al., 2018).\n\n### Age-associated alternative splicing and splicing events\n\nThe marked rise in overrepresentation of splicing machinery proteins with aging prompted questions about its functional consequences. Emerging literature suggest that change in expression of splicing factors is a major determinant for selection of specific splicing variants and changes in splicing variants contributes to some aging phenotypes, including age-related diseases (Desch\u00eanes and Chabot, 2017; Mazin et al., 2013). We analyzed potential differences in mRNA splicing with age (see Materials\u00a0and\u00a0methods) using RNA-seq data that were available for most of the same specimens used for the proteomic study (n\u00a0=\u00a053). Specifically, we studied a set of variations of the exon-intron structure, known as transcriptional events, namely Alternative First exon (AF), Skipped Exon (SE), Alternative Last exon (AL), Alternative 3\u2019 splice-site (A3), Alternative 5\u2019 splice-site (A5), Retained Intron (RI) and Mutually Exclusive Exons (MX) (Alamancos et al., 2015). Donor-specific splicing index (PSI, which measures each isoform as a % of total isoforms) was calculated for each AS event in each sample and a linear mixed regression model was used to identify age-associated PSIs for each splicing event. Analysis of 144,830 transcripts from RNA-seq datasets showed that around 3.7% of the skeletal muscle transcripts (5459 transcripts, corresponding to 6255 events) showed relative abundance changes with aging (Figure 4A; Figure 4\u2014source data 1). Next, we calculated the frequency and distribution of splicing events with aging as well as the directionality of such changes and found that 2714 events were significantly less frequent at older ages and 3545 events significantly more frequent at older ages (Figure 4B; Figure 4\u2014source data 2). The overall number of events increased slightly with older age but AS events, at least for the 6,255 AS events quantified, increased significantly with age (r2\u00a0=\u00a00.33, p=6.001e-06) (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig4-v1.jpg)\n\n**Figure 4.:** (A) The number of participants with detected splicing variants is substantial, with\u00a0>20% of the participants showing\u00a0<5% splicing variants for the detected gene.\u00a0Overall, 3.7% of all identified skeletal muscle transcripts (3791 genes) show evidence of differential alternative splicing with aging. (B) Comparison of skeletal muscle age-associated splicing events (positive and negative). Negative events are downregulated with age and positive events are upregulated with age. The category of event is plotted on the x-axis, and the y-axis shows the number of splicing events for each category. (C) Average Percent Spliced-in (PSI) from 6255 events for each donor is depicted as a red circle. Average PSI across 53 donors ranging in age from 20 to 84 suggests an increase in alternative splicing with aging. (D) Comparison between skeletal muscle splicing events detected in GESTALT (solid bars) and splicing events reported in the Ensemble transcript splice events (shaded bars). (E) Comparison of age-associated proteins and age-associated alternatively splicing genes suggesting 30% (385) of the age-associated proteins undergo alternative splicing. Analysis of PANTHER database shows classes of enriched genes from different protein categories, and the number of genes representing each class is shown with #.\n\nWe then investigated whether any specific class of skeletal muscle AS events was enriched in our age-association analysis compared to the list of splicing events described for human skeletal muscle in the Ensembl human transcriptome (Figure 4D). The rates of observed skeletal muscle events are very similar to those reported in the Ensembl transcriptome (Figure 4D) except for ME, A3, SE and AF. The largest difference was in the skipped exon (SE) class of events, where a higher percentage of transcripts were exon-skipped compared to Ensembl events, with 27% of all the skeletal muscle AS events of the exon skipping type. A previous study reported 35% of the erythroid genes show evidence of AF exons, indicating that alternative promoters and AF are widespread in the human genome and play a major role in regulating expression of select isoforms in a tissue-specific manner (Tan et al., 2006). This finding is in line with our result of 36% AF in our skeletal muscle data.\n\nWe next examined whether AS events occurred in proteins connected with pathways that are known to be dysregulated with aging; interestingly, among the top fold enriched (FE) gene ontology (GO) biological processes associated with age, splicing changes were more frequent on those that negatively regulated I\u03baB kinase/NF-\u03baB signaling (FE\u00a0=\u00a02.86, p=3.18E-04), and those that regulated mitophagy (autophagy of mitochondria; FE\u00a0=\u00a03.71, p=2.23E-04) and fatty acid beta oxidation (FE\u00a0=\u00a03.21, p=1.72E-04). The GO biological process with positive age-associated splicing events were mitochondrial morphogenesis (FE\u00a0=\u00a05.15, p=8.98E-03), response to mitochondrial depolarization (FE\u00a0=\u00a04.93, p=2.46E-04), and endoplasmic reticulum calcium ion homeostasis (FE\u00a0=\u00a04.48, p=2.31E-04). These data suggest that the upregulation of alternative splicing in skeletal muscle with aging may react to change that occur with aging either by rising an inflammatory response or by activating damage-response mechanisms at a time when energy becomes scarce.\n\nAmong the 5459 transcripts (from 3791 genes) that were alternatively spliced with age, 4967 transcripts were protein-coding. We compared these genes with the age-associated proteins and found that 8.9% of the age-associated alternatively spliced transcripts (385) were reflected in protein changes (Figure 4E). This comparison of age-associated proteins and alternatively splicing mRNAs suggests that 30% (385) of the age-associated proteins undergo alternative splicing. Among this group, 64 proteins are involved in cellular organization or biogenesis (GO:007180), and proteins like tubulin (TUBB2B, TUBB), profilin 2 (PFN2) and actin-related protein 2/3 complex subunit 4 (ARPC4) are involved in the cytoskeletal regulation by Rho GTPase pathway. A further PANTHER database classification of these proteins shows an enrichment in categories like RNA/DNA binding, cytoskeletal, translational and ribosomal proteins (Figure 4E protein categories). Overall, these findings suggest that a large percentage of proteins that change with aging in muscle also undergo splicing variations, and this is especially true for mitochondrial proteins, perhaps as a resilient response to the energetic deficit that develops with aging. This hypothesis is consistent with several lines of research suggesting that mechanisms of alternative splicing are enhanced in tissues that are highly energetically demanding, such as muscle and brain (Pan et al., 2008). Also, higher physical activity has been associated with downregulation of proteins from the splicing machinery (Ubaida-Mohien et al., 2019).\n\n### Depletion of ribosomal proteins with age\n\nSimilarly, to previous studies, we found that a large number of ribosomal proteins were differentially expressed with older age (Figure 1, Figure 1\u2014figure supplement 5A) (Steffen and Dillin, 2016; Kirby et al., 2015). In particular, all the 60S and 40S ribosomal proteins were globally reduced in older muscle; exceptions included 60S ribosomal proteins RPL12 and RPL3 (RPL12, \u03b2\u00a0=\u00a00.0008, p=0.024, RPL3, \u03b2\u00a0=\u00a00.003, p=0.016), as well as H/ACA ribonucleoprotein complex subunit 4 (DKC1, \u03b2\u00a0=\u00a00.002, p=0.034) and nucleolar protein 58 (NOP58, \u03b2\u00a0=\u00a00.003, p=0.00007), which were overrepresented in old muscle. RPL12, RPL3, and DKC1 play a role in viral mRNA translation, while NOP58 is important for ribosomal biogenesis (Figure 1\u2014figure supplement 5A-C). Changes in ribosome proteins may signal lower ribosomal biogenesis with aging in skeletal muscle, with ensuing decline in protein synthesis with aging (Turi et al., 2019). Over time, this defect may lead to slow turnover and progressive damage accumulation in contractile proteins.\n\n### Differential regulation of proteins related to proteostasis in aging\n\nCells rely on a complex proteostatic machinery to handle protein quality control, assembly, folding and elimination. These activities are essential for the recycling of damaged proteins or entire organelles and provide critical protection against damage during conditions of metabolic or oxidative stress. Extensive literature supports the decline of proteostasis with aging in animal models and in humans (Kaushik and Cuervo, 2015; Charmpilas et al., 2017). Of the 239 detected proteins that has been related to proteostasis in the literature, 31% were altered with age (p<0.05, 24 underrepresented and 50 overrepresented with older age) (Figure 5A). Most proteins underrepresented with age were chaperones, including DnaJ homolog subfamily A (DNAJA1), also named heat shock protein (Hsp) 40 (\u03b2\u00a0=\u00a0\u22120.0021, p=0.003), Hsp27 (\u03b2\u00a0=\u00a0\u22120.004, p=0.0001), Hsp70 protein 8 (HSPA8, \u03b2\u00a0=\u00a0\u22120.002, p=2.34E-07) (Figure 5\u2014figure supplement 1) as well as Hsp27 protein 1 (HSPB1) and protein 7 (HSPB7), Hsp10 protein 1 (HSPE1) and Hsp60 protein 1 (HSPD1). Excluding HSPD1, the decline of these proteins with aging was previously described (Charmpilas et al., 2017; Senf, 2013; Matsumoto et al., 2015). Other differentially expressed proteostasis-related proteins, including PDIA6, NPM1, ANP32E, and DNAJC2, are also regulatory chaperones (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig5-v1.jpg)\n\n**Figure 5.:** (A) Log2 protein abundance of all 74 age-associated proteostasis proteins across all 58 donors.\u00a0Rows represent proteostasis proteins and columns represents donors. The average expression of all age-associated proteostasis proteins from each donor is plotted at the top and bottom (gray circles) with loess curves. The top section shows downregulated clusters of proteins (average of 24 proteins) and the bottom shows upregulated clusters of proteins (average of 54 proteins). The protein rows are ordered based on hierarchical clustering and displayed by dendrograms. (B) Confounders-adjusted \u03b2 age coefficient of age-associated proteins, showing age-differentially regulated proteostasis proteins, over representation of proteostasis category proteins and the log2 magnitude of protein change with each year of age. (C) The increase of autophagy protein sub category with age is shown. Except HSPA8 and EIF4G1 all other autophagy proteins are positively correlated with age. Each bar plot shows each autophagy protein sub category and the average change over a year of age. The gene/proteins names are organized from lowest to highest log2 expression change per year of age. (D) Raw log2 abundance of autophagy proteins TDP and CALR were shown, simple linear regression method was used for age (x axis) and protein (y axis) correlation, of note unadjusted p-values were shown.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig5-figsupp1-v1.jpg)\n\nThe loss of chaperone function during aging may be compensated by an increase in autophagic activity (Figure 5C), as misfolded proteins must be removed and degraded through an alternative mechanism. Indeed, most proteostasis proteins overrepresented with aging were related to autophagy except HSPA8 and Eukaryotic translation initiation factor 4 gamma 1 (EIF4G1). For example, TDP-43, a DNA/RNA-binding protein that tends to form aggregates in tissues such as skeletal muscle and brain and is both removed by autophagy and involved in autophagy maintenance, increased significantly with aging (TARDBP, \u03b2\u00a0=\u00a00.002, p=0.0002) (Figure 5D). On the contrary, calreticulin (CALR), a quality control chaperone induced under ER stress that stimulated autophagy, was significantly higher in muscle of older participants (\u03b2\u00a0=\u00a00.001, p=0.022) (Figure 5D) (Yang et al., 2019). Of note, calreticulin is used by macrophages to tag cells to be removed by programmed cell phagocytosis (Krysko et al., 2018). Consistent with this finding, CALR is considered a main biomarker of age-related diseases and frailty (Cardoso et al., 2018). Overall, our findings are consistent with the ample evidence in the literature that aging is associated with a decline in chaperone-mediated autophagy, and that proteostatic mechanisms are important for aging and longevity (Cuervo and Wong, 2014; Sands et al., 2017). However, we also found in older muscle a general increase in proteins implicated in macroautophagy, possibly representing a compensatory mechanism.\n\n### Pro-inflammatory and anti-inflammatory immune proteins of aging muscle\n\nOf the 32 immune-related age-associated proteins that were quantified (Figure 6A), three broad themes emerged from the aging muscle immune proteome (Figure 6B\u2013D). First, many proteins previously linked to macrophage function (such as CD14, LGALS3, CAPG, INPPL1 and MAST2) were dysregulated in aging muscle, with skewing towards a pro-inflammatory phenotype. For example, the overrepresentation with aging of proteins such as Monocyte differentiation antigen CD14 (CD14, \u03b2\u00a0=\u00a00.003, p=0.009), Interferon-induced, double-stranded RNA-activated protein kinase (E2AK2, \u03b2\u00a0=\u00a00.0008 p=0.046) and ASC (PYCARD) (\u03b2\u00a0=\u00a00.006, p=0.025) can be viewed as being pro-inflammatory via their proposed role in lipid sensing and NF-\u03baB activation (Figure 6B.1) (Bryan et al., 2009; Sarkar et al., 2006). Interestingly, we also identified proteins that were concurrently downregulated, such as Microtubule-associated serine/threonine-protein kinase 2 (MAST2, \u03b2\u00a0=\u00a0\u22120.002, p=0.023) and Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 2 (INPPL1, \u03b2\u00a0=\u00a0\u22120.0009, p=0.036), that could accentuate the inflammatory phenotype by attenuating the negative regulation of NF-\u03baB (Figure 6B.2) (Kalesnikoff et al., 2002; Tridandapani et al., 2002). Thus, increased expression of NF-\u03baB activators and decreased expression of NF-\u03baB attenuators may synergize to elevate chronic inflammation in aging muscle. We also noted increased expression of high mobility group protein B2 (HMGB2, \u03b2\u00a0=\u00a00.004, p=0.001), a well-known \u2018alarmin\u2019 (Taniguchi et al., 2018) that is released from dying cells or within neutrophil extracellular traps (NETs), that may further exacerbate the inflammatory milieu. Cumulatively, our observations are consistent with the enrichment of macrophages accumulation in aging muscle. Of note, a number of epidemiological studies have found that chronic inflammation is a risk factor for the development of sarcopenia, while the development of a proinflammatory state in adult mouse appears to interfere with tissue maintenance and repair, as evidenced by the fact that pharmacological inhibition of Jak2 and Stat3 activities stimulate the expansion of satellite cells in culture and their engraftment in vivo (Costamagna et al., 2015; Price et al., 2014; Roth et al., 2006). Interestingly, caloric restriction, one of the most effective interventions to counteracts aging in animal models, is associated with reduced inflammation in human muscle, as well as the reversal of some of the other age-related changes identified in this study, such as the increase in molecular chaperones (Yang et al., 2016).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49874/elife-49874-fig6-v1.jpg)\n\n**Figure 6.:** (A) Immune-related proteins are depicted; the x axis shows the genes that code for age-differentially regulated proteins, while the y axis shows the log2 fold expression difference associated with age.\u00a0The increase in innate immune signaling and lipid responses may indicate a reaction to adipocytes muscle infiltration, which in turn causes activation of innate immune signaling. (B\u2013D) Examples of dysregulated proteins are shown from (B.1-B.4) pro-inflammatory. (C) Anti-Inflammatory. (D) Complement pathway proteins. Inflammasome adaptor protein PYCARD is positively associated with age, and the abundance of this protein is a key mechanism by which IL-1\u03b2 pathway activation is regulated. In B-D raw log2 protein abundance and unadjusted p-values are shown.\n\nSecond, we found evidence of an anti-inflammatory activity that could potentially offset the pro-inflammatory milieu of aging muscle (Figure 6C). This was most evident in strong age-associated upregulation of annexin A1 (ANXA1, \u03b2\u00a0=\u00a00.008, p=0.00001), a protein that has been linked to resolution of inflammation (Gobbetti and Cooray, 2016). Elevated levels of adiponectin (ADIPOQ, \u03b2\u00a0=\u00a00.002, p=0.008), a chemokine produced exclusively by adipocytes, likely reflected increased adipogenic activity in aging muscle. However, it is interesting to note that ADIPOQ has also been proposed to inhibit endothelial NF-\u03baB activation (Ehsan et al., 2016; Chen et al., 2017) and may, thereby, have context-dependent anti-inflammatory functions. Finally, erbin (ERBIN, \u03b2\u00a0=\u00a00.002, p=0.019), a nuclear lamina-associated protein that was overrepresented with age in our studies, has been implicated in reducing NF-\u03baB activation by some stimuli (McDonald et al., 2005), with associated reduction in pro-inflammatory gene expression.\n\nThird, coordinate upregulation of several members of the alternate complement pathway, such as CFAH (\u03b2\u00a0=\u00a00.003, p=0.028), and CFAD (\u03b2\u00a0=\u00a00.003, p=0.039) and modulators of complement activity such as CD antigen CD55 (DAF and CD55, \u03b2\u00a0=\u00a00.006, p=0.00007) indicate ongoing innate immune activity in aging muscle (Figure 6D). Whether this trend reflects increased presence of dying cells and cell debris or below-threshold autoimmune activity remains to be determined. The latter could be mediated, for example, by Immunoglobulin heavy constant gamma 4 (IGHG4, \u03b2\u00a0=\u00a00.008, p=0.019) which we found to be increased with age. This antibody isotype has been implicated in the generation of autoantibodies against muscle-specific kinases that are prevalent in certain forms of myasthenia gravis (Hoch et al., 2001). The possible connection between the aging muscle and chronic neurodegenerative disorders in which destruction of self-tissue by complement has been ascribed a causative role (McGeer et al., 2017) is an intriguing area for future investigation.\n\n### Conclusions\n\nThe biological mechanisms that mediate the deleterious effect of aging on skeletal muscle are still controversial, as some evidence suggested that the decline of mitochondrial content, volume and energetic efficiency plays a primary role, while other evidence showed show no significant change for the same parameters with aging, especially if the level of physical activity was considered (Distefano and Goodpaster, 2018). To investigate systematically the changes in expressed proteins that might drive the decline in skeletal muscle function, we conducted an in-depth quantitative measurement of age-related changes in protein abundance in human skeletal muscle. While we did not use model systems or in vivo experiments, because of the careful design of the study, the selection of a healthy population, the depth of protein detection and rigorous analysis made it possible to produce a descriptive quantitative dataset to show aging-associated molecular changes. We used a MS-based isobaric relative quantitative approach for proteome analysis that provides broad coverage of the proteins of human skeletal muscle in very healthy individuals over a wide age range and we adjusted our analysis for potential confounders. The biological function of most of the proteins reported in this study was gathered by an extensive review of the literature and instead of relying only on annotation of Uniprot or GO database, we manually curated the functional classification used in the analysis. We present evidence that our approach is robust and sensitive to true biological variability. We confirmed the altered expression of proteins implicated in pathways differentially active in human skeletal muscle with aging, including more highly abundant mitochondrial proteins and less abundant inflammatory proteins. We also identified subsets of proteins increasing with age that were not previously described, namely proteins implicated in alternative splicing and autophagy. An important limitation of this work is that proteomic analysis provides a static image of the protein concentration at one point in time and does not typically inform on the dynamics of protein accumulation or protein loss, the subcellular localization of proteins, or their post-translational modification (e.g. phosphorylation, ubiquitylation). Addressing these important parameters will help us interpret more fully the biological meaning of our findings and will be addressed as these studies progress (Miller et al., 2019). Our work complements a great deal of evidence from animal models that important metabolic and regulatory changes occur with aging in skeletal muscle, provides a rich resource to study the effect of aging on skeletal muscle proteome in humans and sets the stage for future research on the mechanisms driving the age-associated decline in muscle function.\n\n## Materials and methods\n\n### Study design and participants\n\nMuscle biopsies analyzed in this study were collected from participants from the Genetic and Epigenetic Study of Aging and Laboratory Testing (GESTALT). Participants were enrolled in GESTALT if they were free of major diseases, except for controlled hypertension or a history of cancer that had been clinically silent for at least 10 years, were not chronically on medications (except one antihypertensive drug), had no physical or cognitive impairments, had a BMI less than 30 kg/m2, and did not train professionally. Inclusion criteria were gathered from information on medical history, physical exams, and blood test interpreted by a trained nurse practitioner (Schrack et al., 2014). Participants were evaluated at the Clinical Research Unit of the National Institute on Aging Intramural Research Program. Data and muscle specimens from 60 participants were available for this study. However, two participants were excluded because the muscle specimen provided was too small to obtain reliable proteomic data. Therefore, data from 58 participants dispersed over a wide age-range (20\u201334 y, n\u00a0=\u00a013; 35\u201349 y, n\u00a0=\u00a011; 50\u201364 y, n\u00a0=\u00a012; 65\u201379 y, n\u00a0=\u00a012; 80+ y, n\u00a0=\u00a010) were used for this study. Anthropometric parameters were objectively assessed. The level of physical activity was determined using an interview-administered standardized questionnaire originally developed for the Health, Aging and Body Composition Study (Brach et al., 2004) and modeled after the Leisure-Time Physical Activity questionnaire (Taylor et al., 1978). Total participation time in moderate to vigorous physical activity per week was calculated by multiplying frequency by amount of time performed for each activity, summing all of the activities, then dividing by two to derive minutes of moderate to vigorous physical activity per week, the following categories were used:\u00a0<30 min per week of high intensity physical activity was considered \u2018not active\u2019 and coded as 0; high-intensity physical activity\u00a0\u226530 and<75 min was considered \u2018moderately active\u2019 and coded as 1, high-intensity physical activity\u00a0\u226575 and<150 min was considered \u2018active\u2019 and coded as 2, and high-intensity physical activity\u00a0\u2265150 min was considered to \u2018highly active\u2019 and coded as 3. An ordinal variable from 0 to 3 was used in the analysis. The GESTALT protocol is approved by the Intramural Research Program of the US National Institute on Aging and the Institutional Review Board of the National Institute of Environmental Health Sciences. All participants provided written, informed consent at every visit.\n\n### Muscle biopsies\n\nThe depth of the subcutaneous fat (uncompressed and compressed) was determined using MRI images of the middle thigh performed on the previous day. A region above the vastus lateralis muscle was marked at the mid-point of a line drawn between the great trochanter and the mid\u2010patella upper margin. The skin was prepped with povidone\u2013iodine (Betadine) and ethyl alcohol, and the outside areas covered with sterile drapes. The biopsy site was anesthetized intradermally using a 27-gauge needle and then subcutaneously using a 23-gauge x 1 1/2 -inch needle, follow by an 18-gauge spinal needle, with\u00a0~15 mL of 1% lidocaine with sodium bicarbonate. The operator was careful that the anesthetic was infiltrated in the subcutaneous tissue and above the muscle fascia but not the muscle fibers not to distort the tissue structure and induce a gene expression response. A 6\u2010mm Bergstrom biopsy needle was inserted through the skin and fascia incision into the muscle, and muscle tissue samples were obtained using a standard method. Biopsy specimens cut into small sections were snap frozen in liquid nitrogen and subsequently stored at \u221280\u00b0C until used for analyses.\n\n### Sample preparation and protein extraction\n\nOn average 8 mg of muscle tissue was pulverized in liquid nitrogen and mixed with the lysis buffer containing protease inhibitor cocktail (8 M Urea, 2M Thiourea, 4% CHAPS, 1% Triton X-100, 50 mM Tris, pH 8.5 (Sigma)). Protein concentration was determined using commercially available 2-D quant kit (GE Healthcare Life Sciences). Sample quality was confirmed using NuPAGE protein gels stained with fluorescent SyproRuby protein stain (Thermo Fisher).\n\nIn order to remove detergents and lipids 300 \u03bcg of muscle tissue lysate were precipitated using standard methanol/chloroform extraction protocol (Bligh and Dyer, 1959). Proteins were resuspended in concentrated urea buffer (8 M Urea, 2 M Thiourea, 150 mM NaCl (Sigma)), reduced with 50 mM DTT for 1 hr at 36\u00b0C and alkylated with 100 mM iodoacetamide for 1 hr at 36\u00b0C in the dark. The concentrated urea was diluted 12 times with 50 mM ammonium bicarbonate buffer and proteins were digested for 18 hr at 36\u00b0C using trypsin/LysC mixture (Promega) in 1:50 (w/w) enzyme to protein ratio. Protein digests were desalted on 10 \u00d7 4.0 mm C18 cartridge (Restek, cat# 917450210) using Agilent 1260 Bio-inert HPLC system with the fraction collector. Purified peptides were speed vacuum-dried and stored at \u221280\u00b0C until further processing.\n\nTandem Mass Tags (TMT) labeling was used to perform quantitative proteomics. Each TMT labeling reaction contains six labels to be multiplexed in a single MS run. Donor IDs were blinded, and samples were randomized to prevent TMT bias. Each TMT 6-plex set included one donor from each of the five age groups and one reference sample. 5 muscle samples 100 \u03bcg each corresponding to five different age groups and one separately prepared master reference sample were labeled with 6-plex tandem mass spectrometry tags using a standard TMT labeling protocol (Thermo Fisher). 200 femtomole of bacterial beta-galactosidase digest (SCIEX) was spiked into each sample prior to TMT labeling to control for labeling efficiency and overall instrument performance. Labeled peptides from six different TMT channels were combined into one experiment and fractionated.\n\n### High-pH RPLC fractionation and concatenation strategy\n\nHigh-pH RPLC fractionation was performed on Agilent 1260 bio-inert HPLC system using 3.9 mm X 5 mm XBridge BEH Shield RP18 XP VanGuard cartridge and 4.6 mm X 250 mm XBridge Peptide BEH C18 column (Waters). Solvent composition was as follows: 10 mM ammonium formate (pH 10) as mobile phase (A) and 10 mM ammonium formate and 90% ACN (pH 10) as mobile-phase B (Wang et al., 2011).\n\nTMT-labeled peptides prepared from the skeletal muscle tissues were separated using a linear organic gradient that went from 5% to 50% B in 100 min. Initially, 99 fractions were collected during each LC run at 1 min interval each. Three individual high-pH fractions were concatenated into 33 combined fractions with the 33 min interval between each fraction (fractions 1, 34, 67\u00a0=\u00a0combined fraction 1, fractions 2, 35, 68\u00a0=\u00a0combined fraction two and so on). Combined fractions were speed vacuum dried, desalted and stored at \u221280\u00b0C until final LC-MS/MS analysis.\n\n### LC-MS/MS analyses\n\nPurified peptide fractions from skeletal muscle tissues were analyzed using UltiMate 3000 Nano LC Systems coupled to the Q Exactive HF mass spectrometer (Thermo Scientific, San Jose, CA). Each fraction was separated on a 35 cm capillary column (3 \u03bcm C18 silica, Hamilton, HxSil cat# 79139) with 150 um ID on a linear organic gradient using 650 nl/min flow rate. Gradient went from 5% to 35% B in 205 min. Mobile phases A and B consisted of 0.1% formic acid in water and 0.1% formic acid in acetonitrile, respectively. Tandem mass spectra were obtained using Q Exactive HF mass spectrometer with the heated capillary temperature +280\u00b0C and spray voltage set to 2.5 kV. Full MS1 spectra were acquired from 300 to 1500 m/z at 120,000 resolution and 50 ms maximum accumulation time with automatic gain control [AGC] set to 3 \u00d7 106. Dd-MS2 spectra were acquired using dynamic m/z range with fixed first mass of 100 m/z. MS/MS spectra were resolved to 30,000 with 155 ms of maximum accumulation time and AGC target set to 2 \u00d7 105. Twelve most abundant ions were selected for fragmentation using 30% normalized high collision energy. A dynamic exclusion time of 40 s was used to discriminate against the previously analyzed ions.\n\n### Proteomics informatics\n\nThe mgf files generated (using MSConvert, ProteoWizard 3.0.6002) from the raw data from each sample fraction was searched with Mascot 2.4.1 and X!Tandem CYCLONE (2010.12.01.1) using the SwissProt Human sequences from Uniprot (Version Year 2015, 20,200 sequences, appended with 115 contaminants) database. The search engine was set with the following search parameters: TMT6plex lysine and n-terminus as fixed modifications and variable modifications of carbamidomethyl cysteine, deamidation of asparagine and glutamate, carbamylation of lysine and n-terminus and oxidized methionine. A peptide mass tolerance of 20 ppm and 0.08 Da, respectively, and two missed cleavages were allowed for precursor and fragment ions in agreement with the known mass accuracy of the instrument. Mascot and X!Tandem search engine results were analyzed in Scaffold Q+ 4.4.6 (Proteome Software, Inc, RRID:SCR_014345). The TMT channels\u2019 isotopic purity was corrected according to the TMT kit.peptide and protein probability was calculated by PeptideProphet (Keller et al., 2002) and ProteinProphet probability model (Nesvizhskii et al., 2003). The PeptideProphet model fits the peptide-spectrum matches into two distributions, one an extreme value distribution for the incorrect matches, and the other a normal distribution for correct matches. The protein was filtered at thresholds of 0.01% peptide FDR, 1% protein FDR and requiring a minimum of 1 unique peptide for protein identification. We allow single peptide hits for two reasons: first, any peptide that is quantifiable is detected at least across 25% of all samples (n\u00a0=\u00a058); second, we identify proteins with more than one search engine, so the protein identification is confirmed at least twice, even for single-peptide hits. For these reasons, the even single peptides are unlikely to be random hits. As for single peptide quantification, the spectrum-to-spectrum variability is no higher between spectra from the same peptide than between spectra from different peptides from the same protein. Therefore, it is unlikely that there is any differential \u2018bias\u2019 in reporter ions from peptide to peptide. More importantly, TMT is taken as relative, not absolute, quantification. So even if there were such a bias, it would be the same across samples, so the relative quantification would not be affected. Reporter ion quantitative values were extracted from Scaffold and decoy spectra, contaminant spectra and peptide spectra shared between more than one protein were removed. Typically, spectra are shared between proteins if the two proteins share most of their sequence, usually for protein isoforms. Reporter ions were retained for further analyses if they were exclusive to only one protein, and they were identified in all six channels across each TMT set. Since we have multiple age group across each TMT experiment, we analyzed the proteins for missing reporter ion intensity.\n\nFor this analysis, the protein with missing reporter ion in some of the channels (not more than two channels) for each TMT experiment was identified and missing value imputation was performed using multiple imputation with chained equations (MICE) R library by predictive mean matching. Mean imputation was performed\u00a0<0.01% in one or two TMT channels in most of the TMT experiments, except TMTset1 (the missing reporter ion for channel 5 is 0.03%). The reporter ion intensity from the proteins derived from the imputation method (on an average\u00a0<10 proteins) were concatenated with reporter ion intensity identified in all six channels and further analysis performed using adjudicated values. The log2 transformed reporter ion abundance was normalized by median subtraction from all reporter ion intensity spectra belonging to a protein across all channels (Kammers et al., 2015; Herbrich et al., 2013). Relative protein abundance was estimated by median of all peptides for a protein combined. Protein sample loading effects from sample preparations were corrected by median polishing, that\u00a0is subtracting the channel median from the relative abundance estimate across all channels to have a median zero as described elsewhere (Kammers et al., 2015; Herbrich et al., 2013). Quantified proteins were clustered together if they shared common peptides and corresponding gene names were assigned to each protein for simplicity and data representation. Annotation of the proteins were performed by manual curation and combining information from Uniprot, GO and PANTHER database. Further bioinformatics analysis was performed using R programming language (3.4.0) and the free libraries available on Bioconductor.\n\n### Linear mixed effect model and statistical analyses\n\nLinear mixed regression model was implemented to examine age effects and the data was adjusted for physical activity, gender, race, bmi, type I and type II myosin fiber ratio and TMT mass spectrometry experiments. Protein significance from the regression model was determined with p-values derived from lmerTest. Partial Least Square analysis (PLS) was used to derive models with classification that maximized the variance between age groups. PLS loadings were derived from linear model adjusted protein results. The regression model was performed using R 3.3.4 (R Development Core Team, 2016) with lme4 v1.1. library. Heat maps and hierarchical cluster analysis were performed using the non-linear minimization package in R (Gaujoux and Seoighe, 2010). GraphPad PRISM 6.07 and R packages were used for statistical analysis and generation of figures. STRING analysis (10.5 version) was used for obtaining protein-protein interaction network. Enrichment analysis was performed by GeneSet Enrichment Analysis (GSEA) and PANTHER, the pathways were mapped and visualized by Cytoscape 3.0 (Shannon et al., 2003). One-way ANOVA, nonparametric, and chi-square tests (continuous and categorical variables) were used to test for sample differences between age groups.\n\n### RNA extraction and purification\n\nTotal RNA was prepared by lysing cell pellets (2 \u00d7 106) in 700 \u03bcl Qiazol and extracted using Qiagen miRNeasy mini kit according to the manufacturer\u2019s recommendation (Qiagen Inc, CA) from the same samples (n\u00a0=\u00a054). Small ribosomal RNA was further depleted using Qiagen GeneRead rRNA Depletion Nano Kit. Total RNA quality and quantity was checked using RNA-6000 nano kits on the Agilent 2100-Bioanalyzer. 375 ng of high-quality RNA was used for first-strand and second-strand cDNA synthesis followed by single primer isothermal amplification (SPIA) using NuGEN Ovation RNA\u2013Seq System V2 kits according to manufacturer\u2019s protocol. This kit amplified both polyA-tailed and non-polyA tailed RNA and removed ribosomal RNA. The amplified cDNA was sheared using Bioruptor (Diagenode) to an average size of 150\u2013250 bases. The sequencing library was prepared using Illumina ChIP-Seq kits according to the manufacturer\u2019s protocol (Illumina, San Diego, CA). In short, the ends of the fragments were repaired using T4 DNA polymerase, E. coli DNA Pol I large fragment (Klenow polymerase), and T4 polynucleotide kinase (PNK) and an A-overhang was added to the 3\u2019 end. Adapters were ligated to the DNA fragments and size-selected (250\u2013350 bases) on a 4.5% agarose gel. An 18-cycle PCR amplification was performed followed by a second 4.5% agarose gel size selection before cluster generation in cbot2 and sequencing with Illumina Hiseq2500 sequencer using V4 reagents. Single-read sequencing was performed for 138 cycles and Real-Time Analysis (RTA) v1.18.66.3 generated the base-call files (BCL files). BCL files were de-multiplexed and converted to standard FASTQ files using bcl2fastq program (v2.17.1.14).\n\n### RNA-Seq quantification and splicing analysis\n\nThe quality of the bases was checked using FASTQC program (v11.2) before and after adapter removal and last base trimming by cutadapt program (v1.9). The cleaned FASTQ files were aligned, quantified and annotated to the human hg19 genome using Salmon (Patro et al., 2017) with the concept of quasi-mapping with two phase inference procedure for gene model annotations. The GC bias corrected, quantified transcript isoform abundance values (TPM) were used for further computation of relative abundance of the events or transcripts isoforms known as percent spliced-in (PSI) by SUPPA (Alamancos et al., 2015). Since the variability of low-expressed genes between biological replicates were reported, the transcript data were filtered for the transcripts which were expressed in at least three donors per each age group. Thus, we excluded\u00a0~23% of the transcripts from total transcript quantification for further splicing analysis. Events coordinates are extracted from the Ensembl annotation (GRCh37.75) and alternative splicing events were generated. PSI values of alternative splicing events for each transcript from each sample (n\u00a0=\u00a053) were estimated and the PSI values showing a good agreement with the RNA seq data were kept for further analysis. The magnitude of the PSI change (differential splicing) across the age were calculated with a linear mixed model analysis performed on the PSI to estimate the age-related splicing changes of the transcript isoform. The PSI regression model was adjusted with the aging confounders as same as described above for protein regression model except fiber ratio. For transcript data, we used RNA experiment batches as a random effect. The age beta coefficient for each alternative splicing event transcript PSI was reported as the magnitude to the splicing event-specific PSI change with age. Significance of the alternative splicing events was calculated by lmerTest and was reported if the observation had a p-value<0.05 at transcript level for age beta coefficient.\n\n### Age-association of proteins and transcripts\n\nProteins or transcripts either significantly upregulated or down regulated with age, present in 50% of the samples or at least in three samples for each age group, and significant (p<0.05) were considered as age-associated. Age-association was measured by linear mixed model adjusted for confounders of aging phenotype either in protein analysis or in RNAseq analysis and were further filtered for significance calculation. Age beta coefficient for each protein or transcript were calculated from log2 normalized data on which a mixed linear regression model was applied. Thus, the age beta coefficient represents the mean log2 fold expression per year of age. LmerTest was used for calculating p-values from t-tests via Satterthwaite\u2019s degrees of freedom method. Any protein or transcript was represented as age-associated if the p-value for the protein or transcript was\u00a0<0.05. p-Values for multiple comparisons were adjusted using Benjamini-Hochberg method in R and adjusted p-values were reported on related tables (figure source data). Age-associated proteins and age-associated alternatively spliced transcripts were further analyzed into two categories, either age-association beta coefficient (<0) was under represented with age--indicating a decrease in the abundance of the protein with a year of age or age-association beta coefficient (>0) was over represented with age-indicating the abundance of the protein was increased with a year of age. For simplicity of reporting, we calculated the enrichment of these proteins/transcripts over the total age-associated protein/transcripts and reported as underrepresented and overrepresented with age.\n\n### Data availability\n\nThe mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD011967 (Ubaida-Mohien et al., 2019). RNASeq data is deposited in GEO (GSE129643).\n",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "dece3bdd-d01f-4b71-afc1-3395328c7185",
+      "submission_id": "75392d3b-7850-47d4-88d1-b1224e9cd1c3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matt Kaeberlein, University of Washington United States\n\nReviewers:\n- Matt Kaeberlein, University of Washington United States\n- Rozalyn Anderson, University of Wisconsin Madison United States\n\n## Review text\n\nDOI: [10.7554/eLife.49874.029](https://doi.org/10.7554/eLife.49874.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Aging skeletal muscle proteomics finds changes in spliceosome, immune factors, proteostasis and mitochondria\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Matt Kaeberlein as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Clifford Rosen as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Rozalyn Anderson (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Overall there was marked enthusiasm for this paper, which should provide a resource for further investigators. The revisions should be relatively easy to accomplish.\n\nReviewer #1:\n\nThis is an important and interesting analysis of muscle proteomics from healthy people aged between 20 to 87 years old. This provides a fantastic resource to the community that will spur additional studies, and the authors also identified some key changes in metabolic, immune-related, splicing, and proteostasis-related proteins with age. Although it is difficult to determine causality from this type of study, there is a dearth of large-scale, high-quality human studies in this area, and this represents a significant step forward.\n\n1) I'm not sure the phrase \"extremely healthy\" in the Introduction is appropriate. Perhaps just \"healthy\".\n\n2) Again in the conclusion the phrase \"extraordinary healthy\" is used. I feel that this needs to be quantified or rigorously defined. In what way are they \"extraordinary\"? How was this measured? Otherwise, just \"healthy\" seems more appropriate.\n\nReviewer #2:\n\nThis is a very interesting study from the NIA intramural program. The GESTALT study is designed specifically to uncover the biology of human aging. The strength of this study is that biometric, clinical, and functional measures are captured for the individuals enrolled and these data can be used to interrogate molecule profiling data from collected tissue specimens. In this report, the team describe molecular studies from skeletal muscle biopsies from individuals representing age groups across adult lifespan. The team finds signatures of human aging that are entirely consistent with what might be expected from work in shorter lived species, namely metabolism and immune/inflammatory pathways. This is important because it underscores the translatability of insights from other species in which mechanistic studies might be undertaken. A novel and intriguing finding of this study is that RNA processing seems to be engaged as part of the adaptation to age, this new insight is evident first in the proteomic data and confirmed nicely in the RNAseq data showing numerous examples of splicing events altered as a function of age. The paper is beautifully written, the data are nicely presented and carefully explained. The statistical methods using beta coefficients to track the impact of aging on individual parameters is very attractive. Using this approach, the authors have identified a credible and exciting narrative of human skeletal muscle aging at unprecedented resolution.\n\nThe strength of this study is its potential to uncover those mechanistic insights generated in short lived species that are directly relevant to human aging and thereby highly translational. While it is appreciated how much work was done scouring the literature to identify potential roles of the identified proteins, there is a middle ground missing and the broader context is a bit lost in the details of individual factors. The authors have not been as thorough in their coverage of what is already known from common laboratory animals. It would strengthen the paper to provide a little more context from (a) rodent and nonhuman primate muscle aging and (b) more generally, pathways implicated in aging not just in human disease.\n\nThe focus on metabolism is really great and there is a literature on mitochondrial decline with age in humans and in other species. There are a few papers that might be of interest to the authors; monkey skeletal muscle aging is associated with the same energetic and redox changes that the authors predict here from their proteomics data (Pugh et al., 2013), there are also several aging and exercise papers that have pointed to this same signature (Melov et al., 2007, PLoS One; Radom-Aizik et al., 2005, Med. Sci. Sports Exerc.), and another that shows functional mitochondrial decline associated with frailty (Andreux et al., 2018, Sci. Rep.). The authors may be interested to know that the signature of aging identified here is the inverse of the signature of CR identified across tissues and among species (Barger et al., 2015, PLoS One).\n\nThere is an interesting change in pace of aging after 50 years of age, this is also the time in life where energetics and the impact of physical activity on metabolic profiles changes (Speakman and Westerterp, 2010) \u2013 the links between whole body metabolic function and physical activity may well originate from age-related changes in skeletal muscle.\n\nThe proteostasis data are very interesting and point to a change in the balance of predominant turnover mechanisms including autophagy, proteasome, chaparones. There are a few papers/reviews from the non-human literature that might be of interest (Altun et al., 2010, J. Biol. Chem; Martinez et al., 2017, Aging Cell; Sands et al., 2017). These are only a few examples to showcase what might be considered in a broader approach in providing the context for the current study.\n\nIn the section on ribosomal proteins the authors might consider some of the work by Hamilton and Miller at Colorado State, there are data on protein turnover specifically in skeletal muscle as a function of age, although not in humans.\n\nRNA-based mechanisms are an emerging topic in biomedical research, and recent studies have identified a role for RNA splicing in mechanisms of CR (Heintz et al., 2017, Nature; Rhoads et al., 2018, Cell Metab.). The splicing story is very exciting and one that will be of considerable interest to the readership.\n\nThe data shown in Figure 1 is really about technical aspects of reproducibility and quality control and would be better suited to the supplement.\n\nReviewer #3:\n\nThe manuscript titled \"Aging Skeletal Muscle Proteomics Finds Changes in Spliceosome, Immune factors, Proteostasis and Mitochondria\" by Ubaida-Mohien is an excellent work performing a very large study from muscle biopsies from the GESTALT cohort. 58 healthy individuals were enlisted from this precious cohort to assess changes with aging. This study has provided a wealth of data on a very well designed experiment \u2013 very deep coverage into the muscle proteome was achieved with 5,891 unique proteins reported. A lot of data was acquired (12 TMT plex were fractionated off-line and finally for each TMT plex 33 MS acquisitions were acquired). The conclusions that the authors report are also very interesting in that 29% of the muscle proteome changes with aging. The significantly changing proteins were subsequently also correlated to aging scores. The authors are particularly pointing out changes in splicing-related proteins, which is very interesting. This aspect of age-associated alternative splicing and splicing events was further followed up with transcriptomics experiments (RNAseq of 53 of these individuals). Overall this is excellent work which greatly contributes to our understanding of muscle aging.\n\nSome technical aspects should be addressed in data presentation.\n\n- The authors mention under data availability \"The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD011967\". In the repository, it indicated the data set was referring to another publication also \u2013 could the authors please comment or also else cite that manuscript, if appropriate.\n\n- It would be important to provide a list that matches the mass spectrometric raw files (and TMT channels) with the sample code name for the individual subjects within the TMT, or at least their age classification. Currently, the raw data is not interpretable to other researchers as it is not clear what TMT channels are derived from which age groups. The TMT labeling strategies should be listed and annotated in a supplementary file for each of the 12 TMT6plex experiments that the authors list. That way this very rich and very valuable data set can also be reanalyzed by other researchers.\n\n- The authors are thorough in providing all quantitative information from the TMT quantification from Figure 1\u2014source data 1. TMT experiments are numbers TMT1 through TMT 12 and channels are listed \u2013 similar to the above could the authors also indicate the age group annotation in this list.\n\n- While the quantitative data and also statistical processing thereof is provided the authors should also provide a supplementary table that lists all protein and peptide identification data that is processed and filtered for confident peptides. The authors provide uploaded data files (as search engine results). But it will be important to know what (and how many) peptides were identified per each protein \u2013 and listing their peptide precursor ions, scores. Do protein assignments conform with the requirement of 2 observed peptides per protein? This can currently not be assessed.\n",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3afc2ba8-06ad-426c-987d-d66fe9a12407",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C1",
+      "claim": "Skeletal muscle biopsies were collected from 60 healthy participants of the Genetic and Epigenetic Study of Aging Laboratory Testing (GESTALT) aged 20 to 87 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle biopsies were collected from 60 healthy participants of the Genetic and Epigenetic Study of Aging Laboratory Testing (GESTALT) aged 20 to 87 years who were defined as 'healthy' based on very strict evaluation criteria at the National Institute on Aging Clinical Unit in Baltimore (Tanaka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of participants, study name, age range, and health status criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "79bb626f-23fa-4128-8e5a-f5997d349ffe",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C2",
+      "claim": "Using multiplexed isobaric labeling tags (TMT) and a customized analytical strategy, 5891 proteins were quantified from 400,000 tryptic peptides from 6.7 million spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "Using multiplexed isobaric labeling tags (TMT) and a customized analytical strategy (Kammers et al., 2015; Herbrich et al., 2013), we identified 400,000 tryptic peptides from 6.7 million spectra (396 multiplexed MS runs from 12 TMT 6-plex experiments), which allowed the quantification of 5891 proteins (Figure 1\u2014source data 1, PXD011967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific quantitative data from the proteomic analysis and cites methodological references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "a1afa0d4-b02e-462b-b37a-1bf11f86d88f",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C3",
+      "claim": "Of the initial 5891 proteins detected, 1511 proteins were excluded from the analysis because they were not quantifiable in at least three participants per age strata.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the initial 5891 proteins detected, we excluded from the analysis 1511 proteins that were not quantifiable in at least three participants per age strata (at least 15 participants total) and performed the analysis in the remaining 4380 proteins detected in more than 15 donors (three per age strata), which were quantified from 46,834 unique peptides and 2.7 million spectra (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the exclusion criteria and resulting protein count for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "3fedc394-a95f-4336-9bc1-2991edfa4b80",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C4",
+      "claim": "There were 1265 proteins significantly associated with age (p<0.05, with BH correction <0.1, 917 proteins), suggesting that approximately 29% of the skeletal muscle proteome changed with aging after 20 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 1265 proteins significantly associated with age (p<0.05, with BH correction <0.1, 917 proteins), suggesting that approximately 29% of the skeletal muscle proteome changed with aging after 20 years of age (Figure 1\u2014source data 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific statistical results with p-values and correction methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "44b75fce-6aa3-44dc-9018-fd34dbc686a2",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C5",
+      "claim": "Of the 1265 age-associated proteins, 29% (361) were significantly underrepresented and 71% (904) were overrepresented with older age.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 29% (361) were significantly underrepresented and 71% (904) were overrepresented with older age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the percentage and number of proteins in each category.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "ca797938-4caa-474f-89a7-bd0fff668068",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C6",
+      "claim": "LSm14A was the protein most strongly associated with older age (\u03b2 = 0.023, p=0.0109).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the proteins most strongly associated with older age (Figure 1A, right) were LSM14 homolog A (LSm14A, \u03b2 = 0.023, p=0.0109), tissue metalloproteinase inhibitor 3 (TIMP-3, \u03b2 = 0.0219, p=0.00026) and serum amyloid P-component (APCS, \u03b2 = 0.0164, p=1.26E-11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficients and p-values, and references Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "b79cf96c-9a98-420e-976f-b749db4de756",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C7",
+      "claim": "Protein LSm14A is implicated in processing the assembly of processing bodies, involved in mRNA turnover, and can also bind to viral nucleic acids and initiate IFN-\u03b2 production, contributing to innate immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein LSm14A is implicated in processing the assembly of processing bodies, involved in mRNA turnover, and can also bind to viral nucleic acids and initiate IFN-\u03b2 production, contributing to innate immunity (Li et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the biological function of LSm14A and cites a reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "3f8908d7-b8cd-4052-ac05-2292360ddcff",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C8",
+      "claim": "TIMP3 regulates the adipogenic differentiation of fibro/adipogenic progenitors (FAPs) in skeletal muscle, and its overrepresentation may explain the tendency for fat infiltration in aging muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "TIMP3 regulates the adipogenic differentiation of fibro/adipogenic progenitors (FAPs) in skeletal muscle, and its overrepresentation may explain the tendency for fat infiltration in aging muscle (Kopinke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the function of TIMP3 and provides a speculative interpretation with a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "c8e09249-6924-43a2-bc45-9756321be2b0",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C9",
+      "claim": "APCS is indicative of systemic amyloid, and its overrepresentation in aging muscle has never been previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "APCS is indicative of systemic amyloid, and its overrepresentation in aging muscle has never been previously described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this is a novel finding.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "282b9c0c-41e3-4b2f-a65e-1e11e9d066c1",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C10",
+      "claim": "The most underrepresented protein with old age was HLA class II histocompatibility antigen (HLA-DRB1, p=0.024).",
+      "claim_type": "EXPLICIT",
+      "source": "The most underrepresented proteins (age \u03b2 <\u22120.01 and p<0.05) with old age (Figure 1A, left) were HLA class II histocompatibility antigen (HLA-DRB1, p=0.024), dedicator of cytokinesis protein 4 (DOCK4, p=0.025), myosin-binding protein H (MYBPH, p=0.0005), and microfibril-associated glycoprotein 4 (MFAP4, p=0.000002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific p-values and references Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "8d433ac2-c378-477f-8bb9-f6c0b9440e7a",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C11",
+      "claim": "MYBPH maintains the structural integrity of the muscle and its decreased expression has been associated with muscle weakness in age-related disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "MYBPH maintains the structural integrity of the muscle and its decreased expression has been associated with muscle weakness in age-related disorders (Hundley et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the function of MYBPH and cites a reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "8b10f1bc-0731-4b91-824d-604de28482e1",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C12",
+      "claim": "Hierarchical clustering of protein expression suggested that the strongest difference was between young (20-34) and old (80+).",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering of protein expression suggested that the strongest difference was between young (20-34) and old (80+).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the result of hierarchical clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "b54fcb55-4d8f-4cee-83b2-973630f12764",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C13",
+      "claim": "There were small differences in protein expression before the age of 50, but afterwards there was on average three log fold protein expression differences, and even more substantial differences after the age of 64.",
+      "claim_type": "EXPLICIT",
+      "source": "There were small differences before the age of 50, but afterwards there was on average three log fold protein expression differences, and even more substantial differences after the age of 64.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific quantitative differences in protein expression across age ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "6b3edda2-400e-47a3-bb5f-b49224bae71c",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C14",
+      "claim": "The fiber ratio of slow/fast was higher with older age (p=0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "as expected, the fiber ratio of slow/fast was higher with older age (Figure 1\u2014figure supplement 3 A5). The slight change of slow/fast fiber ratio was significant and outweighed the wide variability among individuals (p=0.005)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific p-value and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "2c7b4b2d-1a96-4eab-abd8-8b60befbae67",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C15",
+      "claim": "The top 95 contractile proteins involved in the architectural and functional stabilization of the sarcomere decreased with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many proteins decreasing with age were contractile proteins, we classified these further by function. The top 95 proteins in this class are involved in the architectural and functional stabilization of the sarcomere, including sarcospan (SSPN, \u03b2 = 0.002, p=0.016) (Figure 1E), a dystrophin-associated protein complex important for muscle regeneration, actin-binding LIM domain and actin-binding protein 1 (LIMA1, \u03b2 = 0.003, p=0.009), a cytoskeleton-binding protein that stabilizes actin filaments, and plectin (PLEC, \u03b2 = 0.0007, p=0.036), a large cytoskeleton protein that preserves interactions within the acto-myosin complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes specific proteins with beta coefficients and p-values, and references Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "610e3c23-585c-4176-81f4-9379239f810f",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C16",
+      "claim": "Increases in delta sarcoglycan (SGCD, \u03b2 = 0.0019, p=0.00004), and gamma sarcoglycan (SGCG, \u03b2 = 0.0016, p=0.0062) were consistent with mouse studies showing that dystrophin, sarcoglycan subcomplex \u03b3- and \u03b4-sarcoglycan were overexpressed with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Increases in delta sarcoglycan (SGCD, \u03b2 = 0.0019, p=0.00004), and gamma sarcoglycan (SGCG, \u03b2 = 0.0016, p=0.0062) were consistent with mouse studies showing that dystrophin, sarcoglycan subcomplex \u03b3- and \u03b4-sarcoglycan were overexpressed with aging, perhaps a compensatory mechanism to avoid damage in the sarcomere during contraction or as biomarkers of continuous repair (Hughes et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific data and compares it to mouse studies with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "aabad968-59ce-479b-ae30-3fcd5c261b5e",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C17",
+      "claim": "MAPT (tau) was significantly underrepresented in older muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MAPT (tau, mostly expressed in neurons and involved in the assembly and stabilization of microtubules), was also significantly underrepresented in older muscle (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "889cdef7-57fc-4073-b5e3-69fa19016e54",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C18",
+      "claim": "The levels of Syne-1 which anchors both synaptic and non-synaptic myonuclei for proper neuron innervation and respiration increased with age (SYNE1 \u03b2 = 0.002, p=0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the levels of Syne-1 which anchors both synaptic and non-synaptic myonuclei for proper neuron innervation and respiration increased with age (SYNE1 \u03b2 = 0.002, p=0.005) as did beta-2-syntrophin, which is believed to be involved in acetylcholine receptor clustering (SNTB2, \u03b2 = 0.0029, p=0.0003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific beta coefficients and p-values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "7f09e83f-ecda-4410-ad71-a7d7bba7b9cd",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C19",
+      "claim": "The coverage of mitochondrial proteins quantified by the analysis ranged from 92% for TCA proteins to 52% for proteins located in outer mitochondrial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The coverage of mitochondrial proteins quantified by our analysis compared to those described in the literature ranged from 92% for TCA proteins to 52% for proteins located in outer mitochondrial membrane [possibly due to incomplete tissue disruption (Morgenstern et al., 2017; Zhao et al., 2014)] (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific percentages and references a figure and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "7f088451-f007-4e72-a8f0-cf12b67fb1a4",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C20",
+      "claim": "Of the mitochondrial proteins identified, the abundance of 25% of them (173 proteins) changed with age, mostly (70%) declining with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the mitochondrial proteins identified, the abundance of 25% of them (173 proteins) changed with age, mostly (70%) declining with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages and numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "e42076a8-760d-496b-be49-1008751a0362",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C21",
+      "claim": "NADH-cytochrome b5 reductase 3 (CYB5R3), an NADH\u2010dehydrogenase located in the outer membrane of ER and mitochondria, whose overexpression is known to mimic many effects of caloric restriction, was significantly overrepresented in older age.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, outer membrane proteins were more abundant (Figure 2B); for example, NADH-cytochrome b5 reductase 3 (CYB5R3), an NADH\u2010dehydrogenase located in the outer membrane of ER and mitochondria, whose overexpression is known to mimic many effects of caloric restriction, was significantly overrepresented in older age (Figure 2\u2014figure supplement 1A) (Martin-Montalvo et al., 2016; Diaz-Ruiz et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the protein, its function, and provides citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "2ce61283-f154-495f-a255-443b9aaca0ca",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C22",
+      "claim": "Of the enzymatic mitochondrial proteins, 99 were respiratory chain proteins (Complex I-V and assembly complex proteins), and most of them declined with aging (28 proteins p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the enzymatic mitochondrial proteins, 99 were respiratory chain proteins (Complex I-V and assembly complex proteins), and most of them declined with aging (28 proteins p<0.05; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numbers and p-values, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "441f9449-0074-4dd6-b8ac-70fd62efc1f0",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C23",
+      "claim": "Succinate dehydrogenase complex assembly factor 2 (SDHAF2), required for covalent FAD insertion into complex II, was significantly overrepresented with older age.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, succinate dehydrogenase complex assembly factor 2 (SDHAF2), required for covalent FAD insertion into complex II, the electron transport chain, and the TCA cycle, were significantly overrepresented with older age (Figure 2C inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "eeb28dda-f764-46cb-a6d5-a3dbcf85ff44",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C24",
+      "claim": "Of 22 proteins quantified for TCA cycle, only malate dehydrogenase (MDH1), isocitrate dehydrogenase (IDH1), fumarate hydratase (FH) and succinate--CoA ligase (SUCLG1) were significantly lower at older ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 22 proteins quantified for TCA cycle, only malate dehydrogenase (MDH1), isocitrate dehydrogenase (IDH1), fumarate hydratase (FH) and succinate--CoA ligase (SUCLG1) (Figure 2\u2014figure supplement 1C) were significantly lower at older ages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific protein names and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "7a381833-7865-4a17-8d6a-b402dd3b481d",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C25",
+      "claim": "NNT (NAD(P) transhydrogenase) significantly decreased with aging (\u03b2 = \u22120.003, p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, to IDH1, NADP+ is also reduced to NADPH via the mitochondrial NAD(P)-malic enzyme (ME2) (Sauer et al., 2004) and predominantly through NNT (NAD(P) transhydrogenase) and the pentose phosphate pathway. In our study, NNT (\u03b2 = \u22120.003, p=0.001) significantly decreased with aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, and cites a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "f824d9e8-6015-4664-bc82-f8ea4ca8f1f3",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C26",
+      "claim": "NADK (NAD+ Kinase), which is highly regulated by the redox state of the cell and regulates NADP+ synthesis in vivo decreased with age (NADK2, \u03b2 = \u22120.001, p=0.052).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, NADK (NAD+ Kinase), which is highly regulated by the redox state of the cell and regulates NADP+ synthesis in vivo decreased with age (NADK2, \u03b2 = \u22120.001, p=0.052).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "53767790-92d4-481e-b3ef-6e439242ce48",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C27",
+      "claim": "NAM-N-methyl transferase (NNMT, \u03b2 = 0.007, p=0.016), nicotinamide ribose kinases (NMRK1, \u03b2 = \u22120.003, p=0.002), poly-ADP-ribose polymerases (PARP1, \u03b2 = 0.002, p=0.003) and CD73 (NT5E, \u03b2 = 0.004, p=0.056) were significantly increased with older ages.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that NAM-N-methyl transferase (NNMT, \u03b2 = 0.007, p=0.016), nicotinamide ribose kinases (NMRK1, \u03b2 = \u22120.003, p=0.002), poly-ADP-ribose polymerases (PARP1, \u03b2 = 0.002, p=0.003) and CD73 (NT5E, \u03b2 = 0.004, p=0.056) were significantly increased with at older ages, while only NMRK1 decreased with age (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficients and p-values, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "867a3cf3-a825-4010-9413-5b6135d4c736",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C28",
+      "claim": "Most genomic maintenance proteins increased in abundance with age, especially those involved in DNA damage recognition and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Most genomic maintenance proteins increased in abundance with age, especially those involved in DNA damage recognition and repair, such as double-strand break repair protein (MRE11), X-ray repair cross-complementing protein 5 (XRCC5), and structural maintenance of chromosomes protein 1A (SMC1A) (Figure 1\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "73f172cc-6e77-41d7-8e4b-19c581dfff15",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C29",
+      "claim": "Prelamin-A/C (LMNA), Lamin-B1 (LMNB1) and Lamin-B2 (LMNB2), members of the LMN family of protein components of nuclear lamina, were all overrepresented with older age.",
+      "claim_type": "EXPLICIT",
+      "source": "Prelamin-A/C (LMNA), Lamin-B1 (LMNB1) and Lamin-B2 (LMNB2), members of the LMN family of protein components of nuclear lamina that help maintain nuclear and genome architecture, were all overrepresented with older age (Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "d319fd97-fb64-4398-aabf-8ab63ce406ef",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C30",
+      "claim": "Sirtuin 2 (SIRT2, \u03b2 = \u22120.0013, p=0.032), implicated in genomic stability, metabolism and aging, was found to be lower in older skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Sirtuin 2 (SIRT2, \u03b2 = \u22120.0013, p=0.032), implicated in genomic stability, metabolism and aging, was also found to be lower in older skeletal muscle (Figure 1\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "d0511c0c-9703-467d-a1c7-4007cc1fcf9b",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C31",
+      "claim": "Forty proteins that have been implicated in cellular senescence were significantly overrepresented with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty proteins that in the literature have been implicated in cellular senescence were significantly overrepresented with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "80afc708-6092-4067-a008-5e1faabb2837",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C32",
+      "claim": "Of all the 69 age-associated transcription-regulatory proteins quantified, 61 were overrepresented and only eight were underrepresented with older age.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all the 69 age-associated transcription-regulatory proteins quantified, 61 were overrepresented and only eight were underrepresented with older age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "d5349f3a-8a41-4998-ac3f-84536a0da79d",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C33",
+      "claim": "Kelch-like protein 31 (KLHL31, \u03b2 = \u22120.0017, p=0.003), which is essential for muscle development and perhaps also muscle repair, was underrepresented with older age.",
+      "claim_type": "EXPLICIT",
+      "source": "This last subset included kelch-like protein 31 (KLHL31, \u03b2 = \u22120.0017, p=0.003), which is essential for muscle development and perhaps also muscle repair (Abou-Elhamd et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, and cites a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "e53b806b-daf8-4762-877d-ca8041a72763",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C34",
+      "claim": "The levels of myocyte-specific enhancer factor 2D (MEF2D, \u03b2 = 0.003, p=0.018), essential for myogenesis and muscle regeneration and the primary regulator of KLHL31 production, increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the levels of myocyte-specific enhancer factor 2D (MEF2D, \u03b2 = 0.003, p=0.018), essential for myogenesis and muscle regeneration and the primary regulator of KLHL31 production, increased, possibly as a compensatory mechanism (Schiaffino et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, and cites a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "5ba1f4d3-4c8e-4dfc-a827-c5af4d9a9646",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C35",
+      "claim": "CTCF (\u03b2 = 0.009, p=0.026), a transcriptional activator and repressor protein that fine-tunes chromatin architecture, increased with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to earlier reports, CTCF (\u03b2 = 0.009, p=0.026), a transcriptional activator and repressor protein that fine-tunes chromatin architecture, also increased with age (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "a3d2206c-d45b-43b0-97f2-7b3d23f4cd46",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C36",
+      "claim": "Of the ~300 spliceosome proteins and spliceosome-associated factors described, 99 and 57 of them, respectively, were overrepresented in older muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, of the ~300 proteins and spliceosome-associated factors described (Zhou et al., 2002; Rappsilber et al., 2002), we found that 99 and 57 of them, respectively, were overrepresented in older muscle (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numbers and cites references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "a7fe70ed-996a-41d6-ae86-b5bd8a72f593",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C37",
+      "claim": "Spliceosomal proteins increased by ~15% between the ages of 20 and 87 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, spliceosomal proteins increased by ~15% between the ages of 20 and 87 years (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific percentage and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "8e82fdbf-cd5b-4f94-8054-927f74a6009a",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C38",
+      "claim": "LSm RNA-binding protein (LSM14A) was the most overrepresented assembly protein, displaying a 20-fold increase with age.",
+      "claim_type": "EXPLICIT",
+      "source": "LSm RNA-binding protein (LSM14A) was the most overrepresented assembly protein, displaying a 20-fold increase with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a specific fold-change value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "1d4e6bf1-3b95-4aa3-b1fe-22b1b28852cb",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C39",
+      "claim": "Analysis of 144,830 transcripts from RNA-seq datasets showed that around 3.7% of the skeletal muscle transcripts (5459 transcripts, corresponding to 6255 events) showed relative abundance changes with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of 144,830 transcripts from RNA-seq datasets showed that around 3.7% of the skeletal muscle transcripts (5459 transcripts, corresponding to 6255 events) showed relative abundance changes with aging (Figure 4A; Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numbers and percentages, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "61102dfc-92fc-4512-865d-90d43dce71f5",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C40",
+      "claim": "2714 splicing events were significantly less frequent at older ages and 3545 events significantly more frequent at older ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we calculated the frequency and distribution of splicing events with aging as well as the directionality of such changes and found that 2714 events were significantly less frequent at older ages and 3545 events significantly more frequent at older ages (Figure 4B; Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numbers and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "da6558a2-acce-46eb-88ce-a2d9d63be348",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C41",
+      "claim": "AS events increased significantly with age (r2 = 0.33, p=6.001e-06).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall number of events increased slightly with older age but AS events, at least for the 6,255 AS events quantified, increased significantly with age (r2 = 0.33, p=6.001e-06) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific statistical values and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "d6a632ed-1cb7-442d-b981-c015223c3ab7",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C42",
+      "claim": "Among the 5459 transcripts that were alternatively spliced with age, 4967 transcripts were protein-coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 5459 transcripts (from 3791 genes) that were alternatively spliced with age, 4967 transcripts were protein-coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "fc7401b0-8452-453b-bcac-8fe6a1190e66",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C43",
+      "claim": "8.9% of the age-associated alternatively spliced transcripts (385) were reflected in protein changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared these genes with the age-associated proteins and found that 8.9% of the age-associated alternatively spliced transcripts (385) were reflected in protein changes (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific percentage and number, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "df131828-e17c-4b23-8e5c-bf4099dc5917",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C44",
+      "claim": "30% (385) of the age-associated proteins undergo alternative splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "This comparison of age-associated proteins and alternatively splicing mRNAs suggests that 30% (385) of the age-associated proteins undergo alternative splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a specific percentage and number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "5ba071f2-4bc2-44d7-8374-21f3d93e3a9f",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C45",
+      "claim": "All the 60S and 40S ribosomal proteins were globally reduced in older muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, all the 60S and 40S ribosomal proteins were globally reduced in older muscle; exceptions included 60S ribosomal proteins RPL12 and RPL3 (RPL12, \u03b2 = 0.0008, p=0.024, RPL3, \u03b2 = 0.003, p=0.016), as well as H/ACA ribonucleoprotein complex subunit 4 (DKC1, \u03b2 = 0.002, p=0.034) and nucleolar protein 58 (NOP58, \u03b2 = 0.003, p=0.00007), which were overrepresented in old muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding with specific exceptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "6f975682-f3ad-4d9f-aa81-ab98eb8e27f1",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C46",
+      "claim": "Of the 239 detected proteins related to proteostasis, 31% were altered with age (p<0.05, 24 underrepresented and 50 overrepresented with older age).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 239 detected proteins that has been related to proteostasis in the literature, 31% were altered with age (p<0.05, 24 underrepresented and 50 overrepresented with older age) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific percentages and numbers, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "c310e41c-2716-4da0-b3b7-13fd90731849",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C47",
+      "claim": "Most proteins underrepresented with age were chaperones, including DnaJ homolog subfamily A (DNAJA1), also named heat shock protein (Hsp) 40 (\u03b2 = \u22120.0021, p=0.003), Hsp27 (\u03b2 = \u22120.004, p=0.0001), Hsp70 protein 8 (HSPA8, \u03b2 = \u22120.002, p=2.34E-07).",
+      "claim_type": "EXPLICIT",
+      "source": "Most proteins underrepresented with age were chaperones, including DnaJ homolog subfamily A (DNAJA1), also named heat shock protein (Hsp) 40 (\u03b2 = \u22120.0021, p=0.003), Hsp27 (\u03b2 = \u22120.004, p=0.0001), Hsp70 protein 8 (HSPA8, \u03b2 = \u22120.002, p=2.34E-07) (Figure 5\u2014figure supplement 1) as well as Hsp27 protein 1 (HSPB1) and protein 7 (HSPB7), Hsp10 protein 1 (HSPE1) and Hsp60 protein 1 (HSPD1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficients and p-values, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "93925b98-af8c-47f5-8961-e6e63af21484",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C48",
+      "claim": "Most proteostasis proteins overrepresented with aging were related to autophagy except HSPA8 and Eukaryotic translation initiation factor 4 gamma 1 (EIF4G1).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, most proteostasis proteins overrepresented with aging were related to autophagy except HSPA8 and Eukaryotic translation initiation factor 4 gamma 1 (EIF4G1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "ef81f0ed-d52f-4f79-9f25-38ddfa7d91a5",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C49",
+      "claim": "TDP-43, a DNA/RNA-binding protein that tends to form aggregates in tissues such as skeletal muscle and brain, increased significantly with aging (TARDBP, \u03b2 = 0.002, p=0.0002).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TDP-43, a DNA/RNA-binding protein that tends to form aggregates in tissues such as skeletal muscle and brain and is both removed by autophagy and involved in autophagy maintenance, increased significantly with aging (TARDBP, \u03b2 = 0.002, p=0.0002) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "26bce475-506e-4724-9f06-da7999c20a66",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C50",
+      "claim": "Calreticulin (CALR), a quality control chaperone induced under ER stress that stimulated autophagy, was significantly higher in muscle of older participants (\u03b2 = 0.001, p=0.022).",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, calreticulin (CALR), a quality control chaperone induced under ER stress that stimulated autophagy, was significantly higher in muscle of older participants (\u03b2 = 0.001, p=0.022) (Figure 5D) (Yang et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, references a figure, and cites a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "145879cf-5cfe-47cf-939d-f9849e3eb3cc",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C51",
+      "claim": "Of the 32 immune-related age-associated proteins that were quantified, many proteins previously linked to macrophage function (such as CD14, LGALS3, CAPG, INPPL1 and MAST2) were dysregulated in aging muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 32 immune-related age-associated proteins that were quantified (Figure 6A), three broad themes emerged from the aging muscle immune proteome (Figure 6B\u2013D). First, many proteins previously linked to macrophage function (such as CD14, LGALS3, CAPG, INPPL1 and MAST2) were dysregulated in aging muscle, with skewing towards a pro-inflammatory phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "f4b32929-4d65-46cb-b3a9-bccd2702a528",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C52",
+      "claim": "Monocyte differentiation antigen CD14 (CD14, \u03b2 = 0.003, p=0.009), Interferon-induced, double-stranded RNA-activated protein kinase (E2AK2, \u03b2 = 0.0008 p=0.046) and ASC (PYCARD) (\u03b2 = 0.006, p=0.025) were overrepresented with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the overrepresentation with aging of proteins such as Monocyte differentiation antigen CD14 (CD14, \u03b2 = 0.003, p=0.009), Interferon-induced, double-stranded RNA-activated protein kinase (E2AK2, \u03b2 = 0.0008 p=0.046) and ASC (PYCARD) (\u03b2 = 0.006, p=0.025) can be viewed as being pro-inflammatory via their proposed role in lipid sensing and NF-\u03baB activation (Figure 6B.1) (Bryan et al., 2009; Sarkar et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficients and p-values, references a figure, and cites references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "ea021307-db0b-4998-a139-bb50ea35a603",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C53",
+      "claim": "Microtubule-associated serine/threonine-protein kinase 2 (MAST2, \u03b2 = \u22120.002, p=0.023) and Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 2 (INPPL1, \u03b2 = \u22120.0009, p=0.036) were downregulated with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also identified proteins that were concurrently downregulated, such as Microtubule-associated serine/threonine-protein kinase 2 (MAST2, \u03b2 = \u22120.002, p=0.023) and Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 2 (INPPL1, \u03b2 = \u22120.0009, p=0.036), that could accentuate the inflammatory phenotype by attenuating the negative regulation of NF-\u03baB (Figure 6B.2) (Kalesnikoff et al., 2002; Tridandapani et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficients and p-values, references a figure, and cites references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "a6998a73-124c-4719-acea-436b74b61959",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C54",
+      "claim": "High mobility group protein B2 (HMGB2, \u03b2 = 0.004, p=0.001), a well-known 'alarmin', increased with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted increased expression of high mobility group protein B2 (HMGB2, \u03b2 = 0.004, p=0.001), a well-known 'alarmin' (Taniguchi et al., 2018) that is released from dying cells or within neutrophil extracellular traps (NETs), that may further exacerbate the inflammatory milieu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, and cites a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "9dbd93d9-bdb6-4332-b73f-2d6e68c62441",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C55",
+      "claim": "Annexin A1 (ANXA1, \u03b2 = 0.008, p=0.00001), a protein that has been linked to resolution of inflammation, showed strong age-associated upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This was most evident in strong age-associated upregulation of annexin A1 (ANXA1, \u03b2 = 0.008, p=0.00001), a protein that has been linked to resolution of inflammation (Gobbetti and Cooray, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, and cites a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "35427ea2-9ea1-4e6e-99ba-fe8b79446dfd",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C56",
+      "claim": "Elevated levels of adiponectin (ADIPOQ, \u03b2 = 0.002, p=0.008), a chemokine produced exclusively by adipocytes, likely reflected increased adipogenic activity in aging muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated levels of adiponectin (ADIPOQ, \u03b2 = 0.002, p=0.008), a chemokine produced exclusively by adipocytes, likely reflected increased adipogenic activity in aging muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value, and offers an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "c9f33889-85bf-4cc8-a485-4a305461d135",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C57",
+      "claim": "Coordinate upregulation of several members of the alternate complement pathway, such as CFAH (\u03b2 = 0.003, p=0.028), and CFAD (\u03b2 = 0.003, p=0.039) and modulators of complement activity such as CD antigen CD55 (DAF and CD55, \u03b2 = 0.006, p=0.00007) indicate ongoing innate immune activity in aging muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, coordinate upregulation of several members of the alternate complement pathway, such as CFAH (\u03b2 = 0.003, p=0.028), and CFAD (\u03b2 = 0.003, p=0.039) and modulators of complement activity such as CD antigen CD55 (DAF and CD55, \u03b2 = 0.006, p=0.00007) indicate ongoing innate immune activity in aging muscle (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific beta coefficients and p-values, and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "8df81a7c-24b8-4cc6-bab8-69f461d67ac9",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "claim_id": "C58",
+      "claim": "Immunoglobulin heavy constant gamma 4 (IGHG4, \u03b2 = 0.008, p=0.019) increased with age.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter could be mediated, for example, by Immunoglobulin heavy constant gamma 4 (IGHG4, \u03b2 = 0.008, p=0.019) which we found to be increased with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific beta coefficient and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b39275c0-3cff-4706-aba6-93635d228a66",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed skeletal muscle biopsies from 58 healthy participants aged 20-87 years using TMT-based quantitative proteomics, identifying 5891 proteins from 400,000 tryptic peptides. After quality filtering, 4380 proteins were retained for age-association analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 describe the study cohort, proteomic methodology, and data filtering criteria with specific quantitative details. The methodology is well-established (TMT labeling with cited references), sample size is adequate for cross-sectional analysis, and quality control criteria are explicitly stated. The exclusion of proteins not quantifiable in at least 3 participants per age stratum is a reasonable quality threshold.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "85de2d5f-b79d-400c-8974-c7da73ef8814",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Approximately 29% of the skeletal muscle proteome (1265 proteins) changed significantly with aging, with 71% overrepresented and 29% underrepresented in older age. Hierarchical clustering revealed the strongest differences between young (20-34) and old (80+) groups, with minimal changes before age 50 but substantial differences (three log-fold on average) after age 50, accelerating after age 64.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C12-C13 provide consistent quantitative evidence for age-associated proteomic changes with appropriate statistical corrections (BH correction, p<0.05). The hierarchical clustering analysis supports the interpretation of accelerated changes after middle age. The linear mixed model adjusted for multiple confounders (sex, race, physical activity, fiber ratio, BMI, TMT batch), strengthening the validity of age associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "a01112ee-9569-4555-b712-6727dad79d7e",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The proteins most strongly associated with older age were LSm14A (\u03b2=0.023, p=0.0109), TIMP-3 (\u03b2=0.0219, p=0.00026), and APCS (\u03b2=0.0164, p=1.26E-11). LSm14A is involved in mRNA turnover and innate immunity, TIMP3 regulates adipogenic differentiation potentially explaining fat infiltration in aging muscle, and APCS (serum amyloid P-component) overrepresentation in aging muscle is a novel finding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 identify specific proteins with strong statistical associations (highly significant p-values) and provide biological context through literature citations. The functional interpretations for LSm14A and TIMP3 are supported by cited references. The novelty claim for APCS is explicitly stated and represents a new observation, though functional validation would strengthen this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "f3995e80-24f0-4102-ac4e-4ff18131771d",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The most underrepresented proteins with older age included HLA-DRB1 (p=0.024), DOCK4 (p=0.025), MYBPH (p=0.0005), and MFAP4 (p=0.000002). MYBPH maintains muscle structural integrity and its decreased expression has been associated with muscle weakness in age-related disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 identify significantly underrepresented proteins with appropriate statistical support. The functional interpretation of MYBPH is supported by a citation. However, the manuscript notes HLA-DRB1 was only present in 53% of donors, which may limit the generalizability of this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "6fe75661-f33c-4754-b17c-e8d516be89cd",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Contractile and architectural proteins showed age-related changes: the slow/fast fiber ratio increased with age (p=0.005), 95 sarcomere-stabilizing proteins decreased, while some sarcoglycans (SGCD, SGCG) increased consistent with mouse studies. MAPT (tau) was significantly underrepresented, while Syne-1 and beta-2-syntrophin increased with age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 describe coordinated changes in muscle structural proteins with appropriate statistical support and specific beta coefficients. The fiber ratio analysis provides important context for interpreting protein changes. The comparison to mouse studies (C16) strengthens the findings through cross-species validation. The changes in NMJ-related proteins are biologically coherent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "572ab8f2-51e6-4dde-89f7-664ba8ce3780",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mitochondrial protein coverage ranged from 52-92% across subcellular compartments. Of mitochondrial proteins, 25% (173 proteins) changed with age, with 70% declining. Respiratory chain proteins (99 total, 28 significant) mostly declined, though outer membrane protein CYB5R3 and assembly factor SDHAF2 were overrepresented. Of 22 TCA cycle proteins, only 4 (MDH1, IDH1, FH, SUCLG1) significantly decreased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 provide comprehensive analysis of mitochondrial proteome changes with appropriate coverage assessment and statistical support. The finding that most mitochondrial proteins decline while some outer membrane proteins increase is internally consistent. The exception of SDHAF2 is acknowledged as surprising and requiring further investigation, demonstrating appropriate scientific caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "96405fbe-9691-4f49-9f19-53d0549960a9",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NAD+ metabolism proteins showed age-related changes: NNT (\u03b2=-0.003, p=0.001) and NADK2 (\u03b2=-0.001, p=0.052) decreased, while NNMT (\u03b2=0.007, p=0.016), PARP1 (\u03b2=0.002, p=0.003), and CD73 (\u03b2=0.004, p=0.056) increased with age. NMRK1 decreased (\u03b2=-0.003, p=0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 describe coordinated changes in NAD+ metabolism with appropriate statistical support. The pattern of changes (decreased synthesis enzymes, increased consuming enzymes) is biologically coherent and consistent with known age-related NAD+ decline. However, NADK2 (p=0.052) and CD73 (p=0.056) are marginally non-significant at the p<0.05 threshold, which should be noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "4bec4ef8-57de-4e86-9828-fe3d8325e0cd",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genomic maintenance and senescence-related proteins increased with age, including DNA damage repair proteins (MRE11, XRCC5, SMC1A), nuclear lamina proteins (LMNA, LMNB1, LMNB2), and 40 senescence-associated proteins. SIRT2 (\u03b2=-0.0013, p=0.032) decreased with age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 describe coordinated upregulation of genomic maintenance machinery with appropriate statistical support. The increase in DNA repair proteins and nuclear lamina components is consistent with compensatory responses to accumulated damage. The decrease in SIRT2 is notable given its role in genomic stability. The senescence protein findings are appropriately qualified regarding their cellular origin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "21ab2b72-e7d7-43a7-be23-28c2b6106be3",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Of 69 age-associated transcription-regulatory proteins, 61 were overrepresented and 8 underrepresented with age. KLHL31 (\u03b2=-0.0017, p=0.003), essential for muscle development, decreased, while its regulator MEF2D (\u03b2=0.003, p=0.018) increased, possibly as compensation. CTCF (\u03b2=0.009, p=0.026) increased with age, contrary to earlier reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 describe transcriptional regulatory changes with appropriate statistical support. The inverse relationship between KLHL31 and MEF2D is biologically interesting and the compensatory mechanism interpretation is reasonable though speculative. The CTCF finding contradicting prior reports is appropriately noted and represents a potentially important observation requiring validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "5cc401e6-ecab-40cc-8fa7-49c9aa9afb23",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Spliceosome proteins showed marked age-related increases: 99 of ~300 spliceosome proteins and 57 spliceosome-associated factors were overrepresented in older muscle, with overall ~15% increase between ages 20-87. LSM14A showed the largest increase (20-fold) among assembly proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 describe a striking and novel finding of widespread spliceosome upregulation with age. The quantification is specific and well-supported. The 20-fold increase in LSM14A is particularly notable and consistent with its identification as the most age-associated protein overall (C6). This represents a major discovery regarding splicing machinery changes in aging muscle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "19c43ab7-1233-4b3f-8515-71d460013729",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of 144,830 transcripts revealed 3.7% (5459 transcripts, 6255 events) showed age-related alternative splicing changes, with 2714 events less frequent and 3545 more frequent in older age. Alternative splicing events increased significantly with age (r\u00b2=0.33, p=6.001e-06). Among 4967 protein-coding alternatively spliced transcripts, 8.9% (385) were reflected in protein changes, suggesting 30% of age-associated proteins undergo alternative splicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 provide comprehensive RNA-seq validation of the proteomic findings regarding splicing machinery. The statistical support is strong (highly significant p-value, moderate r\u00b2). The integration of transcriptomic and proteomic data is methodologically sound. The 8.9% overlap between AS transcripts and protein changes is modest but reasonable given post-transcriptional regulation. The conclusion that 30% of age-associated proteins undergo AS is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "925ac5f5-723f-454e-9837-5aa21a34dd9a",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "All 60S and 40S ribosomal proteins were globally reduced in older muscle, with exceptions of RPL12, RPL3, DKC1, and NOP58 which were overrepresented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 describes a clear pattern of ribosomal protein decline with specific exceptions. The statistical support for individual proteins is provided. This finding is consistent with reduced protein synthesis capacity in aging and is biologically coherent. The exceptions (proteins involved in viral translation and ribosomal biogenesis) are interesting and appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "00b44f89-a0b0-4a05-ae3c-368e9d16f361",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Of 239 proteostasis-related proteins, 31% changed with age (24 underrepresented, 50 overrepresented). Most underrepresented proteins were chaperones including DNAJA1/Hsp40 (\u03b2=-0.0021, p=0.003), Hsp27 (\u03b2=-0.004, p=0.0001), and HSPA8 (\u03b2=-0.002, p=2.34E-07). Most overrepresented proteostasis proteins were autophagy-related, except HSPA8 and EIF4G1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 describe coordinated changes in proteostasis machinery with strong statistical support. The pattern of decreased chaperones and increased autophagy proteins is biologically coherent and consistent with known aging phenotypes. The highly significant p-values for key chaperones strengthen the findings. This represents a major aspect of the aging muscle phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "d2ef461f-dfbb-4616-a8fd-d42ab0615d41",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Autophagy-related proteins showed age-dependent changes: TDP-43 (TARDBP, \u03b2=0.002, p=0.0002), which forms aggregates and is involved in autophagy, increased significantly. Calreticulin (CALR, \u03b2=0.001, p=0.022), an ER stress-induced chaperone that stimulates autophagy, was significantly higher in older participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 identify specific autophagy-related proteins with strong statistical support. The functional context for both proteins is well-established through citations. The increase in TDP-43 is particularly notable given its role in neurodegenerative diseases. The CALR finding is appropriately contextualized as a biomarker of age-related diseases and frailty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "914a979c-6b5a-4eca-8684-afc02390be93",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Of 32 immune-related age-associated proteins, many macrophage-function proteins (CD14, LGALS3, CAPG, INPPL1, MAST2) were dysregulated toward a pro-inflammatory phenotype. Pro-inflammatory proteins CD14 (\u03b2=0.003, p=0.009), E2AK2 (\u03b2=0.0008, p=0.046), and PYCARD (\u03b2=0.006, p=0.025) increased, while NF-\u03baB attenuators MAST2 (\u03b2=-0.002, p=0.023) and INPPL1 (\u03b2=-0.0009, p=0.036) decreased. The alarmin HMGB2 (\u03b2=0.004, p=0.001) increased with aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 describe a coordinated pro-inflammatory shift in the immune proteome with appropriate statistical support and mechanistic context through citations. The pattern of increased activators and decreased attenuators of NF-\u03baB is biologically coherent and consistent with inflammaging. The HMGB2 finding adds to the pro-inflammatory picture. This represents strong evidence for chronic inflammation in aging muscle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "97964d63-ae57-458f-ad98-b89bfbec4392",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Anti-inflammatory proteins also increased with age: Annexin A1 (ANXA1, \u03b2=0.008, p=0.00001), linked to inflammation resolution, showed strong upregulation. Adiponectin (ADIPOQ, \u03b2=0.002, p=0.008), produced by adipocytes, was elevated, likely reflecting increased adipogenic activity but potentially having anti-inflammatory functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 identify counter-regulatory anti-inflammatory responses with strong statistical support. The ANXA1 finding is particularly robust (very low p-value) and appropriately contextualized through citation. The ADIPOQ interpretation acknowledges both its origin (adipocytes) and potential anti-inflammatory role, demonstrating appropriate nuance. This suggests complex immune regulation rather than simple pro-inflammatory shift.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    },
+    {
+      "id": "2bff55eb-5791-487e-90e2-625cc2891863",
+      "content_id": "dd99356a-e54d-4059-9f32-7948e5afbfbf",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Complement pathway proteins showed coordinate upregulation: CFAH (\u03b2=0.003, p=0.028), CFAD (\u03b2=0.003, p=0.039), and CD55 (\u03b2=0.006, p=0.00007) increased, indicating ongoing innate immune activity. IGHG4 (\u03b2=0.008, p=0.019), an antibody isotype implicated in autoimmune responses, increased with age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe complement pathway activation with appropriate statistical support. The coordinate upregulation of multiple complement components strengthens the interpretation of ongoing innate immune activity. The IGHG4 finding is interesting given its association with autoimmune conditions, though the functional significance in aging muscle requires further investigation. The authors appropriately note this as an area for future research.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:56:33.687260Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3afc2ba8-06ad-426c-987d-d66fe9a12407",
+      "result_id": "b39275c0-3cff-4706-aba6-93635d228a66"
+    },
+    {
+      "claim_id": "79bb626f-23fa-4128-8e5a-f5997d349ffe",
+      "result_id": "b39275c0-3cff-4706-aba6-93635d228a66"
+    },
+    {
+      "claim_id": "a1afa0d4-b02e-462b-b37a-1bf11f86d88f",
+      "result_id": "b39275c0-3cff-4706-aba6-93635d228a66"
+    },
+    {
+      "claim_id": "3fedc394-a95f-4336-9bc1-2991edfa4b80",
+      "result_id": "85de2d5f-b79d-400c-8974-c7da73ef8814"
+    },
+    {
+      "claim_id": "44b75fce-6aa3-44dc-9018-fd34dbc686a2",
+      "result_id": "85de2d5f-b79d-400c-8974-c7da73ef8814"
+    },
+    {
+      "claim_id": "8b10f1bc-0731-4b91-824d-604de28482e1",
+      "result_id": "85de2d5f-b79d-400c-8974-c7da73ef8814"
+    },
+    {
+      "claim_id": "b54fcb55-4d8f-4cee-83b2-973630f12764",
+      "result_id": "85de2d5f-b79d-400c-8974-c7da73ef8814"
+    },
+    {
+      "claim_id": "ca797938-4caa-474f-89a7-bd0fff668068",
+      "result_id": "a01112ee-9569-4555-b712-6727dad79d7e"
+    },
+    {
+      "claim_id": "b79cf96c-9a98-420e-976f-b749db4de756",
+      "result_id": "a01112ee-9569-4555-b712-6727dad79d7e"
+    },
+    {
+      "claim_id": "3f8908d7-b8cd-4052-ac05-2292360ddcff",
+      "result_id": "a01112ee-9569-4555-b712-6727dad79d7e"
+    },
+    {
+      "claim_id": "c8e09249-6924-43a2-bc45-9756321be2b0",
+      "result_id": "a01112ee-9569-4555-b712-6727dad79d7e"
+    },
+    {
+      "claim_id": "282b9c0c-41e3-4b2f-a65e-1e11e9d066c1",
+      "result_id": "f3995e80-24f0-4102-ac4e-4ff18131771d"
+    },
+    {
+      "claim_id": "8d433ac2-c378-477f-8bb9-f6c0b9440e7a",
+      "result_id": "f3995e80-24f0-4102-ac4e-4ff18131771d"
+    },
+    {
+      "claim_id": "6b3edda2-400e-47a3-bb5f-b49224bae71c",
+      "result_id": "6fe75661-f33c-4754-b17c-e8d516be89cd"
+    },
+    {
+      "claim_id": "2c7b4b2d-1a96-4eab-abd8-8b60befbae67",
+      "result_id": "6fe75661-f33c-4754-b17c-e8d516be89cd"
+    },
+    {
+      "claim_id": "610e3c23-585c-4176-81f4-9379239f810f",
+      "result_id": "6fe75661-f33c-4754-b17c-e8d516be89cd"
+    },
+    {
+      "claim_id": "aabad968-59ce-479b-ae30-3fcd5c261b5e",
+      "result_id": "6fe75661-f33c-4754-b17c-e8d516be89cd"
+    },
+    {
+      "claim_id": "889cdef7-57fc-4073-b5e3-69fa19016e54",
+      "result_id": "6fe75661-f33c-4754-b17c-e8d516be89cd"
+    },
+    {
+      "claim_id": "7f09e83f-ecda-4410-ad71-a7d7bba7b9cd",
+      "result_id": "572ab8f2-51e6-4dde-89f7-664ba8ce3780"
+    },
+    {
+      "claim_id": "7f088451-f007-4e72-a8f0-cf12b67fb1a4",
+      "result_id": "572ab8f2-51e6-4dde-89f7-664ba8ce3780"
+    },
+    {
+      "claim_id": "e42076a8-760d-496b-be49-1008751a0362",
+      "result_id": "572ab8f2-51e6-4dde-89f7-664ba8ce3780"
+    },
+    {
+      "claim_id": "2ce61283-f154-495f-a255-443b9aaca0ca",
+      "result_id": "572ab8f2-51e6-4dde-89f7-664ba8ce3780"
+    },
+    {
+      "claim_id": "441f9449-0074-4dd6-b8ac-70fd62efc1f0",
+      "result_id": "572ab8f2-51e6-4dde-89f7-664ba8ce3780"
+    },
+    {
+      "claim_id": "eeb28dda-f764-46cb-a6d5-a3dbcf85ff44",
+      "result_id": "572ab8f2-51e6-4dde-89f7-664ba8ce3780"
+    },
+    {
+      "claim_id": "7a381833-7865-4a17-8d6a-b402dd3b481d",
+      "result_id": "96405fbe-9691-4f49-9f19-53d0549960a9"
+    },
+    {
+      "claim_id": "f824d9e8-6015-4664-bc82-f8ea4ca8f1f3",
+      "result_id": "96405fbe-9691-4f49-9f19-53d0549960a9"
+    },
+    {
+      "claim_id": "53767790-92d4-481e-b3ef-6e439242ce48",
+      "result_id": "96405fbe-9691-4f49-9f19-53d0549960a9"
+    },
+    {
+      "claim_id": "867a3cf3-a825-4010-9413-5b6135d4c736",
+      "result_id": "4bec4ef8-57de-4e86-9828-fe3d8325e0cd"
+    },
+    {
+      "claim_id": "73f172cc-6e77-41d7-8e4b-19c581dfff15",
+      "result_id": "4bec4ef8-57de-4e86-9828-fe3d8325e0cd"
+    },
+    {
+      "claim_id": "d319fd97-fb64-4398-aabf-8ab63ce406ef",
+      "result_id": "4bec4ef8-57de-4e86-9828-fe3d8325e0cd"
+    },
+    {
+      "claim_id": "d0511c0c-9703-467d-a1c7-4007cc1fcf9b",
+      "result_id": "4bec4ef8-57de-4e86-9828-fe3d8325e0cd"
+    },
+    {
+      "claim_id": "80afc708-6092-4067-a008-5e1faabb2837",
+      "result_id": "21ab2b72-e7d7-43a7-be23-28c2b6106be3"
+    },
+    {
+      "claim_id": "d5349f3a-8a41-4998-ac3f-84536a0da79d",
+      "result_id": "21ab2b72-e7d7-43a7-be23-28c2b6106be3"
+    },
+    {
+      "claim_id": "e53b806b-daf8-4762-877d-ca8041a72763",
+      "result_id": "21ab2b72-e7d7-43a7-be23-28c2b6106be3"
+    },
+    {
+      "claim_id": "5ba1f4d3-4c8e-4dfc-a827-c5af4d9a9646",
+      "result_id": "21ab2b72-e7d7-43a7-be23-28c2b6106be3"
+    },
+    {
+      "claim_id": "a3d2206c-d45b-43b0-97f2-7b3d23f4cd46",
+      "result_id": "5cc401e6-ecab-40cc-8fa7-49c9aa9afb23"
+    },
+    {
+      "claim_id": "a7fe70ed-996a-41d6-ae86-b5bd8a72f593",
+      "result_id": "5cc401e6-ecab-40cc-8fa7-49c9aa9afb23"
+    },
+    {
+      "claim_id": "8e82fdbf-cd5b-4f94-8054-927f74a6009a",
+      "result_id": "5cc401e6-ecab-40cc-8fa7-49c9aa9afb23"
+    },
+    {
+      "claim_id": "1d4e6bf1-3b95-4aa3-b1fe-22b1b28852cb",
+      "result_id": "19c43ab7-1233-4b3f-8515-71d460013729"
+    },
+    {
+      "claim_id": "61102dfc-92fc-4512-865d-90d43dce71f5",
+      "result_id": "19c43ab7-1233-4b3f-8515-71d460013729"
+    },
+    {
+      "claim_id": "da6558a2-acce-46eb-88ce-a2d9d63be348",
+      "result_id": "19c43ab7-1233-4b3f-8515-71d460013729"
+    },
+    {
+      "claim_id": "d6a632ed-1cb7-442d-b981-c015223c3ab7",
+      "result_id": "19c43ab7-1233-4b3f-8515-71d460013729"
+    },
+    {
+      "claim_id": "fc7401b0-8452-453b-bcac-8fe6a1190e66",
+      "result_id": "19c43ab7-1233-4b3f-8515-71d460013729"
+    },
+    {
+      "claim_id": "df131828-e17c-4b23-8e5c-bf4099dc5917",
+      "result_id": "19c43ab7-1233-4b3f-8515-71d460013729"
+    },
+    {
+      "claim_id": "5ba071f2-4bc2-44d7-8374-21f3d93e3a9f",
+      "result_id": "925ac5f5-723f-454e-9837-5aa21a34dd9a"
+    },
+    {
+      "claim_id": "6f975682-f3ad-4d9f-aa81-ab98eb8e27f1",
+      "result_id": "00b44f89-a0b0-4a05-ae3c-368e9d16f361"
+    },
+    {
+      "claim_id": "c310e41c-2716-4da0-b3b7-13fd90731849",
+      "result_id": "00b44f89-a0b0-4a05-ae3c-368e9d16f361"
+    },
+    {
+      "claim_id": "93925b98-af8c-47f5-8961-e6e63af21484",
+      "result_id": "00b44f89-a0b0-4a05-ae3c-368e9d16f361"
+    },
+    {
+      "claim_id": "ef81f0ed-d52f-4f79-9f25-38ddfa7d91a5",
+      "result_id": "d2ef461f-dfbb-4616-a8fd-d42ab0615d41"
+    },
+    {
+      "claim_id": "26bce475-506e-4724-9f06-da7999c20a66",
+      "result_id": "d2ef461f-dfbb-4616-a8fd-d42ab0615d41"
+    },
+    {
+      "claim_id": "145879cf-5cfe-47cf-939d-f9849e3eb3cc",
+      "result_id": "914a979c-6b5a-4eca-8684-afc02390be93"
+    },
+    {
+      "claim_id": "f4b32929-4d65-46cb-b3a9-bccd2702a528",
+      "result_id": "914a979c-6b5a-4eca-8684-afc02390be93"
+    },
+    {
+      "claim_id": "ea021307-db0b-4998-a139-bb50ea35a603",
+      "result_id": "914a979c-6b5a-4eca-8684-afc02390be93"
+    },
+    {
+      "claim_id": "a6998a73-124c-4719-acea-436b74b61959",
+      "result_id": "914a979c-6b5a-4eca-8684-afc02390be93"
+    },
+    {
+      "claim_id": "9dbd93d9-bdb6-4332-b73f-2d6e68c62441",
+      "result_id": "97964d63-ae57-458f-ad98-b89bfbec4392"
+    },
+    {
+      "claim_id": "35427ea2-9ea1-4e6e-99ba-fe8b79446dfd",
+      "result_id": "97964d63-ae57-458f-ad98-b89bfbec4392"
+    },
+    {
+      "claim_id": "c9f33889-85bf-4cc8-a485-4a305461d135",
+      "result_id": "2bff55eb-5791-487e-90e2-625cc2891863"
+    },
+    {
+      "claim_id": "8df81a7c-24b8-4cc6-bab8-69f461d67ac9",
+      "result_id": "2bff55eb-5791-487e-90e2-625cc2891863"
+    }
+  ],
+  "comparisons": []
+}

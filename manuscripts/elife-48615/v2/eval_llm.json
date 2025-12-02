@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In wildtype PV+ interneurons, segmental myelination is strongly predicted by the joint combination of interbranch distance (\u226513.7 \u00b5m) and axonal diameter (\u2265334 nm). The bivariate model achieved 97.0% accuracy (AUC=0.99), significantly outperforming univariate models based on either parameter alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 provide comprehensive ROC analysis demonstrating that the bivariate model combining interbranch distance and axonal diameter achieves high predictive accuracy (97.0%, 128/132 segments correct) with excellent sensitivity (97.2%) and specificity (96.9%). Statistical comparisons confirm significant improvement over univariate models (p<0.001 for interbranch distance, p=0.005 for diameter). The data are internally consistent and supported by Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "PV+ interneurons exhibit characteristic fast-spiking properties and distinctive axonal morphology. Axon shaft diameter averages 0.34\u00b10.01 \u00b5m and decreases with branch order, while en passant boutons (0.71\u00b10.01 \u00b5m) localize to distal branches. All reconstructed PV+ cells (8/8) showed proximal axonal myelination with ~84% of internode boundaries within 5 \u00b5m of branch points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 describe well-documented morphological and electrophysiological characteristics of PV+ interneurons with quantitative measurements and appropriate sample sizes (n=8 cells, 140 segments). The findings are consistent with prior literature (C28 cites Stedehouder et al., 2017, 2018) and supported by Figure 1 and Figure 2. The measurements provide the foundation for subsequent ROC analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Electron microscopy validation confirmed that myelination occurs exclusively on PV+ axonal fibers with shaft diameters >330 nm, with myelinated segments showing significantly larger mean diameter than unmyelinated segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide independent validation using electron microscopy (EM) that corroborates the fluorescence microscopy findings. The EM data show 93.9\u00b11.3% of virally-labeled cells are PV+ (C42), myelination only occurs above 330 nm diameter (C43), and myelinated segments are significantly larger (C44, Figure 3g). This orthogonal validation strengthens the diameter threshold findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C53",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C69",
+      "C70"
+    ],
+    "result": "Cell-type specific deletion of Tsc1 in PV+ interneurons (PV::TSC1) increased soma size by ~50% and primary axonal caliber, resulting in increased axonal myelination per cell through both longer internodes and more internodes per cell, without changing interbranch distance or myelin onset. The bivariate model remained highly predictive (AUC=0.99) with adjusted thresholds (378 nm diameter, 18.6 \u00b5m interbranch distance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48-C49, C53, C56, C59-C62, C69-C70 demonstrate a coherent gain-of-function manipulation. The ~50% soma size increase (C48, Figure 4) is accompanied by increased axonal caliber (C53) and myelination (C59-C60), while interbranch distance remains unchanged (C61). All 13/13 PV::TSC1 cells showed myelination (C56). The bivariate model maintains high predictive accuracy (C69-C70) with appropriately shifted thresholds, supporting the morphological determinants hypothesis. Statistical tests confirm significance (p=0.015 for diameter, p=0.027 for interbranch distance).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C54",
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C71",
+      "C72"
+    ],
+    "result": "Cell-type specific deletion of Ube3a in PV+ interneurons (PV::UBE3A) reduced soma size by ~15% with a non-significant trend toward decreased primary axon caliber, resulting in decreased axonal myelination including both fewer and shorter internodes, while myelin onset remained unchanged. The bivariate model remained highly predictive (AUC=0.99) with thresholds similar to wildtype (332 nm diameter, 14.1 \u00b5m interbranch distance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51, C54, C58, C63-C65, C68, C71-C72 demonstrate a complementary loss-of-function manipulation. The ~15% soma size reduction (C51, Figure 4) shows a non-significant trend toward decreased axonal caliber (C54) and significantly decreased myelination (C63-C64). The bivariate model maintains high predictive accuracy (C68, AUC=0.99) with thresholds nearly identical to wildtype, supporting robustness. However, C54 notes the axon caliber change is non-significant, which somewhat weakens the causal link between soma size and axon diameter in this condition, though the myelination changes are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SOM+ interneurons have shorter interbranch distances and thinner axon diameters (0.303\u00b10.015 \u00b5m) than PV+ cells and are rarely myelinated (1/10 cells). The vast majority of unmyelinated SOM+ segments (79/88, 89.8%) fell below the morphometric thresholds identified for PV+ cells, while the single myelinated segment exceeded these thresholds (561 nm diameter, 16.8 \u00b5m interbranch distance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C75-C80 establish that SOM+ interneurons differ morphologically from PV+ cells and show minimal myelination consistent with their morphology. The finding that 89.8% of unmyelinated SOM+ segments fall below PV+ thresholds (C80) and the single myelinated segment exceeds them (C79) provides strong support for the generalizability of the morphological rules. Sample size is adequate (n=10 cells, 88 segments) and data are shown in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Cell-type specific deletion of Tsc1 in SOM+ interneurons (SOM::TSC1) increased soma size by ~65% and axonal caliber, dramatically increasing myelination frequency from 0/6 (0%) in SOM::WT to 11/11 (100%) in SOM::TSC1 cells. Myelination showed increased total length, internode length, and number of internodes, with 87% of internodes constrained by branch points. The bivariate model remained highly predictive (AUC=0.94) with thresholds of 406 nm diameter and 11.8 \u00b5m interbranch distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C81-C82, C85-C94 demonstrate a dramatic gain-of-function effect in a normally unmyelinated cell type. The ~65% soma size increase (C81) and increased axon caliber (C82) are accompanied by de novo myelination in 100% of SOM::TSC1 cells (C86) versus 0% in controls (C85). The bivariate model maintains high predictive accuracy (C93-C94, AUC=0.94) with appropriately adjusted thresholds. This is perhaps the strongest evidence that axonal morphology is sufficient to induce myelination, as it demonstrates myelination can be induced in a cell type that normally lacks it through morphological manipulation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Population-level analysis using sparse viral labeling confirmed that SOM::TSC1 mice show dramatically increased myelination frequency (92%, 46/50 cells) compared to SOM::WT (15%, 4/26 cells, p<0.001), accompanied by marked increases in global myelination and CC1+ oligodendrocyte density in mPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 provide higher-throughput validation of the single-cell findings using a complementary viral labeling approach. The dramatic increase in myelination frequency (C95-C96, p<0.001) is accompanied by corresponding increases in global myelination (C97) and oligodendrocyte density (C98), shown in Figure 8. This population-level confirmation strengthens the single-cell reconstruction findings and demonstrates the manipulation has region-wide effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C126",
+      "C127"
+    ],
+    "result": "Human neocortical fast-spiking interneurons exhibit myelination patterns similar to mouse, with comparable total myelination length, internode length, and number of internodes. ROC analysis yielded similar bivariate thresholds (328 nm diameter, 13.7 \u00b5m interbranch distance; AUC=0.96, 90.6% accuracy), suggesting species conservation of morphological determinants of interneuron myelination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C99-C104, C126-C127 demonstrate that the morphological rules extend to human tissue. The bivariate thresholds in human (328 nm, 13.7 \u00b5m) are remarkably similar to mouse wildtype (334 nm, 13.7 \u00b5m), supporting species conservation (C127). The model achieves 90.6% accuracy (C104) with AUC=0.96 (C103). However, the sample size is limited (n=4 cells from 4 donors) and the tissue is from tumor surgery patients, which could introduce confounds. Despite these limitations, the similarity of thresholds across species is striking and supports the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C66",
+      "C67"
+    ],
+    "result": "PV+ cell-specific genetic manipulations (PV::TSC1 and PV::UBE3A) did not produce robust changes in global myelination or CC1+ mature oligodendrocyte density in mPFC, despite cell-type specific alterations in myelination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C66-C67 report negative findings at the population level despite single-cell changes. PV cell density is unchanged (C52), and global myelination and oligodendrocyte density show no robust changes (C66-C67, Figure 5\u2014figure supplement 1). This is consistent with the interpretation that PV+ cells are already largely myelinated under normal conditions, so bidirectional manipulations affect individual cell myelination but not overall tissue myelination. The contrast with SOM::TSC1 (C97-C98) supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "PV+ cells in PV::TSC1, PV::UBE3A, and PV::WT mice all exhibited fast-spiking firing characteristics with no detectable differences between genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 reports that electrophysiological properties remain unchanged across genotypes (Figure 5, Figure 4\u2014figure supplement 4). This is an important control showing that the genetic manipulations affect cell size and myelination without altering the fundamental fast-spiking identity of PV+ cells. The lack of electrophysiological differences strengthens the interpretation that observed myelination changes are due to morphological rather than functional changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "SOM+ cell density was unchanged in mPFC of SOM::TSC1 mice, while recorded SOM::TSC1 cells exhibited reduced input resistance and intrinsic excitability with no changes in single action potential characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide controls for the SOM::TSC1 manipulation. Unchanged cell density (C83, Figure 7\u2014figure supplement 2) indicates the manipulation doesn't affect cell survival. The electrophysiological changes (C84, Figure 7\u2014figure supplement 3) are consistent with enlarged cell size (larger cells typically have lower input resistance) but don't alter action potential properties, suggesting the cells maintain their basic SOM+ identity despite morphological changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "GABAergic fast-spiking PV+ interneurons are frequently myelinated in cerebral cortex with a proximally-biased topography of short internodes interspersed with branch points, while other interneuron subtypes are more rarely myelinated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12 establish the background context from prior literature. These are well-supported by multiple citations (Micheva et al., 2016; Stedehouder et al., 2017, 2018) and represent established knowledge in the field. The claims accurately represent prior work and provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior work has established that axonal diameter influences myelination differently in PNS versus CNS. In PNS, ~1 \u00b5m diameter threshold largely predicts myelination, while in CNS, myelination can occur on axons as small as ~200 nm and axons up to ~800 nm can remain unmyelinated. In vitro studies show oligodendrocytes reliably myelinate synthetic fibers >~300 nm. Despite this, axonal diameter is only moderately predictive of myelination topography in CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 accurately summarize prior literature on axonal diameter and myelination with appropriate citations. The claims correctly note the difference between PNS (C13) and CNS (C14-C15, C18) and cite relevant in vitro work (C16-C17, C21). Claim C22 correctly identifies the gap in knowledge that motivates the current study. These background claims are well-supported by citations and accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior work has shown that deletion of Tsc1 induces enlarged somata in various neuronal cell types, the Akt-mTOR pathway regulates axon caliber, and deletion of Ube3a results in smaller neurons with reduced axonal diameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 cite prior literature to justify the genetic manipulations used in the study. The citations are appropriate (Fu et al., 2012; Normand et al., 2013; Meikle et al., 2007; Carson et al., 2012 for C45; Markus et al., 2002 for C46; Sidorov et al., 2018; Wallace et al., 2012; Judson et al., 2017 for C47). These claims provide the rationale for using Tsc1 and Ube3a deletions to bidirectionally manipulate cell size and axon caliber.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Regular-spiking SOM+ interneurons have relatively few myelinated internodes along their axons in mPFC and contribute minimally to total neocortical myelination content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 cite prior work (Stedehouder et al., 2017; Micheva et al., 2016) to establish that SOM+ cells are normally sparsely myelinated. This provides context for why SOM+ cells are an appropriate comparison to PV+ cells and why the SOM::TSC1 manipulation is a strong test of the morphological hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Discussion claims suggest that PV+ interneuron myelination may serve metabolic support functions and/or enhance synchronized inhibition in gamma frequency networks through modulation of conduction velocity, potentially relating to distance-dependent inhibition in gamma synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C108 are speculative interpretations in the Discussion section. While they cite relevant prior work on PV+ metabolic demands (C105, Kann et al., 2014), myelination and metabolic support (C106), gamma oscillations (C107, Hu et al., 2014), and distance-dependent inhibition (C108, Str\u00fcber et al., 2015), these are proposed functional consequences rather than tested hypotheses. The current study establishes morphological determinants of myelination but does not test functional consequences. These remain plausible but unverified hypotheses requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion notes that SOM::TSC1 mice showed more robust increases in global myelination and oligodendrocyte density compared to PV::TSC1, potentially because PV+ morphology is already optimized for myelination or due to non-cell autonomous effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 provide reasonable interpretations of the differential effects between PV::TSC1 and SOM::TSC1 on global myelination. C110 accurately describes the data (SOM::TSC1 shows larger global effects than PV::TSC1). C111-C112 offer plausible explanations: PV+ cells are already mostly myelinated (supported by C28, C57), so enlargement has limited impact on total myelination, while SOM+ cells are normally unmyelinated (C6, C75, C85), so inducing myelination has larger effects. C112 acknowledges alternative explanations. These are reasonable interpretations of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Discussion suggests that while PV+ GABAergic axons have larger caliber than pyramidal neurons, the discontinuous myelination pattern of pyramidal cells suggests additional factors beyond morphology, potentially including molecular cues (neuregulin-ErbB, glutamatergic signaling) and oligodendrocyte subtype specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C116 discuss whether the findings extend to pyramidal neurons. C113 cites a caliber difference (Schmidt et al., 2017), C114 notes discontinuous pyramidal myelination (Tomassy et al., 2014), and C115-C116 speculate about additional factors with appropriate citations. However, the current study does not test pyramidal neurons, so these remain speculative. The discussion appropriately acknowledges this limitation and cites relevant literature, but the claims about pyramidal neurons are not directly supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Discussion proposes that activity-dependent myelination in cerebral cortex might be mediated by axonal morphological plasticity, based on prior work showing activity modulates myelination in both pyramidal neurons and PV+ interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119 propose a mechanistic link between activity-dependent myelination and morphological plasticity. C117-C118 cite relevant prior work (Fields, 2015; Stedehouder et al., 2018), and C119 proposes that activity might work through morphological changes. This is a reasonable hypothesis given the current findings, but it is speculative and not tested in the current study. The proposal is clearly marked as speculative ('it is therefore possible that') and would require future experiments to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Discussion notes that long-range GABAergic projecting cells exist (including PV+ and SOM+ subclasses) and suggests that long-range PV+ cells are likely also myelinated given the high proportion of cortical PV+ cells with myelination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121 discuss long-range GABAergic cells. C120 cites relevant literature (Caputi et al., 2013; Melzer et al., 2017; Rock et al., 2016; Lee et al., 2014), and C121 makes a reasonable inference based on the high frequency of PV+ myelination. However, the current study focused on local interneurons due to technical limitations (acknowledged in Discussion), so this remains an untested inference. The claim is appropriately qualified ('makes it likely') but lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Discussion notes that interneuron myelination occurs across mammalian species, with human PV+ interneurons showing more extensive myelination than mice, raising the possibility that interneuron myelination influences higher cognitive function and may be involved in disorders like multiple sclerosis or schizophrenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C125 discuss species conservation and clinical implications. C122-C123 cite prior work appropriately (Stedehouder and Kushner, 2017; Micheva et al., 2018). C124-C125 propose clinical relevance but are clearly speculative ('raises the possibility', 'might have'). While the human data in the current study (C8, C99-C104) support species conservation of morphological rules, the functional and clinical implications remain untested hypotheses. The speculation is reasonable but not directly supported by the current data.",
+    "result_type": "MINOR"
+  }
+]

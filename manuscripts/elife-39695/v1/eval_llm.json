@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C62"
+    ],
+    "result": "Super-resolution imaging reveals sub-diffractive protein clusters in untreated mammalian cells that are invisible to conventional microscopy. These clusters are detected using Synphilin1-Dendra2 as a tracer in fixed cells under normal growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17, and C62 provide converging evidence from both conventional and super-resolution microscopy. The conventional imaging shows no apparent aggregation (C62), while super-resolution clearly reveals sub-diffractive clusters (C17), supporting the finding that these clusters exist in normal cells (C4). The imaging data in Figures 1B and 1C directly demonstrate this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C22",
+      "C55",
+      "C56"
+    ],
+    "result": "The cluster size distribution follows classical nucleation theory for a super-saturated system undergoing first-order phase transition, with a nucleation barrier of 7.2 \u00b1 0.5 kBT and critical radius of 162 \u00b1 4 nm. The free energy function exhibits surface tension (an^2/3) and negative bulk energy (-bn) terms characteristic of super-saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C22, C55, and C56 are well-supported by the thermodynamic analysis in Figures 1D-G. The log-log plot reveals the expected 2/3 slope for surface energy, and the negative slope after surface correction indicates negative bulk energy. The fit to the theoretical form yields quantitative parameters with error estimates. However, the assumption that the Boltzmann distribution applies to this non-equilibrium in vivo system requires careful justification, which the authors provide through the Szilard model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C42",
+      "C43"
+    ],
+    "result": "The number of fluorescent localizations scales with the cube of cluster radius, suggesting uniform tracer distribution throughout cluster volume. Labeled molecules occupy only ~1/1000th of cluster volume, indicating clusters are heterogeneous and composed predominantly of unlabeled endogenous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, C42, and C43 are supported by the cubic scaling analysis in Figure 1\u2014figure supplement 3 and live cell intensity measurements. The cubic relationship holds for small clusters below the focal depth, providing evidence for volumetric distribution. The calculation that labeled molecules occupy ~1/1000th of volume is mathematically sound given the measured parameters. This supports the interpretation that Synphilin1 serves as a tracer rather than the primary constituent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The critical radius (162 nm) is below the optical diffraction limit, explaining why super-resolution was required. The large critical size suggests initial clusters form through condensation of weakly interacting monomers rather than strong oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C27 are well-supported. The measured Rc of 162 nm is indeed below the diffraction limit (~200-250 nm), validating the need for super-resolution (C26). The inference about weak interactions (C27) is reasonable given that a large critical radius requires many monomers to nucleate a stable cluster, consistent with condensation rather than strong oligomerization. However, the exact nature of these interactions is not directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Pharmacological perturbations that modulate protein homeostasis predictably alter nucleation parameters: Rapamycin (reducing misfolded protein production) increases nucleation barrier and critical radius, while MG132 and AZC (increasing misfolded proteins) decrease these parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by data in Figure 2A-F showing systematic changes in the free energy curves and extracted parameters. The effects are consistent with expectations from classical nucleation theory: reducing super-saturation increases the barrier, while increasing it decreases the barrier. Multiple independent perturbations yield consistent results, strengthening the conclusion. However, these drugs have pleiotropic effects, and the specific mechanism linking them to cluster parameters could involve multiple pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C58"
+    ],
+    "result": "Despite super-saturation, untreated cells maintain <5% of clusters above critical size. RuvBL knockdown results in accumulation of large super-critical clusters without significantly affecting the sub-critical distribution or critical radius.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C58 are supported by violin plots (Figure 2K) and super-resolution images (Figures 2G, 2I). The observation that RuvBL knockdown increases super-critical clusters while maintaining similar Rc (157 \u00b1 6 nm vs 162 \u00b1 4 nm) is key evidence for size-selective clearance. However, the mechanism by which RuvBL specifically targets super-critical clusters is not directly demonstrated\u2014only the phenotypic consequence of its depletion is shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "HSP70 inhibition with Ver155008 does not generate substantial super-critical clusters, suggesting the RuvBL clearance mechanism is distinct from HSP70-mediated disaggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 are supported by negative data in Figure 2\u2014figure supplement 1. The lack of super-critical cluster accumulation with HSP70 inhibition, contrasted with the effect of RuvBL knockdown, suggests distinct mechanisms. However, this is based on a single inhibitor at unspecified concentrations and timepoints, and the negative result could reflect insufficient inhibition, compensatory mechanisms, or that HSP70 acts at a different stage. Additional controls would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The Szilard model explains cellular homeostasis: cells maintain super-saturation through continuous monomer production balanced by RuvBL-dependent clearance of super-critical clusters. MG132 washout experiments show that while the free energy barrier returns to normal regardless of RuvBL status, super-critical cluster clearance requires functional RuvBL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C36, C37, and C38 are supported by the washout experiments in Figure 3. The key observation that the barrier returns to normal in both conditions (C36) but super-critical clusters persist only with RuvBL knockdown (C37, C38) elegantly demonstrates size-selective clearance. This supports the Szilard model where super-saturation is maintained by balancing monomer input with size-dependent clearance. The experimental design effectively separates effects on nucleation from effects on clearance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C49"
+    ],
+    "result": "Live cell light sheet imaging reveals diffraction-limited condensates throughout cells. The critical cluster contains approximately 1400 \u00b1 300 labeled fluorescent molecules, and <8% of clusters are in the super-critical size range, with most clusters not persisting for the full 6-minute imaging duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41, and C49 are supported by light sheet data in Figure 4 and Videos 1-2. The estimate of Nc = 1400 \u00b1 300 molecules is derived from fitting the live cell intensity distribution to the same theoretical framework validated in fixed cells. The observation that <8% are super-critical and most are transient is consistent with the super-saturated state and active clearance. However, photobleaching limits the tracking duration, potentially biasing the persistence measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Individual cluster dynamics over 6 minutes show size-dependent growth and shrinkage: larger clusters (above critical size) tend to grow, smaller clusters tend to shrink, and clusters near Nc (~2000 intensity units) remain stable. This coarsening behavior is characteristic of condensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, and C52 are supported by tracking data in Figure 5A-B. The size-dependent growth/shrinkage is a key prediction of classical nucleation theory and Ostwald ripening. The observation that stable clusters have intensities near the estimated Nc provides internal consistency. However, only 30 clusters from 7 cells were tracked, representing a small sample of the largest, longest-lived clusters. The 6-minute timeframe is also relatively short for assessing long-term dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Diffusing clusters merge upon contact into single condensates, with approximately 9 merger events observed in 15 cells over 6 minutes (rate ~1 per 10 minutes). This coalescence behavior is characteristic of liquid-like condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by direct observation in Figure 5D-E and Videos 1-2. The merger events and intensity conservation during fusion are consistent with liquid-like behavior. However, the rate estimate is based on manual identification of only 9 events, which is a small sample size. The actual rate could vary significantly, and smaller or faster merger events might be missed. Additionally, the authors do not quantify fusion kinetics or demonstrate reversibility, which would further characterize the condensate properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Early aggregates behave like condensates based on surface tension estimates comparable to known biomolecular condensates (\u03c3 ~ 10^-6 to 10^-4 N/m) and dynamic behaviors including size-dependent coarsening and coalescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by multiple lines of evidence: surface tension calculations yielding values (4\u00d710^-6 to 8\u00d710^-4 N/m) comparable to P-granules and nucleoli, size-dependent growth/shrinkage consistent with Ostwald ripening, and observed merger events. However, the surface tension estimate relies on uncertain parameters (density \u03c1 and proportionality constant k), yielding only bounds rather than precise values. Additional characterization such as FRAP, viscosity measurements, or demonstration of reversibility would strengthen the condensate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Control experiments show that neither Synphilin1 expression level nor tracer identity (Synphilin1 vs alpha-Synuclein) detectably affects the sub-diffractive cluster size distribution, indicating the tracer does not drive cluster formation at tested expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C61 are supported by data in Figure 1\u2014figure supplement 2 showing overlapping distributions across different expression levels and with alternative tracer. This is an important control demonstrating that the observed clusters are not artifacts of tracer overexpression. However, the range of expression levels tested is not quantified, and very high overexpression might still perturb the system. The conclusion that Synphilin1 'merely serves as a tracer' is reasonable but could be overstated\u2014it likely has some affinity for the aggregates to localize there.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "A testable prediction is that even healthy cells are super-saturated and contain sub-diffractive condensates invisible to conventional imaging but detectable with high-resolution microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is a logical prediction from the finding that untreated cells show super-saturation (C4, C5). This prediction is actually validated by the study's own data showing sub-diffractive clusters in normal cells. The claim is more of a summary/implication than a new prediction. The broader implication\u2014that this may apply to other cell types and proteins\u2014remains to be tested but is reasonable given the fundamental thermodynamic framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Prior literature establishes that Synphilin1 traces Parkinson's disease aggregates, RuvBL is a putative disaggregase, HSP70 disaggregates amyloid fibrils, and spherical complexes serve as intermediates in amyloid nucleation for various proteins including Sup35 and Huntingtin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C63, C64, C65, and C66 accurately cite prior literature to establish context and rationale for the current study. These are appropriately attributed to previous work and provide important background. The citations appear accurate based on the references provided. This represents appropriate scholarship rather than new findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The authors speculate that the high local concentrations within in vivo condensates could provide the environment needed for secondary nucleation of fibers or plaques, potentially linking early condensation to later fibril formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is explicitly speculative ('it is plausible that') and not directly tested in this study. While the speculation is reasonable given that condensates concentrate proteins and in vitro fibril formation requires high concentrations, no evidence is provided that the observed condensates actually progress to fibrils or that secondary nucleation occurs within them. This remains a hypothesis for future testing. The claim appropriately cites relevant literature on secondary nucleation and fibril formation requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background context establishes that protein aggregation is a hallmark of neurodegenerative disease, involves a lag phase that is difficult to study with existing methods, and that intermediate aggregates may be more toxic than large aggregates. Previous approaches using in vitro systems or seeded aggregation in cells have not captured spontaneous early nucleation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C16 accurately summarize established knowledge and limitations of prior approaches, appropriately cited to literature. These claims establish the motivation and novelty of the current study. The characterization of prior work appears accurate: in vitro studies use non-physiological concentrations (C13), live cell studies bypass nucleation by seeding (C14), and sub-diffractive nuclei are difficult to image (C15). This provides appropriate context but represents background rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

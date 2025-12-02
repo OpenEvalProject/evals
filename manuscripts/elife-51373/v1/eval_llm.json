@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "PHF19L, but not PHF19S, interacts with PRC2 in prostate cancer cells. Mass spectrometry and co-immunoprecipitation experiments demonstrate that PHF19L interacts with core PRC2 subunits (EZH2, SUZ12) in PC3 and DU145 cells, while PHF19S does not interact with any PRC2 component. Depletion of PHF19L disrupts these interactions without affecting PRC2 complex stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C40, C41, C43, C44, and C45 are supported by converging evidence from mass spectrometry (C40, C41), co-IP with overexpressed proteins (C43), and endogenous co-IP experiments (C44, C45) in two cell lines. The data consistently show PHF19L-PRC2 interaction and PHF19S lack of interaction with PRC2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C47",
+      "C48",
+      "C49",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "PHF19L and PHF19S have distinct structural features and subcellular localizations. PHF19L contains Tudor, PHD, EH, and chromo-like domains and localizes to chromatin, while PHF19S contains only Tudor and PHD1 domains, lacks nuclear localization signals and PRC2-binding regions, and is cytoplasmic. Both isoforms are expressed at higher levels in prostate cancer cells compared to normal prostate epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C47-C49, and C117-C119 are supported by Western blot data (C38, C39), cell fractionation experiments (C47, C48, C49), and structural analysis with citations (C36, C37, C117, C118). The structural differences logically explain the functional differences (C119).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PHF19L binds to chromatin near transcription start sites of 1010 target genes that are enriched for PRC2 occupancy and H3K27me3. ChIP-seq identified 1245 PHF19 binding sites corresponding to 1010 genes, predominantly at TSSs. These genes are occupied by EZH2 and SUZ12, with strong correlation between PHF19 and PRC2 signals, and 93% are marked by H3K27me3. GO analysis reveals enrichment for genes involved in cell development, differentiation, proliferation, and extracellular matrix organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are supported by ChIP-seq data with biological replicates, validated by ChIP-qPCR, and analyzed using appropriate statistical methods (DiffBind, P<0.05, FDR<0.2). The co-localization of PHF19L with PRC2 components and H3K27me3 is demonstrated by correlation analysis and validated across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C7",
+      "C8"
+    ],
+    "result": "Loss of PHF19L causes a genome-wide increase in PRC2 occupancy and H3K27me3 deposition. ChIP-seq with spike-in controls shows that PHF19L depletion leads to increased recruitment of EZH2 and SUZ12, increased H3K27me3 peaks and target genes, and significant gain in ChIP signal for all three marks. This is contrary to the expected reduction based on ESC studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C7, and C8 are supported by ChIP-seq data with spike-in normalization controls (critical for quantitative comparison), biological replicates, and statistical analysis (DiffBind, Wilcoxon test, P\u226410^-16). The use of spike-in controls strengthens the quantitative claims about genome-wide increases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C63",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C6",
+      "C71",
+      "C72"
+    ],
+    "result": "PHF19L depletion triggers increased MTF2 expression and chromatin recruitment, suggesting MTF2 compensates for PHF19L loss. MTF2 mRNA and protein levels increase after PHF19L knockdown, MTF2 target genes rise from 2011 to 2811, and MTF2 signal increases at PHF19L binding sites. Rescue experiments show reciprocal changes in PHF19L and MTF2 occupancy. The authors propose that PHF19L restricts MTF2 occupancy and that MTF2 may be responsible for increased PRC2 recruitment after PHF19L loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70, C6, and C71 are supported by RT-qPCR, Western blot, ChIP-seq with spike-in controls, and rescue experiments showing reciprocal changes. However, C72 is speculative about mechanism. The compensatory increase in MTF2 is well-documented, but the mechanistic claim that MTF2 is responsible for increased PRC2 requires additional validation (e.g., MTF2 depletion in PHF19L-depleted cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C9"
+    ],
+    "result": "PHF19L loss causes transcriptional deregulation of genes involved in proliferation, hypoxia response, invasion, and angiogenesis. RNA-seq shows 652 genes upregulated (enriched for hypoxia response, cell migration, ECM organization, angiogenesis) and 847 genes downregulated (enriched for interferon pathway, development). Key deregulated genes include DUSPs, VEGFA, VEGFC, CXCR4, and LOX. Gene expression changes are reversed by PHF19L re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C75-C79, and C9 are supported by RNA-seq with triplicates, validated by RT-qPCR in two cell lines, and confirmed by rescue experiments (C79). GO analysis appropriately identifies enriched pathways. The rescue experiment strengthens causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C106",
+      "C107",
+      "C113"
+    ],
+    "result": "Only 9% of PHF19L direct targets are transcriptionally deregulated after PHF19L depletion, suggesting indirect effects dominate. Among direct targets, downregulated genes include tumor suppressors (IGFBP3, NDRG2), while upregulated genes include hypoxia-responsive genes (LOX, CXCR4, EGLN3, ADM) and EMT drivers (BMP4, SHH, WNT7A, SOX9). Some direct targets are both upregulated and gain PRC2/H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84, C106, C107, and C113 are supported by integrative analysis of ChIP-seq and RNA-seq data. The observation that most deregulated genes are not direct targets is well-documented (C80, C113). The paradoxical upregulation of some direct targets despite gaining PRC2 (C106, C107) is noted but not mechanistically resolved, which is acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C10",
+      "C98"
+    ],
+    "result": "PHF19L loss dramatically reduces cell proliferation in prostate cancer cells. Growth curves and BrdU incorporation assays show significant reduction in cell growth and proliferation in DU145 and PC3 cells after PHF19L depletion. This is associated with upregulation of CDKN1A/p21 and downregulation of cell cycle genes (CCNA2, CCNB2, CDK4, E2F1, AATF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, C10, and C98 are supported by growth curves with biological replicates, BrdU incorporation assays with statistical testing (P\u22640.05), and RNA-seq data showing changes in cell cycle regulators. The phenotypic and molecular data are consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C11"
+    ],
+    "result": "PHF19L loss increases invasiveness of prostate cancer cells. Transwell invasion assays show significantly increased capacity to invade matrigel in both DU145 and PC3 cells lacking PHF19L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C92, and C11 are supported by transwell invasion assays with biological replicates and statistical testing (P\u22640.05). The effect is consistent across two cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C12"
+    ],
+    "result": "PHF19L depletion promotes angiogenesis. Conditioned medium from PHF19L-knockdown cells significantly increases tube and node formation in HUVEC tube formation assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C12 are supported by HUVEC tube formation assays with biological replicates, statistical testing (P\u22640.05), and appropriate positive (VEGF) and negative (unconditioned medium) controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C94",
+      "C95"
+    ],
+    "result": "PHF19L controls the balance between cell proliferation and invasiveness in prostate cancer. PHF19L is required to maintain high proliferation rates, and its depletion switches cells to a less proliferative but more aggressive phenotype, promoting invasion and angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C94, and C95 represent the main conclusion, integrating findings from proliferation (C88-C89), invasion (C91-C92), angiogenesis (C93), and gene expression (C73-C84) experiments. The conclusion is well-supported by the collective evidence, though the mechanistic understanding of the switch is incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C90"
+    ],
+    "result": "PHF19S depletion has no significant impact on gene expression or cell proliferation. RNA-seq shows an almost unaltered transcriptome profile, and growth curves show no effect on proliferation after PHF19S knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C90 are supported by RNA-seq and growth curve data. This negative result is important for establishing isoform specificity and is consistent with the lack of PRC2 interaction and cytoplasmic localization of PHF19S.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Depletion of one PHF19 isoform does not affect expression of the other isoform. Isoform-specific knockdowns confirm that PHF19L and PHF19S expression are independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by RT-qPCR with isoform-specific shRNAs. This control is important for interpreting isoform-specific phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C114"
+    ],
+    "result": "About 17-23% of PHF19L binding sites are in intergenic regions with H3K4me1 enrichment, suggesting potential enhancer binding. The authors speculate that PHF19L may bind to enhancer elements and regulate neighboring genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C87, and C114 are supported by ChIP-seq data showing intergenic peaks with H3K4me1 enrichment. However, C86 is speculative and not directly tested. Functional validation of enhancer activity and effects on neighboring genes would be needed to support this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors propose mechanistic models for PHF19L and MTF2 interplay. They suggest that PHF19L and PHF19S have different functions, that MTF2 and PHF19 compete for PRC2 binding, that PHF19L loss activates compensatory mechanisms increasing MTF2, that MTF2 replaces PHF19L in PRC2, that PHF19L has a modulatory role keeping PRC2 levels in check, and that changes in PCL expression could alter PRC2 subcomplex balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42, C122-C126 are largely speculative or inferential. While C42 is reasonably inferred from the data, C122-C126 are mechanistic hypotheses that require additional experimental validation (e.g., direct competition assays, MTF2 depletion in PHF19L-depleted cells, measurement of PRC2 residence time).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "PHF19L depletion induces a hypoxia-like gene expression program. HIF-1\u03b1 and multiple hypoxia-associated genes are upregulated, along with genes promoting cytoskeleton changes, ECM remodeling, invasion, metastasis, and angiogenesis (including SOX9, SOX4, MMP1, PLAU, EPCAM, CXCR4, LOX, MET, VEGFA, VEGFC, ANGPTL4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C102, C104, and C105 are supported by RNA-seq data and validated by RT-qPCR. The gene expression changes are consistent with a hypoxia-like response and pro-metastatic phenotype, though the mechanism linking PHF19L loss to hypoxia pathway activation is not established.",
+    "result_type": "MAJOR"
+  }
+]

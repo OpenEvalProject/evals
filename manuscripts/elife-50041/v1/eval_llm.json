@@ -1,0 +1,544 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "p40MET localizes to the mitochondria-associated endoplasmic reticulum membrane (MAM) region. Immunofluorescence experiments show p40MET co-localizes with FACL4, a MAM-resident protein, while GFP alone does not. Subcellular fractionation confirms endogenous p40MET is found exclusively in the MAM fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C43-C46 provide converging evidence from two independent methods (immunofluorescence and subcellular fractionation) demonstrating p40MET localization to MAMs. The use of FACL4 as a MAM marker and appropriate controls (GFP alone, p40MET D1374N) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C42"
+    ],
+    "result": "GFP-p40MET induces apoptosis in epithelial cells and hepatocytes. In MCF10A cells, GFP-p40MET induces cytochrome C release and caspase 3 cleavage as efficiently as flag-p40MET, while the D1374N mutant does not. Similar caspase 3 activation is observed in IHH hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C42 demonstrate consistent pro-apoptotic activity of p40MET across multiple cell types using established apoptotic markers. The D1374N mutant serves as an appropriate negative control, and results are supported by quantitative data in Figure 1b-d.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C63"
+    ],
+    "result": "BAK is the primary BCL2 family member mediating p40MET-induced apoptosis. BAK siRNA abrogates p40MET-induced caspase 3 activation and cytochrome C release in MCF10A cells, while BAX silencing has no effect. BOK silencing shows partial inhibition. This pattern is confirmed in IHH liver-derived cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 and C63 provide systematic siRNA knockdown data across multiple cell types demonstrating BAK's essential role. The differential effects of BAK, BAX, and BOK silencing are clearly shown with appropriate controls and statistical significance (Figure 2\u2014figure supplement 1-2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C62"
+    ],
+    "result": "p40MET directly interacts with BAK as demonstrated by FRET experiments. Co-transfection of BAK-mT2 and p40MET-SYFP2 yields ~2.5% FRET efficiency, while the reverse configuration yields ~4% FRET efficiency. Similar interactions are confirmed in IHH cells (1.5% and 5.0% FRET efficiency in different configurations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 and C61-C62 demonstrate p40MET-BAK interaction using bidirectional FRET with appropriate positive (BAK-BCL-XL, 8% FRET) and negative (freely diffusing SYFP2, <0.1% FRET) controls. The interaction is confirmed in multiple cell types with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "p40MET contains a functional BH3-like domain that mediates its interaction with BAK. Sequence alignment reveals a conserved LXXXXD motif in p40MET. Mutation of L1110 and D1115 residues abrogates p40MET's pro-apoptotic activity and decreases its interaction with BAK in FRET experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 provide sequence analysis, functional mutagenesis, and FRET data demonstrating the BH3-like domain's importance. The loss of both apoptotic activity and BAK interaction upon mutation of conserved residues provides strong mechanistic evidence (Figure 2\u2014figure supplement 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "Calcium flux between ER and mitochondria is required for p40MET-induced apoptosis. p40MET-induced cytochrome C release is inhibited by Ca2+-free medium, calcium chelation (BAPTA-AM), IP3R inhibition (xestospongin B), and MCU silencing in both MCF10A and IHH cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 and C77 demonstrate calcium dependence through multiple independent interventions targeting different steps of calcium flux. The specificity is supported by control experiments showing staurosporine-induced apoptosis is unaffected by these treatments (C76, Figure 3\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "p40MET causes ER calcium depletion and mitochondrial calcium overload. Thapsigargin-induced Fura-2 fluorescence peaks are significantly lower in p40MET-expressing cells, suggesting ER calcium depletion. The 4mtD3cpv mitochondrial biosensor shows 26% increased FRET efficiency with p40MET, indicating mitochondrial calcium accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 use complementary calcium probes targeting different compartments to demonstrate p40MET's effect on calcium homeostasis. The Fura-2 and 4mtD3cpv data provide direct evidence for the proposed ER-to-mitochondria calcium transfer mechanism (Figure 3g-h).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "p40MET-induced apoptosis involves mitochondrial permeability transition pore (mPTP) opening. Cyclosporin A, an mPTP inhibitor, reduces p40MET-induced apoptosis, consistent with mitochondrial calcium overload leading to permeabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide pharmacological evidence linking calcium overload to mPTP opening and apoptosis. This completes the mechanistic pathway from calcium transfer to mitochondrial permeabilization (Figure 3i).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C31"
+    ],
+    "result": "A knock-in mouse model was generated with D1374N mutation at the MET C-terminal caspase cleavage site. The mutation prevents C-terminal cleavage of MET, allowing investigation of p40MET's physiological role in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C31 describe the generation of a specific genetic model targeting the caspase cleavage site. The strategy is clearly documented with appropriate molecular characterization (Figure 4a-b).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "D1374N Mouse Embryonic Fibroblasts (MEFs) show increased resistance to anisomycin-induced apoptosis compared to wild-type MEFs, demonstrating the importance of the caspase cleavage site for optimal apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 provide initial validation of the knock-in model showing functional consequences of preventing MET cleavage. Data are shown in Figure 4\u2014figure supplement 1a-b with appropriate statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "WT and D1374N BMEL cells show comparable baseline characteristics. Both cell types display similar BMEL marker expression, doubling times, HGF-induced scattering, and HGF-induced phosphorylation of MET, AKT, and ERK, indicating preserved pro-survival MET signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 establish that the D1374N mutation specifically affects pro-apoptotic function without impairing pro-survival signaling. Multiple independent assays (RT-qPCR, proliferation, migration, phosphorylation) support this conclusion (Figure 4c-f).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Staurosporine treatment generates p40MET in WT BMEL cells and a slightly longer p40MET D1374N fragment in D1374N cells. Pan-caspase inhibitors prevent generation of both fragments, confirming caspase-dependent cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 demonstrate differential cleavage products in WT versus D1374N cells, with the D1374N fragment retaining the C-terminal tail as expected. Caspase inhibitor controls confirm specificity (Figure 4g).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MET D1374N BMEL cells are more resistant to apoptosis than WT cells. D1374N cells form clusters without collagen coating while WT cells fail to grow. Staurosporine treatment induces caspase 3 and PARP cleavage in WT but not D1374N cells. Similar resistance is observed with ABT737 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 demonstrate consistent apoptosis resistance across multiple assays and apoptotic stimuli. The data establish MET cleavage as important for apoptosis amplification in hepatic progenitors (Figure 5a-c, Figure 5\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Calcium flux is involved in p40MET-induced cell death in BMEL cells. A lower percentage of D1374N cells display staurosporine-induced caspase activation compared to WT. Only WT cells respond to IP3R inhibitor xestospongin, confirming calcium flux involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 extend the calcium flux mechanism to the BMEL cell model. The differential response to xestospongin between WT and D1374N cells provides strong evidence for p40MET-specific calcium-dependent apoptosis (Figure 5d).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Staurosporine-treated WT BMEL cells have lower mitochondrial calcium uptake capacity than D1374N cells. Mitochondrial uptake stops at 100 \u00b5M total calcium in WT cells versus 140 \u00b5M in D1374N cells, suggesting WT cells are already calcium-overloaded due to p40MET generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 provide direct measurement of mitochondrial calcium handling capacity using calcium green probe. The reduced capacity in WT cells supports the model of p40MET-induced calcium overload (Figure 5e-f).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "D1374N mice show normal development and organ morphology. WT and D1374N mice display no obvious phenotypic differences, show expected Mendelian inheritance ratios, and have normal liver and mammary gland organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 establish that the D1374N mutation does not affect development or pro-survival MET functions, validating the model's specificity for studying pro-apoptotic activity. Histological analysis confirms normal organ architecture (Figure 6a-c, Figure 6\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "D1374N mice show reduced hepatocyte apoptosis after FAS injection compared to WT mice. Four hours after FAS injection, 62% of WT mice show highly positive caspase 3 staining versus 27% of D1374N mice. Only 8% of WT livers are negative for caspase 3 versus 47% of D1374N livers. Overall, 92% of WT mice are positive versus 53% of D1374N mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 provide quantitative immunohistochemical analysis of apoptosis in vivo with clear statistical differences between genotypes. The scoring system and sample sizes (n=13-15) are appropriate (Figure 6e, Figure 6\u2014figure supplement 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "D1374N mice show reduced liver injury after FAS injection as measured by plasma transaminases. 82% of WT mice doubled plasma ALAT levels versus 46% of D1374N mice. All WT mice doubled ASAT levels versus 70% of D1374N mice. This demonstrates MET C-terminal caspase cleavage is important for optimal apoptosis in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 provide independent biochemical evidence of reduced liver injury in D1374N mice using clinically relevant markers. The transaminase data corroborate the histological findings and support the in vivo importance of MET cleavage (Figure 6f).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "p40MET production is important for FAS-driven hepatocyte apoptosis in vivo, demonstrating that MET acts as a dependence receptor in vivo. This is the primary conclusion integrating the knock-in mouse data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 represent the main conclusion supported by the comprehensive in vivo data (C114-C122). The FAS-induced hepatitis model with crizotinib pretreatment appropriately tests the pro-apoptotic function while blocking pro-survival signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C133",
+      "C134"
+    ],
+    "result": "The proposed mechanistic model: Upon MET cleavage by caspases, p40MET is released into the cytoplasm where it interacts with BAK at MAMs and promotes calcium flux from ER to mitochondria, causing mitochondrial permeabilization and apoptosis amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C133-C134 synthesize the mechanistic findings into a coherent model. This model is well-supported by the localization data (C28, C43-C46), BAK interaction data (C52-C56, C66-C70), and calcium flux data (C71-C83). The model is illustrated in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C132"
+    ],
+    "result": "p40MET shows differential interactions with BCL2 family members. FRET experiments show p40MET interacts with BAX (2.5-4.3% FRET) but hardly with BCL-XL (1.5% FRET) or BOK (negative). This selectivity supports BAK as the primary partner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 and C132 systematically test interactions with multiple BCL2 family members. The differential FRET efficiencies with appropriate controls establish interaction specificity (Figure 2\u2014figure supplement 4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "No direct FRET was detected between p40MET or BAK and IP3R1, suggesting these proteins do not directly interact despite their co-localization at MAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide negative data that help define the mechanism. The absence of IP3R interaction suggests p40MET affects calcium flux through BAK rather than direct IP3R modulation (Figure 2b-c).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Pan-caspase inhibitor treatment increases the proportion of p40MET-transfected cells displaying cytochrome C release, likely by inhibiting late apoptosis and preventing apoptotic cell detachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 provide a technical observation with mechanistic interpretation. The data support the conclusion but the interpretation about cell detachment is reasonable though not directly tested (Figure 1\u2014figure supplement 1d).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In IHH cells, BH3 mimetic treatment promotes p40MET generation, which is inhibited by pan-caspase inhibitors and MET silencing, confirming caspase-dependent generation of p40MET in hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 validate p40MET generation in hepatocyte-relevant cells with appropriate controls. The data establish the relevance of the mechanism in liver-derived cells (Figure 1\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "HGF/SF induces a survival response in primary hepatic progenitors that is reduced by crizotinib, validating the experimental approach of using crizotinib to block pro-survival MET signaling in the in vivo experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 provides important validation for the in vivo experimental design. The data show crizotinib effectively blocks HGF-induced survival, justifying its use to isolate pro-apoptotic MET function (Figure 6\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "This is the first demonstration of a dependence receptor acting via regulation of calcium flux, representing a novel mechanism for this receptor class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 asserts novelty but relies on the authors' knowledge of the literature. While the calcium flux mechanism for p40MET appears well-supported, comprehensive verification that no other dependence receptor uses this mechanism would require exhaustive literature review beyond the scope of this evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background on MET receptor: MET was discovered three decades ago and is important in embryogenesis, injury repair, neurodegenerative diseases, and cancers. MET activation triggers survival, proliferation, and migration. The HGF/SF-MET pair plays crucial roles in liver development and adult tissue homeostasis. MET can also promote apoptosis and is classified as a dependence receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide established background information supported by appropriate citations. These claims set the context for the study but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work on p40MET: MET cleavage by caspases at DNID1374 and ESVD1000 sites generates p40MET, which amplifies apoptosis through mitochondrial permeabilization. The C-terminal cleavage removes only five amino acids but is essential for apoptotic activity. The juxtamembrane site overlaps with the CBL recruitment site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 summarize prior findings from the authors' previous work (Lefebvre et al., 2013) and others, providing necessary background. These are appropriately cited and establish the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior work on mitochondrial permeabilization: Mitochondrial permeabilization is regulated by BCL2-family proteins and BH3-only proteins like BAX and BAK. BAK silencing inhibits p40MET's apoptotic capacity, but no direct interaction between p40MET and BH3-only proteins had been reported prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 accurately summarize prior knowledge and identify the gap this study addresses. The citations support the background claims and C22 correctly identifies the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on ER-mitochondria calcium signaling: BH3-only proteins localize to ER in addition to mitochondria and can interact with IP3R channels, causing calcium flux deregulation. Calcium overload causes mitochondrial permeabilization through mPTP opening, leading to swelling and membrane disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide well-established background on calcium signaling in apoptosis, supported by multiple citations. This background is essential for understanding the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Background on MAMs and BCL2 proteins: MAMs are ER-mitochondria contact sites crucial for cell death amplification. BCL2 proteins localize to both ER and mitochondria and regulate calcium homeostasis. Anti-apoptotic members (Bcl-2, Bcl-XL) promote resistance while pro-apoptotic members (BAX, BAK) induce calcium leakage. BAK facilitates calcium transfer by promoting ER-mitochondria contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C131 provide comprehensive background on MAMs and BCL2 protein function in calcium signaling, all supported by appropriate citations. This establishes the biological context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Background on dependence receptor mechanisms: Dependence receptors use diverse mechanisms to promote apoptosis. DCC and UNC5H act through death-domain unmasking, while TrkC releases a fragment that promotes BAX activation at mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 provide comparative context for understanding MET's mechanism relative to other dependence receptors, supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Background and validation of mouse model: Met or Hgf/sf knockout is lethal in utero with reduced liver size and altered liver regeneration. The current study finds liver and mammary gland organogenesis are not affected by the D1374N mutation, validating the model's specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 combine background (C139-C140) with validation data (C141). The comparison establishes that the D1374N mutation specifically affects pro-apoptotic function without disrupting essential developmental functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Clinical relevance: DCC ligand overexpression promotes adenoma formation, and DCC acts as a conditional tumor suppressor. The COSMIC database lists six MET caspase site mutations in cancers, and exon 14 splice-site mutations (3% of lung tumors) eliminate the juxtamembrane caspase site. These mutations support the notion that MET pro-apoptotic function may constrain tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 provide clinical context and cancer genomics data supporting the biological relevance of MET's pro-apoptotic function. The COSMIC database evidence and published mutations support the interpretation, though C146 is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Staurosporine-induced apoptosis is unaffected by calcium-related treatments (Ca2+-free medium, BAPTA-AM, xestospongin), demonstrating specificity of calcium dependence for p40MET-induced apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 provides important negative control data showing that not all apoptotic pathways require calcium flux, supporting the specificity of the p40MET mechanism (Figure 3\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Background citation: HGF/SF production promotes hepatocyte survival in FAS-induced fulminant hepatitis, providing rationale for the experimental model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 cites prior work (Kosai et al., 1998) establishing the biological context for the FAS-induced hepatitis model used in this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C85"
+    ],
+    "result": "Female mice exhibited approximately two-fold more differentially expressed genes (DEGs) in response to nPM exposure compared to males in both B6 and APOE-TR strains, with APOE3 females showing the greatest transcriptomic response (153-189 genes). This sex difference was confirmed by both differential expression analysis and WGCNA module analysis, with APOE3 mice showing more nPM-responsive genes than APOE4 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C31-34, and C85 are consistently supported by RNAseq data analysis (C28-34) showing female-biased transcriptomic responses across multiple analytical approaches (DE and WGCNA). The data are presented with appropriate statistical thresholds (p=0.005) and sample sizes (n=4/group), with results visualized in Figure 1D. The convergence of multiple analytical methods strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C52",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C97"
+    ],
+    "result": "Transcriptomic responses to nPM showed sex-APOE interactions in Alzheimer's disease-relevant pathways. Only APOE3 mice (both sexes) responded to nPM in genes related to amyloid clearance (Vav2, Vav3, S100a9), with APOE3 females showing the highest response in amyloidogenesis genes (App, Bace1, Psen1, Tau, Gsk3b).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, C52, C57-59, C61, and C97 are supported by gene expression data shown in Figures 3A-B and 3E. The APOE3-specific responses in amyloid clearance genes and the female APOE3-specific responses in amyloidogenesis genes are demonstrated with appropriate statistical analysis (ANOVA with FDR correction). However, the functional significance of these transcriptional changes is uncertain given that A\u03b2 peptide levels were unchanged (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C102",
+      "C103"
+    ],
+    "result": "Despite transcriptional changes in amyloidogenesis genes, nPM exposure did not alter A\u03b240 or A\u03b242 peptide levels in the cerebral cortex of APOE-TR mice. However, baseline A\u03b240 levels were 50% lower in males than females, and A\u03b240 showed significant negative correlations with amyloidogenesis gene expression (App: r=-0.65; Psen1: r=-0.51 to -0.67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-55, C102-103 are supported by peptide measurement data (Figure 3C) and correlation analysis (Figure 3D). The lack of peptide-level changes despite mRNA changes is explained by the authors as potentially due to the wildtype murine A\u03b242 sequence in APOE-TR mice, which aggregates less readily than human A\u03b242 (C103). The negative correlation between mRNA and peptide levels is statistically significant and suggests compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C87",
+      "C125"
+    ],
+    "result": "Genes downstream of NFKB and NRF2 responded in opposite directions to nPM exposure, with sex and APOE specificity. Principal component analysis revealed that PC2 of NFKB genes (20% variance) showed nPM:sex interaction, while PC2 of NRF2 genes (6.4% variance) showed nPM:sex and nPM:APOE interactions. These PCs were strongly inversely correlated (r=-0.95, p=0.0001), suggesting crosstalk between these transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C65-73, C87, and C125 are supported by comprehensive gene expression analysis (Figures 4A-C, 5A-E) with appropriate statistical methods (PCA, correlation analysis). The inverse correlation between NRF2 and NFKB PC2 scores is highly significant and biologically plausible. Female-specific cytokine responses (C68) are supported by protein measurements. The sample size (n=4/group) is adequate for these analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C77",
+      "C127"
+    ],
+    "result": "Nrf2 knockdown (~40%) in BV2 microglia augmented NFKB-mediated responses to nPM, with 30% higher Nfkbp50 mRNA and 200% higher mRNA of inflammatory genes (Inos, Il1b, Il6), demonstrating a critical regulatory role of NRF2 in suppressing inflammatory responses to air pollution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-27, C77, and C127 are supported by in vitro knockdown experiments (Figure 6D) with appropriate controls and replication (n=6/group, two biological replicates). The augmentation of NFKB responses upon Nrf2 knockdown provides direct mechanistic evidence for NRF2's inhibitory role. However, the use of immortalized BV2 cells (acknowledged by authors) and the in vitro setting limit direct extrapolation to in vivo conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C126",
+      "C130"
+    ],
+    "result": "Short-term nPM exposure (3 weeks) in B6 male mice induced nuclear translocation of NRF2 protein (+50%) and increased cytosolic NFKBP65 (+25%), with dose-dependent opposing changes in downstream targets: increased Nrf2 mRNA and GCLC protein (r=0.6, p=0.005), but decreased Nfkbp65, Nfkbp50 mRNA and IL2 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-76, C126, and C130 are supported by dose-response experiment data (Figure 6A-C) with adequate sample size (n=10/group) and appropriate dose range (100-300 \u03bcg/m\u00b3). The concurrent nuclear NRF2 and cytosolic NFKBP65 increases support the hypothesis of NRF2-mediated NFKB inhibition (C130), though this inference requires additional mechanistic validation. The dose-dependent responses strengthen causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C78",
+      "C86"
+    ],
+    "result": "Combined analysis of B6 and APOE-TR mice identified 140 DEGs responding to nPM (p=0.005), enriched in pathways including neuronal function (axonal guidance, calcium signaling, glutamate receptors), inflammation (AMPK, SAPK/JNK, NFKB), and stress responses (NRF2, HIF1A). Top DEGs included Grin1 (+20%) and Rap1a (-20%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-30, C78, and C86 are supported by RNAseq analysis (Figure 1A-C) with appropriate multivariate modeling adjusting for sex, APOE genotype, and batch effects. The pathway enrichment analysis (IPA) is standard and appropriate. However, the authors acknowledge statistical limitations due to small sample size (n=4/group) and high dimensionality, using p=0.005 rather than FDR-corrected thresholds (C140-141), which may include false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C99",
+      "C112"
+    ],
+    "result": "APOE4 showed baseline differences from APOE3 in 133 DEGs (5% FDR) enriched for immune pathways (NFKB, IL10, rheumatoid arthritis) and metabolic pathways (LXR/RXR, glutamate metabolism, oxidative stress). Males showed 60% more APOE-dependent DEGs than females (75 vs 45 genes), with 7% overlap between APOE4 baseline differences and nPM-responsive genes, suggesting convergent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-49, C99, and C112 are supported by differential expression analysis (Figure 2A-D) with appropriate FDR correction (5%) for baseline comparisons. The sex difference in APOE effects and the overlap analysis are well-documented. However, the interpretation of 7% overlap as 'convergent effects' (C49) is somewhat speculative and could reflect chance overlap given the number of genes tested. The ceiling effect hypothesis (C98) is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Upstream regulator analysis identified Nfe2l2 (Nrf2) as the top candidate regulator of nPM responses, with sex-specific upstream regulators including female-specific responses (Pparg, Sp1, Tnfsf11) and male-specific responses (Traf6, Camk2, Ccdc22). Canonical pathway analysis revealed sex-specific enrichment in neuronal, metabolic, and inflammatory pathways, with cell-type deconvolution showing APOE and sex-specific microglial and astrocyte responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-43 are supported by comprehensive IPA analysis (Figures 1E-F, Figure 1\u2014figure supplement 3) of sex- and APOE-stratified data. The identification of Nrf2 as top upstream regulator is consistent with the mechanistic findings. Cell-type deconvolution using BRETIGEA adds cellular resolution. However, IPA predictions are computational and require experimental validation. The sex-specific upstream regulators represent hypotheses rather than proven mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Network analysis revealed that nPM-responsive pathways (calcium signaling, HIF1A, AMPK, SAPK/JNK, endocannabinoid, NRF2) form a highly interconnected network of oxidative and inflammatory responses. In mixed glial culture, acute nPM exposure (24h) induced major increases in Nrf2 (300%) and Nfkb (400%) mRNA, with upregulation of 17 NRF2 and 30 NFKB downstream genes, suggesting these transcription factors are hub regulators of nPM neurotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-84 and C136-139 are supported by pathway analysis (Figure 7) and prior in vitro data (Woodward et al., 2017a). The network construction using IPA is appropriate, and the acute responses in mixed glial culture support the in vivo findings. However, the conclusion that NRF2 and NFKB are 'hub regulators' (C139) is inferential and requires additional validation. The use of prior published data for the glial culture analysis is appropriate but limits independent verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C63",
+      "C64"
+    ],
+    "result": "The 7% overlap between APOE4 baseline differences and nPM-responsive genes showed sex-specific pathway enrichment: females showed metabolic pathways (glycolysis, oxidative phosphorylation) and DNA repair, while males showed iron homeostasis, telomere extension, and immune response pathways. Baseline complement gene expression (C3: 10-fold; C3ar1: +50%) was higher in APOE3 than APOE4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-51 and C63-64 are supported by pathway analysis of overlapping genes (Figure 2C-D) and gene expression data. The sex-specific pathway differences in the overlap are interesting but based on small gene sets (70 female, 37 male DEGs with 7% overlap), limiting statistical power. The complement gene baseline differences are well-documented and consistent with known APOE biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C60",
+      "C62",
+      "C108"
+    ],
+    "result": "Approximately 10% of amyloid clearance genes (5/46) differed by APOE or nPM exposure. The Vav guanine nucleotide exchange factors mediate phagocytosis of fibrillar A\u03b2, S100a9 (Mrp14) regulates microglial phagocytosis of fibrillar A\u03b2, and complement factor C3 mediates amyloid clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C60, C62, and C108 are supported by gene expression data and appropriate citations to functional studies (Wilkinson et al., 2006; Kummer et al., 2012; Maier et al., 2008). The functional roles of these genes in amyloid clearance are well-established in the literature. However, the functional significance of the observed expression changes in the context of nPM exposure remains to be demonstrated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors acknowledge statistical limitations: high dimensionality of RNAseq data (>20,000 genes) combined with small sample size and small effect sizes limited power to detect changes at 5% FDR. They used p=0.005 threshold and validated key findings (Nrf2, Nfkb, Gclc) through dose-response experiments showing 50% changes, confirming that RNAseq analysis has inherent false-positive and false-negative risks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-143 represent appropriate acknowledgment of statistical limitations. The validation of key genes through independent dose-response experiments (C142, Figure 6) strengthens confidence in the main findings despite the liberal p-value threshold. The authors' transparency about these limitations is commendable, though it raises questions about which other genes at p=0.005 might be false positives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "The authors previously characterized physical and chemical properties of nPM affecting toxicity, and report that NRF2 and NFKB responses were consistent across all nPM batches used in different experiments despite batch heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-145 are supported by citations to prior work (Zhang et al., 2019; Haghani et al., 2020) and consistency of findings across experiments. The chemical characterization data are provided in Figure 1\u2014figure supplement 1. The consistency of NRF2/NFKB responses across batches strengthens the generalizability of findings, though batch-to-batch variation in other endpoints cannot be excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The introduction establishes that air pollution is a major risk factor for morbidity, mortality, and neurodegeneration including AD, but interactions between air pollution neurotoxicity, sex, and APOE alleles remain poorly understood in both epidemiological studies and mouse models. Prior studies showed APOE4-dependent effects in female mice (E4FAD accumulated more amyloid) but opposite effects with ozone in males (APOE3 showed greater impairment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-12 are background claims supported by appropriate citations to epidemiological and experimental literature. These establish the rationale for the study by documenting the knowledge gap regarding sex-APOE interactions in air pollution neurotoxicity. The citations appear appropriate and the characterization of prior work is accurate based on the cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction establishes that NRF2 and NFKB are redox-sensitive transcription factors controlling hundreds of genes mediating oxidative stress and immune responses, with complex interplay that can alter anti-oxidative or inflammatory balance. Prior studies showed these pathways respond to air pollution, with sex and APOE allele differences in NRF2 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-20 provide background on NRF2 and NFKB biology supported by appropriate citations. These establish the mechanistic rationale for focusing on these pathways. The characterization of NRF2 and NFKB functions and their prior responses to air pollution and other stressors is well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C96"
+    ],
+    "result": "The discussion contextualizes findings within prior literature: IL1B variants interact with air pollution for Parkinson's risk; human frontal cortex from polluted cities showed 134 responding genes including NFKB and antioxidant responses; rat brain exposed to PM0.2 showed overlapping responses (S100a9, calcium channels, glutamate receptors); hippocampal neurites are selectively sensitive to nPM; and GRIN variants increased cognitive impairment risk from lead poisoning in children.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-92 and C96 are supported by appropriate citations to prior literature (Lee et al., 2016; Calder\u00f3n-Garcidue\u00f1as et al., 2012; Ljubimova et al., 2013; Morgan et al., 2011; Woodward et al., 2017b; Fonken et al., 2011; Rooney et al., 2018b). These comparisons appropriately contextualize the current findings within existing literature on air pollution neurotoxicity and gene-environment interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The discussion proposes that smaller APOE4 responses to nPM may reflect a ceiling effect, as 7% of nPM-responsive genes had APOE4 baseline differences. This pattern parallels ozone responses and aging effects. In EFAD mice with familial AD mutations, nPM increased amyloid plaques more in E4FAD than E3FAD, though oligomers increased more in E3FAD. The authors hypothesize that APOE alleles cause differences in amyloid clearance, with APOE4 astrocytes showing less efficient A\u03b2 clearance due to endosomal acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98, C100-101, C104-107, C109-111 represent interpretations and hypotheses based on the data and literature. The ceiling effect hypothesis (C98) is plausible but speculative. The comparison to EFAD mice (C104-106) is supported by citations but involves different models. The hypothesis about APOE-dependent clearance differences (C107, C111) is reasonable but unproven. These represent important discussion points but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The discussion addresses sex differences in inflammatory responses, noting that APOE4 showed greater responses to LPS in males (in vivo and in vitro), while ex vivo microglia showed sex-divergent responses to estradiol and LPS. Estradiol increased NRF2 antioxidant defense and reduced NFKB signaling in various models. Female mice had higher baseline A\u03b240 levels, paralleling female excess amyloid in aged AD models, with sex steroids playing a major role in determining A\u03b2 accumulation, suggesting a 'double-edged sword' effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-124 are supported by appropriate citations to literature on sex differences in neuroinflammation and AD pathology (Zhu et al., 2012; Jofre-Monseny et al., 2007; Loram et al., 2012; Hanamsagar et al., 2017; Chen et al., 2013; Khan et al., 2018; Prasad et al., 2017; Callahan et al., 2001; Hirata-Fukae et al., 2008; Carroll et al., 2010; Pike et al., 2009). The 'double-edged sword' interpretation (C124) is a reasonable synthesis of the complex effects of sex steroids.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors claim this is the first evidence for NRF2-NFKB interactions in response to air pollution in both in vivo and in vitro models, paralleling LPS responses in monocytes. They hypothesize involvement of KEAP1 in mediating IKKB degradation and inhibiting NFKB nuclear localization, with additional mechanisms including NRF2 inhibition of NFKB through reactive species reduction and RAC1 suppression, and NFKB inhibition of NRF2 through HDAC3 recruitment or competition for CBP binding. Similar interactions occur in C. elegans with nPM exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-129 and C131-135 are supported by the current data and appropriate citations to mechanistic literature (Zhang et al., 2017b; Kim et al., 2010; Lee et al., 2009; Sanlioglu et al., 2001; Cuadrado et al., 2014; Wakabayashi et al., 2010; Liu et al., 2008; Haghani et al., 2019). The novelty claim (C128) appears justified. The mechanistic hypotheses (C131-134) are well-grounded in prior literature, though direct demonstration of these mechanisms in the air pollution context requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors conclude that air pollution neurotoxicity has sex- and APOE allele-specificity, which are main risk factors for AD. They propose that NRF2-NFKB interactions may modulate sex and APOE risk for AD and accelerated cognitive aging during air pollution exposure, providing rationale for including APOE-gender interactions in epidemiological studies of cognitive aging and dementias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C146-147 represent the main conclusions and recommendations of the study. These are supported by the collective findings demonstrating sex-APOE interactions in transcriptomic responses to nPM and the mechanistic role of NRF2-NFKB crosstalk. The recommendation for epidemiological studies (C147) is appropriate given the findings, though the clinical relevance requires validation in human studies. The speculation about modulation of AD risk (C88) is reasonable but requires longitudinal studies.",
+    "result_type": "MAJOR"
+  }
+]

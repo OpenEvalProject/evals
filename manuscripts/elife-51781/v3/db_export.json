@@ -1,0 +1,1520 @@
+{
+  "submission": {
+    "id": "7a31cbac-0987-401f-b0ae-5800dbb237c5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:11:08.080525Z",
+    "updated_at": "2025-12-02T14:11:08.080525Z"
+  },
+  "content": [
+    {
+      "id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "submission_id": "7a31cbac-0987-401f-b0ae-5800dbb237c5",
+      "content_type": "manuscript",
+      "content_text": "# A multilayer circuit architecture for the generation of distinct locomotor behaviors in Drosophila\n\n## Authors\n\n- Aref Arzan Zarin<sup>1</sup> ([ORCID: 0000-0003-0484-3622](https://orcid.org/0000-0003-0484-3622)) \u2020\n- Brandon Mark<sup>1</sup>\n- Albert Cardona<sup>2</sup>\n- Ashok Litwin-Kumar<sup>3</sup> ([ORCID: 0000-0003-2422-6576](https://orcid.org/0000-0003-2422-6576))\n- Chris Q Doe<sup>1</sup> ([ORCID: 0000-0001-5980-8029](https://orcid.org/0000-0001-5980-8029)) \u2020\n\n### Affiliations\n\n1. Institute of Neuroscience Howard Hughes Medical Institute, University of Oregon Eugene United States\n2. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n3. Mortimer B Zuckerman Mind Brain Behavior Institute, Department of Neuroscience Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimals generate diverse motor behaviors, yet how the same motor neurons (MNs) generate two distinct or antagonistic behaviors remains an open question. Here, we characterize Drosophila larval muscle activity patterns and premotor/motor circuits to understand how they generate forward and backward locomotion. We show that all body wall MNs are activated during both behaviors, but a subset of MNs change recruitment timing for each behavior. We used TEM to reconstruct a full segment of all 60 MNs and 236 premotor neurons (PMNs), including differentially-recruited MNs. Analysis of this comprehensive connectome identified PMN-MN \u2018labeled line\u2019 connectivity; PMN-MN combinatorial connectivity; asymmetric neuronal morphology; and PMN-MN circuit motifs that could all contribute to generating distinct behaviors. We generated a recurrent network model that reproduced the observed behaviors, and used functional optogenetics to validate selected model predictions. This PMN-MN connectome will provide a foundation for analyzing the full suite of larval behaviors.\n\n## Introduction\n\nLocomotion is a rhythmic and flexible motor behavior that enables animals to explore and interact with their environment. Birds and insects fly, fish swim, limbed animals walk and run, and soft-body invertebrates crawl. In all cases, locomotion results from coordinated activity of muscles with different biomechanical outputs. This precisely regulated task is mediated by neural circuits composed of motor neurons (MNs), premotor interneurons (PMNs), proprioceptors, and descending command-like neurons (Marder and Bucher, 2001; Arber, 2017; Arber and Costa, 2018). A partial map of neurons and circuits regulating rhythmic locomotion have been made in mouse (Crone et al., 2008; Grillner and Jessell, 2009; Zagoraiou et al., 2009; Dougherty et al., 2013; Goetz et al., 2015; Bikoff et al., 2016), cat (Kiehn, 2006; Nishimaru and Kakizaki, 2009), fish (Kimura et al., 2013; Song et al., 2016), tadpole (Roberts et al., 2008; Roberts et al., 2010), lamprey (Grillner, 2003; Mullins et al., 2011), leech (Brodfuehrer and Thorogood, 2001; Kristan et al., 2005; Marin-Burgin et al., 2008; Mullins et al., 2011), crayfish (Mulloney and Smarandache-Wellmann, 2012; Mulloney et al., 2014), and worm (Tsalik and Hobert, 2003; Wakabayashi et al., 2004; Haspel et al., 2010; Kawano et al., 2011; Piggott et al., 2011; Wen et al., 2012; Zhen and Samuel, 2015; Roberts et al., 2016). These pioneering studies have provided a wealth of information on motor circuits, but with the exception of C. elegans (White et al., 1986), there has been no system where all MNs and PMNs have been identified and characterized. Thus, we are missing a comprehensive picture of how an ensemble of interconnected neurons generates diverse locomotor behaviors.\n\nMuscle recruitment patterns during different locomotor behaviors have been previously studied in multiple organisms, including human (Grasso et al., 1998; van Deursen et al., 1998; Neptune et al., 2000), cat (Buford and Smith, 1990), stick insect (Gruhn et al., 2006; T\u00f3th et al., 2012), and leech (Friesen and Kristan, 2007). In the case of forward and backward locomotion, it has been suggested that only a subset of muscles change their activity timing in one behavior versus another, indicating an overall similarity in muscle recruitment patterns between these seemingly distinct behaviors (Buford and Smith, 1990; Neptune et al., 2000). We are interested in understanding how the Drosophila larva executes multiple behaviors, in particular forward versus backward crawling (Carreira-Rosario et al., 2018). Are there different MNs used in each behavior? Are the same MNs used but with distinct patterns of activity determined by premotor input? A rigorous answer to these questions requires both comprehensive anatomical information \u2013 that\u00a0is a PMN/MN connectome \u2013 and the ability to measure rhythmic neuronal activity and perform functional experiments. All of these tools are currently available in Drosophila, and here we use them to characterize the neuronal circuitry used to generate forward and backward locomotion.\n\nThe Drosophila larva is composed of 3 thoracic (T1-T3) and nine abdominal segments (A1-A9; Figure 1A), with sensory neurons extending from the periphery into the CNS, and motor neurons extending out of the CNS to innervate body wall muscles. Most segments contain 30 bilateral body wall muscles that form \u2018spatial muscle groups\u2019 based on common location and orientation: dorsal longitudinal (DL; includes previously described DA and some DO muscles), dorsal oblique (DO), ventral longitudinal (VL), ventral oblique (VO), ventral acute (VA) and lateral transverse (LT)(Figure 1B)\u00a0(Crossley, 1978; Hooper, 1986; Bate, 1990). Using these muscles, the larval nervous system can generate both forward and backward locomotion (reviewed in Kohsaka et al., 2017; Clark et al., 2018). Forward crawling behavior in larvae involves a peristaltic contraction wave from posterior to anterior segments; backward crawling entails a posterior propagation of the contraction wave (Crisp et al., 2008; Dixit et al., 2008; Berni et al., 2012; Gjorgjieva et al., 2013; Heckscher et al., 2015; Pulver et al., 2015; Loveless et al., 2018; Kohsaka et al., 2019) (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig1-v3.jpg)\n\n**Figure 1.:** (A) Drosophila larva contain three thoracic and nine abdominal segments, the muscles of which are innervated by MNs located in the corresponding thoracic and abdominal segments of the CNS. (B) Schematic of the 29 muscles of abdominal segments (A1) from internal and external view. Segments A2-A6 are similar to A1, with the exception that they have a muscle 25 (dashed line, asterisk) here overlaid on the A1 muscle pattern.\n\nThere are\u00a0~30 bilateral pair of MNs in each segment: 26 pair of type Ib MNs with big boutons that typically innervate one muscle; two pair of type Is MNs with small boutons that innervate large groups of dorsal or ventral muscles; one or two type III insulinergic MNs innervating muscle 12; and three type II ventral unpaired median (VUM) MNs that provide octopaminergic innervation to most muscles (Table 1) (Gorczyca et al., 1993; Landgraf et al., 1997; Hoang and Chiba, 2001; Landgraf et al., 2003; Choi et al., 2004; Mauss et al., 2009; Koon et al., 2011; Koon and Budnik, 2012; Arzan Zarin and Labrador, 2019). Elegant pioneering work showed that type Ib MNs innervating muscles in the same spatial muscle group typically project dendrites to the same region of the dorsal neuropil, creating a myotopic map (Landgraf et al., 1997; Mauss et al., 2009). Several MNs have been shown to be rhythmically active during larval locomotion (Heckscher et al., 2012; Zwart et al., 2016), but only a few of their premotor inputs have been described (Kohsaka et al., 2014; Heckscher et al., 2015; Fushiki et al., 2016; Hasegawa et al., 2016; Zwart et al., 2016; Takagi et al., 2017; Carreira-Rosario et al., 2018; Kohsaka et al., 2019). Some excitatory PMNs are involved in initiating activity in their target MNs (Fushiki et al., 2016; Hasegawa et al., 2016; Zwart et al., 2016; Takagi et al., 2017; Carreira-Rosario et al., 2018), while some inhibitory PMNs limit the duration of MN activity (Kohsaka et al., 2014; MacNamee et al., 2016; Schneider-Mizell et al., 2016) or produce intrasegmental activity offsets (Zwart et al., 2016). Interestingly, some PMNs are active specifically during forward locomotion or backward locomotion (Kohsaka et al., 2014; Heckscher et al., 2015; Fushiki et al., 2016; Hasegawa et al., 2016; Takagi et al., 2017; Carreira-Rosario et al., 2018; Kohsaka et al., 2019). Yet a comprehensive map of the activity and connectivity of the PMN-MN-muscle network, which is essential for a full understanding of how locomotor behavior is generated, remains unknown.\n\n**Table 1.**\n Motor neurons present in the CATMAID reconstruction.All MNs were identified in the first abdominal segment on both left and right sides, with the exception of MN25 which is not present in A1 and thus annotated in A2. See text for abbreviations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Spatial muscle group</th>\n      <th>Nerve</th>\n      <th>Motor neurons (synonyms)</th>\n      <th>Target muscles (synonyms)</th>\n      <th>Synapse Type</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DL</td>\n      <td>ISNDM</td>\n      <td>MN1 (aCC)</td>\n      <td>1 (DA1)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>ISNDM</td>\n      <td>MN2 (U3)</td>\n      <td>2 (DA2)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>ISNDM</td>\n      <td>MN3 (U4)</td>\n      <td>3 (DA3)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>ISNDM</td>\n      <td>MN4 (U5)</td>\n      <td>4 (LL1)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>ISNDM</td>\n      <td>MN9 (U1)</td>\n      <td>9 (DO1)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>ISNDM</td>\n      <td>MN10 (U2)</td>\n      <td>10 (DO2)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>DO</td>\n      <td>ISNL</td>\n      <td>MN11</td>\n      <td>11 (DO3)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>DO</td>\n      <td>ISNL</td>\n      <td>MN19</td>\n      <td>19 (DO4)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>DO</td>\n      <td>ISNL</td>\n      <td>MN20</td>\n      <td>20 (DO5)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>DO</td>\n      <td>SNa</td>\n      <td>MN5 (LO1)</td>\n      <td>5 (LO1)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>ISNb</td>\n      <td>MN6/7 (RP3)</td>\n      <td>6/7 (VL3/VL4)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>ISNb</td>\n      <td>MN12 (V-MN)</td>\n      <td>12 (VL1)</td>\n      <td>III</td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>ISNb</td>\n      <td>MN13 (MN-VL2)</td>\n      <td>13 (VL2)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>ISNb</td>\n      <td>MN14 (RP1)</td>\n      <td>14 (VO2)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>ISNb</td>\n      <td>MN30 (RP4)</td>\n      <td>30 (VO1)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>VA</td>\n      <td>SNc</td>\n      <td>MN26</td>\n      <td>26 (VA1)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>VA</td>\n      <td>SNc</td>\n      <td>MN27</td>\n      <td>27 (VA2)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>VA</td>\n      <td>SNc</td>\n      <td>MN29</td>\n      <td>29 (VA3)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>VO</td>\n      <td>ISNd</td>\n      <td>MN15/16 (MN-VO4/5)</td>\n      <td>15/16 (VO4/VO5)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>VO</td>\n      <td>ISNd</td>\n      <td>MN15/16/17 (MN-VO4-6)</td>\n      <td>15/16/17 (VO4/VO5/VO6)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>VO</td>\n      <td>ISNb</td>\n      <td>MN28</td>\n      <td>28 (VO3)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>SNa</td>\n      <td>MN8 (SBM)</td>\n      <td>8 (SBM)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>SNa</td>\n      <td>MN21/22 (LT1/LT2)</td>\n      <td>21/22 (LT1/LT2)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>SNa</td>\n      <td>MN22/23 (LT2/LT3)</td>\n      <td>22/23 (LT2/LT3)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>SNa</td>\n      <td>MN23/24 (LT3/LT4)</td>\n      <td>23/24 (LT3/LT4)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>ISNL</td>\n      <td>MN18</td>\n      <td>18 (DT1)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>TN</td>\n      <td>MN25 (VT1)</td>\n      <td>25 (VT1)</td>\n      <td>Ib</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Broad</td>\n      <td>ISNDM</td>\n      <td>MNISN (RP2)</td>\n      <td>1/2/3/4/9/10/11/[18]/19/20 (DA/DO)</td>\n      <td>Is</td>\n    </tr>\n    <tr>\n      <td>Broad</td>\n      <td>ISNb</td>\n      <td>MNISNb/d (RP5)</td>\n      <td>6/7/12/13/14/15/16/30 (VL/VO)</td>\n      <td>Is</td>\n    </tr>\n    <tr>\n      <td>Broad</td>\n      <td>SNa</td>\n      <td>MNSNa-II (VUM)</td>\n      <td>21/22/[23/24/25] (LT)</td>\n      <td>II</td>\n    </tr>\n    <tr>\n      <td>Broad</td>\n      <td>ISNDM</td>\n      <td>MNISN-II (VUM)</td>\n      <td>1/2/3/4/9/10/11/18/19/20 (DA/DO)</td>\n      <td>II</td>\n    </tr>\n    <tr>\n      <td>Broad</td>\n      <td>ISNb</td>\n      <td>MNISNb/d-II (VUM)</td>\n      <td>12/13/14/15/16/17/30 (VL/VO)</td>\n      <td>II</td>\n    </tr>\n  </tbody>\n</table>\n\nHere, we address the question of how the same MNs and muscles generate two distinct behaviors: forward and backward locomotion. There are multiple mechanisms that could generate different forward and backward locomotor behaviors. (1) Forward and backward locomotion may use the same intrasegmental contraction patterns, and only the direction of the wave changes. (2) Different muscles/MNs could be used in each behavior. (3) One or more muscles/MNs may show a different time of recruitment in each behavior. (4) PMNs or MNs could have asymmetric morphology along the anteroposterior body axis, resulting in a different time of recruitment in each behavior. (5) One or more PMNs could be active only in forward or backward locomotion, changing the phase relationship of their target MNs. Here we use pan-muscle activity imaging, comprehensive TEM reconstruction of all MNs and well-connected PMNs, functional optogenetics, and development of a recurrent network model to sequentially test each of these hypotheses.\n\n## Results\n\n### All body wall muscles are activated during forward and backward locomotion\n\nIntrasegmental differences between forward and backward locomotion could be due to recruitment of different muscles for each behavior, or changes in the timing of muscle recruitment. To distinguish between these mechanisms, we performed ratiometric calcium imaging to map the activation onset of each body wall muscle during forward and backward locomotion. To date only muscle contraction data have been reported, not muscle activity data, and only for five of the 30 body wall muscles (5, 9, 12, 21, and 22), showing that individual longitudinal muscles contract prior to individual transverse muscles during forward locomotion (Heckscher et al., 2012; Zwart et al., 2016). Muscle contraction could occur passively due to biomechanical linkage between adjacent muscles, so it may not be a perfect substitute for directly measuring muscle activity. Conversely, elevated GCaMP fluorescence may be insufficient to trigger muscle contraction, but it is a better proxy for monitoring excitatory inputs than is muscle contraction.\n\nHere, we used GCaMP6f/mCherry live imaging to measure the activation time of individual body wall muscles in the abdominal segments during forward and backward locomotion. We expressed GCaMP6f and mCherry using the muscle line R44H10-LexA, which has variable expression in sparse to dense patterns of muscles. For this experiment we analyzed larvae with dense muscle expression. We imaged both forward and backward locomotion in 1 st and 2nd instar larvae (a representative animal shown in Figure 2A,D). We found that an increased GCaMP6f signal correlated with muscle contraction during both forward and backward locomotion (representative examples of muscle 6 shown in Figure 2B,E). Most importantly, all imaged muscles showed a significant rise in GCaMP6f fluorescence during forward and backward locomotion (Figure 2C,F; Videos 1 and 2). In addition, because each type Ib MN typically innervates a single muscle, we can use muscle depolarization as a proxy for the activity of its innervating MN. We conclude that all MNs and their target muscles are activated during forward and backward locomotion.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig2-v3.jpg)\n\n**Figure 2.:** (A,D) Sequential images of muscle GCaMP6f \u0394F/F signal during forward (A) or backward (D) locomotion. GCaMP6f levels were normalized to mCherry. Anterior to left, dorsal up; time in seconds. Genotype: GMR44H10-LexA lexAOP-GCaMP6f; -LexA lexAOP--mCherry. Arrowheads mark the same segment at each timepoint; A2 in (A) and A4 in (D). (B,E) Mean calcium transient (blue) vs mean muscle length (red) measurements for muscle six during forward (B) or backward (E) locomotion. N\u00a0=\u00a03 segments. T0 was set as the point of maximum contraction as determined by muscle length for each crawl. Shaded bars represent standard deviation. (C,F) All observed muscles show calcium transients greater than 100% \u0394F/F during forward (C) or backward (F) locomotion. Each dot represents the maximum GCaMP \u0394F/F signal in the indicated muscle during a single crawl, normalized to mCherry. Error bars represent standard deviation. Muscle names as in Figure 1.\n\n![Video 1.](https://cdn.elifesciences.org/articles/51781/elife-51781-video1.mp4.jpg)\n\n**Video 1.:** Dorsolateral view; anterior left.\n\n![Video 2.](https://cdn.elifesciences.org/articles/51781/elife-51781-video2.mp4.jpg)\n\n**Video 2.:** Dorsolateral view; anterior left.\n\n### A small number of muscles are differentially recruited during forward and backward locomotion\n\nAll muscles are recruited in both forward and backward locomotion, leading to the hypothesis that any possible difference in forward and backward locomotion should result from different muscle recruitment times. If so, we predicted VO and DO muscles to behave differently in forward versus backward, because they have asymmetric localization along the anteroposterior axis (Figure 1). To test this hypothesis, we embedded the multidimensional crawl cycle data in two-dimensional space using principal component analysis (PCA)(Lemon et al., 2015). We aligned crawl trials by finding peaks in this 2D space which corresponded to the highest contraction amplitude of the most muscles in a given crawl (Figure 3\u2014figure supplement 1). Muscle activity appeared as a continuum with the sequential recruitment of individual muscles, yet hierarchical clustering of the mean activity of each muscle during forward and backward crawling revealed four groups of co-active muscles for both behaviors (Figure 3A\u2013E; Table 2). We call these co-activated muscle groups F1-F4 for forward and B1-B4 for backward crawling. Overall, we analyzed 27 muscles during forward locomotion and 25 muscles during backward locomotion (the missing muscles were too tightly packed to extract clear activity profiles). The activation time of each co-activated muscle group was more coherent than the time of their inactivation (Figure 3B\u2013E). Notably, these co-activated muscle groups do not fully match previously identified spatial muscle groups (compare Figures 1B and 3F,G).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig3-v3.jpg)\n\n**Figure 3.:** (A) Hierarchical clustering of mean activity for all observed muscles yields four co-activated muscle groups during forward locomotion (F1\u2013F4) and a different group of four during backward locomotion (B1\u2013B4).\u00a0Heatmaps represent the mean range-normalized calcium activity of each muscle (n\u00a0>\u00a03 crawl bouts for each muscle, with a total of 337 individual muscles analyzed across 23 crawls for forward and 188 individual muscles analyzed across 14 crawls for backward locomotion). Muscles 6/7 are grouped because they are both innervated by the same MN. Clustering was performed only on the first half of the crawl cycle to determine the onset time for each co-activated muscle group. Cluster number was determined by visual inspection of the dendrogram as well as the gap-criterion optimal cluster number. (B,D) Plots of average muscle activity for muscles in each forward or backward co-activated muscle group. Error bars represent the standard deviation of individual muscles. (C,E) Plots of average forward or backward co-activated muscle group activity timing. Error bars represent the standard deviation of the average muscle activity of each muscle in a given co-activated muscle group. Dotted lines represent the average muscle activity for each muscle in a given co-activated muscle group. Red line along the x-axis represents the fraction of the crawl cycle that was used for clustering. (F,G) Schematic representation of the co-activated muscle group for forward or backward locomotion. (H) Plots of muscles that are differentially active during forward or backward crawling. For forward panels, the gray trace represents the mean calcium activity of all muscles during a forward crawl, while the blue trace represents the activity of the indicated muscle. For backward panels, the gray trace represents the mean calcium activity of all muscles during a backwards crawl, while the red trace represents the mean calcium activity of the indicated muscle. Error bars represent standard deviation. Dotted red line marks t\u00a0=\u00a025 (normalized time). Arrows represent the normalized \u2206F/F of the two traces at t\u00a0=\u00a025. (I) Heatmap illustrating differential activity of muscles during forward versus backward crawling. Blue, or positive values indicate a given muscle is active earlier during forward crawling, while red or negative values indicate a given muscle was active earlier during backward crawling.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) Plots of four representative forward crawls show a high degree of variability in the crawl structure. (E\u2013F) 2D projection of forward and backward crawl cycles. Crawl cycles are represented as rotations away from and back towards the origin. Color changes (from blue to red) represent time. Directionality is not uniform given that the group of analyzed muscles in each crawl cycle is different in each case (all crawls used had at least 40% of the muscles analyzed in the segment). (G) Amplitude of a representative forward crawl in the same 2D space. The peak of this activity was defined as the center of a crawl cycle, and the peak width at half the height of the peak was used to find crawl-start and crawl-end times. (H) All analyzed forward muscles aligned. Gray lines represent individual muscles, black line represents the average activity of all muscles with error bars representing standard deviation. Red dotted line represents the crawl-start alignment point, and the blue line represents the crawl-end alignment point. (I) Average activity of forward (black) and backward (red) crawls across all experiments. (J) Single segment crawl length determined for each crawl (n\u00a0=\u00a024 forward/14 backward). Crawl length is determined by calculating the width of the 2D representation of the crawl cycle.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Plots of muscles that relative to the average activity of all muscles during forward or backward crawling. For forward panels, the gray trace represents the mean calcium activity of all muscles during a forward crawl, while the blue trace represents the activity of the indicated muscle. For backward panels, the gray trace represents the mean calcium activity of all muscles during a backwards crawl, while the red trace represents the mean calcium activity of the indicated muscle. Error bars represent standard deviation. Dotted red line marks t\u00a0=\u00a025 (normalized time). Muscles in red text are differentially recruited in forward and backward locomotion.\n\n**Table 2.**\n Co-activated muscle groups during forward or backward locomotion.There are four co-activated muscle groups during backward and forward locomotion, but the muscles in each group differ in forward versus backward locomotion. Note that backward locomotion is not simple a reverse of the pattern seen in forward locomotion. This represents the most common activation sequences, although there is some variation, particularly during the fastest locomotor velocities.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Forward</th>\n      <th>Co-activated muscles</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>F1</td>\n      <td>2,6,10,11,14,30</td>\n    </tr>\n    <tr>\n      <td>F2</td>\n      <td>3,4,5,9,12,13,18,19,25,26,29</td>\n    </tr>\n    <tr>\n      <td>F3</td>\n      <td>1,8,15,16,17,20,28</td>\n    </tr>\n    <tr>\n      <td>F4</td>\n      <td>21,22,23</td>\n    </tr>\n    <tr>\n      <td>Backward</td>\n      <td>Co-activated muscles</td>\n    </tr>\n    <tr>\n      <td>B1</td>\n      <td>10,15,16,17</td>\n    </tr>\n    <tr>\n      <td>B2</td>\n      <td>1,3,4,6,9,12,13,28</td>\n    </tr>\n    <tr>\n      <td>B3</td>\n      <td>2,5,8,19,20,26,29</td>\n    </tr>\n    <tr>\n      <td>B4</td>\n      <td>11,18,21,22,23,24</td>\n    </tr>\n  </tbody>\n</table>\n\nWe found that the largest change in recruitment time between forward and backward locomotion was in six muscles: the three muscles in the VO spatial muscle group (muscles 15\u201317), and muscles 2, 11, and 18 (each in a different spatial muscle group) (Figure 3H,I; Figure 3\u2014figure supplement 2). The VO spatial muscle group (muscles 15\u201317) switched from late activity during forward locomotion (F3) to early activity during backward locomotion (B1), whereas the three other neurons switched from early activity during forward locomotion (F1/2) to late activity during backward locomotion (B3/4) (Figure 3H,I). Other spatial muscle groups typically did not change their timing of activation; for\u00a0example longitudinal muscles tended to be active early and transverse muscles activated late in both behaviors (Figure 3F,G), consistent with prior reports tracking single muscles within each group (Heckscher et al., 2012; Zwart et al., 2016). We conclude that differences between forward and backward locomotor behaviors may arise from the relatively small number of MN/muscles that show differential recruitment during each behavior. Our results raise two new questions. (1) What mechanisms produce co-active muscle groups? (2) What mechanism produce the differential timing of the VO and 2/11/18 muscles in forward and backward locomotion? Answering these questions will help determine how the same MNs and muscles can generate two different locomotor behaviors.\n\n### TEM reconstruction of motor neurons in A1 segment\n\nTo understand how motor patterns are generated, it is essential to map connectivity from muscles to MNs, and from MNs to PMNs. In this section, we fully reconstruct all 31 MNs in segment A1, and below we fully reconstruct 118 PMNs providing input to these MNs. These data on neuronal morphology, synapse localization, and connectivity will generate testable hypotheses for how different motor behaviors are generated.\n\nTo date, only less than half of the 31 abdominal MNs have been fully reconstructed at synapse level resolution (1, 5, 6/7, 9,10,18, 21/22, 22/23, 23/24, 30, MNISN, and MNISNb/d) (Heckscher et al., 2015; Fushiki et al., 2016; Schneider-Mizell et al., 2016; Zwart et al., 2016; Takagi et al., 2017; Carreira-Rosario et al., 2018; Kohsaka et al., 2019). Here, we identify, comprehensively reconstruct, and map dendritic postsynaptic sites for all remaining A1 MNs, which can be used as a proxy for other abdominal segments. We reconstructed 16 pair of type Ib MNs, including MNs innervating muscles that are differentially active in forward versus backward locomotion (Figure 4, red outlines). We identified one pair of type III MNs that target muscle 12, and the three unpaired midline octopaminergic MNs (VUMs) (Figure 4; Table 1). In subsequent analyses, we did not include the neuromodulatory VUM MNs due to their relatively undifferentiated state (few postsynapses). In addition to the two previously identified Is MNs (MNISN and MNISNb/d), the presence of yet another type Is MN has been suggested (Hoang and Chiba, 2001), but we did not find it in the TEM volume; it may be late-differentiating or absent in A1. We linked all bilateral MNs in the TEM volume to their muscle target by matching the dendritic morphology in the EM reconstruction to the dendritic morphology determined experimentally (Landgraf et al., 1997; Landgraf et al., 2003; Mauss et al., 2009) (Figure 4; Figure 4\u2014figure supplement 1; Table 1). A dataset of all MNs that can be opened in CATMAID (Saalfeld et al., 2009) is provided as Supplementary file 1. Note that the transverse nerve MN (MN25-1b) is only present in the A2-A7 segments (Hessinger et al., 2017), so we traced it in A2. We found that all MNs had a dense array of postsynapses on their dendritic projections, but unlike C. elegans (Wen et al., 2012), we observed no presynaptic contacts to other MNs or interneurons (Figure 4\u2014figure supplement 1). In conclusion, we have successfully identified and reconstructed, at single synapse-level resolution, all differentiated MNs in segment A1 of the newly hatched larval CNS. This is a pre-requisite for mapping the location of postsynaptic sites, as well as for mapping PMN-MN connectivity (below).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig4-v3.jpg)\n\n**Figure 4.:** (A) Dorsal view of the TEM reconstruction of the L1 CNS (gray shading) showing all bilateral MNs in A1 reconstructed at single synapse level. The one intersegmental dendrite is from RP3 in A1; it is not observed in other abdominal segments. (B) Dorsal view of centered on the A1 segment; midline, arrowhead. MNs are color-coded as in Figure 1A: DL MNs (red), DO MNs (light red), VL MNs (light blue), VO MNs (dark blue), LT MNs (black), VA MNs (gray). (C) Posterior (cross-section) view of the neuropil (outlined) and cortex in A1. Note the MN dendrites target the dorsal neuropil. Dorsal, up; midline, arrowhead; neuropil border, dashed outline. (D) Representative images showing the morphological similarity between MNs identified in vivo by backfills (Mauss et al., 2009) versus the most similar MN reconstruction from the TEM volume. The top section in each panel shows the morphology of the MN dendrites based on in vivo backfills; used with permission); six distinct Fas2 fascicles (three per hemisegment) are shown in white; midline, arrowhead. The bottom section shows MN dendrite morphology reconstructed from the TEM volume in A1. MNs highlighted in red boxes show differential recruitment timing during forward versus backward locomotion.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** MN names are shown in bottom left for each reconstruction. The morphology of each MN is shown in cross-sectional (left) and dorsal view (right). In the cross-sectional views, neuropil boundary is shown in gray. In the dorsal views, L, M, R stand for Left neuropil border, Midline, Right neuropil border, respectively. Cyan dots show MN postsynaptic sites.\n\n### Co-active motor neurons have dispersed postsynaptic sites within the dorsal neuropil\n\nMotor neurons innervating a single spatial muscle group target their dendrites to a similar region of the neuropil, creating a myotopic map in the neuropil (Landgraf et al., 2003; Mauss et al., 2009). Here we validate this conclusion at the level of postsynapse neuropil localization, and determine whether similar clustering is found for MNs in a co-active muscle group. To begin, we calculated pairwise synapse similarity scores (Schlegel et al., 2016) for MNs in the left and right A1 hemisegments and observed highly similar postsynapse clustering within the neuropil volume (Pearson correlation coefficient, r\u00a0=\u00a00.97), which we averaged for subsequent analysis. This validated the quality and reproducibility of the MN dendritic synapse data and highlighted the stereotypy of MN postsynaptic locations in the neuropil. Next, we performed unbiased clustering of MNs based on postsynaptic synapse similarity, and found a highly ordered hierarchical relationship between postsynapse localization and innervation of spatial muscle groups (Figure 5A). We also found that MNs innervating each spatial muscle group have different postsynaptic distributions along two axes (two sample Kolmogorov-Smirnov test; p<0.05) (Figure 5B). Our data strongly support and extend prior work showing that MNs innervating spatial muscle groups form a myotopic map in the neuropil, providing a first layer of functional organization of the motor neuropil.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig5-v3.jpg)\n\n**Figure 5.:** (A) Hierarchical clustering of MNs by their synapse similarity score reveals MN myotopic organization. To generate a similarity matrix, pairwise synapse similarity scores were generated separately for MNs exiting the left A1 nerve and right A1 nerve. The pairwise similarities for the left and right pools of MNs were highly correlated (r =\u00a0.95); clustering was performed on the average of the left and right similarity matrices. (B\u2013D) Spatial distributions of postsynaptic sites for the indicated spatial or co-active MNs. Plots are 1D kernel density estimates for the mediolateral (ML), dorsoventral (DV) and anteroposterior (AP) axes. Asterisks, postsynapses from a single group that are enriched in a specific region of the neuropil. (E\u2013H) Spatial distribution of postsynapses for the differentially recruited MNs (red) compared to the MNs in their forward or backward co-active group (gray or black, respectively).\n\nNext we asked: do co-active MNs generate a \u2018co-active\u2019 neuropil map? Interestingly, MNs innervating each forward or backward co-active muscle group had distinct postsynapse density maxima along the mediolateral axis, and often along a second axis (either dorsoventral or anterioposterior) (Figure 5C,D arrowheads). Although the maxima are different along each axis, there is considerable overlap, such that there are only a few regions of unique postsynapse targeting (Figure 5C,D asterisks). We conclude that there is an ordered distribution along the mediolateral axis of postsynapses from MNs that innervate distinct forward or backward co-active muscles. Whether these distinct maxima or unique neuropil locations of MN postsynapses are functionally important for generating locomotor behavior remains a question for future functional studies.\n\nWe next addressed the question of how specific muscles can be recruited at different times during forward and backward locomotion, as seen for muscles 2, 11, 18, and the three VO muscles. We first ask whether each of the MNs innervating these six muscles target their postsynapses to a different region of the neuropil compared to the surrounding neurons in the same co-active muscle group. There are single MNs innervating each of the muscles 2, 11, and 18 (MN2, MN11, MN18); and two MNs innervating the three VO muscles (MN15/16, MN15/16/17). We found that MNs innervating muscles 11, 18 and the VOs each targeted postsynapses to a unique region of the neuropil. The VO MNs have a medial postsynaptic distribution not seen in other neurons in the same co-active muscle group (Figure 5E); MN11 has a synapse localization maxima that is distinct from other co-active neurons (Figure 5F); and MN18 has a posterior postsynaptic distribution not seen in other co-active neurons (Figure 5G). In contrast, MN2 did not have a distinct distribution in any axis (Figure 5H), showing that differential recruitment can occur despite the intermingling of postsynapses with other MNs in the same co-active group. We conclude that differential MN postsynaptic localization is not required for generating differential muscle recruitment; and that MN postsynapse localization alone is insufficient to explain differential muscle recruitment. A full understanding requires characterization of PMN-MN connectivity.\n\n### TEM reconstruction of 118 premotor neurons reveals premotor neuron pools targeting each group of co-active motor neurons\n\nThere are two hypotheses for how co-active MNs are recruited. Each pool of co-active MNs may be innervated by a distinct pool of PMNs (labeled line), or alternatively each pool of co-active MNs may be innervated by different combinations of PMNs (combinatorial code). To distinguish between these models, we identified and reconstructed all PMNs in the TEM volume with dense monosynaptic contacts to A1 MNs. The names of each premotor neuron along with previously published synonyms is given in Supplementary file 2. This included local premotor neurons with somata in A1 as well as neurons from adjacent segments with dense connectivity to A1 MNs. PMNs were identified by contributing greater than 1% (and\u00a0>4 synapses) of the total input onto a given MN (Figure 6\u2014figure supplement 1; see Materials\u00a0and\u00a0methods for additional PMN selection criteria). We identified 118 bilateral PMNs (236 total) with connectivity to A1 MNs (Table 3; see Materials\u00a0and\u00a0methods for selection criteria).\n\n**Table 3.**\n Premotor neurons innervating type Ib MNs Left column, spatial muscle groups named as in Figure 1.Middle column, type Ib MNs innervating 1\u20133 muscles in each muscle group (synonym, parentheses); the immature neuromodulatory VUMs are not shown. Right column, premotor interneurons innervating the indicated MNs. Premotor connectivity uncertain, parentheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Muscle position</th>\n      <th>Motor Neurons</th>\n      <th>Pre-Motor Neurons</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DL</td>\n      <td>MN1-Ib (aCC)</td>\n      <td>A27h, A18a, A18b, A03g, A31k, A31b, A06e, A23a, A02h, A10e, A03a1, A03a3, A05k, A07f2, DLN2, TJPMNThoracic descending pre-longitudinals, T27Y, dsnPMN2, DLN1, A18neo.</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>MN2-Ib (U3)</td>\n      <td>A01x2, A18a, A03a5, A31k, A31b, A23a, A02h, A03a3, A03a1, A10e, A10a , T27Y, dsnPMN2.</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>MN3-Ib (U4)</td>\n      <td>A18a, A03a5 A03g, A31k, A31b, A06e, A02h, A02e, A02f, A03a3, A03a6, A03d/e, A03x-eghb, A07f2, A10a,\u00a0A18neo.</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>MN4-Ib (U5)</td>\n      <td>A03a5, A03g, A31k, A27l, A06l, A06m, A06g2, A02e, A02f, A03a6, A03a1, A03x-eghb, SePN02b, DLN2, Descending,\u00a0pre RP3, A18neo.</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>MN9-Ib (U1)</td>\n      <td>A01x2, A18a, A31k, A31b, A06x1, A27l, A23a, A02m, A02n, A02h, A03a1, A03a3, A03x-eghb, A03xyz, A05k, DLN2,</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>DLN2, TJPMN, Tipsi, T27Y, dsnPMN2, DLN1, A18neo.</td>\n    </tr>\n    <tr>\n      <td>DL</td>\n      <td>MN10-Ib (U2)</td>\n      <td>A01x2, A18b, A08e1, A31k, A27j, A23a, A06a, A06x1, A02h, A02e, A02g, A10e, A03a1, A03a3, A03x, A03a4,</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>A03d/e, A03x-eghb, VLELX4, Tipsi, dsnPMN2, DLN2, DLN1, A18neo, A18c.</td>\n    </tr>\n    <tr>\n      <td>DO</td>\n      <td>MN11-Ib</td>\n      <td>A31k, A06x1, A23a, A06a, A27l, T03g2, A03a1, A03a3, A03x-eghb.</td>\n    </tr>\n    <tr>\n      <td>DO</td>\n      <td>MN19-Ib</td>\n      <td>A27k, A18j, A18b, A18b3, T01d2, A31k, A27j, A23a, A06a, A06l, A06x1, A02f, A03a1, A03a3, T27Y, dsnPMN2,\u00a0A27neo.</td>\n    </tr>\n    <tr>\n      <td>DO</td>\n      <td>MN20-Ib</td>\n      <td>A27h, A18j, A01c1, T01d2, T01d4, A19l, A06e, A03d/e, A27neo, a14neo, A03xyz, A26f.</td>\n    </tr>\n    <tr>\n      <td>DO</td>\n      <td>MN5-Ib (LO1)</td>\n      <td>A18b3, A18b2, A23a, A03a1, A03a3, A03a4, VLELX4, T27Y.</td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>MN6/7-Ib (RP3)</td>\n      <td>A18b3, A03a5, A27l, A06l, A06e, A02g, A02e, A03a4, T06WW, T06PP, Descending pre RP3.</td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>MN12-III (V-MN)</td>\n      <td>A27h, A03a5, A03g, A02g, A02e A27l, A06l,, A06e A03a6, A03a4, A03d/e, DLN1, Descending pre RP3.</td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>MN13-Ib\u00a0(MN-VL2)</td>\n      <td>A27k, A03a5, A03g, A01d3, T01d4, A06l, A06a, A06e, A02g, A02e, A27l, A03a6, A03a4, A03x-eghb, A03d/e.</td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>MN14-Ib (RP1)</td>\n      <td>A27h, A18b2, A18b3, A27l, A06l, A02i, A03a4, A03a1, DLN1.</td>\n    </tr>\n    <tr>\n      <td>VL</td>\n      <td>MN30-Ib (RP4)</td>\n      <td>A18b3, A03a5, A01x2, A01d3,A01d4, A06e , A27l, A06l, A02g, A02e, A03a4, A03a6, A03x-eghb, A03d/e, A03SNC,\u00a0A10a, A27Uniq, DLN1, A03xyz, SePN02b</td>\n    </tr>\n    <tr>\n      <td>VA</td>\n      <td>MN26-Ib</td>\n      <td>A27h, A01x3, A18f, A02j, A06e, A06l, A27l, T03g2, A03x-eghb, Descending neuron_SEZ, A03SNC, A03xKT,\u00a0A03d/e,\u00a0T11v, T27Y.</td>\n    </tr>\n    <tr>\n      <td>VA</td>\n      <td>MN27-Ib</td>\n      <td>A27h, A27k, A03g, A18j, A18f, A01x3, A01c1, A01c2, T01d2, T01d4, A06e, A06f, A19l, A14a, A31b, T03g2, A27n,\u00a0A27neo, A03xKT, T11v, A26f.</td>\n    </tr>\n    <tr>\n      <td>VA</td>\n      <td>MN29-Ib</td>\n      <td>A01x3, A01x2, A01x3, T01d2, T01d4, A27l, A02g, A06e, T03g2, A27e2, A03a6, A03d/e, A10a, A27neo, T11v,\u00a0A03SNC.</td>\n    </tr>\n    <tr>\n      <td>VO</td>\n      <td>MN15/16-Ib</td>\n      <td>A27h, A27k, A18b2, A06c, A06l, A06e, A02g, A02i, A03a6, DLN1.</td>\n    </tr>\n    <tr>\n      <td>VO</td>\n      <td>MN15/16/17-Ib</td>\n      <td>A27h, A03g, A06c, A06e, A27l, A02g, A02i, A01j, A27Uniq.</td>\n    </tr>\n    <tr>\n      <td>VO</td>\n      <td>MN28-Ib</td>\n      <td>A01x2, A27h, A18b2, A06c, A06l, A06e, A02g, A02i, A03a6.</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>MN8-1b (SBM)</td>\n      <td>A01c1, A01c2, A01d3, A27k, A03g, T01d1, A18j, A19l, A14a, A27n, A27e2, A27neo, A26f.</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>MN18-Ib</td>\n      <td>A01c1, A01c2, A01d3, A03g, A03o, A18j, A06a, A23a, A19l, A14a, A06x1, A02i, A01j, A27n, A10a, A10b, A27neo,\u00a0T27Y, A26f.</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>MN21/22-Ib\u00a0(LT1/LT2)</td>\n      <td>A01c1, A01c2, A27k, A03g, A18j, A18b2, T01d1, T01d2, A19l, A14a, A02i,A02f, A03xKT, T27Y, TGun, A27n,\u00a0A27neo, A26f.</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>MN22/23-1b\u00a0(LT2/LT3)</td>\n      <td>A01x, A01c1, A01c2, A27k, A03g, A09l, A18j, T01d1, T01d2, A01d3, A19l, A14a, A02f, A27n, A27neo, A27e2, T27Y,\u00a0A26f.</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>MN23/24-1b\u00a0(LT3/LT4)</td>\n      <td>A27k, A18j, A03g, A01c1, A01c2, T01d1, T01d2, A01d3, A19l, A27n, A27neo, A26f.</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>MN25-Ib (MN-VT1)</td>\n      <td>A01c1, A18a, A18b2, A18j, A18f, A27l, A14a, A19l, A02i, A31d, A03xKT, A05a.</td>\n    </tr>\n    <tr>\n      <td>DL/DO</td>\n      <td>MNISN (RP2)</td>\n      <td>A01x2, A18b, A03g, A31k, A27j, A27l, A02m, A02n, A02b, A06a, A23a, A03a1, A03a3, A03d/e, A03x-eghb, A05k,\u00a0A10a, DLN2, DLN1, A18neo, dsnPMN2, SePN02b, T27Y, TJPMN, Projection neuron, A18c.</td>\n    </tr>\n    <tr>\n      <td>VL/VO</td>\n      <td>MSNISNb/d(RP5)</td>\n      <td>A27h, A03a5, A06l, A06c, A06f, A02g, A02e, A02b, A03a4, A03a6, A03x-eghb, A03d/e, A19d, A27Uniq, DLN1,\u00a0SePN02b.</td>\n    </tr>\n  </tbody>\n</table>\n\nAs this is the first comprehensive characterization of larval PMNs, we first quantified key features of this population. The morphology of each of the 118 pair of PMNs is shown in Figure 6\u2014figure supplement 2. We found that PMN presynapses were enriched in the dorsal neuropil, as expected, and PMN postsynapses were distributed throughout the neuropil (Figure 6A,B). Each PMN synapsed with an average of 8.0 MNs (Figure 6C), while each MN received input from an average of 32.5 PMNs (Figure 6D). PMNs made 7495 synapses on A1 MNs, which accounted for 12.7% of PMN output and 76% of the total A1 MN input (excluding A2 MN-25) (Figure 6E,F). The fraction of total PMN to A1 MNs was highly variable, with some PMNs having as little of 0.6% of their output onto A1 MNs while others had as much as 99.6% (Figure 6E). Conversely, MNs received 59.6% to 97.9% of their total inputs from these 118 PMN pairs (excluding RP3 which has most of its postsynapses anterior to A1) (Figure 6F). In addition, most PMNs projected contralaterally, had local arbors, and had postsynaptic inputs on their more proximal processes (Figure 6G\u2013I). Neurotransmitter expression is known only for a subset of PMNs (Supplementary file 3), so we screened for Gal4 lines with sparse expression patterns, performed MultiColorFlpOut (Nern et al., 2015) to match their morphology to individual PMNs, and mapped neurotransmitter expression (Figure 6J, Supplementary file 3). A file that can be opened in CATMAID showing all 118 bilateral PMNs is provided as Supplementary file 4. In conclusion, we have identified a large majority of the PMN inputs to the MN population in segment A1, and mapped neurotransmitter expression for the majority of these PMNs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig6-v3.jpg)\n\n**Figure 6.:** (A) Posterior (cross-section) view of the PMN pre-synapse location (red) and postsynapse location (cyan) within the A1 neuropil. Density plots shown for the dorsoventral axis (left) and mediolateral axis (bottom). Dorsal, up. (B) Dorsal view of entire larval neuropil to show anteroposterior distribution of presynapses (red) and postsynapses (cyan). Density plots shown for the anteroposterior axis. (C\u2013F) Quantification of PMN-MN connectivity. All A1 MNs, A2 MN-25, and 118 pair of PMNs were used to generate these histograms. (C) PMNs innervate an average of 8 MNs. X-axis shows binned number of MNs receiving inputs from PMNs. Y-axis shows number of PMNs in each bin (C\u2019) Swarm-violin plot representation of the same dataset used in C. (D) MNs receive inputs from an average of 32.5 PMNs from this population of PMNs. X-axis shows binned number of PMNs providing output to MNs. Y-axis shows number of MNs in each bin. (D\u2019) Swarm-violin plot representation of the same dataset used in D. (E) Histogram showing binned fraction of PMN output to MNs. Y-axis shows number of PMNs in each bin. (E\u2019) Swarm-violin plot representation of the same dataset used in E. (F) Histogram showing binned fraction of MN inputs from PMNs. Y-axis shows number of MNs in each bin. (F\u2019) Swarm-violin plot representation of the same dataset used in F. (G\u2013J) Quantification of PMN morphology and neurotransmitter expression. We did not assay Corazonin+ neurons for fast neurotransmitter expression, but a recent RNAseq study shows promiscuous expression of fast neurotransmitters in Corazonin+ neurons (Brunet Avalos et al., 2019).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The presynaptic neuron A27h is shown along with two of its postsynaptic partners (MN1 and MN15/16, also called aCC and VO, respectively). Note the accumulation of vesicles at the A27h presynapse and the electron density in the motor neuron postsynapses.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Dorsal view (top) and posterior view (bottom) of all 118 premotor neurons. In all panels, neuron names are at the top; red and cyan dots indicate pre-synaptic and postsynaptic sites respectively. Neurons with pre- and postsynaptic sites intermixed are boxed.\n\nFollowing our characterization of the PMN population, we next asked whether there are PMNs dedicated to innervating individual spatial or co-active MNs, or MNs differentially recruited during forward and backward locomotion. We identified PMNs innervating MNs of a single spatial muscle group (Figure 7A), as well as PMNs specifically innervating MNs in a single forward or backward co-active muscle group (Figure 7B,C, Figure 7\u2014figure supplement 1). We found that 30 of the 118 PMNs innervated MNs in a single spatial muscle group (Figure 7D). Interestingly, a similar numbers of PMNs innervated MNs in a single co-active muscle group (Figure 7E,F). Thus, we have identified groups of PMNs that specifically innervate co-active MNs, consistent with a \u2018labeled line\u2019 model for generating motor output, yet we note that the majority of PMNs innervate MNs in multiple spatial or co-active muscle groups. Our data are consistent with both labeled line and combinatorial codes for driving co-active motor neuron output; functional studies will be necessary to determine their relative importance.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig7-v3.jpg)\n\n**Figure 7.:** (A\u2013C) Hierarchical clustering of PMNs based on their connectivity to type Ib MNs of the same spatial muscle group (A), forward co-activated muscle group (B), or backward co-activated muscle group (C). Heat maps represent the sum of normalized weighted-synaptic output of a given left/right pair of PMNs onto left/right pair of MNs grouped in each panel. Values in each row were normalized to sum to 1. (D\u2013F) Quantification of connectivity between PMNs and type Ib MNs innervating spatial muscles (D), forward co-active (E), and backward co-active groups. PMN-MN connections with total weighted synapses of less than 1% were excluded from these analyses. (D) X-axis shows binned number of spatial muscle groups which receive inputs from PMNs. Y-axis shows number of PMNs in each bin. While 30 PMNs connect to only one spatial muscle group, the rest of the PMNs connect to more than one groups. (E) X-axis shows binned number of forward co-active groups which receive inputs from PMNs. Y-axis shows number of PMNs in each bin. While 32 PMNs connect to only one forward co-active group, the rest of the PMNs connect to more than one groups. (F) X-axis shows binned number of backward co-active groups which receive inputs from PMNs. Y-axis shows number of PMNs in each bin. While 32 PMNs connect to only one backward co-active group, the rest of the PMNs connect to more than one groups. (G) Connectivity pattern of PMNs to differentially recruited MNs (11, 2, 18, and VOs) versus other type Ib MNs (Other MNs). Heat maps represent the sum of normalized weighted-synaptic output of a given left/right pair of PMNs onto left/right pair of MNs in each group. Values in each column were normalized to sum to 1. (H\u2013H\u2019\u2019) A27h is active following MNs in forward co-active groups F1/F2. (H) Morphology of the reconstructed A27h in segment A1 left and right, showing presynapses (red) and postsynapses (cyan). (H\u2019) Pattern of A27h connectivity showing preferential output to MNs active in co-active group F3. Hexagons represent MNs preferentially active in the F1-F4 co-active groups. Muscles innervated by MNs targeted by A27h are shown. (H\u2019\u2019) Dual color calcium imaging of jRCaMP1b in A27h (green) and GCaMP6m in U1-U5 MNs (black: MN2, MN3, MN4, MN9, MN10). Consistent with predictions from the connectome, U1-U5 MNs (co-activated muscle group F1/2) are activated before A27h (co-activated muscle group F3). Green and dark error bars (ribbons) represent the standard deviation of the average neuronal activity. Genotype: CQ-lexA/+; lexAop-GCaMP6m/R36G02-Gal4 UAS-jRCaMP1b.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Dorsal view of the indicated premotor neurons. In all panels, neuron names are at the top; red and cyan dots indicate pre-synaptic and postsynaptic sites respectively. (B) Number of presynapses on motor neurons in each co-active group are shown next to the black arrows, whose width is proportional to synapse number. Arrowhead, midline.\n\nNext we examined the five MNs that showed differential recruitment during forward versus backward locomotion (MNs 2, 11, 18, and two VOs), to see if they were selectively innervated by \u2018labeled lines\u2019 of PMNs. We found that all PMNs innervate multiple MNs, and there is no evidence for specific PMNs innervating specific MNs, whether they are differentially recruited or not (Figure 7G). We conclude that PMN combinatorial coding is likely to generate the observed MN differential recruitment during forward and backward locomotion.\n\nLastly, we tested whether our connectomic data could be used to predict the timing of MN recruitment. We found that the PMN A27h (Figure 7H) is strongly connected to MNs in co-active group F3 (Figure 7H\u2019), so we asked whether A27h was recruited after the U1-U5 MNs in co-active groups F1/F2. Indeed, dual color calcium imaging showed that the F1/F2 MNs were active prior to the F3 PMN A27h (Figure 7H\u2019\u2019). These results support the use of connectivity to predict MN recruitment times.\n\n### Neuronal asymmetry may generate different muscle recruitment times during forward and backward locomotion\n\nAsymmetric dendrite morphology can be an important determinant of neuronal function, such as in the direction-selective T4/T5 neurons in the adult visual system (Fisher et al., 2015). Similarly, dendritic asymmetry along the anteroposterior axis may help generate temporally distinct recruitment that we observe during forward and backward locomotion. We examined the morphology of differentially recruited MNs and found that MN18, but not the others, is highly asymmetric (Figure 8A\u2013E). The asymmetric distribution of postsynaptic sites on MN18 should lead to its earlier activation during forward than backward locomotion. This is consistent with its activity pattern deciphered using muscle calcium imaging during these behaviors (Figure 3). We also observed anterior/posterior asymmetry in multiple PMNs. For example, A02i and A03a4 have axons extending 1\u20132 segments anterior of the dendrites; A03a5 has axons projecting 1\u20132 segments posterior of the dendrites; whereas A03g is a symmetric PMN (Figure 8F\u2013H). Due to the opposite direction of wave propagation in backward and forward locomotion, the asymmetric PMNs are likely to contribute to the differential MN/muscle recruitment in forward and backward locomotion.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig8-v3.jpg)\n\n**Figure 8.:** (A\u2013E) MN18 has asymmetric dendrites extending to the next posterior segment, but the dendritic arbors of other differentially recruited MNs (2, 11, 15/16, 15/16/17) were not asymmetric along this axis. (F\u2013I) The PMNs A02i, A03a4 and A03a5 have asymmetric dendrite projections to the anterior (F,G) or posterior (H) of their cell body and presynaptic domain, whereas A03g is an example of a PMN that is symmetric along the anteroposterior axis.\n\n### A recurrent network model that generates the observed forward and backward pattern of muscle activity\n\nRecurrent interactions among PMNs have been shown to control the timing of the muscle outputs of central pattern generator circuits in a variety of organisms (Marder and Bucher, 2001; Grillner, 2003). We hypothesized that these types of interactions are responsible for the timing of muscle activation during Drosophila larval forward and backward crawling. To assess whether the reconstructed PMN connectome is capable of producing the observed timing of MN/muscle activation, we developed a recurrent network model of two adjacent segments. Previous models have focused on wave propagation during forward and backward crawling by modeling the average activity of excitatory and inhibitory subpopulations in each segment (Gjorgjieva et al., 2013; Pehlevan et al., 2016). Access to the detailed connectivity of PMNs and MNs (Supplementary file 5 and Supplementary file 6), as well as knowledge of the activation patterns of different co-activated muscle groups, allowed us to develop a substantially more detailed model whose circuitry was constrained to match the TEM reconstruction. For PMNs whose neurotransmitter identity we could determine, we also constrained the signs (excitatory or inhibitory) of connection strengths in the model. The firing rates of PMNs and MNs were modeled as simple threshold-linear functions of their synaptic inputs, and model parameters were adjusted to produce target MN patterns of activity that matched the sequences identified during forward and backward crawling. These patterns were assumed to be evoked by external command signals, representing descending input to the PMNs, that differed for forward and backward crawling but did not themselves contain information about the timing of individual muscle groups. We also constrained the activity of two PMNs, A18b and A27h, that are known to be specifically active during backward and forward locomotion, respectively (Fushiki et al., 2016; Carreira-Rosario et al., 2018). We found that, although the connectivity among PMNs within a segment is sparse (roughly 7% of all possible pairwise connections), the observed connections are nonetheless sufficient to generate appropriately timed MN activity for the two distinct behaviors (Figure 9A,B; Figure 9\u2014figure supplement 1). As has been described previously in other pattern-generating systems (Prinz et al., 2004), there is a space of models that is capable of producing the observed activity. We therefore analyzed the activity of neurons in an ensemble of models. In the models, distinct sequences of PMN activity for forward and backward locomotion tile the period of time over which MNs are active (Figure 9C; Figure 9\u2014figure supplement 1). These sequences give rise to the distinct timing of MN activation during each behavior.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig9-v3.jpg)\n\n**Figure 9.:** (A) The PMN and MN network of the A1 and A2 segments was modeled using connectivity taken from the TEM reconstruction. Connections within each segment (light gray circles) are identical. The network was optimized using gradient descent to produce a sequential pattern of activity in the MNs when a tonic external command input for forward (FWD, black) or backward (BWD, red) locomotion was applied. (B) The network in A was optimized to produce an appropriate sequential activity pattern of co-activated muscle groups during forward and backward crawling. The direction of propagation from the posterior (A2) to anterior (A1) segment or vice versa differs for forward and backward crawling. To compare PMN activity relative to MN activation, time is measured in units normalized to the onset and offset of MN activity in a segment (bottom right). (C) Y-Axis is the normalized activity of a subset of PMNs in the model during forward and backward crawling. Thick lines denote averages over the ensemble of models generated. X-axis (time) is measured relative to A1 MN onset and offset as in B. Arrowheads denote the peak activation onset time for the MNs innervating different co-activated muscle groups (color key as in panel B); exc, excitatory; inh, inhibitory.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig9-figsupp1-v3.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Y-Axis is the normalized activity of PMNs in the model during forward (black traces) and backward (red traces) crawling. Thick lines denote averages over the ensemble of models generated. X-axis (time) is measured relative to A1 MN onset and offset as in Figure 10B. e, excitatory;(e), presumed excitatory based on lineage; i, inhibitory; (i), presumed inhibitory based on lineage.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig9-figsupp2-v3.jpg)\n\n**Figure 9\u2014figure supplement 2.:** Similar to Figure 9C, but without the penalty term $C_{A18b,A27h}$ (see Materials\u00a0and\u00a0methods) that constrains the activity of the A27h/A18b PMNs. While A27h retains its selectivity, A18b does not.\n\nWe used knowledge about the differential recruitment of two PMNs, A27h and A18b, to constrain our model. It is interesting to ask whether this constraint is required, or whether connectivity alone reveals this selectivity. When we constructed models lacking a penalty that enforces selective activation of these two neurons, we found that only A27h retained its selectivity (Figure 9\u2014figure supplement 2). This suggests that the PMN-MN connectome is insufficient to capture the selectivity of A18b to backward locomotion, which is consistent with a recent study that showed that it could be activated by a descending neuron (not part of our analysis) specifically during backward locomotion (Carreira-Rosario et al., 2018). Characterizing and incorporating this descending circuitry will be important to refine future models.\n\nNext we asked if the sequences of PMN activity predicted by the model are consistent with prior experimentally determined activity patterns. In our model, the PMN A14a is active at F1 and is inactive at F4 (Figure 9C). Similarly, experimental data show that A14a is inhibitory and is active during co-activated muscle group F1; and blocking A14a activity removes the contraction delay between muscles in co-activated muscle group F1 and F4 (Zwart et al., 2016), thereby validating our model. In our model, the PMNs A18b3 and A18a are both active during forward locomotion, but only A18a is active during backward locomotion (Figure 9C). Experimental data show that A18a and A18b3 are active precisely as proposed in our model (Hasegawa et al., 2016). Furthermore, our model predicts the cholinergic A18j and A01c PMNs are active at F4, which is supported by experimental data on these neurons (where they were called eIN1,2; Zwart et al., 2016).\n\nTo provide new, additional experimental tests of our model, we performed dual color calcium imaging on previously uncharacterized GABAergic PMNs A31k and A06l. Our model predicted that both A31k and A06l neurons show peak activity later than the early-activated MNs during both forward and backward locomotion (Figure 9C; Figure 9\u2014figure supplement 1). To determine experimentally the phase-relationship between A31k and MNs, we expressed GCaMP6m in a subset of MNs and jRCaMP1b in A31k. Dual color calcium imaging data revealed that the A31k activity peak coincides with a decline of activity in MNs innervating early co-activated muscle groups during both forward and backward locomotion (Figure 10A,B), further validating our model. Second, our model predicts that both A31k and A06l PMNs show concurrent, rhythmic activity during forward and backward locomotion (Figure 9\u2014figure supplement 1). We expressed GCaMP6m in both neurons, which we could distinguish based on their different axon projections, and found that they showed concurrent, rhythmic activity (Figure 10C,D), and thus both neurons show a delayed activation relative to MNs. Our third experimental test focused on the GABAergic A23a PMN (Schneider-Mizell et al., 2016). Our model predicts that A23a was active earlier during backward locomotion than forward locomotion (Figure 9C). We expressed GCaMP6m in a subset of MNs and jRCaMP1b in A23a, and validated the prediction of our model (Figure 10E,F).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig10-v3.jpg)\n\n**Figure 10.:** (A\u2013B) Dual color calcium imaging of jRCaMP1b in A31k (red) and GCaMP6m in MNs (black). Consistent with the recurrent model predictions, A31k fires with a delay after its postsynaptic MNs in both forward (A) and backward (B) waves. Red and dark error bars (ribbons) represent the standard deviation of the average neuronal activity. Genotype: CQ-lexA/+; lexAop-GCaMP6m/R87H09-Gal4 UAS-jRCaMP1b. (C\u2013D) Single color calcium imaging of jRCaMP1b in A31k (red) and A06l (black). Consistent with the recurrent model predictions, A31k and A06l show synchronous activity patterns during forward (C) and backward waves (D). Red and dark error bars (ribbons) represent the standard deviation of the average neuronal activity. Genotype: R87H09-Gal4 UAS-jRCaMP1b. (E,F) A23a fires later during forward locomotion than during backward locomotion. Dual color calcium imaging of jRCaMP1b in A23a (red) and GCaMP6m in MNs (black). Red and dark error bars (ribbons) represent the standard deviation of the average neuronal activity. Genotype: CQ-lexA/+; lexAop-GCaMP6m/R78F07-Gal4 UAS-jRCaMP1b.\n\nWe conclude that our model accurately predicts many, but not all, of the experimentally determined PMN-MN phase relationships (see Discussion). With the exception of C. elegans models (Karbowski et al., 2008; Macosko et al., 2009; Wen et al., 2012; Izquierdo and Beer, 2013; Izquierdo et al., 2015; Kunert et al., 2017; Rakowski and Karbowski, 2017), the networks constructed here represent the first models of the neural circuitry underlying a\u00a0motor behavior whose connectivity has been constrained by a synaptic wiring diagram. Prior studies of C. elegans have highlighted the importance of proprioception in order to drive locomotion (Kunert et al., 2017), while our model does not require proprioceptive input to generate the observed motor pattern, consistent with data showing that an isolated CNS without sensory input (including no proprioception) can maintain forward and backward waves of motor neuron activity (Pulver et al., 2015). Our study also includes stronger constraints on excitatory and inhibitory signaling, which are difficult to infer in C. elegans (Rakowski and Karbowski, 2017).\n\n### Circuit motifs specific for forward or backward locomotion\n\nPMNs, in addition to connecting to MNs, make presynapses onto other neurons (Supplementary file 6), generating circuit motifs that may play important roles during larval locomotion. Interestingly, some of these PMNs are active only during forward or backward locomotion (Fushiki et al., 2016; Carreira-Rosario et al., 2018; Kohsaka et al., 2019), indicating they may change the dynamics of motor circuits during forward versus backward locomotion, resulting in different muscle activity patterns during forward or backward crawling. Here we used connectome and neurotransmitter data to examine circuit motifs that include these direction-specific PMNs and asked how they can contribute to the generation of different coactive muscle groups during forward and backward locomotion.\n\nThe previously described forward-specific excitatory PMN A27h (Fushiki et al., 2016; Carreira-Rosario et al., 2018), with F3 onset, connects to another forward-specific excitatory PMN A18b3 (Hasegawa et al., 2016) innervating F1-F2 MNs. Thus, when A27h activates F3, it also maintains activity of A18b3 to ensure continued excitation of F1/F2 MNs (Figure 11A). These motifs provide testable hypotheses for how specific phase relationships between co-activated muscle groups are generated by PMNs. A27h also excites PMN A18b3 in the next anterior segment, which could advance the intersegmental forward contraction wave; similarly, A18b3 excites two inhibitory PMNs (A06c, A14a) in the next anterior segment which may prevent premature activation of F3/4 MNs (Figure 11B). Moreover, consistent with F1/F2 vs F3/F4 temporal segregation, A14a disinhibits F1/F2 MNs via silencing A02e PMN (Figure 11B). Another forward-specific PMN (A01d3; also known as ifb-FWD, Kohsaka et al., 2019), is also a component of feedforward excitation and feedforward inhibition motifs that may temporally segregate F1-F3 from F4 coactive-muscle groups (Figure 11C).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/51781/elife-51781-fig11-v3.jpg)\n\n**Figure 11.:** Circuit motifs composed of forward-specific PMNs (A\u2013C) and backward specific PMNs (D\u2013E). See text for details. Arrow/green, excitatory connection; T-bar/red, inhibitory connection; F1-F4, forward co-active group; B1-B4, backward co-active group. Thick outlines indicate forward-specific or backward-specific PMNs.\n\nNext, we examined circuit motifs composed of a backward-specific PMN, A27k (also known as ifb-BWD) (Kohsaka et al., 2019). A27k excites B4 MNs as well as the inhibitory PMNs A02e and A02g innervating B1/B2. This motif could coordinate excitation of B3/B4 MNs and termination of B1/B2 MN activity as the contraction wave moves posteriorly (Figure 11D). A27k also synapses in the next anterior segment with the excitatory neurons A01c1, A01c2, and A18j (innervating B4), as well as with the inhibitory PMN A02e innervating B1/B2. This could coordinately terminate B1/B2 MN activity and activate B4 MN activity (Figure 11E). Thus, we identified both feedforward excitation and feedforward inhibition motifs that could explain the sequential activation of a specific co-activated muscle group in adjacent segments during backward motor waves. We conclude that circuit motifs composed of forward or backward specific PMNs are likely to be an additional mechanism for generating distinct forward or backward coactivated muscle groups. Functional examination of these motifs is beyond the scope of the current study.\n\n## Discussion\n\nIt is a major goal of neuroscience to comprehensively reconstruct neuronal circuits that generate specific behaviors, but to date this has been done only in C. elegans (Karbowski et al., 2008; Macosko et al., 2009; Izquierdo and Beer, 2013; Izquierdo et al., 2015; Kunert et al., 2017; Rakowski and Karbowski, 2017). Recent studies in mice and zebrafish have shed light on the overall distribution of PMNs and their connections to several well-defined MN pools (Ekl\u00f6f-Ljunggren et al., 2012; Kimura et al., 2013; Bagnall and McLean, 2014; Ljunggren et al., 2014). However, in mouse and zebrafish it remains unknown if there are PMNs that have yet to be characterized, and the connectivity between PMNs is not well described, which would be important for understanding the network properties that produce coordinated motor output. In the locomotor central pattern generator circuitry of leech, lamprey, and crayfish, the synaptic connectivity between PMNs or between PMNs and other interneurons is known to play critical roles in regulating the swimming behavior (Brodfuehrer and Thorogood, 2001; Grillner, 2003; Kristan et al., 2005; Mullins et al., 2011; Mulloney and Smarandache-Wellmann, 2012; Mulloney et al., 2014). However, it is difficult to be certain that all the neural components and connections of these circuits have been identified. The comprehensive anatomical circuitry reconstructed in our study provides an anatomical constraint on the functional connectivity used to drive larval locomotion; all synaptically-connected neurons may not be relevant, but at least no highly connected local PMNs are absent from our analysis.\n\nOur results extend previous studies of Drosophila larval locomotion. Previous work has suggested that several muscles recruited at different times during the crawl cycle receive input from distinct populations of premotor neurons. For example, a recent study (Zwart et al., 2016) has shown that the GABAergic A14a inhibitory PMN (also called iIN1) selectively inhibits MNs innervating muscle 22/LT2 (co-activated muscle group F4), thereby delaying muscle contraction relative to muscle 5/LO1 (co-activated muscle group F2). While this model suggests a labeled-line mechanism, we also find that A14a disinhibits MNs in early co-activated muscle groups F1/2 via the inhibitory PMN A02e. Thus, A14a both inhibits late co-activated muscle groups and disinhibits early co-activated muscle groups. In addition to A14a, we find that the majority of PMNs target populations of MNs that span more than one co-active muscle group suggesting that sequential recruitment may primarily arise from a combinatorial network of PMNs. In addition, previous work has suggested that all MNs receive simultaneous excitatory inputs from different cholinergic PMNs (Zwart et al., 2016). However, our dual calcium imaging data show that the excitatory A27h PMN is active during the F3 co-activated muscle group and not earlier. Therefore, MNs may receive temporally distinct excitatory inputs, in addition to the previously reported temporally distinct inhibitory inputs. We have identified dozens of new PMNs that are candidates for regulating motor rhythms; functional analysis of all of these PMNs is beyond the scope of this paper, particularly due to the additional work required to screen and identify Gal4/LexA lines selectively targeting these PMNs, but our predictions are clear and testable when reagents become available.\n\nWe show that MNs innervating a single spatial muscle group can belong to more than one co-activated muscle group, therefore spatial muscle groups do not invariably match co-activated muscle groups. This could be due to several reasons: (i) MNs in each spatial muscle groups receive inputs from overlapping but not identical array of PMNs. (ii) Different MNs in the same spatial muscle group receive a different number of synapses from the same PMN. (iii) MNs in the same spatial muscle group vary in overall dendritic size and total number of postsynapses, thereby resulting in MNs of the same spatial muscle group falling into different co-activated muscle groups.\n\nWe demonstrate that during both forward and backward locomotion, most of longitudinal and transverse muscles of a given segment contract as early and late groups, respectively. In contrast, muscles with oblique or acute orientation often show different phase relationships during forward and backward crawling. Future studies will be needed to provide a biomechanical explanation for why oblique muscles \u2013 but not longitudinal or transverse muscles \u2013 need to be recruited differentially during forward or backward crawling. Also, it will be interesting to determine whether the VO or VL MNs are responsible for elevating the ventral cuticular denticles during propagation of the peristaltic wave; if the VOs, it would mean that lifting the denticles occurs at different phases of the crawl cycle in forward and backward locomotion.\n\nOur recurrent network model accurately predicts the order of activation of specific PMNs, yet many of its parameters remain unconstrained, and some PMNs may have biological activity inconsistent with activity predicted by our model. Sources of uncertainty in the model include incomplete reconstruction of inter-segmental connectivity and descending command inputs, the potential role of gap junctions (which are not resolved in the TEM reconstruction), as well as incomplete characterization of PMN and MN biophysical properties. Recent studies have suggested that models constrained by TEM reconstructions of neuronal connectivity are capable of predicting features of neuronal activity and function in the Drosophila olfactory (Eichler et al., 2017) and visual (Takemura et al., 2013; Tschopp et al., 2018) systems, despite the unavoidable uncertainty in some model parameters and the likely presence of multiple distinct models that produce activity consistent with recordings (Prinz et al., 2004; Brenner, 2010; Bargmann and Marder, 2013). For the locomotor circuit described here, we anticipate that the addition of model constraints from future experiments will lead to progressively more accurate models of PMN and MN dynamics. Despite its limitations, the ability of the PMN network to generate appropriate muscle timing for two distinct behaviors in the absence of third-layer or command-like interneurons suggests that a single layer of recurrent circuitry is sufficient to generate multiple behavioral outputs. It is also notable that a model lacking complex single-neuron dynamics such as post-inhibitory rebound or spike-frequency adaptation, which are critical for modeling other central pattern generator circuits (Marder and Bucher, 2001), is sufficient to produce the observed motor pattern. Thus, although there are likely complex intrinsic neuronal dynamics that our model fails to capture, recurrent excitatory and inhibitory interactions may play a large role in establishing appropriate motor timing in the larva.\n\nPrevious work in other animal models have identified multifunctional muscles involved in more than one motor behavior: swimming and crawling in C. elegans (Pierce-Shimomura et al., 2008; Vidal-Gadea et al., 2011; Butler et al., 2015) and leech (Briggman and Kristan, 2006); walking and flight in locust (Ramirez and Pearson, 1988); respiratory and non-respiratory functions of mammalian diaphragm muscle (Lieske et al., 2000; Fogarty et al., 2018) unifunctional muscles which are only active in one specific behavior in the lobster Homarus americanus (Mulloney et al., 2014); swimming in the marine mollusk Tritonia diomedea (Popescu and Frost, 2002); and muscles in different regions of crab and lobster stomach (Bucher et al., 2006; Briggman and Kristan, 2008). Our single-muscle calcium imaging data indicate that all imaged larval body wall muscles are bifunctional and are activated during both forward and backward locomotion. It will be interesting to determine if all bodywall muscles are also involved in other larval behaviors, such as escape rolling, self-righting, turning, or digging. It is likely that there are different co-activated muscle groups for each behavior, as we have seen for forward and backward locomotion, raising the question of how different co-activated muscle groups are generated for each distinct behavior.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>R36G02-Gal4</td>\n      <td>BDSC</td>\n      <td># 49939</td>\n      <td>A27h line</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>R87H09-Gal4</td>\n      <td>BDSC</td>\n      <td>#40507</td>\n      <td>A31k and A06l line</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>R78F07-Gal4</td>\n      <td>BDSC</td>\n      <td>#47409</td>\n      <td>A23a line</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>R44H10-LexA</td>\n      <td>BDSC</td>\n      <td># 61543</td>\n      <td>Muscle line</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>CQ2-lexA</td>\n      <td>this paper</td>\n      <td></td>\n      <td>U1-U5 motor neurons</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-jRCaMP1b</td>\n      <td>BDSC</td>\n      <td># 63793</td>\n      <td>calcium indicator</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>lexAop-GCaMP6m</td>\n      <td>BDSC</td>\n      <td>#44275</td>\n      <td>calcium indicator</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>13XLexAop2-6XmCherry-HA</td>\n      <td>BDSC</td>\n      <td>#52271</td>\n      <td>Used for ratiometric muscle calcium imaging</td>\n    </tr>\n  </tbody>\n</table>\n\n### Electron microscopy and CATMAID reconstructions\n\nThe TEM volume is for an L1 newly hatched larva (Ohyama et al., 2015), and is available by request from Albert Cardona (Cambridge University). Neurons were reconstructed in CATMAID (Saalfeld et al., 2009) using a Google Chrome browser as previously described (Ohyama et al., 2015). Figures were generated using CATMAID graph or 3D widgets combined with Adobe Illustrator (Adobe, San Jose, CA).\n\n### Criteria for selecting PMNs\n\nThe 118 PMNs were selected if they had presynapses to greater than 1% of a MN postsynapse population and greater than four total synapses (left+right combined). Candidate PMNs that met these criteria could be excluded however if left/right orthologs could not be identified, or if gaps prevented reliable reconstruction of the PMN in the neuropil regions of T3, A1, and A2 segments.\n\n### Synapse spatial distributions and clustering\n\nSynapse spatial distributions were generated using custom MATLAB scripts, which are deposited at GitHub (Mark and Litwin-Kumar, 2019).\u00a0Spatial distributions were determined using kernel density estimates with a 1 \u03bcm bandwidth. For cross-sectional spatial distributions, points were rotated \u221212 degrees around the Z-axis (A/P axis) in order to account for the slight offset of the EM-volume. For pre-synaptic sites, polyadic synapses were weighted by their number of postsynaptic targets. Synapse similarity was calculated as described previously (Schlegel et al., 2016):\n\n$$\nf(is,jk)=e^{\\frac{\u2212d_{sk}^{2}}{2\\sigma^{2}}}e^{\u2212\\frac{|n_{is}\u2212n_{jk}|}{n_{is}+n_{jk}}_{}}\n$$\n\nwhere f(is,jk) is the mean synapse similarity between all synapses of neuron i and neuron j. dsk is the Euclidean distance between synapses s and k such that synapse k is the closest synapse of neuron j to synapse s of neuron i. \u03c3 is a bandwidth term that determines what is considered close. nis and njk are the fraction of synapses for neuron i and neuron j that are within \u03c9 of synapse s and synapse k respectively. For MN inputs, \u03c3 = \u03c9 = 2 \u03bcm. Clustering was performed by using the average synapse similarity scores for the left and right hemisegments as a distance metric, and linkage was calculated using the average synapse similarity. For comparing the distributions across individual axes, a two sample Kolmogorov-Smirnov test was used to determine significance.\n\n### Clustering analysis of PMN-MN connectivity\n\nWeighted PMNs to MNs connectivity matrix was acquired from CATMAID TEM volume as percentage of total number of postsynaptic links to these target MNs. We then calculated the average of left and right pairs of PMNs and MNs. Next, we summed the mean connections from PMNs to all MNs innervating muscle groups defined in Figure 7A\u2013C and G, and normalized the values for each row (PMNs). Hierarchical clustering was performed on these normalized connectivity matrixes using Python\u2019s seaborn.clustermap (metric\u00a0=\u00a0Euclidean, method\u00a0=\u00a0single, https://seaborn.pydata.org/generated/seaborn.clustermap.html). For Figure 7D\u2013F, the PMN-MN connectivity matrix was acquired from CATMAID as the absolute number of presynapses from PMNs to their target MNs. We first summed the weighted synapses from left and right counterparts of individual PMNs to individual MNs. Then we calculated the average of these values for MN pairs (left and right) and summed the connections from PMNs to all MNs innervating the spatial or co-active muscle groups. To generate 7D-F, we discarded PMN-MN connections where total weighted synapses between a given PMN pair and MN pair were less than 1%. Histograms were produced in Python sns.distplot (https://seaborn.pydata.org/generated/seaborn.distplot.html).\n\n### Muscle GCaMP6f imaging, length measurement, and quantification\n\n2% melted agarose was used to make pads with similar size: 25 mm (W) X 50 mm (L) X 2 mm (H). Using tungsten wire, a shallow ditch was made on agarose pads to accommodate the larva. To do muscle ratiometric calcium imaging in intact animals, a first or second instar larvae expressing GCaMP6f and mCherry in body wall muscles were washed with distilled water, then moved into a 2% agarose pad on the slide. A 22 mm\u00a0\u00d740 mm cover glass was put on the larva and pressed gently to gently constrain larval locomotion. The larva was mounted dorsolaterally or ventrolaterally to image a different set of muscles (dorsolateral mount excludes the most ventral muscles (15,16,17) whereas the ventrolateral mount excludes the dorsal-most muscles (1,2,9,10); imaging was done with a 10x objective on an upright Zeiss LSM800 microscope. We recorded a total of 38 waves (24 forward and 14 backward) from four different animals, and examined muscle calcium activity in two subsequent hemi-segments for each wave. Muscle length measurement was done using custom MATLAB scripts where muscle length was measured on a frame by frame basis. Calcium imaging data were also analyzed using custom MATLAB scripts. Due to movement artifacts, ROIs were updated on a frame by frame basis to track the muscle movement. ROIs that crossed other muscles during contraction were discarded. In no single preparation was it possible to obtain calcium traces for all 30 muscles. Instead, we used only preparations in which at least 40% of the muscles could be recorded. In order to align crawl cycles that were of variable time and muscle composition, we first produced a two dimensional representation of each crawl cycle using PCA. Crawl cycles were represented as circular trajectories away from, and back towards the origin (Figure 3\u2014figure supplement 1E,F) similar to what has been shown previously (Lemon et al., 2015). The amplitude, or linear distance from the origin, to a point on this trajectory correlated well with both the coherence of the calcium signals as well as the amplitude of the population. Thus, peaks in this 2D amplitude correspond with the time in which most muscles are maximally active, which we defined as the midpoint of a crawl cycle. It should be noted that the muscles used to generate two dimensional representations of crawl cycles were different for each crawl. While this means that each PCA trajectory is slightly different for each crawl cycle, we reasoned that because each experiment contained muscles from every co-activated muscle group, the peak amplitude in PCA space should still correspond to a good approximation of the midpoint of the crawl cycle. We defined the width of a crawl cycle as the width of this 2D peak at half-height (Figure 3\u2014figure supplement 1G). We aligned all crawl cycles to the crawl onset and offset (which we call 25% and 75% of the crawl cycle respectively) as defined by this width at half-height (Figure 3\u2014figure supplement 1H,I).\n\n### Calcium imaging in neurons\n\nFor dual-color and single-color calcium imaging in fictive preps, freshly dissected brains were mounted on 12 mm round Poly-D-Lysine Coverslips (Corning BioCoat) in HL3.1 saline (de Castro et al., 2014), which were then were placed on 25 mm\u00a0\u00d775 mm glass slides to be imaged with a 40\u00a0\u00d7\u00a0objective on an upright Zeiss LSM-800 confocal microscopy. To simultaneously image two different neurons expressing GCaMP6m we imaged neuron-specific regions of interest (ROI). In addition, we imaged two neurons differentially expressing GCaMP6m and jRCaMP1b. Image data were imported into Fiji (https://imagej.net/fiji) and GCaMP6m and jRCaMP1b channels were separated. The \u0394F/F0 of each ROI was calculated as (F-F0)/F0, where F0 was averaged over\u00a0~1 s immediately before the start of the forward or backward waves in each ROI.\n\n### Neurotransmitter expression\n\nFor PMNs that we could identify using Gal4 lines, we crossed the Gal4 line to UAS-Cherry and used Chat:GFP to detect cholinergic neurons (Diao et al., 2015), anti-GABA to detect GABAergic neurons (Wilson and Laurent, 2005), anti-vesicular glutamate transporter (vGlut) to detect glutamatergic neurons (Daniels et al., 2004), or anti-Corazonin to detect corazonergic neurons (Veenstra and Davis, 1993).\n\n### Antibody staining and imaging\n\nStandard confocal microscopy, immunocytochemistry and MCFO methods were performed as previously described for larvae (Carreira-Rosario et al., 2018). Primary antibodies used: GFP or Venus (rabbit, 1:500, ThermoFisher, Waltham, MA; chicken 1:1000, Abcam13970, Eugene, OR), GFP or Citrine (Camelid sdAB direct labeled with AbberiorStar635P, 1:1000, NanoTab Biotech., Gottingen, Germany), GABA (rabbit, 1:200, Sigma, St. Louis, MO), vGlut (rabbit, 1:10000, gift from Aaron DiAntonio), Corazonin (rabbit, 1:1000), mCherry (rabbit, 1:1000, Novus, Littleton, CO), HA (mouse, 1:200, Cell Signaling, Danvers, MA), V5 (rabbit, 1:400, Rockland, Atlanta, GA), Flag (rabbit, 1:200, Rockland, Atlanta, GA). Secondary antibodies were from Jackson Immunoresearch (West Grove, PA) and used according to manufacturer\u2019s instructions. Confocal image stacks were acquired on Zeiss 710 or 800 microscopes. Images were processed in Fiji (https://imagej.net/Fiji), Photoshop, and Illustrator (Adobe, San Jose, CA). Brightness and contrast adjustments were applied to the entire image uniformly; mosaic images were assembled in Photoshop (Adobe, San Jose, CA).\n\n### Recurrent network model\n\n#### Model dynamics\n\nWe constructed a recurrent network representing the activity of PMNs, which we denote by the vector $p$, and of MNs, which we denote by the vector $m$. The firing rate of PMN or MN $i$ is a rectified-linear function of its input: $p_{i}(t)=[u_{i}^{p}(t)]_{+}$ or $m_{i}(t)=[u_{i}^{m}(t)]_{+}$, where $[\u22c5]_{+}$ denotes rectification. The PMN input $u^{p}$ follows the differential equation:\n\n$$\n\\tau^{p}\u2299\\frac{du^{p}}{dt}=-u^{p}(t)+g^{p}\u2299J^{p}p(t)+b^{p}+I(t),\n$$\n\nwhere $\\tau_{i}^{p}$ is the time constant of PMN $i$, $b_{i}^{p}$ its baseline excitability, $I_{i}(t)$ its descending input from other regions, $\u2299$ denotes element-wise multiplication, and $J^{p}$ is the connectivity matrix among PMNs. We also include a neuron-specific gain term $g_{i}^{p}$ which determines how sensitive a PMN is to its inputs (this is required because we fix the scale of $J$ based on the TEM reconstruction). The descending input to the PMNs $I(t)$ is represented as a pulse of activity: $I(t)=I^{FWD}$ during FWD crawling, $I(t)=I^{BWD}$ during BWD crawling, and $I(t)=0$ otherwise.\n\nMNs follow similar dynamics:\n\n$$\n\\tau^{m}\u2299\\frac{du^{m}}{dt}=-u^{m}(t)+g^{m}\u2299J^{m}p(t)+b^{m},\n$$\n\nwhere $J^{m}$ is the connectivity matrix from PMNs to MNs.\n\nTo generate PMNs and MNs corresponding to the A2 segment, we duplicated the A1 MNs and the PMNs we reconstructed for which no corresponding neuron in the next anterior segment was reconstructed. This produces a connectivity matrix with an approximate block structure:\n\n$$\nJ^{p}=(J_{11}^{p}J_{12}^{p}J_{21}^{p}J_{22}^{p}),\u00a0J^{m}=(J_{11}^{m}J_{12}^{m}J_{21}^{m}J_{22}^{m}),\n$$\n\nwhere $J_{rs}^{p/m}$ represents connections from segment $r$ to segment $s$.\n\n#### Target activity\n\nThe model parameters ($J$, $g$, $b$, $\\tau$, $I$) are adjusted using gradient descent so that the MN activity $m$ reproduces target patterns of activity during FWD and BWD crawling. These targets are defined for 6 s trials that contain one sequence of CMUG activation in each of the two segments. Time is discretized into 50 ms bins. At the beginning of each trial, $u^{p}$ is initialized with random values from a truncated Gaussian distribution with standard deviation 0.1, and $u^{m}$ is initialized to 0. A trial consists of sequential activity in each segment with a 1 s inter-segmental delay (Figure 9). Trials begin and end with 1 and 1.5 s of quiescence, respectively. Each MN\u2019s target activity is given by a rectified cosine pulse of activity whose start and end times depend on the CMUG to which it belongs. The first CMUG is active for 2 s, and subsequent CMUGs activate with a delay of 0.25 s between each group and end with a delay of 0.125 s between groups. The participation of MNs in CMUGs and the order in which the segments are active during FWD and BWD crawling are inferred from the data (Figure 3).\n\n#### Parameter constraints and optimization\n\nConstraints are placed on the model parameters based on knowledge of the circuit. The nonzero elements of $J^{p}$ and $J^{m}$ are determined from the TEM reconstruction (normalized based on the percent input received by the postsynaptic target), and signs are constrained using neurotransmitter identity when available. If the neurotransmitter identity of a neuron is not known, we initialize the connection to be inhibitory but do not constrain its sign during optimization. Time constants $\\tau$ are constrained to be between 50 ms and 1 s (these represent combined membrane and synaptic time constants), and gains $g$ are constrained to be positive.\n\nAt the beginning of optimization, the biases $b^{p}$ and $b^{m}$ are initialized equal to 0.1 and 0, respectively. Time constants $\\tau$ are initialized to 200 ms and gains $g$ to 1. $I^{FWD}$ and $I^{BWD}$ are initialized uniformly between 0.05 and 0.15 for each neuron. To initialize $J^{p}$ and $J^{m}$, initial connection strengths are taken in proportion to synapse counts from the TEM reconstruction with a scaling factor of \u00b10.005 for excitatory/inhibitory connections. Connections within a model segment are taken from the TEM reconstruction of A1, while connections from A1 to A2 or A2 to A1 are taken from the corresponding cross-segmental reconstructions (and are thus likely less complete than the within-segmental connectivity).\n\nThe cost function that is optimized consists of a term $C_{targ}$ that penalizes deviations of the MN activities from their targets and three regularization terms to promote realistic solutions. The target term is given by $C_{targ}=\\sumt,iw_{i}||m_{i}(t)-m_{i}^{*}(t)||^{2}$, where $m_{i}^{*}(t)$ is the target activity for MN $i$ and $w_{i}$ is a weighting term, proportional to\u00a0$1/\\sqrt{N_{CMUG,i}}$ where $N_{CMUG,i}$ is the number of neurons in the CMUG of neuron $i$ (this scaling ensures the target patterns of CMUGs with few MNs are still reproduced accurately). The first regularization term is given by\u00a0$C_{A18b,A27h}=0.05\u22c5\\sumt\\inFWD|p_{A18}t|+\\sumt\\inBWD|p_{A27}t|$,\u00a0which suppresses the activity of the A18b and A27h neurons for behaviors during which they are known to be quiescent. The second regularization term $C_{seg}$ constrains PMN activity to reflect the timing of segmental activation. It is given by\n\n$$\nC_{seg}=\\alpha_{n}\\sumt\\inactive1||p_{1}(t)\u2212p_{2}(t\u2212t_{delay})||^{2},\n$$\n\nwhere active1 represents the times when segment 1 is active, $p_{1}$ and $p_{2}$ represent vectors of PMN activities corresponding to pairs of homologous neurons in adjacent segments, and $t_{delay}$ is the time delay between segment 1 and 2 activations (equal to -1 s for forward and +1 s for backward crawling). This term ensures that PMN activity in the A1 and the A2 segments is similar but offset in time. The scaling term $\\alpha_{n}$ increases quadratically from 0 to 0.1 over the 1000 training epochs. The final term $C_{J}=\\alpha_{n}||J^{p}-J_{0}^{p}||^{2}+||J^{m}-J_{0}^{m}||^{2}$ penalizes deviations of model weights from the initial weights given by the TEM reconstruction. The correlation coefficient between the magnitudes of the nonzero entries of $J^{m}$ and $J_{0}^{m}$ was on average 0.87\u00b10.01 after optimization, and 0.43\u00b10.02 for $J^{p}$ and $J_{0}^{p}$, indicating that the optimization procedure found patterns of weights similar, though not identical, to those in reconstruction.\n\nThe total cost, equal to $C_{targ}+C_{A18b,A27h}+C_{seg}$+$C_{J}$, is optimized using the RMSProp optimizer for 1000 epochs. During each epoch, the costs corresponding to one FWD and one BWD trial are averaged. The learning rate decreases from $10^{-2}$ to $10^{-3}$ logarithmically over the course of optimization. Code is available at GitHub (Mark and Litwin-Kumar, 2019; copy archived at https://github.com/elifesciences-publications/larval_locomotion).\n",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "799e01e5-9613-4470-baae-dd7abeb72479",
+      "submission_id": "7a31cbac-0987-401f-b0ae-5800dbb237c5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51781.sa1](https://doi.org/10.7554/eLife.51781.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work provides an extensive and comprehensive analysis of premotor interneurons (PMNs), motor neurons (MNs) and muscles governing Drosophila larval locomotion. The authors examine muscle recruitment during forward and backward crawling and identify specific muscles that show differential activation timing between forward and backward crawling. Examining the connectivity between MNs and PMNs with synaptic resolution reveals evidence for both a \"labelled line\" as well as \"combinatorial code\" type PMN-MN network. This represents a significant advance in our understanding of directional control of locomotion.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A multilayer circuit architecture for the generation of distinct locomotor behaviors in Drosophila\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript investigates the neural mechanisms by which two distinct aspects of locomotion, forward and backward movements, are brought about in Drosophila larva. It can be divided into three parts. The first part describes the muscles involved and their activity during forward and backward locomotion using calcium imaging; the second part utilizes the EM volume of the larval CNS to identify the motor neurons and premotor neurons, and their synaptic connectivity patterns; the third part invokes modeling to simulate how the basic network may function during the two behavioral events. The uniqueness of the paper lies in its comprehensiveness, as all (or nearly all) of the above components are evaluated at a whole segment level. Overall, this study represents a significant advance in our understanding of directional control of locomotion.\n\nEssential revisions:\n\n1) In the first experiment (Figure 1-3) the authors perform an elegant and comprehensive analysis of muscle activity during forward and backward crawling cycle. This culminates into identification of specific muscles (VO, 1, 2, 11) that are recruited at distinct times in forward versus backward crawling (Figure 3). This finding sets the stage for the rest of the paper for finding a model of how neurons recruit these muscles. Unfortunately, the following sections lack specific references (Except Figure 5D,E) to these muscles and the reader is left searching for an explanation in dense data figures and supp. Highlighting MNs and PMNs that recruit these specific muscles, in every section is essential for coherence, furthermore a lack of identification of MNs and PMNs to drive differential recruitment of some of these specific muscles, requires an explanation (e.g. VO muscle group).\n\n2) In Figure 2-3, the authors suggest co-activation based hierarchical clustering as a better grouping of functional muscle types, compared to previously used \"spatial clusters\". However with respect to MN postsynaptic sites (Figure 5), a thorough examination (including hierarchical clustering analysis) is only performed for spatial clusters. Moreover co-activation based clusters show a weak segregation of postsynaptic MN sites. It would help if there were quantitative analysis of the clusters the authors have used for the remainder of the manuscript.\n\nAdditionally, authors could perform a comparison between MNs innervating differential recruited muscles and MNs innervating muscles that show identical recruitment during forward and backward crawling. This will inform whether the postsynaptic density could provide any useful information to explain the muscle recruitment.\n\n3) The PMN-MN connectivity analysis is impressive in scope (number of neurons traced) and detail (neurotransmitter identities). Although the authors elegantly show potential for both \"labelled line\" and \"combinatorial code\" based on this connectivity, it would once more help if authors could highlight whether it is labelled line or combinatorial input that drives MNs for the specific muscles that show differential recruitment timing.\n\n4) The authors show a first comprehensive connectivity constrained model of PMN-MN network capable of producing muscle activity patterns observed during crawling forwards and backwards. Although the model is neatly verified by accompanying imaging experiments, it would have been more satisfying if there were fewer constraints on PMN activity, given the authors are anyways optimizing the model to get the muscle activity observed in the imaging data. Specifically, the PMNs that show the most distinct recruitment during forward versus backward crawling (A27h and A18b3) are imposed in the model. It would be interesting to see if the differential A27h and A18b3 activation emerges from connectivity constraints. Furthermore, some speculation regarding how descending neurons might impose the activity patterns on the PMN-MN network will be beneficial.\n",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c15ea148-a99c-4e19-ad01-f6ae0847fcf9",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C1",
+      "claim": "The Drosophila larva is composed of 3 thoracic (T1-T3) and nine abdominal segments (A1-A9).",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila larva is composed of 3 thoracic (T1-T3) and nine abdominal segments (A1-A9; Figure 1A), with sensory neurons extending from the periphery into the CNS, and motor neurons extending out of the CNS to innervate body wall muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and supported by Figure 1A showing the larval anatomy.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "db440e58-5cf6-4a22-8dd0-2f666261f38f",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C2",
+      "claim": "Most segments contain 30 bilateral body wall muscles that form 'spatial muscle groups' based on common location and orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most segments contain 30 bilateral body wall muscles that form 'spatial muscle groups' based on common location and orientation: dorsal longitudinal (DL; includes previously described DA and some DO muscles), dorsal oblique (DO), ventral longitudinal (VL), ventral oblique (VO), ventral acute (VA) and lateral transverse (LT)(Figure 1B) (Crossley, 1978; Hooper, 1986; Bate, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the text with citations to prior work and reference to Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "176f6dd1-9d48-44ab-b290-5306ecdf594e",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C3",
+      "claim": "Forward crawling behavior in larvae involves a peristaltic contraction wave from posterior to anterior segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Forward crawling behavior in larvae involves a peristaltic contraction wave from posterior to anterior segments; backward crawling entails a posterior propagation of the contraction wave (Crisp et al., 2008; Dixit et al., 2008; Berni et al., 2012; Gjorgjieva et al., 2013; Heckscher et al., 2015; Pulver et al., 2015; Loveless et al., 2018; Kohsaka et al., 2019) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with multiple citations and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "0407ae73-15a0-4560-b015-12b21cc304a6",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C4",
+      "claim": "Backward crawling entails a posterior propagation of the contraction wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Forward crawling behavior in larvae involves a peristaltic contraction wave from posterior to anterior segments; backward crawling entails a posterior propagation of the contraction wave (Crisp et al., 2008; Dixit et al., 2008; Berni et al., 2012; Gjorgjieva et al., 2013; Heckscher et al., 2015; Pulver et al., 2015; Loveless et al., 2018; Kohsaka et al., 2019) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with multiple citations and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "304d4ab1-9949-4a33-b139-041aadc73a03",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C5",
+      "claim": "There are ~30 bilateral pair of MNs in each segment.",
+      "claim_type": "EXPLICIT",
+      "source": "There are ~30 bilateral pair of MNs in each segment: 26 pair of type Ib MNs with big boutons that typically innervate one muscle; two pair of type Is MNs with small boutons that innervate large groups of dorsal or ventral muscles; one or two type III insulinergic MNs innervating muscle 12; and three type II ventral unpaired median (VUM) MNs that provide octopaminergic innervation to most muscles (Table 1) (Gorczyca et al., 1993; Landgraf et al., 1997; Hoang and Chiba, 2001; Landgraf et al., 2003; Choi et al., 2004; Mauss et al., 2009; Koon et al., 2011; Koon and Budnik, 2012; Arzan Zarin and Labrador, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citations and reference to Table 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "406ad1f3-5e94-412a-a9f0-c80553f94d3c",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C6",
+      "claim": "Type Ib MNs have big boutons that typically innervate one muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "There are ~30 bilateral pair of MNs in each segment: 26 pair of type Ib MNs with big boutons that typically innervate one muscle; two pair of type Is MNs with small boutons that innervate large groups of dorsal or ventral muscles; one or two type III insulinergic MNs innervating muscle 12; and three type II ventral unpaired median (VUM) MNs that provide octopaminergic innervation to most muscles (Table 1) (Gorczyca et al., 1993; Landgraf et al., 1997; Hoang and Chiba, 2001; Landgraf et al., 2003; Choi et al., 2004; Mauss et al., 2009; Koon et al., 2011; Koon and Budnik, 2012; Arzan Zarin and Labrador, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "5835aaaf-2f06-41d0-a6c8-e126942a36a7",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C7",
+      "claim": "Type Is MNs have small boutons that innervate large groups of dorsal or ventral muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "There are ~30 bilateral pair of MNs in each segment: 26 pair of type Ib MNs with big boutons that typically innervate one muscle; two pair of type Is MNs with small boutons that innervate large groups of dorsal or ventral muscles; one or two type III insulinergic MNs innervating muscle 12; and three type II ventral unpaired median (VUM) MNs that provide octopaminergic innervation to most muscles (Table 1) (Gorczyca et al., 1993; Landgraf et al., 1997; Hoang and Chiba, 2001; Landgraf et al., 2003; Choi et al., 2004; Mauss et al., 2009; Koon et al., 2011; Koon and Budnik, 2012; Arzan Zarin and Labrador, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "83fcfb80-7ecd-4c99-9fef-c850e74debb2",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C8",
+      "claim": "Type Ib MNs innervating muscles in the same spatial muscle group typically project dendrites to the same region of the dorsal neuropil, creating a myotopic map.",
+      "claim_type": "EXPLICIT",
+      "source": "Elegant pioneering work showed that type Ib MNs innervating muscles in the same spatial muscle group typically project dendrites to the same region of the dorsal neuropil, creating a myotopic map (Landgraf et al., 1997; Mauss et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "bf098b87-2bd8-45b5-bb40-3e6c1f4ca9e1",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C9",
+      "claim": "All body wall muscles are activated during forward and backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, all imaged muscles showed a significant rise in GCaMP6f fluorescence during forward and backward locomotion (Figure 2C,F; Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by data shown in Figure 2C,F and Videos 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "385e12fd-36ea-4a02-b4a3-6cc972c9ea88",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C10",
+      "claim": "All MNs and their target muscles are activated during forward and backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, because each type Ib MN typically innervates a single muscle, we can use muscle depolarization as a proxy for the activity of its innervating MN. We conclude that all MNs and their target muscles are activated during forward and backward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion based on the muscle activity data and the known innervation pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "51a19c35-256b-43d0-b431-07fc8ab87aea",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C11",
+      "claim": "Hierarchical clustering of mean activity for all observed muscles yields four co-activated muscle groups during forward locomotion (F1\u2013F4).",
+      "claim_type": "EXPLICIT",
+      "source": "Muscle activity appeared as a continuum with the sequential recruitment of individual muscles, yet hierarchical clustering of the mean activity of each muscle during forward and backward crawling revealed four groups of co-active muscles for both behaviors (Figure 3A\u2013E; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 3A-E and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "d955ba13-cc28-471e-88fe-1b99c6a322dd",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C12",
+      "claim": "Hierarchical clustering of mean activity for all observed muscles yields four co-activated muscle groups during backward locomotion (B1\u2013B4).",
+      "claim_type": "EXPLICIT",
+      "source": "Muscle activity appeared as a continuum with the sequential recruitment of individual muscles, yet hierarchical clustering of the mean activity of each muscle during forward and backward crawling revealed four groups of co-active muscles for both behaviors (Figure 3A\u2013E; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 3A-E and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "642af3dd-36e8-4d2c-ad04-be7d50964b61",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C13",
+      "claim": "The activation time of each co-activated muscle group was more coherent than the time of their inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation time of each co-activated muscle group was more coherent than the time of their inactivation (Figure 3B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 3B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "e2c7a9ce-718f-49de-a63d-2a5927133b31",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C14",
+      "claim": "Co-activated muscle groups do not fully match previously identified spatial muscle groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these co-activated muscle groups do not fully match previously identified spatial muscle groups (compare Figures 1B and 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with reference to comparing Figures 1B and 3F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "862eed42-254d-418a-ba2e-2d53920d0d81",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C15",
+      "claim": "The largest change in recruitment time between forward and backward locomotion was in six muscles: the three muscles in the VO spatial muscle group (muscles 15\u201317), and muscles 2, 11, and 18.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the largest change in recruitment time between forward and backward locomotion was in six muscles: the three muscles in the VO spatial muscle group (muscles 15\u201317), and muscles 2, 11, and 18 (each in a different spatial muscle group) (Figure 3H,I; Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 3H,I and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "e6ffed3b-1162-444d-90f9-41920665a96a",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C16",
+      "claim": "The VO spatial muscle group (muscles 15\u201317) switched from late activity during forward locomotion (F3) to early activity during backward locomotion (B1).",
+      "claim_type": "EXPLICIT",
+      "source": "The VO spatial muscle group (muscles 15\u201317) switched from late activity during forward locomotion (F3) to early activity during backward locomotion (B1), whereas the three other neurons switched from early activity during forward locomotion (F1/2) to late activity during backward locomotion (B3/4) (Figure 3H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 3H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "f3639071-1678-4b51-94bc-d27e55bd3417",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C17",
+      "claim": "Muscles 2, 11, and 18 switched from early activity during forward locomotion (F1/2) to late activity during backward locomotion (B3/4).",
+      "claim_type": "EXPLICIT",
+      "source": "The VO spatial muscle group (muscles 15\u201317) switched from late activity during forward locomotion (F3) to early activity during backward locomotion (B1), whereas the three other neurons switched from early activity during forward locomotion (F1/2) to late activity during backward locomotion (B3/4) (Figure 3H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 3H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "e4a84142-8f8e-4bef-ae4c-ee18b27861dd",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C18",
+      "claim": "Longitudinal muscles tended to be active early and transverse muscles activated late in both forward and backward behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Other spatial muscle groups typically did not change their timing of activation; for example longitudinal muscles tended to be active early and transverse muscles activated late in both behaviors (Figure 3F,G), consistent with prior reports tracking single muscles within each group (Heckscher et al., 2012; Zwart et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with citations and reference to Figure 3F,G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "33186d75-9683-4cbd-a87b-3fccb87fdd5c",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C19",
+      "claim": "All differentiated MNs in segment A1 of the newly hatched larval CNS have been successfully identified and reconstructed at single synapse-level resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have successfully identified and reconstructed, at single synapse-level resolution, all differentiated MNs in segment A1 of the newly hatched larval CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion of the TEM reconstruction work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "08a02c8d-31b0-4f06-8a58-ab740177e742",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C20",
+      "claim": "All MNs had a dense array of postsynapses on their dendritic projections.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all MNs had a dense array of postsynapses on their dendritic projections, but unlike C. elegans (Wen et al., 2012), we observed no presynaptic contacts to other MNs or interneurons (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "7c8791b7-fdce-4f59-89f0-2423b466ea62",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C21",
+      "claim": "Unlike C. elegans, Drosophila larval MNs have no presynaptic contacts to other MNs or interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all MNs had a dense array of postsynapses on their dendritic projections, but unlike C. elegans (Wen et al., 2012), we observed no presynaptic contacts to other MNs or interneurons (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with citation to C. elegans work and reference to Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "fba598f1-56df-4e73-b9ed-4b4a80ea31e9",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C22",
+      "claim": "MNs innervating a single spatial muscle group target their dendrites to a similar region of the neuropil, creating a myotopic map in the neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor neurons innervating a single spatial muscle group target their dendrites to a similar region of the neuropil, creating a myotopic map in the neuropil (Landgraf et al., 2003; Mauss et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "81d6710d-7c21-49eb-a3b7-8958cf0e5f5c",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C23",
+      "claim": "MNs in the left and right A1 hemisegments have highly similar postsynapse clustering within the neuropil volume (Pearson correlation coefficient, r = 0.97).",
+      "claim_type": "EXPLICIT",
+      "source": "To begin, we calculated pairwise synapse similarity scores (Schlegel et al., 2016) for MNs in the left and right A1 hemisegments and observed highly similar postsynapse clustering within the neuropil volume (Pearson correlation coefficient, r = 0.97), which we averaged for subsequent analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with a specific correlation coefficient value and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "470176f0-2ab9-45d3-beb0-80e7cc5c7d3f",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C24",
+      "claim": "Unbiased clustering of MNs based on postsynaptic synapse similarity found a highly ordered hierarchical relationship between postsynapse localization and innervation of spatial muscle groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we performed unbiased clustering of MNs based on postsynaptic synapse similarity, and found a highly ordered hierarchical relationship between postsynapse localization and innervation of spatial muscle groups (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "99a57029-73b2-48a6-a1e6-50801a8b6b54",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C25",
+      "claim": "MNs innervating each spatial muscle group have different postsynaptic distributions along two axes (two sample Kolmogorov-Smirnov test; p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that MNs innervating each spatial muscle group have different postsynaptic distributions along two axes (two sample Kolmogorov-Smirnov test; p<0.05) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with statistical test results and reference to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "34e2db01-9c17-40cf-8bd8-5a62e4c1e53c",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C26",
+      "claim": "MNs innervating each forward or backward co-active muscle group had distinct postsynapse density maxima along the mediolateral axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MNs innervating each forward or backward co-active muscle group had distinct postsynapse density maxima along the mediolateral axis, and often along a second axis (either dorsoventral or anterioposterior) (Figure 5C,D arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "f85f73d9-f61f-450c-9709-a22fb87f0153",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C27",
+      "claim": "118 bilateral PMNs (236 total) with connectivity to A1 MNs were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 118 bilateral PMNs (236 total) with connectivity to A1 MNs (Table 3; see Materials and methods for selection criteria).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with reference to Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "fc501e93-b048-4ba7-8d62-a5e3effa3989",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C28",
+      "claim": "PMN presynapses were enriched in the dorsal neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PMN presynapses were enriched in the dorsal neuropil, as expected, and PMN postsynapses were distributed throughout the neuropil (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "82e75c41-36d8-48ee-9429-4e355de36fbb",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C29",
+      "claim": "PMN postsynapses were distributed throughout the neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PMN presynapses were enriched in the dorsal neuropil, as expected, and PMN postsynapses were distributed throughout the neuropil (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "9961412d-2504-40dd-a764-78c17e77b4e4",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C30",
+      "claim": "Each PMN synapsed with an average of 8.0 MNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Each PMN synapsed with an average of 8.0 MNs (Figure 6C), while each MN received input from an average of 32.5 PMNs (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "daaf6651-07c0-46fc-8c01-eb45e1fc4a40",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C31",
+      "claim": "Each MN received input from an average of 32.5 PMNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Each PMN synapsed with an average of 8.0 MNs (Figure 6C), while each MN received input from an average of 32.5 PMNs (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "37e93582-52d6-43b0-bce3-90fbe274c804",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C32",
+      "claim": "PMNs made 7495 synapses on A1 MNs, which accounted for 12.7% of PMN output and 76% of the total A1 MN input.",
+      "claim_type": "EXPLICIT",
+      "source": "PMNs made 7495 synapses on A1 MNs, which accounted for 12.7% of PMN output and 76% of the total A1 MN input (excluding A2 MN-25) (Figure 6E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with specific numbers and reference to Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "e360209a-473c-4ab0-91ea-db9e3bd3b7d5",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C33",
+      "claim": "MNs received 59.6% to 97.9% of their total inputs from the 118 PMN pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, MNs received 59.6% to 97.9% of their total inputs from these 118 PMN pairs (excluding RP3 which has most of its postsynapses anterior to A1) (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with specific percentages and reference to Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "ed67bf98-2eeb-4883-9a6d-5c4e8bf8b1eb",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C34",
+      "claim": "Most PMNs projected contralaterally.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, most PMNs projected contralaterally, had local arbors, and had postsynaptic inputs on their more proximal processes (Figure 6G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 6G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "8c7cfcb6-6023-4c86-9bf4-fe58f1396734",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C35",
+      "claim": "30 of the 118 PMNs innervated MNs in a single spatial muscle group.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 30 of the 118 PMNs innervated MNs in a single spatial muscle group (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "88bdab25-793f-4233-b031-5ad8b1b0fdcb",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C36",
+      "claim": "A similar number of PMNs innervated MNs in a single co-active muscle group.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a similar numbers of PMNs innervated MNs in a single co-active muscle group (Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 7E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "6c1e56d7-7b1d-4fc4-8325-ddc6bcc2f83d",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C37",
+      "claim": "The majority of PMNs innervate MNs in multiple spatial or co-active muscle groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we have identified groups of PMNs that specifically innervate co-active MNs, consistent with a 'labeled line' model for generating motor output, yet we note that the majority of PMNs innervate MNs in multiple spatial or co-active muscle groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion from the connectivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "8344137f-a100-4869-bc10-e8741bff9590",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C38",
+      "claim": "All PMNs innervate multiple MNs, and there is no evidence for specific PMNs innervating specific MNs, whether they are differentially recruited or not.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all PMNs innervate multiple MNs, and there is no evidence for specific PMNs innervating specific MNs, whether they are differentially recruited or not (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "8aa19bdb-6f02-4712-b99c-6cc660786954",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C39",
+      "claim": "PMN combinatorial coding is likely to generate the observed MN differential recruitment during forward and backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that PMN combinatorial coding is likely to generate the observed MN differential recruitment during forward and backward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion from the connectivity analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "8c037458-24df-40ac-ac2b-4d5e1c092036",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C40",
+      "claim": "The PMN A27h is strongly connected to MNs in co-active group F3.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the PMN A27h (Figure 7H) is strongly connected to MNs in co-active group F3 (Figure 7H'), so we asked whether A27h was recruited after the U1-U5 MNs in co-active groups F1/F2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 7H and 7H'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "1506eb57-9721-4044-b050-73bd172b047a",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C41",
+      "claim": "Dual color calcium imaging showed that the F1/F2 MNs were active prior to the F3 PMN A27h.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, dual color calcium imaging showed that the F1/F2 MNs were active prior to the F3 PMN A27h (Figure 7H'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 7H''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "cf2182bb-07b8-475a-b49f-63129168a741",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C42",
+      "claim": "MN18 is highly asymmetric.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the morphology of differentially recruited MNs and found that MN18, but not the others, is highly asymmetric (Figure 8A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 8A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "d6d51cbe-9877-4809-b736-0c9734515135",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C43",
+      "claim": "The asymmetric distribution of postsynaptic sites on MN18 should lead to its earlier activation during forward than backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric distribution of postsynaptic sites on MN18 should lead to its earlier activation during forward than backward locomotion. This is consistent with its activity pattern deciphered using muscle calcium imaging during these behaviors (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated as a prediction based on morphology and confirmed by reference to Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "7f03264e-3ee4-431c-9246-e02b37692f2f",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C44",
+      "claim": "A02i and A03a4 have axons extending 1\u20132 segments anterior of the dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, A02i and A03a4 have axons extending 1\u20132 segments anterior of the dendrites; A03a5 has axons projecting 1\u20132 segments posterior of the dendrites; whereas A03g is a symmetric PMN (Figure 8F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 8F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "294f01a2-efb5-41ad-bb7b-55326bc7d7e8",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C45",
+      "claim": "A03a5 has axons projecting 1\u20132 segments posterior of the dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, A02i and A03a4 have axons extending 1\u20132 segments anterior of the dendrites; A03a5 has axons projecting 1\u20132 segments posterior of the dendrites; whereas A03g is a symmetric PMN (Figure 8F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 8F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "598b4c0c-eaf2-491b-b433-3d7c2f12100e",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C46",
+      "claim": "A03g is a symmetric PMN.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, A02i and A03a4 have axons extending 1\u20132 segments anterior of the dendrites; A03a5 has axons projecting 1\u20132 segments posterior of the dendrites; whereas A03g is a symmetric PMN (Figure 8F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 8F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "c552aab5-5b8f-420a-a5fc-ce6771add54b",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C47",
+      "claim": "The asymmetric PMNs are likely to contribute to the differential MN/muscle recruitment in forward and backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the opposite direction of wave propagation in backward and forward locomotion, the asymmetric PMNs are likely to contribute to the differential MN/muscle recruitment in forward and backward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an inference based on the asymmetric morphology and wave propagation direction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "d7434d1c-1644-4f01-932f-31ccb5005bae",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C48",
+      "claim": "The reconstructed PMN connectome is capable of producing the observed timing of MN/muscle activation.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether the reconstructed PMN connectome is capable of producing the observed timing of MN/muscle activation, we developed a recurrent network model of two adjacent segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as the goal of the modeling work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "9bbf5fc0-e1ad-4b2f-8d7b-30471829324a",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C49",
+      "claim": "The observed connections among PMNs within a segment are sufficient to generate appropriately timed MN activity for forward and backward behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, although the connectivity among PMNs within a segment is sparse (roughly 7% of all possible pairwise connections), the observed connections are nonetheless sufficient to generate appropriately timed MN activity for the two distinct behaviors (Figure 9A,B; Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 9A,B and Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "1aa36705-166e-440a-a8ce-793076af0c28",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C50",
+      "claim": "The connectivity among PMNs within a segment is sparse (roughly 7% of all possible pairwise connections).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, although the connectivity among PMNs within a segment is sparse (roughly 7% of all possible pairwise connections), the observed connections are nonetheless sufficient to generate appropriately timed MN activity for the two distinct behaviors (Figure 9A,B; Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with a specific percentage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "f0082db0-573a-4826-8f3e-24edb25031d1",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C51",
+      "claim": "In the models, distinct sequences of PMN activity for forward and backward locomotion tile the period of time over which MNs are active.",
+      "claim_type": "EXPLICIT",
+      "source": "In the models, distinct sequences of PMN activity for forward and backward locomotion tile the period of time over which MNs are active (Figure 9C; Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 9C and Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "7f8942f2-f164-49b9-a858-dafc3d795475",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C52",
+      "claim": "The PMN A14a is active during co-activated muscle group F1.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the PMN A14a is active at F1 and is inactive at F4 (Figure 9C). Similarly, experimental data show that A14a is inhibitory and is active during co-activated muscle group F1; and blocking A14a activity removes the contraction delay between muscles in co-activated muscle group F1 and F4 (Zwart et al., 2016), thereby validating our model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with citation and reference to Figure 9C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "a47ac237-ee82-471a-81a0-c4e6a33a2694",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C53",
+      "claim": "Blocking A14a activity removes the contraction delay between muscles in co-activated muscle group F1 and F4.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the PMN A14a is active at F1 and is inactive at F4 (Figure 9C). Similarly, experimental data show that A14a is inhibitory and is active during co-activated muscle group F1; and blocking A14a activity removes the contraction delay between muscles in co-activated muscle group F1 and F4 (Zwart et al., 2016), thereby validating our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "c43d0b4a-0fcd-4528-a1ab-9e5d74356b06",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C54",
+      "claim": "The PMNs A18b3 and A18a are both active during forward locomotion, but only A18a is active during backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the PMNs A18b3 and A18a are both active during forward locomotion, but only A18a is active during backward locomotion (Figure 9C). Experimental data show that A18a and A18b3 are active precisely as proposed in our model (Hasegawa et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with citation and reference to Figure 9C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "56fc5dad-d681-4374-8fb6-3f34c82c7ada",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C55",
+      "claim": "The cholinergic A18j and A01c PMNs are active at F4.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our model predicts the cholinergic A18j and A01c PMNs are active at F4, which is supported by experimental data on these neurons (where they were called eIN1,2; Zwart et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a model prediction supported by cited experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "5fc1efa3-919d-48cc-bdf6-0f37f662a625",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C56",
+      "claim": "The A31k activity peak coincides with a decline of activity in MNs innervating early co-activated muscle groups during both forward and backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual color calcium imaging data revealed that the A31k activity peak coincides with a decline of activity in MNs innervating early co-activated muscle groups during both forward and backward locomotion (Figure 10A,B), further validating our model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 10A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "8b496a37-f93a-4e6a-9c91-198d827d467c",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C57",
+      "claim": "A31k and A06l showed concurrent, rhythmic activity during forward and backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed GCaMP6m in both neurons, which we could distinguish based on their different axon projections, and found that they showed concurrent, rhythmic activity (Figure 10C,D), and thus both neurons show a delayed activation relative to MNs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 10C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "dff0cb6b-ae13-45dd-8215-9e8a112c0ef8",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C58",
+      "claim": "A23a was active earlier during backward locomotion than forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that A23a was active earlier during backward locomotion than forward locomotion (Figure 9C). We expressed GCaMP6m in a subset of MNs and jRCaMP1b in A23a, and validated the prediction of our model (Figure 10E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated as a model prediction that was validated, with reference to Figure 9C and Figure 10E,F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "cc9992fa-9260-42a9-babc-e503868258aa",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C59",
+      "claim": "A model lacking complex single-neuron dynamics such as post-inhibitory rebound or spike-frequency adaptation is sufficient to produce the observed motor pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also notable that a model lacking complex single-neuron dynamics such as post-inhibitory rebound or spike-frequency adaptation, which are critical for modeling other central pattern generator circuits (Marder and Bucher, 2001), is sufficient to produce the observed motor pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "4d13acfd-a630-47ec-89e3-7dd77349a9cd",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C60",
+      "claim": "All imaged larval body wall muscles are bifunctional and are activated during both forward and backward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our single-muscle calcium imaging data indicate that all imaged larval body wall muscles are bifunctional and are activated during both forward and backward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion from the calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "65a1e15d-a523-4186-9c62-d085858ba531",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C61",
+      "claim": "The forward-specific excitatory PMN A27h connects to another forward-specific excitatory PMN A18b3 innervating F1-F2 MNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The previously described forward-specific excitatory PMN A27h (Fushiki et al., 2016; Carreira-Rosario et al., 2018), with F3 onset, connects to another forward-specific excitatory PMN A18b3 (Hasegawa et al., 2016) innervating F1-F2 MNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "b1beb17e-12ee-46c9-aace-849986ec1ae2",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C62",
+      "claim": "When A27h activates F3, it also maintains activity of A18b3 to ensure continued excitation of F1/F2 MNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when A27h activates F3, it also maintains activity of A18b3 to ensure continued excitation of F1/F2 MNs (Figure 11A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 11A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "e7c4af50-9de1-4580-bd18-eba36a280ba6",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C63",
+      "claim": "A27h excites PMN A18b3 in the next anterior segment, which could advance the intersegmental forward contraction wave.",
+      "claim_type": "EXPLICIT",
+      "source": "A27h also excites PMN A18b3 in the next anterior segment, which could advance the intersegmental forward contraction wave; similarly, A18b3 excites two inhibitory PMNs (A06c, A14a) in the next anterior segment which may prevent premature activation of F3/4 MNs (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 11B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "29730f9b-32cd-4186-8d57-bfe8b706648b",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C64",
+      "claim": "A18b3 excites two inhibitory PMNs (A06c, A14a) in the next anterior segment which may prevent premature activation of F3/4 MNs.",
+      "claim_type": "EXPLICIT",
+      "source": "A27h also excites PMN A18b3 in the next anterior segment, which could advance the intersegmental forward contraction wave; similarly, A18b3 excites two inhibitory PMNs (A06c, A14a) in the next anterior segment which may prevent premature activation of F3/4 MNs (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 11B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "45f20dda-0cb7-4e5f-8541-5b035e527460",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C65",
+      "claim": "A14a disinhibits F1/F2 MNs via silencing A02e PMN.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, consistent with F1/F2 vs F3/F4 temporal segregation, A14a disinhibits F1/F2 MNs via silencing A02e PMN (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 11B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "77f04c82-f084-4cc1-a10e-e49a2167916c",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C66",
+      "claim": "The backward-specific PMN A27k excites B4 MNs as well as the inhibitory PMNs A02e and A02g innervating B1/B2.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined circuit motifs composed of a backward-specific PMN, A27k (also known as ifb-BWD) (Kohsaka et al., 2019). A27k excites B4 MNs as well as the inhibitory PMNs A02e and A02g innervating B1/B2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "c3496807-3ee9-4a03-a5b1-6196748817c9",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C67",
+      "claim": "A27k synapses in the next anterior segment with the excitatory neurons A01c1, A01c2, and A18j (innervating B4), as well as with the inhibitory PMN A02e innervating B1/B2.",
+      "claim_type": "EXPLICIT",
+      "source": "A27k also synapses in the next anterior segment with the excitatory neurons A01c1, A01c2, and A18j (innervating B4), as well as with the inhibitory PMN A02e innervating B1/B2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "14f81ddd-0e11-4dc4-b636-cbc3617c4a93",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C68",
+      "claim": "The TEM volume is for an L1 newly hatched larva.",
+      "claim_type": "EXPLICIT",
+      "source": "The TEM volume is for an L1 newly hatched larva (Ohyama et al., 2015), and is available by request from Albert Cardona (Cambridge University).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "04a6651f-2d63-4eb9-a29a-eea75886a73e",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C69",
+      "claim": "The 118 PMNs were selected if they had presynapses to greater than 1% of a MN postsynapse population and greater than four total synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "The 118 PMNs were selected if they had presynapses to greater than 1% of a MN postsynapse population and greater than four total synapses (left+right combined).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a selection criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "eda8a866-3b59-4bff-9717-777d9a9758e6",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "claim_id": "C70",
+      "claim": "An isolated CNS without sensory input (including no proprioception) can maintain forward and backward waves of motor neuron activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies of C. elegans have highlighted the importance of proprioception in order to drive locomotion (Kunert et al., 2017), while our model does not require proprioceptive input to generate the observed motor pattern, consistent with data showing that an isolated CNS without sensory input (including no proprioception) can maintain forward and backward waves of motor neuron activity (Pulver et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4f5d3490-d2e5-4bf8-9f9e-5c82f5f4fe8e",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Drosophila larval body plan consists of thoracic and abdominal segments with stereotyped muscle groups and motor neuron organization. Each segment contains ~30 bilateral body wall muscles organized into spatial groups (DL, DO, VL, VO, VA, LT) and ~30 bilateral MN pairs with distinct morphological types (Ib, Is, III, VUM). Type Ib MNs innervating the same spatial muscle group project dendrites to similar neuropil regions, creating a myotopic map.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 describe well-established anatomical features of the Drosophila larval nervous system, supported by direct observations in Figure 1 and extensive prior literature (multiple citations provided). The myotopic organization (C8) is explicitly validated by prior work and serves as foundational knowledge for subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "c2840d0c-a59d-49b5-a848-2437364440e5",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All body wall muscles and their innervating motor neurons are activated during both forward and backward locomotion, demonstrating that larval muscles are bifunctional rather than behavior-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C60 are directly supported by comprehensive GCaMP6f calcium imaging data (Figure 2C,F, Videos 1-2) showing significant fluorescence increases in all imaged muscles during both behaviors. The inference that muscle activity reflects MN activity (C10) is justified given the known 1:1 innervation pattern of type Ib MNs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "4d4c098d-c5f1-4b55-81cb-321205d95b28",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Hierarchical clustering of muscle activity reveals four distinct co-activated muscle groups during both forward (F1-F4) and backward (B1-B4) locomotion, with more coherent activation than inactivation timing. These co-activated groups do not fully match previously defined spatial muscle groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are supported by quantitative hierarchical clustering analysis of calcium imaging data from 27-25 muscles across multiple crawl cycles (Figure 3A-E, Table 2). The clustering methodology is described, and the discrepancy with spatial groups (C14) is explicitly demonstrated by comparing Figures 1B and 3F,G.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "3d07ad48-f364-4a70-9d87-4028a60d056e",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Six muscles show differential recruitment timing between forward and backward locomotion: the VO group (muscles 15-17) switches from late (F3) to early (B1) activity, while muscles 2, 11, and 18 switch from early (F1/2) to late (B3/4) activity. Other spatial groups maintain consistent timing across behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are directly supported by quantitative analysis shown in Figure 3H,I and Figure 3\u2014figure supplement 2. The differential recruitment is clearly demonstrated with specific timing shifts documented. The consistency of longitudinal and transverse muscle timing (C18) is supported by both current data and prior citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "caef7aaa-8896-4eb0-80fa-2eac1f3117a9",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Complete TEM reconstruction of all differentiated motor neurons in segment A1 reveals that all MNs have dense postsynaptic arrays on dendrites but, unlike C. elegans, lack presynaptic contacts to other neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by comprehensive TEM reconstruction documented in Figure 4 and Figure 4\u2014figure supplement 1. The comparison to C. elegans (C21) is appropriately cited. The completeness claim (C19) is justified by systematic matching of TEM reconstructions to known MN morphologies from prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "346063ba-11d4-4dce-bff8-b966bc1a9d8c",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Motor neurons innervating the same spatial muscle group show highly stereotyped postsynaptic clustering in the neuropil (r=0.97 between hemisegments), with different spatial groups occupying distinct regions along two neuropil axes (p<0.05), confirming and extending the myotopic map at synaptic resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are supported by quantitative synapse similarity analysis (Figure 5A-B) with appropriate statistical testing (Kolmogorov-Smirnov test, p<0.05). The high correlation between hemisegments (C23) validates data quality. This extends prior anatomical observations (C22, cited) to the synaptic level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "b4262425-8fe0-4cb4-8f47-234e8e50609f",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Motor neurons in forward and backward co-active muscle groups show distinct postsynapse density maxima along the mediolateral axis and often a second axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by spatial distribution analysis shown in Figure 5C,D with arrowheads marking distinct maxima. However, the authors note considerable overlap between groups, limiting the functional significance of this observation without additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "0af60b89-5729-4af7-8642-66cba67d0af6",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comprehensive TEM reconstruction identified 118 bilateral premotor neuron pairs providing 76% of total MN input through 7495 synapses. PMNs show stereotyped features: presynapses enriched dorsally, postsynapses distributed throughout neuropil, averaging 8.0 MN targets per PMN and 32.5 PMN inputs per MN, with most PMNs projecting contralaterally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 provide quantitative characterization of the PMN population supported by systematic TEM analysis (Figure 6, Table 3). Selection criteria are explicitly stated (>1% input, >4 synapses). The statistics are internally consistent and represent the first comprehensive PMN census in this system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "d34e969f-3780-49be-b34f-12a5186ef55c",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While 30 PMNs specifically innervate single spatial muscle groups and similar numbers target single co-active groups (supporting labeled-line coding), the majority of PMNs innervate multiple muscle groups. All PMNs innervate multiple MNs with no evidence for specific one-to-one PMN-MN connections, suggesting combinatorial coding generates differential MN recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 are supported by connectivity analysis in Figure 7D-G. The data clearly show both labeled-line (C35-C36) and combinatorial (C37-C38) connectivity patterns. The conclusion about combinatorial coding (C39) is a reasonable inference from the connectivity data, though functional validation would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "1d50d68b-f0a4-49c3-ae5a-f9a8657a557f",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Connectome-based predictions of neuronal recruitment timing can be validated experimentally: PMN A27h strongly connects to F3 MNs, and dual-color calcium imaging confirms F1/F2 MNs activate before A27h.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 demonstrate successful prediction from connectivity to function. The strong connectivity (C40, Figure 7H,H') predicts temporal ordering that is experimentally validated by dual-color imaging (C41, Figure 7H''). This validates the utility of the connectome for functional predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "b1ab5cab-de5f-41f4-bc36-ceed133c96dc",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Among differentially recruited MNs, MN18 shows highly asymmetric postsynaptic distribution along the anteroposterior axis, which should cause earlier activation during forward than backward locomotion, consistent with observed muscle activity patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by morphological analysis (Figure 8A-E) and consistency with functional data (Figure 3). The mechanistic prediction (C43) linking asymmetric morphology to differential recruitment is logical given wave propagation direction, though direct causal testing would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "c80d7730-8cbc-4200-b8de-e7e229c64ede",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple PMNs show anteroposterior asymmetry in axon projections (A02i, A03a4 project anteriorly; A03a5 projects posteriorly), while others are symmetric (A03g). These asymmetric PMNs likely contribute to differential MN/muscle recruitment during forward versus backward locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by morphological reconstructions (Figure 8F-H). The inference about functional contribution (C47) is reasonable given opposite wave propagation directions, but remains speculative without functional perturbation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "fe60ca94-999f-4e92-a11a-feb4aead4d4a",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A recurrent network model constrained by TEM connectivity demonstrates that sparse PMN-PMN connections (~7% of possible connections) are sufficient to generate appropriately timed MN activity for both forward and backward locomotion, with distinct PMN activity sequences tiling the MN activity period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by computational modeling (Figure 9A-B, Figure 9\u2014figure supplement 1). The model successfully reproduces observed MN timing patterns using anatomically constrained connectivity. However, the model requires additional constraints (A27h/A18b activity) and makes simplifying assumptions about neuronal dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "066fe371-936d-4f7a-a0e3-9c5ccdb8f7d5",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Model predictions for several PMNs match existing experimental data: A14a is active at F1 and blocking it removes F1-F4 delay; A18b3 and A18a are both active during forward but only A18a during backward; A18j and A01c are active at F4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 validate the model against independent experimental data from prior studies (Zwart et al., 2016; Hasegawa et al., 2016). The consistency between model predictions and experimental observations supports model validity, though C55 is a prediction rather than direct validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "54213a19-ab0d-4f84-ac27-e43b3b200fc8",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "New experimental tests validate model predictions: A31k activity peaks coincide with declining early MN activity in both behaviors; A31k and A06l show concurrent rhythmic activity; A23a activates earlier during backward than forward locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 provide novel experimental validation of model predictions using dual-color calcium imaging (Figure 10A-F). These represent genuine prospective tests of the model, strengthening confidence in its predictive power. The experiments are well-controlled and directly test specific model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "3bf82bf2-a5b9-4f28-9a9c-2a6ebaf5fea8",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A model lacking complex single-neuron dynamics (post-inhibitory rebound, spike-frequency adaptation) is sufficient to produce observed motor patterns, contrasting with other central pattern generator circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by the successful model performance without incorporating complex intrinsic dynamics. However, this represents a modeling choice/observation rather than proof that such dynamics are absent in the biological system. The claim is appropriately qualified as 'sufficient' rather than 'necessary.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "47a0fa67-409f-4ccb-9edd-3c98022fcbfa",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Forward-specific PMN A27h forms circuit motifs that coordinate muscle group activation: it maintains A18b3 activity to sustain F1/F2 MN excitation while activating F3, excites A18b3 in the anterior segment to advance the wave, and A18b3 activates inhibitory PMNs (A06c, A14a) that prevent premature F3/4 activation and disinhibit F1/F2 MNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 describe circuit motifs supported by connectivity data (Figure 11A-B) and prior functional characterization (cited). These represent testable hypotheses about circuit function derived from anatomical connectivity. The motifs are plausible mechanisms but require functional validation through perturbation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "4a920d0c-d832-4942-be32-abda047a4669",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Backward-specific PMN A27k forms circuit motifs coordinating backward locomotion: it excites B4 MNs and inhibitory PMNs (A02e, A02g) targeting B1/B2, and synapses in the anterior segment with excitatory neurons (A01c1, A01c2, A18j) innervating B4 and inhibitory PMN A02e targeting B1/B2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 describe backward-specific circuit motifs supported by connectivity analysis (Figure 11D-E) and prior characterization (Kohsaka et al., 2019). Like the forward motifs, these represent anatomically grounded hypotheses about circuit function that require functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "78fcf07c-6afb-4a5c-a915-80d5b802951a",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The TEM volume used is from an L1 newly hatched larva, and PMNs were selected using explicit criteria (>1% of MN postsynapses, >4 total synapses, with additional quality filters).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 describe methodological details that are clearly stated with appropriate citations (C68) and explicit selection criteria (C69). These are important for reproducibility and interpretation but represent methodological documentation rather than scientific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    },
+    {
+      "id": "30c1164c-b310-4b3f-a010-33c7636da148",
+      "content_id": "749c89af-7636-4561-9f99-848dcaf591d2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The model does not require proprioceptive input to generate observed motor patterns, consistent with data showing isolated CNS can maintain forward and backward motor neuron activity waves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is supported by model design (no proprioceptive input included) and consistency with prior experimental data (Pulver et al., 2015). This contrasts with C. elegans models and represents an important difference in circuit organization, though it doesn't exclude a modulatory role for proprioception in intact animals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:08.080525Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c15ea148-a99c-4e19-ad01-f6ae0847fcf9",
+      "result_id": "4f5d3490-d2e5-4bf8-9f9e-5c82f5f4fe8e"
+    },
+    {
+      "claim_id": "db440e58-5cf6-4a22-8dd0-2f666261f38f",
+      "result_id": "4f5d3490-d2e5-4bf8-9f9e-5c82f5f4fe8e"
+    },
+    {
+      "claim_id": "176f6dd1-9d48-44ab-b290-5306ecdf594e",
+      "result_id": "4f5d3490-d2e5-4bf8-9f9e-5c82f5f4fe8e"
+    },
+    {
+      "claim_id": "0407ae73-15a0-4560-b015-12b21cc304a6",
+      "result_id": "4f5d3490-d2e5-4bf8-9f9e-5c82f5f4fe8e"
+    },
+    {
+      "claim_id": "304d4ab1-9949-4a33-b139-041aadc73a03",
+      "result_id": "4f5d3490-d2e5-4bf8-9f9e-5c82f5f4fe8e"
+    },
+    {
+      "claim_id": "406ad1f3-5e94-412a-a9f0-c80553f94d3c",
+      "result_id": "4f5d3490-d2e5-4bf8-9f9e-5c82f5f4fe8e"
+    },
+    {
+      "claim_id": "5835aaaf-2f06-41d0-a6c8-e126942a36a7",
+      "result_id": "4f5d3490-d2e5-4bf8-9f9e-5c82f5f4fe8e"
+    },
+    {
+      "claim_id": "83fcfb80-7ecd-4c99-9fef-c850e74debb2",
+      "result_id": "4f5d3490-d2e5-4bf8-9f9e-5c82f5f4fe8e"
+    },
+    {
+      "claim_id": "bf098b87-2bd8-45b5-bb40-3e6c1f4ca9e1",
+      "result_id": "c2840d0c-a59d-49b5-a848-2437364440e5"
+    },
+    {
+      "claim_id": "385e12fd-36ea-4a02-b4a3-6cc972c9ea88",
+      "result_id": "c2840d0c-a59d-49b5-a848-2437364440e5"
+    },
+    {
+      "claim_id": "4d13acfd-a630-47ec-89e3-7dd77349a9cd",
+      "result_id": "c2840d0c-a59d-49b5-a848-2437364440e5"
+    },
+    {
+      "claim_id": "51a19c35-256b-43d0-b431-07fc8ab87aea",
+      "result_id": "4d4c098d-c5f1-4b55-81cb-321205d95b28"
+    },
+    {
+      "claim_id": "d955ba13-cc28-471e-88fe-1b99c6a322dd",
+      "result_id": "4d4c098d-c5f1-4b55-81cb-321205d95b28"
+    },
+    {
+      "claim_id": "642af3dd-36e8-4d2c-ad04-be7d50964b61",
+      "result_id": "4d4c098d-c5f1-4b55-81cb-321205d95b28"
+    },
+    {
+      "claim_id": "e2c7a9ce-718f-49de-a63d-2a5927133b31",
+      "result_id": "4d4c098d-c5f1-4b55-81cb-321205d95b28"
+    },
+    {
+      "claim_id": "862eed42-254d-418a-ba2e-2d53920d0d81",
+      "result_id": "3d07ad48-f364-4a70-9d87-4028a60d056e"
+    },
+    {
+      "claim_id": "e6ffed3b-1162-444d-90f9-41920665a96a",
+      "result_id": "3d07ad48-f364-4a70-9d87-4028a60d056e"
+    },
+    {
+      "claim_id": "f3639071-1678-4b51-94bc-d27e55bd3417",
+      "result_id": "3d07ad48-f364-4a70-9d87-4028a60d056e"
+    },
+    {
+      "claim_id": "e4a84142-8f8e-4bef-ae4c-ee18b27861dd",
+      "result_id": "3d07ad48-f364-4a70-9d87-4028a60d056e"
+    },
+    {
+      "claim_id": "33186d75-9683-4cbd-a87b-3fccb87fdd5c",
+      "result_id": "caef7aaa-8896-4eb0-80fa-2eac1f3117a9"
+    },
+    {
+      "claim_id": "08a02c8d-31b0-4f06-8a58-ab740177e742",
+      "result_id": "caef7aaa-8896-4eb0-80fa-2eac1f3117a9"
+    },
+    {
+      "claim_id": "7c8791b7-fdce-4f59-89f0-2423b466ea62",
+      "result_id": "caef7aaa-8896-4eb0-80fa-2eac1f3117a9"
+    },
+    {
+      "claim_id": "fba598f1-56df-4e73-b9ed-4b4a80ea31e9",
+      "result_id": "346063ba-11d4-4dce-bff8-b966bc1a9d8c"
+    },
+    {
+      "claim_id": "81d6710d-7c21-49eb-a3b7-8958cf0e5f5c",
+      "result_id": "346063ba-11d4-4dce-bff8-b966bc1a9d8c"
+    },
+    {
+      "claim_id": "470176f0-2ab9-45d3-beb0-80e7cc5c7d3f",
+      "result_id": "346063ba-11d4-4dce-bff8-b966bc1a9d8c"
+    },
+    {
+      "claim_id": "99a57029-73b2-48a6-a1e6-50801a8b6b54",
+      "result_id": "346063ba-11d4-4dce-bff8-b966bc1a9d8c"
+    },
+    {
+      "claim_id": "34e2db01-9c17-40cf-8bd8-5a62e4c1e53c",
+      "result_id": "b4262425-8fe0-4cb4-8f47-234e8e50609f"
+    },
+    {
+      "claim_id": "f85f73d9-f61f-450c-9709-a22fb87f0153",
+      "result_id": "0af60b89-5729-4af7-8642-66cba67d0af6"
+    },
+    {
+      "claim_id": "fc501e93-b048-4ba7-8d62-a5e3effa3989",
+      "result_id": "0af60b89-5729-4af7-8642-66cba67d0af6"
+    },
+    {
+      "claim_id": "82e75c41-36d8-48ee-9429-4e355de36fbb",
+      "result_id": "0af60b89-5729-4af7-8642-66cba67d0af6"
+    },
+    {
+      "claim_id": "9961412d-2504-40dd-a764-78c17e77b4e4",
+      "result_id": "0af60b89-5729-4af7-8642-66cba67d0af6"
+    },
+    {
+      "claim_id": "daaf6651-07c0-46fc-8c01-eb45e1fc4a40",
+      "result_id": "0af60b89-5729-4af7-8642-66cba67d0af6"
+    },
+    {
+      "claim_id": "37e93582-52d6-43b0-bce3-90fbe274c804",
+      "result_id": "0af60b89-5729-4af7-8642-66cba67d0af6"
+    },
+    {
+      "claim_id": "e360209a-473c-4ab0-91ea-db9e3bd3b7d5",
+      "result_id": "0af60b89-5729-4af7-8642-66cba67d0af6"
+    },
+    {
+      "claim_id": "ed67bf98-2eeb-4883-9a6d-5c4e8bf8b1eb",
+      "result_id": "0af60b89-5729-4af7-8642-66cba67d0af6"
+    },
+    {
+      "claim_id": "8c7cfcb6-6023-4c86-9bf4-fe58f1396734",
+      "result_id": "d34e969f-3780-49be-b34f-12a5186ef55c"
+    },
+    {
+      "claim_id": "88bdab25-793f-4233-b031-5ad8b1b0fdcb",
+      "result_id": "d34e969f-3780-49be-b34f-12a5186ef55c"
+    },
+    {
+      "claim_id": "6c1e56d7-7b1d-4fc4-8325-ddc6bcc2f83d",
+      "result_id": "d34e969f-3780-49be-b34f-12a5186ef55c"
+    },
+    {
+      "claim_id": "8344137f-a100-4869-bc10-e8741bff9590",
+      "result_id": "d34e969f-3780-49be-b34f-12a5186ef55c"
+    },
+    {
+      "claim_id": "8aa19bdb-6f02-4712-b99c-6cc660786954",
+      "result_id": "d34e969f-3780-49be-b34f-12a5186ef55c"
+    },
+    {
+      "claim_id": "8c037458-24df-40ac-ac2b-4d5e1c092036",
+      "result_id": "1d50d68b-f0a4-49c3-ae5a-f9a8657a557f"
+    },
+    {
+      "claim_id": "1506eb57-9721-4044-b050-73bd172b047a",
+      "result_id": "1d50d68b-f0a4-49c3-ae5a-f9a8657a557f"
+    },
+    {
+      "claim_id": "cf2182bb-07b8-475a-b49f-63129168a741",
+      "result_id": "b1ab5cab-de5f-41f4-bc36-ceed133c96dc"
+    },
+    {
+      "claim_id": "d6d51cbe-9877-4809-b736-0c9734515135",
+      "result_id": "b1ab5cab-de5f-41f4-bc36-ceed133c96dc"
+    },
+    {
+      "claim_id": "7f03264e-3ee4-431c-9246-e02b37692f2f",
+      "result_id": "c80d7730-8cbc-4200-b8de-e7e229c64ede"
+    },
+    {
+      "claim_id": "294f01a2-efb5-41ad-bb7b-55326bc7d7e8",
+      "result_id": "c80d7730-8cbc-4200-b8de-e7e229c64ede"
+    },
+    {
+      "claim_id": "598b4c0c-eaf2-491b-b433-3d7c2f12100e",
+      "result_id": "c80d7730-8cbc-4200-b8de-e7e229c64ede"
+    },
+    {
+      "claim_id": "c552aab5-5b8f-420a-a5fc-ce6771add54b",
+      "result_id": "c80d7730-8cbc-4200-b8de-e7e229c64ede"
+    },
+    {
+      "claim_id": "d7434d1c-1644-4f01-932f-31ccb5005bae",
+      "result_id": "fe60ca94-999f-4e92-a11a-feb4aead4d4a"
+    },
+    {
+      "claim_id": "9bbf5fc0-e1ad-4b2f-8d7b-30471829324a",
+      "result_id": "fe60ca94-999f-4e92-a11a-feb4aead4d4a"
+    },
+    {
+      "claim_id": "1aa36705-166e-440a-a8ce-793076af0c28",
+      "result_id": "fe60ca94-999f-4e92-a11a-feb4aead4d4a"
+    },
+    {
+      "claim_id": "f0082db0-573a-4826-8f3e-24edb25031d1",
+      "result_id": "fe60ca94-999f-4e92-a11a-feb4aead4d4a"
+    },
+    {
+      "claim_id": "7f8942f2-f164-49b9-a858-dafc3d795475",
+      "result_id": "066fe371-936d-4f7a-a0e3-9c5ccdb8f7d5"
+    },
+    {
+      "claim_id": "a47ac237-ee82-471a-81a0-c4e6a33a2694",
+      "result_id": "066fe371-936d-4f7a-a0e3-9c5ccdb8f7d5"
+    },
+    {
+      "claim_id": "c43d0b4a-0fcd-4528-a1ab-9e5d74356b06",
+      "result_id": "066fe371-936d-4f7a-a0e3-9c5ccdb8f7d5"
+    },
+    {
+      "claim_id": "56fc5dad-d681-4374-8fb6-3f34c82c7ada",
+      "result_id": "066fe371-936d-4f7a-a0e3-9c5ccdb8f7d5"
+    },
+    {
+      "claim_id": "5fc1efa3-919d-48cc-bdf6-0f37f662a625",
+      "result_id": "54213a19-ab0d-4f84-ac27-e43b3b200fc8"
+    },
+    {
+      "claim_id": "8b496a37-f93a-4e6a-9c91-198d827d467c",
+      "result_id": "54213a19-ab0d-4f84-ac27-e43b3b200fc8"
+    },
+    {
+      "claim_id": "dff0cb6b-ae13-45dd-8215-9e8a112c0ef8",
+      "result_id": "54213a19-ab0d-4f84-ac27-e43b3b200fc8"
+    },
+    {
+      "claim_id": "cc9992fa-9260-42a9-babc-e503868258aa",
+      "result_id": "3bf82bf2-a5b9-4f28-9a9c-2a6ebaf5fea8"
+    },
+    {
+      "claim_id": "65a1e15d-a523-4186-9c62-d085858ba531",
+      "result_id": "47a0fa67-409f-4ccb-9edd-3c98022fcbfa"
+    },
+    {
+      "claim_id": "b1beb17e-12ee-46c9-aace-849986ec1ae2",
+      "result_id": "47a0fa67-409f-4ccb-9edd-3c98022fcbfa"
+    },
+    {
+      "claim_id": "e7c4af50-9de1-4580-bd18-eba36a280ba6",
+      "result_id": "47a0fa67-409f-4ccb-9edd-3c98022fcbfa"
+    },
+    {
+      "claim_id": "29730f9b-32cd-4186-8d57-bfe8b706648b",
+      "result_id": "47a0fa67-409f-4ccb-9edd-3c98022fcbfa"
+    },
+    {
+      "claim_id": "45f20dda-0cb7-4e5f-8541-5b035e527460",
+      "result_id": "47a0fa67-409f-4ccb-9edd-3c98022fcbfa"
+    },
+    {
+      "claim_id": "77f04c82-f084-4cc1-a10e-e49a2167916c",
+      "result_id": "4a920d0c-d832-4942-be32-abda047a4669"
+    },
+    {
+      "claim_id": "c3496807-3ee9-4a03-a5b1-6196748817c9",
+      "result_id": "4a920d0c-d832-4942-be32-abda047a4669"
+    },
+    {
+      "claim_id": "14f81ddd-0e11-4dc4-b636-cbc3617c4a93",
+      "result_id": "78fcf07c-6afb-4a5c-a915-80d5b802951a"
+    },
+    {
+      "claim_id": "04a6651f-2d63-4eb9-a29a-eea75886a73e",
+      "result_id": "78fcf07c-6afb-4a5c-a915-80d5b802951a"
+    },
+    {
+      "claim_id": "eda8a866-3b59-4bff-9717-777d9a9758e6",
+      "result_id": "30c1164c-b310-4b3f-a010-33c7636da148"
+    }
+  ],
+  "comparisons": []
+}

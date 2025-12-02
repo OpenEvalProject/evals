@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript establishes the epidemiological context of early COVID-19 outbreaks in Singapore and Tianjin, documenting the first confirmed cases, case counts, and initial transmission patterns in both locations during January-February 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide well-documented background information supported by appropriate citations to official health authorities and peer-reviewed literature. These contextual claims establish the setting for the subsequent analyses and are consistent with publicly available records from the early pandemic period.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript defines key epidemiological parameters: serial interval as the time between symptom onset in infector and infectee, and incubation period as the time from exposure to symptom onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 provide standard epidemiological definitions that are well-established in the field. These definitions are correctly stated and form the conceptual foundation for the subsequent parameter estimation analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Descriptive analysis of disease progression timelines shows that in Singapore, 66.7% of cases recovered, with symptom onset occurring 1.71\u00b13.01 days after exposure, confirmation 7.43\u00b15.28 days after symptoms, and hospital stay of 13.3\u00b16.01 days. In Tianjin, 48.1% recovered and 2.2% died, with symptom onset 4.98\u00b14.83 days after exposure and confirmation 5.23\u00b14.15 days after symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 present descriptive statistics directly derived from the datasets with appropriate references to figures. The statistics are clearly stated with means and standard deviations. However, the manuscript does not provide confidence intervals for these descriptive statistics or discuss potential biases in case ascertainment and reporting delays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C98",
+      "C99"
+    ],
+    "result": "Direct estimation of incubation periods without accounting for intermediate cases yielded mean values of 5.99 (95%CI 4.97-7.14) days for Singapore and 8.68 (7.72-9.7) days for Tianjin. When accounting for intermediate cases with low rate of intermediates (r=0.05), estimates were 4.91 (4.35-5.69) days for Singapore and 7.54 (6.76-8.56) days for Tianjin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C98-C99 present incubation period estimates using appropriate interval censoring methods and accounting for uncertainty in exposure times. The methodology is sound, though the substantially longer estimates for Tianjin raise questions about data quality or exposure misattribution that the authors acknowledge. The confidence intervals are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34",
+      "C35"
+    ],
+    "result": "Stratification by time (early vs. late cases, divided at January 31) revealed minimal differences in Singapore (mean 5.91 vs 6.06 days) but substantial differences in Tianjin (mean 6.88 vs 12.4 days for early vs late cases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C31, C34-C35 document temporal differences in apparent incubation periods, particularly the dramatic increase in Tianjin late cases. While the data are clearly presented, the biological implausibility of a 12.4-day mean incubation period suggests systematic bias rather than true biological variation. The authors speculate about pre-symptomatic transmission during quarantine (C36, C81-C82) but cannot definitively establish the cause.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose that longer apparent incubation periods in later cases, particularly in Tianjin, may be explained by unreported pre-symptomatic transmission during group quarantine, resulting in more recent true exposure times than reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36, C81-C82 offer a plausible mechanistic explanation for the observed temporal patterns, but this remains speculative. The hypothesis is logical and consistent with pre-symptomatic transmission, but the authors cannot directly verify whether unreported exposures occurred during quarantine. Alternative explanations (reporting bias, changes in exposure perception) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Analysis accounting for potential intermediate cases using a Poisson process model estimated generation times consistently shorter than incubation periods: 3.71 (2.36-4.91) days vs 4.91 days for Singapore and 2.82 (1.83-3.52) days vs 7.54 days for Tianjin (at r=0.05), indicating infection can occur prior to symptom onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 present a novel methodological approach to account for unknown intermediate cases. The mathematical framework is sound and the consistent finding that generation times are shorter than incubation periods across both datasets strengthens the conclusion. However, the method makes several assumptions about intermediate case occurrence that may not fully capture transmission complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C100",
+      "C101",
+      "C108",
+      "C109"
+    ],
+    "result": "Serial interval estimation using the ICC mixture model method yielded mean estimates of 4.17 (2.44-5.89) days for Singapore and 4.31 (2.91-5.72) days for Tianjin. After accounting for right truncation, mean serial intervals were 4 and 5 days respectively, with no significant difference between early and late groups by Cox regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C100-C101, C108-C109 employ appropriate statistical methods (ICC mixture model, right truncation adjustment, Cox regression) to estimate serial intervals. The consistency between datasets and robustness to methodological choices (C90-C91) strengthens confidence in these estimates. The mixture model appropriately accounts for uncertainty in transmission pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C92",
+      "C76"
+    ],
+    "result": "Serial intervals are robustly shorter than incubation periods across both datasets and analytical approaches, suggesting pre-symptomatic transmission occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C92, C76 present the key comparative finding that emerges consistently across multiple analyses. The robustness across two independent datasets, multiple statistical approaches, and sensitivity analyses provides strong support for this conclusion. This is the central empirical finding that enables inference about pre-symptomatic transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C102",
+      "C113"
+    ],
+    "result": "Quantitative estimates of pre-symptomatic transmission indicate that 74% (Singapore) and 81% (Tianjin) of transmission occurs before symptom onset based on direct estimates, with infection occurring on average 1.99 and 3.68 days before infector symptom onset. Accounting for intermediate cases yields estimates of 40-53% (Singapore) and 64-79% (Tianjin) depending on assumed intermediate rate. Overall, at least 65% of transmission occurs pre-symptomatically under reasonable assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C50-C51, C54-C55, C102, C113 provide quantitative estimates of pre-symptomatic transmission derived from the difference between serial intervals and incubation periods. The methodology appropriately accounts for correlation between these parameters (C111-C112). The range of estimates across different assumptions provides appropriate uncertainty quantification, though the true value remains uncertain due to data limitations acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C93",
+      "C94"
+    ],
+    "result": "The analysis demonstrates substantial pre-symptomatic transmission, with serial intervals 2-4 days shorter than incubation periods, consistent with clinical observations from other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C93-C94 synthesize the main finding and contextualize it with supporting literature (Rothe et al., Bai et al.). The 2-4 day difference is clearly supported by the data across both populations. The consistency with independent clinical observations strengthens the conclusion, though the magnitude of pre-symptomatic transmission remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C110"
+    ],
+    "result": "The estimated serial intervals (4.17-4.31 days) are consistent with other COVID-19 studies (Zhao et al.: 4.4 days, Nishiura et al.: 4.0 days, Du et al.: 3.96 days) and substantially shorter than the SARS serial interval of 8.4 days used in early COVID-19 R0 estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C110 appropriately contextualize the findings within the existing literature. The consistency across multiple independent studies strengthens confidence in the serial interval estimates. The comparison to SARS parameters highlights an important methodological issue in early pandemic modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Shorter serial intervals lead to lower R0 estimates, with the estimated serial intervals supporting R0 values just below 2, implying that preventing half of transmissions would be needed to contain outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C78-C80 correctly apply established epidemiological relationships between serial interval, growth rate, and R0. The calculation is appropriately simplified and the authors acknowledge limitations. The implication for control (50% reduction needed if R0\u22482) follows from basic epidemic theory. However, the R0 estimate depends on assumed growth rate and is presented as illustrative rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C83",
+      "C85",
+      "C86",
+      "C97",
+      "C103"
+    ],
+    "result": "Pre-symptomatic transmission implies that SARS-CoV-2 spread is difficult to control by case isolation alone, requiring broad social distancing measures. Contact tracing combined with case finding may be key to limiting transmission, though extensive pre-symptomatic spread may explain why Singapore's containment was ultimately only delayed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C83, C85-C86, C97, C103 draw appropriate public health implications from the pre-symptomatic transmission findings. The logical connection between pre-symptomatic transmission and control difficulty is sound. The interpretation of Singapore's experience is reasonable though somewhat speculative, as multiple factors could explain the eventual spread beyond the study period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Serial intervals, together with R0, control epidemic curve dynamics and influence disease incidence, prevalence, epidemic growth rate, and the timing of intervention implementation. Pre-symptomatic transmission impacts the efficacy of contact tracing and case finding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 correctly summarize established epidemiological principles supported by appropriate citations (Anderson et al., Fraser et al., Peak et al.). These claims provide important context for why the parameter estimates matter for public health, though they represent prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Singapore and Tianjin implemented different intensity control measures. By February 9, Singapore had identified 989 contacts while Tianjin had 11,700 under observation and implemented district lockdown. Singapore's cases grew from 500 (March 23) to 25,000 (May 13), while Tianjin plateaued at 192 cases by May 19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 document the public health responses and subsequent epidemic trajectories in both locations. The data are appropriately sourced from official records. This provides important context for interpreting the parameter estimates, though the manuscript does not formally analyze how different interventions affected transmission parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Serial intervals are expected to shorten as quarantine measures increase during an outbreak, indicating improved control through contact tracing. The data suggest serial intervals shortened over time in both clusters, though this could also be due to right truncation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C107 present an expected pattern (shortening serial intervals with control measures) supported by SARS experience, and observe this pattern in the data. However, the authors appropriately note that right truncation could produce the same pattern. The Cox regression finding of no significant difference (C109) after accounting for truncation suggests the temporal trend may be artifactual, creating uncertainty about whether true shortening occurred.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study acknowledges limitations including uncertainty in exposure times and presumed infectors, and variability in incubation periods. The mixture model approach avoids assuming the presumed infector is always correct. Serial interval estimates are consistent between datasets and robust to parameter choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 appropriately acknowledge data limitations and methodological approaches to address them. The consistency between independent datasets (C90) and robustness to parameter choices (C91) are important strengths that the authors correctly highlight. This transparent discussion of limitations and robustness enhances confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Differences in estimated incubation periods between early and later cases may be due to pre-symptomatic transmission during quarantine, or to differences in reporting and perceived exposure as the outbreak progressed with social distancing measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96 offer alternative explanations for the temporal patterns in incubation period estimates. Both explanations are plausible but the authors cannot definitively distinguish between them with the available data. The speculation is appropriately qualified but remains unresolved, particularly for the dramatic difference observed in Tianjin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior literature indicates pre-symptomatic transmission accounts for considerable COVID-19 spread, early estimates borrowed SARS parameters, and published COVID-19 estimates for incubation periods range from 3.6-6.4 days and serial intervals from 4.0-7.5 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 accurately summarize prior literature with appropriate citations. These claims establish the scientific context and justify the need for population-specific parameter estimates. The ranges cited are consistent with the early COVID-19 literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C84"
+    ],
+    "result": "Singapore's public health response included monitoring and 14-day quarantine of close contacts, with symptom-free close contacts quarantined preemptively and lower-risk contacts under phone surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C84 describe Singapore's contact tracing and quarantine protocols, supported by appropriate citations. This contextual information is important for understanding the data collection process and potential biases, as well as for interpreting why certain transmission patterns were observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study datasets comprised 93 confirmed cases from Singapore (January 23-February 26, 2020) obtained from Ministry of Health press releases, and 135 cases from Tianjin (January 21-February 22, 2020) obtained from Tianjin Health Commission press releases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 clearly document data sources and sample sizes. The data provenance is transparent and appropriate for the analyses conducted. The authors made these datasets available in convenient format, which is a strength for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

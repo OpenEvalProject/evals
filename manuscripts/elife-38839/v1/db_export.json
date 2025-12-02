@@ -1,0 +1,2395 @@
+{
+  "submission": {
+    "id": "7cd31303-f794-4389-b1f6-a39062e21fd0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:23:38.802832Z",
+    "updated_at": "2025-12-02T06:23:38.802832Z"
+  },
+  "content": [
+    {
+      "id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "submission_id": "7cd31303-f794-4389-b1f6-a39062e21fd0",
+      "content_type": "manuscript",
+      "content_text": "# The cargo receptor SURF4 promotes the efficient cellular secretion of PCSK9\n\n## Authors\n\n- Brian T Emmer<sup>1</sup> ([ORCID: 0000-0001-7365-1021](https://orcid.org/0000-0001-7365-1021))\n- Geoffrey G Hesketh<sup>3</sup>\n- Emilee Kotnik<sup>2</sup>\n- Vi T Tang<sup>2</sup> ([ORCID: 0000-0001-6079-9756](https://orcid.org/0000-0001-6079-9756))\n- Paul J Lascuna<sup>2</sup>\n- Jie Xiang<sup>2</sup>\n- Anne-Claude Gingras<sup>3</sup> ([ORCID: 0000-0002-6090-4437](https://orcid.org/0000-0002-6090-4437))\n- Xiao-Wei Chen<sup>2</sup> ([ORCID: 0000-0003-4564-5120](https://orcid.org/0000-0003-4564-5120))\n- David Ginsburg<sup>1</sup> ([ORCID: 0000-0002-6436-8942](https://orcid.org/0000-0002-6436-8942)) \u2020\n\n### Affiliations\n\n1. Department of Internal Medicine University of Michigan Ann Arbor Michigan\n2. Life Sciences Institute University of Michigan Ann Arbor Michigan\n3. Centre for Systems Biology Lunenfeld-Tanenbaum Research Institute, Sinai Health System Toronto Canada\n4. Department of Molecular Genetics University of Toronto Toronto Canada\n5. State Key Laboratory of Membrane Biology, Institute of Molecular Medicine, Center for Life Sciences Peking University Beijing China\n6. Department of Human Genetics University of Michigan Ann Arbor Michigan\n7. Department of Pediatrics and Communicable Diseases University of Michigan Ann Arbor Michigan\n8. Howard Hughes Medical Institute University of Michigan Ann Arbor Michigan\n\n\u2020 Corresponding author\n\n## Abstract\n\nPCSK9 is a secreted protein that regulates plasma cholesterol levels and cardiovascular disease risk. Prior studies suggested the presence of an ER cargo receptor that recruits PCSK9 into the secretory pathway, but its identity has remained elusive. Here, we apply a novel approach that combines proximity-dependent biotinylation and proteomics together with genome-scale CRISPR screening to identify SURF4, a homologue of the yeast cargo receptor Erv29p, as a primary mediator of PCSK9 secretion in HEK293T cells. The functional contribution of SURF4 to PCSK9 secretion was confirmed with multiple independent SURF4-targeting sgRNAs, clonal SURF4-deficient cell lines, and functional rescue with SURF4 cDNA. SURF4 was found to localize to the early secretory pathway where it physically interacts with PCSK9. Deletion of SURF4 resulted in ER accumulation and decreased extracellular secretion of PCSK9. These findings support a model in which SURF4 functions as an ER cargo receptor mediating the efficient cellular secretion of PCSK9.\n\n## Introduction\n\nPCSK9 is a proprotein convertase that acts as a negative regulator of the LDL receptor (Seidah et al., 2014). PCSK9 is synthesized primarily in hepatocytes and secreted into the bloodstream. Circulating PCSK9 binds to the LDL receptor and diverts it to lysosomes for degradation, thereby leading to decreased LDL receptor abundance at the hepatocyte cell surface, decreased LDL clearance, and hypercholesterolemia. PCSK9 was originally implicated in cardiovascular disease when human genetic studies identified gain-of-function PCSK9 mutations as a cause of familial hypercholesterolemia (Abifadel et al., 2003). Subsequently, loss-of-function PCSK9 variants were associated with decreased plasma cholesterol and lowered lifetime incidence of cardiovascular disease (Cohen et al., 2006; Benn et al., 2010). Therapeutic inhibitors of PCSK9 have been recently developed that exhibit potent lipid-lowering effects and are associated with a reduction in cardiovascular events (Open-Label Study of Long-Term Evaluation against LDL Cholesterol (OSLER) Investigators et al., 2015; ODYSSEY LONG TERM Investigators et al., 2015).\n\nA critical early sorting step for secreted proteins is their incorporation into membrane-bound vesicles that transport cargoes from the ER to the Golgi apparatus (Zanetti et al., 2011). The formation of these vesicles is driven by coat protein complex II (COPII), which includes the SAR1 GTPase, heterodimers of SEC23/SEC24, and heterotetramers of SEC13/SEC31. Secreted cargoes are incorporated into COPII vesicles by two mechanisms. \u2018Cargo capture\u2019 refers to concentrative, receptor-mediated, active sorting of selected cargoes, in contrast to \u2018bulk flow\u2019, by which cargoes enter COPII vesicles through passive diffusion. These mechanisms are not mutually exclusive, as cargoes may exhibit basal rates of secretion that are enhanced by receptor-mediated recruitment. It remains unclear to what extent protein recruitment into the secretory pathway is driven by selective cargo capture versus passive bulk flow (Barlowe and Helenius, 2016).\n\nThe active sorting of secreted cargoes into COPII-coated vesicles is driven primarily by SEC24, with the multiple SEC24 paralogs observed in vertebrates thought to accommodate a diverse and regulated repertoire of cargoes. Genetic deficiency in the mouse for one of these paralogs, SEC24A, results in hypocholesterolemia due to reduced secretion of PCSK9 from hepatocytes (Chen et al., 2013). This finding suggested an active receptor-mediated mechanism for PCSK9 recruitment into COPII vesicles. A direct physical interaction between SEC24A and PCSK9, however, is implausible since SEC24A localizes to the cytoplasmic side of the ER membrane and PCSK9 to the luminal side, with neither possessing a transmembrane domain. This topology instead implies the presence of an ER cargo receptor, a transmembrane protein that could serve as an intermediary between the COPII coat and luminal PCSK9.\n\nAlthough COPII-dependent ER cargo receptors were first identified in yeast nearly two decades ago, few examples of similar cargo receptor interactions have been reported for mammalian secreted proteins (Barlowe and Helenius, 2016). Previous investigation of the ER cargo receptor LMAN1 demonstrated no specificity for SEC24A over other SEC24 paralogs, making this unlikely to serve as a PCSK9 cargo receptor (Wendeler et al., 2007). Earlier analyses of PCSK9-interacting proteins (Ly et al., 2016; Xu et al., 2012; Denis et al., 2011) did not identify a clear receptor mediating PCSK9 secretion. Here, we developed a novel strategy for ER cargo receptor identification that combines proximity-dependent biotinylation with CRISPR-mediated functional genomic screening. This approach led to the identification of the ER cargo receptor SURF4 as a primary mediator of PCSK9 secretion in HEK293T cells.\n\n## Results\n\n### Identification of candidate PCSK9 cargo receptors by proximity-dependent biotinylation\n\nTo identify PCSK9-interacting proteins, we first engineered cells expressing a fusion of PCSK9 and a mutant biotin ligase, E. coli BirA*(R118G), that catalyzes proximity-dependent biotinylation of primary amines on neighboring proteins within an estimated\u00a0~10 nm radius (Roux et al., 2012; Kim et al., 2014), effectively converting transient interactions into covalent modification (Figure 1A). The high affinity of the biotin-streptavidin interaction in turn allows for stringent detergent and high salt conditions during purification. Quantitative mass spectrometry of streptavidin-purified interacting proteins from cells expressing PCSK9-BirA* identified 162 prey proteins that were specifically labeled (Bayesian FDR\u00a0\u2264\u00a01%) by PCSK9-BirA* relative to control bait proteins (Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig1-v1.jpg)\n\n**Figure 1.:** (A) Proximity detection by mass spectrometry of streptavidin-purified prey proteins biotinylated by a fusion of BirA* to a bait protein of interest. (B) Immunoblotting of lysates of cells expressing various BirA*-fusion proteins. (C) Spectral counts of prey proteins identified from lysates of cells expressing PCSK9-BirA* relative to A1AT-BirA*. (D) Spectral counts of prey proteins purified from lysates of cells expressing PCSK9-BirA* relative to the maximum spectral count from lysates of cells expressing either SAR1A-BirA* or SAR1B-BirA*. (E) Venn diagram of identified prey proteins from lysates of cells expressing BirA* fusions with PCSK9, A1AT, or the maximum for either Sar1A or Sar1B. (F) Heat map of spectral counts for candidate proteins demonstrating interaction with both PCSK9-BirA* and either SAR1A-BirA* or SAR1B-BirA*. Spectral count values represent averages of 2 biologic replicates. Only prey proteins that exhibit BFDR\u00a0\u22640.01 for one or more bait proteins are displayed. Source data is provided in Supplementary file 1.\n\nTo refine the candidate list of PCSK9-interacting proteins, we next analyzed cells expressing a fusion of BirA* with a control secreted protein, alpha-1 antitrypsin (A1AT). The interactome of A1AT showed substantial overlap with that of PCSK9 (108/162 proteins, Figure 1C). The A1AT cargo receptor LMAN1 was similarly labeled by both PCSK9-BirA* and A1AT-BirA*, suggesting that the restricted environment of the COPII vesicle may lead to nonspecific labeling of adjacent cargo receptors. We next compared the interactome of PCSK9 to that of SAR1A and SAR1B (Figure 1D), COPII proteins that localize to the cytoplasmic surface of budding COPII vesicles, identifying a total of 35 candidate ER cargo receptors interacting with both PCSK9 and either SAR1A or SAR1B (Figure 1E\u2013F, Supplementary file 1). The majority of these candidates were annotated as integral membrane proteins (32/35, p=3\u00d710\u221216) with localization in the ER (24/35, p=1.6\u00d710\u221218), as would be expected for an ER cargo receptor (Supplementary file 1).\n\n### A genome-scale CRISPR screen identifies SURF4 as a putative ER cargo receptor for PCSK9\n\nWe next developed a functional screen to identify genes involved in PCSK9 secretion (Figure 2A). We reasoned that mutants with reduced PCSK9 exit from the ER would accumulate intracellular PCSK9, and that fusion of PCSK9 to eGFP would allow for a cell-autonomous, scalable, and selectable readout of PCSK9 accumulation. We generated clonal HEK293T cell lines stably co-expressing both a PCSK9-eGFP fusion and, as an internal control, alpha-1 antitrypsin fused with mCherry. Immunoblotting verified the efficient secretion of both fusion proteins from clonal reporter cell lines (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig2-v1.jpg)\n\n**Figure 2.:** (A) Strategy for whole genome screen. (B) Flow cytometry of reporter cells stably expressing PCSK9-eGFP-2A-A1AT-mCherry, treated with 1 \u00b5g/mL brefeldin A or a sgRNA targeting LMAN1. (C) Normalized abundance of each sgRNA in the library in eGFP high and eGFP low populations. (D) MAGeCK gene-level enrichment scores for each gene targeted by the library arranged by chromosome number and transcription start site. The diameter of the bubble is proportional to the number of unique sgRNAs targeting each gene that demonstrate significant enrichment in GFP high cells. Source data is provided in Supplementary files 2 and 3.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Construct for CMV-promoter-driven expression of PCSK9-eGFP-2A-A1AT-mCherry expression. (B) Immunoblotting of HEK293T cells transfected with the PCSK9-eGFP-2A-A1AT-mCherry vector, and four individual drug-resistant clonal cell lines, relative to parental untransfected cells.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Cumulative distribution function of mapped reads for each sgRNA in the whole genome library. (B) Comparison of read counts for every pairwise combination of 4 biologic replicates with Pearson correlation coefficient.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The top-scoring sgRNA for each of the next 21 most enriched genes after SURF4 was individually cloned into lentiCRISPRv2 and tested in PCSK9-eGFP-2A-A1AT-mCherry reporter cells. Flow cytometry was performed for each of 3 biologic replicates. The mean fluorescent intensity of PCSK9-eGFP and A1AT-mCherry for sgRNA against each candidate gene relative to nontargeting sgRNA controls is shown. Error bars represent standard deviations.\n\nDisruption of ER-Golgi transport by treatment of these reporter cells with brefeldin A, an Arf1 inhibitor, resulted in intracellular accumulation of both PCSK9-eGFP and A1AT-mCherry (Figure 2B). CRISPR-mediated inhibition of the ER cargo receptor for A1AT, LMAN1 (Zhang et al., 2011), resulted in intracellular accumulation of A1AT-mCherry with no effect on PCSK9-eGFP (Figure 2B). To screen for specific modifiers of PCSK9 secretion, we next sought to identify single guide RNAs (sgRNAs) that would induce accumulation of PCSK9-eGFP with no change in A1AT-mCherry fluorescence. We mutagenized the PCSK9-eGFP-2A-A1AT-mCherry reporter cell line with the GeCKOv2 pooled library of 123,411 sgRNAs that includes six independent sgRNAs targeting nearly every coding gene in the human genome (Sanjana et al., 2014) (Figure 2A). Mutants with aberrant PCSK9-eGFP fluorescence but normal A1AT-mCherry fluorescence were then isolated by flow cytometry, with integrated lentiviral sgRNA sequences quantified by deep sequencing and analyzed for enrichment in PCSK9-eGFP high cells. The coverage and distribution of sgRNA sequencing reads demonstrated maintenance of library complexity and high reproducibility between biological replicates (Figure 2\u2014figure supplement 2).\n\nStrikingly, the four most enriched sgRNAs in the PCSK9-eGFP high cell population all targeted the same gene, SURF4 (Figure 2C, Supplementary file 2). The enrichment of SURF4-targeting sgRNA in eGFP-high cells was consistent across each of 4 biologic replicates and, after adjustment for multiple hypothesis testing, statistically significant for 5 of the 6 SURF4-targeting sgRNAs in the library (p<10\u221213 \u2013 10\u221236, Figure 3A). Gene-level analysis confirmed the strongest enrichment for SURF4-targeting sgRNA (Figure 2D, Supplementary file 3). SURF4 is a homologue of yeast Erv29, an ER cargo receptor that mediates the secretion of glycosylated pro-alpha-factor (Belden and Barlowe, 2001). Comparison of candidate PCSK9 cargo receptors identified by either CRISPR functional screening (Figure 2D) or proximity-dependent biotinylation (Figure 1F) demonstrated that SURF4 was the only candidate identified by both approaches.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig3-v1.jpg)\n\n**Figure 3.:** (A) Individual sgRNA sequencing counts for SURF4-targeting sgRNA in eGFP high and eGFP low populations for each of 4 biologic replicates. Adjusted p values were calculated using DESeq2. (B) Flow cytometry histograms of PCSK9-eGFP and A1AT-mCherry fluorescence in reporter cells transfected with plasmids delivering Cas9 and SURF4-targeting sgRNA or empty vector. (C) Quantification of intracellular fluorescence for cells treated with empty vector (n\u00a0=\u00a03) or unique SURF4-targeting sgRNAs (n\u00a0=\u00a06). (D) Quantification of intracellular fluorescence for clonal cell lines each containing frameshift-causing indels at two different SURF4 target sites (n\u00a0=\u00a07 wild-type clones, n\u00a0=\u00a03 clones generated from each SURF4-targeting sgRNA). (E) Flow cytometry histograms for cells expressing PCSK9-eGFP-2A-A1AT-mCherry and deleted for SURF4 with or without stable expression of a wild-type or FLAG-tagged SURF4 cDNA. (F) Time course of intracellular accumulation of tetracycline-inducible PCSK9-eGFP on WT, SURF4-deficient, or SURF4 rescue background (n\u00a0=\u00a03 biologic replicates for each cell line at each time point). *p<0.05 by Student\u2019s t-test. Error bars represent standard deviations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Clonal cell lines with a stably integrated tetracycline-inducible PCSK9 cDNA on either WT or SURF4 mutant background were treated with tetracycline or vehicle control and analyzed by immunoblotting for various markers of ER stress (A), quantified by densitometry (B). Error bars represent standard deviations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Clonal cell lines were genotyped by PCR amplification of sgRNA target site and Sanger sequencing of the amplicon with either TIDE decomposition of individual alleles from the amplicon, or ligation of the amplicon into cloning plasmids and Sanger sequencing of multiple individual clones. Sequence corresponding to sgRNA is underlined and expected double-strand break site is indicated (^).\n\n### SURF4 deletion causes intracellular accumulation of PCSK9-eGFP in HEK293T cells\n\nTo validate the functional interaction of SURF4 with PCSK9-eGFP, we generated plasmids encoding Cas9 and 6 independent SURF4-targeting sgRNAs (three from the original screen and three additional unique sgRNAs). Reporter cells were transiently transfected with each of these 6 SURF4-targeting constructs and analyzed by FACS, with all six sgRNAs resulting in accumulation of intracellular PCSK9-eGFP fluorescence with no effect on intracellular A1AT-mCherry fluorescence (Figure 3B\u2013C) or induction of ER stress markers (Figure 3\u2014figure supplement 1). Similarly, six clonal cell lines carrying sequence-verified indels in either SURF4 exon 2 or exon 5 (Figure 3\u2014figure supplement 2) all exhibited specific PCSK9-eGFP accumulation with no effect on A1AT-mCherry (Figure 3D). This phenotype was rescued by stable expression of wild-type SURF4 cDNA (Figure 3E). The intracellular accumulation of PCSK9 upon SURF4 disruption was confirmed in an independently-derived HEK293T cell line carrying an inducible PCSK9-eGFP allele. Accumulation of PCSK9-eGFP in SURF4 mutant cells relative to wild-type cells was detectable within 4 hr of induction (Figure 3F).\n\nTo identify other potential cellular components also required for efficient PCSK9 secretion, we next examined the 21 genes in addition to SURF4 which exhibited potentially significant enrichment scores (FDR\u00a0\u2264\u00a010%) in the whole genome CRISPR screen. PCSK9-eGFP-2A-A1AT-mCherry reporter cells were transduced with individual lentiviral CRISPR constructs targeting each of these genes and analyzed by FACS. None of the sgRNA targeting these additional genes were found to result in a significant effect specifically on PCSK9-eGFP fluorescence (Figure 2\u2014figure supplement 3). Thus, within the statistical power of our screen, SURF4 emerges as the single gene out of the\u00a0~19,000 human genes targeted by the GeCKOv2 library (Sanjana et al., 2014) whose inactivation results in specific intracellular retention of PCSK9 in HEK293T cells.\n\n### SURF4 localizes to the early secretory pathway where it physically interacts with PCSK9\n\nHEK293T cells were engineered to stably express SURF4 with an N-terminal FLAG epitope tag. FLAG-tagged SURF4 demonstrated similar rescue of PCSK9-eGFP fluorescence in SURF4-deficient cells compared to native, untagged SURF4 (Figure 3E), demonstrating that this tag does not interfere with SURF4 function. Consistent with previous reports (Mitrovic et al., 2008; Saegusa et al., 2018) and compatible with a role for SURF4 as an ER cargo receptor, immunofluorescence of FLAG-SURF4 demonstrated colocalization with a marker of the ER and, to a lesser extent, the ERGIC compartment (Figure 4A\u2013B). FLAG-tagged SURF4 and GFP-tagged PCSK9 were found to co-immunoprecipitate from cell lysates prepared in the presence of the chemical crosslinker dithiobis(succinimidyl propionate), with no detectable nonspecific co-immunoprecipitation for several control ER and ERGIC-localized proteins (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig4-v1.jpg)\n\n**Figure 4.:** (A) Immunofluorescence of FLAG-SURF4 together with markers of the ER (calnexin), ERGIC (LMAN1), and Golgi (GM130). Scale bar\u00a0=\u00a010 \u00b5m. (B) Quantification of colocalization (n\u00a0=\u00a08 cells analyzed for each combination of antibody staining). (C) Spectral counts for SURF4 in streptavidin-purified eluates from cells expressing various BirA* fusion proteins. (D) Immunoprecipitations were performed using antibodies directed against FLAG or GFP from lysates of cells expressing FLAG-SURF4, PCSK9-eGFP, both, or neither. Error bars represent standard deviations.\n\n### Loss of SURF4 results in decreased PCSK9 secretion and ER accumulation of PCSK9\n\nFluorescence assays on both extracellular conditioned media and intracellular lysates prepared from both wild-type and SURF4-deficient cells demonstrated a significantly decreased ratio of extracellular to intracellular PCSK9-eGFP fluorescence (Figure 5A), consistent with a defect in extracellular secretion. Pulse-chase labeling confirmed a decreased rate of PCSK9-eGFP secretion into the conditioned media in SURF4-deficient cells (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig5-v1.jpg)\n\n**Figure 5.:** (A) Fluorescence detection of PCSK9-eGFP in extracellular conditioned media relative to cellular lysate in WT (n\u00a0=\u00a07) and clonal SURF4-deficient (n\u00a0=\u00a05) fluorescent reporter cell lines. (B) Immunoblotting of tetracycline-inducible PCSK9 in extracellular conditioned media and cellular lysates from WT, SURF4-deficient, or SURF4 rescued cells. (C) Quantification of densitometry of native PCSK9 relative in conditioned media and cellular lysates, normalized to GAPDH, for WT, SURF4-deficient, or SURF4 rescued cells (n\u00a0=\u00a04 biologic replicates for each cell line). (D) Quantitative PCR of SURF4 and PCSK9 transcript levels from RNA isolated from a SURF4 WT or mutant fluorescent reporter cell line (n\u00a0=\u00a03 measurement replicates). (E) Live cell fluorescence microscopy of fluorescent reporter cells, either WT or SURF4-deficient, transfected with the ER marker ERoxBFP. Scale bar\u00a0=\u00a010 \u00b5m. (F) Quantification of PCSK9-eGFP signal intensity in pixels positive for ERoxBFP fluorescence (n\u00a0=\u00a014 for each cell line). (G) EndoH-sensitivity of PCSK9 expressed in WT, SURF4-deficient, or SURF4 rescued cells. (H) Quantification of endoH-sensitivity, normalized to average intensity of average WT band intensity (n\u00a0=\u00a04 biologic replicates for each cell line). *p<0.05 by Student\u2019s t-test. Error bars represent standard deviations.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** A SURF4 mutant cell line with a tetracycline-inducible PCSK9-eGFP construct and with (SURF4 rescue) or without (SURF4 mutant) a stably integrated SURF4 cDNA were radiolabeled with tracer containing 35S-Met and 35S-Cys. Conditioned media and cellular lysates were harvested at the indicated time points and PCSK9-eGFP immunoprecipitated and analyzed by SDS-PAGE electrophoresis and autoradiography.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38839/elife-38839-fig5-figsupp2-v1.jpg)\n\nTo exclude interaction of SURF4 with the GFP portion of the fusion rather than PCSK9 itself, we also examined SURF4-dependence for the secretion of untagged PCSK9. Stable cell lines were generated by Flp/FRT-mediated knock-in of PCSK9 coding sequence into a tetracycline-inducible locus of HEK293T cells that were either wild-type or SURF4-deficient, the latter with or without stable integration of a wild-type SURF4 cDNA expression construct. Consistent with the reduced secretion observed above for the PCSK9-eGFP fusion, untagged PCSK9 also exhibited a significant decrease in the ratio of extracellular to intracellular levels in SURF4-deficient cells that was rescued by expression of a SURF4 transgene (Figure 5B\u2013C). Quantitative PCR demonstrated equivalent levels of PCSK9 mRNA levels in wild-type and SURF4-deficient cells (Figure 5D), excluding an indirect effect on PCSK9 transcription or mRNA stability.\n\nTo characterize the compartmental localization of intracellular PCSK9, we performed live cell fluorescence microscopy on wild-type and SURF4-deficient cells. PCSK9-eGFP fluorescence demonstrated increased colocalization with an ER marker in SURF4-deficient cells, consistent with ER retention (Figure 5E\u2013F). Similarly, the predominant form of native PCSK9 in SURF4-deficient cells was sensitive to endoglycosidase H (Figure 5G\u2013H, Figure 5\u2014figure supplement 2), consistent with its localization in the ER (Freeze and Kranz, 2010). The relative intensity of endoH-resistant PCSK9 was unchanged, consistent with continued normal post-Golgi transport and secretion. Collectively these results indicate that SURF4 promotes the efficient ER exit and secretion of PCSK9.\n\n## Discussion\n\nIt is estimated that\u00a0~3000 human proteins are extracellularly secreted through the COPII pathway (Uhl\u00e9n et al., 2015), though few ER cargo receptors for these proteins have been identified and the proportion of secreted proteins that depend upon cargo receptor interactions is unknown (Barlowe and Helenius, 2016). Our findings suggest that SURF4 actively recruits PCSK9 into COPII vesicles, providing additional support for the cargo capture model of protein secretion. SURF4-deleted cells exhibit only a partial defect in PCSK9 secretion and whether the residual SURF4-independent secretion is due to bulk flow, or interactions with alternative ER cargo receptors, remains unknown.\n\nTo potentially circumvent the expected transient and/or low affinity nature of interactions between cargoes and their receptors, we applied purification by BirA*-mediated proximity-dependent biotinylation, which converts transient protein-protein interactions into permanent modifications (Roux et al., 2012). Although this approach led to the detection of SURF4 interactions with PCSK9, SAR1A, and SAR1B, SURF4 was similarly marked by A1AT. Likewise, the A1AT cargo receptor LMAN1 was marked by both A1AT and PCSK9. These data suggest that BirA*-mediated proximity-dependent biotinylation may efficiently label ER cargo receptors, but lack the spatiotemporal resolution to distinguish incorporation within the same COPII vesicle from specific cargo \u2013 cargo receptor interactions.\n\nCRISPR/Cas9-mediated gene editing has emerged as an efficient, programmable, and high-throughput tool for forward genetic screening in mammalian cells (Shalem et al., 2015). Our discovery of the PCSK9-SURF4 interaction demonstrates the feasibility of identifying ER cargo receptors by functional genomic screening and suggests that pooled CRISPR screening may prove to be a generalizable strategy applicable to the thousands of other secreted proteins for which a cargo receptor has not yet been identified. A limitation of our approach is its reliance on an immortalized cell line with the potential for accumulated somatic genetic and epigenetic changes, as well as restriction to a single cell-type gene expression program. Though LMAN1 cargoes appear to retain their cargo receptor-dependence for secretion in a variety of distantly related cell types (Nyfeler et al., 2008; Zhang et al., 2005; Nyfeler et al., 2006), the same many not apply to SURF4.\n\nOf note, SEC24A and/or SEC24B were previously shown to be required for efficient PCSK9 secretion in mice (Chen et al., 2013). Though these genes were not identified in the current screen, this observation could be explained by the 5\u00a0\u2013\u00a010 fold greater expression of SEC24A than SEC24B in mouse liver, in contrast to the similar expression of both paralogs in HEK293T cells (Sultan et al., 2008).\n\nIn addition to a cargo receptor facilitating ER exit, our screening strategy should also survey other segments of the secretory pathway. Though sortilin has previously been implicated in post-Golgi transport of PCSK9 (Gustafsen et al., 2014), sortilin dependence was not confirmed in a subsequent study (Butkinaree et al., 2015) and also was not detected in the current screen. However, our data do not exclude a broader role for sortilin that also affected A1AT secretion, consistent with its contribution to the secretion of other proteins, including gamma-interferon (Herda et al., 2012) and ApoB-100 (Kjolby et al., 2010).\n\nThe yeast homologue of SURF4, Erv29p, was originally identified by proteomic analysis of purified COPII vesicles (Otte et al., 2001). Erv29p promotes the secretion and concentrative sorting of the yeast mating factor gp\u03b1f into COPII vesicles through interaction with a hydrophobic I-L-V signal in gp\u03b1f (Belden and Barlowe, 2001; Malkus et al., 2002; Otte and Barlowe, 2004). In HeLa cells, SURF4 has been shown to cycle in the early secretory pathway and to interact with LMAN1 and members of the p24 family. RNAi-mediated knockdown of SURF4 alone resulted in no overt phenotype, though when combined with knockdown of LMAN1 caused morphologic changes to the ERGIC and Golgi compartments (Mitrovic et al., 2008). SURF4 has also been shown to interact with STIM1 and modulate store-operated calcium entry, though the mechanism underlying this observation is unclear (Fujii et al., 2012). Our screen did not identify significant enrichment of sgRNAs targeting p24 proteins, LMAN1, or STIM1, suggesting that these interactions are not required for efficient PCSK9 secretion in HEK293T cells.\n\nTaken together with the marked reductions in plasma cholesterol associated with genetic or therapy-induced reductions in plasma PCSK9 (ODYSSEY LONG TERM Investigators et al., 2015), our findings raise the possibility that SURF4 could represent an additional novel therapeutic target for the treatment of hypercholesterolemia. However, SURF4 has not been identified in genome-wide association studies for human lipid phenotypes (Global Lipids Genetics Consortium et al., 2013; Lange et al., 2015), suggesting that partial reduction of SURF4 expression does not limit PCSK9 secretion, consistent with the normal PCSK9 secretion and cholesterol profiles of Sec24A+/- mice (Chen et al., 2013) and the normal levels of LMAN1 cargoes (coagulation factors V, VIII, and A1AT) in LMAN1+/- mice (Zhang et al., 2011). Though a loss-of-function variant (p.Gln185Ter) is present in\u00a0~1:500 individuals (Exome Aggregation Consortium et al., 2016), no human diseases have been associated with SURF4 deficiency and no mouse models for Surf4 deletion have been reported (Online Mendelian Inheritance in Man, OMIM, 2018). Erv29, the SURF4 homolog in yeast, is required for gp\u03b1f secretion (Belden and Barlowe, 2001), with a recent report demonstrating a role for the C. elegans homolog (SFT-4) in facilitating the secretion of yolk lipoproteins, as well as mammalian SURF4 in mediating apolipoprotein B secretion in HepG2 cells (Saegusa et al., 2018). The latter result, together with our findings, suggest a potentially broader role for SURF4 in the complex regulation of mammalian lipid homeostasis in vivo.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional  information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>PCSK9</td>\n      <td>NA</td>\n      <td>Uniprot Q8NBP7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>A1AT</td>\n      <td>NA</td>\n      <td>Uniprot P01009</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>SURF4</td>\n      <td>NA</td>\n      <td>Uniprot O15260</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_1926</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>T-Rex-293</td>\n      <td>Invitrogen</td>\n      <td>RRID:CVCL_D585</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-PCSK9 (rabbit polyclonal)</td>\n      <td>Cayman Chemical</td>\n      <td>RRID:AB_569536</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP (rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_303395</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mCherry (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_2571870</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GAPDH (rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_2630358</td>\n      <td>(1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-\u03b2-actin (mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>RRID:AB_2714189</td>\n      <td>(1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-LMAN1 (rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_10973984</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-calnexin (rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>RRID:AB_2228381</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GM130 (rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_880266</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-BiP (rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_10859806</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-PDI (rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>RRID:AB_2156433</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP-conjugated anti- FLAG (goat polyclonal)</td>\n      <td>Abcam</td>\n      <td>RRID:AB_299061</td>\n      <td>(1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP-conjugated anti- mouse secondary (goat polyclonal)</td>\n      <td>BioRad</td>\n      <td>RRID:AB_11125547</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP-conjugated anti- rabbit IgG (goat polyclonal)</td>\n      <td>BioRad</td>\n      <td>RRID:AB_11125142</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FITC-conjugated anti- FLAG (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>RRID:AB_439701</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa647-conjugated anti-rabbit secondary (donkey polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab150075</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLentiCRISPRv2</td>\n      <td>Addgene</td>\n      <td>52961</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pX459</td>\n      <td>Addgene</td>\n      <td>62988</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pNLF-C1</td>\n      <td>Promega</td>\n      <td>E1361</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDEST-pcDNA5-BirA-FLAG-C-term</td>\n      <td>PMID 24255178</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pENTR/D-TOPO</td>\n      <td>Invitrogen</td>\n      <td>K2400-20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>brefeldin A</td>\n      <td>BioLegend</td>\n      <td>420601</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>dithiobis(succinimidyl propionate)</td>\n      <td>Pierce</td>\n      <td>22586</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cells and reagents\n\nHEK293T cells were purchased from ATCC (Manassas VA). T-REx-293 cells were purchased from Invitrogen. Cell lines were validated by the AMPFLSTR Identifiler Plus Assay (Applied Biosystems, Foster City CA) and tested by the MycoAlert Mycoplasma Detection Kit (Lonza, Basel Switzerland). Cells were cultured in DMEM (Invitrogen, Carlsbad CA) containing 10% FBS (D10) in a humidified 37\u00b0C chamber with 5% CO2. The expression construct for PCSK9-eGFP-2A-A1AT-mCherry was generated by Gibson assembly (Gibson et al., 2009) of vector sequence derived from pNLF-C1 (Promega, Madison WI) and PCSK9 and A1AT cDNA derived by RT-PCR from HepG2 mRNA. Expression constructs for PCSK9, A1AT, SAR1A, and SAR1B fused to BirA* were generated by cDNA ligation into the entry vector pENTR/D-TOPO (Invitrogen) and Gateway cloning into the destination vector pDEST-pcDNA5-BirA-FLAG C-term (Couzens et al., 2013) using LR clonase II (Invitrogen). This vector was also used as a backbone for the Gibson assembly of tetracycline-inducible expression of native PCSK9 and PCSK9-eGFP. For CRISPR experiments, sgRNA sequences were ligated into pLentiCRISPRv2 (Addgene #52961, a gift from Feng Zhang (Sanjana et al., 2014)) or pX459 (Addgene #62988, a gift from Feng Zhang) using BsmBI or BbsI restriction enzyme sites, respectively. Transfections were performed with FugeneHD (Promega) or Lipofectamine 3000 (Invitrogen) per manufacturer\u2019s instructions. Where indicated, clonal cell lines were derived by diluting cell suspensions to a single cell per well and expanding individual wells. Genotyping of clonal cell lines was performed by Sanger sequencing of target site PCR amplicons of genomic DNA isolated by QuickExtract (Epicentre, Madison WI). The pLentiCRISPRv2 whole genome CRISPR library (Addgene #1000000048, a gift from Feng Zhang [Sanjana et al., 2014]) was expanded by eight separate electroporations for each half library into Endura electrocompetent cells (Lucigen, Middleton WI), plated on 24.5 cm bioassay plates, and pooled plasmids isolated by HiSpeed Maxi Prep (Qiagen, Hilden Germany). The pooled lentiviral library was prepared by co-transfecting 120 \u03bcg of each half library together with 120 \u03bcg of pCMV-VSV-G (Addgene #8454, a gift from Bob Weinberg [Stewart et al., 2003]) and 180 \u03bcg psPAX2 (Addgene #12260, a gift from Didier Trono) into a total of 12 T225 tissue culture flasks of\u00a0~70% confluent HEK293T cells using FugeneHD per manufacturer\u2019s instructions. Media was replaced at 12 hr post-transfection with D10 supplemented with 1% BSA, which was collected and changed at 24, 36, and 48 hr. Harvested media was centrifuged at 1000 g for 10 min, pooled and filtered through a 0.45 \u03bcm filter, aliquoted, snap-frozen with liquid nitrogen and stored at \u221280\u00b0C until the time of use.\n\n### Whole genome CRISPR screen\n\nFor each of 4 independent biological replicates, a total of\u00a0~90 million cells stably expressing PCSK9-eGFP-2A-A1AT-mCherry were transduced at a multiplicity of infection of\u00a0~0.3 with the whole genome CRISPR library. Puromycin selection (1 \u03bcg/mL) was applied from day 1 to day four post-transduction. Cells were passaged every 2\u00a0\u2013\u00a03 days and maintained in logarithmic phase of growth. After 14 days, a total of\u00a0~240 million cells were detached with TrypLE Express (Invitrogen), harvested in D10 at 4\u00b0C, collected by centrifugation at 500 g for 5 min, the pellet resuspended in 4\u00b0C phosphate-buffered saline (PBS) and filtered through a 35 \u03bcm nylon mesh into flow cytometry tubes, which were kept on ice until the time of sorting. A BD FacsAriaII was used to isolate cell populations containing\u00a0~7 million cells per subpopulation into tubes containing D10. Genomic DNA was isolated using a DNEasy purification kit (Qiagen). Integrated lentiviral sgRNA sequences were then amplified using Herculase II polymerase (Agilent, Santa Clara CA) in a two step PCR reaction as previously described (Sanjana et al., 2014; Shalem et al., 2014) with 20 cycles for round 1 PCR and 14 cycles for round 2. Amplicons were then sequenced on a HiSeq Rapid Run (Illumina, San Diego CA), with 95.2% of clusters passing quality filtering to generate a total of\u00a0~210 million reads with a mean quality score of 34.99. Individual sgRNA sequences were mapped with a custom Perl script (Source\u00a0code\u00a01) that seeded sequences onto a constant 24 nucleotide region upstream of the variable 20mer sgRNA, allowing up to one nucleotide mismatch, and reading the upstream six nucleotide barcode and downstream 20 nucleotide sgRNA sequence, which was then mapped to the library reference database with no mismatches tolerated. Enrichment was assessed using DESeq2 for individual sgRNA sequences (Love et al., 2014) and MAGeCK for gene-level computations (Li et al., 2014).\n\n### PCSK9 secretion assays\n\nClonal cell lines either wild-type for SURF4 or containing frameshift-causing SURF4 indels were isolated on a background of the HEK293T fluorescent reporter cell line or in T-REx-293 cells with a Flp/FRT-integrated PCSK9 cDNA. Cells were seeded at equal density in 10 cm plates and cultured in D10 for non-fluorescence-based assays or Fluorobrite media (ThermoFisher, Waltham MA) supplemented with 10% FBS for fluorescence-based assays. At the time of analysis, conditioned media was removed, clarified by centrifugation for 10 min at 1000 g, and supernatant analyzed immediately or stored at \u221220\u00b0C. Cell monolayers were detached with trypLE express, collected in fresh media, pelleted, washed with PBS, and resuspended in 750 \u03bcL RIPA buffer (ThermoFisher) supplemented with protease inhibitors (Roche, Basel Switzerland). RIPA lysates were briefly sonicated, rotated end-over-end for 45 min at 4\u00b0C, and centrifuged at\u00a0~20,000 g for 30 min. Supernatants were transferred to a new tube and analyzed immediately or stored at \u221220\u00b0C. For fluorescence assays, samples were measured in triplicate in 96 well plates using an EnSpire fluorescence plate reader (PerkinElmer, Waltham MA), with fluorescent intensity zeroed on the autofluorescence of parental cells not expressing fluorescent fusion proteins for lysates or unconditioned media for conditioned media. For immunoblotting, samples were probed with antibodies against PCSK9 (Cayman 10007185, 1:1000), GAPDH (Abcam, Cambridge UK, ab181602, 1:10,000), GFP (Abcam, ab290, 1:5000), \u03b2-actin (Santa Cruz, sc-47778, 1:10,000), FLAG (Abcam, ab1238, 1:10,000), mCherry (Abcam, ab167453, 1:1000), LMAN1 (Abcam, ab125006, 1:5000), calnexin (Cell Signaling, 2679, 1:2000), BiP (Abcam, ab108613, 1:5000), PDI (Cell Signaling, 3501, 1:1000). Densitometry was performed with ImageJ software (Schneider et al., 2012).\n\n### Endoglycosidase H assays\n\nTo test for the N-glycosylation state of PCSK9, approximately 100 \u03bcg of RIPA lysate was incubated with denaturation buffer (NEB, Ipswich MA) for 10 min at 95\u00b0C, then split in half and incubated with or without 0.5 \u03bcL of PNGase (NEB) or EndoH (NEB) for 1 hr at 37\u00b0C. Laemmli sample buffer (Laemmli, 1970) was added, samples boiled for 5 min, resolved on a 10% Tris-HCl polyacrylamide gel, and analyzed by immunoblotting as above.\n\n### Microscopy\n\nCells were grown on 35 mm poly-D lysine-coated glass bottom dishes (MatTek, Ashland MA). For live cell microscopy, cells were transiently transfected with an expression plasmid for ERoxBFP (Costantini et al., 2015) (Addgene #68126, a gift from Erik Snapp (Costantini et al., 2015)) and visualized at 24\u00a0\u2013\u00a048 hr post-transfection. For immunostaining, cells were washed with PBS, fixed with 2% paraformaldehyde, permeabilized with 0.1% Triton X-100 in PBS, blocked with 1% BSA and 0.1% Tween-20 in PBS, stained with FITC-conjugated anti-FLAG antibody (Sigma, St. Louis MO, F4049) and unconjugated rabbit antibodies against either calnexin (Cell Signaling Technology, Danvers MA, #2679), LMAN1 (Abcam, ab125006), or GM130 (Abcam, ab52649), then stained with Alexa647-conjugated anti-rabbit secondary antibody (Abcam, ab150075). All fluorescent imaging was performed on a Nikon A2 confocal microscope. Colocalization quantification was performed with Nikon Elements software. For all microscopy experiments, the observer was blinded to cell genotype and only unblinded after completion of quantitative analysis.\n\n### BioID and mass spectrometry\n\nBioID and mass spectrometry analysis was performed essentially as described (Chapat et al., 2017). Briefly, stable HEK293 Flp-In T-REx cells were grown on 15 cm plates to approximately 75% confluence. Bait expression and proximity labeling were induced by the addition of tetracycline (1 \u03bcg/mL) and biotin (50 \u03bcM) and proceeded for 24 hr. Cells were collected in PBS and biotinylated proteins purified by streptavidin-agarose affinity purification. Proteins were digested on-bead with sequencing-grade trypsin in 50 mM ammonium bicarbonate pH 8.5. Peptides were acidified by the addition of formic acid (2% (v/v) final) and dried by vacuum centrifugation. Dried peptides were suspended in 5% (v/v) formic acid and analysed on a TripleTOF 6600 mass spectrometer (SCIEX) in-line with a nanoflow electrospray ion source and nano-HPLC system. Raw data were searched and analyzed within ProHits LIMS (Liu et al., 2010) and peptides matched to genes to determine prey spectral counts (Liu et al., 2016). High confidence proximity interactions (BFDR\u00a0\u22641%) were determined through SAINT analysis (Teo et al., 2014) implemented within ProHits. Bait samples (biological duplicates) were compared against 14 independent negative control samples (2 BirA*-FLAG-GFP only, 6 BirA*-FLAG only, and 6 3xFLAG only expressing cell lines) which were \u2018compressed\u2019 to six virtual controls to increase the stringency in scoring (Mellacheruvu et al., 2013). Data has been deposited as a complete submission to the MassIVE repository (https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp) and assigned the accession number MSV000082222. The ProteomeXchange accession is PXD009368.\n\n### Mass spectrometry data analysis\n\nAll raw (WIFF and WIFF.SCAN) files were saved in our local interaction proteomics LIMS, ProHits (Liu et al., 2010). mzXML files were generated from raw files using the ProteoWizard (v3.0.4468) and SCIEX converter (v1.3 beta) converters, implemented within ProHits. The searched database contained the human complement of the RefSeq protein database (version 57) complemented with SV40 large T-antigen sequence, protein tags, and common contaminants (72,226 sequences searched including decoy sequences). mzXML files were searched by Mascot (v2.3.02) and Comet (v2016.01 rev. 2) with up to two missed trypsin cleavage sites allowed and methionine oxidation and asparagine/glutamine deamidation set as variable modifications. The fragment mass tolerance was 0.15 Da and the mass window for the precursor was\u00a0\u00b130 ppm with charges of 2\u00a0+\u00a0to 4+ (both monoisotopic mass). Search engine results were analyzed using the Trans-Proteomic Pipeline (TPP v4.6 OCCUPY rev three check) (Deutsch et al., 2010) via iProphet (Shteynberg et al., 2011). Peptides with PeptideProphet scores\u00a0\u2265\u00a00.85 were mapped back to genes (gene IDs were from RefSeq). If peptides were shared between multiple genes, spectral counts were assigned exclusively to those genes with unique peptide assignments proportionally to the evidence for that assignment. If peptides matched only to genes without unique peptide assignments, spectral counts were divided equally between those genes (Liu et al., 2016). SAINTexpress (v3.6.1) (Teo et al., 2014) was used to calculate the probability that identified proteins were significantly enriched above background contaminants using spectral counting (semi-supervised clustering) through comparing bait runs to negative control runs.\n\n### Immunoprecipitation\n\nCells were harvested and resuspended at a density of\u00a0~5\u00d7106 cells/mL in PBS supplemented with 2 mM CaCl2 and 2 mM dithiobis(succinimidyl propionate) (Pierce, Waltham MA), rotated end-over-end at 4\u00b0C, quenched with the addition of Tris-HCl (pH 7.5) to a final concentration of 25 mM, pelleted, and resuspended in IP Lysis Buffer (50 mM Tris-HCl, 150 mM NaCl, 2 mM CaCl2, and 1.0% Triton X-100, supplemented with protease inhibitors (Roche), pH 7.5). Lysates were prepared as described above. Immunoprecipitation from lysates was performed with M2-FLAG affinity gel (Sigma) or GFP-trap magnetic beads (Chromo-Tek, Hauppage NY). To reduce nonspecific binding, M2-FLAG affinity gel was pre-blocked with 1 hr incubation in IP Blocking Buffer (50 mM Tris-HCl, 500 mM NaCl, 2 mM CaCl2, 5% BSA, pH 7.5). Pulldowns were performed with 500 \u00b5L of lysate with end-over-end rotation at 4\u00b0C overnight. A total of 5 washes were performed with IP Lysis Buffer for GFP-trap beads or IP Blocking Buffer for M2-FLAG affinity gel. Protein elution was performed by incubating beads at room temperature for 15 min with 2X Laemmli sample buffer supplemented with \u03b2\u2013mercaptoethanol.\n\n### Screen validation\n\nAll genes identified by MAGeCK with a FDR\u00a0<\u00a010% were selected for follow up validation. The top-ranking sgRNA for each gene was individually cloned into BsmBI sites of pLentiCRISPRv2. Individual lentiviral stocks were prepared and used to transduce fluorescent reporter cells at an MOI\u00a0<0.5, followed by puromycin selection, and passaging for 2 weeks prior to FACS analysis. The mean fluorescence intensity of a total of 20,000 gated events was recorded for each construct and compared to the mean intensity of 3 nontargeting sgRNA constructs. A total of 3 biologic replicates was performed.\n\n### Pulse-chase analysis\n\nCells were seeded into six well plates and induced with 1 \u00b5g/mL tetracycline (included in each of the media preparations below) overnight before near-confluent monolayers were washed and incubated with Starvation Media (DMEM lacking cysteine and methionine (Invitrogen) and supplemented with tetracycline with 10% dialyzed FBS (Fisher)) for 20 min at 37\u00b0C. Starvation Media was then replaced with Pulse Media (Starvation Media supplemented with 75 \u00b5Ci/sample EXPRE35S35S Protein Labeling Mix (PerkinElmer)) and cells were incubated for 30 min at 37\u00b0C. Cells were then washed and incubated with Chase Media (Starvation Media supplemented with 5 mM each of unlabeled methionine and cysteine) for the indicated time points, after which conditioned media (2 mL per sample) and cellular lysates (collected in 1 mL lysis buffer) were prepared as described above for co-immunoprecipitation experiments. For each immunoprecipitation, 20 \u00b5L of GFP-trap beads were used with either 200 \u00b5L of cellular lysate of 400 \u00b5L of conditioned media. Proteins were eluted in 50 \u00b5L of sample buffer, of which 10 \u00b5L was analyzed by SDS-PAGE and autoradiography.\n\n### Statistical analysis\n\nThe statistical significance of differences in quantitative data between control and experimental groups was calculated using the Student\u2019s t-test. CRISPR screen and mass spectrometry data analysis was performed as described above.\n",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "93974532-e1de-470f-a027-7d77d5f0a7d4",
+      "submission_id": "7cd31303-f794-4389-b1f6-a39062e21fd0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Randy Schekman, Howard Hughes Medical Institute, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38839.025](https://doi.org/10.7554/eLife.38839.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The cargo receptor SURF4 promotes the efficient cellular secretion of PCSK9\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Randy Schekman as the Reviewing/Senior Editor and Reviewer #1. The following individual involved in review of your submission has agreed to reveal their identity: Charles Barlowe (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nEmmer et al. have used proximity labeling to identify protein candidates for the putative ER traffic receptor responsible for sorting of PCSK9 that previous work from the Ginsburg lab suggested would respond to SEC24A for sorting into COPII vesicles. Although a number of candidate ER membrane proteins were identified, proximity labeling alone appeared not to offer the spatial or temporal resolution needed to narrow the search to a small number of candidates. They then turned to a CRISPR screen with sgRNAs covering most of the human genome and searched by FACS for cells that accumulated a PCSK9-eGFP reporter in preference to an alpha 1 antitrypsin-mCherry reporter. A fairly exhaustive screen turned up the gene SURF4, a mammalian homolog of the yeast gene ERV29, previously identified as an ER traffic receptor for the precursor of the yeast alpha mating pheromone. SURF4 was also one of the ER membrane proteins identified in their biotin proximity-labeling screen. The identification of SURF4 as important in PCSK9 was confirmed in multiple independent experiments with other tagged and untagged forms of PCSK9 expressed in wt and SURF4 del mutant lines. Consistent with a role in PCSK9 traffic from the ER, SURF4 mutant cells accumulated PCSK9 as detected in lysates of whole cells at the expense of its secretion into the medium and in the ER in intact cells. SURF4 was localized to the ER by immunofluorescence and was found associated with PCSK9 by use of a cleavable crosslinking agent followed by denaturing co-immunoprecipitation.\n\nThe work is quite interesting and compelling and adds to the tiny list of such sorting receptors found in mammalian cells. It remains a mystery how the vast majority of secreted proteins are sorted efficiently in the ER, though at least some may be secreted by a receptor-independent bulk flow mechanism. However the importance of the work is diminished to some extent as the yeast equivalent protein, Erv29, was discovered many years ago and its characterization has been reported in several papers over the years. Further, SURF4 was recently reported to facilitate apoB ER traffic in HepG2 cells. Of course, there are many things the authors could have done to further characterize the role of SURF4, such as identifying the sorting signal on PCSK9 responsible for its recognition in the ER, and examining the sorting of SURF4 into COPII vesicles formed in a cell-free reaction. The yeast protein Erv29 is sorted into COPII vesicles but not all ER membrane proteins required for ER traffic accompany their cargo into COPII vesicles (e.g. Shr3). However, as this is an initial report, these more detailed characteristics could perhaps be held for a later installment. Given the limited scope of this work, it may be more appropriately considered as an Advance on the Chen et al., paper of 2013.\n\nEssential revisions:\n\n1) For the cross-linking immunoprecipitation experiment shown in Figure 4D, the experiment would be strengthened by immunoblotting for additional ER/Golgi membrane proteins (e.g. LMAN1, GM130) to demonstrate specificity of the co-immunoprecipitations. At a minimum, immunoblot of actin in the IPs should be shown.\n\n2) The authors conclude that SURF4 depletion or deletion results in only a partial effect on PCSK9 secretion and thus that other, possibly redundant functions may operate. However, the sensitivity of most of their secretion experiments is limited by the long time course of accumulation measured in steady state cells or in one case, in cells induced for PCSK9 secretion over a period of hours (Figure 3F). A clearer case for a kinetic delay dependent on SURF4 would require a pulse-chase experiment conducted over the usual transit time course of secretion (10-60 min) in wt and SURF4 del mutant cells.\n\n3) The data in Figure 5G do not show an obvious effect of SURF4 del on the conversion of endoH sens to resistant mature PCSK9. The quantified data in 5H look good but are hard to reconcile with the appearance of the bands in 5G. For example, the intensity of the endoH resistant band of mature PCSK9 in relation to the minus enzyme control looks pretty much the same for the mutant vs. the rescue sample. Perhaps the authors could show other repetitions of this gel in a figure supplement.\n",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0e0af339-41ca-4df6-9d7c-5a7733c8c766",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C1",
+      "claim": "PCSK9 is a secreted protein that regulates plasma cholesterol levels and cardiovascular disease risk.",
+      "claim_type": "EXPLICIT",
+      "source": "PCSK9 is a secreted protein that regulates plasma cholesterol levels and cardiovascular disease risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about PCSK9 function that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "8589fee7-f688-4c66-83c7-8d23b2bd963a",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C2",
+      "claim": "SURF4 is a homologue of the yeast cargo receptor Erv29p.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we apply a novel approach that combines proximity-dependent biotinylation and proteomics together with genome-scale CRISPR screening to identify SURF4, a homologue of the yeast cargo receptor Erv29p, as a primary mediator of PCSK9 secretion in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the homology relationship between SURF4 and Erv29p, which is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "cbb1bd20-fb65-42fc-b5d4-0c7d9349e523",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C3",
+      "claim": "SURF4 is a primary mediator of PCSK9 secretion in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we apply a novel approach that combines proximity-dependent biotinylation and proteomics together with genome-scale CRISPR screening to identify SURF4, a homologue of the yeast cargo receptor Erv29p, as a primary mediator of PCSK9 secretion in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the CRISPR screening data and multiple validation experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "5e409bce-c0e9-4d8a-82cd-2bfd2dafcab2",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C4",
+      "claim": "SURF4 localizes to the early secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "SURF4 was found to localize to the early secretory pathway where it physically interacts with PCSK9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data showing colocalization with ER and ERGIC markers (Figure 4A-B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "05a5c494-03e0-422a-b461-b4c8c9b52288",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C5",
+      "claim": "SURF4 physically interacts with PCSK9.",
+      "claim_type": "EXPLICIT",
+      "source": "SURF4 was found to localize to the early secretory pathway where it physically interacts with PCSK9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-immunoprecipitation experiments (Figure 4D) and proximity-dependent biotinylation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "a078076f-c5ad-4352-be0b-8f793ca831be",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C6",
+      "claim": "Deletion of SURF4 resulted in ER accumulation of PCSK9.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of SURF4 resulted in ER accumulation and decreased extracellular secretion of PCSK9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live cell microscopy showing increased colocalization with ER markers (Figure 5E-F) and endoH sensitivity assays (Figure 5G-H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "b595c855-417e-4dbb-8490-30ca5fd9b894",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C7",
+      "claim": "Deletion of SURF4 resulted in decreased extracellular secretion of PCSK9.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of SURF4 resulted in ER accumulation and decreased extracellular secretion of PCSK9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence assays (Figure 5A) and immunoblotting (Figure 5B-C) showing decreased ratio of extracellular to intracellular PCSK9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "2f485d26-85c6-4092-bebf-01af98d2f45f",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C8",
+      "claim": "SURF4 functions as an ER cargo receptor mediating the efficient cellular secretion of PCSK9.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support a model in which SURF4 functions as an ER cargo receptor mediating the efficient cellular secretion of PCSK9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the collective experimental data including CRISPR screening, localization studies, interaction studies, and secretion assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "52a6dfce-d6a4-4839-ac4e-f52b1926fe21",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C9",
+      "claim": "PCSK9 is a proprotein convertase that acts as a negative regulator of the LDL receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "PCSK9 is a proprotein convertase that acts as a negative regulator of the LDL receptor (Seidah et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "1c538c8e-c3b5-45c7-aa03-2c8659f2daaa",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C10",
+      "claim": "PCSK9 is synthesized primarily in hepatocytes and secreted into the bloodstream.",
+      "claim_type": "EXPLICIT",
+      "source": "PCSK9 is synthesized primarily in hepatocytes and secreted into the bloodstream.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PCSK9 biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "97c12bc9-74ba-425a-bedc-9abd73538f04",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C11",
+      "claim": "Circulating PCSK9 binds to the LDL receptor and diverts it to lysosomes for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Circulating PCSK9 binds to the LDL receptor and diverts it to lysosomes for degradation, thereby leading to decreased LDL receptor abundance at the hepatocyte cell surface, decreased LDL clearance, and hypercholesterolemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of PCSK9 action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "5943303d-7f93-4139-9ccb-54e8c4305cca",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C12",
+      "claim": "PCSK9 binding to LDL receptor leads to decreased LDL receptor abundance at the hepatocyte cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Circulating PCSK9 binds to the LDL receptor and diverts it to lysosomes for degradation, thereby leading to decreased LDL receptor abundance at the hepatocyte cell surface, decreased LDL clearance, and hypercholesterolemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the established mechanism of PCSK9 action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "dee6429b-b439-4654-8f8d-22a310b9d87d",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C13",
+      "claim": "Gain-of-function PCSK9 mutations cause familial hypercholesterolemia.",
+      "claim_type": "EXPLICIT",
+      "source": "PCSK9 was originally implicated in cardiovascular disease when human genetic studies identified gain-of-function PCSK9 mutations as a cause of familial hypercholesterolemia (Abifadel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "7e838025-bdd8-4112-92c3-9b4567756dba",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C14",
+      "claim": "Loss-of-function PCSK9 variants are associated with decreased plasma cholesterol and lowered lifetime incidence of cardiovascular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, loss-of-function PCSK9 variants were associated with decreased plasma cholesterol and lowered lifetime incidence of cardiovascular disease (Cohen et al., 2006; Benn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "94b9ba75-df9a-4940-bc5e-8f395923366e",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C15",
+      "claim": "Therapeutic inhibitors of PCSK9 exhibit potent lipid-lowering effects and are associated with a reduction in cardiovascular events.",
+      "claim_type": "EXPLICIT",
+      "source": "Therapeutic inhibitors of PCSK9 have been recently developed that exhibit potent lipid-lowering effects and are associated with a reduction in cardiovascular events (Open-Label Study of Long-Term Evaluation against LDL Cholesterol (OSLER) Investigators et al., 2015; ODYSSEY LONG TERM Investigators et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical trial results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "1e542406-e840-4e82-9038-52eabd3cabd8",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C16",
+      "claim": "COPII vesicles transport cargoes from the ER to the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "A critical early sorting step for secreted proteins is their incorporation into membrane-bound vesicles that transport cargoes from the ER to the Golgi apparatus (Zanetti et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the secretory pathway, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "7c9c663c-35fa-4b34-9f2b-ba5fa6033d79",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C17",
+      "claim": "COPII includes the SAR1 GTPase, heterodimers of SEC23/SEC24, and heterotetramers of SEC13/SEC31.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of these vesicles is driven by coat protein complex II (COPII), which includes the SAR1 GTPase, heterodimers of SEC23/SEC24, and heterotetramers of SEC13/SEC31.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established composition of the COPII complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "57e10438-5714-45f0-961d-7495bfa619d6",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C18",
+      "claim": "Secreted cargoes are incorporated into COPII vesicles by cargo capture and bulk flow mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted cargoes are incorporated into COPII vesicles by two mechanisms. 'Cargo capture' refers to concentrative, receptor-mediated, active sorting of selected cargoes, in contrast to 'bulk flow', by which cargoes enter COPII vesicles through passive diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established models of cargo incorporation into COPII vesicles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "2dc00fbb-14ca-4506-81b3-7e9965120df8",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C19",
+      "claim": "Cargo capture and bulk flow mechanisms are not mutually exclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "These mechanisms are not mutually exclusive, as cargoes may exhibit basal rates of secretion that are enhanced by receptor-mediated recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about the relationship between the two mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "7ce8f32e-f541-4c74-9d12-6a4b32937598",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C20",
+      "claim": "The extent to which protein recruitment into the secretory pathway is driven by selective cargo capture versus passive bulk flow remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains unclear to what extent protein recruitment into the secretory pathway is driven by selective cargo capture versus passive bulk flow (Barlowe and Helenius, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "db409789-a112-443f-8152-cff4fcd1ce99",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C21",
+      "claim": "SEC24 is the primary driver of active sorting of secreted cargoes into COPII-coated vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The active sorting of secreted cargoes into COPII-coated vesicles is driven primarily by SEC24, with the multiple SEC24 paralogs observed in vertebrates thought to accommodate a diverse and regulated repertoire of cargoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of SEC24 in cargo sorting.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "d32177d1-2d90-4d95-9ad0-d5b4428948da",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C22",
+      "claim": "Multiple SEC24 paralogs in vertebrates accommodate a diverse and regulated repertoire of cargoes.",
+      "claim_type": "EXPLICIT",
+      "source": "The active sorting of secreted cargoes into COPII-coated vesicles is driven primarily by SEC24, with the multiple SEC24 paralogs observed in vertebrates thought to accommodate a diverse and regulated repertoire of cargoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the function of SEC24 paralogs based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "69ea2eff-0f2a-4d3b-95a8-bb0180a7403d",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C23",
+      "claim": "Genetic deficiency of SEC24A in mice results in hypocholesterolemia due to reduced secretion of PCSK9 from hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic deficiency in the mouse for one of these paralogs, SEC24A, results in hypocholesterolemia due to reduced secretion of PCSK9 from hepatocytes (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior mouse genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "85b51297-04cc-4caf-b451-b984ba8be9ba",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C24",
+      "claim": "The SEC24A-PCSK9 relationship suggests an active receptor-mediated mechanism for PCSK9 recruitment into COPII vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggested an active receptor-mediated mechanism for PCSK9 recruitment into COPII vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the SEC24A mouse data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "beb1cb2b-b2df-4763-bb32-720ae9b81666",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C25",
+      "claim": "A direct physical interaction between SEC24A and PCSK9 is implausible because SEC24A localizes to the cytoplasmic side of the ER membrane and PCSK9 to the luminal side.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct physical interaction between SEC24A and PCSK9, however, is implausible since SEC24A localizes to the cytoplasmic side of the ER membrane and PCSK9 to the luminal side, with neither possessing a transmembrane domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the known topology of SEC24A and PCSK9.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "67de4079-95ff-4a6a-929e-511ffeba0568",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C26",
+      "claim": "The topology of SEC24A and PCSK9 implies the presence of an ER cargo receptor that serves as an intermediary between the COPII coat and luminal PCSK9.",
+      "claim_type": "EXPLICIT",
+      "source": "This topology instead implies the presence of an ER cargo receptor, a transmembrane protein that could serve as an intermediary between the COPII coat and luminal PCSK9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the topological constraints.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "33c38a2e-f61c-404b-a637-266afb6d3b34",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C27",
+      "claim": "COPII-dependent ER cargo receptors were first identified in yeast nearly two decades ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Although COPII-dependent ER cargo receptors were first identified in yeast nearly two decades ago, few examples of similar cargo receptor interactions have been reported for mammalian secreted proteins (Barlowe and Helenius, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about the field, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "26b56147-6e99-46eb-9dba-85c5363730a5",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C28",
+      "claim": "Few examples of cargo receptor interactions have been reported for mammalian secreted proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Although COPII-dependent ER cargo receptors were first identified in yeast nearly two decades ago, few examples of similar cargo receptor interactions have been reported for mammalian secreted proteins (Barlowe and Helenius, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "31900d19-309f-43ab-a85c-f332537300cc",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C29",
+      "claim": "LMAN1 demonstrates no specificity for SEC24A over other SEC24 paralogs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous investigation of the ER cargo receptor LMAN1 demonstrated no specificity for SEC24A over other SEC24 paralogs, making this unlikely to serve as a PCSK9 cargo receptor (Wendeler et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior studies of LMAN1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "02c004da-a202-4f77-a603-cf4eee74caba",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C30",
+      "claim": "LMAN1 is unlikely to serve as a PCSK9 cargo receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous investigation of the ER cargo receptor LMAN1 demonstrated no specificity for SEC24A over other SEC24 paralogs, making this unlikely to serve as a PCSK9 cargo receptor (Wendeler et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of SEC24A specificity of LMAN1.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "b6e3a61a-8882-4d7b-84d5-3c7fbe54b63b",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C31",
+      "claim": "Earlier analyses of PCSK9-interacting proteins did not identify a clear receptor mediating PCSK9 secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier analyses of PCSK9-interacting proteins (Ly et al., 2016; Xu et al., 2012; Denis et al., 2011) did not identify a clear receptor mediating PCSK9 secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior proteomics studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "58b8f039-7469-4d27-8f15-00d9643e3251",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C32",
+      "claim": "A novel strategy combining proximity-dependent biotinylation with CRISPR-mediated functional genomic screening was developed for ER cargo receptor identification.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we developed a novel strategy for ER cargo receptor identification that combines proximity-dependent biotinylation with CRISPR-mediated functional genomic screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "3e89cb02-4081-4e68-b471-47ba30fac6cf",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C33",
+      "claim": "BirA*(R118G) catalyzes proximity-dependent biotinylation of primary amines on neighboring proteins within an estimated ~10 nm radius.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify PCSK9-interacting proteins, we first engineered cells expressing a fusion of PCSK9 and a mutant biotin ligase, E. coli BirA*(R118G), that catalyzes proximity-dependent biotinylation of primary amines on neighboring proteins within an estimated ~10 nm radius (Roux et al., 2012; Kim et al., 2014), effectively converting transient interactions into covalent modification (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BirA* function, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "ddb6c18f-babf-4d54-8815-5416991c648b",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C34",
+      "claim": "BirA* effectively converts transient interactions into covalent modification.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify PCSK9-interacting proteins, we first engineered cells expressing a fusion of PCSK9 and a mutant biotin ligase, E. coli BirA*(R118G), that catalyzes proximity-dependent biotinylation of primary amines on neighboring proteins within an estimated ~10 nm radius (Roux et al., 2012; Kim et al., 2014), effectively converting transient interactions into covalent modification (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BirA* function, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "a2840cf8-3ff8-4899-b338-43c3a288275f",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C35",
+      "claim": "Quantitative mass spectrometry of streptavidin-purified interacting proteins from cells expressing PCSK9-BirA* identified 162 prey proteins that were specifically labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative mass spectrometry of streptavidin-purified interacting proteins from cells expressing PCSK9-BirA* identified 162 prey proteins that were specifically labeled (Bayesian FDR \u2264 1%) by PCSK9-BirA* relative to control bait proteins (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mass spectrometry data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "887f0f32-d97b-4b97-84f7-e80b5b781d86",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C36",
+      "claim": "The interactome of A1AT showed substantial overlap with that of PCSK9 (108/162 proteins).",
+      "claim_type": "EXPLICIT",
+      "source": "The interactome of A1AT showed substantial overlap with that of PCSK9 (108/162 proteins, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mass spectrometry data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "728e6a5c-487b-47f7-b5c4-f958a6efbd25",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C37",
+      "claim": "The A1AT cargo receptor LMAN1 was similarly labeled by both PCSK9-BirA* and A1AT-BirA*.",
+      "claim_type": "EXPLICIT",
+      "source": "The A1AT cargo receptor LMAN1 was similarly labeled by both PCSK9-BirA* and A1AT-BirA*, suggesting that the restricted environment of the COPII vesicle may lead to nonspecific labeling of adjacent cargo receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "84213d28-b71e-43a0-8ca3-7f102d440acc",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C38",
+      "claim": "The restricted environment of the COPII vesicle may lead to nonspecific labeling of adjacent cargo receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The A1AT cargo receptor LMAN1 was similarly labeled by both PCSK9-BirA* and A1AT-BirA*, suggesting that the restricted environment of the COPII vesicle may lead to nonspecific labeling of adjacent cargo receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observation of LMAN1 labeling by both PCSK9 and A1AT.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "70e1cfeb-e361-42ff-a1c1-4d25cc52529d",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C39",
+      "claim": "A total of 35 candidate ER cargo receptors interact with both PCSK9 and either SAR1A or SAR1B.",
+      "claim_type": "EXPLICIT",
+      "source": "We next compared the interactome of PCSK9 to that of SAR1A and SAR1B (Figure 1D), COPII proteins that localize to the cytoplasmic surface of budding COPII vesicles, identifying a total of 35 candidate ER cargo receptors interacting with both PCSK9 and either SAR1A or SAR1B (Figure 1E\u2013F, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mass spectrometry data shown in Figures 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "1aef6e0b-e378-4099-8998-bd618186eb07",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C40",
+      "claim": "The majority of the 35 candidate cargo receptors were annotated as integral membrane proteins (32/35, p=3\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these candidates were annotated as integral membrane proteins (32/35, p=3\u00d710\u221216) with localization in the ER (24/35, p=1.6\u00d710\u221218), as would be expected for an ER cargo receptor (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic annotation of the candidate proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "e1549f30-8c82-4622-98bd-d8c89430af8b",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C41",
+      "claim": "24 of the 35 candidate cargo receptors localize to the ER (p=1.6\u00d710\u221218).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these candidates were annotated as integral membrane proteins (32/35, p=3\u00d710\u221216) with localization in the ER (24/35, p=1.6\u00d710\u221218), as would be expected for an ER cargo receptor (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic annotation of the candidate proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "c4ad7d38-22ed-43bb-8f36-b390c6ec7ee9",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C42",
+      "claim": "Mutants with reduced PCSK9 exit from the ER would accumulate intracellular PCSK9.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that mutants with reduced PCSK9 exit from the ER would accumulate intracellular PCSK9, and that fusion of PCSK9 to eGFP would allow for a cell-autonomous, scalable, and selectable readout of PCSK9 accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the logical reasoning behind the design of the CRISPR screen.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "43e9ba6b-0912-43e1-a8f9-678ff7d4952a",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C43",
+      "claim": "Fusion of PCSK9 to eGFP allows for a cell-autonomous, scalable, and selectable readout of PCSK9 accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that mutants with reduced PCSK9 exit from the ER would accumulate intracellular PCSK9, and that fusion of PCSK9 to eGFP would allow for a cell-autonomous, scalable, and selectable readout of PCSK9 accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the logical reasoning behind the design of the reporter system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "62610c00-80de-4877-9f3a-f598b3aa1e95",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C44",
+      "claim": "Clonal HEK293T cell lines stably co-expressing PCSK9-eGFP and A1AT-mCherry efficiently secrete both fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated clonal HEK293T cell lines stably co-expressing both a PCSK9-eGFP fusion and, as an internal control, alpha-1 antitrypsin fused with mCherry. Immunoblotting verified the efficient secretion of both fusion proteins from clonal reporter cell lines (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "c7aeb587-d4da-43a1-908c-c350823c4829",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C45",
+      "claim": "Treatment with brefeldin A results in intracellular accumulation of both PCSK9-eGFP and A1AT-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of ER-Golgi transport by treatment of these reporter cells with brefeldin A, an Arf1 inhibitor, resulted in intracellular accumulation of both PCSK9-eGFP and A1AT-mCherry (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "67d2c9f1-0fe0-43d4-9abb-7826ee0c1c48",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C46",
+      "claim": "CRISPR-mediated inhibition of LMAN1 results in intracellular accumulation of A1AT-mCherry with no effect on PCSK9-eGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-mediated inhibition of the ER cargo receptor for A1AT, LMAN1 (Zhang et al., 2011), resulted in intracellular accumulation of A1AT-mCherry with no effect on PCSK9-eGFP (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "fe389743-3f3e-4dd0-889e-b6317b82e56f",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C47",
+      "claim": "The four most enriched sgRNAs in the PCSK9-eGFP high cell population all targeted SURF4.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the four most enriched sgRNAs in the PCSK9-eGFP high cell population all targeted the same gene, SURF4 (Figure 2C, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the CRISPR screen sequencing data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "dacfce6a-191a-4d60-9bf1-fd75fdc1ac11",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C48",
+      "claim": "The enrichment of SURF4-targeting sgRNA in eGFP-high cells was consistent across each of 4 biologic replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of SURF4-targeting sgRNA in eGFP-high cells was consistent across each of 4 biologic replicates and, after adjustment for multiple hypothesis testing, statistically significant for 5 of the 6 SURF4-targeting sgRNAs in the library (p<10\u221213 \u2013 10\u221236, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the sequencing data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "2affe79b-928b-443e-8fb4-120d74989a48",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C49",
+      "claim": "5 of the 6 SURF4-targeting sgRNAs in the library showed statistically significant enrichment (p<10\u221213 \u2013 10\u221236).",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of SURF4-targeting sgRNA in eGFP-high cells was consistent across each of 4 biologic replicates and, after adjustment for multiple hypothesis testing, statistically significant for 5 of the 6 SURF4-targeting sgRNAs in the library (p<10\u221213 \u2013 10\u221236, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of the sequencing data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "d624bd73-76b4-47d7-92fa-bcfe36dd06b2",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C50",
+      "claim": "Gene-level analysis confirmed the strongest enrichment for SURF4-targeting sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-level analysis confirmed the strongest enrichment for SURF4-targeting sgRNA (Figure 2D, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MAGeCK analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "5e863d4b-f4ef-4522-a8fe-620dc9f36b88",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C51",
+      "claim": "Yeast Erv29 is an ER cargo receptor that mediates the secretion of glycosylated pro-alpha-factor.",
+      "claim_type": "EXPLICIT",
+      "source": "SURF4 is a homologue of yeast Erv29, an ER cargo receptor that mediates the secretion of glycosylated pro-alpha-factor (Belden and Barlowe, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast Erv29, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "64752ba8-34bf-49c7-bf88-c4edaf0f4e94",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C52",
+      "claim": "SURF4 was the only candidate identified by both proximity-dependent biotinylation and CRISPR functional screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of candidate PCSK9 cargo receptors identified by either CRISPR functional screening (Figure 2D) or proximity-dependent biotinylation (Figure 1F) demonstrated that SURF4 was the only candidate identified by both approaches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of the data from both approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "47aeea3e-8db4-48e2-863c-dfc32322ded3",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C53",
+      "claim": "All six SURF4-targeting sgRNAs resulted in accumulation of intracellular PCSK9-eGFP fluorescence with no effect on intracellular A1AT-mCherry fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter cells were transiently transfected with each of these 6 SURF4-targeting constructs and analyzed by FACS, with all six sgRNAs resulting in accumulation of intracellular PCSK9-eGFP fluorescence with no effect on intracellular A1AT-mCherry fluorescence (Figure 3B\u2013C) or induction of ER stress markers (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figures 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "590076f7-7c14-47cf-977b-f86936a4035c",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C54",
+      "claim": "SURF4-targeting sgRNAs do not induce ER stress markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter cells were transiently transfected with each of these 6 SURF4-targeting constructs and analyzed by FACS, with all six sgRNAs resulting in accumulation of intracellular PCSK9-eGFP fluorescence with no effect on intracellular A1AT-mCherry fluorescence (Figure 3B\u2013C) or induction of ER stress markers (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "5283e44d-96d0-4102-99a5-f80461427b1d",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C55",
+      "claim": "Six clonal cell lines carrying sequence-verified indels in SURF4 all exhibited specific PCSK9-eGFP accumulation with no effect on A1AT-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, six clonal cell lines carrying sequence-verified indels in either SURF4 exon 2 or exon 5 (Figure 3\u2014figure supplement 2) all exhibited specific PCSK9-eGFP accumulation with no effect on A1AT-mCherry (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3D and genotyping data in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "46365429-75cf-4a07-ab8b-937e54f006ab",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C56",
+      "claim": "The PCSK9-eGFP accumulation phenotype in SURF4-deficient cells was rescued by stable expression of wild-type SURF4 cDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was rescued by stable expression of wild-type SURF4 cDNA (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "46775364-e539-4cbd-8557-3dac15cccbca",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C57",
+      "claim": "Accumulation of PCSK9-eGFP in SURF4 mutant cells relative to wild-type cells was detectable within 4 hr of induction.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular accumulation of PCSK9 upon SURF4 disruption was confirmed in an independently-derived HEK293T cell line carrying an inducible PCSK9-eGFP allele. Accumulation of PCSK9-eGFP in SURF4 mutant cells relative to wild-type cells was detectable within 4 hr of induction (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time course data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "534c6cbf-3dca-41f8-89f5-1370f72bc61a",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C58",
+      "claim": "None of the sgRNA targeting the 21 additional genes with potentially significant enrichment scores resulted in a significant effect specifically on PCSK9-eGFP fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "PCSK9-eGFP-2A-A1AT-mCherry reporter cells were transduced with individual lentiviral CRISPR constructs targeting each of these genes and analyzed by FACS. None of the sgRNA targeting these additional genes were found to result in a significant effect specifically on PCSK9-eGFP fluorescence (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "f8922f18-2fc3-41c0-9a3e-d56f3e3e90df",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C59",
+      "claim": "Within the statistical power of the screen, SURF4 is the single gene out of ~19,000 human genes whose inactivation results in specific intracellular retention of PCSK9 in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, within the statistical power of our screen, SURF4 emerges as the single gene out of the ~19,000 human genes targeted by the GeCKOv2 library (Sanjana et al., 2014) whose inactivation results in specific intracellular retention of PCSK9 in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the CRISPR screen results and validation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "8ca23175-255a-4865-bc8d-e152945ffd69",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C60",
+      "claim": "FLAG-tagged SURF4 demonstrates similar rescue of PCSK9-eGFP fluorescence in SURF4-deficient cells compared to native, untagged SURF4.",
+      "claim_type": "EXPLICIT",
+      "source": "FLAG-tagged SURF4 demonstrated similar rescue of PCSK9-eGFP fluorescence in SURF4-deficient cells compared to native, untagged SURF4 (Figure 3E), demonstrating that this tag does not interfere with SURF4 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "122d5b38-0441-4f45-ac6a-aae4e7cc8b06",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C61",
+      "claim": "The FLAG tag on SURF4 does not interfere with SURF4 function.",
+      "claim_type": "EXPLICIT",
+      "source": "FLAG-tagged SURF4 demonstrated similar rescue of PCSK9-eGFP fluorescence in SURF4-deficient cells compared to native, untagged SURF4 (Figure 3E), demonstrating that this tag does not interfere with SURF4 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the rescue experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "6784c947-fe82-4a1a-9171-f0d9bc275ea7",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C62",
+      "claim": "Immunofluorescence of FLAG-SURF4 demonstrated colocalization with a marker of the ER and, to a lesser extent, the ERGIC compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Mitrovic et al., 2008; Saegusa et al., 2018) and compatible with a role for SURF4 as an ER cargo receptor, immunofluorescence of FLAG-SURF4 demonstrated colocalization with a marker of the ER and, to a lesser extent, the ERGIC compartment (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figures 4A-B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "5196bae9-f47d-4aa7-9b9e-8f2a38a2cae8",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C63",
+      "claim": "FLAG-tagged SURF4 and GFP-tagged PCSK9 co-immunoprecipitate from cell lysates prepared in the presence of the chemical crosslinker dithiobis(succinimidyl propionate).",
+      "claim_type": "EXPLICIT",
+      "source": "FLAG-tagged SURF4 and GFP-tagged PCSK9 were found to co-immunoprecipitate from cell lysates prepared in the presence of the chemical crosslinker dithiobis(succinimidyl propionate), with no detectable nonspecific co-immunoprecipitation for several control ER and ERGIC-localized proteins (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "f2627d0e-6143-4e5e-b7bb-9db3fee7184b",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C64",
+      "claim": "There is no detectable nonspecific co-immunoprecipitation of SURF4 with several control ER and ERGIC-localized proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "FLAG-tagged SURF4 and GFP-tagged PCSK9 were found to co-immunoprecipitate from cell lysates prepared in the presence of the chemical crosslinker dithiobis(succinimidyl propionate), with no detectable nonspecific co-immunoprecipitation for several control ER and ERGIC-localized proteins (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "3cfdb355-32d6-4529-a134-69950a2ac748",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C65",
+      "claim": "SURF4-deficient cells exhibit a significantly decreased ratio of extracellular to intracellular PCSK9-eGFP fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence assays on both extracellular conditioned media and intracellular lysates prepared from both wild-type and SURF4-deficient cells demonstrated a significantly decreased ratio of extracellular to intracellular PCSK9-eGFP fluorescence (Figure 5A), consistent with a defect in extracellular secretion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "6c0e29f5-d8c9-43a3-8ca1-f5f755126211",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C66",
+      "claim": "Pulse-chase labeling confirmed a decreased rate of PCSK9-eGFP secretion into the conditioned media in SURF4-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulse-chase labeling confirmed a decreased rate of PCSK9-eGFP secretion into the conditioned media in SURF4-deficient cells (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pulse-chase data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "0bdfd20e-163c-42cc-a1dc-e42fa134f819",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C67",
+      "claim": "Untagged PCSK9 exhibits a significant decrease in the ratio of extracellular to intracellular levels in SURF4-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the reduced secretion observed above for the PCSK9-eGFP fusion, untagged PCSK9 also exhibited a significant decrease in the ratio of extracellular to intracellular levels in SURF4-deficient cells that was rescued by expression of a SURF4 transgene (Figure 5B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data shown in Figures 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "75a40be7-dbea-4789-aaf1-d364c2e93f3c",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C68",
+      "claim": "The decreased secretion of untagged PCSK9 in SURF4-deficient cells was rescued by expression of a SURF4 transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the reduced secretion observed above for the PCSK9-eGFP fusion, untagged PCSK9 also exhibited a significant decrease in the ratio of extracellular to intracellular levels in SURF4-deficient cells that was rescued by expression of a SURF4 transgene (Figure 5B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data shown in Figures 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "1d739a79-0165-45eb-a18e-692233117cbb",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C69",
+      "claim": "PCSK9 mRNA levels are equivalent in wild-type and SURF4-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative PCR demonstrated equivalent levels of PCSK9 mRNA levels in wild-type and SURF4-deficient cells (Figure 5D), excluding an indirect effect on PCSK9 transcription or mRNA stability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "9cd1476c-f2e4-4922-ae79-877bd96d75ee",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C70",
+      "claim": "SURF4 deficiency does not indirectly affect PCSK9 transcription or mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative PCR demonstrated equivalent levels of PCSK9 mRNA levels in wild-type and SURF4-deficient cells (Figure 5D), excluding an indirect effect on PCSK9 transcription or mRNA stability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the qPCR data showing equivalent mRNA levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "cf7cfd0d-08e3-4f32-b19b-74d0810cd6a4",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C71",
+      "claim": "PCSK9-eGFP fluorescence demonstrated increased colocalization with an ER marker in SURF4-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the compartmental localization of intracellular PCSK9, we performed live cell fluorescence microscopy on wild-type and SURF4-deficient cells. PCSK9-eGFP fluorescence demonstrated increased colocalization with an ER marker in SURF4-deficient cells, consistent with ER retention (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell microscopy data shown in Figures 5E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "c4798472-5693-4e9b-b1b6-7789ed6091eb",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C72",
+      "claim": "The increased colocalization of PCSK9-eGFP with ER markers in SURF4-deficient cells is consistent with ER retention.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the compartmental localization of intracellular PCSK9, we performed live cell fluorescence microscopy on wild-type and SURF4-deficient cells. PCSK9-eGFP fluorescence demonstrated increased colocalization with an ER marker in SURF4-deficient cells, consistent with ER retention (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the colocalization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "607fb87d-9c27-424e-b55e-06ba06f92daf",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C73",
+      "claim": "The predominant form of native PCSK9 in SURF4-deficient cells is sensitive to endoglycosidase H.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the predominant form of native PCSK9 in SURF4-deficient cells was sensitive to endoglycosidase H (Figure 5G\u2013H, Figure 5\u2014figure supplement 2), consistent with its localization in the ER (Freeze and Kranz, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by endoH sensitivity assay data shown in Figures 5G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "06ed4dcf-13f3-483f-892d-c95ff2f8ca24",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C74",
+      "claim": "EndoH sensitivity of PCSK9 in SURF4-deficient cells is consistent with its localization in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the predominant form of native PCSK9 in SURF4-deficient cells was sensitive to endoglycosidase H (Figure 5G\u2013H, Figure 5\u2014figure supplement 2), consistent with its localization in the ER (Freeze and Kranz, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the known relationship between endoH sensitivity and ER localization, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "447e0ea2-4fe1-425c-b235-56951d21afe7",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C75",
+      "claim": "The relative intensity of endoH-resistant PCSK9 was unchanged in SURF4-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative intensity of endoH-resistant PCSK9 was unchanged, consistent with continued normal post-Golgi transport and secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the endoH sensitivity assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "4b894b87-de44-4201-a0b9-3ee8e7345278",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C76",
+      "claim": "Unchanged endoH-resistant PCSK9 levels are consistent with continued normal post-Golgi transport and secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative intensity of endoH-resistant PCSK9 was unchanged, consistent with continued normal post-Golgi transport and secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the endoH sensitivity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "545a6f6e-47f5-410e-aff1-ae10ef3f2217",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C77",
+      "claim": "SURF4 promotes the efficient ER exit and secretion of PCSK9.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively these results indicate that SURF4 promotes the efficient ER exit and secretion of PCSK9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the collective experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "62517667-a055-41ec-a823-7cb5366c3cd6",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C78",
+      "claim": "It is estimated that ~3000 human proteins are extracellularly secreted through the COPII pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that ~3000 human proteins are extracellularly secreted through the COPII pathway (Uhl\u00e9n et al., 2015), though few ER cargo receptors for these proteins have been identified and the proportion of secreted proteins that depend upon cargo receptor interactions is unknown (Barlowe and Helenius, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the field supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "92c9c437-a4eb-43f9-923d-7e0c66e4885f",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C79",
+      "claim": "Few ER cargo receptors for secreted proteins have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that ~3000 human proteins are extracellularly secreted through the COPII pathway (Uhl\u00e9n et al., 2015), though few ER cargo receptors for these proteins have been identified and the proportion of secreted proteins that depend upon cargo receptor interactions is unknown (Barlowe and Helenius, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "00b2a66c-ba62-4bfd-bcb6-ebaf22baf575",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C80",
+      "claim": "The proportion of secreted proteins that depend upon cargo receptor interactions is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that ~3000 human proteins are extracellularly secreted through the COPII pathway (Uhl\u00e9n et al., 2015), though few ER cargo receptors for these proteins have been identified and the proportion of secreted proteins that depend upon cargo receptor interactions is unknown (Barlowe and Helenius, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "6157c114-8688-4e21-bb35-f262b80eb634",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C81",
+      "claim": "The findings suggest that SURF4 actively recruits PCSK9 into COPII vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that SURF4 actively recruits PCSK9 into COPII vesicles, providing additional support for the cargo capture model of protein secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "609b709d-d1e3-43d5-b8c8-b7530c7b14a4",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C82",
+      "claim": "The findings provide additional support for the cargo capture model of protein secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that SURF4 actively recruits PCSK9 into COPII vesicles, providing additional support for the cargo capture model of protein secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings in the context of existing models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "15d379ac-9eb5-405c-a26a-f46a809aecd7",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C83",
+      "claim": "SURF4-deleted cells exhibit only a partial defect in PCSK9 secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "SURF4-deleted cells exhibit only a partial defect in PCSK9 secretion and whether the residual SURF4-independent secretion is due to bulk flow, or interactions with alternative ER cargo receptors, remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "c0feae6d-9bfa-4adc-9df1-1dcf90be398a",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C84",
+      "claim": "Whether the residual SURF4-independent secretion is due to bulk flow or interactions with alternative ER cargo receptors remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "SURF4-deleted cells exhibit only a partial defect in PCSK9 secretion and whether the residual SURF4-independent secretion is due to bulk flow, or interactions with alternative ER cargo receptors, remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the current findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "77c810ce-87ee-4205-a374-c255445eb251",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C85",
+      "claim": "BirA*-mediated proximity-dependent biotinylation may efficiently label ER cargo receptors but lack the spatiotemporal resolution to distinguish incorporation within the same COPII vesicle from specific cargo-cargo receptor interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that BirA*-mediated proximity-dependent biotinylation may efficiently label ER cargo receptors, but lack the spatiotemporal resolution to distinguish incorporation within the same COPII vesicle from specific cargo \u2013 cargo receptor interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the BioID data showing labeling of both SURF4 and LMAN1 by multiple cargoes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "d67cb26f-5a49-4df9-aeb5-8b67c0b86c78",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C86",
+      "claim": "The discovery of the PCSK9-SURF4 interaction demonstrates the feasibility of identifying ER cargo receptors by functional genomic screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery of the PCSK9-SURF4 interaction demonstrates the feasibility of identifying ER cargo receptors by functional genomic screening and suggests that pooled CRISPR screening may prove to be a generalizable strategy applicable to the thousands of other secreted proteins for which a cargo receptor has not yet been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the successful application of the method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "f15b3394-977a-4105-8f67-d16e388753d0",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C87",
+      "claim": "Pooled CRISPR screening may prove to be a generalizable strategy applicable to the thousands of other secreted proteins for which a cargo receptor has not yet been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery of the PCSK9-SURF4 interaction demonstrates the feasibility of identifying ER cargo receptors by functional genomic screening and suggests that pooled CRISPR screening may prove to be a generalizable strategy applicable to the thousands of other secreted proteins for which a cargo receptor has not yet been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader applicability of the method.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "21c28650-cb71-4761-94ab-59975b06bd28",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C88",
+      "claim": "A limitation of the approach is its reliance on an immortalized cell line with the potential for accumulated somatic genetic and epigenetic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of our approach is its reliance on an immortalized cell line with the potential for accumulated somatic genetic and epigenetic changes, as well as restriction to a single cell-type gene expression program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the methodological limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "179d4a4e-c9fb-4677-a210-97f9d369b6be",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C89",
+      "claim": "A limitation of the approach is its restriction to a single cell-type gene expression program.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of our approach is its reliance on an immortalized cell line with the potential for accumulated somatic genetic and epigenetic changes, as well as restriction to a single cell-type gene expression program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the methodological limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "79b5608f-b2a5-406e-b99d-b65e9a7576e3",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C90",
+      "claim": "LMAN1 cargoes appear to retain their cargo receptor-dependence for secretion in a variety of distantly related cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Though LMAN1 cargoes appear to retain their cargo receptor-dependence for secretion in a variety of distantly related cell types (Nyfeler et al., 2008; Zhang et al., 2005; Nyfeler et al., 2006), the same many not apply to SURF4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies of LMAN1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "bf8a4bc0-bc70-45f6-b25e-40d4de38281e",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C91",
+      "claim": "The cargo receptor-dependence observed for LMAN1 may not apply to SURF4.",
+      "claim_type": "EXPLICIT",
+      "source": "Though LMAN1 cargoes appear to retain their cargo receptor-dependence for secretion in a variety of distantly related cell types (Nyfeler et al., 2008; Zhang et al., 2005; Nyfeler et al., 2006), the same many not apply to SURF4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the generalizability of the SURF4 findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "0c7c74d5-4807-4085-aea8-5599e7fabc60",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C92",
+      "claim": "SEC24A and/or SEC24B were previously shown to be required for efficient PCSK9 secretion in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, SEC24A and/or SEC24B were previously shown to be required for efficient PCSK9 secretion in mice (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior mouse studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "7707172c-bdc4-4531-b8ce-1b60a7868a81",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C93",
+      "claim": "SEC24A and SEC24B were not identified in the current screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Though these genes were not identified in the current screen, this observation could be explained by the 5 \u2013 10 fold greater expression of SEC24A than SEC24B in mouse liver, in contrast to the similar expression of both paralogs in HEK293T cells (Sultan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "0a2282e5-a1ab-45fe-81a6-50d7f959694a",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C94",
+      "claim": "The lack of SEC24A/B identification in the screen could be explained by the similar expression of both paralogs in HEK293T cells, in contrast to the 5-10 fold greater expression of SEC24A than SEC24B in mouse liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Though these genes were not identified in the current screen, this observation could be explained by the 5 \u2013 10 fold greater expression of SEC24A than SEC24B in mouse liver, in contrast to the similar expression of both paralogs in HEK293T cells (Sultan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about why SEC24A/B were not identified, supported by citation about expression levels.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "4ea4b8ac-2fe7-4063-a590-ec140c1e5f29",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C95",
+      "claim": "Sortilin has previously been implicated in post-Golgi transport of PCSK9.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to a cargo receptor facilitating ER exit, our screening strategy should also survey other segments of the secretory pathway. Though sortilin has previously been implicated in post-Golgi transport of PCSK9 (Gustafsen et al., 2014), sortilin dependence was not confirmed in a subsequent study (Butkinaree et al., 2015) and also was not detected in the current screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "8ee73799-bd90-4efb-96f9-043b8710dea0",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C96",
+      "claim": "Sortilin dependence for PCSK9 transport was not confirmed in a subsequent study.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to a cargo receptor facilitating ER exit, our screening strategy should also survey other segments of the secretory pathway. Though sortilin has previously been implicated in post-Golgi transport of PCSK9 (Gustafsen et al., 2014), sortilin dependence was not confirmed in a subsequent study (Butkinaree et al., 2015) and also was not detected in the current screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a subsequent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "4e672b34-07b9-409f-9637-9ea52539d147",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C97",
+      "claim": "Sortilin was not detected in the current screen.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to a cargo receptor facilitating ER exit, our screening strategy should also survey other segments of the secretory pathway. Though sortilin has previously been implicated in post-Golgi transport of PCSK9 (Gustafsen et al., 2014), sortilin dependence was not confirmed in a subsequent study (Butkinaree et al., 2015) and also was not detected in the current screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "bb46617d-db77-49a6-8f4e-38b927b7ae93",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C98",
+      "claim": "The data do not exclude a broader role for sortilin that also affected A1AT secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data do not exclude a broader role for sortilin that also affected A1AT secretion, consistent with its contribution to the secretion of other proteins, including gamma-interferon (Herda et al., 2012) and ApoB-100 (Kjolby et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the limitations of the screen design, supported by citations about sortilin's role with other proteins.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "5eb35a1c-0886-438a-801a-61c259a90a28",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C99",
+      "claim": "Sortilin contributes to the secretion of gamma-interferon.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data do not exclude a broader role for sortilin that also affected A1AT secretion, consistent with its contribution to the secretion of other proteins, including gamma-interferon (Herda et al., 2012) and ApoB-100 (Kjolby et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "6940e44b-9d0a-4b5f-98d5-efbc56f72bcd",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C100",
+      "claim": "Sortilin contributes to the secretion of ApoB-100.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data do not exclude a broader role for sortilin that also affected A1AT secretion, consistent with its contribution to the secretion of other proteins, including gamma-interferon (Herda et al., 2012) and ApoB-100 (Kjolby et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "816e7e79-eb3d-46a4-a500-901068173d5c",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C101",
+      "claim": "Erv29p was originally identified by proteomic analysis of purified COPII vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast homologue of SURF4, Erv29p, was originally identified by proteomic analysis of purified COPII vesicles (Otte et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original discovery study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "1c35023d-a4f6-4bcf-b9f7-a8b12acbdc77",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C102",
+      "claim": "Erv29p promotes the secretion and concentrative sorting of gp\u03b1f into COPII vesicles through interaction with a hydrophobic I-L-V signal in gp\u03b1f.",
+      "claim_type": "EXPLICIT",
+      "source": "Erv29p promotes the secretion and concentrative sorting of the yeast mating factor gp\u03b1f into COPII vesicles through interaction with a hydrophobic I-L-V signal in gp\u03b1f (Belden and Barlowe, 2001; Malkus et al., 2002; Otte and Barlowe, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies of Erv29p function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "8fd0a8da-624c-4a09-9714-0f7b67901f5b",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C103",
+      "claim": "In HeLa cells, SURF4 has been shown to cycle in the early secretory pathway and to interact with LMAN1 and members of the p24 family.",
+      "claim_type": "EXPLICIT",
+      "source": "In HeLa cells, SURF4 has been shown to cycle in the early secretory pathway and to interact with LMAN1 and members of the p24 family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SURF4 from prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "6912f90e-60be-4a42-bcaa-f2f28ae5b9f3",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C104",
+      "claim": "RNAi-mediated knockdown of SURF4 alone resulted in no overt phenotype in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi-mediated knockdown of SURF4 alone resulted in no overt phenotype, though when combined with knockdown of LMAN1 caused morphologic changes to the ERGIC and Golgi compartments (Mitrovic et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior RNAi studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "460dda99-edda-4111-a8f7-73992cca4027",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C105",
+      "claim": "Combined knockdown of SURF4 and LMAN1 caused morphologic changes to the ERGIC and Golgi compartments in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi-mediated knockdown of SURF4 alone resulted in no overt phenotype, though when combined with knockdown of LMAN1 caused morphologic changes to the ERGIC and Golgi compartments (Mitrovic et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior RNAi studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "ebc59dbc-4ba5-4cca-a8bf-d7584ebda351",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C106",
+      "claim": "SURF4 has been shown to interact with STIM1 and modulate store-operated calcium entry.",
+      "claim_type": "EXPLICIT",
+      "source": "SURF4 has also been shown to interact with STIM1 and modulate store-operated calcium entry, though the mechanism underlying this observation is unclear (Fujii et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "19c2a96e-4563-433d-92f1-5e6f1eb77a58",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C107",
+      "claim": "The mechanism underlying SURF4's modulation of store-operated calcium entry is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "SURF4 has also been shown to interact with STIM1 and modulate store-operated calcium entry, though the mechanism underlying this observation is unclear (Fujii et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "804545d8-3c08-48bc-91a5-cb43431a4bed",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C108",
+      "claim": "The screen did not identify significant enrichment of sgRNAs targeting p24 proteins, LMAN1, or STIM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our screen did not identify significant enrichment of sgRNAs targeting p24 proteins, LMAN1, or STIM1, suggesting that these interactions are not required for efficient PCSK9 secretion in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "9cd3caaf-5b22-47cd-8be3-cfd400ea6d94",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C109",
+      "claim": "Interactions with p24 proteins, LMAN1, and STIM1 are not required for efficient PCSK9 secretion in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our screen did not identify significant enrichment of sgRNAs targeting p24 proteins, LMAN1, or STIM1, suggesting that these interactions are not required for efficient PCSK9 secretion in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the screen results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "db25c63c-dd26-40f4-922b-7c3863a82472",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C110",
+      "claim": "The findings raise the possibility that SURF4 could represent an additional novel therapeutic target for the treatment of hypercholesterolemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with the marked reductions in plasma cholesterol associated with genetic or therapy-induced reductions in plasma PCSK9 (ODYSSEY LONG TERM Investigators et al., 2015), our findings raise the possibility that SURF4 could represent an additional novel therapeutic target for the treatment of hypercholesterolemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential therapeutic applications, based on the findings and prior clinical data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "271c7b75-c6fe-4ce3-98c0-aeda93910be8",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C111",
+      "claim": "SURF4 has not been identified in genome-wide association studies for human lipid phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SURF4 has not been identified in genome-wide association studies for human lipid phenotypes (Global Lipids Genetics Consortium et al., 2013; Lange et al., 2015), suggesting that partial reduction of SURF4 expression does not limit PCSK9 secretion, consistent with the normal PCSK9 secretion and cholesterol profiles of Sec24A+/- mice (Chen et al., 2013) and the normal levels of LMAN1 cargoes (coagulation factors V, VIII, and A1AT) in LMAN1+/- mice (Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to GWAS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "6efecbd4-749a-4031-968f-772b0c10c4b6",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C112",
+      "claim": "Partial reduction of SURF4 expression does not limit PCSK9 secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SURF4 has not been identified in genome-wide association studies for human lipid phenotypes (Global Lipids Genetics Consortium et al., 2013; Lange et al., 2015), suggesting that partial reduction of SURF4 expression does not limit PCSK9 secretion, consistent with the normal PCSK9 secretion and cholesterol profiles of Sec24A+/- mice (Chen et al., 2013) and the normal levels of LMAN1 cargoes (coagulation factors V, VIII, and A1AT) in LMAN1+/- mice (Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the lack of GWAS associations and mouse heterozygote data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "7d02f8be-6771-4f29-9037-ab89e9bbfb03",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C113",
+      "claim": "Sec24A+/- mice have normal PCSK9 secretion and cholesterol profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SURF4 has not been identified in genome-wide association studies for human lipid phenotypes (Global Lipids Genetics Consortium et al., 2013; Lange et al., 2015), suggesting that partial reduction of SURF4 expression does not limit PCSK9 secretion, consistent with the normal PCSK9 secretion and cholesterol profiles of Sec24A+/- mice (Chen et al., 2013) and the normal levels of LMAN1 cargoes (coagulation factors V, VIII, and A1AT) in LMAN1+/- mice (Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior mouse studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "65e3b39e-a525-43b0-bb6f-14d74112f51b",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C114",
+      "claim": "LMAN1+/- mice have normal levels of LMAN1 cargoes (coagulation factors V, VIII, and A1AT).",
+      "claim_type": "EXPLICIT",
+      "source": "However, SURF4 has not been identified in genome-wide association studies for human lipid phenotypes (Global Lipids Genetics Consortium et al., 2013; Lange et al., 2015), suggesting that partial reduction of SURF4 expression does not limit PCSK9 secretion, consistent with the normal PCSK9 secretion and cholesterol profiles of Sec24A+/- mice (Chen et al., 2013) and the normal levels of LMAN1 cargoes (coagulation factors V, VIII, and A1AT) in LMAN1+/- mice (Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior mouse studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "75b43c19-3cab-4b70-b4de-bac0cff505c5",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C115",
+      "claim": "A loss-of-function SURF4 variant (p.Gln185Ter) is present in ~1:500 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Though a loss-of-function variant (p.Gln185Ter) is present in ~1:500 individuals (Exome Aggregation Consortium et al., 2016), no human diseases have been associated with SURF4 deficiency and no mouse models for Surf4 deletion have been reported (Online Mendelian Inheritance in Man, OMIM, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the ExAC database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "48b78b59-8b3f-40cc-8a7c-3e4b715e7f40",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C116",
+      "claim": "No human diseases have been associated with SURF4 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Though a loss-of-function variant (p.Gln185Ter) is present in ~1:500 individuals (Exome Aggregation Consortium et al., 2016), no human diseases have been associated with SURF4 deficiency and no mouse models for Surf4 deletion have been reported (Online Mendelian Inheritance in Man, OMIM, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to OMIM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "b99a8044-f0f4-4d07-b71d-5026198b549e",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C117",
+      "claim": "No mouse models for Surf4 deletion have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Though a loss-of-function variant (p.Gln185Ter) is present in ~1:500 individuals (Exome Aggregation Consortium et al., 2016), no human diseases have been associated with SURF4 deficiency and no mouse models for Surf4 deletion have been reported (Online Mendelian Inheritance in Man, OMIM, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to OMIM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "f337c2b3-8d6d-466c-a9a3-9a4212dfecc7",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C118",
+      "claim": "Erv29 is required for gp\u03b1f secretion in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Erv29, the SURF4 homolog in yeast, is required for gp\u03b1f secretion (Belden and Barlowe, 2001), with a recent report demonstrating a role for the C. elegans homolog (SFT-4) in facilitating the secretion of yolk lipoproteins, as well as mammalian SURF4 in mediating apolipoprotein B secretion in HepG2 cells (Saegusa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior yeast studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "2086f745-81a0-4d7c-a6e7-e0a2ed95a1b1",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C119",
+      "claim": "The C. elegans SURF4 homolog (SFT-4) facilitates the secretion of yolk lipoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Erv29, the SURF4 homolog in yeast, is required for gp\u03b1f secretion (Belden and Barlowe, 2001), with a recent report demonstrating a role for the C. elegans homolog (SFT-4) in facilitating the secretion of yolk lipoproteins, as well as mammalian SURF4 in mediating apolipoprotein B secretion in HepG2 cells (Saegusa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "03873744-ba62-4c27-b135-3adb69e1a1a2",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C120",
+      "claim": "Mammalian SURF4 mediates apolipoprotein B secretion in HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Erv29, the SURF4 homolog in yeast, is required for gp\u03b1f secretion (Belden and Barlowe, 2001), with a recent report demonstrating a role for the C. elegans homolog (SFT-4) in facilitating the secretion of yolk lipoproteins, as well as mammalian SURF4 in mediating apolipoprotein B secretion in HepG2 cells (Saegusa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "8e500046-9f5d-48d1-bd3b-12cdc2ba932c",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "claim_id": "C121",
+      "claim": "The findings suggest a potentially broader role for SURF4 in the complex regulation of mammalian lipid homeostasis in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter result, together with our findings, suggest a potentially broader role for SURF4 in the complex regulation of mammalian lipid homeostasis in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader biological role of SURF4 based on the current findings and prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A proximity-dependent biotinylation approach using BirA* fusion proteins identified 35 candidate ER cargo receptors that interact with both PCSK9 and COPII components SAR1A/B, with the majority being integral membrane proteins localized to the ER.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C41 describe the BioID methodology and results, supported by mass spectrometry data (Figure 1, Supplementary file 1). The approach successfully identified candidate proteins with appropriate characteristics (membrane proteins, ER localization), though the authors acknowledge limitations in spatiotemporal resolution (C38, C85).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "26080640-2893-402a-aaf4-31c818ae995f",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A genome-scale CRISPR screen using a PCSK9-eGFP/A1AT-mCherry dual reporter system identified SURF4 as the single gene whose inactivation specifically causes intracellular retention of PCSK9 in HEK293T cells, with 5 of 6 SURF4-targeting sgRNAs showing highly significant enrichment (p<10^-13 to 10^-36).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C59 describe the CRISPR screen design, execution, and results. The data show robust statistical significance across 4 biological replicates (C48-C49), with SURF4 being the only gene identified by both BioID and CRISPR approaches (C52). The screen design with dual reporters provides internal controls (C45-C46), and validation of 21 additional candidates showed no specific effects (C58).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "75c9af1d-534a-4129-a382-24592aac700e",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SURF4 deletion causes specific intracellular accumulation of PCSK9-eGFP without affecting A1AT-mCherry or inducing ER stress, as validated by transient transfection of 6 independent sgRNAs, 6 clonal cell lines with sequence-verified indels, rescue experiments, and time-course analysis showing accumulation within 4 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C61 provide extensive validation of the SURF4 phenotype using multiple orthogonal approaches (transient transfection, clonal lines, rescue experiments, time-course). The specificity for PCSK9 over A1AT (C53, C55) and lack of ER stress induction (C54) support a direct role. The rescue with both tagged and untagged SURF4 (C56, C60-C61) confirms specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "aa127a3e-abd4-4884-8b9a-ad66f90114e2",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SURF4 localizes to the early secretory pathway, showing colocalization with ER markers and to a lesser extent with ERGIC markers by immunofluorescence microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C62 are supported by immunofluorescence data (Figure 4A-B) showing colocalization with calnexin (ER) and LMAN1 (ERGIC). This localization is consistent with prior reports (C62 cites Mitrovic et al., 2008; Saegusa et al., 2018) and appropriate for an ER cargo receptor function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "174c379b-c946-4908-8a58-801a7df4a22e",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SURF4 physically interacts with PCSK9, as demonstrated by co-immunoprecipitation experiments using chemical crosslinking, with no detectable nonspecific binding to control ER and ERGIC proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C63-C64 are supported by co-IP data (Figure 4D) showing specific interaction between FLAG-SURF4 and PCSK9-eGFP in the presence of crosslinker. The requirement for crosslinking suggests transient interactions consistent with cargo receptor function. Controls showing no binding to other ER/ERGIC proteins (C64) support specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "a2f1b2bc-db92-4301-91b2-d6c892a35434",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SURF4 deletion results in decreased extracellular secretion and ER accumulation of both PCSK9-eGFP and untagged PCSK9, as evidenced by decreased extracellular/intracellular ratios, increased ER colocalization, and endoH sensitivity, without affecting PCSK9 mRNA levels or post-Golgi transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C77 provide comprehensive characterization of the secretion defect using multiple assays: fluorescence measurements (C65), pulse-chase (C66), immunoblotting (C67-C68), qPCR (C69-C70), microscopy (C71-C72), and endoH sensitivity (C73-C74). The data consistently show ER retention without affecting transcription or post-Golgi steps (C75-C76), supporting the conclusion that SURF4 promotes efficient ER exit (C77).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "a3168e59-0ae0-4a42-987b-a9244bad990a",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SURF4 functions as an ER cargo receptor mediating efficient cellular secretion of PCSK9, actively recruiting PCSK9 into COPII vesicles and providing support for the cargo capture model of protein secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C8, C81-C82 represent the main conclusions of the study. These are well-supported by the collective evidence from CRISPR screening, localization studies, physical interaction data, and secretion assays. The interpretation that SURF4 actively recruits PCSK9 (C81) is reasonable given the data, though the authors acknowledge partial secretion remains in SURF4-deleted cells (C83).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "77ce8b28-f018-466c-8b5e-e98b13013a6c",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SURF4-deleted cells exhibit only a partial defect in PCSK9 secretion, with the mechanism of residual SURF4-independent secretion (bulk flow vs. alternative receptors) remaining unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 acknowledge an important limitation of the findings. The data clearly show reduced but not abolished secretion in SURF4-deficient cells (Figures 5A-C), indicating SURF4 is not absolutely required. The authors appropriately note this uncertainty about the mechanism of residual secretion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "b645a16c-c1a9-4ef1-bfda-b9bd033a644a",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "BirA*-mediated proximity-dependent biotinylation efficiently labels ER cargo receptors but lacks spatiotemporal resolution to distinguish incorporation within the same COPII vesicle from specific cargo-receptor interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by the observation that both SURF4 and LMAN1 were labeled by multiple cargoes (C37), suggesting the method detects proximity within COPII vesicles rather than specific cargo-receptor pairs. This is a reasonable interpretation of the BioID data limitations and explains why CRISPR screening was necessary.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "6ecf1c22-d455-44dc-87c0-58b82690ce43",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The discovery of the PCSK9-SURF4 interaction demonstrates the feasibility of identifying ER cargo receptors by functional genomic screening, suggesting pooled CRISPR screening may be a generalizable strategy for other secreted proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 are supported by the successful identification of SURF4 using the combined approach. However, C87 is speculative about broader applicability. The authors appropriately acknowledge limitations including cell-type specificity (C88-C89) and note that LMAN1 cargo receptor-dependence may be more generalizable than SURF4 (C90-C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "19016840-1774-45a1-a923-b34d631043b7",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The approach has limitations including reliance on an immortalized cell line and restriction to a single cell-type gene expression program, with uncertainty about whether SURF4-dependence generalizes across cell types as observed for LMAN1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91 appropriately discuss methodological limitations. The concern about cell-type specificity is valid and supported by citations showing LMAN1 functions across cell types (C90). The speculation that SURF4 may not generalize similarly (C91) is reasonable given the lack of data in other cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "6308ab75-d792-48a8-a211-152900fd0bb0",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SEC24A/B were not identified in the current screen despite prior mouse studies showing requirement for PCSK9 secretion, potentially explained by differential expression patterns between mouse liver and HEK293T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 address an apparent discrepancy with prior work. The explanation based on differential expression of SEC24 paralogs (C94, citing Sultan et al., 2008) is plausible, though speculative. The observation that SEC24A/B were not hits (C93) is factual based on the screen data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "59f30a77-9a8f-4970-a321-7a69d7d5e096",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sortilin was not detected in the current screen, consistent with a subsequent study that did not confirm sortilin dependence for PCSK9 transport, though a broader role affecting both PCSK9 and A1AT secretion cannot be excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 discuss sortilin in the context of prior conflicting reports. The observation that sortilin was not detected (C97) is factual. The interpretation that the screen design might miss factors affecting both reporters (C98) is reasonable and appropriately cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "7f774391-8bb9-4956-812f-c12ceeaa85ac",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SURF4 could represent a novel therapeutic target for hypercholesterolemia, though the absence of SURF4 in GWAS for lipid phenotypes suggests partial reduction does not limit PCSK9 secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C110-C112 discuss therapeutic implications. While the logic connecting SURF4 to cholesterol regulation is sound (C110), the GWAS data (C111) and heterozygote mouse data (C112-C114) suggest haploinsufficiency is not limiting. This raises questions about whether SURF4 inhibition would be therapeutically effective. The speculation (C110) is reasonable but requires in vivo validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "db4a9983-ccdb-4254-8ded-2b8694f8470d",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A loss-of-function SURF4 variant (p.Gln185Ter) is present in ~1:500 individuals, yet no human diseases have been associated with SURF4 deficiency and no mouse knockout models have been reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C117 are factual statements supported by citations to ExAC (C115) and OMIM (C116-C117). This observation is important for understanding the physiological role of SURF4 and suggests complete loss may be tolerated, though the functional consequences of this variant are not characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "9f468acb-2957-4210-bb42-66794b5446fa",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SURF4 homologs across species (yeast Erv29, C. elegans SFT-4, mammalian SURF4) mediate secretion of diverse cargoes including yeast gp\u03b1f, yolk lipoproteins, and apolipoprotein B, suggesting a broader role in mammalian lipid homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C121 synthesize findings across species, all supported by citations. The speculation about broader roles in lipid homeostasis (C121) is reasonable given the current findings with PCSK9 and prior work with ApoB (C120), though this requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "7f0719d7-831c-4170-8404-d639c6f2c729",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "PCSK9 is a secreted proprotein convertase that regulates LDL receptor levels and plasma cholesterol, with genetic variants affecting cardiovascular disease risk and therapeutic inhibitors showing clinical efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C15 provide background on PCSK9 biology and clinical relevance, all supported by appropriate citations to established literature. These are well-established facts that provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "c22660a3-e4af-401a-934b-6c9f0605df44",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Secreted proteins are incorporated into COPII vesicles through cargo capture and bulk flow mechanisms, with SEC24 driving active sorting, though the relative contributions of these mechanisms remain unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 provide background on the secretory pathway and COPII-mediated transport, supported by citations. These establish the conceptual framework for understanding cargo receptors. The statement that relative contributions are unclear (C20) appropriately reflects the state of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "9fba56a5-c6fb-4c25-bed2-07e03a42820b",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior mouse studies showing SEC24A requirement for PCSK9 secretion suggested an active receptor-mediated mechanism, but the topology of SEC24A and PCSK9 implies an intermediary ER cargo receptor is required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 provide key background motivating the search for an ER cargo receptor. The logic is sound: SEC24A is required (C23, citing Chen et al., 2013), but cannot directly interact with luminal PCSK9 due to topology (C25), necessitating a transmembrane intermediary (C26). This reasoning provides strong justification for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "393f8fe0-37ae-4d7e-aa2e-e88e0ae67f1d",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Few ER cargo receptors have been identified for mammalian secreted proteins, with LMAN1 unlikely to serve as a PCSK9 receptor due to lack of SEC24A specificity, and prior PCSK9 interactome studies not identifying a clear receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 establish the gap in knowledge that the study addresses, all supported by appropriate citations. The reasoning that LMAN1 is unlikely to be the PCSK9 receptor (C29-C30) is logical given its lack of SEC24A specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "SURF4 is a homolog of yeast Erv29p that has been shown to cycle in the early secretory pathway and interact with various proteins, though prior RNAi studies showed no overt phenotype and the current screen found no requirement for p24, LMAN1, or STIM1 interactions for PCSK9 secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C51, C101-C109 provide background on SURF4 and interpret the screen results in context of prior work. The observations are factual and appropriately cited. The inference that certain interactions are not required for PCSK9 secretion (C109) is supported by the screen data (C108).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    },
+    {
+      "id": "eaa2c3cb-1285-458c-b684-b4cd560c160c",
+      "content_id": "a9169a4b-db0b-4150-8683-5a4f798d7a53",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Approximately 3000 human proteins are secreted through the COPII pathway, but few ER cargo receptors have been identified and the proportion depending on cargo receptor interactions is unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 provide context about the broader significance of identifying cargo receptors, supported by citations. These establish that the findings have implications beyond PCSK9.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:23:38.802832Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "58b8f039-7469-4d27-8f15-00d9643e3251",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "3e89cb02-4081-4e68-b471-47ba30fac6cf",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "ddb6c18f-babf-4d54-8815-5416991c648b",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "a2840cf8-3ff8-4899-b338-43c3a288275f",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "887f0f32-d97b-4b97-84f7-e80b5b781d86",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "728e6a5c-487b-47f7-b5c4-f958a6efbd25",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "84213d28-b71e-43a0-8ca3-7f102d440acc",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "70e1cfeb-e361-42ff-a1c1-4d25cc52529d",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "1aef6e0b-e378-4099-8998-bd618186eb07",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "e1549f30-8c82-4622-98bd-d8c89430af8b",
+      "result_id": "f4c46e06-4f5b-4cf4-809d-dc755ba37e78"
+    },
+    {
+      "claim_id": "c4ad7d38-22ed-43bb-8f36-b390c6ec7ee9",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "43e9ba6b-0912-43e1-a8f9-678ff7d4952a",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "62610c00-80de-4877-9f3a-f598b3aa1e95",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "c7aeb587-d4da-43a1-908c-c350823c4829",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "67d2c9f1-0fe0-43d4-9abb-7826ee0c1c48",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "fe389743-3f3e-4dd0-889e-b6317b82e56f",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "dacfce6a-191a-4d60-9bf1-fd75fdc1ac11",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "2affe79b-928b-443e-8fb4-120d74989a48",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "d624bd73-76b4-47d7-92fa-bcfe36dd06b2",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "64752ba8-34bf-49c7-bf88-c4edaf0f4e94",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "f8922f18-2fc3-41c0-9a3e-d56f3e3e90df",
+      "result_id": "26080640-2893-402a-aaf4-31c818ae995f"
+    },
+    {
+      "claim_id": "47aeea3e-8db4-48e2-863c-dfc32322ded3",
+      "result_id": "75c9af1d-534a-4129-a382-24592aac700e"
+    },
+    {
+      "claim_id": "590076f7-7c14-47cf-977b-f86936a4035c",
+      "result_id": "75c9af1d-534a-4129-a382-24592aac700e"
+    },
+    {
+      "claim_id": "5283e44d-96d0-4102-99a5-f80461427b1d",
+      "result_id": "75c9af1d-534a-4129-a382-24592aac700e"
+    },
+    {
+      "claim_id": "46365429-75cf-4a07-ab8b-937e54f006ab",
+      "result_id": "75c9af1d-534a-4129-a382-24592aac700e"
+    },
+    {
+      "claim_id": "46775364-e539-4cbd-8557-3dac15cccbca",
+      "result_id": "75c9af1d-534a-4129-a382-24592aac700e"
+    },
+    {
+      "claim_id": "8ca23175-255a-4865-bc8d-e152945ffd69",
+      "result_id": "75c9af1d-534a-4129-a382-24592aac700e"
+    },
+    {
+      "claim_id": "122d5b38-0441-4f45-ac6a-aae4e7cc8b06",
+      "result_id": "75c9af1d-534a-4129-a382-24592aac700e"
+    },
+    {
+      "claim_id": "5e409bce-c0e9-4d8a-82cd-2bfd2dafcab2",
+      "result_id": "aa127a3e-abd4-4884-8b9a-ad66f90114e2"
+    },
+    {
+      "claim_id": "6784c947-fe82-4a1a-9171-f0d9bc275ea7",
+      "result_id": "aa127a3e-abd4-4884-8b9a-ad66f90114e2"
+    },
+    {
+      "claim_id": "05a5c494-03e0-422a-b461-b4c8c9b52288",
+      "result_id": "174c379b-c946-4908-8a58-801a7df4a22e"
+    },
+    {
+      "claim_id": "5196bae9-f47d-4aa7-9b9e-8f2a38a2cae8",
+      "result_id": "174c379b-c946-4908-8a58-801a7df4a22e"
+    },
+    {
+      "claim_id": "f2627d0e-6143-4e5e-b7bb-9db3fee7184b",
+      "result_id": "174c379b-c946-4908-8a58-801a7df4a22e"
+    },
+    {
+      "claim_id": "a078076f-c5ad-4352-be0b-8f793ca831be",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "b595c855-417e-4dbb-8490-30ca5fd9b894",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "3cfdb355-32d6-4529-a134-69950a2ac748",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "6c0e29f5-d8c9-43a3-8ca1-f5f755126211",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "0bdfd20e-163c-42cc-a1dc-e42fa134f819",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "75a40be7-dbea-4789-aaf1-d364c2e93f3c",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "1d739a79-0165-45eb-a18e-692233117cbb",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "9cd1476c-f2e4-4922-ae79-877bd96d75ee",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "cf7cfd0d-08e3-4f32-b19b-74d0810cd6a4",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "c4798472-5693-4e9b-b1b6-7789ed6091eb",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "607fb87d-9c27-424e-b55e-06ba06f92daf",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "06ed4dcf-13f3-483f-892d-c95ff2f8ca24",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "447e0ea2-4fe1-425c-b235-56951d21afe7",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "4b894b87-de44-4201-a0b9-3ee8e7345278",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "545a6f6e-47f5-410e-aff1-ae10ef3f2217",
+      "result_id": "a2f1b2bc-db92-4301-91b2-d6c892a35434"
+    },
+    {
+      "claim_id": "cbb1bd20-fb65-42fc-b5d4-0c7d9349e523",
+      "result_id": "a3168e59-0ae0-4a42-987b-a9244bad990a"
+    },
+    {
+      "claim_id": "2f485d26-85c6-4092-bebf-01af98d2f45f",
+      "result_id": "a3168e59-0ae0-4a42-987b-a9244bad990a"
+    },
+    {
+      "claim_id": "6157c114-8688-4e21-bb35-f262b80eb634",
+      "result_id": "a3168e59-0ae0-4a42-987b-a9244bad990a"
+    },
+    {
+      "claim_id": "609b709d-d1e3-43d5-b8c8-b7530c7b14a4",
+      "result_id": "a3168e59-0ae0-4a42-987b-a9244bad990a"
+    },
+    {
+      "claim_id": "15d379ac-9eb5-405c-a26a-f46a809aecd7",
+      "result_id": "77ce8b28-f018-466c-8b5e-e98b13013a6c"
+    },
+    {
+      "claim_id": "c0feae6d-9bfa-4adc-9df1-1dcf90be398a",
+      "result_id": "77ce8b28-f018-466c-8b5e-e98b13013a6c"
+    },
+    {
+      "claim_id": "77c810ce-87ee-4205-a374-c255445eb251",
+      "result_id": "b645a16c-c1a9-4ef1-bfda-b9bd033a644a"
+    },
+    {
+      "claim_id": "d67cb26f-5a49-4df9-aeb5-8b67c0b86c78",
+      "result_id": "6ecf1c22-d455-44dc-87c0-58b82690ce43"
+    },
+    {
+      "claim_id": "f15b3394-977a-4105-8f67-d16e388753d0",
+      "result_id": "6ecf1c22-d455-44dc-87c0-58b82690ce43"
+    },
+    {
+      "claim_id": "21c28650-cb71-4761-94ab-59975b06bd28",
+      "result_id": "19016840-1774-45a1-a923-b34d631043b7"
+    },
+    {
+      "claim_id": "179d4a4e-c9fb-4677-a210-97f9d369b6be",
+      "result_id": "19016840-1774-45a1-a923-b34d631043b7"
+    },
+    {
+      "claim_id": "79b5608f-b2a5-406e-b99d-b65e9a7576e3",
+      "result_id": "19016840-1774-45a1-a923-b34d631043b7"
+    },
+    {
+      "claim_id": "bf8a4bc0-bc70-45f6-b25e-40d4de38281e",
+      "result_id": "19016840-1774-45a1-a923-b34d631043b7"
+    },
+    {
+      "claim_id": "0c7c74d5-4807-4085-aea8-5599e7fabc60",
+      "result_id": "6308ab75-d792-48a8-a211-152900fd0bb0"
+    },
+    {
+      "claim_id": "7707172c-bdc4-4531-b8ce-1b60a7868a81",
+      "result_id": "6308ab75-d792-48a8-a211-152900fd0bb0"
+    },
+    {
+      "claim_id": "0a2282e5-a1ab-45fe-81a6-50d7f959694a",
+      "result_id": "6308ab75-d792-48a8-a211-152900fd0bb0"
+    },
+    {
+      "claim_id": "4ea4b8ac-2fe7-4063-a590-ec140c1e5f29",
+      "result_id": "59f30a77-9a8f-4970-a321-7a69d7d5e096"
+    },
+    {
+      "claim_id": "8ee73799-bd90-4efb-96f9-043b8710dea0",
+      "result_id": "59f30a77-9a8f-4970-a321-7a69d7d5e096"
+    },
+    {
+      "claim_id": "4e672b34-07b9-409f-9637-9ea52539d147",
+      "result_id": "59f30a77-9a8f-4970-a321-7a69d7d5e096"
+    },
+    {
+      "claim_id": "bb46617d-db77-49a6-8f4e-38b927b7ae93",
+      "result_id": "59f30a77-9a8f-4970-a321-7a69d7d5e096"
+    },
+    {
+      "claim_id": "db25c63c-dd26-40f4-922b-7c3863a82472",
+      "result_id": "7f774391-8bb9-4956-812f-c12ceeaa85ac"
+    },
+    {
+      "claim_id": "271c7b75-c6fe-4ce3-98c0-aeda93910be8",
+      "result_id": "7f774391-8bb9-4956-812f-c12ceeaa85ac"
+    },
+    {
+      "claim_id": "6efecbd4-749a-4031-968f-772b0c10c4b6",
+      "result_id": "7f774391-8bb9-4956-812f-c12ceeaa85ac"
+    },
+    {
+      "claim_id": "75b43c19-3cab-4b70-b4de-bac0cff505c5",
+      "result_id": "db4a9983-ccdb-4254-8ded-2b8694f8470d"
+    },
+    {
+      "claim_id": "48b78b59-8b3f-40cc-8a7c-3e4b715e7f40",
+      "result_id": "db4a9983-ccdb-4254-8ded-2b8694f8470d"
+    },
+    {
+      "claim_id": "b99a8044-f0f4-4d07-b71d-5026198b549e",
+      "result_id": "db4a9983-ccdb-4254-8ded-2b8694f8470d"
+    },
+    {
+      "claim_id": "f337c2b3-8d6d-466c-a9a3-9a4212dfecc7",
+      "result_id": "9f468acb-2957-4210-bb42-66794b5446fa"
+    },
+    {
+      "claim_id": "2086f745-81a0-4d7c-a6e7-e0a2ed95a1b1",
+      "result_id": "9f468acb-2957-4210-bb42-66794b5446fa"
+    },
+    {
+      "claim_id": "03873744-ba62-4c27-b135-3adb69e1a1a2",
+      "result_id": "9f468acb-2957-4210-bb42-66794b5446fa"
+    },
+    {
+      "claim_id": "8e500046-9f5d-48d1-bd3b-12cdc2ba932c",
+      "result_id": "9f468acb-2957-4210-bb42-66794b5446fa"
+    },
+    {
+      "claim_id": "0e0af339-41ca-4df6-9d7c-5a7733c8c766",
+      "result_id": "7f0719d7-831c-4170-8404-d639c6f2c729"
+    },
+    {
+      "claim_id": "52a6dfce-d6a4-4839-ac4e-f52b1926fe21",
+      "result_id": "7f0719d7-831c-4170-8404-d639c6f2c729"
+    },
+    {
+      "claim_id": "1c538c8e-c3b5-45c7-aa03-2c8659f2daaa",
+      "result_id": "7f0719d7-831c-4170-8404-d639c6f2c729"
+    },
+    {
+      "claim_id": "97c12bc9-74ba-425a-bedc-9abd73538f04",
+      "result_id": "7f0719d7-831c-4170-8404-d639c6f2c729"
+    },
+    {
+      "claim_id": "5943303d-7f93-4139-9ccb-54e8c4305cca",
+      "result_id": "7f0719d7-831c-4170-8404-d639c6f2c729"
+    },
+    {
+      "claim_id": "dee6429b-b439-4654-8f8d-22a310b9d87d",
+      "result_id": "7f0719d7-831c-4170-8404-d639c6f2c729"
+    },
+    {
+      "claim_id": "7e838025-bdd8-4112-92c3-9b4567756dba",
+      "result_id": "7f0719d7-831c-4170-8404-d639c6f2c729"
+    },
+    {
+      "claim_id": "94b9ba75-df9a-4940-bc5e-8f395923366e",
+      "result_id": "7f0719d7-831c-4170-8404-d639c6f2c729"
+    },
+    {
+      "claim_id": "1e542406-e840-4e82-9038-52eabd3cabd8",
+      "result_id": "c22660a3-e4af-401a-934b-6c9f0605df44"
+    },
+    {
+      "claim_id": "7c9c663c-35fa-4b34-9f2b-ba5fa6033d79",
+      "result_id": "c22660a3-e4af-401a-934b-6c9f0605df44"
+    },
+    {
+      "claim_id": "57e10438-5714-45f0-961d-7495bfa619d6",
+      "result_id": "c22660a3-e4af-401a-934b-6c9f0605df44"
+    },
+    {
+      "claim_id": "2dc00fbb-14ca-4506-81b3-7e9965120df8",
+      "result_id": "c22660a3-e4af-401a-934b-6c9f0605df44"
+    },
+    {
+      "claim_id": "7ce8f32e-f541-4c74-9d12-6a4b32937598",
+      "result_id": "c22660a3-e4af-401a-934b-6c9f0605df44"
+    },
+    {
+      "claim_id": "db409789-a112-443f-8152-cff4fcd1ce99",
+      "result_id": "c22660a3-e4af-401a-934b-6c9f0605df44"
+    },
+    {
+      "claim_id": "d32177d1-2d90-4d95-9ad0-d5b4428948da",
+      "result_id": "c22660a3-e4af-401a-934b-6c9f0605df44"
+    },
+    {
+      "claim_id": "69ea2eff-0f2a-4d3b-95a8-bb0180a7403d",
+      "result_id": "9fba56a5-c6fb-4c25-bed2-07e03a42820b"
+    },
+    {
+      "claim_id": "85b51297-04cc-4caf-b451-b984ba8be9ba",
+      "result_id": "9fba56a5-c6fb-4c25-bed2-07e03a42820b"
+    },
+    {
+      "claim_id": "beb1cb2b-b2df-4763-bb32-720ae9b81666",
+      "result_id": "9fba56a5-c6fb-4c25-bed2-07e03a42820b"
+    },
+    {
+      "claim_id": "67de4079-95ff-4a6a-929e-511ffeba0568",
+      "result_id": "9fba56a5-c6fb-4c25-bed2-07e03a42820b"
+    },
+    {
+      "claim_id": "33c38a2e-f61c-404b-a637-266afb6d3b34",
+      "result_id": "393f8fe0-37ae-4d7e-aa2e-e88e0ae67f1d"
+    },
+    {
+      "claim_id": "26b56147-6e99-46eb-9dba-85c5363730a5",
+      "result_id": "393f8fe0-37ae-4d7e-aa2e-e88e0ae67f1d"
+    },
+    {
+      "claim_id": "31900d19-309f-43ab-a85c-f332537300cc",
+      "result_id": "393f8fe0-37ae-4d7e-aa2e-e88e0ae67f1d"
+    },
+    {
+      "claim_id": "02c004da-a202-4f77-a603-cf4eee74caba",
+      "result_id": "393f8fe0-37ae-4d7e-aa2e-e88e0ae67f1d"
+    },
+    {
+      "claim_id": "b6e3a61a-8882-4d7b-84d5-3c7fbe54b63b",
+      "result_id": "393f8fe0-37ae-4d7e-aa2e-e88e0ae67f1d"
+    },
+    {
+      "claim_id": "8589fee7-f688-4c66-83c7-8d23b2bd963a",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "5e863d4b-f4ef-4522-a8fe-620dc9f36b88",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "816e7e79-eb3d-46a4-a500-901068173d5c",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "1c35023d-a4f6-4bcf-b9f7-a8b12acbdc77",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "8fd0a8da-624c-4a09-9714-0f7b67901f5b",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "6912f90e-60be-4a42-bcaa-f2f28ae5b9f3",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "460dda99-edda-4111-a8f7-73992cca4027",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "ebc59dbc-4ba5-4cca-a8bf-d7584ebda351",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "19c2a96e-4563-433d-92f1-5e6f1eb77a58",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "804545d8-3c08-48bc-91a5-cb43431a4bed",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "9cd3caaf-5b22-47cd-8be3-cfd400ea6d94",
+      "result_id": "19e0bccd-d9ff-4475-b23c-9abcbd48dc63"
+    },
+    {
+      "claim_id": "62517667-a055-41ec-a823-7cb5366c3cd6",
+      "result_id": "eaa2c3cb-1285-458c-b684-b4cd560c160c"
+    },
+    {
+      "claim_id": "92c9c437-a4eb-43f9-923d-7e0c66e4885f",
+      "result_id": "eaa2c3cb-1285-458c-b684-b4cd560c160c"
+    },
+    {
+      "claim_id": "00b2a66c-ba62-4bfd-bcb6-ebaf22baf575",
+      "result_id": "eaa2c3cb-1285-458c-b684-b4cd560c160c"
+    }
+  ],
+  "comparisons": []
+}

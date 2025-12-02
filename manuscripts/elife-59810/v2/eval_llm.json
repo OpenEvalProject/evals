@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Yeast cells undergoing diauxic shift exhibit a genome-wide upstream shift in poly(A) site utilization, with >80% of genes showing 10-25 nt upstream shifts in poly(A) site selection, resulting in shorter 3' mRNA isoforms. This phenomenon is independent of overall gene expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C34-C37 are strongly supported by 3' READS data showing consistent upstream shifts across multiple end zone parameters (Figure 1B-D). The statistical significance (p<0.01) and genome-wide nature (>80% of genes) of the shift are well-documented with appropriate biological replicates (R>0.91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Slow Pol II mutants (H1085Q and F1086S) exhibit poly(A) patterns strikingly similar to diauxic conditions, with 10-20 nt upstream shifts and 90% overlap of affected genes (p<10^-100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C43 are well-supported by comparative 3' READS analysis (Figure 2). The statistical significance of gene overlap (p<10^-100) and quantitative similarity of shifts provide strong evidence for the mechanistic link between slow elongation and diauxic poly(A) patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Fast Pol II mutants (L1101S and E1103G) show modest downstream shifts in poly(A) site selection, with the magnitude of shift correlating with elongation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51-C54 are supported by 3' READS data (Figure 4) showing statistically significant downstream shifts that are more subtle than upstream shifts in slow mutants. The correlation between elongation rate and shift magnitude strengthens the causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C80"
+    ],
+    "result": "17% (462/2790) of yeast genes are sensitive to both fast and slow Pol II elongation rates, showing upstream shifts with slow Pol II and downstream shifts with fast Pol II (p=2.68\u00d710^-7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C60-C61, C80 are supported by statistical analysis showing highly significant overlap (Figure 4E-F). The hypergeometric test provides appropriate statistical validation for the overlap being non-random.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C81"
+    ],
+    "result": "Speed-sensitive genes are characterized by purine-rich sequences (increased A and G, decreased U and C) flanking poly(A) sites, with this nucleotide composition being conserved across conditions despite varying max isoform positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C65-C68, C81 are supported by nucleotide frequency analysis (Figure 5). The consistency of nucleotide composition across conditions and gene categories, despite varying positions, provides strong evidence for sequence-dependent sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Pol II processivity is impaired in diauxic cells, with most genes showing diauxic:exponential processivity ratios of 2-6. The extent of upstream poly(A) shift correlates strongly with processivity ratio (R=0.63), suggesting slow Pol II elongation under diauxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C69-C71 are supported by ChIP data (Figure 6A-B) showing disproportionate Pol II accumulation at promoters and correlation with poly(A) shifts. However, the inference about elongation rate (C71) is indirect since direct measurement was not possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C82"
+    ],
+    "result": "Strains with reduced Pol II processivity but normal elongation rates (spt4\u0394 and hpr1\u0394) have normal poly(A) profiles, demonstrating that elongation rate, not processivity per se, determines poly(A) patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C72-C75, C82 are supported by 3' READS data from processivity-defective mutants (Figure 6C-D). The dissociation of processivity from poly(A) pattern changes provides strong evidence that elongation rate is the critical factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C76",
+      "C77",
+      "C83",
+      "C84"
+    ],
+    "result": "Pol II elongation speed is important for poly(A) site selection and regulates poly(A) patterns in response to environmental conditions, with the diauxic upstream shift likely caused by decreased elongation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C76-C77, C83-C84 represent the main conclusions synthesized from multiple lines of evidence (Pol II mutants, diauxic conditions, processivity mutants). The convergent evidence from independent approaches strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The upstream shift represents altered poly(A) site utilization rather than preferential mRNA degradation, with the same poly(A) sites used across conditions (probability of overlap by chance: median R=7.63\u00d710^-7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by mathematical modeling (Figure 3) and conservation analysis showing vanishingly small probabilities of positional overlap by chance. The mechanistic argument about Pol II proceeding beyond poly(A) sites (C46) is based on established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In slow Pol II mutants, ~70% of genes show significant upstream shifts with >97% overlap between the two slow mutants. In fast Pol II mutants, 23-32% of genes show downstream shifts with 95% overlap between the two fast mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by statistical analysis with appropriate error modeling (Figure 4\u2014figure supplement 1). The high overlap percentages with extremely significant p-values (p<10^-100) validate the reproducibility of the effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C93"
+    ],
+    "result": "A minority of genes show atypical poly(A) shifts opposite to their Pol II elongation rate (46 genes downstream in slow mutants, 196-228 genes upstream in fast mutants), suggesting gene-specific in vivo elongation properties differ from in vitro rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C93 are supported by data showing reproducible atypical shifts in both mutants of the same speed class. The inference about gene-specific properties (C93) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Biological replicates show high correlation (R=0.88-0.99), and poly(A) patterns are stable across diverse growth conditions (YPD, YPGal, MM, Sorbitol), with genes averaging 8 major isoforms representing ~30% of all poly(A) sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by correlation analysis and comparative data (Figure 1). The high reproducibility validates the experimental approach, and the stability across conditions establishes the specificity of the diauxic effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C86",
+      "C87"
+    ],
+    "result": "The Pol II mutants used have defined elongation rates: H1085Q is 5-fold slower, F1086S is 2.5-fold slower, L1101S is 2-fold faster, and E1103G is 2.5-fold faster than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C86-C87 are supported by citations to previous studies (Kaplan et al., 2012; Braberg et al., 2013) that measured these elongation rates in vitro. The reliance on prior work is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C94",
+      "C95"
+    ],
+    "result": "Nucleotide frequencies surrounding major end zone boundaries and max isoform endpoints are nearly identical under diauxic and slow Pol II conditions, despite max isoform positions varying greatly among conditions and gene categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C94-C95 are supported by nucleotide frequency analysis (Figure 5\u2014figure supplement 1). This observation strengthens the argument that sequence composition, not position, determines sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The correlation between in vitro elongation rates and in vivo poly(A) pattern shifts strongly suggests the effects on polyadenylation are due to elongation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by the dose-response relationship between elongation rate and shift magnitude across multiple mutants. This correlation strengthens the causal inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The Pol II mutations studied lie in functionally important regions: H1085Q and F1086S are in the trigger loop (important for catalysis and translocation), while L1101S and E1103G are in an adjacent \u03b1-helical region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by citations to structural and functional studies. This contextualizes the mutations but is background information rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Direct measurement of Pol II elongation rate in diauxic cells is impossible using conventional assays due to glucose starvation, so processivity was used as a proxy based on established associations between slow elongation and decreased processivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by logical reasoning and citations to previous work. This methodological limitation is appropriately acknowledged and addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The mechanism by which Pol II elongation rate affects poly(A) site selection may involve kinetic competition, where slow Pol II provides extra time for cleavage/polyadenylation machinery to function at upstream sites, analogous to effects on splicing and termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C102 are largely speculative (C99, C102) or based on analogies to other processes (C100, C101). While the mechanistic model is plausible and supported by citations, it lacks direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Regulation by Pol II elongation rate is not mutually exclusive with regulation of the cleavage/polyadenylation machinery, and both mechanisms could operate under a given physiological condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is a reasonable speculation based on the experimental findings. The statement is appropriately cautious and acknowledges the possibility of multiple regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Background information on alternative polyadenylation, mRNA isoforms, and prior studies on Pol II elongation effects in various organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C27, C103-C114 are background claims supported by citations to previous literature. These establish context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

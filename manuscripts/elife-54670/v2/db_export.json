@@ -1,0 +1,2409 @@
+{
+  "submission": {
+    "id": "ad0d19e3-a893-4a0c-af6a-8f22fb7a03ea",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:09:36.875677Z",
+    "updated_at": "2025-12-02T15:09:36.875677Z"
+  },
+  "content": [
+    {
+      "id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "submission_id": "ad0d19e3-a893-4a0c-af6a-8f22fb7a03ea",
+      "content_type": "manuscript",
+      "content_text": "# The Cryo-EM structure of pannexin 1 reveals unique motifs for ion selection and inhibition\n\n## Authors\n\n- Kevin Michalski<sup>1</sup>\n- Johanna L Syrjanen<sup>2</sup>\n- Erik Henze<sup>1</sup>\n- Julia Kumpf<sup>1</sup> ([ORCID: 0000-0002-3813-1255](https://orcid.org/0000-0002-3813-1255))\n- Hiro Furukawa<sup>2</sup> \u2020\n- Toshimitsu Kawate<sup>1</sup> ([ORCID: 0000-0002-5005-2031](https://orcid.org/0000-0002-5005-2031)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Medicine, Cornell University Ithaca United States\n2. WM Keck Structural Biology Laboratory, Cold Spring Harbor Laboratory Cold Spring Harbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPannexins are large-pore forming channels responsible for ATP release under a variety of physiological and pathological conditions. Although predicted to share similar membrane topology with other large-pore forming proteins such as connexins, innexins, and LRRC8, pannexins have minimal sequence similarity to these protein families. Here, we present the cryo-EM structure of a frog pannexin 1 (Panx1) channel at 3.0 \u00c5. We find that Panx1 protomers harbor four transmembrane helices similar in arrangement to other large-pore forming proteins but assemble as a heptameric channel with a unique constriction formed by Trp74 in the first extracellular loop. Mutating Trp74 or the nearby Arg75 disrupt ion selectivity, whereas altering residues in the hydrophobic groove formed by the two extracellular loops abrogates channel inhibition by carbenoxolone. Our structural and functional study establishes the extracellular loops as important structural motifs for ion selectivity and channel inhibition in Panx1.\n\n## Introduction\n\nLarge-pore forming channels play important roles in cell-to-cell communication by responding to diverse stimuli and releasing signaling molecules like ATP and amino acids (Giaume et al., 2013; Ma et al., 2016; Okada et al., 2018; Osei-Owusu et al., 2018). Pannexins are a family of ubiquitously expressed large-pore forming channels which regulate nucleotide release during apoptosis (Chekeni et al., 2010), blood pressure (Billaud et al., 2011; Billaud et al., 2015), and neuropathic pain (Bravo et al., 2014; Weaver et al., 2017; Mousseau et al., 2018). While pannexins have limited sequence identity with innexins (~15% identity), they have virtually no sequence similarity to other large-pore forming channels (Panchin et al., 2000). Among the pannexin family, pannexin 1 (Panx1) has garnered the most attention for its role as a large-pore forming channel responsible for ATP release from a variety of cell types (Bao et al., 2004; Dahl, 2015). Different kinds of stimuli have been reported to activate Panx1 including voltage, membrane stretch, increased intracellular calcium levels, and positive membrane potentials (Bruzzone et al., 2003; Bao et al., 2004; Locovei et al., 2006; Wang et al., 2014; Chiu et al., 2018). Panx1 is also targeted by signaling effectors, such as proteases and kinases, to permanently or temporarily stimulate channel activity (Pelegrin and Surprenant, 2006; Thompson et al., 2008; Sandilos et al., 2012; Billaud et al., 2015; Lohman et al., 2015). The above evidence suggests that Panx1 has a capacity to integrate distinct stimuli into channel activation leading to ATP release. Despite playing critical roles in a variety of biological processes, a mechanistic understanding of pannexin function has been largely limited due to the lack of a high-resolution structure. Here, we show the cryo-EM structure of Panx1, which reveals the pattern of heptameric assembly, pore lining residues, important residues for ion selection, and a putative carbenoxolone binding site.\n\n## Results\n\n### Structure determination and functional characterization\n\nTo identify a pannexin channel suitable for structure determination, we screened 34 pannexin orthologues using Fluorescence Size Exclusion Chromatography (FSEC)(Kawate and Gouaux, 2006). Frog Panx1 (frPanx1; 66% identical to human, Figure 1\u2014figure supplement 1) displayed high expression levels and remained monodisperse when solubilized in detergent, suggesting high biochemical integrity. We further stabilized frPanx1 by truncating the C-terminus by 71 amino acids and by removing 24 amino acids from the intracellular loop between transmembrane helices 2 and 3 (Figure 1\u2014figure supplement 1). This construct, dubbed \u2018frPanx1-\u0394LC\u2019, displayed high stability in detergents and could be purified to homogeneity (Figure 1\u2014figure supplement 2a and b). We verified that frPanx1 forms a functional pannexin channel by whole-cell patch clamp electrophysiology (Figure 1a and b; Figure 1\u2014figure supplement 2e and f). Purified frPanx1-\u0394LC was reconstituted into nanodiscs composed of MSP2N2 (an engineered derivative of apolipoprotein) and soybean polar lipids, and subjected to cryo-electron microscopy (cryo-EM) and single-particle analysis (Figure 1\u2014figure supplement 2c and d). We used a total of 90,185 selected particles for 3D reconstruction at 3.0 \u00c5 resolution (Figure 1\u2014figure supplement 3). The map quality was sufficient for de novo model building for the majority of frPanx1-\u0394LC with the exception of disordered segments of the N-terminus (residues 1\u201310), ECL1 (88\u2013100), and ICL1 (157\u2013194) (Figure 1c; Figure 1\u2014figure supplement 4, Video 1, and Table 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig1-v2.jpg)\n\n**Figure 1.:** (a) Whole-cell patch clamp recordings from HEK 293 cells expressing hPanx1, frPanx1, and frPanx1-\u0394LC. Cells were clamped at \u221260 mV and stepped from \u2212100 mV to +100 mV for 1 s in 20 mV increments. To facilitate electrophysiological studies, we inserted a Gly-Ser motif immediately after the start Met to enhance Panx1 channel opening as we previously described (Michalski et al., 2018). CBX (100 \u03bcM) was applied through a rapid solution exchanger. (b) Current-voltage plot of the same channels shown in (a). Recordings performed in normal external buffer are shown as circles, and those performed during CBX (100 \u03bcM) application are shown as squares. Each point represents the mean of at least three different recordings, and error bars represent the SEM. (c) EM map of frPanx1-\u0394LC shown from within the plane of the membrane. Each protomer is colored differently, with the extracellular side designated as \u2018out\u2019 and the intracellular side as \u2018in.\u2019 (d) Overall structure of frPanx1-\u0394LC viewed from within the lipid bilayer. (e) Structure of frPanx1 viewed from the extracellular face.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Amino acid sequence of frPanx1 compared to various Panx1 orthologues. Amino acids highlighted in black are completely conserved, in gray are similar, and in white are not conserved. Disulfide-forming cysteines are highlighted in yellow. Secondary structure features are shown above the sequence alignment. Green boxes depict the transmembrane helix boundaries, and orange boxes show deleted or truncated regions to create frPanx1-\u0394LC.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Size exclusion chromatogram of frPanx1-\u0394LC. Concentrated protein was injected onto a Superose 6 10/300 column equilibrated with 150 mM NaCl, 10 mM Tris pH 8.0, 1 mM EDTA, 0.5 mM DDM. (b) SDS-PAGE analysis of peak fractions collected from (a). (c) Size exclusion chromatogram of frPanx1-\u0394LC after reconstitution into nanodiscs. The running buffer contained 150 mM NaCl, 10 mM Tris pH 8.0, 1 mM EDTA. (d) SDS-PAGE analysis of peak fractions collected from (c). (e) Whole-cell recordings of wild-type (no Gly-Ser) hPanx1, frPanx1, and frPanx1-\u0394LC. Whole-cell patches from transfected HEK 293 T cells were obtained, held at \u221260 mV, and stepped between \u2212100 mV and +160 mV for 1 s. CBX (100 \u03bcM) was applied through a rapid solution exchanger. (f) Current-voltage plot of wild-type pannexin recordings shown in (e). Each circle represents the mean current at a particular voltage, with squares depicting the same current when treated with 100 \u03bcM CBX. N\u00a0=\u00a03\u201311.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a)\u00a0A representative micrograph (scale bar\u00a0=\u00a050 nm), representative 2D class averages, and the 3D classification workflow are shown. (b) The FSC plots of the two half maps (top) and the map vs model (bottom) are shown. (c) The angular distribution plot for class 3. (d) Local resolutions of class three were calculated using ResMap (Kucukelbir et al., 2014).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Each domain is shown as stick representation and fit into the corresponding density contoured at \u03c3\u00a0=\u00a03.0.\n\n**Table 1.**\n Cryo-EM data collection, refinement and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>frPanx- \u0394LC (EMD-21150) (PDB: 6VD7)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>130,000</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e\u2013/\u00c52)</td>\n      <td>57.2</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>1.2\u20132.8</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.07</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C7</td>\n    </tr>\n    <tr>\n      <td>Initial particle images (no.)</td>\n      <td>297374</td>\n    </tr>\n    <tr>\n      <td>Final particle images (no.)</td>\n      <td>90185</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5) FSC threshold</td>\n      <td>3.02 0.143</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Initial model used (PDB code)</td>\n      <td>de novo</td>\n    </tr>\n    <tr>\n      <td>Model resolution (\u00c5) FSC threshold</td>\n      <td>3.29 0.5</td>\n    </tr>\n    <tr>\n      <td>Model resolution range (\u00c5)</td>\n      <td>3\u20136</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c52)</td>\n      <td>\u221290</td>\n    </tr>\n    <tr>\n      <td>Model composition Non-hydrogen atoms Protein residues Ligands</td>\n      <td>16506 2079 0</td>\n    </tr>\n    <tr>\n      <td>CC map vs. model (%)</td>\n      <td>0.85</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations Bond lengths (\u00c5) Bond angles (\u00b0)</td>\n      <td>0.008 0.759</td>\n    </tr>\n    <tr>\n      <td>Validation MolProbity score Clashscore Poor rotamers (%)</td>\n      <td>1.92 5.96 0.78</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>\n      <td>88.32 11.68 0</td>\n    </tr>\n  </tbody>\n</table>\n\n![Video 1.](https://cdn.elifesciences.org/articles/54670/elife-54670-video1.mp4.jpg)\n\n**Video 1.:** The model is shown as wire representation and fit into the corresponding density contoured at \u03c3\u00a0=\u00a03.0. Each domain is colored differently and Tryp74 and Arg75 are labeled in the close-up view.\n\n### Overall structure and protomer features\n\nThe frPanx1-\u0394LC structure revealed a heptameric assembly, which is unique among the known eukaryotic channels (Figure 1d and e). Other large-pore forming channels include hexameric connexins (Maeda et al., 2009) and LRRC8s (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018), and the octameric innexins (Oshima et al., 2016) and calcium homeostasis modulator1 (CALHM1) (Syrjanen et al., 2020;\u00a0Figure 2\u2014figure supplement 1). Our result differs from previous studies that suggest hexameric assembly of pannexin based on single channel recordings on concatemeric channels and negative stain electron microscopy (Boassa et al., 2007; Wang et al., 2014; Chiu et al., 2017). The heptameric assembly observed in the current study is unlikely to be caused by the carboxy-terminal truncation or intracellular loop deletion because cryo-EM images of the full-length frPanx1 also display clear seven-fold symmetry in the 2D class averages (Figure 2\u2014figure supplement 2a). Furthermore, 2D class averages of hPanx1 display a heptameric assembly, but not other oligomeric states (Figure 2\u2014figure supplement 2b). Thus, overall, our data suggests that the major oligomeric state of Panx1 is a heptamer. This unique heptameric assembly is established by inter-subunit interactions at three locations: 1) ECL1s and the loop between \u03b22 and \u03b23; 2) TM1-TM1 and TM2-TM4 interfaces; and 3) \u03b19 helix and the surrounding \u03b13 and \u03b14 helices, and the N-terminal loop from the neighboring subunit (Figure 2\u2014figure supplement 3). Notably, the majority of residues mediating these interactions are highly conserved (e.g. Phe67 and Tyr111; Figure 1\u2014figure supplement 1).\n\nThe overall protomer structure of Panx1 resembles that of other large-pore forming channels including connexin, innexins, and LRRC8. Like other large-pore forming channels, each Panx1 protomer harbors four transmembrane helices (TM1-4), two extracellular loops (ECL1 and 2), two intracellular loops (ICL1 and 2), and an amino (N)-terminal loop (Figure 2a and b). The transmembrane helices of Panx1 are assembled as a bundle in which the overall helix lengths, angles, and positions strongly resemble the transmembrane arrangements observed in other large-pore channels (Figure 2c). In contrast, Panx1 has no similarity in transmembrane arrangement to another group of large-pore channels, CALHMs whose protomers also contain four transmembrane helices (Choi et al., 2019; Syrjanen et al., 2020;\u00a0Figure 2\u2014figure supplement 1). Structural features in the Panx1 ECL1 and ECL2 domains are conserved among large-pore channels despite limited sequence similarity (Figure 2d\u2013g; Figure 2\u2014figure supplement 1). For example, the Panx1 ECL1 and ECL2 are joined together by two conserved disulfide bonds (Cys66 with Cys267, Cys84 with Cys248) in addition to several \u03b2-strands. ECL1 also contains an alpha-helix that extends towards the central pore and forms an extracellular constriction of the permeation pathway. While much of the transmembrane domains and extracellular loops show similarities to other large-pore forming channels, the Panx1 intracellular domains are structurally unique (Figure 2\u2014figure supplement 1). ICL1 and ICL2, for example, together form a bundle of helices that make contact with the N-terminus. The N-terminal loop of Panx1 forms a constriction of the permeation pathway and extends towards the intracellular region. The first\u00a0~10 amino acids of the N-terminus are disordered in our structure, but these residues might play a role in ion permeation or ion selectivity (Wang and Dahl, 2010).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig2-v2.jpg)\n\n**Figure 2.:** (a) Structure of the frPanx1 protomer. Each domain is colored according to the cartoon scheme presented in (b). (c) Superimposition of the transmembrane helices from frPanx1 (red), connexin-26 (green), innexin-6 (orange), and LRRC8 (blue) shown top-down from the extracellular side (top) or from within the plane of the membrane (bottom). (d-g) Cartoon representation of the extracellular loops of large pore forming channels. ECL1 is colored in light blue, and ECL2 is colored in dark blue, and disulfide bridges are shown as yellow spheres. These domains are viewed from the same angle (from top) as shown in the top panel in (c).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The structures of connexin-26 (PDB: 2ZW3), LRRC8 (PDB: 6NZW), Panx1, innexin-6 (PDB: 5H1Q), and CALHM1 (PDB: 6VAM) are shown from within the plane of the membrane (top) and viewed from the extracellular side (bottom). One subunit of each channel is shown colored with transmembrane domains in orange/yellow, ECL1 is colored in light blue, ECL2 in dark blue, ICL1 in gray, ICL2 in green, and NTL in red, as shown in Figure 2a.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) 2D classes of the full-length frog pannexin1 in nanodiscs showing top (left) and side (right) views. All seven protomers are labeled with numbers in the 2D class of the top view. (b) 2D classes of the full-length human pannexin one in DDM in the similar orientation to panel a. The top view shows a heptameric assembly (numbered). No symmetry was imposed in 2D classification.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Three major inter-subunit interfaces between two neighboring subunits (blue and red) are highlighted in orange ovals (left). Close-up views (right) show the highly-conserved residues mediating the inter-subunit interactions.\n\n### Ion permeation pathway and selectivity\n\nThe Panx1 permeation pathway spans a length of 104 \u00c5, with constrictions formed by the N-terminal loop, Ile58, and Trp74 (Figure 3a and b). The narrowest constriction is surrounded by Trp74 located on ECL1 (Figure 3c). Trp74 is highly conserved among species including hPanx1 (Figure 1\u2014figure supplement 1). Because Panx1 has been previously characterized as an anion selective channel (Ma et al., 2012; Romanov et al., 2012; Chiu et al., 2014), we wondered if positively charged amino acids around the narrowest constriction formed by Trp74 may contribute to anion selectivity of the channel. Interestingly, Arg75 is situated nearest to the tightest constriction of the permeation pathway (Figure 3d). We hypothesized that Arg75 might be a major determinant of anion selectivity of Panx1 channels in the open state. To assess whether Arg75 contributes to anion selectivity, we generated a series of point mutations at this position on hPanx1 and compared their reversal potentials (Erev) in asymmetric solutions using whole-cell patch clamp electrophysiology (Figure 3e and Figure 3\u2014figure supplement 1). We kept sodium chloride (NaCl) constant in the pipette solution while varying the extracellular solution. When treated with the large anion, gluconate (Gluc-), Erev shifted to +26 mV, suggesting the channel is more permeable to Cl- than to Gluc-. When exposed to the large cation, N-methyl-D-glucamine (NMDG+), Erev remained close to 0 mV, suggesting that Na+ and NMDG+ equally (or do not) permeate Panx1. These results are consistent with Panx1 being an anion-selective channel. The Arg75Lys mutant maintains the positive charge of this position, and displayed Erev values comparable to WT. Removing the positive charge at this position, as shown by the Arg75Ala mutant, diminished Cl- selectivity as the Erev in NaGluc remained near 0 mV. Interestingly, the Erev in NMDGCl shifted to \u221222 mV, suggesting the channel had lost anion selectivity and Na+ became more permeable than NMDG+. A charge reversal mutant, Arg75Glu, shifted the Erev in NaGluc to \u221216 mV and in NMDGCl to \u221245 mV, indicating that Gluc- became more permeable to Cl-. Overall, these results support the idea that the positively charged Arg75 plays a role in anion selectivity of Panx1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig3-v2.jpg)\n\n**Figure 3.:** (a) HOLE (Smart et al., 1996) diagram demonstrating constrictions along the permeation pathway. NTL; N-terminal loop. (b) Surface representation of the internal space along the molecular 7-fold axis running through the center of frPanx1. The surface was generate using HOLE. (c and d) Top view facing the extracellular side (c) or side view (d) of frPanx1, with ECL1 shown in light blue and ECL2 in dark blue. Trp74 and Arg75 are shown as sticks. (e) Reversal potentials of various hPanx1 ion selectivity mutants. Each point represents the Erev measured in NaCl (black), NaGluc (red), or NMDGCl (blue), and bars represent the mean values. I-V curves were obtained by a ramp protocol from \u221280 mV to +80 mV. (f) Close-up view of the Trp74-Arg75 interaction at the interface of protomer A (blue) and B (red).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** HEK293 cells were held at \u221260 mV and ramped between \u2212100 mV and + 100 mV over 3 s duration. The numbers indicate the reversal potentials in mV.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** A coronal section of frPanx1-\u0394LC shows the surface of the ion permeation pathway. Electrostatic surface potential was calculated using APBS plugin (Baker et al., 2001) in Pymol (Schrodinger, LLC, 2015) and presented in the range between \u221215 kT/e (red: acidic) and +15 kT/e (blue: basic).\n\nWe next wondered if introducing a charge at position 74 might alter ion selectivity of Panx1 channels. Interestingly, both Trp74Arg and Trp74Glu mutants become less selective to anions and more permeable to Na+ (Figure 3e). These results suggest that introducing a charge at this position disrupts the natural ion selectivity of Panx1 channels but that position 74 itself does not control ion selectivity. We observed that the distance between the guanidino group of Arg75 and the benzene ring of Trp74 from an adjacent subunit is\u00a0~4 \u00c5, suggesting that these two residues likely participate in an inter-subunit cation-\u03c0 interaction key to Panx1 ion selectivity (Figure 3f). To test this hypothesis, we generated Trp74Ala and Trp74Phe mutations and measured Erev potentials. Trp74Ala showed a marked decrease in Cl- permeability and an increase in Na+ permeability, despite preservation of the positive charge at Arg75. A more conservative mutation, Trp74Phe, still disrupted ion selectivity, suggesting that proper positioning of the benzene ring at position 74 is important for anion selection. Altogether, our data suggests that anion selectivity is only achieved when Trp74 and Arg75 form a cation-\u03c0 interaction. Given that our structure has disordered and truncated regions in the N-terminus, ICL1, and ICL2, it is possible that additional ion selectivity or gating regions exist in the full-length channel. For example, the N-termini of LRRC8 and connexins perform an important role in ion selectivity (Kyle et al., 2008; Kronengold et al., 2012; Kefauver et al., 2018). It is possible that the N-terminus of Panx1 is mobile and may further constrict the permeation pathway. Another possibility is that the electrostatic potential along the pore pathway contributes to the ion selectivity. Interestingly, both cytoplasmic and extracellular entrances of the permeation pathway are mostly basic, suggesting that non-permeant cations may be excluded from the pore (Figure 3\u2014figure supplement 2). In contrast, the region underneath the W74 constriction is highly acidic, supporting the idea that anions may be selected around this area.\n\n### CBX action mechanism\n\nWe have previously demonstrated that CBX, a potent nonselective inhibitor of Panx1, likely acts through a mechanism involving ECL1 (Michalski and Kawate, 2016). In these experiments, mutations at a number of residues in ECL1 rendered Panx1 less sensitive to CBX-mediated channel inhibition. Mapping such residues in the Panx1 structure revealed that they are clustered proximal to the extracellular constriction by Trp74, in a groove formed between ECL1 and ECL2 (Figure 4a and b). This supports our previous speculation that CBX is an allosteric inhibitor, not a channel blocker (Michalski and Kawate, 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54670/elife-54670-fig4-v2.jpg)\n\n**Figure 4.:** (a and b) Surface (a) and cartoon (b) representations of the frPanx1 ECL1 (light blue) and ECL2 (dark blue), with potential CBX-interacting residues shown in orange. (c) Quantification of whole-cell currents from hPanx1 mutants when treated with CBX (100 \u03bcM). Mutants are numbered according to the hPanx1 sequence while the mutants in parenthesis are the corresponding residues in frPanx1. Recordings were performed by stepping to +100 mV in the absence or presence of CBX, and each point represents the normalized current amplitude during the CBX application. Bars represent the mean value from each mutant. Asterisks indicate significance of p<0.05 determined by one-way ANOVA followed by Dunnett\u2019s test comparing WT to each mutant (F262C: p=0.0007; I247C: p=0.0471; V258C: p=0.0363).\n\nGiven that this hydrophobic groove is formed also by residues in ECL2, we wondered if residues in ECL2 might also play a role in CBX-mediated inhibition. We mutated selected residues in ECL2 of hPanx1 to cysteines and measured channel activity before and after CBX application. We found that mutations at Ile247, Val258, and Phe262 (hPanx1 numbering) diminished CBX-sensitivity (Figure 4c). These data suggest that both ECL1 and ECL2 play important roles in inhibition of Panx1 by CBX. Although we do not have a cryo-EM structure complexed to CBX at this point, we speculate that CBX inhibits Panx channels by binding between ECL1 and ECL2 and \u2018locking\u2019 the conformation of gate forming ECL1 in favor of channel closure.\n\n## Discussion\n\nThe frPanx1-\u0394LC structure uncovered a unique heptameric assembly of a large-pore channel that harbors an extracellular constriction formed by Trp74 and Arg75. These residues are located on ECL1 and face toward the central pore of the channel and thus, are situated to regulate channel function. Mutagenesis studies at these positions revealed that both residues play pivotal roles in ion selection. Unlike the LRRC8A anion channel, however, the positively charged Arg75 does not seem to form a canonical selectivity filter. Instead, the guanidino group of Arg75 likely mediates a cation-\u03c0 interaction with Trp74 in the neighboring subunit, which seems to control ion selection. One possible ion selection mechanism is that this cation-\u03c0 interaction stabilizes the inter-subunit interactions, which in turn creates an electrostatic environment that favors anion permeation. Another possibility is that tight inter-subunit interactions in the extracellular domain are necessary to form an ion selectivity filter in the missing region in our current model (e.g. N-terminus or C-terminal domain).\n\nWhich functional state does our model represent? Based on the lack of channel activity at 0 mV (Figure 1\u2014figure supplement 2e and f), our current structure may represent a closed conformation. This is supported by the existence of a highly acidic region near Trp74 (Figure 3\u2014figure supplement 2), which may serve as a barrier for anions to permeate. However, given that the narrowest constriction at Trp74 is\u00a0~10 \u00c5 wide, it is possible that the structure actually represents an open conformation. Indeed, the +GS version of frPanx1-\u0394LC shows larger leak currents (Figure 1a and b), suggesting that the C-terminal truncation may promote channel opening while lack of the N-terminal modification renders it closed. If the conformation of the N-terminus in frPanx1-\u0394LC is somehow compromised during purification or reconstitution into nanodiscs, it is possible that our structure may actually look closer to the +GS version. While further studies are necessary to define the functional state of our current structure, the weak EM density in the N-terminal region leaves the possibility that frPanx1-\u0394LC may be representing an open state.\n\nWe found that ECL1 and ECL2 interact to each other and form a potential CBX binding pocket. Both ECL1 and ECL2 may undergo movement based on conformational alterations of the TMDs and cytoplasmic domains. For example, it is conceivable that movement of the TMDs caused by membrane stretch or voltage, or changes in the cytoplasmic domain triggered by caspase cleavage may be coupled to conformational rearrangements in the extracellular domain. The major role of the extracellular domain in pannexin function is strongly supported by our experimental results demonstrating that mutating Trp74 and Arg75, as well as surrounding residues in ECL1 and ECL2, alter channel properties including ion selectivity. Furthermore, we previously demonstrated that application of CBX to mutants at Trp74 (e.g. to Ala, Ile, Lys) potentiates voltage-dependent channel activity (Michalski and Kawate, 2016), which indicates that CBX likely acts as an allosteric inhibitor rather than a channel blocker.\n\nIn contrast to the extracellular domain, roles of the intracellular domain remain elusive. While the C-terminal domain has been demonstrated to play important roles in Panx1 channel gating (Sandilos et al., 2012), our study neither confirms or refutes this mechanism as half of this domain is missing in our current structure. Likewise, the first 10 residues in the N-terminus are disordered, making it challenging to understand how these residues tune the activity of Panx1 channel (Michalski et al., 2018). Given their important roles in channel gating, it is possible that the unmodeled N-terminal region may interact with the deleted region of the C-terminal domain. It is also possible that these domains may form a channel gate. In contrast to these domains, the deleted residues in ICL-1 (between Gly171 and Lys194) seems to play a minimal role in channel gating. We surveyed 23 different deletion constructs (in which each variant harbored a different deletion length and position) and among these, all deletions constructs showed voltage-dependent channel activity via whole-cell patch clamp, with the exception of a construct in which the entire region between Lys155 and Lys194 was removed. We also tested these deletion constructs using FSEC and found that all functional constructs were properly assembled into heptamers. The above evidence indicates that the deleted region in ILC-1 plays an insignificant role in channel gating. The EM density in this region was weak and could not be modeled, indicating a high degree of conformational flexibility.\n\nIn conclusion, our frPanx1-\u0394LC structure provides an important atomic blueprint for dissecting functional mechanisms of Panx1. While we did not observe a gate-like structure in the current cryo-EM map, the missing domains, especially the N-terminal loop and the C-terminal domain, may serve as a channel gate on the intracellular side of the channel. Further structure-based experiments such as cysteine accessibility and molecular dynamics simulations will facilitate our understanding of how this unique large-pore channel functions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Xenopus tropicalis)</td>\n      <td>frPanx1</td>\n      <td>Synthesized by Genscript</td>\n      <td>NCBI Reference Sequence: NP_001123728.1</td>\n      <td>Frog pannexin-1 gene sequence</td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>hPanx1</td>\n      <td>Synthesized by Genscript</td>\n      <td>NCBI Reference Sequence: NP_056183.2</td>\n      <td>Human pannexin-1 gene sequence</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T cells</td>\n      <td>ATCC</td>\n      <td>Cat#: CRL-3216, RRID: CVCL_0045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf9 cells</td>\n      <td>ATCC</td>\n      <td>Cat#: CRL-1711, RRID: CVCL_0549</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIE2 hPanx1</td>\n      <td>doi: 10.1085/jgp.201711804</td>\n      <td></td>\n      <td>Mammalian expression vector for electrophysiology presented in Figure 1\u2014figure supplement 1 and 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIE2 hPanx1 +GS</td>\n      <td>doi: 10.1085/jgp.201711804</td>\n      <td></td>\n      <td>Mammalian expression vector for electrophysiology presented in Figures 1, 3 and 4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIE2 frPanx1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Mammalian expression vector for electrophysiology presented in Figure 1\u2014figure supplement 1 and 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIE2 frPanx1 +GS</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Mammalian expression vector for electrophysiology presented in Figure 1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIE2 frPanx1-\u0394LC</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Mammalian expression vector for electrophysiology presented in Figure 1\u2014figure supplement 1 and 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIE2 frPanx1-\u0394LC +GS</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Mammalian expression vector for electrophysiology presented in Figure 1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pC-NG-FB7 frPanx1-\u0394LC</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Insect cell/baculovirus expression construct</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pC-NG-FB7 frPanx1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Insect cell/baculovirus expression construct</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pC-NG-FB7 hPanx1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Insect cell/baculovirus expression construct</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>MSP2N2</td>\n      <td>doi:\u00a010.1016/S0076-6879(09)64011\u20138</td>\n      <td></td>\n      <td>nanodisc expression construct</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Fugene 6</td>\n      <td>Promega</td>\n      <td>Cat#: E2691</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Carbenoxolone</td>\n      <td>Sigma</td>\n      <td>Cat#: C4790</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>C12E8</td>\n      <td>Anatrace</td>\n      <td>Cat#: APO128</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DDM</td>\n      <td>Anatrace</td>\n      <td>Cat#: D310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Soybean polar lipid extract</td>\n      <td>Avanti</td>\n      <td>Cat#: 541602</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cisTEM</td>\n      <td>doi: 10.7554/eLife.35383</td>\n      <td>RRID: SCR_016502</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Warp</td>\n      <td>doi: 10.1038/s41592-019-0580-y</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>doi: 10.1107/S0907444904019158</td>\n      <td>RRID: SCR_014222</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>doi: 10.1107/S09074449052925</td>\n      <td>RRID: SCR_014224</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Axon pClamp 10.5</td>\n      <td>Axon (Molecular Devices)</td>\n      <td>RRID: SCR_011323</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell line generation\n\nHEK293 (CRL-1573) cell lines were purchased from the American Type Culture Collection (ATCC, Manassas, VA), and therefore were not further authenticated. The mycoplasma contamination test was confirmed to be negative at ATCC.\n\n### Purification of frPanx1-\u0394LC\n\nfrPanx1 (NP_001123728.1) was synthesized (Genscript) and cloned into the BamHI/XhoI sites of pCNG-FB7 vector containing a C-terminal Strep-tag II (WSHPQFEK). Amino acids from the IL1 and IL2 were removed by standard PCR strategies, and the BamHI site was also removed by quickchange mutagenesis. The full length frPanx1 and hPanx1 (NP_056183.2; synthesized by Genscript) were also subcloned into pCNG-FB7 vectors by standard PCR. Sf9 cells were infected with high titer baculovirus (20\u201325 mL P2 virus/L cells) at a cell density of 2.5\u20133.0 \u00d7 106 cells/ mL and cultured at 27\u00b0C for 48 hr. Cells were collected by centrifugation, washed once with PBS, and lysed by nitrogen cavitation (4635 cell disruption vessel; Parr Instruments) at 600 psi in PBS containing leupeptin (0.5 \u03bcg/mL), aprotinin (2 \u03bcg/mL), pepstatin A (0.5 \u03bcg/mL), and phenylmethylsulfonyl fluoride (0.5 mM). Broken cells were centrifuged at 12,000 x g for 10 min, and membranes were collected by ultracentrifugation at 185,000 x g for 40 min. Membranes were suspended and solubilized in PBS containing 1% C12E8 (Anatrace) for 40 min, followed by ultracentrifugation at 185,000 x g for 40 min. Solubilized material was incubated with StrepTactin Sepharose High-Performance resin (GE Healthcare) for 40 min in batch. Resin was collected onto a gravity column (Bio-Rad), washed with 10 column volumes of wash buffer (150 mM NaCl, 100 mM Tris-HCl pH 8.0, 1 mM EDTA, 0.5 mM C12E8), and eluted with five column volumes of wash buffer supplemented with 2.5 mM desthiobiotin. Eluted protein was concentrated and further purified on a Superose 6 10/300 Increase column (GE Healthcare) with 150 mM NaCl, 10 mM Tris pH 8.0, 0.5 mM DDM as the running buffer. Peak fractions were collected and pooled. All steps were performed at 4\u00b0C or on ice.\n\n### Reconstitution into nanodiscs\n\nMSP2N2 apolipoprotein was expressed and purified as described previously (Ritchie et al., 2009), and the N-terminal His tag was cleaved off using TEV protease prior to use. To incorporate frPanx1 into nanodiscs, soybean polar extract, MSP2N2 and frPanx were mixed at final concentrations of 0.75, 0.3 and 0.3 mg/ml, respectively. The mixture was incubated end-over-end for 1 hr at 4\u00b0C, followed by detergent removal by SM2 Bio-Beads (Bio-Rad). The supernatant and wash fractions were collected after an overnight incubation (~12 hr) and further purified by size exclusion chromatography using a Superose 6 10/300 column in 20 mM Tris-HCl pH 8.0, 150 mM NaCl, 1 mM EDTA. Peak fractions were pooled and concentrated to 3 mg/mL.\n\n### Cryo-EM sample preparation and image collection\n\nfrPanx1 in nanodiscs or hPanx1 in n-Dodecyl-\u03b2-D-Maltopyranoside (DDM; Anatrace) were applied to glow-discharged lacey carbon-coated copper grids (Electron Microscopy Services). The grids were blotted for 4 s with blot force 7 at 85% humidity at 15\u00b0C, and plunge frozen into liquid ethane using a Vitrobot Mark IV (Thermo Fisher). All data were collected on a FEI Titan Krios (Thermo Fisher) operated at an acceleration voltage of 300 keV. For frPanx1-\u0394LC, a total of 2034 images were collected at 130 k magnification with a pixel size of 1.07 \u00c5 in electron counting mode. Each micrograph was composed of 32 frames collected over 4 s at a dose of 1.79 e / \u00c52/frame and a total exposure per micrograph of 57.3 e / \u00c52. Data were collected using EPU software (FEI). For full-length frPanx1 in nanodiscs, a total of 574 images were collected at 130 k magnification with a pixel size of 1.06 \u00c5 in electron counting mode. Each micrograph was composed of 50 frames collected over 10 s at a dose of 1.4 e / \u00c52/frame. The total exposure per micrograph was 70 e / \u00c52. Data were collected using SerialEM (Schorb et al., 2019). Data for full-length hPanx1 in DDM were collected in a similar fashion.\n\n### Cryo-EM image processing and single particle analysis\n\nWarp was used for aligning movies, estimating the CTF and particle picking for frPanx1-\u0394LC and full-length hPanx1. For full-length frPanx1, movie alignment and CTF estimation were performed using the program Unblur and CTFFind, respectively, within the cisTEM package (Grant et al., 2018). 2D classification, ab-initio 3D map generation, 3D refinement, 3D classification, per particle CTF refinement and B-factor sharpening were performed using the program cisTEM (Grant et al., 2018). The single particle analysis workflow for frPanx1-\u0394LC is shown in Figure 1\u2014figure supplement 3. De novo modeling was performed manually in Coot (Emsley and Cowtan, 2004). The final model was refined against the cryo-EM map using PHENIX real space refinement with secondary structure and Ramachandran restraints (Adams et al., 2010). The FSCs were calculated by phenix.mtriage. Data collection and refinement statistics are summarized in Extended data Table 1.\n\n### Electrophysiology\n\nHEK293 cells were plated onto 12 mm glass coverslips (VWR) in wells of a six-well plate and transfected 24 hr later with 500\u2013800 ng plasmid DNA using FUGENE 6 (Promega) according to the manufacturer\u2019s instructions. Recordings were performed\u00a0~16\u201324 hr later using borosilicate glass micropipettes (Harvard Apparatus) pulled and polished to a final resistance of 2\u20135 M\u03a9. Pipettes were backfilled with (in mM) 147 NaCl, 10 EGTA, 10 HEPES pH 7.0 with NaOH. Patches were obtained in external buffer composed of (in mM) 147 NaCl, 10 HEPES pH 7.3 with NaOH, 13 glucose, 2 KCl, 2 CaCl2, 1 MgCl2. A rapid solution exchange system (RSC-200; Bio-Logic) was used to perfuse cells with CBX or various salt solutions. Currents were recorded using an Axopatch 200B amplifier (Axon Instruments), filtered at 2 kHz (Frequency Devices), digitized with a Digidata 1440A (Axon Instruments) with a sampling frequency of 10 kHz, and analyzed with the pClamp 10.5 software (Axon Instruments). For voltage step recordings, Panx1-expressing cells were held at \u221260 mV and stepped to various voltage potentials for 1 s in 20 mV increments before returning to \u221260 mV. For ramp recordings, cells were held at \u221260 mV, and ramped between \u2212100 mV and + 100 mV over 3 s duration.\n",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "1a7e07cb-2870-4897-a6ba-8c291ae676ea",
+      "submission_id": "ad0d19e3-a893-4a0c-af6a-8f22fb7a03ea",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton J Swartz, National Institute of Neurological Disorders and Stroke, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54670.sa1](https://doi.org/10.7554/eLife.54670.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is an important manuscript describing the first near atomic resolution structure of a pannexin channel, a family of large pore channels thought to be important for the movement of ions and small molecules such as ATP across cellular membranes. The mechanisms by which the activity of pannexin channels are regulated are poorly understood, yet these channels are thought to play important roles in innate immunity, neuronal signaling, apoptosis, cancer and ischemia. Having a structure of the channel will enable further mechanistic studies on how this protein plays important biological roles. By combining data from cryo-EM and electrophysiology, this manuscript describes the first structure of a pannexin channel at near-atomic resolution and it sheds light on the determinants of anion selectivity, gating and pharmacology. The data appears to be of high quality and the major conclusions of the manuscript are sound. The reviewers agreed that the work is a strong candidate for publication in eLife, and the authors have done an excellent job of revising the manuscript to address the concerns of the reviewers.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The Cryo-EM Structure of a Pannexin 1 Channel Reveals an Extracellular Gating Mechanism\" for consideration by eLife. Your article has been reviewed by Kenton Swartz as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Raimund Dutzler (Reviewer #2); Ming Zhou (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an important manuscript describing the first near atomic resolution structure of a pannexin channel, a family of large pore channels thought to be important for the movement of ions and small molecules (e.g. ATP) across cellular membranes. The reviewers thought this was an excellent manuscript that is appropriate for publication in eLife. As is spelled out in the reviews below, all three reviewers have suggestions for improving the manuscript in revision. Most of the issues they raise can be readily addressed by careful revision of the text to openly discuss unresolved questions or to tone down some conclusions (e.g. the potential CBX binding site). We ask that you prepare a revised version that addresses the issues raised to the best of your ability.\n\nReviewer #1:\n\nThis manuscript presents for the first time the structure of a pannexin channel. This is a timely and very important finding for the field that will serve as a basis for understanding and studying pannexin-1 channel function.\n\nI think it is important to note that in the current (and frenetic) race of structural biologists to determine channel structures, the main concern for physiologists is whether these structures really represent physiological conformations of the channel. I believe the authors prove, at least partially, that this is the case with the frog pannexin-1 channel. The structural interpretations that the extracellular loop 1, in particular, residues at positions W74 and R75 regulate ionic selectivity are nicely supported by their functional data. The functional data supporting inhibition by carbenoxolone at extracellular region are complementary, but less demonstrative.\n\nThe major concern with this work is with respect to some forced interpretations that do not properly address the limitations of the pannexin-1 structure and require proper clarification. This refers mainly to the lack of reliable structural data related for the cytosolic domains N-terminus (NT), intracellular loops (ICL) and C-terminus (CT), which have been shown to be crucial in gating and permeation of these channels. This needs to be properly acknowledged in the manuscript.\n\nAnother manuscript describing the pannexin-1 structures from frog and human was published a few days after the current manuscript in BioRxiv. They share similar structural results, and both lack structural information for the N-terminal and C-terminal domain.\n\nEssential revisions:\n\n1) As stated by the authors, the NT region has been shown to regulate gating and permeation in pannexin-1 channels. In this presented pannexin-1 structure the first 10 residues of the NT region are not resolved. The remaining residues are lining the pore as shown for other large pore channels including connexin, innexin and LRRC8 channels. Importantly, the intracellular loops in the aforementioned structures are critical for stabilizing the N-terminal region. This has been more recently demonstrated for connexin hemichannels. To solve the pannexin-1 structure, the authors had to remove 24 amino acids from the first ICL. How the deletion of this segment could alter the interactions between ICL1, ICL2, and NT, and the potential implications in channel gating or selectivity need to be discussed.\n\n2) The structure does not contain a significant part of the C-terminal region, which has been shown to play an important role in the gating of human, rat and mouse Pannexin 1 channels. The lack of the CT in pannexin-1 leads to constitutively open channels in these species, even at negative potential. How is therefore explained that the frog pannexin-1 structure lacking the CT region corresponds to a closed channel conformation as the authors propose?\n\n3) The authors suggest that the motif formed by the residues W74 and R75 is an extracellular gate in pannexin-1 channels. They referred to this motif in the text as a unique mechanism of gating, which gives the impression of a unique gate. If W74 is the only gate, one would predict that mutations in W74 (such as W74A) will disrupt the gate and produce a leaky channel, due to the substitution of an amino acid with a short side chain. This does not seem to be observed by the authors. If the mutations do not lead to a leak current, it is likely that there is a second gate for atomic ions.\n\n4) Pannexin channel currents for different constructs shown in Figure 1B and Figure 1\u2014figure supplement 2F are not normalized by channel levels. This implies that currents of frPanx1, hPanx1, and frPanx1-\u0394LC are not comparable.\n\n5) Figure 1\u2014figure supplement 2F suggests that the channels used to determine the cryo-EM structure (i.e., those formed by frPanx1-\u0394LC) are not functional. As noted, the authors needed to add a GS motif in the NT region to increase voltage-sensitivity. This reinforces the idea of a role for the NT in gating.\n\n6) The Discussion section is incomplete. I think that many of the concerns in this review need to be addressed by the authors in this section.\n\n7) The authors conclude that \"our structural and functional study establishes the extracellular loops as the unique structural determinants for channel gating and inhibition in Panx 1\u2026\". Considering the above issues this sentence is incorrect. It must be also noted that the inhibition mechanism proposed by the authors is only ascribable to CBX. I think that modeling/docking of CBX with the pannexin-1 structure will reinforce the experimental data and provide a more solid conclusion about the mechanism of blockade by CBX.\n\nReviewer #2:\n\nBy combining data from cryo-EM and electrophysiology, the work describes the first structure of a Pannexin channel at high resolution and it sheds light on the determinants of anion selectivity. This is an excellent manuscript that provides important insight into an important ion channel. The data appears to be of high quality and the major conclusions of the manuscript are sound. I thus think that the work is a strong candidate for publication in eLife.\n\nEssential revisions:\n\n\u2013 The cryo-EM data is of high quality and it supports the structural claims made in the manuscript. The ring of aromatic residues at the extracellular constriction and the close-by arginine residues are particularly interesting, and the proposed cation-\u03c0 electron interaction is supported by the data (considering the limited resolution of the map). Whereas the role of both residues for shaping the selectivity properties of the protein have been nicely demonstrated in patch clamp recordings, the evidence for the same region to act as gate is to some degree vague and speculative since it has not been demonstrated that the same residues would provide that largest energy-barrier that obstructs permeation in the closed conformation.\n\n\u2013 Given the proposal that different region contribute to anion selectivity it would be interesting to know more about the electrostatics within the pore region.\n\n\u2013 I wonder whether there is evidence that the described Arg residues contribute to the observed voltage dependence of currents. Although the authors have shown traces of recordings of the mutants to demonstrate shifts in the reversal potential, possible changes in the voltage dependence of gating could be better documented. I expect in their structure, the positively charged Arg would be located outside the electric field.\n\n\u2013 I wonder whether the authors have additional evidence to exclude a potential role of CBX as pore blocker. Is the effect of CBX reversible?\n\n\u2013 Are small currents after addition of CBX reflect incomplete occupancy of the blocker or residual conduction of the CBX-bound channel and are currents in mutants a consequence of decreased potency or increased conductance of the blocked channel (given the large amount of data presented in the study such experiments might be focus of a future study).\n\n\u2013 In the electrophysiology section, it would be important to show some comparative data from mock-transfected cells.\n\n\u2013 Was the change in the junction potential in asymmetric solutions in the selectivity experiments calculated to be significant and was it corrected?\n\nReviewer #3:\n\nThe manuscript from the Kawate lab titled \"The cryo-EM structure of a pannexin 1 channel reveals an extracellular gating mechanism\" reports the structure of a pannexin 1 from frog at about 3.0 \u00c5 resolution and functional studies that tested structure-based hypotheses on ion selectivity and inhibitor binding site. The work is significant in that this is the first pannexin structure, and that the structure revealed a heptameric assembly different from other large-pore forming channels such as connexins, innexins and LRRC8. The initial FSEC and excellent biochemical work led to identification of a stable construct suitable for structural studies. The procedures for cryo-EM seem straightforward, and the quality of the density map seems consistent with the claimed resolution.\n\nI feel that the experiments are all solid and interpretations are sound. I have two comments.\n\nFirst, the study on CBX is a very good follow up on a previous JGP paper by the same lab, and it provides further evidence that extracellular loop 1 harbors the inhibitor. However, short of a CBX-pannexin complex, one could argue that the inhibitor may bind elsewhere and induce a propagated effect that is mediated by the extracellular loop.\n\nSecond, I see utility of using ion permeation as a read out for testing certain aspects of pannexin, but I do not quite understand the motivation of studying ion selectivity in pannexin. If the main function of a pannexin is to form a large pore to allow release of ATP, would it be more relevant to study permeation of ATP and its gating on a proteoliposome assay? Is there any indication that anion permeation is relevant in physiology?\n",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "07310dac-d521-4240-9212-de41fa5d3b70",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C1",
+      "claim": "Pannexins are large-pore forming channels responsible for ATP release under a variety of physiological and pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Pannexins are large-pore forming channels responsible for ATP release under a variety of physiological and pathological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about pannexin function that is supported by established scientific knowledge and citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "1f00972d-bdda-40a3-97cf-711c5bc09552",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C2",
+      "claim": "Pannexins have minimal sequence similarity to connexins, innexins, and LRRC8.",
+      "claim_type": "EXPLICIT",
+      "source": "Although predicted to share similar membrane topology with other large-pore forming proteins such as connexins, innexins, and LRRC8, pannexins have minimal sequence similarity to these protein families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by sequence analysis knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "8b706c71-05aa-4f72-8eb6-d52276a76eb8",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C3",
+      "claim": "The cryo-EM structure of frog pannexin 1 (Panx1) channel was determined at 3.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the cryo-EM structure of a frog pannexin 1 (Panx1) channel at 3.0 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "82751118-5fef-41ac-a89e-fa238241f07a",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C4",
+      "claim": "Panx1 protomers harbor four transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Panx1 protomers harbor four transmembrane helices similar in arrangement to other large-pore forming proteins but assemble as a heptameric channel with a unique constriction formed by Trp74 in the first extracellular loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and shown in structural figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "ceafe60e-69e2-43e8-87f1-2527fdbded7f",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C5",
+      "claim": "Panx1 assembles as a heptameric channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Panx1 protomers harbor four transmembrane helices similar in arrangement to other large-pore forming proteins but assemble as a heptameric channel with a unique constriction formed by Trp74 in the first extracellular loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and demonstrated by cryo-EM structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "52ceeb28-0afb-47fb-953d-65bef147331e",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C6",
+      "claim": "Panx1 has a unique constriction formed by Trp74 in the first extracellular loop.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Panx1 protomers harbor four transmembrane helices similar in arrangement to other large-pore forming proteins but assemble as a heptameric channel with a unique constriction formed by Trp74 in the first extracellular loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and shown in structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "1389806e-1093-4e17-8e44-f654ebee3f64",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C7",
+      "claim": "Mutating Trp74 or the nearby Arg75 disrupts ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating Trp74 or the nearby Arg75 disrupt ion selectivity, whereas altering residues in the hydrophobic groove formed by the two extracellular loops abrogates channel inhibition by carbenoxolone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and supported by electrophysiology data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "63398269-7ad8-4798-b5d8-45334680568b",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C8",
+      "claim": "Altering residues in the hydrophobic groove formed by the two extracellular loops abrogates channel inhibition by carbenoxolone.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating Trp74 or the nearby Arg75 disrupt ion selectivity, whereas altering residues in the hydrophobic groove formed by the two extracellular loops abrogates channel inhibition by carbenoxolone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "0f29aa37-8707-41b3-9c9e-798b9cf13a77",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C9",
+      "claim": "The extracellular loops are important structural motifs for ion selectivity and channel inhibition in Panx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural and functional study establishes the extracellular loops as important structural motifs for ion selectivity and channel inhibition in Panx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, supported by structural and functional data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "2674e9f7-880f-4482-9671-69a07f00348a",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C10",
+      "claim": "Pannexins regulate nucleotide release during apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Pannexins are a family of ubiquitously expressed large-pore forming channels which regulate nucleotide release during apoptosis (Chekeni et al., 2010), blood pressure (Billaud et al., 2011; Billaud et al., 2015), and neuropathic pain (Bravo et al., 2014; Weaver et al., 2017; Mousseau et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "09946d5e-6711-4e5c-af36-65677503a1ca",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C11",
+      "claim": "Pannexins regulate blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Pannexins are a family of ubiquitously expressed large-pore forming channels which regulate nucleotide release during apoptosis (Chekeni et al., 2010), blood pressure (Billaud et al., 2011; Billaud et al., 2015), and neuropathic pain (Bravo et al., 2014; Weaver et al., 2017; Mousseau et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "69899cc7-6a9b-4cae-b72b-51c3be5b0132",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C12",
+      "claim": "Pannexins regulate neuropathic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Pannexins are a family of ubiquitously expressed large-pore forming channels which regulate nucleotide release during apoptosis (Chekeni et al., 2010), blood pressure (Billaud et al., 2011; Billaud et al., 2015), and neuropathic pain (Bravo et al., 2014; Weaver et al., 2017; Mousseau et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "bef406a7-1140-41d7-a811-6f776111f208",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C13",
+      "claim": "Pannexins have limited sequence identity with innexins (~15% identity).",
+      "claim_type": "EXPLICIT",
+      "source": "While pannexins have limited sequence identity with innexins (~15% identity), they have virtually no sequence similarity to other large-pore forming channels (Panchin et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "e9eac87b-81cf-49eb-b652-1b0d1962068b",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C14",
+      "claim": "Pannexins have virtually no sequence similarity to other large-pore forming channels.",
+      "claim_type": "EXPLICIT",
+      "source": "While pannexins have limited sequence identity with innexins (~15% identity), they have virtually no sequence similarity to other large-pore forming channels (Panchin et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "97dd6335-5418-4bf5-8daa-971cfea82ff4",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C15",
+      "claim": "Panx1 is a large-pore forming channel responsible for ATP release from a variety of cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the pannexin family, pannexin 1 (Panx1) has garnered the most attention for its role as a large-pore forming channel responsible for ATP release from a variety of cell types (Bao et al., 2004; Dahl, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "62a25b7f-6032-4bfa-98a8-04357925e918",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C16",
+      "claim": "Voltage activates Panx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Different kinds of stimuli have been reported to activate Panx1 including voltage, membrane stretch, increased intracellular calcium levels, and positive membrane potentials (Bruzzone et al., 2003; Bao et al., 2004; Locovei et al., 2006; Wang et al., 2014; Chiu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "aaf1068a-9809-4e87-8a84-98fad33c6bf9",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C17",
+      "claim": "Membrane stretch activates Panx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Different kinds of stimuli have been reported to activate Panx1 including voltage, membrane stretch, increased intracellular calcium levels, and positive membrane potentials (Bruzzone et al., 2003; Bao et al., 2004; Locovei et al., 2006; Wang et al., 2014; Chiu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "24ec6833-3104-4a0f-8048-8884378e43cd",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C18",
+      "claim": "Increased intracellular calcium levels activate Panx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Different kinds of stimuli have been reported to activate Panx1 including voltage, membrane stretch, increased intracellular calcium levels, and positive membrane potentials (Bruzzone et al., 2003; Bao et al., 2004; Locovei et al., 2006; Wang et al., 2014; Chiu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "6a3a748d-8c35-4824-85a0-bd95e3e2a880",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C19",
+      "claim": "Positive membrane potentials activate Panx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Different kinds of stimuli have been reported to activate Panx1 including voltage, membrane stretch, increased intracellular calcium levels, and positive membrane potentials (Bruzzone et al., 2003; Bao et al., 2004; Locovei et al., 2006; Wang et al., 2014; Chiu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "2df02294-45d8-4fcb-88f0-88aca8c20f00",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C20",
+      "claim": "Proteases can permanently or temporarily stimulate Panx1 channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Panx1 is also targeted by signaling effectors, such as proteases and kinases, to permanently or temporarily stimulate channel activity (Pelegrin and Surprenant, 2006; Thompson et al., 2008; Sandilos et al., 2012; Billaud et al., 2015; Lohman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "c6d1f359-d47a-405c-ae52-d7c31ae636a2",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C21",
+      "claim": "Kinases can permanently or temporarily stimulate Panx1 channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Panx1 is also targeted by signaling effectors, such as proteases and kinases, to permanently or temporarily stimulate channel activity (Pelegrin and Surprenant, 2006; Thompson et al., 2008; Sandilos et al., 2012; Billaud et al., 2015; Lohman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "dd451784-8a34-44e1-a590-57556d95501e",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C22",
+      "claim": "Panx1 has a capacity to integrate distinct stimuli into channel activation leading to ATP release.",
+      "claim_type": "EXPLICIT",
+      "source": "The above evidence suggests that Panx1 has a capacity to integrate distinct stimuli into channel activation leading to ATP release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited evidence in the introduction.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "5058194b-1f6f-4dac-961c-5842337a6190",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C23",
+      "claim": "Frog Panx1 (frPanx1) is 66% identical to human Panx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Frog Panx1 (frPanx1; 66% identical to human, Figure 1\u2014figure supplement 1) displayed high expression levels and remained monodisperse when solubilized in detergent, suggesting high biochemical integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by sequence alignment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "b7d20e87-d972-49a0-8768-16ceb31ebea7",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C24",
+      "claim": "Frog Panx1 displayed high expression levels and remained monodisperse when solubilized in detergent.",
+      "claim_type": "EXPLICIT",
+      "source": "Frog Panx1 (frPanx1; 66% identical to human, Figure 1\u2014figure supplement 1) displayed high expression levels and remained monodisperse when solubilized in detergent, suggesting high biochemical integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by FSEC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "07f488c2-2f36-4f83-adb1-4edf814b2a9d",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C25",
+      "claim": "frPanx1 was stabilized by truncating the C-terminus by 71 amino acids and by removing 24 amino acids from the intracellular loop between transmembrane helices 2 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "We further stabilized frPanx1 by truncating the C-terminus by 71 amino acids and by removing 24 amino acids from the intracellular loop between transmembrane helices 2 and 3 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and describes the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "6eb9a7f2-fb67-4d77-a217-f110c3e27b69",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C26",
+      "claim": "frPanx1-\u0394LC displayed high stability in detergents and could be purified to homogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct, dubbed 'frPanx1-\u0394LC', displayed high stability in detergents and could be purified to homogeneity (Figure 1\u2014figure supplement 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by chromatography and gel data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "29a35f06-14e7-44da-8367-d1c0cb2db674",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C27",
+      "claim": "frPanx1 forms a functional pannexin channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that frPanx1 forms a functional pannexin channel by whole-cell patch clamp electrophysiology (Figure 1a and b; Figure 1\u2014figure supplement 2e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "21862772-5973-48bd-bd8d-4898684c619f",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C28",
+      "claim": "A total of 90,185 selected particles were used for 3D reconstruction at 3.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a total of 90,185 selected particles for 3D reconstruction at 3.0 \u00c5 resolution (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and describes the cryo-EM data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "6252fc35-3eb4-4a70-9766-6987ee6f41ed",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C29",
+      "claim": "The map quality was sufficient for de novo model building for the majority of frPanx1-\u0394LC with the exception of disordered segments of the N-terminus (residues 1\u201310), ECL1 (88\u2013100), and ICL1 (157\u2013194).",
+      "claim_type": "EXPLICIT",
+      "source": "The map quality was sufficient for de novo model building for the majority of frPanx1-\u0394LC with the exception of disordered segments of the N-terminus (residues 1\u201310), ECL1 (88\u2013100), and ICL1 (157\u2013194) (Figure 1c; Figure 1\u2014figure supplement 4, Video 1, and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and describes the quality of the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "b93d2930-5c84-4c28-8b16-a3024b425a50",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C30",
+      "claim": "The heptameric assembly of Panx1 is unique among known eukaryotic channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The frPanx1-\u0394LC structure revealed a heptameric assembly, which is unique among the known eukaryotic channels (Figure 1d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural comparison with other channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "aa9758d2-6d50-4c72-98c8-5e2254169415",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C31",
+      "claim": "Connexins are hexameric.",
+      "claim_type": "EXPLICIT",
+      "source": "Other large-pore forming channels include hexameric connexins (Maeda et al., 2009) and LRRC8s (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018), and the octameric innexins (Oshima et al., 2016) and calcium homeostasis modulator1 (CALHM1) (Syrjanen et al., 2020; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "b4cd1418-c30c-468c-b19e-82c3eab1b050",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C32",
+      "claim": "LRRC8s are hexameric.",
+      "claim_type": "EXPLICIT",
+      "source": "Other large-pore forming channels include hexameric connexins (Maeda et al., 2009) and LRRC8s (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018), and the octameric innexins (Oshima et al., 2016) and calcium homeostasis modulator1 (CALHM1) (Syrjanen et al., 2020; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "0300cef1-1523-4e5c-8129-31dc2cc01808",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C33",
+      "claim": "Innexins are octameric.",
+      "claim_type": "EXPLICIT",
+      "source": "Other large-pore forming channels include hexameric connexins (Maeda et al., 2009) and LRRC8s (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018), and the octameric innexins (Oshima et al., 2016) and calcium homeostasis modulator1 (CALHM1) (Syrjanen et al., 2020; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "f56e2ca9-3afa-49e8-a4f0-2a51b165b602",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C34",
+      "claim": "CALHM1 is octameric.",
+      "claim_type": "EXPLICIT",
+      "source": "Other large-pore forming channels include hexameric connexins (Maeda et al., 2009) and LRRC8s (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018), and the octameric innexins (Oshima et al., 2016) and calcium homeostasis modulator1 (CALHM1) (Syrjanen et al., 2020; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "cbd667d8-20f6-4ffd-acd0-2d0be91d54af",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C35",
+      "claim": "Previous studies suggested hexameric assembly of pannexin based on single channel recordings on concatemeric channels and negative stain electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result differs from previous studies that suggest hexameric assembly of pannexin based on single channel recordings on concatemeric channels and negative stain electron microscopy (Boassa et al., 2007; Wang et al., 2014; Chiu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "3be06963-00e7-45fd-b023-bf04231846e8",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C36",
+      "claim": "The heptameric assembly observed in the current study is unlikely to be caused by the carboxy-terminal truncation or intracellular loop deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "The heptameric assembly observed in the current study is unlikely to be caused by the carboxy-terminal truncation or intracellular loop deletion because cryo-EM images of the full-length frPanx1 also display clear seven-fold symmetry in the 2D class averages (Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by cryo-EM data of full-length protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "ee76168f-d8af-403c-a1de-913c09de0ed7",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C37",
+      "claim": "2D class averages of hPanx1 display a heptameric assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 2D class averages of hPanx1 display a heptameric assembly, but not other oligomeric states (Figure 2\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "e434f226-b943-47c8-97e4-0dc7666ab12a",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C38",
+      "claim": "The major oligomeric state of Panx1 is a heptamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, overall, our data suggests that the major oligomeric state of Panx1 is a heptamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "b9195d35-c169-44b8-bf07-e40e7f72baf8",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C39",
+      "claim": "The heptameric assembly is established by inter-subunit interactions at three locations: 1) ECL1s and the loop between \u03b22 and \u03b23; 2) TM1-TM1 and TM2-TM4 interfaces; and 3) \u03b19 helix and the surrounding \u03b13 and \u03b14 helices, and the N-terminal loop from the neighboring subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "This unique heptameric assembly is established by inter-subunit interactions at three locations: 1) ECL1s and the loop between \u03b22 and \u03b23; 2) TM1-TM1 and TM2-TM4 interfaces; and 3) \u03b19 helix and the surrounding \u03b13 and \u03b14 helices, and the N-terminal loop from the neighboring subunit (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "9acbf51c-733a-44b3-a8c5-a8b21132d2d0",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C40",
+      "claim": "The majority of residues mediating inter-subunit interactions are highly conserved (e.g. Phe67 and Tyr111).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the majority of residues mediating these interactions are highly conserved (e.g. Phe67 and Tyr111; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by sequence alignment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "80449de6-ae49-4efc-926e-a127e1dc6ca0",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C41",
+      "claim": "The overall protomer structure of Panx1 resembles that of other large-pore forming channels including connexin, innexins, and LRRC8.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall protomer structure of Panx1 resembles that of other large-pore forming channels including connexin, innexins, and LRRC8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "3113072d-9e65-424a-a9b2-d1d2b38938ab",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C42",
+      "claim": "Each Panx1 protomer harbors four transmembrane helices (TM1-4), two extracellular loops (ECL1 and 2), two intracellular loops (ICL1 and 2), and an amino (N)-terminal loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other large-pore forming channels, each Panx1 protomer harbors four transmembrane helices (TM1-4), two extracellular loops (ECL1 and 2), two intracellular loops (ICL1 and 2), and an amino (N)-terminal loop (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in structural figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "e447ca3a-8c95-4766-8630-92a8f8bc0220",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C43",
+      "claim": "The transmembrane helices of Panx1 are assembled as a bundle in which the overall helix lengths, angles, and positions strongly resemble the transmembrane arrangements observed in other large-pore channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane helices of Panx1 are assembled as a bundle in which the overall helix lengths, angles, and positions strongly resemble the transmembrane arrangements observed in other large-pore channels (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "0ef8539e-c4ed-403a-8db0-8f636e0e95c2",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C44",
+      "claim": "Panx1 has no similarity in transmembrane arrangement to CALHMs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Panx1 has no similarity in transmembrane arrangement to another group of large-pore channels, CALHMs whose protomers also contain four transmembrane helices (Choi et al., 2019; Syrjanen et al., 2020; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural comparison and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "70f9d859-d9dc-4a84-af35-598cb4245920",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C45",
+      "claim": "Structural features in the Panx1 ECL1 and ECL2 domains are conserved among large-pore channels despite limited sequence similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural features in the Panx1 ECL1 and ECL2 domains are conserved among large-pore channels despite limited sequence similarity (Figure 2d\u2013g; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "14b946c9-3cbd-461c-9fdd-6aa2e6c4da11",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C46",
+      "claim": "The Panx1 ECL1 and ECL2 are joined together by two conserved disulfide bonds (Cys66 with Cys267, Cys84 with Cys248).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Panx1 ECL1 and ECL2 are joined together by two conserved disulfide bonds (Cys66 with Cys267, Cys84 with Cys248) in addition to several \u03b2-strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "775c1e66-e7f6-420d-ab30-92599f2ba87e",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C47",
+      "claim": "ECL1 contains an alpha-helix that extends towards the central pore and forms an extracellular constriction of the permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "ECL1 also contains an alpha-helix that extends towards the central pore and forms an extracellular constriction of the permeation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "0dff6850-d6fa-403d-a826-2df4c36c0928",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C48",
+      "claim": "The Panx1 intracellular domains are structurally unique.",
+      "claim_type": "EXPLICIT",
+      "source": "While much of the transmembrane domains and extracellular loops show similarities to other large-pore forming channels, the Panx1 intracellular domains are structurally unique (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "a43def74-c028-44a4-8e77-193dfd7070bf",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C49",
+      "claim": "ICL1 and ICL2 together form a bundle of helices that make contact with the N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "ICL1 and ICL2, for example, together form a bundle of helices that make contact with the N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "f1853029-62ff-4ec1-95e1-2f2481537ec7",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C50",
+      "claim": "The N-terminal loop of Panx1 forms a constriction of the permeation pathway and extends towards the intracellular region.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal loop of Panx1 forms a constriction of the permeation pathway and extends towards the intracellular region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "a1fb04b5-acba-4852-a2bf-126fbf6830f9",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C51",
+      "claim": "The first ~10 amino acids of the N-terminus are disordered in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The first ~10 amino acids of the N-terminus are disordered in our structure, but these residues might play a role in ion permeation or ion selectivity (Wang and Dahl, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "f7ceeb4f-fa18-4268-8e8b-53ecc0ed904d",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C52",
+      "claim": "The first ~10 amino acids of the N-terminus might play a role in ion permeation or ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The first ~10 amino acids of the N-terminus are disordered in our structure, but these residues might play a role in ion permeation or ion selectivity (Wang and Dahl, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "2b03f383-ef16-4416-a2de-5a305f4df6d9",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C53",
+      "claim": "The Panx1 permeation pathway spans a length of 104 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The Panx1 permeation pathway spans a length of 104 \u00c5, with constrictions formed by the N-terminal loop, Ile58, and Trp74 (Figure 3a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "b5a87356-5c30-4e6a-953e-f228e5ea47ef",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C54",
+      "claim": "The Panx1 permeation pathway has constrictions formed by the N-terminal loop, Ile58, and Trp74.",
+      "claim_type": "EXPLICIT",
+      "source": "The Panx1 permeation pathway spans a length of 104 \u00c5, with constrictions formed by the N-terminal loop, Ile58, and Trp74 (Figure 3a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "2b4dee46-3c23-43b3-9875-3fbc2e6b8993",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C55",
+      "claim": "The narrowest constriction is surrounded by Trp74 located on ECL1.",
+      "claim_type": "EXPLICIT",
+      "source": "The narrowest constriction is surrounded by Trp74 located on ECL1 (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "07f5433a-bdb2-44b9-a4fa-6db7eabd9b45",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C56",
+      "claim": "Trp74 is highly conserved among species including hPanx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Trp74 is highly conserved among species including hPanx1 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by sequence alignment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "8f282841-a503-4940-b533-386d6042c7b8",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C57",
+      "claim": "Panx1 has been previously characterized as an anion selective channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Panx1 has been previously characterized as an anion selective channel (Ma et al., 2012; Romanov et al., 2012; Chiu et al., 2014), we wondered if positively charged amino acids around the narrowest constriction formed by Trp74 may contribute to anion selectivity of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "be7a0025-d556-45bd-902f-23bf64bc661c",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C58",
+      "claim": "Arg75 is situated nearest to the tightest constriction of the permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Arg75 is situated nearest to the tightest constriction of the permeation pathway (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "07f8d741-7a14-40de-9a6a-a21a425deafb",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C59",
+      "claim": "Arg75 might be a major determinant of anion selectivity of Panx1 channels in the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that Arg75 might be a major determinant of anion selectivity of Panx1 channels in the open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the Results section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "65e6f073-252c-454a-ae75-667afc5f3a4b",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C60",
+      "claim": "When treated with gluconate, the reversal potential of wild-type Panx1 shifted to +26 mV, suggesting the channel is more permeable to Cl- than to Gluc-.",
+      "claim_type": "EXPLICIT",
+      "source": "When treated with the large anion, gluconate (Gluc-), Erev shifted to +26 mV, suggesting the channel is more permeable to Cl- than to Gluc-.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "aba97c3b-8145-45da-8d49-0a9c216f815c",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C61",
+      "claim": "When exposed to NMDG+, the reversal potential of wild-type Panx1 remained close to 0 mV, suggesting that Na+ and NMDG+ equally (or do not) permeate Panx1.",
+      "claim_type": "EXPLICIT",
+      "source": "When exposed to the large cation, N-methyl-D-glucamine (NMDG+), Erev remained close to 0 mV, suggesting that Na+ and NMDG+ equally (or do not) permeate Panx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "40812806-2277-49f4-986b-5e4a908ddd7e",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C62",
+      "claim": "The Arg75Lys mutant maintains the positive charge at position 75 and displayed Erev values comparable to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "The Arg75Lys mutant maintains the positive charge of this position, and displayed Erev values comparable to WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "72dd3612-4f18-4de6-a4cf-c8d670f0ccc5",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C63",
+      "claim": "The Arg75Ala mutant diminished Cl- selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing the positive charge at this position, as shown by the Arg75Ala mutant, diminished Cl- selectivity as the Erev in NaGluc remained near 0 mV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "1fed3cff-0911-4dcf-ae22-9a9121f73dab",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C64",
+      "claim": "The Arg75Ala mutant lost anion selectivity and Na+ became more permeable than NMDG+.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the Erev in NMDGCl shifted to \u221222 mV, suggesting the channel had lost anion selectivity and Na+ became more permeable than NMDG+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "9b21a95b-2af5-45fc-900c-8e2d7881a420",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C65",
+      "claim": "The Arg75Glu mutant shifted the Erev in NaGluc to \u221216 mV and in NMDGCl to \u221245 mV, indicating that Gluc- became more permeable to Cl-.",
+      "claim_type": "EXPLICIT",
+      "source": "A charge reversal mutant, Arg75Glu, shifted the Erev in NaGluc to \u221216 mV and in NMDGCl to \u221245 mV, indicating that Gluc- became more permeable to Cl-.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "0d3706b5-5d25-46fe-8fa7-e6195ebea190",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C66",
+      "claim": "The positively charged Arg75 plays a role in anion selectivity of Panx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results support the idea that the positively charged Arg75 plays a role in anion selectivity of Panx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "5660d102-88f4-4ff1-b75a-aa35bd2ff1c7",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C67",
+      "claim": "Both Trp74Arg and Trp74Glu mutants become less selective to anions and more permeable to Na+.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both Trp74Arg and Trp74Glu mutants become less selective to anions and more permeable to Na+ (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "7fbdd20b-f214-43c7-892d-cc4270848512",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C68",
+      "claim": "Introducing a charge at position 74 disrupts the natural ion selectivity of Panx1 channels but position 74 itself does not control ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that introducing a charge at this position disrupts the natural ion selectivity of Panx1 channels but that position 74 itself does not control ion selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference stated in the Results section based on mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "37031ebb-02e6-4a83-a1d9-f0028a408a7d",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C69",
+      "claim": "The distance between the guanidino group of Arg75 and the benzene ring of Trp74 from an adjacent subunit is ~4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the distance between the guanidino group of Arg75 and the benzene ring of Trp74 from an adjacent subunit is ~4 \u00c5, suggesting that these two residues likely participate in an inter-subunit cation-\u03c0 interaction key to Panx1 ion selectivity (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "9bc2c002-86dd-42ad-b4de-3491ae22a269",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C70",
+      "claim": "Trp74 and Arg75 likely participate in an inter-subunit cation-\u03c0 interaction key to Panx1 ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the distance between the guanidino group of Arg75 and the benzene ring of Trp74 from an adjacent subunit is ~4 \u00c5, suggesting that these two residues likely participate in an inter-subunit cation-\u03c0 interaction key to Panx1 ion selectivity (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference stated in the Results section based on structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "308b438b-b81e-467e-9200-56a5d8712349",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C71",
+      "claim": "Trp74Ala showed a marked decrease in Cl- permeability and an increase in Na+ permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "Trp74Ala showed a marked decrease in Cl- permeability and an increase in Na+ permeability, despite preservation of the positive charge at Arg75.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "8efcf982-b6a9-4450-a376-15485a864087",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C72",
+      "claim": "Trp74Phe disrupted ion selectivity, suggesting that proper positioning of the benzene ring at position 74 is important for anion selection.",
+      "claim_type": "EXPLICIT",
+      "source": "A more conservative mutation, Trp74Phe, still disrupted ion selectivity, suggesting that proper positioning of the benzene ring at position 74 is important for anion selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "caa53394-5966-4d3e-b67b-3fbf80cc1779",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C73",
+      "claim": "Anion selectivity is only achieved when Trp74 and Arg75 form a cation-\u03c0 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data suggests that anion selectivity is only achieved when Trp74 and Arg75 form a cation-\u03c0 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "85ca1b3d-02cd-4727-b805-e188a47023cd",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C74",
+      "claim": "It is possible that additional ion selectivity or gating regions exist in the full-length channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that our structure has disordered and truncated regions in the N-terminus, ICL1, and ICL2, it is possible that additional ion selectivity or gating regions exist in the full-length channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Results section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "bbe3e315-d637-451b-ba51-5f6f19c0e8e3",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C75",
+      "claim": "The N-termini of LRRC8 and connexins perform an important role in ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the N-termini of LRRC8 and connexins perform an important role in ion selectivity (Kyle et al., 2008; Kronengold et al., 2012; Kefauver et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "b3db1ccb-997e-437a-b176-f1d45781586e",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C76",
+      "claim": "It is possible that the N-terminus of Panx1 is mobile and may further constrict the permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the N-terminus of Panx1 is mobile and may further constrict the permeation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Results section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "d23b6907-36f4-491d-b2e6-879536c28072",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C77",
+      "claim": "The electrostatic potential along the pore pathway may contribute to the ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that the electrostatic potential along the pore pathway contributes to the ion selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Results section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "b0f7464e-3d8c-444d-b5c2-394a45d3638f",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C78",
+      "claim": "Both cytoplasmic and extracellular entrances of the permeation pathway are mostly basic.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both cytoplasmic and extracellular entrances of the permeation pathway are mostly basic, suggesting that non-permeant cations may be excluded from the pore (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by electrostatic potential calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "a409e0f3-8e93-4ccb-80ab-3b8f212a9397",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C79",
+      "claim": "Non-permeant cations may be excluded from the pore due to the basic nature of the entrances.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both cytoplasmic and extracellular entrances of the permeation pathway are mostly basic, suggesting that non-permeant cations may be excluded from the pore (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference stated in the Results section based on electrostatic potential data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "3117f4f2-286a-45ef-815d-f5ea17b25886",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C80",
+      "claim": "The region underneath the W74 constriction is highly acidic.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the region underneath the W74 constriction is highly acidic, supporting the idea that anions may be selected around this area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by electrostatic potential data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "ec1b4124-1c89-438e-b3cf-5ad1023a1b46",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C81",
+      "claim": "Anions may be selected around the region underneath the W74 constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the region underneath the W74 constriction is highly acidic, supporting the idea that anions may be selected around this area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference stated in the Results section based on electrostatic potential data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "f7cae6c2-c063-46e8-a3fe-2d9a9e609f8c",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C82",
+      "claim": "CBX likely acts through a mechanism involving ECL1.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that CBX, a potent nonselective inhibitor of Panx1, likely acts through a mechanism involving ECL1 (Michalski and Kawate, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "110d4912-557d-4184-a51c-e15c4ef7c34d",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C83",
+      "claim": "Mutations at a number of residues in ECL1 rendered Panx1 less sensitive to CBX-mediated channel inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, mutations at a number of residues in ECL1 rendered Panx1 less sensitive to CBX-mediated channel inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "0fe04d52-028c-41d2-a08e-dc8e93ea4938",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C84",
+      "claim": "Residues that affect CBX sensitivity are clustered proximal to the extracellular constriction by Trp74, in a groove formed between ECL1 and ECL2.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping such residues in the Panx1 structure revealed that they are clustered proximal to the extracellular constriction by Trp74, in a groove formed between ECL1 and ECL2 (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "216ee377-f07c-41c1-8130-bcb1540f81a3",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C85",
+      "claim": "CBX is an allosteric inhibitor, not a channel blocker.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports our previous speculation that CBX is an allosteric inhibitor, not a channel blocker (Michalski and Kawate, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by structural data and a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "7acd358f-adbc-4ebe-a832-25d76ae0e448",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C86",
+      "claim": "Mutations at Ile247, Val258, and Phe262 (hPanx1 numbering) in ECL2 diminished CBX-sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mutations at Ile247, Val258, and Phe262 (hPanx1 numbering) diminished CBX-sensitivity (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "368033fc-b756-458e-baec-bf506023fa85",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C87",
+      "claim": "Both ECL1 and ECL2 play important roles in inhibition of Panx1 by CBX.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that both ECL1 and ECL2 play important roles in inhibition of Panx1 by CBX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "e25a5cc0-2d5c-4031-903e-db347e9d65e4",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C88",
+      "claim": "CBX inhibits Panx channels by binding between ECL1 and ECL2 and 'locking' the conformation of gate forming ECL1 in favor of channel closure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not have a cryo-EM structure complexed to CBX at this point, we speculate that CBX inhibits Panx channels by binding between ECL1 and ECL2 and 'locking' the conformation of gate forming ECL1 in favor of channel closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Results section based on structural and functional data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "d59e8b59-e1d1-41d7-9091-a6a07e2153ef",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C89",
+      "claim": "The frPanx1-\u0394LC structure uncovered a unique heptameric assembly of a large-pore channel that harbors an extracellular constriction formed by Trp74 and Arg75.",
+      "claim_type": "EXPLICIT",
+      "source": "The frPanx1-\u0394LC structure uncovered a unique heptameric assembly of a large-pore channel that harbors an extracellular constriction formed by Trp74 and Arg75.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "cb15e0c1-c387-4a37-ba3a-d41b746277a6",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C90",
+      "claim": "Trp74 and Arg75 are located on ECL1 and face toward the central pore of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues are located on ECL1 and face toward the central pore of the channel and thus, are situated to regulate channel function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "3058a74f-8133-42b3-b47d-5a3175830481",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C91",
+      "claim": "Trp74 and Arg75 play pivotal roles in ion selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis studies at these positions revealed that both residues play pivotal roles in ion selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by mutagenesis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "ef25ff34-70e3-43d9-84b0-49069834e13d",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C92",
+      "claim": "The positively charged Arg75 does not seem to form a canonical selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the LRRC8A anion channel, however, the positively charged Arg75 does not seem to form a canonical selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "1ca0be62-63e8-44ed-a4d7-39e2a8886618",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C93",
+      "claim": "The guanidino group of Arg75 likely mediates a cation-\u03c0 interaction with Trp74 in the neighboring subunit, which seems to control ion selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the guanidino group of Arg75 likely mediates a cation-\u03c0 interaction with Trp74 in the neighboring subunit, which seems to control ion selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of structural and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "fa53488b-04ec-4c86-ba72-1bcea3450aea",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C94",
+      "claim": "One possible ion selection mechanism is that the cation-\u03c0 interaction stabilizes the inter-subunit interactions, which in turn creates an electrostatic environment that favors anion permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible ion selection mechanism is that this cation-\u03c0 interaction stabilizes the inter-subunit interactions, which in turn creates an electrostatic environment that favors anion permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism proposed in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "2d6663fc-434f-4a15-8c33-a1f8588d9aea",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C95",
+      "claim": "Another possibility is that tight inter-subunit interactions in the extracellular domain are necessary to form an ion selectivity filter in the missing region in the current model (e.g. N-terminus or C-terminal domain).",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that tight inter-subunit interactions in the extracellular domain are necessary to form an ion selectivity filter in the missing region in our current model (e.g. N-terminus or C-terminal domain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism proposed in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "4f4a07ac-32b4-4fe5-8071-67105bc10dfa",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C96",
+      "claim": "The current structure may represent a closed conformation based on the lack of channel activity at 0 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the lack of channel activity at 0 mV (Figure 1\u2014figure supplement 2e and f), our current structure may represent a closed conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation stated in the Discussion section based on electrophysiology data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "d0e8ab2e-429f-400f-b13e-c18b9e036abe",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C97",
+      "claim": "The existence of a highly acidic region near Trp74 may serve as a barrier for anions to permeate, supporting the closed conformation hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the existence of a highly acidic region near Trp74 (Figure 3\u2014figure supplement 2), which may serve as a barrier for anions to permeate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section as support for the closed conformation hypothesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "7f61a1ae-fb16-46d9-9baa-716c7e79827b",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C98",
+      "claim": "Given that the narrowest constriction at Trp74 is ~10 \u00c5 wide, it is possible that the structure actually represents an open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that the narrowest constriction at Trp74 is ~10 \u00c5 wide, it is possible that the structure actually represents an open conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section based on structural measurements.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "d50a958b-9430-4a9d-8a0f-46e48bdc0b84",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C99",
+      "claim": "The +GS version of frPanx1-\u0394LC shows larger leak currents, suggesting that the C-terminal truncation may promote channel opening while lack of the N-terminal modification renders it closed.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the +GS version of frPanx1-\u0394LC shows larger leak currents (Figure 1a and b), suggesting that the C-terminal truncation may promote channel opening while lack of the N-terminal modification renders it closed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "3774d082-dee5-4c6f-9479-5615ee53ac66",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C100",
+      "claim": "If the conformation of the N-terminus in frPanx1-\u0394LC is somehow compromised during purification or reconstitution into nanodiscs, it is possible that the structure may actually look closer to the +GS version.",
+      "claim_type": "EXPLICIT",
+      "source": "If the conformation of the N-terminus in frPanx1-\u0394LC is somehow compromised during purification or reconstitution into nanodiscs, it is possible that our structure may actually look closer to the +GS version.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "821df2ab-0df5-423f-9982-8fbbb258c146",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C101",
+      "claim": "The weak EM density in the N-terminal region leaves the possibility that frPanx1-\u0394LC may be representing an open state.",
+      "claim_type": "EXPLICIT",
+      "source": "While further studies are necessary to define the functional state of our current structure, the weak EM density in the N-terminal region leaves the possibility that frPanx1-\u0394LC may be representing an open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a possibility based on structural data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "9c63ae8f-d7e9-4367-a751-8821c76a06a0",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C102",
+      "claim": "ECL1 and ECL2 interact with each other and form a potential CBX binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ECL1 and ECL2 interact to each other and form a potential CBX binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "64e214e0-9c7c-4eca-99f2-4d2574cb95ee",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C103",
+      "claim": "Both ECL1 and ECL2 may undergo movement based on conformational alterations of the TMDs and cytoplasmic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ECL1 and ECL2 may undergo movement based on conformational alterations of the TMDs and cytoplasmic domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "3b74d3c0-d445-43bf-9a01-f4746a47a64f",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C104",
+      "claim": "Movement of the TMDs caused by membrane stretch or voltage, or changes in the cytoplasmic domain triggered by caspase cleavage may be coupled to conformational rearrangements in the extracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is conceivable that movement of the TMDs caused by membrane stretch or voltage, or changes in the cytoplasmic domain triggered by caspase cleavage may be coupled to conformational rearrangements in the extracellular domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "bb32a489-284f-4779-9fcb-8cfcf67b852a",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C105",
+      "claim": "The major role of the extracellular domain in pannexin function is strongly supported by experimental results demonstrating that mutating Trp74 and Arg75, as well as surrounding residues in ECL1 and ECL2, alter channel properties including ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The major role of the extracellular domain in pannexin function is strongly supported by our experimental results demonstrating that mutating Trp74 and Arg75, as well as surrounding residues in ECL1 and ECL2, alter channel properties including ion selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by mutagenesis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "7c2ace18-67ff-4a15-a494-652c575157db",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C106",
+      "claim": "Application of CBX to mutants at Trp74 (e.g. to Ala, Ile, Lys) potentiates voltage-dependent channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we previously demonstrated that application of CBX to mutants at Trp74 (e.g. to Ala, Ile, Lys) potentiates voltage-dependent channel activity (Michalski and Kawate, 2016), which indicates that CBX likely acts as an allosteric inhibitor rather than a channel blocker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "9a49e316-5f31-4cc0-a0a6-e0990729d94c",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C107",
+      "claim": "CBX likely acts as an allosteric inhibitor rather than a channel blocker.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we previously demonstrated that application of CBX to mutants at Trp74 (e.g. to Ala, Ile, Lys) potentiates voltage-dependent channel activity (Michalski and Kawate, 2016), which indicates that CBX likely acts as an allosteric inhibitor rather than a channel blocker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by experimental evidence and citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "8abe6089-2377-4614-aebe-8fe4f36b566c",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C108",
+      "claim": "Roles of the intracellular domain remain elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the extracellular domain, roles of the intracellular domain remain elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "954cebcf-8792-49c2-8ee7-a5d324ce6913",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C109",
+      "claim": "The C-terminal domain has been demonstrated to play important roles in Panx1 channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "While the C-terminal domain has been demonstrated to play important roles in Panx1 channel gating (Sandilos et al., 2012), our study neither confirms or refutes this mechanism as half of this domain is missing in our current structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "3ce29d2f-f640-44a2-b45e-a30543e56abd",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C110",
+      "claim": "The first 10 residues in the N-terminus are disordered, making it challenging to understand how these residues tune the activity of Panx1 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the first 10 residues in the N-terminus are disordered, making it challenging to understand how these residues tune the activity of Panx1 channel (Michalski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by structural data and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "03c3542a-ca04-48bf-97ff-de9c42ebf9dc",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C111",
+      "claim": "It is possible that the unmodeled N-terminal region may interact with the deleted region of the C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their important roles in channel gating, it is possible that the unmodeled N-terminal region may interact with the deleted region of the C-terminal domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "c0debbaf-ca26-4e65-be05-42885e9809d3",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C112",
+      "claim": "It is possible that the N-terminal and C-terminal domains may form a channel gate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that these domains may form a channel gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "1c4a2a4c-73cf-490e-b472-d4bf826c2ba5",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C113",
+      "claim": "The deleted residues in ICL-1 (between Gly171 and Lys194) seem to play a minimal role in channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these domains, the deleted residues in ICL-1 (between Gly171 and Lys194) seems to play a minimal role in channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "e94250fa-f708-4380-b3b6-a988a7074bca",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C114",
+      "claim": "All deletion constructs in ICL-1 showed voltage-dependent channel activity via whole-cell patch clamp, with the exception of a construct in which the entire region between Lys155 and Lys194 was removed.",
+      "claim_type": "EXPLICIT",
+      "source": "We surveyed 23 different deletion constructs (in which each variant harbored a different deletion length and position) and among these, all deletions constructs showed voltage-dependent channel activity via whole-cell patch clamp, with the exception of a construct in which the entire region between Lys155 and Lys194 was removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and describes experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "379a927f-a96b-4ef4-8648-8e21ee6cd8d6",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C115",
+      "claim": "All functional ICL-1 deletion constructs were properly assembled into heptamers.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested these deletion constructs using FSEC and found that all functional constructs were properly assembled into heptamers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and describes experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "1187fbf0-ea87-4d7a-a772-8dd8b4e3f3e2",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C116",
+      "claim": "The deleted region in ILC-1 plays an insignificant role in channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "The above evidence indicates that the deleted region in ILC-1 plays an insignificant role in channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Discussion section based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "e74459bd-2f69-4dd9-891b-50c2d20c707b",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C117",
+      "claim": "The EM density in the ICL-1 region was weak and could not be modeled, indicating a high degree of conformational flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The EM density in this region was weak and could not be modeled, indicating a high degree of conformational flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and describes the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "0d26dc35-cb59-4eef-941b-02bf6427aa7d",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C118",
+      "claim": "The frPanx1-\u0394LC structure provides an important atomic blueprint for dissecting functional mechanisms of Panx1.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our frPanx1-\u0394LC structure provides an important atomic blueprint for dissecting functional mechanisms of Panx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of the significance of the work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "efbbbd70-89ab-4875-a18b-99bff3d2541c",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "claim_id": "C119",
+      "claim": "The missing domains, especially the N-terminal loop and the C-terminal domain, may serve as a channel gate on the intracellular side of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not observe a gate-like structure in the current cryo-EM map, the missing domains, especially the N-terminal loop and the C-terminal domain, may serve as a channel gate on the intracellular side of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6688c49e-8f50-4fba-af5f-04d77cfdb012",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of frog Panx1 (frPanx1-\u0394LC) was determined at 3.0 \u00c5 resolution using 90,185 particles. The map quality was sufficient for de novo model building for most of the protein, except for disordered regions in the N-terminus, ECL1, and ICL1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28, and C29 describe the cryo-EM structure determination with appropriate resolution, particle numbers, and map quality assessment. The data processing workflow, FSC curves, and model statistics in Table 1 support these claims. The resolution and map quality are appropriate for the conclusions drawn.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "8d524f86-8929-4af7-aa0a-620b1e8a897a",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Panx1 assembles as a heptameric channel, which is unique among known eukaryotic channels. This differs from previous studies suggesting hexameric assembly, but is supported by cryo-EM data from both truncated and full-length frPanx1 as well as full-length hPanx1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C30, C36, C37, and C38 collectively establish the heptameric assembly through multiple lines of evidence: the structure itself, 2D class averages of full-length frPanx1 showing seven-fold symmetry, and 2D class averages of hPanx1. The authors appropriately address the discrepancy with prior literature (C35) and provide evidence that the heptameric state is not an artifact of truncations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "ec89a945-3599-4d75-8649-3ca39d909eb6",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Panx1 protomer contains four transmembrane helices (TM1-4), two extracellular loops (ECL1 and ECL2), two intracellular loops (ICL1 and ICL2), and an N-terminal loop. The transmembrane arrangement resembles other large-pore channels like connexins, innexins, and LRRC8, but not CALHMs. Structural features in ECL1 and ECL2 are conserved despite limited sequence similarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C41-C45 describe the protomer architecture and are well-supported by the structural data shown in Figures 1 and 2. The structural comparisons with other channels are appropriate and supported by superposition analyses. The conservation of structural features despite sequence divergence is a valid observation from the structural alignment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "ae1fc66a-b6ff-4bbe-98e1-91d07e91a01e",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Panx1 intracellular domains are structurally unique compared to other large-pore channels. ICL1 and ICL2 form a bundle of helices contacting the N-terminus, which forms a constriction of the permeation pathway. The first ~10 amino acids of the N-terminus are disordered in the structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 describe unique features of the intracellular domains supported by the structural data. The disorder in the N-terminal region is evident from the map quality and is appropriately noted. The structural uniqueness is supported by comparison with other channels in Figure 2\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "5070258f-06b9-483f-b3d3-a5b90269cf43",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Panx1 permeation pathway spans 104 \u00c5 with constrictions formed by the N-terminal loop, Ile58, and Trp74. The narrowest constriction is surrounded by Trp74 on ECL1, which is highly conserved among species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C53-C56 describe the permeation pathway and are supported by the HOLE analysis in Figure 3a-c and sequence conservation data in Figure 1\u2014figure supplement 1. The measurements and structural observations are consistent with the cryo-EM map.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Arg75, situated near the tightest constriction, plays a role in anion selectivity of Panx1. Mutagenesis studies show that the Arg75Lys mutant maintains anion selectivity, while Arg75Ala diminishes Cl- selectivity and Arg75Glu reverses selectivity, supporting the role of the positive charge at position 75 in anion selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C58-C66 describe systematic mutagenesis experiments testing the role of Arg75 in ion selectivity. The reversal potential measurements in different ionic conditions (Figure 3e, Figure 3\u2014figure supplement 1) provide strong support for the conclusion. The charge-swap experiments (R75K, R75A, R75E) show appropriate controls and logical progression of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "66962407-c725-489b-be77-cf8e08b079fe",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Trp74 and Arg75 participate in an inter-subunit cation-\u03c0 interaction that is key to Panx1 ion selectivity. Mutations at Trp74 (W74R, W74E, W74A, W74F) all disrupt ion selectivity, suggesting that proper positioning of the benzene ring is important. Anion selectivity is only achieved when Trp74 and Arg75 form a cation-\u03c0 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 describe the cation-\u03c0 interaction between Trp74 and Arg75 based on structural data (C69: ~4 \u00c5 distance) and functional validation through mutagenesis. The systematic mutations (charged, uncharged, conservative) provide strong evidence for the mechanism. The structural and functional data converge to support the cation-\u03c0 interaction model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "53dd34d7-c5c1-44f1-90c7-7abb727e2fa1",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Residues in the hydrophobic groove formed by ECL1 and ECL2 are important for channel inhibition by carbenoxolone (CBX). Mutations in both ECL1 (from prior work) and ECL2 (Ile247, Val258, Phe262) diminish CBX sensitivity, suggesting CBX acts as an allosteric inhibitor rather than a channel blocker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C82-C87 describe the CBX binding site and mechanism. The structural mapping of previously identified CBX-sensitive residues (C82-C84) combined with new mutagenesis data in ECL2 (C86, Figure 4c) provide converging evidence. The statistical significance is reported (p<0.05) for the ECL2 mutants. The allosteric inhibitor model is supported by both structural and functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "6044a19f-df8c-4e12-bec5-64988199d84f",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Frog Panx1 (frPanx1) is 66% identical to human Panx1, displayed high expression and biochemical stability, and was stabilized by truncating the C-terminus by 71 amino acids and removing 24 amino acids from ICL1. The construct (frPanx1-\u0394LC) was verified to form a functional pannexin channel by electrophysiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 describe the construct design and validation. The sequence identity is verifiable from Figure 1\u2014figure supplement 1, biochemical stability is shown by FSEC and purification data (Figure 1\u2014figure supplement 2a-d), and functionality is demonstrated by electrophysiology (Figure 1a-b, Figure 1\u2014figure supplement 2e-f). The approach is well-documented and validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "27430b18-f7b6-48c5-aed3-bdee7e13741e",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The heptameric assembly is established by inter-subunit interactions at three locations: ECL1s and the loop between \u03b22 and \u03b23; TM1-TM1 and TM2-TM4 interfaces; and \u03b19 helix with surrounding \u03b13 and \u03b14 helices and the N-terminal loop from the neighboring subunit. The majority of residues mediating these interactions are highly conserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C40 describe the molecular basis of heptameric assembly supported by structural analysis in Figure 2\u2014figure supplement 3 and sequence conservation in Figure 1\u2014figure supplement 1. The identification of three distinct interaction sites is appropriate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "48b85bfd-4811-46de-9ce2-286a2f96e9d7",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Panx1 ECL1 and ECL2 are joined by two conserved disulfide bonds (Cys66-Cys267, Cys84-Cys248). ECL1 contains an alpha-helix that extends toward the central pore and forms an extracellular constriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C47 describe structural features of the extracellular loops supported by the cryo-EM structure. The disulfide bonds are clearly resolved in the map, and the alpha-helix in ECL1 is evident in the structural figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "30d4310b-6702-4624-b6ed-d775483990f9",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Both cytoplasmic and extracellular entrances of the permeation pathway are mostly basic, suggesting non-permeant cations may be excluded. The region underneath the W74 constriction is highly acidic, supporting the idea that anions may be selected around this area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 describe electrostatic properties of the pore supported by electrostatic potential calculations shown in Figure 3\u2014figure supplement 2. The observations about basic entrances and acidic region near W74 are consistent with the anion selectivity data, though the mechanistic interpretation remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "74fc89e0-7cdf-4547-9c7b-4960ed86396c",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ECL1 and ECL2 interact with each other and form a potential CBX binding pocket.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C102 is supported by the structural data showing the hydrophobic groove between ECL1 and ECL2 (Figure 4a-b) and the functional data showing that mutations in both loops affect CBX sensitivity. The term 'potential' appropriately indicates that direct CBX binding has not been visualized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "cd6457d6-40a2-458c-a6be-2330472e0dc3",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The deleted residues in ICL-1 (between Gly171 and Lys194) play a minimal role in channel gating. Among 23 deletion constructs tested, all showed voltage-dependent channel activity except when the entire region between Lys155 and Lys194 was removed. Functional constructs were properly assembled into heptamers, and the EM density in this region was weak, indicating conformational flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C117 describe systematic deletion analysis of ICL1. The extensive survey (23 constructs) and functional/biochemical validation (electrophysiology and FSEC) provide strong support for the conclusion that this region is not critical for gating. The weak EM density is consistent with flexibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "7de682cd-25d3-4dee-a187-ce86add172e4",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The disordered N-terminal residues might play a role in ion permeation or selectivity, and additional ion selectivity or gating regions may exist in the full-length channel. The N-terminus of Panx1 may be mobile and further constrict the permeation pathway, and electrostatic potential along the pore may contribute to ion selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52, C74-C77 are speculative statements about missing regions and alternative mechanisms. While these are reasonable hypotheses based on analogy to other channels (C75 cites LRRC8 and connexins), they are not directly tested in this study. The speculation is appropriate for a Discussion section but does not constitute a supported result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "627395d2-4cc5-4e88-a8ac-0e802cd3f6c2",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CBX may inhibit Panx channels by binding between ECL1 and ECL2 and 'locking' the conformation in favor of channel closure. Possible ion selection mechanisms include the cation-\u03c0 interaction stabilizing inter-subunit interactions to create a favorable electrostatic environment, or tight extracellular domain interactions being necessary to form a selectivity filter in missing regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88, C94, and C95 propose mechanistic models that are speculative. While the CBX binding site is well-supported by mutagenesis, the 'locking' mechanism (C88) is not directly demonstrated. The ion selectivity mechanisms (C94, C95) are reasonable hypotheses but lack direct experimental validation. These remain as models to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "3e1f9745-6333-4ee0-842a-7a1153dac7cf",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The functional state of the structure is uncertain. It may represent a closed conformation based on lack of activity at 0 mV and the acidic region near Trp74, but the ~10 \u00c5 constriction suggests it could be open. The +GS version shows larger leak currents, and if the N-terminus conformation is compromised during purification, the structure may represent an open state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C101 discuss the functional state of the structure but reach no definitive conclusion. The evidence is contradictory: lack of activity suggests closed (C96), but pore dimensions suggest open (C98). The +GS data (C99) and N-terminal disorder (C101) add complexity. The authors appropriately acknowledge this uncertainty, but it remains unresolved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "50fb894a-4a15-45cd-bcdb-483fc680c234",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "ECL1 and ECL2 may undergo movement based on conformational changes in TMDs and cytoplasmic domains. The N-terminal and C-terminal domains may interact and potentially form a channel gate on the intracellular side.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103, C104, C111, C112, and C119 are speculative statements about domain movements and gating mechanisms. These are reasonable hypotheses based on the structure and analogy to other channels, but lack direct experimental support. They represent future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Pannexins are large-pore forming channels with minimal sequence similarity to other channel families, responsible for ATP release and regulation of various physiological processes including apoptosis, blood pressure, and neuropathic pain. Panx1 can be activated by multiple stimuli and has capacity to integrate distinct stimuli into channel activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 provide background information supported by citations to prior literature. These are well-established facts in the field and appropriately cited. This represents accurate summary of prior work rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "69614b8c-e3af-4c86-a781-8274d55cd5cf",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Other large-pore forming channels have different oligomeric states: connexins and LRRC8s are hexameric, innexins and CALHM1 are octameric. Panx1 has been previously characterized as an anion selective channel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 and C57 cite prior structural and functional work on other channels. These are accurate statements about the literature and provide appropriate context for the novelty of the heptameric Panx1 structure. The citations support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "49fc8666-eb5b-4104-8659-1d14d2dbd14b",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The extracellular loops are important structural motifs for ion selectivity and channel inhibition in Panx1. The structure provides an atomic blueprint for understanding Panx1 function, with Trp74 and Arg75 on ECL1 playing pivotal roles in ion selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C89-C91, C105, and C118 represent the main conclusions of the paper, synthesizing the structural and functional data. These are well-supported by the convergence of structural analysis, mutagenesis, and electrophysiology data presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "fa6fed68-5378-46af-b4f0-c213fdb47092",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Unlike LRRC8A, the positively charged Arg75 does not form a canonical selectivity filter. Instead, Arg75 likely mediates a cation-\u03c0 interaction with Trp74 in the neighboring subunit, which controls ion selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92 and C93 distinguish the Panx1 selectivity mechanism from other anion channels and propose the cation-\u03c0 interaction model. This is supported by the structural data (distance measurement) and systematic mutagenesis showing that both residues are required and that the interaction geometry is important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "83fe93e0-c6c5-42fc-8b8d-9be5c638adef",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Application of CBX to Trp74 mutants potentiates voltage-dependent channel activity, indicating CBX acts as an allosteric inhibitor rather than a channel blocker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106 and C107 cite prior work (Michalski and Kawate, 2016) showing CBX potentiation of W74 mutants. This prior result, combined with the current structural mapping of the CBX-sensitive residues, supports the allosteric inhibitor model. The citation is appropriate and the interpretation is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    },
+    {
+      "id": "835f1ca6-d85b-434d-b4c7-8eea9a1fcb09",
+      "content_id": "df500bd3-0af9-4503-b8be-ef5b38b0f844",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Roles of the intracellular domain remain elusive. The C-terminal domain has been shown to play important roles in gating, but this study neither confirms nor refutes this mechanism due to the truncation. The disordered N-terminal residues make it challenging to understand their role in channel activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C110 acknowledge limitations of the current structure regarding intracellular domains. This is an honest assessment of what the structure can and cannot reveal. The citation to prior work on the C-terminus (C109) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:09:36.875677Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8b706c71-05aa-4f72-8eb6-d52276a76eb8",
+      "result_id": "6688c49e-8f50-4fba-af5f-04d77cfdb012"
+    },
+    {
+      "claim_id": "21862772-5973-48bd-bd8d-4898684c619f",
+      "result_id": "6688c49e-8f50-4fba-af5f-04d77cfdb012"
+    },
+    {
+      "claim_id": "6252fc35-3eb4-4a70-9766-6987ee6f41ed",
+      "result_id": "6688c49e-8f50-4fba-af5f-04d77cfdb012"
+    },
+    {
+      "claim_id": "ceafe60e-69e2-43e8-87f1-2527fdbded7f",
+      "result_id": "8d524f86-8929-4af7-aa0a-620b1e8a897a"
+    },
+    {
+      "claim_id": "b93d2930-5c84-4c28-8b16-a3024b425a50",
+      "result_id": "8d524f86-8929-4af7-aa0a-620b1e8a897a"
+    },
+    {
+      "claim_id": "cbd667d8-20f6-4ffd-acd0-2d0be91d54af",
+      "result_id": "8d524f86-8929-4af7-aa0a-620b1e8a897a"
+    },
+    {
+      "claim_id": "3be06963-00e7-45fd-b023-bf04231846e8",
+      "result_id": "8d524f86-8929-4af7-aa0a-620b1e8a897a"
+    },
+    {
+      "claim_id": "ee76168f-d8af-403c-a1de-913c09de0ed7",
+      "result_id": "8d524f86-8929-4af7-aa0a-620b1e8a897a"
+    },
+    {
+      "claim_id": "e434f226-b943-47c8-97e4-0dc7666ab12a",
+      "result_id": "8d524f86-8929-4af7-aa0a-620b1e8a897a"
+    },
+    {
+      "claim_id": "82751118-5fef-41ac-a89e-fa238241f07a",
+      "result_id": "ec89a945-3599-4d75-8649-3ca39d909eb6"
+    },
+    {
+      "claim_id": "80449de6-ae49-4efc-926e-a127e1dc6ca0",
+      "result_id": "ec89a945-3599-4d75-8649-3ca39d909eb6"
+    },
+    {
+      "claim_id": "3113072d-9e65-424a-a9b2-d1d2b38938ab",
+      "result_id": "ec89a945-3599-4d75-8649-3ca39d909eb6"
+    },
+    {
+      "claim_id": "e447ca3a-8c95-4766-8630-92a8f8bc0220",
+      "result_id": "ec89a945-3599-4d75-8649-3ca39d909eb6"
+    },
+    {
+      "claim_id": "0ef8539e-c4ed-403a-8db0-8f636e0e95c2",
+      "result_id": "ec89a945-3599-4d75-8649-3ca39d909eb6"
+    },
+    {
+      "claim_id": "70f9d859-d9dc-4a84-af35-598cb4245920",
+      "result_id": "ec89a945-3599-4d75-8649-3ca39d909eb6"
+    },
+    {
+      "claim_id": "0dff6850-d6fa-403d-a826-2df4c36c0928",
+      "result_id": "ae1fc66a-b6ff-4bbe-98e1-91d07e91a01e"
+    },
+    {
+      "claim_id": "a43def74-c028-44a4-8e77-193dfd7070bf",
+      "result_id": "ae1fc66a-b6ff-4bbe-98e1-91d07e91a01e"
+    },
+    {
+      "claim_id": "f1853029-62ff-4ec1-95e1-2f2481537ec7",
+      "result_id": "ae1fc66a-b6ff-4bbe-98e1-91d07e91a01e"
+    },
+    {
+      "claim_id": "a1fb04b5-acba-4852-a2bf-126fbf6830f9",
+      "result_id": "ae1fc66a-b6ff-4bbe-98e1-91d07e91a01e"
+    },
+    {
+      "claim_id": "52ceeb28-0afb-47fb-953d-65bef147331e",
+      "result_id": "5070258f-06b9-483f-b3d3-a5b90269cf43"
+    },
+    {
+      "claim_id": "2b03f383-ef16-4416-a2de-5a305f4df6d9",
+      "result_id": "5070258f-06b9-483f-b3d3-a5b90269cf43"
+    },
+    {
+      "claim_id": "b5a87356-5c30-4e6a-953e-f228e5ea47ef",
+      "result_id": "5070258f-06b9-483f-b3d3-a5b90269cf43"
+    },
+    {
+      "claim_id": "2b4dee46-3c23-43b3-9875-3fbc2e6b8993",
+      "result_id": "5070258f-06b9-483f-b3d3-a5b90269cf43"
+    },
+    {
+      "claim_id": "07f5433a-bdb2-44b9-a4fa-6db7eabd9b45",
+      "result_id": "5070258f-06b9-483f-b3d3-a5b90269cf43"
+    },
+    {
+      "claim_id": "1389806e-1093-4e17-8e44-f654ebee3f64",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "be7a0025-d556-45bd-902f-23bf64bc661c",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "07f8d741-7a14-40de-9a6a-a21a425deafb",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "65e6f073-252c-454a-ae75-667afc5f3a4b",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "aba97c3b-8145-45da-8d49-0a9c216f815c",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "40812806-2277-49f4-986b-5e4a908ddd7e",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "72dd3612-4f18-4de6-a4cf-c8d670f0ccc5",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "1fed3cff-0911-4dcf-ae22-9a9121f73dab",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "9b21a95b-2af5-45fc-900c-8e2d7881a420",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "0d3706b5-5d25-46fe-8fa7-e6195ebea190",
+      "result_id": "cfe13fb5-8fd1-4693-b273-ad42ed8fb37e"
+    },
+    {
+      "claim_id": "5660d102-88f4-4ff1-b75a-aa35bd2ff1c7",
+      "result_id": "66962407-c725-489b-be77-cf8e08b079fe"
+    },
+    {
+      "claim_id": "7fbdd20b-f214-43c7-892d-cc4270848512",
+      "result_id": "66962407-c725-489b-be77-cf8e08b079fe"
+    },
+    {
+      "claim_id": "37031ebb-02e6-4a83-a1d9-f0028a408a7d",
+      "result_id": "66962407-c725-489b-be77-cf8e08b079fe"
+    },
+    {
+      "claim_id": "9bc2c002-86dd-42ad-b4de-3491ae22a269",
+      "result_id": "66962407-c725-489b-be77-cf8e08b079fe"
+    },
+    {
+      "claim_id": "308b438b-b81e-467e-9200-56a5d8712349",
+      "result_id": "66962407-c725-489b-be77-cf8e08b079fe"
+    },
+    {
+      "claim_id": "8efcf982-b6a9-4450-a376-15485a864087",
+      "result_id": "66962407-c725-489b-be77-cf8e08b079fe"
+    },
+    {
+      "claim_id": "caa53394-5966-4d3e-b67b-3fbf80cc1779",
+      "result_id": "66962407-c725-489b-be77-cf8e08b079fe"
+    },
+    {
+      "claim_id": "63398269-7ad8-4798-b5d8-45334680568b",
+      "result_id": "53dd34d7-c5c1-44f1-90c7-7abb727e2fa1"
+    },
+    {
+      "claim_id": "f7cae6c2-c063-46e8-a3fe-2d9a9e609f8c",
+      "result_id": "53dd34d7-c5c1-44f1-90c7-7abb727e2fa1"
+    },
+    {
+      "claim_id": "110d4912-557d-4184-a51c-e15c4ef7c34d",
+      "result_id": "53dd34d7-c5c1-44f1-90c7-7abb727e2fa1"
+    },
+    {
+      "claim_id": "0fe04d52-028c-41d2-a08e-dc8e93ea4938",
+      "result_id": "53dd34d7-c5c1-44f1-90c7-7abb727e2fa1"
+    },
+    {
+      "claim_id": "216ee377-f07c-41c1-8130-bcb1540f81a3",
+      "result_id": "53dd34d7-c5c1-44f1-90c7-7abb727e2fa1"
+    },
+    {
+      "claim_id": "7acd358f-adbc-4ebe-a832-25d76ae0e448",
+      "result_id": "53dd34d7-c5c1-44f1-90c7-7abb727e2fa1"
+    },
+    {
+      "claim_id": "368033fc-b756-458e-baec-bf506023fa85",
+      "result_id": "53dd34d7-c5c1-44f1-90c7-7abb727e2fa1"
+    },
+    {
+      "claim_id": "5058194b-1f6f-4dac-961c-5842337a6190",
+      "result_id": "6044a19f-df8c-4e12-bec5-64988199d84f"
+    },
+    {
+      "claim_id": "b7d20e87-d972-49a0-8768-16ceb31ebea7",
+      "result_id": "6044a19f-df8c-4e12-bec5-64988199d84f"
+    },
+    {
+      "claim_id": "07f488c2-2f36-4f83-adb1-4edf814b2a9d",
+      "result_id": "6044a19f-df8c-4e12-bec5-64988199d84f"
+    },
+    {
+      "claim_id": "6eb9a7f2-fb67-4d77-a217-f110c3e27b69",
+      "result_id": "6044a19f-df8c-4e12-bec5-64988199d84f"
+    },
+    {
+      "claim_id": "29a35f06-14e7-44da-8367-d1c0cb2db674",
+      "result_id": "6044a19f-df8c-4e12-bec5-64988199d84f"
+    },
+    {
+      "claim_id": "b9195d35-c169-44b8-bf07-e40e7f72baf8",
+      "result_id": "27430b18-f7b6-48c5-aed3-bdee7e13741e"
+    },
+    {
+      "claim_id": "9acbf51c-733a-44b3-a8c5-a8b21132d2d0",
+      "result_id": "27430b18-f7b6-48c5-aed3-bdee7e13741e"
+    },
+    {
+      "claim_id": "14b946c9-3cbd-461c-9fdd-6aa2e6c4da11",
+      "result_id": "48b85bfd-4811-46de-9ce2-286a2f96e9d7"
+    },
+    {
+      "claim_id": "775c1e66-e7f6-420d-ab30-92599f2ba87e",
+      "result_id": "48b85bfd-4811-46de-9ce2-286a2f96e9d7"
+    },
+    {
+      "claim_id": "b0f7464e-3d8c-444d-b5c2-394a45d3638f",
+      "result_id": "30d4310b-6702-4624-b6ed-d775483990f9"
+    },
+    {
+      "claim_id": "a409e0f3-8e93-4ccb-80ab-3b8f212a9397",
+      "result_id": "30d4310b-6702-4624-b6ed-d775483990f9"
+    },
+    {
+      "claim_id": "3117f4f2-286a-45ef-815d-f5ea17b25886",
+      "result_id": "30d4310b-6702-4624-b6ed-d775483990f9"
+    },
+    {
+      "claim_id": "ec1b4124-1c89-438e-b3cf-5ad1023a1b46",
+      "result_id": "30d4310b-6702-4624-b6ed-d775483990f9"
+    },
+    {
+      "claim_id": "9c63ae8f-d7e9-4367-a751-8821c76a06a0",
+      "result_id": "74fc89e0-7cdf-4547-9c7b-4960ed86396c"
+    },
+    {
+      "claim_id": "1c4a2a4c-73cf-490e-b472-d4bf826c2ba5",
+      "result_id": "cd6457d6-40a2-458c-a6be-2330472e0dc3"
+    },
+    {
+      "claim_id": "e94250fa-f708-4380-b3b6-a988a7074bca",
+      "result_id": "cd6457d6-40a2-458c-a6be-2330472e0dc3"
+    },
+    {
+      "claim_id": "379a927f-a96b-4ef4-8648-8e21ee6cd8d6",
+      "result_id": "cd6457d6-40a2-458c-a6be-2330472e0dc3"
+    },
+    {
+      "claim_id": "1187fbf0-ea87-4d7a-a772-8dd8b4e3f3e2",
+      "result_id": "cd6457d6-40a2-458c-a6be-2330472e0dc3"
+    },
+    {
+      "claim_id": "e74459bd-2f69-4dd9-891b-50c2d20c707b",
+      "result_id": "cd6457d6-40a2-458c-a6be-2330472e0dc3"
+    },
+    {
+      "claim_id": "f7ceeb4f-fa18-4268-8e8b-53ecc0ed904d",
+      "result_id": "7de682cd-25d3-4dee-a187-ce86add172e4"
+    },
+    {
+      "claim_id": "85ca1b3d-02cd-4727-b805-e188a47023cd",
+      "result_id": "7de682cd-25d3-4dee-a187-ce86add172e4"
+    },
+    {
+      "claim_id": "bbe3e315-d637-451b-ba51-5f6f19c0e8e3",
+      "result_id": "7de682cd-25d3-4dee-a187-ce86add172e4"
+    },
+    {
+      "claim_id": "b3db1ccb-997e-437a-b176-f1d45781586e",
+      "result_id": "7de682cd-25d3-4dee-a187-ce86add172e4"
+    },
+    {
+      "claim_id": "d23b6907-36f4-491d-b2e6-879536c28072",
+      "result_id": "7de682cd-25d3-4dee-a187-ce86add172e4"
+    },
+    {
+      "claim_id": "e25a5cc0-2d5c-4031-903e-db347e9d65e4",
+      "result_id": "627395d2-4cc5-4e88-a8ac-0e802cd3f6c2"
+    },
+    {
+      "claim_id": "fa53488b-04ec-4c86-ba72-1bcea3450aea",
+      "result_id": "627395d2-4cc5-4e88-a8ac-0e802cd3f6c2"
+    },
+    {
+      "claim_id": "2d6663fc-434f-4a15-8c33-a1f8588d9aea",
+      "result_id": "627395d2-4cc5-4e88-a8ac-0e802cd3f6c2"
+    },
+    {
+      "claim_id": "4f4a07ac-32b4-4fe5-8071-67105bc10dfa",
+      "result_id": "3e1f9745-6333-4ee0-842a-7a1153dac7cf"
+    },
+    {
+      "claim_id": "d0e8ab2e-429f-400f-b13e-c18b9e036abe",
+      "result_id": "3e1f9745-6333-4ee0-842a-7a1153dac7cf"
+    },
+    {
+      "claim_id": "7f61a1ae-fb16-46d9-9baa-716c7e79827b",
+      "result_id": "3e1f9745-6333-4ee0-842a-7a1153dac7cf"
+    },
+    {
+      "claim_id": "d50a958b-9430-4a9d-8a0f-46e48bdc0b84",
+      "result_id": "3e1f9745-6333-4ee0-842a-7a1153dac7cf"
+    },
+    {
+      "claim_id": "3774d082-dee5-4c6f-9479-5615ee53ac66",
+      "result_id": "3e1f9745-6333-4ee0-842a-7a1153dac7cf"
+    },
+    {
+      "claim_id": "821df2ab-0df5-423f-9982-8fbbb258c146",
+      "result_id": "3e1f9745-6333-4ee0-842a-7a1153dac7cf"
+    },
+    {
+      "claim_id": "64e214e0-9c7c-4eca-99f2-4d2574cb95ee",
+      "result_id": "50fb894a-4a15-45cd-bcdb-483fc680c234"
+    },
+    {
+      "claim_id": "3b74d3c0-d445-43bf-9a01-f4746a47a64f",
+      "result_id": "50fb894a-4a15-45cd-bcdb-483fc680c234"
+    },
+    {
+      "claim_id": "03c3542a-ca04-48bf-97ff-de9c42ebf9dc",
+      "result_id": "50fb894a-4a15-45cd-bcdb-483fc680c234"
+    },
+    {
+      "claim_id": "c0debbaf-ca26-4e65-be05-42885e9809d3",
+      "result_id": "50fb894a-4a15-45cd-bcdb-483fc680c234"
+    },
+    {
+      "claim_id": "efbbbd70-89ab-4875-a18b-99bff3d2541c",
+      "result_id": "50fb894a-4a15-45cd-bcdb-483fc680c234"
+    },
+    {
+      "claim_id": "07310dac-d521-4240-9212-de41fa5d3b70",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "1f00972d-bdda-40a3-97cf-711c5bc09552",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "2674e9f7-880f-4482-9671-69a07f00348a",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "09946d5e-6711-4e5c-af36-65677503a1ca",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "69899cc7-6a9b-4cae-b72b-51c3be5b0132",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "bef406a7-1140-41d7-a811-6f776111f208",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "e9eac87b-81cf-49eb-b652-1b0d1962068b",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "97dd6335-5418-4bf5-8daa-971cfea82ff4",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "62a25b7f-6032-4bfa-98a8-04357925e918",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "aaf1068a-9809-4e87-8a84-98fad33c6bf9",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "24ec6833-3104-4a0f-8048-8884378e43cd",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "6a3a748d-8c35-4824-85a0-bd95e3e2a880",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "2df02294-45d8-4fcb-88f0-88aca8c20f00",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "c6d1f359-d47a-405c-ae52-d7c31ae636a2",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "dd451784-8a34-44e1-a590-57556d95501e",
+      "result_id": "3f6844ba-be12-4e95-b34b-0f08e1bdc16c"
+    },
+    {
+      "claim_id": "aa9758d2-6d50-4c72-98c8-5e2254169415",
+      "result_id": "69614b8c-e3af-4c86-a781-8274d55cd5cf"
+    },
+    {
+      "claim_id": "b4cd1418-c30c-468c-b19e-82c3eab1b050",
+      "result_id": "69614b8c-e3af-4c86-a781-8274d55cd5cf"
+    },
+    {
+      "claim_id": "0300cef1-1523-4e5c-8129-31dc2cc01808",
+      "result_id": "69614b8c-e3af-4c86-a781-8274d55cd5cf"
+    },
+    {
+      "claim_id": "f56e2ca9-3afa-49e8-a4f0-2a51b165b602",
+      "result_id": "69614b8c-e3af-4c86-a781-8274d55cd5cf"
+    },
+    {
+      "claim_id": "8f282841-a503-4940-b533-386d6042c7b8",
+      "result_id": "69614b8c-e3af-4c86-a781-8274d55cd5cf"
+    },
+    {
+      "claim_id": "0f29aa37-8707-41b3-9c9e-798b9cf13a77",
+      "result_id": "49fc8666-eb5b-4104-8659-1d14d2dbd14b"
+    },
+    {
+      "claim_id": "d59e8b59-e1d1-41d7-9091-a6a07e2153ef",
+      "result_id": "49fc8666-eb5b-4104-8659-1d14d2dbd14b"
+    },
+    {
+      "claim_id": "cb15e0c1-c387-4a37-ba3a-d41b746277a6",
+      "result_id": "49fc8666-eb5b-4104-8659-1d14d2dbd14b"
+    },
+    {
+      "claim_id": "3058a74f-8133-42b3-b47d-5a3175830481",
+      "result_id": "49fc8666-eb5b-4104-8659-1d14d2dbd14b"
+    },
+    {
+      "claim_id": "bb32a489-284f-4779-9fcb-8cfcf67b852a",
+      "result_id": "49fc8666-eb5b-4104-8659-1d14d2dbd14b"
+    },
+    {
+      "claim_id": "0d26dc35-cb59-4eef-941b-02bf6427aa7d",
+      "result_id": "49fc8666-eb5b-4104-8659-1d14d2dbd14b"
+    },
+    {
+      "claim_id": "ef25ff34-70e3-43d9-84b0-49069834e13d",
+      "result_id": "fa6fed68-5378-46af-b4f0-c213fdb47092"
+    },
+    {
+      "claim_id": "1ca0be62-63e8-44ed-a4d7-39e2a8886618",
+      "result_id": "fa6fed68-5378-46af-b4f0-c213fdb47092"
+    },
+    {
+      "claim_id": "7c2ace18-67ff-4a15-a494-652c575157db",
+      "result_id": "83fe93e0-c6c5-42fc-8b8d-9be5c638adef"
+    },
+    {
+      "claim_id": "9a49e316-5f31-4cc0-a0a6-e0990729d94c",
+      "result_id": "83fe93e0-c6c5-42fc-8b8d-9be5c638adef"
+    },
+    {
+      "claim_id": "8abe6089-2377-4614-aebe-8fe4f36b566c",
+      "result_id": "835f1ca6-d85b-434d-b4c7-8eea9a1fcb09"
+    },
+    {
+      "claim_id": "954cebcf-8792-49c2-8ee7-a5d324ce6913",
+      "result_id": "835f1ca6-d85b-434d-b4c7-8eea9a1fcb09"
+    },
+    {
+      "claim_id": "3ce29d2f-f640-44a2-b45e-a30543e56abd",
+      "result_id": "835f1ca6-d85b-434d-b4c7-8eea9a1fcb09"
+    }
+  ],
+  "comparisons": []
+}

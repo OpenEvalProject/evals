@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "E. coli exhibits nutrient-dependent sensitivity to 5-FU and FUDR, with bacteria in nutrient-poor media being significantly more sensitive to both drugs than in nutrient-rich media. E. coli is more sensitive to 5-FU than many human cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide direct IC50 measurements showing clear nutrient-dependent drug sensitivity. C25-C26 compare bacterial sensitivity to human cancer cells using cited data, supporting the conclusion that E. coli is more drug-sensitive than many host cell types. The measurements are straightforward and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The pooled genetic screen achieved high coverage and reproducibility, with 1.5 million barcodes identified per screen, 500 reads per barcode on average, 85% read matching rate, and high correlation (r > 0.93) between biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide technical validation metrics for the genetic screen methodology. The high barcode coverage, read depth, matching rate, and replicate correlation all support the technical quality of the screen. These are direct measurements from the sequencing data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Gene knockouts in nucleotide salvage and drug activation pathways increased drug resistance, while knockouts in de-novo nucleotide synthesis increased drug susceptibility. The resistance patterns were media-dependent, with specific genes conferring resistance only in nutrient-rich or nutrient-poor conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 describe the genetic screen results for the nucleotide synthesis network. The observations are consistent with known drug mechanisms and are supported by the barcode frequency data. The media-dependent patterns (C33-C34) and essentiality observations (C35-C38) are logical given the metabolic requirements in different nutrient conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The genetic screen identified 89 resistance genes, with considerably more hits in nutrient-rich media (49-50) than nutrient-poor media (12-24). Only 11 of 89 hits were in the known target pathway, with 60 hits assigned to eight enriched pathways, six of which are metabolically linked through the pentose phosphate pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 provide quantitative summaries of the screen results. C40 validates the screen precision at ~80% through independent testing. The pathway enrichment analysis (C44-C45) identifies novel resistance mechanisms beyond the target pathway, which is a significant finding. The metabolic linkage through RU5P provides a plausible mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Bacterial gene knockouts that confer 5-FU resistance are enriched for those that also reduce drug toxicity in C. elegans. While only 12% of all tested strains increased host resistance, 40% of bacterial resistance hits did so, rising to 59% when restricted to highly resistant, non-growth-impaired knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 compare the current bacterial screen with a previous C. elegans screen. The progressive enrichment from 12% to 40% to 59% as selection criteria become more stringent is compelling and suggests a strong connection between bacterial resistance mechanisms and host effects. However, this is a correlation based on comparison with prior work, not direct experimental validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Resistance rapidly emerged in all evolved E. coli strains under drug selection, with IC50 increases ranging from 2-fold to >60-fold. Evolved resistance converged to a handful of mechanisms and showed media-dependent cross-resistance patterns, with strains resistant to both drugs in their evolution media but generally not resistant when media was switched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C50-C53 describe the evolution experiment results. All evolved strains became resistant (C50), supporting rapid emergence (C4). The quantitative IC50 changes (C51) and cross-resistance patterns (C52-C53) demonstrate media-dependent convergence (C5). The 20-day evolution period with 4 independent replicates per condition provides adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Nutrient availability during bacterial evolution dictated the effect on host drug toxicity. Only bacteria evolved in nutrient-poor media (13/13 tested clones across both drugs) reduced drug toxicity in C. elegans, while all bacteria evolved in nutrient-rich media (17/17 tested clones) had no host effect, despite becoming drug resistant. This association is statistically significant (p=0.00016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C54-C60 present the central finding of the study. The perfect association between nutrient conditions and host effects across 16 independently evolved clones (C55-C59) is striking. The statistical test (C60) appropriately uses Fisher's exact test with independent clones as replicates. The phenotypic scoring was performed blindly, reducing bias. This is a robust and well-supported major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "Whole genome sequencing of 16 evolved strains identified 75 mutations affecting 49 genes, with at least 55% predicted to cause loss-of-function. Mutations showed media-dependent patterns: nutrient-poor media strains frequently inactivated upp (6/8) and modified pyrE (3/8), while nutrient-rich media strains frequently modified pyrH (4/8) and inactivated fimE (6/8). The tdk gene showed drug-specific inactivation in FUDR-evolved strains (4/8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C61-C66 summarize the genomic analysis. The mutation frequencies are clearly stated with denominators. The media-dependent mutation patterns align with the phenotypic observations and provide mechanistic insight. The identification of both expected (nucleotide metabolism genes) and unexpected (fimE) targets is valuable. However, the functional significance of some mutations (e.g., fimE, pyrE modifications) requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RNA-seq analysis revealed extensive transcriptional reprogramming in nutrient-rich evolved strains (hundreds of genes) compared to modest changes in nutrient-poor evolved strains (dozens of genes). All evolved strains overexpressed de-novo nucleotide synthesis and inhibited nucleotide salvage/drug activation pathways, but through different genes depending on media. Central carbon metabolism was repressed in all strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 describe the transcriptional analysis of 5-FU evolved strains. The RNA-seq was performed with biological triplicates without drug exposure to assess basal changes. The transcriptional patterns (C68-C72) align well with the mutational data and genetic screen results, providing convergent evidence. The pathway-level analysis (C73-C75) identifies additional resistance mechanisms. The study appropriately notes that drug-induced transcriptional changes were not assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Most loss-of-function resistance mutations in E. coli also reduced drug toxicity in the C. elegans host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is the primary conclusion stated in the abstract. It is supported by the genetic screen comparison (C46-C49) showing 40-59% of bacterial resistance hits also increase host resistance, and by the evolution experiments (C54-C60) showing that evolved resistance frequently impacts the host. However, the claim states 'most' which is only true for the refined subset (59%, C49), not the broader set (40%, C48). The claim is somewhat overstated but generally supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Repression of flagellar assembly in all evolved strains may increase drug resistance by inactivating a metabolically demanding process unnecessary in serial transfer experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is explicitly speculative ('may increase'). While flagellar assembly repression was observed in RNA-seq data, the functional significance for drug resistance is not experimentally validated. This is a reasonable hypothesis but requires further testing to confirm causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Microbiome metabolism substantially impacts host drug treatment, with bacterial metabolism altering 65% of host-targeted drugs and having clinical implications. Many host-targeted drugs (25%) hamper microbiome growth at physiological concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C10 establish the background and motivation for the study. These are well-supported by multiple citations to prior systematic screens and in vivo studies. The percentages cited (65%, 25%) come from large-scale published screens. This provides appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study builds on established knowledge about microbiome adaptation, C. elegans as a model system, and the mechanisms of fluoropyrimidine toxicity in bacteria and hosts. Previous work showed that bacterial mutations in nucleotide synthesis can affect drug efficacy in C. elegans through FUMP accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 provide background knowledge and cite prior work appropriately. These establish the foundation for the current study, including the model system rationale (C14), drug mechanisms (C15-C19), and prior findings on bacterial-host interactions (C20-C21). All claims are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study used a barcoded E. coli deletion library with 3680 knockout strains, where each gene was replaced with a cassette containing GFP, chloramphenicol resistance, and a unique 20 bp barcode. The parent strain is BW38028, and C. elegans experiments used the N2 strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 describe the materials and strains used. These are straightforward methodological details that are well-documented. The barcoded library is described as being developed by a collaborator with full details to be published elsewhere, which is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C77",
+      "C78"
+    ],
+    "result": "The pyrH gene encodes a UMP kinase involved in drug activation and regulation of de-novo nucleotide synthesis. The fimE regulator controls lifestyle switching from planktonic to pellicle growth and has been previously associated with antibiotic resistance through increased cell aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C77-C78 provide functional context for specific genes identified in the study. These are supported by appropriate citations to prior work. The information helps interpret the significance of mutations in these genes observed in the evolution experiments.",
+    "result_type": "MINOR"
+  }
+]

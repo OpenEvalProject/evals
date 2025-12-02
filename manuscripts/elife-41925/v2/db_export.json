@@ -1,0 +1,1779 @@
+{
+  "submission": {
+    "id": "f95d50c6-4133-461e-842c-6749b07b2680",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:50:47.646081Z",
+    "updated_at": "2025-12-02T09:50:47.646081Z"
+  },
+  "content": [
+    {
+      "id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "submission_id": "f95d50c6-4133-461e-842c-6749b07b2680",
+      "content_type": "manuscript",
+      "content_text": "# Thalamocortical synapses in the cat visual system in vivo are weak and unreliable\n\n## Authors\n\n- Madineh Sedigh-Sarvestani<sup>1</sup> ([ORCID: 0000-0002-8735-2927](https://orcid.org/0000-0002-8735-2927)) \u2020\n- Larry A Palmer<sup>1</sup>\n- Diego Contreras<sup>1</sup> ([ORCID: 0000-0003-0197-9882](https://orcid.org/0000-0003-0197-9882)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, School of Medicine University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe thalamocortical synapse of the visual system has been central to our understanding of sensory computations in the cortex. Although we have a fair understanding of the functional properties of the pre and post-synaptic populations, little is known about their synaptic properties, particularly in vivo. We used simultaneous recordings in LGN and V1 in cat in vivo to characterize the dynamic properties of thalamocortical synaptic transmission in monosynaptically connected LGN-V1 neurons. We found that thalamocortical synapses in vivo are unreliable, highly variable and exhibit short-term plasticity. Using biologically constrained models, we found that variable and unreliable synapses serve to increase cortical firing by means of increasing membrane fluctuations, similar to high conductance states. Thus, synaptic variability and unreliability, rather than acting as system noise, do serve a computational function. Our characterization of LGN-V1 synaptic properties constrains existing mathematical models, and mechanistic hypotheses, of a fundamental circuit in computational neuroscience.\n\n## Introduction\n\nPhysiological studies of sensory thalamic nuclei and cortices have shed insight into the mechanisms of sensory encoding at successive processing stages (Hubel and Wiesel, 1962; Reid and Alonso, 1995; Bruno and Sakmann, 2006). Relatively less is known about how the thalamus exerts its influence on the cortex, particularly in vivo conditions. In the visual system, thalamic cells from the lateral geniculate nucleus (LGN) respond to visual input with temporally precise spikes (Reinagel and Reid, 2000; Liu et al., 2001; Kumbhani et al., 2007). This information would be transmitted faithfully to the primary visual cortex (V1) if thalamocortical synapses operated linearly and reliably. However, synapses that are unreliable or exhibit nonlinearities such as short-term depression, could serve to shape and limit the sensory information that reaches the cortex. Understanding dynamic properties of the thalamocortical synapse in vivo will improve our understanding of information flow from sensory thalamic nuclei to sensory cortices. However, due to the difficulty of the required experimental design, no previous studies have characterized the variability and reliability of thalamocortical synapses in vivo.\n\nIn addition, it has become clear that no more than 10% of the synapses onto thalamorecipient cortical cells in V1 are of thalamic origin (Ahmed et al., 1998; Peters and Payne, 1993; da Costa and Martin, 2009). However, experimental data indicate that thalamic input accounts for 1/2 to 1/3 of the activity in L4 (Chung and Ferster, 1998). The apparently disproportionate contribution of the thalamus to cortical response likely relies on the specific properties of the synapses involved. Although several studies in vitro (Stratford et al., 1996; Cruikshank et al., 2007; Ohana et al., 2012; Kloc and Maffei, 2014; Cossell et al., 2015; Hu and Agmon, 2016) have produced estimates of thalamocortical and intracortical synaptic strength, there is no unified conclusion on the \u2018robustness\u2019 of the thalamocortical connection. A seminal in vitro study (Stratford et al., 1996) reported powerful and invariant thalamocortical synapses in the cat, suggesting that it is the relative strength of these synapses, compared to the more numerous intracortical synapses, that contributes to the disproportionate effect of the thalamus on V1. However, there has been no confirmation of these properties in vivo.\n\nIn this study, we used intracellular recordings in cats in vivo to characterize the dynamics of individual excitatory post-synaptic potentials (EPSPs) produced by single pre-synaptic LGN spikes driven by visual stimuli. We measured the fraction of pre-synaptic LGN spikes that produced a detectable depolarization in the cortex (reliability), the variability of the amplitude of EPSPs produced by single LGN spikes, and short-term synaptic plasticity. We then constrained a feedforward model of the thalamocortical circuit with these measured parameters and studied their effect on cortical firing and information transfer.\n\nWe found that thalamocortical synapses are highly variable and unreliable, and exhibit short-term plasticity. Our data-driven simulations showed that variable and unreliable synapses increase cortical firing and thereby boost the thalamocortical drive. This suggests that the high variability of the thalamocortical synapse, rather than being irrelevant system noise, does play a functional role in driving cortex. Our findings are consistent with recent work suggesting synaptic variability and reliability play an important role in ethologically relevant behaviors (Evans et al., 2018).\n\n## Results\n\nTo study the dynamic properties of thalamocortical synapses in vivo, we recorded simultaneously from the LGN and its postsynaptic targets in L4 (n\u00a0=\u00a028) or L6 (n\u00a0=\u00a08) of V1 (Figure 1A). We used the same dataset as in Sedigh-Sarvestani et al. (2017). All cortical cells in the database were simple cells since we found no connections with complex cells. Furthermore, we found no differences between simple cells in L4 with those in L6 and therefore the data are presented together. The goal was to record from one or more of the many pre-synaptic LGN neurons that converge onto the same target V1 neuron (Figure 1B). Spikes from 4 to 25 LGN neurons were recorded extracellularly with independently movable tetrodes, while the membrane potential (Vm) of V1 neurons was recorded with intracellular sharp electrodes (Figure 1C). Visually-aided automated clustering algorithms were used to sort the spikes into different units (Figure 1\u2014figure supplement 1). This method allowed us to study the EPSPs in V1 neurons, recorded from the soma, produced by single pre-synaptic LGN spikes (Figure 1D, red traces). Our previous study published on this dataset (Sedigh-Sarvestani et al., 2017) focused on the relationship between the average connection strength and relative LGN-V1 receptive-field overlap. In this study, we focus on the dynamic properties of the LGN-V1 synapse.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig1-v2.jpg)\n\n**Figure 1.:** (A) Simultaneous recording of intracellular potentials with a sharp microelectrode from a single V1 neuron and extracellular potentials from many LGN neurons. (B) This allows us to identify one, or more, LGN cells monosynaptically connected to the cortical cell. (C) Sample traces, from two different example experiments, of a V1 cell together with spikes from three simultaneously recorded LGN cells, during the response to white noise. (D) Jitter-corrected spike-triggered average (STA) trace of V1 Vm, and SEM shown in gray, for each LGN cell. The red trace in each panel contains a sharp depolarization indicative of an EPSP from a connected LGN-V1 cell pair. The remaining LGN cells were not connected, exhibiting a flat STA. t\u00a0=\u00a00 indicates LGN spike time.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For a description of Lratio and Isolation distance, see Schmitzer-Torbert et al. (2005). The average Isolation distance was 19.3\u00a0\u00b1\u00a030.6 (mean\u00a0\u00b1\u00a0SD), and the average Lratio was 0.77\u00a0\u00b1\u00a00.86. Although many additional features were used to identify clusters, the features used to calculate Lratio and Isolation distance were the energy and first PCA component, as recommended by Schmitzer-Torbert et al. (2005).\n\n### Identification of connected LGN-V1 pairs.\n\nTo identify connected LGN-V1 pairs we generated the spike triggered average (STA) of the cortical cell\u2019s Vm triggered by LGN spikes during the response to white noise stimuli (Figure 1D, see Materials\u00a0and\u00a0methods). To be considered a connection, the STA had to be above the confidence limits calculated using bootstrap techniques (Materials\u00a0and\u00a0methods and Sedigh-Sarvestani et al., 2017). Data from two experiments are shown in Figure 1C\u2013D. In each case, only one of the three LGN cells was connected, as shown by the sharp, low latency, depolarization in its STA. Using this procedure, we found 36 LGN cells monosynaptically connected to 23 cortical simple cells, from a total of 296 simultaneously recorded pairs with overlapping receptive fields.\n\nSince our previous report with this same dataset (Sedigh-Sarvestani et al., 2017) showed surprisingly small average EPSPs (from 0.15 to 1.2 mV, mean\u00a0=\u00a00.42 mV), here we aimed to understand the dynamics of the EPSPs triggered by single LGN spikes (single-spike EPSPs) that contribute to the average. In particular, we were interested in their amplitude variability, reliability and presence of short-term synaptic plasticity. Since true synaptic reliability, that\u00a0is the variance in synaptic transmission events with release of neurotransmitter that successfully binds to receptors and causes a synaptic current flux\u00a0(Branco and Staras, 2009),\u00a0cannot be measured in vivo, here we use the term reliability simply to signify the percentage of LGN spikes that caused an observable somatic depolarization. Such somatic depolarizations are the result of the sum of true single synaptic events occurring in the dendrites of V1 cells - beyond reach to our presumably somatic intracellular recordings. The summation of such events at the soma level, which is what we measure, ultimately determines whether the Vm crosses spike threshold (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig2-v2.jpg)\n\n**Figure 2.:** (A) An LGN axon from a pre-synaptic cell makes synaptic contacts with its target L4 cell, and therefore causes dendritic depolarizations, which are integrated at the soma. We measure this integrated depolarization with a sharp intracellular electrode. (B) Single-spike traces (n\u00a0=\u00a02074) for a sample connected pair, overlaid with their average in black. (C) Subset of single-spike traces from B) exhibiting a clear EPSP (black traces), and those without a clear EPSP (colored traces). (D) Subset of single-spike traces from B) that lack a detectable EPSP. (E) The average EPSP and its first derivative are used to determine parameters for the single-spike EPSP detector (see text). The gray region indicates the \u2018monosynaptic window\u2019, or the expected window for a monosynaptic EPSP to occur after an LGN spike. (F). Example traces categorized as detectable single-spike EPSP (top) and undetectable single-spike EPSP (bottom).\n\n### Detecting Single-spike EPSPs\n\nExamination of the Vm following each single LGN spike revealed that not all contained a sharp, short latency, depolarization indicative of an EPSP. Figure 2B shows all (n\u00a0=\u00a02074) single-spike traces for a sample connected pair, with the average overlaid in black. Some single-spike traces contained clear and large EPSPs (Figure 2C black traces), and some traces did not contain any sign of an EPSP or small depolarization (Figure 2D). In addition to these, it was hard to determine visually whether or not there was a small EPSP in\u00a0~5% of single-spike traces (Figure 2C colored traces). To remove subjective bias in categorizing spikes into those producing detectable (Figure 2F, top) and undetectable (Figure 2F, bottom) single-spike EPSPs, we developed a binary detector (Materials\u00a0and\u00a0methods). The lack of a detectable EPSP could be due to a variety of factors, including vesicle release failures at the thalamocortical synapse or the coincidence of transmitter release with a postsynaptic IPSP. Since, in vivo, we cannot measure those relevant transmission variables or infer the presence of a very small EPSP, we simply refer to single-spike traces without a visible EPSP as \u2018undetectable\u2019 single-spike EPSP. We note however that EPSPs that are so small as to be undetectable likely do not influence the post-synaptic Vm significantly, at least under our conditions, and therefore have little to no impact on the spike output of the cortical cell.\n\nFor each single-spike trace, the detector looked for the presence of a depolarization that exceeded a defined threshold within an expected \u2018monosynaptic window\u2019, thus imposing both an amplitude and a temporal constraint to the detection of single-spike EPSPs. Both the threshold and the monosynaptic window were defined based on the STA (Figure 2E), and thus unique for each connected pair. The threshold was defined as 1SD above the mean of jittered single-spike traces (Figure 3B, blue traces) produced by jittering the time of each spike by a random amount, 0 to 16 or 0 to 24 ms. This temporal jitter matches the duration of our stimulus and removes the effect of the pre-synaptic LGN spike, leaving only the lower frequency modulations caused by the visual stimulus. The monosynaptic window during which the single-spike EPSP had to occur was defined as the time between onset (t1) and termination (t2) of the dVm/dt of the average EPSP for that connected pair (Figure 2E), which corresponds with the onset and peak of the average EPSP. The monosynaptic window was imposed to reduce possible false detections of single-spike EPSPs produced by other LGN cells. Using these criteria, the detector labeled each single-spike trace as either a \u2018detectable single-spike EPSP\u2019 (Figure 2F, green) or an \u2018undetectable single-spike EPSP\u2019 (Figure 2F, red).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig3-v2.jpg)\n\n**Figure 3.:** (A) Average EPSP for different spike-categories within the same connected pair. Colors used throughout figure. Gray region indicates the monosynaptic window. (B) Example single-spike EPSPs for each category. (C) Distribution of single-spike EPSP amplitudes for each category. The inset in the second row shows sample detectable single-spike EPSPs with amplitudes at the high tail of the distribution,>4 mV. The inset in the third row shows sample undetectable single-spike EPSPs with amplitudes also at the high tail of the distribution,>1 mV.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Classification of single-spike EPSPs into detectable and undetectable categories using linear discriminant analysis. The classifier was trained on 10% of single-spike EPSPs that were manually labeled. Misclassifications (black circles) were most often false positives. (B) Percent agreement between categorizations using the automated detector (Figure 2E\u2013F) and linear discriminant classifier, for different fraction of data used as the training set, for the sample connected pair used in Figure 3. (C) Percent of single-spike EPSPs categorized as undetectable for the two methods, for all n\u00a0=\u00a036 connected pairs.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) LGN spike-triggered average trace of V1 Vm for all spikes (black), successfully transmitted spikes (green) or failed spikes (red)., and jittered spikes (blue). (B) (Left) Average spike-trace (black) overlaid with all n\u00a0=\u00a0610 single-spike traces (top), and separated into spike categories (bottom) as in Figure 1F. (Right) Amplitude distribution of single-spike EPSPs for all four spike categories. (C) Sample single-spike traces categorized as successes, indicated by the presence of a sharp depolarization in the monosynaptic window (gray box). (D) Sample single-spike traces categorized as undetectable single-spike EPSPs. (E) Sample single-spike traces produced by jittered LGN spikes.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Each panel shows the top 1% of single-spike EPSPs with the largest amplitudes. Close inspection of the rising phase of each single-spike EPSP suggests a single smooth and sharp depolarization. t\u00a0=\u00a00 is the occurrence of the pre-synaptic LGN spike B) A selection of the largest 1% of single-spike EPSPs, normalized to the peak of each trace. To ease visual comparison of the rising phase of the EPSP, traces are shown in a limited 2 ms time-window. STAt1 refers to the onset of the rise of the average STA for each connected pair. Single-spike EPSPs with large negative deviations before the rising phase were removed from these plots to reduce the overall range of the plot and ease visual assessment. Including these traces made visualization difficult but did not change the results. (C) Same as (B) but for single-spike EPSPs in the 20th \u221225th amplitude percentile. (D) B and C overlaid. Red traces indicate normalized large EPSPs and blue traces normalized small EPSPs.\n\n### Validating single-spike EPSP detector.\n\nTo validate the detector we a) analyzed the statistics of the subset of detectable and undetectable single-spike EPSPSs and b) compared the categorization of the detector to that produced by an independent linear discriminant classifier trained on a small subset of hand-labeled single-spike traces (Figure 3\u2014figure supplement 1). In the example shown in Figure 3A, the average EPSP for the detectable group (green) has a clear sharp depolarization, whereas the average for jittered-spikes group (blue) is flat as expected. The average for the undetectable group (red) has a slight negative slope in the monosynaptic window (gray box) and no depolarization. Examination of categorized single-spike traces revealed that all traces categorized as detectable had a sharp depolarization in the monosynaptic window (Figure 3B, green). Traces categorized as undetectable either had no depolarization or, in a smaller fraction of cases, had depolarizations that were outside of the monosynaptic window and thus were attributed to the action of other LGN inputs (Figure 3B, red). Consistent with the slightly negative Vm in the average of undetectable EPSPs observed for many connected pairs (Figure 3A, red), we found that undetectable single-spike traces often had a negative slope, which we hypothesized was due to the coincidence of an IPSP with the single-spike EPSP or to the occurrence of the spike close to the peak of an ongoing EPSP (large negative trace in Figure 2D). We show classified single-spike traces for a second connected pair in Figure 3\u2014figure supplement 2.\n\n### Thalamocortical synapses are unreliable and generate highly variable EPSPs.\n\nTo estimate the variability of single-spike EPSP amplitudes, we calculated the amplitude distributions for all single-spike traces (Figure 3C, black) as well as for the subsets categorized as detectable (green) and undetectable (red) single-spike EPSPs. As a control for the amplitude of Vm fluctuations independent of the presence of\u00a0EPSPs, we also calculated the amplitude distribution for jittered-spike traces (blue). To calculate the single-spike EPSP amplitude we used the dVm/dt of the EPSP, as shown in Figure 2E. We refined the estimate of the onset (t1\u2019) and offset (t2\u2019) of the EPSP for each single-spike trace and defined the amplitude as \u0394Vm (t1\u2019:t2\u2019). For traces without a detectable EPSP as well as for jittered traces, we defined the amplitude as the mean \u0394Vm across the previously defined monosynaptic window (t1:t2, based on the STA, Figure 2E).\n\nThese amplitude distributions suggested that single-spike EPSP amplitudes were highly variable. For the example connected pair in Figure 3, the distribution of all \u0394Vm values (n\u00a0=\u00a02074, Figure 3C black) was broad with a mean of 0.78\u00a0\u00b1\u00a00.98 mV and a range of \u22121.7 to 6.1 mV. The distribution of \u0394Vm for detectable EPSPs only (Figure 3C, green) had a larger mean of 1.2\u00a0\u00b1\u00a00.84 mV. This larger mean is due to the exclusion of traces with an undetectable EPSP, which reduce the average EPSP value. The shape of the detectable EPSP amplitude distribution had a long tail, extending from 0.18 mV to 6.1 mV. This is striking because it shows that there is a population of very large (>4 mV) EPSPs triggered by LGN input. The smooth and fast rising phase of these large EPSPs (Figure 3C, green traces inset), as well as similarity in shape to smaller EPSPs (Figure 3\u2014figure supplement 3), suggests that they are single EPSPs and not a summation of several EPSPs. The amplitude distribution for undetectable EPSPs (Figure 3C, red bars) was Gaussian and centered near 0 mV, similar to the distribution for jittered traces, which represent inherent Vm fluctuations not associated with pre-synaptic spikes. Non-zero amplitudes in undetectable single-spike EPSPs were due to a positive slope in the monosynaptic window arising from an EPSP that occurred too early (from another LGN cell), or from depolarizations that did not contain a smooth slope (Figure 3C, red traces inset).\n\nOn average thalamocortical synapses were very unreliable. We quantified the percent of undetectable single-spike EPSPs from the total number of presynaptic LGN spikes. The mean percent of undetectable EPSPs for the population (n\u00a0=\u00a036 pairs) was 37 \u00b1 12% [mean\u00a0\u00b1\u00a0SD], ranging from 7.4% to 56% (Figure 4A). This large proportion of spikes that failed to produce a detectable EPSP greatly affected the amplitude and variability of the average EPSP. Across the population of connected pairs, the average EPSP amplitude was 0.49\u00a0\u00b1\u00a00.23 mV when including all single-spike traces (Figure 4B, black), and significantly higher at 0.89\u00a0\u00b1\u00a00.24 mV (p=3e-9, Figure 4D, \u2018A\u2019 vs. \u2018D\u2019) when considering only detectable EPSPs (Figure 4B, green). The population average amplitude for jittered spikes was close to 0 (0.01\u00a0\u00b1\u00a00.03) mV as expected. In contrast, the population average for undetectable EPSPs was \u22120.20\u00a0\u00b1\u00a00.09 mV, significantly different from 0 (p=5e-15 Figure 4D, \u2018U\u2019). We speculate that this negative Vm could be due to an ongoing EPSP at the time of arrival of the LGN spike, which would lead to negative values in the calculation of its amplitude, since we zero the Vm at the time of the LGN spike. Alternatively, undetectable EPSPs could be due to the concomitant occurrence of an IPSP, which would suppress the EPSP and cause hyperpolarization. Both phenomena would lead to the slightly negative average Vm values we observe following spike failures.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig4-v2.jpg)\n\n**Figure 4.:** (A) Distribution of percentage of undetectable single-spike EPSPs (%undetectable) for all n\u00a0=\u00a036 connected pairs. Numbers indicate mean\u00a0\u00b1\u00a0SD. (B) Distribution of average trace amplitude (Avg amp), averaged over all single-spike traces (All (A), black), and only detectable single-spike EPSP traces (Detectable (D), green). (C) Distribution of coefficient of variation (CV) of single-trace amplitudes, calculated from all traces (black), and detectable EPSP traces only (green). (D) (Left) Population average (error bars indicate SEM) of Avg amp for all (A), detectable (D), and undetectable (U) single-spike EPSPs. Blue/red bars within category indicate connections onto regular spiking (RS)/fast spiking (FS) V1 cells. (Right) Population average of CV values for all spikes and detectable EPSPs. (E) (Left) Avg amp decreases with increasing %undetectable. (Right) CV increases with increasing %undetectable. Colors indicate connections onto RS or FS cells. (F) CV decreases with increasing Avg amp for all spikes (left) and for detectable only (right). (G) CV plotted for all n\u00a0=\u00a036 connected pairs, separated on the x-axis according to the target V1 cell #. Black/green/red indicates V1 cells that had 1/2/3 connected LGN cells in our dataset. (H) Avg amp and %undetectable for a subset of connected pairs during response to white noise vs. drifting gratings.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) For each LGN spike, the amplitude of the single-spike trace (amp) was correlated with the instantaneous Vm driving force (average Vm in 1 ms window around spike time, see Materials\u00a0and\u00a0methods) and the inter-spike-interval (ISI). (B) This data was fit to a linear regression model separately for each n\u00a0=\u00a036 cell pairs. A fraction of cells (9/36) cell pairs exhibited significant regression coefficients for Vm and ISI (black circles). (C) Schematic showing categorization of instantaneous driving force associated with each spike into low (hyperpolarized) and high (depolarized) Vm based on quartiles of the probability distribution. (D) Population average across all connected pairs of different synaptic parameters during low Vm and high Vm categories. Error bars indicate SEM. * indicates significant (p<0.05) difference in group averages. (E) Same as C, but for ISI. (F) Same as D, but for ISI categories.\n\nWe quantified the variability of the LGN-V1 synapse by calculating the noise corrected coefficient of variation (CV, Materials\u00a0and\u00a0methods) of single-spike trace amplitudes. In agreement with the large variability displayed by the traces in Figure 2B, we found large values of CV across the population, with a mean of 1.2\u00a0\u00b1\u00a00.47 (Figure 4C, black). This is nearly an order of magnitude larger than reports from in vitro studies of the cat thalamocortical pathway (Stratford et al., 1996) and is consistent with the high fraction of undetectable EPSPs. Indeed, the CV distribution shifted towards much lower values after removing undetectable EPSPs and its mean reduced tenfold (0.18\u00a0\u00b1\u00a00.13, Figure 4C, green), indicating that much of the variability could be explained by undetectable EPSPs.\n\nAcross the population, the percentage of undetectable EPSPs was negatively correlated with the average EPSP amplitude (r\u00a0=\u00a0\u22120.81; Figure 4E, left). Even though it is plausible that such negative correlation may be influenced by the amplitude threshold of the automated detector, we obtained the same relationship when using the linear classifier which has no explicit amplitude threshold. Furthermore, an inverse relationship between the rate of spike-transmission failures (analogous to our \u2018undetectable\u2019 EPSP rate) and average EPSP amplitude has been previously reported in a variety of circuits both in vitro (Feldmeyer et al., 1999,\u00a0Feldmeyer et al., 2006)\u00a0and in vivo (Jouhanneau et al., 2015), and is consistent with binomial models of synaptic transmission (Figure\u00a08\u00a0in\u00a0Feldmeyer et al., 1999). In addition, we observed a positive correlation between the percentage of undetectable EPSPs and CV (r\u00a0=\u00a00.77; Figure 4E, right), consistent with previous reports in vitro. The exclusion of undetectable EPSPs did not change the correlation between CV and average EPSP amplitude (Figure 4F, right; r\u00a0=\u00a0\u22120.66), indicating that these two values are negatively correlated independent of detectability.\n\nTo determine if synaptic reliability or variability were related with the electrophysiological class of the target V1 cell, we classified our L4 simple cells into regular-spiking (RS; n\u00a0=\u00a016/23) and fast-spiking (FS; n\u00a0=\u00a07/23) based on their intracellularly measured electrophysiological properties (Materials\u00a0and\u00a0methods). Of the 36 presynaptic LGN cells, 24 were connected to RS cortical cells (Figure 4, blue dots) and 12 were connected to FS cells (Figure 4, red dots). We did not find a significant difference in either average EPSP amplitude, %undetectable, or CV between RS and FS cells (Figure 4E). However, after excluding undetectable EPSP traces, the mean CV of RS cells (n\u00a0=\u00a024, 0.22\u00a0\u00b1\u00a00.13) was higher than that of FS cells (n\u00a0=\u00a012, 0.11\u00a0\u00b1\u00a00.08; p=0.047 KS test, p=0.018 t-test; Figure 4D) and the average EPSP amplitude (Figure 4F,\u00a0x-axis) was smaller for RS (0.83\u00a0\u00b1\u00a00.21 mV) than for FS cells (1.0\u00a0\u00b1\u00a00.21 mV; p=0.0046 KStest, p=0.025 t-test; Figure 4D). Similarly, the average slope of single-spike EPSPs was slightly higher for FS cells (1.14\u00a0\u00b1\u00a00.23) compared to RS cells (0.97\u00a0\u00b1\u00a00.18) (p=0.023 KStest; p=0.027 t-test), only after excluding undetectable EPSPs. This suggests that undetectable single-spike EPSPSs mask differences in the size, and rate of change, of Vm fluctuations between these cortical cell types. This is consistent with previous work from our laboratory in vivo, showing different input resistance and membrane time-constant for RS and FS cells (Contreras and Palmer, 2003; Cardin et al., 2007; Cardin et al., 2010), and consistent with greater differences observed in vitro across these cell types (Hull et al., 2009; Cruikshank et al., 2007; Schiff and Reyes, 2012; Kloc and Maffei, 2014).\n\nWe next wanted to know whether synaptic variability was dependent on postsynaptic mechanisms. If so, LGN cells that share the same postsynaptic target should share similar CV values. Our dataset included five cortical cells with three connected LGN cells each (Figure 4G, red dots) and three cortical cells with two connected LGN cells each (Figure 4G, green dots), the remaining 15 cortical cells had a single connected LGN cell (Figure 4G, black dots). We plotted the CV of all connections in rank order and found that the CV of connections to the same postsynaptic V1 cell was as variable as that of connections across different cortical cells. Thus, our data suggest that the postsynaptic cell does not overtly determine the variability of LGN-V1 synapses.\n\nTo further explore postsynaptic mechanisms on EPSP variability and reliability, we estimated the correlation between instantaneous Vm (as a measure of driving force) and the single-spike EPSP amplitude for all spikes in each connected pair (Figure 4\u2014figure supplement 1). As detailed in Appendix\u00a01, we did not find a significant correlation between postsynaptic Vm and EPSP amplitude (Figure 4\u2014figure supplement 1F). However, we found that spikes that occurred during hyperpolarized Vm produced EPSPs with slightly lower %undetectable rates and CVs (Figure 4\u2014figure supplement 1D).\n\nFinally, to verify that synaptic properties were not dependent on the type of visual stimulus presented, we separately calculated amplitude distributions and %undetectable for a subset (n\u00a0=\u00a019) of connected pairs during the response to oriented drifting grating stimuli (Materials\u00a0and\u00a0methods). Because the white noise and drifting grating stimuli were presented about ten minutes apart, this comparison also assessed the stationarity of our characterization across time. We found a high correlation between the average EPSP amplitude during the response to both white noise and gratings (Figure 4H, left, r\u00a0=\u00a00.90), as well as between the standard deviation of the amplitude distribution (r\u00a0=\u00a00.85, data not shown), and between %undetectable (Figure 4H, right, r\u00a0=\u00a00.82). We used paired t-tests to compare these response properties associated with the same synapse during presentation of the two types of stimuli. We found that the average EPSP amplitude was significantly higher during white noise stimuli (p=0.0055), but all other variables including LGN firing rate had similar distributions. The white noise stimulus has low spatiotemporal correlations relative to the oriented grating stimuli; we therefore expect that these two stimuli should induce different amounts of coordinated activity in the pre-synaptic LGN population. Thus, the larger EPSP amplitude during white noise is unlikely to be due to increased synchronized thalamic input as compared to drifting gratings. Overall, the similarity of average EPSP amplitude and %undetectable across these very different visual stimuli suggests that synaptic strength, reliability and variability are not overtly influenced by the dynamics of the pre-synaptic LGN population as a whole and may instead reflect the properties of individual synapses.\n\nIn summary, we found that thalamocortical synapses in the cat visual system produce EPSPs with small and variable amplitudes, including a large percentage of undetectable EPSPs, thalamic spikes that either fail to produce an EPSP or produce an EPSP too small to visibly affect somatic Vm. Within our dataset, connected pairs with larger average EPSP amplitudes generally had lower %undetectable single-spike EPSPs and lower CVs. Such a relationship is consistent with expectations from binomial models of synaptic vesicle release (del Castillo and Katz, 1954), as well as with previous in vitro and in vivo studies (Feldmeyer et al., 1999; Ohana et al., 2012; Jouhanneau et al., 2015; Pala and Petersen, 2015). Our characterization of synaptic variability was not overtly governed by the visual stimulus or postsynaptic cell identity.\n\n### Thalamocortical synapses exhibit short-term synaptic plasticity\n\nShort-term synaptic plasticity (STSP) is an activity dependent change in synaptic strength that occurs on the order of tens to hundreds of milliseconds. Because STSP can directly influence the computations performed by a circuit (Deng and Klyachko, 2011; Regehr, 2012), there is some interest in understanding synaptic STSP properties in vivo. To demonstrate STSP in the thalamocortical synapse, we generated spike-triggered average EPSPs for LGN spikes preceded by interspike intervals (ISI) of different durations. The example cell of Figure 5A exhibited clear short- term synaptic depression (STSD) as the amplitude of EPSPs with the shortest ISIs (0\u201310 ms; 0.70 mV) was only 38% of the amplitude at long ISIs (>150 ms; 1.8 mV). Figure 5B shows another connected pair with clear STSD (0.47 mV at ISIs of 0\u201310 ms and 1.2 mV at ISIs of 200\u2013500 ms, a reduction to 39% of the long ISI). Due to the limited duration of intracellular recordings, for most connected pairs we did not record enough LGN spikes to generate several ISI bins. Therefore, we grouped the ISIs in two categories, a short ISI between 0\u201350 ms, and a long ISI greater than 50 ms. We chose 50 ms because it was close to the median ISI for most connected pairs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig5-v2.jpg)\n\n**Figure 5.:** (A) (Left) Average EPSPs grouped by inter-spike-interval (ISI) for a sample connected pair. (Right) Normalized EPSP amplitude vs. ISI for the same connected pair. (B) Same as A, for another sample connected pair. (C) Cumulative distribution functions (CDF), of single-spike EPSP amplitude distribution for spikes with short (0\u201350 ms) ISI and those with long (>50 ms) ISI, for the connected pair in A. p values are from 2-sample KS test. (D) CDFs of ISI distribution for detectable and undetectable single-spike EPSPs, for the sample connected pair in A. (E) No. of synapses with separable distributions for both, just EPSP amp for short and long ISIs, just ISI for detectable and undetectable EPSPs, or neither. Most synapses with a separable distribution of EPSP amplitudes for short and long ISIs, also exhibited separable ISI distributions for detectable and undetectable EPSPs. (F) STSP was quantified as the % change in average EPSP amplitude for long-ISI EPSPs, relative to short-ISI EPSPs. (G) (Left) % change of average EPSP amplitude with ISI as a function of the long-ISI average EPSP amplitude for all connected pairs. Filled circles indicate significant STSP. (Right) %change plotted against CV of the amplitude distribution for long-ISI EPSPs. (H) %change plotted against the firing rate of pre-synaptic LGN cell.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Average trace EPSP amplitude (Avg amp) as a function of the connected pre-synaptic LGN cell\u2019s firing rate during the same time-period used to estimate EPSP. (B) Same as A but for %Undetectable. (C) Same as A but for CV.\n\nTo determine if a connected pair exhibited significant STSP, we compared the cumulative distribution functions (CDFs) of single-spike trace amplitudes for short and long ISIs (Figure 5C, gray and blue curves). For the example connected pair illustrated in Figure 5A, the two distributions were significantly different (Figure 5C; p=1.5e-6 t-test), with long ISIs producing larger amplitudes, thus demonstrating STSD. Using this metric, we found that 20 out of our population of 36 connected pairs (55%) exhibited significant STSP.\n\nTo quantify the magnitude and sign of STSP across the population, we calculated the %change (Figure 5F) in average EPSP amplitude for short relative to long ISIs ((short \u2013 long)/long)x100). A negative %change indicates STSD and a positive %change indicates short-term synaptic facilitation (STSF). Of the 20 connected pairs that exhibited STSP (Figure 5E, both\u00a0+amp bars), 17 exhibited STSD and three exhibited STSF. The %change across the 17 connected pairs exhibiting STSD was \u221232 \u00b1 15%, and the %change across the three connected pairs exhibiting STSF was 24 \u00b1 16%.\n\nNotably, all three synapses exhibiting significant STSF were connected onto FS cortical cells (Figure 5G). However, three other FS cells exhibited significant STSD. This bimodality may be due to the fact that some of the cortical neurons we\u2019ve classified as FS are actually SOM inhibitory neurons, which do not exhibit short-term depression (Hu and Agmon, 2016). RS cells only exhibited significant STSD.\n\nThe smaller single-spike EPSP amplitudes for short ISIs could be due to increased number of undetectable single-spike EPSPs at short ISIs. Thus, we compared the distribution of ISIs for detectable and undetectable single-spike EPSPs for each connected pair. For the cell shown in Figure 5C ISIs preceding undetectable single-spike EPSPs were shorter than those preceding detectable EPSPs (p=0.0019 t-test Figure 5D), consistent with a spike-history dependent decrease in the efficacy of synaptic transmission. Across the population, most (14/20) connected pairs that exhibited distinct EPSP amplitude distributions for short and long ISIs also exhibited distinct ISI distributions for detectable and undetectable single-spike EPSPs (Figure 5E, \u2018both\u2019). Thus, we conclude that increased %undetectable at short ISIs accounts in part for the smaller observed single-spike EPSP amplitudes.\n\nModels of synaptic transmission (del Castillo and Katz, 1954) predict that synapses with higher probability of release generate larger EPSPs with lower CV values and show proportionally more depression when activated at short intervals. Consistent with such models, we found that the connected pairs with larger average EPSP amplitudes undergo greater STSD (Figure 5G, left), and those with smaller average EPSPs undergo STSF (%change\u00a0>0; Figure 5G, left). Furthermore, we also found a small positive correlation between the CV and %change (Figure 5G, right), with synapses with larger CVs exhibiting smaller STSD. Finally, we did not find a correlation between the amount of STSP in a connected pair and the firing rate of the pre-synaptic LGN cell within a range of 2\u201324 Hz (Figure 5H). This suggests that, at least for the range measured here, STSD should not dissipate (Boudreau and Ferster, 2005).\n\nAll together, we conclude that a) thalamocortical synapses exhibit STSP, with FS cells exhibiting STSD and STSF equally and RS cells exhibiting only STSD; b) at the single synapse level, spiking history influences the detectability of the EPSP and thus the influence on postsynaptic spike output; c) STSD in vivo is independent of pre-synaptic firing rate, and is associated with EPSP amplitude reductions of\u00a0~30%.\n\n### Variable and unreliable synapses boost the thalamocortical drive in a model V1 cell.\n\nTo understand the functional implications of synaptic variability and reliability that we measured in vivo, we implemented a biologically constrained leaky integrate-and-fire (LIF) model of a V1 L4 simple cell driven by the prerecorded spiking activity of up to 50 LGN cells responding to white noise visual stimulus (Figure 6A, Materials\u00a0and\u00a0methods). The prerecorded LGN cells were chosen so that the spatial alignment of their RFs generated an elongated simple-like RF in the V1 model cell (Figure 6B). LGN spikes triggered transient excitatory conductances in V1 with kinetic and synaptic parameters matching our measurements in vivo.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig6-v2.jpg)\n\n**Figure 6.:** (A) Model input:output schematic. Spiking responses, during white noise visual stimulus, of a group of prerecorded LGN cells selected to form a V1-like RF are used as pre-synaptic input for the model. These pre-synaptic inputs undergo either reliable or unreliable synaptic transmission, and are summed to produce a total synaptic conductance to the V1 cell. (B) RF-center contours of the 50 ON and OFF-center LGN cells used as inputs to the model, along with the population RF of all spikes. (C) (Top) Conversion of pre-synaptic spikes into excitatory post-synaptic conductance (EPSG) for model cell with two example reliable (left) and unreliable (right) synapses. (Bottom) Distribution of EPSG amplitudes for a sample synapse under reliable and unreliable model. The distributions have the same mean, but different variance. (D) Schematic showing random selection of\u00a0~40% of pre-synaptic spikes designated as undetectable EPSPS (failures, red circles) for each synapse in unreliable model.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Average Vm of model V1 cell as a function of the number of pre-synaptic LGN inputs. Output of the reliable model, and both types of unreliable model with different distribution of failures across the pre-synaptic population are indicated by color. Error bars indicate 95% confidence intervals based on n\u00a0=\u00a010 trials. (B) Same as A, but for standard deviation of the Vm (Vm SD). (C) Same as A, but for firing rate of the V1 model cell.\n\nWe created two models to explore the effect of synaptic variability and reliability on V1: one model was built with reliable synapses that convert every pre-synaptic spike into an EPSP (0% undetectable) of constant amplitude (\u2018reliable\u2019, Figure 6C). Another model was built with unreliable synapses with varying percentages of synaptic failures, which lead to undetectable EPSPs, (\u2018unreliable\u2019, Figure 6C) and EPSPs with variable amplitude. We calibrated these two models so that they generated the same average excitatory conductance amplitude (Figure 6C, bottom), allowing for a controlled comparison of the effect of synaptic reliability and variability. For the unreliable model, synaptic failures were randomly selected from each LGN cell\u2019s spike-train (Figure 6D). All synaptic properties, the average and variance of EPSP amplitudes and failure rate (which corresponds to % undetected), were chosen from our measured dataset. Corresponding synaptic properties were kept consistent, so that synapses with larger EPSP amplitudes exhibited lower failure rate, similar to the lower % undetectable in vivo. We assigned synaptic properties randomly to each pre-synaptic LGN cell and ran 10 trials with a different randomized assignment in each trial. Adding STSD as measured in vivo did not change our results (Figure 6\u2014figure supplement 1), so for simplicity STSD is excluded as a variable.\n\nFigure 7A shows samples of synaptic inputs and cortical outputs for both models, when driven by 50 LGN neurons. In the reliable model each LGN spike (black dots) generated an excitatory postsynaptic conductance (Gin) of equal amplitude for each LGN cell. In the unreliable model there were random synaptic failures (Figure 7A, red circles) and each Gin varied around the mean value for each LGN cell. The total synaptic conductance was converted into an input current (Iin) which produced Vm depolarizations, some of which reached spike threshold (red dotted line). In this example, only the V1 cell with unreliable synapses fired action potentials, due to the presence of larger fluctuations in its Iin.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig7-v2.jpg)\n\n**Figure 7.:** (A) Sample 100 ms simulation for the reliable (left) and unreliable (right) model. Undetectable EPSPs are called failures. (Top) LGN Spike inputs for each of 50 synapses, with spike failures shown as red dots. (Middle) Excitatory conductance trace for each synapse, total synaptic conductance, and total current input. (Bottom) Corresponding V1 Vm, which is below spike-threshold for both models. (B) V1 spike rasters for 20 4 s blocks of the white noise stimulus for reliable and unreliable model. (C) Model V1 RFs, at time of pixel with strongest response (75 ms). (D) V1 firing rate as a function of V1 Vm standard deviation (Vm SD, left) and mean (right). Each point represents the average value across n\u00a0=\u00a010 simulations. (E) Average Vm, Vm SD, and firing rate of V1 cell as a function of the number of synaptic inputs, for n\u00a0=\u00a010 simulations of the reliable and unreliable model. Error bars indicate 95% confidence intervals.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** To explore the contribution of synaptic reliability alone on cortical spike output, we created a new model with unreliable synapses that exhibited undetectable single-spike EPSPs (\u2018failures\u2019) but no single-spike EPSP variability (unreliable *). (A) Conversion of pre-synaptic spikes into excitatory post-synaptic conductance (EPSG) for model cell with two reliable (left) and unreliable * (right) synapses. The unreliable synapses exhibit spike failures, but the successful single-spike EPSPs for a synapse all have the same amplitude. (B) To allow for a controlled comparison, the mean conductance input for each of the 50 unreliable synapses (y-axis) was matched with the mean conductance input for the corresponding reliable synapse (x-axis). Dashes show line of equality. (C) V1 firing rate as a function of V1 Vm standard deviation (SD) and mean. Each point represents the average value across n\u00a0=\u00a010 simulations. (D) Average Vm, (E) Vm SD, and F) firing rate of model V1 cell as a function of the number of synaptic inputs, for n\u00a0=\u00a010 simulations of the reliable and unreliable* model. For reference, the unreliable model used throughout the paper, which exhibits failures and variable EPSP amplitudes is also shown (gray). Error bars indicate 95% confidence intervals. The firing rate produced by the unreliable* model is higher than that produced by the reliable model, but lower than that produced by the unreliable model with failures and EPSP variability.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) (Top) 100 ms sample of LGN spike-trains for a model with unreliable synapses, with failures (blue dots) that are correlated among LGN cells. Compare to random failures in Figure 7A. (Middle) Excitatory conductance trace for each synapse, total synaptic conductance, total current input, and resulting V1 Vm. (Bottom) RF of V1 cell estimated from the Vm. (B) Average Vm as a function of the number of synaptic inputs, for n\u00a0=\u00a010 simulations of the reliable (black traces), unreliable with random failures (red traces), and unreliable with correlated failures (blue traces) models. Error bars are 95% confidence intervals. (C) Average VmSD as a function of number of synaptic inputs. (D) Average firing rate of V1 cell as a function of number of synaptic inputs.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41925/elife-41925-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Compared to the model with high conductance state created by a low membrane time constant (Figures 6 and 7), this model produced higher cortical firing rates. However, the results were qualitatively the same: unreliable synapses with either random (red traces) or correlated (blue traces) failures produced higher cortical membrane fluctuations and firing compared to reliable synapses. The firing rates observed in vivo are closer to firing rates produced by the model with high conductance state produced by a low membrane time constant (Figure 7).\n\nThe cortical response produced by the reliable and unreliable synapses was qualitatively similar, as shown by the pattern of V1 spiking (Figure 7B). In addition, reverse correlation of the model Vm with the white noise stimulus showed similar simple cell-like RF subregions for both models (Figure 7C). However, the clear difference between the two models was the increased cortical firing rate produced by unreliable synapses (Figure 7B). Both model cells exhibited depolarization as a linear function of the number of LGN synapses as expected (Figure 7E). Since the total amount of injected conductance was kept the same between models, the average Vm depolarized equally for both. In addition, the average Vm remained below the spike threshold of \u221255 mV even when driven by the maximum number of LGN inputs. Thus, the spike output was entirely driven by fluctuations of the Vm, which was quantified by the standard deviation (Vm SD; Figure 7E). The variable EPSP amplitude, built-in the unreliable model, produced proportionally larger Vm SD then the reliable model as the number of LGN inputs increased (Figure 7E, middle). The larger VmSD in turn led to increased threshold-crossings and increased firing-rate (Figure 7E, right). Thus, Vm fluctuations (unreliable model) more efficiently drove cortical output than the temporal summation of constant amplitude EPSPs (reliable model). For a V1 cell driven by 50 LGN neurons with unreliable synapses, the average V1 firing rate was 7.8\u00a0\u00b1\u00a01.4 spikes/sec whereas for reliable synapses it was 1.8\u00a0\u00b1\u00a00.84 spikes/sec.\n\nIt should be noted that the difference in Vm SD produced by reliable and unreliable synapses is rather small (Figure 7E, middle panel), on the order of 1 mV. However, due to the exponential relationship between Vm SD and firing rate (Figure 7D, left), small increases in Vm SD can lead to large increases in spike output. In addition, this relationship demonstrates that Vm SD, and not mean Vm, determines cortical firing rate for both reliable and unreliable synapses (Figure 7D, right).\n\nTo confirm our observations, we ran several control simulations. First, to determine whether failures or EPSP variability have a greater effect on increased cortical firing rate in the unreliable model, we produced a model with unreliable synapses that had the same %failure but single-spike EPSPs with constant amplitude (Figure 7\u2014figure supplement 1). We found that the effect of EPSP variability is larger than the effect of failure rate, although we recognize that EPSP variability and reliability are not independent in vivo. Second, we changed the distribution of failed LGN spikes in the unreliable model, from random assignment as in Figure 7 to correlated failures (Figure 7\u2014figure supplement 2A), where a pre-synaptic LGN spike is more likely to fail if it occurs with spikes from other pre-synaptic LGN spikes targeting the same V1 cell. We found that the unreliable model with correlated failures (Figure 7\u2014figure supplement 2B, blue traces) still produced higher cortical VmSD and firing. In summary, our simulation results show that the variability and reliability of thalamocortical synapses lead to a more efficient driving of their postsynaptic cortical cells compared to reliable synapses with constant amplitude input.\n\n## Discussion\n\nWe used paired in vivo recordings of LGN and L4/L6 of V1 to investigate dynamics of synaptic transmission in the thalamocortical pathway of the cat visual system in vivo. In contrast to previous findings in acute slices of visual cortex, our data show that thalamocortical synapses are weak and unreliable, and exhibit synaptic depression. Furthermore, our data show that the mean amplitude, the variability and reliability of the mean EPSP triggered by single geniculocortical neurons in vivo strongly depends on the % detectability at the postsynaptic cortical cell soma. Functionally, our data-driven simulations show that this variability and reliability actually enhances cortical firing via an increase in cortical membrane potential fluctuations., that\u00a0is cortical firing rate is driven by fluctuations of Vm rather than mean Vm, similar to high conductance states (Destexhe et al., 2003) as observed in primary visual cortex of non-anesthetized primates (Tan et al., 2014).This suggests that thalamocortical synaptic variability has a downstream cortical effect and serves a computational purpose. In providing key parameters of the thalamocortical synapse, our work allows for improved understanding of early sensory encoding. Furthermore, in agreement with previous work in the rodent thalamocortical pathway in the somatosensory system, our work challenges the notion of a strong and reliable thalamocortical synapse in the visual system of a highly visual animal.\n\n### Thalamocortical strength, reliability, and variability in vivo\n\nTo our knowledge, this is the first in vivo report of thalamocortical synaptic variability and reliability. The average EPSP amplitude, the fraction of undetectable single-spike EPSPs, and the coefficient of variation that we measured together indicate weak and unreliable thalamocortical transmission. This differs drastically from findings in slices of the cat thalamocortical pathway (Stratford et al., 1996; Bannister et al., 2002), which indicated that thalamocortical connections had large amplitudes (~2 mV) with little variability (CV\u00a0~0.1). The differences in our in vivo results may be due to differences in external calcium concentrations (Borst, 2010), or from differences in shunting conductances (Urban-Ciecko et al., 2015). However, the EPSP amplitudes that we measured (~0.9 mV, mean including only detectable) are comparable to in vivo measurements of thalamocortical EPSP amplitude in the rodent L4 barrel cortex calculated by either STA from simultaneously recorded VB spikes (Bruno and Sakmann, 2006); 0.9 mV) or from minimal electrical stimulation in the white matter(Schoonover et al., 2014); 1.0 mV).\n\nThe smaller EPSP amplitudes recorded from barrel cortex in vivo already suggested that synapses in vivo would have correspondingly higher variability and failure rates, although these hypotheses were not confirmed. Furthermore, it remained unknown whether the geniculocortical pathway of a highly visual animal would also exhibit weak and unreliable transmission. Our simultaneous recordings of pre and post-synaptic cell pairs during the response to visual stimulus allowed us to characterize synaptic variability and reliability using visually driven responses, without the need for electrical stimulation that may drive multiple cells or drive single cells in an unnatural regime. We were particularly surprised at the high fraction of spikes that produced undetectable single-spike EPSPs, which was much higher than previously reported values in the slice (Stratford et al., 1996). There are no published reports of in vivo thalamocortical synaptic failure rates for comparison, but our average %undetectable rate of\u00a0~40% is double the value reported from in vivo single-cell stimulation studies in mouse L2/3 excitatory intracortical connections (Jouhanneau et al., 2015). As shown by our modeling simulations, such high synaptic unreliability influences subthreshold response and information flow across the thalamocortical network, and must therefore be taken into account in computational models.\n\nExperimental constraints did not allow us to characterize intracortical synapses. So one limitation of this study is the lack of side-by-side comparison of thalamo- and cortico-cortical synaptic strength, as conducted in a tour de force study in the rat barrel cortex (Schoonover et al., 2014). However, we note that our conclusion of weak thalamocortical EPSPs is consistent with anatomical studies in the cat thalamocortical pathway that failed to find structural differences suggestive of relatively stronger thalamocortical, compared to corticocortical, synapses (da Costa and Martin, 2011). We also cannot make a side-by-side comparison of thalamo and cortico-cortical synaptic reliability or variability. Additional studies in highly visual animals are needed to directly compare thalamocortical and intracortical synaptic properties.\n\nAnother limitation of this study is that our measurements did not allow us to identify true vesicle transmission failures. We therefore defined reliability as the % of detectable single-spike EPSPs, that\u00a0is whether or not the pre-synaptic spike produced a detectable sharp and low-latency depolarization in the post-synaptic Vm recorded from the soma. In studies of synaptic transmission, reliability is defined by the variance in synaptic transmission due to the probability of release of neurotransmitter, which successfully binds to receptors and causes a synaptic current flux and a postsynaptic potential. Such measurements are not currently possible in vivo. Furthermore, postsynaptic factors, such as shunts caused by IPSPs, may also cause variability in EPSP amplitude as well as the failures to record it in the soma. Despite these important caveats, given the most common location of the axon initial segment in the soma, it is ultimately the effect of a synaptic input on somatic Vm that influences the postsynaptic spike output. Several trends in our results suggest that the spikes classified as producing an undetectable single-spike EPSP did fail to significantly impact the post-synaptic cell and represent a valid estimate of underlying unobservable synaptic phenomena. First, the shape and mean value of the amplitude distribution for undetectable single-spike EPSP traces (Figure 3C, red) is similar to that for jittered traces (Figure 3C, blue), indicating that undetected EPSPs do not represent significant deviation from inherent membrane fluctuations. Second, synapses with larger average EPSPs have lower % undetectable EPSPs (Figure 4E), and this is not a byproduct of our classifier as the amplitude threshold for detectable EPSPs is independent of the STA amplitude, but is consistent with expectations from binomial models of synaptic vesicle release (del Castillo and Katz, 1954). Third, in some connected pairs, the % of undetectable EPSPs was associated with shorter average ISIs than detectable EPSPs (Figure 5D,E), consistent with depressing synapses. Nonetheless, further studies using subcellular manipulation techniques are necessary to understand the underlying sources of synaptic detectability in the thalamocortical synapse.\n\n### Short-term synaptic plasticity in vivo\n\nWe found that slightly more than half of our thalamocortical synapses exhibit short-term synaptic depression (STSD) with a reduction of the average EPSP amplitude by\u00a0~30% across a\u00a0~\u00a0100 ms timescale. This is consistent with previous reports of synaptic depression in the thalamocortical pathway of the anesthetized cat carried out by Boudreau and Ferster (2005). They found depression rates of 20% for electrical stimulation of the LGN at 20 Hz, and of 40% for the highest stimulation rate of 100 Hz. Our depression metric is the amplitude ratio between LGN spike intervals longer and shorter than 50 ms, which lumps together their three stimulation frequencies and it so happens that our 30% ratio is right in the middle of their reported range (20% to 40%). That study suggested that in the awake animal, STSD would be undetectable due to higher spontaneous firing rates which would render the synapses constantly depressed. However, we find the degree of STSD to be independent of pre-synaptic firing rate within our range of 2 to 24 Hz (Figure 5H). Thus, our results suggest that, at least for firing rates within our range, STSD should be observed in the waking state. We also note that none of the synaptic parameters that we measured exhibits a relationship with pre-synaptic firing rate (Figure 5H, Figure 5\u2014figure supplement 1), suggesting that higher thalamic firing rates would not overtly impact our results on synaptic variability or plasticity. However, we cannot be sure that the various changes in neuromodulatory concentration that come with the awake state will not impact synaptic dynamics. Further studies that characterize the same circuit across anesthetized and awake conditions (Durand et al., 2016) are needed.\n\nFinally, one important caveat of this study is the use of anesthesia. Anesthesia is essential in order to achieve mechanical stability for high quality intracellular recordings, as well as to paralyze the eyes with neuromuscular blockers in order to obtain high resolution RF maps of LGN and V1 cells. We used barbiturate anesthesia for some of the experiments and propofol for others and because the results were not different, we combined the data. Both barbiturates and propofol act by potentiating inhibitory GABAA responses (Nicoll et al., 1975; Veintemilla et al., 1992). Many of the classical vision studies in cats and primates were done under barbiturate anesthesia and neuromuscular blockade (Kuffler, 1952; Hubel and Wiesel, 1962; Hubel and Wiesel, 1968; Enroth-Cugell and Robson, 1966). The majority of such findings have been subsequently validated in non-anesthetized animals (Wurtz, 1969; Read and Cumming, 2003; Duffy and Hubel, 2007). Much less is known about the action of propofol in visual responses and thalamocortical synaptic transmission. However, the spatiotemporal properties of LGN and V1 cells reported here, were not different between anesthetics. Therefore, we argue that our results are not overtly altered by the use of anesthetics.\n\n### Effect of thalamocortical variability on L4\n\nOur simulations show that incorporating in vivo-like thalamocortical synaptic dynamic properties leads to increased cortical firing in L4, due to the increased fluctuations (VmSD) produced by synapses with variable and unreliable transmission. Both the reliable and unreliable models were simulated in a fluctuation driven or high-conductance state (Destexhe et al., 2001), a state observed in many cortical neurons wherein firing mainly occurs due to fluctuations in the Vm, and not mean Vm, which on average sits below spiking threshold (Figure 7A). In such a state, any increase in Vm fluctuations (VmSD) will lead to supralinear increases in firing rate (Figure 7D). We simulated the fluctuation-driven regime either with a low membrane time-constant (Figure 7) or by explicitly adding balanced excitatory and inhibitory background conductance (Figure 7\u2014figure supplement 3, Appendix\u00a01), and both simulations produced similar results. Our data show that synaptic variability effectively enhances the thalamocortical drive in large part because L4 neurons operate in the high-conductance state. Our results are consistent with a large number of previous studies exploring the effect of various forms of synaptic noise on gain modulation (Ho and Destexhe, 2000; Chance et al., 2002; Cardin et al., 2008), and specifically point to single-spike synaptic variability as a potential mechanism for gain control in the thalamocortical pathway. Further studies that specifically manipulate synaptic variability are needed to test such hypotheses.\n\n### Conclusion\n\nOur study contributes to the understanding of the disproportionate effect of thalamic synapses on V1 neurons by carefully characterizing the properties of thalamocortical synapses. Our results dispel the notion of a strong thalamocortical transmission in the visual system of higher mammals, but suggest that the properties we report actually enhance the thalamic drive. The next critical step in this line of inquiry, which is feasible given new genetic technologies, is to test the hypothesis that thalamic population synchrony amplifies the thalamocortical drive.\n\n## Materials and methods\n\nExperiments were conducted according to guidelines of the NIH and with the approval of the Institutional Animal Care and Use Committee of the University of Pennsylvania. This study uses the same dataset first reported in Sedigh-Sarvestani et al. (2017), which details the surgical and experimental procedures summarized here.\n\n### Surgery and anesthesia\n\nAdult male cats (2.5\u20133.5 kg) were anesthetized with an intraperitoneal injection of Nembutal (25 mg/kg), and paralyzed with gallamine triethiodide (Flaxedil) and artificially ventilated (end tidal CO2 held at 4.0%). Anesthesia was maintained by continuous infusion of sodium thiopental (3\u201310 mg/kg/h) for some experiments (n\u00a0=\u00a040), and propofol (3\u20134 mg/kg/hr) for others (n\u00a0=\u00a04). A desynchronized pattern of EEG without predominant slow oscillations, but with occasional spindles (Steriade et al., 1993), was maintained throughout the experiment. Atropine solution and phenylephrine HCl were administered to the corneas, to dilate the pupils and retract the nictitating membrane, respectively. Spectacle lenses were chosen by the tapetal reflection technique to optimize the focus of stimuli on the retina, and the screen coordinates of the area centrali from both eyes were recorded.\n\n### Paired recordings\n\nTwo craniotomies and durotomies were made in the left hemisphere, at Horsley\u2013Clarke coordinates [A6, L8] for the dorsal LGN (lamina A), and [P4, L2] for V1. The stability of the recordings was improved by bilateral pneumothorax, draining the cisterna magna, suspending the hips, and filling the cranial defect with 3.5% agar. Glass pipettes (tip resistance between 50\u201390 M\u03a9), filled with 3M potassium acetate, were used for intracellular recordings in V1. L4 simple cells were consistently found between 500 and 950 um, as measured from the micropositioner. Recordings were digitized at 33 KHz (Neuralynx) and downsampled to 10 KHz. All cortical cells used in this study had a stable Vm below \u221260 mV, without holding current, had overshooting action potentials, and were observed for at least 10 min. Extracellular recordings in the dorsal LGN were made with an array of tungsten in glass tetrodes (Thomas Recording GmbH), usually between 11,000\u201313,000 um.\n\nTo increase the likelihood of finding monosynaptically connected pairs, the V1 and LGN recording electrodes were positioned in corresponding retinotopic locations. Typically, the LGN RFs were mapped first to obtain an estimate of their projections in V1 using published anatomical maps. All of the tetrodes were moved together if the LGN RFs were estimated to map more than 5\u00b0 from the right area centralis.\n\n### Spike clustering\n\nSpike waveforms from each tetrode in the LGN were clustered into individual units (Sedigh-Sarvestani et al., Figure 1D), online and offline as necessary, using a mixture of algorithmic and manual sorting (SpikeSort3D, Neuralynx). All clusters with spikes in the 0\u20131 ms bin (the estimated refractory period) of the interspike interval (ISI) histogram were strictly rejected. Cluster metrics are shown in Figure 1\u2014figure supplement 1. The RF of all LGN clusters included in this dataset resembled the expected center-surround structure of either ON or OFF sign.\n\n### Visual stimulation\n\nStimuli were presented on an Image Systems model M09 LV monochrome monitor operating at 125 frames per second, a spatial resolution of 1024\u00a0\u00d7\u00a0786 pixels, and a mean luminance of 47 cd/m2. Unless otherwise specified, thalamocortical responses were characterized during the presentation of white noise stimulus. The noise was 16 \u00d7 16 pixels in space, covering 3\u20135 square degrees in space, with frame durations of 8\u201316 ms. Each RF pixel could take one of four values from white to black. Grating stimuli consisted of drifting bars with sinusoidal variation in contrast, with temporal frequency of 2\u20133 Hz and spatial frequency optimized for the V1 cell.\n\n### Electrophysiological classification of V1 cells\n\nWe classified the 23 connected V1 cells in our dataset into RS (n\u00a0=\u00a016) and FS (n\u00a0=\u00a07) types, based on their intracellularly measured electrophysiological properties (Contreras and Palmer, 2003). FS cells responded to current injection with non-accommodating trains of high-frequency firing of up to 300 Hz (Figure\u00a05A\u00a0in Sedigh-Sarvestani et al., 2017), and had smaller spike widths (<0.8 ms, measured at the base) with pronounced after-hyperpolarizations (AHP; Figure\u00a05B\u00a0in Sedigh-Sarvestani et al., 2017). In contrast, RS cells showed lower frequency firing, accommodating trains in response to current injection, longer duration action potentials (>0.8 ms), and absence of a clear AHP.\n\n### Spike-triggered average (STA) to reveal connected pairs\n\nWe identified connected pairs based on the STA of the cortical Vm. Details and data on identifying connected pairs in our dataset, as well as the bootstrap procedure to test for the significance of monosynaptic EPSPs, are given in Sedigh-Sarvestani et al. (2017). Briefly, STAs were calculated, for all simultaneously recorded LGN-V1 cell pairs, by averaging\u00a0\u00b110 ms windows of cortical Vm centered on each LGN spike during responses to white noise visual stimulation (Figure 1C\u2013D). To correct for common stimulus modulation independent of a monosynaptic connection, a temporal jitter was applied to LGN spike times and the STA was recalculated. The amount of jitter was sampled from a uniform distribution matching the frame rate of the stimulus (0\u201316 or 0\u201324 ms). This time scale preserves the slower modulation of the Vm caused by the visual stimulus but eliminates the faster monosynaptic EPSP. By subtracting this jittered-STA from the raw STA we obtain the jitter-corrected STA. Jitter-corrected STAs showing an EPSP in the monosynaptic window between 1.0 to 4.5 ms (Reid and Alonso, 1995) and a 10\u201390% rise time of less than 2 ms (Tanaka, 1983; Bruno and Sakmann, 2006) were selected for significance analysis. To reach significance and be included in the database of connected pairs, the jittered-corrected STA must have more than 10 consecutive points above the 95% confidence limits calculated using bootstrap methods (Sedigh-Sarvestani et al., 2017). In connected pairs, the jitter-corrected STA reveals a sharp depolarization characteristic of a monosynaptic EPSP (Figure 1D).\n\n### Categorizing single-spike EPSPs with automated detector\n\nVisual inspection of the Vm traces following each LGN spike (single-spike EPSP) revealed that not all contain a detectable sharp, low latency, depolarization indicative of an EPSP. We developed a binary detector (Figure 2E\u2013F) to distinguish between detectable EPSPs, which exhibit a clear depolarization (Figure 2F, green), and undetectable, which do not (Figure 2F, red). The detector is applied to single-spike traces from 0 (time of the LGN spike) to 6 ms and involves a stepwise process: (1) We calculate the dVm/dt of the jitter-corrected STA smoothed by a three point average (see above; Figure 2E). All dVm/dt calculations are differences between neighbor samples. (2) We search for a positive peak using the findpeak algorithm in Matlab. This produces an unequivocal single peak in every LGN-V1 synaptic connection. (3) Starting from the peak we march backwards to detect the EPSP onset (valley before peak, t1) and forward to detect the time of termination (valley after peak, t2). We define the time between t1 and t2 as the \u2018expected monosynaptic window\u2019 for that LGN-V1 pair. This expected monosynaptic window is imposed to reduce contamination of EPSPs by other pre-synaptic LGN cells, based on the assumption that the jitter in the latency of single-spike EPSPs produced by the same LGN cells is smaller than the difference in the average latency between two different LGN cells. For example, note that some single-spike Vm traces containing sharp depolarizations are categorized as undetectable because the depolarization occurs outside of the monosynaptic window (Figure 3B, red traces). (4) Before applying the detector to single-spike traces, we subtract the Vm value at the time of the LGN spike (t\u00a0=\u00a00 ms), so that all single-spike Vm traces start at 0 mV. (5) We calculate the dVm/dt for each single-spike Vm trace and (6) search for a peak within the expected monosynaptic window using the same strategy as described above for the STA. If no peak is found the trace is considered an undetectable EPSP. (7) If a peak is found we recalculate t1 (onset) and t2 (end) for the dVm/dt of the single-spike Vm trace and obtain t1\u2019 and t2\u2019. (8) We measure the amplitude of the candidate EPSP as the Vm at t2\u2019 minus the Vm at t1\u2019. (9) Finally, to be classified as a detectable single-spike EPSP, the calculated amplitude has to cross a threshold (Figure 2E) of 1 SD above the mean of the jittered spike-triggered Vm (Figure 3B, blue). For the example cell shown in Figure 2E (red line), the threshold was 0.15 mV. The average noise threshold across the population of connected pairs was 0.22\u00a0\u00b1\u00a00.05 mV. It is important to note that this threshold varied somewhat for each connected pair. We chose the variable threshold because the sizes of the average EPSPs varies across the 36 connections making it difficult to set a fixed threshold that makes sense for all cell pairs. However, setting a fixed threshold across all cell-pairs did not impact our results or conclusions. We visually verified the performance of the binary classifier for a subset of single-spike traces in each connected pair and generally found\u00a0<5% misclassifications. Nearly all misclassifications were false-negatives, undetectable single-spike traces that were falsely classified as detectable single-spike EPSPs due to the shape of the single-spike trace which produced a positive amplitude value over the monosynaptic window despite the lack of a sharp depolarization (Figure 3C, inset with red traces). These misclassifications were corrected and included in the analysis. Furthermore, the similarity in the distribution for undetectable EPSPs and jittered spikes is evidence that the classifier correctly identified undetectable single-spike EPSPs (Figure 3C).\n\n### Calculating coefficient of variation (CV) for each connected pair\n\nFor each connected pair, we calculated the noise-corrected CV based on the distribution of single-spike trace amplitudes (including undetectable EPSPs), corrected by the jittered single-spike trace amplitude distribution (Feldmeyer et al., 1999):\n\n$$\nCV=\\frac{\\sqrt{|\\sigma_{all}^{2}\u2212\\sigma_{noise}^{2}|}}{\\mu_{all}}\n$$\n\nWhere, $\\mu_{all}$ and $\\sigma_{all}^{2}$\u00a0are the average and variance of the single-spike trace amplitude distribution for all spikes (Figure 3C, black), and $\\sigma_{noise}^{2}$ is the variance of the jittered-spike distribution (Figure 3C, blue) representing Vm fluctuations not related to the presynaptic LGN cell of interest.\n\n### Generating a leaky integrate-and-fire (LIF) model of a V1 neuron\n\nWe used a LIF model of a simple cell in L4 V1, driven by the spikes of 1\u201350 LGN neurons responding to a white noise visual stimulus (Figure 6A). The white noise stimulus is the same used to map receptive fields and to find connected pairs. It consists of 16 \u00d7 16 pixels in space, covering 4\u00b0 x 4\u00b0, with frame duration of 16 ms. Each pixel is one of four contrast values from black to white. Frames are organized in 250 frame blocks, with 1 s uniform gray screen between blocks. The total duration of each model simulation was 89 s, which included 18 individual white noise stimulus blocks. All simulations used a time resolution of 0.1 ms.\n\nEach LGN spike was convolved with an excitatory post-synaptic conductance (EPSG). The EPSG consisted of two exponentials, one for the rise (\u03c4\u00a0=\u00a00.5 ms), and one for the decay, (\u03c4\u00a0=\u00a02 ms). This produced an EPSG that rose and decayed faster than the average EPSPs observed in vivo (Sedigh-Sarvestani et al., 2017). The faster dynamics of the EPSG were then smoothed by the model cell\u2019s membrane, giving rise to average EPSPs similar to those measured in vivo. The EPSG was \u2018injected\u2019 into the target V1 cell producing Vm depolarizations relative to a resting Vm of \u221265 mV. When the Vm reached the spike-threshold of \u221255 mV, an action potential was fired and the Vm was reset to \u221260 mV. A 2 ms refractory period was observed for cortical spiking. The cortical cell membrane properties were based on our in vivo measurements for L4 RS cells with an Rm of 47 MOhms, and time-constant of 6 ms.\n\nWe generated and compared two versions of the model, one with up to 50 \u2018reliable\u2019 thalamocortical synapses, and the second with up to 50 \u2018unreliable\u2019 synapses. Reliable synapses converted every pre-synaptic LGN spike into a EPSG with constant amplitude (Figure 6C, left). Unreliable synapses included a variable proportion of failed spikes, which were not convolved with EPSGs, and their amplitude was not constant but varied between values which were larger and smaller than the mean EPSP observed in our data (Figure 6C, right). For a specific thalamocortical synapse, the average amplitude of EPSPs produced by the reliable synapses was equal to the average amplitude of EPSPs in the corresponding unreliable synapse (Figure 6C, bottom). This ensured that the total input current for reliable and unreliable synapses was equal, allowing for a controlled comparison of the effect of thalamocortical transmission failures and variability on V1. Unless otherwise specified, spike failures in the unreliable model were randomly selected for each LGN cell\u2019s spike-train following the proportions observed in the data (Figure 6D).\n\nNote that all synapses did not produce the same size average EPSP rather the average EPSP amplitude was selected from the distribution of observed average EPSPs in our dataset, with a normalization factor of 6 \u00d7 108 to convert amplitude (mV) to conductance (nS), so that the distribution of EPSPs produced by the model was similar to the distribution measured in vivo. The average EPSG amplitude across all 50 inputs was 0.89 nS.\n\nFor unreliable synapses, the %failed spikes and EPSP amplitude variance corresponding to the average EPSP amplitude were selected from our measured dataset. Therefore in the model, as in our measured dataset, synapses with larger average EPSP amplitudes had lower failure rates and EPSP amplitude variance.\n\nEach triplet of synaptic properties (average, variance of EPSP amplitude and failure rates) was randomly assigned to a pre-synaptic LGN cell. We simulated the unreliable and reliable versions of the model n\u00a0=\u00a010 times, with each trial having a different random assignment of synaptic parameters.\n\nAdditional model details, including parameters used, can be found in Appendix\u00a01.\n",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "0fdac94b-26c9-403f-bcf0-091dcbbdfc3e",
+      "submission_id": "f95d50c6-4133-461e-842c-6749b07b2680",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Huguenard, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41925.024](https://doi.org/10.7554/eLife.41925.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Thalamocortical synapses in the cat visual system in vivo are weak and unreliable\" for consideration by eLife. Your article has been reviewed by Ronald Calabrese as the Senior Editor, a Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThese data are hard-won, from a highly challenging preparation, with important implications for models of thalamocortical function. There have been very few recordings of connected thalamocortical pairs in vivo, and even fewer with intracellular recordings. Using this approach, the authors report that the LGN-V1 synapse is highly unreliable in vivo, in contradiction to previous slice studies. They build a model of a L4 neuron receiving LGN connections, which predicts that unreliability increases cortical firing rates. There are only a handful of similar datasets to this one and absolutely no others in visual cortex; these are truly unique data. The analyses are clever and original. Much of what we base our general ideas of thalamocortical interactions on is thus based on in vitro, rather than in vivo, data. Given the authors' careful quantitative approach, the current findings are thus likely to have a substantial impact in the field.\n\nEssential revisions:\n\nThere are a few major elements of the manuscript that could be substantially improved through text clarification and there are several points that could benefit from additional analysis or enhanced discussion (listed as the first major points below). No additional experiments seem necessary.\n\n1) The authors should acknowledge that they cannot measure synaptic reliability in vivo. This does not detract from the impact of the findings, but the use of 'reliability' is misleading in the broader context of the field. Reliability is the term used to describe the variance in synaptic transmission events-release of neurotransmitter that successfully binds to receptors and causes a synaptic current flux. It is not currently possible to measure this in vivo. What the authors are measuring is the functional impact of the synaptic event on the postsynaptic neuron's membrane potential. This is an important measure, as it is directly linked to postsynaptic spike output, but it is distinct from the technical term 'reliability'. The authors cannot distinguish in vivo between (1) synaptic failures-which do impact reliability estimates-and (2) moments where a successful synaptic event is lost to noise, shunting, etc. \u2013 which do not impact synaptic reliability but do affect functional postsynaptic impact.\n\n2) The model makes an interesting prediction (unreliable synapses are helpful), but the authors could do a better job of making this theoretical case. First, they compare the predicted enhancement of cortical discharges given unreliability versus thalamic synchrony, which is interesting. However, the synchrony mechanism requires recurrent cortical excitation and feedforward inhibition, which a few papers cited by the authors (Wang et al., 2010; Bruno, 2011) make a strong point of and which are well documented experimentally. The model here, however, lacks both recurrent excitation and feedforward inhibition, so it is hard to know how unreliable synapses and thalamic synchrony compare or interact. Second, these two elements could lessen the effect of unreliable synapses. Since the model is the only evidence that unreliable synapses are feature not flaw, the authors should consider an expanded simulation.\n\n3) The authors must include in the Discussion section a mention of the caveats associated with the use of anesthesia, especially as the data represent a mix of thiopental and propofol preparations. Even light anesthesia alters the statistics of thalamic firing, and almost no cortical recordings have ever been made under propofol anesthesia.\n\n4) The discussion in subsection \u201cDetecting Single-spike EPSPs\u201d is not clear. For a multisite EPSP (i.e. one arising from multiple synaptic contacts from a single thalamic axon onto a single cortical neuron) to fractionate, i.e. be resolved as separate EPSPs they would likely need to be distributed at very distinct electrotonic distances from the presumed somatic recording. In addition, I think this discussion is not particularly relevant to the interpretation of the results. The bottom line is that it would be very difficult to resolve whether an individual paired response results from a single synapse or a group of synapses, whether they are clustered or not. The large amplitude variability of responses (subsection \u201cValidating single-spike EPSP detector\u201d) is in fact consistent with either multivesicular release at individual synapses, or multi-synapse release, with a possible binomial distribution (subsection \u201cThalamocortical synapses are unreliable and produce highly variable EPSPs\u201d) of amplitudes, as expected from standard synaptic models. This needs to be better explained.\n\n5) While both the White Noise and Grating stimuli produce similar results, there seems to be a significant difference, which the authors gloss over. Figure 4H suggests that synapses are stronger and more unreliable during Grating stimulation than during White Noise stimulation. The authors should report the results of a paired test and discuss appropriately.\n\n6) KS tests, which evaluate the whole distribution, are overly sensitive in that the slightest difference-even of a tail-produces a significant result. Unless the authors wish to focus on potential subpopulations (tail effects) in their analysis, then the results around short vs long ISIs (Figure 5C,D) would be more compelling if the authors could construct a simple analysis testing the median or means of these data, which appears to be their real question.\n\n7) The present results seem somewhat more consonant with previous findings than the authors suggest. For instance, the authors did not find a correlation of depression and pre-synaptic firing rate, which they say is at odds with Boudreau and Ferster 2005's study of thalamocortical depression (subsection \u201cThalamocortical synapses exhibit short-term synaptic plasticity\u201d). Might it not be that the present study is simply at the high end of pre-synaptic firing rates (B&F's at the lower end) and the depression is largely maxed out? The authors could explain better the extent to which this is or is not a discrepancy. A second instance is where the authors say that their EPSP amplitudes are modest even when compared to the in vivo measurements in the somatosensory system (subsection \u201cThalamocortical strength, reliability, and variability in vivo\u201d). Bruno and Sakmann, 2006 reported similar average EPSPs as the 'all single-spikes' in Figure 4 here, and Schoonover et al., 2014 claim similar strength of unitary EPSPs (failures removed) as the 'detectable EPSPs' in Figure 4 here. This is a positive not a negative of the manuscript because it suggests that different sensory systems might be exploiting similar mechanisms and principles. A comment about the authors' discovery may be merited.\n\n8) Simply reporting that spikes were manually clustered is not sufficient. The authors should report% spikes occurring with 1 ms of each other along with cluster isolation metrics.\n\n9) Subsection \u201cEffect of thalamocortical variability on L4\u201d: 'Data not shown' is not really acceptable, the authors should include simulations in supplementary data or not mention them at all.\n\n10) Subsection \u201cThalamocortical synapses are unreliable and produce highly variable EPSPs\u201d. IPSPs do not need to be hyperpolarizing to influence membrane responses and especially EPSPs. The associated in increase in conductance will itself decrease amplitude of EPSPs, all other things being equal. Overall, I would like to see a discussion of the influence of dynamics of membrane conductance in terms of the influence of EPSPs on Vm and on their amplitude and detectability.\n\n11) Previous in vitro and in vivo studies have focused on layer IV itself, while this study more broadly samples deeper cortical layers. This may influence some of the results. In particular, it has been reported that thalamocortical inputs onto FS cells in layer IV tend to be stronger and more reliable than the inputs onto RS cells. The relative similarity in EPSPs reported here may result in part from undersampling layer IV.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Thalamocortical synapses in the cat visual system in vivo are weak and unreliable\" for further consideration at eLife. Your revised article has been favorably evaluated by Ronald Calabrese (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below in the next section. The reviewing editor will make the final assessment of the revised manuscript.\n\nEssential revisions:\n\nOverall, the authors have addressed most previous concerns. The text is also generally more readable and clear. The manuscript now focuses on the dynamics of the LGN-V1 synapse in vivo and simply advocates that this synaptic variability enhances post-synaptic fluctuations and therefore firing rates. While a more extensive model that addressed the intriguing issue of synchrony could provide substantial insight, we agree with the authors that a full examination deserves a separate study.\n\n- There does not seem to be a clear set of criteria for unit inclusion based on cluster metrics. The plot in Figure 1\u2014figure supplement 1 does not make it easy to evaluate the isolation distances, but some points appear to be very low.\n\n- The final paragraph of the Introduction is somewhat confusing as written. Perhaps the authors meant \"high variability of the thalamocortical synapse, rather than being irrelevant system noise, does play a functional role\u2026\"?\n\n- There are a few places where text changes have not been fully incorporated and should be fixed, e.g. subsection \u201cThalamocortical synapses are unreliable and generate highly variable EPSPs\u201d, Discussion section, figure legend for Figure 1\u2014Figure supplement 1.\n\n- The authors are perhaps overly modest in citing their own previous work. The Contreras group has published several other studies (2007, 2010) on the synaptic and intrinsic properties of RS and FS cells in cat visual cortex that are relevant to the current findings.\n\n- Subsection \u201cThalamocortical synapses are unreliable and generate highly variable EPSPs\u201d, \"\u2026there is a population of very large (>4 mV) EPSPs triggered by LGN input.\" This unusual population is interesting and warrant comparison with the more typical 0.5-1.0 mV EPSPs. Most of the traces shown are the common small type. Figure 3B green appears to show a larger one that is 2-3 mV at most. These very large EPSPs could result from nonlinear voltage-dependent mechanisms that might have a different shape from normal EPSPs, bursts of LGN spikes, etc. The green traces indeed exhibit a long shoulder suggestive of voltage-dependent mechanisms. Peak normalizing the average small and large EPSPs should allow visual comparison of their shapes.\n\n- On a related note, subsection \u201cDetecting Single-spike EPSPs\u201d states that small \"undetectable\" EPSPs are unlikely to influence postsynaptic Vm. While I agree with this statement generally, I think the authors have to qualify it with \"at least under our conditions\". One can easily imagine nonlinear voltage-gated channels that make such small EPSPs potent under different conditions (e.g., state dependent neuromodulation of those channels, disinhibitory circuits, etc.). Also, the interim results summary paragraph, subsection \u201csubsection \u201cThalamocortical synapses are unreliable and generate highly variable EPSPs\u201d, is confusing. Consider \"\u2026including a large percentage of EPSPs that do not visibly affect somatic Vm and are unlikely to contribute to the cortical output.\" As noted in point 2, this is not guaranteed. More so it doesn't seem to allow for the possibility of synaptic failures. This and the surrounding text could be read to mean they \"undetected\" EPSPs are always small and never failures.\n\nThe authors have improved the short-term depression section, but there is still some difficulty following the logic of the predictions (subsection \u201cShort-term synaptic plasticity in vivo\u201d). Boudreau and Ferster, 2005 electrically stimulated LGN inputs in anesthetized cats and predicted that depression would be near saturated in the awake animal. The present study, also under anesthesia, evoked LGN spikes by visual stimulation and measured the synaptic input. They find that LGN firing rate does not correlate with the amount of depression (short vs long ISI) they observe, which in any case is about a 17% decrease. However, Boudreau and Ferster's depression curve does show a slight similar decrease from the first to later stimuli. Additionally, the present study only has 3 data points above 10 Hz-how can it be used to make claims about what happens for awake firing rates? 1-10 Hz is already in the range of awake spontaneous activity.\n",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5ecd0a62-7df1-4142-8f4e-54beff5c2aa2",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C1",
+      "claim": "Experiments were conducted according to guidelines of the NIH and with the approval of the Institutional Animal Care and Use Committee of the University of Pennsylvania.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were conducted according to guidelines of the NIH and with the approval of the Institutional Animal Care and Use Committee of the University of Pennsylvania.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental procedures and ethical approval, documented in the methods section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "94667c2c-9504-4983-8504-0f62fc93b9c4",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C2",
+      "claim": "This study uses the same dataset first reported in Sedigh-Sarvestani et al. (2017).",
+      "claim_type": "EXPLICIT",
+      "source": "This study uses the same dataset first reported in Sedigh-Sarvestani et al. (2017), which details the surgical and experimental procedures summarized here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly cites a previous publication as the source of the dataset.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "fff017fe-b56c-44fe-91fd-db5d89c199b9",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C3",
+      "claim": "Adult male cats weighing 2.5\u20133.5 kg were used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult male cats (2.5\u20133.5 kg) were anesthetized with an intraperitoneal injection of Nembutal (25 mg/kg), and paralyzed with gallamine triethiodide (Flaxedil) and artificially ventilated (end tidal CO2 held at 4.0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "32a8d991-4ff8-417e-8d27-547465785ef1",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C4",
+      "claim": "Anesthesia was maintained by continuous infusion of sodium thiopental (3\u201310 mg/kg/h) for some experiments (n = 40).",
+      "claim_type": "EXPLICIT",
+      "source": "Anesthesia was maintained by continuous infusion of sodium thiopental (3\u201310 mg/kg/h) for some experiments (n = 40), and propofol (3\u20134 mg/kg/hr) for others (n = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used in a specific number of experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "852416e6-2695-4f2f-919c-ce7c605b445c",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C5",
+      "claim": "Anesthesia was maintained by continuous infusion of propofol (3\u20134 mg/kg/hr) for some experiments (n = 4).",
+      "claim_type": "EXPLICIT",
+      "source": "Anesthesia was maintained by continuous infusion of sodium thiopental (3\u201310 mg/kg/h) for some experiments (n = 40), and propofol (3\u20134 mg/kg/hr) for others (n = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used in a specific number of experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "fb990df6-a8ce-4350-93bd-e13d0a55e599",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C6",
+      "claim": "A desynchronized pattern of EEG without predominant slow oscillations, but with occasional spindles, was maintained throughout the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "A desynchronized pattern of EEG without predominant slow oscillations, but with occasional spindles (Steriade et al., 1993), was maintained throughout the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physiological state maintained during experiments, with citation to support the characterization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "d4d45917-c148-4cc6-a31e-fc2b40ede3cc",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C7",
+      "claim": "L4 simple cells were consistently found between 500 and 950 um depth.",
+      "claim_type": "EXPLICIT",
+      "source": "L4 simple cells were consistently found between 500 and 950 um, as measured from the micropositioner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation about the anatomical location of recorded cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "bf88c25d-5744-429f-a666-0ad5755cd0c4",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C8",
+      "claim": "Recordings were digitized at 33 KHz and downsampled to 10 KHz.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were digitized at 33 KHz (Neuralynx) and downsampled to 10 KHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical parameters of data acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "239d0f63-f90c-4d81-8a6f-d8c25a7a538e",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C9",
+      "claim": "All cortical cells used in this study had a stable Vm below \u221260 mV, without holding current, had overshooting action potentials, and were observed for at least 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "All cortical cells used in this study had a stable Vm below \u221260 mV, without holding current, had overshooting action potentials, and were observed for at least 10 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for cells in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "ef8b0731-0c5f-4c37-8d4c-292304ad30ba",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C10",
+      "claim": "The study recorded from 28 cells in L4 of V1.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the dynamic properties of thalamocortical synapses in vivo, we recorded simultaneously from the LGN and its postsynaptic targets in L4 (n = 28) or L6 (n = 8) of V1 (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of cells recorded in a specific layer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "531f45ba-3852-4618-9255-31de57f30de0",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C11",
+      "claim": "The study recorded from 8 cells in L6 of V1.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the dynamic properties of thalamocortical synapses in vivo, we recorded simultaneously from the LGN and its postsynaptic targets in L4 (n = 28) or L6 (n = 8) of V1 (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of cells recorded in a specific layer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "849f570f-754e-448f-a964-04efdd18733d",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C12",
+      "claim": "All cortical cells in the database were simple cells since no connections with complex cells were found.",
+      "claim_type": "EXPLICIT",
+      "source": "All cortical cells in the database were simple cells since we found no connections with complex cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the cell types included in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "04b82a9d-6704-42f6-8b2d-372b86c15f8b",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C13",
+      "claim": "No differences were found between simple cells in L4 and those in L6.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found no differences between simple cells in L4 with those in L6 and therefore the data are presented together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the comparison between cell populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "6b5179fd-216c-439c-96b7-8c6bab53d7c6",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C14",
+      "claim": "Spikes from 4 to 25 LGN neurons were recorded extracellularly with independently movable tetrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Spikes from 4 to 25 LGN neurons were recorded extracellularly with independently movable tetrodes, while the membrane potential (Vm) of V1 neurons was recorded with intracellular sharp electrodes (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup and number of neurons recorded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "d4718d99-9c40-40a5-9724-6cc925f9fba3",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C15",
+      "claim": "The membrane potential (Vm) of V1 neurons was recorded with intracellular sharp electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Spikes from 4 to 25 LGN neurons were recorded extracellularly with independently movable tetrodes, while the membrane potential (Vm) of V1 neurons was recorded with intracellular sharp electrodes (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording technique used for V1 neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "d9cabc8d-85df-4546-9f5f-ec8fd8269185",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C16",
+      "claim": "36 LGN cells were found to be monosynaptically connected to 23 cortical simple cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this procedure, we found 36 LGN cells monosynaptically connected to 23 cortical simple cells, from a total of 296 simultaneously recorded pairs with overlapping receptive fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of connected pairs identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "3650f8c5-ee40-4363-b90f-a91e3b50a702",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C17",
+      "claim": "296 LGN-V1 pairs with overlapping receptive fields were simultaneously recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this procedure, we found 36 LGN cells monosynaptically connected to 23 cortical simple cells, from a total of 296 simultaneously recorded pairs with overlapping receptive fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the total number of pairs recorded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "dcda0499-a5a1-4702-b831-9d39e9a95316",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C18",
+      "claim": "The average EPSP amplitude ranged from 0.15 to 1.2 mV, with a mean of 0.42 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our previous report with this same dataset (Sedigh-Sarvestani et al., 2017) showed surprisingly small average EPSPs (from 0.15 to 1.2 mV, mean = 0.42 mV), here we aimed to understand the dynamics of the EPSPs triggered by single LGN spikes (single-spike EPSPs) that contribute to the average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a previous publication reporting measured EPSP amplitudes from the same dataset.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "8ef1e99d-d978-40e6-b84a-57e0c56a7c26",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C19",
+      "claim": "The mean percent of undetectable EPSPs for the population was 37 \u00b1 12%.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean percent of undetectable EPSPs for the population (n = 36 pairs) was 37 \u00b1 12% [mean \u00b1 SD], ranging from 7.4% to 56% (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a measured parameter across the population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "a71cd6b2-4f00-4602-86e7-c5ab30a4f41d",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C20",
+      "claim": "The percent of undetectable EPSPs ranged from 7.4% to 56%.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean percent of undetectable EPSPs for the population (n = 36 pairs) was 37 \u00b1 12% [mean \u00b1 SD], ranging from 7.4% to 56% (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the range of a measured parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "f18a607d-e6c6-409e-887c-83b535150c9d",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C21",
+      "claim": "The average EPSP amplitude was 0.49 \u00b1 0.23 mV when including all single-spike traces.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the population of connected pairs, the average EPSP amplitude was 0.49 \u00b1 0.23 mV when including all single-spike traces (Figure 4B, black), and significantly higher at 0.89 \u00b1 0.24 mV (p=3e-9, Figure 4D, 'A' vs. 'D') when considering only detectable EPSPs (Figure 4B, green).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a measured parameter with statistical information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "ccf48ad1-dc96-4c26-9554-5c14b4daffc6",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C22",
+      "claim": "The average EPSP amplitude was 0.89 \u00b1 0.24 mV when considering only detectable EPSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the population of connected pairs, the average EPSP amplitude was 0.49 \u00b1 0.23 mV when including all single-spike traces (Figure 4B, black), and significantly higher at 0.89 \u00b1 0.24 mV (p=3e-9, Figure 4D, 'A' vs. 'D') when considering only detectable EPSPs (Figure 4B, green).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a measured parameter with statistical information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "028af3f9-9834-404a-8e2b-4cc2a3ce0a56",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C23",
+      "claim": "The average EPSP amplitude for detectable EPSPs is significantly higher than for all spikes (p=3e-9).",
+      "claim_type": "EXPLICIT",
+      "source": "Across the population of connected pairs, the average EPSP amplitude was 0.49 \u00b1 0.23 mV when including all single-spike traces (Figure 4B, black), and significantly higher at 0.89 \u00b1 0.24 mV (p=3e-9, Figure 4D, 'A' vs. 'D') when considering only detectable EPSPs (Figure 4B, green).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a statistical comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "bf91b27b-5d4e-49dc-a414-d031810839ea",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C24",
+      "claim": "The population average amplitude for jittered spikes was 0.01 \u00b1 0.03 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The population average amplitude for jittered spikes was close to 0 (0.01 \u00b1 0.03) mV as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a measured control parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "39292257-cf98-4abc-b90a-b65297c0e1d2",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C25",
+      "claim": "The population average for undetectable EPSPs was \u22120.20 \u00b1 0.09 mV, significantly different from 0 (p=5e-15).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the population average for undetectable EPSPs was \u22120.20 \u00b1 0.09 mV, significantly different from 0 (p=5e-15 Figure 4D, 'U').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a measured parameter with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "fad320b1-9550-4c82-98fa-28fdc92e3ad8",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C26",
+      "claim": "The mean CV across the population was 1.2 \u00b1 0.47.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the large variability displayed by the traces in Figure 2B, we found large values of CV across the population, with a mean of 1.2 \u00b1 0.47 (Figure 4C, black).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a measured parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "df7c8180-22cb-407b-a23c-c4527b565b11",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C27",
+      "claim": "The mean CV was nearly an order of magnitude larger than reports from in vitro studies of the cat thalamocortical pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This is nearly an order of magnitude larger than reports from in vitro studies of the cat thalamocortical pathway (Stratford et al., 1996) and is consistent with the high fraction of undetectable EPSPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the measured CV to previously published values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "ce862cdd-b2e4-43a1-ac4f-d570343a0ca2",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C28",
+      "claim": "After removing undetectable EPSPs, the mean CV reduced to 0.18 \u00b1 0.13.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the CV distribution shifted towards much lower values after removing undetectable EPSPs and its mean reduced tenfold (0.18 \u00b1 0.13, Figure 4C, green), indicating that much of the variability could be explained by undetectable EPSPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a measured parameter after data filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "39a5ef71-a7d6-4984-949d-848c2dc10f6e",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C29",
+      "claim": "The percentage of undetectable EPSPs was negatively correlated with the average EPSP amplitude (r = \u22120.81).",
+      "claim_type": "EXPLICIT",
+      "source": "Across the population, the percentage of undetectable EPSPs was negatively correlated with the average EPSP amplitude (r = \u22120.81; Figure 4E, left).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a correlation analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "dc3b6fe5-6661-429b-84dd-f088438ec27d",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C30",
+      "claim": "There was a positive correlation between the percentage of undetectable EPSPs and CV (r = 0.77).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed a positive correlation between the percentage of undetectable EPSPs and CV (r = 0.77; Figure 4E, right), consistent with previous reports in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a correlation analysis result with reference to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "426e2033-3e2b-4ce9-9d29-56bc23dac172",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C31",
+      "claim": "The correlation between CV and average EPSP amplitude remained after exclusion of undetectable EPSPs (r = \u22120.66).",
+      "claim_type": "EXPLICIT",
+      "source": "The exclusion of undetectable EPSPs did not change the correlation between CV and average EPSP amplitude (Figure 4F, right; r = \u22120.66), indicating that these two values are negatively correlated independent of detectability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a correlation analysis result after data filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "db8037a9-6ff2-431f-8a0d-3f6fd2ced2cd",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C32",
+      "claim": "16 out of 23 cortical cells were classified as regular-spiking (RS).",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if synaptic reliability or variability were related with the electrophysiological class of the target V1 cell, we classified our L4 simple cells into regular-spiking (RS; n = 16/23) and fast-spiking (FS; n = 7/23) based on their intracellularly measured electrophysiological properties (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about cell classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "b260713f-be49-4697-92a5-e54ca990bc2a",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C33",
+      "claim": "7 out of 23 cortical cells were classified as fast-spiking (FS).",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if synaptic reliability or variability were related with the electrophysiological class of the target V1 cell, we classified our L4 simple cells into regular-spiking (RS; n = 16/23) and fast-spiking (FS; n = 7/23) based on their intracellularly measured electrophysiological properties (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about cell classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "649179e0-40f7-4455-b1b5-357583fdbfc7",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C34",
+      "claim": "24 presynaptic LGN cells were connected to RS cortical cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 36 presynaptic LGN cells, 24 were connected to RS cortical cells (Figure 4, blue dots) and 12 were connected to FS cells (Figure 4, red dots).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the distribution of connections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "9735bb07-4792-4db3-a1b6-dc8cb96a9af1",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C35",
+      "claim": "12 presynaptic LGN cells were connected to FS cortical cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 36 presynaptic LGN cells, 24 were connected to RS cortical cells (Figure 4, blue dots) and 12 were connected to FS cells (Figure 4, red dots).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the distribution of connections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "0ca5b66c-ad31-4a1c-96a3-fe92bc3771b5",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C36",
+      "claim": "No significant difference was found in average EPSP amplitude, %undetectable, or CV between RS and FS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find a significant difference in either average EPSP amplitude, %undetectable, or CV between RS and FS cells (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the results of a statistical comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "a57e5249-5a4f-4470-893b-089b4a1bec75",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C37",
+      "claim": "After excluding undetectable EPSP traces, the mean CV of RS cells (0.22 \u00b1 0.13) was higher than that of FS cells (0.11 \u00b1 0.08; p=0.047 KS test, p=0.018 t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "However, after excluding undetectable EPSP traces, the mean CV of RS cells (n = 24, 0.22 \u00b1 0.13) was higher than that of FS cells (n = 12, 0.11 \u00b1 0.08; p=0.047 KS test, p=0.018 t-test; Figure 4D) and the average EPSP amplitude (Figure 4F, x-axis) was smaller for RS (0.83 \u00b1 0.21 mV) than for FS cells (1.0 \u00b1 0.21 mV; p=0.0046 KStest, p=0.025 t-test; Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a statistical comparison result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "32aec04d-13da-451d-8839-86afb26e9bac",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C38",
+      "claim": "After excluding undetectable EPSPs, the average EPSP amplitude was smaller for RS cells (0.83 \u00b1 0.21 mV) than for FS cells (1.0 \u00b1 0.21 mV; p=0.0046 KStest, p=0.025 t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "However, after excluding undetectable EPSP traces, the mean CV of RS cells (n = 24, 0.22 \u00b1 0.13) was higher than that of FS cells (n = 12, 0.11 \u00b1 0.08; p=0.047 KS test, p=0.018 t-test; Figure 4D) and the average EPSP amplitude (Figure 4F, x-axis) was smaller for RS (0.83 \u00b1 0.21 mV) than for FS cells (1.0 \u00b1 0.21 mV; p=0.0046 KStest, p=0.025 t-test; Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a statistical comparison result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "02c31717-d10e-4dfa-a63a-dd853565a28a",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C39",
+      "claim": "The average slope of single-spike EPSPs was slightly higher for FS cells (1.14 \u00b1 0.23) compared to RS cells (0.97 \u00b1 0.18) (p=0.023 KStest; p=0.027 t-test), only after excluding undetectable EPSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the average slope of single-spike EPSPs was slightly higher for FS cells (1.14 \u00b1 0.23) compared to RS cells (0.97 \u00b1 0.18) (p=0.023 KStest; p=0.027 t-test), only after excluding undetectable EPSPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a statistical comparison result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "cb13795e-f3a6-4750-a950-266376695bd2",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C40",
+      "claim": "Five cortical cells had three connected LGN cells each.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dataset included five cortical cells with three connected LGN cells each (Figure 4G, red dots) and three cortical cells with two connected LGN cells each (Figure 4G, green dots), the remaining 15 cortical cells had a single connected LGN cell (Figure 4G, black dots).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "836337d5-05e0-4b17-ab9e-bb728bc9d096",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C41",
+      "claim": "Three cortical cells had two connected LGN cells each.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dataset included five cortical cells with three connected LGN cells each (Figure 4G, red dots) and three cortical cells with two connected LGN cells each (Figure 4G, green dots), the remaining 15 cortical cells had a single connected LGN cell (Figure 4G, black dots).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "50aa6711-15be-4c99-b648-acaefaa0ecda",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C42",
+      "claim": "15 cortical cells had a single connected LGN cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dataset included five cortical cells with three connected LGN cells each (Figure 4G, red dots) and three cortical cells with two connected LGN cells each (Figure 4G, green dots), the remaining 15 cortical cells had a single connected LGN cell (Figure 4G, black dots).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "8e7e9af0-23d5-40cb-9f3c-ea768b97cccd",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C43",
+      "claim": "The CV of connections to the same postsynaptic V1 cell was as variable as that of connections across different cortical cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We plotted the CV of all connections in rank order and found that the CV of connections to the same postsynaptic V1 cell was as variable as that of connections across different cortical cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the analysis of CV variability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "ffec3a50-fd58-4ac3-8a27-ece26eeb93a7",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C44",
+      "claim": "The postsynaptic cell does not overtly determine the variability of LGN-V1 synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data suggest that the postsynaptic cell does not overtly determine the variability of LGN-V1 synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of CV variability across connections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "d26d65f2-116d-4b45-bcd4-d4ba23d0d215",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C45",
+      "claim": "A subset (n = 19) of connected pairs were tested during the response to oriented drifting grating stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to verify that synaptic properties were not dependent on the type of visual stimulus presented, we separately calculated amplitude distributions and %undetectable for a subset (n = 19) of connected pairs during the response to oriented drifting grating stimuli (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a subset of the data analyzed under different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "b199a86f-1c9a-4284-943c-7d0ebc449470",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C46",
+      "claim": "There was a high correlation between the average EPSP amplitude during white noise and gratings (r = 0.90).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a high correlation between the average EPSP amplitude during the response to both white noise and gratings (Figure 4H, left, r = 0.90), as well as between the standard deviation of the amplitude distribution (r = 0.85, data not shown), and between %undetectable (Figure 4H, right, r = 0.82).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a correlation analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "7b156024-0773-4564-8329-6eb34e019df8",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C47",
+      "claim": "There was a high correlation between the standard deviation of the amplitude distribution during white noise and gratings (r = 0.85).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a high correlation between the average EPSP amplitude during the response to both white noise and gratings (Figure 4H, left, r = 0.90), as well as between the standard deviation of the amplitude distribution (r = 0.85, data not shown), and between %undetectable (Figure 4H, right, r = 0.82).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a correlation analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "27cb341d-874b-4313-af01-dc6287068307",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C48",
+      "claim": "There was a high correlation between %undetectable during white noise and gratings (r = 0.82).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a high correlation between the average EPSP amplitude during the response to both white noise and gratings (Figure 4H, left, r = 0.90), as well as between the standard deviation of the amplitude distribution (r = 0.85, data not shown), and between %undetectable (Figure 4H, right, r = 0.82).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a correlation analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "261c3e4a-8695-40b8-9fd6-bc798d98c7e0",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C49",
+      "claim": "The average EPSP amplitude was significantly higher during white noise stimuli (p=0.0055).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the average EPSP amplitude was significantly higher during white noise stimuli (p=0.0055), but all other variables including LGN firing rate had similar distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a statistical comparison result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "58b3c387-991e-49c4-8abc-cc702ceca5fb",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C50",
+      "claim": "20 out of 36 connected pairs (55%) exhibited significant STSP.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this metric, we found that 20 out of our population of 36 connected pairs (55%) exhibited significant STSP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the prevalence of short-term synaptic plasticity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "bb7f3033-67d4-4d92-b684-af4958c5145f",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C51",
+      "claim": "Of the 20 connected pairs that exhibited STSP, 17 exhibited STSD and three exhibited STSF.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 20 connected pairs that exhibited STSP (Figure 5E, both +amp bars), 17 exhibited STSD and three exhibited STSF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the types of plasticity observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "4080b2c6-0193-4711-a719-bab6dbfd4f81",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C52",
+      "claim": "The %change across the 17 connected pairs exhibiting STSD was \u221232 \u00b1 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "The %change across the 17 connected pairs exhibiting STSD was \u221232 \u00b1 15%, and the %change across the three connected pairs exhibiting STSF was 24 \u00b1 16%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a measured parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "116d8246-92b1-424b-b5aa-971c522f6647",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C53",
+      "claim": "The %change across the three connected pairs exhibiting STSF was 24 \u00b1 16%.",
+      "claim_type": "EXPLICIT",
+      "source": "The %change across the 17 connected pairs exhibiting STSD was \u221232 \u00b1 15%, and the %change across the three connected pairs exhibiting STSF was 24 \u00b1 16%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a measured parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "7129a06b-29ad-4564-aeee-99c942d2626f",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C54",
+      "claim": "All three synapses exhibiting significant STSF were connected onto FS cortical cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all three synapses exhibiting significant STSF were connected onto FS cortical cells (Figure 5G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the cell type specificity of a phenomenon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "eae79a15-7faf-4e56-9140-2daed25bb866",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C55",
+      "claim": "RS cells only exhibited significant STSD.",
+      "claim_type": "EXPLICIT",
+      "source": "RS cells only exhibited significant STSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the cell type specificity of a phenomenon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "6ba9ace1-14e5-41ab-a2df-484e3491749d",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C56",
+      "claim": "Most (14/20) connected pairs that exhibited distinct EPSP amplitude distributions for short and long ISIs also exhibited distinct ISI distributions for detectable and undetectable single-spike EPSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the population, most (14/20) connected pairs that exhibited distinct EPSP amplitude distributions for short and long ISIs also exhibited distinct ISI distributions for detectable and undetectable single-spike EPSPs (Figure 5E, 'both').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the relationship between two measured phenomena.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "89627aca-15a4-4b83-9180-a51f03ce633f",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C57",
+      "claim": "Connected pairs with larger average EPSP amplitudes undergo greater STSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with such models, we found that the connected pairs with larger average EPSP amplitudes undergo greater STSD (Figure 5G, left), and those with smaller average EPSPs undergo STSF (%change >0; Figure 5G, left).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the relationship between EPSP amplitude and plasticity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "7806a71f-5f8c-4891-810f-62cc3e761a27",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C58",
+      "claim": "Connected pairs with smaller average EPSPs undergo STSF.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with such models, we found that the connected pairs with larger average EPSP amplitudes undergo greater STSD (Figure 5G, left), and those with smaller average EPSPs undergo STSF (%change >0; Figure 5G, left).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the relationship between EPSP amplitude and plasticity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "71aebfd8-55a7-44b0-b327-65450ede5900",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C59",
+      "claim": "There was a small positive correlation between the CV and %change.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we also found a small positive correlation between the CV and %change (Figure 5G, right), with synapses with larger CVs exhibiting smaller STSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a correlation analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "29523b06-8b09-45dc-b981-5ea55c4a8743",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C60",
+      "claim": "No correlation was found between the amount of STSP in a connected pair and the firing rate of the pre-synaptic LGN cell within a range of 2\u201324 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we did not find a correlation between the amount of STSP in a connected pair and the firing rate of the pre-synaptic LGN cell within a range of 2\u201324 Hz (Figure 5H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the lack of correlation between two variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "f144bcb5-99b3-4777-bfb3-23bbe5d5c3a3",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C61",
+      "claim": "Thalamocortical synapses exhibit STSP, with FS cells exhibiting STSD and STSF equally and RS cells exhibiting only STSD.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, we conclude that a) thalamocortical synapses exhibit STSP, with FS cells exhibiting STSD and STSF equally and RS cells exhibiting only STSD; b) at the single synapse level, spiking history influences the detectability of the EPSP and thus the influence on postsynaptic spike output; c) STSD in vivo is independent of pre-synaptic firing rate, and is associated with EPSP amplitude reductions of ~30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "5ac85b37-7b38-49ec-920d-7521c19f19e9",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C62",
+      "claim": "At the single synapse level, spiking history influences the detectability of the EPSP and thus the influence on postsynaptic spike output.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, we conclude that a) thalamocortical synapses exhibit STSP, with FS cells exhibiting STSD and STSF equally and RS cells exhibiting only STSD; b) at the single synapse level, spiking history influences the detectability of the EPSP and thus the influence on postsynaptic spike output; c) STSD in vivo is independent of pre-synaptic firing rate, and is associated with EPSP amplitude reductions of ~30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "cb8d6d22-7415-4482-91b3-4abd679236fd",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C63",
+      "claim": "STSD in vivo is independent of pre-synaptic firing rate, and is associated with EPSP amplitude reductions of ~30%.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, we conclude that a) thalamocortical synapses exhibit STSP, with FS cells exhibiting STSD and STSF equally and RS cells exhibiting only STSD; b) at the single synapse level, spiking history influences the detectability of the EPSP and thus the influence on postsynaptic spike output; c) STSD in vivo is independent of pre-synaptic firing rate, and is associated with EPSP amplitude reductions of ~30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "b0f3eabb-6b9e-4030-89c0-595ed7cf977e",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C64",
+      "claim": "Variable and unreliable synapses increase cortical firing by means of increasing membrane fluctuations, similar to high conductance states.",
+      "claim_type": "EXPLICIT",
+      "source": "Using biologically constrained models, we found that variable and unreliable synapses serve to increase cortical firing by means of increasing membrane fluctuations, similar to high conductance states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from computational modeling based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "3b3bce51-e727-4356-a9d2-57ac0b1ca547",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C65",
+      "claim": "The V1 cell with unreliable synapses fired action potentials, while the cell with reliable synapses did not, due to the presence of larger fluctuations in its input current.",
+      "claim_type": "EXPLICIT",
+      "source": "In this example, only the V1 cell with unreliable synapses fired action potentials, due to the presence of larger fluctuations in its Iin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the model simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "77570ce5-5b0d-4cd8-98b5-0c263e0ce785",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C66",
+      "claim": "For a V1 cell driven by 50 LGN neurons with unreliable synapses, the average V1 firing rate was 7.8 \u00b1 1.4 spikes/sec.",
+      "claim_type": "EXPLICIT",
+      "source": "For a V1 cell driven by 50 LGN neurons with unreliable synapses, the average V1 firing rate was 7.8 \u00b1 1.4 spikes/sec whereas for reliable synapses it was 1.8 \u00b1 0.84 spikes/sec.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a model output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "bd595f62-ebc4-43f9-b16b-c81b648f713b",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C67",
+      "claim": "For a V1 cell driven by 50 LGN neurons with reliable synapses, the average V1 firing rate was 1.8 \u00b1 0.84 spikes/sec.",
+      "claim_type": "EXPLICIT",
+      "source": "For a V1 cell driven by 50 LGN neurons with unreliable synapses, the average V1 firing rate was 7.8 \u00b1 1.4 spikes/sec whereas for reliable synapses it was 1.8 \u00b1 0.84 spikes/sec.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of a model output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "9a9c97b2-f712-4698-a290-17dc8fd90741",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C68",
+      "claim": "Vm SD, and not mean Vm, determines cortical firing rate for both reliable and unreliable synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this relationship demonstrates that Vm SD, and not mean Vm, determines cortical firing rate for both reliable and unreliable synapses (Figure 7D, right).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "13f8734e-e4c3-4828-ae24-d504b5b7151a",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C69",
+      "claim": "The effect of EPSP variability is larger than the effect of failure rate on increased cortical firing rate in the unreliable model.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the effect of EPSP variability is larger than the effect of failure rate, although we recognize that EPSP variability and reliability are not independent in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from a control simulation comparing different model variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "c1d2fef7-f62b-49bc-abb3-c955369787fb",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C70",
+      "claim": "The unreliable model with correlated failures still produced higher cortical VmSD and firing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the unreliable model with correlated failures (Figure 7\u2014figure supplement 2B, blue traces) still produced higher cortical VmSD and firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from a control simulation with a different failure distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "bd73d7bf-227e-418f-9d3f-a46af4b9c4e5",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C71",
+      "claim": "Thalamocortical synapses in vivo are weak and unreliable.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that thalamocortical synapses are highly variable and unreliable, and exhibit short-term plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "9fa3eb25-01fd-4673-8525-725b506814c5",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C72",
+      "claim": "Thalamocortical synapses exhibit short-term plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that thalamocortical synapses are highly variable and unreliable, and exhibit short-term plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "8bc88f65-d768-4d99-9a07-03dad308db78",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C73",
+      "claim": "Synaptic variability and unreliability, rather than acting as system noise, do serve a computational function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, synaptic variability and unreliability, rather than acting as system noise, do serve a computational function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "e1fd7708-f0da-4617-81dd-5d89c0cd1547",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C74",
+      "claim": "Thalamocortical connections had large amplitudes (~2 mV) with little variability (CV ~0.1) in slices of the cat thalamocortical pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This differs drastically from findings in slices of the cat thalamocortical pathway (Stratford et al., 1996; Bannister et al., 2002), which indicated that thalamocortical connections had large amplitudes (~2 mV) with little variability (CV ~0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous in vitro studies for comparison with the current in vivo results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "59f9afd5-a1ea-4f8e-9843-9eac468b0f18",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C75",
+      "claim": "The EPSP amplitudes measured in vivo (~0.9 mV, mean including only detectable) are comparable to in vivo measurements of thalamocortical EPSP amplitude in the rodent L4 barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the EPSP amplitudes that we measured (~0.9 mV, mean including only detectable) are comparable to in vivo measurements of thalamocortical EPSP amplitude in the rodent L4 barrel cortex calculated by either STA from simultaneously recorded VB spikes (Bruno and Sakmann, 2006); 0.9 mV) or from minimal electrical stimulation in the white matter(Schoonover et al., 2014); 1.0 mV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the measured values to previously published in vivo measurements in a different system.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "56731afa-2047-436f-9363-f6a7918520ab",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C76",
+      "claim": "The average %undetectable rate of ~40% is double the value reported from in vivo single-cell stimulation studies in mouse L2/3 excitatory intracortical connections.",
+      "claim_type": "EXPLICIT",
+      "source": "There are no published reports of in vivo thalamocortical synaptic failure rates for comparison, but our average %undetectable rate of ~40% is double the value reported from in vivo single-cell stimulation studies in mouse L2/3 excitatory intracortical connections (Jouhanneau et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the measured failure rate to a published value from a different circuit.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "4c365b9e-54c3-4be0-b0d6-16367d26460c",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C77",
+      "claim": "Boudreau and Ferster (2005) found depression rates of 20% for electrical stimulation of the LGN at 20 Hz, and of 40% for the highest stimulation rate of 100 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous reports of synaptic depression in the thalamocortical pathway of the anesthetized cat carried out by Boudreau and Ferster (2005). They found depression rates of 20% for electrical stimulation of the LGN at 20 Hz, and of 40% for the highest stimulation rate of 100 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a previous study for comparison with the current findings on synaptic depression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "02a36b4f-083c-4fb1-9336-0469d26944d6",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C78",
+      "claim": "LGN cells from the lateral geniculate nucleus respond to visual input with temporally precise spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the visual system, thalamic cells from the lateral geniculate nucleus (LGN) respond to visual input with temporally precise spikes (Reinagel and Reid, 2000; Liu et al., 2001; Kumbhani et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous studies characterizing LGN response properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "33c5f98d-97b5-4621-9729-8bc65b9923ab",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C79",
+      "claim": "No more than 10% of the synapses onto thalamorecipient cortical cells in V1 are of thalamic origin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has become clear that no more than 10% of the synapses onto thalamorecipient cortical cells in V1 are of thalamic origin (Ahmed et al., 1998; Peters and Payne, 1993; da Costa and Martin, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites anatomical studies about the proportion of thalamic synapses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "9dc9d909-fb81-4f0c-8ba8-a33e1fb29503",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C80",
+      "claim": "Experimental data indicate that thalamic input accounts for 1/2 to 1/3 of the activity in L4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experimental data indicate that thalamic input accounts for 1/2 to 1/3 of the activity in L4 (Chung and Ferster, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a previous study about the contribution of thalamic input to cortical activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "4ddb176e-3938-4236-8a35-852182037ed7",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C81",
+      "claim": "A seminal in vitro study reported powerful and invariant thalamocortical synapses in the cat.",
+      "claim_type": "EXPLICIT",
+      "source": "A seminal in vitro study (Stratford et al., 1996) reported powerful and invariant thalamocortical synapses in the cat, suggesting that it is the relative strength of these synapses, compared to the more numerous intracortical synapses, that contributes to the disproportionate effect of the thalamus on V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a previous in vitro study for comparison with the current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "2d817aca-c93a-4070-ad68-fc150872e9b9",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C82",
+      "claim": "The findings are consistent with recent work suggesting synaptic variability and reliability play an important role in ethologically relevant behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with recent work suggesting synaptic variability and reliability play an important role in ethologically relevant behaviors (Evans et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a recent study to contextualize the current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "266bc70d-dc66-4c26-bbba-8ee2a2a48d78",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C83",
+      "claim": "The findings are consistent with previous work in vivo showing different input resistance and membrane time-constant for RS and FS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous work from our laboratory in vivo, showing different input resistance and membrane time-constant for RS and FS cells (Contreras and Palmer, 2003; Cardin et al., 2007; Cardin et al., 2010), and consistent with greater differences observed in vitro across these cell types (Hull et al., 2009; Cruikshank et al., 2007; Schiff and Reyes, 2012; Kloc and Maffei, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous studies from the same laboratory and others for comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "25c9c6cd-c386-4f0e-9817-dcf39cb01e93",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C84",
+      "claim": "The findings are consistent with greater differences observed in vitro across RS and FS cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous work from our laboratory in vivo, showing different input resistance and membrane time-constant for RS and FS cells (Contreras and Palmer, 2003; Cardin et al., 2007; Cardin et al., 2010), and consistent with greater differences observed in vitro across these cell types (Hull et al., 2009; Cruikshank et al., 2007; Schiff and Reyes, 2012; Kloc and Maffei, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous in vitro studies for comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "e20b866a-10ca-43dd-880f-9a4e3efc4cf1",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C85",
+      "claim": "An inverse relationship between the rate of spike-transmission failures and average EPSP amplitude has been previously reported in a variety of circuits both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an inverse relationship between the rate of spike-transmission failures (analogous to our 'undetectable' EPSP rate) and average EPSP amplitude has been previously reported in a variety of circuits both in vitro (Feldmeyer et al., 1999, Feldmeyer et al., 2006) and in vivo (Jouhanneau et al., 2015), and is consistent with binomial models of synaptic transmission (Figure 8 in Feldmeyer et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous studies showing similar relationships in other circuits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "c5924019-2e97-4133-825e-c6bdbdece341",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C86",
+      "claim": "The relationship between failure rate and EPSP amplitude is consistent with binomial models of synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an inverse relationship between the rate of spike-transmission failures (analogous to our 'undetectable' EPSP rate) and average EPSP amplitude has been previously reported in a variety of circuits both in vitro (Feldmeyer et al., 1999, Feldmeyer et al., 2006) and in vivo (Jouhanneau et al., 2015), and is consistent with binomial models of synaptic transmission (Figure 8 in Feldmeyer et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a theoretical model to explain the observed relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "ddc3b929-2269-4d1a-bac5-e90a17b21ff6",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C87",
+      "claim": "The results are consistent with a large number of previous studies exploring the effect of various forms of synaptic noise on gain modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with a large number of previous studies exploring the effect of various forms of synaptic noise on gain modulation (Ho and Destexhe, 2000; Chance et al., 2002; Cardin et al., 2008), and specifically point to single-spike synaptic variability as a potential mechanism for gain control in the thalamocortical pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous studies on synaptic noise and gain modulation to contextualize the findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "dadbc4cf-02b0-4e01-8354-719d8aa2ef46",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C88",
+      "claim": "The results are consistent with anatomical studies in the cat thalamocortical pathway that failed to find structural differences suggestive of relatively stronger thalamocortical, compared to corticocortical, synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that our conclusion of weak thalamocortical EPSPs is consistent with anatomical studies in the cat thalamocortical pathway that failed to find structural differences suggestive of relatively stronger thalamocortical, compared to corticocortical, synapses (da Costa and Martin, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites an anatomical study to support the conclusion about synaptic strength.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "914d2c02-bbbc-489e-b61f-fb192719e48d",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C89",
+      "claim": "Models of synaptic transmission predict that synapses with higher probability of release generate larger EPSPs with lower CV values and show proportionally more depression when activated at short intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "Models of synaptic transmission (del Castillo and Katz, 1954) predict that synapses with higher probability of release generate larger EPSPs with lower CV values and show proportionally more depression when activated at short intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a classic model of synaptic transmission to explain the observed relationships.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "fac4b772-1da3-4b22-830f-c320aadc5849",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C90",
+      "claim": "Cortical firing rate is driven by fluctuations of Vm rather than mean Vm, similar to high conductance states as observed in primary visual cortex of non-anesthetized primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, our data-driven simulations show that this variability and reliability actually enhances cortical firing via an increase in cortical membrane potential fluctuations., that is cortical firing rate is driven by fluctuations of Vm rather than mean Vm, similar to high conductance states (Destexhe et al., 2003) as observed in primary visual cortex of non-anesthetized primates (Tan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous studies on high conductance states to contextualize the modeling results.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "909f0b48-4d86-4e56-a6b8-876d8c837aaa",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "claim_id": "C91",
+      "claim": "The work challenges the notion of a strong and reliable thalamocortical synapse in the visual system of a highly visual animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in agreement with previous work in the rodent thalamocortical pathway in the somatosensory system, our work challenges the notion of a strong and reliable thalamocortical synapse in the visual system of a highly visual animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the implications of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used simultaneous intracellular recordings from V1 neurons and extracellular recordings from LGN neurons in anesthetized cats to characterize thalamocortical synaptic properties. The dataset was previously reported in Sedigh-Sarvestani et al. (2017), with recordings from 28 L4 and 8 L6 V1 cells, and 4-25 LGN neurons per experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide comprehensive methodological details that are internally consistent and appropriately documented. The reuse of a previously published dataset (C2) is explicitly stated, and the experimental procedures including animal subjects (C3), anesthesia protocols (C4-C6), recording techniques (C8, C14-C15), and cell selection criteria (C7, C9) are clearly described with sufficient detail for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "82365d2b-9cc2-4388-8b3d-42d10f11e2ea",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "From 296 simultaneously recorded LGN-V1 pairs with overlapping receptive fields, 36 LGN cells were identified as monosynaptically connected to 23 cortical simple cells. All cortical cells were simple cells (no complex cells found), and no differences were observed between L4 and L6 simple cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C13, C16, and C17 describe the dataset composition and connectivity findings. The identification of connected pairs using spike-triggered averaging is a standard approach, and the reported connection rate (36/296 = 12%) is reasonable for this type of study. The lack of complex cell connections (C12) and similarity between L4 and L6 cells (C13) are clearly stated observations, though the statistical basis for C13 is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "7c0bdf3a-82b0-4fd3-b57d-f0e32e39833b",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Thalamocortical synapses exhibited small and variable EPSP amplitudes with high failure rates. The mean undetectable EPSP rate was 37\u00b112% (range 7.4-56%). Average EPSP amplitude was 0.49\u00b10.23 mV for all spikes and significantly higher at 0.89\u00b10.24 mV (p=3e-9) when considering only detectable EPSPs. Undetectable EPSPs had a mean amplitude of -0.20\u00b10.09 mV, significantly different from zero (p=5e-15).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 present the core findings on EPSP amplitude and reliability with appropriate statistical tests. The significant difference between all spikes and detectable EPSPs (C23, p=3e-9) is well-supported. The negative mean for undetectable EPSPs (C25) is appropriately interpreted as potentially reflecting ongoing EPSPs or coincident IPSPs. The measurements are internally consistent and the statistical significance is properly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "5655864f-33e4-4480-b247-d9119d616492",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Thalamocortical synapses showed high variability with a mean CV of 1.2\u00b10.47, nearly an order of magnitude larger than in vitro reports. After removing undetectable EPSPs, CV reduced to 0.18\u00b10.13. The percentage of undetectable EPSPs was negatively correlated with average EPSP amplitude (r=-0.81) and positively correlated with CV (r=0.77). The CV-amplitude correlation persisted after excluding undetectable EPSPs (r=-0.66).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 characterize synaptic variability with appropriate metrics and correlations. The comparison to in vitro studies (C27) provides important context. The strong correlations (C29-C31) are consistent with binomial models of synaptic transmission as noted by the authors. The persistence of the CV-amplitude correlation after excluding undetectable EPSPs (C31) strengthens the conclusion that variability is an intrinsic property independent of detectability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "64a76db8-054d-45db-9968-630748947505",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "V1 cells were classified as regular-spiking (RS, n=16) or fast-spiking (FS, n=7), with 24 LGN connections to RS cells and 12 to FS cells. No significant differences in average EPSP amplitude, %undetectable, or CV were found between RS and FS cells when including all spikes. However, after excluding undetectable EPSPs, RS cells showed higher CV (0.22\u00b10.13 vs 0.11\u00b10.08, p=0.018) and smaller EPSP amplitude (0.83\u00b10.21 vs 1.0\u00b10.21 mV, p=0.025) than FS cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C39 describe cell-type specific differences in synaptic properties. The classification into RS and FS cells (C32-C33) is based on established electrophysiological criteria. The finding that differences emerge only after excluding undetectable EPSPs (C37-C39) is interesting and statistically supported with both KS and t-tests. This suggests that undetectable EPSPs mask underlying differences in synaptic properties between cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "9ad3b285-348b-4044-910c-d69a08891628",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The dataset included cortical cells with varying numbers of connected LGN inputs: 15 cells with one connection, 3 cells with two connections, and 5 cells with three connections. The CV of connections to the same postsynaptic V1 cell was as variable as connections across different cells, suggesting that postsynaptic cell identity does not overtly determine synaptic variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 address whether synaptic variability is determined by postsynaptic mechanisms. The observation that CV varies as much within as between postsynaptic cells (C43) provides evidence against strong postsynaptic determination of variability. However, the sample size for cells with multiple connections is limited (n=8 cells with 2-3 connections), which somewhat limits the strength of this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "2527fab8-3625-4d07-a726-4bbe535b6d8c",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Synaptic properties were compared between white noise and drifting grating stimuli in a subset of 19 connected pairs. High correlations were found for average EPSP amplitude (r=0.90), standard deviation (r=0.85), and %undetectable (r=0.82) between the two stimulus types. Average EPSP amplitude was significantly higher during white noise (p=0.0055), but other variables were similar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 demonstrate that synaptic properties are largely stable across different visual stimuli and time (~10 minutes apart). The high correlations (C46-C48) support the conclusion that synaptic variability and reliability are intrinsic properties rather than stimulus-dependent. The small difference in EPSP amplitude (C49) is statistically significant but the authors appropriately note this is unlikely due to synchronized input differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "5243e0b8-d3e1-4baa-8432-cf064d505c29",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "55% (20/36) of connected pairs exhibited significant short-term synaptic plasticity (STSP), with 17 showing depression (STSD, -32\u00b115% change) and 3 showing facilitation (STSF, 24\u00b116% change). All STSF synapses connected to FS cells, while RS cells only showed STSD. Larger average EPSPs underwent greater STSD, while smaller EPSPs showed STSF. STSP was independent of presynaptic firing rate (2-24 Hz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C60 characterize short-term plasticity with appropriate statistical methods (KS tests comparing ISI distributions). The cell-type specificity (C54-C55) is notable, though the small number of STSF synapses (n=3) limits generalizability. The relationships between EPSP amplitude and plasticity type (C57-C58) are consistent with classical models of synaptic transmission. The independence from firing rate (C60) is important for interpreting these results in awake conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "ebf55ec2-9fa9-4ac7-9dce-7cb1c1ece309",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors conclude that thalamocortical synapses exhibit STSP with cell-type specificity (FS cells show both STSD and STSF, RS cells only STSD), spiking history influences EPSP detectability and postsynaptic spike output, and STSD in vivo is independent of presynaptic firing rate with ~30% amplitude reductions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are summary conclusions well-supported by the preceding data (C50-C60). The cell-type specificity is clearly demonstrated, the influence of spiking history on detectability is shown through ISI-dependent EPSP distributions, and the independence from firing rate is empirically tested. The ~30% amplitude reduction is consistent with the measured %change values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "b96a88fe-8e84-4a05-90d8-b34e1805aef4",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Computational modeling showed that variable and unreliable synapses increase cortical firing by increasing membrane fluctuations. With 50 LGN inputs, unreliable synapses produced firing rates of 7.8\u00b11.4 spikes/sec versus 1.8\u00b10.84 spikes/sec for reliable synapses. Vm standard deviation, not mean Vm, determined firing rate. EPSP variability had a larger effect than failure rate, and correlated failures still produced higher firing than reliable synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C70 describe modeling results that are internally consistent and appropriately constrained by experimental data. The model demonstrates a clear mechanism (increased Vm fluctuations) for how unreliable synapses enhance cortical output. Control simulations (C69-C70) strengthen the conclusions by dissecting contributions of variability versus reliability. However, the model makes simplifying assumptions (e.g., LIF neurons, specific parameter choices) that should be acknowledged as limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "03674c03-5d0c-4072-9b3a-f4ef9d0f82a2",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study concludes that thalamocortical synapses in vivo are weak, unreliable, and exhibit short-term plasticity, and that synaptic variability and unreliability serve a computational function rather than acting as system noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are high-level conclusions supported by the experimental data (weak/unreliable: C18-C31; plasticity: C50-C63) and modeling results (computational function: C64-C70). The conclusion that variability serves a function is supported by the modeling showing enhanced cortical firing. However, the claim about 'computational function' is somewhat speculative as the model demonstrates a mechanism but doesn't directly test functional consequences in behavior or sensory processing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "a2994840-a78c-4dfe-a4bd-e73555128833",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The in vivo findings differ from in vitro cat studies showing large EPSPs (~2 mV) with low CV (~0.1), but are comparable to in vivo rodent barrel cortex measurements (~0.9-1.0 mV). The ~40% undetectable rate is double that reported for mouse L2/3 intracortical connections. The observed STSD (~30% at 50 ms ISI) is consistent with previous cat studies showing 20-40% depression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 appropriately contextualize the findings within existing literature. The comparisons are fair and acknowledge both similarities and differences. The discrepancy with in vitro cat studies (C74) is important and the authors appropriately discuss potential explanations (calcium concentration, shunting conductances). The consistency with rodent in vivo data (C75) and previous cat depression studies (C77) strengthens the validity of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    },
+    {
+      "id": "72786d44-4314-49e7-84a2-e512ea429410",
+      "content_id": "99bc5f51-94c2-4b1e-8a74-8a2e555b2319",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The findings are contextualized within the broader literature on thalamocortical circuits, including LGN response properties, anatomical connectivity, the disproportionate influence of thalamic input, previous in vitro studies, relationships between failure rates and EPSP amplitude, synaptic transmission models, gain modulation, and high conductance states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C91 provide extensive literature context through citations. These claims appropriately reference prior work to situate the current findings. The citations appear accurate and relevant, covering anatomical studies (C79, C88), physiological characterizations (C78, C80), previous synaptic studies (C81, C85), and theoretical frameworks (C86, C87, C89, C90). This contextualization strengthens the interpretation of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:50:47.646081Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ecd0a62-7df1-4142-8f4e-54beff5c2aa2",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "94667c2c-9504-4983-8504-0f62fc93b9c4",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "fff017fe-b56c-44fe-91fd-db5d89c199b9",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "32a8d991-4ff8-417e-8d27-547465785ef1",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "852416e6-2695-4f2f-919c-ce7c605b445c",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "fb990df6-a8ce-4350-93bd-e13d0a55e599",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "d4d45917-c148-4cc6-a31e-fc2b40ede3cc",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "bf88c25d-5744-429f-a666-0ad5755cd0c4",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "239d0f63-f90c-4d81-8a6f-d8c25a7a538e",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "ef8b0731-0c5f-4c37-8d4c-292304ad30ba",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "531f45ba-3852-4618-9255-31de57f30de0",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "6b5179fd-216c-439c-96b7-8c6bab53d7c6",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "d4718d99-9c40-40a5-9724-6cc925f9fba3",
+      "result_id": "4b8ae64b-f904-4a4f-a218-ba23cd2c57d4"
+    },
+    {
+      "claim_id": "849f570f-754e-448f-a964-04efdd18733d",
+      "result_id": "82365d2b-9cc2-4388-8b3d-42d10f11e2ea"
+    },
+    {
+      "claim_id": "04b82a9d-6704-42f6-8b2d-372b86c15f8b",
+      "result_id": "82365d2b-9cc2-4388-8b3d-42d10f11e2ea"
+    },
+    {
+      "claim_id": "d9cabc8d-85df-4546-9f5f-ec8fd8269185",
+      "result_id": "82365d2b-9cc2-4388-8b3d-42d10f11e2ea"
+    },
+    {
+      "claim_id": "3650f8c5-ee40-4363-b90f-a91e3b50a702",
+      "result_id": "82365d2b-9cc2-4388-8b3d-42d10f11e2ea"
+    },
+    {
+      "claim_id": "dcda0499-a5a1-4702-b831-9d39e9a95316",
+      "result_id": "7c0bdf3a-82b0-4fd3-b57d-f0e32e39833b"
+    },
+    {
+      "claim_id": "8ef1e99d-d978-40e6-b84a-57e0c56a7c26",
+      "result_id": "7c0bdf3a-82b0-4fd3-b57d-f0e32e39833b"
+    },
+    {
+      "claim_id": "a71cd6b2-4f00-4602-86e7-c5ab30a4f41d",
+      "result_id": "7c0bdf3a-82b0-4fd3-b57d-f0e32e39833b"
+    },
+    {
+      "claim_id": "f18a607d-e6c6-409e-887c-83b535150c9d",
+      "result_id": "7c0bdf3a-82b0-4fd3-b57d-f0e32e39833b"
+    },
+    {
+      "claim_id": "ccf48ad1-dc96-4c26-9554-5c14b4daffc6",
+      "result_id": "7c0bdf3a-82b0-4fd3-b57d-f0e32e39833b"
+    },
+    {
+      "claim_id": "028af3f9-9834-404a-8e2b-4cc2a3ce0a56",
+      "result_id": "7c0bdf3a-82b0-4fd3-b57d-f0e32e39833b"
+    },
+    {
+      "claim_id": "bf91b27b-5d4e-49dc-a414-d031810839ea",
+      "result_id": "7c0bdf3a-82b0-4fd3-b57d-f0e32e39833b"
+    },
+    {
+      "claim_id": "39292257-cf98-4abc-b90a-b65297c0e1d2",
+      "result_id": "7c0bdf3a-82b0-4fd3-b57d-f0e32e39833b"
+    },
+    {
+      "claim_id": "fad320b1-9550-4c82-98fa-28fdc92e3ad8",
+      "result_id": "5655864f-33e4-4480-b247-d9119d616492"
+    },
+    {
+      "claim_id": "df7c8180-22cb-407b-a23c-c4527b565b11",
+      "result_id": "5655864f-33e4-4480-b247-d9119d616492"
+    },
+    {
+      "claim_id": "ce862cdd-b2e4-43a1-ac4f-d570343a0ca2",
+      "result_id": "5655864f-33e4-4480-b247-d9119d616492"
+    },
+    {
+      "claim_id": "39a5ef71-a7d6-4984-949d-848c2dc10f6e",
+      "result_id": "5655864f-33e4-4480-b247-d9119d616492"
+    },
+    {
+      "claim_id": "dc3b6fe5-6661-429b-84dd-f088438ec27d",
+      "result_id": "5655864f-33e4-4480-b247-d9119d616492"
+    },
+    {
+      "claim_id": "426e2033-3e2b-4ce9-9d29-56bc23dac172",
+      "result_id": "5655864f-33e4-4480-b247-d9119d616492"
+    },
+    {
+      "claim_id": "db8037a9-6ff2-431f-8a0d-3f6fd2ced2cd",
+      "result_id": "64a76db8-054d-45db-9968-630748947505"
+    },
+    {
+      "claim_id": "b260713f-be49-4697-92a5-e54ca990bc2a",
+      "result_id": "64a76db8-054d-45db-9968-630748947505"
+    },
+    {
+      "claim_id": "649179e0-40f7-4455-b1b5-357583fdbfc7",
+      "result_id": "64a76db8-054d-45db-9968-630748947505"
+    },
+    {
+      "claim_id": "9735bb07-4792-4db3-a1b6-dc8cb96a9af1",
+      "result_id": "64a76db8-054d-45db-9968-630748947505"
+    },
+    {
+      "claim_id": "0ca5b66c-ad31-4a1c-96a3-fe92bc3771b5",
+      "result_id": "64a76db8-054d-45db-9968-630748947505"
+    },
+    {
+      "claim_id": "a57e5249-5a4f-4470-893b-089b4a1bec75",
+      "result_id": "64a76db8-054d-45db-9968-630748947505"
+    },
+    {
+      "claim_id": "32aec04d-13da-451d-8839-86afb26e9bac",
+      "result_id": "64a76db8-054d-45db-9968-630748947505"
+    },
+    {
+      "claim_id": "02c31717-d10e-4dfa-a63a-dd853565a28a",
+      "result_id": "64a76db8-054d-45db-9968-630748947505"
+    },
+    {
+      "claim_id": "cb13795e-f3a6-4750-a950-266376695bd2",
+      "result_id": "9ad3b285-348b-4044-910c-d69a08891628"
+    },
+    {
+      "claim_id": "836337d5-05e0-4b17-ab9e-bb728bc9d096",
+      "result_id": "9ad3b285-348b-4044-910c-d69a08891628"
+    },
+    {
+      "claim_id": "50aa6711-15be-4c99-b648-acaefaa0ecda",
+      "result_id": "9ad3b285-348b-4044-910c-d69a08891628"
+    },
+    {
+      "claim_id": "8e7e9af0-23d5-40cb-9f3c-ea768b97cccd",
+      "result_id": "9ad3b285-348b-4044-910c-d69a08891628"
+    },
+    {
+      "claim_id": "ffec3a50-fd58-4ac3-8a27-ece26eeb93a7",
+      "result_id": "9ad3b285-348b-4044-910c-d69a08891628"
+    },
+    {
+      "claim_id": "d26d65f2-116d-4b45-bcd4-d4ba23d0d215",
+      "result_id": "2527fab8-3625-4d07-a726-4bbe535b6d8c"
+    },
+    {
+      "claim_id": "b199a86f-1c9a-4284-943c-7d0ebc449470",
+      "result_id": "2527fab8-3625-4d07-a726-4bbe535b6d8c"
+    },
+    {
+      "claim_id": "7b156024-0773-4564-8329-6eb34e019df8",
+      "result_id": "2527fab8-3625-4d07-a726-4bbe535b6d8c"
+    },
+    {
+      "claim_id": "27cb341d-874b-4313-af01-dc6287068307",
+      "result_id": "2527fab8-3625-4d07-a726-4bbe535b6d8c"
+    },
+    {
+      "claim_id": "261c3e4a-8695-40b8-9fd6-bc798d98c7e0",
+      "result_id": "2527fab8-3625-4d07-a726-4bbe535b6d8c"
+    },
+    {
+      "claim_id": "58b3c387-991e-49c4-8abc-cc702ceca5fb",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "bb7f3033-67d4-4d92-b684-af4958c5145f",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "4080b2c6-0193-4711-a719-bab6dbfd4f81",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "116d8246-92b1-424b-b5aa-971c522f6647",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "7129a06b-29ad-4564-aeee-99c942d2626f",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "eae79a15-7faf-4e56-9140-2daed25bb866",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "6ba9ace1-14e5-41ab-a2df-484e3491749d",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "89627aca-15a4-4b83-9180-a51f03ce633f",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "7806a71f-5f8c-4891-810f-62cc3e761a27",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "71aebfd8-55a7-44b0-b327-65450ede5900",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "29523b06-8b09-45dc-b981-5ea55c4a8743",
+      "result_id": "5243e0b8-d3e1-4baa-8432-cf064d505c29"
+    },
+    {
+      "claim_id": "f144bcb5-99b3-4777-bfb3-23bbe5d5c3a3",
+      "result_id": "ebf55ec2-9fa9-4ac7-9dce-7cb1c1ece309"
+    },
+    {
+      "claim_id": "5ac85b37-7b38-49ec-920d-7521c19f19e9",
+      "result_id": "ebf55ec2-9fa9-4ac7-9dce-7cb1c1ece309"
+    },
+    {
+      "claim_id": "cb8d6d22-7415-4482-91b3-4abd679236fd",
+      "result_id": "ebf55ec2-9fa9-4ac7-9dce-7cb1c1ece309"
+    },
+    {
+      "claim_id": "b0f3eabb-6b9e-4030-89c0-595ed7cf977e",
+      "result_id": "b96a88fe-8e84-4a05-90d8-b34e1805aef4"
+    },
+    {
+      "claim_id": "3b3bce51-e727-4356-a9d2-57ac0b1ca547",
+      "result_id": "b96a88fe-8e84-4a05-90d8-b34e1805aef4"
+    },
+    {
+      "claim_id": "77570ce5-5b0d-4cd8-98b5-0c263e0ce785",
+      "result_id": "b96a88fe-8e84-4a05-90d8-b34e1805aef4"
+    },
+    {
+      "claim_id": "bd595f62-ebc4-43f9-b16b-c81b648f713b",
+      "result_id": "b96a88fe-8e84-4a05-90d8-b34e1805aef4"
+    },
+    {
+      "claim_id": "9a9c97b2-f712-4698-a290-17dc8fd90741",
+      "result_id": "b96a88fe-8e84-4a05-90d8-b34e1805aef4"
+    },
+    {
+      "claim_id": "13f8734e-e4c3-4828-ae24-d504b5b7151a",
+      "result_id": "b96a88fe-8e84-4a05-90d8-b34e1805aef4"
+    },
+    {
+      "claim_id": "c1d2fef7-f62b-49bc-abb3-c955369787fb",
+      "result_id": "b96a88fe-8e84-4a05-90d8-b34e1805aef4"
+    },
+    {
+      "claim_id": "bd73d7bf-227e-418f-9d3f-a46af4b9c4e5",
+      "result_id": "03674c03-5d0c-4072-9b3a-f4ef9d0f82a2"
+    },
+    {
+      "claim_id": "9fa3eb25-01fd-4673-8525-725b506814c5",
+      "result_id": "03674c03-5d0c-4072-9b3a-f4ef9d0f82a2"
+    },
+    {
+      "claim_id": "8bc88f65-d768-4d99-9a07-03dad308db78",
+      "result_id": "03674c03-5d0c-4072-9b3a-f4ef9d0f82a2"
+    },
+    {
+      "claim_id": "e1fd7708-f0da-4617-81dd-5d89c0cd1547",
+      "result_id": "a2994840-a78c-4dfe-a4bd-e73555128833"
+    },
+    {
+      "claim_id": "59f9afd5-a1ea-4f8e-9843-9eac468b0f18",
+      "result_id": "a2994840-a78c-4dfe-a4bd-e73555128833"
+    },
+    {
+      "claim_id": "56731afa-2047-436f-9363-f6a7918520ab",
+      "result_id": "a2994840-a78c-4dfe-a4bd-e73555128833"
+    },
+    {
+      "claim_id": "4c365b9e-54c3-4be0-b0d6-16367d26460c",
+      "result_id": "a2994840-a78c-4dfe-a4bd-e73555128833"
+    },
+    {
+      "claim_id": "02a36b4f-083c-4fb1-9336-0469d26944d6",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "33c5f98d-97b5-4621-9729-8bc65b9923ab",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "9dc9d909-fb81-4f0c-8ba8-a33e1fb29503",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "4ddb176e-3938-4236-8a35-852182037ed7",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "2d817aca-c93a-4070-ad68-fc150872e9b9",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "266bc70d-dc66-4c26-bbba-8ee2a2a48d78",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "25c9c6cd-c386-4f0e-9817-dcf39cb01e93",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "e20b866a-10ca-43dd-880f-9a4e3efc4cf1",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "c5924019-2e97-4133-825e-c6bdbdece341",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "ddc3b929-2269-4d1a-bac5-e90a17b21ff6",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "dadbc4cf-02b0-4e01-8354-719d8aa2ef46",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "914d2c02-bbbc-489e-b61f-fb192719e48d",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "fac4b772-1da3-4b22-830f-c320aadc5849",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    },
+    {
+      "claim_id": "909f0b48-4d86-4e56-a6b8-876d8c837aaa",
+      "result_id": "72786d44-4314-49e7-84a2-e512ea429410"
+    }
+  ],
+  "comparisons": []
+}

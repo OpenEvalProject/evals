@@ -1,0 +1,2116 @@
+{
+  "submission": {
+    "id": "a1eefa9a-7f86-4116-ad47-95a854951485",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:50:00.556938Z",
+    "updated_at": "2025-12-02T10:50:00.556938Z"
+  },
+  "content": [
+    {
+      "id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "submission_id": "a1eefa9a-7f86-4116-ad47-95a854951485",
+      "content_type": "manuscript",
+      "content_text": "# tRNA ligase structure reveals kinetic competition between non-conventional mRNA splicing and mRNA decay\n\n## Authors\n\n- Jirka Peschek<sup>1</sup> ([ORCID: 0000-0001-8158-9301](https://orcid.org/0000-0001-8158-9301)) \u2020\n- Peter Walter<sup>1</sup> ([ORCID: 0000-0002-6849-708X](https://orcid.org/0000-0002-6849-708X))\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nYeast tRNA ligase (Trl1) is an essential trifunctional enzyme that catalyzes exon-exon ligation during tRNA biogenesis and the non-conventional splicing of HAC1 mRNA during the unfolded protein response (UPR). The UPR regulates the protein folding capacity of the endoplasmic reticulum (ER). ER stress activates Ire1, an ER-resident kinase/RNase, which excises an intron from HAC1 mRNA followed by exon-exon ligation by Trl1. The spliced product encodes for a potent transcription factor that drives the UPR. Here we report the crystal structure of Trl1 RNA ligase domain from Chaetomium thermophilum at 1.9 \u00c5 resolution. Structure-based mutational analyses uncovered kinetic competition between RNA ligation and degradation during HAC1 mRNA splicing. Incompletely processed HAC1 mRNA is degraded by Xrn1 and the Ski/exosome complex. We establish cleaved HAC1 mRNA as endogenous substrate for ribosome-associated quality control. We conclude that mRNA decay and surveillance mechanisms collaborate in achieving fidelity of non-conventional mRNA splicing during the UPR.\n\n## Introduction\n\nRNA ligases are found in all domains of life. They catalyze the ligation of RNA molecules via phosphodiester bonds during different RNA processing events, such as repair, editing and splicing (Popow et al., 2012). The fungal tRNA ligase Trl1 (previously named Rlg1) is encoded by an essential gene and is involved in tRNA splicing and the unfolded protein response (UPR). Trl1 is a tripartite enzyme (Figure 1A), consisting of an N-terminal adenylyltransferase domain (ligase; LIG), which belongs to the nucleotidyltransferase superfamily alongside DNA ligases and RNA capping enzymes, a C-terminal cyclic phosphodiesterase domain (CPD) and a central polynucleotide kinase (KIN) domain (Phizicky et al., 1986; Xu et al., 1990). Trl1 substrates initially contain a 2\u2019,3\u2019 cyclic phosphate and a 5\u2019-OH group at the RNA termini (Greer et al., 1983). The ligation reaction progresses via three enzymatic steps (Figure 1B). First, the CPD activity opens the 2\u2019,3\u2019 cyclic phosphate by hydrolysis to form a 3\u2019-OH/2\u2019 phosphate terminus, and, second, the KIN activity phosphorylates the 5\u2019-OH in an NTP-dependent reaction \u2013 preferring GTP over ATP. These first two steps \u2018heal\u2019 (i.e., modify) the RNA termini in preparation for the ligation reaction. Third, the LIG activity \u2018seals\u2019 the healed ends through ATP-dependent phosphodiester bond formation. This final reaction occurs in three nucleotidyl transfer steps: (1) Trl1-LIG reacts with ATP to form a covalent LIG-(lysyl-N)-AMP intermediate; (2) the bound AMP is transferred to the 5\u2019 phosphate end to form a 5\u2019-to-5\u2019 RNA-adenylate; (3) Trl1-LIG catalyzes the attack by the 3\u2019-OH on the RNA-adenylate to form a phosphodiester bond, releasing AMP (Greer et al., 1983; Phizicky et al., 1986). The remaining 2\u2019 phosphate at the splice junction is removed by an additional enzyme, Tpt1, which is a 2\u2019 phosphotransferase that, like Trl1, is also essential for cell viability (Banerjee et al., 2019; Culver et al., 1997; Culver et al., 1993).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig1-v1.jpg)\n\n**Figure 1.:** (A) Domain organization of Trl1.\u00a0The ligase/adenylyltransferase domain (LIG) is shown in blue, the polynucleotide kinase domain (KIN) in white, the cyclic phosphodiesterase domain (CPD) in green. The residue numbering refers to the domain boundaries of Trl1 from Saccharomyces cerevisiae (Sc) and Chaetomium thermophilum (Ct). The relative position of the mutated histidine in the UPR mutant is indicated. See Figure 1\u2014figure supplement 1 for a sequence alignment of Trl1-LIG from both species. (B) Trl1-mediated non-conventional RNA splicing mechanism. The RNA is cleaved at the exon-intron junctions by an endonuclease (SEN or Ire1), which leaves a 2\u2019,3\u2019-cyclic phosphate end on the 5\u2019 exon (purple) and a 5\u2019-OH on the 3\u2019 exon (yellow). After removal of the intron (gray), the exon ends are first modified (\u2018healed\u2019) by the CPD and KIN domains and finally ligated (\u2018sealed\u2019) by the LIG domain. Exon ligation progresses via a covalent ligase-AMP intermediate (LIG-AMP) and a 5\u2019\u22125\u2019 RNA-adenylate. The residual 2\u2019-phosphate at the splice site is then removed by a separate enzyme, the 2\u2019-phosphotransferase Tpt1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Sequence alignment of Trl1-LIG from Chaetomium thermophilum (ct) and Saccharomyces cerevisiae (sc). White letters with gray or black background indicate similarity or identity, respectively. The active site lysine, which is part of the highly conserved motif I, and the histidine that is mutated to tyrosine in the UPR mutant are highlighted in green and red, respectively.\n\nTrl1 ligates tRNA halves after intron excision by the tRNA splicing endonuclease (SEN) complex (Greer et al., 1983; Peebles et al., 1983). In addition, it is a key component of the UPR, a major intracellular stress signaling pathway (Sidrauski et al., 1996). All eukaryotic cells monitor and adjust the protein folding capacity of their endoplasmic reticulum (ER) through the UPR signaling network. The evolutionarily most conserved \u2013 and in fungi sole \u2013 branch of the UPR signals via a unique, non-conventional mRNA splicing reaction: Protein folding stress in the ER activates the cytosolic endonuclease domain of the transmembrane stress sensor Ire1 (Cox et al., 1993; Mori et al., 1993). The activated RNase cleaves HAC1 mRNA in fungi or XBP1 mRNA in metazoans at the splice sites (Calfon et al., 2002; Cox and Walter, 1996; Yoshida et al., 2001). Next, a conformational change within the RNA actively ejects the intron and coordinates the two exons (Gonzalez et al., 1999; Peschek et al., 2015), which are ligated by Trl1 in fungi (Sidrauski et al., 1996) or the RTCB ligase complex in metazoans (Jurkin et al., 2014; Kosmaczewski et al., 2014; Lu et al., 2014). The spliced HAC1 and XBP1 mRNAs are then translated to produce the active transcription factors Hac1 and XBP1 that drive expression of UPR target genes in yeast and metazoan cells, respectively (Cox and Walter, 1996; Mori et al., 1996; Nikawa et al., 1996).\n\nHere, we report the crystal structure of the Trl1 ligase domain from Chaetomium thermophilum. Guided by our structural data, we provide evidence that the non-conventional splicing of HAC1 mRNA competes with RNA decay in the cell. We further establish cleaved HAC1 mRNA as an endogenous substrate for ribosome-associated mRNA quality control.\n\n## Results\n\n### Chaetomium thermophilum Trl1\n\nEarlier studies identified several residues within yeast tRNA ligase Trl1 that are critical for its essential function in tRNA splicing. Intriguingly, a yeast genetic screen in Saccharomyces cerevisiae (sc) revealed a single His(148)Tyr point mutation lying within Trl1-LIG that in vivo abolished the UPR signaling yet did not impair tRNA splicing. This mutant allele (henceforth referred to as trl1-H148Y, originally named rlg1-100) paved the way to discovery of Trl1 as the RNA ligase during Ire1-mediated splicing of HAC1 mRNA (Sidrauski et al., 1996). To understand the structural basis for the two distinct roles of Trl1, we sought to crystallize the full-length enzyme, as well as functional modules of it. While our efforts failed using S. cerevisiae-derived protein, we were successful using protein derived from Chaetomium thermophilum (ct), a thermophilic fungus that previously proved invaluable for structural studies (Amlacher et al., 2011; Bock et al., 2014). ctTrl1 has the same tripartite domain structure as scTrl1 (Figure 1A) with 39% overall sequence identity (Figure 1\u2014figure supplement 1). Moreover, expression of ctTrl1 rescued S. cerevisiae trl1\u2206 cells from the lethal effects of the deletion, both under normal growth conditions as well as during ER stress induced by tunicamycin (Tm), an inhibitor of N-linked glycosylation (Figure 2A). Hence, ctTrl1 catalyzes in S. cerevisiae cells the ligation of both tRNA halves, thus sustaining normal growth, and HAC1 mRNA exons during the UPR. In addition, recombinantly expressed ctTrl1 efficiently ligated the exons of a HAC1-derived RNA substrate, HAC1U-508 (\u2018U\u2019 for unspliced, that\u00a0is intron containing), after its endonucleolytic cleavage by Ire1 completing the splicing reaction in vitro (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig2-v1.jpg)\n\n**Figure 2.:** (A) Functional complementation in S.\u00a0cerevisiae trl1\u0394 by ctTrl1. Expression of ctTrl1 from a plasmid (URA3 selection) permitted growth of a trl1\u0394 strain under normal growth conditions (SC-URA) and ER stress (SC-URA\u00a0+Tm). Counterselection against the URA3-containing plasmid using 5\u2019-fluoroorotic acid (5-FOA) confirmed the essential function of Trl1. The respective TRL1 genotype and plasmid are indicated in the key on top. (B) In vitro splicing of a HAC1-derrived RNA substrate was analyzed by denaturing urea-PAGE. The input RNA (lane 1) was first cleaved by scIre1 yielding three dominant bands for the separated exons and the intron (lane 2). Faint bands corresponding to single cleaved RNA were observed. Addition of ctTrl1 completed the splicing reaction resulting in covalently ligated exons (lane 3, marked by a closed arrowhead). An additional ligation product is marked with an asterisk. RNase H digestion identified the band as circularized tandem HAC1 intron RNA (see Figure 2\u2014figure supplement 1). The position on the gel and relative length of the RNA species is depicted by icons on the right using the same color code as in Figure 1B.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** In vitro transcribed HAC1U-508 RNA was cleaved by Ire1 (lane 1) and subsequently ligated by Trl1 (lane 2).\u00a0The ligation products were hybridized with DNA oligonucleotides a (lane 4) or b (lane 5) and treated with RNase H. In lane 3, no oligonucleotide was added. The RNA products after each step were analyzed on a denaturing polyacrylamide gel and visualized by SYBR Gold staining. The band in question (marked with an asterisk) disappeared upon RNase H digestion of the RNA/DNA hybrids and a band at the position of the severed intron (252 nt) reappeared. Based on this result and the position on the gel, the marked band represents most likely two introns that were circularized by two intermolecular ligation events at their 5\u2019 and 3\u2019 ends. Hybridization positions of the DNA oligonucleotides on a linear HAC1 intron and the putative circular concatemer of two introns are schematically described in the right.\n\n### Structure of the ctTrl1 ligase domain\n\nAiming toward structural analysis, we expressed ctTrl1 constructs of varying length with incorporated selenomethionine in Escherichia coli and purified the proteins. While the full-length protein resisted crystallization, we obtained diffracting crystals belonging to space group P212121 of ctTrl1-LIG (residues 1 to 414) bound to the \u03b1,\u03b2-non-hydrolyzable ATP analog \u03b1,\u03b2-methyleneadenosine 5\u2032-triphosphate (AMPcPP). The structure was solved by SeMet-SAD phasing to 1.9 \u00c5 resolution (see Table 1 for data collection and refinement statistics). The overall structure delineates two subdomains: an N-terminal (LIG-N; aa 13\u2013326) and a C-terminal (LIG-C; aa 327\u2013407) subdomain (Figure 3A, colored blue and yellow, respectively). LIG-N is composed of three central antiparallel \u03b2-sheets surrounded by seven \u03b1-helices. The overall architecture of this domain resembles the bacteriophage T4 RNA ligase (T4Rnl1) structure consistent with it carrying the adenylyltransferase activity (El Omari et al., 2006). The most N-terminal residues (~35 aa), which wrap around the domain, are absent in T4Rnl1. LIG-C has an all-helical fold that is unrelated, based on structural comparison by Dali (Holm and Laakso, 2016), to all other structures in the PDB from the same superfamily, which besides ATP-dependent RNA ligases also includes DNA ligases and mRNA capping enzymes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig3-v1.jpg)\n\n**Figure 3.:** (A) Cartoon representation of the overall structure of ctTrl1-LIG from three views. The adenylyltransferase domain is colored in blue and the C-terminal domain in yellow. AMPcPP and the sulfate ion near the active site are depicted as sticks. (B) Electrostatic surface potential map of ctTrl1-LIG. Positive potential is represented in blue and negative potential in red. (C) ATP binding pocket with bound AMPcPP. The interacting amino acid residues and AMPcPP are shown as sticks. Atomic contacts between ctTrl1-LIG and AMPcPP are indicated by dashed lines, with yellow for hydrogen bonds, orange for \u03c0-stacking and green for salt bridges. The electron density around AMPcPP (blue mesh) is extracted from a composite omit map (2mFo-DFc), contoured at 1 \u03c3. (D) Sulfate ion binding near the active site. Amino acids, AMPcPP and the sulfate ion are shown as sticks. C atoms are colored according to the respective domains (see A) in blue (adenylyltransferase domain) or yellow (C terminal domain). Atomic contacts are depicted as in C.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Datasets:</th>\n      <th>High-resolution (remote)</th>\n      <th>Se SAD phasing (peak)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Beamline</td>\n      <td>APS 23ID-D</td>\n      <td>APS 23ID-D</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.0332</td>\n      <td>0.9793</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P212121</td>\n      <td>P212121</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions a, b, c (\u00c5) \u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>49.73, 56.58, 173.88 90, 90, 90</td>\n      <td>49.63, 56.46, 173.87 90, 90, 90</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>37.74\u20131.90 (1.94\u20131.90)</td>\n      <td>49.63\u20132.50 (2.60\u20132.50)</td>\n    </tr>\n    <tr>\n      <td>Total reflections</td>\n      <td>159936 (10248)</td>\n      <td>175374 (20071)</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>39302 (2495)</td>\n      <td>17561 (1930)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>4.1 (4.1)</td>\n      <td>10.0 (10.4)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.3 (99.1)</td>\n      <td>99.1 (98.1)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3(I)</td>\n      <td>10.3 (1.2)</td>\n      <td>21.9 (7.3)</td>\n    </tr>\n    <tr>\n      <td>CC(1/2)</td>\n      <td>0.998 (0.793)</td>\n      <td>0.999 (0.982)</td>\n    </tr>\n    <tr>\n      <td>Rpim</td>\n      <td>0.036 (0.575)</td>\n      <td>0.024 (0.090)</td>\n    </tr>\n    <tr>\n      <td>Phasing</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Number of Se sites</td>\n      <td></td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Figure of merit</td>\n      <td></td>\n      <td>0.64</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.170/0.214</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Number of atoms</td>\n      <td>3457</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Wilson B factor (\u00c5)</td>\n      <td>33.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>RMS deviations Bonds (\u00c5) Angles (\u00b0)</td>\n      <td>0.007 1.386</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot % favored % allowed % outliers</td>\n      <td>97.91 1.83 0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PDB ID</td>\n      <td>6N67</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Values in parentheses refer to the highest resolution shell.The Rfree set consists of 5% randomly chosen data excluded from refinement._\n\nLIG\u2019s active site is buried in the center of a positively charged cleft that spans LIG-N and is extended by LIG-C (Figure 3B). The adenosine nucleotide binding pocket is contained in LIG-N. In our structure, N\u03b6 of Lys148 in the highly conserved nucleotide binding motif I [Kx(D/H/N)G] (Figure 1\u2014figure supplement 1), which is the site of covalent AMP attachment, is more than 4 \u00c5 away from the \u03b1-phosphonate (Figure 3C), suggestive of conformational rearrangements necessary for the formation of the Trl1-(lysyl-N)-AMP intermediate. Further analysis of the nucleotide binding site identified the residues interacting with AMPcPP. Thr146, Leu147, Glu149, Arg305 and Lys325 form contacts with the adenine base via hydrogen bonding, and His241 via \u03c0-stacking. The adenosine nucleoside base of AMPcPP is in syn conformation. Arg99 functions as hydrogen bond donor with the 3\u2019 oxygen of the ribose ring and together with Lys169 forms salt-bridges to the \u03b3-phosphate (Figure 3C).\n\nTwo conserved residues, Arg334 and Arg337, within an \u03b1-helix (\u03b111) of the LIG-C subdomain coordinate a single well-ordered sulfate ion via salt bridges near the active site pocket. In addition, His227 is within distance to form a third salt bridge, and Asn150 forms a hydrogen bond with the sulfate ion (Figure 3D). Notably, Arg337 and His227 have been previously identified as essential residues by alanine scanning mutagenesis (Wang and Shuman, 2005). We surmise that the sulfate ion represents a surrogate for one of the phosphate groups of Trl1\u2019s RNA substrate.\n\n### The UPR-disruptive trl1-H148Y mutant possesses reduced ligation activity\n\nBased on the strong homology of S. cerevisiae and C. thermophilum Trl1 (Figure 1\u2014figure supplement 1), we found all residues previously identified to be essential for the RNA ligase activity of scTrl1 conserved between both species. When we mapped these residues on the structure of ctTrl1-LIG (Figure 4A), we found that they all cluster around the active site. In addition, these residues are all surface exposed, which points to their importance to binding and correct positioning of RNA substrates. Interestingly, His148 was also identified as an essential residue as its change to Ala, Asn, or Gln scored as lethal in vivo (Wang and Shuman, 2005). By contrast, cells bearing the sc-trl1-H148Y allele were viable and shown previously to block UPR-induced nonconventional mRNA splicing (Sidrauski et al., 1996). This conserved histidine (His182 in ctTrl1) is surface-exposed and located on the periphery of the active-site groove in the vicinity of other essential residues (Figure 4A, colored red). Since the positioning of His182 suggests its participation in substrate binding, we performed in vitro ligation assays with recombinant, purified wild-type (WT) and scTrl1-LIG-H148Y. As substrate we used Ire1-cleaved HAC1U-508 RNA whose ends were enzymatically \u2018healed\u2019 (modified) to yield an appropriate substrate for Trl1-LIG (see Materials and methods for details). Equivalent concentrations of the WT enzyme yielded more spliced (i.e. ligated) product of the HAC1U-508 RNA substrate compared to scTrl1-LIG-H148Y (Figure 4B). These results indicate that scTrl1-H148Y is catalytically impaired towards a HAC1-derived RNA substrate but not inactive. To test if reduced substrate affinities cause the inhibiting effect of the H148Y mutation on RNA ligation, we determined the dissociation constants (KD) of scTrl1-LIG-WT and scTrl1-LIG-H148Y towards HAC1-derived 5\u2019 and 3\u2019 exon RNA\u00a0oligonucleotides using fluorescence titration experiments. Despite the reduced ligation efficiency of the H148Y mutant, we only observed a small impact on binding affinity towards the RNA substrates (Figure 4\u2014figure supplement 1). To obtain a quantitative comparison of the differences in ligation kinetics, we tested both enzymes in an RNA oligonucleotide ligation assay. To this end, we monitored ligation of a fluorescein (FAM)-labeled HAC1-derived 5\u2019 exon RNA oligonucleotide (last 10 nucleotides before the splice site; enzymatically modified 2\u2019 phosphate/3\u2019 OH end) to an unlabeled 3\u2019 exon RNA oligonucleotide (first 20 nucleotides after the splice site; harboring a 5\u2019 phosphate). The isolated ligase domain (scTrl1-LIG-WT or -H148Y) was pre-incubated with the 3\u2019 exon fragment to improve the reaction efficiency. The pre-formed LIG/3\u2019 exon complex was used in excess over the FAM-labeled 5\u2019 exon fragment and the time-course of ligation was analyzed by denaturing urea-PAGE (Figure 4C). The results were fitted to a first-order model (Figure 4D) and revealed a 2.2-fold longer half-life for the H148Y mutant (t1/2 = 9.2 min) compared to WT ligase (t1/2 = 4.1 min). These kinetic data confirmed the impeding effect of the His-to-Tyr mutation on HAC1 exon-exon ligation. Interestingly, the mutant ligase did not only display slower ligation kinetics but also plateaued at a lower amount of ligation product (8%) compared to wild-type enzyme (50%).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig4-v1.jpg)\n\n**Figure 4.:** (A) Functionally important residues of Trl1-LIG. The structure of ctTrl1-LIG is depicted as surface model, AMPcPP and the sulfate ion are shown as sticks. The active site Lys is depicted in green, His182 (equivalent to His148 in S. cerevisiae) in red and residues that have been previously identified as essential by mutagenesis in pink (Wang and Shuman, 2005). (B) In vitro splicing of a HAC1-derrived RNA substrate was analyzed by denaturing urea-PAGE. The input RNA (lane 1) was first cleaved by scIre1 yielding three dominant bands for the separated exons and the intron (lane 2). Ligation efficiency was compared by titrating purified scTrl1-LIG-WT (lanes 3\u20136) or scTrl1-LIG-H148Y (lanes 7\u201310) to the splicing reaction. Full-length ctTrl1 was used as positive control (lane 11). An additional ligation product is marked with an asterisk. RNase H digestion identified the band as circularized HAC1 intron RNA (see Figure 2\u2014figure supplement 1). (C) Time-course denaturing urea-PAGE of RNA oligonucleotide ligation by WT or H148Y mutant scTrl1-LIG. The 5\u2019 fluorescein (FAM)-labeled 10 nt HAC1 5\u2019 exon oligonucleotide (depicted in orange, lower band) and its ligation product (upper band) with a 20 nt HAC1 3\u2019 exon oligonucleotide (depicted in gray) was monitored using fluorescence detection. A representative gel out of three replicates is shown. (D) Quantification of the RNA ligation assay in C. The relative amounts of ligated product in the presence of scTrl1-LIG-WT (black squares) or scTrl1-LIG-H148Y (red circles) were fitted to a first-order model to determine the depicted half-lives. Values represent mean and standard deviation of technical replicates (n\u00a0=\u00a03).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Cy5-labeled RNA oligonucleotides derived from the HAC1 sequences of the 5\u2019 and 3\u2019 exon splice sites were incubated with a dilution series of scTrl1-LIG-WT or -H148Y. The concentration-dependent changes in Cy5 fluorescence were fitted to a Hill model of binding. The calculated apparent dissociation constants (KD) are depicted next to the respective ligase/RNA combination.\n\n### Trl1 competes with RNA decay pathways during HAC1 mRNA splicing\n\nTo explain how the reduced ligase activity of Trl1-H148Y would impair HAC1 mRNA splicing so severely in cells as to entirely block UPR signaling, we surmised that, in the presence of RNA decay machinery in vivo, the balance between exon ligation and RNA decay might be tipped towards decay. To test this notion directly, we expressed Trl1-H148Y from the strong constitutive alcohol dehydrogenase 1 (ADH1) promoter. Both scTrl1-H148Y and ctTrl1-H182Y allowed growth on Tm-containing medium, as did expression of the corresponding LIG only construct (Figure 5A, compare sector 1 to 2 and 4, and sector 1 to 3 and 5, respectively). The suppression of the mutant phenotype emphasizes that the His148-to-Tyr mutation does not fully inhibit Trl1-LIG functionality and that it is indeed the reduced enzymatic activity of the LIG domain only that becomes limiting, causing the UPR-deficient phenotype of trl1-H148Y cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig5-v1.jpg)\n\n**Figure 5.:** (A) Overexpression of various Trl1 constructs rescued the growth phenotype of trl1-H148Y. The constructs from S. cerevisiae harbored the H148Y mutation of the trl1-H148Y allele, whereas those from C. thermophilum harbored the equivalent H182Y mutation. Both the full-length proteins and the isolated ligase domains restored growth of the UPR mutant strain when streaked on tunicamycin-containing YPD plates. (B) Serial five-fold dilutions of wild-type and trl1-H148Y cells with wild-type or abrogated (ski2\u0394 or xrn1\u0394) RNA decay pathways were spotted on YPD plates without (-Tm) or with (+Tm) 0.1 \u03bcg/ml tunicamycin and incubated at 30\u00b0C for 2 days. (C) Model of HAC1 mRNA splicing and the impact of RNA decay pathways on degradation of cleaved HAC1 exons. Ire1 cleaves unspliced HAC1 mRNA (HAC1U) at the non-conventional splice sites upon ER stress. In wild-type yeast cells (TRL1), exon-exon ligation by Trl1 is the predominant reaction yielding spliced HAC1 mRNA (HAC1S). In the context of a kinetically compromised tRNA ligase (trl1-H148Y), the cleaved HAC1 exons are degraded by exonucleolytic RNA decay pathways. The capped (m7G) 5\u2019 exon is susceptible to degradation in 3\u2019-to-5\u2019 direction by the RNA exosome (exo)/Ski complex (Ski); the 3\u2019 exon is degraded from its 5\u2019 end by Xrn1. (D) RT-PCR analysis of HAC1 mRNA splicing in the same strains as in B without and with tunicamycin (Tm). The top panel shows priming outside the exon-intron junctions to distinguish unspliced (U) from spliced (S) HAC1 mRNA. The relative amount of HAC1S (in %) is indicated below each lane. Both middle panels show the results for priming of the 5\u2019 exon. 18S rRNA was used as a control (bottom panel). The method of cDNA production is indicated on the right of each panel.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The indicated strains (key in the left) were tested for growth on YPD plates without (left plate) and with (right plate) tunicamycin (Tm).\n\nSecond, we tested whether unligated, Ire1-cleaved fragments of the HAC1 mRNA are substrates for RNA decay pathways using yeast growth assays (Figure 5B). While the capped 5\u2019 exon represents a possible substrate for 3\u2019-to-5\u2019 exonucleases, the 3\u2019 exon, which still has a poly(A) tail, hence, would likely be degraded in the 5\u2019-to-3\u2019 direction (Figure 5C). The two major conserved exonucleolytic RNA decay enzymes are Xrn1 (5\u2019-to-3\u2019) and the multi-protein RNA exosome complex (3\u2019-to-5\u2019). Since deletion of both pathways is synthetically lethal in yeast, we tested their contribution individually by deletion of XRN1 and SKI2 (encoding for an RNA helicase in the exosome-assisting Ski complex). Indeed, individual deletion of either XRN1 or SKI2 rescued growth of trl1-H148Y cells upon ER stress (Figure 5B). While growth of ski2\u0394 cells was indistinguishable from that of WT cells, xrn1\u0394 cells exhibited a reduced colony size, which might be explained by the annotated slow growth phenotype of XRN1 deletion being exacerbated in the presence of ER stress. To ensure that the observed rescue indeed resulted from restored UPR signaling, we generated HAC1 deletions in the respective strains and tested their growth. Neither the xrn1\u0394 hac1\u0394 nor the ski2\u0394 hac1\u0394 strain were viable in the presence of ER stress (Figure 5\u2014figure supplement 1). The rescue by deletion of the major cytosolic RNA degradation pathway in either the 5\u2019-to-3\u2019 or the 3\u2019-to-5\u2019 direction substantiates that non-conventional splicing and RNA decay are competing outcomes after Ire1 cleavage of HAC1 mRNA.\n\n### Deletion of XRN1 and SKI2 rescues trl1-H148Y mutant cells by different mechanisms\n\nAs mentioned above, the cleaved HAC1 exons should only be susceptible from one end to the attack by exonucleases (Figure 5C); yet, deletion of RNA decay in only one direction was sufficient to allow a HAC1-dependent rescue of the trl-H148Y phenotype. To understand the mechanism of rescue, we used reverse transcription (RT-)PCR to monitor HAC1 mRNA splicing in these cells. To this end, we used oligonucleotide primers in both exons flanking the intron to obtain differently sized amplification products for unspliced and spliced HAC1 mRNA based on the presence or absence of the 252 nt intron. As expected, HAC1 mRNA was spliced upon Tm-induced ER stress in the WT strain and not affected by deletion of XRN1 or SKI2 (Figure 5D, lanes 1\u20136). In agreement with previous results, upon ER stress we detected an overall reduction of unspliced HAC1 mRNA and no HAC1 mRNA splicing in trl1-H148Y cells (Figure 5D, lanes 7 and 8). Deletion of XRN1 in trl1-H148Y cells restored splicing, albeit not to the same degree as in the WT strain (Figure 5D, lanes 11 and 12). We surmise that stabilization of the severed HAC1 3\u2019 exon in the absence of the major 5\u2019-to-3\u2019 exonuclease Xrn1 allows enzymatically impaired Trl1-H148Y to catch up and ligate the HAC1 exons to restore the UPR.\n\nTo our surprise, despite the complete phenotypic rescue shown above (Figure 5B), we did not detect spliced HAC1 mRNA in ski2\u0394 trl1-H148Y cells upon ER stress (Figure 5D, lanes 9 and 10), but rather a reduction of unspliced HAC1 mRNA, reminiscent of the parental trl1-H148Y mutant strain. We confirmed this result using RT-PCR to amplify the 5\u2019 exon only (Figure 5D, row 2, compare lanes 8 and 10). Both experiments did not account for RNA lacking a poly(A) tail since we used oligo(dT) primers to generate the cDNA templates. Interestingly, when we performed the same RT-PCR on the 5\u2019 exon with cDNA templates from the entire cellular RNA (using random hexamers for priming), we now observed an increase in the amount of the HAC1 5\u2019 exon upon SKI2 deletion, when compared to the parental trl1-H148Y strain (Figure 5D, row 3, compare lanes 8 and 10). Taken together, the RT-PCR analyses suggest that deletion of either XRN1 or SKI2 rescued the UPR-deficiency of the trl1-H148Y allele by different mechanisms: The genetic ablation of the major 5\u2019-to-3\u2019 exonuclease Xrn1 restored HAC1 mRNA splicing in the UPR-deficient yeast cells. By contrast, as we did not detect spliced HAC1 mRNA in ski2\u0394 trl1-H148Y cells, abrogation of cytosolic RNA exosome by disruption of the Ski complex must have suppressed ER stress sensitivity solely via stabilization of the severed 5\u2019 exon.\n\n### Rescue of stalled ribosomes initiates the UPR from the HAC1 5\u2019 exon fragment\n\nPrevious studies showed that a truncated form of Hac1 produced from an mRNA bearing a stop codon immediately after the 5\u2019 exon and hence lacking the entire C-terminal portion encoded by the 3\u2019 exon (Hac1trunc) is a fundamentally still functional transcription factor that can induce the UPR (Cox and Walter, 1996; Di Santo et al., 2016). Since the stabilized, cleaved 5\u2019 exon in the ski2\u0394 trl1-H148Y strain reported here does not contain a stop codon, it should be subject to co-translational mRNA surveillance by no-go decay (NGD). This ribosome recycling pathway hinges on the splitting of ribosomal subunits by the non-canonical release factors Dom34 (Pelota in mammals) and Hbs1. We generated DOM34 deletion strains to test for the possible involvement of NGD in translation of the severed HAC1 5\u2019 exon. Growth analysis of these strains showed that deletion of DOM34 re-sensitized ski2\u0394 trl1-H148Y cells to ER stress (Figure 6A). Thus, rescue of trl1-H148Y by depletion of Ski2 (i.e. cytosolic RNA exosome activity) is dependent on successful ribosome rescue at the 5\u2019 non-conventional splice site of the cleaved HAC1 mRNA.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44199/elife-44199-fig6-v1.jpg)\n\n**Figure 6.:** (A) Evaluating the role of ribosome recycling on the ski2\u0394-dependent growth rescue of trl1-H148Y cells under ER stress. Serial five-fold dilutions of trl1-H148Y cells with the indicated deletions of SKI2 and/or DOM34 were spotted on YPD plates without (-Tm) or with (+Tm) 0.1 \u03bcg/ml tunicamycin and incubated at 30\u00b0C for 2 days. (B) Lysates of the indicated strains were prepared and immunoblotted for 3xHA-Hac1p and GAPDH as loading control. Full-length Hac1p is indicated by a closed arrowhead, truncated Hac1p by an open arrowhead. An even shorter minor third band is marked with an asterisk. The high molecular weight smear/banding pattern is indicated as HMW-Hac1p.\n\nTo further corroborate the findings from the growth and HAC1 mRNA RT-PCR assays, we analyzed Hac1 levels by immunoblotting of extracts from cells expressing epitope tagged 3x-HA-Hac1. We confirmed the production of Hac1 upon ER stress in WT cells and the lack of its expression in trl1-H148Y cells (Figure 6B, lanes 1\u20132 and 9\u201310). Two distinct mechanisms prevent the accumulation of translation product from unspliced HAC1 mRNA. A long-range base pairing interaction between the HAC1U intron and its 5\u2019 untranslated region (UTR) represses Hac1 protein production (R\u00fcegsegger et al., 2001) by inhibiting translation initiation (Sathe et al., 2015). In addition, any translation products from the unspliced HAC1 mRNA are efficiently degraded due to an in-frame degron encoded in the intron (Di Santo et al., 2016). As expected from the results shown above, upon ER stress induction we detected full-length Hac1 in xrn1\u0394 trl1-H148Y cells (Figure 6B, lane 12). The expression levels were lower than in WT cells, in accordance with the reduced amount of spliced HAC1 mRNA produced in this strain (Figure 5D, compare lane 2 with lane 12). By contrast, while we detected no Hac1 in ski2\u0394 trl1-H148Y cells exposed to ER stress, we saw instead a faster migrating band (Figure 6B, lane 14), consistent with the expression of a C-terminally truncated form of Hac1 in these cells. In the same strain, we also detected a series of higher molecular mass smeared out bands, presumably a banding pattern resulting from ubiquitination. Interestingly, deletion of SKI2 in the wild-type strain also led to an accumulation of truncated Hac1 and higher molecular mass laddering, albeit to a lesser extent than in the respective trl1-H148Y strain. This result indicated that RNA decay and ribosome-associated mRNA surveillance, while their effects are exacerbated in the UPR mutant strain, play an important role in maintaining the fidelity of HAC1 mRNA splicing in wild-type cells.\n\n## Discussion\n\nSince the discovery of Trl1 as the tRNA ligase in S. cerevisiae by Abelson and co-workers, its atomic structure has remained elusive. Trl1 was later identified in a yeast genetic screen as an indispensable component of the UPR. The deficiency of the underlying H148Y mutation within Trl1-LIG to splice HAC1 mRNA in response to ER stress posed an intriguing mystery. The lack of high-resolution structural data rendered the quest for mechanistic understanding of this phenotype challenging and thus the problem remained unsolved for more than two decades. In the present study, we present the crystal structure of Trl1-LIG and provide new insights into the intricate kinetic competition between HAC1 mRNA splicing and mRNA decay.\n\nThe crystal structure of Trl1-LIG from C. thermophilum revealed a two-domain architecture comprised of a canonical adenylyltransferase domain and a C-terminal domain with a unique all-helical fold within the same enzyme superfamily. Previous structural and enzymatic data on T4Rnl1 showed that its C-terminal domain is not required to catalyze RNA ligation but confers specificity for tRNA repair (El Omari et al., 2006). Based on these observations and the structural similarities between the adenylyltransferase domains of ctTrl1-LIG and T4Rnl1, we suspect a similar function, that\u00a0is conferring substrate specificity, of the C-terminal domain of ctTrl1-LIG. It will be interesting to see if the requirement for a 2\u2019 phosphate on the 5\u2019 exon is mediated by this unique domain.\n\nA major motivation for our efforts towards an atomic structure of Trl1-LIG was to understand the separation of function resulting from the UPR mutant allele trl1-H148Y. The reduced ligation kinetics of Trl1-H148Y tip the balance almost completely in favor of degrading cleaved HAC1 mRNA. Both major exonucleolytic decay pathways of the cytosol, Xrn1 and the RNA exosome with the Ski complex, are part of this kinetic competition of RNA processing enzymes, albeit with different roles.\n\nOur data suggest that Xrn1 degrades the 3\u2019 exon fragment of cleaved HAC1 and plays an important role in allowing efficient translation from the spliced mRNA. The HAC1 intron in S. cerevisiae blocks translation initiation by forming complementary base pairing with the 5\u2019 UTR of the mRNA (R\u00fcegsegger et al., 2001; Sathe et al., 2015). Degradation of the intron after splicing was reported as required for lifting the translational block and the production of Hac1 (Mori et al., 2010). Deletion of XRN1, even in the presence of WT Trl1, resulted in lower levels of Hac1 upon ER stress. Interestingly, Xrn1 also degrades tRNA introns during tRNA splicing, a process with equivalent biochemistry as HAC1 mRNA splicing and shared functionality of Trl1 (Wu and Hopper, 2014). It should be noted that in all cases phosphorylation of the 5\u2019 end, as catalyzed by the central polynucleotide kinase part of Trl1, is required to render the RNA molecules substrates for Xrn1. In consequence, this kinase-mediated decay poses a permanent competition for Trl1-mediated ligation of any RNA substrate in the cell. Degradation of tRNA introns in yeast has been previously reported to be catalyzed by Trl1-KIN and Xrn1in an analogous two-step process (Wu and Hopper, 2014).\n\nWe showed that abrogation of the RNA exosome by deletion of SKI2 rescued ER stress sensitivity of trl1-H148Y. However, splicing was not restored in ski2\u0394; instead, stabilization of the isolated 5\u2019 exon fragment of HAC1 allowed UPR signaling. Previous studies have shown by adding a stop codon after the 5\u2019 exon of HAC1 that the 18 amino acids encoded in the 3\u2019 exon are dispensable for the transactivation function of Hac1p. In trl1-H148Y ski2\u0394, the truncated form of Hac1p would need to\u00a0be translated and released from an mRNA that lacks a stop codon. Indeed, we could demonstrate, that Hac1trunc is produced from the isolated HAC1 5\u2019 exon in sufficient amounts to initiate the transcriptional response. The nascent chain release in this context is dependent on ribosome splitting by the NGD pathway. This finding is in accordance with a previous study that identified HAC1 mRNA as the strongest Dom34 target by ribosome profiling (Guydosh and Green, 2014). A recent study demonstrated that RIDD in Schizosaccharomyces pombe also depends on NGD-mediated ribosome rescue to allow degradation of cleaved mRNAs by the Ski complex/exosome (Guydosh et al., 2017; Kimmig et al., 2012). Together, these findings establish a crucial role of NGD in both functional outputs of the Ire1 branch of the UPR. Interestingly, production of Hac1trunc coincides with a high-molecular weight laddering that we interpret as ubiquitination of the truncated form. We surmise that the HAC1 mRNA is an endogenous substrate of the recently characterized ribosome quality control (RQC) complex (Brandman et al., 2012; Shen et al., 2015).\n\nThe UPR is of crucial importance for cellular homeostasis. In yeast, Hac1 initiates a major transcriptional response that re-shapes the entire ER and upregulates hundreds of target genes comprising\u00a0~5% of the genome (Travers et al., 2000). Thus, tight regulation of the response is of great importance for cell physiology. Our data show, that deletion of SKI2 leads to the accumulation of Hac1trunc \u2013 even in the context of WT Trl1. It is very likely that single cleavage by Ire1 occurs frequently and that RNA decay pathways assist in degrading these HAC1 mRNA fragments to prevent premature UPR signaling. We conclude that tight regulation of the UPR in yeast is achieved by the interplay of several control mechanisms to which this study adds RNA decay and surveillance by mRNA quality control factors.\n\nTrl1 homologs are present in all human fungal pathogens. They are essential enzymes for them due to their role in tRNA splicing. They also represent promising targets for antifungal drug discovery because their structure and mechanism are distinct from the RTCB-type tRNA ligases in metazoans (as well as archaea and many bacteria). The absence of human homologs of Trl1-LIG could therefore be explored as a promising new drug target in antifungal therapy, whose development has largely stalled in recent years. Together with the recently published structure of Candida albicans Trl1 kinase domain Trl1-KIN (Remus et al., 2017), our study presents new opportunities for inhibitor screens guided by atomic-resolution Trl1 structures.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Chaetomium thermophilum)</td>\n      <td>TRL1</td>\n      <td>Chaetomium thermophilum genome resource</td>\n      <td>Ct:CTHT_0034810</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>TRL1</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000003623</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>IRE1</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000001121</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>HAC1</td>\n      <td>Saccharomyces Genome Database</td>\n      <td>SGD:S000001863</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-HA (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>Sigma:H3663; RRID:AB_262051</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GAPDH (rabbit polyclonal)</td>\n      <td>abcam</td>\n      <td>abcam:ab9485; RRID:AB_307275</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-mouse (goat polyclonal, HRP conjugate)</td>\n      <td>Promega</td>\n      <td>Promega:W4021; RRID:AB_430834</td>\n      <td>(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-rabbit (rabbit polyclonal, HRP conjugate)</td>\n      <td>Promega</td>\n      <td>Promega:W4011; RRID:AB_430833</td>\n      <td>(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>HAC1U-508-pBSK-</td>\n      <td>PMID:9323131</td>\n      <td>lab archive:pPW0386; paper:pCF187</td>\n      <td>HAC1 in vitro transcript (508 nucleotides)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cy5-5' exon HAC1 RNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019-Cy5-CGUAAUCCAG-3\u2019-PO4</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cy5-3' exon HAC1 RNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019-PO4-AAGCGCAGUC-Cy5</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>FAM-5' exon HAC1 RNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019-FAM-CGUAAUCCAG-3\u2019-PO4</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>3' exon HAC1 RNA oligonucleotide</td>\n      <td>IDT</td>\n      <td></td>\n      <td>5\u2019-PO4-AAGCGCAGUCAGGUUUGAAU-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>oligo a for RNase H assay</td>\n      <td>IDT</td>\n      <td></td>\n      <td>TAATCACGGCGGACAGTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>oligo b for RNase H assay</td>\n      <td>IDT</td>\n      <td></td>\n      <td>TTGAAGGTACTTTAACCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>oligo-(dT)12-18</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:18418012</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>random hexamers</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:N8080127</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>ctTrl1 [full length]</td>\n      <td>This paper</td>\n      <td></td>\n      <td>purified from E. coli BL21-RIL cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>ctTrl1-LIG</td>\n      <td>This paper</td>\n      <td></td>\n      <td>purified from E. coli BL21-RIL cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>scTrl1-LIG-WT</td>\n      <td>This paper</td>\n      <td></td>\n      <td>purified from E. coli BL21-RIL cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>scTrl1-LIG-H148Y</td>\n      <td>This paper</td>\n      <td></td>\n      <td>purified from E. coli BL21-RIL cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>scTrl1-CPD</td>\n      <td>This paper</td>\n      <td></td>\n      <td>purified from E. coli BL21-RIL cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>scIre1-KR32</td>\n      <td>This paper</td>\n      <td></td>\n      <td>purified from E. coli BL21-RIL cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RtcA</td>\n      <td>This paper</td>\n      <td></td>\n      <td>purified from E. coli BL21-RIL cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>His10-HRV-3C protease</td>\n      <td>This paper</td>\n      <td></td>\n      <td>purified from E. coli BL21-RIL cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>T4 polynucleotide kinase (3\u2019 phosphatase minus)</td>\n      <td>New England BioLabs</td>\n      <td>New England BioLabs:M0236S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Proteinase K</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:25530049</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RNAse H</td>\n      <td>New England BioLabs</td>\n      <td>New England BioLabs:M0297S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SuperScript II reverse transcriptase</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:18064014</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>AMPcPP</td>\n      <td>Sigma</td>\n      <td>Sigma:M6517</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4\u03bc8C</td>\n      <td>Matrix Scientific</td>\n      <td>Matrix Scientific:037985; CAS:14003-96-4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tunicamycin</td>\n      <td>Sigma</td>\n      <td>Sigma:T7765</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SYBR Gold nucleic acid stain</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:S11494</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning of expression constructs\n\nFull-length ctTrl1 (NCBI Entrez Gene ID: 18257519, CTHT_0034810 tRNA ligase-like protein) was cloned from C. thermophilum cDNA into pET15b (EMD Millipore; pPW3206) as described previously (Peschek et al., 2015). The expression construct for ctTrl1-LIG (residues 1\u2013414; pPW3207) was generated by PCR-based introduction of a stop codon (oligo: 5\u2019-GCTAGCGTGTAGCGTGACATCATTC-3\u2019) into the pET15b vector using site-directed mutagenesis. The expression construct for ctTrl1-CPD (residues 576\u2013846; pPW3208) was generated by cloning the target sequence into pET15b using PCR amplification, followed by restriction digestion and DNA ligation. Similarly, the expression constructs for WT (pPW3209) and H148Y (pPW3210) scTrl1-LIG (residues 1\u2013388) were cloned into pET47b using the restriction enzymes SmaI and BamHI. The expression construct for E. coli RtcA (pPW3420) was generated using the In-Fusion HD Cloning Plus kit (Takara Bio). For the In-Fusion reaction, pET28a (EMD Millipore) was linearized by NdeI (New England BioLabs) and the RtcA insert was amplified from E. coli DNA by PCR. All described constructs were confirmed by DNA sequencing. See Supplementary file 1 for a complete list of plasmids used in this study.\n\n### Protein expression and purification\n\nAll recombinant proteins in this study were expressed in E. coli BL21-CodonPlus (DE3)-RIL (Agilent Technologies). The cells were grown in Luria broth medium including the appropriate antibiotic at 37\u00b0C, expression was induced by 1 mM isopropyl-1-thio-\u03b2-D-galactopyranoside (IPTG), cells were harvested by centrifugation and lysed using an EmulsiFlex-C3 (Avestin) high-pressure homogenizer (exceptions to the above as noted).\n\nRecombinant, His6-tagged ctTrl1 was purified by Ni2+ affinity chromatography using a HisTrap FF column (GE Healthcare Life Sciences), followed by size-exclusion chromatography using a HiLoad 16/60 Superdex200 pg column (GE Healthcare Life Sciences) in 20 mM Tris/HCl pH 7.1, 300 mM NaCl, and 1 mM MgCl2 (Peschek et al., 2015).\n\nSelenomethionine (SeMet)-substituted His6-tagged ctTrl1-LIG (residues 1\u2013414) was expressed using feedback inhibition of methionine biosynthesis by adding selected amino acids to the E. coli culture prior to induction. In detail, cells were grown in standard M9 minimal medium supplemented with thiamine (0.5% w/v) and trace elements. When the OD600 reached 0.6, the temperature was lowered to 28\u00b0C and the feedback-inhibition amino acids mix (1 g/l of lysine, threonine and phenylalanine, 0.5 g/l leucine, isoleucine and valine, and 0.5 g/l L(+)-SeMet) was added and, after 30 min, the cells were induced with IPTG. After 16 hr expression, cells were harvested and disrupted in lysis buffer (40 mM NaH2PO4/Na2HPO4 pH 7.4, 1.2 M NaCl, 25 mM imidazole, 5 mM dithiothreitol [DTT]) plus protease inhibitor (cOmplete EDTA-free protease inhibitor cocktail, Roche). The cleared supernatant was applied to a Ni2+ affinity chromatography column (HisTrap FF 5 ml, GE Healthcare Life Sciences) and ctTrl1-LIG eluted with a 25\u2013500 mM imidazole gradient (same as lysis buffer). LIG-containing fractions were dialysed against AEX buffer (20 mM HEPES/NaOH pH 8, 10 mM NaCl, 5 mM DTT) and further purified by anion exchange chromatography (HiTrap Q HP 5 ml, GE Healthcare Life Sciences) using a 10\u20131000 mM NaCl gradient in AEX buffer. Finally, the protein was applied to size-exclusion chromatography using a HiLoad 16/60 Superdex200 pg column (GE Healthcare Life Sciences) in SEC buffer (10 mM HEPES/NaOH pH 7.5, 100 mM NaCl, 5 mM DTT), concentrated and flash frozen in N2 (l).\n\nHis6-tagged ctTrl1-CPD (residues 576\u2013846) was expressed at 30\u00b0C for 5 hr. Cells were harvested and disrupted in lysis buffer (50 mM Tris/HCl pH 7.5, 1 M NaCl, 20 mM imidazole, 2 mM DTT) plus protease inhibitor (cOmplete EDTA-free protease inhibitor cocktail, Roche). The cleared supernatant was applied to a Ni2+ affinity chromatography column (HisTrap FF 5 ml, GE Healthcare Life Sciences) and ctTrl1-CPD eluted with a 20\u2013500 mM imidazole gradient (same as lysis buffer). CPD-containing fractions were further purified by size-exclusion chromatography using a HiLoad 16/60 Superdex200 pg column (GE Healthcare Life Sciences) in SEC buffer (10 mM Tris/HCl pH 7.5, 100 mM NaCl, 20 mM imidazole, 1 mM tris(2-carboxyethyl)phosphine hydrochloride [TCEP]), concentrated and flash frozen in N2 (l).\n\nHis6-tagged scTrl1-LIG-WT and -H148Y (residues 1\u2013388) were expressed at 20\u00b0C for 16 hr. Cells were harvested and disrupted in lysis buffer (40 mM HEPES/NaOH pH 7.5, 1 M NaCl, 25 mM imidazole, 2 mM DTT, 5% glycerol) plus protease inhibitor (cOmplete EDTA-free protease inhibitor cocktail, Roche). The cleared supernatant was applied to a Ni2+ affinity chromatography column (HisTrap FF 5 ml, GE Healthcare Life Sciences) and scTrl1-LIG eluted with a 25\u2013500 mM imidazole gradient (same as lysis buffer). LIG-containing fractions were dialysed against 3C cleavage buffer (25 mM HEPES/NaOH pH 8, 75 mM NaCl, 2 mM DTT, 5% glycerol) followed by proteolytic removal of the His6-tag by incubation with recombinant His10-tagged human rhinovirus 3C (HRV3C) protease. To separate the cleaved target protein from the uncleaved fraction and HRV3C protease, another round of Ni2+ affinity chromatography was performed. The flow-through was dialysed against AEX buffer (25 mM HEPES/NaOH pH 8, 25 mM NaCl, 2 mM DTT, 5% glycerol) and further purified by anion exchange chromatography (HiTrap Q HP 5 ml, GE Healthcare Life Sciences) using a 25\u20131000 mM NaCl gradient in AEX buffer. Finally, the protein was applied to size-exclusion chromatography using a HiLoad 16/60 Superdex200 pg column (GE Healthcare Life Sciences) in SEC buffer (25 mM HEPES/NaOH pH 7.5, 150 mM NaCl, 1 mM TCEP, 5% glycerol), concentrated and flash frozen in N2 (l).\n\nThe cytosolic kinase/RNase portion of yeast Ire1 including 32 residues of the linker region (Ire1-KR32) was recombinantly expressed in E. coli as glutathione S-transferase (GST) fusion protein and purified as described previously (Korennykh et al., 2009).\n\nHis6-tagged E. coli RtcA was expressed at 37\u00b0C for 4 hr. Cells were harvested and disrupted in lysis buffer (50 mM Tris/HCl pH 7.5, 300 mM NaCl, 25 mM imidazole, 2 mM DTT, 10% glycerol) plus protease inhibitor (cOmplete EDTA-free protease inhibitor cocktail, Roche). The cleared supernatant was applied to a Ni2+ affinity chromatography column (HisTrap FF 5 ml, GE Healthcare Life Sciences) and RtcA eluted with a 20\u2013500 mM imidazole gradient (same as lysis buffer). Protein-containing fractions were diluted to 50 mM NaCl and further purified by anion exchange chromatography (HiTrap Q HP 5 ml, GE Healthcare Life Sciences) using a 50\u20131000 mM NaCl gradient. Finally, the protein was applied to size-exclusion chromatography using a HiLoad 16/60 Superdex75 pg column (GE Healthcare Life Sciences) in SEC buffer (20 mM Tris/HCl pH 7.5, 100 mM NaCl, 1 mM DTT, 5% glycerol), concentrated and flash frozen in N2 (l).\n\n### In vitro splicing assays\n\nFor endonucleolytic cleavage, in vitro transcribed, polyacrylamide gel electrophoresis (PAGE)-purified, refolded HAC1U-508 RNA (Gonzalez et al., 1999) was incubated at 20 ng/\u03bcl with Ire1KR32 at 1 \u03bcM in cleavage buffer (20 mM HEPES/NaOH pH 7.5, 70 mM NaCl, 2 mM Mg(OAc)2, 1 mM TCEP, and 5% glycerol). For splicing, ligation of the Ire1-cleaved HAC1U-508 RNA was initiated with 500 nM ctTrl1 (1 mM ATP, 1 mM GTP) or the indicated amounts of scTrl1-LIG. To allow ligation by Trl1-LIG, the ends of the cleaved RNA were first modified by 1 \u03bcM ctTrl1-CPD and 667 units/ml T4 polynucleotide kinase (3\u2019 phosphatase minus, New England BioLabs) plus 4 mM ATP. Stop solution (10 M urea, 0.1% SDS, 1 mM EDTA) was added at five-fold excess to stop the reactions. Samples were then denatured by heating at 80\u00b0C for 3 min and analyzed by 6% TBE\u2013urea gels (Thermo Fisher Scientific) stained with SYBR Gold nucleic acid stain (Thermo Fisher Scientific).\n\n### RNase H assay\n\nOligonucleotide-guided RNase H digestion was used to identify RNA products of HAC1 in vitro splicing. The assay was performed similarly as described previously (Mori et al., 2010). After completion of the ligation reaction, 250 pmol of antisense DNA oligonucleotides were added to a total volume of 7.5 \u03bcL. The oligonucleotides were designed to hybridize with the HAC1 intron (oligo a: TAATCACGGCGGACAGTA; oligo b: TTGAAGGTACTTTAACCG). Samples were heated to 75\u00b0C, incubated at 43\u00b0C for 10 min to allow hybridization, then slowly cooled to 37\u00b0C and incubated with 5 U (addition of 1 \u03bcL) of RNase H (5,000 U/ml; New England BioLabs) for 30 min. After proteinase K treatment, the samples were analyzed by PAGE as described in the previous section.\n\n### Fluorescence-based RNA ligation and binding assays\n\nAll HAC1-derived RNA oligonucleotides were purchased from Integrated DNA Technologies. The 5\u2019 exon and 3\u2019 exon RNA substrates were synthesized with 3\u2019 and 5\u2019 phosphate groups at their respective splice site ends. RNA ligation kinetics were measured using RNA oligonucleotides based on the exon sequences closest to the splice sites. We used a 10 nt long 5\u2019 exon fragment with a terminal fluorescein (FAM) fluorophore (5\u2019-FAM-CGUAAUCCAG-3\u2019-PO4) and a 20 nt long 3\u2019 exon fragment (5\u2019-PO4-AAGCGCAGUCAGGUUUGAAU-3\u2019). The 5\u2019exon fragment was modified by RtcA and ctTrl1-CPD in the presence of ATP to yield 2\u2019 phosphate/3\u2019 hydroxyl ends. Both RNA substrates were PAGE-purified prior to the assay. 250 nM scTrl1-LIG (WT or H148Y) were incubated with 500 nM of 3\u2019 exon oligonucleotide and 0.5 mM ATP in assay buffer (20 mM Tris/HCl pH 7.5, 150 mM NaCl, 10 mM MgCl2, 1 mM TCEP, 5% glycerol) for 10 min at 30\u00b0C. The ligation kinetics were initiated by addition of 50 nM FAM-labeled 5\u2019 exon fragment. Aliquots were taken at the indicated timepoints and mixed with a 3-fold excess of Stop solution. The ligation reaction was analyzed by 15% TBE\u2013urea gels (Thermo Fisher Scientific) and imaged for FAM fluorescence using a Typhoon 9400 Variable Mode Imager (GE Lifesciences). The relative intensity of the bands was determined by densitometry using ImageJ (Schindelin et al., 2012; Schneider et al., 2012). Kinetic data were fitted to a first-order model using Origin (Version 2019, OriginLab Corporation).\n\nAffinity measurements were performed using RNA oligonucleotides based on the HAC1 exons\u2019 most proximal 10 nucleotides to the splice site. The 5\u2019 exon and 3\u2019 exon RNA substrates were modified with Cy5 fluorophores at their distal termini (5\u2019 exon RNA: 5\u2019-Cy5-CGUAAUCCAG-3\u2019-PO4; 3\u2019 exon RNA: 5\u2019-PO4-AAGCGCAGUC-Cy5). The 5\u2019exon fragment was modified by RtcA and ctTrl1-CPD in the presence of ATP to yield 2\u2019 phosphate/3\u2019 hydroxyl ends. Both RNA substrates were PAGE-purified prior to the binding assay. Binding was measured by changes in fluorescence using a Monolith NT.115 (NanoTemper). The RNA substrate concentration was held constant at 10 nM and the concentration of scTrl1-LIG. RNA binding data were fitted to a Hill model using Origin (Version 2019, OriginLab Corporation).\n\n### Crystallization, data collection and structure determination\n\nCrystals of SeMet-ctTrl1-LIG were grown at 20\u00b0C by hanging drop vapor diffusion. Two volumes of SeMet-ctTrl1-LIG (12.5 mg/ml), 2 mM AMPcPP (Sigma, M6517) and 2 mM MgCl2 were mixed with one volume of reservoir solution containing 1.7 M ammonium sulfate, 200 mM NaCl, 100 mM HEPES (pH 7.3) and 5 mM DTT. Obtained crystals were harvested directly from the crystallization drops, cryoprotected by soaking in reservoir solution including 25% glycerol and frozen in liquid nitrogen. X-ray diffraction data were collected at the Advanced Photon Source beamline 23ID-D and processed using MOSFLM (Battye et al., 2011) and AIMLESS (Evans and Murshudov, 2013) as implemented in the CCP4 software suite (Winn et al., 2011).\n\nPhasing and initial model building were carried out using CRANK2 for automated structure solution (Skub\u00e1k and Pannu, 2013). The phases were obtained using single-wavelength anomalous dispersion (SAD) data from a single crystal with SHELX (Sheldrick, 2010). The initial model was built using BUCCANEER (Cowtan, 2006) and used to solve the structure from a second high-resolution dataset. Interactive model building was performed using COOT (Emsley et al., 2010) and the structure was refined with REFMAC5 (Murshudov et al., 2011) including TLS refinement. The model optimization and quality assessment was carried out with PDB-REDO (Joosten et al., 2014) and MOLPROBITY (Davis et al., 2004). All structure figures were generated using PyMOL (The PyMOL Molecular Graphics System, Version 2.0 Schr\u00f6dinger, LLC) and electrostatic surface potential calculations were performed using PDB2PQR (Dolinsky et al., 2004) and APBS (Baker et al., 2001). Ligand interactions were analyzed using the protein-ligand interaction profiler (PLIP) web service (Salentin et al., 2015). A composite omit map was generated in Phenix (Adams et al., 2010) to exclude model bias and to verify ligand density.\n\n### Yeast strains and growth conditions\n\nAll yeast strains in this study were based on S. cerevisiae W303 that was made TRP1 and ADE2 by repairing the endogenous auxotrophy. All strains are listed in Supplementary file 2. Deletion of non-essential genes was performed in haploid cells, deletion of TRL1 was performed in diploid cells. Each deletion mutant was generated using a PCR-based homologous recombination method as described previously (Janke et al., 2004). Yeast transformations were performed by the standard LiOAc/single stranded carrier DNA/PEG method, cells were recovered on YPD medium and grown on the appropriate selection medium. Functional complementation of trl1\u0394 and trl1-H148Y strains was performed by transforming the strain of interest with different Trl1 constructs cloned into the p416ADH (ATCC 87376; pPW3211) yeast expression vector (pPW3212-3215; see Supplementary file 1 for a complete list of plasmids).\n\nFor growth tests under ER stress, 5-fold serial dilutions were spotted onto either standard YPD plates (-Tm) or YPD plates containing the indicated concentration of tunicamycin (Sigma, T7765) dissolved in DMSO (+Tm). All growth tests were performed as three biological replicates; representative images are shown in the respective figures.\n\nFor immunoblot analysis, endogenous HAC1 was N-terminally tagged with a 3x hemagglutinin (HA) tag (n-YPYDVPDYAGYPYDVPDYAGSYPYDVPDYA-c) in the strains of interest using the Delitto perfetto method (Storici et al., 2001).\n\n### RNA extraction and RT-PCR\n\nTotal RNA was prepared from yeast using phenol-chloroform extraction followed by ethanol precipitation. The extracted RNA was resolubilized in water, the quality was assessed by agarose gel electrophoresis and the concentration determined by absorbance spectroscopy. For RT-PCR, cDNA was generated using SuperScript II reverse transcriptase (Thermo Fisher Scientific) with oligo-(dT)12-18 or random hexamers primers (both Thermo Fisher Scientific) from 1 \u03bcg of total RNA. The cDNAs of interest were amplified from the reverse transcription reactions (1:100 dilution) with Phusion polymerase (Thermo Scientific) using the appropriate primer sets and optimal cycle numbers (see Supplementary file 3 for primer sequences and cycle numbers). RT-PCR reactions were analyzed by agarose gel electrophoresis.\n\n### Yeast protein extract preparation and immunoblotting\n\nExtraction of yeast proteins was performed as described elsewhere (Kushnirov, 2000). Proteins were separated by SDS-PAGE (any kD Criterion TGX stain-free gels, Bio-Rad) and transferred onto Protran 0.2 \u03bcm pore nitrocellulose membrane (Perkin Elmar). Blots were probed with the following antibodies diluted in TBS-T buffer containing 5% nonfat dry milk: mouse anti-HA (1:2,000; Sigma H3663), rabbit anti GAPDH (1:1,000; abcam ab9485), HRP conjugated goat anti-mouse IgG (1:10,000; Promega W4021), HRP conjugated goat anti-rabbit IgG (1:10,000; Promega W4011). Blots were developed using SuperSignal West Dura Extended Duration Substrate (Pierce, Life Technologies) and chemiluminescence was detected on a ChemiDoc XRS\u00a0+\u00a0imager (Bio-Rad).\n\n### Data availability\n\nStructural coordinates for the ctTrl1-LIG structure have been deposited in the Protein Data Bank under accession code 6N67.\n",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "2de5db33-7c5a-4a78-840f-dca9734de2e1",
+      "submission_id": "a1eefa9a-7f86-4116-ad47-95a854951485",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, McGill University Canada\n\nReviewers:\n- Javier Martinez, IMBA-Autrian Academy of Sciences Austria\n\n## Review text\n\nDOI: [10.7554/eLife.44199.022](https://doi.org/10.7554/eLife.44199.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"tRNA ligase structure reveals kinetic competition between non-conventional mRNA splicing and mRNA decay\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Nahum Sonenberg, the Reviewing Editor and Cynthia Wolberger as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Javier Martinez (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors studied the mechanism by which HAC1 pre-mRNA is spliced in the cytoplasm of yeast cells, which is triggered by UPR. To this end, the authors solved the crystal structure of the Saccharomyces cerevisiae Trl1 homolog from Chaetomium thermophilum. They exploited in particular the His-to-Tyr mutation at Trl1 position 148 (within the ligase domain), which abolishes UPR signaling but not splicing, gaining important insight into the HAC1 pre-mRNA splicing mechanism by demonstrating kinetic competition between non-conventional mRNA splicing and RNA degradation, which effects the outcome of Ire1-initiated mRNA processing. Thus, the mRNA decay and surveillance mechanisms interact to ensure fidelity of non-conventional mRNA splicing during the UPR.\n\nEssential revisions:\n\nBoth reviewers agree that the paper presents an interesting study, which would warrant publication in eLife if amended in response to the reviewers' critiques. The Reviewing Editor concurs with the reviewers' opinions. As you can see in the comments below both reviewers believe that the key results are shown in Figure 3, but they argue that some issues related to these results should be experimentally addressed.\n\n1) What is the basis of the reduction in splicing efficiency in the trl1-H148Y enzyme? Does the enzyme have a lower affinity for specific RNA fragments? An answer to this question might provide a link to the understanding of the enhanced sensitivity to Xrn1 or the exosome. This experiment could be readily done.\n\n2) What is the band marked with an asterisk in Figure 1D, lane 3?\n\n3) The results in Figure 4 should be quantified.\n\n4) Discussion: Where is it shown that Xrn1 degrades the 3' exon?\n",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aecf0941-19cb-4049-855b-2451337d11ad",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C1",
+      "claim": "Yeast tRNA ligase (Trl1) is an essential trifunctional enzyme that catalyzes exon-exon ligation during tRNA biogenesis and the non-conventional splicing of HAC1 mRNA during the unfolded protein response (UPR).",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast tRNA ligase (Trl1) is an essential trifunctional enzyme that catalyzes exon-exon ligation during tRNA biogenesis and the non-conventional splicing of HAC1 mRNA during the unfolded protein response (UPR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations throughout the manuscript to prior work establishing these functions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "2a3bd5b4-674c-479c-92f2-46da5910ebce",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C2",
+      "claim": "The crystal structure of Trl1 RNA ligase domain from Chaetomium thermophilum was solved at 1.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report the crystal structure of Trl1 RNA ligase domain from Chaetomium thermophilum at 1.9 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is stated in the abstract and confirmed in the data collection statistics table (Table 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "be939448-3bcc-45b8-8dda-18811101d659",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C3",
+      "claim": "Structure-based mutational analyses uncovered kinetic competition between RNA ligation and degradation during HAC1 mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure-based mutational analyses uncovered kinetic competition between RNA ligation and degradation during HAC1 mRNA splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that deletion of RNA decay pathways rescues the trl1-H148Y mutant phenotype (Figures 5 and 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "50c2d4bb-0771-4fd5-b456-b7c94e1f3583",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C4",
+      "claim": "Incompletely processed HAC1 mRNA is degraded by Xrn1 and the Ski/exosome complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Incompletely processed HAC1 mRNA is degraded by Xrn1 and the Ski/exosome complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by genetic experiments showing that deletion of XRN1 or SKI2 rescues the trl1-H148Y mutant (Figure 5B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "be5d26b6-c1cb-4742-ac83-758b863551fb",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C5",
+      "claim": "Cleaved HAC1 mRNA is an endogenous substrate for ribosome-associated quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "We establish cleaved HAC1 mRNA as endogenous substrate for ribosome-associated quality control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that deletion of DOM34 re-sensitizes ski2\u0394 trl1-H148Y cells to ER stress (Figure 6A) and by detection of ubiquitinated Hac1 truncated protein (Figure 6B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "ef052133-4443-4c93-a94f-4774c75336cd",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C6",
+      "claim": "Trl1 is a tripartite enzyme consisting of an N-terminal adenylyltransferase domain (ligase; LIG), a C-terminal cyclic phosphodiesterase domain (CPD) and a central polynucleotide kinase (KIN) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Trl1 is a tripartite enzyme (Figure 1A), consisting of an N-terminal adenylyltransferase domain (ligase; LIG), which belongs to the nucleotidyltransferase superfamily alongside DNA ligases and RNA capping enzymes, a C-terminal cyclic phosphodiesterase domain (CPD) and a central polynucleotide kinase (KIN) domain (Phizicky et al., 1986; Xu et al., 1990).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citations to prior work and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "74c9d3d7-38d0-4b6c-9965-f1338c8c2079",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C7",
+      "claim": "Trl1 substrates initially contain a 2',3' cyclic phosphate and a 5'-OH group at the RNA termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Trl1 substrates initially contain a 2',3' cyclic phosphate and a 5'-OH group at the RNA termini (Greer et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work by Greer et al., 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "c3655995-f51b-4b7f-88fb-107d64d87980",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C8",
+      "claim": "The CPD activity opens the 2',3' cyclic phosphate by hydrolysis to form a 3'-OH/2' phosphate terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the CPD activity opens the 2',3' cyclic phosphate by hydrolysis to form a 3'-OH/2' phosphate terminus",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in the text and illustrated in Figure 1B showing the mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "1136c089-fd73-49e6-9bc9-0d58698e1177",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C9",
+      "claim": "The KIN activity phosphorylates the 5'-OH in an NTP-dependent reaction, preferring GTP over ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "and, second, the KIN activity phosphorylates the 5'-OH in an NTP-dependent reaction \u2013 preferring GTP over ATP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text describing the ligation mechanism and shown in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "e0f0ea86-8f62-47f5-97eb-fd20639fde13",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C10",
+      "claim": "The LIG activity 'seals' the healed ends through ATP-dependent phosphodiester bond formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the LIG activity 'seals' the healed ends through ATP-dependent phosphodiester bond formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in the text and illustrated in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "b2c390b8-a3ca-466b-a8ad-7fd78ec4b8d9",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C11",
+      "claim": "The ligation reaction occurs in three nucleotidyl transfer steps: (1) Trl1-LIG reacts with ATP to form a covalent LIG-(lysyl-N)-AMP intermediate; (2) the bound AMP is transferred to the 5' phosphate end to form a 5'-to-5' RNA-adenylate; (3) Trl1-LIG catalyzes the attack by the 3'-OH on the RNA-adenylate to form a phosphodiester bond, releasing AMP.",
+      "claim_type": "EXPLICIT",
+      "source": "This final reaction occurs in three nucleotidyl transfer steps: (1) Trl1-LIG reacts with ATP to form a covalent LIG-(lysyl-N)-AMP intermediate; (2) the bound AMP is transferred to the 5' phosphate end to form a 5'-to-5' RNA-adenylate; (3) Trl1-LIG catalyzes the attack by the 3'-OH on the RNA-adenylate to form a phosphodiester bond, releasing AMP (Greer et al., 1983; Phizicky et al., 1986).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This mechanism is described with citations and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "0c593074-1651-44d4-80c3-22b919dd9f9e",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C12",
+      "claim": "The remaining 2' phosphate at the splice junction is removed by Tpt1, a 2' phosphotransferase that is essential for cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 2' phosphate at the splice junction is removed by an additional enzyme, Tpt1, which is a 2' phosphotransferase that, like Trl1, is also essential for cell viability (Banerjee et al., 2019; Culver et al., 1997; Culver et al., 1993).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citations to prior work and shown in Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "6eaa2c90-3c4d-4d84-ac88-3d1f291b9d48",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C13",
+      "claim": "Trl1 ligates tRNA halves after intron excision by the tRNA splicing endonuclease (SEN) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Trl1 ligates tRNA halves after intron excision by the tRNA splicing endonuclease (SEN) complex (Greer et al., 1983; Peebles et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "65e143f7-fb85-4734-987f-e6256e2a81d6",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C14",
+      "claim": "Trl1 is a key component of the UPR, a major intracellular stress signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is a key component of the UPR, a major intracellular stress signaling pathway (Sidrauski et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to the original discovery paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "89cd18ba-29a4-4a78-a3dc-825d401f523f",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C15",
+      "claim": "The UPR regulates the protein folding capacity of the endoplasmic reticulum (ER).",
+      "claim_type": "EXPLICIT",
+      "source": "All eukaryotic cells monitor and adjust the protein folding capacity of their endoplasmic reticulum (ER) through the UPR signaling network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about the UPR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "7903c5b2-4026-4447-a7e1-00ebe104c44e",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C16",
+      "claim": "Protein folding stress in the ER activates the cytosolic endonuclease domain of the transmembrane stress sensor Ire1.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein folding stress in the ER activates the cytosolic endonuclease domain of the transmembrane stress sensor Ire1 (Cox et al., 1993; Mori et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "4dfd5ca0-ef18-4380-b3f0-70f3f7bfca46",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C17",
+      "claim": "The activated RNase cleaves HAC1 mRNA in fungi or XBP1 mRNA in metazoans at the splice sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The activated RNase cleaves HAC1 mRNA in fungi or XBP1 mRNA in metazoans at the splice sites (Calfon et al., 2002; Cox and Walter, 1996; Yoshida et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "7a4aa25a-8846-4859-a2a2-daf3b41983e0",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C18",
+      "claim": "A conformational change within the RNA actively ejects the intron and coordinates the two exons.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, a conformational change within the RNA actively ejects the intron and coordinates the two exons (Gonzalez et al., 1999; Peschek et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d2d200a6-ef73-4f98-9a74-621a9d1399b6",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C19",
+      "claim": "The exons are ligated by Trl1 in fungi or the RTCB ligase complex in metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "which are ligated by Trl1 in fungi (Sidrauski et al., 1996) or the RTCB ligase complex in metazoans (Jurkin et al., 2014; Kosmaczewski et al., 2014; Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "0c048752-d41e-47f1-b1a5-d60777776de2",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C20",
+      "claim": "The spliced HAC1 and XBP1 mRNAs are translated to produce the active transcription factors Hac1 and XBP1 that drive expression of UPR target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The spliced HAC1 and XBP1 mRNAs are then translated to produce the active transcription factors Hac1 and XBP1 that drive expression of UPR target genes in yeast and metazoan cells, respectively (Cox and Walter, 1996; Mori et al., 1996; Nikawa et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "3357f3f9-4338-48cc-bf98-d834447329d2",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C21",
+      "claim": "A yeast genetic screen in Saccharomyces cerevisiae revealed a single His(148)Tyr point mutation within Trl1-LIG that abolished the UPR signaling in vivo yet did not impair tRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a yeast genetic screen in Saccharomyces cerevisiae (sc) revealed a single His(148)Tyr point mutation lying within Trl1-LIG that in vivo abolished the UPR signaling yet did not impair tRNA splicing. This mutant allele (henceforth referred to as trl1-H148Y, originally named rlg1-100) paved the way to discovery of Trl1 as the RNA ligase during Ire1-mediated splicing of HAC1 mRNA (Sidrauski et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to the original discovery paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "dfab443c-1de2-4dbb-8b37-23e1058da312",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C22",
+      "claim": "ctTrl1 has the same tripartite domain structure as scTrl1 with 39% overall sequence identity.",
+      "claim_type": "EXPLICIT",
+      "source": "ctTrl1 has the same tripartite domain structure as scTrl1 (Figure 1A) with 39% overall sequence identity (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by the sequence alignment shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "83e372fd-a37c-4e4a-880a-9bc52597c29c",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C23",
+      "claim": "Expression of ctTrl1 rescued S. cerevisiae trl1\u2206 cells from the lethal effects of the deletion, both under normal growth conditions as well as during ER stress induced by tunicamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, expression of ctTrl1 rescued S. cerevisiae trl1\u2206 cells from the lethal effects of the deletion, both under normal growth conditions as well as during ER stress induced by tunicamycin (Tm), an inhibitor of N-linked glycosylation (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the growth assay shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d713bf5b-7fdb-4340-ac08-85a07f8a1f13",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C24",
+      "claim": "ctTrl1 catalyzes in S. cerevisiae cells the ligation of both tRNA halves, thus sustaining normal growth, and HAC1 mRNA exons during the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, ctTrl1 catalyzes in S. cerevisiae cells the ligation of both tRNA halves, thus sustaining normal growth, and HAC1 mRNA exons during the UPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the complementation data shown in Figure 2A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "73cb4256-3ecd-492a-8224-22b61c77e2a0",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C25",
+      "claim": "Recombinantly expressed ctTrl1 efficiently ligated the exons of a HAC1-derived RNA substrate after its endonucleolytic cleavage by Ire1 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recombinantly expressed ctTrl1 efficiently ligated the exons of a HAC1-derived RNA substrate, HAC1U-508 ('U' for unspliced, that is intron containing), after its endonucleolytic cleavage by Ire1 completing the splicing reaction in vitro (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the in vitro splicing assay shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "4920f876-62b4-487e-8709-c2c7119caf13",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C26",
+      "claim": "The overall structure of ctTrl1-LIG delineates two subdomains: an N-terminal (LIG-N; aa 13\u2013326) and a C-terminal (LIG-C; aa 327\u2013407) subdomain.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structure delineates two subdomains: an N-terminal (LIG-N; aa 13\u2013326) and a C-terminal (LIG-C; aa 327\u2013407) subdomain (Figure 3A, colored blue and yellow, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "ef2a8843-0816-4131-ba6a-aa1977c575dc",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C27",
+      "claim": "LIG-N is composed of three central antiparallel \u03b2-sheets surrounded by seven \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "LIG-N is composed of three central antiparallel \u03b2-sheets surrounded by seven \u03b1-helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "67c605ac-84dd-4778-a0b1-abd1437c3318",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C28",
+      "claim": "The overall architecture of the LIG-N domain resembles the bacteriophage T4 RNA ligase (T4Rnl1) structure consistent with it carrying the adenylyltransferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall architecture of this domain resembles the bacteriophage T4 RNA ligase (T4Rnl1) structure consistent with it carrying the adenylyltransferase activity (El Omari et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior structural work on T4Rnl1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "077ce9d2-8742-4ee2-b13f-4ab65e14bfa5",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C29",
+      "claim": "LIG-C has an all-helical fold that is unrelated to all other structures in the PDB from the same superfamily based on structural comparison by Dali.",
+      "claim_type": "EXPLICIT",
+      "source": "LIG-C has an all-helical fold that is unrelated, based on structural comparison by Dali (Holm and Laakso, 2016), to all other structures in the PDB from the same superfamily, which besides ATP-dependent RNA ligases also includes DNA ligases and mRNA capping enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural comparison using the Dali server.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "3f0266cd-981f-41f3-8862-9d8df9237d49",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C30",
+      "claim": "LIG's active site is buried in the center of a positively charged cleft that spans LIG-N and is extended by LIG-C.",
+      "claim_type": "EXPLICIT",
+      "source": "LIG's active site is buried in the center of a positively charged cleft that spans LIG-N and is extended by LIG-C (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in the electrostatic surface potential map in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "34bc7048-b34c-42d6-b2e6-acfb778a8731",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C31",
+      "claim": "The adenosine nucleotide binding pocket is contained in LIG-N.",
+      "claim_type": "EXPLICIT",
+      "source": "The adenosine nucleotide binding pocket is contained in LIG-N.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "27853820-00cc-498b-aa23-c9c4115a6771",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C32",
+      "claim": "In the structure, N\u03b6 of Lys148 is more than 4 \u00c5 away from the \u03b1-phosphonate, suggestive of conformational rearrangements necessary for the formation of the Trl1-(lysyl-N)-AMP intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structure, N\u03b6 of Lys148 in the highly conserved nucleotide binding motif I [Kx(D/H/N)G] (Figure 1\u2014figure supplement 1), which is the site of covalent AMP attachment, is more than 4 \u00c5 away from the \u03b1-phosphonate (Figure 3C), suggestive of conformational rearrangements necessary for the formation of the Trl1-(lysyl-N)-AMP intermediate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of the crystal structure shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "86a45da7-a7d6-473f-a72f-97dafe87dbde",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C33",
+      "claim": "Thr146, Leu147, Glu149, Arg305 and Lys325 form contacts with the adenine base via hydrogen bonding, and His241 via \u03c0-stacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Thr146, Leu147, Glu149, Arg305 and Lys325 form contacts with the adenine base via hydrogen bonding, and His241 via \u03c0-stacking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of the crystal structure and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "76c479ad-89ac-4143-8f32-19ce4f7346dc",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C34",
+      "claim": "The adenosine nucleoside base of AMPcPP is in syn conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The adenosine nucleoside base of AMPcPP is in syn conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on analysis of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "f4340749-0da3-4238-beb4-6efd590063ca",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C35",
+      "claim": "Arg99 functions as hydrogen bond donor with the 3' oxygen of the ribose ring and together with Lys169 forms salt-bridges to the \u03b3-phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg99 functions as hydrogen bond donor with the 3' oxygen of the ribose ring and together with Lys169 forms salt-bridges to the \u03b3-phosphate (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of the crystal structure shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "4a599975-d6a2-41a1-ac9f-a08980c93905",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C36",
+      "claim": "Two conserved residues, Arg334 and Arg337, within an \u03b1-helix (\u03b111) of the LIG-C subdomain coordinate a single well-ordered sulfate ion via salt bridges near the active site pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Two conserved residues, Arg334 and Arg337, within an \u03b1-helix (\u03b111) of the LIG-C subdomain coordinate a single well-ordered sulfate ion via salt bridges near the active site pocket.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of the crystal structure and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "259c8672-e0c9-4b18-979d-d2c3f54c9de7",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C37",
+      "claim": "His227 is within distance to form a third salt bridge with the sulfate ion, and Asn150 forms a hydrogen bond with the sulfate ion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, His227 is within distance to form a third salt bridge, and Asn150 forms a hydrogen bond with the sulfate ion (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of the crystal structure shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "971a3003-619b-4473-8778-0d9691b9dfe9",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C38",
+      "claim": "Arg337 and His227 have been previously identified as essential residues by alanine scanning mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Arg337 and His227 have been previously identified as essential residues by alanine scanning mutagenesis (Wang and Shuman, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "0e91aa77-0d55-4d54-b991-a4cc8c6e4f8d",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C39",
+      "claim": "The sulfate ion represents a surrogate for one of the phosphate groups of Trl1's RNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "We surmise that the sulfate ion represents a surrogate for one of the phosphate groups of Trl1's RNA substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the position of the sulfate ion in the active site.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "2277dc33-1a50-4e71-9d25-562a765a668b",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C40",
+      "claim": "All residues previously identified to be essential for the RNA ligase activity of scTrl1 are conserved between S. cerevisiae and C. thermophilum Trl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the strong homology of S. cerevisiae and C. thermophilum Trl1 (Figure 1\u2014figure supplement 1), we found all residues previously identified to be essential for the RNA ligase activity of scTrl1 conserved between both species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on sequence alignment shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "e075d196-e4c6-41f6-8855-3f178c37eb69",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C41",
+      "claim": "All essential residues cluster around the active site and are surface exposed.",
+      "claim_type": "EXPLICIT",
+      "source": "When we mapped these residues on the structure of ctTrl1-LIG (Figure 4A), we found that they all cluster around the active site. In addition, these residues are all surface exposed, which points to their importance to binding and correct positioning of RNA substrates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on mapping residues onto the crystal structure shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "1b773e9e-3657-409f-b2da-508ed1183213",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C42",
+      "claim": "His148 was identified as an essential residue as its change to Ala, Asn, or Gln scored as lethal in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, His148 was also identified as an essential residue as its change to Ala, Asn, or Gln scored as lethal in vivo (Wang and Shuman, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "822cda30-0a00-49ae-854a-3dc10cccb8a2",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C43",
+      "claim": "Cells bearing the sc-trl1-H148Y allele were viable and shown previously to block UPR-induced nonconventional mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, cells bearing the sc-trl1-H148Y allele were viable and shown previously to block UPR-induced nonconventional mRNA splicing (Sidrauski et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "cc652011-bd02-4014-9abf-ad2e50e150bd",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C44",
+      "claim": "His182 in ctTrl1 (equivalent to His148 in scTrl1) is surface-exposed and located on the periphery of the active-site groove in the vicinity of other essential residues.",
+      "claim_type": "EXPLICIT",
+      "source": "This conserved histidine (His182 in ctTrl1) is surface-exposed and located on the periphery of the active-site groove in the vicinity of other essential residues (Figure 4A, colored red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis of the crystal structure shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "9fc5aa67-14e8-4d40-a1ea-b7198a7e3c83",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C45",
+      "claim": "Equivalent concentrations of the WT enzyme yielded more spliced product of the HAC1U-508 RNA substrate compared to scTrl1-LIG-H148Y.",
+      "claim_type": "EXPLICIT",
+      "source": "Equivalent concentrations of the WT enzyme yielded more spliced (i.e. ligated) product of the HAC1U-508 RNA substrate compared to scTrl1-LIG-H148Y (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the in vitro ligation assay shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "3bac3edc-8288-40b6-82ae-9894ad7ab3b4",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C46",
+      "claim": "scTrl1-H148Y is catalytically impaired towards a HAC1-derived RNA substrate but not inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that scTrl1-H148Y is catalytically impaired towards a HAC1-derived RNA substrate but not inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the in vitro ligation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "c8e2b1ff-b637-4e6f-a234-156ae0c2efe7",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C47",
+      "claim": "The H148Y mutation has only a small impact on binding affinity towards HAC1-derived 5' and 3' exon RNA oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the reduced ligation efficiency of the H148Y mutant, we only observed a small impact on binding affinity towards the RNA substrates (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on fluorescence titration experiments shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d0d1169c-dc52-4367-b6d7-fa59152982db",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C48",
+      "claim": "The H148Y mutant has a 2.2-fold longer half-life (t1/2 = 9.2 min) compared to WT ligase (t1/2 = 4.1 min) in RNA oligonucleotide ligation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The results were fitted to a first-order model (Figure 4D) and revealed a 2.2-fold longer half-life for the H148Y mutant (t1/2 = 9.2 min) compared to WT ligase (t1/2 = 4.1 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on kinetic analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "43b21726-4732-4747-a18c-b483ed044e0f",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C49",
+      "claim": "The mutant ligase plateaued at a lower amount of ligation product (8%) compared to wild-type enzyme (50%).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mutant ligase did not only display slower ligation kinetics but also plateaued at a lower amount of ligation product (8%) compared to wild-type enzyme (50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the kinetic data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "9a28ab99-42c1-4308-9596-b1f30d62f071",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C50",
+      "claim": "Expression of scTrl1-H148Y and ctTrl1-H182Y from the strong constitutive ADH1 promoter allowed growth on tunicamycin-containing medium.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this notion directly, we expressed Trl1-H148Y from the strong constitutive alcohol dehydrogenase 1 (ADH1) promoter. Both scTrl1-H148Y and ctTrl1-H182Y allowed growth on Tm-containing medium, as did expression of the corresponding LIG only construct (Figure 5A, compare sector 1 to 2 and 4, and sector 1 to 3 and 5, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the growth assay shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "b1d4ba2c-a336-4d0c-a8d3-21bf75140050",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C51",
+      "claim": "The suppression of the mutant phenotype by overexpression emphasizes that the His148-to-Tyr mutation does not fully inhibit Trl1-LIG functionality and that it is the reduced enzymatic activity of the LIG domain only that becomes limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of the mutant phenotype emphasizes that the His148-to-Tyr mutation does not fully inhibit Trl1-LIG functionality and that it is indeed the reduced enzymatic activity of the LIG domain only that becomes limiting, causing the UPR-deficient phenotype of trl1-H148Y cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the overexpression rescue data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "26e04723-db30-4c82-82ef-2b7a302e4949",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C52",
+      "claim": "Individual deletion of either XRN1 or SKI2 rescued growth of trl1-H148Y cells upon ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, individual deletion of either XRN1 or SKI2 rescued growth of trl1-H148Y cells upon ER stress (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the growth assay shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "84538df1-1cd4-4a30-b8e4-41cda2fe5c2d",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C53",
+      "claim": "xrn1\u0394 cells exhibited a reduced colony size, which might be explained by the annotated slow growth phenotype of XRN1 deletion being exacerbated in the presence of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "While growth of ski2\u0394 cells was indistinguishable from that of WT cells, xrn1\u0394 cells exhibited a reduced colony size, which might be explained by the annotated slow growth phenotype of XRN1 deletion being exacerbated in the presence of ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on observation of the growth assay in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "a6032151-ff8a-4a91-bcd7-0ae7da1243a0",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C54",
+      "claim": "Neither the xrn1\u0394 hac1\u0394 nor the ski2\u0394 hac1\u0394 strain were viable in the presence of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that the observed rescue indeed resulted from restored UPR signaling, we generated HAC1 deletions in the respective strains and tested their growth. Neither the xrn1\u0394 hac1\u0394 nor the ski2\u0394 hac1\u0394 strain were viable in the presence of ER stress (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the growth assay shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "2a15e043-b9d8-431d-b6d2-9dae575df2d0",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C55",
+      "claim": "The rescue by deletion of the major cytosolic RNA degradation pathway in either the 5'-to-3' or the 3'-to-5' direction substantiates that non-conventional splicing and RNA decay are competing outcomes after Ire1 cleavage of HAC1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The rescue by deletion of the major cytosolic RNA degradation pathway in either the 5'-to-3' or the 3'-to-5' direction substantiates that non-conventional splicing and RNA decay are competing outcomes after Ire1 cleavage of HAC1 mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the genetic rescue data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "9de4298c-12bf-4998-bccb-081211f5c7f1",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C56",
+      "claim": "HAC1 mRNA was spliced upon Tm-induced ER stress in the WT strain and not affected by deletion of XRN1 or SKI2.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, HAC1 mRNA was spliced upon Tm-induced ER stress in the WT strain and not affected by deletion of XRN1 or SKI2 (Figure 5D, lanes 1\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-PCR analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "bfb3b438-8a51-4d42-a073-44a2f8691c88",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C57",
+      "claim": "Upon ER stress, an overall reduction of unspliced HAC1 mRNA and no HAC1 mRNA splicing was detected in trl1-H148Y cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous results, upon ER stress we detected an overall reduction of unspliced HAC1 mRNA and no HAC1 mRNA splicing in trl1-H148Y cells (Figure 5D, lanes 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-PCR analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "87ab5190-72de-477b-99a1-2a99890bbd3d",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C58",
+      "claim": "Deletion of XRN1 in trl1-H148Y cells restored splicing, albeit not to the same degree as in the WT strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of XRN1 in trl1-H148Y cells restored splicing, albeit not to the same degree as in the WT strain (Figure 5D, lanes 11 and 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-PCR analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "6a768111-8e6b-43ba-90f9-16ce2691f8b5",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C59",
+      "claim": "Stabilization of the severed HAC1 3' exon in the absence of Xrn1 allows enzymatically impaired Trl1-H148Y to catch up and ligate the HAC1 exons to restore the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "We surmise that stabilization of the severed HAC1 3' exon in the absence of the major 5'-to-3' exonuclease Xrn1 allows enzymatically impaired Trl1-H148Y to catch up and ligate the HAC1 exons to restore the UPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RT-PCR data showing restored splicing in xrn1\u0394 trl1-H148Y cells (Figure 5D).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d40f3e2d-b822-46ea-991d-fcb482d6e29e",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C60",
+      "claim": "No spliced HAC1 mRNA was detected in ski2\u0394 trl1-H148Y cells upon ER stress, but rather a reduction of unspliced HAC1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, despite the complete phenotypic rescue shown above (Figure 5B), we did not detect spliced HAC1 mRNA in ski2\u0394 trl1-H148Y cells upon ER stress (Figure 5D, lanes 9 and 10), but rather a reduction of unspliced HAC1 mRNA, reminiscent of the parental trl1-H148Y mutant strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-PCR analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "e0983937-f266-4e62-87ee-7c28bc90f906",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C61",
+      "claim": "When RT-PCR was performed on the 5' exon with cDNA templates from the entire cellular RNA (using random hexamers for priming), an increase in the amount of the HAC1 5' exon was observed upon SKI2 deletion compared to the parental trl1-H148Y strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when we performed the same RT-PCR on the 5' exon with cDNA templates from the entire cellular RNA (using random hexamers for priming), we now observed an increase in the amount of the HAC1 5' exon upon SKI2 deletion, when compared to the parental trl1-H148Y strain (Figure 5D, row 3, compare lanes 8 and 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-PCR analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "f27c9113-058e-4c52-905d-ec05f03c9c24",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C62",
+      "claim": "The genetic ablation of Xrn1 restored HAC1 mRNA splicing in the UPR-deficient yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic ablation of the major 5'-to-3' exonuclease Xrn1 restored HAC1 mRNA splicing in the UPR-deficient yeast cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the RT-PCR data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d37a20dd-f0e1-4f69-85fb-5e9b0d2dcb94",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C63",
+      "claim": "Abrogation of cytosolic RNA exosome by disruption of the Ski complex suppressed ER stress sensitivity solely via stabilization of the severed 5' exon.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, as we did not detect spliced HAC1 mRNA in ski2\u0394 trl1-H148Y cells, abrogation of cytosolic RNA exosome by disruption of the Ski complex must have suppressed ER stress sensitivity solely via stabilization of the severed 5' exon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the RT-PCR data showing no spliced HAC1 mRNA but increased 5' exon in ski2\u0394 trl1-H148Y cells (Figure 5D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "75c6f879-c590-4498-ba0a-08c77b01b834",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C64",
+      "claim": "A truncated form of Hac1 produced from an mRNA bearing a stop codon immediately after the 5' exon (Hac1trunc) is a fundamentally still functional transcription factor that can induce the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that a truncated form of Hac1 produced from an mRNA bearing a stop codon immediately after the 5' exon and hence lacking the entire C-terminal portion encoded by the 3' exon (Hac1trunc) is a fundamentally still functional transcription factor that can induce the UPR (Cox and Walter, 1996; Di Santo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "4e3891b6-925c-47f9-b4e0-3f2eb3f182ef",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C65",
+      "claim": "The stabilized, cleaved 5' exon in the ski2\u0394 trl1-H148Y strain should be subject to co-translational mRNA surveillance by no-go decay (NGD).",
+      "claim_type": "EXPLICIT",
+      "source": "Since the stabilized, cleaved 5' exon in the ski2\u0394 trl1-H148Y strain reported here does not contain a stop codon, it should be subject to co-translational mRNA surveillance by no-go decay (NGD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that the 5' exon lacks a stop codon.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "ad8f3c31-c05d-4ce5-a2f2-340db373b086",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C66",
+      "claim": "Deletion of DOM34 re-sensitized ski2\u0394 trl1-H148Y cells to ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth analysis of these strains showed that deletion of DOM34 re-sensitized ski2\u0394 trl1-H148Y cells to ER stress (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the growth assay shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "e6597d56-24aa-4fa3-a0c8-0360fc9b4918",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C67",
+      "claim": "Rescue of trl1-H148Y by depletion of Ski2 is dependent on successful ribosome rescue at the 5' non-conventional splice site of the cleaved HAC1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, rescue of trl1-H148Y by depletion of Ski2 (i.e. cytosolic RNA exosome activity) is dependent on successful ribosome rescue at the 5' non-conventional splice site of the cleaved HAC1 mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the DOM34 deletion data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "01f1e53e-a283-48cc-93db-6753a3ca3b90",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C68",
+      "claim": "Hac1 was produced upon ER stress in WT cells and absent in trl1-H148Y cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the production of Hac1 upon ER stress in WT cells and the lack of its expression in trl1-H148Y cells (Figure 6B, lanes 1\u20132 and 9\u201310).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "e28f14b9-c069-4fd1-85ab-8c196de1fb0e",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C69",
+      "claim": "Full-length Hac1 was detected in xrn1\u0394 trl1-H148Y cells upon ER stress induction.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from the results shown above, upon ER stress induction we detected full-length Hac1 in xrn1\u0394 trl1-H148Y cells (Figure 6B, lane 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d405d9a0-ad66-404c-a061-2143fbf2a1f3",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C70",
+      "claim": "The expression levels of Hac1 in xrn1\u0394 trl1-H148Y cells were lower than in WT cells, in accordance with the reduced amount of spliced HAC1 mRNA produced in this strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression levels were lower than in WT cells, in accordance with the reduced amount of spliced HAC1 mRNA produced in this strain (Figure 5D, compare lane 2 with lane 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on comparison of immunoblot and RT-PCR data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d529a813-c285-478a-a7c0-57d7843a6087",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C71",
+      "claim": "No full-length Hac1 was detected in ski2\u0394 trl1-H148Y cells exposed to ER stress, but a faster migrating band consistent with a C-terminally truncated form of Hac1 was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, while we detected no Hac1 in ski2\u0394 trl1-H148Y cells exposed to ER stress, we saw instead a faster migrating band (Figure 6B, lane 14), consistent with the expression of a C-terminally truncated form of Hac1 in these cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "28311a45-2b88-401a-9f77-9298f16b4ae4",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C72",
+      "claim": "A series of higher molecular mass smeared out bands, presumably resulting from ubiquitination, was detected in ski2\u0394 trl1-H148Y cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same strain, we also detected a series of higher molecular mass smeared out bands, presumably a banding pattern resulting from ubiquitination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on immunoblot analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "c82bed83-f7ff-40dc-baa9-a6575b044c3b",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C73",
+      "claim": "Deletion of SKI2 in the wild-type strain led to an accumulation of truncated Hac1 and higher molecular mass laddering, albeit to a lesser extent than in the respective trl1-H148Y strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, deletion of SKI2 in the wild-type strain also led to an accumulation of truncated Hac1 and higher molecular mass laddering, albeit to a lesser extent than in the respective trl1-H148Y strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d7709e5e-df3b-4fe1-a6ea-17d80b49ee0d",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C74",
+      "claim": "RNA decay and ribosome-associated mRNA surveillance play an important role in maintaining the fidelity of HAC1 mRNA splicing in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicated that RNA decay and ribosome-associated mRNA surveillance, while their effects are exacerbated in the UPR mutant strain, play an important role in maintaining the fidelity of HAC1 mRNA splicing in wild-type cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observation of truncated Hac1 in ski2\u0394 WT cells (Figure 6B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "b7788942-d44d-45b8-bccd-ac90b909b5dd",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C75",
+      "claim": "The crystal structure of Trl1-LIG from C. thermophilum revealed a two-domain architecture comprised of a canonical adenylyltransferase domain and a C-terminal domain with a unique all-helical fold within the same enzyme superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of Trl1-LIG from C. thermophilum revealed a two-domain architecture comprised of a canonical adenylyltransferase domain and a C-terminal domain with a unique all-helical fold within the same enzyme superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion based on the structural data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "649a725e-957b-488f-9c4d-3ae9a5863138",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C76",
+      "claim": "The C-terminal domain of T4Rnl1 is not required to catalyze RNA ligation but confers specificity for tRNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous structural and enzymatic data on T4Rnl1 showed that its C-terminal domain is not required to catalyze RNA ligation but confers specificity for tRNA repair (El Omari et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "82d6f9e1-fb29-4b30-971d-775d617ccc80",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C77",
+      "claim": "The C-terminal domain of ctTrl1-LIG likely confers substrate specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations and the structural similarities between the adenylyltransferase domains of ctTrl1-LIG and T4Rnl1, we suspect a similar function, that is conferring substrate specificity, of the C-terminal domain of ctTrl1-LIG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on comparison with T4Rnl1.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "8b52fca1-e692-433c-a7e6-ded7ffa14048",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C78",
+      "claim": "The reduced ligation kinetics of Trl1-H148Y tip the balance almost completely in favor of degrading cleaved HAC1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced ligation kinetics of Trl1-H148Y tip the balance almost completely in favor of degrading cleaved HAC1 mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the genetic and biochemical data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "609c3cb0-728c-4621-bc85-3ebb2c90bb2b",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C79",
+      "claim": "Both major exonucleolytic decay pathways of the cytosol, Xrn1 and the RNA exosome with the Ski complex, are part of the kinetic competition of RNA processing enzymes during HAC1 mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Both major exonucleolytic decay pathways of the cytosol, Xrn1 and the RNA exosome with the Ski complex, are part of this kinetic competition of RNA processing enzymes, albeit with different roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the genetic rescue experiments shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "a4c65d07-968c-4c35-9e8e-70f87af95740",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C80",
+      "claim": "Xrn1 degrades the 3' exon fragment of cleaved HAC1 and plays an important role in allowing efficient translation from the spliced mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that Xrn1 degrades the 3' exon fragment of cleaved HAC1 and plays an important role in allowing efficient translation from the spliced mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the RT-PCR and immunoblot data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "7a6f6939-c6d3-497c-9a7a-84205e34a7eb",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C81",
+      "claim": "The HAC1 intron in S. cerevisiae blocks translation initiation by forming complementary base pairing with the 5' UTR of the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The HAC1 intron in S. cerevisiae blocks translation initiation by forming complementary base pairing with the 5' UTR of the mRNA (R\u00fcegsegger et al., 2001; Sathe et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "0111a42f-6ede-4a10-b986-0e43bffee76b",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C82",
+      "claim": "Degradation of the intron after splicing was reported as required for lifting the translational block and the production of Hac1.",
+      "claim_type": "EXPLICIT",
+      "source": "Degradation of the intron after splicing was reported as required for lifting the translational block and the production of Hac1 (Mori et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "90e751b9-f07d-402c-956f-d090404e54ea",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C83",
+      "claim": "Deletion of XRN1, even in the presence of WT Trl1, resulted in lower levels of Hac1 upon ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of XRN1, even in the presence of WT Trl1, resulted in lower levels of Hac1 upon ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on immunoblot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "5c35ea6a-01d9-4715-be3e-1d819f02c07b",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C84",
+      "claim": "Xrn1 also degrades tRNA introns during tRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Xrn1 also degrades tRNA introns during tRNA splicing, a process with equivalent biochemistry as HAC1 mRNA splicing and shared functionality of Trl1 (Wu and Hopper, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "4dd64479-c0ac-4e42-83e3-7261aa14511a",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C85",
+      "claim": "Phosphorylation of the 5' end by Trl1-KIN is required to render the RNA molecules substrates for Xrn1.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that in all cases phosphorylation of the 5' end, as catalyzed by the central polynucleotide kinase part of Trl1, is required to render the RNA molecules substrates for Xrn1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on knowledge of Xrn1 substrate requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "6ba89616-347d-448d-9f2b-84730569cf90",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C86",
+      "claim": "Kinase-mediated decay poses a permanent competition for Trl1-mediated ligation of any RNA substrate in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In consequence, this kinase-mediated decay poses a permanent competition for Trl1-mediated ligation of any RNA substrate in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that Trl1-KIN phosphorylates RNA ends, making them substrates for Xrn1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "1ab3d520-8369-41e8-be9a-5b06a349a495",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C87",
+      "claim": "Degradation of tRNA introns in yeast has been previously reported to be catalyzed by Trl1-KIN and Xrn1 in an analogous two-step process.",
+      "claim_type": "EXPLICIT",
+      "source": "Degradation of tRNA introns in yeast has been previously reported to be catalyzed by Trl1-KIN and Xrn1in an analogous two-step process (Wu and Hopper, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "40e34b91-446e-44f7-893a-660a22e11673",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C88",
+      "claim": "Abrogation of the RNA exosome by deletion of SKI2 rescued ER stress sensitivity of trl1-H148Y without restoring splicing, instead by stabilization of the isolated 5' exon fragment of HAC1.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that abrogation of the RNA exosome by deletion of SKI2 rescued ER stress sensitivity of trl1-H148Y. However, splicing was not restored in ski2\u0394; instead, stabilization of the isolated 5' exon fragment of HAC1 allowed UPR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the RT-PCR and growth data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "a2544093-651f-4729-9e29-7ad85999134f",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C89",
+      "claim": "The 18 amino acids encoded in the 3' exon of HAC1 are dispensable for the transactivation function of Hac1p.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown by adding a stop codon after the 5' exon of HAC1 that the 18 amino acids encoded in the 3' exon are dispensable for the transactivation function of Hac1p.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "68e95146-bae5-4fb8-a5ae-75ba67dfaa74",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C90",
+      "claim": "Hac1trunc is produced from the isolated HAC1 5' exon in sufficient amounts to initiate the transcriptional response.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we could demonstrate, that Hac1trunc is produced from the isolated HAC1 5' exon in sufficient amounts to initiate the transcriptional response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the growth rescue and immunoblot data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "650ef555-09e1-4aee-8820-7f15d1edfcdb",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C91",
+      "claim": "The nascent chain release from the HAC1 5' exon is dependent on ribosome splitting by the NGD pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The nascent chain release in this context is dependent on ribosome splitting by the NGD pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the DOM34 deletion data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "c7d093f7-90e5-41a2-bc7c-7afc4735629b",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C92",
+      "claim": "HAC1 mRNA was identified as the strongest Dom34 target by ribosome profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is in accordance with a previous study that identified HAC1 mRNA as the strongest Dom34 target by ribosome profiling (Guydosh and Green, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "12f99eb7-8a73-477b-ae97-432be56ea0bf",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C93",
+      "claim": "RIDD in Schizosaccharomyces pombe depends on NGD-mediated ribosome rescue to allow degradation of cleaved mRNAs by the Ski complex/exosome.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study demonstrated that RIDD in Schizosaccharomyces pombe also depends on NGD-mediated ribosome rescue to allow degradation of cleaved mRNAs by the Ski complex/exosome (Guydosh et al., 2017; Kimmig et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "2a3782b5-86e5-4201-9e67-fd8e103b9aeb",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C94",
+      "claim": "NGD plays a crucial role in both functional outputs of the Ire1 branch of the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings establish a crucial role of NGD in both functional outputs of the Ire1 branch of the UPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the current study and prior work on RIDD.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "c168efa5-9d2b-423a-a42a-04016beac74a",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C95",
+      "claim": "Production of Hac1trunc coincides with a high-molecular weight laddering that is interpreted as ubiquitination of the truncated form.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, production of Hac1trunc coincides with a high-molecular weight laddering that we interpret as ubiquitination of the truncated form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on immunoblot data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "c3612ac5-ad19-462e-a9fa-932a85665919",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C96",
+      "claim": "The HAC1 mRNA is an endogenous substrate of the ribosome quality control (RQC) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We surmise that the HAC1 mRNA is an endogenous substrate of the recently characterized ribosome quality control (RQC) complex (Brandman et al., 2012; Shen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the ubiquitination pattern observed.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "e5fb7fdc-df25-4022-abac-fa57b97f05de",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C97",
+      "claim": "Hac1 initiates a major transcriptional response that re-shapes the entire ER and upregulates hundreds of target genes comprising ~5% of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, Hac1 initiates a major transcriptional response that re-shapes the entire ER and upregulates hundreds of target genes comprising ~5% of the genome (Travers et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d439c932-6e49-4b2d-a291-2e7598391935",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C98",
+      "claim": "Deletion of SKI2 leads to the accumulation of Hac1trunc even in the context of WT Trl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show, that deletion of SKI2 leads to the accumulation of Hac1trunc \u2013 even in the context of WT Trl1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on immunoblot data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "859dbf3b-844e-4b5b-90ce-19c18e293353",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C99",
+      "claim": "Single cleavage by Ire1 occurs frequently and RNA decay pathways assist in degrading HAC1 mRNA fragments to prevent premature UPR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "It is very likely that single cleavage by Ire1 occurs frequently and that RNA decay pathways assist in degrading these HAC1 mRNA fragments to prevent premature UPR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observation of truncated Hac1 in ski2\u0394 WT cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "013a4766-ea7b-4c72-82d4-fa1d5a450d46",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C100",
+      "claim": "Tight regulation of the UPR in yeast is achieved by the interplay of several control mechanisms including RNA decay and surveillance by mRNA quality control factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that tight regulation of the UPR in yeast is achieved by the interplay of several control mechanisms to which this study adds RNA decay and surveillance by mRNA quality control factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "3a2ccf87-5584-484b-b4bd-775a20fb2167",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C101",
+      "claim": "Trl1 homologs are present in all human fungal pathogens and are essential enzymes due to their role in tRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Trl1 homologs are present in all human fungal pathogens. They are essential enzymes for them due to their role in tRNA splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on knowledge of fungal biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d4c957f6-973d-46bb-bc5a-e76f14110272",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C102",
+      "claim": "Trl1 homologs represent promising targets for antifungal drug discovery because their structure and mechanism are distinct from the RTCB-type tRNA ligases in metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "They also represent promising targets for antifungal drug discovery because their structure and mechanism are distinct from the RTCB-type tRNA ligases in metazoans (as well as archaea and many bacteria).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the structural differences between fungal and metazoan tRNA ligases.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "b379411f-bc04-4af9-8785-554479f28631",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C103",
+      "claim": "The absence of human homologs of Trl1-LIG could be explored as a promising new drug target in antifungal therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of human homologs of Trl1-LIG could therefore be explored as a promising new drug target in antifungal therapy, whose development has largely stalled in recent years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the structural data and the lack of human homologs.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "9e8d196d-dfcf-41df-a0b5-8d0a2a83471c",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "claim_id": "C104",
+      "claim": "The structure of Candida albicans Trl1 kinase domain Trl1-KIN was recently published.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the recently published structure of Candida albicans Trl1 kinase domain Trl1-KIN (Remus et al., 2017), our study presents new opportunities for inhibitor screens guided by atomic-resolution Trl1 structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of ctTrl1-LIG was solved at 1.9 \u00c5 resolution, revealing a two-domain architecture with an N-terminal adenylyltransferase domain (LIG-N) and a C-terminal all-helical domain (LIG-C). The structure shows detailed molecular interactions in the ATP binding pocket and active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C26-C37, and C75 collectively describe the crystal structure determination and analysis. The 1.9 \u00c5 resolution is confirmed in Table 1, the domain architecture is shown in Figure 3A, and detailed structural features including ATP binding interactions and the sulfate ion coordination are well-documented with electron density maps and structural comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "25f0106b-4a26-4d53-b755-408eeaf56a59",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ctTrl1 functionally complements S. cerevisiae trl1\u0394 cells for both tRNA splicing and HAC1 mRNA splicing during the UPR, demonstrating conservation of function despite only 39% sequence identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are supported by complementation assays (Figure 2A) showing rescue of trl1\u0394 lethality and ER stress sensitivity, and in vitro splicing assays (Figure 2B) demonstrating HAC1 mRNA ligation activity. The sequence alignment (Figure 1\u2014figure supplement 1) confirms the 39% identity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "507da6af-6f49-470c-be2b-f22b264a3467",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Essential residues for Trl1 ligase activity are conserved between species and cluster around the active site. His148 (His182 in ctTrl1) is essential when mutated to Ala/Asn/Gln but the H148Y mutation allows viability while blocking UPR signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by sequence conservation analysis (Figure 1\u2014figure supplement 1), structural mapping (Figure 4A), and citations to prior mutagenesis studies. The distinction between lethal mutations and the viable H148Y allele is well-documented in the literature cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "7e78736b-f937-41ee-b889-a3b36f698cf6",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The H148Y mutation reduces Trl1 ligation kinetics by 2.2-fold (t1/2 = 9.2 min vs 4.1 min for WT) and decreases the final ligation yield (8% vs 50% for WT), with minimal effect on RNA binding affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are directly supported by in vitro ligation assays (Figure 4B-D) with quantitative kinetic analysis. The binding affinity data (Figure 4\u2014figure supplement 1) shows only small differences in KD values, confirming the defect is primarily kinetic rather than binding-related.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "7e967b36-59dd-47ec-bb51-1ce03e61ec9e",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Overexpression of Trl1-H148Y from the strong ADH1 promoter rescues the UPR-deficient phenotype, demonstrating that reduced enzymatic activity rather than complete loss of function causes the mutant phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by growth assays (Figure 5A) showing that overexpression of both scTrl1-H148Y and ctTrl1-H182Y (and their LIG domains alone) restores growth on tunicamycin. This directly demonstrates that the mutation causes reduced rather than abolished activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "0a3ece65-7d24-4f25-8a04-170d7f5751a6",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Deletion of either XRN1 (5'-3' exonuclease) or SKI2 (3'-5' exosome pathway) rescues trl1-H148Y growth defects during ER stress in a HAC1-dependent manner, demonstrating kinetic competition between RNA ligation and decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 are supported by growth assays (Figure 5B and Figure 5\u2014figure supplement 1) showing genetic rescue by deletion of either decay pathway, with the rescue being HAC1-dependent. This provides strong evidence for competition between ligation and degradation pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "16152f3c-0cae-4493-a407-443a7d97db22",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Deletion of XRN1 in trl1-H148Y cells restores HAC1 mRNA splicing (though not to WT levels) by stabilizing the 3' exon, allowing the impaired ligase to complete exon ligation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 and C62 are supported by RT-PCR analysis (Figure 5D) showing restored spliced HAC1 mRNA in xrn1\u0394 trl1-H148Y cells. The mechanism of 3' exon stabilization is a reasonable inference given that Xrn1 is a 5'-3' exonuclease that would degrade the 3' exon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "137d2331-d216-43e6-b065-74876f95f28d",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Deletion of SKI2 in trl1-H148Y cells rescues ER stress sensitivity without restoring HAC1 mRNA splicing, instead by stabilizing the cleaved 5' exon fragment as detected by random-primed RT-PCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C63 are supported by RT-PCR data (Figure 5D) showing no spliced HAC1 mRNA in ski2\u0394 trl1-H148Y cells with oligo(dT) priming, but increased 5' exon signal with random hexamer priming. This demonstrates stabilization of non-polyadenylated 5' exon fragments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "9f147b5d-6beb-4a09-94ce-bc957c06b584",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Deletion of DOM34 re-sensitizes ski2\u0394 trl1-H148Y cells to ER stress, demonstrating that rescue by SKI2 deletion depends on ribosome rescue by the no-go decay (NGD) pathway at the cleaved 5' exon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 and C91 are supported by growth assays (Figure 6A) showing that dom34\u0394 eliminates the rescue effect of ski2\u0394. This provides strong genetic evidence that NGD-mediated ribosome rescue is required for the alternative rescue mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "72112f75-12ed-4542-9bf9-e3b9fd817e57",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Full-length Hac1 protein is produced in xrn1\u0394 trl1-H148Y cells upon ER stress (though at lower levels than WT), consistent with restored HAC1 mRNA splicing in this strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are supported by immunoblot analysis (Figure 6B) showing full-length Hac1 in xrn1\u0394 trl1-H148Y cells (lane 12) at reduced levels compared to WT. This is consistent with the reduced splicing efficiency observed by RT-PCR.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "11f28cd8-0fde-4787-924d-ce4dadb672c6",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ski2\u0394 trl1-H148Y cells produce a truncated form of Hac1 (Hac1trunc) with apparent ubiquitination (high molecular weight laddering) rather than full-length Hac1, sufficient to initiate UPR signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 and C90 are supported by immunoblot data (Figure 6B, lane 14) showing a faster-migrating band consistent with truncated Hac1 and higher molecular weight smearing. The functional sufficiency is demonstrated by the growth rescue (Figure 5B). However, the ubiquitination interpretation (C72) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "f897be74-98a0-4b0f-99d5-f2ae900ca97a",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Deletion of SKI2 in wild-type cells also leads to accumulation of truncated Hac1 (though less than in trl1-H148Y), indicating that RNA decay and surveillance mechanisms maintain fidelity of HAC1 splicing even in WT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 and C98 are supported by immunoblot data (Figure 6B) showing truncated Hac1 in ski2\u0394 WT cells. This provides evidence that incomplete splicing occurs even with WT Trl1 and that decay pathways normally clear these products.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "14b3a2ea-77c6-4fbe-97c1-2cd5c9ee5e44",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cleaved HAC1 mRNA is an endogenous substrate for ribosome-associated quality control pathways (NGD and RQC), with the truncated Hac1 protein showing evidence of ubiquitination consistent with RQC targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C65-C67, and C91-C96 establish HAC1 as an NGD substrate through genetic evidence (DOM34 deletion). However, the RQC substrate claim (C5, C96) is more speculative, based primarily on the ubiquitination-like banding pattern (C72, C95) without direct biochemical confirmation. The connection to prior ribosome profiling data (C92) and RIDD studies (C93) provides supporting context but not direct validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "941cbfb7-8c59-40c2-b6cd-b2b97ec09016",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "HAC1 mRNA splicing involves kinetic competition between Trl1-mediated ligation and degradation by Xrn1 and Ski/exosome pathways, with RNA decay and mRNA quality control mechanisms contributing to tight regulation of the UPR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C55, C78-C79, and C100 represent the main conclusions of the study. These are well-supported by the genetic rescue experiments (Figures 5-6), biochemical kinetics data (Figure 4), and RT-PCR/immunoblot analyses showing the different outcomes of decay pathway deletions. The kinetic competition model integrates all the experimental observations coherently.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "9db7aa53-a93c-4814-b8c0-cdf49a3964de",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Xrn1 degrades both the HAC1 3' exon and the HAC1 intron (after splicing), with the latter degradation being important for efficient Hac1 translation. Trl1-KIN phosphorylation creates Xrn1 substrates, establishing permanent competition between ligation and decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C87 are supported by immunoblot data showing reduced Hac1 levels in xrn1\u0394 cells (C83) and citations to prior work on intron degradation (C82, C84, C87). The mechanistic model of Trl1-KIN creating Xrn1 substrates (C85-C86) is well-established from prior knowledge and cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "ec2f0341-114b-415a-81aa-3ce1fd512b65",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The 18 amino acids encoded by the HAC1 3' exon are dispensable for Hac1 transcriptional activity, as demonstrated by prior studies and confirmed here by functional rescue through production of truncated Hac1 from the 5' exon alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C88-C89 are supported by citations to prior work showing Hac1trunc functionality and by the current study's demonstration that ski2\u0394 trl1-H148Y cells are rescued despite producing only truncated Hac1. This validates the prior findings in a new genetic context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "fca5ddef-1142-4a6b-9619-00d29a7d21d5",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Single cleavage by Ire1 (incomplete splicing) occurs frequently in wild-type cells, with RNA decay pathways preventing premature UPR signaling by degrading these incompletely processed HAC1 fragments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C99 is speculative, inferred from the observation of truncated Hac1 in ski2\u0394 WT cells (C73). While this observation suggests incomplete splicing occurs, the frequency and physiological significance are not directly measured. The claim is plausible but requires additional quantitative evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d0c890e7-fec5-4d69-a715-9896945435d0",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on Trl1 structure, mechanism, and role in tRNA splicing and UPR, including the discovery of the trl1-H148Y separation-of-function allele that blocks UPR but not tRNA splicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C21 provide established background information supported by extensive citations to prior literature. These claims describe well-characterized aspects of Trl1 function and the UPR pathway, serving as context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "c2ddb3fe-9f2e-4c4d-874d-53216e3a4e19",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The sulfate ion in the crystal structure likely represents a surrogate for RNA substrate phosphate groups. The C-terminal domain of Trl1-LIG may confer substrate specificity, analogous to the C-terminal domain of T4Rnl1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C38 is supported by citation to prior mutagenesis work. However, claims C39 and C77 are explicitly speculative (\"we surmise,\" \"we suspect\"). While these are reasonable hypotheses based on structural features and comparison to T4Rnl1 (C76), they lack direct experimental validation in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "21c0498e-7bb3-4d01-bc06-2f59c056a322",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Hac1 initiates a major transcriptional response affecting ~5% of the yeast genome, underscoring the importance of tight UPR regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 is supported by citation to prior work (Travers et al., 2000) and provides important context for why UPR regulation is critical. This is established knowledge rather than a new finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    },
+    {
+      "id": "d39b656a-52c3-4c54-9313-3d13f7df33fe",
+      "content_id": "03334b93-dfdf-4c20-b8d3-afbae1952d97",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Trl1 homologs in fungal pathogens represent promising antifungal drug targets due to their essential function and structural distinctness from metazoan RTCB-type ligases, with the current structure enabling structure-guided inhibitor development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C104 discuss translational implications. While C101 (presence in fungal pathogens) and C104 (prior Candida structure) are factual, claims C102-C103 about drug target potential are speculative. The structural distinctness from metazoan ligases is established, but actual drug development potential requires extensive additional validation beyond structural characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:00.556938Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2a3bd5b4-674c-479c-92f2-46da5910ebce",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "4920f876-62b4-487e-8709-c2c7119caf13",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "ef2a8843-0816-4131-ba6a-aa1977c575dc",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "67c605ac-84dd-4778-a0b1-abd1437c3318",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "077ce9d2-8742-4ee2-b13f-4ab65e14bfa5",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "3f0266cd-981f-41f3-8862-9d8df9237d49",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "34bc7048-b34c-42d6-b2e6-acfb778a8731",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "27853820-00cc-498b-aa23-c9c4115a6771",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "86a45da7-a7d6-473f-a72f-97dafe87dbde",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "76c479ad-89ac-4143-8f32-19ce4f7346dc",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "f4340749-0da3-4238-beb4-6efd590063ca",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "4a599975-d6a2-41a1-ac9f-a08980c93905",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "259c8672-e0c9-4b18-979d-d2c3f54c9de7",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "b7788942-d44d-45b8-bccd-ac90b909b5dd",
+      "result_id": "5be0c462-d108-4e2a-bf74-b35fdfe2b39c"
+    },
+    {
+      "claim_id": "dfab443c-1de2-4dbb-8b37-23e1058da312",
+      "result_id": "25f0106b-4a26-4d53-b755-408eeaf56a59"
+    },
+    {
+      "claim_id": "83e372fd-a37c-4e4a-880a-9bc52597c29c",
+      "result_id": "25f0106b-4a26-4d53-b755-408eeaf56a59"
+    },
+    {
+      "claim_id": "d713bf5b-7fdb-4340-ac08-85a07f8a1f13",
+      "result_id": "25f0106b-4a26-4d53-b755-408eeaf56a59"
+    },
+    {
+      "claim_id": "73cb4256-3ecd-492a-8224-22b61c77e2a0",
+      "result_id": "25f0106b-4a26-4d53-b755-408eeaf56a59"
+    },
+    {
+      "claim_id": "2277dc33-1a50-4e71-9d25-562a765a668b",
+      "result_id": "507da6af-6f49-470c-be2b-f22b264a3467"
+    },
+    {
+      "claim_id": "e075d196-e4c6-41f6-8855-3f178c37eb69",
+      "result_id": "507da6af-6f49-470c-be2b-f22b264a3467"
+    },
+    {
+      "claim_id": "1b773e9e-3657-409f-b2da-508ed1183213",
+      "result_id": "507da6af-6f49-470c-be2b-f22b264a3467"
+    },
+    {
+      "claim_id": "822cda30-0a00-49ae-854a-3dc10cccb8a2",
+      "result_id": "507da6af-6f49-470c-be2b-f22b264a3467"
+    },
+    {
+      "claim_id": "cc652011-bd02-4014-9abf-ad2e50e150bd",
+      "result_id": "507da6af-6f49-470c-be2b-f22b264a3467"
+    },
+    {
+      "claim_id": "9fc5aa67-14e8-4d40-a1ea-b7198a7e3c83",
+      "result_id": "7e78736b-f937-41ee-b889-a3b36f698cf6"
+    },
+    {
+      "claim_id": "3bac3edc-8288-40b6-82ae-9894ad7ab3b4",
+      "result_id": "7e78736b-f937-41ee-b889-a3b36f698cf6"
+    },
+    {
+      "claim_id": "c8e2b1ff-b637-4e6f-a234-156ae0c2efe7",
+      "result_id": "7e78736b-f937-41ee-b889-a3b36f698cf6"
+    },
+    {
+      "claim_id": "d0d1169c-dc52-4367-b6d7-fa59152982db",
+      "result_id": "7e78736b-f937-41ee-b889-a3b36f698cf6"
+    },
+    {
+      "claim_id": "43b21726-4732-4747-a18c-b483ed044e0f",
+      "result_id": "7e78736b-f937-41ee-b889-a3b36f698cf6"
+    },
+    {
+      "claim_id": "9a28ab99-42c1-4308-9596-b1f30d62f071",
+      "result_id": "7e967b36-59dd-47ec-bb51-1ce03e61ec9e"
+    },
+    {
+      "claim_id": "b1d4ba2c-a336-4d0c-a8d3-21bf75140050",
+      "result_id": "7e967b36-59dd-47ec-bb51-1ce03e61ec9e"
+    },
+    {
+      "claim_id": "26e04723-db30-4c82-82ef-2b7a302e4949",
+      "result_id": "0a3ece65-7d24-4f25-8a04-170d7f5751a6"
+    },
+    {
+      "claim_id": "84538df1-1cd4-4a30-b8e4-41cda2fe5c2d",
+      "result_id": "0a3ece65-7d24-4f25-8a04-170d7f5751a6"
+    },
+    {
+      "claim_id": "a6032151-ff8a-4a91-bcd7-0ae7da1243a0",
+      "result_id": "0a3ece65-7d24-4f25-8a04-170d7f5751a6"
+    },
+    {
+      "claim_id": "2a15e043-b9d8-431d-b6d2-9dae575df2d0",
+      "result_id": "0a3ece65-7d24-4f25-8a04-170d7f5751a6"
+    },
+    {
+      "claim_id": "9de4298c-12bf-4998-bccb-081211f5c7f1",
+      "result_id": "16152f3c-0cae-4493-a407-443a7d97db22"
+    },
+    {
+      "claim_id": "bfb3b438-8a51-4d42-a073-44a2f8691c88",
+      "result_id": "16152f3c-0cae-4493-a407-443a7d97db22"
+    },
+    {
+      "claim_id": "87ab5190-72de-477b-99a1-2a99890bbd3d",
+      "result_id": "16152f3c-0cae-4493-a407-443a7d97db22"
+    },
+    {
+      "claim_id": "6a768111-8e6b-43ba-90f9-16ce2691f8b5",
+      "result_id": "16152f3c-0cae-4493-a407-443a7d97db22"
+    },
+    {
+      "claim_id": "f27c9113-058e-4c52-905d-ec05f03c9c24",
+      "result_id": "16152f3c-0cae-4493-a407-443a7d97db22"
+    },
+    {
+      "claim_id": "d40f3e2d-b822-46ea-991d-fcb482d6e29e",
+      "result_id": "137d2331-d216-43e6-b065-74876f95f28d"
+    },
+    {
+      "claim_id": "e0983937-f266-4e62-87ee-7c28bc90f906",
+      "result_id": "137d2331-d216-43e6-b065-74876f95f28d"
+    },
+    {
+      "claim_id": "d37a20dd-f0e1-4f69-85fb-5e9b0d2dcb94",
+      "result_id": "137d2331-d216-43e6-b065-74876f95f28d"
+    },
+    {
+      "claim_id": "ad8f3c31-c05d-4ce5-a2f2-340db373b086",
+      "result_id": "9f147b5d-6beb-4a09-94ce-bc957c06b584"
+    },
+    {
+      "claim_id": "e6597d56-24aa-4fa3-a0c8-0360fc9b4918",
+      "result_id": "9f147b5d-6beb-4a09-94ce-bc957c06b584"
+    },
+    {
+      "claim_id": "650ef555-09e1-4aee-8820-7f15d1edfcdb",
+      "result_id": "9f147b5d-6beb-4a09-94ce-bc957c06b584"
+    },
+    {
+      "claim_id": "01f1e53e-a283-48cc-93db-6753a3ca3b90",
+      "result_id": "72112f75-12ed-4542-9bf9-e3b9fd817e57"
+    },
+    {
+      "claim_id": "e28f14b9-c069-4fd1-85ab-8c196de1fb0e",
+      "result_id": "72112f75-12ed-4542-9bf9-e3b9fd817e57"
+    },
+    {
+      "claim_id": "d405d9a0-ad66-404c-a061-2143fbf2a1f3",
+      "result_id": "72112f75-12ed-4542-9bf9-e3b9fd817e57"
+    },
+    {
+      "claim_id": "d529a813-c285-478a-a7c0-57d7843a6087",
+      "result_id": "11f28cd8-0fde-4787-924d-ce4dadb672c6"
+    },
+    {
+      "claim_id": "28311a45-2b88-401a-9f77-9298f16b4ae4",
+      "result_id": "11f28cd8-0fde-4787-924d-ce4dadb672c6"
+    },
+    {
+      "claim_id": "68e95146-bae5-4fb8-a5ae-75ba67dfaa74",
+      "result_id": "11f28cd8-0fde-4787-924d-ce4dadb672c6"
+    },
+    {
+      "claim_id": "c82bed83-f7ff-40dc-baa9-a6575b044c3b",
+      "result_id": "f897be74-98a0-4b0f-99d5-f2ae900ca97a"
+    },
+    {
+      "claim_id": "d7709e5e-df3b-4fe1-a6ea-17d80b49ee0d",
+      "result_id": "f897be74-98a0-4b0f-99d5-f2ae900ca97a"
+    },
+    {
+      "claim_id": "d439c932-6e49-4b2d-a291-2e7598391935",
+      "result_id": "f897be74-98a0-4b0f-99d5-f2ae900ca97a"
+    },
+    {
+      "claim_id": "be5d26b6-c1cb-4742-ac83-758b863551fb",
+      "result_id": "14b3a2ea-77c6-4fbe-97c1-2cd5c9ee5e44"
+    },
+    {
+      "claim_id": "4e3891b6-925c-47f9-b4e0-3f2eb3f182ef",
+      "result_id": "14b3a2ea-77c6-4fbe-97c1-2cd5c9ee5e44"
+    },
+    {
+      "claim_id": "c7d093f7-90e5-41a2-bc7c-7afc4735629b",
+      "result_id": "14b3a2ea-77c6-4fbe-97c1-2cd5c9ee5e44"
+    },
+    {
+      "claim_id": "12f99eb7-8a73-477b-ae97-432be56ea0bf",
+      "result_id": "14b3a2ea-77c6-4fbe-97c1-2cd5c9ee5e44"
+    },
+    {
+      "claim_id": "2a3782b5-86e5-4201-9e67-fd8e103b9aeb",
+      "result_id": "14b3a2ea-77c6-4fbe-97c1-2cd5c9ee5e44"
+    },
+    {
+      "claim_id": "c168efa5-9d2b-423a-a42a-04016beac74a",
+      "result_id": "14b3a2ea-77c6-4fbe-97c1-2cd5c9ee5e44"
+    },
+    {
+      "claim_id": "c3612ac5-ad19-462e-a9fa-932a85665919",
+      "result_id": "14b3a2ea-77c6-4fbe-97c1-2cd5c9ee5e44"
+    },
+    {
+      "claim_id": "be939448-3bcc-45b8-8dda-18811101d659",
+      "result_id": "941cbfb7-8c59-40c2-b6cd-b2b97ec09016"
+    },
+    {
+      "claim_id": "50c2d4bb-0771-4fd5-b456-b7c94e1f3583",
+      "result_id": "941cbfb7-8c59-40c2-b6cd-b2b97ec09016"
+    },
+    {
+      "claim_id": "2a15e043-b9d8-431d-b6d2-9dae575df2d0",
+      "result_id": "941cbfb7-8c59-40c2-b6cd-b2b97ec09016"
+    },
+    {
+      "claim_id": "8b52fca1-e692-433c-a7e6-ded7ffa14048",
+      "result_id": "941cbfb7-8c59-40c2-b6cd-b2b97ec09016"
+    },
+    {
+      "claim_id": "609c3cb0-728c-4621-bc85-3ebb2c90bb2b",
+      "result_id": "941cbfb7-8c59-40c2-b6cd-b2b97ec09016"
+    },
+    {
+      "claim_id": "013a4766-ea7b-4c72-82d4-fa1d5a450d46",
+      "result_id": "941cbfb7-8c59-40c2-b6cd-b2b97ec09016"
+    },
+    {
+      "claim_id": "a4c65d07-968c-4c35-9e8e-70f87af95740",
+      "result_id": "9db7aa53-a93c-4814-b8c0-cdf49a3964de"
+    },
+    {
+      "claim_id": "7a6f6939-c6d3-497c-9a7a-84205e34a7eb",
+      "result_id": "9db7aa53-a93c-4814-b8c0-cdf49a3964de"
+    },
+    {
+      "claim_id": "0111a42f-6ede-4a10-b986-0e43bffee76b",
+      "result_id": "9db7aa53-a93c-4814-b8c0-cdf49a3964de"
+    },
+    {
+      "claim_id": "90e751b9-f07d-402c-956f-d090404e54ea",
+      "result_id": "9db7aa53-a93c-4814-b8c0-cdf49a3964de"
+    },
+    {
+      "claim_id": "5c35ea6a-01d9-4715-be3e-1d819f02c07b",
+      "result_id": "9db7aa53-a93c-4814-b8c0-cdf49a3964de"
+    },
+    {
+      "claim_id": "4dd64479-c0ac-4e42-83e3-7261aa14511a",
+      "result_id": "9db7aa53-a93c-4814-b8c0-cdf49a3964de"
+    },
+    {
+      "claim_id": "6ba89616-347d-448d-9f2b-84730569cf90",
+      "result_id": "9db7aa53-a93c-4814-b8c0-cdf49a3964de"
+    },
+    {
+      "claim_id": "1ab3d520-8369-41e8-be9a-5b06a349a495",
+      "result_id": "9db7aa53-a93c-4814-b8c0-cdf49a3964de"
+    },
+    {
+      "claim_id": "40e34b91-446e-44f7-893a-660a22e11673",
+      "result_id": "ec2f0341-114b-415a-81aa-3ce1fd512b65"
+    },
+    {
+      "claim_id": "a2544093-651f-4729-9e29-7ad85999134f",
+      "result_id": "ec2f0341-114b-415a-81aa-3ce1fd512b65"
+    },
+    {
+      "claim_id": "75c6f879-c590-4498-ba0a-08c77b01b834",
+      "result_id": "ec2f0341-114b-415a-81aa-3ce1fd512b65"
+    },
+    {
+      "claim_id": "859dbf3b-844e-4b5b-90ce-19c18e293353",
+      "result_id": "fca5ddef-1142-4a6b-9619-00d29a7d21d5"
+    },
+    {
+      "claim_id": "aecf0941-19cb-4049-855b-2451337d11ad",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "ef052133-4443-4c93-a94f-4774c75336cd",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "74c9d3d7-38d0-4b6c-9965-f1338c8c2079",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "c3655995-f51b-4b7f-88fb-107d64d87980",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "1136c089-fd73-49e6-9bc9-0d58698e1177",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "e0f0ea86-8f62-47f5-97eb-fd20639fde13",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "b2c390b8-a3ca-466b-a8ad-7fd78ec4b8d9",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "0c593074-1651-44d4-80c3-22b919dd9f9e",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "6eaa2c90-3c4d-4d84-ac88-3d1f291b9d48",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "65e143f7-fb85-4734-987f-e6256e2a81d6",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "89cd18ba-29a4-4a78-a3dc-825d401f523f",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "7903c5b2-4026-4447-a7e1-00ebe104c44e",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "4dfd5ca0-ef18-4380-b3f0-70f3f7bfca46",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "7a4aa25a-8846-4859-a2a2-daf3b41983e0",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "d2d200a6-ef73-4f98-9a74-621a9d1399b6",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "0c048752-d41e-47f1-b1a5-d60777776de2",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "3357f3f9-4338-48cc-bf98-d834447329d2",
+      "result_id": "d0c890e7-fec5-4d69-a715-9896945435d0"
+    },
+    {
+      "claim_id": "971a3003-619b-4473-8778-0d9691b9dfe9",
+      "result_id": "c2ddb3fe-9f2e-4c4d-874d-53216e3a4e19"
+    },
+    {
+      "claim_id": "0e91aa77-0d55-4d54-b991-a4cc8c6e4f8d",
+      "result_id": "c2ddb3fe-9f2e-4c4d-874d-53216e3a4e19"
+    },
+    {
+      "claim_id": "649a725e-957b-488f-9c4d-3ae9a5863138",
+      "result_id": "c2ddb3fe-9f2e-4c4d-874d-53216e3a4e19"
+    },
+    {
+      "claim_id": "82d6f9e1-fb29-4b30-971d-775d617ccc80",
+      "result_id": "c2ddb3fe-9f2e-4c4d-874d-53216e3a4e19"
+    },
+    {
+      "claim_id": "e5fb7fdc-df25-4022-abac-fa57b97f05de",
+      "result_id": "21c0498e-7bb3-4d01-bc06-2f59c056a322"
+    },
+    {
+      "claim_id": "3a2ccf87-5584-484b-b4bd-775a20fb2167",
+      "result_id": "d39b656a-52c3-4c54-9313-3d13f7df33fe"
+    },
+    {
+      "claim_id": "d4c957f6-973d-46bb-bc5a-e76f14110272",
+      "result_id": "d39b656a-52c3-4c54-9313-3d13f7df33fe"
+    },
+    {
+      "claim_id": "b379411f-bc04-4af9-8785-554479f28631",
+      "result_id": "d39b656a-52c3-4c54-9313-3d13f7df33fe"
+    },
+    {
+      "claim_id": "9e8d196d-dfcf-41df-a0b5-8d0a2a83471c",
+      "result_id": "d39b656a-52c3-4c54-9313-3d13f7df33fe"
+    }
+  ],
+  "comparisons": []
+}

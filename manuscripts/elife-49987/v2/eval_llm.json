@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "NINscope is a lightweight (1.6 g), compact miniscope with integrated hardware features including a PYTHON480 CMOS sensor, IMU accelerometer, and LED drivers for optogenetics and fluorescence excitation, using custom PCBs and 3D-printed housing with optimized optical components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C58 provide comprehensive technical specifications for NINscope's hardware design, including weight measurements (C1), sensor specifications (C2), optical parameters (C3, C4, C25, C57, C58), electronic components (C26, C52-C55), and mechanical design (C56). These specifications are internally consistent and represent direct measurements or manufacturer specifications of components used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C36",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "NINscope integrates an IMU for behavioral tracking, an LED driver for remote optogenetic stimulation, and cross-platform compatible acquisition software with features for real-time control and data logging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C36 describe the integrated features and software capabilities, while C59-C64 provide technical implementation details. The software architecture using Processing language (C7) and firmware modifications (C59-C61) are well-documented with specific technical details about buffering strategies (C62) and data handling (C63-C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C30",
+      "C31"
+    ],
+    "result": "NINscope enables dual-site recordings in mice without significantly affecting behavior, with inter-baseplate distances of ~8 mm for cerebellum-cortex configurations, extracting signals from hundreds of cells in each region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 demonstrate dual miniscope capability with statistical validation showing no significant behavioral impairment (p=0.7864 for rearing frequency, p=0.4244 for duration, N=4 mice). Claims C30-C31 provide geometric constraints and cell yield data (cerebellum: 141\u00b153 cells, cortex: 201\u00b190 cells, N=4 mice), supporting the feasibility of dual recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C32",
+      "C33"
+    ],
+    "result": "NINscope enabled the first concurrent cellular resolution recordings from cerebellum and cortex in unrestrained mice, revealing that coordinated cerebello-cerebral activity precedes peak movement acceleration, with Purkinje cells showing higher synchronous pattern participation than cortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 and C32-C33 describe novel dual-region recordings with specific quantitative findings. Event rates match expected climbing fiber frequencies (C12: 0.62\u00b10.39 Hz), synchronous pattern analysis shows significant differences between regions (C13: p=1.8409e-15, C32: p=2.7801e-17), and temporal analysis demonstrates neural activity precedes acceleration (C33: CBL 444\u00b1280 ms, CTX 505\u00b1260 ms, acceleration 700\u00b1269 ms, p=1.6553e-08). However, the claim of being \"first\" (C10) cannot be independently verified from the manuscript alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C34"
+    ],
+    "result": "Optogenetic stimulation of cerebellar Purkinje cells evoked delayed motor reflexes (73-80 ms) and activated approximately half of motor cortex neurons, with response amplitudes varying by cerebellar region stimulated and lateralized head movements corresponding to hemisphere stimulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C34 provide consistent evidence for cerebello-cortical connectivity. Movement delays (C16: 73-80 ms, N=2 mice) align with cited literature on cerebellar rebound excitation. Cortical activation (C17: 49.9\u00b114.2%, N=2 mice) and lateralized movements (C18) are demonstrated with accelerometer data. Response amplitudes (C34) show regional specificity with statistical validation (p=1.1239e-70), though the small sample size (N=2 mice) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C35"
+    ],
+    "result": "NINscope successfully performed deep-brain imaging in dorsal striatum, extracting signals from up to 84 cells that showed lateralized responses to contraversive movements with peak activity after movement initiation (310\u00b145 ms latency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 and C35 demonstrate successful deep-brain imaging capability. Cell extraction (C19: 62\u00b116.7 cells, range 38-84, N=5 mice) and lateralized responses (C20: 85% of neurons, N=5 mice) replicate prior findings. The absence of responses to ipsilateral movements (C21) confirms lateralization. Temporal analysis (C35) shows action execution encoding, though the distinction between preparation and execution could benefit from additional behavioral controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Optogenetic stimulation of orbitofrontal cortex (OFC) and secondary motor cortex (M2) differentially modulated dorsal striatum neurons, with OFC stimulation affecting 31% of neurons compared to 14% for M2 stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 demonstrate differential cortical input effects on striatum. The quantification of response types for OFC (C22: 20% decreased, 69% no change, 11% increased) and M2 (C23: 7% decreased, 86% no change, 7% increased) shows clear differences. Statistical comparison (C24: chi-squared(1)=13.85, p<0.001, N=4 mice) confirms significant differences in responsive neuron fractions, consistent with cited in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "NINscope achieved high-quality signal-to-noise recordings using minimal light power (120-240 \u03bcW before GRIN objective) without observable photobleaching or photodamage over extended imaging sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe imaging performance with specific power measurements and session durations (5,000-20,000 frames, 2-11 min per session, repeated \u226510 times). The light power range is well-documented and within the linear range of the LED driver (referenced to Figure 2\u2014figure supplement 1). The absence of bleaching/damage is observational but consistent with the reported power levels and GCaMP6 properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Detailed surgical and experimental protocols are provided for GRIN lens implantation, viral transduction, and imaging procedures across different brain regions including cerebellum, cortex, and dorsal striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C80 provide comprehensive methodological details including animal housing (C65-C66), surgical procedures (C67-C76), recording environments (C77-C78), and validation approaches (C79-C80). These are standard methods with specific parameters that enable reproducibility. The protocols are internally consistent and follow established neuroscience practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Calcium imaging data were analyzed using CNMF-E for cell segmentation with region-specific parameters, and synchronous patterns were detected using a finite rate of innovation algorithm with Epanechnikov kernel convolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 describe the computational analysis pipeline with specific parameters for different cell types (C81-C82: gSig and gSiz values), response classification criteria (C83: mean+2\u03c3 threshold), and synchronous pattern detection methods (C85-C87: \u03c4=1, kernel steepness=0.1, threshold mean+2\u03c3, minimum 5 occurrences). The methods are well-established with appropriate citations and clear parameter specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The UCLA Miniscope v3 weighs 3.2 grams, twice the weight of NINscope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 provides a comparison weight from a published miniscope design shown in Table 1. This serves as a benchmark for evaluating NINscope's weight advantage (C1: 1.6 g), though the comparison should consider differences in functionality and components between the two designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The manuscript contextualizes NINscope within existing knowledge of cerebellar anatomy, cerebello-cerebral connectivity, striatal function, and miniscope applications, citing relevant literature to support experimental design and interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C51 represent background knowledge and literature citations that provide context for the experimental work. These include established facts about Purkinje cell physiology (C38-C39), cerebello-thalamo-cerebral loops (C40-C41), cerebellar nuclei function (C42), sensory inputs to cerebellum (C43-C44), striatal function (C45-C46), anatomical projections (C47), and miniscope applications (C48-C51). The citations appear appropriate and support the experimental rationale.",
+    "result_type": "MINOR"
+  }
+]

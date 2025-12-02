@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C3",
+      "C4"
+    ],
+    "result": "The FoxM1 NRD and TAD directly associate with micromolar affinity. The minimal NRD (residues 1-114) and minimal TAD (residues 696-748) associate with Kd = 3 \u00b1 2 \u00b5M, comparable to the affinity of longer constructs (Kd = 2 \u00b1 1 \u00b5M). Both domains are primarily intrinsically disordered but adopt a structured conformation upon association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 provide quantitative ITC binding data demonstrating direct association between NRD and TAD domains with defined affinities. Claims C3 and C4 are supported by CD and NMR spectroscopy data showing the domains are disordered alone but structured when bound. The convergence of biophysical techniques provides strong evidence for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The NMR structure of the FoxM1 NRD-TAD complex reveals a five-stranded \u03b2-sheet with a single \u03b1-helix. The TAD adopts an unusual \u03b2-hairpin conformation (strands \u03b24-\u03b25) that extends the NRD \u03b2-sheet (strands \u03b21-\u03b23). Both domains contribute essential hydrophobic residues to form an interdependent structured interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 describe the NMR structure determination with 64% backbone assignment, NOE distance restraints, and RDC validation. The \u03b2-hairpin structure of the TAD is unusual compared to typical helical TAD structures and is well-supported by chemical shift analysis, NOE data, and mutagenesis. The interdomain contacts are experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mutations that disrupt the NRD-TAD interface increase FoxM1 transcriptional activity. Mutations proximal to the interface (V76A/I78A, F106A/L108A, I88A, L91A, V708A, L709A, L716A) abolish or severely reduce binding affinity and increase luciferase reporter activity, while distal mutations have minimal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 present a systematic mutagenesis study with ITC binding measurements and cellular luciferase reporter assays. The correlation between loss of binding affinity and increased transcriptional activity supports the autorepression model. The structure-function relationship is well-established through convergent biochemical and cellular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Cdk phosphorylation of consensus sites in the FoxM1 NRD and CSR does not directly affect the NRD-TAD association. Phosphorylation of the NRD (S4) or CSR-TAD construct shows no change in binding affinity (Kd = 2-6 \u00b5M), indicating Cdk phosphorylation is not sufficient for FoxM1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by ITC binding measurements with Cdk-phosphorylated constructs and mass spectrometry validation of phosphorylation. The data clearly show no significant change in NRD-TAD affinity upon Cdk phosphorylation, challenging the prevailing model. This is a well-controlled negative result with important mechanistic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Plk1 phosphorylates four conserved serine residues in the FoxM1 TAD (Ser702, Ser715, Ser724, Ser741), and phosphorylation of Ser715 is necessary and sufficient to disrupt the NRD-TAD association. Ser715 is the only Plk1 site near the structured interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by mass spectrometry identification of phosphorylation sites, ITC binding assays with phosphorylated and mutant TAD constructs, and structural localization of Ser715 near the interface. The mutagenesis experiments with S715A and triple mutants definitively demonstrate the necessity and sufficiency of Ser715 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Plk1 co-expression with wild-type FoxM1 increases luciferase reporter activity 2.5-fold, but this activation is abolished in the S715A mutant. Interface-disrupting mutations (I88A, V708A/L709A) show minimal additional activation upon Plk1 co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 present cellular validation of the in vitro findings using luciferase reporter assays. The loss of Plk1-mediated activation in the S715A mutant and the epistasis experiments with interface mutations provide strong support for the model that Ser715 phosphorylation is the key activation step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Cdk phosphorylation of the FoxM1 CSR creates binding sites for the Plk1 polobox domain, inducing direct Plk1 association (Kd = 0.08 \u00b1 0.07 \u00b5M). This priming mechanism enables Plk1 to subsequently phosphorylate the TAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by ITC measurements showing Cdk-phosphorylated CSR binds Plk1 polobox with high affinity while unphosphorylated CSR does not. This establishes the indirect role of Cdk in FoxM1 activation through recruitment of Plk1, resolving the apparent contradiction with claims C52-C55.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CD spectroscopy shows the NRD-TAD fusion is structured while isolated NRD and TAD are disordered. The V76A/I78A interface mutation causes the fusion to become disordered, demonstrating that NRD-TAD binding and structure formation are interdependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 present CD spectroscopy data showing clear differences between the structured fusion and disordered individual domains. The V76A/I78A mutation experiment provides a critical control demonstrating that disrupting binding leads to disorder. This supports the coupled folding-and-binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "NMR analysis of the isolated FoxM1 TAD (47/50 residues assigned) shows both unphosphorylated and Plk1-phosphorylated TAD are primarily unstructured. The \u03b2-hairpin structure observed in the NRD-TAD complex is adopted upon binding to the NRD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by NMR backbone assignments and RCI-S2 order parameter analysis showing low order parameters consistent with disorder. Comparison with the structured NRD-TAD complex demonstrates the TAD undergoes disorder-to-order transition upon NRD binding, supporting an induced-fit mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The isolated FoxM1 NRD is poorly structured when not in complex with the TAD, as shown by size exclusion chromatography and NMR. FoxM1 activation is marked by an order-to-disorder structural transition where the repressive NRD-TAD association drives folding into the inhibitory conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by size exclusion chromatography showing the NRD elutes as expected for a non-globular protein, and poor quality NMR spectra consistent with disorder. Combined with the TAD data, this establishes that both domains are disordered alone but fold together, representing an unusual activation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The FoxM1 TAD binds CBP TAZ2 (Kd = 0.7 \u00b1 0.3 \u00b5M) and KIX (Kd = 2.7 \u00b1 0.5 \u00b5M) domains but not TAZ1. The NRD-TAD fusion does not detectably bind TAZ2, but the I88A interface mutant restores binding, demonstrating the NRD sequesters the TAD from co-activator interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by ITC binding measurements showing selective TAD binding to TAZ2 and KIX. The critical experiment showing the fusion does not bind TAZ2 but the I88A mutant does provides direct evidence for the sequestration mechanism. This validates the functional consequence of NRD-TAD association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Phosphorylation of the FoxM1 CSR-TAD by Cdk or Plk1 does not affect TAZ2 binding affinity. TAD phosphorylation activates FoxM1 by shifting the NRD-TAD binding equilibrium toward TAD release rather than by modulating direct TAD-CBP interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by ITC measurements showing no change in TAZ2 affinity upon phosphorylation. This establishes that phosphorylation acts through disrupting NRD-TAD binding rather than enhancing CBP binding, clarifying the activation mechanism. The logic is sound and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Two sequences in the FoxM1 TAD (713-726 and 737-746) containing \u03a6XX\u03a6\u03a6 motifs are required for CBP TAZ2 binding. The L716A mutation abolishes TAZ2 binding and has modest effects in luciferase assays because it disrupts both NRD inhibition and CBP activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by sequence analysis, ITC binding with truncated TAD constructs, and the L716A mutation data. The dual role of L716 in both NRD and CBP binding explains the modest cellular phenotype and provides insight into the structural requirements for TAD function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The complete FoxM1 activation mechanism involves: (1) autoinhibited NRD-TAD complex with \u03b2-hairpin TAD structure; (2) Cdk phosphorylation of CSR recruiting Plk1; (3) Plk1 phosphorylation of Ser715 destabilizing the TAD \u03b2-hairpin; (4) NRD and TAD becoming disordered upon dissociation; (5) released TAD adopting helical conformation to recruit CBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 synthesize the major findings into a comprehensive mechanistic model. Each step is supported by the experimental data from structural, biochemical, and cellular studies. The model is internally consistent and explains how phosphorylation-induced disorder leads to activation through structural switching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "TADs are intrinsically disordered domains that function through structural plasticity, adopting ordered conformations when bound to co-regulators. Many transcription factors contain NRDs that suppress TAD activity through autoregulation. TAD accessibility can be modulated through various mechanisms including posttranslational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C13 present established background knowledge about TAD structure and function, supported by multiple literature citations. These claims provide the conceptual framework for understanding the FoxM1 results but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "FoxM1 is critical for cell division, activating genes for mitotic entry and progression. FoxM1 expression is normally confined to dividing cells in embryogenesis, hematopoiesis, and tissue repair. FoxM1 null mice are embryonic lethal. Aberrant FoxM1 expression is associated with multiple cancers, increased proliferation, metastasis, drug resistance, and poor prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C27 present established background on FoxM1 biology and cancer relevance, supported by extensive literature citations. These claims provide important context for the significance of understanding FoxM1 regulation but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "FoxM1 contains four functional domains: NRD, DBD, CSR, and TAD. The DBD is the only region with known ordered structure. The NRD suppresses FoxM1 activity in reporter assays and has been proposed to sequester the TAD from CBP/p300. Phosphorylation by Cdks or Plk1 inhibits NRD repressive activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 present established knowledge about FoxM1 domain organization and prior models of regulation, supported by literature citations. These claims set up the questions addressed by the current study but represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Eukaryotic transcription factors almost invariably contain large regions of intrinsic structural disorder that facilitate protein-protein interactions, posttranslational modifications, and nuclear localization control. The induction of structure could negatively regulate transcription factor activity by restricting TAD accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 present general principles about transcription factor disorder and regulation, supported by literature citations. Claim C104 represents a logical inference that motivates the study. These provide conceptual framework but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "FoxM1 regulation involves secondary structure switching of the TAD between \u03b2-hairpin (repressed, NRD-bound), disordered (intermediate), and \u03b1-helical (active, CBP-bound) conformations. The repressed TAD has a \u03b2-hairpin structure while the CBP-bound state likely contains \u03b1-helical structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 synthesize structural observations into a model of conformational switching. C105 is directly supported by NMR structure. C106 is inferred from general knowledge about TAD-CBP interactions and the presence of amphipathic motifs. The structural switching model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Ser715 phosphorylation destabilizes the NRD-TAD association, and the dissociated TAD is intrinsically disordered and capable of binding CBP. This establishes the key phosphorylation event that releases the TAD for co-activator recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 summarize key findings supported by ITC binding data showing phosphorylation disrupts NRD-TAD binding, NMR data showing the free TAD is disordered, and ITC data showing the TAD binds CBP. This represents a major mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Phosphorylation controls structural transitions in other intrinsically disordered proteins (Ets-1, 4E-BP2, nucleophosmin). FoxM1 demonstrates a new example where order-to-disorder transition occurs with modulation of intramolecular domain association. This plasticity explains why disordered proteins are well-suited to regulate biological function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 cite prior examples of phosphorylation-controlled structural transitions. Claims C114-C115 place FoxM1 in this context as a novel example. The comparison is appropriate and the inference about disordered protein function is reasonable, though somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "In the active FoxM1 conformation, both the NRD and TAD are largely disordered. This additional disorder may increase conformational flexibility in chromatin context, promote FoxM1 stability regulation, or contribute to low complexity domain condensate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is supported by CD and NMR data showing both domains are disordered when dissociated. However, claim C117 is explicitly speculative about the functional significance of NRD disorder. The proposed functions are plausible but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "The finding that NRDs may appear in regions of intrinsic disorder should motivate identification of additional 'hidden' NRDs that adopt structure only upon interaction with their target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is a reasonable speculation based on the FoxM1 findings. The discovery that the FoxM1 NRD is disordered alone but structured when bound suggests this may be a more general phenomenon. This represents a conceptual advance that could guide future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "While multiple Cdk and Plk1 phosphorylation events have been implicated in FoxM1 activation, phosphorylation of the specific Plk1 site Ser715 is directly responsible for freeing the TAD from NRD sequestration. This specificity resembles the retinoblastoma protein where specific phosphorylation events drive distinct structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 contrast the current findings with prior models and compare to retinoblastoma protein. The specificity of Ser715 is well-supported by the mutagenesis and binding data. The comparison to Rb is appropriate and highlights the significance of site-specific phosphorylation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "The identification of a structured, repressed FoxM1 conformation suggests the possibility of developing molecules that bind and stabilize the repressive NRD-TAD association or target FoxM1 for degradation as cancer therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is speculation about potential therapeutic applications based on the structural findings. While the structural information could enable drug discovery efforts, no experimental validation of this approach is provided. This represents a reasonable future direction but is not a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

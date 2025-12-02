@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A Syngap1 knockout rat line was generated using CRISPR/Cas9 technology with a frameshift mutation in exon 8. This mutation prevents protein expression, resulting in 50% reduction in HET rats and complete absence in homozygous knockouts. Homozygous KO rats die perinatally while HET rats appear healthy and fertile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are well-supported by Figure 1 showing the mutation strategy and protein expression levels. The Western blot data (C32-C33) clearly demonstrates the expected gene dosage effect. The phenotypic observations (C34-C35) are consistent with the mouse model and provide validation of the rat model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study analyzed PSD fractions from 165 individual rodents (82 WT, 83 HET) comprising 81 females and 84 males, with approximately equal numbers of rats and mice at 7.5 and 12.5 weeks of age. The synGAP/PSD-95 ratio was reduced by 22% in HET rodents compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe the experimental design and are supported by the methods and Figure 2A. The sample size is substantial (n=165) and well-balanced across groups. The 22% reduction in synGAP/PSD-95 ratio (C39) is statistically significant and consistent with heterozygous deletion. The methodological details about protein yields (C113-C115) support the feasibility of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "When averaged across all animals, the TARP/PSD-95 ratio was not significantly different between WT and HET rodents, except for a significant reduction in 7-week-old female mice. Greater variability in TARP/PSD-95 ratios was observed in females compared to males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by Figure 2B. The lack of overall difference in mean TARP levels contrasts with the authors' previous findings (C27), which is acknowledged. The exception in 7-week female mice (C41) and the speculative developmental explanation (C42) are appropriately cautious. The observation of greater variability in females (C43) foreshadows the main finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Using Spearman's rank correlation analysis on individual animals, lower synGAP levels in HET animals correlate with higher TARP levels, but this correlation is absent in WT animals. Critically, HET females show the strongest inverse correlation (r=-0.498, p=0.0006) while HET males show no significant correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 represent the major finding and are well-supported by Figure 3. The use of Spearman's correlation on individual animals (rather than pooled samples) is methodologically sound. The sex-specific effect is striking and statistically robust in HET females (C49). The inference that the female HET correlation drives the pooled results (C51) is logical and supported by the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "PSD-95 levels per PSD protein are not statistically different between HETs and WT or between males and females, and are not correlated with synGAP levels among individuals. This validates that differences in target protein/PSD-95 ratios reflect actual concentration differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by Figure 3\u2014figure supplement 1. This is a critical control showing that PSD-95 serves as a valid normalization standard. The lack of correlation between PSD-95 and synGAP levels (C53) strengthens the interpretation that observed correlations between other proteins and synGAP are biologically meaningful rather than technical artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Between 7.5 and 12.5 weeks of age, synGAP haploinsufficiency has a much greater effect on TARP content in PSDs of female animals than males. The simplest explanation is that in HET females, TARP and synGAP compete directly for PSD-95 binding, whereas this competition is not significant in HET males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 represent the authors' interpretation of the sex-specific correlation. C55 is a direct conclusion from the data. C56-C57 offer a mechanistic interpretation that is reasonable given the data, though alternative mechanisms are possible (as discussed in C101-C102). The interpretation is appropriately presented as the 'simplest explanation' rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Analysis of individual cohorts shows statistically significant inverse correlations in HET female mice at both ages, with trends in HET female rats. No significant correlations were found in males. The data suggest competition is more prominent at 7 weeks than 12 weeks, and more prominent in mice than rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by Figure 3\u2014figure supplements 2 and 3. The smaller sample sizes in individual cohorts (n=9-10) limit statistical power, which the authors acknowledge (C62-C63 appropriately note that 'more data would be required'). The trends are consistent with the main finding but the age and species differences should be considered tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "GluN2B shows a highly significant 10% reduction in HETs compared to WT, NLG-1 shows no change, and NLG-2 increases significantly by 7%. These effects do not differ by species, sex, or age, and recapitulate previous findings for neuroligins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by Figure 4. The GluN2B reduction (C64) is novel and statistically robust. The neuroligin findings (C65-C66, C68) confirm previous work (C28-C29). The lack of sex differences for these proteins (C67) contrasts with the TARP findings and suggests the sex difference is specific to TARP-synGAP interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "GluN2B concentration in PSDs shows a strong positive correlation with synGAP levels (r\u22480.4) in both WT and HET animals, with no sex differences. GluN2B is reduced in HETs, indicating synGAP plays a role in localizing GluN2B to the PSD, though it is not the only protein involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by Figure 5. The positive correlation contrasts with the negative correlation for TARPs, supporting the hypothesis that synGAP does not compete with GluN2B for PSD-95 binding. The correlation in both WT and HET (C71) and the lack of sex differences distinguish this from the TARP findings. The interpretation (C72) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SynGAP levels do not influence NLG-1 amounts and show only a trend toward inverse correlation with NLG-2. Despite both synGAP and NLG-1 binding PDZ3 of PSD-95, synGAP reduction does not increase NLG-1 in PSDs. The simplest explanation is that neuroligins have higher affinity for PDZ3 than synGAP, though additional binding sites may influence competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are supported by Figure 6 and cited literature. The lack of effect on NLG-1 (C73, C75) despite both proteins binding PDZ3 is an important negative result. The mechanistic explanation based on differential affinities (C76) is speculative but reasonable given the cited KD values (C77-C78). The acknowledgment of complexity (C79) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study reveals a sex difference in PSD scaffold adaptation to synGAP haploinsufficiency. Only females show a highly significant correlation (r=-0.5) between decreased synGAP and increased TARP in PSDs, suggesting high competition for PSD-95 binding in female HETs but not males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C85-C89 represent the main conclusion of the study. The sex-specific correlation is robustly demonstrated with appropriate statistics (C87) and the interpretation of competition (C88) is reasonable. This is a novel and important finding that advances understanding of synGAP haploinsufficiency. The conclusion that competition does not affect male PSDs (C89) is well-supported by the lack of correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C92",
+      "C93"
+    ],
+    "result": "SynGAP plays a complex role in modulating PSD composition, competing with some proteins (TARPs) while helping to concentrate others (GluN2B). The PSD structure represents a dynamic equilibrium governed by multiple protein associations driven by relative concentrations and binding affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 and C92-C93 provide a conceptual framework consistent with the data. The dual role of synGAP (C80) is supported by the contrasting correlations with TARPs (negative) and GluN2B (positive). The dynamic equilibrium model (C81, C93) is well-established in the field (supported by citations) and provides a useful interpretive framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "There must be sex differences in PSD protein composition or regulation that make TARP concentration sensitive to synGAP levels in females but not males, despite no sex differences in synGAP amounts. Possible mechanisms include additional competing proteins in females or stronger TARP competitors in males. Interestingly, mean TARP/PSD-95 ratios do not differ between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 and C101-C103 offer mechanistic speculation about the sex difference. While the proposed mechanisms (C101-C102) are plausible, they remain speculative without direct evidence. The observation that mean TARP levels are similar between sexes (C103) despite different regulatory mechanisms is intriguing but unexplained. Additional experiments would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Recent literature documents sex differences in synaptic regulation in 7-12 week old rodents, including higher mER\u03b1 levels in females, sex-specific requirements for LTP induction, and distinct molecular signaling pathways converging to common endpoints. These findings support the existence of biochemical and structural sex differences in synaptic regulatory apparatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 accurately summarize cited literature (Wang et al. 2018, Jain et al. 2019). While these studies don't directly explain the current findings (acknowledged in C110), they provide important context showing that sex differences in synaptic regulation are increasingly recognized. This strengthens the plausibility of the authors' findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C23",
+      "C24",
+      "C25",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors previously hypothesized that synGAP regulates AMPAR anchoring by competing with TARPs for PSD-95 binding, with implications for both LTP induction (via CaMKII phosphorylation) and steady-state TARP levels in heterozygotes. The current analysis supports this hypothesis in some circumstances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C23-C25 describe the prior hypothesis, while C97-C100 restate and evaluate it. The hypothesis is reasonable and the current data (C100) provide support, though with the important caveat that the effect is sex-specific. The speculative predictions about LTP disruption (C24, C98) remain untested but are logical corollaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Previous work showed CaMKII phosphorylation reduces synGAP affinity for PSD-95 PDZ domains, potentially initiating transient PSD reorganization during LTP. Disruption of this transient role likely contributes to synGAP haploinsufficiency phenotypes, possibly without sex differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 discuss implications for dynamic PSD reorganization during LTP. While C82 cites previous findings, C83-C84 are speculative. The suggestion that this transient role may not differ between sexes (C84) is unsupported speculation. The current study examined steady-state composition, not dynamic changes during LTP, so these claims cannot be evaluated from the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "SynGAP haploinsufficiency causes about 4% of sporadic intellectual disability cases in humans. If the sex difference in synGAP-TARP interactions observed in rodents is present in humans, it might result in sex differences in symptom prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is supported by citation. However, C91 is highly speculative. While the rodent findings are robust, extrapolation to human clinical phenotypes is premature without evidence that: (1) the sex difference exists in humans, (2) altered TARP levels contribute to specific symptoms, and (3) these symptoms show sex-specific prevalence. This represents an interesting hypothesis for future investigation but is not supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C111"
+    ],
+    "result": "Background claims about synGAP function, localization, disease associations, and interactions with PSD-95, TARPs, and other PSD proteins are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C6-C22, C111 provide background information supported by appropriate citations. These establish the scientific context for the study. The claims about synGAP's roles in Ras/Rap regulation (C11), AMPAR trafficking (C12), and binding to PSD-95 (C18-C20) are well-established. The disease associations (C8-C10) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Previous work by the authors (Walkup et al. 2016) found that heterozygous Syngap1 deletion in mice correlated with increased TARP, LRRTM2, and neuroligin-2 levels, but unchanged neuroligin-1, with PSD-95 remaining constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C26-C29 accurately describe prior findings from Walkup et al. 2016. These are appropriately cited and provide the motivation for the current study. The current study's failure to replicate the TARP increase in averaged data (C40) is acknowledged and discussed, highlighting the value of the individual animal analysis approach.",
+    "result_type": "MINOR"
+  }
+]

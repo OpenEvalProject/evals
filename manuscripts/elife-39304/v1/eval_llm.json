@@ -1,0 +1,389 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C15",
+      "C16"
+    ],
+    "result": "RBMXL2 is an evolutionarily conserved RNA-binding protein found in all placental mammals that arose approximately 65 million years ago via retrotransposition from the X-linked RBMX gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C15, and C16 collectively establish the evolutionary conservation of RBMXL2 across placental mammals with consistent evidence from phylogenetic analysis. The ~65 million year timeframe and retrotransposition origin are supported by evolutionary data shown in Figure 1A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Deletion of Rbmxl2 in mice causes complete male infertility with severely reduced testis size, absence of sperm, and loss of post-meiotic cells, while female fertility remains unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C37 provide convergent evidence from multiple experimental approaches (Western blot, histology, sperm counts) demonstrating complete loss of spermatogenesis in knockout mice. The phenotype is well-characterized with appropriate quantification (n=4 mice, p<0.0001) and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Rbmxl2-/- mice arrest during the diplotene substage of meiotic prophase and subsequently undergo apoptosis, with no metaphase I cells detected and no significant defects in earlier meiotic stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 establish the specific developmental arrest point using immunofluorescence staining of meiotic markers (SYCP1/SYCP3) with adequate sample sizes (N=3 mice per genotype, 180 and 138 nuclei scored). The apoptosis is confirmed by activated Caspase-3 staining.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Rbmxl2-/- diplotene spermatocytes show abnormal centromere clustering and loss of H3K9me3 marking at the sex body, but synaptonemal complex formation and homology searching remain largely intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe secondary phenotypes with appropriate quantification (66 nuclei per genotype, n=3). The statistical significance is established (82% vs 1.5% H3K9me3 staining at sex body), though these appear to be consequences rather than primary causes of the arrest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Overall transcription patterns are similar between wild-type and Rbmxl2-/- testes at 18dpp, with only 45 genes showing \u22652-fold expression changes (adjusted p<0.05), including the deleted Rbmxl2 gene itself and Fsip2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 establish that RBMXL2 loss does not cause widespread transcriptional dysregulation. The RNAseq analysis uses appropriate statistical methods (DESeq2) with biological replicates (n=3 per genotype). The modest number of differentially expressed genes supports a specific regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "RBMXL2 controls splicing patterns during meiosis, with 237 high-confidence mis-regulated splicing events identified in 186 genes, of which 23/27 tested events were validated by RT-PCR, and 25/186 affected genes cause male infertility when deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49-C51 establish RBMXL2's role in splicing control using MAJIQ analysis with high validation rate (85%, 23/27 events). The connection to fertility genes strengthens biological relevance, though the manuscript acknowledges difficulty in determining which specific splicing defects cause the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RBMXL2 binds AA dinucleotide-containing RNA sequences (matching RBMX specificity) predominantly in intronic regions, with enrichment near regulated splice sites compared to non-regulated events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 characterize RBMXL2's RNA-binding specificity using HITS-CLIP. The AA dinucleotide preference is consistent with the high RRM sequence identity to RBMX (93.7%). The enrichment analysis appropriately compares regulated vs non-regulated events, though statistical significance testing could be more explicit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C56",
+      "C57"
+    ],
+    "result": "RBMXL2 represses aberrant splice sites and cryptic exons, with 60% of 87 classical splicing events involving de-novo splice sites, and 84% of cryptic exons disrupting reading frames or introducing stop codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C56, C57 establish RBMXL2's role in suppressing cryptic splicing. The high proportion of frame-disrupting events (84%) supports functional importance. However, the analysis focuses on 'easily visualized' events which may introduce selection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "RBMXL2 represses cryptic terminal exons that would cause premature polyadenylation, including in the Kdm4d gene (important for germ cell apoptosis), with 18 total terminal exon events showing increased selection in Rbmxl2-/- testes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 demonstrate a specific class of cryptic splicing events with evidence from RNAseq read termination patterns and polyadenylation signals. The Kdm4d example is well-documented, though the functional consequences of reduced Kdm4d expression are not definitively established (qPCR shows trend but not statistical significance).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Loss of RBMXL2 activates cryptic 5' and 3' splice sites within introns that extend annotated exons, as exemplified by the Gm5134 gene where a cryptic 3' splice site increases exon 11 by 1353 nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 describes another class of cryptic splicing with specific examples. The Gm5134 case is validated by RT-PCR (Figure 4D-E, p<0.0001), demonstrating that RBMXL2 prevents not just novel exon inclusion but also exon extension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "RBMXL2 prevents cryptic splice site activation within the highly conserved Meioc exon 5, where ~28% of transcripts use an internal cryptic 3' splice site and 22% use an internal cryptic 5' splice site in knockout mice, converting the exon into an exitron. These cryptic sites are weak (7.5th and 8th percentile) and include a non-canonical GC 5' splice site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 provide detailed characterization of Meioc mis-splicing with multiple lines of evidence: RNAseq density patterns, Sashimi plots, RT-PCR validation, splice site strength analysis, and direct RBMXL2 binding (HITS-CLIP tags including one overlapping the cryptic 5' splice site). The conservation of Meioc exon 5 supports functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "A shorter 40-50 kDa Meioc protein isoform is detected specifically in Rbmxl2-/- testes by Western blot, consistent with the predicted size after complete exitron removal from Meioc exon 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide protein-level validation of the Meioc splicing defect. The Western blot clearly shows the aberrant isoform only in knockout samples (Figure 5D), and the molecular weight matches the prediction from exitron removal, strengthening the connection between splicing changes and protein consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Aberrant splicing of Meioc exon 5 and Brca2 exon 11 appears specifically from 14dpp onwards during the first wave of spermatogenesis, corresponding to the RBMXL2 expression window during meiotic prophase, while these genes are processed normally in earlier germ cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 establish temporal specificity using developmental time-course analysis. The appearance of splicing defects at 14dpp (but not 13dpp) correlates with RBMXL2 expression timing and supports a direct role rather than indirect developmental consequences. The analysis appropriately uses multiple time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Ectopic expression of RBMXL2 in HEK293 cells represses Kdm4d cryptic exon splicing 6-fold, with RBMX showing similar repression activity. An RBMXL2 mutant lacking the RNP1 motif (\u0394RNP1) retains repression activity, though slightly less efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 demonstrate RBMXL2's splicing repression activity in a heterologous system with biological triplicates. The \u0394RNP1 result suggests protein-protein interactions may be more important than direct RNA binding for this exon, though the 'slightly less efficient' repression indicates RNA binding contributes. The functional equivalence of RBMX and RBMXL2 supports the evolutionary model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Tra2\u03b2 overexpression strongly activates Kdm4d cryptic exon splicing in HEK293 cells, but this activation is efficiently suppressed by co-expression of RBMXL2 with Tra2\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 establish antagonism between RBMXL2 and the splicing activator Tra2\u03b2 using minigene assays. The results support the buffering model, though the experiments are in a heterologous system (HEK293) which may not fully recapitulate the meiotic environment. The Tra2\u03b2 binding to Kdm4d cryptic exon is supported by iCLIP data (cited as unpublished).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Cryptic exons activated in Rbmxl2-/- testes have significantly weaker 3' splice sites compared to adjacent downstream exons, but similar exonic splicing enhancer (ESE) sequence content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 provide in silico characterization of cryptic exons using Sroogle analysis. The weak 3' splice sites combined with strong ESE content supports the model that these exons are poised for activation by splicing activators but normally suppressed. Statistical significance is shown (Figure 6C), though the sample size (panel of cryptic exons) should be explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C94"
+    ],
+    "result": "The authors propose that RBMXL2 buffers high concentrations of splicing activators during meiosis to prevent cryptic splice site poisoning, with protein-protein interactions (particularly with Tra2\u03b2) potentially more important than direct RNA binding for repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C86-C90, C94 present the central mechanistic model. While the model is consistent with the data (cryptic exons have strong ESEs, Tra2\u03b2 activates and RBMXL2 represses cryptic splicing, \u0394RNP1 retains activity), it remains speculative. The 'buffering' mechanism is inferred rather than directly demonstrated, and alternative mechanisms (e.g., recruitment of repressive complexes) are not excluded. The model is reasonable but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "RBMXL2, RBMX, and RBMY proteins physically interact with and antagonize Tra2\u03b2 and SR protein splicing activity based on prior literature, and current data show RBMXL2 blocks Tra2\u03b2-mediated Kdm4d cryptic exon activation in vitro, with \u0394RNP1 retaining repression activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 integrate prior literature with current findings. The protein-protein interaction data are from cited studies, while the functional antagonism is demonstrated in the current minigene experiments. The \u0394RNP1 result provides new mechanistic insight, though the relative contributions of RNA binding vs protein interactions remain incompletely resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Loss of RBMXL2 disrupts expression of many downstream target genes in parallel at both splicing and transcriptional levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 summarizes the pleiotropic effects observed in the RNAseq data. This is supported by the identification of both splicing changes (237 events in 186 genes) and transcriptional changes (45 genes with \u22652-fold change), though the manuscript appropriately notes difficulty in determining which specific changes cause the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The authors suggest RBMXL2 has a key role controlling the meiotic transcriptome and that human male infertility caused by loss of RBMXL2 or RBMY may be associated with germ cell-specific cryptic splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 extrapolate from mouse to human. While human RBMXL2 mutations are associated with infertility (C12), and the gene is conserved across mammals (C16), direct evidence for cryptic splicing in human infertility cases is lacking. The suggestion is reasonable but speculative pending analysis of human patient samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Testicular cells show extremely high transcription and transcriptome complexity due to epigenetic changes favoring relaxed gene expression during meiosis, with many RNA-binding proteins including RBMXL2 differentially expressed during and after meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 establish the biological context from prior literature (multiple citations) and the authors' previous work. The high transcriptional activity and altered chromatin environment provide rationale for why cryptic splice site suppression might be particularly important during meiosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "RBMXL2 point mutations are found in infertile men, and RBMXL2 belongs to the same gene family as RBMY (the first identified Y chromosome infertility gene). During meiosis when RBMXL2 is expressed, the RBMX and RBMY genes are transcriptionally silenced in the XY body, providing a genetic window to study RBMXL2 function without redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C28-C30 establish clinical relevance and genetic rationale for the study. The human genetic data (C12) and XY body silencing (C30) are from cited literature. The logic for studying RBMXL2 during meiosis to avoid redundancy with RBMX/RBMY is sound, though the manuscript notes uncertainty about whether RBMY loss causes the AZFb deletion phenotype (C29).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "RBMXL2 has an N-terminal RNA recognition motif (RRM) with 93.7% identity to RBMX and 77.2% identity to RBMY within the RRM. RBMX and RBMY bind AA dinucleotides and interact with Tra2\u03b2 and SR proteins in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 characterize RBMXL2 protein structure and relate it to family members. The sequence identity data are shown in Figure 1 supplement 1, and the RNA-binding specificity and protein interactions are from cited literature. This establishes the molecular basis for functional similarity between family members.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Alternative splicing is critical for germ cell development (e.g., PTBP2 deletion affects Sertoli cell communication), with some testis splicing events conserved between humans and mice, though many patterns are not conserved between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide context for splicing regulation in germ cells from cited literature. The mixed conservation of splicing patterns (C23-C24) is relevant to the authors' argument that cryptic splice site suppression may be conserved even if individual cryptic sites are not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "RBMX protein has been reported to control transcription, affect DNA repair and sister chromatid cohesion, and bind m6A-methylated RNA based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 cite diverse RBMX functions from literature. These are appropriately presented as reported findings rather than established facts, acknowledging the multifunctional nature of RBMX. The relevance to RBMXL2 function remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "High gene expression and cryptic exon inclusion have been observed in the nervous system following depletion of splicing repressors (TDP43, hnRNP C, hnRNPL, PTB) and in mouse oocytes depleted of SRSF3, suggesting cryptic splicing control may be important in multiple cell types with high transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 place the findings in broader context by citing parallel phenomena in other systems. The comparison to neurological diseases (C97) is particularly relevant given the clinical implications. These are appropriately cited from literature and support the generality of cryptic splicing as a regulatory challenge.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study used a 4-arm bandit task with 22 participants (19 in final fMRI analysis, 16 in pupillometry analysis) where one option had high reward probability (70% or 90%) that switched every 20\u00b15 trials. Participants alternated between exploitation (72% of trials, mean block length 13.7 trials) and exploration phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design and behavioral results are clearly described with appropriate sample sizes and descriptive statistics (C24-C29, C125-C130). The task structure is well-documented and the behavioral patterns are consistent with the intended explore-exploit paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C46"
+    ],
+    "result": "A Bayesian model captured participants' belief states, showing that model entropy was high during exploitation, increased with lower payout rates, and predicted switching behavior. High entropy and relative uncertainty significantly predicted switches from exploitation to exploration following reward omission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling results are supported by statistical tests with significant p-values (C32: t18=7.60, p=2.57\u00d710\u207b\u2077; C33: t18=13.50, p=3.7\u00d710\u207b\u00b9\u00b9) and the correlation between entropy and value is quantified (C46: r=-0.93\u00b10.005). The model successfully captures task-relevant belief dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Univariate fMRI analysis revealed distinct neural networks for exploration (frontal-parietal network, dACC/preSMA) versus exploitation (mOFC, hippocampus). Task factors including entropy, response switching, and reward explained most variance differences between phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The univariate fMRI results (GLM1-GLM3) are supported by whole-brain corrected analyses and are consistent with prior literature on model-based choice (C37). The dissociation between exploration and exploitation networks is well-established and the control analyses (GLM3, C42) demonstrate that task factors account for the observed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Multivariate fMRI analysis on core exploitation trials (25% of trials, >5 trials from phase transitions) revealed that mOFC represents task state probabilistically, with representation strength for the chosen option modulated by model entropy. This effect survived multiple control analyses and was specific to mOFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multivariate decoding results are robust, surviving whole-brain correction (C50), replicating with alternative predictors (C56, C57), and remaining significant after controlling for value and reward history (C58, C59). The hippocampus showed similar effects but did not survive correction (C52, C53). The probabilistic representation is distinct from motor/visual representations (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Pupillometry revealed that baseline pupil size was larger during exploration than exploitation and increased following reward omission. Pupil diameter indexes neuromodulatory state, with evidence linking it to both noradrenaline and acetylcholine, though changes in pupil dilation specifically favor noradrenergic interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pupillometry results are clearly documented (C65-C67) and the interpretation is appropriately cautious about the specificity to noradrenaline versus other neuromodulators (C60-C64). The authors acknowledge that pupil dilation depends on multiple factors and cannot be directly linked to noradrenaline alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Changes in pupil diameter predicted changes in mOFC representation strength specifically on unrewarded trials (t(15)=-2.94, p=0.01) but not rewarded trials (t(15)=0.37, p=0.71), suggesting pupil-linked neuromodulation controls increases but not decreases in model uncertainty. This effect was temporally specific and survived control analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pupil-brain relationship is well-supported with appropriate statistics (C68-C70), temporal specificity controls (C73), replication in explore trials (C75), and robustness to confound removal (C74). The directional specificity to unrewarded trials (C71-C72, C79) is a key finding, though the sample size for pupillometry (n=16) is modest. The interpretation that this reflects neuromodulatory control of entropy increases is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ACC activity tracked changes in model entropy and predicted subsequent pupil dilation (GLM7, GLM8), with effects specific to entropy increases and exploration initiation. However, no direct relationship was found between ACC activity and mOFC representation strength changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ACC results are supported by corrected whole-brain analyses (C80-C81, C84-C85) and are consistent with prior work on belief updating (C82). The anatomical plausibility is established (C83). The lack of direct ACC-mOFC relationship (C86) is appropriately reported as a negative result, possibly due to low SNR. The specificity to exploration initiation (C89) adds important detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study identified a probabilistic model in mOFC with entropy-dependent representation strength, where changes in representation were explained by pupil dilation, which was in turn predicted by ACC activity. This is consistent with mOFC representing hidden task-relevant information, though the exact nature and generalizability of this representation requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrates the main findings (C90-C93) with appropriate interpretation and caveats (C94-C100). The authors acknowledge task-specificity (C96-C97), uncertainty about online versus offline representation (C98), and negative findings in striatum (C100). The interpretation is appropriately cautious and grounded in prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The results provide evidence for neuromodulatory control of model uncertainty, with ACC tracking belief certainty changes and potentially regulating pupil-linked neuromodulation. While pupil dilation cannot be directly linked to noradrenaline, the findings are compatible with noradrenergic mechanisms and consistent with prior theoretical and empirical work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation appropriately acknowledges limitations (C101-C102, C111) while drawing connections to extensive prior work (C103-C104, C107-C109, C113, C115). The mechanistic proposal (C114, C117) is presented as compatible with but not proven by the data. The double dissociation between ACC and mOFC (C112) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors address and refute an alternative explanation that ACC and pupil effects only reflect exploratory behavioral drive, arguing that the association between pupil dilation and mOFC uncertainty changes in the absence of behavioral change supports a role in belief representation. They propose distinct roles for noradrenaline in ACC (behavioral stochasticity) versus internal models (belief entropy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The alternative explanation is fairly considered (C118-C119) and the counterargument is logical based on the data (C120-C121). The theoretical synthesis (C122) provides a testable framework, though it remains speculative. The conclusions about different neural mechanisms for forming versus revising beliefs (C123-C124) are appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study tested the hypothesis that noradrenaline controls uncertainty in neural models by examining whether pupil diameter (indexing neuromodulatory state) predicts entropy changes in neural state models. Results showed pupil diameter predicted increases but not decreases in entropy in mOFC, and ACC activity predicted pupil diameter, providing evidence for top-down neuromodulatory control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents the core hypothesis and main findings of the paper (C4, C6-C8). The theoretical motivation is well-established (C1-C3) and the empirical results support the hypothesis, though with appropriate caveats about the indirect nature of pupil measurements (C5). The directional specificity (increases but not decreases) is a key finding that strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The theoretical framework establishes that internal models require both evidence-driven updating and transition function updating to maintain flexibility. Prior work has linked ACC to volatility-dependent learning rates and noradrenaline to model uncertainty control, with the 'network reset' hypothesis being particularly relevant to transition function updating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical background is well-supported by extensive citations to prior work (C12, C14, C16-C23) and provides appropriate context for the current study. The distinction between evidence-driven and transition function updating (C10-C13) is clearly articulated and motivates the focus on mechanisms for increasing uncertainty (C15).",
+    "result_type": "MINOR"
+  }
+]

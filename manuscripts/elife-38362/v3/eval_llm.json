@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Y-acidic motifs represent a novel class of cargo adaptor recognition sequences characterized by a tyrosine flanked by acidic residues. These motifs are present in JIP1 and TorsinA and bind to KLC1TPR with low micromolar affinity (KD ~1-2 \u03bcM at physiological ionic strength) in an isoform-specific manner, showing strong preference for KLC1 over KLC2 (>50-fold selectivity). The binding is electrostatic in nature, as demonstrated by salt-dependent affinity measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C38-C40 provide quantitative fluorescence polarization data showing KD values in the low micromolar range for KLC1TPR and >20-fold weaker binding to KLC2TPR. The salt-dependence (C32-C33, C40) demonstrates electrostatic contributions. The structural identification of the Y-acidic core (C4, C6) is supported by sequence alignments and crystallographic data. Control ITC experiments (C34) validate the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Crystal structures of KLC1TPR in complex with JIP1C-term (2.7 \u00c5) and TorsinAC-term (2.3 \u00c5) reveal that Y-acidic peptide recognition induces a dramatic 'open-to-closed' conformational transition involving a ~30\u00b0 rotation of the N-terminal domain. This represents an induced-fit mechanism with the TPR1(\u03b11) helix undergoing a lateral displacement of over 16 \u00c5, demonstrating remarkable plasticity of the KLC1TPR domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 report crystallographic resolution, C51-C56 provide quantitative structural analysis (rmsd values, rotation angles, displacement distances) calculated using the DynDom algorithm. The conformational changes are well-documented with specific measurements and comparison to ligand-free structures. The electron density observations (C48-C49) confirm peptide binding, and the flexibility of the engineered linker (C50) validates the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The molecular interface between KLC1TPR and Y-acidic peptides involves ~75% of peptide surface atoms forming extensive contacts (~710-887 \u00c5\u00b2). Key interactions include: (1) the conserved tyrosine (p0) hosted in a cavity between TPR3 and TPR4 lined by specific residues including V305, K309, Y313, N344, L347, L348, N351; (2) asparagine pairs forming hydrogen bonds with peptide backbone; (3) critical salt bridges between the C-terminal acidic residue and R266/K340. Loss of the C-terminal negative charge completely abrogates binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide quantitative PISA analysis of interface areas. Claims C63-C67 detail specific molecular interactions observed in crystal structures. The functional importance is validated by mutagenesis: C68 shows complete loss of binding upon C-terminal amidation (fluorescence polarization), and C69-C70 demonstrate conservation of interactions between JIP1 and TorsinA complexes. The structural observations are internally consistent and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cellular validation through co-immunoprecipitation demonstrates that all tested interface mutations (R266S, V305T, N343S, N386S, N469S) substantially reduce JIP1 binding to KLC1TPR (15-35% residual binding). Two asparagine residues (N343 and N469) are entirely responsible for KLC1 isoform specificity: these positions are serines in KLC2, and the KLC2TPR S328N,S454N double mutant restores KLC1-like binding affinity (KD = 1.29 \u03bcM), representing a ~37-fold increase over wild-type KLC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 present co-IP data with quantification showing significant reduction in binding for all interface mutations but not for negative controls. Claims C77-C80 identify the two divergent residues through sequence comparison and demonstrate their functional importance through mutagenesis. Claims C81-C83 provide fluorescence polarization data showing that swapping these two residues in KLC2 is sufficient to confer KLC1-like binding, directly proving their role in isoform specificity. The combination of structural, cellular, and biochemical data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Y-acidic and W-acidic motifs bind to partially overlapping but shifted sites on KLCTPR: W-acidic motifs bind toward the N-terminal end (tryptophan between TPR2-TPR3) while Y-acidic motifs bind more C-terminally (tyrosine between TPR3-TPR4). W-acidic binding induces a smaller conformational change (~20\u00b0 rotation) compared to Y-acidic binding (~30\u00b0). Competition experiments demonstrate that unlabeled SKIPWD peptide can displace TAMRA-JIP1C-term, indicating that a single KLC1TPR cannot simultaneously engage both adaptor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are based on structural superposition of KLC1TPR-JIP1C-term with the published KLC2TPR-SKIPWD structure, providing clear spatial relationships and quantitative conformational analysis. Claim C88 provides direct experimental evidence through fluorescence polarization competition assays showing concentration-dependent displacement. The inference in C89 logically follows from the structural and competition data. The comparison is well-supported by both structural and functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The LFP-acidic intramolecular region differentially affects Y-acidic versus W-acidic peptide binding. SKIPWD binding to KLC1TPR is inhibited >10-fold by the LFP-acidic extension (KD from 0.64 to 8.20 \u03bcM), while JIP1C-term binding shows minimal effect (KD 0.95 vs 2.21 \u03bcM). Structural analysis suggests this is due to the more C-terminal position of Y-acidic peptides along the TPR cavity, allowing compatibility with LFP-acidic binding, whereas W-acidic binding sites overlap with the LFP-acidic region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 provide quantitative fluorescence polarization data showing the differential effect of the LFP-acidic region on the two peptide types. Claim C90 cites previous work establishing this effect for KLC2. Claims C93-C95 provide structural rationalization through superposition with KLC2extTPR showing no clashes for JIP1C-term but overlap for SKIPWD. The combination of biochemical measurements and structural analysis provides strong support, though the authors acknowledge limitations of the poly-Ala model (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "JIP1 and JIP3 act cooperatively to recruit kinesin-1, with JIP1C-term binding to KLC1TPR being critically important for complex assembly. Co-immunoprecipitation shows that while JIP1 binds KLC1TPR effectively alone, JIP3 binding is weak in isolation but significantly enhanced by JIP1 co-expression. The R266S mutation that disrupts JIP1 binding also reduces JIP3 association. ITC measurements reveal that JIP3LZ2 binds KLC1TPR with KD ~3.5 \u03bcM in a 2:1 stoichiometry (two TPR domains per JIP3LZ2 dimer), and this binding is independent of JIP1C-term loading or the LFP-acidic region, indicating that key cooperative interactions lie outside the direct TPR domain interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 present co-IP data demonstrating cooperativity and the importance of JIP1C-term binding. Claims C100-C103 provide quantitative ITC data showing JIP3LZ2 binding affinity and stoichiometry, with consistent KD values across different KLC1 constructs. Claim C101 is supported by ITC, mass spectrometry (referenced in supplementary figure), and consistency with a published crystal structure. The inference in C104-C105 logically follows from the observation that JIP3 binding is unaffected by JIP1C-term. The combination of cellular and biochemical data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Despite binding to KLCTPR with similar low micromolar affinity, Y-acidic and W-acidic motifs exhibit different capacities to promote kinesin-1 activity. The differential effect of the LFP-acidic region on the two motif types (substantial inhibition of W-acidic but minimal effect on Y-acidic binding) suggests that Y-acidic binding might co-exist with LFP-acidic binding and therefore cannot alone initiate the kinesin-1 activation pathway that W-acidic motifs trigger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by fluorescence polarization data showing KD values in the low micromolar range for both motif types. Claim C11 is supported by citations to previous functional studies. Claims C123-C124 summarize the differential LFP-acidic effects demonstrated in the results (C91-C92). Claim C125 represents a logical inference from the binding data. However, the mechanistic explanation remains somewhat speculative as direct activity measurements are not presented in this study, relying instead on cited literature and structural inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background on kinesin-1 structure, function, and regulation establishes the biological context for the study, including its heterotetrameric structure, role in anterograde transport, links to neurodegenerative diseases, autoinhibited state, and the regulatory role of the LFP-acidic region in KLCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C23) provide established background information supported by appropriate citations to the literature. They are not novel findings of this study but rather contextual information. Claims C22-C23 cite the authors' previous work on the LFP-acidic region. All statements are appropriately referenced and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background on JIP1 and TorsinA as cargo adaptors establishes that JIP1C-term is necessary and sufficient for KLC1-specific binding but insufficient for motor activation, and that TorsinA's C-terminal ~80 amino acids are sufficient for KLC1 interaction, with both proteins sharing a conserved Y-acidic core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 summarize established literature on JIP1 with appropriate citations. Claims C35-C36 cite previous work on TorsinA. Claim C37 represents an observation from sequence alignment (Figure 1C) that motivated the structural studies. These are appropriately cited background claims that set up the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Control ITC experiment confirms that the TAMRA label does not interfere with JIP1C-term binding to KLC1TPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 describes a control experiment (Figure 1\u2014figure supplement 2) comparing labeled and unlabeled peptides by ITC, which is essential for validating the fluorescence polarization measurements. This is a methodological validation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Discussion of KLCTPR plasticity and TorsinA biology, including its ER/NE localization, potential cytosolic translocation under stress, and structural plasticity of TorsinAC-term that may enable selection of different partners in alternative subcellular locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 represents a general conclusion from the structural data. Claims C107-C111 cite literature on TorsinA biology. Claim C112 compares the current structure with a published TorsinA-LULL1 structure, which is well-supported. However, claim C113 is speculative about the functional significance of TorsinAC-term plasticity, drawing an analogy to other systems but lacking direct experimental validation in the context of kinesin-1 transport.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Discussion of differential activation capacities of W-acidic versus Y-acidic motifs, noting that W-acidic motifs can both recognize and activate kinesin-1, while Y-acidic motifs (JIP1) require additional factors like JIP3 or FEZ1 for activation, and that W-acidic binding displaces the LFP-acidic intramolecular interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 and C120-C122 summarize established literature with appropriate citations. These are not novel findings but rather synthesis of prior work that provides context for interpreting the current structural and biochemical results. The claims accurately represent cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Proposed models for JIP1/JIP3-mediated kinesin-1 activation suggest either that JIP3 cooperation displaces the LFP-acidic linker (similar to W-acidic activation) or that an alternative activation pathway exists that is more reliant on direct KHC interactions. JIP3LZ2-mediated TPR dimerization could drive activation through steric effects, though functional complexes would have TPR domains in the closed conformation induced by Y-acidic binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 present alternative hypothetical mechanisms without direct experimental evidence to distinguish between them. Claim C128 proposes a steric mechanism based on ITC/MS data and a published structure, but this remains speculative. Claim C129 infers that functional complexes would have closed TPR conformations based on the structural data, which is reasonable but not directly demonstrated. These represent plausible models that require future experimental validation through direct activity assays and structural studies of ternary complexes.",
+    "result_type": "MINOR"
+  }
+]

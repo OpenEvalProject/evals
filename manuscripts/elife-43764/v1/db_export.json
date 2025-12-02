@@ -1,0 +1,1565 @@
+{
+  "submission": {
+    "id": "d765b108-6201-43d0-8797-095637c83833",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:08:21.326859Z",
+    "updated_at": "2025-12-02T10:08:21.326859Z"
+  },
+  "content": [
+    {
+      "id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "submission_id": "d765b108-6201-43d0-8797-095637c83833",
+      "content_type": "manuscript",
+      "content_text": "# Influenza A virus surface proteins are organized to help penetrate host mucus\n\n## Authors\n\n- Michael D Vahey<sup>1</sup> ([ORCID: 0000-0001-9453-4860](https://orcid.org/0000-0001-9453-4860)) \u2020\n- Daniel A Fletcher<sup>1</sup> ([ORCID: 0000-0002-1890-5364](https://orcid.org/0000-0002-1890-5364)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering University of California, Berkeley Berkeley United States\n2. Biophysics Program University of California, Berkeley Berkeley United States\n3. Biological Systems & Engineering Lawrence Berkeley National Laboratory Berkeley United States\n4. Chan Zuckerberg Biohub San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nInfluenza A virus (IAV) enters cells by binding to sialic acid on the cell surface. To accomplish this while avoiding immobilization by sialic acid in host mucus, viruses rely on a balance between the receptor-binding protein hemagglutinin (HA) and the receptor-cleaving protein neuraminidase (NA). Although genetic aspects of this balance are well-characterized, little is known about how the spatial organization of these proteins in the viral envelope may contribute. Using site-specific fluorescent labeling and super-resolution microscopy, we show that HA and NA are asymmetrically distributed on the surface of filamentous viruses, creating a spatial organization of binding and cleaving activities that causes viruses to step consistently away from their NA-rich pole. This Brownian ratchet-like diffusion produces persistent directional mobility that resolves the virus\u2019s conflicting needs to both penetrate mucus and stably attach to the underlying cells, potentially contributing to the prevalence of the filamentous phenotype in clinical isolates of IAV.\n\n## Introduction\n\nFor a virus to infect a cell, it must reach receptors on the cell surface while avoiding neutralization or clearance by \u2018decoy\u2019 receptors in the surrounding environment. For viruses that bind to sialic acid, a receptor that is abundant both on the surface of cells and in the secreted extracellular mucosal environment, attachment and detachment is controlled by receptor-binding and receptor-destroying activities on the viral surface (Rosenthal et al., 1998; Zeng et al., 2008). Influenza A viruses (IAVs), respiratory pathogens that contribute to seasonal flu and have pandemic potential, achieve this balance with hemagglutinin (HA)-mediated receptor binding and neuraminidase (NA)-catalyzed receptor destruction (Air and Laver, 1989; Skehel and Wiley, 2000). Although the importance and genetic basis of the functional balance between HA and NA in IAV has been thoroughly characterized (Wagner et al., 2002; Xu et al., 2012; Yen et al., 2011), it is becoming clear that transmissibility of influenza viruses within and between hosts depends on factors beyond the sequence of these two genes (Chou et al., 2011; Herfst et al., 2012; Neumann and Kawaoka, 2015).\n\nMucosal barriers present the first line of defense against IAV infection. To infect the underlying epithelium, viral particles must first pass through a\u00a0~\u00a01\u201310 \u03bcm thick layer of mucus that is being steadily transported towards the pharynx where it can be swallowed, neutralizing any virus immobilized within it (Bustamante-Marin and Ostrowski, 2017; Wanner et al., 1996; Zanin et al., 2016). Viruses that bind too tightly to sialic acid will pass through the mucus barrier very slowly, and will thus be unable to reach the surface of an airway epithelial cell before mucociliary clearance. In contrast, viruses that bind only very weakly to sialic acid (or which rapidly destroy it through excessive NA activity [Cohen et al., 2013; Yang et al., 2014]) will quickly penetrate mucus, but may be unable to stably attach to the surface of the underlying epithelium once it is reached. Adaptations that help the virus to overcome both of these conflicting challenges, such as changes in virus morphology or a particular spatial organization of envelope proteins, could be evolutionarily favored during in vivo replication.\n\nInterestingly, one feature of IAV that tends to diverge when clinical isolates are cultured in a laboratory environment, or when\u00a0animals are infected with laboratory-grown strains, is particle morphology. While clinical isolates of IAV \u2013 samples adapted to transmission in a mucosal environment \u2013 form filamentous particles with a consistent diameter but widely varying length, laboratory-adapted strains tend to produce more uniform, spherical particles (Badham and Rossman, 2016; Chu, 1949; Dadonaite et al., 2016; Seladi-Schulman et al., 2013). Recent evidence from the 2009 pandemic suggests that filamentous morphology, conferred by the virus\u2019s M segment, may play a role in transmission (Campbell et al., 2014; Lakdawala et al., 2011). However, whether or not virus morphology contributes directly to virus transmission \u2013 and if so, how \u2013 remains unclear. Similarly, although the two major envelope proteins of IAV, HA and NA, have been observed by electron microscopy to cluster non-uniformly on both the viral and pre-viral envelope (Calder et al., 2010; Harris et al., 2006; Leser and Lamb, 2017), whether and how the spatial organization of HA and NA affects virus transmission also\u00a0remains unclear.\n\nMotivated by these observations, we reasoned that virus shape, together with the packaging and organization of HA and NA in the viral membrane, could influence the balance of attachment and detachment in ways that promote efficient virus penetration through mucus. To test this idea, we sought to characterize the organization of proteins in filamentous IAV particles while simultaneously observing their engagement with sialic acid \u2013 a measurement that requires a non-destructive approach. To make this measurement possible, we recently developed strains of influenza A virus that are amenable to fluorescence microscopy through site-specific tags introduced into the viral genome (Vahey and Fletcher, 2019). Here we show that filamentous particles frequently contain asymmetric distributions of HA and NA in their membranes, and that this distinctive organization biases the diffusion of these particles in a persistent direction over distances of several microns. By enhancing the effective diffusion of a viral particle without reducing the stability of its attachment to the viral receptor, this mechanism could promote\u00a0virus penetration across mucosal barriers.\n\n## Results\n\n### HA and NA are distributed asymmetrically on the surface of IAV particles\n\nWe first sought to characterize the organization and dynamics of proteins in the viral membrane. By labeling HA and NA, along with the viral nucleoprotein, NP, we are able to measure features of virus organization on intact, infectious particles that corroborate and extend previous observations made using electron microscopy (Calder et al., 2010; Chlanda et al., 2015; Harris et al., 2006; Leser and Lamb, 2017). For these experiments, we use a tagged variant of the strain A/WSN/1933 with M1 from A/Udorn/1972, which differs from WSN M1 at six residues and confers filamentous morphology (Elleman and Barclay, 2004). Consistent with our prior observations, this virus produces filamentous particles that vary widely in size, from sub-diffraction limited spots to particles\u00a0>\u00a010 \u03bcm in length (Vahey and Fletcher, 2019). In viruses with fluorescently-labeled HA and NA, we observe a pronounced tendency for NA to be enriched at one end of the virus (Figure 1A, inset). To quantify this enrichment, we measured the relative intensities of HA and NA within\u00a0~400 nm of each viral pole in filamentous particles\u00a0>\u00a01 \u00b5m in length. Across 20344 such particles, approximately one third have NA intensities at least 5-fold higher on one pole than on the other (Figure 1A, left). Similarly, viruses with labeled NP (the most abundant protein in vRNP complexes and a proxy for the virus genome) reveal individual foci that localize to one end of the virus. Aligning filamentous particles with polarized NP foci (4805 in total) reveals a tendency for NA to colocalize with NP (Figure 1A, right). For the subset of these particles\u00a0>\u00a04.5 \u00b5m in length (540 in total), we created a composite image showing the average densities of viral proteins within 2 \u00b5m of each viral pole (Figure 1\u2014figure supplement 1). On average, NA is enriched\u00a0~2 x relative to HA at the NP-containing pole in these particles, as compared to the middle region of the particle and the opposite pole (Figure 1\u2014figure supplement 1, bottom), suggesting that NA localization is linked (directly or indirectly) to the location of the viral genome. This protein distribution is stable, since photobleached portions of unfixed filamentous particles do not recover fluorescence in either HA or NA over tens of minutes (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig1-v1.jpg)\n\n**Figure 1.:** (A) Abundance of viral proteins at one viral pole relative to the other, measured as the ratio of intensities within\u00a0~400 nm of either end of the virus. The plot to the left compares HA and NA intensities for 20344 filamentous particles of at least\u00a0~1 \u03bcm in length. Approximately one third of filamentous particles have NA intensities five-fold higher on one pole than the other, as indicated by the vertical dashed lines (distributions are symmetric in this case because poles are designated randomly). Inset images show a particle with NA enrichment of\u00a0~5.6 fold (~31st percentile of particles). The plot to the right shows the same comparison for particles aligned to their NP-foci, designated as pole 1 (distributions are determined from a total of 4805 particles with polarized NP distributions). The prevalence of particles with NA ratios\u00a0>\u00a01 indicates a tendency for NA to be enriched at the virus\u2019s genome-containing pole. Inset images show a particle with NA enrichment of\u00a0~3.3 fold (~48th percentile of particles based on NA polarity). (See also Figure 1\u2014figure supplement 1).(B) Photobleached fluorescent NA (top) and HA (bottom) on filamentous particles show no recovery after 20 min, indicating that NA and HA are immobilized in the viral membrane (scale bar\u00a0=\u00a0500 nm). Data is representative of n\u00a0=\u00a08 viruses (NA) and n\u00a0=\u00a05 viruses (HA) from three biological replicates. (C) STORM reconstructions at\u00a0~30 nm resolution of a pair of viruses unresolveable by diffraction-limited microscopy, each showing the characteristic localization of NA at one end of the virus (scale bar\u00a0=\u00a0200 nm). (D) STORM reconstructions of a filamentous virus at\u00a0~30 nm resolution reveal clusters of HA and NA which partly exclude each other, illustrated by the inverse correlation in HA and NA intensities along the axis of the virus (scale bar\u00a0=\u00a0200 nm). (E) Distribution of HA-NA spatial correlation coefficients from regions of 24 filamentous particles following reconstruction at\u00a0~30 nm resolution. (F) To compare populations of virus that are able to detach from infected cell to those that remain bound to the cell surface with or without NAIs, we collect virus in two separate stages: first, we harvest virus from media at 16hpi, followed by the addition of media supplemented with an exogenous, oseltamivir-resistant bacterial neuraminidase. After one hour of treatment with exogenous NA, we harvest virus that had previously remained bound to the cell surface. (G) Plot showing the HA-NA polarity of viruses released in the presence or absence of NAI and exogenous sialidase. Boxes show median values of HA-NA polarity and 25th-75th percentile ranges for each of four biological replicates, with between 499 and 2067 filamentous viruses each (p-values determined using a paired-sample T-test). See also Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A composite image of the poles of 540 filamentous viruses\u00a0\u2265\u00a04.5 \u03bcm in length with fluorescently labeled HA (SrtA), NA (Sfp), and NP (FlAsH-EDT2). Particles are aligned by the location of the viral genome (NP). On average, NA intensity at the NP-containing (\u2018distal\u2019) pole of the virus is enriched\u00a0~\u00a02 x relative to rest of the virus after normalizing by HA intensity (scale bar\u00a0=\u00a0200 nm).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Image of overlapping filamentous viruses acquired using diffraction-limited microscopy (shown with inverted contrast). (B) STORM reconstruction of the same image as in (A), with indicated cross sections i and ii. (C) To estimate the resolution of STORM reconstructions, we compare the collected STORM cross-sections of filamentous viruses (i and ii) to simulated cross-sections, where uniformly distributed molecules on the viral surface are each modeled as a gaussian whose standard deviation serves as a fit parameter. The standard deviation that yields the best fit with our data (~30 nm) provides an approximate resolution for our reconstructions.\n\nTo investigate the finer details of protein organization and to determine if NA in fluorescent viruses is clustered, as suggested by electron microscopy (Calder et al., 2010; Harris et al., 2006), we use two-color stochastic optical reconstruction microscopy (STORM)\u00a0to reconstruct images of HA and NA with resolution\u00a0~10X better than the diffraction limit (~30 nm compared to\u00a0~300 nm; Figure 1\u2014figure supplement 2). At this resolution, we find that the tendency of NA to concentrate at one of the viral poles is pronounced even in particles smaller than 300 nm in length (Figure 1C). We also find that the NA seen at low levels along the length of filamentous viruses without super-resolution imaging is actually organized into small NA clusters (Figure 1D). Additionally, HA and NA distributions in these particles are modestly anti-correlated (Figure 1E), suggesting that receptor-binding and receptor-destroying activities may be spatially segregated on some regions of the virus. Collectively, these measurements present a picture of a variegated IAV envelope whose spatial organization is stable and coupled to the presence and location of the viral genome, with ~70% of NP-containing viruses having NA biased to the proximal pole.\n\nWe next investigated whether spatial organization of the IAV envelope could have functional significance for virus binding and detachment. As a first test of this idea, we compared the spatial organization of viruses that were released from the cell surface with those that remained attached after challenging the virus with the neuraminidase inhibitor (NAI) oseltamivir carboxylate (He et al., 1999) (Materials and methods). To quantify virus spatial organization, we defined HA-NA polarity as the separation between the center of masses for HA and NA divided by the virus length. Interestingly, viruses that escaped the cell surface under NAI challenge showed higher HA-NA polarity (0.155; 95% confidence interval, CI\u00a0=\u00a00.139\u20130.171) than viruses released in the absence of NAI challenge, both before (0.123; 95% CI\u00a0=\u00a00.106\u20130.140) and after (0.100; 95% CI\u00a0=\u00a00.090\u20130.110) facilitating virus release by treating with exogenous sialidase (Figure 1F & G). In comparison, viruses treated with both NAI and exogenous sialidase have polarities similar to the untreated virus (0.124; 95% CI\u00a0=\u00a00.111\u20130.136). These results suggest that viruses with NA concentrated at one of the viral poles may be more effective at navigating environments rich in sialic acid.\n\n### Polarized viruses step persistently away from their NA-rich pole\n\nTo directly test how NA polarization might affect virus motion, we characterized interactions between fluorescently-labeled viruses and sialic acid coated coverslips, where the well-defined geometry and density of sialic acid allow straightforward analysis of virus diffusion (Materials and methods) (Figure 2A). Because our approach to fluorescently labeling NA preserves its activity (Figure 2\u2014figure supplement 1) and viruses harboring fluorophores on both HA and NA preserve\u00a0~85% of their infectivity (Vahey and Fletcher, 2019), we could carry out functional assays with the virus and at the same time visualize HA and NA distributions on the viral membrane. Surprisingly, the motion we observed did not resemble randomly-oriented diffusion of the viral particle, but rather persistent, Brownian ratchet-like diffusion, in which filamentous particles with polarized distributions of NA exhibited directed mobility away from their NA-rich pole (Figure 2B, Video 1). Labeling coverslips with fluorescein-labeled Erythrina cristagalli lectin (ECL), which binds specifically to the terminal galactose exposed following sialic acid cleavage (Iglesias et al., 1982), revealed the history of virus trajectories and confirmed that virus motion is accompanied by receptor destruction (Figure 2B). Aligning the trajectories of mobile particles (defined as those with diffusion coefficients\u00a0>\u00a0100 nm2/s, comprising\u00a0~68% of the population; Figure 2C) to the orientation of their HA-NA axis reveals that directional mobility can persist for several microns, many times the length of the particle itself (Figure 2D). Consistent with the observation that polarized distributions of HA and NA serve as a determinant for persistent motion and enhanced diffusion, we find that non-mobile viruses have, on average, less polarized distributions of HA and NA than mobile ones (Figure 2E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig2-v1.jpg)\n\n**Figure 2.:** (A) Labeled viruses are placed on coverslips passivated with PEG2K and functionalized with biotinylated fetuin, which provides a high density of receptors for HA and substrates for NA that can be imaged using TIRF microscopy. (B) Time series of a virus migrating in the direction of its higher-HA pole (scale bar\u00a0=\u00a02 \u00b5m). Viruses exhibiting persistent motion on sialic acid-coated surfaces leave a trail of terminal galactose to which fluorescent ECL binds, indicating NA cleavage of receptors as the virus moves. (C) Distribution of virus diffusion coefficients determined by measuring the mean squared displacement versus time. Mobile particles are defined as those with diffusion coefficients\u00a0>\u00a0100 nm2/s, corresponding to the more diffusive subset of the bimodally-distributed population. (D) Trajectories (measured from timelapse images) of n\u00a0=\u00a0347 mobile viruses registered to their initial positions and aligned based on the orientation of the HA-NA axis. Blue and red dots at y\u00a0=\u00a00 show the median positions of HA and NA (with median separation of\u00a0~130 nm), respectively, across all viruses. Data is pooled from three biological replicates. (E) HA-NA organization correlates with virus mobility. Populations exhibiting little motion (\u2018non-mobile\u2019) have significantly less polarized distributions of HA and NA than those that exhibit persistent directional mobility (quantification of n\u00a0=\u00a0163 non-mobile and n\u00a0=\u00a0347 mobile viruses combined from three biological replicates; boxes are centered on median values and span from 25th to 75th percentile; p-value calculated using a two-sample KS-test). See also Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The activity of viruses labeled with Alexa fluor 555 following the same protocol used for imaging experiments matches that of unlabeled samples. Data is from three biological replicates, normalized within each replicate to the MUNANA signal from unlabeled samples at the final timepoint. Under these labeling conditions, the efficiency of fluorophore attachment to NA is\u00a0>50% (Vahey and Fletcher, 2019).\n\n![Video 1.](https://cdn.elifesciences.org/articles/43764/elife-43764-video1.mp4.jpg)\n\n**Video 1.:** Labeled HA is shown in blue and labeled NA is shown in red. Panels are shown at equivalent scales.\n\nTo determine if polarized distributions of NA were necessary for persistent directional mobility, we disrupted the spatial organization of viral surface proteins by removing the cytoplasmic tail of NA (residues 2\u20136; Figure 3\u2014figure supplement 1A) and rescuing a tagged variant of the virus (NA\u0394CT). Although NA expression on the surface of infected cells is comparable to that seen for wildtype virus, deletion of the cytoplasmic tail reduces packaging of NA into virions (Figure 3\u2014figure supplement 1B & C). Additionally, although NA\u0394CT virus imaged at\u00a0~30 nm resolution using STORM still exhibits NA clusters resembling those found in wildtype virus, the clusters are no longer immobilized on the surface of the virus, as revealed by photobleaching experiments (Figure 3\u2014figure supplement 2A & B). Although both wildtype and NA\u0394CT viruses form filamentous particles (with wildtype virus producing a higher proportion of extremely large filaments\u00a0>3 \u03bcm in length; Figure 3\u2014figure supplement 2C), the polarity of NA distributions on the viral surface is significantly decreased in the NA\u0394CT strain relative to wildtype (Figure 3\u2014figure supplement 2D). Using the same sialic acid coated surfaces, NA\u0394CT viruses no longer exhibited persistent directional motion (Figure 3A), indicating that spatial organization of NA at the poles is necessary for persistent mobility of IAV.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig3-v1.jpg)\n\n**Figure 3.:** (A) NA\u0394CT virus create ECL tracks that appear less persistent than those generated by virus with wildtype NA. Red arrows indicate tracks where viruses have dissociated (scale bar\u00a0=\u00a02 \u00b5m). (B) Mean squared displacements (MSD) for mobile viruses with (left) and without (right) the NA cytoplasmic tail for an observation window of 1500 s. Measured MSDs (in magenta and green) are compared to MSDs from simulated random walks (gray) using the same step size and frequency but with uncorrelated direction. Dark lines show median MSDs, and shaded regions indicate the 25th to 75th percentile range. Data is pooled from three biological replicates. (C) Histogram of virus stepping angle relative to virus orientation for virus with wildtype NA (magenta) and NA\u0394CT (green). While wildtype viruses step in the direction of increasing HA roughly twice as frequently as they step in the opposite direction, virus with NA\u0394CT do not exhibit any orientational preference. Data is pooled from three biological replicates. (D) Quantification for n\u00a0=\u00a010 simulations of 250 nm viruses with uniform (green) or polarized (magenta) distributions of NA, showing the tendency of viruses to step preferentially along the viral axis only when NA is polarized. The model of an idealized virus is in general agreement with experimental results shown in (C) that include viruses with a wide variety of sizes and HA-NA organizations. (E) The effects of receptor (i.e. sialic acid) diffusion on virus motion. Allowing surface diffusion of sialic acid during simulations can enhance or suppress directional motion of viruses, depending on the receptor mobility and the catalytic rate of NA. Up to a diffusion coefficient of\u00a0~0.01 \u00b5m2/s, typical of a slowly diffusing membrane protein, a directional bias in virus diffusion is preserved. Trajectories show the results of 10 simulations for each condition in black, with the average is red. See also Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Construction of an NA segment lacking the N-terminal cytoplasmic tail. Mutating the initial methionine and inserting a new start codon following the coding regions important for vRNA packaging enables the rescue of recombinant virus. (B) NA\u0394CT virus is expressed on the cell surface but is incorporated into budding viruses (indicated with arrow) less efficiently than wildtype NA (lower panels) (scale bar\u00a0=\u00a05 \u00b5m). (C) Imaging released virions supports this observation, with NA incorporation per virion reduced\u00a0~\u00a0three fold with the deletion of the cytoplasmic tail (scale bar\u00a0=\u00a010 \u00b5m).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) STORM imaging of NA\u0394CT reveals a clustered distribution of HA and NA on the surface of filamentous viruses, similar to the nanometer-scale organization of wildtype virus (scale bar\u00a0=\u00a0200 nm). (B) In contrast to viruses with wildtype NA, photobleaching of NA\u0394CT on filamentous viruses shows partial recovery on the timescale of several minutes, indicating that the enzyme is at least partially mobile. Results are representative of recovery for n\u00a0=\u00a08 bleached viruses. (C) Particle length distributions for viruses with wildtype NA and NA\u0394CT, showing similar proportions of particles for lengths below\u00a0~\u00a03 \u03bcm. Viruses with wildtype NA produce a significantly higher proportion of particles larger than 3 \u03bcm. Plots show the mean and standard deviation for four biological replicates (*: p<0.05; **: p<0.01; ***: p<0.001, determined from a two-sample t-test). (D) Distributions of HA-NA polarity in wildtype and NA\u0394CT viruses. Boxes show median values and 25th-75th percentile ranges for each of four biological replicates; P-value is determined from a two-sample t-test.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Enzymatic activity (measured using MUNANA) for intact virus samples with wildtype and NA\u0394CT, normalized by relative NA content (determined by imaging fluorescently labeled virus). Rates of MUNANA turnover per molecule of NA do not change significantly when the cytoplasmic tail of NA is deleted. Quantification shows the mean and standard error for three biological replicates; p-value determined by a two-sample t-test. (B) Evaluating the NA-activity of individual viruses against immobilized substrates: viruses bound to fetuin-functionalized coverslips were incubated for 30 min before labeling with fluorescent ECL to quantify cleavage of sialic acid. Normalizing by NA content (measured by imaging fluorescently-labeled NA) shows a significant increase in the activity of NA\u0394CT relative to NA(wt) for immobilized substrates. Boxes indicate the median and 25th / 75th percentile measured from two biological replicates with a total of 198 viruses (NA wildtype) and 130 viruses (NA\u0394CT); p-value determined using a two-sample KS test. (C) and (D) show quantification of the same data, without normalizing for NA abundance for the entire sample (in C) or for individual viruses (in D).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Orientation of cylindrical (left) and spherical (right) viral particles on flat surfaces. Of the three rotational degrees of freedom, only rotations in \u03b8 are considered in our simulations of cylindrical particles. Rotations in \u03c8 (which reduce the number of possible HA-SA interactions) are not observed experimentally. Rotations in \u03c6 likely occur, but do not appreciably change the number and location of HA and NA molecules proximal to the surface. Unlike cylindrical particles, spherical particles would be expected to rotate about \u03b8, \u03c6, and \u03c8, leading to variations in the number of NAs proximal to the surface over time which would tend to randomize the virus\u2019s direction of motion. As a result, spherical particles are not included in simulations. (B) Model for virus binding and diffusion accounting for multivalent adhesion of HA, turnover of proximal substrates by NA, and thermal fluctuations constrained by the position of bound HA-SA pairs. The virus is modeled as a lattice of HA and NA whose distributions are specified. Viruses interact with uniform distributions of sialic acid on a two-dimensional surface. HAs within a 7.5 nm radius of sialic acid can probabilistically bind, while NAs within the same radius can probabilistically cleave. Once bound, virus position and bearing can change only if it does not displace any bound HA-SA pairs beyond the specified binding radius (7.5 nm in these simulations).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Polarized distributions of NA (top) result in sialic acid distributions (middle) that decrease abruptly within a few tens of nanometers of the NA cluster. While most HAs sample from uniform distributions of sialic acid, those close to the NA cluster have a higher probability of binding to sialic acid that is offset from the HA in the positive direction. This results in a persistent bias in the direction of virus diffusion (bottom). (B) and (C) Similar to (A), but with two different types of symmetric NA distributions. In both cases, symmetric distributions of sialic acid (middle) result in symmetric random walks (bottom). In the one-dimensional case shown here, although the probability of positive or negative displacements are initially equal, once a displacement direction is established, the virus will tend to continue in the established direction. (D) Results of two-dimensional simulations with varying organizations of NA on the virus\u2019s surface. Although localizing NA to one of the virus\u2019s poles (\u2018polar\u2019 configuration) produces consistent oriented motion, introducing separation between HA-rich and NA-rich regions with the same NA localization (\u2018gapped\u2019 configuration) eliminates this tendency, as does localizing NA to both viral poles (\u2018bipolar\u2019 configuration). Having moderately polarized NA distributions also suppresses oriented motion, since this configuration (\u2018off-center\u2019) creates gradients in sialic acid density that partially cancel out over the length of the virus. Finally, NA in a random, uniformly-distributed configuration results in diffusion in a random direction. Because this configuration leads to more efficient cleavage of sialic acid and thus weaker virus adhesion, these simulations were performed with a lower number of total NAs (6 vs. 16) to prevent the virus from detaching altogether.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Simulations of virus mobility for particles 185 nm, 285 nm, and 385 nm in length, corresponding to 48, 84 and 115 simulated HA trimers per particle, respectively. For a constant HA-SA binding affinity, the average number of bound SA increases proportional to the number of HAs proximal to the surface (top row; average number of bound HA-SA pairs (\u00b1S.D.) is given in the upper-right corner of each panel), resulting in substantially reduced mobility in larger particles. If binding affinity is varied (by varying the HA-SA off rate, koff) to maintain a constant number of average bound HA-SA pairs for viruses of different size, larger particles exhibit higher mobilities with greater angular persistence (bottom row). Virus trajectories and orientations are plotted from seven simulations comprised of 106 steps for each of the six conditions shown. Traces plotted in red correspond to averages across all simulations.\n\nCorrelations in the direction of successive steps in a random walk will increase the rate at which the walker explores its environment, analogous to how more rigid polymer chains typically have larger end-to-end distances than those with equivalent contour length but lower bending rigidity. To quantitatively compare the rate at which the less persistent NA\u0394CT viruses explore their environment to that of the more persistent wildtype virus, we determined mean squared displacements from observed trajectories of mobile viruses (diffusion coefficients\u00a0>\u00a0100 nm2/s over the observation period) and simulated random walks in which the number of steps, the size of each step, and the time interval between steps all match the observed data, but the direction of each step is uncorrelated with previous steps (Figure 3B). From this analysis, we estimate that the diffusion coefficients of mobile viruses are enhanced approximately five-fold as a result of directional correlations (Figure 3B, left). In contrast, the diffusion of mobile NA\u0394CT viruses is only modestly influenced by directional correlations (~1.5 fold increase; Figure 3B, right). To further quantify the difference between viruses with wildtype NA and NA\u0394CT, we tracked the displacement of particles between subsequent frames acquired 30 s apart and plotted the distribution of the stepping angle relative to the orientation of the virus\u2019s HA-NA axis. Viruses with wildtype NA step in the direction of increasing HA (with the NA pole at the rear) roughly twice as frequently as the opposite direction, while NA\u0394CT viruses exhibit no correlation between orientation and stepping direction (Figure 3C). Additionally, despite having lower amounts of NA in the viral membrane, NA\u0394CT viruses left significantly larger trails of cleaved receptors than their wildtype counterparts (Figure 3\u2014figure supplement 3). These results demonstrate that the spatial organization and mobility of NA on the viral surface both play an important role in determining where and when it cleaves substrate.\n\n### Computational modeling suggests a mechanism for persistent directional mobility\n\nTo investigate the mechanism of this persistent directional mobility, we modeled the diffusion of filamentous viruses with defined spatial organization of HA and NA as the viruses bind to sialic acid on a two-dimensional surface (Appendix, Figure 3\u2014figure supplement 4). In this model, virus diffusion is constrained by the tens of attachments the HAs form with sialic acid at any instant in time (English and Hammer, 2004; Xu and Shaw, 2016). At the interface between HA-rich and NA-rich regions of the viral membrane, like those seen in fluorescence images (Figure 1A\u2013D), NA will periodically gain access to, and hydrolyze, sialic acid as the position of the virus thermally fluctuates. The binding partners available to HAs located close to this interface will therefore be asymmetrically distributed, with more potential binding partners located further away from areas of higher NA density. This concept is illustrated most clearly in the case where the virus is constrained to a one-dimensional path. As this case illustrates, the sialic acid density along the length of the virus is lowest in close proximity to NA (Figure 3\u2014figure supplement 5A\u2013C). When NA is confined to a single pole, this results in a gradient in sialic acid density along the length of the particle. Since the number of available binding partners is higher in one direction than another, newly-formed HA-sialic acid bonds will tend to be offset from previous bonds in this direction. This leads to the persistent motion we observe experimentally as well as in our simulations (Video 2). Consistent with this mechanism, persistent motion of the virus is lost when NA is no longer localized to a single virus pole and the sialic acid distribution beneath the particle becomes symmetric (Figure 3\u2014figure supplement 5B\u2013D). We note that virions with symmetric distributions of NA also occur in the virus population and would not be expected to exhibit persistent motion (for example, those particles with NA polar ratios of\u00a0~1 in Figure 1A).\n\n![Video 2.](https://cdn.elifesciences.org/articles/43764/elife-43764-video2.mp4.jpg)\n\nSince virus motion is dependent on the virus\u2019s ability to establish distinct regions with and without sialic acid, we expect that dynamic distributions of either NA or sialic acid will alter virus mobility. Consistent with our experimental observations with the NA\u0394CT virus, allowing NA to freely diffuse eliminates directional bias in virus motion in both experiments (Figure 3C) and simulations (Figure 3D). However, allowing surface-bound sialic acid to diffuse can either enhance or suppress directed motion, depending on the kinetic parameters of HA and NA, the diffusion coefficient of sialic acid (DSA), and the size of the virus (Appendix). Although our experimental data corresponds to the case where sialic acid is immobilized (DSA\u00a0~0), our simulations predict that polarized IAV bound to slowly-diffusing transmembrane glycoproteins or\u00a0gel-forming mucins (DSA\u00a0<0.01 \u00b5m2/s) will exhibit enhanced directed mobility, likely due to the biased spatial distributions of sialic acid binding partners that are available to HAs distal\u00a0to the virus\u2019s NA-rich pole. In contrast, increasing the rate\u00a0of\u00a0sialic acid diffusion further (DSA\u00a0>0.01 \u00b5m2/s) is expected to suppress persistent motion, by flattening the sialic acid gradient that is created beneath the virus (Figure 3E, Video 3). Finally, we find that increasing the length of the virus in simulations increases the number of HA-sialic acid interactions, reducing virus mobility but increasing directional persistence (Figure 3\u2014figure supplement 6). Thus, the organization of proteins on the viral surface, the size of the virus, and the nature of the receptor to which the virus is bound can each influence the persistence of a virus\u2019s motion.\n\n![Video 3.](https://cdn.elifesciences.org/articles/43764/elife-43764-video3.mp4.jpg)\n\n**Video 3.:** Simulations correspond to DSA\u00a0=\u00a010\u22127 \u03bcm2/s, DSA\u00a0=\u00a010\u22125 \u03bcm2/s, and DSA\u00a0=\u00a010\u22121 \u03bcm2/s, as plotted in Figure 3E.\n\nAlthough our results focus on a two-dimensional geometry in which a virus adheres to a flat surface decorated with sialic acid (a model for the cell surface), we reasoned that they should generalize to three-dimensional\u00a0systems, such as the\u00a0secreted mucus gel\u00a0through which IAV must penetrate to reach na\u00efve cells to infect. To test this prediction, we cultured Calu-3 cells at an air-liquid interface, resulting in a\u00a0~\u00a01\u201310 \u00b5m thick gel of secreted mucus overlaying the apical surface of the cells (Figure 4A). Adding virus with labeled HA and NA to the mucus, followed by fixation and labeling with ECL, revealed tracks similar to those we observed on two-dimensional surfaces (Figure 4B). This suggests that the asymmetry of NA and HA biases the direction of virus diffusion in three dimensions, producing trails of cleaved sialic acid that can reach several microns in length as the virus moves (Figure 4C). This directional mobility is less prevalent in viruses with more uniformly distributed NA, though they nonetheless are capable of creating swaths of ECL-staining within the mucus that lack clear directionality (Figure 4D). Similar to our observations on idealized two-dimensional surfaces (Figure 3C), we find that viruses in mucus exhibit a slight tendency to align their HA-NA axis (captured at the moment of fixation) with the displacement of the virus relative to the center of ECL labeling (Figure 4E). These results suggest that the spatial organization of HA and NA on the virus surface may also promote penetration of polarized IAV particles through mucus barriers in vivo.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig4-v1.jpg)\n\n**Figure 4.:** (A) Calu-3 cells cultured at an air-liquid interface for\u00a0~10 days partially differentiate, secreting gel-forming mucins (visualized with an antibody against Muc5AC). (B) Labeled virus (fluorescent HA and NA) added to the mucosal surface bind and diffuse. Labeling with ECL reveals distinct tracks trailing up to several microns behind viruses (indicated with white arrows). The angle \u03b8 characterizes the alignment between the HA-NA axis of the virus and the displacement from the centroid of ECL labeling. (C) Panels (i-viii) of registered viruses showing ECL trails. Where polarized distributions of NA on the virus are visible (i, v, vi, viii), ECL labeling is most prominent trailing from the NA-rich pole. Calculated values of the angle \u03b8 are given in the lower left of each panel. (D) Larger filamentous virions with NA broadly distributed across their surfaces clear large patches of sialic acid on the mucosal surface. Images in B, C, and D are a representative sampling from three biological replicates. (E) Orientation of virus HA-NA axes with ECL displacement vectors (the angle \u03b8 defined schematically in B). The distribution shows alignments for 2242 virus particles with non-overlapping ECL tracks, pooled from three biological replicates. Dashed line indicates the expected level for a uniform random distribution of alignments. See also Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43764/elife-43764-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Viruses entering the trachea (e.g. as aerosolized respiratory droplets) bind to the mucosal barrier. The probability of a particle infecting the underlying epithelium depends on the relative rates of virus diffusion (with a characteristic time of ~\u03942/Dvirus) and mucociliary clearance (with a characteristic time of\u00a0~\u00a0L/U). (B) Solutions\u00a0to the first passage problem illustrated in panel (A) for different virus\u00a0diffusion coefficients. Each curve plots the solution to Equations (6) and (7) with a different virus diffusion coefficient, starting from 80 nm2/s (black curve) and increasing by intervals of 80 nm2/s (gray or magenta curves). Black and magenta curves correspond to diffusion coefficients measured from Figure 3B with correlated (magenta) or uncorrelated (black) steps. The inset box shows physiological estimates of other parameters used to solve the first-passage problem.\n\n## Discussion\n\nAdvances in electron microscopy over the past several decades have presented an increasingly detailed picture of the morphology and organization of influenza A virus. This has revealed organizational features of filamentous IAV whose origins and functional significance remain unclear. By using site-specific fluorescent labeling to measure the organization of a virus while preserving its function, we are able to corroborate key observations of envelope protein non-uniformity obtained from electron microscopy and extend them to dynamic observations of both protein motion on the surface of the virus, as well as the directionally-persistent motion of influenza A virus particles as they engage with the\u00a0virus\u00a0receptor, sialic acid. These observations demonstrate that the morphology of a virus, the spatial organization of proteins in its membrane, and constraints on the diffusion of these proteins collectively confer the tendency for viral particles to exhibit persistent directional mobility, enhancing the virus\u2019s rate of diffusion without diminishing its strength of adhesion. Importantly, our simulations show that this feature of filamentous morphology would not be limited to the extremely large particles whose length is easily measured using diffraction limited microscopy, but rather extends to capsule-shaped particles\u00a0<\u00a0200 nm in length (Figure 3\u2014figure supplement 6), which are known to be produced by filamentous strains of IAV (Calder et al., 2010). In contrast, this effect may be suppressed in spherical particles, due both to the absence of a clear axis for polarization and their ability to roll on two-dimensional surfaces. However, super-resolution live imaging will be required to confirm these predictions experimentally.\n\nAlthough more work is needed to understand if these characteristics of IAV organization enhance infectivity and are adaptive during in vivo replication, a simple model of viral transport suggests how the directional viral mobility we observe could contribute during host-to-host transmission. On first entering the respiratory tract, viruses must diffuse through the mucosal barrier to infect the underlying airway epithelial cells. Competing with this process is mucocilliary clearance, which carries particles bound to mucus towards the pharynx where they are neutralized (Figure 4\u2014figure supplement 1A). If the transport of a virus through a mucosal barrier is modeled as a first passage problem with a time limit imposed by the rate of mucociliary clearance, a five-fold increase in the diffusion coefficient (as predicted in Figure 3B) would lead to a proportional reduction in the first passage time. More dramatically, it would also increase the fraction of particles that reach the cell surface when the rate of mucociliary clearance is high and would normally prevent most particles from reaching the cell surface. Our experiments on two-dimensional sialic acid-coated surfaces suggest a diffusion coefficient of\u00a0~800 nm2/s for polarized viruses; adapting this value for a one-dimensional first passage model suggests that persistent motion increases the number of particles that reach the epithelium before being cleared by several orders of magnitude (Appendix, Figure 4\u2014figure supplement 1B). Although there are multiple ways that a virus\u2019s passage through mucus can be accelerated (reducing its size, decreasing the number of HAs on its surface, increasing the number of NAs, or making the spatial distribution of NA more uniform), each of these changes would likely reduce binding stability once the virus has managed to reach the cell surface. In contrast, the polarized distributions of NA on the viral surface that we observe increase virus diffusion without compromising binding stability.\n\nBalancing the need to robustly attach to the cell surface with the need to escape immobilization in host mucus is a fundamental challenge for influenza and other viruses that use sialic acid to enter cells. Previous work has shown that influenza particles are not immobilized during their interactions with sialic acid (Guo et al., 2018; Sakai et al., 2017). Additionally, work characterizing the diffusion of influenza C virus, in which receptor-binding and receptor-destroying activities are combined in a single protein (HEF), has shown that the destruction of receptors on a 2D surface prevents virions from retracing their steps (Sakai et al., 2018). Our results show that influenza A virus accomplishes a similar feat through a different mechanism \u2013 asymmetric distribution of receptor-binding and receptor-destroying activities on the viral surface that results in persistent motion while maintaining stable attachment. The persistent directional mobility shown here orients filamentous virus motion parallel to its major axis, where it could further enhance the anomalous diffusion coefficients observed for cylindrical nanoparticles in mucus (Yu et al., 2016). Analogous to the combined importance of active motility and cell shape in mucosal bacteria (Bartlett et al., 2017; Sycuro et al., 2010), the directed mobility and cylindrical shape of IAV could help to explain the virus\u2019s ability to penetrate host mucus and contribute to the prevalence of filamentous morphology in clinical isolates of IAV.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (C. familiaris)</td>\n      <td>MDCK-II</td>\n      <td>UC Berkeley Cell Culture Facility</td>\n      <td></td>\n      <td>https://bds.berkeley.edu/facilities/cell-culture</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>Calu-3</td>\n      <td>UC Berkeley Cell Culture Facility</td>\n      <td></td>\n      <td>https://bds.berkeley.edu/facilities/cell-culture</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK293T</td>\n      <td>UC Berkeley Cell Culture Facility</td>\n      <td></td>\n      <td>https://bds.berkeley.edu/facilities/cell-culture</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Muc5AC</td>\n      <td>Thermo Fisher</td>\n      <td>RRID:AB_10978001, Cat. #: MA5-12178</td>\n      <td>IF (1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody (lectin)</td>\n      <td>FITC-labeled Erythrina cristagalli lectin (ECL)</td>\n      <td>Vector</td>\n      <td>RRID:AB_2336437, Cat. #: FL-1141</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vHA(G5)</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vHA</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vNA(ybbR)</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vNA\u0394CT(ybbR)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Vector shown schematically\u00a0in Figure 3\u2014figure supplement 1A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vNA</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vNP(FlAsH)</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vNP</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vM (Ud M1)</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vN</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vPA</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vPB1</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1+vPB2</td>\n      <td>(Vahey and Fletcher, 2019)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Streptavidin</td>\n      <td>Thermo Fisher</td>\n      <td>Cat. #: 434302</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Neuraminidase from Clostridium perfringens</td>\n      <td>Sigma</td>\n      <td>Cat. #: N2876</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Fetuin from fetal bovine serum</td>\n      <td>Sigma</td>\n      <td>Cat. #: F3004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CLPETGG peptide</td>\n      <td>Genscript</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 555 maleimide</td>\n      <td>Thermo Fisher</td>\n      <td>Cat. #: A20346</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 647 maleimide</td>\n      <td>Thermo Fisher</td>\n      <td>Cat. #: A20347</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CF568 maleimide</td>\n      <td>Biotium</td>\n      <td>Cat. #: 92024</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FlAsH-EDT2</td>\n      <td>Toronto Research Chemicals</td>\n      <td>Cat. #: F335200</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Matlab</td>\n      <td>Mathworks</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Culturing and labeling virus\n\nStrains of influenza A virus amenable to site specific labeling on HA, NA, and NP were designed and characterized as described previously (Vahey and Fletcher, 2019). Briefly, viruses expressing HA with five consecutive glycine residues following the signal sequence (for labeling via Sortase A [Theile et al., 2013]), NA with a c-terminal ybbR tag (for labeling via Sfp\u00a0[Yin et al., 2006]), and NP with a c-terminal tetracysteine motif (for labeling via direct binding of the\u00a0biarsenical dye FlAsH [Griffin et al., 1998]) were rescued using reverse genetics (Hoffmann et al., 2000) by transfecting co-cultures of HEK293T and MDCK-II cells with plasmids encoding each of the eight genomic segments under the control of bidirectional promoters. Cells used in this work were obtained and authenticated by the UC Berkeley Cell Culture Facility and tested negative for mycoplasma. All viruses used in this work are derived from A/WSN/1933, with the WSN M1 gene replaced by that of A/Udorn/1972, to establish the filamentous phenotype. MDCK-II cells used to propagate virus were maintained in DMEM supplemented with 10% fetal bovine serum (Thermo Fisher, 10438026) and 1x penicillin/streptomycin (Thermo Fisher, 15140122). Prior to infection, confluent monolayers of cells were washed once with PBS, and serum-containing growth media was replaced with virus growth media (MEM, 0.25% BSA, 1 \u03bcg/ml TPCK-treated trypsin, and penicillin/streptomycin). Viruses used for experiments were collected from cells following infection at MOI\u00a0~\u00a01 and 16 hr of growth at 37\u00b0C in virus growth media. Media containing virus was collected, centrifuged at 2000\u00a0\u00d7\u00a0g for five minutes to remove cell debris, and treated with 10mU/ml soluble sialidase (from C. Perfringens, Sigma N2876) to ensure that viruses were well dispersed. Viruses were labeled in solution for 90 min at room temperature using NTC buffer (100 nM NaCl, 20 mM Tris pH 7.6, 5 mM CaCl2) supplemented with 5 mM MgCl2, Sortase A (180 \u00b5M enzyme, 50 \u00b5M CLPETGG peptide) and SFP synthase (5 \u00b5M enzyme, 5 \u00b5M CoA probe). Following labeling, Capto Core 700 beads (GE Healthcare;~1:1 resin volume to sample volume) were used to remove residual dyes and enzymes from the solution of labeled virus. For labeling NP with the biarsenical dye FlAsH, viruses were immobilized on coverslips, washed in NTC buffer, and incubated with 2 \u00b5M FlAsH for 30 min at room temperature.\n\n### Virus photobleaching\n\nTo qualitatively evaluate the mobility of HA and NA on the virion surface (Figure 1B, Figure 3\u2014figure supplement 2B), unfixed, immobilized viruses were imaged using total internal reflectance (TIRF) microscopy. Filamentous virus of sufficient length (>5 \u03bcm) were positioned within the field of view such that when the field stop was closed, only approximately half of the virus was exposed to illumination. This half of the virus was then bleached using maximum laser power and then imaged at lower power at 30 s intervals as the field stop was opened to monitor recovery. Representative results are shown in Figure 1B and Figure 3\u2014figure supplement 2B.\n\n### STORM imaging and analysis\n\nSamples for STORM imaging were prepared by binding labeled virus to antibody or sialic acid (i.e. fetuin) functionalized coverslips for one hour at 4\u00b0C, followed by the incubation of Dragon Green-labeled 220nm-diameter streptavidin coated beads. Viruses and beads were then fixed to the surfaces with 4% paraformaldehyde in PBS and washed 3x with buffer containing 1M Tris pH 8.0, 5% glucose, and 140 mM \u03b2-mercaptoethanol. Following these washes, the buffer was supplemented with glucose oxidase and catalase to final concentrations of 0.6 mg/ml and 0.035 mg/ml, respectively, and mounted on the microscope for imaging.\n\nSTORM data was acquired in the following sequence. First, an image of the Dragon Green beads (serving as fiducial marks), HA (labeled with CF568-conjugated peptide and SrtA), and NA (labeled with AF647-CoA and SFP) was acquired, to enable registration. Next, a sequence of STORM images was acquired using a 640 nm laser at full power, with acquisition of the HA channel via a 560 nm laser at low power every 50 frames to correct for drift. After collecting 15000\u201335000 frames in this way, we performed STORM imaging on CF568-HA using a 560 nm laser. To correct for drift, we acquire an image every 50 frames using a 405 nm laser and 575/20 nm emission filter; these settings allow us to image the Dragon Green beads, while simultaneously accelerating blinking of the CF568 dye. For reconstructions of HA, we acquire 25000\u201335000 frames.\n\nFor quantification and localization of blinking events, we use the ImageJ plugin Thunderstorm (Ovesn\u00fd et al., 2014), combined with custom Matlab scripts for additional drift correction and removal of fluorophores that remain in the \u2018on\u2019 state for more than one frame. This analysis results in a list of coordinates for each localization that we then use to reconstruct images of virus at varying resolutions. Reconstructed STORM images (e.g. Figure 1C & D) are displayed by representing each localization as a gaussian with a standard deviation of 30 nm.\n\n### NAI challenge assay\n\nChallenge experiments with the neuraminidase inhibitor oseltamivir are performed as described previously (Vahey and Fletcher, 2019). The analysis from Figure 1E uses an image dataset from Vahey and Fletcher (2019), reanalyzed to measure the spatial organization of HA and NA on the surface of released virus particles. We infect a polarized monolayer of MDCK cells grown on a collagen gel at MOI of 1\u20133. After incubating cells with virus for one hour at 37\u00b0C, we wash to remove excess virus, replacing media with virus growth media supplemented with or without a specified concentration of oseltamivir carboxylate (Toronto Research Chemicals O700980), but without TPCK-treated trypsin. At 16 hr post infection, we remove the virus containing media for labeling and imaging, and replace with media supplemented with 1 U/ml NanI from C. perfringens (Sigma N2876). After treating with this exogenous sialidase for one hour at 37\u00b0C, we again collect cell culture media for virus labeling and imaging.\n\nTo measure the HA-NA polarization on viruses released in these experiments, we segment filamentous viruses with lengths\u00a0>\u00a01 \u03bcm and measure the intensity-weighted centroid (i.e. \u2018center of mass\u2019) for both the HA and NA channels. The vector connecting the NA centroid to the HA centroid defines the orientation of HA-NA polarity. Dividing the magnitude of this vector by the total particle length gives the HA-NA polarity metric plotted throughout this work.\n\n### Virus motility assay\n\nCoverslips presenting sialic acid for virus attachment were prepared as described previously (Vahey and Fletcher, 2019). Briefly, NH2-PEG-OH (Rapp Polymere, 122000\u20132) supplemented with 2.5 mole-percent NH2-PEG-Biotin (Rapp Polymere, 133000-25-20) was conjugated to silanized coverslips for subsequent attachment of sialylated proteins. Following PEGylation, custom PDMS chambers were attached to coverslips, and chambers were incubated for 10 min at room temperature with streptavidin at 50 \u00b5g/ml in 150 mM NaCl, 25 mM HEPEs, pH 7.2, and washed 5X in the same buffer. Fetuin (Sigma F3004) labeled with NHS-biotin was then added at 100 nM and incubated\u00a0~30 min at room temperature. Coverslips were then washed 5X in NTC buffer and equilibrated to 4\u00b0C in preparation for virus binding. For surfaces functionalized in this way (Piehler et al., 2000), we expect a PEG density of\u00a0~0.75 molecules/nm2, corresponding to roughly one PEG-Biotin per 7 nm x 7 nm area on the surface. If each biotin is bound by one streptavidin tetramer and subsequently one molecule of biotinylated fetuin (with\u00a0~10 sialic acid residues per molecule), the surface density of sialic acid will be\u00a0~0.2 SA/nm2.\n\nViruses with HA and NA enzymatically labeled as described previously were bound to coverslips equilibrated to 4\u00b0C for one hour on ice. Immediately before imaging, excess virus was washed with pre-chilled NTC, and the sample was mounted on the microscope stage. After allowing the chamber to equilibrate to room temperature, the buffer in the chamber was exchanged to NA buffer (100 mM NaCl, 50 mM MES pH 6.5, 5 mM CaCl2), and timelapse recordings were collected using TIRF microscopy at 30 s intervals. To visualize trails of cleaved sialic acid, fluorescein-labeled Erythrina cristagalli lectin (ECL; Vector Labs FL-1141) was added to each well at a concentration of 5 \u00b5g/ml in NTC buffer with 10 mg/ml BSA and incubated for 30 min at room temperature. During this incubation period, rapid multivalent binding of ECL to cleaved sialic acid on the viral surface effectively blocks further motion of the virus. Images of ECL trails were acquired using TIRF microscopy without washing unbound ECL from the chamber.\n\nTo analyze images of viruses, we separately segment each image according to the intensity in both the HA and NA channels. Merging the two sets of segmented images allows us to determine the position of each virus (i.e. the centroid of the combined HA and NA masks) as well as their morphological features. To determine the HA-NA polarization of each virus, we calculate the distance between the centroid of HA and NA intensity for a particular virus, divided by that virus\u2019s length. The data in Figure 2 and Figure 3 is compiled by extracting these features for each virus in each frame of a timelapse recording.\n\nTo analyze the trails of cleaved sialic acid left by mobile viruses, we segment images of samples labeled with fluorescent ECL according to the intensity of lectin staining. Because the virus itself contains high densities of sialic acid on its surface, we use a bandpass threshold to specifically quantify ECL bound to processed glycans on the coverslip (which produces a signal brighter than the background, but dimmer than the virus). Although viruses dissociate from some of the tracks, those that remain bound to the surface allow us to connect intensity of ECL labeling on the surface to intensities of HA and NA on the virus that generated the track. This data is plotted in Figure 3\u2014figure supplement 3, with and without normalization to NA intensity.\n\n### Quantification of NA activity using MUNANA\n\nFor assays using the fluorogenic neuraminidase substrate MUNANA, 10 \u00b5l of solution containing labeled virus was diluted into 40 \u00b5l of NA buffer (100 mM NaCl, 50 mM MES pH 6.5, 5 mM CaCl2) and incubated in a test tube at 37\u00b0C. At time points of 0, 30, 60, 120, and 180 min, aliquots were collected and NA was inactivated by adding sodium carbonate to a final concentration of 100 mM, and fluorescence was measured by imaging a fixed volume of sample on a confocal microscope using excitation at 405 nm. The rate of turnover was then determined from the slope of the intensity versus time plot with the signal at 0 min subtracted from each timepoint. Because strains with wildtype NA and NA\u0394CT produce different titers of virus that also differ in their morphology and NA composition, we normalized samples to total NA content (Figure 3\u2014figure supplement 3A), measured by immobilizing viruses on coverslips, imaging them, and integrating the total NA intensity associated with the two samples. This yields an estimated 6-fold difference in total NA content between virus with wildtype NA and viruses with NA\u0394CT.\n\n### Virus imaging at air-liquid interface of Calu-3 cell cultures\n\nCalu-3 cells grown on plastic dishes for fewer than 10 passages (DMEM, 10% FBS, 1x penicillin/streptomycin, supplemented with 1 mM sodium pyruvate (Thermo Fisher, 11360070) and 1x non-essential amino acids (Thermo Fisher, 11140076)) were split at 80% confluence and seeded onto 6 mm transwell supports at 50000 cells per insert. Approximately 3 days after seeding, media from the apical compartment was removed (the \u2018airlift\u2019) and cells were provided with fresh media in the basal compartment every other day until being collected for experiments, 8\u201312 days following the airlift. Cells cultured in this way differentiated into a secretory phenotype, producing a layer of mucus\u00a0~1\u201310 \u00b5m thick over the apical surface of the monolayer (Figure 4A). To bind virus without washing away secreted mucus, 5\u201310 \u00b5l of labeled virus was added to the apical side of each transwell insert (enough to just coat the surface), and immediately removed, leaving\u00a0~1 \u00b5l of residual virus-containing solution that is approximately evenly distributed on the surface of the monolayer. The cells were then returned to the incubator for 3\u20136 hr, allowing virus to bind and diffuse, and allowing some of the residual moisture to dry before the cells are collected and fixed on ice for 20 min using 4% paraformaldehyde in PBS supplemented with 1 mM CaCl2. Following fixation, cells and mucus were labeled with MUC5AC monoclonal antibody (45M1; MA5-12178 ThermoFisher) and Erythrina cristagalli lectin labeled with FITC (5 \u03bcg/ml; Vector Laboratories, FL-1141). Following labeling, the transwell insert was carefully excised with a razor blade and inverted onto a coverslip for imaging.\n\nTo quantify alignment between the HA-NA axis of a virus particle and the direction of its displacement from the associated ECL track (Figure 4E), fluorescent images of HA, NA, and ECL were segmented in both HA (to identify virus particles) and ECL (to identify regions of cleaved sialic acid) channels. For each segmented virus particle, we calculate the HA-NA axis (defined as the vector displacement between the center of masses for HA and NA) and the ECL displacement (defined as the vector displacement between the center of masses for HA and ECL) (Figure 4B, right). Cases where multiple particles contact the same ECL track are excluded from analysis.\n\n### Statistics and replicates\n\nReplicates referenced throughout this paper refer to biological replicates, defined as virus collected from separate infected cell cultures, labeled, and assayed as indicated. No statistical methods were used to predetermine sample size. Image data was excluded from analysis in rare cases if the sample drifted on the microscope stage, or if coverslip preparations showed non-specific virus binding. Statistical tests and the number of replicates used in specific cases are described in figure captions. All statistical tests were performed in Matlab R2017b using the Statistics and Machine Learning Toolbox. Confidence intervals for the data in Figure 1G were calculated using a critical value of the Student\u2019s t distribution of 3.182 (95% confidence interval for n-1\u00a0=\u00a03 degrees of freedom).\n",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "c89e9655-d64c-4b68-9bb3-e1d914e6c494",
+      "submission_id": "d765b108-6201-43d0-8797-095637c83833",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, University of Basel Switzerland\n\nReviewers:\n- Richard A Neher, University of Basel Switzerland\n- Mark Zanin, St. Jude's Children's Hospital United States\n\n## Review text\n\nDOI: [10.7554/eLife.43764.027](https://doi.org/10.7554/eLife.43764.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Influenza A virus surface proteins are organized to help penetrate host mucus\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Richard A Neher as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Arup Chakraborty as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Mark Zanin (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Vahey and Fletcher investigate the importance of the spatial organization of hemagglutinin and neuraminidase in facilitating the movement of influenza A viruses (IAVs) through mucus. They report that neuraminidase proteins cluster at one pole of the virus and this clustering asymmetrically frees the virion from tethering to sialic acid, thereby facilitating directed motion. This is an interesting novel finding that provides insights into outstanding questions in the field. However, a number of issues need to be addressed before we can recommend publication.\n\nEssential revisions:\n\nThe issues raised during review and the ensuing discussion broadly fall into four categories concerning i) further quantification, ii) the theoretical model, iii) direct assays of infectivity, and (iv) availability of analysis code.\n\n1) A number of statements would benefit from more quantitative analysis.\n\na) Figure 1 should show distributions of data rather than representative examples. Figure 1A could, for example, be backed up by two histograms showing NA/HA intensities in the first/last 20% of the virion. Or last/first 100nm or similar. Figure 1D needs a distribution of correlation coefficients of HA/NA. Showing one example is simply not enough. Figure 1E should show distributions as well. Bar graphs are not good.\n\nb) Figure 3A-C: While the measurement of the persistence of orientation is useful and interesting, we would like to see a quantitative and direct assessment of diffusivity, for example by comparing MSD vs time for the deletion mutant and the WT NA. It should be quantified whether the morphology of the viruses change when the cytoplasmic tail of NA is deleted. If so, does this affect the ability to determine the orientation of the particles?\n\nc) Figure 4C D: Again, you should try to find a meaningful quantitative comparison rather than just showing examples.\n\nd) Other statements need more precision: E.g. Results section, paragraph one: How were polarized viruses selected? What fraction of particles were filamentous? etc.\n\n2) The theoretical model should be explained more clearly and connected better to the experimental results.\n\na) We suggest moving some of the descriptions of the model into the main text and maybe include an illustration of the model, the sialic acid distribution along the particle, and the resulting directional motion. It would also help to discuss in more simple and explicit terms that how macroscopic diffusion increases with more directionally persistent microscopic motion.\n\nb) When describing the different physical effects, you should be careful not to confuse the reader with diffusion constants of NA, receptors, and viruses all labeled D. Please differentiate them with different symbols or subscripts.\n\nc) The model prediction that very slow sialic acid diffusion results in slow virus diffusion should be better explained. How does this prediction compare with the experiments in Figure 2 using coverslips functionalized with biotin-anchored (and presumably immobile) receptors?\n\nd) Please point out that Figure 4\u2014figure supplement 1 essentially only shows the first-passage probability calculated in the supplement (please number equations and refer to them directly). This figure could be improved by changing the x-scale seconds -> minutes and illustrating more generally how increasing virus diffusion increases the probability of reaching the epithelium. You could add several curves for different D, plot this on a log scale, and remove the 5000x.\n\ne) The assumption of an absorbing boundary at the epithelium implies that binding is essentially instantaneous and irreversible. This should be discussed.\n\n3) Additional infectivity and/or mobility assays.\n\na) Could infectivity be assessed directly using mucus-producing cells such as CaLu-3? Such data would considerably strengthen the claim that enhanced diffusion increased infectivity.\n\nb) Enhanced diffusion in polarized filamentous virus compared to spherical viruses is counteracted by their larger size. Is there a head-to-head comparison?\n\nc) The data in this paper was obtained using viruses containing fluorescent labels. Have the authors confirmed these observations using unlabeled viruses? Whilst obviously fluorescent microscopy could not be conducted with unlabeled viruses, the morphology of virions propagated in mucus-producing cells could be compared to those propagated in non-mucus producing cells and studies of their ECL tracks could possibly be conducted. This experiment could add further weight to their statement that filamentous morphologies are adaptations to replication in the presence of mucus.\n\n4) Simulation code and analysis scripts need to be made available, preferably on a repository like GitHub with appropriate documentation.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Influenza A virus surface proteins are organized to help penetrate host mucus\" for further consideration at eLife. Your revised article has been favorably evaluated by Arup Chakraborty (Senior Editor) and a Reviewing Editor.\n\nBy and large, the authors have presented a compelling revision. They have quantified a number of previously rather qualitative statements by showing distributions rather than representative examples, present additional data on virus mobility directly comparing NA and NA-DCT viruses, streamlined notation, and explained the theoretical model better. However, there are a number of remaining issues that we would like to have clarified/rectified.\n\nFigure 1: the distributions are useful, but the alignment of the NA rich pole with NP seems rather imprecise. Reading the previous version of the manuscript, I was certainly expecting a more clear cut picture. The insets in Figure 1A also suggest a much more pronounced asymmetry. How closely is this more blurry picture accounted for in the simulation?\n\nFigure 1E, Anticorrelation of HA and NA: This anticorrelation is pretty weak and the main take home message from the figure seems to be that HA and NA are clustered. Hence I think the statement \"...NA clusters that appear to largely exclude HA\" is too strong.\n\nFigure 1G seems problematic. The caption states that p-values are calculated using a two-sample t-test. What enters as independent data point here? Strictly speaking, you have n=4 replicates and I doubt that this would support the conclusion that these cases are different. A paired test on +/- NAI samples from the same replicate would probably be more powerful. Generally, quantifying the difference (and confidence intervals) between two conditions is preferable to rejecting a null.\n\nThe addition to Figure 4E does not help. This figure shows that there is little evidence for variation of ECL intensity and HA-NA polarity. Making an arbitrary cut at 0.06 and fitting lines to points below and above is not appropriate. Furthermore, a correlation of ECL intensity and HA-NA polarity doesn't quantify the examples given in C or D. You could try to show ECL intensity distributions aligned with the NA polarity or similar. But as of now, panels C, D, and E are just examples.\n\nThe comparisons of diffusion with/without correlations make sense only when you specify the time interval over which the displacements are measured (paragraph three of subsection \u201cPolarized viruses step persistently away from their NA-rich pole\u201d). You do so later, but I'd suggest moving it forward.\n",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ebf1f226-da52-4328-879e-816de713a684",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C1",
+      "claim": "Influenza A virus (IAV) enters cells by binding to sialic acid on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza A virus (IAV) enters cells by binding to sialic acid on the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about IAV infection mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "84e4ff48-45ca-4bc8-ba5c-62d2f5cc36dc",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C2",
+      "claim": "IAV relies on a balance between hemagglutinin (HA) and neuraminidase (NA) to avoid immobilization by sialic acid in host mucus.",
+      "claim_type": "EXPLICIT",
+      "source": "To accomplish this while avoiding immobilization by sialic acid in host mucus, viruses rely on a balance between the receptor-binding protein hemagglutinin (HA) and the receptor-cleaving protein neuraminidase (NA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge and citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "ccf399c6-5c59-4daa-8c1e-f4c8d92191c6",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C3",
+      "claim": "HA and NA are asymmetrically distributed on the surface of filamentous viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Using site-specific fluorescent labeling and super-resolution microscopy, we show that HA and NA are asymmetrically distributed on the surface of filamentous viruses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from fluorescence microscopy and STORM imaging shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "a2175e6f-ebe5-4d2b-9478-99ad5bb07594",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C4",
+      "claim": "The asymmetric distribution of HA and NA creates a spatial organization of binding and cleaving activities that causes viruses to step consistently away from their NA-rich pole.",
+      "claim_type": "EXPLICIT",
+      "source": "creating a spatial organization of binding and cleaving activities that causes viruses to step consistently away from their NA-rich pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations of virus trajectories shown in Figure 2 and simulations in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "87d2811c-d440-45ab-8709-cc714a59462d",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C5",
+      "claim": "The Brownian ratchet-like diffusion produces persistent directional mobility that resolves the virus's conflicting needs to both penetrate mucus and stably attach to the underlying cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This Brownian ratchet-like diffusion produces persistent directional mobility that resolves the virus's conflicting needs to both penetrate mucus and stably attach to the underlying cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on virus mobility (Figure 2) and modeling (Figure 3), combined with inference about functional significance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "690c5c82-cb0d-425a-98f7-6eeaa19d3512",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C6",
+      "claim": "The filamentous phenotype is prevalent in clinical isolates of IAV.",
+      "claim_type": "EXPLICIT",
+      "source": "potentially contributing to the prevalence of the filamentous phenotype in clinical isolates of IAV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations in the introduction discussing clinical isolates versus laboratory-adapted strains.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "a074a598-2e98-45a6-9b88-8677d5166949",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C7",
+      "claim": "Mucosal barriers present the first line of defense against IAV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Mucosal barriers present the first line of defense against IAV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about respiratory virus infection, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "e9fba5bb-ac9c-4bd3-8c45-db776646170d",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C8",
+      "claim": "Viral particles must pass through a ~1\u201310 \u03bcm thick layer of mucus to infect the underlying epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "To infect the underlying epithelium, viral particles must first pass through a ~ 1\u201310 \u03bcm thick layer of mucus that is being steadily transported towards the pharynx where it can be swallowed, neutralizing any virus immobilized within it (Bustamante-Marin and Ostrowski, 2017; Wanner et al., 1996; Zanin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on mucosal barriers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "62ed9c18-697e-4f8c-bcb4-29837fdf333f",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C9",
+      "claim": "Clinical isolates of IAV form filamentous particles with a consistent diameter but widely varying length.",
+      "claim_type": "EXPLICIT",
+      "source": "While clinical isolates of IAV \u2013 samples adapted to transmission in a mucosal environment \u2013 form filamentous particles with a consistent diameter but widely varying length, laboratory-adapted strains tend to produce more uniform, spherical particles (Badham and Rossman, 2016; Chu, 1949; Dadonaite et al., 2016; Seladi-Schulman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on IAV morphology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "fda809e7-be92-4f3d-86a5-ba2868409f3c",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C10",
+      "claim": "Laboratory-adapted strains of IAV tend to produce more uniform, spherical particles.",
+      "claim_type": "EXPLICIT",
+      "source": "While clinical isolates of IAV \u2013 samples adapted to transmission in a mucosal environment \u2013 form filamentous particles with a consistent diameter but widely varying length, laboratory-adapted strains tend to produce more uniform, spherical particles (Badham and Rossman, 2016; Chu, 1949; Dadonaite et al., 2016; Seladi-Schulman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on IAV morphology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "650f850b-aee5-4855-9f7b-31868ef9a89f",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C11",
+      "claim": "Filamentous morphology may play a role in transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence from the 2009 pandemic suggests that filamentous morphology, conferred by the virus's M segment, may play a role in transmission (Campbell et al., 2014; Lakdawala et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies on the 2009 pandemic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "6283db7d-78b0-4158-99b5-1064406f7999",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C12",
+      "claim": "HA and NA have been observed by electron microscopy to cluster non-uniformly on both the viral and pre-viral envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, although the two major envelope proteins of IAV, HA and NA, have been observed by electron microscopy to cluster non-uniformly on both the viral and pre-viral envelope (Calder et al., 2010; Harris et al., 2006; Leser and Lamb, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior electron microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "ad93828e-051e-4cf7-a792-1445618f9455",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C13",
+      "claim": "Approximately one third of filamentous particles have NA intensities at least 5-fold higher on one pole than on the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Across 20344 such particles, approximately one third have NA intensities at least 5-fold higher on one pole than on the other (Figure 1A, left).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of fluorescence microscopy data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "75a19635-20a5-417e-af11-beaea6fba89a",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C14",
+      "claim": "NA tends to colocalize with NP at one end of filamentous viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Aligning filamentous particles with polarized NP foci (4805 in total) reveals a tendency for NA to colocalize with NP (Figure 1A, right).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of fluorescence microscopy data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "f163a28f-4db1-48f1-a04f-3e5454d3bb12",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C15",
+      "claim": "NA is enriched ~2x relative to HA at the NP-containing pole in particles >4.5 \u03bcm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, NA is enriched ~2 x relative to HA at the NP-containing pole in these particles, as compared to the middle region of the particle and the opposite pole (Figure 1\u2014figure supplement 1, bottom)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of composite images shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "2033441e-458e-4e97-86b0-5d5b3f9dd898",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C16",
+      "claim": "The protein distribution on filamentous IAV particles is stable over tens of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "This protein distribution is stable, since photobleached portions of unfixed filamentous particles do not recover fluorescence in either HA or NA over tens of minutes (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by photobleaching experiments shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "da1499a0-f431-4f48-b8cb-12026d196404",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C17",
+      "claim": "STORM reconstructions reveal clusters of HA and NA which partly exclude each other.",
+      "claim_type": "EXPLICIT",
+      "source": "STORM reconstructions of a filamentous virus at ~30 nm resolution reveal clusters of HA and NA which partly exclude each other, illustrated by the inverse correlation in HA and NA intensities along the axis of the virus (scale bar = 200 nm).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by STORM imaging data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "3b66a564-10f6-445d-b82d-643c12cf52ae",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C18",
+      "claim": "HA and NA distributions in filamentous particles are modestly anti-correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, HA and NA distributions in these particles are modestly anti-correlated (Figure 1E)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of STORM data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "759317e2-b20a-4bfd-bc55-ad3ef2c7292d",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C19",
+      "claim": "Approximately 70% of NP-containing viruses have NA biased to the proximal pole.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these measurements present a picture of a variegated IAV envelope whose spatial organization is stable and coupled to the presence and location of the viral genome, with ~70% of NP-containing viruses having NA biased to the proximal pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data presented in Figure 1A showing the distribution of NA polarity in NP-aligned particles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "a889c953-cdfa-4ba6-a479-7a03c20fec68",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C20",
+      "claim": "Viruses that escaped the cell surface under NAI challenge showed higher HA-NA polarity (0.155) than viruses released in the absence of NAI challenge (0.123 before and 0.100 after exogenous sialidase treatment).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, viruses that escaped the cell surface under NAI challenge showed higher HA-NA polarity (0.155; 95% confidence interval, CI = 0.139\u20130.171) than viruses released in the absence of NAI challenge, both before (0.123; 95% CI = 0.106\u20130.140) and after (0.100; 95% CI = 0.090\u20130.110) facilitating virus release by treating with exogenous sialidase (Figure 1F & G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of NAI challenge experiments shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "0b093a21-07aa-4430-a118-27cfbe0b2423",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C21",
+      "claim": "Viruses with NA concentrated at one of the viral poles may be more effective at navigating environments rich in sialic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that viruses with NA concentrated at one of the viral poles may be more effective at navigating environments rich in sialic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the NAI challenge experiment results showing that more polarized viruses escape under NAI challenge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "b650ee4f-1e7f-4c4c-b9ee-5248d2971b27",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C22",
+      "claim": "Fluorescently labeled NA preserves its enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our approach to fluorescently labeling NA preserves its activity (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MUNANA activity assays shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "96040320-4f2f-4184-bfb9-13f692da3eac",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C23",
+      "claim": "Viruses harboring fluorophores on both HA and NA preserve ~85% of their infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "and viruses harboring fluorophores on both HA and NA preserve ~85% of their infectivity (Vahey and Fletcher, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "5452a30e-9f49-4fab-9537-039dce15959e",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C24",
+      "claim": "Filamentous particles with polarized distributions of NA exhibited directed mobility away from their NA-rich pole.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the motion we observed did not resemble randomly-oriented diffusion of the viral particle, but rather persistent, Brownian ratchet-like diffusion, in which filamentous particles with polarized distributions of NA exhibited directed mobility away from their NA-rich pole (Figure 2B, Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations of virus trajectories shown in Figure 2B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "e7f29a24-7fae-4e1c-ba9e-95fba2134818",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C25",
+      "claim": "Virus motion is accompanied by receptor destruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Labeling coverslips with fluorescein-labeled Erythrina cristagalli lectin (ECL), which binds specifically to the terminal galactose exposed following sialic acid cleavage (Iglesias et al., 1982), revealed the history of virus trajectories and confirmed that virus motion is accompanied by receptor destruction (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ECL labeling experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "151eb7b9-0dc3-4cf9-bf66-dd6ebebcddac",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C26",
+      "claim": "Directional mobility can persist for several microns, many times the length of the particle itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Aligning the trajectories of mobile particles (defined as those with diffusion coefficients > 100 nm2/s, comprising ~68% of the population; Figure 2C) to the orientation of their HA-NA axis reveals that directional mobility can persist for several microns, many times the length of the particle itself (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of virus trajectories shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "5548d043-7ef3-4243-a4dc-baf1eabcf633",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C27",
+      "claim": "Mobile viruses comprise ~68% of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Aligning the trajectories of mobile particles (defined as those with diffusion coefficients > 100 nm2/s, comprising ~68% of the population; Figure 2C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of diffusion coefficients shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "925bc3da-192c-42d1-b059-eb2849a72adb",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C28",
+      "claim": "Non-mobile viruses have, on average, less polarized distributions of HA and NA than mobile ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observation that polarized distributions of HA and NA serve as a determinant for persistent motion and enhanced diffusion, we find that non-mobile viruses have, on average, less polarized distributions of HA and NA than mobile ones (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative comparison shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "91bd10a5-ded1-48c0-b30f-b5713cf7892b",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C29",
+      "claim": "Deletion of the cytoplasmic tail of NA reduces packaging of NA into virions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although NA expression on the surface of infected cells is comparable to that seen for wildtype virus, deletion of the cytoplasmic tail reduces packaging of NA into virions (Figure 3\u2014figure supplement 1B & C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data shown in Figure 3\u2014figure supplement 1B & C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "cdcf675c-2bbd-45cb-b46d-3af45eb08f43",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C30",
+      "claim": "NA\u0394CT virus exhibits NA clusters resembling those found in wildtype virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, although NA\u0394CT virus imaged at ~30 nm resolution using STORM still exhibits NA clusters resembling those found in wildtype virus, the clusters are no longer immobilized on the surface of the virus, as revealed by photobleaching experiments (Figure 3\u2014figure supplement 2A & B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by STORM imaging and photobleaching experiments shown in Figure 3\u2014figure supplement 2A & B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "e737e005-aaca-47db-9204-560ad0ecd417",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C31",
+      "claim": "NA clusters in NA\u0394CT virus are no longer immobilized on the surface of the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, although NA\u0394CT virus imaged at ~30 nm resolution using STORM still exhibits NA clusters resembling those found in wildtype virus, the clusters are no longer immobilized on the surface of the virus, as revealed by photobleaching experiments (Figure 3\u2014figure supplement 2A & B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by photobleaching experiments shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "6aa8bdc5-d81f-4844-bd71-7a67b6d2491d",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C32",
+      "claim": "Both wildtype and NA\u0394CT viruses form filamentous particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both wildtype and NA\u0394CT viruses form filamentous particles (with wildtype virus producing a higher proportion of extremely large filaments >3 \u03bcm in length; Figure 3\u2014figure supplement 2C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by particle length distribution analysis shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "09ad4eaa-7c66-481e-b78d-d078228860c0",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C33",
+      "claim": "Wildtype virus produces a higher proportion of extremely large filaments >3 \u03bcm in length compared to NA\u0394CT.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both wildtype and NA\u0394CT viruses form filamentous particles (with wildtype virus producing a higher proportion of extremely large filaments >3 \u03bcm in length; Figure 3\u2014figure supplement 2C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by particle length distribution analysis shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "8b487259-e132-4673-b006-26e5be1f9643",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C34",
+      "claim": "The polarity of NA distributions on the viral surface is significantly decreased in the NA\u0394CT strain relative to wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "the polarity of NA distributions on the viral surface is significantly decreased in the NA\u0394CT strain relative to wildtype (Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 3\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "6fe46f9f-5203-4043-bdf5-10a9d4fa9de5",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C35",
+      "claim": "NA\u0394CT viruses no longer exhibited persistent directional motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same sialic acid coated surfaces, NA\u0394CT viruses no longer exhibited persistent directional motion (Figure 3A)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of NA\u0394CT virus trajectories shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "d61e6d42-cbbe-42f7-89a7-08e8f17f8a52",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C37",
+      "claim": "The diffusion coefficients of mobile viruses are enhanced approximately five-fold as a result of directional correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "From this analysis, we estimate that the diffusion coefficients of mobile viruses are enhanced approximately five-fold as a result of directional correlations (Figure 3B, left).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of mean squared displacements shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "6fb42da7-47de-43a5-9b34-dd31cbf696d0",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C38",
+      "claim": "The diffusion of mobile NA\u0394CT viruses is only modestly influenced by directional correlations (~1.5 fold increase).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the diffusion of mobile NA\u0394CT viruses is only modestly influenced by directional correlations (~1.5 fold increase; Figure 3B, right).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of mean squared displacements shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "2b8c14b2-9a53-40a9-9111-d28da85b53a6",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C39",
+      "claim": "Viruses with wildtype NA step in the direction of increasing HA roughly twice as frequently as the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Viruses with wildtype NA step in the direction of increasing HA (with the NA pole at the rear) roughly twice as frequently as the opposite direction, while NA\u0394CT viruses exhibit no correlation between orientation and stepping direction (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of stepping angles shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "b4742db2-ed53-446c-adb2-bf99399a01ea",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C40",
+      "claim": "NA\u0394CT viruses exhibit no correlation between orientation and stepping direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Viruses with wildtype NA step in the direction of increasing HA (with the NA pole at the rear) roughly twice as frequently as the opposite direction, while NA\u0394CT viruses exhibit no correlation between orientation and stepping direction (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of stepping angles shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "0cda1736-ffba-452f-a565-933a9eebee9f",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C41",
+      "claim": "NA\u0394CT viruses left significantly larger trails of cleaved receptors than their wildtype counterparts despite having lower amounts of NA in the viral membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, despite having lower amounts of NA in the viral membrane, NA\u0394CT viruses left significantly larger trails of cleaved receptors than their wildtype counterparts (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ECL trail analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "4c0b918d-cab2-4640-addd-1ae1eb3c4201",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C42",
+      "claim": "The spatial organization and mobility of NA on the viral surface both play an important role in determining where and when it cleaves substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the spatial organization and mobility of NA on the viral surface both play an important role in determining where and when it cleaves substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of wildtype and NA\u0394CT virus behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "f70e0eb0-f2e6-40c3-8d45-6cc464121062",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C43",
+      "claim": "Virus diffusion is constrained by the tens of attachments the HAs form with sialic acid at any instant in time.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, virus diffusion is constrained by the tens of attachments the HAs form with sialic acid at any instant in time (English and Hammer, 2004; Xu and Shaw, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational modeling informed by prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "64ffba96-747b-472e-ba3b-d4f5dac15d3a",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C44",
+      "claim": "NA periodically gains access to and hydrolyzes sialic acid at the interface between HA-rich and NA-rich regions as the position of the virus thermally fluctuates.",
+      "claim_type": "EXPLICIT",
+      "source": "At the interface between HA-rich and NA-rich regions of the viral membrane, like those seen in fluorescence images (Figure 1A\u2013D), NA will periodically gain access to, and hydrolyze, sialic acid as the position of the virus thermally fluctuates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational modeling and inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "a747865c-8f5c-45f9-bccb-e0fc95878dfc",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C45",
+      "claim": "The sialic acid density along the length of the virus is lowest in close proximity to NA.",
+      "claim_type": "EXPLICIT",
+      "source": "As this case illustrates, the sialic acid density along the length of the virus is lowest in close proximity to NA (Figure 3\u2014figure supplement 5A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational simulations shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "49e4fa1a-2d4e-4cbd-95c7-40a70e0ce4ff",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C46",
+      "claim": "When NA is confined to a single pole, this results in a gradient in sialic acid density along the length of the particle.",
+      "claim_type": "EXPLICIT",
+      "source": "When NA is confined to a single pole, this results in a gradient in sialic acid density along the length of the particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational simulations shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "a17ab295-0e18-43bc-9601-29ecb59d8ba5",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C47",
+      "claim": "Persistent motion of the virus is lost when NA is no longer localized to a single virus pole and the sialic acid distribution beneath the particle becomes symmetric.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this mechanism, persistent motion of the virus is lost when NA is no longer localized to a single virus pole and the sialic acid distribution beneath the particle becomes symmetric (Figure 3\u2014figure supplement 5B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational simulations shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "551ebba3-d32b-4173-bf94-303f03d9697d",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C48",
+      "claim": "Allowing NA to freely diffuse eliminates directional bias in virus motion in both experiments and simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our experimental observations with the NA\u0394CT virus, allowing NA to freely diffuse eliminates directional bias in virus motion in both experiments (Figure 3C) and simulations (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data (Figure 3C) and computational simulations (Figure 3D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "2e95ac3e-20ec-4fd4-8ceb-bf07b93168f5",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C49",
+      "claim": "Allowing surface-bound sialic acid to diffuse can either enhance or suppress directed motion, depending on the kinetic parameters of HA and NA, the diffusion coefficient of sialic acid, and the size of the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, allowing surface-bound sialic acid to diffuse can either enhance or suppress directed motion, depending on the kinetic parameters of HA and NA, the diffusion coefficient of sialic acid (DSA), and the size of the virus (Appendix).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational simulations shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "4a12662c-1fd6-422d-b246-3676591a1763",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C50",
+      "claim": "Polarized IAV bound to slowly-diffusing transmembrane glycoproteins or gel-forming mucins (DSA <0.01 \u00b5m2/s) will exhibit enhanced directed mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our experimental data corresponds to the case where sialic acid is immobilized (DSA ~0), our simulations predict that polarized IAV bound to slowly-diffusing transmembrane glycoproteins or gel-forming mucins (DSA <0.01 \u00b5m2/s) will exhibit enhanced directed mobility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational simulations shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "7287e897-7670-47b0-9ace-ba830a6c78b0",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C51",
+      "claim": "Increasing the rate of sialic acid diffusion (DSA >0.01 \u00b5m2/s) is expected to suppress persistent motion by flattening the sialic acid gradient created beneath the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, increasing the rate of sialic acid diffusion further (DSA >0.01 \u00b5m2/s) is expected to suppress persistent motion, by flattening the sialic acid gradient that is created beneath the virus (Figure 3E, Video 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational simulations shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "e27398ab-8944-4388-b0bf-cabb29aebd02",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C52",
+      "claim": "Increasing the length of the virus in simulations increases the number of HA-sialic acid interactions, reducing virus mobility but increasing directional persistence.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we find that increasing the length of the virus in simulations increases the number of HA-sialic acid interactions, reducing virus mobility but increasing directional persistence (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational simulations shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "9b47d014-43a8-42aa-97f2-a20d9683df66",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C53",
+      "claim": "Calu-3 cells cultured at an air-liquid interface produce a ~1\u201310 \u00b5m thick gel of secreted mucus overlaying the apical surface of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this prediction, we cultured Calu-3 cells at an air-liquid interface, resulting in a ~ 1\u201310 \u00b5m thick gel of secreted mucus overlaying the apical surface of the cells (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging of Calu-3 cultures shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "824a4634-fefe-4728-b14f-6989942142c8",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C54",
+      "claim": "Viruses in mucus create tracks similar to those observed on two-dimensional surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding virus with labeled HA and NA to the mucus, followed by fixation and labeling with ECL, revealed tracks similar to those we observed on two-dimensional surfaces (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging of viruses in mucus shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "3c9d8518-4166-4cd1-bcf6-0b0f76035d7d",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C55",
+      "claim": "The asymmetry of NA and HA biases the direction of virus diffusion in three dimensions, producing trails of cleaved sialic acid that can reach several microns in length.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the asymmetry of NA and HA biases the direction of virus diffusion in three dimensions, producing trails of cleaved sialic acid that can reach several microns in length as the virus moves (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging of virus tracks in mucus shown in Figure 4C and inferred from the observed patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "f24d8575-dc8f-484f-a4ae-cc90acc70e16",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C56",
+      "claim": "Viruses in mucus exhibit a slight tendency to align their HA-NA axis with the displacement of the virus relative to the center of ECL labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our observations on idealized two-dimensional surfaces (Figure 3C), we find that viruses in mucus exhibit a slight tendency to align their HA-NA axis (captured at the moment of fixation) with the displacement of the virus relative to the center of ECL labeling (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "6459650b-9c6c-42bc-b654-5f928f0a4fa8",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C57",
+      "claim": "The spatial organization of HA and NA on the virus surface may promote penetration of polarized IAV particles through mucus barriers in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the spatial organization of HA and NA on the virus surface may also promote penetration of polarized IAV particles through mucus barriers in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations in mucus combined with the 2D surface experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "d03802d0-9128-4558-be80-8901deabce56",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C58",
+      "claim": "The morphology of a virus, the spatial organization of proteins in its membrane, and constraints on the diffusion of these proteins collectively confer the tendency for viral particles to exhibit persistent directional mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations demonstrate that the morphology of a virus, the spatial organization of proteins in its membrane, and constraints on the diffusion of these proteins collectively confer the tendency for viral particles to exhibit persistent directional mobility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the experimental and computational results presented throughout the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "fff7277a-f4da-41f7-87e3-db6cf7375624",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C59",
+      "claim": "Persistent directional mobility enhances the virus's rate of diffusion without diminishing its strength of adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "enhancing the virus's rate of diffusion without diminishing its strength of adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and simulations showing enhanced diffusion with maintained binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "90c0d0eb-158e-4a37-9352-745bfad27905",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C60",
+      "claim": "The effect of filamentous morphology on directional mobility extends to capsule-shaped particles < 200 nm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our simulations show that this feature of filamentous morphology would not be limited to the extremely large particles whose length is easily measured using diffraction limited microscopy, but rather extends to capsule-shaped particles < 200 nm in length (Figure 3\u2014figure supplement 6)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational simulations shown in Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "72af92ab-abff-4dba-9b76-26a60b6e196e",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C61",
+      "claim": "Capsule-shaped particles < 200 nm in length are produced by filamentous strains of IAV.",
+      "claim_type": "EXPLICIT",
+      "source": "which are known to be produced by filamentous strains of IAV (Calder et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "63f64910-7ae1-4e73-ac80-3eddca745eea",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C62",
+      "claim": "The directional mobility effect may be suppressed in spherical particles due to the absence of a clear axis for polarization and their ability to roll on two-dimensional surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, this effect may be suppressed in spherical particles, due both to the absence of a clear axis for polarization and their ability to roll on two-dimensional surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the geometric constraints of spherical particles.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "acd60774-85da-4122-8379-31e818715db0",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C63",
+      "claim": "A five-fold increase in the diffusion coefficient would lead to a proportional reduction in the first passage time through mucosal barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "If the transport of a virus through a mucosal barrier is modeled as a first passage problem with a time limit imposed by the rate of mucociliary clearance, a five-fold increase in the diffusion coefficient (as predicted in Figure 3B) would lead to a proportional reduction in the first passage time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mathematical modeling of first passage problems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "06ef8fa6-1369-4269-a64d-eb4090c87d16",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C64",
+      "claim": "A five-fold increase in diffusion coefficient would increase the fraction of particles that reach the cell surface when the rate of mucociliary clearance is high.",
+      "claim_type": "EXPLICIT",
+      "source": "More dramatically, it would also increase the fraction of particles that reach the cell surface when the rate of mucociliary clearance is high and would normally prevent most particles from reaching the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mathematical modeling shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "c43aa945-4c8f-491a-b324-0624c2224234",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C65",
+      "claim": "Persistent motion increases the number of particles that reach the epithelium before being cleared by several orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments on two-dimensional sialic acid-coated surfaces suggest a diffusion coefficient of ~800 nm2/s for polarized viruses; adapting this value for a one-dimensional first passage model suggests that persistent motion increases the number of particles that reach the epithelium before being cleared by several orders of magnitude (Appendix, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mathematical modeling using experimentally measured diffusion coefficients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "5954de01-708e-40a2-b83c-3e5754a4f8d3",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C66",
+      "claim": "Reducing virus size, decreasing the number of HAs on its surface, increasing the number of NAs, or making the spatial distribution of NA more uniform would likely reduce binding stability once the virus has reached the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are multiple ways that a virus's passage through mucus can be accelerated (reducing its size, decreasing the number of HAs on its surface, increasing the number of NAs, or making the spatial distribution of NA more uniform), each of these changes would likely reduce binding stability once the virus has managed to reach the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on understanding of HA-NA balance.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "7945f008-2d16-4300-844f-86026f8d5e88",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C67",
+      "claim": "Polarized distributions of NA on the viral surface increase virus diffusion without compromising binding stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the polarized distributions of NA on the viral surface that we observe increase virus diffusion without compromising binding stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations showing enhanced diffusion with maintained attachment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "0ae46aa0-c0c0-4779-94ed-71c506518235",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C68",
+      "claim": "Influenza particles are not immobilized during their interactions with sialic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that influenza particles are not immobilized during their interactions with sialic acid (Guo et al., 2018; Sakai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "054cbd5e-83c6-4ce5-b931-4bf8eba431d2",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C69",
+      "claim": "Influenza C virus, in which receptor-binding and receptor-destroying activities are combined in a single protein (HEF), prevents virions from retracing their steps through receptor destruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, work characterizing the diffusion of influenza C virus, in which receptor-binding and receptor-destroying activities are combined in a single protein (HEF), has shown that the destruction of receptors on a 2D surface prevents virions from retracing their steps (Sakai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature on influenza C virus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "222bf839-abdf-40d0-b40b-09de037a9e02",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C70",
+      "claim": "Influenza A virus accomplishes persistent motion through asymmetric distribution of receptor-binding and receptor-destroying activities on the viral surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that influenza A virus accomplishes a similar feat through a different mechanism \u2013 asymmetric distribution of receptor-binding and receptor-destroying activities on the viral surface that results in persistent motion while maintaining stable attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the experimental results presented in the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "cf431bd9-6689-4128-88ad-731fb97ebb10",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C71",
+      "claim": "The persistent directional mobility orients filamentous virus motion parallel to its major axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The persistent directional mobility shown here orients filamentous virus motion parallel to its major axis, where it could further enhance the anomalous diffusion coefficients observed for cylindrical nanoparticles in mucus (Yu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations combined with prior literature on nanoparticle diffusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "6b4526aa-17cf-47cf-9367-029afd45a185",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C72",
+      "claim": "The directed mobility and cylindrical shape of IAV could help to explain the virus's ability to penetrate host mucus.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous to the combined importance of active motility and cell shape in mucosal bacteria (Bartlett et al., 2017; Sycuro et al., 2010), the directed mobility and cylindrical shape of IAV could help to explain the virus's ability to penetrate host mucus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on analogy to bacterial motility and the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "0f5778ae-f7de-4b2c-9fde-c18016b0809e",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C73",
+      "claim": "The directed mobility and cylindrical shape of IAV could contribute to the prevalence of filamentous morphology in clinical isolates of IAV.",
+      "claim_type": "EXPLICIT",
+      "source": "the directed mobility and cylindrical shape of IAV could help to explain the virus's ability to penetrate host mucus and contribute to the prevalence of filamentous morphology in clinical isolates of IAV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning connecting the experimental findings to the known prevalence of filamentous morphology in clinical isolates.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "7e2c1dba-f80e-4938-8371-8a95aa2976f6",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C74",
+      "claim": "The virus used in this work is derived from A/WSN/1933, with the WSN M1 gene replaced by that of A/Udorn/1972 to establish the filamentous phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "All viruses used in this work are derived from A/WSN/1933, with the WSN M1 gene replaced by that of A/Udorn/1972, to establish the filamentous phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "4ab9ed88-3002-4341-bdb4-1a9ed90a5261",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C75",
+      "claim": "The M1 from A/Udorn/1972 differs from WSN M1 at six residues and confers filamentous morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "For these experiments, we use a tagged variant of the strain A/WSN/1933 with M1 from A/Udorn/1972, which differs from WSN M1 at six residues and confers filamentous morphology (Elleman and Barclay, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "a2dad78c-96f8-49d6-8443-79ccbdc76f72",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "claim_id": "C76",
+      "claim": "This virus produces filamentous particles that vary widely in size, from sub-diffraction limited spots to particles > 10 \u03bcm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our prior observations, this virus produces filamentous particles that vary widely in size, from sub-diffraction limited spots to particles > 10 \u03bcm in length (Vahey and Fletcher, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work and experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "072dd796-3558-4f67-b599-5c080e125ae8",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HA and NA are asymmetrically distributed on the surface of filamentous IAV particles, with approximately one-third of particles showing at least 5-fold enrichment of NA at one pole. NA tends to colocalize with the viral genome (NP) at one pole, with ~2-fold enrichment relative to HA. This distribution is stable over tens of minutes and is observed at both diffraction-limited and super-resolution scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C13-C19 provide converging evidence from multiple imaging modalities (fluorescence microscopy, STORM) with large sample sizes (>20,000 particles for C13, 4,805 for C14) showing consistent asymmetric distribution of HA and NA. The photobleaching experiments (C16) demonstrate stability, and quantitative metrics are provided with appropriate statistical measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "544295ea-f874-4815-ab02-67a7ef8c7149",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Viruses that escaped cell surfaces under neuraminidase inhibitor (NAI) challenge showed significantly higher HA-NA polarity (0.155) compared to viruses released without NAI challenge (0.123 before and 0.100 after exogenous sialidase treatment), suggesting that polarized NA distribution may enhance navigation through sialic acid-rich environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 provides quantitative data with confidence intervals from NAI challenge experiments (Figure 1G). The functional interpretation in C21 is appropriately cautious ('may be more effective') and is supported by the experimental design comparing viruses under different release conditions. The result demonstrates a correlation between NA polarity and ability to escape under challenging conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "97bcfac8-bb99-4059-a055-09f65d396e9a",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Filamentous viruses with polarized NA distributions exhibit persistent directional mobility away from their NA-rich pole on sialic acid-coated surfaces. This directional mobility can persist for several microns and is accompanied by receptor destruction. Mobile viruses (~68% of the population) have significantly more polarized HA-NA distributions than non-mobile viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 are supported by direct experimental observations using time-lapse microscopy (Figure 2B, Video 1), ECL labeling showing receptor cleavage trails (C25), trajectory analysis (C26), and quantitative comparison of mobile vs. non-mobile populations (C28, Figure 2E). The large sample size (n=347 mobile viruses) and statistical testing strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "cc8879f8-1b11-491a-99ff-57da30d7d4f0",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Deletion of the NA cytoplasmic tail (NA\u0394CT) reduces NA packaging into virions, renders NA clusters mobile on the viral surface, significantly decreases NA polarity on the viral surface, and eliminates persistent directional motion, demonstrating that the cytoplasmic tail is necessary for both NA localization and directional mobility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 describe a well-designed genetic perturbation experiment with multiple complementary measurements (imaging, STORM, photobleaching, motility assays). The loss of directional motion in NA\u0394CT viruses (C35) directly supports the causal role of NA spatial organization. Data is shown in multiple supplementary figures with appropriate quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "9b0f3102-fcc7-4878-b75e-76f24e3e9738",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Wildtype viruses show ~5-fold enhancement in diffusion coefficient due to directional correlations, while NA\u0394CT viruses show only ~1.5-fold enhancement. Wildtype viruses step toward the HA-rich pole approximately twice as frequently as the opposite direction, while NA\u0394CT viruses show no directional preference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 provide quantitative comparisons between wildtype and NA\u0394CT viruses using mean squared displacement analysis (Figure 3B) and stepping angle analysis (Figure 3C). The measurements are based on trajectory data from multiple biological replicates and provide clear evidence for the functional importance of NA polarization in directional mobility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "24971eca-5245-4599-94f8-37d45963b0e6",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NA\u0394CT viruses leave significantly larger trails of cleaved receptors than wildtype viruses despite having lower NA content, demonstrating that spatial organization and mobility of NA on the viral surface determine where and when substrate cleavage occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by ECL trail analysis (Figure 3\u2014figure supplement 3). The counterintuitive finding that viruses with less NA create larger trails is well-documented and supports the mechanistic interpretation that NA localization, not just abundance, controls cleavage patterns. This is a key result linking protein organization to enzymatic function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "2a81a983-1918-46bd-9958-c4eb84635100",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Computational modeling shows that virus diffusion is constrained by multiple HA-sialic acid attachments, and NA at the interface between HA-rich and NA-rich regions creates a gradient in sialic acid density along the virus length. This gradient drives persistent directional motion, which is lost when NA distribution becomes symmetric or when NA is allowed to freely diffuse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 describe computational simulations that recapitulate experimental observations and provide mechanistic insight. The simulations (Figure 3\u2014figure supplement 5) show how NA polarization creates asymmetric sialic acid distributions that bias virus motion. The agreement between simulations and experiments (C48) strengthens both sets of results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "14e8b0bb-0123-4b15-bf36-ede1ba9e7219",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Computational simulations predict that sialic acid diffusion can either enhance or suppress directional motion depending on the diffusion coefficient. Polarized IAV bound to slowly-diffusing receptors (DSA <0.01 \u00b5m\u00b2/s) will exhibit enhanced mobility, while faster diffusion (DSA >0.01 \u00b5m\u00b2/s) suppresses persistent motion. Increasing virus length increases directional persistence but reduces overall mobility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 extend the computational model to explore parameter space beyond experimental conditions. The predictions are clearly stated and supported by simulation data (Figure 3E, Figure 3\u2014figure supplement 6). However, these remain predictions that would benefit from experimental validation, particularly for the effects of receptor mobility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "12691ec2-60c4-4e7f-95f8-6235381bf67c",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In three-dimensional mucus gels produced by Calu-3 cells, viruses create tracks similar to those on 2D surfaces, with trails of cleaved sialic acid reaching several microns in length. Viruses in mucus show a tendency to align their HA-NA axis with their displacement direction, suggesting that protein spatial organization promotes mucus penetration in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 demonstrate that the 2D findings extend to a more physiologically relevant 3D mucus environment. The imaging data (Figure 4B-E) shows similar patterns of directional mobility and receptor cleavage. The alignment analysis (C56, Figure 4E) with 2,242 particles provides quantitative support. The inference about in vivo relevance (C57) is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "16f9d861-1d88-4b69-912a-c5311f263ac4",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The morphology of a virus, spatial organization of membrane proteins, and constraints on protein diffusion collectively confer persistent directional mobility that enhances diffusion rate without diminishing adhesion strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 synthesize the major findings of the paper. The conclusion is well-supported by the combination of experimental observations (asymmetric protein distribution, directional mobility, maintained binding) and computational modeling. This represents the central mechanistic insight of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "533d2937-a81f-45c5-9ba0-c2ab79784748",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Computational simulations predict that directional mobility extends to capsule-shaped particles <200 nm in length, which are produced by filamentous IAV strains. The effect may be suppressed in spherical particles due to lack of a polarization axis and ability to roll on surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by simulation data (Figure 3\u2014figure supplement 6), and C61 is supported by citation to prior literature. However, C62 is speculative reasoning that has not been experimentally tested. The prediction about spherical particles is logical but remains unvalidated. This limits the strength of conclusions about particle shape effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "20afd176-4f32-49bf-a9ae-a9b50bd152c3",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mathematical modeling of mucus penetration as a first passage problem predicts that the observed 5-fold increase in diffusion coefficient would proportionally reduce transit time and dramatically increase the fraction of particles reaching the epithelium under high mucociliary clearance rates. Persistent motion is predicted to increase epithelial reach by several orders of magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C65 present mathematical modeling predictions (Figure 4\u2014figure supplement 1B) based on experimentally measured diffusion coefficients. While the mathematical framework is sound, the model makes simplifying assumptions (1D diffusion, specific parameter values for clearance rates) that may not fully capture in vivo complexity. The predictions are plausible but would require in vivo validation to be considered fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "dd85ad11-b428-40ac-a0dc-e0a1e29b92dd",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Alternative strategies to accelerate mucus penetration (reducing size, decreasing HA, increasing NA, or uniform NA distribution) would likely reduce binding stability at the cell surface, whereas polarized NA distribution increases diffusion without compromising binding stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 is speculative reasoning about alternative strategies that were not experimentally tested. Claim C67 summarizes the key advantage of the observed mechanism but is inferred rather than directly demonstrated. While the logic is sound and consistent with known HA-NA balance principles, direct experimental comparison of these alternatives would strengthen the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "fcc006e6-f61c-40e8-a7e8-1d426b997096",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The fluorescent labeling approach preserves NA enzymatic activity and viruses with labeled HA and NA retain ~85% infectivity, validating the use of labeled viruses for functional studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by MUNANA assays (Figure 2\u2014figure supplement 1) and C23 by citation to prior work. These methodological validations are important for interpreting all other results, as they demonstrate that the labeling does not fundamentally alter virus function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "5e011ec9-e423-4ada-b175-c9a2eede6148",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background context on IAV infection mechanism, mucosal barriers, virus morphology differences between clinical and laboratory strains, and prior observations of non-uniform HA/NA clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C12 provide established background knowledge supported by citations to prior literature. These contextual claims are well-supported but represent prior work rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "a13242c1-bbe5-488e-b550-51f7bac034ab",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work showed influenza particles are mobile during sialic acid interactions and that influenza C virus prevents backtracking through receptor destruction. This work shows IAV accomplishes persistent motion through asymmetric distribution of HA and NA activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 accurately cite prior literature, and C70 appropriately positions the current findings in context of previous work. This comparison highlights the novelty of the mechanism discovered in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "a3e9266d-0cb6-4a2c-a18c-0378e95febf4",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The persistent directional mobility could enhance anomalous diffusion of cylindrical particles in mucus and, analogous to bacterial motility, help explain IAV's ability to penetrate mucus and the prevalence of filamentous morphology in clinical isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C73 make speculative connections to prior work on nanoparticle diffusion and bacterial motility. While the analogies are reasonable and the hypothesis about clinical prevalence is plausible, these remain speculative interpretations that would require additional experimental validation, particularly in vivo studies or clinical isolate analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    },
+    {
+      "id": "10306d91-e6bb-4b66-8a42-152d7a7e82eb",
+      "content_id": "bd10675d-c4a7-4fe8-ac40-e432b5a17873",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The virus strain used is A/WSN/1933 with M1 from A/Udorn/1972, which differs at six residues and confers filamentous morphology, producing particles ranging from sub-diffraction spots to >10 \u00b5m in length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 describe the experimental system. C75 is supported by citation and C76 by prior work and current observations. These are methodological details that are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:08:21.326859Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ccf399c6-5c59-4daa-8c1e-f4c8d92191c6",
+      "result_id": "072dd796-3558-4f67-b599-5c080e125ae8"
+    },
+    {
+      "claim_id": "ad93828e-051e-4cf7-a792-1445618f9455",
+      "result_id": "072dd796-3558-4f67-b599-5c080e125ae8"
+    },
+    {
+      "claim_id": "75a19635-20a5-417e-af11-beaea6fba89a",
+      "result_id": "072dd796-3558-4f67-b599-5c080e125ae8"
+    },
+    {
+      "claim_id": "f163a28f-4db1-48f1-a04f-3e5454d3bb12",
+      "result_id": "072dd796-3558-4f67-b599-5c080e125ae8"
+    },
+    {
+      "claim_id": "2033441e-458e-4e97-86b0-5d5b3f9dd898",
+      "result_id": "072dd796-3558-4f67-b599-5c080e125ae8"
+    },
+    {
+      "claim_id": "da1499a0-f431-4f48-b8cb-12026d196404",
+      "result_id": "072dd796-3558-4f67-b599-5c080e125ae8"
+    },
+    {
+      "claim_id": "3b66a564-10f6-445d-b82d-643c12cf52ae",
+      "result_id": "072dd796-3558-4f67-b599-5c080e125ae8"
+    },
+    {
+      "claim_id": "759317e2-b20a-4bfd-bc55-ad3ef2c7292d",
+      "result_id": "072dd796-3558-4f67-b599-5c080e125ae8"
+    },
+    {
+      "claim_id": "a889c953-cdfa-4ba6-a479-7a03c20fec68",
+      "result_id": "544295ea-f874-4815-ab02-67a7ef8c7149"
+    },
+    {
+      "claim_id": "0b093a21-07aa-4430-a118-27cfbe0b2423",
+      "result_id": "544295ea-f874-4815-ab02-67a7ef8c7149"
+    },
+    {
+      "claim_id": "5452a30e-9f49-4fab-9537-039dce15959e",
+      "result_id": "97bcfac8-bb99-4059-a055-09f65d396e9a"
+    },
+    {
+      "claim_id": "e7f29a24-7fae-4e1c-ba9e-95fba2134818",
+      "result_id": "97bcfac8-bb99-4059-a055-09f65d396e9a"
+    },
+    {
+      "claim_id": "151eb7b9-0dc3-4cf9-bf66-dd6ebebcddac",
+      "result_id": "97bcfac8-bb99-4059-a055-09f65d396e9a"
+    },
+    {
+      "claim_id": "5548d043-7ef3-4243-a4dc-baf1eabcf633",
+      "result_id": "97bcfac8-bb99-4059-a055-09f65d396e9a"
+    },
+    {
+      "claim_id": "925bc3da-192c-42d1-b059-eb2849a72adb",
+      "result_id": "97bcfac8-bb99-4059-a055-09f65d396e9a"
+    },
+    {
+      "claim_id": "91bd10a5-ded1-48c0-b30f-b5713cf7892b",
+      "result_id": "cc8879f8-1b11-491a-99ff-57da30d7d4f0"
+    },
+    {
+      "claim_id": "cdcf675c-2bbd-45cb-b46d-3af45eb08f43",
+      "result_id": "cc8879f8-1b11-491a-99ff-57da30d7d4f0"
+    },
+    {
+      "claim_id": "e737e005-aaca-47db-9204-560ad0ecd417",
+      "result_id": "cc8879f8-1b11-491a-99ff-57da30d7d4f0"
+    },
+    {
+      "claim_id": "6aa8bdc5-d81f-4844-bd71-7a67b6d2491d",
+      "result_id": "cc8879f8-1b11-491a-99ff-57da30d7d4f0"
+    },
+    {
+      "claim_id": "09ad4eaa-7c66-481e-b78d-d078228860c0",
+      "result_id": "cc8879f8-1b11-491a-99ff-57da30d7d4f0"
+    },
+    {
+      "claim_id": "8b487259-e132-4673-b006-26e5be1f9643",
+      "result_id": "cc8879f8-1b11-491a-99ff-57da30d7d4f0"
+    },
+    {
+      "claim_id": "6fe46f9f-5203-4043-bdf5-10a9d4fa9de5",
+      "result_id": "cc8879f8-1b11-491a-99ff-57da30d7d4f0"
+    },
+    {
+      "claim_id": "d61e6d42-cbbe-42f7-89a7-08e8f17f8a52",
+      "result_id": "9b0f3102-fcc7-4878-b75e-76f24e3e9738"
+    },
+    {
+      "claim_id": "6fb42da7-47de-43a5-9b34-dd31cbf696d0",
+      "result_id": "9b0f3102-fcc7-4878-b75e-76f24e3e9738"
+    },
+    {
+      "claim_id": "2b8c14b2-9a53-40a9-9111-d28da85b53a6",
+      "result_id": "9b0f3102-fcc7-4878-b75e-76f24e3e9738"
+    },
+    {
+      "claim_id": "b4742db2-ed53-446c-adb2-bf99399a01ea",
+      "result_id": "9b0f3102-fcc7-4878-b75e-76f24e3e9738"
+    },
+    {
+      "claim_id": "0cda1736-ffba-452f-a565-933a9eebee9f",
+      "result_id": "24971eca-5245-4599-94f8-37d45963b0e6"
+    },
+    {
+      "claim_id": "4c0b918d-cab2-4640-addd-1ae1eb3c4201",
+      "result_id": "24971eca-5245-4599-94f8-37d45963b0e6"
+    },
+    {
+      "claim_id": "f70e0eb0-f2e6-40c3-8d45-6cc464121062",
+      "result_id": "2a81a983-1918-46bd-9958-c4eb84635100"
+    },
+    {
+      "claim_id": "64ffba96-747b-472e-ba3b-d4f5dac15d3a",
+      "result_id": "2a81a983-1918-46bd-9958-c4eb84635100"
+    },
+    {
+      "claim_id": "a747865c-8f5c-45f9-bccb-e0fc95878dfc",
+      "result_id": "2a81a983-1918-46bd-9958-c4eb84635100"
+    },
+    {
+      "claim_id": "49e4fa1a-2d4e-4cbd-95c7-40a70e0ce4ff",
+      "result_id": "2a81a983-1918-46bd-9958-c4eb84635100"
+    },
+    {
+      "claim_id": "a17ab295-0e18-43bc-9601-29ecb59d8ba5",
+      "result_id": "2a81a983-1918-46bd-9958-c4eb84635100"
+    },
+    {
+      "claim_id": "551ebba3-d32b-4173-bf94-303f03d9697d",
+      "result_id": "2a81a983-1918-46bd-9958-c4eb84635100"
+    },
+    {
+      "claim_id": "2e95ac3e-20ec-4fd4-8ceb-bf07b93168f5",
+      "result_id": "14e8b0bb-0123-4b15-bf36-ede1ba9e7219"
+    },
+    {
+      "claim_id": "4a12662c-1fd6-422d-b246-3676591a1763",
+      "result_id": "14e8b0bb-0123-4b15-bf36-ede1ba9e7219"
+    },
+    {
+      "claim_id": "7287e897-7670-47b0-9ace-ba830a6c78b0",
+      "result_id": "14e8b0bb-0123-4b15-bf36-ede1ba9e7219"
+    },
+    {
+      "claim_id": "e27398ab-8944-4388-b0bf-cabb29aebd02",
+      "result_id": "14e8b0bb-0123-4b15-bf36-ede1ba9e7219"
+    },
+    {
+      "claim_id": "9b47d014-43a8-42aa-97f2-a20d9683df66",
+      "result_id": "12691ec2-60c4-4e7f-95f8-6235381bf67c"
+    },
+    {
+      "claim_id": "824a4634-fefe-4728-b14f-6989942142c8",
+      "result_id": "12691ec2-60c4-4e7f-95f8-6235381bf67c"
+    },
+    {
+      "claim_id": "3c9d8518-4166-4cd1-bcf6-0b0f76035d7d",
+      "result_id": "12691ec2-60c4-4e7f-95f8-6235381bf67c"
+    },
+    {
+      "claim_id": "f24d8575-dc8f-484f-a4ae-cc90acc70e16",
+      "result_id": "12691ec2-60c4-4e7f-95f8-6235381bf67c"
+    },
+    {
+      "claim_id": "6459650b-9c6c-42bc-b654-5f928f0a4fa8",
+      "result_id": "12691ec2-60c4-4e7f-95f8-6235381bf67c"
+    },
+    {
+      "claim_id": "d03802d0-9128-4558-be80-8901deabce56",
+      "result_id": "16f9d861-1d88-4b69-912a-c5311f263ac4"
+    },
+    {
+      "claim_id": "fff7277a-f4da-41f7-87e3-db6cf7375624",
+      "result_id": "16f9d861-1d88-4b69-912a-c5311f263ac4"
+    },
+    {
+      "claim_id": "90c0d0eb-158e-4a37-9352-745bfad27905",
+      "result_id": "533d2937-a81f-45c5-9ba0-c2ab79784748"
+    },
+    {
+      "claim_id": "72af92ab-abff-4dba-9b76-26a60b6e196e",
+      "result_id": "533d2937-a81f-45c5-9ba0-c2ab79784748"
+    },
+    {
+      "claim_id": "63f64910-7ae1-4e73-ac80-3eddca745eea",
+      "result_id": "533d2937-a81f-45c5-9ba0-c2ab79784748"
+    },
+    {
+      "claim_id": "acd60774-85da-4122-8379-31e818715db0",
+      "result_id": "20afd176-4f32-49bf-a9ae-a9b50bd152c3"
+    },
+    {
+      "claim_id": "06ef8fa6-1369-4269-a64d-eb4090c87d16",
+      "result_id": "20afd176-4f32-49bf-a9ae-a9b50bd152c3"
+    },
+    {
+      "claim_id": "c43aa945-4c8f-491a-b324-0624c2224234",
+      "result_id": "20afd176-4f32-49bf-a9ae-a9b50bd152c3"
+    },
+    {
+      "claim_id": "5954de01-708e-40a2-b83c-3e5754a4f8d3",
+      "result_id": "dd85ad11-b428-40ac-a0dc-e0a1e29b92dd"
+    },
+    {
+      "claim_id": "7945f008-2d16-4300-844f-86026f8d5e88",
+      "result_id": "dd85ad11-b428-40ac-a0dc-e0a1e29b92dd"
+    },
+    {
+      "claim_id": "b650ee4f-1e7f-4c4c-b9ee-5248d2971b27",
+      "result_id": "fcc006e6-f61c-40e8-a7e8-1d426b997096"
+    },
+    {
+      "claim_id": "96040320-4f2f-4184-bfb9-13f692da3eac",
+      "result_id": "fcc006e6-f61c-40e8-a7e8-1d426b997096"
+    },
+    {
+      "claim_id": "ebf1f226-da52-4328-879e-816de713a684",
+      "result_id": "5e011ec9-e423-4ada-b175-c9a2eede6148"
+    },
+    {
+      "claim_id": "84e4ff48-45ca-4bc8-ba5c-62d2f5cc36dc",
+      "result_id": "5e011ec9-e423-4ada-b175-c9a2eede6148"
+    },
+    {
+      "claim_id": "a074a598-2e98-45a6-9b88-8677d5166949",
+      "result_id": "5e011ec9-e423-4ada-b175-c9a2eede6148"
+    },
+    {
+      "claim_id": "e9fba5bb-ac9c-4bd3-8c45-db776646170d",
+      "result_id": "5e011ec9-e423-4ada-b175-c9a2eede6148"
+    },
+    {
+      "claim_id": "62ed9c18-697e-4f8c-bcb4-29837fdf333f",
+      "result_id": "5e011ec9-e423-4ada-b175-c9a2eede6148"
+    },
+    {
+      "claim_id": "fda809e7-be92-4f3d-86a5-ba2868409f3c",
+      "result_id": "5e011ec9-e423-4ada-b175-c9a2eede6148"
+    },
+    {
+      "claim_id": "650f850b-aee5-4855-9f7b-31868ef9a89f",
+      "result_id": "5e011ec9-e423-4ada-b175-c9a2eede6148"
+    },
+    {
+      "claim_id": "6283db7d-78b0-4158-99b5-1064406f7999",
+      "result_id": "5e011ec9-e423-4ada-b175-c9a2eede6148"
+    },
+    {
+      "claim_id": "0ae46aa0-c0c0-4779-94ed-71c506518235",
+      "result_id": "a13242c1-bbe5-488e-b550-51f7bac034ab"
+    },
+    {
+      "claim_id": "054cbd5e-83c6-4ce5-b931-4bf8eba431d2",
+      "result_id": "a13242c1-bbe5-488e-b550-51f7bac034ab"
+    },
+    {
+      "claim_id": "222bf839-abdf-40d0-b40b-09de037a9e02",
+      "result_id": "a13242c1-bbe5-488e-b550-51f7bac034ab"
+    },
+    {
+      "claim_id": "cf431bd9-6689-4128-88ad-731fb97ebb10",
+      "result_id": "a3e9266d-0cb6-4a2c-a18c-0378e95febf4"
+    },
+    {
+      "claim_id": "6b4526aa-17cf-47cf-9367-029afd45a185",
+      "result_id": "a3e9266d-0cb6-4a2c-a18c-0378e95febf4"
+    },
+    {
+      "claim_id": "0f5778ae-f7de-4b2c-9fde-c18016b0809e",
+      "result_id": "a3e9266d-0cb6-4a2c-a18c-0378e95febf4"
+    },
+    {
+      "claim_id": "7e2c1dba-f80e-4938-8371-8a95aa2976f6",
+      "result_id": "10306d91-e6bb-4b66-8a42-152d7a7e82eb"
+    },
+    {
+      "claim_id": "4ab9ed88-3002-4341-bdb4-1a9ed90a5261",
+      "result_id": "10306d91-e6bb-4b66-8a42-152d7a7e82eb"
+    },
+    {
+      "claim_id": "a2dad78c-96f8-49d6-8443-79ccbdc76f72",
+      "result_id": "10306d91-e6bb-4b66-8a42-152d7a7e82eb"
+    }
+  ],
+  "comparisons": []
+}

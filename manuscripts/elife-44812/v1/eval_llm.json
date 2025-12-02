@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The CoSMO system is an engineered mutualistic community consisting of two non-mating S. cerevisiae strains that exchange essential metabolites (lysine and hypoxanthine) through metabolite overproduction, with lysine overproduction imposing a fitness cost of approximately 0.6%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively describe the CoSMO system design and basic properties. The system is well-characterized with citations to prior work (C1, C5, C6), experimental validation of fitness costs (C7), and clear descriptions of the engineered phenotypes (C3, C4). The evidence is consistent and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Evolution of CoSMO communities in well-mixed, lysine-limited conditions for ~100 generations resulted in evolved L-H+ clones that displayed self-serving phenotypes, specifically improved growth under lysine limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 describe the experimental evolution setup and the observation that all evolved clones (>20 tested) could grow under low lysine conditions while ancestors could not. This is supported by experimental data (Figure 2\u2014figure supplement 1) and is consistent with prior findings (C11). The conclusion of self-serving phenotypes (C12) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "DISOMY14 (chromosome 14 duplication) was identified in evolved L-H+ clones and appeared to be a win-win mutation, showing both self-serving (improved growth under lysine limitation) and partner-serving (increased hypoxanthine release rate per cell) phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 establish the initial characterization of DISOMY14. The genetic association is well-supported by whole-genome sequencing (C14), genetic segregation analysis (C15), and repeated observation across multiple evolution experiments (C16, C17). The self-serving phenotype is demonstrated (C19), and increased release rate per cell is measured (C13). However, the win-win hypothesis (C20) is later refuted by the authors' own subsequent analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The self-serving phenotype of DISOMY14 is caused by duplication of the high-affinity lysine permease gene LYP1, which significantly increases growth rate under lysine limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 demonstrate the molecular mechanism of the self-serving phenotype through genetic manipulation experiments. Adding LYP1 to the ancestor recapitulates the phenotype (C22), while deleting it from DISOMY14 abolishes the phenotype (C23). The data in Figure 2 clearly support these conclusions, and the logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The increased hypoxanthine release rate of DISOMY14 is caused by duplication of WHI3, as demonstrated by systematic chromosome truncation and genetic manipulation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 identify WHI3 as responsible for increased release rate through systematic chromosome truncation (C25, Figure 3B) and genetic manipulation (C27, C28, Figure 4A). The experimental approach is rigorous and the results are clear. Both gain-of-function (adding WHI3 to ancestor) and loss-of-function (deleting WHI3 from DISOMY14) experiments support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "WHI3 duplication increases cell size by inhibiting cell division, as demonstrated by Coulter counter measurements showing DISOMY14 cells are larger than ancestral cells, with genetic manipulations of WHI3 recapitulating these size changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 establish the mechanism by which WHI3 affects cell size. The function of WHI3 is well-established in the literature (C29, C31, C32), and the authors demonstrate that DISOMY14 cells are larger (C33) with genetic manipulations confirming WHI3's role (C34, C35). The data in Figure 4\u2014figure supplement 1A support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DISOMY14 cells utilize more lysine per birth than ancestral cells, but the exchange ratio (hypoxanthine release rate per cell divided by lysine utilization per birth) remains unchanged, meaning a fixed amount of lysine produces either more numerous but lower-releasing ancestral cells or fewer but higher-releasing DISOMY14 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 present the key insight that normalizes the increased release rate by increased lysine utilization. The metabolite utilization data (C36, Figure 4B) and genetic manipulations (C37, C38) are well-supported. The exchange ratio calculation (C39, Figure 4C) is mathematically sound and the interpretation (C40, C41) logically follows. This is the central conceptual contribution of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Despite increased hypoxanthine release rate per cell, DISOMY14 is not partner-serving during steady-state community growth, as demonstrated by identical total hypoxanthine release in chemostats with fixed lysine supply, identical exchange ratios, and identical partner growth rates. DISOMY14 is therefore strictly self-serving, not win-win.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 provide multiple lines of evidence that DISOMY14 is not partner-serving. Chemostat experiments with fixed lysine supply show identical hypoxanthine concentrations (C42, Figure 4D) and identical exchange ratios (C45, Figure 4\u2014figure supplement 2B). Most importantly, partner growth rate is unchanged (C46, Figure 4E), directly demonstrating lack of partner benefit. The conclusion that DISOMY14 is strictly self-serving (C50) is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors propose that partner-serving phenotypes in microbial mutualisms spanning multiple generations should be quantified using the exchange ratio (benefit production rate per cell divided by benefit utilized to make that cell), rather than simply benefit production rate per cell. By this metric, increased benefit production does not necessarily indicate partner-serving behavior if benefit utilization also increases proportionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 present the conceptual framework developed from the DISOMY14 analysis. The distinction between transient (C68) and long-term (C69) effects is well-illustrated in Figure 5. The definition of exchange ratio (C70, C71, C72) is mathematically sound and the logical extension to reduced benefit production (C73) is valid. This represents the main theoretical contribution of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Theoretical predictions state that well-mixed environments favor mutations with positive direct fitness effects on self (selfish, strictly self-serving, and win-win), while spatially-structured environments can favor mutations with positive effects on partners (win-win, strictly partner-serving, and altruistic) because interactions are localized and repeated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 present established theoretical predictions about mutation types favored in different spatial contexts. These are well-supported by extensive citations (C59, C60) and represent accepted theory in the field. The explanations for why these patterns occur (C58, C61, C62) are logically sound. This provides the theoretical context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C63",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mutualisms involving metabolite exchange are widespread in microbial communities, and the CoSMO system serves as a tractable model for studying mutualistic evolution with principles that have been found to operate in natural communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 and C63, C74-C77 establish the biological context and relevance of the work. The prevalence of mutualisms is well-documented with citations (C52, C53, C54), and the relevance of CoSMO to natural systems is supported by citations showing that principles learned from CoSMO apply to non-engineered microbes (C63). The utility of simplified systems (C76) and advantages of CoSMO (C77) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Previous work established that hypoxanthine is released by live L-H+ cells at a relatively constant rate, and DISOMY14 has a lower maximal growth rate than the ancestor, possibly due to fitness costs of aneuploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 cite prior work establishing key methodological foundations. Claim C66 is an observation supported by data (Figure 2), while C67 is appropriately presented as speculation with a citation. These claims provide important context but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The manuscript's abstract and discussion summarize that DISOMY14 initially appeared to be win-win (improving lysine affinity and increasing hypoxanthine release rate per cell), but deeper analysis revealed it to be solely self-serving because increased release rate was due to increased cell size and lysine utilization, leaving the exchange ratio unchanged and partner growth rate unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 summarize the main findings and represent the narrative arc of the paper. The initial appearance of win-win phenotype (C84, C85, C86) is supported by data, as is the subsequent realization that it is solely self-serving (C80, C81, C82). The logical extension to cheating (C83) appropriately follows. These claims synthesize the results into the paper's main message.",
+    "result_type": "MAJOR"
+  }
+]

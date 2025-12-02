@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors establish the background context that influenza viruses evolve to escape immunity, creating population-level selection pressure for antigenic novelty, yet new antigenic variants are rarely selected within individual hosts despite antibody-mediated immunity exerting evolutionary pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by extensive citations to prior literature and represent established knowledge in influenza virology. These claims provide the foundational context for the study and are consistently supported across multiple independent sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors argue that new antigenic variants should be produced in every infected host given high mutation rates, large within-host populations, and single amino acid substitution effects, but without selection pressure these variants remain at undetectably low frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 are supported by citations to empirical measurements of mutation rates (C10), population sizes (C11), and antigenic effects (C12). The logical inferences about variant generation (C9, C13) and detection limits (C14) follow from these established parameters. C15 represents a theoretical expectation that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors present the central empirical puzzle: while antibody-mediated antigenic selection can be observed in vaccinated mice and egg passage experiments, new antigenic variants are rarely observed in human seasonal influenza infections, even in recently infected or vaccinated hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by specific citations to experimental studies. C18 is supported by multiple NGS studies and meta-analysis data shown in Figure 1A,B. This represents a well-documented empirical observation that forms the core motivation for the modeling study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "The authors claim that the rarity of new antigenic variants in human infections contradicts existing within-host evolution models, which predict new variants should be at consensus or fixation in detectable reinfections of previously immune hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by citations to prior modeling studies (Luo et al., 2012; Volkov et al., 2010; Kennedy and Read, 2017). The contradiction between model predictions and empirical observations (C18) is clearly established and motivates the need for a new mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors propose their central hypothesis: antibody immunity at transmission reduces reinfection probability (via mucosal sIgA), but if infection occurs, the recall response takes multiple days to mount, meaning virus titer peaks before antibody production begins, and tight transmission bottlenecks cause most antigenic diversity to be lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 are supported by multiple citations to immunological studies establishing the timing of antibody responses (C23: Coro et al., 2006; Lam and Baumgarth, 2019) and the role of sIgA (C22: Wang et al., 2017). The transmission bottleneck claims (C26) are supported by recent NGS studies (McCrone et al., 2018; Xue and Bloom, 2019). The logical inferences (C24, C25, C27) follow from these established facts and form the core mechanistic hypothesis of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors present three main modeling results: (1) antibody neutralization at inoculation can protect experienced hosts and explain population-level selection, (2) delayed recall responses render within-host evolution nearly neutral even in experienced hosts, and (3) substantial population immunity must accumulate before new variants are observed at the population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 represent the three main findings from the modeling study. These are directly supported by the mathematical model results presented throughout the paper, including Figures 1-6. The model is mathematically described in detail in the Materials and Methods, and the results are shown to be consistent with empirical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors establish the biological realities motivating their model: influenza infections last 5-7 days, naive individuals take up to 7 days to produce antibodies, experienced individuals have sIgA that can neutralize virions before cell infection, but if infection occurs it takes 2-5 days to mount a recall response. This contrasts with previous models that assumed immediate antibody neutralization during replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are well-supported by citations to empirical studies of infection duration (C31: Suess et al., 2012), antibody kinetics (C32: Wrammert et al., 2008; C34: Coro et al., 2006; Zuccarino-Catania et al., 2014), and sIgA function (C33: Wang et al., 2017). C35 accurately characterizes prior models (Luo et al., 2012; Volkov et al., 2010) and C36 cites recent animal model evidence (Le Sage et al., 2020). These claims establish the biological basis for the model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors show through modeling that sufficiently strong antibody neutralization during exponential growth can block transmission but results in detectable escape variants in each reinfection (unrealistic), while adding a realistic 2-day delay to antibody production curtails antigenic selection, leaving infections dominated by old variants with new variants remaining undetectably rare unless infections are prolonged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are supported by modeling results shown in Figures 1 and 2, with sensitivity analysis in Appendix 1-figure 3. The model predictions (C37-C38) for immediate recall responses are shown in Figure 2, while predictions for delayed responses (C40-C43) are shown in Figure 1C,D,G. The claim about prolonged infections (C44) is supported by Figure 1G and Figure 7, and is consistent with cited empirical observations (C45-C46: Xue et al., 2017; Lumby et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The model's prediction that replication selection requires prolonged infections explains existing observations that within-host adaptive antigenic evolution occurs in prolonged infections of immune-compromised hosts, which show large within-host effective population sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by citations to empirical studies (Xue et al., 2017; Lumby et al., 2020) and represent a successful post-hoc explanation of existing observations by the model. This demonstrates that the model can account for known phenomena beyond the core observations it was designed to explain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors show that adding mucosal antibody neutralization at inoculation to the model produces realistic protection levels, with reinfections being overwhelmingly old variant infections and new variants remaining undetectably rare, thus explaining how immune protection can exist without observable within-host antigenic selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by modeling results shown in Figures 1A-D,G-H and Figure 3B-C. The model successfully reproduces empirical observations from NGS studies (cited: Debbink et al., 2017; Dinis et al., 2016; McCrone et al., 2018; Sobel Leonard et al., 2016). C50 represents the key mechanistic explanation that resolves the central puzzle of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "The authors demonstrate that antigenic variants must survive multiple transmission bottlenecks (excretion, inter-host, mucus, sIgA, cell infection), with the net bottleneck typically being a single virion. Because variants appear at low frequencies and undergo minimal replication selection, they most commonly reach detectable levels through founder effects, occurring at rates of 1 in 10^4 to 10^5 infections in naive hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 are supported by modeling results shown in Figure 3D-H and by citations to empirical bottleneck measurements (C52: McCrone et al., 2018; Xue and Bloom, 2019; Ghafari et al., 2020; C53: Varble et al., 2014). The founder effect mechanism (C54) is a key modeling result shown in Figure 3D. The quantitative predictions (C59) are shown in Figure 3E-H and follow from the model parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors propose that if different virions have different neutralization probabilities at transmission, the founding process may be selective ('inoculation selection'), with new variants disproportionately likely to survive the bottleneck. This is supported by suggestive evidence from ferret experiments, though distinguishing transmission-point selection from early replication selection is empirically difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 represent modeling results and logical inferences about inoculation selection shown in Figure 3. C64 cites suggestive experimental evidence (Wilker et al., 2013; Moncla et al., 2016), while C65 appropriately acknowledges the empirical challenge in distinguishing mechanisms (citing Lumby et al., 2018). The claims are internally consistent and the model predictions are clearly derived.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors show that inoculation selection strength depends on the ratio v/b (virions encountering sIgA to final bottleneck size), and that with incomplete immune escape, experienced hosts could facilitate large-effect antigenic variants while impeding small-effect variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C68, and C69 are supported by modeling results shown in Figure 3E-F and Appendix 1-figure 1. C69 includes a citation to Smith et al., 2004 for antigenic cluster transitions. The double-edged sword effect (C68) is a logical consequence of partial cross-reactivity and is demonstrated in the model results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors find that at realistic parameters, only ~1-2 in 10^4 inoculations of experienced hosts result in new variant bottleneck survival (likely an overestimate), only 2-3 fold higher than in naive hosts. Thus, even with experienced hosts, antigenic selection is inefficient, most diversity is lost at transmission, and new variants can be generated in every host without explosive population-level diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by modeling results shown in Figure 4. The quantitative predictions (C75) are clearly shown in Figure 4E,H. The comparison to naive hosts (C77) and the conclusions about selection efficiency (C78-C79) follow logically from the model results. C76 appropriately acknowledges limitations discussed elsewhere in the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors demonstrate through transmission chain modeling that with all naive hosts, evolution is non-directional, with constant selection it is unrealistically adaptive, but with mucosal antibodies and realistic recall timing, major variants appear rarely and the distribution mimics empirical observations including quasi-neutral diversification within clusters and rare directional jumps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are supported by transmission chain modeling results shown in Figure 5A-D. The model successfully reproduces the quasi-neutral diversification pattern observed by Smith et al., 2004 (cited in C82). The predictions about immediate vs. delayed recall responses (C83-C84) are shown in Figure 5B-C vs. 5D. The role of stochasticity (C85-C86) and the overall pattern (C87) are clearly demonstrated in the model results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors show through population-level modeling that with efficient inoculation selection, an intermediate fraction of immune hosts maximizes new variant emergence probability during epidemics, due to a trade-off between 'generator' hosts (naive/weakly immune) who propagate epidemics and 'selector' hosts (strongly immune) who facilitate variant survival at transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by population-level modeling results shown in Figure 6. The trade-off mechanism (C89) is clearly explained and the optimal intermediate immunity level (C88) is demonstrated in Figure 6. The effects of increasing selector frequency (C90-C91) are shown in Figure 6B-C. The model provides mechanistic insight into population-level dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "The authors demonstrate that their model parameterized with values from Table 1 captures key features of influenza infections including rapid peaks at ~2 days post-infection, slower declines with clearance at ~1 week, and faster clearance in experienced hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by the model results and represents a validation that the model produces biologically realistic infection dynamics. The parameters in Table 1 are justified by citations to empirical studies, and the model's ability to reproduce these key features supports its biological plausibility.",
+    "result_type": "MINOR"
+  }
+]

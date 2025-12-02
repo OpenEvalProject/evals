@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Expression of p14 in HEK293T cells drives cell-cell fusion, forming multinucleated syncytia. At 12 hr post-transfection, 5% of p14-expressing cells had 3 or more nuclei, increasing to 34% at 24 hr. No multinucleated cells were observed in mCherry-only controls. The increase in YFP intensity (splitYFP assay) correlated with the increase in multinucleated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide converging evidence from multiple assays (microscopy, nuclei counting, splitYFP fluorescence) demonstrating p14-mediated cell-cell fusion. The data include appropriate controls (C36) and temporal progression (C34, C35), with quantitative measurements shown in Figure 1b-f. The correlation between YFP intensity and nuclei count (C37) validates the splitYFP assay as a fusion readout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The cytoplasmic tail of p14 is essential for cell-cell fusion. Deletion of the cytoplasmic domain (\u0394cyto, Q70-I125) abrogates fusion despite proper trafficking to the plasma membrane, suggesting p14 interacts with cellular components through its cytoplasmic tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 demonstrate that the cytoplasmic tail is necessary for fusion through deletion analysis. The mutant traffics properly to the membrane (C39, Figure 1\u2014figure supplement 1f-h) but loses fusion activity (C40, Figure 1g), indicating the cytoplasmic domain has a functional role beyond trafficking. This is consistent with prior literature (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The p14 cytoplasmic tail is mostly disordered and contains multiple tyrosines that can be phosphorylated. Immunoprecipitation confirmed p14 tyrosine phosphorylation, and mutagenesis identified Y116 as the critical phosphorylation site for fusion, as Y116F mutation decreased cell-cell fusion while other tyrosine mutations did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 establish tyrosine phosphorylation of p14 through disorder prediction (C42, Figure 2\u2014figure supplement 1a), anti-phosphotyrosine immunoblotting (C44, Figure 2b), and systematic mutagenesis (C45, Figure 2c). The specificity of Y116F effect among five tyrosine mutants provides strong evidence for Y116's unique role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "c-src kinase phosphorylates p14 at Y116 to drive cell-cell fusion. Computational prediction identified Y116 as a c-src substrate. Co-expression with constitutively active c-src or pervanadate treatment increased Y116 phosphorylation. In vitro kinase assays confirmed c-src is sufficient to phosphorylate Y116. SYF cells (lacking src family kinases) showed reduced fusion compared to SYF+c-src cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 provide comprehensive evidence through computational prediction (C46), cellular phosphorylation assays (C47, C48), in vitro kinase assays (C49, C50, Figure 2f), and genetic complementation (C51, Figure 2g). The convergence of multiple experimental approaches strongly supports c-src as the Y116 kinase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Phosphorylated Y116 binds to Grb2 through a consensus motif (YVNI), and this interaction is essential for p14-mediated fusion. Co-immunoprecipitation confirmed p14-Grb2 binding. Mutations disrupting the Grb2 binding site (Y116F, N118A, FVAI) severely attenuated fusion despite proper membrane trafficking. In vitro binding assays showed only phosphorylated Y116 bound Grb2. GFP-Grb2 co-localized with p14 at the plasma membrane when Y116 phosphorylation was increased, but not with FVAI mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 establish the p14-Grb2 interaction through computational prediction (C53), co-IP (C54, Figure 3b), mutagenesis (C55, Figure 3c), in vitro binding (C57, Figure 3d), and live-cell imaging (C58, C59, Figure 3e-f). The phosphorylation-dependence and specificity of binding are well-demonstrated through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Branched actin assembly, but not the MAPK-ERK pathway, is required for p14-mediated fusion. Raf kinase inhibition (sorafenib) had no effect on fusion. However, inhibiting N-WASP (wiskostatin) or Arp2/3 (CK-666) significantly reduced fusion in a dose-dependent manner, while formin inhibition (smifH2) enhanced fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 systematically dissect Grb2 downstream pathways using pharmacological inhibitors (Figure 4b). The lack of effect with Raf inhibition (C62) contrasts with significant effects of N-WASP and Arp2/3 inhibition (C63, C64), clearly implicating branched actin. The formin inhibitor result (C65) is consistent with compensatory branched actin assembly. Proper p14 trafficking was confirmed for drug treatments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The C-terminal SH3 domain of Grb2, which binds N-WASP, is specifically required for p14-mediated fusion. Overexpression of Grb2 N-terminal mutant (binding only SOS) reduced fusion, while C-terminal mutant (binding only N-WASP) restored fusion to wild-type levels. Fusion was attenuated in N-WASP-/- mouse embryonic fibroblasts compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 use domain-specific Grb2 mutants to dissect pathway requirements (Figure 4c). The rescue by C-terminal mutant (C67) but not N-terminal mutant (C66) specifically implicates N-WASP. The N-WASP knockout data (C68, Figure 4d) provides genetic validation. These experiments effectively distinguish between the two Grb2 pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Phosphorylated p14 cytoplasmic tail is sufficient to nucleate branched actin assembly in vitro through Grb2 and N-WASP. Beads coated with phosphorylated Y116 peptide nucleated actin tails in a reconstituted system containing Grb2, N-WASP, Arp2/3, and actin, while non-phosphorylated peptide did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 demonstrate sufficiency through a minimal reconstituted system (Figure 4e). The phosphorylation-dependent actin tail formation directly links p14 phosphorylation to actin nucleation through Grb2/N-WASP. This in vitro reconstitution provides strong mechanistic evidence for the proposed pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Direct coupling of actin assembly to the p14 ectodomain is necessary for fusion. Co-expression of ectodomain deletion (\u0394ecto) and cytoplasmic tail deletion (\u0394cyto) mutants in the same cell abolished fusion despite both components being present. This indicates native Arp2/3-generated actin networks at cell contacts are insufficient for spontaneous fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 demonstrate the necessity of direct coupling through a clever complementation experiment (Figure 5a). The failure of trans-complementation (C72) despite proper \u0394ecto trafficking and Grb2 binding indicates spatial coupling is essential (C73). The inference about native actin networks (C74) is well-supported by the experimental data and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Direct coupling of branched actin assembly to p14 is sufficient for fusion. A fusion protein (SH2-R47) consisting of Grb2 SH2 domain and a 47-residue N-WASP-activating peptide from EspFU restored fusion when co-expressed with p14, significantly more than SH2 domain alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 demonstrate sufficiency through an elegant rescue experiment using an engineered fusion protein (Figure 5c). The SH2-R47 construct bypasses endogenous Grb2 while maintaining direct coupling to actin assembly, and successfully rescues fusion. This provides strong evidence that direct coupling is both necessary and sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The reptilian orthoreovirus fusogen p14, which has a short (<2 nm) ectodomain, hijacks the actin cytoskeleton to drive cell-cell fusion. p14 presents a c-src kinase substrate in its cytoplasmic tail, binds the adaptor protein Grb2, and initiates N-WASP-mediated branched actin assembly. Preventing adaptor binding abrogates fusion, while direct coupling of the ectodomain to branched actin assembly is sufficient for fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 and C77-C80 represent the main conclusions synthesized from all experimental results. The comprehensive evidence from phosphorylation studies, binding assays, pharmacological inhibition, genetic knockouts, in vitro reconstitution, and rescue experiments collectively support this novel mechanism. The work is internally consistent and addresses the key question of how a short fusogen overcomes membrane barriers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The authors propose that branched actin network assembly physically pushes the p14 fusogenic ectodomain into the opposing plasma membrane, replacing the role of conformational changes in tall fusogens. Localized force generation by branched actin around p14's cytoplasmic domain drives close membrane apposition by coupling to and pushing against the cortical actin cytoskeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 present a mechanistic model based on the experimental findings. While the model is plausible and consistent with the data showing direct coupling is necessary and sufficient, direct evidence for force generation and membrane pushing is not provided. The model is speculative (evidence_type includes SPECULATION) and would require additional experiments such as force measurements or super-resolution imaging of fusion sites to be fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background knowledge on cell-cell fusion: Cell-cell fusion is essential for development and used by viruses to form syncytia. Typical fusogens have tall (>10 nm) ectodomains that undergo conformational changes to overcome the ~2 nm hydration barrier and bring membranes into close contact. The plasma membrane is densely decorated with glycoproteins that could sterically block fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C9-C23 establish the scientific context through cited literature. These are well-established facts about membrane fusion mechanisms, supported by extensive prior work. The claims accurately represent current understanding of fusogen structure and function, providing appropriate background for the novelty of the p14 mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background on p14: p14 is a non-structural, single-pass transmembrane protein from reptilian orthoreovirus with a short (0.7-1.5 nm) membrane-disruptive ectodomain that has minimal secondary structure. The ectodomain can disrupt membranes when added as a soluble fragment or when liposomes are brought close by divalent cations. Expression of p14 alone is sufficient to drive fusion in cultured cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 summarize prior knowledge about p14 from cited literature. These establish the puzzle that motivates the study: how does a short fusogen drive fusion without conformational changes? The claims accurately represent published work on p14 structure and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Partial cleavage of the p14 cytoplasmic tail occurs during reptilian orthoreovirus infection, liberating the C-terminus mCherry tag as a cytoplasmic marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 describes a technical observation about p14 cleavage supported by prior literature (Top et al., 2009) and confirmed by the authors' membrane fractionation data (Figure 1\u2014figure supplement 1a,b). This validates the use of cleaved mCherry as a marker for p14-expressing cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The cytoplasmic domain of p14 is comparatively long (68 amino acids).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is a factual statement about p14 structure that can be verified from the sequence. This observation motivates investigation of the cytoplasmic domain's role in fusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Background on Grb2 signaling: The N-terminal SH3 domain of Grb2 binds SOS, activating the Ras-Raf-MAPK-ERK1/2 pathway. The C-terminal SH3 domain binds N-WASP, which activates Arp2/3 to nucleate branched actin assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 describe established Grb2 signaling pathways from the literature. This background is necessary to understand the experimental dissection of which Grb2 pathway is important for p14-mediated fusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The p14 ectodomain cannot interact with opposing membranes through the ~2 nm hydration barrier due to its short length (0.7-1.5 nm). However, when the barrier is overcome by divalent cations bringing bare membranes together in vitro, the p14 ectodomain can disrupt and mix membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 synthesize prior knowledge about p14 ectodomain size and the hydration barrier to frame the mechanistic problem. C81 is a logical inference from known dimensions, while C82 cites prior in vitro work. These claims effectively motivate the need for an alternative mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The p14 ectodomain contains hydrophobic residues and myristoylation that are known to be necessary for fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 cites prior work characterizing the p14 ectodomain's membrane-disruptive properties. This supports the model that the ectodomain is fusogenic once brought into contact with the opposing membrane.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The authors speculate that the actin cytoskeleton could promote clustering of p14 ectodomains into sub-diffraction domains (though enrichment was not observed at fusion sites) and could change local membrane curvature, tension, or fusion pore dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 present speculative additional roles for actin beyond the primary pushing mechanism. C86 explicitly notes that enrichment was not observed (Figure 5\u2014figure supplement 2), and both claims are marked as SPECULATION. These are reasonable hypotheses but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background on actin in fusion: The actin cytoskeleton has been implicated in membrane fusion driven by other fusogens, with proposed roles including regulating fusogen activity, localization, enrichment, protein-protein interactions, and fusion pore expansion. Actin has been suggested as important in fusion processes where fusogens are unidentified, including osteoclast, macrophage, and myoblast fusion. Protrusive actin structures have been observed at fusogenic synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 review prior literature on actin's roles in various fusion contexts. These are well-supported by citations and provide important context for the novelty of the p14 mechanism, where actin plays a direct mechanical role rather than a regulatory one.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors speculate that their findings may be relevant to myomixer, a short extracellular peptide required for myoblast fusion that does not resemble conformational-change based fusogens. Myomixer, together with myomaker, could potentially harness the actin cytoskeleton similarly to p14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 accurately describe myomixer from the literature, but C95 is speculative (evidence_type: SPECULATION). While the analogy is reasonable given myomixer's short ectodomain, there is no experimental evidence in this study that myomixer uses a similar mechanism. This is an interesting hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The authors conclude that local forces generated by the cytoskeleton, rather than conformational changes in tall fusogens, provide a powerful tool for cells and pathogens to create multinucleated structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is a concluding statement that synthesizes the main findings. While marked as INFERENCE and SPECULATION, it is well-supported by the comprehensive experimental evidence demonstrating that p14 uses actin-generated force rather than conformational changes. This represents a conceptual advance in understanding fusion mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

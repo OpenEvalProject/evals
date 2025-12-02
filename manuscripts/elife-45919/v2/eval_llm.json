@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript establishes the context and challenges of cryo-ET workflows, including the need for cryo-FIB milling to produce thin lamellae (~300 nm), the difficulty of identifying proteins in heterogeneous cellular environments, and the labor-intensive nature of conventional cryo-CLEM workflows that require multiple cryo-transfers between separate microscopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide well-established background knowledge about cryo-ET and cryo-CLEM workflows, supported by appropriate citations to the literature (Beck and Baumeister 2016, Dubochet et al. 1988, Frank 1996, F\u00f6rster et al. 2010, Marko et al. 2006-2007, Arnold et al. 2016, Sartori et al. 2007, and others). The claims accurately describe the technical challenges and standard practices in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C8",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The PIE-scope is an integrated cryo-FIB and light microscope system designed to enable retrofitting of existing FIB/SEM systems, with the light microscope positioned 49 mm away from the coincidence point along the X axis to maximize compatibility with different instrument geometries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The design specifications are clearly described and illustrated in Figure 2. The offset positioning (C41) is a deliberate design choice to enable broad compatibility (C40, C42, C43), which is well-justified and documented. The system architecture is presented with sufficient technical detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The PIE-scope design offers multiple operational advantages including single-axis translation between imaging modes, compatibility with high NA objectives, sample-independent focusing, collision detection, and sub-10 nm focusing precision using a piezoelectric positioner. Objectives require ~24 hours degassing and may need replacement after >12 months due to cement degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The design features (C44-C52) are well-documented with specific technical specifications. The degassing observation (C53) is based on experimental testing. However, the objective lifetime claim (C55) is partially speculative, based on limited experience (>12 months), though the authors appropriately qualify this as an expectation rather than a definitive finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C81",
+      "C82"
+    ],
+    "result": "The PIE-scope optical system supports four-channel fluorescence and reflected light imaging in wide-field mode, with the design compatible with future implementation of super-resolution techniques such as SIM that would require only atmospheric-side modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The current capabilities (C56, C58) are clearly specified. The potential for SIM implementation (C59, C60) is appropriately presented as speculation supported by relevant citations (Gustafsson 2000, Kner et al. 2009, Shao et al. 2011). The modular design rationale for future upgrades (C81, C82) is logical and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C108",
+      "C109"
+    ],
+    "result": "A custom control software (PIE-scope-commander) was developed in LabVIEW and Python to control all imaging modalities from a single computer, enabling seamless navigation between modalities, hierarchical data storage, and the ability to acquire fluorescence images between milling steps using the same stage and software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The software capabilities are clearly described and illustrated in Figures 3 and 4. The integration features (C62-C64, C108, C109) address practical workflow needs. The software is made freely available (C65), supporting reproducibility. The claims are well-supported by the presented interface and functionality descriptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The system requires calibration after mounting due to mechanical tolerances (up to 500 \u03bcm variability). Direct ROI targeting precision is <420 nm (X-axis) and <300 nm (Y-axis), with mechanical correlation precision of ~500 nm (\u00b1\u03c3) based on 86 measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The precision measurements are quantitatively reported with appropriate sample sizes (n=86 for C69) and clearly illustrated in Figure 3c and 3f. The variability due to mechanical tolerances (C67) is honestly reported. The precision values are sufficient for the intended application of targeting 5-10 \u03bcm lamellae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "System characterization demonstrates that PIE-scope installation does not compromise FIB/SEM performance: vacuum levels reach 1\u00d710\u207b\u2074 Pa (room temperature) and 5\u00d710\u207b\u2075 Pa (cryogenic), condensation rates are unchanged, drift remains within specifications (<10 nm/min room temperature, <30 nm/min cryogenic), and no additional vibrations are detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization is thorough and addresses key performance metrics. Measurements are compared to pre-installation baselines (C73) and manufacturer specifications (C74). The specific hardware configuration is noted (fiber-coupled Toptica iChrome-CLE and heated Basler USB3 camera), acknowledging that results may vary with different components. The data support that the modification does not degrade system performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Optical performance meets theoretical diffraction limits for all tested objectives. While deconvolution provides mild resolution improvement, super-resolution imaging would be better suited for subcellular molecular distribution. The PIE-scope addresses key limitations of cryo-super-resolution (ice contamination and drift) by maintaining high vacuum and utilizing the stable cryo-stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optical characterization (C76) confirms expected performance. The assessment of deconvolution limitations (C77, C78) and super-resolution potential (C79, C80, C83) is appropriately supported by citations. The inference that PIE-scope addresses ice contamination and drift issues (C84, C85) is logical given the high-vacuum environment and stable stage, though direct experimental validation of super-resolution performance is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "PIE-scope successfully prepared targeted cryo-lamellae from C. elegans neurons expressing mCherry, with fluorescence maintained after milling to confirm that the target dendrite structure is contained in the lamella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The C. elegans demonstration is well-documented in Figure 5, showing the complete workflow from fluorescence targeting through milling with intermediate verification steps. The maintenance of fluorescence signal after milling (C87) provides direct confirmation of successful targeting (C88). This represents a clear proof-of-concept for the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C133"
+    ],
+    "result": "PIE-scope successfully prepared 1.5 \u03bcm thick targeted lamellae from bulk Drosophila brain tissue expressing EGFP in interneurons. The system is compatible with cryo-lift-out techniques, as the LM position does not interfere with the manipulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Drosophila brain demonstration (Figure 6) shows successful targeting in bulk tissue, a more challenging application than thin samples. The lamella preparation (C90) is clearly documented. The compatibility with cryo-lift-out (C91, C92) is supported by citations and the physical layout, though actual lift-out experiments are not performed. The freeze-fracture method (C133) is appropriately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Fluorescence imaging of cryo-TEM compatible thin lamellae (~250 nm) is possible but challenging due to reduced signal intensity (~30% of uncut tissue) and limited detector dynamic range. Yeast samples with nuclear staining demonstrate that fluorescence is detectable in thin lamellae and can guide cryo-ET data collection without inducing sample de-vitrification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The intensity reduction (C93) is quantified and explained by optical principles relating lamella thickness to depth of focus (C94). The challenge for thin lamellae (C95) is honestly acknowledged. The yeast demonstration (Figure 7, Video 2) provides proof that thin lamella imaging is feasible (C97, C98) and that LM imaging does not damage the sample (C99), addressing a critical concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C100",
+      "C101"
+    ],
+    "result": "The integrated approach mitigates risks associated with cryo-transfers by eliminating the need to move samples between separate microscopes. Unlike the previous iLEM system (which has limitations in TEM column geometry and requires cryo-box removal), PIE-scope enables in-situ verification during FIB milling and simplifies sample handling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to iLEM (C32-C37) is fair and appropriately cited (Agronskaia et al. 2008, Faas et al. 2013). The advantages of the integrated approach (C31, C100, C101) are logical consequences of the design and are demonstrated through the biological applications (C38). The reduction in cryo-transfers is a clear benefit, though quantitative comparison of success rates versus conventional workflows is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C110"
+    ],
+    "result": "The authors claim PIE-scope will increase throughput and accuracy, make workflows safer and more accessible, and provide a foundation for automated CLEM. Future developments may include optical sectioning, super-resolution imaging, and automated segmentation for defining milling parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are primarily forward-looking claims about expected impact and future capabilities. While the technical foundation is demonstrated (C103, C108), the actual improvements in throughput, accuracy, and accessibility (C9, C10) are not quantitatively validated. The automation potential (C104, C106, C110) is logical given the integrated design but remains speculative. The claims about enabling rare cellular event studies (C105) require validation through actual implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Detailed technical specifications and methods are provided for the PIE-scope hardware (illumination source, camera, optical components, materials, fabrication) and software (LabVIEW, Python, dependencies), with all designs, bills of materials, and software freely available online.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical specifications are comprehensive and specific (C111-C118), supporting reproducibility. The design and fabrication details (C119-C121) are clearly stated. Software specifications (C122) include version numbers. The commitment to open access of designs and software (C123) is commendable and verifiable. These details enable others to reproduce or adapt the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Detailed sample preparation protocols are provided for C. elegans (plunge freezing), Drosophila brain (high-pressure freezing with freeze-fracture), and yeast (plunge freezing with nuclear staining), including specific strains, culture conditions, vitrification parameters, and grid preparation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sample preparation methods are described in sufficient detail for reproduction, with appropriate citations where relevant (C124). Specific parameters are provided (temperatures, concentrations, timing). The methods are standard for the field and appropriate for the specimens used. The freeze-fracture approach for Drosophila (C132) is well-justified to reduce milling time.",
+    "result_type": "MINOR"
+  }
+]

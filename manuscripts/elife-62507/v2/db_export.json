@@ -1,0 +1,1961 @@
+{
+  "submission": {
+    "id": "225fd0e5-38a5-48d4-8dc3-887c93ea4705",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:56:46.156433Z",
+    "updated_at": "2025-12-02T21:56:46.156433Z"
+  },
+  "content": [
+    {
+      "id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "submission_id": "225fd0e5-38a5-48d4-8dc3-887c93ea4705",
+      "content_type": "manuscript",
+      "content_text": "# A putative origin of the insect chemosensory receptor superfamily in the last common eukaryotic ancestor\n\n## Authors\n\n- Richard Benton<sup>1</sup> ([ORCID: 0000-0003-4305-8301](https://orcid.org/0000-0003-4305-8301)) \u2020\n- Christophe Dessimoz<sup>1</sup> ([ORCID: 0000-0002-2170-853X](https://orcid.org/0000-0002-2170-853X))\n- David Moi<sup>1</sup> ([ORCID: 0000-0002-2664-7385](https://orcid.org/0000-0002-2664-7385))\n\n### Affiliations\n\n1. Center for Integrative Genomics, Faculty of Biology and Medicine, University of Lausanne Lausanne Switzerland\n2. Department of Computational Biology, Faculty of Biology and Medicine, University of Lausanne Lausanne Switzerland\n3. Swiss Institute of Bioinformatics Lausanne Switzerland\n4. Department of Genetics, Evolution and Environment, University College London London United Kingdom\n5. Department of Computer Science, University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe insect chemosensory repertoires of Odorant Receptors (ORs) and Gustatory Receptors (GRs) together represent one of the largest families of ligand-gated ion channels. Previous analyses have identified homologous \u2018Gustatory Receptor-Like\u2019 (GRL) proteins across Animalia, but the evolutionary origin of this novel class of ion channels is unknown. We describe a survey of unicellular eukaryotic genomes for GRLs, identifying several candidates in fungi, protists and algae that contain many structural features characteristic of animal GRLs. The existence of these proteins in unicellular eukaryotes, together with ab initio protein structure predictions, provide evidence for homology between GRLs and a family of uncharacterized plant proteins containing the DUF3537 domain. Together, our analyses suggest an origin of this protein superfamily in the last common eukaryotic ancestor.\n\n## Introduction\n\nThe insect chemosensory receptor superfamily, comprising Odorant Receptors (ORs) and Gustatory Receptors (GRs), forms a critical molecular interface between diverse chemical signals in the environment and neural activity patterns that evoke behavioral responses (Benton, 2015; Joseph and Carlson, 2015; Robertson, 2019; Rytz et al., 2013; van Giesen and Garrity, 2017). Most insect genomes encode dozens to hundreds of different, often species-specific, ORs and/or GRs. Detailed analyses, in particular in Drosophila melanogaster, indicate that the vast majority of these are likely to be expressed in, and define the chemical response properties of, distinct subpopulations of peripheral sensory neurons (Chen and Dahanukar, 2020; Joseph and Carlson, 2015; Scott, 2018; Vosshall and Stocker, 2007).\n\nInsect ORs and GRs \u2013 the former having derived from an ancestral GR (Robertson, 2019; Robertson et al., 2003) \u2013 contain seven transmembrane (TM) domains (Clyne et al., 2000; Clyne et al., 1999; Scott et al., 2001; Vosshall et al., 1999). In contrast to vertebrate olfactory and taste receptors, which belong to the G protein-coupled receptor (GPCR) superfamily of seven TM domain proteins (Glezer and Malnic, 2019; Yarmolinsky et al., 2009), insect ORs and GRs have the opposite topology, with an intracellular N-terminus (Benton et al., 2006; Lundin et al., 2007). Functional analyses of these proteins in heterologous expression systems indicate that they form ligand-gated ion channels (Butterwick et al., 2018; Sato et al., 2008; Sato et al., 2011; Wicher et al., 2008). Insect ORs assemble into heteromeric (probably tetrameric) complexes likely composed of two subunits each of a tuning OR, which recognizes odor ligands, and a universal co-receptor, ORCO, which is critical for complex assembly, subcellular trafficking, and \u2013 together with the tuning OR \u2013 forms the ion conduction pore (Benton et al., 2006; Butterwick et al., 2018; Larsson et al., 2004; Sato et al., 2008; Wicher et al., 2008). GRs are less well-characterized but are also likely to function in multimeric complexes of one or more different subunits (Joseph and Carlson, 2015; Scott, 2018). A cryogenic electron microscopy (cryo-EM) structure of an ORCO homotetramer (Butterwick et al., 2018) \u2013 which can conduct ions itself upon stimulation with artificial ligands (Jones et al., 2011) \u2013 demonstrated that this receptor adopts a novel fold unrelated to any known family of ion channels. Analysis of amino acid conservation across the OR repertoire (Butterwick et al., 2018) and de novo structure predictions of tuning ORs, guided by patterns of amino acid co-evolution (Hopf et al., 2015), suggest that this fold is globally similar for all ORs (and potentially GRs).\n\nThe unusual nature of these proteins has prompted significant interest to understand their evolution. The most extensive comparative genomic analyses have focused on Insecta, tracing the origins of the OR family from the ancestral insect GRs (Brand et al., 2018; Missbach et al., 2014). Surveys for GR-like (GRL) proteins beyond insects have identified members of this family across Protostomia (including in Annelida, Nematoda, and Mollusca) as well as in a limited number of Deuterostomia (including Echinodermata and Hemichordata, but not Chordata) (Eyun et al., 2017; Robertson, 2015; Saina et al., 2015). Several non-bilaterian animals have recognizable GRLs, including Cnidaria and Placozoa (Eyun et al., 2017; Nordstrom et al., 2011; Robertson, 2015; Saina et al., 2015). Although only very sparse expression and functional information exists outside Insecta, several lines of evidence indicate that members of this superfamily have roles beyond chemosensation. For example, two homologs in Caenorhabditis elegans (LITE-1 and GUR-3) function in light detection (Edwards et al., 2008), either as a photoreceptor (Gong et al., 2016), or indirectly through recognition of cellular chemical products produced upon light exposure (Bhatla and Horvitz, 2015). (Isoforms of the D. melanogaster LITE-1 ortholog, GR28b, also have other sensory roles, notably in thermosensation and light-sensing (Ni et al., 2013; Xiang et al., 2010).) Another C. elegans homolog functions in motoneurons to control egg-laying (Moresco and Koelle, 2004). GRLs in the sea anemone Nematostella vectensis and the purple sea urchin, Strongylocentrotus purpuratus are expressed early during development (Saina et al., 2015), and one of the N. vectensis proteins may have a role in apical body patterning (Saina et al., 2015).\n\nAlthough this family of established (or presumed) ion channels represents one of the largest and most functionally diverse in nature, its evolutionary origin remains unknown. We previously suggested potential homology between GRLs and a family of uncharacterized plant proteins containing the Domain of Unknown Function 3537 (DUF3537), based upon their predicted seven TM domains and intracellular N-termini (Benton, 2015). However, this proposal was questioned (Robertson, 2019) because DUF3537 proteins lack other features that characterize animal GRLs, such as a motif in TM7 and conserved introns near the 3\u2019 end of the corresponding gene (Robertson, 2015; Robertson, 2019; Saina et al., 2015). Moreover, if insect ORs/GRs and plant DUF3537 proteins were derived from a common ancestor, we might expect to find related proteins encoded in the genomes of unicellular eukaryotes. This study aimed to profit from the wealth of genomic information now available to investigate the potential existence of GRL homologs in such species to further trace the birth of this remarkable protein family.\n\n## Results\n\n### Screening and assessment of candidate GRLs in unicellular eukaryotes\n\nWe used diverse insect ORs and GRs, other animal GRLs and plant DUF3537 families as sequence queries in BLAST searches of protein and genomic sequence databases of unicellular organisms (see Materials and methods). Significant hits were subjected to further assessment to exclude spurious similarities, retaining those that fulfilled most or all of the following criteria: (i) reciprocal BLAST using a candidate sequence as query identified a known GRL or DUF3537 member as a top hit (or no significant similarity to other protein families); (ii)\u00a0~\u00a0350\u2013500 amino acids long, similar to GRLs/DUF3537 proteins; (iii) predicted seven TM domains; (iv) intracellular N-terminus; (v) longer intracellular loops than extracellular loops (a feature of the insect receptors [Otaki and Yamamoto, 2003; Robertson, 2015]). These analyses identified 17 sequences from Fungi, Protista and unicellular Plantae (Table 1 and Figure 1), described in more detail below.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig1-v2.jpg)\n\n**Figure 1.:** (A) Top: cryo-EM structure of Apocrypta bakeri ORCO (AbakORCO) (PDB 6C70 [Butterwick et al., 2018]); only two subunits of the homotetrameric structure are visualized. Bottom: Schematic of the membrane topology of AbakORCO (adapted from Butterwick et al., 2018), colored as in the cryo-EM structure. The white asterisk marks a helical segment that forms part of a membrane re-entrant loop in the N-terminal region. TM domain seven is divided into a cytoplasmic segment (7a) and a membrane-spanning segment (7b). (B) TM domain and topology predictions of the previously described and newly-recognized GRLs and DUF3537 proteins (Dmel, Drosophila melanogaster; Skow, Saccoglossus kowalevskii; Spur, Strongylocentrotus purpuratus; Nvec, Nematostella vectensis; Atha, Arabidopsis thaliana; see Table 1 for other species abbreviations and sequence accessions). Each plot represents the posterior probabilities of transmembrane helix and inside/outside cellular location along the protein sequence, adapted from the output of TMHMM Server v2 (Krogh et al., 2001). In several sequences an extra transmembrane segment near the N-terminus is predicted (marked by a white asterisk in the N-best prediction above the plot); this may represent the re-entrant loop helical region observed in ORCO, rather than a transmembrane region; in at least one case (SpurGRL1) the designation of this region as a TM domain, leads to an atypical (and presumably incorrect) prediction of an extracellular N-terminus. Conversely, in a subset of proteins individual TM domains are not predicted (notably TM7, black asterisks above the N-best plot), which is likely due to subthreshold predictions for TM domainsin these regions. In NvecGRL1, the long TM4 helix (which projects into the intracellular space in ORCO [Butterwick et al., 2018]) is mis-predicted as two TM domains (dashed red line). Independent membrane topology predictions for unicellular species\u2019 GRLs were obtained using TOPCONs (Supplementary file 2), with largely consistent results.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A probability similarity matrix representing the quality of pairwise alignments of the HMMs constructed from the protein sequences indicated in the corresponding rows and columns. The similarity matrix was clustered over its rows and columns using UPGMA hierarchical clustering.\n\n**Table 1.**\n Candidate GRLs in unicellular eukaryotes.Protein sequences are provided in Supplementary file 1. Protein nomenclature is provisional and does not imply orthology between species.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Kingdom</th>\n      <th>Phylum</th>\n      <th>Species</th>\n      <th>Isolate</th>\n      <th>Alternative name</th>\n      <th>Common name</th>\n      <th>Provisional protein name</th>\n      <th>Accession/version</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Fungi</td>\n      <td rowspan=\"2\">Chytridiomycota</td>\n      <td>Spizellomyces punctatus</td>\n      <td>DAOM BR117</td>\n      <td></td>\n      <td>chytrid fungus</td>\n      <td>SpunGRL1</td>\n      <td>XP_016607089.1</td>\n    </tr>\n    <tr>\n      <td>Spizellomyces palustris</td>\n      <td>CBS 455.65</td>\n      <td>Phlyctochytrium palustre</td>\n      <td>chytrid fungus</td>\n      <td>SpalGRL1</td>\n      <td>TPX68946.1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"13\">Protista</td>\n      <td>Amoebozoa</td>\n      <td>Protostelium aurantium var. fungivorum</td>\n      <td>-</td>\n      <td>Planoprotostelium fungivorum</td>\n      <td>-</td>\n      <td>PfunGRL1</td>\n      <td>PRP89608.1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Apusozoa</td>\n      <td rowspan=\"6\">Thecamonas trahens</td>\n      <td rowspan=\"6\">ATCC 50062</td>\n      <td rowspan=\"6\">Amastigomonas trahens</td>\n      <td rowspan=\"6\">zooflagellate</td>\n      <td>TtraGRL1</td>\n      <td>XP_013761079.1</td>\n    </tr>\n    <tr>\n      <td>TtraGRL2</td>\n      <td>XP_013753662.1</td>\n    </tr>\n    <tr>\n      <td>TtraGRL3</td>\n      <td>XP_013759733.1 (trimmed)</td>\n    </tr>\n    <tr>\n      <td>TtraGRL4</td>\n      <td>XP_013759396.1</td>\n    </tr>\n    <tr>\n      <td>TtraGRL5</td>\n      <td>XP_013757274.1</td>\n    </tr>\n    <tr>\n      <td>TtraGRL6</td>\n      <td>XP_013755387.1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Incertae sedis/Chromerdia (superphylum: Alveolata)</td>\n      <td rowspan=\"6\">Vitrella brassicaformis</td>\n      <td rowspan=\"6\">CCMP3315</td>\n      <td rowspan=\"6\">-</td>\n      <td rowspan=\"6\">chromerid</td>\n      <td>VbraGRL1</td>\n      <td>CEM13019.1</td>\n    </tr>\n    <tr>\n      <td>VbraGRL2</td>\n      <td>CEL93132.1</td>\n    </tr>\n    <tr>\n      <td>VbraGRL3</td>\n      <td>CEM19221.1</td>\n    </tr>\n    <tr>\n      <td>VbraGRL4</td>\n      <td>CEM01650.1</td>\n    </tr>\n    <tr>\n      <td>VbraGRL5</td>\n      <td>CEM10760.1</td>\n    </tr>\n    <tr>\n      <td>VbraGRL6</td>\n      <td>CEM25255.1</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Plantae</td>\n      <td rowspan=\"2\">Chlorophyta</td>\n      <td>Chloropicon primus</td>\n      <td>-</td>\n      <td></td>\n      <td></td>\n      <td>CpriGRL1</td>\n      <td>QDZ19318.1</td>\n    </tr>\n    <tr>\n      <td>Micromonas pusilla</td>\n      <td>CCMP1545</td>\n      <td>Chromulina pusilla</td>\n      <td></td>\n      <td>MpusGRL1</td>\n      <td>XP_003054778.1</td>\n    </tr>\n  </tbody>\n</table>\n\nTo further assess these candidate homologs (which we refer to as GRLs hereafter), we used their sequences to build and compare Hidden Markov Models (HMMs) using HHblits (Remmert et al., 2012), a remote homology detection tool that is more sensitive than BLAST (Steinegger et al., 2019) (see Materials and methods). We constructed HMMs for candidate GRLs, as well as a representative set of animal GRLs and DUF3537 proteins. Each HMM was used as a query to perform all-versus-all alignments. A similarity matrix comparing these alignments was compiled by parsing the probabilities of each alignment (Figure 1\u2014figure supplement 1). As expected, alignments of HMMs seeded by animal and plant proteins each form clusters of high probability similarity, although we also detected similarity between these clusters, indicative of homology. Importantly, HMMs of all new candidate sequences display significant similarity to those of multiple animal and/or plant proteins. Some candidates clustered more closely with the animal sequences, while others displayed similar probabilities with both animal and plant proteins, an observation consistent with phylogenetic analyses presented below.\n\nWe also examined the candidate homologs for the only known primary sequence feature of animal GRLs, a short motif located in the C-terminal half of TM7: (T/S)Yhhhhh(Q/K/E)(F/L/M), where h denotes a hydrophobic amino acid (Robertson, 2015). This motif is diagnostic, but not definitive: many insect tuning ORs (as well as some GRs/GRLs) have divergent amino acids at some or all four positions (Robertson, 2019; Scott et al., 2001). Structural and functional analyses of a subset of residues of this motif in ORCO indicates that the TY residues form part of the interaction interface between subunits (Figure 2A), and that their mutation is detrimental to function in some, but not all, combinations of subunits (Butterwick et al., 2018; Nakagawa et al., 2012). The terminal L residue of the motif is part of the channel gate (Figure 2A), and its mutation alters ion permeation selectivity (Butterwick et al., 2018). These observations suggest that divergence from the GRL motif in a given protein could be compatible with a conserved function as an ion channel, albeit with different complex assembly and biophysical properties. Bearing these observations in mind, candidate GRLs were inspected for this motif, as described below (Figure 2B). Finally, the corresponding genes were examined for the existence of the 3\u2019 introns characteristic of the animal genes (Robertson, 2015; Saina et al., 2015); this analysis was ultimately uninformative because of the scarcity of introns in most of these organisms (Roy and Gilbert, 2006; Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig2-v2.jpg)\n\n**Figure 2.:** (A) Side and top views of the cryo-EM structure of the ORCO homotetramer (Butterwick et al., 2018), in which the TM7 motif amino acid side chains are shown in stick format and colored red or orange. The region in the dashed blue box, representing the extracellular entrance to the ion channel pore, is shown in a magnified view on the far right. (B) Multiple sequence alignment of the C-terminal region (encompassing TM7) of unicellular eukaryotic GRLs and selected animal GRLs and plant DUF3537 proteins. Tadh, Trichoplax adhaerens; other species abbreviations are defined in Figure 1 and Table 1. The TM7 motif consensus amino acids (and conservative substitutions) are indicated below the alignment; h indicates a hydrophobic amino acid. Red dashed lines on the alignment indicate positions of predicted introns within the corresponding transcripts. Intron locations are generally conserved within sequences from different Kingdoms, but not between Kingdoms; many Protista sequences do not have introns in this region. (C) Maximum likelihood phylogenetic tree of unicellular eukaryotic GRLs, and selected animal GRLs and plant DUF3537 proteins, with aBayes branch support values. Although the tree is represented as rooted, the rooting is highly uncertain. Protein labels are in black for animals, orange for fungi, blue for protists and green for plants. The scale bar represents one substitution per site.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Multiple sequence alignment of the GRL proteins illustrated in Figure 1. The approximate positions of the TM domains and the N-terminal re-entrant loop (asterisk) are indicated above the alignment.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Maximum likelihood phylogenetic tree of unicellular eukaryotic GRLs, and selected animal GRLs and plant DUF3537 proteins, with aBayes branch support values. Although the tree is represented as rooted, the rooting is highly uncertain. Protein labels are in black for animals, orange for fungi, blue for protists and green for plants. The scale bar represents one substitution per site.\n\n### Candidate GRLs from unicellular eukaryotes\n\nThe fungal kingdom is thought to be the closest relative to Animalia (Baldauf and Palmer, 1993). A single candidate GRL was identified in two fungi, Spizellomyces punctatus (Russ et al., 2016) and Spizellomyces palustris (van de Vossenberg et al., 2019). The fungal proteins exhibit the secondary structural features of GRLs (Figure 1), but only one of the four positions of the TM7 motif is conserved (Figure 2B). A 3\u2019 intron is not in the same position of the characteristic last intron of animal GRL genes (Figure 2B). Both of these species are chytrids, an early diverging lineage of fungi that retains some features of the last common opisthokont ancestor of animals and fungi (Medina and Buchler, 2020). Chytrids have diverse lifestyles, but are notable for their reproduction via zoospores, which use a motile cilium to swim or crawl.\n\nTaxonomic classification of many single-celled eukaryotes remains unresolved, and we use the term Protista to cover all unicellular species that are neither Fungi nor Plantae. Three such species were found to encode GRLs. The marine gliding zooflagellate Thecamonas trahens (Cavalier-Smith and Chao, 2010; Howe et al., 2020) has six candidate proteins. Beyond secondary structural similarity (Figure 1), the proteins have up to three conserved residues of the TM7 motif (if counting a Y\u2192F substitution in the second position as conservative, as observed in some animal GRLs (e.g., SpurGRL1)) (Figure 2B). The chromerid Vitrella brassicaformis (Woo et al., 2015), a free-living, non-parasitic photosynthetic protist, also has six GRLs, most of which have two conserved positions within the TM7 motif. Finally, the amoebozoan Protostelium aurantium var. fungivorum (Hillmann et al., 2018), has a single GRL. Protosteloid amoebae differ from dictyostelids by producing simple fruiting bodies with only one or few single stalked spores.\n\nDUF3537 domain proteins are widely (and possibly universally) encoded in higher plant genomes, typically comprising small families of 4\u201312 members (Benton, 2015). Single proteins were also found in unicellular plants (\u2018green algae\u2019), including the marine microalgae Chloropicon primus (Lemieux et al., 2019) and Micromonas pusilla (van Baren et al., 2016; Worden et al., 2009). As for higher plant sequences, the TM7 motif is largely unrecognizable. The relationship between DUF3537 proteins and the GRL superfamily may have been overlooked earlier because protein alignments are impeded by the longer length of several intracellular loops (IL) of the plant proteins, notably IL3 in all DUF3537 proteins, and IL2 in the green algal proteins (~200 residues in the C. primus homolog) (Figure 1B). We note that ORCO is also distinguished from other insect ORs and GRs by an additional\u00a0~60\u201370 amino acids in IL2 (Benton et al., 2006), a region that contributes to channel regulation (Bahk and Jones, 2016; Mukunda et al., 2014).\n\n### Phylogenetic analysis of candidate GRLs\n\nThe candidate GRLs are extremely divergent in primary sequence: pairwise alignment of the new proposed family members, together with representative animal and plant proteins, reveal as little as 10% amino acid identity. While this divergence does not preclude their definition as homologs \u2013 insect OR families themselves have an average of only\u00a0~20% amino acid identity (Butterwick et al., 2018) \u2013 it makes it difficult to infer homology from sequence alone, and hinders confident multiprotein alignment. Indeed, an alignment of these 17 sequences, together with selected animal GRLs and plant DUF3537 proteins highlights the absence of any universally conserved residues, beyond the hydrophobic regions predicted to be TM domains (Figure 2\u2014figure supplement 1). These TM regions are most confidently aligned in the C-terminal halves of the proteins, with substantial variation in loop lengths fragmenting the N-terminal halves\u00a0(Figure 2\u2014figure supplement 1). This pattern of conservation along the protein length is characteristic of insect OR/GR families (Robertson, 2015; Robertson, 2019; Saina et al., 2015), which might reflect the role of the N-terminal half in ligand-recognition (and commensurate higher divergence between proteins) and the C-terminal half in mediating subunit interactions and forming the ion channel pore (Butterwick et al., 2018).\n\nTo gain an initial idea of the phylogeny of these proteins, we inferred a maximum likelihood tree (Figure 2C). As expected, the animal and plant/algal proteins form distinct clades. The sets of GRLs of V. brassicaformis and T. trahens GRLs segregate into two lineages, one of which (comprising VbraGRL1/2 and TtraGRL1/2/3) is more closely related to animal GRLs, while the others are more distantly related; this distinction matches observations from the alignments of HMMs derived from these sequences (Figure 1\u2014figure supplement 1). Low branch support does not allow for a confident placement of the fungal GRLs; they could group with either of the two protist lineages. All of these observations are consistently held if the tree is inferred from trimmed alignments (Figure 2\u2014figure supplement 2).\n\n### Common three-dimensional structural predictions of GRLs and DUF3537 proteins\n\nTo obtain further evidence supporting the homology of these proteins, we performed ab initio structure predictions of animal GRLs (including AbakORCO as control), plant DUF3537 proteins and unicellular eukaryotic GRLs, using the transform-restrained Rosetta (trRosetta) algorithm (Yang et al., 2020). Most query sequences successfully seeded a multisequence alignment to permit extraction of co-evolutionary couplings, generation of inter-residue contact maps and prediction of three-dimensional models (Figure 3A\u2013B, Supplementary file 7; full outputs of modeling are provided in the Dryad repository doi:10.5061/dryad.s7h44j15f). The contact maps predicted consistent patterns of anti-parallel packing of TM helices (Figure 3A). Concordantly, the top-predicted models were qualitatively similar to the AbakORCO cryo-EM structure (Figure 3B), particularly in the transmembrane core of these models (Figure 3B). Importantly, the consistent helical packing of GRLs and DUF3537 proteins is fundamentally different to an unrelated seven TM protein, the Homo sapiens Adiponectin Receptor 1 (HsapAdipoR1), which \u2013 despite sharing the same membrane orientation as GRLs \u2013 displays an arrangement of helices that is convergent with that of GPCRs (Hopf et al., 2015; Vasiliauskait\u00e9-Brooks et al., 2017; Figure 3B). We confirmed these observations first by heuristic searches of the Protein Data Bank (PDB) with Dali (Holm and Rosenstr\u00f6m, 2010): strikingly, essentially all models identified the AbakORCO cryo-EM structure as the top hit (Supplementary file 7; outputs of Dali searches are provided in the Dryad repository doi:10.5061/dryad.s7h44j15f). Second, quantitative pairwise comparisons of selected structures using both Dali and TM-align (Zhang and Skolnick, 2005) indicated that all family members are likely to adopt the same global protein fold, while displaying only random structural similarity to our negative control HsapAdipoR1 (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig3-v2.jpg)\n\n**Figure 3.:** (A) Inter-residue contact maps from trRosetta analysis of the indicated proteins. The axes represent the indices along the primary sequence; the positions of the predicted TM domains are shown in the schematics. The representation is mirror-symmetric along the diagonal; in one half \u2018lines\u2019 of contacts perpendicular to the diagonal of the map support the existence of anti-parallel alpha-helical transmembrane packing arrangements. Most pairs of predicted anti-parallel TMs are conserved across the proteins, despite variation in the length of loops between TM domains, supporting a globally similar packing of TM helices. The output of trRosetta analyses for these and other proteins is summarized in Supplementary file 7 and complete datasets are provided in the Dryad repository (doi:10.5061/dryad.s7h44j15f). (B) Side and top views of experimentally-determined (AbakORCO (PDB 6C70 chain A)) and Homo sapiens Adiponectin Receptor 1 (HsapAdipoR1; PDB 5LXG chain A [Vasiliauskait\u00e9-Brooks et al., 2017]) or the top trRosetta protein model of GRL and DUF3537 proteins. All GRL/DUF3537 proteins have a similar predicted global packing of TM domains (which is particularly evident in the top view in which the seven TM domains are labelled), despite variation in lengths of the loops and N-terminal regions (colored in dark blue). By contrast, HsapAdipoR1 has a fundamentally different arrangement of TM domains. The dashed ovals on the AbakORCO model highlight the extracellular loop 2 (EL2) and intracellular loop 2 (IL2) regions that were not visualized in the ORCO cryo-EM structure (Butterwick et al., 2018). (C) Quantitative pairwise comparisons of the structures shown in (B) using TM-align (Zhang and Skolnick, 2005) and Dali (Holm and Rosenstr\u00f6m, 2010). TM-scores of 0.0\u20130.30 indicate random structural similarity; TM-scores of 0.5\u20131.00 indicate that the two proteins adopt generally the same fold (1.00 represents a perfect match). Dali Z-scores of\u00a0<2 indicate spurious similarity. In both cases, these quantitative cut-offs are not stringent, and must be used as a guide in combination with other criteria (e.g., evidence for homology based upon primary sequence comparisons). The two half-matrices are colored using different scales.\n\nWe extended this analysis by generating protein models with an independent algorithm, RaptorX (K\u00e4llberg et al., 2012), and assessing these using Dali PDB searches. Where reliable models were generated (excluding those resulting from multisequence alignments consisting of only a few proteins), AbakORCO was again repeatedly identified as the top hit for animal and unicellular eukaryotic GRLs and plant DUF3537 proteins (Supplementary file 7; full outputs of modeling are provided in the Dryad repository doi:10.5061/dryad.s7h44j15f).\n\nIt is important to recognize that the trRosetta and RaptorX models of unicellular eukaryotic GRLs derive from multisequence alignments containing large numbers of animal proteins. As such, construction of these models necessarily depends upon amino acid covariation within the animal GRL family. At the level of the global fold, this is only problematic if the query sequences are not homologous to the other sequences in the alignment, a possibility that is inconsistent with our primary and secondary sequence similarities, HMM alignments and phylogenetic analysis.\n\nImportantly, the models of the plant proteins used information extracted from alignments of only other DUF3537 family members, presumably because the primary sequence similarity of members of the more divergent plant and animal proteins is below the threshold of both trRosetta and RaptorX algorithms. The observation that the independently-generated plant protein models are also similar to AbakORCO argues that, despite their high sequence divergence, animal and protist GRLs and plant DUF3537 proteins all adopt a common three-dimensional architecture.\n\n## Discussion\n\nClaims of evolutionary relationships between proteins whose sequence identity resides in the \u2018twilight zone\u2019 must be made with caution (Rost, 1999). Nevertheless, our primary, secondary and tertiary structural analyses together support the hypothesis that animal ORs/GRs/GRLs, newly-recognized unicellular eukaryotic GRLs, and plant DUF3537 proteins are homologous. The extremely sparse phylogenetic distribution of these genes in unicellular eukaryotes, despite our efforts to perform exhaustive searches, has multiple potential explanations. These genes might have been independently lost in many lineages and/or have diverged beyond sequence-based homology detection levels. It is also possible that some homologs were acquired by lateral gene transfer, as has been proposed to explain the patchy phylogenetic distribution of microbial rhodopsins (Gavelis et al., 2017).\n\nThe global conservation of the structural features of unicellular eukaryotic GRLs and DUF3537 proteins with insect chemosensory receptors suggests that they are also ligand-gated ion channels. There is currently insufficient knowledge of the biology of the unicellular eukaryotes in which GRLs have been found \u2013 let alone what might be common to these species \u2013 to predict ligands or physiological functions. It is possible, if not likely, that the proteins fulfill distinct roles in different phyla, as has been suggested in non-Bilateria, where some GRLs appear to act during development (Saina et al., 2015). In A. thaliana, transcriptomic analysis indicates that DUF3537 genes have various tissue-specific expression patterns, including in leaf guard cells, roots and pollen grains (Schmid et al., 2005). For one broadly expressed plant protein (AT4G22270), GFP-tagging revealed localization in the plasma membrane (Guan et al., 2009), and transgenic overexpression appeared to promote organ growth (Guan et al., 2009). However, the significance of this phenotype will require validation by loss-of-function genetic analysis. Together, the available evidence indicates that even if members of this superfamily have a common function as ligand-gated ion channels, they are likely to recognize very diverse chemicals that are potentially of environmental and/or internal origin.\n\nWhile functional studies remain a future challenge, the recognition of their existence across Animalia, Plantae, Fungi and Protista provides evidence that this protein superfamily originated in the last common eukaryotic ancestor, 1.5\u20132 billion years ago (Hedges et al., 2006). No sequences bearing resemblance to GRLs were found, so far, in Bacteria or Archaea. Future analysis of additional genomic data will help to update the present survey and refine (or refute) the current evolutionary model.\n\n## Materials and methods\n\n### Identification and assessment of candidate GRL homologs\n\nCandidate GRL sequences from unicellular eukaryotes were initially identified by searches of the GenBank RefSeq non-redundant protein sequence database (which includes sequences from 573 protozoan and 13,970 fungal species). The iterative search algorithms PSI-BLAST (Altschul et al., 1997) and DELTA-BLAST (Boratyn et al., 2012) were used, with a range of divergent animal GRLs (Pfam 7tm_6 (PF02949) and 7tm_7 domain (PF08395)) and plant DUF3537 proteins (PF12056) as queries. To avoid convergence onto hits from Animalia or Plantae, sequences from Metazoa (taxid:33208) or Viridiplantae (taxid:33090) were generally excluded from the search set. We retrieved sequences that had a query coverage of\u00a0>50% and an E-value of\u00a0<0.05. Sequences were subject to initial assessment based on their fulfillment of most or all of the following properties: (i) reciprocal BLASTP (or PSI-BLAST) with the candidate as query of Metazoan and Plantae datasets identified a known GRL or DUF3537 sequence as a top hit and/or no significant similarity to other protein families (e.g., distinct types of ion channels or transporters); (ii) the candidate sequence is\u00a0~350\u2013500 amino acids long, similar to the vast majority of GRLs and DUF3537 proteins (the TtraGRL3 accession (XP_013759733.1) is 1014 amino acids but this was reannotated to 440 amino acids by trimming a large C-terminal region, which is encoded by the exon of a 3\u2019 gene); (iii) the candidate sequence is predicted to contain seven TM domains, an intracellular N-terminus, and generally longer intracellular loops than extracellular loops (as described for insect ORs [Otaki and Yamamoto, 2003]; note this analysis was published before recognition of the inverted topology of the insect proteins). Membrane topology predictions were made with both the TMHMM Server v2.0 (Krogh et al., 2001; Figure 1B) and TOPCONS (Bernsel et al., 2009; Supplementary file 2). As described previously for Arthropoda ORs/GRs and animal GRLs (Saina et al., 2015), TM domains are not always reliably predicted, so visual inspection of the output plots was essential to recognize hydrophobic regions that fell below the threshold for TM domain assignment. Conversely, an N-terminal helical region that forms a re-entrant loop in ORCO (Butterwick et al., 2018) was often mispredicted to be a TM domain (see Figure 1B legend).\n\nRetained hits from unicellular eukaryotes were used as queries in further PSI-BLAST/DELTA-BLAST searches, as well as in TBLASTN searches (Gertz et al., 2006) of the corresponding species\u2019 genomes to identify unannotated protein coding sequences (the latter approach ultimately found none in the present analysis). New candidate sequences were subject to the same assessment as described above. Although our searches were very broad phylogenetically, the extreme divergence in the primary sequence of these proteins and the relatively stringent criteria for retaining hits \u2013 to avoid excessive numbers of spurious matches with other polytopic membrane proteins \u2013 make it highly likely that additional members of the family exist.\n\nTo obtain further evidence for homology between the identified sequences, HMMs were constructed with HHblits with default parameters (Remmert et al., 2012), using three iterations over the Uniclust30 database (Mirdita et al., 2017; Steinegger and S\u00f6ding, 2017). The results of these iterative searches were examined to verify that no additional candidate GRL sequences had been identified (Supplementary file 3). The HMMs resulting from the iterative searches were aligned pairwise using HHblits to obtain a matrix of homology probabilities (code provided in Supplementary file 4).\n\nIntron positions were identified by analysis of the predicted gene structure of the coding sequence of each GRL, which was obtained from the corresponding GeneID page for each GenBank Accession.\n\n### Phylogenetic analysis\n\nThe multiprotein alignment was built with MAFFT v7.310 (option \u2018linsi\u2019) (Katoh and Standley, 2013), and a maximum likelihood tree was inferred with IQTree v.2.0.6 (Minh et al., 2020) with aBayes branch support values (Anisimova et al., 2011). Alignment trimming for Figure 2\u2014figure supplement 2 was performed with trimAl (option \u2018gappyout\u2019) (Capella-Gutierrez et al., 2009). Raw untrimmed and trimmed sequence alignments are provided in Supplementary files 5\u20136. Alignments were visualized in Jalview 2.9.0b2 (Waterhouse et al., 2009) and trees in phylo.io (Robinson et al., 2016).\n\n### Protein structure prediction\n\nAb initio protein structure prediction was performed using trRosetta (https://yanglab.nankai.edu.cn/trRosetta/) (Yang et al., 2020) and RaptorX (http://raptorx.uchicago.edu/ContactMap/) (K\u00e4llberg et al., 2012). For both algorithms, individual sequences of unicellular eukaryotic GRLs, plant DUF3537 proteins and selected animal GRLs were provided as queries. The complete outputs of the analyses are provided in the Dryad repository (doi:10.5061/dryad.s7h44j15f), and summarized in Supplementary file 7. Models predicted for sequences that only seeded multiprotein sequence alignments containing very few (<15) sequences or, for trRosetta models, those with an \u2018estimated TM-score\u2019 of\u00a0<0.17 (Yang et al., 2020) (indicating spurious structural models [Yang et al., 2020; Zhang and Skolnick, 2004]), were not analyzed further. The top predicted models from trRosetta (model 1) and RaptorX (the model with the lowest estimated RMSD) were used in heuristic Protein Data Bank (PDB) searches with Dali (Holm and Rosenstr\u00f6m, 2010). The top hits of these searches are shown in Supplementary file 7 and full search results are provided in the Dryad repository (doi:10.5061/dryad.s7h44j15f).\n\nPairwise structural similarities of selected trRosetta-predicted models were assessed with TM-align (Zhang and Skolnick, 2005) and Dali (Holm and Rosenstr\u00f6m, 2010), including the experimentally-determined ORCO structure (PDB 6C70) (Butterwick et al., 2018) and, as \u2018negative\u2019 control, the Homo sapiens Adiponectin Receptor 1 structure (HsapAdipoR1; PDB 5LXG chain A [Vasiliauskait\u00e9-Brooks et al., 2017]). Models were visualized in PyMol v2.4.0.\n",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "0c539d91-f970-4909-989e-a0bb2025c7e2",
+      "submission_id": "225fd0e5-38a5-48d4-8dc3-887c93ea4705",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claude Desplan, New York University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62507.sa1](https://doi.org/10.7554/eLife.62507.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper provides significant insights into the superfamily of olfactory receptors and how it evolved: Your discovery of GRLs in multiple unicellular organisms supports the claim that this is a very old family, even if the sequence conservation is pretty low. However, a major advance results from your analysis of the tertiary structure of these proteins that takes advantage of the power of Rosetta to provide evidence that the GRL proteins are distant members of the same superfamily. This represents a significant advance in our understanding of the origins of this superfamily of proteins.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A putative origin of insect chemosensory receptors in the last common eukaryotic ancestor\" for consideration by eLife. Your article has been reviewed by four peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Piali Sengupta as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe reviewers found that the paper provides significant insights into this family of receptors: First, your discovery of GRLs in multiple unicellular organisms supports the claim that you are dealing with a large family with plant homologs, although the analyses of sequence conservation remains speculative. However, the major advance results from the tertiary structures of these proteins that take advantage of the power of trRosetta to provide evidence that the GRL proteins are distant members of the same superfamily. This represents a significant advance in our understanding of the origins of this superfamily of proteins.\n\nHowever, the reviewers had also two major concerns: One is the serious lack of technical details and you must provide more information about how many genomes were used in your initial search and discuss whether it was exhaustive or so stringent that more members of the family likely exist: Providing more technical details will help make the work more accessible. The second point is that functional data would be very useful, e.g. showing biochemically that distant members behave similarly to the fly proteins, or that they serve (or not!) as ligand-gated channels. If you have already acquired this type of data, they would strengthen your paper. However, a discussion of possible molecular functions would be sufficient in the absence of such data.\n\nReviewer #1:\n\nVertebrate and nematode odorant receptors (ORs) function as GPCRs, while insect ORs were derived from gustatory receptors (GRs) and function as ligand gated ion channels. However, the evolutionary origin of insect GRs is not clear. The manuscript of Benton, Dessimoz and Moi titled \"A putative origin of insect chemosensory receptors in the last common eukaryotic ancestor\" answered this key question. Following the previous studies that identified GR-like proteins (GRLs) in animals, and GR homologs, known as the DUF3537 domain-containing proteins in plants, they further identified and performed phylogenetic analysis on GRL proteins in unicellular eukaryotic organisms, including fungi, protists, and algae, the common ancestor of plants and animals.\n\nOverall, the topic of this manuscript is very interesting and well written. The data are solid. Several key points have been addressed, including role of TM7, consistent predicted orientation of TM domains, presence of intracellular loops (like ORCO), conserved vs diverse regions on GRL proteins, and same origin for plant and animal GRLs. Therefore, I strongly recommend for publication, after the authors properly address the following concerns:\n\n1) The major weakness is that there is no functional analysis. If any of GRL proteins is predicted to be a canonical chemical sensor, would it be possible to utilize Xenopus or another system to test the hypothesis?\n\n2) If functional study is currently a big challenge, could the authors perhaps add some validation on GRL protein localization in a unicellular eukaryote? I wonder if antibody could be made and used to test membrane localization of GRL, or a tagged protein could be ectopically expressed in a cell line (or yeast).\n\n3) \"heteromeric (probably tetrameric) complexes composed of a tuning OR, which recognises odour ligands, and a universal co-receptor, ORCO\" This describes a dimeric complex with one OR and one ORCO. It seems not consistent with \"probably tetrameric\"\n\n4) Introduction paragraph three provides examples of non-chemosensation functions of GRL proteins. I suggest to expand and add a table or a supplemental table, which should include currently known expression patterns and functions of GR and GRL proteins in animals and plants.\n\nReviewer #2:\n\nIn this work, Benton and colleagues consider the evolutionary origin of the immense insect chemoreceptor family, which includes odorant receptors (ORs) and gustatory receptors (GRs). Past sequence mining from the Benton lab and others has suggested that distant members of the GRL family were found in diverse Protostomia and also homologous to a family of uncharacterized plant proteins containing the Domain of Unknown Function 3537. However, despite multiple GRL lineages being present in early branching deuterostomes, GRLs have been completely lost from the chordate lineage suggesting recurrent independent losses, obscuring their exact evolutionary trajectory. Here Benton and colleagues extend their genome mining analyses to identify 17 sequences from fungi, protista and unicellular plants that share the same overall topology and some of the poorly conserved sequence features of this family. Finally, they use the extraordinary power of trRosetta to predict candidate GRL structures from the diverse lineages de novo and demonstrate that they share the same distinct architecture as an experimental structure of an OR. By far the most impressive part of the manuscript is the structure prediction since it would argue that these distantly related members, even bearing little sequence conservation, fold into the same distinct helical arrangement. If correct, this would argue that the GRL family is incredibly ancient, originating in the last eukaryotic ancestor, 1.5-2 Billion years ago, which has important implications for thinking about how this immense family arose.\n\nOverall, I have a few concerns that should be addressed:\n\n1) The Materials and methods are quite sparse and require a lot of effort by the reader to appreciate how well controlled and vetted their results are. Only 17 members of the family were found across the genomes of fungi, protista and unicellular plants, derived from an even smaller subset of species, which the authors acknowledge is extremely sparse and implies either that they propagated by lateral gene transfer or were independently lost many times, making their evolutionary origin still a bit uncertain. The authors should provide more information about how many genomes were used in their initial search and discuss whether it was exhaustive or so stringent that more members of the family likely exist.\n\n2) One complication of the limited number of sequences from unicellular eukaryotes is that the structure prediction relies on multiple sequence alignments largely built from GRs. This was not obvious from the Materials and methods. I only know this because I took one of their putative GRL sequences and submitted it to the trRosetta website and three hours later got the same structure prediction as in Figure 3 and the MSA the trRosetta algorithm used for prediction. While the algorithm for trRosetta has been previously published, for a general audience the paper would benefit from more detail about how it was used-both what was required as input (apparently just a single sequence plugged into the trRosetta website) and how to evaluate the output, beyond physical inspection. For example, in Figure 3C the assignment of proteins to their groups seems like an arbitrary delimitation without further explanation, since the score/distances between proteins are marginally different. Only in the figure legend it states: TM-scores of 0.0-0.30 indicate random structural similarity; TM-scores of 0.5-1.00 indicate that the two proteins adopt generally the same fold. The authors thus suggest a TM score of 0.27 as meaning Orco and HsapAdipoR1 are unrelated but a score of 0.53 as being indicative that VbraGRL2 and AthaAT3G20300 are part of the same structural family, but provide insufficient information to the reader to understand whether this is a stringent cutoff or not.\n\n3) One important caveat that the authors should discuss and address is that given that the de novo structure prediction relies heavily on GR sequence covariation, is there any possibility that tertiary structural similarity is imposed onto these more distant members of the GRL family? Ideally the de novo structure prediction would be truly independent and based on similar numbers of GRL sequences from single-celled eukaryotes but this does not seem possible.\n\n4) The central advance of this study over past work from the Benton lab (Benton, 2015; Hopf et al., 2015) is the dramatic improvement in structure prediction algorithms, which provide tantalizing information about structural similarity (barring the caveat in the point directly above.) I appreciate that the authors don't overstate their claims, suggesting that these GRL proteins may not serve the same function in different organisms but likely form ligand gated channels. To really move into novel territory, I wish the authors could probe the functional or biochemical properties of these ancient GRLs a bit further. For example, for these proteins to serve as ion channels likely requires a multimeric organization. Native gels could biochemically demonstrate this, providing powerful additional evidence that these are part of the same family. Alternatively, could sequence covariation provide evidence for this (e.g. Hopf, 2014). Either way, it would be valuable to discuss this additional feature that does not immediately fall out of the trRosetta predictions.\n\nReviewer #4:\n\nBenton et al. is a well written study on the evolution of insect chemosensory receptors that uses bioinformatics-based approaches to identify putative GRL homologs in several species of unicellular eukaryotes. Both sequence and structure-based approaches are utilized to buttress the authors arguments that fungal and protista GRL homologs are an evolutionary link to DUF3537 proteins they have previously identified in plants and algae thereby extending this evolutionary relationship to \"the last common eukaryotic ancestor\"\n\nWhile I am generally supportive of the authors rationale and recognize they have been careful to appropriately qualify their hypothesis throughout this work, I am somewhat disinclined to place a high degree of definitive value on the ab initio structural predictions which underscores much of this analysis. Even so, and despite the fact these evolutionary relationships between animal and plant GRLs are unlikely to ever be definitively tested, this hypothesis seems to me to be reasonable. That said, I remain underwhelmed by their significance.\n\nReviewer #5:\n\nThe insect chemoreceptor superfamily of ligand-gated ion channels is one of the largest and most diverse protein families known. Partly as a result of their extreme divergence, the evolutionary origins of the superfamily have been obscure. Following up on a previous proposal of relationship to a protein family that is widespread in plants, the authors discovered several convincingly related proteins encoded by fungal, protist, and algal genomes. While the relationship with the plant protein family remains remarkably distant, their three-dimensional modeling of these diverse proteins reveals convincing similarity and hence suggests the superfamily originated at or before the eukaryotic origin.\n\nI have no substantive concerns. Previous objections to the distant relationship to the plant protein family on the basis of lack of three shared introns are not decisive given the rampant loss of introns in the unicellular genomes examined here. The details of the three-dimensional modeling are not my expertise, however these authors previously employed a related technique to generate a remarkably good model for the insect odorant receptors that was mostly confirmed by subsequently generated experimental structure.\n",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "93b7f386-9aa7-4ee2-9ec4-9f534d33656c",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C1",
+      "claim": "The insect chemosensory repertoires of Odorant Receptors (ORs) and Gustatory Receptors (GRs) together represent one of the largest families of ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The insect chemosensory repertoires of Odorant Receptors (ORs) and Gustatory Receptors (GRs) together represent one of the largest families of ligand-gated ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general characterization of the OR/GR family size and function, drawing from established scientific knowledge about these receptor families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "e46e224a-0e6f-4e8e-b3a6-0bb32bcc9093",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C2",
+      "claim": "Previous analyses have identified homologous 'Gustatory Receptor-Like' (GRL) proteins across Animalia.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous analyses have identified homologous 'Gustatory Receptor-Like' (GRL) proteins across Animalia, but the evolutionary origin of this novel class of ion channels is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work that identified GRL proteins across animals, supported by citations in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "302d6cf2-c292-4d24-b42c-88a857f740f1",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C3",
+      "claim": "The evolutionary origin of the GRL class of ion channels is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous analyses have identified homologous 'Gustatory Receptor-Like' (GRL) proteins across Animalia, but the evolutionary origin of this novel class of ion channels is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "f3ba3c86-f356-47be-b7eb-ee6e42ef29a2",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C4",
+      "claim": "Several candidate GRLs were identified in fungi, protists and algae that contain many structural features characteristic of animal GRLs.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe a survey of unicellular eukaryotic genomes for GRLs, identifying several candidates in fungi, protists and algae that contain many structural features characteristic of animal GRLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on genomic searches and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d54aa5c6-f842-4cfc-97ad-aa42458baadb",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C5",
+      "claim": "The existence of GRL proteins in unicellular eukaryotes provides evidence for homology between GRLs and plant DUF3537 domain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of these proteins in unicellular eukaryotes, together with ab initio protein structure predictions, provide evidence for homology between GRLs and a family of uncharacterized plant proteins containing the DUF3537 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the discovery of unicellular GRLs combined with computational structure predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "84cfd7e2-5ea5-4127-8db7-40e8d8ee0b34",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C6",
+      "claim": "Ab initio protein structure predictions provide evidence for homology between GRLs and plant DUF3537 domain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of these proteins in unicellular eukaryotes, together with ab initio protein structure predictions, provide evidence for homology between GRLs and a family of uncharacterized plant proteins containing the DUF3537 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "ea08b09c-8e07-4cf1-84f1-6b0a514441de",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C7",
+      "claim": "The GRL protein superfamily originated in the last common eukaryotic ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our analyses suggest an origin of this protein superfamily in the last common eukaryotic ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main evolutionary conclusion of the study, inferred from the phylogenetic distribution and structural analysis of GRLs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "a662f0ca-4583-47dc-8233-d035e93082a0",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C8",
+      "claim": "The insect chemosensory receptor superfamily forms a critical molecular interface between diverse chemical signals in the environment and neural activity patterns that evoke behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The insect chemosensory receptor superfamily, comprising Odorant Receptors (ORs) and Gustatory Receptors (GRs), forms a critical molecular interface between diverse chemical signals in the environment and neural activity patterns that evoke behavioral responses (Benton, 2015; Joseph and Carlson, 2015; Robertson, 2019; Rytz et al., 2013; van Giesen and Garrity, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "e215662a-3339-4a57-a892-b551aee523ff",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C9",
+      "claim": "Most insect genomes encode dozens to hundreds of different, often species-specific, ORs and/or GRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Most insect genomes encode dozens to hundreds of different, often species-specific, ORs and/or GRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about insect OR/GR repertoire sizes based on established genomic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "9aef57b3-833c-4dff-b412-8a3677030ea7",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C10",
+      "claim": "The vast majority of insect ORs and GRs are likely to be expressed in, and define the chemical response properties of, distinct subpopulations of peripheral sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed analyses, in particular in Drosophila melanogaster, indicate that the vast majority of these are likely to be expressed in, and define the chemical response properties of, distinct subpopulations of peripheral sensory neurons (Chen and Dahanukar, 2020; Joseph and Carlson, 2015; Scott, 2018; Vosshall and Stocker, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by detailed analyses cited from Drosophila studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "4cdc0939-e869-4f61-bf91-67890b3a771d",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C11",
+      "claim": "Insect ORs derived from an ancestral GR.",
+      "claim_type": "EXPLICIT",
+      "source": "Insect ORs and GRs \u2013 the former having derived from an ancestral GR (Robertson, 2019; Robertson et al., 2003) \u2013 contain seven transmembrane (TM) domains (Clyne et al., 2000; Clyne et al., 1999; Scott et al., 2001; Vosshall et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This evolutionary relationship is supported by citations to Robertson's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "a53cfa24-b73d-4ab5-9d49-d8cfef989b0f",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C12",
+      "claim": "Insect ORs and GRs contain seven transmembrane (TM) domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Insect ORs and GRs \u2013 the former having derived from an ancestral GR (Robertson, 2019; Robertson et al., 2003) \u2013 contain seven transmembrane (TM) domains (Clyne et al., 2000; Clyne et al., 1999; Scott et al., 2001; Vosshall et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural feature is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "fb9fa45b-7bb1-4045-a657-fb5da5303d78",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C13",
+      "claim": "Vertebrate olfactory and taste receptors belong to the G protein-coupled receptor (GPCR) superfamily of seven TM domain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to vertebrate olfactory and taste receptors, which belong to the G protein-coupled receptor (GPCR) superfamily of seven TM domain proteins (Glezer and Malnic, 2019; Yarmolinsky et al., 2009), insect ORs and GRs have the opposite topology, with an intracellular N-terminus (Benton et al., 2006; Lundin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to vertebrate receptors supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "9194fc6d-1762-47aa-9f57-09517d8baaa4",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C14",
+      "claim": "Insect ORs and GRs have the opposite topology to vertebrate olfactory and taste receptors, with an intracellular N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to vertebrate olfactory and taste receptors, which belong to the G protein-coupled receptor (GPCR) superfamily of seven TM domain proteins (Glezer and Malnic, 2019; Yarmolinsky et al., 2009), insect ORs and GRs have the opposite topology, with an intracellular N-terminus (Benton et al., 2006; Lundin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural difference is supported by citations to studies that determined the topology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "4a1de63b-0828-4de8-88a5-55ea39d672ba",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C15",
+      "claim": "Insect ORs and GRs form ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional analyses of these proteins in heterologous expression systems indicate that they form ligand-gated ion channels (Butterwick et al., 2018; Sato et al., 2008; Sato et al., 2011; Wicher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional characterization is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "172e8bef-6f10-46b1-a94f-8cbed1936752",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C16",
+      "claim": "Insect ORs assemble into heteromeric (probably tetrameric) complexes likely composed of two subunits each of a tuning OR and a universal co-receptor ORCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Insect ORs assemble into heteromeric (probably tetrameric) complexes likely composed of two subunits each of a tuning OR, which recognizes odor ligands, and a universal co-receptor, ORCO, which is critical for complex assembly, subcellular trafficking, and \u2013 together with the tuning OR \u2013 forms the ion conduction pore (Benton et al., 2006; Butterwick et al., 2018; Larsson et al., 2004; Sato et al., 2008; Wicher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural and functional description is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "6c48af0b-aed0-4986-b86c-d90e89056ed7",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C17",
+      "claim": "ORCO is critical for complex assembly, subcellular trafficking, and forms the ion conduction pore together with the tuning OR.",
+      "claim_type": "EXPLICIT",
+      "source": "Insect ORs assemble into heteromeric (probably tetrameric) complexes likely composed of two subunits each of a tuning OR, which recognizes odor ligands, and a universal co-receptor, ORCO, which is critical for complex assembly, subcellular trafficking, and \u2013 together with the tuning OR \u2013 forms the ion conduction pore (Benton et al., 2006; Butterwick et al., 2018; Larsson et al., 2004; Sato et al., 2008; Wicher et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role of ORCO is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "8ee39211-d7f5-49d6-bcc9-f8e76bf8c42a",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C18",
+      "claim": "GRs are likely to function in multimeric complexes of one or more different subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "GRs are less well-characterized but are also likely to function in multimeric complexes of one or more different subunits (Joseph and Carlson, 2015; Scott, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about GR assembly is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "34889a0a-68c4-4640-8e1b-34ec81966590",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C19",
+      "claim": "A cryogenic electron microscopy (cryo-EM) structure of an ORCO homotetramer demonstrated that this receptor adopts a novel fold unrelated to any known family of ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "A cryogenic electron microscopy (cryo-EM) structure of an ORCO homotetramer (Butterwick et al., 2018) \u2013 which can conduct ions itself upon stimulation with artificial ligands (Jones et al., 2011) \u2013 demonstrated that this receptor adopts a novel fold unrelated to any known family of ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural finding is supported by citation to the cryo-EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "81488f23-9b01-4853-be14-dec73421f6fd",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C20",
+      "claim": "ORCO can conduct ions itself upon stimulation with artificial ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "A cryogenic electron microscopy (cryo-EM) structure of an ORCO homotetramer (Butterwick et al., 2018) \u2013 which can conduct ions itself upon stimulation with artificial ligands (Jones et al., 2011) \u2013 demonstrated that this receptor adopts a novel fold unrelated to any known family of ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional property is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "791d5a08-ec3f-460a-9204-da9834aa953b",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C21",
+      "claim": "Analysis of amino acid conservation across the OR repertoire and de novo structure predictions suggest that the ORCO fold is globally similar for all ORs and potentially GRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of amino acid conservation across the OR repertoire (Butterwick et al., 2018) and de novo structure predictions of tuning ORs, guided by patterns of amino acid co-evolution (Hopf et al., 2015), suggest that this fold is globally similar for all ORs (and potentially GRs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational analyses cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "38d43044-6d62-4494-866b-36211cc1de9c",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C22",
+      "claim": "The most extensive comparative genomic analyses of ORs have focused on Insecta, tracing the origins of the OR family from the ancestral insect GRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The most extensive comparative genomic analyses have focused on Insecta, tracing the origins of the OR family from the ancestral insect GRs (Brand et al., 2018; Missbach et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about prior comparative genomic work is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "3c97a95e-b92c-45df-b768-489af886de66",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C23",
+      "claim": "Surveys for GR-like (GRL) proteins beyond insects have identified members of this family across Protostomia (including in Annelida, Nematoda, and Mollusca) as well as in a limited number of Deuterostomia (including Echinodermata and Hemichordata, but not Chordata).",
+      "claim_type": "EXPLICIT",
+      "source": "Surveys for GR-like (GRL) proteins beyond insects have identified members of this family across Protostomia (including in Annelida, Nematoda, and Mollusca) as well as in a limited number of Deuterostomia (including Echinodermata and Hemichordata, but not Chordata) (Eyun et al., 2017; Robertson, 2015; Saina et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This phylogenetic distribution is supported by citations to prior surveys.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "6cd3bbd7-b77d-43a0-80bf-dbc122a1bb6f",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C24",
+      "claim": "Several non-bilaterian animals have recognizable GRLs, including Cnidaria and Placozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Several non-bilaterian animals have recognizable GRLs, including Cnidaria and Placozoa (Eyun et al., 2017; Nordstrom et al., 2011; Robertson, 2015; Saina et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d96ba79f-b2d8-459d-b10d-bfed5343849d",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C25",
+      "claim": "Two homologs in Caenorhabditis elegans (LITE-1 and GUR-3) function in light detection.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, two homologs in Caenorhabditis elegans (LITE-1 and GUR-3) function in light detection (Edwards et al., 2008), either as a photoreceptor (Gong et al., 2016), or indirectly through recognition of cellular chemical products produced upon light exposure (Bhatla and Horvitz, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "b6c5bc26-aa28-45ad-b588-579d6fcbc152",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C26",
+      "claim": "LITE-1 functions as a photoreceptor in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, two homologs in Caenorhabditis elegans (LITE-1 and GUR-3) function in light detection (Edwards et al., 2008), either as a photoreceptor (Gong et al., 2016), or indirectly through recognition of cellular chemical products produced upon light exposure (Bhatla and Horvitz, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specific mechanism is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "39158ae3-308e-4292-8645-d59c4131fb92",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C27",
+      "claim": "GUR-3 functions indirectly in light detection through recognition of cellular chemical products produced upon light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, two homologs in Caenorhabditis elegans (LITE-1 and GUR-3) function in light detection (Edwards et al., 2008), either as a photoreceptor (Gong et al., 2016), or indirectly through recognition of cellular chemical products produced upon light exposure (Bhatla and Horvitz, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "1cce6b71-2d95-43bf-bab3-4101fe1e0cd3",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C28",
+      "claim": "Isoforms of the D. melanogaster LITE-1 ortholog, GR28b, have roles in thermosensation and light-sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "(Isoforms of the D. melanogaster LITE-1 ortholog, GR28b, also have other sensory roles, notably in thermosensation and light-sensing (Ni et al., 2013; Xiang et al., 2010).)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These functional roles are supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "79100cd5-6729-4ea8-9f55-08772ceda47a",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C29",
+      "claim": "Another C. elegans homolog functions in motoneurons to control egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "Another C. elegans homolog functions in motoneurons to control egg-laying (Moresco and Koelle, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "325d83a9-1df8-4c48-8a45-977dca436962",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C30",
+      "claim": "GRLs in the sea anemone Nematostella vectensis and the purple sea urchin, Strongylocentrotus purpuratus are expressed early during development.",
+      "claim_type": "EXPLICIT",
+      "source": "GRLs in the sea anemone Nematostella vectensis and the purple sea urchin, Strongylocentrotus purpuratus are expressed early during development (Saina et al., 2015), and one of the N. vectensis proteins may have a role in apical body patterning (Saina et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This expression pattern is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "5384c2f7-0a0b-43da-86ea-4811df91f762",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C31",
+      "claim": "One of the N. vectensis GRL proteins may have a role in apical body patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "GRLs in the sea anemone Nematostella vectensis and the purple sea urchin, Strongylocentrotus purpuratus are expressed early during development (Saina et al., 2015), and one of the N. vectensis proteins may have a role in apical body patterning (Saina et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This potential role is supported by citation and is stated as speculative ('may have').",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "53256531-a0d0-4bb3-b6d3-0f719069501b",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C32",
+      "claim": "The GRL family of ion channels represents one of the largest and most functionally diverse in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this family of established (or presumed) ion channels represents one of the largest and most functionally diverse in nature, its evolutionary origin remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterization is based on the accumulated knowledge about GRL diversity and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "659c2262-24ed-4ca3-8caf-0974afc39ad8",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C33",
+      "claim": "Potential homology between GRLs and plant DUF3537 proteins was previously suggested based upon their predicted seven TM domains and intracellular N-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously suggested potential homology between GRLs and a family of uncharacterized plant proteins containing the Domain of Unknown Function 3537 (DUF3537), based upon their predicted seven TM domains and intracellular N-termini (Benton, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to a prior hypothesis by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "eaa4faac-fc99-4c0c-8fba-e007afd3ebd5",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C34",
+      "claim": "The proposal of homology between GRLs and DUF3537 proteins was questioned because DUF3537 proteins lack other features that characterize animal GRLs, such as a motif in TM7 and conserved introns near the 3' end of the corresponding gene.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this proposal was questioned (Robertson, 2019) because DUF3537 proteins lack other features that characterize animal GRLs, such as a motif in TM7 and conserved introns near the 3' end of the corresponding gene (Robertson, 2015; Robertson, 2019; Saina et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This criticism is supported by citations to Robertson's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "f213b4d6-3886-4ae7-833d-9ccb233afa8f",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C35",
+      "claim": "17 candidate GRL sequences were identified from Fungi, Protista and unicellular Plantae.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses identified 17 sequences from Fungi, Protista and unicellular Plantae (Table 1 and Figure 1), described in more detail below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "ef63e0de-4a44-406d-a5fb-1b746092db17",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C36",
+      "claim": "HMMs of all new candidate sequences display significant similarity to those of multiple animal and/or plant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, HMMs of all new candidate sequences display significant similarity to those of multiple animal and/or plant proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on HMM alignment analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "b338f7b1-6cc4-44d8-b99d-5f11ce719e7a",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C37",
+      "claim": "Some candidate GRLs clustered more closely with animal sequences, while others displayed similar probabilities with both animal and plant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Some candidates clustered more closely with the animal sequences, while others displayed similar probabilities with both animal and plant proteins, an observation consistent with phylogenetic analyses presented below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on HMM similarity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "7e5282d6-ce72-48ee-af91-d9c966570d1e",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C38",
+      "claim": "The TM7 motif in animal GRLs is (T/S)Yhhhhh(Q/K/E)(F/L/M), where h denotes a hydrophobic amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined the candidate homologs for the only known primary sequence feature of animal GRLs, a short motif located in the C-terminal half of TM7: (T/S)Yhhhhh(Q/K/E)(F/L/M), where h denotes a hydrophobic amino acid (Robertson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This motif definition is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "62469bb5-a8fe-4aa7-8454-d71bac2a7f5c",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C39",
+      "claim": "Many insect tuning ORs and some GRs/GRLs have divergent amino acids at some or all four positions of the TM7 motif.",
+      "claim_type": "EXPLICIT",
+      "source": "This motif is diagnostic, but not definitive: many insect tuning ORs (as well as some GRs/GRLs) have divergent amino acids at some or all four positions (Robertson, 2019; Scott et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation about motif variability is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "5ff60c35-c6cd-46aa-909e-426cc3dacaf6",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C40",
+      "claim": "The TY residues of the TM7 motif form part of the interaction interface between subunits in ORCO.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and functional analyses of a subset of residues of this motif in ORCO indicates that the TY residues form part of the interaction interface between subunits (Figure 2A), and that their mutation is detrimental to function in some, but not all, combinations of subunits (Butterwick et al., 2018; Nakagawa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural role is supported by citations to structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "8c62b898-1bbc-44c6-a9cf-645776cb8f14",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C41",
+      "claim": "Mutation of the TY residues in the TM7 motif is detrimental to function in some, but not all, combinations of subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and functional analyses of a subset of residues of this motif in ORCO indicates that the TY residues form part of the interaction interface between subunits (Figure 2A), and that their mutation is detrimental to function in some, but not all, combinations of subunits (Butterwick et al., 2018; Nakagawa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional consequence is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "56b4d450-a911-4264-b48a-e430880381ad",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C42",
+      "claim": "The terminal L residue of the TM7 motif is part of the channel gate.",
+      "claim_type": "EXPLICIT",
+      "source": "The terminal L residue of the motif is part of the channel gate (Figure 2A), and its mutation alters ion permeation selectivity (Butterwick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural role is supported by citation and reference to Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "8d986f41-3b0f-4d5c-9e32-bd6880d65968",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C43",
+      "claim": "Mutation of the terminal L residue of the TM7 motif alters ion permeation selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The terminal L residue of the motif is part of the channel gate (Figure 2A), and its mutation alters ion permeation selectivity (Butterwick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional consequence is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "cef30542-bb59-4f7f-86d2-b14baea55bfd",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C44",
+      "claim": "Divergence from the GRL motif in a given protein could be compatible with a conserved function as an ion channel, albeit with different complex assembly and biophysical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that divergence from the GRL motif in a given protein could be compatible with a conserved function as an ion channel, albeit with different complex assembly and biophysical properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed variability in the motif and its functional consequences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "8ac26b78-43a1-4b1d-af13-082f07ee975d",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C45",
+      "claim": "A single candidate GRL was identified in Spizellomyces punctatus.",
+      "claim_type": "EXPLICIT",
+      "source": "A single candidate GRL was identified in two fungi, Spizellomyces punctatus (Russ et al., 2016) and Spizellomyces palustris (van de Vossenberg et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the database searches performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d94b3b89-50ba-488f-96c2-d9141b8b0203",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C46",
+      "claim": "A single candidate GRL was identified in Spizellomyces palustris.",
+      "claim_type": "EXPLICIT",
+      "source": "A single candidate GRL was identified in two fungi, Spizellomyces punctatus (Russ et al., 2016) and Spizellomyces palustris (van de Vossenberg et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the database searches performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "df850208-c8c6-48ee-8923-2fc709de6a43",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C47",
+      "claim": "The fungal GRL proteins exhibit the secondary structural features of GRLs.",
+      "claim_type": "EXPLICIT",
+      "source": "The fungal proteins exhibit the secondary structural features of GRLs (Figure 1), but only one of the four positions of the TM7 motif is conserved (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural predictions shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "29e8a75c-06e6-419b-b3a4-0cf5a60a109f",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C48",
+      "claim": "In the fungal GRLs, only one of the four positions of the TM7 motif is conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "The fungal proteins exhibit the secondary structural features of GRLs (Figure 1), but only one of the four positions of the TM7 motif is conserved (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "f069e14d-10ad-46d1-9cfa-cc530fcc4b68",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C49",
+      "claim": "Spizellomyces punctatus and Spizellomyces palustris are chytrids, an early diverging lineage of fungi that retains some features of the last common opisthokont ancestor of animals and fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these species are chytrids, an early diverging lineage of fungi that retains some features of the last common opisthokont ancestor of animals and fungi (Medina and Buchler, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This phylogenetic characterization is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "74d076ea-d6c9-43e2-b77a-27d404e8cfce",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C50",
+      "claim": "Chytrids reproduce via zoospores, which use a motile cilium to swim or crawl.",
+      "claim_type": "EXPLICIT",
+      "source": "Chytrids have diverse lifestyles, but are notable for their reproduction via zoospores, which use a motile cilium to swim or crawl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general biological knowledge about chytrids.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "047f0ebd-00ef-401f-a3b0-926ca2d02ac5",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C51",
+      "claim": "Thecamonas trahens has six candidate GRL proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The marine gliding zooflagellate Thecamonas trahens (Cavalier-Smith and Chao, 2010; Howe et al., 2020) has six candidate proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d2842cf3-0748-4673-b2c8-2923f2aa91be",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C52",
+      "claim": "Thecamonas trahens GRL proteins have up to three conserved residues of the TM7 motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond secondary structural similarity (Figure 1), the proteins have up to three conserved residues of the TM7 motif (if counting a Y\u2192F substitution in the second position as conservative, as observed in some animal GRLs (e.g., SpurGRL1)) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "f0f6a78a-d793-4aab-8952-c4672e78c575",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C53",
+      "claim": "Vitrella brassicaformis has six GRLs.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromerid Vitrella brassicaformis (Woo et al., 2015), a free-living, non-parasitic photosynthetic protist, also has six GRLs, most of which have two conserved positions within the TM7 motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "cf4255f2-f70c-4a05-81c4-a201fffc7d52",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C54",
+      "claim": "Most Vitrella brassicaformis GRLs have two conserved positions within the TM7 motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromerid Vitrella brassicaformis (Woo et al., 2015), a free-living, non-parasitic photosynthetic protist, also has six GRLs, most of which have two conserved positions within the TM7 motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "ed887c33-59ff-4c2c-9460-08f562345df8",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C55",
+      "claim": "Protostelium aurantium var. fungivorum has a single GRL.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the amoebozoan Protostelium aurantium var. fungivorum (Hillmann et al., 2018), has a single GRL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d5489ec7-602a-4a15-b716-5b3d27fb25ca",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C56",
+      "claim": "DUF3537 domain proteins are widely (and possibly universally) encoded in higher plant genomes, typically comprising small families of 4\u201312 members.",
+      "claim_type": "EXPLICIT",
+      "source": "DUF3537 domain proteins are widely (and possibly universally) encoded in higher plant genomes, typically comprising small families of 4\u201312 members (Benton, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about DUF3537 distribution supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "5194a0a3-1a78-4d13-85c5-843a9a17bc79",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C57",
+      "claim": "Single DUF3537 proteins were found in the marine microalgae Chloropicon primus and Micromonas pusilla.",
+      "claim_type": "EXPLICIT",
+      "source": "Single proteins were also found in unicellular plants ('green algae'), including the marine microalgae Chloropicon primus (Lemieux et al., 2019) and Micromonas pusilla (van Baren et al., 2016; Worden et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "5adc1ae5-ad18-459c-9193-019d16c9861b",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C58",
+      "claim": "The TM7 motif is largely unrecognizable in plant DUF3537 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "As for higher plant sequences, the TM7 motif is largely unrecognizable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "bfc7a5de-1af5-4728-99ab-dfe181a08969",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C59",
+      "claim": "The relationship between DUF3537 proteins and the GRL superfamily may have been overlooked earlier because protein alignments are impeded by the longer length of several intracellular loops of the plant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between DUF3537 proteins and the GRL superfamily may have been overlooked earlier because protein alignments are impeded by the longer length of several intracellular loops (IL) of the plant proteins, notably IL3 in all DUF3537 proteins, and IL2 in the green algal proteins (~200 residues in the C. primus homolog) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about why homology was not recognized earlier, based on structural features shown in Figure 1B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "efbc3444-00de-46c4-92b3-08e810f4730a",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C60",
+      "claim": "ORCO is distinguished from other insect ORs and GRs by an additional ~60\u201370 amino acids in IL2.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that ORCO is also distinguished from other insect ORs and GRs by an additional ~60\u201370 amino acids in IL2 (Benton et al., 2006), a region that contributes to channel regulation (Bahk and Jones, 2016; Mukunda et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural feature and its functional role are supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "1e0d1954-8635-4fd3-92ce-c0a441a1b505",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C61",
+      "claim": "The IL2 region in ORCO contributes to channel regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that ORCO is also distinguished from other insect ORs and GRs by an additional ~60\u201370 amino acids in IL2 (Benton et al., 2006), a region that contributes to channel regulation (Bahk and Jones, 2016; Mukunda et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "dfa27b39-9237-4f17-8e46-014432f1955b",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C62",
+      "claim": "Candidate GRLs are extremely divergent in primary sequence, with pairwise alignments revealing as little as 10% amino acid identity.",
+      "claim_type": "EXPLICIT",
+      "source": "The candidate GRLs are extremely divergent in primary sequence: pairwise alignment of the new proposed family members, together with representative animal and plant proteins, reveal as little as 10% amino acid identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "b13f4879-f146-4df4-8f56-774929645052",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C63",
+      "claim": "Insect OR families have an average of only ~20% amino acid identity.",
+      "claim_type": "EXPLICIT",
+      "source": "While this divergence does not preclude their definition as homologs \u2013 insect OR families themselves have an average of only ~20% amino acid identity (Butterwick et al., 2018) \u2013 it makes it difficult to infer homology from sequence alone, and hinders confident multiprotein alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "12bcb7f4-1c8b-42a7-beab-4d5cf3e8ff72",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C64",
+      "claim": "There are no universally conserved residues in GRLs beyond the hydrophobic regions predicted to be TM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, an alignment of these 17 sequences, together with selected animal GRLs and plant DUF3537 proteins highlights the absence of any universally conserved residues, beyond the hydrophobic regions predicted to be TM domains (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the multiple sequence alignment shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d9f9e82a-d17d-42ba-978e-2eec17a207e5",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C65",
+      "claim": "TM regions are most confidently aligned in the C-terminal halves of GRL proteins, with substantial variation in loop lengths fragmenting the N-terminal halves.",
+      "claim_type": "EXPLICIT",
+      "source": "These TM regions are most confidently aligned in the C-terminal halves of the proteins, with substantial variation in loop lengths fragmenting the N-terminal halves (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is based on the alignment shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "fc4a84cb-2b78-4b22-8606-6daf3e7679e8",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C66",
+      "claim": "The pattern of conservation along the protein length (more conserved C-terminal half) is characteristic of insect OR/GR families.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of conservation along the protein length is characteristic of insect OR/GR families (Robertson, 2015; Robertson, 2019; Saina et al., 2015), which might reflect the role of the N-terminal half in ligand-recognition (and commensurate higher divergence between proteins) and the C-terminal half in mediating subunit interactions and forming the ion channel pore (Butterwick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This pattern is supported by citations and an inference about functional significance.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "bc509771-3533-4a27-9c38-377775f22bac",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C67",
+      "claim": "The N-terminal half of GRLs may be involved in ligand-recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of conservation along the protein length is characteristic of insect OR/GR families (Robertson, 2015; Robertson, 2019; Saina et al., 2015), which might reflect the role of the N-terminal half in ligand-recognition (and commensurate higher divergence between proteins) and the C-terminal half in mediating subunit interactions and forming the ion channel pore (Butterwick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about functional roles based on conservation patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "92aa7fb4-e7c4-4951-85a9-dfb3ca265a81",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C68",
+      "claim": "The C-terminal half of GRLs mediates subunit interactions and forms the ion channel pore.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of conservation along the protein length is characteristic of insect OR/GR families (Robertson, 2015; Robertson, 2019; Saina et al., 2015), which might reflect the role of the N-terminal half in ligand-recognition (and commensurate higher divergence between proteins) and the C-terminal half in mediating subunit interactions and forming the ion channel pore (Butterwick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citation to the ORCO structure study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "61398c66-da94-4a4d-b64b-686c346a5fec",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C69",
+      "claim": "Animal and plant/algal GRL proteins form distinct clades in the phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the animal and plant/algal proteins form distinct clades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the phylogenetic analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "f65f4ab6-41e0-443d-91b6-316eb72310ab",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C70",
+      "claim": "The sets of GRLs of V. brassicaformis and T. trahens segregate into two lineages, one of which is more closely related to animal GRLs.",
+      "claim_type": "EXPLICIT",
+      "source": "The sets of GRLs of V. brassicaformis and T. trahens GRLs segregate into two lineages, one of which (comprising VbraGRL1/2 and TtraGRL1/2/3) is more closely related to animal GRLs, while the others are more distantly related; this distinction matches observations from the alignments of HMMs derived from these sequences (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the phylogenetic tree in Figure 2C and HMM alignments in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "f1083a1b-d586-4f48-b7eb-7754c277a900",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C71",
+      "claim": "Low branch support does not allow for a confident placement of the fungal GRLs in the phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Low branch support does not allow for a confident placement of the fungal GRLs; they could group with either of the two protist lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the phylogenetic analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "7a7fe9ef-2566-4c65-98ae-8f0af95624b2",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C72",
+      "claim": "Most query sequences successfully seeded a multisequence alignment to permit extraction of co-evolutionary couplings, generation of inter-residue contact maps and prediction of three-dimensional models using trRosetta.",
+      "claim_type": "EXPLICIT",
+      "source": "Most query sequences successfully seeded a multisequence alignment to permit extraction of co-evolutionary couplings, generation of inter-residue contact maps and prediction of three-dimensional models (Figure 3A\u2013B, Supplementary file 7; full outputs of modeling are provided in the Dryad repository doi:10.5061/dryad.s7h44j15f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d1ba50fc-708b-4d03-9b9d-9d5aec3e34dd",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C73",
+      "claim": "The contact maps predicted consistent patterns of anti-parallel packing of TM helices across GRLs and DUF3537 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The contact maps predicted consistent patterns of anti-parallel packing of TM helices (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the contact maps shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "cc981224-b0ff-4921-8e6c-a3c4eef8af13",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C74",
+      "claim": "The top-predicted models of GRLs and DUF3537 proteins were qualitatively similar to the AbakORCO cryo-EM structure, particularly in the transmembrane core.",
+      "claim_type": "EXPLICIT",
+      "source": "Concordantly, the top-predicted models were qualitatively similar to the AbakORCO cryo-EM structure (Figure 3B), particularly in the transmembrane core of these models (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of predicted models shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "17e66bf9-3b4f-4269-b2fb-bde0f9366a88",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C75",
+      "claim": "The consistent helical packing of GRLs and DUF3537 proteins is fundamentally different to the Homo sapiens Adiponectin Receptor 1 (HsapAdipoR1).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the consistent helical packing of GRLs and DUF3537 proteins is fundamentally different to an unrelated seven TM protein, the Homo sapiens Adiponectin Receptor 1 (HsapAdipoR1), which \u2013 despite sharing the same membrane orientation as GRLs \u2013 displays an arrangement of helices that is convergent with that of GPCRs (Hopf et al., 2015; Vasiliauskait\u00e9-Brooks et al., 2017; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is based on structural models and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "6cb9c94b-74ef-4d48-a649-498105f0116a",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C76",
+      "claim": "HsapAdipoR1 displays an arrangement of helices that is convergent with that of GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the consistent helical packing of GRLs and DUF3537 proteins is fundamentally different to an unrelated seven TM protein, the Homo sapiens Adiponectin Receptor 1 (HsapAdipoR1), which \u2013 despite sharing the same membrane orientation as GRLs \u2013 displays an arrangement of helices that is convergent with that of GPCRs (Hopf et al., 2015; Vasiliauskait\u00e9-Brooks et al., 2017; Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural similarity is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "43c41112-51ae-4b94-b0c9-51b8849abc3f",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C77",
+      "claim": "Dali searches of the Protein Data Bank with predicted GRL and DUF3537 models identified the AbakORCO cryo-EM structure as the top hit for essentially all models.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed these observations first by heuristic searches of the Protein Data Bank (PDB) with Dali (Holm and Rosenstr\u00f6m, 2010): strikingly, essentially all models identified the AbakORCO cryo-EM structure as the top hit (Supplementary file 7; outputs of Dali searches are provided in the Dryad repository doi:10.5061/dryad.s7h44j15f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Dali search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "241b6e35-b7a0-41d9-80fa-5c5852caef0e",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C78",
+      "claim": "Quantitative pairwise comparisons of selected structures using both Dali and TM-align indicated that all family members are likely to adopt the same global protein fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, quantitative pairwise comparisons of selected structures using both Dali and TM-align (Zhang and Skolnick, 2005) indicated that all family members are likely to adopt the same global protein fold, while displaying only random structural similarity to our negative control HsapAdipoR1 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "f6f08c50-0730-4abd-a689-f3227ffe1d1f",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C79",
+      "claim": "GRL and DUF3537 proteins display only random structural similarity to HsapAdipoR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, quantitative pairwise comparisons of selected structures using both Dali and TM-align (Zhang and Skolnick, 2005) indicated that all family members are likely to adopt the same global protein fold, while displaying only random structural similarity to our negative control HsapAdipoR1 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "faeca4d0-c377-434a-9cbb-ded081da4aeb",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C80",
+      "claim": "RaptorX models of unicellular eukaryotic GRLs and plant DUF3537 proteins also identified AbakORCO as the top hit in Dali PDB searches.",
+      "claim_type": "EXPLICIT",
+      "source": "We extended this analysis by generating protein models with an independent algorithm, RaptorX (K\u00e4llberg et al., 2012), and assessing these using Dali PDB searches. Where reliable models were generated (excluding those resulting from multisequence alignments consisting of only a few proteins), AbakORCO was again repeatedly identified as the top hit for animal and unicellular eukaryotic GRLs and plant DUF3537 proteins (Supplementary file 7; full outputs of modeling are provided in the Dryad repository doi:10.5061/dryad.s7h44j15f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RaptorX modeling and Dali search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "3124faa6-c317-4969-a0b6-ad170dd53e2c",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C81",
+      "claim": "The trRosetta and RaptorX models of unicellular eukaryotic GRLs derive from multisequence alignments containing large numbers of animal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to recognize that the trRosetta and RaptorX models of unicellular eukaryotic GRLs derive from multisequence alignments containing large numbers of animal proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological observation about the modeling process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "fec416b4-0f5b-4f81-af2b-62674ddea3c1",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C82",
+      "claim": "The models of plant DUF3537 proteins used information extracted from alignments of only other DUF3537 family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the models of the plant proteins used information extracted from alignments of only other DUF3537 family members, presumably because the primary sequence similarity of members of the more divergent plant and animal proteins is below the threshold of both trRosetta and RaptorX algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological observation about the modeling process.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "a553836c-92bb-49cf-82e5-081b4f896120",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C83",
+      "claim": "The independently-generated plant protein models are similar to AbakORCO.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that the independently-generated plant protein models are also similar to AbakORCO argues that, despite their high sequence divergence, animal and protist GRLs and plant DUF3537 proteins all adopt a common three-dimensional architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison of the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "770240b8-aeb8-4146-86bf-1371eab5b9b8",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C84",
+      "claim": "Despite high sequence divergence, animal and protist GRLs and plant DUF3537 proteins all adopt a common three-dimensional architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that the independently-generated plant protein models are also similar to AbakORCO argues that, despite their high sequence divergence, animal and protist GRLs and plant DUF3537 proteins all adopt a common three-dimensional architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "e8483a34-b756-4564-952b-47455ce756f4",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C85",
+      "claim": "Primary, secondary and tertiary structural analyses together support the hypothesis that animal ORs/GRs/GRLs, newly-recognized unicellular eukaryotic GRLs, and plant DUF3537 proteins are homologous.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our primary, secondary and tertiary structural analyses together support the hypothesis that animal ORs/GRs/GRLs, newly-recognized unicellular eukaryotic GRLs, and plant DUF3537 proteins are homologous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "4cfa283f-d327-4dae-a345-37a487690121",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C86",
+      "claim": "The extremely sparse phylogenetic distribution of GRL genes in unicellular eukaryotes might be explained by independent losses in many lineages and/or divergence beyond sequence-based homology detection levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The extremely sparse phylogenetic distribution of these genes in unicellular eukaryotes, despite our efforts to perform exhaustive searches, has multiple potential explanations. These genes might have been independently lost in many lineages and/or have diverged beyond sequence-based homology detection levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations for the sparse distribution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "18137df1-4041-4a1f-a22d-04517efcbc24",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C87",
+      "claim": "Some GRL homologs might have been acquired by lateral gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that some homologs were acquired by lateral gene transfer, as has been proposed to explain the patchy phylogenetic distribution of microbial rhodopsins (Gavelis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about an alternative explanation, supported by analogy to another protein family.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "2597e244-f575-4317-997c-4113c966bda0",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C88",
+      "claim": "The global conservation of the structural features of unicellular eukaryotic GRLs and DUF3537 proteins with insect chemosensory receptors suggests that they are also ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The global conservation of the structural features of unicellular eukaryotic GRLs and DUF3537 proteins with insect chemosensory receptors suggests that they are also ligand-gated ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural similarity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "fe33d948-e804-43db-a0ff-6db7565854e7",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C89",
+      "claim": "It is possible, if not likely, that GRL proteins fulfill distinct roles in different phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible, if not likely, that the proteins fulfill distinct roles in different phyla, as has been suggested in non-Bilateria, where some GRLs appear to act during development (Saina et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about functional diversity, supported by citation to developmental roles in non-Bilateria.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "277da55b-3fe7-48d6-b160-73be3cda651e",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C90",
+      "claim": "In A. thaliana, DUF3537 genes have various tissue-specific expression patterns, including in leaf guard cells, roots and pollen grains.",
+      "claim_type": "EXPLICIT",
+      "source": "In A. thaliana, transcriptomic analysis indicates that DUF3537 genes have various tissue-specific expression patterns, including in leaf guard cells, roots and pollen grains (Schmid et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This expression pattern is supported by citation to transcriptomic analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "a59d447e-cacd-4616-bcc7-8ff68050d7d1",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C91",
+      "claim": "One broadly expressed A. thaliana DUF3537 protein (AT4G22270) localizes to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "For one broadly expressed plant protein (AT4G22270), GFP-tagging revealed localization in the plasma membrane (Guan et al., 2009), and transgenic overexpression appeared to promote organ growth (Guan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This localization is supported by citation to a GFP-tagging study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d773f016-ea63-4242-90d0-e9cb51772ef2",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C92",
+      "claim": "Transgenic overexpression of AT4G22270 appeared to promote organ growth in A. thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "For one broadly expressed plant protein (AT4G22270), GFP-tagging revealed localization in the plasma membrane (Guan et al., 2009), and transgenic overexpression appeared to promote organ growth (Guan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This phenotype is supported by citation, but the authors note it requires validation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "c374fffd-f9c2-4ca7-b0a3-12addc1d7cde",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C93",
+      "claim": "The significance of the organ growth phenotype from AT4G22270 overexpression will require validation by loss-of-function genetic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the significance of this phenotype will require validation by loss-of-function genetic analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of the cited work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "b5523b1c-7762-4c04-8b25-0d8a05b31c97",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C94",
+      "claim": "Even if members of the GRL superfamily have a common function as ligand-gated ion channels, they are likely to recognize very diverse chemicals that are potentially of environmental and/or internal origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the available evidence indicates that even if members of this superfamily have a common function as ligand-gated ion channels, they are likely to recognize very diverse chemicals that are potentially of environmental and/or internal origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about ligand diversity based on the functional diversity observed.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d9e4e64e-3833-410c-8888-54893707c973",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C95",
+      "claim": "The recognition of GRL existence across Animalia, Plantae, Fungi and Protista provides evidence that this protein superfamily originated in the last common eukaryotic ancestor, 1.5\u20132 billion years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "While functional studies remain a future challenge, the recognition of their existence across Animalia, Plantae, Fungi and Protista provides evidence that this protein superfamily originated in the last common eukaryotic ancestor, 1.5\u20132 billion years ago (Hedges et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This evolutionary conclusion is based on the phylogenetic distribution and supported by citation for the timing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "c1e38e58-9504-4b13-9a6d-1f75dc84efbb",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C96",
+      "claim": "No sequences bearing resemblance to GRLs were found in Bacteria or Archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "No sequences bearing resemblance to GRLs were found, so far, in Bacteria or Archaea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "5cb341a5-cd2a-4437-b047-6dd02b10cf5f",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "claim_id": "C97",
+      "claim": "The fungal kingdom is thought to be the closest relative to Animalia.",
+      "claim_type": "EXPLICIT",
+      "source": "The fungal kingdom is thought to be the closest relative to Animalia (Baldauf and Palmer, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This phylogenetic relationship is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identified 17 candidate GRL sequences in unicellular eukaryotes (fungi, protists, and algae) through database searches. These candidates exhibit structural features characteristic of animal GRLs, including predicted seven transmembrane domains and intracellular N-termini, though with variable conservation of the TM7 motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C35, and C45-C57 collectively document the identification and initial characterization of unicellular GRLs. The database search methodology is described, and the structural predictions (Figure 1) support the presence of GRL-like features. The variable TM7 motif conservation (C48, C52, C54) is appropriately documented and does not undermine the overall finding given the known variability of this motif even in animal GRLs (C39).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "f189ec82-ca89-44e7-aaeb-8cfada3dc3fa",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HMM analysis revealed that all candidate unicellular GRL sequences display significant similarity to animal and/or plant proteins, despite extreme primary sequence divergence (as low as 10% amino acid identity). The sequences lack universally conserved residues beyond hydrophobic transmembrane regions, with better conservation in C-terminal halves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 and C62-C65 describe the HMM similarity analysis and sequence conservation patterns. The data in Figure 1\u2014figure supplement 1 supports the HMM similarity claims, and the comparison to insect OR families (C63) provides appropriate context for the low sequence identity. The observation about C-terminal conservation (C65) is consistent with known patterns in insect OR/GR families (C66).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "e31746a9-fd22-41c2-83ff-4cd035d830e8",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis shows that animal and plant/algal GRL proteins form distinct clades, with protist GRLs segregating into two lineages\u2014one more closely related to animal GRLs. However, low branch support prevents confident placement of fungal GRLs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 describe the phylogenetic tree results shown in Figure 2C. The authors appropriately acknowledge the uncertainty in fungal GRL placement due to low branch support (C71), which is a critical limitation. The segregation of protist sequences into two lineages (C70) is consistent with both the phylogenetic tree and HMM analysis (C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "d578a6a1-923d-4441-9f0f-8d0c160240a2",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ab initio structure predictions using trRosetta and RaptorX generated models for GRLs and DUF3537 proteins that show consistent anti-parallel TM helix packing and qualitative similarity to the AbakORCO cryo-EM structure. Dali searches identified AbakORCO as the top hit for essentially all models, and quantitative comparisons indicated all family members likely adopt the same global protein fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74, C77-C78, and C80 describe the computational structure prediction results shown in Figure 3. The use of two independent algorithms (trRosetta and RaptorX) strengthens the findings. The contact maps (C73, Figure 3A) and structural comparisons (C74, Figure 3B) provide visual evidence. The Dali and TM-align quantitative metrics (C78, Figure 3C) support the conclusion of shared fold, with appropriate negative control (HsapAdipoR1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "ec70160f-e77e-4dfc-a4a7-6c98886c7666",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The helical packing of GRLs and DUF3537 proteins is fundamentally different from the unrelated seven-TM protein HsapAdipoR1, which displays GPCR-like helix arrangement. GRL/DUF3537 proteins show only random structural similarity to HsapAdipoR1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C79 establish that the structural similarity among GRL/DUF3537 proteins is specific and not simply a consequence of having seven TM domains. The comparison to HsapAdipoR1 (Figure 3B-C) serves as an appropriate negative control, showing that proteins with similar topology can have fundamentally different folds. The quantitative metrics in Figure 3C support the claim of random similarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "6ce09750-74aa-4762-93cb-28f9b38f5c70",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The trRosetta/RaptorX models of unicellular GRLs used alignments containing animal proteins, while plant DUF3537 models used only plant sequences. Despite this, independently-generated plant models are similar to AbakORCO, suggesting all proteins adopt a common three-dimensional architecture despite high sequence divergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 address a critical methodological consideration: whether the structural similarity is genuine or an artifact of including animal sequences in alignments. The observation that plant models generated independently from only plant sequences (C82) still resemble AbakORCO (C83) is strong evidence for homology. The authors appropriately acknowledge this limitation and provide reasoning for why it supports rather than undermines their conclusion (C84).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "8739ceef-d79e-4650-bca5-27e3b23e9179",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The existence of GRL proteins in unicellular eukaryotes combined with ab initio structure predictions provides evidence for homology between animal GRLs and plant DUF3537 proteins. Primary, secondary, and tertiary structural analyses together support this homology hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C85 represent the main conclusion integrating multiple lines of evidence: discovery of unicellular GRLs (bridging the phylogenetic gap), structural predictions showing common fold, HMM similarities, and phylogenetic relationships. The convergence of evidence from sequence analysis, topology predictions, and ab initio structure modeling provides strong support for the homology hypothesis, though the authors appropriately frame this as a hypothesis given the extreme sequence divergence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "a6d1f5f4-edaf-4827-95d7-b8f2565c421a",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The recognition of GRL existence across Animalia, Plantae, Fungi, and Protista provides evidence that this protein superfamily originated in the last common eukaryotic ancestor (1.5\u20132 billion years ago). No GRL sequences were found in Bacteria or Archaea.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C95, and C96 present the evolutionary conclusion based on the phylogenetic distribution of GRLs. The presence across all major eukaryotic kingdoms (with appropriate citation for timing, C95) supports an ancient origin. The negative result for prokaryotes (C96) is appropriately reported. However, the sparse distribution in unicellular eukaryotes (acknowledged in C86) introduces some uncertainty about whether this represents ancient origin versus other scenarios (loss, lateral transfer).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "e0d312ea-c896-42db-ab5f-61f77968dd54",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The sparse phylogenetic distribution of GRL genes in unicellular eukaryotes might be explained by independent losses in many lineages, divergence beyond detection levels, or lateral gene transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C87 present speculative explanations for the patchy distribution of GRLs. While these are reasonable hypotheses (with C87 supported by analogy to microbial rhodopsins), they remain untested. The sparse distribution is a significant limitation that could alternatively suggest a more complex evolutionary history than simple vertical inheritance from the last common eukaryotic ancestor. Additional data or analyses would be needed to distinguish among these possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "220beb9a-927e-4b7f-ba4a-38acb1ed2fe6",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors previously proposed homology between GRLs and plant DUF3537 proteins based on predicted seven TM domains and intracellular N-termini, but this proposal was questioned due to lack of TM7 motif and conserved introns in DUF3537 proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 accurately describe prior work and criticism. C33 references the authors' previous hypothesis (Benton, 2015), and C34 cites Robertson's criticism. This provides appropriate context for the current study, which aims to address these criticisms by identifying intermediate sequences in unicellular eukaryotes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "f7942d13-dc40-4e66-ba13-8638c42cc2f0",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The TM7 motif (T/S)Yhhhhh(Q/K/E)(F/L/M) is diagnostic but not definitive for GRLs, with many ORs/GRs showing divergent residues. Structural and functional studies show the TY residues form subunit interfaces and the terminal L is part of the channel gate, suggesting divergence from the motif could be compatible with ion channel function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 describe the TM7 motif and its structural/functional significance based on prior work (citations to Butterwick et al., 2018 and others). The inference that motif divergence could be compatible with ion channel function (C44) is reasonable given the documented variability (C39) and the specific functional roles of different positions (C40-C43). This provides important context for interpreting the variable motif conservation in unicellular GRLs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "c49a5fc0-a217-4c07-acf6-2cb073ab73c6",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The relationship between DUF3537 proteins and GRLs may have been overlooked because plant proteins have longer intracellular loops (notably IL3 and IL2), which impede alignment. ORCO also has an extended IL2 region that contributes to channel regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 provide a plausible explanation for why homology was not recognized earlier, supported by structural data (Figure 1B) and citations about ORCO's IL2 function. The comparison to ORCO (C60-C61) suggests that loop length variation is compatible with GRL function, though this remains somewhat speculative without functional data for plant proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "97bcc0f7-d5ad-4eda-986b-5b945f013970",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The pattern of greater conservation in C-terminal halves of GRLs is characteristic of insect OR/GR families and might reflect N-terminal involvement in ligand recognition and C-terminal roles in subunit interactions and pore formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 describe conservation patterns and their functional implications. C66 is supported by citations to prior work on insect ORs/GRs. The functional interpretations (C67-C68) are appropriately framed as speculative (C67 uses \"may be\"), though C68 is better supported by the ORCO structure study. This provides useful context for interpreting the alignment patterns observed in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "0255e8df-f3a5-4407-853c-294cdff1bfd6",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The structural conservation suggests unicellular GRLs and DUF3537 proteins are also ligand-gated ion channels, though they likely fulfill distinct roles in different phyla and recognize diverse chemicals of environmental or internal origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C89 and C94 present functional inferences based on structural similarity. While the inference that structural conservation implies functional conservation as ion channels (C88) is reasonable, it remains untested. The speculation about functional diversity (C89) and ligand diversity (C94) is appropriately cautious but lacks direct evidence. Functional validation would be required to support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "9311b6ad-cdf1-4a8f-85e4-00e44d758bfb",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In A. thaliana, DUF3537 genes show tissue-specific expression patterns. One protein (AT4G22270) localizes to the plasma membrane and its overexpression appeared to promote organ growth, though this requires validation by loss-of-function analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C93 summarize prior work on plant DUF3537 proteins. The expression patterns (C90) and localization (C91) are supported by citations. However, the authors appropriately note that the growth phenotype (C92) requires validation (C93), indicating critical evaluation of cited work. Without loss-of-function data, the functional significance remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "793844df-387e-4076-9ff0-14c2cefa082b",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Insect ORs and GRs represent one of the largest families of ligand-gated ion channels, with seven TM domains and inverted topology compared to GPCRs. They form heteromeric complexes, with ORs requiring the ORCO co-receptor. The ORCO cryo-EM structure revealed a novel fold, and analyses suggest this fold is conserved across ORs and potentially GRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C8-C21 provide background on insect chemosensory receptors, all supported by multiple citations to prior literature. This establishes the foundation for the evolutionary study. The claims accurately represent established knowledge about OR/GR structure, function, and assembly based on extensive prior work, particularly the ORCO cryo-EM structure (Butterwick et al., 2018).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Previous analyses identified GRL proteins across Animalia, including non-bilaterian animals, but the evolutionary origin remained unknown. GRLs show functional diversity beyond chemosensation, including roles in light detection, motor control, and development, representing one of the largest and most functionally diverse ion channel families.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C22-C32 summarize prior work on GRL distribution and function across animals, all supported by appropriate citations. This establishes the knowledge gap (C3) that motivates the current study. The functional diversity examples (C25-C31) are well-documented in the literature, and the characterization as a large, diverse family (C32) is justified by the accumulated evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "5f0ff2c5-5faa-4bb5-bed2-a28c538ac3ab",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The fungal species containing GRLs (Spizellomyces punctatus and S. palustris) are chytrids, an early-diverging fungal lineage that retains features of the last common opisthokont ancestor. Chytrids reproduce via motile zoospores. Fungi are the closest relatives to Animalia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 and C97 provide phylogenetic and biological context for the fungal GRLs, all supported by citations. This information is relevant for interpreting the evolutionary significance of finding GRLs in these particular fungal species, as chytrids represent an early-diverging lineage that might retain ancestral features.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    },
+    {
+      "id": "6853c3cf-dd5f-4c81-af79-0e9688ad5252",
+      "content_id": "3f7fa596-aa73-4c6e-b9ca-529deda0890a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "DUF3537 proteins are widely encoded in higher plant genomes (typically 4\u201312 members per genome), but the TM7 motif is largely unrecognizable in these sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C58 describe the distribution and sequence features of plant DUF3537 proteins. C56 is supported by citation to prior work (Benton, 2015), and C58 is based on sequence analysis in the current study. The lack of recognizable TM7 motif was one of the criticisms of the original homology proposal (C34), making this an important observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:56:46.156433Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f3ba3c86-f356-47be-b7eb-ee6e42ef29a2",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "f213b4d6-3886-4ae7-833d-9ccb233afa8f",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "8ac26b78-43a1-4b1d-af13-082f07ee975d",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "d94b3b89-50ba-488f-96c2-d9141b8b0203",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "df850208-c8c6-48ee-8923-2fc709de6a43",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "29e8a75c-06e6-419b-b3a4-0cf5a60a109f",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "047f0ebd-00ef-401f-a3b0-926ca2d02ac5",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "d2842cf3-0748-4673-b2c8-2923f2aa91be",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "f0f6a78a-d793-4aab-8952-c4672e78c575",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "cf4255f2-f70c-4a05-81c4-a201fffc7d52",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "ed887c33-59ff-4c2c-9460-08f562345df8",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "5194a0a3-1a78-4d13-85c5-843a9a17bc79",
+      "result_id": "9a5baa4f-1525-42e2-8ea9-ce7e18026418"
+    },
+    {
+      "claim_id": "ef63e0de-4a44-406d-a5fb-1b746092db17",
+      "result_id": "f189ec82-ca89-44e7-aaeb-8cfada3dc3fa"
+    },
+    {
+      "claim_id": "b338f7b1-6cc4-44d8-b99d-5f11ce719e7a",
+      "result_id": "f189ec82-ca89-44e7-aaeb-8cfada3dc3fa"
+    },
+    {
+      "claim_id": "dfa27b39-9237-4f17-8e46-014432f1955b",
+      "result_id": "f189ec82-ca89-44e7-aaeb-8cfada3dc3fa"
+    },
+    {
+      "claim_id": "b13f4879-f146-4df4-8f56-774929645052",
+      "result_id": "f189ec82-ca89-44e7-aaeb-8cfada3dc3fa"
+    },
+    {
+      "claim_id": "12bcb7f4-1c8b-42a7-beab-4d5cf3e8ff72",
+      "result_id": "f189ec82-ca89-44e7-aaeb-8cfada3dc3fa"
+    },
+    {
+      "claim_id": "d9f9e82a-d17d-42ba-978e-2eec17a207e5",
+      "result_id": "f189ec82-ca89-44e7-aaeb-8cfada3dc3fa"
+    },
+    {
+      "claim_id": "61398c66-da94-4a4d-b64b-686c346a5fec",
+      "result_id": "e31746a9-fd22-41c2-83ff-4cd035d830e8"
+    },
+    {
+      "claim_id": "f65f4ab6-41e0-443d-91b6-316eb72310ab",
+      "result_id": "e31746a9-fd22-41c2-83ff-4cd035d830e8"
+    },
+    {
+      "claim_id": "f1083a1b-d586-4f48-b7eb-7754c277a900",
+      "result_id": "e31746a9-fd22-41c2-83ff-4cd035d830e8"
+    },
+    {
+      "claim_id": "7a7fe9ef-2566-4c65-98ae-8f0af95624b2",
+      "result_id": "d578a6a1-923d-4441-9f0f-8d0c160240a2"
+    },
+    {
+      "claim_id": "d1ba50fc-708b-4d03-9b9d-9d5aec3e34dd",
+      "result_id": "d578a6a1-923d-4441-9f0f-8d0c160240a2"
+    },
+    {
+      "claim_id": "cc981224-b0ff-4921-8e6c-a3c4eef8af13",
+      "result_id": "d578a6a1-923d-4441-9f0f-8d0c160240a2"
+    },
+    {
+      "claim_id": "43c41112-51ae-4b94-b0c9-51b8849abc3f",
+      "result_id": "d578a6a1-923d-4441-9f0f-8d0c160240a2"
+    },
+    {
+      "claim_id": "241b6e35-b7a0-41d9-80fa-5c5852caef0e",
+      "result_id": "d578a6a1-923d-4441-9f0f-8d0c160240a2"
+    },
+    {
+      "claim_id": "faeca4d0-c377-434a-9cbb-ded081da4aeb",
+      "result_id": "d578a6a1-923d-4441-9f0f-8d0c160240a2"
+    },
+    {
+      "claim_id": "17e66bf9-3b4f-4269-b2fb-bde0f9366a88",
+      "result_id": "ec70160f-e77e-4dfc-a4a7-6c98886c7666"
+    },
+    {
+      "claim_id": "f6f08c50-0730-4abd-a689-f3227ffe1d1f",
+      "result_id": "ec70160f-e77e-4dfc-a4a7-6c98886c7666"
+    },
+    {
+      "claim_id": "3124faa6-c317-4969-a0b6-ad170dd53e2c",
+      "result_id": "6ce09750-74aa-4762-93cb-28f9b38f5c70"
+    },
+    {
+      "claim_id": "fec416b4-0f5b-4f81-af2b-62674ddea3c1",
+      "result_id": "6ce09750-74aa-4762-93cb-28f9b38f5c70"
+    },
+    {
+      "claim_id": "a553836c-92bb-49cf-82e5-081b4f896120",
+      "result_id": "6ce09750-74aa-4762-93cb-28f9b38f5c70"
+    },
+    {
+      "claim_id": "770240b8-aeb8-4146-86bf-1371eab5b9b8",
+      "result_id": "6ce09750-74aa-4762-93cb-28f9b38f5c70"
+    },
+    {
+      "claim_id": "d54aa5c6-f842-4cfc-97ad-aa42458baadb",
+      "result_id": "8739ceef-d79e-4650-bca5-27e3b23e9179"
+    },
+    {
+      "claim_id": "84cfd7e2-5ea5-4127-8db7-40e8d8ee0b34",
+      "result_id": "8739ceef-d79e-4650-bca5-27e3b23e9179"
+    },
+    {
+      "claim_id": "e8483a34-b756-4564-952b-47455ce756f4",
+      "result_id": "8739ceef-d79e-4650-bca5-27e3b23e9179"
+    },
+    {
+      "claim_id": "ea08b09c-8e07-4cf1-84f1-6b0a514441de",
+      "result_id": "a6d1f5f4-edaf-4827-95d7-b8f2565c421a"
+    },
+    {
+      "claim_id": "d9e4e64e-3833-410c-8888-54893707c973",
+      "result_id": "a6d1f5f4-edaf-4827-95d7-b8f2565c421a"
+    },
+    {
+      "claim_id": "c1e38e58-9504-4b13-9a6d-1f75dc84efbb",
+      "result_id": "a6d1f5f4-edaf-4827-95d7-b8f2565c421a"
+    },
+    {
+      "claim_id": "4cfa283f-d327-4dae-a345-37a487690121",
+      "result_id": "e0d312ea-c896-42db-ab5f-61f77968dd54"
+    },
+    {
+      "claim_id": "18137df1-4041-4a1f-a22d-04517efcbc24",
+      "result_id": "e0d312ea-c896-42db-ab5f-61f77968dd54"
+    },
+    {
+      "claim_id": "659c2262-24ed-4ca3-8caf-0974afc39ad8",
+      "result_id": "220beb9a-927e-4b7f-ba4a-38acb1ed2fe6"
+    },
+    {
+      "claim_id": "eaa4faac-fc99-4c0c-8fba-e007afd3ebd5",
+      "result_id": "220beb9a-927e-4b7f-ba4a-38acb1ed2fe6"
+    },
+    {
+      "claim_id": "7e5282d6-ce72-48ee-af91-d9c966570d1e",
+      "result_id": "f7942d13-dc40-4e66-ba13-8638c42cc2f0"
+    },
+    {
+      "claim_id": "62469bb5-a8fe-4aa7-8454-d71bac2a7f5c",
+      "result_id": "f7942d13-dc40-4e66-ba13-8638c42cc2f0"
+    },
+    {
+      "claim_id": "5ff60c35-c6cd-46aa-909e-426cc3dacaf6",
+      "result_id": "f7942d13-dc40-4e66-ba13-8638c42cc2f0"
+    },
+    {
+      "claim_id": "8c62b898-1bbc-44c6-a9cf-645776cb8f14",
+      "result_id": "f7942d13-dc40-4e66-ba13-8638c42cc2f0"
+    },
+    {
+      "claim_id": "56b4d450-a911-4264-b48a-e430880381ad",
+      "result_id": "f7942d13-dc40-4e66-ba13-8638c42cc2f0"
+    },
+    {
+      "claim_id": "8d986f41-3b0f-4d5c-9e32-bd6880d65968",
+      "result_id": "f7942d13-dc40-4e66-ba13-8638c42cc2f0"
+    },
+    {
+      "claim_id": "cef30542-bb59-4f7f-86d2-b14baea55bfd",
+      "result_id": "f7942d13-dc40-4e66-ba13-8638c42cc2f0"
+    },
+    {
+      "claim_id": "bfc7a5de-1af5-4728-99ab-dfe181a08969",
+      "result_id": "c49a5fc0-a217-4c07-acf6-2cb073ab73c6"
+    },
+    {
+      "claim_id": "efbc3444-00de-46c4-92b3-08e810f4730a",
+      "result_id": "c49a5fc0-a217-4c07-acf6-2cb073ab73c6"
+    },
+    {
+      "claim_id": "1e0d1954-8635-4fd3-92ce-c0a441a1b505",
+      "result_id": "c49a5fc0-a217-4c07-acf6-2cb073ab73c6"
+    },
+    {
+      "claim_id": "fc4a84cb-2b78-4b22-8606-6daf3e7679e8",
+      "result_id": "97bcc0f7-d5ad-4eda-986b-5b945f013970"
+    },
+    {
+      "claim_id": "bc509771-3533-4a27-9c38-377775f22bac",
+      "result_id": "97bcc0f7-d5ad-4eda-986b-5b945f013970"
+    },
+    {
+      "claim_id": "92aa7fb4-e7c4-4951-85a9-dfb3ca265a81",
+      "result_id": "97bcc0f7-d5ad-4eda-986b-5b945f013970"
+    },
+    {
+      "claim_id": "2597e244-f575-4317-997c-4113c966bda0",
+      "result_id": "0255e8df-f3a5-4407-853c-294cdff1bfd6"
+    },
+    {
+      "claim_id": "fe33d948-e804-43db-a0ff-6db7565854e7",
+      "result_id": "0255e8df-f3a5-4407-853c-294cdff1bfd6"
+    },
+    {
+      "claim_id": "b5523b1c-7762-4c04-8b25-0d8a05b31c97",
+      "result_id": "0255e8df-f3a5-4407-853c-294cdff1bfd6"
+    },
+    {
+      "claim_id": "277da55b-3fe7-48d6-b160-73be3cda651e",
+      "result_id": "9311b6ad-cdf1-4a8f-85e4-00e44d758bfb"
+    },
+    {
+      "claim_id": "a59d447e-cacd-4616-bcc7-8ff68050d7d1",
+      "result_id": "9311b6ad-cdf1-4a8f-85e4-00e44d758bfb"
+    },
+    {
+      "claim_id": "d773f016-ea63-4242-90d0-e9cb51772ef2",
+      "result_id": "9311b6ad-cdf1-4a8f-85e4-00e44d758bfb"
+    },
+    {
+      "claim_id": "c374fffd-f9c2-4ca7-b0a3-12addc1d7cde",
+      "result_id": "9311b6ad-cdf1-4a8f-85e4-00e44d758bfb"
+    },
+    {
+      "claim_id": "93b7f386-9aa7-4ee2-9ec4-9f534d33656c",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "a662f0ca-4583-47dc-8233-d035e93082a0",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "e215662a-3339-4a57-a892-b551aee523ff",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "9aef57b3-833c-4dff-b412-8a3677030ea7",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "4cdc0939-e869-4f61-bf91-67890b3a771d",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "a53cfa24-b73d-4ab5-9d49-d8cfef989b0f",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "fb9fa45b-7bb1-4045-a657-fb5da5303d78",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "9194fc6d-1762-47aa-9f57-09517d8baaa4",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "4a1de63b-0828-4de8-88a5-55ea39d672ba",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "172e8bef-6f10-46b1-a94f-8cbed1936752",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "6c48af0b-aed0-4986-b86c-d90e89056ed7",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "8ee39211-d7f5-49d6-bcc9-f8e76bf8c42a",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "34889a0a-68c4-4640-8e1b-34ec81966590",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "81488f23-9b01-4853-be14-dec73421f6fd",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "791d5a08-ec3f-460a-9204-da9834aa953b",
+      "result_id": "793844df-387e-4076-9ff0-14c2cefa082b"
+    },
+    {
+      "claim_id": "e46e224a-0e6f-4e8e-b3a6-0bb32bcc9093",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "302d6cf2-c292-4d24-b42c-88a857f740f1",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "38d43044-6d62-4494-866b-36211cc1de9c",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "3c97a95e-b92c-45df-b768-489af886de66",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "6cd3bbd7-b77d-43a0-80bf-dbc122a1bb6f",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "d96ba79f-b2d8-459d-b10d-bfed5343849d",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "b6c5bc26-aa28-45ad-b588-579d6fcbc152",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "39158ae3-308e-4292-8645-d59c4131fb92",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "1cce6b71-2d95-43bf-bab3-4101fe1e0cd3",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "79100cd5-6729-4ea8-9f55-08772ceda47a",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "325d83a9-1df8-4c48-8a45-977dca436962",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "5384c2f7-0a0b-43da-86ea-4811df91f762",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "53256531-a0d0-4bb3-b6d3-0f719069501b",
+      "result_id": "29aa7e97-6cb5-4c43-92b8-dd0fadb5e467"
+    },
+    {
+      "claim_id": "f069e14d-10ad-46d1-9cfa-cc530fcc4b68",
+      "result_id": "5f0ff2c5-5faa-4bb5-bed2-a28c538ac3ab"
+    },
+    {
+      "claim_id": "74d076ea-d6c9-43e2-b77a-27d404e8cfce",
+      "result_id": "5f0ff2c5-5faa-4bb5-bed2-a28c538ac3ab"
+    },
+    {
+      "claim_id": "5cb341a5-cd2a-4437-b047-6dd02b10cf5f",
+      "result_id": "5f0ff2c5-5faa-4bb5-bed2-a28c538ac3ab"
+    },
+    {
+      "claim_id": "d5489ec7-602a-4a15-b716-5b3d27fb25ca",
+      "result_id": "6853c3cf-dd5f-4c81-af79-0e9688ad5252"
+    },
+    {
+      "claim_id": "5adc1ae5-ad18-459c-9193-019d16c9861b",
+      "result_id": "6853c3cf-dd5f-4c81-af79-0e9688ad5252"
+    }
+  ],
+  "comparisons": []
+}

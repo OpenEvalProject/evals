@@ -1,0 +1,2302 @@
+{
+  "submission": {
+    "id": "59241570-6292-49e4-81e5-5941c4a94570",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:16:47.680755Z",
+    "updated_at": "2025-12-02T11:16:47.680755Z"
+  },
+  "content": [
+    {
+      "id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "submission_id": "59241570-6292-49e4-81e5-5941c4a94570",
+      "content_type": "manuscript",
+      "content_text": "# Splicing in a single neuron is coordinately controlled by RNA binding proteins and transcription factors\n\n## Authors\n\n- Morgan Thompson<sup>1</sup>\n- Ryan Bixby<sup>1</sup>\n- Robert Dalton<sup>1</sup>\n- Alexa Vandenburg<sup>1</sup>\n- John A Calarco<sup>2</sup> ([ORCID: 0000-0002-2197-7801](https://orcid.org/0000-0002-2197-7801))\n- Adam D Norris<sup>1</sup> ([ORCID: 0000-0002-0570-7414](https://orcid.org/0000-0002-0570-7414)) \u2020\n\n### Affiliations\n\n1. Biological Sciences Southern Methodist University Dallas United States\n2. Cell & Systems Biology University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nSingle-cell transcriptomes are established by transcription factors (TFs), which determine a cell's gene-expression complement. Post-transcriptional regulation of single-cell transcriptomes, and the RNA binding proteins (RBPs) responsible, are more technically challenging to determine, and combinatorial TF-RBP coordination of single-cell transcriptomes remains unexplored. We used fluorescent reporters to visualize alternative splicing in single Caenorhabditis elegans neurons, identifying complex splicing patterns in the neuronal kinase sad-1. Most neurons express both isoforms, but the ALM mechanosensory neuron expresses only the exon-included isoform, while its developmental sister cell the BDU neuron expresses only the exon-skipped isoform. A cascade of three cell-specific TFs and two RBPs are combinatorially required for sad-1 exon inclusion. Mechanistically, TFs combinatorially ensure expression of RBPs, which interact with sad-1 pre-mRNA. Thus a combinatorial TF-RBP code controls single-neuron sad-1 splicing. Additionally, we find \u2018phenotypic convergence,\u2019 previously observed for TFs, also applies to RBPs: different RBP combinations generate similar splicing outcomes in different neurons.\n\n## Introduction\n\nThe complement of genes expressed in an individual cell type controls its identity, development, and function. While transcriptional regulation is a major component of gene expression, post-transcriptional regulation can further shape cellular attributes by, for example, determining which gene isoforms are expressed in a cell. Much recent work has gone into cataloging gene expression networks in single cells, particularly those of specific neuronal types (Tanay and Regev, 2017; Zeng and Sanes, 2017). Molecular studies have also identified mechanisms by which transcription factors (TFs) shape gene expression networks in single neurons. Due to technical limitations, less is known about post-transcriptional regulation at the level of single neurons, or about the RNA binding proteins (RBPs) mediating post-transcriptional regulation (Gracida et al., 2016).\n\nIt is also unknown to what extent transcriptional and post-transcriptional gene regulatory networks are coordinated in single cells. A number of studies have identified individual RBPs that affect the splicing of a TF, thus\u00a0altering\u00a0the activity or specificity of that TF (Calarco et al., 2009; Han et al., 2013; Linares et al., 2015; Raj et al., 2011). These results suggest that there may be extensive cross-talk between transcriptional and post-transcriptional regulatory layers.\n\nThe nematode Caenorhabditis elegans has been used extensively as a model to reveal underlying principles by which TFs shape the transcriptomes of individual neurons. The worm\u2019s invariant cell lineage, coupled with genetic tools and a transparent body, enables systematic in vivo analysis of gene expression in single neurons, and identification of TFs responsible for cell-specific gene expression. This type of analysis has revealed a number of gene regulatory principles, including the concept of a \u2018combinatorial code\u2019 of TFs which can be re-used in different neuron types, with particular combinations of TFs determining specific cell fates (Gendrel et al., 2016; Gordon and Hobert, 2015; Pereira et al., 2015). Another example is the concept of \u2018phenotypic convergence\u2019 by which various neurons express similar gene networks but the TFs driving the networks are different for each neuron type (Gendrel et al., 2016; Pereira et al., 2015). These principles appear to apply to the nervous systems of other organisms as well (Konstantinides et al., 2018). However, it remains unknown whether similar mechanistic principles apply to post-transcriptional regulation by RBPs in the nervous system.\n\nHere we use single-cell in vivo fluorescent splicing reporters to investigate the cell-specific splicing of sad-1, a conserved neuronal kinase. The C. elegans sad-1 gene encodes two isoforms that differ in their ability to interact with the F-actin binding protein NAB-1/Neurabin (Hung et al., 2007), and have different roles in synapse formation and development (Kim et al., 2010). We find that sad-1 undergoes unique splicing patterns in various neuron types, and that developmentally-related cell types (the ALM touch-sensing neuron and the BDU neuron) exhibit opposing patterns of splicing (exon inclusion vs. exon skipping). A combination of unbiased genetic screens and candidate targeted mutations identified a cascade of three cell-fate determining TFs and two neuronal RBPs required for proper splicing of sad-1 in ALM neurons. Mechanistic dissection revealed that the three TFs function to establish cell-specific expression of the two RBPs in the ALM neuron, and that the two RBPs in turn directly bind to sad-1 intronic regions to mediate exon inclusion in the ALM neuron. Finally, we find that in other neuron types, similar principles apply but with different combinations of TFs\u00a0and\u00a0RBPs mediating sad-1 exon inclusion. These results indicate that neuronal RBPs, like TFs, are employed in a combinatorial code to shape neuron-specific splicing patterns, and demonstrate phenotypic convergence by which different RBPs mediate similar splicing outcomes in various neurons.\n\n## Results\n\n### Alternative splicing of the neuronal kinase sad-1 in specific cell types\n\nTo identify alternative splicing regulation in individual neuronal cell types, we created two-color splicing reporters that provide a fluorescent readout of splicing regulation in vivo in single cells (Kuroyanagi et al., 2006; Orengo et al., 2006). A minigene representing an alternative splicing event of interest is cloned upstream of a dual GFP/RFP cassette (Figure 1A\u2013B). The GFP and RFP coding sequences reside in alternative reading frames. The alternative exon is engineered to shift the reading frame by\u00a0+1 nucleotide such that splicing of the alternative exon determines the reading frame, and therefore the translation of GFP versus RFP. Application of two-color fluorescent reporters to transparent organisms such as C. elegans enables in vivo imaging of alternative splicing in individual cells. We have created reporters for splicing events in a number of neuronal genes, and uncovered a rich variety of splicing patterns in single neurons (Norris et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig1-v1.jpg)\n\n**Figure 1.:** (A) The sad-1 gene. Alternative cassette exon in blue. (B) Two-color splicing reporter schematic for sad-1 cassette exon. The cassette exon encodes a\u00a0+\u00a01 nt frameshift so that when skipped, GFP is produced with an in frame stop codon. When skipped, GFP is read out of frame without stop codons, followed by in-frame translation of RFP. (C) Whole worm fluorescent micrograph demonstrating both exon inclusion (RFP) and skipping (GFP) in many neurons, while certain neurons express only the included (ALM) of skipped (BDU) isoforms. (D\u2013E) Higher magnification focusing on ALM and BDU neurons. (F) BDU and ALM are both paired neurons present on the left and right side of the worm. Each BDU neuron is a sister cell to an ALM neuron, derived from the same neuroblast. Scale bar represents 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig1-figsupp1-v1.jpg)\n\nOne intriguing example of neuron-specific alternative splicing is in the conserved neuronal kinase sad-1, which plays important roles in neuronal development in both worms and mice (Kim et al., 2008; Kishi et al., 2005). In C. elegans, sad-1 is encoded by seventeen exons, and the fifteenth exon is an alternative cassette-type exon (Figure 1A). Alternative splicing of this exon changes the coding sequence and length of the sad-1 C-terminus (Kim et al., 2010). This presents an interesting parallel with mice and human genomes, which encode two separate genes homologous to sad-1 (SAD-A and SAD-B) that are nearly identical except for their C-terminal coding sequence and length.\n\nA two-color splicing reporter for sad-1 in C. elegans revealed that many neurons express both the skipped and included isoforms (Figure 1C, Figure 1\u2014figure supplement 1). For example, motor neurons in the ventral nerve cord express both isoforms of sad-1 (Figure 1C). On the other hand, the ALM touch-sensing neuron expresses only the included isoform, while the BDU neuron, which is the sister cell to the ALM neuron, expresses only the skipped isoform (Figure 1C\u2013F). While different neurons exhibit differences in sad-1 splicing, the splicing pattern in a given neuron is reproducible and invariant from one animal to the next, suggesting that sad-1 splicing in various neurons is under strict regulatory control. These results led us to ask how ALM and BDU neurons, which are developmentally related (Figure 1F) and share a number of anatomical and gene-expression features, specify opposite splicing regimes.\n\n### Forward genetic screen identifies a trio of fate-determining TFs affecting sad-1 splicing in the ALM neuron\n\nTo identify regulators of sad-1 splicing in the ALM touch neuron, we performed an unbiased forward genetic screen. Parental worms harboring the sad-1 splicing reporter were mutagenized with EMS. We then screened for F2 animals (potential homozygotes) with aberrant expression of the skipped (GFP) isoform in the ALM neuron (Figure 2A). This screen identified three distinct loci that transform the splicing pattern from the ALM neuron pattern (full exon inclusion) to resemble the pattern in their BDU sister cells (full exon skipping).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of forward genetic screen to identify regulators of sad-1 splicing in the ALM touch neuron. (B\u2013F) ALM neurons (dashed boxes) shift from complete inclusion (RFP) to skipping (GFP) in unc-86(e1416), mec-3(e1338), or alr-1(oy42) TF mutants. Splicing phenotypes fully penetrant (n\u00a0=\u00a050 animals) (G) Previously-identified roles of the three TFs in a transcriptional cascade to control touch neuron gene expression. Scale bar represents 10 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig2-figsupp1-v1.jpg)\n\nWhole-genome resequencing of the mutant strains identified loss-of-function mutations in three conserved TFs: unc-86, mec-3, and alr-1 (Figure 2B\u2013F, Figure 2\u2014figure supplement 1). All three genes have previously been identified as key regulators of touch-neuron cell fate (Gordon and Hobert, 2015; Topalidou et al., 2011). The three TFs function in a transcriptional cascade ensuring cell-specific expression of mec-3 in touch neurons, which then results in expression of a battery of touch-neuron specific genes (Figure 2G). Loss of the TF mec-3 results in touch neurons (ALMs) adopting certain gene-expression characteristics of their sister cells (BDUs) (Gordon and Hobert, 2015), mirroring our observation that loss of mec-3 transforms sad-1 splicing from an ALM (exon 15 included) to a BDU (exon 15 skipped) pattern.\n\nPrevious work demonstrates that the MEC-3 TF is expressed only in touch neurons, while UNC-86 and ALR-1 are expressed in various neuron types (Topalidou et al., 2011). However, we find that unc-86 and alr-1 mutants affect sad-1 splicing only in the touch neurons (Figure 2D\u2013F). This is in accordance with previous work indicating that a major function of unc-86 and alr-1 in touch neurons is to combinatorially ensure appropriate expression of mec-3, and that all three TFs are needed for proper differentiation of touch neurons (Topalidou et al., 2011). We therefore conclude that the combinatorial activity of all three TFs is required for proper sad-1 splicing in the ALM neuron.\n\n### A pair of RNA binding proteins regulates sad-1 splicing in the ALM neuron\n\nWe were surprised to identify TFs, but not RBPs, in our forward genetic screen for regulators of sad-1 alternative splicing. We hypothesized that multiple RBPs might co-regulate sad-1 alternative splicing in the ALM neuron and therefore mutations in individual RBPs might result in mild splicing defects. We therefore examined the\u00a0sequence surrounding the sad-1 alternative exon for conserved cis-elements corresponding to known in vitro RBP sequence preferences (Ray et al., 2013). We identified three candidate elements: one corresponding to the mbl-1/Mbnl1 consensus binding motif, and two corresponding to the mec-8/RBMS motif (Figure 3A\u2013C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig3-v1.jpg)\n\n**Figure 3.:** (A) Conservation scores in the introns surrounding sad-1 exon 15, basewise phyloP26way comparison of 26 nematode species (Hubisz et al., 2011). Numbers 1\u20133 indicate consensus binding motifs for mbl-1 and mec-8 displayed in B-C. (B\u2013C) cis-elements matching consensus binding motifs for mbl-1 and mec-8. (D\u2013F) mec-8 and mbl-1 mutants both cause a partial loss of sad-1 exon inclusion. (G) mec-8; mbl-1 double mutants cause complete loss of exon inclusion, phenocopying the TF mutants. Splicing phenotypes fully penetrant (n\u00a0=\u00a050 animals) Scale bar represents 10 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** In black is a schematic of the entire gene, in red a representation of the deletion. (A) mec-8(csb22) (B) mbl-1(csb31) and mbl-1(wy560). (C) msi-1(csb24).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** mec-8 (e398) premature stop codon mutation. mbl-1(wy560) large deletion. Splicing phenotypes fully penetrant (n\u00a0=\u00a050 animals).\n\nTo test whether these RBPs affect sad-1 alternative splicing, we created deletions for each gene with CRISPR/Cas9 (Norris et al., 2017). Both mec-8 and mbl-1 mutants result in aberrant sad-1 splicing in the ALM neuron, displaying partial skipping and partial inclusion (Figure 3D\u2013F, Figure 3\u2014figure supplement 1). As in the case of the TF mutants, mec-8 mutants affect sad-1 splicing specifically in the ALM neurons, whereas mbl-1 mutants affect sad-1 splicing in ALM neurons as well as specific neurons in the ventral nerve cord (see Figure 6, below). To verify that the phenotypes of our CRISPR mutants were on-target effects, we crossed the sad-1 splicing reporter into existing alleles for mec-8 (e398, premature stop codon [Davies et al., 1999; Lundquist et al., 1996]) and mbl-1 (wy560, large deletion affecting multiple genes including mbl-1 [Spilker et al., 2012]). We found these alleles to affect splicing of sad-1 exactly as our CRISPR mutations (Figure 3\u2014figure supplements 1\u20132).\n\nWhereas TF mutants result in full skipping of the sad-1 alternative exon, RBP mutants result in only partial skipping. This provides a probable explanation for not identifying these RBPs in our genetic screen: partial exon skipping leads to dim GFP expression, which is not sufficiently bright to be noticed upon brief visual inspection. We therefore tested whether simultaneous loss of both RBPs recapitulates the full skipping of sad-1 exon 15 observed in TF mutants. We created mec-8; mbl-1 double mutants expressing the sad-1 splicing reporter. These double mutants result in complete loss of sad-1 exon inclusion in the ALM neuron, recapitulating the splicing phenotype of the single TF mutants (Figure 3G). These results led us to hypothesize that the TFs identified in our screen exert their effects on sad-1 splicing by controlling expression of both mec-8 and mbl-1.\n\n### TFs affecting sad-1 splicing are required for RBP expression in the ALM neuron\n\nTo examine whether the neuronal TFs alter expression of mec-8 and mbl-1 RBPs in the ALM neuron, we created reporter lines for each RBP. To this end, each RBP was C-terminally tagged in a fosmid containing large regions of surrounding genomic context (Poser et al., 2008; Spilker et al., 2012) (Figure 4A\u2013E). Compared to traditional transgenic reporters, fosmids are more likely to contain all regulatory information needed to drive normal expression of the gene in question. This is demonstrated in the case of the mec-8 RBP. The classical mec-8::GFP promoter fusion drives expression in a number of cells, but not in the ALM neuron (Figure 4\u2014figure supplement 1) (Spike et al., 2002). On the other hand, we detected expression of the mec-8 fosmid reporter in many of the same cells, both neuronal and non-neuronal, plus strong expression in the ALM neuron (Figure 4A\u2013B). A similar fosmid reporter for mbl-1 likewise exhibits expression in the ALM neuron, as well as many other neurons in the nervous system (Figure 4D, Figure 4\u2014figure supplement 1). This is in line with previous reports on mbl-1 expression (Spilker et al., 2012).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013B) A mec-8 translational GFP fosmid reporter reveals strong expression in ALM neuron (strong expression in 28/31\u00a0=\u00a090% of animals inspected). (C) In a mec-3 TF mutant, mec-8 expression is absent specifically in ALM (no detectable expression in 43/50\u00a0=\u00a086%, dim expression in 7/50\u00a0=\u00a014% of animals inspected). (D) mbl-1 translational RFP fosmid reporter is expressed in ALM neuron (strong expression in 19/20\u00a0=\u00a095% of animals inspected). (E) In a mec-3 mutant, mbl-1 expression is absent specifically in ALM (no detectable expression in 19/21\u00a0=\u00a090%, dim expression in 2/21\u00a0=\u00a010% of animals inspected). (F\u2013G) Aberrant splicing of sad-1 in alr-1 TF mutants is partially rescued by over-expression of either mec-8 (6/6 animals examined) or mbl-1 (6/7 animals examined) RBPs (H\u2013I). Scale bar represents 10 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Promoter-GFP fusion for mec-8 exhibits GFP expression in various cells but not in ALM touch neurons.\u00a0Right panel represents high magnification of ALM region (dotted square in left panel). (B) Micrograph of mbl-1::RFP fosmid as in Figure 4D, demonstrating expression in numerous head neurons, motor neurons, and tail neurons.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** ALR-1 ChIP peaks from modENCODE data suggest that ALR-1 may bind directly to the promoters of mec-8 (upper panel) and mbl-1 (lower panel), although these peaks do not immediately contain consensus binding motifs for a mouse homologue of alr-1 Arx (Berger et al., 2008).\u00a0Red bars capping ChIP peaks indicate values greater than the mean\u00a0+5X the standard deviation.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) alr-1; mbl-1 double heterozygotes. (B) mec-3; mec-8 double heterozygotes. ALM splicing phenotype fully penetrant (n\u00a0=\u00a010 animals).\n\nWe tested expression of our reporters in the context of a mec-3 mutant to determine whether expression of mec-8 and mbl-1 in ALM neurons depends on the TF cascade uncovered in our screen. The mec-3 TF is expressed only in touch neurons, and therefore we would expect mec-3 mutants to affect RBP expression only in the touch neurons. Indeed, in mec-3 mutants, expression of both mec-8 and mbl-1 RBPs are abolished in the ALM neuron, while expression in the surrounding neurons and tissues remains unchanged (Figure 4B\u2013E). Together these results indicate that the expression of mec-8 and mbl-1 RBPs are under the control of neuron subtype-specific TFs.\n\nTo examine whether mec-8 and mbl-1 RBPs might be under direct transcriptional control by one or more of the TFs, we used existing ChIP data for ALR-1 (Niu et al., 2011), in vitro derived consensus binding motifs for UNC-86 (Weirauch et al., 2014), and a previously-defined UNC-86/MEC-3 heterodimer binding motif (R\u00f6hrig et al., 2000; Xue et al., 1993). We did not find conserved UNC-86 binding motifs or an UNC-86/MEC-3 heterodimer binding motif in the promoters for mec-8 or mbl-1, but did find ALR-1 ChIP peaks in both promoters (Figure 4\u2014figure supplement 2). This data suggests that alr-1 may directly control transcription of mec-8 and mbl-1 RBPs.\n\n### TFs affect sad-1 splicing by controlling RBP expression in the ALM neuron\n\nThe observations that (1) mec-8; mbl-1 RBP double mutants recapitulate the phenotype of the TF mutants, and (2) the TFs are necessary for expression of both RBPs in the ALM neuron, together suggest that the splicing defects in the TF mutants are mediated by effects on expression of the two RBPs. Further support for this hypothesis arose indirectly in the course of crossing TF and RBP mutants together. We found that while TF or RBP mutant heterozygotes exhibit normal sad-1 splicing in the ALM neuron, double heterozygotes (for example alr-1/+; mbl-1/+, or mec-3/+; mec-8/+) exhibit partial exon skipping in ALM, similar to the RBP single mutants (Figure 4\u2014figure supplement 3). Such \u2018non-allelic non-complementation\u2019 is often interpreted to mean that the two genes function in the same complex, or, more likely in this case, function in the same pathway (Yook et al., 2001). This indirect evidence further suggests that the TFs and RBPs affect sad-1 splicing as part of the same molecular pathway.\n\nIf sad-1 splicing is controlled in a linear pathway as suggested by the above series of experiments, with upstream TFs affecting RBP expression in the ALM neuron, then over-expressing an RBP in the context of a TF mutant should partially restore splicing in ALM. To test this hypothesis we created a strain over-expressing a mec-8 transgene specifically in the touch neurons (pmec-3::mec-8). When introduced into an alr-1 mutant, this transgene partially rescues the splicing of sad-1 in the ALM neuron (Figure 4F\u2013H). Likewise, over-expression of mbl-1 in an alr-1 mutant partially rescues splicing in the ALM neuron (Figure 4I). These results further support a linear gene regulatory pathway in which neuronal fate-determining TFs control neuron-specific expression of RBPs, which then control alternative splicing of sad-1 (Figure 4J).\n\n### RBPs directly mediate sad-1 exon inclusion through interactions with surrounding introns\n\nTo test whether mec-8 and mbl-1 directly affect splicing by binding to the sad-1 pre-mRNA, we created two-color splicing reporters in which the putative mec-8 or mbl-1 cis-elements are mutated (Figure 3A and Figure 5). If the RBPs act directly by binding the cis-element, then mutation of the cis-element should affect the splicing pattern in a manner resembling the wild-type splicing reporter in the context of the RBP deletion mutant. If the RBPs act indirectly, mutating the cis-element should have no effect on the splicing pattern.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) Mutation of mbl-1 consensus sequence in sad-1 splicing reporter results in aberrant splicing in ALM neurons that phenocopies an mbl-1 mutant. (C\u2013E) Mutation of either mec-8 binding motif, or both simultaneously, likewise results in aberrant sad-1 splicing in ALM neurons. ALM splicing phenotypes fully penetrant (n\u00a0=\u00a025 animals) Scale bar represents 10 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) \u0394mec-8[1] site and (B) \u0394mec-8[2] site not rescued by pmec-3::mec-8 over-expression. (C) \u0394mbl-1 site not rescued by pmec-3::mbl-1.\n\nMutation of the mbl-1 cis-element resulted in ALM neurons with altered sad-1 splicing in which the exon is partially skipped and partially included (Figure 5A\u2013B). This recapitulates the phenotype of mbl-1 null mutations (Figure 3F), suggesting that mbl-1 exerts its effects on splicing directly through binding a conserved cis-element in the upstream intron.\n\nWe identified two consensus mec-8 binding motifs in conserved regions in the intron downstream of the cassette exon. We therefore created splicing reporters mutant for both cis-elements as well as for each element individually. The splicing reporter mutant for both elements recapitulates the splicing phenotype of mec-8 null mutants (Figure 5E). Likewise, mutating either mec-8 binding site in isolation recapitulates a mec-8 null mutation (Figure 3E and Figure 5C\u2013D), suggesting that mec-8 binding to both cis-elements is required for appropriate sad-1 splicing.\n\nWe tested whether mutation of a putative cis-element could be rescued by over-expression of its cognate RBP, and found that cis-element mutants were not rescued by RBP over-expression (Figure 5\u2014figure supplement 1), providing further evidence that the RBPs act directly on the sad-1 pre-mRNA. Together these results indicate that mec-8 and mbl-1 RBPs combinatorially ensure sad-1 exon inclusion in ALM neurons through direct interactions with the neighboring introns.\n\n### sad-1 splicing in other neuron types is controlled through both distinct and overlapping mechanisms\n\nHaving identified regulatory mechanisms controlling sad-1 splicing in the ALM neuron, we next wondered whether similar principles apply in other neuron types. Most neurons besides the ALM and BDU neurons express both skipped and included sad-1 isoforms. This could represent the neuronal \u2018ground state\u2019 of splicing in the absence of cell-specific splicing regulators. On the other hand, our observations that loss of both mec-8 and mbl-1 in the ALM neuron results in full exon skipping suggest that the ground state may be complete exon skipping. This hypothesis predicts that other neurons in which sad-1 is partially included express one or more RBPs mediating exon inclusion.\n\nIn the course of examining sad-1 splicing in ALM neurons, we noticed that mbl-1 mutants affect sad-1 splicing not only in ALM, but also in the excitatory cholinergic motor neurons of the ventral nerve cord (Figure 6A\u2013D). Whereas mbl-1 mutants cause a change in sad-1 splicing from full inclusion to partial inclusion in ALM neurons, in excitatory motor neurons mbl-1 mutants shift from partial inclusion to no inclusion (Figure 6C\u2013D). On the other hand, the inhibitory motor neurons remain unaffected in mbl-1 mutants, expressing both the included and skipped isoforms (Figure 6D, arrowheads). This is consistent with our mbl-1 gene expression reporter, which reveals expression of mbl-1 in the excitatory motor neurons, but not in the inhibitory motor neurons (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013C) In wild-type worms, sad-1 is partially included in both excitatory and inhibitory motor neurons. (D) In mbl-1 mutants, exon inclusion is lost in excitatory motor neurons, but remains in inhibitory motor neurons (arrowheads). (E) msi-1 mutants lose exon inclusion in inhibitory motor neurons (arrowheads) but not in excitatory motor neurons. (F) mbl-1; msi-1 double mutants lose exon inclusion in all motor neurons in the ventral nerve cord. Splicing phenotypes in ventral nerve cord invariant (n\u00a0=\u00a015 animals) (G) Conservation scores (determined as in Figure 3A) in the introns surrounding sad-1 exon 15. Number one indicates consensus binding motifs for msi-1. (H) cis-elements matching consensus binding motifs for msi-1. Asterisk indicates anterior-posterior position of ALM neuron as anatomical reference. Splicing phenotypes fully penetrant (n\u00a0=\u00a050 animals). Scale bar represents 10 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) High-magnification micrograph of portion of the ventral nerve cord, (B) Micrograph of whole worm to demonstrate expression of MBL-1 in Cholinergic motor neurons throughout the extent of the nerve cord. (C) As in A, GABAergic neurons labeled with GFP, cholinergic neurons with BFP, demonstrating MBL-1 expression in cholinergic motor neurons but not in GABAergic motor neurons.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Ectopic expression of mec-8 in excitatory motor neurons (via unc-17 promoter) changes sad-1 splicing in excitatory motor neurons from partial exon inclusion to complete exon inclusion (n\u00a0=\u00a07/11 animals examined).\u00a0(B) Ectopic expression of mbl-1 in inhibitory motor neurons (via unc-25 promoter) has similar effects in inhibitory motor neurons (n\u00a0=\u00a09/13 animals examined). (C) unc-3 mutants exhibit partial (12/25 worms examined) or complete (13/25 worms) loss of sad-1 exon inclusion in excitatory motor neurons. (D) unc-3 mutants exhibit partially-penetrant loss of mbl-1 expression in excitatory motor neurons (25/65 animals exhibit complete loss, 28/65 partial (example displayed), 12/65 no detectable change).\n\nWe did not detect mec-8 expression in motor neurons of the ventral nerve cord, and mec-8 mutants had no effect on splicing of sad-1 in motor neurons (Figures 3E and 4B). It therefore seems that in neurons expressing mbl-1 such as excitatory motor neurons, the presence of mbl-1 mediates partial exon inclusion. In neurons expressing both mbl-1 and mec-8 such as ALM touch neurons, the two RBPs together mediate full inclusion.\n\nIn mbl-1 mutants, sad-1 exon inclusion is lost in excitatory neurons but remains in inhibitory motor neurons. We therefore wondered whether there was an additional RBP expressed in inhibitory motor neurons mediating sad-1 inclusion. mec-8 was ruled out because it is not expressed in inhibitory motor neurons and does not affect sad-1 splicing in the nerve cord. On the other hand, the RBP msi-1/Musashi has been reported to be expressed in inhibitory but not excitatory neurons of the nerve cord (Yoda et al., 2000), which is a mutually exclusive pattern with mbl-1. We therefore tested msi-1 as a candidate for the RBP mediating sad-1 exon inclusion in the inhibitory motor neurons. We generated a msi-1 deletion mutant, which shows loss of sad-1 inclusion specifically in the inhibitory motor neurons (Figure 6E). Furthermore, msi-1; mbl-1 double mutants result in complete loss of exon inclusion in the ventral nerve cord (Figure 6F). These results indicate that mbl-1 and msi-1 act in distinct cell types to achieve partial sad-1 exon inclusion throughout the ventral nerve cord.\n\nWe suspect that msi-1, like mbl-1 and mec-8, directly affects sad-1 splicing by binding in the intronic regions surrounding the alternative exon. in vitro experiments have identified a UAG motif (Figure 6H) (Ray et al., 2013), usually in bipartite form (e.g. UAGNNUAG) (Dominguez et al., 2018), as the consensus binding motif for msi-1. There is a conserved bipartite UAG motif in the intron downstream of the sad-1 cassette exon (Figure 6G\u2013H), and we hypothesize that msi-1 binds there to mediate exon inclusion in inhibitory motor neurons.\n\n### Phenotypic convergence of splicing regulation in diverse neuron types\n\nTogether the results from three different neuronal cell types (ALM neuron, excitatory motor neurons, and inhibitory motor neurons) constitute an example of \u2018phenotypic convergence,\u2019 in which phenotypic similarity between cells is generated by distinct molecular mechanisms. Substantial evidence of such phenotypic convergence exists for TFs controlling neuronal properties in worms and flies (Gendrel et al., 2016; Konstantinides et al., 2018; Pereira et al., 2015). Our results now extend this principle to RBPs and their control of alternative splicing, revealing phenotypic convergence in which similar splicing patterns (i.e. sad-1 exon inclusion) are generated in various neurons by diverse RBPs acting in specific neuronal subtypes (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46726/elife-46726-fig7-v1.jpg)\n\n**Figure 7.:** Different RBPs act in different neuron types to carry out the common function of mediating sad-1 exon inclusion.\n\nTo further examine this principle, we tested whether ectopic expression of an RBP in a neuron type in which it is not normally expressed would be sufficient to alter sad-1 splicing in that neuron. We expressed mec-8 in excitatory motor neurons (where normally only mbl-1 is expressed) and found that mec-8 expression is sufficient to alter sad-1 splicing patterns from partial inclusion to full inclusion specifically in the excitatory motor neurons (Figure 6\u2014figure supplement 2A). Similarly, mbl-1 expression in inhibitory motor neurons (where normally only msi-1 is expressed) results in full exon inclusion [Figure 6\u2014figure supplement 2A]).\n\nFinally, we asked whether phenotypic convergence occurs simultaneously at multiple levels (TFs and RBPs) with regard to sad-1 splicing. To do so we examined mutants for the TF unc-3, which controls the fate of excitatory motor neurons in the ventral nerve cord (Kratsios et al., 2012), analogous to ALM cell fate determination by unc-86/mec-3/alr-1. In unc-3 mutants, sad-1 exon inclusion is lost in excitatory motor neurons, similar to mbl-1 RBP mutants (Figure 6D, Figure 6\u2014figure supplement 2B). However, whereas unc-86/mec-3/alr-1 mutants exhibit completely-penetrant loss of sad-1 exon inclusion, unc-3 mutants exhibit partially-penetrant defects, ranging from moderate to complete loss of sad-1 inclusion in excitatory motor neurons. Similarly, loss of unc-3 results in partially-penetrant defects in mbl-1 expression (Figure 6\u2014figure supplement 2C).\n\nTogether these results demonstrate that phenotypic convergence among different neuron types occurs simultaneously at multiple layers of gene regulation: different TFs (e.g. mec-3 and unc-3) specify expression of different RBP complements (e.g. mbl-1 and mec-8) which have a common function of mediating sad-1 exon inclusion.\n\n## Discussion\n\n### Neuron-specific regulation of sad-1 splicing\n\nIn this study we find that sad-1 splicing undergoes precise regulation in numerous neuronal types. Although ALM and BDU neurons are sister cells, express many of the same genes, and share a number of cell-specific TFs, they have opposing patterns of sad-1 splicing. This highlights the fact that post-transcriptional control can further diversify attributes of single cells on top of the more well-known role of transcriptional control.\n\nOur results demonstrate that sad-1 splicing is regulated according to a combinatorial RBP code, with different splicing outcomes depending on whether a cell expresses zero, one, or two neuron-specific RBPs (Figure 7).This suggests that the \u2018default\u2019 outcome of sad-1 splicing is full skipping of the cassette exon, as observed in the BDU neuron which does not express any of the sad-1-regulating RBPs. Only cells with at least one RBP mediating exon inclusion express sad-1 included isoforms. Cells with multiple such RBPs (e.g. the ALM neuron) express only the included isoform.\n\nIn previous work we found that alternative splicing of the kinase unc-16/ JIP3 in motor neurons is likewise controlled by a pair of RNA binding proteins (Norris et al., 2014). However, unc-16 splicing and sad-1 splicing in motor neurons are regulated by distinct pairs of RBPs. Whereas sad-1 splicing in motor neurons is regulated by mbl-1 and msi-1 RBPs, unc-16 is combinatorially regulated by unc-75 and exc-7 in motor neurons (Norris et al., 2014). This suggests that even within a single neuron type, different splicing events are regulated by different complements of RBPs.\n\n### Coordinated splicing regulation across layers of gene expression\n\nThe importance of TFs controlling gene expression networks in single neurons is well established, and the importance of RBPs controlling post-transcriptional networks in single cells is gaining wider appreciation (Norris and Calarco, 2012; Norris et al., 2014; Song et al., 2017; Wamsley et al., 2018). How these two modes of regulation might interact remains understudied. Here we show that the two modes of regulation interact in a traditional linear type of pathway. A combination of cell-specific TFs establishes a transcriptional network in a single neuron type. This network includes a specific combination of neuronal RBPs, and the particular combination of RBPs in a given neuron then establish a unique post-transcriptional gene regulatory network in that neuron. Multiple layers of regulatory control can thus increase the diversity of single neuron transcriptomes and fine-tune the properties of individual neurons.\n\nIn the present study we have identified a linear pathway in which TFs influence the expression of RBPs, which then influence alternative splicing in single neurons. This adds to a substantial body of literature finding that RBPs can affect the function of specific TFs by modulating their alternative splicing (Calarco et al., 2009; Han et al., 2013; Linares et al., 2015; Raj et al., 2011). In the future it will be interesting to see whether additional regulatory logics exist between TFs and RBPs. Single-neuron TF combinations have been identified with a variety of feedback and feedforward mechanisms resulting in interesting regulatory properties (Mangan and Alon, 2003), and in principle TFs and RBPs could likewise interact in complex ways, leading to an even greater array of diversification strategies (Han et al., 2017). Together this study highlights the importance of considering neuron-specific \u2018combinatorial codes\u2019 not only from the perspective of TF combinations, but the specific complement of both TFs and RBPs shaping the transcriptome of a given neuron.\n\n### Phenotypic convergence at the level of single-neuron splicing\n\nA theme emerging from recent studies of single-neuron transcriptomes is \u2018phenotypic convergence,\u2019 in which multiple neurons share gene expression similarities, but the regulatory mechanisms by which they do so are distinct in each neuron. For example, in worms, cholinergic neuron cell fate and core cholinergic gene expression properties are controlled by different combinations of TFs in different cholinergic neuron sub-types (Pereira et al., 2015). This is also the case for other neuron types in C. elegans (Gendrel et al., 2016). More recently, phenotypic convergence has been reported for TFs in neurons of the Drosophila optic lobe (Konstantinides et al., 2018), indicating that phenotypic convergence mediated by TFs is a widespread phenomenon.\n\nWe now extend this principle of phenotypic convergence to the regulation of splicing by RBPs as well. sad-1 exon inclusion is mediated in various neuron types, with a unique complement of RBPs responsible for exon inclusion in each specific type that we have studied (ALM neuron, inhibitory motor neurons, and excitatory motor neurons; Figure 7). This likely represents phenotypic convergence on multiple levels, as the RBPs regulating splicing are different in each neuron, and the TFs regulating RBP expression are likewise different in each neuron. Each of these levels coordinately converges upon appropriate splicing of sad-1 in each neuron type. Additional neuron types with similar sad-1 splicing patterns (see Figure 1 and Figure 1\u2014figure supplement 1) may represent additional examples of phenotypic convergence whose underlying mechanisms remain unexplored.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain</td>\n      <td>unc-86(csb9)</td>\n      <td>This study</td>\n      <td>JAC401</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>mec-3(csb10)</td>\n      <td>This study</td>\n      <td>JAC402</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>alr-1(csb11)</td>\n      <td>This study</td>\n      <td>JAC403</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>unc-86(e1416)</td>\n      <td>CGC, University of Minnesota</td>\n      <td>CB1416</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>mec-3(e1338)</td>\n      <td>CGC, University of Minnesota</td>\n      <td>CB1338</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>alr-1(oy42)</td>\n      <td>CGC, University of Minnesota</td>\n      <td>PY1598</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>mec-8(e398)</td>\n      <td>CGC, University of Minnesota</td>\n      <td>CB398</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>mec-8(csb22)</td>\n      <td>This studdy</td>\n      <td>JAC626</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>mbl-1(csb31)</td>\n      <td>This study</td>\n      <td>JAC635</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>mbl-1(wy560)</td>\n      <td>CGC, University of Minnesota</td>\n      <td>JAC002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>msi-1(csb24)</td>\n      <td>This study</td>\n      <td>JAC628</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>mec-8(csb22); mbl-1(wy560)</td>\n      <td>This study</td>\n      <td>ADN342</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>mec-8(csb22); mbl-1(csb31)</td>\n      <td>This study</td>\n      <td>JAC670</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>msi-1(csb24); mbl-1(csb31)</td>\n      <td>This study</td>\n      <td>ADN257</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>pmec-3::mec-8</td>\n      <td>This study</td>\n      <td>ADN431</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>pmec-3::mbl-1</td>\n      <td>This study</td>\n      <td>ADN514</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>punc-25::mbl-1</td>\n      <td>This study</td>\n      <td>ADN515</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>punc-17::mec-8</td>\n      <td>This study</td>\n      <td>ADN505</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>\u0394mbl-1 cis-element sad-1 splicing reporter</td>\n      <td>This study</td>\n      <td>ADN319</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>\u0394mec-8[1] cis-element sad-1 splicing reporter</td>\n      <td>This study</td>\n      <td>ADN364</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>\u0394mec-8[2] cis-element sad-1 splicing reporter</td>\n      <td>This study</td>\n      <td>ADN377</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>\u0394mec-8[both] cis-element sad-1 splicing reporter</td>\n      <td>This study</td>\n      <td>ADN333</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>sad-1 splicing reporter</td>\n      <td>This study</td>\n      <td>JAC017</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>MEC-8::GFP reporter fosmid</td>\n      <td>This study</td>\n      <td>JAC447</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>MBL-1::RFP reporter fosmid</td>\n      <td>This study</td>\n      <td>JAC576</td>\n      <td>Norris Lab. SMU. Dallas, TX.</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>pmec-8::GFP</td>\n      <td>CGC, University of Minnesota</td>\n      <td>BC11068</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>unc-3(e151)</td>\n      <td>CGC, University of Minnesota</td>\n      <td>CB151</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Strain maintenance\n\nC. elegans were maintained under standard conditions (Brenner, 1974) at 20\u00b0C on nematode growth media (NGM) plates seeded with OP50 E. coli bacteria. New transgenic worms were generated by microinjection with 15 ng/\u03bcl transgene and 15 ng/\u03bcl co-injection marker (either rgef-1, unc-17, or unc-25 promoter driving BFP).\n\n### Mutant generation and genetic screening\n\nThe forward mutagenesis screen was performed on animals harboring the sad-1 exon 15 splicing reporter with EMS at 47 mM for 4 hr. F1s were picked onto new plates, 10 F1s per plate. After 3\u20134 days of growth, F2s were screened by eye on the Zeiss Axiozoom.V16 for touch cells appearing in the GFP channel (representing aberrant exon skipping) and were then verified for a concomitant loss of RFP (representing loss of exon inclusion). Such worms were picked individually onto a new plate to verify the phenotype in the F3 generation and to establish a clonal population. After outcrossing, strains were subjected to whole-genome resequencing (Illumina, 1 \u00d7 75 bp) and potential causative mutations were identified using the CloudMAP workflow on the Galaxy web platform (Minevich et al., 2012). A total of approximately 6000 haploid genomes were screened.\n\nTargeted mutant strains were generated using CRISPR/Cas9 as previously described (Calarco and Norris, 2018; Norris et al., 2015), such that the gene of interest is deleted and is replaced with a heterologous GFP reporter under the control of a pharyngeal promoter (pmyo-2) which does not interfere with the visualization of the sad-1 splicing reporter in the ALM, BDU or ventral nerve cord neurons. Seamless gene replacement was verified by PCR amplification and Sanger sequencing of both junction boundaries.\n\n### Microscopy\n\nImages were obtained with a Zeiss Axio Imager.Z1 and processed in ImageJ.\n\n### Generation of splicing reporters\n\nsad-1 minigenes were created using the following primers: Forward 5\u2019 GATAAAACTGAAACAACTTCTGC and Reverse 5\u2019 GGGGTTGGCGATTTGTATGAGaTAGC. Restriction sites were appended to both the forward primer (XhoI) and reverse (NotI) primers to facilitate cloning into a Gateway-compatible vector as previously described (Norris et al., 2014). The reporter was then cloned downstream of a pan-neuronal rgef-1 promoter, as endogenous sad-1 has been detected broadly throughout the nervous system (Crump et al., 2001). Mutant versions of the splicing reporter were synthesized de novo then cut with XhoI and NotI and cloned as above.\n\nSome strains were provided by the Caenorhabditis Genome Center, which is funded by the NIH Office of Research Infrastructure Programs (P40 OD010440). Other strains were provided by the National BioResource Project (Tokyo).\n",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "63ef16fb-7a8f-4e1f-b891-6efd188fc638",
+      "submission_id": "59241570-6292-49e4-81e5-5941c4a94570",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University United States\n\nReviewers:\n- Hidehito Kuroyanagi, Tokyo Medical and Dental University Japan\n\n## Review text\n\nDOI: [10.7554/eLife.46726.022](https://doi.org/10.7554/eLife.46726.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Splicing in a single neuron is coordinately controlled by RNA binding proteins and transcription factors\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and James Manley as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Hidehito Kuroyanagi (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this paper, the authors use an in vivo fluorescent splicing reporter to study cell-specific post-translational regulation. Making use of the genetic amenability of C. elegans, the authors employ forward genetic screens and candidate approaches to identify the genes required for cell-specific splicing events. Through the characterization of the complex splicing patterns of the conserved neuronal kinase sad-1, the authors elegantly reveal that neuronal identity regulator transcription factors and RNA binding proteins are required for sad-1 exon inclusion. Neuron-type specific expression of RBPs is controlled by these transcription factors, and RBPs directly interact with sad-1 introns. Moreover, the authors demonstrate that sad-1 splicing in different neuron-types is controlled by different RBPs, revealing phenotypic convergence at the level of single-neuron splicing.\n\nThe authors employed CRISPR-Cas9 mediated genome editing and a smart splicing reporter to support their conclusions. The overall conclusions on transcriptional control of RBPs and phenotypic convergence appear interesting. However, there is some lack in the depth of analysis, particularly as it pertains to the analysis of the transcription factors. Moreover, there is striking, in fact almost baffling, lack of detail in data/reagent presentation throughout the manuscript. A substantial revision of the paper will allow the authors to better support what appears to be a very interesting finding.\n\nEssential revisions:\n\n1) There is a concern that the evidence that the three RBPs \"directly\" regulate pre-mRNA splicing of the sad-1 gene via their respective cis-elements is weak. The conclusion is based on high-throughput in vitro screening for consensus binding sequences of the RBPs (Ray et al., 2013), effects of the RBP mutations on the sad-1 reporter expression (Figure 3 and Figure 6) and effects of mutations in the putative cis-elements on the reporter expression (Figure 5). Direct and specific binding of recombinant RBPs to the respective RNA sequences in vitro and/or defective responses of the mutant reporters to RBP overexpression need to be provided support the direct regulation; otherwise the possibility that MBL-1 regulating sad-1 splicing through post-transcriptional regulation of MEC-8 and/or other RBP(s), and vice versa, cannot be excluded. This point is important especially for mbl-1 and msi-1 because the manuscript will be the first experimental demonstration that these genes regulate pre-mRNA splicing in C. elegans. It is also important to keep in mind that the consensus sequences experimentally identified in Ray et al., 2013 and logos shown in Figure 3, Figure 5 and Figure 6 of the manuscript are for a human orthologue of MBL-1, human and Drosophila orthologues of MSI-1 and not those in C. elegans (this should be more explicitly stated in the figures).\n\n2) The common standard for validating that a mutant retrieved from a screen really is the causative mutant is to either rescue or use multiple alleles. The authors do neither. They need to validate the identity of their screen mutants by examining the expression of the sad-1 splicing reporter on a canonical allele of at least mec-3.\n\n3) It would be appreciated if the authors could extend their concept of TFs controlling splicing patterns by RBPs through testing whether mbl-1 expression in excitatory neurons \u2013 and hence sad-1 splicing \u2013 depends on unc-3, the excitatory MN \"alter ego\" of unc-86/mec-3 in the touch neurons. This experiment is very easy to perform and would broaden the concept of cell type-specific TFs controlling cell-type specific RBPs to other neuron types.\n\n4) Figure 7. The authors discuss that 100% exon inclusion might require multiple RBPs. Alternatively, 100% exon inclusion might require RBP binding on both sides of the exon in question (e.g. in ALM, mbl-1 seems to bind upstream of sad-1 exon 15, while mec-8 seems to bind downstream). This hypothesis can be easily tested by mec-8 overexpression in cholinergic MN (mirroring ALM neurons), or by mbl-1 overexpression in GABAergic MN (preferable since it is a new untested scenario).\n\n5) Generally, there is a baffling, if not troubling lack of any detail in describing and properly quantifying data and of description of reagents. This pervades the entire manuscript. Below a number of examples (in no order of importance):\n\na) In panels Figure 2C-F, Figure 3D-G, Figure 4B-E, Figure 4F-I, Figure 5, Figure 6C-F, Figure 3\u2014figure supplement 2, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2, and Figure 4\u2014figure supplement 3 the authors do not provide any quantification to support their data (incl. the number of animals examined). It is unclear whether in all cases there is a fully penetrant phenotype. In cases of a fully penetrant phenotype (e.g. Figure 2C-F?), a simple explanation on the legend accompanied with the number of animals where the phenotype was observed will suffice. It is odd that the authors do not appear to be familiar with the standards in the field. In the case of partial exon skipping phenotypes, it is unclear to this reviewer whether all animals show always same levels of GFP and RFP expression in ALM (e.g. in the double heterozygotes). For variable phenotypes, a qualitative quantification (%dark/dim/bright red/green), or any other means of quantification deemed appropriate by the authors, is required.\n\nb) There's no description of the splicing reporter. Is the reporter driven by its own promoter or the endogenous promoter? They refer to a previous paper (Norris, 2014) which states vectors that drove expression of each reporter pan-neuronally, or with endogenous promoter sequences\n\nc) The authors generate a number of deletion mutants for different genes using CRISPR/Cas9 (mec-8, mbl-1, not specified for msi-1) however, they don't provide any description on the nature of the molecular lesion other than a brief reference to a previous paper. A schematic of the mutations should be provided in the respective main figures or in a supplementary figure, with a more detailed explanation on the legends or in the Materials and methods section.\n\nd) There is no list of the strains used on this study as a supplementary file. For example, which is the allele name of the new deletions?\n\ne) Authors need to describe how new transgenic strains were generated (DNA mix concentrations, simple or complex arrays, etc.).\n\nf) These newly generated deletion mutants via CRISPR/Cas9 seem to include a GFP reporter construct, subsection \u201cMutant generation and genetic screening\u201d: \"the gene of interest is deleted and is replaced with a heterologous GFP reporter construct\". However, authors use fosmid reporters to analyze mec-8 and mbl-1 expression (Figure 4). Do these new mbl-1 and mec-8 deletion alleles recapitulate mbl-1 and mec-8 expression through the GFP reporter? In that case, does this GFP expression interfere with the analysis of the sad-1 splicing reporter green fluorescence?\n\ng) Subsection \u201cRBPs directly mediate sad-1 exon inclusion through interactions with surrounding introns\u201d, \"Most neurons besides the ALM and BDU neurons express both skipped and included sad-1 isoforms\". Attending to the merge provided in Figure 1C, several neurons in the head and tail seem to exclude exon 15. It will be very informative if authors provide a more detailed expression data of their splicing reporter on Figure 1. For example, just a gross quantification of the% of neurons with included/excluded/both in the head, tail, major ganglia, etc., will greatly help the authors to better illustrate the splicing event under study.\n\nh) Figure 4A-E, mec-8 and mbl-1 expression. Was mec-8 fosmid reporter expression detected in other neurons? Also, authors mention that the mbl-1 fosmid reporter is expressed in \"most other neurons\" (subsection \u201cTFs affecting sad-1 splicing are required for RBP expression in the ALM neuron\u201d, Figure 4D). To support their point, authors could show whole worm images or high magnification images of specific regions (head, tail, etc.). This needs to be properly documented with an image.\n",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4572b705-44a6-4ff7-bc96-ffc2116b03ee",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C1",
+      "claim": "Single-cell transcriptomes are established by transcription factors (TFs), which determine a cell's gene-expression complement.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell transcriptomes are established by transcription factors (TFs), which determine a cell's gene-expression complement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the role of transcription factors in determining gene expression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "7eb5cc5b-1838-435a-9e91-6dc3b6a9d297",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C2",
+      "claim": "Post-transcriptional regulation of single-cell transcriptomes, and the RNA binding proteins (RBPs) responsible, are more technically challenging to determine.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-transcriptional regulation of single-cell transcriptomes, and the RNA binding proteins (RBPs) responsible, are more technically challenging to determine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical challenges in the field, based on established knowledge and inference from the state of research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "fc9e382b-f501-4358-86c9-0686551009d8",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C3",
+      "claim": "Combinatorial TF-RBP coordination of single-cell transcriptomes remains unexplored.",
+      "claim_type": "EXPLICIT",
+      "source": "combinatorial TF-RBP coordination of single-cell transcriptomes remains unexplored",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in current knowledge, based on inference from the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "6aef6b5a-ad2f-47f2-b895-611ad38386bb",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C4",
+      "claim": "The ALM mechanosensory neuron expresses only the exon-included isoform of sad-1.",
+      "claim_type": "EXPLICIT",
+      "source": "the ALM mechanosensory neuron expresses only the exon-included isoform",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C-E and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "96d9ba97-55a1-44e3-9983-004b11a2877c",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C5",
+      "claim": "The BDU neuron expresses only the exon-skipped isoform of sad-1.",
+      "claim_type": "EXPLICIT",
+      "source": "its developmental sister cell the BDU neuron expresses only the exon-skipped isoform",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C-E and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "83aba6c1-0497-4e20-9111-f9e05f6b3dc9",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C6",
+      "claim": "Most neurons express both isoforms of sad-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Most neurons express both isoforms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "d2a317ec-3ad1-40fc-a204-e6b15d7052f6",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C7",
+      "claim": "A cascade of three cell-specific TFs and two RBPs are combinatorially required for sad-1 exon inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "A cascade of three cell-specific TFs and two RBPs are combinatorially required for sad-1 exon inclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from genetic screens and mutant analysis described throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "ecb884b4-6145-4285-9a3b-e87493414057",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C8",
+      "claim": "TFs combinatorially ensure expression of RBPs, which interact with sad-1 pre-mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "TFs combinatorially ensure expression of RBPs, which interact with sad-1 pre-mRNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing TF control of RBP expression (Figure 4) and RBP binding to sad-1 (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "67267497-2fe6-41bd-a655-f9d8d1a6a308",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C9",
+      "claim": "Different RBP combinations generate similar splicing outcomes in different neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "different RBP combinations generate similar splicing outcomes in different neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing different RBPs mediating sad-1 exon inclusion in different neuron types (Figures 6-7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "908bcf16-7921-4f91-a1f8-9fb32271e081",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C10",
+      "claim": "The C. elegans sad-1 gene encodes two isoforms that differ in their ability to interact with the F-actin binding protein NAB-1/Neurabin.",
+      "claim_type": "EXPLICIT",
+      "source": "The C. elegans sad-1 gene encodes two isoforms that differ in their ability to interact with the F-actin binding protein NAB-1/Neurabin (Hung et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Hung et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "ed79a3f4-a667-4288-88b8-4f6025d15641",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C11",
+      "claim": "sad-1 isoforms have different roles in synapse formation and development.",
+      "claim_type": "EXPLICIT",
+      "source": "have different roles in synapse formation and development (Kim et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Kim et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "55698b37-b7c5-4f91-993d-94af9a6109bd",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C12",
+      "claim": "sad-1 is encoded by seventeen exons.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, sad-1 is encoded by seventeen exons",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the gene structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "16c560fc-033d-4d87-bbbf-662e65e33fb7",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C13",
+      "claim": "The fifteenth exon of sad-1 is an alternative cassette-type exon.",
+      "claim_type": "EXPLICIT",
+      "source": "the fifteenth exon is an alternative cassette-type exon",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the gene structure shown in Figure 1A and the splicing reporter design in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "6404ae9c-a1b4-489d-aac3-10082d741616",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C14",
+      "claim": "Alternative splicing of sad-1 exon 15 changes the coding sequence and length of the sad-1 C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternative splicing of this exon changes the coding sequence and length of the sad-1 C-terminus (Kim et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Kim et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "ddb18f01-e535-41ed-8e28-2928cddcace8",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C15",
+      "claim": "Mice and human genomes encode two separate genes homologous to sad-1 (SAD-A and SAD-B) that are nearly identical except for their C-terminal coding sequence and length.",
+      "claim_type": "EXPLICIT",
+      "source": "mice and human genomes, which encode two separate genes homologous to sad-1 (SAD-A and SAD-B) that are nearly identical except for their C-terminal coding sequence and length",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about mammalian SAD kinase genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "31326dcb-9660-4869-add0-01a0dc84a2a1",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C16",
+      "claim": "Many neurons express both the skipped and included isoforms of sad-1.",
+      "claim_type": "EXPLICIT",
+      "source": "many neurons express both the skipped and included isoforms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "57e04277-aea7-4f98-82b3-ec66e31d1c5a",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C17",
+      "claim": "Motor neurons in the ventral nerve cord express both isoforms of sad-1.",
+      "claim_type": "EXPLICIT",
+      "source": "motor neurons in the ventral nerve cord express both isoforms of sad-1",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "46eef265-4e45-46d0-9cb3-fa8852b982ed",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C18",
+      "claim": "The splicing pattern of sad-1 in a given neuron is reproducible and invariant from one animal to the next.",
+      "claim_type": "EXPLICIT",
+      "source": "the splicing pattern in a given neuron is reproducible and invariant from one animal to the next",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations from the experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "03c4c511-71a3-47fc-9717-7c7c95b12816",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C19",
+      "claim": "sad-1 splicing in various neurons is under strict regulatory control.",
+      "claim_type": "EXPLICIT",
+      "source": "sad-1 splicing in various neurons is under strict regulatory control",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reproducible and invariant splicing patterns observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "6be7cd69-df8b-4877-b5e0-89801fab4519",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C20",
+      "claim": "ALM and BDU neurons are developmentally related.",
+      "claim_type": "EXPLICIT",
+      "source": "ALM and BDU neurons, which are developmentally related",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the lineage diagram in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "55c73255-fece-4dac-b6f0-8aaeb2ccd280",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C21",
+      "claim": "ALM and BDU neurons share a number of anatomical and gene-expression features.",
+      "claim_type": "EXPLICIT",
+      "source": "share a number of anatomical and gene-expression features",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about these sister cells and inference from their developmental relationship.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "5ab28c93-84df-480e-8954-b15b4e642e4b",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C22",
+      "claim": "A forward genetic screen identified three distinct loci that transform the splicing pattern from the ALM neuron pattern (full exon inclusion) to resemble the pattern in their BDU sister cells (full exon skipping).",
+      "claim_type": "EXPLICIT",
+      "source": "This screen identified three distinct loci that transform the splicing pattern from the ALM neuron pattern (full exon inclusion) to resemble the pattern in their BDU sister cells (full exon skipping).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the forward genetic screen described in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "03de8a89-a53c-4f9e-a1dd-93941bf30023",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C23",
+      "claim": "Whole-genome resequencing of the mutant strains identified loss-of-function mutations in three conserved TFs: unc-86, mec-3, and alr-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-genome resequencing of the mutant strains identified loss-of-function mutations in three conserved TFs: unc-86, mec-3, and alr-1 (Figure 2B\u2013F, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from whole-genome resequencing and shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "2d3bc598-49cf-4c56-a04b-caf9e31ebd05",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C24",
+      "claim": "unc-86, mec-3, and alr-1 have previously been identified as key regulators of touch-neuron cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "All three genes have previously been identified as key regulators of touch-neuron cell fate (Gordon and Hobert, 2015; Topalidou et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by Gordon and Hobert, 2015 and Topalidou et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "5b188519-347e-47b6-8ebe-85fa774837a6",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C25",
+      "claim": "The three TFs function in a transcriptional cascade ensuring cell-specific expression of mec-3 in touch neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The three TFs function in a transcriptional cascade ensuring cell-specific expression of mec-3 in touch neurons",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by previous work and illustrated in Figure 2G.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "9e5e7f75-e986-4a2b-ae90-3a4864d6b075",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C26",
+      "claim": "mec-3 expression results in expression of a battery of touch-neuron specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "which then results in expression of a battery of touch-neuron specific genes",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by previous work and illustrated in Figure 2G.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "fb8bd932-20ed-4aa1-b506-ff985fbfe9eb",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C27",
+      "claim": "Loss of the TF mec-3 results in touch neurons (ALMs) adopting certain gene-expression characteristics of their sister cells (BDUs).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of the TF mec-3 results in touch neurons (ALMs) adopting certain gene-expression characteristics of their sister cells (BDUs) (Gordon and Hobert, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Gordon and Hobert, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "757d8b2d-574d-4e33-b358-c17700853468",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C28",
+      "claim": "Loss of mec-3 transforms sad-1 splicing from an ALM (exon 15 included) to a BDU (exon 15 skipped) pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "loss of mec-3 transforms sad-1 splicing from an ALM (exon 15 included) to a BDU (exon 15 skipped) pattern",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "d4e36546-ee3f-455e-a5ce-e4cad846daf3",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C29",
+      "claim": "The MEC-3 TF is expressed only in touch neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "the MEC-3 TF is expressed only in touch neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Topalidou et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "77b8bffe-be31-4371-96cf-6b37ec5fbe83",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C30",
+      "claim": "UNC-86 and ALR-1 are expressed in various neuron types.",
+      "claim_type": "EXPLICIT",
+      "source": "while UNC-86 and ALR-1 are expressed in various neuron types (Topalidou et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Topalidou et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "051249d6-57d3-4dd5-840b-df8d6735c2a1",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C31",
+      "claim": "unc-86 and alr-1 mutants affect sad-1 splicing only in the touch neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "we find that unc-86 and alr-1 mutants affect sad-1 splicing only in the touch neurons",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "76aaa481-64e8-438d-b44b-a294eb44e103",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C32",
+      "claim": "A major function of unc-86 and alr-1 in touch neurons is to combinatorially ensure appropriate expression of mec-3.",
+      "claim_type": "EXPLICIT",
+      "source": "a major function of unc-86 and alr-1 in touch neurons is to combinatorially ensure appropriate expression of mec-3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Topalidou et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "e3b7716e-2653-4e9f-b27a-9336d096acdc",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C33",
+      "claim": "All three TFs (unc-86, mec-3, and alr-1) are needed for proper differentiation of touch neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "all three TFs are needed for proper differentiation of touch neurons (Topalidou et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Topalidou et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "abd17465-557b-452a-beb4-aaddd0fd426a",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C34",
+      "claim": "The combinatorial activity of all three TFs (unc-86, mec-3, and alr-1) is required for proper sad-1 splicing in the ALM neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "the combinatorial activity of all three TFs is required for proper sad-1 splicing in the ALM neuron",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that mutations in any of the three TFs affect sad-1 splicing in ALM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "974407b4-2a30-4323-bbfc-3d8c68888783",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C35",
+      "claim": "Three candidate cis-elements were identified in the sequence surrounding the sad-1 alternative exon: one corresponding to the mbl-1/Mbnl1 consensus binding motif, and two corresponding to the mec-8/RBMS motif.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified three candidate elements: one corresponding to the mbl-1/Mbnl1 consensus binding motif, and two corresponding to the mec-8/RBMS motif",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "58393b25-719c-489d-94fb-10189fe4a4ae",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C36",
+      "claim": "mec-8 and mbl-1 mutants both cause a partial loss of sad-1 exon inclusion in the ALM neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mec-8 and mbl-1 mutants result in aberrant sad-1 splicing in the ALM neuron, displaying partial skipping and partial inclusion",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "2ab2d9d3-996c-48f6-b6a3-78c3ad8d2fd0",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C37",
+      "claim": "mec-8 mutants affect sad-1 splicing specifically in the ALM neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "mec-8 mutants affect sad-1 splicing specifically in the ALM neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "90bd1a96-d7a5-4041-a902-b4044d9ab13f",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C38",
+      "claim": "mbl-1 mutants affect sad-1 splicing in ALM neurons as well as specific neurons in the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "mbl-1 mutants affect sad-1 splicing in ALM neurons as well as specific neurons in the ventral nerve cord (see Figure 6, below)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "e541148f-5330-4e7e-af9c-d157f413859f",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C39",
+      "claim": "mec-8; mbl-1 double mutants result in complete loss of sad-1 exon inclusion in the ALM neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "These double mutants result in complete loss of sad-1 exon inclusion in the ALM neuron",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "bfef07c6-bc9c-4083-af51-16d9881edf11",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C40",
+      "claim": "mec-8; mbl-1 double mutants recapitulate the splicing phenotype of the single TF mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "recapitulating the splicing phenotype of the single TF mutants",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparing the data in Figure 3G with Figure 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "1b7526a0-6770-42ac-90f8-6d149dfca840",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C41",
+      "claim": "A mec-8 fosmid reporter exhibits expression in the ALM neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "we detected expression of the mec-8 fosmid reporter in many of the same cells, both neuronal and non-neuronal, plus strong expression in the ALM neuron",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "ce5a13a9-38f5-4383-a9b0-9beecae356a2",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C42",
+      "claim": "A classical mec-8::GFP promoter fusion drives expression in a number of cells, but not in the ALM neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "The classical mec-8::GFP promoter fusion drives expression in a number of cells, but not in the ALM neuron (Figure 4\u2014figure supplement 1) (Spike et al., 2002)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1 and a citation to Spike et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "35dc9325-883f-4c20-ac53-3982842d09f9",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C43",
+      "claim": "A mbl-1 fosmid reporter exhibits expression in the ALM neuron, as well as many other neurons in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar fosmid reporter for mbl-1 likewise exhibits expression in the ALM neuron, as well as many other neurons in the nervous system",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "c374e0c8-478e-453b-b747-758097a13134",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C44",
+      "claim": "Previous reports indicate mbl-1 expression in multiple neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with previous reports on mbl-1 expression (Spilker et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Spilker et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "809760ac-fbdb-4ab2-86ff-42a0ece501f0",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C45",
+      "claim": "In mec-3 mutants, expression of both mec-8 and mbl-1 RBPs are abolished in the ALM neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "in mec-3 mutants, expression of both mec-8 and mbl-1 RBPs are abolished in the ALM neuron",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "6b4515da-a225-4525-9ba2-e46814041ac1",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C46",
+      "claim": "In mec-3 mutants, expression of mec-8 and mbl-1 in surrounding neurons and tissues remains unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "while expression in the surrounding neurons and tissues remains unchanged",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "410e59eb-7926-4dcf-a368-de73769fb887",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C47",
+      "claim": "The expression of mec-8 and mbl-1 RBPs are under the control of neuron subtype-specific TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "the expression of mec-8 and mbl-1 RBPs are under the control of neuron subtype-specific TFs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing TF-dependent expression of RBPs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "025c714d-1bb5-4d4c-8181-0831d0e221c7",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C48",
+      "claim": "ALR-1 ChIP peaks are found in both mec-8 and mbl-1 promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find conserved UNC-86 binding motifs or an UNC-86/MEC-3 heterodimer binding motif in the promoters for mec-8 or mbl-1, but did find ALR-1 ChIP peaks in both promoters (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of existing ChIP data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "cc344ffe-da88-4457-8af8-9e572a1a4ef4",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C49",
+      "claim": "alr-1 may directly control transcription of mec-8 and mbl-1 RBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "This data suggests that alr-1 may directly control transcription of mec-8 and mbl-1 RBPs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative, based on the presence of ALR-1 ChIP peaks in the promoters.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "c34382a6-2771-4848-aeea-f78a33d9d3bf",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C50",
+      "claim": "Double heterozygotes for TF and RBP mutants (for example alr-1/+; mbl-1/+, or mec-3/+; mec-8/+) exhibit partial exon skipping in ALM.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while TF or RBP mutant heterozygotes exhibit normal sad-1 splicing in the ALM neuron, double heterozygotes (for example alr-1/+; mbl-1/+, or mec-3/+; mec-8/+) exhibit partial exon skipping in ALM",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "79bbeceb-2674-4b5e-ad8d-78536f07c594",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C51",
+      "claim": "Non-allelic non-complementation is often interpreted to mean that the two genes function in the same complex, or function in the same pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Such 'non-allelic non-complementation' is often interpreted to mean that the two genes function in the same complex, or, more likely in this case, function in the same pathway (Yook et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge and a citation to Yook et al., 2001.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "8988e708-b297-429b-85b0-871fcc5ca297",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C52",
+      "claim": "Over-expressing mec-8 specifically in the touch neurons partially rescues the splicing of sad-1 in the ALM neuron in an alr-1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "When introduced into an alr-1 mutant, this transgene partially rescues the splicing of sad-1 in the ALM neuron",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "a9ad2a32-d445-4dbd-b750-fad0f791ab7e",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C53",
+      "claim": "Over-expression of mbl-1 in an alr-1 mutant partially rescues splicing in the ALM neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "over-expression of mbl-1 in an alr-1 mutant partially rescues splicing in the ALM neuron",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "4d5f202a-2f6a-4787-9f4d-9fcdb92b4655",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C54",
+      "claim": "Neuronal fate-determining TFs control neuron-specific expression of RBPs, which then control alternative splicing of sad-1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further support a linear gene regulatory pathway in which neuronal fate-determining TFs control neuron-specific expression of RBPs, which then control alternative splicing of sad-1",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the combined experimental data shown in Figures 2-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "96f65b67-9b6f-4af0-9a65-e2508f678a7d",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C55",
+      "claim": "Mutation of the mbl-1 cis-element resulted in ALM neurons with altered sad-1 splicing in which the exon is partially skipped and partially included.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the mbl-1 cis-element resulted in ALM neurons with altered sad-1 splicing in which the exon is partially skipped and partially included",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "3a2bb2ed-0ba2-4786-8f3d-799994a96686",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C56",
+      "claim": "Mutation of the mbl-1 cis-element recapitulates the phenotype of mbl-1 null mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "This recapitulates the phenotype of mbl-1 null mutations (Figure 3F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparing the data in Figure 5A-B with Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "ab279423-14c9-43d2-8ad3-42a57ef018d9",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C57",
+      "claim": "mbl-1 exerts its effects on splicing directly through binding a conserved cis-element in the upstream intron.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that mbl-1 exerts its effects on splicing directly through binding a conserved cis-element in the upstream intron",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cis-element mutation data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "bac1ce53-0156-4f9e-bda1-deaaed653711",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C58",
+      "claim": "The splicing reporter mutant for both mec-8 cis-elements recapitulates the splicing phenotype of mec-8 null mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The splicing reporter mutant for both elements recapitulates the splicing phenotype of mec-8 null mutants",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "f4b5d742-9c26-4e72-9404-b1d6d1125c75",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C59",
+      "claim": "Mutating either mec-8 binding site in isolation recapitulates a mec-8 null mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, mutating either mec-8 binding site in isolation recapitulates a mec-8 null mutation (Figure 3E and Figure 5C\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "0d32f3b1-5769-474a-92f4-59a7c637ba7c",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C60",
+      "claim": "mec-8 binding to both cis-elements is required for appropriate sad-1 splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that mec-8 binding to both cis-elements is required for appropriate sad-1 splicing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cis-element mutation data shown in Figure 5C-E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "9658dedd-599c-469d-b8af-8c4cd39e39c4",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C61",
+      "claim": "Cis-element mutants were not rescued by RBP over-expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether mutation of a putative cis-element could be rescued by over-expression of its cognate RBP, and found that cis-element mutants were not rescued by RBP over-expression (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "a14e5d3f-2c6b-4150-a0d5-f4afb3d89f08",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C62",
+      "claim": "mec-8 and mbl-1 RBPs combinatorially ensure sad-1 exon inclusion in ALM neurons through direct interactions with the neighboring introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results indicate that mec-8 and mbl-1 RBPs combinatorially ensure sad-1 exon inclusion in ALM neurons through direct interactions with the neighboring introns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "85cfad05-e81d-4e24-9286-dce550143aaf",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C63",
+      "claim": "mbl-1 mutants affect sad-1 splicing in the excitatory cholinergic motor neurons of the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "we noticed that mbl-1 mutants affect sad-1 splicing not only in ALM, but also in the excitatory cholinergic motor neurons of the ventral nerve cord",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "89be3e0e-03c4-433d-b54c-f0bdaa9bbd7c",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C64",
+      "claim": "In excitatory motor neurons, mbl-1 mutants shift sad-1 splicing from partial inclusion to no inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "in excitatory motor neurons mbl-1 mutants shift from partial inclusion to no inclusion",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "b4132ab3-af7b-4629-8b8d-f0483bf62db5",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C65",
+      "claim": "The inhibitory motor neurons remain unaffected in mbl-1 mutants, expressing both the included and skipped isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "the inhibitory motor neurons remain unaffected in mbl-1 mutants, expressing both the included and skipped isoforms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "aee22abc-6ac1-47b5-b4d8-57b35394561c",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C66",
+      "claim": "mbl-1 is expressed in the excitatory motor neurons, but not in the inhibitory motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our mbl-1 gene expression reporter, which reveals expression of mbl-1 in the excitatory motor neurons, but not in the inhibitory motor neurons (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "4a6f7b56-5ea5-4f89-8fd0-85d7ed15fe56",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C67",
+      "claim": "mec-8 is not expressed in motor neurons of the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect mec-8 expression in motor neurons of the ventral nerve cord",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations from the mec-8 reporter data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "918a5790-3ee1-4fdf-aaf1-f47fc893c1f8",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C68",
+      "claim": "mec-8 mutants had no effect on splicing of sad-1 in motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "mec-8 mutants had no effect on splicing of sad-1 in motor neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations from the experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "487941d9-a2ba-46d8-8705-3908f9a11c08",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C69",
+      "claim": "In neurons expressing mbl-1 such as excitatory motor neurons, the presence of mbl-1 mediates partial exon inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore seems that in neurons expressing mbl-1 such as excitatory motor neurons, the presence of mbl-1 mediates partial exon inclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data on mbl-1 expression and splicing patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "e07b260d-290c-4e17-89bb-f770e8ad3181",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C70",
+      "claim": "In neurons expressing both mbl-1 and mec-8 such as ALM touch neurons, the two RBPs together mediate full inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In neurons expressing both mbl-1 and mec-8 such as ALM touch neurons, the two RBPs together mediate full inclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data on RBP expression and splicing patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "a900026a-2dc8-409b-99b9-4d46da6881ca",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C71",
+      "claim": "The RBP msi-1/Musashi has been reported to be expressed in inhibitory but not excitatory neurons of the nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "the RBP msi-1/Musashi has been reported to be expressed in inhibitory but not excitatory neurons of the nerve cord (Yoda et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Yoda et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "3d844aed-73ef-4ffb-918d-57b22f8af2d3",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C72",
+      "claim": "msi-1 mutants show loss of sad-1 inclusion specifically in the inhibitory motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a msi-1 deletion mutant, which shows loss of sad-1 inclusion specifically in the inhibitory motor neurons",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "df0513ce-714f-43bd-b503-e31ce12717b6",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C73",
+      "claim": "msi-1; mbl-1 double mutants result in complete loss of exon inclusion in the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "msi-1; mbl-1 double mutants result in complete loss of exon inclusion in the ventral nerve cord",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "5a98a793-1133-46d5-9692-dadb3e54b344",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C74",
+      "claim": "mbl-1 and msi-1 act in distinct cell types to achieve partial sad-1 exon inclusion throughout the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that mbl-1 and msi-1 act in distinct cell types to achieve partial sad-1 exon inclusion throughout the ventral nerve cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "de5b4f14-f2bc-458a-b6b8-d1a8fcd8e927",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C75",
+      "claim": "msi-1 likely directly affects sad-1 splicing by binding in the intronic regions surrounding the alternative exon.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that msi-1, like mbl-1 and mec-8, directly affects sad-1 splicing by binding in the intronic regions surrounding the alternative exon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative, based on the presence of a conserved msi-1 binding motif in the intron.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "8b013f88-0160-4687-a597-b1c0f316ffb0",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C76",
+      "claim": "in vitro experiments have identified a UAG motif, usually in bipartite form (e.g. UAGNNUAG), as the consensus binding motif for msi-1.",
+      "claim_type": "EXPLICIT",
+      "source": "in vitro experiments have identified a UAG motif (Figure 6H) (Ray et al., 2013), usually in bipartite form (e.g. UAGNNUAG) (Dominguez et al., 2018), as the consensus binding motif for msi-1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by Ray et al., 2013 and Dominguez et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "1c4eed95-a71b-49c9-9b97-7be54d20ff14",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C77",
+      "claim": "There is a conserved bipartite UAG motif in the intron downstream of the sad-1 cassette exon.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a conserved bipartite UAG motif in the intron downstream of the sad-1 cassette exon (Figure 6G\u2013H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 6G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "2542f3b2-3d68-4d48-adf7-08d1ee3468a5",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C78",
+      "claim": "Substantial evidence of phenotypic convergence exists for TFs controlling neuronal properties in worms and flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantial evidence of such phenotypic convergence exists for TFs controlling neuronal properties in worms and flies (Gendrel et al., 2016; Konstantinides et al., 2018; Pereira et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by Gendrel et al., 2016, Konstantinides et al., 2018, and Pereira et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "45d880fd-dfd5-4ce4-b31a-9485f8b0e008",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C79",
+      "claim": "Similar splicing patterns (i.e. sad-1 exon inclusion) are generated in various neurons by diverse RBPs acting in specific neuronal subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "revealing phenotypic convergence in which similar splicing patterns (i.e. sad-1 exon inclusion) are generated in various neurons by diverse RBPs acting in specific neuronal subtypes",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 6-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "10219d34-aa98-4a19-962f-2b83d5fcad16",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C80",
+      "claim": "Ectopic expression of mec-8 in excitatory motor neurons is sufficient to alter sad-1 splicing patterns from partial inclusion to full inclusion specifically in the excitatory motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed mec-8 in excitatory motor neurons (where normally only mbl-1 is expressed) and found that mec-8 expression is sufficient to alter sad-1 splicing patterns from partial inclusion to full inclusion specifically in the excitatory motor neurons (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "4f63ebea-05a4-4797-8449-fef497f0fa5f",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C81",
+      "claim": "mbl-1 expression in inhibitory motor neurons results in full exon inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, mbl-1 expression in inhibitory motor neurons (where normally only msi-1 is expressed) results in full exon inclusion [Figure 6\u2014figure supplement 2A])",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "5036b6dc-8ed0-4c47-a9b4-4e09c7b21736",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C82",
+      "claim": "The TF unc-3 controls the fate of excitatory motor neurons in the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "we examined mutants for the TF unc-3, which controls the fate of excitatory motor neurons in the ventral nerve cord (Kratsios et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Kratsios et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "8d8a720f-6db5-4b1a-951b-8d93f5b029df",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C83",
+      "claim": "In unc-3 mutants, sad-1 exon inclusion is lost in excitatory motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In unc-3 mutants, sad-1 exon inclusion is lost in excitatory motor neurons",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "804bddcc-670e-47a5-abe7-208ea2b0cf76",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C84",
+      "claim": "unc-3 mutants exhibit partially-penetrant defects in sad-1 exon inclusion, ranging from moderate to complete loss.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas unc-86/mec-3/alr-1 mutants exhibit completely-penetrant loss of sad-1 exon inclusion, unc-3 mutants exhibit partially-penetrant defects, ranging from moderate to complete loss of sad-1 inclusion in excitatory motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "71174bb0-5c14-4846-beda-b88b4b5cf4cf",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C85",
+      "claim": "Loss of unc-3 results in partially-penetrant defects in mbl-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, loss of unc-3 results in partially-penetrant defects in mbl-1 expression (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "7cac9350-5564-4a9d-a80b-be20f301faad",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C86",
+      "claim": "Phenotypic convergence among different neuron types occurs simultaneously at multiple layers of gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results demonstrate that phenotypic convergence among different neuron types occurs simultaneously at multiple layers of gene regulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data on TFs and RBPs in different neuron types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "f98a6404-780d-4d4c-bc75-00d1ea8d2a56",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C87",
+      "claim": "Different TFs (e.g. mec-3 and unc-3) specify expression of different RBP complements (e.g. mbl-1 and mec-8) which have a common function of mediating sad-1 exon inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "different TFs (e.g. mec-3 and unc-3) specify expression of different RBP complements (e.g. mbl-1 and mec-8) which have a common function of mediating sad-1 exon inclusion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data on TFs and RBPs in different neuron types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "015f1215-ce8c-4361-8fff-6bd12aad293c",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C88",
+      "claim": "Post-transcriptional control can further diversify attributes of single cells on top of transcriptional control.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights the fact that post-transcriptional control can further diversify attributes of single cells on top of the more well-known role of transcriptional control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that sister cells with similar transcriptional profiles have different splicing patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "04e6d005-2023-4ace-9fa9-16bc09a6d7ca",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C89",
+      "claim": "sad-1 splicing is regulated according to a combinatorial RBP code, with different splicing outcomes depending on whether a cell expresses zero, one, or two neuron-specific RBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that sad-1 splicing is regulated according to a combinatorial RBP code, with different splicing outcomes depending on whether a cell expresses zero, one, or two neuron-specific RBPs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the combined experimental data shown in Figure 7 and throughout the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "547bf6df-150a-49de-a71c-4c171ec84d0b",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C90",
+      "claim": "The 'default' outcome of sad-1 splicing is full skipping of the cassette exon.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the 'default' outcome of sad-1 splicing is full skipping of the cassette exon, as observed in the BDU neuron which does not express any of the sad-1-regulating RBPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative, inferred from the observation that BDU neurons lack the RBPs and show full exon skipping.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "3906d7f2-1eba-4569-88b4-60da26881284",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C91",
+      "claim": "Only cells with at least one RBP mediating exon inclusion express sad-1 included isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Only cells with at least one RBP mediating exon inclusion express sad-1 included isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data on RBP expression and splicing patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "e2dfc561-7917-4811-9e8b-2492c4161044",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C92",
+      "claim": "Cells with multiple RBPs mediating exon inclusion (e.g. the ALM neuron) express only the included isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with multiple such RBPs (e.g. the ALM neuron) express only the included isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data on RBP expression and splicing patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "402b76cd-f86b-4fec-9378-8bbd20d86514",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C93",
+      "claim": "Alternative splicing of the kinase unc-16/JIP3 in motor neurons is controlled by a pair of RNA binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous work we found that alternative splicing of the kinase unc-16/ JIP3 in motor neurons is likewise controlled by a pair of RNA binding proteins (Norris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Norris et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "341ab595-492b-40fb-afa1-f6369dae4eaf",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C94",
+      "claim": "unc-16 splicing in motor neurons is combinatorially regulated by unc-75 and exc-7.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas sad-1 splicing in motor neurons is regulated by mbl-1 and msi-1 RBPs, unc-16 is combinatorially regulated by unc-75 and exc-7 in motor neurons (Norris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Norris et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "4be853ca-759d-486b-8a2e-21eaaf2e525f",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C95",
+      "claim": "Even within a single neuron type, different splicing events are regulated by different complements of RBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that even within a single neuron type, different splicing events are regulated by different complements of RBPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of sad-1 and unc-16 splicing regulation in motor neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "e583fa22-833f-4d90-a6b6-f885a9f18b2c",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C96",
+      "claim": "The importance of TFs controlling gene expression networks in single neurons is well established.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of TFs controlling gene expression networks in single neurons is well established",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "e201d33d-1882-4dab-98b2-068576d39299",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C98",
+      "claim": "A number of studies have identified individual RBPs that affect the splicing of a TF, thus altering the activity or specificity of that TF.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have identified individual RBPs that affect the splicing of a TF, thus altering the activity or specificity of that TF (Calarco et al., 2009; Han et al., 2013; Linares et al., 2015; Raj et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "bc5350aa-f0de-4d8b-9193-0f03bb5f2148",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C99",
+      "claim": "Multiple layers of regulatory control can increase the diversity of single neuron transcriptomes and fine-tune the properties of individual neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple layers of regulatory control can thus increase the diversity of single neuron transcriptomes and fine-tune the properties of individual neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing coordinated TF-RBP regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "b6802b52-25d4-4b9d-94d0-20892535c8c6",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C100",
+      "claim": "Single-neuron TF combinations have been identified with a variety of feedback and feedforward mechanisms resulting in interesting regulatory properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-neuron TF combinations have been identified with a variety of feedback and feedforward mechanisms resulting in interesting regulatory properties (Mangan and Alon, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Mangan and Alon, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "23247ec5-3948-4aff-a416-3d75b7d631e8",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C101",
+      "claim": "TFs and RBPs could interact in complex ways, leading to an even greater array of diversification strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "in principle TFs and RBPs could likewise interact in complex ways, leading to an even greater array of diversification strategies (Han et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative, based on inference from known TF regulatory mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "d9317c0b-dd37-4ccd-b72f-3c2cce6ddc56",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C103",
+      "claim": "In worms, cholinergic neuron cell fate and core cholinergic gene expression properties are controlled by different combinations of TFs in different cholinergic neuron sub-types.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in worms, cholinergic neuron cell fate and core cholinergic gene expression properties are controlled by different combinations of TFs in different cholinergic neuron sub-types (Pereira et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Pereira et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "ca965747-4d94-45dd-9101-229ab69db98b",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C104",
+      "claim": "Phenotypic convergence has been reported for TFs in neurons of the Drosophila optic lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, phenotypic convergence has been reported for TFs in neurons of the Drosophila optic lobe (Konstantinides et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Konstantinides et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "2c0a7027-8edf-4f91-ae1b-62a11626230e",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C105",
+      "claim": "Phenotypic convergence mediated by TFs is a widespread phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that phenotypic convergence mediated by TFs is a widespread phenomenon",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the examples of phenotypic convergence in different organisms.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "9ffa402c-5c07-42b1-89c5-15bdaf7fb565",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C106",
+      "claim": "The principle of phenotypic convergence extends to the regulation of splicing by RBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We now extend this principle of phenotypic convergence to the regulation of splicing by RBPs as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing different RBPs mediating similar splicing outcomes in different neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "9d31e20a-4f5c-4e8b-8c17-26bd85582ca4",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C107",
+      "claim": "sad-1 exon inclusion is mediated in various neuron types, with a unique complement of RBPs responsible for exon inclusion in each specific type.",
+      "claim_type": "EXPLICIT",
+      "source": "sad-1 exon inclusion is mediated in various neuron types, with a unique complement of RBPs responsible for exon inclusion in each specific type that we have studied (ALM neuron, inhibitory motor neurons, and excitatory motor neurons; Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7 and throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "81576e69-0349-43d7-b745-2fa66c4ec4a3",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C108",
+      "claim": "Phenotypic convergence likely occurs on multiple levels, as the RBPs regulating splicing are different in each neuron, and the TFs regulating RBP expression are likewise different in each neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely represents phenotypic convergence on multiple levels, as the RBPs regulating splicing are different in each neuron, and the TFs regulating RBP expression are likewise different in each neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data on TFs and RBPs in different neuron types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "5485ac9c-456e-4b4b-bac2-868f51d4af72",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C109",
+      "claim": "Each level of regulation (TFs and RBPs) coordinately converges upon appropriate splicing of sad-1 in each neuron type.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these levels coordinately converges upon appropriate splicing of sad-1 in each neuron type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data on TFs and RBPs in different neuron types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "ca152baa-a2bb-4d5b-b03a-9cb5386f6c4c",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C110",
+      "claim": "Additional neuron types with similar sad-1 splicing patterns may represent additional examples of phenotypic convergence whose underlying mechanisms remain unexplored.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional neuron types with similar sad-1 splicing patterns (see Figure 1 and Figure 1\u2014figure supplement 1) may represent additional examples of phenotypic convergence whose underlying mechanisms remain unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative, based on the observation of similar splicing patterns in other neurons.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "8aea646c-9aa2-43cd-a988-52bc0f393704",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C111",
+      "claim": "C. elegans were maintained under standard conditions at 20\u00b0C on nematode growth media (NGM) plates seeded with OP50 E. coli bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans were maintained under standard conditions (Brenner, 1974) at 20\u00b0C on nematode growth media (NGM) plates seeded with OP50 E. coli bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "94df45f7-5287-4098-b1d6-08cbf669e2c5",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C112",
+      "claim": "New transgenic worms were generated by microinjection with 15 ng/\u03bcl transgene and 15 ng/\u03bcl co-injection marker.",
+      "claim_type": "EXPLICIT",
+      "source": "New transgenic worms were generated by microinjection with 15 ng/\u03bcl transgene and 15 ng/\u03bcl co-injection marker (either rgef-1, unc-17, or unc-25 promoter driving BFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "2abc7af3-384b-458c-86be-6a8d8243ca60",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C113",
+      "claim": "The forward mutagenesis screen was performed on animals harboring the sad-1 exon 15 splicing reporter with EMS at 47 mM for 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The forward mutagenesis screen was performed on animals harboring the sad-1 exon 15 splicing reporter with EMS at 47 mM for 4 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "5ae10119-4faf-4049-b8c0-905f31f3ef15",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C114",
+      "claim": "A total of approximately 6000 haploid genomes were screened in the forward genetic screen.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of approximately 6000 haploid genomes were screened.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "d0b2d101-1aa1-4583-b99a-5ac90a7d6b5c",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C115",
+      "claim": "Targeted mutant strains were generated using CRISPR/Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted mutant strains were generated using CRISPR/Cas9 as previously described (Calarco and Norris, 2018; Norris et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used, supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "12fbe51f-d5bb-44fc-b92d-39f45bbcf63f",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C116",
+      "claim": "Images were obtained with a Zeiss Axio Imager.Z1 and processed in ImageJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were obtained with a Zeiss Axio Imager.Z1 and processed in ImageJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "fa2bc65a-a4a8-4dc1-b8b6-e2cd93e868dc",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C117",
+      "claim": "sad-1 minigenes were created using specific primers and cloned into a Gateway-compatible vector.",
+      "claim_type": "EXPLICIT",
+      "source": "sad-1 minigenes were created using the following primers: Forward 5' GATAAAACTGAAACAACTTCTGC and Reverse 5' GGGGTTGGCGATTTGTATGAGaTAGC. Restriction sites were appended to both the forward primer (XhoI) and reverse (NotI) primers to facilitate cloning into a Gateway-compatible vector as previously described (Norris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "15269e76-8b18-49e5-8711-ed6b66b4cf04",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C118",
+      "claim": "The sad-1 reporter was cloned downstream of a pan-neuronal rgef-1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The reporter was then cloned downstream of a pan-neuronal rgef-1 promoter, as endogenous sad-1 has been detected broadly throughout the nervous system (Crump et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used, with a citation to support the choice of promoter.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "729a57ef-dc47-477c-a0bc-2bdb98e3ffe4",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C119",
+      "claim": "Endogenous sad-1 has been detected broadly throughout the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "as endogenous sad-1 has been detected broadly throughout the nervous system (Crump et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by Crump et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "6af6ca0f-78b8-4230-97d9-3d647f812c1e",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C120",
+      "claim": "Mutant versions of the splicing reporter were synthesized de novo then cut with XhoI and NotI and cloned.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant versions of the splicing reporter were synthesized de novo then cut with XhoI and NotI and cloned as above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "23ba695f-27c6-41dc-8555-76a3babc538d",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C121",
+      "claim": "BDU and ALM are both paired neurons present on the left and right side of the worm.",
+      "claim_type": "EXPLICIT",
+      "source": "BDU and ALM are both paired neurons present on the left and right side of the worm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the anatomical diagram in Figure 1F.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "8f94dae0-0402-437d-adf1-3e788195965a",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "claim_id": "C122",
+      "claim": "Each BDU neuron is a sister cell to an ALM neuron, derived from the same neuroblast.",
+      "claim_type": "EXPLICIT",
+      "source": "Each BDU neuron is a sister cell to an ALM neuron, derived from the same neuroblast.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the lineage diagram in Figure 1F.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6e80779-ac10-4e45-88d7-afa5238912e8",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study characterizes neuron-specific alternative splicing patterns of sad-1 exon 15 in C. elegans. ALM neurons exclusively express the exon-included isoform, BDU neurons exclusively express the exon-skipped isoform, and most other neurons (including motor neurons) express both isoforms. These patterns are reproducible and invariant across animals, indicating strict regulatory control. Notably, ALM and BDU are developmentally related sister cells that share anatomical and gene-expression features yet exhibit opposite splicing patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C21 are well-supported by experimental data from the two-color fluorescent splicing reporter system (Figures 1C-F, Figure 1\u2014figure supplement 1). The reporter design is appropriate, the observations are clearly documented with microscopy, and the reproducibility across animals strengthens the conclusion that splicing is under strict regulatory control. The developmental relationship between ALM and BDU neurons is established knowledge and properly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A forward genetic screen identified three transcription factors (unc-86, mec-3, and alr-1) that are combinatorially required for sad-1 exon inclusion in ALM neurons. These TFs function in a known transcriptional cascade controlling touch neuron cell fate. Loss of any of the three TFs transforms sad-1 splicing from the ALM pattern (full exon inclusion) to the BDU pattern (full exon skipping). The TFs affect sad-1 splicing specifically in touch neurons, consistent with their known roles in touch neuron differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C34 are supported by the forward genetic screen (~6000 haploid genomes), whole-genome resequencing to identify causative mutations, and validation with existing alleles (Figure 2). The screen design is appropriate, the identification of three TFs in the same pathway is compelling, and the cell-type specificity of the phenotype is well-documented. The connection to prior knowledge about these TFs in touch neuron development strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "ebf71fa1-bdf5-4fc3-bd3b-a516b6ad1fc9",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Two RNA binding proteins (mec-8 and mbl-1) are required for sad-1 exon inclusion in ALM neurons. Candidate cis-elements matching consensus binding motifs for these RBPs were identified in conserved intronic regions flanking the alternative exon. Single mutants of either RBP cause partial loss of exon inclusion in ALM, while mec-8; mbl-1 double mutants cause complete loss of exon inclusion, phenocopying the TF mutants. mec-8 affects splicing specifically in ALM neurons, while mbl-1 affects splicing in ALM and ventral nerve cord neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 are supported by CRISPR-generated deletions validated with existing alleles, sequence analysis identifying conserved cis-elements, and double mutant analysis (Figure 3). The observation that double RBP mutants phenocopy TF mutants is particularly compelling evidence for a linear pathway. The use of multiple alleles and the cell-type specificity of phenotypes strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "3753216b-7b50-4c46-b6e2-8fe196034601",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The transcription factors control cell-specific expression of the RBPs in ALM neurons. Fosmid reporters show that both mec-8 and mbl-1 are expressed in ALM neurons, and this expression is abolished specifically in ALM (but not other cells) in mec-3 mutants. ALR-1 ChIP peaks are present in both mec-8 and mbl-1 promoters, suggesting potential direct transcriptional control by alr-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49 are supported by fosmid reporter expression data showing TF-dependent RBP expression (Figure 4A-E). The use of fosmid reporters is appropriate as they are more likely to contain complete regulatory information than traditional promoter fusions. The cell-specific loss of RBP expression in TF mutants is well-documented. The ChIP data (C48-C49) is suggestive but appropriately presented as speculative regarding direct control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "bb19d23f-3470-4dd9-b878-720db352c9f1",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The TFs and RBPs function in a linear pathway where TFs control RBP expression, which in turn controls sad-1 splicing. This is supported by: (1) double heterozygotes of TF and RBP mutants showing non-allelic non-complementation, (2) over-expression of either mec-8 or mbl-1 in touch neurons partially rescuing the splicing defect in alr-1 mutants, and (3) the observation that double RBP mutants phenocopy TF mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by genetic interaction experiments (Figure 4\u2014figure supplement 3, Figure 4F-I). The non-allelic non-complementation and rescue experiments provide strong evidence for a linear pathway. The partial (rather than complete) rescue by RBP over-expression is appropriately interpreted and consistent with the model. The convergence of multiple lines of evidence strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "7cbe82a0-77ed-4227-9d20-f6f0b67c038d",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The RBPs directly regulate sad-1 splicing through binding to conserved cis-elements in the flanking introns. Mutation of the mbl-1 cis-element or either of the two mec-8 cis-elements in the splicing reporter recapitulates the respective RBP null mutant phenotypes. Cis-element mutants cannot be rescued by RBP over-expression, providing further evidence for direct binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C62 are supported by cis-element mutation experiments in the splicing reporter (Figure 5). The observation that cis-element mutations phenocopy RBP deletions is strong evidence for direct binding. The failure to rescue cis-element mutants with RBP over-expression (Figure 5\u2014figure supplement 1) further supports direct binding. The requirement for both mec-8 binding sites is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "2950317a-c53f-47dc-8b0f-791b532b9979",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In ventral nerve cord motor neurons, different RBPs mediate sad-1 exon inclusion in different neuron subtypes. mbl-1 mediates partial exon inclusion in excitatory motor neurons, while msi-1 mediates partial exon inclusion in inhibitory motor neurons. mec-8 is not expressed in motor neurons and does not affect splicing there. mbl-1; msi-1 double mutants result in complete loss of exon inclusion in all motor neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C74 are supported by mutant analysis, RBP expression reporters, and double mutant analysis (Figure 6A-F, Figure 6\u2014figure supplement 1). The cell-type-specific effects of mbl-1 and msi-1 mutants are well-documented, and the expression patterns of the RBPs correlate with their functional effects. The double mutant phenotype provides strong evidence that these RBPs act in distinct cell types to achieve a common outcome.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "baf75d6a-1440-45cf-a72f-2cbaa12a01f5",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "msi-1 likely directly affects sad-1 splicing by binding to a conserved bipartite UAG motif in the intron downstream of the cassette exon. This motif matches the consensus binding motif for msi-1 identified in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C77 are based on sequence analysis and prior knowledge of msi-1 binding motifs (C76-C77 supported by citations and Figure 6G-H), but C75 is explicitly speculative. No direct binding experiments or cis-element mutation experiments for msi-1 are presented. While the presence of a conserved consensus motif is suggestive, direct evidence for msi-1 binding to sad-1 pre-mRNA is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "24412022-48ff-407f-8c0b-5e827e8091a6",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phenotypic convergence occurs at multiple regulatory levels: different TFs (mec-3 in ALM, unc-3 in excitatory motor neurons) specify expression of different RBP complements (mec-8+mbl-1 in ALM, mbl-1 alone in excitatory motor neurons) that converge on the common function of mediating sad-1 exon inclusion. Ectopic expression of RBPs in non-native neuron types is sufficient to alter splicing patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C87 are supported by the combined data from multiple neuron types (Figures 6-7, Figure 6\u2014figure supplement 2). The ectopic expression experiments (C80-C81) provide strong evidence that RBPs are sufficient to alter splicing. The unc-3 data (C82-C85) shows partially-penetrant effects consistent with the model, though less complete than the ALM data. The concept of phenotypic convergence is well-supported by the experimental evidence and appropriately contextualized with prior work (C78).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "4858c1e2-01a6-48da-af4b-007fde4e48aa",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "sad-1 splicing is regulated according to a combinatorial RBP code, with different splicing outcomes depending on the number and identity of RBPs expressed: no RBPs leads to full exon skipping (BDU), one RBP leads to partial inclusion (motor neurons), and two RBPs lead to full inclusion (ALM). The default state is proposed to be full exon skipping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C92 are well-supported by the combined experimental data from all neuron types studied (summarized in Figure 7). The correlation between RBP expression patterns and splicing outcomes is consistent across multiple neuron types. The proposal that the default state is exon skipping (C90) is appropriately presented as speculative but is a reasonable inference from the BDU phenotype and the observation that RBPs promote inclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "8c29546c-a499-43f0-acdb-fa695624b979",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Different splicing events within the same neuron type are regulated by different RBP complements. In motor neurons, sad-1 splicing is regulated by mbl-1 and msi-1, while unc-16 splicing is regulated by unc-75 and exc-7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 are supported by citation to prior work (Norris et al., 2014) for the unc-16 data and the current study's data on sad-1. The comparison is valid and supports the conclusion that RBP regulation is target-specific rather than global within a neuron type.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "3c2fd2da-8d4b-4761-887c-840c773efd46",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple layers of regulatory control (TFs and RBPs) can increase transcriptome diversity and fine-tune neuronal properties. TFs and RBPs could potentially interact in complex ways analogous to known TF regulatory networks, leading to diverse diversification strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C101 are appropriately contextualized with prior knowledge (C96, C98, C100 supported by citations). C99 is a reasonable inference from the experimental data. C101 is appropriately speculative about future possibilities. These claims provide appropriate context and interpretation of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "12f97802-9d63-495c-b640-59013df029ef",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The principle of phenotypic convergence, previously observed for TFs in various organisms, extends to RBP regulation of splicing. Different neuron types use different combinations of TFs and RBPs to achieve similar splicing outcomes (sad-1 exon inclusion). This represents phenotypic convergence at multiple regulatory levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C109 are well-supported by the experimental data and appropriately contextualized with prior work on TF-mediated phenotypic convergence (C103-C105 supported by citations). The extension of this principle to RBPs (C106-C109) is justified by the experimental evidence from multiple neuron types. C110 is appropriately speculative about additional unexplored examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "89bcabce-f328-4819-b5c7-334ee10036fa",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The sad-1 gene encodes two isoforms that differ in their C-terminal sequence and have different functional properties. In mammals, this is represented by two separate genes (SAD-A and SAD-B) with similar differences in C-terminal sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C14 are supported by citations to prior work. C15 is established knowledge about mammalian SAD kinases. These claims provide appropriate biological context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "3a03691e-d06e-49fa-b454-ff51d196767e",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Single-cell transcriptomes are established by transcription factors, while post-transcriptional regulation by RNA binding proteins is more technically challenging to study. Combinatorial TF-RBP coordination of single-cell transcriptomes has remained unexplored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 accurately describe the state of the field and provide appropriate motivation for the study. C1 is established knowledge, C2 is a reasonable assessment of technical challenges, and C3 identifies a genuine gap in knowledge that the study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    },
+    {
+      "id": "077d28e5-26df-4c96-a800-2d013e797304",
+      "content_id": "9da90299-b829-496f-bbbd-13244f4036c3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study employed standard C. elegans maintenance, EMS mutagenesis screening (~6000 haploid genomes), CRISPR/Cas9 for targeted mutations, fluorescence microscopy, and molecular cloning techniques to generate splicing reporters and mutant strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C122 describe the experimental methods used in the study. These are standard, well-established techniques appropriate for the research questions. The methods are described with sufficient detail for reproducibility. C119 appropriately cites prior work supporting the choice of promoter for the reporter.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:47.680755Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6aef6b5a-ad2f-47f2-b895-611ad38386bb",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "96d9ba97-55a1-44e3-9983-004b11a2877c",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "83aba6c1-0497-4e20-9111-f9e05f6b3dc9",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "55698b37-b7c5-4f91-993d-94af9a6109bd",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "16c560fc-033d-4d87-bbbf-662e65e33fb7",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "31326dcb-9660-4869-add0-01a0dc84a2a1",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "57e04277-aea7-4f98-82b3-ec66e31d1c5a",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "46eef265-4e45-46d0-9cb3-fa8852b982ed",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "03c4c511-71a3-47fc-9717-7c7c95b12816",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "6be7cd69-df8b-4877-b5e0-89801fab4519",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "55c73255-fece-4dac-b6f0-8aaeb2ccd280",
+      "result_id": "b6e80779-ac10-4e45-88d7-afa5238912e8"
+    },
+    {
+      "claim_id": "5ab28c93-84df-480e-8954-b15b4e642e4b",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "03de8a89-a53c-4f9e-a1dd-93941bf30023",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "2d3bc598-49cf-4c56-a04b-caf9e31ebd05",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "5b188519-347e-47b6-8ebe-85fa774837a6",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "9e5e7f75-e986-4a2b-ae90-3a4864d6b075",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "fb8bd932-20ed-4aa1-b506-ff985fbfe9eb",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "757d8b2d-574d-4e33-b358-c17700853468",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "d4e36546-ee3f-455e-a5ce-e4cad846daf3",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "77b8bffe-be31-4371-96cf-6b37ec5fbe83",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "051249d6-57d3-4dd5-840b-df8d6735c2a1",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "76aaa481-64e8-438d-b44b-a294eb44e103",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "e3b7716e-2653-4e9f-b27a-9336d096acdc",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "abd17465-557b-452a-beb4-aaddd0fd426a",
+      "result_id": "d3ee08e6-3ce4-4a36-8a1f-5c2e99b27e7a"
+    },
+    {
+      "claim_id": "974407b4-2a30-4323-bbfc-3d8c68888783",
+      "result_id": "ebf71fa1-bdf5-4fc3-bd3b-a516b6ad1fc9"
+    },
+    {
+      "claim_id": "58393b25-719c-489d-94fb-10189fe4a4ae",
+      "result_id": "ebf71fa1-bdf5-4fc3-bd3b-a516b6ad1fc9"
+    },
+    {
+      "claim_id": "2ab2d9d3-996c-48f6-b6a3-78c3ad8d2fd0",
+      "result_id": "ebf71fa1-bdf5-4fc3-bd3b-a516b6ad1fc9"
+    },
+    {
+      "claim_id": "90bd1a96-d7a5-4041-a902-b4044d9ab13f",
+      "result_id": "ebf71fa1-bdf5-4fc3-bd3b-a516b6ad1fc9"
+    },
+    {
+      "claim_id": "e541148f-5330-4e7e-af9c-d157f413859f",
+      "result_id": "ebf71fa1-bdf5-4fc3-bd3b-a516b6ad1fc9"
+    },
+    {
+      "claim_id": "bfef07c6-bc9c-4083-af51-16d9881edf11",
+      "result_id": "ebf71fa1-bdf5-4fc3-bd3b-a516b6ad1fc9"
+    },
+    {
+      "claim_id": "1b7526a0-6770-42ac-90f8-6d149dfca840",
+      "result_id": "3753216b-7b50-4c46-b6e2-8fe196034601"
+    },
+    {
+      "claim_id": "ce5a13a9-38f5-4383-a9b0-9beecae356a2",
+      "result_id": "3753216b-7b50-4c46-b6e2-8fe196034601"
+    },
+    {
+      "claim_id": "35dc9325-883f-4c20-ac53-3982842d09f9",
+      "result_id": "3753216b-7b50-4c46-b6e2-8fe196034601"
+    },
+    {
+      "claim_id": "c374e0c8-478e-453b-b747-758097a13134",
+      "result_id": "3753216b-7b50-4c46-b6e2-8fe196034601"
+    },
+    {
+      "claim_id": "809760ac-fbdb-4ab2-86ff-42a0ece501f0",
+      "result_id": "3753216b-7b50-4c46-b6e2-8fe196034601"
+    },
+    {
+      "claim_id": "6b4515da-a225-4525-9ba2-e46814041ac1",
+      "result_id": "3753216b-7b50-4c46-b6e2-8fe196034601"
+    },
+    {
+      "claim_id": "410e59eb-7926-4dcf-a368-de73769fb887",
+      "result_id": "3753216b-7b50-4c46-b6e2-8fe196034601"
+    },
+    {
+      "claim_id": "025c714d-1bb5-4d4c-8181-0831d0e221c7",
+      "result_id": "3753216b-7b50-4c46-b6e2-8fe196034601"
+    },
+    {
+      "claim_id": "cc344ffe-da88-4457-8af8-9e572a1a4ef4",
+      "result_id": "3753216b-7b50-4c46-b6e2-8fe196034601"
+    },
+    {
+      "claim_id": "c34382a6-2771-4848-aeea-f78a33d9d3bf",
+      "result_id": "bb19d23f-3470-4dd9-b878-720db352c9f1"
+    },
+    {
+      "claim_id": "79bbeceb-2674-4b5e-ad8d-78536f07c594",
+      "result_id": "bb19d23f-3470-4dd9-b878-720db352c9f1"
+    },
+    {
+      "claim_id": "8988e708-b297-429b-85b0-871fcc5ca297",
+      "result_id": "bb19d23f-3470-4dd9-b878-720db352c9f1"
+    },
+    {
+      "claim_id": "a9ad2a32-d445-4dbd-b750-fad0f791ab7e",
+      "result_id": "bb19d23f-3470-4dd9-b878-720db352c9f1"
+    },
+    {
+      "claim_id": "4d5f202a-2f6a-4787-9f4d-9fcdb92b4655",
+      "result_id": "bb19d23f-3470-4dd9-b878-720db352c9f1"
+    },
+    {
+      "claim_id": "96f65b67-9b6f-4af0-9a65-e2508f678a7d",
+      "result_id": "7cbe82a0-77ed-4227-9d20-f6f0b67c038d"
+    },
+    {
+      "claim_id": "3a2bb2ed-0ba2-4786-8f3d-799994a96686",
+      "result_id": "7cbe82a0-77ed-4227-9d20-f6f0b67c038d"
+    },
+    {
+      "claim_id": "ab279423-14c9-43d2-8ad3-42a57ef018d9",
+      "result_id": "7cbe82a0-77ed-4227-9d20-f6f0b67c038d"
+    },
+    {
+      "claim_id": "bac1ce53-0156-4f9e-bda1-deaaed653711",
+      "result_id": "7cbe82a0-77ed-4227-9d20-f6f0b67c038d"
+    },
+    {
+      "claim_id": "f4b5d742-9c26-4e72-9404-b1d6d1125c75",
+      "result_id": "7cbe82a0-77ed-4227-9d20-f6f0b67c038d"
+    },
+    {
+      "claim_id": "0d32f3b1-5769-474a-92f4-59a7c637ba7c",
+      "result_id": "7cbe82a0-77ed-4227-9d20-f6f0b67c038d"
+    },
+    {
+      "claim_id": "9658dedd-599c-469d-b8af-8c4cd39e39c4",
+      "result_id": "7cbe82a0-77ed-4227-9d20-f6f0b67c038d"
+    },
+    {
+      "claim_id": "a14e5d3f-2c6b-4150-a0d5-f4afb3d89f08",
+      "result_id": "7cbe82a0-77ed-4227-9d20-f6f0b67c038d"
+    },
+    {
+      "claim_id": "85cfad05-e81d-4e24-9286-dce550143aaf",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "89be3e0e-03c4-433d-b54c-f0bdaa9bbd7c",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "b4132ab3-af7b-4629-8b8d-f0483bf62db5",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "aee22abc-6ac1-47b5-b4d8-57b35394561c",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "4a6f7b56-5ea5-4f89-8fd0-85d7ed15fe56",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "918a5790-3ee1-4fdf-aaf1-f47fc893c1f8",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "487941d9-a2ba-46d8-8705-3908f9a11c08",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "e07b260d-290c-4e17-89bb-f770e8ad3181",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "a900026a-2dc8-409b-99b9-4d46da6881ca",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "3d844aed-73ef-4ffb-918d-57b22f8af2d3",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "df0513ce-714f-43bd-b503-e31ce12717b6",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "5a98a793-1133-46d5-9692-dadb3e54b344",
+      "result_id": "2950317a-c53f-47dc-8b0f-791b532b9979"
+    },
+    {
+      "claim_id": "de5b4f14-f2bc-458a-b6b8-d1a8fcd8e927",
+      "result_id": "baf75d6a-1440-45cf-a72f-2cbaa12a01f5"
+    },
+    {
+      "claim_id": "8b013f88-0160-4687-a597-b1c0f316ffb0",
+      "result_id": "baf75d6a-1440-45cf-a72f-2cbaa12a01f5"
+    },
+    {
+      "claim_id": "1c4eed95-a71b-49c9-9b97-7be54d20ff14",
+      "result_id": "baf75d6a-1440-45cf-a72f-2cbaa12a01f5"
+    },
+    {
+      "claim_id": "2542f3b2-3d68-4d48-adf7-08d1ee3468a5",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "45d880fd-dfd5-4ce4-b31a-9485f8b0e008",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "10219d34-aa98-4a19-962f-2b83d5fcad16",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "4f63ebea-05a4-4797-8449-fef497f0fa5f",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "5036b6dc-8ed0-4c47-a9b4-4e09c7b21736",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "8d8a720f-6db5-4b1a-951b-8d93f5b029df",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "804bddcc-670e-47a5-abe7-208ea2b0cf76",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "71174bb0-5c14-4846-beda-b88b4b5cf4cf",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "7cac9350-5564-4a9d-a80b-be20f301faad",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "f98a6404-780d-4d4c-bc75-00d1ea8d2a56",
+      "result_id": "24412022-48ff-407f-8c0b-5e827e8091a6"
+    },
+    {
+      "claim_id": "015f1215-ce8c-4361-8fff-6bd12aad293c",
+      "result_id": "4858c1e2-01a6-48da-af4b-007fde4e48aa"
+    },
+    {
+      "claim_id": "04e6d005-2023-4ace-9fa9-16bc09a6d7ca",
+      "result_id": "4858c1e2-01a6-48da-af4b-007fde4e48aa"
+    },
+    {
+      "claim_id": "547bf6df-150a-49de-a71c-4c171ec84d0b",
+      "result_id": "4858c1e2-01a6-48da-af4b-007fde4e48aa"
+    },
+    {
+      "claim_id": "3906d7f2-1eba-4569-88b4-60da26881284",
+      "result_id": "4858c1e2-01a6-48da-af4b-007fde4e48aa"
+    },
+    {
+      "claim_id": "e2dfc561-7917-4811-9e8b-2492c4161044",
+      "result_id": "4858c1e2-01a6-48da-af4b-007fde4e48aa"
+    },
+    {
+      "claim_id": "402b76cd-f86b-4fec-9378-8bbd20d86514",
+      "result_id": "8c29546c-a499-43f0-acdb-fa695624b979"
+    },
+    {
+      "claim_id": "341ab595-492b-40fb-afa1-f6369dae4eaf",
+      "result_id": "8c29546c-a499-43f0-acdb-fa695624b979"
+    },
+    {
+      "claim_id": "4be853ca-759d-486b-8a2e-21eaaf2e525f",
+      "result_id": "8c29546c-a499-43f0-acdb-fa695624b979"
+    },
+    {
+      "claim_id": "e583fa22-833f-4d90-a6b6-f885a9f18b2c",
+      "result_id": "3c2fd2da-8d4b-4761-887c-840c773efd46"
+    },
+    {
+      "claim_id": "e201d33d-1882-4dab-98b2-068576d39299",
+      "result_id": "3c2fd2da-8d4b-4761-887c-840c773efd46"
+    },
+    {
+      "claim_id": "bc5350aa-f0de-4d8b-9193-0f03bb5f2148",
+      "result_id": "3c2fd2da-8d4b-4761-887c-840c773efd46"
+    },
+    {
+      "claim_id": "b6802b52-25d4-4b9d-94d0-20892535c8c6",
+      "result_id": "3c2fd2da-8d4b-4761-887c-840c773efd46"
+    },
+    {
+      "claim_id": "23247ec5-3948-4aff-a416-3d75b7d631e8",
+      "result_id": "3c2fd2da-8d4b-4761-887c-840c773efd46"
+    },
+    {
+      "claim_id": "d9317c0b-dd37-4ccd-b72f-3c2cce6ddc56",
+      "result_id": "12f97802-9d63-495c-b640-59013df029ef"
+    },
+    {
+      "claim_id": "ca965747-4d94-45dd-9101-229ab69db98b",
+      "result_id": "12f97802-9d63-495c-b640-59013df029ef"
+    },
+    {
+      "claim_id": "2c0a7027-8edf-4f91-ae1b-62a11626230e",
+      "result_id": "12f97802-9d63-495c-b640-59013df029ef"
+    },
+    {
+      "claim_id": "9ffa402c-5c07-42b1-89c5-15bdaf7fb565",
+      "result_id": "12f97802-9d63-495c-b640-59013df029ef"
+    },
+    {
+      "claim_id": "9d31e20a-4f5c-4e8b-8c17-26bd85582ca4",
+      "result_id": "12f97802-9d63-495c-b640-59013df029ef"
+    },
+    {
+      "claim_id": "81576e69-0349-43d7-b745-2fa66c4ec4a3",
+      "result_id": "12f97802-9d63-495c-b640-59013df029ef"
+    },
+    {
+      "claim_id": "5485ac9c-456e-4b4b-bac2-868f51d4af72",
+      "result_id": "12f97802-9d63-495c-b640-59013df029ef"
+    },
+    {
+      "claim_id": "ca152baa-a2bb-4d5b-b03a-9cb5386f6c4c",
+      "result_id": "12f97802-9d63-495c-b640-59013df029ef"
+    },
+    {
+      "claim_id": "908bcf16-7921-4f91-a1f8-9fb32271e081",
+      "result_id": "89bcabce-f328-4819-b5c7-334ee10036fa"
+    },
+    {
+      "claim_id": "ed79a3f4-a667-4288-88b8-4f6025d15641",
+      "result_id": "89bcabce-f328-4819-b5c7-334ee10036fa"
+    },
+    {
+      "claim_id": "6404ae9c-a1b4-489d-aac3-10082d741616",
+      "result_id": "89bcabce-f328-4819-b5c7-334ee10036fa"
+    },
+    {
+      "claim_id": "ddb18f01-e535-41ed-8e28-2928cddcace8",
+      "result_id": "89bcabce-f328-4819-b5c7-334ee10036fa"
+    },
+    {
+      "claim_id": "4572b705-44a6-4ff7-bc96-ffc2116b03ee",
+      "result_id": "3a03691e-d06e-49fa-b454-ff51d196767e"
+    },
+    {
+      "claim_id": "7eb5cc5b-1838-435a-9e91-6dc3b6a9d297",
+      "result_id": "3a03691e-d06e-49fa-b454-ff51d196767e"
+    },
+    {
+      "claim_id": "fc9e382b-f501-4358-86c9-0686551009d8",
+      "result_id": "3a03691e-d06e-49fa-b454-ff51d196767e"
+    },
+    {
+      "claim_id": "8aea646c-9aa2-43cd-a988-52bc0f393704",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "94df45f7-5287-4098-b1d6-08cbf669e2c5",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "2abc7af3-384b-458c-86be-6a8d8243ca60",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "5ae10119-4faf-4049-b8c0-905f31f3ef15",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "d0b2d101-1aa1-4583-b99a-5ac90a7d6b5c",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "12fbe51f-d5bb-44fc-b92d-39f45bbcf63f",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "fa2bc65a-a4a8-4dc1-b8b6-e2cd93e868dc",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "15269e76-8b18-49e5-8711-ed6b66b4cf04",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "729a57ef-dc47-477c-a0bc-2bdb98e3ffe4",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "6af6ca0f-78b8-4230-97d9-3d647f812c1e",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "23ba695f-27c6-41dc-8555-76a3babc538d",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    },
+    {
+      "claim_id": "8f94dae0-0402-437d-adf1-3e788195965a",
+      "result_id": "077d28e5-26df-4c96-a800-2d013e797304"
+    }
+  ],
+  "comparisons": []
+}

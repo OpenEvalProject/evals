@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors developed and implemented a novel experimental paradigm combining invasive microelectrode recordings from 6 cortical areas in macaques, custom high-density monkey EEG (65 channels), and human MEG (275 channels) during presentation of colored random dot kinematograms with varying motion direction and color.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with specific technical details including electrode counts, recording parameters, subject numbers, and stimulus counts. The development of human-comparable monkey EEG using custom caps is a key technical innovation that is adequately described. Ethical approvals and detailed recording parameters support the validity of the experimental setup.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C74"
+    ],
+    "result": "Motion direction and color information were successfully decoded from all signal types (SUA, MUA, LFP, monkey EEG, human MEG) across multiple cortical areas, with strongest information in MT for motion and V4 for color, but ubiquitous representation across areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 provide converging evidence with statistical support (p<0.05, cluster permutation) for information presence across all signal types. The finding of area-specific specialization (C20) combined with widespread representation (C21) is consistent with known visual system organization and supported by appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C6",
+      "C91"
+    ],
+    "result": "Information strength decreased along the cortical hierarchy in invasive recordings, and source-level searchlight analysis revealed corresponding gradients in monkey EEG and human MEG with strongest information in early visual/occipital areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hierarchical gradient is demonstrated through multiple converging lines of evidence: invasive recordings (C24), source reconstruction in both species (C25), and statistical confirmation through correlation analysis (C32). The use of detailed finite element models for source reconstruction (C161) strengthens these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Information latencies followed the visual processing hierarchy, with color information rising earlier than motion direction information in most areas, and this pattern was consistent across invasive recordings, monkey EEG, and human MEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Latency estimates are provided with specific values and statistical support (C26-C28, C30). The consistency with previous work (C29) and correlation with anatomical position (C32, p=10^-15 to 10^-20) provide strong validation. The searchlight analysis (C31) confirms spatial gradients consistent with the hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Color decoding from MEG/EEG represents a novel finding, and control experiments ruled out luminance confounds as the primary explanation for color classification in both humans and macaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim (C35) is appropriately qualified with 'to our knowledge.' Two independent control experiments address luminance confounds: cross-classification in humans (C36-C39) showing above-chance performance and similar confusion matrices, and psychophysical validation in macaques (C154-C156) confirming perceptual equiluminance. These controls are methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C157"
+    ],
+    "result": "Monkey EEG showed more color than motion information while human MEG showed the opposite pattern, but simultaneous human EEG/MEG recordings demonstrated this difference was not due to recording modality but rather to species or stimulus presentation differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The species difference is consistently observed across all sessions (C43-C44). The critical control experiment (C42, C45, C157) using simultaneous MEG/EEG in one human subject shows both modalities exhibit the same pattern, effectively ruling out measurement modality as the explanation. This is a well-designed control that strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Representational similarity analysis revealed that color representations were similar across all areas and signal types, while motion direction representations split into ventral (V4/IT) and dorsal/frontal groups. Monkey EEG and human MEG motion representations matched V4/IT but not MT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RSA analysis is methodologically sound with appropriate statistical testing (permutation with 10,000 iterations, C164). The finding that EEG shows no similarity to MT despite MT containing substantial motion information (C53, p>0.82) is a key result supported by multiple statistical comparisons (C52: p<0.05 corrected). The cross-species similarity (C57: r=0.83 for color, r=0.69 for motion) provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C165",
+      "C166"
+    ],
+    "result": "Color representations showed unimodal tuning matching perceptual similarity across all areas and species, while motion direction representations in V4, IT, monkey EEG, and human MEG showed bimodal tuning (orientation selectivity), with bimodality explaining 28% of variance in representational similarity for motion but not color.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bimodality analysis is quantitatively rigorous (C165) with clear statistical significance for motion in V4/IT/EEG/MEG (C65) but not for dorsal/frontal areas or color (C66). The regression analysis (C67: R\u00b2=0.28, p=0) demonstrates bimodality's explanatory power for motion, while the lack of effect for color (C68: R\u00b2=0, p=0.99) serves as an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Bimodal motion direction tuning was present at the level of individual units in V4 (p=10^-9 to 10^-11) but not MT (p>0.31), indicating the effect stems from single-unit properties rather than large-scale organizational anisotropies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-unit analysis (C71-C73) provides strong statistical evidence with highly significant p-values for V4 and clear non-significance for MT. This directly addresses the mechanistic question and rules out alternative explanations based on spatial organization. The logic connecting multi-scale observations to single-unit properties (C70) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C78",
+      "C79",
+      "C89",
+      "C120"
+    ],
+    "result": "The authors conclude that MEG and EEG signals are dominated by early visual and ventral stream areas (particularly V4), with minimal contribution from dorsal areas like MT, based on converging evidence from tuning similarity, information gradients, and latency patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While multiple lines of evidence support ventral stream dominance (tuning similarity C4, information gradients C24-C25, latencies C26-C32, bimodality C65-C69), the authors appropriately acknowledge limitations (C86-C89). The conclusion is constrained by: (1) limited sampling of visual areas (no V1, V2, V3), (2) simple stimulus space leading to similar tuning across areas (C88), and (3) inability to definitively exclude contributions from unrecorded areas with similar tuning. The inference is reasonable but not unequivocal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C92",
+      "C93",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors acknowledge that their results do not unequivocally identify MEG/EEG sources, noting that color and motion representations extend beyond recorded areas, many areas likely show similar tuning for simple stimuli, and additional recordings from early visual areas (particularly V1) are needed for definitive source identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents an appropriately critical self-assessment of the study's limitations. The authors correctly note that RSA can only identify areas with similar tuning (C89), not definitively identify sources. The discussion of V1's potential contribution is balanced, noting both supporting evidence (bimodal motion tuning C92) and contradictory evidence (color representation structure C93). The call for additional recordings (C99) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C121"
+    ],
+    "result": "High-density monkey EEG serves as a 'bridge technology' linking invasive recordings to human MEG, enabling disentanglement of species versus measurement modality effects, representing a methodological advance over previous sparse-electrode primate EEG studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological innovation is well-supported: 65-channel coverage (C18, C138) versus previous few-electrode studies (C101), human-comparable methods enabling source reconstruction (C100), and successful demonstration of the approach's utility in resolving the species/modality question (C103). The proof-of-principle claim (C121) is appropriately modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Linear discriminant analysis with cross-validation was used for multivariate classification, with cluster permutation testing for significance and latency defined as half-peak performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis methods are clearly described with appropriate statistical controls. The use of 10-fold cross-validation for EEG/MEG (C149) and 2-fold for invasive recordings (C150) is justified by trial availability. Cluster permutation testing (C151) is an appropriate method for controlling multiple comparisons in time-series data. However, the choice of 2-fold cross-validation for invasive data is suboptimal and may lead to overfitting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Source reconstruction used individual anatomical MRIs to create realistic head models: single-shell models for MEG and detailed finite element models incorporating six tissue types (including titanium headposts) for monkey EEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The source reconstruction methodology is appropriately detailed and uses state-of-the-art approaches. The inclusion of titanium headposts in the monkey EEG model (C161) is a critical detail that enhances accuracy. The use of individual anatomical models (C159) rather than templates is a strength. Methods are supported by appropriate citations (C160, C161).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Color and motion information was found across all measured areas rather than being restricted to specialized regions, though information strength varied by area. Decoding accuracies were lower than some previous reports, attributed to paradigm and analysis differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The widespread representation finding (C80) is consistent with cited prior work and the current data (C21). The comparison to previous studies (C82) is appropriately qualified, with reasonable explanations for differences (C83): simultaneous vs. pseudo-population recording, single-trial vs. discrete classification, rapid stimulus presentation, and passive vs. active task. These are plausible methodological factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C84",
+      "C85"
+    ],
+    "result": "The successful decoding of color and motion from MEG/EEG is consistent with prior work showing columnar-scale features can propagate to non-invasive signals and with known clustering of color and motion selectivity in visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contextualization with prior literature is appropriate. The citations support that columnar features can be decoded (C33, C34) and that color/motion clustering exists (C84). The inference that decoding reflects true feature-related signals rather than confounds (C85) is reasonable given the control experiments, though this claim is somewhat circular.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors discuss but ultimately discount MT as a dominant source of bimodal motion signals, noting that while MT columns with opposite directions are spatially close (potentially reducing decodability), motion direction has been successfully decoded from MT in fMRI, and motion representations are widespread across visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents a balanced discussion of alternative explanations. The spatial organization of MT (C94) is well-established by citations. The speculation about reduced decodability (C95) is appropriately qualified as 'in principle.' The counter-evidence from fMRI (C96) and widespread motion representations (C97) provide reasonable grounds for the conclusion, though the argument is not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Monkey EEG has practical advantages including low marginal cost when added to existing invasive experiments, non-invasiveness, use of standard human tools, and no additional training requirements, comparing favorably to the alternative of invasive human recordings which are constrained by medical necessity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These practical considerations are reasonable assessments based on the described methods. The claims about cost and training (C104-C105) are plausible given the methodology. The comparison to human invasive recordings (C106) accurately describes a real constraint in the field. However, these are somewhat subjective assessments rather than empirically tested claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors propose that information-based analyses provide a general framework for linking measurement scales and species, with potential future applications to spectral signatures and eventual establishment of transfer functions between circuit activity and non-invasive signals, addressing the ill-posed inverse problem through multi-scale constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents a reasonable discussion of the broader implications and future directions. The claims about information-based analyses (C107-C110) are supported by appropriate citations. The discussion of spectral signatures (C112-C114) and transfer functions (C115) is appropriately speculative. The acknowledgment of the inverse problem (C116) and the proposed solution through multi-scale recordings (C117) is conceptually sound, though the practical realization remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors establish the motivation for their study by noting limitations in source reconstruction, the separation between invasive and non-invasive fields, rarity of comparable cross-scale experiments, recent viability of massively parallel recordings, and limitations of previous animal EEG studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations and represent accurate characterizations of the field. The statements about source reconstruction limitations (C7), field separation (C8-C9), and technical developments (C10-C11) are supported by relevant citations and general knowledge. This provides appropriate context for the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "Single-channel tuning curves were estimated using one-way ANOVAs (p<0.05) to select informative channels, with analyses performed in MATLAB using custom code and the Fieldtrip and SPM toolboxes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods for single-channel analysis are clearly described with appropriate statistical thresholds. The software documentation (C168) with citations provides reproducibility information. However, the use of uncorrected p<0.05 for channel selection (C167) may lead to false positives, though this is a common practice for exploratory analysis.",
+    "result_type": "MINOR"
+  }
+]

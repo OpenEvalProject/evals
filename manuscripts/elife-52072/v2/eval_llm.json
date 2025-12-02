@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C87",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "An ensemble forecasting niche modelling approach using six algorithms (ANN, GAM, GBM, GLM, MARS, MAXENT) was applied to model the climatic suitability of 11 triatomine species globally. The models achieved high predictive performance with AUC values >0.9, with GBM and GAM performing particularly well. Occurrence data from 4,155 unique points (ranging from 31 to 1,180 per species) were obtained from a published atlas matching the 1970-2000 climate data period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C55-C58, C87, and C118-C122 collectively describe a methodologically sound modeling approach. The ensemble method is well-established (C32, C87), the data source is comprehensive and temporally matched (C86, C120-C122), and model performance metrics (AUC >0.9) indicate strong predictive capacity (C55-C58). The approach is appropriate for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Global species distribution modeling revealed distinct climatic preferences among triatomine species. Three species (R. brethesi, R. ecuadoriensis, T. maculata) are limited to tropical climates, six species (T. brasiliensis, P. geniculatus, P. megistus, R. prolixus, T. dimidiata, T. rubrofasciata) find suitable conditions in broad tropical/subtropical regions, and two temperate species (T. sordida, T. infestans) show potential distribution in temperate regions including Europe, Australia, and New Zealand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 present the core modeling results with specific geographic projections for each species, supported by Figure 1 and Figure 2. The results are internally consistent and represent the primary output of the ensemble modeling approach. The geographic patterns align with known species ecology and the model validation (C43, C52-C54, C84) supports these projections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C102"
+    ],
+    "result": "Potential hotspots of triatomine species diversity were identified in tropical and subtropical regions between 21\u00b0N and 24\u00b0S latitude, with species richness varying from 0-7 species. In Africa, diversity hotspots are projected north and south of the equator in tropical savannah climates. Some species could find suitable conditions in temperate regions like Portugal, Spain, and eastern Australia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C48, and C102 describe the diversity analysis based on combining binary model outputs (Figure 3). The latitudinal pattern (21\u00b0N to 24\u00b0S) is consistent with known tropical diversity gradients (C95-C96) and the methodology is clearly described. The findings are supported by the individual species models (C33-C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C41",
+      "C42",
+      "C107"
+    ],
+    "result": "T. rubrofasciata and T. infestans show climatic suitability outside the Americas. T. rubrofasciata is projected to find suitable conditions in coastal areas throughout Latin America, Africa, and Southeast Asia. T. infestans shows potential spread in Europe, western Australia, and New Zealand. T. rubrofasciata is identified as the potentially most perilous source of autochthonous Chagas infections outside the Americas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C41, C42, and C107 identify key species with global distribution potential. The projections are supported by model validation showing almost all T. rubrofasciata occurrence points fall within suitable areas (C52-C54, C91, C94). However, C107's inference about T. rubrofasciata being 'most perilous' is somewhat speculative given that no autochthonous transmission has been documented outside the Americas (C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C75",
+      "C103",
+      "C104",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Temperature seasonality (BIO4) was identified as the most important bioclimatic variable for all species, followed by minimum temperature of coldest month (BIO6) and maximum temperature of warmest month (BIO5). Precipitation variables (BIO13, BIO14, BIO15) had subordinate influence. These findings align with prior studies and are attributable to physiological limiting factors like temperature-dependent development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C75, C103-C104, and C114-C117 describe variable importance analysis results that are consistent with cited literature (C103, C114-C117). The finding that temperature variables dominate over precipitation is clearly stated and supported by the modeling approach. The physiological explanation (C104) is reasonable though somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C91",
+      "C94"
+    ],
+    "result": "Model validation for T. rubrofasciata showed that almost all occurrence points with coordinates fall within climatically suitable areas. A few points in less suitable areas (Singapore, Okinawa) likely represent introduction via trade routes. Every country where T. rubrofasciata has been reported contains at least one climatically suitable area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C91, and C94 describe independent validation results that support model accuracy outside the training region (Americas). The explanation for occurrences in less suitable areas (C53, C92) is reasonable given T. rubrofasciata's association with shipping routes (C22-C26). This validation strengthens confidence in global projections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C84",
+      "C85"
+    ],
+    "result": "The projected climatic suitability reflects realized species distribution in South America exceptionally well, though for some species (e.g., T. dimidiata) modeled suitability exceeds current occurrence. Discrepancies may be due to non-climatic factors like dispersal limitations, interspecific competition, or vector control measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C84-C85 provide critical evaluation of model performance against observed distributions. The acknowledgment of model overestimation in some areas (C44-C45) and discussion of potential causes (dispersal, competition, control measures) demonstrates appropriate scientific caution. This strengthens rather than weakens the overall findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Climate data limitations include that explanatory variables are only available up to 2000, potentially underestimating distribution of thermophilic species. Clamping masks indicate projection uncertainty in extreme environments (deserts, Antarctica) where climate variables exceed training ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 appropriately identify methodological limitations. The temporal mismatch between climate data (1970-2000) and current conditions (C88) is a valid concern, though the authors note this may only cause slight shifts. The clamping mask analysis (C89-C90) properly identifies regions where extrapolation occurs and projections are uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Different triatomine species exhibit varying ecological characteristics and vector potentials. Species range from sylvatic with low domestic vector potential (R. brethesi) to highly anthropophilic with exceptional domestic behavior (T. infestans, R. prolixus). Some species show geographic variation in behavior and T. cruzi infection rates (T. maculata).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C80 provide ecological context for the modeled species, all supported by appropriate citations. This background information is essential for interpreting the public health significance of the distribution models. The characterizations are consistent with established literature on triatomine ecology and vector competence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "A direct correlation exists between temperature and triatomine species richness, with diversity increasing from poles to equator, particularly pronounced in the southern hemisphere of South America. The relationship between diversity and Chagas transmission is non-linear, with peaks at both high and low diversity due to the balance between key vector species and secondary species contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 discuss diversity-transmission relationships based on cited literature (Rodriguero and Gorla 2004; P\u00e9neau et al. 2016). The latitudinal diversity gradient (C95-C96) is well-established. The non-linear diversity-transmission relationship (C97-C101) provides important context for interpreting the diversity maps, though this is based on prior work rather than new analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Triatominae are vectors for T. cruzi causing Chagas disease, with 152 species distributed mainly in Central and South America but with some species in the Old World. The disease affects 6-7 million people globally, causes significant morbidity and economic loss ($7.19 billion/year), and has spread to non-endemic countries through migration, though vector-borne transmission remains limited to the Americas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide essential background on Triatominae, Chagas disease epidemiology, and current distribution. All claims are supported by appropriate citations or represent established knowledge. This contextual information justifies the study's importance and frames the research question appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Triatomines can be passively transported via shipping and air routes. T. rubrofasciata is the most widely distributed species, occurring in both New and Old World, likely spread along 16th-19th century shipping routes through association with domestic rats. Previous studies focused on the Americas, with a knowledge gap regarding climatic suitability outside the Americas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 establish the rationale for global modeling by documenting passive dispersal mechanisms (C22, C29), T. rubrofasciata's unique distribution (C23-C24), historical spread patterns (C25-C26), and the knowledge gap this study addresses (C30-C31). All claims are appropriately cited and logically support the study's objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Despite T. rubrofasciata's wide distribution and ability to transmit T. cruzi, no autochthonous Chagas transmission has been documented outside the Americas. However, older triatomine instars can survive months without blood meals, potentially surviving long-distance transport. Significant numbers of infected individuals exist in non-endemic regions (>80,000 in Europe/Western Pacific, >300,000 in USA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 highlight the current situation and future risk. The absence of documented transmission outside the Americas (C108) is important context for interpreting the risk posed by suitable climates. The survival capacity (C109) and presence of infected individuals in non-endemic areas (C110-C113) support the public health relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Previous niche modeling studies predicted distributional shifts for triatomine species in the Americas under future climate conditions, including northern shifts for T. gerstaeckeri and T. sanguisuga in the United States, with similar studies conducted in Brazil, Mexico, Colombia, Chile, and Venezuela.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 appropriately cite prior modeling work to contextualize the current study. These claims establish that while regional modeling has been done in the Americas, the global perspective of the current study represents a novel contribution (supporting C30-C31).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The occurrence data used were taken from a published atlas of Chagas disease vectors and represent a comprehensive and reliable source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 asserts data quality based on citations to Carcavallo et al. 1998 and Fergnani et al. 2013. This is supported by the comparison showing the dataset encompasses other available data (C121) and temporal matching with climate variables (C122). The data source appears appropriate and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Occurrence points of T. rubrofasciata in areas with less projected suitability (Singapore, Okinawa) may represent introductions via shipping/air transport rather than established populations, though population establishment status is uncertain for some locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 offer speculative explanations for model-observation mismatches. While the shipping/transport explanation is plausible given T. rubrofasciata's history (C22-C26), these remain inferences without direct evidence. The acknowledgment of uncertainty (C93) is appropriate, but these claims represent hypotheses rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The relative importance of temperature versus precipitation on triatomine distribution appears species-specific and dependent on ecological factors. For example, high relative humidity is crucial for T. vitticeps development in Atlantic forests despite its lifecycle not being water-bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 acknowledge species-specific variation in climate drivers, supported by appropriate citations. This nuance is important for interpreting the variable importance results (C49-C51) and demonstrates awareness that the general patterns may not apply uniformly across all species.",
+    "result_type": "MINOR"
+  }
+]

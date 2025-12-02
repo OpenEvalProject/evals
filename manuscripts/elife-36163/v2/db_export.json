@@ -1,0 +1,2476 @@
+{
+  "submission": {
+    "id": "d96ea388-101f-42aa-a25c-3726abe16133",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:48:29.509440Z",
+    "updated_at": "2025-12-02T07:48:29.509440Z"
+  },
+  "content": [
+    {
+      "id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "submission_id": "d96ea388-101f-42aa-a25c-3726abe16133",
+      "content_type": "manuscript",
+      "content_text": "# Why we need to report more than 'Data were Analyzed by t-tests or ANOVA'\n\n## Authors\n\n- Tracey L Weissgerber<sup>1</sup> ([ORCID: 0000-0002-7490-2600](https://orcid.org/0000-0002-7490-2600)) \u2020\n- Oscar Garcia-Valencia<sup>1</sup> ([ORCID: 0000-0003-0186-9448](https://orcid.org/0000-0003-0186-9448))\n- Vesna D Garovic<sup>1</sup> ([ORCID: 0000-0001-6891-0578](https://orcid.org/0000-0001-6891-0578))\n- Natasa M Milic<sup>1</sup>\n- Stacey J Winham<sup>4</sup> ([ORCID: 0000-0002-8492-9102](https://orcid.org/0000-0002-8492-9102))\n\n### Affiliations\n\n1. Division of Nephrology and Hypertension Mayo Clinic Rochester United States\n2. QUEST Charit\u00e9 - Universit\u00e4tsmedizin Berlin, Berlin Institutes of Health Berlin Germany\n3. Department of Medical Statistics & Informatics Medical Faculty, University of Belgrade Belgrade Serbia\n4. Division of Biomedical Statistics & Informatics Mayo Clinic Rochester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransparent reporting is essential for the critical evaluation of studies. However, the reporting of statistical methods for studies in the biomedical sciences is often limited. This systematic review examines the quality of reporting for two statistical tests, t-tests and ANOVA, for papers published in a selection of physiology journals in June 2017. Of the 328 original research articles examined, 277 (84.5%) included an ANOVA or t-test or both. However, papers in our sample were routinely missing essential information about both types of tests: 213 papers (95% of the papers that used ANOVA) did not contain the information needed to determine what type of ANOVA was performed, and 26.7% of papers did not specify what post-hoc test was performed. Most papers also omitted the information needed to verify ANOVA results. Essential information about t-tests was also missing in many papers. We conclude by discussing measures that could be taken to improve the quality of reporting.\n\n## Introduction\n\nThe inability to reproduce key scientific results in certain areas of research is a growing concern among scientists, funding agencies, journals and the public (Nature, 2013; Fosang and Colbran, 2015; National Institutes of Health, 2015a; National Institutes of Health, 2015b; Nature, 2017). Problems with the statistical analyses used in published studies, along with inadequate reporting of the experimental and statistical techniques employed in the studies, are likely to have contributed to these concerns. Older studies suggest that statistical errors, such as failing to specify what test was used or using incorrect or suboptimal statistical tests, are common (M\u00fcllner et al., 2002; Ruxton, 2006; Strasak et al., 2007), and more recent studies suggest that these problems persist. A study published in 2011 found that half of the neuroscience articles published in five top journals used inappropriate statistical techniques to compare the magnitude of two experimental effects (Nieuwenhuis et al., 2011). A more recent study of papers reporting the results of experiments that examined the effects of prenatal interventions on offspring found that the statistical analyses in 46% of the papers were invalid because authors failed to account for non-independent observations (i.e., animals from the same litter; Lazic et al., 2018). Many studies omit essential details when describing experimental design or statistical methods (Real et al., 2016; Lazic et al., 2018). Errors in reported p-values are also common and can sometimes alter the conclusions of a study (Nuijten et al., 2016).\n\nA main principle of the SAMPL guidelines for reporting statistical analyses and methods in the published literature is that authors should \"describe statistical methods with enough detail to enable a knowledgeable reader with access to the original data to verify the reported results\" (Lang and Altman, 2013). However, these guidelines have not been widely adopted.\n\nClear statistical reporting also allows errors to be identified and corrected prior to publication. The journal Science has attempted to improve statistical reporting by adding a Statistical Board of Reviewing Editors (McNutt, 2014). Other journals, including Nature and affiliated journals (Nature, 2013; Nature, 2017), eLife (Teare, 2016) and The EMBO Journal (EMBO Press, 2017) have recently implemented policies to encourage transparent statistical reporting. These policies may include specifying which test was used for each analysis, reporting test statistics and exact p-values, and using dot plots, box plots or other figures that show the distribution of continuous data.\n\nT-tests and analysis of variance (ANOVA) are the statistical bread-and-butter of basic biomedical science research (Strasak et al., 2007). However, statistical methods in these papers are often limited to vague statements such as: \"Data were analyzed by t-tests or ANOVA, as appropriate, and statistical significance was defined as p<0.05.\" There are several problems with such descriptions. First, there are many different types of t-tests and ANOVAs. Vague statistical methods deprive reviewers, editors and readers of the opportunity to confirm that an appropriate type of t-test or ANOVA was used and that the results support the conclusions in the paper. For\u00a0example, if authors use an unpaired t-test when a paired t-test is needed, the failure to account for repeated measurements on the same subject will lead to an incorrect p-value. Analyses that use inappropriate tests give potentially misleading results because the tests make incorrect assumptions about the study design or data and often test the wrong hypothesis. Without the original data, it is difficult to determine how the test results would have been different had an appropriate test been used. Clear reporting allows readers to confirm that an appropriate test was used and makes it easier to identify and fix potential errors prior to publication.\n\nThe second problem is that stating that tests were used \"as appropriate\" relies on the assumption that others received similar statistical training and would make the same decisions. This is problematic because it is possible to complete a PhD without being trained in statistics: only 67.5% of the top NIH-funded physiology departments in the United States required statistics training for some or all PhD programs that the department participated in (Weissgerber et al., 2016a). When training is offered, course content can vary widely among fields, institutions and departments as there are no accepted standards for the topics that should be covered or the level of proficiency required. Moreover, courses are rarely designed to meet the needs of basic scientists who work with small sample size datasets (Vaux, 2012; Weissgerber et al., 2016a). Finally, these vague statements fail to explain why t-tests and ANOVA were selected, as opposed to other techniques that can be useful for small sample size datasets.\n\nThis systematic review focuses on the quality of reporting for ANOVA and t-tests, which are two of the most common statistical tests performed in basic biomedical science papers. Our objectives were to determine whether articles provided sufficient information to determine which type of ANOVA or t-test was performed and to verify the test result. We also assessed the prevalence of two common problems: i) using a one-way ANOVA when the study groups could be divided into two or more factors, and ii) not specifying that the analysis included repeated measures or within-subjects factors when ANOVA was performed on non-independent or longitudinal data.\n\nTo obtain our sample two reviewers independently examined all original research articles published in June 2017 (n = 328, Figure 1) in the top 25% of physiology journals, as determined by 2016 journal impact factor (see Methods for full details). Disagreements were resolved by consensus. 84.5% of the articles (277/328) included either a t-test or an ANOVA, and 38.7% of articles (127/328) included both. ANOVA (n = 225, 68.6%) was more common than t-tests (n = 179, 54.5%). Among papers that reported the number of factors for at least one ANOVA, most were using a maximum of one (n = 112, 49.8%) or two (n = 69, 30.7%) factors. ANOVAs with three or more factors were uncommon (n = 6, 2.7%). This approach involved a number of limitations. All the journals in our sample were indexed in PubMed and only published English language articles, so our results may not be generalizable to brief reports, journals with lower impact factors, journals that publish articles in other languages, or journals that are not indexed in PubMed. Further research is also needed to determine if statistical reporting practices in other fields are similar to what we found in physiology.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36163/elife-36163-fig1-v2.jpg)\n\n**Figure 1.:** The flow chart illustrates the selection of articles for inclusion in this analysis at each stage of the screening process.\n\n## Can we determine which type of ANOVA was performed?\n\nWhile ANOVA encompasses a wide variety of techniques, basic biomedical science papers generally use one and two-way ANOVAs, with or without repeated measures. We focused on reporting requirements for these basic tests, as more complex types of ANOVA were rare in our dataset (<3%; Figure 1\u2014source data 1). Authors need to report three key pieces of information to allow readers to confirm that the type of ANOVA that was used is appropriate for the study design (see Box 1 for terminology and Box 2 for a detailed description of what should be reported). Many papers were missing some or all of this information (Figure 2). 213 papers (95% of the papers that used ANOVA) did not contain all information needed to determine what type of ANOVA was performed, including the names and number of factors and whether each factor was entered as a between-subjects or within-subjects factor.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36163/elife-36163-fig2-v2.jpg)\n\n**Figure 2.:** The figure illustrates the proportion of papers in our sample that reported information needed to determine what type of ANOVA was performed, including the number of factors, the names of factors, and the type of post-hoc tests. The top panel presents the proportion of all papers that included ANOVA (n = 225). 'Sometimes' indicates that the information was reported for some ANOVAs but not others. The bottom row examines the proportion of papers that specified whether each factor was between vs. within-subjects. Papers are subdivided into those that reported using repeated measures ANOVA (n = 41), and those that did not report using repeated measures ANOVA (n = 184). RM: repeated measures.\n\n### The number of factors included in the ANOVA and the names and levels of each factor\n\n16.9% of papers (38/225) failed to specify how many factors were included for any ANOVA performed in the paper. 54% of papers did not specify which factors were included in any ANOVA, whereas fewer than half of papers specified which factors were included for some (n = 13, 5.8%) or all (n = 90, 40%) ANOVAs reported in the manuscript.\n\nOur data suggest that reporting the number, names and levels of factors may be particularly important to determine whether the statistical test is appropriate for the study design. Among papers that used one-way ANOVAs, 60.9% (67/110) used a one-way ANOVA for an analysis where the study design included two or more factors. (Note: Two papers that reported using a maximum of one factor in the ANOVA were excluded, as these papers also included a repeated measures ANOVA with an unknown number of factors.) For\u00a0example,\u00a0investigators might have used a one-way ANOVA to compare four independent groups: wild-type mice that received vehicle (placebo), wild-type mice that received a treatment, knockout mice that received vehicle (placebo), and knockout mice that received a treatment. This approach may be appropriate for extremely small sample sizes, as these datasets may not have enough power for an ANOVA with two or more factors. In most cases, however, a two-way ANOVA with mouse strain (wild-type vs. knockout) and treatment (placebo vs. treatment) as factors may provide more information. Figure 3 and Figure 4 show the difference between these two approaches and illustrate how the two-way ANOVA may offer additional insight. The two-way ANOVA allows investigators to examine the effects of both factors simultaneously and may help investigators to avoid unnecessary post-hoc tests. If the sample size is large enough, the two-way ANOVA can test for an interaction between the two factors (i.e., whether the effect of mouse strain depends on treatment).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36163/elife-36163-fig3-v2.jpg)\n\n**Figure 3.:** The two-way ANOVA allows investigators to determine how much of\u00a0the variability explained by the model is attributed to the first factor, the second factor, and the interaction between the two factors. When a one-way ANOVA is used for a study with two factors, this information is missed because all variability explained by the model is assigned to a single factor. We cannot determine how much variability is explained by each of the two factors, or test for an interaction. The simulated dataset includes\u00a0four groups \u2013 wild-type mice receiving placebo (closed blue circles), wild-type mice receiving an experimental drug (open blue circles), knockout mice receiving placebo (closed red circles) and knockout mice receiving an experimental drug (open red circles). The same dataset was used for all four examples, except that means for particular groups were shifted to show a main effect of strain, a main effect of treatment, and interaction between strain and treatment or no main effects and no interaction. One- and two-way (strain x treatment) ANOVAs were applied to illustrate differences between how these two tests interpret the variability explained by the model.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36163/elife-36163-fig4-v2.jpg)\n\n**Figure 4.:** This figure compares key features of one- and two-way ANOVAs to illustrate potential problems with using a one-way ANOVA for a design with two or more factors. When used for a study with two factors, the one-way ANOVA incorrectly assumes that the groups are unrelated, generates a single p-value that does not provide information about which groups are different, and does not test for interactions. The two-way ANOVA correctly interprets the study design, which can increase power. The two-way ANOVA also allows for the generation of a set of p-values that provide more information about which groups may be different, can test for interactions, and may eliminate the need for unnecessary post-hoc comparisons. This figure uses an experimental design with four groups (wild-type mice receiving placebo, wild-type mice receiving an experimental drug, knockout mice receiving placebo and knockout mice receiving an experimental drug). See Figure 2 for a detailed explanation of the material in the statistical implications section. KO: knockout; WT: wild-type; Pla: placebo.\n\n### Whether each factor was entered as a between (independent) or within (non-independent) subjects factor\n\nAmong the 18.2% of papers (41/225) that reported using repeated measures ANOVA, 63.4% (n = 26) did not specify whether each factor was entered as a between or within-subjects factor. Many of the 15 papers that provided adequate information reported using one-way repeated measures ANOVA. When the ANOVA only includes one factor, stating that repeated measures were used demonstrates that this factor was treated as a within-subjects or non-independent factor. When a repeated measures ANOVA includes two or more factors, however, authors need to clearly report which factors were treated as between vs. within-subjects factors. A two-way repeated measures ANOVA could refer to two different tests \u2013 an ANOVA with two within-subjects factors, or an ANOVA with one within-subjects factor and one between-subjects factor (Box 1).\n\nThe remaining 81.8% of papers that included ANOVA did not indicate whether repeated measures were used. Only one of these papers stated that all factors were entered as between-subjects factors (1/184, 0.5%). If repeated measures or within-subjects factors are not mentioned, one would typically assume that all factors were independent or between-subjects. Our data suggest that scientists should be cautious about this assumption, as 28.3% of papers that did not indicate that repeated measures were used (52/184) included at least one ANOVA that appeared to require repeated measures. There is no way to distinguish between papers that used the wrong test and papers that failed to clearly specify which test was used. Figure 5 illustrates the differences between these two tests. Failing to account for repeated measures in an ANOVA makes it less likely that investigators will detect an effect, as the variability that can be attributed to individual subjects remains unexplained. To avoid confusion, we recommend that reviewers, editors and journal guidelines encourage authors to specify whether each factor was entered as between or within-subjects factor, even if the paper does not include a repeated measures ANOVA.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36163/elife-36163-fig5-v2.jpg)\n\n**Figure 5.:** This figure highlights the differences between ANOVA with vs. without repeated measures and illustrates the problems with using an ANOVA without repeated measures when the study design includes longitudinal or non-independent measurements. These two tests interpret the data differently, test different hypotheses, use information differently when calculating the test statistic, and give different results.\n\n### The type of post-hoc test that was performed\n\nClear reporting of post-hoc testing procedures allows readers to determine how the authors decided whether to use post-hoc tests, what type of post-hoc tests were performed and whether the tests results were adjusted for multiple comparisons. 72.8% of papers (164/225) stated what test was used to examine pairwise differences after performing an ANOVA (such\u00a0as Tukey\u00a0and Bonferroni). The remaining 27.1% of papers (61/225) did not specify what type of post-hoc tests were performed.\n\n## Can we determine what type of t-test was performed?\n\nMany of the 179 papers that included a t-test were missing information that was needed to determine what type of t-test was performed, including whether the tests were paired or unpaired, or assumed equal or unequal variance.\n\n### Unpaired vs. paired t-tests\n\nOver half of the papers (53%; 95/179) did not specify whether any t-tests were paired or unpaired; a small proportion (2.2%; 4/179) provided this information for some but not all of\u00a0the t-tests in the paper. 69 of the 95 papers without any information on paired vs. unpaired t-tests reported that the Student\u2019s t-test was used. While the term Student\u2019s t-test traditionally refers to the unpaired t-test for equal variances, we identified numerous instances where authors referred to a paired t-test as a Student\u2019s t-test. Due to this confusion, we did not assume that the Student\u2019s t-test was unpaired unless the authors included additional terms like unpaired t-test or independent samples t-test. Figure 6 illustrates why clear reporting that allows readers to confirm that the correct test was used is essential. Unpaired and paired t-tests interpret the data differently, test different hypotheses, use different information to calculate the test statistic and usually give different results. If the incorrect test is used, the analysis tests the wrong hypothesis and the results may be misleading. Without the original data, it is difficult to determine how the test results would have been different had the appropriate tests been used.For\u00a0example, differencesbetween the results of the paired and unpaired t-tests depend on the strength of the correlation between paired data points (Figure 7), which is difficult or impossible to determine from line graphs that only show summary statistics.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36163/elife-36163-fig6-v2.jpg)\n\n**Figure 6.:** This figure highlights the differences between unpaired and paired t-tests by illustrating how these tests interpret the data differently, test different hypotheses, use information differently when calculating the test statistic, and give different results. If the wrong t-test is used, the result may be misleading because the test will make incorrect assumptions about the experimental design and may test the wrong hypothesis. Without the original data, it is very difficult to determine what the result should have been (see Figure 6).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/36163/elife-36163-fig7-v2.jpg)\n\n**Figure 7.:** The three datasets use different pairings of the values shown in the dot plot on the left. The comments on the right side of the figure illustrate what happens when an unpaired t-test is inappropriately used to compare paired, or related, measurements. We expect paired data to be positively correlated \u2013 two paired observations are usually more similar than two unrelated observations. The strength of this correlation will vary. We expect observations from the same participant to be more similar (strongly correlated) than observations from pairs of participants matched for age and sex. Stronger correlations result in greater discrepancies between the results of the paired and unpaired t-tests. Very strong correlations between paired data are unusual but are presented here to illustrate this relationship. We do not expect paired data to be negatively correlated \u2013 if this happens it is important to review the experimental design and data to ensure that everything is correct.\n\n### Equal vs. unequal variance\n\nWhen using unpaired t-tests, it is important to specify whether the test assumes that the variance is equal in both groups. The unpaired Student\u2019s t-test (also called the t-test for equal variances) assumes that the variance is similar in both groups, whereas the Welch\u2019s t-test (the t-test for unequal variances) assumes that variance differs between the two groups. If the variance is not estimated appropriately, the type I error is actually higher than advertised; this means that the null hypothesis is falsely rejected more often (Ruxton, 2006). Among the 155 papers that included unpaired t-tests, 64.5% (100/155) reported whether the test assumed equal variance for all unpaired t-tests and 6.5% (10/155) provided this information for some unpaired tests.\n\n## Papers rarely contain information needed to verify the test result\n\nReporting the test statistic (ANOVA: F-statistic, t-tests: t-statistic), degrees of freedom and exact p-values are important for several reasons. First, these values allow authors, reviewers and editors to confirm that the correct test was used. This is particularly important when the statistical methods do not provide enough information to determine which type of ANOVA or t-test was performed, which was common in our dataset. Second, reporting the degrees of freedom allows readers to confirm that no participants, animals or samples were excluded without explanation. A recent study found that more than two thirds of papers using animal models to study stroke or cancer did not contain sufficient information to determine whether animals were excluded, while 7-8% of papers excluded animals without explanation (Holman et al., 2016). Biased exclusion of animals or observations can substantially increase the probability of false positive results in small sample size studies. Third, this information allows authors and readers to verify the test result. In an analysis of psychology papers, over half reported at least one p-value that did not match the test statistic and degrees of freedom: this error was sufficient to alter the study conclusions in one out of eight papers (Nuijten et al., 2016). Authors and journal editors can eliminate these errors by double checking their results, or using software programs such as statcheck (Eskamp and Nuijten, 2016) to confirm that p-values match the reported test statistic and degrees of freedom. Unfortunately, the information needed to verify the test result is not reported in many papers.\n\nAmong the studies in our sample that included ANOVA (Figure 8), more than 95% failed to report the F-statistic or degrees of freedom. Moreover, 77.8% of these papers reported ranges of p-values (i.e., p>0.05, p<0.05, p<0.01), with just 50 papers reporting exact p-values (41 of 225 papers reported exact p-values for some ANOVAs, and 9 papers reported exact p-values for all ANOVAs). Among studies that included t-tests, 16 papers (8.9%) were excluded because abstractors were unable to determine what data were analyzed by t-tests or\u00a0to identify a two-group comparison. While most papers reported the sample size or degrees of freedom for some (16.6%) or all (76.7%) t-tests, t-statistics were missing from 95.7% of papers (Table 1). Moreover, 79.7% of the papers that included t-tests reported ranges of p-values instead of exact p-values.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/36163/elife-36163-fig8-v2.jpg)\n\n**Figure 8.:** This figure reports the proportion of papers with ANOVAs (n = 225) that reported the F-statistic, degrees of freedom and exact p-values. Sometimes indicates that the information was reported for some ANOVAs contained in the paper but not for others.\n\n**Table 1.**\n Reporting of details needed to verify the results of a t-test.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Reported t-statistic</th>\n      <th>Reported exact sample size or degrees of freedom</th>\n      <th>Reported exact p-values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>No</td>\n      <td>156 (95.7%)</td>\n      <td>11 (6.7%)</td>\n      <td>113 (69.3%)</td>\n    </tr>\n    <tr>\n      <td>Sometimes</td>\n      <td>0</td>\n      <td>27 (16.6%)</td>\n      <td>17 (10.4%)</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>7 (4.3%)</td>\n      <td>125 (76.7%)</td>\n      <td>33 (20.2%)</td>\n    </tr>\n  </tbody>\n</table>\n\n_We analyzed the 179 papers in our sample that included t-tests to check if they reported the details that are needed to verify the results of these tests: we had to exclude 16 papers from this analysis because we were unable to determine what data were analyzed by t-tests or to\u00a0identify a two-group comparison. Most of the papers (95.7%; 156/163) did not report the t-statistic (column 2) and over two-thirds (69.3%; 113/163) did not report exact p-values (column 4), but over three-quarters (76.7%; 125/163) reported the exact sample size or degree of freedom for all of the t-tests in the paper (column 3)._\n\n## Moving towards a more transparent and reproducible future\n\nThis systematic review demonstrates that t-tests and ANOVA may not be\u00a0so simple after all, as many papers do not contain sufficient information to determine why a particular test was selected, what type of test was used or to verify the test result. Selecting statistical tests that are not appropriate for the study design may be surprisingly common. Often, it is not possible to determine why statistical tests were selected, or whether other analyses may have provided more insight. Investigators frequently present data using bar or line graphs that only show summary statistics (Weissgerber et al., 2015) and raw data are rarely available. Many journals have recently introduced policies to encourage more informative graphics, such as dot plots, box plots or violin plots, that show the data distribution (Nature, 2017; Fosang and Colbran, 2015; Kidney International, 2017; PLOS Biology, 2016; Teare, 2016) and may provide insight into whether other tests are needed. Non-parametric tests, such as the Mann-Whitney U test, Wilcoxon sign rank test and Kruskal Wallis test, may sometimes be preferable as sample sizes in basic biomedical science research are often too small to determine the data distribution. However, these tests are not commonly used. A systematic review of physiology studies showed that 3.8% used only non-parametric tests to compare continuous data, 13.6% used a combination of parametric and non-parametric tests, and 78.1% of studies used only parametric tests (Weissgerber et al., 2015). A recent primer Hardin and Kloke, 2017 provides a brief overview of common statistical techniques, including non-parametric alternatives to t-tests and ANOVAs.\n\nRecently, fields such as psychology have\u00a0been moving away from a reliance on t-tests and ANOVAs towards more informative techniques, including effect sizes, confidence intervals and meta-analyses (Cumming, 2014). While p-values focus on whether the difference is statistically significant, effect sizes answer the question: \"how big is the difference?\" A published\u00a0tutorial provides more details on how to calculate effect sizes for t-tests and ANOVA (Lakens, 2013). Presenting confidence intervals provides more information about the uncertainty of the estimated statistic (i.e., mean, effect size, correlation coefficient). A guide to robust statistical methods in neuroscience examines a variety of newer methods to address the problems with hypothesis tests, and includes information on techniques that are suitable for studies with small sample sizes (Wilcox and Rousselet, 2018). Small, underpowered studies frequently produce inconclusive results that may appear to be contradictory. Meta-analyses combine these divergent results to provide a comprehensive assessment of the size and direction of the true effect (Cumming, 2014).\n\nThe findings of the present study highlight the need for investigators, journal editors and reviewers to work together to improve the quality of statistical reporting in submitted manuscripts. While journal policy changes are a common solution, the effectiveness of policy changes is unclear. In a study of life sciences articles published in Nature journals, the percentage of animal studies reporting the Landis 4 criteria (blinding, randomization, sample size calculation, exclusions) increased from 0% to 16.4% after new guidelines were released (Macleod and The NPQIP Collaborative group, 2017). In contrast, a randomized controlled trial of animal studies submitted to PLoS One demonstrated that asking authors to complete the ARRIVE checklist at the time of submission had no effect (Hair et al., 2018). Some improvements in reporting of confidence intervals, sample size justification and inclusion and exclusion criteria were noted after Psychological Science introduced new policies, although this may have been partially due to widespread changes in the field (Giofr\u00e8 et al., 2017). A joint editorial series published in the Journal of Physiology and British Journal of Pharmacology did not improve the quality of data presentation or statistical reporting (Diong et al., 2018). Statistical reporting requirements are not standard practice for many fields and journals in basic biomedical science, thus limiting the ability of readers to critically evaluate published research.\n\nOther possible solutions to improve reporting include strengthening and implementing reporting guidelines, and training editors, reviewers and investigators to recognize common problems. Box 2 lists statistical information that should be reported when presenting data that were analyzed by t-tests and ANOVA. Some journals have already begun offering unlimited word counts for methods sections to improve reporting (Nature, 2013), while others suggest putting additional information in supplemental methods. Creating open-source software programs that calculate word counts for the results section after excluding statistical information may also facilitate transparent reporting of statistical results. Encouraging public data archiving or interactive graphics that include all data (Ellis and Merdian, 2015; Weissgerber et al., 2016b; Weissgerber et al., 2017) may also strengthen reporting and reproducibility while facilitating data re-use.\n\n## Materials\u00a0and\u00a0methods\n\n### Systematic review of literature\n\nMethodology for the systematic review was similar to the approach outlined in our previous paper (Weissgerber et al., 2015). Physiologists perform a wide range of studies involving humans, animals and in vitro laboratory experiments; therefore we examined original research articles that were published in June 2017 in the top 25% of journals (n = 21) in the Physiology category in Journal Citation Reports as determined by 2016 journal impact factor; six journals that only publish review articles and one journal that did not publish a June issue were excluded. Each phase of screening and data abstraction was performed by two independent reviewers (TLW, OGV). Disagreements were resolved by consensus. Both reviewers screened all articles published in each journal between June 1 and June 30, 2017 to identify full length, original research articles (Figure 1 and Supplementary file 1). Full text articles were then reviewed and papers were excluded if they did not include new data, did not have a continuous outcome variable, or did not include an analysis of variance (ANOVA) or t-test. Eligible manuscripts and supplements were reviewed in detail to evaluate the following questions according to a predefined protocol (Supplementary file 2). This systematic review was conducted in accordance with those elements of the PRISMA guideline (Liberati et al., 2009) that are relevant to literature surveys.\n\n#### Questions asked for papers that included ANOVAs\n\n#### Questions asked for papers that included t-tests\n\n### Statistical analysis\n\nData are presented as n (%). The objective of this observational study was to assess standard practices for reporting statistical methods and results when data are analyzed by ANOVA; therefore no statistical comparisons were performed. Summary statistics were calculated using JMP (10.0.0, SAS Institute Inc., Cary, NC). Ethical approval was not required.\n",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "9ffd977d-f456-4d1d-b3e5-1adefa36b91e",
+      "submission_id": "d96ea388-101f-42aa-a25c-3726abe16133",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- M Dawn Teare, University of Sheffield United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36163.020](https://doi.org/10.7554/eLife.36163.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article 'Why We Need to Report More Than \"Data were Analyzed by t-tests or ANOVA\"' to eLife for consideration as a Feature Article. Your article has been reviewed by three peer reviewers, including Dawn Teare as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Peter Rodgers, the eLife Features Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andrew Althouse (Reviewer #2); Glenn Begley (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor and Features Editor have drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper is a systematic review of 328 papers published in June 2017 in 21 physiology journals. The authors focused on the use of t-tests and ANOVA. They conclude that key information was routinely absent. Similar studies have been published in the past that describe the problems with statistical analysis of scientific papers. However, with the change in Guidelines to Authors instituted by many journals over recent years, it might have been hoped that the situation had improved. Sadly, that does not appear to be the case. The paper includes several figures that demonstrate the challenges that arise when data is inappropriately analysed: these are very useful. The authors are to be congratulated on a clear, well-written, compelling study.\n\nEssential revisions:\n\nReviewer #1:\n\na) Given the authors are stating that reporting initiatives are urgently needed, it is a shame that they did not use the PRISMA guidelines to draft the manuscript. There are many reporting initiatives out there, we don't need new ones but rather we need to know how the existing ones can be improved. This paper has been written without much reference to those other initiatives.\n\nb) The manuscript selects instances where a t-test or an ANOVA have been performed. There is no mention of the use of non-parametric tests. Although there is some discussion of how to optimally use an ANOVA to examine interactions, the work tends to focus on being able to replicate exactly what has been done by providing more details. The article would benefit from some discussion of how to select the optimal analysis strategy given a research hypothesis.\n\nc) The checklist provided in box 2 does not have prompts for effect sizes and confidence intervals to be reported. Many of the new reporting guidelines that have been proposed recently directly encourage these to be reported rather than the F-test values and degrees of freedom. This is also missing from the ANOVA section. Again the article would benefit from some discussion of comparative statistics and confidence intervals.\n\nd) The final section ('Transparency: Where should we draw the line?') is missing the idea of reproducibility. Transparency is important for reproducibility. I would suggest including the following recommendation: There should be sufficient detail in a paper so that: i) a reader can understand why the author has selected the analysis methods they have; ii) a reader can repeat the analysis and get the same answer (if they have the raw data).\n\ne) Please expand the figure captions to better explain what is shown in each figure.\n",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "97d141ce-40f7-4c8b-88d0-c3bc4a8a68a0",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C1",
+      "claim": "Transparent reporting is essential for the critical evaluation of studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Transparent reporting is essential for the critical evaluation of studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle stated in the abstract without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "c5c9ac32-f4ab-4b05-938a-e6ff77da6e85",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C2",
+      "claim": "The reporting of statistical methods for studies in the biomedical sciences is often limited.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reporting of statistical methods for studies in the biomedical sciences is often limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the systematic review data presented in the manuscript showing missing information in statistical reporting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "67100fc9-e7cd-44c5-9303-b88b729fe7d5",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C3",
+      "claim": "Of the 328 original research articles examined, 277 (84.5%) included an ANOVA or t-test or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 328 original research articles examined, 277 (84.5%) included an ANOVA or t-test or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "b4355c20-d804-43e4-92fc-15e3b5b9d8d6",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C4",
+      "claim": "213 papers (95% of the papers that used ANOVA) did not contain the information needed to determine what type of ANOVA was performed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, papers in our sample were routinely missing essential information about both types of tests: 213 papers (95% of the papers that used ANOVA) did not contain the information needed to determine what type of ANOVA was performed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "838de6ef-196c-4d4e-a77f-0d7a72b5b52f",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C5",
+      "claim": "26.7% of papers did not specify what post-hoc test was performed.",
+      "claim_type": "EXPLICIT",
+      "source": "26.7% of papers did not specify what post-hoc test was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "1e89ebeb-c392-4093-bc84-f38317bf7470",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C6",
+      "claim": "The inability to reproduce key scientific results in certain areas of research is a growing concern among scientists, funding agencies, journals and the public.",
+      "claim_type": "EXPLICIT",
+      "source": "The inability to reproduce key scientific results in certain areas of research is a growing concern among scientists, funding agencies, journals and the public (Nature, 2013; Fosang and Colbran, 2015; National Institutes of Health, 2015a; National Institutes of Health, 2015b; Nature, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "0933c307-68a0-465a-82a3-27213efa63a9",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C7",
+      "claim": "Problems with the statistical analyses used in published studies, along with inadequate reporting of the experimental and statistical techniques employed in the studies, are likely to have contributed to reproducibility concerns.",
+      "claim_type": "EXPLICIT",
+      "source": "Problems with the statistical analyses used in published studies, along with inadequate reporting of the experimental and statistical techniques employed in the studies, are likely to have contributed to these concerns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the literature and the authors' analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "923e2da0-9d27-4376-92e6-4dee9d01d1a8",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C8",
+      "claim": "Statistical errors, such as failing to specify what test was used or using incorrect or suboptimal statistical tests, are common.",
+      "claim_type": "EXPLICIT",
+      "source": "Older studies suggest that statistical errors, such as failing to specify what test was used or using incorrect or suboptimal statistical tests, are common (M\u00fcllner et al., 2002; Ruxton, 2006; Strasak et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to older studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "08001225-cf30-43a0-a2e1-8ba53e1873fd",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C9",
+      "claim": "More recent studies suggest that statistical error problems persist.",
+      "claim_type": "EXPLICIT",
+      "source": "and more recent studies suggest that these problems persist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on subsequent citations to recent studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "31cc06a7-04a9-41d1-a8af-2b705bfdbfb0",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C10",
+      "claim": "Half of the neuroscience articles published in five top journals in 2011 used inappropriate statistical techniques to compare the magnitude of two experimental effects.",
+      "claim_type": "EXPLICIT",
+      "source": "A study published in 2011 found that half of the neuroscience articles published in five top journals used inappropriate statistical techniques to compare the magnitude of two experimental effects (Nieuwenhuis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "9a725acb-d519-4d13-b583-797b467f104c",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C11",
+      "claim": "46% of papers reporting the results of experiments that examined the effects of prenatal interventions on offspring had invalid statistical analyses because authors failed to account for non-independent observations.",
+      "claim_type": "EXPLICIT",
+      "source": "A more recent study of papers reporting the results of experiments that examined the effects of prenatal interventions on offspring found that the statistical analyses in 46% of the papers were invalid because authors failed to account for non-independent observations (i.e., animals from the same litter; Lazic et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "9b15abfd-bf0c-4a26-bb88-695378744ed6",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C12",
+      "claim": "Many studies omit essential details when describing experimental design or statistical methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies omit essential details when describing experimental design or statistical methods (Real et al., 2016; Lazic et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "65459cfa-1dec-47d2-a69b-3bfd2f295c2f",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C13",
+      "claim": "Errors in reported p-values are common and can sometimes alter the conclusions of a study.",
+      "claim_type": "EXPLICIT",
+      "source": "Errors in reported p-values are also common and can sometimes alter the conclusions of a study (Nuijten et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "50c74083-c3d8-4951-b666-a476dba0aa1d",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C14",
+      "claim": "Authors should describe statistical methods with enough detail to enable a knowledgeable reader with access to the original data to verify the reported results.",
+      "claim_type": "EXPLICIT",
+      "source": "A main principle of the SAMPL guidelines for reporting statistical analyses and methods in the published literature is that authors should \"describe statistical methods with enough detail to enable a knowledgeable reader with access to the original data to verify the reported results\" (Lang and Altman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle from the SAMPL guidelines, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "f04221ca-412b-461d-b47b-f5a7cfc42450",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C15",
+      "claim": "SAMPL guidelines have not been widely adopted.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these guidelines have not been widely adopted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation made by the authors without specific supporting data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "77998507-c65d-4b35-927e-4bd9bd7cceea",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C16",
+      "claim": "Clear statistical reporting allows errors to be identified and corrected prior to publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Clear statistical reporting also allows errors to be identified and corrected prior to publication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of clear reporting.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "71928566-ca92-4a19-b2ec-d84b2b31b03b",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C17",
+      "claim": "The journal Science has attempted to improve statistical reporting by adding a Statistical Board of Reviewing Editors.",
+      "claim_type": "EXPLICIT",
+      "source": "The journal Science has attempted to improve statistical reporting by adding a Statistical Board of Reviewing Editors (McNutt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "f48d4fb4-d8dd-4dd6-b0ef-e3ae90b079e9",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C18",
+      "claim": "Nature and affiliated journals, eLife, and The EMBO Journal have recently implemented policies to encourage transparent statistical reporting.",
+      "claim_type": "EXPLICIT",
+      "source": "Other journals, including Nature and affiliated journals (Nature, 2013; Nature, 2017), eLife (Teare, 2016) and The EMBO Journal (EMBO Press, 2017) have recently implemented policies to encourage transparent statistical reporting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to journal policies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "150c297c-1046-480d-8f9b-ad7285a6d380",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C19",
+      "claim": "T-tests and analysis of variance (ANOVA) are the statistical bread-and-butter of basic biomedical science research.",
+      "claim_type": "EXPLICIT",
+      "source": "T-tests and analysis of variance (ANOVA) are the statistical bread-and-butter of basic biomedical science research (Strasak et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "0679f5ce-e18e-4fdf-ade8-df15ff7a4abb",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C20",
+      "claim": "Statistical methods in biomedical science papers are often limited to vague statements such as: 'Data were analyzed by t-tests or ANOVA, as appropriate, and statistical significance was defined as p<0.05.'",
+      "claim_type": "EXPLICIT",
+      "source": "However, statistical methods in these papers are often limited to vague statements such as: \"Data were analyzed by t-tests or ANOVA, as appropriate, and statistical significance was defined as p<0.05.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation made by the authors based on their review of the literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "3c5f1963-15dc-4664-8015-29ae942b46d2",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C21",
+      "claim": "There are many different types of t-tests and ANOVAs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, there are many different types of t-tests and ANOVAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "ac4c9f9b-34b4-42f8-861f-02c5db061bc1",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C22",
+      "claim": "Vague statistical methods deprive reviewers, editors and readers of the opportunity to confirm that an appropriate type of t-test or ANOVA was used and that the results support the conclusions in the paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Vague statistical methods deprive reviewers, editors and readers of the opportunity to confirm that an appropriate type of t-test or ANOVA was used and that the results support the conclusions in the paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of vague reporting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "b5fe9a9a-7824-4ccf-903a-e260ca9f10b7",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C23",
+      "claim": "If authors use an unpaired t-test when a paired t-test is needed, the failure to account for repeated measurements on the same subject will lead to an incorrect p-value.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if authors use an unpaired t-test when a paired t-test is needed, the failure to account for repeated measurements on the same subject will lead to an incorrect p-value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge about the consequences of using the wrong test.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "953d06ae-9be4-482a-b551-7b9cb76ac54a",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C24",
+      "claim": "Analyses that use inappropriate tests give potentially misleading results because the tests make incorrect assumptions about the study design or data and often test the wrong hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses that use inappropriate tests give potentially misleading results because the tests make incorrect assumptions about the study design or data and often test the wrong hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "4a59844e-4c51-42f9-b96b-96fe48468936",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C25",
+      "claim": "Without the original data, it is difficult to determine how the test results would have been different had an appropriate test been used.",
+      "claim_type": "EXPLICIT",
+      "source": "Without the original data, it is difficult to determine how the test results would have been different had an appropriate test been used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of evaluating published results without access to raw data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "a3803936-274f-439c-9eb9-63ab37fa26b0",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C26",
+      "claim": "Clear reporting allows readers to confirm that an appropriate test was used and makes it easier to identify and fix potential errors prior to publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Clear reporting allows readers to confirm that an appropriate test was used and makes it easier to identify and fix potential errors prior to publication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of clear reporting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "e92e822b-fb0f-4066-8bda-a2a06570649f",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C27",
+      "claim": "Stating that tests were used 'as appropriate' relies on the assumption that others received similar statistical training and would make the same decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "The second problem is that stating that tests were used \"as appropriate\" relies on the assumption that others received similar statistical training and would make the same decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the implications of vague reporting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "5e5fed78-6eb0-4c71-8b0a-0719336645af",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C28",
+      "claim": "It is possible to complete a PhD without being trained in statistics: only 67.5% of the top NIH-funded physiology departments in the United States required statistics training for some or all PhD programs that the department participated in.",
+      "claim_type": "EXPLICIT",
+      "source": "This is problematic because it is possible to complete a PhD without being trained in statistics: only 67.5% of the top NIH-funded physiology departments in the United States required statistics training for some or all PhD programs that the department participated in (Weissgerber et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "aa9679ae-3de1-4f87-8c0c-a3bfbe0e44fb",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C29",
+      "claim": "When statistics training is offered, course content can vary widely among fields, institutions and departments as there are no accepted standards for the topics that should be covered or the level of proficiency required.",
+      "claim_type": "EXPLICIT",
+      "source": "When training is offered, course content can vary widely among fields, institutions and departments as there are no accepted standards for the topics that should be covered or the level of proficiency required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of statistics education.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "69eeacd5-7ab5-4976-9015-0313c8672426",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C30",
+      "claim": "Statistics courses are rarely designed to meet the needs of basic scientists who work with small sample size datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, courses are rarely designed to meet the needs of basic scientists who work with small sample size datasets (Vaux, 2012; Weissgerber et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "4d181806-b16a-45fc-a680-2c529ba64911",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C31",
+      "claim": "Vague statistical statements fail to explain why t-tests and ANOVA were selected, as opposed to other techniques that can be useful for small sample size datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, these vague statements fail to explain why t-tests and ANOVA were selected, as opposed to other techniques that can be useful for small sample size datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of vague reporting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "bf2a3544-e468-4811-9dfc-1912112bbd1d",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C32",
+      "claim": "Two reviewers independently examined all original research articles published in June 2017 (n = 328) in the top 25% of physiology journals, as determined by 2016 journal impact factor.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain our sample two reviewers independently examined all original research articles published in June 2017 (n = 328, Figure 1) in the top 25% of physiology journals, as determined by 2016 journal impact factor (see Methods for full details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "a0ed9e10-bb44-4bd3-b8b3-74ff7f7d41f6",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C33",
+      "claim": "84.5% of the articles (277/328) included either a t-test or an ANOVA.",
+      "claim_type": "EXPLICIT",
+      "source": "84.5% of the articles (277/328) included either a t-test or an ANOVA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "21092a55-b80c-456e-9351-04c828a9e286",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C34",
+      "claim": "38.7% of articles (127/328) included both a t-test and an ANOVA.",
+      "claim_type": "EXPLICIT",
+      "source": "38.7% of articles (127/328) included both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "8617f847-c6a2-4d35-997c-d3682aff3794",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C35",
+      "claim": "ANOVA (n = 225, 68.6%) was more common than t-tests (n = 179, 54.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "ANOVA (n = 225, 68.6%) was more common than t-tests (n = 179, 54.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "50e883f2-f985-4891-a863-20e24f5b77fc",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C36",
+      "claim": "Among papers that reported the number of factors for at least one ANOVA, most were using a maximum of one (n = 112, 49.8%) or two (n = 69, 30.7%) factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Among papers that reported the number of factors for at least one ANOVA, most were using a maximum of one (n = 112, 49.8%) or two (n = 69, 30.7%) factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "b27371d2-12d8-416d-8b8d-241a9850c5c6",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C37",
+      "claim": "ANOVAs with three or more factors were uncommon (n = 6, 2.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "ANOVAs with three or more factors were uncommon (n = 6, 2.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "735dcea3-f7cf-47d7-92dd-6d367942e64c",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C38",
+      "claim": "All the journals in the sample were indexed in PubMed and only published English language articles.",
+      "claim_type": "EXPLICIT",
+      "source": "All the journals in our sample were indexed in PubMed and only published English language articles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "9f86f3a6-fd28-4224-93b2-b2ce95e80007",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C39",
+      "claim": "The results may not be generalizable to brief reports, journals with lower impact factors, journals that publish articles in other languages, or journals that are not indexed in PubMed.",
+      "claim_type": "EXPLICIT",
+      "source": "so our results may not be generalizable to brief reports, journals with lower impact factors, journals that publish articles in other languages, or journals that are not indexed in PubMed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the study's limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "dd04b80c-8d2d-46f3-9190-f3042df1f679",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C40",
+      "claim": "Further research is needed to determine if statistical reporting practices in other fields are similar to what was found in physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Further research is also needed to determine if statistical reporting practices in other fields are similar to what we found in physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for additional research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "f4884103-a46f-4a0d-8170-c5c2e23f73f3",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C41",
+      "claim": "Basic biomedical science papers generally use one and two-way ANOVAs, with or without repeated measures.",
+      "claim_type": "EXPLICIT",
+      "source": "While ANOVA encompasses a wide variety of techniques, basic biomedical science papers generally use one and two-way ANOVAs, with or without repeated measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the authors' review of the literature and their dataset.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "1f564071-4a99-4bc9-8954-e3a03f262899",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C42",
+      "claim": "More complex types of ANOVA were rare in the dataset (<3%).",
+      "claim_type": "EXPLICIT",
+      "source": "as more complex types of ANOVA were rare in our dataset (<3%; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "6acd17dc-25b7-4a81-be71-1c009c09bf1e",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C43",
+      "claim": "Authors need to report three key pieces of information to allow readers to confirm that the type of ANOVA that was used is appropriate for the study design.",
+      "claim_type": "EXPLICIT",
+      "source": "Authors need to report three key pieces of information to allow readers to confirm that the type of ANOVA that was used is appropriate for the study design (see Box 1 for terminology and Box 2 for a detailed description of what should be reported).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on statistical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "cbfbf52a-0c4c-4a9a-b8f6-a389b1fd1ef7",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C44",
+      "claim": "Many papers were missing some or all of the information needed to determine what type of ANOVA was performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Many papers were missing some or all of this information (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "be46abf8-f22e-4869-ae1a-ae611b4e7303",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C45",
+      "claim": "16.9% of papers (38/225) failed to specify how many factors were included for any ANOVA performed in the paper.",
+      "claim_type": "EXPLICIT",
+      "source": "16.9% of papers (38/225) failed to specify how many factors were included for any ANOVA performed in the paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "2655d610-6478-45ab-894a-ba15e806a78c",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C46",
+      "claim": "54% of papers did not specify which factors were included in any ANOVA.",
+      "claim_type": "EXPLICIT",
+      "source": "54% of papers did not specify which factors were included in any ANOVA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "967f927f-9a85-4eaa-ac06-65e280297ae5",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C47",
+      "claim": "Fewer than half of papers specified which factors were included for some (n = 13, 5.8%) or all (n = 90, 40%) ANOVAs reported in the manuscript.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas fewer than half of papers specified which factors were included for some (n = 13, 5.8%) or all (n = 90, 40%) ANOVAs reported in the manuscript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "bae9dd87-714c-4626-a154-bbe3b0b78e0c",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C48",
+      "claim": "Among papers that used one-way ANOVAs, 60.9% (67/110) used a one-way ANOVA for an analysis where the study design included two or more factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Among papers that used one-way ANOVAs, 60.9% (67/110) used a one-way ANOVA for an analysis where the study design included two or more factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "9a06a2da-9ec8-4e79-9e4c-2b8ebcc51c18",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C49",
+      "claim": "Using a one-way ANOVA for extremely small sample sizes may be appropriate, as these datasets may not have enough power for an ANOVA with two or more factors.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach may be appropriate for extremely small sample sizes, as these datasets may not have enough power for an ANOVA with two or more factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about statistical practice based on knowledge of statistical power.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "5c86f52f-e619-4ca9-8e07-6d4f0714b475",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C50",
+      "claim": "In most cases, a two-way ANOVA with mouse strain and treatment as factors may provide more information than a one-way ANOVA.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, however, a two-way ANOVA with mouse strain (wild-type vs. knockout) and treatment (placebo vs. treatment) as factors may provide more information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on statistical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "072a1880-a54d-450f-825f-3d902d4659d8",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C51",
+      "claim": "The two-way ANOVA allows investigators to examine the effects of both factors simultaneously and may help investigators to avoid unnecessary post-hoc tests.",
+      "claim_type": "EXPLICIT",
+      "source": "The two-way ANOVA allows investigators to examine the effects of both factors simultaneously and may help investigators to avoid unnecessary post-hoc tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge about the advantages of two-way ANOVA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "5052e3dc-6853-4886-bc68-a8019455a6fb",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C52",
+      "claim": "If the sample size is large enough, the two-way ANOVA can test for an interaction between the two factors.",
+      "claim_type": "EXPLICIT",
+      "source": "If the sample size is large enough, the two-way ANOVA can test for an interaction between the two factors (i.e., whether the effect of mouse strain depends on treatment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge about two-way ANOVA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "cba5aaf9-728e-4194-b08c-d6a772f8050a",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C53",
+      "claim": "Among the 18.2% of papers (41/225) that reported using repeated measures ANOVA, 63.4% (n = 26) did not specify whether each factor was entered as a between or within-subjects factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 18.2% of papers (41/225) that reported using repeated measures ANOVA, 63.4% (n = 26) did not specify whether each factor was entered as a between or within-subjects factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "7babc18d-3ae1-40ec-a7cb-4e04884c53d5",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C54",
+      "claim": "When a repeated measures ANOVA includes two or more factors, authors need to clearly report which factors were treated as between vs. within-subjects factors.",
+      "claim_type": "EXPLICIT",
+      "source": "When a repeated measures ANOVA includes two or more factors, however, authors need to clearly report which factors were treated as between vs. within-subjects factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on statistical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "cebf20c8-d40d-47d9-ac4e-fac4fc8a86df",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C55",
+      "claim": "A two-way repeated measures ANOVA could refer to two different tests \u2013 an ANOVA with two within-subjects factors, or an ANOVA with one within-subjects factor and one between-subjects factor.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-way repeated measures ANOVA could refer to two different tests \u2013 an ANOVA with two within-subjects factors, or an ANOVA with one within-subjects factor and one between-subjects factor (Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "91c067aa-cee9-4007-adcb-96cdc7162b66",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C56",
+      "claim": "81.8% of papers that included ANOVA did not indicate whether repeated measures were used.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 81.8% of papers that included ANOVA did not indicate whether repeated measures were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "22f20447-8807-48b2-ad59-17fb4d5356e2",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C57",
+      "claim": "Only one paper that did not mention repeated measures stated that all factors were entered as between-subjects factors (1/184, 0.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Only one of these papers stated that all factors were entered as between-subjects factors (1/184, 0.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "0f0001d4-7793-4f54-9032-76e50dc6294a",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C58",
+      "claim": "28.3% of papers that did not indicate that repeated measures were used (52/184) included at least one ANOVA that appeared to require repeated measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that scientists should be cautious about this assumption, as 28.3% of papers that did not indicate that repeated measures were used (52/184) included at least one ANOVA that appeared to require repeated measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "fa67e709-2396-486c-acb1-7a77c1c098a8",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C59",
+      "claim": "There is no way to distinguish between papers that used the wrong test and papers that failed to clearly specify which test was used.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no way to distinguish between papers that used the wrong test and papers that failed to clearly specify which test was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of evaluating published results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "74606f01-b40b-477d-b45e-976bfb34791f",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C60",
+      "claim": "Failing to account for repeated measures in an ANOVA makes it less likely that investigators will detect an effect, as the variability that can be attributed to individual subjects remains unexplained.",
+      "claim_type": "EXPLICIT",
+      "source": "Failing to account for repeated measures in an ANOVA makes it less likely that investigators will detect an effect, as the variability that can be attributed to individual subjects remains unexplained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge about the consequences of not accounting for repeated measures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "1a9b6067-0935-46b8-9a11-bc46e2041287",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C61",
+      "claim": "Reviewers, editors and journal guidelines should encourage authors to specify whether each factor was entered as between or within-subjects factor, even if the paper does not include a repeated measures ANOVA.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid confusion, we recommend that reviewers, editors and journal guidelines encourage authors to specify whether each factor was entered as between or within-subjects factor, even if the paper does not include a repeated measures ANOVA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "2a008b8c-ecf3-44a7-9de5-e82b2a62b357",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C62",
+      "claim": "72.8% of papers (164/225) stated what test was used to examine pairwise differences after performing an ANOVA.",
+      "claim_type": "EXPLICIT",
+      "source": "72.8% of papers (164/225) stated what test was used to examine pairwise differences after performing an ANOVA (such as Tukey and Bonferroni).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "a2f288c1-89a5-4ae7-98be-85f68f5c4795",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C63",
+      "claim": "27.1% of papers (61/225) did not specify what type of post-hoc tests were performed.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 27.1% of papers (61/225) did not specify what type of post-hoc tests were performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "850b0ba1-2f28-449b-bd41-090c0a374342",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C64",
+      "claim": "Over half of the papers (53%; 95/179) that included a t-test did not specify whether any t-tests were paired or unpaired.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half of the papers (53%; 95/179) did not specify whether any t-tests were paired or unpaired",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "e9714b7f-377f-4c17-8fb3-d61f9e510793",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C65",
+      "claim": "A small proportion (2.2%; 4/179) of papers provided information on paired vs. unpaired for some but not all of the t-tests in the paper.",
+      "claim_type": "EXPLICIT",
+      "source": "a small proportion (2.2%; 4/179) provided this information for some but not all of the t-tests in the paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "ce0f0427-f293-46b6-9c8d-549878bf1c9a",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C66",
+      "claim": "69 of the 95 papers without any information on paired vs. unpaired t-tests reported that the Student's t-test was used.",
+      "claim_type": "EXPLICIT",
+      "source": "69 of the 95 papers without any information on paired vs. unpaired t-tests reported that the Student's t-test was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "c557bad4-9b7f-4629-905c-d9fe3182c39b",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C67",
+      "claim": "The term Student's t-test traditionally refers to the unpaired t-test for equal variances.",
+      "claim_type": "EXPLICIT",
+      "source": "While the term Student's t-test traditionally refers to the unpaired t-test for equal variances",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "0569cfd3-8587-4509-806b-00716186a047",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C68",
+      "claim": "Authors have been identified referring to a paired t-test as a Student's t-test.",
+      "claim_type": "EXPLICIT",
+      "source": "we identified numerous instances where authors referred to a paired t-test as a Student's t-test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "d915dc7d-3da8-4fb5-824a-f4dc46a38471",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C69",
+      "claim": "Unpaired and paired t-tests interpret the data differently, test different hypotheses, use different information to calculate the test statistic and usually give different results.",
+      "claim_type": "EXPLICIT",
+      "source": "Unpaired and paired t-tests interpret the data differently, test different hypotheses, use different information to calculate the test statistic and usually give different results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "1d4b7e68-1831-494b-a3e0-a06d3ccffcf5",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C70",
+      "claim": "If the incorrect t-test is used, the analysis tests the wrong hypothesis and the results may be misleading.",
+      "claim_type": "EXPLICIT",
+      "source": "If the incorrect test is used, the analysis tests the wrong hypothesis and the results may be misleading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "67bd2551-7f8b-4313-b2fb-5c4cdffaa70c",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C71",
+      "claim": "Differences between the results of the paired and unpaired t-tests depend on the strength of the correlation between paired data points.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, differencesbetween the results of the paired and unpaired t-tests depend on the strength of the correlation between paired data points (Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Figure 7 which illustrates this relationship.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "82673d63-27ed-4588-8dfc-09589a1e8a00",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C72",
+      "claim": "The strength of correlation between paired data points is difficult or impossible to determine from line graphs that only show summary statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "which is difficult or impossible to determine from line graphs that only show summary statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of summary statistics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "08ad3c10-0dc2-47c2-b932-fff1d250a7b8",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C73",
+      "claim": "When using unpaired t-tests, it is important to specify whether the test assumes that the variance is equal in both groups.",
+      "claim_type": "EXPLICIT",
+      "source": "When using unpaired t-tests, it is important to specify whether the test assumes that the variance is equal in both groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on statistical principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "ca0da3bf-9e1c-4d2e-bca9-7aebfbf690b6",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C74",
+      "claim": "The unpaired Student's t-test assumes that the variance is similar in both groups, whereas the Welch's t-test assumes that variance differs between the two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The unpaired Student's t-test (also called the t-test for equal variances) assumes that the variance is similar in both groups, whereas the Welch's t-test (the t-test for unequal variances) assumes that variance differs between the two groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "92bc08c9-438e-4781-92d4-8af8bb6ba718",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C75",
+      "claim": "If the variance is not estimated appropriately in a t-test, the type I error is actually higher than advertised; this means that the null hypothesis is falsely rejected more often.",
+      "claim_type": "EXPLICIT",
+      "source": "If the variance is not estimated appropriately, the type I error is actually higher than advertised; this means that the null hypothesis is falsely rejected more often (Ruxton, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "d63f781f-4421-4eee-9245-deb8b61dd242",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C76",
+      "claim": "Among the 155 papers that included unpaired t-tests, 64.5% (100/155) reported whether the test assumed equal variance for all unpaired t-tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 155 papers that included unpaired t-tests, 64.5% (100/155) reported whether the test assumed equal variance for all unpaired t-tests",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "7d4e33e1-2a25-489b-acf5-f14531522a3c",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C77",
+      "claim": "6.5% (10/155) of papers with unpaired t-tests provided information on equal variance for some unpaired tests.",
+      "claim_type": "EXPLICIT",
+      "source": "and 6.5% (10/155) provided this information for some unpaired tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "f6f185bb-ebe0-4038-9dd8-c1a1c9bc878f",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C78",
+      "claim": "Reporting the test statistic, degrees of freedom and exact p-values allows authors, reviewers and editors to confirm that the correct test was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporting the test statistic (ANOVA: F-statistic, t-tests: t-statistic), degrees of freedom and exact p-values are important for several reasons. First, these values allow authors, reviewers and editors to confirm that the correct test was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of complete reporting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "7d3a6e8f-c344-4534-a7db-c9fd399885a1",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C79",
+      "claim": "Reporting degrees of freedom allows readers to confirm that no participants, animals or samples were excluded without explanation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, reporting the degrees of freedom allows readers to confirm that no participants, animals or samples were excluded without explanation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of reporting degrees of freedom.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "41ee5591-ad97-4113-8c2c-fa81b927f556",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C80",
+      "claim": "More than two thirds of papers using animal models to study stroke or cancer did not contain sufficient information to determine whether animals were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study found that more than two thirds of papers using animal models to study stroke or cancer did not contain sufficient information to determine whether animals were excluded",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "0b0230e5-53ff-4572-93fb-61ae1c3b6f37",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C81",
+      "claim": "7-8% of papers using animal models to study stroke or cancer excluded animals without explanation.",
+      "claim_type": "EXPLICIT",
+      "source": "while 7-8% of papers excluded animals without explanation (Holman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "87b38b22-7bd2-4582-a00c-f56bf34d54f0",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C82",
+      "claim": "Biased exclusion of animals or observations can substantially increase the probability of false positive results in small sample size studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Biased exclusion of animals or observations can substantially increase the probability of false positive results in small sample size studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "6370c470-1cc1-4c17-a55a-2708ce24ac5e",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C83",
+      "claim": "Reporting test statistics, degrees of freedom, and exact p-values allows authors and readers to verify the test result.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, this information allows authors and readers to verify the test result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of complete reporting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "5ea402a3-a387-4da0-acfa-8221cff62951",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C84",
+      "claim": "In an analysis of psychology papers, over half reported at least one p-value that did not match the test statistic and degrees of freedom.",
+      "claim_type": "EXPLICIT",
+      "source": "In an analysis of psychology papers, over half reported at least one p-value that did not match the test statistic and degrees of freedom",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "a23cc25c-5316-42ea-8513-2bc51b876fe2",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C85",
+      "claim": "P-value errors were sufficient to alter the study conclusions in one out of eight psychology papers.",
+      "claim_type": "EXPLICIT",
+      "source": "this error was sufficient to alter the study conclusions in one out of eight papers (Nuijten et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "a5f6c508-1c7c-4b11-ac7f-0756699a68da",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C86",
+      "claim": "Authors and journal editors can eliminate p-value errors by double checking their results, or using software programs such as statcheck to confirm that p-values match the reported test statistic and degrees of freedom.",
+      "claim_type": "EXPLICIT",
+      "source": "Authors and journal editors can eliminate these errors by double checking their results, or using software programs such as statcheck (Eskamp and Nuijten, 2016) to confirm that p-values match the reported test statistic and degrees of freedom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on available tools and best practices.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "0c9bbabd-15f3-4908-9cd0-fb43b91ac0e1",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C87",
+      "claim": "More than 95% of studies that included ANOVA failed to report the F-statistic or degrees of freedom.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the studies in our sample that included ANOVA (Figure 8), more than 95% failed to report the F-statistic or degrees of freedom.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct data from the systematic review, supported by Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "8d92584c-7d67-4c8a-b5d3-76d80da6ac6e",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C88",
+      "claim": "77.8% of papers with ANOVA reported ranges of p-values (i.e., p>0.05, p<0.05, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 77.8% of these papers reported ranges of p-values (i.e., p>0.05, p<0.05, p<0.01)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "4b7b8b81-7f2b-4a20-9f88-55d36bd98dc4",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C89",
+      "claim": "Just 50 papers with ANOVA reported exact p-values (41 of 225 papers reported exact p-values for some ANOVAs, and 9 papers reported exact p-values for all ANOVAs).",
+      "claim_type": "EXPLICIT",
+      "source": "with just 50 papers reporting exact p-values (41 of 225 papers reported exact p-values for some ANOVAs, and 9 papers reported exact p-values for all ANOVAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "ccc4927a-e78c-4f8d-b5af-d1c8b2db270f",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C90",
+      "claim": "Among studies that included t-tests, 16 papers (8.9%) were excluded because abstractors were unable to determine what data were analyzed by t-tests or to identify a two-group comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "Among studies that included t-tests, 16 papers (8.9%) were excluded because abstractors were unable to determine what data were analyzed by t-tests or to identify a two-group comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data abstraction process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "3b50e6c0-2664-4124-a7f6-98f8da75f168",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C91",
+      "claim": "Most papers with t-tests reported the sample size or degrees of freedom for some (16.6%) or all (76.7%) t-tests.",
+      "claim_type": "EXPLICIT",
+      "source": "While most papers reported the sample size or degrees of freedom for some (16.6%) or all (76.7%) t-tests",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "02dd829b-dce9-45f5-816e-71e665242371",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C92",
+      "claim": "T-statistics were missing from 95.7% of papers that included t-tests.",
+      "claim_type": "EXPLICIT",
+      "source": "t-statistics were missing from 95.7% of papers (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct data from the systematic review, supported by Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "602be416-aa5c-4093-8f14-82bc51ed0f7f",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C93",
+      "claim": "79.7% of the papers that included t-tests reported ranges of p-values instead of exact p-values.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 79.7% of the papers that included t-tests reported ranges of p-values instead of exact p-values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct data from the systematic review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "8bd45e4e-c7b8-4254-90ba-2825733e9ef6",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C94",
+      "claim": "T-tests and ANOVA may not be so simple, as many papers do not contain sufficient information to determine why a particular test was selected, what type of test was used or to verify the test result.",
+      "claim_type": "EXPLICIT",
+      "source": "This systematic review demonstrates that t-tests and ANOVA may not be so simple after all, as many papers do not contain sufficient information to determine why a particular test was selected, what type of test was used or to verify the test result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings of the systematic review.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "0384725a-6140-46d5-a489-53e99201e2ad",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C95",
+      "claim": "Selecting statistical tests that are not appropriate for the study design may be surprisingly common.",
+      "claim_type": "EXPLICIT",
+      "source": "Selecting statistical tests that are not appropriate for the study design may be surprisingly common.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings of the systematic review.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "b7f172ea-b7a3-4f88-b7c7-a33700b29b34",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C96",
+      "claim": "Often, it is not possible to determine why statistical tests were selected, or whether other analyses may have provided more insight.",
+      "claim_type": "EXPLICIT",
+      "source": "Often, it is not possible to determine why statistical tests were selected, or whether other analyses may have provided more insight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings of the systematic review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "241ee7a7-44a8-4cb7-bc21-a3d24006106e",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C97",
+      "claim": "Investigators frequently present data using bar or line graphs that only show summary statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigators frequently present data using bar or line graphs that only show summary statistics (Weissgerber et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "c8a7a5c3-8703-419e-8709-cbd2ca78a3b0",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C98",
+      "claim": "Raw data are rarely available.",
+      "claim_type": "EXPLICIT",
+      "source": "and raw data are rarely available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about current practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "1ec363a6-678e-4831-b785-3f238881cb48",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C99",
+      "claim": "Many journals have recently introduced policies to encourage more informative graphics, such as dot plots, box plots or violin plots, that show the data distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Many journals have recently introduced policies to encourage more informative graphics, such as dot plots, box plots or violin plots, that show the data distribution (Nature, 2017; Fosang and Colbran, 2015; Kidney International, 2017; PLOS Biology, 2016; Teare, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to journal policies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "4856cdca-7ae7-4fef-b57d-25d6d14e2a99",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C100",
+      "claim": "More informative graphics may provide insight into whether other tests are needed.",
+      "claim_type": "EXPLICIT",
+      "source": "and may provide insight into whether other tests are needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of better data visualization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "8198b02d-b9c8-4808-afdc-4e2510b65801",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C101",
+      "claim": "Non-parametric tests may sometimes be preferable as sample sizes in basic biomedical science research are often too small to determine the data distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-parametric tests, such as the Mann-Whitney U test, Wilcoxon sign rank test and Kruskal Wallis test, may sometimes be preferable as sample sizes in basic biomedical science research are often too small to determine the data distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on statistical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "f55ade18-1f7b-499e-9a7e-8667dc010e12",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C102",
+      "claim": "Non-parametric tests are not commonly used in physiology studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these tests are not commonly used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation supported by data from a systematic review.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "35c6d750-c19f-4311-ac1e-e0cad9fcf9a5",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C103",
+      "claim": "A systematic review of physiology studies showed that 3.8% used only non-parametric tests to compare continuous data.",
+      "claim_type": "EXPLICIT",
+      "source": "A systematic review of physiology studies showed that 3.8% used only non-parametric tests to compare continuous data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "3674bd7d-27f8-4a3e-ac60-ae1d3daf1d33",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C104",
+      "claim": "13.6% of physiology studies used a combination of parametric and non-parametric tests.",
+      "claim_type": "EXPLICIT",
+      "source": "13.6% used a combination of parametric and non-parametric tests",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "9947b9e2-1e0d-4dc5-91d4-5a570c96b31e",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C105",
+      "claim": "78.1% of physiology studies used only parametric tests.",
+      "claim_type": "EXPLICIT",
+      "source": "and 78.1% of studies used only parametric tests (Weissgerber et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "d019e263-05dc-433c-8f3f-5853fd6b00db",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C106",
+      "claim": "Fields such as psychology have been moving away from a reliance on t-tests and ANOVAs towards more informative techniques, including effect sizes, confidence intervals and meta-analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, fields such as psychology have been moving away from a reliance on t-tests and ANOVAs towards more informative techniques, including effect sizes, confidence intervals and meta-analyses (Cumming, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "211ed298-c96f-4d8a-8135-5e5d967d507a",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C107",
+      "claim": "While p-values focus on whether the difference is statistically significant, effect sizes answer the question: 'how big is the difference?'",
+      "claim_type": "EXPLICIT",
+      "source": "While p-values focus on whether the difference is statistically significant, effect sizes answer the question: \"how big is the difference?\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "e479f92b-627a-4a6f-b9c5-d99ceaa943b0",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C108",
+      "claim": "Presenting confidence intervals provides more information about the uncertainty of the estimated statistic.",
+      "claim_type": "EXPLICIT",
+      "source": "Presenting confidence intervals provides more information about the uncertainty of the estimated statistic (i.e., mean, effect size, correlation coefficient).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "eede3b28-be42-4c45-af50-00d95552ef95",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C109",
+      "claim": "Small, underpowered studies frequently produce inconclusive results that may appear to be contradictory.",
+      "claim_type": "EXPLICIT",
+      "source": "Small, underpowered studies frequently produce inconclusive results that may appear to be contradictory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "814fd610-4f86-4ad8-a31e-d90e31fb40c9",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C110",
+      "claim": "Meta-analyses combine divergent results to provide a comprehensive assessment of the size and direction of the true effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Meta-analyses combine these divergent results to provide a comprehensive assessment of the size and direction of the true effect (Cumming, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established statistical knowledge, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "053231db-e438-4d89-b925-5cfaead326c6",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C111",
+      "claim": "The findings of the present study highlight the need for investigators, journal editors and reviewers to work together to improve the quality of statistical reporting in submitted manuscripts.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings of the present study highlight the need for investigators, journal editors and reviewers to work together to improve the quality of statistical reporting in submitted manuscripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "8086a5e7-af3f-4692-aae4-5f29676e0a63",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C112",
+      "claim": "The effectiveness of journal policy changes to improve statistical reporting is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "While journal policy changes are a common solution, the effectiveness of policy changes is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on mixed evidence from the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "621f3dee-0c39-49fb-9b29-bde0c0aab7a2",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C113",
+      "claim": "In a study of life sciences articles published in Nature journals, the percentage of animal studies reporting the Landis 4 criteria increased from 0% to 16.4% after new guidelines were released.",
+      "claim_type": "EXPLICIT",
+      "source": "In a study of life sciences articles published in Nature journals, the percentage of animal studies reporting the Landis 4 criteria (blinding, randomization, sample size calculation, exclusions) increased from 0% to 16.4% after new guidelines were released (Macleod and The NPQIP Collaborative group, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "ff833672-c16e-4ee6-9246-7bb5543ff7dd",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C114",
+      "claim": "A randomized controlled trial of animal studies submitted to PLoS One demonstrated that asking authors to complete the ARRIVE checklist at the time of submission had no effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a randomized controlled trial of animal studies submitted to PLoS One demonstrated that asking authors to complete the ARRIVE checklist at the time of submission had no effect (Hair et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "b4bab527-5c48-4de2-b5de-60a1455f753b",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C115",
+      "claim": "Some improvements in reporting of confidence intervals, sample size justification and inclusion and exclusion criteria were noted after Psychological Science introduced new policies, although this may have been partially due to widespread changes in the field.",
+      "claim_type": "EXPLICIT",
+      "source": "Some improvements in reporting of confidence intervals, sample size justification and inclusion and exclusion criteria were noted after Psychological Science introduced new policies, although this may have been partially due to widespread changes in the field (Giofr\u00e8 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "981e7c01-357a-4cd1-a2e3-b1d4bbb6bcd6",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C116",
+      "claim": "A joint editorial series published in the Journal of Physiology and British Journal of Pharmacology did not improve the quality of data presentation or statistical reporting.",
+      "claim_type": "EXPLICIT",
+      "source": "A joint editorial series published in the Journal of Physiology and British Journal of Pharmacology did not improve the quality of data presentation or statistical reporting (Diong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "04c40488-a47f-4f22-9d1f-2640310e6341",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C117",
+      "claim": "Statistical reporting requirements are not standard practice for many fields and journals in basic biomedical science, thus limiting the ability of readers to critically evaluate published research.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical reporting requirements are not standard practice for many fields and journals in basic biomedical science, thus limiting the ability of readers to critically evaluate published research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about current practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "33fde00e-da63-4e65-b4cd-fafaa3bccc4a",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C118",
+      "claim": "Some journals have begun offering unlimited word counts for methods sections to improve reporting.",
+      "claim_type": "EXPLICIT",
+      "source": "Some journals have already begun offering unlimited word counts for methods sections to improve reporting (Nature, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a journal policy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "f9971aed-0c98-4f41-8cea-b68da6dc9461",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C119",
+      "claim": "Some journals suggest putting additional statistical information in supplemental methods.",
+      "claim_type": "EXPLICIT",
+      "source": "while others suggest putting additional information in supplemental methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about current journal practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "70d2a2f3-d588-498f-a7e0-90c501df14e8",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C120",
+      "claim": "Creating open-source software programs that calculate word counts for the results section after excluding statistical information may facilitate transparent reporting of statistical results.",
+      "claim_type": "EXPLICIT",
+      "source": "Creating open-source software programs that calculate word counts for the results section after excluding statistical information may also facilitate transparent reporting of statistical results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for a potential solution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "e0b6b517-b0a0-4dd6-abf0-7144a014af1d",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C121",
+      "claim": "Encouraging public data archiving or interactive graphics that include all data may strengthen reporting and reproducibility while facilitating data re-use.",
+      "claim_type": "EXPLICIT",
+      "source": "Encouraging public data archiving or interactive graphics that include all data (Ellis and Merdian, 2015; Weissgerber et al., 2016b; Weissgerber et al., 2017) may also strengthen reporting and reproducibility while facilitating data re-use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation supported by citations to relevant work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "b3e9bca4-85e8-4e64-abb3-e2deedfc7306",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C122",
+      "claim": "Methodology for the systematic review was similar to the approach outlined in a previous paper by Weissgerber et al., 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Methodology for the systematic review was similar to the approach outlined in our previous paper (Weissgerber et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "5c1b1fb5-491f-4b30-aa5d-734674b9650e",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C123",
+      "claim": "The authors examined original research articles that were published in June 2017 in the top 25% of journals (n = 21) in the Physiology category in Journal Citation Reports as determined by 2016 journal impact factor.",
+      "claim_type": "EXPLICIT",
+      "source": "therefore we examined original research articles that were published in June 2017 in the top 25% of journals (n = 21) in the Physiology category in Journal Citation Reports as determined by 2016 journal impact factor",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study sample selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "e2322847-576b-41c1-abfe-35cd1bc92ba0",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C124",
+      "claim": "Six journals that only publish review articles and one journal that did not publish a June issue were excluded from the study.",
+      "claim_type": "EXPLICIT",
+      "source": "six journals that only publish review articles and one journal that did not publish a June issue were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "3ab0c353-a5ee-4c68-bb64-95225b5ee90b",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C125",
+      "claim": "Each phase of screening and data abstraction was performed by two independent reviewers.",
+      "claim_type": "EXPLICIT",
+      "source": "Each phase of screening and data abstraction was performed by two independent reviewers (TLW, OGV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "3758f20b-64b8-4450-b77a-5b09f696577a",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C126",
+      "claim": "Disagreements between reviewers were resolved by consensus.",
+      "claim_type": "EXPLICIT",
+      "source": "Disagreements were resolved by consensus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "3bdba78e-92ce-42bc-915d-32aaf85b871d",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C127",
+      "claim": "This systematic review was conducted in accordance with those elements of the PRISMA guideline that are relevant to literature surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "This systematic review was conducted in accordance with those elements of the PRISMA guideline (Liberati et al., 2009) that are relevant to literature surveys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "6c59dead-d55f-403e-ac50-65e0161fab32",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C128",
+      "claim": "The objective of this observational study was to assess standard practices for reporting statistical methods and results when data are analyzed by ANOVA; therefore no statistical comparisons were performed.",
+      "claim_type": "EXPLICIT",
+      "source": "The objective of this observational study was to assess standard practices for reporting statistical methods and results when data are analyzed by ANOVA; therefore no statistical comparisons were performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "77594007-cde6-442b-9262-697efbeb1bf2",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C129",
+      "claim": "Summary statistics were calculated using JMP (10.0.0, SAS Institute Inc., Cary, NC).",
+      "claim_type": "EXPLICIT",
+      "source": "Summary statistics were calculated using JMP (10.0.0, SAS Institute Inc., Cary, NC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical software used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "b1c9f2d2-7d01-4597-a060-82d24ba48b31",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "claim_id": "C130",
+      "claim": "Ethical approval was not required for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethical approval was not required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the ethical review status of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "55b2f2ba-6e06-473a-b238-12ea44f38410",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The systematic review examined 328 original research articles from the top 25% of physiology journals published in June 2017. Of these, 277 (84.5%) included ANOVA or t-tests, with ANOVA (68.6%) being more common than t-tests (54.5%). Most papers used one-way or two-way ANOVAs, with three or more factors being uncommon (<3%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodology is clearly described with appropriate detail (C32, C123-C130), including independent dual review (C125-C126), adherence to PRISMA guidelines (C127), and transparent reporting of sample characteristics. The descriptive statistics about test usage (C33-C37) are directly reported from the systematic review data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "2ebd9f0e-07e2-43a5-bfe9-b4fa5c411cc8",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "95% of papers using ANOVA (213/225) did not contain sufficient information to determine what type of ANOVA was performed. Specifically, 16.9% failed to specify the number of factors, and 54% did not specify which factors were included in any ANOVA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are directly supported by quantitative data from the systematic review (C4, C44-C47) and are consistent with Figure 2. The findings represent objective counts of missing information in the reviewed papers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "74a10ac4-c215-4a3e-913f-a1971608583f",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Among papers using one-way ANOVAs, 60.9% (67/110) applied this test to study designs with two or more factors. While this may be appropriate for very small sample sizes, a two-way ANOVA would typically provide more information by examining both factors simultaneously and testing for interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The empirical finding (C48) is clearly stated with supporting data. The interpretation about when one-way vs. two-way ANOVA is appropriate (C49-C52) is based on established statistical principles and is appropriately qualified. Figures 3-4 provide supporting illustrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Among papers reporting repeated measures ANOVA (18.2%), 63.4% did not specify whether factors were between- or within-subjects. Of papers not mentioning repeated measures (81.8%), 28.3% appeared to require repeated measures based on study design, but it's impossible to distinguish whether the wrong test was used or reporting was incomplete.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quantitative findings (C53, C56-C58) are directly from the systematic review data. The interpretation about ambiguity (C59) and statistical consequences (C60) are appropriately qualified. The recommendation (C61) follows logically from the findings. Figure 5 provides supporting illustration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "fe4ac245-5967-4083-86f4-1ccc4a8e1da5",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "27.1% of papers (61/225) using ANOVA did not specify what type of post-hoc tests were performed, while 72.8% did report the post-hoc test used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C5, C62, C63) present straightforward descriptive statistics from the systematic review with clear denominators and are consistent with Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "8b62de51-c63a-4671-9026-d5935b727238",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Over half of papers (53%; 95/179) using t-tests did not specify whether tests were paired or unpaired. Among these, 69 reported using 'Student's t-test,' which traditionally refers to unpaired tests but was sometimes used by authors to describe paired tests. The choice between paired and unpaired tests is critical as they test different hypotheses and yield different results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The empirical findings (C64-C66, C68) are clearly reported from the systematic review. The statistical principles about differences between paired and unpaired tests (C67, C69-C72) are established knowledge. Figure 6-7 provide supporting illustrations of the statistical consequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "a328d60d-e851-4a74-b343-33331750e8e7",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Among papers with unpaired t-tests, 64.5% (100/155) reported whether equal variance was assumed for all tests, and 6.5% reported this for some tests. Incorrect variance assumptions lead to inflated Type I error rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The descriptive statistics (C76-C77) are directly from the systematic review. The statistical principles about variance assumptions (C73-C75) are established knowledge supported by appropriate citation (Ruxton, 2006).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "80f13ff4-c454-4c73-9aad-14087adf7a92",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Most papers failed to report information needed to verify test results: >95% of ANOVA papers did not report F-statistics or degrees of freedom, and 95.7% of t-test papers omitted t-statistics. Additionally, 77.8% of ANOVA papers and 79.7% of t-test papers reported p-value ranges rather than exact values. This prevents verification of results and detection of errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The empirical findings (C87-C93) are directly from the systematic review and supported by Figure 8 and Table 1. The rationale for reporting these values (C78-C79, C83) and consequences of errors (C80-C82, C84-C85) are supported by appropriate citations. The recommendation (C86) is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "5c4776f5-6743-47d6-8b6d-226ee817a465",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Statistical reporting in biomedical sciences is often limited, contributing to reproducibility concerns. Prior studies have documented common statistical errors including inappropriate test selection, inadequate reporting, and p-value errors that can alter study conclusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the context and motivation for the study. They are supported by multiple appropriate citations to published literature (C6, C8-C13). The inference about contribution to reproducibility concerns (C7) is appropriately qualified as 'likely.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "7698fc15-b73b-43fa-9d40-880c2b158d3e",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SAMPL guidelines recommend detailed statistical reporting to enable verification of results, but these guidelines have not been widely adopted. Some journals have implemented policies to improve statistical reporting, including Science's Statistical Board of Reviewing Editors and policies at Nature, eLife, and EMBO Journal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The SAMPL guideline principle (C14) is appropriately cited. The observation about limited adoption (C15) is consistent with the study's findings. Journal policy examples (C17-C18) are supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "ef4e92c2-5543-44cd-b949-4a30794e39bb",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "T-tests and ANOVA are fundamental to biomedical research, but statistical methods are often vaguely reported (e.g., 'analyzed by t-tests or ANOVA, as appropriate'). This vague reporting prevents verification of appropriate test selection and assumes uniform statistical training, which is problematic given that only 67.5% of top NIH-funded physiology departments require statistics training.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The characterization of t-tests/ANOVA as fundamental (C19) is supported by citation. The observation about vague reporting (C20) is consistent with the study's findings. The logical inferences about consequences (C22-C27, C31) are reasonable. The statistics training data (C28) is appropriately cited, and observations about training variability (C29-C30) are supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "d7451fe8-b646-4032-a7eb-c6abd22db22f",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study's results may not generalize to brief reports, lower impact factor journals, non-English journals, or non-PubMed indexed journals. Further research is needed to determine if findings apply to other fields beyond physiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are appropriate acknowledgments of study limitations (C39) and needs for future research (C40) that follow logically from the study design described in C32, C38, C123-C124.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "53dba6a9-ccb7-410d-b86d-f4d79ec33840",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Basic biomedical science papers generally use one- and two-way ANOVAs with or without repeated measures, as more complex ANOVAs were rare (<3%). Authors need to report three key pieces of information to allow verification that the appropriate ANOVA type was used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation about ANOVA types (C41-C42) is supported by the systematic review data. The recommendation about reporting requirements (C43) is based on established statistical principles and is appropriately referenced to Box 1 and Box 2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "880680bb-18e4-4fb6-b192-3ee64313d91d",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Many papers lack sufficient information to determine test selection rationale or verify results. Data are often presented using summary statistics only, with raw data rarely available. While journals are implementing policies for better graphics and non-parametric tests may be preferable for small samples, non-parametric tests remain uncommon (3.8% exclusive use in physiology).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conclusions (C94-C96) are appropriately drawn from the systematic review findings. Observations about data presentation (C97-C98) and journal policies (C99) are supported by citations. The recommendation about non-parametric tests (C101) is appropriately qualified, and usage statistics (C102-C105) are cited from prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "50f21106-1a31-4a26-96f7-56587296fc4c",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Fields like psychology are moving toward more informative techniques including effect sizes, confidence intervals, and meta-analyses. These approaches provide information about effect magnitude and uncertainty that p-values alone do not capture, and can synthesize results from multiple small studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe alternative statistical approaches and their benefits. The trend in psychology (C106) is appropriately cited. The descriptions of effect sizes, confidence intervals, and meta-analyses (C107-C110) represent established statistical knowledge with appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    },
+    {
+      "id": "3714592c-f065-427d-ac9b-688555564b2e",
+      "content_id": "13185507-7a8d-4621-a408-8c22c52a1c28",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The findings highlight the need for improved statistical reporting through collaboration among investigators, editors, and reviewers. While journal policy changes are common, their effectiveness is unclear, with mixed evidence from studies of Nature journals (modest improvement), PLoS One (no effect), Psychological Science (some improvement), and Journal of Physiology/British Journal of Pharmacology (no improvement). Potential solutions include unlimited word counts for methods, supplemental methods sections, software tools, and data archiving.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conclusion (C111) follows logically from the study findings. The assessment of policy effectiveness (C112-C116) is appropriately qualified and supported by citations to specific studies. The observation about current practices (C117) is consistent with findings. Proposed solutions (C118-C121) are reasonable suggestions, with C118 and C121 supported by citations, while C119-C120 are appropriately presented as possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:48:29.509440Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf2a3544-e468-4811-9dfc-1912112bbd1d",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "a0ed9e10-bb44-4bd3-b8b3-74ff7f7d41f6",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "21092a55-b80c-456e-9351-04c828a9e286",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "8617f847-c6a2-4d35-997c-d3682aff3794",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "50e883f2-f985-4891-a863-20e24f5b77fc",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "b27371d2-12d8-416d-8b8d-241a9850c5c6",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "735dcea3-f7cf-47d7-92dd-6d367942e64c",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "5c1b1fb5-491f-4b30-aa5d-734674b9650e",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "e2322847-576b-41c1-abfe-35cd1bc92ba0",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "3ab0c353-a5ee-4c68-bb64-95225b5ee90b",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "3758f20b-64b8-4450-b77a-5b09f696577a",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "3bdba78e-92ce-42bc-915d-32aaf85b871d",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "6c59dead-d55f-403e-ac50-65e0161fab32",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "77594007-cde6-442b-9262-697efbeb1bf2",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "b1c9f2d2-7d01-4597-a060-82d24ba48b31",
+      "result_id": "55b2f2ba-6e06-473a-b238-12ea44f38410"
+    },
+    {
+      "claim_id": "b4355c20-d804-43e4-92fc-15e3b5b9d8d6",
+      "result_id": "2ebd9f0e-07e2-43a5-bfe9-b4fa5c411cc8"
+    },
+    {
+      "claim_id": "cbfbf52a-0c4c-4a9a-b8f6-a389b1fd1ef7",
+      "result_id": "2ebd9f0e-07e2-43a5-bfe9-b4fa5c411cc8"
+    },
+    {
+      "claim_id": "be46abf8-f22e-4869-ae1a-ae611b4e7303",
+      "result_id": "2ebd9f0e-07e2-43a5-bfe9-b4fa5c411cc8"
+    },
+    {
+      "claim_id": "2655d610-6478-45ab-894a-ba15e806a78c",
+      "result_id": "2ebd9f0e-07e2-43a5-bfe9-b4fa5c411cc8"
+    },
+    {
+      "claim_id": "967f927f-9a85-4eaa-ac06-65e280297ae5",
+      "result_id": "2ebd9f0e-07e2-43a5-bfe9-b4fa5c411cc8"
+    },
+    {
+      "claim_id": "bae9dd87-714c-4626-a154-bbe3b0b78e0c",
+      "result_id": "74a10ac4-c215-4a3e-913f-a1971608583f"
+    },
+    {
+      "claim_id": "9a06a2da-9ec8-4e79-9e4c-2b8ebcc51c18",
+      "result_id": "74a10ac4-c215-4a3e-913f-a1971608583f"
+    },
+    {
+      "claim_id": "5c86f52f-e619-4ca9-8e07-6d4f0714b475",
+      "result_id": "74a10ac4-c215-4a3e-913f-a1971608583f"
+    },
+    {
+      "claim_id": "072a1880-a54d-450f-825f-3d902d4659d8",
+      "result_id": "74a10ac4-c215-4a3e-913f-a1971608583f"
+    },
+    {
+      "claim_id": "5052e3dc-6853-4886-bc68-a8019455a6fb",
+      "result_id": "74a10ac4-c215-4a3e-913f-a1971608583f"
+    },
+    {
+      "claim_id": "cba5aaf9-728e-4194-b08c-d6a772f8050a",
+      "result_id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0"
+    },
+    {
+      "claim_id": "7babc18d-3ae1-40ec-a7cb-4e04884c53d5",
+      "result_id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0"
+    },
+    {
+      "claim_id": "cebf20c8-d40d-47d9-ac4e-fac4fc8a86df",
+      "result_id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0"
+    },
+    {
+      "claim_id": "91c067aa-cee9-4007-adcb-96cdc7162b66",
+      "result_id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0"
+    },
+    {
+      "claim_id": "22f20447-8807-48b2-ad59-17fb4d5356e2",
+      "result_id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0"
+    },
+    {
+      "claim_id": "0f0001d4-7793-4f54-9032-76e50dc6294a",
+      "result_id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0"
+    },
+    {
+      "claim_id": "fa67e709-2396-486c-acb1-7a77c1c098a8",
+      "result_id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0"
+    },
+    {
+      "claim_id": "74606f01-b40b-477d-b45e-976bfb34791f",
+      "result_id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0"
+    },
+    {
+      "claim_id": "1a9b6067-0935-46b8-9a11-bc46e2041287",
+      "result_id": "952939dd-fe92-4fe4-9a7d-8dde31b7c3f0"
+    },
+    {
+      "claim_id": "838de6ef-196c-4d4e-a77f-0d7a72b5b52f",
+      "result_id": "fe4ac245-5967-4083-86f4-1ccc4a8e1da5"
+    },
+    {
+      "claim_id": "2a008b8c-ecf3-44a7-9de5-e82b2a62b357",
+      "result_id": "fe4ac245-5967-4083-86f4-1ccc4a8e1da5"
+    },
+    {
+      "claim_id": "a2f288c1-89a5-4ae7-98be-85f68f5c4795",
+      "result_id": "fe4ac245-5967-4083-86f4-1ccc4a8e1da5"
+    },
+    {
+      "claim_id": "850b0ba1-2f28-449b-bd41-090c0a374342",
+      "result_id": "8b62de51-c63a-4671-9026-d5935b727238"
+    },
+    {
+      "claim_id": "e9714b7f-377f-4c17-8fb3-d61f9e510793",
+      "result_id": "8b62de51-c63a-4671-9026-d5935b727238"
+    },
+    {
+      "claim_id": "ce0f0427-f293-46b6-9c8d-549878bf1c9a",
+      "result_id": "8b62de51-c63a-4671-9026-d5935b727238"
+    },
+    {
+      "claim_id": "c557bad4-9b7f-4629-905c-d9fe3182c39b",
+      "result_id": "8b62de51-c63a-4671-9026-d5935b727238"
+    },
+    {
+      "claim_id": "0569cfd3-8587-4509-806b-00716186a047",
+      "result_id": "8b62de51-c63a-4671-9026-d5935b727238"
+    },
+    {
+      "claim_id": "d915dc7d-3da8-4fb5-824a-f4dc46a38471",
+      "result_id": "8b62de51-c63a-4671-9026-d5935b727238"
+    },
+    {
+      "claim_id": "1d4b7e68-1831-494b-a3e0-a06d3ccffcf5",
+      "result_id": "8b62de51-c63a-4671-9026-d5935b727238"
+    },
+    {
+      "claim_id": "67bd2551-7f8b-4313-b2fb-5c4cdffaa70c",
+      "result_id": "8b62de51-c63a-4671-9026-d5935b727238"
+    },
+    {
+      "claim_id": "82673d63-27ed-4588-8dfc-09589a1e8a00",
+      "result_id": "8b62de51-c63a-4671-9026-d5935b727238"
+    },
+    {
+      "claim_id": "08ad3c10-0dc2-47c2-b932-fff1d250a7b8",
+      "result_id": "a328d60d-e851-4a74-b343-33331750e8e7"
+    },
+    {
+      "claim_id": "ca0da3bf-9e1c-4d2e-bca9-7aebfbf690b6",
+      "result_id": "a328d60d-e851-4a74-b343-33331750e8e7"
+    },
+    {
+      "claim_id": "92bc08c9-438e-4781-92d4-8af8bb6ba718",
+      "result_id": "a328d60d-e851-4a74-b343-33331750e8e7"
+    },
+    {
+      "claim_id": "d63f781f-4421-4eee-9245-deb8b61dd242",
+      "result_id": "a328d60d-e851-4a74-b343-33331750e8e7"
+    },
+    {
+      "claim_id": "7d4e33e1-2a25-489b-acf5-f14531522a3c",
+      "result_id": "a328d60d-e851-4a74-b343-33331750e8e7"
+    },
+    {
+      "claim_id": "f6f185bb-ebe0-4038-9dd8-c1a1c9bc878f",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "7d3a6e8f-c344-4534-a7db-c9fd399885a1",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "41ee5591-ad97-4113-8c2c-fa81b927f556",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "0b0230e5-53ff-4572-93fb-61ae1c3b6f37",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "87b38b22-7bd2-4582-a00c-f56bf34d54f0",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "6370c470-1cc1-4c17-a55a-2708ce24ac5e",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "5ea402a3-a387-4da0-acfa-8221cff62951",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "a23cc25c-5316-42ea-8513-2bc51b876fe2",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "a5f6c508-1c7c-4b11-ac7f-0756699a68da",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "0c9bbabd-15f3-4908-9cd0-fb43b91ac0e1",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "8d92584c-7d67-4c8a-b5d3-76d80da6ac6e",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "4b7b8b81-7f2b-4a20-9f88-55d36bd98dc4",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "ccc4927a-e78c-4f8d-b5af-d1c8b2db270f",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "3b50e6c0-2664-4124-a7f6-98f8da75f168",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "02dd829b-dce9-45f5-816e-71e665242371",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "602be416-aa5c-4093-8f14-82bc51ed0f7f",
+      "result_id": "80f13ff4-c454-4c73-9aad-14087adf7a92"
+    },
+    {
+      "claim_id": "97d141ce-40f7-4c8b-88d0-c3bc4a8a68a0",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "c5c9ac32-f4ab-4b05-938a-e6ff77da6e85",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "1e89ebeb-c392-4093-bc84-f38317bf7470",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "0933c307-68a0-465a-82a3-27213efa63a9",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "923e2da0-9d27-4376-92e6-4dee9d01d1a8",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "08001225-cf30-43a0-a2e1-8ba53e1873fd",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "31cc06a7-04a9-41d1-a8af-2b705bfdbfb0",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "9a725acb-d519-4d13-b583-797b467f104c",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "9b15abfd-bf0c-4a26-bb88-695378744ed6",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "65459cfa-1dec-47d2-a69b-3bfd2f295c2f",
+      "result_id": "5c4776f5-6743-47d6-8b6d-226ee817a465"
+    },
+    {
+      "claim_id": "50c74083-c3d8-4951-b666-a476dba0aa1d",
+      "result_id": "7698fc15-b73b-43fa-9d40-880c2b158d3e"
+    },
+    {
+      "claim_id": "f04221ca-412b-461d-b47b-f5a7cfc42450",
+      "result_id": "7698fc15-b73b-43fa-9d40-880c2b158d3e"
+    },
+    {
+      "claim_id": "77998507-c65d-4b35-927e-4bd9bd7cceea",
+      "result_id": "7698fc15-b73b-43fa-9d40-880c2b158d3e"
+    },
+    {
+      "claim_id": "71928566-ca92-4a19-b2ec-d84b2b31b03b",
+      "result_id": "7698fc15-b73b-43fa-9d40-880c2b158d3e"
+    },
+    {
+      "claim_id": "f48d4fb4-d8dd-4dd6-b0ef-e3ae90b079e9",
+      "result_id": "7698fc15-b73b-43fa-9d40-880c2b158d3e"
+    },
+    {
+      "claim_id": "150c297c-1046-480d-8f9b-ad7285a6d380",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "0679f5ce-e18e-4fdf-ade8-df15ff7a4abb",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "3c5f1963-15dc-4664-8015-29ae942b46d2",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "ac4c9f9b-34b4-42f8-861f-02c5db061bc1",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "b5fe9a9a-7824-4ccf-903a-e260ca9f10b7",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "953d06ae-9be4-482a-b551-7b9cb76ac54a",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "4a59844e-4c51-42f9-b96b-96fe48468936",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "a3803936-274f-439c-9eb9-63ab37fa26b0",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "e92e822b-fb0f-4066-8bda-a2a06570649f",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "5e5fed78-6eb0-4c71-8b0a-0719336645af",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "aa9679ae-3de1-4f87-8c0c-a3bfbe0e44fb",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "69eeacd5-7ab5-4976-9015-0313c8672426",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "4d181806-b16a-45fc-a680-2c529ba64911",
+      "result_id": "ef4e92c2-5543-44cd-b949-4a30794e39bb"
+    },
+    {
+      "claim_id": "9f86f3a6-fd28-4224-93b2-b2ce95e80007",
+      "result_id": "d7451fe8-b646-4032-a7eb-c6abd22db22f"
+    },
+    {
+      "claim_id": "dd04b80c-8d2d-46f3-9190-f3042df1f679",
+      "result_id": "d7451fe8-b646-4032-a7eb-c6abd22db22f"
+    },
+    {
+      "claim_id": "f4884103-a46f-4a0d-8170-c5c2e23f73f3",
+      "result_id": "53dba6a9-ccb7-410d-b86d-f4d79ec33840"
+    },
+    {
+      "claim_id": "1f564071-4a99-4bc9-8954-e3a03f262899",
+      "result_id": "53dba6a9-ccb7-410d-b86d-f4d79ec33840"
+    },
+    {
+      "claim_id": "6acd17dc-25b7-4a81-be71-1c009c09bf1e",
+      "result_id": "53dba6a9-ccb7-410d-b86d-f4d79ec33840"
+    },
+    {
+      "claim_id": "8bd45e4e-c7b8-4254-90ba-2825733e9ef6",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "0384725a-6140-46d5-a489-53e99201e2ad",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "b7f172ea-b7a3-4f88-b7c7-a33700b29b34",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "241ee7a7-44a8-4cb7-bc21-a3d24006106e",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "c8a7a5c3-8703-419e-8709-cbd2ca78a3b0",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "1ec363a6-678e-4831-b785-3f238881cb48",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "4856cdca-7ae7-4fef-b57d-25d6d14e2a99",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "8198b02d-b9c8-4808-afdc-4e2510b65801",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "f55ade18-1f7b-499e-9a7e-8667dc010e12",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "35c6d750-c19f-4311-ac1e-e0cad9fcf9a5",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "3674bd7d-27f8-4a3e-ac60-ae1d3daf1d33",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "9947b9e2-1e0d-4dc5-91d4-5a570c96b31e",
+      "result_id": "880680bb-18e4-4fb6-b192-3ee64313d91d"
+    },
+    {
+      "claim_id": "d019e263-05dc-433c-8f3f-5853fd6b00db",
+      "result_id": "50f21106-1a31-4a26-96f7-56587296fc4c"
+    },
+    {
+      "claim_id": "211ed298-c96f-4d8a-8135-5e5d967d507a",
+      "result_id": "50f21106-1a31-4a26-96f7-56587296fc4c"
+    },
+    {
+      "claim_id": "e479f92b-627a-4a6f-b9c5-d99ceaa943b0",
+      "result_id": "50f21106-1a31-4a26-96f7-56587296fc4c"
+    },
+    {
+      "claim_id": "eede3b28-be42-4c45-af50-00d95552ef95",
+      "result_id": "50f21106-1a31-4a26-96f7-56587296fc4c"
+    },
+    {
+      "claim_id": "814fd610-4f86-4ad8-a31e-d90e31fb40c9",
+      "result_id": "50f21106-1a31-4a26-96f7-56587296fc4c"
+    },
+    {
+      "claim_id": "053231db-e438-4d89-b925-5cfaead326c6",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "8086a5e7-af3f-4692-aae4-5f29676e0a63",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "621f3dee-0c39-49fb-9b29-bde0c0aab7a2",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "ff833672-c16e-4ee6-9246-7bb5543ff7dd",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "b4bab527-5c48-4de2-b5de-60a1455f753b",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "981e7c01-357a-4cd1-a2e3-b1d4bbb6bcd6",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "04c40488-a47f-4f22-9d1f-2640310e6341",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "33fde00e-da63-4e65-b4cd-fafaa3bccc4a",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "f9971aed-0c98-4f41-8cea-b68da6dc9461",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "70d2a2f3-d588-498f-a7e0-90c501df14e8",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    },
+    {
+      "claim_id": "e0b6b517-b0a0-4dd6-abf0-7144a014af1d",
+      "result_id": "3714592c-f065-427d-ac9b-688555564b2e"
+    }
+  ],
+  "comparisons": []
+}

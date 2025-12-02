@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors developed and validated a modified gap statistic algorithm to detect modularity in electrophysiological data with relatively few observations per animal. The algorithm performs well compared to existing discreteness metrics, which are prone to high false-positive rates, and simulations suggest approximately 30 recordings per animal are sufficient to detect modularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe the development and validation of the modified gap statistic through simulations (Figure 1 supplements 1-5). The algorithm's performance is directly compared to existing methods (C25-C26), with clear demonstration of reduced false-positive rates. The power analysis (C27) is based on simulations with known ground truth, providing solid methodological foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors collected a large dataset of 836 stellate cells from 27 mice (median 35 cells/mouse, age 18-57 days), measuring 12 electrophysiological properties (6 subthreshold and 6 suprathreshold) under two housing conditions (standard vs. large environment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 provide clear descriptive statistics of the experimental dataset. The sample sizes substantially exceed the minimum required for modularity detection (C27), and the measurements are well-defined with reference to Figure 2. This represents a significant increase over typical studies with <5 recordings per animal (C28).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Using Wfs1Cre mice, the authors validated their stellate cell identification criteria by demonstrating clear separation from layer 2 pyramidal cells and interneurons through rheobase measurements and principal component analysis, confirming the SC population is distinct from other layer 2 cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 describe systematic validation of cell type identification using genetic labeling and multivariate analysis (Figure 3A-F). The PCA clearly separates populations (C41) while not identifying SC subpopulations (C42), supporting the validity of the classification scheme. This addresses a critical potential confound for the main analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The large dataset replicates previously observed dorsoventral gradients in six SC properties (input resistance, sag, membrane time constant, resonant frequency, rheobase, and I-F relationship), with substantial R\u00b2 values >0.1. These gradients are absent in L2PCs, further distinguishing the two cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 report replication of known dorsoventral organization with quantitative effect sizes (Figure 3G, Table 1). The contrast with L2PCs (C45) strengthens the cell-type specificity of the findings. Statistical significance is clearly reported with adjusted R\u00b2 values, providing solid evidence for the dorsoventral organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Mixed-effects models demonstrate significant inter-animal variability in SC electrophysiological properties. For all 12 features, mixed models with animal identity as a random effect fit substantially better than linear models (p<2\u00d710\u207b\u00b9\u2077), and conditional R\u00b2 values substantially exceed marginal R\u00b2 values even for properties with strong dorsoventral tuning, indicating that set points differ between animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 present the core statistical evidence for inter-animal variation using appropriate mixed-effects modeling (Figure 4, Table 1). The comparison of marginal vs. conditional R\u00b2 values provides clear quantitative evidence that animal identity explains substantial variance beyond location. The statistical approach is sound and the p-values are highly significant across all features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Housing in large environments (vs. standard cages) significantly affects specific SC properties: increased sag response, lower resonant frequency, and larger spike half-width (adjusted p<0.05). These effects primarily alter magnitude rather than location-dependence. Importantly, significant inter-animal variation persists after accounting for housing (p<2.8\u00d710\u207b\u00b2\u00b9 for housing-dependent features, p<1.4\u00d710\u207b\u2077 for others).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 demonstrate experience-dependent plasticity while showing it does not fully explain inter-animal variation. The statistical analyses appropriately control for housing as a fixed effect (Supplementary files 3-4), and the persistence of inter-animal differences after this correction is well-documented. The interpretation that additional circuit-level mechanisms exist (C64) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "After systematically accounting for multiple experimental and biological variables (housing, hemisphere, mediolateral position, experimenter, time since slice preparation), significant inter-animal differences remain. Multiple lines of evidence argue against slice quality artifacts: most features don't correlate with number of recordings (10/12 features, p>0.2), analyses restricted to high-quality datasets (>35 recordings) yield consistent results, and L2PCs show much lower conditional R\u00b2 values than SCs under identical conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 address potential confounds through comprehensive control analyses (Supplementary files 5-13). The multi-pronged approach to ruling out technical artifacts is thorough. The comparison with L2PCs (C69-C70) is particularly compelling as an internal control, suggesting the inter-animal variation is biologically specific to SCs rather than a general experimental artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Using the modified gap statistic on datasets with n\u226534 SCs per animal (N=15 mice), the authors found that rheobase and resonant frequency have continuous rather than modular distributions. Only 13/15 and 14/15 animals showed single modes for rheobase and resonant frequency respectively. Across all 12 properties, at most 3/15 animals showed clustering for any given property (not significantly different from chance, p>0.05), with average detection rate of 0.072\u00b10.02 matching the expected false-positive rate. In contrast, the same algorithm successfully detected modularity in published grid cell data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 present the key negative result using the validated gap statistic algorithm. The power analysis (C72) establishes that the sample sizes should detect modularity if present. The systematic application across all properties (Figure 6) and comparison with grid cell data (C80, Figure 1 supplement 5) provides strong evidence that SC properties are continuous rather than modular. The statistical comparisons to chance expectations are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Principal component analysis reveals that the first five PCs account for ~80% of variance, with the first two PCs significantly dependent on dorsoventral location (marginal R\u00b2=0.50 and 0.09, p=1.09\u00d710\u207b\u00b9\u2075 and 1.05\u00d710\u207b\u2074). Housing affects the intercept but not slope of PC1 and PC2 (p=0.039 and 0.027). After accounting for housing, significant inter-animal variation remains in PC1 and PC2 (p=3.3\u00d710\u207b\u2079 and 4.1\u00d710\u207b\u2078\u2076) and in 8 of the next 10 higher-order PCs, suggesting two main experience-dependent sources of variance plus additional inter-animal variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 use PCA to reduce dimensionality and identify core mechanisms (Figure 7). The statistical analyses appropriately apply mixed models to PC scores, and the finding that housing affects intercepts but not slopes (C86) is mechanistically informative. The interpretation of two main sources of variance (C85, C90) is supported by the variance explained and location-dependence of PC1 and PC2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study demonstrates that stellate cell integrative properties vary between mice with continuous (not modular) dorsoventral organization, constraining mechanisms for modular grid firing and providing evidence for inter-animal phenotypic variability tuned to circuit-level set points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 summarize the main findings. The inter-animal variation (C2, C5) is strongly supported by the mixed-effects analyses. The continuous organization (C3) is supported by the gap statistic analyses. The constraint on grid firing mechanisms (C4) is a valid inference given the mismatch between continuous SC properties and modular grid firing. The circuit-level set point interpretation (C6) is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The continuous dorsoventral organization of SC properties argues against single-cell computational models of grid firing (which require modular SC properties) but could support models based on self-organizing maps or synaptic learning mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 draw appropriate theoretical implications from the finding of continuous SC organization. The argument against single-cell models (C106) is logically sound: if SC properties directly determine grid scales in individual cells, modularity would be required. The compatibility with network-level models (C107-C108) is appropriately presented as speculative possibility rather than demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C125",
+      "C126"
+    ],
+    "result": "The results suggest that integrative properties of neurons are determined by set points that differ between animals and are controlled at a circuit level, with implications for experimental design (distributions of replicates differ within vs. between animals) and understanding of neuronal property specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 and C125-C126 present the main conceptual conclusions. The inference of circuit-level control (C94) is well-supported by the persistence of inter-animal variation after controlling for cell-autonomous factors. The implications for experimental design (C96, C126) are valid and important for the field. These represent appropriate synthesis of the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose a conceptual framework where within-animal variation at the same location arises from different initial conditions (as in theoretical models), while location-dependence and inter-animal variation reflect circuit-level mechanisms, potentially involving inter-animal differences in dorsoventrally tuned or spatially uniform factors affecting ion channel expression or Ca\u00b2\u207a targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C100 present a theoretical framework for interpreting the results. While the framework is conceptually coherent and consistent with the data, it remains speculative (C100 explicitly states 'in principle'). The distinction between cell-autonomous and circuit-level mechanisms is reasonable but not directly tested. This represents hypothesis generation rather than demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The functional consequences of inter-animal variation remain unclear: variation in SC properties might correlate with differences in grid firing or behavior, or might reflect multiple ways to achieve common higher-order phenotypes (degeneracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C124 acknowledge uncertainty about functional implications. The speculation about correlation with grid firing (C119-C122) is supported by citations but not tested in this study. The alternative degeneracy hypothesis (C123-C124) is equally plausible. These represent important open questions rather than resolved issues, appropriately presented as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Validation of the modified gap statistic on published grid cell data shows it successfully detects modularity in 6 of 7 animals with n\u226520, with separation between contiguous modules always >5.6 standard deviations (mean=20.5\u00b15.0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 provide important positive control showing the gap statistic can detect known modularity in grid cell data (Figure 1 supplement 5). This validates the method's sensitivity and confirms that the failure to detect modularity in SC data is not due to insufficient statistical power. The quantification of module separation provides context for the power analyses.",
+    "result_type": "MINOR"
+  }
+]

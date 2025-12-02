@@ -1,0 +1,402 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C50",
+      "C52",
+      "C53",
+      "C93"
+    ],
+    "result": "Single mammalian dynein (DDB) and yeast dynein efficiently bypass quantum dot obstacles on microtubules, maintaining high mobile fraction, velocity, and run length even at high obstacle densities (up to 12 QDs/\u03bcm). DDB motility was less sensitive to obstacles than yeast dynein, with yeast dynein showing 30-70% reduction in motility parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C38, C50, C52, C53, and C93 are well-supported by experimental data in Figure 1 showing that both yeast dynein and DDB motors maintain processive motility at high QD densities. The quantitative measurements of mobile fraction, velocity, and run length provide strong evidence for this result. Statistical significance is reported (p-values) and sample sizes are adequate (n>100 for most conditions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C94"
+    ],
+    "result": "Single human kinesin-1 motors are strongly inhibited by QD obstacles on microtubules. At low QD density (1-2 QDs/\u03bcm), mobile fraction was reduced by 90% and run length/velocity by 60%. The majority of kinesins became stuck on MTs and remained bound but unable to move forward when encountering obstacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, C54-58, and C94 are strongly supported by experimental data in Figure 1D-E showing dramatic reductions in all motility parameters for kinesin. The data includes appropriate statistical testing (p=0.0003) and adequate sample sizes. The conclusion that kinesin remains bound but immobile is well-supported by the kymograph data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "Kinesin pause density increased two-fold and pause time increased four-fold at 2 QDs/\u03bcm, while yeast dynein and DDB showed only modest increases in pause density and duration. Kinesin motility typically stalls permanently after a few transient pauses, whereas dynein rarely pauses permanently even at the highest QD densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-61, C63-64 are supported by pause analysis data in Figure 2C and residence time analysis. The quantitative measurements show clear differences between kinesin and dynein pausing behavior. However, the mechanism proposed in C62-63 about detachment/reattachment is speculative and not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Single kinesin motors detach from MTs when encountering small protein obstacles (anti-tubulin antibodies). At 20 \u03bcg/mL antibody, kinesin run length and velocity were reduced by ~70%, but mobile fraction was not significantly different from dynein. Antibody obstacles cause kinesin detachment rather than extended pausing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C67-70 are supported by experimental data in Figure 3 comparing kinesin and DDB behavior with antibody obstacles. Statistical testing is appropriate (two-tailed t-tests with reported p-values). The distinction between detachment (antibody) versus pausing (QD) behavior is well-documented through different experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Kinesin motors carrying a rigid QD cargo are more likely to pause when encountering bulkier obstacles on MTs compared to encountering smaller protein obstacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by comparing the different behaviors observed with QD obstacles (pausing, C59-60) versus antibody obstacles (detachment, C70). The inference is logical given the size difference between obstacles and the different phenotypes observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "On freely suspended MT bridges, yeast dynein's run length was 2.5-fold higher compared to surface-immobilized MTs at 12 QDs/\u03bcm, suggesting improved obstacle bypass by exploring the entire MT surface. However, kinesin showed no significant improvement on MT bridges, with mobile fraction reduced by 75% at 1 QD/\u03bcm, indicating intrinsic limitations in side-stepping ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-75 are supported by experimental data in Figure 4C comparing motility on MT bridges versus surface-immobilized MTs. The statistical significance is reported (p<0.001) and the interpretation that kinesin is intrinsically limited in side-stepping is a reasonable inference from the lack of improvement on bridges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C86",
+      "C96"
+    ],
+    "result": "Multiple kinesin motors overcome their limitation in bypassing obstacles when working in teams. Beads coated with high concentration (1.5 \u03bcM) kinesin maintained unaffected mobile fraction at 12 QDs/\u03bcm, a density that completely inhibited single motors. Multiple kinesins bypass obstacles as efficiently as multiple dyneins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40, C76-80, C86, and C96 are well-supported by experimental data in Figure 5 showing that multi-motor cargos maintain high motility at obstacle densities that completely inhibit single motors. The dose-dependent effect (50 nM vs 1.5 \u03bcM kinesin) provides additional support. Sample sizes are adequate (n>300 for most conditions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C85"
+    ],
+    "result": "Multi-motor cargos show modest velocity reductions in the presence of obstacles: dynein-driven beads decreased by 28% and kinesin-driven beads by 25% at 12 QDs/\u03bcm. Multi-motor kinesin also exhibited reduced velocity (but not mobile fraction or run length) at 20 \u03bcg/mL antibody.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C82, and C85 are supported by experimental data in Figure 5C and 5E with appropriate statistical testing (p-values reported). The velocity reductions are modest compared to the dramatic effects on single motors, supporting the conclusion that multiple motors can effectively bypass obstacles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Beads coated with 1.5 \u03bcM kinesin showed unaffected run length and mobile fraction at 20 \u03bcg/mL antibody, with all beads walking until they reached the end of the MT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-84 are supported by experimental data in Figure 5D-E and Video 6. The complete processivity (all beads reaching MT ends) is a strong phenotype that supports the conclusion about multi-motor obstacle avoidance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C101",
+      "C102"
+    ],
+    "result": "Cargos driven by multiple kinesin or dynein motors can bypass large obstacles (PDMS walls) by rotating around the MT circumference without net forward movement. 77\u00b113% of kinesin beads and 85\u00b15% of dynein beads rotated to bypass the wall. Kinesin beads paused for shorter periods (3.8\u00b10.2 s) than dynein beads (7.8\u00b11.0 s) when encountering the wall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41-42, C87-91, C101-102 are supported by experimental data in Figure 6 showing rotation of beads around MT bridges when encountering PDMS walls. The quantitative measurements of rotation frequency and pause times are well-documented with appropriate statistics. Videos 7-8 provide visual confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C13",
+      "C21",
+      "C95"
+    ],
+    "result": "The differences in obstacle avoidance between kinesin and dynein are attributed to differences in their side-stepping abilities. Kinesin follows a single protofilament track and almost exclusively steps forward without frequent sideways motion, making it unable to take sideways steps to neighboring protofilaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C12-13, C21, and C95 are supported by prior research (citations provided) and are consistent with the experimental observations in this study. The inference connecting stepping behavior to obstacle avoidance is logical and well-supported by the data showing different responses to obstacles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Kinesin and dynein utilize different mechanisms to bypass obstacles on microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is a summary conclusion supported by the collective experimental evidence showing that single dynein efficiently bypasses obstacles through side-stepping while single kinesin cannot, but multiple kinesins overcome this through team-based mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C106"
+    ],
+    "result": "Multiplicity of motors is required not only for transporting cargos over long distances and generating higher forces, but also for maneuvering cargos on obstacle-coated MT surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C106 represent the main conclusion of the paper, supported by the collective experimental evidence showing that multi-motor cargos can bypass obstacles that completely inhibit single motors. This is a well-supported inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The run lengths of kinesin-QD complexes (2.1\u00b10.2 \u03bcm) were similar to kinesin motors labeled with organic dye (p=0.21), suggesting that QDs were driven by single motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-49 are supported by experimental data in Figure 1\u2014figure supplement 1D-E comparing QD-labeled and dye-labeled kinesin. The statistical test is appropriate and the inference that similar run lengths indicate single-motor behavior is reasonable, though not definitive without additional evidence (e.g., photobleaching steps).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Previously observed reversals of mammalian dynein might be due to diffusive motion in the absence of dynactin and a cargo adaptor, as DDB did not show reversals when encountering QD obstacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by the experimental observation that DDB does not reverse (current data) combined with prior knowledge about dynein autoinhibition (C30). The inference is logical and addresses a discrepancy with prior literature (C29).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Tug-of-war between opposite polarity motors is not required to bypass large obstacles, and fluidity of the cargo is not essential for this process, as rigid beads driven by a single motor type can rotate around MTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-105 are supported by experimental data showing that cargos driven by only one type of motor (kinesin or dynein) can bypass large obstacles through rotation. This directly contradicts prior hypotheses (C123) and is well-demonstrated by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Transient pauses may correspond to detachment of kinesin when encountering an obstacle and reattachment to a nearby protofilament.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is a hypothesis about the mechanism of transient pauses, supported by citation to prior work but not directly demonstrated in this study. The pause analysis shows that pauses occur, but the molecular mechanism (detachment/reattachment) is not directly observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Two alternative hypotheses are proposed for how multi-motor cargos bypass obstacles: (1) other motors exert force on stuck motors causing detachment and continued motion, or (2) teams pause until sideways movement occurs through stepping or stochastic shifts allowing motor reattachment to adjacent protofilaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-100 are speculative hypotheses about mechanisms that are not directly tested in this study. While these are reasonable proposals based on the observations, they require future high-resolution studies to validate. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Background information on kinesin and dynein structure, function, and stepping mechanisms is provided, establishing that these motors have complementary functions (moving toward opposite MT ends) but distinct structural and mechanistic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-11, C14-17, C107-109 represent established background knowledge supported by extensive prior research (citations provided). These are appropriately used to contextualize the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Prior research context is provided regarding the crowded cellular environment, previous observations of motor behavior with obstacles, and the role of multiple motors in cargo transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-20, C22-37 represent prior research findings that are appropriately cited and used to motivate the current study. These establish the knowledge gaps that the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Methodological details are provided about the experimental system, including QD properties, motor constructs, obstacle characteristics, and experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-47, C110-113 describe the experimental methods and materials used in the study. These are well-documented with appropriate citations and specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Surface immobilization of MTs may serve as an additional obstacle by preventing motor access to protofilaments facing the coverslip, whereas MTs in cells are freely suspended in 3D, potentially allowing motors to more successfully bypass obstacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-117 represent a logical consideration about experimental design that motivated the MT bridge experiments. The hypothesis (C117) is tested and supported by the improved dynein performance on bridges (C71-72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "In cells, cargos are often carried by multiple motors, which increases collective force generation, enables transport over longer distances, and allows slightly higher velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-121 represent established knowledge from prior research (citations provided) that motivates the multi-motor experiments in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Prior in vivo studies observed cargo bypass of stationary organelles, and it was proposed that rotation requires both motor types or cargo distortion. The current study shows rotational movement distinct from helical movement, where rotation occurs without forward translational movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-125 provide context from prior research and distinguish the current observations from previously described helical movement. The distinction is well-supported by the experimental data showing rotation without net forward movement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C18",
+      "C33"
+    ],
+    "result": "Differences in stepping behaviors between motors may influence their cellular functions, and teams of motors may enable transport of large cargos through dense cellular environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18 and C33 are speculative statements about functional implications that are not directly tested in this study. While these are reasonable hypotheses supported by the data, they represent inferences about cellular function rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

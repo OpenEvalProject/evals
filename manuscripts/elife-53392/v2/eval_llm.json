@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "ZCWPW1 co-evolves with PRDM9 across vertebrate species, with ZCWPW1 presence strongly associated with PRDM9 possessing an intact PR/SET domain capable of depositing H3K4me3/H3K36me3 marks. Phylogenetic analysis of 167 species shows that 78% of ZCWPW1-possessing species have close relatives with PRDM9, and ZCWPW1 is absent in species where PRDM9 has lost catalytic activity (odds ratio = 285, p<10^-15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis across 167 species (C47-C61) provides strong evidence for co-evolution, with multiple independent loss events of both proteins occurring together. The statistical association (C60) and domain-specific co-occurrence patterns (C54-C55, C120) support the conclusion. The analysis appropriately accounts for incomplete sequencing and uses multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C62"
+    ],
+    "result": "ZCWPW1 contains CW and PWWP domains that bind H3K4me3 and H3K36me3 respectively, is expressed in testis, and ranks 3rd in genes co-expressed with Prdm9 in pre-leptotene to leptotene spermatocytes. The protein is specifically expressed during meiotic prophase in both male and female mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The domain structure (C1, C37-C38) is supported by cited literature and protein domain databases. Expression patterns (C2, C36, C39-C40, C62) are supported by single-cell RNA-seq data and expression databases. These claims establish the basic molecular characteristics of ZCWPW1 relevant to its function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ZCWPW1 protein shows dynamic localization during meiosis, with strong punctate nuclear staining in zygotene and early pachytene cells, relocalization to the XY body and synaptonemal complex ends in mid-pachytene, and minimal expression by diplotene. FISH analysis confirms that ZCWPW1 foci localize to subtelomeric and subcentromeric regions at chromosome ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization patterns are demonstrated by immunofluorescence microscopy (C63-C65) and validated by FISH experiments (C66) across multiple meiotic stages. The data are shown in Figure 2 and Figure 2\u2014figure supplement 2 with appropriate controls. The dynamic pattern is consistent across three biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Zcwpw1\u2212/\u2212 male mice are completely sterile with azoospermia, reduced testis size, meiotic arrest at pseudo-pachytene, absence of MLH1 foci, and >98% of cells showing synapsis failure. The synapsis defect pattern differs from Prdm9\u2212/\u2212 mice, with Zcwpw1\u2212/\u2212 showing predominantly 'multibodies' (74.5%) rather than 'tangled' chromosomes (24.8% vs 63.2% in Prdm9\u2212/\u2212), suggesting failure to pair rather than mispairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sterility phenotype is well-documented with multiple measurements (C67, C11) including testis weight, sperm counts, and histology. The synapsis defects are quantified (C72) and the distinct pattern from Prdm9\u2212/\u2212 is statistically characterized (C73-C76). However, the authors note that different genetic backgrounds between the two knockout lines could contribute to phenotypic differences, which is an important caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Zcwpw1\u2212/\u2212 mice show persistent DMC1, RAD51, and RPA2 foci from zygotene onwards, indicating delayed DSB repair. DSBs form and recruit repair proteins in normal numbers initially, but fail to repair efficiently, with persistent DMC1 foci observed mainly on HORMAD2-positive asynapsed chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The persistent foci are quantified by immunofluorescence microscopy (C78-C80) with statistical significance (p-values provided in Figure 4). The normal initial recruitment (C81) is supported by cited parallel studies and early-stage foci counts. The localization to asynapsed chromosomes (C83) is demonstrated by co-staining experiments. The data consistently support a repair defect rather than an initiation defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C127"
+    ],
+    "result": "In HEK293T cells, ZCWPW1 is strongly recruited to PRDM9 binding sites in an allele-specific manner, with 92% of the strongest 10,000 ZCWPW1 peaks occurring at PRDM9-bound sites when co-transfected. PRDM9 strongly reprograms ZCWPW1 binding, and recruitment switches from human to chimp PRDM9 sites when the zinc finger array is swapped, demonstrating that PRDM9 binding alone is sufficient for recruitment without requiring DSB formation or meiosis-specific co-factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-seq experiments (C84-C88) provide strong evidence for PRDM9-dependent recruitment with appropriate controls (cells without PRDM9, randomized peaks). The allele-switching experiment (C88) is a critical perturbation that demonstrates causality. The conclusion about sufficiency (C127) is well-supported by the HEK293T system lacking meiotic machinery. Transfection efficiency is documented (Figure 5\u2014figure supplement 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "ZCWPW1 shows higher affinity for PRDM9 binding sites (possessing both H3K4me3 and H3K36me3) than for promoter sites possessing H3K4me3 alone. Even the weakest PRDM9 sites show stronger ZCWPW1 enrichment than the strongest promoters, suggesting that both histone modifications contribute to efficient ZCWPW1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis in Figure 6 clearly shows differential enrichment between PRDM9 sites and promoters (C92-C93). The positive association with both marks (C90) is shown in supplementary figures. The inference about dual mark recognition (C94-C95) is reasonable given the data, though the authors appropriately note they cannot measure individual cell-level mark co-occurrence in their system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C134"
+    ],
+    "result": "DSB positioning is completely normal in Zcwpw1\u2212/\u2212 mice, with DMC1 signals occurring at expected B6 WT hotspots and mirroring SPO11 break positioning within hotspots. ZCWPW1 is not required for specifying hotspot locations or influencing where DSBs occur within hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "DMC1 SSDS ChIP-seq data (C96-C97) demonstrate normal DSB positioning at WT hotspots with no signal at Prdm9\u2212/\u2212 hotspots. The analysis of SPO11 positioning patterns (C97, Figure 7\u2014figure supplement 2) shows that DSB locations within hotspots are preserved. This result is independently confirmed by Mahgoub et al., 2020 (C134) using a different assay, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "In Zcwpw1\u2212/\u2212 mice, the relationship between SPO11 and DMC1 becomes linear rather than sub-linear, and the X-chromosome behaves similarly to autosomes in terms of DMC1 persistence. The effect of PRDM9 binding strength on DMC1 removal is eliminated, with the KO:WT DMC1 ratio increasing ninefold from weakly to strongly H3K4me3-marked hotspots. This pattern resembles Hop2\u2212/\u2212 mice where DSBs are not repaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DMC1 vs SPO11 analysis (C102, C105) is clearly shown in Figure 7C with appropriate statistical modeling. The X-chromosome behavior (C104) provides an internal control. The correlation with H3K4me3 levels (C109-C110) is quantified using a Generalised Additive Model (r=0.60). The comparison to Hop2\u2212/\u2212 (C108) strengthens the interpretation. The linear relationship strongly suggests loss of PRDM9's repair-facilitating function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "ZCWPW1 recognizes CpG dinucleotides in a dose-dependent manner in HEK293T cells, with binding strongly enriched at Alu repeats and other CpG-rich regions. Almost all Alus with 10-20 CpGs are bound, and 300bp regions with \u226510 CpGs have >50% probability of overlapping a ZCWPW1 binding site. ZCWPW1 shows greater affinity for methylated CpGs but retains some affinity for unmethylated regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CpG-dependent binding is demonstrated by systematic analysis of Alu repeats (C113-C114) and genome-wide windows (C115-C116) shown in Figure 8. The dose-response relationship is clear and quantified. The methylation preference (C117) is shown by comparing methylated vs unmethylated regions. However, the authors appropriately note uncertainty about whether this binding mode occurs in vivo during meiosis given developmental changes in methylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C43",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C150"
+    ],
+    "result": "ZCWPW1 is required for proper inter-homologue interactions including synapsis and DSB repair, but not for DSB positioning. The additional role PRDM9 plays in enabling homologous chromosome pairing malfunctions in Zcwpw1\u2212/\u2212 mice, with DSBs at strongly PRDM9-bound sites failing to repair more quickly. Zcwpw1\u2212/\u2212 mice behave as if all hotspots are asymmetric, similar to hybrid mice with asymmetric hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion integrates multiple lines of evidence: normal DSB positioning (C7, C42), defective synapsis (C10, C72), persistent DMC1 (C8, C78), and altered DMC1 dynamics (C105-C107). The comparison to asymmetric hotspot hybrids (C139) is supported by cited literature showing similar phenotypes. The inference that ZCWPW1 links PRDM9 binding to repair (C138) is reasonable given the data, though the precise mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C132",
+      "C133"
+    ],
+    "result": "ZCWPW1 represents the first protein identified that directly recognizes sites possessing the dual H3K4me3/H3K36me3 histone marks deposited by PRDM9, impacting homologous DSB repair rather than DSB positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of being 'first' (C133) is supported by the lack of other known proteins with this property and is consistent with the literature. The dual mark recognition (C132) is supported by the recruitment data (C84-C88), binding affinity studies from parallel work (C131), and the domain structure (C37-C38). The impact on repair rather than positioning (C46) is clearly demonstrated by the knockout phenotype (C7, C42, C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "A parsimonious model is that ZCWPW1 functions by attaching to PRDM9-bound sites on the homologous chromosome to mark repair partner locations and help pair homologues. A backup mechanism independent of PRDM9 binding level likely acts to attempt homology search in Zcwpw1\u2212/\u2212 mice, which may be necessary for repairing DSBs at naturally asymmetric hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as a speculative model (C142) to explain the findings. While the model is consistent with the data (recruitment to PRDM9 sites, synapsis defects, behavior resembling asymmetric hotspots), it lacks direct experimental validation. The existence of a backup mechanism (C143) is inferred from partial synapsis but not demonstrated. These are reasonable hypotheses for future testing rather than established results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "ZCWPW1 binding strength in HEK293T cells at human PRDM9 sites provides a better predictor of human meiotic DMC1 binding status than PRDM9 binding strength itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ROC curve analysis in Figure 5\u2014figure supplement 6 clearly demonstrates superior predictive performance of ZCWPW1 enrichment compared to PRDM9 enrichment alone. However, the authors appropriately note that ZCWPW1 is not directly involved in DSB positioning (C98), so this likely reflects that ZCWPW1 recognizes similar features to those involved in recruiting DSB machinery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on PRDM9 function and meiotic recombination: PRDM9 determines recombination locations by binding specific sequence motifs and depositing H3K4me3 and H3K36me3 marks, which are essential for DSB positioning. DSBs are processed to ssDNA decorated with DMC1, and PRDM9 binding to the homologous chromosome aids synapsis and fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C14-C35) represent established knowledge from the field, supported by multiple cited references. They provide necessary context for understanding the current work but are not novel findings from this study. The citations are appropriate and the statements accurately reflect the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Previous work and context: ZCWPW1 was previously shown to be required for male fertility in mice, with female mice losing fertility by ~8 months. Sexual dimorphism in fertility phenotypes is observed in other meiotic gene knockouts. The late-stage localization of ZCWPW1 at subtelomeric regions resembles telomere-tethering proteins, though no telomeric attachment defects were reported in another Zcwpw1\u2212/\u2212 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately cite prior work (C41, C122, C123, C125) and provide appropriate context. The comparison to other meiotic mutants (C123) and telomere-tethering proteins (C124) is supported by cited literature. The caveat about telomeric attachment (C125) appropriately acknowledges conflicting observations between studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C134",
+      "C146",
+      "C147"
+    ],
+    "result": "Integration with parallel studies: Concurrent work by Mahgoub et al., 2020 and Huang et al., 2020 independently confirmed PRDM9 allele-specific recruitment of ZCWPW1, normal DSB positioning in knockouts, requirement for H3K4me3 recognition, preferential binding to dual-modified peptides, and enrichment at repetitive elements. These studies used different experimental systems and assays, providing independent validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of parallel studies (C126, C128-C131, C134, C146-C147) strengthens the conclusions by showing reproducibility across independent laboratories and experimental approaches. The authors appropriately cite these concurrent studies and note where findings converge or diverge. This cross-validation significantly increases confidence in the major conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ZCWPW1 protein structure shows well-conserved CW and PWWP domains across species, with a moderately conserved region downstream of PWWP. An SCP1 domain is annotated in mouse only, and a potential methyl-CpG-binding domain may be present in the C-terminus of some species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The domain conservation is demonstrated by sequence alignment analysis (C48, Figure 1B). The SCP1 domain annotation (C50) is based on NCBI conserved domain search, though the authors appropriately note it is 'only suggestive.' The MBD prediction (C51) uses pDomThreader and is appropriately qualified as occurring 'at least in some species.' The structural analysis is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "ZCWPW1 expression levels and staining pattern are not visibly altered in Prdm9\u2212/\u2212 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (Figure 3\u2014figure supplement 1A) shows similar ZCWPW1 protein levels in Prdm9\u2212/\u2212 and WT testis extracts. However, the authors appropriately note that different genetic backgrounds between knockout lines could affect comparisons. The observation suggests ZCWPW1 expression is not dependent on PRDM9 presence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C148",
+      "C149"
+    ],
+    "result": "Speculation on mechanisms: The CpG-dependent binding in HEK293T cells might be mediated by a methyl-CpG binding domain or indirect recruitment through complexes with proteins like SETDB1. ZCWPW2, a paralogue of ZCWPW1 that recognizes H3K4me3, is co-expressed in testis and might have distinct functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative explanations (C145) for observed phenomena. The MBD hypothesis is based on domain predictions but lacks functional validation. The SETDB1 hypothesis is based on co-expression and known interactions with PRDM9 partners but is not tested. The ZCWPW2 observations (C148-C149) are factual but its function remains unknown. These represent reasonable hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "The proteins responsible for recognizing PRDM9-marked sites for DSB formation versus aiding synapsis are at least partly different.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion logically follows from the demonstration that ZCWPW1 is required for synapsis (C12, C43) but not for DSB positioning (C7, C42, C98). Since DSBs form normally without ZCWPW1, other proteins must recognize PRDM9 marks for DSB formation. This is an important conceptual advance in understanding the PRDM9 pathway.",
+    "result_type": "MAJOR"
+  }
+]

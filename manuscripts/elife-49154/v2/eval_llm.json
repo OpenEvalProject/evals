@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The study employed a sequential decision-making task with 62 younger and 62 older adults. The task featured a two-stage structure with spaceships and planets, manipulating reward stakes (1x vs 5x) and transition stability (stable vs variable blocks). The task was designed such that model-based strategies led to higher payoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with appropriate sample sizes (C35, C105), detailed task structure (C37-C50), and proper counterbalancing procedures (C111-C112). Exclusion criteria are transparent (C104), and data quality metrics are reported (C113-C114). The task design appropriately dissociates model-free from model-based strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C60",
+      "C71",
+      "C72"
+    ],
+    "result": "Older adults showed reduced model-based decision making compared to younger adults, even when model-based strategies led to higher payoffs. This finding replicates prior work and suggests the reduction reflects cognitive limitations rather than motivational factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main effect of age on model-based control is supported by hierarchical regression analysis with credible intervals excluding zero (C5). The replication of prior findings (C53) and the critical test using a task with control-reward trade-off (C60, C71) provide converging evidence that the effect reflects cognitive rather than motivational factors (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Older adults showed reduced metacontrol of decision-making strategies, with less adaptation to reward magnitude and transition stability manipulations compared to younger adults. This effect persisted in a performance-matched subsample, indicating specific deficits in metacontrol rather than general task difficulty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interaction effects between age and both stakes condition and transition stability are supported by credible intervals (C6, C76-C78). The critical control analysis using performance-matched samples (C79) strengthens the interpretation that this reflects specific metacontrol deficits (C80). Younger adults showed expected modulation by both manipulations (C73-C75), providing a proper comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C82",
+      "C83"
+    ],
+    "result": "Older adults showed lower transition learning rates, suggesting they incorporated information about changes in task structure more slowly and had less accurate representations of the task structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the modeling results show age differences in transition learning rates (C58-C59), the authors acknowledge an alternative interpretation exists (C58, C82). The interpretation that this reflects slower incorporation of transition information (C82) or blurred task representations (C83) is plausible but not definitively established. Additional validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C66",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Older adults showed less differentiated reaction time responses to surprising versus unsurprising transitions (revaluation vs non-revaluation trials), suggesting less accurate task structure representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interaction effect showing reduced RT slowing in older adults for revaluation trials is supported by hierarchical regression (C66, C84). The interpretation builds on established findings (C33, C85) and the hypothesis was pre-specified (C34). The inference that this reflects less accurate task representations (C86) is reasonable given the convergence with modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C87"
+    ],
+    "result": "Individual differences in model-based control were associated with reaction time slowing on revaluation trials, with participants showing more model-based control also showing greater RT slowing after surprising transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between model-based weights and RT slowing is demonstrated with hierarchical regression showing positive interaction effects (C68, C87). This relationship was found in both age groups, though with varying strength of evidence. The interpretation that this links model-based control to task structure representation accuracy (C70) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "A hybrid reinforcement learning model with separate model-free and model-based learners was used to quantify decision-making strategies. The model showed good parameter identifiability and absolute fit to observed behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational model is well-established (C115) and clearly described (C116-C121). Critical validation analyses including parameter recovery (C123) and posterior predictive checks (C124) demonstrate adequate model performance. The approach of estimating separate model-based weights for each condition (C122) is appropriate for testing the hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Older adults showed the expected pattern of reduced fluid abilities but increased crystallized abilities compared to younger adults, with no differences in need for cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The psychometric assessment shows the expected aging pattern consistent with prior research (C106). The lack of age differences in need for cognition (C107) helps rule out motivational explanations for the main findings. These are appropriate control measures for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C81",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose that reduced model-based control in older adults may reflect aging-related difficulties in representing task structure, potentially due to structural decline in prefrontal and hippocampal regions or alterations in neuromodulation affecting signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are theoretical explanations (C26-C28, C81, C88-C93) supported by citations to prior work but not directly tested in the current study. While the proposed mechanisms are plausible and consistent with the literature, they remain speculative without direct neurobiological measurements. The current behavioral data are consistent with but do not prove these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Reduced metacontrol in older adults might be related to aging-related decline in dopaminergic neuromodulation or tissue loss in dorsal anterior cingulate cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative mechanistic explanations (C94-C95) supported by citations but not tested in the current study. The authors appropriately present these as possible interpretations rather than established findings. Without neurobiological measurements, these remain plausible hypotheses requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Additional analyses and discussion address individual differences, alternative interpretations, and comparisons with other studies regarding older adults' sensitivity to costs and benefits in decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The supplementary analyses with perfect transition learning assumptions (C96-C97) provide additional insight into the mechanisms. The acknowledgment of individual differences (C98) and alternative interpretations (C99-C102) demonstrates appropriate scientific caution. These discussions contextualize the findings within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "A performance-matching procedure yielded a subsample of 26 younger and 26 older adults matched on task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The performance-matching procedure is clearly described and yielded appropriately sized subsamples (C125). This methodological approach provides an important control for testing whether metacontrol differences are independent of overall task performance, though the authors appropriately note limitations of this approach.",
+    "result_type": "MINOR"
+  }
+]

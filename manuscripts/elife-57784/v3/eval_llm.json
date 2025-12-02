@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Unphosphorylated peptides derived from the CaMKII-\u03b1 regulatory segment bind to the isolated CaMKII-\u03b1 hub and induce its disassembly into smaller oligomers (monomers, dimers, tetramers, hexamers) in a concentration-dependent manner. The calmodulin-binding element and \u03b2-clip segment are both required for this destabilization, with positive charges in the calmodulin-binding element being critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C34-C46 are strongly supported by mass spectrometry data showing concentration-dependent hub disassembly with Peptide A (C34-C37), slower disassembly with Peptide B lacking positive charges (C39), no disassembly with charge-reversed Peptide C (C40-C41) or \u03b2-clip-deleted Peptide D (C42), and specificity demonstrated by control peptides G and H (C44-C45). The data consistently demonstrate that both the calmodulin-binding element and \u03b2-clip are required for hub destabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Phosphorylated peptides (at Thr 305/306) are more effective at destabilizing the hub than unphosphorylated peptides, despite having comparable binding affinity. Peptides Aphos and Bphos induce rapid hub disassembly at lower concentrations and faster timescales than their unphosphorylated counterparts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by mass spectrometry data showing accelerated hub breakage with phosphorylated peptides compared to unphosphorylated versions (Figures 4 vs 2-3). However, the mechanism remains unclear since C53 indicates comparable binding affinity. The observation is robust but mechanistically unexplained, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Gel filtration analysis shows only intact dodecameric/tetradecameric hub species even after peptide incubation, contrasting with mass spectrometry results. This discrepancy may be due to peptide dissociation during gel filtration or mass spectrometry-specific perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C56 identify a critical discrepancy between techniques. C54 is supported by gel filtration data, but C55-C56 are speculative explanations without direct evidence. This raises questions about whether the mass spectrometry observations reflect physiologically relevant destabilization or are artifacts of the technique. The authors acknowledge but do not resolve this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In a 13 \u03bcs molecular dynamics simulation, two regulatory segments spontaneously dock at diametrically opposite interfaces of the dodecameric hub. Docking involves electrostatic interactions between positively-charged residues and negatively-charged interfacial grooves, followed by stable backbone hydrogen bonding that incorporates the regulatory segment into the interfacial \u03b2-sheet. This is accompanied by large conformational changes at both docking interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 are supported by detailed molecular dynamics simulation data (Figures 5-6). The simulations show spontaneous docking events with specific molecular interactions (C60-C64) and large structural distortions (C65-C66). However, the 13 \u03bcs timescale is relatively short for such large conformational changes, and only 2 of 12 regulatory segments dock, leaving questions about complete disassembly mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Regulatory segment docking causes large distortions in hub geometry, with inter-subunit angles increasing from ~50\u00b0 to ~80\u00b0 at docking interfaces while other interfaces close to compensate. The hub distorts from circular to oval but does not fully separate. These distortions may destabilize the hub, though binding of more than two regulatory segments would require additional distortions and loss of hub integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are well-supported by quantitative simulation data showing specific angular changes and compensatory interface closure. However, C72-C73 are more speculative inferences about whether these distortions lead to actual disassembly. The simulation does not show complete hub breakage, only distortion, creating uncertainty about the connection to the mass spectrometry observations of smaller oligomers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The conformational changes observed in simulations are larger than those in any crystal structures. Similar distortions occur at both docking sites despite different binding registers, suggesting the distortions reflect intrinsic hub dynamics rather than specific peptide interactions. This contrasts with a N. vectensis structure where linker-hub interactions likely represent crystallization artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 are supported by comparisons between simulation data and crystal structures. C79-C80 make a compelling inference that similar distortions with different binding registers indicate intrinsic dynamics. C77 appropriately critiques the N. vectensis structure based on pH and charge considerations. The comparative analysis strengthens the interpretation of simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Normal mode analysis and a 6 \u03bcs simulation of the hub without regulatory segments show that coupled opening of two diametrically opposite interfaces with compensatory closure of others is an intrinsic property of hub dynamics. Regulatory segments appear to trap these pre-existing fluctuations by forming stable interactions when interfaces open.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are strongly supported by convergent evidence from normal mode analysis and simulations without regulatory segments (Figure 7). The striking similarity between lowest-frequency normal modes and the distortions observed with regulatory segments (C82-C83) provides compelling evidence that C84-C85's interpretation of regulatory segments trapping intrinsic fluctuations is correct. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Single-molecule TIRF microscopy of mEGFP-CaMKII-\u03b1 expressed in mammalian cells shows that activation leads to destabilization of the holoenzyme. Upon activation, the population of smaller species (monomers/dimers) increases ~1.3-2-fold, and intermediate oligomeric species also increase, indicating partial disassembly of intact dodecamers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C86-C89 are supported by single-molecule TIRF data across three replicates (Figure 8B). The intensity distribution analysis with appropriate controls (mEGFP-Hck, photobleaching) and accounting for dark GFP (~30%) provides quantitative evidence for activation-induced destabilization. The 1.3-2-fold variation between replicates is acknowledged as expected for a non-equilibrium process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The F397A hub interface mutant shows increased instability compared to wild-type. Unactivated F397A has a much larger percentage of smaller species, and upon activation, the dodecameric peak completely disappears, suggesting complete destabilization of the holoenzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by single-molecule TIRF data (Figure 9) and previous gel filtration studies (C90). The F397A mutant provides a critical control showing that weakening hub interfaces enhances the activation-dependent destabilization effect. The complete loss of the dodecamer peak upon activation (C92-C93) is consistent across replicates and supports the interpretation of hub destabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose that upon activation and phosphorylation at both Thr 286 and Thr 305/306, the regulatory segment is released and can interact with the hub interface in cis at millimolar local concentrations, leading to rapid hub destabilization and production of smaller assemblies that might reassemble into new holoenzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C98, C99, and C100 represent a mechanistic model integrating the experimental findings. While C99 (millimolar local concentration) is supported by citation, and C100's inference is reasonable given the mass spec data at micromolar concentrations, the complete model (C8, C98) remains speculative. The reassembly into new holoenzymes is particularly uncertain, as no direct evidence for reassembly is provided. This is appropriately presented as a hypothesis requiring further study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors propose an alternative to the memory storage hypothesis, suggesting that activation-induced destabilization potentiates Ca2+ pulses under calmodulin-limiting conditions by releasing smaller oligomers that can spread activation to unactivated holoenzymes. This mechanism is more consistent with phosphatase action than indefinite maintenance of activation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 present a speculative functional model. C102's critique of the memory storage mechanism is reasonable given phosphatase activity, but C103-C104's alternative proposal lacks direct experimental support. The speculation is appropriately qualified and supported by citations about calmodulin limitation in neurons, but remains a hypothesis requiring validation through additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background on CaMKII structure, function, and previous findings on subunit exchange. CaMKII is an oligomeric kinase with dodecameric/tetradecameric hub assemblies. Activation triggers subunit exchange between holoenzymes, and the regulatory segment is important for this process. The hub has interfacial grooves lined with negatively-charged residues that may interact with the positively-charged calmodulin-binding element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 provide established background information supported by extensive citations to prior work. These claims establish the context for the current study and are well-supported by the literature. C24 and C28 represent hypotheses from prior work that the current study tests. This background is appropriately cited and provides necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Efficient Thr 286 phosphorylation requires the holoenzyme structure for high local concentration of kinase and substrate. Subunit exchange could spread activation by allowing activated subunits to enter unactivated holoenzymes. Mammalian CaMKII-\u03b1 is very stable without activation, unlike choanoflagellate CaMKII which undergoes spontaneous exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by citations to previous studies. These claims provide important context for understanding why the activation-dependent destabilization mechanism is significant. The comparison between mammalian and choanoflagellate CaMKII (C96-C97) highlights the evolutionary specialization of the mammalian enzyme's stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Approximately 30% of GFP across all samples was dark, consistent with previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by the data in Table 1 and citation to previous work. This is an important technical parameter for the intensity distribution analysis and is appropriately measured and reported. The consistency with prior literature (Ulbrich and Isacoff, 2007) validates the measurement.",
+    "result_type": "MINOR"
+  }
+]

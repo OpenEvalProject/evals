@@ -1,0 +1,2292 @@
+{
+  "submission": {
+    "id": "373313ee-a863-4e7e-ae3e-53424cdf967a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:33:55.856265Z",
+    "updated_at": "2025-12-02T19:33:55.856265Z"
+  },
+  "content": [
+    {
+      "id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "submission_id": "373313ee-a863-4e7e-ae3e-53424cdf967a",
+      "content_type": "manuscript",
+      "content_text": "# Clusters of polymorphic transmembrane genes control resistance to schistosomes in snail vectors\n\n## Authors\n\n- Jacob A Tennessen<sup>1</sup> ([ORCID: 0000-0002-5015-4740](https://orcid.org/0000-0002-5015-4740)) \u2020\n- Stephanie R Bollmann<sup>2</sup>\n- Ekaterina Peremyslova<sup>2</sup>\n- Brent A Kronmiller<sup>2</sup>\n- Clint Sergi<sup>2</sup>\n- Bulut Hamali<sup>2</sup>\n- Michael Scott Blouin<sup>2</sup> ([ORCID: 0000-0002-8439-2878](https://orcid.org/0000-0002-8439-2878))\n\n### Affiliations\n\n1. Department of Immunology and Infectious Diseases, Harvard T. H. Chan School of Public Health Boston United States\n2. Department of Integrative Biology, Oregon State University Corvallis United States\n3. Center for Genome Research and Biocomputing, Oregon State University Corvallis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSchistosomiasis is a debilitating parasitic disease infecting hundreds of millions of people. Schistosomes use aquatic snails as intermediate hosts. A promising avenue for disease control involves leveraging innate host mechanisms to reduce snail vectorial capacity. In a genome-wide association study of Biomphalaria glabrata snails, we identify genomic region PTC2 which exhibits the largest known correlation with susceptibility to parasite infection (>15 fold effect). Using new genome assemblies with substantially higher contiguity than the Biomphalaria reference genome, we show that PTC2 haplotypes are exceptionally divergent in structure and sequence. This variation includes multi-kilobase indels containing entire genes, and orthologs for which most amino acid residues are polymorphic. RNA-Seq annotation reveals that most of these genes encode single-pass transmembrane proteins, as seen in another resistance region in the same species. Such groups of hyperdiverse snail proteins may mediate host-parasite interaction at the cell surface, offering promising targets for blocking the transmission of schistosomiasis.\n\n## Introduction\n\nSchistosomiasis is a chronic and debilitating disease suffered by over 200 million people worldwide (Evan Secor, 2014; Lo et al., 2018). It is caused by infection with schistosome trematode parasites that are transmitted by aquatic snails (Lo et al., 2018). Infection can be treated with regular doses of a single drug, praziquantel (Doenhoff et al., 2009). However, it has become increasingly clear that mass drug administration alone will not adequately control schistosomiasis, and that successful elimination of transmission requires intervention at the snail stage (Lo et al., 2018; Sokolow et al., 2018).\n\nImmunogenetic interactions between snails and schistosomes represent a crucial stage in the parasite life cycle that can be targeted to block transmission. Parasite resistance is highly heritable in snails, and there is substantial strain-by-strain interaction between hosts and parasites (Richards and Shade, 1987; Richards et al., 1992; Knight et al., 1999; Webster et al., 2004; Webster and Woolhouse, 1998; Theron et al., 2014). Genetically diverse parasite cultures can infect nearly all snails, while bottlenecked laboratory strains of parasite can only infect a subset (Theron et al., 2008), suggesting a \u2018trench warfare\u2019 model in which numerous alleles are maintained in both host and parasite populations because each matches a different phenotype in the other species (Seger, 1988; Stahl et al., 1999). There are likely to be snail genes with large effects on resistance to particular parasite genotypes (Lewis et al., 2001). Finding these genes will open two potential avenues for disease mitigation. First, they may uncover mechanisms of infection by the parasite that could be therapeutically targeted. Second, they may facilitate genetic manipulation of wild snail populations so as to reduce parasite transmission by eliminating alleles that permit infection by certain schistosome genotypes (Theron et al., 2014; Reardon, 2016; Famakinde, 2018; Maier et al., 2019).\n\nFor invertebrates, highly strain-specific responses to parasites remain unexplained (Schmid-Hempel, 2005; Schulenburg et al., 2007), as these taxa lack the combinatorial immune system found in vertebrates with its vast and adjustable repertoire of recognition molecules. Invertebrate resistance to macroparasites or parasitoids often involves large-effect loci (Carton et al., 2005), but most of these are poor candidates for mediating strain specificity, as they reflect generic enhanced defenses conveying a constitutive fitness cost (Kraaijeveld and Godfray, 1997; Webster and Woolhouse, 1999; Koella and Bo\u00ebte, 2002), or encode signaling molecules (Hita et al., 2006) or effectors (Goodall et al., 2006) rather than recognition molecules. Strain specificity may be conveyed by suites of highly diverse host genes that act synergistically, especially if these interact with similarly varying and coevolving sets of parasite genes to mediate host-parasite recognition (Schmid-Hempel, 2005; Schulenburg et al., 2007; Cerenius and S\u00f6derh\u00e4ll, 2013). Such loci will not necessarily produce a large phenotypic signal unless several are clustered in the same genomic region.\n\nThe neotropical snail Biomphalaria glabrata has been the focus of recent efforts to develop genomic resources for schistosomiasis vector biology, although the 916 Mb, repetitive genome remains poorly assembled (reference genome BglaB1 N50\u00a0=\u00a048 kb; Adema et al., 2017; Tennessen et al., 2017). B. glabrata snails can be readily challenged with Schistosoma mansoni miracidia under controlled laboratory conditions, with successful infections diagnosed by subsequent shedding of cercariae (Bonner et al., 2012). To date, four genomic regions have been identified in which allelic variation influences resistance to infection by S. mansoni (Knight et al., 1999; Goodall et al., 2006; Tennessen et al., 2015a; Tennessen et al., 2015b). An F2 mapping cross between resistant B. glabrata strain BS-90 and a susceptible strain yielded two RAPD markers linked to resistance (Knight et al., 1999). One of those was subsequently aligned to a contig on Linkage Group (LG) XII (Tennessen et al., 2017), although the identities of any candidate genes to which it may be linked remain unclear (the other could not be uniquely mapped). Two other genomic regions (sod1 and RADres; Goodall et al., 2006; Tennessen et al., 2015a) influence S. mansoni infection in B. glabrata population 13\u201316-R1 which is admixed from Caribbean and Brazilian populations and has been maintained free from parasites for several decades as a large laboratory population with substantial segregating variation. However, together those two regions explain only 7% of the variance in resistance in 13-16-R1, suggesting that other resistance loci remain undiscovered in this population. In B. glabrata from Guadeloupe, the Guadeloupe Resistance Complex (GRC) shows an 8-fold effect on the odds of S. mansoni infection (Tennessen et al., 2015b; Allan et al., 2017) via a hemocyte-mediated mechanism (Allan et al., 2018a) that also affects the proteome (Allan et al., 2019) and microbiome (Allan et al., 2018b). Seven clustered GRC genes encode hyperdiverse single-pass transmembrane (TM1) proteins that appear to recognize parasite-associated molecules (Tennessen et al., 2015b), likely including saccharides (Allan and Blouin, 2018).\n\nHere, we use a genome-wide association study to pinpoint a new resistance region in snails, with a very large (over 15-fold) effect on odds of infection by schistosomes. It comprises a cluster of highly polymorphic transmembrane genes, and as GRC (=PTC1) was the first such cluster described in Biomphalaria, we designate this second region as Polymorphic Transmembrane Cluster 2 (PTC2). Using PacBio, we have vastly improved the assembly of the B. glabrata genome, allowing us to fully characterize the chromosomal vicinity of PTC2. Transcriptomic data show that, like GRC, PTC2 harbors exceptionally divergent suites of TM1 genes, suggestive of coevolutionary dynamics. These results support a general immunogenetic scenario in which clusters of highly polymorphic TM1 genes mediate host-parasite interaction.\n\n## Results and discussion\n\nIn pooled whole-genome sequencing of 600 infected and 600 uninfected 13\u201316-R1 snails (298x and 333x coverage, respectively), a single genomic region showed by far the greatest difference in allele frequencies between pools (Figure 1A; Supplementary file 1A). The highest outliers occurred in a 450 kb section of LG XII, here called PTC2. Genetic divergence between pools (FST) at numerous PTC2 variants exceeds 0.1, a value unobserved among one billion simulated neutral variants, which is therefore significant even if corrected for the nearly 7 million empirical variants examined (p<0.01). Many variants even show FST over 0.2, more than twice the FST at sod1 and RADres. By subsequently genotyping indel polymorphisms at PTC2 in individual snails, we observed three alleles at intermediate frequency (R: 44%, S1: 24%, and S2: 32%). Infection was rare for RR homozygotes (12.9%), and much more common for S1S1 (75.3%) and S2S2 (29.6%) homozygotes, a difference in infection odds of over 15-fold (i.e. infection odds of 0.15 vs. 3.0; Figure 1B). Heterozygotes showed intermediate phenotypes. There was weak partial dominance of S1 over R (observed Clopper-Pearson 95% confidence interval of infection probability for S1R\u00a0=\u00a051.0\u201361.8%; expected intermediate phenotype\u00a0=\u00a044.1%), such that relative to RR, carrying an S1 allele increases the odds of infection 5.9-fold (p=6\u00a0\u00d7\u00a010\u221242) while a second S1 allele further increases the odds of infection 2.7-fold for a 15.9-fold difference (p=1\u00a0\u00d7\u00a010\u22124). The S2 allele acts additively, such that each S2 allele increases the odds of infection 1.5-fold (p=6\u00a0\u00d7\u00a010\u22125). We confirmed the PTC2 signal using an independent set of 392 snails from 13-16-R1 that had previously been phenotyped (Tennessen et al., 2015a) (p=7\u00a0\u00d7\u00a010\u221212 for R vs. S1; p=4\u00a0\u00d7\u00a010\u22125 for R vs. S2; Figure 1\u2014figure supplement 1). These snails had also been genotyped at sod1 and RADres, revealing that all three loci had significant independent associations when included together in the same model (p\u226410\u22124 for each), with no evidence for epistasis (p>0.05 for interaction terms). Segregating variation at PTC2 has a stronger association with odds of infection than that of any other known B. glabrata locus (Tennessen et al., 2015a; Tennessen et al., 2015b). The BS-90 RAPD marker (Knight et al., 1999) is only 5 Mb and 23 cM from PTC2 (Figure 1\u2014figure supplement 2; Tennessen et al., 2017). This marker is predicted to be 17 cM (range 6\u201333 cM) from a causal locus, which could therefore plausibly be PTC2 (Supplementary file 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig1-v2.jpg)\n\n**Figure 1.:** (A) Genetic divergence (FST) between infected and uninfected snail pools in 10 kb windows, for variants on contigs arranged by linkage map position (Tennessen et al., 2017). The strongest signal is from PTC2 on Linkage Group XII, far exceeding the signal of known regions RADres and sod1 which reflect wide haplotype blocks (Tennessen et al., 2015a). (B) PTC2 genotypes are associated with infection outcome (Source code 1). Genotypes are displayed for all three pairs of alleles, revealing a substantial difference between R and S1 (center panel), and an intermediate signal of S2 relative to the others (left and right panels).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Among 392 snails that had previously been parasite-challenged and phenotyped, we see a significant association with PTC2, independently confirming the signal in our main dataset (Figure 1B).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** These contigs bridge the span between PTC2 and the BS-90 RAPD marker (blue circle), suggesting a physical distance of 5 Mb between them. While there is no overlapping sequence between S1-193/R-605 and S1-15/R-35, aligned linkage map markers which all share the same linkage map position as PTC2 (red circles) suggest these blocks are very proximate and occur within a region of relatively low recombination. homR contig R-127 overlaps homS1 contigs S1-193 and S1-117, confirming that they are adjacent and harbor a region of relatively high recombination between PTC2 and the BS-90 RAPD marker 23 cM away.\n\nUsing PacBio whole-genome assemblies from snails homozygous for each of the three PTC2 alleles (Supplementary file 1C), we find striking sequence and structural divergence among the haplotypes (Figure 2). Alignable regions show 3.3% nucleotide divergence on average (SD\u00a0=\u00a02.1%). A majority of PTC2 sequence shows no similarity among alleles; the percentage of sequence that could even be aligned ranged from 12.9% (R onto S2) to 40.0% (S1 onto R). All three PTC2 haplotypes harbor unique insertions tens of thousands of bp in size, some of which contain complete coding genes, such that each genotype carries a distinct combination of genes (Figure 2). Shared orthologous genes at PTC2 show many nonsynonymous differences and in some cases homology can only be identified at the protein, not DNA, level (Figure 2\u2014figure supplement 1; Figure 3). This degree of polymorphism is unusually high for conspecific haplotypes in most genomic regions in any taxon (Leffler et al., 2012). In contrast to PTC2, 89.5% of sequence on other contigs can be aligned between assemblies, with a mean of 0.4% nucleotide divergence. It is not obvious how a chromosomal rearrangement (e.g. inversion) could maintain more than two distinct haplotypes, and in any case we see no evidence for one in our assemblies.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-v2.jpg)\n\n**Figure 2.:** As in Figure 1A, genetic divergence (FST) between infected and uninfected snail pools is shown, here both for individual variants (grey circles, only FST\u00a0\u22650.01 shown) and as mean values for sliding windows of 10 kb (red line). FST is undefined for regions present on only one haplotype. PTC2 (peach) is defined as the 450 kb region containing all windows for which mean FST exceeds 0.1. Within PTC2, the three haplotypes (R, S1, and S2) are aligned with multi-kilobase indels and genes indicated. Assemblies are comprehensive and alignment gaps represent annotated indels, not missing data. PTC2 is characterized by extensive sequence divergence, including large indels containing entire genes (numbered), and is enriched for single-pass transmembrane (TM1) loci (dark blue).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each dot represents a 600 bp segment, and color indicates sequence similarity (light blue\u00a0=\u00a050\u201390% similarity; medium blue\u00a0=\u00a090\u201397.5% similarity; dark blue\u00a0=\u00a097.5\u2013100% similarity). Of the five TM1 genes that are shared across all three haplotypes (red circles, numbered) within PTC2 (peach), several appear to exist in regions of no homology (no dots), because the alleles share such low DNA sequence similarity.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** PTC2 is narrower in S1 and S2 relative to R due to different sets of indels (Figure 2). The FST signal varies by genome assembly because the high sequence divergence only allows a subset of reads to align, which differs for each assembly. The signal is weakest for S2, possibly because the greatest phenotypic contrast can be inferred when (highest-susceptibility) S1 and (lowest-susceptibility) R reads align to the same location, which is least likely to occur with this assembly. We focus on the region of strongest association, defined here as PTC2 encompassing all windows over FST\u00a0=\u00a00.1 on any homR contig and all windows over FST\u00a0=\u00a00.15 on any contig across all three assemblies. Other peaks also occur on either side of PTC2, reflecting either decaying linkage disequilibrium with this locus or possibly additional minor causal loci. (A) homR (B) homS1 (C) homS2.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The final 22 kb of both contigs show 99.9% similarity in reverse orientation (red circle). These two contigs align to different portions of reference genome BglaB1 contig 13, and both share the association with phenotype (Figure 2), All of this evidence indicates that they are adjacent and partially overlapping. Thus, R-35 and R-304 have been combined into a single haplotype throughout our analysis (e.g. Figure 2).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Raw reads span the 12.6 kb gap between contigs, which is further confirmed by the high similarity between homS2 and BglaB1. Thus, S2-78 and S2-773 have been combined into a single haplotype throughout our analysis (e.g. Figure 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig3-v2.jpg)\n\n**Figure 3.:** For each of eight TM1 genes (numbered as in Figure 2; Supplementary file 1D), the protein product is shown, including the transmembrane domain (peach). Orthologous alleles are aligned. Amino acid residues that differ from the R allele are shown in blue. Uncorrected protein sequence divergence between orthologous alleles ranges from 3% to 85%. Three genes (7, 8, and 10) are present only on a single haplotype.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** All protein lengths have been normalized to 100. We assessed the distribution of PTC2 genes relative to all TM1 genes with 10,000 replicate trials sampling eight random TM1 proteins each time. The TM1 domains of PTC2 genes are more likely to occur closer to the C-terminus than for other TM1 genes (p<0.05) and tend to be closer to the middle of the protein but not significantly so (p>0.05). This feature is shared with the GRC proteins (Tennessen et al., 2015b) and also Toll-like receptors, suggesting a similar cellular role.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Numbers on branches indicate bootstrap support. All three populations (13\u201316-R1, GUA, and BB02) harbor both R-like (red branches) and S-like (blue branches) sequences, which presumably are also allelic in GUA and BB02. Thus, this polymorphism segregates within natural populations throughout the range of B. glabrata and is not an artifact of the admixed history of 13\u201316-R1, consistent with long-term balancing selection predating the diaspora of B.glabrata across the neotropics.\n\nUsing RNA-Seq data from homozygotes of each genotype to identify expressed genes, we fully annotated PTC2 (Supplementary file 1D,E). Of the eleven PTC2 genes, eight are predicted to be TM1 genes, including all five genes that are shared among the three haplotypes (genes 1, 2, 4, 5, and 9; Figure 2; Figure 3). Of the three non-TM1 genes, gene 3 and gene 11 show homology to TM1 genes 2 and 8, respectively, but without the TM1 domains. Gene 6 contains a conserved protein domain of unknown function (DUF2732). Only 11% of B. glabrata genes are TM1 genes, so they would be unlikely to constitute eight of eleven genes by chance alone (p<10\u22125). PTC2 TM1 genes are all between 166 and 530 codons, have TM1 domains that are displaced from the N-terminus (Figure 3\u2014figure supplement 1), and like the rest of PTC2 they are highly polymorphic (Figure 3), with amino acid level divergence exceeding 50% in several cases. Sequences similar to both R and S haplotypes are present in other B. glabrata populations without admixed histories (genomic and transcriptomic sequence from Brazilian strain BB02, Adema et al., 2017; transcriptomic sequence from Guadeloupe, Tennessen et al., 2015b; Figure 3\u2014figure supplement 2), suggesting that they co-occur throughout the species range and the polymorphism is old. Synonymous divergence among alleles is higher than nonsynonymous, and a phylogeny of concatenated genes shows 24% synonymous divergence from the midpoint root. Thus, haplotypes are more consistent with an ancient origin (24 million years assuming a neutral mutation rate of 10\u22128 per year) rather than recent divergence via selection for protein diversity. Other than the transmembrane segment, these genes contain no known protein domains or homology to sequences outside of gastropods, nor are they homologous to GRC genes. Some show homology to each other and/or to other genes near PTC2 or elsewhere in the genome, but amino acid level sequence similarity among paralogs is low (<50%). The phenotypic effects of individual genes and polymorphisms will be an exciting subject for future work involving knockdowns or knockouts (Allan et al., 2017; Abe and Kuroda, 2019) and/or additional RNA-Seq from multiple individuals allowing quantification of expression differences.\n\nBoth GRC and PTC2 suggest a model of snail-schistosome interaction via molecular recognition (either of the parasite by the host, or of the host by the parasite) that is mediated by TM1 gene polymorphism. Across metazoans, TM1 genes often play a role in immunological recognition, and include B- and T-cell receptors, Toll-like receptors, major histocompatibility complex genes, and similar host defense genes (Pahl et al., 2013). Other polymorphic clusters of host transmembrane genes are used by parasites as receptors for host recognition and invasion (e.g. human glycophorins and Plasmodium; Malaria Genomic Epidemiology Network et al., 2017), and at least one of the GRC TM1 genes controls shedding of S. mansoni cercariae (Allan et al., 2017). One PTC2 TM1 gene is present only on the R haplotype and is an obvious candidate if it functions to recognize the parasite. However, allelic divergence among shared genes could also be important, and an R-specific gene alone would not explain the difference between S1 and S2. In contrast to GRC, in which a completely dominant allele confers resistance, all three alleles in PTC2 differ in their susceptibility, and allelic associations are additive or show partial dominant susceptibility (Figure 1B). This pattern suggests that multiple loci along the haplotypes may jointly contribute to phenotype by interacting with different combinations of parasite molecules such as SmPoMucs (Roger et al., 2008) or other glycoproteins (Allan and Blouin, 2018) to determine the outcome of infection.\n\nAs with GRC, we suspect non-neutral host-parasite coevolutionary processes have shaped sequence polymorphism at PTC2. The inferred ancient origin (>20 million years) of PTC2 is inconsistent with a neutral coalescent process. Because 13\u201316-R1 is admixed from geographically isolated populations, we can\u2019t infer natural allele frequencies or compare the site frequency spectrum to a neutral expectation for a randomly-mating population, as was possible for GRC (Tennessen et al., 2015b), though these allelic lineages do segregate in natural populations (Figure 3\u2014figure supplement 2). Therefore, while the remarkable structural and nonsynonymous polymorphism appears adaptive, it is difficult to distinguish among plausible scenarios including overdominance (Woolhouse et al., 2002), negative-frequency dependent selection (Woolhouse et al., 2002; Koskella and Lively, 2009; Bento et al., 2017), adaptive introgression from distantly related species (Hedrick, 2013), or selection for an epistatically-interacting supergene (Thompson and Jiggins, 2014). Introgression appears unlikely, as it would have had to occur twice independently to generate three distinct haplotypes, and all of the closest relatives of B. glabrata occur allopatrically in Africa (DeJong et al., 2001). Therefore, the most plausible explanations involve some form of long-term balancing selection. Although S. mansoni is not native to the neotropics (Despr\u00e8s et al., 1993), selection may have been driven by other trematodes, a clade that has ubiquitously infected snails for millions of years (Blair et al., 2001) and which can be a strong selective force favoring rare alleles (Koskella and Lively, 2009). Schistosomes castrate snails (Faro et al., 2013) but wild snails show no sign of evolving universal resistance, suggesting that the R haplotype is either specific to parasite genotype or else costly to fitness in some undetected manner. The R allele has persisted within the 13\u201316-R1 population for decades in the absence of challenge by parasites, so any fitness cost must be relatively weak or context-dependent.\n\nWe have thus far only observed an effect on one parasite strain, PR-1, precluding inferences about gene-for-gene interaction. Nevertheless, a system of polymorphic matching alleles could explain the substantial schistosome-strain by snail-strain interaction in compatibility that is often observed (Richards and Shade, 1987; Richards et al., 1992; Knight et al., 1999; Webster et al., 2004; Webster and Woolhouse, 1998; Theron et al., 2014), including schistosome-infection dose-response curves that fit a simple phenotype-matching model (Theron et al., 2008; Theron et al., 2014). If more than one PTC2 gene contributes to resistance, then synergistic interactions among these genes and other unlinked loci could begin to explain the pronounced variation in host-parasite compatibility (Schulenburg et al., 2007). In other invertebrates, highly polymorphic haplotypes can be major-effect loci for infection and show striking coevolutionary signatures including variable presence/absence of genes. For example, the PR-locus mediating bacterial resistance in Daphnia via matching-allele interactions also features haplotypes of vastly different sizes (differences\u00a0>\u00a060 kb at both this locus and PTC2) with large non-homologous sections, and these contain glycosyltransferase genes that could mediate host-pathogen compatibility (Bento et al., 2017). Similarly, the APL1 immune factor impacting Plasmodium development in Anopheles consists of adjacent paralogs that differ in copy number among species and show extreme diversity within species (Rottschaefer et al., 2011; Mitri et al., 2020). Thus, while invertebrates lack the acquired immunity of vertebrates and its associated adaptive genetic variation (Spurgin and Richardson, 2010), their defenses can show similar nuance conveyed by molecular diversity (Loker et al., 2004; Cerenius and S\u00f6derh\u00e4ll, 2013). However, the evolutionary consequences may not match those for vertebrate acquired immunity loci like the major histocompatibility complex or immunoglobulins, where sequence diversity per se tends to enhance immune effectiveness though perhaps at the cost of autoimmunity. For invertebrates, increased numbers of distinct immunogenetic sequences may not necessarily lead to increased resistance if parasites also use these sequences to recognize hosts or mount evasion strategies (Schmid-Hempel, 2005). If discarding immune genes is often as advantageous as gaining them, the result could be a patchwork of genes as observed at PTC2. A more appropriate vertebrate analog might be blood groups used by parasites to invade host cells, for which haplotypic differences often include loss of functional genes, and diversity has been maintained for millions of years by balancing selection (e.g. Dantu group, Malaria Genomic Epidemiology Network et al., 2017; ABO group, S\u00e9gurel et al., 2013). The generation and maintenance of such divergent haplotypes remain to be fully explained and could reflect long-term fluctuating selection among alleles with different combinations of specificity and cost (Seger, 1988; Ashby and Boots, 2017).\n\nAs with mosquitoes (Marshall et al., 2019), a promising strategy for disease control involves recruiting the natural immunogenetic variation of vectors (Reardon, 2016). The successful implementation of CRISPR/Cas9 in gastropods (Abe and Kuroda, 2019) will facilitate the creation of genetically modified snails having enhanced immunity to block disease transmission (Maier et al., 2019). As large-effect loci, the TM1 clusters are excellent candidates to target in such efforts. However, more work is needed to characterize the functional effects of these genes, as well as the molecular and evolutionary dynamics between hosts and parasites. For example, if host polymorphism is adaptive, it may not be readily replaced in natural populations. Furthermore, gene-by-gene interactions between snail and schistosome genotypes could permit the rapid evolution of parasite counterstrategies. In the context of ancient trench warfare coevolution, it is unlikely that a universally resistant snail could be generated by a single genetic change, although successive changes could enhance parasite resistance enough to impact patterns of transmission (Theron et al., 2014). As an alternative to genetic modification, future work could leverage the hypothesis that the snail TM1 proteins bind to key schistosome molecules that mediate invasion of the host. One could use TM1 proteins to find such molecules, as with snail fibrinogen related proteins and schistosome SmPoMucs (Roger et al., 2008), or GRC and galactose (Allan and Blouin, 2018). More broadly, clusters of immune recognition loci with elevated functional diversity have long been used to track and predict patterns of adaptive variation across populations and species (Sommer, 2005; Spurgin and Richardson, 2010). Thus, we anticipate that this class of genes will play a central role in disease control as the molecular aspects of vector biology are fully brought to bear on schistosomiasis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Biomphalaria glabrata)</td>\n      <td>13\u201316-R1</td>\n      <td>PMID:5050093; PMID:7299581</td>\n      <td>5050093:NIH-MH-cc-13-16-1; 7299581:13\u201316-R1</td>\n      <td>Oregon State University population established by C. Bayne</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Schistosoma mansoni)</td>\n      <td>PR-1</td>\n      <td>PMID:5050093; PMID:7299581</td>\n      <td>5050093:NIH-Sm-PR1; 7299581:PR-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PB35_1696 k_F</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>GGTTCTCGCTTTTTATTGGCTTTTG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>PB35_1696 k_R</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>TTAGACGCACCCAAGGATCTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>VB13_859 k_Fb</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>ACAAATGGGGCAGTTACACTGTTTAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>VB13_859 k_Rb</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>AGCGAAATGTGAGATTGGTTATGTTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>VB13_868 k_Fb</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>TCTTTTCACTAAAGCCGCACAAGTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>VB13_868 k_Rb</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>CCTACGTTCTCAATATCAACGGGAA</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SimulatePools.pl</td>\n      <td>https://github.com/jacobtennessen/GOPOPS/</td>\n      <td>Perl script</td>\n      <td>power analysis for pooled sequencing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MakeFreqTableFromPooledPileup.pl</td>\n      <td>https://github.com/jacobtennessen/GOPOPS/</td>\n      <td>Perl script</td>\n      <td>estimates allele frequencies</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FstFromJoinedFreqTablesWindow.pl</td>\n      <td>https://github.com/jacobtennessen/GOPOPS/</td>\n      <td>Perl script</td>\n      <td>calculates mean FST per window</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ChopFastaStaggered.pl</td>\n      <td>https://github.com/jacobtennessen/MiSCVARS/</td>\n      <td>Perl script</td>\n      <td>subdivides sequence data</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>AssessBlatChopped.pl</td>\n      <td>https://github.com/jacobtennessen/MiSCVARS/</td>\n      <td>Perl script</td>\n      <td>summarizes sequence matches</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals and Ethics\n\nWe used the Oregon State University population of 13\u201316-R1 that has been maintained as a large population (hundreds) since the mid-1970s (Bonner et al., 2012). 13\u201316-R1 is descended from snails collected in Brazil and Puerto Rico (Richards and Merritt, 1972; Sullivan and Richards, 1981) but its exact history is not entirely clear. Our population has been maintained in the absence of parasite exposure, and therefore under relaxed selective pressure in regard to parasite resistance.\n\nWe used mice to maintain the schistosome parasites and to produce miracidia for challenge experiments. Infection is through contact with inoculated water and involves minimal discomfort. Infected rodents are euthanized with CO2 prior to showing clinical signs of disease and are dissected to recover parasitic eggs. Animal numbers were held to the minimum required for the research. Institutional approval: Oregon State University Animal Care and Use Protocols 4749 and 5115.\n\n### Genome-wide scan of 13\u201316-R1\n\nWe challenged snails of the 13\u201316-R1 population with PR-1 miracidia, following previous methods (Bonner et al., 2012). In brief, we arbitrarily chose 1700 outbred juvenile snails (4\u20136 mm diameter), challenged them each with five miracidia, and classified them as infected or uninfected. About 40% of snails became infected. From these, we randomly selected 600 infected and 600 uninfected snails for sequencing. These sample sizes were chosen based on a simulation of variants with minor allele frequencies\u00a0\u2265\u00a00.2, with copies randomly assigned to 600 infected and 600 uninfected individuals at the expected sequencing coverage depth (script SimulatePools.pl\u00a0at https://github.com/jacobtennessen/GOPOPS/), which revealed that FST between simulated sequencing pools was unlikely to exceed 0.05 (p<10\u22125) and very unlikely to exceed 0.1 (p<10\u22129) and therefore we had substantial power to\u00a0detect larger FST differences. We divided the empirical pools into two technical replicates, and four pools (each combination of infected/uninfected and technical replicate) were sequenced across six lanes of the Illumina HiSeq 3000 (paired-end reads of 151 bp) at the Center for Genome Research and Biocomputing (CGRB)\u00a0at Oregon State University (Illumina data at NCBI SRA, BioProject Accession PRJNA638474).\n\nInfected snails contain DNA from S. mansoni, which could potentially generate false sequence variants correlated with resistance. To prevent this, we converted reads to FASTA format, used BLASTN (version 2.6.0) to identify reads that matched the S. mansoni reference genome (v. 5.2, Berriman et al., 2009) with an E-value cutoff of 1e-040, and then filtered all such reads, as well as their mate pairs, from all downstream analysis. Filtered FASTQ files, having had adapters removed with Cutadapt (version 1.15, Marcel, 2011) and trimmed with Trimmomatic (v. 0.30, Bolger et al., 2014; options: LEADING:20 TRAILING:20 SLIDINGWINDOW:5:20 MINLEN:50), were aligned using BWA version 0.7.12 (command: bwa mem -P -M -t 4; Li and Durbin, 2009) initially to reference genome BglaB1 and ultimately to our PacBio assemblies (Figure 2\u2014figure supplement 2). All reads marked as secondary alignments were filtered out of the sam files. We used SamTools version 1.3 (Li et al., 2009) to convert these to sorted bam files (commands: samtools view -bT; samtools sort) and generate pileup files (command: samtools mpileup -t DP -A). From these files, we estimated allele frequencies at each variant within each pool, and calculated FST in overlapping 10 kb windows across the genome, using the scripts MakeFreqTableFromPooledPileup.pl (options: -a 0.1 and -d 15) and FstFromJoinedFreqTablesWindow.pl (default options), available at https://github.com/jacobtennessen/GOPOPS/. We only considered windows with at least 20 single-nucleotide polymorphisms, in order to exclude associations that are supported by few variants and which are therefore likely to be spurious.\n\nTo more precisely estimate genotype-phenotype associations at the LG XII candidate region, we genotyped candidate loci from the region in individual snails. We designed primers for genotyping using Primer-BLAST (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) on the consensus of our assemblies and used them for PCR amplification (Supplementary file 1F). These surrounded indels, such that after initial confirmatory sequencing in test samples, samples could be genotyped with PCR and gel electrophoresis alone. We genotyped the candidate locus in 1570 of the original 1700 phenotyped snails, including 1165 of the 1200 samples used in the genome-wide association study. Furthermore, in order to independently validate the candidate region, we also genotyped it in 392 snails (also 13\u201316-R1) from a set of 439 that had been phenotyped several years previously (Tennessen et al., 2015a). We tested for effects between genotype and phenotype using logistic regression, following our standard approach (Tennessen et al., 2015a; R Development Core Team, 2020; Source code 1). Specifically, we first coded infection as binary (1 or 0) and each allele as either additive (\u2018add\u2019: 0, 1, or 2 copies of the allele), dominant (\u2018dom\u2019: 1 or 0 for presence/absence of allele), or recessive (\u2018rec\u2019: 1 if homozygous, 0 otherwise). We first confirmed an independent effect of both S alleles relative to the R allele with model glm(infection~S1add+S2add, family\u00a0=\u00a0binomial), and then we\u00a0found the best-fitting parameter combination (minimum Akaike information criterion) which was model glm(infection~S1dom+S1rec+S2add, family\u00a0=\u00a0binomial). The positive effect of both S1dom and S1rec on infection odds was interpreted as partial dominance (i.e. increased susceptibility if the allele is present plus additional increased susceptibility for homozygotes). We tested for epistasis by first adding terms for RADres and sod1 (known to act additively; Tennessen et al., 2015a) to the model and then testing if interaction terms among loci were significant.\n\n### PacBio sequencing and assembly\n\nWe generated three PacBio assemblies from inbred snail lines homozygous for the three PTC2 alleles. (Supplementary file 1C; assemblies NCBI Genome, BioProject Accession PRJNA639204). The first assembly (homR) used snail line R68, which is derived from 13-16-R1 and is highly resistant to S. mansoni strain PR-1, as described previously (Tennessen et al., 2015a). We pooled and sequenced these snails in 15 SMRT cells (78x coverage) on the Pacific Biosciences Sequel I at the CGRB. We assembled the resulting raw sequences using the HGAP4/FALCON assembler (Chin et al., 2016; options: Genome Length 1 Gb, Seed coverage 30, Min Map Concordance 70). Similarly, the other two assemblies (homS1 and homS2) were generated using the same methodology from snail lines i90 (6 SMRT cells, 58x coverage) and i171 (5 SMRT cells, 46x coverage), respectively. By default, we treat homR as the reference genome unless stated otherwise. To assign PacBio contigs to the existing linkage map (Tennessen et al., 2017), we aligned 46,023 fragments of 100 bp each from BglaB1 (the published genome) that had previously been screened for uniqueness and used for targeted capture (Tennessen et al., 2017) using BLASTN (version 2.6.0) with default parameters. PacBio contigs were then assigned to linkage groups if at least one unique fragment from a mapped BglaB1 contig aligned to it, and if at least 75% of these matching unique fragments pertained to the same linkage group. We thus assigned 1489 homR contigs to linkage groups, representing 635 Mb; these assignments were supported by a median of seven mapped fragments per homR contig, with an average of 96% of fragments per homR contig mapping to the same linkage group.\n\nIn the vicinity of PTC2, we assessed sequence similarity with dot plots. Each assembly was broken into overlapping 600 bp segments (script ChopFastaStaggered.pl at https://github.com/jacobtennessen/MiSCVARS/), which were tested for sequence similarity in pairwise comparison using BLAT (Kent, 2002; options: stepSize = 1 -minScore = 300) followed by script AssessBlatChopped.pl (at https://github.com/jacobtennessen/MiSCVARS/). To estimate average genomic sequence similarity outside of PTC2, we used BLASTN (version 2.6.0) to identify pairs of orthologous contigs between homR and homS1 (our two best assemblies, which should represent random samples of 13\u201316-R1 in regions unlinked to PTC2), and performed a similar BLAT comparison for all such pairs in which both contigs were over 2 Mb. For assemblies homR and homS2, PTC2 is split between two contigs each (Supplementary file 1C). We manually combined these contigs into continuous haplotypes. For homR, the ends of contigs R-35 and R-304 both align to each other with 99.9% similarity for 22 kb, indicating that they are in fact directly adjacent and the assembly algorithm was overly conservative in failing to join them (Figure 2\u2014figure supplement 3). For the homS2 contigs, raw reads aligning to contig S2-78 overlapped with raw reads aligning to contig S2-773, indicating a gap of only 12.6 kb which was confirmed by alignment to BglaB1 (Figure 2\u2014figure supplement 4).\n\n### RNA-Seq and annotation\n\nAlthough BglaB1 is annotated, many genes were likely missed, especially those spanning multiple contigs. Furthermore, some PTC2 haplotypes may contain genes missing from the reference genome. Therefore, we performed RNA-Seq on snail lines homozygous for each of the three PTC2 haplotypes in order to identify all expressed proteins on each haplotype. Samples were prepared as described previously (Tennessen et al., 2015b). A single sample from each homozygous genotype was included in the same lane of the Illumina HiSeq 3000 at the CGRB (single-end reads of 151 bp; Illumina data at NCBI SRA, Bioproject Accession PRJNA639026). This single-sample approach precludes quantifying expression in a rigorous way (Supplementary file 1E), but not our goal of assembling transcriptomes for the purpose of annotation. We performed a de-novo annotation of each PTC2 haplotype. Each haplotype-specific RNA-Seq dataset was adapter and quality trimmed using Cutadapt (version 1.15, Marcel, 2011; options: -q 15,10) and de-novo assembled into a transcriptome assembly using Trinity (Grabherr et al., 2011; default assembly parameters). Transcriptome assemblies were reduced to longest open reading frames using TransDecoder (Haas et al., 2013) by first identifying the longest open reading frames (TransDecoder.LongOrfs), then using BLAST (Altschul et al., 1990) to map the longest open reading frames to the UNIPROT (UniProt Consortium, 2019) gastropod protein database (options: -max_target_seqs 1 -outfmt 6 -evalue 1e-5), and finally by predicting protein sequences from the assembled transcripts (TransDecoder.Predict). AUGUSTUS (Stanke et al., 2004) gene prediction training model was built from the UNIPROT Biomphalaria dataset. BUSCO (Seppey et al., 2019) was run on the homS1 genome assembly for use across all assemblies. Single copy orthologs found by BUSCO were used to make the SNAP (Korf, 2004) gene prediction training set. A snail-specific repeat library was constructed using data from BglaB1 (Giraldo-Calder\u00f3n et al., 2015; Adema et al., 2017; https://www.vectorbase.org), and mollusca-specific repeats from Repbase (Bao et al., 2015), and these repeats were then masked using RepeatMasker (Smit et al., 2013). De-novo gene prediction was run with MAKER (Cantarel et al., 2008) on the repeat-masked genome assembly using the TransDecoder reduced transcriptome assembly as EST evidence, the UNIPROT Biomphalaria proteins as protein evidence, and de-novo gene prediction was conducted using SNAP and AUGUSTUS using the constructed prediction models. We used these automated annotations, along with predictions from genomic sequence from GENSCAN (Burge and Karlin, 1997), and putative orthologous transcripts in the reference genome project (Giraldo-Calder\u00f3n et al., 2015; Adema et al., 2017) identified with BLASTN (version 2.6.0), to guide manual alignment of RNA-Seq reads. Putative coding genes were rejected and subsequently ignored if they showed homology to transposable elements (e.g. RNA transcriptase or transposase) which are very abundant in the snail genome, if the open reading frame was less than 100 codons, or if the sequence could not be confirmed via manual alignment of RNA-Seq reads (sequences in NCBI GenBank, Accessions MT787302-MT787323). Secondary structure was predicted using TMHMM v. 2.0 (Sonnhammer et al., 1998).\n\nTo investigate the phylogenetic history of alleles, we first focused on the coding sequence of the two most conserved TM1 genes (4 and 5) as these could be aligned the most unambiguously. We searched for similar sequences in the genomic and transcriptomic data of reference genome BglaB1 generated from BB02 (Giraldo-Calder\u00f3n et al., 2015; Adema et al., 2017; https://www.vectorbase.org) and RNA-Seq data from Guadeloupe population GUA (Tennessen et al., 2015b; Bioproject Accession PRJNA264063). We conducted phylogenetic analysis using RAxML (options: -N 100 m GTRCAT; Stamatakis, 2006) and displayed trees with FigTree version 1.4.4 (http://tree.bio.ed.ac.uk/software/figtree/). We also aligned and concatenated coding sequence from the 13\u201316-R1 alleles of the five genes present on all three haplotypes and used SNAP version 2.1.1 (https://www.hiv.lanl.gov/content/sequence/SNAP/SNAP.html; Korber, 2000) to calculate nonsynonymous and synonymous divergence among alleles, and to infer synonymous site divergence from the midpoint root of a three-taxon neighbor-joining tree.\n",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "84357250-c74f-4344-803f-08e7aba1d034",
+      "submission_id": "373313ee-a863-4e7e-ae3e-53424cdf967a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dieter Ebert, University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59395.sa1](https://doi.org/10.7554/eLife.59395.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour study investigates the genetic bases of snail resistance to schistosomes. Schistosomiasis is considered by the WHO as one of the most (after malaria) socioeconomically devastating parasitic disease. Your study showed extreme divergence between three haplotypes, that explain variation in resistance, a major breakthrough in a system hardly accessible to many of the genetic tools commonly used in other systems. The work constitutes a basis for more detailed studies in natural populations and other host-parasite combinations. In the long run it may contribute to reducing the burden of schistosomiasis.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Clusters of polymorphic transmembrane genes control resistance to schistosomes in snail vectors\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Dominique Soldati-Favre as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Yann Bourgeois (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nTennessen et al. investigated the genetic bases of snail resistance to schistosomes. Snails are the intermediate host (or vector) for schistosomes and therefore of high medical importance. Schistosomiasis is considered by the WHO as one of the most (after malaria) socioeconomically devastating parasitic disease. The current study examines genome-wide polymorphism and differentiation between snails susceptible and resistant to infection by schistosomes. Using pool-sequencing, they identify a region of high differentiation between resistant and susceptible genotypes. They genotype most of the same individuals that were included in the pools and reveal a system with one locus and three haplotypes (R, S1, S2) showing varying in the degree of protection they confer against infection. Using PacBio sequencing, they also show extreme divergence between the three haplotypes, to the extent that alignment is impossible in some regions. RNA-sequencing is used to characterize the region further. The evolutionary mechanisms maintaining this polymorphism remains unknown. The work constitutes a basis for more detailed studies in natural populations and other host-parasite combinations. As a long term perspective, the authors suggest that the knowledge about this genomic region can contribute to disease control.\n\nThe manuscript has been reviewed by three specialists. All three agree that this is a major step forward. However, all of them raise important points that need to be addressed in a revised version (with a point by point rebuttal letter), before a final decision can be reached. The main points are summarized here, the detailed reviews are below.\n\nAs it stands, the paper is of little interest for people outside the \"schistosome world\". While schistosomes are certainly important in their own right, a bit more effort could be invested into making this study more accessible to a wider audience.\n\nMany aspects of the analysis, including the statistics, are not clear. More details and care in presentation are needed. Scripts should be fully available.\n\nEven so, one reviewer stated that \"The discussion remains cautious\", there are numerous places where this is not the case (see reviewer #2). It is important present the results and their interpretation in an adequate way without overstating.\n\nThe paper hints at the idea that the mechanisms maintaining this extreme polymorphisms is host-parasite coevolution with balancing selection. Without much more work, there are a few further analysis that might be undertaken to support this better. This would also allow a link to other literature reporting on the role of balancing selection in the framework of host-parasite interactions.\n\nReviewer #1:\n\nThis study describes the finding of a genomic region for resistance in the schistosome vector Biomphalaria. The study includes a series of experiments including phenotypic screens, poolseq, re-sequencing and RNA-Seq. Technically the study is mostly fine. I have a few points I would like to see in a revised version.\n\n1) The bioinformatic analysis of the data is described in a way that it would not be possible to trace the results. Parameter setting, threshold value etc. are not reported. Just naming the software used in not sufficient. Also, many intermediate steps are not reported.\n\n2) The authors mention another study that reported a similar complex genomic region providing resistance to a parasite. They hint that invertebrates may differ in the way diversity is created with regard to resistance to parasites. Are there more such cases? It would be nice to compare the new results directly with the earlier study and discuss the similarities and differences.\n\n3) The entire article is very Schistsome/Biomphalaria centred and unusually rich in self-citations. For people not working in this field, the article is not appealing. I would be happy to see much more efforts of the authors to widen their scope and make the study of interest for other people studying host-parasite interactions, at least those being interested in invertebrate hosts.\n\n4) The dot plots in Figure 2B are impressive. It would be good to add dot plots of S1 against S1, R against R and S2 against S2. This would be helpful for a better understanding of the structure of the genomic region.\n\nReviewer #2:\n\nThe authors present an association study for resistance to a Schistosome parasite in Biomphalaria snails. The short report consists of the association study, a careful genome assembly of the resistant and two susceptible strains and annotation of those strains to compare genes present in the region. The manuscript stops short of any attempt to validate that the PTM2 region plays a major role in infection outcomes.\n\n1) As written, the manuscript assumes a significant familiarity with the system that is unlikely for a broad audience. As a methods last style manuscript, much was left unclear until the end of the paper: how were individuals infected?, what is the nature of the population used? etc. More background on the system (previous founding about PTM1, etc. would be useful. I realize that any such expansion might jeopardize the \"short report\" status, but the increased clarity might outweigh the benefit of brevity.\n\n2) While I understand that these snails are not a genetic model system with abundant tools to do validations of candidate loci, I feel that the language used is often too definitive, suggesting that the association is causal. For example, in the figure legend 1 \"(B) PTC2 genotypes determine infection outcome.\" This is false. PTC2 genotypes are associated with infection outcome. Care should be taken to not oversell the association.\n\n3) The annotations presented in Figure 3 are both interesting and a mess. Actually, they are partly interesting because they are a mess. The genomic region is highly divergent among haplotypes. Given the apparent homogenization of the admixed backgrounds across the genome in the population, it is amazing how divergent this region continues to be. Both LG7 and LG9 appear to be entire chromosomes associated with the phenotype, but PTC2 is a relatively small region. Is introgression from another species a possibility? Also, the authors discuss the structure of the genes in those different regions, but is it possible to make any additional predictions about the associations from the gene content?\n\n4) There is no discussion of how statistical significance is assessed in the association study. In the Materials and methods, simulations suggest that Fst as always less than 0.05, but that isn't presented in the main text. I don't suspect that any analysis would diminish peak at PTC2, but some indication of \"how\" significant that peak is would be useful. There are several methods to do this, but the permutations should be appropriate and have already been completed.\n\nReviewer #3:\n\nSummary\n\nIn this work, Tennessen et al. conduct a comprehensive study of the genetic bases of resistance to schistosomes in snail vectors. They examine genome-wide polymorphism and differentiation between snails susceptible and resistant to infection by schistosomes in a population followed for more than 40 years. Using pool-sequencing, they first identify a region of high differentiation between the two categories. They genotype most of the same individuals that were included in the pools and reveal a system with one locus and three alleles (R, S1, S2) showing partial overdominance and varying in the degree of protection they confer against infection. Using PacBio sequencing, they also show extreme divergence between the three haplotypes, to the extent that alignment is impossible in some regions. Using RNA-sequencing of one individual per homozygous genotype, they reannotate each of the three haplotypes and reveal a large excess of TM1 genes in this region, displaying elevated amino-acid divergence and diversity. The exact evolutionary mechanisms maintaining such polymorphisms are difficult to pinpoint, given that only one parasite strain was used in infection experiments, but the work constitutes a solid basis for more detailed studies in natural populations and other host-parasite combinations.\n\nAssessment\n\nThis is a compelling and impressive work. The signal is strong, and is unlikely to be an artefact. The work goes well beyond simply studying association between genetic and phenotypic variation, and uses a broad set of techniques (infection experiments, Pool-seq, individual genotyping, RNA-seq, PacBio assembly) to characterize the molecular bases of resistance. The discussion remains cautious, and takes care of not over-interpreting results.\n\nThe manuscript is already good in its current state, but I had a few comments detailed below:\n\nGeneral suggestions\n\nAs the authors state in the Discussion, it is difficult to determine what drives the maintenance of this polymorphism (which vector(s) is the actual selective pressure)? Which selective dynamic underlies this diversity? Is there any chance that mutational load be exposed at the homozygous state? However, it may be possible to obtain more insights about the evolutionary history of this region based on the data already available. For example, what is the diversity within the three divergent haplotypes? A way to assess this in more details could be using ancestral recombination graphs for a few selected individuals (for example by calling SNPs for the three reference individuals and running ARGWeaver (https://github.com/mdrasmus/argweaver) or Relate (https://myersgroup.github.io/relate/index.html)). This could give an idea of the age of alleles and genealogies in the relatively conserved regions that flank the highly divergent loci. This may also provide more evidence for long-term balancing selection.\n\nThe authors mention that they performed RNA-sequencing on a single individual for each of the three homozygous genotypes. Do the authors have any plan to examine in more details how gene expression changes depending on allele combinations? It may be interesting to obtain an even more detailed picture of regulatory and non-synonymous variation, and how dominance/recessivity impact it. I do not think that more sequencing is necessary for this paper, but maybe discuss a bit more the potential of such an experiment?\n",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "68fed459-9c91-4788-b988-fffabf3e4de7",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C1",
+      "claim": "Schistosomiasis is a debilitating parasitic disease infecting hundreds of millions of people.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomiasis is a debilitating parasitic disease infecting hundreds of millions of people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Evan Secor, 2014 and Lo et al., 2018 in the manuscript text",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "130f2c22-96b2-469d-aa0e-f816d4e9528b",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C2",
+      "claim": "Schistosomes use aquatic snails as intermediate hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomes use aquatic snails as intermediate hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lo et al., 2018 in the manuscript text",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "3920d7b3-4ecc-4a45-9995-e09222668151",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C3",
+      "claim": "PTC2 exhibits the largest known correlation with susceptibility to parasite infection with over 15 fold effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In a genome-wide association study of Biomphalaria glabrata snails, we identify genomic region PTC2 which exhibits the largest known correlation with susceptibility to parasite infection (>15 fold effect).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genome-wide association study and genotyping experiments showing infection odds differences",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "fe7ca52b-1cb8-4a73-900e-3e337cb331dd",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C4",
+      "claim": "PTC2 haplotypes are exceptionally divergent in structure and sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Using new genome assemblies with substantially higher contiguity than the Biomphalaria reference genome, we show that PTC2 haplotypes are exceptionally divergent in structure and sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PacBio assembly data showing structural variation and sequence divergence",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "cd0c456e-6dcf-42e9-8c33-d10cd2ce88f4",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C5",
+      "claim": "PTC2 variation includes multi-kilobase indels containing entire genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This variation includes multi-kilobase indels containing entire genes, and orthologs for which most amino acid residues are polymorphic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome assembly data and annotation showing large insertions/deletions with complete genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "aab8bf1b-527f-4132-8930-e213e979f1a6",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C6",
+      "claim": "Most PTC2 genes encode single-pass transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-Seq annotation reveals that most of these genes encode single-pass transmembrane proteins, as seen in another resistance region in the same species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq data and protein structure prediction showing transmembrane domains",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "c6088a27-246d-4f14-8406-c9f3706c7eed",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C7",
+      "claim": "Over 200 million people worldwide suffer from schistosomiasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomiasis is a chronic and debilitating disease suffered by over 200 million people worldwide (Evan Secor, 2014; Lo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Evan Secor, 2014 and Lo et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "37c3e010-dcce-417a-8d35-ba3799671013",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C8",
+      "claim": "Schistosomiasis is caused by infection with schistosome trematode parasites that are transmitted by aquatic snails.",
+      "claim_type": "EXPLICIT",
+      "source": "It is caused by infection with schistosome trematode parasites that are transmitted by aquatic snails (Lo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lo et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "6409a08b-7573-4bf9-bfde-e73b85c8704c",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C9",
+      "claim": "Schistosome infection can be treated with regular doses of praziquantel.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection can be treated with regular doses of a single drug, praziquantel (Doenhoff et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Doenhoff et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "ed1172a2-b084-452c-8666-8c5809e372aa",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C10",
+      "claim": "Mass drug administration alone will not adequately control schistosomiasis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has become increasingly clear that mass drug administration alone will not adequately control schistosomiasis, and that successful elimination of transmission requires intervention at the snail stage (Lo et al., 2018; Sokolow et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lo et al., 2018 and Sokolow et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "03709795-d094-42ee-9304-81ad11adab14",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C11",
+      "claim": "Successful elimination of schistosomiasis transmission requires intervention at the snail stage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has become increasingly clear that mass drug administration alone will not adequately control schistosomiasis, and that successful elimination of transmission requires intervention at the snail stage (Lo et al., 2018; Sokolow et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lo et al., 2018 and Sokolow et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "b49bc81b-4256-493d-9f4c-5945de53c96f",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C12",
+      "claim": "Parasite resistance is highly heritable in snails.",
+      "claim_type": "EXPLICIT",
+      "source": "Parasite resistance is highly heritable in snails, and there is substantial strain-by-strain interaction between hosts and parasites (Richards and Shade, 1987; Richards et al., 1992; Knight et al., 1999; Webster et al., 2004; Webster and Woolhouse, 1998; Theron et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations documenting heritability of resistance",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "2e7d3030-d727-434c-9ffa-6a52f1acd433",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C13",
+      "claim": "There is substantial strain-by-strain interaction between snail hosts and schistosome parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Parasite resistance is highly heritable in snails, and there is substantial strain-by-strain interaction between hosts and parasites (Richards and Shade, 1987; Richards et al., 1992; Knight et al., 1999; Webster et al., 2004; Webster and Woolhouse, 1998; Theron et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations documenting strain-specific interactions",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "4b608f9d-124b-41f1-ac97-125fd20e2395",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C14",
+      "claim": "Genetically diverse parasite cultures can infect nearly all snails.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically diverse parasite cultures can infect nearly all snails, while bottlenecked laboratory strains of parasite can only infect a subset (Theron et al., 2008), suggesting a 'trench warfare' model in which numerous alleles are maintained in both host and parasite populations because each matches a different phenotype in the other species (Seger, 1988; Stahl et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Theron et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "3121f05b-1ef6-4c2f-b490-8ae383195e05",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C15",
+      "claim": "Bottlenecked laboratory strains of parasite can only infect a subset of snails.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically diverse parasite cultures can infect nearly all snails, while bottlenecked laboratory strains of parasite can only infect a subset (Theron et al., 2008), suggesting a 'trench warfare' model in which numerous alleles are maintained in both host and parasite populations because each matches a different phenotype in the other species (Seger, 1988; Stahl et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Theron et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "f3568ee0-ec1f-4e23-8533-8bf936ac4d64",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C16",
+      "claim": "There are likely to be snail genes with large effects on resistance to particular parasite genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "There are likely to be snail genes with large effects on resistance to particular parasite genotypes (Lewis et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lewis et al., 2001 and inference from genetic data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "8921c51f-e64a-4908-908d-d33de7688fe1",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C17",
+      "claim": "The Biomphalaria glabrata reference genome BglaB1 has an N50 of 48 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "The neotropical snail Biomphalaria glabrata has been the focus of recent efforts to develop genomic resources for schistosomiasis vector biology, although the 916 Mb, repetitive genome remains poorly assembled (reference genome BglaB1 N50 = 48 kb; Adema et al., 2017; Tennessen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Adema et al., 2017 and Tennessen et al., 2017",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "529edcf9-c463-41dd-99df-3f1a57c2e159",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C18",
+      "claim": "The Biomphalaria glabrata genome is 916 Mb in size.",
+      "claim_type": "EXPLICIT",
+      "source": "The neotropical snail Biomphalaria glabrata has been the focus of recent efforts to develop genomic resources for schistosomiasis vector biology, although the 916 Mb, repetitive genome remains poorly assembled (reference genome BglaB1 N50 = 48 kb; Adema et al., 2017; Tennessen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Adema et al., 2017 and Tennessen et al., 2017",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "ad4fd2cc-8885-440a-ae31-12a4a8dba1d8",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C19",
+      "claim": "Four genomic regions have been identified in which allelic variation influences resistance to infection by S. mansoni in B. glabrata.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, four genomic regions have been identified in which allelic variation influences resistance to infection by S. mansoni (Knight et al., 1999; Goodall et al., 2006; Tennessen et al., 2015a; Tennessen et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies identifying resistance loci",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "11f26a85-f181-4cd2-a28c-b6f4416ff238",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C20",
+      "claim": "An F2 mapping cross between resistant B. glabrata strain BS-90 and a susceptible strain yielded two RAPD markers linked to resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "An F2 mapping cross between resistant B. glabrata strain BS-90 and a susceptible strain yielded two RAPD markers linked to resistance (Knight et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Knight et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "f26a1ebd-82e2-4716-848a-c2e0c74450ba",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C21",
+      "claim": "One BS-90 RAPD marker was subsequently aligned to a contig on Linkage Group XII.",
+      "claim_type": "EXPLICIT",
+      "source": "One of those was subsequently aligned to a contig on Linkage Group (LG) XII (Tennessen et al., 2017), although the identities of any candidate genes to which it may be linked remain unclear (the other could not be uniquely mapped).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tennessen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "68ed9b11-bb20-460c-8828-c4ecb557b2a4",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C22",
+      "claim": "The sod1 and RADres genomic regions together explain only 7% of the variance in resistance in population 13-16-R1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, together those two regions explain only 7% of the variance in resistance in 13-16-R1, suggesting that other resistance loci remain undiscovered in this population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from previous genetic analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "0f7fdf89-9b38-4fe4-af62-d44c5df0b103",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C23",
+      "claim": "The Guadeloupe Resistance Complex (GRC) shows an 8-fold effect on the odds of S. mansoni infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In B. glabrata from Guadeloupe, the Guadeloupe Resistance Complex (GRC) shows an 8-fold effect on the odds of S. mansoni infection (Tennessen et al., 2015b; Allan et al., 2017) via a hemocyte-mediated mechanism (Allan et al., 2018a) that also affects the proteome (Allan et al., 2019) and microbiome (Allan et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tennessen et al., 2015b and Allan et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "bcfb9f56-5df0-4f83-b794-6a75ed7eaeec",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C24",
+      "claim": "GRC functions via a hemocyte-mediated mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In B. glabrata from Guadeloupe, the Guadeloupe Resistance Complex (GRC) shows an 8-fold effect on the odds of S. mansoni infection (Tennessen et al., 2015b; Allan et al., 2017) via a hemocyte-mediated mechanism (Allan et al., 2018a) that also affects the proteome (Allan et al., 2019) and microbiome (Allan et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Allan et al., 2018a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "f66720ed-1fe4-44dc-b203-e9bb6e30f44e",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C25",
+      "claim": "Seven clustered GRC genes encode hyperdiverse single-pass transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven clustered GRC genes encode hyperdiverse single-pass transmembrane (TM1) proteins that appear to recognize parasite-associated molecules (Tennessen et al., 2015b), likely including saccharides (Allan and Blouin, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tennessen et al., 2015b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "0342acf2-80ab-4e48-8832-c319a17d845a",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C26",
+      "claim": "GRC proteins appear to recognize parasite-associated molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven clustered GRC genes encode hyperdiverse single-pass transmembrane (TM1) proteins that appear to recognize parasite-associated molecules (Tennessen et al., 2015b), likely including saccharides (Allan and Blouin, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tennessen et al., 2015b and Allan and Blouin, 2018",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "ff574e31-e8f8-42f7-aa35-1523484a5412",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C27",
+      "claim": "A single genomic region on LG XII showed by far the greatest difference in allele frequencies between infected and uninfected snail pools.",
+      "claim_type": "EXPLICIT",
+      "source": "In pooled whole-genome sequencing of 600 infected and 600 uninfected 13\u201316-R1 snails (298x and 333x coverage, respectively), a single genomic region showed by far the greatest difference in allele frequencies between pools (Figure 1A; Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pooled sequencing data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "d2290adf-55b5-4d5c-9b0b-8d60a05812ef",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C28",
+      "claim": "The highest outliers in allele frequency differences occurred in a 450 kb section of LG XII called PTC2.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest outliers occurred in a 450 kb section of LG XII, here called PTC2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pooled sequencing data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "99f84a1a-a55d-4409-b95c-ec11c7b7645d",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C29",
+      "claim": "Genetic divergence (FST) at numerous PTC2 variants exceeds 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic divergence between pools (FST) at numerous PTC2 variants exceeds 0.1, a value unobserved among one billion simulated neutral variants, which is therefore significant even if corrected for the nearly 7 million empirical variants examined (p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FST calculations from pooled sequencing data and simulation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "a8a0c0f7-b7c1-444f-94f5-d12832fb1db5",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C30",
+      "claim": "FST exceeding 0.1 at PTC2 is significant even after correction for multiple testing (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic divergence between pools (FST) at numerous PTC2 variants exceeds 0.1, a value unobserved among one billion simulated neutral variants, which is therefore significant even if corrected for the nearly 7 million empirical variants examined (p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation analysis showing this FST value is unlikely under neutrality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "9133957d-8220-4014-8760-044c4f616f5f",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C31",
+      "claim": "Many PTC2 variants show FST over 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Many variants even show FST over 0.2, more than twice the FST at sod1 and RADres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FST calculations from pooled sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "9abebd16-e6e6-4192-9c03-fe91a8b8dde2",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C32",
+      "claim": "Three PTC2 alleles exist at intermediate frequency: R (44%), S1 (24%), and S2 (32%).",
+      "claim_type": "EXPLICIT",
+      "source": "By subsequently genotyping indel polymorphisms at PTC2 in individual snails, we observed three alleles at intermediate frequency (R: 44%, S1: 24%, and S2: 32%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data from individual snails",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "5f85425e-5975-4079-b8fd-680da00d4162",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C33",
+      "claim": "Infection was rare for RR homozygotes (12.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "Infection was rare for RR homozygotes (12.9%), and much more common for S1S1 (75.3%) and S2S2 (29.6%) homozygotes, a difference in infection odds of over 15-fold (i.e. infection odds of 0.15 vs. 3.0; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotyping and genotyping data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "e94ed6cf-1749-434e-9b01-b3e75bf6ce4f",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C34",
+      "claim": "Infection was much more common for S1S1 homozygotes (75.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "Infection was rare for RR homozygotes (12.9%), and much more common for S1S1 (75.3%) and S2S2 (29.6%) homozygotes, a difference in infection odds of over 15-fold (i.e. infection odds of 0.15 vs. 3.0; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotyping and genotyping data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "f89d6827-3b4d-4254-8aa4-dd243e855446",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C35",
+      "claim": "Infection was common for S2S2 homozygotes (29.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "Infection was rare for RR homozygotes (12.9%), and much more common for S1S1 (75.3%) and S2S2 (29.6%) homozygotes, a difference in infection odds of over 15-fold (i.e. infection odds of 0.15 vs. 3.0; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotyping and genotyping data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "e6b50bab-3a1c-4a68-bc6a-c12ccdf322c4",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C36",
+      "claim": "There is a difference in infection odds of over 15-fold between RR and S1S1 genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection was rare for RR homozygotes (12.9%), and much more common for S1S1 (75.3%) and S2S2 (29.6%) homozygotes, a difference in infection odds of over 15-fold (i.e. infection odds of 0.15 vs. 3.0; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotyping and genotyping data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "13d999db-bf72-4ecb-bd7f-91be153634d5",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C37",
+      "claim": "PTC2 heterozygotes showed intermediate infection phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterozygotes showed intermediate phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phenotyping data from heterozygous individuals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "38926473-3bb1-435a-8670-a963021a6661",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C38",
+      "claim": "There is weak partial dominance of S1 over R at PTC2.",
+      "claim_type": "EXPLICIT",
+      "source": "There was weak partial dominance of S1 over R (observed Clopper-Pearson 95% confidence interval of infection probability for S1R = 51.0\u201361.8%; expected intermediate phenotype = 44.1%), such that relative to RR, carrying an S1 allele increases the odds of infection 5.9-fold (p=6 \u00d7 10\u221242) while a second S1 allele further increases the odds of infection 2.7-fold for a 15.9-fold difference (p=1 \u00d7 10\u22124).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of genotype-phenotype associations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "3f6115d6-8461-446a-a256-54e5020fd0ec",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C39",
+      "claim": "Carrying an S1 allele increases the odds of infection 5.9-fold relative to RR (p=6 \u00d7 10\u221242).",
+      "claim_type": "EXPLICIT",
+      "source": "There was weak partial dominance of S1 over R (observed Clopper-Pearson 95% confidence interval of infection probability for S1R = 51.0\u201361.8%; expected intermediate phenotype = 44.1%), such that relative to RR, carrying an S1 allele increases the odds of infection 5.9-fold (p=6 \u00d7 10\u221242) while a second S1 allele further increases the odds of infection 2.7-fold for a 15.9-fold difference (p=1 \u00d7 10\u22124).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by logistic regression analysis of genotype-phenotype data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "c36d68f3-4484-4cb6-a7cd-af1f85060ac2",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C40",
+      "claim": "A second S1 allele further increases the odds of infection 2.7-fold (p=1 \u00d7 10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "There was weak partial dominance of S1 over R (observed Clopper-Pearson 95% confidence interval of infection probability for S1R = 51.0\u201361.8%; expected intermediate phenotype = 44.1%), such that relative to RR, carrying an S1 allele increases the odds of infection 5.9-fold (p=6 \u00d7 10\u221242) while a second S1 allele further increases the odds of infection 2.7-fold for a 15.9-fold difference (p=1 \u00d7 10\u22124).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by logistic regression analysis of genotype-phenotype data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "52f0f1d5-8068-4cbb-9350-c20d6fef20c1",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C41",
+      "claim": "The S2 allele acts additively, with each S2 allele increasing the odds of infection 1.5-fold (p=6 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "The S2 allele acts additively, such that each S2 allele increases the odds of infection 1.5-fold (p=6 \u00d7 10\u22125).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by logistic regression analysis of genotype-phenotype data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "9599ce99-b04e-4240-a8ff-087e395de73b",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C42",
+      "claim": "The PTC2 signal was confirmed using an independent set of 392 snails from 13-16-R1.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the PTC2 signal using an independent set of 392 snails from 13-16-R1 that had previously been phenotyped (Tennessen et al., 2015a) (p=7 \u00d7 10\u221212 for R vs. S1; p=4 \u00d7 10\u22125 for R vs. S2; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping and phenotyping data from independent sample set",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "d27097c3-913b-48f7-937d-7d25128a5a34",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C43",
+      "claim": "All three loci (PTC2, sod1, and RADres) had significant independent associations when included together in the same model (p\u226410\u22124 for each).",
+      "claim_type": "EXPLICIT",
+      "source": "These snails had also been genotyped at sod1 and RADres, revealing that all three loci had significant independent associations when included together in the same model (p\u226410\u22124 for each), with no evidence for epistasis (p>0.05 for interaction terms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multi-locus logistic regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "d5d2c41a-c6e2-47d5-b8f8-4635557604df",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C44",
+      "claim": "There is no evidence for epistasis among PTC2, sod1, and RADres (p>0.05 for interaction terms).",
+      "claim_type": "EXPLICIT",
+      "source": "These snails had also been genotyped at sod1 and RADres, revealing that all three loci had significant independent associations when included together in the same model (p\u226410\u22124 for each), with no evidence for epistasis (p>0.05 for interaction terms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multi-locus logistic regression analysis testing interaction terms",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "adb8a46a-6c72-431d-83fd-2868c5bb8457",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C45",
+      "claim": "Segregating variation at PTC2 has a stronger association with odds of infection than that of any other known B. glabrata locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Segregating variation at PTC2 has a stronger association with odds of infection than that of any other known B. glabrata locus (Tennessen et al., 2015a; Tennessen et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of effect sizes across known resistance loci",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "af95f71c-7421-49ca-912b-8eb3a605a55b",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C46",
+      "claim": "The BS-90 RAPD marker is 5 Mb and 23 cM from PTC2.",
+      "claim_type": "EXPLICIT",
+      "source": "The BS-90 RAPD marker (Knight et al., 1999) is only 5 Mb and 23 cM from PTC2 (Figure 1\u2014figure supplement 2; Tennessen et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome assembly and linkage map data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "8f4ff88e-7289-41d1-97af-987b9bdbff05",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C47",
+      "claim": "The BS-90 RAPD marker is predicted to be 17 cM (range 6\u201333 cM) from a causal locus.",
+      "claim_type": "EXPLICIT",
+      "source": "This marker is predicted to be 17 cM (range 6\u201333 cM) from a causal locus, which could therefore plausibly be PTC2 (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical inference from mapping data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "f2ad2949-55a0-4f57-8923-fd2dd410d337",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C48",
+      "claim": "Alignable regions of PTC2 haplotypes show 3.3% nucleotide divergence on average (SD = 2.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "Alignable regions show 3.3% nucleotide divergence on average (SD = 2.1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment analysis of PacBio assemblies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "de386294-28e3-404a-b02b-075677efa0e3",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C49",
+      "claim": "A majority of PTC2 sequence shows no similarity among alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of PTC2 sequence shows no similarity among alleles; the percentage of sequence that could even be aligned ranged from 12.9% (R onto S2) to 40.0% (S1 onto R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment analysis of PacBio assemblies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "85390678-ce9b-41d3-9393-5c6fc03e90ff",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C50",
+      "claim": "The percentage of PTC2 sequence that could be aligned ranged from 12.9% (R onto S2) to 40.0% (S1 onto R).",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of PTC2 sequence shows no similarity among alleles; the percentage of sequence that could even be aligned ranged from 12.9% (R onto S2) to 40.0% (S1 onto R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment analysis of PacBio assemblies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "90ba4f95-f896-4b28-bb62-b68ddf868ac7",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C51",
+      "claim": "All three PTC2 haplotypes harbor unique insertions tens of thousands of bp in size.",
+      "claim_type": "EXPLICIT",
+      "source": "All three PTC2 haplotypes harbor unique insertions tens of thousands of bp in size, some of which contain complete coding genes, such that each genotype carries a distinct combination of genes (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome assembly and annotation data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "b6930d7d-ad28-4963-b8df-7e062a964de1",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C52",
+      "claim": "Each PTC2 genotype carries a distinct combination of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "All three PTC2 haplotypes harbor unique insertions tens of thousands of bp in size, some of which contain complete coding genes, such that each genotype carries a distinct combination of genes (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome assembly and annotation data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "4f434446-c44d-45bc-b9b7-44a7f4ab8fe2",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C53",
+      "claim": "Shared orthologous genes at PTC2 show many nonsynonymous differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Shared orthologous genes at PTC2 show many nonsynonymous differences and in some cases homology can only be identified at the protein, not DNA, level (Figure 2\u2014figure supplement 1; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence analysis and protein alignments shown in Figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "e94f5c3e-3b94-426c-a55d-6a10294c9355",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C54",
+      "claim": "For some PTC2 genes, homology can only be identified at the protein level, not DNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Shared orthologous genes at PTC2 show many nonsynonymous differences and in some cases homology can only be identified at the protein, not DNA, level (Figure 2\u2014figure supplement 1; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence analysis shown in Figure 2\u2014figure supplement 1 and Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "87d77406-e648-4fd2-8634-1506ae0ac3b5",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C55",
+      "claim": "The degree of polymorphism at PTC2 is unusually high for conspecific haplotypes in most genomic regions in any taxon.",
+      "claim_type": "EXPLICIT",
+      "source": "This degree of polymorphism is unusually high for conspecific haplotypes in most genomic regions in any taxon (Leffler et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to literature on genomic diversity",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "ff3a0024-3f19-4c00-b788-6304e6f25afe",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C56",
+      "claim": "Outside of PTC2, 89.5% of sequence can be aligned between assemblies, with a mean of 0.4% nucleotide divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to PTC2, 89.5% of sequence on other contigs can be aligned between assemblies, with a mean of 0.4% nucleotide divergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome-wide sequence alignment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "ea1c3c30-aaf9-4759-8095-136e000eed3c",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C57",
+      "claim": "PTC2 contains eleven genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNA-Seq data from homozygotes of each genotype to identify expressed genes, we fully annotated PTC2 (Supplementary file 1D,E). Of the eleven PTC2 genes, eight are predicted to be TM1 genes, including all five genes that are shared among the three haplotypes (genes 1, 2, 4, 5, and 9; Figure 2; Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq annotation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "21e140f3-c403-4f92-9ffa-66c884cad860",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C58",
+      "claim": "Eight of the eleven PTC2 genes are predicted to be TM1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNA-Seq data from homozygotes of each genotype to identify expressed genes, we fully annotated PTC2 (Supplementary file 1D,E). Of the eleven PTC2 genes, eight are predicted to be TM1 genes, including all five genes that are shared among the three haplotypes (genes 1, 2, 4, 5, and 9; Figure 2; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-Seq annotation and protein structure prediction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "b10cbb38-b69b-4d37-8a31-14e327fe8c16",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C59",
+      "claim": "All five genes shared among the three PTC2 haplotypes are TM1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNA-Seq data from homozygotes of each genotype to identify expressed genes, we fully annotated PTC2 (Supplementary file 1D,E). Of the eleven PTC2 genes, eight are predicted to be TM1 genes, including all five genes that are shared among the three haplotypes (genes 1, 2, 4, 5, and 9; Figure 2; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-Seq annotation and protein structure prediction shown in Figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "6f370307-0577-4b30-8459-288e5bc20cd3",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C60",
+      "claim": "Only 11% of B. glabrata genes are TM1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 11% of B. glabrata genes are TM1 genes, so they would be unlikely to constitute eight of eleven genes by chance alone (p<10\u22125).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome-wide annotation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "a49525e1-5d4b-47ed-8686-632c1bac77a4",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C61",
+      "claim": "TM1 genes would be unlikely to constitute eight of eleven PTC2 genes by chance alone (p<10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Only 11% of B. glabrata genes are TM1 genes, so they would be unlikely to constitute eight of eleven genes by chance alone (p<10\u22125).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis comparing observed to expected gene composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "0d97bc59-5764-49fa-becc-774308cc85ba",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C62",
+      "claim": "PTC2 TM1 genes are all between 166 and 530 codons.",
+      "claim_type": "EXPLICIT",
+      "source": "PTC2 TM1 genes are all between 166 and 530 codons, have TM1 domains that are displaced from the N-terminus (Figure 3\u2014figure supplement 1), and like the rest of PTC2 they are highly polymorphic (Figure 3), with amino acid level divergence exceeding 50% in several cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene annotation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "405dd9af-e596-4fb0-b8fa-d1a203be51bc",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C63",
+      "claim": "PTC2 TM1 genes have TM1 domains that are displaced from the N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "PTC2 TM1 genes are all between 166 and 530 codons, have TM1 domains that are displaced from the N-terminus (Figure 3\u2014figure supplement 1), and like the rest of PTC2 they are highly polymorphic (Figure 3), with amino acid level divergence exceeding 50% in several cases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by protein structure analysis shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "fe4938be-7478-40aa-baa2-cd98c0974b19",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C64",
+      "claim": "PTC2 TM1 genes show amino acid level divergence exceeding 50% in several cases.",
+      "claim_type": "EXPLICIT",
+      "source": "PTC2 TM1 genes are all between 166 and 530 codons, have TM1 domains that are displaced from the N-terminus (Figure 3\u2014figure supplement 1), and like the rest of PTC2 they are highly polymorphic (Figure 3), with amino acid level divergence exceeding 50% in several cases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by protein sequence alignment data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "0402b622-d7a8-441a-9580-07f4bd1a2859",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C65",
+      "claim": "Sequences similar to both R and S haplotypes are present in other B. glabrata populations without admixed histories.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences similar to both R and S haplotypes are present in other B. glabrata populations without admixed histories (genomic and transcriptomic sequence from Brazilian strain BB02, Adema et al., 2017; transcriptomic sequence from Guadeloupe, Tennessen et al., 2015b; Figure 3\u2014figure supplement 2), suggesting that they co-occur throughout the species range and the polymorphism is old.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence data from multiple populations shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "52e9b77b-07a9-479b-8117-60b113d21dfc",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C66",
+      "claim": "PTC2 alleles co-occur throughout the B. glabrata species range.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences similar to both R and S haplotypes are present in other B. glabrata populations without admixed histories (genomic and transcriptomic sequence from Brazilian strain BB02, Adema et al., 2017; transcriptomic sequence from Guadeloupe, Tennessen et al., 2015b; Figure 3\u2014figure supplement 2), suggesting that they co-occur throughout the species range and the polymorphism is old.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence data from geographically diverse populations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "af399cba-4f36-48a8-8410-1bc331bbc2ea",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C67",
+      "claim": "The PTC2 polymorphism is old.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences similar to both R and S haplotypes are present in other B. glabrata populations without admixed histories (genomic and transcriptomic sequence from Brazilian strain BB02, Adema et al., 2017; transcriptomic sequence from Guadeloupe, Tennessen et al., 2015b; Figure 3\u2014figure supplement 2), suggesting that they co-occur throughout the species range and the polymorphism is old.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from presence of similar alleles across geographically diverse populations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "0d74ddf0-f2a1-48da-bc50-27992262f5b5",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C68",
+      "claim": "Synonymous divergence among PTC2 alleles is higher than nonsynonymous divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Synonymous divergence among alleles is higher than nonsynonymous, and a phylogeny of concatenated genes shows 24% synonymous divergence from the midpoint root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence divergence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "8580ed34-4963-4a0b-a7be-ac2b5d64295d",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C69",
+      "claim": "A phylogeny of concatenated PTC2 genes shows 24% synonymous divergence from the midpoint root.",
+      "claim_type": "EXPLICIT",
+      "source": "Synonymous divergence among alleles is higher than nonsynonymous, and a phylogeny of concatenated genes shows 24% synonymous divergence from the midpoint root.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phylogenetic analysis of concatenated gene sequences",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "704c568f-b94e-40b8-b0d2-6e4275d8517e",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C70",
+      "claim": "PTC2 haplotypes are more consistent with an ancient origin (24 million years assuming a neutral mutation rate of 10\u22128 per year) rather than recent divergence via selection for protein diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, haplotypes are more consistent with an ancient origin (24 million years assuming a neutral mutation rate of 10\u22128 per year) rather than recent divergence via selection for protein diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from synonymous divergence data and molecular clock assumptions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "d3d77b02-dab0-42ea-afad-56d1b3601986",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C71",
+      "claim": "PTC2 genes contain no known protein domains or homology to sequences outside of gastropods, other than the transmembrane segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than the transmembrane segment, these genes contain no known protein domains or homology to sequences outside of gastropods, nor are they homologous to GRC genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by protein domain analysis and sequence homology searches",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "fa301b56-0b3f-4ead-95e5-9c687d0dc55b",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C72",
+      "claim": "PTC2 genes are not homologous to GRC genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than the transmembrane segment, these genes contain no known protein domains or homology to sequences outside of gastropods, nor are they homologous to GRC genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence homology analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "e62da0de-1584-4d96-a16c-5d1c4d0120fc",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C73",
+      "claim": "Some PTC2 genes show homology to each other and/or to other genes near PTC2 or elsewhere in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Some show homology to each other and/or to other genes near PTC2 or elsewhere in the genome, but amino acid level sequence similarity among paralogs is low (<50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence homology analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "0341cf6c-91e5-414f-b917-63a5197cf6b1",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C74",
+      "claim": "Amino acid level sequence similarity among PTC2 paralogs is low (<50%).",
+      "claim_type": "EXPLICIT",
+      "source": "Some show homology to each other and/or to other genes near PTC2 or elsewhere in the genome, but amino acid level sequence similarity among paralogs is low (<50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by protein sequence alignment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "c5f0efa1-f234-419c-a53b-45bacded4ea8",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C75",
+      "claim": "Both GRC and PTC2 suggest a model of snail-schistosome interaction via molecular recognition mediated by TM1 gene polymorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GRC and PTC2 suggest a model of snail-schistosome interaction via molecular recognition (either of the parasite by the host, or of the host by the parasite) that is mediated by TM1 gene polymorphism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the shared features of GRC and PTC2 (both contain polymorphic TM1 genes associated with resistance)",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "9850cbc3-3fa6-4726-a18a-d5c245cf3fc3",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C76",
+      "claim": "Across metazoans, TM1 genes often play a role in immunological recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Across metazoans, TM1 genes often play a role in immunological recognition, and include B- and T-cell receptors, Toll-like receptors, major histocompatibility complex genes, and similar host defense genes (Pahl et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pahl et al., 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "d83c6f7e-ddfc-4943-9410-a8b0fa1cb80a",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C77",
+      "claim": "Polymorphic clusters of host transmembrane genes are used by parasites as receptors for host recognition and invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Other polymorphic clusters of host transmembrane genes are used by parasites as receptors for host recognition and invasion (e.g. human glycophorins and Plasmodium; Malaria Genomic Epidemiology Network et al., 2017), and at least one of the GRC TM1 genes controls shedding of S. mansoni cercariae (Allan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Malaria Genomic Epidemiology Network et al., 2017 and Allan et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "47f1de97-6ab6-4e5d-b995-07a796da6166",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C78",
+      "claim": "At least one of the GRC TM1 genes controls shedding of S. mansoni cercariae.",
+      "claim_type": "EXPLICIT",
+      "source": "Other polymorphic clusters of host transmembrane genes are used by parasites as receptors for host recognition and invasion (e.g. human glycophorins and Plasmodium; Malaria Genomic Epidemiology Network et al., 2017), and at least one of the GRC TM1 genes controls shedding of S. mansoni cercariae (Allan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Allan et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "ca90b667-074d-41b0-9485-06bf45242698",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C79",
+      "claim": "In contrast to GRC, all three PTC2 alleles differ in their susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to GRC, in which a completely dominant allele confers resistance, all three alleles in PTC2 differ in their susceptibility, and allelic associations are additive or show partial dominant susceptibility (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotype-phenotype association data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "4018706b-2610-419d-8be9-fbffbf31fd59",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C80",
+      "claim": "PTC2 allelic associations are additive or show partial dominant susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to GRC, in which a completely dominant allele confers resistance, all three alleles in PTC2 differ in their susceptibility, and allelic associations are additive or show partial dominant susceptibility (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of genotype-phenotype associations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "b55ec32b-83fc-4f43-9501-b4aacdccee93",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C81",
+      "claim": "Multiple loci along the PTC2 haplotypes may jointly contribute to phenotype by interacting with different combinations of parasite molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern suggests that multiple loci along the haplotypes may jointly contribute to phenotype by interacting with different combinations of parasite molecules such as SmPoMucs (Roger et al., 2008) or other glycoproteins (Allan and Blouin, 2018) to determine the outcome of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the pattern of allelic effects and comparison to known parasite molecules",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "a7e3696f-2c34-40d0-a530-29f49c72bcdc",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C82",
+      "claim": "The inferred ancient origin of PTC2 (>20 million years) is inconsistent with a neutral coalescent process.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred ancient origin (>20 million years) of PTC2 is inconsistent with a neutral coalescent process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from molecular clock analysis and population genetic theory",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "210234b2-2980-4190-a53d-bd0fdd3c317b",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C83",
+      "claim": "The remarkable structural and nonsynonymous polymorphism at PTC2 appears adaptive.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while the remarkable structural and nonsynonymous polymorphism appears adaptive, it is difficult to distinguish among plausible scenarios including overdominance (Woolhouse et al., 2002), negative-frequency dependent selection (Woolhouse et al., 2002; Koskella and Lively, 2009; Bento et al., 2017), adaptive introgression from distantly related species (Hedrick, 2013), or selection for an epistatically-interacting supergene (Thompson and Jiggins, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the patterns of polymorphism and ancient divergence",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "f6655f99-5816-420d-b020-16dfef0c285a",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C84",
+      "claim": "Adaptive introgression appears unlikely as an explanation for PTC2 polymorphism because it would have had to occur twice independently to generate three distinct haplotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Introgression appears unlikely, as it would have had to occur twice independently to generate three distinct haplotypes, and all of the closest relatives of B. glabrata occur allopatrically in Africa (DeJong et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the number of haplotypes and biogeography",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "ba34c278-ee1d-4b61-bd2c-07c20baf4344",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C85",
+      "claim": "All of the closest relatives of B. glabrata occur allopatrically in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Introgression appears unlikely, as it would have had to occur twice independently to generate three distinct haplotypes, and all of the closest relatives of B. glabrata occur allopatrically in Africa (DeJong et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DeJong et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "649f707e-0228-4dc4-b8e9-44ece9aa4138",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C86",
+      "claim": "The most plausible explanations for PTC2 polymorphism involve some form of long-term balancing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the most plausible explanations involve some form of long-term balancing selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from elimination of other scenarios and patterns of ancient polymorphism",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "10a1f5ea-fc05-4060-b0e2-d3392240b72f",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C87",
+      "claim": "S. mansoni is not native to the neotropics.",
+      "claim_type": "EXPLICIT",
+      "source": "Although S. mansoni is not native to the neotropics (Despr\u00e8s et al., 1993), selection may have been driven by other trematodes, a clade that has ubiquitously infected snails for millions of years (Blair et al., 2001) and which can be a strong selective force favoring rare alleles (Koskella and Lively, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Despr\u00e8s et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "8354ef92-8902-4144-b1f7-b8bd9fc71fa1",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C88",
+      "claim": "Trematodes have ubiquitously infected snails for millions of years.",
+      "claim_type": "EXPLICIT",
+      "source": "Although S. mansoni is not native to the neotropics (Despr\u00e8s et al., 1993), selection may have been driven by other trematodes, a clade that has ubiquitously infected snails for millions of years (Blair et al., 2001) and which can be a strong selective force favoring rare alleles (Koskella and Lively, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Blair et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "1e6ffa34-bba0-429b-98a1-8cc5e40cf75c",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C89",
+      "claim": "Trematodes can be a strong selective force favoring rare alleles in snails.",
+      "claim_type": "EXPLICIT",
+      "source": "Although S. mansoni is not native to the neotropics (Despr\u00e8s et al., 1993), selection may have been driven by other trematodes, a clade that has ubiquitously infected snails for millions of years (Blair et al., 2001) and which can be a strong selective force favoring rare alleles (Koskella and Lively, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koskella and Lively, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "0072fae5-4efc-48b0-a533-519d4026c5ff",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C90",
+      "claim": "Schistosomes castrate snails.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomes castrate snails (Faro et al., 2013) but wild snails show no sign of evolving universal resistance, suggesting that the R haplotype is either specific to parasite genotype or else costly to fitness in some undetected manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Faro et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "0b3fc2b2-5a24-45e7-8295-639cb6247970",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C91",
+      "claim": "Wild snails show no sign of evolving universal resistance to schistosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomes castrate snails (Faro et al., 2013) but wild snails show no sign of evolving universal resistance, suggesting that the R haplotype is either specific to parasite genotype or else costly to fitness in some undetected manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the maintenance of susceptible alleles despite strong selection",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "89512974-012c-40ae-86a7-e7882444802d",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C92",
+      "claim": "The R allele has persisted within the 13\u201316-R1 population for decades in the absence of challenge by parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "The R allele has persisted within the 13\u201316-R1 population for decades in the absence of challenge by parasites, so any fitness cost must be relatively weak or context-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by knowledge of the laboratory population history",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "310c7867-e430-420c-bf73-a218f121d609",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C93",
+      "claim": "Any fitness cost of the R allele must be relatively weak or context-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The R allele has persisted within the 13\u201316-R1 population for decades in the absence of challenge by parasites, so any fitness cost must be relatively weak or context-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the persistence of the R allele in the absence of parasites",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "8b52f9d8-83aa-4f3d-b0c8-a9b2374ec29c",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C94",
+      "claim": "A system of polymorphic matching alleles could explain the substantial schistosome-strain by snail-strain interaction in compatibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a system of polymorphic matching alleles could explain the substantial schistosome-strain by snail-strain interaction in compatibility that is often observed (Richards and Shade, 1987; Richards et al., 1992; Knight et al., 1999; Webster et al., 2004; Webster and Woolhouse, 1998; Theron et al., 2014), including schistosome-infection dose-response curves that fit a simple phenotype-matching model (Theron et al., 2008; Theron et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the patterns of polymorphism and supported by citations to studies showing strain-specific interactions",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "d36194f6-9056-40a4-87ee-aeaf7423abe9",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C95",
+      "claim": "Schistosome-infection dose-response curves fit a simple phenotype-matching model.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a system of polymorphic matching alleles could explain the substantial schistosome-strain by snail-strain interaction in compatibility that is often observed (Richards and Shade, 1987; Richards et al., 1992; Knight et al., 1999; Webster et al., 2004; Webster and Woolhouse, 1998; Theron et al., 2014), including schistosome-infection dose-response curves that fit a simple phenotype-matching model (Theron et al., 2008; Theron et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Theron et al., 2008 and Theron et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "b67d1e30-de3a-429f-8a7a-24ccecd98288",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C96",
+      "claim": "The PR-locus mediating bacterial resistance in Daphnia features haplotypes of vastly different sizes with large non-homologous sections.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the PR-locus mediating bacterial resistance in Daphnia via matching-allele interactions also features haplotypes of vastly different sizes (differences > 60 kb at both this locus and PTC2) with large non-homologous sections, and these contain glycosyltransferase genes that could mediate host-pathogen compatibility (Bento et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bento et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "aa6a73c7-fe7f-4d39-aa81-fdfdf011869a",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C97",
+      "claim": "The APL1 immune factor impacting Plasmodium development in Anopheles consists of adjacent paralogs that differ in copy number among species and show extreme diversity within species.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the APL1 immune factor impacting Plasmodium development in Anopheles consists of adjacent paralogs that differ in copy number among species and show extreme diversity within species (Rottschaefer et al., 2011; Mitri et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rottschaefer et al., 2011 and Mitri et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "413f9592-0e6b-4417-8746-5e4bef65ebe1",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C98",
+      "claim": "Invertebrates lack the acquired immunity of vertebrates and its associated adaptive genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while invertebrates lack the acquired immunity of vertebrates and its associated adaptive genetic variation (Spurgin and Richardson, 2010), their defenses can show similar nuance conveyed by molecular diversity (Loker et al., 2004; Cerenius and S\u00f6derh\u00e4ll, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Spurgin and Richardson, 2010",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "8a6de0e9-218c-4abd-a12d-ea499c9ce4dc",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C99",
+      "claim": "Invertebrate defenses can show similar nuance to vertebrate immunity conveyed by molecular diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while invertebrates lack the acquired immunity of vertebrates and its associated adaptive genetic variation (Spurgin and Richardson, 2010), their defenses can show similar nuance conveyed by molecular diversity (Loker et al., 2004; Cerenius and S\u00f6derh\u00e4ll, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Loker et al., 2004 and Cerenius and S\u00f6derh\u00e4ll, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "13b61dd9-db2e-4c73-83a4-b66282723223",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C100",
+      "claim": "For invertebrates, increased numbers of distinct immunogenetic sequences may not necessarily lead to increased resistance if parasites also use these sequences to recognize hosts or mount evasion strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "For invertebrates, increased numbers of distinct immunogenetic sequences may not necessarily lead to increased resistance if parasites also use these sequences to recognize hosts or mount evasion strategies (Schmid-Hempel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schmid-Hempel, 2005 and logical inference",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "810f9332-666e-455e-9e25-d8ee4b572db4",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C101",
+      "claim": "The successful implementation of CRISPR/Cas9 in gastropods will facilitate the creation of genetically modified snails having enhanced immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The successful implementation of CRISPR/Cas9 in gastropods (Abe and Kuroda, 2019) will facilitate the creation of genetically modified snails having enhanced immunity to block disease transmission (Maier et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abe and Kuroda, 2019 and Maier et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "b5397142-c6d7-44f0-9206-41915b2b580d",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C102",
+      "claim": "TM1 clusters are excellent candidates to target in efforts to create genetically modified snails with enhanced immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "As large-effect loci, the TM1 clusters are excellent candidates to target in such efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the large effect sizes of TM1 clusters on resistance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "fd669238-6d3f-4d1e-9a66-8717b0cdcc0c",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C103",
+      "claim": "If host polymorphism is adaptive, it may not be readily replaced in natural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more work is needed to characterize the functional effects of these genes, as well as the molecular and evolutionary dynamics between hosts and parasites. For example, if host polymorphism is adaptive, it may not be readily replaced in natural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from evolutionary theory about balancing selection",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "a126c695-339e-4f04-a4a7-914a866e968f",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C104",
+      "claim": "Gene-by-gene interactions between snail and schistosome genotypes could permit the rapid evolution of parasite counterstrategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, gene-by-gene interactions between snail and schistosome genotypes could permit the rapid evolution of parasite counterstrategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from coevolutionary theory",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "084428d9-46a1-49a7-9131-64ab674f4365",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C105",
+      "claim": "It is unlikely that a universally resistant snail could be generated by a single genetic change in the context of ancient trench warfare coevolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of ancient trench warfare coevolution, it is unlikely that a universally resistant snail could be generated by a single genetic change, although successive changes could enhance parasite resistance enough to impact patterns of transmission (Theron et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from coevolutionary theory and supported by citation to Theron et al., 2014",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "dd688aea-daa4-4ec9-8c19-89e94158ada7",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C106",
+      "claim": "Successive genetic changes could enhance parasite resistance enough to impact patterns of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of ancient trench warfare coevolution, it is unlikely that a universally resistant snail could be generated by a single genetic change, although successive changes could enhance parasite resistance enough to impact patterns of transmission (Theron et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Theron et al., 2014 and inference",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "604c46d1-4d5e-4e7b-8eff-940198afa460",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C107",
+      "claim": "Snail TM1 proteins may bind to key schistosome molecules that mediate invasion of the host.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative to genetic modification, future work could leverage the hypothesis that the snail TM1 proteins bind to key schistosome molecules that mediate invasion of the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the function of TM1 proteins and their association with resistance",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "45083fd6-d1a5-4280-8270-ca8dd8fcbb8a",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C108",
+      "claim": "Clusters of immune recognition loci with elevated functional diversity have long been used to track and predict patterns of adaptive variation across populations and species.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, clusters of immune recognition loci with elevated functional diversity have long been used to track and predict patterns of adaptive variation across populations and species (Sommer, 2005; Spurgin and Richardson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sommer, 2005 and Spurgin and Richardson, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "d8422216-ddfe-487f-a177-2c2a2ac07f11",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C109",
+      "claim": "This class of genes (TM1 clusters) will play a central role in disease control as the molecular aspects of vector biology are fully brought to bear on schistosomiasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we anticipate that this class of genes will play a central role in disease control as the molecular aspects of vector biology are fully brought to bear on schistosomiasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the importance of these genes in resistance and their potential applications",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "40bacde5-e5e5-47da-ab88-601e436d1342",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C110",
+      "claim": "The 13-16-R1 population has been maintained in the absence of parasite exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our population has been maintained in the absence of parasite exposure, and therefore under relaxed selective pressure in regard to parasite resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by knowledge of laboratory population maintenance",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "9a45d29c-a680-4e79-8cb0-b4b64513ada2",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C111",
+      "claim": "About 40% of 13-16-R1 snails became infected when challenged with PR-1 miracidia.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, we arbitrarily chose 1700 outbred juvenile snails (4\u20136 mm diameter), challenged them each with five miracidia, and classified them as infected or uninfected. About 40% of snails became infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental infection data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "fdf44753-78bc-48a0-ab64-51e4b1e5a86c",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C112",
+      "claim": "Pooled sequencing of 600 infected and 600 uninfected snails achieved 298x and 333x coverage, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In pooled whole-genome sequencing of 600 infected and 600 uninfected 13\u201316-R1 snails (298x and 333x coverage, respectively), a single genomic region showed by far the greatest difference in allele frequencies between pools (Figure 1A; Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "c2b2c35c-3817-4234-a42e-4f74f7ac4e98",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C113",
+      "claim": "Three PacBio assemblies were generated from inbred snail lines homozygous for the three PTC2 alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated three PacBio assemblies from inbred snail lines homozygous for the three PTC2 alleles. (Supplementary file 1C; assemblies NCBI Genome, BioProject Accession PRJNA639204).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome assembly data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "75e09e30-39ad-4ab3-96d7-96e1c24f1bff",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C114",
+      "claim": "The homR assembly used snail line R68 and was sequenced in 15 SMRT cells (78x coverage).",
+      "claim_type": "EXPLICIT",
+      "source": "The first assembly (homR) used snail line R68, which is derived from 13-16-R1 and is highly resistant to S. mansoni strain PR-1, as described previously (Tennessen et al., 2015a). We pooled and sequenced these snails in 15 SMRT cells (78x coverage) on the Pacific Biosciences Sequel I at the CGRB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "9fef7dac-f7de-4386-9a05-2fd1bcf1c5ab",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C115",
+      "claim": "The homS1 assembly was generated from snail line i90 using 6 SMRT cells (58x coverage).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the other two assemblies (homS1 and homS2) were generated using the same methodology from snail lines i90 (6 SMRT cells, 58x coverage) and i171 (5 SMRT cells, 46x coverage), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "f3bd9c17-956d-4b19-bb7e-ee2dde9355e2",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C116",
+      "claim": "The homS2 assembly was generated from snail line i171 using 5 SMRT cells (46x coverage).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the other two assemblies (homS1 and homS2) were generated using the same methodology from snail lines i90 (6 SMRT cells, 58x coverage) and i171 (5 SMRT cells, 46x coverage), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "139b90af-c781-4ca3-9541-e9524a2a3163",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C117",
+      "claim": "1489 homR contigs were assigned to linkage groups, representing 635 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus assigned 1489 homR contigs to linkage groups, representing 635 Mb; these assignments were supported by a median of seven mapped fragments per homR contig, with an average of 96% of fragments per homR contig mapping to the same linkage group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by linkage mapping analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "6dbab033-31e4-4a7b-ac14-894a5a8dc459",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "claim_id": "C118",
+      "claim": "GRC is also known as PTC1.",
+      "claim_type": "IMPLICIT",
+      "source": "as GRC (=PTC1) was the first such cluster described in Biomphalaria, we designate this second region as Polymorphic Transmembrane Cluster 2 (PTC2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated explicitly in the text that GRC equals PTC1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "478088f1-0020-4031-816d-0c0fa16cd9cc",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Schistosomiasis is a debilitating disease affecting over 200 million people worldwide, caused by schistosome parasites transmitted by aquatic snails. While treatable with praziquantel, mass drug administration alone is insufficient for disease control, requiring intervention at the snail vector stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C7-C11 provide well-established background on schistosomiasis epidemiology and transmission, supported by appropriate citations to the literature. These claims establish the disease context and rationale for studying snail-parasite interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "a2d8b290-d10c-4ee0-a12e-e2769c6b8ea0",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Parasite resistance in snails is highly heritable with substantial strain-by-strain interactions between hosts and parasites. Genetically diverse parasite cultures can infect nearly all snails while bottlenecked strains infect only subsets, suggesting large-effect resistance genes exist in snails.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 are well-supported by multiple citations documenting the genetic basis of resistance and strain-specific interactions. These establish the theoretical framework for identifying large-effect resistance loci.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "0d190825-86de-4d05-8920-8bcf1fea1a86",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The B. glabrata reference genome (916 Mb, N50=48 kb) remains poorly assembled. Four genomic regions influencing S. mansoni resistance have been identified, including a BS-90 RAPD marker on LG XII, but sod1 and RADres together explain only 7% of resistance variance in population 13-16-R1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 accurately describe prior genomic resources and known resistance loci, supported by appropriate citations. The limited variance explained by known loci (C22) provides clear justification for the current genome-wide association study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "32e87871-788d-406e-af2b-278f975ddce7",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Guadeloupe Resistance Complex (GRC, also known as PTC1) shows an 8-fold effect on infection odds via a hemocyte-mediated mechanism. Seven clustered GRC genes encode hyperdiverse single-pass transmembrane proteins that appear to recognize parasite-associated molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26, C118 describe the previously characterized GRC locus, supported by multiple citations. This establishes precedent for polymorphic TM1 gene clusters mediating resistance and provides context for interpreting PTC2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "39ce2788-e674-445e-b104-b512cd95974a",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pooled whole-genome sequencing of 600 infected and 600 uninfected snails (298x and 333x coverage) identified a single 450 kb region on LG XII (PTC2) with the greatest allele frequency differences. FST at numerous PTC2 variants exceeds 0.1 (p<0.01 after correction), with many variants showing FST over 0.2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31, C110-C112 describe the genome-wide association study with appropriate sample sizes, coverage depths, and statistical significance testing including simulation-based correction for multiple testing. The experimental design and analysis appear sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "89958e76-ab52-4324-9081-7b321255bfa2",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual genotyping revealed three PTC2 alleles at intermediate frequencies (R: 44%, S1: 24%, S2: 32%). Infection rates varied dramatically by genotype: RR homozygotes showed 12.9% infection, S1S1 showed 75.3%, and S2S2 showed 29.6%, representing over 15-fold difference in infection odds. S1 shows weak partial dominance over R, while S2 acts additively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C41 present genotype-phenotype associations with appropriate statistical analysis (logistic regression, confidence intervals, p-values). The large effect size (>15-fold) is clearly demonstrated with adequate sample sizes and represents the strongest known association in this system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "6fb71b9b-9814-41fe-9b90-79ad7c91d707",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The PTC2 association was independently validated in 392 previously phenotyped snails (p=7\u00d710\u207b\u00b9\u00b2 for R vs. S1; p=4\u00d710\u207b\u2075 for R vs. S2). Multi-locus analysis showed PTC2, sod1, and RADres all have significant independent effects (p\u226410\u207b\u2074) with no evidence for epistasis (p>0.05 for interaction terms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 provide independent validation of the PTC2 signal and demonstrate its independence from other known loci through appropriate multi-locus regression analysis. The lack of epistasis is properly tested with interaction terms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "eed01beb-368c-4bb2-a173-3998483c86d6",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PTC2 shows a stronger association with infection odds than any other known B. glabrata locus. The BS-90 RAPD marker is 5 Mb and 23 cM from PTC2, and is predicted to be 17 cM (range 6-33 cM) from a causal locus, making PTC2 a plausible candidate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 appropriately compare PTC2's effect size to other loci and provide linkage evidence connecting it to the previously mapped BS-90 marker. The statistical inference about genetic distance appears reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "77d46eb0-b4a3-4c7e-a3b7-9953a26e36b0",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Three PacBio assemblies were generated from inbred snail lines homozygous for each PTC2 allele: homR (78x coverage, 15 SMRT cells), homS1 (58x coverage, 6 SMRT cells), and homS2 (46x coverage, 5 SMRT cells). 1489 homR contigs representing 635 Mb were assigned to linkage groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C117 describe the generation of high-quality long-read assemblies with appropriate coverage depths. The linkage group assignments are well-supported by mapped fragments. These assemblies represent a major improvement over the reference genome.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "80330d9d-892c-4950-ae5e-bb8641aec1c6",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PTC2 haplotypes show exceptional divergence: alignable regions average 3.3% nucleotide divergence, but only 12.9-40.0% of sequence can be aligned between haplotypes. All three haplotypes harbor unique multi-kilobase insertions containing complete genes, with each genotype carrying a distinct gene combination. This polymorphism level is unusually high for conspecific haplotypes, contrasting with 89.5% alignability and 0.4% divergence genome-wide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C56 document extraordinary structural and sequence variation at PTC2 using the new assemblies. The contrast with genome-wide patterns (C56) provides important context. The degree of divergence is well-quantified and appropriately characterized as exceptional.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "ac7f626c-0a84-4b67-8f05-5a609ef4b880",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RNA-Seq annotation revealed PTC2 contains eleven genes, eight of which are predicted TM1 genes (including all five shared among haplotypes). This TM1 enrichment is highly significant (p<10\u207b\u2075) given only 11% of B. glabrata genes are TM1. PTC2 TM1 genes are 166-530 codons with TM1 domains displaced from the N-terminus, showing amino acid divergence exceeding 50% in several cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 present thorough annotation of PTC2 genes with appropriate statistical testing of TM1 enrichment. The structural characterization of TM1 genes is well-documented. The high amino acid divergence is clearly demonstrated in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "408d79a1-ec84-488b-86cb-987a6616dab0",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Sequences similar to both R and S haplotypes are present in geographically diverse B. glabrata populations (Brazil, Guadeloupe), suggesting the polymorphism is old and co-occurs throughout the species range. Synonymous divergence exceeds nonsynonymous, with phylogenetic analysis showing 24% synonymous divergence from the midpoint root, consistent with ancient origin (~24 million years assuming neutral mutation rate of 10\u207b\u2078/year).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 provide phylogenetic evidence for ancient polymorphism using appropriate molecular evolutionary analyses. The presence of similar haplotypes in non-admixed populations (C65) supports the inference of old, widespread polymorphism. The molecular clock calculation (C70) is appropriately caveated with assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "1dfa503f-64a5-4ae3-bff2-51dc56525fe6",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PTC2 genes contain no known protein domains or homology outside gastropods (except the transmembrane segment) and are not homologous to GRC genes. Some PTC2 genes show homology to each other or nearby genes, but amino acid similarity among paralogs is low (<50%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 describe sequence homology analyses showing PTC2 genes are distinct from GRC and lack characterized domains. The low paralog similarity is well-documented. These findings support the novelty of PTC2 genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "a3b6b9e5-ad1a-47ae-aad7-305e50c2f7c3",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Both GRC and PTC2 suggest a model of snail-schistosome interaction via molecular recognition mediated by TM1 gene polymorphism. TM1 genes often play immunological recognition roles across metazoans. Unlike GRC's dominant resistance allele, all three PTC2 alleles differ in susceptibility with additive or partially dominant effects, suggesting multiple loci may jointly contribute to phenotype through interactions with different parasite molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C81 synthesize findings to propose a mechanistic model, appropriately supported by comparisons to known TM1 gene functions (C76-C78) and the observed genetic architecture (C79-C80). The inference about multiple contributing loci (C81) is reasonable given the allelic pattern but remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "7e82caf8-e544-4246-80b6-479c6a2c41bf",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The inferred ancient origin of PTC2 (>20 million years) is inconsistent with neutral coalescence, suggesting the polymorphism is adaptive. Adaptive introgression appears unlikely given three distinct haplotypes and allopatric distribution of B. glabrata's closest relatives in Africa. The most plausible explanation involves long-term balancing selection, potentially driven by other trematodes that have infected snails for millions of years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C89 present evolutionary interpretations appropriately supported by population genetic theory and biogeographic evidence. The elimination of introgression (C84-C85) is well-reasoned. The inference of balancing selection (C86) is the most parsimonious explanation, though alternative mechanisms cannot be definitively ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "9eb1aeb9-df0b-4b4e-8e0d-6d5547abee40",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Despite schistosomes castrating snails, wild populations show no universal resistance, suggesting the R haplotype is either parasite genotype-specific or has fitness costs. The R allele has persisted in laboratory population 13-16-R1 for decades without parasite challenge, indicating any fitness cost is weak or context-dependent. A system of polymorphic matching alleles could explain observed strain-by-strain compatibility patterns and dose-response curves fitting phenotype-matching models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C95 present reasonable evolutionary inferences about the maintenance of polymorphism, supported by observations of laboratory population dynamics (C92) and citations to matching-allele models (C94-C95). The logic connecting these observations is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "dcd41ba2-0f41-477f-9110-81e9eb01393b",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Similar patterns of structural polymorphism in resistance loci occur in other invertebrate systems: the Daphnia PR-locus shows haplotypes with >60 kb size differences and non-homologous sections, while Anopheles APL1 shows copy number variation and extreme diversity. Though invertebrates lack vertebrate acquired immunity, their defenses show similar molecular diversity, though increased immunogenetic sequences may not always increase resistance if parasites use them for host recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C100 appropriately contextualize PTC2 findings within broader invertebrate immunity literature, supported by relevant citations. The comparison highlights convergent evolution of structural polymorphism in resistance loci across taxa. The caveat about potential trade-offs (C100) is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    },
+    {
+      "id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4",
+      "content_id": "2761f970-be8f-459d-9d31-70c2d241ac5e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 implementation in gastropods will facilitate creating genetically modified snails with enhanced immunity, with TM1 clusters as excellent targets given their large effects. However, if host polymorphism is adaptive, it may not be readily replaced in natural populations, and gene-by-gene interactions could permit rapid parasite counter-evolution. While a single genetic change is unlikely to create universal resistance, successive changes could impact transmission patterns. Alternatively, TM1 proteins could be used to identify key schistosome invasion molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C109 discuss future applications and potential challenges. While C101-C102 are supported by citations about CRISPR technology, claims C103-C107 are largely speculative about potential obstacles and alternative approaches. C108-C109 make forward-looking statements about disease control applications that cannot be evaluated with current data. These represent reasonable hypotheses for future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:33:55.856265Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "68fed459-9c91-4788-b988-fffabf3e4de7",
+      "result_id": "478088f1-0020-4031-816d-0c0fa16cd9cc"
+    },
+    {
+      "claim_id": "130f2c22-96b2-469d-aa0e-f816d4e9528b",
+      "result_id": "478088f1-0020-4031-816d-0c0fa16cd9cc"
+    },
+    {
+      "claim_id": "c6088a27-246d-4f14-8406-c9f3706c7eed",
+      "result_id": "478088f1-0020-4031-816d-0c0fa16cd9cc"
+    },
+    {
+      "claim_id": "37c3e010-dcce-417a-8d35-ba3799671013",
+      "result_id": "478088f1-0020-4031-816d-0c0fa16cd9cc"
+    },
+    {
+      "claim_id": "6409a08b-7573-4bf9-bfde-e73b85c8704c",
+      "result_id": "478088f1-0020-4031-816d-0c0fa16cd9cc"
+    },
+    {
+      "claim_id": "ed1172a2-b084-452c-8666-8c5809e372aa",
+      "result_id": "478088f1-0020-4031-816d-0c0fa16cd9cc"
+    },
+    {
+      "claim_id": "03709795-d094-42ee-9304-81ad11adab14",
+      "result_id": "478088f1-0020-4031-816d-0c0fa16cd9cc"
+    },
+    {
+      "claim_id": "b49bc81b-4256-493d-9f4c-5945de53c96f",
+      "result_id": "a2d8b290-d10c-4ee0-a12e-e2769c6b8ea0"
+    },
+    {
+      "claim_id": "2e7d3030-d727-434c-9ffa-6a52f1acd433",
+      "result_id": "a2d8b290-d10c-4ee0-a12e-e2769c6b8ea0"
+    },
+    {
+      "claim_id": "4b608f9d-124b-41f1-ac97-125fd20e2395",
+      "result_id": "a2d8b290-d10c-4ee0-a12e-e2769c6b8ea0"
+    },
+    {
+      "claim_id": "3121f05b-1ef6-4c2f-b490-8ae383195e05",
+      "result_id": "a2d8b290-d10c-4ee0-a12e-e2769c6b8ea0"
+    },
+    {
+      "claim_id": "f3568ee0-ec1f-4e23-8533-8bf936ac4d64",
+      "result_id": "a2d8b290-d10c-4ee0-a12e-e2769c6b8ea0"
+    },
+    {
+      "claim_id": "8921c51f-e64a-4908-908d-d33de7688fe1",
+      "result_id": "0d190825-86de-4d05-8920-8bcf1fea1a86"
+    },
+    {
+      "claim_id": "529edcf9-c463-41dd-99df-3f1a57c2e159",
+      "result_id": "0d190825-86de-4d05-8920-8bcf1fea1a86"
+    },
+    {
+      "claim_id": "ad4fd2cc-8885-440a-ae31-12a4a8dba1d8",
+      "result_id": "0d190825-86de-4d05-8920-8bcf1fea1a86"
+    },
+    {
+      "claim_id": "11f26a85-f181-4cd2-a28c-b6f4416ff238",
+      "result_id": "0d190825-86de-4d05-8920-8bcf1fea1a86"
+    },
+    {
+      "claim_id": "f26a1ebd-82e2-4716-848a-c2e0c74450ba",
+      "result_id": "0d190825-86de-4d05-8920-8bcf1fea1a86"
+    },
+    {
+      "claim_id": "68ed9b11-bb20-460c-8828-c4ecb557b2a4",
+      "result_id": "0d190825-86de-4d05-8920-8bcf1fea1a86"
+    },
+    {
+      "claim_id": "0f7fdf89-9b38-4fe4-af62-d44c5df0b103",
+      "result_id": "32e87871-788d-406e-af2b-278f975ddce7"
+    },
+    {
+      "claim_id": "bcfb9f56-5df0-4f83-b794-6a75ed7eaeec",
+      "result_id": "32e87871-788d-406e-af2b-278f975ddce7"
+    },
+    {
+      "claim_id": "f66720ed-1fe4-44dc-b203-e9bb6e30f44e",
+      "result_id": "32e87871-788d-406e-af2b-278f975ddce7"
+    },
+    {
+      "claim_id": "0342acf2-80ab-4e48-8832-c319a17d845a",
+      "result_id": "32e87871-788d-406e-af2b-278f975ddce7"
+    },
+    {
+      "claim_id": "6dbab033-31e4-4a7b-ac14-894a5a8dc459",
+      "result_id": "32e87871-788d-406e-af2b-278f975ddce7"
+    },
+    {
+      "claim_id": "ff574e31-e8f8-42f7-aa35-1523484a5412",
+      "result_id": "39ce2788-e674-445e-b104-b512cd95974a"
+    },
+    {
+      "claim_id": "d2290adf-55b5-4d5c-9b0b-8d60a05812ef",
+      "result_id": "39ce2788-e674-445e-b104-b512cd95974a"
+    },
+    {
+      "claim_id": "99f84a1a-a55d-4409-b95c-ec11c7b7645d",
+      "result_id": "39ce2788-e674-445e-b104-b512cd95974a"
+    },
+    {
+      "claim_id": "a8a0c0f7-b7c1-444f-94f5-d12832fb1db5",
+      "result_id": "39ce2788-e674-445e-b104-b512cd95974a"
+    },
+    {
+      "claim_id": "9133957d-8220-4014-8760-044c4f616f5f",
+      "result_id": "39ce2788-e674-445e-b104-b512cd95974a"
+    },
+    {
+      "claim_id": "40bacde5-e5e5-47da-ab88-601e436d1342",
+      "result_id": "39ce2788-e674-445e-b104-b512cd95974a"
+    },
+    {
+      "claim_id": "9a45d29c-a680-4e79-8cb0-b4b64513ada2",
+      "result_id": "39ce2788-e674-445e-b104-b512cd95974a"
+    },
+    {
+      "claim_id": "fdf44753-78bc-48a0-ab64-51e4b1e5a86c",
+      "result_id": "39ce2788-e674-445e-b104-b512cd95974a"
+    },
+    {
+      "claim_id": "9abebd16-e6e6-4192-9c03-fe91a8b8dde2",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "5f85425e-5975-4079-b8fd-680da00d4162",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "e94ed6cf-1749-434e-9b01-b3e75bf6ce4f",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "f89d6827-3b4d-4254-8aa4-dd243e855446",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "e6b50bab-3a1c-4a68-bc6a-c12ccdf322c4",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "13d999db-bf72-4ecb-bd7f-91be153634d5",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "38926473-3bb1-435a-8670-a963021a6661",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "3f6115d6-8461-446a-a256-54e5020fd0ec",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "c36d68f3-4484-4cb6-a7cd-af1f85060ac2",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "52f0f1d5-8068-4cbb-9350-c20d6fef20c1",
+      "result_id": "89958e76-ab52-4324-9081-7b321255bfa2"
+    },
+    {
+      "claim_id": "9599ce99-b04e-4240-a8ff-087e395de73b",
+      "result_id": "6fb71b9b-9814-41fe-9b90-79ad7c91d707"
+    },
+    {
+      "claim_id": "d27097c3-913b-48f7-937d-7d25128a5a34",
+      "result_id": "6fb71b9b-9814-41fe-9b90-79ad7c91d707"
+    },
+    {
+      "claim_id": "d5d2c41a-c6e2-47d5-b8f8-4635557604df",
+      "result_id": "6fb71b9b-9814-41fe-9b90-79ad7c91d707"
+    },
+    {
+      "claim_id": "adb8a46a-6c72-431d-83fd-2868c5bb8457",
+      "result_id": "eed01beb-368c-4bb2-a173-3998483c86d6"
+    },
+    {
+      "claim_id": "af95f71c-7421-49ca-912b-8eb3a605a55b",
+      "result_id": "eed01beb-368c-4bb2-a173-3998483c86d6"
+    },
+    {
+      "claim_id": "8f4ff88e-7289-41d1-97af-987b9bdbff05",
+      "result_id": "eed01beb-368c-4bb2-a173-3998483c86d6"
+    },
+    {
+      "claim_id": "c2b2c35c-3817-4234-a42e-4f74f7ac4e98",
+      "result_id": "77d46eb0-b4a3-4c7e-a3b7-9953a26e36b0"
+    },
+    {
+      "claim_id": "75e09e30-39ad-4ab3-96d7-96e1c24f1bff",
+      "result_id": "77d46eb0-b4a3-4c7e-a3b7-9953a26e36b0"
+    },
+    {
+      "claim_id": "9fef7dac-f7de-4386-9a05-2fd1bcf1c5ab",
+      "result_id": "77d46eb0-b4a3-4c7e-a3b7-9953a26e36b0"
+    },
+    {
+      "claim_id": "f3bd9c17-956d-4b19-bb7e-ee2dde9355e2",
+      "result_id": "77d46eb0-b4a3-4c7e-a3b7-9953a26e36b0"
+    },
+    {
+      "claim_id": "139b90af-c781-4ca3-9541-e9524a2a3163",
+      "result_id": "77d46eb0-b4a3-4c7e-a3b7-9953a26e36b0"
+    },
+    {
+      "claim_id": "f2ad2949-55a0-4f57-8923-fd2dd410d337",
+      "result_id": "80330d9d-892c-4950-ae5e-bb8641aec1c6"
+    },
+    {
+      "claim_id": "de386294-28e3-404a-b02b-075677efa0e3",
+      "result_id": "80330d9d-892c-4950-ae5e-bb8641aec1c6"
+    },
+    {
+      "claim_id": "85390678-ce9b-41d3-9393-5c6fc03e90ff",
+      "result_id": "80330d9d-892c-4950-ae5e-bb8641aec1c6"
+    },
+    {
+      "claim_id": "90ba4f95-f896-4b28-bb62-b68ddf868ac7",
+      "result_id": "80330d9d-892c-4950-ae5e-bb8641aec1c6"
+    },
+    {
+      "claim_id": "b6930d7d-ad28-4963-b8df-7e062a964de1",
+      "result_id": "80330d9d-892c-4950-ae5e-bb8641aec1c6"
+    },
+    {
+      "claim_id": "4f434446-c44d-45bc-b9b7-44a7f4ab8fe2",
+      "result_id": "80330d9d-892c-4950-ae5e-bb8641aec1c6"
+    },
+    {
+      "claim_id": "e94f5c3e-3b94-426c-a55d-6a10294c9355",
+      "result_id": "80330d9d-892c-4950-ae5e-bb8641aec1c6"
+    },
+    {
+      "claim_id": "87d77406-e648-4fd2-8634-1506ae0ac3b5",
+      "result_id": "80330d9d-892c-4950-ae5e-bb8641aec1c6"
+    },
+    {
+      "claim_id": "ff3a0024-3f19-4c00-b788-6304e6f25afe",
+      "result_id": "80330d9d-892c-4950-ae5e-bb8641aec1c6"
+    },
+    {
+      "claim_id": "ea1c3c30-aaf9-4759-8095-136e000eed3c",
+      "result_id": "ac7f626c-0a84-4b67-8f05-5a609ef4b880"
+    },
+    {
+      "claim_id": "21e140f3-c403-4f92-9ffa-66c884cad860",
+      "result_id": "ac7f626c-0a84-4b67-8f05-5a609ef4b880"
+    },
+    {
+      "claim_id": "b10cbb38-b69b-4d37-8a31-14e327fe8c16",
+      "result_id": "ac7f626c-0a84-4b67-8f05-5a609ef4b880"
+    },
+    {
+      "claim_id": "6f370307-0577-4b30-8459-288e5bc20cd3",
+      "result_id": "ac7f626c-0a84-4b67-8f05-5a609ef4b880"
+    },
+    {
+      "claim_id": "a49525e1-5d4b-47ed-8686-632c1bac77a4",
+      "result_id": "ac7f626c-0a84-4b67-8f05-5a609ef4b880"
+    },
+    {
+      "claim_id": "0d97bc59-5764-49fa-becc-774308cc85ba",
+      "result_id": "ac7f626c-0a84-4b67-8f05-5a609ef4b880"
+    },
+    {
+      "claim_id": "405dd9af-e596-4fb0-b8fa-d1a203be51bc",
+      "result_id": "ac7f626c-0a84-4b67-8f05-5a609ef4b880"
+    },
+    {
+      "claim_id": "fe4938be-7478-40aa-baa2-cd98c0974b19",
+      "result_id": "ac7f626c-0a84-4b67-8f05-5a609ef4b880"
+    },
+    {
+      "claim_id": "0402b622-d7a8-441a-9580-07f4bd1a2859",
+      "result_id": "408d79a1-ec84-488b-86cb-987a6616dab0"
+    },
+    {
+      "claim_id": "52e9b77b-07a9-479b-8117-60b113d21dfc",
+      "result_id": "408d79a1-ec84-488b-86cb-987a6616dab0"
+    },
+    {
+      "claim_id": "af399cba-4f36-48a8-8410-1bc331bbc2ea",
+      "result_id": "408d79a1-ec84-488b-86cb-987a6616dab0"
+    },
+    {
+      "claim_id": "0d74ddf0-f2a1-48da-bc50-27992262f5b5",
+      "result_id": "408d79a1-ec84-488b-86cb-987a6616dab0"
+    },
+    {
+      "claim_id": "8580ed34-4963-4a0b-a7be-ac2b5d64295d",
+      "result_id": "408d79a1-ec84-488b-86cb-987a6616dab0"
+    },
+    {
+      "claim_id": "704c568f-b94e-40b8-b0d2-6e4275d8517e",
+      "result_id": "408d79a1-ec84-488b-86cb-987a6616dab0"
+    },
+    {
+      "claim_id": "d3d77b02-dab0-42ea-afad-56d1b3601986",
+      "result_id": "1dfa503f-64a5-4ae3-bff2-51dc56525fe6"
+    },
+    {
+      "claim_id": "fa301b56-0b3f-4ead-95e5-9c687d0dc55b",
+      "result_id": "1dfa503f-64a5-4ae3-bff2-51dc56525fe6"
+    },
+    {
+      "claim_id": "e62da0de-1584-4d96-a16c-5d1c4d0120fc",
+      "result_id": "1dfa503f-64a5-4ae3-bff2-51dc56525fe6"
+    },
+    {
+      "claim_id": "0341cf6c-91e5-414f-b917-63a5197cf6b1",
+      "result_id": "1dfa503f-64a5-4ae3-bff2-51dc56525fe6"
+    },
+    {
+      "claim_id": "c5f0efa1-f234-419c-a53b-45bacded4ea8",
+      "result_id": "a3b6b9e5-ad1a-47ae-aad7-305e50c2f7c3"
+    },
+    {
+      "claim_id": "9850cbc3-3fa6-4726-a18a-d5c245cf3fc3",
+      "result_id": "a3b6b9e5-ad1a-47ae-aad7-305e50c2f7c3"
+    },
+    {
+      "claim_id": "d83c6f7e-ddfc-4943-9410-a8b0fa1cb80a",
+      "result_id": "a3b6b9e5-ad1a-47ae-aad7-305e50c2f7c3"
+    },
+    {
+      "claim_id": "47f1de97-6ab6-4e5d-b995-07a796da6166",
+      "result_id": "a3b6b9e5-ad1a-47ae-aad7-305e50c2f7c3"
+    },
+    {
+      "claim_id": "ca90b667-074d-41b0-9485-06bf45242698",
+      "result_id": "a3b6b9e5-ad1a-47ae-aad7-305e50c2f7c3"
+    },
+    {
+      "claim_id": "4018706b-2610-419d-8be9-fbffbf31fd59",
+      "result_id": "a3b6b9e5-ad1a-47ae-aad7-305e50c2f7c3"
+    },
+    {
+      "claim_id": "b55ec32b-83fc-4f43-9501-b4aacdccee93",
+      "result_id": "a3b6b9e5-ad1a-47ae-aad7-305e50c2f7c3"
+    },
+    {
+      "claim_id": "a7e3696f-2c34-40d0-a530-29f49c72bcdc",
+      "result_id": "7e82caf8-e544-4246-80b6-479c6a2c41bf"
+    },
+    {
+      "claim_id": "210234b2-2980-4190-a53d-bd0fdd3c317b",
+      "result_id": "7e82caf8-e544-4246-80b6-479c6a2c41bf"
+    },
+    {
+      "claim_id": "f6655f99-5816-420d-b020-16dfef0c285a",
+      "result_id": "7e82caf8-e544-4246-80b6-479c6a2c41bf"
+    },
+    {
+      "claim_id": "ba34c278-ee1d-4b61-bd2c-07c20baf4344",
+      "result_id": "7e82caf8-e544-4246-80b6-479c6a2c41bf"
+    },
+    {
+      "claim_id": "649f707e-0228-4dc4-b8e9-44ece9aa4138",
+      "result_id": "7e82caf8-e544-4246-80b6-479c6a2c41bf"
+    },
+    {
+      "claim_id": "10a1f5ea-fc05-4060-b0e2-d3392240b72f",
+      "result_id": "7e82caf8-e544-4246-80b6-479c6a2c41bf"
+    },
+    {
+      "claim_id": "8354ef92-8902-4144-b1f7-b8bd9fc71fa1",
+      "result_id": "7e82caf8-e544-4246-80b6-479c6a2c41bf"
+    },
+    {
+      "claim_id": "1e6ffa34-bba0-429b-98a1-8cc5e40cf75c",
+      "result_id": "7e82caf8-e544-4246-80b6-479c6a2c41bf"
+    },
+    {
+      "claim_id": "0072fae5-4efc-48b0-a533-519d4026c5ff",
+      "result_id": "9eb1aeb9-df0b-4b4e-8e0d-6d5547abee40"
+    },
+    {
+      "claim_id": "0b3fc2b2-5a24-45e7-8295-639cb6247970",
+      "result_id": "9eb1aeb9-df0b-4b4e-8e0d-6d5547abee40"
+    },
+    {
+      "claim_id": "89512974-012c-40ae-86a7-e7882444802d",
+      "result_id": "9eb1aeb9-df0b-4b4e-8e0d-6d5547abee40"
+    },
+    {
+      "claim_id": "310c7867-e430-420c-bf73-a218f121d609",
+      "result_id": "9eb1aeb9-df0b-4b4e-8e0d-6d5547abee40"
+    },
+    {
+      "claim_id": "8b52f9d8-83aa-4f3d-b0c8-a9b2374ec29c",
+      "result_id": "9eb1aeb9-df0b-4b4e-8e0d-6d5547abee40"
+    },
+    {
+      "claim_id": "d36194f6-9056-40a4-87ee-aeaf7423abe9",
+      "result_id": "9eb1aeb9-df0b-4b4e-8e0d-6d5547abee40"
+    },
+    {
+      "claim_id": "b67d1e30-de3a-429f-8a7a-24ccecd98288",
+      "result_id": "dcd41ba2-0f41-477f-9110-81e9eb01393b"
+    },
+    {
+      "claim_id": "aa6a73c7-fe7f-4d39-aa81-fdfdf011869a",
+      "result_id": "dcd41ba2-0f41-477f-9110-81e9eb01393b"
+    },
+    {
+      "claim_id": "413f9592-0e6b-4417-8746-5e4bef65ebe1",
+      "result_id": "dcd41ba2-0f41-477f-9110-81e9eb01393b"
+    },
+    {
+      "claim_id": "8a6de0e9-218c-4abd-a12d-ea499c9ce4dc",
+      "result_id": "dcd41ba2-0f41-477f-9110-81e9eb01393b"
+    },
+    {
+      "claim_id": "13b61dd9-db2e-4c73-83a4-b66282723223",
+      "result_id": "dcd41ba2-0f41-477f-9110-81e9eb01393b"
+    },
+    {
+      "claim_id": "810f9332-666e-455e-9e25-d8ee4b572db4",
+      "result_id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4"
+    },
+    {
+      "claim_id": "b5397142-c6d7-44f0-9206-41915b2b580d",
+      "result_id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4"
+    },
+    {
+      "claim_id": "fd669238-6d3f-4d1e-9a66-8717b0cdcc0c",
+      "result_id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4"
+    },
+    {
+      "claim_id": "a126c695-339e-4f04-a4a7-914a866e968f",
+      "result_id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4"
+    },
+    {
+      "claim_id": "084428d9-46a1-49a7-9131-64ab674f4365",
+      "result_id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4"
+    },
+    {
+      "claim_id": "dd688aea-daa4-4ec9-8c19-89e94158ada7",
+      "result_id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4"
+    },
+    {
+      "claim_id": "604c46d1-4d5e-4e7b-8eff-940198afa460",
+      "result_id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4"
+    },
+    {
+      "claim_id": "45083fd6-d1a5-4280-8270-ca8dd8fcbb8a",
+      "result_id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4"
+    },
+    {
+      "claim_id": "d8422216-ddfe-487f-a177-2c2a2ac07f11",
+      "result_id": "a1cd77d5-b311-414c-819e-ed9d7d2ce9f4"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Mathematical modeling demonstrates that clusters of strongly cooperative ion channels form bistable conductances with hysteretic gating behavior. Mild cooperativity increases channel activity and steepens activation curves, while strong cooperativity causes the activation curve to 'bend over', leading to quasi-simultaneous opening/closing of all channels in a cluster with bimodal conductance distributions and drastically reduced switching rates (6 Hz vs 1000 Hz for independent channels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C27, C38-C39, C41-C44 collectively demonstrate the core mathematical finding through modeling and simulation data shown in Figures 1-2. The progression from mild to strong cooperativity is well-characterized, and the emergence of bistability with hysteresis is supported by both theoretical analysis (self-consistency relations) and stochastic simulations showing bimodal distributions and slow timescales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Cooperative channel clusters exhibit 'stickiness' where channels remain open after depolarizing pulses despite voltage returning to baseline, creating hysteresis that allows clusters to 'remember' voltage values from hundreds of milliseconds ago. This hysteresis arises from cluster bistability, with the voltage range determined by cluster size, channel coupling strength, and activation curve shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are well-supported by simulation data in Figure 2A showing persistent opening after voltage pulses and the voltage-conductance hysteresis loops. The mechanistic explanation linking hysteresis to bistability is logically sound and supported by mathematical analysis of the self-consistency relations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Clusters spontaneously switch states through channel noise-triggered gating avalanches that spread via cooperative coupling. In the center of the bistable range, both open and closed states are robust with mean residence times of seconds, while stability degrades at the range edges. Larger clusters with weaker coupling are more stable than small clusters with strong coupling due to reduced effective channel noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59, C61-C63 are supported by first passage time analysis and stochastic simulations shown in Figure 3. The mechanism of noise-triggered avalanches is demonstrated in Figure 3\u2014figure supplement 1. The quantitative predictions about cluster size effects on stability (Figure 3B) are derived from rigorous mathematical analysis of the Markov process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In a Hodgkin-Huxley neuron model extended with 100 clusters of cooperative channels conducting depolarizing current, low-amplitude stimulation fails to induce persistent firing, but sufficient firing rates during stimulation open clusters that remain open afterward, generating persistent activity. The persistent firing rate increases with stimulus amplitude as more clusters open, saturating at ~15 Hz when all clusters are open, and can be reset by hyperpolarizing pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 are well-supported by simulation data in Figure 4. The graded relationship between stimulus strength and persistent firing is clearly demonstrated (Figure 4C), and the mechanism through cluster opening is directly shown. The model design choices are reasonable and the simulations properly implement stochastic channel gating for cooperative channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The model's bistable range is centered at resting potential (-70 mV) for maximal stability, with borders (-90 to -50 mV) allowing response to spikes or inhibition. Slow channel kinetics (~100 ms) enable gradual cluster opening during high-frequency spiking (minimum ~20 Hz required), prevent further opening during low-frequency persistent activity, and provide robustness against noise-driven spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 describe design choices and emergent properties of the model that are well-justified and demonstrated in Figures 4 and 4\u2014figure supplements. The requirement for slow kinetics and high firing rates is logically explained and supported by simulations showing robustness to noise (Figure 4\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Bistable clusters can support 'inverse' persistent activity where hyperpolarization activates and depolarization silences persistent firing, achieved by using cooperative channels conducting hyperpolarizing current (like potassium channels) instead of depolarizing current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by simulation data in Figure 4\u2014figure supplement 1. The mechanism is a logical extension of the main model with reversed current polarity, and the simulations demonstrate the predicted behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "When subjected to repeated depolarizing pulses (analogous to Egorov et al. 2002 protocol), the model exhibits graded persistent activity with firing frequency increasing after each pulse (3-10 Hz range observed), remaining stable for at least one minute, with step-like increases in cluster conductance during pulses. Saturation occurs at 10 Hz when all clusters open, and hyperpolarizing pulses gradually reduce persistent firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are well-supported by simulation data in Figure 5A-B. The model successfully reproduces key features of experimentally observed graded persistent activity, with clear demonstration of the step-wise conductance increases underlying the graded firing rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "For graded persistent activity, slow channels are superior to fast channels because they enable gradual cluster opening during fast spiking while halting during slow spiking, maintaining stable persistent firing. Channel conductance must be at an intermediate level: sufficient to drive spiking but limited to provide maximal persistent firing of 10-15 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by systematic parameter exploration shown in Figure 5\u2014figure supplement 1. The analysis demonstrates that both too-fast kinetics and inappropriate conductance levels fail to produce graded persistent activity, validating the design constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Dynamic clamp experiments in three perirhinal cortex neurons (recorded without carbachol, with synaptic blockers) successfully induced graded persistent activity when cooperative channel dynamics were added. All cells exhibited persistent firing with graded increases after successive pulses and graded decreases with hyperpolarizing pulses. Control conditions with non-cooperative channels produced no persistent firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 are supported by experimental data in Figure 6 and Figure 6\u2014figure supplement 1. The experimental design is sound with appropriate controls (no carbachol, synaptic blockers, non-cooperative control condition). The n=3 is small but all cells showed consistent results, and the control experiments clearly demonstrate the requirement for cooperativity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "In dynamic clamp experiments, stimulation periods were followed by slow afterhyperpolarization (sAHP) in both control and cooperative conditions, creating a 3-4 s refractory period before persistent firing emerged. The persistent activity developed despite this intrinsic dynamic, which differs from carbachol-induced persistent activity where sAHP is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 describe an experimental observation that demonstrates robustness of the cooperative channel mechanism. The sAHP is documented in the recordings and the explanation regarding carbachol is appropriately cited. This shows the mechanism works even with additional intrinsic currents not in the simplified model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The experimental data support the hypothesis that cooperative ion channels can mediate cellular persistent activity. The persistent dynamics are robust and easily evoked without detailed knowledge of intrinsic cellular properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are reasonable conclusions from the dynamic clamp experiments (C99-C110). The successful induction of persistent activity in all three tested neurons with different intrinsic properties supports the robustness claim, though the small sample size limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Cooperativity acts as strong auto-feedback enabling clusters to function as bistable macrochannels with voltage memory. Two criteria detect strong coupling: bimodal conductance distributions and gating hysteresis. Experimental evidence from cardiac calcium channels shows some clusters are bistable despite weak coupling in most clusters. Small clusters exhibit robust hysteresis suitable for neuronal memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 synthesize the main findings and connect to experimental literature. The criteria for detecting strong coupling (C117) follow logically from the modeling results. The interpretation of Navedo et al. 2010 data (C118-C119) is reasonable, and the conclusion about small clusters (C120) is supported by the noise analysis in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Cooperativity is inherently local and restricted to small channel assemblies. In small clusters, channel noise becomes prominent (unlike all-to-all coupling models), and cluster state lifetimes decrease with cluster size. However, experimentally observed cluster sizes of ~10 channels suffice for seconds-long memory, and ensembles of small clusters provide more versatile responses and larger memory capacity than single large clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 are well-supported by the noise analysis and comparison with previous models. The prediction about cluster size effects (C123) is validated by Figure 3B, and the conclusion about ~10 channels being sufficient (C124) is supported by the quantitative analysis with appropriate citation to experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "For persistent activity, cooperative channels should have a bistable range encompassing resting potential with borders setting switching voltages, and slow time constants (50-100 ms) matching maximal persistent firing frequency. Slow kinetics enable gradual cluster opening during stimulation, prevent excitation during persistence, and provide robustness against noise. Fast kinetics would open all clusters with one spike, allowing only one persistent state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 are predictions well-supported by the modeling analysis in Figures 3-5 and supplements. These design principles are logically derived from the model behavior and validated through parameter explorations showing failure modes when these conditions are violated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The ion type conducted by cooperative channels is less constrained\u2014both depolarizing (calcium) and hyperpolarizing (potassium) channels can mediate persistent activity. Depolarizing channels produce persistent activity after strong spiking (as in entorhinal cortex), while hyperpolarizing channels produce activity after hyperpolarization (as in prefrontal cortex). Cooperative channels should be separate from spike-generating channels to prevent interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 are supported by simulations in Figure 4\u2014figure supplement 1 and logical reasoning. The connections to different experimental observations (C132-C133) are appropriately cited and the mechanistic explanation for separation (C135) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "It is unknown whether neurons with graded persistent activity express cooperative channels. However, cooperative CaV1.3 in hippocampus provides persistent currents and increases firing rates. TRPC channels cluster appropriately for cooperativity but recent evidence shows they're not required for entorhinal persistent activity. Only a small fraction of channels need be cooperative, potentially making them easy to overlook.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C141 accurately characterize the state of experimental knowledge with appropriate citations. The acknowledgment of uncertainty (C136, C140) is appropriate, and the discussion of candidate channels (C137-C139) is balanced with both supporting and contradicting evidence cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Cooperativity shares positive feedback with calcium-modulated conductance models but differs in having direct (not indirect) feedback. Calcium modulation requires spiking for memory while cooperative clusters could implement silent memory, though extended calcium models can also produce silent memories. Calcium modulation naturally explains effects of calcium channel blockers and buffering, while for cooperativity this suggests calcium-regulated coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C148 provide a fair comparison with alternative mechanisms, appropriately citing relevant literature. The distinctions drawn (C143, C145) are logical, and the discussion acknowledges where mechanisms overlap (C146) and where cooperativity would need additional assumptions (C148).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Cooperative channels offer computational flexibility for on-demand memory. Bistability only emerges with strong coupling and sufficient cluster size, enabling regulatory control through modulating coupling strength (as in calcium-regulated cooperativity) or controlling channel clustering (subject to neural activity, pH, ionic concentrations, and lipid signaling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C155 are largely speculative about regulatory mechanisms (C152, C154-C155). While the basic principle (C153) is supported by the modeling, the specific regulatory mechanisms proposed are hypothetical and would require experimental validation. The citations support that clustering can be regulated but not that this specifically controls bistability in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The emergence of memory in clusters of memoryless channels suggests a general role for cooperativity: dynamically building functionally rich macrochannels from simpler components. This broadens neurons' computational repertoire and could enable direct feedback loops between channels to create novel gating dynamics. If neuromodulation can control cooperativity, this provides a versatile cell-intrinsic mechanism to regulate neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C158, C162-C163 are well-supported conclusions from the study's findings. Claims C164-C165 are more speculative about broader implications but are reasonable extrapolations. The general principle about emergent properties from cooperativity is solidly demonstrated by the work.",
+    "result_type": "MAJOR"
+  }
+]

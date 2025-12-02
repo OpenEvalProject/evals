@@ -1,0 +1,479 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors performed parallel global profiling experiments (RNA-Seq, Ribo-Seq, proteomics, and phosphoproteomics) on Arabidopsis seedlings treated with glucose to activate TOR or glucose plus Torin2 to inhibit TOR. They quantified transcripts from 19,087 genes, ribosome footprints from 14,010 genes, peptides from 2,814 proteins, and phosphopeptides from 657 phosphoproteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 describe the experimental design and quantification results. The methodology is clearly described with appropriate controls (mock vs. Torin2 treatment), and the scale of data collection is substantial. The experimental approach is standard for multi-omics profiling studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "TOR inhibition by Torin2 treatment broadly suppresses transcription of cytosolic and mitochondrial ribosomal protein (RP) mRNAs within 2 hours. Specifically, 197 of 217 detected cytosolic RP genes (91%) and 34 of 91 mitochondrial RP genes (37%) were significantly downregulated, while only 1 of 63 chloroplast RP genes was affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 are well-supported by RNA-Seq data shown in Figure 1B. The statistical analysis using MapMan with Benjamini-Yekutieli correction is appropriate. The differential effects on cytosolic/mitochondrial vs. chloroplast RP genes is a striking and well-documented finding with clear quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "TOR inhibition affects multiple additional transcriptional programs beyond ribosomal proteins, including repression of translation factors, mitochondrial biogenesis, cell wall proteins, and nuclear transport components, alongside induction of protein catabolism and stress response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by RNA-Seq data in Figure 1C and Supplementary files. The MapMan categorical analysis with appropriate statistical corrections provides robust evidence for these broad transcriptional changes. The findings are consistent with known TOR functions in coordinating anabolic and catabolic processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Ribosome profiling revealed that TOR inhibition causes translational repression of 265 transcripts, most significantly affecting ribosomal protein mRNAs and photosynthesis-associated genes. Notably, 24 chloroplast-encoded mRNAs showed decreased translation efficiency, indicating TOR promotes translation within chloroplasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by Ribo-Seq data in Figure 1D. The use of RiboTaper for periodicity analysis and calculation of translation efficiency (TE) is appropriate. The finding that TOR regulates chloroplast translation (C61) is a novel inference well-supported by the data, though the mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Proteomics analysis detected 331 proteins with significant abundance changes after Torin2 treatment, including a statistically significant 1.2-fold decrease in 20 of 116 detected ribosomal proteins. The modest fold-changes are attributed to longer protein half-lives compared to mRNA half-lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by proteomics data in Figure 1E. The explanation for small fold-changes (C63) based on protein vs. mRNA half-lives is reasonable and supported by citations. However, the 2-hour timepoint may be too short to observe larger protein-level changes, which could be addressed with longer time courses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Phosphoproteomics identified 85 TOR-sensitive phosphoproteins, with 80% showing decreased phosphorylation after Torin2 treatment. The strongest effect was complete loss of eS6b-Ser240 phosphorylation, a canonical TOR-S6K target, validating the experimental approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are well-supported by phosphoproteomics data in Figures 2A-C. The detection of eS6b dephosphorylation (C69-C70) serves as an excellent positive control, as this is a well-established TOR substrate. The statistical analysis and data presentation are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Eight phosphoproteins overlapped between the current seedling phosphoproteome and a published TOR-regulated cell suspension culture phosphoproteome, including eS6b, LARP1, eIF4B1, CBE1, PUX5 (decreased phosphorylation) and eIF4G, PHOS32, At4g28300 (increased phosphorylation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 provide important validation by comparing with independent published data (Van Leene et al., 2019). The overlap of 8 targets between different experimental systems strengthens confidence in the findings, though the limited overlap also suggests context-dependent TOR signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Comparison with ATM/ATR-dependent phosphoproteins showed minimal overlap (9 of 108 phosphoproteins detected, none significantly inhibited by Torin2), supporting the specificity of Torin2 for TOR under the experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 address an important control for Torin2 specificity. The lack of overlap with ATM/ATR targets supports TOR-specific effects, though this analysis relies on published data from different conditions (irradiation-induced DNA damage). The conclusion (C76) is reasonable but could be strengthened with direct ATM/ATR activity assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The TOR-sensitive phosphoproteome is enriched for ribosome biogenesis proteins (8.6-fold overrepresentation, p<0.01), including multiple ribosomal proteins (eS6b, uL18a, uL10b, P2b, P3a, RPD1/Mrt4, uL30a) and nucleolar proteins (GAR2-Like, nucleolin) with altered phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C86 are supported by PANTHER GO enrichment analysis and phosphoproteomics data in Figure 2F. The statistical enrichment is significant and the identification of specific phosphorylation sites is well-documented. The evolutionary conservation analysis of uL18a-Ser131 (C85) adds valuable context, though functional significance remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "RNA-binding proteins are enriched in the TOR-sensitive phosphoproteome (5.3-fold overrepresentation, p<10\u207b\u2075), particularly splicing factors (9.5-fold overrepresentation, p<0.05). Seven splicing factors (RBM25, SE, RS40, RS41, BTR1L, DOT2, FIP1) were dephosphorylated while SC35 was hyperphosphorylated upon TOR inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by PANTHER GO enrichment analysis and phosphoproteomics data. The statistical enrichments are significant and the identification of specific proteins is clear. This suggests TOR regulates RNA processing, though the functional consequences of these phosphorylation changes require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Translation initiation factors are enriched in the TOR-sensitive phosphoproteome, with eIF5B1, eIF4B1, CBE1, and LARP1a showing decreased phosphorylation and eIF4G showing increased phosphorylation. This suggests TOR regulates mRNA expression through multiple distinct signaling axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by phosphoproteomics data in Figures 2A and 2E. The identification of multiple translation factors is clear, and the inference about multiple signaling axes (C95-C96) is reasonable given the diversity of affected proteins. However, the functional significance of these phosphorylation changes requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "RAPTOR1 Thr912 and Ser916 phosphorylation decreased after Torin2 treatment. These residues are conserved in land plants but not other eukaryotes, suggesting TORC1 may regulate its own activity through RAPTOR1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 are supported by phosphoproteomics data and sequence alignment (Figure 2D). However, C99 is speculative\u2014the authors acknowledge that further studies are needed to determine if RAPTOR1 is a direct TOR substrate and how these phosphorylations affect TORC1 activity. The functional significance remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "TOPLESS Thr286 and Ser214 phosphorylation decreased after Torin2 treatment. TOPLESS is a transcriptional co-repressor that interacts with auxin, jasmonate, and brassinosteroid signaling pathways. These phosphosites show distinct evolutionary conservation patterns in land plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are supported by phosphoproteomics data (Figures 2B-C) and sequence alignments (Figure 2D). The identification of TOPLESS as a TOR-sensitive phosphoprotein is novel and well-documented. However, the functional consequences of these phosphorylation changes on TOPLESS activity and hormone signaling require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "TOR regulates phosphorylation of actin-binding proteins VLN2 and VLN3 at conserved C-terminal sites. This connects to previous findings that TOR regulates actin organization in plants, potentially through multiple mechanisms including VILLIN phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C116 are supported by phosphoproteomics data (Figure 2) and integration with published literature on TOR-actin connections. The identification of VLN2/VLN3 as TOR-sensitive phosphoproteins is novel (C107, C115), while C108-C114 provide appropriate context from prior work. However, the functional significance of VLN2/VLN3 phosphorylation requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "larp1 mutants exhibit growth defects including 36% shorter roots, reduced secondary root number, and smaller leaves compared to wild-type plants under standard growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are well-supported by phenotypic measurements shown in Figures 3A-E with appropriate statistical analysis (t-tests, p<0.05 or p<0.001). The sample sizes are adequate (n=10-32) and the measurements are quantitative. This establishes that LARP1 contributes to normal plant growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "Free amino acid levels were similar between larp1 and wild-type shoots except for a 38% increase in alanine in larp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 is supported by amino acid quantification data in Figure 3F with appropriate replication (n=4). The lack of broad amino acid changes suggests the growth defect is not due to general protein synthesis deficiency, though the specific increase in alanine warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Total chlorophyll levels were significantly lower in larp1 mutants regardless of Torin2 treatment. In wild-type, Torin2 caused a slight decrease in chlorophyll, but this effect was absent in larp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 are supported by chlorophyll quantification in Figure 3G with appropriate statistics (n>4, p<0.001-0.01). The loss of Torin2 response in larp1 (C124) suggests LARP1 mediates some TOR effects on chloroplast physiology, though the mechanism is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "RNA-Seq in larp1 mutants revealed significant repression of photosynthesis genes (especially pETC components), E3 ubiquitin ligases, biotic stress responses, and cell wall glycoproteins, alongside induction of glucosinolate biosynthesis, chaperones, cytoskeleton, lipid metabolism, flavonoids, and cell-cycle genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by RNA-Seq data in Figure 4A with appropriate MapMan analysis and statistical corrections. The photosynthesis defect (C125-C126) correlates with reduced chlorophyll (C122). The broad transcriptional changes indicate LARP1 has pleiotropic effects on plant physiology beyond translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "larp1 mutants showed largely similar transcriptional responses to Torin2 as wild-type, including repression of ribosome biogenesis, nuclear transport, cell wall biosynthesis, and cell-cycle genes, plus induction of protein catabolism, stress responses, chaperones, and receptor kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 is supported by RNA-Seq data in Figure 4D. This demonstrates that LARP1 is not required for all TOR-mediated transcriptional responses, suggesting TOR acts through multiple parallel pathways. However, quantitative comparison of effect sizes between genotypes would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Ribo-Seq revealed 835 transcripts with altered translation efficiency in larp1 vs. wild-type, including reduced translation of kinesins, chromatin modifiers, and translation factors. Torin2 affected 239 transcripts in larp1, including broad repression of cytosolic RP mRNAs, demonstrating LARP1 is not required for all TOR effects on translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 are supported by Ribo-Seq data in Figures 4C and 4E. The finding that Torin2 still represses RP mRNA translation in larp1 (C133) is important, demonstrating LARP1-independent TOR effects. However, the magnitude of effects should be compared quantitatively between genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Phosphoproteomics revealed 96 differentially phosphorylated proteins in larp1 vs. wild-type, with 36 overlapping the TOR-sensitive phosphoproteome (p<10\u207b\u00b9\u00b9). Remarkably, 35 of 36 showed the same directional changes as Torin2 treatment. Western blots confirmed reduced S6K-pT449/S6K ratios in larp1, indicating LARP1 is required to maintain high TOR activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 are strongly supported by phosphoproteomics data (Figure 4F) and Western blots (Figure 4G). The statistical enrichment of overlap (C136) and directional concordance (C137) provide compelling evidence that larp1 mutants have reduced TOR activity. The Western blot validation (C138) strengthens this conclusion. This is a key finding linking LARP1 to TOR signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "TOPscore analysis of 9,143 genes revealed median score of 1.3 (90% range: 0.38-4.3). Genes involved in RNA biosynthesis (especially C2C2 Zn finger transcription factors) and nucleocytoplasmic transport have higher TOPscores, while cell wall remodeling, glycosyltransferases, and lignin biosynthesis genes have lower TOPscores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C146 are supported by TOPscore calculations from TSS-Seq data and MapMan analysis in Figure 5E. The methodology is clearly described and appropriate. The categorical differences in TOPscores suggest functional organization of 5\u2032TOP regulation, though the biological significance of these patterns requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Genes translationally repressed by Torin2 in wild-type have significantly higher TOPscores (median 2.0) than all genes (median 1.4, p<0.01). This effect is LARP1-dependent: in larp1 mutants, Torin2-repressed genes have lower TOPscores (median 1.0, p<0.01). This demonstrates the TOR-LARP1-5\u2032TOP signaling axis is conserved in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 are strongly supported by integrated analysis of TOPscores and Ribo-Seq data in Figure 5F with appropriate statistics (Mann-Whitney U tests). The loss of correlation in larp1 (C150) provides compelling evidence for LARP1-dependent 5\u2032TOP regulation. The conclusion about conservation (C152) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Comparative analysis identified conserved 5\u2032TOP mRNAs between Arabidopsis and humans, including PABPs, eEF1 subunits, importins/karyopherins, TCTP1, hnRNPs, and some cytosolic RPs (RACK1, uS8, eS10, uS17, eS25, uL30). Over one-third (12/35) of non-RP human core 5\u2032TOP mRNAs are conserved in Arabidopsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 are supported by comparative analysis integrating Arabidopsis data with published human 5\u2032TOP mRNAs (Philippe et al., 2020). The identification of conserved 5\u2032TOP mRNAs is rigorous, using three criteria: high TOPscore, Torin2-sensitive TE, and LARP1-dependence. This reveals ancestral TOR-LARP1-5\u2032TOP functions beyond RP regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Importin/karyopherin mRNAs are regulated by TOR-LARP1-5\u2032TOP signaling in both plants and humans. In Arabidopsis, IMB1 is a high-confidence 5\u2032TOP mRNA (TOPscore 3.02) and importins have median TOPscore of 2.8. The authors hypothesize this coordinates importin translation with ribosome biogenesis to support RP nuclear import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C164 are supported by TOPscore and Ribo-Seq data. The hypothesis (C165) is reasonable given that importins are required for RP nuclear import, but remains speculative without functional validation. The evolutionary conservation of this regulation is notable and suggests fundamental importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Reanalysis of human data identified potential new 5\u2032TOP mRNAs encoding mitochondrial RPs (HsMRPS27, HsMRPS30) that were missed by stringent statistical criteria but show high TOPscores, Torin-sensitive translation, and LARP1-dependence similar to Arabidopsis mitochondrial RP mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C169 are supported by reanalysis of published human data (Philippe et al., 2020) informed by Arabidopsis findings. This demonstrates the value of comparative evolutionary analysis for identifying conserved regulatory mechanisms. However, the human mitochondrial RP findings (C167-C169) would benefit from experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C170",
+      "C171"
+    ],
+    "result": "Newly identified plant 5\u2032TOP mRNAs include both plant-specific genes (cell wall biosynthesis, phytohormone signaling, chloroplast physiology) and broadly conserved genes (chromatin remodeling, ribosome biogenesis, RNA interference, vesicle trafficking).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C171 are supported by analysis of high-confidence 5\u2032TOP mRNAs in Supplementary file 10 and Figure 5G. This demonstrates both conservation and lineage-specific evolution of TOR-LARP1-5\u2032TOP targets, supporting the authors' exaptation hypothesis. However, functional validation of these novel targets is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Multiple auxin signaling genes are regulated by TOR-LARP1-5\u2032TOP signaling, including PIN2 (TOPscore 4.7), IAA26 (TOPscore 5.5), and BIG GRAIN1 (TOPscore 2.9), all showing Torin2-sensitive, LARP1-dependent translation. Four of five expressed PIN genes have TOPscores >3.5 (top 10th percentile).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C176 are supported by TOPscore and Ribo-Seq data. The identification of auxin signaling genes as 5\u2032TOP mRNAs is novel and suggests TOR-LARP1 regulation of hormone responses. However, C175-C176 use less stringent criteria, so these findings are more tentative and require validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Many ribosome biogenesis genes (RRN3, EFG1L, EH46, SWA1, RRP1L, NAP57, WDSOF1L, EBP2, eS1b, eS10a) are regulated by TOR-LARP1-5\u2032TOP signaling. The authors speculate this pathway regulated ribosome biogenesis in the last common ancestor of plants and animals, with direct RP mRNA control evolving later in vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C177 is well-supported by identification of multiple ribosome biogenesis 5\u2032TOP mRNAs. Claims C178-C179 are evolutionary speculations based on the data but are reasonable given: (1) conservation of non-RP 5\u2032TOP mRNAs, (2) LARP1 conservation predating 5\u2032TOP motifs in RP mRNAs, and (3) ribosome biogenesis 5\u2032TOP mRNAs in plants. However, these remain hypotheses requiring broader phylogenetic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C180",
+      "C181"
+    ],
+    "result": "PABP8 has two transcription start sites with different TOPscores (3.4 vs. 1.3), suggesting plants may modulate 5\u2032TOP regulation through alternative TSSs in response to developmental or physiological cues, similar to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C180 is supported by TSS-Seq data in Figures 5B and 5D showing alternative TSSs for PABP8. However, C181 is speculative\u2014the authors acknowledge insufficient data to determine if alternative TSSs regulate 5\u2032TOP mRNAs genome-wide in plants. This hypothesis requires systematic TSS-Seq analysis across multiple conditions.",
+    "result_type": "MINOR"
+  }
+]

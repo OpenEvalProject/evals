@@ -1,0 +1,493 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A phage-based immune llama VHH library was generated against the EPS15 EH1-3 domains (residues 1-314), yielding seven ELISA-positive clones representing three discrete families. Sequence analysis revealed the EH domains are ~32% identical and 50% similar to one another, and EPS15 residues 1-314 are ~60% identical and 77% similar to EPS15R residues 1-365. Pull-down assays demonstrated that Nb E_3 binds preferentially to EH3, while Nb E_142 and E_180 bind to multiple EH domains with Nb E_142 showing the highest apparent affinity and interacting with EH1, EH1+2, EH1-3, and EH2+3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C53 collectively describe the generation, characterization, and binding specificity of anti-EPS15 nanobodies. The sequence analysis (C33, C35, C36) and pull-down assay data (C42-C53) provide converging evidence for the binding properties of the three nanobody families, with appropriate experimental controls (GST alone) and multiple constructs tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "All seven anti-EPS15 nanobody clones contain a remarkable immunodominant Asn-Pro-Phe (NPF) tripeptide within the CDR3 region, a feature not found in any other characterized VHH clone except for some anti-Tulip virus X nanobodies. Since the majority of EH domain partners use NPF short linear motifs to bind EH domains, this strongly suggests the newly selected nanobodies bind to the functional interaction surface of the EH domain. A previously described anti-EPS15 nanobody lacking the NPF motif does not bind native EPS15 efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 describe a key structural feature of the nanobodies and its functional implications. The sequence analysis (C54, C55, C56) combined with established knowledge about EH domain binding (C57) and comparison to a control nanobody (C59-C61) provide strong support for the interpretation that these nanobodies are NPF-mimicking pseudoligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Site-directed mutagenesis replacing NPF with APA in Nb E_142 completely eliminates binding to GST-EPS15 (1-314), demonstrating the critical role of the NPF motif. While individual NPF motifs typically bind EH domains weakly (KD >100 \u03bcM), cyclized NPF peptides bind with ~10-fold higher affinity due to conformational rigidity. The structural constraints of the nanobody immunoglobulin fold and CDR3 loop likely similarly increase apparent affinity, with contributions from CDR1 and CDR2 also probable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 provide direct experimental evidence (mutagenesis, C62) and mechanistic interpretation based on established knowledge (C63-C65) for how the nanobodies achieve higher affinity than natural NPF peptides. The speculation about CDR1/CDR2 contributions (C66-C68) is appropriately qualified and reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In biochemical pull-down assays, immobilized GST-EPS15 (1-314) interacts with several NPF-harboring cytosolic partners from HeLa cell lysate in a dose-dependent manner, with apparent affinity correlating roughly with the number of NPF motifs (HRB: 5, DAB2: 5, epsin 1: 3, CALM: 2). HRB is the most avid binding partner, while CALM shows only limited binding. Nb E_142 is function-blocking, as supplementing lysate with equimolar Nb E_142 causes substantial loss of DAB2 and epsin 1 binding, while a fivefold molar excess produces near complete obstruction of HRB, DAB2, and epsin 1 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 describe competition experiments demonstrating the function-blocking activity of Nb E_142. The dose-dependent effects (C76, C77) and correlation with NPF motif number (C70) provide strong evidence for the mechanism of action. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "A W57A substitution in the EPS15 EH1 domain, which disrupts the canonical NPF interaction surface, abolishes Nb E_142 binding to GST-EPS15 (1-109) but has only a modest effect on binding to the larger GST-EPS15 (1-314) fusion. These data clearly indicate that Nb E_142 engages EH domains as an NPF-mimicking pseudoligand that contacts a conserved interaction site upon the canonical EH domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide mutagenesis data targeting a conserved residue in the NPF binding site. The differential effect on EH1 alone versus EH1-3 (C78, C79) is consistent with Nb E_142 binding to multiple EH domains, and the conclusion (C80) is well-supported by the combined mutagenesis and competition data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Both Nb E_3 and E_142 cross-react with GST-EPS15R (1-365), while the Nb E_142 (NPF\u2192APA) mutant does not, though Nb E_3 binding to EPS15R is comparatively weak. The biochemical data indicate that Nb E_142 is an orthosteric, function-blocking pseudoequivalent NPF ligand for the Eps15/R protein EH domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 demonstrate cross-reactivity with the paralogous EPS15R protein, consistent with the high sequence similarity between EPS15 and EPS15R EH domains. The NPF\u2192APA mutant control (C82) strengthens the conclusion that Nb E_142 functions as an NPF pseudoligand (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Nb E_142 does not interact appreciably with GST-intersectin 1 (1-312), indicating that additional non-NPF side chains must contribute to selective binding to EPS15/R EH domains, which likely accounts for the markedly higher apparent affinity over native NPF ligands. Since none of the anti-EPS15 nanobodies display acidic residues trailing the NPF in CDR3, it is improbable that Nb E_142 binds to other proteins with C-terminal EH domains like EHD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 demonstrate specificity of Nb E_142 for EPS15/R over intersectin 1, despite all containing EH domains. The inference about additional non-NPF contributions (C86, C87) is well-supported by the selectivity data, and the prediction about EHD1 (C88) is reasonable based on sequence analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Biochemical titrations show that using 2 \u03bcM Nb E_142 and varying immobilized GST-EPS15 (1-109/EH1) from 0.5 to 20 \u03bcM, saturation occurs at ~10 \u03bcM with half-maximal binding at ~3 \u03bcM. With GST-EPS15 (1-314/EH1-3), half-maximal binding is also ~2 \u03bcM. The similar apparent KD for both constructs indicates that binding to each EH domain is independent and of similar affinity. Thus, Nb E_142 binds to the EH domain with low micromolar affinity at physiological ionic strength, considerably better than a single endogenous NPF peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 provide quantitative binding data from titration experiments. The similar KD values for EH1 alone and EH1-3 (C91, C92) support independent binding to each domain. The comparison to natural NPF peptides (C93, C94) is appropriately supported by citations to established affinity values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Purified His6-tagged Nb E_142 bound to Ni-NTA-agarose efficiently immunoprecipitates Eps15 from K-562 cell lysates and rat brain cytosol, recognizing the native full-length protein. EPS15R is also quantitatively precipitated from K-562 lysate. Known EPS15/R interaction partners FCHO1, FCHO2, and AP-2 co-immunoprecipitate with EPS15/R, with recovery mirroring known differential affinities, while NPF-dependent EH domain binding partners like HRB do not co-precipitate, consistent with function-blocking nanobody activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 demonstrate that Nb E_142 is an immunoprecipitation-grade reagent that recognizes native EPS15/R. The selective co-immunoprecipitation of non-NPF-dependent partners (FCHO1/2, AP-2) but not NPF-dependent partners (HRB) (C99-C101) provides strong evidence for the function-blocking mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "When transiently transfected into HeLa cells, mNG-tagged Nb E_142 shows a diffuse intracellular distribution not substantially different from control mNG alone, distinct from the punctate pattern of endogenous EPS15. In fewer than half the transfected cells, small concentrations of mNG-Nb E_142 overlap some EPS15 puncta, and in some cells the intensity of EPS15 surface puncta is diminished. In adherent cell membrane cortices from sheared-off cells, dim mNG-Nb E_142 signal colocalizes with endogenous EPS15. These data suggest that in viable cells, EPS15/R deposited at clathrin coat assembly sites have EH domains locally occupied in a way that makes Nb E_142 binding unfavorable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 describe the unexpected poor labeling of clathrin-coated structures by monomeric mNG-Nb E_142 in living cells, contrasting with efficient binding in vitro. The interpretation (C107) that EH domains are occupied by endogenous partners at clathrin-coated structures is well-supported by the combined in vitro and in vivo data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "A tandem mNG-Nb E_142 \u00d7 3 protein construct labels punctate AP-2-positive structures at very low expression levels in HeLa cells, unlike the single Nb E_142 fusion. Since both constructs contain only a single mNG domain, the increased efficiency of EPS15/R labeling by the polyvalent reporter must signify better apparent affinity for the massed EH domains at clathrin-coat assembly sites. This indicates that through avidity-based phenomena, artificially grouped NPF-harboring nanobodies can compete in vivo with endogenous EH domain partner proteins deploying multiple NPF motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 provide strong evidence for avidity effects in EH domain binding. The comparison between monomeric and trimeric nanobody constructs (C108, C109) controls for fluorophore number and directly demonstrates the importance of multivalency, supporting the interpretation about avidity-based competition (C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Transient overexpression of control GFP-FYVE2 alone results in an enlarged endosome compartment but undisturbed EPS15 distribution at the cell surface. A C-terminal Nb E_142 extension to GFP-FYVE2 produces dramatic alteration in steady-state EPS15 positioning, with extensive colocalization on swollen endosomes and near complete disarrangement of EPS15 at plasma membrane puncta. This is explained by EPS15 cycling between membrane-assembled and cytosolic pools, with the endosome-bound Nb E_142 luring EPS15 from the soluble pool through concentrating/multivalency effects, titrating out available free EPS15 such that little is available for deposition at new clathrin bud sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 demonstrate successful intracellular sequestration of EPS15 using organelle-tethered nanobodies. The control (GFP-FYVE2 alone, C111) and experimental (GFP-FYVE2-Nb E_142, C112) comparison is appropriate, and the mechanistic interpretation (C113-C118) based on coat protein cycling is well-reasoned and consistent with established principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "A mitochondria-tethered Nb E_142 fusion produces near-quantitative intracellular redistribution of endogenous EPS15 in HeLa SS6 cells, with EPS15 puncta disappearing from the basal surface. Unlike GFP-FYVE2-Nb E_142 expression, the mitochondria-relocalized EPS15 does not elicit prominent AP-2 reorganization. Both Akap1-FRB-iRFP and Akap1-Nb E_142-iRFP-producing cells internalize transferrin despite the conspicuous difference in EPS15 positioning, though a small subpopulation shows suppressed internalization likely due to cell-cycle dependence or population heterogeneity rather than mitochondrial dysfunction. Overall, artificial spatial displacement of EPS15/R onto mitochondria does not severely disrupt short-term clathrin-mediated endocytosis in parental HeLa SS6 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C125 demonstrate that EPS15 sequestration on mitochondria in wild-type cells does not severely impair endocytosis. The appropriate controls (Akap1-FRB-iRFP, C119, C122) and functional assays (transferrin uptake, C122-C124) support the conclusion (C125). The interpretation of the small subpopulation with reduced uptake (C124) is reasonable and appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Novel HeLa cells rendered FCHO1/2- and EPS15R-null by successive TALEN-mediated gene editing were generated (clone #40). Three new triple-null lines exhibit indels within the targeted exon 5 region of the EPS15L1 gene and have no detectable EPS15R protein on immunoblots. The relative cellular abundance of EPS15, AP-2, and several other clathrin-mediated endocytosis components is not changed in clone #40 cells. However, these cells display morphologically abnormal clathrin-coated structures at steady state, with fewer, larger, and more clustered AP-2- and EPS15-positive clathrin assemblies on the ventral membrane compared to parental HeLa SS6 cells, implying FCHO1/2 and EPS15R play a significant role in bud site selection and maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 describe the generation and characterization of triple-null cells. The genetic validation (C127, C128), protein abundance analysis (C129), and morphological characterization (C130-C132) provide comprehensive evidence for the phenotype. The interpretation about bud site selection (C132) is appropriately qualified as an implication rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Both HeLa #64/1.E and clone #40 cells display defective clathrin-mediated endocytosis compared with parental HeLa SS6 cells. Although fluorescent transferrin is internalized into peripheral early endosomes in a 5 min pulse at 37\u00b0C, the extent is less than in HeLa SS6 cells. Instead, the majority of transferrin is bound to transferrin receptors diffusely situated over the plasma membrane. The data indicate slowed egress of the transferrin receptor from the cell surface for reentry into the endosomal compartment, leading to stalling and accumulation of endocytic cargo at the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 demonstrate functional defects in endocytosis in the genome-edited cells. The transferrin uptake assays (C134-C136) provide direct evidence for impaired internalization, and the interpretation about slowed receptor egress (C137) is well-supported by the observed accumulation of surface transferrin receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Transient expression of control Akap1-FRB-iRFP in HeLa clone #40 cells has no obvious effect on EPS15 subcellular patterning. In contrast, Akap1-Nb E_142-iRFP produces clear ectopic trapping of EPS15 on mitochondria with concomitant loss from the plasma membrane. In transfected clone #40 cells, AP-2 clusters at the surface are diminished in size and number in a manner correlating with the efficiency of EPS15 segregation at mitochondria, and the majority of remaining AP-2-positive puncta are populated with detectable endogenous EPS15. Thus, in this genetic background, stable membrane-associated AP-2 assemblies depend heavily on EPS15 for their generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 demonstrate a critical role for EPS15 in AP-2 assembly in the absence of FCHO1/2 and EPS15R. The appropriate control (Akap1-FRB-iRFP, C138) and the correlation between EPS15 sequestration and AP-2 loss (C140) provide strong evidence for the conclusion (C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Based on apparent affinity and cellular abundance, HRB, HRBL, and DAB2 are most likely the predominant interaction partners for EH domains at assembling clathrin-coated structures. In untransfected clone #40 cells, both EPS15 and HRB overlap at aberrant enlarged clathrin-coated structures, but in Akap1-Nb E_142-iRFP-expressing cells, neither protein is efficiently deposited on the plasma membrane. EPS15 is lured onto mitochondria but HRB is not, and EPS15 is associated with the few HRB puncta evident at the plasma membrane. Thus, in the presence of Akap1-Nb E_142-iRFP, HRB is essentially displaced into the soluble cytosolic compartment. These findings recapitulate the effect of combined EPS15 and EPS15R RNAi in parental HeLa clone #64/1.E cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C148 demonstrate that EPS15 sequestration leads to loss of HRB from clathrin-coated structures. The inference about predominant partners (C143) is appropriately based on affinity and abundance data. The observation that HRB is displaced to the cytosol (C145-C147) is consistent with the function-blocking activity of Nb E_142 and supports the model that EPS15 EH domains recruit HRB to clathrin-coated structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The defects in AP-2-containing clathrin-coated structures in Akap1-Nb E_142-iRFP-transfected clone #40 cells translate into clathrin-mediated endocytosis dysfunction. Loss of EPS15 from surface puncta by massing upon mitochondria has a strong inhibitory effect on transferrin uptake. The presence of small intracellular endosomes positive for fluorescent tracer is strongly decreased compared with neighboring untransfected cells, with quantitation showing the number of >0.2 \u03bcm\u00b2 transferrin-positive intracellular structures in untransfected cells is roughly double that of the EPS15-sequestered cell population. This inhibited internalization with mitochondria-appropriated EPS15 implies that FCHO1/2 and EPS15/R facilitate AP-2-dependent clathrin-mediated endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C153 demonstrate that EPS15 sequestration in the triple-null background severely impairs endocytosis. The quantitative analysis (C152) and appropriate controls (untransfected cells) provide strong evidence. The conclusion (C153) is well-supported by the combined structural and functional data in the genome-edited cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Ectopic expression of Akap1-Nb E_142-iRFP is unlikely to grossly perturb PtdIns(4,5)P2 levels based on proper plasma membrane deposition of endogenous AP-2 in transfected HeLa SS6 cells. Using the PLC\u03b41 PH domain as a biosensor, both Akap1-FRB-iRFP and Akap1-Nb E_142-iRFP-expressing cells show abundant plasma membrane PtdIns(4,5)P2 despite marked differences in EPS15 localization. These results reveal that despite plasma membrane PtdIns(4,5)P2, elevated surface transferrin receptor levels, and normal cellular AP-2 concentration, the absence of utilizable FCHO1/2 and EPS15/R pioneers in HeLa clone #40 cells is not compatible with widespread and stable AP-2 deposition at the cell surface and clathrin-coated structure assembly. The parallel decrease in AP-2 and HRB puncta supports the notion that EPS15/R EH domains play a key role in docking HRB at nascent coated buds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 demonstrate that the defects in AP-2 assembly are not due to PtdIns(4,5)P2 depletion. The PtdIns(4,5)P2 biosensor experiments (C156) provide direct evidence, and the conclusion (C157) is well-supported by the combined data showing that pioneers are required despite the presence of PtdIns(4,5)P2, AP-2, and cargo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Ectopic GFP-FCHO1 (1-609), containing the membrane-binding EFC/F-BAR domain and intrinsically disordered linker, can reconstitute the regularly dispersed clathrin-coated structure pattern at very low expression levels in clone #40 cells. Measurement of AP-2-positive puncta documents an overall shift to smaller, more numerous 0.2-0.6 \u03bcm\u00b2 structures. EPS15 is sequestered prominently by overexpressed Nb decoy on mitochondria, and little endogenous EPS15 is deposited with the corrected AP-2 in compact surface puncta. Thus, the normalizing effect of the FCHO1 linker is manifest largely in the absence of co-assembled EPS15. The FCHO1-corrected phenotype closely mirrors results in clone #64/1.E cells. These results verify that FCHO1/2 act epistatically to EPS15/R and demonstrate clearly that a major role of EPS15/R is normally to cooperate with full-length FCHO1/2 to bind to and activate AP-2 proteins at incipient clathrin-coated structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C167 provide strong evidence for epistasis between FCHO1/2 and EPS15/R. The rescue of AP-2 assembly by FCHO1 linker alone in the absence of EPS15 (C159-C162) is a key result demonstrating that FCHO1/2 can function independently of EPS15/R. The conclusion about epistasis and the role of EPS15/R (C166, C167) is well-supported by the rescue experiments and consistent with previous findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C168",
+      "C169"
+    ],
+    "result": "The G-Nb E_142-E3 plasmid, containing Nb E_142 fused to the XIAP E3 ligase RING domain, is highly effective in promoting degradation of EPS15 in transiently transfected cells positive for GFP, while the negative control parental GFE3 has negligible impact on EPS15 distribution. Effective elimination of EPS15/R by the tailored G-Nb E_142-E3 fusion protein still leaves AP-2 assembled at clathrin-coated sites on the plasma membrane of HeLa SS6 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C169 demonstrate an alternative approach to EPS15 depletion using targeted degradation. The appropriate control (GFE3 without Nb E_142) and the observation that AP-2 remains at clathrin-coated sites despite EPS15 depletion (C169) are consistent with the sequestration experiments and support the conclusion that EPS15 is not absolutely required for AP-2 localization in wild-type cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C170",
+      "C171"
+    ],
+    "result": "In-depth characterization of anti-EPS15 Nb E_142 shows this VHH is a versatile reagent functioning both in in vitro biochemical assays and as an effective intrabody in the reducing environment of the cell cytosol. Using new NPF motif-harboring llama nanobodies, it is demonstrated that during assembly the collective EH domains of EPS15 and EPS15R deposited at clathrin-coated structures appear poorly accessible, providing an important clue to EH domain occupancy during lattice assembly and sorting in light of the known modest KD for a single NPF\u2022EH domain interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C171 provide a summary of the key findings about the nanobody tool and its application to understanding EH domain occupancy. The conclusion about poor accessibility of EH domains at clathrin-coated structures (C171) is well-supported by the combined in vitro and in vivo data throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Clathrin coat inception depends on early-arriving proteins including Fcho1/2 and Eps15/R. Previous work using genome-edited cells described the role of the unstructured Fcho linker in stable AP-2 membrane deposition. The current study, expanding this strategy with new llama nanobodies against EPS15, shows an FCHO1/2-EPS15/R partnership plays a decisive role in coat initiation. A nanobody containing an Asn-Pro-Phe peptide within the CDR3 loop is a function-blocking pseudoligand for tandem EPS15/R EH domains. In living cells, EH domains at clathrin-coated structures are poorly accessible, indicating occupancy by endogenous NPF-bearing partners. Forcibly sequestering cytosolic EPS15 in genome-edited cells with nanobodies tethered to organelles has strong effects on clathrin coat structure and function by dictating the stability of AP-2 assemblies at the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 summarize the main findings of the study as presented in the abstract. These claims are well-supported by the detailed experimental data presented throughout the manuscript, including nanobody characterization, sequestration experiments, and functional assays in genome-edited cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The introduction provides established background knowledge about clathrin-mediated endocytosis, including its evolutionary conservation, the ordered deposition of coat components, the role of pioneer proteins (Eps15, AP-2, Fcho1/2), and the extensive protein-protein interaction network of Eps15. Eps15 is a fibrous protein oligomer that localizes to the vast majority of cell surface clathrin-coated structures, is positioned predominantly at the margins of assembling lattices, and binds physically to numerous coat components including AP-2, Fcho1/2, Dab2, epsin 1, Hrb, Numb, stonin 2, synaptojanin 1, and ubiquitin. Residence of Eps15 at clathrin bud sites is not solely dependent on AP-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C30 present established knowledge about clathrin-mediated endocytosis and Eps15, appropriately supported by numerous citations. These claims provide the necessary background context for the study and are not novel findings but rather well-established facts from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The results confirm and extend previous data showing that ectopic expression of the tandem EH domain module can inhibit clathrin-mediated endocytosis and that removal of EH2+EH3 from EPS15 prevents proper targeting to clathrin-coated structures. Studies in Drosophila, squid, and yeast support the critical role of EH domains in Eps15 localization and function. The poor labeling of clathrin-coated structures with mNG-Nb E_142 indicates that the EH domain module is locally occupied at assembly zones and that any monomeric Nb E_142 bound to incoming EPS15/R is promptly displaced by the forming EH network. A plausible explanation for the apparent discrepancy between in vitro and in vivo binding is an increase in effective membrane concentration of endogenous EH binding partners at nascent clathrin bud sites by two-dimensional partitioning and avidity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C185 place the current findings in the context of previous work and provide mechanistic interpretation. The comparison to prior studies (C172-C179) is appropriately supported by citations, and the mechanistic interpretation about EH domain occupancy and avidity effects (C180-C185) is well-reasoned and consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "The results from triple-null clone #40 cells expressing mitochondria-bound Nb E_142 illustrate that without FCHO1/2 and EPS15/R, coated assemblies do not form stably and clathrin-mediated endocytosis falters. The steady-state perdurance of clathrin-coated structures depends on EPS15 presence in clone #40 cells, albeit with abnormal morphology. In parental HeLa cells, loss of either FCHO1/2 or EPS15/R alone does not abolish uptake, indicating compensation and extensive redundancy in the pioneer interaction web. The experiments reveal that pioneers localized to the perimeter of clathrin-coated structures are generally necessary for inception of new clathrin-coated buds. The diminished AP-2 puncta in clone #40 cells highlights the supportive role the FCHO1/2-EPS15/R partnership plays in stabilizing active AP-2 at the cell surface. The strongest evidence for this model is the unmistakable reconstitution of apparently normal AP-2 puncta in the presence of membrane-tethered FCHO1 linker domain in clone #40 cells. Under normal circumstances, membrane-attached FCHO1/2 interacts with incoming EPS15/R through the \u03bcHD, steering AP-2-bound EPS15 to relay the heterotetramer to FCHO1/2 for local access to the activating linker. The dysregulation of transferrin receptor internalization in Eps15-/-/Eps15L1-/- mice is reminiscent of the phenotype of HeLa clone #40 cells with Nb E_142-mediated sequestration of EPS15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C210 provide a comprehensive discussion of the results in the context of the model for FCHO1/2-EPS15/R partnership in AP-2 activation. The discussion integrates the current findings with previous work and recent mouse model data (C208-C210), providing strong support for the proposed model. The mechanistic interpretation (C201-C205) is well-reasoned and consistent with the experimental data.",
+    "result_type": "MAJOR"
+  }
+]

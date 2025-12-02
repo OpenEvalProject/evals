@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors establish that the traditional morphological classification of melanoma TILs into brisk/non-brisk/absent patterns lacks functional validation. Morphology alone cannot determine T cell activation status, and exhausted T cells are morphologically indistinguishable from active ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C10 establish the background and motivation for the study. The morphological classification system is well-established (C1, C7 with citations), but its functional association has never been proven (C2). The key limitation that morphology cannot determine activation status (C8, C10) is well-supported by citations and logical reasoning about immune modulation (C9).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors demonstrate that brisk and non-brisk morphological patterns can be functionally sub-classified into active, transitional, or exhausted categories based on CD8+ T cell marker expression (CD69, OX40, TIM3, LAG3). Of 60 cores analyzed, 17 were active, 23 transitional, and 20 exhausted, with 11 of 21 patients showing intra-patient heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C13-C15 describe the core functional classification result. The methodology using PCA on activation/exhaustion markers (C13) is clearly described and visualized in Figure 2. The quantitative distribution of cores (C14) and patient heterogeneity (C15) are directly reported from the data. This represents a major finding that morphological and functional classifications are not equivalent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C16",
+      "C17"
+    ],
+    "result": "The functional classification (active/exhausted) shows improved prognostic value compared to morphological classification (brisk/non-brisk), with log-rank p-values of 0.079 vs 0.36 in the study cohort and validation in TCGA dataset (p=0.0082).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C16-C17 report improved prognostic performance, but the primary dataset result (p=0.079) does not reach statistical significance at conventional thresholds (p<0.05). While the TCGA validation (C17, p=0.0082) is significant, the deconvolution approach used to classify TCGA samples involves multiple computational steps and assumptions that may introduce uncertainty. The claim of 'improved' prognostic value is supported by trend but not definitively by statistical significance in the primary cohort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The functional classification correlates with spontaneous regression, with late regression showing significantly higher activation than early regression (p=0.022) and no regression (p=0.031). However, findings for Lentigo Maligna Melanoma are inconclusive due to small sample size (3 cores from 2 patients).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C18-C21 describe the association with regression. The statistical findings for late regression (C18) are significant and biologically coherent with the hypothesis that active TILs drive tumor regression. The negative result for early vs no regression (C19) is appropriately reported. The authors appropriately acknowledge the limitation regarding LMM (C20-C21), demonstrating scientific rigor. The correlation with late regression provides biological validation of the functional classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Brisk cases are significantly enriched in multiple immune cell populations including B cells (p=0.041), TIM3+cDC1 (p=0.024), macrophages (p=0.043), NK cells (p=0.011), anergic Tcy (p=0.039), and proliferating Tcy (p=0.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 report statistically significant enrichments in brisk cases shown in Figure 4B. All p-values are below 0.05. However, the finding that brisk cases contain both immune-stimulating cells (NK, proliferating Tcy) and potentially immune-suppressive cells (anergic Tcy, macrophages) suggests functional heterogeneity within the morphological category, supporting the main thesis that morphology alone is insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Active cores have higher percentages of active Tcy (p<0.001) and transitional Tcy (p=0.030), while exhausted cases have more TIM3+Tregs (p=0.018) and proliferating melanoma cells (p=0.045).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe functionally coherent differences between active and exhausted microenvironments shown in Figure 4C. All statistical tests show significance. The findings are biologically consistent: active environments have more activated T cells, while exhausted environments have more immunosuppressive Tregs and proliferating tumor cells (suggesting lack of immune control). This provides validation that the functional classification captures meaningful biological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Neighborhood analysis reveals that brisk cases have more Tcy in proximity to melanoma cells than non-brisk cases, with a higher ratio of active/transitional to exhausted Tcy (Active/Exhausted ratio: Brisk=2.11, Non-Brisk=1.33) and active to anergic Tcy (Active/Anergic ratio: Brisk=1.74, Non-Brisk=0.77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 describe spatial relationships from neighborhood analysis shown in Figure 5E. The quantitative ratios (C34-C35) demonstrate that brisk cases have functionally more favorable T cell compositions in contact with tumor cells. This provides spatial context explaining why brisk cases generally have better prognosis - not just more TILs, but more functionally active TILs in tumor contact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Active cases show stronger spatial association between active Th and active Tcy, which weakens in transition and disappears in exhausted cases. In active cases, TIM3+ macrophages interact with CD69+TIM3+ Th, and TIM3+ cDC1 interact with TIM3+ Tregs, possibly limiting Treg suppressive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe cell-cell interaction patterns from neighborhood analysis (Figure 5A-B). The spatial associations are quantitatively determined using permutation testing. The interpretation that cDC1-Treg interactions limit suppression (C63) is appropriately marked as speculative ('possibly'). The progressive loss of Th-Tcy interactions from active to exhausted provides mechanistic insight into functional state transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Late regression shows a network of activating interactions between active Tcy and Th with few suppressive interactions, while early regression shows disappearance of active Th-Tcy interactions and presence of B cell aggregates near T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 describe neighborhood analysis differences between regression stages (Figure 3C-D). The findings are consistent with the activation analysis showing late regression has higher activation levels. The complex network in early regression with B cell involvement suggests a transitional or less effective immune response, consistent with the heterogeneity observed in early regression (C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Comprehensive phenotypic characterization identified 47 functional cell populations including melanoma cells (41.76%), macrophages (11.48%), various T cell subsets (Tcy 11.19%, Th 10.10%, Treg 2.82%, Tfh 2.57%), dendritic cell subsets (cDC1 4.13%, cDC2 2.41%, Langerhans 2.13%, pDC 0.33%), and rare populations (NK 0.51%, B cells 0.12%). Within Tcy, functional subgroups were identified: active (16.1%), transition (29.6%), exhausted (12.8%), proliferating (6%), and anergic (34.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C59 provide detailed phenotypic characterization shown in Figure 4A. The percentages are directly measured from the multiplexed imaging data. The identification used consensus from three clustering methods (KMeans, PhenoGraph, ClusterX) with pathologist annotation, providing robustness. The authors appropriately note uncertainty about the 'anergic' population potentially representing naive T cells (C49). This comprehensive characterization enables the downstream neighborhood and functional analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Validation by qPCR and proteomics on metastatic melanomas confirmed functional heterogeneity: 4/8 brisk and 3/7 non-brisk metastases were functionally active. Proteomic analysis showed the IFN\u03b3-high sample had 324 proteins vs 93 (LAG3-high) and 134 (none), with 210 unique proteins enriched in inflammatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 provide orthogonal validation using different methods (qPCR, proteomics) on metastatic samples (Figure 2\u2014figure supplement 2). The qPCR confirms functional heterogeneity exists in metastases, not just primary tumors. The proteomic data (C67-C68) provides protein-level validation that IFN\u03b3-high samples have enriched inflammatory pathway proteins, supporting that the functional classification captures real biological differences. This multi-modal validation strengthens the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "OX40 strongly correlated with Ki-67 and PD-1, confirming its role in Tcy clonal expansion. No correlation was found between LAG3 and TIM3, potentially because LAG3 is expressed transiently during early T cell activation, while sustained LAG3 expression with other exhaustion markers leads to dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 interpret marker correlation patterns with appropriate citations (Huang et al. 2015, Andrews et al. 2017, Spranger et al. 2016). The lack of LAG3-TIM3 correlation (C70) is explained by biological mechanisms (C71-C72) supported by literature. This provides biological validation for the marker selection and interpretation used in the functional classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Only 15% of patients had all active cores and 30% had at least one active core. The authors speculate that since checkpoint inhibitor response rates are 15-30%, the 'mostly active' cases may correspond to immunotherapy responders, while 'mostly exhausted' cases may benefit from combination therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 report patient-level distributions from the data. However, C76-C78 are explicitly speculative (the authors state 'it is tempting to speculate'). The correlation between activation status percentages and response rates is circumstantial. The study cohort predates immunotherapy (C88), so no direct response data exists. While the speculation is reasonable and hypothesis-generating, it lacks direct evidence and would require prospective validation in immunotherapy-treated patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study analyzed 29 primary melanomas (6 brisk, 23 non-brisk; 24 SSM, 3 NM, 2 LMM) diagnosed 2005-2010 before immunotherapy era, yielding 60 TMA cores and 179,304 cells (74% of total) analyzed with 39 markers using MILAN technique, resulting in 47 functional cell populations. No significant differences in age, gender, or tumor location between Active and Exhausted groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C85-C95 describe the study cohort and methodology. The sample sizes, inclusion criteria, and technical details are clearly reported. The MILAN technique is validated by prior publications (C12 with citations). The lack of demographic differences between groups (C90-C92) is important for interpretation. The 74% cell inclusion rate (C94) after quality control is reasonable. These methodological details are essential for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The MILAN protocol allows detection of most antigens after 30 cycles with variation averaging 3.1% (range 0-12.3%) for repeated staining, <15% variation for 10-round multiplexing, and only 2-3% of antibodies becoming unreactive after single stripping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 describe technical validation of the MILAN method. The reproducibility metrics (C97-C99) are quantitatively reported with reference to prior publications. The variation levels are within acceptable ranges for multiplexed imaging. This technical validation is important for confidence in the 39-marker dataset, though the authors appropriately note this is based on prior work rather than new validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C79",
+      "C80"
+    ],
+    "result": "Background knowledge claims: Anti-PD-1 immunotherapy supports activated T cells; functional status of circulating inflammatory cells can change upon entering tumor sites; spontaneous melanoma regression occurs in 10-35% of melanomas and is considered the result of active TILs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C11, C79-C80 represent background knowledge supported by appropriate citations (Krieg et al. 2018, Buggert et al. 2018, Botella-Estrada et al. 2014). These establish the scientific context and rationale for the study. The citations appear appropriate and the claims are consistent with the immunology literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The detection of Langerhans cell-epithelium interactions in both functional groups served as positive control and proof of concept for the neighborhood analysis method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 describes an internal validation control for the neighborhood analysis. Langerhans cells are known to reside in epithelium, so detecting this interaction validates the method can identify expected biological relationships. This is appropriate methodological validation, though it would be strengthened by additional positive controls.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2222 @@
+{
+  "submission": {
+    "id": "f1285502-3796-4a19-859b-da252fd558cb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:49:52.041095Z",
+    "updated_at": "2025-12-02T18:49:52.041095Z"
+  },
+  "content": [
+    {
+      "id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "submission_id": "f1285502-3796-4a19-859b-da252fd558cb",
+      "content_type": "manuscript",
+      "content_text": "# Deciphering the neural signature of human cardiovascular regulation\n\n## Authors\n\n- Jorge Manuel<sup>1</sup> ([ORCID: 0000-0003-1983-1448](https://orcid.org/0000-0003-1983-1448)) \u2020\n- Natalia F\u00e4rber<sup>1</sup>\n- Darius A Gerlach<sup>2</sup> ([ORCID: 0000-0001-7044-6065](https://orcid.org/0000-0001-7044-6065))\n- Karsten Heusser<sup>2</sup> ([ORCID: 0000-0002-2571-5585](https://orcid.org/0000-0002-2571-5585))\n- Jens Jordan<sup>2</sup>\n- Jens Tank<sup>2</sup>\n- Florian Beissner<sup>1</sup> ([ORCID: 0000-0003-0513-7551](https://orcid.org/0000-0003-0513-7551))\n\n### Affiliations\n\n1. Somatosensory and Autonomic Therapy Research, Institute for Neuroradiology, Hannover Medical School Hanover Germany\n2. Institute of Aerospace Medicine, German Aerospace Center (DLR) Cologne Germany\n3. Chair of Aerospace Medicine, University of Cologne Cologne Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCardiovascular regulation is integral to life. Animal studies have identified both neural and endocrine pathways, by which the central nervous system adjusts cardiac output and peripheral vascular resistance to changing physiological demands. The outflow of these pathways is coordinated by various central nervous regions based on afferent information from baroreceptors, chemoreceptors, nociceptors, and circulating hormones, and is modulated by physiologic and behavioural state. In humans, however, knowledge on central cardiovascular regulation below the cortical level is scarce. Here, we show using functional MRI (fMRI) that at least three hypothalamic subsystems are involved in cardiovascular regulation in humans. The rhythmic behaviour of these systems corresponds to high and low frequency oscillations typically seen in blood pressure and heart rate variability.\n\n## Introduction\n\nGiven the importance of cardiovascular regulation for our daily survival, it is not surprising that the body has several redundant and mutually interacting systems for this task. Important representatives include the classical baroreceptor (arterial and cardiopulmonary) and chemoreceptor reflexes, neuroendocrine systems, like the vasopressin, sympatho-adrenal, renin-angiotensin-aldosterone, and the more recently discovered leptin-melanocortin system (Sawchenko and Swanson, 1981; Dampney, 1994; Hilzendeger et al., 2012; Salman, 2016).\n\nMuch of our present understanding of these systems stems from animals experiments, while mechanistic studies in humans remain scarce, mostly for lack of non-invasive methods to assess subcortical brain activity. Furthermore, most studies have evaluated only one system at a time. We must assume, however, that all neural and neuroendocrine cardiovascular control systems are carefully orchestrated by the central nervous system to achieve optimal regulation. The control centres responsible for such orchestration are presumed to be located in the brainstem and hypothalamus. They are well characterised for the \u2018textbook\u2019 baroreflex, but much less for the other systems.\n\nTo study cardiovascular regulation in human subjects, we devised an MR-compatible lower body negative pressure (LBNP) chamber that simulates orthostatic stress via footward blood volume displacement (Figure 1c;\u00a0Goswami et al., 2008). The pressure of \u221230 mmHg used in our experiment has been shown to recruit both neural and endocrine mechanisms of cardiovascular regulation via activation of cardiopulmonary and arterial baroreceptors (Loewy, 1981; Mark and Mancia, 1983;\u00a0Kimmerly et al., 2005;\u00a0Salman, 2016). While assessment of endocrine pathways requires invasive methods, neural cardiovascular regulation by the autonomic nervous system can be measured non-invasively as it leads to characteristic rhythms of heart rate and blood pressure variability (HRV, BPV). To assess these rhythmic changes, we recorded blood pressure and heart rate traces during the LBNP-fMRI measurements and subjected them to spectral analysis isolating two frequency bands: low frequency blood pressure variability (LFBPV, ~0.1 Hz), reflecting the so-called Mayer waves of sympathetic origin (Julien, 2006); and high frequency heart rate variability (HFHRV,~0.28 Hz) reflecting the primarily vagally mediated respiratory sinus arrhythmia (Billman, 2013). Note that both the LF and HF bands lie at the top or above the canonical frequency range of the BOLD signal (<0.1 Hz, Figure 1i); although several studies have recently provided evidence for BOLD oscillations beyond this frequency range (Chen and Glover, 2015; Lewis et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig1-v1.jpg)\n\n**Figure 1.:** (a) Whole-brain T1-weighted study template showing the anatomical localisation of the hypothalamus. (b) Anatomical mask of the hypothalamus. (c) Brain activity was recorded during alternating periods of lower body negative pressure (LBNP) and rest using functional magnetic resonance imaging (fMRI) with concurrent blood pressure and heart rate recordings. (d,e) Average beat-to-beat systolic blood pressure and interbeat interval decreased in response to LBNP (t\u00a0=\u00a0\u221211.4, p<0.001 and t\u00a0=\u00a0\u22124.9, p<0.001 resp.) with (d) blood pressure variability showing an increase of sympathetic low frequency (LF) oscillations (Mayer waves) (t\u00a0=\u00a02.49, p<0.05) and (e) heart rate variability showing a reduction of parasympathetic high frequency (HF) oscillations (respiratory sinus arrhythmia) (t\u00a0=\u00a02.92, p<0.01). (f) Spatially independent components (ICs), derived from masked ICA, were tested for specificity and used to segment the hypothalamus into functionally independent regions (see j). (g) The optimal number of ICs was 49 as evidenced by a bootstrap approach that maximised reproducibility (rmean\u00a0=\u00a00.80\u00a0\u00b1\u00a00.01), while penalising ICA non-convergence. (h) Spatial ICs were considered cardiovascular centres, when showing connectivity changes and spectral changes in the LF and/or HF range of the blood oxygenation level dependent (BOLD) signal during LBNP. Both measures were derived from subject-specific time courses either from a general linear model (GLM) or from a fast Fourier transform (FFT). (i) Both the LF and HF bands lie at the top or above the canonical frequency range of the BOLD signal as defined by the haemodynamic response function (HRF). (j) Final segmentation of the hypothalamus after removal of unspecific components showing three functionally distinct anatomical zones as expected from post-mortem anatomical studies (Dud\u00e1s, 2013). Data in d-e and g-h are presented as mean with 95% confidence interval. All coordinates are in Montreal Neurological Institute (MNI) standard space. *p\u22640.05, **p\u22640.01, ***p\u22640.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Complete set of specific spatially independent components as used for connectivity-based analyses in this study. Not shown are six components that were identified as noise.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Anatomical subdivisions of the human hypothalamus as based on post-mortem anatomical studies (Dud\u00e1s, 2013). Left: Hypothalamic regions in ventro-caudal direction. Right: Hypothalamic zones in the medio-lateral direction. (b\u2013d) Segmentations based on independent component analysis of functional MRI data for different dimensionalities. (b) 43-dimensional (49-6) segmentation showing all three regions and zones with further subdivisions in superior-inferior direction. (c) 9-dimensional (10-1) segmentation showing the three regions and two of the three zones. (d) 6-dimensional (8-2) segmentation showing two regions and two zones.\n\nSubcortical control regions of cardiovascular function are mainly located in the hypothalamus, comprising the paraventricular nucleus (PVN), lateral hypothalamic area (LH), arcuate nucleus (Arc), dorsomedial nucleus (DMH), and median preoptic nucleus (Supplementary file 1), and in the lower brainstem, comprising the nucleus of the solitary tract (NTS), rostral and caudal ventrolateral medulla (RVLM/CVLM), nucleus ambiguus (Amb), and the caudal raphe nuclei, that\u00a0is nucleus raphe obscurus (ROb) and nucleus raphe pallidus (RPa) (Supplementary file 2; Coote, 2004; Dampney, 1994; Loewy, 1981; Saper et al., 2015; Benarroch, 1993). Since these areas are notoriously hard to investigate in humans due to their small size, depth within the skull, and physiological noise from surrounding vessels and cerebrospinal fluid (Brooks et al., 2013; Beissner, 2015), we devised a high-resolution functional MRI approach and preprocessing pipeline specifically optimised for subcortical imaging. In particular, we balanced spatial and temporal resolution (2\u00d72\u00d72 mm\u00b3, 1.23 s) to distinguish neighbouring nuclei, while critically sampling respiratory frequencies. Preprocessing involved maximising anatomical specificity by applying advanced distortion correction, symmetric diffeomorphic image registration to a study template, and omitting any spatial smoothing. In contrast to common practice, we did not regress physiological fluctuations from our data to avoid removing meaningful signal from the cardiovascular regions we were interested in Iacovella and Hasson, 2011. Instead, we opted for a spatial noise correction approach (Beissner et al., 2014) as part of our group-level statistical analysis.\n\n## Results\n\nLBNP led to a significant reduction of systolic blood pressure (Rest: 132.6\u00a0\u00b1\u00a020.2 mmHg, LBNP: 113.4\u00a0\u00b1\u00a020.2 mmHg, t(17)=-11.3, p<0.001, Cohen's d\u00a0=\u00a0\u22120.95) and a compensatory decrease of the interbeat interval (Rest: 0.95\u00a0\u00b1\u00a00.12 s, LBNP: 0.85\u00a0\u00b1\u00a00.11 s, t(20)=-4.9, p<0.001, d\u00a0=\u00a0\u22120.96), while measures of respiration (respiratory interval, respiratory volume, and respiratory volume per time) showed no significant changes. Furthermore, head movement was not significantly different between LBNP and Rest periods. We also observed increased spectral power of LFBPV (Rest: 0.14\u00a0\u00b1\u00a00.03, LBNP: 0.17\u00a0\u00b1\u00a00.04, t(17)=2.9, p=0.011, d\u00a0=\u00a00.97) and reduced spectral power of HFHRV (Rest: 0.18\u00a0\u00b1\u00a00.08, LBNP: 0.14\u00a0\u00b1\u00a00.08, t(20)=-2.4, p=0.0267, d\u00a0=\u00a0\u22120.47) indicating sympathetic excitation and vagal inhibition in response to the cardiovascular challenge, respectively (Figure 1d,e).\n\nTo identify cardiovascular control centres within the hypothalamus, we followed a two-step process; namely segmentation using masked independent component analysis (mICA) (Beissner et al., 2014) of the fMRI time series, followed by testing for cardiovascular involvement using two independent criteria. In the first step, the hypothalamus was segmented into 49 functionally distinct regions (Figure 1\u2014figure supplement 1), followed by removal of six unspecific components (Figure 1f), leaving 43 components. The initial number 49 was derived by maximising mICA reproducibility, see Figure 1g. This high-dimensional segmentation yielded the characteristic three medio-lateral zones and three rostro-caudal regions expected from post-mortem anatomical studies (Dud\u00e1s, 2013; Figure 1j, Figure 1\u2014figure supplement 2, Supplementary file 3). The lower-dimensional decompositions with 8 and 10 subregions showed only two medio-lateral zones, and were thus not analysed. They were, however, consulted later to elucidate averaged intra-hypothalamic functional connectivity (see below). In the second step, each of the 43 (49 - 6) hypothalamic regions was tested for two criteria, namely LBNP-related changes in functional connectivity (\u0394fcLBNP) with any region of the hypothalamus or lower brainstem, and changes in BOLD spectral power in one or both of the two cardiovascular frequency bands (Figure 1h).\n\nOur analysis revealed five hypothalamic regions fulfilling both criteria for cardiovascular involvement (Figure 2, Supplementary File 4): the right anterior, and bilateral tuberal LH/supraoptic nucleus (SON, Figure 2a\u2013c), the right tuberal PVN/posterior hypothalamic area (PH) (Figure 2d), and the arcuate nucleus (Figure 2e). Detailed information on the spatial distribution of BOLD spectral power in the two cardiovascular frequency bands is provided in Figure 2\u2014figure supplement 1. All identified regions except the bilateral tuberal LH/SON showed positive \u0394fcLBNP with the lower brainstem (Figure 2a,d\u2013e). In contrast, \u0394fcLBNP of the tuberal LH/SON was restricted to the hypothalamus. Here, both sides showed positive within-nucleus \u0394fcLBNP, which can be interpreted as local activity changes, while only the left LH/SON showed additional negative \u0394fcLBNP with the arcuate nucleus (Figure 2b\u2013c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig2-v1.jpg)\n\n**Figure 2.:** (a\u2013e) Left: Individual hypothalamic centres derived from functional connectivity presented as mixture model thresholded probability maps. Centre: Normalised spectral BOLD signal changes (n\u00a0=\u00a022, paired t-test, p\u22640.05). Right: Functional connectivity (fc) changes to the hypothalamus and lower brainstem (thresholded statistical maps, n\u00a0=\u00a022, paired t-test, p\u22640.05 family-wise error corrected). Warm/cold colours indicate an increase/decrease in fc during LBNP. A hypothalamic system of five regions showed both spectral BOLD and fc changes during LBNP. These cardiovascular centres included (a) the anterior part of the right lateral hypothalamic region (LH)/supraoptic nucleus (SON) showing reduced HF power (t\u00a0=\u00a0\u22122.2, p\u22640.05) and increased fc with the dorsal lower brainstem including the nucleus of the solitary tract (NTS); (b\u2013c) the bilateral tuberal part of the LH/SON showing reduced HF (tright\u00a0=\u00a0\u22122.93 pright\u00a0\u22640.01, tleft\u00a0=\u00a0\u22122.28 pleft\u00a0\u22640.05) and LF power (tright\u00a0=\u00a0\u22122.24 pright\u00a0\u22640.05) and increased within-nucleus fc (both sides) as well as reduced fc with the arcuate nucleus (Arc, left side only); (d) the tuberal part of the paraventricular nucleus (PVN) showing increased HF power (t\u00a0=\u00a02.69, p\u22640.05) and reduced within-nucleus fc as well as increased fc with the right lateral lower brainstem including nucleus ambiguus (Amb) and rostral ventrolateral medulla (RVLM); and (e) the Arc showing reduced LF power (t\u00a0=\u00a0\u22122.05, p\u22640.05) and increased fc with the dorsal and midline lower brainstem including the NTS, dorsal motor nucleus of the vagal nerve (DMN) and nucleus raphe obscurus (ROb). (f) T1-weighted study template showing slice localisation in the hypothalamus and brainstem. Spectral data in a-e are presented as mean with 95% confidence interval. All coordinates are in Montreal Neurological Institute (MNI) standard space. Atlas slices modified after Mai et al., 2016 and Paxinos et al., 2012 (with permission from the authors). *p\u22640.05, **p\u22640.01. Abbreviations: 3V, third ventricle; 4V, fourth ventricle; DPGi, Dorsal paragigantocellular nucleus; DMN, dorsal motor nucleus; fc, functional connectivity; fx, fornix; Hyp, hypoglossal nucleus; IO, inferior olivary nucleus; IRt, intermediate reticular nucleus; MdRt, medullary reticular nucleus; opt, optic tract; PCRt, parvicellular reticular nucleus; PH, posterior hypothalamic area; Sp5, spinal trigeminal nucleus.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Left: Cardiovascular centres in the hypothalamus defined by functional connectivity (Figure 2). (a) right anterior right LH/SON; (b\u2013c) bilateral tuberal LH/SON; (d) tuberal PVN; (e) arcuate nucleus. Centre: Spatial maps of BOLD power spectral density in the low frequency band (LFBOLD) at rest (group median, normalised to total power) and its change during cardiovascular challenge (t-values from paired t-test). Right: Respective maps for high frequency (HFBOLD). With the exception of the arcuate nucleus, LFBOLD showed a superior-inferior gradient with higher spectral powers occurring in the superior part. In contrast, HFBOLD showed a medio-lateral gradient with higher spectral powers occurring in the periventricular region. As expected, many connectivity-derived centres coincided with local foci of BOLD spectral changes. Atlas slices modified from Mai et al., 2016 (with permission from the authors). Abbreviations: 3V, third ventricle; Arc, arcuate nucleus; LBNP, lower body negative pressure; LH, lateral hypothalamic area; fx, fornix; opt, optic tract; PH, posterior hypothalamic area; PVN, paraventricular nucleus; SON, supraoptic nucleus.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Segmentation is based on a masked independent component analysis of functional MRI data. The components were coloured to highlight the anatomical subdivisions of the human hypothalamus (Figure 1\u2014figure supplement 2), (a) 43-dimensional segmentation (49-6) without physiological noise modeling (PNM). (b) 41-dimensional (49-8) segmentation after PNM.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a\u2013e) First column: Individual cardiovascular hypothalamic regions presented as mixture model thresholded probability maps as derived from the main analysis (Figure 2). Second column: matched independent components after physiological noise modelling (PNM). The spatial correlation value is depicted on the top right corner. Third to fifth column: Functional connectivity changes to the hypothalamus and lower brainstem (thresholded statistical maps, n\u00a0=\u00a022, paired t-test, p\u22640.05 family-wise error corrected with TFCE). Warm/cold colours indicate an increase/decrease in functional connectivity during LBNP.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a\u2013e) Left: Individual cardiovascular hypothalamic regions presented as mixture model thresholded probability maps. Right: functional connectivity maps of the respective region, calculated using dual regression and a non-parametric one sample t-test thresholded at p<0.05 with voxel-wise family wise error (FWE) correction.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (a\u2013e) Individual hypothalamic centres derived from functional connectivity presented as mixture model thresholded probability maps. These five centres fulfilled both criteria for cardiovascular involvement. Atlas slices modified from Mai et al., 2016. (f) Distribution of Fos-positive neurones after prolonged hypotension in conscious rabbits. (g) Originial figure with marked cut out region (reprinted from Li and Dampney, 1994).\n\nFurther insights on hypothalamic functional connectivity of the identified regions came from the analysis of the low-dimensional ICA results (Figure 3). Here, inter-dimensional matching showed that right anterior LH/SON, PVN/PH, and Arc had low-dimensional equivalents (Figure 3b,d), while the bilateral tuberal LH/SON did not. The low-dimensional versions of Arc and right anterior LH both included portions of the PVN/PH and adjacent nuclei.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig3-v1.jpg)\n\n**Figure 3.:** (a) Three of the five hypothalamic cardiovascular centres derived from functional connectivity (Figure 2), namely PVN/PH (top), anterior LH/SON (middle), and arcuate nucleus (bottom) were also detected by low-dimensional independent component analysis (ICA) (b). Here, both LH/SON and arcuate components included portions of the PVN/PH and adjacent nuclei, such as the dorsomedial hypothalamic nucleus (DMH), indicating an important role of this region in cardiovascular regulation. For comparison, white lines in the coronal (b) and sagittal slices (d) indicate the outline of the high-dimensional PVN/PH component. In addition, the anterior LH/SON (middle) showed a bilateral symmetric shape in contrast to its strictly unilateral appearance in the original analysis. (c,e) T1-weighted study template showing slice localisation in the hypothalamus. All independent components are presented as mixture model thresholded probability maps. All coordinates are in Montreal Neurological Institute (MNI) standard space. Atlas slices modified after Mai et al., 2016 (with permission from the authors). Abbreviations: 3V, third ventricle; Arc, arcuate nucleus; DMH, dorsomedial hypothalamic nucleus; fx, fornix; PVN, paraventricular nucleus; PH, posterior hypothalamic area; VMH, ventromedial hypothalamic nucleus.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Hypothalamic component encompassing the paraventricular nucleus and the posterior hypothalamic area. (b) Detail of the connectivity changes of (a) during LBNP that includes the rostral ventrolateral medulla (RVLM) and the nucleus ambiguus (Amb). (c) Component of a 60-dimensional independent component analysis (mICA) in the medulla that best matches the cluster in (b). The mICA dimensionality was derived by test-retest reproducibility analysis using repetitive split-half samplings. Overlap between the ICs and the RVLM cluster was assessed with the help of the correlation coefficient. (d) Functional connectivity increase of (c) in the medulla during LBNP. Atlas slice modified from Paxinos et al., 2012 (with permission from the authors). Abbreviations: 4V, fourth ventricle; NTS, nucleus of the solitary tract.\n\nOur supplementary analyses showed that our results are not driven by physiological noise. As the first analysis revealed, physiological noise regression had little effect on the masked ICA results as evidenced by the functional segmentation still showing the same known anatomical subdivisions of the hypothalamus (Figure 2\u2014figure supplement 2). This was expected as we had previously shown that noise regression has little effect on masked ICA results (Beissner et al., 2014). Moreover, the ICs matching our five hypothalamic regions from the main analysis (spatial correlation r\u00a0>\u00a00.89) showed similar, yet smaller functional connectivity changes in response to cardiovascular challenge (Figure 2, Figure 2\u2014figure supplement 3). The second supplementary analysis revealed that four of the five hypothalamic regions from the main analysis showed significant functional connectivity with cerebral regions that was clearly dominated by grey matter (Figure 2\u2014figure supplement 4), while noise components would be expected to mainly show white matter or ventricular connectivity. The one remaining region was the PVN/PH, which showed very little cerebral connectivity at all.\n\n## Discussion\n\nWe found five hypothalamic regions involved in cardiovascular regulation: the right anterior and bilateral tuberal LH/SON, the right tuberal PVN/PH and the arcuate nucleus. This selection of nuclei agrees with previous results from studies using Fos-like protein expression in response to prolonged hypotension (Li and Dampney, 1994;\u00a0Figure 2\u2014figure supplement 5).\n\nBased on functional connectivity changes between the original hypothalamic regions and the lower brainstem (Figure 2), we were able to distinguish three major hypothalamic cardiovascular control systems (Figure 4c\u2013e). The first was characterised by positive \u0394fcLBNP of the PVN/PH with a region in the ipsilateral lateral medulla comprising the RVLM, inferior olivary (IO), parvicellular reticular nucleus (PCRt), Amb, and intermediate reticular (IRt) nuclei, as well as negative \u0394fcLBNP of the PVN/PH with itself (Figure 2d). We suggest that this system represents the \u2018textbook\u2019 baroreflex arc with its sympathetic (RVLM) and vagal arms (Amb); both under hypothalamic control by the PVN. Since baroreflex regulation classically involves the NTS and caudal ventrolateral medulla (CVLM), we conducted a supplementary mICA in the lower brainstem. This analysis yielded a functionally distinct region matching the above-mentioned RVLM cluster which was tested for \u0394fcLBNP. As expected, a single cluster in the ipsilateral caudal NTS showed positive \u0394fcLBNP (Figure 3\u2014figure supplement 1); however, we did not observe any functional connectivity changes with the CVLM. There is abundant evidence from animal experiments that the PVN projects heavily to the RVLM and Amb and to a lesser extent to Sp5 and reticular nuclei. These projections involve a wide variety of neurotransmitters including angiotensin-II, vasopressin, glutamate, and corticotropin-releasing hormone for RVLM, as well as oxytocin for the Amb (Loewy, 1981; Coote, 2004; Geerling et al., 2010; Sapru, 2013). Damage to the baroreflex arc elicits profound abnormalities in human blood pressure control (Biaggioni et al., 1994). Therapeutically, electrical baroreceptor stimulation has been tested for treating arterial hypertension and heart failure, although patients showed disparate treatment outcome (Heusser et al., 2016). Thus, a deeper knowledge of central baroreflex control may help understand inter-individual differences and identify patients most likely to respond to such therapies.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55316/elife-55316-fig4-v1.jpg)\n\n**Figure 4.:** Summary of the network nodes and links in the hypothalamus (a) and lower medulla oblongata (up until the level of the vagal nerve root) (b) as defined by functional connectivity. The central cardiovascular network in humans comprises at least five hypothalamic and five medullary centres. Intra-hypothalamic connectivity emphasised the central role of the PVN/PH in cardiovascular regulation thus confirming results obtained in animals. Functional connectivity to the medulla oblongata was observed for three hypothalamic nuclei (c\u2013e). Of these, the PVN/PH was connected to the \u2018textbook\u2019 baroreflex system (c) comprising the RVLM, Amb, and NTS (emphasised in red font). This system is known to be driven by baroreceptor input and regulate blood pressure by vascular and cardiac sympathetic, cardiovagal, and endocrine mechanisms (vasopressin and oxytocin release). In our experiment, it was strictly lateralised to the right medulla. (d) The second functional network connected the right anterior LH/SON with an ipsilateral medullary centre compatible with the NTS extending into DMN and PCRt. Projections of the LH to the NTS and DMN are well-established and mostly orexinergic, while likewise well-established projections from the NTS to the SON could trigger the release of vasoactive hormones from the pituitary gland. (e) The third and most widespread network emerged from the arcuate nucleus and comprised three distinct medullary regions: the left NTS and DMN, the midline ROb, and a large region in the right dorsal medulla comprising the NTS, DMN and several reticular nuclei. Although this system has received relatively little attention in comparison to the \u2018textbook\u2019 baroreflex system, there is clear evidence that the Arc plays an important role in integrating neural and hormonal signals from key cardiovascular organs and controlling sympathetic outflow. Abbreviations: Amb, nucleus ambiguus; Arc, arcuate nucleus; AVP, arginine vasopressin; DPGi, Dorsal paragigantocellular nucleus; DMN, dorsal motor nucleus of the vagal nerve; fx, fornix; Hyp, hypoglossal nucleus; IO, inferior olivary nucleus; IRt, intermediate reticular nucleus; LH, lateral hypothalamic area; MdRt, medullary reticular nucleus; NTS, nucleus of the solitary tract; OXT, oxytocin; PCRt, parvicellular reticular nucleus; PH, posterior hypothalamic area; PVN, paraventricular nucleus; ROb, nucleus raphe obscurus; RVLM, rostral ventrolateral medulla; SON, supraoptic nucleus; Sp5, spinal trigeminal nucleus.\n\nThe second hypothalamic system (Figure 2a +4d) involved the right anterior aspect of the LH/SON showing positive \u0394fcLBNP with a small region in the ipsilateral dorsal medulla comprising the NTS, dorsal motor nucleus of the vagal nerve (DMN), and PCRt. These findings agree with animal experiments showing afferent connections of the LH/SON from the NTS (Sawchenko and Swanson, 1982; Card et al., 2011) and efferent projections to the NTS and DMN, the latter of which have been shown to be orexinergic (Allen and Cechetto, 1992; Coote, 2004). Their exact role in cardiovascular regulation, however, is still unclear. Potentially, this system also represents direct projections from the NTS to the SON that trigger the release of vasoactive hormones from the pituitary gland (Grindstaff and Cunningham, 2001). This pathway may complement neural cardiovascular regulation and serve as a backup for blood pressure maintenance in humans (Jordan et al., 2000). Clinically, hypotension-induced vasopressin release is attenuated in patients with neurodegenerative diseases affecting cardiovascular centres in the brainstem and hypothalamus (Puritz et al., 1983).\n\nThe third hypothalamic system involved the arcuate nucleus (Arc) (Figure 2e +4e), and showed positive \u0394fcLBNP with three different medullary regions. The first was located in the right dorsal medulla comprising NTS, DMN, PCRt, IRt and dorsal paragigantocellular nucleus (DPGi). The second included the right IRt, right medullary reticular nucleus (MdRt) and midline ROb. And finally, a third small region spanned the left NTS/DMN with its rostrocaudal position closely matching that of the contralateral NTS observed for the \u2018textbook\u2019 baroreflex control system (Figure 3\u2014figure supplement 1). Interestingly, the role of the Arc in cardiovascular regulation has received relatively little attention despite several lines of evidence.\u00a0The Arc has long been known to receive afferent fibres from the NTS (Ricardo and Koh, 1978). Changes in blood pressure and vascular resistance during electric stimulation, Fos-like protein expression in response to prolonged hypotension and afferent renal nerve stimulation, and retrograde tracing studies link it to key cardiovascular organs (Li and Dampney, 1994; Sapru, 2013; Rahmouni, 2016). Furthermore, the Arc has been proposed as a potential region in which the leptin-melanocortin and renin-angiotensin-aldosterone systems interact to control sympathetic nerve activity (Hilzendeger et al., 2012), relevant to obesity-associated arterial hypertension (Greenfield et al., 2009). This issue is of utmost clinical relevance given the pandemic rise in the prevalence of obesity and associated cardiovascular disease.\n\nThis study combined functional connectivity and spectral analysis of fMRI signals to investigate hypothalamic regions involved during cardiovascular regulation. We found anatomically meaningful connectivity changes in five hypothalamic subregions during the cardiovascular challenge, all of which went along with spectral changes of the fMRI signal in the domains of low and high frequency cardiovascular regulation (LF,~0.1 Hz; HF,~0.28 Hz). In order to interpret these changes as BOLD signals, we need to assume that, at least for the HF domain, BOLD extends beyond the frequency range given by the canonical HRF (Figure 1i). Similar observations have recently been reported by several other groups (Chen and Glover, 2015; Gohel and Biswal, 2015; Lewis et al., 2016). However, caution is advisable, when interpreting results derived from BOLD signals. While the majority of our results were robust against the removal of physiological \u2018noise\u2019 signals, one should note that completely disentangling neuronal from non-neuronal BOLD signals is close to impossible for several reasons. Firstly, physiological noise is a mixture of several different noise sources, including those related to cardiac activity causing changes in arterial pulsatility, cerebral blood flow, cerebral blood volume and cerebrospinal fluid flow, and those related to respiration causing changes in the magnetic field and arterial carbon dioxide (Brooks et al., 2013). To complicate matters further, cardiac and respiratory activity are not independent but intricately linked through phenomena like the respiratory sinus arrhythmia. Secondly, several groups have recently shown that cerebral vascular regulation may be coordinated across long-distance brain regions, thus mimicking the structure of neuronal networks (Bright et al., 2020; Chen et al., 2020). Finally, every temporal regression of physiological \u2018noise\u2019 bears the risk of removing meaningful signal from the data (Iacovella and Hasson, 2011). Thus, the methodological approach used in this study cannot completely rule out the possibility that some of the connectivity we are seeing could be the result of highly structured physiological noise.\n\nNonetheless, we anticipate that the simultaneous in-vivo assessment of the different cardiovascular control systems in humans will deepen our understanding of these systems. Furthermore, access to individual neural signatures may facilitate development of novel pharmaceutical and electroceutical cardiovascular treatments, leading to an era of cardiovascular precision medicine.\n\n## Materials and methods\n\nThe study took place at Hannover Medical School. It complied with the Declaration of Helsinki, and was approved by the local ethics committee (# 3404\u20132016). 22 healthy normotensive subjects (24\u00a0\u00b1\u00a05 years, 22.1\u00a0\u00b1\u00a03.1 kg/m\u00b2, 123\u00a0\u00b1\u00a08/62\u00a0\u00b1\u00a07 mmHg, eight male) took part in the study after giving written informed consent and consent to publish their data anonimously.\n\nWe simulated orthostatic stress by means of lower body negative pressure (LBNP) (Goswami et al., 2008). Negative pressure of 30 mmHg was built up inside a custom-made polycarbonate chamber using a vacuum cleaner and a pressure gauge. The stimulation paradigm consisted of four alternating five-minute blocks, two with and two without negative pressure, starting with the negative pressure (Figure 1c). Functional MR images and physiological measures were continuously acquired during this cardiovascular challenge. Transitions between pressure states were excluded to avoid excessive movement. To quantify head motion, we calculated the root mean squares of relative image coordinate differences as transformed by the realignment matrices. We then checked for differences between fMRI runs with and without cardiovascular challenge by running a paired t-test.\n\n### MRI data acquisition\n\nAll MR images were acquired on a Siemens 3T MAGNETOM Skyra using a 64-channel head/neck coil. The scanning protocol consisted of the following sequences (Supplementary file 5):\n\n### fMRI data preprocessing\n\nfMRI data preprocessing was optimised for the brainstem and hypothalamus by avoiding superfluous resampling steps and unnecessary smoothing. On that account, motion correction (MCFLIRT [Jenkinson et al., 2002]) and unwarping (topup [Andersson et al., 2003]) were applied in a single transformation. Afterwards, brain extraction (BET [Smith, 2002]), grand mean scaling and high pass filtering (0.005 Hz) were applied. The data were not smoothed.\n\nTwo study templates were generated using Advanced Normalization Tools (ANTs [Avants et al., 2008]). The first one using the unwarped EPI reference images (II); the second one using the T1-images. Functional images were transformed to the T1-template for group analyses in a single transformation. This one-step procedure included a non-linear registration (symmetric diffeomorphism) to the EPI-template followed by a six-degrees-of-freedom transformation to the T1-template. Finally, the results were transformed to Montreal Neurological Institute (MNI) standard space using a non-linear transformation (ANTs). All transformations used linear interpolation during the resampling.\n\n### Physiological measurements\n\nThe following physiological measures were acquired with an MR-compatible BIOPAC MP150 system:\n\nPulse data were bandpass filtered (0.64\u20132.5 Hz) to remove scanner artefacts before running a semi-automated peak-detection. In the blood pressure recordings we first removed all dropouts and then applied a percentile filter (1st-99th percentiles). Excluded data points were interpolated linearly.\n\n### Data analysis\n\nFirst, a masked independent component analysis (mICA [Beissner et al., 2014]) was performed on the concatenated functional data of all subjects (Figure 1f). We defined the hypothalamic mask for this analysis (Figure 1b) using the atlas of Mai et al., 2016. The ICA dimensionality of 49 was derived by test-retest reproducibility analysis in the range between 1 and 100 dimensions using 30 random split-half samplings (mICA toolbox [Moher Alsady et al., 2016]). After matching the components of both half samples by Hungarian sorting of their cross-correlation matrix, mean reproducibility was calculated. After excluding all values with ICA non-convergence, a dimensionality of 49 was found to maximise mean reproducibility (rmean\u00a0=\u00a00.80\u00a0\u00b1\u00a00.01) (Figure 1g). Independent components (ICs) were tested for specificity by running an unmasked dual regression (Beckmann et al., 2009) to a cuboid volume containing the brainstem and hypothalamus. We calculated the weighted quotient of activation in grey and white matter versus cerebrospinal fluid (probabilistic masks obtained using FAST [Zhang et al., 2001]). Components were considered unspecific if this quotient was smaller than one standard deviation from the mean. Using this measure, 6 components were excluded from further analysis. Assigning each voxel the component number with the highest z-value at that point yielded a segmentation of the hypothalamus into 43 functional centres (Figure 1j).\n\nTo discern which of the remaining 43 ICs were involved in cardiovascular regulation, we carried out two separate analyses: a spectral and a functional connectivity analysis. For the spectral analysis we defined two frequency bands, low frequency LF (0.1\u00b10.03 Hz) and high frequency HF (0.28\u00a0\u00b1\u00a00.06 Hz) by looking at the spectral peaks of the autonomic recordings. The LF band was defined by the position of the Mayer peak in our subjects\u2019 blood pressure variability, whereas the HF band corresponds to the respiration frequency (mean\u00a0\u00b1\u00a0standard deviation). We extracted the time series of every IC in every run and calculated their power spectral density for each frequency band normalised to the total power (similar to an fALFF analysis [Zou et al., 2008] at higher frequencies). Finally, we computed a non-parametric paired t-test to quantify spectral differences in the BOLD signal between LBNP and rest. In the functional connectivity analysis, we performed a dual regression to both, hypothalamus and lower brainstem. Ultimately, we calculated a non-parametric paired t-test thresholded at p<0.05 using family-wise error (FWE) correction with threshold-free cluster enhancement (TFCE) to identify functional connectivity changes between LBNP and rest. Components showing significant changes in both metrics, that\u00a0is spectral and functional connectivity, were assumed to be involved in cardiovascular regulation. We overlaid the atlas of Mai et al., 2016, which is in MNI standard space, to our components and their connectivity changes in order to identify the involved nuclei. To avoid identifying only familiar nuclei, we report every major nucleus from the atlas overlapping with any voxel of a functional connectivity cluster.\n\nFurthermore, to ascertain that our results were not driven by physiological noise, we conducted two supplementary analyses. Firstly, we repeated our initial analysis adding an additional physiological noise correction. Specifically, we applied slice-wise regression of cardiac and respiratory influences (first order, one interaction term) using FSL PNM (Brooks et al., 2008) before carrying out the masked ICA. We then matched the independent components to the ones of the original analysis by Hungarian sorting of the spatial cross-correlation matrix, and calculated their functional connectivity changes during LBNP. Since physiological noise regression influences frequency content in a non-linear manner, we did not test for spectral changes in this supplementary analysis.\n\nSecondly, using dual regression and a non-parametric one sample t-test thresholded at p<0.05 (FWE corrected), we calculated functional connectivity of the identified hypothalamic regions with the whole brain (smoothed with a Gaussian kernel of 5 mm full width at half maximum). This was done to make sure that their functional connectivity was mainly in the grey matter and not in the ventricles or other regions, whose signals are driven by physiological noise.\n",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "21aa3188-fb01-4818-b857-86aa0532893c",
+      "submission_id": "f1285502-3796-4a19-859b-da252fd558cb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marc Tittgemeyer, Max-Planck-Institute for Metabolism Research Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55316.sa1](https://doi.org/10.7554/eLife.55316.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe reviewers and I are convinced that this study will help to progress our understanding of human cardiovascular control. We compliment the authors on the novel and innovative task and the carefully carried out analyses thereof.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Deciphering the neural signature of human cardiovascular regulation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Marc Tittgemeyer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Christian B\u00fcchel as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Ivan De Araujo (Reviewer #2); Olivia K Faull (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll reviewers agree that the paper describes a very interesting study to explore brain centers of cardiovascular regulation in humans.\n\nThe regulatory pathways underlying neural responses to bodily signals are currently intensively researched particularly regarding the capacity of the organism to shape its ongoing activity. Relating to interoception (sensing of internal bodily states) brain-heart interaction came recently into focus to better understand the influence of internal sensory information on perception, memory, cognition, and gating of our fear responses. To that end, the topic of the paper is very timely, and the study may offer important insights into human neural pathways within cardiovascular control that may also lead to potentially beneficial clinical applications.\n\nTo carry out their study the authors have undertaken a clever experimental paradigm that makes use of functional MRI to characterize human subcortical brain regions involved in cardiovascular tone. The authors stimulated orthostatic stress via footward blood volume displacement (-30 mmHg), which induced sympathetic excitation and vagal inhibition in response to the challenge. The authors describe three hypothalamo-medullary subsystems potentially involved in cardiovascular control, preserving some parallel to activation patterns observed in animal studies.\n\nA further interesting aspect of the paper is an elaborate processing pipeline for the notoriously difficult task to analyze brainstem and hypothalamus fMRI data.\n\nEssential revisions:\n\nWhile the study may thus advance our knowledge and all reviewers are in general enthusiastic about this work, some concerns must be adequately addressed before the paper can be accepted.\n\n1) Relating to confounds associated with the involvement of control systems that only indirectly link to cardiovascular regulation per se: Specifically, the cardiovascular challenge employed induces responses in motor systems associated with respiration such as the craniofacial and thoracic motor systems. Several of those nuclei (parvocellular, intermediate, and medullary reticular nuclei, PCRt, IRt, MdRt) are known to be primarily involved in motor control of head and upper body muscles. It is unclear how exactly the authors did dissociate cardiovascular from other motor control systems in their analyses.\n\n2) Various pathways implicate in the central regulation of cardiocvascular reactivity. The output of these pathways is coordinated by a number of central nervous system regions based on afferent information, but the central nervous system does not only involve the brain but also e.g. spinal cord. The authors mention for instance the melanocortine system which is not only involved in vagus nerve signaling but likely also regulated by somatosensory afferent from the spine via PBN. That said, it is sensible for the authors to emphasise primary regulators, such as hypothalamic regions and the lower brain stem. However, to then interpret the results as direct connections between hypothalamus and brainstem is a simplification, especially also as their connectivity measure is a very indirect one. This aspect needs to be discussed.\n\n3) The authors argue that the \"canonical\" frequency of the BOLD signal lies outside the frequency bands of blood pressure and heart rate and that analysis is not affected by this. This argument needs more evidence.\n\n4) Some consideration regarding susceptibility to noise in the image analyses is warranted. It is noticeable that many activated areas overlap with neighbouring ventricles, and in fact, some images suggest the peak activation voxel is centered at the ventricular area proper (e.g. Figures 2E, Figure 2\u2014figure supplement 5D, E). Further assurance that no artefacts (e.g. movement given no spatial filtering etc.) influenced the determination of the areas described.\n\n5) Furthermore, the use/non-use of physiological noise correction in this analysis needs more elaboration. While removing all signal associated with physiological recordings may drastically reduce the power to detect neural changes associated with the changes in physiology that are of interest, simply ignoring this step may dramatically influence the results. There would be two possible approaches that could ameliorate concerns that the results are driven by physiological artefacts (preferably both):\n\n\u2013 A wider/whole-brain unmasked GLM analysis of the time-course associated with the 5 \u201ccardiovascular\u201d regions identified within the current analysis. The brain areas that correspond to these signals within a wider field of view would allow us to more accurately identify whether this signal is significantly associated with common physiological artefacts, as outlined here: https://doi.org/10.1016/j.jneumeth.2016.10.019\n\n\u2013 A supplementary repeat of the analysis with the inclusion of physiological noise regressors, to understand which of the results can be robustly identified independently of the physiological artefacts.\n\n6) The current method employed of only including ICA components that sit primarily within the grey matter does not fully prevent the influence of physiological artefacts, in particular second-order effects such as changes in relatively global signal primarily associated with cerebral vasculature, resulting from fluctuations in ventilation and/or metabolism (the former of which would occur with LBNP). The Discussion could also benefit from a short discussion of the limitations of disentangling physiological artefacts from neural underpinnings for the readers who are less familiar with the difficulties of this topic. This issue is particularly important if the authors are going to claim that their frequency analyses challenge the notion of the canonical HRF, as this claim can only be true if what they are reporting is in fact of neural origin, and not simply a non-neuronal artefact. Furthermore, the induction of LBNP is also regularly associated with a hyperventilatory response, and the high-frequency band sits right within the respiratory range and thus it is not surprising this sees differences with LBNP. Lastly, the HRF in the brainstem and hypothalamus are not clearly mapped nor understood, and as the vasculature in these smaller brain areas is vastly different from the original cortical locations where the HRF was identified, it might be advisable to proceed with caution when using strong statements in this regard.\n\n7) The continuous blood pressure measurement seems to reside on peripheral arterial pressure pulse. Given that these are healthy participants, is there written consent and permission from the ERB explicitly to acquire arterial blood pressure, given that this is of course super invasive?\n",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e529ba96-0661-4abf-aba4-47b744361da2",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C1",
+      "claim": "Animal studies have identified both neural and endocrine pathways by which the central nervous system adjusts cardiac output and peripheral vascular resistance to changing physiological demands.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal studies have identified both neural and endocrine pathways, by which the central nervous system adjusts cardiac output and peripheral vascular resistance to changing physiological demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to existing animal studies in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "ed198fbe-1029-4e5e-b1e5-4799d62fa3ba",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C2",
+      "claim": "The outflow of cardiovascular regulatory pathways is coordinated by various central nervous regions based on afferent information from baroreceptors, chemoreceptors, nociceptors, and circulating hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "The outflow of these pathways is coordinated by various central nervous regions based on afferent information from baroreceptors, chemoreceptors, nociceptors, and circulating hormones, and is modulated by physiologic and behavioural state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws from established scientific knowledge about cardiovascular regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "6742af84-d91a-4fb6-8108-3501157f44c8",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C3",
+      "claim": "In humans, knowledge on central cardiovascular regulation below the cortical level is scarce.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, however, knowledge on central cardiovascular regulation below the cortical level is scarce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "2929ea20-0b8e-46a1-ad0b-1c06407c7690",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C4",
+      "claim": "At least three hypothalamic subsystems are involved in cardiovascular regulation in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show using functional MRI (fMRI) that at least three hypothalamic subsystems are involved in cardiovascular regulation in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the fMRI data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "59ec6ec1-b208-49f5-906b-aff507c16a5b",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C5",
+      "claim": "The rhythmic behaviour of hypothalamic cardiovascular systems corresponds to high and low frequency oscillations typically seen in blood pressure and heart rate variability.",
+      "claim_type": "EXPLICIT",
+      "source": "The rhythmic behaviour of these systems corresponds to high and low frequency oscillations typically seen in blood pressure and heart rate variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the spectral analysis of BOLD signals and physiological measurements presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "39a25995-1bad-4a92-bbc5-79aefe02c8d4",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C6",
+      "claim": "Important cardiovascular regulatory systems include the classical baroreceptor (arterial and cardiopulmonary) and chemoreceptor reflexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Important representatives include the classical baroreceptor (arterial and cardiopulmonary) and chemoreceptor reflexes, neuroendocrine systems, like the vasopressin, sympatho-adrenal, renin-angiotensin-aldosterone, and the more recently discovered leptin-melanocortin system (Sawchenko and Swanson, 1981; Dampney, 1994; Hilzendeger et al., 2012; Salman, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "fd5d3855-17d5-42f8-8493-6a1311e651f9",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C7",
+      "claim": "Neuroendocrine systems involved in cardiovascular regulation include the vasopressin, sympatho-adrenal, renin-angiotensin-aldosterone, and leptin-melanocortin systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Important representatives include the classical baroreceptor (arterial and cardiopulmonary) and chemoreceptor reflexes, neuroendocrine systems, like the vasopressin, sympatho-adrenal, renin-angiotensin-aldosterone, and the more recently discovered leptin-melanocortin system (Sawchenko and Swanson, 1981; Dampney, 1994; Hilzendeger et al., 2012; Salman, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "3105bf09-7766-4203-aa5d-23e457110716",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C8",
+      "claim": "Much of our present understanding of cardiovascular regulatory systems stems from animal experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of our present understanding of these systems stems from animals experiments, while mechanistic studies in humans remain scarce, mostly for lack of non-invasive methods to assess subcortical brain activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "6ea596f8-6dff-4ae3-860f-0d11592c562b",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C9",
+      "claim": "Mechanistic studies of cardiovascular regulation in humans remain scarce, mostly for lack of non-invasive methods to assess subcortical brain activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of our present understanding of these systems stems from animals experiments, while mechanistic studies in humans remain scarce, mostly for lack of non-invasive methods to assess subcortical brain activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific knowledge and methodological limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "cd70ec8d-1c59-473f-bd15-42a91be20bf0",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C10",
+      "claim": "All neural and neuroendocrine cardiovascular control systems are carefully orchestrated by the central nervous system to achieve optimal regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We must assume, however, that all neural and neuroendocrine cardiovascular control systems are carefully orchestrated by the central nervous system to achieve optimal regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an assumption based on logical inference about how the cardiovascular system functions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "86f47820-b3d3-4623-bf8d-1dc759fba2a9",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C11",
+      "claim": "The control centres responsible for orchestrating cardiovascular regulation are presumed to be located in the brainstem and hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "The control centres responsible for such orchestration are presumed to be located in the brainstem and hypothalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about cardiovascular control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "0550f206-3ce0-46a5-b191-359f9c1e5bf4",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C12",
+      "claim": "Cardiovascular control centres are well characterised for the 'textbook' baroreflex, but much less for other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "They are well characterised for the 'textbook' baroreflex, but much less for the other systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "f4a1a64b-db9a-4d9b-8882-60e0fe33dd3e",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C13",
+      "claim": "Lower body negative pressure (LBNP) simulates orthostatic stress via footward blood volume displacement.",
+      "claim_type": "EXPLICIT",
+      "source": "To study cardiovascular regulation in human subjects, we devised an MR-compatible lower body negative pressure (LBNP) chamber that simulates orthostatic stress via footward blood volume displacement (Figure 1c; Goswami et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work and the experimental setup described.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "886efc68-2d7b-4f77-9ce5-d8e8f6f81ea6",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C14",
+      "claim": "The pressure of \u221230 mmHg used in the experiment has been shown to recruit both neural and endocrine mechanisms of cardiovascular regulation via activation of cardiopulmonary and arterial baroreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The pressure of \u221230 mmHg used in our experiment has been shown to recruit both neural and endocrine mechanisms of cardiovascular regulation via activation of cardiopulmonary and arterial baroreceptors (Loewy, 1981; Mark and Mancia, 1983; Kimmerly et al., 2005; Salman, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "17ea941d-d76d-4349-8785-6c3bdcb224c1",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C15",
+      "claim": "Neural cardiovascular regulation by the autonomic nervous system leads to characteristic rhythms of heart rate and blood pressure variability (HRV, BPV).",
+      "claim_type": "EXPLICIT",
+      "source": "While assessment of endocrine pathways requires invasive methods, neural cardiovascular regulation by the autonomic nervous system can be measured non-invasively as it leads to characteristic rhythms of heart rate and blood pressure variability (HRV, BPV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about autonomic nervous system function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "8ef3fe17-6c6e-4d8c-8079-e608b47d453f",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C16",
+      "claim": "Low frequency blood pressure variability (LFBPV, ~0.1 Hz) reflects the so-called Mayer waves of sympathetic origin.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess these rhythmic changes, we recorded blood pressure and heart rate traces during the LBNP-fMRI measurements and subjected them to spectral analysis isolating two frequency bands: low frequency blood pressure variability (LFBPV, ~0.1 Hz), reflecting the so-called Mayer waves of sympathetic origin (Julien, 2006); and high frequency heart rate variability (HFHRV,~0.28 Hz) reflecting the primarily vagally mediated respiratory sinus arrhythmia (Billman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "1b90d4a3-8417-475b-ab05-03dd2fdc80ac",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C17",
+      "claim": "High frequency heart rate variability (HFHRV, ~0.28 Hz) reflects the primarily vagally mediated respiratory sinus arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess these rhythmic changes, we recorded blood pressure and heart rate traces during the LBNP-fMRI measurements and subjected them to spectral analysis isolating two frequency bands: low frequency blood pressure variability (LFBPV, ~0.1 Hz), reflecting the so-called Mayer waves of sympathetic origin (Julien, 2006); and high frequency heart rate variability (HFHRV,~0.28 Hz) reflecting the primarily vagally mediated respiratory sinus arrhythmia (Billman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "15bbec7b-b0b6-42ef-a496-acaa891b71a5",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C18",
+      "claim": "Both the LF and HF bands lie at the top or above the canonical frequency range of the BOLD signal (<0.1 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Note that both the LF and HF bands lie at the top or above the canonical frequency range of the BOLD signal (<0.1 Hz, Figure 1i); although several studies have recently provided evidence for BOLD oscillations beyond this frequency range (Chen and Glover, 2015; Lewis et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1i and citations to recent studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "9490e15a-a5e1-4355-a657-183d2ae1aafa",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C19",
+      "claim": "Several studies have recently provided evidence for BOLD oscillations beyond the canonical frequency range.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that both the LF and HF bands lie at the top or above the canonical frequency range of the BOLD signal (<0.1 Hz, Figure 1i); although several studies have recently provided evidence for BOLD oscillations beyond this frequency range (Chen and Glover, 2015; Lewis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "60d0b9f7-d3a2-46df-a6a1-9056f1953ab0",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C20",
+      "claim": "Subcortical control regions of cardiovascular function are mainly located in the hypothalamus, comprising the paraventricular nucleus (PVN), lateral hypothalamic area (LH), arcuate nucleus (Arc), dorsomedial nucleus (DMH), and median preoptic nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcortical control regions of cardiovascular function are mainly located in the hypothalamus, comprising the paraventricular nucleus (PVN), lateral hypothalamic area (LH), arcuate nucleus (Arc), dorsomedial nucleus (DMH), and median preoptic nucleus (Supplementary file 1), and in the lower brainstem, comprising the nucleus of the solitary tract (NTS), rostral and caudal ventrolateral medulla (RVLM/CVLM), nucleus ambiguus (Amb), and the caudal raphe nuclei, that is nucleus raphe obscurus (ROb) and nucleus raphe pallidus (RPa) (Supplementary file 2; Coote, 2004; Dampney, 1994; Loewy, 1981; Saper et al., 2015; Benarroch, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research and supplementary files.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "27ddb5c3-dc0c-43f9-a555-b930681e4873",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C21",
+      "claim": "Subcortical control regions of cardiovascular function in the lower brainstem comprise the nucleus of the solitary tract (NTS), rostral and caudal ventrolateral medulla (RVLM/CVLM), nucleus ambiguus (Amb), and the caudal raphe nuclei (nucleus raphe obscurus and nucleus raphe pallidus).",
+      "claim_type": "EXPLICIT",
+      "source": "Subcortical control regions of cardiovascular function are mainly located in the hypothalamus, comprising the paraventricular nucleus (PVN), lateral hypothalamic area (LH), arcuate nucleus (Arc), dorsomedial nucleus (DMH), and median preoptic nucleus (Supplementary file 1), and in the lower brainstem, comprising the nucleus of the solitary tract (NTS), rostral and caudal ventrolateral medulla (RVLM/CVLM), nucleus ambiguus (Amb), and the caudal raphe nuclei, that is nucleus raphe obscurus (ROb) and nucleus raphe pallidus (RPa) (Supplementary file 2; Coote, 2004; Dampney, 1994; Loewy, 1981; Saper et al., 2015; Benarroch, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research and supplementary files.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "6c5045c3-bfb5-4a11-b8e2-f67f8aed7bb6",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C22",
+      "claim": "Subcortical cardiovascular control areas are notoriously hard to investigate in humans due to their small size, depth within the skull, and physiological noise from surrounding vessels and cerebrospinal fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these areas are notoriously hard to investigate in humans due to their small size, depth within the skull, and physiological noise from surrounding vessels and cerebrospinal fluid (Brooks et al., 2013; Beissner, 2015), we devised a high-resolution functional MRI approach and preprocessing pipeline specifically optimised for subcortical imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on methodological challenges.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "22084a57-35a5-414e-8959-670fd7d9f450",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C23",
+      "claim": "The study used a high-resolution functional MRI approach with spatial resolution of 2\u00d72\u00d72 mm\u00b3 and temporal resolution of 1.23 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we balanced spatial and temporal resolution (2\u00d72\u00d72 mm\u00b3, 1.23 s) to distinguish neighbouring nuclei, while critically sampling respiratory frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "b3fdf53b-1ba5-4c12-8eef-2de5f253cafd",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C24",
+      "claim": "Preprocessing involved maximising anatomical specificity by applying advanced distortion correction, symmetric diffeomorphic image registration to a study template, and omitting any spatial smoothing.",
+      "claim_type": "EXPLICIT",
+      "source": "Preprocessing involved maximising anatomical specificity by applying advanced distortion correction, symmetric diffeomorphic image registration to a study template, and omitting any spatial smoothing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the preprocessing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "9e2ff8d3-4c71-43a0-980d-50a353b42691",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C25",
+      "claim": "The study did not regress physiological fluctuations from the data to avoid removing meaningful signal from the cardiovascular regions of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to common practice, we did not regress physiological fluctuations from our data to avoid removing meaningful signal from the cardiovascular regions we were interested in Iacovella and Hasson, 2011.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach with citation support.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "16682fbd-31d5-44f0-b46a-5b85cd58974a",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C26",
+      "claim": "LBNP led to a significant reduction of systolic blood pressure (Rest: 132.6 \u00b1 20.2 mmHg, LBNP: 113.4 \u00b1 20.2 mmHg, t(17)=-11.3, p<0.001, Cohen's d = \u22120.95).",
+      "claim_type": "EXPLICIT",
+      "source": "LBNP led to a significant reduction of systolic blood pressure (Rest: 132.6 \u00b1 20.2 mmHg, LBNP: 113.4 \u00b1 20.2 mmHg, t(17)=-11.3, p<0.001, Cohen's d = \u22120.95) and a compensatory decrease of the interbeat interval (Rest: 0.95 \u00b1 0.12 s, LBNP: 0.85 \u00b1 0.11 s, t(20)=-4.9, p<0.001, d = \u22120.96), while measures of respiration (respiratory interval, respiratory volume, and respiratory volume per time) showed no significant changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "8920528f-915d-4a68-bd7f-01df52bee2b3",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C27",
+      "claim": "LBNP led to a compensatory decrease of the interbeat interval (Rest: 0.95 \u00b1 0.12 s, LBNP: 0.85 \u00b1 0.11 s, t(20)=-4.9, p<0.001, d = \u22120.96).",
+      "claim_type": "EXPLICIT",
+      "source": "LBNP led to a significant reduction of systolic blood pressure (Rest: 132.6 \u00b1 20.2 mmHg, LBNP: 113.4 \u00b1 20.2 mmHg, t(17)=-11.3, p<0.001, Cohen's d = \u22120.95) and a compensatory decrease of the interbeat interval (Rest: 0.95 \u00b1 0.12 s, LBNP: 0.85 \u00b1 0.11 s, t(20)=-4.9, p<0.001, d = \u22120.96), while measures of respiration (respiratory interval, respiratory volume, and respiratory volume per time) showed no significant changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "1874b375-2fbf-4875-9f4a-3fefbf72f03b",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C28",
+      "claim": "Measures of respiration (respiratory interval, respiratory volume, and respiratory volume per time) showed no significant changes during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "LBNP led to a significant reduction of systolic blood pressure (Rest: 132.6 \u00b1 20.2 mmHg, LBNP: 113.4 \u00b1 20.2 mmHg, t(17)=-11.3, p<0.001, Cohen's d = \u22120.95) and a compensatory decrease of the interbeat interval (Rest: 0.95 \u00b1 0.12 s, LBNP: 0.85 \u00b1 0.11 s, t(20)=-4.9, p<0.001, d = \u22120.96), while measures of respiration (respiratory interval, respiratory volume, and respiratory volume per time) showed no significant changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "befba571-2b5d-4ccc-ba39-11b59607c0aa",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C29",
+      "claim": "Head movement was not significantly different between LBNP and Rest periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, head movement was not significantly different between LBNP and Rest periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of motion parameters from the fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "f40b0905-9b5b-4773-96ae-820098e4bbf3",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C30",
+      "claim": "Increased spectral power of LFBPV was observed during LBNP (Rest: 0.14 \u00b1 0.03, LBNP: 0.17 \u00b1 0.04, t(17)=2.9, p=0.011, d = 0.97).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed increased spectral power of LFBPV (Rest: 0.14 \u00b1 0.03, LBNP: 0.17 \u00b1 0.04, t(17)=2.9, p=0.011, d = 0.97) and reduced spectral power of HFHRV (Rest: 0.18 \u00b1 0.08, LBNP: 0.14 \u00b1 0.08, t(20)=-2.4, p=0.0267, d = \u22120.47) indicating sympathetic excitation and vagal inhibition in response to the cardiovascular challenge, respectively (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "59386b83-969e-4a3f-8e72-d9831d186544",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C31",
+      "claim": "Reduced spectral power of HFHRV was observed during LBNP (Rest: 0.18 \u00b1 0.08, LBNP: 0.14 \u00b1 0.08, t(20)=-2.4, p=0.0267, d = \u22120.47).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed increased spectral power of LFBPV (Rest: 0.14 \u00b1 0.03, LBNP: 0.17 \u00b1 0.04, t(17)=2.9, p=0.011, d = 0.97) and reduced spectral power of HFHRV (Rest: 0.18 \u00b1 0.08, LBNP: 0.14 \u00b1 0.08, t(20)=-2.4, p=0.0267, d = \u22120.47) indicating sympathetic excitation and vagal inhibition in response to the cardiovascular challenge, respectively (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "41b76227-2bb7-49e0-9882-140cc491a983",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C32",
+      "claim": "Increased LFBPV and reduced HFHRV indicate sympathetic excitation and vagal inhibition in response to the cardiovascular challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed increased spectral power of LFBPV (Rest: 0.14 \u00b1 0.03, LBNP: 0.17 \u00b1 0.04, t(17)=2.9, p=0.011, d = 0.97) and reduced spectral power of HFHRV (Rest: 0.18 \u00b1 0.08, LBNP: 0.14 \u00b1 0.08, t(20)=-2.4, p=0.0267, d = \u22120.47) indicating sympathetic excitation and vagal inhibition in response to the cardiovascular challenge, respectively (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental data based on established knowledge about autonomic nervous system function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "f7438f42-d8ed-4802-82bf-d1e1e78041c7",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C33",
+      "claim": "The hypothalamus was segmented into 49 functionally distinct regions using masked independent component analysis (mICA).",
+      "claim_type": "EXPLICIT",
+      "source": "To identify cardiovascular control centres within the hypothalamus, we followed a two-step process; namely segmentation using masked independent component analysis (mICA) (Beissner et al., 2014) of the fMRI time series, followed by testing for cardiovascular involvement using two independent criteria. In the first step, the hypothalamus was segmented into 49 functionally distinct regions (Figure 1\u2014figure supplement 1), followed by removal of six unspecific components (Figure 1f), leaving 43 components.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the data analysis methods and results shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "0c8e707b-56ae-4acc-b6d2-fc473131eeea",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C34",
+      "claim": "Six unspecific components were removed from the initial 49 hypothalamic regions, leaving 43 components for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first step, the hypothalamus was segmented into 49 functionally distinct regions (Figure 1\u2014figure supplement 1), followed by removal of six unspecific components (Figure 1f), leaving 43 components.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the data analysis process shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "4487b73b-3fbe-4b51-8605-8d7cb22ba02e",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C35",
+      "claim": "The initial number of 49 components was derived by maximising mICA reproducibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial number 49 was derived by maximising mICA reproducibility, see Figure 1g.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the method for determining optimal dimensionality shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "cb637599-db73-4e2f-a7db-246917bcb32e",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C36",
+      "claim": "The high-dimensional segmentation yielded the characteristic three medio-lateral zones and three rostro-caudal regions expected from post-mortem anatomical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This high-dimensional segmentation yielded the characteristic three medio-lateral zones and three rostro-caudal regions expected from post-mortem anatomical studies (Dud\u00e1s, 2013; Figure 1j, Figure 1\u2014figure supplement 2, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison with anatomical studies and shown in Figure 1j and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "a2bcd65f-d5f2-4c40-a85c-ad0f366d3535",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C37",
+      "claim": "Lower-dimensional decompositions with 8 and 10 subregions showed only two medio-lateral zones and were thus not analysed.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower-dimensional decompositions with 8 and 10 subregions showed only two medio-lateral zones, and were thus not analysed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis decisions based on the segmentation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "b27eebd1-ba86-430b-beab-ba1121e3652c",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C38",
+      "claim": "Each of the 43 hypothalamic regions was tested for LBNP-related changes in functional connectivity with any region of the hypothalamus or lower brainstem, and changes in BOLD spectral power in one or both of the two cardiovascular frequency bands.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second step, each of the 43 (49 - 6) hypothalamic regions was tested for two criteria, namely LBNP-related changes in functional connectivity (\u0394fcLBNP) with any region of the hypothalamus or lower brainstem, and changes in BOLD spectral power in one or both of the two cardiovascular frequency bands (Figure 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the analysis criteria shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "eb9e8744-0cd0-4feb-ac6b-6049ec0a87f5",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C39",
+      "claim": "Five hypothalamic regions fulfilled both criteria for cardiovascular involvement: the right anterior and bilateral tuberal LH/SON, the right tuberal PVN/PH, and the arcuate nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed five hypothalamic regions fulfilling both criteria for cardiovascular involvement (Figure 2, Supplementary File 4): the right anterior, and bilateral tuberal LH/supraoptic nucleus (SON, Figure 2a\u2013c), the right tuberal PVN/posterior hypothalamic area (PH) (Figure 2d), and the arcuate nucleus (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "82c354fd-7a57-4951-af47-14842520dddc",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C40",
+      "claim": "All identified hypothalamic regions except the bilateral tuberal LH/SON showed positive functional connectivity changes with the lower brainstem during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "All identified regions except the bilateral tuberal LH/SON showed positive \u0394fcLBNP with the lower brainstem (Figure 2a,d\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "ed7822a1-dfb6-43e4-a3f4-3fdf652e057c",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C41",
+      "claim": "The functional connectivity changes of the tuberal LH/SON during LBNP were restricted to the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, \u0394fcLBNP of the tuberal LH/SON was restricted to the hypothalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figure 2b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "85392f88-205e-4bd7-96d9-c71c1c8e8cf6",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C42",
+      "claim": "Both sides of the tuberal LH/SON showed positive within-nucleus functional connectivity changes during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, both sides showed positive within-nucleus \u0394fcLBNP, which can be interpreted as local activity changes, while only the left LH/SON showed additional negative \u0394fcLBNP with the arcuate nucleus (Figure 2b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figure 2b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "98fefd90-b63b-42ae-a9f1-29ec2ef0e3ff",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C43",
+      "claim": "Only the left LH/SON showed negative functional connectivity changes with the arcuate nucleus during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, both sides showed positive within-nucleus \u0394fcLBNP, which can be interpreted as local activity changes, while only the left LH/SON showed additional negative \u0394fcLBNP with the arcuate nucleus (Figure 2b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figure 2b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "8fabd8aa-6b68-46a6-8395-804b448ab522",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C44",
+      "claim": "The right anterior LH/SON showed reduced HF power during LBNP (t = \u22122.2, p\u22640.05).",
+      "claim_type": "EXPLICIT",
+      "source": "(a) the anterior part of the right lateral hypothalamic region (LH)/supraoptic nucleus (SON) showing reduced HF power (t = \u22122.2, p\u22640.05) and increased fc with the dorsal lower brainstem including the nucleus of the solitary tract (NTS);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spectral analysis shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "3892cf62-09e3-4cb4-96c4-8dcb92983e23",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C45",
+      "claim": "The right anterior LH/SON showed increased functional connectivity with the dorsal lower brainstem including the nucleus of the solitary tract (NTS) during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "(a) the anterior part of the right lateral hypothalamic region (LH)/supraoptic nucleus (SON) showing reduced HF power (t = \u22122.2, p\u22640.05) and increased fc with the dorsal lower brainstem including the nucleus of the solitary tract (NTS);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by functional connectivity analysis shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "3efa5d5b-1ada-417c-af2f-1972874972cd",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C46",
+      "claim": "The bilateral tuberal LH/SON showed reduced HF power during LBNP (tright = \u22122.93 pright \u22640.01, tleft = \u22122.28 pleft \u22640.05).",
+      "claim_type": "EXPLICIT",
+      "source": "(b\u2013c) the bilateral tuberal part of the LH/SON showing reduced HF (tright = \u22122.93 pright \u22640.01, tleft = \u22122.28 pleft \u22640.05) and LF power (tright = \u22122.24 pright \u22640.05) and increased within-nucleus fc (both sides) as well as reduced fc with the arcuate nucleus (Arc, left side only);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spectral analysis shown in Figure 2b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "2f4baacd-96ba-4f11-8ef7-aa9ed4e831ff",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C47",
+      "claim": "The right tuberal LH/SON showed reduced LF power during LBNP (t = \u22122.24 p\u22640.05).",
+      "claim_type": "EXPLICIT",
+      "source": "(b\u2013c) the bilateral tuberal part of the LH/SON showing reduced HF (tright = \u22122.93 pright \u22640.01, tleft = \u22122.28 pleft \u22640.05) and LF power (tright = \u22122.24 pright \u22640.05) and increased within-nucleus fc (both sides) as well as reduced fc with the arcuate nucleus (Arc, left side only);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spectral analysis shown in Figure 2b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "6255fed3-8124-40e2-ae69-83a36b470478",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C48",
+      "claim": "The tuberal PVN/PH showed increased HF power during LBNP (t = 2.69, p\u22640.05).",
+      "claim_type": "EXPLICIT",
+      "source": "(d) the tuberal part of the paraventricular nucleus (PVN) showing increased HF power (t = 2.69, p\u22640.05) and reduced within-nucleus fc as well as increased fc with the right lateral lower brainstem including nucleus ambiguus (Amb) and rostral ventrolateral medulla (RVLM);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spectral analysis shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "81e92d55-a010-4111-bdf8-2a2ce30b25cd",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C49",
+      "claim": "The tuberal PVN/PH showed reduced within-nucleus functional connectivity during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "(d) the tuberal part of the paraventricular nucleus (PVN) showing increased HF power (t = 2.69, p\u22640.05) and reduced within-nucleus fc as well as increased fc with the right lateral lower brainstem including nucleus ambiguus (Amb) and rostral ventrolateral medulla (RVLM);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by functional connectivity analysis shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "bb62dac3-1876-4a32-b836-2504e8b08de8",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C50",
+      "claim": "The tuberal PVN/PH showed increased functional connectivity with the right lateral lower brainstem including nucleus ambiguus (Amb) and rostral ventrolateral medulla (RVLM) during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "(d) the tuberal part of the paraventricular nucleus (PVN) showing increased HF power (t = 2.69, p\u22640.05) and reduced within-nucleus fc as well as increased fc with the right lateral lower brainstem including nucleus ambiguus (Amb) and rostral ventrolateral medulla (RVLM);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by functional connectivity analysis shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "05ebcf99-6522-4713-aad0-cf784f089878",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C51",
+      "claim": "The arcuate nucleus showed reduced LF power during LBNP (t = \u22122.05, p\u22640.05).",
+      "claim_type": "EXPLICIT",
+      "source": "(e) the Arc showing reduced LF power (t = \u22122.05, p\u22640.05) and increased fc with the dorsal and midline lower brainstem including the NTS, dorsal motor nucleus of the vagal nerve (DMN) and nucleus raphe obscurus (ROb).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spectral analysis shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "bc4fb902-6880-4ab9-bc31-fd0f021bbf99",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C52",
+      "claim": "The arcuate nucleus showed increased functional connectivity with the dorsal and midline lower brainstem including the NTS, dorsal motor nucleus of the vagal nerve (DMN) and nucleus raphe obscurus (ROb) during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "(e) the Arc showing reduced LF power (t = \u22122.05, p\u22640.05) and increased fc with the dorsal and midline lower brainstem including the NTS, dorsal motor nucleus of the vagal nerve (DMN) and nucleus raphe obscurus (ROb).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by functional connectivity analysis shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "a10f109e-5b41-47d9-9353-c6b3b5c4eae7",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C53",
+      "claim": "Inter-dimensional matching showed that right anterior LH/SON, PVN/PH, and Arc had low-dimensional equivalents.",
+      "claim_type": "EXPLICIT",
+      "source": "Further insights on hypothalamic functional connectivity of the identified regions came from the analysis of the low-dimensional ICA results (Figure 3). Here, inter-dimensional matching showed that right anterior LH/SON, PVN/PH, and Arc had low-dimensional equivalents (Figure 3b,d), while the bilateral tuberal LH/SON did not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the low-dimensional ICA analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "7cd7898c-7fd3-4f6b-a5cd-7fe8bcd64a4e",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C54",
+      "claim": "The bilateral tuberal LH/SON did not have low-dimensional equivalents.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, inter-dimensional matching showed that right anterior LH/SON, PVN/PH, and Arc had low-dimensional equivalents (Figure 3b,d), while the bilateral tuberal LH/SON did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the low-dimensional ICA analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "87fbbec9-47df-4b22-b6f6-40cc65af830e",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C55",
+      "claim": "The low-dimensional versions of Arc and right anterior LH both included portions of the PVN/PH and adjacent nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "The low-dimensional versions of Arc and right anterior LH both included portions of the PVN/PH and adjacent nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the low-dimensional ICA analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "c0b49d31-3dda-47ac-9913-fd7f20daceff",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C56",
+      "claim": "The selection of hypothalamic nuclei involved in cardiovascular regulation agrees with previous results from studies using Fos-like protein expression in response to prolonged hypotension.",
+      "claim_type": "EXPLICIT",
+      "source": "We found five hypothalamic regions involved in cardiovascular regulation: the right anterior and bilateral tuberal LH/SON, the right tuberal PVN/PH and the arcuate nucleus. This selection of nuclei agrees with previous results from studies using Fos-like protein expression in response to prolonged hypotension (Li and Dampney, 1994; Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison with previous research cited and shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "ad356350-d37d-4fb6-8372-c96d319db9fa",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C57",
+      "claim": "Three major hypothalamic cardiovascular control systems can be distinguished based on functional connectivity changes between the hypothalamic regions and the lower brainstem.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on functional connectivity changes between the original hypothalamic regions and the lower brainstem (Figure 2), we were able to distinguish three major hypothalamic cardiovascular control systems (Figure 4c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the functional connectivity data shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "f31f0745-b439-463c-b45f-6d6821f9b669",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C58",
+      "claim": "The first hypothalamic cardiovascular control system is characterised by positive functional connectivity changes of the PVN/PH with a region in the ipsilateral lateral medulla comprising the RVLM, IO, PCRt, Amb, and IRt nuclei, as well as negative functional connectivity changes of the PVN/PH with itself.",
+      "claim_type": "EXPLICIT",
+      "source": "The first was characterised by positive \u0394fcLBNP of the PVN/PH with a region in the ipsilateral lateral medulla comprising the RVLM, inferior olivary (IO), parvicellular reticular nucleus (PCRt), Amb, and intermediate reticular (IRt) nuclei, as well as negative \u0394fcLBNP of the PVN/PH with itself (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "d518fc1e-9464-410c-b579-8e08e9599a9a",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C59",
+      "claim": "The first hypothalamic cardiovascular control system represents the 'textbook' baroreflex arc with its sympathetic (RVLM) and vagal arms (Amb), both under hypothalamic control by the PVN.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that this system represents the 'textbook' baroreflex arc with its sympathetic (RVLM) and vagal arms (Amb); both under hypothalamic control by the PVN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional connectivity data based on established knowledge about the baroreflex.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "0e2ebf7b-f8bc-4f34-8811-3e63d22d874c",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C60",
+      "claim": "A functionally distinct region in the lower brainstem matching the RVLM cluster showed positive functional connectivity changes with a single cluster in the ipsilateral caudal NTS during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Since baroreflex regulation classically involves the NTS and caudal ventrolateral medulla (CVLM), we conducted a supplementary mICA in the lower brainstem. This analysis yielded a functionally distinct region matching the above-mentioned RVLM cluster which was tested for \u0394fcLBNP. As expected, a single cluster in the ipsilateral caudal NTS showed positive \u0394fcLBNP (Figure 3\u2014figure supplement 1); however, we did not observe any functional connectivity changes with the CVLM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the supplementary brainstem ICA analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "56d9407f-fbe1-4e8e-8e1a-bcb8b0abe223",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C61",
+      "claim": "No functional connectivity changes with the CVLM were observed during LBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, a single cluster in the ipsilateral caudal NTS showed positive \u0394fcLBNP (Figure 3\u2014figure supplement 1); however, we did not observe any functional connectivity changes with the CVLM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative finding from the supplementary brainstem ICA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "1fe842f3-6ad1-49d4-a50b-c98be664b20f",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C62",
+      "claim": "There is abundant evidence from animal experiments that the PVN projects heavily to the RVLM and Amb and to a lesser extent to Sp5 and reticular nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "There is abundant evidence from animal experiments that the PVN projects heavily to the RVLM and Amb and to a lesser extent to Sp5 and reticular nuclei. These projections involve a wide variety of neurotransmitters including angiotensin-II, vasopressin, glutamate, and corticotropin-releasing hormone for RVLM, as well as oxytocin for the Amb (Loewy, 1981; Coote, 2004; Geerling et al., 2010; Sapru, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous animal research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "53381981-4689-4855-8b5c-7de78d5e4326",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C63",
+      "claim": "PVN projections to RVLM involve neurotransmitters including angiotensin-II, vasopressin, glutamate, and corticotropin-releasing hormone.",
+      "claim_type": "EXPLICIT",
+      "source": "These projections involve a wide variety of neurotransmitters including angiotensin-II, vasopressin, glutamate, and corticotropin-releasing hormone for RVLM, as well as oxytocin for the Amb (Loewy, 1981; Coote, 2004; Geerling et al., 2010; Sapru, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "27848085-21a6-4c66-b66d-5adc9c033fbc",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C64",
+      "claim": "PVN projections to Amb involve oxytocin.",
+      "claim_type": "EXPLICIT",
+      "source": "These projections involve a wide variety of neurotransmitters including angiotensin-II, vasopressin, glutamate, and corticotropin-releasing hormone for RVLM, as well as oxytocin for the Amb (Loewy, 1981; Coote, 2004; Geerling et al., 2010; Sapru, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "cd150f6f-1935-44a0-933e-93e7b9253b53",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C65",
+      "claim": "Damage to the baroreflex arc elicits profound abnormalities in human blood pressure control.",
+      "claim_type": "EXPLICIT",
+      "source": "Damage to the baroreflex arc elicits profound abnormalities in human blood pressure control (Biaggioni et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous clinical research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "b005c147-0ede-4cfb-acb9-eeafa09490a6",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C66",
+      "claim": "Electrical baroreceptor stimulation has been tested for treating arterial hypertension and heart failure, although patients showed disparate treatment outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Therapeutically, electrical baroreceptor stimulation has been tested for treating arterial hypertension and heart failure, although patients showed disparate treatment outcome (Heusser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous clinical research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "ca81d156-17fd-4fa4-8890-aa18e1f848e3",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C67",
+      "claim": "The second hypothalamic cardiovascular control system involves the right anterior aspect of the LH/SON showing positive functional connectivity changes with a small region in the ipsilateral dorsal medulla comprising the NTS, DMN, and PCRt.",
+      "claim_type": "EXPLICIT",
+      "source": "The second hypothalamic system (Figure 2a +4d) involved the right anterior aspect of the LH/SON showing positive \u0394fcLBNP with a small region in the ipsilateral dorsal medulla comprising the NTS, dorsal motor nucleus of the vagal nerve (DMN), and PCRt.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figures 2a and 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "5d08a21c-46c9-49b3-ac9b-4f5c5d4e0aaf",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C68",
+      "claim": "The findings of the second hypothalamic system agree with animal experiments showing afferent connections of the LH/SON from the NTS.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings agree with animal experiments showing afferent connections of the LH/SON from the NTS (Sawchenko and Swanson, 1982; Card et al., 2011) and efferent projections to the NTS and DMN, the latter of which have been shown to be orexinergic (Allen and Cechetto, 1992; Coote, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous animal research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "5ec36dc5-f5bb-4a53-b023-222502f20da4",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C69",
+      "claim": "Animal experiments show efferent projections from the LH/SON to the NTS and DMN, the latter of which have been shown to be orexinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings agree with animal experiments showing afferent connections of the LH/SON from the NTS (Sawchenko and Swanson, 1982; Card et al., 2011) and efferent projections to the NTS and DMN, the latter of which have been shown to be orexinergic (Allen and Cechetto, 1992; Coote, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous animal research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "cd81cee9-ead9-4410-ac62-f8d19217aabb",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C70",
+      "claim": "The second hypothalamic system may represent direct projections from the NTS to the SON that trigger the release of vasoactive hormones from the pituitary gland.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially, this system also represents direct projections from the NTS to the SON that trigger the release of vasoactive hormones from the pituitary gland (Grindstaff and Cunningham, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "66cc8362-a0ae-4c04-ba66-19d283bcccaa",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C71",
+      "claim": "The NTS to SON pathway may complement neural cardiovascular regulation and serve as a backup for blood pressure maintenance in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathway may complement neural cardiovascular regulation and serve as a backup for blood pressure maintenance in humans (Jordan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "c1f874b5-c1cd-4a8c-b0e0-f9af8980145a",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C72",
+      "claim": "Hypotension-induced vasopressin release is attenuated in patients with neurodegenerative diseases affecting cardiovascular centres in the brainstem and hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, hypotension-induced vasopressin release is attenuated in patients with neurodegenerative diseases affecting cardiovascular centres in the brainstem and hypothalamus (Puritz et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous clinical research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "75a3bb59-774f-4924-bf91-b916a45a4657",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C73",
+      "claim": "The third hypothalamic cardiovascular control system involves the arcuate nucleus showing positive functional connectivity changes with three different medullary regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The third hypothalamic system involved the arcuate nucleus (Arc) (Figure 2e +4e), and showed positive \u0394fcLBNP with three different medullary regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figures 2e and 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "1a9abbba-105c-4be7-ad54-7f7c2136be41",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C74",
+      "claim": "The first medullary region connected to the arcuate nucleus was located in the right dorsal medulla comprising NTS, DMN, PCRt, IRt and DPGi.",
+      "claim_type": "EXPLICIT",
+      "source": "The first was located in the right dorsal medulla comprising NTS, DMN, PCRt, IRt and dorsal paragigantocellular nucleus (DPGi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figures 2e and 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "66925932-fb39-4ee5-9265-a2f002a1cab5",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C75",
+      "claim": "The second medullary region connected to the arcuate nucleus included the right IRt, right MdRt and midline ROb.",
+      "claim_type": "EXPLICIT",
+      "source": "The second included the right IRt, right medullary reticular nucleus (MdRt) and midline ROb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figures 2e and 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "f9b62b72-3925-4ffe-a1af-f47687a9fe12",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C76",
+      "claim": "The third medullary region connected to the arcuate nucleus spanned the left NTS/DMN with its rostrocaudal position closely matching that of the contralateral NTS observed for the 'textbook' baroreflex control system.",
+      "claim_type": "EXPLICIT",
+      "source": "And finally, a third small region spanned the left NTS/DMN with its rostrocaudal position closely matching that of the contralateral NTS observed for the 'textbook' baroreflex control system (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the functional connectivity analysis shown in Figures 2e, 4e, and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "07abc6cf-c0dc-4048-83a9-fb9485887bca",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C77",
+      "claim": "The arcuate nucleus has long been known to receive afferent fibres from the NTS.",
+      "claim_type": "EXPLICIT",
+      "source": "The Arc has long been known to receive afferent fibres from the NTS (Ricardo and Koh, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "af5687a1-2333-4581-b41a-1e27a74114da",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C78",
+      "claim": "Changes in blood pressure and vascular resistance during electric stimulation, Fos-like protein expression in response to prolonged hypotension and afferent renal nerve stimulation, and retrograde tracing studies link the arcuate nucleus to key cardiovascular organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in blood pressure and vascular resistance during electric stimulation, Fos-like protein expression in response to prolonged hypotension and afferent renal nerve stimulation, and retrograde tracing studies link it to key cardiovascular organs (Li and Dampney, 1994; Sapru, 2013; Rahmouni, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "50316b58-d025-4284-80ac-474dbbc1e1e4",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C79",
+      "claim": "The arcuate nucleus has been proposed as a potential region in which the leptin-melanocortin and renin-angiotensin-aldosterone systems interact to control sympathetic nerve activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the Arc has been proposed as a potential region in which the leptin-melanocortin and renin-angiotensin-aldosterone systems interact to control sympathetic nerve activity (Hilzendeger et al., 2012), relevant to obesity-associated arterial hypertension (Greenfield et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "edfeab71-090a-4d29-a3aa-e4ce2d5a93d5",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C80",
+      "claim": "The interaction of leptin-melanocortin and renin-angiotensin-aldosterone systems in the arcuate nucleus is relevant to obesity-associated arterial hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the Arc has been proposed as a potential region in which the leptin-melanocortin and renin-angiotensin-aldosterone systems interact to control sympathetic nerve activity (Hilzendeger et al., 2012), relevant to obesity-associated arterial hypertension (Greenfield et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "e59e7487-52e6-4181-a2ea-b734db3754aa",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C81",
+      "claim": "The study combined functional connectivity and spectral analysis of fMRI signals to investigate hypothalamic regions involved during cardiovascular regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This study combined functional connectivity and spectral analysis of fMRI signals to investigate hypothalamic regions involved during cardiovascular regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "8fc41530-4f2a-4497-8838-e6149e62d521",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C82",
+      "claim": "Five hypothalamic subregions showed anatomically meaningful connectivity changes during the cardiovascular challenge, all of which went along with spectral changes of the fMRI signal in the domains of low and high frequency cardiovascular regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found anatomically meaningful connectivity changes in five hypothalamic subregions during the cardiovascular challenge, all of which went along with spectral changes of the fMRI signal in the domains of low and high frequency cardiovascular regulation (LF,~0.1 Hz; HF,~0.28 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "394fd7c9-620f-445f-ba44-190cb3088670",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C83",
+      "claim": "To interpret spectral changes in the HF domain as BOLD signals, we need to assume that BOLD extends beyond the frequency range given by the canonical HRF.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to interpret these changes as BOLD signals, we need to assume that, at least for the HF domain, BOLD extends beyond the frequency range given by the canonical HRF (Figure 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological assumption necessary for interpreting the results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "1c599028-e76a-4a73-8069-de9519ab6cf6",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C84",
+      "claim": "Similar observations of BOLD oscillations beyond the canonical frequency range have recently been reported by several other groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations have recently been reported by several other groups (Chen and Glover, 2015; Gohel and Biswal, 2015; Lewis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "6cfb77b3-e149-4ee4-978a-6038b3144c76",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C85",
+      "claim": "Completely disentangling neuronal from non-neuronal BOLD signals is close to impossible for several reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, caution is advisable, when interpreting results derived from BOLD signals. While the majority of our results were robust against the removal of physiological 'noise' signals, one should note that completely disentangling neuronal from non-neuronal BOLD signals is close to impossible for several reasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about methodological limitations based on knowledge of BOLD signal properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "51b2474c-1b0a-463a-a0b2-ebc42e2e8dec",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C86",
+      "claim": "Physiological noise is a mixture of several different noise sources, including those related to cardiac activity and respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, physiological noise is a mixture of several different noise sources, including those related to cardiac activity causing changes in arterial pulsatility, cerebral blood flow, cerebral blood volume and cerebrospinal fluid flow, and those related to respiration causing changes in the magnetic field and arterial carbon dioxide (Brooks et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research on physiological noise.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "4899c6d5-91a5-426f-b528-ac0f3ebe719a",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C87",
+      "claim": "Cardiac and respiratory activity are not independent but intricately linked through phenomena like the respiratory sinus arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "To complicate matters further, cardiac and respiratory activity are not independent but intricately linked through phenomena like the respiratory sinus arrhythmia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about cardiovascular physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "5c847897-8135-4275-83cb-3f4f14abfce9",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C88",
+      "claim": "Several groups have recently shown that cerebral vascular regulation may be coordinated across long-distance brain regions, thus mimicking the structure of neuronal networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, several groups have recently shown that cerebral vascular regulation may be coordinated across long-distance brain regions, thus mimicking the structure of neuronal networks (Bright et al., 2020; Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "c145a308-aa86-4e25-938f-b66dc1a35929",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C89",
+      "claim": "Every temporal regression of physiological 'noise' bears the risk of removing meaningful signal from the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, every temporal regression of physiological 'noise' bears the risk of removing meaningful signal from the data (Iacovella and Hasson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous methodological research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "e18e33f6-aa3c-44e9-a424-ca8cb66e9349",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C90",
+      "claim": "The methodological approach used in this study cannot completely rule out the possibility that some of the connectivity observed could be the result of highly structured physiological noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the methodological approach used in this study cannot completely rule out the possibility that some of the connectivity we are seeing could be the result of highly structured physiological noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of methodological limitations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "d627f1a8-ee2e-4352-af54-3e9c4115c9f8",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C91",
+      "claim": "The simultaneous in-vivo assessment of the different cardiovascular control systems in humans will deepen our understanding of these systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, we anticipate that the simultaneous in-vivo assessment of the different cardiovascular control systems in humans will deepen our understanding of these systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential impact of the research approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "ef392578-75de-42a1-be12-46cc6cef0147",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C92",
+      "claim": "Access to individual neural signatures may facilitate development of novel pharmaceutical and electroceutical cardiovascular treatments, leading to an era of cardiovascular precision medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, access to individual neural signatures may facilitate development of novel pharmaceutical and electroceutical cardiovascular treatments, leading to an era of cardiovascular precision medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications of the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "c7251d26-e31b-4a87-a1fe-a66250b57d10",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C93",
+      "claim": "The study took place at Hannover Medical School and was approved by the local ethics committee (# 3404\u20132016).",
+      "claim_type": "EXPLICIT",
+      "source": "The study took place at Hannover Medical School. It complied with the Declaration of Helsinki, and was approved by the local ethics committee (# 3404\u20132016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study's ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "2dfe60fa-7c00-4fe9-a11c-72fed14d2ec6",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C94",
+      "claim": "22 healthy normotensive subjects (24 \u00b1 5 years, 22.1 \u00b1 3.1 kg/m\u00b2, 123 \u00b1 8/62 \u00b1 7 mmHg, eight male) took part in the study after giving written informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "22 healthy normotensive subjects (24 \u00b1 5 years, 22.1 \u00b1 3.1 kg/m\u00b2, 123 \u00b1 8/62 \u00b1 7 mmHg, eight male) took part in the study after giving written informed consent and consent to publish their data anonimously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "660d9b3c-45f0-48e0-b0d8-bbc068299de5",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C95",
+      "claim": "Negative pressure of 30 mmHg was built up inside a custom-made polycarbonate chamber using a vacuum cleaner and a pressure gauge.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated orthostatic stress by means of lower body negative pressure (LBNP) (Goswami et al., 2008). Negative pressure of 30 mmHg was built up inside a custom-made polycarbonate chamber using a vacuum cleaner and a pressure gauge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "6949c7c7-19ca-4e5d-8a54-6af6e3fb0d92",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C96",
+      "claim": "The stimulation paradigm consisted of four alternating five-minute blocks, two with and two without negative pressure, starting with the negative pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation paradigm consisted of four alternating five-minute blocks, two with and two without negative pressure, starting with the negative pressure (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental protocol shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "3ae55a9d-28f8-4ddc-8435-06c44da04779",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C97",
+      "claim": "Transitions between pressure states were excluded to avoid excessive movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Transitions between pressure states were excluded to avoid excessive movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "0c1f759e-6f9a-41c1-a0aa-2de4c9e1f2e7",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C98",
+      "claim": "All MR images were acquired on a Siemens 3T MAGNETOM Skyra using a 64-channel head/neck coil.",
+      "claim_type": "EXPLICIT",
+      "source": "All MR images were acquired on a Siemens 3T MAGNETOM Skyra using a 64-channel head/neck coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MRI equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "e3132e82-472b-43b5-bb4d-73fc0c541fed",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C99",
+      "claim": "fMRI data preprocessing was optimised for the brainstem and hypothalamus by avoiding superfluous resampling steps and unnecessary smoothing.",
+      "claim_type": "EXPLICIT",
+      "source": "fMRI data preprocessing was optimised for the brainstem and hypothalamus by avoiding superfluous resampling steps and unnecessary smoothing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the preprocessing approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "2ad2813a-6eec-4f9d-bd30-2dab08a26776",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C100",
+      "claim": "Motion correction and unwarping were applied in a single transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "On that account, motion correction (MCFLIRT [Jenkinson et al., 2002]) and unwarping (topup [Andersson et al., 2003]) were applied in a single transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the preprocessing steps with citations to the methods used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "68a686bd-ff4b-4312-b296-00e00902d744",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C101",
+      "claim": "The fMRI data were not smoothed.",
+      "claim_type": "EXPLICIT",
+      "source": "The data were not smoothed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the preprocessing approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "359b678e-400e-4006-a014-f50f4bf2b4b9",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C102",
+      "claim": "Two study templates were generated using Advanced Normalization Tools (ANTs): one using the unwarped EPI reference images and one using the T1-images.",
+      "claim_type": "EXPLICIT",
+      "source": "Two study templates were generated using Advanced Normalization Tools (ANTs [Avants et al., 2008]). The first one using the unwarped EPI reference images (II); the second one using the T1-images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the template generation process with citation to the software used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "9b7371d2-bd06-45d2-8fa7-0cdd1b10da78",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C103",
+      "claim": "The ICA dimensionality of 49 was derived by test-retest reproducibility analysis in the range between 1 and 100 dimensions using 30 random split-half samplings.",
+      "claim_type": "EXPLICIT",
+      "source": "The ICA dimensionality of 49 was derived by test-retest reproducibility analysis in the range between 1 and 100 dimensions using 30 random split-half samplings (mICA toolbox [Moher Alsady et al., 2016]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the method for determining optimal ICA dimensionality with citation to the toolbox used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "01b9d58a-2ebc-4933-8e5b-9988a4cc6846",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C104",
+      "claim": "A dimensionality of 49 was found to maximise mean reproducibility (rmean = 0.80 \u00b1 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "After excluding all values with ICA non-convergence, a dimensionality of 49 was found to maximise mean reproducibility (rmean = 0.80 \u00b1 0.01) (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the reproducibility analysis shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "099b56b1-5a05-48b5-8eea-b0f780d92ebf",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C105",
+      "claim": "Components were considered unspecific if the weighted quotient of activation in grey and white matter versus cerebrospinal fluid was smaller than one standard deviation from the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated the weighted quotient of activation in grey and white matter versus cerebrospinal fluid (probabilistic masks obtained using FAST [Zhang et al., 2001]). Components were considered unspecific if this quotient was smaller than one standard deviation from the mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the criterion for identifying unspecific components with citation to the method used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "755904d4-f4e6-4a46-a51b-bf059a9be819",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C106",
+      "claim": "The LF band was defined by the position of the Mayer peak in the subjects' blood pressure variability.",
+      "claim_type": "EXPLICIT",
+      "source": "For the spectral analysis we defined two frequency bands, low frequency LF (0.1\u00b10.03 Hz) and high frequency HF (0.28 \u00b1 0.06 Hz) by looking at the spectral peaks of the autonomic recordings. The LF band was defined by the position of the Mayer peak in our subjects' blood pressure variability, whereas the HF band corresponds to the respiration frequency (mean \u00b1 standard deviation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the frequency bands were defined based on the physiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "2db0a28c-6722-49b4-b909-10430644dd29",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C107",
+      "claim": "The HF band corresponds to the respiration frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The LF band was defined by the position of the Mayer peak in our subjects' blood pressure variability, whereas the HF band corresponds to the respiration frequency (mean \u00b1 standard deviation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the HF band was defined based on the physiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "0fda9012-fb5e-4899-8e8e-12ffea7cf653",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C108",
+      "claim": "Components showing significant changes in both spectral and functional connectivity metrics were assumed to be involved in cardiovascular regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Components showing significant changes in both metrics, that is spectral and functional connectivity, were assumed to be involved in cardiovascular regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the criterion for identifying cardiovascular control centres.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "f23b6fea-5b63-49cf-879f-46b6af8d551f",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C109",
+      "claim": "Physiological noise regression had little effect on the masked ICA results as evidenced by the functional segmentation still showing the same known anatomical subdivisions of the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our supplementary analyses showed that our results are not driven by physiological noise. As the first analysis revealed, physiological noise regression had little effect on the masked ICA results as evidenced by the functional segmentation still showing the same known anatomical subdivisions of the hypothalamus (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the supplementary analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "ef28d3aa-6d93-4d11-8f7d-ce70866547a6",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C110",
+      "claim": "The ICs matching the five hypothalamic regions from the main analysis (spatial correlation r > 0.89) showed similar, yet smaller functional connectivity changes in response to cardiovascular challenge after physiological noise regression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the ICs matching our five hypothalamic regions from the main analysis (spatial correlation r > 0.89) showed similar, yet smaller functional connectivity changes in response to cardiovascular challenge (Figure 2, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the supplementary analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "ccaebe4d-fc7e-49ed-a54b-7bec872513d1",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C111",
+      "claim": "Four of the five hypothalamic regions from the main analysis showed significant functional connectivity with cerebral regions that was clearly dominated by grey matter.",
+      "claim_type": "EXPLICIT",
+      "source": "The second supplementary analysis revealed that four of the five hypothalamic regions from the main analysis showed significant functional connectivity with cerebral regions that was clearly dominated by grey matter (Figure 2\u2014figure supplement 4), while noise components would be expected to mainly show white matter or ventricular connectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the supplementary analysis shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "d1c3a3e5-4cce-4038-ae99-e9cb6ad205cc",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "claim_id": "C112",
+      "claim": "The PVN/PH showed very little cerebral connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The one remaining region was the PVN/PH, which showed very little cerebral connectivity at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the supplementary analysis shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a211a586-e4ac-46b5-9e29-d04a81fbe1e4",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LBNP successfully induced orthostatic stress with significant reductions in systolic blood pressure and interbeat interval, increased low-frequency blood pressure variability, and decreased high-frequency heart rate variability, indicating sympathetic activation and vagal withdrawal without changes in respiration or head movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 provide converging physiological evidence with appropriate statistical tests (paired t-tests, p<0.05, effect sizes reported). The pattern of autonomic changes (increased LFBPV, decreased HFHRV) is consistent with established cardiovascular physiology during orthostatic stress. Control measures (respiration, head motion) strengthen the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "6a2e504f-6d2d-4515-acd4-677c044164d9",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Masked ICA with optimized dimensionality (49 components, reproducibility r=0.80\u00b10.01) successfully segmented the hypothalamus into functionally distinct regions matching known anatomical subdivisions (three medio-lateral zones, three rostro-caudal regions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36, C104 describe a systematic approach to determining optimal ICA dimensionality through reproducibility analysis. The resulting segmentation's correspondence with post-mortem anatomy (C36) provides anatomical validation. However, the removal of 6 'unspecific' components (C34, C105) relies on a somewhat arbitrary threshold criterion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Five hypothalamic regions fulfilled dual criteria for cardiovascular involvement (functional connectivity and spectral changes): right anterior LH/SON, bilateral tuberal LH/SON, right tuberal PVN/PH, and arcuate nucleus, each showing distinct patterns of BOLD spectral changes and connectivity with brainstem regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C52 identify specific regions with statistical support (t-tests, p\u22640.05). However, critical concerns include: (1) interpretation of HF BOLD signals (~0.28 Hz) requires assumptions beyond canonical HRF (C83); (2) multiple comparisons across 43 regions and two frequency bands without clear correction; (3) physiological noise confounds acknowledged but not fully resolved (C85-C90); (4) some p-values are marginal (e.g., C51: p\u22640.05 for LF in Arc).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "1d8928c7-3b4e-4820-949c-5ccd79e19c2e",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The first hypothalamic cardiovascular system represents the 'textbook' baroreflex arc, characterized by PVN/PH connectivity with ipsilateral RVLM and Amb, with supplementary analysis showing NTS connectivity but no CVLM involvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C61 propose a baroreflex system based on connectivity patterns (C58, C60) and interpretation (C59). The absence of CVLM connectivity (C61) contradicts classical baroreflex models, which the authors acknowledge but do not adequately explain. The strictly right-sided lateralization lacks mechanistic justification. The interpretation relies heavily on animal literature (C62-C64) which may not directly translate to humans.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "8873f3d7-b55f-4f40-8ff4-143385cc56bc",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The second hypothalamic system involves right anterior LH/SON connectivity with ipsilateral dorsal medulla (NTS, DMN), potentially representing neuroendocrine regulation through NTS-SON projections triggering vasoactive hormone release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C71 identify connectivity patterns (C67) consistent with animal studies (C68-C69). However, the functional interpretation (C70-C71) is explicitly speculative ('potentially', 'may'), supported only by citations rather than direct evidence. The unilateral right-sided pattern lacks explanation. No endocrine measurements were obtained to validate the proposed hormonal mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "c561ae7d-b7eb-4bb6-9823-1e81ac279c7e",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The third hypothalamic system involves the arcuate nucleus showing connectivity with three distinct medullary regions, potentially representing integration of leptin-melanocortin and renin-angiotensin-aldosterone systems relevant to obesity-associated hypertension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C76 describe connectivity patterns with statistical support. However, the functional interpretation (C79-C80) regarding leptin-melanocortin and renin-angiotensin systems is based entirely on prior literature citations without direct experimental evidence. The arcuate nucleus has received less attention than other regions (acknowledged in text), making interpretation more speculative. The clinical relevance to obesity-hypertension (C80) is proposed but not tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "c45c0eb0-e69a-4b98-9bff-a1ff89ebc212",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The bilateral tuberal LH/SON showed distinct connectivity patterns restricted to the hypothalamus, with positive within-nucleus changes bilaterally and negative connectivity between left LH/SON and arcuate nucleus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 describe specific connectivity patterns that distinguish tuberal LH/SON from other identified regions. The within-nucleus connectivity interpretation (C42) is reasonable, though the functional significance of the asymmetric arcuate connectivity (C43) remains unclear. These findings are supported by the data shown in Figure 2b-c.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "a153d699-538d-4677-9aef-73f55cf70a93",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Low-dimensional ICA analysis revealed that three of five cardiovascular regions (right anterior LH/SON, PVN/PH, Arc) had low-dimensional equivalents that included portions of PVN/PH, while bilateral tuberal LH/SON did not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 describe inter-dimensional matching results shown in Figure 3. The finding that low-dimensional components include PVN/PH portions (C55) supports the central role of this region. The absence of low-dimensional equivalents for tuberal LH/SON (C54) suggests these may represent more specialized functional units. This analysis provides convergent evidence for the importance of identified regions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "2fbfe6ad-aa7c-47aa-b791-38d538885da3",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The selection of hypothalamic nuclei involved in cardiovascular regulation agrees with previous Fos-like protein expression studies in response to prolonged hypotension in animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 provides important cross-validation with animal studies (Li and Dampney, 1994), shown in Figure 2\u2014figure supplement 5. This agreement strengthens confidence in the identified regions, though differences between acute LBNP in humans and prolonged hypotension in animals should be noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "883b0a2c-edf2-494b-9d77-4a3054eb7c6e",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Supplementary analyses demonstrated that results were not driven by physiological noise: segmentation remained consistent after noise regression, matched components showed similar connectivity changes, and four of five regions showed grey matter-dominated connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C112 describe two supplementary analyses addressing physiological noise concerns. The preservation of anatomical segmentation (C109) and similar (though smaller) connectivity changes after noise regression (C110) support robustness. Grey matter connectivity dominance (C111) argues against noise artifacts. However, the authors appropriately acknowledge that complete disentanglement of neuronal from non-neuronal signals is impossible (C85, C90).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "8cff7a6c-f804-488c-8052-0a678220427d",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study's interpretation of BOLD signals in high-frequency bands (particularly HF ~0.28 Hz) requires assuming BOLD extends beyond the canonical frequency range (<0.1 Hz), an assumption supported by recent studies but representing a methodological limitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C18-C19, C83-C84 acknowledge a critical methodological assumption. While recent studies (Chen and Glover 2015, Lewis et al. 2016) support high-frequency BOLD oscillations (C19, C84), this remains an active area of investigation. The assumption is necessary for interpreting HF spectral changes (C83) but introduces uncertainty into the results. The authors appropriately flag this as requiring caution (C85).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "f4655ee3-5cdc-481b-9f44-7bfcc9266603",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Complete disentanglement of neuronal from non-neuronal BOLD signals is impossible due to multiple physiological noise sources, their interdependence, coordinated vascular regulation across brain regions, and risks of removing meaningful signal through regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C90 provide an honest assessment of methodological limitations. The complexity of physiological noise (C86), interdependence of cardiac and respiratory signals (C87), coordinated vascular regulation (C88), and risks of over-correction (C89) are well-established issues in fMRI. The acknowledgment that some connectivity could reflect structured physiological noise (C90) is appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "49f50fa8-0163-4f20-aa70-17a900acc4a2",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study employed optimized high-resolution fMRI preprocessing (2\u00d72\u00d72 mm\u00b3, 1.23s) with advanced distortion correction, symmetric diffeomorphic registration, no spatial smoothing, and deliberate retention of physiological fluctuations to preserve cardiovascular signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25, C99-C101 describe methodological choices appropriate for subcortical imaging. The spatial resolution balances anatomical specificity with signal-to-noise ratio. The decision not to smooth (C24, C101) and not to regress physiological signals (C25) is justified for cardiovascular studies, though it introduces the noise confounds discussed elsewhere. Single-step motion correction and unwarping (C100) minimizes resampling artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establish that cardiovascular regulation involves multiple neural and endocrine systems coordinated by brainstem and hypothalamic centers, with most knowledge derived from animal studies and limited human mechanistic data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C12 provide standard background knowledge supported by appropriate citations. These establish the scientific context and rationale for the study. Claim C10 is explicitly presented as an assumption, which is appropriate. The gap in human mechanistic studies (C3, C9, C12) justifies the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "a9a6f3ca-a44e-4c8b-9a76-3affcc22658c",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The LBNP experimental paradigm at -30 mmHg simulates orthostatic stress and recruits both neural and endocrine cardiovascular mechanisms, with neural regulation measurable through characteristic LF and HF oscillations in blood pressure and heart rate variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 describe the experimental approach with appropriate citations. The LBNP method is well-established (C13-C14), and the physiological measures (C15-C17) are standard in autonomic research. The frequency band definitions (LFBPV ~0.1 Hz for sympathetic, HFHRV ~0.28 Hz for vagal) are supported by cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "6e8d2e7b-319c-49b0-b639-e86e2a4bef92",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Subcortical cardiovascular control regions in hypothalamus and brainstem are difficult to investigate in humans due to small size, depth, and physiological noise, necessitating specialized imaging approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 accurately describe known anatomical locations (with appropriate citations) and methodological challenges. The difficulties cited (C22) are well-established in the neuroimaging literature and justify the specialized methods employed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "6dadd6a3-ab01-4669-ae66-57f2a51c2633",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Animal studies demonstrate PVN projections to RVLM and Amb involving multiple neurotransmitters, with clinical evidence showing that baroreflex damage causes blood pressure abnormalities and that baroreceptor stimulation has variable therapeutic efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 summarize relevant animal and clinical literature with appropriate citations. These provide context for interpreting the proposed baroreflex system. The clinical relevance (C65-C66) supports the translational importance of understanding central baroreflex control in humans.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "63f14e67-3850-4368-8dd5-56ab29cfe1f8",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior literature establishes that the arcuate nucleus receives NTS input, links to cardiovascular organs through multiple lines of evidence, and may integrate leptin-melanocortin and renin-angiotensin systems relevant to obesity-hypertension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C77-C80 summarize relevant literature with appropriate citations. These provide context for the less-studied arcuate system. The clinical relevance to obesity-hypertension (C80) is appropriately presented as proposed rather than established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "0c331476-727d-4eff-84dd-8686fc71d5a7",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors anticipate that simultaneous in-vivo assessment of cardiovascular control systems will deepen understanding and may facilitate development of novel pharmaceutical and electroceutical treatments for cardiovascular precision medicine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are explicitly speculative statements about future impact ('anticipate', 'may facilitate'). These are appropriate forward-looking statements in a discussion section, though they represent hopes rather than demonstrated outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    },
+    {
+      "id": "b5478217-f5ba-4240-8151-83f2edcbf283",
+      "content_id": "7a51d3ec-3bf8-43c6-bf47-d966cc5711c6",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Methods description covering ethics approval, participant characteristics (n=22 healthy normotensive subjects), LBNP apparatus and protocol, MRI acquisition parameters, template generation, ICA dimensionality determination, component specificity testing, and frequency band definitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C98, C102-C103, C105-C108 provide standard methods descriptions. Sample size (n=22) is modest but reasonable for this type of study. The methods are generally well-described with appropriate citations to software and prior work. The criterion for identifying cardiovascular centers (C108) requiring both spectral and connectivity changes is reasonable but somewhat arbitrary.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:49:52.041095Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "16682fbd-31d5-44f0-b46a-5b85cd58974a",
+      "result_id": "a211a586-e4ac-46b5-9e29-d04a81fbe1e4"
+    },
+    {
+      "claim_id": "8920528f-915d-4a68-bd7f-01df52bee2b3",
+      "result_id": "a211a586-e4ac-46b5-9e29-d04a81fbe1e4"
+    },
+    {
+      "claim_id": "1874b375-2fbf-4875-9f4a-3fefbf72f03b",
+      "result_id": "a211a586-e4ac-46b5-9e29-d04a81fbe1e4"
+    },
+    {
+      "claim_id": "befba571-2b5d-4ccc-ba39-11b59607c0aa",
+      "result_id": "a211a586-e4ac-46b5-9e29-d04a81fbe1e4"
+    },
+    {
+      "claim_id": "f40b0905-9b5b-4773-96ae-820098e4bbf3",
+      "result_id": "a211a586-e4ac-46b5-9e29-d04a81fbe1e4"
+    },
+    {
+      "claim_id": "59386b83-969e-4a3f-8e72-d9831d186544",
+      "result_id": "a211a586-e4ac-46b5-9e29-d04a81fbe1e4"
+    },
+    {
+      "claim_id": "41b76227-2bb7-49e0-9882-140cc491a983",
+      "result_id": "a211a586-e4ac-46b5-9e29-d04a81fbe1e4"
+    },
+    {
+      "claim_id": "f7438f42-d8ed-4802-82bf-d1e1e78041c7",
+      "result_id": "6a2e504f-6d2d-4515-acd4-677c044164d9"
+    },
+    {
+      "claim_id": "0c8e707b-56ae-4acc-b6d2-fc473131eeea",
+      "result_id": "6a2e504f-6d2d-4515-acd4-677c044164d9"
+    },
+    {
+      "claim_id": "4487b73b-3fbe-4b51-8605-8d7cb22ba02e",
+      "result_id": "6a2e504f-6d2d-4515-acd4-677c044164d9"
+    },
+    {
+      "claim_id": "cb637599-db73-4e2f-a7db-246917bcb32e",
+      "result_id": "6a2e504f-6d2d-4515-acd4-677c044164d9"
+    },
+    {
+      "claim_id": "01b9d58a-2ebc-4933-8e5b-9988a4cc6846",
+      "result_id": "6a2e504f-6d2d-4515-acd4-677c044164d9"
+    },
+    {
+      "claim_id": "eb9e8744-0cd0-4feb-ac6b-6049ec0a87f5",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "8fabd8aa-6b68-46a6-8395-804b448ab522",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "3892cf62-09e3-4cb4-96c4-8dcb92983e23",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "3efa5d5b-1ada-417c-af2f-1972874972cd",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "2f4baacd-96ba-4f11-8ef7-aa9ed4e831ff",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "6255fed3-8124-40e2-ae69-83a36b470478",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "81e92d55-a010-4111-bdf8-2a2ce30b25cd",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "bb62dac3-1876-4a32-b836-2504e8b08de8",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "05ebcf99-6522-4713-aad0-cf784f089878",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "bc4fb902-6880-4ab9-bc31-fd0f021bbf99",
+      "result_id": "adeca2eb-a700-4228-ad2e-6605b6ff5fcd"
+    },
+    {
+      "claim_id": "ad356350-d37d-4fb6-8372-c96d319db9fa",
+      "result_id": "1d8928c7-3b4e-4820-949c-5ccd79e19c2e"
+    },
+    {
+      "claim_id": "f31f0745-b439-463c-b45f-6d6821f9b669",
+      "result_id": "1d8928c7-3b4e-4820-949c-5ccd79e19c2e"
+    },
+    {
+      "claim_id": "d518fc1e-9464-410c-b579-8e08e9599a9a",
+      "result_id": "1d8928c7-3b4e-4820-949c-5ccd79e19c2e"
+    },
+    {
+      "claim_id": "0e2ebf7b-f8bc-4f34-8811-3e63d22d874c",
+      "result_id": "1d8928c7-3b4e-4820-949c-5ccd79e19c2e"
+    },
+    {
+      "claim_id": "56d9407f-fbe1-4e8e-8e1a-bcb8b0abe223",
+      "result_id": "1d8928c7-3b4e-4820-949c-5ccd79e19c2e"
+    },
+    {
+      "claim_id": "ca81d156-17fd-4fa4-8890-aa18e1f848e3",
+      "result_id": "8873f3d7-b55f-4f40-8ff4-143385cc56bc"
+    },
+    {
+      "claim_id": "5d08a21c-46c9-49b3-ac9b-4f5c5d4e0aaf",
+      "result_id": "8873f3d7-b55f-4f40-8ff4-143385cc56bc"
+    },
+    {
+      "claim_id": "5ec36dc5-f5bb-4a53-b023-222502f20da4",
+      "result_id": "8873f3d7-b55f-4f40-8ff4-143385cc56bc"
+    },
+    {
+      "claim_id": "cd81cee9-ead9-4410-ac62-f8d19217aabb",
+      "result_id": "8873f3d7-b55f-4f40-8ff4-143385cc56bc"
+    },
+    {
+      "claim_id": "66cc8362-a0ae-4c04-ba66-19d283bcccaa",
+      "result_id": "8873f3d7-b55f-4f40-8ff4-143385cc56bc"
+    },
+    {
+      "claim_id": "75a3bb59-774f-4924-bf91-b916a45a4657",
+      "result_id": "c561ae7d-b7eb-4bb6-9823-1e81ac279c7e"
+    },
+    {
+      "claim_id": "1a9abbba-105c-4be7-ad54-7f7c2136be41",
+      "result_id": "c561ae7d-b7eb-4bb6-9823-1e81ac279c7e"
+    },
+    {
+      "claim_id": "66925932-fb39-4ee5-9265-a2f002a1cab5",
+      "result_id": "c561ae7d-b7eb-4bb6-9823-1e81ac279c7e"
+    },
+    {
+      "claim_id": "f9b62b72-3925-4ffe-a1af-f47687a9fe12",
+      "result_id": "c561ae7d-b7eb-4bb6-9823-1e81ac279c7e"
+    },
+    {
+      "claim_id": "07abc6cf-c0dc-4048-83a9-fb9485887bca",
+      "result_id": "c561ae7d-b7eb-4bb6-9823-1e81ac279c7e"
+    },
+    {
+      "claim_id": "af5687a1-2333-4581-b41a-1e27a74114da",
+      "result_id": "c561ae7d-b7eb-4bb6-9823-1e81ac279c7e"
+    },
+    {
+      "claim_id": "50316b58-d025-4284-80ac-474dbbc1e1e4",
+      "result_id": "c561ae7d-b7eb-4bb6-9823-1e81ac279c7e"
+    },
+    {
+      "claim_id": "edfeab71-090a-4d29-a3aa-e4ce2d5a93d5",
+      "result_id": "c561ae7d-b7eb-4bb6-9823-1e81ac279c7e"
+    },
+    {
+      "claim_id": "82c354fd-7a57-4951-af47-14842520dddc",
+      "result_id": "c45c0eb0-e69a-4b98-9bff-a1ff89ebc212"
+    },
+    {
+      "claim_id": "ed7822a1-dfb6-43e4-a3f4-3fdf652e057c",
+      "result_id": "c45c0eb0-e69a-4b98-9bff-a1ff89ebc212"
+    },
+    {
+      "claim_id": "85392f88-205e-4bd7-96d9-c71c1c8e8cf6",
+      "result_id": "c45c0eb0-e69a-4b98-9bff-a1ff89ebc212"
+    },
+    {
+      "claim_id": "98fefd90-b63b-42ae-a9f1-29ec2ef0e3ff",
+      "result_id": "c45c0eb0-e69a-4b98-9bff-a1ff89ebc212"
+    },
+    {
+      "claim_id": "a10f109e-5b41-47d9-9353-c6b3b5c4eae7",
+      "result_id": "a153d699-538d-4677-9aef-73f55cf70a93"
+    },
+    {
+      "claim_id": "7cd7898c-7fd3-4f6b-a5cd-7fe8bcd64a4e",
+      "result_id": "a153d699-538d-4677-9aef-73f55cf70a93"
+    },
+    {
+      "claim_id": "87fbbec9-47df-4b22-b6f6-40cc65af830e",
+      "result_id": "a153d699-538d-4677-9aef-73f55cf70a93"
+    },
+    {
+      "claim_id": "c0b49d31-3dda-47ac-9913-fd7f20daceff",
+      "result_id": "2fbfe6ad-aa7c-47aa-b791-38d538885da3"
+    },
+    {
+      "claim_id": "f23b6fea-5b63-49cf-879f-46b6af8d551f",
+      "result_id": "883b0a2c-edf2-494b-9d77-4a3054eb7c6e"
+    },
+    {
+      "claim_id": "ef28d3aa-6d93-4d11-8f7d-ce70866547a6",
+      "result_id": "883b0a2c-edf2-494b-9d77-4a3054eb7c6e"
+    },
+    {
+      "claim_id": "ccaebe4d-fc7e-49ed-a54b-7bec872513d1",
+      "result_id": "883b0a2c-edf2-494b-9d77-4a3054eb7c6e"
+    },
+    {
+      "claim_id": "d1c3a3e5-4cce-4038-ae99-e9cb6ad205cc",
+      "result_id": "883b0a2c-edf2-494b-9d77-4a3054eb7c6e"
+    },
+    {
+      "claim_id": "15bbec7b-b0b6-42ef-a496-acaa891b71a5",
+      "result_id": "8cff7a6c-f804-488c-8052-0a678220427d"
+    },
+    {
+      "claim_id": "9490e15a-a5e1-4355-a657-183d2ae1aafa",
+      "result_id": "8cff7a6c-f804-488c-8052-0a678220427d"
+    },
+    {
+      "claim_id": "394fd7c9-620f-445f-ba44-190cb3088670",
+      "result_id": "8cff7a6c-f804-488c-8052-0a678220427d"
+    },
+    {
+      "claim_id": "1c599028-e76a-4a73-8069-de9519ab6cf6",
+      "result_id": "8cff7a6c-f804-488c-8052-0a678220427d"
+    },
+    {
+      "claim_id": "6cfb77b3-e149-4ee4-978a-6038b3144c76",
+      "result_id": "f4655ee3-5cdc-481b-9f44-7bfcc9266603"
+    },
+    {
+      "claim_id": "51b2474c-1b0a-463a-a0b2-ebc42e2e8dec",
+      "result_id": "f4655ee3-5cdc-481b-9f44-7bfcc9266603"
+    },
+    {
+      "claim_id": "4899c6d5-91a5-426f-b528-ac0f3ebe719a",
+      "result_id": "f4655ee3-5cdc-481b-9f44-7bfcc9266603"
+    },
+    {
+      "claim_id": "5c847897-8135-4275-83cb-3f4f14abfce9",
+      "result_id": "f4655ee3-5cdc-481b-9f44-7bfcc9266603"
+    },
+    {
+      "claim_id": "c145a308-aa86-4e25-938f-b66dc1a35929",
+      "result_id": "f4655ee3-5cdc-481b-9f44-7bfcc9266603"
+    },
+    {
+      "claim_id": "e18e33f6-aa3c-44e9-a424-ca8cb66e9349",
+      "result_id": "f4655ee3-5cdc-481b-9f44-7bfcc9266603"
+    },
+    {
+      "claim_id": "22084a57-35a5-414e-8959-670fd7d9f450",
+      "result_id": "49f50fa8-0163-4f20-aa70-17a900acc4a2"
+    },
+    {
+      "claim_id": "b3fdf53b-1ba5-4c12-8eef-2de5f253cafd",
+      "result_id": "49f50fa8-0163-4f20-aa70-17a900acc4a2"
+    },
+    {
+      "claim_id": "9e2ff8d3-4c71-43a0-980d-50a353b42691",
+      "result_id": "49f50fa8-0163-4f20-aa70-17a900acc4a2"
+    },
+    {
+      "claim_id": "e3132e82-472b-43b5-bb4d-73fc0c541fed",
+      "result_id": "49f50fa8-0163-4f20-aa70-17a900acc4a2"
+    },
+    {
+      "claim_id": "2ad2813a-6eec-4f9d-bd30-2dab08a26776",
+      "result_id": "49f50fa8-0163-4f20-aa70-17a900acc4a2"
+    },
+    {
+      "claim_id": "68a686bd-ff4b-4312-b296-00e00902d744",
+      "result_id": "49f50fa8-0163-4f20-aa70-17a900acc4a2"
+    },
+    {
+      "claim_id": "e529ba96-0661-4abf-aba4-47b744361da2",
+      "result_id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9"
+    },
+    {
+      "claim_id": "ed198fbe-1029-4e5e-b1e5-4799d62fa3ba",
+      "result_id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9"
+    },
+    {
+      "claim_id": "39a25995-1bad-4a92-bbc5-79aefe02c8d4",
+      "result_id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9"
+    },
+    {
+      "claim_id": "fd5d3855-17d5-42f8-8493-6a1311e651f9",
+      "result_id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9"
+    },
+    {
+      "claim_id": "3105bf09-7766-4203-aa5d-23e457110716",
+      "result_id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9"
+    },
+    {
+      "claim_id": "6ea596f8-6dff-4ae3-860f-0d11592c562b",
+      "result_id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9"
+    },
+    {
+      "claim_id": "cd70ec8d-1c59-473f-bd15-42a91be20bf0",
+      "result_id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9"
+    },
+    {
+      "claim_id": "86f47820-b3d3-4623-bf8d-1dc759fba2a9",
+      "result_id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9"
+    },
+    {
+      "claim_id": "0550f206-3ce0-46a5-b191-359f9c1e5bf4",
+      "result_id": "f2a9260b-2cdc-4dd0-96f7-3195d75b56a9"
+    },
+    {
+      "claim_id": "f4a1a64b-db9a-4d9b-8882-60e0fe33dd3e",
+      "result_id": "a9a6f3ca-a44e-4c8b-9a76-3affcc22658c"
+    },
+    {
+      "claim_id": "886efc68-2d7b-4f77-9ce5-d8e8f6f81ea6",
+      "result_id": "a9a6f3ca-a44e-4c8b-9a76-3affcc22658c"
+    },
+    {
+      "claim_id": "17ea941d-d76d-4349-8785-6c3bdcb224c1",
+      "result_id": "a9a6f3ca-a44e-4c8b-9a76-3affcc22658c"
+    },
+    {
+      "claim_id": "8ef3fe17-6c6e-4d8c-8079-e608b47d453f",
+      "result_id": "a9a6f3ca-a44e-4c8b-9a76-3affcc22658c"
+    },
+    {
+      "claim_id": "1b90d4a3-8417-475b-ab05-03dd2fdc80ac",
+      "result_id": "a9a6f3ca-a44e-4c8b-9a76-3affcc22658c"
+    },
+    {
+      "claim_id": "60d0b9f7-d3a2-46df-a6a1-9056f1953ab0",
+      "result_id": "6e8d2e7b-319c-49b0-b639-e86e2a4bef92"
+    },
+    {
+      "claim_id": "27ddb5c3-dc0c-43f9-a555-b930681e4873",
+      "result_id": "6e8d2e7b-319c-49b0-b639-e86e2a4bef92"
+    },
+    {
+      "claim_id": "6c5045c3-bfb5-4a11-b8e2-f67f8aed7bb6",
+      "result_id": "6e8d2e7b-319c-49b0-b639-e86e2a4bef92"
+    },
+    {
+      "claim_id": "1fe842f3-6ad1-49d4-a50b-c98be664b20f",
+      "result_id": "6dadd6a3-ab01-4669-ae66-57f2a51c2633"
+    },
+    {
+      "claim_id": "53381981-4689-4855-8b5c-7de78d5e4326",
+      "result_id": "6dadd6a3-ab01-4669-ae66-57f2a51c2633"
+    },
+    {
+      "claim_id": "27848085-21a6-4c66-b66d-5adc9c033fbc",
+      "result_id": "6dadd6a3-ab01-4669-ae66-57f2a51c2633"
+    },
+    {
+      "claim_id": "cd150f6f-1935-44a0-933e-93e7b9253b53",
+      "result_id": "6dadd6a3-ab01-4669-ae66-57f2a51c2633"
+    },
+    {
+      "claim_id": "b005c147-0ede-4cfb-acb9-eeafa09490a6",
+      "result_id": "6dadd6a3-ab01-4669-ae66-57f2a51c2633"
+    },
+    {
+      "claim_id": "c1f874b5-c1cd-4a8c-b0e0-f9af8980145a",
+      "result_id": "63f14e67-3850-4368-8dd5-56ab29cfe1f8"
+    },
+    {
+      "claim_id": "07abc6cf-c0dc-4048-83a9-fb9485887bca",
+      "result_id": "63f14e67-3850-4368-8dd5-56ab29cfe1f8"
+    },
+    {
+      "claim_id": "af5687a1-2333-4581-b41a-1e27a74114da",
+      "result_id": "63f14e67-3850-4368-8dd5-56ab29cfe1f8"
+    },
+    {
+      "claim_id": "50316b58-d025-4284-80ac-474dbbc1e1e4",
+      "result_id": "63f14e67-3850-4368-8dd5-56ab29cfe1f8"
+    },
+    {
+      "claim_id": "edfeab71-090a-4d29-a3aa-e4ce2d5a93d5",
+      "result_id": "63f14e67-3850-4368-8dd5-56ab29cfe1f8"
+    },
+    {
+      "claim_id": "d627f1a8-ee2e-4352-af54-3e9c4115c9f8",
+      "result_id": "0c331476-727d-4eff-84dd-8686fc71d5a7"
+    },
+    {
+      "claim_id": "ef392578-75de-42a1-be12-46cc6cef0147",
+      "result_id": "0c331476-727d-4eff-84dd-8686fc71d5a7"
+    },
+    {
+      "claim_id": "c7251d26-e31b-4a87-a1fe-a66250b57d10",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "2dfe60fa-7c00-4fe9-a11c-72fed14d2ec6",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "660d9b3c-45f0-48e0-b0d8-bbc068299de5",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "6949c7c7-19ca-4e5d-8a54-6af6e3fb0d92",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "3ae55a9d-28f8-4ddc-8435-06c44da04779",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "0c1f759e-6f9a-41c1-a0aa-2de4c9e1f2e7",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "359b678e-400e-4006-a014-f50f4bf2b4b9",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "9b7371d2-bd06-45d2-8fa7-0cdd1b10da78",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "099b56b1-5a05-48b5-8eea-b0f780d92ebf",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "755904d4-f4e6-4a46-a51b-bf059a9be819",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "2db0a28c-6722-49b4-b909-10430644dd29",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    },
+    {
+      "claim_id": "0fda9012-fb5e-4899-8e8e-12ffea7cf653",
+      "result_id": "b5478217-f5ba-4240-8151-83f2edcbf283"
+    }
+  ],
+  "comparisons": []
+}

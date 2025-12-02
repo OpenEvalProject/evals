@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C23"
+    ],
+    "result": "ULP-4, a SUMO-specific peptidase in C. elegans, is specifically required for UPRmt activation but not for ER or heat shock stress responses. RNAi or mutation of ulp-4 impairs UPRmt induced by various mitochondrial stressors (antimycin A, spg-7 RNAi, cco-1 RNAi), while other SUMO peptidases (ULP-1, 2, 5) do not affect UPRmt. ULP-4 transcript levels increase during mitochondrial stress, and its overexpression rescues ulp-4 RNAi phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 and C23 provide converging evidence from multiple experimental approaches (RNAi, genetic mutants, overexpression, reporter assays) demonstrating ULP-4's specific role in UPRmt. The specificity is well-established through negative controls with other stress responses (C7-C10) and other ULP family members (C14-C15). The rescue experiments (C12) and mutant analysis (C13) strengthen causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Components of the SUMOylation machinery (E1 enzyme aos-1, E2 enzyme ubc-9, and SUMO ortholog smo-1) regulate UPRmt in a manner consistent with ULP-4's deSUMOylation activity. RNAi of aos-1 or ubc-9 potently induces UPRmt, while smo-1 RNAi induces weak UPRmt under unstressed conditions but enhances UPRmt under mitochondrial stress and rescues ulp-4 deficiency-suppressed UPRmt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 demonstrate that manipulating SUMOylation machinery produces effects consistent with ULP-4 functioning as a deSUMOylase in UPRmt. The genetic epistasis experiment (C22) showing smo-1 RNAi rescues ulp-4 deficiency is particularly strong evidence that ULP-4 acts through SUMO removal. The data support the model that SUMOylation negatively regulates UPRmt.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "DVE-1, a transcription factor in UPRmt, is SUMOylated at K327 residue by SMO-1. ULP-4 specifically interacts with DVE-1 (but not ULP-2 or ULP-5), and SUMOylated DVE-1 levels increase under ulp-4 RNAi. Mutation of K327 to arginine abolishes DVE-1 SUMOylation in both mammalian cells and C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C35 provide comprehensive evidence for DVE-1 SUMOylation at K327 through multiple complementary approaches: yeast two-hybrid (C24-C27), computational prediction (Figure 2D), site-directed mutagenesis (C32), and in vivo SUMOylation assays in both mammalian cells (C33) and C. elegans (C34). The specificity of ULP-4 interaction (C25) and the requirement of active SUMO (C27) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ULP-4 deSUMOylates DVE-1, as demonstrated by yeast three-hybrid assays showing ULP-4 (but not ULP-5) disrupts SMO-1-DVE-1 interaction, overexpression of ULP-4 decreases DVE-1 SUMOylation in worms, and the catalytic domain of ULP-4 deSUMOylates DVE-1 in mammalian cells. A CRISPR knock-in strain with DVE-1 K327R mutation bypasses the requirement for ulp-4 in UPRmt activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 establish ULP-4's deSUMOylase activity toward DVE-1 through multiple experimental systems. The genetic bypass experiment (C40) is particularly strong evidence that K327 SUMOylation is the critical target of ULP-4 in UPRmt signaling. The convergence of biochemical (C38-C39) and genetic (C40) evidence strongly supports the deSUMOylation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "SUMOylation regulates DVE-1 subcellular localization during mitochondrial stress. During mitochondrial stress, DVE-1 translocates from cytosol to nucleus, but ulp-4 RNAi abolishes this nuclear accumulation. DVE-1 K327R constitutively localizes in the nucleus even under ulp-4 RNAi, while SUMO-mimetic DVE-1 remains cytosolic. UPRmt induction correlates with DVE-1 nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 demonstrate that SUMOylation controls DVE-1 localization through microscopy experiments with appropriate controls. The constitutive nuclear localization of K327R mutant (C45) and cytosolic retention of SUMO-mimetic (C46) provide strong evidence for SUMOylation-dependent localization control. The correlation between DVE-1 localization and UPRmt activation (C44) with temporal analysis (C44, Figure 3E) strengthens the functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ATFS-1, another UPRmt transcription factor, is SUMOylated at K326 residue. ATFS-1 fragment (372-472) interacts specifically with ULP-4 (but not ULP-2 or ULP-5). K326 is identified as the SUMOylation site through in vivo assays in mammalian cells and C. elegans, and ULP-4 catalytic domain deSUMOylates ATFS-1. Expression of ATFS-1 K326R bypasses ulp-4 requirement for UPRmt activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 establish ATFS-1 SUMOylation at K326 through parallel approaches used for DVE-1. The specificity of ULP-4 interaction (C49), site identification through mutagenesis (C50-C52), deSUMOylation by ULP-4 (C53), and genetic bypass (C54) provide converging evidence. The parallel structure to DVE-1 analysis strengthens confidence in the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Unlike DVE-1, SUMOylation of ATFS-1 does not affect its nuclear translocation but instead regulates its protein stability. ulp-4 RNAi reduces ATFS-1 protein levels in a time-dependent manner, which is partially rescued by proteasome inhibitor MG132. ATFS-1 K326R mutation partially restores protein levels under ulp-4 RNAi, while SUMO-mimetic ATFS-1 shows reduced protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 demonstrate that SUMOylation affects ATFS-1 stability rather than localization, contrasting with DVE-1. The time-course experiment (C58), proteasome inhibitor rescue (C59), and comparison of K326R mutant versus SUMO-mimetic (C62-C63) provide strong evidence for SUMOylation-dependent protein stability. However, the partial rescue by MG132 (C59) suggests additional mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SUMOylation impairs ATFS-1 transcriptional activity. Mutation of ATFS-1 SUMOylation site (K326R) greatly enhances transcriptional activity in luciferase reporter assays, while SUMO-mimetic significantly impairs activity. Transcription of ATFS-1 target genes (gpd-2 and gst-14) is blocked by ulp-4 RNAi and partially rescued by ATFS-1 K326R mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 establish that SUMOylation negatively regulates ATFS-1 transcriptional activity through both reporter assays (C65-C66) and endogenous target gene expression (C67-C68). The convergence of biochemical and genetic evidence supports the conclusion. However, the partial rescue (C68) suggests SUMOylation of DVE-1 may also contribute to target gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ulp-4 is essential for worm fitness during mitochondrial stress. Worms treated with cco-1 RNAi show severe synthetic growth defects on ulp-4 RNAi, ulp-4 mutants show enhanced developmental delay on spg-7 RNAi, and survival under high-dose antimycin is reduced with ulp-4 RNAi. Mutations of SUMOylation sites in ATFS-1 and DVE-1 partially rescue developmental delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 demonstrate the physiological importance of ULP-4 during mitochondrial stress through multiple fitness measures (growth, development, survival). The genetic rescue by ATFS-1/DVE-1 SUMOylation site mutations (C72) confirms that deSUMOylation of these transcription factors is functionally important. The data support that ULP-4-mediated deSUMOylation is critical for organismal stress response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "ULP-4 is required for UPRmt-mediated innate immunity. ulp-4 RNAi impairs UPRmt activation and immune/xenobiotic response gene expression when worms are challenged with Pseudomonas, and reduces worm development and survival during infection. The reduced survival is rescued by atfs-1 K326R; dve-1 K327R mutations, demonstrating that deSUMOylation of ATFS-1 and DVE-1 is the major function of ULP-4 during mitochondrial stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 establish ULP-4's role in innate immunity through multiple measures: UPRmt reporter activation (C74, C76), immune gene expression (C75), and organismal fitness (C77-C78). The genetic rescue by SUMOylation site mutations (C79) provides strong evidence that deSUMOylation of ATFS-1 and DVE-1 is the primary mechanism. The connection between UPRmt and immunity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ulp-4 is required for mitochondrial stress-induced lifespan extension. Under unstressed conditions, ulp-4 RNAi does not affect lifespan, but it suppresses lifespan extension in cco-1 RNAi-treated worms. This suppression is rescued by mutations of SUMOylation sites in ATFS-1 and DVE-1. Conversely, smo-1 RNAi shortens normal lifespan but extends lifespan of spg-7 mutants, and SUMOylation site mutations also extend spg-7 mutant lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C86-C89 demonstrate ULP-4's role in stress-induced longevity through lifespan analyses with appropriate controls. The genetic rescue by SUMOylation site mutations (C83, C88) and the opposite effects of smo-1 RNAi in different contexts (C86-C87) support the model that deSUMOylation promotes longevity during mitochondrial stress. The data are internally consistent and support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Overexpression of ulp-4 does not affect basal UPRmt levels under unstressed conditions or worm lifespans with or without mitochondrial stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 show that ULP-4 overexpression has no effect on basal UPRmt or lifespan, suggesting that ULP-4 activity may be limiting only during stress or that other factors regulate its activity. This is an important negative control that helps define the boundaries of ULP-4 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study establishes that mitochondrial stress signals through ULP-4, which deSUMOylates DVE-1 and ATFS-1 to modulate their localization, stability, and transcriptional activity through distinct mechanisms. This post-translational regulation promotes innate immunity and lifespan extension during mitochondrial stress, revealing an essential and previously unexplored function of SUMOylation in UPRmt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91, C94-C95, C119-C121 summarize the main findings of the study. These summary claims are well-supported by the comprehensive experimental evidence presented in the grouped results above. The distinct mechanisms for DVE-1 (localization) versus ATFS-1 (stability and activity) are clearly demonstrated, and the physiological consequences (immunity and longevity) are established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The manuscript provides extensive background on UPRmt, SUMOylation, and related cellular processes, establishing the context for the current work. This includes descriptions of UPRmt function, ATFS-1 and DVE-1 mechanisms, SUMOylation machinery, and connections to mitochondrial quality control and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C141 represent background knowledge and context from the introduction and discussion. These claims are appropriately cited and provide the scientific foundation for the study. While important for framing the work, they represent established knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

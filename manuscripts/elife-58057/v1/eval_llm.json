@@ -1,0 +1,384 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "VPA0226 is required for V. parahaemolyticus egress from host cells, and this requirement depends on its catalytic activity. Deletion of vpa0226 prevents bacterial escape, while complementation with wildtype VPA0226 restores egress, but catalytically inactive mutants do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37, C46-C48 are strongly supported by gentamicin protection assays (Figure 1A-B) showing CAB2\u0394vpa0226 bacteria accumulate intracellularly without egress, while wildtype complementation restores egress and catalytically inactive mutants (S/A, H/A) fail to rescue. Confocal microscopy (Figure 1C-D) confirms these findings. The data consistently demonstrate VPA0226's essential role in egress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C49",
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "VPA0226 is constitutively secreted via the type 2 secretion system (T2SS), not T3SS2. VPA0226 contains an N-terminal signal peptide and its secretion depends on EpsD, a T2SS component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C49-C51, C53 are supported by Western blot data (Figure 2A-B) showing VPA0226 secretion from strains with and without T3SS2, but not from CAB2\u0394epsD. SignalP prediction (Figure 2\u2014supplement 1) confirms the signal peptide. qPCR data (Figure 2C) shows reduced VPA0226 expression in CAB2\u0394epsD. The evidence consistently demonstrates T2SS-mediated secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "VPA0226 must be delivered intracellularly to function, where it localizes to mitochondria and causes mitochondrial fragmentation in a catalytic activity-dependent manner. Only invaded or transfected cells show these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C54-C61 are supported by transfection experiments (Figure 3A) showing VPA0226-GFP colocalizes with mitochondrial markers (ACAT1, COXIV) and causes fragmentation, while catalytically inactive VPA0226-H/A does not. Infection experiments (Figure 3B-C) show fragmented mitochondria only in CAB2-invaded cells at 2hr PGT, not in CAB2\u0394vpa0226-infected cells. The requirement for intracellular delivery is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "VPA0226 activity triggers apoptotic markers (cytochrome C release, TUNEL-positive staining) by 5hr PGT, but apoptosis is not the mechanism for bacterial egress, as Z-VAD-FMK treatment does not prevent escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by confocal microscopy showing cytochrome C release and TUNEL staining in CAB2 and CAB2\u0394vpa0226+WT infected cells but not in mutant-infected cells (Figure 3\u2014supplement 2A-D). Critically, Z-VAD-FMK treatment does not alter bacterial egress kinetics (Figure 3\u2014supplement 2E), demonstrating apoptosis is a consequence, not the mechanism, of egress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "VPA0226 esterifies cholesterol using specific polyunsaturated fatty acids (PUFAs) associated with immune signaling, particularly CE(20:3), CE(20:4), CE(20:5), and CE(22:6). This activity requires catalytic function and occurs both in vitro and in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C40, C68-C70 are strongly supported by multiple lines of evidence: PLA2 assay (Figure 4\u2014supplement 1A), liposome assays with TLC (Figure 4\u2014supplement 1B), and lipidomic analysis of transfected cells (Figure 4) showing dramatic increases in specific cholesteryl esters only with wildtype VPA0226, not catalytically inactive mutants. The substrate specificity for immune-related PUFAs is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "VPA0226-mediated cholesterol esterification depletes free cholesterol from plasma membranes, weakening membrane integrity and enabling bacterial egress. This is demonstrated by SREBP activation, reduced membrane cholesterol, increased susceptibility to osmotic stress, membrane permeability, and rescue experiments with cholesterol manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C73-C80 are comprehensively supported by: qPCR showing SREBP target gene upregulation (Figure 5A), reduced plasma membrane cholesterol (Figure 5B), increased propidium iodide uptake under hypotonic stress (Figure 5C), Sytox permeability in infected cells (Figure 5D-E), and critically, cholesterol addition preventing egress while HPCD treatment rescuing egress of CAB2\u0394vpa0226 (Figure 5F-H). The mechanistic link between cholesterol depletion and egress is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "VPA0226 shares approximately 16% sequence identity with Salmonella SseJ, conserves catalytic residues, and contains a classic Ser-His-Asp catalytic triad characteristic of lipases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C44 are supported by sequence alignment data (Figure 1\u2014supplement 1A-B) showing limited overall identity with SseJ but conservation of catalytic residues and identification of the Ser-His-Asp triad. This bioinformatic characterization is straightforward and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "VPA0226 belongs to the GDSL-like lipase family with invariant catalytic Ser, Gly, Asn, and His residues, and clusters with bacterial, plant, and fungal GDSL lipases, distinct from animal GDSL lipases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by sequence alignment (Figure 1\u2014supplement 1B) and CLANS clustering analysis (Figure 4\u2014supplement 1C) showing VPA0226's phylogenetic relationship within the GDSL lipase family. The bioinformatic classification is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25"
+    ],
+    "result": "Background information on V. parahaemolyticus biology, including its environmental niche, pathogenicity, virulence factors (T2SS, T3SS1, T3SS2), and intracellular lifecycle involving invasion, replication, and escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10, C17-C22, C25 represent established background knowledge cited from prior literature. These are appropriately referenced and provide context for the current study. No new experimental validation is required for these foundational claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background information on the T2SS, including its structure, function, substrate repertoire, and role in bacterial pathogenesis, with specific examples from Vibrio species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 represent established knowledge about T2SS biology, appropriately cited from prior literature. These provide necessary background for understanding VPA0226's secretion mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on T3SS2 effectors (VopA, VopL) and the observation that bioinformatic analysis of the T3SS2 pathogenicity island revealed no obvious candidate for mediating bacterial escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C26 cite prior work on T3SS2 effectors. Claim C27 describes the authors' bioinformatic analysis motivating the current study. These are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background information on various pathogen egress mechanisms, including programmed cell death (apoptosis, pyroptosis, necroptosis), non-lytic exit pathways, and active lysis strategies used by different pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 represent established knowledge about pathogen egress mechanisms, appropriately cited from prior literature. These provide context for evaluating V. parahaemolyticus's egress strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C66",
+      "C67"
+    ],
+    "result": "Prior work demonstrated VPA0226 has lipase activity in vitro, and similar lipases can esterify cholesterol, though only lipase activity (not transferase activity) had been previously observed for Vibrio lipases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C66-C67 cite prior literature on VPA0226 and related lipases. These establish the novelty of demonstrating transferase activity for VPA0226 in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Background information that arachidonic acid (20:4) is implicated in innate immune signaling and that cholesterol depletion affects membrane permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 cite prior literature providing biological context for the significance of VPA0226's substrate specificity and mechanism of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "VPA0226 homologs in other Vibrio species and functionally similar enzymes in other pathogens (V. cholerae, T. gondii) are implicated in virulence or egress, though most have only demonstrated lipase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 cite prior literature on related enzymes, providing comparative context for VPA0226's function. These appropriately position the current findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Recent work showed that L. monocytogenes and S. flexneri manipulate cholesterol pools for infection, and oxysterols can confer immunity by mobilizing plasma membrane cholesterol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 cite recent literature (Abrams et al., 2020) providing relevant context for cholesterol manipulation in bacterial pathogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "VPA0226 expression is significantly reduced in CAB2\u0394epsD compared to CAB2, as measured by qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by qPCR data (Figure 2C) showing reduced VPA0226 transcript levels in the epsD deletion strain. This helps explain the absence of VPA0226 protein in the pellet fraction and supports the T2SS secretion model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "V. parahaemolyticus CAB2 with functional T3SS2 can efficiently invade, replicate, and escape from host cells, as demonstrated by gentamicin protection assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by gentamicin protection assay data (Figure 1A) showing the expected invasion-replication-egress cycle for wildtype CAB2. This establishes the baseline phenotype for comparison with mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Discussion points contextualizing the findings: VopC mediates entry, VPA0226 mediates egress by esterifying cholesterol with PUFAs, and V. parahaemolyticus uses virulence factors beyond the T3SS2 pathogenicity island.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 represent interpretive discussion points that synthesize the current findings with prior work. These are appropriately supported by the experimental data and cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Interpretive conclusions that VPA0226 is constitutively secreted by T2SS during infection and targets host cell machinery from within, based on the observation that only invaded cells show VPA0226 effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 represent reasonable inferences from the experimental data showing VPA0226 secretion patterns and the requirement for intracellular delivery to observe effects. These interpretations are well-supported by the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Acknowledgment that the mechanism of VPA0226 localization to mitochondria is unclear, as it lacks an obvious mitochondrial localization domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 appropriately acknowledges a limitation in understanding VPA0226's mechanism. This represents good scientific practice in identifying gaps in knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Prediction that VPA0226 predated the acquisition of the T3SS2 pathogenicity island in V. parahaemolyticus, based on phylogenetic conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 represents a phylogenetic inference based on the CLANS analysis (Figure 4\u2014supplement 1C) and cited literature. While the reasoning is plausible, this evolutionary prediction would require additional phylogenomic analysis across Vibrio strains with and without T3SS2 to be definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "VPA0226 acts like a phospholipase A2 (PLA2), transferring acyl groups from position 2 of phospholipid glycerol backbones to cholesterol, producing esterified cholesterol and lysophospholipids that destabilize membranes. The esterified cholesterol contains selective PUFAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 represent mechanistic interpretations supported by the PLA2 assay (Figure 4\u2014supplement 1A), lipidomic data (Figure 4), and cited literature on membrane destabilization. The PLA2-like activity and product specificity are well-demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Proposed timeline and mechanism: after endosomal escape, VPA0226 is secreted, localizes to mitochondria, esterifies cholesterol over 5-6 hours while bacteria replicate to ~300/cell, then egress occurs due to mechanical stress or unknown factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 synthesize the temporal data from multiple experiments into a coherent model. The timeline is supported by the kinetic data (Figures 1, 3, 5), though the trigger for egress (mechanical stress) remains somewhat speculative (appropriately qualified with 'possibly').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Concluding interpretations that V. parahaemolyticus uniquely uses two independent secretion systems (T3SS2 for invasion, T2SS for egress), representing an evolved mechanism utilizing existing resources, with speculation about broader interplay between secretion systems in pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 represent high-level interpretations and speculation based on the findings. C105 is well-supported by the data. C106-C107 are appropriately speculative about evolutionary and broader implications, representing reasonable scientific discussion.",
+    "result_type": "MINOR"
+  }
+]

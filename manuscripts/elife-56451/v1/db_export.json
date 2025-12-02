@@ -1,0 +1,1940 @@
+{
+  "submission": {
+    "id": "03c44499-1d92-4d1e-944a-87b41e547aa7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:24:21.589912Z",
+    "updated_at": "2025-12-02T17:24:21.589912Z"
+  },
+  "content": [
+    {
+      "id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "submission_id": "03c44499-1d92-4d1e-944a-87b41e547aa7",
+      "content_type": "manuscript",
+      "content_text": "# Characterization of the kinetic cycle of an ABC transporter by single-molecule and cryo-EM analyses\n\n## Authors\n\n- Ling Wang<sup>1</sup>\n- Zachary Lee Johnson<sup>2</sup>\n- Michael R Wasserman<sup>1</sup>\n- Jesper Levring<sup>2</sup>\n- Jue Chen<sup>2</sup> ([ORCID: 0000-0003-2075-4283](https://orcid.org/0000-0003-2075-4283)) \u2020\n- Shixin Liu<sup>1</sup> ([ORCID: 0000-0003-4238-7066](https://orcid.org/0000-0003-4238-7066)) \u2020\n\n### Affiliations\n\n1. Laboratory of Nanoscale Biophysics and Biochemistry, The Rockefeller University New York United States\n2. Laboratory of Membrane Biology and Biophysics, The Rockefeller University New York United States\n3. Howard Hughes Medical Institute, The Rockefeller University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nATP-binding cassette (ABC) transporters are molecular pumps ubiquitous across all kingdoms of life. While their structures have been widely reported, the kinetics governing their transport cycles remain largely unexplored. Multidrug resistance protein 1 (MRP1) is an ABC exporter that extrudes a variety of chemotherapeutic agents and native substrates. Previously, the structures of MRP1 were determined in an inward-facing (IF) or outward-facing (OF) conformation. Here, we used single-molecule fluorescence spectroscopy to track the conformational changes of bovine MRP1 (bMRP1) in real time. We also determined the structure of bMRP1 under active turnover conditions. Our results show that substrate stimulates ATP hydrolysis by accelerating the IF-to-OF transition. The rate-limiting step of the transport cycle is the dissociation of the nucleotide-binding-domain dimer, while ATP hydrolysis per se does not reset MRP1 to the resting state. The combination of structural and kinetic data illustrates how different conformations of MRP1 are temporally linked and how substrate and ATP alter protein dynamics to achieve active transport.\n\n## Introduction\n\nMultidrug resistance protein 1 (MRP1) is an ATP-binding cassette (ABC) transporter that harnesses the energy of ATP to extrude substrates from the cytosol to the extracellular space (Cole, 2014a). Native substrates of MRP1 include a variety of antioxidants, pro-inflammatory molecules, and hormones (Cole and Deeley, 2006; Deeley and Cole, 2006; Deeley et al., 2006; Leslie et al., 2005). MRP1 also transports a number of chemotherapeutic agents, thereby conferring drug resistance in acute myeloblastic and lymphoblastic leukemia, non-small-cell lung cancer, prostate cancer, breast cancer, and neuroblastoma (Berger et al., 2005; Cole, 2014b; Filipits et al., 2005; Haber et al., 2006; Winter et al., 2013; Zalcberg et al., 2000).\n\nMRP1 is a single polypeptide comprising three transmembrane domains (TMD0, TMD1, and TMD2) and two cytosolic nucleotide-binding domains (NBD1 and NBD2). Structures of bovine MRP1 (bMRP1) have been determined by electron cryo-microscopy (cryo-EM) in three functional states (Johnson and Chen, 2017; Johnson and Chen, 2018): an apo form in the absence of substrate and ATP, a complex with the native substrate leukotriene C4 (LTC4) in the absence of ATP, and a structure of the hydrolysis-deficient E1454Q mutant determined in the presence of both LTC4 and ATP (Figure 1A). These structures, in accord with decades of functional analysis (Cole, 2014a) bring about the following understanding of the transport cycle. In the absence of ATP, MRP1 adopts an inward-facing (IF) conformation, in which the two NBDs are widely separated and the translocation pathway is open to the cytoplasm. Binding of LTC4 at the center of the membrane, between TMD1 and TMD2, brings the two halves of the transporter closer together. Upon binding of ATP, the transporter adopts its fully NBD-closed configuration concurrent with opening of the translocation pathway to the outside. Meanwhile, the LTC4-binding pocket becomes deformed, no longer competent to bind substrate. In this outward-facing (OF) conformation, two ATP molecules are occluded at the NBD dimer interface: one in the catalytically inactive, degenerate site and the other in the active consensus site, poised for hydrolysis (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig1-v1.jpg)\n\n**Figure 1.:** (A) Structures of bMRP1 captured in ligand-free (left), LTC4-bound (middle), and ATP-bound (right) conformations (PDB accession numbers: 5UJ9, 5UJA, and 6BHU). The positions of tag insertions for site-specific labeling are highlighted in green (FRET donor; peptide sequence substituted following NBD1 residue 867) and red (FRET acceptor; peptide sequence inserted at the C-terminus following NBD2 residue 1530). The distances shown correspond to the separations between residues 867 and 1530 rather than the inter-probe distances. TMD0 is shown in red, the lasso motif in purple, TMD1/NBD1 in green, and TMD2/NBD2 in blue. Flexible linkers not observed in the cryo-EM maps are represented by dotted lines. (B) ATPase activity of unmodified wild-type (WT), FRET-labeled WT, and E1454Q mutant bMRP1, either without or with LTC4 (10 \u00b5M). Data are represented as mean\u00a0\u00b195% confidence intervals (from 3 to 6 independent measurements) and fitted to Michaelis-Menten equations. (C) Catalytic constants for ATP turnover by unmodified WT, FRET-labeled WT, and E1454Q bMRP1 in the absence and presence of 10 \u00b5M LTC4. Data are represented as mean\u00a0\u00b1\u00a0SEM. Comparisons were made by one-way ANOVA (****p<0.0001; ns, not significant). The residual ATP turnover seen in the E1454Q sample did not respond to LTC4 stimulation, and was thus most likely due to spontaneous ATP hydrolysis independent of MRP1 activity.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of the surface immobilization and single-molecule imaging strategy. Labeled bMRP1 molecules were immobilized on a glass surface and imaged at room temperature with total-internal-reflection fluorescence microscopy. (B) SDS-PAGE gel showing fluorescent labeling of bMRP1 with Sfp/AcpS synthases and dye-CoA conjugates. Modified WT stands for MRP1 with inserted peptide sequences for site-specific labeling. (C) Size-exclusion chromatography for generating dual-labeled bMRP1. The AcpS synthase and excess free LD655 dye were removed by gel filtration (top), followed by the removal of Sfp synthase and excess free Cy3 dye (middle). The bottom graph depicts the final dual-labeled sample used in single-molecule experiments.\n\nWhile a wealth of structural characterizations of ABC transporters provide atomistic details of these proteins in specific conformations (Oldham et al., 2008; Srikant and Gaudet, 2019), they do not inform us of how these structural snapshots are temporally linked. On the other hand, single-molecule techniques are well suited for tracking dynamic processes and have been applied to study a number of membrane proteins (Akyuz et al., 2013; Dyla et al., 2017; Goudsmits et al., 2017; Husada et al., 2018; Wang et al., 2016; Zhao et al., 2010). In this study, we took a combined single-molecule and structural approach to investigate the kinetic mechanism that governs the transport cycle of MRP1. Based on prior structural information, we designed single-molecule fluorescence resonance energy transfer (smFRET) experiments to track the conformational changes of bMRP1 in real time. Guided by the smFRET results, we then used cryo-EM to capture the most abundant structural configuration of wild-type (WT) MRP1 during active turnover. The synergy between the smFRET and cryo-EM studies has enabled us to determine the rate-limiting mechanism of MRP1 and how substrate and ATP modulate the kinetics of this important drug transporter.\n\n## Results\n\n### smFRET design\n\nCryo-EM structures indicate that in the MRP1 transport cycle the two NBDs undergo large motions of association and dissociation (Figure 1A). To monitor the conformational dynamics of bMRP1 at the single-molecule level, we introduced two fluorophore labeling sites at the distal ends of NBD1 and NBD2. A 12-residue S6 peptide replaced residues 868\u2013879, and a 12-residue A1 peptide was added to the C-terminus following residue V1530. Cy3 (donor) and LD655 (acceptor) fluorophores were orthogonally conjugated to bMRP1 using Sfp and AcpS synthases, respectively (Figure 1\u2014figure supplement 1). In addition, a His10-tag was added at the N-terminus of TMD0 for surface immobilization. In solution, the fluorescently labeled bMRP1 hydrolyzed ATP at rates virtually identical to those of the unmodified WT protein (Figure 1B and C), indicating that insertion of the peptide tags and incorporation of the fluorophores did not alter the kinetics of bMRP1.\n\n### Conformational distributions of MRP1\n\nUsing total-internal-reflection fluorescence (TIRF) microscopy, we measured the steady-state distribution of FRET efficiency (E) for WT bMRP1 under five different conditions (Figure 2A). In the absence of ATP and substrate (apo), the FRET histogram showed a broad distribution of E values spanning from 0.2 to 0.9. Saturating concentrations of LTC4 (10 \u00b5M) or ATP (5 mM) shifted the FRET distribution towards higher E values. When both LTC4 and ATP were present, a predominant high FRET peak emerged. Addition of ATP and LTC4 together with orthovanadate (Vi), a hydrolysis transition-state analogue, further promoted the high FRET state (Figure 2A). We then used the same labeling strategy to attach the FRET dye pair to the catalytically inactive E1454Q mutant bMRP1. The FRET distribution for the E1454Q mutant in the presence of ATP and LTC4 was also dominated by a high FRET state (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig2-v1.jpg)\n\n**Figure 2.:** (A) Contour plots (top) and histograms (bottom) of FRET distributions obtained with WT bMRP1 in the following conditions (from left to right): apo, + LTC4 (10 \u00b5M), + ATP (5 mM), + ATP/LTC4 (5 mM/10 \u00b5M), + Vi/ATP/LTC4 (1 mM/5 mM/10 \u00b5M). Shown in the right column are data for the E1454Q mutant in the presence of ATP/LTC4 (5 mM/10 \u00b5M). The time-dependent changes in the contour plots were due to fluorophore photobleaching, which depopulated FRET-active molecules over time. Time points after photobleaching were excluded from subsequent analysis. The histograms represent the cumulative FRET distributions over the entire 1.25 s time window. Overlaid on the histograms are fitted distributions by the five-state model with mean FRET values of 0.92 (magenta, OF), 0.80 (yellow, IF1), 0.63 (green, IF2), 0.42 (blue, IF3), and 0.23 (orange, IF4). n denotes the number of molecules analyzed. (B) Relative occupancy of the IF1 state in the presence of increasing concentrations of LTC4. Data are fitted to a dose-response function with the Hill equation, yielding an EC50 of 0.32\u00a0\u00b1\u00a00.17 \u00b5M. (C) Relative occupancy of the OF state in the presence of increasing concentrations of ATP. Data are fitted to a dose-response function with the Hill equation, yielding an EC50 of 0.05\u00a0\u00b1\u00a00.02 mM. Data are represented as mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Evidence lower bound determined by ebFRET, which was used to determine the number of non-zero FRET states and provide initial estimates of model parameters. (B\u2013F) Models with two (B), three (C), four (D), five (E), and six (F) non-zero FRET states were implemented in SPARTAN using the initial parameters generated by ebFRET. FRET trajectories were then idealized through segmental k-means optimization of each model. The raw FRET histogram (gray, from WT MRP1 with 5 mM ATP and 10 \u00b5M LTC4) is overlaid with histograms of the assigned states (shown in colors). (G) Example single-molecule trajectories fitted by four non-zero FRET states (magenta line) versus five non-zero FRET states (orange line). The four-state model fails to recognize obvious FRET transitions.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) FRET contour plots (top) and histograms (bottom) obtained at varying concentrations of LTC4. n denotes the number of molecules analyzed for each condition. (B) FRET contour plots and histograms obtained at varying concentrations of ATP. (C) Relative occupancies of states other than IF1 at different LTC4 concentrations. IF1 occupancy is shown in Figure 2B. (D) Relative occupancies of all IF states at different ATP concentrations. OF occupancy is shown in Figure 2C. Data are represented as mean\u00a0\u00b1\u00a0SEM.\n\nTo quantitatively characterize the FRET distributions, we applied the empirical Bayesian method implemented in ebFRET (van de Meent et al., 2014) and identified a common set of five FRET states, with mean E values of 0.23, 0.42, 0.63, 0.80, and 0.92. We then used a hidden Markov modeling (HMM) algorithm (Qin, 2004) to idealize the smFRET time trajectories to these discrete states. The FRET distributions obtained under all above experimental conditions can be described as combinations of the five states (Figure 2A, lower panel). A four-state model is insufficient to describe transitions observed in the FRET trajectories (Figure 2\u2014figure supplement 1). Increasing the number of states to six only resulted in an additional unpopulated state, indicative of overfitting (Figure 2\u2014figure supplement 1).\n\nNext we sought to correlate these five FRET states with existing structural information. To identify the LTC4-bound conformation, we collected smFRET data with a series of LTC4 concentrations and analyzed the FRET distributions using the five-state model (Figure 2\u2014figure supplement 2A). The occupancy of the E\u00a0=\u00a00.80 state increased monotonically as the LTC4 concentration was raised, whereas those of the other states did not (Figure 2B and Figure 2\u2014figure supplement 2C), consistent with the peak position of 0.8 from the overall FRET distribution collected at saturating LTC4 (Figure 2A). The half-maximal effective concentration (EC50) of LTC4 for the E\u00a0=\u00a00.80 state occupancy is 0.32\u00a0\u00b1\u00a00.17 \u00b5M, in agreement with the LTC4 concentration required for half-maximal stimulation of ATP hydrolysis measured in a bulk ATPase assay (0.35\u00a0\u00b1\u00a00.09 \u00b5M) (Johnson and Chen, 2017). Therefore we rationalized that the E\u00a0=\u00a00.80 state (termed IF1) corresponds to the inward-facing cryo-EM structure determined in the presence of saturating LTC4 (Figure 1A, middle).\n\nThe highest FRET state (E\u00a0=\u00a00.92) indicates a conformation in which the NBDs are in closer proximity than that of the LTC4-bound structure. Its occupancy increased as a function of ATP concentration, but those of the lower FRET states did not (Figure 2C, Figure 2\u2014figure supplement 2B and D), consistent with visual inspection of the overall FRET distribution (Figure 2A). Moreover, the E1454Q mutant predominately occupied the E\u00a0=\u00a00.92 state at saturating concentrations of ATP and LTC4 (Figure 2A), similar to the condition under which the cryo-EM structure of the outward-facing conformation was determined (Johnson and Chen, 2018). These observations support a direct correspondence between the E\u00a0=\u00a00.92 state and the OF conformation.\n\nThe three lowest FRET states (i.e., E\u00a0=\u00a00.63, 0.42, and 0.23) indicate conformations in which the NBDs are further separated than in the LTC4-bound structure, and thus are presumably ligand-free and inward-facing (termed IF2, IF3, and IF4, respectively). The presence of multiple apo states underscores the conformational flexibility of MRP1 in the absence of ligand, a well-documented characteristic of many ABC transporters (Husada et al., 2018; Timachi et al., 2017; Ward et al., 2007; Ward et al., 2013). In the cryo-EM structure of apo bMRP1, the local resolution of the NBDs was poorer compared to other regions, suggesting that the NBDs are relatively mobile (Johnson and Chen, 2017).\n\nFrom the idealized smFRET trajectories we extracted the lifetimes of each state and transition frequencies between each pair of states. In the absence of ATP, the vast majority of transitions occurred among the four IF states (IF1, IF2, IF3, and IF4) (Figure 3A, Figure 3\u2014figure supplements 1 and 2). The lifetime of each IF state was on average around 1 s (Figure 3B). Addition of LTC4 increased the lifetime of IF1 by about 30%, lending further support to its assignment as the substrate-bound state, whereas ATP did not produce statistically significant changes in the lifetime of any IF state (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative single-molecule donor (green) and acceptor (red) fluorescence trajectories, and the corresponding FRET trajectories (blue) obtained at a frame rate of 25 ms. Idealized FRET states are overlaid in orange lines. Arrows indicate fluorophore photobleaching events, after which the data were excluded from further analysis. The following conditions were analyzed: apo, + LTC4 (10 \u00b5M), + ATP (5 mM), and + ATP/LTC4 (5 mM/10 \u00b5M). (B) Average lifetimes of each IF state under different conditions. Data are represented as mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Idealized FRET states are overlaid in orange.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Dashed lines represent the mean values for the five discrete FRET states.\n\n### Determinants of IF-to-OF transitions\n\nEstimation of the lifetime of the OF state was not possible at a temporal resolution of 25 ms. At this time resolution and corresponding laser power, molecules often remained in the OF state in the presence of ATP until fluorophore photobleaching occurred (Figure 3\u2014figure supplement 1). In order to capture the complete duration of the\u00a0OF state, we lowered the time resolution to 300 ms and decreased the laser power. Under these imaging conditions, the average lifetime of the fluorophores was approximately 100 s. This allowed us to observe multiple cycles of IF-OF interconversions, albeit with the drawback of missing some fast transitions.\n\nTo better understand the mechanism of IF-to-OF transitions, we performed real-time perturbation experiments, in which ATP was delivered into the sample chamber containing apo MRP1. Upon examining individual smFRET trajectories, we observed two distinct populations of MRP1: one population showed clear transitions from the IF to the OF state after ATP injection and then cycled between IF and OF states (Figure 4A), while the other population only transitioned among different IF states and never reached the OF state during the observation period (Figure 4\u2014figure supplement 1A). Molecules in the latter group were presumed to be biochemically inactive, as ATP hydrolysis only occurs in the NBD-dimerized OF conformation. Prior to ATP injection, both groups of molecules were predominantly in the IF conformations but exhibited distinct FRET distributions (Figure 4\u2014figure supplement 1B). Addition of ATP substantially increased the occupancy of the OF state within the active group (Figure 4B and Figure 4\u2014figure supplement 1B), whereas the FRET distribution of the inactive group did not change upon ATP injection (Figure 4\u2014figure supplement 1B). These inactive molecules must also exist in the steady-state experiments described in Figure 2. However, due to the short observation window with a 25 ms frame rate it was not possible to identify these molecules.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative smFRET trajectories of active molecules from the perturbation experiments obtained at a frame rate of 300 ms. A limiting (10 \u00b5M) or saturating (5 mM) concentration of ATP with or without LTC4 (10 \u00b5M) was injected into the imaging chamber at 10 s (dashed lines). The wait time until the onset of the first OF state (twait) and the lifetime of the subsequent OF states (tOF) and IF states (tIF) are shaded in orange, dark gray, and light gray, respectively. (B) Contour plots of smFRET trajectories for active molecules under each perturbation condition. n denotes the number of active molecules analyzed. (C) Average twait for different perturbation conditions. (D) Average tIF for different perturbation conditions. The values have been corrected for the photobleaching rate. Data are represented as mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative fluorescence and FRET trajectories of the inactive molecules. These molecules transitioned among distinct IF states but never visited the OF state before photobleaching. (B) Occupancy of each FRET state before and after the injection of 5 mM ATP for the inactive (left) and active (right) population. Data are represented as mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Contour plots (top) and corresponding transition density plots (bottom) of smFRET trajectories aligned at the appearance of the first OF state from the perturbation experiments in which 10 \u00b5M ATP, 10 \u00b5M ATP + 10 \u00b5M LTC4, 5 mM ATP, or 5 mM ATP + 10 \u00b5M LTC4 (from left to right) was injected into the imaging chamber during data acquisition. (B) Additional representative smFRET trajectories for the perturbation experiments. Dashed lines indicate the time of injection. The wait time until the onset of the first OF state (twait) and the lifetimes of the subsequent OF states (tOF) and IF states (tIF) are shaded in orange, dark gray and light gray, respectively.\n\nUsing the trajectories of active molecules only, we measured the wait time (twait) from the point of ATP injection to the onset of the first OF state (Figure 4A). This duration is a compound function of several events including ATP binding and NBD dimerization. Increasing the ATP concentration from 10 \u00b5M to 5 mM shortened twait by approximately twofold (Figure 4C), consistent with the understanding that ATP binding promotes NBD dimerization. The presence of LTC4 reduced twait at both limiting and saturating ATP concentrations (Figure 4C), indicating that substrate accelerates the transition from the IF to OF state. Moreover, we found that the vast majority of transitions into the OF state originated from IF1 or IF2 (Figure 4\u2014figure supplement 2A), suggesting that the substrate-bound configuration IF1 is not an obligatory intermediate en route to the OF state.\n\nAfter the active MRP1 molecules made the first IF-to-OF transition, they continued to cycle between IF and OF states (Figure 4A and Figure 4\u2014figure supplement 2B). Given that the 300 ms time resolution obscured a fraction of fast transitions among different IF states, we used the composite time that molecules spent in the IF states before converting into the OF state (tIF; Figure 4A) to describe the kinetics of IF-to-OF transitions. As expected from the notion that ATP drives the IF-to-OF isomerization, increasing the ATP concentration shortened tIF (Figure 4D). LTC4 further reduced the average tIF by approximately threefold (Figure 4D).\n\n### Determinants of OF-to-IF transitions\n\nTo investigate how the reverse transition (i.e., from the OF to IF state) is influenced by ATP and LTC4, we measured the lifetime of OF states (tOF; Figure 4A). In control experiments where the molecules were incubated with buffer or LTC4 alone in the absence of ATP, spontaneous transitions into the OF state were occasionally observed (Figure 5A), but the resultant OF states on average only lasted a few seconds (Figure 5B and Figure 5\u2014figure supplement 1). In comparison, the average OF lifetime measured in the presence of saturating ATP was longer than 20 s (Figure 5B and Figure 5\u2014figure supplement 1), indicating that ATP stabilizes the OF conformation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig5-v1.jpg)\n\n**Figure 5.:** (A) Example smFRET trajectories for apo and LTC4-only conditions showing spontaneous transitions into the OF state independent of ATP. (B) Average lifetime of the OF states under different conditions. The values have been corrected for the photobleaching rate. Data are represented as mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The corresponding time constants (\u03c4OF) are reported.\n\nLTC4 had only a minor effect on the kinetics of OF-to-IF transitions (Figure 5B and Table 1), consistent with the structural observation that LTC4 is readily released in the ATP-bound OF conformation prior to ATP hydrolysis (Johnson and Chen, 2018), hence not affecting the subsequent isomerization back to the IF state.\n\n**Table 1.**\n Kinetics of the transitions between IF and OF conformations\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Condition</th>\n      <th>tIF (s)</th>\n      <th>tOF (s)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT, 5 mM ATP</td>\n      <td>16.1\u00a0\u00b1\u00a02.2</td>\n      <td>28.8\u00a0\u00b1\u00a04.8</td>\n    </tr>\n    <tr>\n      <td>WT, 5 mM ATP + 10 \u00b5M LTC4</td>\n      <td>4.7\u00a0\u00b1\u00a00.8</td>\n      <td>30.8\u00a0\u00b1\u00a05.2</td>\n    </tr>\n    <tr>\n      <td>E1454Q, 5 mM ATP + 10 \u00b5M LTC4</td>\n      <td>7.7\u00a0\u00b1\u00a01.5</td>\n      <td>31.7\u00a0\u00b1\u00a05.5</td>\n    </tr>\n  </tbody>\n</table>\n\n_Shown are the average lifetimes (mean \u00b1 SEM) of the composite IF state and the OF state for WT and E1454Q MRP1 with indicated ATP and substrate concentrations. The effect of dye photobleaching on the apparent IF/OF lifetime has been corrected for._\n\nWhen saturating concentrations of ATP and LTC4 were present, the transition from the OF to the IF conformation was much slower than the IF-to-OF transition (tOF vs. tIF, Table 1), also evident from the single-molecule trajectories (Figure 4A and Figure 4\u2014figure supplement 2B). Therefore, it is likely that under physiological conditions where ATP is saturating, MRP1 spends the majority of its time in the OF conformation. The total cycle time measured from the single-molecule data (tOF + tIF, Table 1) is 4\u20136 times longer than that deduced from the bulk ATPase assay (Figure 1C). A number of factors could contribute to this difference. The temperature differed between the two assays (23\u00b0C for smFRET vs. 30\u00b0C for bulk assay). It is also possible that surface immobilization of MRP1 may affect its activity. Finally, some fast transitions between IF and OF states may escape detection at the 300 ms time resolution of smFRET measurements.\n\n### Cryo-EM structure of MRP1 under active turnover conditions\n\nNext we pursued cryo-EM studies to further discern the rate-limiting step in the MRP1 transport cycle. Based on the smFRET data (Figures 2A and 4A), we anticipated that most particles would adopt an OF conformation in the presence of saturating LTC4 and ATP. Further, if ATP hydrolysis were rate limiting, the predominant species would be the pre-hydrolysis state with ATP molecules bound at both ATPase sites. Otherwise, we would expect to observe a dominant structure in which ATP in the catalytically competent, consensus site has already been hydrolyzed.\n\nTo prepare the sample for cryo-EM, WT bMRP1 (30 \u00b5M) was incubated with 80 \u00b5M LTC4 and 10 mM ATP-Mg2+ on ice for 10 min before plunge freezing in liquid ethane. If the sample had been prepared at room temperature, approximately 3 mM ATP would have been hydrolyzed during this incubation (Figure 1C). On ice, we expect a slower turnover rate and thus even less depletion of ATP. This approximates an \u2018active turnover\u2019 condition where ATP hydrolysis has reached steady state.\n\nWe first used all 1,143,729 particles from the cryo-EM dataset to calculate a 3.4 \u00c5 reconstruction that represents the dominant structure under the active turnover condition (Figure 6\u2014figure supplement 1 and Table 2). Consistent with the single-molecule data, the resulting map shows an NBD-dimerized conformation, with an ATP molecule in the degenerate site and an ADP molecule in the consensus site (Figure 6\u2014figure supplement 2A and B). To improve the resolution of the structure, we also carried out 3D classification and obtained a higher quality map at 3.2 \u00c5 from a subset of the particles (Figure 6\u2014figure supplements 1 and 2), which unambiguously shows an ADP molecule at the consensus site (Figure 6). This structure strongly suggests that ATP hydrolysis is a fast step in the transport cycle, whereas dissociation of the NBD dimer constitutes a kinetic bottleneck, thereby limiting the rate of the overall cycle.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig6-v1.jpg)\n\n**Figure 6.:** (A) The structure of WT bMRP1 in the presence of saturating ATP and LTC4 shown in blue, overlaid with the structure of the non-hydrolyzing bMRP1-E1454Q mutant in the presence of saturating ATP and LTC4 (PDB 6BHU) shown in salmon. The structures are shown in cartoon representation viewed from within the plane of the membrane with ATP/ADP shown as sticks and Mg2+ shown as spheres. (B) The same structural overlay as in (A), rotated 90\u00b0 to view the NBD dimer from the cytoplasmic side. (C) Cryo-EM density for the degenerate ATPase site (left) and the ATP-Mg2+ from the degenerate site alone (right, rotated 90\u00b0). NBD1 is shown in green, NBD2 in blue, ATP as yellow sticks colored by heteroatom, and Mg2+ as a magenta sphere. (D) Cryo-EM density for the consensus ATPase site (left) and the ADP-Mg2+ from the consensus site alone (right, rotated 90\u00b0). In the left panel, the position of the missing \u03b3-phosphate is demarcated with a gray dotted oval. The color code is the same as in (C).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The number of particles used in each step is indicated next to the arrow associated with that step.\u00a0After initial classification and refinement in RELION, two separate routes were taken to generate each of the final maps. To generate the 3.2 \u00c5 map from a subset of particles, the data were further processed in RELION. To generate the 3.4 \u00c5 map from all particles, the data were refined using Frealign.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Cryo-EM density in the degenerate ATPase site from the Frealign map using all particles, displayed in the same way as Figure 5C. (B) Cryo-EM density in the consensus ATPase site from the Frealign map using all particles, displayed in the same way as Figure 5D. (C) Cryo-EM density for the transmembrane helices from the RELION map using a subset of the particles. (D) Fourier shell correlation (FSC) curve for the two half maps used in the final reconstruction of the RELION map using a subset of the particles. (E) Local resolution of the RELION map using a subset of the particles. Local resolution was estimated using cryoSPARC.\n\n**Table 2.**\n Summary of EM data and structure refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">Data collection</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Microscope</td>\n      <td>Titan krios (FEI)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Detector</td>\n      <td>K2 Summit (Gatan)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Pixel size (\u00c5)</td>\n      <td>1.03</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Defocus range (\u03bcm)</td>\n      <td>0.7 to 2.4</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Movies</td>\n      <td>3604</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Frames/movie</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Dose rate (electrons/pixel/s)</td>\n      <td>8.0</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Total dose (electrons/\u00c52)</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Number of particles</td>\n      <td>1,143,729</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Model composition</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Non-hydrogen atoms</td>\n      <td>9684</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Protein residues</td>\n      <td>1210</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Lipids/Detergents/Ligands</td>\n      <td>3 CHS/1 ATP/1 ADP/2 Mg2+</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Refinement</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Resolution (\u00c5)</td>\n      <td>3.23</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Rwork</td>\n      <td>0.265</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Rfree</td>\n      <td>0.276</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">RMS deviations</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Bond lengths (\u00c5)</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Bond angles (\u00b0)</td>\n      <td>1.297</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Validation</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Molprobity score</td>\n      <td>1.11</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Clashscore, all atoms</td>\n      <td>1.07</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Favored rotamers (%)</td>\n      <td>97.7</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Ramachandran plot (%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Favored</td>\n      <td>95.7</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Allowed</td>\n      <td>4.3</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Outliers</td>\n      <td>0.0</td>\n    </tr>\n  </tbody>\n</table>\n\nOther than ADP occupying the consensus site in place of ATP, the overall structure of this post-hydrolysis conformation is essentially identical to that of the pre-hydrolytic structure solved with the hydrolysis-deficient E1454Q mutant (Johnson and Chen, 2018; Figure 6A and B). In both structures, the intracellular gate is closed and the substrate-binding site is pulled apart such that LTC4 is no longer bound. Thus, for MRP1, ATP hydrolysis per se and the subsequent release of inorganic phosphate (Pi) do not induce conformational rearrangements.\n\n## Discussion\n\nPreviously, using cryo-EM and mutagenesis, we captured three snapshots of MRP1, demonstrating the conformational changes induced by LTC4 and ATP (Johnson and Chen, 2017; Johnson and Chen, 2018). Guided by these structures, here we employed single-molecule fluorescence spectroscopy to characterize the dynamics of MRP1 to understand the connectivity of these conformations. The kinetic results from these single-molecule experiments prompted us to solve the dominant MRP1 structure under active turnover conditions, which revealed the rate-limiting mechanism of the MRP1 transport cycle. Such a synergistic approach enabled us to obtain new insights into the kinetic cycle of MRP1, depicted in Figure 7.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig7-v1.jpg)\n\n**Figure 7.:** MRP1 is intrinsically dynamic, transitioning between multiple IF conformations both in the absence and presence of ATP.\u00a0Under physiological conditions, ATP rapidly binds to the IF state, promoting NBD dimerization and formation of the OF state. LTC4 accelerates the IF-to-OF transition (k1) but not the other transitions, yielding a faster overall ATPase turnover rate. The reverse isomerization (k-1) resulting from ATP dissociation occurs at a much slower rate than the forward reaction. ATP hydrolysis in the consensus site (k2) is fast and results in an asymmetric post-hydrolytic OF state with ATP in the degenerate site and ADP in the consensus site. This represents the predominant conformation determined by cryo-EM under active turnover conditions. The entire transport cycle is limited by the rate of dissociation of the NBD dimer (k3) after ATP hydrolysis.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56451/elife-56451-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) FRET contour plot for the perturbation experiment in which 5 mM ATP and 10 \u00b5M LTC4 were delivered to bMRP1-E1454Q at 10 s. (B) Representative smFRET trajectories for the above experiment. (C) Histogram of the OF state lifetimes extracted from the above experiment and its fit to a single-exponential decay function (blue line).\n\nBy monitoring the separation of the two NBDs, we showed that MRP1 is intrinsically dynamic: in the absence of any ligand, MRP1 transitions among multiple IF conformations. It also spontaneously accesses the OF conformation, albeit with lower frequency and shorter lifetime in the absence of nucleotides. Similarly, a recent smFRET study showed that the E. coli peptide transporter McjD also samples an NBD-dimerized state without nucleotides (Husada et al., 2018). Whether all of these ground-state conformations are functionally important requires further investigation.\n\nWhen ATP is present, as in physiological conditions, the MRP1 transport cycle is a nonequilibrium process coupled to ATP hydrolysis. ATP binding accelerates the IF-to-OF transition (k1) and slows down the reverse OF-to-IF transition (k-1) by stabilizing the OF conformation. Substrate, such as LTC4, stimulates the ATPase activity through acceleration of the IF-to-OF transition (k1), but not ATP hydrolysis (k2) or the subsequent OF-to-IF transition (k3). In this model, the same high FRET value (E\u00a0=\u00a00.92) is produced by two distinct NBD-dimerized states: the pre-hydrolytic state in which two ATP molecules are bound and an asymmetric post-hydrolytic state bound with one ATP and one ADP. Still, the lifetime distributions of the E\u00a0=\u00a00.92 state can be fit with single-exponential decay functions (Figure 5\u2014figure supplement 1), indicating a single slow step governing the OF lifetime. This is probably because ATP hydrolysis (k2) is a fast step followed by a comparatively slow NBD dissociation step (k3). The cryo-EM data further support that at physiological ATP concentrations (1\u201310 mM), the rate-limiting step is the dissociation of the NBD dimer subsequent to ATP hydrolysis (Figure 7). Recent studies of P-glycoprotein (B\u00e1rsony et al., 2016), TmrAB (Hofmann et al., 2019), and TM287/288 (Hutter et al., 2019) also indicated that in their respective transport cycles, the OF-to-IF transition is rate limiting.\n\nThe cryo-EM structure of MRP1 shows that the ATP hydrolysis step per se does not induce any conformational change (Figure 6). One might then ask, what is the role of ATP hydrolysis in the transport cycle? Thermodynamically, the energy provided by ATP hydrolysis is necessary for uphill substrate translocation. Without energy dissipation, the system can only reach equilibrium, in which the substrate concentration is equal on both sides of the membrane. Kinetically, ATP hydrolysis provides directionality to the transport cycle: because k2 is much greater than the reverse isomerization rate k-1, estimated from the E1454Q cycling traces (Figure 7\u2014figure supplement 1), the majority of molecules proceed to ATP hydrolysis upon NBD dimerization, followed by isomerization back to the IF conformation with a rate of k3. Although the E1454Q mutant is catalytically deficient, it displayed transitions between IF and OF conformations with kinetics similar to the WT transporter (Table 1). This apparent paradox can be explained by our kinetic model (Figure 7): WT MRP1 predominantly takes the irreversible, hydrolysis-driven route (k1 \u2192 k2 \u2192 k3), while the E1454Q mutant takes the reversible pathway (k1 \u2194 k-1) that does not involve hydrolysis. The relative IF/OF occupancy is similar between WT and E1454Q MRP1 because k-1 and k3 share similar values, even though the E1454Q mutant cannot power uphill substrate transport.\n\nWhen correlating smFRET and cryo-EM data, one must keep in mind that each technique has its own limitations and is carried out under very different experimental conditions. For example, multiple apo states were detected by smFRET but our previous cryo-EM study revealed only one ligand-free structure (Johnson and Chen, 2017). This discrepancy suggests that smFRET could be more sensitive in detecting sparsely populated species than cryo-EM. Furthermore, the FRET experiments were carried out at 23\u00b0C, whereas the cryo-EM structure was determined at cryogenic temperature. We do not fully understand how the conformational distribution of molecules on the EM grids might change upon rapid freezing. However, it seems possible that the occupancy of the lowest energy state may become more dominant as a result of a smaller kBT in the Boltzmann distribution.\n\nThe kinetics of another ABC protein, the cystic fibrosis transmembrane conductance regulator (CFTR), have been well characterized through functional studies (Csan\u00e1dy et al., 2019). CFTR is closely related to MRP1 as both belong to the ABCC subfamily of ABC transporters. However, it functions as an ion channel instead of an active transporter and is thus considered to be a \u2018broken\u2019 ABC transporter. The gating cycle of CFTR is generally similar to the transport cycle of MRP1: ATP binding stabilizes an NBD-dimerized conformation in which the pore is open to allow ion conduction, and ATP hydrolysis is followed by NBD separation and channel closure. However, the kinetic properties of CFTR, characterized through single-channel recordings, are markedly different from those of MRP1. In the CFTR gating cycle, the rate-limiting step is the formation of the NBD-dimerized conformation (equivalent to k1 in Figure 7), and ATP hydrolysis occurs much slower than NBD dissociation (Csan\u00e1dy et al., 2010; Vergani et al., 2003). Do these differences reflect the general distinction between an active transporter and a passive channel? The answer awaits detailed kinetic characterization of other ABC transporters.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Biotinylated 6x-His Tag monoclonal antibody</td>\n      <td>Invitrogen</td>\n      <td>Cat# MA1-21315-BTIN</td>\n      <td>Molar ratio of 2:1 (antibody:bMRP1)</td>\n    </tr>\n    <tr>\n      <td>Cell line</td>\n      <td>Sf9</td>\n      <td>ATCC</td>\n      <td>CRL-1711</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line</td>\n      <td>HEK293S GnTI-</td>\n      <td>ATCC</td>\n      <td>CRL-3022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>bovine MRP1 in pUC57 vector</td>\n      <td>Bio Basic</td>\n      <td></td>\n      <td>Codon-optimized</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>bovine MRP1 in a modified pEG BacMam vector</td>\n      <td>Johnson and Chen, 2017</td>\n      <td></td>\n      <td>Suitable for expression in mammalian cells</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>bovine MRP1 with S6/A1 peptides for site-specific labeling</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>bovine MRP1 E1454Q with S6/A1 peptides for site-specific labeling</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Sfp pet29b C-terminal His Tag</td>\n      <td>(Worthington and Burkart, 2006)</td>\n      <td>Addgene Plasmid# 75015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET15b-ACPs (from S. pneumoniae)</td>\n      <td>Gift from Michael Johnson</td>\n      <td>Addgene Plasmid# 63687</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cy3 maleimide mono-reactive dye</td>\n      <td>GE Healthcare</td>\n      <td>Cat# PA23031</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>LD655 maleimide mono-reactive dye</td>\n      <td>Lumidyne Technologies</td>\n      <td>Cat# LD655-MAL</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trolox</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# 238813</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4-Nitrobenzyl alcohol (NBA)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# N12821</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cyclooctatetraene (COT)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# 138924</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>3,4-Dihydroxybenzoic acid (PCA)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# 37580</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Digitonin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# D141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Protocatechuate 3,4-Dioxygenase (PCD)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# P8279</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Leukotriene C4</td>\n      <td>Cayman Chemical</td>\n      <td>Cat# 20210</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>NHS-activated Sepharose 4 Fast Flow resin</td>\n      <td>GE Healthcare</td>\n      <td>Cat# 17-0430-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Superose 6, 10/300 GL</td>\n      <td>GE Healthcare</td>\n      <td>Cat# 17-5172-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SPARTAN</td>\n      <td>(Juette et al., 2016)</td>\n      <td>https://www.scottcblanchardlab.com/software</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ebFRET</td>\n      <td>(van de Meent et al., 2014)</td>\n      <td>http://ebfret.github.io</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MathWorks</td>\n      <td>https://www.mathworks.com/products/matlab.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Origin</td>\n      <td>OriginLab</td>\n      <td>https://www.originlab.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad</td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION 1.4</td>\n      <td>(Scheres, 2012)</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/relion</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Frealign</td>\n      <td>(Grigorieff, 2016)</td>\n      <td>https://grigoriefflab.janelia.org/frealign</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>(Emsley and Cowtan, 2004)</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>(Adams et al., 2010)</td>\n      <td>https://www.phenix-online.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>REFMAC</td>\n      <td>(Brown et al., 2015)</td>\n      <td>https://www.ccp4.ac.uk/html/refmac5.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MolProbity</td>\n      <td>(Chen et al., 2010)</td>\n      <td>https://molprobity.biochem.duke.edu</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera</td>\n      <td>(Pettersen et al., 2004)</td>\n      <td>https://www.cgl.ucsf.edu/chimera</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>PyMOL</td>\n      <td>https://www.pymol.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSPARC</td>\n      <td>(Punjani et al., 2017)</td>\n      <td>https://cryosparc.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>R1.2/1.3 400 mesh Au holey carbon grids</td>\n      <td>Quantifoil</td>\n      <td>Cat# 1210627</td>\n      <td>1 \u00b5g/mL</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nSf9 cells were cultured in sf-900 II SFM medium (GIBCO) supplemented with 5% FBS at 27\u00b0C. HEK293S GnTI- suspension cells were cultured in Freestyle 293 medium (GIBCO) supplemented with 2% FBS at 37\u00b0C with 8% CO2 and 80% humidity.\n\n### Protein expression, purification, and site-specific labeling\n\nAll bMRP1 constructs were expressed and purified as described previously (Johnson and Chen, 2017). Briefly, baculovirus with each bMRP1 construct was generated and used to infect HEK293S GntI- suspension cells. All constructs contained a C-terminal PreScission-Protease-cleavable GFP tag. Cell pellets were solubilized by adding 2% lauryl maltose neopentyl glycol (LMNG) supplemented with 0.2% cholesteryl hemisuccinate (CHS). After removal of the insoluble fraction by centrifugation, supernatants were batch bound to GFP-nanobody-conjugated Sepharose 4 Fast Flow resin (GE Healthcare). The resin was then packed into a column, washed with buffer containing 0.06% digitonin, and protein was eluted by digestion with PreScission Protease. After elution, protein was concentrated and applied to a Superose 6 10/300 GL column (GE Healthcare) equilibrated in 0.06% digitonin, 150 mM KCl, 50 mM Tris-HCl pH 8.0, 2 mM MgCl2, and 2 mM DTT. Peak fractions were pooled and concentrated, and either used immediately to prepare cryo-EM samples or flash-frozen in liquid nitrogen and stored at \u221280\u00b0C for future FRET and ATPase assays.\n\nFor site-specific fluorescence labeling, the 12-residue S6 peptide (GDSLSWLLRLLN) was substituted at linker residues 868\u2013879, and the 12-residue A1 peptide (GDSLDMLEWSLM) was added to the C-terminus immediately following V1530 (Yin et al., 2006; Zhou et al., 2007). A His10-tag was also added at the N-terminus of bMRP1 for surface immobilization. Fluorescent labeling of the A1 site was carried out after elution off the GFP nanobody column by adding 5 \u00b5M AcpS, 25 \u00b5M LD655-CoA, and 10 mM MgCl2 and incubating for 1 hr at room temperature. Excess dye was removed by size-exclusion chromatography as described above. The S6 site was then labeled by adding 5 \u00b5M Sfp, 25 \u00b5M Cy3-CoA, and 10 mM MgCl2 and incubating for 1 hr at room temperature. The doubly labeled protein was cleaned up by size-exclusion chromatography. The labeling efficiencies were estimated to be\u00a0~30% for Cy3 and\u00a0~80% for LD655 from the respective extinction coefficients of the protein and fluorophores. Sfp and AcpS synthases, as well as dye-CoA conjugates, were purified as described previously (Yin et al., 2006; Zhou et al., 2007).\n\n### ATPase assay\n\nATP hydrolysis was monitored using an NADH-coupled ATPase assay (Scharschmidt et al., 1979). The reaction contained 800 nM bMRP1, 60 \u00b5g/mL pyruvate kinase, 32 \u00b5g/mL lactate dehydrogenase, 9 mM phosphoenolpyruvate, and 150 \u00b5M NADH in a buffer containing 50 mM Tris-HCl pH 8.0, 150 mM KCl, 2 mM MgCl2, 2 mM DTT, and 0.06% digitonin. ATP-Mg2+ was added to initiate the reaction and the consumption of NADH was measured at 30\u00b0C by monitoring the fluorescence at \u03bbex = 340 nm and \u03bbem = 445 nm using an Infinite M1000 microplate reader (Tecan). LTC4 stimulation experiments were performed by pre-incubating 10 \u00b5M LTC4 with the reaction mix for 15 min before initiating the reaction.\n\n### Single-molecule fluorescence imaging\n\nSingle-molecule experiments were performed at room temperature (23 \u00b1 1\u00b0C) on an objective-type total-internal-reflection fluorescence microscope (Olympus IX83 cellTIRF). Microfluidic imaging chambers were passivated with a mixture of PEG and biotin-PEG (Laysan Bio), and incubated with 0.8 \u00b5M streptavidin (Invitrogen) followed by 2 nM fluorescently labeled, His-tagged bMRP1 that had been preincubated with biotinylated anti-His6 antibodies (Invitrogen) for 1 hr on ice in a buffer containing 50 mM Tris-HCl pH 8.0, 150 mM KCl, 2 mM MgCl2, 0.06% digitonin, 0.5 mg/mL BSA, 10 mM phosphocreatine (Sigma), and 0.1 mg/mL creatine kinase (Sigma). A triplet-state quenching cocktail (Dave et al., 2009) of 1 mM cyclooctatetraene (Sigma), 1 mM 4-nitrobenzyl alcohol (Sigma), and 1 mM Trolox (Sigma), as well as an oxygen scavenging system (Aitken et al., 2008) containing 10 nM protocatechuate-3,4-dioxygenase (Sigma) and 2.5 mM protocatechuic acid (Sigma) were supplemented to the imaging buffer. ATP and/or LTC4 were included in the imaging buffer at concentrations specified in the text. Fluorescence signals were split with a W-View Gemini-2C (Hamamatsu), directed to two CMOS cameras (Flash 4.0 v3, Hamamatsu), and acquired by MetaMorph software (Molecular Devices) at a frame rate specified in the text.\n\n### Analysis of smFRET data\n\nSingle-molecule fluorescence-time trajectories were extracted and subsequently analyzed using the SPARTAN software (Juette et al., 2016) in MATLAB (MathWorks). The FRET efficiency (E) was calculated as IA/(ID+IA), where ID and IA represent the donor and acceptor fluorescence intensities, respectively. Aberrant and/or noisy traces were filtered by applying the following criteria: single-step donor photobleaching, SNRBackground\u00a0\u22658,<4 donor blinking events, and FRET efficiency above 0.1 for at least 15 frames.\n\nThe remaining traces were idealized using hidden Markov modeling (HMM) (Qin, 2004) implemented in SPARTAN. Initial model parameters were obtained by running ebFRET (van de Meent et al., 2014) with single-molecule trajectories for WT MRP1 with 5 mM ATP and 10 \u00b5M LTC4 collected at 25 ms resolution to ensure that all functionally relevant states were readily sampled. Potential models containing two to six non-zero FRET states with initial model parameters generated from ebFRET were applied to raw FRET trajectories from each condition using the segmental k-means algorithm (Qin, 2004) in SPARTAN, yielding optimized model parameters and idealized trajectories. A five-state model was chosen based on the following: (1) the lower bound evidence from ebFRET; (2) FRET state assignment histograms showing populated, symmetric peaks centered at each model-assigned FRET value; and (3) visual inspection of idealized trajectories from models with 2\u20136 non-zero FRET states. A set of five FRET states with mean E values of 0.23, 0.42, 0.63, 0.80, and 0.92 was finally chosen and fixed to describe data across all conditions.\n\nHMM analysis of the smFRET trajectories identified transitions between each idealized state and was subsequently used to construct the corresponding transition density plots (McKinney et al., 2006). Well-separated peaks in the transition density plots lent further support for a five-state model (Figure 3\u2014figure supplement 2). FRET contour plots and histograms were built from the first 50 or 200 frames of each trajectory with a bin size of 0.03 and plotted in Origin (OriginLab). Occupancies of each state were plotted with GraphPad Prism 7.\n\n### Kinetic analysis of smFRET data\n\nHMM analysis yielded the dwell times in each IF state from the idealized traces collected at a 25 ms frame rate. With this imaging condition, the effective FRET observation window is 4.1\u00a0\u00b1\u00a00.5 s limited by dye photobleaching. At a 300 ms frame rate, the observation window increased to 101\u00a0\u00b1\u00a013 s due to lower laser intensities required to achieve the same signal-to-noise ratio. However, the lower time resolution obscured fast transitions among IF states. Therefore, we grouped the four IF states (IF1, IF2, IF3, and IF4) as a composite IF state and extracted the time that molecules spent in the IF (tIF) and OF (tOF) state from active molecules taken with a 300 ms frame rate. Active molecules were defined as those that successfully transitioned to the OF state after ATP injection and represent\u00a0~60% of the whole population. The remaining molecules (~40%) never visited the OF state before photobleaching, thus were assigned as the inactive group. The tOF histograms were fit by single-exponential functions, yielding characteristic decay constants \u03c4OF. Mean values of tIF were used to describe the lifetimes of the composite IF state. These values are reported after correction for dye photobleaching (kphotobleaching\u00a0=\u00a00.010\u00a0\u00b1\u00a00.001 s\u22121). The reported errors represent the propagated SEM from the observed IF/OF lifetimes and fluorophore lifetimes.\n\n### Cryo-EM sample preparation and data collection\n\nPurified WT bMRP1 was mixed with 10 mM ATP and 80 \u00b5M LTC4 in DMSO (2.5% final concentration) and incubated on ice for 10 min. Immediately before freezing grids, 3 mM fluorinated Fos-choline-8 was added, yielding a final protein concentration of 5.3 mg/mL. Sample was applied to freshly glow-discharged Quantifoil R1.2/1.3 400-mesh Au Holey Carbon Grids and frozen in liquid ethane using a Vitrobot Mark IV (FEI).\n\nCryo-EM data were collected using a Titan Krios system (FEI) with a K2 Summit camera (Gatan) in super resolution mode at a pixel size of 0.515 \u00c5/pixel. The electron dose rate was eight electrons/pixel/sec for an exposure time of 10 s divided into 50 frames. A total of 3993 movies were collected (Table 2).\n\n### Cryo-EM image processing, model building, and refinement\n\nMovie frames were corrected for gain reference and binned by two to yield a pixel size of 1.03 \u00c5/pixel. Sub-frame alignment was carried out using MotionCor2, and the contrast transfer function (CTF) was estimated using Gctf (Zhang, 2016; Zheng et al., 2017). From 3604 micrographs, 1,143,729 particles were selected using Gautomatch (http://www.mrc-lmb.cam.ac.uk/kzhang/). 2D classification was carried out in RELION (Zivanov et al., 2018), and the best class averages contained 644,840 particles. Nearly all 2D class averages appeared to be in the outward-facing, NBD-dimerized conformation (Figure 6\u2014figure supplement 1). 3D classification with four classes was performed in RELION using the OF bMRP1-E1454Q map low-pass-filtered to 60 \u00c5 as a reference model. All four classes appeared to contain a closed NBD dimer. The best class of 257,107 particles was then subjected to a two-stage masked 3D refinement (initiated with a mask that included the micelle and entire protein and continued with a mask that excluded the micelle and TMD0), yielding a map at 3.8 \u00c5. Iterative cycles of CTF refinement, Bayesian polishing, and masked 3D refinement in RELION were then performed. After several cycles of this process, masked 3D classification without alignment (using the angles from the most recent 3D refinement) was performed, yielding a best class of 81,078 particles. This subset was further subjected to iterative cycles of CTF refinement, Bayesian polishing, and masked 3D refinement in RELION, yielding a final map at 3.2 \u00c5 (Figure 6\u2014figure supplement 1).\n\nTo generate a reconstruction using all 1,143,729 particles, refinement was performed in Frealign (Grigorieff, 2016) using the map generated in the first stage of RELION refinement as the reference model. A global search was first performed using information to 8 \u00c5, followed by several rounds of local search.\n\nModel building and refinement were carried out as previously described (Johnson and Chen, 2018). The OF E1454Q model (PDB 6BHU) was rigid-body fit into the map using UCSF Chimera (Pettersen et al., 2004) and real-space refined in PHENIX (Adams et al., 2010). The model was then subjected to iterative cycles of refinement in Refmac (Brown et al., 2015) and manual rebuilding in COOT (Emsley and Cowtan, 2004). MolProbity (Chen et al., 2010) was used to assess the quality of the final model (Figure 6\u2014figure supplement 2 and Table 2). The final model contains residues 203\u2013268, 311\u2013635, 641\u2013870, and 942\u20131530, as well as one molecule of ATP, one molecule of ADP, two Mg2+ ions, and three partial cholesteryl hemisuccinate molecules. Rwork and Rfree values were calculated by generating a mask from the model with 2 \u00c5 padding, applying it to each of the half maps, and running zero cycles of refinement in Refmac against the working map (half-map 1, Rwork) and the free map (half-map 2, Rfree). Figures were prepared using UCSF Chimera and PyMOL (Schr\u00f6dinger, LLC).\n\n### Statistical analysis\n\nComparisons between conditions were made in GraphPad Prism seven using unpaired two-tailed Student\u2019s t-tests unless specified otherwise. A threshold of p<0.05 was chosen to determine statistical significance (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; ns, not significant). The number of single molecules analyzed is indicated in the figure panels. Data for each condition were collected in multiple batches across different days. Unless otherwise noted, errors reported in this study represent the approximated standard error of the mean determined from 10,000 bootstrapped samples.\n",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "09e4d9cd-c244-4093-a3e1-72c2a3bb6024",
+      "submission_id": "03c44499-1d92-4d1e-944a-87b41e547aa7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- L\u00e1szl\u00f3 Csan\u00e1dy, Semmelweis University Hungary\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56451.sa1](https://doi.org/10.7554/eLife.56451.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this pioneering study the authors use single-molecule fluorescence spectroscopy to track the conformational changes of the asymmetric ABC transporter bovine Multidrug resistance protein 1 (MRP1) in real time, and obtain a cryo-EM structure of MRP1 under active turnover conditions. The experiments show that MRP1 spends most of its time in the outward-facing (OF) conformation during its catalytic cycle. Correspondingly, the majority of the particles analyzed for cryo-EM are in an outward-facing (OF) conformation, although the ATP molecule bound at the active catalytic site has been hydrolyzed. The study provides two major functional conclusions: (i) substrate stimulates ATP hydrolysis by accelerating the IF-to-OF transition, and (ii) the rate-limiting step of the transport cycle is the dissociation of the nucleotide-binding-domain dimer, not ATP hydrolysis per se, as has been generally assumed. The paper is of broad general interest to the entire ABC protein field, and a pioneering example of exploiting optical methods for real-time single-molecule biophysics.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Characterization of the kinetic cycle of an ABC transporter by single-molecule and cryo-EM analyses\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including L\u00e1szl\u00f3 Csan\u00e1dy as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Markus A Seeger (Reviewer #2); Gergely Szakacs (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. In recognition of the fact that revisions may take longer than we typically allow, until the research enterprise restarts in full, we will give authors as much time as they need to submit revised manuscripts.\n\nSummary:\n\nThis is a highly interesting study in which the authors use single-molecule fluorescence spectroscopy to track the conformational changes of the asymmetric ABC transporter bovine Multidrug resistance protein 1 (MRP1) in real time. Using Bayesian methods they identify five distinct molecular conformations of the transporter, and quantitate the life times spent in each of these states, as well as their dependences on ATP and substrate concentrations. In addition, the authors obtain a cryo-EM structure of MRP1 under active turnover conditions, and find that the majority of the particles is in an outward-facing (OF) conformation, although the ATP molecule bound at the active catalytic site has been hydrolyzed. The study provides two major functional conclusions: (i) substrate stimulates ATP hydrolysis by accelerating the IF-to-OF transition, and (ii) the rate-limiting step of the transport cycle is the dissociation of the nucleotide-binding-domain dimer, not ATP hydrolysis per se, as has been generally assumed. The paper is of broad general interest to the entire ABC protein field, and a pioneering example of exploiting optical methods for real-time single-molecule biophysics.\n\nThe reviewers were all enthusiastic about the unique combination of approaches used, and the potential that these techniques offer for deciphering mechanistic details of a transporter cycle at a molecular level. On the other hand, several important concerns were raised regarding the choice of experimental conditions, and the interpretation of the data in terms of a kinetic model. These should be addressed by the authors.\n\nEssential revisions:\n\n1) The authors claim that the cryo-EM structure was obtained under active turnover conditions. On the other hand, the Materials and methods section (subsection \u201cCryo-EM sample preparation and data collection\u201d) states that the protein was incubated with ATP and LTC4 for 10 minutes on ice, before flash-freezing. Considering the turnover rate at room temperature (Figure 1C, temperature not specified, but we assume it was RT), 10 minutes on ice may not allow the completion of the cycle, hence, it is questionable whether \"active turnover conditions\" were met. Furthermore, since the functional (FRET and ATPase) measurements were done at RT, a direct comparison of the structural and functional data is problematic (the various kinetic steps in the cycle are likely to have different temperature dependences, thus, the fractional times spent in IF and OF states are also most likely temperature dependent). The authors should clarify this important technical caveat.\n\n2) There are several major inconsistencies among the kinetic parameters extracted from the functional data. These require a major re-thinking of the quantitative analysis. We can envisage two possible acceptable outcomes: (i) construction of a kinetic scheme that at least semi-quantitatively accounts for both the presented structural (cryo-EM) and functional (FRET and ATPase) data, or (ii) toning down the mechanistic conclusions and clearly spelling out apparent inconsistencies between the various data sets, pointing out that clarification of these will require further work. Below are some of the inconsistencies noted:\n\n2.1) Figure 2A: For E1454Q in the presence of ATP+LTC4 the relative occupancy of the OF state (fractional area under the magenta peak) is only ~40%. This seems inconsistent with the fact that under the same conditions a cryo-EM study on this mutant (Johnson and Chen, 2018) revealed a single dominant population of molecules in the OF conformation. The ~40% fractional occupancy of the OF state for E1454Q (Figure 2A) is also not consistent with the life times of the IF and OF states for this mutant, listed in Table 1: with t(IF)=7.7 s and t(OF)=31.7 s the mutant should spend 80% of its time in OF (i.e., at any point in time 80% of the population should be in OF).\n\nAlong the same lines, under conditions that allow catalytic turnover, all MRP1 molecules should be trapped with vanadate, whereas the FRET histograms for Vi/ATP/LTC4 in Figure 2A also indicate the presence of several IF states.\n\nHow do the authors explain the prevalence of IF conformations in these conditions (E1454Q and WT+ATP+Vi)? Can the authors rule out that (at least some of) the IF1-4 conformations shown in Figure 2A represent either artifacts (wobbling of attached fluorophores?), or protein conformations that are not part of the physiological catalytic cycle? E.g., several studies have shown that a nucleotide is stably bound to NBD1. Do the authors assume that MRP1 adopts the IF conformations devoid of ATP in a physiologically relevant setting?\n\n2.2) Based on Table 1, for FRET-labeled WT MRP1 the cycle time in the presence of saturating ATP and LTC4 is T(cycle)=t(IF)+t(OF)=4.7s + 30.8 s = 35.5 s, which translates into a kcat of ~1.7/min. How do the authors reconcile these data with the kcat of ~11/min reported under identical conditions for FRET-labeled WT in Figure 1C?\n\n2.3) There is a discrepancy between the effects of LTC4 on kcat (Figure 1C) and IF/OF dwell times (Table 1). Based on Table 1, for WT MRP1 the total cycle time (T(cycle)=t(IF)+t(OF)) is 44.9 s in saturating ATP, but 35.5 s in saturating ATP+LTC4. This predicts only ~1.26x stimulation of kcat by LTC4, whereas a >2x increase is reported in Figure 1C. (And the absolute kcat values calculated from the cycle times are much smaller than those in Figure 1C, see comment 2.2., above.)\n\n3) Throughout the manuscript, the E1454Q mutant is described as hydrolysis-deficient. However, in Figure 1C the activity of the mutant is only ~3x slower than WT in the absence, and ~10x slower than WT in the presence, of LTC4. How do the authors interpret this background ATPase activity? Does it reflect residual activity of the mutant or a minute contamination by a highly active ATPase? Please discuss.\n\n4) The transition patterns shown in all four panels of Figure 3B appear highly symmetrical with respect to the y=x diagonal, even for the panels with ATP and ATP+LTC4. This suggests that the conformational changes are at equilibrium: there is no observable time-asymmetry. On the other hand, one would expect pronounced time asymmetry for the conformational transitions of an active transporter undergoing a unidirectional, non-equilibrium cycle associated with ATP hydrolysis. One possibility is that \u2013 with the fluorophores inserted into their current positions \u2013 FRET efficiency does not differentiate between functionally distinct states (e.g., between ATP/ATP-bound IF (pre-OF) and ATP/ADP-bound IF (post-OF), or between ATP/ATP-bound OF (pre-hydrolysis) and ATP/ADP-bound OF (post-hydrolysis)). Would it be feasible to introduce the FRET labels into a pair of positions that track motions around the active ATPase site more sensitively, so that, e.g., pre- and posthydrolytic OF states could be resolved? Alternatively, as the fractional occupancy of an intermediate is inversely correlated with its free energy, some functionally relevant states might have such short life times that they are not resolved by the assay. Pointing out these issues would provide further depth to the Discussion.\n\n5) Please cite some earlier studies on other ABC proteins, that have arrived at similar conclusions. The conclusion that in MRP1 ATP hydrolysis occurs much faster than NBD separation is reminiscent to earlier observations on the bacterial ABC exporter TM287/288 (Hutter et al., 2019, PMID: 31113958). The conclusion that under active turnover conditions MRP1 spends the majority of its time in OF (i.e., the IF->OF transition is not rate limiting) is reminiscent to earlier observations on PgP (Barsony et al., 2016, PMID: 27117502).\n",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4a54bdcf-7a0d-4c6f-bacb-2362257d6737",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C1",
+      "claim": "MRP1 is an ABC exporter that extrudes a variety of chemotherapeutic agents and native substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Multidrug resistance protein 1 (MRP1) is an ABC exporter that extrudes a variety of chemotherapeutic agents and native substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract describing the function of MRP1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "26793247-28c6-4aa7-8d53-cc32b4ffbba0",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C2",
+      "claim": "Structures of MRP1 were previously determined in an inward-facing (IF) or outward-facing (OF) conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the structures of MRP1 were determined in an inward-facing (IF) or outward-facing (OF) conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior structural work on MRP1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "28d78630-27a9-469b-8257-a6bca9f6b640",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C3",
+      "claim": "Substrate stimulates ATP hydrolysis by accelerating the IF-to-OF transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that substrate stimulates ATP hydrolysis by accelerating the IF-to-OF transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "565f64d7-9bcf-45ae-a8ef-e8cbeffa246e",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C4",
+      "claim": "The rate-limiting step of the transport cycle is the dissociation of the nucleotide-binding-domain dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate-limiting step of the transport cycle is the dissociation of the nucleotide-binding-domain dimer, while ATP hydrolysis per se does not reset MRP1 to the resting state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by both smFRET and cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "f592134b-274d-4bb3-b900-c7c09d6a4602",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C5",
+      "claim": "ATP hydrolysis per se does not reset MRP1 to the resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate-limiting step of the transport cycle is the dissociation of the nucleotide-binding-domain dimer, while ATP hydrolysis per se does not reset MRP1 to the resting state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by structural data showing no conformational change upon ATP hydrolysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "98834a71-7e41-47c5-bdf8-4ba45a84d9fa",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C6",
+      "claim": "Native substrates of MRP1 include a variety of antioxidants, pro-inflammatory molecules, and hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Native substrates of MRP1 include a variety of antioxidants, pro-inflammatory molecules, and hormones (Cole and Deeley, 2006; Deeley and Cole, 2006; Deeley et al., 2006; Leslie et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "922f20f6-ee11-4e73-9c0e-ace9e3ac8440",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C7",
+      "claim": "MRP1 transports a number of chemotherapeutic agents, thereby conferring drug resistance in multiple cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "MRP1 also transports a number of chemotherapeutic agents, thereby conferring drug resistance in acute myeloblastic and lymphoblastic leukemia, non-small-cell lung cancer, prostate cancer, breast cancer, and neuroblastoma (Berger et al., 2005; Cole, 2014b; Filipits et al., 2005; Haber et al., 2006; Winter et al., 2013; Zalcberg et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "1e17bce2-7929-413d-9d80-20a0d9855f52",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C8",
+      "claim": "MRP1 is a single polypeptide comprising three transmembrane domains (TMD0, TMD1, and TMD2) and two cytosolic nucleotide-binding domains (NBD1 and NBD2).",
+      "claim_type": "EXPLICIT",
+      "source": "MRP1 is a single polypeptide comprising three transmembrane domains (TMD0, TMD1, and TMD2) and two cytosolic nucleotide-binding domains (NBD1 and NBD2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of MRP1 based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "5b8c8e57-f421-40d8-967f-f27fffd7638a",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C9",
+      "claim": "Structures of bovine MRP1 (bMRP1) have been determined by electron cryo-microscopy (cryo-EM) in three functional states.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures of bovine MRP1 (bMRP1) have been determined by electron cryo-microscopy (cryo-EM) in three functional states (Johnson and Chen, 2017; Johnson and Chen, 2018): an apo form in the absence of substrate and ATP, a complex with the native substrate leukotriene C4 (LTC4) in the absence of ATP, and a structure of the hydrolysis-deficient E1454Q mutant determined in the presence of both LTC4 and ATP (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement references prior structural work and is illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "e233205c-dceb-4ac3-8ed6-034370ea3a76",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C10",
+      "claim": "In the absence of ATP, MRP1 adopts an inward-facing (IF) conformation, in which the two NBDs are widely separated and the translocation pathway is open to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ATP, MRP1 adopts an inward-facing (IF) conformation, in which the two NBDs are widely separated and the translocation pathway is open to the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description based on prior cryo-EM structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "937b5f23-bcb4-4f9d-806f-62069347d9e5",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C11",
+      "claim": "Binding of LTC4 at the center of the membrane, between TMD1 and TMD2, brings the two halves of the transporter closer together.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of LTC4 at the center of the membrane, between TMD1 and TMD2, brings the two halves of the transporter closer together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from prior cryo-EM work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "917e2b44-94e6-487d-a245-098869baf487",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C12",
+      "claim": "Upon binding of ATP, the transporter adopts its fully NBD-closed configuration concurrent with opening of the translocation pathway to the outside.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon binding of ATP, the transporter adopts its fully NBD-closed configuration concurrent with opening of the translocation pathway to the outside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from prior cryo-EM work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "aafc08fc-f106-4957-a8ca-718cf964c16a",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C13",
+      "claim": "In the outward-facing (OF) conformation, the LTC4-binding pocket becomes deformed, no longer competent to bind substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the LTC4-binding pocket becomes deformed, no longer competent to bind substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from prior cryo-EM work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "7c967218-3a2c-47d5-8fcf-70c4005d87c6",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C14",
+      "claim": "In the OF conformation, two ATP molecules are occluded at the NBD dimer interface: one in the catalytically inactive, degenerate site and the other in the active consensus site, poised for hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this outward-facing (OF) conformation, two ATP molecules are occluded at the NBD dimer interface: one in the catalytically inactive, degenerate site and the other in the active consensus site, poised for hydrolysis (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from prior cryo-EM work, illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "c5c0fe95-5340-4b54-b584-bc40ba26b80f",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C15",
+      "claim": "Fluorescently labeled bMRP1 hydrolyzed ATP at rates virtually identical to those of the unmodified WT protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In solution, the fluorescently labeled bMRP1 hydrolyzed ATP at rates virtually identical to those of the unmodified WT protein (Figure 1B and C), indicating that insertion of the peptide tags and incorporation of the fluorophores did not alter the kinetics of bMRP1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "5e1eeb9c-c0fa-457c-8110-5132229fdf21",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C16",
+      "claim": "Insertion of the peptide tags and incorporation of the fluorophores did not alter the kinetics of bMRP1.",
+      "claim_type": "EXPLICIT",
+      "source": "In solution, the fluorescently labeled bMRP1 hydrolyzed ATP at rates virtually identical to those of the unmodified WT protein (Figure 1B and C), indicating that insertion of the peptide tags and incorporation of the fluorophores did not alter the kinetics of bMRP1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that labeled and unlabeled proteins have identical ATP hydrolysis rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "54c8b2c9-f225-4f06-81f1-4307a66e670b",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C17",
+      "claim": "In the absence of ATP and substrate (apo), the FRET histogram showed a broad distribution of E values spanning from 0.2 to 0.9.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ATP and substrate (apo), the FRET histogram showed a broad distribution of E values spanning from 0.2 to 0.9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from smFRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "ac59f380-a9f4-49a6-849a-cecd1feaf14f",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C18",
+      "claim": "Saturating concentrations of LTC4 (10 \u00b5M) or ATP (5 mM) shifted the FRET distribution towards higher E values.",
+      "claim_type": "EXPLICIT",
+      "source": "Saturating concentrations of LTC4 (10 \u00b5M) or ATP (5 mM) shifted the FRET distribution towards higher E values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from smFRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "805bebc5-0cc9-4706-9d1b-56226423e6f6",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C19",
+      "claim": "When both LTC4 and ATP were present, a predominant high FRET peak emerged.",
+      "claim_type": "EXPLICIT",
+      "source": "When both LTC4 and ATP were present, a predominant high FRET peak emerged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from smFRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "168dced3-0508-4ef6-83aa-0c64639389af",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C20",
+      "claim": "Addition of ATP and LTC4 together with orthovanadate (Vi), a hydrolysis transition-state analogue, further promoted the high FRET state.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of ATP and LTC4 together with orthovanadate (Vi), a hydrolysis transition-state analogue, further promoted the high FRET state (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from smFRET experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "fdba58db-3ba6-4616-ba7e-f3e6f6b0a340",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C21",
+      "claim": "The FRET distribution for the E1454Q mutant in the presence of ATP and LTC4 was dominated by a high FRET state.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET distribution for the E1454Q mutant in the presence of ATP and LTC4 was also dominated by a high FRET state (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from smFRET experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "d772aac0-d3da-4453-b8d9-ddeaef06ff14",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C22",
+      "claim": "A five-state model with mean FRET values of 0.23, 0.42, 0.63, 0.80, and 0.92 was identified to describe the FRET distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantitatively characterize the FRET distributions, we applied the empirical Bayesian method implemented in ebFRET (van de Meent et al., 2014) and identified a common set of five FRET states, with mean E values of 0.23, 0.42, 0.63, 0.80, and 0.92.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational analysis of smFRET data using ebFRET.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "405d55cf-1e4e-40a3-aebf-12fbacfb59ed",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C23",
+      "claim": "The FRET distributions obtained under all experimental conditions can be described as combinations of the five states.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET distributions obtained under all above experimental conditions can be described as combinations of the five states (Figure 2A, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by fitting the data to the five-state model as shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "f62c7d05-61f3-4163-a00a-cfc2a9dc1650",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C24",
+      "claim": "A four-state model is insufficient to describe transitions observed in the FRET trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "A four-state model is insufficient to describe transitions observed in the FRET trajectories (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by model comparison shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "855f5e06-7f8b-49e2-983e-d895372705f3",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C25",
+      "claim": "The occupancy of the E = 0.80 state increased monotonically as the LTC4 concentration was raised.",
+      "claim_type": "EXPLICIT",
+      "source": "The occupancy of the E = 0.80 state increased monotonically as the LTC4 concentration was raised, whereas those of the other states did not (Figure 2B and Figure 2\u2014figure supplement 2C), consistent with the peak position of 0.8 from the overall FRET distribution collected at saturating LTC4 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from smFRET experiments shown in Figure 2B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "c85700f3-2614-46e1-9aa2-d54f19003c80",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C26",
+      "claim": "The half-maximal effective concentration (EC50) of LTC4 for the E = 0.80 state occupancy is 0.32 \u00b1 0.17 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "The half-maximal effective concentration (EC50) of LTC4 for the E = 0.80 state occupancy is 0.32 \u00b1 0.17 \u00b5M, in agreement with the LTC4 concentration required for half-maximal stimulation of ATP hydrolysis measured in a bulk ATPase assay (0.35 \u00b1 0.09 \u00b5M) (Johnson and Chen, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from dose-response analysis of smFRET data and agrees with bulk ATPase assay results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "ff95a282-b0c0-4c47-a9e3-c43de60445a1",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C27",
+      "claim": "The E = 0.80 state (termed IF1) corresponds to the inward-facing cryo-EM structure determined in the presence of saturating LTC4.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore we rationalized that the E = 0.80 state (termed IF1) corresponds to the inward-facing cryo-EM structure determined in the presence of saturating LTC4 (Figure 1A, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This assignment is based on the correlation between LTC4 binding and the E = 0.80 state occupancy, and agreement with prior structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "d86ecf85-06ea-4938-b60e-80a227ba8367",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C28",
+      "claim": "The E = 0.92 state indicates a conformation in which the NBDs are in closer proximity than that of the LTC4-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest FRET state (E = 0.92) indicates a conformation in which the NBDs are in closer proximity than that of the LTC4-bound structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FRET efficiency value, which is higher than the IF1 state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "31b93455-7ee6-433a-aa46-03562e178d1a",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C29",
+      "claim": "The occupancy of the E = 0.92 state increased as a function of ATP concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Its occupancy increased as a function of ATP concentration, but those of the lower FRET states did not (Figure 2C, Figure 2\u2014figure supplement 2B and D), consistent with visual inspection of the overall FRET distribution (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from smFRET experiments shown in Figure 2C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "9d244415-01ab-4000-9977-fdb3b373473b",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C30",
+      "claim": "The E1454Q mutant predominately occupied the E = 0.92 state at saturating concentrations of ATP and LTC4.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the E1454Q mutant predominately occupied the E = 0.92 state at saturating concentrations of ATP and LTC4 (Figure 2A), similar to the condition under which the cryo-EM structure of the outward-facing conformation was determined (Johnson and Chen, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from smFRET experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "7c88bbcd-c413-485c-aad3-d162de6d8205",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C31",
+      "claim": "The E = 0.92 state corresponds to the OF conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations support a direct correspondence between the E = 0.92 state and the OF conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This assignment is based on ATP-dependent occupancy and correlation with the E1454Q mutant structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "0e7c1464-6d3d-4cd8-a189-21f3fb31d9ef",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C32",
+      "claim": "The three lowest FRET states (E = 0.63, 0.42, and 0.23) indicate conformations in which the NBDs are further separated than in the LTC4-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The three lowest FRET states (i.e., E = 0.63, 0.42, and 0.23) indicate conformations in which the NBDs are further separated than in the LTC4-bound structure, and thus are presumably ligand-free and inward-facing (termed IF2, IF3, and IF4, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FRET efficiency values being lower than the IF1 state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "fba2524b-1a01-4491-a646-0a462179d58f",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C33",
+      "claim": "The presence of multiple apo states underscores the conformational flexibility of MRP1 in the absence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of multiple apo states underscores the conformational flexibility of MRP1 in the absence of ligand, a well-documented characteristic of many ABC transporters (Husada et al., 2018; Timachi et al., 2017; Ward et al., 2007; Ward et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of multiple IF states and is supported by literature on other ABC transporters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "21998b9f-1f39-4bf6-ac3c-5933ecb3178e",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C34",
+      "claim": "In the cryo-EM structure of apo bMRP1, the local resolution of the NBDs was poorer compared to other regions, suggesting that the NBDs are relatively mobile.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cryo-EM structure of apo bMRP1, the local resolution of the NBDs was poorer compared to other regions, suggesting that the NBDs are relatively mobile (Johnson and Chen, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from prior cryo-EM work that supports the conformational flexibility of the NBDs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "459cf5be-dd98-4994-bb28-0e674f8965af",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C35",
+      "claim": "In the absence of ATP, the vast majority of transitions occurred among the four IF states (IF1, IF2, IF3, and IF4).",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ATP, the vast majority of transitions occurred among the four IF states (IF1, IF2, IF3, and IF4) (Figure 3A, Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from analysis of smFRET trajectories shown in Figure 3A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "51a163e1-080f-44ee-b32a-76300dcbdaaa",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C36",
+      "claim": "The lifetime of each IF state was on average around 1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetime of each IF state was on average around 1 s (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from smFRET data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "83c01257-18fb-4d41-825f-5e1b4a2a2515",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C37",
+      "claim": "Addition of LTC4 increased the lifetime of IF1 by about 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of LTC4 increased the lifetime of IF1 by about 30%, lending further support to its assignment as the substrate-bound state, whereas ATP did not produce statistically significant changes in the lifetime of any IF state (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from smFRET data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "09493f44-ec75-4d2a-8661-21fce568555e",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C38",
+      "claim": "ATP did not produce statistically significant changes in the lifetime of any IF state.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of LTC4 increased the lifetime of IF1 by about 30%, lending further support to its assignment as the substrate-bound state, whereas ATP did not produce statistically significant changes in the lifetime of any IF state (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from smFRET data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "7e09aec0-f984-4f0d-8301-fd240fe5c374",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C39",
+      "claim": "Increasing the ATP concentration from 10 \u00b5M to 5 mM shortened twait by approximately twofold.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the ATP concentration from 10 \u00b5M to 5 mM shortened twait by approximately twofold (Figure 4C), consistent with the understanding that ATP binding promotes NBD dimerization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from perturbation experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "9bf8bb37-fe79-48c0-a60d-fd13904a1fa5",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C40",
+      "claim": "The presence of LTC4 reduced twait at both limiting and saturating ATP concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of LTC4 reduced twait at both limiting and saturating ATP concentrations (Figure 4C), indicating that substrate accelerates the transition from the IF to OF state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from perturbation experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "02302edb-aa13-4ceb-a943-59d04dc04da9",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C41",
+      "claim": "Substrate accelerates the transition from the IF to OF state.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of LTC4 reduced twait at both limiting and saturating ATP concentrations (Figure 4C), indicating that substrate accelerates the transition from the IF to OF state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that LTC4 reduces the wait time to the first OF state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "efd44439-343a-41f1-9ed0-c1b037d5b027",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C42",
+      "claim": "The vast majority of transitions into the OF state originated from IF1 or IF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the vast majority of transitions into the OF state originated from IF1 or IF2 (Figure 4\u2014figure supplement 2A), suggesting that the substrate-bound configuration IF1 is not an obligatory intermediate en route to the OF state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from transition density plots shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "edbb9b03-f2b2-4b6f-8e67-5c4fa38142e3",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C43",
+      "claim": "The substrate-bound configuration IF1 is not an obligatory intermediate en route to the OF state.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the vast majority of transitions into the OF state originated from IF1 or IF2 (Figure 4\u2014figure supplement 2A), suggesting that the substrate-bound configuration IF1 is not an obligatory intermediate en route to the OF state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that transitions to OF can occur from both IF1 and IF2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "dd976266-6d0f-40ea-9714-cf58ca75f1ae",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C44",
+      "claim": "Increasing the ATP concentration shortened tIF.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from the notion that ATP drives the IF-to-OF isomerization, increasing the ATP concentration shortened tIF (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from perturbation experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "820da97d-6c35-4800-90fb-518247f7bee9",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C45",
+      "claim": "LTC4 reduced the average tIF by approximately threefold.",
+      "claim_type": "EXPLICIT",
+      "source": "LTC4 further reduced the average tIF by approximately threefold (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from perturbation experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "322dd384-7a94-4e72-85b0-26805ffedbc5",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C46",
+      "claim": "In the absence of ATP, spontaneous transitions into the OF state were occasionally observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments where the molecules were incubated with buffer or LTC4 alone in the absence of ATP, spontaneous transitions into the OF state were occasionally observed (Figure 5A), but the resultant OF states on average only lasted a few seconds (Figure 5B and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from smFRET experiments shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "8ee7e431-af7b-4359-8237-3c18875269f5",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C47",
+      "claim": "In the absence of ATP, the resultant OF states on average only lasted a few seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments where the molecules were incubated with buffer or LTC4 alone in the absence of ATP, spontaneous transitions into the OF state were occasionally observed (Figure 5A), but the resultant OF states on average only lasted a few seconds (Figure 5B and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from smFRET experiments shown in Figure 5B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "1912113b-ba54-4084-8e2e-580a92e9b4cc",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C48",
+      "claim": "The average OF lifetime measured in the presence of saturating ATP was longer than 20 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the average OF lifetime measured in the presence of saturating ATP was longer than 20 s (Figure 5B and Figure 5\u2014figure supplement 1), indicating that ATP stabilizes the OF conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from smFRET experiments shown in Figure 5B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "acfdfd56-254a-4e6a-98d6-d7a5052aeda5",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C49",
+      "claim": "ATP stabilizes the OF conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the average OF lifetime measured in the presence of saturating ATP was longer than 20 s (Figure 5B and Figure 5\u2014figure supplement 1), indicating that ATP stabilizes the OF conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that ATP increases the OF state lifetime.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "cfd7c9d0-18e3-47b1-934f-19feede01597",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C50",
+      "claim": "LTC4 had only a minor effect on the kinetics of OF-to-IF transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "LTC4 had only a minor effect on the kinetics of OF-to-IF transitions (Figure 5B and Table 1), consistent with the structural observation that LTC4 is readily released in the ATP-bound OF conformation prior to ATP hydrolysis (Johnson and Chen, 2018), hence not affecting the subsequent isomerization back to the IF state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from smFRET experiments shown in Figure 5B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "33f79652-5ec7-4be1-84af-6a4a61414376",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C51",
+      "claim": "LTC4 is readily released in the ATP-bound OF conformation prior to ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "LTC4 had only a minor effect on the kinetics of OF-to-IF transitions (Figure 5B and Table 1), consistent with the structural observation that LTC4 is readily released in the ATP-bound OF conformation prior to ATP hydrolysis (Johnson and Chen, 2018), hence not affecting the subsequent isomerization back to the IF state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from prior work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "0bdae5b8-2576-40e9-b853-a2b7d78f124d",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C52",
+      "claim": "When saturating concentrations of ATP and LTC4 were present, the transition from the OF to the IF conformation was much slower than the IF-to-OF transition.",
+      "claim_type": "EXPLICIT",
+      "source": "When saturating concentrations of ATP and LTC4 were present, the transition from the OF to the IF conformation was much slower than the IF-to-OF transition (tOF vs. tIF, Table 1), also evident from the single-molecule trajectories (Figure 4A and Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of measured lifetimes shown in Table 1 and Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "761484ef-b01b-40ca-bf0c-7d39b265f806",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C53",
+      "claim": "Under physiological conditions where ATP is saturating, MRP1 spends the majority of its time in the OF conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that under physiological conditions where ATP is saturating, MRP1 spends the majority of its time in the OF conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that tOF is much longer than tIF at saturating ATP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "ff383ec3-db7c-4a4d-9bcd-f1ff50e4b166",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C54",
+      "claim": "The total cycle time measured from the single-molecule data (tOF + tIF) is 4\u20136 times longer than that deduced from the bulk ATPase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The total cycle time measured from the single-molecule data (tOF + tIF, Table 1) is 4\u20136 times longer than that deduced from the bulk ATPase assay (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison between smFRET and bulk ATPase measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "f0c10c91-2ec6-4cd7-b2e3-0243b8e7a1df",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C55",
+      "claim": "The temperature differed between the smFRET and bulk ATPase assays (23\u00b0C for smFRET vs. 30\u00b0C for bulk assay).",
+      "claim_type": "EXPLICIT",
+      "source": "The temperature differed between the two assays (23\u00b0C for smFRET vs. 30\u00b0C for bulk assay).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "fa369d1c-96ce-4e6e-b87e-77f560ba78a2",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C56",
+      "claim": "Surface immobilization of MRP1 may affect its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that surface immobilization of MRP1 may affect its activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential experimental artifacts.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "946ee252-1ca8-4538-9349-26f40578b1ba",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C57",
+      "claim": "Some fast transitions between IF and OF states may escape detection at the 300 ms time resolution of smFRET measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, some fast transitions between IF and OF states may escape detection at the 300 ms time resolution of smFRET measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential limitations of the experimental technique.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "c0270cd6-caf4-424a-affa-4c4656d4901d",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C58",
+      "claim": "Based on the smFRET data, most particles would adopt an OF conformation in the presence of saturating LTC4 and ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the smFRET data (Figures 2A and 4A), we anticipated that most particles would adopt an OF conformation in the presence of saturating LTC4 and ATP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction based on prior smFRET observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "07bf80be-ff7d-44b4-9456-e4378fb711a9",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C59",
+      "claim": "If ATP hydrolysis were rate limiting, the predominant species would be the pre-hydrolysis state with ATP molecules bound at both ATPase sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, if ATP hydrolysis were rate limiting, the predominant species would be the pre-hydrolysis state with ATP molecules bound at both ATPase sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical prediction to test the rate-limiting step.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "c3f5b867-c224-478b-b862-6d2df8d070c3",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C60",
+      "claim": "If ATP hydrolysis is not rate limiting, the predominant structure would be one in which ATP in the catalytically competent, consensus site has already been hydrolyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Otherwise, we would expect to observe a dominant structure in which ATP in the catalytically competent, consensus site has already been hydrolyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical prediction to test the rate-limiting step.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "b18db94a-07ae-4560-96fe-856bcd6e6e48",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C61",
+      "claim": "The cryo-EM reconstruction at 3.4 \u00c5 shows an NBD-dimerized conformation, with an ATP molecule in the degenerate site and an ADP molecule in the consensus site.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the single-molecule data, the resulting map shows an NBD-dimerized conformation, with an ATP molecule in the degenerate site and an ADP molecule in the consensus site (Figure 6\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the cryo-EM structure shown in Figure 6\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "fb31f1d6-0503-4c63-98dd-34d5352b5de3",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C62",
+      "claim": "The higher quality cryo-EM map at 3.2 \u00c5 unambiguously shows an ADP molecule at the consensus site.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the resolution of the structure, we also carried out 3D classification and obtained a higher quality map at 3.2 \u00c5 from a subset of the particles (Figure 6\u2014figure supplements 1 and 2), which unambiguously shows an ADP molecule at the consensus site (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the cryo-EM structure shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "0f5aa041-b216-44d6-8ce3-70c2f0e6967c",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C63",
+      "claim": "The cryo-EM structure strongly suggests that ATP hydrolysis is a fast step in the transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure strongly suggests that ATP hydrolysis is a fast step in the transport cycle, whereas dissociation of the NBD dimer constitutes a kinetic bottleneck, thereby limiting the rate of the overall cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the predominant structure under active turnover has ADP in the consensus site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "9e8371cd-8d4c-4b16-a6f6-bd0e503368de",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C64",
+      "claim": "Dissociation of the NBD dimer constitutes a kinetic bottleneck, thereby limiting the rate of the overall cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure strongly suggests that ATP hydrolysis is a fast step in the transport cycle, whereas dissociation of the NBD dimer constitutes a kinetic bottleneck, thereby limiting the rate of the overall cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the predominant structure under active turnover has ADP in the consensus site, indicating that the post-hydrolysis state accumulates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "dfdf11e3-dfa2-4a69-b929-d997b6f53d67",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C65",
+      "claim": "Other than ADP occupying the consensus site in place of ATP, the overall structure of the post-hydrolysis conformation is essentially identical to that of the pre-hydrolytic structure solved with the hydrolysis-deficient E1454Q mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than ADP occupying the consensus site in place of ATP, the overall structure of this post-hydrolysis conformation is essentially identical to that of the pre-hydrolytic structure solved with the hydrolysis-deficient E1454Q mutant (Johnson and Chen, 2018; Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of cryo-EM structures shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "d3710682-6cce-4715-b9f2-5dd89814989b",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C66",
+      "claim": "In both the post-hydrolysis and pre-hydrolytic structures, the intracellular gate is closed and the substrate-binding site is pulled apart such that LTC4 is no longer bound.",
+      "claim_type": "EXPLICIT",
+      "source": "In both structures, the intracellular gate is closed and the substrate-binding site is pulled apart such that LTC4 is no longer bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from comparing cryo-EM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "0c6cc4ac-052d-47f6-9186-87542cba0dbe",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C67",
+      "claim": "For MRP1, ATP hydrolysis per se and the subsequent release of inorganic phosphate (Pi) do not induce conformational rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for MRP1, ATP hydrolysis per se and the subsequent release of inorganic phosphate (Pi) do not induce conformational rearrangements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the pre- and post-hydrolysis structures are essentially identical.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "def4c1f7-30e6-488d-b98a-01d2bf502476",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C68",
+      "claim": "MRP1 is intrinsically dynamic, transitioning between multiple IF conformations both in the absence and presence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "By monitoring the separation of the two NBDs, we showed that MRP1 is intrinsically dynamic: in the absence of any ligand, MRP1 transitions among multiple IF conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from smFRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "9de94443-c754-401a-bdc4-04fdd0136b9c",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C69",
+      "claim": "MRP1 spontaneously accesses the OF conformation, albeit with lower frequency and shorter lifetime in the absence of nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "It also spontaneously accesses the OF conformation, albeit with lower frequency and shorter lifetime in the absence of nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from smFRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "58cc3e73-4869-4a7d-8b10-2ecdf504f774",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C70",
+      "claim": "A recent smFRET study showed that the E. coli peptide transporter McjD also samples an NBD-dimerized state without nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a recent smFRET study showed that the E. coli peptide transporter McjD also samples an NBD-dimerized state without nucleotides (Husada et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of prior work on another ABC transporter.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "b985df99-6df1-4010-aaab-4892c48e5b9b",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C71",
+      "claim": "When ATP is present, the MRP1 transport cycle is a nonequilibrium process coupled to ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "When ATP is present, as in physiological conditions, the MRP1 transport cycle is a nonequilibrium process coupled to ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the thermodynamics of active transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "e3d79a50-24a1-44f5-872e-83231e12b400",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C72",
+      "claim": "ATP binding accelerates the IF-to-OF transition (k1) and slows down the reverse OF-to-IF transition (k-1) by stabilizing the OF conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP binding accelerates the IF-to-OF transition (k1) and slows down the reverse OF-to-IF transition (k-1) by stabilizing the OF conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the smFRET measurements of IF and OF lifetimes under different ATP concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "5d012f50-97f4-4983-9d63-a53133dd1976",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C73",
+      "claim": "Substrate, such as LTC4, stimulates the ATPase activity through acceleration of the IF-to-OF transition (k1), but not ATP hydrolysis (k2) or the subsequent OF-to-IF transition (k3).",
+      "claim_type": "EXPLICIT",
+      "source": "Substrate, such as LTC4, stimulates the ATPase activity through acceleration of the IF-to-OF transition (k1), but not ATP hydrolysis (k2) or the subsequent OF-to-IF transition (k3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the smFRET measurements showing that LTC4 reduces tIF but not tOF.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "b0d432fa-1f8e-4dcb-b642-d281fa7f8f2a",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C74",
+      "claim": "The same high FRET value (E = 0.92) is produced by two distinct NBD-dimerized states: the pre-hydrolytic state in which two ATP molecules are bound and an asymmetric post-hydrolytic state bound with one ATP and one ADP.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the same high FRET value (E = 0.92) is produced by two distinct NBD-dimerized states: the pre-hydrolytic state in which two ATP molecules are bound and an asymmetric post-hydrolytic state bound with one ATP and one ADP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of smFRET and cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "fd592296-8e01-493c-a887-e248d36a1624",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C75",
+      "claim": "The lifetime distributions of the E = 0.92 state can be fit with single-exponential decay functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the lifetime distributions of the E = 0.92 state can be fit with single-exponential decay functions (Figure 5\u2014figure supplement 1), indicating a single slow step governing the OF lifetime.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from fitting the OF lifetime distributions shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "a18f8fd9-fb5f-4208-a906-a37401fd2f8e",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C76",
+      "claim": "ATP hydrolysis (k2) is a fast step followed by a comparatively slow NBD dissociation step (k3).",
+      "claim_type": "EXPLICIT",
+      "source": "This is probably because ATP hydrolysis (k2) is a fast step followed by a comparatively slow NBD dissociation step (k3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the single-exponential decay of OF lifetimes and the cryo-EM structure showing ADP in the consensus site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "372bcfb0-68d3-4545-8bd6-1cdd293a21d4",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C77",
+      "claim": "At physiological ATP concentrations (1\u201310 mM), the rate-limiting step is the dissociation of the NBD dimer subsequent to ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM data further support that at physiological ATP concentrations (1\u201310 mM), the rate-limiting step is the dissociation of the NBD dimer subsequent to ATP hydrolysis (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the cryo-EM structure showing the post-hydrolysis state as the predominant species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "6d34ad05-a0ef-492a-9645-4e71879548e9",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C78",
+      "claim": "Recent studies of P-glycoprotein, TmrAB, and TM287/288 also indicated that in their respective transport cycles, the OF-to-IF transition is rate limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies of P-glycoprotein (B\u00e1rsony et al., 2016), TmrAB (Hofmann et al., 2019), and TM287/288 (Hutter et al., 2019) also indicated that in their respective transport cycles, the OF-to-IF transition is rate limiting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of prior work on other ABC transporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "10f0bb68-afc6-4b17-83bc-1653718cd831",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C79",
+      "claim": "The cryo-EM structure of MRP1 shows that the ATP hydrolysis step per se does not induce any conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM structure of MRP1 shows that the ATP hydrolysis step per se does not induce any conformational change (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from comparing pre- and post-hydrolysis cryo-EM structures shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "2772bb18-960d-4f70-97f9-e5e8da65c5a2",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C80",
+      "claim": "Thermodynamically, the energy provided by ATP hydrolysis is necessary for uphill substrate translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermodynamically, the energy provided by ATP hydrolysis is necessary for uphill substrate translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle of active transport based on thermodynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "cf81142e-ae50-4b7d-84fa-05ee5cd052d4",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C81",
+      "claim": "Without energy dissipation, the system can only reach equilibrium, in which the substrate concentration is equal on both sides of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Without energy dissipation, the system can only reach equilibrium, in which the substrate concentration is equal on both sides of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle of thermodynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "a5354bbf-7575-4dc6-a099-453fe3b98607",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C82",
+      "claim": "Kinetically, ATP hydrolysis provides directionality to the transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetically, ATP hydrolysis provides directionality to the transport cycle: because k2 is much greater than the reverse isomerization rate k-1, estimated from the E1454Q cycling traces (Figure 7\u2014figure supplement 1), the majority of molecules proceed to ATP hydrolysis upon NBD dimerization, followed by isomerization back to the IF conformation with a rate of k3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the comparison of rate constants measured from WT and E1454Q mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "6a52076d-ed8a-440e-b5df-03584762f414",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C83",
+      "claim": "k2 is much greater than the reverse isomerization rate k-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetically, ATP hydrolysis provides directionality to the transport cycle: because k2 is much greater than the reverse isomerization rate k-1, estimated from the E1454Q cycling traces (Figure 7\u2014figure supplement 1), the majority of molecules proceed to ATP hydrolysis upon NBD dimerization, followed by isomerization back to the IF conformation with a rate of k3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is estimated from the E1454Q cycling traces shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "75cd83f1-c462-4bd6-ae9d-dc528566d9e6",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C84",
+      "claim": "The E1454Q mutant displayed transitions between IF and OF conformations with kinetics similar to the WT transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the E1454Q mutant is catalytically deficient, it displayed transitions between IF and OF conformations with kinetics similar to the WT transporter (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of measured lifetimes shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "85511b31-7682-4322-9cf0-7fa7064bfd7c",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C85",
+      "claim": "WT MRP1 predominantly takes the irreversible, hydrolysis-driven route (k1 \u2192 k2 \u2192 k3), while the E1454Q mutant takes the reversible pathway (k1 \u2194 k-1) that does not involve hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This apparent paradox can be explained by our kinetic model (Figure 7): WT MRP1 predominantly takes the irreversible, hydrolysis-driven route (k1 \u2192 k2 \u2192 k3), while the E1454Q mutant takes the reversible pathway (k1 \u2194 k-1) that does not involve hydrolysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic interpretation of the kinetic data based on the proposed model in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "931740df-0226-4a78-a89b-ca5f2679c561",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C86",
+      "claim": "The relative IF/OF occupancy is similar between WT and E1454Q MRP1 because k-1 and k3 share similar values.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative IF/OF occupancy is similar between WT and E1454Q MRP1 because k-1 and k3 share similar values, even though the E1454Q mutant cannot power uphill substrate transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of kinetic parameters between WT and E1454Q.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "d7de79dd-c576-4f48-b1f4-9605caedfab0",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C87",
+      "claim": "The E1454Q mutant cannot power uphill substrate transport.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative IF/OF occupancy is similar between WT and E1454Q MRP1 because k-1 and k3 share similar values, even though the E1454Q mutant cannot power uphill substrate transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the understanding that ATP hydrolysis is required for active transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "264d1316-dd6c-4fa2-852f-4cb31bc8d41d",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C88",
+      "claim": "Multiple apo states were detected by smFRET but the previous cryo-EM study revealed only one ligand-free structure.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, multiple apo states were detected by smFRET but our previous cryo-EM study revealed only one ligand-free structure (Johnson and Chen, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between smFRET and cryo-EM results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "8a85da71-edbc-43d9-82a2-a0184cd960d3",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C89",
+      "claim": "smFRET could be more sensitive in detecting sparsely populated species than cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy suggests that smFRET could be more sensitive in detecting sparsely populated species than cryo-EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that smFRET detects multiple apo states while cryo-EM shows only one.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "54546702-35b4-4486-bd37-d7945799a064",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C90",
+      "claim": "The smFRET experiments were carried out at 23\u00b0C, whereas the cryo-EM structure was determined at cryogenic temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the FRET experiments were carried out at 23\u00b0C, whereas the cryo-EM structure was determined at cryogenic temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "515543c8-3f51-47b1-91cd-e46bbf574515",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C91",
+      "claim": "It is possible that the occupancy of the lowest energy state may become more dominant as a result of a smaller kBT in the Boltzmann distribution upon rapid freezing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it seems possible that the occupancy of the lowest energy state may become more dominant as a result of a smaller kBT in the Boltzmann distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how temperature affects conformational distributions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "ebacd29b-a818-4cb2-af2a-aee6818cd8ce",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C92",
+      "claim": "The kinetics of CFTR have been well characterized through functional studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinetics of another ABC protein, the cystic fibrosis transmembrane conductance regulator (CFTR), have been well characterized through functional studies (Csan\u00e1dy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of prior work on CFTR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "0b3cc051-593a-40ba-a476-f794ec948ea1",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C93",
+      "claim": "CFTR is closely related to MRP1 as both belong to the ABCC subfamily of ABC transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "CFTR is closely related to MRP1 as both belong to the ABCC subfamily of ABC transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of ABC transporter classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "f63e06cb-ecb1-4e8e-a25f-cc45613aa150",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C94",
+      "claim": "CFTR functions as an ion channel instead of an active transporter and is thus considered to be a 'broken' ABC transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it functions as an ion channel instead of an active transporter and is thus considered to be a 'broken' ABC transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about CFTR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "e744798d-9225-4415-92dc-18d93116e672",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C95",
+      "claim": "The gating cycle of CFTR is generally similar to the transport cycle of MRP1: ATP binding stabilizes an NBD-dimerized conformation in which the pore is open to allow ion conduction, and ATP hydrolysis is followed by NBD separation and channel closure.",
+      "claim_type": "EXPLICIT",
+      "source": "The gating cycle of CFTR is generally similar to the transport cycle of MRP1: ATP binding stabilizes an NBD-dimerized conformation in which the pore is open to allow ion conduction, and ATP hydrolysis is followed by NBD separation and channel closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on established knowledge of CFTR and the findings on MRP1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "fd066039-0b37-4f3f-90f0-570b28fdb93c",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C96",
+      "claim": "In the CFTR gating cycle, the rate-limiting step is the formation of the NBD-dimerized conformation (equivalent to k1 in Figure 7).",
+      "claim_type": "EXPLICIT",
+      "source": "In the CFTR gating cycle, the rate-limiting step is the formation of the NBD-dimerized conformation (equivalent to k1 in Figure 7), and ATP hydrolysis occurs much slower than NBD dissociation (Csan\u00e1dy et al., 2010; Vergani et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a citation of prior work on CFTR kinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "173026f6-c81b-4844-a192-dae6d9001e60",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C97",
+      "claim": "In CFTR, ATP hydrolysis occurs much slower than NBD dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CFTR gating cycle, the rate-limiting step is the formation of the NBD-dimerized conformation (equivalent to k1 in Figure 7), and ATP hydrolysis occurs much slower than NBD dissociation (Csan\u00e1dy et al., 2010; Vergani et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of prior work on CFTR kinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "79830058-6539-4193-9589-b4bcb6d2adb0",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "claim_id": "C98",
+      "claim": "The kinetic properties of CFTR are markedly different from those of MRP1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the kinetic properties of CFTR, characterized through single-channel recordings, are markedly different from those of MRP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between CFTR and MRP1 kinetics based on the findings in this study and prior work on CFTR.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "619e7b86-89c4-4ef2-8598-45548614c6d6",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Fluorescently labeled bMRP1 maintains wild-type ATPase activity, indicating that the FRET labeling strategy does not perturb protein function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C16 demonstrate that fluorescently labeled bMRP1 hydrolyzed ATP at rates virtually identical to unmodified WT protein (Figure 1B-C), providing strong validation that the labeling strategy preserves native kinetics. This is a critical control for the smFRET experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "2a5573d5-13fa-41c6-89f5-225a3cd3faac",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MRP1 adopts five distinct FRET states corresponding to different conformational states, with ligand binding (ATP and LTC4) shifting the distribution toward higher FRET values indicative of NBD closure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C24 describe systematic smFRET measurements showing a five-state model best describes MRP1 conformational dynamics (Figure 2A). The model selection is supported by ebFRET analysis (C22), comparison with four-state models (C24), and ligand-dependent shifts in FRET distributions (C18-C21). The data and model fitting are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "ad262f87-32d1-4021-9c41-88425cb02e50",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The E=0.80 FRET state (IF1) corresponds to the LTC4-bound inward-facing conformation, as demonstrated by dose-dependent occupancy with an EC50 matching bulk ATPase measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 establish the structural assignment of the IF1 state through dose-response analysis (Figure 2B). The EC50 of 0.32 \u00b1 0.17 \u00b5M for LTC4 binding matches the EC50 from bulk ATPase assays (0.35 \u00b1 0.09 \u00b5M), providing strong corroboration between single-molecule and ensemble measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "f074595b-c80e-4df1-8801-ea82f83f75c1",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The E=0.92 FRET state corresponds to the ATP-bound outward-facing conformation, as evidenced by ATP-dependent occupancy and correlation with the E1454Q mutant structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 assign the OF state through ATP dose-response (C29, Figure 2C) and comparison with the hydrolysis-deficient E1454Q mutant (C30, Figure 2A). The E1454Q mutant predominantly occupies this state under conditions matching prior cryo-EM structural determination, providing strong structural correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "d0bcecb6-c4c0-43df-8c85-756778766852",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MRP1 exhibits multiple apo inward-facing states (IF2, IF3, IF4) reflecting conformational flexibility in the absence of ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 identify three lower FRET states as ligand-free IF conformations. This interpretation is supported by the broad FRET distribution in apo conditions (C17), literature on ABC transporter flexibility (C33), and prior cryo-EM observations of NBD mobility (C34). The assignment is reasonable though indirect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "bc80b68f-424c-480f-8bbd-ae3ad2a5298a",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In the absence of ATP, MRP1 transitions among multiple IF states with ~1 s lifetimes, with LTC4 increasing IF1 lifetime by ~30% but ATP having no significant effect on IF state lifetimes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 characterize IF state dynamics from smFRET trajectories (Figure 3). The measurements show clear transitions among IF states (C35), quantified lifetimes (C36), and differential effects of LTC4 vs ATP (C37-C38). The data support the substrate-bound assignment of IF1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "d63f2224-f132-4425-a79c-762e31725cd5",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Substrate (LTC4) accelerates the IF-to-OF transition by reducing both the wait time to the first OF state and the composite IF state lifetime, with transitions originating from both IF1 and IF2 states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 demonstrate substrate stimulation of the IF-to-OF transition through perturbation experiments (Figure 4). LTC4 reduces twait (C40) and tIF (C45) by ~2-3 fold, while ATP concentration also affects these parameters (C39, C44). The observation that OF transitions originate from both IF1 and IF2 (C42-C43) indicates IF1 is not obligatory, though this interpretation could benefit from additional kinetic modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "6f99efc8-189d-4373-a2ad-28c71610ffe8",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ATP stabilizes the OF conformation, increasing OF state lifetime from a few seconds to >20 s, while LTC4 has minimal effect on OF-to-IF kinetics consistent with substrate release prior to hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 characterize OF state stability (Figure 5). The dramatic increase in OF lifetime with ATP (C47-C48) demonstrates ATP-dependent stabilization (C49). The minimal effect of LTC4 on OF kinetics (C50) is consistent with prior structural observations of substrate release (C51), providing mechanistic coherence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "8bf48b8e-ea33-4d5d-be59-d0e28be3aa28",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Under physiological ATP concentrations, the OF-to-IF transition is much slower than the IF-to-OF transition, suggesting MRP1 spends most time in the OF conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 compare tOF and tIF from Table 1 and Figure 4A, showing tOF >> tIF at saturating ATP. This leads to the reasonable inference that MRP1 predominantly occupies OF states under physiological conditions (C53), though this assumes steady-state conditions and may not account for all fast transitions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "959b0bbf-03f2-4f55-82ae-9320bf84cd1f",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The total cycle time from smFRET (tOF + tIF) is 4-6 times longer than bulk ATPase measurements, potentially due to temperature differences, surface immobilization effects, or limited time resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C57 identify a discrepancy between single-molecule and bulk measurements. While the authors provide plausible explanations (temperature, surface effects, time resolution), these remain speculative (C56-C57). The discrepancy could indicate technical artifacts or genuine differences between conditions, requiring further investigation to resolve.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "8e62ce4e-f14b-4b43-a5ee-e9b36f39e3d1",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cryo-EM structure of MRP1 under active turnover conditions shows ADP in the consensus site and ATP in the degenerate site, indicating that ATP hydrolysis is fast and NBD dimer dissociation is the rate-limiting step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 present the key cryo-EM result (Figure 6). The observation of ADP in the consensus site of the predominant species under turnover conditions (C61-C62) strongly supports the conclusion that hydrolysis is fast and NBD dissociation is rate-limiting (C63-C64). This is a major mechanistic insight, though the inference assumes the frozen structure represents the steady-state distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "26bdf9b1-ccb5-47d5-8aab-e5aa888d34ea",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The post-hydrolysis structure is essentially identical to the pre-hydrolytic E1454Q structure, demonstrating that ATP hydrolysis per se does not induce conformational changes in MRP1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 compare pre- and post-hydrolysis structures (Figure 6A-B), showing they are essentially identical except for ADP vs ATP in the consensus site. This structural similarity strongly supports the conclusion that hydrolysis itself does not drive conformational change (C67), a key mechanistic finding that distinguishes MRP1 from some other ABC transporters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "459a3e4e-7607-462f-8bf5-1a384661a67f",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MRP1 is intrinsically dynamic, spontaneously transitioning among multiple IF conformations and occasionally accessing the OF state even without nucleotides, similar to other ABC transporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 describe the intrinsic dynamics observed in smFRET experiments (Figures 3, 5A). The spontaneous OF transitions without ATP (C69) and multiple IF states (C68) demonstrate conformational flexibility. Comparison with McjD (C70) provides context, though the functional significance of these ground states remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "96983b00-c99f-4fba-9f50-27ec8bea15ea",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Under physiological conditions with ATP present, the MRP1 transport cycle is a nonequilibrium process where ATP binding accelerates IF-to-OF transitions and substrate (LTC4) stimulates ATPase activity by accelerating the IF-to-OF transition but not hydrolysis or OF-to-IF transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 synthesize the kinetic findings into a mechanistic model. The effects of ATP (C72) and substrate (C73) on specific rate constants are well-supported by the smFRET data (Figures 4-5). This represents a key mechanistic insight into how substrate stimulates ATPase activity through conformational dynamics rather than affecting the hydrolysis step directly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "a2aed8f6-e2d4-4a5b-bf7a-7d16c106b227",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The E=0.92 FRET state represents both pre-hydrolytic (ATP/ATP) and post-hydrolytic (ATP/ADP) NBD-dimerized conformations, with ATP hydrolysis being fast followed by slow NBD dissociation as the rate-limiting step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 integrate smFRET and cryo-EM data to explain the kinetic mechanism. The single-exponential decay of OF lifetimes (C75) despite two substates (C74) is explained by fast hydrolysis followed by slow dissociation (C76). The cryo-EM structure showing predominantly post-hydrolytic state (C77) corroborates this model, providing strong convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "63e07b79-fe0c-4d79-81fb-b74a8cde7503",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The finding that OF-to-IF transition is rate-limiting in MRP1 is consistent with recent studies of other ABC transporters including P-glycoprotein, TmrAB, and TM287/288.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 places the MRP1 findings in context with other ABC transporters through literature citations. This comparison strengthens the generalizability of the findings, though the cited studies used different methods and the mechanistic details may differ among transporters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "982c0708-5429-4599-997e-77bd1b872757",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ATP hydrolysis provides thermodynamic energy for uphill transport and kinetic directionality to the cycle, with k2 >> k-1 ensuring most molecules proceed through hydrolysis rather than reversing to the IF state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 explain the role of ATP hydrolysis despite not causing conformational change. The thermodynamic argument (C80-C81) is sound, and the kinetic directionality argument (C82-C83) is supported by comparison of WT and E1454Q kinetics (Figure 7\u2014figure supplement 1). This provides important mechanistic insight into how hydrolysis couples to transport.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "0dcd25a0-ddc9-47c5-9959-41f456067d07",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The E1454Q mutant displays similar IF/OF transition kinetics to WT but takes a reversible pathway (k1 \u2194 k-1) rather than the hydrolysis-driven route, explaining why it cannot power uphill transport despite similar conformational dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 resolve the apparent paradox that E1454Q shows similar IF/OF occupancy to WT (Table 1) through the kinetic model in Figure 7. The explanation that WT takes an irreversible hydrolysis route while E1454Q takes a reversible route (C85) is mechanistically sound and explains why only WT can perform active transport (C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "afccff81-d0fe-41fa-b349-ae671eac95da",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Discrepancies between smFRET and cryo-EM (multiple apo states vs. one structure) may reflect differences in sensitivity and temperature, with smFRET potentially more sensitive to sparsely populated states and cryogenic temperatures potentially favoring the lowest energy state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C91 discuss methodological differences between techniques. While the observations are accurate (C88, C90), the explanations remain speculative (C89, C91). The authors appropriately acknowledge these limitations, but the true reasons for discrepancies remain unclear and would require additional experiments to resolve.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    },
+    {
+      "id": "dc27727c-7ab6-4a92-be04-69b7bfa5d2f3",
+      "content_id": "69ea0781-1bc6-40b7-bd6b-89c42bd9dae0",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Comparison with CFTR shows that while the gating/transport cycles are generally similar, the kinetic properties differ markedly, with CFTR having rate-limiting NBD dimerization and slow hydrolysis relative to dissociation, opposite to MRP1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C98 compare MRP1 with the related CFTR channel based on literature (C92, C96-C97). The comparison highlights important mechanistic differences (C98) between an active transporter (MRP1) and a 'broken' ABC transporter functioning as a channel (CFTR). This contextualizes the MRP1 findings, though the functional implications of these kinetic differences remain to be fully explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:24:21.589912Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c5c0fe95-5340-4b54-b584-bc40ba26b80f",
+      "result_id": "619e7b86-89c4-4ef2-8598-45548614c6d6"
+    },
+    {
+      "claim_id": "5e1eeb9c-c0fa-457c-8110-5132229fdf21",
+      "result_id": "619e7b86-89c4-4ef2-8598-45548614c6d6"
+    },
+    {
+      "claim_id": "54c8b2c9-f225-4f06-81f1-4307a66e670b",
+      "result_id": "2a5573d5-13fa-41c6-89f5-225a3cd3faac"
+    },
+    {
+      "claim_id": "ac59f380-a9f4-49a6-849a-cecd1feaf14f",
+      "result_id": "2a5573d5-13fa-41c6-89f5-225a3cd3faac"
+    },
+    {
+      "claim_id": "805bebc5-0cc9-4706-9d1b-56226423e6f6",
+      "result_id": "2a5573d5-13fa-41c6-89f5-225a3cd3faac"
+    },
+    {
+      "claim_id": "168dced3-0508-4ef6-83aa-0c64639389af",
+      "result_id": "2a5573d5-13fa-41c6-89f5-225a3cd3faac"
+    },
+    {
+      "claim_id": "fdba58db-3ba6-4616-ba7e-f3e6f6b0a340",
+      "result_id": "2a5573d5-13fa-41c6-89f5-225a3cd3faac"
+    },
+    {
+      "claim_id": "d772aac0-d3da-4453-b8d9-ddeaef06ff14",
+      "result_id": "2a5573d5-13fa-41c6-89f5-225a3cd3faac"
+    },
+    {
+      "claim_id": "405d55cf-1e4e-40a3-aebf-12fbacfb59ed",
+      "result_id": "2a5573d5-13fa-41c6-89f5-225a3cd3faac"
+    },
+    {
+      "claim_id": "f62c7d05-61f3-4163-a00a-cfc2a9dc1650",
+      "result_id": "2a5573d5-13fa-41c6-89f5-225a3cd3faac"
+    },
+    {
+      "claim_id": "855f5e06-7f8b-49e2-983e-d895372705f3",
+      "result_id": "ad262f87-32d1-4021-9c41-88425cb02e50"
+    },
+    {
+      "claim_id": "c85700f3-2614-46e1-9aa2-d54f19003c80",
+      "result_id": "ad262f87-32d1-4021-9c41-88425cb02e50"
+    },
+    {
+      "claim_id": "ff95a282-b0c0-4c47-a9e3-c43de60445a1",
+      "result_id": "ad262f87-32d1-4021-9c41-88425cb02e50"
+    },
+    {
+      "claim_id": "d86ecf85-06ea-4938-b60e-80a227ba8367",
+      "result_id": "f074595b-c80e-4df1-8801-ea82f83f75c1"
+    },
+    {
+      "claim_id": "31b93455-7ee6-433a-aa46-03562e178d1a",
+      "result_id": "f074595b-c80e-4df1-8801-ea82f83f75c1"
+    },
+    {
+      "claim_id": "9d244415-01ab-4000-9977-fdb3b373473b",
+      "result_id": "f074595b-c80e-4df1-8801-ea82f83f75c1"
+    },
+    {
+      "claim_id": "7c88bbcd-c413-485c-aad3-d162de6d8205",
+      "result_id": "f074595b-c80e-4df1-8801-ea82f83f75c1"
+    },
+    {
+      "claim_id": "0e7c1464-6d3d-4cd8-a189-21f3fb31d9ef",
+      "result_id": "d0bcecb6-c4c0-43df-8c85-756778766852"
+    },
+    {
+      "claim_id": "fba2524b-1a01-4491-a646-0a462179d58f",
+      "result_id": "d0bcecb6-c4c0-43df-8c85-756778766852"
+    },
+    {
+      "claim_id": "21998b9f-1f39-4bf6-ac3c-5933ecb3178e",
+      "result_id": "d0bcecb6-c4c0-43df-8c85-756778766852"
+    },
+    {
+      "claim_id": "459cf5be-dd98-4994-bb28-0e674f8965af",
+      "result_id": "bc80b68f-424c-480f-8bbd-ae3ad2a5298a"
+    },
+    {
+      "claim_id": "51a163e1-080f-44ee-b32a-76300dcbdaaa",
+      "result_id": "bc80b68f-424c-480f-8bbd-ae3ad2a5298a"
+    },
+    {
+      "claim_id": "83c01257-18fb-4d41-825f-5e1b4a2a2515",
+      "result_id": "bc80b68f-424c-480f-8bbd-ae3ad2a5298a"
+    },
+    {
+      "claim_id": "09493f44-ec75-4d2a-8661-21fce568555e",
+      "result_id": "bc80b68f-424c-480f-8bbd-ae3ad2a5298a"
+    },
+    {
+      "claim_id": "7e09aec0-f984-4f0d-8301-fd240fe5c374",
+      "result_id": "d63f2224-f132-4425-a79c-762e31725cd5"
+    },
+    {
+      "claim_id": "9bf8bb37-fe79-48c0-a60d-fd13904a1fa5",
+      "result_id": "d63f2224-f132-4425-a79c-762e31725cd5"
+    },
+    {
+      "claim_id": "02302edb-aa13-4ceb-a943-59d04dc04da9",
+      "result_id": "d63f2224-f132-4425-a79c-762e31725cd5"
+    },
+    {
+      "claim_id": "efd44439-343a-41f1-9ed0-c1b037d5b027",
+      "result_id": "d63f2224-f132-4425-a79c-762e31725cd5"
+    },
+    {
+      "claim_id": "edbb9b03-f2b2-4b6f-8e67-5c4fa38142e3",
+      "result_id": "d63f2224-f132-4425-a79c-762e31725cd5"
+    },
+    {
+      "claim_id": "dd976266-6d0f-40ea-9714-cf58ca75f1ae",
+      "result_id": "d63f2224-f132-4425-a79c-762e31725cd5"
+    },
+    {
+      "claim_id": "820da97d-6c35-4800-90fb-518247f7bee9",
+      "result_id": "d63f2224-f132-4425-a79c-762e31725cd5"
+    },
+    {
+      "claim_id": "322dd384-7a94-4e72-85b0-26805ffedbc5",
+      "result_id": "6f99efc8-189d-4373-a2ad-28c71610ffe8"
+    },
+    {
+      "claim_id": "8ee7e431-af7b-4359-8237-3c18875269f5",
+      "result_id": "6f99efc8-189d-4373-a2ad-28c71610ffe8"
+    },
+    {
+      "claim_id": "1912113b-ba54-4084-8e2e-580a92e9b4cc",
+      "result_id": "6f99efc8-189d-4373-a2ad-28c71610ffe8"
+    },
+    {
+      "claim_id": "acfdfd56-254a-4e6a-98d6-d7a5052aeda5",
+      "result_id": "6f99efc8-189d-4373-a2ad-28c71610ffe8"
+    },
+    {
+      "claim_id": "cfd7c9d0-18e3-47b1-934f-19feede01597",
+      "result_id": "6f99efc8-189d-4373-a2ad-28c71610ffe8"
+    },
+    {
+      "claim_id": "33f79652-5ec7-4be1-84af-6a4a61414376",
+      "result_id": "6f99efc8-189d-4373-a2ad-28c71610ffe8"
+    },
+    {
+      "claim_id": "0bdae5b8-2576-40e9-b853-a2b7d78f124d",
+      "result_id": "8bf48b8e-ea33-4d5d-be59-d0e28be3aa28"
+    },
+    {
+      "claim_id": "761484ef-b01b-40ca-bf0c-7d39b265f806",
+      "result_id": "8bf48b8e-ea33-4d5d-be59-d0e28be3aa28"
+    },
+    {
+      "claim_id": "ff383ec3-db7c-4a4d-9bcd-f1ff50e4b166",
+      "result_id": "959b0bbf-03f2-4f55-82ae-9320bf84cd1f"
+    },
+    {
+      "claim_id": "f0c10c91-2ec6-4cd7-b2e3-0243b8e7a1df",
+      "result_id": "959b0bbf-03f2-4f55-82ae-9320bf84cd1f"
+    },
+    {
+      "claim_id": "fa369d1c-96ce-4e6e-b87e-77f560ba78a2",
+      "result_id": "959b0bbf-03f2-4f55-82ae-9320bf84cd1f"
+    },
+    {
+      "claim_id": "946ee252-1ca8-4538-9349-26f40578b1ba",
+      "result_id": "959b0bbf-03f2-4f55-82ae-9320bf84cd1f"
+    },
+    {
+      "claim_id": "c0270cd6-caf4-424a-affa-4c4656d4901d",
+      "result_id": "8e62ce4e-f14b-4b43-a5ee-e9b36f39e3d1"
+    },
+    {
+      "claim_id": "07bf80be-ff7d-44b4-9456-e4378fb711a9",
+      "result_id": "8e62ce4e-f14b-4b43-a5ee-e9b36f39e3d1"
+    },
+    {
+      "claim_id": "c3f5b867-c224-478b-b862-6d2df8d070c3",
+      "result_id": "8e62ce4e-f14b-4b43-a5ee-e9b36f39e3d1"
+    },
+    {
+      "claim_id": "b18db94a-07ae-4560-96fe-856bcd6e6e48",
+      "result_id": "8e62ce4e-f14b-4b43-a5ee-e9b36f39e3d1"
+    },
+    {
+      "claim_id": "fb31f1d6-0503-4c63-98dd-34d5352b5de3",
+      "result_id": "8e62ce4e-f14b-4b43-a5ee-e9b36f39e3d1"
+    },
+    {
+      "claim_id": "0f5aa041-b216-44d6-8ce3-70c2f0e6967c",
+      "result_id": "8e62ce4e-f14b-4b43-a5ee-e9b36f39e3d1"
+    },
+    {
+      "claim_id": "9e8371cd-8d4c-4b16-a6f6-bd0e503368de",
+      "result_id": "8e62ce4e-f14b-4b43-a5ee-e9b36f39e3d1"
+    },
+    {
+      "claim_id": "dfdf11e3-dfa2-4a69-b929-d997b6f53d67",
+      "result_id": "26bdf9b1-ccb5-47d5-8aab-e5aa888d34ea"
+    },
+    {
+      "claim_id": "d3710682-6cce-4715-b9f2-5dd89814989b",
+      "result_id": "26bdf9b1-ccb5-47d5-8aab-e5aa888d34ea"
+    },
+    {
+      "claim_id": "0c6cc4ac-052d-47f6-9186-87542cba0dbe",
+      "result_id": "26bdf9b1-ccb5-47d5-8aab-e5aa888d34ea"
+    },
+    {
+      "claim_id": "def4c1f7-30e6-488d-b98a-01d2bf502476",
+      "result_id": "459a3e4e-7607-462f-8bf5-1a384661a67f"
+    },
+    {
+      "claim_id": "9de94443-c754-401a-bdc4-04fdd0136b9c",
+      "result_id": "459a3e4e-7607-462f-8bf5-1a384661a67f"
+    },
+    {
+      "claim_id": "58cc3e73-4869-4a7d-8b10-2ecdf504f774",
+      "result_id": "459a3e4e-7607-462f-8bf5-1a384661a67f"
+    },
+    {
+      "claim_id": "b985df99-6df1-4010-aaab-4892c48e5b9b",
+      "result_id": "96983b00-c99f-4fba-9f50-27ec8bea15ea"
+    },
+    {
+      "claim_id": "e3d79a50-24a1-44f5-872e-83231e12b400",
+      "result_id": "96983b00-c99f-4fba-9f50-27ec8bea15ea"
+    },
+    {
+      "claim_id": "5d012f50-97f4-4983-9d63-a53133dd1976",
+      "result_id": "96983b00-c99f-4fba-9f50-27ec8bea15ea"
+    },
+    {
+      "claim_id": "b0d432fa-1f8e-4dcb-b642-d281fa7f8f2a",
+      "result_id": "a2aed8f6-e2d4-4a5b-bf7a-7d16c106b227"
+    },
+    {
+      "claim_id": "fd592296-8e01-493c-a887-e248d36a1624",
+      "result_id": "a2aed8f6-e2d4-4a5b-bf7a-7d16c106b227"
+    },
+    {
+      "claim_id": "a18f8fd9-fb5f-4208-a906-a37401fd2f8e",
+      "result_id": "a2aed8f6-e2d4-4a5b-bf7a-7d16c106b227"
+    },
+    {
+      "claim_id": "372bcfb0-68d3-4545-8bd6-1cdd293a21d4",
+      "result_id": "a2aed8f6-e2d4-4a5b-bf7a-7d16c106b227"
+    },
+    {
+      "claim_id": "6d34ad05-a0ef-492a-9645-4e71879548e9",
+      "result_id": "63e07b79-fe0c-4d79-81fb-b74a8cde7503"
+    },
+    {
+      "claim_id": "10f0bb68-afc6-4b17-83bc-1653718cd831",
+      "result_id": "982c0708-5429-4599-997e-77bd1b872757"
+    },
+    {
+      "claim_id": "2772bb18-960d-4f70-97f9-e5e8da65c5a2",
+      "result_id": "982c0708-5429-4599-997e-77bd1b872757"
+    },
+    {
+      "claim_id": "cf81142e-ae50-4b7d-84fa-05ee5cd052d4",
+      "result_id": "982c0708-5429-4599-997e-77bd1b872757"
+    },
+    {
+      "claim_id": "a5354bbf-7575-4dc6-a099-453fe3b98607",
+      "result_id": "982c0708-5429-4599-997e-77bd1b872757"
+    },
+    {
+      "claim_id": "6a52076d-ed8a-440e-b5df-03584762f414",
+      "result_id": "982c0708-5429-4599-997e-77bd1b872757"
+    },
+    {
+      "claim_id": "75cd83f1-c462-4bd6-ae9d-dc528566d9e6",
+      "result_id": "0dcd25a0-ddc9-47c5-9959-41f456067d07"
+    },
+    {
+      "claim_id": "85511b31-7682-4322-9cf0-7fa7064bfd7c",
+      "result_id": "0dcd25a0-ddc9-47c5-9959-41f456067d07"
+    },
+    {
+      "claim_id": "931740df-0226-4a78-a89b-ca5f2679c561",
+      "result_id": "0dcd25a0-ddc9-47c5-9959-41f456067d07"
+    },
+    {
+      "claim_id": "d7de79dd-c576-4f48-b1f4-9605caedfab0",
+      "result_id": "0dcd25a0-ddc9-47c5-9959-41f456067d07"
+    },
+    {
+      "claim_id": "264d1316-dd6c-4fa2-852f-4cb31bc8d41d",
+      "result_id": "afccff81-d0fe-41fa-b349-ae671eac95da"
+    },
+    {
+      "claim_id": "8a85da71-edbc-43d9-82a2-a0184cd960d3",
+      "result_id": "afccff81-d0fe-41fa-b349-ae671eac95da"
+    },
+    {
+      "claim_id": "54546702-35b4-4486-bd37-d7945799a064",
+      "result_id": "afccff81-d0fe-41fa-b349-ae671eac95da"
+    },
+    {
+      "claim_id": "515543c8-3f51-47b1-91cd-e46bbf574515",
+      "result_id": "afccff81-d0fe-41fa-b349-ae671eac95da"
+    },
+    {
+      "claim_id": "ebacd29b-a818-4cb2-af2a-aee6818cd8ce",
+      "result_id": "dc27727c-7ab6-4a92-be04-69b7bfa5d2f3"
+    },
+    {
+      "claim_id": "0b3cc051-593a-40ba-a476-f794ec948ea1",
+      "result_id": "dc27727c-7ab6-4a92-be04-69b7bfa5d2f3"
+    },
+    {
+      "claim_id": "f63e06cb-ecb1-4e8e-a25f-cc45613aa150",
+      "result_id": "dc27727c-7ab6-4a92-be04-69b7bfa5d2f3"
+    },
+    {
+      "claim_id": "e744798d-9225-4415-92dc-18d93116e672",
+      "result_id": "dc27727c-7ab6-4a92-be04-69b7bfa5d2f3"
+    },
+    {
+      "claim_id": "fd066039-0b37-4f3f-90f0-570b28fdb93c",
+      "result_id": "dc27727c-7ab6-4a92-be04-69b7bfa5d2f3"
+    },
+    {
+      "claim_id": "173026f6-c81b-4844-a192-dae6d9001e60",
+      "result_id": "dc27727c-7ab6-4a92-be04-69b7bfa5d2f3"
+    },
+    {
+      "claim_id": "79830058-6539-4193-9589-b4bcb6d2adb0",
+      "result_id": "dc27727c-7ab6-4a92-be04-69b7bfa5d2f3"
+    }
+  ],
+  "comparisons": []
+}

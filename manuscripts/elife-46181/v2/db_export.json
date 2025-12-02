@@ -1,0 +1,1657 @@
+{
+  "submission": {
+    "id": "4e19b4cd-ab9a-41be-88ad-ccf1b7a721b5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:21:59.632308Z",
+    "updated_at": "2025-12-02T10:21:59.632308Z"
+  },
+  "content": [
+    {
+      "id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "submission_id": "4e19b4cd-ab9a-41be-88ad-ccf1b7a721b5",
+      "content_type": "manuscript",
+      "content_text": "# In vivo study of gene expression with an enhanced dual-color fluorescent transcriptional timer\n\n## Authors\n\n- Li He<sup>1</sup> ([ORCID: 0000-0003-2155-606X](https://orcid.org/0000-0003-2155-606X)) \u2020\n- Richard Binari<sup>1</sup>\n- Jiuhong Huang<sup>3</sup>\n- Julia Falo-Sanjuan<sup>4</sup>\n- Norbert Perrimon<sup>1</sup> ([ORCID: 0000-0001-7542-472X](https://orcid.org/0000-0001-7542-472X)) \u2020\n\n### Affiliations\n\n1. Department of Genetics Harvard Medical School Boston United States\n2. Howard Hughes Medical Institute Boston United States\n3. International Academy of Targeted Therapeutics and Innovation Chongqing University of Arts and Sciences Chongqing China\n4. Tufts University Medford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nFluorescent transcriptional reporters are widely used as signaling reporters and biomarkers to monitor pathway activities and determine cell type identities. However, a large amount of dynamic information is lost due to the long half-life of the fluorescent proteins. To better detect dynamics, fluorescent transcriptional reporters can be destabilized to shorten their half-lives. However, applications of this approach in vivo are limited due to significant reduction of signal intensities. To overcome this limitation, we enhanced translation of a destabilized fluorescent protein and demonstrate the advantages of this approach by characterizing spatio-temporal changes of transcriptional activities in Drosophila. In addition, by combining a fast-folding destabilized fluorescent protein and a slow-folding long-lived fluorescent protein, we generated a dual-color transcriptional timer that provides spatio-temporal information about signaling pathway activities. Finally, we demonstrate the use of this transcriptional timer to identify new genes with dynamic expression patterns.\n\n## Introduction\n\nChanges in gene expression are one of the key mechanisms that organisms use during both development and homeostasis. Gene expression is a highly dynamic process, which not only bears critical information about regulatory mechanisms but also controls the fate of many biological processes (Purvis and Lahav, 2013; Yosef and Regev, 2011). For example, oscillatory or constant expression of the Notch effector Hes1 dictates the choice of neuron stem cells between proliferation and differentiation (Isomura and Kageyama, 2014). In addition, defining the exact \u2018on\u2019 and \u2018off\u2019 timing of a relevant signal is vital to control different developmental events (Doup\u00e9 and Perrimon, 2014). For example, during the development of fly compound eyes, simultaneous activation of EGF and Notch signals determines a cone cell fate (Flores et al., 2000), while cells that experience sequential expression of EGF and the Notch-ligand Delta differentiate into photoreceptor cells (Tsuda et al., 2002).\n\nDocumenting precisely the spatio-temporal changes in gene expression that occur in response to intrinsic and extrinsic signals is a challenging problem in cell and developmental biology. Traditionally, transcriptional reporters that drive expression of fluorescent proteins (FPs) under the control of signaling response elements (SREs) have been widely used to visualize the activities of transcriptional events; however, the slow degradation (half-life\u00a0>20 hr) of FPs makes it hard to achieve the temporal resolution needed to dissect the dynamic nature of gene expression. Recently, this problem has been addressed by the application of a fluorescent timer, a slow maturing fluorescent protein that changes its from blue to red in\u00a0~7 hr (Bending et al., 2018). Despite the still relatively long conversion time, this fluorescent timer has two additional limitations: the signal is hard to fix for long-term storage, and because it can be photoconverted from blue to red, this timer only allows one single image and prohibits live-imaging application (Subach et al., 2009). Another strategy is the development of a destabilized version of GFP with a half-life of\u00a0~2 hr, which is achieved by fusing GFP with a PEST peptide signal for protein degradation (Li et al., 1998; Rogers et al., 1986). However, despite many in vitro successes, this strategy has met a major limitation when applied in vivo due to substantial loss of fluorescent intensity. Therefore, regular stable FPs are still the primary choice for generating transcriptional reporters to study gene expression patterns in vivo.\n\nHere, we address this problem by using translational enhancers to boost production of the destabilized reporters and demonstrate the advantages of using short-lived FPs to study dynamic gene expression in vivo. In addition, we generate a transcriptional timer that can be readily applied to study spatio-temporal activation of signaling pathways. Finally, we document how this transcriptional timer can be used, either using the UAS/Gal4 system or in an enhancer trap screen, to identify genes with dynamic expression.\n\n## Results\n\n### Current limitations of stable transcriptional reporters and challenges of the destabilization strategy\n\nMatching reporter dynamics with the activity of target genes is essential to faithfully recapitulate signaling activities (Doup\u00e9 and Perrimon, 2014). Two primary kinetic properties dictate reporter activities: the \u2018switch-on\u2019 and \u2018switch-off\u2019 speeds. The \u2018on\u2019 kinetic of FPs have been improved by engineering fast folding FPs, which shorten the maturation time of FPs from more than 1 hr to less than 10min (P\u00e9delacq et al., 2006) (Gordon et al., 2007). The \u2018off\u2019 kinetics of FPs has been improved from more than 20 hr to around 2 hr by fusing FPs with PEST peptides that promote degradation (Li et al., 1998) (Figure 1a). Although the advantages of using a short-lived reporter have been previously reported (Li et al., 1998), a systematic analysis of the differences between long-lived and short-lived reporters is still lacking. Using a protein synthesis and degradation model (Figure 1\u2014figure supplement 1a\u2013c), we first simulated the dynamics of the reporters and demonstrated a significant improvement by decreasing the half-life (Tp1/2) of the reporters from 20 hr to 2 hr (Figure 1b\u2013f). Specifically, we illustrate this problem using simulated responses of FP reporters to four basic types of promoter activities: switch on, switch off, pulse activation, and oscillation. Compared to FPs with a half-life of 20 hr, FPs with a half-life of 2 hr have a 90% shorter response time (time to achieve 50% maximal intensity) during the \u2018on\u2019 or \u2018off\u2019 events, and up to four times larger dynamic range in the case of oscillatory expression (Figure 1e,f, Figure 1\u2014figure supplement 1a\u2013c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig1-v2.jpg)\n\n**Figure 1.:** (a)\u00a0Illustration of the biological processes that affect the final concentration of mature fluorescent protein, including transcription, translation, protein maturation, mRNA degradation, and protein degradation with the general half-life of mRNA, FP maturation time, and half-life of protein labeled. Destabiliation of the FP, achieved by fusion of FP with PEST domain, shortens the half-life of regular FP from over\u00a0~20 hr to\u00a0~2 hr. (b-d). Comparison between simulated signals from a destabilized fluorescent reporter (green, Tp1/2\u00a0=\u00a02 hr) and a regular fluorescent reporter (blue, Tp1/2\u00a0=\u00a020 hr) following switch-on, switch-off, 1 hr pulse, and oscillation with a period of 2 hr. The half-life of mRNA (Tm1/2) is set as 0.5 hr, and the protein maturation time (\u03c4m1/2) is set as 0.1 hr. The time points when the fluorescent signals reach 50% of the maximal intensity (for switch-on and switch-off) and the maximum response (for transient pulse activation) are indicated by black arrows. (e). Simulated signal intensities of fluorescent proteins with different protein half-lives to a sinusoid transcriptional oscillation with a period of 4 hr. The rest of the parameters are the same with above. The dynamic portion (the difference between the peak and valley) of the reporter (a half-life of 0.5 hr) is indicated by black arrows. (f). The dynamic range (the difference between the peak and valley of the signal compared to its average intensity as indicated in (e) of reporters with indicated half-lives generated by sinusoid transcriptional activity with different length of the period. The dynamic range of the total signal positively correlates with the oscillation period and negatively correlates with the protein half-life. (g) The intensity of the reporter signal for a constitutively active promoter (with no temporal variation) linearly depends on its protein half-life (black line). However, the maximal intensity of the reporter is less reduced by the shortened half-life for a shorter transient activation: a short-lived reporter (half-life of 2 hr) shows a 90% reduction of maximal signal compared with a stable reporter (half-life of 20 hr) for a constitutively active promoter. Nevertheless, the intensity is only reduced by 50% if the promoter is transiently activated for 1 hr. Td: the duration of a pulse transient promoter activation. (h,i) Simulated changes in maximum fluorescent intensity and response time (time to reach 50% of the maximum intensity) of the reporters with different half-lives of protein and mRNA for a promoter switch-off event.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0Illustration of the biological processes that affect the concentration of mature fluorescent protein, including transcription, translation, protein maturation, mRNA degradation, and protein degradation with key parameters labeled. (b,c) Equations describing the model generated by following the law of mass action, with the parameters shown in the table below.\n\nAlthough the destabilization strategy successfully leads to an FP with a shorter half-life, it is problematic as it causes significant loss of the signal (Figure 1g\u2013i). Thus, at constant expression, the intensity of the maximum signal is linearly proportional to the protein half-life, and decreasing the half-life from 20 hr to 2 hr causes a 90% signal loss (Figure 1g, black curve). The reduction of maximum signal intensity is also affected by different types of transcriptional activation. In the case of short pulsatile activation, a more transient activation (a shorter duration Td) is less sensitive to a reduction in the protein half-life (Figure 1g colored curves); however, transient activation also triggers weaker reporter activity, which makes it more vulnerable to intensity reduction.\n\nWe further analyzed the effects of reducing mRNA half-life (Tm1/2) compared to protein destabilization (Figure 1h,i). Measurements of Tm1/2 of FPs in the literature are highly variable, ranging from several minutes to hours (Baker and Parker, 2006; Sacchetti et al., 2001; Houser et al., 2012), which is probably due to differences in the 3\u2019 UTR used or different mRNA expression levels relative to the mRNA degradation machinery. According to our measurements (Figure 2\u2014figure supplement 1e), the Tm1/2 of FP reporters is about 0.5 hr. Therefore, we used 0.5 hr to 3 hr in our modeling. According to the model, the mRNA half-life significantly influences reporter intensity (Figure 1h), which is approximately proportional to the Tp1/2* Tm1/2. In contrast, reducing mRNA half-life has much less effect on reporter response time, which is mainly controlled by Tp1/2 + Tm1/2 (Figure 1i). Because in our system, Tp1/2 is much longer than Tm1/2, shortening the mRNA lifetime will significantly reduce signal intensity without endowing the reporter with more range in dynamic detection. Therefore, we decided to primarily use destabilized FPs in our study. For a system with a large Tm1/2 relative to Tp1/2, strategies to shorten mRNA lifetime by addition of RNA destabilizing sequence can be used (Voon et al., 2005).\n\n### Application of translational enhancers to rescue the signal loss caused by destabilization\n\nThe significant loss of signal limits implementation of the destabilization strategy, especially in systems like Drosophila where a transgene is usually present in 1 or 2 copies per genome. To overcome this obstacle, we searched for ways to increase the signal of destabilized FPs. One possible solution is to use FPs with high intrinsic brightness. To test this, we used a fly codon-optimized sfGFP for its fast folding and bright fluorescence (P\u00e9delacq et al., 2006; Venken et al., 2011). The effectiveness of destabilization was first tested in cultured fly S2 cells. Adding the PEST sequence from mouse ornithine decarboxylase (MODC) effectively reduced the half-life of sfGFP to\u00a0~3 hr (Figure 2\u2014figure supplement 1). Next, to test the approach in vivo, we generated transgenic flies with destabilized sfGFP (dGFP) for two widely used signaling reporters: STAT (containing the STAT response element from Socs36E; Bach et al., 2007) and Notch (containing the Notch response element Su(H)Gbe; Furriols and Bray, 2001). GFP signals were examined in tissues previously reported to show high STAT and Notch activities (embryo for STAT and wing imaginal disc for Notch). Destabilization reduced the signal intensity of these reporters to near background (Figure 2a\u2013c). As further increasing the intrinsic brightness of FPs is challenging\u2014even with the brightest FPs currently available the increase in signal intensity is still limited (less than two fold; Cranfill et al., 2016)\u2014we decided to test other strategies to increase the FP signal. One potential solution is to increase expression of the FP by expressing multiple tandem FPs (Shearin et al., 2014; Genov\u00e9 et al., 2005). However, this strategy makes cloning cumbersome and may render the insertion unstable due to recombination. Thus, we instead decided to use translational enhancing elements that have been demonstrated to increase protein production from mRNA by up to 20 fold (Pfeiffer et al., 2012; Pfeiffer et al., 2010). These elements include a short 87 bp intervening sequence (IVS) from myosin heavy chain to facilitate mRNA export to the cytoplasm (Pfeiffer et al., 2010), a synthetic AT-rich 21 bp sequence (Syn21) to promote translational initiation (Pfeiffer et al., 2012; Suzuki et al., 2006), and a highly-efficient p10 polyadenylation (polyA) signal from baculovirus (van Oers et al., 1999). To test if these elements can be used to increase the reporter signals, we inserted the translational enhancing elements into reporter constructs containing dGFP (destabilized sfGFP) (Figure 2a\u2013c). Transgenic flies were generated by phiC31-mediated site-directed integration into the same genomic locus (attP40) to avoid potential position effect (Groth et al., 2004). Strikingly, the addition of translational enhancers successfully increased the reporter signal with an expression pattern similar to that of previously reported stable reporters (Figure 2a\u2013c) (Furriols and Bray, 2001; Rodrigues et al., 2012). We further measured the in vivo half-life of the dGFP in live tissues by blocking transcription with Actinomycin (10 \u03bcM) and monitored degradation of the GFP (Figure 2d). The result shows a reporter half-life (TGFP1/2 ~2.6 \u00b1 0.3 hr) similar to what was observed in cultured cells (~3.7\u00a0\u00b1\u00a00.7 hr) (Figure 2d-f; Figure 2\u2014figure supplement 1e). We also tested the absolute signal intensity of regular GFP with the translational enhancer (eGFP) and destabilized GFP with the same enhancer (edGFP). The total signal intensity from edGFP is about 8% of what is observed for eGFP, consistent with a 91% reduction in protein half-life.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig2-v2.jpg)\n\n**Figure 2.:** (a)\u00a0Illustration of the regular and destabilized GFP reporters. All the GFPs used in this study are the fast folding superfolder GFP (sfGFP). Destabilized GFP is labeled as dGFP, and dGFP reporter with translational enhancing elements is labeled as edGFP. All FPs used in this study contain the SV40 nuclear localization signal (NLS) at the N-terminus to facilitate signal segregation unless specified otherwise. (b, c) Comparison of dGFP and edGFP controlled by 6XSTAT response element in fly embryos and Su(H)Gbe Notch responding element in third instar wing imaginal discs. Images were taken with identical exposure. The contour of the embryo is outlined. (d) Dissected fly wing disc, expressing the STAT::edGFP and STAT:: eRFP, cultured ex vivo. Tissue was treated with 10 \u03bcM Actinomycin D to block transcription. STAT at the hinge region of the wing disc was imaged every 5 min for 4.5 hr. (e) The intensities of both dGFP and RFP were measured over time. Data from three independent replicates were collected and plotted. (f) The in vivo reporter half-life (TGFP1/2, representing effects of both Tm1/2 and Tp1/2) was estimated by linear regression of fluorescent intensity (in logarithmic scale). 95% confidence interval was calculated from linear regression. (g) Regular GFP and dGFP are expressed under Su(H)Gbe together with translational enhancers. Images were taken under identical parameters. The total fluorescent intensity from both reporters was plotted below with the intensity normalized to the dGFP signal. Data were collected from 10 different brains for each genotype. Scale bar: (b) 50 \u03bcm; (c, g) 100 \u03bcm; (d) 25 \u03bcm. Error bar: s.e.m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a)\u00a0Drosophila S2 cells transiently transfected with both Ubi::nls-sfGFP-Myc-PEST and Ubi::nls-RFP-HA were treated with 10 \u03bcM Actinomycin D to block RNA synthesis for 6 hr. Images with identical exposure time were taken every hour after drug addiction. Scale bar: 100 \u03bcm. (b) The plot of fluorescence intensity of dGFP and RFP in cultured cells at different time points. (c) S2 cells treated with the transcriptional blocker Actinomycin D were harvested every 0.5 hr from time 0.0 hr to time 4.5 hr. Samples were analyzed by fluorescent western blot using rabbit anti-Myc (800 nm, Green) and mouse anti-HA (700 nm, Red). Quantification of fluorescent intensity from three independent experiments. Error bar: s.e.m. (d) Fold change of fluorescent intensity was plotted over time (logarithmic scale). The combined half-life of both mRNA and protein (TGFP1/2) was calculated by linear regression using least squares estimation. The expected value and 95% confident interval of TGFP1/2 was calculated from the linear regression. (e) Table of measured half-lives of fluorescent reporters (TGFP1/2, including both mRNA and protein half-life) measured using western blot after Actinomycin D treatment (in blue cells). Protein half-life (Tp1/2) was measured using western blot after cycloheximide (100 \u03bcg/ml) treatment to block protein synthesis (in yellow cells). Regular GFP, RFP or GFP-PEST fused with His2A is too stable to be reliably estimated within the 5 hr treatment period.\n\n### Direct comparison between destabilized and stable reporters in live tissues\n\nThe effective increase of FP signal allows us to directly evaluate the activity of short-lived and long-lived traditional reporters. To achieve this, we generated a STAT::eRFP reporter with the same translational enhancing elements and inserted it into the same locus (attP40) (Figure 3\u2014figure supplement 1a). The activities of STAT::edGFP and STAT::eRFP reporters (as transheterozygotes) in developing embryos were examined under live imaging conditions (Figure 3a). Compared to the stable RFP, the destabilized reporter showed a transient increase in STAT activity in tracheal pits (Tp), pharynx (Pr), proventriculus (Pv), posterior spiracles (Ps), and hindgut (Hg) (Figure 3a, Figure 3\u2014figure supplement 1b, Videos 1 and 2) (Johansen et al., 2003). To quantify the temporal changes of dGFP and RFP, the total fluorescent signals of both reporters were measured over time at the indicated region (arrowhead in Figure 3a); the dGFP signal shows a definite improvement in response time (Figure 3b). Using the half-lives estimated from the in vivo measurement (2.1 hr for dGFP and 18.5 hr for RFP) (Figure 3\u2014figure supplement 1c\u2013e) and the reporter synthesis and degradation model (Figure 1\u2014figure supplement 1), we further estimate the actual transcriptional activity of the reporter, which happens at an earlier stage (~2 hr in advance of detectable dGFP reporter activity) (Figure 3b). This result is consistent with the previously observed temporal expression of the STAT ligand upd from stage 9 to 12 (Johnson et al., 2011). We also notice that the degradation reaction deviated from first-order kinetics at a high concentration of FP (Figure 3\u2014figure supplement 1e). Meanwhile, the degradation speed of the FPs, which depends on the availability of relevant enzymes, may also vary under different conditions. Therefore, the direct interpretation of the difference between dGFP and RFP is the relative rather than absolute ratio. The absolute relationship between the reporters to the actual transcripts should be determined experimentally on a case by case basis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig3-v2.jpg)\n\n**Figure 3.:** (a)\u00a0Time-lapse imaging of developing fly embryos expressing both STAT::edGFP and STAT::eRFP from stages 12 to 17 when STAT activity starts to increase. Maximum intensity z-projections of the mid-section (120 \u03bcm) are shown. Arrowheads indicate the posterior spiracles and hindgut region. The signal from the same structure turns from green to red over time. (b) The total dGFP and RFP fluorescent signals within the posterior spiracles and hindgut region (indicated by arrows in a) are plotted as colored crosses. The estimated promoter activity was calculated using equations (4) (Figure 1\u2014figure supplement 1b), and plotted as a dashed blue line. The simulated responses of dGFP and RFP from the estimated transcriptional signal using equations (1)-(3) (Figure 1\u2014figure supplement 1b) are plotted as dashed green and red lines respectively. The merged intensity from estimated dGFP and RFP signals is illustrated as a color bar at the top of the plot. Scale bar: 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a)\u00a0The STAT reporter consists of gypsy insulators at each end to prevent potential influence of nearby promoters, a 6XSTAT response element from STAT effector Socs36E, a minimal promoter from the hsp70 heat shock gene (HSPmin), an intervening sequence (IVS), a Syn21 sequence, a fly codon-optimized fluorescent protein with nuclear localization signal (NLS), a destabilized GFP (dGFP) which is sfGFP fused with a PEST degradation sequence from mouse ornithine decarboxylase (MODC), and p10 polyA signal. The dGFP together with the translational enhancing elements were called edGFP. (b) Frames from live imaging of STAT::edGFP and STAT::eRFP reporter in developing embryos (from developmental stage 13 to 17). Maximum intensity projections of z-stack images that capture the surface of the embryo (25 \u03bcm) are shown (Video 2). The surface signal was projected separately from the mid-section because it is much weaker than the signal from internal organs. STAT activity is initially detected at the tracheal pits (indicated by white arrowheads). As embryonic development continues, the dGFP signal disappears whereas the RFP signal remains. Meanwhile, STAT activity, revealed by STAT::edGFP in the gonad (indicated by yellow arrow), also increases and decreases during the time of imaging. (c, d) z-projection of the internal organs of a developing fly embryo expressing both STAT::edGFP and STAT::eRFP reporters (Video 1). Fluorescent intensities of both GFP and RFP from three different positions, P1 (posterior spiracles and hindgut), P2 (pharynx), and P3 (proventriculus), are measured. Original and normalized total fluorescent signals from P1 (GFP1 and RFP1), P2 (GFP2 and RFP2), and P3 (GFP3 and RFP3) are plotted in (d) respectively. (e) Estimation of dGFP and RFP half-life (TGFP1/2\u00a0=\u00a02.1 hr, TRFP1/2\u00a0=\u00a018.5 hr, which represent the effects from both Tm1/2 and Tp1/2) using P1 (posterior spiracles and hindgut) signals from six different embryos. The degradation of dGFP is moderately deviated from the simplified model, suggesting that the substrate concentration may be comparable with the Michaelis-Menten (MM) constant. Therefore, the estimated half-life parameter is an average over time. Scale bar: (b.c) 100 \u03bcm.\n\n![Video 1.](https://cdn.elifesciences.org/articles/46181/elife-46181-video1.mp4.jpg)\n\n**Video 1.:** Embryo was imaged at room temperature using a Zeiss Lightsheet Z1 microscope with a 20X (N.A. 1.0) lens. Z-stack images (2 \u03bcm between each slice) were acquired every 10 min. A maximal intensity z-projection of mid-section (120 \u03bcm) is shown in the video. Video was taken from stage 13 to stage 17 when the somatic muscles contract. Genotype of the sample is: w; STAT::edGFP/STAT::eRFP.\n\n![Video 2.](https://cdn.elifesciences.org/articles/46181/elife-46181-video2.mp4.jpg)\n\n**Video 2.:** Embryo was imaged at room temperature using a Zeiss Lightsheet Z1 microscope with a 20X (N.A. 1.0) lens. Z-stack images (2 \u03bcm between each slice) were acquired with 10 min time intervals. A maximal intensity z-projection of surface (25 \u03bcm) is shown. Video was taken from stage 13 to stage 17 before the somatic muscles contraction. Genotype of the sample is: w; STAT::edGFP/STAT::eRFP.\n\n### Combining destabilized GFP and stable RFP to create a transcriptional timer\n\nShort-lived reporters show clear advantages in revealing expression dynamics in live tissues. However, not all tissues are amenable to live imaging. Further, live imaging experiments are time-consuming and hard to adapt for large-scale studies. From our previous analyses, we noticed that dynamic information, including the initiation, maintenance, and reduction of transcriptional activities, can be directly estimated by comparing the ratio of fluorescence from stable vs destabilized reporters from a still image. Because the GFP matures faster than RFP (maturation time\u00a0~0.1 hr for sfGFP [Khmelinskii et al., 2012] vs.\u00a0~1.5 hr for TagRFP [Merzlyak et al., 2007] used in this study), when the promoter switches on, a green signal is detected first. As the promoter remains active, both GFP and RFP signals reach a balance and such that their overlay produces a yellow color (when the max intensities of GFP and RFP are normalized). Furthermore, when transcription switches off, because the GFP signal decreases more quickly (the half-life of dGFP is\u00a0~2 hr, and the half-life of RFP is\u00a0~20 hr), only the RFP signal is left (Figure 4a). Previously, ratiometric imaging of FPs based on their different properties, such as maturation time and sensitivity to specific ions, has been used successfully to measure protein life-time (Khmelinskii et al., 2012), pH changes (Gjetting et al., 2012; Zhou et al., 2012), and Mg2+ concentration (Koldenkova et al., 2015). We reason that dynamic transcriptional activities might also be detected similarly using the ratio between dGFP and RFP.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig4-v2.jpg)\n\n**Figure 4.:** (a)\u00a0The destabilized GFP (dGFP) combined with stable RFP functions as a fluorescent timer to reveal transcriptional dynamics. The maturation and degradation half-lives of dGFP and RFP are indicated. (b. c) A comparison between the regular GFP reporter with a combination between dGFP and RFP reporter under control of either STAT response elements or Notch response element Su(H)Gbe. Both reporters are visualized in third instar larval brains. NB, neuroblast; GMC, Ganglion mother cells. Scale bar: (b, c) 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a)\u00a0Change of STAT activity in third instar larval optic lobe (OL) at different developing stages. (b) Activities of Notch signaling revealed by Su(H)Gbe::edGFP and Su(H)Gbe::eRFP in third instar larval brain. In the optic lobe (OL), the Notch signal is down-regulated by a \u2018proneural wave\u2019 that sweeps across the neuroepithelium (NE) from the medial to the lateral regions, to trigger the NE to neuroblast (NB) transition. Consistent with this, a gradient change of Notch activity from red to green was observed in the NE region. Red signal (Notch low) located medially, and a band of green signal (Notch high) located at the lateral side of the OL, were observed, revealing the site of Notch pathway activation and progression of the proneural wave. Lo, lobula; Me, medulla; VNC, ventral nerve cord. (c) Both dGFP and RFP reporters show activity in the wing margin region of the third instar wing disc, with the GFP signal concentrated in a more defined cell population. Scale bar: (a,b,c) 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a)\u00a0Notch activity is monitored by both Su(H)Gbe::edGFP and Su(H)Gbe::eRFP reporters. Dissected third instar larval brain was cultured together with the larval fat body in Schneider's medium and imaged every 5 min. A z-stack covering the entire NB cell body was taken. In the central brain region, the large neuroblasts (NBs) (green) undergo asymmetric cell division and create new NBs and much smaller progeny cells (red). (b)\u00a0The total signal from a single NB was measured using Bitplane Imaris software. The dGFP channel showed an oscillation with amplitude\u00a0~8% of the average signal, whereas the RFP channel is generally flat. The change of dGFP is consistent with an asymmetric NB cell division event (~1.5 hr) that produces a small progeny cell marked by RFP, suggesting that Notch activity may be affected during cell division. Scale bar: 25 \u03bcm.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a)\u00a0Structure of the multicistronic reporter containing edGFP and RFP. (b) Comparison between STAT::edGFP, STAT::eRFP and STAT::edGFP-P2A-RFP in third instar larval brain. (c) No significant change of ratio between dGFP compared to RFP was observed in the embryo and larval brain when both proteins are controlled by a constitutively active Ubiquitin promoter. Representative images from the stage 14 (top panel) and 16 (middle panel) fly embryos, and third instar larval optic lobe (bottom panel) are shown. Scale bar: (b) 50 \u03bcm; (c) 100 \u03bcm.\n\nTo test this strategy in vivo in a multicellular tissue, we examined STAT activity in the larval optic lobe. During development, STAT activity has been shown to act as a negative signal that antagonizes progression of the cell differentiation wave, which triggers the transition of neuroepithelial cells (NEs) into neuroblasts (NBs) (Yasugi et al., 2008). A stable STAT reporter shows the spreading of STAT activity within the neuroepithelial region, similar to what we observe with STAT::eRFP alone. In contrast, the signal from STAT::edGFP together with STAT::eRFP revealed a clear \u2018green front\u2019 and \u2018red rear\u2019 in the same region (Figure 4b). This dynamic pattern, with a higher STAT activity at the boundary between NEs and NBs, is consistent with previous proposed wave-like STAT activity that propagates from the lateral to medial region (Yasugi et al., 2008). In addition, analysis of STAT::edGFP and STAT::eRFP in fixed larval optic lobes at different developmental stages further support this wave-like propagation model (Figure 4\u2014figure supplement 1a).\n\nAnother example of the dynamic information revealed by combining edGFP and eRFP is the expression of the Notch reporter in larval brain NBs. NBs undergo an asymmetric cell division to generate smaller progeny (Figure 4c). Previous studies have shown that the Notch suppressor complex PON/Numb is preferentially localized to progeny cells (Suzuki et al., 2006; van Oers et al., 1999) and that ectopic activation of Notch generates a brain tumor phenotype attributable to excess NBs, suggesting that Notch activity is required for NB self-renewal (Wang et al., 2006). Strikingly, whereas the stable Notch reporter accumulates in both NBs and their progeny, the destabilized reporter is preferentially expressed in NBs (Figure 4c, Figure 4\u2014figure supplement 1b), consistent with functional studies (Wang et al., 2006). Combining the information from the edGFP and eRFP reporters reveals a clear Notch activity gradient that decreases as NBs differentiate. Importantly, in addition to its superior spatial resolution, the destabilized reporter also shows improved temporal resolution in NBs under live imaging conditions (Figure 4\u2014figure supplement 2).\n\nOur data suggest that combining edGFP and RFP creates a useful tool to study transcriptional dynamics, even in fixed samples. To facilitate this, we generated a multicistronic reporter containing both edGFP and RFP connected by the \u2018self-cleaving\u2019 2A peptide (Szymczak and Vignali, 2005), edGFP-2A-RFP, which we refer to as a transcriptional timer or \u2018TransTimer\u2019 (Figure 4\u2014figure supplement 3a). Larval optic lobes expressing the transcriptional timer controlled by STAT response element show similar expression pattern as transheterozygous STAT::edGFP and STAT::eRFP, indicating that the multicistronic system is effective (Figure 4\u2014figure supplement 3b).\n\nDestabilization of dGFP depends on protein degradation. Potential changes in the degradation speed of dGFP could affect the intensity of dGFP, which might distort our estimation of the real transcriptional activities. To test this possibility, we generated a TransTimer under the control of the fly Ubiquitin promoter (a constitutively active promoter in most fly tissues). Ubi::edGFP-2A-RFP shows no significant variation in the green and red ratios in fly embryos or the larval brain (Figure 4\u2014figure supplement 3c). In addition, under control of other constitutive promoters, TransTimer also shows a relatively stable ratio between the two colors in different tissues (Supplementary file 2), suggesting that changes in the FP ratios observed with TransTimer are primarily due to changes in transcriptional activity in the tested tissues, not cell type or tissue-specific differences in protein degradation. However, for specific organ or developmental stage, a control with a constitutive promoter for protein degradation changes is advisory.\n\n### Generation of a transcriptional timer for use with the UAS/Gal4 system\n\nCreating a TransTimer reporter for new signaling or target genes requires cloning of different signal response elements. Meanwhile, several large transgenic collections (up to several thousands) of Gal4 lines under the control of enhancers of different genes have been generated (Brand and Perrimon, 1993; Jenett et al., 2012; Lee et al., 2018). A TransTimer controlled by UAS would provide a quick way to test expression dynamics of Gal4 lines using a simple genetic cross (Figure 5a). Thus, we generated UAS::TransTimer transgenic flies and tested the UAS-controlled version in the adult Drosophila gut. TransTimer under control of esg-Gal4, a fly intestinal stem cells (ISCs) and enteroblasts (EBs) driver (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2007), revealed particular cells within the stem cell group that turned \u2018red,\u2019 distinguishing them from other \u2018yellow\u2019 stem cells (Figure 5b). Further analysis of these \u2018red\u2019 cells showed that they down-regulate esg expression and up-regulate the enteroendocrine cell marker Prospero (Pros), suggesting that they are differentiating (Figure 5\u2014figure supplement 1a). In addition, the esg-controlled TransTimer shows significantly more dynamics in the developing intestine and regenerating intestine following Bleomycin treatment (a DNA damaging agent) (Amcheslavsky et al., 2009), consistent with the different level of activity of stem cells under these conditions (Figure 5b, Figure 5\u2014figure supplement 1b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig5-v2.jpg)\n\n**Figure 5.:** (a)\u00a0UAS-TransTimer, a UAS controlled multicistronic reporter containing dGFP and RFP connected by the P2A peptide was generated and crossed with the intestine stem cell driver esg-Gal4. (b) Compared with the regular GFP reporter, TransTimer (dGFP-P2A-RFP/dG-2A-R) reveals the differentiating cells, which reduce the expression of the escargot (esg) stem cell marker (arrowheads). Knocking-down O-fut1 inhibits Notch activity and causes ISC tumors. Compared to regular GFP, significant heterogeneity is revealed in the over-proliferating cell clusters using TransTimer. (c,d) Intestine tumors are generated by knocking down the Notch ligand Dl or the cytokine receptor Domeless (Dome). The double-headed arrow indicates the z-direction with the basal side of intestine epithelium facing up and apical side facing down.\u00a0Scale\u00a0Bar:\u00a0(b)\u00a025\u00a0\u03bcm;\u00a0(c)\u00a0100\u00a0\u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a)\u00a0The small cells with high RFP and low dGFP signals are positive for the enteroendocrine (EE) cell marker Pros, suggesting that these cells are differentiated cells that turn off esg. (b) Patterns of the dynamic reporter driven by esg-Gal4 in the Drosophila intestine at different developmental stages. In the second instar, the adult midgut progenitors (AMPs) exist as individual cells and disperse throughout the intestine. Using TransTimer, we observed considerable variation in the dGFP/RFP ratio, indicating an unexpected heterogeneity in this cell population. In the third instar intestine, the AMPs proliferate and form clusters called midgut imaginal islands (MIIs). Some AMPs with high Notch activity start to differentiate into peripheral cells (PCs), which surround the AMPs to create a transient stem cell niche. Consistent with this model, cells at the periphery of MII showed more red color, suggesting that these cells started to differentiate and lost their stemness. During the early pupal stage, the MIIs break down, while PCs and a large portion of AMPs differentiate into pupal intestine cells, which will be degraded at the end of the pupal stage. Consistent with this, many esg\u00a0+AMPs turn red as these cells start to differentiate. During metamorphosis, the larval intestine is completely turned over, and the late pupal intestine, which will become the future adult intestine, is newly generated from AMPs. Therefore, except for the ISCs that still maintain the dGFP signal, differentiated gut cells all show the RFP signal, suggesting that they were recently derived from esg\u00a0+AMPs. During the adult stage, esg\u00a0+ISCs and enteroblast (EBs) are mitotically inactive and predominately show a yellow color. However, in the presence of the damaging reagent Bleomycin, which triggers strong cell proliferation and differentiation, a significant separation between dGFP and RFP signal is observed. Scale bar: (a, b) 50 \u03bcm.\n\nNext, we used TransTimer to examine the cell heterogeneity of different intestine tumors. In ISC tumors induced by knocking down O-fut1, an enzyme required for Notch maturation (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2007), the regular GFP reporter showed only a moderate variation of the stem cell marker esg. By contrast, TransTimer revealed an evident decrease of dGFP compared to RFP in\u00a0~70\u201360% of the cells in the cluster, suggesting that a substantial heterogeneity in the tumor is caused by down-regulation of esg over time (Meacham and Morrison, 2013) (Figure 5b). Tumors generated by knocking down either Delta, the ligand of Notch receptor, or Domeless (Dome), the transmembrane receptor of JAK/STAT signaling pathway, grow into a similar multilayered cell cluster (Figure 5c) (Jiang et al., 2009). Interestingly, compared to Dl mutant tumors, where all multilayered cells maintain constant levels of esg (dGFP/RFP ratio), the inner layer of Dome mutant tumors shows clear reduction of esg expression (lower dGFP/RFP ratio) relative to the basal layer. This result suggests that Dome mutant tumors, unlike Dl mutant tumors, require direct contact with the basal membrane to keep their stemness (Figure 5d).\n\n### Application of TransTimer for the discovery of new genes with dynamic expression\n\nAs demonstrated above, UAS-TransTimer is an effective tool to discover expression changes when crossed with a Gal4 driver of interest. To further test the power of this approach to discover new genes with interesting expression dynamics, we screened\u00a0~450 Gal4 lines using UAS-TransTimer (Marianes and Spradling, 2013). 37 lines (~8%) showed clear dynamic activities (substantial variation in dGFP/RFP ratio) in either larval brain, imaginal disc, or adult intestine (Figure 6a, Supplementary file 1), whereas the remaining Gal4s showed essentially uniform dGFP/RFP ratios, suggesting stable expression (images of representative control Gal4 lines are shown in Supplementary file 2). Among the genes with dynamic expression patterns, we discovered the mechanosensitive channel Piezo, which is expressed in the posterior midgut specifically in EE precursor cells (He et al., 2018). TransTimer driven by Piezo-Gal4 displays a spatially dynamic expression pattern (separation between the \u2018green\u2019 and \u2018red\u2019 signals) (Figure 6b). In addition, the \u2018red\u2019 cells, which down-regulate Piezo expression, are positive for the EE cell marker Pros, consistent with the results of our previous study showing that Piezo\u00a0+\u00a0cells differentiate into EE cells (Figure 6c). In addition to Piezo, we also identified new uncharacterized genes with dynamic expression patterns in a subpopulation of esg+ cells (Figure 6d, Figure 6e). Further studies of these genes will be required to determine whether they are markers of partially differentiated cells like Piezo or if their expression levels oscillate in the stem cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig6-v2.jpg)\n\n**Figure 6.:** (a)\u00a0Examples of Gal4 lines that show clear dynamic patterns with TransTimer (UAS-dGFP-P2A-RFP) in various organs: Per-Gal4, controlled by the circadian rhythm regulator Period (larval brain and ventral ganglion); insc-Gal4, expressed in Type II neuroblasts (larval brain); Act5C-Gal4, controlled by the act5C enhancer (larval intestine); GMR51F08-Gal4, controlled by the enhancer from the fly myosin heavy chain Zipper (larval intestine, adult intestine precursor cells); Piezo-Gal4 (BL58771), controlled by the cloned enhancer from mechanical sensitive ion channel Piezo (adult intestine). (b) Dynamic reporter under control of Piezo-Gal4[KI], a Gal4 knock-in after the first ATG of Piezo. Piezo\u00a0+\u00a0cells with high RFP and low GFP are positive for the EE cell marker Prospero (Pros). (c) Illustration of the differentiation process from Piezo\u00a0+\u00a0EP (enteroendocrine precursor) to Pros\u00a0+\u00a0EE cells. (d) The expression dynamics of UAS-TransTimer driven by different Gal4 lines in the fly intestine. (e) Gal4 activities are detected in a subpopulation of the esg\u00a0+stem cells. Stem cells are marked by esg::GFP and the expression of Gal4s are revealed by UAS-RFP. Scale bar: (a-e) 50 \u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a)\u00a0Illustration of the synthesis and degradation processes of fluorescent protein (FP) controlled by the Gal4/UAS system. (b) The degradation of Gal4 and FP was modeled to follow the first order kinetics with half-life TG1/2 for Gal4 and half-life TFP1/2 for FP. The production and degradation of mRNA were not explicitly expressed to simplify the model as it is not the major contributor to the system dynamics. (c,d) An \u2018off\u2019 event of the signal was modeled. The response time (time to reduce the signal to half of the original) is generally proportional to the sum of TG1/2 and TFP1/2. (e,f) A pulse of signal activation (duration of 1 hr) was modeled. Signals from dGFP and RFP controlled directly by the promoter was compared with signals from dGFP and RFP driven by the promoter controlled Gal4 (half-life of 10 hr). Including Gal4 as an intermediate significantly delays the response of the FPs. (f) Presence of Gal4 also increases the maximum intensity of the FPs in response to the pulse signal. This amplification effect increases as the half-life of Gal4 grows longer and gradually saturates as the TG1/2 surpasses the TFP1/2. (g,h) dGFP and RFP were driven either directly by the Notch responding element Su(H)Gbe or indirectly by Su(H)Gbe-Gal4. Wing imaginal discs and brain from third instar larval were analyzed. Images were all captured with full dynamic range (with the brightest pixel near the 100% saturation). Scale bar: (g) 100 \u03bcm; (h) 25 \u03bcm.\n\nAlthough UAS-TransTimer is a useful tool to explore the hidden transcriptional dynamics using the Gal4 collection, the addition of Gal4 as an intermediate also alters the signal property of TransTimer. According to our model, the presence of Gal4 has two major effects: first, as an amplification mechanism, it can enhance the output signal, which may be advantageous for some weak enhancer (Figure 6\u2014figure supplement 1a,b,f); second, it delays the dynamic of the reporter, as the new half-life of TransTimer controlled by Gal4 is generally proportional to the sum of TG1/2 (half-life of Gal4) and TFP1/2 (half-life of FPs) (Figure 6\u2014figure supplement 1c\u2013e). Because the exact half-life of Gal4 in vivo is unknown, we estimated the effect of Gal4/UAS system by comparing the dGFP and RFP controlled directly by the Notch responding element Su(H)Gbe and UAS-TransTimer controlled by Su(H)Gbe-Gal4. Consistent with the predictions of the model, the UAS-TransTimer that is driven by Su(H)Gbe-Gal4 shows a similar but considerable broader Notch activation pattern in the third instar larval wing discs than Su(H)Gbe-TransTimer, which is probably due to both longer signal retention and stronger signal amplification (Figure 6\u2014figure supplement 1g). In the larval brain, the UAS-TransTimer shows a similar activation gradient in neuroblast cells and their progenies but with significantly stronger retention in daughter cells due to the slow signal reduction (Figure 6\u2014figure supplement 1h).\n\nTo overcome the delay effect of Gal4, we decided to control TransTimer directly by endogenous promoters. To achieve this goal, we generated transgenic flies with TransTimer controlled by a minimal synthetic Drosophila promoter that is silent unless activated by nearby enhancers (Pfeiffer et al., 2008), and randomly mobilized the transgene in the fly genome to identify endogenous enhancers with dynamic activities (Figure 7a, Figure 7\u2014figure supplement 1). After screening\u00a0~400 independent enhancer trap lines, we identified 46 unique lines that showed fluorescent signals in the larval brain, imaginal disc, or adult intestine. 17 of these 46 lines show clear expression dynamics, suggesting that TransTimer can detect expression changes at endogenous levels (Figure 7b, Figure 7\u2014figure supplement 1b, Supplementary file 3). To validate the screen, we tested the expression and function of new genes identified in this enhancer trap screen. Since we are particularly interested in new lines that show exclusive expression in stem cells, we chose TransTimer insertions near the promoters of Tsp42Ea, a Tetraspanin protein, and CG30159, an evolutionarily conserved gene with unknown function - as the function of these genes had yet not been characterized in fly intestine. A Gal4 line (NP1176-Gal4), located closely (within 250 bp) to the TransTimer insertion site at the promoter of Tsp42Ea and CG30159, also shows specific expression in both larval and adult intestine stem cells (Figure 7d), which is very similar with the expression pattern revealed by TransTimer (Figure 7b). Knocking down CG30159 significantly reduces stem cell numbers, suggesting that CG30159 is required for maintenance of intestinal stem cell (Figure 7e,f). The human homolog of CG30159 is C3orf33, which has been identified as a regulator of the extracellular signal-regulated kinase (ERK) and predicted to be a secreted peptide due to the presence of signal peptide at its N-terminus (Hao et al., 2011). Its function in intestinal stem cells requires further investigation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig7-v2.jpg)\n\n**Figure 7.:** (a)\u00a0A P-element containing Drosophila synthetic core promoter (DSCP), translational enhancing elements, and dGFP-P2A-RFP (TransTimer) was randomly mobilized in the fly genome to identify enhancers with dynamic expression. edGFP and RFP are tagged by Myc and HA epitopes, respectively, to allow signal enhancement by immunohistochemistry. (b) Examples of enhancer trap lines that show dynamic patterns in different organs: Lbk, an Immunoglobulin-like protein, or CG10731, the subunit S of mitochondrial ATP synthase complex (wing disc); CG32795, a novel membrane protein (larval brain); inx2, a gap junction protein (larval brain and eye disc); DopEcR, Dopamine and Ecdysteroid receptor (larval brain); and Tsp42E, a tetraspanin protein; and CG30159, a novel gene with unknown function (adult intestine). (c) The dGFP-P2A-RFP and the NP1176-Gal4 enhancer trap insertions at the promoter region of Tsp42Ea and CG30159. Exons are shown in the diagram (blue for Tsp42Ea, yellow for CG30159). Tsp42Ea and CG30159 share the same promoter region. (d) NP1176-Gal4 (marked by UAS-RFP) shows stem cell expression like esg (marked by esg::GFP). (e, f) Knocking down CG30159 significantly reduces stem cell numbers (esg+\u00a0cells) in the intestine, while RNAi against Tsp42Ea does not have a significant phenotype. Number of esg\u00a0+cells were quantified within 100 \u03bcm^two regions from n\u00a0=\u00a08 (GFP control), n\u00a0=\u00a07 (Tsp42Ea-i), and n\u00a0=\u00a09 (GC30159-i) adult fly intestines. p-value<0.001. Cell numbers are normalized according to the control. (g) Schematic of the TransTimerLex for enhancer trap with RFP replaced by the bacterial transcriptional repressor LexA. This reporter allows both two-color contrast and further genetic manipulation of the target cell population using the LexA/lexAop binary expression system. (h) An enhancer trap line, under potential control of Larp enhancer, was crossed with lexAop::RFP. The anterior region of the larval intestine is shown, revealing a decrease of transcriptional activity in the proventriculus. Scale bar: Scale bar: (b, h) 50 \u03bcm; (d, e) 100 \u03bcm.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46181/elife-46181-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a)\u00a0Genetic crossing scheme for random insertions of a P-transposable element with TransTimer (P[dG-2A-R]) on the second and third chromosomes. Fly lines with interesting expression patterns were balanced and mapped using splinkerette PCR. (b) List of identified enhancer trap lines with interesting dynamic expression patterns. The names of the genes with promoter regions located within 3 kb range of the reporter insertion sites are listed in the table. In most cases, the insertions showed a clear association with the promoter region of a specific gene. Representative images of the expression patterns are shown in Supplementary file 3.\n\nAs we have shown above, the enhancer trap screen with TransTimer can effectively detect expression dynamics in vivo. However, this screen can only detect gene expression and cannot be used to manipulate the target cell population. To extend the application of TransTimer, we replaced the RFP with lexA, a yeast transcriptional factor used as a binary expression system together with its binding sequence lexA operator (lexAop) (Yagi et al., 2010). This dGFP-P2A-lexA construct can not only detect expression dynamics when crossed with lexAop-RFP but also manipulate gene expression in labeled cells in the presence of an additional lexAOP-controlled transgene (Figure 7g). We refer to dGFP-P2A-lexA as \u2018TransTimerLex\u2019. To test the feasibility of this strategy, we generated transgenic flies containing the TransTimerLex insertion and randomly mobilized the element in the fly genome. From our pilot screen (~20 independent lines), we identified one insertion under control of Larp, a transcriptional factor, which shows clear expression dynamics in the larval intestine (Figure 7h). This result suggests that the TransTimeLex system will be a useful way to both identify new genes and manipulate gene expression in the corresponding cells.\n\n## Discussion\n\nIn this study, we described a general and straightforward strategy to use destabilized transcriptional reporters in vivo and demonstrated its power in revealing the spatio-temporal dynamics of gene expression, which is missed by conventional transcriptional reporters. In addition, we generated a dual-color TransTimer that encodes the transcriptional dynamics into a green-to-red color ratio which can be analyzed in fixed tissues. This TransTimer provides a unique opportunity for large-scale screens for in vivo expression dynamics in all types of tissues. Further, our study indicates that TransTimer is effective for the discovery of new genes with interesting expression patterns, either using a candidate gene approach or random genome-wide screening. Our reporter system may also be combined with other techniques such as FACS-seq and signal cell sequencing techniques to provide a time-dependent change of the transcriptome in vivo. In fact, a similar strategy has recently been successfully applied to provide the temporal information for signal cell sequencing of the mouse intestinal stem cell system (Gehart et al., 2019). Therefore, we expect that this new method will widely facilitate studies in Drosophila and other organisms.\n\n## Materials and methods\n\nMolecular Biology cDNAs of sfGFP and TagRFP, codon optimized for Drosophila, were a kind gift from Dr. Hugo Bellen (Venken et al., 2011). HSPmini-IVS-Syn21 and p10 were amplified by PCR from pJFRC81 (Addgene) (Pfeiffer et al., 2012). MODC sequence was from pBPhsFlp2::PEST vector (Addgene) (Nern et al., 2011). The vector containing LHG, which encodes a chimeric protein consisting of the LexA DNA binding domain and the Gal4 transcriptional activation domain, was a kind gift from Dr. Konrad Basler (Yagi et al., 2010). pUAST4 and pWALIUM10-roe were from our lab stock collection. Primers and gBlocks were obtained from Integrated DNA Technologies. PCR was performed with the proofreading enzyme Phusion (NEB). Plasmid purification, PCR purification, and gel extraction were performed with QIAprep Spin Miniprep Kit (QIAGEN), QIAquick PCR Purification, and QIAquick Gel Extraction Kits (QIAGEN), respectively. In-Fusion cloning and Gateway cloning were performed using In-Fusion HD Liquid Kits (Clontech), and BP and LR Clonase Enzyme Mixes (ThermoFisher Scientific). All cloning experiments were verified by DNA sequencing.\n\nThe full names of plasmids (1-24) generated in this study are listed in Supplementary file 4. sfGFP, nls-sfGFP, or nls-TagRFP were first cloned into the pDONR221 vector by gateway BP cloning. The MODC sequence was inserted before the stop codon of pENTR-sfGFP and pENTR-nls-sfGFP using In-Fusion. Mcd8 and His2A were amplified by PCR and inserted before the ATG of pENTR-sfGFP-MODC linearized by PCR by the In-Fusion assembly. 3XMyc and 3XHA were inserted after GFP and RFP by In-Fusion. Plasmids 1\u20136 for cell culture were generated by recombining the pENTR constructs into pUbi-Gateway vector (pUWR). To generate the empty reporters (plasmids 7 to 9), pCasper4B2G was first opened by SpeI. PCR fragments of HSPmini-IVS-syn21 and nls-sfGFP (or nls-TagRFP) were assembled into the vector with the first SpeI cutting site mutated. Then, the vector was opened again by SpeI, and PCR fragment of p10 polyA was inserted using In-Fusion to yield pCaSpeR4B2G-IVS-syn21-nlsGFP-p10. MODC (PEST) was amplified by PCR and added into the SpeI site by In-Fusion. Plasmid 10 was constructed similarly with HSPmini, nlsGFP-PEST, and SV40 poly(A) sequences inserted into the SpeI site of pCaSpeR4B2G. Plasmids 11\u201318 were generated by insertion of PCR products of 6XSTAT or Su(H)Gbe into the XbaI site of the corresponding empty reporter plasmids. PCR fragments of HSPmini-IVS-syn21-nlsGFP-MODC and 2A-nlsRFP-p10 were assembled into the pENTR vector linearized by PCR. Then the HSPmini-IVS-syn21-nlsGFP-MODC-2A-nlsRFP-p10 was PCR amplified and replaced the UAS and Gateway cassette of the pWALIUM10-roe to generate plasmid 19. 6XSTAT was amplified by PCR and inserted at the before the HSPmini of 19 to create plasmid 20. The Ubi promotor was amplified from pUWR vector to replace the UAS-HSPmini promoter of plasmid 21. The IVS-syn21-nlsGFP-MODC-2A-nlsRFP-p10 was PCR amplified and inserted into the pWALIUM10-roe by replacing the Gateway cassette to generate plasmid 22. Then, 3XMyc and 3XHA were inserted after GFP and RFP of pENTR-HSPmini-IVS-syn21-nlsGFP-MODC-2A-nlsRFP-p10, respectively. The HSPmini promoter was replaced by Drosophila synthetic core promoter (DSCP), which contains multiple core promoter motifs, to increase the chance of trapping endogenous enhancers. The pENTR-DSCP-IVS-syn21-nls-sfGFP-3XMyc-MODC-2A-nlsRFP-3XHA-p10 was recombined into pCaSpeR4-Gateway vector using LR cloning (plasmid 23). LexA was amplified by PCR and replaced the nlsRFP-3XHA of pENTR-DSCP-IVS-syn21-nls-sfGFP-3XMyc-MODC-2A-nlsRFP-3XHA-p10. Then pENTR-DSCP-IVS-syn21-nls-sfGFP-3XMyc-MODC-2A-LexA-p10 was recombined into pCaSpeR4-Gateway vector using LR cloning (plasmid 24).\n\n### Drosophila genetics\n\nThe following fly lines were obtained from the Bloomington Drosophila Stock Center: Delta2-3(99B) (BL3629), Dorothy-Gal4 (BL6903), Dome-RNAi (BL32860), CG30159-RNAi (BL61888), Tsp42Ea-RNAi (BL39044), fz-Gal4 (BL66817), Per-Gal4 (BL7127), Trx-Gal4 (BL40367), ZnT41F-Gal4 (BL66859), Ogre-Gal4 (BL49340), Rho-Gal4 (BL45254), Gcm-gal4 (BL35541), igl-Gal4 (BL76744), dMyc-Gal4 (BL47844), Hh-Gal4 (BL49437), Antp-Gal4 (BL26817), Plc21C-Gal4 (BL76142), anchor-Gal4 (BL66861), tutl-Gal4 (BL66824), Act5C-Gal4 (BL4414), zip-Gal4 (BL48187), dMyc-Gal4 (BL47844), piezo-Gal4 (BL58771, BL59266), ppk-Gal4 (BL32078, BL32079), Ubi-Gal4 (BL32551), MESK2-Gal4 (BL67434), fz-Gal4 (BL66817), Mip-Gal4 (BL51984), CG7744-Gal4 (BL76662), CG4467-Gal4 (BL66843), CG2082-Gal4 (BL76181), CG7510-Gal4 (BL66861), CG10283-Gal4 (BL76152), CG33964-Gal4 (BL76742), CG14995-Gal4 (BL76721), CG5521-Gal4 (BL76180), CG8177-Gal4 (BL77781), CG34347 (BL76674), CG13175-Gal4 (BL76742), CG8270-Gal4 (BL77741), CG15270-Gal4 (BL76649), CG43980-Gal4 (BL66863), CG40006-Gal4 (BL), CG43980-Gal4 (BL66863), and dMef2-Gal4 (BL27390). NP1176-Gal4 was from DGRC (Kyoto Stock Center). Dl-RNAi (v37287) was from Vienna Drosophila Resource Center. GMR-Gal4, Da-Gal4, tubGal4, and esg-Gal4 were from lab stocks. Insc-Gal4, ase-Gal80ts was a gift from Dr. Dong Yan (Zhu et al., 2011), and Dl-Gal4 and Su(H)Gbe-Gal4 were from Dr. Steve Hou (Amcheslavsky et al., 2014). All flies were maintained on cornmeal-yeast-agar media. Stocks were kept at room temperature with a 12/12 light/dark cycle.\n\n### Drosophila S2R\u00a0+\u00a0cell culture and Western blotting\n\nDrosophila S2R\u00a0+\u00a0cells were grown in Schneider's Drosophila Medium (SDM) (Invitrogen) containing 10% heat-inactivated fetal bovine serum (FBS) at 25\u00b0C. Sub-confluent S2R\u00a0+\u00a0cells were seeded in 6-well plates and subsequently transfected using Effectene Transfection Reagent (QIAGEN). Cells were cultured for 48 hr before experiments. 10 \u03bcM (final concentration) Actinomycin D was used to block RNA synthesis, and 100 \u03bcg/ml (final concentration) cycloheximide was used to block protein synthesis. Cells were treated with the indicated drugs up to 4.5 hr before significant cell death was observed. Plasmids expressing pUbi-dGFP-Myc (0.03 ug), and pUbi-RFP-HA (0.01 ug), together with empty plasmids (to reach a total of 0.3 ug of DNA) were added in each 6-well plate during transfection. The dilution of the expression plasmid was important: we observed that too much protein expression saturates the degradation machinery and prolongs the observed half-life. S2R\u00a0+\u00a0cells were harvested by centrifugation and lysed in RIPA buffer. Proteins were separated on a 10% SDS-PAGE gel and analyzed by Western blotting. Quantitative Western blots were performed as previously described (Eaton et al., 2014). Images were acquired using a LI-COR Odyssey Classic imager and analyzed using NIH ImageJ.\n\n### Generation and test of enhancer trap lines using dynamic enhancers\n\nDynamic reporters were integrated into the fly genome using P-element mediated transformation by injection into w1118 embryos (Rubin and Spradling, 1982). Transgenic lines were balanced and mapped using w*; Sco/CyO; MKRS/TM6B. Then, six independent lines were generated by crossing with w*;Sp/CyO; Sb,P(Delta2-3)99B/TM6B,Tb+ (BL3629). Males from the F1 generation with red eyes and carrying the CyO balancer were further crossed individually with w1118 females. F2 males with red eyes that co-segregate with the CyO balancer were used in the initial screen.\n\nDetailed crosses for the enhancer screen are shown in Figure 7\u2014figure supplement 1a.\u00a0~400 fly lines were recovered from the F2 generation. Third instar larval brains, imaginal discs, and adult intestines of these flies were dissected and examined for GFP and RFP signal using a Zeiss LSM 780 confocal microscope.\n\nP-element insertion sites were mapped by Splinkerette PCR (Horn et al., 2007). PCR primers specific for 5 and 3 prime ends of P-elements were used as previously described (Potter and Luo, 2010). Genomic sequences flanking the P-element insertion sites were recovered and shown in Supplementary file 5. These sequences were used in BLAST searches against the Drosophila Genome Database.\n\n### Immunostaining\n\nImmunostainings of Drosophila intestines were performed as previously described (Micchelli and Perrimon, 2006). The following antibodies were used: mouse anti-Prospero (1:50, Developmental Studies Hybridoma Bank), mouse anti-HA (1:500, Abcam, ab18181), rabbit anti-Myc tag (1/250, Cell signaling), goat anti-mouse IgGs conjugated to Alexa 647 (1:500, Molecular Probes), mouse IgGs conjugated to Alexa 488 (1:500, Molecular Probes), IRDye 800CW Goat anti-Rabbit IgG (1:10,000 LI-COR P/N 926\u201332211), and IRDye 680RD Goat anti-Mouse IgG (1:20,000 LI-COR P/N 926\u201368070). Dissected fly tissues were mounted in Vectashield with DAPI (Vector Laboratories). In all micrographs, the blue signal shows the nuclear marker DAPI. Fluorescence micrographs were acquired with a Zeiss LSM 780 confocal microscope. All images were adjusted and assembled in NIH ImageJ.\n\n### Modeling of FP production, maturation, and degradation\n\nThe model used to calculate reporter synthesis, maturation, and degradation was modified from previously described equations (Wang et al., 2008) with the addition of an equation for mRNA degradation. Briefly, degradation of mRNA and the synthesis rate of premature (nonfluorescent) protein (NP) is proportional to the mRNA concentration (R). Generation of the mature reporter (MP), modeled as a first-order chemical reaction, only depends on the concentration of NP. Protein degradation is modeled independently of the maturation process. The degradation rates of mRNA and proteins are first modeled based on Michaelis-Menten (MM) function (Figure 1-figure supplement b, equations 1-3), which considers the potential saturation of the degradation machinery. When the substrate concentration is significantly smaller than the Michaelis constant Km, the equations can be simplified with the half-life of the mRNA and protein explicitly displayed (Figure 1\u2014figure supplement 1b, equations 1\u2019\u22123\u2019). Dilution by cell division is not included in this model because the fluorescent signal is analyzed in a cell cluster rather than in individual cells, and cell division does not affect the total intensity from the entire cell group and no significant changes in degradation speed have been observed between different cells (Figure 3\u2014figure supplement 1). With this first-order kinetic model, the transcriptional activity of the promoter F(x) can be calculated through equation from the observed fluorescent reporter signal [MP] (4). For sfGFP, the maturation time is\u00a0~0.1 hr, which is much smaller than its protein half-life, such that equation 4 can be further simplified as 4\u2019. To calculate F(x), the dGFP signal was fitted with a polynomial function (order\u00a0=\u00a04) to generate the first and second derivatives.\n\n### Live-cell imaging and data analysis\n\nLive-cell imaging of developing embryos and dissected larval brains was performed as previously described (Tomer et al., 2012; Lerit et al., 2014; Lemon et al., 2015). Images were captured on a Zeiss Lightsheet Z1 microscope using a 20X (N.A. 1.0) lens. A z-stack of the dual-color image (488 nm excitation/500\u2013550 nm detection for GFP, and 561 nm excitation/580\u2013650 nm detection for RFP) was recorded at 10 min intervals. This interval was chosen empirically to minimize photobleaching without losing temporal information. Photobleaching was measured by continuously imaging of the sample for 50 frames for 10 min and adjusted during image processing. Images of fixed tissue were captured on a Zeiss LSM 780 confocal microscope. Total fluorescent intensity in 3D volume was acquired using Imaris image analysis software (Bitplane). The rest of the analysis was completed using NIH ImageJ with customized macros. Simulation of the model was completed in MATLAB. The Student\u2019s unpaired, two-tailed t-test was used to determine statistical significance between samples.\n",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "f99136ac-e2f5-4279-a150-ca391e35840d",
+      "submission_id": "4e19b4cd-ab9a-41be-88ad-ccf1b7a721b5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hugo J Bellen, Baylor College of Medicine United States\n\nReviewers:\n- Julie Simpson, University of California, Santa Barbara United States\n\n## Review text\n\nDOI: [10.7554/eLife.46181.039](https://doi.org/10.7554/eLife.46181.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"In vivo study of gene expression with an enhanced dual-color fluorescent transcriptional timer\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by K VijayRaghavan as the Senior Editor and Hugo Bellen as the Reviewing Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Julie Simpson (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this paper, He and colleagues generated a new in vivo reporter to detect spatial and temporal activity of gene expression by combining a fast-folding destabilized fluorescent protein (FP) and a slow-folding long-lived FP. While existing transcriptional reporters combined with stable FPs are successful in detecting signaling activities, this is at the expense of detecting dynamic changes due to the long-lived fluorescent signals. The authors improved spatial and temporal resolution of these reporters by generating short-lived GFP through the inclusion of PEST peptides (GFP-PEST). Since the shorter half-life of GST-PEST caused significant loss of signals, the authors combined super-folder GFP and translational enhancing elements. The utility of these features were demonstrated by generating STAT and Notch reporters. The authors next combined short-lived GFP/long-lived RFP reporters, and generated STAT reporters that can detect dynamic STAT activity in embryos by live imaging (or in fixed sample by ratiometric imaging of the FPs). To expand this tool for broader contexts (and requiring less genetic crosses), the authors generated a clever construct they called TransTimer that includes the self-cleaving 2A peptide between edGFP and RFP under the control of a single promoter. Using TransTimer with enhancer-trapped GAL4 lines or through insertion near an enhancer region allowed the discovery of new genes showing dynamic expression changes. Indeed, the authors found that a new gene, CG30159, is required for the maintenance of intestinal stem cells. Finally, the authors generated TransTimerLex, which achieved both detection and manipulation of gene expression at the same time.\n\nThis is a nicely designed study with strong proof of principle. Together, these different transcriptional reporters enhance the current tools/methods available to study dynamic transcriptional changes. They will be very useful to the wider Drosophila research committee, and as pointed out by the authors. The design elements should be transferrable to other research organisms as well. In summary, we believe this is a very clever tool that will be useful for the community and eLife readership.\n\nEssential revisions:\n\n1) When Transtimer is used as a direct reporter construct under the control of a gene's promoter and enhancer, it directly reflects the expression dynamics of that gene. It is more complex when Transtimer is used as a UAS construct. This use employs GAL4 which is a stable intermediary. The authors should model how using a stable intermediary such as GAL4 affects detection of signaling dynamics. This would strengthen the conclusion that can be reached using the Transtimer as a UAS construct. If there are already GAL4 reagents (e.g. generated as part of Flylight project) for any of the genes for which the authors have a direct reporter, a head to head comparison would be beneficial.\n",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9a0389aa-fcee-40b6-a475-02e87d0e4bb1",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C1",
+      "claim": "Fluorescent transcriptional reporters are widely used as signaling reporters and biomarkers to monitor pathway activities and determine cell type identities.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent transcriptional reporters are widely used as signaling reporters and biomarkers to monitor pathway activities and determine cell type identities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the use of fluorescent reporters in the field, drawing from established scientific practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "699b2be5-e88a-49df-bd99-13a541505e53",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C2",
+      "claim": "A large amount of dynamic information is lost due to the long half-life of the fluorescent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a large amount of dynamic information is lost due to the long half-life of the fluorescent proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of fluorescent proteins in the field, supported by established understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "49f59af0-34ad-476b-97e6-a3c4df43d595",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C3",
+      "claim": "Applications of destabilized fluorescent reporters in vivo are limited due to significant reduction of signal intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, applications of this approach in vivo are limited due to significant reduction of signal intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a known limitation of the destabilization approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "2c818590-897c-4fe2-939c-bbc0a43e421f",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C4",
+      "claim": "The authors enhanced translation of a destabilized fluorescent protein to overcome the limitation of signal reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this limitation, we enhanced translation of a destabilized fluorescent protein and demonstrate the advantages of this approach by characterizing spatio-temporal changes of transcriptional activities in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary methodological contribution of the study, demonstrated through experimental results shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "2cbc1e7c-2529-4b42-acd1-0d89e737cd69",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C5",
+      "claim": "The authors generated a dual-color transcriptional timer by combining a fast-folding destabilized fluorescent protein and a slow-folding long-lived fluorescent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, by combining a fast-folding destabilized fluorescent protein and a slow-folding long-lived fluorescent protein, we generated a dual-color transcriptional timer that provides spatio-temporal information about signaling pathway activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the construction and purpose of the dual-color timer, which is demonstrated experimentally in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "04ea406a-c341-41ab-8539-4928b4ddedc9",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C6",
+      "claim": "The transcriptional timer can be used to identify new genes with dynamic expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate the use of this transcriptional timer to identify new genes with dynamic expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This application is demonstrated through the screening experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "467b590e-f076-4d13-ae61-494e1c68ce9e",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C7",
+      "claim": "Oscillatory or constant expression of the Notch effector Hes1 dictates the choice of neuron stem cells between proliferation and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, oscillatory or constant expression of the Notch effector Hes1 dictates the choice of neuron stem cells between proliferation and differentiation (Isomura and Kageyama, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Isomura and Kageyama, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "124a24d3-75a1-42c5-a605-3b7420a86ae9",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C8",
+      "claim": "During the development of fly compound eyes, simultaneous activation of EGF and Notch signals determines a cone cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, during the development of fly compound eyes, simultaneous activation of EGF and Notch signals determines a cone cell fate (Flores et al., 2000), while cells that experience sequential expression of EGF and the Notch-ligand Delta differentiate into photoreceptor cells (Tsuda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Flores et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "620e5e4d-6fc5-4886-8fff-738518837b37",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C9",
+      "claim": "Cells that experience sequential expression of EGF and the Notch-ligand Delta differentiate into photoreceptor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, during the development of fly compound eyes, simultaneous activation of EGF and Notch signals determines a cone cell fate (Flores et al., 2000), while cells that experience sequential expression of EGF and the Notch-ligand Delta differentiate into photoreceptor cells (Tsuda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tsuda et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "8ce84936-6bbe-4375-9bb2-7d522a5db99f",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C10",
+      "claim": "The slow degradation (half-life >20 hr) of FPs makes it hard to achieve the temporal resolution needed to dissect the dynamic nature of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, transcriptional reporters that drive expression of fluorescent proteins (FPs) under the control of signaling response elements (SREs) have been widely used to visualize the activities of transcriptional events; however, the slow degradation (half-life >20 hr) of FPs makes it hard to achieve the temporal resolution needed to dissect the dynamic nature of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known property of fluorescent proteins, supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "534a0573-92a9-4ef4-aa4b-d250dbb0d155",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C11",
+      "claim": "A fluorescent timer that changes from blue to red in ~7 hr has been applied to address the problem of slow FP degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, this problem has been addressed by the application of a fluorescent timer, a slow maturing fluorescent protein that changes its from blue to red in ~7 hr (Bending et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bending et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "95446d9c-c9b7-449a-9b7d-39bec3d46224",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C12",
+      "claim": "The fluorescent timer has limitations: the signal is hard to fix for long-term storage, and it can be photoconverted from blue to red, allowing only one single image and prohibiting live-imaging application.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the still relatively long conversion time, this fluorescent timer has two additional limitations: the signal is hard to fix for long-term storage, and because it can be photoconverted from blue to red, this timer only allows one single image and prohibits live-imaging application (Subach et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Subach et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "28035f23-a65f-4bb4-9cf0-5ba07569160a",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C13",
+      "claim": "A destabilized version of GFP with a half-life of ~2 hr is achieved by fusing GFP with a PEST peptide signal for protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Another strategy is the development of a destabilized version of GFP with a half-life of ~2 hr, which is achieved by fusing GFP with a PEST peptide signal for protein degradation (Li et al., 1998; Rogers et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Li et al., 1998 and Rogers et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "d47960b4-3393-4fed-a9c5-ce04ebf75664",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C14",
+      "claim": "The destabilization strategy has met a major limitation when applied in vivo due to substantial loss of fluorescent intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite many in vitro successes, this strategy has met a major limitation when applied in vivo due to substantial loss of fluorescent intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of the destabilization approach, supported by established understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "1d2cf864-dbec-4413-9d53-16a4ac3d4e70",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C15",
+      "claim": "Regular stable FPs are still the primary choice for generating transcriptional reporters to study gene expression patterns in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, regular stable FPs are still the primary choice for generating transcriptional reporters to study gene expression patterns in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current practice in the field, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "b6f41c86-d4e1-4abb-8b21-fa3cbc8ecd51",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C16",
+      "claim": "The 'on' kinetic of FPs have been improved by engineering fast folding FPs, which shorten the maturation time of FPs from more than 1 hr to less than 10min.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'on' kinetic of FPs have been improved by engineering fast folding FPs, which shorten the maturation time of FPs from more than 1 hr to less than 10min (P\u00e9delacq et al., 2006) (Gordon et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to P\u00e9delacq et al., 2006 and Gordon et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "61c10f4a-392e-4f22-a7fa-0d2c124477d8",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C17",
+      "claim": "The 'off' kinetics of FPs has been improved from more than 20 hr to around 2 hr by fusing FPs with PEST peptides that promote degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'off' kinetics of FPs has been improved from more than 20 hr to around 2 hr by fusing FPs with PEST peptides that promote degradation (Li et al., 1998) (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Li et al., 1998 and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "5389f4fd-c8d4-444a-b3ab-c53634fa24c1",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C18",
+      "claim": "FPs with a half-life of 2 hr have a 90% shorter response time compared to FPs with a half-life of 20 hr during 'on' or 'off' events.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to FPs with a half-life of 20 hr, FPs with a half-life of 2 hr have a 90% shorter response time (time to achieve 50% maximal intensity) during the 'on' or 'off' events, and up to four times larger dynamic range in the case of oscillatory expression (Figure 1e,f, Figure 1\u2014figure supplement 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on modeling results shown in Figure 1e,f and Figure 1\u2014figure supplement 1a\u2013c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "8d77dfc6-d38f-43bb-8a7e-6781fb52766f",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C19",
+      "claim": "FPs with a half-life of 2 hr have up to four times larger dynamic range compared to FPs with a half-life of 20 hr in the case of oscillatory expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to FPs with a half-life of 20 hr, FPs with a half-life of 2 hr have a 90% shorter response time (time to achieve 50% maximal intensity) during the 'on' or 'off' events, and up to four times larger dynamic range in the case of oscillatory expression (Figure 1e,f, Figure 1\u2014figure supplement 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on modeling results shown in Figure 1e,f and Figure 1\u2014figure supplement 1a\u2013c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "3da557fa-10cf-4ca6-a7bf-96d86a23a04a",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C20",
+      "claim": "At constant expression, the intensity of the maximum signal is linearly proportional to the protein half-life.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at constant expression, the intensity of the maximum signal is linearly proportional to the protein half-life, and decreasing the half-life from 20 hr to 2 hr causes a 90% signal loss (Figure 1g, black curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on modeling results shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "31694eef-37a8-45af-9dbf-26b8e2123d4d",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C21",
+      "claim": "Decreasing the half-life from 20 hr to 2 hr causes a 90% signal loss at constant expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at constant expression, the intensity of the maximum signal is linearly proportional to the protein half-life, and decreasing the half-life from 20 hr to 2 hr causes a 90% signal loss (Figure 1g, black curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on modeling results shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "7fd919e5-7dc5-4c14-969d-96179e3216bf",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C22",
+      "claim": "The Tm1/2 of FP reporters is about 0.5 hr according to the authors' measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our measurements (Figure 2\u2014figure supplement 1e), the Tm1/2 of FP reporters is about 0.5 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental measurements shown in Figure 2\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "49a095dd-e5e1-4648-a3b7-e3a84402812d",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C23",
+      "claim": "The reporter intensity is approximately proportional to the Tp1/2* Tm1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the model, the mRNA half-life significantly influences reporter intensity (Figure 1h), which is approximately proportional to the Tp1/2* Tm1/2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on modeling results shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "6af3aaf3-6a1d-473e-b4b5-02e62ce71f04",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C24",
+      "claim": "Reporter response time is mainly controlled by Tp1/2 + Tm1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, reducing mRNA half-life has much less effect on reporter response time, which is mainly controlled by Tp1/2 + Tm1/2 (Figure 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on modeling results shown in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "cb745db2-f226-46df-9b87-7672019b28be",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C25",
+      "claim": "Adding the PEST sequence from mouse ornithine decarboxylase (MODC) effectively reduced the half-life of sfGFP to ~3 hr in cultured fly S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The effectiveness of destabilization was first tested in cultured fly S2 cells. Adding the PEST sequence from mouse ornithine decarboxylase (MODC) effectively reduced the half-life of sfGFP to ~3 hr (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "6bfb8009-6684-4a91-a791-5c8d96b8565f",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C26",
+      "claim": "Destabilization reduced the signal intensity of STAT and Notch reporters to near background in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP signals were examined in tissues previously reported to show high STAT and Notch activities (embryo for STAT and wing imaginal disc for Notch). Destabilization reduced the signal intensity of these reporters to near background (Figure 2a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 2a\u2013c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "d2f1c3fb-8882-4080-8f9a-96f8d1a787b6",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C27",
+      "claim": "The addition of translational enhancing elements successfully increased the reporter signal with an expression pattern similar to that of previously reported stable reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the addition of translational enhancers successfully increased the reporter signal with an expression pattern similar to that of previously reported stable reporters (Figure 2a\u2013c) (Furriols and Bray, 2001; Rodrigues et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 2a\u2013c and comparison with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "e896dd43-1cba-4e19-a714-df3800025780",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C28",
+      "claim": "The in vivo half-life of dGFP is TGFP1/2 ~2.6 \u00b1 0.3 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The result shows a reporter half-life (TGFP1/2 ~2.6 \u00b1 0.3 hr) similar to what was observed in cultured cells (~3.7 \u00b1 0.7 hr) (Figure 2d-f; Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental measurements shown in Figure 2d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "d8ed8282-5474-4aa5-9a88-822333bd8104",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C29",
+      "claim": "The total signal intensity from edGFP is about 8% of what is observed for eGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The total signal intensity from edGFP is about 8% of what is observed for eGFP, consistent with a 91% reduction in protein half-life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental comparison of signal intensities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "03a0c1d2-1ef2-4ab8-9c09-54f13877d69e",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C30",
+      "claim": "The destabilized reporter showed a transient increase in STAT activity in tracheal pits, pharynx, proventriculus, posterior spiracles, and hindgut in developing embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the stable RFP, the destabilized reporter showed a transient increase in STAT activity in tracheal pits (Tp), pharynx (Pr), proventriculus (Pv), posterior spiracles (Ps), and hindgut (Hg) (Figure 3a, Figure 3\u2014figure supplement 1b, Videos 1 and 2) (Johansen et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on live imaging results shown in Figure 3a, Figure 3\u2014figure supplement 1b, and Videos 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "6aa3d156-fec8-42e3-9c2f-f7a0b9d8b90d",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C31",
+      "claim": "The dGFP signal shows a definite improvement in response time compared to RFP.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the temporal changes of dGFP and RFP, the total fluorescent signals of both reporters were measured over time at the indicated region (arrowhead in Figure 3a); the dGFP signal shows a definite improvement in response time (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on quantitative analysis shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "6528052f-f48f-47d1-828f-8e78a309899f",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C32",
+      "claim": "The estimated actual transcriptional activity of the reporter happens at an earlier stage (~2 hr in advance of detectable dGFP reporter activity).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the half-lives estimated from the in vivo measurement (2.1 hr for dGFP and 18.5 hr for RFP) (Figure 3\u2014figure supplement 1c\u2013e) and the reporter synthesis and degradation model (Figure 1\u2014figure supplement 1), we further estimate the actual transcriptional activity of the reporter, which happens at an earlier stage (~2 hr in advance of detectable dGFP reporter activity) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on modeling and experimental data shown in Figure 3b and Figure 3\u2014figure supplement 1c\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "aa65aa84-5179-433c-86f9-90be93bbdb8b",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C33",
+      "claim": "The estimated transcriptional activity is consistent with the previously observed temporal expression of the STAT ligand upd from stage 9 to 12.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the previously observed temporal expression of the STAT ligand upd from stage 9 to 12 (Johnson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Johnson et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "6ba64706-026c-4051-b9a8-f8eb43ce5e10",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C34",
+      "claim": "When the promoter switches on, a green signal is detected first due to faster maturation of GFP compared to RFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the GFP matures faster than RFP (maturation time ~0.1 hr for sfGFP [Khmelinskii et al., 2012] vs. ~1.5 hr for TagRFP [Merzlyak et al., 2007] used in this study), when the promoter switches on, a green signal is detected first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the known maturation times of the fluorescent proteins, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "0f00f306-19b5-4e36-afb0-fe7db2d6af0a",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C35",
+      "claim": "As the promoter remains active, both GFP and RFP signals reach a balance such that their overlay produces a yellow color.",
+      "claim_type": "EXPLICIT",
+      "source": "As the promoter remains active, both GFP and RFP signals reach a balance and such that their overlay produces a yellow color (when the max intensities of GFP and RFP are normalized).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the properties of the two fluorescent proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "436b473c-82cb-48b1-a7bc-ae436d3a4126",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C36",
+      "claim": "When transcription switches off, only the RFP signal is left because the GFP signal decreases more quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when transcription switches off, because the GFP signal decreases more quickly (the half-life of dGFP is ~2 hr, and the half-life of RFP is ~20 hr), only the RFP signal is left (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical inference based on the different half-lives of the two fluorescent proteins, illustrated in Figure 4a.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "3d11598a-6d19-4fe8-879c-041a403e6ea9",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C37",
+      "claim": "STAT activity acts as a negative signal that antagonizes progression of the cell differentiation wave in the larval optic lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, STAT activity has been shown to act as a negative signal that antagonizes progression of the cell differentiation wave, which triggers the transition of neuroepithelial cells (NEs) into neuroblasts (NBs) (Yasugi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yasugi et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "10216871-673d-412c-bb92-df02e387cd05",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C38",
+      "claim": "The signal from STAT::edGFP together with STAT::eRFP revealed a clear 'green front' and 'red rear' in the neuroepithelial region.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the signal from STAT::edGFP together with STAT::eRFP revealed a clear 'green front' and 'red rear' in the same region (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "85a43653-3017-4625-8885-113b67819b93",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C39",
+      "claim": "The dynamic pattern with a higher STAT activity at the boundary between NEs and NBs is consistent with previously proposed wave-like STAT activity that propagates from the lateral to medial region.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynamic pattern, with a higher STAT activity at the boundary between NEs and NBs, is consistent with previous proposed wave-like STAT activity that propagates from the lateral to medial region (Yasugi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yasugi et al., 2008 and experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "a855724e-8a24-4921-9b27-543393de0750",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C40",
+      "claim": "The Notch suppressor complex PON/Numb is preferentially localized to progeny cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the Notch suppressor complex PON/Numb is preferentially localized to progeny cells (Suzuki et al., 2006; van Oers et al., 1999) and that ectopic activation of Notch generates a brain tumor phenotype attributable to excess NBs, suggesting that Notch activity is required for NB self-renewal (Wang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Suzuki et al., 2006 and van Oers et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "ebe16d77-f9cd-4bb9-88fb-4adde5dd1788",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C41",
+      "claim": "Ectopic activation of Notch generates a brain tumor phenotype attributable to excess NBs, suggesting that Notch activity is required for NB self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the Notch suppressor complex PON/Numb is preferentially localized to progeny cells (Suzuki et al., 2006; van Oers et al., 1999) and that ectopic activation of Notch generates a brain tumor phenotype attributable to excess NBs, suggesting that Notch activity is required for NB self-renewal (Wang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wang et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "492d8d25-ad66-4201-8259-7e46d75b264b",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C42",
+      "claim": "The destabilized reporter is preferentially expressed in NBs compared to their progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, whereas the stable Notch reporter accumulates in both NBs and their progeny, the destabilized reporter is preferentially expressed in NBs (Figure 4c, Figure 4\u2014figure supplement 1b), consistent with functional studies (Wang et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 4c and Figure 4\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "3e011f68-edde-4cc2-8733-222c9cc9853f",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C43",
+      "claim": "Combining the information from the edGFP and eRFP reporters reveals a clear Notch activity gradient that decreases as NBs differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the information from the edGFP and eRFP reporters reveals a clear Notch activity gradient that decreases as NBs differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results shown in the figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "cd52fb30-4e9b-4070-b35e-ec8a9b688bb4",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C44",
+      "claim": "The destabilized reporter shows improved temporal resolution in NBs under live imaging conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in addition to its superior spatial resolution, the destabilized reporter also shows improved temporal resolution in NBs under live imaging conditions (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on live imaging results shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "4ebb927f-3305-4081-9bac-18fc235a2f23",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C45",
+      "claim": "Ubi::edGFP-2A-RFP shows no significant variation in the green and red ratios in fly embryos or the larval brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubi::edGFP-2A-RFP shows no significant variation in the green and red ratios in fly embryos or the larval brain (Figure 4\u2014figure supplement 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 4\u2014figure supplement 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "e430f5a3-3cdc-479b-9310-4044f02ec1e3",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C46",
+      "claim": "Changes in the FP ratios observed with TransTimer are primarily due to changes in transcriptional activity in the tested tissues, not cell type or tissue-specific differences in protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, under control of other constitutive promoters, TransTimer also shows a relatively stable ratio between the two colors in different tissues (Supplementary file 2), suggesting that changes in the FP ratios observed with TransTimer are primarily due to changes in transcriptional activity in the tested tissues, not cell type or tissue-specific differences in protein degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental results shown in Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "eff5943b-bc93-40c1-a66c-0bfcd9802acc",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C47",
+      "claim": "TransTimer under control of esg-Gal4 revealed particular cells within the stem cell group that turned 'red,' distinguishing them from other 'yellow' stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TransTimer under control of esg-Gal4, a fly intestinal stem cells (ISCs) and enteroblasts (EBs) driver (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2007), revealed particular cells within the stem cell group that turned 'red,' distinguishing them from other 'yellow' stem cells (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "64ff2d8a-ccd8-42de-b775-86b1421c2828",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C48",
+      "claim": "The 'red' cells down-regulate esg expression and up-regulate the enteroendocrine cell marker Prospero (Pros), suggesting that they are differentiating.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of these 'red' cells showed that they down-regulate esg expression and up-regulate the enteroendocrine cell marker Prospero (Pros), suggesting that they are differentiating (Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 5\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "62f4bd29-989c-4bb3-91e2-4ab8bfd0c3d7",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C49",
+      "claim": "The esg-controlled TransTimer shows significantly more dynamics in the developing intestine and regenerating intestine following Bleomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the esg-controlled TransTimer shows significantly more dynamics in the developing intestine and regenerating intestine following Bleomycin treatment (a DNA damaging agent) (Amcheslavsky et al., 2009), consistent with the different level of activity of stem cells under these conditions (Figure 5b, Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 5b and Figure 5\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "c2e14216-c091-48cf-bedd-a74f1fc86cc9",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C50",
+      "claim": "In ISC tumors induced by knocking down O-fut1, TransTimer revealed an evident decrease of dGFP compared to RFP in ~70\u201360% of the cells in the cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, TransTimer revealed an evident decrease of dGFP compared to RFP in ~70\u201360% of the cells in the cluster, suggesting that a substantial heterogeneity in the tumor is caused by down-regulation of esg over time (Meacham and Morrison, 2013) (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "c32b0f4e-f6cc-45c1-bd38-63059e201caf",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C51",
+      "claim": "The inner layer of Dome mutant tumors shows clear reduction of esg expression (lower dGFP/RFP ratio) relative to the basal layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, compared to Dl mutant tumors, where all multilayered cells maintain constant levels of esg (dGFP/RFP ratio), the inner layer of Dome mutant tumors shows clear reduction of esg expression (lower dGFP/RFP ratio) relative to the basal layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental results comparing Dl and Dome mutant tumors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "d5aa2931-d030-4a91-a3e3-362e14ef78ac",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C52",
+      "claim": "Dome mutant tumors, unlike Dl mutant tumors, require direct contact with the basal membrane to keep their stemness.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that Dome mutant tumors, unlike Dl mutant tumors, require direct contact with the basal membrane to keep their stemness (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental results shown in Figure 5d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "7b854db9-0ef4-4fff-a60e-fa917c8aeccc",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C53",
+      "claim": "37 lines (~8%) out of ~450 Gal4 lines screened showed clear dynamic activities in either larval brain, imaginal disc, or adult intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "37 lines (~8%) showed clear dynamic activities (substantial variation in dGFP/RFP ratio) in either larval brain, imaginal disc, or adult intestine (Figure 6a, Supplementary file 1), whereas the remaining Gal4s showed essentially uniform dGFP/RFP ratios, suggesting stable expression (images of representative control Gal4 lines are shown in Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the results of the screen shown in Figure 6a and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "da133e48-bd13-4030-936c-ee4c05a6df56",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C54",
+      "claim": "Piezo is expressed in the posterior midgut specifically in EE precursor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the genes with dynamic expression patterns, we discovered the mechanosensitive channel Piezo, which is expressed in the posterior midgut specifically in EE precursor cells (He et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to He et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "01ab0f02-ef6a-444f-9de5-337d49959b82",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C55",
+      "claim": "TransTimer driven by Piezo-Gal4 displays a spatially dynamic expression pattern (separation between the 'green' and 'red' signals).",
+      "claim_type": "EXPLICIT",
+      "source": "TransTimer driven by Piezo-Gal4 displays a spatially dynamic expression pattern (separation between the 'green' and 'red' signals) (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "c05b95c8-e89d-47ac-9602-301b9113dd0c",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C56",
+      "claim": "The 'red' cells, which down-regulate Piezo expression, are positive for the EE cell marker Pros.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the 'red' cells, which down-regulate Piezo expression, are positive for the EE cell marker Pros, consistent with the results of our previous study showing that Piezo + cells differentiate into EE cells (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "ede7b9a3-bc4a-41d7-8446-62b37d8b854a",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C57",
+      "claim": "Piezo + cells differentiate into EE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the 'red' cells, which down-regulate Piezo expression, are positive for the EE cell marker Pros, consistent with the results of our previous study showing that Piezo + cells differentiate into EE cells (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on previous study results and current experimental data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "3a9daf10-4e3e-49af-bda1-b790fbbd35d1",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C58",
+      "claim": "The presence of Gal4 has two major effects: it can enhance the output signal as an amplification mechanism, and it delays the dynamic of the reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our model, the presence of Gal4 has two major effects: first, as an amplification mechanism, it can enhance the output signal, which may be advantageous for some weak enhancer (Figure 6\u2014figure supplement 1a,b,f); second, it delays the dynamic of the reporter, as the new half-life of TransTimer controlled by Gal4 is generally proportional to the sum of TG1/2 (half-life of Gal4) and TFP1/2 (half-life of FPs) (Figure 6\u2014figure supplement 1c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on modeling results shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "36d98e9b-39ad-41a6-9186-6fefc48565e5",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C59",
+      "claim": "The UAS-TransTimer that is driven by Su(H)Gbe-Gal4 shows a similar but considerable broader Notch activation pattern in the third instar larval wing discs than Su(H)Gbe-TransTimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the predictions of the model, the UAS-TransTimer that is driven by Su(H)Gbe-Gal4 shows a similar but considerable broader Notch activation pattern in the third instar larval wing discs than Su(H)Gbe-TransTimer, which is probably due to both longer signal retention and stronger signal amplification (Figure 6\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 6\u2014figure supplement 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "1fa5ee89-6b98-419d-b4f5-650023ff7fcc",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C60",
+      "claim": "After screening ~400 independent enhancer trap lines, 46 unique lines showed fluorescent signals in the larval brain, imaginal disc, or adult intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "After screening ~400 independent enhancer trap lines, we identified 46 unique lines that showed fluorescent signals in the larval brain, imaginal disc, or adult intestine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the results of the enhancer trap screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "a8385333-2a64-4bd4-995e-254bd89f695d",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C61",
+      "claim": "17 of the 46 lines show clear expression dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "17 of these 46 lines show clear expression dynamics, suggesting that TransTimer can detect expression changes at endogenous levels (Figure 7b, Figure 7\u2014figure supplement 1b, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the results of the enhancer trap screen shown in Figure 7b, Figure 7\u2014figure supplement 1b, and Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "657f33c2-e2c4-4615-b366-e578c35f3a8e",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C62",
+      "claim": "Knocking down CG30159 significantly reduces stem cell numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down CG30159 significantly reduces stem cell numbers, suggesting that CG30159 is required for maintenance of intestinal stem cell (Figure 7e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 7e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "5c23b40f-ed41-4147-8e40-0c586f44816e",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C63",
+      "claim": "The human homolog of CG30159 is C3orf33, which has been identified as a regulator of the extracellular signal-regulated kinase (ERK) and predicted to be a secreted peptide due to the presence of signal peptide at its N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "The human homolog of CG30159 is C3orf33, which has been identified as a regulator of the extracellular signal-regulated kinase (ERK) and predicted to be a secreted peptide due to the presence of signal peptide at its N-terminus (Hao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hao et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "c3c9e530-ad4b-4e50-9542-9ffc28f21953",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C64",
+      "claim": "The authors used translational enhancers to boost production of the destabilized reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we address this problem by using translational enhancers to boost production of the destabilized reporters and demonstrate the advantages of using short-lived FPs to study dynamic gene expression in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary methodological contribution of the study, demonstrated through experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "67151daa-d445-40ea-a615-9dff5b4541a2",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C65",
+      "claim": "The translational enhancing elements include a short 87 bp intervening sequence (IVS) from myosin heavy chain to facilitate mRNA export to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "These elements include a short 87 bp intervening sequence (IVS) from myosin heavy chain to facilitate mRNA export to the cytoplasm (Pfeiffer et al., 2010), a synthetic AT-rich 21 bp sequence (Syn21) to promote translational initiation (Pfeiffer et al., 2012; Suzuki et al., 2006), and a highly-efficient p10 polyadenylation (polyA) signal from baculovirus (van Oers et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pfeiffer et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "a85e8d4b-c4ff-4e98-9bbf-21e7fb4fff06",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C66",
+      "claim": "The translational enhancing elements include a synthetic AT-rich 21 bp sequence (Syn21) to promote translational initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These elements include a short 87 bp intervening sequence (IVS) from myosin heavy chain to facilitate mRNA export to the cytoplasm (Pfeiffer et al., 2010), a synthetic AT-rich 21 bp sequence (Syn21) to promote translational initiation (Pfeiffer et al., 2012; Suzuki et al., 2006), and a highly-efficient p10 polyadenylation (polyA) signal from baculovirus (van Oers et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pfeiffer et al., 2012 and Suzuki et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "fda1794d-fad7-4d34-a268-d76c24d48a3f",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C67",
+      "claim": "The translational enhancing elements include a highly-efficient p10 polyadenylation (polyA) signal from baculovirus.",
+      "claim_type": "EXPLICIT",
+      "source": "These elements include a short 87 bp intervening sequence (IVS) from myosin heavy chain to facilitate mRNA export to the cytoplasm (Pfeiffer et al., 2010), a synthetic AT-rich 21 bp sequence (Syn21) to promote translational initiation (Pfeiffer et al., 2012; Suzuki et al., 2006), and a highly-efficient p10 polyadenylation (polyA) signal from baculovirus (van Oers et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to van Oers et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "bcb29446-0c7a-4db8-bf4d-557c3acf35eb",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C68",
+      "claim": "The maturation time of sfGFP is ~0.1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the GFP matures faster than RFP (maturation time ~0.1 hr for sfGFP [Khmelinskii et al., 2012] vs. ~1.5 hr for TagRFP [Merzlyak et al., 2007] used in this study), when the promoter switches on, a green signal is detected first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Khmelinskii et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "c160f1a5-755c-4180-aa9a-b79d2939ad7d",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C69",
+      "claim": "The maturation time of TagRFP is ~1.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the GFP matures faster than RFP (maturation time ~0.1 hr for sfGFP [Khmelinskii et al., 2012] vs. ~1.5 hr for TagRFP [Merzlyak et al., 2007] used in this study), when the promoter switches on, a green signal is detected first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Merzlyak et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "6555fe58-cf94-483b-b31f-b57b5a07e7ce",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C70",
+      "claim": "The half-life of dGFP is ~2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when transcription switches off, because the GFP signal decreases more quickly (the half-life of dGFP is ~2 hr, and the half-life of RFP is ~20 hr), only the RFP signal is left (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental measurements shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "9536f024-83b1-4b3f-8b98-7a54e1ab44c9",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C71",
+      "claim": "The half-life of RFP is ~20 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when transcription switches off, because the GFP signal decreases more quickly (the half-life of dGFP is ~2 hr, and the half-life of RFP is ~20 hr), only the RFP signal is left (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental measurements shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "2f424a62-f293-45c6-b826-26bc07c265f9",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C72",
+      "claim": "The authors used fly codon-optimized sfGFP for its fast folding and bright fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we used a fly codon-optimized sfGFP for its fast folding and bright fluorescence (P\u00e9delacq et al., 2006; Venken et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to P\u00e9delacq et al., 2006 and Venken et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "08156f47-f8d8-4b97-8a82-6590b535658b",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C73",
+      "claim": "The in vivo half-life of dGFP in cultured cells is ~3.7 \u00b1 0.7 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The result shows a reporter half-life (TGFP1/2 ~2.6 \u00b1 0.3 hr) similar to what was observed in cultured cells (~3.7 \u00b1 0.7 hr) (Figure 2d-f; Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental measurements shown in Figure 2\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "dd068392-690e-404b-a230-de62eeb56bdc",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C74",
+      "claim": "The in vivo half-life of dGFP is 2.1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the half-lives estimated from the in vivo measurement (2.1 hr for dGFP and 18.5 hr for RFP) (Figure 3\u2014figure supplement 1c\u2013e) and the reporter synthesis and degradation model (Figure 1\u2014figure supplement 1), we further estimate the actual transcriptional activity of the reporter, which happens at an earlier stage (~2 hr in advance of detectable dGFP reporter activity) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental measurements shown in Figure 3\u2014figure supplement 1c\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "c709a412-8af6-45c2-a1a1-6cf121e8e4d3",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C75",
+      "claim": "The in vivo half-life of RFP is 18.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the half-lives estimated from the in vivo measurement (2.1 hr for dGFP and 18.5 hr for RFP) (Figure 3\u2014figure supplement 1c\u2013e) and the reporter synthesis and degradation model (Figure 1\u2014figure supplement 1), we further estimate the actual transcriptional activity of the reporter, which happens at an earlier stage (~2 hr in advance of detectable dGFP reporter activity) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental measurements shown in Figure 3\u2014figure supplement 1c\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "40b8a2cd-d5d1-4696-925b-abda8ebc1926",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C76",
+      "claim": "The degradation reaction deviated from first-order kinetics at a high concentration of FP.",
+      "claim_type": "EXPLICIT",
+      "source": "We also notice that the degradation reaction deviated from first-order kinetics at a high concentration of FP (Figure 3\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on observations shown in Figure 3\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "ec19569b-64cf-4193-8c44-c283e08df3a1",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C77",
+      "claim": "The degradation speed of the FPs may vary under different conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the degradation speed of the FPs, which depends on the availability of relevant enzymes, may also vary under different conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the dependence of degradation on enzyme availability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "2383a886-4ca3-41aa-938a-bdf53c041725",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C78",
+      "claim": "The direct interpretation of the difference between dGFP and RFP is the relative rather than absolute ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the direct interpretation of the difference between dGFP and RFP is the relative rather than absolute ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations about degradation kinetics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "5e774f70-b05e-42e4-bbd3-c670b0249df1",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C79",
+      "claim": "The absolute relationship between the reporters to the actual transcripts should be determined experimentally on a case by case basis.",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute relationship between the reporters to the actual transcripts should be determined experimentally on a case by case basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the variability observed in the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "9f717430-d020-4512-9646-d38b829e4709",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C80",
+      "claim": "Larval optic lobes expressing the transcriptional timer controlled by STAT response element show similar expression pattern as transheterozygous STAT::edGFP and STAT::eRFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval optic lobes expressing the transcriptional timer controlled by STAT response element show similar expression pattern as transheterozygous STAT::edGFP and STAT::eRFP, indicating that the multicistronic system is effective (Figure 4\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental results shown in Figure 4\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "e0cacc4b-5c7c-4225-b3cf-4f5c383c4255",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "claim_id": "C81",
+      "claim": "A similar strategy has recently been successfully applied to provide the temporal information for signal cell sequencing of the mouse intestinal stem cell system.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a similar strategy has recently been successfully applied to provide the temporal information for signal cell sequencing of the mouse intestinal stem cell system (Gehart et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gehart et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0ef8d753-8d73-4924-b48d-b1b43a8726e8",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Standard fluorescent protein reporters have long half-lives (>20 hr) that limit temporal resolution of gene expression dynamics. Destabilized reporters with shorter half-lives exist but have limited in vivo application due to signal loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10, C14-C15 establish the background problem: standard FP reporters lose dynamic information due to long half-lives, and while destabilized versions exist, they suffer from signal loss in vivo. These are well-established limitations in the field supported by general knowledge and citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mathematical modeling demonstrates that destabilized FPs with 2 hr half-life provide 90% shorter response time and up to 4-fold larger dynamic range compared to 20 hr half-life FPs, but cause 90% signal loss at constant expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C24 present modeling results shown in Figure 1 that quantify the trade-offs between temporal resolution and signal intensity. The modeling approach is clearly described with equations in Figure 1 supplement, and the conclusions about response time, dynamic range, and signal loss are directly supported by the simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "57c5cb4b-9b91-42f3-847b-d89c9c295895",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Translational enhancing elements (IVS, Syn21, p10 polyA) successfully rescue signal loss from destabilization, restoring reporter intensity to levels comparable to stable reporters while maintaining short half-life (~2.6-3 hr).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25-C27, C64-C67, C72 describe the core methodological innovation. Figure 2 clearly shows that destabilized reporters alone have near-background signal (C26), but addition of translational enhancers restores signal to levels similar to stable reporters (C27). The half-life measurements (C25, C28) confirm the destabilization is maintained. This is the key technical advance of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "0852b1ec-778f-4cdd-ad73-29963d54e972",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In vivo measurements confirm destabilized GFP (edGFP) has a half-life of ~2.1-2.6 hr, resulting in ~8% signal intensity compared to stable GFP, consistent with the 91% reduction predicted by modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29, C73-C75 report experimental measurements of reporter half-lives in vivo. The data in Figures 2 and 3 show consistent half-life measurements across different experimental conditions (cultured cells vs. in vivo), and the observed signal reduction matches theoretical predictions. The measurements include error estimates and are based on appropriate kinetic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "df45cd48-3922-4a9f-9cd2-20692723f43b",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Live imaging of STAT reporter in developing embryos shows destabilized reporter reveals transient STAT activity with improved temporal resolution, detecting transcriptional activity ~2 hr earlier than stable reporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 demonstrate the functional advantage of the destabilized reporter in live imaging (Figure 3, Videos 1-2). The quantitative analysis in Figure 3b shows clear improvement in response time, and the estimated transcriptional timing is consistent with prior literature on upd expression (C33). The live imaging data directly validates the predicted benefits from modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "7b8ce0d7-a098-44a6-bd02-82454c78dfab",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A dual-color transcriptional timer (TransTimer) combining fast-maturing destabilized GFP (0.1 hr maturation, 2 hr half-life) with slow-maturing stable RFP (1.5 hr maturation, 20 hr half-life) produces color transitions (green\u2192yellow\u2192red) that encode transcriptional dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C34-C36, C68-C71 describe the TransTimer design and principle. The rationale is sound: differential maturation and degradation kinetics create temporal color separation. Figure 4a illustrates the concept, and the maturation times and half-lives are supported by citations and experimental measurements. The logic is straightforward and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "2aaa16ba-69e7-41a7-aa13-c2d1bd3de51f",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TransTimer reveals wave-like STAT activity propagating through the larval optic lobe neuroepithelium, showing a 'green front' and 'red rear' pattern consistent with the known differentiation wave.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 demonstrate TransTimer application to STAT signaling in the optic lobe. Figure 4b shows clear spatial separation of green and red signals that stable reporters cannot resolve. The pattern is consistent with prior work on STAT's role in the differentiation wave (C37, C39 cite Yasugi et al. 2008). This validates the timer's ability to reveal spatial-temporal dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "9ca5a069-bdeb-4be5-8562-a8d99d91fb49",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TransTimer reveals that Notch activity is preferentially maintained in neuroblasts compared to their progeny, showing improved spatial and temporal resolution compared to stable reporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 demonstrate TransTimer application to Notch signaling in neuroblasts. Figure 4c and supplements show destabilized reporter is enriched in NBs while stable reporter accumulates in both NBs and progeny. This is consistent with functional studies (C40-C41 cite prior work). Live imaging (Figure 4 supplement 2) confirms improved temporal resolution. The results are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "ec4fb1d6-3a46-467b-b269-7deca39424d4",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Control experiments with constitutive promoters show stable dGFP/RFP ratios across tissues, indicating that color changes in TransTimer primarily reflect transcriptional dynamics rather than tissue-specific degradation differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C80 address a critical control: whether tissue-specific differences in protein degradation could confound interpretation. Figure 4 supplement 3c and Supplementary file 2 show that constitutive promoters produce stable ratios across different tissues and developmental stages. This validates that observed color changes reflect transcriptional activity, not degradation variability. The control is appropriate and well-executed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "4e8834e2-d31a-46fe-93ef-6a57c5a118d9",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "UAS-TransTimer reveals heterogeneity in intestinal stem cell populations, differentiating cells, and tumors, showing that different tumor types (Dl vs. Dome mutants) have distinct spatial patterns of stem cell marker expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 demonstrate TransTimer applications in the intestinal stem cell system. Figure 5 shows clear color separation identifying differentiating cells (C47-C48), increased dynamics during regeneration (C49), tumor heterogeneity (C50), and differences between tumor types (C51-C52). The interpretations are supported by marker analysis (Pros staining) and are consistent with stem cell biology. The data quality is good.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "ee2ba69b-23d7-4ff4-8596-fb08691d7935",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Screen of ~450 Gal4 lines with UAS-TransTimer identified 37 lines (~8%) with dynamic expression patterns, including Piezo, which shows dynamic expression in enteroendocrine precursor cells that differentiate into EE cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 report a screen demonstrating TransTimer's utility for discovering genes with dynamic expression. The screen identified a reasonable hit rate (8%), and validation of Piezo (Figure 6b-c) shows the expected pattern: 'red' cells are Pros+ and have downregulated Piezo, consistent with differentiation. The Piezo result is supported by prior work (C54, C57 cite He et al. 2018). This demonstrates practical application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "d2f0f7fd-7eab-4598-8f66-e98d7971b739",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Modeling and experimental comparison show that the Gal4/UAS system amplifies signal but delays reporter dynamics, with UAS-TransTimer showing broader activation patterns than direct promoter-driven TransTimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 address an important caveat of the UAS/Gal4 system. Figure 6 supplement 1 shows modeling predicting both amplification and delay effects, and experimental comparison (Figure 6 supplement 1g-h) confirms broader patterns with UAS-TransTimer. This is an honest assessment of the system's limitations and provides guidance for interpretation. The analysis is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "7e0111d1-4b10-404f-a406-fd8decd8a063",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Enhancer trap screen with TransTimer identified 17/46 lines with dynamic expression at endogenous levels. Functional validation showed CG30159 is required for intestinal stem cell maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 report an enhancer trap screen demonstrating TransTimer can detect dynamics at endogenous expression levels. Figure 7 shows representative lines with clear dynamic patterns. The functional validation of CG30159 (Figure 7e-f) shows significant reduction in stem cell numbers with RNAi, with appropriate statistics (p<0.001, n=7-9). C63 provides context about the human homolog. This demonstrates another practical application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "bda33f38-ba55-4fb6-9acc-50c9b1115d74",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Degradation kinetics deviate from first-order at high FP concentrations, and degradation rates may vary across conditions, so TransTimer ratios should be interpreted as relative rather than absolute measures of transcriptional activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 provide important caveats about quantitative interpretation. Figure 3 supplement 1e shows deviation from first-order kinetics at high concentrations. The authors appropriately acknowledge that degradation rates may vary (C77) and recommend interpreting ratios as relative measures (C78) with case-by-case calibration (C79). This is scientifically honest and provides appropriate guidance for users.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    },
+    {
+      "id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07",
+      "content_id": "b60beb8c-c0e0-4872-a238-8bdff1eea92b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about gene expression dynamics, prior reporter systems, and biological contexts are supported by appropriate citations to the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C11-C13, C33, C37, C40-C41, C54, C63, C81 provide background context and cite relevant literature. These are standard background claims that appropriately reference prior work. The citations appear relevant and support the stated claims. No issues identified with the literature citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:21:59.632308Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9a0389aa-fcee-40b6-a475-02e87d0e4bb1",
+      "result_id": "0ef8d753-8d73-4924-b48d-b1b43a8726e8"
+    },
+    {
+      "claim_id": "699b2be5-e88a-49df-bd99-13a541505e53",
+      "result_id": "0ef8d753-8d73-4924-b48d-b1b43a8726e8"
+    },
+    {
+      "claim_id": "49f59af0-34ad-476b-97e6-a3c4df43d595",
+      "result_id": "0ef8d753-8d73-4924-b48d-b1b43a8726e8"
+    },
+    {
+      "claim_id": "8ce84936-6bbe-4375-9bb2-7d522a5db99f",
+      "result_id": "0ef8d753-8d73-4924-b48d-b1b43a8726e8"
+    },
+    {
+      "claim_id": "d47960b4-3393-4fed-a9c5-ce04ebf75664",
+      "result_id": "0ef8d753-8d73-4924-b48d-b1b43a8726e8"
+    },
+    {
+      "claim_id": "1d2cf864-dbec-4413-9d53-16a4ac3d4e70",
+      "result_id": "0ef8d753-8d73-4924-b48d-b1b43a8726e8"
+    },
+    {
+      "claim_id": "b6f41c86-d4e1-4abb-8b21-fa3cbc8ecd51",
+      "result_id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0"
+    },
+    {
+      "claim_id": "61c10f4a-392e-4f22-a7fa-0d2c124477d8",
+      "result_id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0"
+    },
+    {
+      "claim_id": "5389f4fd-c8d4-444a-b3ab-c53634fa24c1",
+      "result_id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0"
+    },
+    {
+      "claim_id": "8d77dfc6-d38f-43bb-8a7e-6781fb52766f",
+      "result_id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0"
+    },
+    {
+      "claim_id": "3da557fa-10cf-4ca6-a7bf-96d86a23a04a",
+      "result_id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0"
+    },
+    {
+      "claim_id": "31694eef-37a8-45af-9dbf-26b8e2123d4d",
+      "result_id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0"
+    },
+    {
+      "claim_id": "7fd919e5-7dc5-4c14-969d-96179e3216bf",
+      "result_id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0"
+    },
+    {
+      "claim_id": "49a095dd-e5e1-4648-a3b7-e3a84402812d",
+      "result_id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0"
+    },
+    {
+      "claim_id": "6af3aaf3-6a1d-473e-b4b5-02e62ce71f04",
+      "result_id": "9bd952b7-ef6f-4a30-b747-a11b089aa1c0"
+    },
+    {
+      "claim_id": "2c818590-897c-4fe2-939c-bbc0a43e421f",
+      "result_id": "57c5cb4b-9b91-42f3-847b-d89c9c295895"
+    },
+    {
+      "claim_id": "cb745db2-f226-46df-9b87-7672019b28be",
+      "result_id": "57c5cb4b-9b91-42f3-847b-d89c9c295895"
+    },
+    {
+      "claim_id": "6bfb8009-6684-4a91-a791-5c8d96b8565f",
+      "result_id": "57c5cb4b-9b91-42f3-847b-d89c9c295895"
+    },
+    {
+      "claim_id": "d2f1c3fb-8882-4080-8f9a-96f8d1a787b6",
+      "result_id": "57c5cb4b-9b91-42f3-847b-d89c9c295895"
+    },
+    {
+      "claim_id": "c3c9e530-ad4b-4e50-9542-9ffc28f21953",
+      "result_id": "57c5cb4b-9b91-42f3-847b-d89c9c295895"
+    },
+    {
+      "claim_id": "67151daa-d445-40ea-a615-9dff5b4541a2",
+      "result_id": "57c5cb4b-9b91-42f3-847b-d89c9c295895"
+    },
+    {
+      "claim_id": "a85e8d4b-c4ff-4e98-9bbf-21e7fb4fff06",
+      "result_id": "57c5cb4b-9b91-42f3-847b-d89c9c295895"
+    },
+    {
+      "claim_id": "fda1794d-fad7-4d34-a268-d76c24d48a3f",
+      "result_id": "57c5cb4b-9b91-42f3-847b-d89c9c295895"
+    },
+    {
+      "claim_id": "2f424a62-f293-45c6-b826-26bc07c265f9",
+      "result_id": "57c5cb4b-9b91-42f3-847b-d89c9c295895"
+    },
+    {
+      "claim_id": "e896dd43-1cba-4e19-a714-df3800025780",
+      "result_id": "0852b1ec-778f-4cdd-ad73-29963d54e972"
+    },
+    {
+      "claim_id": "d8ed8282-5474-4aa5-9a88-822333bd8104",
+      "result_id": "0852b1ec-778f-4cdd-ad73-29963d54e972"
+    },
+    {
+      "claim_id": "08156f47-f8d8-4b97-8a82-6590b535658b",
+      "result_id": "0852b1ec-778f-4cdd-ad73-29963d54e972"
+    },
+    {
+      "claim_id": "dd068392-690e-404b-a230-de62eeb56bdc",
+      "result_id": "0852b1ec-778f-4cdd-ad73-29963d54e972"
+    },
+    {
+      "claim_id": "c709a412-8af6-45c2-a1a1-6cf121e8e4d3",
+      "result_id": "0852b1ec-778f-4cdd-ad73-29963d54e972"
+    },
+    {
+      "claim_id": "03a0c1d2-1ef2-4ab8-9c09-54f13877d69e",
+      "result_id": "df45cd48-3922-4a9f-9cd2-20692723f43b"
+    },
+    {
+      "claim_id": "6aa3d156-fec8-42e3-9c2f-f7a0b9d8b90d",
+      "result_id": "df45cd48-3922-4a9f-9cd2-20692723f43b"
+    },
+    {
+      "claim_id": "6528052f-f48f-47d1-828f-8e78a309899f",
+      "result_id": "df45cd48-3922-4a9f-9cd2-20692723f43b"
+    },
+    {
+      "claim_id": "aa65aa84-5179-433c-86f9-90be93bbdb8b",
+      "result_id": "df45cd48-3922-4a9f-9cd2-20692723f43b"
+    },
+    {
+      "claim_id": "2cbc1e7c-2529-4b42-acd1-0d89e737cd69",
+      "result_id": "7b8ce0d7-a098-44a6-bd02-82454c78dfab"
+    },
+    {
+      "claim_id": "6ba64706-026c-4051-b9a8-f8eb43ce5e10",
+      "result_id": "7b8ce0d7-a098-44a6-bd02-82454c78dfab"
+    },
+    {
+      "claim_id": "0f00f306-19b5-4e36-afb0-fe7db2d6af0a",
+      "result_id": "7b8ce0d7-a098-44a6-bd02-82454c78dfab"
+    },
+    {
+      "claim_id": "436b473c-82cb-48b1-a7bc-ae436d3a4126",
+      "result_id": "7b8ce0d7-a098-44a6-bd02-82454c78dfab"
+    },
+    {
+      "claim_id": "bcb29446-0c7a-4db8-bf4d-557c3acf35eb",
+      "result_id": "7b8ce0d7-a098-44a6-bd02-82454c78dfab"
+    },
+    {
+      "claim_id": "c160f1a5-755c-4180-aa9a-b79d2939ad7d",
+      "result_id": "7b8ce0d7-a098-44a6-bd02-82454c78dfab"
+    },
+    {
+      "claim_id": "6555fe58-cf94-483b-b31f-b57b5a07e7ce",
+      "result_id": "7b8ce0d7-a098-44a6-bd02-82454c78dfab"
+    },
+    {
+      "claim_id": "9536f024-83b1-4b3f-8b98-7a54e1ab44c9",
+      "result_id": "7b8ce0d7-a098-44a6-bd02-82454c78dfab"
+    },
+    {
+      "claim_id": "3d11598a-6d19-4fe8-879c-041a403e6ea9",
+      "result_id": "2aaa16ba-69e7-41a7-aa13-c2d1bd3de51f"
+    },
+    {
+      "claim_id": "10216871-673d-412c-bb92-df02e387cd05",
+      "result_id": "2aaa16ba-69e7-41a7-aa13-c2d1bd3de51f"
+    },
+    {
+      "claim_id": "85a43653-3017-4625-8885-113b67819b93",
+      "result_id": "2aaa16ba-69e7-41a7-aa13-c2d1bd3de51f"
+    },
+    {
+      "claim_id": "a855724e-8a24-4921-9b27-543393de0750",
+      "result_id": "9ca5a069-bdeb-4be5-8562-a8d99d91fb49"
+    },
+    {
+      "claim_id": "ebe16d77-f9cd-4bb9-88fb-4adde5dd1788",
+      "result_id": "9ca5a069-bdeb-4be5-8562-a8d99d91fb49"
+    },
+    {
+      "claim_id": "492d8d25-ad66-4201-8259-7e46d75b264b",
+      "result_id": "9ca5a069-bdeb-4be5-8562-a8d99d91fb49"
+    },
+    {
+      "claim_id": "3e011f68-edde-4cc2-8733-222c9cc9853f",
+      "result_id": "9ca5a069-bdeb-4be5-8562-a8d99d91fb49"
+    },
+    {
+      "claim_id": "cd52fb30-4e9b-4070-b35e-ec8a9b688bb4",
+      "result_id": "9ca5a069-bdeb-4be5-8562-a8d99d91fb49"
+    },
+    {
+      "claim_id": "4ebb927f-3305-4081-9bac-18fc235a2f23",
+      "result_id": "ec4fb1d6-3a46-467b-b269-7deca39424d4"
+    },
+    {
+      "claim_id": "e430f5a3-3cdc-479b-9310-4044f02ec1e3",
+      "result_id": "ec4fb1d6-3a46-467b-b269-7deca39424d4"
+    },
+    {
+      "claim_id": "9f717430-d020-4512-9646-d38b829e4709",
+      "result_id": "ec4fb1d6-3a46-467b-b269-7deca39424d4"
+    },
+    {
+      "claim_id": "eff5943b-bc93-40c1-a66c-0bfcd9802acc",
+      "result_id": "4e8834e2-d31a-46fe-93ef-6a57c5a118d9"
+    },
+    {
+      "claim_id": "64ff2d8a-ccd8-42de-b775-86b1421c2828",
+      "result_id": "4e8834e2-d31a-46fe-93ef-6a57c5a118d9"
+    },
+    {
+      "claim_id": "62f4bd29-989c-4bb3-91e2-4ab8bfd0c3d7",
+      "result_id": "4e8834e2-d31a-46fe-93ef-6a57c5a118d9"
+    },
+    {
+      "claim_id": "c2e14216-c091-48cf-bedd-a74f1fc86cc9",
+      "result_id": "4e8834e2-d31a-46fe-93ef-6a57c5a118d9"
+    },
+    {
+      "claim_id": "c32b0f4e-f6cc-45c1-bd38-63059e201caf",
+      "result_id": "4e8834e2-d31a-46fe-93ef-6a57c5a118d9"
+    },
+    {
+      "claim_id": "d5aa2931-d030-4a91-a3e3-362e14ef78ac",
+      "result_id": "4e8834e2-d31a-46fe-93ef-6a57c5a118d9"
+    },
+    {
+      "claim_id": "7b854db9-0ef4-4fff-a60e-fa917c8aeccc",
+      "result_id": "ee2ba69b-23d7-4ff4-8596-fb08691d7935"
+    },
+    {
+      "claim_id": "da133e48-bd13-4030-936c-ee4c05a6df56",
+      "result_id": "ee2ba69b-23d7-4ff4-8596-fb08691d7935"
+    },
+    {
+      "claim_id": "01ab0f02-ef6a-444f-9de5-337d49959b82",
+      "result_id": "ee2ba69b-23d7-4ff4-8596-fb08691d7935"
+    },
+    {
+      "claim_id": "c05b95c8-e89d-47ac-9602-301b9113dd0c",
+      "result_id": "ee2ba69b-23d7-4ff4-8596-fb08691d7935"
+    },
+    {
+      "claim_id": "ede7b9a3-bc4a-41d7-8446-62b37d8b854a",
+      "result_id": "ee2ba69b-23d7-4ff4-8596-fb08691d7935"
+    },
+    {
+      "claim_id": "3a9daf10-4e3e-49af-bda1-b790fbbd35d1",
+      "result_id": "d2f0f7fd-7eab-4598-8f66-e98d7971b739"
+    },
+    {
+      "claim_id": "36d98e9b-39ad-41a6-9186-6fefc48565e5",
+      "result_id": "d2f0f7fd-7eab-4598-8f66-e98d7971b739"
+    },
+    {
+      "claim_id": "1fa5ee89-6b98-419d-b4f5-650023ff7fcc",
+      "result_id": "7e0111d1-4b10-404f-a406-fd8decd8a063"
+    },
+    {
+      "claim_id": "a8385333-2a64-4bd4-995e-254bd89f695d",
+      "result_id": "7e0111d1-4b10-404f-a406-fd8decd8a063"
+    },
+    {
+      "claim_id": "657f33c2-e2c4-4615-b366-e578c35f3a8e",
+      "result_id": "7e0111d1-4b10-404f-a406-fd8decd8a063"
+    },
+    {
+      "claim_id": "5c23b40f-ed41-4147-8e40-0c586f44816e",
+      "result_id": "7e0111d1-4b10-404f-a406-fd8decd8a063"
+    },
+    {
+      "claim_id": "40b8a2cd-d5d1-4696-925b-abda8ebc1926",
+      "result_id": "bda33f38-ba55-4fb6-9acc-50c9b1115d74"
+    },
+    {
+      "claim_id": "ec19569b-64cf-4193-8c44-c283e08df3a1",
+      "result_id": "bda33f38-ba55-4fb6-9acc-50c9b1115d74"
+    },
+    {
+      "claim_id": "2383a886-4ca3-41aa-938a-bdf53c041725",
+      "result_id": "bda33f38-ba55-4fb6-9acc-50c9b1115d74"
+    },
+    {
+      "claim_id": "5e774f70-b05e-42e4-bbd3-c670b0249df1",
+      "result_id": "bda33f38-ba55-4fb6-9acc-50c9b1115d74"
+    },
+    {
+      "claim_id": "467b590e-f076-4d13-ae61-494e1c68ce9e",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "124a24d3-75a1-42c5-a605-3b7420a86ae9",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "620e5e4d-6fc5-4886-8fff-738518837b37",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "534a0573-92a9-4ef4-aa4b-d250dbb0d155",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "95446d9c-c9b7-449a-9b7d-39bec3d46224",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "28035f23-a65f-4bb4-9cf0-5ba07569160a",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "aa65aa84-5179-433c-86f9-90be93bbdb8b",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "3d11598a-6d19-4fe8-879c-041a403e6ea9",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "a855724e-8a24-4921-9b27-543393de0750",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "ebe16d77-f9cd-4bb9-88fb-4adde5dd1788",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "da133e48-bd13-4030-936c-ee4c05a6df56",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "5c23b40f-ed41-4147-8e40-0c586f44816e",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    },
+    {
+      "claim_id": "e0cacc4b-5c7c-4225-b3cf-4f5c383c4255",
+      "result_id": "211928c0-7c1f-4c2e-8cd1-41b766d86b07"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,453 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "mGlu7 undergoes ubiquitination in heterologous cells and neurons. In HEK 293T cells, ubiquitinated mGlu7 appears mainly as dimeric/multimeric forms (>200 kDa), with minimal monomeric ubiquitination. Agonist stimulation (L-glutamate or L-AP4) increases mGlu7 ubiquitination approximately 2-fold within 10 minutes, sustained up to 60 minutes, with receptor degradation observed after 30 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 are well-supported by experimental data in Figure 1A-C showing ubiquitinated mGlu7 bands, time-course analysis with quantification, and endogenous ubiquitination in neurons. The molecular weight distribution, kinetics, and agonist-dependence are clearly demonstrated with appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Surface-expressed mGlu7 undergoes agonist-induced ubiquitination, whereas intracellular mGlu7 does not. This suggests mGlu7 ubiquitination occurs in combination with agonist-induced endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by surface biotinylation experiments (Figure 1D) that separate surface from internal pools. The experimental design appropriately distinguishes these populations, though the inference about endocytosis (C16) requires integration with later endocytosis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Nedd4 E3 ligase mediates mGlu7 ubiquitination. Nedd4 WT robustly increases mGlu7 ubiquitination (~4.5-fold), while catalytically inactive Nedd4 C867S does not. Nedd4 knockdown markedly reduces agonist-induced ubiquitination in neurons. Nedd4 and mGlu7 show constitutive interaction that is enhanced ~2.4-fold by agonist stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 are strongly supported by multiple complementary approaches: overexpression (Figure 1E), knockdown (Figure 1F), and co-immunoprecipitation (Figure 1G). The use of catalytically inactive mutant provides critical specificity control. Quantification shows consistent effects across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Both K48 and K63 ubiquitin linkages are present on mGlu7. When normalized to total ubiquitin expression, there is no significant difference between K48- and K63-linked ubiquitination, suggesting ubiquitination may regulate both endocytosis and degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by Figure 1H showing both linkage types. The normalization approach is appropriate. However, C26 is speculative inference rather than direct demonstration\u2014the presence of both linkages is consistent with dual functions but doesn't prove them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "mGlu7 is ubiquitinated at lysine residues in both the C-terminus (8 lysines) and intracellular loops (4 lysines). Deletion of CT lysines alone does not reduce ubiquitination, nor does mutation of iL lysines alone. However, mutation of all 12 lysines (12K12R) almost completely abolishes ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 are well-supported by systematic mutagenesis in Figure 2B-C. The experimental logic is sound: individual domain mutations have no effect, but combined mutation eliminates ubiquitination, demonstrating distributed ubiquitination sites. Quantification shows 0.11\u00b10.04 for 12K12R, confirming near-complete loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "K688 and K689 in intracellular loop 2 are specific ubiquitination sites. Mutation of these residues in the context of \u0394857 (lacking CT lysines) markedly reduces ubiquitination. The authors conclude that K688/K689 in iL2 and all eight CT lysines are target ubiquitination residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by Figure 2D showing that K688/689R mutation reduces ubiquitination when CT lysines are absent. However, the inability to identify dominant CT sites (mentioned but data not shown) weakens the precision of the conclusion. The overall result is supported but incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "\u03b2-arrestins and Nedd4 bind constitutively to mGlu7 and are recruited upon agonist stimulation. \u03b2-arrestin 1 shows robust binding to mGlu7 with ~1.8-fold increase at 5 min, sustained to 15 min. \u03b2-arrestin 2 shows lower binding affinity with smaller increase (~1.2-fold). Nedd4 binding increases ~2.3-fold at 5 min when \u03b2-arrestins are co-expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 are well-supported by time-course co-immunoprecipitation experiments in Figure 3A-D with quantification. The differential binding of \u03b2-arrestin 1 vs 2 is clearly demonstrated. The temporal dynamics are appropriate for an agonist-induced recruitment mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "\u03b2-arrestin 1 and Nedd4 rapidly associate within 1 minute of mGlu7 agonist stimulation, with interaction continuing beyond 10 minutes. This suggests Nedd4 is recruited to activated mGlu7 by \u03b2-arrestin 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by Figure 3E-F showing \u03b2-arrestin 1-Nedd4 interaction kinetics. The rapid association (1 min) preceding peak mGlu7-Nedd4 interaction (5 min) supports the adaptor model, though C51 is an inference rather than direct proof of mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Endogenous \u03b2-arrestin 1, Nedd4, and mGlu7 form a complex in cortical neurons, with binding affinity increased by agonist treatment. Binding affinity is not altered by ubiquitination site mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by endogenous co-IP in Figure 3G-H. C54 is supported by Figure 3\u2014figure supplement 2. The finding that ubiquitination sites don't affect binding suggests ubiquitination is downstream of complex formation, which is mechanistically informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "\u03b2-arrestins mediate agonist-induced Nedd4 recruitment to mGlu7. Single knockdown of \u03b2-arrestin 1 or 2 abolishes increased Nedd4 binding in HEK 293T cells, while double knockdown is required in neurons. The authors hypothesize this reflects functional compensation due to high endogenous \u03b2-arrestin expression in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by Figures 3I-L showing differential requirements in HEK cells vs neurons. C57 is a reasonable hypothesis supported by literature citations about expression levels. C58 is a well-supported conclusion integrating multiple lines of evidence. The cell-type difference is appropriately addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "\u03b2-arrestins facilitate mGlu7 ubiquitination upon agonist stimulation. Single knockdown of \u03b2-arrestin 1 or 2 significantly reduces agonist-induced ubiquitination, with further reduction by double knockdown. This demonstrates that \u03b2-arrestins recruit Nedd4 and regulate mGlu7 ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are well-supported by Figure 3M-N showing dose-dependent reduction with single and double knockdowns. The additive effect of double knockdown (0.50\u00b10.03) supports functional redundancy. The conclusion integrates recruitment and ubiquitination data coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Nedd4 and \u03b2-arrestins bind directly to mGlu7 C-terminus and intracellular loop 2. GST pull-down assays show both proteins interact with CT of mGlu7a and mGlu7b, and with iL2. Direct binding is confirmed using purified recombinant proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are strongly supported by GST pull-down (Figure 4A) and in vitro binding assays with purified proteins (Figure 4B). The use of purified recombinant proteins provides definitive evidence for direct interaction without cellular cofactors. Multiple binding sites are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The Nedd4 HECT domain is responsible for interaction with mGlu7. Nedd4 \u0394HECT mutant does not interact with mGlu7 in co-immunoprecipitation assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by Figure 4D showing loss of interaction with \u0394HECT deletion. However, the mapping is incomplete\u2014only \u0394HECT is tested, not individual WW domains. The conclusion that HECT is responsible is supported but other domains weren't systematically excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Treatment with MLN7243 (E1 ubiquitin enzyme inhibitor) increases surface expression of endogenous mGlu7 while reducing ubiquitination in cultured cortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by Figure 5\u2014figure supplement 1. This pharmacological approach provides independent validation that ubiquitination regulates mGlu7 surface expression. However, MLN7243 is a global ubiquitination inhibitor, so specificity to mGlu7 pathway requires integration with genetic approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Nedd4-mediated ubiquitination regulates agonist-induced mGlu7 endocytosis. Nedd4 WT increases endocytosis (1.23\u00b10.04 fold), while catalytically inactive C867S does not. Nedd4 knockdown impairs agonist-induced endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are well-supported by antibody uptake internalization assays in Figure 5A-D. Both gain-of-function (overexpression) and loss-of-function (knockdown) approaches converge on the same conclusion. The use of catalytically inactive mutant provides specificity. Quantification with appropriate statistics supports the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "\u03b2-arrestin 1 or 2 co-expression profoundly increases mGlu7 internalization in hippocampal neurons (1.26\u00b10.07 and 1.30\u00b10.07 fold, respectively). This indicates the Nedd4-\u03b2-arrestin complex promotes receptor endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by Figure 5E-F showing increased internalization with both \u03b2-arrestins. The similar magnitude of effect for both arrestins is consistent with functional redundancy. C77 is a reasonable integrative conclusion, though direct evidence for the complex acting together in endocytosis could be stronger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "\u03b2-arrestin 2 and Nedd4 are necessary for mGlu7-mediated ERK signaling in neurons. \u03b2-arr2 KD or Nedd4 KD abolishes agonist-induced ERK phosphorylation, while \u03b2-arr1 KD does not. In contrast, JNK signaling requires \u03b2-arrestin 2 but is independent of Nedd4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are well-supported by Figure 6A-C showing differential requirements for ERK vs JNK signaling. The selective requirement for \u03b2-arrestin 2 and Nedd4 in ERK but not JNK signaling is clearly demonstrated with appropriate controls and quantification. This reveals pathway-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Nedd4-mediated ubiquitination determines mGlu7 surface stability. Nedd4 WT co-expression reduces total mGlu7 expression, while catalytically inactive C867S does not. L-Glu treatment for 60 min reduces mGlu7 levels, which is blocked by Nedd4 C867S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by Figure 7A-B. The use of catalytically inactive mutant as a dominant-negative provides strong evidence for Nedd4's role. The conclusion (C89) appropriately integrates the overexpression and agonist treatment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Agonist-induced mGlu7 degradation occurs through both lysosomal and proteasomal pathways. Leupeptin (lysosome inhibitor) significantly blocks degradation, as does MG132 (proteasome inhibitor). This indicates ubiquitination regulates sorting to both degradation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by Figure 7C-D showing partial rescue by either inhibitor. The dual pathway involvement is unusual but clearly demonstrated. However, C91 and C93 are inferences about mechanism\u2014the data show both pathways are involved but don't directly demonstrate the sorting process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In neurons, Nedd4 WT significantly reduces mGlu7 expression (0.81\u00b10.09), while C867S does not. Nedd4 WT-mediated degradation is blocked by MG132 or leupeptin. This confirms Nedd4-mediated ubiquitination drives mGlu7 degradation through both proteasomal and lysosomal pathways in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are well-supported by Figure 7E-F extending the HEK cell findings to neurons. The use of cycloheximide to block new synthesis is appropriate. Both inhibitors rescue degradation, confirming dual pathway involvement in the physiologically relevant neuronal context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Background on mGlu7 function: mGlu7 is a class C GPCR that modulates neurotransmitter release at presynaptic terminals, is activated only under sustained synaptic activity due to low glutamate affinity, and its agonist-induced endocytosis underlies presynaptic LTD and metaplastic switching at MF-SLIN synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C98-C101 provide established background supported by appropriate citations. These are not novel findings but contextual information establishing the biological importance of mGlu7 regulation. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C117",
+      "C118"
+    ],
+    "result": "Background on ubiquitination and \u03b2-arrestin mechanisms: Ubiquitination involves E1-E2-E3 enzyme cascade, E3 ligases determine substrate specificity, Nedd4 regulates ion channels and GPCRs in neurons, \u03b2-arrestins regulate GPCR desensitization/trafficking/signaling, K48 linkages direct proteasomal degradation while K63 linkages direct endocytic trafficking, and class A vs B receptors show different \u03b2-arrestin interaction patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111, C117-C118 provide established mechanistic background supported by appropriate citations to prior literature. These are not novel findings but establish the conceptual framework for the current study. The citations appear comprehensive and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C119",
+      "C120",
+      "C121",
+      "C134",
+      "C135",
+      "C139",
+      "C140",
+      "C142",
+      "C143",
+      "C146"
+    ],
+    "result": "Background on related receptor systems: \u03b2-arrestin 2 recruits Nedd4 for \u03b22AR ubiquitination, \u03b2-arrestins regulate Group I mGlu receptors, Siah-1A is the E3 ligase for Group I mGlu receptors, \u03b22AR desensitization/ubiquitination/endocytosis is primarily \u03b2-arrestin 2-mediated, and proteasomal activity is required for degradation of multiple receptor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C119-C121, C134-C135, C139-C140, C142-C143, C146 provide relevant background from related systems supported by citations. These establish precedent for the mechanisms being investigated for mGlu7. The citations appear appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C147"
+    ],
+    "result": "Study rationale and conclusions: The roles of \u03b2-arrestins in class C GPCRs are poorly understood. The authors demonstrate that Nedd4 and \u03b2-arrestins are constitutively associated with mGlu7, \u03b2-arrestins act as adaptors recruiting Nedd4, and this complex regulates mGlu7 ubiquitination, endocytosis, MAPK signaling, and degradation via both proteasomal and lysosomal pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116, C147 represent the study's rationale and integrative conclusions. These are well-supported by the collective experimental evidence presented throughout the manuscript. The conclusions appropriately synthesize the major findings without overstating the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Discussion points on ubiquitination characteristics: mGlu7 lacks the canonical PPxY Nedd4-binding motif. Endogenous mGlu7 ubiquitination in neurons is less prominent than in HEK cells, likely because only surface-expressed mGlu7 is ubiquitinated. Other E3 ligases besides Nedd4 may contribute to mGlu7 ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 are supported by observations in the data. C122 is a sequence observation. C123-C124 are reasonable interpretations of the differential ubiquitination in different systems, supported by the surface biotinylation data. C125 is appropriate speculation based on residual ubiquitination after Nedd4 KD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Discussion of binding site implications: A serine/threonine-rich domain in mGlu7 CT is compatible with the phosphorylation code for arrestin binding. The iL2 domain contributes to \u03b2-arrestin association and G-protein coupling selectivity in GPCRs. \u03b2-arrestin-Nedd4 binding to iL2 may sterically hinder G-protein binding. mGlu7 ubiquitination is not required for complex formation with \u03b2-arrestins and Nedd4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 represent mechanistic interpretations supported by the binding data and literature. C126 is sequence-based inference. C127-C129 cite relevant literature. C130 is reasonable speculation. C131 is directly supported by Figure 3\u2014figure supplement 2. These appropriately contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C136",
+      "C137",
+      "C138",
+      "C141"
+    ],
+    "result": "Discussion of \u03b2-arrestin functional redundancy: While \u03b2-arrestin 1 and 2 were expected to be functionally redundant, recent studies suggest distinct roles. For mGlu7, the authors find functional redundancy with \u03b2-arrestin 2 having lower binding affinity. Both are required for constitutive endocytosis. Discrepancies with other studies may reflect differences between primary neurons and heterologous cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133, C136-C138, C141 discuss \u03b2-arrestin functional relationships. The functional redundancy for mGlu7 is supported by the double knockdown requirement in neurons. The lower \u03b2-arrestin 2 affinity is shown in Figure 3\u2014figure supplement 1. C141 is reasonable speculation about experimental system differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C148"
+    ],
+    "result": "Speculative discussion points: Ubiquitinated mGlu7 may be directly translocated to proteasomes, or ubiquitinated \u03b2-arrestin-Nedd4 may guide mGlu7 to proteasomes. These findings may offer insights for developing drugs for mGlu7-related neuropsychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C145 are explicitly speculative about mechanisms not directly tested. C148 is forward-looking speculation about therapeutic applications. While reasonable, these are not supported by data in the manuscript and represent future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

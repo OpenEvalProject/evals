@@ -1,0 +1,1886 @@
+{
+  "submission": {
+    "id": "5d0295b3-d1ae-4be6-8105-ad45d2bec07f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:13:19.939380Z",
+    "updated_at": "2025-12-02T10:13:19.939380Z"
+  },
+  "content": [
+    {
+      "id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "submission_id": "5d0295b3-d1ae-4be6-8105-ad45d2bec07f",
+      "content_type": "manuscript",
+      "content_text": "# Chemical modulation of transcriptionally enriched signaling pathways to optimize the conversion of fibroblasts into neurons\n\n## Authors\n\n- Joseph Herdy<sup>1</sup> ([ORCID: 0000-0002-8636-8134](https://orcid.org/0000-0002-8636-8134))\n- Simon Schafer<sup>1</sup>\n- Yongsung Kim<sup>1</sup>\n- Zoya Ansari<sup>1</sup>\n- Dina Zangwill<sup>1</sup>\n- Manching Ku<sup>2</sup> ([ORCID: 0000-0001-5168-4308](https://orcid.org/0000-0001-5168-4308))\n- Apua Paquola<sup>3</sup>\n- Hyungjun Lee<sup>1</sup>\n- Jerome Mertens<sup>1</sup> \u2020\n- Fred H Gage<sup>1</sup> ([ORCID: 0000-0002-0938-4106](https://orcid.org/0000-0002-0938-4106)) \u2020\n\n### Affiliations\n\n1. Laboratory of Genetics The Salk Institute for Biological Studies La Jolla United States\n2. University Hospital Freiberg, University of Freiberg Breisgau Germany\n3. Lieber Institute for Brain Development Baltimore United States\n4. Institute of Molecular Biology, CMBI Leopold-Franzens-University Innsbruck Innsbruck Austria\n\n\u2020 Corresponding author\n\n## Abstract\n\nDirect conversion of human somatic fibroblasts into induced neurons (iNs) allows for the generation of functional neurons while bypassing any stem cell intermediary stages. Although iN technology has an enormous potential for modeling age-related diseases, as well as therapeutic approaches, the technology faces limitations due to variable conversion efficiencies and a lack of thorough understanding of the signaling pathways directing iN conversion. Here, we introduce a new all-in-one inducible lentiviral system that simplifies fibroblast transgenesis for the two pioneer transcription factors, Ngn2 and Ascl1, and markedly improves iN yields. Further, our timeline RNA-Seq data across the course of conversion has identified signaling pathways that become transcriptionally enriched during iN conversion. Small molecular modulators were identified for four signaling pathways that reliably increase the yield of iNs. Taken together, these advances provide an improved toolkit for iN technology and new insight into the mechanisms influencing direct iN conversion.\n\n## Introduction\n\nHuman somatic cells such as skin fibroblasts can be directly converted into cultures of functional induced neurons (iNs) by the overexpression of pro-neuronal transcription factors (Pang et al., 2011; Chambers and Studer, 2011). As opposed to induced pluripotent stem cell (iPSC) reprogramming and differentiation, direct iN conversion bypasses the pluripotent stage as well as any other stem cell-like stages and preserves epigenetic information of their donor\u2019s age, making it a particularly valuable tool to study aging and aging-related disorders (Mertens et al., 2015; Victor et al., 2018; Tang et al., 2017). iN technology has also shown promise in vivo as a strategy to replace damaged cells following brain injury by direct conversion of non-neuronal cell types into neurons directly within the nervous system (Karow et al., 2012; Heinrich et al., 2010). Using combinations of pro-neuronal and region-/subtype-specific transcription factors, a variety of neuronal subtypes has been produced via direct conversion (Caiazzo et al., 2011; Son et al., 2011; Victor et al., 2014; Vadodaria et al., 2016; Tsunemoto et al., 2018).\n\nBecause iN conversion lacks a proliferating stem cell intermediate, the iN numbers obtained are largely dependent on conversion efficiency; therefore, great efforts have been undertaken to improve iN process yields. The identification and the combination of Ngn2 with Ascl1 as two pro-neuronal pioneer transcription factors that can induce neuronal identity in non-neuronal cells have been key features in the advancement of this technology (Ladewig et al., 2012; Liu et al., 2013; Mertens et al., 2015; Wapinski et al., 2013; Smith et al., 2016). The efficient delivery of Ngn2/Ascl1 into fibroblasts, and their robust, controllable transgene expression, left room for improvement and, because variations in the transduction and conversion efficiencies from different donors are common limitations, we have developed a new all-in-one lentiviral system for inducible Ngn2/Ascl1 expression called UNA.\n\nChemical modulation of several cellular signaling pathways has been shown to improve iN conversion and thus enable iN technology as a legitimate alternative to iPSC differentiation. Inhibition of TGF-b/SMAD signaling via blockade of AKT kinases, inhibition of GSK-3b signaling (Ladewig et al., 2012), adenylyl cyclase activation (Liu et al., 2013; Ladewig et al., 2012; Gasc\u00f3n et al., 2016), inhibition of REST (Masserdotti et al., 2015; Xue et al., 2013), induction of canonical Bcl-2 signaling, and inhibition of lipid oxidation pathways via ferroptosis inhibition (Gasc\u00f3n et al., 2016) have all been shown to greatly promote iN conversion. However, because these known signaling pathway modulators have either been adopted from iPSC differentiation (Chambers et al., 2009) or are the result of educated guessing or simply of trial-and-error experiments, no systematic efforts have been made to utilize broad and unbiased datasets to identify the pathways and corresponding modulators that orchestrate iN conversion. We sought to optimize the iN conversion media composition with small molecular pathway modulators to reach efficient iN conversion even in suboptimal human fibroblast lines. To that end, we have performed timeline RNAseq transcriptome analysis over the time course of direct iN conversion and have discovered four pathways that are instrumental in iN conversion. Based on these pathways, we identified four small molecules that could be combined into an improved iN conversion medium, ZPAK, which reliably boosted iN conversion of young and old fibroblasts into epigenetically age-equivalent iNs.\n\n## Results\n\n### An optimized all-in-one viral system simplifies fibroblast transduction and increases conversion efficiency\n\nLentiviral delivery of pro-neuronal transcription factors is the most widely used technique for direct iN conversion due to its outstanding efficiency and relative ease to use (Parr-Brownlie et al., 2015). Successful strategies involve the use of constitutive or inducible expression of either only a single pioneer factor, such as Ngn2 or Ascl1 (Liu et al., 2013; Smith et al., 2016), a combination of a pioneer factor with secondary factors (Pang et al., 2011; Vierbuchen et al., 2010), a combination of a pioneer factor with subtype-specifying transcription factors (Caiazzo et al., 2011; Liu et al., 2016; Vadodaria et al., 2016); (Tsunemoto et al., 2018), or the use of two coupled pioneer factors (Ladewig et al., 2012; Mertens et al., 2015). Typically, these factors are distributed across several lentiviral vectors; however, given that lentiviral transduction is not 100% efficient and because an individual fibroblast must be transduced with two or more viruses to survive chemical selection and successfully reprogram, this strategy left room for improvement. To eliminate the need for co-infection, we combined the tetOn system cassette consisting of the rtTAAdv. [Clonech] driven by the UbC promoter, the iN cassette consisting of Ngn2:2A:Ascl1 under control of the TREtight promoter [Clontech], and a puromycin-resistance gene driven by the PGK promoter to yield the UNA construct (Figure 1A, Figure 1\u2014figure supplement 1). To test the efficiency of UNA compared to our conventional two-vector system (EtO\u00a0+N2A), we selected fibroblasts from three individual donors that had not yielded optimal iN conversion efficiencies in the past (Figure 1B and Figure 1\u2014source data 1). Dermal fibroblasts were transduced with similar titers of either EtO\u00a0+N2A or UNA, selected by puromycin or puromycin/G418, respectively, and converted to iNs using our previously described conversion medium (NC) containing noggin as well as the small molecules CHIR-99021 (GSK3\u00df inhibitor), SB-431542, LDN-193189, A-83\u201301 (ALK inhibitors), forskolin, and db-cAMP (cAMP increase) (Mertens et al., 2015; Ladewig et al., 2012). Following three weeks of conversion, cells were live-stained for the neural surface marker PSA-NCAM, which stains reprogrammed iNs but not fibroblasts (Figure 1C). Flow cytometry revealed that UNA-derived iNs exhibited significantly more PSA-NCAM-positive cells than E\u00a0+\u00a0N2A, boosting efficiencies by up to 90\u2013100% for the two suboptimal fibroblast lines, but also increasing efficiencies of the lines that already converted well by 30 \u00b1 8% (Figure 1D\u2013E). In addition, immunocytochemical co-staining for the neuronal markers \u00dfIII-tubulin and NeuN revealed that UNA iNs were on average twice as likely to be positive for NeuN or \u00dfIII-tubulin (Figure 1F\u2013H). Based on these experiments, we reasoned that the use of the single all-in-one lentiviral vector UNA was notably easier and less prone to experimental error, as well as significantly more efficient in generating larger numbers of mature iNs compared to a multiple vector strategy.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of all-in-one lentiviral system for inducible overexpression of N2A for iN conversion. (B) Cell lines of varying conversion efficiencies used for comparison (C) Immunocytochemical analysis of iNs following three weeks of conversion, stained with \u03b2III-tubulin, PSA-NCAM, and DAPI. The scale bar represents 20 \u03bcm. (D) Flow cytometry histogram plots of PSA-NCAM:PE-stained iNs following 3 weeks of conversion with UNA (blue) or E:N2A (Orange) lentiviral systems. (E) Comparison of % PSA-NCAM:PE\u00a0+\u00a0cells from three three lines (L2,L5,L7) reprogrammed with E\u00a0+\u00a0N2A or UNA (3 biological and two technical replicates). (F) Immunocytochemical analysis of E:N2A or UNA iNs following three 3 weeks of conversion, stained with \u03b2III-tubulin, NeuN, and DAPI. Scale bar represents 100 \u03bcm. (G-H) Quantification of immunocytochemical staining in F. (3 biological and two technical replicates).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Dox-induced expression of Neurog2 and Ascl1 was maintained for all 20 days of conversion with NC and NC+ZPAK.\n\n### Time based RNAseq identifies signaling pathways directing iN conversion\n\nAs pathways influential in controlling the direct conversion process continue to be found (Masserdotti et al., 2015; Smith et al., 2016; Treutlein et al., 2016; Xue et al., 2013; Liu et al., 2013; Ladewig et al., 2012; Gasc\u00f3n et al., 2016), we decided to investigate the transcriptional dynamics during reprogramming to identify the pathways that orchestrate iN conversion. We gathered RNAseq data from bulk fibroblasts as well as cells undergoing conversion for 1, 2, 3, 6, 18, and 24 days (Line 10, Figure 2A). Using the Ingenuity Pathway Analysis software tool (IPA; Qiagen Inc), we identified more than 500 pathways called to be significantly transcriptionally enriched or depleted (\u22122\u00a0>\u00a0Z Score>2) as conversion proceeded (Figure 2\u2014source data 1); of these, we selected 10 of the most enriched pathways for further experimental testing (Figure 2\u2014source data 2). Based on the regulated genes and overlap of the called pathways, we selected one small molecule activator and one inhibitor for each of the 10 pathways, with the strategy of initiating diametrically opposing regulation of a given pathway. Each of the 20 compounds had been previously been reported to be effective in tissue culture (Figure 2\u2014source data 2). Preference was given to molecules that targeted an intersection of two or more called pathways rather than specifically targeting the canonical signaling cascade of one pathway. When screening for PSA-NCAM-positive cells by flow cytometry following 21 days in NC plus the respective compound, four compounds were found to significantly (p<0.05) increase the frequency of PSA-NCAM-positive iNs (Figure 2C\u2013E, Figure 2\u2014source data 2 and Figure 2\u2014figure supplement 1) Interestingly, the compound that acted in the opposite direction decreased iN conversion efficiency (Figure 2C\u2013D, Figure 2\u2014source data 2, and Figure 2\u2014figure supplement 1). These four conversion booster compounds were Pyrintegrin (PY; Integrin activator), AZ960 (AZ; Jak2 inhibitor), ZM336372, (ZM; Raf-1 activator), and KC7F2 (KC; HIF1\u03b1 inhibitor) (Figure 2C). The iNs derived in NC plus any of these four compounds resulted in a significant (p<0.01) increase in the number of NeuN- and \u00dfIII-tubulin-positive cells compared to those derived in NC medium alone (Figure 2F\u2013H, Figure 2\u2014figure supplement 2). Importantly, the combination of all four compounds (ZPAK) resulted in an even higher iN yield than any of the compounds individually (Figure 2F\u2013H, Figure 2\u2014figure supplement 3). This combination of all four molecules with the NC medium will henceforth be referred to as ZPAK.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic for timeline of RNA isolation during neuronal reprogramming of L10 (B) Activation Z-Score of the indicated signaling pathway as called by IPA Comparison Analysis during neuronal reprogramming. Z-Scores represent a statistical measure of the match between the expected relationship direction and observed gene expression of a given pathway, with z-scores\u00a0>\u00a02 considered significant. (C) Description of small molecules selected to inhibit or activate branches of pathways identified in (B) Effect on iN conversion is based on increased % PSA-NCAM\u00a0+\u00a0cells by flow cytometry, with\u00a0+\u00a0indicating increased PSA-NCAM %, - reduced PSA-NCAM %, and\u00a0=\u00a0no effect on PSA-NCAM %. (D) Immunocytochemical analysis of neural markers in NC or NC+ZPAK iNs (L1, L5, L9) following three weeks of conversion, stained with \u03b2III-tubulin, NeuN, and DAPI. Scale bar represents 100 \u03bcm. Representative image from L1. (E) flow cytometry quantification of %PSA-NCAM\u00a0+\u00a0cells in iNs (L1, L5, L9) converted in NC and NC+ZPAK supplements. (F-H) Quantification of immunocytochemical staining in (D). Results are shown as mean\u00a0\u00b1\u00a0SEM. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001, n\u00a0=\u00a03 biological replicates. Significance values were calculated by t test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Dashed line represents NC (NK) control. Molecules with a score of 0 were lethal during direct conversion.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) % change of PSA-NCAM+ cells for all lines converted in NC or NC+ZPAK. (B) Dot plot demonstrating significantly increased PSA-NCAM+ cell yield with NC+ZPAK. Results are shown as mean \u00b1 SD. n = 10, ****p<0.00.1. Significance values were calculated by paired t-test.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Flow cytometry analysis of % PSA-NCAM+ L1 cells cultured with NC or NC\u00a0+Full ZPAK (4 \u03bcM PY, 30 \u03bcM KC, 0.4 \u03bcM AZ, and 0.7 \u03bcM ZM), Half ZPAK (2 \u03bcM PY, 15 \u03bcM KC, 0.2 \u03bcM AZ, and 0.35 \u03bcM ZM), and Final ZPAK (1 \u03bcM PY, 7.5 \u03bcM KC, 0.1 \u03bcM AZ, and 0.175 \u03bcM ZM). (B) Flow cytometry analysis of % PSA-NCAM+ L1, L4, and L8 cells cultured with the indicated concentrations of PY, KC, AZ, ZM, and Final ZPAK. (C) Representative image of iNs produced from Full, Half, and Final ZPAK concentrations and NC alone. (D) Quantification of results from (C). Results are shown as mean\u00a0\u00b1\u00a0SD. **p<0.01. Significance values were calculated by t-test.\n\n### ZPAK induces a defined neuronal transcription that more closely relates to the adult brain transcriptome than NC alone\n\nTo investigate the changes induced on the transcriptional level by the ZPAK cocktail, we again performed time series RNAseq from fibroblasts from three donors that were converted to iNs in NC or NC+ZPAK for 5, 10, 15, and 20 days (Figure 3A; three biological replicates from four time points, 24 samples total). Comparing FPKM normalized gene counts for the conversion process for both conditions, we detected that the transcriptomes induced by NC or NC+ZPAK were highly correlated, with a Pearson correlation coefficient of\u00a0\u22650.85 for all sampled time points (Figure 3C), indicating broad transcriptional similarities between the iN process in NC and NC+ZPAK. Comparing the top 100 upregulated and top 100 downregulated genes for the conversion process for both conditions, we detected an 80% and 93% overlap, respectively (Figure 3B). Consistently, glutamatergic neuron-specific genes Unc-13 homolog A (UNC13A), AMPA receptor auxiliary protein 2 (CNIH2), NMDA1 (GRIN1), GluK5 (GRIK5), GluK2 (GRIK2) and vGLUT1 (SLC17A7), and the GABAergic neuron-specific genes phospholipase C like 2 (PLCL2), dopamine receptor D2 (DRD2), cannabinoid receptor 1 (CNR1) and glutamate decarboxylase 1 (GAD1) were found to be generally expressed at similar levels in NC and NC+ZPAK at 20 days of conversion (Figure 3D, Figure 3\u2014figure supplement 1). Markers of dopaminergic, serotonergic, and cholinergic lineages were not consistent in expression and were not commonly observed in D20 iNs (Figure 3D, Figure 3\u2014figure supplement 2). We next performed differential expression analysis between all NC and NC+ZPAK time points, revealing 143 genes that were significantly differentially expressed (Figure 3\u2014source data 1, padj\u00a0<\u00a00.05). Hierarchical clustering demonstrated a clear separation of NC and NC+ZPAK groups except for two NK samples at the earliest point of conversion (Figure 3E). These significant transcriptional differences point to a more defined neuronal transcriptome initiated in NC+ZPAK compared to NC. Interestingly, we observed consistently increased expression of neuron-specific genes NCAM1/2 (Neural Cell Adhesion), MNX1 (Neural Homeobox), MAP2 (Neural Microtubule Protein), and CAMK2 (Central Nervous System Kinase) in NC+ZPAK but lower expression levels of cyclins such as CCND2 (Cyclin D2) as well as the myogenic factors MEF2 (Myocyte Enhancer Factor) and MYOG (Myogenin), which are known to limit fibroblast to neuronal reprogramming, in NC+ZPAK (Figure 3F, Figure 3\u2014figure supplement 3, Figure 3\u2014figure supplement 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic for timeline RNA isolation during neuronal reprogramming of L2, L5, and L7 at fibroblast and 5, 10, 15, and 20 days of conversion (B) Heatmap of FPKM normalized counts of the top 100 correlating (+) and top 100 inverse correlating (-) genes (FPKM\u00a0\u2265\u00a01) for day 5, 10, 15 and 20 of neuronal reprogramming with NC or NC+ZPAK. Orange\u00a0=\u00a0low expression, blue\u00a0=\u00a0high expression (C) Correlate R values of FPKM normalized counts from 25,610 genes during neuronal reprogramming with NC or NC+ZPAK cocktail. (D) Heatmap showing relative expression of the glutamatergic neuron-specific genes Unc-13 homolog A (UNC13A), AMPA receptor auxiliary protein 2 (CNIH2),NMDA1 (GRIN1), GluK5 (GRIK5), GluK2 (GRIK2) and vGLUT1 (SLC17A7), GABAergic neuron-specific genes phospholipase C like 2 (PLCL2), dopamine receptor D2 (DRD2), cannabinoid receptor 1 (CNR1) and glutamate decarboxylase 1 (GAD1), Serotonergic neuron-specific genes ETS transcription factor (FEV), serotonin transporter 1 (SLC6A4), and tryptophan hydroxylase (TPH1), Dopaminergic neuron-specific genes tyrosine hydroxylase (TH), dopamine transporter 1 (SLC6A3), forkhead box A2 (FOXA2), potassium voltage-gated channel subfamily J member 6 (KCNJ6), nuclear receptor subfamily four group A member 2(NR4A2), and LIM homeobox transcription factor one beta (LMX1B), and cholinergic neuron-specific genes vesicular acetylcholine transporter (SLC18A3), and choline O-acetyltransferase (ChAT); normalized by row. (E) Heatmap of 143 significantly (p-adj\u00a0<\u00a00.05) differentially expressed genes between NC and NC+ZPAK at 5, 10, 15 and 20 days of reprogramming (n\u00a0=\u00a03). (F) FPKM normalized counts of five representative neuron specification genes - Neural Cell Adhesion Molecule 2 (NCAM2), Neural Cell Adhesion Molecule 1 (NCAM1), Motor Neuron and Pancreas Homeobox 1 (MNX1), Microtubule-associated Protein 2 (MAP2), Calcium/Calmodulin Dependent Protein Kinase II (CAMK2) - and three representative fibroblast-to-iN limiting genes - Cyclin D2 (CCND2), Myogenin (MYOG), and Myocyte enhancer factor-2 (MEF2) - over time during fibroblast-to-iN conversion with NC (orange) or NC+ZPAK (blue). (G) Gene ontology (GO) enrichment analysis of genes upregulated in NC or NC+ZPAK (log2FC\u00a0>\u00a01). Results are shown as REVIGO (Supek et al., 2011) scatterplots in which similar GO terms are grouped in arbitrary two-dimensional space based on semantic similarity. Each circle indicates a specific GO term and circle sizes are indicative of how many genes are included in each term, where larger circles indicate greater numbers of genes that are included in that GO term. Colors indicate the level of significance of enrichment of the GO term by log10 p-value. (H) Rank-rank hypergeometric overlap (RRHO) map (Plaisier et al., 2010) comparing the gene expression differences between NC and NC+ZPAK to expression differences between matched fibroblasts and adult human brain (Allen Brainspan). Each pixel represents overlap between NC or NC+ZPAK to fibroblast or adult brain transcriptome, color-coded according to the \u2013log10p value of a hypergeometric test (step size\u00a0=\u00a0100). On the map, the extent of shared genes upregulated in NC+ZPAK and adult brain is displayed in the top right corner, whereas the shared genes upregulated in NC and fibroblasts are displayed in the bottom left corner (see schematic in Figure 3\u2014figure supplement 6).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Predefined and validated gene sets from GO and KEGG for neuron function show enrichment in mean and median expression in NC+ZPAK over NC.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Representative image of MYH3 staining in NC and NC+ZPAK iNs. Scale bar represents 100 \u03bcm. (B)\u00a0Quantification of MYH3-positive cells per dapi-positive nuclei. (C) Quantification of MYH3-positive cells per \u03b2III-tub-positive cells. Results are shown as mean\u00a0\u00b1\u00a0SD. *p<0.05, ***p<0.001.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig3-figsupp5-v2.jpg)\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) Representative image of iNs cultured with NC or NC+ZPAK and transduced with lentiviral particles for GCAMP5G or hSyn-dsRed. Ten areas of overlap in yellow per field with coexpression of hSyn and GCAMP were considered for calcium activity. (B) Histogram of number of calcium transients in four cell lines (L4, L2, L9, L8) converted in NC or NC+ZPAK. At almost all levels of spontaneous activity, there are more active ZPAK iNs compared to NC alone. Additionally, the most active neurons we observed were converted in NC+ZPAK. (C) Comparison of the activity of all cells (n\u00a0=\u00a0160) quantified in this experiment shows a significantly increased level of spontaneous activity in NC+ZPAK iNs. Results are shown as mean\u00a0\u00b1\u00a0SD. *p<0.05. Significance values were calculated by t-test.\n\nNext, gene ontology (GO) enrichment analysis revealed that genes upregulated in NC (log2FC\u00a0>\u00a01) were only enriched for three neuronal GO terms - GO:0034220 Ion transmembrane transport, GO:0006811 ion transport, and GO:0099537 Trans-synaptic signaling - whereas GO terms enriched in genes upregulated in NC+ZPAK included many GO terms categorized for neural development (GO:0021953 Central Nervous System Neuron Differentiation, GO:0007272/0008366 Ensheathement of Neurons/Axons, GO:0021700 Developmental Maturation), synapse development (GO:0007416 Synapse Assembly, GO:0050808 Synapse Organization, GO:0007268 Chemical Synaptic Transmission), neural activity (GO:0001964 Startle Response), and membrane potential maintenance (GO:0006811,0098660,0006811 Regulation of Ion Transport, Inorganic Ion Transport, Ion Transport)\u00a0(Figure 3G, Figure 3\u2014figure supplement 1;\u00a0Supek et al., 2011). When comparing the average and median expression of the genes in these GO terms, we observed consistent upregulation in NC+ZPAK (Figure 3\u2014figure supplement 1). These data indicate that NC+ZPAK yields iNs with a more defined and probably more human brain-like transcriptional profile. To assess neuronal enrichment in a threshold-free manner, and to quantify overlap of expression with adult brain, we employed the rank-rank hypergeometric overlap (RRHO) test (Plaisier et al., 2010). Briefly, this method generates a map of the transcriptional overlap between any two systems by comparing two ranked lists of differentially expressed genes. We applied this method to compare the overlap of NC versus NC-ZPAK to fibroblast versus adult brain (Allen Institute) to evaluate the extent to which either condition more closely resembled adult brain gene expression. Using RRHO, we observed a pronounced bias in the overlap of NC-ZPAK with adult brain, indicating that, relative to NC, NC-ZPAK iNs were indeed more similar to brain expression patterns (Figure 3H). To make a direct comparison of the functional maturity of NC to NC+ZPAK iNs, we performed calcium imaging of NC and NC+ZPAK iNs, revealing that NC+ZPAK iNs have more spontaneous calcium transients than iNs cultured in NC alone (Figure 3\u2014figure supplement 5). As calcium transients have been established as a reliable readout of neural activity in vitro, this direct comparison between NC and NC+ZPAK iNs provides further evidence that ZPAK is producing a more mature and defined neuronal state (Rosenberg and Spitzer, 2011). Taken together, these data indicate that NC-ZPAK iNs possess a transcriptional profile more closely resembling that of mature neurons and that the original fibroblast transcriptional program, as well as other non-neuronal directions, were substantially reduced or absent.\n\nTo gain a better understanding of how each of the four pathway modulators improves iN conversion, we sought to obtain a more detailed understanding of the individual processes influenced by ZM, PY, AZ, and KC.\n\n### Inhibition of JAK2 removes fibroblasts from the cell cycle and promotes mesenchymal-to-epithelial transition (MET)\n\nRemoval of fibroblasts from the cell cycle has been reported to improve neuronal reprogramming (Jiang et al., 2015; Liu et al., 2013). Based on the enrichment of the IGF-1 signaling and the specific transcriptional footprint called by the IPA software, we selected the JAK2 inhibitor AZ as a promising and well-characterized inhibitor, because IGF1/IGF1R is known to enhance cell cycle entry of fibroblasts (Mairet-Coello et al., 2009; Gross and Rotwein, 2016) and signals through the JAK2 substrate STAT3 (Xiong et al., 2014; Nosaka et al., 1999; Zhang and Derynck, 1999) (Figure 4A). We therefore asked whether AZ removed fibroblasts from the cell cycle to enable direct conversion. As expected, Western blot analysis for STAT3 revealed that converting fibroblasts cultured in NC showed a decrease in STAT3 within the first six days of conversion, and the addition of AZ strongly promoted this decrease (Figure 4B). Using carboxyfluorescein succinimidyl ester (CFSE) to examine cell divisions by flow cytometry, we consistently detected that fibroblasts cultured with 0.1 \u03bcM AZ or ZPAK went through significantly fewer divisions than fibroblasts cultured in control medium (Figure 4C,D). Importantly, flow cytometry for DAPI staining did not detect elevated toxicity in AZ-treated cells. Change in the cell phenotype from multipolar mesenchymal cells to polarized epithelial cells is an important developmental process known as the mesenchymal-epithelial transition (MET) (Chaffer et al., 2007). MET machinery plays an important role during direct conversion of fibroblasts to neurons (He et al., 2017), and p-STAT3 dimers directly promote epithelial-to-mesenchymal transition (EMT)-related gene expression (Wendt et al., 2014). Perturbations in STAT3 signaling have been linked to MET (Zhang et al., 2014; Renjini et al., 2014). Therefore, we monitored the E-Cadherin to N-Cadherin switch during iN conversion in NC and in NC\u00a0+\u00a0AZ (Nakajima et al., 2004; Lamouille et al., 2014) and found that AZ induced a more rapid switch towards E-Cadherin (Figure 4D), a switch that is a classic hallmark of MET (Scarpa et al., 2015; Zhang et al., 2013).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic diagram of AZ targeting confluence of IGF1R and JAK2 signaling pathways. (B) Western blot analysis of protein levels of STAT3 assessed at one, three, and six days in L6 fibroblast media containing PY, ZM, AZ or control media. (C) CFSE stained L1, L5, and L8 fibroblasts cultured with control, AZ-containing medium, or ZPAK-containing medium for 48 hours after plating at 50% confluency. Boxes indicate percentages of cells that have undergone at least one cellular division. (D) Quantification of % dividing cell reduction in ZPAK from C. Results are shown as mean \u00b1 SD. n = 3, ** P < 0.01. Significance values were calculated by t-test. (E) Two color flow cytometry analysis of E- cadherin (E-Cad) and N-cadherin (N-Cad) expression in L10 and L6 fibroblast-to-iN conversion in NC or NC+AZ. Increasing ratios of E-Cad/N-Cad are indicative of the mesenchymal-to-epithelial switch. (F) Representative Neurolucida reconstruction of L1 reprogrammed for 21 days in NC or NC+ZPAK medium. Scale bar 100 \u03bcm (G) Neurolucida complexity scores of iNs derived from NC or NC+ZPAK components. Complexity scores were normalized to cell number by counterstaining with DAPI to count cell bodies. Results are shown as mean \u00b1 SD. n = 3, * P < 0.05. (H) Schematic diagram of PY and ZM interaction with cytoskeletal dynamics. (I) L1 fibroblasts cultured for 48h with ZM, PY, or CTL medium labeled for F-Actin with FITC Phallodidin and nuclei with DAPI. Scale bar 20 \u03bcm. (J) Integrated signal density of FITC phalloidin stain from H. Signal density was normalized to cell numbers by DAPI. Results are shown as mean \u00b1 SEM. n = 3, *** P < 0.001. (K) Schematic diagram of KC targeting HIF1\u03b1 to inhibit glycolysis and promote oxidative phosphorylation (OXPHOS). (L) Mitochondria in L10, L4, & L2 iNs cultured for 21 days in NC or NC+KC stained with JC-1 and measured for membrane depolarization by flow cytometry. Increased ratios of aggregate (PE) to diffuse (FITC) JC-1 are indicative of increased mitochondrial membrane potential. Results are shown as mean \u00b1 SD. n = 3. Significance values were calculated by t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Increased ratios of aggregate (PE) to diffuse (FITC) JC-1 are indicative of increased mitochondrial membrane potential. Results are shown as mean\u00a0\u00b1\u00a0SD. n\u00a0=\u00a03. Significance values were calculated by t-test.\n\n### Activation of integrin and rho signaling promotes neuronal complexity\n\nThe morphological changes a fibroblast has to undergo to transform into a neuron are substantial, and we have observed a pronounced increase in neuronal complexity in ZPAK compared to NC (Figure 2B). To determine which ZPAK molecules primarily facilitate these structural modifications, we used \u00dfIII-tubulin-based tracing and scoring to assess the neuronal complexities of iN cultures derived in NC containing either PY, ZM, AZ, or KC; we found that both PY and ZM produced significantly increased complexity scores (Figure 4E\u2013F). Interestingly, PY was shown previously to promote integrin \u03b21 stability and signaling of human pluripotent stem cells (Xu et al., 2010), and we reasoned that PY also enhanced integrin-dependent attachment to extracellular matrices of iNs, thereby promoting neurite outgrowth and interactions (Figure 4G). Based on the fact that ZM is a Raf-1 activator, we reasoned that the structural complexity increase in NC\u00a0+\u00a0ZM was associated with increased F-actin activity (Figure 4G). Thus, we stained fibroblasts cultured with ZM or PY for 48 hr with fluorescent phalloidin, which revealed a marked increase in phalloidin signal by ZM and also a significant increase by PY (Figure 4H\u2013I). These results are consistent with the reported roles of Raf-1 activation and actin polymerizations in organizing cytoskeletal shape and neuronal morphology (Ehrenreiter et al., 2005; Hsueh, 2012; Bosch et al., 2014), and they suggest that ZM and PY promote morphological rearrangements that occur during direct neuronal reprogramming by different but overlapping means.\n\n### Inhibition of HIF1\u03b1 signaling promotes oxidative phosphorylation in iNs\n\nConsistent with our timeline transcriptome data, the transcription factor HIF1\u03b1 has been reported to be one of the top downregulated factors during direct neuronal conversion from a variety of originating cell types (Omrani et al., 2018). Increased oxidative phosphorylation is a hallmark of neuronal identity, and glycolysis has been reported to limit neural reprogramming in many protocols (Zheng et al., 2016; Gasc\u00f3n et al., 2016; Agostini et al., 2016). As HIF1\u03b1 is a major inhibitor of oxidative phosphorylation (OXPHOS) and a mediator of glycolysis, we hypothesized that KC, a HIF1\u03b1 inhibitor, improved iN conversion by facilitating OXPHOS (Figure 4J). Using the JC1 dye, a cationic dye that accumulates in energized mitochondria with high membrane potentials (Smiley et al., 1991), we found that cultures at one, two and three weeks of conversion had higher mitochondrial membrane potentials in the presence of KC at all time points and significantly higher mitochondrial membrane potentials by week three (Figure 4K, Figure 4\u2014figure supplement 1). These data are consistent with a HIF1\u03b1 blockade initiated by KC promoting the metabolic switch towards OXPHOS that is necessary for iN conversion.\n\n### Epigenetic signatures of donor age are preserved in ZPAK-derived iNs\n\nOne unique characteristic of direct iN conversion compared to iPSC reprogramming and subsequent neuronal differentiation is the retention of the cellular marks of aging (Mertens et al., 2015; Tang et al., 2017; Victor et al., 2018; Liu et al., 2016). As our additional ZPAK pathway modulators might impact the cellular age of the derived iNs, we sought to verify that ZPAK did not affect the epigenetic age of derived iNs based on age-dependent DNA methylation (Jones et al., 2015). Similar to other global aging features, age-dependent DNA methylation of CpGs has been shown to be preserved in iNs (Huh et al., 2016) and reverts to a predicted prenatal age even in iPSCs from donors older then 90 years of age (Lo Sardo et al., 2017). We quantified CpG methylation for 850,000 sites for two young (0 and 1 years), two middle age (both 29 years), and two old (71 and 87 years) purified iN cultures in NC+ZPAK, as well as one young (1 year) and one old (87 years) unconverted fibroblast culture. Based on the top 5000 differentially methylated regions identified using ChAMP (Morris et al., 2014), we observed a clear difference between young and old donors, with middle-age donors showing an intermediate age-dependent CpG methylation pattern (Figure 5A). Most importantly, the methylation patterns of the young and old NC+ZPAK iNs were largely unchanged compared to their parental fibroblasts (Figure 5A). To apportion the majority of the variation, principal component analysis (PCA) based on all 850,000 CpGs consistently clearly separated the samples with respect to their age as the strongest component (Figure 5B). Taken together, these results indicate that age-dependent DNA methylation patterns are maintained during ZPAK-assisted iN conversion and that NC\u00a0+\u00a0PAKZ is suitable to efficiently generate human neuronal models that recapitulate age-associated epigenetic changes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig5-v2.jpg)\n\n**Figure 5.:** (A) Heat map showing the top 5000 significantly (padj\u00a0<\u00a00.05) differentially methylated CpGs between iNs generated by NC+ZPAK from two young (0, 1 years), two middle age (29 years), and two old (71, 87 years) donors, and one young and one old untreated fibroblast (0, 87 years, respectively). Each line represents a single probe. High methylation levels are shown in yellow, low methylation is shown in blue. Methylation of one young and one old paired, unconverted fibroblast is shown next to its iN counterpart. (B) Principal Component Analysis (PCA) of the methylation profiles of two young iNs, one young fibroblast, two middle age iNs, two old iNs, and one old fibroblast cell line. All iNs were reprogrammed with NC+ZPAK medium. Plot shows principal component one and principal component two for each sample. Samples closer to each other in principal component space are similar in their methylation profiles.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41356/elife-41356-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) % yield of PSA-CNAM+ iNs from four lines (L1, L4, L10, L8) of late passage (>30) fibroblasts converted in NC or NC+ZPAK. (B) representative brightfield images of early (p6) and late passage (p33) fibroblasts stained with senescence marker SA-B-Gal. Results are shown as mean \u00b1 SD. n = 4, *P<0.05. Significance values were calculated by t-test.\n\n## Discussion\n\nSignificant gaps remain in our understanding of the mechanisms influencing neuronal specification during direct reprogramming. Consequently, iN yields from current protocols are often paltry, necessitating large numbers of converting cells to get sufficient successfully reprogrammed iNs for experimental analysis. Further, improvements to these protocols are largely based on trial and error, with few predictive tools available. In this study, we leveraged RNAseq data to uncover several key molecular events that can be targeted with small molecules to improve iN yield. These modifications, combined with our streamlined lentiviral system, provide a state-of-the-art improvement in current iN direct reprogramming protocols and shed insight into mechanisms driving neuronal specification during reprogramming.\n\nEfficiently overcoming competing cellular programs has long been a challenge in the somatic reprogramming field. Here, we report that ZPAK causes a more thorough elimination of competing fibroblast programs on the transcriptional level than classic medium, as represented by both upregulation of neuron-specific genes and, importantly, downregulation of myogenic and fibroblast-specific genes known to limit neuronal specification during late reprogramming. These transcriptional changes are accompanied by other important phenotypes associated with neuronal fate, including removal of cells from the cell cycle, increased mitochondrial membrane potential, increased GCAMP activity, and enhanced mesenchymal to epithelial plasticity. There has also been an increased recognition of the important role of cytoskeleton remodeling during somatic cell reprogramming (Sakurai et al., 2014; Guo et al., 2014). Neurons have elaborate cytoskeleton structures that are highly specialized and critical for proper function. As the morphological changes from a fibroblast to a neuron are substantial, we were interested to discover that two of our compound modifications, ZM and PY, were associated with increased neuronal morphological complexity in addition to increasing iN yield. This phenotype was accompanied by an increase in F-Actin activity, a potent component of cellular plasticity. Cytoskeleton remodeling is associated with sheer stress, and the actin cytoskeleton can sense and respond to these stresses with apoptotic signals. Therefore, we propose that the inclusion of ZM and PY in direct neuronal reprogramming could promote cytoskeleton reorganization and spare converting fibroblasts from mechanical stress-induced apoptosis. Our findings illustrate the important contribution actin structure makes during reprogramming and suggests that increased cellular structural plasticity could be a fruitful strategy for improving neuronal lineage commitment during reprogramming.\n\nClassic direct conversion protocols, which we and others have used to differentiate fibroblasts to mature human neurons, are highly inefficient and fail to successfully reprogram the majority of input cells. Additionally, a significant heterogeneity exists in the reprogrammed pool, with many cells existing in a state that is not quite fibroblast, not quite neuron. Although many relevant phenotypes have been found between patient and control neuronal cultures reprogrammed in currently used media, we predict that new phenotypes might be revealed from studying neurons in conditions that more thoroughly commit fibroblasts to neuronal fate specification and, in turn, might lead to the discovery of more effective treatments for neurological disorders. Further, as iNs have shown promise in cell replacement therapies, we propose that using culture conditions that completely commit fibroblasts to the neuronal lineage will result in an increased therapeutic potential of iNs for possible neuronal replacement. Importantly, ZPAK improves iN yields even at very late fibroblast passages that could be required to produce therapeutic numbers of cells (Figure 5\u2014figure supplement 1). Although 100% efficiency in establishing neuronal specification remains elusive, the development of new neuronal reprogramming techniques, such as UNA and ZPAK media, takes us one step closer to this goal.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>AZ960</td>\n      <td>Cayman</td>\n      <td>RRID:SCR_008945</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pyrintegrin</td>\n      <td>Tocris</td>\n      <td>RRID:SCR_003689</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ZM336372</td>\n      <td>Cayman</td>\n      <td>RRID:SCR_008945</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>KC7F2</td>\n      <td>Fischer Scientific</td>\n      <td>RRID:SCR_008452</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phalloidin CruzFluor 488 Conjugate</td>\n      <td>SCBT</td>\n      <td>RRID:AB_2631056</td>\n      <td>\u20181:1000\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>N-Cadherin (Mouse monoclonal)</td>\n      <td>Miltenyi Biotec</td>\n      <td>RRID:AB_2727381</td>\n      <td>\u20181:50\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>E-Cadherin (Mouse monoclonal)</td>\n      <td>Miltenyi Biotec</td>\n      <td>RRID:AB_10827695</td>\n      <td>\u20181:11\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>STAT3 (Rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>RRID:AB_2716836</td>\n      <td>\u20181:1000\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NeuN (Mouse monoclonal)</td>\n      <td>EMD Millipore</td>\n      <td>RRID:AB_2298772</td>\n      <td>\u20181:200\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tubulin \u03b2\u22123 (Rabbit polyclonal)</td>\n      <td>Covance</td>\n      <td>RRID:AB_2313773</td>\n      <td>\u20181:3000\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GABA (Rabbit polyclonal)</td>\n      <td>Sigma</td>\n      <td>RRID:AB_477652</td>\n      <td>\u20181:500\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-vGlut1 (Rabbit polyclonal)</td>\n      <td>Synaptic Systems</td>\n      <td>RRID:AB_887875</td>\n      <td>\u20181:100\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TH (Rabbit polyclonal)</td>\n      <td>Pel-Freez</td>\n      <td>RRID:AB_2313713</td>\n      <td>\u20181:250\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ChAT (Goat polyclonal)</td>\n      <td>EMD Millipore</td>\n      <td>RRID:AB_10615776</td>\n      <td>\u20181:100\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-5-HT (Rabbit polyclonal)</td>\n      <td>Protos Bio Tech</td>\n      <td>RRID:AB_2313881</td>\n      <td>\u20181:1000\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PSANCAM (Mouse monoclonal)</td>\n      <td>Miltenyi Biotec</td>\n      <td>RRID:AB_1036069</td>\n      <td>\u20181:50\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-MYH (Mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>RRID:AB_10989398</td>\n      <td>\u20181:100\u2019</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cell Trace CFSE</td>\n      <td>ThermoFisher Scientific</td>\n      <td>C34554</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Mito Probe JC-1</td>\n      <td>ThermoFisher Scientific</td>\n      <td>M34152</td>\n      <td>\u20181:1000\u2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Ingenuity Pathway Analysis</td>\n      <td>QIAGEN Bioinformatics</td>\n      <td>RRID:SCR_008653</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Direct conversion of human fibroblasts into iNs\n\nPrimary human dermal fibroblasts from donors between 0 and 88 years of age were obtained from the Coriell Institute Cell Repository, the University Hospital in Erlangen and Shiley-Marcos Alzhiemer\u2019s Disease Research Center (Figure 2\u2014source data 2). Protocols were previously approved by the Salk Institute Institutional Review Board and informed consent was obtained from all subjects. Fibroblasts were cultured in DMEM containing 15% tetracycline-free fetal bovine serum and 0.1% NEAA (Thermo Fisher Scientific), transduced with lentiviral particles for EtO and XTP-Ngn2:2A:Ascl1 (E\u00a0+\u00a0N2A), or the combined tetOn system cassette consisting of the rtTAAdv. [Clonech] driven by the UbC promoter, Ngn2:2A:Ascl1 under control of the TREtight promoter [Clontech], and a puromycin-resistance gene driven by the PGK promoter (UNA, Figure 1A) and expanded in the presence of G418 (200 \u00b5g/ml; Thermo Fisher Scientific) and puromycin (1 \u00b5g/ml; Sigma Aldrich), or puromycin only, respectively, as \u2018iN-ready\u2019 fibroblast cell lines. Following at least three passages after viral transduction, \u2018iN-ready\u2019 fibroblasts were trypsinized and pooled into high densities (30.000\u201350.000 cells per cm2; appx. a 2:1 \u2013 3:1 split from a confluent culture) and, after 24 hr, the medium was changed to neuron conversion (NC) or NC+ZPAK medium based on DMEM:F12/Neurobasal (1:1) for three weeks. NC contains the following supplements: N2 supplement, B27 supplement (both 1x; Thermo Fisher Scientific), doxycycline (2 \u00b5g/ml, Sigma Aldrich), Laminin (1 \u00b5g/ml, Thermo Fisher Scientific Scientific), dibutyryl cyclic-AMP (500 \u00b5g/ml, Sigma Aldrich), human recombinant Noggin (150 ng/ml; Preprotech), LDN-193189 (5 \u00b5M; Fisher Scientific Co) and A83-1 (5 \u00b5M; Santa Cruz Biotechnology Inc), CHIR99021 (3 \u00b5M, LC Laboratories), Forskolin (5 \u00b5M, LC Laboratories) and SB-431542 (10 \u00b5M; Cayman Chemicals). ZPAK contains the following supplements: Pyrintegrin (1 \u00b5M; Tocris), ZM336372 (0.175 \u00b5M; Cayman), AZ960 (0.1 \u00b5M; Cayman), and KC7F2 (7.5 \u00b5M; Fischer Scientific). Medium was changed every third day. For further maturation up to six weeks, iNs were switched to BrainPhys (STEMCELL Technologies)-based neural maturation media (NM) containing N2, B27, GDNF, BDNF (both 20 ng/ml, R and D), dibutyryl cyclicAMP (500 \u00b5g/ml, Sigma Aldrich), doxycycline (2 \u00b5g/ml, Sigma-Aldrich) and laminin (1 \u00b5g/ml, Thermo Fisher Scientific). For maturation on astrocytes for morphological analysis and calcium imaging, iNs were carefully trypsinized during week four and replated on a feeder layer of mouse astrocytes and cultured in NM media containing 1% KOSR (Thermo Fisher Scientific).\n\n### Whole transcriptome mRNA sequencing and methylation array\n\nTotal bulk RNA was extracted from fibroblasts and converting iNs at all collected time points using Trizol LS reagent (Thermo Fischer). RNA integrity (RIN) numbers were assessed using the Agilent TapeStation before library preparation. RNA-Seq libraries were prepared using the TruSeq Stranded mRNA Sample Prep Kit according to the manufacturer\u2019s instructions (Illumina). Libraries were sequenced single-end 50 bp using the Illumina HiSeq 2500 platform. Read trimming was performed using TrimGalore, read mapping was performed using STAR, raw counts were generated using HTseq variance stabilizing transformation normalization (vst) and differential expression analysis was performed in DEseq2. Pathway and network analysis was performed using Ingenuity Pathway Analysis (Qiagen) from FPKM normalized HTseq generated gene counts under the time course analysis module. Pathways with a Z-Score\u00a0\u2265\u00a03 (99% confidence interval) were considered for further study.\n\nTotal genomic DNA was extracted from bulk fibroblasts and flow cytometry sorted PSA-NCAM\u00a0+\u00a021 day iNs as described below with the DNeasy Blood and Tissue Kit (Qiagen). DNA methylation assays were performed on the MethylationEPIC BeadChip as per the standard manufacturer\u2019s protocol (Illumina). Raw intensity idat files were processed and analyzed using the R packages ChAMP (Morris et al., 2014) or Rnbeads (Assenov et al., 2014); arrays were normalized using the BMIQ procedure (Teschendorff et al., 2013).\n\n### Flow cytometry assessment of PSA-NCAM, ECAD/NCAD, Cell Proliferation, and Mitochondrial Membrane Polarization\n\nFor PSA-NCAM analysis, iNs were detached using TrypLE and stained for PSA-NCAM directly conjugated to PE (Miltenyi Biotec; 1:50) for 1 hr at 4\u00b0C in sorting buffer (250 mM myo-inositol and 5 mg/ml polyvinyl alcohol, PVA, in PBS) containing 1% KOSR. Cells were washed and resuspended in sorting buffer containing EDTA and DNAse and filtered using a 40 \u00b5m cell strainer. For co-staining with NCAD and ECAD, cells were detached and prepared as above and stained for N-CAD:APC (Miltenyl Biotec, CD325, 1:20) and E-CAD:PE (Miltenyl Biotec, CD324, 1:11). To determine the effect of AZ960 on proliferation of fibroblast cell lines, the cellular divisions were quantified with the CellTrace CFSE proliferation assay (Thermo Fisher). 1.2 \u00d7 106 fibroblasts at full density on a single well of a six-well plate (9 cm2) were split into two 60 mm plates (21 cm2) and proliferated in DMEM containing 15% tetracycline-free fetal bovine serum and 0.1% NEAA (Life Technologies), 2.5 \u00b5M of CellTrace CFSE proliferation dye (Invitrogen), and 0.1 \u00b5M AZ960 for 48 hr. Mitochondrial membrane potential was analyzed using the MitoProbe JC-1 assay kit (Thermo Fisher, M34152). In all cases analysis was conducted on the FACS Canto II platform.\n\n### Image collection and analysis\n\nCells were transferred to tissue culture-treated ibidi \u00b5-slides for imaging. Cells were fixed with 4% PFA for 20 min at room temperature and washed 3 \u00d7 15 min with TBS, followed by a 1 hr block with TBS\u00a0+\u00a04% bovine serum albumin and 0.1% Triton X-100 (TBS++). Primary antibodies (Anti-NeuN, 1:200, EMD Millipore; Anti-\u00dfIII-tubulin, 1:3000, Covance; Phalloidin CruzFluor 488 Conjugate, 1:1000, SCBT) were applied overnight at 4\u00b0C. After washing as described above, samples were incubated in 1:250 donkey anti-mouse, chicken, or rabbit secondary antibody for 2 hr at room temperature. Nuclear staining was done with DAPI (1/10,000; Sigma-Aldrich). After washing, slides were mounted in PVA-DAPCO (Sigma Aldrich). Confocal images were taken on Zeiss LSM780 or Zeiss AiryScan series confocal microscope. All data for one experiment were acquired from cells cultured and processed in parallel on the same microscope with the exact same setting reused. For analysis, 2 \u00b5m confocal sections through the nuclear layer were acquired from three confocal z stacks. Neurolucida software was used for manual tracing of entire neuronal processes, and data were analyzed using NeuroExplorer (MicroBrightField Inc). All tracings were performed in a blinded manner. For phalloidin staining, automatic thresholding in ImageJ was used to binarize the images and green fluorescence intensity was calculated minus background intensity. At least 50 different cells were analyzed in each experiment, and the mean\u00a0\u00b1\u00a0SEM optical density (OD) was then calculated.\n\n### Calcium Imaging\n\niNs converted in NC or NC+ZPAK were transduced with lentiviral particles for CAG-GCAMP5G and LV-hSyn-dsRed at 21 days of conversion and replated on astrocytes for maturation as described above. Calcium imaging were performed four weeks after plating on astrocytes. Imaging was performed in BrainPhys media (Stemcell Technologies) on a Yokogawa Cell Voyager 1000 Spinning Disk Confocal Microscope. We only analyzed 10 cells per field that were hSyn-dsRed\u00a0+\u00a0and exhibited neuron identity. Calcium responses were calculated as the change in fluorescence intensity (\u0394F) over the initial fluorescence intensity (F-F0)/F0,in which F is the fluorescence at a given time point and F0 was calculated as the average of the first five inactive fluorescence measurements at the start of imaging. A non-response area for each recording was measured for background subtraction, and imaging bleach was corrected for using the ImageJ plugin Fiji (NIH, Bethesda, MD). The threshold for a positive calcium event was defined as local maxima when fluorescence response within a soma exceeded a value greater than three standard deviations above the mean.\n\n### SYBR qPCR\n\nBulk mRNA was extracted as described above, and 1 \u03bcg of RNA was then reverse transcribed using the Superscript III Reverse Transcriptase kit (Thermo Fisher). Quantitative differences in gene expression were determined by real-time qPCR using SYBR Green Master Mix (Bio-Rad) and a spectrofluorometric thermal cycler (CFX384, Bio-Rad). Values are presented as the ratio of target mRNA to GAPDH expression obtained for each time point and treatment. Primer sequences used are the following:\n\n### Western blot analysis\n\nCell lysates were prepared in Lysis buffer A (20 mM Tris pH 7.5, 100 mM NaCl, 1 mM EDTA, 2 mM EGTA, 50 mM \u03b2 -glycerophosphate, 50 mM NaF, 1 mM sodium vanadate, 2 mM dithiothreitol, proteinase inhibitor cocktail (Roche) and 1% Triton X-100 and subjected to Western blot according to the standard procedures. The primary antibody used was rabbit mAb STAT3 (1:1000, Cell Signaling, 79D7, #4904).\n\n### Statistical analysis\n\nStatistical values for RNA-Seq and CpG methylation data were corrected for false discovery rates (FDR) using the Benjamini-Hochberg method implemented in R. Statistical tests of quantitative data were calculated using GraphPad Prism seven software, with the method indicated for each figure. Significance evaluation are marked as *p<0.05; **p<0.01; ***p<0.005 and ****p<0.001.\n",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "bc17b8f3-154d-408b-b7ea-2af2ae2cd551",
+      "submission_id": "5d0295b3-d1ae-4be6-8105-ad45d2bec07f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lee L Rubin, Harvard Stem Cell Institute, Harvard University United States\n\nReviewers:\n- Marisa Karow\n\n## Review text\n\nDOI: [10.7554/eLife.41356.035](https://doi.org/10.7554/eLife.41356.035)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Chemical modulation of transcriptionally enriched signaling pathways to optimize conversion of fibroblasts into neurons\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Marianne Bronner as the Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Marisa Karow (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper by Herdy et al. describes an interesting attempt to improve the process by which neurons are produced directly from patient fibroblasts. The theoretical advantage of such a method, should it be sufficiently efficient, is that it may be capable of preserving some of the epigenetic changes, occurring during aging or other conditions, in the neurons. The authors formulated a method that uses a revised lentiviral vector that drives the expression of two different neurogenic transcription factors along with a combination of small molecule signaling modulators. Overall, the new method appears to result in a substantial improvement in the production of induced neurons, including from a few patient lines that were \"low performers\" under the original induction conditions.\n\nThe three reviewers agree that this manuscript is worth publishing after a set of focused experiments are performed. Most of the comments are directed at achieving a greater understanding of the actions of the small molecules. Some additional information concerning the consistency of the effects of ZPAK on different sets of fibroblasts and on the total scalability of the new differentiation protocol are also requested. Since this is a Resource and Tools paper, we have tried to restrict the requests to ones that we agree will make the protocols more useful and comprehensive.\n\nEssential revisions:\n\n1) Analyzing effects of treatment with single compounds and with ZPAK.\n\nCan the authors clarify:\n\n\u2022 Which fibroblast line(s) were used for the analyses in Figure 2 and subsequent figures?\n\n\u2022 Whether they tested multiple inhibitors and activators of the same pathways to generate the data for Figure 1. If they tested multiple, did they all work to some degree or were the results more mixed?\n\n\u2022 How well ZPAK works across the different patient lines?\n\n\u2022 If they compared the effects of ZPAK to those of the individual compounds based on testing single compound concentrations? Were the concentrations chosen from prior literature or from dose-response experiments that they performed? In either case, additional data to ensure that even single compounds at more optimal concentrations wouldn't have comparable effects to those of ZPAK should be included.\n\n2) Understanding the effects of small molecule signaling modulators.\n\nReviewer 2:\n\nFollowing NC+ZAPK treatment and Ngn2/Ascl1 expression, the fibroblasts adopt a mixed neuronal phenotype as assessed on a molecular level (Figure 3D). Are any of the neuronal branches adopted with higher frequency? Is there a change when switching from NC to NC+ZAPK? Did the authors check for this via immunofluorescence or electrophysiology?\n\nThe authors mention the alternative myogenic fate (as induced by Ascl1 alone in murine fibroblasts (Treutlein et al., 2016) being more highly expressed in the NC condition as compared to NC+ZPAK. Could they confirm this via staining?\n\nIn Figure 4C the authors show that AZ-treated cells went through significantly fewer divisions. Was cell division assessed in NC+ZAPK versus NC? In Figure 4E it looks like there are more cells in NC+ZAPK.\n\nReviewer 3 (reviewer 1 had similar questions to those described clearly below):\n\nComparing NC and NC+ZPAK in Figure 3, it appears the authors used bulk fibroblasts undergoing iN conversion at days 5, 10, 15 and 20. However, given the boost in conversion efficiency with ZPAK (Figures 2D-H), could the fact that there are more neurons and fewer fibroblasts in the NC+ZPAK conversion condition compared to the NC condition account for the increased 'adult / defined' neuronal signature? Can the authors rule out a change in cell ratios and ability to detect small transcript changes in a sub-population rather than changes to the neuron population specifically? In order to conclude that NC+ZPAK not only improves efficiency of conversion but also generates neurons that are more 'human brain-like' the authors need to compare NC neurons to NC+ZKAK neurons directly (e.g., through transcriptional analysis of BIII-tub positive neurons, immunophenotyping of neurons to quantify specific markers that are representative of the reported signature, etc.).\n\nIn order to support the authors\u2019 conclusions about gene changes over time in Figure 3, key genes from the RNA-seq dataset should be validated by qPCR with error bars. Specifically, showing changes in key neuro, muscle and fibroblast genes over time; key neuronal genes at later time-points that corroborate the more mature phenotype implied from the Allen brain comparison in Figure 3H; glutamatergic and GABAergic genes in order to conclude that they are expressed at roughly similar levels in Figure 3D.\n\nThe differences between NC and NC+ZPAK implied in Figures 3G and 3H seem somewhat at odds with the modest transcriptional changes reported, i.e., \"NC-ZPAK iNs possess a transcriptional profile more closely resembling that of mature neurons and that the original fibroblast transcriptional program, as well as other non-neuronal directions, were substantially reduced or absent.\" But, the first paragraph of the subsection \u201cZPAK induces a defined neuronal transcription that more closely relates to the adult brain transcriptome than NC alone\u201d indicates only 143 genes were significantly differentially expressed between NC and NC+ZPAK pooling all differences across days 5, 10, 15 and 20. How do the authors integrate these two pieces of data?\n\nThe authors should also include the number of differentially expressed genes for each time-point and the full list of 143 DEGs, as supplementary figures. Since this is a small/important gene set for this study, it should be readily accessible.\n\nDoes the transcript data support the mechanistic data in Figures 4-5? Is there transcriptional evidence to support the signaling pathways induced by ZPAK over the course of conversion? (if so, again, specific gene changes should be validated from the RNA-seq). Upon activation of these signaling pathways, and dramatic differences in neurite complexity shown in Figures 4E-F, again one might expect to see more differentially expressed genes between NC and NC-ZPAK.\n\n3) Usefulness of the new protocol.\n\nThe authors are correct to point out that efficiency matters for investigators trying to produce cultures enriched in neurons and for those trying to make large numbers of neurons for proteomic or screening applications. However, by way of comparison, direct differentiation from iPSCs involves generating neurons from pluripotent cells that can be grown in virtually unlimited numbers. In the case of the current method, the numbers of neurons that can be produced from fibroblasts is the product of the number of fibroblasts that can be generated from each patient sample X the efficiency of differentiation. The authors have shown that the efficiency of their method is better, but how well does the method work in fibroblasts that have been passaged sufficiently to give rise to the billions of neurons that may be required? The lines used in this work were already passaged >10 times, which is promising. However, the authors should demonstrate the process will continue to work on these fibroblast lines, especially those derived from older donors, that are passaged sufficiently to produce the requisite large numbers of neurons.\n",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "60ae1141-0e8a-4501-82e0-006ae92f394a",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C1",
+      "claim": "Direct conversion of human somatic fibroblasts into induced neurons (iNs) allows for the generation of functional neurons while bypassing any stem cell intermediary stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct conversion of human somatic fibroblasts into induced neurons (iNs) allows for the generation of functional neurons while bypassing any stem cell intermediary stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement about iN technology that is supported by the cited literature and the experimental work presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "7787fdc1-7623-4d5e-abe2-7ae33f82bccb",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C2",
+      "claim": "iN technology has enormous potential for modeling age-related diseases and therapeutic approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Although iN technology has an enormous potential for modeling age-related diseases, as well as therapeutic approaches, the technology faces limitations due to variable conversion efficiencies and a lack of thorough understanding of the signaling pathways directing iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract as a motivation for the study, drawing on established knowledge about iN applications.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "e0f9dab6-0e2b-4f41-893a-e637568976bc",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C3",
+      "claim": "iN technology faces limitations due to variable conversion efficiencies and a lack of thorough understanding of the signaling pathways directing iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although iN technology has an enormous potential for modeling age-related diseases, as well as therapeutic approaches, the technology faces limitations due to variable conversion efficiencies and a lack of thorough understanding of the signaling pathways directing iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the problem that the manuscript addresses, based on the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "4a09401c-475f-456f-bf47-0b4a34436902",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C4",
+      "claim": "A new all-in-one inducible lentiviral system (UNA) simplifies fibroblast transgenesis for Ngn2 and Ascl1 and markedly improves iN yields.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce a new all-in-one inducible lentiviral system that simplifies fibroblast transgenesis for the two pioneer transcription factors, Ngn2 and Ascl1, and markedly improves iN yields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 1, showing improved conversion efficiencies with UNA compared to the two-vector system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "0c3269eb-04e5-4929-8b2c-0adb5b25cd95",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C5",
+      "claim": "Timeline RNA-Seq data across the course of conversion has identified signaling pathways that become transcriptionally enriched during iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our timeline RNA-Seq data across the course of conversion has identified signaling pathways that become transcriptionally enriched during iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RNA-Seq experiments described in Figure 2 and the pathway analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "12859743-dcfc-42b9-bd14-0e3f5271e17f",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C6",
+      "claim": "Small molecular modulators were identified for four signaling pathways that reliably increase the yield of iNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Small molecular modulators were identified for four signaling pathways that reliably increase the yield of iNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the screening experiments and validation shown in Figure 2, identifying PY, AZ, ZM, and KC as conversion boosters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "b8a29fa4-e17a-4080-9438-ad19172c6c62",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C7",
+      "claim": "Human somatic cells such as skin fibroblasts can be directly converted into cultures of functional induced neurons (iNs) by the overexpression of pro-neuronal transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Human somatic cells such as skin fibroblasts can be directly converted into cultures of functional induced neurons (iNs) by the overexpression of pro-neuronal transcription factors (Pang et al., 2011; Chambers and Studer, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work establishing this principle.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "a047069b-0782-4dc3-ac57-23b665da82ef",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C8",
+      "claim": "Direct iN conversion bypasses the pluripotent stage and preserves epigenetic information of their donor's age.",
+      "claim_type": "EXPLICIT",
+      "source": "As opposed to induced pluripotent stem cell (iPSC) reprogramming and differentiation, direct iN conversion bypasses the pluripotent stage as well as any other stem cell-like stages and preserves epigenetic information of their donor's age, making it a particularly valuable tool to study aging and aging-related disorders (Mertens et al., 2015; Victor et al., 2018; Tang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and is validated by the methylation data in Figure 5.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "e40c6b4b-efdd-4efa-bdf0-aa6a9dc99820",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C9",
+      "claim": "iN technology has shown promise in vivo as a strategy to replace damaged cells following brain injury by direct conversion of non-neuronal cell types into neurons directly within the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "iN technology has also shown promise in vivo as a strategy to replace damaged cells following brain injury by direct conversion of non-neuronal cell types into neurons directly within the nervous system (Karow et al., 2012; Heinrich et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior in vivo studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "5bcb8635-85dd-416c-8cca-8f96605a7979",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C10",
+      "claim": "Using combinations of pro-neuronal and region-/subtype-specific transcription factors, a variety of neuronal subtypes has been produced via direct conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using combinations of pro-neuronal and region-/subtype-specific transcription factors, a variety of neuronal subtypes has been produced via direct conversion (Caiazzo et al., 2011; Son et al., 2011; Victor et al., 2014; Vadodaria et al., 2016; Tsunemoto et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies demonstrating subtype-specific conversion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "31b3d1c9-6d72-4c17-9c7a-c2caf9f028c9",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C11",
+      "claim": "Because iN conversion lacks a proliferating stem cell intermediate, the iN numbers obtained are largely dependent on conversion efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Because iN conversion lacks a proliferating stem cell intermediate, the iN numbers obtained are largely dependent on conversion efficiency; therefore, great efforts have been undertaken to improve iN process yields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the nature of direct conversion and is supported by the field's focus on improving efficiency.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "8aa5ae0c-0ece-4a00-9414-1c1432161dd8",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C12",
+      "claim": "The identification and combination of Ngn2 with Ascl1 as two pro-neuronal pioneer transcription factors have been key features in the advancement of iN technology.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification and the combination of Ngn2 with Ascl1 as two pro-neuronal pioneer transcription factors that can induce neuronal identity in non-neuronal cells have been key features in the advancement of this technology (Ladewig et al., 2012; Liu et al., 2013; Mertens et al., 2015; Wapinski et al., 2013; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to foundational studies in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "5a020f89-585d-4da4-9990-59458059fd15",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C13",
+      "claim": "Inhibition of TGF-b/SMAD signaling via blockade of AKT kinases has been shown to improve iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of TGF-b/SMAD signaling via blockade of AKT kinases, inhibition of GSK-3b signaling (Ladewig et al., 2012), adenylyl cyclase activation (Liu et al., 2013; Ladewig et al., 2012; Gasc\u00f3n et al., 2016), inhibition of REST (Masserdotti et al., 2015; Xue et al., 2013), induction of canonical Bcl-2 signaling, and inhibition of lipid oxidation pathways via ferroptosis inhibition (Gasc\u00f3n et al., 2016) have all been shown to greatly promote iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "f5b38771-1099-4589-8b07-2c413657267a",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C14",
+      "claim": "Inhibition of GSK-3b signaling has been shown to improve iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of TGF-b/SMAD signaling via blockade of AKT kinases, inhibition of GSK-3b signaling (Ladewig et al., 2012), adenylyl cyclase activation (Liu et al., 2013; Ladewig et al., 2012; Gasc\u00f3n et al., 2016), inhibition of REST (Masserdotti et al., 2015; Xue et al., 2013), induction of canonical Bcl-2 signaling, and inhibition of lipid oxidation pathways via ferroptosis inhibition (Gasc\u00f3n et al., 2016) have all been shown to greatly promote iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ladewig et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "93cb82ef-a770-401d-8b6b-c75198b7a3c8",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C15",
+      "claim": "Adenylyl cyclase activation has been shown to improve iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of TGF-b/SMAD signaling via blockade of AKT kinases, inhibition of GSK-3b signaling (Ladewig et al., 2012), adenylyl cyclase activation (Liu et al., 2013; Ladewig et al., 2012; Gasc\u00f3n et al., 2016), inhibition of REST (Masserdotti et al., 2015; Xue et al., 2013), induction of canonical Bcl-2 signaling, and inhibition of lipid oxidation pathways via ferroptosis inhibition (Gasc\u00f3n et al., 2016) have all been shown to greatly promote iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Liu et al., 2013; Ladewig et al., 2012; Gasc\u00f3n et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "959e8bc9-6143-4b3f-a9a3-f112a9805e4f",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C16",
+      "claim": "Inhibition of REST has been shown to improve iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of TGF-b/SMAD signaling via blockade of AKT kinases, inhibition of GSK-3b signaling (Ladewig et al., 2012), adenylyl cyclase activation (Liu et al., 2013; Ladewig et al., 2012; Gasc\u00f3n et al., 2016), inhibition of REST (Masserdotti et al., 2015; Xue et al., 2013), induction of canonical Bcl-2 signaling, and inhibition of lipid oxidation pathways via ferroptosis inhibition (Gasc\u00f3n et al., 2016) have all been shown to greatly promote iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Masserdotti et al., 2015; Xue et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "49e8b062-af59-441e-90e1-a760c034e3e8",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C17",
+      "claim": "Induction of canonical Bcl-2 signaling has been shown to improve iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of TGF-b/SMAD signaling via blockade of AKT kinases, inhibition of GSK-3b signaling (Ladewig et al., 2012), adenylyl cyclase activation (Liu et al., 2013; Ladewig et al., 2012; Gasc\u00f3n et al., 2016), inhibition of REST (Masserdotti et al., 2015; Xue et al., 2013), induction of canonical Bcl-2 signaling, and inhibition of lipid oxidation pathways via ferroptosis inhibition (Gasc\u00f3n et al., 2016) have all been shown to greatly promote iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated but not directly cited, suggesting it may be from the authors' prior work or general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "dce7e7c8-0bf8-4c20-a40e-63e654694a14",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C18",
+      "claim": "Inhibition of lipid oxidation pathways via ferroptosis inhibition has been shown to improve iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of TGF-b/SMAD signaling via blockade of AKT kinases, inhibition of GSK-3b signaling (Ladewig et al., 2012), adenylyl cyclase activation (Liu et al., 2013; Ladewig et al., 2012; Gasc\u00f3n et al., 2016), inhibition of REST (Masserdotti et al., 2015; Xue et al., 2013), induction of canonical Bcl-2 signaling, and inhibition of lipid oxidation pathways via ferroptosis inhibition (Gasc\u00f3n et al., 2016) have all been shown to greatly promote iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Gasc\u00f3n et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "f0224615-ae26-4ba6-8a9e-572a5cec985c",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C19",
+      "claim": "Known signaling pathway modulators have either been adopted from iPSC differentiation or are the result of educated guessing or trial-and-error experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because these known signaling pathway modulators have either been adopted from iPSC differentiation (Chambers et al., 2009) or are the result of educated guessing or simply of trial-and-error experiments, no systematic efforts have been made to utilize broad and unbiased datasets to identify the pathways and corresponding modulators that orchestrate iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the current state of the field, supported by citation and general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "7a5f9f6b-b43e-4856-b7cc-a443a3c954fc",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C20",
+      "claim": "No systematic efforts have been made to utilize broad and unbiased datasets to identify the pathways and corresponding modulators that orchestrate iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because these known signaling pathway modulators have either been adopted from iPSC differentiation (Chambers et al., 2009) or are the result of educated guessing or simply of trial-and-error experiments, no systematic efforts have been made to utilize broad and unbiased datasets to identify the pathways and corresponding modulators that orchestrate iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in the field that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "f5e1e1fb-86c9-4ef9-8196-9059a6318643",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C21",
+      "claim": "Timeline RNAseq transcriptome analysis over the time course of direct iN conversion discovered four pathways that are instrumental in iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "To that end, we have performed timeline RNAseq transcriptome analysis over the time course of direct iN conversion and have discovered four pathways that are instrumental in iN conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RNA-Seq data and pathway analysis presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "8a96169c-763c-4573-9c01-3ad4a3ddb14c",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C22",
+      "claim": "Four small molecules were identified that could be combined into an improved iN conversion medium, ZPAK, which reliably boosted iN conversion of young and old fibroblasts into epigenetically age-equivalent iNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these pathways, we identified four small molecules that could be combined into an improved iN conversion medium, ZPAK, which reliably boosted iN conversion of young and old fibroblasts into epigenetically age-equivalent iNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data in Figures 2-5, showing improved conversion efficiency and preservation of age-related methylation patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "98b27999-caf4-427c-a67e-f8fd0c27f8a0",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C23",
+      "claim": "UNA-derived iNs exhibited significantly more PSA-NCAM-positive cells than E + N2A, boosting efficiencies by up to 90\u2013100% for two suboptimal fibroblast lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry revealed that UNA-derived iNs exhibited significantly more PSA-NCAM-positive cells than E + N2A, boosting efficiencies by up to 90\u2013100% for the two suboptimal fibroblast lines, but also increasing efficiencies of the lines that already converted well by 30 \u00b1 8% (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by flow cytometry data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "1b9f00d6-840f-49d8-8dcb-0b5f68354a4b",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C24",
+      "claim": "UNA increased conversion efficiencies of fibroblast lines that already converted well by 30 \u00b1 8%.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry revealed that UNA-derived iNs exhibited significantly more PSA-NCAM-positive cells than E + N2A, boosting efficiencies by up to 90\u2013100% for the two suboptimal fibroblast lines, but also increasing efficiencies of the lines that already converted well by 30 \u00b1 8% (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by flow cytometry data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "020af6d4-5be2-48dc-acda-bf333e2c7b49",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C25",
+      "claim": "UNA iNs were on average twice as likely to be positive for NeuN or \u00dfIII-tubulin compared to E+N2A iNs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, immunocytochemical co-staining for the neuronal markers \u00dfIII-tubulin and NeuN revealed that UNA iNs were on average twice as likely to be positive for NeuN or \u00dfIII-tubulin (Figure 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunocytochemical quantification shown in Figure 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "2f2ecea0-08e2-4746-a505-aa0a1bb64621",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C26",
+      "claim": "The use of the single all-in-one lentiviral vector UNA was notably easier and less prone to experimental error compared to a multiple vector strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these experiments, we reasoned that the use of the single all-in-one lentiviral vector UNA was notably easier and less prone to experimental error, as well as significantly more efficient in generating larger numbers of mature iNs compared to a multiple vector strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental design and results, as well as logical reasoning about the advantages of single-vector systems.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "e204aab8-117a-4fd3-a0f5-c5463485ae1f",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C27",
+      "claim": "UNA was significantly more efficient in generating larger numbers of mature iNs compared to a multiple vector strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these experiments, we reasoned that the use of the single all-in-one lentiviral vector UNA was notably easier and less prone to experimental error, as well as significantly more efficient in generating larger numbers of mature iNs compared to a multiple vector strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the quantitative data in Figure 1 showing increased conversion efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "111d4b5c-31f9-43e6-985b-6a50afc01e9d",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C28",
+      "claim": "More than 500 pathways were called to be significantly transcriptionally enriched or depleted (\u22122 > Z Score>2) as conversion proceeded.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Ingenuity Pathway Analysis software tool (IPA; Qiagen Inc), we identified more than 500 pathways called to be significantly transcriptionally enriched or depleted (\u22122 > Z Score>2) as conversion proceeded (Figure 2\u2014source data 1); of these, we selected 10 of the most enriched pathways for further experimental testing (Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational analysis of RNA-Seq data using IPA software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "47285197-4435-4aa4-8961-4895ac646502",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C29",
+      "claim": "Ten of the most enriched pathways were selected for further experimental testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Ingenuity Pathway Analysis software tool (IPA; Qiagen Inc), we identified more than 500 pathways called to be significantly transcriptionally enriched or depleted (\u22122 > Z Score>2) as conversion proceeded (Figure 2\u2014source data 1); of these, we selected 10 of the most enriched pathways for further experimental testing (Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design based on the pathway analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "0bf70c53-b5f3-46d1-84f0-de1644ad3ecc",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C30",
+      "claim": "Four compounds (Pyrintegrin, AZ960, ZM336372, and KC7F2) were found to significantly increase the frequency of PSA-NCAM-positive iNs.",
+      "claim_type": "EXPLICIT",
+      "source": "When screening for PSA-NCAM-positive cells by flow cytometry following 21 days in NC plus the respective compound, four compounds were found to significantly (p<0.05) increase the frequency of PSA-NCAM-positive iNs (Figure 2C\u2013E, Figure 2\u2014source data 2 and Figure 2\u2014figure supplement 1) Interestingly, the compound that acted in the opposite direction decreased iN conversion efficiency (Figure 2C\u2013D, Figure 2\u2014source data 2, and Figure 2\u2014figure supplement 1). These four conversion booster compounds were Pyrintegrin (PY; Integrin activator), AZ960 (AZ; Jak2 inhibitor), ZM336372, (ZM; Raf-1 activator), and KC7F2 (KC; HIF1\u03b1 inhibitor) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry screening data shown in Figure 2C-E and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "3a95db3e-e277-4933-88f0-cf06caf7c611",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C31",
+      "claim": "The compound that acted in the opposite direction decreased iN conversion efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "When screening for PSA-NCAM-positive cells by flow cytometry following 21 days in NC plus the respective compound, four compounds were found to significantly (p<0.05) increase the frequency of PSA-NCAM-positive iNs (Figure 2C\u2013E, Figure 2\u2014source data 2 and Figure 2\u2014figure supplement 1) Interestingly, the compound that acted in the opposite direction decreased iN conversion efficiency (Figure 2C\u2013D, Figure 2\u2014source data 2, and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the screening data showing opposite effects of pathway activation vs. inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "3ef0358e-8ce6-4c4a-a648-40fa0a9756d5",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C32",
+      "claim": "iNs derived in NC plus any of the four compounds (PY, AZ, ZM, KC) resulted in a significant increase in the number of NeuN- and \u00dfIII-tubulin-positive cells compared to those derived in NC medium alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The iNs derived in NC plus any of these four compounds resulted in a significant (p<0.01) increase in the number of NeuN- and \u00dfIII-tubulin-positive cells compared to those derived in NC medium alone (Figure 2F\u2013H, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunocytochemical quantification shown in Figure 2F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "16b60b38-ab09-47e5-845f-3e93138c1e93",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C33",
+      "claim": "The combination of all four compounds (ZPAK) resulted in an even higher iN yield than any of the compounds individually.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the combination of all four compounds (ZPAK) resulted in an even higher iN yield than any of the compounds individually (Figure 2F\u2013H, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative data shown in Figure 2F-H and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "a2da1ca1-b3a1-48a9-a65e-255edfa80d93",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C34",
+      "claim": "The transcriptomes induced by NC or NC+ZPAK were highly correlated, with a Pearson correlation coefficient of \u22650.85 for all sampled time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing FPKM normalized gene counts for the conversion process for both conditions, we detected that the transcriptomes induced by NC or NC+ZPAK were highly correlated, with a Pearson correlation coefficient of \u22650.85 for all sampled time points (Figure 3C), indicating broad transcriptional similarities between the iN process in NC and NC+ZPAK.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis of RNA-Seq data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "44fba58c-ff71-491f-99c8-919b4bfc5490",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C35",
+      "claim": "There is an 80% overlap in the top 100 upregulated genes and 93% overlap in the top 100 downregulated genes between NC and NC+ZPAK conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the top 100 upregulated and top 100 downregulated genes for the conversion process for both conditions, we detected an 80% and 93% overlap, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative gene expression analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "6f978d2b-a409-4d50-9009-dff2b525b611",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C36",
+      "claim": "Glutamatergic neuron-specific genes (UNC13A, CNIH2, GRIN1, GRIK5, GRIK2, SLC17A7) and GABAergic neuron-specific genes (PLCL2, DRD2, CNR1, GAD1) were found to be generally expressed at similar levels in NC and NC+ZPAK at 20 days of conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, glutamatergic neuron-specific genes Unc-13 homolog A (UNC13A), AMPA receptor auxiliary protein 2 (CNIH2), NMDA1 (GRIN1), GluK5 (GRIK5), GluK2 (GRIK2) and vGLUT1 (SLC17A7), and the GABAergic neuron-specific genes phospholipase C like 2 (PLCL2), dopamine receptor D2 (DRD2), cannabinoid receptor 1 (CNR1) and glutamate decarboxylase 1 (GAD1) were found to be generally expressed at similar levels in NC and NC+ZPAK at 20 days of conversion (Figure 3D, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis shown in Figure 3D and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "cf9bbb53-51c3-4457-98f8-d12e30d11646",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C37",
+      "claim": "Markers of dopaminergic, serotonergic, and cholinergic lineages were not consistent in expression and were not commonly observed in D20 iNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Markers of dopaminergic, serotonergic, and cholinergic lineages were not consistent in expression and were not commonly observed in D20 iNs (Figure 3D, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis shown in Figure 3D and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "e040aba1-63e5-4542-b842-75b4c5f1d941",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C38",
+      "claim": "143 genes were significantly differentially expressed between NC and NC+ZPAK time points (padj < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We next performed differential expression analysis between all NC and NC+ZPAK time points, revealing 143 genes that were significantly differentially expressed (Figure 3\u2014source data 1, padj < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on differential expression analysis of RNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "1190a114-12d5-4c1e-8abe-2f652e4db249",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C39",
+      "claim": "Hierarchical clustering demonstrated a clear separation of NC and NC+ZPAK groups except for two NK samples at the earliest point of conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering demonstrated a clear separation of NC and NC+ZPAK groups except for two NK samples at the earliest point of conversion (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on hierarchical clustering analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "bda5ac83-d994-4809-8aa2-37e2ee27f10e",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C40",
+      "claim": "NC+ZPAK showed consistently increased expression of neuron-specific genes NCAM1/2, MNX1, MAP2, and CAMK2 compared to NC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed consistently increased expression of neuron-specific genes NCAM1/2 (Neural Cell Adhesion), MNX1 (Neural Homeobox), MAP2 (Neural Microtubule Protein), and CAMK2 (Central Nervous System Kinase) in NC+ZPAK but lower expression levels of cyclins such as CCND2 (Cyclin D2) as well as the myogenic factors MEF2 (Myocyte Enhancer Factor) and MYOG (Myogenin), which are known to limit fibroblast to neuronal reprogramming, in NC+ZPAK (Figure 3F, Figure 3\u2014figure supplement 3, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis shown in Figure 3F and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "de028fd2-6852-43d4-83ff-9e450dbb99f3",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C41",
+      "claim": "NC+ZPAK showed lower expression levels of cyclins such as CCND2 and myogenic factors MEF2 and MYOG, which are known to limit fibroblast to neuronal reprogramming.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed consistently increased expression of neuron-specific genes NCAM1/2 (Neural Cell Adhesion), MNX1 (Neural Homeobox), MAP2 (Neural Microtubule Protein), and CAMK2 (Central Nervous System Kinase) in NC+ZPAK but lower expression levels of cyclins such as CCND2 (Cyclin D2) as well as the myogenic factors MEF2 (Myocyte Enhancer Factor) and MYOG (Myogenin), which are known to limit fibroblast to neuronal reprogramming, in NC+ZPAK (Figure 3F, Figure 3\u2014figure supplement 3, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis shown in Figure 3F and supplements, combined with knowledge about factors limiting reprogramming.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "5d20cec6-a61d-4157-9d5b-3b17707cb79c",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C42",
+      "claim": "Genes upregulated in NC were only enriched for three neuronal GO terms: Ion transmembrane transport, ion transport, and Trans-synaptic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, gene ontology (GO) enrichment analysis revealed that genes upregulated in NC (log2FC > 1) were only enriched for three neuronal GO terms - GO:0034220 Ion transmembrane transport, GO:0006811 ion transport, and GO:0099537 Trans-synaptic signaling - whereas GO terms enriched in genes upregulated in NC+ZPAK included many GO terms categorized for neural development (GO:0021953 Central Nervous System Neuron Differentiation, GO:0007272/0008366 Ensheathement of Neurons/Axons, GO:0021700 Developmental Maturation), synapse development (GO:0007416 Synapse Assembly, GO:0050808 Synapse Organization, GO:0007268 Chemical Synaptic Transmission), neural activity (GO:0001964 Startle Response), and membrane potential maintenance (GO:0006811,0098660,0006811 Regulation of Ion Transport, Inorganic Ion Transport, Ion Transport) (Figure 3G, Figure 3\u2014figure supplement 1; Supek et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GO enrichment analysis shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "d790f33e-8117-473e-9780-3fdc3caf4449",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C43",
+      "claim": "GO terms enriched in genes upregulated in NC+ZPAK included many terms for neural development, synapse development, neural activity, and membrane potential maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, gene ontology (GO) enrichment analysis revealed that genes upregulated in NC (log2FC > 1) were only enriched for three neuronal GO terms - GO:0034220 Ion transmembrane transport, GO:0006811 ion transport, and GO:0099537 Trans-synaptic signaling - whereas GO terms enriched in genes upregulated in NC+ZPAK included many GO terms categorized for neural development (GO:0021953 Central Nervous System Neuron Differentiation, GO:0007272/0008366 Ensheathement of Neurons/Axons, GO:0021700 Developmental Maturation), synapse development (GO:0007416 Synapse Assembly, GO:0050808 Synapse Organization, GO:0007268 Chemical Synaptic Transmission), neural activity (GO:0001964 Startle Response), and membrane potential maintenance (GO:0006811,0098660,0006811 Regulation of Ion Transport, Inorganic Ion Transport, Ion Transport) (Figure 3G, Figure 3\u2014figure supplement 1; Supek et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GO enrichment analysis shown in Figure 3G and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "f88ba620-f61d-43da-8d4b-3ac7ef4cb61b",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C44",
+      "claim": "NC+ZPAK iNs were more similar to adult brain expression patterns than NC iNs, as assessed by rank-rank hypergeometric overlap (RRHO) test.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RRHO, we observed a pronounced bias in the overlap of NC-ZPAK with adult brain, indicating that, relative to NC, NC-ZPAK iNs were indeed more similar to brain expression patterns (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RRHO analysis comparing iN transcriptomes to adult brain, shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "1a96c2eb-fa99-411b-9673-a1a41f279c40",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C45",
+      "claim": "NC+ZPAK iNs have more spontaneous calcium transients than iNs cultured in NC alone.",
+      "claim_type": "EXPLICIT",
+      "source": "To make a direct comparison of the functional maturity of NC to NC+ZPAK iNs, we performed calcium imaging of NC and NC+ZPAK iNs, revealing that NC+ZPAK iNs have more spontaneous calcium transients than iNs cultured in NC alone (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calcium imaging experiments shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "dcc451f8-9294-460c-8224-06b6d034ac79",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C46",
+      "claim": "Calcium transients have been established as a reliable readout of neural activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "As calcium transients have been established as a reliable readout of neural activity in vitro, this direct comparison between NC and NC+ZPAK iNs provides further evidence that ZPAK is producing a more mature and defined neuronal state (Rosenberg and Spitzer, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rosenberg and Spitzer, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "b771387c-f621-4414-8a85-b88aab6f2261",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C47",
+      "claim": "NC-ZPAK iNs possess a transcriptional profile more closely resembling that of mature neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that NC-ZPAK iNs possess a transcriptional profile more closely resembling that of mature neurons and that the original fibroblast transcriptional program, as well as other non-neuronal directions, were substantially reduced or absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple lines of evidence from the transcriptome analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "01016adc-c995-4d97-988f-c808e5c60741",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C48",
+      "claim": "The original fibroblast transcriptional program and other non-neuronal directions were substantially reduced or absent in NC-ZPAK iNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that NC-ZPAK iNs possess a transcriptional profile more closely resembling that of mature neurons and that the original fibroblast transcriptional program, as well as other non-neuronal directions, were substantially reduced or absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the differential expression analysis and GO enrichment showing reduced expression of fibroblast and myogenic genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "1065527c-94bf-433b-a928-ab5dab14570a",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C49",
+      "claim": "Removal of fibroblasts from the cell cycle has been reported to improve neuronal reprogramming.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of fibroblasts from the cell cycle has been reported to improve neuronal reprogramming (Jiang et al., 2015; Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "ea4c5224-309b-48c7-9a5d-76066841e3ff",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C50",
+      "claim": "IGF1/IGF1R is known to enhance cell cycle entry of fibroblasts and signals through the JAK2 substrate STAT3.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the enrichment of the IGF-1 signaling and the specific transcriptional footprint called by the IPA software, we selected the JAK2 inhibitor AZ as a promising and well-characterized inhibitor, because IGF1/IGF1R is known to enhance cell cycle entry of fibroblasts (Mairet-Coello et al., 2009; Gross and Rotwein, 2016) and signals through the JAK2 substrate STAT3 (Xiong et al., 2014; Nosaka et al., 1999; Zhang and Derynck, 1999) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations to prior mechanistic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "4c0a060a-9e98-4d9f-92e7-2997eee9c4de",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C51",
+      "claim": "Converting fibroblasts cultured in NC showed a decrease in STAT3 within the first six days of conversion, and the addition of AZ strongly promoted this decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Western blot analysis for STAT3 revealed that converting fibroblasts cultured in NC showed a decrease in STAT3 within the first six days of conversion, and the addition of AZ strongly promoted this decrease (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Western blot data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "a93468ac-dd93-4c73-b181-687e14406ba8",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C52",
+      "claim": "Fibroblasts cultured with 0.1 \u03bcM AZ or ZPAK went through significantly fewer divisions than fibroblasts cultured in control medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Using carboxyfluorescein succinimidyl ester (CFSE) to examine cell divisions by flow cytometry, we consistently detected that fibroblasts cultured with 0.1 \u03bcM AZ or ZPAK went through significantly fewer divisions than fibroblasts cultured in control medium (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on CFSE cell division tracking shown in Figure 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "8ef257e9-3c6e-47a1-a994-fabe40338b62",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C53",
+      "claim": "Flow cytometry for DAPI staining did not detect elevated toxicity in AZ-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, flow cytometry for DAPI staining did not detect elevated toxicity in AZ-treated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on flow cytometry analysis assessing cell viability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "1cb4afce-3996-46f5-9f79-026181b0c060",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C54",
+      "claim": "MET machinery plays an important role during direct conversion of fibroblasts to neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "MET machinery plays an important role during direct conversion of fibroblasts to neurons (He et al., 2017), and p-STAT3 dimers directly promote epithelial-to-mesenchymal transition (EMT)-related gene expression (Wendt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to He et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "d2678bc7-6341-4b9c-b833-22584e96b126",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C55",
+      "claim": "p-STAT3 dimers directly promote epithelial-to-mesenchymal transition (EMT)-related gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "MET machinery plays an important role during direct conversion of fibroblasts to neurons (He et al., 2017), and p-STAT3 dimers directly promote epithelial-to-mesenchymal transition (EMT)-related gene expression (Wendt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wendt et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "d8c49182-6a25-47b1-ae53-df597521b5cf",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C56",
+      "claim": "Perturbations in STAT3 signaling have been linked to MET.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbations in STAT3 signaling have been linked to MET (Zhang et al., 2014; Renjini et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhang et al., 2014 and Renjini et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "4e000a9e-d8cf-45e0-8c25-832509caa0f0",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C57",
+      "claim": "AZ induced a more rapid switch towards E-Cadherin during iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we monitored the E-Cadherin to N-Cadherin switch during iN conversion in NC and in NC + AZ (Nakajima et al., 2004; Lamouille et al., 2014) and found that AZ induced a more rapid switch towards E-Cadherin (Figure 4D), a switch that is a classic hallmark of MET (Scarpa et al., 2015; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis of E-Cadherin and N-Cadherin shown in Figure 4E (note: text says 4D but likely refers to 4E based on figure).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "6a4501de-fcc5-4b44-8bb7-7e79f30c8eb2",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C58",
+      "claim": "The E-Cadherin to N-Cadherin switch is a classic hallmark of MET.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we monitored the E-Cadherin to N-Cadherin switch during iN conversion in NC and in NC + AZ (Nakajima et al., 2004; Lamouille et al., 2014) and found that AZ induced a more rapid switch towards E-Cadherin (Figure 4D), a switch that is a classic hallmark of MET (Scarpa et al., 2015; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Scarpa et al., 2015 and Zhang et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "bf8410f2-4424-470b-aaf4-443ff23bd88c",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C59",
+      "claim": "Both PY and ZM produced significantly increased neuronal complexity scores.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine which ZPAK molecules primarily facilitate these structural modifications, we used \u00dfIII-tubulin-based tracing and scoring to assess the neuronal complexities of iN cultures derived in NC containing either PY, ZM, AZ, or KC; we found that both PY and ZM produced significantly increased complexity scores (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Neurolucida tracing and complexity scoring shown in Figure 4F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "9b461895-16ee-4f99-b0c4-e99e7aa5dc26",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C60",
+      "claim": "PY was shown previously to promote integrin \u03b21 stability and signaling of human pluripotent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PY was shown previously to promote integrin \u03b21 stability and signaling of human pluripotent stem cells (Xu et al., 2010), and we reasoned that PY also enhanced integrin-dependent attachment to extracellular matrices of iNs, thereby promoting neurite outgrowth and interactions (Figure 4G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xu et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "98fb4dc2-33b3-4b86-b1fc-b047938a64b3",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C61",
+      "claim": "PY enhanced integrin-dependent attachment to extracellular matrices of iNs, thereby promoting neurite outgrowth and interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PY was shown previously to promote integrin \u03b21 stability and signaling of human pluripotent stem cells (Xu et al., 2010), and we reasoned that PY also enhanced integrin-dependent attachment to extracellular matrices of iNs, thereby promoting neurite outgrowth and interactions (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on prior knowledge about PY and the observed increase in neuronal complexity.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "513abda3-7e97-4018-9604-ed79d53c67c2",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C62",
+      "claim": "Fibroblasts cultured with ZM or PY for 48 hr showed a marked increase in phalloidin signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we stained fibroblasts cultured with ZM or PY for 48 hr with fluorescent phalloidin, which revealed a marked increase in phalloidin signal by ZM and also a significant increase by PY (Figure 4H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phalloidin staining and quantification shown in Figure 4I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "47163dde-1239-4250-8db5-04d477c5abe4",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C63",
+      "claim": "Raf-1 activation and actin polymerizations play roles in organizing cytoskeletal shape and neuronal morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the reported roles of Raf-1 activation and actin polymerizations in organizing cytoskeletal shape and neuronal morphology (Ehrenreiter et al., 2005; Hsueh, 2012; Bosch et al., 2014), and they suggest that ZM and PY promote morphological rearrangements that occur during direct neuronal reprogramming by different but overlapping means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ehrenreiter et al., 2005; Hsueh, 2012; Bosch et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "abb11c4e-28b2-4917-8ddb-29600be66cfa",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C64",
+      "claim": "ZM and PY promote morphological rearrangements that occur during direct neuronal reprogramming by different but overlapping means.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the reported roles of Raf-1 activation and actin polymerizations in organizing cytoskeletal shape and neuronal morphology (Ehrenreiter et al., 2005; Hsueh, 2012; Bosch et al., 2014), and they suggest that ZM and PY promote morphological rearrangements that occur during direct neuronal reprogramming by different but overlapping means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "c16bfb4a-8907-4c6b-bf77-ca9c0f694273",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C65",
+      "claim": "HIF1\u03b1 has been reported to be one of the top downregulated factors during direct neuronal conversion from a variety of originating cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our timeline transcriptome data, the transcription factor HIF1\u03b1 has been reported to be one of the top downregulated factors during direct neuronal conversion from a variety of originating cell types (Omrani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Omrani et al., 2018 and is consistent with the authors' RNA-Seq data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "c74e48a9-120d-4645-bf7d-e27b29d496c8",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C66",
+      "claim": "Increased oxidative phosphorylation is a hallmark of neuronal identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased oxidative phosphorylation is a hallmark of neuronal identity, and glycolysis has been reported to limit neural reprogramming in many protocols (Zheng et al., 2016; Gasc\u00f3n et al., 2016; Agostini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zheng et al., 2016; Gasc\u00f3n et al., 2016; Agostini et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "e0b7ec59-dfe4-456a-a4d6-e4a37ab61cfc",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C67",
+      "claim": "Glycolysis has been reported to limit neural reprogramming in many protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased oxidative phosphorylation is a hallmark of neuronal identity, and glycolysis has been reported to limit neural reprogramming in many protocols (Zheng et al., 2016; Gasc\u00f3n et al., 2016; Agostini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zheng et al., 2016; Gasc\u00f3n et al., 2016; Agostini et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "77c976f1-840e-4d48-acaa-ce1adb3ca359",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C68",
+      "claim": "HIF1\u03b1 is a major inhibitor of oxidative phosphorylation (OXPHOS) and a mediator of glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As HIF1\u03b1 is a major inhibitor of oxidative phosphorylation (OXPHOS) and a mediator of glycolysis, we hypothesized that KC, a HIF1\u03b1 inhibitor, improved iN conversion by facilitating OXPHOS (Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on established knowledge about HIF1\u03b1 function in cellular metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "714c2d1e-1678-4a2b-9be1-dddf0b7e5011",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C69",
+      "claim": "Cultures at one, two and three weeks of conversion had higher mitochondrial membrane potentials in the presence of KC at all time points and significantly higher by week three.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the JC1 dye, a cationic dye that accumulates in energized mitochondria with high membrane potentials (Smiley et al., 1991), we found that cultures at one, two and three weeks of conversion had higher mitochondrial membrane potentials in the presence of KC at all time points and significantly higher mitochondrial membrane potentials by week three (Figure 4K, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on JC-1 dye measurements shown in Figure 4L and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "96e48f4a-2fa5-4fe7-8c94-09bf0a6a3a49",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C70",
+      "claim": "Age-dependent DNA methylation of CpGs has been shown to be preserved in iNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other global aging features, age-dependent DNA methylation of CpGs has been shown to be preserved in iNs (Huh et al., 2016) and reverts to a predicted prenatal age even in iPSCs from donors older then 90 years of age (Lo Sardo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Huh et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "8fb635ff-6eaf-4e80-bdca-05fb00b88dc0",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C71",
+      "claim": "Age-dependent DNA methylation reverts to a predicted prenatal age even in iPSCs from donors older than 90 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other global aging features, age-dependent DNA methylation of CpGs has been shown to be preserved in iNs (Huh et al., 2016) and reverts to a predicted prenatal age even in iPSCs from donors older then 90 years of age (Lo Sardo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lo Sardo et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "ea3f4a97-5dbf-4675-b45c-a05f3fa08f84",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C72",
+      "claim": "A clear difference in CpG methylation patterns was observed between young and old donors, with middle-age donors showing an intermediate pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the top 5000 differentially methylated regions identified using ChAMP (Morris et al., 2014), we observed a clear difference between young and old donors, with middle-age donors showing an intermediate age-dependent CpG methylation pattern (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on methylation array analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "0b80fb0a-64df-43f5-be9d-6692c40d330e",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C73",
+      "claim": "The methylation patterns of young and old NC+ZPAK iNs were largely unchanged compared to their parental fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the methylation patterns of the young and old NC+ZPAK iNs were largely unchanged compared to their parental fibroblasts (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative methylation analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "22270313-4462-4fbf-a991-d9a5810e708b",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C74",
+      "claim": "Principal component analysis based on all 850,000 CpGs clearly separated the samples with respect to their age as the strongest component.",
+      "claim_type": "EXPLICIT",
+      "source": "To apportion the majority of the variation, principal component analysis (PCA) based on all 850,000 CpGs consistently clearly separated the samples with respect to their age as the strongest component (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on PCA analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "20bec0d0-dfb9-42f3-b6fa-406f0e17c5ba",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C75",
+      "claim": "Age-dependent DNA methylation patterns are maintained during ZPAK-assisted iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that age-dependent DNA methylation patterns are maintained during ZPAK-assisted iN conversion and that NC + PAKZ is suitable to efficiently generate human neuronal models that recapitulate age-associated epigenetic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the methylation array data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "0d48fa18-c354-443f-a1eb-10ed7042e64a",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C76",
+      "claim": "NC + ZPAK is suitable to efficiently generate human neuronal models that recapitulate age-associated epigenetic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that age-dependent DNA methylation patterns are maintained during ZPAK-assisted iN conversion and that NC + PAKZ is suitable to efficiently generate human neuronal models that recapitulate age-associated epigenetic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the combined data showing preserved age-related methylation and improved conversion efficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "f9d83cbd-2059-4589-a100-c6fbcd14c0b2",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C77",
+      "claim": "ZPAK causes a more thorough elimination of competing fibroblast programs on the transcriptional level than classic medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that ZPAK causes a more thorough elimination of competing fibroblast programs on the transcriptional level than classic medium, as represented by both upregulation of neuron-specific genes and, importantly, downregulation of myogenic and fibroblast-specific genes known to limit neuronal specification during late reprogramming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the differential expression analysis and GO enrichment data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "f8544f7a-4ab6-4a81-bcb6-1ced098a86b3",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C78",
+      "claim": "Transcriptional changes in ZPAK are accompanied by removal of cells from the cell cycle, increased mitochondrial membrane potential, increased GCAMP activity, and enhanced mesenchymal to epithelial plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "These transcriptional changes are accompanied by other important phenotypes associated with neuronal fate, including removal of cells from the cell cycle, increased mitochondrial membrane potential, increased GCAMP activity, and enhanced mesenchymal to epithelial plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of multiple experimental findings presented in Figure 4 and Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "529310da-9eda-4e19-a175-2b2c9b89afef",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C79",
+      "claim": "Cytoskeleton remodeling plays an important role during somatic cell reprogramming.",
+      "claim_type": "EXPLICIT",
+      "source": "There has also been an increased recognition of the important role of cytoskeleton remodeling during somatic cell reprogramming (Sakurai et al., 2014; Guo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sakurai et al., 2014 and Guo et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "8a07f568-6d2d-4ca4-9257-a1b0b6a7b5a8",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C80",
+      "claim": "The actin cytoskeleton can sense and respond to sheer stresses with apoptotic signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoskeleton remodeling is associated with sheer stress, and the actin cytoskeleton can sense and respond to these stresses with apoptotic signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about cytoskeleton function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "6b549a7c-b248-4a46-b635-6cc00d591e2d",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C81",
+      "claim": "The inclusion of ZM and PY in direct neuronal reprogramming could promote cytoskeleton reorganization and spare converting fibroblasts from mechanical stress-induced apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that the inclusion of ZM and PY in direct neuronal reprogramming could promote cytoskeleton reorganization and spare converting fibroblasts from mechanical stress-induced apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observed effects of ZM and PY on F-actin and neuronal complexity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "fd83354e-fd4f-4261-a8ee-1673ec492b25",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C82",
+      "claim": "Classic direct conversion protocols are highly inefficient and fail to successfully reprogram the majority of input cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Classic direct conversion protocols, which we and others have used to differentiate fibroblasts to mature human neurons, are highly inefficient and fail to successfully reprogram the majority of input cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about the limitations of current iN protocols.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "251f0e91-6608-44c3-a419-97c276973196",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C83",
+      "claim": "A significant heterogeneity exists in the reprogrammed pool, with many cells existing in a state that is not quite fibroblast, not quite neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a significant heterogeneity exists in the reprogrammed pool, with many cells existing in a state that is not quite fibroblast, not quite neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about incomplete reprogramming in current protocols.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "b9a00c62-5d87-4020-9a23-b6e6923ccf2b",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C84",
+      "claim": "New phenotypes might be revealed from studying neurons in conditions that more thoroughly commit fibroblasts to neuronal fate specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many relevant phenotypes have been found between patient and control neuronal cultures reprogrammed in currently used media, we predict that new phenotypes might be revealed from studying neurons in conditions that more thoroughly commit fibroblasts to neuronal fate specification and, in turn, might lead to the discovery of more effective treatments for neurological disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "d9e5eca8-6429-4dbf-a644-5d30ee159b59",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C85",
+      "claim": "Using culture conditions that completely commit fibroblasts to the neuronal lineage will result in an increased therapeutic potential of iNs for possible neuronal replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, as iNs have shown promise in cell replacement therapies, we propose that using culture conditions that completely commit fibroblasts to the neuronal lineage will result in an increased therapeutic potential of iNs for possible neuronal replacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "85a8e9e5-7f44-42ac-8a83-4d7e3e0a6df7",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C86",
+      "claim": "ZPAK improves iN yields even at very late fibroblast passages that could be required to produce therapeutic numbers of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ZPAK improves iN yields even at very late fibroblast passages that could be required to produce therapeutic numbers of cells (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "d4f040ff-4ee7-4e02-b09a-a1a1c6c7fa4b",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C87",
+      "claim": "Lentiviral delivery of pro-neuronal transcription factors is the most widely used technique for direct iN conversion due to its outstanding efficiency and relative ease to use.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentiviral delivery of pro-neuronal transcription factors is the most widely used technique for direct iN conversion due to its outstanding efficiency and relative ease to use (Parr-Brownlie et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Parr-Brownlie et al., 2015 and general knowledge of the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "76daa752-abbb-43ac-8ae8-221ec2d85f0f",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C88",
+      "claim": "Dox-induced expression of Neurog2 and Ascl1 was maintained for all 20 days of conversion with NC and NC+ZPAK.",
+      "claim_type": "EXPLICIT",
+      "source": "Dox-induced expression of Neurog2 and Ascl1 was maintained for all 20 days of conversion with NC and NC+ZPAK.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "2c378fc9-94d0-4e74-abcd-06579d7dd2ee",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C89",
+      "claim": "More than 500 pathways were identified as significantly transcriptionally enriched or depleted during iN conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Ingenuity Pathway Analysis software tool (IPA; Qiagen Inc), we identified more than 500 pathways called to be significantly transcriptionally enriched or depleted (\u22122 > Z Score>2) as conversion proceeded (Figure 2\u2014source data 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on IPA analysis of the timeline RNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "61d3c0eb-ce40-458b-9c2c-3c2f80c668db",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C90",
+      "claim": "Pyrintegrin (PY) is an Integrin activator.",
+      "claim_type": "EXPLICIT",
+      "source": "These four conversion booster compounds were Pyrintegrin (PY; Integrin activator), AZ960 (AZ; Jak2 inhibitor), ZM336372, (ZM; Raf-1 activator), and KC7F2 (KC; HIF1\u03b1 inhibitor) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a characterization of the compound based on its known mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "082082df-2259-4662-9075-a87c038ee805",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C91",
+      "claim": "AZ960 (AZ) is a Jak2 inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "These four conversion booster compounds were Pyrintegrin (PY; Integrin activator), AZ960 (AZ; Jak2 inhibitor), ZM336372, (ZM; Raf-1 activator), and KC7F2 (KC; HIF1\u03b1 inhibitor) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a characterization of the compound based on its known mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "84351411-41ed-4184-8c5c-5e1e35964312",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C92",
+      "claim": "ZM336372 (ZM) is a Raf-1 activator.",
+      "claim_type": "EXPLICIT",
+      "source": "These four conversion booster compounds were Pyrintegrin (PY; Integrin activator), AZ960 (AZ; Jak2 inhibitor), ZM336372, (ZM; Raf-1 activator), and KC7F2 (KC; HIF1\u03b1 inhibitor) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a characterization of the compound based on its known mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "a95c5cde-5085-4871-a829-9baeee032b24",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C93",
+      "claim": "KC7F2 (KC) is a HIF1\u03b1 inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "These four conversion booster compounds were Pyrintegrin (PY; Integrin activator), AZ960 (AZ; Jak2 inhibitor), ZM336372, (ZM; Raf-1 activator), and KC7F2 (KC; HIF1\u03b1 inhibitor) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a characterization of the compound based on its known mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "2ee9c787-ed52-44ee-b868-794621283ad6",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "claim_id": "C94",
+      "claim": "The UNA construct combines the tetOn system cassette, the iN cassette, and a puromycin-resistance gene.",
+      "claim_type": "EXPLICIT",
+      "source": "To eliminate the need for co-infection, we combined the tetOn system cassette consisting of the rtTAAdv. [Clonech] driven by the UbC promoter, the iN cassette consisting of Ngn2:2A:Ascl1 under control of the TREtight promoter [Clontech], and a puromycin-resistance gene driven by the PGK promoter to yield the UNA construct (Figure 1A, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the design of the UNA construct shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f0625c84-b44a-481a-a836-1ebfa0b2a9b7",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The UNA all-in-one lentiviral system simplifies transgenesis and significantly improves iN conversion efficiency compared to the two-vector E+N2A system, increasing PSA-NCAM+ cells by 90-100% in suboptimal lines and 30\u00b18% in optimal lines, with doubled NeuN/\u03b2III-tubulin positivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C23-C27, and C94 collectively demonstrate that the UNA system improves conversion efficiency through flow cytometry (C23-C24) and immunocytochemistry (C25), with the construct design described in C94. The data in Figure 1D-H provide quantitative support with appropriate statistical comparisons across multiple cell lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "1e5659ac-66ba-4187-826f-22b47da416e1",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Timeline RNA-Seq analysis identified over 500 significantly enriched or depleted pathways during iN conversion, from which 10 pathways were selected for experimental validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C21, C28-C29, and C89 describe the RNA-Seq pathway analysis using IPA software with appropriate statistical thresholds (Z-score \u00b12). The methodology is sound and the pathway identification is supported by Figure 2A-B and source data, though the specific criteria for selecting the 10 pathways for testing could be more explicit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "af15fd77-0143-4ea5-a53a-7df52f81efc7",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Four small molecule pathway modulators (Pyrintegrin, AZ960, ZM336372, KC7F2) were identified that significantly increase iN conversion, with their combination (ZPAK) producing higher yields than individual compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C22, C30-C33, and C90-C93 are well-supported by flow cytometry (Figure 2C-E) and immunocytochemistry (Figure 2F-H) data showing significant increases (p<0.05 for PSA-NCAM, p<0.01 for NeuN/\u03b2III-tubulin). The synergistic effect of ZPAK is demonstrated in Figure 2\u2014figure supplement 3, though dose-response optimization appears empirical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "926821d3-7260-40c8-8619-4faf40e18e14",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NC and NC+ZPAK conditions produce highly correlated transcriptomes (Pearson r\u22650.85) with 80-93% overlap in top differentially expressed genes and similar expression of glutamatergic and GABAergic markers, but not dopaminergic, serotonergic, or cholinergic markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are supported by correlation analysis (Figure 3C), gene overlap analysis (Figure 3B), and marker expression heatmaps (Figure 3D). The high correlation indicates ZPAK preserves the fundamental neuronal conversion trajectory while enhancing efficiency. The lack of monoaminergic markers is appropriately noted as inconsistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "7b5ca12d-dbfd-4cb1-b999-7a2a3f8cc043",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NC+ZPAK shows 143 significantly differentially expressed genes compared to NC, with increased neuronal genes (NCAM1/2, MNX1, MAP2, CAMK2) and decreased fibroblast-limiting genes (CCND2, MEF2, MYOG).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 and C77 are supported by differential expression analysis (padj<0.05) shown in Figure 3E-F and supplements. The hierarchical clustering (C39) shows clear separation except at early timepoints, which is biologically reasonable. The downregulation of myogenic factors is particularly important and validated by MYH3 staining in Figure 3\u2014figure supplement 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "9447ae31-73df-4895-8740-03e410ae390a",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NC+ZPAK iNs show enrichment for neural development, synapse development, and neural activity GO terms, more closely resemble adult brain transcriptomes by RRHO analysis, and have reduced fibroblast/non-neuronal programs compared to NC alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44, C47-C48 are supported by GO enrichment analysis (Figure 3G) and RRHO comparison to adult brain (Figure 3H). The threshold-free RRHO approach is appropriate for assessing brain-like transcriptional profiles. However, the conclusion about 'mature neurons' (C47) may be overstated as the comparison is to adult brain tissue, not pure mature neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "296adc85-f496-489d-be3e-2a29ca78a0c0",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NC+ZPAK iNs exhibit more spontaneous calcium transients than NC iNs, indicating increased functional maturity and neural activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 and C78 are supported by calcium imaging data (Figure 3\u2014figure supplement 5) showing significantly increased spontaneous activity. The use of calcium transients as a functional readout is well-established (C46, citing Rosenberg & Spitzer 2011). However, sample size and statistical details for the calcium imaging are not fully specified in the methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AZ960 (JAK2 inhibitor) removes fibroblasts from the cell cycle by reducing STAT3 levels and promotes mesenchymal-to-epithelial transition (MET) as evidenced by accelerated E-cadherin/N-cadherin switching and reduced cell divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C58 form a mechanistic chain supported by Western blot (Figure 4B), CFSE proliferation assay (Figure 4C-D), and cadherin flow cytometry (Figure 4E). The connection between JAK2/STAT3 signaling and both cell cycle and MET is well-supported by citations (C50, C54-C56). However, the cadherin data reference Figure 4D in text but likely refers to 4E based on figure layout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "3a5cba20-e2ff-4238-923b-58c0a1bf71e8",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PY (integrin activator) and ZM (Raf-1 activator) significantly increase neuronal morphological complexity through enhanced F-actin polymerization and integrin-mediated ECM attachment, promoting cytoskeletal reorganization during reprogramming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 are supported by Neurolucida complexity scoring (Figure 4F-G) and phalloidin staining (Figure 4I-J). The mechanistic interpretation linking PY to integrin signaling (C60-C61) and ZM to Raf-1/actin (C62-C64) is reasonable and supported by citations, though C61 is partly inferential. The proposal of overlapping mechanisms is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "d0272073-2ebd-4f24-977d-feeea5fd4a48",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "KC7F2 (HIF1\u03b1 inhibitor) promotes oxidative phosphorylation during iN conversion by inhibiting glycolysis, resulting in significantly increased mitochondrial membrane potential by week three of conversion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 are supported by JC-1 mitochondrial membrane potential measurements (Figure 4L and supplement 1). The mechanistic rationale linking HIF1\u03b1 to glycolysis/OXPHOS balance is well-established (C66-C68). However, statistical significance is only reached at week 3, and the earlier timepoints show trends without significance, which should be noted more clearly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "8f4c8a93-c98c-437d-9406-8f7e6483022b",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Age-dependent DNA methylation patterns are preserved during ZPAK-assisted iN conversion, with young and old iNs maintaining methylation profiles similar to their parental fibroblasts, making NC+ZPAK suitable for modeling age-associated changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76 are supported by methylation array analysis of 850,000 CpG sites (Figure 5A-B). The preservation of age-related methylation is demonstrated by heatmap clustering and PCA, with age as the primary component. This is a critical validation that ZPAK does not induce rejuvenation like iPSC reprogramming. However, only 2 young, 2 middle, and 2 old samples were analyzed, limiting statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "eedb611d-2d8c-4f20-8cd7-e2a592cfb098",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ZPAK improves iN yields even at very late fibroblast passages (>30) that would be required for therapeutic cell production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 is supported by data in Figure 5\u2014figure supplement 1 showing maintained improvement at late passages with senescence marker staining. This addresses a practical concern for therapeutic applications, though only 4 lines were tested and the magnitude of improvement at late passage is not quantified relative to early passage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "28e07c61-0a0e-4e35-abfa-65bbbdbb4c2e",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Direct iN conversion bypasses pluripotency, preserves donor age signatures, enables various neuronal subtypes, and has therapeutic potential, but yields depend on conversion efficiency due to lack of proliferative intermediates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C12 provide background context well-supported by citations to foundational literature. These establish the rationale for the study but are not novel findings. The logical connection between lack of proliferation and efficiency dependence (C11) is sound and motivates the optimization efforts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "bef16579-3b43-42f2-b6c3-80f9d1bd17a6",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Previous iN improvements involved various pathway modulators (TGF-\u03b2/SMAD, GSK-3\u03b2, adenylyl cyclase, REST, Bcl-2, ferroptosis inhibition) but were based on iPSC differentiation knowledge or trial-and-error rather than systematic pathway analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C20 accurately characterize prior work through appropriate citations and identify the gap (C20) that motivates the current systematic approach. However, C17 (Bcl-2 signaling) lacks a direct citation, suggesting it may be from authors' unpublished work or general knowledge, which should be clarified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "39dca6e7-e902-4571-9a74-681976730847",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Current iN protocols are inefficient with heterogeneous outcomes, but improved protocols like ZPAK may reveal new disease phenotypes and enhance therapeutic potential for neuronal replacement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2-C3 and C82-C85 mix established limitations (C3, C82-C83) with speculative future applications (C2, C84-C85). While the limitations are well-documented, the predictions about revealing new phenotypes (C84) and therapeutic potential (C85) are speculative and not directly tested in this study. These represent reasonable hypotheses but lack experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "1bc80d53-622f-43f6-bc1d-6d46af41e221",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cytoskeleton remodeling plays an important role in reprogramming, and ZM/PY may spare converting cells from mechanical stress-induced apoptosis by promoting reorganization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C81 combine established knowledge (C79, supported by citations) with mechanistic speculation (C81). While the increased F-actin and complexity are demonstrated, the specific hypothesis about sparing cells from stress-induced apoptosis (C81) is not directly tested. No apoptosis assays or stress measurements are presented to support this mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    },
+    {
+      "id": "9f2a4597-1729-41cf-bace-441c297c16ef",
+      "content_id": "ca9fb132-1c88-4676-b296-645ad57c38f4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Lentiviral delivery is the most widely used iN technique, and Ngn2/Ascl1 expression was maintained throughout the 20-day conversion period in both NC and NC+ZPAK conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 provide methodological validation. C87 is supported by citation and field knowledge. C88 is demonstrated in Figure 1\u2014figure supplement 1, confirming that ZPAK does not affect transgene expression levels, which is important for interpreting the results as pathway-specific effects rather than transcription factor dosage effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:13:19.939380Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4a09401c-475f-456f-bf47-0b4a34436902",
+      "result_id": "f0625c84-b44a-481a-a836-1ebfa0b2a9b7"
+    },
+    {
+      "claim_id": "98b27999-caf4-427c-a67e-f8fd0c27f8a0",
+      "result_id": "f0625c84-b44a-481a-a836-1ebfa0b2a9b7"
+    },
+    {
+      "claim_id": "1b9f00d6-840f-49d8-8dcb-0b5f68354a4b",
+      "result_id": "f0625c84-b44a-481a-a836-1ebfa0b2a9b7"
+    },
+    {
+      "claim_id": "020af6d4-5be2-48dc-acda-bf333e2c7b49",
+      "result_id": "f0625c84-b44a-481a-a836-1ebfa0b2a9b7"
+    },
+    {
+      "claim_id": "2f2ecea0-08e2-4746-a505-aa0a1bb64621",
+      "result_id": "f0625c84-b44a-481a-a836-1ebfa0b2a9b7"
+    },
+    {
+      "claim_id": "e204aab8-117a-4fd3-a0f5-c5463485ae1f",
+      "result_id": "f0625c84-b44a-481a-a836-1ebfa0b2a9b7"
+    },
+    {
+      "claim_id": "2ee9c787-ed52-44ee-b868-794621283ad6",
+      "result_id": "f0625c84-b44a-481a-a836-1ebfa0b2a9b7"
+    },
+    {
+      "claim_id": "0c3269eb-04e5-4929-8b2c-0adb5b25cd95",
+      "result_id": "1e5659ac-66ba-4187-826f-22b47da416e1"
+    },
+    {
+      "claim_id": "f5e1e1fb-86c9-4ef9-8196-9059a6318643",
+      "result_id": "1e5659ac-66ba-4187-826f-22b47da416e1"
+    },
+    {
+      "claim_id": "111d4b5c-31f9-43e6-985b-6a50afc01e9d",
+      "result_id": "1e5659ac-66ba-4187-826f-22b47da416e1"
+    },
+    {
+      "claim_id": "47285197-4435-4aa4-8961-4895ac646502",
+      "result_id": "1e5659ac-66ba-4187-826f-22b47da416e1"
+    },
+    {
+      "claim_id": "2c378fc9-94d0-4e74-abcd-06579d7dd2ee",
+      "result_id": "1e5659ac-66ba-4187-826f-22b47da416e1"
+    },
+    {
+      "claim_id": "12859743-dcfc-42b9-bd14-0e3f5271e17f",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "8a96169c-763c-4573-9c01-3ad4a3ddb14c",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "0bf70c53-b5f3-46d1-84f0-de1644ad3ecc",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "3a95db3e-e277-4933-88f0-cf06caf7c611",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "3ef0358e-8ce6-4c4a-a648-40fa0a9756d5",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "16b60b38-ab09-47e5-845f-3e93138c1e93",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "61d3c0eb-ce40-458b-9c2c-3c2f80c668db",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "082082df-2259-4662-9075-a87c038ee805",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "84351411-41ed-4184-8c5c-5e1e35964312",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "a95c5cde-5085-4871-a829-9baeee032b24",
+      "result_id": "af15fd77-0143-4ea5-a53a-7df52f81efc7"
+    },
+    {
+      "claim_id": "a2da1ca1-b3a1-48a9-a65e-255edfa80d93",
+      "result_id": "926821d3-7260-40c8-8619-4faf40e18e14"
+    },
+    {
+      "claim_id": "44fba58c-ff71-491f-99c8-919b4bfc5490",
+      "result_id": "926821d3-7260-40c8-8619-4faf40e18e14"
+    },
+    {
+      "claim_id": "6f978d2b-a409-4d50-9009-dff2b525b611",
+      "result_id": "926821d3-7260-40c8-8619-4faf40e18e14"
+    },
+    {
+      "claim_id": "cf9bbb53-51c3-4457-98f8-d12e30d11646",
+      "result_id": "926821d3-7260-40c8-8619-4faf40e18e14"
+    },
+    {
+      "claim_id": "e040aba1-63e5-4542-b842-75b4c5f1d941",
+      "result_id": "7b5ca12d-dbfd-4cb1-b999-7a2a3f8cc043"
+    },
+    {
+      "claim_id": "1190a114-12d5-4c1e-8abe-2f652e4db249",
+      "result_id": "7b5ca12d-dbfd-4cb1-b999-7a2a3f8cc043"
+    },
+    {
+      "claim_id": "bda5ac83-d994-4809-8aa2-37e2ee27f10e",
+      "result_id": "7b5ca12d-dbfd-4cb1-b999-7a2a3f8cc043"
+    },
+    {
+      "claim_id": "de028fd2-6852-43d4-83ff-9e450dbb99f3",
+      "result_id": "7b5ca12d-dbfd-4cb1-b999-7a2a3f8cc043"
+    },
+    {
+      "claim_id": "f9d83cbd-2059-4589-a100-c6fbcd14c0b2",
+      "result_id": "7b5ca12d-dbfd-4cb1-b999-7a2a3f8cc043"
+    },
+    {
+      "claim_id": "5d20cec6-a61d-4157-9d5b-3b17707cb79c",
+      "result_id": "9447ae31-73df-4895-8740-03e410ae390a"
+    },
+    {
+      "claim_id": "d790f33e-8117-473e-9780-3fdc3caf4449",
+      "result_id": "9447ae31-73df-4895-8740-03e410ae390a"
+    },
+    {
+      "claim_id": "f88ba620-f61d-43da-8d4b-3ac7ef4cb61b",
+      "result_id": "9447ae31-73df-4895-8740-03e410ae390a"
+    },
+    {
+      "claim_id": "b771387c-f621-4414-8a85-b88aab6f2261",
+      "result_id": "9447ae31-73df-4895-8740-03e410ae390a"
+    },
+    {
+      "claim_id": "01016adc-c995-4d97-988f-c808e5c60741",
+      "result_id": "9447ae31-73df-4895-8740-03e410ae390a"
+    },
+    {
+      "claim_id": "1a96c2eb-fa99-411b-9673-a1a41f279c40",
+      "result_id": "296adc85-f496-489d-be3e-2a29ca78a0c0"
+    },
+    {
+      "claim_id": "dcc451f8-9294-460c-8224-06b6d034ac79",
+      "result_id": "296adc85-f496-489d-be3e-2a29ca78a0c0"
+    },
+    {
+      "claim_id": "f8544f7a-4ab6-4a81-bcb6-1ced098a86b3",
+      "result_id": "296adc85-f496-489d-be3e-2a29ca78a0c0"
+    },
+    {
+      "claim_id": "1065527c-94bf-433b-a928-ab5dab14570a",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "ea4c5224-309b-48c7-9a5d-76066841e3ff",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "4c0a060a-9e98-4d9f-92e7-2997eee9c4de",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "a93468ac-dd93-4c73-b181-687e14406ba8",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "8ef257e9-3c6e-47a1-a994-fabe40338b62",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "1cb4afce-3996-46f5-9f79-026181b0c060",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "d2678bc7-6341-4b9c-b833-22584e96b126",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "d8c49182-6a25-47b1-ae53-df597521b5cf",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "4e000a9e-d8cf-45e0-8c25-832509caa0f0",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "6a4501de-fcc5-4b44-8bb7-7e79f30c8eb2",
+      "result_id": "c958a9bb-9e0d-48e8-b463-9e00b6bfd41c"
+    },
+    {
+      "claim_id": "bf8410f2-4424-470b-aaf4-443ff23bd88c",
+      "result_id": "3a5cba20-e2ff-4238-923b-58c0a1bf71e8"
+    },
+    {
+      "claim_id": "9b461895-16ee-4f99-b0c4-e99e7aa5dc26",
+      "result_id": "3a5cba20-e2ff-4238-923b-58c0a1bf71e8"
+    },
+    {
+      "claim_id": "98fb4dc2-33b3-4b86-b1fc-b047938a64b3",
+      "result_id": "3a5cba20-e2ff-4238-923b-58c0a1bf71e8"
+    },
+    {
+      "claim_id": "513abda3-7e97-4018-9604-ed79d53c67c2",
+      "result_id": "3a5cba20-e2ff-4238-923b-58c0a1bf71e8"
+    },
+    {
+      "claim_id": "47163dde-1239-4250-8db5-04d477c5abe4",
+      "result_id": "3a5cba20-e2ff-4238-923b-58c0a1bf71e8"
+    },
+    {
+      "claim_id": "abb11c4e-28b2-4917-8ddb-29600be66cfa",
+      "result_id": "3a5cba20-e2ff-4238-923b-58c0a1bf71e8"
+    },
+    {
+      "claim_id": "c16bfb4a-8907-4c6b-bf77-ca9c0f694273",
+      "result_id": "d0272073-2ebd-4f24-977d-feeea5fd4a48"
+    },
+    {
+      "claim_id": "c74e48a9-120d-4645-bf7d-e27b29d496c8",
+      "result_id": "d0272073-2ebd-4f24-977d-feeea5fd4a48"
+    },
+    {
+      "claim_id": "e0b7ec59-dfe4-456a-a4d6-e4a37ab61cfc",
+      "result_id": "d0272073-2ebd-4f24-977d-feeea5fd4a48"
+    },
+    {
+      "claim_id": "77c976f1-840e-4d48-acaa-ce1adb3ca359",
+      "result_id": "d0272073-2ebd-4f24-977d-feeea5fd4a48"
+    },
+    {
+      "claim_id": "714c2d1e-1678-4a2b-9be1-dddf0b7e5011",
+      "result_id": "d0272073-2ebd-4f24-977d-feeea5fd4a48"
+    },
+    {
+      "claim_id": "96e48f4a-2fa5-4fe7-8c94-09bf0a6a3a49",
+      "result_id": "8f4c8a93-c98c-437d-9406-8f7e6483022b"
+    },
+    {
+      "claim_id": "8fb635ff-6eaf-4e80-bdca-05fb00b88dc0",
+      "result_id": "8f4c8a93-c98c-437d-9406-8f7e6483022b"
+    },
+    {
+      "claim_id": "ea3f4a97-5dbf-4675-b45c-a05f3fa08f84",
+      "result_id": "8f4c8a93-c98c-437d-9406-8f7e6483022b"
+    },
+    {
+      "claim_id": "0b80fb0a-64df-43f5-be9d-6692c40d330e",
+      "result_id": "8f4c8a93-c98c-437d-9406-8f7e6483022b"
+    },
+    {
+      "claim_id": "22270313-4462-4fbf-a991-d9a5810e708b",
+      "result_id": "8f4c8a93-c98c-437d-9406-8f7e6483022b"
+    },
+    {
+      "claim_id": "20bec0d0-dfb9-42f3-b6fa-406f0e17c5ba",
+      "result_id": "8f4c8a93-c98c-437d-9406-8f7e6483022b"
+    },
+    {
+      "claim_id": "0d48fa18-c354-443f-a1eb-10ed7042e64a",
+      "result_id": "8f4c8a93-c98c-437d-9406-8f7e6483022b"
+    },
+    {
+      "claim_id": "85a8e9e5-7f44-42ac-8a83-4d7e3e0a6df7",
+      "result_id": "eedb611d-2d8c-4f20-8cd7-e2a592cfb098"
+    },
+    {
+      "claim_id": "60ae1141-0e8a-4501-82e0-006ae92f394a",
+      "result_id": "28e07c61-0a0e-4e35-abfa-65bbbdbb4c2e"
+    },
+    {
+      "claim_id": "b8a29fa4-e17a-4080-9438-ad19172c6c62",
+      "result_id": "28e07c61-0a0e-4e35-abfa-65bbbdbb4c2e"
+    },
+    {
+      "claim_id": "a047069b-0782-4dc3-ac57-23b665da82ef",
+      "result_id": "28e07c61-0a0e-4e35-abfa-65bbbdbb4c2e"
+    },
+    {
+      "claim_id": "e40c6b4b-efdd-4efa-bdf0-aa6a9dc99820",
+      "result_id": "28e07c61-0a0e-4e35-abfa-65bbbdbb4c2e"
+    },
+    {
+      "claim_id": "5bcb8635-85dd-416c-8cca-8f96605a7979",
+      "result_id": "28e07c61-0a0e-4e35-abfa-65bbbdbb4c2e"
+    },
+    {
+      "claim_id": "31b3d1c9-6d72-4c17-9c7a-c2caf9f028c9",
+      "result_id": "28e07c61-0a0e-4e35-abfa-65bbbdbb4c2e"
+    },
+    {
+      "claim_id": "8aa5ae0c-0ece-4a00-9414-1c1432161dd8",
+      "result_id": "28e07c61-0a0e-4e35-abfa-65bbbdbb4c2e"
+    },
+    {
+      "claim_id": "5a020f89-585d-4da4-9990-59458059fd15",
+      "result_id": "bef16579-3b43-42f2-b6c3-80f9d1bd17a6"
+    },
+    {
+      "claim_id": "f5b38771-1099-4589-8b07-2c413657267a",
+      "result_id": "bef16579-3b43-42f2-b6c3-80f9d1bd17a6"
+    },
+    {
+      "claim_id": "93cb82ef-a770-401d-8b6b-c75198b7a3c8",
+      "result_id": "bef16579-3b43-42f2-b6c3-80f9d1bd17a6"
+    },
+    {
+      "claim_id": "959e8bc9-6143-4b3f-a9a3-f112a9805e4f",
+      "result_id": "bef16579-3b43-42f2-b6c3-80f9d1bd17a6"
+    },
+    {
+      "claim_id": "49e8b062-af59-441e-90e1-a760c034e3e8",
+      "result_id": "bef16579-3b43-42f2-b6c3-80f9d1bd17a6"
+    },
+    {
+      "claim_id": "dce7e7c8-0bf8-4c20-a40e-63e654694a14",
+      "result_id": "bef16579-3b43-42f2-b6c3-80f9d1bd17a6"
+    },
+    {
+      "claim_id": "f0224615-ae26-4ba6-8a9e-572a5cec985c",
+      "result_id": "bef16579-3b43-42f2-b6c3-80f9d1bd17a6"
+    },
+    {
+      "claim_id": "7a5f9f6b-b43e-4856-b7cc-a443a3c954fc",
+      "result_id": "bef16579-3b43-42f2-b6c3-80f9d1bd17a6"
+    },
+    {
+      "claim_id": "7787fdc1-7623-4d5e-abe2-7ae33f82bccb",
+      "result_id": "39dca6e7-e902-4571-9a74-681976730847"
+    },
+    {
+      "claim_id": "e0f9dab6-0e2b-4f41-893a-e637568976bc",
+      "result_id": "39dca6e7-e902-4571-9a74-681976730847"
+    },
+    {
+      "claim_id": "fd83354e-fd4f-4261-a8ee-1673ec492b25",
+      "result_id": "39dca6e7-e902-4571-9a74-681976730847"
+    },
+    {
+      "claim_id": "251f0e91-6608-44c3-a419-97c276973196",
+      "result_id": "39dca6e7-e902-4571-9a74-681976730847"
+    },
+    {
+      "claim_id": "b9a00c62-5d87-4020-9a23-b6e6923ccf2b",
+      "result_id": "39dca6e7-e902-4571-9a74-681976730847"
+    },
+    {
+      "claim_id": "d9e5eca8-6429-4dbf-a644-5d30ee159b59",
+      "result_id": "39dca6e7-e902-4571-9a74-681976730847"
+    },
+    {
+      "claim_id": "529310da-9eda-4e19-a175-2b2c9b89afef",
+      "result_id": "1bc80d53-622f-43f6-bc1d-6d46af41e221"
+    },
+    {
+      "claim_id": "8a07f568-6d2d-4ca4-9257-a1b0b6a7b5a8",
+      "result_id": "1bc80d53-622f-43f6-bc1d-6d46af41e221"
+    },
+    {
+      "claim_id": "6b549a7c-b248-4a46-b635-6cc00d591e2d",
+      "result_id": "1bc80d53-622f-43f6-bc1d-6d46af41e221"
+    },
+    {
+      "claim_id": "d4f040ff-4ee7-4e02-b09a-a1a1c6c7fa4b",
+      "result_id": "9f2a4597-1729-41cf-bace-441c297c16ef"
+    },
+    {
+      "claim_id": "76daa752-abbb-43ac-8ae8-221ec2d85f0f",
+      "result_id": "9f2a4597-1729-41cf-bace-441c297c16ef"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Chm7 is actively exported from the nucleus by Xpo1/Crm1 via two conserved nuclear export signals (NESs) at its C-terminus. Inhibition of Xpo1 with Leptomycin B leads to nuclear accumulation of Chm7-GFP, while a large Chm7-MGM4 fusion that cannot passively diffuse through NPCs shows no LMB-dependent redistribution, indicating that Chm7 enters the nucleus by passive diffusion and is actively exported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C50-C60 provide converging evidence from computational prediction (C51-C53), pharmacological inhibition (C54), size-exclusion experiments (C55), and functional NES reporter assays (C56-C58) that collectively demonstrate Xpo1-mediated nuclear export of Chm7. The data are internally consistent and the experimental controls (MGM4 fusion, NES reporters) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Calcium chelation with BAPTA-AM does not affect Chm7-GFP recruitment to the nuclear envelope in apq12\u0394 cells, suggesting that Ca2+ signaling is not a major contributor to Chm7 recruitment at the nuclear envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 show that BAPTA-AM treatment had no effect on Chm7-GFP foci formation in apq12\u0394 cells (Figure 1H,I). While this is a negative result, the experimental approach is straightforward and the conclusion is appropriately cautious, stating Ca2+ is unlikely to be a 'major contributor' rather than claiming no role whatsoever.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The winged helix (WH) domain of Heh1 is necessary and sufficient to recruit Chm7 to membranes when exposed to the cytosol. Heh1 truncations lacking nuclear localization signals accumulate in the ER and recruit Chm7-GFP to these membranes, while removal of the WH domain abolishes this recruitment. Both the WH domain and proper INM targeting are required for Heh1 function in apq12\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 present a systematic domain deletion analysis (Figure 2) showing that cytosolic exposure of the Heh1 WH domain is necessary and sufficient for Chm7 recruitment (C66-C68), while proper INM targeting requires the N-terminal domain (C69-C71). The genetic complementation data (C69-C70) support the functional importance of both domains. The experimental logic is sound and the conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Chm7 interacts with Heh1, Nur1, and other CLIP complex components at the INM when recruited to the nuclear envelope. Mass spectrometry of Chm7-GFP from vps4\u0394pom152\u0394 cells and chm7OPEN-GFP identified Heh1 as a major interactor, along with Nur1, other CLIP components (Lrs4, Csm1), ESCRT-III proteins (Snf7, Vps2, Vps24, Did2), and Gsp1/Ran. Fluorescence microscopy confirmed near-quantitative recruitment of Heh1 and Nur1 to chm7OPEN foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 present complementary MS/MS (Figure 3A-C) and microscopy (Figure 3D) data demonstrating Chm7 interactions with an INM platform. The MS data show appropriate controls (no-GFP samples) and the specificity is validated by fluorescence colocalization. The detection of low-abundance INM proteins (Heh1, Nur1) in the MS data is particularly compelling given their reported cellular abundance (~400 molecules/cell).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Vps4 is recruited to chm7OPEN foci at the nuclear envelope in a manner dependent on Snf7 and downstream ESCRT-III components (Vps2, Vps24, Did2), but not on the endosomal ESCRT-III Vps20. Deletion of VPS20 actually increases Vps4-GFP recruitment ~3-fold, suggesting competition between endosomal and nuclear envelope ESCRT pathways for a limited Vps4 pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 demonstrate Vps4 recruitment requirements through systematic deletion analysis (Figure 3E). The correlation between Vps4-GFP and chm7OPEN-mCherry intensity (C83) supports a stoichiometric relationship. The striking increase in Vps4 recruitment upon VPS20 deletion (C85) provides strong evidence for pathway competition, though the interpretation (C86) is appropriately presented as inference. Western blots confirm equal Vps4 expression across strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Using the FETA (Fluorescence ESCRT Targeting and Activation) assay, Chm7-GFP recruitment to the INM via Heh2-GBP-mCherry is temporally separable from its activation. Chm7-GFP accumulates at the nuclear envelope within 20 minutes and forms clustered foci over 90 minutes in wildtype cells. In heh1\u0394 cells, Chm7-GFP still accumulates at the nuclear envelope but fails to form foci, demonstrating that Heh1 is required for Chm7 activation but not recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 describe a novel experimental system (FETA) that successfully decouples Chm7 recruitment from activation (Figure 4). The time-lapse data (C88, C91) and quantitative CV analysis (Figure 4C) provide robust evidence. The heh1\u0394 phenotype (C92-C93) is particularly informative, showing recruitment without activation. Appropriate controls confirm the GBP-dependence of the phenotype (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Heh1's WH domain coupled to a membrane anchor is necessary and sufficient for Chm7 activation in the FETA assay. Nur1 contributes to activation, though this may be indirect through effects on Heh1 levels. Snf7 and Vps4 deletions do not prevent Heh2-GBP-mCherry clustering but alter the pattern of foci formation. The WH domain alone cannot rescue clustering in heh1\u0394 cells; membrane anchoring is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C103 use the FETA assay to dissect activation requirements (Figure 5). The domain analysis (C99-C103) clearly demonstrates that both the WH domain and membrane anchoring are required for activation. The Nur1 effect (C94-C96) is appropriately qualified as potentially indirect based on Western blot data showing reduced Heh1 levels. The Snf7/Vps4 results (C97-C98) suggest these factors affect downstream events not captured by the CV metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Correlative light and electron microscopy (CLEM) reveals that sites of chm7OPEN-GFP accumulation correspond to fenestrated INM networks that invade the nucleus and nuclear envelope herniations extending into the cytosol. These herniations have ~45 nm diameter necks and are often associated with vesicles near the ONM. Similar structures form in the absence of Snf7 and in vps4\u0394pom152\u0394 cells with full-length Chm7-GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 present striking CLEM data (Figures 6-7) showing membrane remodeling at Chm7 activation sites. The 3D tomographic reconstructions provide compelling visualization of the fenestrated INM networks and herniations. The quantification of neck diameter (C106) and frequency of associated features (C105, C107) strengthens the analysis. The observation that these structures form without Snf7 (C108) is important for mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Nuclear envelope herniations in NPC assembly mutants (apq12\u0394, nup116\u0394) are morphologically distinct from those induced by Chm7 hyperactivation. NPC assembly-associated herniations have NPC components at their bases (confirmed by MAb414 immunogold labeling), wider necks (~78 nm vs ~45 nm), and electron-dense lumens, whereas Chm7-associated herniations have narrower necks and empty lumens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 provide direct comparison between herniation types using immunogold EM (Figure 8A) and quantitative measurements (Figure 8B). The MAb414 labeling (C111) confirms NPC components at herniation bases in apq12\u0394 cells. The morphological differences in neck diameter (C112) and lumen contents (C113) are clearly documented. The conclusion of morphological distinction (C114) is well-supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "While CHM7 deletion has minimal effect on herniation frequency in apq12\u0394 cells, 35% of apq12\u0394chm7\u0394 nuclei show large nuclear envelope ruptures (>500 nm discontinuities). Similar ruptures occur in apq12\u0394snf7\u0394 cells. This indicates that while ESCRTs may not be required for herniation formation, they are essential for maintaining nuclear envelope integrity in the context of NPC assembly defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 demonstrate a critical protective role for ESCRTs using thin-section EM (Figure 8B-E, supplements). The quantification shows modest reduction in herniations (C115) but dramatic increase in ruptures (C116) upon CHM7 deletion. The similar phenotype in snf7\u0394 (C117) supports ESCRT involvement. The conclusion (C118) appropriately distinguishes between herniation formation and membrane integrity maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on nuclear envelope organization and nuclear transport: NPCs impose a size-selective diffusion barrier (~40 kD cutoff) while facilitating active transport of signal-bearing cargo via nuclear transport receptors, with directionality provided by the Ran-GTPase gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10 provide established background information supported by appropriate citations to prior work. These are well-accepted principles in the nuclear transport field and provide necessary context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on nuclear envelope integrity and disease: Nuclear envelope barrier function is compromised in various diseases including neurodegenerative diseases (ALS, FTD), aging, and early-onset dystonia. Nuclear envelope herniations are associated with NPC assembly defects and may trigger ESCRT-dependent quality control pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C11-C19 summarize prior work on nuclear envelope dysfunction in disease contexts, all supported by appropriate citations. These establish the biological and medical relevance of the study. Some claims (C17, C18) appropriately note that certain mechanisms remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on NPC assembly and quality control in yeast: Approximately 100 NPCs are assembled during the budding yeast cell cycle through INM evagination and membrane fusion. Malformed NPCs are not inherited by daughter cells, and ESCRT components (particularly Chm7) are required for viability in NPC assembly mutants. Heh2 has been proposed to surveil for malforming NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 provide relevant background on NPC assembly and quality control in yeast, supported by citations to prior work including the authors' own studies. Claim C25 appropriately notes that the surveillance signal remains to be formally established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background on ESCRT functions at the nuclear envelope in mammalian cells: ESCRTs function in nuclear envelope reformation at the end of mitosis, repair of nuclear ruptures during cell migration and mechanical stress, and potentially in NPC turnover in quiescent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 summarize established roles for ESCRTs at the mammalian nuclear envelope, all supported by appropriate citations. These provide important comparative context for the yeast studies. Claim C28 appropriately qualifies the inference about mechanical stress-induced ruptures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Background on Ca2+ in ESCRT recruitment: Ca2+ release triggers ESCRT recruitment at endolysosomes and the plasma membrane, potentially through the Ca2+-binding protein ALG-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 provides relevant background on Ca2+ signaling in other ESCRT pathways, supported by appropriate citations. This contextualizes the negative result regarding Ca2+ in the nuclear envelope pathway (C61-C62).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background on ESCRT-III assembly and function: ESCRT-III polymers (primarily Snf7/CHMP4B) scaffold membrane curvature and contribute to membrane scission. Vps4 disassembles ESCRT-III filaments by threading them through its hexameric ring, likely contributing force for scission. Different ESCRT recruitment mechanisms operate at endosomes versus the nuclear envelope, with Vps25 and Vps20 absent from the nuclear envelope pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 provide essential background on ESCRT-III mechanisms, all supported by appropriate citations to prior structural and biochemical work. The distinction between endosomal and nuclear envelope pathways (C36-C37) is important for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background on Chm7-Heh1 interactions: Chm7, Heh1, and Heh2 interact biochemically and genetically with Snf7. Heh1 is required for Chm7 focal accumulation in NPC assembly mutants. The Heh1-Chm7 interaction is conserved in fission yeast and mammals (LEM2-CHMP7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 summarize prior work on Chm7-Heh1 interactions from the authors' previous studies and others, providing direct context for the current mechanistic investigations. The evolutionary conservation (C40-C41) supports the biological significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Background on LEM domain protein structure and function: Heh1 and Heh2 contain an N-terminal LEM domain, an INM targeting sequence with NLS and unstructured region, and a C-terminal winged helix (WH) domain. LEM proteins interface with chromatin, contribute to rDNA stability and nuclear mechanical robustness, and their loss leads to nuclear envelope disruption in diverse yeast species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 provide comprehensive background on LEM protein structure and function, all supported by appropriate citations. This information is essential for interpreting the domain deletion experiments and understanding the dual roles of Heh1 in nuclear integrity and ESCRT recruitment.",
+    "result_type": "MINOR"
+  }
+]

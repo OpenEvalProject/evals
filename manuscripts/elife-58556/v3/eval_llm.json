@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors constructed Assembly2020, a chromosome-level gapless genome assembly of C. tropicalis consisting of 14,609,527 bp in seven telomere-to-telomere chromosomes, representing a significant improvement over the previous fragmented assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively demonstrate successful genome assembly improvement. The assembly process is well-documented (C3), validated by BUSCO analysis showing 23 additional gene sets identified (C4-C5), and represents a substantial improvement from 23 contigs to 7 complete chromosomes. Multiple complementary methods (SMRT-seq, 3C-seq, chromoblot) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C54"
+    ],
+    "result": "Three large-scale duplication events were identified in the C. tropicalis genome: DUP4 (~235 kb on Chr4), DUP5 (~23 kb on Chr5), and DUPR (~80 kb on ChrR), along with additional small-scale CNV loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C54 provide consistent evidence for CNVs through multiple approaches including chromoblot analysis (C6), sequence coverage analysis (C7-C8), and genome-wide CNV scanning. The size differences between Chr4 homologs are explained by the DUP4 duplication, with supporting data from multiple independent methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "A balanced heterozygous translocation event between Chr1 and Chr4 was detected in C. tropicalis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by multiple independent lines of evidence including 3C-seq data analysis, de novo contig analysis, chromoblot validation, and read mapping from both Illumina and SMRT-seq. The butterfly pattern in the 3C-seq heatmap is characteristic of balanced translocations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The assembled length of ChrR (2.1 Mb) differs from the actual length (~2.8 Mb) due to incomplete assembly of the repetitive rDNA locus (~700 kb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 provide a reasonable explanation for the assembly gap. The discrepancy is documented through chromoblot analysis (C10), and the explanation based on rDNA locus size in related species is well-justified (C11). This is a known limitation of genome assembly methods for repetitive regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "A long chromosomal region depleted of SNPs and indels (LOHR) was detected on the left arm of ChrR, with syntenic regions also showing depletion in C. sojae and C. albicans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 document loss of heterozygosity through SNP/indel analysis. The finding is strengthened by comparative analysis showing similar patterns in related species, suggesting potential functional or evolutionary significance. The methods for SNP/indel detection are standard and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Centromeres in C. tropicalis are clustered and localized at the periphery of the nuclear DNA mass as a single punctum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is directly supported by immunofluorescence microscopy imaging of CENP-ACse4-tagged protein. The observation is consistent with known centromere organization in related species and provides important context for interpreting 3C-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C55"
+    ],
+    "result": "C. tropicalis chromosomes adopt a Rabl-like configuration with strong spatial proximity between centromeres and enriched telomere-telomere interactions, as demonstrated by 3C-seq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 and C55 provide comprehensive evidence for Rabl-like configuration through 3C-seq analysis. The findings include appropriate statistical tests (Mann-Whitney U tests with highly significant p-values for C18-C19), aggregate signal analysis, and comparison to known patterns in related species. The multiple lines of evidence converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Six out of seven centromeres in C. tropicalis are located proximal to interchromosomal synteny breakpoints (ICSBs), with ICSB density maximum at centromere-proximal zones and elevated near telomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 demonstrate centromere-ICSB association through four independent synteny analysis methods. The quantitative analysis of ICSB density (C26-C27) and orthoblock length distribution (C28) with statistical testing strengthens the findings. The exception of CEN6 is addressed with a plausible explanation (C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C56"
+    ],
+    "result": "ORFs proximal to centromeres of C. tropicalis converge into specific regions on the C. albicans genome, with four convergence loci proximal to C. albicans centromeres, suggesting inter-centromeric translocations in their common ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C56 provide strong evidence for ancestral inter-centromeric translocations through detailed synteny analysis. The identification of convergence patterns at multiple loci (C29-C30) and the reciprocal observation that C. albicans centromeres are near orthologs of C. tropicalis centromere-proximal ORFs (C32) provide mutual support for the translocation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors propose that ancestral HIR-associated centromeres were lost in C. albicans through translocation events, leading to the formation of evolutionary new centromeres (ENCs) on unique DNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33, C58, and C59 present a model for centromere evolution, but this is explicitly speculative (marked as SPECULATION in evidence_type). While the model is consistent with the synteny data, it represents an inference about ancestral events that cannot be directly tested. The mechanism proposed for CEN6 (C59) is particularly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Eight HIR-associated structures were identified as putative centromeres in C. parapsilosis, supported by their location at intergenic regions and confirmation by CENP-ACse4 enrichment in a different strain, suggesting the common ancestor of C. albicans and C. tropicalis carried HIR-associated centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide evidence for HIR-associated centromeres in C. parapsilosis through structural analysis (C34-C35) and independent validation from published work (C36). The inference about the ancestral state (C37) is reasonable given the phylogenetic distribution of HIR-associated centromeres across multiple species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Two centromeres in another isolate of C. parapsilosis (90-137) are formed on non-HIR-associated loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by citation to published work. This observation of centromere polymorphism within a species is important for understanding centromere evolution but represents prior work rather than a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "HIR-associated putative centromeres were identified in C. sojae (seven centromeres) and C. viswanathii (six centromeres) through genome assembly and synteny analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 document the identification of HIR-associated centromeres in two additional species. The C. sojae genome was assembled de novo (C40), while C. viswanathii used a public assembly (C43). The structural characterization (C41-C42) follows the same approach used for C. tropicalis, providing consistent methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Homologous sequences are shared across inverted repeats (IRs) but not central cores of HIR-associated centromeres in C. tropicalis, C. sojae, and C. viswanathii, with extensive structural conservation of IRs within and across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate sequence conservation patterns through dot-plot analysis and structural comparison. The finding that IRs share homology while central cores do not is important for understanding centromere evolution and is supported by appropriate comparative sequence analysis methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A highly conserved 12-bp IR-motif was identified in centromere DNA sequences of C. tropicalis, C. sojae, and C. viswanathii, clustered specifically at centromeres with diverging orientation away from the central core, suggesting a potential function in regulating de novo CENP-ACse4 loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 document the discovery and characterization of the IR-motif through motif discovery analysis. The motif is well-characterized in terms of sequence (C47), distribution (C47-C48, C50), orientation (C51), and conservation (C52). However, the functional interpretation (C49) is speculative and would require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "HIR-associated centromere structure is plausibly the ancestral form in the CUG-Ser1 clade, lost in C. albicans and C. dubliniensis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 represents a phylogenetic inference based on the distribution of HIR-associated centromeres across multiple species. The inference is reasonable given the data, though alternative scenarios (e.g., independent gains) cannot be completely ruled out without more extensive phylogenetic sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "C. tropicalis is a human pathogenic ascomycete that diverged from C. albicans ~39 million years ago and is emerging as a major threat for nosocomial candidemia in tropical countries with 29-72% mortality rate and rising drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 provide background on the clinical significance of C. tropicalis, all supported by appropriate citations to epidemiological and clinical studies. This contextualizes the importance of the genomic work but represents established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "All seven centromeres in C. tropicalis are associated with long IRs with the potential to form isochromosomes, similar to the mechanism of fluconazole resistance in C. albicans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is supported by citations about C. albicans, but C66 represents an inference about potential for isochromosome formation in C. tropicalis based on structural similarity. While the structural characterization is solid, the functional implication (potential for isochromosome formation and drug resistance) is speculative and would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Spatial proximity and DNA sequence homology influence homologous recombination and translocation events, with centromeres serving as sites of recombination that may lead to centromere loss and emergence of ENCs, as supported by examples in multiple fungal species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 synthesize evidence from multiple published studies to support the general principle that spatial proximity influences recombination and translocation. All claims are supported by appropriate citations. This provides important context for interpreting the C. tropicalis findings but represents a synthesis of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Interchromosomal contacts correlate with translocation events in mammals, with spatial proximity among repeat-associated centromere DNA sequences potentially guiding Robertsonian translocations and chromoplexy events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 extend the discussion to mammalian systems, drawing parallels between the fungal findings and known phenomena in mammals. All claims are supported by appropriate citations. The inference about spatial proximity guiding translocations (C79, C81) is reasonable but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Unique centromeres in C. albicans likely evolved from ancestral HIR-associated centromeres, with loss of the conserved IR-motif and inability of C. albicans IRs to functionally complement C. tropicalis centromeres, demonstrating loss of de novo kinetochore assembly ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 synthesize the comparative data to support an evolutionary model. The structural differences are well-documented (C83-C84), and the functional difference is supported by prior experimental work (C85). The evolutionary interpretation (C82, C86) is a reasonable inference from the data, though alternative scenarios cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The formation of new centromeres in C. albicans may have been influenced by spatial proximity to the ancestral centromere cluster, as C. albicans centromeres are located proximal to ORFs that are also proximal to centromeres in C. tropicalis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 integrate experimental observations from C. albicans (C87-C88, cited work) with the synteny analysis from this study (C89) to propose a mechanism for neocentromere formation (C90). The inference is reasonable and consistent with known principles of neocentromere formation, though direct experimental validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "It may be logical to consider the centromeres of C. albicans as evolutionary new centromeres (ENCs), similar to centromere repositioning events in mammals that are often associated with speciation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 draw parallels between C. albicans centromeres and mammalian ENCs. While the comparison is reasonable (C92-C94 are supported by citations), the classification of C. albicans centromeres as ENCs (C95) is presented as a logical inference rather than a definitive conclusion. The term 'may be logical' indicates appropriate uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Despite catastrophic chromosomal rearrangements, centromere clustering is maintained in both C. albicans and C. tropicalis, revealing a conserved principle of genome organization and identifying spatial clustering as fundamentally important for fungal genome organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 synthesize the 3C-seq findings from both species to identify a conserved organizational principle. The observation that centromere clustering is maintained despite extensive rearrangements (C96) is well-supported by the 3C-seq data and prior work on C. albicans. The inference about fundamental importance (C97-C98) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The authors propose that spatial proximity of homologous centromere DNA sequences facilitated karyotype rearrangements and centromere type transitions in human pathogenic yeasts of the CUG-Ser1 clade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 represents the central hypothesis/model of the paper, integrating all the findings. While the model is consistent with the data and supported by multiple lines of evidence, it remains a proposed mechanism (marked as INFERENCE and SPECULATION) that cannot be directly tested through the observational and comparative approaches used. Experimental validation of the causal role of spatial proximity would be needed for full support.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1373 @@
+{
+  "submission": {
+    "id": "c01e0d88-7c81-4b22-8118-3fd62afe13d8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:07:25.917996Z",
+    "updated_at": "2025-12-02T15:07:25.917996Z"
+  },
+  "content": [
+    {
+      "id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "submission_id": "c01e0d88-7c81-4b22-8118-3fd62afe13d8",
+      "content_type": "manuscript",
+      "content_text": "# The evolutionary plasticity of chromosome metabolism allows adaptation to constitutive DNA replication stress\n\n## Authors\n\n- Marco Fumasoni<sup>1</sup> ([ORCID: 0000-0002-4507-7824](https://orcid.org/0000-0002-4507-7824)) \u2020\n- Andrew W Murray<sup>1</sup> ([ORCID: 0000-0002-0868-6604](https://orcid.org/0000-0002-0868-6604))\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology, Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany biological features are conserved and thus considered to be resistant to evolutionary change. While rapid genetic adaptation following the removal of conserved genes has been observed, we often lack a mechanistic understanding of how adaptation happens. We used the budding yeast, Saccharomyces cerevisiae, to investigate the evolutionary plasticity of chromosome metabolism, a network of evolutionary conserved modules. We experimentally evolved cells constitutively experiencing DNA replication stress caused by the absence of Ctf4, a protein that coordinates the enzymatic activities at replication forks. Parallel populations adapted to replication stress, over 1000 generations, by acquiring multiple, concerted mutations. These mutations altered conserved features of two chromosome metabolism modules, DNA replication and sister chromatid cohesion, and inactivated a third, the DNA damage checkpoint. The selected mutations define a functionally reproducible evolutionary trajectory. We suggest that the evolutionary plasticity of chromosome metabolism has implications for genome evolution in natural populations and cancer.\n\n## Introduction\n\nThe central features of many fundamental biological processes have been conserved since the last common ancestor of all extant organisms. Many of the proteins involved in these processes are essential, and the complex molecular interactions between them have been argued to constrain the evolution of both the processes and the proteins that carry them out (Hirsh and Fraser, 2001; Jordan et al., 2002; Wilson et al., 1977). The strength of these constraints has been questioned by studies that demonstrated that organisms can evolutionary adapt to the removal of important, and sometimes essential cellular genes (Liu et al., 2015; Rancati et al., 2008). Although the mutations that cause some adaptations have been identified, we lack a mechanistic understanding of how they repair the initial defect. Furthermore, in systematic studies, defects in some processes, such as intracellular trafficking, were more easily repaired, by single genetic events, than others, such as ribosome biogenesis, mRNA synthesis and DNA replication (Liu et al., 2015; van Leeuwen et al., 2016).\n\nReplication requires multiple enzymes that catalyze individual reactions such as unwinding the double helix, priming replication, and synthesizing new DNA strands (O'Donnell et al., 2013). A common feature of replication is the organization of these enzymatic activities in multi-molecular complexes called replisomes, whose function is to coordinate the simultaneous synthesis of DNA from the two anti-parallel template strands (Yao and O'Donnell, 2016).\n\nThe temporal and physical interactions amongst the enzymatic machines that performs the different steps of DNA replication are remarkably conserved. Nevertheless, differences in many features of DNA replication have been reported: the number of replisome subunits is higher in eukaryotes than in bacteria, possibly to account for the higher complexity of eukaryotic genomes (McGeoch and Bell, 2008). Some subunits are only found in some eukaryotic species (Aves et al., 2012; Liu et al., 2009). Notably, there are also biochemical variations in important features, such as the helicase, which encircles the leading strand in eukaryotes and the lagging strand in prokaryotes (McGeoch and Bell, 2008), or differences in the regulation of DNA replication by the machinery that drives the cell cycle progression (Cross et al., 2011; Parker et al., 2017; Siddiqui et al., 2013).\n\nThese differences reveal that although the DNA replication module performs biochemically conserved reactions, its features can change during evolution. This observation poses an apparent paradox: how can such an important process change during evolution without killing cells? One hypothesis is that the overall organization of DNA replication can change as a consequence of accumulating several mutations, each perturbing a single aspect of replication, in response to a severe initial perturbation.\n\nTo test this hypothesis, we followed the evolutionary response to a genetic perturbation of DNA replication. Characterizing evolutionary responses to genetic perturbations has informed studies of functional modules (Filteau et al., 2015; Harcombe et al., 2009; Rojas Echenique et al., 2019), challenged the notion that particular genes are essential (Liu et al., 2015; Rancati et al., 2018), and revealed that initial genotypes can determine evolutionary trajectories (Lind et al., 2015; Rojas Echenique et al., 2019; Szamecz et al., 2014).\n\nWe followed the evolutionary response of S. cerevisiae to DNA replication stress, an overall perturbation of DNA replication that interferes with chromosome metabolism, reduces cell viability, and induces genetic instability (Mu\u00f1oz and M\u00e9ndez, 2017; Zeman and Cimprich, 2014). DNA replication stress has been implicated in both cancer progression and aging (Burhans and Weinberger, 2007; Gaillard et al., 2015) but despite studies investigating the direct effect of replication stress on cell physiology, its evolutionary consequences are unknown.\n\nWe imposed constitutive replication stress by removing Ctf4, a component of the replisome and evolved eight populations for 1000 generations. We exploited the ability of experimental evolution to identify, analyze, and compare the mutations that create parallel evolutionary trajectories to increase fitness (Barrick and Lenski, 2013; Van den Bergh et al., 2018). We found that populations can recover from the fitness defect induced by DNA replication stress. Genetic analysis revealed that their adaptation is driven by mutations that damage, alter, and improve conserved features of three modules involved in chromosome metabolism: DNA replication, the DNA damage checkpoint, and sister chromatid cohesion. These mutations arise sequentially and collectively allow cells to approach the fitness of their wild-type ancestors within 1000 generations of evolution. The molecular basis of these adaptive strategies and their epistatic interactions produce a mechanistic model of the evolutionary adaptation to replication stress. Our results reveal the short-term evolutionary plasticity of chromosome metabolism. We discuss the consequences of this plasticity for the evolution of species in the wild and cancer progression.\n\n## Results\n\n### Adaptation to DNA replication stress is driven by mutations in chromosome metabolism\n\nReplication stress refers to the combination of the defects in DNA metabolism and the cellular response to these defects in cells whose replication has been substantially perturbed (Macheret and Halazonetis, 2015). Problems in replication can arise at the sites of naturally occurring or experimentally induced lesions and can cause genetic instability (Mu\u00f1oz and M\u00e9ndez, 2017). We asked how cells evolve to adapt to constitutive DNA replication stress.\n\nPrevious work has induced replication stress by using chemical treatments or genetic perturbations affecting factors involved in DNA replication (Mazouzi et al., 2016; Tkach et al., 2012; Zheng et al., 2016). To avoid evolving resistance to drugs or the reversion of point mutations that induce replication stress, we chose instead to remove CTF4, a gene encoding an important, but non-essential, component of the DNA replication machinery. Ctf4 is a homo-trimer, that serves as a structural hub within the replisome and coordinates different aspects of DNA replication by binding the replicative helicase, the primase, and other factors recruited to the replication fork (Figure 1A; Gambus et al., 2009; Samora et al., 2016; Simon et al., 2014; Tanaka et al., 2009; Yuan et al., 2019). In the absence of Ctf4, cells experience several problems in fork progression leading to the accumulation of defects commonly associated with DNA replication stress (Mu\u00f1oz and M\u00e9ndez, 2017), such as single-stranded DNA gaps and altered replication forks (Abe et al., 2018; Fumasoni et al., 2015; Kouprina et al., 1992). Ctf4 is essential for viability in vertebrates (Abe et al., 2018; Yoshizawa-Sugata and Masai, 2009), insects (Gosnell and Christensen, 2011), and some fungi (Harris and Hamer, 1995; Williams and McIntosh, 2002) but cannot be detected in prokaryotes, where there is a direct physical linkage between the primase (DnaG) and the helicase (DnaB) (Lu et al., 1996).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the replisome focused on the role of Ctf4 in coordinating the replicative helicase, primase, and other factors. (B) The experimental evolution scheme: independent colonies of ctf4\u2206 S. cerevisiae were inoculated in rich media, grown to saturation, and diluted 1:1000 in fresh media for a total of 100 cycles (1000 generations). Populations samples were saved every 50 generations for future analysis. (C) Fitness of the ctf4\u0394 ancestor strains and of 32 evolved clones isolated from the 8 (labeled 1 through 8) populations derived from them, relative to wt cells (s\u00a0=\u00a00). Error bars represent standard deviations. MATa and MAT\u03b1 refer to the strain sex. (D) Simplified representation of the modules enriched in putative adaptive mutations, found in evolved clones. Gray lines represent evidence of genetic and physical interactions from the literature (https://string-db.org). Node diameter is proportional to the number of populations in which the gene was mutated. Selection on darker nodes was statistically significant. Nodes surrounded with a bold circle are genes in which mutations were found to strongly correlate with the evolved phenotype by bulk segregant analysis.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Fitness of the ctf4\u0394 (yellow) and wt (gray) ancestors and of 16 evolved populations derived from them (eight each), relative to wt cells (s\u00a0=\u00a00). Error bars represent standard deviations. Note that this panel shows the fitnesses of populations, whereas Figure 1C shows the fitness of clones isolated from populations.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** One clone per population was crossed with a wt ancestor and subjected to bulk segregant analysis. For each clone, the mutations found to strongly segregate (>70%) with the evolved phenotype are reported. An average of 71 reads (with a minimum of 35 reads) was used to calculate locus segregation.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Extract from Supplementary file 2: GO term that are enriched in the genes that were found to be either strongly significantly selected or segregating with the evolved phenotype by bulk segregant analysis.\n\nWe generated ctf4\u0394 and wild type (WT) ancestor strains by sporulating a heterozygous CTF4/ctf4\u0394 diploid. As previously reported (Kouprina et al., 1992; Miles and Formosa, 1992), ctf4\u0394 cells display severe growth defects, which we quantified as a fitness decrease of approximately 25% relative to WT (Figure 1C). We then evolved eight parallel populations of each genotype for 1000 generations by serial dilutions in rich media, freezing population samples every 50 generations (Figure 1B). Under this regime, spontaneous mutations that increase cellular fitness and survive genetic drift will be selected and spread asexually within the populations (Jerison and Desai, 2015; Levy et al., 2015; Venkataram et al., 2016). At the end of the experiment, we asked whether cells had recovered from the fitness decrease induced by replication stress by measuring the fitness of the evolved ctf4\u2206 and WT populations. Expressing the results as a percentage of the fitness of the WT ancestor, the evolved WT populations increased their fitness by an average of 4.0 \u00b1 0.3% (Figure 1\u2014figure supplement 1), a level similar to previous experiments (Buskirk et al., 2017; Lang et al., 2013). In contrast, we found that the fitness of the evolved ctf4\u2206 populations rose by 17 \u00b1 0.2% (Figure 1\u2014figure supplement 1). Clones isolated from these populations showed similar fitness increases (Figure 1C).\n\nTo understand this evolutionarily rapid adaptation to constitutive replication stress, we whole-genome sequenced all the final evolved populations as well as 32 individual clones (four from each of the evolved populations) isolated from the ctf4\u0394 lineages. During experimental evolution, asexual populations accumulate two types of mutations: adaptive mutations that increase their fitness and neutral or possibly mildly deleterious mutations that hitchhike with the adaptive mutations (Supplementary file 1). To distinguish between these mutations, we used a combination of statistical and experimental approaches. First, we inferred that mutations in a gene were adaptive if the gene was mutated more frequently than expected by chance across our parallel and independent populations (Supplementary file 2). Second, we performed bulk segregant analysis on selected evolved clones. This technique takes advantage of sexual reproduction, followed by selection, to separate causal and hitchhiking mutations. In this case, mutations that segregate strongly with the evolved phenotype are assumed to be adaptive (Figure 1\u2014figure supplement 2). We combined these two lists of mutated genes and looked for enriched gene ontology (GO) terms. This analysis revealed an enrichment of genes implicated in several aspect of chromosome metabolism (Supplementary file 3). Among the genes associated with these terms, many are involved in four functional modules: DNA replication, chromosome segregation (including genes involved in sister chromatid linkage and spindle function), cell cycle checkpoint and chromatin remodeling (Figure 1\u2014figure supplement 3). The genes in these modules that were mutated in the evolved clones are shown, grouped by function, in Figure 1D.\n\n### DNA replication stress selects for inactivation of the DNA damage checkpoint\n\nWe found several mutations affecting genes involved in cell-cycle checkpoints (Figure 2B). Checkpoints are feedback control mechanisms that induce cell-cycle delays in response to defects that reflect the failure to complete important process and thus guarantee the proper sequence of events required for cell division (Elledge, 1996; Murray, 1992). Three delays, caused by DNA damage or defects in DNA replication, have been characterized. The first prevent cells from entering S-phase in response to DNA damage occurring in G1. A second slows progress through S-phase in response to problems encountered during DNA synthesis. The third delays sister chromatid separation (anaphase) and the exit from mitosis in response to DNA damage incurred after cells enter S-phase (Figure 2A; Murray, 1994).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of cell cycle progression. The transitions delayed by various checkpoints are highlighted in red. (B) List of checkpoint genes mutated in evolved clones and their role in the signaling cascade. \u2018Populations hit\u2019 refers to the number of populations where the gene was mutated. \u2018% Mutant reads\u2019 was calculated as the average of the mutant read frequencies in the different populations where the mutation was detected. (C) Schematic of the C-terminal region of Rad9 that was affected by mutations in evolved clones. The diameter of the symbol is proportional to the number of populations where the mutation was detected. Note that both stop codons resulted from an upstream frameshift. Two populations contained more than one distinct RAD9 mutations. (D) The fitness of ctf4\u2206 strains carrying two reconstructed mutations in the DNA damage checkpoint (rad9\u2206 and rad9K883*) and an engineered inactivation of the spindle checkpoint (mad2\u2206) relative to the ctf4\u0394 ancestors (ctf4\u0394 anc, s=0). Error bars represent standard deviations. (E) Cell cycle profiles of ctf4\u0394 ancestor and ctf4\u0394 rad9\u0394 cells at two time points during a synchronous cell cycle. Cells were arrested in G1 and subsequently released synchronously into S-phase. Time points taken at 30 min and 120 min after the release are shown.\u00a01C is the DNA content of a cell in G1. \u03b1-factor was added 30 min after release to prevent cells entering a second cell cycle and thus ensure that 2C cells at the 120 min measurement resulted from a G2 delay rather than progress through a second cell cycle. The percentage of genome replicated at 30 min was calculated based on the cell cycle profile. 1C/2C ratios were calculated based on the height of the respective 1C and 2C peaks at 120 min.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Mutations affecting components of the DNA damage checkpoint that were found in evolved clones. (B) Schematic representation of the checkpoint signaling cascade induced by DNA replication stress. In blue (left) the DNA replication checkpoint, which delays S phase by phosphorylating Sld3 and Dbf4. In red (right) the DNA damage checkpoint, which induces a mitotic delay by phosphorylating Pds1. Factors highlighted in bold were found mutated in evolved lines. Some of the checkpoint factors (in the middle of the panel) play a role in both checkpoint responses, although this double role is likely not exerted simultaneously and may depend on the dynamics of the upstream checkpoint reactions. (C) The fitness of ancestral ctf4\u2206 strains carrying mutations affecting the DNA replication checkpoint signaling cascade at different levels, relative to the ctf4\u0394 ancestor (s\u00a0=\u00a00). Error bars represent standard deviations.\n\nThe genes listed in Figure 2B are implicated at different levels in either the replication or mitotic delays (Figure 2\u2014figure supplement 1B; Pardo et al., 2017). The most frequently mutated gene, RAD9, encodes an important component of the DNA damage checkpoint, which is required to slow DNA synthesis and delay anaphase in response to DNA lesions (Weinert and Hartwell, 1988). Four out of the five mutations in RAD9 produced early stop codons, or radical amino acid substitutions in the BRCT domain, which is essential for Rad9\u2019s function (Figure 2C, Figure 2\u2014figure supplement 1A; Soulier and Lowndes, 1999), arguing that inactivation of Rad9 was repeatedly and independently selected for during evolution. To test this hypothesis, we engineered the most frequently occurring mutation (2628 +A, a frameshift mutation leading to a premature stop codon K883*) into the ancestral ctf4\u2206 strain (ctf4\u2206 anc). We suspect that the high frequency of this mutation is due to the presence of a run of 11 As, a sequence that is known to be susceptible to loss or gain of a base during DNA replication. This mutation (Figure 2C, Figure 2\u2014figure supplement 1A) produced a fitness increase very similar to the one caused by deleting the entire gene (Figure 2D). We conclude that inactivation of Rad9 is adaptive in the absence of Ctf4.\n\nWe asked if the removal of Rad9 eliminated a cell cycle delay caused by the absence of Ctf4. In the ctf4\u2206 ancestor, rad9\u0394 does, indeed, decrease the fraction of cells with a 2C DNA content (the DNA content in G2 and mitosis) observed in asynchronously growing ctf4\u2206 cells (Tanaka et al., 2009). This observation suggests that the interval between the end of DNA replication and cell division decreases in ctf4\u2206 rad9\u0394 cells. The spindle checkpoint, which blocks anaphase in response to defects in mitotic spindle assembly, can also delay chromosome segregation in cells (Li and Murray, 1991). But although deleting MAD2, a key spindle checkpoint component, also decreases the interval between replication and division in ctf4\u0394 cells (Hanna et al., 2001), it reduces rather than increases the fitness of the ctf4\u2206 ancestor (Figure 2D). These results suggest that ignoring some defects in ctf4\u2206 cells, such as those that activate the DNA damage checkpoint, improves fitness, whereas ignoring others, such as defects in chromosome alignment on the spindle, reduces fitness.\n\nProblems encountered during DNA synthesis also activate the replication checkpoint, which inhibits DNA replication to prevent further lesions (Zegerman and Diffley, 2009; Zegerman and Diffley, 2010). As many proteins involved in the DNA damage checkpoint are shared with the replication checkpoint (Figure 2\u2014figure supplement 1B; Pardo et al., 2017), we followed a single synchronous cell-cycle to ask whether the fitness benefits conferred by RAD9 deletion were due to a faster progression through S-phase or faster progress through mitosis. Loss of Rad9 in ctf4\u2206 cells did not accelerate S-phase, but it did lead to faster passage through mitosis as revealed by a reduced fraction of 2 C cells (Figure 2E).\n\nTo separate the role of the replication and DNA damage checkpoints, we genetically manipulated targets of the checkpoints whose phosphorylation delays either anaphase (Pds1, Wang et al., 2001) or the completion of replication (Sld3 and Dbf4, Zegerman and Diffley, 2010, Figure 2\u2014figure supplement 1B). Fitness measurement in these mutants (pds1-m9 or the double mutant sld3-A/dbf4-4A) showed that while decreasing the mitotic delay in ancestral ctf4\u2206 cells was beneficial, a faster S-phase was highly detrimental (Figure 2\u2014figure supplement 1C). Collectively, these results show that the specific absence of a DNA damage-induced delay of anaphase, rather than generic cell-cycle acceleration, is adaptive in ctf4\u0394 cells experiencing replication stress.\n\n### Amplification of cohesin loader genes improves sister chromatid cohesion\n\nWe examined the evolved clones for changes in the copy number across the genome (DNA copy number variations, CNVs). Several clones showed segmental amplifications, defined as an increase in the copy number of a defined chromosomal segment (Figure 3\u2014figure supplement 1). The most common CNV in evolved ctf4\u0394 cells (17 out of 32 sequenced clones) was the amplification of a 50\u2013100 kb region of chromosome IV (chrIV). In addition to this segmental amplification, evolved clone EVO2-10 also carried an extra copy of a portion of chromosome V (chrV, Figure 3A). The eight evolved wild type populations had no segmental amplifications, suggesting that changes in copy number were a specific adaptation to constitutive DNA replication stress.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig3-v2.jpg)\n\n**Figure 3.:** (A) Copy number variations (CNVs) affecting chromosome IV and chromosome V in clone EVO2-10. Copy number change refers to the fragment\u2019s gain or loss during the evolution experiment (i.e. +1 means that one copy was gained). Red highlights gains, blue highlights losses. (B) List of genes involved in chromosome segregation that were mutated in evolved clones, and their respective role in the process. \u2018populations hit\u2019 is the number of populations where the gene was found mutated. \u2018% Mutant reads\u2019 was calculated as the average of the mutant read frequencies in the different populations where the mutation was detected. (C) Fitness of ancestral, ctf4\u2206 strains that carry chromosomally integrated extra copies of cohesin loader genes, relative to the ctf4\u0394 ancestor (s\u00a0=\u00a00). Error bars represent standard deviations. (D) Premature chromatid separation assay: Cells which contained a chromosome marked by a GFP dot (Lac repressor-GFP binding to an array of LacO sites) were arrested in metaphase and visualized under the microscope. The number of dots reports on premature sister chromatid separation. Two sister chromatids that are still linked to each other produce a single fluorescent dot (single, left panel), while cells whose sister chromatids have separated contain two distinguishable dots (double, left panel). Quantitation of premature sister chromatid separation in cells carrying extra copies of cohesin loader genes (right panel).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Red highlights gains, blue highlights losses. Note that the aneuploidies affecting chromosome I, III, VI and IX, all of which are small chromosomes, may be due to the altered ancestral karyotype. We retrospectively found that ancestral ctf4\u0394 clones carried extra copies of these chromosomes, likely caused by chromosome mis-segregation acquired during strain construction or the initial pre-culture. Many evolved clones lose one of the two copies of these chromosomes during evolution arguing that aneuploidy for these chromosomes does not confer a long-term fitness advantage.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Mutations affecting genes implicated in chromosome segregation that were found in evolved clones. (B) Schematic representation of cohesion establishment: the cohesin loading complex (Scc2-Scc4) loads the cohesin ring onto chromosome in G1. With the passage of the replisomes during DNA replication, cohesion between sister chromatids is established. At the onset of anaphase, cohesin is cleaved to allow cells entering anaphase and segregating the chromosomes. Proteins whose genes were mutated in evolved strains are indicated next to the steps where they are believed to act.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) CNVs affecting chromosome IV and V were detected by sequencing the EVO2 population (upper panel) or individual clones isolated at generation 1000 (lower panel). Purple squares highlight the segmental amplifications on chromosome IV affecting SCC2, the orange circle highlights the segmental amplification on chromosome V affecting SCC4 in clone EVO2-10. (B) Proposed phylogenetic tree for clones isolated from EVO2 population. Purple lines represent clones carrying SCC2 amplification, orange line represents the additional amplification of SCC4. The tree was derived by parsimony considering the presence or absence of CNVs (panel A), and other shared mutations detected in the isolated clones (Supplementary file 1). Note that the segmental amplification of SCC4 on chromosome V cannot be observed from the population sequencing (panel A) since clone EVO2-10 only represent a limited fraction of the cells (estimated by the abundance of EVO2-10 variants in the EVO2 deep sequencing results, Supplementary file 1).\n\nAmongst the genes affected by these two CNVs are SCC2 and SCC4, on the amplified portions of chromosomes IV and V respectively. These two genes encode the two subunits of the cohesin loader complex, which loads cohesin rings on chromosomes to ensure sister chromatid cohesion until anaphase (Figure 3\u2014figure supplement 2B; Ciosk et al., 2000; Michaelis et al., 1997). The amplification of SCC2 and SCC4, together with the other genes altered by point mutations in our evolved clones (Figure 3B, Figure 3\u2014figure supplement 2A), strongly suggest that the absence of Ctf4 selects for mutations that affect the linkage between sister chromatids.\n\nCTF4 was originally identified because mutants in this gene reduced the fidelity of chromosome transmission (CTF\u00a0=\u00a0chromosome transmission fidelity, Spencer et al., 1990); later studies showed that this defect was due to premature sister chromatid separation, which resulted in increased chromosome loss at cell division (Hanna et al., 2001). We hypothesized that the segmental amplifications of chrIV and chrV were selected to increase the amount of the cohesin loading complex. To test this idea, we reintroduced a second copy of these genes in a ctf4\u2206 ancestor. As predicted by the more frequent amplification of SCC2, we found that while an extra copy of SCC4 alone did not significantly affect fitness, an extra copy of SCC2, or an extra copy of both SCC2 and SCC4 increased fitness by 4\u20135% (Figure 3C). Consistent with a role of SCC4 amplification only in combination of SCC2 amplification, we found that the segmental amplification of chrV followed that of chrIV in the EVO2 population (Figure 3\u2014figure supplement 3A\u2013B). We examined cells arrested in mitosis to measure the extent of premature sister chromatid separation in the same strains. Adding extra copies of the cohesin loader subunits improved sister chromatid cohesion (Figure 3D) and the amplitude of the improvement in sister cohesion for different strains had the same rank order as their increase in fitness (Figure 3C). We conclude that the increased copy number of the cohesin loader subunits is adaptive and alleviates the cohesion defects induced by the lack of Ctf4.\n\n### Altered replication dynamics promote DNA synthesis in late replication zones\n\nWe found mutations in several genes involved in DNA replication (Figure 4A, Figure 4\u2014figure supplement 1A). Among these, we found four independent mutations (Figure 4B) that altered three different subunits of the replicative CMG (Cdc45, MCM, GINS) helicase (Labib and Gambus, 2007; Moyer et al., 2006). The CMG helicase is bound in vivo by Ctf4 through the GINS subunit Sld5 (Simon et al., 2014). This binding allows Ctf4 to coordinate the helicase\u2019s progression with primase, which synthesizes the primers for lagging strand DNA synthesis, and other factors recruited behind the replication fork (Figure 1A; Samora et al., 2016; Villa et al., 2016). A CMG helicase mutation found in one of the evolved clones, sld5-E130K, increased the fitness of the ancestral ctf4\u2206 strain (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig4-v2.jpg)\n\n**Figure 4.:** (A) Genes involved in DNA replication that were mutated in evolved clones, and their role in replication. \u2018populations hit\u2019 is the number of populations where the gene was found mutated. \u2018% Mutant reads\u2019 was calculated as the average of the mutant read frequencies in the different populations where the mutation was detected. (B) Structure of the CMG helicase (PDB:5u8s, upper panel) highlighting the catalytic subunits (Mcm2-7) and the regulatory subunits (Cdc45 and GINS). Red spheres represent the residues affected by mutations found in evolved clones (lower panel). (C) The fitness of ctf4\u2206 strains carrying reconstructed mutations in the replicative helicase (sld5-E129K) and in IXR1 (ixr1\u2206 and ixr1-Q332*) relative to the ctf4\u0394 ancestor (s\u00a0=\u00a00). Error bars represent standard deviations. (D) DNA replication profiles: cells were arrested in G1 and released into a synchronous S-phase, taking samples every 15 min for whole genome sequencing analysis. Change in DNA copy number over time were analyzed and used to calculate trep (time at which 50% of the cells in the population have replicated a given region (Figure 4\u2014figure supplement 3, see material and methods for details). Snapshots of regions from chromosome X and XV are shown as examples, highlighting the presence of stalled forks and unreplicated regions in ctf4\u2206 cells (which are absent in strains that also carry sld5-E130K or ixr1\u2206 mutations). (E) Quantitative analysis of DNA replication. Each parameter was derived from the genome-wide DNA replication profile of each sample (Figure 4\u2014figure supplement 3, see material and methods for details). Heatmaps refer to the severity of the defect (white\u00a0=\u00a0wt, red\u00a0=\u00a0ctf4\u0394 ancestor).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Mutations affecting genes implicated in DNA replication that were found in evolved clones. (B) Mutations affecting Ixr1 found in evolved clones. Note that one stop codon (Q332*) resulted from an upstream frameshift.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Schematic representation of the two replication forks arising from an origin of replication, and the signal they generate in the replication profiles.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Genome-wide DNA replication profiles of wt, the ctf4\u2206 ancestor, and two double mutant strains: ctf4\u0394 sld5-E130K and ctf4\u0394 ixr1\u0394. trep refers to the time at which 50% of the cells in the population have replicated a region. trep was derived from the change in DNA copy numbers over time, measured by deep sequencing (see material and methods). Examples of fork rescue from un-replicated regions in ctf4\u2206 cells by sld5-E130K and ixr1\u0394 are highlighted in gold rectangles.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Fitness effect of sld5-E130K on ctf4\u0394 ancestor cells (left panel) and on wt, CTF4 cells (right panel). The fitness measurements are relative to ctf4\u0394 and wt respectively. Error bars represent standard deviations. (B) Effect of altered levels on deoxyribonucleotide triphosphates (dNTPs) on ancestor cells. Error bars represent standard deviations. ctf4\u0394 ancestor cells carrying a conditional PGAL1-SML1 allele were used. Sml1 is an inhibitor of the ribonucleotide reductase, an enzyme essential for dNTP production. SML1 was expressed from the GAL1 promoter, that is inhibited by glucose and strongly activated by galactose. A ctf4\u0394 PGAL1-SML1 strain was pre-cultured in YP + 2% raffinose and then competed against a ctf4\u0394 reference strain either in YP + 2% glucose (left side), or in YP + 2% galactose 2% raffinose (right side). This should result in dNTP overproduction (glucose) and shortage (galactose).\n\nIXR1, a gene indirectly linked to DNA replication, was mutated in several populations (Figure 4A). IXR1 encodes for a transcription factor that indirectly and positively regulates the concentration of deoxyribonucleotide triphosphates (dNTPs, Tsaponina et al., 2011), the precursors for DNA synthesis. The occurrence of multiple nonsense mutations in this gene strongly suggested selection to inactivate Ixr1 (Figure 4\u2014figure supplement 1B). Consistent with this prediction, we found that engineering either a nonsense mutation (ixr1-Q332*) or a gene deletion conferred a selective advantage to ctf4\u2206 ancestor cells (Figure 4C).\n\nWe asked how mutations in the replicative helicase or inactivation of IXR1 increased the fitness of ctf4\u2206 cells. One hypothesis is that the absence of Ctf4 reduces the coordination of activities required to replicate DNA and leads to the appearance of large regions of single stranded DNA, which in turn exposes the forks to the risk of nuclease cleavage or collapse. If this were true, slowing the replicative helicase or the synthesis of the leading strand would reduce the amount of single stranded DNA near the replication fork and improve the ability to complete DNA replication before cell division. To test this idea, we used whole genome sequencing at different points during a synchronous cell cycle to compare the dynamics of DNA replication (Figure 4\u2014figure supplement 2) in four strains: WT, the ctf4\u2206 ancestor, and ctf4\u2206 strains containing either the sld5-E130K or ixr1\u0394 mutations.\n\nWe found that cells lacking Ctf4 experience several defects compared to WT: on average, origins of replication fire later and DNA replication forks proceed more slowly across replicons, often showing fork stalling (Figure 4D\u2013E, Figure 4\u2014figure supplement 3). As a consequence of these two defects, cells still contain significant regions of unreplicated DNA late in S-phase (45 min, Figure 4D\u2013E, Figure 4\u2014figure supplement 3). Both sld5-E130K or ixr1\u0394 mutations significantly increase the average replication fork velocity primarily by avoiding stalls in DNA replication and thus leading to earlier replication of the regions that replicate late in the ancestral ctf4\u2206 cells (Figure 4D\u2013E, Figure 4\u2014figure supplement 3). Altogether, these results show that cells evolved modified DNA replication dynamics to compensate for defects induced by DNA replication stress.\n\n### Epistatic interactions among adaptive mutations dictate evolutionary trajectories\n\nCan we explain how the ancestral ctf4\u2206 strains recovered to within 10% of WT fitness in only 1000 generations? Although all the mutations that we engineered into ctf4\u2206 ancestor cells reduce the cost of DNA replication stress, none of them, individually, account for more than a third of the fitness increase observed over the course of the entire evolution experiment (Figure 1C). Sequencing individual evolved clones revealed the presence of mutations in at least two of the three modules whose effects we analyzed in isolation (Figure 5\u2014figure supplement 1, Supplementary file 1). We therefore asked if we could recapitulate the fitness of the evolved clones by adding adaptive mutations from multiple different modules to the ctf4\u2206 ancestor. We obtained all possible combinations of two, three, and four adaptive mutations, in the ctf4\u2206 ancestor, by sporulating a diploid strain that was heterozygous for all four classes of adaptive mutations: inactivation of the DNA damage checkpoint (rad9\u2206), amplification of the cohesin loader (an extra copy of SCC2), alteration of the replicative helicase (sld5-E130K), and altered regulation of dNTP pools (ixr1\u2206).\n\nWe found that the two mutations that affected DNA replication were negatively epistatic (Figure 5A): in the presence of ctf4\u2206, strains that contained both sld5-E130K and ixr1\u0394 were not significantly more fit than strains that contained only ixr1\u2206 and the quadruple mutant (2X-SCC, rad9\u0394, sld5-E130K, ixr1\u0394) was much less fit than the two triple mutants that contained only one of the two mutations that affected DNA replication (2X-SCC, rad9\u0394, sld5-E130K and 2X-SCC, rad9\u0394, ixr1\u0394). As a result, the two fittest strains carry only three mutations: in both cases, they affected the three modules we previously characterized: sister chromatid linkage and chromosome segregation (2X-SCC2), the DNA damage checkpoint (rad9\u0394) and DNA replication (sld5-E130K or ixr1\u0394). These two strains displayed a fitness comparable to the average of the evolved populations (Figure 1C), suggesting that we had recapitulated the major adaptive events in our engineered strains.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig5-v2.jpg)\n\n**Figure 5.:** (A) Fitness of all possible combinations of four adaptive mutations in the ctf4\u0394 ancestral background. The fitness measurements are relative to ctf4\u0394 ancestors (s\u00a0=\u00a00). The dashed yellow line represents the average fitness of clones isolated from EVO5. Note that, unlike Figure 1C, fitness values are calculated relative to the ancestral ctf4\u0394 strain, and not to WT (hence the differences in absolute values, see material and methods). Error bars represent standard deviations. The fitnesses of individual strains are colored using the heatmap to the right of the figure, which represents epistasis: white\u00a0=\u00a0perfect additivity, red\u00a0=\u00a0negative epistasis (antagonism), blue\u00a0=\u00a0positive epistasis (synergy). Colors in the heatmap represent the deviation in percentage between the observed fitness and the one calculated by adding the fitness effects of the individual mutations. (B) The temporal spread of mutant alleles during the experimental evolution of population EVO5 (upper panel). Error bars represent standard deviations. Genomic DNA was extracted from population samples, mutated loci were PCR amplified and Sanger sequencing was used to measure allele ratios (upper panel). A Muller diagram representing the lineages evolving in population EVO5 (lower panel). Data was obtained by combining alleles frequencies with their linkage as revealed by whole genome sequencing of clones isolated from EVO5 (Figure 5\u2014figure supplement 2 and Supplementary file 1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Frequencies of putative adaptive mutations in the cohesion\u00a0(green), replication\u00a0(blue) and checkpoint\u00a0(orange) modules in the evolved populations at the conclusion of the experiment (generation 1000). The putative adaptive mutations were inferred based on results obtained for population EVO5. When the experimentally validated genes were not present, closely interacting genes were considered. Alleles frequencies in populations were obtained by deep sequencing of genomic DNA extracted from a population sample.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Fitness of population EVO5 relative to wt (s\u00a0=\u00a00) measured every 50 generations during the experiment (upper panel, dark plot, left y axis) with the frequency of mutant alleles included for reference (upper panel, faint plots, right x axis). Error bars represent standard deviations. Phylogenetic tree for clones isolated from population 5 (lower panel). Linkage was derived from analyzing whole genome sequences of the individual clones (Supplementary file 1), while branch length was inferred from the allele frequencies obtained by Sanger sequencing.\n\nWe asked if the antagonistic interaction between sld5-E130K and ixr1\u0394 seen in our reconstructed strains had also occurred in our evolution experiment. We focused on an evolved population (EVO5) that carried all the mutations described above and analyzed the allele frequency in the intermediate samples collected across the evolution experiment. By following the frequency of alleles within the population and sequencing individual clones, we found that the mutations in the three modules happened in three consecutive selective waves: first, cells acquired an extra copy of the cohesin loader-encoding gene SCC2, second, ixr1-Q332* and sld5-E130K appeared, simultaneously, in two different lineages, and finally rad9-N876K appeared independently in the two lineages containing either ixr1-Q332* or sld5-E130K (Figure 5B, Figure 5\u2014figure supplement 2). After their initial appearance, the two lineages containing ixr1-Q332* or sld5-E130K competed with each other for the remainder of the experiment. In this population, both final lineages accumulated mutations whose interaction was nearly additive or positively epistatic and avoided combinations that show strong negative epistasis (Figure 5A). Thus, although negative epistasis exists, selection finds trajectories that avoid it, as previously observed in a similar experiment perturbing cell polarity (Laan et al., 2015).\n\n## Discussion\n\nMany fundamental processes in cell biology have a conserved underlying structure despite substantial variation in their detailed mechanisms, leading to curiosity about how these changes can occurred without destroying the overall process. One approach to this question is to compare processes in related organisms and use classical and molecular genetics to find the genetic variants responsible for inter-species differences. This strategy has the disadvantage that many of the mechanistic changes happened so long ago that it is difficult to exchange components between their current-day descendants. We therefore used the alternative approach of applying a physiological stress that reduced the fitness of an organism and using experimental evolution to accumulate, identify, and study the mutations that increase fitness and adapt the organism to the stress. Using this approach allowed us to ask several questions about the evolution of conserved processes: i) how rapidly and how completely does fitness increase after a severe perturbation, ii) how reproducible are the evolutionary trajectories of replicate populations, iii) what genes are mutated, and which function modules do they affect, iv) what are the molecular mechanisms of adaptation, v) how do distinct mechanisms interact with each other, and vi) what do the mechanistic changes reveal about the evolutionary plasticity of the perturbed process.\n\nTo investigate the evolution of conserved cellular processes, we studied the evolutionary adaptation of cells experiencing constitutive DNA replication stress induced by the lack of a protein, Ctf4, that plays an important role in DNA replication. We tested whether significant changes in DNA replication could be acquired as a consequence of constitutive DNA replication stress. We found that over 1000 generations, populations increased from 75% to 90% of the fitness of their wild-type ancestors by sequentially accumulating mutations that individually affect three different functions that contribute to chromosome metabolism: DNA replication, chromosome segregation and the DNA damage checkpoint.\n\nOur experiment reveals the short-term evolutionary plasticity of chromosome metabolism. A single genetic perturbation and a thousand generations are enough to select for significant changes in three functional modules affecting chromosome metabolism. By the end of the experiment, evolved lineages had sequentially modified chromosome cohesion, changed the dynamics of DNA replication, and lost an important cell-cycle response to DNA damage. These changes combine to produce the evolved phenotype and allow cells to approach wild type fitness despite the presence of continued DNA replication stress. This result suggests that despite their conservation, these modules and the connections between them are evolutionarily plastic and can accommodate short-term responses to strong perturbations, helping to explain differences that have accumulated over hundreds to billions of years of evolution.\n\nPrevious studies have argued that perturbations in DNA replication are less likely to be repaired by single compensatory mutations than other processes, such as intracellular trafficking (Liu et al., 2015; van Leeuwen et al., 2016). We believe that the explanation for the difference between these studies and our own lies in the different nature of the mutations that are selected. Suppressor screens rely on single mutations that can either rescue lethality or whose fitness effect is greater than the noise in systematic analyses of genetic interactions. In contrast, experimental evolution following non-lethal perturbations allows for the sequential acquisitions of small-effect mutations that collectively rescue the perturbed process. Our experiment suggests that although the single mutations that can fully repair genetic damage to DNA replication are rare, the existence of combination of small-effect mutations that can repair perturbations make it evolutionarily plastic.\n\nWe argue that coupling a genetic dissection of the mutations that increase fitness to a cell biological understanding of their mechanism is essential to reaching a comprehensive understanding of evolutionary change. We discuss the molecular mechanisms of adaptation, then consider how they interact to produce the final evolved phenotype, and close by commenting on the implications of our results for natural populations and cancer.\n\n### Molecular insights into evolutionary adaptation\n\nCells lacking Ctf4 show an increased frequency of chromosome mis-segregation due to premature sister chromatid separation, but the mechanism underlying this defect is still unclear. Seven of our eight populations amplified SCC2, which encodes for one of the subunits of the cohesin loader complex. The simplest explanation for this result is that, the absence of Ctf4 restricts the productive loading of cohesin molecules that establish the linkage between sister chromatids. We propose that amplifying the genes for the cohesin loader would increase its expression, increase the productive cohesin loading and improve the linkage between sister chromatids. Improving sister chromatid cohesion allows the evolved cells to segregate their chromosomes more accurately at mitosis, avoiding mitotic delays due to the spindle checkpoint, decreasing cell death and increasing fitness (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51963/elife-51963-fig6-v2.jpg)\n\n**Figure 6.:** (A) Amplification of the cohesin loader subunit SCC2 increases cohesin loading and sister chromatid cohesion leading to accurate chromosome segregation (B) Mutations of the replicative helicase (sld5) or in ixr1 stabilize replication forks and ensure the completion of chromosome replication before anaphase.\u00a0(C) Mutations in rad9 abolish the DNA damage checkpoint response triggered by stretches of single strand DNA (ssDNA) and allow faster cell division.\n\nPersistent, cohesin-independent linkages between sister chromatids are an alternative source of segregation errors. These links include unreplicated regions of DNA or un-resolved recombination structures (Ait Saada et al., 2017; Chan et al., 2007). If they persist after the removal of cohesin, they become lingering physical links (anaphase bridges) between sister chromatids that can lead to chromosome breakage or mis-segregation during anaphase (Chan et al., 2009; Gisselsson et al., 2000). Avoiding these problems requires that replication origins fire efficiently and replication forks move continuously. Our analysis of the dynamics of DNA replication argues that a combination of frequent fork stalling and slower origin firing causes under-replication of certain chromosomal regions in the ancestral ctf4\u2206 cells. We found that severe fork stalling in ctf4\u2206 cells frequently occurs near tRNA genes, Long Terminal Repeats (LTRs) and transposable elements (Ty) (Supplementary file 4). These chromosomal features were previously found to be associated with replication pausing sites (Deshpande and Newlon, 1996; Gadaleta and Noguchi, 2017; Zaratiegui et al., 2011), suggesting that the absence of Ctf4 may exacerbate the problems in replicating these regions. We propose that these defects selected for mutations that stabilize the replication forks, allowing the timely completion of genome replication. We speculate that these mutations have the apparently paradoxical effect of accelerating DNA replication by slowing down the replication forks: mutations like sld5-E130K and ixr1\u2206 may slow helicase progression, stabilizing the forks by preventing frequent fork stalling or collapse and producing a higher overall fork velocity (Figure 6B). This hypothesis is consistent with two observations: first, although the sld5 mutation is beneficial in ancestor cells, it decreases the fitness of WT cells (Figure 4\u2014figure supplement 4A), a result we would expect from a slower replicative helicase. Second, reduced dNTPs concentrations reduce fork speed by slowing polymerase incorporation rates (Koren et al., 2010; Pai and Kearsey, 2017; Poli et al., 2012) and inactivating Ixr1 reduces dNTP concentrations (Tsaponina et al., 2011). We tested this prediction by using an experimental system to manipulate dNTP concentrations: decreasing dNTP concentrations increased the fitness of ctf4\u2206 cells, while inducing higher dNTP production reduced fitness (Figure 4\u2014figure supplement 4B).\n\nOur evolved populations also accumulated mutations that inactivated the DNA damage checkpoint (Figure 2B\u2013D). The benefit of these mutations arises from the loss of the DNA damage checkpoint\u2019s ability to delay the start of anaphase (Figure 2E, Figure 2\u2014figure supplement 1B). The absence of Ctf4 induces aberrant DNA structures and ssDNA that induce moderate activation of the checkpoint (Poli et al., 2012), which delays the start of anaphase, increasing doubling time and thus decreasing fitness (Figure 2D\u2013E). Inactivating Rad9 eliminates the delay, shortening the time required for mitosis and increasing fitness (Figure 2E, Figure 2\u2014figure supplement 1C, Figure 6C).\n\nThis solution seems counter-intuitive, as the loss of a safeguard mechanism such as the DNA damage checkpoint should cause genetic instability in cells suffering from replication stress. The resolution of this paradox may lie in the overlapping action of the replication, DNA damage, and spindle checkpoints. We propose that the replication and the spindle checkpoints delay the cell cycle in response to defects that would kill the ancestral ctf4\u2206 cells, such as excessive replication fork collapses and pairs of sister chromatids attached to the same spindle pole, whereas the damage checkpoint responds to defects, like regions of single-stranded DNA, that can be repaired after cell division.\n\n### Epistatic interactions between adaptive mechanisms\n\nWe asked how the mutants we identified and analyzed interacted with each other and whether they could explain the fitness of our evolved populations. Measuring allele frequencies over time and engineering all possible combinations of adaptive mutations allowed us to propose a detailed model for the evolutionary trajectories of our population 5 (EVO5). Segmental amplifications form at a higher frequency than other types of mutation (Lynch et al., 2008; Sharp et al., 2018; Yona et al., 2015); although most are detrimental, the amplification of specific genes can be advantageous and cause rapid adaptation (Adamo et al., 2012; Gresham et al., 2008; Hughes et al., 2000; Payen et al., 2014). Thus, the first event in EVO5 is the spread of a segmental amplification of chromosome IV containing SCC2, which improves fitness by reducing cohesion defects. In this lineage, mutations in the replicative helicase, sld5-E130K, and ixr1-Q332* were then detected almost simultaneously but in different clones. Above, we suggest that both mutations slow replication forks. If there is an optimal fork speed in ctf4\u2206 cells, the presence of a second mutation of this class might be ineffective or even detrimental if the forks move too slowly, explaining the negative epistasis we observed. Because the ixr1 and sld5 mutations improve DNA replication to a similar extent, the two lineages have comparable fitness, explaining the clonal interference that persists for the rest of the experiment. The last mutation in EVO5 is an identical frameshift mutation in the two lineages that inactivates Rad9. Interestingly, loss of function mutations in RAD9, despite the large target size of this gene, only appear relatively late during the experiment (Figure 5A and Figure 5\u2014figure supplement 2). Furthermore, they happen after other mutations have reduced some of the problems imposed by replication stress. This order suggests that a sustainable fitness advantage of mutations of the DNA damage checkpoint may depend on previous changes in the replication forks stability.\n\n### Implications for natural evolution\n\nDespite being conserved across much of evolution, some of the modules that collectively perform chromosome metabolism and maintain genomes show major important differences between clades, even within the eukaryotic kingdom (Akiyoshi and Gull, 2014; Gourguechon et al., 2013; Liu et al., 2009). For instance, a recent study found species in the yeast genus Hanseniaspora that lack several important genes implicated in cell cycle progress and DNA repair, including checkpoint factors such as RAD9 and MAD2 (Steenwyk et al., 2019). Trying to explain these differences is puzzling, especially if ad-hoc selectionist hypotheses are invoked for each different feature. For instance, what could select for a lack of an important safeguard such as the DNA damage checkpoint? Interestingly, the same lineage of Hanseniaspora also lacks CDC13 (Steenwyk et al., 2019), an essential gene in S.\u00a0cerevisiae, implicated in telomere replication. Studies have shown how the lethality of cdc13\u0394 mutants, is suppressed by simultaneous mutations in checkpoint factors, including RAD9 (Ngo and Lydall, 2010). The evolutionary plasticity of chromosome metabolism that we reveal in this work may help to explain differences like these: mutations in ancestral cells, such as the loss of CDC13, could initiate an evolutionary trajectory that progressively modifies modules that are functionally linked and ultimately leads to increased fitness.\n\nBut what are the initial perturbations that trigger such changes in fundamental aspects of cell biology? The ctf4\u2206 cells that we evolved have a 25% fitness difference relative to their wild type ancestors, meaning that they would rapidly be eliminated from any population of reasonable size. Given the evolutionary rarity of major rearrangements in cell biology we can invoke events that are improbable including passing through very small populations bottlenecks or being attacked by selfish genetic elements whose molecular biology targets an important protein in an essential process. If the processes that were damaged during these events, were part of chromosome metabolism, the consequent evolutionary adaptation could lead to changes in the rates at which the structures of genomes evolve. An increase in these rates, in turn, could potentially accelerating speciation by making it easier for populations to acquire meiotically incompatible chromosome configurations.\n\n### Implications for cancer evolution\n\nRemarkably, our experiment recapitulates several phenomena observed during cancer development. Replication stress is thought to be a ubiquitous feature of cancer cells (Macheret and Halazonetis, 2015) with oncogene activation leading to replication stress and genetic instability (Bartkova et al., 2006; Di Micco et al., 2006; Neelsen et al., 2013). The absence of Ctf4 in our ancestor cells causes several phenotypes observed in oncogene-induced DNA replication stress including late-replicating regions, elevated mutation rates, and chromosome instability (Fumasoni et al., 2015; Macheret and Halazonetis, 2015; Mu\u00f1oz and M\u00e9ndez, 2017). Furthermore, simply by propagating cells, we generated evolved lines that mimic many features seen in tumors: (a) individual final populations contain genetically heterogeneous clones, often with different karyotypes characterized by aneuploidies and chromosomal rearrangements (Davoli et al., 2013; Laughney et al., 2015; Lengauer et al., 1998), (b) evolved lineages display altered DNA replication profiles compared both to WT cells and their mutant ancestors (Amiel et al., 1999; Donley and Thayer, 2013), (c) several lines have inactivated the DNA damage checkpoint (Hollstein et al., 1991; Schultz et al., 2000), and d) improved sister chromatid cohesion (Rhodes et al., 2011; Sarogni et al., 2019; Xu et al., 2011). All these features are adaptive in our populations, suggesting that similar changes in cancer cells may be the result of selection and contribute to the accumulation of other cancer hallmarks during cancer evolution. The similarities between tumorigenesis and our experiment lead us to speculate that a major selective force in the early stages of tumor evolution is the need to counteract the fitness costs of replication stress. Understanding the evolutionary mechanisms and dynamics of the adaptation to replication stress could therefore shed light on the early stage of tumor development.\n\n### Perspective\n\nIn this work, we identified the main adaptive strategies that cells use to adapt to DNA replication stress induced by the absence of Ctf4. Our results reveal that defects in one function can be compensated for by two types of mutations: those in the original function and those in functions that are biologically coupled to it. Focusing on less common adaptive strategies, apparently unlinked to chromosome metabolism, could therefore potentially identify novel players that affect genome stability. It would also be interesting to induce DNA replication stress by other means, such as de-regulating replication initiation or by inducing re-replication. Analyzing the response to these challenges will reveal whether the DNA replication module has a common or diverse set of evolutionary strategies to different perturbations. Finally, this approach could be extended to many other types of cellular stress, potentially revealing other molecular adaption aspects that could collectively help understanding cellular evolution.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>W303</td>\n      <td>Murray lab</td>\n      <td>W1588</td>\n      <td>The complete list of derived strains is available in Supplementary file 5</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nextera DNA Library Prep (24 Samples)</td>\n      <td>Illumina</td>\n      <td>15028212</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nextera Index kit (96 Indices)</td>\n      <td>Illumina</td>\n      <td>15028216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>High Sensitivity D1000 ScreenTape</td>\n      <td>Agilent</td>\n      <td>5067\u20135584</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Python</td>\n      <td>www.python.org</td>\n      <td>RRID:SCR_008394</td>\n      <td>Custom pipelines available at github.com/marcofumasoni/Fumasoni_and_Murray_2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>fiji.sc</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Strains\n\nAll strains were derivatives of a modified version (Rad5+) of S. cerevisiae strain W303 (leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15, RAD5+). Supplementary file 5 lists each strain\u2019s genotype. The ancestors of WT and ctf4\u0394 strains were obtained by sporulating a CTF4/ctf4\u0394 heterozygous diploid. This was done to minimize the selection acting on the ancestor strains before the beginning of the experiment. Diploid stains were grown on YPD, transferred to sporulation plates (sodium acetate 0.82%, potassium chloride 0.19%, sodium chloride 0.12%, magnesium sulfate 0.035%) and incubated for four days at 25\u00b0C. Tetrads were re-suspended in water containing zymolyase (Zymo research, RRID:SCR_008968, Irvine, CA, US, 0.025 u/\u03bcl), incubated at 37\u00b0C for 45 s, and dissected on a YPD plate using a Nikon eclipse E400 microscope equipped with a TDM micro-manipulator. Spores were allowed to grow into visible colonies and genotyped by presence of genetic markers and PCR.\n\n### Media and growth conditions\n\nStandard rich medium, YPD (1% Yeast-Extract, 2% Peptone, 2% D-Glucose) was used for all experiments except in the experiment in Figure 4\u2014figure supplement 4B where YP + 2% raffinose and YP + 2% raffinose + 2% galactose were also used. Cells were synchronized either in metaphase, for 3 hr in YPD containing nocodazole (8 \u00b5g/ml, in 1% DMSO) or in G1, for 2 hr in YPD, pH 3.5 containing \u03b1-factor (3 \u00b5g/ml). Synchronization was verified by looking at cell morphology. In the experiment in Figure 2E, cells were then washed twice in YPD containing 50 \u00b5g/ml pronase (Zymo research) and released in S-phase at 30\u00b0C in YPD. \u03b1-factor (3 \u00b5g/ml) was added again at 30 min to prevent a second cell cycle from occurring.\n\n### Experimental evolution\n\nThe 16 populations used for the evolution experiment were inoculated in glass tubes containing 10 ml of YPD from eight ctf4\u0394 colonies (EVO1-8) and 8 WT colonies (EVO9-16). All the colonies were derived by streaking out MATa (EVO1-4 and EVO25-28) or MAT\u03b1 (EVO5-9 and EVO29-32) ancestors. Glass tubes were placed in roller drums at 30\u00b0C and grown for 24 hr. Daily passages were done by diluting 10 \u03bcl of the previous culture into 10 ml of fresh YPD (1:1000 dilution, allowing for approximately 10 generations/cycle). All populations were passaged for a total of 100 cycles (\u22481000 generations). Every five cycles (\u224850 generations) 800 \u03bcl of each evolving population was mixed with 800 \u03bcl of 30% v/v glycerol and stored at \u221280\u00b0C for future analysis (Figure 1B). After 1000 generations four evolved clones were isolated from the each of the eight ctf4\u0394 evolved populations (a total of 32 clones) by streaking cells on a YPD plate. Single colonies were then grown in YPD media and saved in glycerol at \u221280\u00b0C as for the rest of the samples.\n\n### Whole genome sequencing\n\nGenomic DNA library preparation was performed as in Koschwanez et al. (2013) with an Illumina (RRID:SCR_010233, San Diego, CA, US) Nextera DNA Library Prep Kit. Libraries were then pooled and sequenced either with an Illumina HiSeq 2500 (125bp paired end reads) or an Illumina NovaSeq (150 bp paired end reads). The SAMtools software package (RRID:SCR_002105, samtools.sourceforge.net) was then used to sort and index the mapped reads into a BAM file. GATK (RRID:SCR_001876, www.broadinstitute.org/gatk; McKenna et al., 2010) was used to realign local indels, and VarScan (RRID:SCR_006849, varscan.sourceforge.net) was used to call variants. Mutations were found using a custom pipeline written in Python (RRID:SCR_008394, www.python.org). The pipeline (github.com/koschwanez/mutantanalysis) compares variants between the reference strain, the ancestor strain, and the evolved strains. A variant that occurs between the ancestor and an evolved strain is labeled as a mutation if it either (1) causes a non-synonymous substitution in a coding sequence or (2) occurs in a regulatory region, defined as the 500 bp upstream and downstream of the coding sequence (Supplementary file 1).\n\n### Identification of putative adaptive mutations\n\nThree complementary approaches were combined to identify the putative modules and genes targeted by selection.\n\n#### Convergent evolution on genes\n\nThis method relies on the assumption that those genes that have been mutated significantly more than expected by chance alone, represent cases of convergent evolution among independent lines. The mutations affecting those genes are therefore considered putatively adaptive. The same procedure was used independently on the mutations found in WT and ctf4\u0394 evolved lines:\n\nWe first calculated per-base mutation rates as the total number of mutations in coding regions occurring in a given background (ctf4\u2206 evolved or WT evolved), divided by the size of the coding yeast genome in bp (including 1000 bp per ORF to account for regulatory regions)\n\n$$\n\\lambda=\\frac{SNPs+indels}{bpcoding}\n$$\n\nIf the mutations were distributed randomly in the genome at a rate \u03bb, the probability of finding n mutations in a given gene of length N is given by the Poisson distribution:\n\n$$\n\u03a1nmutationsgeneoflengthN=\\frac{(\\lambdaN)^{n}e^{-\\lambdaN}}{n!}\n$$\n\nFor each gene of length N, we then calculated the probability of finding\u00a0\u2265n mutations if these were occurring randomly.\n\n$$\nP(\\geqn\u00a0mutations|gene\u00a0of\u00a0length\u00a0N)=\u00a0\\sumk=n\u221e\\frac{(\\lambdaN)^{k}e^{\u2212\\lambdaN}}{k!}=1\u2212\u00a0\\frac{\u0393\u00a0(\u00a0n+1,\\lambdaN)\u00a0}{n!}\n$$\n\n(Where $\u0393$ is the upper incomplete gamma function) which gives us the p-value for the comparison of the observed mutations with the null, Poisson model. In order to decrease the number of false positives, we then performed multiple-comparison corrections. The more stringent Bonferroni correction (\u03b1=0.05) was applied on the WT evolved mutations dataset, while Benjamini-Hochberg correction (\u03b1=0.05) was used for the ctf4\u0394 mutation dataset. Genes that were found significantly selected in the evolved WT clones (after Bonferroni correction) were removed from the list of evolved ctf4\u0394 strains. This is because, since they were target of selection even in WT cells, they are likely involved in processes that are un-related to DNA replication and are instead associated with adaptation to sustained growth by serial dilutions. Supplementary file 2 lists the mutations detected in evolved ctf4\u0394 clones, after filtering out those that occurred in genes that were significantly mutated in the WT populations. Genes significantly selected in these clones are shown in dark gray (after Benjamini-Hochberg correction with \u03b1=0.05). The custom pipeline used for the data analysis is available on GitHub: https://github.com/marcofumasoni/Fumasoni_and_Murray_2019 (copy archived at https://github.com/elifesciences-publications/Fumasoni_and_Murray_2019).\n\n#### Bulk segregant analysis\n\nBulk segregants analysis experimentally identifies putative adaptive mutations present in a given evolved clone. Briefly, a clone is selected from the population and then backcrossed to a derivative of the WT ancestor. The resulting diploid is sporulated, allowing the mutant alleles accumulated during 1000 generations to randomly segregate among the haploid progeny. The haploid progeny is then selected for growth (and for ctf4\u0394) for 50\u201380 generations in rich media. This regime, as in the experimental evolution, selects for cells with higher fitness. The cells with causal alleles therefore quickly increase their frequency within the selected population. Non-causal alleles segregate randomly and, since they don\u2019t contribute to fitness, they are expected to be present in half of the cells at the end of the progeny selection. Deep sequencing of the genomic DNA extracted from the selected progeny population reveal the alleles frequencies and allows the identification of the ones that segregate with the evolved phenotype (frequency\u00a0>70% in our case). Bulk segregant analysis was adapted from Koschwanez et al. (2013). One clone per population was selected for further analysis (Figure 1\u2014figure supplement 2). In these clones, the original ctf4\u0394 genetic marker ble was substituted with a KanMX6 cassette by homologous recombination, to allow for a more efficient selection. ura3-1 evolved clones were mated with either a MATa or MAT\u03b1, ura3::NatMX4-pSTE2-URA3 derivative of the WT ancestor. In this strain, the endogenous URA3 promoter is replaced with the STE2 promoter, which is only induced in MATa cells, making it possible to select for MATa spores after meiosis. Mating was performed by mixing cells from the two strains together on a YPD plate with a toothpick and growing overnight at 30\u00b0C. The mating mixtures were then plated on double selective media, and a diploid strain from each cross was selected from a colony on the plate. To sporulate the diploid strains, cultures were grown to saturation in YPD, and then diluted 1:100 into YP 2% acetate. The cells were grown in acetate for 12 hr., pelleted and resuspended in 2% acetate. After 5 days of incubation on a roller drum at 25\u00b0C, sporulation was verified by observing the formation of tetrads under the microscope. To digest ascii, 10 ml of the sporulated culture was pelleted and resuspended in 500 \u00b5l with 250 units of Zymolyase for 1 hr. at 30\u00b0C. 4000 \u00b5l of water and 500 \u00b5l of 10% Triton X-100 were added, and the digested spores were then sonicated for 1 min to separate the tetrads. The spores were spun down slowly (6000 rpm) and resuspended in 50 ml of -URA +G418 medium. This medium selects for ctf4\u0394 haploid MATa cells: neither haploid MAT\u03b1 nor diploid MATa/MAT\u03b1 cells can express URA3 from the STE2 promoter. Each culture was then diluted 1:100 in fresh -URA + G418 medium for 10 consecutive passages, allowing for \u224866 generations to occur. Genomic DNA was extracted from the final saturated culture and used for library preparation and whole genome sequencing as described.\n\n#### Convergent evolution on modules\n\nStatistical methods to find frequently mutated genes are focused on individual genes that contribute to an evolved trait. Functions that can be modified by affecting several genes would be therefore under-represented in the previous analysis. To account for this, we looked for gene ontology (GO) terms enriched among the mutations found to be positively selected in ctf4\u0394 evolved clones (Supplementary file 1, dark rows), or found segregating with the evolved phenotype by bulk segregant analysis (Figure 1\u2014figure supplement 2). The combined list of mutations was input as \u2018multiple proteins\u2019 in the STRING database, which reports on the network of interactions between the input genes (https://string-db.org). Several GO terms describing pathways involved in the DNA and chromosome metabolism were found enriched among the putative adaptive mutations provided (Figure 1\u2014figure supplement 3 and Supplementary file 3). Since GO terms are often loosely defined and partially overlapping, we manually identified, based on literature search, four modules as putative targets of selection: DNA replication, chromosome segregation, cell cycle checkpoints, and chromatin modifiers. The full list of mutated genes observed in the evolved ctf4\u0394 clones was then used as input in the STRING database (RRID:SCR_005223). This was done to account for genes, that despite not being identified as containing adaptive mutations by the previous techniques, are part of modules under selection: mutations in these genes could have contributed to the final phenotype. The interaction network between mutated genes was downloaded and curated in Cytoscape (RRID:SCR_003032, https://cytoscape.org/). For clarity of representation, only those nodes strongly connected to the previously identified modules are shown in Figure 1D.\n\n### Fitness assays\n\nTo measure relative fitness, we competed the ancestors and evolved strains against reference strains. Both WT (Figure 1C, Figure 1\u2014figure supplement 1, Figure 4\u2014figure supplement 4A, Figure 5\u2014figure supplement 2) and ctf4\u0394 (Figure 2D, Figure 2\u2014figure supplement 1C, Figure 3C, Figure 4C, Figure 4\u2014figure supplement 4A\u2013B, Figure 5A) reference strains were used. A pFA6a-prACT1-yCerulean-HphMX4 plasmid was digested with AgeI and integrated at one of the ACT1 loci of the original heterozygous diploid (CTF4/ctf4\u0394) strain. This allow for the expression of fluorescent protein yCerulean under the strong actin promoter. The heterozygous diploid was then sporulated and dissected to obtain fluorescent WT or ctf4\u0394 reference haploid strains. For measuring the relative fitness, 10 ml of YPD were inoculated in individual glass tubes with either the frozen reference or test strains. After 24 hr. the strains were mixed in fresh 10 ml YPD tubes at a ratio dependent on the expected fitness of the test strain compared to the reference (i.e. 1:1 if believed to be nearly equally fit) and allowed to proliferate at 30\u00b0C for 24 hr. 10 \u03bcl of samples were taken from this mixed culture (day 0) and the ratio of the two starting strains was immediately measured. Tubes were then cultured following in the same conditions as the evolution experiment by diluting them 1:1000 into fresh medium every 24 hr for 4 days, monitoring the strain ratio at every passage. Strain ratios and number of generations occurred between samples were measured by flow cytometer (Fortessa, BD Bioscience, RRID:SCR_013311, Franklin Lakes, NJ, US). Ratios r were calculated based on the number of fluorescent and non-fluorescent events detected by the flow cytometer:\n\n$$\nr=\\frac{NonFluorescent_{events}}{Fluorescent_{events}}\n$$\n\nGenerations between time points g were calculated based on total events measured at time 0 hr. and time 24 hr.:\n\n$$\ng=\\frac{log_{10}\u2061(events_{t24}/events_{t0})}{log_{10}\u20612}\n$$\n\nLinear regression was performed between the ($g ,\u2061log_{e}\u2061r$) points relative to every sample. Relative fitness was calculated as the slope of the resulting line. The mean relative fitness s was calculated from measurements obtained from at least three independent biological replicates. Error bars represent standard deviations. The P-values reported in figures are the result of t-tests assuming unequal variances (Welch\u2019s test). Note that the absolute values of relative fitness change depending on the reference strain used: a strain that shows 27% increased fitness when measured against ctf4\u0394 (that is 27% less fit then WT), does not equate the WT fitness. This is because a 27% increase of 0.73 (ctf4\u0394 fitness compared to WT) gives 0.93, hence a 7% fitness defect compared to WT.\n\n### Cell cycle profiles\n\nCell cycle analysis was conducted as previously described (Fumasoni et al., 2015). In brief, 1 \u00d7 107 cells were collected from cultures by centrifugation, and resuspended in 70% ethanol for 1 hr. Cells were then washed in 50 mM Tris-HCl (pH 7.5), resuspended in the same buffer containing 0.4 \u03bcg/ml of RNaseA and incubated at 37\u00b0C for at least 2 hr. Cells were collected and further treated overnight at 37\u00b0C in 50 mM Tris-HCl (pH 7.5) containing proteinase K (0.4 \u03bcg/ml). Cells were then centrifuged and washed in 50 mM Tris-HCl (pH 7.5). Samples were then diluted 10\u201320-fold in 50 mM Tris-HCl (pH 7.8) containing 1 mM SYTOX green, and analyzed by flow cytometer (Fortessa, BD Bioscience). The FITC channel was used to quantify the amounts of stained-DNA per cell. 10000 events were acquired for each sample. Cell cycle profiles were analyzed and visualized in FlowJo (RRID:SCR_008520, BD Bioscience). The percentage of genome replicated at 30 min was calculated based on the cell cycle profile as follow $G_{rep}=DNAcontentmode/2C-1C*100$. The height of the 1C and 2C peaks was obtained as the max cells count reached by the respective peak. For both the percentage of genome replicated at 30 min and the 1C/2C ratio, the mean was calculated from values obtained with three independent biological replicates. Error bars represent standard deviations. The P-values reported are the result of t-tests assuming unequal variances.\n\n### Copy number variations (CNVs) detection by sequencing\n\nWhole genome sequencing and read mapping was done as previously described. The read-depths for every unique 100 bp region in the genome were then obtained by using the VarScan copynumber tool. A custom pipeline written in python was used to visualize the genome-wide CNVs. First, the read-depths of individual 100 bp windows were normalized to the genome-wide median read-depth to control for differences in sequencing depths between samples. The coverage of the ancestor strains was then subtracted from the one of the evolved lines to reduce the noise in read depth visualization due to the repeated sequences across the genome. The resulting CNVs were smoothed across five 100 bp windows for a simpler visualization. Final CNVs were then plotted relative to their genomic coordinate at the center of the smoothed window. Since the WT CNVs were subtracted from the evolved CNVs, the y axis refers to the copy number change occurred during evolution (i.e. +1 means that one an extra copy of a chromosome fragment has been gained). The custom pipeline used for the data analysis is available on GitHub: https://github.com/marcofumasoni/Fumasoni_and_Murray_2019.\n\n### Premature sister chromatid separation assay\n\nLogarithmically growing cells were arrested in metaphase as previously described. Samples were then collected and fixed in 4% formaldehyde for 5 min at room temperature. Cells were washed In SK buffer (1M sorbitol, 0.05 M K2PO4) and sonicated for 8 s prior to microscope analysis. Images were acquired with a Nikon eclipse Ti spinning-disk confocal microscope using a 100X oil immersion lens. Fluorescence was visualized with a conventional FITC excitation filter and a long pass emission filter. Images were analyzed using Fiji (RRID:SCR_002285, https://fiji.sc/). At least 100 cells were analyzed to calculate the percentage of premature chromatid Separation for each strain. The mean value was calculated from measurements obtained with three independent biological replicates. Error bars represent standard deviations. The P-values reported are the result of t-tests assuming unequal variances.\n\n### DNA replication profiles\n\nDNA replication profiling was adapted from M\u00fcller et al. (2014); Saayman et al., 2018; Bar-Ziv et al. (2016). Genomic DNA and library preparation were performed independently on all the collected samples as previously described. Repeated sequences (such as telomeres, rDNA and Ty elements) were excluded from the CNV analysis as non-uniquely mapped reads can alter local read-depth and generate artefacts. A custom python script was used to analyze the CNVs from multiple time points from the same strain to produce DNA replication profiles. Read-depths of individual 100 bp windows were normalized to the genome-wide median read-depth to control for differences in sequencing depths between consecutive samples. To allow for intra-strain comparison, coverage was then scaled according to the sample DNA content measured as the median of the cell-cycle profile obtained by flow cytometry. The resulting coverage was then averaged across multiple 100 bp windows and a polynomial data smoothing filter (Savitsky-Golay) was applied to the individual coverage profiles to filter out noise. Replication timing trep is defined as the time at which 50% of the cells in the population replicated a given region of the genome (Figure 4\u2014figure supplement 2), which is equivalent to an overall relative coverage of 1.5x, since 1x corresponds to an unreplicated region and 2x to a fully replicated one. The replication timing trep was calculated by linearly interpolating the two time points with coverage lower and higher than 1.5x and using such interpolation to compute the time corresponding to 1.5x coverage. Final trep were then plotted relative to their window genomic coordinates. Unreplicated regions at 45 min were calculated as the sum of all regions with trep\u00a0>45 min. To find DNA replication origins, the trep profiles along the genome were filtered using a Fourier low-pass filter to remove local minima and then used to find local peaks. Only origins giving rise to long replicons were used to measure fork velocity. Fork velocity was calculated by dividing the distance between the origin and the closest termination site by the time required to replicate the region. Duplicate replication profiles were obtained from two experiments performed on biological replicates. Reproducibility was confirmed with qualitatively and quantitatively comparable results across duplicates. The data obtained from the first duplicate are reported. The reliability of the pipeline was assessed by qualitatively and quantitatively comparing our WT results with previously reported measurements (M\u00fcller et al., 2014; Raghuraman et al., 2001). The custom pipeline used for the data analysis is available on GitHub: https://github.com/marcofumasoni/Fumasoni_and_Murray_2019.\n\n### The correlation of chromosomal features with fork-stall zones\n\nWe first identified chromosomal locations where fork stalling in the ancestral ctf4\u2206 cells prevented the completion of DNA replication by 45 min (fork-stall zones). The fork position at 45 min was considered the center of the fork-stall zones, while 5 kb upstream and downstream the fork site were included in the analysis to account for features in the proximity of the fork that could have interfered with its progression. We then examined the sequences within these windows to determine whether various chromosomal features were over- or underrepresented. We considered features that previous studies have found to be associated with hotspots for lesions and sources of genetic instability. We first counted how many times a given feature fell in a fork-stall zone. Then we calculated the expected number of features in these zones based on the total number of features in the genome and the percentage of the genome represented by fork-stall zones. We compared these numbers by \u03c72 analysis and reported the associated p-values (Supplementary file 4). The number of tRNA genes, transposable elements, LTRs, ARS elements, snRNA and snoRNA genes and centromeres in the genome were determined using YeastMine (https://yeastmine.yeastgenome.org/). G4 sequences were obtained from Capra et al. (2010). Highly-(top 5%) and weakly-(least 5%) transcribed genes were identified from the data in Nagalakshmi et al. (2008). Rrm3 binding sites and regions with high levels of \u03b3H2AX were derived from Azvolinsky et al. (2006) and Szilard et al., 2010, respectively. Site of DNA replication termination were derived from valleys in the tRep signal of the wild type strain (Figure 4\u2014figure supplement 3, green signal). The tandemly repeated sequences, with a minimal repeat tract of twenty-four bases, were obtained from the tandem-repeat-database (TRDB; https://tandem.bu.edu/cgi-bin/trdb/trdb.exe).\n\n### Analysis of allele frequency by sanger sequencing\n\nAllele frequencies within populations were estimated as in Wildenberg and Murray (2014). In brief, chromatograms obtained by sanger sequencing were used to estimate the fraction of mutant alleles in a population at different time points during the evolution. The fraction of mutant alleles in the population was assumed to be the height of the mutant allele peak divided by the height of the mutant allele peak plus the ancestor allele peak. The values from two independent sanger sequencing reactions, obtained by primers lying upstream and downstream the mutations, were averaged to obtain the final ratios. Error bar edges represent the ratios obtained by the two independent sequencing reactions. Values below the approximate background level were assumed to be zero, and values above 95% were assumed to be 100%.\n\n### Segmental amplification detection by digital PCR\n\nDroplet digital PCR was used to detect the amplifications of the fragment containing SCC2 at different time points during evolution. Genomic DNA was prepared and diluted accordingly. Bio-Rad (RRID:SCR_008426, Hercules, CA, US) ddPCR supermix for probes (no dUTP) was used to prepare probes specific to SCC2 and the centromere of chromosome IV. A Bio-Rad QX200 Droplet Generator was used to generate droplets containing genomic DNA and probes. The droplet PCR was performed in a Bio-Rad thermocycler and analyzed with a Bio-Rad QX200 Droplet Reader. At least 10,000 droplets were acquired for each strain. Analysis was performed on biological duplicates with comparable results. Data obtained with the first duplicate are shown. Droplet analysis was performed with QuantaSoft software (Bio-Rad). SCC2/Centromere ratios were then used to quantify SCC2 copy numbers. Error bars represent Poisson 95% confidence intervals. To estimate the percent of cells carrying the SCC2 amplification within a population we assumed that the allele spreading in the population was a duplication of SCC2 (as indicated by the EVO5 copy number analysis). Values above 95% were assumed to be 100%.\n",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "4f51da2a-bda4-47ef-9f01-24402a6518bb",
+      "submission_id": "c01e0d88-7c81-4b22-8118-3fd62afe13d8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kevin J Verstrepen, VIB-KU Leuven Center for Microbiology Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51963.sa1](https://doi.org/10.7554/eLife.51963.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour paper is a beautiful example of how the fitness effects due to perturbation of a conserved gene can be surprisingly easily, at least in lab conditions, mitigated by compensatory mutations, and how these suppressor mutations are unpredictable and in turn provide new insight into the function of the originally perturbed gene.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The evolutionary plasticity of chromosome metabolism allows adaptation to DNA replication stress\" for consideration by eLife.\n\nYour article has now been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Anna Selmecki (Reviewer #2); Conrad Nieduszynski (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll reviewers agree that the paper is interesting, constitutes a large body of work and is exceptionally well-written. On the other hand, the reviewers also struggled a bit to answer the question why this study belongs in eLife. After discussion of this, it became clear that part of the problem might be in the fact that the paper falls a bit between a study on evolutionary mechanisms and a study on replication stress. This is of course not a problem in itself and could in fact be a strong point. However, in this case, it proved more difficult to grasp the central question, the main conclusions, and their novelty.\n\nEncouragingly, the cover letter separates both aspects quite well, and seems to highlight the evolutionary angle as the key message. It is known that (isolated) lineages can overcome severe fitness defects related to gene deletion; including deletion of highly conserved genes that are marked as \"essential\". However, as you point out in the cover letter, it is true that your study does a remarkable job in revealing the actual suppressor mutations and their interactions, but to the reviewers, this message is lost a bit in the paper, possibly because the Introduction starts more from the angle of chromosome biology.\n\nOn the other hand, the reviewers felt that results are perhaps less conclusive when it comes to yielding insight into the process of replication. While the results show how different compensatory mutations in cohesion loading, cell cycle checkpoints and replication for progression can mitigate the loss of Ctf4, the reviewers agree that these aspects have perhaps not been studied in sufficient detail to be sure about the underlying mechanism and the role of Ctf4, and that they could therefore perhaps be more critically discussed and grouped in a separate paragraph in the Discussion section.\n\nIn addition, we would ask you to take the other main comments of the reviewers into account. Specifically, both reviewer 1 and 2 ask to better highlight previous studies that have examined the evolutionary routes that compensate gene loss, and explain better how this paper goes beyond these previous studies.\n\nReviewer #1:\n\nThis paper investigates the evolutionary routes that mitigate the effect of inactivation of Ctf4, a protein that coordinates replication fork activity in the model yeast Saccharomyces cerevisiae. The results show that after 1000 generations, different lines find distinct mutational paths to compensate for the loss of Ctf4, but while the exact driver mutations differ, each path combines changes in DNA replication, DNA damage checkpoint and chromatid cohesion.\n\nThis is a solid and beautifully written study that provides new insight into evolutionary response to mutations in crucial and highly conserved parts of the DNA replication machinery. Specifically, it is interesting to see how parallel evolution hints at the interplay between different aspects of DNA replication (replication fork progression, DNA damage checkpoints, chromosome alignment and cohesion). Perhaps equally importantly, the authors also show some similarities to the mutational trajectories of some tumors in higher eukaryotes.\n\nThe most important question is what truly novel insight this study brings. The conclusions touch upon different fields (evolution, DNA replication and cancer), but it is unclear if the results really provide sufficient novel and general insight into any of these to merit publication in eLife. Several studies have evolved lines in which an important (or even \"essential\") gene was inactivated, and it has already been shown that cells can often evolve suppressor mutations. Moreover, the mutational paths found in this study seem highly unlikely in natural populations because the Ctf4 deletion strain suffers such a high fitness defect. While there are some striking parallels with tumor progression, it is also unclear whether the deletion of Ctf4 really provides a solid model for replication stress and the mutational path in tumors. Lastly, whereas the compensatory mutations provide some clues into the function of Ctf4 (productive loading of cohesin?), these would need to be verified.\n\nSo, in a way, while the paper touches upon several very interesting basic questions and important phenomena, none of these are followed through in detail. I therefore wonder whether it would be better to pick one of the 3 research lines and really focus on that one to dig a bit deeper, with some obvious additional follow-up experiments and deeper discussion? Obviously, this does not imply that there would not be room to also point out parallels with the other phenomena in the Discussion section; but by picking one major line, perhaps the paper would feel more like a complete story and would in fact draw more instead of less attention?\n\nReviewer #2:\n\nThe mechanistic machinery that performs DNA replication is highly conserved throughout organismal evolution, yet we still lack fundamental knowledge of key machinery as well as an overall understanding for how these systems evolved and are maintained. While it's not surprising that adaptation occurred so rapidly for the ancestral ctf4 strain, because of its massive fitness defect, it is fascinating how the evolved lineages sequentially modified chromosome cohesion, altered the speed of replication forks, and lost a key cell-cycle regulator of DNA damage. Experimental evolution enables counter-intuitive or detrimental solutions to be explored, while only successful mutant combinations in the correct order are selected. The manuscript was well written and easily understandable, often with definitions inserted right where they were helpful.\n\nReviewer #3:\n\nThe authors have undertaken an experimental evolution study in budding yeast cells experiencing constitutive DNA replication stress. The stress was a consequence of the deletion of a non-essential replication factor, CTF4. Interestingly the authors find that within 1000 generation (and three adaptive steps) cells have recovered much of the fitness cost of CTF4-deletion. The three steps are segmental duplication of the cohesion loader SCC2, mutations associated with reduced replication fork velocity and inactivation RAD9 (a checkpoint mediator).\n\nOverall, the findings are generally convincing with potentially important parallels to speciation and cancer development. In my opinion the greatest weakness of this study is the degree to which the authors have had to infer how the discovered mutations might mechanistically give adaptive advantage. For example, increased copy number of SCC2 is implied to lead to greater cohesin loading, however the authors haven't directly shown greater cohesin loading (although to their credit they have shown reduced premature chromatid separation). The SLD5 and IXR1 mutations are proposed to give reduced fork velocity, but this isn't demonstrated. Loss of RAD9 is suggested to allow post-mitotic completion of DNA replication, but again this isn't demonstrated (e.g. RPA foci number increased). I think firming up these inferred mechanisms is probably beyond the scope of this study, but I'm still slightly disappointed that the authors weren't able to make more progress on this given how clearly they present these models in Figure 6.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The evolutionary plasticity of chromosome metabolism allows adaptation to constitutive DNA replication stress\" for further consideration by eLife. Your revised article has been evaluated by Jessica Tyler (Senior Editor) and a Reviewing Editor, as well as one of the original reviewers.\n\nWe appreciate your efforts in response to our concerns. The manuscript has been much improved, but we would still encourage you to more explicitly connect the hypotheses, experiments and discussion; and to stress the main conclusions and novel insight into the evolution of conserved genes (for details, see the comments of reviewer #2 below).\n\nReviewer #1:\n\nI appreciate the authors' efforts to address our concerns. I believe the text now better reflects the main impact of the study and I support publication in eLife.\n\nReviewer #2:\n\nOverall the reviewers addressed the majority of my critiques sufficiently.\n\nHowever, the broader concerns of the review group, specifically the impact of the observations about the 'overall process of evolutionary adaptation' were addressed in a less-compelling way. The authors state, \"Our goal, however, was to provide a comprehensive account of mutations interact with each other to explain the overall process of evolutionary adaptation.\" (I assume this should say of how mutations interact, or what mutations interact?) Either way, there is conflict with this statement and the proposed hypothesis. This hypothesis is not addressed with the experiments.\n\nThe hypothesis: \"One hypothesis is that because so many replication proteins are essential, the observed differences can only be obtained by extremely slow evolutionary processes that require many successive mutations of small effect and happen over millions of generations. Alternatively, the DNA replication module could accommodate substantial changes within hundreds or thousands of generations, but in order to explain the overall conservation of DNA replication, such events would have to be rare compared similar phenomena affecting less conserved modules. To distinguish between these two hypotheses, we followed the evolutionary response to a genetic perturbation of DNA replication.\"\n\nThe experiments: using a ctf4 mutant with extremely low fitness, do not address the differences in rates or frequency of mutations acquired during the evolutionary process. These experiments determined that evolution could occur, and mutations were acquired within 100-1000 generations, but whether these are rare or not was not determined (compared to similar phenomena perhaps affecting a less conserved module with the same fitness defect, for example). I find the point that DNA replication module can evolve seems obvious (is has occurred in some examples provided!). If it was shown to be non-evolvable in previous studies, what should readers conclude from the comparison of the current study and this previous study? What have we learned about the proposed hypotheses?\n",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "05190c86-feca-4d39-84db-04e14926fc15",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C1",
+      "claim": "Ctf4 is a homo-trimer that serves as a structural hub within the replisome and coordinates different aspects of DNA replication by binding the replicative helicase, the primase, and other factors recruited to the replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "Ctf4 is a homo-trimer, that serves as a structural hub within the replisome and coordinates different aspects of DNA replication by binding the replicative helicase, the primase, and other factors recruited to the replication fork (Figure 1A; Gambus et al., 2009; Samora et al., 2016; Simon et al., 2014; Tanaka et al., 2009; Yuan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Gambus et al., 2009; Samora et al., 2016; Simon et al., 2014; Tanaka et al., 2009; Yuan et al., 2019) and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "6f751f42-20fc-43ed-945d-3c768718499e",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C2",
+      "claim": "In the absence of Ctf4, cells experience several problems in fork progression leading to the accumulation of defects commonly associated with DNA replication stress, such as single-stranded DNA gaps and altered replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Ctf4, cells experience several problems in fork progression leading to the accumulation of defects commonly associated with DNA replication stress (Mu\u00f1oz and M\u00e9ndez, 2017), such as single-stranded DNA gaps and altered replication forks (Abe et al., 2018; Fumasoni et al., 2015; Kouprina et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Mu\u00f1oz and M\u00e9ndez, 2017; Abe et al., 2018; Fumasoni et al., 2015; Kouprina et al., 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "60e035e3-061c-474d-8057-6dd6a6539940",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C3",
+      "claim": "Ctf4 is essential for viability in vertebrates, insects, and some fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Ctf4 is essential for viability in vertebrates (Abe et al., 2018; Yoshizawa-Sugata and Masai, 2009), insects (Gosnell and Christensen, 2011), and some fungi (Harris and Hamer, 1995; Williams and McIntosh, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Abe et al., 2018; Yoshizawa-Sugata and Masai, 2009; Gosnell and Christensen, 2011; Harris and Hamer, 1995; Williams and McIntosh, 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "433bcda2-9bc0-4411-8bc5-78e9e6eca755",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C4",
+      "claim": "Ctf4 cannot be detected in prokaryotes, where there is a direct physical linkage between the primase (DnaG) and the helicase (DnaB).",
+      "claim_type": "EXPLICIT",
+      "source": "but cannot be detected in prokaryotes, where there is a direct physical linkage between the primase (DnaG) and the helicase (DnaB) (Lu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (Lu et al., 1996).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "e013fcec-4d24-475c-a83f-c1a6f046384d",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C5",
+      "claim": "ctf4\u0394 cells display severe growth defects, with a fitness decrease of approximately 25% relative to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Kouprina et al., 1992; Miles and Formosa, 1992), ctf4\u0394 cells display severe growth defects, which we quantified as a fitness decrease of approximately 25% relative to WT (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations (Kouprina et al., 1992; Miles and Formosa, 1992) and experimental data shown in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "3bba9597-88d6-4766-b559-e5d2afc133c2",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C6",
+      "claim": "Eight parallel populations of ctf4\u0394 cells were evolved for 1000 generations by serial dilutions in rich media.",
+      "claim_type": "EXPLICIT",
+      "source": "We then evolved eight parallel populations of each genotype for 1000 generations by serial dilutions in rich media, freezing population samples every 50 generations (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in the methods and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "6c675a3c-d775-42a2-b88f-19b5945ddaf6",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C7",
+      "claim": "The fitness of evolved ctf4\u0394 populations increased by an average of 17 \u00b1 0.2% after 1000 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that the fitness of the evolved ctf4\u2206 populations rose by 17 \u00b1 0.2% (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "0b6074f0-7da4-46b4-a57a-3d61109d7936",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C8",
+      "claim": "The fitness of evolved wild type populations increased by an average of 4.0 \u00b1 0.3% after 1000 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "the evolved WT populations increased their fitness by an average of 4.0 \u00b1 0.3% (Figure 1\u2014figure supplement 1), a level similar to previous experiments (Buskirk et al., 2017; Lang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 1\u2014figure supplement 1 and comparison to previous experiments (Buskirk et al., 2017; Lang et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "b727a5a9-febe-4b90-a5b6-e5302d8d7550",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C9",
+      "claim": "Evolved ctf4\u0394 populations accumulated mutations in genes enriched for several aspects of chromosome metabolism, including DNA replication, chromosome segregation, cell cycle checkpoint, and chromatin remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed an enrichment of genes implicated in several aspect of chromosome metabolism (Supplementary file 3). Among the genes associated with these terms, many are involved in four functional modules: DNA replication, chromosome segregation (including genes involved in sister chromatid linkage and spindle function), cell cycle checkpoint and chromatin remodeling (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO term enrichment analysis shown in Supplementary file 3 and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "19b63346-7420-4496-baec-90f5680d702e",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C10",
+      "claim": "RAD9 was the most frequently mutated gene in evolved ctf4\u0394 populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The most frequently mutated gene, RAD9, encodes an important component of the DNA damage checkpoint, which is required to slow DNA synthesis and delay anaphase in response to DNA lesions (Weinert and Hartwell, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation (Weinert and Hartwell, 1988) and implied by the statement 'most frequently mutated gene'.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "3d2b4741-a4b8-4742-adb2-19dd9f03d610",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C11",
+      "claim": "Four out of five mutations in RAD9 produced early stop codons or radical amino acid substitutions in the BRCT domain, which is essential for Rad9's function.",
+      "claim_type": "EXPLICIT",
+      "source": "Four out of the five mutations in RAD9 produced early stop codons, or radical amino acid substitutions in the BRCT domain, which is essential for Rad9's function (Figure 2C, Figure 2\u2014figure supplement 1A; Soulier and Lowndes, 1999)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2C and Figure 2\u2014figure supplement 1A, and citation (Soulier and Lowndes, 1999).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "bc002fc1-258a-4d47-b722-9cc9ab770ba8",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C12",
+      "claim": "The rad9-K883* mutation increased the fitness of ancestral ctf4\u0394 strains to a level similar to complete deletion of RAD9.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation (Figure 2C, Figure 2\u2014figure supplement 1A) produced a fitness increase very similar to the one caused by deleting the entire gene (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2D comparing rad9-K883* to rad9\u0394.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "046802de-95ed-4687-b08b-be92d058ed86",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C13",
+      "claim": "Inactivation of Rad9 is adaptive in the absence of Ctf4.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that inactivation of Rad9 is adaptive in the absence of Ctf4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental fitness measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "aaf4c1ec-9e0a-43ef-b230-6dbf53a80728",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C14",
+      "claim": "Deleting RAD9 in ctf4\u0394 cells decreases the fraction of cells with 2C DNA content, suggesting a shorter interval between the end of DNA replication and cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ctf4\u2206 ancestor, rad9\u0394 does, indeed, decrease the fraction of cells with a 2C DNA content (the DNA content in G2 and mitosis) observed in asynchronously growing ctf4\u2206 cells (Tanaka et al., 2009). This observation suggests that the interval between the end of DNA replication and cell division decreases in ctf4\u2206 rad9\u0394 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation (Tanaka et al., 2009) and inference from cell cycle data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "9e6f8623-391b-4b67-81fd-d82ca0cff2ad",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C15",
+      "claim": "Deleting MAD2 in ctf4\u0394 cells reduces fitness, unlike deleting RAD9.",
+      "claim_type": "EXPLICIT",
+      "source": "But although deleting MAD2, a key spindle checkpoint component, also decreases the interval between replication and division in ctf4\u0394 cells (Hanna et al., 2001), it reduces rather than increases the fitness of the ctf4\u2206 ancestor (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2D and citation (Hanna et al., 2001).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "020aed68-aaf3-4ee1-bfde-d5138d8b3d23",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C16",
+      "claim": "Loss of Rad9 in ctf4\u0394 cells does not accelerate S-phase but leads to faster passage through mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Rad9 in ctf4\u2206 cells did not accelerate S-phase, but it did lead to faster passage through mitosis as revealed by a reduced fraction of 2 C cells (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from synchronous cell cycle analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "5d96c800-982a-4a92-a547-1279c1b9bd36",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C17",
+      "claim": "Decreasing the mitotic delay in ancestral ctf4\u0394 cells is beneficial, while a faster S-phase is highly detrimental.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitness measurement in these mutants (pds1-m9 or the double mutant sld3-A/dbf4-4A) showed that while decreasing the mitotic delay in ancestral ctf4\u2206 cells was beneficial, a faster S-phase was highly detrimental (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental fitness data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "56be6679-9f7b-4597-890f-d7e37bd356e5",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C18",
+      "claim": "The specific absence of a DNA damage-induced delay of anaphase, rather than generic cell-cycle acceleration, is adaptive in ctf4\u0394 cells experiencing replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results show that the specific absence of a DNA damage-induced delay of anaphase, rather than generic cell-cycle acceleration, is adaptive in ctf4\u0394 cells experiencing replication stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental results comparing different checkpoint mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "bb0d6f9e-c8ae-4708-8fb2-eb1ca3687910",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C19",
+      "claim": "The most common copy number variation in evolved ctf4\u0394 cells was the amplification of a 50-100 kb region of chromosome IV containing SCC2.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common CNV in evolved ctf4\u0394 cells (17 out of 32 sequenced clones) was the amplification of a 50\u2013100 kb region of chromosome IV (chrIV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Whole genome sequencing data from 32 evolved clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "3f06c812-7085-42f7-8d0a-21c2130d8b30",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C20",
+      "claim": "Evolved clone EVO2-10 carried an extra copy of a portion of chromosome V containing SCC4, in addition to the chromosome IV amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this segmental amplification, evolved clone EVO2-10 also carried an extra copy of a portion of chromosome V (chrV, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequencing data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "2eeb50d9-bd0f-45a7-adbf-7747aed0f34d",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C21",
+      "claim": "The eight evolved wild type populations had no segmental amplifications.",
+      "claim_type": "EXPLICIT",
+      "source": "The eight evolved wild type populations had no segmental amplifications, suggesting that changes in copy number were a specific adaptation to constitutive DNA replication stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequencing data from wild type populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "21091dba-a139-4d71-9fa9-586101ac4a70",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C22",
+      "claim": "SCC2 and SCC4 encode the two subunits of the cohesin loader complex, which loads cohesin rings on chromosomes to ensure sister chromatid cohesion until anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "These two genes encode the two subunits of the cohesin loader complex, which loads cohesin rings on chromosomes to ensure sister chromatid cohesion until anaphase (Figure 3\u2014figure supplement 2B; Ciosk et al., 2000; Michaelis et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations (Ciosk et al., 2000; Michaelis et al., 1997) and reference to Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "7f981588-1b16-4f0d-a1ff-d1d0a2c49169",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C23",
+      "claim": "CTF4 was originally identified because mutants in this gene reduced the fidelity of chromosome transmission due to premature sister chromatid separation.",
+      "claim_type": "EXPLICIT",
+      "source": "CTF4 was originally identified because mutants in this gene reduced the fidelity of chromosome transmission (CTF = chromosome transmission fidelity, Spencer et al., 1990); later studies showed that this defect was due to premature sister chromatid separation, which resulted in increased chromosome loss at cell division (Hanna et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations (Spencer et al., 1990; Hanna et al., 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "45c52ae8-8daf-478e-a97a-b626338d4797",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C24",
+      "claim": "An extra copy of SCC2, or an extra copy of both SCC2 and SCC4, increased fitness of ctf4\u0394 ancestor cells by 4-5%.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the more frequent amplification of SCC2, we found that while an extra copy of SCC4 alone did not significantly affect fitness, an extra copy of SCC2, or an extra copy of both SCC2 and SCC4 increased fitness by 4\u20135% (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental fitness data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "ce6351f1-0682-4faa-966e-bdf9bd0d62d4",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C25",
+      "claim": "Adding extra copies of the cohesin loader subunits improved sister chromatid cohesion in ctf4\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding extra copies of the cohesin loader subunits improved sister chromatid cohesion (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from premature sister chromatid separation assay shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "a6cd1ae2-0189-4ceb-bc69-9f4b4cc274ef",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C26",
+      "claim": "The amplitude of improvement in sister cohesion for different strains had the same rank order as their increase in fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "and the amplitude of the improvement in sister cohesion for different strains had the same rank order as their increase in fitness (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of data from Figure 3C and Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "7b3ed8f7-da8c-49fc-be84-a3a384c59300",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C27",
+      "claim": "The increased copy number of the cohesin loader subunits is adaptive and alleviates the cohesion defects induced by the lack of Ctf4.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the increased copy number of the cohesin loader subunits is adaptive and alleviates the cohesion defects induced by the lack of Ctf4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from fitness and cohesion measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "92c59624-3e01-48c2-8c67-41b5b8197203",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C28",
+      "claim": "Four independent mutations altered three different subunits of the replicative CMG helicase in evolved ctf4\u0394 populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, we found four independent mutations (Figure 4B) that altered three different subunits of the replicative CMG (Cdc45, MCM, GINS) helicase (Labib and Gambus, 2007; Moyer et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequencing data shown in Figure 4B and citations (Labib and Gambus, 2007; Moyer et al., 2006).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "d89394f6-1e53-4a8e-ac87-46e505cb15b6",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C29",
+      "claim": "The CMG helicase is bound in vivo by Ctf4 through the GINS subunit Sld5.",
+      "claim_type": "EXPLICIT",
+      "source": "The CMG helicase is bound in vivo by Ctf4 through the GINS subunit Sld5 (Simon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation (Simon et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "7bcd81f5-df99-422b-98d2-67c654a8c939",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C30",
+      "claim": "The sld5-E130K mutation increased the fitness of the ancestral ctf4\u0394 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "A CMG helicase mutation found in one of the evolved clones, sld5-E130K, increased the fitness of the ancestral ctf4\u2206 strain (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental fitness data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "ac222620-359f-4c0d-a5db-249dd47b17cf",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C31",
+      "claim": "IXR1 encodes a transcription factor that indirectly and positively regulates the concentration of deoxyribonucleotide triphosphates (dNTPs).",
+      "claim_type": "EXPLICIT",
+      "source": "IXR1 encodes for a transcription factor that indirectly and positively regulates the concentration of deoxyribonucleotide triphosphates (dNTPs, Tsaponina et al., 2011), the precursors for DNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation (Tsaponina et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "91ec45cb-5d7e-474b-ba23-985060764209",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C32",
+      "claim": "Multiple nonsense mutations in IXR1 strongly suggested selection to inactivate Ixr1.",
+      "claim_type": "EXPLICIT",
+      "source": "The occurrence of multiple nonsense mutations in this gene strongly suggested selection to inactivate Ixr1 (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequencing data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "3e9347de-c3fc-4ec1-aa61-682b0a93d985",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C33",
+      "claim": "Engineering either a nonsense mutation (ixr1-Q332*) or a gene deletion of IXR1 conferred a selective advantage to ctf4\u0394 ancestor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, we found that engineering either a nonsense mutation (ixr1-Q332*) or a gene deletion conferred a selective advantage to ctf4\u2206 ancestor cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental fitness data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "3734ab52-11a8-4ee8-9155-55c21939b3b3",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C34",
+      "claim": "Cells lacking Ctf4 experience several defects compared to wild type: on average, origins of replication fire later and DNA replication forks proceed more slowly across replicons, often showing fork stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells lacking Ctf4 experience several defects compared to WT: on average, origins of replication fire later and DNA replication forks proceed more slowly across replicons, often showing fork stalling (Figure 4D\u2013E, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "DNA replication profiling data shown in Figure 4D-E and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "681645db-ddce-48a0-9007-7cc51215895d",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C35",
+      "claim": "As a consequence of delayed origin firing and slower fork progression, ctf4\u0394 cells still contain significant regions of unreplicated DNA late in S-phase (45 min).",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence of these two defects, cells still contain significant regions of unreplicated DNA late in S-phase (45 min, Figure 4D\u2013E, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "DNA replication profiling data shown in Figure 4D-E and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "fd32e5ce-3b86-4f66-994a-d14c88aa1c72",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C36",
+      "claim": "Both sld5-E130K and ixr1\u0394 mutations significantly increase the average replication fork velocity primarily by avoiding stalls in DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sld5-E130K or ixr1\u0394 mutations significantly increase the average replication fork velocity primarily by avoiding stalls in DNA replication and thus leading to earlier replication of the regions that replicate late in the ancestral ctf4\u2206 cells (Figure 4D\u2013E, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "DNA replication profiling data shown in Figure 4D-E and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "c4c91440-0716-4ce8-808b-c058ced1633f",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C37",
+      "claim": "Severe fork stalling in ctf4\u0394 cells frequently occurs near tRNA genes, Long Terminal Repeats (LTRs) and transposable elements (Ty).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that severe fork stalling in ctf4\u2206 cells frequently occurs near tRNA genes, Long Terminal Repeats (LTRs) and transposable elements (Ty) (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of DNA replication profiles and chromosomal features shown in Supplementary file 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "07fb9db7-1e5c-4233-a3a3-b26dc8de6fe4",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C38",
+      "claim": "These chromosomal features (tRNA genes, LTRs, Ty elements) were previously found to be associated with replication pausing sites.",
+      "claim_type": "EXPLICIT",
+      "source": "These chromosomal features were previously found to be associated with replication pausing sites (Deshpande and Newlon, 1996; Gadaleta and Noguchi, 2017; Zaratiegui et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations (Deshpande and Newlon, 1996; Gadaleta and Noguchi, 2017; Zaratiegui et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "fc2ca089-0b22-49fa-b9bb-0b5823ab27e5",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C39",
+      "claim": "The sld5 mutation is beneficial in ctf4\u0394 ancestor cells but decreases the fitness of wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is consistent with two observations: first, although the sld5 mutation is beneficial in ancestor cells, it decreases the fitness of WT cells (Figure 4\u2014figure supplement 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental fitness data shown in Figure 4\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "0367497d-c3e1-4827-8a30-28533e471e40",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C40",
+      "claim": "Decreasing dNTP concentrations increases the fitness of ctf4\u0394 cells, while inducing higher dNTP production reduces fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this prediction by using an experimental system to manipulate dNTP concentrations: decreasing dNTP concentrations increased the fitness of ctf4\u2206 cells, while inducing higher dNTP production reduced fitness (Figure 4\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental fitness data shown in Figure 4\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "85e12eea-e29a-4176-a787-f8c5e0d64bf4",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C41",
+      "claim": "The two mutations that affected DNA replication (sld5-E130K and ixr1\u0394) were negatively epistatic in the ctf4\u0394 background.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the two mutations that affected DNA replication were negatively epistatic (Figure 5A): in the presence of ctf4\u2206, strains that contained both sld5-E130K and ixr1\u0394 were not significantly more fit than strains that contained only ixr1\u2206",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental fitness data from combinatorial mutant analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "c4503dbd-a3f9-4998-b8c4-926769f25d37",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C42",
+      "claim": "The two fittest reconstructed strains carry only three mutations affecting sister chromatid linkage (2X-SCC2), the DNA damage checkpoint (rad9\u0394), and DNA replication (sld5-E130K or ixr1\u0394).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the two fittest strains carry only three mutations: in both cases, they affected the three modules we previously characterized: sister chromatid linkage and chromosome segregation (2X-SCC2), the DNA damage checkpoint (rad9\u0394) and DNA replication (sld5-E130K or ixr1\u0394).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental fitness data from combinatorial mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "724db6ff-105b-4c15-8db2-e97ccc772916",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C43",
+      "claim": "The two triple mutant strains (2X-SCC, rad9\u0394, sld5-E130K and 2X-SCC, rad9\u0394, ixr1\u0394) displayed fitness comparable to the average of the evolved populations.",
+      "claim_type": "EXPLICIT",
+      "source": "These two strains displayed a fitness comparable to the average of the evolved populations (Figure 1C), suggesting that we had recapitulated the major adaptive events in our engineered strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of fitness data from Figure 5A and Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "9786492c-4c09-450b-9ae3-d7af1c55cd44",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C44",
+      "claim": "In population EVO5, mutations in the three modules (cohesion, replication, checkpoint) happened in three consecutive selective waves.",
+      "claim_type": "EXPLICIT",
+      "source": "By following the frequency of alleles within the population and sequencing individual clones, we found that the mutations in the three modules happened in three consecutive selective waves: first, cells acquired an extra copy of the cohesin loader-encoding gene SCC2, second, ixr1-Q332* and sld5-E130K appeared, simultaneously, in two different lineages, and finally rad9-N876K appeared independently in the two lineages containing either ixr1-Q332* or sld5-E130K (Figure 5B, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Allele frequency tracking and sequencing data shown in Figure 5B and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "43e0d8a2-a4e5-44f0-bc48-7f4999f93310",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C45",
+      "claim": "After their initial appearance, the two lineages containing ixr1-Q332* or sld5-E130K competed with each other for the remainder of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "After their initial appearance, the two lineages containing ixr1-Q332* or sld5-E130K competed with each other for the remainder of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Allele frequency tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "063794f0-e01a-413c-8531-50514b970ca5",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C46",
+      "claim": "In population EVO5, both final lineages accumulated mutations whose interaction was nearly additive or positively epistatic and avoided combinations that show strong negative epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this population, both final lineages accumulated mutations whose interaction was nearly additive or positively epistatic and avoided combinations that show strong negative epistasis (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of epistasis data from Figure 5A with evolutionary trajectory data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "de3e0442-f4c9-4436-9d59-28d26d6628e6",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C47",
+      "claim": "Over 1000 generations, ctf4\u0394 populations increased from 75% to 90% of the fitness of their wild-type ancestors by sequentially accumulating mutations that individually affect three different functions: DNA replication, chromosome segregation and the DNA damage checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that over 1000 generations, populations increased from 75% to 90% of the fitness of their wild-type ancestors by sequentially accumulating mutations that individually affect three different functions that contribute to chromosome metabolism: DNA replication, chromosome segregation and the DNA damage checkpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of fitness and genetic data from the entire study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "43884263-a735-4532-8e0f-804765b66889",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C48",
+      "claim": "A single genetic perturbation and a thousand generations are enough to select for significant changes in three functional modules affecting chromosome metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "A single genetic perturbation and a thousand generations are enough to select for significant changes in three functional modules affecting chromosome metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the experimental evolution results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "be579436-3686-4636-aabb-4e405a5aadc2",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C49",
+      "claim": "By the end of the experiment, evolved lineages had sequentially modified chromosome cohesion, changed the dynamics of DNA replication, and lost an important cell-cycle response to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "By the end of the experiment, evolved lineages had sequentially modified chromosome cohesion, changed the dynamics of DNA replication, and lost an important cell-cycle response to DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the three main adaptive mechanisms identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "f8cd5c09-cb12-43b9-9ad9-ff2d0b881d46",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C50",
+      "claim": "The absence of Ctf4 restricts the productive loading of cohesin molecules that establish the linkage between sister chromatids.",
+      "claim_type": "IMPLICIT",
+      "source": "The simplest explanation for this result is that, the absence of Ctf4 restricts the productive loading of cohesin molecules that establish the linkage between sister chromatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on the observation that SCC2 amplification improves cohesion in ctf4\u0394 cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "10795d0e-f5e3-4688-b4ef-37afd970b3d2",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C51",
+      "claim": "Amplifying the genes for the cohesin loader would increase its expression, increase the productive cohesin loading and improve the linkage between sister chromatids.",
+      "claim_type": "IMPLICIT",
+      "source": "We propose that amplifying the genes for the cohesin loader would increase its expression, increase the productive cohesin loading and improve the linkage between sister chromatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism to explain the adaptive benefit of SCC2 amplification.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "17375324-b6ba-4d07-99ce-131500628e0c",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C52",
+      "claim": "Mutations like sld5-E130K and ixr1\u0394 may slow helicase progression, stabilizing the forks by preventing frequent fork stalling or collapse and producing a higher overall fork velocity.",
+      "claim_type": "IMPLICIT",
+      "source": "We speculate that these mutations have the apparently paradoxical effect of accelerating DNA replication by slowing down the replication forks: mutations like sld5-E130K and ixr1\u2206 may slow helicase progression, stabilizing the forks by preventing frequent fork stalling or collapse and producing a higher overall fork velocity (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed mechanism based on replication profiling data and fitness measurements.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "e1b8daa8-f02b-45e9-8cb9-1e2601b3abbc",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C53",
+      "claim": "The replication and spindle checkpoints delay the cell cycle in response to defects that would kill the ancestral ctf4\u0394 cells, whereas the damage checkpoint responds to defects that can be repaired after cell division.",
+      "claim_type": "IMPLICIT",
+      "source": "We propose that the replication and the spindle checkpoints delay the cell cycle in response to defects that would kill the ancestral ctf4\u2206 cells, such as excessive replication fork collapses and pairs of sister chromatids attached to the same spindle pole, whereas the damage checkpoint responds to defects, like regions of single-stranded DNA, that can be repaired after cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed explanation for why inactivating the DNA damage checkpoint is beneficial while inactivating the spindle checkpoint is detrimental.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "1c5d1139-9e4d-4c83-9370-ccd5c0dd096d",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C54",
+      "claim": "The evolutionary plasticity of chromosome metabolism has implications for genome evolution in natural populations and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the evolutionary plasticity of chromosome metabolism has implications for genome evolution in natural populations and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a conclusion of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "6281b6f3-6086-48e4-8319-7d8ae030c01e",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C55",
+      "claim": "Replication stress is thought to be a ubiquitous feature of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, our experiment recapitulates several phenomena observed during cancer development. Replication stress is thought to be a ubiquitous feature of cancer cells (Macheret and Halazonetis, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation (Macheret and Halazonetis, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "fd74313d-cffe-4744-b955-e1c9e74945a0",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C56",
+      "claim": "Oncogene activation leads to replication stress and genetic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "with oncogene activation leading to replication stress and genetic instability (Bartkova et al., 2006; Di Micco et al., 2006; Neelsen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations (Bartkova et al., 2006; Di Micco et al., 2006; Neelsen et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "2c163cd6-b578-4fdd-b890-22186c4dde51",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C57",
+      "claim": "The absence of Ctf4 in ancestor cells causes several phenotypes observed in oncogene-induced DNA replication stress including late-replicating regions, elevated mutation rates, and chromosome instability.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of Ctf4 in our ancestor cells causes several phenotypes observed in oncogene-induced DNA replication stress including late-replicating regions, elevated mutation rates, and chromosome instability (Fumasoni et al., 2015; Macheret and Halazonetis, 2015; Mu\u00f1oz and M\u00e9ndez, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations (Fumasoni et al., 2015; Macheret and Halazonetis, 2015; Mu\u00f1oz and M\u00e9ndez, 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "63de76aa-0089-46f5-9bf3-5fe0235bc04e",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C58",
+      "claim": "Individual final evolved populations contain genetically heterogeneous clones, often with different karyotypes characterized by aneuploidies and chromosomal rearrangements, similar to tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "individual final populations contain genetically heterogeneous clones, often with different karyotypes characterized by aneuploidies and chromosomal rearrangements (Davoli et al., 2013; Laughney et al., 2015; Lengauer et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequencing data from evolved populations and citations to cancer literature (Davoli et al., 2013; Laughney et al., 2015; Lengauer et al., 1998).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "888bcf44-5124-47ef-a302-a6369ed94fe4",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C59",
+      "claim": "Evolved lineages display altered DNA replication profiles compared both to wild type cells and their mutant ancestors, similar to cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "evolved lineages display altered DNA replication profiles compared both to WT cells and their mutant ancestors (Amiel et al., 1999; Donley and Thayer, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "DNA replication profiling data and citations to cancer literature (Amiel et al., 1999; Donley and Thayer, 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "eb2008a2-f7bc-4fd1-9de5-e0665f41b095",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C60",
+      "claim": "Several evolved lines have inactivated the DNA damage checkpoint, similar to cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "several lines have inactivated the DNA damage checkpoint (Hollstein et al., 1991; Schultz et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequencing data showing RAD9 mutations and citations to cancer literature (Hollstein et al., 1991; Schultz et al., 2000).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "11ea013f-5ea9-4438-a39f-7a8bcde5cf7f",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C61",
+      "claim": "Evolved lines show improved sister chromatid cohesion, similar to some cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and d) improved sister chromatid cohesion (Rhodes et al., 2011; Sarogni et al., 2019; Xu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cohesion assay data and citations to cancer literature (Rhodes et al., 2011; Sarogni et al., 2019; Xu et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "e66ee18c-1075-45a3-8b02-a2845f39a549",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C62",
+      "claim": "All the adaptive features observed in evolved populations are adaptive, suggesting that similar changes in cancer cells may be the result of selection and contribute to the accumulation of other cancer hallmarks during cancer evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "All these features are adaptive in our populations, suggesting that similar changes in cancer cells may be the result of selection and contribute to the accumulation of other cancer hallmarks during cancer evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the adaptive nature of mutations in the evolution experiment and parallels to cancer.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "e4e10927-1dbb-4526-adc3-31377b305570",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "claim_id": "C63",
+      "claim": "A major selective force in the early stages of tumor evolution may be the need to counteract the fitness costs of replication stress.",
+      "claim_type": "IMPLICIT",
+      "source": "The similarities between tumorigenesis and our experiment lead us to speculate that a major selective force in the early stages of tumor evolution is the need to counteract the fitness costs of replication stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on parallels between the evolution experiment and cancer development.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f2d58439-fa4b-4b70-861b-a54ec4fbfabd",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ctf4 is a conserved, non-essential replisome component that coordinates DNA replication activities. Its absence causes replication stress phenotypes including fork progression problems, single-stranded DNA gaps, and altered replication forks. Ctf4 is essential in vertebrates, insects, and some fungi but absent in prokaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by multiple literature citations describing Ctf4's structure, function, and evolutionary conservation. The claims accurately represent established knowledge about Ctf4's role in DNA replication and its phylogenetic distribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "666d818d-5da4-4fea-ab99-3bdafffaa3c0",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experimental evolution of ctf4\u0394 cells over 1000 generations resulted in substantial fitness recovery. Starting with a ~25% fitness defect, evolved ctf4\u0394 populations increased fitness by 17\u00b10.2%, while wild-type controls increased by only 4.0\u00b10.3%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 are supported by experimental fitness measurements shown in Figures 1C and Figure 1\u2014figure supplement 1. The quantitative fitness data are clearly presented with error bars, and the experimental design (8 parallel populations, 1000 generations) is appropriate for detecting evolutionary adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "e4ca7e81-a56c-4a33-8e9c-44711b1520bd",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Evolved ctf4\u0394 populations accumulated mutations enriched in genes involved in chromosome metabolism, specifically DNA replication, chromosome segregation, cell cycle checkpoints, and chromatin remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C9 is supported by GO term enrichment analysis (Supplementary file 3, Figure 1\u2014figure supplement 3) combined with whole-genome sequencing of 32 evolved clones. The statistical approach combining convergent evolution analysis and bulk segregant analysis provides strong evidence for adaptive mutations in these functional modules.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "6a47ec90-5de3-401c-98db-7ab17ce791a3",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RAD9 was the most frequently mutated gene in evolved populations, with mutations predominantly causing loss-of-function. The rad9-K883* mutation and complete RAD9 deletion conferred similar fitness benefits (~7-8% increase), demonstrating that Rad9 inactivation is adaptive in ctf4\u0394 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are well-supported by sequencing data showing multiple independent RAD9 mutations (Figure 2C, Figure 2\u2014figure supplement 1A) and fitness measurements (Figure 2D). The convergence on loss-of-function mutations and experimental validation of engineered mutations provide strong evidence for adaptive Rad9 inactivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "b3172c39-0fec-4332-a48a-78e73be5c97c",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of Rad9 specifically eliminates the DNA damage checkpoint-induced mitotic delay without accelerating S-phase. This is beneficial in ctf4\u0394 cells, whereas eliminating the spindle checkpoint (mad2\u0394) or accelerating S-phase is detrimental, demonstrating that selective checkpoint inactivation, not general cell cycle acceleration, is adaptive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 are supported by cell cycle profiling (Figure 2E) and fitness measurements of various checkpoint mutants (Figure 2D, Figure 2\u2014figure supplement 1C). The experiments systematically dissect different checkpoint pathways and cell cycle phases, providing mechanistic insight into why Rad9 loss is beneficial. The logic is sound and the data are consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "f3d8069b-e256-4b9d-8c53-c0153dcbb87d",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The most common copy number variation in evolved ctf4\u0394 cells was amplification of a chromosome IV region containing SCC2 (17/32 clones). One clone also amplified chromosome V containing SCC4. No segmental amplifications occurred in wild-type populations. SCC2 and SCC4 encode the cohesin loader complex subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 are supported by whole-genome sequencing data showing CNVs (Figure 3A, Figure 3\u2014figure supplement 1). The high frequency of SCC2 amplification specifically in ctf4\u0394 populations and the known function of these genes (supported by citations) provide strong evidence. The absence of amplifications in wild-type controls strengthens the conclusion that this is a specific adaptation to replication stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "836b7eb5-46cf-4ea6-b13c-e2f9b460f3d8",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Extra copies of SCC2 alone or SCC2+SCC4 together increased fitness of ctf4\u0394 cells by 4-5% and improved sister chromatid cohesion. The magnitude of cohesion improvement correlated with fitness gains, demonstrating that increased cohesin loader dosage adaptively alleviates cohesion defects caused by Ctf4 loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by experimental fitness measurements (Figure 3C) and premature sister chromatid separation assays (Figure 3D). The correlation between cohesion improvement and fitness gain provides mechanistic support for the adaptive benefit. The experiments directly test the hypothesis that amplification increases cohesin loading.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "da3c8f04-0f50-438f-ab00-2ec8f80ae681",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Four independent mutations altered CMG helicase subunits (Cdc45, MCM, GINS) in evolved populations. The sld5-E130K mutation in the GINS subunit Sld5, which binds Ctf4, increased fitness of ancestral ctf4\u0394 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by sequencing data (Figure 4B) showing convergent evolution on helicase genes and fitness measurements (Figure 4C). The structural context (Sld5 binds Ctf4) provides mechanistic rationale. However, the molecular mechanism by which sld5-E130K improves fitness requires further investigation (addressed in later claims).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "6e6860b6-a29d-47f8-8eee-1454bf6c0601",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple nonsense mutations in IXR1, which encodes a transcription factor regulating dNTP levels, suggested selection for Ixr1 inactivation. Engineering ixr1-Q332* or ixr1\u0394 conferred selective advantages to ctf4\u0394 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by sequencing data showing multiple independent nonsense mutations (Figure 4\u2014figure supplement 1B) and fitness measurements (Figure 4C). The pattern of mutations strongly suggests loss-of-function is adaptive, and this is confirmed by engineering the mutations into ancestral strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "4fdeeb0e-0548-4b73-b9b1-dbbd3dc0ba97",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DNA replication profiling revealed that ctf4\u0394 cells have delayed origin firing, slower fork progression with frequent stalling, and unreplicated regions at 45 min. Both sld5-E130K and ixr1\u0394 mutations increase average fork velocity primarily by avoiding fork stalls, leading to earlier completion of late-replicating regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by comprehensive DNA replication profiling data (Figure 4D-E, Figure 4\u2014figure supplement 3). The genome-wide analysis provides quantitative measurements of origin firing, fork velocity, and replication completion. The data clearly show that the adaptive mutations reduce fork stalling rather than simply accelerating replication globally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "c0ca6e60-0ffb-414e-ae24-a33c1d4eaa41",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Fork stalling in ctf4\u0394 cells frequently occurs near tRNA genes, LTRs, and transposable elements (Ty), chromosomal features previously associated with replication pausing sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by analysis correlating fork stall sites with genomic features (Supplementary file 4) and citations to prior work identifying these as pause sites. The statistical analysis of feature enrichment at stall sites provides quantitative support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "8f3f3af8-59de-4a14-a2f9-6dcb153dabbc",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The sld5-E130K mutation is beneficial in ctf4\u0394 but detrimental in wild-type cells. Decreasing dNTP concentrations increases ctf4\u0394 fitness while increasing dNTPs reduces it. The authors propose that these mutations paradoxically accelerate replication by slowing forks, stabilizing them and preventing stalls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C40 are supported by fitness data (Figure 4\u2014figure supplement 4A-B), but C52 is speculative. While the data showing context-dependent fitness effects and dNTP manipulation are solid, the proposed mechanism of fork slowing leading to stabilization is not directly demonstrated. The model is plausible and consistent with the data, but lacks direct evidence of fork slowing or mechanistic validation of how slower forks prevent stalling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "8368e6c9-dc4b-4cb1-accf-9e8f7613b4b7",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The sld5-E130K and ixr1\u0394 mutations show negative epistasis in the ctf4\u0394 background. The two fittest reconstructed strains carry three mutations affecting cohesion (2X-SCC2), checkpoint (rad9\u0394), and replication (sld5-E130K or ixr1\u0394), with fitness comparable to evolved populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by systematic fitness measurements of all mutant combinations (Figure 5A). The epistasis analysis is quantitative and clearly shows negative interactions between replication mutations. The reconstruction of evolved fitness with three mutations demonstrates that the major adaptive mechanisms have been identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "6242dd6e-3ca4-40a0-a99c-93b4f90325e3",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In population EVO5, mutations in cohesion, replication, and checkpoint modules arose in three consecutive selective waves. After SCC2 amplification, ixr1-Q332* and sld5-E130K appeared simultaneously in different lineages, followed by rad9-N876K in both lineages. The lineages avoided negatively epistatic combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by allele frequency tracking over time (Figure 5B, Figure 5\u2014figure supplement 2) and whole-genome sequencing of individual clones. The temporal dynamics clearly show sequential waves of adaptation, and the avoidance of negative epistasis is consistent with the epistasis measurements in C41.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "c5a988cf-a277-434f-ab23-56be2512eeb3",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Over 1000 generations, ctf4\u0394 populations recovered from 75% to 90% of wild-type fitness by sequentially accumulating mutations affecting DNA replication, chromosome segregation, and DNA damage checkpoint. This demonstrates that a single genetic perturbation can drive rapid, coordinated changes in multiple chromosome metabolism modules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 synthesize the major findings and are well-supported by the cumulative evidence from fitness measurements, sequencing, and mechanistic studies. The conclusion that chromosome metabolism shows evolutionary plasticity is justified by the comprehensive experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "b401b55c-9b6c-4d09-983c-82fa23478b7c",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that Ctf4 absence restricts productive cohesin loading, and that amplifying cohesin loader genes increases expression and productive loading, improving sister chromatid linkage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C51 are mechanistic proposals that are plausible and consistent with the data (SCC2 amplification improves cohesion and fitness), but are not directly demonstrated. The authors do not measure cohesin loader expression levels or directly assess cohesin loading efficiency. The model is reasonable but remains speculative without direct molecular evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "91f62161-5eba-43ed-8196-148f34c9bcb1",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose that replication and spindle checkpoints respond to lethal defects (fork collapses, spindle attachment errors) while the damage checkpoint responds to repairable defects (single-stranded DNA), explaining why only damage checkpoint inactivation is beneficial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 is a mechanistic proposal that explains the differential effects of checkpoint mutations, but is not directly tested. While consistent with the fitness data showing mad2\u0394 is detrimental and rad9\u0394 is beneficial, the claim about which defects are lethal vs. repairable is speculative and would require additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    },
+    {
+      "id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756",
+      "content_id": "0f6502f5-3a1e-4441-a55d-979b4eb13eae",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors suggest their findings have implications for natural evolution and cancer. They note parallels between their evolved populations and cancer cells: replication stress, altered replication profiles, checkpoint inactivation, improved cohesion, and genetic heterogeneity. They speculate that counteracting replication stress may be a major selective force in early tumor evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C63 draw parallels between the experimental system and cancer, supported by citations to cancer literature. While the parallels are interesting and the evolved phenotypes do resemble cancer features, the claims about implications for cancer evolution (C62-C63) are speculative. The experimental system uses yeast and a specific genetic perturbation, so extrapolation to human cancer requires caution. The parallels are suggestive but not definitive evidence for the proposed role of replication stress in cancer evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:07:25.917996Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "05190c86-feca-4d39-84db-04e14926fc15",
+      "result_id": "f2d58439-fa4b-4b70-861b-a54ec4fbfabd"
+    },
+    {
+      "claim_id": "6f751f42-20fc-43ed-945d-3c768718499e",
+      "result_id": "f2d58439-fa4b-4b70-861b-a54ec4fbfabd"
+    },
+    {
+      "claim_id": "60e035e3-061c-474d-8057-6dd6a6539940",
+      "result_id": "f2d58439-fa4b-4b70-861b-a54ec4fbfabd"
+    },
+    {
+      "claim_id": "433bcda2-9bc0-4411-8bc5-78e9e6eca755",
+      "result_id": "f2d58439-fa4b-4b70-861b-a54ec4fbfabd"
+    },
+    {
+      "claim_id": "e013fcec-4d24-475c-a83f-c1a6f046384d",
+      "result_id": "666d818d-5da4-4fea-ab99-3bdafffaa3c0"
+    },
+    {
+      "claim_id": "3bba9597-88d6-4766-b559-e5d2afc133c2",
+      "result_id": "666d818d-5da4-4fea-ab99-3bdafffaa3c0"
+    },
+    {
+      "claim_id": "6c675a3c-d775-42a2-b88f-19b5945ddaf6",
+      "result_id": "666d818d-5da4-4fea-ab99-3bdafffaa3c0"
+    },
+    {
+      "claim_id": "0b6074f0-7da4-46b4-a57a-3d61109d7936",
+      "result_id": "666d818d-5da4-4fea-ab99-3bdafffaa3c0"
+    },
+    {
+      "claim_id": "b727a5a9-febe-4b90-a5b6-e5302d8d7550",
+      "result_id": "e4ca7e81-a56c-4a33-8e9c-44711b1520bd"
+    },
+    {
+      "claim_id": "19b63346-7420-4496-baec-90f5680d702e",
+      "result_id": "6a47ec90-5de3-401c-98db-7ab17ce791a3"
+    },
+    {
+      "claim_id": "3d2b4741-a4b8-4742-adb2-19dd9f03d610",
+      "result_id": "6a47ec90-5de3-401c-98db-7ab17ce791a3"
+    },
+    {
+      "claim_id": "bc002fc1-258a-4d47-b722-9cc9ab770ba8",
+      "result_id": "6a47ec90-5de3-401c-98db-7ab17ce791a3"
+    },
+    {
+      "claim_id": "046802de-95ed-4687-b08b-be92d058ed86",
+      "result_id": "6a47ec90-5de3-401c-98db-7ab17ce791a3"
+    },
+    {
+      "claim_id": "aaf4c1ec-9e0a-43ef-b230-6dbf53a80728",
+      "result_id": "b3172c39-0fec-4332-a48a-78e73be5c97c"
+    },
+    {
+      "claim_id": "9e6f8623-391b-4b67-81fd-d82ca0cff2ad",
+      "result_id": "b3172c39-0fec-4332-a48a-78e73be5c97c"
+    },
+    {
+      "claim_id": "020aed68-aaf3-4ee1-bfde-d5138d8b3d23",
+      "result_id": "b3172c39-0fec-4332-a48a-78e73be5c97c"
+    },
+    {
+      "claim_id": "5d96c800-982a-4a92-a547-1279c1b9bd36",
+      "result_id": "b3172c39-0fec-4332-a48a-78e73be5c97c"
+    },
+    {
+      "claim_id": "56be6679-9f7b-4597-890f-d7e37bd356e5",
+      "result_id": "b3172c39-0fec-4332-a48a-78e73be5c97c"
+    },
+    {
+      "claim_id": "bb0d6f9e-c8ae-4708-8fb2-eb1ca3687910",
+      "result_id": "f3d8069b-e256-4b9d-8c53-c0153dcbb87d"
+    },
+    {
+      "claim_id": "3f06c812-7085-42f7-8d0a-21c2130d8b30",
+      "result_id": "f3d8069b-e256-4b9d-8c53-c0153dcbb87d"
+    },
+    {
+      "claim_id": "2eeb50d9-bd0f-45a7-adbf-7747aed0f34d",
+      "result_id": "f3d8069b-e256-4b9d-8c53-c0153dcbb87d"
+    },
+    {
+      "claim_id": "21091dba-a139-4d71-9fa9-586101ac4a70",
+      "result_id": "f3d8069b-e256-4b9d-8c53-c0153dcbb87d"
+    },
+    {
+      "claim_id": "7f981588-1b16-4f0d-a1ff-d1d0a2c49169",
+      "result_id": "f3d8069b-e256-4b9d-8c53-c0153dcbb87d"
+    },
+    {
+      "claim_id": "45c52ae8-8daf-478e-a97a-b626338d4797",
+      "result_id": "836b7eb5-46cf-4ea6-b13c-e2f9b460f3d8"
+    },
+    {
+      "claim_id": "ce6351f1-0682-4faa-966e-bdf9bd0d62d4",
+      "result_id": "836b7eb5-46cf-4ea6-b13c-e2f9b460f3d8"
+    },
+    {
+      "claim_id": "a6cd1ae2-0189-4ceb-bc69-9f4b4cc274ef",
+      "result_id": "836b7eb5-46cf-4ea6-b13c-e2f9b460f3d8"
+    },
+    {
+      "claim_id": "7b3ed8f7-da8c-49fc-be84-a3a384c59300",
+      "result_id": "836b7eb5-46cf-4ea6-b13c-e2f9b460f3d8"
+    },
+    {
+      "claim_id": "92c59624-3e01-48c2-8c67-41b5b8197203",
+      "result_id": "da3c8f04-0f50-438f-ab00-2ec8f80ae681"
+    },
+    {
+      "claim_id": "d89394f6-1e53-4a8e-ac87-46e505cb15b6",
+      "result_id": "da3c8f04-0f50-438f-ab00-2ec8f80ae681"
+    },
+    {
+      "claim_id": "7bcd81f5-df99-422b-98d2-67c654a8c939",
+      "result_id": "da3c8f04-0f50-438f-ab00-2ec8f80ae681"
+    },
+    {
+      "claim_id": "ac222620-359f-4c0d-a5db-249dd47b17cf",
+      "result_id": "6e6860b6-a29d-47f8-8eee-1454bf6c0601"
+    },
+    {
+      "claim_id": "91ec45cb-5d7e-474b-ba23-985060764209",
+      "result_id": "6e6860b6-a29d-47f8-8eee-1454bf6c0601"
+    },
+    {
+      "claim_id": "3e9347de-c3fc-4ec1-aa61-682b0a93d985",
+      "result_id": "6e6860b6-a29d-47f8-8eee-1454bf6c0601"
+    },
+    {
+      "claim_id": "3734ab52-11a8-4ee8-9155-55c21939b3b3",
+      "result_id": "4fdeeb0e-0548-4b73-b9b1-dbbd3dc0ba97"
+    },
+    {
+      "claim_id": "681645db-ddce-48a0-9007-7cc51215895d",
+      "result_id": "4fdeeb0e-0548-4b73-b9b1-dbbd3dc0ba97"
+    },
+    {
+      "claim_id": "fd32e5ce-3b86-4f66-994a-d14c88aa1c72",
+      "result_id": "4fdeeb0e-0548-4b73-b9b1-dbbd3dc0ba97"
+    },
+    {
+      "claim_id": "c4c91440-0716-4ce8-808b-c058ced1633f",
+      "result_id": "c0ca6e60-0ffb-414e-ae24-a33c1d4eaa41"
+    },
+    {
+      "claim_id": "07fb9db7-1e5c-4233-a3a3-b26dc8de6fe4",
+      "result_id": "c0ca6e60-0ffb-414e-ae24-a33c1d4eaa41"
+    },
+    {
+      "claim_id": "fc2ca089-0b22-49fa-b9bb-0b5823ab27e5",
+      "result_id": "8f3f3af8-59de-4a14-a2f9-6dcb153dabbc"
+    },
+    {
+      "claim_id": "0367497d-c3e1-4827-8a30-28533e471e40",
+      "result_id": "8f3f3af8-59de-4a14-a2f9-6dcb153dabbc"
+    },
+    {
+      "claim_id": "17375324-b6ba-4d07-99ce-131500628e0c",
+      "result_id": "8f3f3af8-59de-4a14-a2f9-6dcb153dabbc"
+    },
+    {
+      "claim_id": "85e12eea-e29a-4176-a787-f8c5e0d64bf4",
+      "result_id": "8368e6c9-dc4b-4cb1-accf-9e8f7613b4b7"
+    },
+    {
+      "claim_id": "c4503dbd-a3f9-4998-b8c4-926769f25d37",
+      "result_id": "8368e6c9-dc4b-4cb1-accf-9e8f7613b4b7"
+    },
+    {
+      "claim_id": "724db6ff-105b-4c15-8db2-e97ccc772916",
+      "result_id": "8368e6c9-dc4b-4cb1-accf-9e8f7613b4b7"
+    },
+    {
+      "claim_id": "9786492c-4c09-450b-9ae3-d7af1c55cd44",
+      "result_id": "6242dd6e-3ca4-40a0-a99c-93b4f90325e3"
+    },
+    {
+      "claim_id": "43e0d8a2-a4e5-44f0-bc48-7f4999f93310",
+      "result_id": "6242dd6e-3ca4-40a0-a99c-93b4f90325e3"
+    },
+    {
+      "claim_id": "063794f0-e01a-413c-8531-50514b970ca5",
+      "result_id": "6242dd6e-3ca4-40a0-a99c-93b4f90325e3"
+    },
+    {
+      "claim_id": "de3e0442-f4c9-4436-9d59-28d26d6628e6",
+      "result_id": "c5a988cf-a277-434f-ab23-56be2512eeb3"
+    },
+    {
+      "claim_id": "43884263-a735-4532-8e0f-804765b66889",
+      "result_id": "c5a988cf-a277-434f-ab23-56be2512eeb3"
+    },
+    {
+      "claim_id": "be579436-3686-4636-aabb-4e405a5aadc2",
+      "result_id": "c5a988cf-a277-434f-ab23-56be2512eeb3"
+    },
+    {
+      "claim_id": "f8cd5c09-cb12-43b9-9ad9-ff2d0b881d46",
+      "result_id": "b401b55c-9b6c-4d09-983c-82fa23478b7c"
+    },
+    {
+      "claim_id": "10795d0e-f5e3-4688-b4ef-37afd970b3d2",
+      "result_id": "b401b55c-9b6c-4d09-983c-82fa23478b7c"
+    },
+    {
+      "claim_id": "e1b8daa8-f02b-45e9-8cb9-1e2601b3abbc",
+      "result_id": "91f62161-5eba-43ed-8196-148f34c9bcb1"
+    },
+    {
+      "claim_id": "1c5d1139-9e4d-4c83-9370-ccd5c0dd096d",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    },
+    {
+      "claim_id": "6281b6f3-6086-48e4-8319-7d8ae030c01e",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    },
+    {
+      "claim_id": "fd74313d-cffe-4744-b955-e1c9e74945a0",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    },
+    {
+      "claim_id": "2c163cd6-b578-4fdd-b890-22186c4dde51",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    },
+    {
+      "claim_id": "63de76aa-0089-46f5-9bf3-5fe0235bc04e",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    },
+    {
+      "claim_id": "888bcf44-5124-47ef-a302-a6369ed94fe4",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    },
+    {
+      "claim_id": "eb2008a2-f7bc-4fd1-9de5-e0665f41b095",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    },
+    {
+      "claim_id": "11ea013f-5ea9-4438-a39f-7a8bcde5cf7f",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    },
+    {
+      "claim_id": "e66ee18c-1075-45a3-8b02-a2845f39a549",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    },
+    {
+      "claim_id": "e4e10927-1dbb-4526-adc3-31377b305570",
+      "result_id": "a4d73b6e-21bb-4d7e-a1aa-c623b5e29756"
+    }
+  ],
+  "comparisons": []
+}

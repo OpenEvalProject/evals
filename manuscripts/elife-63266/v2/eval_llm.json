@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Integration of 16 gene expression datasets from 11 studies generated a p63 Expression Score that identifies genes commonly regulated by p63 across cell types. Gene set enrichment analysis revealed that p63 up-regulated genes enrich for cell cycle, epidermis development, MYC targets, mTORC1 signaling, mammary stem cell genes, and SCC-specific genes, while down-regulated genes enrich for interferon response, oxidative phosphorylation, and aerobic respiration pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 describe a meta-analysis approach integrating multiple datasets to identify p63-regulated genes and their pathway enrichments. The methodology is clearly described (C31), and the enrichment results (C32-C37) are supported by data shown in Figures 2A-E and citations to prior work establishing p63's known roles. The approach addresses the limited overlap problem noted in C30 by using multiple datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Transcription factor binding enrichment analysis identified known mediators of p63-dependent gene regulation (E2F4, E2F6, SIN3A, E2F1, FOXM1, NFYA, NFYB, MYC/MAX, KLF4, SMAD4) and novel candidate mediators (AR, ZMIZ1, SP1, FLI1, NANOG) among p63-upregulated genes, while SOX2 was the only TF enriched among p63-downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 report TF enrichment analysis results shown in Figure 3A. The identification of known mediators (C38-C41) is supported by citations to prior work, while novel candidates (C42) are identified through the current analysis. The finding that only SOX2 is enriched among down-regulated genes (C43) is surprising but clearly stated and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "p63 up-regulated genes enrich for DREAM and E2F target genes, and DREAM targets are modestly down-regulated upon p63 loss. Depletion of p63 in Nutlin-treated MCF10A cells decreased DREAM target expression without affecting p21 levels, indicating a p53-independent effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe the relationship between p63 and DREAM/E2F targets, supported by data in Figures 3B-D. The observation that p63 depletion affects DREAM targets independently of p21 (C46-C47) is particularly important as it suggests a mechanism distinct from p53. The data clearly show this effect in Figure 3D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Comparison of p63 and p53 Expression Scores reveals that negative p53 scores correlate with positive p63 scores (consistent with antagonistic regulation of cell cycle genes), while p53-induced genes appear largely unaffected by p63. Expression data for 343 high-confidence p53 target genes show no consistent changes upon p63 perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 compare p63 and p53 gene regulatory networks using Expression Scores. The correlation analysis (C48) is shown in Figure 4A with supporting citations. The lack of p63 effect on p53 targets (C49-C51) is demonstrated in Figure 4B and challenges the dominant-negative model. The analysis is rigorous and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Integration of 20 p63 and 28 p53 ChIP-seq datasets reveals that more than half of p63 peaks are present in multiple datasets, and p63 occupies substantially more binding sites than p53 despite fewer datasets. Binding sites supported by more datasets are more likely to harbor canonical response elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe the ChIP-seq meta-analysis approach and key observations about binding site reproducibility and abundance. The data in Figures 5A-D clearly support these findings. The observation that p63 has more binding sites than p53 (C53-C54) despite fewer datasets is particularly striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Iterative de novo motif search reveals that p63-binding sites display highly conserved C, G, C, and G at positions 4, 7, 14, and 17. p53 can bind to spacer-containing REs and single half-sites, but these represent only ~5% of p53-bound sites. Both p53 and p63 can bind three-quarter sites, while p63 binds a broader spectrum of sequences than p53, likely underlying its greater number of binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 describe detailed motif analysis results shown in Figures 5F and 6. The iterative approach identifies multiple motif types with quantification. The finding that spacer-containing sites represent only ~5% of p53 peaks (C59) contrasts with a prior report (Vyas et al., 2017) but is based on genome-wide unbiased analysis. The broader binding repertoire of p63 (C61-C62) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The vast majority (~70%) of p53 and p63 binding sites harbor full-length response elements. While most p53-bound sites are also bound by p63, p63 binds many unique sites. p53 binding strongly correlates with canonical motifs, while p63 binding does not, suggesting p53 requires sequence-specific binding while p63 requires minimal sequence identity and may depend on additional co-factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 describe the overlap and differences in p53/p63 binding patterns, supported by data in Figures 6, 7, and Figure 5 supplements. The quantification of full-length REs (C63) and the correlation analyses (C64-C67) are clearly shown. The mechanistic interpretation (C68-C69) is reasonable but somewhat speculative regarding co-factors, though supported by the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Motif search reveals no additional motifs enriched near p53 or common p53+p63 sites, but unique p63 sites are enriched for AP-1 (bZIP) and bHLH motifs. CistromeDB analysis identifies known co-binders (p300, MAF, SOX2, BANF1, KMT2D for p63; TRIM28, BRD4, p300, ZBTB33, CDK9, HEXIM1 for p53) and novel candidates (KDM1A, PRMT1, GRHL2 for p63; BRD9, ZNF131, C17orf49 for p53) that may shape specific binding landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 describe co-factor analysis using motif search and CistromeDB. The AP-1/bHLH enrichment at p63 sites (C71) is shown in Figure 5 supplement 3 with citation support. The CistromeDB analysis (C72-C75) identifies both known and novel co-binders shown in Figure 5 supplement 4. The interpretation that novel co-binders may shape binding landscapes (C76) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Integration of p63 binding data (\u226510 dataset support), expression data (|p63 Expression Score| \u22658), and enhancer:gene associations identified 138 up-regulated and 42 down-regulated high-probability direct p63 target genes. The list includes many known p63 targets and novel enhancer-regulated genes (IL1B, MREG, MYO5A, RRP12, SNCA, AK4, EHD4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe the target gene prediction approach and results shown in Table 1 and Figure 7 supplement 1. The methodology integrates multiple data types with conservative thresholds. The validation through known targets (C79) and identification of enhancer-regulated genes (C80) demonstrate the approach's utility. The integration of enhancer:gene associations is a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Of 180 high-probability p63 targets, 28 are commonly up-regulated in SCCs, including genes that promote SCC growth/invasion. Expression of this 28-gene set correlates significantly with poorer HNSC patient survival (p=0.032), with low expression associated with better prognosis (p=0.024). The gene set shows switch-like correlation with p63 expression, saturating at FPKM >20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 describe the clinical relevance analysis using TCGA HNSC data shown in Figure 8. The survival analysis (C83-C85) shows significant correlation with appropriate statistical tests. The saturation effect (C86-C87) is clearly demonstrated in Figures 8C-D. However, the survival analysis shows borderline significance (p=0.090 for direct comparison, C84) and requires grouping for significance (p=0.024, C85), suggesting modest effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Most p53-bound sites are also occupied by p63, but single half-sites and spacer-containing motifs underlie many p53-unique sites (though only 1.1-5.1% of p53 peaks genome-wide). The CNNG core motifs underlie p63-unique sites. p63's ability to bind diverse motifs likely underlies its greater number of binding sites. Mechanistically, p53 may rely on CWWG core and flanking regions for spacer-containing sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 synthesize the binding specificity findings from Figures 5-7. The quantification of spacer-containing sites (C93) provides important context to prior work. The mechanistic interpretations (C94, C96) are reasonable inferences from the motif data, though somewhat speculative. The explanation for differential binding (C95) is well-supported by the motif analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Motif analysis suggests AP-1 (bZIP) and bHLH factors may support p63 binding. TF enrichment identified MAF, GRHL2, BANF1, PRMT1, and the ZNF750/KDM1A/KLF4 complex (previously shown to operate downstream of p63) as potential co-binders. Given p63's pioneer role, it could enable binding of these TFs to respective loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 propose mechanisms for p63 binding specificity. While the motif enrichment (C97) and TF identification are data-supported (Figure 5 supplements 3-4), the mechanistic interpretations are largely speculative. The ZNF750/KDM1A/KLF4 complex is supported by citation (C98), but the pioneer factor hypothesis (C99) is speculative without direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Given that p63 and p73 form stable heterotetramers, p73 may possess binding specificities highly similar to p63.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 propose that p73 binding specificity resembles p63 based on heterotetramer formation. While the heterotetramer formation is supported by citation (C100), the inference about binding specificity (C101) is speculative without direct p73 binding data analysis. This is reasonable speculation but not demonstrated in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The iterative de novo search algorithm enabled identification of spacer-containing p53REs, indicating the approach uncovers second-tier TF binding motifs invisible to standard approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 describes a methodological advance. The iterative approach successfully identified spacer-containing motifs (Figure 5F, C57) that represent a small but real fraction of binding sites. This demonstrates the utility of the method for identifying low-abundance motif variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "p63 is more frequently involved in direct up-regulation than down-regulation of target genes. Mechanistically, p63 up-regulates genes through its alternative N-terminal TAD while the C-terminus is important for down-regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 describe the directional bias of p63 regulation. The observation (C103) is supported by the target gene analysis (Figure 7 supplement 1, Table 1) and citation to Yang et al., 2006. The mechanistic explanation (C104-C105) is from prior work (Helton et al., 2006) and provides context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "While early models suggested p63 exhibits dominant-negative effects on p53 based on exogenous expression studies, genome-wide studies show minimal overlap between p63- and p53-regulated genes. Recent analysis suggests p63 supports rather than inhibits p53 activity. The current analysis confirms p63 does not commonly interfere with p53 target gene up-regulation, though they antagonistically regulate cell cycle genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 synthesize prior work and current findings regarding p63-p53 interactions. The historical context (C106-C108) is well-cited. The current analysis (C109) shown in Figure 4 supports the conclusion that p63 and p53 regulate largely distinct gene sets except for cell cycle genes. This challenges the dominant-negative model with genome-wide data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "AR, ZMIZ1, SP1, FLI1, and NANOG are novel candidate nodes in the p63 GRN. Cell cycle genes are antagonistically regulated by p53 (down-regulation via p21/DREAM/RB-E2F) and p63 (down-regulated upon p63 loss via p21/p130). Multiple cell cycle genes are predicted as direct p63 targets, and p63 loss may contribute to p53's effect on cell cycle gene expression. The entire cell cycle gene set may be indirectly up-regulated through p63's pro-proliferative targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 describe p63's role in cell cycle regulation. The identification of novel GRN nodes (C110) is data-supported (Figure 3A). The antagonistic regulation (C111) is shown in Figures 2A and 4A with citations. The prediction of direct targets (C114) is in Table 1. The mechanistic interpretations (C115-C116) are reasonable, though C116 is somewhat speculative about indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "While cell cycle gene up-regulation occurs in most cancers, p63 additionally regulates genes specifically altered in SCCs, underscoring p63's critical role in determining SCC transcriptional profiles. NRG1 is an example p63 target that can be inhibited to block SCC proliferation. The 28-gene set of p63 targets up-regulated in SCC may contain promising candidates for therapeutic interventions and biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 discuss the SCC-specific role of p63. The observation that p63 regulates SCC-specific genes (C118) is shown in Figure 2D. The NRG1 example (C120) is well-cited. The therapeutic potential (C121) is a reasonable inference from the survival analysis (Figure 8), though somewhat speculative. The overall conclusion about p63's role in SCC (C119) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Many p63 target genes initially described in mouse could not be confirmed as p63-regulated in human due to substantial species differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 notes species differences in p63 targets, supported by citations to Fischer 2020, Fischer 2019, and Sethi et al., 2017. This provides important context for why the study focused on human data and explains discrepancies with mouse studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "p63-binding sites are frequently associated with enhancer regions and enhancer identity, leading to integration of enhancer:gene associations to identify target genes regulated through enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 describes the rationale for the enhancer integration approach. This is established knowledge about p63 binding patterns and justifies the methodological choice to include enhancer:gene associations in target prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on p53 family members: p53 is a well-known tumor suppressor while p63 is a master regulator of epidermis development and oncogenic driver in SCC. The p53 family (p53, p63, p73) shares a conserved DNA binding domain and binds similar motifs, but mechanisms enabling unique gene regulatory networks remain unclear. TP53 and TP63 encode isoforms from distinct promoters with cell-type-dependent usage. Previous studies on p63 binding motifs showed inconsistent results with limited overlap of p63-dependent genes across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30 provide established background knowledge about the p53 family, supported by numerous citations. These claims establish the scientific context and rationale for the study. The observation of inconsistent prior results (C29-C30) motivates the meta-analysis approach used in the current work.",
+    "result_type": "MINOR"
+  }
+]

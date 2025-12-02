@@ -1,0 +1,1862 @@
+{
+  "submission": {
+    "id": "d382d46f-dfd9-400f-90d2-d48299da7555",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:07:32.419917Z",
+    "updated_at": "2025-12-02T14:07:32.419917Z"
+  },
+  "content": [
+    {
+      "id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "submission_id": "d382d46f-dfd9-400f-90d2-d48299da7555",
+      "content_type": "manuscript",
+      "content_text": "# De novo design of a homo-trimeric amantadine-binding protein\n\n## Authors\n\n- Jooyoung Park<sup>1</sup> ([ORCID: 0000-0001-8557-641X](https://orcid.org/0000-0001-8557-641X)) \u2020\n- Brinda Selvaraj<sup>3</sup>\n- Andrew C McShan<sup>4</sup> ([ORCID: 0000-0002-3212-9867](https://orcid.org/0000-0002-3212-9867))\n- Scott E Boyken<sup>1</sup> ([ORCID: 0000-0002-5378-0632](https://orcid.org/0000-0002-5378-0632))\n- Kathy Y Wei<sup>1</sup> ([ORCID: 0000-0002-8794-1385](https://orcid.org/0000-0002-8794-1385))\n- Gustav Oberdorfer<sup>6</sup>\n- William DeGrado<sup>7</sup>\n- Nikolaos G Sgourakis<sup>4</sup> ([ORCID: 0000-0003-3655-3902](https://orcid.org/0000-0003-3655-3902))\n- Matthew J Cuneo<sup>3</sup> ([ORCID: 0000-0002-1475-6656](https://orcid.org/0000-0002-1475-6656))\n- Dean AA Myles<sup>3</sup> ([ORCID: 0000-0002-7693-4964](https://orcid.org/0000-0002-7693-4964))\n- David Baker<sup>1</sup> ([ORCID: 0000-0001-7896-6217](https://orcid.org/0000-0001-7896-6217)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Washington Seattle United States\n2. Institute for Protein Design University of Washington Seattle United States\n3. Neutron Sciences Directorate Oak Ridge National Laboratory Oak Ridge United States\n4. Department of Chemistry and Biochemistry University of California, Santa Cruz Santa Cruz United States\n5. Department of Bioengineering University of California, Berkeley Berkeley United States\n6. Institute of Biochemistry Graz University of Technology Graz Austria\n7. Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States\n8. Department of Structural Biology St. Jude Children\u2019s Research Hospital Memphis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe computational design of a symmetric protein homo-oligomer that binds a symmetry-matched small molecule larger than a metal ion has not yet been achieved. We used de novo protein design to create a homo-trimeric protein that binds the C3 symmetric small molecule drug amantadine with each protein monomer making identical interactions with each face of the small molecule. Solution NMR data show that the protein has regular three-fold symmetry and undergoes localized structural changes upon ligand binding. A high-resolution X-ray structure reveals a close overall match to the design model with the exception of water molecules in the amantadine binding site not included in the Rosetta design calculations, and a neutron structure provides experimental validation of the computationally designed hydrogen-bond networks. Exploration of approaches to generate a small molecule inducible homo-trimerization system based on the design highlight challenges that must be overcome to computationally design such systems.\n\n## Introduction\n\nWhile there has been progress in the de novo design of small molecule binding proteins (Tinberg et al., 2013; Ollikainen et al., 2015; Mills et al., 2016; Polizzi et al., 2017; Dou et al., 2018), there are still considerable challenges in this area (Dou et al., 2017). There has also been progress in designing protein structures with internal symmetry (Boyken et al., 2016; Ghirlanda et al., 2004). We focus in this paper on the challenge of designing symmetric protein homo-oligomers that bind to symmetry matched small molecules such that each protein monomer makes identical interactions with the small molecule. From the protein design standpoint, this challenge is interesting as it enables more economical design strategies in which one protein-small molecule interface is utilized multiple times, analogous to the use of a single designed protein-protein interface in self-assembling protein nanostructures (Bale et al., 2016; Hsia et al., 2016). From the applications standpoint, the challenge has considerable importance because it provides a stepping stone to ligand induced homo-oligomerization systems, which are increasingly in demand in cellular engineering applications (Fegan et al., 2010; DeRose et al., 2013). Chemically-inducible dimerization systems (Spencer et al., 1996) have been utilized to modulate signal transduction (Spencer et al., 1996; Mallet et al., 2002; Guerrero et al., 2008), transcriptional activation (Nyanguile et al., 1997), and post-translational modification (Stankunas et al., 2003), and as components for logic gates (Miyamoto et al., 2012). However, to our knowledge, no chemically-inducible trimerization systems have been developed despite the importance of trimerization in pro-apoptotic and pro-inflammatory signaling cascades (Spencer et al., 1996).\n\n## Results\n\n### Computational design strategy for ABP\n\nWe set out to design trimeric proteins that bind small molecules with three-fold symmetry on their symmetry axes. We focused on the C3 symmetric compound amantadine as it is an FDA approved drug\u00a0(https://www.accessdata.fda.gov/drugsatfda_docs/label/2009/016023s041,018101s016lbl.pdf) with a low side effect profile (Perez-Lloret and Rascol, 2018). To de novo design amantadine-binding sites at the protein trimer C3 axes, we started from parametrically generated C3 symmetric helical bundle backbones consisting of two concentric rings each with three helices. The symmetry axes of the protein scaffold and the amantadine were aligned, and the remaining two degrees of freedom (the placement along the symmetry axis, and the rotation around this axis) were sampled by grid search (Figure 1a). For each placement, RosettaDesign was used to optimize the identities and conformations of the residues within 12.5 \u212b of the amantadine for high affinity binding, and residue conformations at\u00a0distances farther than 12.5 \u212b to retain hydrogen-bond networks identified by Rosetta HBNet (Figure 1b\u2013c). The search was restricted to symmetric solutions in which each monomer is identical in sequence and structure. We found a particularly low energy solution starting from a previously characterized design with a high-resolution crystal structure (2L6HC3_13) (Boyken et al., 2016) (Figure 1a and d). This solution, which we refer to as ABP (amantadine-binding protein), contains 19 amino acid changes compared to 2L6HC3_13 (Figure 1d). The interactions critical for amantadine binding include hydrogen bonds from Ser-71 to the polar amino group of amantadine and a shape complementary binding pocket composed by Ile-64, Leu-67, and Ala-68 (Figure 1b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47839/elife-47839-fig1-v1.jpg)\n\n**Figure 1.:** (a) The homo-trimeric scaffold was designed to bind amantadine such that the C3 axes of the protein and the small molecule are aligned. Amantadine is colored orange and each monomer of ABP is colored magenta, green, or cyan. The amantadine binding site is highlighted by a dashed oval. (b) The binding pocket in ABP was designed to have polar serine residues (Ser-71) that hydrogen-bond (yellow dashed lines) to the amino group of amantadine and nonpolar residues (Ile-64, Leu-67, and Ala-68) to complement the shape of the hydrophobic moiety of amantadine. (c) The design model contains hydrogen-bond networks that specify the trimeric assembly of ABP. (d) A sequence alignment of ABP and 2L6HC3_13 is shown, with mutated regions shown in black boxes. Both sequences are preceded by a five-residue GHSMG pre-sequence (not shown) that result from the cloning strategy. The residues highlighted in (b) are annotated by green circles.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47839/elife-47839-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0The original ABP design is shown colored in magenta, green, or cyan.\u00a0(b)\u00a0Ala/Ser mutations were introduced in the core of the helical bundle in order to reduce the trimeric interface.\u00a0(c)\u00a0HBNet\u00a0was used to incorporate more polar residues at the monomer-monomer interfaces that could make hydrogen-bond interactions (yellow dashed lines).\u00a0(d-f)\u00a0The outer helices were truncated to various lengths and the identities of surface-exposed positions redesigned to be polar.\u00a0(g)\u00a0The helical bundle was shortened by removing a heptad repeat.\u00a0(h)\u00a0The helical bundle was shortened to just the amantadine-binding site, and helical repeats were fused onto the core bundle in order to stabilize the structure of the reduced core.\n\n### Binding interaction of amantadine with ABP\n\nA synthetic gene encoding ABP was obtained and the protein expressed in E. coli. The design was expressed at high levels in the soluble fraction and was found by SEC-MALS to be a trimer in the presence and absence of amantadine (Figure 2a). Interactions with amantadine were probed using thermofluor dye binding assay (differential scanning fluorimetry). The thermofluor melting curve for apo-ABP exhibited a high initial fluorescence signal at 25\u00b0 C (Figure 2b), indicating that hydrophobic residues in the protein core are exposed to solvent, characteristic of a molten globule state. As the protein was heated to 95\u00b0 C, the fluorescence signal decreased, likely due to aggregation and/or complete unfolding. In the presence of amantadine (1 mM), the initial fluorescence signal was much lower, characteristic of properly folded proteins (Figure 2b), suggesting that amantadine binding may cause local ordering and exclude solvent. In contrast, 2L6HC3_13, which has the same backbone parameters but lacks the amantadine binding site, is thermally stable by thermofluor assay, only starting to denature at\u00a0~80\u00b0 C (Figure 2b), consistent with previous work (Boyken et al., 2016). As expected, amantadine had no effect on the melting curve of 2L6HC3_13, suggesting the interactions with ABP are through the designed binding site (Figure 2b). The circular dichroism (CD) spectrum of ABP at 25\u00b0 C suggests an all \u0251-helical structure, with negative bands at 222 nm and 208 nm, and a positive band at 190 nm (Figure 2c). As the sample was heated to 95\u00b0 C, a loss in CD signal was observed which was not significantly altered in the presence of 1 mM amantadine (Figure 2c and Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47839/elife-47839-fig2-v1.jpg)\n\n**Figure 2.:** (a) SEC chromatogram monitoring absorbance at 280 nm (mAU) and estimated molecular mass (from MALS). (b) Apo-ABP (orange, open circle) exhibits a high initial fluorescence signal that is lowered in the presence of amantadine (orange, solid circle). As expected, 2LC3H6_13 (blue, open triangle) and 2LC3H6_13 plus amantadine (blue, solid triangle) exhibit a very low initial fluorescence signal and overlap almost identically. (c) The CD spectrum of ABP at 25\u00b0C, 75\u00b0C, 95\u00b0C, and 25\u00b0C after heating and cooling. The CD spectrum of ABP at 25\u00b0C suggests an all \u0251-helical structure that remains fairly stable up to 75\u00b0C. (d) 2D amide 1H-15N HMQC spectra (left) and 2D methyl 1H-13C HMQC spectra (right) of 250 \u03bcM apo-ABP (red) or ABP in the presence of 2 mM amantadine (blue) recorded at 800 MHz, 37\u00b0C. Titration of amantadine leads to significant changes in the ABP NMR spectra (arrows). To the right of the 2D methyl methyl 1H-13C HMQC spectra an inset of dissociation constant estimate through\u00a0conventional fraction bound analysis is shown for the affected ILE methyl group, with an estimated KD of\u00a0<55 \u03bcM. (e) NMR line shape fitting of ABP throughout the NMR titration with amantadine performed in the program TITAN using a two-state binding model for the affected ILE methyl group. The NMR data (gray) are shown versus the TITAN fit (magenta).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47839/elife-47839-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) The CD spectrum of ABP in the presence of 5 mM amantadine at 25\u00b0C, 75\u00b0C, 95\u00b0C, and 25\u00b0C after heating and cooling suggests that the thermal stability of ABP is not significantly affected by the presence of amantadine. (b) CD temperature melt monitoring absorption at 222 nm for ABP in the presence of 5 mM amantadine.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47839/elife-47839-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Representative view of 2D 1H-13C methyl SOFAST-HMQC spectra of select ABP methyl groups without amantadine (red) and with amantadine at ABP:amantadine molar ratios of 1:0.58 (green), 1:1.35 (purple), and 1:2.47 (yellow). Arrows indicate significant chemical shift deviations in ABP methyl groups upon complex formation with amantadine. NMR experiments were recorded with 118 \u03bcM ABP at 800 MHz, 37\u00b0C.\n\n### Solution NMR analysis of amantadine binding\n\nTo examine whether the hydrophobic residues (Ile-64, Leu-67, and Ala-68) contacting amantadine (Figure 1b) undergo conformational changes upon ligand binding, as suggested by the thermofluor assays, ABP was selectively 13C-methyl-labeled at Ala, Ile, Leu, and Val residues in a 12C/15N/1H background and characterized by solution NMR, both in the presence and absence of amantadine. We observe resonances for 70 out of 79 amide and 51 out of 51 methyl groups present in the primary sequence; a small number of amide NMR resonances are missing likely due to conformational exchange-induced line broadening. The single set of peaks for all three polypeptide chains of the apo-ABP suggests that it populates a homogeneous and symmetric ensemble of conformers in solution (Figure 2d). The 1H dispersion in the 2D 1H-15N HQMC and 2D 1H-13C HMQC NMR spectra suggests that ABP, both in the presence and absence of amantadine, adopts a similar helical structure (Figure 2d). A full titration of amantadine on ABP confirms the formation of a stable amantadine-ABP complex, with chemical exchange between the free and bound ABP states slow on the NMR chemical shift time scale (residence time of 10\u2013100 milliseconds) (Figure 2d, arrows). An NMR line shape fitting of the three most significantly affected ABP methyl resonances (>0.1 ppm chemical shift deviation between free and bound states) using TITAN suggest an apparent dissociation constant (KD) of 24.1\u00a0\u00b1\u00a02.7 \u03bcM and upper limit for off-rate constant (koff) of 60.7\u00a0\u00b1\u00a05.6 s\u22121 (on-rate constant of 2.5 \u00d7 106 M\u22121 sec\u22121) (Figure 2e and Figure 2\u2014figure supplement 2). The relatively slow fitted on- and off-rate constants are consistent with a buried amantadine binding site. Fixing the KD to half (12 \u03bcM) or twice (48 \u03bcM) the value obtained from the fit yielded higher chi-square residuals and less good agreement between observed and simulated line shapes (Supplementary file 3). We also performed an independent conventional fraction bound analysis, which yielded lower and upper bounds for the KD to be 25 \u03bcM and 55 \u03bcM, respectively (Figure 2d, inset). Together, these data suggest that amantadine likely binds to ABP with a KD in the low micromolar range. We were not able to assign the resonances of the protein due to difficulties in preparing labeled samples, but we observe significantly affected methyl resonances which could correspond to the Ile-64, Leu-67, and Ala-68 residues in close proximity to the intended amantadine binding site in the designed structure (Figure 1b). Together, the NMR titrations of both amide and methyl groups suggest the presence of localized backbone and side-chain conformational changes in ABP upon amantadine binding.\n\n### X-ray crystal structure is in close agreement with the design model\n\nWe carried out crystallographic studies to characterize the interaction between ABP and amantadine. Crystallization screen trays were set up with the same protein sample with or without\u00a0~five fold molar excess amantadine (7.5 mM). Crystals were obtained in the presence but not the absence of amantadine, consistent with ordering upon amantadine binding. The X-ray crystal structure of ABP+amantadine was solved to 1.04 \u212b, providing a high-resolution view of the ABP-amantadine complex structure (Figure 3a and Supplementary file 2A). The crystal structure overlays well with the design model, with an RMSD of 0.63 \u212b (TMAlign [Zhang and Skolnick, 2005]) (Figure 3a). The primary difference between the design model and crystal structure is in the compactness of helices in the amantadine-binding region and rotation of the amantadine molecule accompanied by the presence of crystallographic water molecules (Figure 3a). In the original design model, the amino group of amantadine was oriented to hydrogen bond directly to Ser-71 in ABP (Figure 3b), but in the X-ray crystal structure, amantadine was found to be rotated 60\u00b0 with ordered water molecules mediating hydrogen bonds to Ser-71 residues in ABP (Figure 3b\u2013c). Amantadine is often bound as a tri- or tetra-hydrate with the waters associated with the amino group (Thomaston et al., 2018; Wang et al., 2011), for example in a recent crystal structure of amantadine bound to the influenza M2 channel protein, amantadine bound the key His-37 residues in M2 through water-mediated interactions (Figure 3d). Including explicit water molecules in the Rosetta design calculations could enable the design of proteins that bind amantadine with higher affinity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47839/elife-47839-fig3-v1.jpg)\n\n**Figure 3.:** (a) The high-resolution X-ray structure (white) and neutron structure (gray) of ABP in complex with amantadine are very close to the computational model (magenta, green, and cyan) (RMSD of 0.63 \u212b and 0.59 \u212b, respectively). The blue arrow indicates the amantadine binding site shown in (c,e), and the red arrows indicate the hydrogen bond networks, one of which is shown in (f). (b) A zoomed in overlay of the X-ray structure (white) and the design model (colored) reveal a shift in the helices within the amantadine-binding region, accompanied by a\u00a0~\u00a060\u00b0 rotation of amantadine and the presence of water molecules that that mediate hydrogen bonding to Ser-71. Yellow dashed lines show direct hydrogen bonds to Ser-71 in the design model and black dashed lines show the hydrogen bonds observed in the X-ray structure. (c) Clear electron density can be observed for amantadine and ordered water molecules in the binding site of ABP (2Fo - Fc map contoured at 1.0\u03c3). Water-mediated hydrogen bonds are observed between Ser-71 and the amino group of amantadine (black dashed lines). (d) The crystal structure (pale green) of amantadine bound to the influenza M2 protein through water-mediated hydrogen bonds (image generated from PDB: 6BKK [Thomaston et al., 2018]). (e) The nuclear scattering length density map shows the positions of deuterium atoms, including two ordered water molecules that mediate the hydrogen-bond network between Ser-71 and amantadine (2Fo - Fc contoured at 1.0\u03c3). Hydrogen bonds are shown as black dashed lines. (f) Clear nuclear scattering length density can be observed for residues involved in the designed hydrogen-bond networks (black dashed lines) in ABP (2Fo - Fc map contoured at 1.0\u03c3).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47839/elife-47839-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a)\u00a0The 2Fo\u00a0- Fc\u00a0electron density map contoured at 1.0\u03c3 is colored in light blue.\u00a0(b)\u00a0The 2Fo\u00a0- Fc\u00a0neutron density length scattering map contoured at 1.0\u03c3 is colored in light orange.\n\n### Neutron structure reveals hydrogen-bond interactions\n\nWe used neutron diffraction to directly visualize the intra- and intermolecular hydrogen-bond networks within ABP and with amantadine. Room temperature neutron data collected to 2.3 \u212b on a deuterium-exchanged ABP crystal revealed the protonation state of residues that form hydrogen bonds to the polar amino group of amantadine and the orientation of the D2O network that helps anchor amantadine at the trimeric interface (Figure 3e\u2013f; Supplementary file 2B). Nuclear scattering length density is clearly visible for the deuterium atoms of water molecules DOD-31 and DOD-41, and the amino group of amantadine. DOD-31 accepts hydrogen bonds from the amino hydrogens of amantadine and donates hydrogen bonds to SER-71 and DOD-41. In both the X-ray and neutron structures, amantadine sits at a special position on the C3 symmetry axis, with its adamantane moiety interlocked at the trimeric interface and surrounded by the hydrophobic residues Ile-64, Leu-67, and Ala-68. The neutron structure shows no evidence of H/D exchange within the trimeric interface, even though the crystals were D2O exchanged, suggesting that the trimeric core is tightly packed, and that once formed, remains stable and inaccessible to solvent at room temperature.\n\n### ABP variant designs\n\nABP binds amantadine in a manner very similar to the design model and leads to significant localized changes as visualized by solution NMR, but it is a constitutive (albeit perhaps not a very thermal-stable) trimer in the absence of amantadine. We sought to generate ABP derivatives with amantadine-inducible trimerization by destabilizing the trimer in a variety of ways (Figure 1\u2014figure supplement 1). Sidechain truncations such as Ala/Ser mutations were introduced in the core of ABP to destabilize the trimeric interface (Figure 1\u2014figure supplement 1b), but these constructs were either poorly expressed or lost amantadine binding activity as assessed by thermofluor. The Rosetta HBNet protocol that was used to generate the hydrogen-bond networks in ABP was extended to search for intermolecular hydrogen bond interactions between residues that span the monomer-monomer interfaces reduce the extent of hydrophobic packing of the trimer (Figure 1\u2014figure supplement 1c), but these constructs were again poorly expressed. Truncations of the outer helix (Figure 1\u2014figure supplement 1d\u2013f) were attempted, but this resulted in mostly insoluble protein or monomeric species that no longer bound amantadine (In one case, truncation of both helices (Figure 1\u2014figure supplement 1g) resulted in a tetramer that no longer bound amantadine). In larger-scale redesigns, the core amantadine-binding site was backed up with helical repeat fusions to stabilize the helical core (Figure 1\u2014figure supplement 1h), but these constructs remained constitutive trimers. Taken together, these results suggest that conversion of our design into well behaved monomers that assemble into a trimer in the presence of amantadine is difficult because the subunit-subunit interface in the trimer involves considerable non-polar surface area which makes the subunits poorly behaved as monomers, and the low binding affinity for amantadine does not provide a strong driving force for assembly.\n\n## Discussion\n\nWe report the characterization of a de novo designed trimeric protein, ABP, which binds the small molecule drug amantadine. The designed protein contains hydrogen-bond networks that specify the trimeric state and water-mediated binding to amantadine. The solution NMR data suggest that ABP adopts a stable, symmetric structure and readily binds amantadine. The high-resolution X-ray crystal structure of the designed protein in complex with amantadine is very close to the computational model, and the neutron structure demonstrates the presence of the designed hydrogen-bond networks. While we were unable to design an inducible trimer, our results are an advance for protein design as to our knowledge this is the first successful de novo design of a homo-trimeric protein that binds a C3 symmetric small molecule other than a metal ion (Mills et al., 2016). Our results suggest two major bottlenecks to the goal of an amantadine-inducible trimerization system based on amantadine binding at a helical bundle three-fold interface: (1) Amantadine, given its small size, does not provide strong driving force for trimerization. (2) Well behaved monomers in the absence of amantadine are hard to achieve in a system with substantial buried nonpolar surface area at the trimer interface (which becomes exposed in the monomers). Success in designing protein homo-trimerization systems will likely require smaller subunit interfaces and higher affinity binding sites, perhaps using larger C3 molecules.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (include species and sex here)</td>\n      <td>One ShotBL21 Star (DE3) Chemically Competent E. coli</td>\n      <td>Invitrogen (Thermo Fisher Scientific)</td>\n      <td>C601003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET28b(+) DNA - Novagen</td>\n      <td>Sigma-Aldrich (Millipore Sigma)</td>\n      <td>69865\u20133</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NeXtal Tubes JCSG+Suite</td>\n      <td>Qiagen</td>\n      <td>130720</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Amantadine hydrochloride</td>\n      <td>Sigma-Aldrich (Millipore Sigma)</td>\n      <td>A1260</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Rosetta software suite</td>\n      <td>Rosetta Commons</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Rosetta design\n\nDesign calculations were performed using RosettaDesign. The Rosetta software suite is available free of charge to academic users and can be downloaded from http://www.rosettacommons.org. Instructions and inputs for running these applications, and all other data necessary to support the results and conclusions (including the.xml,. cst,. params, and in.res files mentioned below), are provided in Supplementary files 1A-1D.\n\nThe initial 2LC3H6_13 scaffold was previously generated using parametric design (Boyken et al., 2016). Briefly, the parametrically generated backbone was regularized using cartesian space minimization in Rosetta and a special instance of the HBNet protocol - HBNetStapleInterface - was used to identify combinations of hydrogen-bond networks. The helices of monomer subunits were connected into a single chain and the assembled proteins were designed using symmetric Rosetta sequence design calculations in C3 symmetry.\n\nIn order to create the amantadine binding site, the RosettaScripts protocol was used with user-defined design of the residue positions within 15 \u212b of the ligand (.xml). A Rosetta constraint (.cst) file was used to specify the atom-pair constraints in amantadine. A molecule parameter (.params) file was generated for amantadine in RosettaDesign. Amantadine was split into one third, and the nitrogen and carbon atoms on the axis of rotation were virtualized. Rotamers were repacked with LayerDesign and resfile types (in.res) were used to specify Ser/Thr at residue positions hydrogen-bonding to amantadine.\n\n### Cloning, protein expression and purification\n\nABP was cloned into the pET28b(+) vector at NdeI and XhoI restriction sites. The resulting expressed protein sequence was as follows:\n\nMGSSHHHHHHSSGLVPR/GSHMG//DAQDKLKYLVKQLERALRELKKSLDELERSLEELEKNPSEDALVENNRLNVENNKIIVEVLRIILELAKASAKLA\n\nwhere \u2018/' demarks a thrombin cleavage site and \u2018//' demarks the beginning of the designed sequence within Rosetta and the numbering of amino acids within this manuscript.\n\nConstructs were transformed into BL21-Star (DE3) competent cells (Life Technologies). Cells harboring the plasmid were grown at 37\u00b0C in Terrific Broth II medium containing a final concentration of 0.05 mg/ml kanamycin. Once cells reached an OD600 of 0.6\u20130.8, cells were cooled to 18\u00b0C and induced with 0.25 mM IPTG overnight. After this period, cells were harvested by centrifugation at 4000 r.p.m. for 10 min at 4\u00b0C. Cell pellets were resuspended in 60 ml of 25 mM Tris (pH 8.0), 300 mM NaCl, 20 mM imidazole (pH 8.0), and 1 mM PMSF per 1 L of Terrific Broth II medium and stored at \u221280\u00b0C.\n\nCells were thawed in the presence of 0.25 mg/ml lysozyme and disrupted using sonication on ice for 60 s. The cell extract was obtained by centrifugation at 13,000 r.p.m. for 30 min at 4\u00b0C and was applied onto Ni-NTA agarose beads (Qiagen) equilibrated with wash buffer (25 mM Tris (pH 8.0), 300 mM NaCl, and 20 mM imidazole (pH 8.0)). The wash buffer was used to wash the nickel column three times with five column volumes. After washing, protein was eluted with five column volumes of elution buffer (wash buffer with 300 mM imidazole).\n\nThe eluate was buffer-exchanged with SAXS buffer (25 mM Tris (pH 8.0), 150 mM NaCl, and 2% glycerol) to lower the imidazole concentration from\u00a0~300 mM to\u00a0<20 mM and cleaved with restriction-grade thrombin (EMD Millipore 69671\u20133) overnight at 20\u00b0C. After overnight cleavage, the sample was flowed over equilibrated Ni-NTA agarose beads and the flow-through was captured.\n\nThe protein sample was further purified by gel chromatography using a Superdex 75 Increase 10/300 GL column (GE Healthcare) equilibrated with SAXS buffer. The fractions containing the protein of interest were pooled and concentrated using a 3 K MWCO Amicon centrifugal filter (Millipore).\n\n### Thermofluor assay\n\nThermofluor assays were performed in SAXS buffer using a CFX96 Touch Real-Time PCR machine (Bio-Rad). Thermal stability assays were performed using 45 \u03bcl of 5 \u03bcM protein (with or without 1 mM amantadine) and 5 \u03bcL of freshly prepared 200X SYPRO orange (Thermo-Fisher) solution in SAXS buffer. The temperature was ramped from 25\u00b0C to 95\u00b0C in 0.5\u00b0C increments with intervals of 5 s. Fluorescence was read in the FRET scanning mode. The average of three replicates of buffer + SYPRO orange solution (no protein control) was subtracted from the average of three replicates for each sample.\n\n### Circular Dichroism\n\nCD wavelength scans (260 to 195 nm) and temperature melts (25\u00b0C to 95\u00b0C) were measured using a JASCO J-1500 or an AVIV model 420 CD spectrometer. Temperature melts monitored absorption signal at 222 nm and were carried out at a heating rate of 4 \u00b0C/min. Protein samples were prepared at 0.25 mg/mL in phosphate buffered saline (PBS) pH 7.4 in a 0.1 cm cuvette.\n\n### Solution NMR\n\nIsotopically labeled ABP (U-[15N] Ala 13C\u03b2, Ile 13C\u03b41, Leu 13C\u03b41/13C\u03b42, Val 13C\u03b31/13C\u03b32) methyl) was prepared using well-established protocols (Tzeng et al., 2012)\u00a0and buffer exchanged into NMR buffer (50 mM NaCl, 20 mM sodium phosphate pH 6.5, 10% (v/v) D2O). Two-dimensional 1H-15N SOFAST-HMQC and 1H-13C SOFAST-HMQC spectra of 250 \u00b5M ABP were recorded without amantadine and with 2 mM amantadine at a 1H field of 800 MHz at 37\u00b0C. The pH was monitored to ensure that there were no pH changes that influence NMR shifts upon addition of amantadine hydrochloride. NMR titrations were performed using 118 \u00b5M ABP with 2D 1H-13C SOFAST-HMQC experimental readouts at a 1H field of 800 MHz at 37\u00b0C with ABP:amantadine molar ratios of 1:0, 1:0.58, 1:1.35 and 1:2.47. Titration experiments were recorded with 16 scans with 38 msec acquisition in the indirect 13C dimension and an interscan delay of 0.2 s. Data were processed with a 4 Hz and 10 Hz Lorentzian line broadening in the direct and indirect dimensions, respectively, and fit using a two-state binding model in TITAN (Waudby et al., 2016) with bootstrap error analysis of 100 replicas. Identification of methyl group types (ALA, ILE, LEU) was possible due to the unique chemical shift positions of these methyl group types as referenced in the Biological Magnetic Resonance Data Bank (http://www.bmrb.wisc.edu/). All NMR data were processed with NMRPipe (Delaglio et al., 1995) and analyzed using NMRFAM-SPARKY (Lee et al., 2015).\n\n### Crystallization of ABP\n\nPurified ABP sample was concentrated to approximately 13 mg/ml in SAXS buffer and incubated with 7.5 mM amantadine (~five fold molar excess). Samples were screened using the sparse matrix method (Jancarik and Kim, 1991) with a Phoenix Robot (Art Robbins Instruments, Sunnyvale, CA) utilizing the following crystallization screens: Morpheus (Molecular Dimensions), JCSG+ (Qiagen), and Index (Hampton Research). Crystals were obtained in crystallization condition JCSG+ B9: 0.1 M Citric Acid (4.0), 20% w/v PEG 6000 (final pH 5.0). Crystals were obtained after 1 to 14 days by the sitting-drop vapor-diffusion method with the drops consisting of a 1:1 mixture of 0.2 \u03bcL protein solution and 0.2 \u03bcL reservoir solution.\n\n### X-ray diffraction collection and structure determination of ABP\n\nABP crystals were placed in a reservoir solution containing 20% (v/v) glycerol, and then flash-cooled in liquid nitrogen. The X-ray data sets were collected at a wavelength of 1 \u00c5 at the Beamline 19-ID of the Advanced Photon Source (APS) at Argonne National Laboratory (ANL). Data sets were indexed and scaled using HKL2000 (Otwinowski and Minor, 1997). All the design structures were determined by the molecular-replacement method with the program PHASER (McCoy et al., 2007) within the Phenix suite (Adams et al., 2010) using the design models as the initial search model. The atomic positions obtained from molecular replacement and the resulting electron density maps were used to build the design structures and initiate crystallographic refinement and model rebuilding. Structure refinement was performed using the phenix.refine (Afonine et al., 2010) program. Manual rebuilding using COOT (Emsley and Cowtan, 2004) and the addition of water molecules allowed construction of the final models. Root-mean-square deviation differences from ideal geometries for bond lengths, angles and dihedrals were calculated with Phenix (Adams et al., 2010). The overall stereochemical quality of all final models was assessed using the program MOLPROBITY (Davis et al., 2007). The model showed 100% of the residues in favorable regions of the Ramachandran plot with 0% outliers. Figures were prepared with Pymol (Pymol Molecular graphics System, Version 2.0; Schrodinger, LLC). Summaries of diffraction data and refinement statistics are provided in Supplementary file 2A and a stereo image of a representative region of the electron density map is shown in Figure 3\u2014figure supplement 1a.\n\n### Neutron diffraction collection and structure refinement\n\nNeutron sized ABP crystals were obtained by seeding/feeding techniques. Crystals were grown at 20\u00b0C in sitting drops containing 3 \u00b5l protein solution mixed with 2 \u00b5l of the precipitant well solution, which contained 9% PEG 6000, 0.1 M Citric acid pH 4.0. After 20 days, a 300-micron crystal was transferred to a fresh drop containing 5 \u00b5l of precipitant and 3 \u00b5l of protein solution. After growth terminated (20 days), 2\u20133 \u00b5l of protein solution was fed to the drop every two weeks. When the crystal volume reached 0.2 mm3 (5 months), the well solution was replaced with a D2O containing mother liquor 5 times to exchange labile hydrogen atoms with deuterium (4 months). The crystal was mounted in a quartz capillary for data collection. Neutron diffraction data were recorded using the IMAGINE instrument (Meilleur et al., 2013) at the High Flux Isotope Reactor at Oak Ridge National Laboratory (ORNL). A total of 17 images at 34 hr exposure were collected from two crystal orientations with 10\u00b0 step intervals using a broad bandpass (2.8\u20134.5 \u00c5) quasi-Laue beam. Laue images were indexed and integrated using the LAUEGEN (Campbell et al., 1998) suite of programs from CCP4; wavelength normalized using LSCALE (Arzt et al., 1999) to account for the spectral distribution of the quasi-Laue beam and then scaled and merged using SCALA (Winn et al., 2011).\n\nA room temperature X-ray diffraction data set was collected on a smaller crystal grown under the same conditions and mounted in a quartz capillary at 293 K on a Rigaku micromax-007 HF X-ray generator with a Raxis IV++ image plate detector. The X-ray crystal structure was solved to a resolution of 1.9 \u00c5 using Phenix and manual model building was performed using COOT. Isomorphous replacement for neutron dataset was performed using Phenix with the protein model obtained from the 1.9 \u00c5 X-ray crystal structure followed by several cycles of atomic position and occupancy refinement. The overall stereochemical quality of all final models was assessed using the program MOLPROBITY (Davis et al., 2007). The model showed 98.6% of the residues in favorable regions of the Ramachandran plot and 1.4% in the allowed region. Figures were prepared with Pymol (Pymol Molecular graphics System, Version 2.0; Schrodinger, LLC). Summaries of diffraction data and refinement statistics are listed in Supplementary file 2B and A stereo image of a representative region of the neutron length scattering density map is shown in Figure 3\u2014figure supplement 1b.\n\n### Data availability\n\nThe atomic coordinates and structure factors for the X-ray and neutron crystal structures of ABP have been deposited in the RCSB Protein Data Bank under accession codes: 6N9H and 6NAF respectively. All other data generated or analyzed during this study are included in this published article (and its Supplementary files) or are available from the corresponding author on reasonable request.\n",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "4ade479c-e926-4a61-8a0c-b7d14bbab57e",
+      "submission_id": "d382d46f-dfd9-400f-90d2-d48299da7555",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sarel Jacob Fleishman, Weizmann Institute of Science Israel\n\nReviewers:\n- Ross Anderson\n\n## Review text\n\nDOI: [10.7554/eLife.47839.sa1](https://doi.org/10.7554/eLife.47839.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript by Park and colleagues describes the design of a homotrimer of \u03b1-helical hairpins that binds the C3 symmetric drug amantadine. This work combines the challenging design of symmetric homo-oligomers with that of small molecule binding, by starting from a previously designed homo-trimer and inserting a symmetric amantadine binding site. An experimentally determined molecular structure shows amantadine bound to the designed binding site, albeit via a number of water molecules instead as designed via the protein side-chains. The work thus demonstrates both the promise of de novo design for small molecule binding and the challenges that remain in designing accurate binding sites.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"de novo design of a homo-trimeric amantadine-binding protein\" for consideration by eLife. Your article has been reviewed by Cynthia Wolberger as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Ross Anderson (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript by Park and colleagues builds on previous work from the Baker lab in which parametrically designed \u03b1-helical hairpins were generated. Now, a trimeric hairpin is designed to bind the drug amantadine, which displays C3 symmetry. Design success was evaluated by thermofluor assay, NMR spectroscopy, X-ray crystallography, and neutron diffraction. The work thus addresses the critical challenge of functionalizing de novo designed proteins. The crystal structure shows the amantadine-bound complex; however, not quite as designed through sidechain interactions but via a number of water molecules. While such a design is of interest to protein scientists, many questions remain that should be addressed in a revision. The main questions are listed below.\n\nEssential revisions:\n\n1) How general is this design approach? The manuscript describes in detail one designed binder; were others attempted but failed? Was there anything to learn from these failures about the designed proteins' expression, stability or ligand binding?\n\n2) The main concern in the manuscript is the determination of the binding affinity. There is no doubt that amantadine binds, but with the high ligand concentrations used in crystallography (and some of the NMR experiments) also very weakly interacting molecules could bind. The affinity is determined using NMR line shape analysis with only 4 ligand concentrations. This is less than the number of fitting parameters in the model. In comparison, in the TITAN publication, the experimental data were analyzed using 23 ligand concentrations. Beyond the graphical display in Figure 2\u2014figure supplement 2 (which is difficult to evaluate) there is no presentation of the quality of fit. Also, the lowest used ligand concentration is almost 3 times more than the presented KD. Given that the system is in slow exchange it should be possible to fit the KD to the chemical shift values directly rather than through a line shape analysis, which is considerably more complex and difficult to validate. In any case, 4 conditions are too few for a reasonable KD determination and more concentrations should be tested. Alternatively, it should also be straightforward to use a complementary method like ITC on this system to determine KD. The CD data also suggests weak binding with Kd:s higher than reported. It is suggested in the manuscript that the presence of 1 mM amantadine does not alter the CD temperature denaturation. Binding to a folded state always results in increased stability, see for example Cimmperman et al., 2008. If there is no change in Tm upon addition of amantadine this should, therefore, be commented on.\n\n3) The fact that the ligand does not interact via the designed hydrogen-bond network adds to other reports in the literature on the difficulty of designing hydrogen-bond networks in functional sites. Are there any lessons to learn on how to improve the chances of accurately designing hydrogen-bond networks in binding sites?\n\n[Editors\u2019 note: the revised article was rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"de novo design of a homo-trimeric amantadine-binding protein\" for consideration by eLife. Your article has been reviewed by a Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in the review of your submission have agreed to reveal their identity: Ross Anderson (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers and the editors. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers and we found the problem addressed by your article to be an important, original and exciting challenge. The reviewers also appreciated the clarifications and the very thorough experimental characterization provided in your revision. Nevertheless, the reviewers noted several critical concerns about the behavior of the design in solution. Furthermore, the uncertainties about the binding data and the disagreement between the results obtained by different techniques preclude an accurate determination of the affinity of the design for amantadine \u2013 a key parameter for judging the method's success.\n\nReviewer #1:\n\nPark and colleagues have given detailed answers to all concerns raised. They have provided more information and have been open with addressing the shortcomings of the design.\n\nIn particular they provided additional data for binding in form of an ITC titration. This data is, however, not supportive of binding. There is no stoichiometric binding phase that allows determining deltaH, and N(sites) is calculated to be 0.1 which would mean that only 10% of the protein bind the ligand. No KD can be deduced from such data, and this titration cannot be used as supporting evidence. Maybe the binding affinity is below what is measurable by ITC, but this would be rather in the mM and not \u03bcM range.\n\nConsidering that NMR and Thermofluor are giving a different signal in the presence of amantadine then in its absence, while the CD spectra and Tmelt show no difference with and without ligand, it remains unclear how the designed protein behaves. If it is molten globule like as discussed with respect to the Thermofluor data, then this is expected to be observable in CD as well. If the binding affinity is in the \u03bcM range then it should be measurable with alternative methods, too. Or the binding constant from NMR data is overfitted after all. So unfortunately some of my concerns still remain after the revision.\n\nReviewer #2:\n\nThe manuscript provide valuable insights into the design of ligand-binders and chemically induced oligomerization switches. With the revisions, the readers are provided with a more in-depth understanding of the biophysical properties of the designed proteins and differences between computational design model and experimentally determined structure. While the presented design is not an unmitigated success, the work provides directions for improved approaches in this area that are valuable to the field. My main concerns are addressed with this revision.\n\nReviewer #3:\n\nGiven my previous review of this paper and the subsequent conversation between Reviewers regarding the desired alterations, I am satisfied that the changes made to the manuscript are sufficient to warrant publication in eLife. I therefore recommend that the paper be accepted.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"de novo design of a homo-trimeric amantadine-binding protein\" for further consideration by eLife. Your appeal has been evaluated by Cynthia Wolberger (Senior Editor) and a Reviewing Editor, and we are prepared to accept your revised submission pending additional changes.\n\nIn addition to the changes indicated in the revised manuscript provided with the appeal, the description of the KD determined in the NMR titration should be toned down slightly to indicate that it is an apparent KD. The fact that ABP monomers adopt a variety of conformers almost certainly confounds the NMR line shape analysis used to derive the KD. In addition, the appeal letter notes that the ITC data were removed but are still in the revised manuscript supplied.\n",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d946a324-76fa-4b84-b8df-e887fd21e45e",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C1",
+      "claim": "The computational design of a symmetric protein homo-oligomer that binds a symmetry-matched small molecule larger than a metal ion has not yet been achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "The computational design of a symmetric protein homo-oligomer that binds a symmetry-matched small molecule larger than a metal ion has not yet been achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this work, presented as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "a9b9fe9a-8854-424b-a4c5-acb887cdacea",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C2",
+      "claim": "A de novo designed homo-trimeric protein binds the C3 symmetric small molecule drug amantadine with each protein monomer making identical interactions with each face of the small molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "We used de novo protein design to create a homo-trimeric protein that binds the C3 symmetric small molecule drug amantadine with each protein monomer making identical interactions with each face of the small molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary claim of the manuscript, supported by experimental data presented throughout including NMR, X-ray crystallography, and neutron diffraction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "b971d38a-a70e-4f74-81d2-79f54ed0d635",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C3",
+      "claim": "Solution NMR data show that ABP has regular three-fold symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Solution NMR data show that the protein has regular three-fold symmetry and undergoes localized structural changes upon ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR experimental data presented in Figure 2d and described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "79cf50df-f0a0-471a-b1ce-3985dea79c59",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C4",
+      "claim": "ABP undergoes localized structural changes upon amantadine binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Solution NMR data show that the protein has regular three-fold symmetry and undergoes localized structural changes upon ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR titration data showing chemical shift changes in Figure 2d and 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "487419e6-1bb6-4082-a413-25bbfb431425",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C5",
+      "claim": "The high-resolution X-ray structure of ABP reveals a close overall match to the design model with the exception of water molecules in the amantadine binding site not included in the Rosetta design calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "A high-resolution X-ray structure reveals a close overall match to the design model with the exception of water molecules in the amantadine binding site not included in the Rosetta design calculations, and a neutron structure provides experimental validation of the computationally designed hydrogen-bond networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by X-ray crystallography data showing RMSD of 0.63 \u00c5 and the presence of water molecules mediating hydrogen bonds (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "7c4081d1-5102-4f1c-ba61-3ff996a20004",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C6",
+      "claim": "A neutron structure provides experimental validation of the computationally designed hydrogen-bond networks in ABP.",
+      "claim_type": "EXPLICIT",
+      "source": "A high-resolution X-ray structure reveals a close overall match to the design model with the exception of water molecules in the amantadine binding site not included in the Rosetta design calculations, and a neutron structure provides experimental validation of the computationally designed hydrogen-bond networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by neutron diffraction data showing hydrogen bond networks (Figure 3e-f).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "03081602-6f9b-425a-bdb8-9023c2d6c5e8",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C7",
+      "claim": "There has been progress in the de novo design of small molecule binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "While there has been progress in the de novo design of small molecule binding proteins (Tinberg et al., 2013; Ollikainen et al., 2015; Mills et al., 2016; Polizzi et al., 2017; Dou et al., 2018), there are still considerable challenges in this area (Dou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "df4d2779-8e24-4450-a11c-560a0129c88e",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C8",
+      "claim": "There are still considerable challenges in the de novo design of small molecule binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "While there has been progress in the de novo design of small molecule binding proteins (Tinberg et al., 2013; Ollikainen et al., 2015; Mills et al., 2016; Polizzi et al., 2017; Dou et al., 2018), there are still considerable challenges in this area (Dou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a review of challenges in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "1c7076d3-a03a-4f6b-9439-9b108e910857",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C9",
+      "claim": "There has been progress in designing protein structures with internal symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "There has also been progress in designing protein structures with internal symmetry (Boyken et al., 2016; Ghirlanda et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "b366bb90-21dc-441f-add6-29d3932d4f62",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C10",
+      "claim": "Designing symmetric protein homo-oligomers that bind to symmetry matched small molecules enables more economical design strategies in which one protein-small molecule interface is utilized multiple times.",
+      "claim_type": "EXPLICIT",
+      "source": "From the protein design standpoint, this challenge is interesting as it enables more economical design strategies in which one protein-small molecule interface is utilized multiple times, analogous to the use of a single designed protein-protein interface in self-assembling protein nanostructures (Bale et al., 2016; Hsia et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about design efficiency, supported by analogy to self-assembling protein nanostructures.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "0174d650-856d-4222-9e12-a07386c46263",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C11",
+      "claim": "Ligand induced homo-oligomerization systems are increasingly in demand in cellular engineering applications.",
+      "claim_type": "EXPLICIT",
+      "source": "From the applications standpoint, the challenge has considerable importance because it provides a stepping stone to ligand induced homo-oligomerization systems, which are increasingly in demand in cellular engineering applications (Fegan et al., 2010; DeRose et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to applications in cellular engineering.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "1556c2bf-1ae3-4a83-9b95-dce116f8c47c",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C12",
+      "claim": "Chemically-inducible dimerization systems have been utilized to modulate signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemically-inducible dimerization systems (Spencer et al., 1996) have been utilized to modulate signal transduction (Spencer et al., 1996; Mallet et al., 2002; Guerrero et al., 2008), transcriptional activation (Nyanguile et al., 1997), and post-translational modification (Stankunas et al., 2003), and as components for logic gates (Miyamoto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "072d0943-2426-48cf-a5a6-3217678e981e",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C13",
+      "claim": "Chemically-inducible dimerization systems have been utilized for transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemically-inducible dimerization systems (Spencer et al., 1996) have been utilized to modulate signal transduction (Spencer et al., 1996; Mallet et al., 2002; Guerrero et al., 2008), transcriptional activation (Nyanguile et al., 1997), and post-translational modification (Stankunas et al., 2003), and as components for logic gates (Miyamoto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "56613167-14ce-4b40-911d-81d1b572fe23",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C14",
+      "claim": "Chemically-inducible dimerization systems have been utilized for post-translational modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemically-inducible dimerization systems (Spencer et al., 1996) have been utilized to modulate signal transduction (Spencer et al., 1996; Mallet et al., 2002; Guerrero et al., 2008), transcriptional activation (Nyanguile et al., 1997), and post-translational modification (Stankunas et al., 2003), and as components for logic gates (Miyamoto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "193f1f7b-98b2-4e51-bc3d-066c2edbc538",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C15",
+      "claim": "Chemically-inducible dimerization systems have been utilized as components for logic gates.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemically-inducible dimerization systems (Spencer et al., 1996) have been utilized to modulate signal transduction (Spencer et al., 1996; Mallet et al., 2002; Guerrero et al., 2008), transcriptional activation (Nyanguile et al., 1997), and post-translational modification (Stankunas et al., 2003), and as components for logic gates (Miyamoto et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "9b086a4a-2d4c-4748-a441-7bd74ca2c00d",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C16",
+      "claim": "No chemically-inducible trimerization systems have been developed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to our knowledge, no chemically-inducible trimerization systems have been developed despite the importance of trimerization in pro-apoptotic and pro-inflammatory signaling cascades (Spencer et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of such systems in the literature, presented as knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "b47301ff-3932-4435-8e4f-d1d18495b34a",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C17",
+      "claim": "Trimerization is important in pro-apoptotic and pro-inflammatory signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to our knowledge, no chemically-inducible trimerization systems have been developed despite the importance of trimerization in pro-apoptotic and pro-inflammatory signaling cascades (Spencer et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work on signaling cascades.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "11d22951-0e12-4082-bd82-696c1c300637",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C18",
+      "claim": "Amantadine is an FDA approved drug.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the C3 symmetric compound amantadine as it is an FDA approved drug (https://www.accessdata.fda.gov/drugsatfda_docs/label/2009/016023s041,018101s016lbl.pdf) with a low side effect profile (Perez-Lloret and Rascol, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to FDA documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "18a4647a-c060-4792-8c67-ae74417eb635",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C19",
+      "claim": "Amantadine has a low side effect profile.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the C3 symmetric compound amantadine as it is an FDA approved drug (https://www.accessdata.fda.gov/drugsatfda_docs/label/2009/016023s041,018101s016lbl.pdf) with a low side effect profile (Perez-Lloret and Rascol, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a review of amantadine's safety profile.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "00661d75-2f57-4c10-a95c-106ce857f228",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C20",
+      "claim": "Amantadine has C3 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the C3 symmetric compound amantadine as it is an FDA approved drug (https://www.accessdata.fda.gov/drugsatfda_docs/label/2009/016023s041,018101s016lbl.pdf) with a low side effect profile (Perez-Lloret and Rascol, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established chemical knowledge about the molecular structure of amantadine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "75a646cf-785a-4d8a-9b80-533b694b1443",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C21",
+      "claim": "ABP was designed starting from parametrically generated C3 symmetric helical bundle backbones consisting of two concentric rings each with three helices.",
+      "claim_type": "EXPLICIT",
+      "source": "To de novo design amantadine-binding sites at the protein trimer C3 axes, we started from parametrically generated C3 symmetric helical bundle backbones consisting of two concentric rings each with three helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational design methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "1c81b242-6e78-4931-af82-099f813b14f5",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C22",
+      "claim": "The symmetry axes of the protein scaffold and the amantadine were aligned during the design process.",
+      "claim_type": "EXPLICIT",
+      "source": "The symmetry axes of the protein scaffold and the amantadine were aligned, and the remaining two degrees of freedom (the placement along the symmetry axis, and the rotation around this axis) were sampled by grid search (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational design methodology, illustrated in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "35bdeae8-86e0-44bc-b976-04f2d5599dab",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C23",
+      "claim": "The placement along the symmetry axis and the rotation around this axis were sampled by grid search during the design process.",
+      "claim_type": "EXPLICIT",
+      "source": "The symmetry axes of the protein scaffold and the amantadine were aligned, and the remaining two degrees of freedom (the placement along the symmetry axis, and the rotation around this axis) were sampled by grid search (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational design methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "a8e8ad96-bc40-4448-a2fd-e64f32004f56",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C24",
+      "claim": "RosettaDesign was used to optimize the identities and conformations of residues within 12.5 \u00c5 of amantadine for high affinity binding.",
+      "claim_type": "EXPLICIT",
+      "source": "For each placement, RosettaDesign was used to optimize the identities and conformations of the residues within 12.5 \u00c5 of the amantadine for high affinity binding, and residue conformations at distances farther than 12.5 \u00c5 to retain hydrogen-bond networks identified by Rosetta HBNet (Figure 1b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational design methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "4bb799fe-b120-4e4d-9ba3-2d8a8072aa98",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C25",
+      "claim": "Rosetta HBNet was used to identify hydrogen-bond networks in residues farther than 12.5 \u00c5 from amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "For each placement, RosettaDesign was used to optimize the identities and conformations of the residues within 12.5 \u00c5 of the amantadine for high affinity binding, and residue conformations at distances farther than 12.5 \u00c5 to retain hydrogen-bond networks identified by Rosetta HBNet (Figure 1b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational design methodology, with hydrogen bond networks shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "25166be1-a282-4557-9f78-316af8f8daf8",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C26",
+      "claim": "The design search was restricted to symmetric solutions in which each monomer is identical in sequence and structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The search was restricted to symmetric solutions in which each monomer is identical in sequence and structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a constraint in the computational design methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "1f1896d6-ddb0-45a2-959f-eb7d679e2a85",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C27",
+      "claim": "A particularly low energy solution was found starting from a previously characterized design with a high-resolution crystal structure (2L6HC3_13).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a particularly low energy solution starting from a previously characterized design with a high-resolution crystal structure (2L6HC3_13) (Boyken et al., 2016) (Figure 1a and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational design result, with reference to prior work and shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "79553cdf-c537-4b51-ab90-4f164ba4c3f6",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C28",
+      "claim": "ABP contains 19 amino acid changes compared to 2L6HC3_13.",
+      "claim_type": "EXPLICIT",
+      "source": "This solution, which we refer to as ABP (amantadine-binding protein), contains 19 amino acid changes compared to 2L6HC3_13 (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence alignment in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "99958a87-e904-4182-b86a-050360204f52",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C29",
+      "claim": "The interactions critical for amantadine binding in ABP include hydrogen bonds from Ser-71 to the polar amino group of amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions critical for amantadine binding include hydrogen bonds from Ser-71 to the polar amino group of amantadine and a shape complementary binding pocket composed by Ile-64, Leu-67, and Ala-68 (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the designed binding interactions, shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "e89da560-891f-4744-a452-8c505a758e03",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C30",
+      "claim": "The interactions critical for amantadine binding in ABP include a shape complementary binding pocket composed by Ile-64, Leu-67, and Ala-68.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions critical for amantadine binding include hydrogen bonds from Ser-71 to the polar amino group of amantadine and a shape complementary binding pocket composed by Ile-64, Leu-67, and Ala-68 (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the designed binding interactions, shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "0c5714db-7d41-4373-af58-0bbbaab36759",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C31",
+      "claim": "ABP was expressed at high levels in the soluble fraction in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "The design was expressed at high levels in the soluble fraction and was found by SEC-MALS to be a trimer in the presence and absence of amantadine (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from protein expression studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "c18019be-efe5-4210-8125-abde3feab1ae",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C32",
+      "claim": "ABP was found by SEC-MALS to be a trimer in the presence and absence of amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "The design was expressed at high levels in the soluble fraction and was found by SEC-MALS to be a trimer in the presence and absence of amantadine (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC-MALS data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "5556eca5-f7ae-49fa-8683-c27c43061a3b",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C33",
+      "claim": "The thermofluor melting curve for apo-ABP exhibited a high initial fluorescence signal at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The thermofluor melting curve for apo-ABP exhibited a high initial fluorescence signal at 25\u00b0 C (Figure 2b), indicating that hydrophobic residues in the protein core are exposed to solvent, characteristic of a molten globule state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by thermofluor assay data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "7a1bc5ec-8502-4ac5-860f-19d3818164d4",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C34",
+      "claim": "The high initial fluorescence signal of apo-ABP indicates that hydrophobic residues in the protein core are exposed to solvent, characteristic of a molten globule state.",
+      "claim_type": "EXPLICIT",
+      "source": "The thermofluor melting curve for apo-ABP exhibited a high initial fluorescence signal at 25\u00b0 C (Figure 2b), indicating that hydrophobic residues in the protein core are exposed to solvent, characteristic of a molten globule state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the thermofluor data based on established knowledge about protein folding states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "1877b94a-1019-4269-8d67-e074c870e673",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C35",
+      "claim": "As apo-ABP was heated to 95\u00b0C, the fluorescence signal decreased, likely due to aggregation and/or complete unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "As the protein was heated to 95\u00b0 C, the fluorescence signal decreased, likely due to aggregation and/or complete unfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of thermofluor data with speculative reasoning about the cause.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "9864711c-69f4-4035-9ea2-e9f691027475",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C36",
+      "claim": "In the presence of amantadine (1 mM), the initial fluorescence signal of ABP was much lower, characteristic of properly folded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of amantadine (1 mM), the initial fluorescence signal was much lower, characteristic of properly folded proteins (Figure 2b), suggesting that amantadine binding may cause local ordering and exclude solvent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by thermofluor data in Figure 2b and interpreted based on knowledge of protein folding.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "a7c6fb12-7238-4e79-a99b-75c5246f0f27",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C37",
+      "claim": "Amantadine binding may cause local ordering in ABP and exclude solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of amantadine (1 mM), the initial fluorescence signal was much lower, characteristic of properly folded proteins (Figure 2b), suggesting that amantadine binding may cause local ordering and exclude solvent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the thermofluor data showing reduced fluorescence upon amantadine binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "d2de9a1e-0ed0-4ad7-99b2-066f78ca7cd6",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C38",
+      "claim": "2L6HC3_13 is thermally stable by thermofluor assay, only starting to denature at ~80\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 2L6HC3_13, which has the same backbone parameters but lacks the amantadine binding site, is thermally stable by thermofluor assay, only starting to denature at ~80\u00b0 C (Figure 2b), consistent with previous work (Boyken et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by thermofluor data in Figure 2b and consistent with prior characterization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "b8b86615-6a6c-44b2-866b-85f94f1cf624",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C39",
+      "claim": "Amantadine had no effect on the melting curve of 2L6HC3_13.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, amantadine had no effect on the melting curve of 2L6HC3_13, suggesting the interactions with ABP are through the designed binding site (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by thermofluor data in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "4fe71afe-eec1-4e86-9656-2fac7b15d39a",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C40",
+      "claim": "The lack of effect of amantadine on 2L6HC3_13 suggests the interactions with ABP are through the designed binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, amantadine had no effect on the melting curve of 2L6HC3_13, suggesting the interactions with ABP are through the designed binding site (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the control experiment with 2L6HC3_13.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "ee0ddd0d-620e-4372-a378-45de21715543",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C41",
+      "claim": "The circular dichroism spectrum of ABP at 25\u00b0C suggests an all \u03b1-helical structure, with negative bands at 222 nm and 208 nm, and a positive band at 190 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The circular dichroism (CD) spectrum of ABP at 25\u00b0 C suggests an all \u0251-helical structure, with negative bands at 222 nm and 208 nm, and a positive band at 190 nm (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD spectroscopy data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "e55e5edd-2097-416a-a38f-3d1cb6574258",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C42",
+      "claim": "As ABP was heated to 95\u00b0C, a loss in CD signal was observed which was not significantly altered in the presence of 1 mM amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "As the sample was heated to 95\u00b0 C, a loss in CD signal was observed which was not significantly altered in the presence of 1 mM amantadine (Figure 2c and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CD thermal denaturation data in Figure 2c and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "407ae363-5a81-4118-84dd-8dfb57924284",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C43",
+      "claim": "ABP was selectively 13C-methyl-labeled at Ala, Ile, Leu, and Val residues in a 12C/15N/1H background for NMR characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine whether the hydrophobic residues (Ile-64, Leu-67, and Ala-68) contacting amantadine (Figure 1b) undergo conformational changes upon ligand binding, as suggested by the thermofluor assays, ABP was selectively 13C-methyl-labeled at Ala, Ile, Leu, and Val residues in a 12C/15N/1H background and characterized by solution NMR, both in the presence and absence of amantadine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for NMR studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "8a0517a5-b805-44d8-a426-f04951d16728",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C44",
+      "claim": "Resonances for 70 out of 79 amide groups and 51 out of 51 methyl groups present in the ABP primary sequence were observed by NMR.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe resonances for 70 out of 79 amide and 51 out of 51 methyl groups present in the primary sequence; a small number of amide NMR resonances are missing likely due to conformational exchange-induced line broadening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from NMR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "8aa98ec4-e07d-47ac-8b5f-ba0c7ea36113",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C45",
+      "claim": "A small number of amide NMR resonances are missing likely due to conformational exchange-induced line broadening.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe resonances for 70 out of 79 amide and 51 out of 51 methyl groups present in the primary sequence; a small number of amide NMR resonances are missing likely due to conformational exchange-induced line broadening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of missing NMR resonances based on established NMR principles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "ba3e1cfd-88e9-4bb5-8264-9924b5647381",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C46",
+      "claim": "The single set of peaks for all three polypeptide chains of apo-ABP suggests that it populates a homogeneous and symmetric ensemble of conformers in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The single set of peaks for all three polypeptide chains of the apo-ABP suggests that it populates a homogeneous and symmetric ensemble of conformers in solution (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of NMR data shown in Figure 2d based on NMR principles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "f4ad988a-0990-421d-ab34-6df308feb06b",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C47",
+      "claim": "The 1H dispersion in the 2D 1H-15N HQMC and 2D 1H-13C HMQC NMR spectra suggests that ABP, both in the presence and absence of amantadine, adopts a similar helical structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1H dispersion in the 2D 1H-15N HQMC and 2D 1H-13C HMQC NMR spectra suggests that ABP, both in the presence and absence of amantadine, adopts a similar helical structure (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of NMR spectral features shown in Figure 2d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "30663be3-26de-44e7-a684-5f858c5a5583",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C48",
+      "claim": "A full titration of amantadine on ABP confirms the formation of a stable amantadine-ABP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A full titration of amantadine on ABP confirms the formation of a stable amantadine-ABP complex, with chemical exchange between the free and bound ABP states slow on the NMR chemical shift time scale (residence time of 10\u2013100 milliseconds) (Figure 2d, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NMR titration data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "24993546-bdeb-450b-bd9b-dfcd4c4681d5",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C49",
+      "claim": "Chemical exchange between the free and bound ABP states is slow on the NMR chemical shift time scale with a residence time of 10\u2013100 milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "A full titration of amantadine on ABP confirms the formation of a stable amantadine-ABP complex, with chemical exchange between the free and bound ABP states slow on the NMR chemical shift time scale (residence time of 10\u2013100 milliseconds) (Figure 2d, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of NMR line shapes based on NMR theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "e6aeabc9-0865-446a-9301-2ef77298dd29",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C50",
+      "claim": "NMR line shape fitting using TITAN suggests an apparent dissociation constant (KD) of 24.1 \u00b1 2.7 \u03bcM for amantadine binding to ABP.",
+      "claim_type": "EXPLICIT",
+      "source": "An NMR line shape fitting of the three most significantly affected ABP methyl resonances (>0.1 ppm chemical shift deviation between free and bound states) using TITAN suggest an apparent dissociation constant (KD) of 24.1 \u00b1 2.7 \u03bcM and upper limit for off-rate constant (koff) of 60.7 \u00b1 5.6 s\u22121 (on-rate constant of 2.5 \u00d7 106 M\u22121 sec\u22121) (Figure 2e and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from quantitative analysis of NMR titration data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "c8338b4e-2e47-4a76-bc4a-4cf0af9fa5bf",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C51",
+      "claim": "NMR line shape fitting suggests an upper limit for off-rate constant (koff) of 60.7 \u00b1 5.6 s\u22121 for amantadine dissociation from ABP.",
+      "claim_type": "EXPLICIT",
+      "source": "An NMR line shape fitting of the three most significantly affected ABP methyl resonances (>0.1 ppm chemical shift deviation between free and bound states) using TITAN suggest an apparent dissociation constant (KD) of 24.1 \u00b1 2.7 \u03bcM and upper limit for off-rate constant (koff) of 60.7 \u00b1 5.6 s\u22121 (on-rate constant of 2.5 \u00d7 106 M\u22121 sec\u22121) (Figure 2e and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from quantitative analysis of NMR titration data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "e30590c7-f5cf-4d51-ab2b-c01f009cbf59",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C52",
+      "claim": "The on-rate constant for amantadine binding to ABP is 2.5 \u00d7 106 M\u22121 sec\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "An NMR line shape fitting of the three most significantly affected ABP methyl resonances (>0.1 ppm chemical shift deviation between free and bound states) using TITAN suggest an apparent dissociation constant (KD) of 24.1 \u00b1 2.7 \u03bcM and upper limit for off-rate constant (koff) of 60.7 \u00b1 5.6 s\u22121 (on-rate constant of 2.5 \u00d7 106 M\u22121 sec\u22121) (Figure 2e and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from quantitative analysis of NMR titration data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "7c8b9983-d48a-4b60-90ab-7feed1e3c603",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C53",
+      "claim": "The relatively slow fitted on- and off-rate constants are consistent with a buried amantadine binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively slow fitted on- and off-rate constants are consistent with a buried amantadine binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the kinetic data based on knowledge of binding site accessibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "7ababa63-0440-40bb-8572-53f1c6a3442d",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C54",
+      "claim": "Conventional fraction bound analysis yielded lower and upper bounds for the KD to be 25 \u03bcM and 55 \u03bcM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed an independent conventional fraction bound analysis, which yielded lower and upper bounds for the KD to be 25 \u03bcM and 55 \u03bcM, respectively (Figure 2d, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an independent analysis of NMR titration data shown in Figure 2d inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "7ddafadb-194a-456f-9181-d6493fc4eabe",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C55",
+      "claim": "Amantadine likely binds to ABP with a KD in the low micromolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that amantadine likely binds to ABP with a KD in the low micromolar range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple NMR binding analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "c7970c89-0e27-47e2-a5dd-06c39f6cbbfb",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C56",
+      "claim": "Significantly affected methyl resonances in NMR could correspond to the Ile-64, Leu-67, and Ala-68 residues in close proximity to the intended amantadine binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "We were not able to assign the resonances of the protein due to difficulties in preparing labeled samples, but we observe significantly affected methyl resonances which could correspond to the Ile-64, Leu-67, and Ala-68 residues in close proximity to the intended amantadine binding site in the designed structure (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative inference about resonance assignments based on the design model.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "fb7e8a51-7abb-454c-9d9e-0ec68f277c47",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C57",
+      "claim": "NMR titrations of both amide and methyl groups suggest the presence of localized backbone and side-chain conformational changes in ABP upon amantadine binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the NMR titrations of both amide and methyl groups suggest the presence of localized backbone and side-chain conformational changes in ABP upon amantadine binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from NMR chemical shift perturbation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "65711334-ea48-4872-a832-5be68c3ed842",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C58",
+      "claim": "Crystals of ABP were obtained in the presence but not the absence of amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals were obtained in the presence but not the absence of amantadine, consistent with ordering upon amantadine binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from crystallization trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "88dc592e-8aaa-453d-97c4-d98f30fe3e44",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C59",
+      "claim": "The observation that crystals were obtained only in the presence of amantadine is consistent with ordering upon amantadine binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals were obtained in the presence but not the absence of amantadine, consistent with ordering upon amantadine binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the crystallization results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "55719f6f-a711-416b-a97a-e43ace8a4748",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C60",
+      "claim": "The X-ray crystal structure of ABP+amantadine was solved to 1.04 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The X-ray crystal structure of ABP+amantadine was solved to 1.04 \u00c5, providing a high-resolution view of the ABP-amantadine complex structure (Figure 3a and Supplementary file 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is reported crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "1fe2e069-07ca-4508-ab19-0dcfd8260f0b",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C61",
+      "claim": "The crystal structure overlays well with the design model, with an RMSD of 0.63 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure overlays well with the design model, with an RMSD of 0.63 \u00c5 (TMAlign [Zhang and Skolnick, 2005]) (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison between the crystal structure and design model shown in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "bd153d22-4fdc-4198-9a20-2f67f6f5fc65",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C62",
+      "claim": "The primary difference between the design model and crystal structure is in the compactness of helices in the amantadine-binding region and rotation of the amantadine molecule accompanied by the presence of crystallographic water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary difference between the design model and crystal structure is in the compactness of helices in the amantadine-binding region and rotation of the amantadine molecule accompanied by the presence of crystallographic water molecules (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing the crystal structure to the design model, shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "95cfc12e-8f43-49ba-ad1a-f18442909a2b",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C63",
+      "claim": "In the original design model, the amino group of amantadine was oriented to hydrogen bond directly to Ser-71 in ABP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the original design model, the amino group of amantadine was oriented to hydrogen bond directly to Ser-71 in ABP (Figure 3b), but in the X-ray crystal structure, amantadine was found to be rotated 60\u00b0 with ordered water molecules mediating hydrogen bonds to Ser-71 residues in ABP (Figure 3b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the designed interaction shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "a2f06f64-895d-4b88-b087-f39abcc77f46",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C64",
+      "claim": "In the X-ray crystal structure, amantadine was found to be rotated 60\u00b0 with ordered water molecules mediating hydrogen bonds to Ser-71 residues in ABP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the original design model, the amino group of amantadine was oriented to hydrogen bond directly to Ser-71 in ABP (Figure 3b), but in the X-ray crystal structure, amantadine was found to be rotated 60\u00b0 with ordered water molecules mediating hydrogen bonds to Ser-71 residues in ABP (Figure 3b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the crystal structure shown in Figure 3b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "6d4bcca8-fbb5-4d62-a512-c027bbf65eb7",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C65",
+      "claim": "Amantadine is often bound as a tri- or tetra-hydrate with the waters associated with the amino group.",
+      "claim_type": "EXPLICIT",
+      "source": "Amantadine is often bound as a tri- or tetra-hydrate with the waters associated with the amino group (Thomaston et al., 2018; Wang et al., 2011), for example in a recent crystal structure of amantadine bound to the influenza M2 channel protein, amantadine bound the key His-37 residues in M2 through water-mediated interactions (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "7687f107-29cf-4e02-97d4-0cb956d163da",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C66",
+      "claim": "In a crystal structure of amantadine bound to the influenza M2 channel protein, amantadine bound the key His-37 residues in M2 through water-mediated interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Amantadine is often bound as a tri- or tetra-hydrate with the waters associated with the amino group (Thomaston et al., 2018; Wang et al., 2011), for example in a recent crystal structure of amantadine bound to the influenza M2 channel protein, amantadine bound the key His-37 residues in M2 through water-mediated interactions (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and shown in Figure 3d.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "24f45498-584f-449b-8dc6-ff454ea4eca2",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C67",
+      "claim": "Including explicit water molecules in the Rosetta design calculations could enable the design of proteins that bind amantadine with higher affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Including explicit water molecules in the Rosetta design calculations could enable the design of proteins that bind amantadine with higher affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future design improvements based on the observed water-mediated binding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "4b523222-2b05-4985-8543-5a1bb2477e03",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C68",
+      "claim": "Room temperature neutron data collected to 2.3 \u00c5 on a deuterium-exchanged ABP crystal revealed the protonation state of residues that form hydrogen bonds to the polar amino group of amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "Room temperature neutron data collected to 2.3 \u00c5 on a deuterium-exchanged ABP crystal revealed the protonation state of residues that form hydrogen bonds to the polar amino group of amantadine and the orientation of the D2O network that helps anchor amantadine at the trimeric interface (Figure 3e\u2013f; Supplementary file 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutron diffraction data shown in Figure 3e-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "f0eab7c5-3365-4ec5-a8de-25d40e128e70",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C69",
+      "claim": "Neutron data revealed the orientation of the D2O network that helps anchor amantadine at the trimeric interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Room temperature neutron data collected to 2.3 \u00c5 on a deuterium-exchanged ABP crystal revealed the protonation state of residues that form hydrogen bonds to the polar amino group of amantadine and the orientation of the D2O network that helps anchor amantadine at the trimeric interface (Figure 3e\u2013f; Supplementary file 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutron diffraction data shown in Figure 3e-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "9530d4c7-3a38-4a94-b7f7-8b220fd8032b",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C70",
+      "claim": "Nuclear scattering length density is clearly visible for the deuterium atoms of water molecules DOD-31 and DOD-41, and the amino group of amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear scattering length density is clearly visible for the deuterium atoms of water molecules DOD-31 and DOD-41, and the amino group of amantadine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the neutron diffraction data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "1c6eb353-5f06-4bc9-9b4c-2d84ef1c8da1",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C71",
+      "claim": "DOD-31 accepts hydrogen bonds from the amino hydrogens of amantadine and donates hydrogen bonds to SER-71 and DOD-41.",
+      "claim_type": "EXPLICIT",
+      "source": "DOD-31 accepts hydrogen bonds from the amino hydrogens of amantadine and donates hydrogen bonds to SER-71 and DOD-41.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the neutron structure showing hydrogen bonding patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "d2cc9b6e-1e9c-465e-bee5-9f2f08f1dab2",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C72",
+      "claim": "In both the X-ray and neutron structures, amantadine sits at a special position on the C3 symmetry axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the X-ray and neutron structures, amantadine sits at a special position on the C3 symmetry axis, with its adamantane moiety interlocked at the trimeric interface and surrounded by the hydrophobic residues Ile-64, Leu-67, and Ala-68.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from both crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "575c3b4c-7980-4491-abc9-310e57a84840",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C73",
+      "claim": "The adamantane moiety of amantadine is interlocked at the trimeric interface and surrounded by the hydrophobic residues Ile-64, Leu-67, and Ala-68.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the X-ray and neutron structures, amantadine sits at a special position on the C3 symmetry axis, with its adamantane moiety interlocked at the trimeric interface and surrounded by the hydrophobic residues Ile-64, Leu-67, and Ala-68.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from both crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "51b256c8-5751-4674-bfba-b122448ecdce",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C74",
+      "claim": "The neutron structure shows no evidence of H/D exchange within the trimeric interface, even though the crystals were D2O exchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "The neutron structure shows no evidence of H/D exchange within the trimeric interface, even though the crystals were D2O exchanged, suggesting that the trimeric core is tightly packed, and that once formed, remains stable and inaccessible to solvent at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the neutron diffraction data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "9c92a944-7565-471a-9ab0-b0442e75ab73",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C75",
+      "claim": "The lack of H/D exchange within the trimeric interface suggests that the trimeric core is tightly packed, and that once formed, remains stable and inaccessible to solvent at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "The neutron structure shows no evidence of H/D exchange within the trimeric interface, even though the crystals were D2O exchanged, suggesting that the trimeric core is tightly packed, and that once formed, remains stable and inaccessible to solvent at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the neutron diffraction data about protein stability and solvent accessibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "d7907ecd-48f0-414b-bb58-c7392799a7a3",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C76",
+      "claim": "ABP binds amantadine in a manner very similar to the design model and leads to significant localized changes as visualized by solution NMR.",
+      "claim_type": "EXPLICIT",
+      "source": "ABP binds amantadine in a manner very similar to the design model and leads to significant localized changes as visualized by solution NMR, but it is a constitutive (albeit perhaps not a very thermal-stable) trimer in the absence of amantadine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from NMR and crystallography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "2898b3bc-139c-4489-8169-72e4a0a70e42",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C77",
+      "claim": "ABP is a constitutive trimer in the absence of amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "ABP binds amantadine in a manner very similar to the design model and leads to significant localized changes as visualized by solution NMR, but it is a constitutive (albeit perhaps not a very thermal-stable) trimer in the absence of amantadine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEC-MALS data showing ABP is a trimer with or without amantadine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "d329c628-1a30-4a55-9780-8c6c9deac894",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C78",
+      "claim": "ABP may not be a very thermally stable trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "ABP binds amantadine in a manner very similar to the design model and leads to significant localized changes as visualized by solution NMR, but it is a constitutive (albeit perhaps not a very thermal-stable) trimer in the absence of amantadine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the thermofluor data showing characteristics of a molten globule state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "4c23f4a0-06d3-46f9-98c0-ab275d0b5e04",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C79",
+      "claim": "Sidechain truncations such as Ala/Ser mutations were introduced in the core of ABP to destabilize the trimeric interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Sidechain truncations such as Ala/Ser mutations were introduced in the core of ABP to destabilize the trimeric interface (Figure 1\u2014figure supplement 1b), but these constructs were either poorly expressed or lost amantadine binding activity as assessed by thermofluor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes design attempts shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "78980918-f9b4-4ef0-9a1d-f3f05d3013f8",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C80",
+      "claim": "ABP constructs with Ala/Ser mutations in the core were either poorly expressed or lost amantadine binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Sidechain truncations such as Ala/Ser mutations were introduced in the core of ABP to destabilize the trimeric interface (Figure 1\u2014figure supplement 1b), but these constructs were either poorly expressed or lost amantadine binding activity as assessed by thermofluor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from testing variant designs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "412aefa5-e34a-4ba4-b4b1-e431052f71ff",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C81",
+      "claim": "The Rosetta HBNet protocol was extended to search for intermolecular hydrogen bond interactions between residues that span the monomer-monomer interfaces to reduce the extent of hydrophobic packing of the trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rosetta HBNet protocol that was used to generate the hydrogen-bond networks in ABP was extended to search for intermolecular hydrogen bond interactions between residues that span the monomer-monomer interfaces reduce the extent of hydrophobic packing of the trimer (Figure 1\u2014figure supplement 1c), but these constructs were again poorly expressed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a computational design approach shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "ed4d9b4f-d231-483d-b267-f95a565af561",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C82",
+      "claim": "ABP constructs with intermolecular hydrogen bond networks spanning monomer-monomer interfaces were poorly expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rosetta HBNet protocol that was used to generate the hydrogen-bond networks in ABP was extended to search for intermolecular hydrogen bond interactions between residues that span the monomer-monomer interfaces reduce the extent of hydrophobic packing of the trimer (Figure 1\u2014figure supplement 1c), but these constructs were again poorly expressed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from testing variant designs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "fb6535cd-a910-49a5-85e6-0795cba1ec9a",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C83",
+      "claim": "Truncations of the outer helix resulted in mostly insoluble protein or monomeric species that no longer bound amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "Truncations of the outer helix (Figure 1\u2014figure supplement 1d\u2013f) were attempted, but this resulted in mostly insoluble protein or monomeric species that no longer bound amantadine (In one case, truncation of both helices (Figure 1\u2014figure supplement 1g) resulted in a tetramer that no longer bound amantadine).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from testing variant designs shown in Figure 1\u2014figure supplement 1d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "6e45de7b-54ef-42a5-8224-9f8b08392b32",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C84",
+      "claim": "Truncation of both helices resulted in a tetramer that no longer bound amantadine.",
+      "claim_type": "EXPLICIT",
+      "source": "Truncations of the outer helix (Figure 1\u2014figure supplement 1d\u2013f) were attempted, but this resulted in mostly insoluble protein or monomeric species that no longer bound amantadine (In one case, truncation of both helices (Figure 1\u2014figure supplement 1g) resulted in a tetramer that no longer bound amantadine).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from testing a variant design shown in Figure 1\u2014figure supplement 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "01821661-11bf-49e9-a183-64f088727f17",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C85",
+      "claim": "In larger-scale redesigns, the core amantadine-binding site was backed up with helical repeat fusions to stabilize the helical core, but these constructs remained constitutive trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "In larger-scale redesigns, the core amantadine-binding site was backed up with helical repeat fusions to stabilize the helical core (Figure 1\u2014figure supplement 1h), but these constructs remained constitutive trimers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from testing variant designs shown in Figure 1\u2014figure supplement 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "e2ac9b08-b6d8-4d43-9373-486462f0fa30",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C86",
+      "claim": "Conversion of ABP into well behaved monomers that assemble into a trimer in the presence of amantadine is difficult because the subunit-subunit interface in the trimer involves considerable non-polar surface area which makes the subunits poorly behaved as monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that conversion of our design into well behaved monomers that assemble into a trimer in the presence of amantadine is difficult because the subunit-subunit interface in the trimer involves considerable non-polar surface area which makes the subunits poorly behaved as monomers, and the low binding affinity for amantadine does not provide a strong driving force for assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the failed attempts to create an inducible trimerization system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "d9cec4b4-56be-407f-a510-00eda41a141b",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C87",
+      "claim": "The low binding affinity for amantadine does not provide a strong driving force for assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that conversion of our design into well behaved monomers that assemble into a trimer in the presence of amantadine is difficult because the subunit-subunit interface in the trimer involves considerable non-polar surface area which makes the subunits poorly behaved as monomers, and the low binding affinity for amantadine does not provide a strong driving force for assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the binding affinity measurements and failed assembly attempts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "6c0f2f44-3a3f-47cb-b270-baf17e6e0475",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C88",
+      "claim": "This is the first successful de novo design of a homo-trimeric protein that binds a C3 symmetric small molecule other than a metal ion.",
+      "claim_type": "EXPLICIT",
+      "source": "While we were unable to design an inducible trimer, our results are an advance for protein design as to our knowledge this is the first successful de novo design of a homo-trimeric protein that binds a C3 symmetric small molecule other than a metal ion (Mills et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work, with reference to prior work on metal binding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "c7444094-b329-4d77-9232-313ed35e87d5",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C89",
+      "claim": "Amantadine, given its small size, does not provide strong driving force for trimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest two major bottlenecks to the goal of an amantadine-inducible trimerization system based on amantadine binding at a helical bundle three-fold interface: (1) Amantadine, given its small size, does not provide strong driving force for trimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results and binding affinity measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "168eb80c-eee2-4a47-ab1c-0edc3b21830b",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C90",
+      "claim": "Well behaved monomers in the absence of amantadine are hard to achieve in a system with substantial buried nonpolar surface area at the trimer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Well behaved monomers in the absence of amantadine are hard to achieve in a system with substantial buried nonpolar surface area at the trimer interface (which becomes exposed in the monomers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the failed attempts to create monomeric variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "0c61da09-493b-4a1d-b189-3bbe14e1b7a3",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C91",
+      "claim": "Success in designing protein homo-trimerization systems will likely require smaller subunit interfaces and higher affinity binding sites, perhaps using larger C3 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Success in designing protein homo-trimerization systems will likely require smaller subunit interfaces and higher affinity binding sites, perhaps using larger C3 molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future design strategies based on the lessons learned.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "2722bf37-2353-4e33-a9a0-1d0d8b958d80",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "claim_id": "C92",
+      "claim": "The neutron structure of ABP has an RMSD of 0.59 \u00c5 compared to the computational model.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-resolution X-ray structure (white) and neutron structure (gray) of ABP in complex with amantadine are very close to the computational model (magenta, green, and cyan) (RMSD of 0.63 \u00c5 and 0.59 \u00c5, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption for Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "69cb4756-5f8a-4bea-8687-552c8efd6e79",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors report the first successful de novo computational design of a homo-trimeric protein (ABP) that binds a C3 symmetric small molecule (amantadine) larger than a metal ion, with each monomer making identical interactions with the ligand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C88 establish the novelty and achievement of this work. The design is validated through multiple orthogonal structural techniques (X-ray, neutron diffraction, NMR) showing symmetric binding as intended. This represents a significant advance in computational protein design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ABP was computationally designed using parametrically generated C3 symmetric helical bundles, with RosettaDesign optimizing residues within 12.5 \u00c5 of amantadine for binding and Rosetta HBNet identifying hydrogen-bond networks, resulting in 19 amino acid changes from the parent scaffold 2L6HC3_13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C30 describe a well-documented computational design methodology. The approach is clearly described with specific parameters, and the resulting design (ABP) is experimentally validated. The design strategy is sound and reproducible based on the provided information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "a7d6e4ab-4c25-474c-992d-a5cd0873eeab",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ABP expresses at high levels in E. coli and forms a constitutive trimer in both the presence and absence of amantadine, as demonstrated by SEC-MALS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C32, and C77 are directly supported by SEC-MALS data in Figure 2a showing trimeric assembly regardless of ligand presence. This is a clear experimental result with appropriate analytical technique, though it indicates the design did not achieve ligand-induced trimerization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "b1c0053c-99a8-4f08-b4d6-134ee2165cfe",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Apo-ABP exhibits characteristics of a molten globule state with high initial thermofluor fluorescence, which decreases upon amantadine binding, suggesting ligand-induced local ordering and solvent exclusion, though the trimer may not be thermally stable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 and C78 are supported by thermofluor data in Figure 2b. The interpretation of molten globule state is reasonable based on the fluorescence profile. However, the inference about local ordering (C37) is somewhat speculative, though consistent with subsequent NMR data showing conformational changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "4cd0544e-0e26-4c0d-9c0a-172c7a3fd863",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The parent scaffold 2L6HC3_13 shows thermal stability up to ~80\u00b0C and no response to amantadine, confirming that amantadine binding is specific to the designed binding site in ABP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 provide important negative control data supported by Figure 2b. The lack of amantadine effect on the parent scaffold validates the specificity of the designed binding site. This is appropriate experimental design and interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "8fe44765-12b5-4b09-8a36-e98f9200a888",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CD spectroscopy shows ABP adopts an \u03b1-helical structure at 25\u00b0C that loses signal upon heating to 95\u00b0C, with minimal effect from 1 mM amantadine on thermal stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by CD data in Figure 2c and supplement. The \u03b1-helical signature is clear, though the lack of amantadine effect on thermal stability by CD contrasts somewhat with the thermofluor results, suggesting different aspects of protein stability are being measured.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "0b3cfa55-8a67-40e3-8bf3-cdbc047b0d4f",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Solution NMR analysis of isotopically labeled ABP reveals regular three-fold symmetry with observation of 70/79 amide and 51/51 methyl resonances, indicating a homogeneous symmetric ensemble in solution with an \u03b1-helical structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C43-C47 are supported by NMR data in Figure 2d. The single set of peaks for the trimer confirms C3 symmetry. The interpretation of missing amide resonances (C45) as conformational exchange is reasonable. The NMR methodology is appropriate and well-executed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "24a8a237-ab57-4f1d-a866-8a168dabd877",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NMR titration experiments demonstrate that ABP undergoes localized conformational changes upon amantadine binding with slow exchange kinetics, yielding a KD of 24.1 \u00b1 2.7 \u03bcM by line shape fitting and 25-55 \u03bcM by fraction bound analysis, with kinetics consistent with a buried binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C48-C57 are supported by comprehensive NMR titration data in Figures 2d-e. Two independent methods for KD determination yield consistent results in the low micromolar range. The kinetic analysis is appropriate, though C56 acknowledges uncertainty in resonance assignments. The slow exchange kinetics support the buried binding site interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "7244e99e-5883-4ac1-a687-181acf43227b",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ABP crystallizes only in the presence of amantadine, consistent with ligand-induced ordering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by the experimental observation and consistent with thermofluor and NMR data suggesting conformational ordering upon ligand binding. This is a straightforward experimental result supporting the ordering hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "d67177f4-be12-451f-87a5-268c0fd3cf28",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The X-ray crystal structure of ABP+amantadine solved to 1.04 \u00c5 shows close agreement with the design model (RMSD 0.63 \u00c5), with the main difference being a 60\u00b0 rotation of amantadine and water-mediated hydrogen bonds to Ser-71 instead of direct hydrogen bonds as designed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C60-C64 are strongly supported by high-resolution crystallographic data in Figure 3. The RMSD of 0.63 \u00c5 indicates excellent design accuracy. The presence of water molecules mediating binding (not included in design) is clearly documented and represents an important finding about limitations of the design approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "6356f7d5-5296-4bff-895a-5959b1a04fa4",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Amantadine commonly binds as a hydrate with water molecules associated with its amino group, as seen in other protein structures like influenza M2, suggesting that including explicit waters in Rosetta calculations could improve design affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by citations to prior structural work and Figure 3d. Claim C67 is a reasonable speculation for future work based on the observed water-mediated binding. This contextualizes the design outcome and provides direction for improvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "366fd8b6-a40d-4535-abfa-dc7055594c4e",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Neutron diffraction data collected to 2.3 \u00c5 reveals the protonation states and hydrogen bonding network, showing water molecules DOD-31 and DOD-41 mediating hydrogen bonds between amantadine and Ser-71, with overall structure matching the design model (RMSD 0.59 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C68-C71, C92 are supported by neutron diffraction data in Figure 3e-f. Neutron crystallography uniquely visualizes hydrogen positions, providing direct experimental validation of the hydrogen bonding network. The RMSD of 0.59 \u00c5 confirms excellent agreement with the design. This is high-quality structural validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "e86128b6-f3ec-4fb9-ad89-fbae6384c464",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Both X-ray and neutron structures show amantadine positioned on the C3 symmetry axis with its adamantane moiety surrounded by hydrophobic residues Ile-64, Leu-67, and Ala-68, with no H/D exchange in the trimeric core indicating a tightly packed, solvent-inaccessible interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 are supported by both X-ray and neutron structures. The lack of H/D exchange (C74) is a direct observation, and the interpretation of tight packing and stability (C75) is reasonable. This demonstrates successful design of the hydrophobic binding pocket.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "e9873b50-4285-404a-9982-dae74e24fa26",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ABP binds amantadine in a manner very similar to the design model with significant localized structural changes observed by NMR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is a summary statement supported by the combined NMR, X-ray, and neutron data (C3-C6, C60-C75). The close structural match and observed conformational changes are well-documented across multiple techniques.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "c2b6f1a9-49d8-4061-ac45-79a1ca661084",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Multiple design strategies to destabilize the ABP trimer and create an inducible system failed, including core mutations, intermolecular hydrogen bond networks, helix truncations, and helical repeat fusions, resulting in poor expression, loss of binding, or maintained constitutive trimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C85 document systematic attempts to engineer ligand-induced trimerization, all shown in Figure 1 supplement. The negative results are clearly reported with appropriate characterization methods. This represents thorough experimental exploration of design space, though unsuccessful in the primary goal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "bd9303a9-ff30-4806-88aa-3ceeb7c1068c",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors conclude that creating well-behaved monomers that assemble upon amantadine binding is difficult due to the large buried nonpolar interface and the weak binding affinity of amantadine, which does not provide sufficient driving force for trimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 and C89-C90 are reasonable inferences from the failed design attempts (C79-C85) and measured KD (~24 \u03bcM). The large hydrophobic interface makes monomers poorly behaved, and micromolar affinity is indeed weak for driving assembly. These conclusions are well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "ea2888ec-c1bf-430f-af24-9e2bb89afd93",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Future success in designing ligand-inducible homo-trimerization systems will likely require smaller subunit interfaces and higher affinity binding sites, possibly using larger C3 symmetric molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is a reasonable speculation based on the lessons learned from this work. The suggestion follows logically from the identified bottlenecks (C89-C90). While speculative, it provides valuable guidance for future design efforts and is appropriately framed as a hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    },
+    {
+      "id": "79ad0fe1-528f-40a9-9672-3f92eccff90d",
+      "content_id": "cfd2088a-54c3-4039-8993-b5b2f53aeb8b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors establish the context that while progress has been made in de novo small molecule binding protein design and symmetric protein design, no chemically-inducible trimerization systems exist despite their importance in cellular engineering and signaling, motivating the choice of C3-symmetric amantadine as a target ligand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C20 provide background context supported by appropriate citations. These establish the significance of the work and rationale for design choices. The claims about prior work appear accurate based on citations, and the properties of amantadine (FDA-approved, C3 symmetric, low side effects) are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:32.419917Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d946a324-76fa-4b84-b8df-e887fd21e45e",
+      "result_id": "69cb4756-5f8a-4bea-8687-552c8efd6e79"
+    },
+    {
+      "claim_id": "a9b9fe9a-8854-424b-a4c5-acb887cdacea",
+      "result_id": "69cb4756-5f8a-4bea-8687-552c8efd6e79"
+    },
+    {
+      "claim_id": "6c0f2f44-3a3f-47cb-b270-baf17e6e0475",
+      "result_id": "69cb4756-5f8a-4bea-8687-552c8efd6e79"
+    },
+    {
+      "claim_id": "75a646cf-785a-4d8a-9b80-533b694b1443",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "1c81b242-6e78-4931-af82-099f813b14f5",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "35bdeae8-86e0-44bc-b976-04f2d5599dab",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "a8e8ad96-bc40-4448-a2fd-e64f32004f56",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "4bb799fe-b120-4e4d-9ba3-2d8a8072aa98",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "25166be1-a282-4557-9f78-316af8f8daf8",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "1f1896d6-ddb0-45a2-959f-eb7d679e2a85",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "79553cdf-c537-4b51-ab90-4f164ba4c3f6",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "99958a87-e904-4182-b86a-050360204f52",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "e89da560-891f-4744-a452-8c505a758e03",
+      "result_id": "bebae422-a3ed-47b4-8bc0-2aeeba9f6021"
+    },
+    {
+      "claim_id": "0c5714db-7d41-4373-af58-0bbbaab36759",
+      "result_id": "a7d6e4ab-4c25-474c-992d-a5cd0873eeab"
+    },
+    {
+      "claim_id": "c18019be-efe5-4210-8125-abde3feab1ae",
+      "result_id": "a7d6e4ab-4c25-474c-992d-a5cd0873eeab"
+    },
+    {
+      "claim_id": "2898b3bc-139c-4489-8169-72e4a0a70e42",
+      "result_id": "a7d6e4ab-4c25-474c-992d-a5cd0873eeab"
+    },
+    {
+      "claim_id": "5556eca5-f7ae-49fa-8683-c27c43061a3b",
+      "result_id": "b1c0053c-99a8-4f08-b4d6-134ee2165cfe"
+    },
+    {
+      "claim_id": "7a1bc5ec-8502-4ac5-860f-19d3818164d4",
+      "result_id": "b1c0053c-99a8-4f08-b4d6-134ee2165cfe"
+    },
+    {
+      "claim_id": "9864711c-69f4-4035-9ea2-e9f691027475",
+      "result_id": "b1c0053c-99a8-4f08-b4d6-134ee2165cfe"
+    },
+    {
+      "claim_id": "a7c6fb12-7238-4e79-a99b-75c5246f0f27",
+      "result_id": "b1c0053c-99a8-4f08-b4d6-134ee2165cfe"
+    },
+    {
+      "claim_id": "d329c628-1a30-4a55-9780-8c6c9deac894",
+      "result_id": "b1c0053c-99a8-4f08-b4d6-134ee2165cfe"
+    },
+    {
+      "claim_id": "d2de9a1e-0ed0-4ad7-99b2-066f78ca7cd6",
+      "result_id": "4cd0544e-0e26-4c0d-9c0a-172c7a3fd863"
+    },
+    {
+      "claim_id": "b8b86615-6a6c-44b2-866b-85f94f1cf624",
+      "result_id": "4cd0544e-0e26-4c0d-9c0a-172c7a3fd863"
+    },
+    {
+      "claim_id": "4fe71afe-eec1-4e86-9656-2fac7b15d39a",
+      "result_id": "4cd0544e-0e26-4c0d-9c0a-172c7a3fd863"
+    },
+    {
+      "claim_id": "ee0ddd0d-620e-4372-a378-45de21715543",
+      "result_id": "8fe44765-12b5-4b09-8a36-e98f9200a888"
+    },
+    {
+      "claim_id": "e55e5edd-2097-416a-a38f-3d1cb6574258",
+      "result_id": "8fe44765-12b5-4b09-8a36-e98f9200a888"
+    },
+    {
+      "claim_id": "b971d38a-a70e-4f74-81d2-79f54ed0d635",
+      "result_id": "0b3cfa55-8a67-40e3-8bf3-cdbc047b0d4f"
+    },
+    {
+      "claim_id": "407ae363-5a81-4118-84dd-8dfb57924284",
+      "result_id": "0b3cfa55-8a67-40e3-8bf3-cdbc047b0d4f"
+    },
+    {
+      "claim_id": "8a0517a5-b805-44d8-a426-f04951d16728",
+      "result_id": "0b3cfa55-8a67-40e3-8bf3-cdbc047b0d4f"
+    },
+    {
+      "claim_id": "8aa98ec4-e07d-47ac-8b5f-ba0c7ea36113",
+      "result_id": "0b3cfa55-8a67-40e3-8bf3-cdbc047b0d4f"
+    },
+    {
+      "claim_id": "ba3e1cfd-88e9-4bb5-8264-9924b5647381",
+      "result_id": "0b3cfa55-8a67-40e3-8bf3-cdbc047b0d4f"
+    },
+    {
+      "claim_id": "f4ad988a-0990-421d-ab34-6df308feb06b",
+      "result_id": "0b3cfa55-8a67-40e3-8bf3-cdbc047b0d4f"
+    },
+    {
+      "claim_id": "79cf50df-f0a0-471a-b1ce-3985dea79c59",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "30663be3-26de-44e7-a684-5f858c5a5583",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "24993546-bdeb-450b-bd9b-dfcd4c4681d5",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "e6aeabc9-0865-446a-9301-2ef77298dd29",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "c8338b4e-2e47-4a76-bc4a-4cf0af9fa5bf",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "e30590c7-f5cf-4d51-ab2b-c01f009cbf59",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "7c8b9983-d48a-4b60-90ab-7feed1e3c603",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "7ababa63-0440-40bb-8572-53f1c6a3442d",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "7ddafadb-194a-456f-9181-d6493fc4eabe",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "c7970c89-0e27-47e2-a5dd-06c39f6cbbfb",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "fb7e8a51-7abb-454c-9d9e-0ec68f277c47",
+      "result_id": "24a8a237-ab57-4f1d-a866-8a168dabd877"
+    },
+    {
+      "claim_id": "65711334-ea48-4872-a832-5be68c3ed842",
+      "result_id": "7244e99e-5883-4ac1-a687-181acf43227b"
+    },
+    {
+      "claim_id": "88dc592e-8aaa-453d-97c4-d98f30fe3e44",
+      "result_id": "7244e99e-5883-4ac1-a687-181acf43227b"
+    },
+    {
+      "claim_id": "487419e6-1bb6-4082-a413-25bbfb431425",
+      "result_id": "d67177f4-be12-451f-87a5-268c0fd3cf28"
+    },
+    {
+      "claim_id": "55719f6f-a711-416b-a97a-e43ace8a4748",
+      "result_id": "d67177f4-be12-451f-87a5-268c0fd3cf28"
+    },
+    {
+      "claim_id": "1fe2e069-07ca-4508-ab19-0dcfd8260f0b",
+      "result_id": "d67177f4-be12-451f-87a5-268c0fd3cf28"
+    },
+    {
+      "claim_id": "bd153d22-4fdc-4198-9a20-2f67f6f5fc65",
+      "result_id": "d67177f4-be12-451f-87a5-268c0fd3cf28"
+    },
+    {
+      "claim_id": "95cfc12e-8f43-49ba-ad1a-f18442909a2b",
+      "result_id": "d67177f4-be12-451f-87a5-268c0fd3cf28"
+    },
+    {
+      "claim_id": "a2f06f64-895d-4b88-b087-f39abcc77f46",
+      "result_id": "d67177f4-be12-451f-87a5-268c0fd3cf28"
+    },
+    {
+      "claim_id": "6d4bcca8-fbb5-4d62-a512-c027bbf65eb7",
+      "result_id": "6356f7d5-5296-4bff-895a-5959b1a04fa4"
+    },
+    {
+      "claim_id": "7687f107-29cf-4e02-97d4-0cb956d163da",
+      "result_id": "6356f7d5-5296-4bff-895a-5959b1a04fa4"
+    },
+    {
+      "claim_id": "24f45498-584f-449b-8dc6-ff454ea4eca2",
+      "result_id": "6356f7d5-5296-4bff-895a-5959b1a04fa4"
+    },
+    {
+      "claim_id": "7c4081d1-5102-4f1c-ba61-3ff996a20004",
+      "result_id": "366fd8b6-a40d-4535-abfa-dc7055594c4e"
+    },
+    {
+      "claim_id": "4b523222-2b05-4985-8543-5a1bb2477e03",
+      "result_id": "366fd8b6-a40d-4535-abfa-dc7055594c4e"
+    },
+    {
+      "claim_id": "f0eab7c5-3365-4ec5-a8de-25d40e128e70",
+      "result_id": "366fd8b6-a40d-4535-abfa-dc7055594c4e"
+    },
+    {
+      "claim_id": "9530d4c7-3a38-4a94-b7f7-8b220fd8032b",
+      "result_id": "366fd8b6-a40d-4535-abfa-dc7055594c4e"
+    },
+    {
+      "claim_id": "1c6eb353-5f06-4bc9-9b4c-2d84ef1c8da1",
+      "result_id": "366fd8b6-a40d-4535-abfa-dc7055594c4e"
+    },
+    {
+      "claim_id": "2722bf37-2353-4e33-a9a0-1d0d8b958d80",
+      "result_id": "366fd8b6-a40d-4535-abfa-dc7055594c4e"
+    },
+    {
+      "claim_id": "d2cc9b6e-1e9c-465e-bee5-9f2f08f1dab2",
+      "result_id": "e86128b6-f3ec-4fb9-ad89-fbae6384c464"
+    },
+    {
+      "claim_id": "575c3b4c-7980-4491-abc9-310e57a84840",
+      "result_id": "e86128b6-f3ec-4fb9-ad89-fbae6384c464"
+    },
+    {
+      "claim_id": "51b256c8-5751-4674-bfba-b122448ecdce",
+      "result_id": "e86128b6-f3ec-4fb9-ad89-fbae6384c464"
+    },
+    {
+      "claim_id": "9c92a944-7565-471a-9ab0-b0442e75ab73",
+      "result_id": "e86128b6-f3ec-4fb9-ad89-fbae6384c464"
+    },
+    {
+      "claim_id": "d7907ecd-48f0-414b-bb58-c7392799a7a3",
+      "result_id": "e9873b50-4285-404a-9982-dae74e24fa26"
+    },
+    {
+      "claim_id": "4c23f4a0-06d3-46f9-98c0-ab275d0b5e04",
+      "result_id": "c2b6f1a9-49d8-4061-ac45-79a1ca661084"
+    },
+    {
+      "claim_id": "78980918-f9b4-4ef0-9a1d-f3f05d3013f8",
+      "result_id": "c2b6f1a9-49d8-4061-ac45-79a1ca661084"
+    },
+    {
+      "claim_id": "412aefa5-e34a-4ba4-b4b1-e431052f71ff",
+      "result_id": "c2b6f1a9-49d8-4061-ac45-79a1ca661084"
+    },
+    {
+      "claim_id": "ed4d9b4f-d231-483d-b267-f95a565af561",
+      "result_id": "c2b6f1a9-49d8-4061-ac45-79a1ca661084"
+    },
+    {
+      "claim_id": "fb6535cd-a910-49a5-85e6-0795cba1ec9a",
+      "result_id": "c2b6f1a9-49d8-4061-ac45-79a1ca661084"
+    },
+    {
+      "claim_id": "6e45de7b-54ef-42a5-8224-9f8b08392b32",
+      "result_id": "c2b6f1a9-49d8-4061-ac45-79a1ca661084"
+    },
+    {
+      "claim_id": "01821661-11bf-49e9-a183-64f088727f17",
+      "result_id": "c2b6f1a9-49d8-4061-ac45-79a1ca661084"
+    },
+    {
+      "claim_id": "e2ac9b08-b6d8-4d43-9373-486462f0fa30",
+      "result_id": "bd9303a9-ff30-4806-88aa-3ceeb7c1068c"
+    },
+    {
+      "claim_id": "d9cec4b4-56be-407f-a510-00eda41a141b",
+      "result_id": "bd9303a9-ff30-4806-88aa-3ceeb7c1068c"
+    },
+    {
+      "claim_id": "c7444094-b329-4d77-9232-313ed35e87d5",
+      "result_id": "bd9303a9-ff30-4806-88aa-3ceeb7c1068c"
+    },
+    {
+      "claim_id": "168eb80c-eee2-4a47-ab1c-0edc3b21830b",
+      "result_id": "bd9303a9-ff30-4806-88aa-3ceeb7c1068c"
+    },
+    {
+      "claim_id": "0c61da09-493b-4a1d-b189-3bbe14e1b7a3",
+      "result_id": "ea2888ec-c1bf-430f-af24-9e2bb89afd93"
+    },
+    {
+      "claim_id": "03081602-6f9b-425a-bdb8-9023c2d6c5e8",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "df4d2779-8e24-4450-a11c-560a0129c88e",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "1c7076d3-a03a-4f6b-9439-9b108e910857",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "b366bb90-21dc-441f-add6-29d3932d4f62",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "0174d650-856d-4222-9e12-a07386c46263",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "1556c2bf-1ae3-4a83-9b95-dce116f8c47c",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "072d0943-2426-48cf-a5a6-3217678e981e",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "56613167-14ce-4b40-911d-81d1b572fe23",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "193f1f7b-98b2-4e51-bc3d-066c2edbc538",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "9b086a4a-2d4c-4748-a441-7bd74ca2c00d",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "b47301ff-3932-4435-8e4f-d1d18495b34a",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "11d22951-0e12-4082-bd82-696c1c300637",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "18a4647a-c060-4792-8c67-ae74417eb635",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    },
+    {
+      "claim_id": "00661d75-2f57-4c10-a95c-106ce857f228",
+      "result_id": "79ad0fe1-528f-40a9-9672-3f92eccff90d"
+    }
+  ],
+  "comparisons": []
+}

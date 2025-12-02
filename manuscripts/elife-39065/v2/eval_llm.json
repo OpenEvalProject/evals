@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Anillin overexpression increases vinculin recruitment to cell-cell junctions in a tension-dependent manner. When anillin was knocked down, vinculin-mNeon intensity at junctions was reduced, but this was accompanied by reduced \u03b1-catenin. When anillin was overexpressed, vinculin-mNeon intensity significantly increased while \u03b1-catenin levels remained unchanged, indicating tension-induced conformational change in \u03b1-catenin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide converging evidence that anillin overexpression increases junctional tension. The key observation is that vinculin increases without corresponding \u03b1-catenin increase (C31-C32), supporting the inference that this reflects tension-induced \u03b1-catenin conformational change (C33). The knockdown data (C29-C30) are less conclusive due to confounding \u03b1-catenin reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C36"
+    ],
+    "result": "Anillin perturbation alters cell shape in ways consistent with changes in junctional tension. Anillin knockdown causes cells to become more rounded (a hallmark of reduced tension), while anillin overexpression causes junctions to exhibit wavy, distorted shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C36 describe morphological changes consistent with altered mechanical properties. The cell rounding upon knockdown is well-supported by prior literature (C35). However, wavy junctions (C36) can indicate either high or low tension (C37-C38), creating ambiguity in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Anillin expression level inversely correlates with junction recoil velocity after laser ablation. Control junctions recoiled 2.8\u00b10.2 \u00b5m after 18s, anillin knockdown increased recoil to 4.1\u00b10.4 \u00b5m, while anillin overexpression decreased recoil to 1.6\u00b10.4 \u00b5m. This pattern persisted at 45s for overexpression but not knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 present quantitative laser ablation data with clear statistical differences. The measurements are internally consistent and include appropriate time points. However, the interpretation is complicated because these results appear to contradict the vinculin data (which suggested increased tension with overexpression), requiring the authors' subsequent mechanistic explanation involving perpendicular forces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Anillin overexpression slightly increases perpendicular junction separation after laser ablation, while anillin knockdown dramatically reduces perpendicular separation. The overexpression effect was not statistically significant, but knockdown showed dramatic reduction compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 describe perpendicular separation using E-cadherin splaying as a readout. The knockdown effect is described as 'dramatic' (C46) with supporting figure data, while overexpression shows a trend without significance (C45). The asymmetry in effect sizes is notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Anillin regulates the organization and intensity of medial-apical F-actin networks. Knockdown reduces F-actin network intensity, while overexpression reorganizes F-actin into thick bundles spanning the cell surface, with anillin-3xmCherry colocalizing with these bundles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe dramatic effects on medial-apical F-actin organization supported by imaging data (Figure 2A,E and 2B). The colocalization data (C49) provides direct evidence for anillin's association with the reorganized structures. These are clear, well-documented phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Anillin is required for myosin II localization to the medial-apical surface. Knockdown causes almost complete loss of apical myosin II, while overexpression increases myosin II and causes it to decorate F-actin bundles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate anillin's role in organizing medial-apical myosin II, supported by imaging data (Figure 2C,D,F). The near-complete loss upon knockdown (C50) and enhanced decoration of bundles upon overexpression (C51) provide strong evidence for anillin's organizational role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Junctions with medial-apical F-actin bundles oriented perpendicular to the junction show increased vinculin recruitment compared to junctions with parallel bundles, indicating that perpendicular bundles exert contractile forces on junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 provides key evidence linking medial-apical actomyosin organization to junctional tension, supported by quantitative vinculin measurements (Figure 3A,B). This result helps reconcile the apparently contradictory vinculin and laser ablation findings by demonstrating directional force application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Medial-apical laser ablation reveals that anillin promotes tensile forces perpendicular to the cut site. Control cells opened 3.0\u00b10.2 \u00b5m perpendicularly; overexpression increased this to 5.1\u00b10.4 \u00b5m while knockdown decreased it to 2.0\u00b10.2 \u00b5m. Parallel expansion was similar across all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide direct evidence that anillin-organized medial-apical actomyosin stores tensile force, with clear directional specificity (perpendicular but not parallel effects). The quantitative measurements are well-controlled and statistically significant, supporting the authors' model of perpendicular force generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Strain mapping after medial-apical ablation shows that anillin knockdown reduces local expansion strain and tissue contraction strain, while overexpression increases local expansion strain without affecting tissue contraction strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 use strain mapping to quantify mechanical effects beyond simple recoil measurements. The differential effects on local vs. tissue strain provide additional mechanistic insight. However, the lack of tissue strain change with overexpression (C59) is somewhat puzzling given other results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Anillin regulates whole-embryo contractile responses to ATP. Control embryos contracted toward ATP addition sites, knockdown attenuated this response, and overexpression prolonged the contractile response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 demonstrate tissue-level functional consequences of anillin perturbation using ATP-induced contraction. The kymograph-based quantification (Figure 4B,C) provides clear evidence for anillin's role in coordinating contractile responses, though the mechanism linking cellular to tissue-level effects could be more explicit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ATP induces a burst of medial-apical F-actin that spreads from junctions to cell centers in controls. In anillin knockdown, F-actin accumulates only locally at junctions without spreading medial-apically, resulting in local but not whole-cell contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe the cellular basis for impaired ATP responses in knockdown cells. The failure of F-actin to propagate medial-apically (C68) provides a clear mechanistic explanation for the tissue-level phenotype. The imaging data (Figure 4D-F) strongly support these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Anillin overexpression produces a medial-apical F-actin burst similar to controls after ATP addition, with thickening and increased dynamics of existing bundles. Knockdown significantly reduces F-actin accumulation, while overexpression shows no significant change in accumulation magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 characterize ATP responses in overexpression conditions. The lack of increased F-actin accumulation with overexpression (C71) is explained by already-elevated baseline levels. The quantitative measurements (Figure 4D,E) support these conclusions, though the baseline differences complicate direct comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Anillin's F-actin-binding domain is necessary for reorganizing medial-apical F-actin into long bundles, while both myosin II- and F-actin-binding domains contribute to medial-apical localization. \u0394myo reorganizes F-actin into long bundles, \u0394act produces only short bundles, and \u0394myoact fails to localize or reorganize F-actin efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 use domain deletion analysis to dissect anillin's functional requirements. The systematic comparison of mutants (Figure 6B-D) provides clear structure-function relationships. The inference that the F-actin-binding domain is necessary for long bundle formation (C77) is well-supported by the \u0394act phenotype (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Anillin's F-actin-binding and Rho-binding domains are necessary for structuring medial-apical F-actin into long bundles. \u0394RBD, \u0394C2, and \u0394PH all fail to organize F-actin into bundles, while \u0394C2 and \u0394PH show reduced medial-apical localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 extend the domain analysis to C-terminal domains. The requirement for the RBD (C80-C81) despite robust localization (C78) indicates that localization alone is insufficient for F-actin bundling. The inferences about domain contributions (C81-C82) are reasonable given the data, though some caveats about localization-dependence are noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Anillin stabilizes medial-apical F-actin in an actin-binding domain-dependent manner. FRAP experiments show that actin-mNeon recovery decreased from 77\u00b12% in controls to 57\u00b14% with anillin overexpression, while the \u0394act mutant recovered to control levels (78\u00b14%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide direct evidence for anillin's F-actin stabilization function using FRAP. The reduced recovery with overexpression (C85) and rescue by \u0394act mutation (C87) clearly demonstrate that stabilization requires the actin-binding domain. The inference of stabilization (C86) from FRAP data is standard and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Pharmacological F-actin stabilization with jasplakinolide phenocopies anillin overexpression effects on junction mechanics. Jasplakinolide treatment increased medial-apical F-actin bundles, strongly reduced parallel junction recoil (from 2.7\u00b10.3 to 0.2\u00b10.1 \u00b5m), and rescued perpendicular separation in anillin knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 use jasplakinolide to test whether F-actin stabilization contributes to anillin's mechanical effects. The dramatic reduction in recoil (C89) and rescue of knockdown phenotypes (C90, C92) strongly support the inference that F-actin stability contributes to mechanical changes (C93). This is a well-designed test of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Anillin knockdown in neurula-stage dorsal isolates reduces junctional and medial-apical F-actin, disrupts cell morphology causing doming in ectoderm and endoderm, elongates mesodermal cells with polar F-actin accumulation, and disrupts notochord organization and tissue interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 characterize anillin's effects in a more complex developmental context. The multiple tissue-specific phenotypes are well-documented with imaging (Figure 8B,C), demonstrating that anillin's functions extend beyond simple epithelia. However, the complexity makes it difficult to determine which effects are direct vs. indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Anillin promotes tissue stiffness in Xenopus dorsal isolates. Anillin knockdown significantly reduced tissue stiffness measured by nanoNewton force device, indicating that anillin promotes tissue-level mechanical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 provide direct tissue-level mechanical measurements. The significant reduction in stiffness (C99) supports the inference that anillin promotes tissue stiffness (C100). However, the authors appropriately note that multiple factors (junctional F-actin loss, mesodermal defects, etc.) could contribute, making it difficult to attribute the effect specifically to medial-apical actomyosin organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C35",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The manuscript relies on established principles for interpreting mechanical measurements: vinculin recruitment indicates tension via \u03b1-catenin conformational change, tricellular contacts are high-tension sites, cell rounding indicates reduced tension, wavy junctions can indicate either high or low tension, and junction recoil correlates with junctional tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C39 cite established literature to support the interpretive framework used throughout the study. These are well-established principles in the field, properly cited. However, the ambiguity of wavy junctions (C37-C38) and the complexity revealed by this study suggest these principles may be oversimplified when medial-apical forces are significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction establishes anillin's known roles in cytokinesis, cell-cell junctions, and disease contexts, providing background for the current study. Anillin is a scaffolding protein involved in cytokinesis across species, localizes to junctions where it regulates integrity and actomyosin organization, and is overexpressed in cancers with context-dependent prognostic significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 summarize prior literature to establish context. These are appropriately cited background claims that set up the rationale for the current study. The citations appear accurate and comprehensive for establishing anillin's known functions and disease relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C61",
+      "C72"
+    ],
+    "result": "The manuscript uses ATP-induced contraction and Shroom3-induced apical constriction as experimental tools to probe anillin's role in contractile processes. ATP induces whole-embryo contraction via apical surface constriction, and anillin accumulates medial-apically during Shroom3-induced constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C72 describe experimental approaches used to study anillin function. The ATP system is well-established (C61 with citations), and the Shroom3 observation (C72) provides additional support for anillin's involvement in apical constriction. These are appropriate experimental tools for the questions being addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C83",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The discussion contextualizes findings within existing literature on anillin's diverse functions, laser ablation interpretation, medial-apical actomyosin in development, tissue mechanics, and cancer biology. The authors discuss how their findings relate to and extend current understanding in these areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C101-C122 provide literature context for interpreting the current findings. These are appropriately cited and help situate the work within broader questions about cytoskeletal organization, tissue mechanics, and disease. The discussion appropriately acknowledges both supporting evidence and complexities in interpretation.",
+    "result_type": "MINOR"
+  }
+]

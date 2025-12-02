@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Cav1WT pMEFs demonstrated increased ECM remodeling capabilities in vitro compared to Cav1KO pMEFs, as measured by collagen gel contraction assay. While SMA expression was similar between Cav1WT and Cav1KO pMEFs under 2D culture conditions, Cav1WT pMEFs showed significantly greater contractility than Cav1KO pMEFs, consistent with the original study's findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21, and C22 are directly supported by the collagen contraction assay data (Figure 1C-E) showing statistically significant differences (p=3.72\u00d710\u207b\u2075, Cohen's d=7.64). The lack of SMA difference (C18) is appropriately contextualized by known effects of substrate stiffness (C19) and the original study's observations in 3D culture (C20). The result aligns with the original study's unpublished pMEF data (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C58"
+    ],
+    "result": "Primary tumor growth was similar across all three experimental groups (LM-4175 alone, LM-4175 plus Cav1WT pMEFs, and LM-4175 plus Cav1KO pMEFs), with no statistically significant differences observed. Meta-analysis combining original and replication data confirmed this finding (p=0.467), suggesting that stromal Cav1 does not affect primary tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C30 are supported by bioluminescence data (Figure 2A,B) with appropriate statistical testing (Kruskal-Wallis: H(2)=0.0439, p=0.978). The meta-analysis (C58) strengthens this conclusion. The median bioluminescence values are reported with sample sizes, and the comparison to the original study (C31) provides context. The result is internally consistent and statistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C24",
+      "C25",
+      "C26",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Metastatic burden was assessed across multiple organs at 45 days post-injection. Unlike the original study which found increased metastases with Cav1WT pMEFs, this replication found no statistically significant differences between Cav1WT and Cav1KO conditions. Meta-analysis showed significance only for the LM-4175 vs LM-4175 plus Cav1KO comparison (p=0.0027), but not for the key Cav1WT vs Cav1KO comparison (p=0.680).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The metastatic burden data (C36-C38) shows non-significant differences between groups, contradicting the original study (C4, C39). However, the 25-day shorter experimental duration (C5, C25) compared to the original study is a critical confounding factor that prevents definitive interpretation. Claims C24-C26 acknowledge this limitation. The meta-analysis results (C59-C61) show heterogeneity between studies. The shortened timeframe may not have allowed sufficient time for metastatic differences to manifest, making it uncertain whether the lack of effect is real or methodological.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C62",
+      "C63"
+    ],
+    "result": "Intratumoral fibronectin fiber orientation showed trends toward higher alignment in tumors with Cav1WT pMEFs compared to Cav1KO pMEFs, but differences were not statistically significant in the replication study. Meta-analysis of the Cav1WT vs Cav1KO comparison was statistically significant (p=1.11\u00d710\u207b\u2074), suggesting Cav1 expression is necessary for intratumoral fibronectin remodeling, though the LM-4175 vs Cav1WT comparison was not significant (p=0.269).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The fibronectin orientation data (C53) shows directional trends consistent with the original study (C2, C55), but lacks statistical significance in planned comparisons (C54). The meta-analysis provides partial support (C62), but heterogeneity between studies (C63) and methodological differences in image analysis (acknowledged in manuscript) complicate interpretation. The median values across all tumors were similar between studies (C57), suggesting measurement consistency, but the inability to replicate the original analysis workflow and high-quality fibronectin staining (C51) versus problematic SMA staining (C52) introduce uncertainty about whether the effect is absent or obscured by technical factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C64"
+    ],
+    "result": "The correlation between intratumoral fibronectin fiber orientation and metastatic burden was statistically significant but negative (rs=-0.50, p=0.025), opposite to the positive correlation found in the original study. Meta-analysis showed no significant overall correlation (p=0.837) with substantial heterogeneity between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While claim C56 reports a statistically significant correlation, the direction is opposite to the original study (C6), and the meta-analysis (C64) shows no overall effect with high heterogeneity. The correlation analysis is based on a random subset of tumors (n=20) and is confounded by the shorter experimental duration that may have affected both metastatic burden and ECM remodeling patterns. The opposite direction of correlation, combined with non-significant meta-analysis and acknowledged methodological differences, indicates this result does not support the original finding. Additional factors like imaging differences and analysis methods may have contributed to the discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Multiple technical factors can affect bioluminescence imaging outcomes, including tumor depth and location, animal skin characteristics, anesthesia type, luciferin administration route and timing, imaging parameters, animal diet, and immune responses to luciferase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are well-supported by appropriate citations and represent established knowledge about sources of variability in bioluminescence imaging. These factors are relevant for interpreting differences between the original and replication studies. The claims appropriately acknowledge technical limitations and potential confounders.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Metastasis formation involves multiple complex cellular processes, and most experimental systems, including subcutaneous models, do not fully recapitulate all steps of metastasis. Experimental timing is critical for metastasis studies due to the nonlinear nature of tumor growth and the importance of anatomical context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by appropriate citations and represent established understanding of metastasis biology and experimental limitations. These claims provide important context for interpreting the metastasis results and highlight the significance of the 25-day difference in experimental duration between studies. The reasoning is sound and well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Multiple uncontrolled variables may affect experimental outcomes between replication attempts, including cell line genetic drift, mouse strain heterogeneity, microbiome differences, housing temperature, in vitro passage effects, environmental factors, and species-specific differences in tumor cell behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are appropriately supported by citations and acknowledge important sources of variability between studies. These represent legitimate confounding factors that could contribute to differences in outcomes. The discussion appropriately recognizes limitations in controlling for all variables between the original and replication studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C23"
+    ],
+    "result": "Background context from prior literature establishes that Cav1 activates Rho/ROCK signaling, promotes ECM remodeling in CAFs, and has been associated with both tumor-promoting and tumor-suppressive functions depending on context. The original study by Goetz et al. (2011) found that Cav1 expression in stromal fibroblasts increased ECM remodeling, metastatic burden, and showed positive correlation between fibronectin alignment and metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C17, C20, and C23 appropriately cite prior literature and accurately describe the original study's findings. These provide necessary context for the replication attempt. The citations appear appropriate and the characterization of prior work, including conflicting findings about Cav1's role (C15-C17), is balanced and well-supported.",
+    "result_type": "MINOR"
+  }
+]

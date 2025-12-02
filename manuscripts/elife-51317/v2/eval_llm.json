@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "CRP promoter methylation is inversely associated with CRP expression across different tissues and cell types. The authors show that CRP promoter is less methylated in liver (where CRP is predominantly expressed) compared to other tissues in both humans and rabbits, and that malignant liver tissues show lower methylation and higher CRP expression than adjacent normal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are well-supported by bisulfite sequencing data from multiple tissue types (Figures 1B-E) showing consistent inverse correlation between promoter methylation and CRP expression. The data includes human tissues, rabbit tissues, and tumor vs. normal comparisons, providing convergent evidence for this association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CRP promoter methylation is dynamically regulated during cytokine-induced expression in Hep3B cells. The authors demonstrate that cytokine treatment induces promoter demethylation that is rapidly reversed upon cytokine withdrawal, and that allelic differences in methylation exist at the -286 position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are supported by time course bisulfite sequencing data (Figure 1F-G) showing dynamic changes in promoter methylation that correlate with CRP expression changes. The allele-specific methylation data and the specificity control (5' UTR CpG) strengthen the conclusion that these are specific, reversible changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Promoter methylation causally determines CRP expression. The authors show that DNA methylation inhibitors enhance CRP expression at resting state, can partially rescue expression when STAT3/NF-\u03baB are inhibited, and that in vitro methylation of reporter constructs suppresses promoter activity in a CpG-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 are supported by multiple lines of experimental evidence (Figure 2) including pharmacological inhibition (5-aza, RG108), rescue experiments, and luciferase reporter assays with methylated vs. unmethylated and CpG-mutant constructs. The convergence of these approaches provides strong evidence for causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "DNMT3A and TET2 are the key regulators of CRP expression through their effects on promoter methylation. The authors demonstrate that DNMT3A knockdown/knockout enhances CRP expression while TET2 knockdown/knockout reduces it, and that overexpression has opposite effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 are well-supported by multiple genetic manipulation approaches (Figure 3A-E) including RNAi, CRISPR/Cas9 knockout, and overexpression experiments. The consistency across different methods and the demonstration that these manipulations affect promoter methylation as expected (Figure 3\u2014figure supplements 1-2) without affecting TF expression (Figure 3\u2014figure supplement 3) provide strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Targeted manipulation of CRP promoter methylation using dCas9-DNMT3A or dCas9-TET2 specifically regulates CRP expression without affecting other genes (SAA, SAP). This demonstrates that DNMT3A and TET2-tuned methylation status causally determines CRP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by dCas9 targeting experiments (Figure 3F-G) showing gene-specific effects. This approach addresses the limitation of global methylation manipulation and provides strong evidence for causality by demonstrating that targeted methylation changes at the CRP promoter are sufficient to alter expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Promoter methylation regulates CRP expression by controlling transcription factor recruitment. The authors show that cytokine-induced demethylation enhances recruitment of STAT3, p50, and C/EBP-\u03b2, and that in vitro methylation reduces TF binding in a site-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are supported by ChIP experiments (Figure 4) showing enhanced TF recruitment upon induction, reduced recruitment with in vitro methylation, and site-specific effects of methylation at individual CpG sites. The data demonstrate a clear mechanistic link between methylation status and TF binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78"
+    ],
+    "result": "CRP induction occurs in two waves with distinct temporal patterns of transcription factor recruitment. STAT3 is recruited early during the first wave, followed by p50 recruitment during the inter-wave period, and C/EBP-\u03b2 recruitment that peaks at the second wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75, C77-C78 are supported by time course data (Figure 5A-D) showing biphasic CRP expression kinetics and distinct temporal patterns of TF recruitment. The interpretation that STAT3 licenses p50 recruitment is reasonable given the temporal sequence, though the mechanism is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "STAT3 functions as a pioneer transcription factor that can bind methylated CRP promoter to initiate induction. The authors show that STAT3 is the only TF recruited to heavily methylated promoter in TET2 KO cells, its binding is least sensitive to methylation, and it can drive CRP induction independently of p50 and C/EBP-\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by data from TET2 KO cells (Figure 5B-D) showing STAT3 recruitment despite high methylation, in vitro methylation experiments (Figure 4B-C) showing STAT3 is least sensitive to methylation, and single cytokine experiments (Figure 5E) showing IL-6 alone can induce CRP. The pioneer factor designation is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "NF-\u03baB p50 is required for promoter demethylation and acts downstream of STAT3. The authors show that NF-\u03baB inhibition at the induced state increases promoter methylation and reverses allelic imbalance, despite intact STAT3 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by experiments showing that NF-\u03baB inhibition increases promoter methylation (Figure 5F) and reverses allelic imbalance (Figure 5G), while IL-1\u03b2 alone (which activates NF-\u03baB but not STAT3) cannot induce CRP (Figure 5E). This demonstrates p50's role in demethylation downstream of STAT3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "DNMT3A knockout enhances CRP induction amplitude and alters dynamics by eliminating the inter-wave lag. This is explained by enhanced TF recruitment and shifted timing of p50 recruitment, suggesting p50 recruited during the lag is responsible for demethylation that primes the second wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by time course data in DNMT3A KO cells (Figure 5A) showing tripled expression and eliminated lag, along with ChIP data (Figure 5B-D) showing enhanced and temporally shifted TF recruitment. The interpretation about p50's role in priming the second wave is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "C/EBP-\u03b2 is the major effector that responds to promoter demethylation. The authors show that C/EBP-\u03b2 overexpression does not demethylate the promoter but when combined with methylation blockade drives high CRP expression, and that C/EBP-\u03b2 knockout reduces induced CRP expression by ~70%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by experiments showing C/EBP-\u03b2 overexpression doesn't affect methylation (Figure 5H-I) but combined with 5-aza drives high expression (Figure 5J), and C/EBP-\u03b2 KO dramatically reduces induced expression (Figure 5K). This demonstrates C/EBP-\u03b2 responds to rather than causes demethylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Reversible promoter methylation regulates expression of other acute phase reactants. The authors show that SAA (but not SAP) exhibits similar dynamic methylation and expression patterns as CRP in response to cytokines, and DNMT3A KO enhances SAA but not SAP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 are supported by time course data (Figure 6A-C) showing SAA behaves like CRP while SAP does not, and DNMT3A KO experiments (Figure 6D) showing selective effects on SAA and CRP but not SAP. This extends the regulatory mechanism to other APRs with appropriate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Genes with CpG-poor promoters show stronger induction and greater methylation changes in response to inflammatory stimuli. The authors demonstrate that APR promoters have exceptionally low CpG frequency, and genome-wide analysis shows genes with lower promoter CpG density exhibit stronger expression and methylation changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 are supported by promoter sequence analysis (Figure 7A) showing APRs have low CpG frequency, RNA-seq data from Hep3B cells (Figure 7B) and mouse liver (Figure 7C) showing inverse correlation between CpG density and induction magnitude, and genome-wide methylation analysis (Figure 7D-E) showing CpG-poor promoters have greater methylation changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C64",
+      "C98",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C129"
+    ],
+    "result": "The authors propose a comprehensive model where reversible promoter methylation causally determines CRP expression through a stepwise mechanism involving STAT3 pioneer binding, NF-\u03baB-dependent demethylation, and C/EBP-\u03b2-mediated transcription, with this mechanism extending to other genes with CpG-poor promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizing the main claims (C2, C64, C98, C115-C117, C119-C121, C129) is well-supported by the comprehensive experimental evidence presented throughout the manuscript. The model is illustrated in Figure 5L and represents a logical synthesis of the individual findings. The causality claim is justified by the multiple lines of evidence including genetic manipulation, pharmacological intervention, and targeted epigenome editing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C27"
+    ],
+    "result": "Background claims about acute phase reactants and CRP. APRs are liver-produced proteins that change >25% in response to inflammation, with IL-6 and IL-1\u03b2 as chief inducers. CRP is predominantly expressed by liver and can increase up to 1000-fold upon infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C14, C27 are well-established facts supported by multiple citations to previous literature. These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Characterization of CRP promoter structure. The CRP promoter is CpG-poor with only 5 CpG motifs in the proximal region, including CpGs at TF binding sites. The SNP rs3091244 at -286 creates/disrupts a CpG motif and is associated with CRP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C22 are supported by sequence analysis (Figure 1A) and citations to previous genetic association studies. The characterization of promoter structure is accurate and provides important context for the mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "General principles about promoter methylation. Promoter methylation affects TF recruitment and contributes to gene silencing, and CRP promoter methylation appears negatively associated with expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by citations to established literature and preliminary observations. These provide the rationale for investigating methylation's role in CRP regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Background on DNA methylation enzymes. CpG methylation is mediated by DNMTs and demethylation by TETs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are well-established facts supported by citations. This provides necessary background for the mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "C/EBP-\u03b2 action depends on p50.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by citations to previous literature. This provides context for interpreting the temporal recruitment patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Most mammalian gene promoters contain CpG islands that resist methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is established knowledge supported by citation. This provides important context for understanding why CpG-poor promoters are unusual.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Discussion of DNA methylation stability and previous examples. DNA methylation is generally stable and persistent, with only rare examples of rapid reversible methylation (pS2, IL-10). The causality of methylation in determining expression has been questioned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 are supported by citations to previous literature. These provide important context for the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Discussion of conflicting findings in other systems. Previous genome-wide studies in neurons and dendritic cells show inconsistent relationships between CpG content, methylation changes, and gene expression, suggesting context-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 are supported by citations to previous literature. The authors appropriately acknowledge conflicting findings and suggest context-dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Comparison to gene regulation in macrophages. Genes in macrophages show single-wave induction kinetics regardless of CpG content, contrasting with the two-wave kinetics observed for CRP. C/EBP-\u03b2 can recruit chromatin remodeling complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 are supported by citations to previous literature. This provides useful context for understanding the distinctive features of CRP regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Discussion of TET/DNMT balance. Most non-CGI CpGs are methylated, but TETs and DNMTs can mediate dynamic changes. The balance of these enzymes may determine methylation status, and cellular signaling that tips this balance could represent a regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 are supported by citations and represent reasonable speculation based on the findings. Claim C143 is appropriately presented as a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "Mechanisms of TF-induced demethylation. TFs including NF-\u03baB and EGR1 can evoke demethylation in neurons, potentially by recruiting TET1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 are supported by citations to previous literature. This provides potential mechanistic context for how STAT3 and NF-\u03baB might promote demethylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Speculative mechanism for demethylation. STAT3 and NF-\u03baB probably work together to tip the TET2/DNMT3A balance, and methylated cytosine might be removed by base excision repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C118 are speculative interpretations not directly tested in the study. While reasonable hypotheses based on the data and literature, the specific mechanisms by which STAT3/NF-\u03baB regulate TET2/DNMT3A balance and how methylated cytosines are removed are not experimentally demonstrated. These require future investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Small RNA sequencing of human lymphatic (HMVEC-dLy) and blood (HUVEC) endothelial cells identified miR-204-5p as the most highly enriched microRNA in lymphatic endothelial cells, with 105-fold higher representation compared to blood endothelial cells, validated by qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide comprehensive experimental evidence including appropriate biological replicates (n=3), validated cell types expressing appropriate markers (C2-C3), stringent filtering criteria (C5), statistical significance (p<0.01, FDR<0.01, C6), and independent qPCR validation (C10). The methodology is sound and the conclusion is well-supported by converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Zebrafish mir-204 is highly enriched in FACS-sorted lymphatic endothelial cells compared to arterial and venous blood endothelial cells, demonstrating evolutionary conservation of lymphatic-specific mir-204 expression between humans and zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 demonstrate conservation of mir-204 enrichment in lymphatic cells across species using FACS-sorted zebrafish endothelial populations with appropriate transgenic markers. The qPCR data (C12-C13) and comparative analysis (C14) provide strong evidence for evolutionary conservation, though the claim would be strengthened by reporting the number of biological replicates for the zebrafish experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "miR-204 is located in intronic regions of TRPM genes and shows 100% sequence conservation across vertebrate species, with zebrafish having three paralogous copies (mir-204-1, mir-204-2, mir-204-3) that produce identical mature sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 describe the genomic organization and conservation of mir-204, supported by sequence alignments and database citations. The 100% conservation of mature sequence (C16, C20) and genomic locations (C15, C18-C19) are well-documented. However, these are primarily descriptive/bioinformatic findings rather than novel experimental discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Morpholino-mediated knockdown of mir-204 using pan-204 MO (0.5 ng dose) causes severe lymphatic defects in zebrafish, including failure of secondary sprouts to form parachordal lines and nearly complete loss of thoracic duct formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 demonstrate robust loss-of-function phenotypes with appropriate dose optimization (C21-C23), time-lapse imaging (C24), and quantitative analysis at multiple developmental stages (C25-C26). Sample sizes are adequate (n=23-39) and statistical significance is demonstrated. The phenotype is severe and reproducible, supporting a critical role for mir-204 in lymphatic development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Individual morpholinos targeting each of the three zebrafish mir-204 paralogs show that mir-204-1 and mir-204-2 play more important roles than mir-204-3 during lymphatic development, with combined MO1+MO2 knockdown sufficient to cause lymphatic defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 systematically dissect the relative contributions of the three mir-204 paralogs using individual and combinatorial morpholino injections. The experimental design is logical and the results clearly demonstrate differential importance of the paralogs (C28-C30). However, the conclusion (C31) is appropriately stated as a suggestion rather than definitive proof, as functional redundancy and compensation mechanisms may complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A CRISPR/Cas9-generated mir-204-1 deletion mutant combined with morpholino knockdown of mir-204-2 recapitulates the lymphatic defects seen with pan-204 morpholino, confirming that suppressing mir-204-1 and mir-204-2 is sufficient to disrupt lymphatic vessel formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 provide genetic validation of the morpholino results using CRISPR/Cas9 mutagenesis. The mutant characterization is thorough (C32-C34), and the combinatorial genetic/morpholino approach (C35-C37) elegantly confirms the morpholino findings while avoiding potential off-target effects. The consistency between genetic and morpholino approaches (C39) strongly supports the conclusions. Sample sizes are adequate and quantification is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Triple homozygous mutants lacking all three mir-204 paralogs show strongly reduced mir-204 expression but do not display statistically significant lymphatic defects, suggesting compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41 present a puzzling result that contradicts the morpholino and genetic+morpholino findings. While the qPCR data (C40) confirms reduced mir-204 levels, the lack of phenotype (C41) is unexplained. The authors speculate about compensation but provide no mechanistic insight or additional experiments to test this hypothesis. This result raises questions about the interpretation of the morpholino experiments and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Endothelial-specific overexpression of mir-204 using the mrc1a promoter causes precocious thoracic duct development at 3 dpf in both mosaic and germline transgenic animals, with transgenic animals showing approximately 2-fold increased mir-204 levels and no morphological abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 demonstrate gain-of-function effects complementing the loss-of-function studies. The use of both mosaic (C42) and germline transgenic approaches (C43-C45) strengthens the findings. Quantification shows significant acceleration of lymphatic development (C42-C43) without gross morphological defects (C44), and the modest 2-fold increase in mir-204 levels (C45) is physiologically relevant. The conclusion (C46) is appropriately stated as a suggestion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Endothelial-specific expression of mir-204 rescues lymphatic development in mir-204-1-/- mutants injected with MO2, demonstrating that endothelial-autonomous miR-204 function is required for developmental lymphangiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide critical rescue experiments demonstrating cell-autonomous function. The experimental design is rigorous, using genetic mutants combined with morpholinos to eliminate mir-204 function, then rescuing with endothelial-specific transgene expression. The dose-dependent rescue (C47) and quantification strengthen the conclusion. This is a key result establishing the cell-autonomous requirement for mir-204 in lymphatic endothelium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Human NFATC1 is a direct target of miR-204, as demonstrated by luciferase reporter assays showing miR-204-dependent suppression that is abolished by seed sequence mutation, and by miR-204 mimic/inhibitor experiments showing reciprocal regulation of endogenous NFATC1 in human lymphatic endothelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 provide multiple lines of evidence for direct targeting: bioinformatic prediction (C49), luciferase reporter assays with wild-type and mutant constructs (C50-C51), and regulation of endogenous NFATC1 by miR-204 mimic and inhibitor (C52-C53). The experimental design is rigorous, including appropriate controls (miR-126) and seed sequence mutations. Four biological replicates were used for luciferase assays. This establishes NFATC1 as a bona fide miR-204 target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Zebrafish nfatc1 is also a direct target of mir-204, demonstrated by conserved binding sites, luciferase reporter assays, and increased endogenous nfatc1 expression upon mir-204 knockdown, establishing evolutionary conservation of miR-204/NFATC1 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 demonstrate conservation of the miR-204/NFATC1 regulatory relationship in zebrafish using parallel approaches to the human studies. The luciferase assays (C55-C56) and in vivo validation (C57) are well-controlled. The conclusion of evolutionary conservation (C58) is well-supported by the combined human and zebrafish data. This strengthens the biological significance of the miR-204/NFATC1 axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Loss of nfatc1 function in zebrafish, achieved through morpholino knockdown, pharmacological inhibition with cyclosporin A, or CRISPR/Cas9 mutagenesis, causes thoracic duct enlargement/lymphatic hyperplasia similar to mouse Nfatc1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 establish the zebrafish nfatc1 phenotype using three independent approaches: two different morpholinos (C60), pharmacological inhibition (C61), and genetic mutation (C62). The consistency across methods and with published mouse data (C59) strongly supports the conclusion (C63). Sample sizes are adequate (n=8-10) and quantification is provided. This validates zebrafish as a model for studying NFATC1 function in lymphatic development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Co-injection of nfatc1 morpholino with pan-204 morpholino substantially rescues lymphatic vessel formation in mir-204-deficient animals, demonstrating that balanced expression of mir-204 and nfatc1 is critical for proper lymphatic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 provide the critical genetic interaction experiment demonstrating that nfatc1 is a functionally relevant target of mir-204 in vivo. The rescue of both thoracic duct (C64) and other lymphatic vessels (C65) by nfatc1 knockdown in mir-204-deficient animals is compelling evidence for the miR-204/NFATC1 regulatory axis. The conclusions (C67-C68) are well-supported by the combined loss-of-function, gain-of-function, and rescue experiments. Sample sizes are adequate (n=8-21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background information establishing the importance of the lymphatic system, the developmental origin of lymphatic vessels, known regulators of lymphangiogenesis, the zebrafish model system, and the role of microRNAs in gene regulation and vascular development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C82 provide background context supported by appropriate citations to the literature. These are established facts from prior work rather than novel findings from this study. The claims accurately represent the current state of knowledge in the field and provide necessary context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Most of the 30 highly LEC-enriched microRNAs identified are mammal-specific, with only 7 conserved in other vertebrates, suggesting mammalian-specific functions, while miR-204 shows 100% conservation suggesting an important conserved role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 provide comparative analysis of the sequencing data examining evolutionary conservation. The observation that most LEC-enriched microRNAs are mammal-specific (C83-C84) while miR-204 is highly conserved (C86) provides rationale for focusing on miR-204. However, the inference about mammalian-specific functions (C85) is speculative. This analysis provides useful context but is not a primary experimental finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Comparison with a previous study by Pedrioli et al. shows both concordance (identification of miR-326, miR-139, miR-338, miR-148a, miR-30d) and discordance (miR-204 not identified previously, miR-95 excluded from current study), with differences potentially due to methodological variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 provide important context by comparing results to prior work. The identification of both concordant and discordant findings (C87-C89) is appropriately discussed, with speculation about methodological differences (C90) and description of the current study's rigorous approach (C91-C92). This comparison strengthens confidence in the current findings while acknowledging limitations in cross-study comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Discussion of the evolutionary conservation of miR-204 sequence and genomic organization, noting differences between human (single locus) and zebrafish (three loci) and speculation about the evolutionary relationship between miR-204 and miR-211.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 provide evolutionary context for the experimental findings. The observations about conservation (C93) and genomic organization (C95) are factual, while the speculation about miR-211 evolution (C96) is appropriately tentative. These claims provide useful context but are not primary experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Summary of the multiple complementary loss-of-function approaches used to demonstrate mir-204's essential role, including pan-204 morpholino, individual morpholinos, and CRISPR/Cas9 genetic mutants, all showing that targeting mir-204-1 and mir-204-2 causes dramatic loss of lymphatic vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 provide a summary of the experimental strategy and key findings. These summary claims accurately reflect the experimental results described in earlier claims (C21-C39) and appropriately emphasize the convergence of multiple approaches. This is a synthesis of results rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Summary statement that endothelial-specific mir-204 expression rescues lymphatic development in mir-204-deficient animals, demonstrating sufficiency of endothelial mir-204 for normal lymphatic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 summarize the rescue experiments described in detail in C47-C48. These summary claims accurately reflect the experimental findings and appropriately emphasize the cell-autonomous requirement for mir-204. This is a restatement of earlier results rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Discussion of the paradoxical lack of phenotype in mir-204 triple mutants despite strong evidence for mir-204 function, drawing parallels to similar observations with mir-126 mutants and suggesting potential compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C107 discuss an important unresolved issue: the discrepancy between morpholino/acute knockdown phenotypes and stable mutant phenotypes. The parallel to mir-126 (C104-C107) provides precedent but not explanation. The speculation about compensation (C107) is reasonable but untested. This discussion appropriately acknowledges a significant limitation but does not resolve it, leaving uncertainty about the interpretation of the morpholino experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Background information from prior studies establishing that NFATC1 is important for lymphatic vessel development, is co-expressed with lymphatic markers in progenitors, and that Nfatc1 null mice develop lymphatic hyperplasia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 provide essential background from prior mouse studies that motivated the investigation of NFATC1 as a mir-204 target. These claims are supported by appropriate citations and accurately represent prior work. This is background context rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Summary of the identification and validation of NFATC1 as a miR-204 target based on conserved binding sites and reciprocal regulation by miR-204 mimic and antagomir in human lymphatic endothelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 summarize the target identification and validation described in detail in C49-C53. These summary claims accurately reflect the experimental approach and findings. This is a restatement of earlier results rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Summary statement that luciferase reporter assays and in vivo knockdown experiments confirm that miR-204 suppresses NFATC1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 summarize the experimental validation of NFATC1 as a miR-204 target described in earlier claims. These summary claims accurately reflect the combined evidence from multiple experimental approaches. This is a synthesis of earlier results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Summary of the genetic rescue experiment showing that nfatc1 knockdown rescues lymphatic development in mir-204-deficient zebrafish, leading to the conclusion that balanced mir-204/nfatc1 expression is critical for lymphangiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 summarize the key genetic interaction experiment described in detail in C64-C68. These summary claims accurately reflect the experimental findings and appropriately emphasize the importance of balanced mir-204/nfatc1 expression. This is a restatement and synthesis of earlier results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Discussion acknowledging that microRNAs typically have multiple targets and that miR-204 may regulate additional genes beyond NFATC1, with further investigation required to determine the full scope of miR-204's effects on lymphatic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 appropriately acknowledge limitations and future directions. The recognition that microRNAs have multiple targets (C119) is well-established, and the acknowledgment that miR-204 may have additional relevant targets (C120-C121) is scientifically appropriate. This discussion appropriately qualifies the conclusions without undermining the significance of the NFATC1 findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Concluding statement that nfatc1 is a major, key downstream target of miR-204 in developing lymphatic endothelial cells, based on prior mammalian studies, zebrafish phenotypes, and rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 provide a concluding synthesis of the evidence for NFATC1 as a key miR-204 target. The conclusion (C123) is appropriately stated as a suggestion ('our results suggest') and is well-supported by the combined evidence from multiple experimental approaches. The qualification that NFATC1 is 'a major, key' target (rather than 'the only' target) appropriately acknowledges the possibility of additional targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Summary statements emphasizing the significance of the work in establishing miR-204's role in regulating lymphatic development via NFATC1 and providing new insights into microRNA-regulated pathways in lymphangiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 provide concluding statements about the significance and impact of the work. These claims appropriately summarize the main findings (C124) and their broader implications (C125-C126). The statement about 'new opportunities' (C126) is somewhat speculative but reasonable given the novel findings. These are summary/significance statements rather than experimental results.",
+    "result_type": "MINOR"
+  }
+]

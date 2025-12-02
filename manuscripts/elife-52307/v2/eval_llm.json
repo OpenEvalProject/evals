@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes the context that most antibiotic consumption occurs in outpatient settings in developed nations (>80%), with 23-40% of US outpatient prescriptions being inappropriate. Inappropriate use leads to adverse events, microbiome disruption, and bystander selection, with 8 of 9 pathogens experiencing >80% of antibiotic exposures during asymptomatic colonization rather than active infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by multiple citations to public health reports and peer-reviewed studies. These claims establish the epidemiological and biological foundation for the study, drawing on established literature including the authors' prior work on bystander selection (C5).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C45",
+      "C46"
+    ],
+    "result": "Elimination of all unnecessary outpatient antibiotic use (Scenario 1) could avert 6-48% (IQR: 17-31%) of antibiotic-species exposures across 16 antibiotics and 9 bacterial pathogens. Specific reductions include 27-37% for S. pneumoniae exposures to penicillins and macrolides, 21-27% for S. aureus exposures to quinolones and penicillins, and approximately 20-25% for E. coli and K. pneumoniae exposures to cephalosporins and quinolones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C20-C29, C45-C46 present the primary quantitative findings from Scenario 1 analysis. The results are supported by data analysis using NAMCS/NHAMCS 2015, HMP, and carriage studies, with results presented in Figure 1A. The wide range (6-48%) reflects variation across antibiotic-species combinations, which is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Scenario 2 (elimination of antibiotics for respiratory conditions where not indicated) shows that 32% of azithromycin use is associated with affected conditions. Acute sinusitis accounts for only 3% of prescriptions overall, but represents 15% of amoxicillin-clavulanate use and 9% of clarithromycin use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe findings from Scenario 2 analysis, supported by NAMCS/NHAMCS 2015 data. These results explain why certain antibiotics show higher proportions of avertable exposures and are consistent with the methodology described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Scenario 4 (prescribing only nitrofurantoin for cystitis in women) could reduce exposures of E. coli and K. pneumoniae to cephalosporins by 16-17% and to quinolones by 26-28%. For ciprofloxacin specifically, 27% of use is associated with cystitis, with 33-44% of exposures to causative uropathogens (E. coli, K. pneumoniae, P. aeruginosa) being avertable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 present findings from Scenario 4 analysis. The results are supported by data analysis and demonstrate the differential impact on causative pathogens versus bystanders. The higher proportions for causative pathogens (33-44%) compared to overall ciprofloxacin use for cystitis (27%) is logically consistent with the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C75",
+      "C76",
+      "C77",
+      "C18",
+      "C19"
+    ],
+    "result": "The analysis uses three primary data sources: 2015 NAMCS/NHAMCS (cross-sectional surveys of US outpatient visits with up to 5 diagnoses and 30 medications per visit), the Human Microbiome Project, and assorted carriage and etiology studies to estimate exposures for 16 antibiotics and 9 bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C18-C19, C75-C77 describe the data sources and scope of the analysis. These are factual descriptions of publicly available datasets and published studies, appropriately cited and documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The methodology assumes one prescription equals one exposure, estimates exposures as the product of prescriptions and carriage prevalence (including both target and bystander exposures), assumes constant carriage prevalence within three age groups, and presumes perfect discrimination between bacterial and non-bacterial etiologies in scenarios eliminating unnecessary use. Analysis was conducted in R version 3.6.1 using nationally representative weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C85 describe methodological assumptions. While the assumptions are clearly stated, several are acknowledged as simplifications (C78, C83). The assumption of perfect discrimination (C83) is particularly strong and likely leads to overestimation of avertable exposures. The authors acknowledge this limitation but do not quantify its impact. The one-prescription-equals-one-exposure assumption (C78) ignores dose and duration variations (C56), which could substantially affect selective pressure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The NAMCS/NHAMCS dataset does not link medications to diagnoses, requiring use of a tiered system to attribute antibiotics to the most likely indication. This method tends to overestimate use for conditions where antibiotics are almost always indicated and underestimate use for conditions where antibiotics are not indicated, potentially biasing avertable exposure estimates downward. The data also lacks prescription details like duration and dose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 identify important methodological limitations. The authors appropriately acknowledge that their attribution method (C53) introduces systematic biases (C54-C55) that could affect their estimates. The lack of dose/duration data (C56) is a significant limitation for assessing selective pressure, though the authors note this constraint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C71",
+      "C72"
+    ],
+    "result": "Bacteria are an infrequent cause of acute sinusitis, evidence for antibiotic treatment is weak due to its self-limiting nature, and the cause is difficult to distinguish in practice. Despite this, antibiotics are prescribed at >80% of US outpatient visits for acute sinusitis, even though antibiotic treatment is currently guideline-recommended.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C71-C72 describe the clinical context for acute sinusitis. These claims are supported by appropriate citations to clinical studies and guidelines. The apparent contradiction between weak evidence (C11) and guideline recommendations (C71) reflects the complexity of clinical practice and diagnostic challenges (C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C73",
+      "C74"
+    ],
+    "result": "Antibiotics are always recommended for UTIs, but fluoroquinolones are prescribed at 40% of uncomplicated UTI visits despite being second-line therapy. Nitrofurantoin is a recommended first-line therapy with good potency, low resistance, and decreased collateral microbiome damage due to bladder concentration. Contraindications are assumed to be rare in the general population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17, C73-C74 establish the rationale for Scenario 4. The clinical characteristics of nitrofurantoin are well-supported by citations (C15-C17, C73). The assumption that contraindications are rare (C74) is reasonable but not quantified, which could affect the feasibility of universal nitrofurantoin use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The organisms of interest experience the vast majority of antibiotic exposures as bystanders. Age-specific factors affect results: M. catarrhalis is carried more frequently in children than adults, while cystitis occurs primarily in adults. Being a causative pathogen for affected conditions increases avertable exposures, while being a pathogen for unaffected conditions decreases them. Asymptomatic carriage prevalence affects both affected and unaffected exposures, with overall effects depending on the antibiotic-species combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C87-C90 explain the biological and epidemiological factors driving the results. These claims are supported by established microbiological knowledge (C42-C43), the authors' prior work (C44), and logical inference from the analysis (C87-C90). The explanations are consistent with the observed patterns in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C69",
+      "C70"
+    ],
+    "result": "Switching to antibiotics with decreased microbiome collateral damage may effectively reduce exposures for conditions requiring treatment. However, even with full elimination of unnecessary use, the majority of species' antibiotic exposures occur in 'necessary' contexts. Therefore, improved prescribing practices have potential to prevent exposures, but complementary efforts to facilitate appropriate consumption and decrease infection incidence are required to substantially avert exposures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C69-C70 present the main conclusions and implications. These are well-supported by the quantitative findings showing that even in the most aggressive scenario, substantial exposures remain (C48). The call for complementary approaches (C70) logically follows from the finding that most exposures occur in necessary contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Rapid diagnostics, accurate bacterial/non-bacterial discrimination, patient education, and improved decision-making tools can enhance responsible antibiotic consumption. These should be implemented with prevention measures including infection control, clean water/sanitation access, safe sex interventions, and vaccination to reduce infection incidence and antibiotic use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 propose interventions based on the study findings. These recommendations logically follow from the results and are consistent with established public health approaches. The emphasis on multi-pronged strategies aligns with the finding that most exposures occur in necessary contexts (C48).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C86"
+    ],
+    "result": "NHAMCS hospital outpatient department data was unavailable for 2015. In 2010-2011 data, these visits accounted for 36% of sampled visits but only 9% of antibiotic mentions. Certain encounters are outside NAMCS/NHAMCS scope, including federal facilities, telephone contacts, urgent care, retail clinics, and others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C86 describe data limitations and scope. The authors appropriately acknowledge missing data (C49) and justify their approach using historical data showing low antibiotic prescription rates in excluded settings (C50-C51). The enumeration of excluded encounter types (C86) is important for understanding generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A recent study found 23.2% inappropriate prescriptions versus 30% in Fleming-Dutra et al. Declines in US antibiotic use from 2011-2016 were primarily in pediatric prescribing, suggesting adult unnecessary prescribing remained similar. In the VA system, inappropriate use was highest for macrolides (27%), followed by penicillins (22%) and quinolones (12%) for specific respiratory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide context about temporal trends and variation in inappropriate prescribing. These are appropriately cited and help justify the use of Fleming-Dutra estimates. The VA study (C59-C61) suggests antibiotic-specific variation in inappropriate use, which the authors acknowledge they cannot fully account for.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Reductions in antibiotic consumption have had variable impacts on resistance levels. The reduction in exposures estimated here does not translate to the same reduction in resistance prevalence or attributable morbidity/mortality. While consumption correlates with resistance, the impact of changing consumption is not well-understood and varies by antibiotic-species combination based on resistance mechanisms, fitness costs, and co-selection. Selective pressure from single exposures depends on pharmacokinetics, pharmacodynamics, bacterial distribution, and population size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C62-C68 appropriately contextualize the limitations of the study in predicting resistance impacts. The authors correctly note that exposure reduction does not directly translate to resistance reduction (C62) and acknowledge the complexity of the consumption-resistance relationship (C63-C67). This represents appropriate scientific caution about extrapolating from exposure estimates to resistance outcomes.",
+    "result_type": "MAJOR"
+  }
+]

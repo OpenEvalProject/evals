@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cryo-electron tomography was used to visualize and localize stator complexes in B. burgdorferi flagellar motors by comparing wild-type and stator-deletion mutants. The study identified 16 stator complexes symmetrically distributed around the C-ring in wild-type motors, forming a ring with 16-fold symmetry and ~80 nm diameter, which were absent in \u0394motA and \u0394motB mutants but restored by complementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C45-C50 provide converging evidence from cryo-ET imaging, comparative structural analysis of mutants, and complementation experiments. The localization is well-supported by direct visualization (Figures 2, 2\u2014figure supplement 1) and quantitative measurements of stator ring dimensions. The complementation experiment (C47) provides critical validation that the observed densities are indeed MotA/MotB complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Stator-rotor interaction induces a conformational change in the C-ring, with the top portion of the C-ring reducing in diameter from 59 nm to 57 nm and tilting toward the MS-ring by ~6\u00b0 in the presence of stator complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53-C54, C68-C70 are supported by direct structural measurements comparing \u0394motB and WT motors (Figures 2B, 2E, 3G, 3I). The conformational change is quantified both globally (diameter reduction) and locally (tilt angle), with consistency between measurements strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C93"
+    ],
+    "result": "The C-ring in the WT motor has 46-fold symmetry with 46 FliG proteins organized in a ring, while the surrounding stator ring and collar have 16-fold symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C93 are supported by asymmetric reconstruction and focused alignment (Figure 3E, Figure 3\u2014figure supplement 1, Figure 5). The symmetry determination is novel and well-documented through computational analysis and structural fitting. The symmetry mismatch between C-ring (46-fold) and stator/collar (16-fold) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C71",
+      "C72",
+      "C75",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The non-motile motB-D24N mutant, in which proton flux is blocked, has reduced stator occupancy (~7 stator complexes per motor) and cannot generate the conformational change observed in wild-type, with the C-ring conformation remaining similar to the \u0394motB motor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40, C71-C72, C75, C81-C84 are supported by motility assays (Figure 1E,F), structural analysis (Figure 4A-B, F), and statistical quantification of stator occupancy. The comparison of tilt angles (6.6\u00b0 in motB-D24N vs 7.8\u00b0 in \u0394motB vs 1.8\u00b0 in WT) provides quantitative evidence that blocking proton flux prevents the conformational change despite stator presence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C87",
+      "C91",
+      "C120",
+      "C127"
+    ],
+    "result": "The proton-driven torque is responsible for the conformational change required for flagellar rotation, as demonstrated by the correlation between proton flux capability and C-ring conformational changes across different mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C87, C91, C120, C127 are supported by the systematic comparison of \u0394motB, motB-D24N, motB-D24E, WT, and CCCP-treated WT motors (Figure 4, Figure 4\u2014figure supplement 2). The graded relationship between proton flux (blocked in D24N, reduced in D24E, eliminated by CCCP, full in WT) and C-ring conformational change (measured by tilt angles: 6.6\u00b0, 3.2\u00b0, 5.1\u00b0, 1.8\u00b0 respectively) provides strong evidence for the causal role of proton-driven torque.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C74",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The motB-D24E mutant cells are less motile than WT cells, have ~10 stator complexes per motor (~62.5% occupancy), and show intermediate conformational changes in the C-ring (3.2\u00b0 tilt angle) compared to \u0394motB (7.8\u00b0) and WT (1.8\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C74, C88-C90 are supported by motility assays (Figure 1E,F), stator occupancy quantification, and structural measurements (Figure 4C-D, G). The intermediate phenotype is consistent with the known effect of D24E substitution in reducing proton flux, and the graded response supports the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "CCCP treatment of WT cells blocks motility while maintaining all 16 stator complexes associated with the motor, but changes the C-ring tilt angle to 5.1\u00b0, different from the motile WT motor (1.8\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by structural analysis after CCCP treatment (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2). This experiment provides critical evidence that proton gradient disruption affects C-ring conformation even when stators remain bound, supporting the torque-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The conformational change of the C-ring from motB-D24N to motB-D24E (3.4\u00b0 tilt angle change) is much more significant than from \u0394motB to motB-D24N (1.2\u00b0 tilt angle change), indicating that stator-binding alone is not sufficient to induce large C-ring conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by quantitative comparison of structures (Figure 4, Figure 4\u2014figure supplement 2). The differential magnitude of conformational changes provides strong evidence that proton flux, not just stator binding, drives the C-ring conformational change. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "The stator complex is composed of a periplasmic portion (~14 nm height) that interacts with the collar and FliL, and a cytoplasmic portion (~8 nm diameter) adjacent to the C-ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C67 are supported by high-resolution structural analysis (Figure 3I-J). The measurements are precise and consistent with previous observations in freeze-fractured membranes (C67). The structural characterization provides important architectural details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C43",
+      "C44"
+    ],
+    "result": "\u0394motB and \u0394motA cells are completely non-motile with irregular rod-shaped morphology and possess paralyzed flagella, demonstrating that the MotA/MotB complex is the torque-generating unit essential for spirochetal motility, with Asp-24 in MotB essential for proton translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C43-C44 are supported by genetic deletion experiments, motility assays (Figure 1C-F), and structural observations (Figure 1D). The phenotypic characterization is thorough, combining morphology, motility, and flagellar structure. The conclusion about MotA/MotB function is well-supported by the data and consistent with prior work in other species (C41-C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C41",
+      "C42"
+    ],
+    "result": "Aspartic acid at position 24 in B. burgdorferi MotB (corresponding to D32 in E. coli and D33 in S. enterica) is highly conserved and thought to be directly involved in proton translocation, with mutations showing phenotypes consistent with those observed in E. coli and S. enterica.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C41-C42 are supported by sequence alignment (Figure 1\u2014figure supplement 2), motility assays (Figure 1E,F), and comparison with published literature. The conservation and functional importance are well-established, and the consistency across species strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Sixteen stator complexes in B. burgdorferi are stably assembled around the collar, which is important for assembling and stabilizing the stator. FliL also plays an important role in stator assembly, as deletion of fliL results in motility defects and fewer stator units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106, C108-C110 are supported by structural observations (Figures 2-3) and deletion phenotypes (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 3). The role of the collar and FliL in stator stability is well-documented through both structural and functional evidence, though some claims rely on cited prior work (C105-C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Altering the proton channel in B. burgdorferi significantly decreased stator occupancy in motB-D24E and motB-D24N motors, but some stator units remained associated even in non-motile cells, differing from E. coli where stators dissociate when ion motive force is disrupted. The periplasmic collar may explain this difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 are supported by quantitative stator occupancy measurements (Figure 4) and comparison with published literature on E. coli (C115). The observation of retained stators in B. burgdorferi despite blocked proton flux is novel and the proposed explanation involving the collar is reasonable, though somewhat speculative (C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "In the WT motor, the FliG/FliN/FliM complex rotates ~6\u00b0 to fit into the C-ring density, enabling the C-ring to engage with the MS-ring at its periphery. The N-terminal domain of FliG interacts with the MS-ring periphery, while the C-terminal domain interacts with the stator, with charged residues positioned adjacent to the stator's cytoplasmic portion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98, C100 are supported by molecular modeling and structural fitting (Figure 5, Video 2). The model is consistent with known interactions from E. coli (C99) and provides a structural basis for understanding stator-rotor interactions. However, the model is based on fitting crystal structures into EM density, which has inherent limitations in precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The collar-FliL assembly exhibits conformational changes due to the absence or presence of stator complexes, confirming protein-protein interactions among the stator complex and the collar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by structural observations (Figure 3H,J). The conformational changes provide evidence for dynamic interactions between stator, collar, and FliL, though the resolution may limit detailed interpretation of these changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61"
+    ],
+    "result": "The C-ring and collar are modulated by the curved membrane in both \u0394motB and WT motors. The 16-fold symmetry of the collar is well preserved, but the symmetry of the C-ring is not obvious in the \u0394motB mutant, indicating a mismatch between the C-ring and collar. The sixteen stator complexes in the WT motor display considerable variation in height as they are embedded in the cytoplasmic membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C55-C58, C61 are supported by structural observations (Figure 3A-H). The membrane curvature effects and symmetry mismatch are clearly documented. The variation in stator height is an important observation that reflects the biological context of the motor embedded in a curved membrane.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C76"
+    ],
+    "result": "Stator occupancy is 97.0% in WT cells (~16 stator complexes per motor), and reduced stator occupancy in motB-D24E and motB-D24N mutants is consistent with the notion that the proton gradient affects stator assembly and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C76 are supported by statistical analysis of stator complexes (described in Methods, shown in Figure 4). The quantification method is described and the results are consistent with prior work in other species (C76 cites supporting literature). The high occupancy in WT is a notable finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Wild-type B. burgdorferi cells were immobilized after CCCP treatment, indicating that the proton gradient is used for flagellar rotation in B. burgdorferi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by cited prior work (Motaleb et al., 2000). This is established background knowledge that provides context for the current study's use of CCCP treatment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "In the \u0394motB motor, FliG proteins are relatively far away from the periphery of the MS-ring, and the C-ring appears to be disengaged from the MS-ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by the structural model (Figure 5). This observation is important for understanding the conformational change mechanism, showing the disengaged state in the absence of stators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Before stator assembly, the B. burgdorferi motor is composed of the MS-ring, rod, export apparatus, collar (16-fold symmetry), and C-ring (46-fold symmetry). The collar and FliL provide 16 locations for stator recruitment. Stator complexes with blocked proton conduction partially occupy these locations with little C-ring conformational change, while larger conformational changes occur with higher torque from increasing proton-conduction capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 are supported by the comprehensive structural analysis across multiple mutants (Figure 6). This represents a synthesis of the study's findings into a coherent model of stator assembly and function. The model is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background knowledge about bacterial flagellar motors: they rotate flagellar filaments at high speed through stator-rotor interactions powered by ion gradients, but the molecular mechanism of ion-gradient coupling to mechanical rotation remains elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C12 represent established background knowledge supported by citations to prior literature. These claims provide context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background knowledge about stator complexes: they are composed of MotA and MotB proteins with specific domains and functions, show dynamic assembly in some species, and have been visualized in various bacterial motors, though detailed visualization remains challenging in E. coli and S. enterica.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C23 represent established background knowledge supported by extensive citations to prior literature. These claims provide important context for understanding the significance of the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background knowledge about B. burgdorferi flagellar motors: they have periplasmic flagella with unique features including a collar structure, but major components are similar to other bacterial species. FliL and the collar play important roles in flagellar orientation and stator recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 represent established background knowledge about B. burgdorferi supported by citations to prior literature. These claims justify the choice of B. burgdorferi as a model system for this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C65",
+      "C99",
+      "C103",
+      "C107",
+      "C111",
+      "C112",
+      "C117"
+    ],
+    "result": "Background knowledge from prior work: interactions between stator and collar/FliL stabilize the stator; charged residues in FliG and MotA are important for torque generation; the collar plays important roles in flagellar assembly and motility; FliL forms structures between stator and collar; proton gradient is essential for flagellar rotation and stator assembly; proton flow triggers conformational changes in the stator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C99, C103, C107, C111-C112, C117 represent established knowledge from prior work supported by citations. These provide important context and support for interpreting the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "The FliN tetramer was placed into the bulge at the bottom of the C-ring, as proposed for E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by applying a model from E. coli (Brown et al., 2005) to the B. burgdorferi structure. This is a reasonable modeling approach based on structural homology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C101",
+      "C126"
+    ],
+    "result": "Summary claims: Powered by the proton gradient, stator-rotor interactions induce large conformational changes of the C-ring, driving flagellar rotation. High resolution in situ structural analysis has provided new insights into stator assembly and interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C126 are summary statements supported by the collective evidence from the study. These represent the main conclusions drawn from the experimental work.",
+    "result_type": "MAJOR"
+  }
+]

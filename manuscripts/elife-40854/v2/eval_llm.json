@@ -1,0 +1,405 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C114",
+      "C122",
+      "C123"
+    ],
+    "result": "The study used MCF7 cells from ATCC with extensive quality control measures including STR genotyping, minimal passaging, and CellStrainer analysis showing copy-number discordance of 0.2787, within acceptable range (0-0.3) for therapeutic response similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41, C114, C122-C123 describe comprehensive cell line authentication and quality control procedures. The use of ATCC stocks, STR genotyping, Mycoplasma testing, and CellStrainer analysis with quantitative results (0.2787 discordance) provide strong evidence for cell line authenticity and minimize concerns about genetic drift.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study employed pfChIP-seq methodology with 6 biological replicates across 10 time points (0-90 min) following 100 nM estradiol stimulation, representing twice the replication of previous ChIP-qPCR studies and a significant improvement over single-replicate genome-wide studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C31-C35, C116-C121, C124-C126 collectively describe the experimental design with specific methodological details including cell numbers, culture conditions, hormone concentration, timing, and antibody specifications. The claim of improved replication (C32) is supported by comparison to cited previous work, and the biological independence of replicates (C121) is explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Data processing included alignment to GRCh38, visual inspection confirming ER enrichment at known sites and CTCF control peaks, normalization using >50,000 CTCF binding sites found in >50% of samples, with variability levels similar to pfChIP method development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51, C127-C131 describe standard bioinformatics procedures with appropriate quality controls. Visual inspection (C43-C44) and quantitative metrics (C48-C49) support data quality. The normalization strategy using CTCF sites (C47) is justified by prior literature (Ross-Innes et al., 2011) showing estrogen-independence, and the large number of sites provides robust normalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C139",
+      "C89"
+    ],
+    "result": "At the TFF1 promoter, ER binding occurs rapidly (<10 min) after estradiol stimulation and remains stable thereafter with no significant changes between time points (except 0 vs 10 min comparison) and no evidence of oscillatory binding in individual replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C139, C89 present consistent findings about TFF1 promoter binding kinetics. Statistical testing (C139: t-test, FDR < 0.05) supports the lack of significant changes after 10 min. Analysis of individual replicates (C54) rules out oscillatory patterns. The findings are supported by Figure 1 and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C140"
+    ],
+    "result": "ER binding shows significantly more variance than CTCF binding after induction (F-test, p < 1\u00d710\u207b\u00b9\u2070), but no significant variance differences between ER time points. Since CTCF variance estimates technical variance, the increased ER variance is likely biological in origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C140 present a logical argument supported by statistical testing. The F-test comparison (C55) provides strong statistical evidence (p < 1\u00d710\u207b\u00b9\u2070). The inference that CTCF variance represents technical variance (C57) is reasonable given the pfChIP-seq design, making the conclusion about biological variance (C58) well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Findings at TFF1 were validated at the RARA promoter and proximal CTCF peaks, showing consistent results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 describes validation using independent genomic loci with reference to Figure 1\u2014figure supplement 4. This provides important confirmation that TFF1 findings are not locus-specific artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "When analyzing sites by maximum occupancy time, the current data showed peaks at 10 and 40 min consistent with Guertin et al. 2014, but this normalization method distorts the data and effects are not statistically significant except for 0-10 min contrast. Sites with apparent maximal binding at 0 min show high variance and marginal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 critically evaluate a normalization approach from prior work. The comparison to Guertin et al. (C61) provides validation, while statistical analysis (C62) and detailed examination of 0 min peaks (C64-C65) reveal limitations of the method. The analysis is supported by Figure 2 and supplements, showing appropriate skepticism about apparent patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "pfChIP-seq normalization to internal CTCF control provides absolute binding affinity quantification, revealing that relative normalization to maximum binding emphasizes shallow maxima while absolute normalization shows preserved binding levels across time with high, intermediate, and low binding sites, with only time 0 showing universally low levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 describe the advantage of pfChIP-seq methodology and its impact on data interpretation. The comparison between normalization strategies (C67) is clearly illustrated in Figure 2A vs 2B. The observation about binding level preservation (C68) is a direct result from the data visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "t-SNE analysis revealed two stable trajectories: Trajectory A (estradiol-responsive, low FDR, ERE-enriched, p=1\u00d710\u207b\u2075\u00b3\u2078) showing rapid activation by 10 min then stable binding, and Trajectory B (estradiol-independent, high FDR, FOXA1-enriched, p=1\u00d710\u207b\u00b9\u2079) showing constant lower-intensity binding. Pattern stability was confirmed across perplexity values 30-200.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80, C133-C135 describe comprehensive t-SNE analysis with appropriate parameter testing. The two-trajectory pattern is supported by multiple lines of evidence: FDR coloring (C69), motif analysis with highly significant p-values (C74, C76), and temporal binding profiles (C77-C78). Robustness testing across perplexity values (C71, C133-C135) strengthens confidence in the findings. Figure 3 and supplements provide visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "GREAT analysis of Class B binding sites identified enrichment of six breast tumor amplicons (q=5.6\u00d710\u207b\u2074\u00b9 to 3.3\u00d710\u207b\u2078) and genes upregulated in luminal-like vs mesenchymal-like breast cancer cell lines (q=1.9\u00d710\u207b\u00b9\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 report GREAT analysis results with highly significant q-values and appropriate citations to prior studies (Nikolsky et al., 2008; Charafe-Jauffret et al., 2006). The enrichment provides biological context for Class B sites, linking them to breast cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Analysis of ER-only ChIP-seq data (without pfChIP normalization) gave similar results to pfChIP-seq analysis, confirming the method does not suppress potential cycling, with no clear cycling in individual replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 describe an important control experiment validating that the pfChIP-seq method itself is not masking cyclical patterns. The consistency between ER-only and pfChIP-seq analyses (C83) and lack of cycling in replicates (C84) are supported by Figure 3\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Class A sites (strongest estradiol response, greatest ERE enrichment, including TFF1) showed sustained binding at TFF1 and GREB1 after rapid induction. t-SNE of Class A alone showed partial separation by maximal binding time and amplitude but no distinct clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 characterize Class A sites in detail. The description of TFF1 and GREB1 binding patterns (C88-C90) is supported by data and figures. The t-SNE analysis of Class A alone (C86-C87) appropriately notes the lack of distinct subclusters while identifying partial patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Quantitative re-analysis of four studies using identical conditions to Shang et al. 2000 (MCF7, same estradiol concentration, crosslinking timescale, TFF1 promoter) showed little or no consistency in temporal profiles of ER, AIB1, and P300 binding. Primary data unavailability and single-replicate designs prevent uncertainty quantification, providing no consistent evidence for cycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe systematic re-analysis of prior literature with appropriate selection criteria (C91). The lack of consistency (C92) is documented in Figure 4B. The limitations noted (C93-C94: no primary data, single replicates) are valid concerns that weaken prior cycling claims. The conclusion (C95) follows logically from the inconsistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C101",
+      "C102",
+      "C115"
+    ],
+    "result": "The comprehensive analysis with six replicates and pfChIP internal controls demonstrates that ER binding follows two trajectories: rapid activation within 10 min followed by sustained (not cyclical) binding at estradiol-responsive sites, or ligand-independent binding, with binding magnitude primarily defined by ERE conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C101-C102, C115 present the main conclusions of the study. These are well-supported by the extensive experimental data (6 replicates, 10 time points), statistical analyses showing no significant changes after 10 min, t-SNE trajectory analysis, motif enrichment data, and re-analysis of prior inconsistent studies. The sustained binding model is supported by multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Class B sites are proposed to represent open chromatin regions where ER is recruited by other transcription factors (e.g., FOXA1) in the absence of ligand, with weak and likely transient interactions (binding affinity 30-40 normalized reads, similar to pre-activation Class A levels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 present a mechanistic interpretation of Class B sites. FOXA1 enrichment (C97) and absence of CTCF motif (C98) provide supporting evidence. The proposal (C99) is reasonable given the lack of ERE and lower affinity. The characterization as weak/transient (C100) is supported by quantitative binding data comparisons. However, this remains a proposed model requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Examples of changing ER binding at SNX24 and ACKR3 TSS should be interpreted cautiously as searching for outliers in large datasets generates false positives, though they suggest secondary modulation occurs at lower magnitude than proposed in cycling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 appropriately acknowledge limitations while drawing measured conclusions. The caution about multiple testing (C103) is statistically sound. The inference about secondary modulation (C104) is appropriately qualified as lower magnitude than cycling claims. This represents good scientific practice in interpreting individual examples from genome-wide data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors propose that previously described cyclical kinetics are likely artifacts of observing a highly variable process without replicates, with cycling lost when averaging replicates. Even if cycling existed, it is not regulated tightly enough to be coherent across replicates. Variance may be better explained by cell population heterogeneity and expression noise models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 present a mechanistic explanation for discrepancies with prior work. The proposal (C108-C109) is supported by the high variance observed (C55), lack of cycling in individual replicates (C54, C84), and inconsistency in prior studies (C92). The alternative explanation invoking heterogeneity (C111) is reasonable and supported by citation to relevant models (Morgan and Marioni, 2018). However, this remains a proposed explanation rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Alternative conditions inducing tightly regulated cycling are considered unlikely physiologically. Prior work using \u03b1-amanitin (RNA polymerase inhibitor) has no direct interpretation in cancer biology and represents a confounding factor downstream of ER rather than a synchronization method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 provide critical evaluation of prior experimental conditions. The critique of \u03b1-amanitin use (C106-C107) is valid: as an RNA polymerase inhibitor acting downstream of ER, it confounds interpretation of ER cycling. The skepticism about physiological cycling (C105) is appropriately qualified as the authors' opinion based on their data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The proposed model reconciles ChIP-seq data with stochastic nuclear receptor binding models from single-molecule imaging, whereas ER cycling has been irreconcilable with single-molecule imaging data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 make broad claims about reconciling different data types. While the sustained binding model may be more compatible with single-molecule imaging than cyclical models, the claim of providing reconciliation \"for the first time\" (C112) is not directly demonstrated in this study. The citation to Lenstra et al. 2016 (C113) supports incompatibility of cycling with imaging, but the current study does not include single-molecule imaging data to demonstrate reconciliation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior literature reported cyclical ER binding patterns with 45-min maxima, but most studies lacked replicates and temporal resolution. The authors' previous work found no significant ER signal reduction at 90 min, and conflicting results remain unresolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C18-C24 accurately summarize prior literature with appropriate citations. The characterization of limitations (C4, C21) is supported by the cited studies. The authors' prior work (C22-C23) is appropriately cited. The statement about unresolved conflicts (C24) sets up the motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "ChIP-based assays face normalization challenges due to uncontrolled confounding factors including immunoprecipitation efficiency. Original ER cycling studies provided limited normalization controls. Alternative normalization by maximal read count sacrifices magnitude information and equally weights weak and strong peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 accurately describe technical challenges in ChIP methodology and limitations of prior normalization approaches. The critique of original studies (C28) and alternative methods (C29-C30) is fair and supported by methodological understanding. This provides strong justification for the pfChIP-seq approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background knowledge: ER drives 75% of breast cancers and is a nuclear receptor that, upon estradiol binding, dimerizes, binds EREs, recruits cofactors, and promotes transcription. Nuclear receptors are model systems for transcription factor analysis and drivers of hormone-dependent cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C17 present established background knowledge about ER and nuclear receptors. These are well-established facts in the field and provide appropriate context for the study. The 75% figure (C1) is a commonly cited statistic for ER+ breast cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Results are corroborated by quantitative re-analysis of multiple independent studies, and the new model reconciles conflicting studies of ER at the TFF1 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by the systematic re-analysis presented in the manuscript (C91-C95, Figure 4B). The re-analysis showing inconsistency in prior studies supports the authors' sustained binding model and helps reconcile conflicting literature. However, \"reconciles\" may be somewhat strong given that the mechanism of prior inconsistencies is proposed rather than definitively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C132",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Data analysis methods: t-SNE plots generated with Rtsne, GREAT used for Class B analysis, ImageJ used to measure band intensities from published studies, and sequencing data deposited in GEO (GSE119057).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132, C136-C138 describe standard analysis methods with appropriate tool citations and data deposition. These are straightforward methodological details that support reproducibility.",
+    "result_type": "MINOR"
+  }
+]

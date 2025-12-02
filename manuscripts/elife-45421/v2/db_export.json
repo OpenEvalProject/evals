@@ -1,0 +1,1930 @@
+{
+  "submission": {
+    "id": "8a407dbc-ce9e-4494-a8b4-d5f9d1f81bbb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:42:32.512389Z",
+    "updated_at": "2025-12-02T10:42:32.512389Z"
+  },
+  "content": [
+    {
+      "id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "submission_id": "8a407dbc-ce9e-4494-a8b4-d5f9d1f81bbb",
+      "content_type": "manuscript",
+      "content_text": "# A FRET sensor of C-terminal movement reveals VRAC activation by plasma membrane DAG signaling rather than ionic strength\n\n## Authors\n\n- Benjamin K\u00f6nig<sup>1</sup>\n- Yuchen Hao<sup>2</sup>\n- Sophia Schwartz<sup>1</sup>\n- Andrew JR Plested<sup>2</sup> ([ORCID: 0000-0001-6062-0832](https://orcid.org/0000-0001-6062-0832))\n- Tobias Stauber<sup>1</sup> ([ORCID: 0000-0003-0727-6109](https://orcid.org/0000-0003-0727-6109)) \u2020\n\n### Affiliations\n\n1. Institute of Chemistry and Biochemistry Freie Universit\u00e4t Berlin Berlin Germany\n2. Institute of Biology Humboldt Universit\u00e4t zu Berlin Berlin Germany\n3. Leibniz Forschungsinstitut f\u00fcr Molekulare Pharmakologie (FMP) Berlin Germany\n4. NeuroCure Charit\u00e9 Universit\u00e4tsmedizin Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nVolume-regulated anion channels (VRACs) are central to cell volume regulation. Recently identified as hetero-hexamers formed by LRRC8 proteins, their activation mechanism remains elusive. Here, we measured F\u00f6rster resonance energy transfer (FRET) between fluorescent proteins fused to the C-termini of LRRC8 subunits. Inter-subunit FRET from LRRC8 complexes tracked VRAC activation. With patch-clamp fluorometry, we confirmed that the cytoplasmic domains rearrange during VRAC opening. With these FRET reporters, we determined VRAC activation, non-invasively, in live cells and their subcompartments. Reduced intracellular ionic strength did not directly activate VRACs, and VRACs were not activated on endomembranes. Instead, pharmacological manipulation of diacylglycerol (DAG), and protein kinase D (PKD) activity, activated or inhibited plasma membrane-localized VRACs. Finally, we resolved previous contradictory reports concerning VRAC activation, using FRET to detect robust activation by PMA that was absent during whole-cell patch clamp. Overall, non-invasive VRAC measurement by FRET is an essential tool for unraveling its activation mechanism.\n\n## Introduction\n\nVolume regulation is essential for virtually all cell types, not only to counteract osmotic swelling and shrinkage but also during various processes like proliferation, migration and apoptosis (Hoffmann et al., 2009). Volume-regulated anion channels (VRACs) are ubiquitously expressed and involved in regulatory volume decrease (RVD) of vertebrate cells (Chen et al., 2019; Jentsch, 2016; Stauber, 2015). These channels open slowly following osmotic cell swelling and mediate the extrusion of chloride and organic osmolytes, leading to the efflux of water and hence cell shrinkage.\n\nVRACs are composed of LRRC8 heteromers containing the essential subunit LRRC8A and at least one other LRRC8 protein, LRRC8B-E (Qiu et al., 2014; Voss et al., 2014). The subunit composition determines various biophysical properties and substrate permeability (Planells-Cases et al., 2015; Syeda et al., 2016; Voss et al., 2014). Although unlikely to be of physiological relevance, LRRC8A homomers can form anion channels, but with weak volume-sensitivity and very low conductance (Deneka et al., 2018; Syeda et al., 2016; Yamada and Strange, 2018). LRRC8 proteins form hexamers with the N-terminal halves of the six LRRC8 proteins constituting the transmembrane domain of the channel complex with a single pore. The C-terminal halves contain at least 16 leucine-rich repeats that form horseshoe-like structures reaching into the cytoplasm and their apparent flexibility has been hypothesized to be related to channel gating (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018; Kern et al., 2019).\n\nPrior to cloning, the biophysical properties of VRAC-mediated chloride currents (ICl,swell) and osmolyte conductance were studied extensively using mainly electrophysiological and pharmacological methods (K\u00f6nig and Stauber, 2019; Pedersen et al., 2016; Strange et al., 2019); but their activation mechanism remained enigmatic for decades, in the absence of an unequivocal molecular identity for the channel. Numerous studies proposed contributions from membrane tension, the actin cytoskeleton and signaling pathways involving reactive oxygen species, calcium, G-proteins and phosphorylation cascades (Akita and Okada, 2014; Chen et al., 2019; Pedersen et al., 2016). Notably, the reduction of intracellular ionic strength (\u0393i) was reported to be crucial for VRAC activation upon osmotic cell swelling (Voets et al., 1999) and reconstituted LRRC8 complexes in lipid bilayers could indeed be activated by low ionic strength (Syeda et al., 2016). However, VRACs can also be activated under iso-osmotic conditions that are unlikely to encompass any changes in \u0393i (Pedersen et al., 2016; Strange et al., 2019).\n\nHere, we use intra-complex F\u00f6rster resonance energy transfer (FRET) to monitor VRAC activity in a spatio-temporal manner. This method demonstrates movement of the LRRC8 C-termini and provides insights into the activation mechanism of VRACs.\n\n## Results\n\n### Inter-subunit FRET shows C-terminal movement during VRAC activation\n\nFollowing the hypothesis of a conformational rearrangement of the LRRC8 C-terminal domains during VRAC activation, we aimed to monitor VRAC activity by inter-subunit FRET (Figure 1A). We first used acceptor photo-bleaching to test for FRET between cyan- and yellow-fluorescent proteins (CFP/YFP) fused to the C-termini of VRAC subunits. In HeLa cells co-expressing CFP- and YFP tagged LRRC8A (A-CFP/A-YFP), bleaching of YFP (the FRET acceptor) robustly increased the intensity of CFP (the FRET donor), compared to unbleached cells in the same field of view (Figure 1B,C). The same was observed when LRRC8A was combined with the VRAC subunit LRRC8E (A-CFP/E-YFP or A-YFP/E-CFP), but not when combined with plasma membrane-localized CD4-YFP, used as control for FRET by membrane crowding (Figure 1C). Therefore, irrespective of VRAC subunit composition, the C-termini are within FRET distance for the fluorescent protein adjuncts (~5 nm).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic view of two VRAC subunits of a hexamer fused with the FRET pair CFP and YFP at their C-termini. Hypothetical movement of the intracellular C-terminal domain leads to FRET changes. (B) Wide-field images of HeLa cells expressing A-CFP/A-YFP before and after bleaching YFP. White circles indicate the size of the closed field diaphragm to bleach this part of the FOV. Scale bar, 20 \u00b5m. (C) Quantification of acceptor photo-bleach experiments. For each experiment, CFP intensity was measured before and after bleaching for individual cells within (bleached, black diamonds) and outside (control, red diamonds) of the bleached part of the FOV. ER: overexpressed proteins were trapped in the endoplasmic reticulum by 5 \u00b5g/ml BFA during expression. Data represent percentage of CFP intensity change for individual cells (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. (D) Representation of an seFRET experiment with an A-CFP/E-YFP-expressing cell. Left: images of the acquired channels (donor CFP, acceptor YFP, FRET) with the calculated cFRET map for two time points in isotonic and hypotonic buffer below. Scale bar, 10 \u00b5m. Images were acquired in 10 s intervals with 8 \u00d7 8 binning. Right: normalized cFRET values during buffer exchange experiment. (E) Measurements of cFRET, normalized to the value in isotonic buffer, when switching to hypotonic buffer for cells expressing A-CFP/E-YFP (n\u00a0=\u00a09 dishes with 47 HeLa cells; n\u00a0=\u00a08 with 29 HEK293 cells), A-CFP/A-YFP (n\u00a0=\u00a08, 24 HeLa cells), glutamate receptor GluA2-6Y-10C (n\u00a0=\u00a04, 13 HEK293 cells) and CFP-18aa-YFP (n\u00a0=\u00a04, 11 HeLa cells). Data represent individual cells (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. (F) Simultaneous measurements of whole-cell current at \u221280 mV (open circles) and normalized cFRET values (solid circles) during buffer exchange experiment with A-CFP/E-YFP-expressing HEK293 KO cells. Data represent mean of 4 cells\u00a0\u00b1\u00a0s.d. Above, representative current traces from voltage-step protocols at the indicated time points (a, b, c). (G) Left: normalized cFRET in a time-course for a single cell with application of decreasing osmolarities (as indicated above in mOsm). Right: summary of experiments with different osmolarity steps to cover the titration curve from 50 to 400 mOsm. In total, 68 cells were measured for the titration curve, n\u00a0=\u00a07\u201321 depending on osmolarity. Data represent mean\u00a0\u00b1\u00a0s.e.m. Statistics: *p<0.05; ***p<0.0005; n.s., not significant, Student\u2019s t-test, comparing bleached and control (C) or hypotonic with isotonic (E).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Summary of cFRET of HeLa cells expressing A-CFP/E-YFP challenged with hypertonicity (400 mOsm). Data represent mean of 17 cells\u00a0\u00b1\u00a0s.d. (B) Relationship between the relative cFRET change (isotonic to hypotonic buffer) and the expression ratio of A-CFP/E-YFP represented by the ratio of their measured fluorescence intensities [a.u.] for 84 cells HeLa cells.\n\nNext, we explored whether FRET changes during VRAC activation. We used sensitized-emission FRET and monitored the corrected FRET (cFRET, see Materials\u00a0and\u00a0methods) values in HeLa cells expressing A-CFP/E-YFP (Figure 1D). Switching from isotonic (340 mOsm) to hypotonic (250 mOsm) buffer led to a robust decrease in cFRET by 5\u201310% within 90 s in both HeLa and HEK293 cells (Figure 1E). In contrast, the intra-molecular cFRET of a cytosolic tandem FRET pair construct, CFP-18aa-YFP (Elder et al., 2009), and of a plasma membrane-localized ionotropic glutamate receptor (Zachariassen et al., 2016) were unaffected by hypotonic buffer (Figure 1E, Figure 1\u2014figure supplement 1). These observations rule out FRET artifacts from changes of osmolarity or ion concentrations. To better understand the cFRET changes with the activation of VRAC, we expressed fluorescently-labelled A-CFP/E-YFP (in this case Cerulean/Venus, see Materials and methods) in HEK293 cells deficient for all five LRRC8 genes (HEK293 KO) (Lutter et al., 2017) and monitored cFRET and whole-cell currents simultaneously using patch-clamp fluorometry (Zheng and Zagotta, 2003). The kinetics of the cFRET drop and its reversibility correlated with the activation and inactivation of hypotonicity-induced VRAC-mediated anion currents (Figure 1F), demonstrating that the cFRET decrease indeed reflects VRAC opening. The current was in addition to any potential residual activity at isotonicity due to the fluorescent tags (Gait\u00e1n-Pe\u00f1as et al., 2016). A progressive decrease in cFRET accompanied additional hypotonicity but, again mirroring VRAC, cFRET did not increase with hypertonic treatment (Figure 1G, Figure 1\u2014figure supplement 2A). We frequently observed varying extents of intracellular retention of LRRC8A or LRRC8E. We did not see a correlation between intensity of CFP or YFP and absolute cFRET values (not shown), neither did relative changes in cFRET depend on the A-CFP/E-YFP expression ratio (Figure 1\u2014figure supplement 2B). Remarkably, cFRET also decreased for A-CFP/A-YFP constructs (Figure 1E, Figure 1\u2014figure supplement 1), providing evidence for activation of homomeric LRRC8A complexes in a cellular context.\n\nOverall, these cFRET measurements show that the C-termini of LRRC8 proteins in VRAC complexes rearrange during activation and that this can be exploited to monitor their activity in living cells via FRET microscopy.\n\n### Reduced ionic strength does not activate VRAC on endomembranes\n\nReduced ionic strength is sufficient to activate reconstituted VRACs in lipid bilayer droplets (Syeda et al., 2016). To measure intracellular ionic strength, we used a FRET-based sensor that reports the electrostatic attraction between arginine and aspartate residues in opposed \u03b1-helices (\u2018RD\u2019 sensor) (Liu et al., 2017). As expected, this sensor indicated a reversible decrease in \u0393i in HeLa cells during hypotonic treatment (Figure 2A). Notably, the decrease was homogeneous over the entire cell volume (Figure 2B, Figure 2\u2014video 1). If a decline in \u0393i were sufficient to activate VRAC, then we hypothesized that it should already do so in the secretory pathway. To test for this, we trapped FRET-endowed VRACs in the endoplasmic reticulum (ER) by treatment with brefeldin-A (BFA) during expression (Figure 2C). FRET and hence complex formation in the ER of A-CFP/E-YFP (but not A-CFP/CD4-YFP) was confirmed by acceptor bleaching (Figure 1C). However, ER-trapped VRACs surprisingly did not respond to hypotonic treatment (Figure 2D). This was likely not due to incomplete glycosylation since mutation of the LRRC8A N-glycosylation sites (Voss et al., 2014) did not impinge on the activation-dependent cFRET drop at the plasma membrane (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig2-v2.jpg)\n\n**Figure 2.:** (A) Changes of ionic strength measured in HeLa cells expressing the ratiometric RD sensor during hypotonic treatment. FRET intensity was divided by Cerulean intensity and normalized to basal values, with increasing values corresponding to decreasing ionic strength. Data represent mean of 10 cells\u00a0\u00b1\u00a0s.d. (B) Ratio maps of two representative cells in isotonic (green star in panel A) and hypotonic (magenta star in panel A) buffer. Right: intensity profile along the white line shown in the ratio maps. (C) Epifluorescence images of A-GFP and E-RFP in live cells without (top row) and with (bottom row) 5 \u00b5g/ml brefeldin-A (BFA) treatment. Images of BFA-treated cells were background-subtracted by rolling-ball algorithm (radius\u00a0=\u00a050 pixels) and contrast increased by an unsharp mask (sigma\u00a0=\u00a03, weight\u00a0=\u00a00.7). Scale bar, 20 \u00b5m. (D) Normalized cFRET of A-CFP/E-YFP trapped in the ER by presence of BFA during expression (ER; n\u00a0=\u00a016 dishes with 23 cells) and AN66A,N83A-CFP/E-YFP without BFA (noGlyc PM; n\u00a0=\u00a07, 21 cells). Data represent individual cells (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. Statistics: ***p<0.0005; n.s., not significant, Student\u2019s t-test, comparing hypotonic with isotonic.\n\nIntrigued by this finding, we set out to follow VRACs along the secretory pathway. To this end, we exploited a reverse aggregation system and fused two self-dimerizing mutated FK506-binding protein (FM) domains (Rollins et al., 2000) to the C-terminus of A-CFP. Inter-molecular dimerization of FM domains should lead to aggregation of VRACs in the ER, and upon addition of D/D solubilizer they should disaggregate and travel in bulk along the secretory route to the plasma membrane (Figure 3A). Indeed, initially aggregated A-CFP-FM2 expressed alone (Figure 3B, Figure 3\u2014video 1) or with E-YFP (not shown) spread homogenously over the ER within 10 min in presence of D/D solubilizer, peaked in the Golgi apparatus at 80 min and displayed clear plasma membrane localization after 165 min. Concurrent sensitized FRET measurements showed that neither ER-localized (at 10 min) nor Golgi-localized (80 min) A-CFP-FM2/E-YFP VRAC responded to application of hypotonic buffer. On the other hand, as expected, cFRET was reduced for A-CFP-FM2/E-YFP that had reached the plasma membrane after 165 min (Figure 3C). Thus, despite hypotonic treatment reducing \u0393i homogenously over the whole cell, VRACs are only activated when they reach the plasma membrane.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig3-v2.jpg)\n\n**Figure 3.:** (A) Scheme depicting the different subcellular localizations of VRACs using the reverse aggregation system. Upon addition of the D/D solubilizer, VRACs carrying FM dimerization domains disaggregate in the ER and travel through the Golgi complex to the plasma membrane. Indicated time points were deduced from experiments shown in (B) and (Figure 3\u2014video 1). (B) Still images of HeLa cells expressing LRRC8A-CFP-FM2 and GalNAcT2-RFP as Golgi marker from Figure 3\u2014video 1 at time points indicated in (A). Scale bar, 20 \u00b5m. (C) cFRET measured in HeLa cells expressing A-CFP-FM2/E-YFP. VRACs localizing to the ER (n\u00a0=\u00a04, 10 cells), Golgi (n\u00a0=\u00a05, 26 cells) and plasma membrane (PM; n\u00a0=\u00a05, 11 cells) were measured at 10, 80 and 165 min after addition of D/D solubilizer. Data in time traces represent mean\u00a0\u00b1\u00a0s.d. Right: average normalized cFRET in of the first seven time points in isotonic and last three time points in hypotonic buffer. Data represent individual cells (ER, PM) or FOVs (Golgi) and mean\u00a0\u00b1\u00a0s.e.m. Statistics: ***p<0.0005; n.s., not significant, Student\u2019s t-test, comparing hypotonic with isotonic.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Representative fluorescence images of HeLa cells co-expressing LRRC8A-CFP-FM2 (left, cyan in merge) and organelle markers (middle) ER-YFP (top, yellow in merge), GalNAcT2-RFP (middle, red in merge) and CD4-YFP (bottom, yellow in merge) at indicated time points after addition of D/D solubilizer.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative fluorescence images of control HeLa cells treated with 2 \u00b5M latrunculin B (LatB) or not (untreated) that were fixed and stained with Alexa Fluor 546-phalloidin. Image of untreated cells was deconvolved using the blind-algorithm package of LAS X. (B) Comparison of cFRET in isotonic and hypotonic buffer of HeLa cells expressing A-CFP/E-YFP and treated with latrunculin B (LatB; n\u00a0=\u00a08 dishes with 26 cells) as in (A) or methyl-\u03b2-cyclodextrin (MbCD; n\u00a0=\u00a010 dishes with 46 cells) as in (C) with untreated cells (data from Figure 1E). Data represent individual cells (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. (C) Left: Representative fluorescence images of control HeLa cells treated with 5 mM methyl-\u03b2-cyclodextrin (MbCD) or not (untreated) that were fixed and stained with filipin. Right: filipin fluorescence intensity of untreated and MbCD-treated HeLa cells. n\u00a0=\u00a05 with over 300 cells per condition, data represent individual FOVs (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. Scale bars, 20 \u00b5m. Statistics: *p<0.05; **p<0.005; n.s., not significant, Student\u2019s t-test.\n\n### Robust VRAC activation by PMA is blocked by whole-cell patch clamp\n\nNext, we asked which plasma membrane-specific factors might be required for VRAC activation. First, we tested the influence of the actin cytoskeleton and cholesterol content, both of which have previously been implicated in cell volume regulation (Byfield et al., 2006; Klausen et al., 2006). In agreement with earlier reports on ICl,swell in lymphocytes (Levitan et al., 1995), depolymerization of the actin cytoskeleton by latrunculin B did not alter VRAC activation by\u00a0~25% hypotonicity (Figure 3\u2014figure supplement 2A,B). In contrast, cholesterol depletion by methyl-\u03b2-cyclodextrin potentiated VRAC activation, as judged by the reduction in cFRET (Figure 3\u2014figure supplement 2B,C), as was previously shown for VRAC-mediated ICl,swell in bovine aortic endothelial cells (Levitan et al., 2000). However, absence of cholesterol is unlikely to underlie plasma membrane localization as a prerequisite for VRAC activation, since the ER membrane usually has lower cholesterol concentrations than the plasma membrane.\n\nPhospholipase C (PLC) activity was reported as a determinant of ICl,swell activation, but contradictory results abound for the involvement of protein kinase C (PKC), activated by the PLC product diacylglycol (DAG) is required (Hermoso et al., 2004; Roman et al., 1998; Zholos et al., 2005). PKC contains a C1 domain and can hence be activated by phorbol-12-myristate-13-acetate (PMA). In isotonic conditions, PMA evoked a robust decrease in cFRET in HeLa and HEK293 cells expressing A-CFP/A-YFP or A-CFP/E-YFP (Figure 4A), but not CFP-18aa-YFP (Figure 4\u2014figure supplement 1A). This reflects gating of the LRRC8 complex, because subsequent inactivation of VRAC by treatment with hyper-osmotic solution restored basal FRET levels (Figure 4\u2014figure supplement 1B). Like hypotonicity-driven VRAC activation, activation by PMA required cell surface localization, as VRACs released from aggregation were immune to PMA in the ER and Golgi, but they were activated at the plasma membrane (Figure 4\u2014figure supplement 1C). Surprisingly, recording HEK293 KO cells expressing A-CFP/E-YFP in whole-cell voltage-clamp configuration, we could no longer detect any FRET reduction, nor did PMA activate VRAC currents (Figure 4B). To test whether this discrepancy was due to the absence of endogenous LRRC8 proteins, or to the dialysis of the cell contents during whole-cell patch, we first incubated HEK293 KO cells expressing A-CFP/E-YFP\u00a0(Figure 4C, left panel) and wild-type (WT) HEK293\u00a0(Figure 4C, right panel) with PMA for at least five minutes before membrane breakthrough. We then established the whole-cell configuration for immediate current measurements. Indeed, with this experimental design we observed a reliable increase in classical VRAC\u00a0currents in HEK293 KO cells expressing A-CFP/E-YFP incubated with PMA. The increase was robust compared to cells in isotonic buffer alone, or untransfected HEK293 KO cells incubated with PMA (Figure 4C). This result demonstrates that the whole-cell voltage-clamp configuration affects signaling pathways involved in activation of VRAC in a time-dependent manner, an experimental caveat that can be overcome with our non-invasive FRET sensor.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig4-v2.jpg)\n\n**Figure 4.:** (A) Addition PMA (1 \u00b5M, indicated by arrows) activated VRACs composed of A-CFP/A-YFP (left; 11 cells), A-CFP/E-YFP (middle; 12 cells) in HeLa cells or A-CFP/A-YFP in HEK293 cells (right; 12 cells). Data represent mean\u00a0\u00b1\u00a0s.d. (B) Simultaneous measurements of whole-cell current at \u221280 mV (open circles) and normalized cFRET values (solid circles) in A-CFP/E-YFP-expressing HEK293 KO cells with addition of 1 \u00b5M PMA (indicated by arrow). Data represent mean of 3 cells\u00a0\u00b1\u00a0s.d. Above, representative current traces from voltage-step protocols at the depicted time points (a, b, c). (C) Whole-cell currents at \u221280 mV of A-CFP/E-YFP-expressing (and untransfected as control, n\u00a0=\u00a08 cells) HEK293 KO cells (left) and current densities of wild-type HEK293 cells (right) with whole-cell configuration established after pre-incubation with indicated buffers: isotonic buffer without (n\u00a0=\u00a09) or with 1 \u00b5M PMA (n\u00a0=\u00a08) (left), isotonic (n\u00a0=\u00a07) and hypotonic (n\u00a0=\u00a07) buffers without and isotonic buffer with 1 \u00b5M PMA (n\u00a0=\u00a08) (right). Data represent individual cells (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. Above, representative current traces from voltage-step protocols for each condition.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Addition of PMA (1 \u00b5M, indicated by arrow) did not affect cFRET of CFP-18aa-YFP in HeLa cells (n\u00a0=\u00a021 HeLa cells). Data represent mean\u00a0\u00b1\u00a0s.d. (B) Inactivation of PMA-activated VRAC by hypertonic treatment. Time traces of A-CFP/E-YFP-expressing HeLa cells (9 cells) with addition of the PKC activator PMA (1 \u00b5M) followed by a switch to hypertonic buffer (500 mOsm) supplemented with 1 \u00b5M PMA, as indicated. Data represent mean\u00a0\u00b1\u00a0s.d. (C) A-CFP-FM2/E-YFP-containing VRACs were chased through the secretory pathway in HeLa cells by the reverse aggregation system. At 10 min (ER; n\u00a0=\u00a04 dishes with 5 cells), 80 min (Golgi; n\u00a0=\u00a05, 12 cells) or 165 min (PM; n\u00a0=\u00a05, 6 cells) after addition of D/D solubilizer, when VRACs have reached the respective compartments, cFRET was measured before (untreated) and after (PMA) addition of 1 \u00b5M PMA. Data represent individual cells (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. Statistics: *p<0.05; n.s., not significant, Student\u2019s t-test, comparing before and after PMA application.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Left: time traces of A-CFP/E-YFP-expressing HeLa cells with a switch from isotonic to hypotonic buffer followed by consecutive switches to isotonic and hypotonic buffers containing 1 \u00b5M G\u00f66983 (7 cells). Data represent mean\u00a0\u00b1\u00a0s.d. Right: average cFRET of the last five time points per condition (except for Iso, where all 15 time points were averaged). Data represent individual cells and mean\u00a0\u00b1\u00a0s.e.m. (B) Simultaneous measurements of whole-cell currents (left) and normalized cFRET values (middle) during a buffer exchange experiment with A-CFP/E-YFP-expressing HEK293 KO cells. Isotonic and hypotonic buffers without and with 1 \u00b5M G\u00f66983, as indicated above. Right: normalized cFRET values of an unclamped HEK293 KO cell expressing A-CFP/E-YFP in the same FOV. Data represent mean of 3 cells\u00a0\u00b1\u00a0s.d.\n\n### Protein kinase D activity, rather than ionic strength, determines VRAC activation\n\nUsing the PKC inhibitor G\u00f66983 not only prevented the cFRET reduction upon hypotonicity, it also gradually increased cFRET over the course of the experiment (Figure 4\u2014figure supplement 2A). However, in the whole-cell patch-clamp configuration, the hypotonicity-induced current even persisted in isotonic buffer when supplemented with G\u00f66983 (Figure 4\u2014figure supplement 2B, left panel). The cFRET of the same cells, on the other hand increased to high values\u00a0(Figure 4\u2014figure supplement 2B, middle\u00a0panel). Again, we observed different results for the cell being recorded in whole-cell mode and neighboring non-dialyzed cells in the same field of view (FOV). For neighboring cells, cFRET changes matched those seen for HeLa cells expressing A-CFP/E-YFP (Figure 4\u2014figure supplement 2A,B, right panel). Together, these data do not support a role for PKC in VRAC activation.\n\nHowever, because DAG and PMA also recruit C1 domain-containing protein kinase D (PKD) to the plasma membrane (Rozengurt, 2011), we next assessed a possible involvement of PKD. The presence of the PKD inhibitor CRT 0066101 during hypotonic treatment abolished cFRET changes and strongly reduced VRAC currents in HEK293 KO cells expressing A-CFP/E-YFP (Figure 5A). To exclude the potential confounder of cell dialysis during voltage clamp, we also measured steady-state currents in cells that were incubated in hypotonic buffer before membrane breakthrough, with and without CRT 0066101 or G\u00f66983. Similar to incubation during the whole-cell patch-clamp experiment, the presence of CRT 0066101 readily diminished currents following breakthrough after pre-incubation in hypotonic buffer, whereas G\u00f66983 did not (Figure 5B). This suggests an essential role of DAG-activated PKD in hypotonicity-induced VRAC activation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig5-v2.jpg)\n\n**Figure 5.:** (A) Left: simultaneous measurements of whole-cell current at \u221280 mV (open circles) and normalized cFRET values (solid circles) during buffer exchange experiment with A-CFP/E-YFP-expressing HEK293 KO cells, after 15 min pre-incubation with 5 \u00b5M CRT 0066101 in the presence of CRT 0066101. Data represent mean of 5 cells\u00a0\u00b1\u00a0s.d. Right: average currents of the last five time points in hypotonicity with (data from left panel) and without (data from Figure 1F) CRT 0066101; data represent individual cells (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. (B) Whole-cell currents of HEK293 KO cells expressing A-CFP/E-YFP clamped at \u221280 mV after pre-incubation with indicated buffers: isotonic buffer (n\u00a0=\u00a09), hypotonic buffer (n\u00a0=\u00a07), hypotonic buffer with 5 \u00b5M CRT 0066101 (n\u00a0=\u00a04) or 1 \u00b5M G\u00f66983 (n\u00a0=\u00a05). Data represent individual cells (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. (C) Recovery of whole-cell currents in HEK293 cells expressing A-CFP/E-YFP (left) and wild-type HEK293 (right) at \u221280 mV to basal levels after switching from extracellular hypotonicity to isotonicity in the absence or presence of the DAG kinase inhibitor dioctanoylglycol (100 \u00b5M DOG). In HEK293 KO, n\u00a0=\u00a03 for untreated (from measurements in Figure 1F) and n\u00a0=\u00a03 for DOG-treated; in wild-type HEK293, n\u00a0=\u00a03 for untreated and n\u00a0=\u00a04 for DOG-treated. Data represent individual cells (diamonds) and mean\u00a0\u00b1\u00a0s.e.m. (D) cFRET was measured for HeLa cells expressing either VRACs containing A-CFP/E-YFP (left, n\u00a0=\u00a07 dishes with 9 cells) or the RD sensor for ionic strength (right, n\u00a0=\u00a06, 23 cells) consecutively in isotonic buffer, hypotonic buffer supplemented with 100 \u00b5M DOG and isotonic buffer with DOG. Average cFRET of the last five time points per condition. Data represent individual cells and mean\u00a0\u00b1\u00a0s.e.m. Statistics: *p<0.05; ***p<0.0005; n.s., not significant, Student\u2019s t-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45421/elife-45421-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Whole-cell currents at \u221280 mV of a HEK293 KO cell expressing A-CFP/E-YFP (left, open circles) and of a HEK293 cell with endogenous VRAC (right) monitored during a buffer exchange experiment, switching from isotonic buffer to hypotonic buffer with 100 \u00b5M DOG and then to isotonic buffer with DOG. Cells are representative for the experiments yielding the values in Figure 5C. Left: normalized cFRET values (solid circles) measured simultaneously with whole-cell currents are additionally shown. Dashed lines indicate basal current and cFRET levels. (B) Normalized cFRET values for a HeLa cell expressing A-CFP/E-YFP during a buffer exchange experiment; representative for the experiments yielding the values in Figure 5D.\n\nDAG is converted to phosphatidic acid by DAG kinases (DGKs), and so inhibition of DGKs by dioctanoylglycol (DOG) should lead to accumulation of DAG. According to our hypothesis concerning PKD signaling, following VRAC activation by hypotonicity, DOG should support persistent activity of VRAC even after returning to isotonic conditions. Indeed, in the presence of DOG, we observed a persistent VRAC current after switching from extracellular hypotonicity to normal, isotonic buffer for A-CFP/E-YFP expressed in HEK293 KO cells\u00a0(Figure 5C, left panel, Figure 5\u2014figure supplement 1A, left panel), as well as for endogenous VRAC in WT HEK293 cells (Figure 5C, right panel, Figure 5\u2014figure supplement 1A, right panel). For the A-CFP/E-YFP VRAC expressed in either HEK293 KO cells in whole-cell patch clamp (Figure 5\u2014figure supplement 1A, left panel) and non-dialyzed HeLa cells (Figure 5D, left panel, Figure 5\u2014figure supplement 1B) the DGK inhibitor DOG impaired the recovery of cFRET to basal values when cells were returned to isotonicity after hypotonic treatment. While cFRET in HeLa cells without DOG recovered by\u00a0>80% (recovery of normalized cFRET from 95.2 \u00b1 2.5% in hypotonic buffer to 99.4 \u00b1 4.0% in isotonic buffer for 47 cells), cFRET in DOG-treated HeLa cells recovered by less than 40% (from 89.6\u00a0\u00b1\u00a08.0% to 93.6 \u00b1 5.9%, for 9 cells). In striking contrast, \u0393i fully recovered to the normal levels irrespective of the presence of DOG (Figure 2A, Figure 5D, right panel). These results demonstrate that opening of VRACs is not directly coupled to \u0393i, but rather to the DAG pathway, likely through activation of PKD in HeLa and HEK293 cells.\n\n## Discussion\n\nHere we present an intra-complex FRET sensor to monitor VRAC activity in live cells with subcellular resolution. The relationship of the observed FRET changes to VRAC gating are clear from numerous common features (Akita and Okada, 2014; K\u00f6nig and Stauber, 2019; Pedersen et al., 2016; Strange et al., 2019): (i) the reversible decrease in FRET matches reversible VRAC activation upon treatment with hypo-osmotic solutions, and with the same kinetics as simultaneously-measured whole-cell VRAC currents, (ii) the intensity of the FRET decrease correlates with the applied extracellular hypotonicity; (iii) the modulation of VRAC currents, for\u00a0example by cholesterol depletion, is mirrored by the observed FRET alteration; (iv) after activation with PMA, FRET rises in hypertonicity as VRAC is inactivated by cell shrinkage. FRET sensors unrelated to VRAC are not affected by hypo-osmotic solutions, demonstrating that the observed changes with our FRET sensor are indeed specific for VRAC activation. Moreover, our optical method to monitor VRAC activity has some clear advantages over electrophysiological approaches, including its application to study subcellular profiles of VRAC activity, and its non-invasive nature. The activation of low-conducting VRACs composed of only LRRC8A (Deneka et al., 2018; Kefauver et al., 2018; Syeda et al., 2016; Yamada and Strange, 2018) could also be detected by FRET. Importantly, the non-invasive, genetically-encoded FRET sensor enables the study of VRAC in connection with signaling pathways that are altered (presumably by dialysis of critical signaling molecules) by the whole-cell patch-clamp configuration. This way we could observe VRAC activation by PMA, which was otherwise blocked by whole-cell patch clamp of cells.\n\nCryo-EM structures of VRAC complexes suggest a certain flexibility of their C-terminal leucine-rich domains (LRRDs) on the intracellular side. Related conformational rearrangements might be related to channel gating (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018; Kern et al., 2019). In support of this idea, we observe a decrease in FRET between fluorophores at the C-termini of LRRC8 proteins upon VRAC activation, which may reflect a displacement of LRRDs or possibly a simple change in the average orientation of the fluorophores to each other. Thus, as has previously been shown for cyclic nucleotide-gated (CNG) channels (Zheng and Zagotta, 2000), slow gating of CLC chloride channels (Bykova et al., 2006), BK potassium channels (Miranda et al., 2013) and ionotropic glutamate receptors (Zachariassen et al., 2016), changes in FRET demonstrate movement of the cytosolic domains during VRAC activation.\n\nVRACs were previously shown to be directly activated by low ionic strength in lipid bilayer reconstitution (Syeda et al., 2016). However, we find that reduced \u0393i is neither sufficient to activate VRAC on intracellular compartments, nor is it indispensable to keep plasma membrane-localized VRACs active. When cells were treated with the DAG kinase inhibitor DOG, VRAC remained active in isotonic buffer after activation by hypotonicity, even though \u0393i recovered to normal levels. The notion that ionic strength directly activates VRACs (Sabirov et al., 2000; Voets et al., 1999) has been controversial (K\u00f6nig and Stauber, 2019; Strange et al., 2019). Several studies reported VRAC activation when isotonic fluid was injected into, or inactivation when fluid was withdrawn from the cells without altering the intracellular ionic strength (Best and Brown, 2009; Cannon et al., 1998; Poletto Chaves and Varanda, 2008; Zhang and Lieberman, 1996). Moreover, the extents of low ionic strength required for VRAC activation (Cannon et al., 1998; Deneka et al., 2018; Nilius et al., 1998; Syeda et al., 2016) are unlikely to occur in physiological conditions or during whole-cell current measurements routinely used to study hypotonicity-induced VRAC currents (Strange et al., 2019). Instead, a putative role for ionic strength in controlling the volume set point for VRAC activation (Best and Brown, 2009; Cannon et al., 1998; Jackson et al., 1996) would be consistent with our findings.\n\nRather than ionic strength, we observe a specific and potent action of the DAG-PKD pathway in VRAC activation. Application of PMA led to VRAC opening even under isotonic conditions and VRACs did not inactivate completely in isotonic buffer after activation by hypotonicity when the consumption of DAG by DAG kinase was inhibited. A role for DAG, which is generated by the activity of phospholipases C (PLCs), in the signaling for VRAC activation has been reported previously, for\u00a0example (Roman et al., 1998; Rudkouskaya et al., 2008; Zholos et al., 2005). However, there are multiple contradictory reports on the involvement of DAG-activated PKCs. In some studies, PKCs were shown to be required for regulatory volume decrease (Hermoso et al., 2004), activation of swelling-induced VRAC currents (Roman et al., 1998) and ATP-induced VRAC-mediated glutamate release (Hyzinski-Garc\u00eda et al., 2014; Rudkouskaya et al., 2008). These results are somewhat compromised by variations in the efficacy of pharmacological PKC inhibitors (Haskew-Layton et al., 2005; Mongin and Kimelberg, 2005). Other studies found no role for PKC despite a VRAC-activating effect of DAG (Zholos et al., 2005), or even reduction or prevention of hypotonicity-induced VRAC-mediated currents by pharmacological PKC inhibition (Ben Soussia et al., 2012; Shlyonsky et al., 2011; von Weikersthal et al., 1999). While our data speak against a core role for PKC in VRAC activation, they do not rule out a regulatory role for this kinase family. Instead, our experiments reveal that protein kinase D (PKD) activity is critically involved in hypotonicity-induced activation of VRAC. LRRC8 proteins possess several putative and some confirmed phosphorylation sites for various kinases in their intracellular loops and C-terminal domains (Abascal and Zardoya, 2012; Mongin, 2016). As opposed to direct phosphorylation of LRRC8 subunits, PKD may act on another, as yet unknown, third party in the process of VRAC activation.\n\nThe central role for DAG and PKD, however, does not explain the observed plasma membrane requirement for VRAC activation by hypotonicity as PKD is also recruited to endomembranes of the secretory pathway by DAG (Baron and Malhotra, 2002; Fu and Rubin, 2011). Plasma membrane-intrinsic properties such as membrane stiffness, the lipid composition, including the amount of cholesterol and different phosphatidylinositol phosphates (PIPs), or the transmembrane potential may play a role. Besides, further limiting factors are likely to be involved, potentially explaining why the overexpression of functional LRRC8 heteromers does not increase ICl,swell above wild-type levels (Voss et al., 2014) and similar VRAC subunit expression levels displayed different activities in different cell types (Okada et al., 2017). Such limiting factors at the plasma membrane could include substrates of PKD. Although we also observed PMA-mediated activation of LRRC8A homomers, regulatory proteins could require particular VRAC subunit combinations to contribute to VRAC activation. Alternatively, cell type-specific factors may exist, explaining inconsistent findings on the signal transduction pathways impinging on VRAC activation. This could explain divergent results related to PKC in different cell lines (Ben Soussia et al., 2012; Hermoso et al., 2004; Roman et al., 1998; von Weikersthal et al., 1999; Zholos et al., 2005).\n\nIn summary, activation-dependent inter-subunit FRET in VRACs demonstrated movement of their C-termini and enabled subcellular monitoring of VRAC activity. Importantly, this noninvasive FRET sensor supersedes some aspects of electrophysiological measurements because it leaves intracellular signaling pathways untouched. Measurement of FRET can also be used for non-invasive structure-activity studies. The genetic encoding of this sensor also makes it highly amenable to studying VRAC activation during various cell physiological processes in situ.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HeLa</td>\n      <td>RRID: CVCL_0030</td>\n      <td>ACC no. 57</td>\n      <td>Obtained from Leibniz Forschungsinstitut DSMZ (Deutsche Sammlung von Mikroorganismen undZellkulturen GmbH, Germany)</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293</td>\n      <td>RRID: CVCL_0045</td>\n      <td>ACC no. 305</td>\n      <td>Obtained from LeibnizForschungsinstitut DSMZ (Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH, Germany)</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293 KO (LRRC8-/-)</td>\n      <td>Lutter et al., 2017 (PMID:28193731)</td>\n      <td></td>\n      <td>Gift from T.J. Jentsch (MDC and FMP, Berlin, Germany)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>A-GFP (LRRC8A-GFP)</td>\n      <td>Voss et al., 2014 (PMID: 24790029)</td>\n      <td></td>\n      <td>Gift from T.J. Jentsch (MDC and FMP, Berlin, Germany)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>A-CFP (LRRC8A-CFP)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LRRC8A-codingsequence subcloned from A-GFP (Voss et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>A-CFP-FM2(LRRC8A-CFP-FM2)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>2 FM domains (Rollins et al., 2000) cloned in LRRC8A-CFP with insertion sites generated by Q5-mutagenesis</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>AN66A,N83A-CFP (LRRC8AN66A,N83A-CFP)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LRRC8A-coding sequence subcloned from AN66A,N83A-GFP (Voss et al., 2014; gift from T.J. Jentsch, MDC and FMP, Berlin, Germany)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>A-CFP (LRRC8A-Cerulean)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LRRC8A-coding sequence subcloned from A-GFP (Voss et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>A-YFP (LRRC8A-YFP)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LRRC8A-coding sequence subcloned from A-GFP (Voss et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>E-CFP (LRRC8E-CFP)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LRRC8E-coding sequence subcloned from LRRC8E-GFP(Voss et al., 2014; gift from T.J. Jentsch, MDC and FMP, Berlin, Germany)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>E-YFP (LRRC8E-YFP)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LRRC8E-coding sequence subcloned from LRRC8E-GFP (Voss et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>E-YFP (LRRC8E-Venus)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LRRC8E-coding sequence subcloned from LRRC8E-GFP (Voss et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>E-RFP (LRRC8E-RFP)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LRRC8E-coding sequence subcloned from LRRC8E-GFP (Voss et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>CFP-18AA-YFP</td>\n      <td>Elder et al., 2009 (PMCID: PMC2706461)</td>\n      <td></td>\n      <td>Gift from C.F. Kaminski (University of Cambridge, UK)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>GluA2-6Y-10C</td>\n      <td>Zachariassen et al., 2016 (PMID:27313205)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>RD sensor (ionic strength sensor)</td>\n      <td>Liu et al., 2017 (PMID: 28853549)</td>\n      <td></td>\n      <td>Gift from B. Poolman and A.J. Boersma (University of Groningen, The Netherlands)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>ER-YFP (pEYFP-ER)</td>\n      <td>Clontech, TaKaRa</td>\n      <td>Catalog no. 6906\u20131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>GalNAc-T2-RFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Coding sequence of stalk region of GalNAc-T2 subcloned from GalNAc-T2-GFP (Le Bot et al., 1998; gift from I. Vernos, CRG, Barcelona, Spain)</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>CD4-YFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>hCD4-coding sequence subcloned from CD4-GFP(Leisle et al., 2011; PMID: 21527911)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Brefeldin-A; BFA</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog no. B5936</td>\n      <td>Ready-made solution of 10 mg/ml in DMSO-based solution, used at final concentration of 5 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D/D solubilizer</td>\n      <td>Clontech, TaKaRa</td>\n      <td>Catalog no. 635054</td>\n      <td>Obtained as solution, used at final concentration of 0.5 \u00b5M in growth medium</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Latrunculin B; LatB</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog no. 428020</td>\n      <td>Stock prepared in DMSO, used at final concentration of 2 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 546-phalloidin</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Catalog no. A22283</td>\n      <td>Diluted 1:1000 in PBS\u00a0+\u00a01% BSA</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methyl-\u03b2-cyclodextrin; MbCD</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog no. C4555</td>\n      <td>Dissolved in DMEM and sterile-filtered before use, used at final concentration of 5 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Filipin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog no. SAE0088</td>\n      <td>Ready-made filipin complex solution of 5 mg/ml in DMSO-based solution, used at final concentration of 125 \u03bcg/ml in PBS</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phorbol-12-myristat-13-acetat; PMA</td>\n      <td>Tocris, Bio-Techne</td>\n      <td>Catalog no. 1201/1</td>\n      <td>Stock prepared in DMSO, used at final concentration of 1 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>G\u00f66983</td>\n      <td>Abcam</td>\n      <td>Catalog no. ab144414</td>\n      <td>Stock prepared in DMSO, used at final concentration of 1 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CRT 0066101</td>\n      <td>Tocris, Bio-Techne</td>\n      <td>Catalog no. 4975/10</td>\n      <td>Stock prepared in H2O, used at final concentration of 5 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dioctanoylglycol; DOG</td>\n      <td>Tocris, Bio-Techne</td>\n      <td>Catalog no. 0484</td>\n      <td>Stock prepared in DMSO, used at final concentration of 100 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>Schindelin et al., 2012 (PMID: 22743772)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PixFRET plugin</td>\n      <td>Feige et al., 2005 (PMID: 16208719)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>\u00b5Manager</td>\n      <td>Edelstein et al., 2014 (PMID: 25606571)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PySerial library</td>\n      <td>https://pythonhosted.org/pyserial/index.html</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Expression constructs\n\nExpression plasmids for human LRRC8A-GFP, LRRC8AN66A/N83A-GFP and LRRC8E-RFP (Voss et al., 2014) were kindly provided by T.J. Jentsch. To generate FRET constructs, the coding sequences were subcloned with EcoRI and KpnI into pECFP-N1 and pEYFP-N1, resulting in 12-amino acid linkers LVPRARDPPVAT for LRRC8A or WVPRARDPPVAT for LRRC8E. For electrophysiological experiments, CFP and YFP were replaced with Cerulean and Venus by adding AgeI and NotI sites and insertion into the respective CFP- or YFP-tagged versions without altering the linker region. Cerulean and Venus are also referred to as CFP and YFP throughout. For expression of CD4-YFP, human CD4 was subcloned from CD4-GFP (Leisle et al., 2011) into pEYFP-N3. For the generation of A-CFP-FM2, two FM domains (Rollins et al., 2000) were inserted into XbaI-SpeI restriction sites 3\u2019 of A-CFP that were generated using the Q5 sited directed mutagenesis kit (New England Biolabs) with forward primer 5\u00b4ATCACTAGTAGCGGCCGCGACTCTAGA and reverse primer 5\u00b4ATCTCTAGACTTGTACAGCTCGTCCATGCC. The FRET-based RD sensor for ionic strength (Liu et al., 2017) was kindly provided by B. Poolman and A.J. Boersma, CFP-18AA-YFP (Elder et al., 2009) by C.F. Kaminski. The glutamate receptor construct GluA2-6Y-10C has been described previously (Zachariassen et al., 2016). For expression of GalNAcT2-RFP, the stalk region of N-acetylgalactosaminyltransferase 2 (GalNAcT2) was subcloned from pGalNAcT2-GFP (Le Bot et al., 1998) into pmRFP-N1. For expression of ER-localized YFP (ER-YFP), we used the plasmid pEYFP-ER (Clontech).\n\n### Cell lines\n\nHeLa (RRID: CVCL_0030) and HEK293 (RRID: CVCL_0045) cells were obtained from Leibniz Forschungsinstitut DSMZ and regularly tested for mycoplasma contamination. LRRC8-/- HEK293 (HEK293 KO) cells deficient in all five LRRC8 subunits (Lutter et al., 2017) were kindly provided by T.J. Jentsch. Cells were grown in DMEM (Pan-Biotech) supplemented with 10% fetal calf serum at 37\u00b0C in 5% CO2. For imaging experiments without simultaneous electrophysiology, cells were plated in 35 mm glass bottom dishes (MatTek), coated with poly-L-lysine 0.01% solution (Sigma-Aldrich) for HEK293 cells. For electrophysiology, cells were plated on poly-L-lysine-coated 25 mm coverslips. Cells were transfected with FuGENE 6 (Promega) according to the supplier\u2019s manual. For co-expression, constructs were co-transfected at equimolar ratios.\n\n### Drug treatment\n\nBrefeldin-A (BFA, Sigma-Aldrich, 10 mg/ml in DMSO) was added at 5 \u00b5g/ml to culture medium during transfection. To depolymerize the actin cytoskeleton, 2 \u00b5M latrunculin B (Sigma-Aldrich, dissolved in DMSO) was added to the growth medium for 1 hr in normal growth conditions. For cholesterol depletion, 5 mM methyl-\u03b2-cyclodextrin (MbCD, Sigma-Aldrich), dissolved in DMEM and stirred for 30 min at RT before sterile filtration, was applied for 1 hr in normal growth conditions. 1 \u00b5M phorbol-12-myristat-13-acetat (PMA, Bio-Techne, dissolved in DMSO), 1 \u00b5M G\u00f66983 (Abcam, DMSO), 5 \u00b5M CRT 0066101 (Bio-Techne, H2O) and 100 \u00b5M dioctanoylglycol (DOG, Bio-Techne, DMSO) were added during or before measurements as indicated.\n\n### Imaging of intracellular localization, actin cytoskeleton and cholesterol staining\n\nImages of the intracellular localization of LRRC8A-GFP/LRRC8E-RFP and of LRRC8A-CFP-FM2 with the organelle markers ER-YFP, GalNAc-T2-RFP and CD4-YFP were acquired with a 64x/1.4 oil objective at a Leica Dmi8 microscope equipped with a Hamamatsu OcraFlash4.0 controlled by LAS X. Images of the actin cytoskeleton and cholesterol content were acquired with a 20x/0.7 dry objective at the same microscope. For cholesterol staining, cells were washed with PBS, fixed with 4% paraformaldehyde (PFA) for 15 min at room temperature, washed with PBS and incubated with DMEM\u00a0+10% FCS for 10 min at 37\u00b0C, and, after washing with PBS, stained with 125 \u00b5g/ml filipin (Sigma-Aldrich, dissolved in DMSO and diluted in PBS) for 45 min at room temperature. After washing with PBS, images were acquired with a DAPI filter set (EX: 360/40, DC: 400, EM: 425 lp). To stain the actin cytoskeleton, PFA-fixed cells (as above) were permeabilized with 0.1% Triton-X100 in PBS\u00a0+\u00a01% BSA for 5 min at room temperature and incubated with Alexa Fluor 546-phalloidin (Thermo Fisher Scientific) diluted 1:1000 in PBS\u00a0+\u00a01% BSA at room temperature for 1 hr, washed with PBS, air dried and mounted on glass cover slides for imaging with a rhodamine filter set (EX:540/23, DC:580,EM:590 lp). Cells co-expressing LRRC8A-CFP-FM2 with organelle markers were fixed and mounted as described above 24 hr after transfection and incubation with D/D solubilizer for the indicated times. Images where acquired with filter sets for CFP (EX:436/20, DC:455 EM:480/40), YFP (EX:500/20, DC:515, EM:535/30) and rhodamine (as above).\n\n### Acceptor photo-bleaching, sensitized-emission and ratiometric FRET assays\n\nFRET experiments were performed on a high-speed setup of Leica Microsystems (Dmi6000B stage, 63x/1.4 objective, high speed external Leica filter wheels with Leica FRET set filters (11522073), EL6000 light source, DFC360 FX camera, controlled by Las AF). All experiments were executed at room temperature. Isotonic imaging buffer (340 mOsm) contained (in mM): 150 NaCl, 6 KCl, 1 MgCl2, 1.5 CaCl2, 10 glucose,10 HEPES, pH 7.4. NaCl was adjusted for osmolarity titration in hypotonicity; standard hypotonic buffer (250 mOsm) contained 105 mM NaCl. Hypertonic buffers were as isotonic buffer supplemented with 60 mM (for 400 mOsm) or 160 mM (for 500 mOsm) mannitol.\n\nAcceptor bleaching experiments were conducted on field-of views (FOVs) with at least two cells expressing both fluorescent proteins. An image in both CFP and YFP channels was taken per time point. To bleach only part of the FOV, the field diaphragm was closed until control cells were no longer illuminated. Cells were bleached with 515\u2013560 nm light at full intensity (Leica filter cube N2.1) for 2.5\u20135 min per time point until YFP signals reached below 10% of initial intensity. Intensities of CFP and YFP for respective time points were measured in Fiji in background-subtracted images and the percentage change of CFP intensity calculated for bleached and control cells.\n\nSensitized-emission FRET (seFRET) images were recorded with the same settings for donor, acceptor and FRET channels (8 \u00d7 8 binning, 100 ms exposure, gain 1) every 10\u201320 s. Images were processed with Fiji (Schindelin et al., 2012). cFRET maps were calculated with PixFRET plugin (Feige et al., 2005) (threshold set to 1, Gaussian blur to 2) with a self-written macro to process movies according to following equation (Jiang and Sorkin, 2002)\n\n$$\ncFRET=\\frac{IDA-IDD*\\beta-IAA*\\gamma}{IAA}\n$$\n\nwith emission intensities of IDA (FRET channel), IDD (donor channel), IAA (acceptor channel). Correction factors (\u03b2\u00a0=\u00a0bleed through of donor emission; \u03b3\u00a0=\u00a0cross excitation of acceptor by donor excitation) were calculated from acceptor- and donor-only samples that were measured on three different days with at least three FOVs per day. cFRET maps were measured by manually-drawn regions of interest (ROIs) over whole cells, excluding intracellular aggregates that were oversaturated in any of the three channels. Because of the variability in absolute FRET values between individual cells, cFRET values of individual cells were normalized to their mean cFRET in isotonic buffer.\n\nFor monitoring ionic strength in living cells, we used the ratiometric FRET-based RD sensor (Liu et al., 2017). Sequential images of the CFP and FRET channels were acquired using the same filters as for seFRET experiments every 10 s. Images were acquired with 2 \u00d7 2 binning, 500 ms exposure, gain 3.0 and intensity four for hypotonicity experiments and with 8 \u00d7 8 binning, 127 ms exposure, gain 3.0 and intensity two for DOG experiments. Ratio maps of I_FRET/I_Cerulean were created from background-subtracted images in Fiji and mean ratio values were taken from hand-drawn ROIs of individual cells. To account for ionic strength differences between individual cells, ratios were normalized to baseline values in isotonic buffer.\n\n### Electrophysiology and simultaneous seFRET measurements\n\nFor whole-cell patch-clamp recordings, the isotonic bath solution was composed as follows (in mM): 150 NaCl, 6 KCl, 1 MgCl2, 1.5 CaCl2, 10 glucose, and 10 HEPES, pH 7.4 with NaOH (320 mOsm). We used an intracellular (pipette) solution with the following composition (in mM): 40 CsCl, 100 Cs-methanesulfonate, 1 MgCl2, 1.9 CaCl2, 5 EGTA, 4 Na2ATP, and 10 HEPES, with pH adjusted to 7.2 with CsOH (290 mOsm). For VRAC activation, cells were perfused with drugs and/or a hypotonic buffer containing (in mM) 105 NaCl, 6 CsCl, 1 MgCl2, 1.5 CaCl2, 10 glucose, 10 HEPES, pH 7.4 with NaOH (240 mOsm). The osmolarities of all solutions were measured with a vapor pressure osmometer (VAPRO 5600, Elitech). Pipettes had a resistance of 3\u20135 M\u03a9 when filled with intracellular solution, and we used ISO-type pipette holders (G23 Instruments) to minimize pipette drift. For cells overexpressing exogenous, fluorescently-labelled VRAC constructs, the success rate for obtaining a gigaseal and whole-cell configuration were\u00a0<20%, compared to\u00a0>50% for wild-type untransfected HEK293 cells. Whole-cell recordings from cells overexpressing VRAC were also less stable. For normalizing current to cell capacitance, we used the capacitance from the manual compensation of transients from the Axopatch 200B amplifier (Molecular Devices). After whole-cell configuration was obtained, cells were held at \u201330 mV and the currents were recorded using Axograph X (Axograph Scientific) via an Instrutech ITC-18 D-A interface (HEKA Elektronik). The standard protocol for VRAC current recordings consisted of 9 episodes of a 0.5 s step to \u201380 mV every 12 s, followed by a 3 s voltage step protocol (300 ms steps to \u201340, 0, 40, 80, 100 mV in turn). This protocol was repeated throughout the recording. The voltage-step protocol confirmed VRAC-typical properties of outward rectification and depolarization-dependent inactivation for LRRC8A/E-containing VRAC (K\u00f6nig and Stauber, 2019; Ullrich et al., 2016; Voss et al., 2014). Excitation by 445 and 514 nm diode lasers (iChrome MLE, Toptica Photonics) for CFP and YFP was directed through a manual total internal reflection fluorescence (TIRF) input to an Olympus IX81 microscope. We used a 40\u00a0\u00d7\u00a0Olympus objective (NA 0.6) for all recordings. For simultaneous ratiometric FRET recordings, filters specific to donor and acceptor excitation and emission wavelengths were alternated using the fluorescence turret. We controlled the microscope turret control with an in-house script written in PYTHON. Briefly, the turret was synchronized to the electrophysiology acquisition computer using voltage output from the digitizer via an Arduino microcontroller to a reverse-engineered serial connection (using the PySerial library; https://pythonhosted.org/pyserial/index.html) from a second computer to the IX81 microscope. Fluorescence intensities in response to 445 and 514 nm excitation were recorded sequentially with 100 ms exposure time and 2\u00a0\u00d7\u00a02 binning on a Prime 95B CMOS camera (Photometrics) fitted to Cairn Optosplit-II. CFP and YFP emission were split with a T495lpxr dichroic mirror, and recorded on the same frame after passing through ET520/40 m (YFP) and ET470/24 m (CFP) filters (all mounted within the Optosplit, all Chroma). Exposures were timed to precede the \u201380 mV voltage steps. Laser emission and camera exposure were triggered in hardware directly from the digitizer. Images were recorded with Micromanager (Edelstein et al., 2014) and analyzed with FIJI as described above.\n\n### Reverse aggregation system\n\nA-CFP-FM2- or A-CFP-FM2/E-YFP-expressing cells were measured 24 hr post-transfection. Aggregates were released by adding 0.5 \u00b5M D/D solubilizer (TaKaRa) to the growth medium and incubation for 10, 80 or 165 min at 37\u00b0C in 5% CO2 before seFRET measurements. All buffers used during the measurement contained 0.5 \u00b5M D/D solubilizer. Mean cFRET was acquired from manually-drawn ROIs over the whole cell for ER- and plasma membrane-localized VRAC. For plasma membrane, only cells with clear plasma membrane localization were selected by visual inspection. To determine the cFRET of Golgi-localized VRAC, masks were created on CFP images by applying a threshold over the high-intensity, juxta-nuclear regions and applying these masks on the respective cFRET maps.\n\n### Statistical analysis\n\nData are represented as mean of individual cells\u00a0\u00b1\u00a0standard deviation (s.d.) or mean of n (number of independent experiments)\u00a0\u00b1\u00a0standard error of the mean (s.e.m.) as indicated. P values were determined by two-tailed Student\u2019s t-test and are indicated in all figures according to convention: n.s.\u00a0=\u00a0not significant, *p\u22640.05, **p\u22640.005 and ***p\u22640.0005.\n",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "97ce4c77-4eb8-49c3-b447-9adc8fc19102",
+      "submission_id": "8a407dbc-ce9e-4494-a8b4-d5f9d1f81bbb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\n## Review text\n\nDOI: [10.7554/eLife.45421.023](https://doi.org/10.7554/eLife.45421.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: the authors were asked to provide a plan for revisions before the editors issued a final decision. What follows is the editors\u2019 letter requesting such plan.]\n\nThank you for sending your article entitled \"FRET changes by C-terminal movement reveal VRAC activation by plasma membrane PKC signaling rather than ionic strength\" for peer review at eLife. Your article is being evaluated by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation is being overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor.\n\nGiven the list of essential revisions, including new experiments, the editors and reviewers invite you to respond within the next two weeks with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a binding recommendation.\n\nThe three reviewers agree that the main concern in this paper is that there isn't a validation by electrophysiology of the FRET data. It is essential that you perform simultaneous experiments measuring FRET and current in response to the activating stimuli. If this is not within your technical possibilities, at least the same kind of experiments to measure FRET should be repeated by electrophysiology. It is also essential that the FRET and imaging data is presented in a clearer manner and that the PKC FRET experiments be also validate by electrophysiology. Please see the reviewers report below for a more detailed list of comments.\n\nReviewer #1:\n\nThis paper by the Stauber group presents results from experiments in which they have measured a FRET signal between an attached fluorescent protein pair in the LRRC8A or E proteins which form the volume-regulated VRAC channels. The measurements show that the FRET signal is modulated by application of hypotonic solutions. The authors assert that the signal is related to activation of the VRAC channel and present further experimental evidence that activation is also mediated by activation of PKC phosphorylation. The experimental methods are adequate and in general the conclusions are supported by the evidence.\n\nThere are a few points that need to be presented in a clearer manner. In particular, while there is evidence that the FRET signal is specific of LRRC8, the authors cite a couple of reviews as evidence that the FRET signal correlates with the time course of activation of VRAC by the same stimulus. However, the evidence in those references shows activation of VRAC by voltage clamp stimuli occurs in an ms time scale and no data is shown on the time course of responses to a hypertonic stimulus. The authors need to show a parallel experiment showing the magnitude of the VRAC current produced by LRRC8A/A and LRRC8A/E in their particular expression system.\n\nVoltage-clamp experiments show that VRAC currents inactivate in response to sustained applied stimulus. It is important to discuss the sustained nature of the FRET signal if it is related to channel activation. Is it thought that there are distinct gates for each modality of channel activation?\n\nReviewer #2:\n\nFor editors\n\nThe authors developed a highly interesting assay to monitor activity of LRRC8 mediated VRAC channels using a purely optical FRET based assay. Such an assay could be useful for structure-function studies, as well as for studies of VRAC function in physiological settings. However, a major criticism is that the assay has not been validated by parallel electrophysiological measurements. In case the authors can provide such validation I would be in favor of publication.\n\nFor authors\n\nThe manuscript by K\u00f6nig et al., reports a method to monitor VRAC/LRRC8 volume sensitive channel activity in a time- and space-resolved manner by measuring intra-complex FRET between C-terminally fused fluorescent proteins. Two major aims are pursued: first, to demonstrate the flexibility of the leucine-rich-repeat domains (LRRDs) and their involvement in the gating of the channel; second, to provide evidence that low intracellular ionic strength is not the physiologically relevant parameter for the opening of VRACs. Rather, the authors propose that activation under hypotonic stimulation is coupled to PKC activity.\n\nIn addition, the authors use the assay to show that LRRC8 mediated VRAC is not activatable in endomembranes, but only in the plasma membrane.\n\nThe crucial questions driving the work are laudable and potentially very important for the field. In particular, the method of introducing an intramolecular FRET sensor of subunit distance is highly innovative and potentially very useful. The possibility to monitor LRRC8 activity with a purely optical assay is very intriguing.\n\nHowever, several technical controls are necessary to fully validate the assay. Most importantly, it is mandatory that the assay itself, and other results, are corroborated by electrophysiological data.\n\nAll the experiments should be complemented with electrophysiological recordings. In principle, it would be most convincing if the FRET assay could be performed on the same cell that is patch-clamped to verify that FRET changes reflect current activation. Since this maybe technically too demanding, it is at least necessary to validate the constructs used by electrophysiological recordings, under the same conditions as the FRET assay. Attaching fluorescent proteins to the C-terminus might alter the \"volume-sensitivity\" by itself. In fact, the addition of fluorescent proteins to the C-terminus resulted in constitutive anion channel activity in Xenopus oocytes (Gait\u00e1n-Pe\u00f1as et al., 2016).\n\nThe authors propose a central role for PKC in the gating of the channel and indicate that its pharmacological inhibition prevented hypotonicity-driven VRAC opening. Again, this result should be verified by electrophysiological recordings employing the same constructs, and constructs without tag \u2013 a quantitative comparison of the current density with and without application of PMA / G\u00f66983 / staurosporine is necessary.\n\nReviewer #3:\n\nVolume-regulated anion channels (VRACs) play a central role in the modulation of cell volume in animals, by enabling the flow of chloride ions and larger osmolytes out of the cell upon activation by hypotonic conditions, and therefore counteracting cell-swelling. These channels are heterohexamers composed of the obligatory subunit LRRC8A and additional LRRC8-B-E subunits. The mechanism of activation of VRAC in not understood, but it has been proposed to be related to conformational changes at its C-terminus, and has been shown to be triggered by reduced ionic strength in a reconstituted system. In the present manuscript, Benjamin Koenig and collaborators construct a FRET-based VRAC-activity sensor by fusing the C-termini of different subunits with either of two fluorescence proteins capable of FRET. The authors show changes in FRET in response to hypotonic media that are reversible upon return to isotonic conditions, with kinetics and pharmacology that is consistent with the signal originating from VRAC activation. They also show that hypotonicity-driven FRET changes occur only for channels in the plasma membrane, whereas those located at intracellular compartments (ER and golgi) don't exhibit changes in FRET. They demonstrate that the requirement for activity of localization in the plasma membrane does not involve differences in cholesterol concentration or the integrity of the actin cytoskeleton. In contrast, the authors find that stimulation of PKC activity leads to prominent FRET changes similar to those produced by hypertonic media, whereas inhibition of PKC prevents FRET changes in response to hypotonic media. The authors have developed a set of clever tools to follow VRAC activity without requiring electrophysiological measurements, and provide relevant information on the cell-physiological conditions that enable VRAC activity and on the role of the C-terminus in channel activation. However, I think the manuscript would be much stronger if the authors provided more direct evidence that the FRET changes are indeed connected with channel activation. In addition, they should address some apparent inconsistencies within their observations and also relative to published data, and provide additional information on some experiments.\n\nI have the following specific concerns:\n\n1) All conclusions in the manuscript depend on the assumption that the observed FRET changes are reflecting channel activation. However, the evidence supporting this is not direct, but rather depends on correlative observations of the effects of non-specific treatments that could also affect other processes in the cell. It is possible that the FRET changes reflect a conformational change that is independent or at least partially independent of activation. This issue is particularly important given that the role of the C-terminus for activation has not been well established. I think the manuscript would be significantly stronger if the authors could provide more direct evidence for this, by performing electrophysiological measurements in combination with FRET measurements, or by using additional specific VRAC inhibitors or performing experiments with loss-of-function VRAC subunits.\n\n2) One of the main observations of the paper is that localization in the plasma membrane is required for the observed FRET changes and channel activation. However, there is a significant amount of intracellularly located LRRC8 subunits even without treatment with BFA (see LRRC8E-RFP in Figure 2C, for example), and the hypotonicity-dependent FRET signals shown in Figure 1 appear to originate from the entire cell (see Figure 1D). The authors should address this apparent contradiction, and provide detailed information on the way they performed their analysis to measure signals mostly originating from the plasma membrane. The observation that LRRC8E appears to be more heavily retained in the ER that LRRC8A (see Figure 2C) seems to counter the observation that the 8A/8E ratio does not correlate with the observed changes in FRET, except if the majority of the measured FRET signal originates from the plasma membrane. The authors should discuss these issues.\n\n3) The authors should discuss the apparent contradiction of their data with the observations in a reconstituted system where decreased ionic strength is sufficient to activate VRAC channels.\n\n4) From the images in Figure 3B, it is impossible for me to determine which channels are localized at the ER vs golgi, even though the authors used a marker for golgi expression. The authors should use ER, golgi and plasma membrane markers, and provide a semi-quantitative analysis to demonstrate the location of the different channel populations, and provide a more detailed description of how they selected their ROIs for performing group analysis of channels in each of the cellular compartments.\n\n5) In Figure 1\u2014figure supplement 1, the authors should show the net FRET rather than the normalized values, to allow readers to see how much variability there was in FRET between the controls and the VRACs.\n\n6) The authors should show whether the treatments with LatB or MbCD affected net FRET levels, rather than just the normalized values.\n\n7) The Abstract, Title and the overall text seem to imply that PKC activation is connected with the physiological activation of VRACs upon exposure to hypotonic solutions. However, the presented data does not really establish a link between VRAC stimulation by PKC and changes in extracellular osmolarity. It might very well be that PKC-stimulated VRACs are indeed activated by ionic strength, and that this sensitivity is obscured by PKC inhibition. The authors should provide a more lengthy discussion on how PKC might be affecting channel activity, even if based only on speculation.\n",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ef6f3cba-2095-485f-b414-6647ac868634",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C1",
+      "claim": "Volume-regulated anion channels (VRACs) are central to cell volume regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Volume-regulated anion channels (VRACs) are central to cell volume regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that draws from established scientific knowledge about VRAC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "3a1f0af3-23c7-40be-abe2-d327d33b38e5",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C2",
+      "claim": "VRACs are hetero-hexamers formed by LRRC8 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently identified as hetero-hexamers formed by LRRC8 proteins, their activation mechanism remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge from recent literature about VRAC structure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "62cc22ec-8e91-46db-82f6-4d6d628980c3",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C3",
+      "claim": "Inter-subunit FRET from LRRC8 complexes tracked VRAC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Inter-subunit FRET from LRRC8 complexes tracked VRAC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "33b8e732-84a0-4788-9efb-55b9b960f114",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C4",
+      "claim": "The cytoplasmic domains of LRRC8 rearrange during VRAC opening.",
+      "claim_type": "EXPLICIT",
+      "source": "With patch-clamp fluorometry, we confirmed that the cytoplasmic domains rearrange during VRAC opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by simultaneous patch-clamp and FRET measurements shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "4dc60af7-c51b-428d-85e7-7a6a58d07c94",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C5",
+      "claim": "Reduced intracellular ionic strength did not directly activate VRACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced intracellular ionic strength did not directly activate VRACs, and VRACs were not activated on endomembranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments shown in Figures 2 and 3 where VRACs in ER and Golgi did not respond to hypotonic treatment despite reduced ionic strength.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "82f2cba0-80a4-4c13-8d36-3772f8e70675",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C6",
+      "claim": "VRACs were not activated on endomembranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced intracellular ionic strength did not directly activate VRACs, and VRACs were not activated on endomembranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments in Figures 2 and 3 showing no FRET response in ER and Golgi-localized VRACs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "a06a4bc0-830b-4d0f-9f7e-67244b356c0c",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C7",
+      "claim": "Pharmacological manipulation of diacylglycerol (DAG) activated or inhibited plasma membrane-localized VRACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, pharmacological manipulation of diacylglycerol (DAG), and protein kinase D (PKD) activity, activated or inhibited plasma membrane-localized VRACs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments with PMA, DOG, and CRT 0066101 shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "5fbd08e2-b043-459d-a6c1-8a3a08a5516f",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C8",
+      "claim": "Pharmacological manipulation of protein kinase D (PKD) activity activated or inhibited plasma membrane-localized VRACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, pharmacological manipulation of diacylglycerol (DAG), and protein kinase D (PKD) activity, activated or inhibited plasma membrane-localized VRACs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments with PKD inhibitor CRT 0066101 shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "bc5dddf6-f43f-4202-83fc-a31af97be952",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C9",
+      "claim": "FRET detected robust activation of VRAC by PMA that was absent during whole-cell patch clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we resolved previous contradictory reports concerning VRAC activation, using FRET to detect robust activation by PMA that was absent during whole-cell patch clamp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4 where PMA activates VRAC as measured by FRET but not during whole-cell patch clamp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "586b8985-d7e3-47a4-976a-297fbc706fa6",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C10",
+      "claim": "VRACs are ubiquitously expressed and involved in regulatory volume decrease (RVD) of vertebrate cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Volume-regulated anion channels (VRACs) are ubiquitously expressed and involved in regulatory volume decrease (RVD) of vertebrate cells (Chen et al., 2019; Jentsch, 2016; Stauber, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "aaa18bc6-3825-4b8c-b100-ae222163cf08",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C11",
+      "claim": "VRACs open slowly following osmotic cell swelling and mediate the extrusion of chloride and organic osmolytes, leading to the efflux of water and hence cell shrinkage.",
+      "claim_type": "EXPLICIT",
+      "source": "These channels open slowly following osmotic cell swelling and mediate the extrusion of chloride and organic osmolytes, leading to the efflux of water and hence cell shrinkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about VRAC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "d7273af6-e6e6-4e48-934a-48eee27606f8",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C12",
+      "claim": "VRACs are composed of LRRC8 heteromers containing the essential subunit LRRC8A and at least one other LRRC8 protein, LRRC8B-E.",
+      "claim_type": "EXPLICIT",
+      "source": "VRACs are composed of LRRC8 heteromers containing the essential subunit LRRC8A and at least one other LRRC8 protein, LRRC8B-E (Qiu et al., 2014; Voss et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "b3fa42c7-46b0-43bd-9db7-5ccec1c1ee7c",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C13",
+      "claim": "The subunit composition determines various biophysical properties and substrate permeability of VRACs.",
+      "claim_type": "EXPLICIT",
+      "source": "The subunit composition determines various biophysical properties and substrate permeability (Planells-Cases et al., 2015; Syeda et al., 2016; Voss et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "7791f434-6e93-4528-8763-1147ba7c54c8",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C14",
+      "claim": "LRRC8A homomers can form anion channels, but with weak volume-sensitivity and very low conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "Although unlikely to be of physiological relevance, LRRC8A homomers can form anion channels, but with weak volume-sensitivity and very low conductance (Deneka et al., 2018; Syeda et al., 2016; Yamada and Strange, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "ffc16de3-dc03-441a-a519-c913ee390f7c",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C15",
+      "claim": "LRRC8 proteins form hexamers with the N-terminal halves constituting the transmembrane domain of the channel complex with a single pore.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRC8 proteins form hexamers with the N-terminal halves of the six LRRC8 proteins constituting the transmembrane domain of the channel complex with a single pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from structural studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "75c3fee0-f708-4ea5-84c6-25e314e71e5b",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C16",
+      "claim": "The C-terminal halves of LRRC8 proteins contain at least 16 leucine-rich repeats that form horseshoe-like structures reaching into the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal halves contain at least 16 leucine-rich repeats that form horseshoe-like structures reaching into the cytoplasm and their apparent flexibility has been hypothesized to be related to channel gating (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018; Kern et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "1a968531-65a6-4666-9de8-54c40cfd2585",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C17",
+      "claim": "The apparent flexibility of LRRC8 C-terminal domains has been hypothesized to be related to channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal halves contain at least 16 leucine-rich repeats that form horseshoe-like structures reaching into the cytoplasm and their apparent flexibility has been hypothesized to be related to channel gating (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018; Kern et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from previous structural studies cited in the text.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "4d397803-3c98-4eec-a7dd-cc76bed45763",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C18",
+      "claim": "The reduction of intracellular ionic strength was reported to be crucial for VRAC activation upon osmotic cell swelling.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the reduction of intracellular ionic strength (\u0393i) was reported to be crucial for VRAC activation upon osmotic cell swelling (Voets et al., 1999) and reconstituted LRRC8 complexes in lipid bilayers could indeed be activated by low ionic strength (Syeda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "0ea3641f-4c42-4cf6-a29a-c4252223100b",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C19",
+      "claim": "Reconstituted LRRC8 complexes in lipid bilayers could be activated by low ionic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the reduction of intracellular ionic strength (\u0393i) was reported to be crucial for VRAC activation upon osmotic cell swelling (Voets et al., 1999) and reconstituted LRRC8 complexes in lipid bilayers could indeed be activated by low ionic strength (Syeda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "52652951-94bb-4117-91e9-30933304252b",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C20",
+      "claim": "VRACs can be activated under iso-osmotic conditions that are unlikely to encompass any changes in intracellular ionic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "However, VRACs can also be activated under iso-osmotic conditions that are unlikely to encompass any changes in \u0393i (Pedersen et al., 2016; Strange et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "2cc99043-0df7-48e9-8e19-015d44944a36",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C21",
+      "claim": "In HeLa cells co-expressing CFP- and YFP tagged LRRC8A (A-CFP/A-YFP), bleaching of YFP robustly increased the intensity of CFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In HeLa cells co-expressing CFP- and YFP tagged LRRC8A (A-CFP/A-YFP), bleaching of YFP (the FRET acceptor) robustly increased the intensity of CFP (the FRET donor), compared to unbleached cells in the same field of view (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "a26ec2ff-2a4b-4d39-ba24-5cf76a5ccd34",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C22",
+      "claim": "FRET was observed when LRRC8A was combined with LRRC8E (A-CFP/E-YFP or A-YFP/E-CFP).",
+      "claim_type": "EXPLICIT",
+      "source": "The same was observed when LRRC8A was combined with the VRAC subunit LRRC8E (A-CFP/E-YFP or A-YFP/E-CFP), but not when combined with plasma membrane-localized CD4-YFP, used as control for FRET by membrane crowding (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "14cce59c-94d0-4476-b9d6-efb406fa2869",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C23",
+      "claim": "No FRET was observed when LRRC8A was combined with plasma membrane-localized CD4-YFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The same was observed when LRRC8A was combined with the VRAC subunit LRRC8E (A-CFP/E-YFP or A-YFP/E-CFP), but not when combined with plasma membrane-localized CD4-YFP, used as control for FRET by membrane crowding (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "f7734fc8-9b66-4262-a534-9ef17ed4c3d9",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C24",
+      "claim": "The C-termini of LRRC8 proteins are within FRET distance (~5 nm) for the fluorescent protein adjuncts, irrespective of VRAC subunit composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, irrespective of VRAC subunit composition, the C-termini are within FRET distance for the fluorescent protein adjuncts (~5 nm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FRET data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "5d6896e4-6a98-4092-94d1-f46ac73e23fd",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C25",
+      "claim": "Switching from isotonic to hypotonic buffer led to a robust decrease in cFRET by 5\u201310% within 90 s in both HeLa and HEK293 cells expressing A-CFP/E-YFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Switching from isotonic (340 mOsm) to hypotonic (250 mOsm) buffer led to a robust decrease in cFRET by 5\u201310% within 90 s in both HeLa and HEK293 cells (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "07a70a9b-19a2-402c-a5b8-a3f87bc52cd2",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C26",
+      "claim": "The intra-molecular cFRET of a cytosolic tandem FRET pair construct, CFP-18aa-YFP, was unaffected by hypotonic buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the intra-molecular cFRET of a cytosolic tandem FRET pair construct, CFP-18aa-YFP (Elder et al., 2009), and of a plasma membrane-localized ionotropic glutamate receptor (Zachariassen et al., 2016) were unaffected by hypotonic buffer (Figure 1E, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "85f521cb-6e44-42f2-8f2d-8bd01fed54d6",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C27",
+      "claim": "The cFRET of a plasma membrane-localized ionotropic glutamate receptor was unaffected by hypotonic buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the intra-molecular cFRET of a cytosolic tandem FRET pair construct, CFP-18aa-YFP (Elder et al., 2009), and of a plasma membrane-localized ionotropic glutamate receptor (Zachariassen et al., 2016) were unaffected by hypotonic buffer (Figure 1E, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "deaebe67-d63d-46f0-b885-26ce2f8df4a5",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C28",
+      "claim": "The kinetics of the cFRET drop and its reversibility correlated with the activation and inactivation of hypotonicity-induced VRAC-mediated anion currents.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinetics of the cFRET drop and its reversibility correlated with the activation and inactivation of hypotonicity-induced VRAC-mediated anion currents (Figure 1F), demonstrating that the cFRET decrease indeed reflects VRAC opening.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simultaneous patch-clamp and FRET measurements shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "da9bb953-ca71-4a2e-a71e-e4607a75dea8",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C29",
+      "claim": "A progressive decrease in cFRET accompanied additional hypotonicity.",
+      "claim_type": "EXPLICIT",
+      "source": "A progressive decrease in cFRET accompanied additional hypotonicity but, again mirroring VRAC, cFRET did not increase with hypertonic treatment (Figure 1G, Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "3f369a50-60b2-4dee-9400-1a32b579f8e9",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C30",
+      "claim": "cFRET did not increase with hypertonic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "A progressive decrease in cFRET accompanied additional hypotonicity but, again mirroring VRAC, cFRET did not increase with hypertonic treatment (Figure 1G, Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G and Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "bb877bc1-408b-41b1-84f4-ea32c89e9f8c",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C31",
+      "claim": "Relative changes in cFRET did not depend on the A-CFP/E-YFP expression ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not see a correlation between intensity of CFP or YFP and absolute cFRET values (not shown), neither did relative changes in cFRET depend on the A-CFP/E-YFP expression ratio (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "a6966e61-beae-473b-aa50-a449c3124008",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C32",
+      "claim": "cFRET decreased for A-CFP/A-YFP constructs, providing evidence for activation of homomeric LRRC8A complexes in a cellular context.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, cFRET also decreased for A-CFP/A-YFP constructs (Figure 1E, Figure 1\u2014figure supplement 1), providing evidence for activation of homomeric LRRC8A complexes in a cellular context.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "666e2aca-2027-4725-89ea-920867580d34",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C33",
+      "claim": "The RD sensor indicated a reversible decrease in intracellular ionic strength in HeLa cells during hypotonic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this sensor indicated a reversible decrease in \u0393i in HeLa cells during hypotonic treatment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "6fb805d7-48fe-417a-add3-a3001437e7f1",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C34",
+      "claim": "The decrease in intracellular ionic strength was homogeneous over the entire cell volume during hypotonic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the decrease was homogeneous over the entire cell volume (Figure 2B, Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "c63aa351-97cc-4d5a-8a3a-548b1df3c93f",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C35",
+      "claim": "ER-trapped VRACs did not respond to hypotonic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ER-trapped VRACs surprisingly did not respond to hypotonic treatment (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "6c116f3e-57dc-4a3e-9db8-05004e2d196d",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C36",
+      "claim": "Mutation of the LRRC8A N-glycosylation sites did not impinge on the activation-dependent cFRET drop at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This was likely not due to incomplete glycosylation since mutation of the LRRC8A N-glycosylation sites (Voss et al., 2014) did not impinge on the activation-dependent cFRET drop at the plasma membrane (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "556446f4-9041-4299-a482-6f80bf63545f",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C37",
+      "claim": "ER-localized A-CFP-FM2/E-YFP VRAC did not respond to application of hypotonic buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrent sensitized FRET measurements showed that neither ER-localized (at 10 min) nor Golgi-localized (80 min) A-CFP-FM2/E-YFP VRAC responded to application of hypotonic buffer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "d2f7f6c1-aec5-4e01-b0e0-7d66eaced197",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C38",
+      "claim": "Golgi-localized A-CFP-FM2/E-YFP VRAC did not respond to application of hypotonic buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrent sensitized FRET measurements showed that neither ER-localized (at 10 min) nor Golgi-localized (80 min) A-CFP-FM2/E-YFP VRAC responded to application of hypotonic buffer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "00a8d6cc-6a54-4913-bbb1-85e7c9724810",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C39",
+      "claim": "cFRET was reduced for A-CFP-FM2/E-YFP that had reached the plasma membrane after 165 min.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, as expected, cFRET was reduced for A-CFP-FM2/E-YFP that had reached the plasma membrane after 165 min (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "127a3d15-1c1c-49a2-bd01-cb7df80a5a7b",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C40",
+      "claim": "Despite hypotonic treatment reducing intracellular ionic strength homogenously over the whole cell, VRACs are only activated when they reach the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite hypotonic treatment reducing \u0393i homogenously over the whole cell, VRACs are only activated when they reach the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experiments shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "88d108fe-2faa-4d77-a456-54f473a936d9",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C41",
+      "claim": "Depolymerization of the actin cytoskeleton by latrunculin B did not alter VRAC activation by ~25% hypotonicity.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with earlier reports on ICl,swell in lymphocytes (Levitan et al., 1995), depolymerization of the actin cytoskeleton by latrunculin B did not alter VRAC activation by ~25% hypotonicity (Figure 3\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "95ff0b89-b1d9-48a6-bbdb-06c733844671",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C42",
+      "claim": "Cholesterol depletion by methyl-\u03b2-cyclodextrin potentiated VRAC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cholesterol depletion by methyl-\u03b2-cyclodextrin potentiated VRAC activation, as judged by the reduction in cFRET (Figure 3\u2014figure supplement 2B,C), as was previously shown for VRAC-mediated ICl,swell in bovine aortic endothelial cells (Levitan et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2B,C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "0cd8c207-7439-4017-b1dc-fc3da9ec6bad",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C43",
+      "claim": "In isotonic conditions, PMA evoked a robust decrease in cFRET in HeLa and HEK293 cells expressing A-CFP/A-YFP or A-CFP/E-YFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In isotonic conditions, PMA evoked a robust decrease in cFRET in HeLa and HEK293 cells expressing A-CFP/A-YFP or A-CFP/E-YFP (Figure 4A), but not CFP-18aa-YFP (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "3e739f3e-7a2c-40da-ba57-542a8a0eb2a2",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C44",
+      "claim": "PMA did not evoke a decrease in cFRET in cells expressing CFP-18aa-YFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In isotonic conditions, PMA evoked a robust decrease in cFRET in HeLa and HEK293 cells expressing A-CFP/A-YFP or A-CFP/E-YFP (Figure 4A), but not CFP-18aa-YFP (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "3a26d4a9-f933-42a3-ab62-3a046290de33",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C45",
+      "claim": "Subsequent inactivation of VRAC by treatment with hyper-osmotic solution restored basal FRET levels after PMA activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This reflects gating of the LRRC8 complex, because subsequent inactivation of VRAC by treatment with hyper-osmotic solution restored basal FRET levels (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "151e4268-7712-493c-a8ec-919e5178e846",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C46",
+      "claim": "Activation by PMA required cell surface localization, as VRACs released from aggregation were immune to PMA in the ER and Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Like hypotonicity-driven VRAC activation, activation by PMA required cell surface localization, as VRACs released from aggregation were immune to PMA in the ER and Golgi, but they were activated at the plasma membrane (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "3299e7f1-09ec-4ca2-a8eb-2fd0f614bed2",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C47",
+      "claim": "VRACs released from aggregation were activated by PMA at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Like hypotonicity-driven VRAC activation, activation by PMA required cell surface localization, as VRACs released from aggregation were immune to PMA in the ER and Golgi, but they were activated at the plasma membrane (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "375e00f0-5e0a-4b62-8b64-25586c09e614",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C48",
+      "claim": "Recording HEK293 KO cells expressing A-CFP/E-YFP in whole-cell voltage-clamp configuration, no FRET reduction was detected upon PMA application.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, recording HEK293 KO cells expressing A-CFP/E-YFP in whole-cell voltage-clamp configuration, we could no longer detect any FRET reduction, nor did PMA activate VRAC currents (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "adb52d26-2b9b-4817-9941-1f6e132d3db3",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C49",
+      "claim": "PMA did not activate VRAC currents in HEK293 KO cells expressing A-CFP/E-YFP during whole-cell voltage-clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, recording HEK293 KO cells expressing A-CFP/E-YFP in whole-cell voltage-clamp configuration, we could no longer detect any FRET reduction, nor did PMA activate VRAC currents (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "c0375e63-8973-4675-b396-ea1a33b88409",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C50",
+      "claim": "Incubating HEK293 KO cells expressing A-CFP/E-YFP with PMA before membrane breakthrough resulted in a reliable increase in classical VRAC currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, with this experimental design we observed a reliable increase in classical VRAC currents in HEK293 KO cells expressing A-CFP/E-YFP incubated with PMA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "5d5a7a80-5e92-4b0c-8a4a-df552d7c44c9",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C51",
+      "claim": "The whole-cell voltage-clamp configuration affects signaling pathways involved in activation of VRAC in a time-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrates that the whole-cell voltage-clamp configuration affects signaling pathways involved in activation of VRAC in a time-dependent manner, an experimental caveat that can be overcome with our non-invasive FRET sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "1b211071-5c2b-41f5-adc6-3b57025546da",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C52",
+      "claim": "The PKC inhibitor G\u00f66983 prevented the cFRET reduction upon hypotonicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the PKC inhibitor G\u00f66983 not only prevented the cFRET reduction upon hypotonicity, it also gradually increased cFRET over the course of the experiment (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "8873e30c-a77c-48fc-89c7-96bff472e5bb",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C53",
+      "claim": "The PKC inhibitor G\u00f66983 gradually increased cFRET over the course of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the PKC inhibitor G\u00f66983 not only prevented the cFRET reduction upon hypotonicity, it also gradually increased cFRET over the course of the experiment (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "9ea3ebba-dfe9-407a-b53f-912398bb06fe",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C54",
+      "claim": "In the whole-cell patch-clamp configuration, the hypotonicity-induced current persisted in isotonic buffer when supplemented with G\u00f66983.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the whole-cell patch-clamp configuration, the hypotonicity-induced current even persisted in isotonic buffer when supplemented with G\u00f66983 (Figure 4\u2014figure supplement 2B, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "66d4d24a-8c01-4a7d-b830-dbdb493b5714",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C55",
+      "claim": "The presence of the PKD inhibitor CRT 0066101 during hypotonic treatment abolished cFRET changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the PKD inhibitor CRT 0066101 during hypotonic treatment abolished cFRET changes and strongly reduced VRAC currents in HEK293 KO cells expressing A-CFP/E-YFP (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "f08ba9ef-3a5f-42c2-a734-fba89df6ac0e",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C56",
+      "claim": "The presence of the PKD inhibitor CRT 0066101 during hypotonic treatment strongly reduced VRAC currents in HEK293 KO cells expressing A-CFP/E-YFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the PKD inhibitor CRT 0066101 during hypotonic treatment abolished cFRET changes and strongly reduced VRAC currents in HEK293 KO cells expressing A-CFP/E-YFP (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "c08df5cc-b979-449d-b7fb-e36fbe8f7923",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C57",
+      "claim": "The presence of CRT 0066101 readily diminished currents following breakthrough after pre-incubation in hypotonic buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to incubation during the whole-cell patch-clamp experiment, the presence of CRT 0066101 readily diminished currents following breakthrough after pre-incubation in hypotonic buffer, whereas G\u00f66983 did not (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "7a6162f2-bd55-4ccb-b607-0471c824a1fd",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C58",
+      "claim": "G\u00f66983 did not diminish currents following breakthrough after pre-incubation in hypotonic buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to incubation during the whole-cell patch-clamp experiment, the presence of CRT 0066101 readily diminished currents following breakthrough after pre-incubation in hypotonic buffer, whereas G\u00f66983 did not (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "37ff77b6-ec90-4237-bb99-bf5b7a0d5434",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C59",
+      "claim": "DAG-activated PKD plays an essential role in hypotonicity-induced VRAC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests an essential role of DAG-activated PKD in hypotonicity-induced VRAC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experiments with PKD inhibitor shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "448a4201-f701-4ab8-9b7d-82dc1461393c",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C60",
+      "claim": "In the presence of DOG, a persistent VRAC current was observed after switching from extracellular hypotonicity to normal, isotonic buffer for A-CFP/E-YFP expressed in HEK293 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the presence of DOG, we observed a persistent VRAC current after switching from extracellular hypotonicity to normal, isotonic buffer for A-CFP/E-YFP expressed in HEK293 KO cells (Figure 5C, left panel, Figure 5\u2014figure supplement 1A, left panel), as well as for endogenous VRAC in WT HEK293 cells (Figure 5C, right panel, Figure 5\u2014figure supplement 1A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "0884cccf-bf00-4b8e-9059-e3ec3111f1a2",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C61",
+      "claim": "In the presence of DOG, a persistent VRAC current was observed after switching from extracellular hypotonicity to normal, isotonic buffer for endogenous VRAC in WT HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the presence of DOG, we observed a persistent VRAC current after switching from extracellular hypotonicity to normal, isotonic buffer for A-CFP/E-YFP expressed in HEK293 KO cells (Figure 5C, left panel, Figure 5\u2014figure supplement 1A, left panel), as well as for endogenous VRAC in WT HEK293 cells (Figure 5C, right panel, Figure 5\u2014figure supplement 1A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "fb4fe61c-5db4-4c1a-bfdb-606a1ab2e6f0",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C62",
+      "claim": "The DGK inhibitor DOG impaired the recovery of cFRET to basal values when cells were returned to isotonicity after hypotonic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For the A-CFP/E-YFP VRAC expressed in either HEK293 KO cells in whole-cell patch clamp (Figure 5\u2014figure supplement 1A, left panel) and non-dialyzed HeLa cells (Figure 5D, left panel, Figure 5\u2014figure supplement 1B) the DGK inhibitor DOG impaired the recovery of cFRET to basal values when cells were returned to isotonicity after hypotonic treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5D and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "a656cf15-2a98-4d9f-9cbc-ba2612e28894",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C63",
+      "claim": "Intracellular ionic strength fully recovered to normal levels irrespective of the presence of DOG.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, \u0393i fully recovered to the normal levels irrespective of the presence of DOG (Figure 2A, Figure 5D, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "68466777-04e7-42ec-9146-cd2380359f4d",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C64",
+      "claim": "Opening of VRACs is not directly coupled to intracellular ionic strength, but rather to the DAG pathway, likely through activation of PKD in HeLa and HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that opening of VRACs is not directly coupled to \u0393i, but rather to the DAG pathway, likely through activation of PKD in HeLa and HEK293 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "4c4b19fc-21ed-4ccf-ae8e-f811a64df065",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C65",
+      "claim": "The reversible decrease in FRET matches reversible VRAC activation upon treatment with hypo-osmotic solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present an intra-complex FRET sensor to monitor VRAC activity in live cells with subcellular resolution. The relationship of the observed FRET changes to VRAC gating are clear from numerous common features (Akita and Okada, 2014; K\u00f6nig and Stauber, 2019; Pedersen et al., 2016; Strange et al., 2019): (i) the reversible decrease in FRET matches reversible VRAC activation upon treatment with hypo-osmotic solutions, and with the same kinetics as simultaneously-measured whole-cell VRAC currents",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented in the study and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "6d4226f4-0975-447b-91d3-8efab53f737d",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C66",
+      "claim": "The intensity of the FRET decrease correlates with the applied extracellular hypotonicity.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) the intensity of the FRET decrease correlates with the applied extracellular hypotonicity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "a34a2835-4c85-4dcf-baca-bfe9a36e1df2",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C67",
+      "claim": "The modulation of VRAC currents by cholesterol depletion is mirrored by the observed FRET alteration.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) the modulation of VRAC currents, for example by cholesterol depletion, is mirrored by the observed FRET alteration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "bea9f9e4-2544-4bbc-9cfe-4c2e24e4ca6a",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C68",
+      "claim": "After activation with PMA, FRET rises in hypertonicity as VRAC is inactivated by cell shrinkage.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) after activation with PMA, FRET rises in hypertonicity as VRAC is inactivated by cell shrinkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "aefb7b50-62b0-4e5e-8a01-f201f85d6d1a",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C69",
+      "claim": "FRET sensors unrelated to VRAC are not affected by hypo-osmotic solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "FRET sensors unrelated to VRAC are not affected by hypo-osmotic solutions, demonstrating that the observed changes with our FRET sensor are indeed specific for VRAC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1E and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "8f0ee59f-675f-4ae1-921b-b2bd3790f3c4",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C70",
+      "claim": "The activation of low-conducting VRACs composed of only LRRC8A could be detected by FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of low-conducting VRACs composed of only LRRC8A (Deneka et al., 2018; Kefauver et al., 2018; Syeda et al., 2016; Yamada and Strange, 2018) could also be detected by FRET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1E and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "6ce0d353-226b-48ca-99ac-ca8ff63791e6",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C71",
+      "claim": "Cryo-EM structures of VRAC complexes suggest a certain flexibility of their C-terminal leucine-rich domains (LRRDs) on the intracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM structures of VRAC complexes suggest a certain flexibility of their C-terminal leucine-rich domains (LRRDs) on the intracellular side. Related conformational rearrangements might be related to channel gating (Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018; Kern et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "02fb08d9-9c0b-49dd-a98b-8245d7d983c2",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C72",
+      "claim": "A decrease in FRET between fluorophores at the C-termini of LRRC8 proteins upon VRAC activation may reflect a displacement of LRRDs or possibly a simple change in the average orientation of the fluorophores to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, we observe a decrease in FRET between fluorophores at the C-termini of LRRC8 proteins upon VRAC activation, which may reflect a displacement of LRRDs or possibly a simple change in the average orientation of the fluorophores to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FRET data and structural knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "10e65365-eeba-4814-8929-faa870a7205c",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C73",
+      "claim": "Changes in FRET demonstrate movement of the cytosolic domains during VRAC activation, as has been shown for other ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as has previously been shown for cyclic nucleotide-gated (CNG) channels (Zheng and Zagotta, 2000), slow gating of CLC chloride channels (Bykova et al., 2006), BK potassium channels (Miranda et al., 2013) and ionotropic glutamate receptors (Zachariassen et al., 2016), changes in FRET demonstrate movement of the cytosolic domains during VRAC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in this study and citations to previous studies on other channels.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "414bb9ee-f815-4539-858e-3842c4c6dc39",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C74",
+      "claim": "VRACs were previously shown to be directly activated by low ionic strength in lipid bilayer reconstitution.",
+      "claim_type": "EXPLICIT",
+      "source": "VRACs were previously shown to be directly activated by low ionic strength in lipid bilayer reconstitution (Syeda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "95fe1086-e7ba-4690-b44f-fcad0fc09902",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C75",
+      "claim": "When cells were treated with the DAG kinase inhibitor DOG, VRAC remained active in isotonic buffer after activation by hypotonicity, even though intracellular ionic strength recovered to normal levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find that reduced \u0393i is neither sufficient to activate VRAC on intracellular compartments, nor is it indispensable to keep plasma membrane-localized VRACs active. When cells were treated with the DAG kinase inhibitor DOG, VRAC remained active in isotonic buffer after activation by hypotonicity, even though \u0393i recovered to normal levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "b6261860-4253-4a7d-97ab-c60122935f5f",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C76",
+      "claim": "Several studies reported VRAC activation when isotonic fluid was injected into, or inactivation when fluid was withdrawn from the cells without altering the intracellular ionic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies reported VRAC activation when isotonic fluid was injected into, or inactivation when fluid was withdrawn from the cells without altering the intracellular ionic strength (Best and Brown, 2009; Cannon et al., 1998; Poletto Chaves and Varanda, 2008; Zhang and Lieberman, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "ed3ea78e-25e4-4d8f-9cf1-8785e873733f",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C77",
+      "claim": "The extents of low ionic strength required for VRAC activation are unlikely to occur in physiological conditions or during whole-cell current measurements routinely used to study hypotonicity-induced VRAC currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the extents of low ionic strength required for VRAC activation (Cannon et al., 1998; Deneka et al., 2018; Nilius et al., 1998; Syeda et al., 2016) are unlikely to occur in physiological conditions or during whole-cell current measurements routinely used to study hypotonicity-induced VRAC currents (Strange et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "afed7f83-568c-4e48-86c3-ad59a2ad8892",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C78",
+      "claim": "A putative role for ionic strength in controlling the volume set point for VRAC activation would be consistent with the findings of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a putative role for ionic strength in controlling the volume set point for VRAC activation (Best and Brown, 2009; Cannon et al., 1998; Jackson et al., 1996) would be consistent with our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "40654ee5-4c6b-4d69-8f22-3aff24aa0812",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C79",
+      "claim": "Application of PMA led to VRAC opening even under isotonic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than ionic strength, we observe a specific and potent action of the DAG-PKD pathway in VRAC activation. Application of PMA led to VRAC opening even under isotonic conditions and VRACs did not inactivate completely in isotonic buffer after activation by hypotonicity when the consumption of DAG by DAG kinase was inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "9136e5a2-ac9a-408b-82d6-1458f856ee80",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C80",
+      "claim": "VRACs did not inactivate completely in isotonic buffer after activation by hypotonicity when the consumption of DAG by DAG kinase was inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than ionic strength, we observe a specific and potent action of the DAG-PKD pathway in VRAC activation. Application of PMA led to VRAC opening even under isotonic conditions and VRACs did not inactivate completely in isotonic buffer after activation by hypotonicity when the consumption of DAG by DAG kinase was inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "d0d1f23a-ce63-4bc4-9c93-a968e2414765",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C81",
+      "claim": "A role for DAG, which is generated by the activity of phospholipases C (PLCs), in the signaling for VRAC activation has been reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for DAG, which is generated by the activity of phospholipases C (PLCs), in the signaling for VRAC activation has been reported previously, for example (Roman et al., 1998; Rudkouskaya et al., 2008; Zholos et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "1c7c9753-71de-458a-bd83-33e6dba7eab1",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C82",
+      "claim": "There are multiple contradictory reports on the involvement of DAG-activated PKCs in VRAC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are multiple contradictory reports on the involvement of DAG-activated PKCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the discussion of various cited studies with conflicting results.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "3afb9d5f-fbdf-4806-87f9-1fbcdcd71d9e",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C83",
+      "claim": "In some studies, PKCs were shown to be required for regulatory volume decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "In some studies, PKCs were shown to be required for regulatory volume decrease (Hermoso et al., 2004), activation of swelling-induced VRAC currents (Roman et al., 1998) and ATP-induced VRAC-mediated glutamate release (Hyzinski-Garc\u00eda et al., 2014; Rudkouskaya et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "14cd3d2f-ee77-4e80-bc2e-519e2a1812d2",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C84",
+      "claim": "Other studies found no role for PKC despite a VRAC-activating effect of DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies found no role for PKC despite a VRAC-activating effect of DAG (Zholos et al., 2005), or even reduction or prevention of hypotonicity-induced VRAC-mediated currents by pharmacological PKC inhibition (Ben Soussia et al., 2012; Shlyonsky et al., 2011; von Weikersthal et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "f78bf0bc-29f1-4685-b368-4622e428f06b",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C85",
+      "claim": "The data do not support a core role for PKC in VRAC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "While our data speak against a core role for PKC in VRAC activation, they do not rule out a regulatory role for this kinase family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experiments with PKC inhibitors shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "219970bc-101d-4a2f-902f-feb6a5a59c08",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C86",
+      "claim": "Protein kinase D (PKD) activity is critically involved in hypotonicity-induced activation of VRAC.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our experiments reveal that protein kinase D (PKD) activity is critically involved in hypotonicity-induced activation of VRAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "3921fc81-4a03-4120-991f-62a3f9591dd8",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C87",
+      "claim": "LRRC8 proteins possess several putative and some confirmed phosphorylation sites for various kinases in their intracellular loops and C-terminal domains.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRC8 proteins possess several putative and some confirmed phosphorylation sites for various kinases in their intracellular loops and C-terminal domains (Abascal and Zardoya, 2012; Mongin, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "9f784ae0-14a1-4162-8d1b-5ac945547f14",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C88",
+      "claim": "PKD may act on another, as yet unknown, third party in the process of VRAC activation, as opposed to direct phosphorylation of LRRC8 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "As opposed to direct phosphorylation of LRRC8 subunits, PKD may act on another, as yet unknown, third party in the process of VRAC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "240aa45e-1061-4842-8122-b060a0faef5e",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C89",
+      "claim": "The central role for DAG and PKD does not explain the observed plasma membrane requirement for VRAC activation by hypotonicity as PKD is also recruited to endomembranes of the secretory pathway by DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "The central role for DAG and PKD, however, does not explain the observed plasma membrane requirement for VRAC activation by hypotonicity as PKD is also recruited to endomembranes of the secretory pathway by DAG (Baron and Malhotra, 2002; Fu and Rubin, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "9b1eeecc-35ba-46ba-835e-f438e9c3a423",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C90",
+      "claim": "Plasma membrane-intrinsic properties such as membrane stiffness, the lipid composition, including the amount of cholesterol and different phosphatidylinositol phosphates (PIPs), or the transmembrane potential may play a role in VRAC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma membrane-intrinsic properties such as membrane stiffness, the lipid composition, including the amount of cholesterol and different phosphatidylinositol phosphates (PIPs), or the transmembrane potential may play a role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "31b879eb-87cd-44b3-b2a9-9f5ff8cee88d",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C91",
+      "claim": "Further limiting factors are likely to be involved in VRAC activation, potentially explaining why the overexpression of functional LRRC8 heteromers does not increase ICl,swell above wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, further limiting factors are likely to be involved, potentially explaining why the overexpression of functional LRRC8 heteromers does not increase ICl,swell above wild-type levels (Voss et al., 2014) and similar VRAC subunit expression levels displayed different activities in different cell types (Okada et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to previous observations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "0bea6d76-8139-45d1-91bf-4db21acf0c5f",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C92",
+      "claim": "PMA-mediated activation of LRRC8A homomers was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we also observed PMA-mediated activation of LRRC8A homomers, regulatory proteins could require particular VRAC subunit combinations to contribute to VRAC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "e47a275f-76dd-4565-abb0-aab004014a6e",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C93",
+      "claim": "Regulatory proteins could require particular VRAC subunit combinations to contribute to VRAC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we also observed PMA-mediated activation of LRRC8A homomers, regulatory proteins could require particular VRAC subunit combinations to contribute to VRAC activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "57161023-955c-4594-9ab7-2811743803a3",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C94",
+      "claim": "Cell type-specific factors may exist, explaining inconsistent findings on the signal transduction pathways impinging on VRAC activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, cell type-specific factors may exist, explaining inconsistent findings on the signal transduction pathways impinging on VRAC activation. This could explain divergent results related to PKC in different cell lines (Ben Soussia et al., 2012; Hermoso et al., 2004; Roman et al., 1998; von Weikersthal et al., 1999; Zholos et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to studies with divergent results.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "44ecc684-4c2b-4e84-8c02-abde12432a88",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C95",
+      "claim": "Activation-dependent inter-subunit FRET in VRACs demonstrated movement of their C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, activation-dependent inter-subunit FRET in VRACs demonstrated movement of their C-termini and enabled subcellular monitoring of VRAC activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data presented throughout the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "3b442a82-b8aa-4b6d-a392-cbdaedf81e34",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C96",
+      "claim": "This noninvasive FRET sensor supersedes some aspects of electrophysiological measurements because it leaves intracellular signaling pathways untouched.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this noninvasive FRET sensor supersedes some aspects of electrophysiological measurements because it leaves intracellular signaling pathways untouched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the comparison of FRET and patch-clamp measurements shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "79b83e78-af29-4708-8d3d-540119013e2f",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C97",
+      "claim": "Measurement of FRET can be used for non-invasive structure-activity studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of FRET can also be used for non-invasive structure-activity studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the capabilities of the FRET sensor demonstrated in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "7a67bf17-412b-4ebc-93e9-ebbadf4bbafe",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "claim_id": "C98",
+      "claim": "The genetic encoding of this sensor makes it highly amenable to studying VRAC activation during various cell physiological processes in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic encoding of this sensor also makes it highly amenable to studying VRAC activation during various cell physiological processes in situ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the properties of the genetically encoded FRET sensor.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Inter-subunit FRET between fluorescently-tagged LRRC8 subunits tracks VRAC activation. The C-termini of LRRC8 proteins are within FRET distance (~5 nm), and switching to hypotonic buffer causes a robust 5-10% decrease in cFRET within 90 seconds. This FRET change correlates with VRAC current activation kinetics measured by simultaneous patch-clamp fluorometry, is reversible, and is specific to VRAC (control FRET constructs show no response).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C21-C32 provide converging evidence from acceptor photobleaching (C21-C23), sensitized emission FRET (C25), simultaneous patch-clamp fluorometry (C28), and appropriate controls (C26-C27, C31). The FRET changes are specific to VRAC activation, dose-dependent with osmolarity (C29), and reversible (C28), strongly supporting that the FRET sensor reliably reports VRAC conformational changes during gating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "252ec2d5-e1dd-421e-87b1-8577a04b7095",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Reduced intracellular ionic strength does not directly activate VRACs, and VRACs are not activated on endomembranes. Despite hypotonic treatment causing a homogeneous decrease in intracellular ionic strength throughout the cell (measured by RD sensor), VRACs trapped in the ER or localized to the Golgi do not respond to hypotonic buffer. Only VRACs that reach the plasma membrane show activation-dependent FRET changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C33-C40 demonstrate through multiple experimental approaches (ER trapping with BFA, reverse aggregation system tracking VRACs through secretory pathway) that ionic strength reduction is insufficient for VRAC activation. The RD sensor data (C33-C34) confirms homogeneous ionic strength changes, while FRET measurements (C35, C37-C39) show compartment-specific activation only at the plasma membrane. This strongly challenges the ionic strength hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "b6014345-f335-40c4-8ecd-b5f07a6bd598",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pharmacological manipulation of diacylglycerol (DAG) and protein kinase D (PKD) activity activates or inhibits plasma membrane-localized VRACs. PMA (a DAG analog) robustly activates VRACs under isotonic conditions as measured by FRET, and this activation requires plasma membrane localization. The PKD inhibitor CRT 0066101 abolishes FRET changes and strongly reduces VRAC currents during hypotonic treatment, demonstrating PKD's essential role in VRAC activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C43-C59, C86 provide strong pharmacological evidence for DAG-PKD pathway involvement. PMA activation is specific to VRAC (C43-C44), reversible (C45), and requires plasma membrane localization (C46-C47). PKD inhibition blocks both FRET changes and currents (C55-C58), and this effect persists across different experimental configurations. The convergence of FRET and electrophysiological data strongly supports PKD's critical role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "c0626fa8-7285-4713-b9ed-ac5e92fc1453",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FRET detects robust VRAC activation by PMA that is absent during whole-cell patch clamp, revealing that the whole-cell configuration disrupts signaling pathways. When cells are pre-incubated with PMA before membrane breakthrough, VRAC currents are observed, but PMA application during whole-cell recording produces no effect. This demonstrates the non-invasive advantage of the FRET sensor over electrophysiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C48-C51, C96 resolve a methodological discrepancy in the field. The comparison between FRET measurements (showing PMA activation) and whole-cell patch clamp (showing no activation) is direct and compelling (C48-C49). The pre-incubation experiment (C50) confirms that PMA can activate VRACs when signaling is intact. This clearly demonstrates that whole-cell dialysis disrupts the DAG-PKD pathway and validates the FRET approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "d855d5a5-dd2a-43c9-a88a-c64bf749b042",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "VRAC opening is not directly coupled to intracellular ionic strength but rather to the DAG pathway. When cells are treated with the DAG kinase inhibitor DOG, VRACs remain active in isotonic buffer after activation by hypotonicity, even though intracellular ionic strength fully recovers to normal levels. This persistent activation occurs in both overexpressed and endogenous VRACs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64, C75, C80 provide compelling evidence dissociating ionic strength from VRAC activation. The DOG experiments show persistent VRAC activity (C60-C62) despite complete recovery of ionic strength (C63), directly contradicting the ionic strength hypothesis. This occurs in both HEK293 KO cells expressing tagged VRACs and WT cells with endogenous VRACs (C60-C61), strengthening the generalizability. The simultaneous measurement of VRAC activity and ionic strength is a key strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "cd62bc37-e3a5-4934-9174-a591762ba25c",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The data do not support a core role for PKC in VRAC activation. The PKC inhibitor G\u00f66983 prevents cFRET reduction upon hypotonicity in non-dialyzed cells, but in whole-cell patch-clamp configuration, hypotonicity-induced currents persist in isotonic buffer with G\u00f66983. Additionally, G\u00f66983 does not diminish currents after pre-incubation in hypotonic buffer, unlike the PKD inhibitor CRT 0066101.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54, C57-C58, C85 show complex PKC effects that differ between FRET and patch-clamp measurements. The discrepancy between methods (C52-C54) and the contrast with PKD inhibition (C57-C58) suggest PKC is not essential for VRAC activation. However, the gradual cFRET increase with G\u00f66983 (C53) suggests some regulatory role. The interpretation that PKC is not core to activation is reasonable but the data also indicate methodological complications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "e5af0ef8-90f1-4f19-aaed-f52d27ba6e4a",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Depolymerization of the actin cytoskeleton by latrunculin B does not alter VRAC activation by ~25% hypotonicity, while cholesterol depletion by methyl-\u03b2-cyclodextrin potentiates VRAC activation as judged by reduction in cFRET.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by experimental data in Figure 3\u2014figure supplement 2. The actin depolymerization result (C41) is consistent with prior literature cited. The cholesterol depletion result (C42) is also consistent with previous findings in other cell types. Both claims are adequately controlled and the FRET measurements are appropriate for assessing VRAC activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "c6ccfe25-1ac9-4f70-b32f-10fc577ae839",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The FRET sensor reliably reports VRAC gating based on multiple validation criteria: reversible FRET decrease matches VRAC activation kinetics, FRET intensity correlates with hypotonicity, modulation by cholesterol depletion is mirrored in FRET, FRET rises with hypertonicity after PMA activation, unrelated FRET sensors are unaffected, and low-conducting LRRC8A homomers can be detected. This demonstrates movement of cytosolic domains during VRAC activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70, C73, C95 summarize the validation of the FRET sensor through multiple independent criteria. Each criterion is supported by experimental data presented in the figures. The convergence of evidence from different experimental manipulations (osmolarity, cholesterol, PMA, controls) strongly validates that FRET changes specifically report VRAC conformational changes. The comparison to other ion channels (C73) provides additional context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background on VRAC structure and function: VRACs are central to cell volume regulation, are hetero-hexamers formed by LRRC8 proteins with LRRC8A as essential subunit, and have C-terminal leucine-rich repeat domains whose flexibility has been hypothesized to relate to channel gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C17 provide established background knowledge supported by appropriate citations to prior literature. These claims accurately represent the current understanding of VRAC structure, composition, and function. The structural information (C15-C16) and gating hypothesis (C17) are appropriately cited to recent cryo-EM studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "c56982ed-b4b4-4ec9-b8e2-861c6e138085",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior literature on ionic strength and VRAC activation: Reduced intracellular ionic strength was reported as crucial for VRAC activation and reconstituted LRRC8 complexes can be activated by low ionic strength in lipid bilayers. However, VRACs can also be activated under iso-osmotic conditions, and the extents of low ionic strength required are unlikely to occur physiologically. A role for ionic strength in controlling volume set point would be consistent with current findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C74, C76-C78 accurately summarize prior literature with appropriate citations. The claims present both supporting evidence for ionic strength involvement (C18-C19, C74) and contradictory evidence (C20, C76-C77), providing balanced context for the current study's findings. The interpretation about volume set point (C78) is reasonable speculation supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "f599cf58-a29b-4ff3-a7a3-bfe86706951e",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior literature on DAG and PKC involvement in VRAC activation: A role for DAG in VRAC activation signaling has been reported previously, but there are multiple contradictory reports on PKC involvement, with some studies showing PKC requirement and others finding no role or even inhibitory effects of PKC inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 accurately summarize the contradictory literature on PKC involvement in VRAC activation with appropriate citations. This provides important context for the current study's findings distinguishing PKD from PKC. The presentation of conflicting prior results is balanced and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "79ff5834-ab17-46d6-962e-5d6f089a51f3",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cryo-EM structures suggest flexibility of LRRC8 C-terminal leucine-rich domains, and the observed FRET decrease upon VRAC activation may reflect displacement of these domains or a change in fluorophore orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 appropriately cite structural studies and provide reasonable interpretation of the FRET data. The speculation about mechanism (C72) is appropriately cautious, acknowledging that FRET changes could reflect either domain displacement or fluorophore reorientation. This interpretation is consistent with the data and prior structural knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "3ce856ef-00da-4604-a86e-f55e8d321ef9",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Speculation on mechanisms and limiting factors: LRRC8 proteins have putative phosphorylation sites, PKD may act on unknown third parties, plasma membrane-specific properties may be required, additional limiting factors likely exist, regulatory proteins may require specific subunit combinations, and cell type-specific factors may explain inconsistent findings across studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C91, C93-C94 are primarily speculative (C88, C90, C91, C93, C94) or cite prior observations (C87, C91, C94) without direct experimental support in this study. While these speculations are reasonable given the data, they represent hypotheses for future work rather than supported conclusions. The speculation is appropriately presented as such in the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "ef685735-610e-42a0-84f5-81a8c78ed3d8",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PMA-mediated activation of LRRC8A homomers was observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is directly supported by experimental data shown in Figure 4A demonstrating that PMA activates A-CFP/A-YFP constructs (LRRC8A homomers). This is a straightforward observation from the FRET measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    },
+    {
+      "id": "85fa3d97-e8e8-4202-8977-ed902fb1ea4a",
+      "content_id": "8addafef-f94b-4bf6-8576-254f2480397b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The FRET sensor can be used for non-invasive structure-activity studies and is amenable to studying VRAC activation during various cell physiological processes in situ due to its genetic encoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 are reasonable inferences from the demonstrated capabilities of the FRET sensor. The non-invasive nature has been demonstrated (C96), and genetic encoding inherently enables in situ studies. These are logical extensions of the validated methodology rather than speculative claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:42:32.512389Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "62cc22ec-8e91-46db-82f6-4d6d628980c3",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "33b8e732-84a0-4788-9efb-55b9b960f114",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "2cc99043-0df7-48e9-8e19-015d44944a36",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "a26ec2ff-2a4b-4d39-ba24-5cf76a5ccd34",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "14cce59c-94d0-4476-b9d6-efb406fa2869",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "f7734fc8-9b66-4262-a534-9ef17ed4c3d9",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "5d6896e4-6a98-4092-94d1-f46ac73e23fd",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "07a70a9b-19a2-402c-a5b8-a3f87bc52cd2",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "85f521cb-6e44-42f2-8f2d-8bd01fed54d6",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "deaebe67-d63d-46f0-b885-26ce2f8df4a5",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "da9bb953-ca71-4a2e-a71e-e4607a75dea8",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "3f369a50-60b2-4dee-9400-1a32b579f8e9",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "bb877bc1-408b-41b1-84f4-ea32c89e9f8c",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "a6966e61-beae-473b-aa50-a449c3124008",
+      "result_id": "f45f420a-b4a1-4ec6-b99f-c12f266f5f5c"
+    },
+    {
+      "claim_id": "4dc60af7-c51b-428d-85e7-7a6a58d07c94",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "82f2cba0-80a4-4c13-8d36-3772f8e70675",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "666e2aca-2027-4725-89ea-920867580d34",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "6fb805d7-48fe-417a-add3-a3001437e7f1",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "c63aa351-97cc-4d5a-8a3a-548b1df3c93f",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "6c116f3e-57dc-4a3e-9db8-05004e2d196d",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "556446f4-9041-4299-a482-6f80bf63545f",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "d2f7f6c1-aec5-4e01-b0e0-7d66eaced197",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "00a8d6cc-6a54-4913-bbb1-85e7c9724810",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "127a3d15-1c1c-49a2-bd01-cb7df80a5a7b",
+      "result_id": "252ec2d5-e1dd-421e-87b1-8577a04b7095"
+    },
+    {
+      "claim_id": "a06a4bc0-830b-4d0f-9f7e-67244b356c0c",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "5fbd08e2-b043-459d-a6c1-8a3a08a5516f",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "0cd8c207-7439-4017-b1dc-fc3da9ec6bad",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "3e739f3e-7a2c-40da-ba57-542a8a0eb2a2",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "3a26d4a9-f933-42a3-ab62-3a046290de33",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "151e4268-7712-493c-a8ec-919e5178e846",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "3299e7f1-09ec-4ca2-a8eb-2fd0f614bed2",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "66d4d24a-8c01-4a7d-b830-dbdb493b5714",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "f08ba9ef-3a5f-42c2-a734-fba89df6ac0e",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "c08df5cc-b979-449d-b7fb-e36fbe8f7923",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "7a6162f2-bd55-4ccb-b607-0471c824a1fd",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "37ff77b6-ec90-4237-bb99-bf5b7a0d5434",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "219970bc-101d-4a2f-902f-feb6a5a59c08",
+      "result_id": "b6014345-f335-40c4-8ecd-b5f07a6bd598"
+    },
+    {
+      "claim_id": "bc5dddf6-f43f-4202-83fc-a31af97be952",
+      "result_id": "c0626fa8-7285-4713-b9ed-ac5e92fc1453"
+    },
+    {
+      "claim_id": "375e00f0-5e0a-4b62-8b64-25586c09e614",
+      "result_id": "c0626fa8-7285-4713-b9ed-ac5e92fc1453"
+    },
+    {
+      "claim_id": "adb52d26-2b9b-4817-9941-1f6e132d3db3",
+      "result_id": "c0626fa8-7285-4713-b9ed-ac5e92fc1453"
+    },
+    {
+      "claim_id": "c0375e63-8973-4675-b396-ea1a33b88409",
+      "result_id": "c0626fa8-7285-4713-b9ed-ac5e92fc1453"
+    },
+    {
+      "claim_id": "5d5a7a80-5e92-4b0c-8a4a-df552d7c44c9",
+      "result_id": "c0626fa8-7285-4713-b9ed-ac5e92fc1453"
+    },
+    {
+      "claim_id": "3b442a82-b8aa-4b6d-a392-cbdaedf81e34",
+      "result_id": "c0626fa8-7285-4713-b9ed-ac5e92fc1453"
+    },
+    {
+      "claim_id": "448a4201-f701-4ab8-9b7d-82dc1461393c",
+      "result_id": "d855d5a5-dd2a-43c9-a88a-c64bf749b042"
+    },
+    {
+      "claim_id": "0884cccf-bf00-4b8e-9059-e3ec3111f1a2",
+      "result_id": "d855d5a5-dd2a-43c9-a88a-c64bf749b042"
+    },
+    {
+      "claim_id": "fb4fe61c-5db4-4c1a-bfdb-606a1ab2e6f0",
+      "result_id": "d855d5a5-dd2a-43c9-a88a-c64bf749b042"
+    },
+    {
+      "claim_id": "a656cf15-2a98-4d9f-9cbc-ba2612e28894",
+      "result_id": "d855d5a5-dd2a-43c9-a88a-c64bf749b042"
+    },
+    {
+      "claim_id": "68466777-04e7-42ec-9146-cd2380359f4d",
+      "result_id": "d855d5a5-dd2a-43c9-a88a-c64bf749b042"
+    },
+    {
+      "claim_id": "95fe1086-e7ba-4690-b44f-fcad0fc09902",
+      "result_id": "d855d5a5-dd2a-43c9-a88a-c64bf749b042"
+    },
+    {
+      "claim_id": "9136e5a2-ac9a-408b-82d6-1458f856ee80",
+      "result_id": "d855d5a5-dd2a-43c9-a88a-c64bf749b042"
+    },
+    {
+      "claim_id": "1b211071-5c2b-41f5-adc6-3b57025546da",
+      "result_id": "cd62bc37-e3a5-4934-9174-a591762ba25c"
+    },
+    {
+      "claim_id": "8873e30c-a77c-48fc-89c7-96bff472e5bb",
+      "result_id": "cd62bc37-e3a5-4934-9174-a591762ba25c"
+    },
+    {
+      "claim_id": "9ea3ebba-dfe9-407a-b53f-912398bb06fe",
+      "result_id": "cd62bc37-e3a5-4934-9174-a591762ba25c"
+    },
+    {
+      "claim_id": "c08df5cc-b979-449d-b7fb-e36fbe8f7923",
+      "result_id": "cd62bc37-e3a5-4934-9174-a591762ba25c"
+    },
+    {
+      "claim_id": "7a6162f2-bd55-4ccb-b607-0471c824a1fd",
+      "result_id": "cd62bc37-e3a5-4934-9174-a591762ba25c"
+    },
+    {
+      "claim_id": "f78bf0bc-29f1-4685-b368-4622e428f06b",
+      "result_id": "cd62bc37-e3a5-4934-9174-a591762ba25c"
+    },
+    {
+      "claim_id": "88d108fe-2faa-4d77-a456-54f473a936d9",
+      "result_id": "e5af0ef8-90f1-4f19-aaed-f52d27ba6e4a"
+    },
+    {
+      "claim_id": "95ff0b89-b1d9-48a6-bbdb-06c733844671",
+      "result_id": "e5af0ef8-90f1-4f19-aaed-f52d27ba6e4a"
+    },
+    {
+      "claim_id": "4c4b19fc-21ed-4ccf-ae8e-f811a64df065",
+      "result_id": "c6ccfe25-1ac9-4f70-b32f-10fc577ae839"
+    },
+    {
+      "claim_id": "6d4226f4-0975-447b-91d3-8efab53f737d",
+      "result_id": "c6ccfe25-1ac9-4f70-b32f-10fc577ae839"
+    },
+    {
+      "claim_id": "a34a2835-4c85-4dcf-baca-bfe9a36e1df2",
+      "result_id": "c6ccfe25-1ac9-4f70-b32f-10fc577ae839"
+    },
+    {
+      "claim_id": "bea9f9e4-2544-4bbc-9cfe-4c2e24e4ca6a",
+      "result_id": "c6ccfe25-1ac9-4f70-b32f-10fc577ae839"
+    },
+    {
+      "claim_id": "aefb7b50-62b0-4e5e-8a01-f201f85d6d1a",
+      "result_id": "c6ccfe25-1ac9-4f70-b32f-10fc577ae839"
+    },
+    {
+      "claim_id": "8f0ee59f-675f-4ae1-921b-b2bd3790f3c4",
+      "result_id": "c6ccfe25-1ac9-4f70-b32f-10fc577ae839"
+    },
+    {
+      "claim_id": "10e65365-eeba-4814-8929-faa870a7205c",
+      "result_id": "c6ccfe25-1ac9-4f70-b32f-10fc577ae839"
+    },
+    {
+      "claim_id": "44ecc684-4c2b-4e84-8c02-abde12432a88",
+      "result_id": "c6ccfe25-1ac9-4f70-b32f-10fc577ae839"
+    },
+    {
+      "claim_id": "ef6f3cba-2095-485f-b414-6647ac868634",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "3a1f0af3-23c7-40be-abe2-d327d33b38e5",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "586b8985-d7e3-47a4-976a-297fbc706fa6",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "aaa18bc6-3825-4b8c-b100-ae222163cf08",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "d7273af6-e6e6-4e48-934a-48eee27606f8",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "b3fa42c7-46b0-43bd-9db7-5ccec1c1ee7c",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "7791f434-6e93-4528-8763-1147ba7c54c8",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "ffc16de3-dc03-441a-a519-c913ee390f7c",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "75c3fee0-f708-4ea5-84c6-25e314e71e5b",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "1a968531-65a6-4666-9de8-54c40cfd2585",
+      "result_id": "e19f8d15-2546-4869-b9ae-ad1a0776f4fd"
+    },
+    {
+      "claim_id": "4d397803-3c98-4eec-a7dd-cc76bed45763",
+      "result_id": "c56982ed-b4b4-4ec9-b8e2-861c6e138085"
+    },
+    {
+      "claim_id": "0ea3641f-4c42-4cf6-a29a-c4252223100b",
+      "result_id": "c56982ed-b4b4-4ec9-b8e2-861c6e138085"
+    },
+    {
+      "claim_id": "52652951-94bb-4117-91e9-30933304252b",
+      "result_id": "c56982ed-b4b4-4ec9-b8e2-861c6e138085"
+    },
+    {
+      "claim_id": "414bb9ee-f815-4539-858e-3842c4c6dc39",
+      "result_id": "c56982ed-b4b4-4ec9-b8e2-861c6e138085"
+    },
+    {
+      "claim_id": "b6261860-4253-4a7d-97ab-c60122935f5f",
+      "result_id": "c56982ed-b4b4-4ec9-b8e2-861c6e138085"
+    },
+    {
+      "claim_id": "ed3ea78e-25e4-4d8f-9cf1-8785e873733f",
+      "result_id": "c56982ed-b4b4-4ec9-b8e2-861c6e138085"
+    },
+    {
+      "claim_id": "afed7f83-568c-4e48-86c3-ad59a2ad8892",
+      "result_id": "c56982ed-b4b4-4ec9-b8e2-861c6e138085"
+    },
+    {
+      "claim_id": "d0d1f23a-ce63-4bc4-9c93-a968e2414765",
+      "result_id": "f599cf58-a29b-4ff3-a7a3-bfe86706951e"
+    },
+    {
+      "claim_id": "1c7c9753-71de-458a-bd83-33e6dba7eab1",
+      "result_id": "f599cf58-a29b-4ff3-a7a3-bfe86706951e"
+    },
+    {
+      "claim_id": "3afb9d5f-fbdf-4806-87f9-1fbcdcd71d9e",
+      "result_id": "f599cf58-a29b-4ff3-a7a3-bfe86706951e"
+    },
+    {
+      "claim_id": "14cd3d2f-ee77-4e80-bc2e-519e2a1812d2",
+      "result_id": "f599cf58-a29b-4ff3-a7a3-bfe86706951e"
+    },
+    {
+      "claim_id": "6ce0d353-226b-48ca-99ac-ca8ff63791e6",
+      "result_id": "79ff5834-ab17-46d6-962e-5d6f089a51f3"
+    },
+    {
+      "claim_id": "02fb08d9-9c0b-49dd-a98b-8245d7d983c2",
+      "result_id": "79ff5834-ab17-46d6-962e-5d6f089a51f3"
+    },
+    {
+      "claim_id": "3921fc81-4a03-4120-991f-62a3f9591dd8",
+      "result_id": "3ce856ef-00da-4604-a86e-f55e8d321ef9"
+    },
+    {
+      "claim_id": "9f784ae0-14a1-4162-8d1b-5ac945547f14",
+      "result_id": "3ce856ef-00da-4604-a86e-f55e8d321ef9"
+    },
+    {
+      "claim_id": "240aa45e-1061-4842-8122-b060a0faef5e",
+      "result_id": "3ce856ef-00da-4604-a86e-f55e8d321ef9"
+    },
+    {
+      "claim_id": "9b1eeecc-35ba-46ba-835e-f438e9c3a423",
+      "result_id": "3ce856ef-00da-4604-a86e-f55e8d321ef9"
+    },
+    {
+      "claim_id": "31b879eb-87cd-44b3-b2a9-9f5ff8cee88d",
+      "result_id": "3ce856ef-00da-4604-a86e-f55e8d321ef9"
+    },
+    {
+      "claim_id": "e47a275f-76dd-4565-abb0-aab004014a6e",
+      "result_id": "3ce856ef-00da-4604-a86e-f55e8d321ef9"
+    },
+    {
+      "claim_id": "57161023-955c-4594-9ab7-2811743803a3",
+      "result_id": "3ce856ef-00da-4604-a86e-f55e8d321ef9"
+    },
+    {
+      "claim_id": "0bea6d76-8139-45d1-91bf-4db21acf0c5f",
+      "result_id": "ef685735-610e-42a0-84f5-81a8c78ed3d8"
+    },
+    {
+      "claim_id": "79b83e78-af29-4708-8d3d-540119013e2f",
+      "result_id": "85fa3d97-e8e8-4202-8977-ed902fb1ea4a"
+    },
+    {
+      "claim_id": "7a67bf17-412b-4ebc-93e9-ebbadf4bbafe",
+      "result_id": "85fa3d97-e8e8-4202-8977-ed902fb1ea4a"
+    }
+  ],
+  "comparisons": []
+}

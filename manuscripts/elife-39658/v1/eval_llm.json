@@ -1,0 +1,465 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors generated a zebrafish model of ICF syndrome by mutating zbtb24 using TALENs, creating a 7.9 kb deletion allele (zbtb24\u0394) that eliminates coding sequence between exons 2 and 5. This allele is a null allele as evidenced by the absence of detectable zbtb24 transcripts in homozygous mutants. A second independently-isolated mutant allele (zbtb24mk19) shows similar ICF-like phenotypes, validating the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C20 provide converging evidence for successful generation of a null allele through molecular characterization (deletion size, transcript absence) and validation with an independent allele. The conclusion in C21 that this is a faithful ICF model is supported by the phenotypic data presented in subsequent claims. The molecular characterization is thorough and the use of two independent alleles strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "zbtb24\u0394/\u0394 mutant zebrafish exhibit key ICF syndrome phenotypes including normal early development (first 2 weeks), followed by progressive growth retardation starting at 3-4 weeks that persists into adulthood, facial anomalies characterized by snout elongation, hypogammaglobulinemia with normal lymphoid cell numbers, and reduced survival with significant death at 4 months and <10% survival beyond 8 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 collectively demonstrate multiple ICF-like phenotypes with quantitative measurements and statistical support shown in Figure 1. The temporal progression of phenotypes is well-documented, and the hypogammaglobulinemia with normal lymphoid counts (C10-C11) matches the known ICF syndrome immunological hallmark. Sample sizes appear adequate (n\u22655-6 for most measurements) and appropriate controls are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "zbtb24\u0394/\u0394 mutant zebrafish are sterile, with unsuccessful breeding attempts despite overtly normal gonadal morphology in histological sections. Male mutants show severely reduced testes size and sperm count, providing a potential explanation for impaired fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 document sterility through breeding experiments (C14) and provide mechanistic insights through quantitative analysis of testes size and sperm count (C17-C18, Figure 1\u2014figure supplement 3D-G). The inference that reduced testes/sperm explains male infertility (C19) is reasonable, though female fertility mechanisms are not addressed. The histological analysis (C16) provides important context that gross morphology appears normal despite functional defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Pericentromeric Sat1 repeats, which comprise 5-8% of the zebrafish genome and are found on all chromosomes, show extensive hypomethylation in zbtb24\u0394/\u0394 mutant adults. Wild-type Sat1 sequences are heavily methylated (resistant to HpyCH4IV digestion), while mutant Sat1 sequences are readily digested, indicating extensive methylation loss across multiple somatic tissues (brain, skin, muscle, fin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 establish pericentromeric hypomethylation using methylation-sensitive restriction enzyme digestion and Southern blotting (Figure 2A-B, Figure 2\u2014figure supplement 1B). The approach is appropriate for highly repetitive sequences. The tissue distribution analysis (C28-C29) strengthens the conclusion. Background information (C22-C23) is properly cited. The inference of heavy methylation in wild-type (C25) and extensive loss in mutants (C27) is well-supported by the enzymatic digestion data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Methylation at Sat1 repeats appears normal in sperm from zbtb24\u0394/\u0394 mutants, suggesting methylation loss may be restricted to somatic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by Southern blot data (Figure 2\u2014figure supplement 1C-D) showing normal methylation in sperm. However, the inference that methylation loss is restricted to somatic tissues (C31) is appropriately qualified as speculative with 'may be' and 'suggesting'. The evidence is limited to one germline tissue type and does not address oocytes. The conclusion is reasonable but tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Pericentromeric methylation loss in zbtb24\u0394/\u0394 mutants is progressive, with no hypomethylation detected at 1 wpf, roughly 3-fold increases in HpyCH4IV digestion at 2 wpf, and increasingly pronounced sensitivity in older animals, reaching a 23-fold increase (>95% methylation reduction) by 32 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 document progressive methylation loss through a time-course experiment (Figure 2C-D) with quantitative measurements at multiple developmental stages. The data clearly show temporal progression from normal methylation at 1 wpf to severe hypomethylation by 32 weeks. The quantification is rigorous and the inference of >95% methylation reduction from 23-fold increased digestion (C37) is reasonable. This progressive nature is a key finding that distinguishes this model from global hypomethylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Histone H3 lysine nine trimethylation (H3K9me3) levels are unaffected at Sat1 sequences in zbtb24\u0394/\u0394 mutant adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by ChIP-qPCR data (Figure 2\u2014figure supplement 2) showing no significant difference in H3K9me3 levels between wild-type and mutants. This indicates that the methylation defect is specific to DNA methylation and does not affect this repressive histone mark. The control is appropriate and strengthens the specificity of the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ERRBS analysis of non-pericentromeric sequences reveals a strong correlation (r=0.928) between genome-wide 5mC levels in wild-type and zbtb24\u0394/\u0394 mutants, with overall methylation reduced by ~10% and only 1.3% of CpGs showing >20% methylation differences. Only 55 DMRs were identified, and endogenous retroviruses and transposable elements show normal methylation, indicating pericentromeres are the predominant site of methylation loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by comprehensive ERRBS analysis (Figure 2E-F, Figure 2\u2014figure supplement 4-5) with appropriate statistical thresholds (p<0.01, >20% change). The high correlation (C39) and small number of DMRs (C43) support the conclusion that methylation loss is predominantly at pericentromeres (C45). The Southern blot validation of transposable element methylation (C44) strengthens this conclusion. Sample size (n=3 per genotype) is adequate for ERRBS. The authors appropriately note ERRBS limitations for CpG-poor sequences (discussed in C95-C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "RNA-seq at 2 wpf identifies 58 downregulated and 119 upregulated genes in zbtb24\u0394/\u0394 larvae. Approximately 30% of upregulated genes are associated with innate immune system activation, including interferon stimulated genes (ISGs) and inflammatory cytokines, with GSEA showing significant enrichment for viral response genes. ISG upregulation is confirmed by qRT-PCR at 3 wpf but not at 1 wpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are supported by RNA-seq data (Figure 3A-C) with appropriate bioinformatics analysis including GSEA. The temporal specificity is demonstrated by qRT-PCR showing ISG upregulation at 3 wpf but not 1 wpf (C52-C53, Figure 3D-E), which correlates with the timing of methylation loss. The 2-fold threshold for differential expression is reasonable. Sample sizes for qRT-PCR appear adequate (n\u22653). The finding that ~30% of upregulated genes are immune-related (C49) is a key observation linking methylation loss to immune activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "No immune-related genes were found within 100 kb of identified DMRs, suggesting direct loss of methylation at these sequences is unlikely to cause the immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by genomic analysis (Figure 2\u2014figure supplement 3D) comparing DMR locations to differentially expressed genes. The 100 kb window is reasonable for regulatory element analysis. This negative result is important for ruling out direct transcriptional effects of DMRs on immune genes and supports the model that pericentromeric transcript derepression drives the response. The inference (C55) is appropriately qualified as 'unlikely' rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Global methylation depletion using 5-azacytidine results in upregulation of immune response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by 5-azacytidine treatment experiments (Figure 3\u2014figure supplement 2) showing both global hypomethylation and ISG upregulation. This positive control demonstrates that global methylation loss can trigger immune responses, consistent with prior literature. The experiment validates the qRT-PCR approach and provides context for interpreting the zbtb24 mutant phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Homozygous mutations in myd88 (TLR signaling) or sting (cGAS signaling) have little impact on ISG expression in zbtb24\u0394/\u0394 mutants, suggesting limited roles for TLR and cGAS pattern recognition receptors in mediating the interferon response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by qRT-PCR data from double mutants (Figure 4A-B) showing sustained ISG expression when myd88 or sting mutations are introduced onto the zbtb24 mutant background. Sample sizes are adequate (n\u22657). The inference that these pathways have limited roles (C59) is reasonable given the lack of suppression. This genetic epistasis approach is appropriate for pathway dissection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mutation of mavs suppresses stat1b and irf7 upregulation in zbtb24\u0394/\u0394 mutants, with 2- and 4-fold reductions respectively in mavs; zbtb24 double mutants. This indicates mavs is required for ISG upregulation, implicating RLR signaling and suggesting a cytosolic RNA trigger for the immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by qRT-PCR data (Figure 4C) showing significant suppression of ISG expression in mavs; zbtb24 double mutants (n\u22655). The genetic epistasis clearly demonstrates mavs requirement. The inferences about RLR signaling (C63) and cytosolic RNA trigger (C64) are logical given that MAVS is the adaptor protein downstream of RLR receptors. However, C64 is appropriately qualified as 'suggests' since direct evidence for RNA trigger comes later. The fold-reductions are statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Strong derepression of Sat1 RNA is observed in zbtb24 mutant adults, while transcripts from other dispersed repetitive elements remain unchanged. Sat1 transcript increases correlate with irf7 expression (r=0.77) and coincide temporally with ISG induction during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by Northern blot (Figure 5A) and qRT-PCR data (Figure 5B-C) showing specific upregulation of Sat1 transcripts but not other repeats (Figure 5\u2014figure supplement 1B). The correlation analysis (C67, r=0.77, n=15) and temporal coincidence (C68) provide strong evidence linking Sat1 derepression to immune activation. The specificity for Sat1 (C66) is important for establishing the mechanism. Sample sizes are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Both sense and antisense Sat1 transcripts are detected in zbtb24 mutants using strand-specific PCR, suggesting the potential for derepressed Sat1 transcripts to form double-stranded RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by TASA-TD strand-specific PCR data (Figure 5D-E) showing both sense and antisense transcripts. The inference that these could form dsRNA (C70) is reasonable and appropriately qualified as 'potential' and 'suggesting'. This is an important mechanistic insight explaining how endogenous transcripts could trigger viral RNA sensors. The technical approach is appropriate for distinguishing strand-specific transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Co-injection of sense and antisense Sat1 RNA into wild-type embryos is sufficient to cause 2-4-fold upregulation of ISGs, while control transcripts (\u03b2-actin or GFP) have no effect. Individual injection of sense or antisense transcripts shows lower-level upregulation, suggesting the response is primarily triggered by Sat1 dsRNA formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by RNA injection experiments (Figure 5F, Figure 5\u2014figure supplement 2) with appropriate controls. The sufficiency of Sat1 RNA to trigger ISG expression (C71) is a critical causal demonstration. The specificity is shown by lack of effect with control RNAs (C72). The stronger response to co-injection versus individual strands (C73-C74) supports the dsRNA model. Sample sizes are adequate (n\u22653 with 20 embryos per replicate). This is a key experiment establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Homozygous mutation of mda5 is sufficient to restore stat1b and irf7 expression to wild-type levels in zbtb24\u0394/\u0394 mutants, identifying Mda5 as the primary pattern recognition receptor required for the immune response. RNA-seq confirms that a broad panel of ISGs upregulated in zbtb24 single mutants are no longer upregulated in mda5; zbtb24 double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by qRT-PCR (Figure 6A-B, n\u22656-7) and RNA-seq data (Figure 6C) showing complete rescue of ISG expression in mda5; zbtb24 double mutants. The genetic epistasis clearly identifies MDA5 as the primary receptor. The RNA-seq validation (C78) demonstrates the effect is broad across multiple ISGs, not just the tested genes. This is a definitive identification of the receptor and represents a major mechanistic advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors propose a model where loss of Zbtb24 function causes hypomethylation of pericentromeric Sat1 repeats, leading to derepression of Sat1 transcripts that are recognized by Mda5, which signals through Mavs and Irf7 to upregulate ISGs. This identifies pericentromeric RNA as a trigger of autoimmunity and reveals functions for pericentromeric methylation in suppressing immunostimulatory transcripts, with innate immune induction being one of the earliest consequences of pericentromeric methylation loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 represent the integrated model supported by the collective evidence from methylation analysis (C24-C45), transcript derepression (C65-C70), RNA injection experiments (C71-C75), and genetic epistasis (C57-C62, C76-C78). The model is well-supported by converging lines of evidence establishing: (1) pericentromeric hypomethylation, (2) Sat1 transcript derepression, (3) sufficiency of Sat1 RNA to trigger response, and (4) requirement for Mda5/Mavs pathway. The conclusions about autoimmunity triggers (C84-C85) and timing (C86) are appropriately supported by the temporal correlation between methylation loss and immune activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The zbtb24 mutant zebrafish provides an important new resource for understanding ICF disease etiology during juvenile and adult life stages, as previous mouse models resulted in perinatal or embryonic lethality. The model will be particularly useful for studying immunoglobulin deficiency, which has not been observed in mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by citations to prior work showing lethality in mouse models (C88) and the viability of the zebrafish model demonstrated throughout the manuscript. The statement about immunoglobulin deficiency not being observed in mouse models (C90) is presented as established knowledge. The prospective utility (C89) is appropriately qualified as future work. This represents an important advance in disease modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The general methylation landscape in human ICF syndrome and zbtb24 mutant zebrafish is similar, with ICF patients showing methylation changes >20% at ~3% of CpGs and no significant changes in retrovirus/dispersed repeat methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 compare the zebrafish ERRBS data to published human ICF patient data. The comparison is appropriate and shows similar patterns (1.3% vs 3% of CpGs with >20% changes, no retrovirus methylation changes). The citations support the human data (C92-C93). This validates the zebrafish model as recapitulating the human methylation landscape. The inference of similarity (C91) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The low-level methylation changes outside pericentromeres raise the possibility that zbtb24 may have additional modest roles in maintaining methylation at non-pericentromeric sequences. However, ERRBS may underrepresent CpG-poor sequences, potentially missing additional DMRs in these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 appropriately acknowledge limitations and alternative interpretations. The speculation about additional roles (C94) is reasonable given the ~10% global reduction observed. The caveat about ERRBS limitations (C95-C96) is an important methodological consideration that is appropriately stated as established knowledge and possibility. These claims demonstrate appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The progressive loss of 5mC in somatic tissues implicates Zbtb24 in long-term maintenance of pericentromeric methylation. The authors speculate the onset around 2 wpf reflects maternal zbtb24 depletion and cumulative methylation losses over cell divisions. ICF-like growth defects emerge following Sat1 methylation loss, and one ICF type 2 case showed age-dependent symptom development, suggesting progressive methylation loss may impact human ICF etiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 integrate the temporal data with mechanistic speculation and clinical correlation. The inference about maintenance function (C97) is well-supported by the progressive nature of methylation loss. The mechanistic speculation (C98-C99) is appropriately qualified and reasonable. The temporal relationship between methylation loss and phenotypes (C100) is supported by the data. The human case report citation (C101) and speculation about human relevance (C102) are appropriately qualified. These represent reasonable interpretations and hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors speculate that Zbtb24 may function in both maintenance and establishment of pericentromeric methylation, but establishment requirements may be masked by maternal RNA. However, the sterility of zbtb24 mutants prevents generation of maternal-zygotic mutants needed to test this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 acknowledge an alternative hypothesis and experimental limitation. The speculation (C103-C104) is appropriately qualified as 'possible' and represents reasonable scientific consideration of alternative models. The limitation (C105) is factually supported by the sterility data (C14-C15). This demonstrates appropriate acknowledgment of what cannot be tested with the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Previous studies suggested ZBTB24 regulates methylation through transcriptional control of CDCA7, consistent with near-complete loss of cdca7 expression observed in zbtb24 mutants. However, a proposed ZBTB24 binding motif (AGGTCCTGGCAG) from human cell studies was not found in zebrafish cdca7 or Sat1 sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 appropriately cite prior work and validate one model (transcriptional regulation of CDCA7, C106-C107) while finding no support for another (direct DNA binding model, C108-C109). The cdca7 expression data (C107, Figure 6\u2014figure supplement 1) supports the transcriptional model. The motif analysis (C109) is appropriate and the negative result is important for understanding mechanism. This represents good integration of current findings with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Activation of interferon signaling is identified as one of the earliest in vivo consequences of pericentromeric hypomethylation. This cannot be attributed to adaptive immunity defects since the zebrafish adaptive immune system is not functional until ~4 wpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by the temporal data showing ISG upregulation at 2-3 wpf (before adaptive immunity at 4 wpf). The citation about zebrafish immune development (C112) supports the reasoning. This is an important conclusion establishing the primary nature of the innate immune response and ruling out secondary effects from adaptive immunity defects. The logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Prior studies attributed interferon responses in globally hypomethylated cells to endogenous retroviral element derepression. The current study distinguishes itself by identifying pericentromeric sequence hypomethylation and satellite transcript derepression as a previously unappreciated trigger of innate immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 appropriately cite prior work (C113-C115) and clearly distinguish the current findings (C116). The distinction is valid given that retroviruses/transposable elements show normal methylation in zbtb24 mutants (C44, C66) while pericentromeric sequences are specifically hypomethylated. This represents an important conceptual advance in understanding methylation-immune interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "While prior studies noted immunostimulatory motifs in pericentromeric RNAs and observed such transcripts in p53-null fibroblasts, experimental evidence supporting pericentromeric hypomethylation driving interferon responses was lacking. This study demonstrates a causative link and identifies Mda5/Mavs requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 appropriately cite prior suggestive evidence (C117-C119) while identifying the gap in experimental proof (C120). The current study fills this gap with the RNA injection experiments (C71-C75) demonstrating causation (C121) and genetic epistasis identifying Mda5/Mavs (C122, C76-C78). This represents a significant advance from correlation to causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The findings suggest aberrant Sat1 transcripts trigger the interferon response by mimicking features of double-stranded RNA viruses in the cytosol, raising the possibility that the Mda5/Mavs pathway may recognize additional endogenous RNAs lacking viral origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 represent reasonable inferences from the data. The suggestion that Sat1 transcripts mimic viral dsRNA (C123-C124) is supported by: (1) detection of sense/antisense transcripts (C69), (2) requirement for Mda5 (which recognizes long dsRNA), and (3) sufficiency of Sat1 RNA injection. The broader speculation about other endogenous RNAs (C125) is appropriately qualified as 'possibility'. These represent logical extensions of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "While mda5/mavs mutation rescues the interferon response in zbtb24 mutants, it has little impact on other ICF phenotypes. Therefore, the interferon response is unlikely to drive ICF etiology but rather represents an additional consequence of pericentromeric hypomethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are supported by observation that mda5/mavs; zbtb24 double mutants still show ICF phenotypes despite rescued ISG expression. This is an important negative result establishing that immune activation is not causal for the core ICF phenotypes. The inference (C127-C128) is logical and appropriately stated. However, the manuscript does not show detailed phenotypic analysis of double mutants, which would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Pericentromeric hypomethylation is compatible with human viability (as seen in ICF syndrome) and occurs in cancer and senescent cells. Massive increases in pericentromeric transcripts and interferon gene upregulation have been noted in cancer, raising the possibility that pericentromeric hypomethylation and RNA derepression may be an underappreciated trigger of autoimmunity in various disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 appropriately cite established knowledge about ICF syndrome and cancer (C129-C132) and draw a reasonable broader implication (C133). The speculation is appropriately qualified as 'possibility' and 'may represent'. The connection to cancer is supported by citations (C131-C132). This represents appropriate discussion of broader significance while acknowledging the speculative nature of extending findings to other diseases.",
+    "result_type": "MINOR"
+  }
+]

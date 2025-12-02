@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C74",
+      "C96",
+      "C97",
+      "C25",
+      "C26",
+      "C98",
+      "C75"
+    ],
+    "result": "Genome-wide CRISPR-Cas9 screens were conducted in 21 OSCC cell lines, primarily derived from Asian patients, identifying 918 context-specific fitness genes after filtering core fitness genes. The screens showed variable numbers of significantly depleted genes across cell lines (525-1399 genes at FDR \u22645%), with >80% being core fitness genes that were filtered out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21, C96, C97, C25, C26, C98, and C75 provide consistent evidence for the screening methodology and results. The number of cell lines (21), their origin (primarily Asian), the filtering approach (removing core fitness genes), and the final count (918 fitness genes) are all well-documented with data shown in Figure 1 and supplementary files. The methodology is clearly described and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Many previously identified HNSCC cancer genes with driver mutations are non-essential for OSCC survival, while specific oncogene addiction was observed for PIK3CA (in 4 cell lines with hotspot mutations), NFE2L2 (in Ho-1-u-1 and BICR10), and HRAS (in ORL-214). More than half of 44 known HNSCC cancer genes were dispensable for cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C37 are well-supported by CRISPR score data shown in Figure 2B-C and cited literature. The observation that HSC-4 with the same PIK3CA mutation as BICR10 shows no dependency is explained by a co-occurring PTEN mutation (C31-C32), demonstrating thoughtful analysis. The mechanistic explanations for NFE2L2 and KEAP1 dependencies are supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The NF-\u03baB signaling pathway is significantly enriched among betel-quid-associated OSCC cell lines, with three pathway genes (NFKB2, TNFAIP3, TRIM25) unique to these models and not found in Caucasian-derived OSCC models from DepMap and Project Score. This finding is consistent with prior studies showing areca nut extract activates NF-\u03baB signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by pathway enrichment analysis (Figure 2D) and comparison with existing databases. The finding is strengthened by citations to prior mechanistic studies (Chiang et al., 2008; Islam et al., 2019; Lin et al., 2005) showing areca nut can activate NF-\u03baB signaling. However, the sample size is limited (n=7 betel-quid-associated vs n=14 non-associated), which the authors acknowledge requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C76",
+      "C28"
+    ],
+    "result": "Tractability assessment of the 918 fitness genes revealed that 45 genes (5%) fall into tractability group 1 with approved drugs or drugs in clinical trials, including PIK3CA and CDK6 already in HNSCC clinical trials. However, about 70% of fitness genes belong to tractability group 3 (least tractable or lacking evidence).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, C76, and C28 are supported by tractability assessment data shown in Figure 2E and supplementary files. The clinical trial identifiers are provided for validation. The finding that most fitness genes are not currently tractable is an important limitation that is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C45",
+      "C46",
+      "C47",
+      "C52",
+      "C53",
+      "C54",
+      "C101",
+      "C102",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "YAP1 and WWTR1 show mutually exclusive dependency patterns in OSCC cell lines: 7 lines are YAP1-dependent, 4 are WWTR1-dependent, and 8 are non-dependent on either. Validation experiments confirmed that depletion of the respective fitness gene (YAP1 or WWTR1) reduces cell viability, increases apoptosis, and suppresses downstream targets CTGF and CYR61 only in dependent cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C45-C47, C52-C54, C101-C102, C108-C110 are well-supported by multiple lines of evidence including CRISPR scores (Figure 3A), co-competition assays (Figure 3C), western blots (Figure 3B), viability assays (Figure 4A), apoptosis assays (Figure 4B), and qPCR of downstream targets (Figure 3D). The validation experiments use appropriate controls (PLK1 as positive control, CHAT and NT as negative controls) and multiple sgRNAs per gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C111"
+    ],
+    "result": "In a subset of OSCC cell lines (BICR10, HSC-2), YAP1 and WWTR1 show compensatory functions where double knockout of both genes drastically depletes cell populations and suppresses CTGF/CYR61 expression, while single knockout of either gene has minimal effect. This demonstrates functional redundancy between the paralogs in these specific cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, and C111 are supported by double knockout experiments shown in Figure 5B-C. The co-competition assay with dual fluorescent markers (BFP and mCherry) is an appropriate experimental design. Western blots confirm successful double knockout (Figure 5A), and qPCR shows substantial downregulation of downstream targets only with double knockout. This is a key mechanistic finding explaining the non-dependent phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C99",
+      "C100"
+    ],
+    "result": "The majority of WWTR1-dependent cell lines have copy number amplification of genes on chromosome 3q25-28 (including WWTR1, PIK3CA, SOX2, TP63), but only WWTR1 CRISPR scores are significantly different between amplified and non-amplified groups (p<0.001). Cell lines neither dependent on YAP1 nor WWTR1 show enrichment of PIK3CA mutations (p=0.0003), with 5/6 such lines harboring PIK3CA hotspot mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C99-C100 are supported by copy number analysis (Figure 3A, Figure 3\u2014figure supplement 2C-D) and statistical testing. The finding that only WWTR1 dependency correlates with 3q25-28 amplification, despite co-amplification of PIK3CA, SOX2, and TP63, suggests WWTR1 is a driver rather than passenger gene. The enrichment of PIK3CA mutations in non-dependent lines is statistically significant and suggests an alternative mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C64"
+    ],
+    "result": "Gene expression signatures derived from cell lines with validated YAP1/WWTR1 dependencies identified corresponding OSCC tumor subsets in TCGA: 41 tumors (13%) with high YAP1 dependency signature, 30 tumors (9.5%) with high WWTR1 dependency signature, and 34 tumors (11%) with high compensable signature. GSEA revealed distinct pathway enrichments: YAP1-dependent tumors showed cell cycle pathway enrichment, WWTR1-dependent tumors showed immune-related pathway enrichment, and compensable tumors showed metabolism-related pathway enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C62, C64 are supported by the DEG-based signature analysis workflow (Figure 6\u2014figure supplement 1A-B), hierarchical clustering (Figure 6A-B), and GSEA results (Figure 6C). The methodology for computing dependency signature scores is clearly described. The pathway enrichments are consistent with known biology (e.g., YAP1 regulating E2F/MYC targets per C61). However, the signature approach relies on a limited number of cell lines (3 per group) for DEG derivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "OSCC tumors with high WWTR1 dependency signature score are significantly associated with biomarkers of favorable response to immunotherapy, including higher immune infiltration, elevated IFN-\u03b3 response, higher CD8+ T cell scores, significantly higher PD-L1 mRNA expression, and higher 18-gene T-cell inflamed GEP scores compared to other groups. qPCR validation confirmed that PD-L1 expression is specifically suppressed by WWTR1 knockout but not by knockout of co-amplified genes (PIK3CA, TP63, SOX2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24, C66-C73 are well-supported by multiple analyses: ssGSEA for stromal/immune signatures (Figure 6D), immune-related scores from Thorsson et al. 2018 (Figure 6E), PD-L1 expression (Figure 6F), 18-gene GEP scores (Figure 6G), and validation experiments (Figure 6\u2014figure supplement 3A-B). The statistical tests use appropriate corrections for unequal sample sizes (Welch's t-test). The association with established immunotherapy biomarkers (PD-L1, 18-gene GEP per C112) strengthens clinical relevance. However, TMB association is not statistically significant (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C77"
+    ],
+    "result": "Pathway enrichment analysis revealed that ubiquitin-mediated proteolysis and cellular senescence pathways are common across all cell lines, while NF-\u03baB and MAPK signaling pathways are selectively enriched in subsets. Comparison with previous RNAi screens identified overlapping cell cycle genes (CKAP5, KPNB1, RAN, TPX2, KIF11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C77 are supported by pathway enrichment analysis (Figure 2\u2014figure supplement 1A-B) and comparison with prior RNAi screens (Martens-de Kemp et al., 2013). The overlap with RNAi screens validates the CRISPR approach, though the authors note that stringent core fitness gene filtering removed some of these genes from the final 918 gene list.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C51",
+      "C79",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "YAP1 or WWTR1 amplifications occur in approximately 19% of HNSCC (YAP1: 5.5%, WWTR1: 14.3%), and the paralogs share ~46-60% amino acid sequence similarity. None of the 21 OSCC cell lines showed YAP1 amplification on 11q22. WWTR1 gene expression showed significant negative correlation with dependency in 273 cancer cell lines (Pearson R=-0.570, p=3e-25) but non-significant correlation in 21 OSCC lines (Pearson R=-0.354, p=0.116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C51, C79, C103-C105 are supported by citations (Wang et al., 2018; Guo and Teng, 2015), copy number analysis, and correlation analysis (Figure 3\u2014figure supplement 3B-C). The lack of YAP1 amplification despite YAP1 dependency suggests non-genomic activation mechanisms. The correlation analysis in Project Score data (273 cell lines) is statistically significant, but the correlation in the 21 OSCC lines is not, likely due to smaller sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C82",
+      "C83",
+      "C90"
+    ],
+    "result": "All three YAP1/WWTR1 compensable cell lines (BICR10, HSC-2, HSC-4) harbor PIK3CA mutations. Prior studies show that PIK3CA overexpression correlates with YAP1 activation, PI3K activation inhibits the Hippo pathway leading to YAP1 activation, and YAP1/WWTR1 can mediate mutant PIK3CA-induced tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65, C82-C83, C90 are supported by mutation data and appropriate citations (Garc\u00eda-Escudero et al., 2018; Fan et al., 2013; Zhao et al., 2018). However, the mechanistic relationship between PIK3CA mutations and YAP1/WWTR1 compensation remains unclear. The authors acknowledge that \"confirmatory and mechanistic studies will be needed to delineate why YAP1 and WWTR1 function can be compensated in these PIK3CA-mutated cell lines.\" The observation is intriguing but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The YAP1-dependent cell line SAS harbors a YAP1-MAML2 fusion protein, and CTGF and CYR61 are canonical transcriptional targets of YAP1 and WWTR1 in OSCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by citations (Picco et al., 2019 for the fusion; Hiemer et al., 2015 for CTGF/CYR61 as targets). The fusion protein finding is validated by differential sgRNA depletion patterns (Figure 3\u2014figure supplement 4B) showing that sgRNAs targeting early exons (present in fusion) are depleted while those targeting later exons are not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims establishing the clinical context of OSCC: prevalence in Asian countries, association with risk factors (betel quid, tobacco, alcohol), 50% 5-year survival rate, surgery as mainstay treatment, marginal improvement with cetuximab, 13-36% response rate to checkpoint inhibitors, and the need for new therapeutic targets. CRISPR-Cas9 technology has advantages over RNAi, and existing Cancer Dependency Map screens lack representation of Asian OSCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C20 are background/context claims supported by appropriate citations to established literature. These claims provide the rationale for the study but are not novel findings. The citations appear appropriate and the statements are consistent with current knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C78",
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Discussion claims contextualizing findings with prior literature: E2F and MYC as YAP1/TEAD downstream regulators, WWTR1's role in immunity and PD-L1 upregulation, distinct roles of YAP1 vs WWTR1 in OSCC/HNSCC, relationships with PIK3CA/TP63/SOX2, current YAP1 inhibitors also targeting WWTR1, FAT1 mutations and YAP1 activation, Hippo pathway inactivation and immune response, and differential effects of YAP1 vs WWTR1 on T-cell differentiation and PD-L1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63, C78, C80-C81, C84-C89, C91-C95 are discussion points supported by appropriate citations to prior literature. These claims contextualize the current findings within existing knowledge but are not novel findings from this study. The citations appear appropriate and the interpretations are reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The 18-gene T-cell inflamed GEP is a clinically validated biomarker of response to pembrolizumab in HNSCC clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by citations to clinical validation studies (Ayers et al., 2017; Cristescu et al., 2018). This establishes the clinical relevance of using this biomarker to assess the WWTR1-dependent OSCC subset. The use of a clinically validated biomarker strengthens the translational implications of the findings.",
+    "result_type": "MINOR"
+  }
+]

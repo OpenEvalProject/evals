@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C94",
+      "C95",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The study collected 3D trajectory data from 18 flocks of four shorebird species (dunlin, dowitcher, avocet, godwit) spanning a seven-fold range in body mass, using multi-camera videography in Humboldt Bay, California. This resulted in 1,598,169 3D position measurements from flocks ranging from 189 to 1039 individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data collection methodology is clearly described with specific technical details (camera specifications, frame rates, locations). The sample sizes, species composition, and measurement counts are explicitly stated and supported by Table 1. The methods appear sound for 3D trajectory reconstruction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Shorebirds adopt alignment rules specifically for neighbors flying within the same horizontal plane (\u00b11 wingspan), with 56% of nearest neighbors in this slice showing distinctly peaked distributions in lateral and front-back positioning. Birds outside this elevation slice were distributed randomly, and birds flew at approximately the same height as their nearest leading neighbor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by clear distributional analysis shown in Figure 2, with specific percentages and statistical descriptions. The distinction between in-plane and out-of-plane neighbor distributions is well-documented. The vertical positioning measurement (\u22120.01 \u00b1 0.02 m) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Shorebirds adhere to a non-dimensional spacing rule where lateral distance scales linearly with wingspan (approximately one wingspan, mean 1.04), independent of flock density, while trailing distance varies with flock density. Wingspan strongly predicts modal lateral position (R\u00b2=0.93, p<0.0001) and front-back distance (R\u00b2=0.86, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analyses are robust with high R\u00b2 values and significant p-values. The non-dimensionalization by wingspan is appropriate and reveals consistent patterns across species. The independence of lateral spacing from flock density (p=0.30) and dependence of trailing distance on density (p=0.0002) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "In mixed-species flocks, both godwits and dowitchers adjust their lateral spacing based on the species of their neighbor, with statistically significant differences when following conspecifics versus heterospecifics (p<0.0004 for godwits, p<0.0003 for dowitchers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mixed-species flock data provide strong evidence for flexible spacing rules. The Mann-Whitney U tests show significant differences, and the measurements demonstrate that birds adjust spacing toward approximately one wingspan when calculated using average wingspans of both species. Sample sizes are adequate (n1=1034, n2=81 for godwits; n1=743, n2=149 for dowitchers).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Simple-V formations of godwits showed similar but slightly tighter spacing than compound-V formations, with modal lateral position of 0.8 wingspans (vs. 0.96 in compound-V, p<0.0001) and modal trailing distance of 0.50 wingspans (vs. 0.86 in compound-V).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between simple-V and compound-V formations is supported by statistical analysis (GLM, p<0.0001) and specific measurements. However, the sample size for simple-V formations is limited (4 flocks, 16-44 individuals, 42-211 frames), which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Flocks exhibited consistent left-right asymmetry at all spatial scales, with the direction of asymmetry independent of camera viewing direction and turning direction but positively correlated with wind direction (see Table 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The asymmetry pattern is clearly documented across 18 flocks (12 right-aligned, 6 left-aligned) and persists at multiple spatial scales as shown in Figure 6. The statistical tests in Table 2 appropriately test for confounding factors. The correlation with wind direction (p=0.02) is significant, though the R\u00b2=0.29 indicates moderate effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Species-specific flight characteristics and within-flock position effects were observed: different species had characteristic flapping frequencies and speeds (p<0.00001), birds at the front flew faster with lower flapping frequency than those at the rear (p<0.00001, p<0.00006), and birds at the edge flew faster than those in the middle (p<0.00001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The linear mixed-effects models appropriately account for multiple factors and nested structure. The highly significant p-values and large sample size (N=3306 individuals with wingbeat data) provide strong support. However, the manuscript notes that wingbeat data were only available from 6 cluster flocks and excluded the smallest species (dunlin), which limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Birds flying in aerodynamic interaction positions (0.7-1.5 wingspans lateral, within 2 wingspans overall distance) flew faster than expected (p<0.00001) but showed no effect on flapping frequency (p=0.30 when added to best model, BIC increased by 6.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding of increased speed without decreased flapping frequency is well-supported by model selection using BIC and appropriate statistical tests. However, this result is counterintuitive compared to theoretical predictions (which expect reduced flapping frequency), and the authors acknowledge this discrepancy. The lack of precise wind measurements limits interpretation of aerodynamic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "No evidence was found for temporal or spatial wingbeat synchronization in either compound-V formations (N=117, p=0.14 and p=0.27) or simple-V formations (N=39, p=0.90 and p=0.63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Rayleigh tests are appropriate for circular data and show non-significant results. However, the sample sizes are relatively small (117 and 39 pairs), and the manuscript notes that pairs needed at least 20 frames of simultaneous data, which may have limited the analysis. The lack of synchronization contrasts with findings in other V-formation species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C100",
+      "C103",
+      "C104"
+    ],
+    "result": "The study documents a novel flock structure termed the 'compound-V formation' observed across all four species, where local alignment rules (one-wingspan lateral offset within \u00b11 wingspan elevation) propagate to create global flock structure at all spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The compound-V formation is well-characterized through multiple lines of evidence: neighbor positioning analysis, scaling relationships, and spatial structure analysis. The observation across four species with seven-fold mass range strengthens the finding. The comparison to previously described 'cluster' formations provides context. This is the primary novel contribution of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Global flock alignment was responsive to local wind conditions (Table 2), but wind did not have discernible effects on local alignment, possibly due to measurement uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Table 2 shows a significant correlation between wind direction and flock asymmetry (p=0.02), the authors acknowledge uncertainty in wind measurements (estimated from bird flight patterns rather than direct measurement). The lack of local alignment effects could be real or due to measurement limitations. The R\u00b2=0.29 indicates substantial unexplained variance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mixed-species flocks represented ~10% of the dataset, consistent with literature. Species with similar airspeeds (godwits 9.64\u00b11.53 m/s, dowitchers 8.99\u00b11.92 m/s, mixed flocks 9.02\u00b10.34 m/s) formed mixed flocks, while species with different speeds (dunlin 7.58\u00b10.11 m/s, avocet 8.04\u00b10.13 m/s) did not mix despite similar speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The airspeed data support the hypothesis that speed similarity enables mixed-species flocking for godwits and dowitchers. However, the sample sizes for mixed flocks (n=2) and some single-species flocks (n=3) are very small, limiting statistical power. The observation that dunlin and avocets don't mix despite similar speeds suggests additional factors (body size, maneuverability) are important, but these remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Flight speed variation with position (front-to-rear, center-to-margin) implies flocks were not in equilibrium, potentially causing larger flocks to separate over time, consistent with observations that arrival groups are smaller than departure groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speed variation is well-documented (C38, C39), but the inference that this causes flock separation is speculative. The citation to Piersma et al. (1990) provides some support for the pattern of decreasing flock size during migration, but the causal link is not demonstrated. This remains a plausible hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Collision avoidance is unlikely to explain compound-V or simple-V formations because birds fly in the same horizontal plane with many birds in front of and behind one another, and even simple-V formations showed ~20% wingspan overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The argument against collision avoidance is well-reasoned and supported by the data showing horizontal plane preference and wingspan overlap. The comparison to chimney swifts (which adopt 3D spacing more consistent with collision avoidance) strengthens the argument. However, this is a negative result\u2014ruling out one hypothesis rather than confirming an alternative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Hypotheses based on optimal alignment angles for information transfer (Dill et al. 1997: 35.3\u00b0 or 63.4\u00b0) are not well supported, as observed angles ranged from 33.7-51.8\u00b0 (mean 41.2\u00b0) and flocks were more organized in lateral distance than alignment angle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to theoretical predictions is appropriate, and the data clearly show that neither the mean angle nor the range is consistent with single optimal angle hypotheses. The finding that lateral spacing is more constrained than trailing distance (and thus alignment angle) is well-supported by the regression analyses (C15, C16, C17, C18). This effectively rules out angle-based optimization hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Aerodynamic benefits might explain compound-V formation adoption, as 29.7% of nearest neighbors were in aerodynamic positions (vs. 3.4% in chimney swifts), and birds in these positions flew faster, potentially reducing cost of transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The hypothesis is plausible and supported by the higher proportion of aerodynamic positioning compared to chimney swifts and the speed increase in aerodynamic positions (C41). However, the authors acknowledge this interpretation is speculative and raises unresolved questions (C88, C89, C90). The lack of flapping frequency reduction contradicts theoretical predictions. The absence of precise wind measurements limits interpretation of aerodynamic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Multiple unresolved questions remain about compound-V formations, including how birds maintain different speeds without separating, why aerodynamic benefits manifest as speed increases rather than reduced flapping frequency, and whether single adjustment rules can produce both simple-V and compound-V formations. The current dataset cannot provide definitive explanations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the limitations of their study and identify specific unresolved questions. The call for future work using on-bird loggers and theoretical modeling is reasonable. This honest assessment of limitations strengthens rather than weakens the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The study species diverged approximately 50 million years ago, providing time for evolutionary diversification of flocking behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The citation to Baker et al. (2007) for molecular dating is appropriate, and the inference about time for behavioral diversification is reasonable. However, the observation that all four species show the same compound-V formation despite this divergence time suggests either strong convergent evolution or ancestral behavior, which the manuscript does not fully address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The initial hypotheses that larger species would have more structured flocks and more frequent aerodynamic positioning were not supported. Instead, all four species showed the compound-V formation regardless of body size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The manuscript clearly states the a priori hypotheses and that they were not supported by the data. This is scientifically valuable as it challenges existing assumptions about body size effects on flocking behavior. The finding that all species show similar structure despite seven-fold mass range is surprising and important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C105"
+    ],
+    "result": "The compound-V formation might be an adaptation for aerodynamic flocking in migratory species and represents an intermediary between starling cluster flocks and goose simple-V formations, suggesting ecology is an underappreciated driver of flocking behavior evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative conclusions that extend beyond what the data directly support. While the compound-V formation is well-characterized and its intermediate nature between cluster and simple-V is reasonable, the adaptive significance and role of ecology remain hypotheses. The manuscript provides suggestive evidence but acknowledges (C91) that definitive explanations require additional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Prior to this study, comparative data across species were limited, with most quantitative research focused on starlings, pigeons, and V-formation species, making it difficult to determine what factors cause birds to adopt specific formations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review appropriately cites relevant prior work and accurately characterizes the state of the field. The identification of this knowledge gap provides strong motivation for the current study. The citations are appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "Species identification in mixed-species flocks using computer vision had an expected error rate of 3.3%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The error rate is calculated from fitting two normal distributions to scaled area data (Figure 8), which is an appropriate method. The 3.3% error rate is acceptably low for this type of analysis. The methodology for species identification based on body size differences is sound.",
+    "result_type": "MINOR"
+  }
+]

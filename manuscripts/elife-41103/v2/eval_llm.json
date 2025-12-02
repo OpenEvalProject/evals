@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C57"
+    ],
+    "result": "The authors developed a novel FRET-based method using the fluorescent non-canonical amino acid ANAP incorporated at position Y1353 of SUR1's NBS2 to measure real-time nucleotide binding. TNP-nucleotides bound to NBS2 with EC50 values of ~4.8 \u00b5M for MgTNP-ADP and ~29.3 \u00b5M for MgTNP-ATP in the presence of Mg2+, and ~6.1 \u00b5M and ~8.5 \u00b5M respectively in the absence of Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 collectively establish a novel method for measuring nucleotide binding to KATP channels. The FRET approach is well-validated through multiple controls (C56), structural rationale (C54), and consistent EC50 measurements across conditions (C19-C22). The method successfully distinguishes binding at NBS2 from other sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Nucleotides bind to NBS2 in the absence of Mg2+, but Mg2+ is required to trigger a conformational change involving NBD dimerization. TNP-ADP dissociation was greatly slowed by Mg2+ (p=0.001), and tolbutamide experiments demonstrated that the slower off-rate results from NBD dimerization rather than direct Mg2+ stabilization of nucleotide binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C22, C25-C28 provide strong experimental evidence for Mg2+-independent binding but Mg2+-dependent conformational change. The tolbutamide control (C27-C28) is particularly compelling, showing that preventing NBD dimerization eliminates the Mg2+-dependent slowing of dissociation. The interpretation linking this to NBD dimerization (C41-C43) is well-supported by structural data and dissociation kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The K1384A mutation in the WalkerA motif of NBS2 disrupts the Mg2+-dependent conformational change without affecting intrinsic nucleotide affinity. The mutation increased the EC50 for MgTNP-ADP binding from 4.8 \u00b5M to 18.6 \u00b5M (p=0.04) and increased the off-rate for MgTNP-ADP, but had no effect on binding in the absence of Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C31-C34 demonstrate that K1384A selectively disrupts the Mg2+-dependent conformational change. The observation that the mutation only affects binding in the presence of Mg2+ (C31-C32) while leaving Mg2+-free binding unchanged provides strong evidence for the interpretation that K1384A destabilizes NBD dimerization (C34) rather than affecting intrinsic nucleotide affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C44",
+      "C45"
+    ],
+    "result": "Sulfonylureas prevent NBD dimerization while K+ channel openers (KCOs) stabilize it. Diazoxide greatly reduced dissociation rates for both MgTNP-ADP and MgTNP-ATP, while tolbutamide accelerated dissociation to rates similar to those in the absence of Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C44-C45 are well-supported by the dissociation kinetics data (Figure 2c-e). The opposing effects of tolbutamide and diazoxide on nucleotide dissociation rates provide strong evidence for their proposed mechanisms of action. These findings are consistent with structural data (C81-C82) and previous electrophysiology studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors correlated nucleotide binding with channel activation using SUR1-T1397*/Kir6.2-G334D. The EC50 for MgTNP-ADP activation (7.3 \u00b5M) was similar to the EC50 for binding (10.8 \u00b5M). Fitting combined binding and activation data to a Monod-Wyman-Changeux model suggests that each nucleotide binding event to NBS2 is independent and promotes KATP activation by the same amount.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C40, C6-C7 present an important mechanistic model, but the evaluation is uncertain due to acknowledged limitations. The authors note that binding and activation were measured in separate experiments (not simultaneously), that the true Popen values are difficult to determine due to channel rundown, and that alternative models (requiring 2 binding events) also provide reasonable fits to the data. While the MWC model fits best (R\u00b2=0.98, RSS=0.15), the authors acknowledge that 'further experimentation will be required to truly distinguish between these competing models.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C60"
+    ],
+    "result": "Mg2+ decreases the intrinsic on-rate (kon) for nucleotide binding to NBS2, in addition to stabilizing NBD dimerization. This conclusion is based on the rightward shift in EC50 for MgTNP-ATP binding compared to TNP-ATP in the absence of Mg2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C60 are supported by the observation that Mg2+ causes a rightward shift in the concentration-response curve for TNP-ATP (Figure 1\u2014figure supplement 4b). The authors correctly reason that if Mg2+ only stabilized the dimerized state (increasing \u03b2/\u03b1 ratio), the EC50 should not shift right. The rightward shift indicates that Mg2+ must also affect kon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C48"
+    ],
+    "result": "ATP hydrolysis is not required for KATP channel activation. MgADP activates channels as effectively as MgATP, and the faster dissociation of MgTNP-ATP compared to MgTNP-ADP (t0.5 = 10.5 s vs 14.7 s) suggests that ATP hydrolysis did not occur during the experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are well-supported by the dissociation kinetics data and previous literature (C48). The logic is sound: if MgTNP-ATP were hydrolyzed to MgTNP-ADP before release, the dissociation rates should be similar. The faster dissociation of MgTNP-ATP argues against hydrolysis occurring during the experimental timescale. This is consistent with MgADP being as effective as MgATP for activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C58",
+      "C59"
+    ],
+    "result": "The FRET signal observed primarily reflects TNP-nucleotide binding at NBS2 rather than NBS1 or the inhibitory site on Kir6.2. This is supported by distance calculations and experiments with Kir6.2-G334D showing similar EC50 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C58-C59 provide strong evidence that the measured FRET signal specifically reports on NBS2 binding. The distance-based FRET efficiency calculations (C58), the use of Kir6.2-G334D to eliminate inhibitory site binding (C23-C24), and the similar EC50 values between wild-type and G334D Kir6.2 (C59) collectively support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C35"
+    ],
+    "result": "SUR1-Y1353* fails to support nucleotide activation of KATP channels. Truncated SUR1-Y1353stop channels were not activated by MgADP, and full-length SUR1-Y1353* (with ANAP incorporated) also showed no activation in electrophysiology experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72, C35 are well-supported by multiple lines of evidence including electrophysiology (C69-C72) and surface expression assays. The authors provide appropriate controls showing that wild-type SUR1 activates normally (C70) while truncated and ANAP-labeled Y1353 constructs do not (C71-C72). This limitation led to the development of the T1397* construct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C36"
+    ],
+    "result": "SUR1-T1397* was developed as an alternative ANAP labeling site that supports both nucleotide binding measurements and channel activation. This construct showed >95% full-length protein expression, bound TNP-nucleotides similarly to Y1353*, and supported activation by both MgADP and MgTNP-ADP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79, C36 demonstrate successful development of a functional ANAP-labeled construct. The western blot data (C75), surface expression assays (C73-C74), binding measurements (C77-C78), and electrophysiology (C79, C36) collectively validate T1397* as a suitable alternative to Y1353* for correlating binding with activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The affinities measured for TNP-nucleotides are higher than those previously estimated from photoaffinity labeling or ATPase assays, but are in reasonable agreement with EC50 values for MgATP/MgADP activation of KATP currents from previous electrophysiology studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 appropriately contextualize the binding measurements relative to prior work. The authors acknowledge the discrepancy with some previous studies (C46) while noting consistency with electrophysiology data (C47). They provide reasonable explanations for the differences (absence of Kir6.2 in prior studies, higher affinity of TNP-nucleotides).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The nucleotide dissociation rates measured in the presence of Mg2+ are slower than the deactivation rates observed for currents following nucleotide washout. This difference is explained by current decay reflecting a conformational change rather than nucleotide dissociation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 acknowledge an apparent discrepancy between binding and electrophysiology measurements and provide a reasonable explanation. The interpretation (C64) that current decay reflects conformational changes rather than direct nucleotide dissociation is logical and consistent with the multi-step activation model proposed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C80"
+    ],
+    "result": "Background claims establishing the structure and function of KATP channels, including the three classes of nucleotide binding sites, the tetrameric structure with Kir6.2 and SUR1 subunits, and the roles of NBS1 and NBS2 in channel regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C18, C80 provide established background knowledge about KATP channels, all supported by appropriate citations to prior literature. These claims set the context for the current study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Discussion of prior work on sulfonylureas, K+ channel openers, and Mg2+-free ATP activation, including structural and functional studies from other groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 accurately cite and discuss prior work relevant to interpreting the current findings. The authors appropriately note where their results agree (C81-C82) or differ (C86) from previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Alternative interpretations for the faster dissociation of MgTNP-ATP compared to MgTNP-ADP, including possible destabilizing effects of inorganic phosphate if hydrolysis occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 present alternative interpretations for the dissociation rate data. While C87 is the authors' preferred interpretation (supported by the data), C88 is explicitly labeled as speculation ('Alternatively, this may indicate...'). The authors appropriately acknowledge uncertainty about the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The FRET-based method developed is adaptable to studying other ABC proteins, ATP-gated channels like P2X receptors, and any protein with suitable fluorescent ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is speculative about future applications of the method. While the method is novel and potentially broadly applicable, no data are presented demonstrating its use in other systems. This represents a reasonable prediction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

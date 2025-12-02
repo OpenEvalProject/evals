@@ -1,0 +1,2032 @@
+{
+  "submission": {
+    "id": "f9e84fa8-9129-41ec-84b8-dca6d370d47d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:47:11.448893Z",
+    "updated_at": "2025-12-02T06:47:11.448893Z"
+  },
+  "content": [
+    {
+      "id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "submission_id": "f9e84fa8-9129-41ec-84b8-dca6d370d47d",
+      "content_type": "manuscript",
+      "content_text": "# Morphogenetic degeneracies in the actomyosin cortex\n\n## Authors\n\n- Sundar Ram Naganathan<sup>1</sup> ([ORCID: 0000-0001-5106-8687](https://orcid.org/0000-0001-5106-8687)) \u2020\n- Sebastian F\u00fcrthauer<sup>2</sup> ([ORCID: 0000-0001-9581-5963](https://orcid.org/0000-0001-9581-5963))\n- Josana Rodriguez<sup>3</sup> ([ORCID: 0000-0001-8800-1283](https://orcid.org/0000-0001-8800-1283))\n- Bruno Thomas Fievet<sup>4</sup>\n- Frank J\u00fclicher<sup>2</sup> ([ORCID: 0000-0003-4731-9185](https://orcid.org/0000-0003-4731-9185))\n- Julie Ahringer<sup>4</sup> ([ORCID: 0000-0002-7074-4051](https://orcid.org/0000-0002-7074-4051))\n- Carlo Vittorio Cannistraci<sup>5</sup> ([ORCID: 0000-0003-0100-8410](https://orcid.org/0000-0003-0100-8410))\n- Stephan W Grill<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n2. Max Planck Institute for the Physics of Complex Systems Dresden Germany\n3. Institute for Cell and Molecular Biosciences Newcastle University Newcastle United Kingdom\n4. Wellcome Trust/Cancer Research UK Gurdon Institute Cambridge United Kingdom\n5. BIOTEC Technische Universit\u00e4t Dresden Dresden Germany\n6. Brain Bio-Inspired Computing (BBC) Lab IRCCS Centro Neurolesi \u201cBonino Pulejo\u201d Messina Italy\n7. Center for Computational Biology Flatiron Institute New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOne of the great challenges in biology is to understand the mechanisms by which morphogenetic processes arise from molecular activities. We investigated this problem in the context of actomyosin-based cortical flow in C. elegans zygotes, where large-scale flows emerge from the collective action of actomyosin filaments and actin binding proteins (ABPs). Large-scale flow dynamics can be captured by active gel theory by considering force balances and conservation laws in the actomyosin cortex. However, which molecular activities contribute to flow dynamics and large-scale physical properties such as viscosity and active torque is largely unknown. By performing a candidate RNAi screen of ABPs and actomyosin regulators we demonstrate that perturbing distinct molecular processes can lead to similar flow phenotypes. This is indicative for a \u2018morphogenetic degeneracy\u2019 where multiple molecular processes contribute to the same large-scale physical property. We speculate that morphogenetic degeneracies contribute to the robustness of bulk biological matter in development.\n\n## Introduction\n\nCell and tissue-scale morphogenetic processes are driven by well-orchestrated molecular activities and signalling pathways. Over the last three decades, mutational and RNAi-based genetic screens have provided a catalogue of proteins that are involved in various developmental processes (Perrimon et al., 2010; Mohr and Perrimon, 2012). But we are still a long way from understanding the mechanisms by which molecular-scale activities drive large-scale events such as actomyosin-driven flows, cell division and migration. To advance this problem, we reasoned that one way to connect molecular activities to large-scale functions is to assess phenotypic consequences of individual gene inhibitions at larger scales, and analyse these in the context of a physical theory. This would allow us to investigate which effective material properties are changed by which molecular perturbation, an important step forward that allows understanding of developmental processes across scales.\n\nWe pursued this approach in the context of actomyosin-based cortical flow during polarity establishment in C. elegans zygotes. Cortical flow is vital for cell polarization, migration (Bray and White, 1988; Callan-Jones et al., 2016; Ruprecht et al., 2015; Maiuri et al., 2015; Liu et al., 2015) as well as for formation of contractile ring during cell division (Turlier et al., 2014; Reymann et al., 2016; Salbreux et al., 2009).\u00a0In C. elegans, cortical flow is driven by a gradient in myosin activity (contractility) (Mayer et al., 2010), transporting the anterior polarity proteins, PAR-3, PAR-6 and aPKC to the appropriate region of the cortex to trigger polarization (Munro et al., 2004; Goehring et al., 2011). Cortical flow dynamics at large scales can be captured using a hydrodynamic theory by considering the actomyosin cortex as a thin film of an active chiral viscous fluid (Mayer et al., 2010; Behrndt et al., 2012; Turlier et al., 2014; Tjhung et al., 2015; Marchetti et al., 2013; F\u00fcrthauer et al., 2012; F\u00fcrthauer et al., 2013). Accordingly, large-scale on-axis (anterior directed) and chiral rotatory flows can be quantitatively described by considering active stresses and active torques (Mayer et al., 2010; Naganathan et al., 2014). In this approach, two effective bulk material properties are critical in describing large-scale flows: (1) a hydrodynamic length, which determines the distance over which flow generation ranges and which is vital for long-range advective transport of PAR proteins (Goehring et al., 2011; Mayer et al., 2010) and (2) a chirality index, which quantifies the relative amount by which the cortex is rotated compared to contraction, and which controls embryonic left-right symmetry breaking (Naganathan et al., 2014).\n\nAt the molecular scale, cortical flow is driven through actin cortex reorganization facilitated by actin binding proteins (ABPs) and actomyosin regulators as well as through force generation by myosin motor proteins. ABPs perform diverse functions such as sequestration of actin monomers and cross-linking, severing, capping and polymerization of actin filaments (Pollard and Cooper, 1986; dos Remedios et al., 2003; Winder and Proteins, 2005). RNAi and mutagenesis screens have given a glimpse of the phenotypes that emerge upon perturbation of ABP function in different processes (Luo et al., 2013; Wiggan et al., 2012; Shinomiya, 2012; Mendes Pinto et al., 2012; B\u00f6ttcher et al., 2009; Girard et al., 2004). For example, loss of profilin (an ABP that promotes actin polymerization) expression enhances breast cancer cell motility (Bae et al., 2009) and loss of actinin (an ABP that crosslinks actin filaments) accelerates cleavage furrow constriction during cytokinesis (Mukhina et al., 2007). In the case of cortical flow, however, a comprehensive list of ABPs that regulate flow is not available. Furthermore, it is unknown which molecules regulate the bulk material properties that are critical in describing cortical flow.\n\nHere, we performed a candidate based RNAi screen of 33 ABPs and included 11 actomyosin regulators that were revealed to have a significant impact on flow dynamics, as previously identified in an RNAi-based suppressor screen (Fievet et al., 2013). We quantified the impact of RNAi on each of these genes onto large-scale flow dynamics, and asked which molecular activities affect which material properties of the cortex. We identify several proteins to have a significant impact on cortical properties, and we demonstrate that RNAi of proteins with distinct molecular activities leads to similar changes in the quantifications performed. We categorize these proteins into functional groups and uncover degeneracy in the regulation of actomyosin-based cortical flow.\n\nAttempts to link molecular activities of the actomyosin cytoskeleton to large-scale dynamics have been made before. For example, quantifying cellular geometry and using a physical model it was revealed that fish keratocyte shape is predominantly\u00a0determined by actin network tread milling and membrane tension (Keren et al., 2008), but a systematic analysis to relate large-scale behaviours to molecular activities was not pursued in this work. In another study, an RNAi screen was performed in order to investigate cellular morphology and migration in Drosophila BG2-cells (Bakal et al., 2007). Here, a number of molecular players and signalling pathways were identified, but the connections to large-scale physical activities that determine cellular shape and migration were not characterized. Thus, mechanisms by which molecular activities integrate to determine large-scale physical functions have not yet been revealed. Perhaps the biggest step in this direction is provided by (Chugh et al., 2017), where an ABP screen was coupled with a computational model to reveal the principles of regulation of cortex thickness and cortical tension. Our work here provides a complementary approach, and we utilize a coarse-grained physical model to identify molecular activities that contribute to large-scale material properties and the emergent physical behaviours of the actomyosin cortex.\n\n## Results\n\n### Screening approach\n\nWe set out to perform a candidate RNAi screen to identify ABPs and actomyosin regulators that affect large-scale properties of cortical flow. We compiled a list of 33 ABPs that had diverse functionalities including nucleation, cross-linking, bundling, severing, capping and sequestering among others (Supplementary file 1, see Materials\u00a0and\u00a0methods). In addition to ABPs, we included 11 actomyosin regulators that were identified through a suppressor screen and confirmed to have a significant impact on actomyosin flow (Fievet et al., 2013). To try to obtain a strong loss of function, RNAi of these 44 candidates was performed by feeding L4-staged worms for 40 hrs. Where this resulted in sterile worms or meiotic arrest, we reduced the number of hours of feeding (see Materials and methods, Figure 1A, Supplementary file 1). RNAi of KLP-1 (a kinesin-like motor protein that is expressed only later in development [Zhou et al., 2001]) was used as a negative control for wild-type behaviour (Hall and Hedgecock, 1991; Schonegg et al., 2007). Under each RNAi condition, we quantified actin cortex structure and dynamics followed by a quantitative comparison to a hydrodynamic theory (see Figure 1B for list of quantifications) to determine the resultant large-scale material properties of the cortex. In what follows, we first present our different means of quantification of the various RNAi phenotypes and then identify functional groups among the genes knocked down.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig1-v3.jpg)\n\n**Figure 1.:** (A) Flow chart describes strategy undertaken to perform candidate RNAi screen of actin binding proteins and actomyosin regulators. Time-lapse images were then used to determine flow properties of the cortex. (B) Schematic of a 1-cell embryo indicating the quantities measured (numbers in red circle) and estimated (numbers in blue circle). Left - 1-cell embryo, where arrows indicate flow velocities and arrow lengths signify magnitude. A, anterior and P, posterior of the embryo; x-axis is along the long-axis of the embryo and the y-axis orthogonal to it. Red boxes within embryo indicate analysis regions in the posterior and anterior.\u00a0Right - 1-cell embryo with myosin foci (green blobs).\n\n### A large fraction of actin binding and regulatory proteins affect cortical flow velocities\n\nTo analyse the impact of RNAi knockdown on bulk cortical flow, we measured the cortical flow velocity field by use of particle image velocimetry (PIV, Raffel et al., 2007) in embryos containing GFP-tagged non-muscle myosin II (NMY-2). We quantified both the anterior-directed, $v_{x}$, and the rotational component, $v_{y}$, of the cortical flow field (Naganathan et al., 2014). At each time point during flow, we performed a spatial average in the posterior of the embryo, following which a temporal average over the entire flow period was determined, to obtain an average $v_{x}\u00af$. We also determined the difference between spatially averaged $v_{y}$ in the posterior and anterior region to specify an average chiral counter-rotation flow velocity $v_{c}\u00af$. A distribution of $v_{x}\u00af$ and $v_{c}\u00af$ across all embryos for every RNAi condition was calculated, and the mean values of these distributions were compared to the respective negative controls. We found that 20 of 44 RNAi conditions resulted in a significant change (99% confidence, Wilcoxon rank sum test) in one or both of mean $v_{x}\u00af$ and $v_{c}\u00af$ compared to the negative control (Figure 2, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2 and see Videos 1\u20134 for representative examples). In agreement with previously published results that AP and chiral flow can be modulated independent of each other (Naganathan et al., 2014), we observed only a weak correlation between AP and chiral counter-rotation flow velocities (Pearson\u2019s linear correlation coefficient, R, 0.04). We observed that on average a reduced anterior-directed or chiral flow could result from either slower flow velocities with the $v_{x}\u00af$ or $v_{c}\u00af$ distribution respectively closer to zero (Figure 2B,D middle, Video 3) or from fast flow velocities with a rapid change in direction signified by a broad distribution in flow velocities, for example in pfn-1 (RNAi) (Figure 2B,D right, Video 4). Given that large-scale RNAi screens performed in C. elegans 1-cell embryos have failed to identify many of these ABPs (S\u00f6nnichsen et al., 2005), we show that a rigorous quantification is required to identify subtle yet significant deviations from wild type cortical flow.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig2-v3.jpg)\n\n**Figure 2.:** (A), (C) Comparison of mean AP velocity $v_{x}\u00af$ and mean chiral counter-rotation velocity $v_{c}\u00af$ respectively. Shaded areas in the inset represent regions over which the spatial average was performed in each time frame. Error bars, SEM; gray bar, negative control, klp-1 (RNAi) condition; gray horizontal bar, error of the mean with 99% confidence for klp-1 (RNAi); cyan, beige bars, significantly different knockdowns with 99% confidence (Wilcoxon rank sum test). (B), (D) Representative histograms of instantaneous $v_{x}\u00af$ and $v_{c}\u00af$ respectively. Gray histograms, klp-1 (RNAi) condition; dashed lines, mean $v_{x}\u00af$ and $v_{c}\u00af$ respectively. See Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2 for histograms of significantly different ABPs and Figure 2\u2014figure supplement 3 for a comparison of mean magnitude velocities. See Supplementary file for number of independent embryo samples in each RNAi condition.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Comparison of mean AP velocity, $v_{x}\u00af$.Each graph presents the instantaneous AP velocity $v_{x}\u00af$ histogram for the RNAi condition specified. Only ABP knockdowns that are significantly different from the negative control, klp-1 (RNAi), are shown. Gray histogram, klp-1 (RNAi) condition; dashed lines, mean\u00a0$v_{x}\u00af$. The number of hours of RNAi is 40 hrs, unless otherwise stated.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Comparison of mean chiral counter-rotation velocity,\u00a0$v_{c}\u00af$.Each graph presents the instantaneous chiral counter-rotation velocity $v_{c}\u00af$ histogram for the RNAi condition specified. Only ABP knockdowns that are significantly different from the negative control, klp-1 (RNAi), are shown. Gray histogram, klp-1 (RNAi) condition; dashed lines, mean\u00a0$v_{c}\u00af$. The number of hours of RNAi is 40 hrs, unless otherwise stated.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Comparison of mean magnitude velocity,\u00a0$Mag\u00af$.Error bars, SEM; gray bar, negative control, klp-1 (RNAi) condition; gray horizontal bar, error of the mean with 99% confidence for klp-1 (RNAi); cyan, beige bars, significantly different knockdowns with 99% confidence (Wilcoxon rank sum test).\n\n![Video 1.](https://cdn.elifesciences.org/articles/37677/elife-37677-video1.mp4.jpg)\n\n**Video 1.:** Movies were acquired with a 5 s frame interval and are being played 75x faster than real time. Scale bar, 10 \u00b5m.\n\n![Video 2.](https://cdn.elifesciences.org/articles/37677/elife-37677-video2.mp4.jpg)\n\n**Video 2.:** Movies were acquired with a 5 s frame interval and are being played 75x faster than real time. Scale bar, 10 \u00b5m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/37677/elife-37677-video3.mp4.jpg)\n\n**Video 3.:** Movies were acquired with a 5 s frame interval and are being played 75x faster than real time. Scale bar, 10 \u00b5m.\n\n![Video 4.](https://cdn.elifesciences.org/articles/37677/elife-37677-video4.mp4.jpg)\n\n**Video 4.:** Movies were acquired with a 5 s frame interval and are being played 75x faster than real time. Scale bar, 10 \u00b5m.\n\n### Pulsatility in cortical flow is affected by actin binding and regulatory proteins\n\nIn all conditions, we noted that the flow had a pulsatile characteristic (as described in Nishikawa et al., 2017) with a periodic temporal increase and decrease in flow velocity (Video 5). Pulsatility, emerging through self-organization of the actomyosin network, is an intrinsic feature of active contractile systems and plays an instrumental role in numerous morphogenetic processes (Gorfinkiel, 2016; Munjal et al., 2015; Nishikawa et al., 2017). Identification of molecular components that regulate pulsatility is therefore an important step forward in investigating self-organization of actomyosin networks. We refer to the period of the flow velocity oscillation as $T_{osc}$. To calculate $T_{osc}$, we quantified the temporal change in $v_{x}\u00af$ in the posterior of the embryo and performed an autocorrelation of the temporal velocity profile (see Materials and methods for further information). We determined $T_{osc}$ to be 33.3 $\\pm$\u00a04 s (mean $\\pm$ error of mean at 95 % confidence) for the negative control, klp-1 (RNAi) condition. We found that 10 RNAi conditions resulted in a significant change in $T_{osc}$\u00a0compared to the negative control (Figure 3). Importantly, ABPs that regulate actin filament\u00a0turnover such as F-actin polymerizing proteins (pfn-1, cyk-1, arx-2) and F-actin severing (unc-60, fli-1) and capping (cap-1) proteins have a significant effect on the period of pulsation suggesting that pulsation is regulated by cortex turnover.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig3-v3.jpg)\n\n**Figure 3.:** (A) Comparison of mean period of pulsatile AP velocity, $T_{osc}$, in the posterior of the embryo. Shaded area in the inset represents the region over which the spatial average of velocity was performed in each time frame. The formula for the autocorrelation function is indicated, where $T$ is total analysis time of cortical flow and $k$ is increment (see Materials and methods). Error bars, SEM; gray bar, negative control, klp-1 (RNAi) condition; gray horizontal bar, error of the mean with 95% confidence for klp-1 (RNAi); cyan, beige bars, significantly different knockdowns with 95% confidence (Wilcoxon rank sum test). (B) Normalized autocorrelation decay curves from individual embryos (thin black lines) for the negative control, klp-1 (RNAi), cyk-1 (RNAi) and unc-60 (RNAi). Circular markers represent mean of the periods determined from individual embryos, with error bars representing SEM. See Supplementary file for number of independent embryo samples in each RNAi condition.\n\n![Video 5.](https://cdn.elifesciences.org/articles/37677/elife-37677-video5.mp4.jpg)\n\n**Video 5.:** Cortical flow acquired using TH455 transgenic line (NMY-2::GFP is visualized here for the negative control, klp-1 (RNAi)) with a 5 s frame interval. Movie is being played 25x faster than real time. Scale bar, 10 \u00b5m.\n\n### Flow velocities and actomyosin foci structure are correlated\n\nSince network architecture is known to facilitate actomyosin dynamics (Lieleg et al., 2010; Reymann et al., 2012; Blanchoin et al., 2014), we next asked whether a change in flow velocity is associated with an alteration of large-scale actomyosin foci structure (Munro et al., 2004; Munjal et al., 2015). It was shown previously that a change in actin filament organization highly correlates with a change in myosin organization during cortical flow (Reymann et al., 2016). We therefore used non-muscle myosin II as a proxy for cortical structure analysis and quantified myosin foci size, $S$ and foci number density, $\u03c1$, under each RNAi condition. We defined foci size as the position of the first local minimum in the myosin fluorescence intensity autocorrelation function, measured in the anterior region of the embryo (see Materials and methods and Figure 4A). To determine foci number density $\u03c1$, we developed a custom algorithm that identifies foci by analysing variation in myosin fluorescence intensity in the vicinity of identified local fluorescence extrema (see Materials and methods and Figure 5A). From these quantifications, we found that 17 of 44 RNAi conditions resulted in a significant change in one or both of myosin foci size (Figure 4B, Figure 4\u2014figure supplement 1) and foci number density (Figure 5B, Figure 5\u2014figure supplement 1) when compared to the negative control (klp-1 (RNAi)). Interestingly, we observed that $S$ was negatively correlated with $\u03c1$ (R, \u22120.84, Figure 7\u2014figure supplement 2E), where an increase in foci size corresponded to a decrease in foci number density and vice versa. It remains to be investigated whether there exists a limiting component that leads to this inverse correlation. A comparison of flow velocity with foci size/density revealed that 12 of 17 conditions that affected foci size and/or density also resulted in a significant change in flow velocities. Moreover, $v_{x}\u00af$ was negatively correlated with $S$ (R, \u22120.62, Figure 7\u2014figure supplement 2B) and positively correlated with $\u03c1$ (R, 0.58, Figure 7\u2014figure supplement 2C). In other words, bigger foci size (and smaller foci density) is correlated with slower average flow velocities. We conclude that RNAi conditions that affect actomyosin flow velocities tend to also affect myosin foci size and/or density. Importantly, this suggests that actomyosin network structure is strongly linked to the observed dynamics.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig4-v3.jpg)\n\n**Figure 4.:** (A) Representative 2D myosin fluorescence intensity autocorrelation function as a heat map (middle) for the anterior region (left) of a single frame during cortical flow from a klp-1 (RNAi) embryo.\u00a0Scale bar, 5 \u00b5m. Right - radial average of the autocorrelation function. (B) Comparison of mean foci size, $S$. Error bars, SEM; gray bar, negative control, klp-1 (RNAi) condition; gray horizontal bar, error of the mean with 99% confidence for klp-1 (RNAi); cyan, beige bars, significantly different knockdowns with 99% confidence (Wilcoxon rank sum test). Shaded area in the inset represents the region in which the fluorescence intensity autocorrelation was performed in each frame. (C) Representative histograms of $S$ determined over time during the cortical flow period. Gray histograms, klp-1 (RNAi) condition; dashed lines, mean foci size. See Figure 4\u2014figure supplement 1 for histograms of significantly different ABPs. See Supplementary file for number of independent embryo samples in each RNAi condition.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Comparison of mean foci size, $S$.Each graph presents the foci size histogram for the RNAi condition specified. Only ABP knockdowns that are significantly different from the negative control, klp-1 (RNAi), are shown. Gray histogram, klp-1 (RNAi) condition; dashed lines, mean\u00a0$S$. The number of hours of RNAi is 40 hrs, unless otherwise stated.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig5-v3.jpg)\n\n**Figure 5.:** (A) Detection of myosin foci (right) by analysis of local changes in fluorescence intensity in the vicinity of identified local extrema (middle) for the anterior region (left) of a single frame during cortical flow from a klp-1 (RNAi) embryo. Scale bar, 5 \u00b5m. (B) Comparison of mean foci number density, $\u03c1$. Error bars, SEM; gray bar, negative control, klp-1 (RNAi) condition; gray horizontal bar, error of the mean with 99% confidence for klp-1 (RNAi); cyan, beige bars, significantly different knockdowns with 99% confidence (Wilcoxon rank sum test). Shaded area in the inset represents the region that was utilized for foci detection in each frame. (C) Representative histograms of $\u03c1$ determined over time during the cortical flow period. Gray histograms, klp-1 (RNAi) condition; dashed lines, mean foci number density. See Figure 5\u2014figure supplement 1 for histograms of significantly different ABPs. See Supplementary file for number of independent embryo samples in each RNAi condition.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Comparison of mean foci number density, $\u03c1$.Each graph presents the foci number density histogram for the RNAi condition specified. Only ABP knockdowns that are significantly different from the negative control, klp-1 (RNAi), are shown. Gray histogram, klp-1 (RNAi) condition; dashed lines, mean\u00a0$\u03c1$. The number of hours of RNAi is 40 hrs, unless otherwise stated.\n\n### Estimation of large-scale material properties of the cortex\n\nWe next sought to identify proteins that affect relevant large-scale material properties of the actomyosin cortical layer. Previous studies have shown that the AP flow velocity ($v_{x}$) and the $y$-velocity ($v_{y}$) obey the equations of motion,\n\n$$\n\\partial_{x}T=\u03b7\\partial_{x}^{2}v_{x}\u2212\\gammav_{x}\n$$\n\n\n\n$$\n\\partial_{x}\\tau=\\frac{1}{2}\u03b7\\partial_{x}^{2}v_{y}\u2212\\gammav_{y}\n$$\n\nThese equations capture many aspects of cortical flow at larger scales through two effective material properties: first, the hydrodynamic length $\\lambda=\\sqrt{\u03b7/\\gamma}$, which depends on cortex viscosity $\u03b7$ and $\\gamma$ that quantifies the friction with the membrane and/or cytoplasm, and second, the chirality index $c=\\tau/T$, where $\\tau$ is the active torque density and $T$ is the active tension of the actomyosin cortex (F\u00fcrthauer et al., 2012; F\u00fcrthauer et al., 2013; Mayer et al., 2010; Naganathan et al., 2014). To calculate the material properties, we first determined average myosin distribution along the AP axis (Figure 6B, blue markers) during cortical flow, which we then equated to active tension and active torque density. Using Equations 1 and 2, we then calculated theoretical AP and chiral flow profiles (Figure 6B, Figure 6\u2014figure supplement 1, magenta and beige curves respectively) that best matched with experimental flow profiles (Figure 6B, Figure 6\u2014figure supplement 1, magenta and beige markers respectively). The best fit parameters then yielded the hydrodynamic length and the chirality index. We observed that RNAi of several of the ABPs and actomyosin regulators resulted in a significant change of both the hydrodynamic length and the chirality index as compared to the non-RNAi embryos (Figure 6A,C). Thus, material properties of the cortex can be tuned in different ways, by modulating a diverse set of molecular activities. Interestingly, while a large fraction of RNAi knockdowns resulted in a significantly reduced chirality index, three of four knockdown conditions (rga-3 - also shown in (Naganathan et al., 2014), csnk-1, cpn-1) that resulted in a significantly higher chirality index are known to also impact on myosin activity. This further strengthens the idea that active processes in the actomyosin cytoskeleton generate active torques for chiral symmetry breaking. Notably, 15 of 20 conditions that affected flow velocities and 14 of 17 conditions that affected foci structure resulted in a significant change in the hydrodynamic length. Similarly, 15 of 20 RNAi conditions that affected flow velocities and 13 of 17 conditions that affected foci structure resulted in a significant change in the chirality index. Thus, we conclude that RNAi conditions that affect actomyosin flow velocities, myosin foci size, or myosin foci density tend to also modify the hydrodynamic length and/or the chirality index.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig6-v3.jpg)\n\n**Figure 6.:** (A), (C) Comparison of the hydrodynamic length, $\\lambda$ and chirality index, $c$ of the cortex respectively. Error bars, SEM; gray bar, negative control, klp-1 (RNAi) condition; gray\u00a0horizontal bar, error of the mean with 99% confidence for klp-1 (RNAi); cyan, beige bars, significantly different knockdowns with 99% confidence (significance determined using normal cumulative distribution function in MATLAB). The bins over which spatial average of velocities were determined in each frame are shown in the inset. (B) Average myosin intensity (blue markers) and velocity profiles (magenta markers, AP flow velocity $v_{x}$; beige markers, y-velocity $v_{y}$) along the AP axis for representative RNAi conditions. Error bars, SEM. Magenta and beige curves, respective theoretical velocity profiles. Dashed lines, theoretical velocity profiles for klp-1 (RNAi) condition. See Figure 6\u2014figure supplement 1 for more examples of fit profiles of significantly different ABPs. See Supplementary file for number of independent embryo samples in each RNAi condition.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Row 1 (row 2) represents the top three ABP knockdowns that resulted in a significantly higher (lower)\u00a0$\\lambda$, and row 3 (row 4) represents the top three ABP knockdowns that resulted in a significantly higher (lower)\u00a0$c$. Each graph presents the average myosin intensity (blue markers) and velocity profiles (magenta markers, AP flow velocity\u00a0$v_{x}$; beige markers, $y$-velocity\u00a0$v_{y}$) along the AP axis for each RNAi condition specified. Error bars, SEM. Magenta and beige curves, respective theoretical velocity profiles. Dashed lines, theoretical velocity profiles of the negative control, klp-1 (RNAi).\n\n### Dimensional reduction analysis reveals clusters with similar effects on cortical mechanics\n\nRNAi of ABPs and actomyosin regulators resulted in a spectrum of changes in flow velocities, foci structure and material properties of the cortex. Based on the quantifications performed, we next asked whether there exists groups of proteins that have a similar impact on large-scale actomyosin behaviours. To answer this question we used a nonlinear dimensional reduction algorithm to perform a mapping of the dataset to a lower-dimensional space. We then identified clusters of conditions with similar behaviours by manual inspection. We used five parameters for the analysis \u2013 foci number density, AP velocity, oscillatory period, hydrodynamic length and chirality index. We computed pairwise distances between the different RNAi conditions using the minimum curvilinear embedding (MCE) approach (Cannistraci et al., 2010; Cannistraci et al., 2013;\u00a0Muscoloni et al., 2017) (see Materials and methods for more information). Dimensional reduction of this data set (Figure 7A) revealed four different groups of proteins with similar effects on cortical mechanics. Cluster zero corresponds to the wild type (Wt, Figure 7A, Figure 7\u2014figure supplement 1). Manual inspection of the pattern by which genes affected the different parameters (heat map in Figure 7B), motivated us to split cluster three into three sub-groups of proteins (clusters 3a-3c). Interestingly, each cluster comprised proteins with different functions suggesting that large-scale actomyosin behaviours can be attained by tuning diverse molecular mechanisms.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig7-v3.jpg)\n\n**Figure 7.:** (A) Non-linear dimensional reduction of the quantitative data set was performed and plotted along dimensions that represent the highest variability. Circular markers, ABPs; star markers, actomyosin regulators; colours represent the different clusters and black represents knockdowns in the same group as the negative control, klp-1 (RNAi); Wt - wild type. See Figure 7\u2014figure supplement 1 for a heat map of the wild type cluster and Figure 7\u2014figure supplement 4 for a correlation of quantifications and the two principal axes of the dimensionally reduced data set. (B) Parameters that were used for dimensional reduction (foci density\u00a0$\u03c1$, AP velocity\u00a0$v_{x}\u00af$, chirality index\u00a0$c$, flow period\u00a0$T_{osc}$, hydrodynamic length\u00a0$\\lambda$) were rearranged and displayed as heat maps for knockdowns that constitute each cluster. Colour bar, z-score. See Figure 7\u2014figure supplement 2 for correlations between different quantifications and Figure 7\u2014figure supplement 3 for visualisation of cytoplasmic actin fluorescence for unc-60 and cap-1 (RNAi) from cluster 3c.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Parameters that were used for dimensional reduction (foci density\u00a0$\u03c1$, AP velocity\u00a0$v_{x}\u00af$, chirality index\u00a0$c$, flow period\u00a0$T_{osc}$, hydrodynamic length\u00a0$\\lambda$) are displayed as heat maps for knockdowns that constitute the wild type cluster. Colour bar, z-score; klp-1 (RNAi) - negative control.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig7-figsupp2-v3.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Pearson\u2019s linear correlation coefficients between pairs of quantifications are shown as a heat map. (B)-(E) Selected pairs of quantifications that were positively or negatively correlated are shown as scatter plots. Circular markers, individual knockdowns; error bars, SEM; green marker, negative control, klp-1 (RNAi); gray bars, error of the mean with 99% confidence for klp-1 (RNAi) condition; dashed line, least squares fit of the data.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig7-figsupp3-v3.jpg)\n\n**Figure 7\u2014figure supplement 3.:** SWG007 transgenic line was used to image cytoplasmic actin. A snapshot of the indicated knockdown was performed 2 \u00b5m deeper from the cortical region at the start of cortical flows and displayed. An increase in cytoplasmic actin fluorescence was observed in unc-60 and cap-1 (RNAi) conditions compared to the negative control, klp-1 (RNAi). Images are displayed in the same gray-scale dynamic range. Scale bar,\u00a010 \u00b5m.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/37677/elife-37677-fig7-figsupp4-v3.jpg)\n\n**Figure 7\u2014figure supplement 4.:** Correlation between the five quantifications (foci density\u00a0$\u03c1$, AP velocity\u00a0$v_{x}\u00af$, chirality index\u00a0$c$, flow period\u00a0$T_{osc}$, hydrodynamic length\u00a0$\\lambda$) used for clustering and the two principal axes (D1, D2) in the dimensionally reduced data set are shown as a heat map. The Pearson\u2019s linear correlation co-efficient is indicated in each heat map square.\n\nWe next briefly discuss each of the three clusters. Cluster 1 consisted of two actomyosin regulators, the Rho-1 regulator RGA-3 and casein-kinase 1 (CSNK-1) and two ABPs, an actin-membrane cross linker (annexin, NEX-1) and an inhibitor of myosin ATPase activity (calponin, CPN-1) (red, Figure 7). A characteristic feature of this cluster was an increase in the average chirality index suggesting that these proteins regulate chiral properties of the actomyosin cortex.\n\nCluster 2 consisted of an actomyosin regulator (NTL-2, a CCR4-NOT transcription complex subunit) and ABPs that scaffold the cortex (SPC-1, spectrin) and create branched actin networks (ARX-2, a component of the ARP 2/3 complex) (green, Figure 7). RNAi of cluster two proteins resulted in an increase in average foci density and a decrease in the period of oscillation, that\u00a0is faster oscillations. RNAi conditions that resulted in faster oscillations were also found in cluster 3b (see below). Together, these knockdowns enable investigation of mechanisms that lead to emergence of pulsation.\n\nThe third cluster consisted of a diverse array of proteins. We split this cluster into three sub-groups which displayed similar behaviours in terms of the quantifications performed. Cluster 3a consisted of 6 actomyosin regulators (orange, Figure 7) displaying an increase in the hydrodynamic length and a decrease in the chirality index of the cortex. Cluster 3b (pink, Figure 7) consisted of one actomyosin regulator (CDC-42, a Rho-GTPase) and 4 ABPs that promote polymerization (profilin, PFN-1; formin, CYK-1), crosslinking (anillin, ANI-1) and bundling of actin filaments (Ding et al., 2017) (plastin, PLST-1). RNAi of cluster 3b proteins resulted in a decrease in average foci number density, AP velocity, oscillatory flow period and chirality index of the cortex. A lower foci density indicates a less dense actomyosin cortex, hinting at a reduction in effective viscosity of the cortex. Consistent with this possibility, we observed a decrease in the hydrodynamic length of the cortex for RNAi of cluster 3b\u00a0proteins (Figure 7B). Finally, cluster 3c consisted of a myosin chaperone (UNC-45) and two ABPs that cap barbed ends (capping protein, CAP-1) and sever actin filaments (cofilin, UNC-60) (cluster 3c, violet, Figure 7). RNAi of cluster 3c proteins resulted in a decrease in average AP velocity, chirality index and an increase in the average period of oscillation (in cap-1 and unc-60 (RNAi) conditions) that is slower oscillations. Furthermore, we observed an increase in foci number density (UNC-60) or foci size (CAP-1), and cluster 3c RNAi conditions (UNC-60 and CAP-1) tend to display a reduced hydrodynamic length. To rationalize the latter observation, we imaged cytoplasmic actin using a Life act::mKate transgenic line, and observed an increase in cytoplasmic F-actin density under RNAi of the cluster 3c genes cap-1 and unc-60 (Figure 7\u2014figure supplement 3). Increasing F-actin density throughout the cytosol is likely to increase cytoplasmic viscosity, which in turn would lead to an increased effective friction and a reduced hydrodynamic length.\n\nTaken together, we identify clusters of ABPs that regulate large-scale material properties of the cortex. A central result from our study is that distinct ABP molecular activities can have a similar impact on large-scale actomyosin cortical behaviours.\n\n## Discussion\n\nHere, we present a systematic approach to connect molecular functions to emergent large-scale physical properties of the actomyosin cortex. We combined RNAi screening with phenotypic characterization in terms of hydrodynamic theory. Our RNAi-based knockdown conditions do not correspond to a full loss of function, and our approach allows for a quantitative characterization of subtle cortical phenotypes. This has enabled us to identity a number of ABPs that were not previously described to have a significant impact on cortical structure and dynamics. We also identified cortex bulk physical properties (hydrodynamic length, chirality index) that are under control of ABPs and actomyosin regulators. Notably, the large-scale physical properties of the cortex are important for embryonic development wherein, a sufficiently long hydrodynamic length facilitates establishment of head-tail (AP) body axis (Mayer et al., 2010) and chiral active torques in the cortex help determine the L/R body axis (Pohl and Bao, 2010; Schonegg et al., 2014; Singh and Pohl, 2014; Naganathan et al., 2014; Naganathan et al., 2016). Since these material properties are impacted by several gene knockdowns, we suggest that the observed hydrodynamic length and chirality index (18 \u00b5m and 0.321 respectively for klp-1 (RNAi)) emerges from numerous molecular interactions and are a \u2018summed effect\u2019 of many different protein activities. Hence, RNAi perturbation of individual molecular activities results in\u00a0subtle yet quantifiable deviation from the characteristic wild type behaviour.\n\nChirality is an emergent active property of the actomyosin cytoskeleton that is dependent on molecular-scale torque generation (Naganathan et al., 2014). Here, we identify actin binding proteins to play a significant role in regulating chirality suggesting that cortical actin network architecture is equally important. This resonates well with a recent discovery, where in addition to myosin activity, the actin network architecture was shown to play a vital role in regulating cortex thickness and tension (Chugh et al., 2017). Finally, actomyosin pulsation is another property of the actomyosin cortex that is involved in a number of morphogenetic processes (Gorfinkiel, 2016). While self-organization of actomyosin cortex (Munjal et al., 2015; Nishikawa et al., 2017) and pulsation of Rho-associated proteins (Nishikawa et al., 2017) were suggested to be important for actomyosin pulsation, here we identify ABPs that facilitate the emergence of pulsation. Generally, we observe that a reduction in cortical viscosity is correlated with faster oscillations (cluster 3b proteins). Furthermore, spectrin (cluster 2) knockdown led to faster oscillations and given that spectrin is vital for maintenance of membrane shape (Zhang et al., 2013), it will be interesting to investigate the effect of membrane stability on actomyosin oscillations.\n\nInterestingly, our MCE analysis indicates that distinct molecular activities can give rise to similar functional phenotypes at large-scales. We suggest that this is likely because the same material property or the same physical behaviour is being impacted by distinct sets of proteins from a single group. For example, polymerizing, crosslinking and bundling activities of ABPs are known to modulate viscoelastic responses of actin networks (Stricker et al., 2010). Here, we show that knockdown of any of these molecular activities leads to similar large-scale phenotypes (cluster 3b in Figure 7) and results in a decreased hydrodynamic length. This signifies a reduced cortical viscosity in all these conditions and thus likely leading to similar flow phenotypes. Similarly, reducing the severing activity or capping of actin filaments leads to similar phenotypes (cluster 3c in Figure 7) that signified an increase in friction of the cortex with the cytoplasm. Our results suggest that critical physical parameters that determine large-scale functions can be tuned by modulating a spectrum of molecular functions. In other words, there exists several ways in which a bulk physical property can be achieved. Our results are indicative of a\u00a0\u2018morphogenetic degeneracy\u2019, where distinct activities at the molecular scale contribute to similar physical activities at larger scales.\n\nAny screening approach where a small set of cellular functions and activities are probed with a large number of molecular perturbations will give rise to degeneracy. This is because there will be cases where similar outcomes in terms of changes to the cellular functions assayed will be achieved with distinct molecular perturbations, and this is most obvious for cases where there is a redundancy in molecular function. We are here suggesting that there is a mechanism at work in living systems that is distinct from this\u00a0\u2018trivial degeneracy\u2019. Our line of argumentation is that there is an intermediate layer at the mesoscale that is important to consider. Phenotypes at larger scales are determined by unusual material properties of living matter at this mesoscale, together with force and torque generation. Now, material properties at the mesoscale arise through coarse-graining and averaging microscopic degrees of freedom, and only a small set of mesoscopic physical parameters contribute to the force balance and the dynamics of the system at the mesoscale. This again gives rise to a degeneracy, but this\u00a0\u2018morphogenetic degeneracy\u2019 at the mesoscale is of physical nature and can arise in the absence of redundancy of molecular activity. Since coarse-graining implies a reduction of the degrees of freedom of a system, similar large scale behaviours can emerge from distinct molecular processes that need not necessarily be redundant with each other.\n\nTo conclude, it is important to connect molecular functions to phenotypes at larger scales, and the approach we have pursued here exemplifies an experimental strategy that allows to map out this physical degeneracy between molecular activities and mesoscale physical properties that determine phenotypes. We speculate that the degeneracy we observe in the functioning of ABPs contributes to the robust performance of the actomyosin cytoskeleton. Finally, while degeneracy and its link to robustness has been widely studied with respect to gene regulatory networks (Whitacre, 2010; Whitacre and Bender, 2010; Edelman and Gally, 2001), we here suggest a novel physical implication of degeneracy in living systems that contributes to the robustness of biological matter.\n\n## Materials and methods\n\n### C.elegans strains\n\nIn this study, TH455 transgenic line (unc-119(ed3) III; zuIs45[nmy-2::NMY-2::GFP\u00a0+\u00a0unc-119(+)] V; ddIs249[TH0566(pie1::Lifeact::mCherry:pie1)]) was used for imaging cortical flow and SWG007 transgenic line nmy-2(cp8[NMY-2::GFP\u00a0+\u00a0unc-119(+)]) I; unc-119(ed3) III; gesIs001[unc-119(ed3) III; (mex-5::Life act::mKate2::nmy2u\u00a0+\u00a0unc-119(+))] for imaging cytoplasmic actin. C. elegans worms were cultured on OP50-seeeded NGM agar plates as described (Brenner, 1974).\n\n### RNA interference\n\nWe first compiled a list of 95 ABPs by assessing putative functions (see Supplementary file 1) and known expression patterns. We removed from our experiments ABPs that act as enzymes, and because our analysis was restricted to 1-cell embryos, proteins that have muscle-specific or cell-cell adhesion-specific functions were also removed. The final list comprised 33 ABPs, which were subjected to RNAi-based knockdown to investigate their roles in actomyosin-based cortical flows. RNAi experiments were performed by feeding (Timmons et al., 2001). Early L4-staged worms were placed on feeding plates (NGM agar containing 1 mM isopropyl-$\\beta$-D-thiogalactoside and 50\u00a0\u00b5gml-1\u00a0ampicillin) and incubated for 40 hrs at $25^{\u2218}C$. We defined feeding time (number of hours of RNAi) as the time between transfer of worms to the feeding plate and putative fertilization of the egg. Worms were dissected in M9 buffer and the embryos were mounted on 2% agarose pads for image acquisition. The number of hours of feeding was reduced by 10 hrs if 40 hr feeding resulted in sterile worms or produced embryos that arrested at meiosis. The feeding time had to be reduced for cap-1 (30 hrs), cyk-1 (30 hrs), pfn-1 (20 hrs) and unc-60 (15 hrs) RNAi conditions.\n\nFeeding clones for cdc-42, plst-1, erm-1, unc-45, unc-59 and the actomyosin regulators were obtained from the Ahringer lab (Gurdon institute, Cambridge, United Kingdom), and for pfn-1 and unc-60 from the\u00a0Hyman lab (MPI-CBG, Dresden, Germany). The rest of the feeding clones were obtained from Source Bioscience (Nottingham, United Kingdom).\n\n### Image acquisition\n\nCortical flow movies using the TH455 transgenic line were acquired at $23\u221224^{\u2218}C$ with a spinning disc confocal microscope using a Zeiss C-Apochromat 63X/1.2 NA objective lens, a Yokogawa CSU-X1 scan head, a 525/50 nm bandpass emission filter from Semrock and an Andor iXon EMCCD camera (512 by 512 pixels). A stack consisting of three z-planes (0.5 \u00b5m apart) with a 488 nm laser (30% AOTF intensity) and an exposure of 150 ms was acquired at an interval of 5 s from the onset of cortical flow until the first cell division. The maximum intensity projection of the stack at each time point was then subjected for further analysis.\n\n### Flow velocity analysis\n\nFlow velocity analysis was performed from the start of flow until pseudo-cleavage. We refer to this analysis period as the \u2018entire flow period\u2019. 2D cortical flow velocity fields were obtained by performing Particle Image Velocimetry (PIV) (Raffel et al., 2007) using the freely available PIVlab MATLAB algorithm (pivlab.blogspot.de). PIVlab was employed by performing a 3-step multi pass (with linear window deformation) where the final interrogation area was 16 pixels with a step of 8 pixels.\n\n2D velocity fields were projected to the AP axis by dividing the embryo into 18 bins along the AP axis (see Figure 6A inset and\u00a0Figure\u00a01B in Naganathan et al., 2014), and by spatially averaging the x-component or the y-component of velocity along each bin in a single frame. Average AP velocity $v_{x}\u00af$ was quantified in each frame by spatially averaging the x-component of velocity in the posterior across bins 13 to 16. The posterior domain was considered for velocity analysis because of high flow velocities (see Figure 6B). In the anterior domain, because the flow velocities are relatively lower (see Figure 6B), it is harder to distinguish changes in flow velocities across RNAi conditions. Average chiral counter rotation velocity $v_{c}\u00af$ was quantified in each frame by subtracting the y-component of velocity in the anterior (spatially averaged across bins 3 to 6) from the y-component of velocity in the posterior (spatially averaged across bins 13 to 16). Histograms of $v_{x}\u00af$ and $v_{c}\u00af$ were plotted by computing these quantities in each frame across the entire flow period in all embryos of one experimental condition and mean velocities were compared between conditions. Significantly different knockdowns with 99% confidence were determined using the Wilcoxon rank sum test in MATLAB.\n\nTo obtain the flow profiles, 2D velocity fields were projected to the AP axis and averaged over time across the entire flow period (from start of flow till pseudo cleavage). These time-averaged flow profiles were then averaged across all embryos for one experimental condition. Bin extent in the $y$ direction was restricted to a stripe of about 13\u00a0\u00b5m.\n\n### Oscillation analysis\n\nA box of size 6 \u00b5m by 6 \u00b5m was defined in the posterior with the box centre in between bins 14 and 15. Average AP velocity quantified in this box was used for determination of oscillation period. This analysis was performed in individual embryos. The temporal change in average AP velocity was determined in the box and autocorrelation of the resulting temporal profile was determined using a custom-written function. Before performing autocorrelation, the mean AP velocity in the box across the entire flow period was determined and subtracted from the data. Autocorrelation was performed by shifting incrementally the mean subtracted data until half the total analysis time. The first peak in the autocorrelation profile, which corresponds to the flow oscillation period, was determined using the\u00a0\u2018lmax\u2019 function downloaded from Mathworks. Very few movies across conditions resulted in no peak in the autocorrelation profile, which were discarded. In the case of negative control, the first peak could be identified in all movies. A mean oscillation flow period was determined across embryos for a single experimental condition and compared. Significantly different knockdowns with 95% confidence were determined using the Wilcoxon rank sum test in MATLAB.\n\n### Foci structure analysis\n\nA characteristic myosin foci size was determined by performing spatial myosin fluorescence intensity autocorrelation in MATLAB. The autocorrelation was performed in a stripe of about 27 \u00b5m wide (centred in between bins 7 and 8) and 13 \u00b5m high in the anterior of the embryo (see Figure 4B inset). The anterior domain was considered for foci structure analysis given the higher overall signal of myosin (see Figure 6B). In the posterior, flow depletes myosin in addition to turnover, thus interfering with the foci structure analysis. A radial average of the resulting autocorrelation was performed using the\u00a0\u2018rscan\u2019 algorithm downloaded from Mathworks. In this function, the coordinates of a circle with a specific radius around an origin are determined, following which the average values of points where the circle passes through are computed. The radius of the circle is incremented and a radially averaged profile is obtained. The position of the first local minimum in the autocorrelation profile, defined as the characteristic foci size, was then determined using the\u00a0\u2018lmin\u2019 function downloaded from Mathworks.\n\nFoci number density was determined in the same analysis stripe by a thresholding method. An interrogation area of about 2 \u00b5m by 2 \u00b5m was chosen and shifted pixel by pixel through the entire stripe. All local maxima in fluorescence intensities were first identified. The identified maxima were then taken through a number of steps to determine foci number density. Firstly, if the identified maxima were closer than 1 \u00b5m, they were merged into a single maximum. Secondly, foci that were significantly dimmer than the rest were identified and discarded. This was performed by first determining the mean fluorescence intensity of each interrogation area centred around the identified maxima. A threshold fluorescence intensity was defined by calculating the average intensity $\\pm$ 0.5*STD across all interrogation areas of interest. Any interrogation area with a mean intensity lesser than the threshold was considered to be dimmer than the rest and therefore discarded. Finally, foci that comprised many local maxima were identified and merged into a single focus. This was performed by determining the fluorescence intensities in the region between identified maxima. The maxima were merged into a single focus, if no continuous decrease in intensity between the maxima for more than a micron was observed. The total number of foci thus identified was divided by the area of the stripe to obtain the number density.\n\nHistograms of characteristic foci sizes and number densities were plotted by computing these quantities in each frame during the first 75 s of cortical flow in all embryos of one experimental condition and mean values were compared between conditions. Significantly different knockdowns with 99% confidence were determined using the Wilcoxon rank sum test in MATLAB.\n\n### Hydrodynamic model and fitting phenomenological coefficients\n\nThe theory for cortical flows that we use to extract the hydrodynamic length and the chirality index is the result of a rigorous derivation from a generic phenomenological theory for active chiral fluids (F\u00fcrthauer et al., 2013). The steps of the derivation are laid out in the Appendix of (Naganathan et al., 2014). The resulting theory is compressible in two dimensions but is built on top of a three-dimensional incompressible fluid theory. The important assumptions in the derivation of the theory are: (i) the cortex is viscous on the time scales of cortical flows and thus has no elastic term. This is in fact a consequence of cortical turnover and one might guess that a cortex without turnover might behave more like an elastic gel. Assuming a viscous cortex therefore indirectly takes into account actin and myosin turnover. (ii) A specific relation between the bulk viscosity and shear viscosity of the 3D actomyosin gel was assumed: they are set equal. This is done for simplicity. (iii) The friction term can be considered linear and local. This model cannot describe the observed oscillatory behaviour in the actomyosin cortex. Actomyosin oscillations are driven by independent oscillations in the Rho signalling pathway that regulates myosin activity (Nishikawa et al., 2017) and an independent model is therefore required to describe oscillatory flows.\n\nTo compare our theory to experiment, we numerically solved hydrodynamic equations of a thin film of an active chiral fluid (Naganathan et al., 2014) using a finite difference scheme, using the two extreme points of the measured velocity profile as boundary conditions. These equations depend on three free parameters, the hydrodynamic length $l$, and the constants $\\alpha$ and $\\beta$ which relate the measured fluorescence intensity $I$ to the active tension and the active torque density such that $T=\\alphaI$ and $\\tau=\\betaI$, respectively. Myosin is the main driver of cortical flow. This has been extensively validated for anterior-directed flows in (Mayer et al., 2010) and for chiral flows in (Naganathan et al., 2014). These papers show that active stresses are growing functions \u00b5(C) of myosin concentration $c$. The exact functional form is unknown and might very well depend on the structure of the underlying actomyosin cortex. Here, we report the first order co-efficient (linear response co-efficient) of a Taylor expansion of \u00b5(C) and its chiral counterpart. Note that our theory makes no predictions on how the structure of the cortex affects flows.\n\nWe adjusted these three parameters by performing a least squares fit of the solutions of these equations to the measured velocity profile. In this way, we obtained values for the hydrodynamic length $l$ and the chirality index $c=\\tau/T$ numerically. We obtained error estimates for $l$, $\\alpha$ and $\\beta$ from the Hessian of the residual of the least square fit with respect to the parameters.\n\nThe pfn-1 (RNAi) phenotype was characterized by extreme and fast motion on timescales that are short (15 s) compared to our averaging window and importantly approach the cortical turnover time (30 s), see Figure 3. The hydrodynamic model, which we developed is strictly valid in a regime where the cortex is viscous, that is for flows which are slow compared to the cortical turnover time. pfn-1 (RNAi) might push the cortex into a regime where this assumption breaks down. Indeed, movies of pfn-1 (RNAi) showed events that might be interpreted as local ruptures of the cortex, which is an elastic effect. Since our theory does not include elastic effects, it failed to capture a phenotype dominated by elastic effects. A second effect that comes into play due to the more violent flows is that local compression can lead to local alignment of actin filaments in the cortex. This changes the symmetries of the problem and may give rise to effects that are not captured in our model, which assumes that the actin network is isotropic in the cortical plane. Active fluid theory without chirality was therefore used to fit velocity profiles of pfn-1 (RNAi) as the fit quality was poor when chirality was included. Therefore, we could determine the hydrodynamic length but not the chirality index for pfn-1 (RNAi).\n\n### Nonlinear dimensional reduction\n\nQuantifications from both the ABP and suppressor screen data set (11 actomyosin regulators) were first combined and the zscore (from MATLAB) was computed for each RNAi condition across each quantification. Since chirality index for pfn-1 (RNAi) could not be determined from a fit of velocity profiles and given that chiral counter-rotation velocity for pfn-1 (RNAi) was nearly zero (see Figure 2C), a chirality index of zero was used for pfn-1 (RNAi) before computing the z-scores. This was then followed by determination of curvilinear distances (also called nonlinear sample distances) between data points by calculation of pair-wise distances over their minimal spanning tree constructed in the parameter space using the correlation norm (Cannistraci et al., 2010). Kruskal method was used to build the minimum spanning tree. A matrix of these nonlinear pairwise distances (named minimum curvilinear kernel) was then subjected to singular value decomposition to identify the two principal nonlinear and orthogonal directions along which the highest variation in the data set was observed. The zscore normalized data set was then visualized along these two dimensions. All these steps form the Minimum Curvilinear Embedding (MCE) algorithm that is a type of tuning-free nonlinear principal component analysis (Cannistraci et al., 2013).\n",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "8a76ca68-3030-483b-be58-126a798d8555",
+      "submission_id": "f9e84fa8-9129-41ec-84b8-dca6d370d47d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37677.027](https://doi.org/10.7554/eLife.37677.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Morphogenetic degeneracies in the actomyosin cortex\" for consideration by eLife. Your article has been reviewed by Naama Barkai as the Senior Editor, a Reviewing Editor and two peer reviewers. The following individual involved in review of your submission has agreed to reveal his identity: Stefan Wieser (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor and agreed that this paper provides an important contribution to the literature. Several points in the paper, however, require further discussion, as is detailed in the individual reviewers. Please address all comments below in the revised version.\n\nReviewer #1:\n\nS.R. Naganathan and co-authors present an RNAi based screen combined with quantitative live-imaging to identify molecular candidates underlying the large-scale physical properties of the cell cortex.\n\nThis work is a very interesting contribution towards advancing our current understanding of how individual molecular players determine distinct emergent properties at the cytoskeleton level which are related to cellular function. The authors perform a rigorous and extensive image-based RNAi interference screen in the C. elegans zygote to map diverse molecular actin binding proteins (ABPs) and actin regulatory proteins to bulk mechanical properties of the cell cortex such as flow speed /v, hydrodynamics length scale /\u03bb and chirality /c. These large-scale actomyosin properties create a parameter space with low correlation to identify the contribution of molecular components to mostly independent large-scale properties. The authors identify previously unrecognized molecular modulators of actomyosin cortex dynamics and their analysis reveals that different molecular players converge on modulating the same large-scale cortical properties. This leads the authors to propose a \"morphogenetic degeneracy\" in which multiple molecular components modulate the same emergent physical cortex characteristics. They speculate that this behaviour is potentially relevant for the robustness of dynamic cellular processes in development.\n\nThis work is a relevant contribution to the field of cytoskeleton and cellular dynamics with interesting resources and data sets relevant to a broad scientific community. The article is very well structured and written and presents and summarises the results in an appropriate way.\n\nOne concern is related to the argument about \"morphogenetic degeneracy\". Although this argument catches attention, the finding that different molecular players impact on the same global physical properties of a composite material such as the cell cortex might be expected. The authors speculate about the potential impact of degeneracy on robustness \u2013 which is exciting \u2013 but awaits future experimental tests.\n\nReviewer #2:\n\nThis paper presents an in-depth quantitative study of the role of actin binding proteins (ABPs) in the dynamics of the actomyosin cortex of C. elegans zygotes. The authors perform a rather extensive RNAi screen of ABPs, associated with a quantitative analysis of actomyosin dynamics, which allows to extract several biophysical parameters (friction length, active torque, period of oscillations etc.). This leads to the quantification of the effect of various molecular players in cortical dynamics. The authors then identify classes of ABPs having a similar impact on the cortex dynamics and put forward the concept of morphogenetic degeneracy.\n\nThe paper is very well written, clear, and based on solid observations and arguments. A quantitative analysis of the effect of ABPs on actomyosin dynamics at this level is new to the best of my knowledge and will be surely useful for the community. To me the only disappointing aspect of such study is probably the lack of surprising conclusion or novel effect (which again does not diminish the value of their quantitative analysis). The authors put forward in the discussion the concept of morphogenetic degeneracy. In my opinion their approach inherently leads to some degeneracy, since it relies on a fitting procedure to a coarse-grained physical model, which by definition accounts for the zoo of microscopic degrees of freedom (ABPs) through only a few mesoscopic parameters (e.g. viscosity, friction). It is important that the authors justify why their results go beyond such a trivial degeneracy. To me the interesting side of this discussion would rather be the clustering into classes of ABPs with similar functions; the robustness of such classification however not clear at this stage and is likely to depend on the choice of hydrodynamic model, clustering algorithm.\n\nTo conclude, given the quality of the results I recommend publication, provided that the authors provide a more critical discussion of the observed degeneracy that claim. The following points should also be addressed for clarity:\n\n\u2013 The choice of hydrodynamic model has the merit to be probably the simplest one that provides good fit to data. Since it neglects pressure like forces in the gel it does not require to explicitly take into actin turn-over dynamics. This can give the erroneous impression that the dynamics is independent of actin turn over dynamics. Since the effect of ABPs acting on actin turn-over is analysed, this should be commented. The limitations of the model should be briefly stated (newtonian fluid, linear friction among others).\n\n\u2013 In the fitting procedure the authors take the active stress as proportional to myosin intensity. This should be commented upon. In particular the authors show that myosin clustering (size and density) can have opposite effects, which could sound contradictory.\n\n\u2013 The hydrodynamic model as given does not lead to oscillatory behaviour, those require other ingredients. This should be stated.\n\n\u2013 In subsection \u201cDimensional reduction analysis reveals clusters with similar effects on cortical mechanics\u201d, the authors say: \u201cIncreasing F-actin density throughout the cytosol is likely to increase cytoplasmic viscosity, which in turn would lead to an increased effective friction and a reduced hydrodynamic length.\u201d Given the definition of friction length as the ratio of viscosity and friction (root of) I don't see why.\n\n\u2013 As a general comment, the author analysed isolated perturbations of ABPs, and therefore miss cooperativity in ABPs, which might be important.\n",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9171c565-2cdc-4590-9db6-ee82a06f6174",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C1",
+      "claim": "Cortical flow is vital for cell polarization and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical flow is vital for cell polarization, migration (Bray and White, 1988; Callan-Jones et al., 2016; Ruprecht et al., 2015; Maiuri et al., 2015; Liu et al., 2015) as well as for formation of contractile ring during cell division (Turlier et al., 2014; Reymann et al., 2016; Salbreux et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "5fb66b76-c15b-49f3-89c9-0d04e2a0d5f0",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C2",
+      "claim": "Cortical flow is vital for formation of contractile ring during cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical flow is vital for cell polarization, migration (Bray and White, 1988; Callan-Jones et al., 2016; Ruprecht et al., 2015; Maiuri et al., 2015; Liu et al., 2015) as well as for formation of contractile ring during cell division (Turlier et al., 2014; Reymann et al., 2016; Salbreux et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "2b1fd8da-46f9-4331-b97c-bcd091d93840",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C3",
+      "claim": "In C. elegans, cortical flow is driven by a gradient in myosin activity (contractility).",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, cortical flow is driven by a gradient in myosin activity (contractility) (Mayer et al., 2010), transporting the anterior polarity proteins, PAR-3, PAR-6 and aPKC to the appropriate region of the cortex to trigger polarization (Munro et al., 2004; Goehring et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayer et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "16de668e-b304-498f-919a-f73ce7ca6b04",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C4",
+      "claim": "Cortical flow transports the anterior polarity proteins, PAR-3, PAR-6 and aPKC to the appropriate region of the cortex to trigger polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, cortical flow is driven by a gradient in myosin activity (contractility) (Mayer et al., 2010), transporting the anterior polarity proteins, PAR-3, PAR-6 and aPKC to the appropriate region of the cortex to trigger polarization (Munro et al., 2004; Goehring et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "9971b545-f150-496b-b45e-cee72531dd22",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C5",
+      "claim": "Cortical flow dynamics at large scales can be captured using a hydrodynamic theory by considering the actomyosin cortex as a thin film of an active chiral viscous fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical flow dynamics at large scales can be captured using a hydrodynamic theory by considering the actomyosin cortex as a thin film of an active chiral viscous fluid (Mayer et al., 2010; Behrndt et al., 2012; Turlier et al., 2014; Tjhung et al., 2015; Marchetti et al., 2013; F\u00fcrthauer et al., 2012; F\u00fcrthauer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to theoretical work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "c17cf2e2-5c57-44e8-8886-ea8761a31ce1",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C6",
+      "claim": "Large-scale on-axis (anterior directed) and chiral rotatory flows can be quantitatively described by considering active stresses and active torques.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, large-scale on-axis (anterior directed) and chiral rotatory flows can be quantitatively described by considering active stresses and active torques (Mayer et al., 2010; Naganathan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "02ff35bf-881b-4cdd-8849-8f672f037c82",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C7",
+      "claim": "The hydrodynamic length determines the distance over which flow generation ranges and is vital for long-range advective transport of PAR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In this approach, two effective bulk material properties are critical in describing large-scale flows: (1) a hydrodynamic length, which determines the distance over which flow generation ranges and which is vital for long-range advective transport of PAR proteins (Goehring et al., 2011; Mayer et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "89df205b-c0f9-4b86-b1e5-99c80b8d77ce",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C8",
+      "claim": "The chirality index quantifies the relative amount by which the cortex is rotated compared to contraction and controls embryonic left-right symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) a chirality index, which quantifies the relative amount by which the cortex is rotated compared to contraction, and which controls embryonic left-right symmetry breaking (Naganathan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "4292f725-36a1-47c4-a953-d34714c6c0f1",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C9",
+      "claim": "At the molecular scale, cortical flow is driven through actin cortex reorganization facilitated by actin binding proteins (ABPs) and actomyosin regulators as well as through force generation by myosin motor proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular scale, cortical flow is driven through actin cortex reorganization facilitated by actin binding proteins (ABPs) and actomyosin regulators as well as through force generation by myosin motor proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding of actomyosin systems",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "abbebf1e-667c-4f5f-962f-e4f906b4c66d",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C10",
+      "claim": "ABPs perform diverse functions such as sequestration of actin monomers and cross-linking, severing, capping and polymerization of actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "ABPs perform diverse functions such as sequestration of actin monomers and cross-linking, severing, capping and polymerization of actin filaments (Pollard and Cooper, 1986; dos Remedios et al., 2003; Winder and Proteins, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "7eb77650-af36-4509-a14f-c341f6580857",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C11",
+      "claim": "Loss of profilin (an ABP that promotes actin polymerization) expression enhances breast cancer cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, loss of profilin (an ABP that promotes actin polymerization) expression enhances breast cancer cell motility (Bae et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "592da8f0-cb7f-4589-8c96-2df3b23d7f26",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C12",
+      "claim": "Loss of actinin (an ABP that crosslinks actin filaments) accelerates cleavage furrow constriction during cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "loss of actinin (an ABP that crosslinks actin filaments) accelerates cleavage furrow constriction during cytokinesis (Mukhina et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "9fbf2a2a-da50-49f7-baae-1a86ec95a05a",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C13",
+      "claim": "A candidate based RNAi screen of 33 ABPs and 11 actomyosin regulators was performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we performed a candidate based RNAi screen of 33 ABPs and included 11 actomyosin regulators that were revealed to have a significant impact on flow dynamics, as previously identified in an RNAi-based suppressor screen (Fievet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental approach taken in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "1a2a2da6-2245-46a8-86b7-e67385afc5d3",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C14",
+      "claim": "The 11 actomyosin regulators were previously identified in an RNAi-based suppressor screen to have a significant impact on flow dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we performed a candidate based RNAi screen of 33 ABPs and included 11 actomyosin regulators that were revealed to have a significant impact on flow dynamics, as previously identified in an RNAi-based suppressor screen (Fievet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "428777e1-b3f1-4590-90d2-575399c7adf1",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C15",
+      "claim": "Several proteins have a significant impact on cortical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify several proteins to have a significant impact on cortical properties, and we demonstrate that RNAi of proteins with distinct molecular activities leads to similar changes in the quantifications performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes findings from the screen performed in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "722b5140-b122-4825-b996-14229b7a14a4",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C16",
+      "claim": "RNAi of proteins with distinct molecular activities leads to similar changes in the quantifications performed.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify several proteins to have a significant impact on cortical properties, and we demonstrate that RNAi of proteins with distinct molecular activities leads to similar changes in the quantifications performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes findings from the screen performed in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "cd8205d2-0a60-4d6c-bd5a-e6f0650a4be8",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C17",
+      "claim": "There exists degeneracy in the regulation of actomyosin-based cortical flow.",
+      "claim_type": "EXPLICIT",
+      "source": "We categorize these proteins into functional groups and uncover degeneracy in the regulation of actomyosin-based cortical flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the analysis of screen data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "1c457c1e-b292-4f60-b990-91fff9b66715",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C18",
+      "claim": "RNAi of KLP-1 was used as a negative control for wild-type behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi of KLP-1 (a kinesin-like motor protein that is expressed only later in development [Zhou et al., 2001]) was used as a negative control for wild-type behaviour (Hall and Hedgecock, 1991; Schonegg et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental design choice",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "c2febaeb-62e3-4635-8253-a47e8cad2b65",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C20",
+      "claim": "There is only a weak correlation between AP and chiral counter-rotation flow velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previously published results that AP and chiral flow can be modulated independent of each other (Naganathan et al., 2014), we observed only a weak correlation between AP and chiral counter-rotation flow velocities (Pearson's linear correlation coefficient, R, 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative analysis of correlation between measured parameters",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "56ebfdd7-f611-4fcd-95a8-fd48d81bdbed",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C21",
+      "claim": "AP and chiral flow can be modulated independent of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previously published results that AP and chiral flow can be modulated independent of each other (Naganathan et al., 2014), we observed only a weak correlation between AP and chiral counter-rotation flow velocities (Pearson's linear correlation coefficient, R, 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "77992f00-b8d4-430e-9a3f-e7fd1ad4211c",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C22",
+      "claim": "Large-scale RNAi screens performed in C. elegans 1-cell embryos have failed to identify many of these ABPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that large-scale RNAi screens performed in C. elegans 1-cell embryos have failed to identify many of these ABPs (S\u00f6nnichsen et al., 2005), we show that a rigorous quantification is required to identify subtle yet significant deviations from wild type cortical flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "b1a3f6dc-7df6-4131-9614-b7a7be98d9a4",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C23",
+      "claim": "Rigorous quantification is required to identify subtle yet significant deviations from wild type cortical flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that large-scale RNAi screens performed in C. elegans 1-cell embryos have failed to identify many of these ABPs (S\u00f6nnichsen et al., 2005), we show that a rigorous quantification is required to identify subtle yet significant deviations from wild type cortical flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison with prior screens",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "47608171-0528-495b-a553-4e2a38a4058c",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C24",
+      "claim": "The flow has a pulsatile characteristic with a periodic temporal increase and decrease in flow velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "In all conditions, we noted that the flow had a pulsatile characteristic (as described in Nishikawa et al., 2017) with a periodic temporal increase and decrease in flow velocity (Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from time-lapse imaging data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "5a998afc-8872-4c9d-84c7-4a8908920a04",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C25",
+      "claim": "Pulsatility, emerging through self-organization of the actomyosin network, is an intrinsic feature of active contractile systems and plays an instrumental role in numerous morphogenetic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulsatility, emerging through self-organization of the actomyosin network, is an intrinsic feature of active contractile systems and plays an instrumental role in numerous morphogenetic processes (Gorfinkiel, 2016; Munjal et al., 2015; Nishikawa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "2676cb29-ae7f-4e83-a75d-34b937830605",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C28",
+      "claim": "ABPs that regulate actin filament turnover such as F-actin polymerizing proteins (pfn-1, cyk-1, arx-2) and F-actin severing (unc-60, fli-1) and capping (cap-1) proteins have a significant effect on the period of pulsation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ABPs that regulate actin filament turnover such as F-actin polymerizing proteins (pfn-1, cyk-1, arx-2) and F-actin severing (unc-60, fli-1) and capping (cap-1) proteins have a significant effect on the period of pulsation suggesting that pulsation is regulated by cortex turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from screen data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d8df5b5c-d23c-4c40-99d5-2c43c13516f2",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C29",
+      "claim": "Pulsation is regulated by cortex turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ABPs that regulate actin filament turnover such as F-actin polymerizing proteins (pfn-1, cyk-1, arx-2) and F-actin severing (unc-60, fli-1) and capping (cap-1) proteins have a significant effect on the period of pulsation suggesting that pulsation is regulated by cortex turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation that turnover-regulating proteins affect pulsation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "ed4da554-5ef6-41bd-9668-1238812f2388",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C30",
+      "claim": "Network architecture is known to facilitate actomyosin dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Since network architecture is known to facilitate actomyosin dynamics (Lieleg et al., 2010; Reymann et al., 2012; Blanchoin et al., 2014), we next asked whether a change in flow velocity is associated with an alteration of large-scale actomyosin foci structure (Munro et al., 2004; Munjal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "3faa79b3-fd70-461a-aabf-811727d42817",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C31",
+      "claim": "A change in actin filament organization highly correlates with a change in myosin organization during cortical flow.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown previously that a change in actin filament organization highly correlates with a change in myosin organization during cortical flow (Reymann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "42064807-b0a8-4240-b19f-30691d24ce7e",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C32",
+      "claim": "17 of 44 RNAi conditions resulted in a significant change in one or both of myosin foci size and foci number density when compared to the negative control.",
+      "claim_type": "EXPLICIT",
+      "source": "From these quantifications, we found that 17 of 44 RNAi conditions resulted in a significant change in one or both of myosin foci size (Figure 4B, Figure 4\u2014figure supplement 1) and foci number density (Figure 5B, Figure 5\u2014figure supplement 1) when compared to the negative control (klp-1 (RNAi)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from the screen",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "51faab49-6a25-4fc4-bede-7eb9f97dba40",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C34",
+      "claim": "12 of 17 conditions that affected foci size and/or density also resulted in a significant change in flow velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of flow velocity with foci size/density revealed that 12 of 17 conditions that affected foci size and/or density also resulted in a significant change in flow velocities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of different measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d36dca94-46a7-463a-a7c1-217a93642c5b",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C37",
+      "claim": "Bigger foci size (and smaller foci density) is correlated with slower average flow velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, bigger foci size (and smaller foci density) is correlated with slower average flow velocities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of correlation analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "2d2f1022-430d-4d35-a4eb-0d9856e24c43",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C38",
+      "claim": "RNAi conditions that affect actomyosin flow velocities tend to also affect myosin foci size and/or density.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that RNAi conditions that affect actomyosin flow velocities tend to also affect myosin foci size and/or density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison of measurements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "30e43a02-bd22-41e6-9f70-0fa9533fdaa3",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C39",
+      "claim": "Actomyosin network structure is strongly linked to the observed dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this suggests that actomyosin network structure is strongly linked to the observed dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from correlation between structure and dynamics",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "9493c3ee-c95f-45b5-8cbe-4072d5169a5b",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C40",
+      "claim": "RNAi of several of the ABPs and actomyosin regulators resulted in a significant change of both the hydrodynamic length and the chirality index as compared to the non-RNAi embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that RNAi of several of the ABPs and actomyosin regulators resulted in a significant change of both the hydrodynamic length and the chirality index as compared to the non-RNAi embryos (Figure 6A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from fitting hydrodynamic model to data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "fca7f2f7-bdc5-4815-a839-09726565f6a9",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C41",
+      "claim": "Material properties of the cortex can be tuned in different ways, by modulating a diverse set of molecular activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, material properties of the cortex can be tuned in different ways, by modulating a diverse set of molecular activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the observation that diverse proteins affect material properties",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "e4103de8-cc47-4e66-94e6-4443bcf6f4e8",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C42",
+      "claim": "While a large fraction of RNAi knockdowns resulted in a significantly reduced chirality index, three of four knockdown conditions (rga-3, csnk-1, cpn-1) that resulted in a significantly higher chirality index are known to also impact on myosin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while a large fraction of RNAi knockdowns resulted in a significantly reduced chirality index, three of four knockdown conditions (rga-3 - also shown in (Naganathan et al., 2014), csnk-1, cpn-1) that resulted in a significantly higher chirality index are known to also impact on myosin activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from screen data with reference to prior knowledge",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d426f48c-e735-4147-b453-481046ab5e46",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C43",
+      "claim": "Active processes in the actomyosin cytoskeleton generate active torques for chiral symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "This further strengthens the idea that active processes in the actomyosin cytoskeleton generate active torques for chiral symmetry breaking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation that myosin-affecting proteins increase chirality",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "9339b734-4910-4d1f-8315-28b83887d037",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C44",
+      "claim": "15 of 20 conditions that affected flow velocities resulted in a significant change in the hydrodynamic length.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 15 of 20 conditions that affected flow velocities and 14 of 17 conditions that affected foci structure resulted in a significant change in the hydrodynamic length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of different measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d2aceb69-801f-4573-a8fb-406b41eb5a7d",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C45",
+      "claim": "14 of 17 conditions that affected foci structure resulted in a significant change in the hydrodynamic length.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 15 of 20 conditions that affected flow velocities and 14 of 17 conditions that affected foci structure resulted in a significant change in the hydrodynamic length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of different measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "02c9bcb8-0019-4dd6-91b8-9c5e19d839ff",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C46",
+      "claim": "15 of 20 RNAi conditions that affected flow velocities resulted in a significant change in the chirality index.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 15 of 20 RNAi conditions that affected flow velocities and 13 of 17 conditions that affected foci structure resulted in a significant change in the chirality index.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of different measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "f1563fd0-5e82-4aa7-999b-54e4fd66293e",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C47",
+      "claim": "13 of 17 conditions that affected foci structure resulted in a significant change in the chirality index.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 15 of 20 RNAi conditions that affected flow velocities and 13 of 17 conditions that affected foci structure resulted in a significant change in the chirality index.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of different measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "8a191b42-c12b-46bc-b354-adbbff38ad21",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C48",
+      "claim": "RNAi conditions that affect actomyosin flow velocities, myosin foci size, or myosin foci density tend to also modify the hydrodynamic length and/or the chirality index.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that RNAi conditions that affect actomyosin flow velocities, myosin foci size, or myosin foci density tend to also modify the hydrodynamic length and/or the chirality index.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison of measurements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "cd89b85f-95b4-4be1-adad-6c0db4f82817",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C49",
+      "claim": "Dimensional reduction of the data set revealed four different groups of proteins with similar effects on cortical mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimensional reduction of this data set (Figure 7A) revealed four different groups of proteins with similar effects on cortical mechanics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from dimensional reduction analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "2666a1bd-533a-46e1-afe0-7a503cec8b26",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C50",
+      "claim": "Each cluster comprised proteins with different functions suggesting that large-scale actomyosin behaviours can be attained by tuning diverse molecular mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, each cluster comprised proteins with different functions suggesting that large-scale actomyosin behaviours can be attained by tuning diverse molecular mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "dc1919e0-0019-49b7-8bec-11d774b78032",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C51",
+      "claim": "Cluster 1 consisted of two actomyosin regulators (RGA-3 and CSNK-1) and two ABPs (NEX-1 and CPN-1).",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 1 consisted of two actomyosin regulators, the Rho-1 regulator RGA-3 and casein-kinase 1 (CSNK-1) and two ABPs, an actin-membrane cross linker (annexin, NEX-1) and an inhibitor of myosin ATPase activity (calponin, CPN-1) (red, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "f544e23d-fcec-4c71-8725-e474cb313abe",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C52",
+      "claim": "A characteristic feature of cluster 1 was an increase in the average chirality index.",
+      "claim_type": "EXPLICIT",
+      "source": "A characteristic feature of this cluster was an increase in the average chirality index suggesting that these proteins regulate chiral properties of the actomyosin cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "1e78500f-fb78-4b59-83c4-f600f145ad1d",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C53",
+      "claim": "Cluster 1 proteins regulate chiral properties of the actomyosin cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A characteristic feature of this cluster was an increase in the average chirality index suggesting that these proteins regulate chiral properties of the actomyosin cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation that cluster 1 increases chirality index",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "68dfe738-4242-4dea-82ed-fbdf2856c373",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C54",
+      "claim": "Cluster 2 consisted of an actomyosin regulator (NTL-2) and ABPs that scaffold the cortex (SPC-1) and create branched actin networks (ARX-2).",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 2 consisted of an actomyosin regulator (NTL-2, a CCR4-NOT transcription complex subunit) and ABPs that scaffold the cortex (SPC-1, spectrin) and create branched actin networks (ARX-2, a component of the ARP 2/3 complex) (green, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "97155b1f-b8f9-4b1d-ae0e-fffe68a22056",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C55",
+      "claim": "RNAi of cluster 2 proteins resulted in an increase in average foci density and a decrease in the period of oscillation, that is faster oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi of cluster two proteins resulted in an increase in average foci density and a decrease in the period of oscillation, that is faster oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "90784ecc-af7c-4dcc-9319-0b3bd2cef3e5",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C56",
+      "claim": "Cluster 3a consisted of 6 actomyosin regulators displaying an increase in the hydrodynamic length and a decrease in the chirality index of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 3a consisted of 6 actomyosin regulators (orange, Figure 7) displaying an increase in the hydrodynamic length and a decrease in the chirality index of the cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "c02a240c-11d0-47c1-869b-b511036cf66a",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C57",
+      "claim": "Cluster 3b consisted of one actomyosin regulator (CDC-42) and 4 ABPs that promote polymerization (PFN-1, CYK-1), crosslinking (ANI-1) and bundling of actin filaments (PLST-1).",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 3b (pink, Figure 7) consisted of one actomyosin regulator (CDC-42, a Rho-GTPase) and 4 ABPs that promote polymerization (profilin, PFN-1; formin, CYK-1), crosslinking (anillin, ANI-1) and bundling of actin filaments (Ding et al., 2017) (plastin, PLST-1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "ad6d2eb3-d4da-48e1-87de-afdbcb6d8369",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C58",
+      "claim": "RNAi of cluster 3b proteins resulted in a decrease in average foci number density, AP velocity, oscillatory flow period and chirality index of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi of cluster 3b proteins resulted in a decrease in average foci number density, AP velocity, oscillatory flow period and chirality index of the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "0649c9d5-d4db-4461-b744-a53bf87a01de",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C59",
+      "claim": "A lower foci density indicates a less dense actomyosin cortex, hinting at a reduction in effective viscosity of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A lower foci density indicates a less dense actomyosin cortex, hinting at a reduction in effective viscosity of the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation of lower foci density",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d0cc90e8-40ed-4315-b847-0881262c2d72",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C60",
+      "claim": "A decrease in the hydrodynamic length of the cortex was observed for RNAi of cluster 3b proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, we observed a decrease in the hydrodynamic length of the cortex for RNAi of cluster 3b proteins (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "ffa8046b-5f53-4a0c-b04b-d9a29189d874",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C61",
+      "claim": "Cluster 3c consisted of a myosin chaperone (UNC-45) and two ABPs that cap barbed ends (CAP-1) and sever actin filaments (UNC-60).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, cluster 3c consisted of a myosin chaperone (UNC-45) and two ABPs that cap barbed ends (capping protein, CAP-1) and sever actin filaments (cofilin, UNC-60) (cluster 3c, violet, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "086af387-4ad3-403b-96e1-260f3cbd5762",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C62",
+      "claim": "RNAi of cluster 3c proteins resulted in a decrease in average AP velocity, chirality index and an increase in the average period of oscillation (in cap-1 and unc-60 (RNAi) conditions).",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi of cluster 3c proteins resulted in a decrease in average AP velocity, chirality index and an increase in the average period of oscillation (in cap-1 and unc-60 (RNAi) conditions) that is slower oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "78ef4ade-90c2-4685-929a-9354e8acb198",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C63",
+      "claim": "Cluster 3c RNAi conditions (UNC-60 and CAP-1) tend to display a reduced hydrodynamic length.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed an increase in foci number density (UNC-60) or foci size (CAP-1), and cluster 3c RNAi conditions (UNC-60 and CAP-1) tend to display a reduced hydrodynamic length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "4f24af63-7240-4d42-b489-943929454e41",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C64",
+      "claim": "An increase in cytoplasmic F-actin density was observed under RNAi of the cluster 3c genes cap-1 and unc-60.",
+      "claim_type": "EXPLICIT",
+      "source": "To rationalize the latter observation, we imaged cytoplasmic actin using a Life act::mKate transgenic line, and observed an increase in cytoplasmic F-actin density under RNAi of the cluster 3c genes cap-1 and unc-60 (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from imaging cytoplasmic actin",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "f3a4f8a1-23e1-4f8d-8d17-b642f3613d25",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C65",
+      "claim": "Increasing F-actin density throughout the cytosol is likely to increase cytoplasmic viscosity, which in turn would lead to an increased effective friction and a reduced hydrodynamic length.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing F-actin density throughout the cytosol is likely to increase cytoplasmic viscosity, which in turn would lead to an increased effective friction and a reduced hydrodynamic length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on physical reasoning about viscosity and friction",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "f4ddab55-3ec0-409d-a1da-cad173d459e5",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C66",
+      "claim": "Distinct ABP molecular activities can have a similar impact on large-scale actomyosin cortical behaviours.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we identify clusters of ABPs that regulate large-scale material properties of the cortex. A central result from our study is that distinct ABP molecular activities can have a similar impact on large-scale actomyosin cortical behaviours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from cluster analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "8de6c0d3-1dd8-48f6-9bca-2d450a880d29",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C67",
+      "claim": "The RNAi-based knockdown conditions do not correspond to a full loss of function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RNAi-based knockdown conditions do not correspond to a full loss of function, and our approach allows for a quantitative characterization of subtle cortical phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "b13d3fef-3acd-45d6-9d3b-3f2f19161b1c",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C68",
+      "claim": "The approach allows for a quantitative characterization of subtle cortical phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RNAi-based knockdown conditions do not correspond to a full loss of function, and our approach allows for a quantitative characterization of subtle cortical phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "af562745-df85-42ee-a85b-bd9143e25029",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C69",
+      "claim": "The approach has enabled identification of a number of ABPs that were not previously described to have a significant impact on cortical structure and dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This has enabled us to identity a number of ABPs that were not previously described to have a significant impact on cortical structure and dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison with prior knowledge",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d80006e2-5d31-411b-b160-c41a698f4468",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C70",
+      "claim": "Cortex bulk physical properties (hydrodynamic length, chirality index) are under control of ABPs and actomyosin regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified cortex bulk physical properties (hydrodynamic length, chirality index) that are under control of ABPs and actomyosin regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from screen results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "04281ba6-dc38-4c0f-af0c-660884081fc4",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C71",
+      "claim": "A sufficiently long hydrodynamic length facilitates establishment of head-tail (AP) body axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the large-scale physical properties of the cortex are important for embryonic development wherein, a sufficiently long hydrodynamic length facilitates establishment of head-tail (AP) body axis (Mayer et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "e77e2417-1cf6-4215-9106-356b73175f79",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C72",
+      "claim": "Chiral active torques in the cortex help determine the L/R body axis.",
+      "claim_type": "EXPLICIT",
+      "source": "and chiral active torques in the cortex help determine the L/R body axis (Pohl and Bao, 2010; Schonegg et al., 2014; Singh and Pohl, 2014; Naganathan et al., 2014; Naganathan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "6d75d532-df00-417f-9ac1-a735e435a231",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C73",
+      "claim": "The observed hydrodynamic length and chirality index (18 \u00b5m and 0.321 respectively for klp-1 (RNAi)) emerges from numerous molecular interactions and are a 'summed effect' of many different protein activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these material properties are impacted by several gene knockdowns, we suggest that the observed hydrodynamic length and chirality index (18 \u00b5m and 0.321 respectively for klp-1 (RNAi)) emerges from numerous molecular interactions and are a 'summed effect' of many different protein activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation that many proteins affect these properties",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "de12214b-28c6-4545-8fb7-ffdab675e4e3",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C74",
+      "claim": "RNAi perturbation of individual molecular activities results in subtle yet quantifiable deviation from the characteristic wild type behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, RNAi perturbation of individual molecular activities results in subtle yet quantifiable deviation from the characteristic wild type behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation of subtle phenotypes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "ea2dcc81-6618-4ea6-a8c1-81b195d6d415",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C75",
+      "claim": "Chirality is an emergent active property of the actomyosin cytoskeleton that is dependent on molecular-scale torque generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Chirality is an emergent active property of the actomyosin cytoskeleton that is dependent on molecular-scale torque generation (Naganathan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "40522ab0-3508-4285-90da-22aaa276f0c2",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C76",
+      "claim": "Actin binding proteins play a significant role in regulating chirality.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify actin binding proteins to play a significant role in regulating chirality suggesting that cortical actin network architecture is equally important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from screen results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d856efcc-3ef6-4c4e-9db2-2c3a016fe8f3",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C77",
+      "claim": "Cortical actin network architecture is equally important for chirality.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify actin binding proteins to play a significant role in regulating chirality suggesting that cortical actin network architecture is equally important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation that ABPs affect chirality",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "6d5f91f3-73f1-4862-a7c5-b9a7e67c8ffc",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C78",
+      "claim": "In addition to myosin activity, the actin network architecture was shown to play a vital role in regulating cortex thickness and tension.",
+      "claim_type": "EXPLICIT",
+      "source": "This resonates well with a recent discovery, where in addition to myosin activity, the actin network architecture was shown to play a vital role in regulating cortex thickness and tension (Chugh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "1a0e7c9c-059c-4ffd-bb88-9e3f7e716efe",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C79",
+      "claim": "Self-organization of actomyosin cortex and pulsation of Rho-associated proteins were suggested to be important for actomyosin pulsation.",
+      "claim_type": "EXPLICIT",
+      "source": "While self-organization of actomyosin cortex (Munjal et al., 2015; Nishikawa et al., 2017) and pulsation of Rho-associated proteins (Nishikawa et al., 2017) were suggested to be important for actomyosin pulsation, here we identify ABPs that facilitate the emergence of pulsation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "f3326f19-9f93-49d9-9827-e0c88c768fca",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C80",
+      "claim": "ABPs facilitate the emergence of pulsation.",
+      "claim_type": "EXPLICIT",
+      "source": "While self-organization of actomyosin cortex (Munjal et al., 2015; Nishikawa et al., 2017) and pulsation of Rho-associated proteins (Nishikawa et al., 2017) were suggested to be important for actomyosin pulsation, here we identify ABPs that facilitate the emergence of pulsation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from screen results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "77179067-baf2-4557-a944-9bcba5a242bf",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C81",
+      "claim": "A reduction in cortical viscosity is correlated with faster oscillations (cluster 3b proteins).",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, we observe that a reduction in cortical viscosity is correlated with faster oscillations (cluster 3b proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d9f018e8-d40d-4dfa-87e8-98a979ac9d51",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C82",
+      "claim": "Spectrin knockdown led to faster oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, spectrin (cluster 2) knockdown led to faster oscillations and given that spectrin is vital for maintenance of membrane shape (Zhang et al., 2013), it will be interesting to investigate the effect of membrane stability on actomyosin oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from screen data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "7b43224c-c5ad-4802-aa44-94a1da0dd6a4",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C83",
+      "claim": "Spectrin is vital for maintenance of membrane shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, spectrin (cluster 2) knockdown led to faster oscillations and given that spectrin is vital for maintenance of membrane shape (Zhang et al., 2013), it will be interesting to investigate the effect of membrane stability on actomyosin oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d7141253-7ac7-4b23-a24a-1c9e6d86d3a4",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C84",
+      "claim": "Polymerizing, crosslinking and bundling activities of ABPs are known to modulate viscoelastic responses of actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, polymerizing, crosslinking and bundling activities of ABPs are known to modulate viscoelastic responses of actin networks (Stricker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "f1fcac65-ac6f-4eab-b8d6-8fd34336656b",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C85",
+      "claim": "Knockdown of polymerizing, crosslinking or bundling activities leads to similar large-scale phenotypes (cluster 3b).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that knockdown of any of these molecular activities leads to similar large-scale phenotypes (cluster 3b in Figure 7) and results in a decreased hydrodynamic length.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "cd92e57c-28b1-4887-b2b6-9e5b25c66042",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C86",
+      "claim": "Knockdown of polymerizing, crosslinking or bundling activities results in a decreased hydrodynamic length.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that knockdown of any of these molecular activities leads to similar large-scale phenotypes (cluster 3b in Figure 7) and results in a decreased hydrodynamic length.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "dd6ac8fc-a720-4100-a4b4-d452086d4c90",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C87",
+      "claim": "A decreased hydrodynamic length signifies a reduced cortical viscosity in cluster 3b conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This signifies a reduced cortical viscosity in all these conditions and thus likely leading to similar flow phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the relationship between hydrodynamic length and viscosity",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "143f19bd-0f91-45eb-922a-9f7e038daadc",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C88",
+      "claim": "Reducing the severing activity or capping of actin filaments leads to similar phenotypes (cluster 3c).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, reducing the severing activity or capping of actin filaments leads to similar phenotypes (cluster 3c in Figure 7) that signified an increase in friction of the cortex with the cytoplasm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from cluster analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "8302a96e-69e6-4e46-bb58-6d6e4c5d2778",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C89",
+      "claim": "Reducing the severing activity or capping of actin filaments signifies an increase in friction of the cortex with the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, reducing the severing activity or capping of actin filaments leads to similar phenotypes (cluster 3c in Figure 7) that signified an increase in friction of the cortex with the cytoplasm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from the observed phenotypes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "f68cf401-c842-4fed-b52f-46a53ea222ab",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C90",
+      "claim": "Critical physical parameters that determine large-scale functions can be tuned by modulating a spectrum of molecular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that critical physical parameters that determine large-scale functions can be tuned by modulating a spectrum of molecular functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the observation of degeneracy",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "2bcd8622-6f6e-4e56-b089-d76107441f7c",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C91",
+      "claim": "There exists several ways in which a bulk physical property can be achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, there exists several ways in which a bulk physical property can be achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the observation of degeneracy",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "0d343844-e70c-4b0a-adb4-fa3b015c2951",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C92",
+      "claim": "The results are indicative of a 'morphogenetic degeneracy', where distinct activities at the molecular scale contribute to similar physical activities at larger scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are indicative of a 'morphogenetic degeneracy', where distinct activities at the molecular scale contribute to similar physical activities at larger scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the observation of degeneracy",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "0d3fd78d-7c4f-4c95-b687-ee9d2c444a04",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C93",
+      "claim": "Phenotypes at larger scales are determined by unusual material properties of living matter at the mesoscale, together with force and torque generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our line of argumentation is that there is an intermediate layer at the mesoscale that is important to consider. Phenotypes at larger scales are determined by unusual material properties of living matter at this mesoscale, together with force and torque generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical argument about the role of mesoscale properties",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "9ce0ddad-228b-4d68-bcf7-9db02180ec85",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C94",
+      "claim": "Material properties at the mesoscale arise through coarse-graining and averaging microscopic degrees of freedom.",
+      "claim_type": "EXPLICIT",
+      "source": "Now, material properties at the mesoscale arise through coarse-graining and averaging microscopic degrees of freedom, and only a small set of mesoscopic physical parameters contribute to the force balance and the dynamics of the system at the mesoscale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical argument based on coarse-graining principles",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "0a073c04-14f0-4cc7-8b34-563c7fa227ce",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C95",
+      "claim": "Only a small set of mesoscopic physical parameters contribute to the force balance and the dynamics of the system at the mesoscale.",
+      "claim_type": "EXPLICIT",
+      "source": "Now, material properties at the mesoscale arise through coarse-graining and averaging microscopic degrees of freedom, and only a small set of mesoscopic physical parameters contribute to the force balance and the dynamics of the system at the mesoscale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical argument based on coarse-graining principles",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "c5bc8c41-b6af-47be-a360-15af94769022",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C96",
+      "claim": "Morphogenetic degeneracy at the mesoscale is of physical nature and can arise in the absence of redundancy of molecular activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This again gives rise to a degeneracy, but this 'morphogenetic degeneracy' at the mesoscale is of physical nature and can arise in the absence of redundancy of molecular activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical argument about the nature of morphogenetic degeneracy",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "ec678fd4-9f0a-420b-8800-c79805500ae4",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C97",
+      "claim": "Since coarse-graining implies a reduction of the degrees of freedom of a system, similar large scale behaviours can emerge from distinct molecular processes that need not necessarily be redundant with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Since coarse-graining implies a reduction of the degrees of freedom of a system, similar large scale behaviours can emerge from distinct molecular processes that need not necessarily be redundant with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical argument based on coarse-graining principles",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "1a36595f-3bf9-4ef3-8c7d-a51e34d4eef4",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C98",
+      "claim": "The degeneracy observed in the functioning of ABPs contributes to the robust performance of the actomyosin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the degeneracy we observe in the functioning of ABPs contributes to the robust performance of the actomyosin cytoskeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the functional significance of degeneracy",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "a0b008fd-6112-4a5a-9770-fbe732ea39f4",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C99",
+      "claim": "Degeneracy and its link to robustness has been widely studied with respect to gene regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, while degeneracy and its link to robustness has been widely studied with respect to gene regulatory networks (Whitacre, 2010; Whitacre and Bender, 2010; Edelman and Gally, 2001), we here suggest a novel physical implication of degeneracy in living systems that contributes to the robustness of biological matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "e4a170b1-5ebf-448b-a6f7-0a5806273a54",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C100",
+      "claim": "A novel physical implication of degeneracy in living systems contributes to the robustness of biological matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, while degeneracy and its link to robustness has been widely studied with respect to gene regulatory networks (Whitacre, 2010; Whitacre and Bender, 2010; Edelman and Gally, 2001), we here suggest a novel physical implication of degeneracy in living systems that contributes to the robustness of biological matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the broader implications of the findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "2d4476ca-b61a-415c-a2ac-b1d419fdee72",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C101",
+      "claim": "Morphogenetic degeneracies contribute to the robustness of bulk biological matter in development.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that morphogenetic degeneracies contribute to the robustness of bulk biological matter in development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation stated in the abstract",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d81e1aa1-d435-43fb-879f-3cd9f0a25131",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C103",
+      "claim": "The number of hours of feeding was reduced by 10 hrs if 40 hr feeding resulted in sterile worms or produced embryos that arrested at meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of hours of feeding was reduced by 10 hrs if 40 hr feeding resulted in sterile worms or produced embryos that arrested at meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "01147cd5-1d02-4611-bd82-047516a72119",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C104",
+      "claim": "The feeding time had to be reduced for cap-1 (30 hrs), cyk-1 (30 hrs), pfn-1 (20 hrs) and unc-60 (15 hrs) RNAi conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The feeding time had to be reduced for cap-1 (30 hrs), cyk-1 (30 hrs), pfn-1 (20 hrs) and unc-60 (15 hrs) RNAi conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "1e521632-a053-43a4-9d80-a6ff8da3c219",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C105",
+      "claim": "The pfn-1 (RNAi) phenotype was characterized by extreme and fast motion on timescales that are short (15 s) compared to the averaging window and approach the cortical turnover time (30 s).",
+      "claim_type": "EXPLICIT",
+      "source": "The pfn-1 (RNAi) phenotype was characterized by extreme and fast motion on timescales that are short (15 s) compared to our averaging window and importantly approach the cortical turnover time (30 s), see Figure 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "f9f91fa8-4d9d-4c12-a490-95a418d0f2c8",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C106",
+      "claim": "The hydrodynamic model is strictly valid in a regime where the cortex is viscous, that is for flows which are slow compared to the cortical turnover time.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrodynamic model, which we developed is strictly valid in a regime where the cortex is viscous, that is for flows which are slow compared to the cortical turnover time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model assumptions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "04f0eb62-c35a-4993-aa27-33d56749e849",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C107",
+      "claim": "pfn-1 (RNAi) might push the cortex into a regime where the assumption of viscous behavior breaks down.",
+      "claim_type": "EXPLICIT",
+      "source": "pfn-1 (RNAi) might push the cortex into a regime where this assumption breaks down.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the validity of model assumptions for pfn-1 (RNAi)",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "c7bd9cd4-34d8-4636-8ba3-904991de6f8e",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C108",
+      "claim": "Movies of pfn-1 (RNAi) showed events that might be interpreted as local ruptures of the cortex, which is an elastic effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, movies of pfn-1 (RNAi) showed events that might be interpreted as local ruptures of the cortex, which is an elastic effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from imaging data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "0b0b2bfa-5f8f-4e88-89c9-217613645fe7",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C109",
+      "claim": "The theory does not include elastic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our theory does not include elastic effects, it failed to capture a phenotype dominated by elastic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model limitations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "61c844ae-3d4f-4465-9d15-f39f71f32afa",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C110",
+      "claim": "Local compression can lead to local alignment of actin filaments in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A second effect that comes into play due to the more violent flows is that local compression can lead to local alignment of actin filaments in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about physical effects in pfn-1 (RNAi)",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "db6249b9-be98-4c07-8b17-48e14195c420",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C111",
+      "claim": "The model assumes that the actin network is isotropic in the cortical plane.",
+      "claim_type": "EXPLICIT",
+      "source": "This changes the symmetries of the problem and may give rise to effects that are not captured in our model, which assumes that the actin network is isotropic in the cortical plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model assumptions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "cce0b0fd-2ec3-43dd-86df-e7340a98f76b",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C112",
+      "claim": "Active fluid theory without chirality was used to fit velocity profiles of pfn-1 (RNAi) as the fit quality was poor when chirality was included.",
+      "claim_type": "EXPLICIT",
+      "source": "Active fluid theory without chirality was therefore used to fit velocity profiles of pfn-1 (RNAi) as the fit quality was poor when chirality was included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of analysis approach for pfn-1 (RNAi)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "64d3f5f1-54ab-4473-a46c-c5cfe886df24",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "claim_id": "C113",
+      "claim": "The hydrodynamic length but not the chirality index could be determined for pfn-1 (RNAi).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we could determine the hydrodynamic length but not the chirality index for pfn-1 (RNAi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of analysis limitations for pfn-1 (RNAi)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "433d3029-3b64-4d00-a6ac-fd2ca2c55b67",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An RNAi screen of 33 actin binding proteins (ABPs) and 11 actomyosin regulators was performed using feeding-based RNAi with adjusted feeding times to avoid sterility or meiotic arrest, with KLP-1 RNAi as a negative control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C14, C18, C103, and C104 collectively describe the experimental design and methodology of the screen. The approach is clearly documented with appropriate controls and adjustments for experimental viability, providing a solid foundation for the subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "996eaac1-ad55-4c6f-b066-0815bdfe9543",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "20 of 44 RNAi conditions significantly affected cortical flow velocities, and 17 of 44 conditions affected myosin foci structure. Flow velocities and foci structure are correlated, with bigger foci size associated with slower flow velocities, demonstrating that actomyosin network structure is strongly linked to cortical flow dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C16, C20, C22, C23, C32, C34, C37, C38, and C39 provide quantitative evidence from the screen showing that distinct molecular activities affect cortical flow and structure. The correlation analysis (C37) and statistical comparisons (C32, C34) support the conclusion that structure and dynamics are linked. The rigorous quantification approach (C23) addresses limitations of prior screens (C22).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "5d820c6a-569a-4572-ab74-2311e108e468",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cortical flow exhibits pulsatile behavior with a period of ~33 seconds. ABPs regulating actin filament turnover (polymerizing, severing, and capping proteins) significantly affect the period of pulsation, suggesting that pulsation is regulated by cortex turnover. Reduced cortical viscosity correlates with faster oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C28, C29, C79, C80, C81, and C82 describe the pulsatile nature of cortical flow and identify molecular regulators. The observation that turnover-regulating proteins affect pulsation period (C28) supports the inference that cortex turnover regulates pulsation (C29). The correlation between viscosity and oscillation frequency (C81, C82) is consistent with physical expectations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "6d0a097a-5798-4f88-955d-c2bca219205c",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNAi of multiple ABPs and actomyosin regulators significantly altered the hydrodynamic length and chirality index of the cortex. Material properties can be tuned by modulating diverse molecular activities. Proteins that increase chirality index are known to affect myosin activity, strengthening the idea that active processes generate active torques for chiral symmetry breaking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C48 and C70 demonstrate that multiple molecular perturbations affect large-scale material properties extracted from hydrodynamic model fits. The quantitative overlap between conditions affecting flow velocities, foci structure, and material properties (C44-C47) supports the conclusion that these are interconnected. The observation that myosin-affecting proteins increase chirality (C42, C43) provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dimensional reduction analysis revealed four clusters of proteins with similar effects on cortical mechanics. Each cluster comprises proteins with different molecular functions, demonstrating that large-scale actomyosin behaviors can be attained by tuning diverse molecular mechanisms. Cluster 1 regulates chirality, cluster 2 affects oscillation frequency, cluster 3b reduces cortical viscosity, and cluster 3c increases cytoplasmic friction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C65 describe the clustering analysis and characterization of each cluster. The observation that each cluster contains proteins with different functions (C50) supports the degeneracy concept. The characterization of each cluster is supported by quantitative measurements (C52, C55, C58, C62) and mechanistic reasoning (C59, C60, C63, C64, C65). The cytoplasmic actin imaging (C64) provides additional validation for cluster 3c interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "594306cc-6688-47c0-923f-d1b012a9e09f",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Distinct ABP molecular activities (polymerizing, crosslinking, bundling in cluster 3b; severing and capping in cluster 3c) can have similar impacts on large-scale cortical behaviors. This demonstrates 'morphogenetic degeneracy' where distinct molecular-scale activities contribute to similar physical activities at larger scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C85-C92 present the central finding of morphogenetic degeneracy. The observation that proteins with different molecular functions (polymerizing, crosslinking, bundling) produce similar phenotypes (C85, C86) is well-supported by the clustering analysis. The inference that this represents degeneracy at the physical level (C90-C92) is a reasonable interpretation of the data, though the mechanism remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "d31ebde7-5def-44b7-ba71-6282ad46ecae",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The RNAi-based approach allows quantitative characterization of subtle cortical phenotypes and enabled identification of ABPs not previously described to significantly impact cortical structure and dynamics. The observed material properties emerge from numerous molecular interactions as a 'summed effect' of many protein activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69, C73-C74 describe the methodological contribution and interpretation of the results. The identification of previously unrecognized ABPs (C69) is supported by comparison with prior screens (C22). The interpretation that material properties emerge from summed effects (C73, C74) is consistent with the observation that multiple proteins affect the same properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "8c625c15-f5b1-4862-886d-7195c9aeb5e2",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Actin binding proteins play a significant role in regulating chirality, suggesting that cortical actin network architecture is equally important for chirality alongside myosin activity. This resonates with recent findings that actin network architecture regulates cortex thickness and tension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 present a conclusion about the role of ABPs in chirality regulation. The observation that ABPs affect chirality (C76) is supported by the screen data (C40, C42). The inference about network architecture (C77) is reasonable given the structural effects observed. The connection to prior work (C78) provides additional context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "465b57fd-fb3d-4cf5-9126-7baccec1e041",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phenotypes at larger scales are determined by mesoscale material properties that arise through coarse-graining of microscopic degrees of freedom. Only a small set of mesoscopic parameters contribute to system dynamics. Morphogenetic degeneracy at the mesoscale is of physical nature and can arise without redundancy of molecular activity because coarse-graining reduces degrees of freedom.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C97 present a theoretical framework for interpreting the degeneracy observations. While the coarse-graining argument is conceptually sound and consistent with physical principles, the claims are largely speculative (C93, C96, C97) and not directly tested by the experiments. The framework provides a plausible explanation but requires further theoretical and experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "303facf3-17f9-4b70-a543-78939abb90d2",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The observed degeneracy in ABP functioning may contribute to robust performance of the actomyosin cytoskeleton and bulk biological matter in development, representing a novel physical implication of degeneracy distinct from that studied in gene regulatory networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C101 are explicitly speculative (C98, C101) and propose broader implications of the findings. While the connection to robustness is conceptually appealing and the distinction from gene regulatory network degeneracy (C99) is noted, these claims are not directly tested and remain hypotheses requiring future investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "a4a3de39-a312-4991-bb11-323e1ade9e33",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The pfn-1 RNAi phenotype exhibits extreme fast motion approaching cortical turnover timescales, potentially pushing the cortex into a regime where viscous behavior assumptions break down. The hydrodynamic model failed to capture this phenotype, possibly due to elastic effects and local actin alignment not included in the model. Only hydrodynamic length but not chirality index could be determined for pfn-1 RNAi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C113 describe limitations of the hydrodynamic model for the pfn-1 RNAi condition. The observations of fast motion (C105) and potential elastic effects (C108) are documented. The acknowledgment of model limitations (C106, C109, C111) and the decision to fit without chirality (C112, C113) represent appropriate scientific caution. This demonstrates awareness of the model's applicability limits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    },
+    {
+      "id": "45358c86-5228-4709-a806-7c2e671f678b",
+      "content_id": "f3a12126-f942-4a86-a811-70b544d9c19a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish that cortical flow is vital for cell polarization, migration, and cell division; is driven by myosin activity gradients in C. elegans; can be described by hydrodynamic theory with key parameters (hydrodynamic length, chirality index); and is regulated by ABPs and actomyosin regulators at the molecular scale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12, C21, C25, C30, C31, C71, C72, C75, C78, C79, C83, C84, and C99 are background claims supported by citations to prior research. These establish the scientific context and justify the experimental approach. The claims are appropriately attributed to prior work and provide necessary foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:47:11.448893Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9fbf2a2a-da50-49f7-baae-1a86ec95a05a",
+      "result_id": "433d3029-3b64-4d00-a6ac-fd2ca2c55b67"
+    },
+    {
+      "claim_id": "1a2a2da6-2245-46a8-86b7-e67385afc5d3",
+      "result_id": "433d3029-3b64-4d00-a6ac-fd2ca2c55b67"
+    },
+    {
+      "claim_id": "1c457c1e-b292-4f60-b990-91fff9b66715",
+      "result_id": "433d3029-3b64-4d00-a6ac-fd2ca2c55b67"
+    },
+    {
+      "claim_id": "d81e1aa1-d435-43fb-879f-3cd9f0a25131",
+      "result_id": "433d3029-3b64-4d00-a6ac-fd2ca2c55b67"
+    },
+    {
+      "claim_id": "01147cd5-1d02-4611-bd82-047516a72119",
+      "result_id": "433d3029-3b64-4d00-a6ac-fd2ca2c55b67"
+    },
+    {
+      "claim_id": "428777e1-b3f1-4590-90d2-575399c7adf1",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "722b5140-b122-4825-b996-14229b7a14a4",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "c2febaeb-62e3-4635-8253-a47e8cad2b65",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "77992f00-b8d4-430e-9a3f-e7fd1ad4211c",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "b1a3f6dc-7df6-4131-9614-b7a7be98d9a4",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "42064807-b0a8-4240-b19f-30691d24ce7e",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "51faab49-6a25-4fc4-bede-7eb9f97dba40",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "d36dca94-46a7-463a-a7c1-217a93642c5b",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "2d2f1022-430d-4d35-a4eb-0d9856e24c43",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "30e43a02-bd22-41e6-9f70-0fa9533fdaa3",
+      "result_id": "996eaac1-ad55-4c6f-b066-0815bdfe9543"
+    },
+    {
+      "claim_id": "47608171-0528-495b-a553-4e2a38a4058c",
+      "result_id": "5d820c6a-569a-4572-ab74-2311e108e468"
+    },
+    {
+      "claim_id": "5a998afc-8872-4c9d-84c7-4a8908920a04",
+      "result_id": "5d820c6a-569a-4572-ab74-2311e108e468"
+    },
+    {
+      "claim_id": "2676cb29-ae7f-4e83-a75d-34b937830605",
+      "result_id": "5d820c6a-569a-4572-ab74-2311e108e468"
+    },
+    {
+      "claim_id": "d8df5b5c-d23c-4c40-99d5-2c43c13516f2",
+      "result_id": "5d820c6a-569a-4572-ab74-2311e108e468"
+    },
+    {
+      "claim_id": "1a0e7c9c-059c-4ffd-bb88-9e3f7e716efe",
+      "result_id": "5d820c6a-569a-4572-ab74-2311e108e468"
+    },
+    {
+      "claim_id": "f3326f19-9f93-49d9-9827-e0c88c768fca",
+      "result_id": "5d820c6a-569a-4572-ab74-2311e108e468"
+    },
+    {
+      "claim_id": "77179067-baf2-4557-a944-9bcba5a242bf",
+      "result_id": "5d820c6a-569a-4572-ab74-2311e108e468"
+    },
+    {
+      "claim_id": "d9f018e8-d40d-4dfa-87e8-98a979ac9d51",
+      "result_id": "5d820c6a-569a-4572-ab74-2311e108e468"
+    },
+    {
+      "claim_id": "9493c3ee-c95f-45b5-8cbe-4072d5169a5b",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "fca7f2f7-bdc5-4815-a839-09726565f6a9",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "e4103de8-cc47-4e66-94e6-4443bcf6f4e8",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "d426f48c-e735-4147-b453-481046ab5e46",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "9339b734-4910-4d1f-8315-28b83887d037",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "d2aceb69-801f-4573-a8fb-406b41eb5a7d",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "02c9bcb8-0019-4dd6-91b8-9c5e19d839ff",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "f1563fd0-5e82-4aa7-999b-54e4fd66293e",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "8a191b42-c12b-46bc-b354-adbbff38ad21",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "d80006e2-5d31-411b-b160-c41a698f4468",
+      "result_id": "6d0a097a-5798-4f88-955d-c2bca219205c"
+    },
+    {
+      "claim_id": "cd89b85f-95b4-4be1-adad-6c0db4f82817",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "2666a1bd-533a-46e1-afe0-7a503cec8b26",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "dc1919e0-0019-49b7-8bec-11d774b78032",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "f544e23d-fcec-4c71-8725-e474cb313abe",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "1e78500f-fb78-4b59-83c4-f600f145ad1d",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "68dfe738-4242-4dea-82ed-fbdf2856c373",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "97155b1f-b8f9-4b1d-ae0e-fffe68a22056",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "90784ecc-af7c-4dcc-9319-0b3bd2cef3e5",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "c02a240c-11d0-47c1-869b-b511036cf66a",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "ad6d2eb3-d4da-48e1-87de-afdbcb6d8369",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "0649c9d5-d4db-4461-b744-a53bf87a01de",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "d0cc90e8-40ed-4315-b847-0881262c2d72",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "ffa8046b-5f53-4a0c-b04b-d9a29189d874",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "086af387-4ad3-403b-96e1-260f3cbd5762",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "78ef4ade-90c2-4685-929a-9354e8acb198",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "4f24af63-7240-4d42-b489-943929454e41",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "f3a4f8a1-23e1-4f8d-8d17-b642f3613d25",
+      "result_id": "f26036c6-f7fc-48e8-a23e-4682c635bc6e"
+    },
+    {
+      "claim_id": "f4ddab55-3ec0-409d-a1da-cad173d459e5",
+      "result_id": "594306cc-6688-47c0-923f-d1b012a9e09f"
+    },
+    {
+      "claim_id": "f1fcac65-ac6f-4eab-b8d6-8fd34336656b",
+      "result_id": "594306cc-6688-47c0-923f-d1b012a9e09f"
+    },
+    {
+      "claim_id": "cd92e57c-28b1-4887-b2b6-9e5b25c66042",
+      "result_id": "594306cc-6688-47c0-923f-d1b012a9e09f"
+    },
+    {
+      "claim_id": "dd6ac8fc-a720-4100-a4b4-d452086d4c90",
+      "result_id": "594306cc-6688-47c0-923f-d1b012a9e09f"
+    },
+    {
+      "claim_id": "143f19bd-0f91-45eb-922a-9f7e038daadc",
+      "result_id": "594306cc-6688-47c0-923f-d1b012a9e09f"
+    },
+    {
+      "claim_id": "8302a96e-69e6-4e46-bb58-6d6e4c5d2778",
+      "result_id": "594306cc-6688-47c0-923f-d1b012a9e09f"
+    },
+    {
+      "claim_id": "f68cf401-c842-4fed-b52f-46a53ea222ab",
+      "result_id": "594306cc-6688-47c0-923f-d1b012a9e09f"
+    },
+    {
+      "claim_id": "2bcd8622-6f6e-4e56-b089-d76107441f7c",
+      "result_id": "594306cc-6688-47c0-923f-d1b012a9e09f"
+    },
+    {
+      "claim_id": "0d343844-e70c-4b0a-adb4-fa3b015c2951",
+      "result_id": "594306cc-6688-47c0-923f-d1b012a9e09f"
+    },
+    {
+      "claim_id": "8de6c0d3-1dd8-48f6-9bca-2d450a880d29",
+      "result_id": "d31ebde7-5def-44b7-ba71-6282ad46ecae"
+    },
+    {
+      "claim_id": "b13d3fef-3acd-45d6-9d3b-3f2f19161b1c",
+      "result_id": "d31ebde7-5def-44b7-ba71-6282ad46ecae"
+    },
+    {
+      "claim_id": "af562745-df85-42ee-a85b-bd9143e25029",
+      "result_id": "d31ebde7-5def-44b7-ba71-6282ad46ecae"
+    },
+    {
+      "claim_id": "6d75d532-df00-417f-9ac1-a735e435a231",
+      "result_id": "d31ebde7-5def-44b7-ba71-6282ad46ecae"
+    },
+    {
+      "claim_id": "de12214b-28c6-4545-8fb7-ffdab675e4e3",
+      "result_id": "d31ebde7-5def-44b7-ba71-6282ad46ecae"
+    },
+    {
+      "claim_id": "40522ab0-3508-4285-90da-22aaa276f0c2",
+      "result_id": "8c625c15-f5b1-4862-886d-7195c9aeb5e2"
+    },
+    {
+      "claim_id": "d856efcc-3ef6-4c4e-9db2-2c3a016fe8f3",
+      "result_id": "8c625c15-f5b1-4862-886d-7195c9aeb5e2"
+    },
+    {
+      "claim_id": "6d5f91f3-73f1-4862-a7c5-b9a7e67c8ffc",
+      "result_id": "8c625c15-f5b1-4862-886d-7195c9aeb5e2"
+    },
+    {
+      "claim_id": "0d3fd78d-7c4f-4c95-b687-ee9d2c444a04",
+      "result_id": "465b57fd-fb3d-4cf5-9126-7baccec1e041"
+    },
+    {
+      "claim_id": "9ce0ddad-228b-4d68-bcf7-9db02180ec85",
+      "result_id": "465b57fd-fb3d-4cf5-9126-7baccec1e041"
+    },
+    {
+      "claim_id": "0a073c04-14f0-4cc7-8b34-563c7fa227ce",
+      "result_id": "465b57fd-fb3d-4cf5-9126-7baccec1e041"
+    },
+    {
+      "claim_id": "c5bc8c41-b6af-47be-a360-15af94769022",
+      "result_id": "465b57fd-fb3d-4cf5-9126-7baccec1e041"
+    },
+    {
+      "claim_id": "ec678fd4-9f0a-420b-8800-c79805500ae4",
+      "result_id": "465b57fd-fb3d-4cf5-9126-7baccec1e041"
+    },
+    {
+      "claim_id": "1a36595f-3bf9-4ef3-8c7d-a51e34d4eef4",
+      "result_id": "303facf3-17f9-4b70-a543-78939abb90d2"
+    },
+    {
+      "claim_id": "a0b008fd-6112-4a5a-9770-fbe732ea39f4",
+      "result_id": "303facf3-17f9-4b70-a543-78939abb90d2"
+    },
+    {
+      "claim_id": "e4a170b1-5ebf-448b-a6f7-0a5806273a54",
+      "result_id": "303facf3-17f9-4b70-a543-78939abb90d2"
+    },
+    {
+      "claim_id": "2d4476ca-b61a-415c-a2ac-b1d419fdee72",
+      "result_id": "303facf3-17f9-4b70-a543-78939abb90d2"
+    },
+    {
+      "claim_id": "1e521632-a053-43a4-9d80-a6ff8da3c219",
+      "result_id": "a4a3de39-a312-4991-bb11-323e1ade9e33"
+    },
+    {
+      "claim_id": "f9f91fa8-4d9d-4c12-a490-95a418d0f2c8",
+      "result_id": "a4a3de39-a312-4991-bb11-323e1ade9e33"
+    },
+    {
+      "claim_id": "04f0eb62-c35a-4993-aa27-33d56749e849",
+      "result_id": "a4a3de39-a312-4991-bb11-323e1ade9e33"
+    },
+    {
+      "claim_id": "c7bd9cd4-34d8-4636-8ba3-904991de6f8e",
+      "result_id": "a4a3de39-a312-4991-bb11-323e1ade9e33"
+    },
+    {
+      "claim_id": "0b0b2bfa-5f8f-4e88-89c9-217613645fe7",
+      "result_id": "a4a3de39-a312-4991-bb11-323e1ade9e33"
+    },
+    {
+      "claim_id": "61c844ae-3d4f-4465-9d15-f39f71f32afa",
+      "result_id": "a4a3de39-a312-4991-bb11-323e1ade9e33"
+    },
+    {
+      "claim_id": "db6249b9-be98-4c07-8b17-48e14195c420",
+      "result_id": "a4a3de39-a312-4991-bb11-323e1ade9e33"
+    },
+    {
+      "claim_id": "cce0b0fd-2ec3-43dd-86df-e7340a98f76b",
+      "result_id": "a4a3de39-a312-4991-bb11-323e1ade9e33"
+    },
+    {
+      "claim_id": "64d3f5f1-54ab-4473-a46c-c5cfe886df24",
+      "result_id": "a4a3de39-a312-4991-bb11-323e1ade9e33"
+    },
+    {
+      "claim_id": "9171c565-2cdc-4590-9db6-ee82a06f6174",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "5fb66b76-c15b-49f3-89c9-0d04e2a0d5f0",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "2b1fd8da-46f9-4331-b97c-bcd091d93840",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "16de668e-b304-498f-919a-f73ce7ca6b04",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "9971b545-f150-496b-b45e-cee72531dd22",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "c17cf2e2-5c57-44e8-8886-ea8761a31ce1",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "02ff35bf-881b-4cdd-8849-8f672f037c82",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "89df205b-c0f9-4b86-b1e5-99c80b8d77ce",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "4292f725-36a1-47c4-a953-d34714c6c0f1",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "abbebf1e-667c-4f5f-962f-e4f906b4c66d",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "7eb77650-af36-4509-a14f-c341f6580857",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "592da8f0-cb7f-4589-8c96-2df3b23d7f26",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "56ebfdd7-f611-4fcd-95a8-fd48d81bdbed",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "5a998afc-8872-4c9d-84c7-4a8908920a04",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "ed4da554-5ef6-41bd-9668-1238812f2388",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "3faa79b3-fd70-461a-aabf-811727d42817",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "04281ba6-dc38-4c0f-af0c-660884081fc4",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "e77e2417-1cf6-4215-9106-356b73175f79",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "ea2dcc81-6618-4ea6-a8c1-81b195d6d415",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "6d5f91f3-73f1-4862-a7c5-b9a7e67c8ffc",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "1a0e7c9c-059c-4ffd-bb88-9e3f7e716efe",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "7b43224c-c5ad-4802-aa44-94a1da0dd6a4",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "d7141253-7ac7-4b23-a24a-1c9e6d86d3a4",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    },
+    {
+      "claim_id": "a0b008fd-6112-4a5a-9770-fbe732ea39f4",
+      "result_id": "45358c86-5228-4709-a806-7c2e671f678b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The optoPAD system integrates the flyPAD capacitive feeding sensor with closed-loop optogenetic control, achieving 50-120 ms latency between food contact and LED activation using Bonsai software for real-time behavioral analysis. The online activity bout detector achieves 91.5% accuracy with 1.6% false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C50-C52 provide converging technical evidence for system performance. The latency measurements (C3), validation against offline detection (C5), and comparison to natural feeding initiation timing (~400 ms, C4) demonstrate the system operates within behaviorally relevant timescales. Hardware and software implementations are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C9",
+      "C10",
+      "C7",
+      "C8"
+    ],
+    "result": "Optogenetic activation of Gr5a sugar-sensing neurons using CsChrimson produces appetitive feeding responses at low light intensities (2V), with no additional behavioral effect at higher intensities, demonstrating saturation of the behavioral response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 demonstrate dose-response characterization with appropriate controls. The linear relationship between voltage and irradiance (C6) is established, and behavioral data (C9) shows clear preference for light-paired food. The saturation effect (C10) is supported by dose-response data in Figure 2B, though mechanistic explanation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Optogenetic silencing of taste peg neurons using GtACR1 suppresses yeast feeding in protein-deprived flies in a dose-dependent manner, with effects specific to feeding burst length and minimal light artifacts in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 provide comprehensive evidence including prior biological context (C11-C13), dose-response data (C14-C15), appropriate controls (C16), and both closed-loop and open-loop validation (C17). The dose-dependent effect contrasts appropriately with Gr5a activation, explained by LED characteristics. Control genotypes show no light effects, ruling out non-specific artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The optoPAD can manipulate sparse, centrally-located escape neurons, triggering jumping behavior and feeding termination, demonstrating the system's capability beyond peripheral gustatory circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 demonstrate proof-of-concept for manipulating sparse central neurons. Video evidence (C18) and quantitative behavioral data (C19) support the conclusion (C20). This extends the system's applicability beyond the primary gustatory focus, though sample sizes and statistical details are not fully reported in the supplementary figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The optoPAD enables bidirectional control of both appetitive (Gr64f) and aversive (Gr66a) gustatory neurons, producing coherent increases or decreases in feeding through activation or inhibition, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 demonstrate systematic bidirectional manipulation across two neuronal populations with opposite valences. Data in Figure 3 shows appropriate controls and consistent effects: activation of sweet neurons increases feeding (C22), inhibition decreases it (C23); activation of bitter neurons decreases feeding (C25), inhibition increases it (C26). This comprehensive demonstration (C27) validates the system's versatility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The optoPAD implements dynamic stimulation protocols, including switching food-light contingencies every 5 minutes and precisely controlling feeding bout duration by varying stimulation delay (1.5, 3, or 6 s delays produce 2.66, 4.25, or 7.34 s bouts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 demonstrate temporal flexibility. The dynamic switching experiment (C29) shows flies track changing contingencies with statistical significance after 10 minutes. The delay manipulation (C30) produces precise, dose-dependent control of bout duration relative to controls (C31, ~15 s median). These results validate the system's ability to implement complex temporal protocols.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Probabilistic stimulation protocols (90% stimulation, 10% catch trials) initially showed longer feeding bouts during catch trials, but this effect disappeared when controlling for food intake (1100 sips threshold), indicating the difference was due to altered internal state rather than learned expectation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate sophisticated experimental design with appropriate controls. The initial observation (C32) is followed by critical control analysis (C33) that eliminates the effect, leading to the internal state interpretation (C34). This exemplifies rigorous hypothesis testing, though it also shows the complexity of interpreting closed-loop behavioral experiments. The conclusion (C35) appropriately emphasizes both capability and interpretive challenges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Comparison with the STROBE system reveals a fundamental trade-off between flexibility (optoPAD) and speed (STROBE), with the authors arguing that flexibility is more valuable when latency remains within behaviorally meaningful timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide fair comparative analysis. The STROBE system description (C39-C40) accurately characterizes its hardware-based approach and limitations. The acknowledged longer latency of optoPAD (C41) and discussion of trade-offs (C42-C43) demonstrate balanced evaluation. The conclusion (C44) that the flyPAD platform accommodates both approaches is reasonable, though the design philosophy statement (C43) is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The optoPAD's flexibility enables diverse experimental paradigms including predefined stimulation counts, post-bout stimulation, and open-loop modes, with prospective applications in operant conditioning and learning of complex environmental contingencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C49 mix demonstrated capabilities (C45) with prospective applications (C46-C49). While the technical flexibility is supported by the system design and some demonstrations, the learning and operant conditioning applications (C46-C47) remain speculative. The general principle about environmental learning (C48) is well-established, but whether Drosophila can perform these computations using this system (C49) requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C62",
+      "C63"
+    ],
+    "result": "The flyPAD's high temporal resolution enables quantitative analysis of feeding microstructure, with activity bout duration correlating with food intake and different mechanisms modulating burst initiation probability versus burst length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C62-C63 describe established capabilities of the flyPAD system based on prior validation (Itskov et al., 2014). The correlation between activity bouts and intake (C53) and the modular regulation framework (C54) are supported by multiple cited studies. These provide important context for the optoPAD development but represent prior rather than current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C55",
+      "C56",
+      "C57",
+      "C64",
+      "C65"
+    ],
+    "result": "Gustation is uniquely dependent on active behavior due to required physical contact with substrates, making closed-loop manipulation essential for studying gustatory circuits and their role in feeding regulation and nutrient homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C55-C57 establish the biological rationale for the optoPAD system. The contextual nature of gustation (C56) and behavioral dependence (C36) are well-established principles. Prior work on taste peg neurons (C57) and feeding microstructure (C37) provide specific examples. Claims C64-C65 state general research priorities. These claims provide important motivation but are primarily background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Optogenetic manipulation and automated behavioral analysis have revolutionized neuroscience, with non-video methods playing important roles, particularly for Drosophila feeding studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide field context through extensive citations. These represent accurate summaries of technological advances in neuroscience and behavioral analysis, establishing the broader scientific landscape. However, these are background claims about the field rather than results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The optoPAD enables quantitative, high-throughput assessment of how varying optogenetic stimulation dynamics and probabilities affect feeding behavior, providing a powerful tool for dissecting feeding circuits and studying behavioral adaptation to dynamic environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 provide summary conclusions supported by the comprehensive experimental demonstrations throughout the manuscript. The capabilities described (C66) are validated by multiple experiments (Figures 2-4). The conclusions about the system being a powerful tool (C67-C68) are justified by the breadth of successful applications shown, though some prospective applications remain to be demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Accelerating Xrn1-dependent mRNA decay through muSOX expression drives nuclear translocation of RNA binding proteins (RBPs), with 67 proteins differentially enriched in the nucleus, 33% of which are annotated as RBPs. This was identified using TMT-MS proteomics and validated by western blotting for 10 out of 12 top hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C21-C25 provide converging evidence from TMT-MS proteomics (C21-C24), western blot validation (C25), and functional annotation (C23-C24) that RBPs translocate to the nucleus during accelerated mRNA decay. The experimental design includes appropriate controls (D219A mutant) and multiple validation approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Poly(A) binding proteins are significantly overrepresented among proteins that translocate to the nucleus during accelerated mRNA decay. PABPC1 and LARP4 translocate to the nucleus in cells infected with WT MHV68 but not in cells infected with a muSOX mutant virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 demonstrate through overrepresentation analysis (C28) and viral infection validation (C29) that poly(A) binding proteins are particularly sensitive to mRNA decay. The use of both transfection and viral infection models strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C16",
+      "C17"
+    ],
+    "result": "Nuclear translocation of RBPs during accelerated mRNA decay is dependent on Xrn1 activity. 45 of 67 proteins that shuttle in muSOX-expressing cells failed to shuttle in Xrn1 knockout cells, and PABPC1 and LARP4 translocation requires Xrn1. This indicates that exonucleolytic degradation by Xrn1 is a critical signaling step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C30-C31 provide strong evidence through genetic knockout experiments, TMT-MS analysis, and microscopy/western blot validation that Xrn1 activity is required for RBP shuttling. The inference in C17 is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "Cells lacking Xrn1 exhibit changes in localization or abundance of numerous factors linked to mRNA turnover. 149 and 158 proteins were differentially expressed in the nucleus or cytoplasm respectively, with RBPs significantly overrepresented. Decapping complex components were enriched in the nucleus, and GW182, DDX6, and PATL1 showed increased mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 demonstrate through TMT-MS proteomics and RT-qPCR that loss of Xrn1 causes specific changes in mRNA decay machinery components. The specificity is supported by unchanged gapdh and actB mRNA levels (C39), indicating targeted rather than global effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "LARP4 nuclear relocalization is dependent on PABPC, but PABPC shuttling is independent of LARP4. STRING network analysis revealed significantly more interactions among the 67 shuttling proteins than expected by chance (p=0.0496), with many interactions involving PABPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide evidence through network analysis (C40) and siRNA depletion experiments (C41-C42) for a hierarchical relationship where PABPC acts upstream of LARP4. The asymmetric dependency is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "PABPC depletion abrogates muSOX-driven reduction in RNAPII promoter occupancy, while depletion of LARP4, MSI1, CHD3, or TRIM32 does not prevent this reduction. This suggests PABPC plays a specific role in the mRNA decay-transcription feedback pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C43 shows PABPC depletion prevents RNAPII reduction, the interpretation is complicated by the observation (noted in the text but not in explicit claims) that depletion of these factors alone reduces RNAPII occupancy. This confounds the interpretation of their specific roles in the muSOX-induced pathway and suggests potential indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Nuclear accumulation of PABPC1 is sufficient to inhibit RNAPII recruitment to promoters. Overexpression of FLAG-PABPC1 leads to nuclear accumulation and decreased RNAPII occupancy at promoters. Furthermore, FLAG-PABPC1 overexpression restores muSOX-induced transcriptional repression in Xrn1 knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide strong evidence through overexpression experiments that nuclear PABPC1 is both necessary (from C43) and sufficient (C47) for RNAPII repression. The rescue experiment in Xrn1 KO cells (C48) elegantly demonstrates that PABPC1 nuclear translocation is the key signaling event.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C4"
+    ],
+    "result": "Nuclear PABPC1 selectively impacts early stages of RNAPII transcription by reducing preinitiation complex (PIC) assembly. Both muSOX and FLAG-PABPC1 expression reduce RNAPII and TBP occupancy at RNAPII promoters without affecting RNAPII phosphorylation patterns or RNAPIII promoter occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49-C53 provide comprehensive evidence through ChIP experiments that nuclear PABPC1 specifically targets early PIC assembly at RNAPII promoters. The unchanged Ser5P/Ser2P ratios (C50) and unaffected RNAPIII occupancy (C52) demonstrate specificity for RNAPII initiation rather than elongation or general transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Xrn1 knockout HEK293T cells exhibited approximately 2-fold reduction in growth compared to control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by growth curve data and is consistent with yeast observations. This validates the knockout and provides context for interpreting other results, though the authors note they used low passage cells to minimize compensatory changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Changes in cytoplasmic mRNA decay can directly impact protein localization, providing a mechanism to connect seemingly distal stages of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is the overarching conclusion supported by the collective evidence from all major results showing that mRNA decay status influences RBP localization, which in turn affects transcription. This represents a well-supported mechanistic link between cytoplasmic and nuclear gene expression processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C26",
+      "C27",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Background knowledge and prior work establishing the context for the study, including viral mRNA decay mechanisms, the mRNA decay-transcription feedback pathway, RBP properties, PABPC regulation, and methodological approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C80 represent established knowledge from prior literature (supported by citations) and methodological details. These provide essential context and are appropriately cited. The authors accurately represent prior work and use established methods (TMT-MS, ChIP, etc.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "GW182 is a member of the miRNA-induced silencing complex (miRISC) involved in recruitment of deadenylases to initiate degradation of target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is established knowledge about GW182 function that provides context for interpreting its upregulation in Xrn1 KO cells. This is appropriately cited and accurate.",
+    "result_type": "MINOR"
+  }
+]

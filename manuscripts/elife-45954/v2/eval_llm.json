@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript provides background on C. albicans as a fungal pathogen with extensive genomic diversity driven by asexual mitotic genome rearrangements, including known repeat sequences and previously characterized isochromosome structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 establish the biological and genomic context for C. albicans through citations to prior work. These claims describe established knowledge about C. albicans pathogenicity, reproductive biology, genome architecture, and known mechanisms of genome variation including the previously characterized i(5L) isochromosome. All claims are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A novel isochromosome i(4R) forms via recombination at inverted repeats flanking CEN4, confers fluconazole resistance, and is both necessary and sufficient for increased fitness in the presence of FLC without fitness cost in its absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 present converging evidence from multiple experimental approaches (read depth analysis, CHEF, Southern blot, PCR, growth curves, stability experiments, and loss-of-function analysis) demonstrating i(4R) formation and its functional consequences. The statistical analysis (p<0.0006) and complementary experiments (stability over 300 generations, fitness restoration upon loss) strongly support the necessity and sufficiency claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The CENP-A-binding core sequence of CEN4 contains two different alleles, with one homologue containing a ~3.1 kb sequence inversion between inverted repeats, detected across multiple isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by PCR detection in multiple isolates (SC5314, P78042, AMS3743) and Sanger sequencing confirmation of recombination between inverted repeat arms. The detection across distantly related isolates suggests this is a conserved feature rather than a sequencing artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Comprehensive bioinformatic analysis identified 1974 long repeat matches covering 2.87% of the genome, with repeat distribution correlating with chromosome size but not with GC content or ORF density, and spacer lengths ranging up to 2.86 Mb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C39-C41 describe systematic bioinformatic characterization using MUMmer with appropriate statistical analyses (correlation coefficients, p-values from Kruskal-Wallis tests). The methods are clearly described and the statistical support is adequate (R\u00b2=0.65, p<0.016 for chromosome size correlation; p<0.035 for spacer length distribution differences).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Long repeats containing ORFs have distinct properties: they are predominantly intra-chromosomal (64%), have the lowest median sequence identity among repeat types, but the longest copy length, and ORFs within repeats are significantly longer and have higher GC content than other ORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 present detailed characterization of repeat features with appropriate statistical tests (Kruskal-Wallis with Dunn's multiple comparison, Kolmogorov-Smirnov tests, all p<0.0001 or p<0.0008). The analyses distinguish between different genomic features and provide quantitative comparisons with proper statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Analysis of 13 diverse isolates identified 19 segmental aneuploidies with 26 CNV breakpoints, and every CNV breakpoint occurred within 2 kb of a long repeat sequence, with significant enrichment (p<0.0001) and ORF-containing repeats being most common (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 present systematic analysis of CNV breakpoints across diverse isolates with appropriate statistical validation (Fisher's Exact Test p<0.0001 for enrichment, \u03c7\u00b2 Goodness-of-fit test p<0.001 for ORF enrichment). The finding that 100% of CNV breakpoints occur near long repeats is striking and well-supported by the enrichment analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Among 153 LOH breakpoints identified in 20 isolates, 61 (40%) were found within 2 kb of long repeat sequences, with most being intra-chromosomal repeats separated by distances up to ~1.6 Mb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe LOH breakpoint analysis with clear quantification. While not all LOH breakpoints are associated with long repeats (unlike CNV breakpoints), the 40% association rate and characterization of repeat properties (orientation, spacer length) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The LOH breakpoint in SC5314 on Chr3R occurred near an 8 bp telomere-like sequence, and PCR validation revealed a ~32 kb chromosomal inversion in both SC5314 and P75063, suggesting the reference genome may be incorrect at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide sequence-level analysis and experimental validation via PCR. The identification of telomere-like sequences and PCR confirmation of inversion in multiple isolates supports the claims. The suggestion that the reference genome may be incorrect is appropriately cautious given that only the inverted orientation amplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "All potential inversions identified bioinformatically had breakpoints within long inverted repeats, causing chromosomal inversions of ~4.1 kb to ~102.6 kb in length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 describes bioinformatically predicted inversions from prior work (Hirakawa et al. 2015) but notes these were not previously validated. While the manuscript validates two inversions by PCR (CEN4 and Chr4L), the remaining seven potential inversions lack experimental confirmation. The claim about 'all potential inversions' is therefore uncertain without additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Repeats associated with breakpoints (CNV, LOH, and inversion) are significantly longer (median 785 bp vs 278 bp, p<0.0001) and have higher sequence identity (96.2% vs 94.2%, p<0.036) than other repeats, with ORF-containing repeats being most common (62.3%) and the only feature with both properties significantly elevated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 synthesize the comparative analysis of breakpoint-associated versus non-breakpoint repeats with appropriate statistical tests (Kolmogorov-Smirnov tests). The finding that ORF-containing repeats uniquely show both elevated length and identity at breakpoints is well-supported and represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Nine repeat families were associated with multiple breakpoint types, including repeat families 124 and 151 which were associated with all three types (CNV, LOH, inversion), with family 151 linked to i(4R) formation and FLC resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 identify specific repeat families associated with multiple rearrangement types. The characterization of families 124 and 151 is supported by the data, and the connection of family 151 to i(4R) and FLC resistance links genomic architecture to functional outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C73",
+      "C74"
+    ],
+    "result": "Long repeat sequences throughout the C. albicans genome drive formation of all CNV breakpoints, chromosome inversions, and many LOH breakpoints, with repeats separated by up to ~1.6 Mb, and these rearrangements provide fitness benefits in at least one environment (FLC exposure).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C73-C74 represent the main conclusions of the study, synthesizing findings across all breakpoint types. The claims are well-supported by the comprehensive analysis of 33 isolates, statistical validation of repeat enrichment, and functional demonstration of fitness benefits (i(4R) in FLC). The extraordinary spacer lengths (up to 1.6 Mb) are documented and represent a novel finding compared to S. cerevisiae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "All ORFs within long repeats associated with breakpoints were actively transcribed in SC5314 during growth in rich medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by citation to Bruno et al., 2010, which provides transcriptome data. This supports the hypothesis that transcription may contribute to DSB formation at these loci, though the claim is correlative rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "C. albicans centromeres are early replication origins, both CEN4 and CEN5 can form isochromosomes that confer FLC resistance without fitness cost, and C. albicans breakpoints involve much longer spacer lengths than S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 integrate centromere biology with the isochromosome findings and comparative genomics. The claims about centromere replication timing are citation-supported (C68), isochromosome formation and fitness are experimentally demonstrated (C69-C71), and the comparison to S. cerevisiae spacer lengths is data-supported (C72).",
+    "result_type": "MAJOR"
+  }
+]

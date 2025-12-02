@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C38",
+      "C40",
+      "C98",
+      "C99"
+    ],
+    "result": "The meta-analysis reveals that the relationship between bib size and dominance rank in male house sparrows is small and uncertain, with effect sizes overlapping zero and moderate heterogeneity (I\u00b2=53%). This challenges the textbook status of the house sparrow bib as a badge of status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28, C29 are directly supported by quantitative results in Table 2 and Figure 1, showing Zr effect sizes with 95% credible intervals overlapping zero. The moderate heterogeneity (53%) is appropriately characterized. The conclusions (C30, C38, C40, C98, C99) logically follow from these data. The meta-analytic approach using primary data with standardized methodology (randomized Elo-rating) strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors obtained primary data from 7 of 13 published studies (54%) plus 6 unpublished studies, and reliably inferred dominance hierarchies using the randomized Elo-rating method with mean sampling effort of 36 interactions/individual, Elo-rating repeatability of 0.92, and triangle transitivity of 0.63.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are directly verifiable from Table 1. The sampling effort statistics (C23, C25, C26) are descriptive statistics from the analyzed data. The inference of reliable dominance hierarchies (C24, C27) is appropriately supported by the high repeatability values and citation to methodological validation (S\u00e1nchez-T\u00f3jar et al., 2018b). These metrics provide strong evidence for data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C63",
+      "C64",
+      "C67",
+      "C69",
+      "C76"
+    ],
+    "result": "Meta-regressions testing biological moderators (season, group composition, type of interactions) and sampling effort explained 20-23% of variance but none strongly influenced the overall effect size, with all moderator credible intervals overlapping zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are directly supported by Table 3 showing credible intervals for all moderators overlapping zero. The R\u00b2marginal values (20-23%) are reported. However, the authors appropriately acknowledge limited sample sizes may affect power to detect moderator effects (C64). The lack of significant moderators is properly interpreted as absence of strong evidence rather than evidence of absence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C41",
+      "C42",
+      "C49"
+    ],
+    "result": "Published effect sizes (medium, Zr\u22480.26-0.50) were significantly larger than unpublished effect sizes (essentially zero, Zr\u2248-0.09), indicating publication bias in the literature on status signalling in house sparrows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, C41, C42 are directly supported by Table 4 and Figure 3, showing the moderator 'published' with credible intervals [0.19, 0.81] not overlapping zero, and explaining 38% of variance. The intercept for unpublished studies has credible intervals [-0.37, 0.18] overlapping zero. This provides strong quantitative evidence for publication bias. The conclusion (C49) appropriately follows from these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C43",
+      "C44",
+      "C53",
+      "C54"
+    ],
+    "result": "Time-lag bias analysis reveals that effect sizes in published studies decreased over time and approached zero, with year of publication explaining 29% of model variance and showing a negative relationship (credible interval [-0.41, -0.01]).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are directly supported by Table 4 and Figure 4. The year of publication moderator shows credible intervals not overlapping zero [-0.41, -0.01], and R\u00b2marginal of 29%. Figure 4 visually demonstrates the temporal decline. This provides strong evidence for time-lag bias, though the authors appropriately note this could reflect multiple mechanisms including winner's curse and selective publication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C51"
+    ],
+    "result": "Egger's regression tests did not detect funnel plot asymmetry (credible intervals overlapping zero in Table 2), though the authors attribute this to limited sample size and moderate heterogeneity rather than absence of publication bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by Table 2 and Figure 2. The interpretation (C51) appropriately cites methodological literature (Moreno et al., 2009; Sterne and Egger, 2005) explaining why Egger's test may fail with limited samples and heterogeneity. The authors correctly do not interpret negative Egger's test as evidence against publication bias, especially given the positive findings from other bias detection methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Moderate overall heterogeneity (I\u00b2overall=53%) was partitioned into population-specific (15-16%) and study-specific (20-21%) components, suggesting potential population-dependent or context-dependent effects that remain unexplained by tested moderators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Heterogeneity statistics (C61, C78, C80) are directly reported in Table 2. The comparison to published averages (C62) is appropriately cited (Senior et al., 2016). However, the inferences about population-dependent (C79) and context-dependent (C81) effects are speculative. The authors appropriately acknowledge this speculation and note that context-dependence is often invoked post hoc without strong evidence (C82).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "Statistical power of published tests was alarmingly low (8.5% for r=0.20), below the average in behavioral ecology, with most tests based on small group sizes (median=6 individuals, range=4-41), and some studies inflating sample sizes by pooling individuals from different groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Power calculations (C89) are supported by Appendix 3 and comparison to field averages (C90) is cited (Jennions, 2003). Group size statistics (C93) are verifiable from the data. The concern about pooling (C94) is supported by Figure 4. These claims appropriately highlight serious methodological limitations in the primary literature that affect interpretation of the meta-analytic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C91"
+    ],
+    "result": "The current meta-analysis includes more than double the studies of the previous meta-analysis (Nakagawa et al., 2007) but finds a small and uncertain effect compared to the previously reported medium-to-large effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is verifiable by comparing study counts (19 vs. ~9 studies). The contrast with previous findings (C39) is appropriately cited. This demonstrates how increased sample size and inclusion of unpublished data can substantially alter meta-analytic conclusions, supporting the broader argument about publication bias effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C96",
+      "C97"
+    ],
+    "result": "Most studies testing the status signalling hypothesis in house sparrows are observational, with only two experimental studies identified, both of which were inconclusive and potentially affected by regression to the mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C96 are directly verifiable from Table 1 showing study designs. The characterization of experimental studies as inconclusive (C84, C97) is supported by citations (Diep, 2012; Gonzalez et al., 2002) and methodological concerns (Forstmeier et al., 2017). This appropriately highlights the limitation that most evidence is correlational, preventing strong causal inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C92"
+    ],
+    "result": "Some unpublished datasets are not examples of the file drawer problem because the relationship between dominance rank and bib size was never formally tested, though additional unpublished data likely exist in file drawers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is based on personal communications, which are not independently verifiable. Claim C92 is speculative. While the file drawer problem is well-established in science, the specific claim about additional unpublished house sparrow data is conjecture. These claims provide context but do not constitute strong evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Only three of 19 studies were conducted in the wild (k=12 estimates), preventing inclusion of a captive versus wild environment moderator in the analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is directly verifiable from Table 1. The decision not to include this moderator is methodologically sound given the severe imbalance. However, this represents a significant limitation as captive conditions may not reflect natural selective pressures, potentially affecting generalizability of findings to wild populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establish that the status signalling hypothesis explains within-species ornament variation through dominance signalling, that aggressive contests are costly, and that the house sparrow bib has been considered a textbook example despite methodological inconsistencies in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C12) are appropriately supported by citations to established literature and textbooks. They accurately represent the theoretical framework and prior state of knowledge. The characterization of methodological inconsistencies (C12) is supported by previous reviews (Nakagawa and Cuthill, 2007; Santos et al., 2011) and verified by the current study's data compilation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C52",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "Methodological claims establish that meta-analysis of primary data is the gold standard allowing standardized methodology, that publication bias distorts meta-analytic means, and that the randomized Elo-rating method precisely estimates dominance hierarchies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are appropriately supported by citations to established methodological literature (Simmonds et al., 2005; Rothstein et al., 2005; Cohen, 1988; Higgins et al., 2003; S\u00e1nchez-T\u00f3jar et al., 2018b). They accurately represent accepted methodological principles and provide appropriate context for interpreting the study's approach and findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C100"
+    ],
+    "result": "Comparative and contextual claims establish that similar challenges to established examples exist in other species (blue tits, zebra finches, paper wasps), that publication bias is recognized in ecology, and that abundant replication is needed before drawing strong conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately supported by citations to relevant literature (Parker, 2013; Seguin and Forstmeier, 2012; Wang et al., 2018; Cervo et al., 2008; Santos et al., 2011; Aarts et al., 2015). They provide important context showing the current findings are part of a broader pattern in the field. Claim C58 is appropriately speculative about implications for other species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C95"
+    ],
+    "result": "Discussion claims explore theoretical expectations (badges important in large unstable groups, functioning within/between sexes), alternative explanations (pleiotropic effects, testosterone correlations, mate choice), and methodological considerations (experiments vs. observational studies, context-dependence, confounding variables).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims mix well-supported theoretical expectations (C65, C68, C75 with appropriate citations) with speculative explanations (C71, C77, C81, C85). Some empirical claims about testosterone (C87, C88) and mate choice (C72, C73) are cited but noted as inconsistent. The discussion appropriately explores alternative explanations but acknowledges uncertainty. Many claims are speculative or represent possibilities rather than demonstrated facts.",
+    "result_type": "MINOR"
+  }
+]

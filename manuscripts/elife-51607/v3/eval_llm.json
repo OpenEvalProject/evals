@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C60"
+    ],
+    "result": "Adult rat amygdala axons contain translation machinery including translation initiation factors (eIF4E, eIF4G, eIF2\u03b1) and ribosomal protein S6, as demonstrated by immuno-electron microscopy. Quantification revealed 63% of axons, 39% of dendritic spines, and 100% of dendritic shafts contain eIF4E. Polyribosomes were occasionally observed in presynaptic boutons but are infrequent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C43, C46-C47, C50-C52, and C60 are well-supported by immuno-EM data shown in Figures 1 and 2. The presence of translation initiation factors and ribosomal proteins in axons is directly demonstrated with appropriate controls (antibody preadsorption, C50-C52). Quantification methods are described with serial section analysis. The infrequency of polyribosomes (C42) is acknowledged as a qualitative observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C65",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "A viral TRAP approach was developed to isolate ribosome-bound mRNAs from TE3 cortical axons projecting to the amygdala. Lentiviral vectors expressing eYFP-L10a were used to avoid retrograde infection. Animals were trained with Pavlovian conditioning or chamber exposure alone, then sacrificed 90 minutes later during the memory consolidation window. A conservative filtering strategy was applied to minimize false positives by requiring differential expression between TRAPed samples, exclusion of genes differentially expressed in tissue transcriptomes, and enrichment versus tissue transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C61-C62, C65, and C76-C80 describe the experimental methodology comprehensively. The switch from AAV to lentivirus to prevent retrograde infection (C56-C57) is well-justified. The timing of tissue collection (C65) aligns with established memory consolidation windows (C64). The conservative filtering approach (C76-C80) is appropriate given the novelty of the dataset, though it likely introduces false negatives as the authors acknowledge (C84).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C81",
+      "C82",
+      "C83",
+      "C99"
+    ],
+    "result": "TRAP-RNASeq identified 1482 axonal genes, with 1028 also regulated or enriched in cortex and 703 cortex-only genes. Over 1200 mRNAs in cortical axons were regulated during memory consolidation, with 75% of genes in the translatome (1647 of 2185) showing differential expression following learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C81-C83, and C99 are supported by the differential gene expression analysis shown in Figures 3-4. The numbers are internally consistent and the filtering strategy (C76-C80) provides confidence in the results. PCA analysis (C68-C71) demonstrates good separation between groups and replicates. The eYFP-IP control experiment (C85-C88) confirms results are not due to background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C113",
+      "C114",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Mitochondrial and translation-related genes were upregulated in axons after learning. Specifically, 24% of transcripts upregulated in axons and 25% downregulated in cortex encoded mitochondrial proteins involved in respiration or translation. Of 68 axonal transcripts encoding ribosomal proteins, 67 were upregulated after learning, with 37 also downregulated in cortex. Spliceosome components and most initiation/elongation factors were upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C113-C114, C118-C122 are well-supported by the differential gene expression analysis shown in Figure 4d and Table 1. DAVID and IPA analyses (C89, C108-C110) provide functional validation. The specificity of these changes is confirmed by the opposite pattern in cortex (C9) and the eYFP-IP control showing no overlap (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Synaptic, cytoskeletal, and myelin-related genes were downregulated in axons after learning. Downregulated genes encoded diverse proteins including cytoskeletal components (tubulins, myosins, dyneins, kinesins, neurofilaments), synaptic proteins (vesicle cycle, active zone, postsynaptic density), signaling molecules, and ubiquitin/proteasome pathway and myelin sheath components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C138-C141 are supported by differential gene expression analysis in Figure 4d and Table 1. The diversity of downregulated genes (C138) contrasts with the more focused upregulation of mitochondrial/translation genes. DAVID analysis confirms enrichment of relevant functional categories. The opposite pattern in cortex (C9) strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C108",
+      "C109",
+      "C110",
+      "C112"
+    ],
+    "result": "Opposite effects on gene expression were observed in cortex compared to axons after learning, with 40% of regulated genes showing significant changes in both areas. All but one gene (Dlst) regulated in both compartments changed in opposite directions. The magnitude of change was significantly correlated between axons and cortex, suggesting highly coordinated regulation between compartments rather than independent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C100-C104, C108-C110, C112 are strongly supported by data in Figures 4a-b and 4e. The correlation of effect sizes (C102) and expression levels (C103) provides quantitative evidence for coordination. IPA analysis showing opposite z-scores (C109) and DAVID analysis showing inverse functional changes (C108) provide independent validation. The eYFP-IP control showing no overlap (C107) confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Quality control analyses demonstrated good experimental design and data quality. PCA revealed correspondence between replicates and separation between TRAPed/transcriptome samples, cortex/axons, and trained/control groups. Gene expression levels correlated between replicates. Comparison with cell-type-specific proteome confirmed TRAPed samples contain mainly neuronal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 describe quality control metrics shown in Figure 3b and Figure 3\u2014figure supplement 1b-c. The PCA separation (C68-C71) demonstrates experimental groups are distinct. Correlation between replicates (C72) indicates reproducibility. Enrichment of neuronal genes and depletion of non-neuronal genes (C73-C75) validates the TRAP approach captured neuronal mRNAs as intended.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Functional characterization revealed axonal genes were enriched for mitochondria, translation, presynaptic compartment, and cytoskeleton terms, while cortex-only genes were enriched for cell body, nucleus, and dendrite terms. The TE3 axonal translatome showed substantial overlap (60%, 904/1482 genes) with published axonal datasets from different cell types, preparations, ages, and species, suggesting universal aspects of the axonal transcriptome, particularly for protein synthesis and energy metabolism genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 are supported by DAVID analysis (Figure 3d, Figure 3\u2014figure supplement 3-4) and comparison with published datasets (Figure 3\u2014figure supplement 4b). The enrichment patterns (C89-C90) are consistent with expected axonal versus somatic functions. The filtering process did not dramatically skew results (C91). The substantial overlap with diverse published datasets (C94-C95) despite different experimental conditions strengthens confidence that these represent genuine axonal mRNAs (C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Comparison with published datasets revealed that genes overlapping only with RGC axon translatome were twice as likely to be downregulated as upregulated, while the opposite was true for cultured axon transcriptomes. Regulated genes had more overlap with immature versus mature axon datasets. Upregulated genes were more likely to overlap with genes downregulated (rather than upregulated) in response to injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 are supported by comparisons shown in Figure 4f and Figure 4\u2014figure supplement 2b. The differential overlap patterns (C144-C145) suggest different regulatory mechanisms in vivo versus in culture. The greater overlap with immature axon datasets (C146) and injury-downregulated genes (C147) supports the interpretation that learning may recapitulate developmental mechanisms and that similar translation patterns lead to transcriptome depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Transcript-level analysis using Cufflinks identified three genes with differential regulation of individual transcripts not detected at gene level. Of 656 genes associated with learning in both compartments, 54 had multiple transcripts, with 9 showing regulation of the same transcript in both areas. Contribution scores for transcripts were correlated between axons and cortex, indicating coordinated regulation at the transcript level similar to gene level, though 9 genes showed >30% difference in transcript-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C155 describe transcript-level analysis shown in Figure 4g and Figure 4\u2014figure supplement 3. The identification of transcript-specific regulation (C149-C150) demonstrates the value of this analysis. The correlation of contribution scores (C153-C154) extends the finding of coordinated regulation to the transcript level. The small number of genes with divergent transcript regulation (C155) suggests alternative splicing plays a limited but detectable role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "FISH combined with immunolabeling for axonal neurofilaments verified axonal localization of mRNA in vivo. Four abundant, learning-downregulated transcripts (Rab3a, Ndrg4, Gdi1, Ap2m1) showed punctate labeling in LA neuropil with some colocalization with axonal neurofilaments. An oligo(dT) probe showed expected poly-A RNA pattern with substantial SMI312 colocalization in neuropil, confirming mRNA presence in axons while most oligo(dT) signal was in dendrites and glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C163 are supported by FISH data in Figures 5-6. The use of multiple probes (C157-C158) and negative control (C158) demonstrates specificity. The oligo(dT) experiment (C159-C161) provides additional validation. The asymmetric colocalization (C160-C161) is appropriately interpreted as confirming axonal mRNA while acknowledging most poly-A RNA is in other compartments (C163). The use of resin sections addresses z-resolution concerns mentioned in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The study demonstrates that axonal translation occurs in the adult forebrain in vivo and is altered after learning. This supports growing evidence that mature axons are capable of local translation, contrary to traditional assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C164-C166 represent the primary conclusions of the study. These are well-supported by converging evidence from immuno-EM showing translation machinery (C5, C46-C47), TRAP-RNASeq identifying ribosome-bound mRNAs (C6, C81), learning-associated changes (C99-C101), and FISH validation (C158-C162). The combination of multiple complementary approaches provides strong support for these major conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C92",
+      "C107"
+    ],
+    "result": "Control experiments using eYFP-IP (without TRAP construct) confirmed that TRAP results are not due to background. There was substantial overlap in genes enriched versus tissue transcriptome but very few learning-associated mRNAs in eYFP-IP, minimal overlap with TRAPed mRNAs after filtering, only 2.5% overlap between axonal and cortical genes (versus 47% in TRAP), little similarity in enriched GO terms, and no overlap in learning-regulated genes between compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88, C92, C107 describe critical control experiments shown in Figure 3\u2014figure supplement 2c and 3b. The eYFP-IP control addresses potential artifacts from the IP procedure and eYFP binding. The substantial differences between TRAP and eYFP-IP experiments (C86-C87, C92, C107) confirm that TRAP results reflect genuine ribosome-bound mRNAs rather than background. This control strengthens confidence in all TRAP-based findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "A few mitochondrial genes involved in fusion and localization (Mfn1, Opa1) were downregulated in axons, showing opposite pattern to cultured cortical neurons after injury. Several upstream translation regulators (Apc, Cyfip1, Mtor, Tsc2) were downregulated in axons. The authors speculate that Mtor mRNA may have been depleted in an initial wave of learning-associated translation, leading to upregulated translation of downstream targets (ribosomal proteins, translation factors) at the time of tissue collection, consistent with IPA analysis indicating mTOR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C116, C131-C132 are supported by the data (Table 1, Figure 4e). However, the interpretation (C117, C133) is speculative and based on comparison with a different experimental paradigm (injury in cultured neurons). While the speculation is reasonable and consistent with IPA results (C134), it requires temporal profiling of mRNA and protein levels to confirm. The mechanism underlying the paradoxical downregulation of Mtor mRNA alongside mTOR pathway activation remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Genes encoding transcription factors, Golgi proteins, and rough ER proteins were found in axons despite absence of these structures in adult forebrain axons by EM. The authors speculate this could represent developmental mechanisms supporting adult learning (transcription factors) or non-classical functions similar to cultured neurons. Rough ER proteins tended to be upregulated while Golgi proteins showed mixed regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123, C126, C129-C130 are supported by the gene expression data. The absence of classical structures (C127) is stated as knowledge. However, the interpretations (C125, C128) are speculative. While the citation to cultured neuron studies (C128) provides precedent, the functional significance of these mRNAs in adult axons in vivo remains unclear. The presence of these mRNAs could also reflect contamination from surrounding structures (as authors discuss for myelin/dendritic proteins in C192-C194), though the filtering strategy should minimize this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The authors discuss potential mechanisms underlying the coordinated, opposite regulation between axons and cortex. They speculate this could involve activity-regulated mRNA transport from soma to axons (similar to dendrites), translation of dormant axonal mRNAs, or differential regulation of ribosome stalling and reactivation. They acknowledge that TRAP captures all ribosome-bound mRNA without distinguishing active elongation from stalled ribosomes, and that mRNAs can be stored in dormant states before or after initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C169 accurately describe the data. However, the mechanistic interpretations (C170-C173, C177-C178, C181, C183-C185) are speculative. The authors appropriately acknowledge limitations of the TRAP method (C180) and cite relevant literature (C170, C172, C174, C179, C182), but the actual mechanisms remain unclear. The speculation is reasonable but requires additional experiments (temporal profiling, tracking of specific mRNAs, ribosome profiling) to distinguish among alternatives. The authors appropriately state that additional work is required (C187).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "The authors acknowledge that cortical samples contained intrinsic and corticocortical axons, raising the possibility of asynchronous changes in proximal versus distal axons. They found translation initiation factors and spliceosome components in axons, suggesting local initiation is likely. They speculate that genes associated with surrounding structures (myelin, dendrites) could reflect unknown axonal functions, trans-endocytosis, or exosomal transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C188 is a factual description of tissue composition. Claims C190-C191 are supported by the data and represent reasonable inferences. However, the speculation about asynchronous changes (C189) and alternative explanations for unexpected genes (C192-C194) acknowledge important limitations and alternative interpretations. The presence of myelin and dendritic genes could represent contamination despite the filtering strategy, though the citations (C193-C194) provide precedent for alternative mechanisms. These uncertainties do not invalidate the main findings but highlight areas requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The authors discuss potential bias from using RPL10a for TRAP, noting emerging evidence for ribosome selectivity in translating mRNA subsets. They argue that overexpression of RPL10a should not alter translation dynamics because eIF4E is rate-limiting, and cite the original TRAP study finding no functional differences between overexpressed and endogenous RPL10a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196, C200, C202 cite relevant literature. The speculation about potential bias (C197, C199) is appropriately cautious. The argument that excess ribosomal proteins should not alter dynamics (C201) is reasonable given that initiation is rate-limiting (C200), though this assumes no other regulatory mechanisms are affected. The citation to the original TRAP validation (C202) provides empirical support. While ribosome selectivity remains a potential limitation, the authors address it appropriately and the concern does not invalidate the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "The authors acknowledge that differences between trained and control groups can be attributed generally to learning, but the data do not distinguish effects of different forms of experience-dependent plasticity. They explain why unpaired training was not used as a control (it produces different associative learning) and note that even tone exposure alone induces learning (habituation, latent inhibition). They conclude the data likely include effects broadly induced by different forms of learning and that more targeted experiments are needed to isolate specific learning types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C209 represent an appropriately critical discussion of experimental limitations. The decision not to use unpaired training (C205, C63) is well-justified by citations showing it produces different plasticity. The acknowledgment that tone exposure induces learning (C206-C207) is supported by citations. The conclusion that data reflect broad learning effects rather than specific associative learning (C208) is honest and appropriate. The call for future targeted experiments (C209) is reasonable. This discussion strengthens rather than weakens the paper by clearly defining what the results do and do not show.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C12",
+      "C167",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "The authors conclude that local translation may be more a rule than exception in neuronal processes, that gene expression is more extensively decentralized than previously thought, and that spatial regulation could be a fundamental component of translation. They suggest this has implications for using gene expression to catalog cells and brain areas, and counters the longstanding assumption that axonal translation does not occur in the adult brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C213 (countering traditional assumptions) is well-supported by the data. However, the broader conclusions (C12, C167, C214) that spatial regulation is \"more a rule than exception\" or \"a fundamental component of translation\" are speculative extrapolations beyond what the data directly demonstrate. The study shows axonal translation occurs and is regulated by learning in one specific circuit, but generalizing to all neuronal processes requires additional evidence. The implications for gene expression cataloging (C211) are reasonable but also speculative. These represent appropriate discussion of broader significance but should be recognized as speculation rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

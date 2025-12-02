@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The pax6:GFP transgenic line labels neural progenitor cells (NPCs) in the spinal cord during development and regeneration. GFP expression colocalizes with the NSC marker Sox2 around the central canal, distinct from differentiated neuron markers in the periphery. GFP+ cells are detected in the regenerating tail as early as 6hpa, populate the neural ampulla by 24hpa, and are distributed along the anteroposterior axis by 72hpa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 provide converging evidence from immunofluorescence (Figures 1D-F) and time-course imaging (Figure 1G) that the pax6:GFP line appropriately labels NPCs during regeneration. The spatial and temporal patterns are well-documented with appropriate controls and markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C65"
+    ],
+    "result": "ATAC-Seq analysis of FACS-sorted pax6:GFP+ cells reveals a distinct chromatin accessibility landscape compared to bulk tissue. The pax6 libraries cluster separately from all-tissue libraries by MDS analysis, with 3604 regions more accessible in pax6+ cells showing enrichment for neural-specific GO terms (Neurogenesis, Nervous system development, Neuron differentiation), while 5251 regions more accessible in bulk tissue relate to general cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 and C65 are well-supported by the ATAC-Seq data (Figures 2B-G), including appropriate quality controls (Figure 2\u2014figure supplement 1), MDS clustering, peak distribution analysis, and GO enrichment. The cell-type-specific approach successfully identifies regulatory regions not detectable in bulk analysis, as demonstrated by the pax6 promoter example.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C23"
+    ],
+    "result": "Time-resolved ATAC-Seq analysis reveals temporal prioritization of cellular processes during regeneration. At 6hpa, genes associated with nephron tubule morphogenesis and neural patterning are preferentially accessible. At 24hpa, neuron development genes show peak accessibility that is subsequently lost by 72hpa. Cell cycle and proliferation terms are notably absent at 6hpa and 24hpa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 and C23 are supported by differential accessibility analysis across timepoints (Figures 3D-E, 3H) with appropriate GO term analysis and ReviGO reduction. The temporal dynamics are clearly visualized in heatmaps showing accessibility changes. The absence of proliferation terms at early timepoints is a negative result that supports the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C24"
+    ],
+    "result": "At 72hpa, chromatin accessibility shifts to prioritize neural precursor cell proliferation. Five main GO families are enriched at this timepoint, including neuronal precursor cell proliferation. The regions calling this term are more accessible at 72hpa than 24hpa, though approximately half are not differentially accessible compared to uninjured tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C24 are supported by GO analysis (Figure 3F) and accessibility heatmaps (Figure 3I). The observation that some proliferation-associated regions return to baseline accessibility suggests a return to homeostatic regulation, which is a nuanced and well-documented finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C71",
+      "C73"
+    ],
+    "result": "Single-cell RNA-Seq analysis identifies eight distinct neural cell subtypes that maintain their transcriptional identities during regeneration. A total of 781 uninjured and 296 24hpa cells cluster into neural populations including spinal cord progenitors, floor plate progenitors, differentiating neurons, interneurons, motor neurons, vulnerable motor neurons, motor neurons (leptin+), and dopaminergic neurons. Unlike axolotl limb connective tissues, Xenopus neural cells retain well-discriminated transcriptional signatures throughout regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C71, and C73 are well-supported by scRNA-Seq analysis (Figures 4A-B, Figure 4\u2014figure supplement 1). The identification of cell types is based on established markers and differential expression analysis. The comparison to axolotl is appropriately cited and represents an important biological distinction between regeneration models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "At 24hpa, the composition of neural cell populations shifts toward differentiated neurons. NSCs decrease from 38% to 25%, differentiating neurons decrease from 20% to 10%, and differentiated neurons increase from 42% to 65%. This includes expansion of interneurons, vulnerable motor neurons, and motor neurons (leptin+), with the latter being virtually absent in uninjured tails but abundant at 24hpa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by quantitative analysis of cell type proportions in scRNA-Seq data (Figures 4D-G). The sunburst diagrams clearly show the shifts in cell populations. The leptin+ motor neuron observation is consistent with prior published work (Aztekin et al., 2019), providing independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Cell cycle analysis reveals a shift from proliferative to quiescent states at 24hpa. In uninjured tails, 30% of neural cells are in S phase, 16% in G2M, and 54% in G1. At 24hpa, S phase drops to 17%, G2M to 7%, and G1 increases to 76%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by Seurat cell cycle prediction analysis (Figures 4H-K). The dramatic shift toward G1 phase at 24hpa is consistent with the observed increase in differentiated neurons and decrease in proliferating progenitors. However, the analysis relies on computational prediction rather than direct cell cycle measurement, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Validation of differentiation markers confirms the temporal model. Four genes (l1cam, uchl1, nsg1, ass1) are strongly expressed in differentiated neurons but not NPCs by scRNA-Seq, and show distinct expression in the neural ampulla at 24hpa by in situ hybridization. Proliferative cells (PH3+) are significantly more abundant at 72hpa compared to 24hpa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by orthogonal validation methods: scRNA-Seq (Figures 5A-C, G-I, M-O, S-U), in situ hybridization (Figures 5E, K, Q, W), and immunofluorescence with quantification (Figures 5Y-AA). The convergence of multiple independent methods strengthens confidence in the temporal model of differentiation preceding proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C76"
+    ],
+    "result": "Integrative analysis of ATAC-Seq and RNA-Seq data predicts gene regulatory networks involving Meis1, Etv1, Pbx3, and Runx2. Meis1 is predicted to bind motifs near runx2 and etv1 at 24hpa, while Etv1 binds near pbx3. All four factors are expressed in neural cells by scRNA-Seq, with pbx3 being most restricted to the neural lineage. Pbx3 and Meis1 are predicted to bind upstream of several dozen differentially accessible neuronal differentiation factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C76 are supported by computational integration of ATAC-Seq motif analysis with RNA-Seq expression data (Figure 6A). The predictions are based on established motif databases (HOMER) and are constrained by expression data. However, these remain computational predictions requiring experimental validation, which is appropriately pursued in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Pbx3 and Meis1 are homeodomain transcription factors with established roles in other contexts but not previously studied in neural regeneration. They are known to coregulate targets in B-cell leukemia and axolotl limb regeneration, and Meis1 works with Pbx1 in Xenopus neural development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 and C80-C82 are appropriately cited to published literature. The novelty claim (C45, C82) regarding neural regeneration is supported by the absence of prior literature, though this is inherently difficult to prove definitively. The background establishes the biological plausibility of these factors as regulators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Pbx3 and Meis1 have overlapping but temporally distinct target profiles. A large fraction (26/61) of Pbx3 targets are shared with Meis1. Meis1's target peaks are preferentially increased in accessibility at 24hpa, while Pbx3's targets are overall increased at 72hpa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by ATAC-Seq differential accessibility analysis and motif analysis (Figures 6B-D). The temporal distinction in target accessibility suggests these factors may have both shared and temporally distinct functions during regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Expression of meis1 and pbx3 increases during regeneration. At 24hpa, meis1 expression increases to 30% of neural cells (driven by interneurons, dopaminergic neurons, and motor neurons) and pbx3 to 11% (driven by motor neurons). Both genes are expressed in uninjured brain and spinal cord at stage 41, with expression increasing in the spinal cord by 24hpa and persisting more weakly at 72hpa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by scRNA-Seq quantification (Figures 6E-F) and in situ hybridization (Figures 6G-P). The convergence of single-cell and spatial expression data provides strong evidence for the temporal and cell-type-specific expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Loss-of-function experiments demonstrate that Meis1 and Pbx3 are required for proper neural development. Morpholino knockdown of either gene results in similar phenotypes including small/missing eyes, shorter body axis, reduced pigmentation, and mispatterned spinal cord and intersomitic axons. These phenotypes are reproduced with a second set of morpholinos and with CRISPR/Cas9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are well-supported by multiple independent loss-of-function approaches (Figures 7\u2014figure supplement 1, 7\u2014figure supplement 2). The use of two different morpholinos per gene and CRISPR validation addresses concerns about off-target effects. The developmental phenotypes establish that these factors are necessary for neural development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Vivo-morpholino knockdown at late tailbud stage reveals regeneration-specific requirements for Meis1 and Pbx3. Neither vivo-MO causes gross morphological defects, but both result in reduced axons at stage 41 and reduced/disorganized neurofilament staining at 72hpa. Both knockdowns produce significantly shorter regenerated tails and spinal cords with reduced spinal cord area, though PH3+ cell density is not significantly changed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by vivo-morpholino experiments with appropriate controls (Figures 7B-M). The late-stage injection strategy cleverly bypasses early developmental defects to assess regeneration-specific functions. The quantification of tail length, spinal cord area, and PH3+ cells provides multiple readouts. The lack of change in PH3+ density suggests the defect is not primarily in proliferation, consistent with the proposed role in differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C74",
+      "C75",
+      "C77",
+      "C85"
+    ],
+    "result": "Meis1 and Pbx3 are critical regulators of neural development and regeneration. Loss of function results in disorganized neurofilament outgrowth and failure of successful tail and spinal cord regeneration. The factors are expressed in the regenerating spinal cord with increased expression in motor neuron subtypes, and loss of either factor does not prevent neurofilament formation but disrupts organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C74, C75, C77, and C85 synthesize the expression and functional data. The conclusion that these factors are 'critical regulators' is supported by the convergence of expression patterns, predicted regulatory targets, and loss-of-function phenotypes. The distinction between formation and organization of neurofilaments is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C83",
+      "C68",
+      "C84"
+    ],
+    "result": "Neural progenitors temporally uncouple differentiation and proliferation during regeneration, prioritizing differentiation of motor neuron and interneuron subtypes at 24hpa before accessibilizing proliferation genes at 72hpa. This represents a contrast to embryonic development where proliferation precedes differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C83-C84 represent the central model of the paper, supported by converging evidence from ATAC-Seq (temporal GO enrichment), scRNA-Seq (cell type composition and cell cycle analysis), and validation experiments (ISH, PH3 staining). The comparison to embryonic development is appropriately cited (C68). This temporal uncoupling is a novel and well-supported finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Pbx3 and Meis1 may contribute to ongoing differentiation of neuronal structures from 24hpa to 72hpa, and reduced tail regeneration following their loss may be due to interactions between regenerating nerves and other axial structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are speculative interpretations (appropriately indicated by 'may' and 'propose'). While the temporal expression patterns and target accessibility support a role in ongoing differentiation, the mechanism by which neural defects lead to reduced overall tail regeneration is not directly tested. The nerve-dependence hypothesis is plausible and cited, but remains speculative in this context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The temporal model agrees with published findings that proliferation is minimal before 48hpa and that axonogenesis and neuronal differentiation genes are transcriptionally upregulated during early regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 appropriately cite multiple published studies that support the temporal model. This agreement with prior bulk RNA-Seq and other analyses provides independent validation of the findings and places them in the context of the existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establish the regenerative capacity of Xenopus tadpoles, the re-expression of developmental genes during regeneration, differences between axolotl and Xenopus regeneration, and the role of Pax6 in neural development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are appropriately cited background information from published literature. These establish the biological context and rationale for the study. All claims are supported by multiple citations to peer-reviewed research.",
+    "result_type": "MINOR"
+  }
+]

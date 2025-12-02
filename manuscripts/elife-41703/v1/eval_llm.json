@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors demonstrate that casting behavior as surprise minimization under active inference yields two distinct types of goal-directed exploration: 'model parameter exploration' (active learning) that drives agents to sample uncertain options to learn task structure, and 'hidden state exploration' (active inference) that motivates agents to sample unambiguous observations to infer current hidden states. These two exploration types can make opposing behavioral predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C49-C52 collectively establish the core theoretical contribution. The mathematical framework (Equation 7, Figure 1) decomposes expected free energy into parameter and state exploration terms, and simulations in Figures 3-12 demonstrate distinct behavioral profiles. The opposing predictions are validated through comparative simulations showing parameter exploration favors uncertain options while state exploration favors informative cues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C4",
+      "C112"
+    ],
+    "result": "Active learning (model parameter exploration) leads agents to preferentially sample novel, uncertain options early in learning to reduce uncertainty about reward probabilities, as demonstrated in a two-armed bandit task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C4, and C112 are directly supported by simulations in Figures 3 and 6 showing agents initially prefer the risky option when concentration parameters are low (high uncertainty), then shift to exploitation after learning. The time-course analysis (Figure 6C) confirms this prediction with high initial preference for uncertain options that decreases over trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C110",
+      "C52"
+    ],
+    "result": "Active inference (hidden state exploration) motivates agents to sample informative cues that provide unambiguous information about hidden contextual states before making reward-based decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38, C110, and C52 are supported by simulations in Figures 8-9 showing agents consistently sample informative cues to infer context (high vs. low reward probability) before choosing between safe and risky options. Figure 8C demonstrates near 100% cue sampling in volatile contexts, validating the hidden state exploration mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Random exploration becomes adaptive when goal-directed exploration mechanisms (active learning or active inference) are disabled or impossible, though it leads to slower and less efficient learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by simulations in Figure 5 showing that when active learning is disabled, only high stochasticity (random exploration) allows agents to discover advantageous options, albeit inefficiently. This demonstrates the compensatory role of random exploration when goal-directed mechanisms fail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Active learning is most effective when task structure is stable across trials allowing information transfer, while active inference is most effective for trial-by-trial adaptation to volatile contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 are supported by comparative simulations in Figures 10-12. Figure 11 shows state exploration outperforms parameter exploration in volatile contexts (random trial-by-trial changes), while Figure 12 shows both succeed in stable contexts. This temporal distinction is a key theoretical prediction validated by the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The framework can account for the empirically observed supra-additive interaction between reward magnitude and information value (Blanchard et al., 2015) when incorporating dynamic precision of policy selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by simulations in Figure 13C reproducing the Blanchard et al. empirical pattern where information preference increases with reward magnitude. This requires dynamic precision modulation (C96), demonstrating the framework's ability to capture complex reward-information interactions beyond simple additive effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C39",
+      "C40",
+      "C42",
+      "C43"
+    ],
+    "result": "The theoretical framework casts choice behavior and planning as variational probabilistic inference where agents minimize expected free energy, which approximates surprise minimization and is equivalent to maximizing model evidence (ELBO in machine learning).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 and C39-C43 establish the mathematical foundation. The framework is rigorously defined in the Materials and Methods section with formal derivations (Equations 1-7), connecting to established variational inference methods. The generative model structure (Figure 1) and its implementation are clearly specified, providing a sound theoretical basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The orbitofrontal cortex (OFC) is predicted to encode extrinsic reward and intrinsic information value in separate, orthogonal neural populations, consistent with empirical findings from Blanchard et al. (2015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 connect theoretical predictions to empirical neuroscience. The framework predicts factorized value representation (Equation 7), which aligns with Blanchard et al.'s observation of distinct OFC neuron populations encoding reward and information independently. This convergence between theory and data supports the neural plausibility of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C74",
+      "C75"
+    ],
+    "result": "Dopamine neurons are predicted to encode a unified prediction error signal combining reward, model parameter updates, and hidden state information, consistent with empirical findings showing dopamine encodes both reward and information prediction errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 and C74-C75 establish convergence between theoretical predictions and empirical dopamine recordings. The framework predicts precision updates as prediction errors over expected free energy (C73-C74), which aligns with Bromberg-Martin & Hikosaka (2009) and Takahashi et al. (2017) findings that dopamine neurons signal both reward and information content without differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C88",
+      "C89",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Information provides additive value to options beyond extrinsic reward, explaining why animals across species (pigeons, starlings, rats, monkeys, humans) prefer options with non-instrumental informative cues even when those options have lower objective reward value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 connect the theoretical prediction of additive information value (C90) to extensive cross-species empirical evidence (C84-C87). The cited studies consistently show preference for informative options despite lower economic value, supporting the framework's prediction. However, C91-C96 show this additive relationship requires refinement to account for reward-information interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The distinction between active learning (parameter uncertainty) and active inference (state uncertainty) provides a refined account of unexpected vs. expected uncertainty, where the same type of uncertainty can be addressed through either learning about parameters or inferring hidden states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 position the framework relative to prior work (Yu & Dayan, 2005) on uncertainty types. The distinction is conceptually clear and illustrated with examples (C133, C135). However, the practical empirical dissociation of these mechanisms remains a challenge, as acknowledged in the discussion of their potential interactions (C121, C141).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C142"
+    ],
+    "result": "The framework promises refined characterization of cognitive deficits in neuropsychiatric disorders like schizophrenia by dissociating impairments in active learning vs. active inference, though specific characterizations remain elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C142 propose clinical applications but provide only speculative predictions (C139-C140) without empirical validation. While the conceptual framework is sound and prior evidence shows cognitive deficits in schizophrenia (C137), the specific dissociation and its clinical utility remain untested. This represents a promising future direction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The expected free energy decomposes into three components: model parameter exploration (mutual information about parameters), hidden state exploration (mutual information about states), and realizing preferences (expected log probability of preferred outcomes), providing a unified account of exploration and exploitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C155 describe the mathematical decomposition of expected free energy (Equation 7). The derivation is provided in Materials and Methods with clear connections to mutual information, Bayesian surprise, and value of information concepts. The three-term structure is consistently applied throughout simulations and provides the mechanistic basis for all behavioral predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Learning in the model is implemented through Dirichlet concentration parameters that track normalized counts of state-outcome co-occurrences, updated according to a learning rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 describe the learning mechanism with clear mathematical specification (Equation 8). This is a standard Bayesian approach to parameter learning with Dirichlet priors, appropriately implemented for the discrete state-outcome mappings in the model. The mechanism is consistently applied in all active learning simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The generative model uses Markovian state transitions where the next state depends only on the current state and action, with preferences encoded in a c-vector and initial state beliefs in a d-vector.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe standard components of the Markov Decision Process framework. These are clearly specified in Figures 1-2 and 7, with appropriate mathematical formulation. The Markovian assumption is standard and appropriate for the tasks simulated, though it represents a simplification of real-world decision-making.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Active inference and learning may depend on interactions between OFC (providing factorized value representations) and dopaminergic nuclei (providing unified update signals), based on known anatomical connections and functional dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C79 propose a neural circuit mechanism based on anatomical connectivity and prior hypotheses. While the cited evidence supports OFC-dopamine interactions (C76-C78), the specific claim about factorized vs. unified representations (C79) is a synthesis of simulations and empirical findings that remains speculative. Further empirical work is needed to validate this circuit-level hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Beyond OFC and dopamine, exploration involves other neural systems including insula, anterior cingulate cortex, rostrolateral prefrontal cortex, and hippocampal-OFC interactions, though the integrated circuit remains largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 acknowledge the broader neural basis of exploration with appropriate citations to empirical work. The acknowledgment of unknown mechanisms (C107, C109) is scientifically appropriate. This represents a comprehensive literature review rather than a novel empirical or theoretical contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "Attention and salience modulate information-seeking behavior, reflected in the framework through dynamic changes in precision of policy selection, consistent with empirical findings on attention-dependent novelty effects and infant curiosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 connect precision modulation to attention/salience with appropriate empirical citations (C99-C100). The simulation in Figure 13C demonstrates this mechanism can account for reward-information interactions. However, the framework treats precision as a parameter rather than explicitly modeling attention mechanisms, representing a functional rather than mechanistic account.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The exploration-exploitation trade-off is fundamental to decision-making, with humans performing both random exploration (\u03b5-greedy, Thompson sampling) and goal-directed exploration (uncertainty-sensitive, e.g., UCB algorithm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 provide a comprehensive literature review establishing the exploration-exploitation problem and existing approaches. All claims are well-supported by appropriate citations to foundational and recent work. This contextualizes the paper's contribution but represents established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Providing a formal account of the exploration-exploitation trade-off is challenging, particularly for understanding generative mechanisms and dissociating different types of uncertainty (ambiguity vs. risk, unexpected vs. expected uncertainty).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 establish the motivation and challenges addressed by the paper. The conceptual distinction between uncertainty types is well-established (C17 cites Yu & Dayan, 2005) and clearly explained with examples (C16). These claims frame the problem but do not constitute empirical or theoretical results themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The balance between exploitation, goal-directed exploration, and random exploration is governed by relative precision, with strong preferences driving exploitation and high uncertainty driving goal-directed exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 describe how the framework balances different behavioral tendencies through precision parameters. This is demonstrated across multiple simulations (Figures 3-6) showing how preference strength and uncertainty levels modulate behavior. The mechanism is theoretically sound and empirically validated within the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Goal-directed exploration depends on having a model of the task, and understanding how agents build and compare models remains a key challenge for future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 acknowledge a fundamental limitation: the framework assumes agents have appropriate task models but does not explain model construction or selection. This is an honest assessment of scope limitations and identifies an important open question. The acknowledgment is appropriate but represents a gap rather than a contribution.",
+    "result_type": "MINOR"
+  }
+]

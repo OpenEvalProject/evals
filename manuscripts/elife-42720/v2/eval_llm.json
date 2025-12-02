@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A GWAS meta-analysis of emphysema patterns in 11,282 subjects identified 10 genome-wide significant loci, including 4 novel associations. The study replicated previously observed relationships between LHE patterns and GOLD spirometric grades in an independent ECLIPSE cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GWAS findings are well-supported by appropriate sample sizes, meta-analysis methods, and replication in an independent cohort (C30-C33). QQ-plots show no systematic inflation (C35), and sensitivity analyses confirm robustness of major findings (C36-C37). The identification of 10 loci with 4 novel associations represents solid genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C34"
+    ],
+    "result": "One novel association (rs28929474 in SERPINA1) was identified, but the association was partially driven by six subjects with imputed PiZZ genotypes. After excluding these subjects, the association remained nominally significant but below genome-wide significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the SERPINA1 variant is biologically plausible (C34), the dependence on imputed genotypes in a small number of subjects (C38) and the substantial change in p-value upon exclusion (C39: 0.0004 to 0.003, meta-analysis p=1.6\u00d710\u207b\u2077) raises concerns about the robustness of this specific association. Direct genotyping would strengthen this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Five of the 10 LHE loci showed associations with FEV1, FEV1/FVC, or COPD status in independent GWAS studies. Only the 15q25 and 19q13 loci were associated with smoking behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lookup analyses in independent GWAS datasets (C40) provide external validation for half of the identified loci. The smoking behavior analysis (C41) appropriately addresses potential confounding, showing that most associations are not mediated through smoking behavior. This strengthens the interpretation that these are emphysema-specific associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C75",
+      "C76",
+      "C101"
+    ],
+    "result": "Bayesian colocalization analysis identified 4 genome-wide significant loci and 32 additional loci at p<5\u00d710\u207b\u2075 with >80% probability of shared causal variants between GWAS and eQTL signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the colocalization methodology is appropriate (C42, C124), the authors acknowledge that the 32 loci at relaxed thresholds are putative rather than confirmed (C76) due to the relaxed GWAS significance threshold and methodological complexities. The 4 genome-wide significant colocalizations are better supported, but the larger set of 32 requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Cell type enrichment analysis identified fibroblasts and fetal lung tissue as the most commonly enriched cell types in LHE GWAS regions, with 15, 25, and 1 cell types exceeding significance thresholds for moderate centrilobular, nonemphysematous, and severe centrilobular phenotypes respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment analysis using Garfield with appropriate multiple testing correction (C129) provides robust evidence for cell-type specificity. The predominance of fibroblasts and fetal lung tissue (C44) is biologically plausible given the role of these cell types in lung development and repair. The varying numbers of enriched cell types across phenotypes (C45) suggests phenotype-specific regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The TGFB2 locus shows two independent association signals with moderate centrilobular emphysema. Multiple SNPs in this region are associated with TGFB2 expression, with the highest colocalization in cultured fibroblasts. Conditional analysis confirmed two independent signals (primary: rs796395, secondary: rs3009942, p=4.4\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The presence of two independent signals is well-supported by conditional association analysis (C54-C56) and confirmed by multiple colocalization methods including Sherlock (C51). The eQTL colocalization specifically in fibroblasts (C48) is consistent with the cell-type enrichment results. The genetic complexity at this locus is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Fine-mapping using PICS identified 7 variants with >5% causal probability near TGFB2. Of these, rs1690789 (MAF=0.48) was the only variant predicted to alter transcription factor occupancy and lies within a DNaseI hypersensitivity peak in 13 cell types, 8 of which were fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fine-mapping approach using PICS (C57, C126) is appropriate for narrowing candidate variants. The integration of CATO predictions (C58, C127) and DNaseI data (C60-C62) provides converging evidence for rs1690789 as the likely functional variant. However, the variable detection of DNaseI peaks across fibroblast experiments (C62) suggests context-dependent activity that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C90",
+      "C91"
+    ],
+    "result": "Chromatin conformation data shows that the 10 kb region containing rs1690789, located ~200 kb from the TGFB2 transcription start site, contacts multiple regions around TGFB2 including the promoter. 3C experiments in IMR90 fibroblasts confirmed physical interaction between the rs1690789 region and the TGFB2 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chromatin interaction is supported by both publicly available 4C-Seq data (C67, C135) and newly generated 3C experiments (C69, C136). The multiple contacts observed (C67, C90) suggest this is a regulatory hub. The experimental confirmation in lung fibroblasts (C69) directly validates the predicted long-range interaction (C66, C70). The 3C data in Figure 7B provides visual evidence of the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "CRISPR/Cas9 deletion of a ~100 bp region containing rs1690789 resulted in reduced TGFB2 expression in primary human lung fibroblasts, with four biological replicates showing significant decreases (p<0.05 by unpaired t-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR/Cas9 experiments provide direct functional evidence that the rs1690789 region regulates TGFB2 expression (C71-C72). The experimental design with multiple guide RNA pairs (C137-C138), appropriate controls (C138), four biological replicates (C140), and proper quantification methods (C141-C142) is rigorous. Statistical testing with unpaired t-tests (C143) is appropriate. Figure 8 shows both the deletion efficiency and expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The rs1690789 variant shows tissue-specific eQTL effects: it is associated with TGFB2 expression in fibroblasts and thyroid tissue with opposite directions of effect, suggesting complex, context-dependent regulatory activity. The regulatory element may be active only in certain fibroblast subsets or conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of opposite directional effects in different tissues (C92-C93) is well-documented from GTEx data and suggests genuine context-dependent regulation (C94). The variable DNaseI accessibility across fibroblast experiments (C62, C95-C96) supports this interpretation. However, the speculation about context-specificity (C95-C96) requires additional experimental validation to determine the specific conditions or fibroblast subtypes involved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The two independent association signals near TGFB2 are in linkage equilibrium with each other and with the lead variant from a previous severe COPD GWAS, indicating distinct genetic effects at this locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The linkage disequilibrium analysis (C88-C89) appropriately demonstrates that these are independent signals rather than correlated variants. The comparison with prior COPD GWAS results (C89) shows these emphysema pattern associations represent distinct genetic effects from those associated with severe COPD, suggesting phenotype-specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C104"
+    ],
+    "result": "The authors acknowledge several limitations: the function of the secondary association signal is unexplained, both signals may have effects in other cell types, multiple functional variants may exist in linkage disequilibrium, and gene-level functional studies are needed to characterize TGFB2 expression effects on fibroblast function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the limitations of their study (C97-C100, C104). These are reasonable caveats that do not undermine the main findings but correctly identify areas requiring future investigation. The acknowledgment that the secondary signal remains unexplained (C97) and that additional cell types may be involved (C98) demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C28",
+      "C29",
+      "C78",
+      "C102"
+    ],
+    "result": "The study provides novel mechanistic evidence that genetic variation affecting TGF-\u03b2 signaling, specifically through a ~100 bp regulatory element containing rs1690789 that increases TGFB2 expression in lung fibroblasts, contributes to genetic predisposition to emphysema in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the convergence of multiple lines of evidence: GWAS association (C5-C6), eQTL colocalization (C42, C47-C48), fine-mapping (C57-C58), chromatin interaction (C69), and functional validation via CRISPR deletion (C71-C72). The claim that the element \"increases\" TGFB2 expression (C28) is correctly inferred from the observation that deletion decreases expression (C71). The integration of computational and experimental approaches provides strong mechanistic evidence linking genetic variation to disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study analyzed 11,282 subjects from COPDGene (NHW and AA) and ECLIPSE cohorts with appropriate genotyping, quality control, imputation to 1000 Genomes, and meta-analysis using fixed-effects inverse variance weighting, with adjustment for age, gender, smoking, and genetic ancestry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design and methods are rigorous with large sample sizes (C106, C111, C115), appropriate quality control (C109, C114, C117), standard imputation methods (C110, C116), and proper covariate adjustment (C118). The use of fixed-effects meta-analysis with inverse variance weighting (C119) is appropriate for combining results across cohorts. The exclusion of alpha-1 antitrypsin deficiency subjects (C109, C114) is appropriate to focus on common genetic variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The integrative analysis pipeline combined GTEx eQTL data from 44 tissues with GWAS results using Bayesian colocalization (coloc package), confirmed with Sherlock, followed by fine-mapping with PICS, transcription factor occupancy prediction with CATO, and cell-type enrichment analysis with Garfield.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational pipeline is comprehensive and uses established, peer-reviewed methods for each analysis step. The use of multiple colocalization methods (coloc and Sherlock, C124-C125) provides robustness. The integration of multiple data types (eQTL, DNaseI, chromatin marks, C122, C130-C131) follows best practices for functional interpretation of GWAS results. The methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Experimental validation used IMR-90 lung fibroblasts (ATCC, mycoplasma-negative) and primary human lung fibroblasts from healthy donors for 3C and CRISPR experiments, with publicly available 4C-Seq data from IMR90 cells used for initial chromatin interaction analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell culture methods are appropriate with proper quality control (C133). The use of both immortalized (IMR-90) and primary cells (C134) strengthens the findings by showing consistency across cell types. The integration of public 4C-Seq data (C135) with newly generated 3C data (C136) is a strength, combining hypothesis generation from existing data with experimental validation.",
+    "result_type": "MINOR"
+  }
+]

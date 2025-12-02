@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C61",
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors developed a rapid immunopurification method (SV-tag) to isolate synaptic vesicles from cultured neurons within 30 minutes. The method uses an HA-tagged synaptophysin construct and magnetic beads, yielding SVs that are 10-fold enriched, contain glutamate, and are comparable to those from traditional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 collectively demonstrate successful development of the rapid SV isolation method with multiple lines of validation including electrophysiology (C12), electron microscopy (C15), proteomics (C69), and functional glutamate detection (C19-C20). The methodological optimizations (C67-C68) and characterization data (C17-C18) provide quantitative support for the method's efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Targeted metabolomics using GC/MS and LC/MS revealed that glutamate is the sole metabolite significantly enriched in SVs from primary cortical cultures, with no enrichment of non-neurotransmitter amino acids or aspartate. CRISPR-mediated depletion of VGLUT1/2 confirmed glutamate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 provide converging evidence from multiple MS approaches (GC/MS and LC/MS) showing selective glutamate enrichment. The genetic validation via VGLUT1/2 knockout (C27) and absence of organellar contaminant markers (C26) strongly support the purity and specificity of the findings. The aspartate result (C23) is corroborated by independent electrophysiological studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Global untargeted metabolomics detected 2724 features in SVs, with only three metabolites (glutamate, GABA, and potassium) meeting criteria for significant enrichment and BafilomycinA depletion. The potassium signal may be artifactual and requires further validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28-C29 present comprehensive global profiling data showing minimal metabolic content in SVs. However, the authors appropriately acknowledge uncertainty about potassium (C82-C84), noting it may be a technical artifact and requires follow-up with orthogonal methods. The main conclusion about glutamate and GABA is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The SV-tag method was successfully adapted for brain tissue by optimizing lysis protocols, enabling SV isolation from diverse brain regions (hippocampus, cortex, striatum) within 30 minutes without altering neurotransmitter release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C89-C93 document systematic optimization of the method for brain tissue with clear improvements over initial attempts. Electrophysiological validation (C32) confirms lack of functional perturbation. The methodological details (C90-C91) and characterization data (C93) provide strong support for successful adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C94",
+      "C95"
+    ],
+    "result": "Cell-type-specific metabolomic profiling of brain SVs revealed expected neurotransmitter profiles: hippocampal SVs contained primarily glutamate with some GABA, while GABAergic striatal neurons (using Cre-dependent expression) showed GABA enrichment and glutamate depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 demonstrate successful cell-type-specific profiling with results matching expected neuronal compositions (C94-C95). The use of genetic Cre lines (C36) to resolve contamination issues shows methodological rigor. The metabolomic data align with known neurotransmitter identities of these brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C98",
+      "C99"
+    ],
+    "result": "Dopamine was detected in SVs from substantia nigra dopaminergic neurons and was depleted by VMAT2 inhibition with tetrabenazine, demonstrating the method's capability to detect labile neurotransmitters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C98-C99 show successful detection of dopamine using targeted LC/MS with appropriate genetic targeting and pharmacological validation. The tetrabenazine depletion experiment provides strong functional validation. This extends the method beyond stable polar metabolites to more challenging analytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C44",
+      "C45",
+      "C100",
+      "C101"
+    ],
+    "result": "Comprehensive metabolomic analysis revealed that glutamatergic SVs contain only glutamate among polar metabolites, with no detectable aspartate or taurine, indicating SVs have minimal metabolic content consistent with their specialized role in neurotransmitter storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C44-C45 present the main biological conclusion supported by extensive targeted and untargeted metabolomics. The absence of proposed neurotransmitters like aspartate is corroborated by independent studies (C45). Claims C100-C101 appropriately interpret these findings in the context of SV function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The method has detection limits around 2% of neuronal populations, as evidenced by failure to detect GABA/glutamate in substantia nigra SVs and acetylcholine in striatal SVs despite known release of these neurotransmitters by minority populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 honestly acknowledge detection limitations with quantitative estimates based on known cellular compositions. This is appropriately framed as a limitation rather than a negative result, with C43 providing a specific threshold estimate (2%) based on cholinergic neuron abundance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Multiple approaches to improve SV-tag targeting (N-terminal tagging, endogenous tagging, alternative proteins) all resulted in somatic localization, suggesting either difficulty achieving proper expression levels for recombinant SV proteins or existence of an inaccessible somatic pool of endogenous synaptophysin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 document systematic optimization attempts with consistent results across approaches. The alternative hypotheses (C65-C66) are appropriately presented as interpretations. The endogenous tagging result (C66) provides some support for the second hypothesis, though this remains somewhat uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Electron microscopy revealed particles outside the expected 40-70 nm SV size range, which may represent membrane fragments (<40 nm) or large dense-core vesicles/contaminants (>100 nm). The SV enrichment (10-fold) is lower than traditional methods (20-fold), and ATP supplementation without magnesium was sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide honest characterization of method limitations and differences from traditional approaches. The speculative interpretations (C70-C71) are appropriately qualified. The comparison to previous methods (C72) and magnesium observation (C73) are supported by data, though explanations remain somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "Future improvements could include optimizing yields for atomic ion detection, developing conditional endogenous tagging mouse lines, and applying the method to study vesicular transporter function, SV heterogeneity, and neurotransmitter co-release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C111 are entirely speculative statements about future work and potential applications. While reasonable and well-motivated, these represent proposed rather than demonstrated capabilities. They should not be evaluated as supported results but rather as discussion of future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background claims establish that neurons communicate via activity-dependent SV release, that classical views of single fixed neurotransmitters per neuron have been revised to include multiple neurotransmitters and neurotransmitter switching, and that understanding of neurotransmitter identity remains incomplete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C8, C46-C51 present well-established background knowledge supported by appropriate citations. These provide context for the study but are not novel findings. They accurately represent the current state of the field and historical perspectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Current methods for determining neurotransmitter identity have limitations including lengthy purification times that may alter SV contents, inability to target specific neuronal populations, false negatives from low expression, and inability to detect unknown neurotransmitters or non-canonical synthesis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9-C10, C53-C59 accurately describe limitations of existing approaches with appropriate citations. These establish the rationale for developing the new method. The concerns about existing methods are well-documented in the literature and appropriately motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C85",
+      "C86"
+    ],
+    "result": "Methodological background establishes that GC/MS has advantages for optimization but limited polar metabolite coverage, LC/MS provides broader coverage with nanomolar sensitivity, glutamate import requires VGLUT1/2, and neurons in brain rely on extracellular metabolite uptake for neurotransmitter synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C78-C80, C85-C86 present established methodological and biological knowledge supported by citations. These provide necessary context for understanding the experimental approach and interpretation but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

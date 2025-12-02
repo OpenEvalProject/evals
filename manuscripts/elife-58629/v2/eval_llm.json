@@ -1,0 +1,177 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Actinonin-resistant P. falciparum parasites were successfully generated through stepwise drug selection starting from 10 million D10 parasites treated with 2 \u00b5M actinonin, ultimately achieving growth at 20 \u00b5M. Resistant clones showed IC50 values 18-35-fold higher than parental lines, with the most resistant clone showing an IC50 of 73.3 \u00b5M. The selection required 10 weeks to recover resistant parasites and 10 months to develop the highest resistance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 and C32-C34 provide a coherent experimental narrative with quantitative data (IC50 values, fold-changes, timelines) that are internally consistent and presented in Table 1 and Figure 1. The methodology differs from previous failed attempts (C34), which provides context for success. The data are reproducible across multiple clones (C17), strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Genotyping of four actinonin-resistant clones revealed that all retained wild-type sequences for candidate target genes (PfPDF, PfFMT, PfMAP, PfRING) but each harbored a single G489C mutation in PfFtsH1, strongly implicating PfFtsH1 as the primary target of actinonin. This mutation is adjacent to the TgFtsH1 N805S mutation previously identified in T. gondii.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 present compelling genetic evidence: the consistent presence of the G489C mutation across all four independent resistant clones (C21), combined with the absence of mutations in other candidate genes (C19-C20), provides strong support through convergent evidence. The positional relationship to the T. gondii resistance mutation (C22) adds biological plausibility. However, the inference in C23 would be strengthened by the CRISPR validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C42",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CRISPR-Cas9 allelic replacement experiments definitively confirmed that the G489C mutation is sufficient to confer actinonin resistance. Parasites with synonymous shield mutations but retaining G489 (rFtsH1G489G) remained sensitive, while two independent clones with the G489C mutation (rFtsH1G489Ca/b) showed resistance comparable to the selected line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C42 provide the critical causal validation through gain-of-function experiments. The experimental design includes appropriate controls (shield mutations without G489C in C24) and independent replicates (two clones in C25). The correlation between genotype and phenotype across all tested clones (C79) and the methodological details (C74-C78) support reproducibility. The data in Figure 1B,C show statistically significant differences (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C43"
+    ],
+    "result": "The combined genetic selection and CRISPR validation data unequivocally identify PfFtsH1 as the primary target of actinonin in P. falciparum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C43 represent the central conclusion, which is well-supported by the convergent evidence from independent experimental approaches: (1) consistent G489C mutation in all selected resistant clones, (2) absence of mutations in alternative candidate genes, and (3) CRISPR-mediated introduction of G489C conferring resistance. The use of \"unequivocally\" is justified by the strength of the causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57"
+    ],
+    "result": "The resistance levels in PfFtsH1 G489C parasites (IC50 73.3 \u00b5M) are comparable to apicoplast-minus parasites (IC50 43.1 \u00b5M), strengthening the conclusion that PfFtsH1 has a role in apicoplast biogenesis. The data are consistent with previous findings and show similar patterns to T. gondii FtsH1 resistance mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C48-C53 provide comparative quantitative data across multiple parasite lines and species. The IC50 values are presented with error estimates (C51-C53) and show consistency with prior publications (C56-C57). The comparison between G489C mutants and apicoplast-minus parasites (C27) provides functional context, though the ~2-fold difference suggests the mutation may not completely abolish PfFtsH1 function. The inference about apicoplast biogenesis (C28) is reasonable but relies partly on prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C44"
+    ],
+    "result": "The ability to generate actinonin resistance from a relatively small starting population (10 million parasites) demonstrates that actinonin is not an 'irresistible' drug, tempering enthusiasm for PfFtsH1 as an antimalarial target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C44 draw appropriate translational conclusions from the experimental data. The successful generation of resistance from 10^7 parasites (C14) within 10 weeks (C32) supports the assessment that resistance can emerge readily. However, the 10-month timeline for highest resistance (C33) and the requirement for stepwise selection suggest some fitness cost. The conclusion is appropriately cautious about therapeutic development implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Greater resistance levels achieved through prolonged selection may result from additional compensatory mutations or alterations in secondary actinonin targets such as other metalloproteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 is explicitly speculative (\"suggests that these lines may have acquired\") and lacks direct experimental validation. While the observation of modestly higher resistance in long-term selected lines compared to CRISPR-edited clones is noted, no whole-genome sequencing or targeted analysis of other metalloproteases was performed to test this hypothesis. This represents a reasonable interpretation but requires additional experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The residue conferring actinonin resistance in T. gondii (N805S) is already serine in PfFtsH1, raising questions about target identity. Conflicting localization data (mitochondrial vs. apicoplast) exist, though phenotypic evidence supports an apicoplast relationship, possibly explained by differential processing or organellar proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 accurately present the contradictions and uncertainties in prior literature. The sequence comparison (C10) is verifiable from Table 1. The localization conflict (C11-C12) is appropriately acknowledged with citations. The proposed explanations (C13) are reasonable hypotheses. These claims provide important context for why the current study was needed, though they don't resolve the localization question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior work established that actinonin is an antibiotic that kills malaria parasites by affecting apicoplast function, with early evidence suggesting PfPDF as the target but later work implicating PfFtsH1. Previous attempts to generate P. falciparum resistance failed, leaving the target uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 and C35-C47 accurately summarize the relevant prior literature with appropriate citations. These background claims establish the scientific context and rationale for the current study. The characterization of prior work appears accurate based on the citations provided, though the actual content of cited papers cannot be verified from this manuscript alone. These claims are appropriately categorized as established knowledge and prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Standard and established methods were used for parasite culture, apicoplast-minus parasite generation, drug sensitivity assays, and CRISPR-Cas9 gene editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 describe methodological approaches with appropriate citations to established protocols. The SYBR Green assay (C73) is a standard method for measuring parasite viability. The CRISPR approach (C74-C76) includes specific details (sgRNA sequence, plasmid constructs) that support reproducibility. These methodological claims are appropriately documented and cite relevant prior work.",
+    "result_type": "MINOR"
+  }
+]

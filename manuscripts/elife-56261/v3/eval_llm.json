@@ -1,0 +1,571 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SNPE is a machine learning method that uses deep neural density estimators trained on model simulations to perform Bayesian inference on mechanistic models without requiring likelihood evaluations. It can retrieve the full space of parameters compatible with data, uses all simulations for training, can handle multimodal posteriors and curved manifolds, and decouples model design from inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C71 collectively describe the SNPE methodology and its theoretical foundation. The method is well-defined with clear inputs (C67), algorithmic steps (C68-C70), and theoretical justification (C69 with citation to Papamakarios and Murray, 2016). The claims are internally consistent and supported by the cited theoretical work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C117",
+      "C226"
+    ],
+    "result": "SNPE enables amortized inference, allowing rapid analysis of new data after initial training. After training once on 1 million simulations (1000 CPU-hours) and network training (150 CPU-hours), full posterior distributions can be inferred for new data in less than 10 ms, enabling applications like high-throughput screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C226 demonstrate amortized inference capability with specific computational benchmarks (C107-C108). The 10ms inference time after initial training is a concrete, verifiable metric. The ion channel application (C111-C117) provides empirical validation across 350 models, supporting the claimed efficiency advantage over traditional approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C82",
+      "C83",
+      "C86",
+      "C87"
+    ],
+    "result": "For linear-nonlinear (LN) encoding models, SNPE accurately estimates the correct posterior distribution, handles high-dimensional observation data, recovers multiple solutions, and substantially outperforms Sequential Monte Carlo ABC methods. SNPE closely agrees with MCMC reference solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C87 are validated against ground truth MCMC posteriors for LN models where likelihoods are tractable (C73). The comparison to SMC-ABC (C83) is quantified in Figure 2d showing relative error metrics. Progressive tightening of posteriors with more data (C86) demonstrates correct uncertainty quantification. The validation strategy is appropriate and results are convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C94",
+      "C95"
+    ],
+    "result": "For V1 receptive field inference with 1681-dimensional spike-triggered averages and 8 Gabor parameters, SNPE using a CNN and mixture density network successfully handles multimodal posteriors arising from symmetries (180\u00b0 rotation). SMC-ABC with the same simulation budget failed on this problem. SNPE was applied to real V1 data identifying a sine-shaped Gabor receptive field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 demonstrate SNPE's capability on high-dimensional problems with multimodal posteriors. The architectural choice (CNN+MDN, C92) is justified by the problem structure. The failure of SMC-ABC (C94) provides a meaningful comparison. Application to real data (C95) with consistency to spike-triggered average provides validation, though without ground truth the result is less definitive than synthetic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C104",
+      "C105",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "For the Omnimodel of ion channels with 8 parameters and 55 features, SNPE achieved >0.98 correlation with original ICG models for >90% of 350 tested models. One failure was attributed to model limitations rather than SNPE failure. This demonstrates SNPE can reveal model inadequacies and enable fast, accurate parameter identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C118 provide quantitative validation across 350 models (C113). The analysis of failure cases (C114-C115) strengthens rather than weakens the result by demonstrating that SNPE correctly identifies when the model itself is inadequate. The >0.98 correlation threshold is a reasonable success criterion. The amortized inference capability is convincingly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C129",
+      "C137",
+      "C138",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "For Hodgkin-Huxley models with 8 parameters, SNPE reveals how different data features (spike count, voltage moments) differentially constrain parameters. More features lead to tighter posteriors and modes closer to ground truth. Applied to 8 Allen Cell Types recordings, SNPE-inferred posteriors closely resembled original data, with some parameters consistently more constrained than others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C146 demonstrate systematic investigation of feature informativeness. The progression from 1 to 7 features (C137-C138) shows expected behavior of Bayesian inference. Application to real Allen Cell Types data (C142-C144) provides validation, though without ground truth the assessment relies on posterior predictive checks. The consistency across recordings (C144) supports the model's adequacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "When comparing SNPE to the genetic algorithm IBEA on Hodgkin-Huxley models, IBEA-favored parameters produced simulations as similar to observed data as SNPE high-probability samples, but IBEA parameters were concentrated in small regions of the posterior and did not identify the full space of data-compatible models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 provide a meaningful comparison showing that while genetic algorithms can find good point estimates, they fail to characterize the full posterior distribution. This validates SNPE's advantage in uncertainty quantification. The comparison is fair as both methods used the same simulation budget.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "SNPE was applied to the stomatogastric ganglion (STG) circuit model with 31 parameters (24 membrane, 7 synaptic) to characterize parameter spaces producing pyloric rhythms. The posterior showed high probability over extended ranges for many conductances. Two widely disparate parameter sets both produced activity similar to experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C165 describe successful application of SNPE to a 31-dimensional problem, which is at the upper limit of SNPE's stated capabilities (C251). The posterior was inferred from 18 salient features of experimental data (C163). The finding that disparate parameters produce similar activity (C165) is validated by posterior predictive checks and is consistent with known STG properties (C148, C160).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "For the STG, SNPE's differentiable posterior enabled identification of high-probability paths connecting disparate solutions where network output was preserved despite substantial parameter variation (sloppiness), and identification of orthogonal directions where small perturbations caused network failure (stiffness).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C176 demonstrate novel analysis enabled by SNPE's differentiable posterior (C172). The path-finding algorithm (C168) and perturbation analysis (C170) are methodologically sound. The results (C169, C171) are validated by simulating network activity along and off the path. This analysis would be difficult or impossible with discrete sampling methods, demonstrating a unique capability of SNPE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "For the STG, pairwise marginal correlations were weak, but conditional correlations (fixing all but two parameters) were substantially stronger, particularly within neurons. Parameters sampled independently from marginals rarely produced pyloric activity, demonstrating fine-tuning requirements. Conditional correlations were preserved across configurations, suggesting modular compensation mechanisms consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C197 reveal important biological insights about compensation mechanisms. The distinction between marginal and conditional correlations (C180-C181, C189) is conceptually important and well-demonstrated. The validation that independent sampling fails (C182) confirms the necessity of joint inference. Consistency with experimental studies (C197) provides external validation, though the comparison is qualitative rather than quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C198"
+    ],
+    "result": "The STG findings would not have been possible with direct grid-search over all 31 parameters, which would require more than 2 billion simulations even with only two values per dimension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C198 provides a clear quantitative argument (2^31 > 2 billion) demonstrating the computational infeasibility of grid search for this problem. This validates the necessity of SNPE's approach, though it's worth noting that SNPE itself used 18.5 million simulations (per Materials and methods), which while large, is still orders of magnitude less than exhaustive grid search.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C212"
+    ],
+    "result": "The authors scaled SNPE from simple inference problems to complex mechanistic models in neuroscience, provided accessible implementation and software tools, and developed validation and visualization techniques. They demonstrated SNPE's power to rapidly identify data-compatible models, investigate which features constrain parameters, reveal model shortcomings, and characterize high-dimensional parameter landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C212 summarize the paper's contributions. The scaling claim (C57) is supported by the progression from LN models to 31-parameter STG. Software availability is stated (code availability section). The validation techniques (C59) are demonstrated throughout. The summary claims (C203-C205) are supported by the diverse applications presented. These are appropriate summary statements of demonstrated capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Mechanistic modeling aims to explain neural phenomena in terms of underlying causes, but determining which parameters agree with complex, stochastic neural data is challenging. As model complexity increases, automated parameter identification is required. Finding all parameter settings consistent with data is necessary, especially given neural data variability and biological robustness/sensitivity properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 establish the motivation and problem context. These are well-supported by citations to relevant literature (C13-C17, C26-C27) and represent consensus views in the field. The claims logically build the case for why the SNPE approach is needed. These are appropriate framing claims for the introduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Statistical inference using likelihoods is the gold standard for parameter identification but is tractable for statistical models and intractable for most mechanistic models. Mechanistic models are often defined through stochastic simulations, and likelihood calculation would require integrating over all simulator paths. Current approaches rely on ad-hoc tuning or parameter search methods that discard most simulations and lack statistical inference advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C44 accurately describe the state of the field with appropriate citations (C30, C38, C42-C43). The distinction between statistical and mechanistic models (C30-C31) is well-established. The limitations of current approaches (C38-C43) are fairly characterized. This provides appropriate context for the contribution of SNPE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Linear-nonlinear (LN) encoding models are a special case of GLMs for which likelihood-based parameter estimation is feasible. An LN model describes how a neuron's firing rate is modulated by a stimulus through a linear filter (receptive field). The spike-triggered average (STA) converges to the receptive field in the limit of infinite data with white noise stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 provide accurate background on LN models with appropriate citations (C73, C78, C80). These are well-established facts in computational neuroscience. The distinction between STA and receptive field for finite data (C81) is an important technical point correctly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "In the presence of finite sampling and stochasticity, multiple different filters could have plausibly given rise to observed data. A properly inferred posterior will reflect this uncertainty and include the true filters as one of many plausible explanations, not necessarily as the mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 correctly describe fundamental properties of Bayesian inference under uncertainty. This is important for interpreting why the posterior mean may not match the ground truth exactly, which is a common source of confusion. The explanation is conceptually sound and important for proper interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The Hodgkin-Huxley model is a highly influential mechanistic model in neuroscience. Several algorithms have been proposed for fitting HH models to data, but with one exception, these do not attempt to estimate the full posterior. Previous approaches concentrated on reproducing specified features like spike counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 accurately characterize prior work on HH models with appropriate citations (C120-C123). The statement about the exception (Daly et al., 2015) shows appropriate acknowledgment of related work. This provides fair context for the contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Genetic algorithms are commonly used to fit parameters of deterministic biophysical models. While they can return multiple data-compatible parameters, they do not perform inference (find the posterior distribution), and their outputs depend strongly on user-defined goodness-of-fit criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 fairly characterize genetic algorithms with appropriate citations (C132). The distinction between finding good parameter sets and performing full inference (C133) is important and correctly stated. This provides appropriate context for comparison with SNPE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C177",
+      "C178"
+    ],
+    "result": "For some biological systems, multiple parameter sets give rise to the same behavior. Neural systems can be robust to specific parameter perturbations yet sensitive to others (sloppiness and stiffness). Stable activity despite variable parameters can emerge from parameters having little influence or from compensatory effects between parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C178 describe well-established phenomena in systems biology and neuroscience with extensive citations (C154-C155, C177-C178). These provide important biological context for interpreting the STG results. The concepts of sloppiness, stiffness, and compensation are accurately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C211",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "SNPE builds on recent advances in density-estimation approaches to likelihood-free inference. The idea of learning inference networks traces back to ABC regression-adjustment methods. Papamakarios and Murray 2016 first proposed using deep neural density estimators. Compared to rejection-based ABC, SNPE does not require defining a distance function and scales to high-dimensional observations by learning informative features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C219 provide accurate historical context and comparison to related methods with extensive appropriate citations. The characterization of SNPE's advantages (C215-C216) is fair and supported by the empirical results in the paper. The acknowledgment of alternative approaches (C218-C219) shows appropriate scholarly awareness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225"
+    ],
+    "result": "A fundamental difference from grid search is that SNPE performs Bayesian inference for stochastic models, whereas grid search identifies parameters whose deterministic outputs are heuristically close to data. SNPE uses all simulations during training, learns informative features automatically, and performs considerably better than rejection-ABC, especially for high-dimensional observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C220-C225 provide fair comparisons to alternative approaches. The distinction regarding stochastic vs deterministic models (C220-C221) is important, though the caveat about deterministic models (C222) shows appropriate caution. The performance comparison to rejection-ABC (C225) is supported by Figure 2 results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C226",
+      "C227",
+      "C228"
+    ],
+    "result": "SNPE can amortize inference so one can quickly perform inference on new data without new simulations. However, SNPE can require generation of large simulation sets, which is a brute-force step. The main strength over conventional brute-force approaches is processing simulations via deep neural density estimators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C226-C228 provide a balanced assessment of SNPE's computational characteristics. The acknowledgment that simulation generation is still required (C227) shows appropriate honesty about limitations. The emphasis on efficient processing of simulations (C228) correctly identifies the key innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234"
+    ],
+    "result": "SNPE is finding first applications in neuroscience (e.g., Oesterle et al. 2020 for retinal neuron models). Concurrently, Bittner et al. 2019 developed an alternative approach for mechanistic models. Both approaches share the goal of using deep probabilistic inference tools to build more interpretable models of neural data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C229-C234 appropriately acknowledge concurrent and subsequent work with proper citations. The characterization of the relationship to Bittner et al. 2019 (C233) is fair and scholarly. These claims demonstrate appropriate awareness of the broader research landscape.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C235",
+      "C236"
+    ],
+    "result": "A complementary approach is purely phenomenological models designed for favorable statistical properties. These can be efficiently fit to neural data but typically have many parameters that rarely correspond to physically measurable or mechanistically interpretable quantities, making it challenging to derive mechanistic insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C235-C236 fairly characterize phenomenological models with appropriate citations. The acknowledgment of their utility while noting limitations (C236) provides balanced context for understanding the complementary role of mechanistic modeling. This is appropriate framing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C237",
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246"
+    ],
+    "result": "When fitting mechanistic models, it is common to target summary features rather than full data. Feature choice might be guided by known relationships, model limitations, or data availability. SNPE can use summary features but also leverages neural networks' ability to automatically learn informative features from high-dimensional data. Care is needed when interpreting models fit to summary features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C237-C246 provide appropriate discussion of summary feature use with relevant citations. The acknowledgment that feature choice matters (C246) shows appropriate caution. The claim that SNPE can learn features automatically (C244) is supported by the CNN application in the V1 receptive field example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252"
+    ],
+    "result": "SNPE's key advantage is general applicability to any simulator generating stochastic outputs. It can be applied in a black-box manner without requiring model equations, likelihoods, or gradients. Current implementations scale well to ~1000s of observation dimensions but scaling to >30 parameter dimensions is challenging due to the exponential difficulty of full posterior estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C247-C252 provide honest assessment of SNPE's capabilities and limitations. The scalability limits (C250-C251) are important caveats supported by the empirical applications (largest is 31 parameters for STG). The acknowledgment that exponential scaling is inherent to full inference (C252) shows appropriate understanding of fundamental limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C253",
+      "C254",
+      "C255"
+    ],
+    "result": "While full automation is a long-term goal, current SNPE implementation requires user choices about network architecture, optimization settings, and simulation numbers. For small-scale problems, SNPE is robust to these settings, but challenging high-dimensional applications might require substantial user interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C253-C255 provide honest assessment of current implementation limitations. The distinction between small-scale and challenging applications (C254-C255) is appropriate and helps set realistic expectations for users. This is responsible reporting of practical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C256",
+      "C257"
+    ],
+    "result": "SNPE's power crucially rests on deep neural networks' ability to perform density estimation. While deep nets have had empirical success, we have incomplete understanding of their limitations, particularly where the mapping between data and parameters might not be smooth (e.g., near phase transitions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C256-C257 appropriately acknowledge fundamental uncertainties about deep learning. The caveat about non-smooth mappings (C257) identifies a potential failure mode. This is responsible acknowledgment of limitations in current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C258",
+      "C259",
+      "C260",
+      "C261",
+      "C262"
+    ],
+    "result": "When applying SNPE, validation is crucial to assess inference accuracy and identify model limitations. Posterior predictive checks can detect failures where posterior samples don't reproduce data. However, rigorously ruling out additional parameter settings is challenging for any Bayesian inference approach. Good practice includes using multiple initializations and/or large numbers of initial simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C258-C262 provide important guidance on validation with appropriate citations (C259). The acknowledgment of inherent limitations in validation (C261) shows appropriate understanding of fundamental challenges. The practical recommendations (C262) are sensible. The paper demonstrates these validation approaches throughout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C10",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C263",
+      "C264"
+    ],
+    "result": "SNPE will help close the gap between data-driven and theory-driven models of neural dynamics. A generally applicable tool to constrain mechanistic models by data would expedite progress in neuroscience. The question of whether one can perform statistical inference should not compromise model design. In its current form, SNPE will be a powerful tool for evaluating mechanistic hypotheses and designing better models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C264 make forward-looking statements about impact and future potential. While the demonstrated capabilities support these aspirations, claims about future impact (C10, C199, C234, C264) are inherently speculative. The paper demonstrates SNPE's current capabilities convincingly, but whether it will achieve the stated broader impacts remains to be seen through future adoption and application.",
+    "result_type": "MINOR"
+  }
+]

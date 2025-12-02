@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A conserved motif in Mcm4 (amino acids 175-185, termed DoHM) is essential for stable double-hexamer formation. Mutations disrupting this motif permit loading of two Mcm2-7 complexes but result in single hexamers rather than double hexamers, and these mutations are lethal in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (gel filtration in Figures 2-4, loading assays, complementation tests) consistently demonstrate that mutations in the conserved Mcm4 motif specifically disrupt double-hexamer formation while allowing helicase loading. The correlation between double-hexamer formation ability and viability (C63) provides strong functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Single-molecule FRET analysis reveals that DoHM mutant Mcm2-7 forms initial hexamer-hexamer interactions (pseudo-DH state with EFRET=0.468) but these complexes are unstable and dissociate within ~20 seconds. Wild-type complexes form stable double hexamers (EFRET=0.606) that persist throughout observation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-molecule FRET data in Figures 5-6 provide direct kinetic evidence for transient pseudo-double hexamer formation by the DoHM mutant. The kinetic modeling with rate constants (k=0.052\u00b10.007 s\u207b\u00b9 for pseudo-DH dissociation) and distinct EFRET values quantitatively support the instability claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C79",
+      "C87",
+      "C91",
+      "C92",
+      "C99",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Double-hexamer formation occurs rapidly (within 30 seconds) after second Mcm2-7 arrival or not at all, suggesting a limited time window. Double-hexamer interactions are detected (~7s) before ring closure (~57s), indicating coordination between second hexamer loading and double-hexamer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic analysis from single-molecule data (Figure 6) demonstrates that all double-hexamer formation occurs within 30s with rate constants of 0.13-0.15 s\u207b\u00b9. The timing comparison with previously published ring closure kinetics (C115, C122) provides strong evidence for facilitated, coordinated assembly rather than spontaneous association of fully loaded hexamers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C76",
+      "C77",
+      "C105",
+      "C108",
+      "C112"
+    ],
+    "result": "Double-hexamer formation is required for extensive origin DNA unwinding. The DoHM mutant fails to support DNA replication and shows no extensive DNA unwinding on a 3.8 kb template (Figure 7D), despite being able to load onto DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DNA unwinding assays (Figure 7D) and replication assays (Figure 7A) clearly show that the DoHM mutant cannot perform extensive unwinding or support DNA synthesis. Since the mutant specifically disrupts stable double-hexamer formation while allowing loading, this directly demonstrates the requirement for double-hexamer interactions in extensive unwinding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C69",
+      "C70",
+      "C71",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Double-hexamer formation is not required for CMG assembly, recruitment of helicase-activation proteins (Cdc45, GINS, Mcm10), or initial DNA melting. The DoHM mutant recruits these proteins proportionally to its loading efficiency and produces initial topological changes equivalent to wild-type on a 600 bp template.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 7B-C demonstrates that Cdc45, GINS, and Mcm10 associate with the DoHM mutant at levels proportional to loading. Figure 7E shows equivalent initial topological changes for wild-type and DoHM mutant. These data clearly separate early events (CMG formation, initial melting) from later events (extensive unwinding) in their requirement for stable double-hexamer formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C78"
+    ],
+    "result": "The transition between initial DNA melting and extensive unwinding is the first replication initiation event requiring double-hexamer formation. DNA unwinding during initiation occurs in at least three stages: initial melting upon CMG formation, further unwinding requiring double-hexamer interactions and Mcm10, and extensive unwinding by single CMG complexes at forks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This model is well-supported by the differential behavior of the DoHM mutant: it can perform initial melting (Figure 7E) but not extensive unwinding (Figure 7D). Combined with previous studies cited, this identifies the specific step requiring double-hexamer interactions. The three-stage model synthesizes current findings with prior work on CMG activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Initial DNA unwinding by the DoHM mutant occurs through manipulation of DNA within a single CMG complex rather than coordinated action of two opposing helicases, as the pseudo-double hexamers dissociate (~20s lifetime) before helicase-activation proteins are added (20 min DDK treatment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The timing argument is logically sound: pseudo-double hexamers dissociate in ~20s (Figure 6B) while DDK phosphorylation occurs for 20 min before adding activation proteins. The lack of subsequent hexamer-hexamer interactions after separation (Figure 6D) further supports that initial unwinding arises from independent helicases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Single Mcm2-7 hexamers are less stably associated with DNA than double hexamers. Two wild-type Mcm2-7 in double-hexamer form remain on DNA for >600s, while two single hexamers (wild-type or DoHM mutant) remain for ~140-288s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rastergram data in Figure 6C-D clearly show differential dwell times between double hexamers (yellow lines, >600s) and single hexamer pairs (blue lines, ~140-300s). The quantified average durations (C103) support this observation. This suggests double-hexamer formation stabilizes DNA association.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Double-hexamer formation is proposed to require helicase-loading proteins, with the limited dwell time of Cdc6 (~23s after second Mcm2-7 arrival) potentially defining the window of opportunity for double-hexamer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the timing correlation between Cdc6 release (~23s) and the double-hexamer formation window (~30s) is suggestive, this remains a hypothesis (C118-C119 are explicitly speculative). The logical argument (C120) is sound, but direct experimental evidence that Cdc6 or other loading factors facilitate double-hexamer formation is not provided. This requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "N-terminal deletions of Mcm2 (\u03942-177) and Mcm4 (\u03942-181) are defective in helicase loading and lethal in vivo, while Mcm4 \u03942-174 and Mcm6 \u03942-105 deletions show normal or near-normal loading and support viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 1B shows clear loading defects for Mcm2\u03942-177 and Mcm4\u03942-181 compared to wild-type, while Mcm4\u03942-174 and Mcm6\u03942-105 load normally. Figure 1C demonstrates the corresponding viability phenotypes. These data establish that specific N-terminal regions of Mcm2 and Mcm4 are important for loading and cell viability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Structural analysis reveals that the DoHM forms a loop interacting with Mcm5 from the opposite hexamer and with an Mcm7 helix from the same hexamer. Two sets of Mcm4-Mcm5-Mcm7 interactions exist on opposite sides of the double-hexamer interface, such that disrupting the DoHM could affect 6 of 12 subunits at the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural interpretation is based on published cryo-EM structures (cited as Abid Ali et al., 2017; Li et al., 2015; Noguchi et al., 2017) and is illustrated in Figure 4\u2014figure supplement 2 and Video 1. The structural analysis provides a molecular explanation for why the small DoHM motif has such a large effect on double-hexamer stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C42"
+    ],
+    "result": "Background knowledge claims about Mcm2-7 structure, helicase loading mechanisms, double-hexamer formation, and replication initiation are established in the field and supported by multiple prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the DNA replication field, each supported by appropriate citations to prior work. They provide necessary context for interpreting the novel findings but are not new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Wild-type Mcm2-7 and the Mcm2\u03942-177, Mcm4\u03942-174, and Mcm6\u03942-105 deletion mutants form predominantly double hexamers after loading, as assessed by gel filtration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 2B clearly shows that these Mcm2-7 variants elute in the double-hexamer fractions (22-26) after salt-resistant loading. This establishes that these particular deletions do not disrupt double-hexamer formation, distinguishing them from the DoHM mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C123"
+    ],
+    "result": "Under single-molecule reaction conditions, one ORC molecule is sufficient for two Mcm2-7 association events, and wild-type Mcm2-7 rapidly forms stable double hexamers upon recruitment of the second Mcm2-7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by prior single-molecule work (Ticau et al., 2015) and confirmed by the current single-molecule FRET data showing rapid, stable double-hexamer formation. This provides context for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

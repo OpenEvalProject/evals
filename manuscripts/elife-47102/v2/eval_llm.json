@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Vangl2 mutant embryos exhibit increased oblique and perpendicular divisions at the expense of planar divisions during early epidermal development (E13.5-E14.5), resulting in hyperthickened epidermis. This phenotype is temporally restricted to early stratification stages and is not observed at later embryonic stages (E15.5-E16.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C24-C30 provide converging evidence from both live imaging and fixed tissue analysis showing altered division orientations in Vangl2 mutants. The data include quantitative measurements of division angles, temporal analysis across developmental stages, and validation that live imaging reflects in vivo behavior (C27). Statistical significance is reported (p<0.0001) and the phenotype is consistently observed across multiple embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Division orientation strongly predicts daughter cell fate during early epidermal stratification. Planar divisions (\u226420\u00b0) generate symmetric fates in 94% of wildtype cells, while perpendicular divisions (70-90\u00b0) produce asymmetric fates in 89% of cells. In Vangl2 mutants, this relationship is shifted toward asymmetric outcomes, with only 78% of planar divisions yielding symmetric fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 and C82-C85 are supported by direct live imaging tracking of cell fates following division. The data establish a quantitative relationship between division angle and fate, with clear thresholds (45\u00b0 cutoff mentioned in C83-C84). The shift in Vangl2 mutants provides additional validation. Sample sizes are adequate (n=284 for wildtype, n=238 for mutant) and the methodology directly addresses a key question about the relationship between division orientation and cell fate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Vangl2 mutant embryos display significantly increased epidermal thickness compared to wildtype, detectable as early as E15.5 and persisting through E18.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by quantitative measurements of epidermal thickness shown in Figure 2E-H. Statistical significance is reported (p=0.017 at E18.5) with appropriate sample sizes (n=10 images from three embryos per genotype). The temporal progression of the phenotype is documented across multiple developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The increased perpendicular divisions and altered cell geometry in Vangl2 mutants are not due to direct loss of PCP function in the epidermis, but rather are secondary consequences of failed neural tube closure. Conditional epidermal-specific deletion of Vangl1/Vangl2 (which allows neural tube closure) does not recapitulate the division orientation or cell geometry phenotypes, despite severe PCP defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54-C60 provide strong genetic evidence through conditional knockout experiments. The Vangl1,2 dcKO embryos complete neural tube closure but lack epidermal PCP function, yet show normal cell geometry (C56-C57) and division orientations (C58). This is further supported by Frizzled-6 knockout data (C60) showing similar results. The logic is sound: if the phenotype were due to direct PCP function in epidermis, the conditional knockout should recapitulate it. Statistical comparisons show no significant differences in the conditional knockouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Basal cells in Vangl2 mutants exhibit altered 3D geometry characterized by reduced cross-sectional area (planar axis), increased height (apical-basal axis), and increased cell density, without changes in cell neighbor number or proliferation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by quantitative morphometric analysis shown in Figure 4. Statistical significance is reported for area (p=0.0057), height (p<0.0001), and density (p=0.0001) with adequate sample sizes (n=300 cells for height, n=10 fields of view for area/density). The lack of change in proliferation (C49, p=0.9987) and neighbor number (C47) helps rule out alternative explanations. The measurements are internally consistent and support the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C87",
+      "C88"
+    ],
+    "result": "Cell division orientation correlates with 3D cell geometry: cells with higher height:width ratios divide perpendicularly (average ratio=1.275), while cells with lower ratios divide planarly (average ratio=0.8307). This relationship is maintained in both wildtype and Vangl2 mutant embryos, demonstrating that cells can divide according to their geometrical state independent of PCP function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C87-C88 are supported by live imaging data correlating interphase cell geometry with subsequent division orientation. Statistical significance is reported (p<0.0001 for one-way ANOVA in Figure 4I-J) with adequate sample sizes (n=72 for wildtype, n=66 for mutant). The observation that this relationship persists in Vangl2 mutants (C53) strengthens the conclusion that geometry, not PCP, drives division orientation. However, the correlation is described as 'modest' (R\u00b2=0.38 for wildtype, 0.33 for mutant in Figure 4\u2014figure supplement 2), indicating other factors also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Epidermal-specific rescue of Vangl2 function restores PCP protein asymmetry and hair follicle orientation but does not rescue neural tube closure, cell geometry defects, or division orientation phenotypes. This demonstrates that the division orientation defects arise from failed neural tube closure rather than direct PCP function in epidermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 provide genetic rescue evidence supporting the indirect mechanism. The K14-Vangl2-GFP transgene rescues PCP-dependent phenotypes (C61-C62) but not the cell geometry (C63) or division orientation (C64) defects. Statistical significance is reported (p<0.0001 for multiple comparisons in Figure 6). This complementary approach to the conditional knockout (C54-C59) strengthens the conclusion that neural tube closure, not epidermal PCP, drives the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "At E13.5, basal cell geometry and division orientation vary spatially along the mediolateral axis in wildtype embryos. Midline cells are flattened (height=4.6\u03bcm) with large surface areas (363.5\u03bcm\u00b2) and divide almost exclusively planarly (94%). Lateral cells are taller (6.9\u03bcm), smaller (157.9\u03bcm\u00b2), and more crowded, exhibiting more oblique/perpendicular divisions. These spatial differences are absent in Vangl2 mutants that fail to close over the midline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C76 are supported by comprehensive spatial analysis at E13.5 shown in Figure 7. Statistical significance is reported for all geometric comparisons (p<0.0001 for height, area, and density differences) and division orientation differences (p<0.001 between regions). The correlation between cell geometry and division orientation across spatial regions provides strong evidence for the geometry-based mechanism. The absence of spatial differences in Vangl2 mutants (C75) further supports the model that neural tube closure creates these geometric gradients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C89",
+      "C90"
+    ],
+    "result": "Mechanical stretching of skin explants increases cell elongation, reduces cell height, and shifts division orientations toward planar. Stretched Vangl2 mutant explants show increased planar divisions (62.5% vs 27.1% unstretched), demonstrating that basal cells can dynamically adjust division orientation in response to mechanical manipulation of tissue architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 and C89-C90 are supported by stretching experiments on both mutant (E14.5) and wildtype (E15.5) explants shown in Figure 8. Statistical significance is reported (p<0.0001 for elongation and division orientation changes). The ability to rescue the Vangl2 mutant phenotype through mechanical manipulation provides strong causal evidence that tissue mechanics, not molecular PCP signaling, drives division orientation. The experiments are well-controlled with unstretched controls and consistent results across genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Basal cell delamination was not observed during time-lapse imaging experiments. Early epidermal stratification results from oblique and perpendicular divisions that generate suprabasal daughters, contrasting with prior reports suggesting delamination as the primary mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 report negative observations from live imaging. While the authors state they did not observe delamination, they acknowledge not specifically seeking to quantify it (C37). The claim contradicts prior literature (cited in C38), and the authors discuss potential methodological differences in the Discussion. The absence of evidence is not strong evidence of absence, especially when not systematically quantified. The positive claim about divisions generating suprabasal daughters (C38) is better supported by the fate-tracking data (C31-C36), but the delamination claim requires more systematic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "At E14.5, LGN localization does not correlate with planar division orientation. LGN exhibits lateral localization in only 14% of planar divisions and is undetectable in 61% of planar divisions, suggesting LGN-mediated spindle orientation is not the primary mechanism promoting planar divisions at this stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by immunostaining data shown in Figure 3A-B. The quantification is based on adequate sample size (n=36 metaphase-telophase cells for planar divisions). The observation is consistent with prior literature showing LGN is not required during early stratification (C20). However, the claim is primarily negative (absence of correlation) and the sample size for planar divisions specifically is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose a model where early epidermal stratification is regulated by cell geometry and tissue mechanics rather than cortical polarity cues. Cell crowding promotes stratification while epithelial stretch delays it, providing flexibility for basal cells to balance division orientations according to tissue needs during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C91-C96 represent the authors' interpretive model synthesizing the experimental findings. The model is well-supported by the collective data: genetic evidence ruling out direct PCP function (C4, C59), correlation between geometry and division orientation (C51-C53, C71-C76), and mechanical manipulation experiments (C77-C81). However, some aspects are speculative (C92, C93, C96 are labeled as SPECULATION/INFERENCE in evidence_type). The model is internally consistent and parsimonious, but mechanistic details of how geometry information is transduced to the spindle remain unknown (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Spindle orientation is unstable during metaphase, with chromatids continuing to rotate after metaphase plate alignment. Division planes were therefore measured only after chromatid separation at anaphase/telophase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 describe a methodological observation and decision. The observation of spindle instability (C100) is based on live imaging data. The methodological choice (C101) is reasonable given the observation, though it represents a deviation from some prior studies that measure metaphase spindle angles. This is a minor methodological point but important for interpreting the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The proportion of planar and oblique divisions at E16.5 is higher in whole mount analysis compared to prior reports using sagittal sections, attributed to methodological differences in capturing divisions oriented out of the sectioning plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by comparison with multiple prior studies and a reasonable methodological explanation. The whole mount approach would indeed capture divisions in all orientations, while sectioning could miss planar/oblique divisions not aligned with the section plane. This represents a technical improvement but also complicates direct comparison with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C97",
+      "C98",
+      "C99",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background and context claims establishing prior knowledge about epidermal development, oriented cell division mechanisms, PCP function, and spindle orientation machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C23, C97-C99, C103-C107 represent established knowledge from prior literature, supported by appropriate citations. These provide necessary context for the study but are not novel findings. C107 acknowledges a knowledge gap that the current study does not fully address (mechanisms linking geometry to spindle orientation in mammalian epidermis).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "All animal procedures were approved by Princeton University's IACUC and conducted in accordance with ethical guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is a standard ethical compliance statement. While important for research integrity, it is not a scientific result.",
+    "result_type": "MINOR"
+  }
+]

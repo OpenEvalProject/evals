@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript provides background information on ASICs, describing them as sodium-selective trimeric ion channels activated by extracellular acidification, with four genes (five in humans) giving rise to six proton-sensitive isoforms involved in various physiological processes including ischemic stroke, visceral pain, epilepsy, substance abuse, and fear conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11 establish well-documented background knowledge about ASICs supported by appropriate citations to review articles and prior studies. These claims accurately represent the established scientific understanding of ASIC structure, function, and physiological roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript describes the structural basis for ASIC gating, noting that structures for resting, open, and desensitized states have been solved for chicken ASIC1, revealing a trimeric architecture with a large extracellular domain. The \u03b211-12 linker undergoes substantial conformational changes between states, with Leu414 and Asn415 swapping orientations, leading to the hypothesis that this linker acts as a 'molecular clutch' coupling conformational changes in the acidic pocket to the transmembrane domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C21 accurately summarize prior structural work on ASICs with appropriate citations (Baconguis et al., Gonzales et al., Jasti et al., Yoder et al.). The structural descriptions are consistent with published crystal structures, and the 'molecular clutch' hypothesis (C21) is appropriately attributed to prior work while being labeled as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C24",
+      "C27",
+      "C28"
+    ],
+    "result": "The L414A mutation dramatically accelerates both desensitization (from 181\u00b16 ms to 41\u00b11 ms) and recovery (from 840\u00b190 ms to 4.0\u00b10.5 ms) compared to wild-type cASIC1, with minimal effect on pH50 of activation (6.57\u00b10.03 for WT vs 6.43\u00b10.03 for L414A) but incomplete desensitization at pH values less than 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C24, C27-C28 are supported by experimental data shown in Figure 1 with appropriate statistical analysis (n=5-6, p-values reported). The measurements were obtained using fast perfusion electrophysiology with proper controls, and the small pH shift is appropriately noted as statistically significant but functionally modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Non-stationary fluctuation analysis revealed that wild-type cASIC1 has a peak open probability of 0.86\u00b10.02, representing the first estimate of open probability for recombinant ASICs. The L414A mutation significantly reduced peak Popen to 0.71\u00b10.02, consistent with ASICs desensitizing primarily from closed states rather than open states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by NSFA data in Figure 2 with appropriate statistical analysis (n=5, p<1e-5). The methodology is sound, requiring stable responses over 50-100 sweeps with <10% variation. The inference that reduced Popen indicates desensitization from closed states (C32) is logical and well-reasoned, though additional single-channel experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Molecular dynamics simulations show that the chosen protonation scheme stabilizes the desensitized state better than the deprotonated state. The L414A mutation produces a slight increase in RMSD of the \u03b211-12 linker region in protonated simulations, with more pronounced destabilization upon deprotonation, where six of nine chains showed increased RMSD and increased flexibility of the middle part of the linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by MD simulation data shown in Figures 3 and 3\u2014figure supplement 1. The simulations used appropriate methodology (GROMACS, CHARMM36 force field, 200-400 ns trajectories with three repeats). The choice of protonation scheme is validated by comparing stability metrics, though the specific residues protonated could be debated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ASIC recovery from desensitization is pH-dependent, with slower recovery at pH 7.8 and 7.6 compared to pH 8, but dramatically accelerated recovery at alkaline pH (\u03c4=30\u00b12 ms at pH 9, 7.5\u00b10.4 ms at pH 10). The L414A mutation retained very fast recovery across pH 8, 7.8, and 7.6, with only slight slowing at pH 7.6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by experimental data in Figure 3\u2014figure supplements 2-3 with appropriate statistical analysis. The pH-dependence of recovery is well-documented with proper controls, and the blunted pH-dependence in L414A supports the interpretation that the mutation's effect is direct rather than due to pH sensitivity shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Molecular dynamics simulations identified a hydrophobic patch (L281, I306, M364, V368) that interacts with L414 in the desensitized state. Alanine mutations of these residues all significantly accelerated recovery from desensitization (L281A: 25\u00b11.1 ms; I306A: 135\u00b17 ms; M364A: 140\u00b13 ms; V368A: 520\u00b150 ms), with L281A also markedly accelerating desensitization. The double I306A/M364A mutation did not show additive effects on recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 are supported by MD simulation data (Figure 4\u2014figure supplement 1) and experimental data (Figure 4) with appropriate statistical analysis (n=4-5, p-values reported). The identification of the hydrophobic patch and its functional validation through mutagenesis provides strong converging evidence. The lack of additivity in the double mutant (C50) is interesting but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The authors conclude that no simple rule of size or polarity is sufficient to explain or predict the effects of mutations at position 414, based on the surprising results that large aromatic residues (Tyr, Phe) dramatically accelerate kinetics while the conservative Ile substitution has notable effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is a reasonable inference from the experimental data on various mutations at position 414 (Figure 5). The data clearly show that neither size nor polarity alone predicts the kinetic effects, as large residues can produce either very fast or very slow kinetics. This conclusion appropriately acknowledges the complexity of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C72",
+      "C82"
+    ],
+    "result": "Molecular dynamics simulations of deprotonated systems show that in wild-type, L414 and N415 came close to flipping in one chain following an outward path but reverted before completing the flip. In L414A mutant, five of nine chains underwent at least a partial flip, with one chain showing a full flip following the outward path for both residues. The data support the original suggestion of an outward transit path for L414 and N415.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C60, C72, C82 are based on MD simulation data (Figure 6, Video 1) showing linker flipping events. While the simulations provide valuable mechanistic insights, the authors appropriately acknowledge that more repeats and more full flips are needed for conclusive data (C60). The observation of only one complete flip out of nine chains in the L414A mutant limits the strength of the conclusion about the transit path, though the available data do favor the outward route.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "UV application to L414Bpa during the resting state produced strong and immediate slowing of desensitization and robustly reduced the extent of desensitization (n=7, p<1e-5), with no UV modulation observed in controls (wild-type or L414TAG without MeO-Bpa). This indicates that trapping the 414 position in the resting state substantially reduces desensitization capacity but does not preclude activation, though current rise times increased dramatically post-UV (12\u00b11 ms to 830\u00b1400 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by UV-trapping experimental data in Figure 7 with appropriate controls and statistical analysis (n=3-7, p-values reported). The use of non-canonical amino acid incorporation with state-dependent UV crosslinking is technically sophisticated and well-controlled. The dramatic effect on desensitization with preserved activation provides strong evidence for the necessity of linker movement in desensitization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "UV application to desensitized L414Bpa channels inhibited peak responses by approximately 50% (47\u00b14%, n=6), with no inhibition in wild-type or L414TAG without MeO-Bpa controls. Combined with resting state trapping results, this provides clear evidence that the Leu414 position undergoes sizeable motion between resting/open and desensitized states, and that the \u03b211-12 linker is the sole mechanism for channel desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by UV-trapping experimental data in Figure 8 with appropriate controls (n=3-6). The bidirectional trapping (both resting and desensitized states) provides strong evidence for conformational motion at position 414 (C69). The conclusion that the \u03b211-12 linker is the sole mechanism for desensitization (C70) is strongly supported by the substantial attenuation of desensitization upon resting state trapping, though 'sole mechanism' is a strong claim that could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C71"
+    ],
+    "result": "The \u03b211-12 linker isomerization is an integral component and necessity for the desensitization process in ASICs. Both desensitization and recovery can be accelerated by orders of magnitude by mutating residues in this linker or surrounding region, and desensitization can be suppressed by trapping the linker in the resting state. The \u03b211-12 linker and surrounding areas act as a switch or clutch to control the desensitization process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C71 represent the main conclusions of the manuscript, supported by converging evidence from mutagenesis (Figures 1, 4, 5), NSFA (Figure 2), MD simulations (Figures 3, 6), and UV-trapping experiments (Figures 7, 8). The combination of accelerated kinetics in mutants, reduced open probability, simulation data showing linker flexibility, and suppression of desensitization by state-dependent trapping provides strong, multi-faceted support for the central hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors reconcile discrepancies with previous reports by noting that cASIC1 does not undergo strong tachyphylaxis in outside-out patches, and that the pH-dependence of sustained current in L414A is comparable to previously reported activation curves. They suggest past experiments likely reported pH sensitivity of sustained current rather than peak current due to rapid desensitization. The authors also observe that 'fast' mutants have faster activation times and shallower pH activation curves, suggesting local rearrangements of the \u03b211-12 loop during activation that comprise a smaller portion of the energy barrier than previously proposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 provide important context for reconciling the current findings with previous reports (Roy et al., Wu et al.). The explanation that sustained current pH-dependence was previously misinterpreted as activation pH-dependence (C74-C75) is reasonable given the rapid desensitization observed with fast perfusion. The observation of faster activation times (C76) and shallower activation curves (C77) is supported by data, and the inference about local rearrangements (C78) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors critique the 'valve' model proposed by Wu et al. (2019), arguing that if size of the 277 side chain were the prime determinant, Gln277 should behave identically to Glu277, but acidic side chains show slower desensitization than amide counterparts. They note that examining calculated surfaces shows a clear transit path along the outward trajectory but not the inward route, and that Gln277 side chain conformation shows flexibility in simulations, occasionally moving outside hydrogen bond distance with Leu414.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C79-C81, C83-C84 present a critical evaluation of an alternative model. The logical argument about size vs. charge effects (C79-C80) is sound and supported by cited data. The structural analysis favoring the outward path (C81) is supported by surface calculations, and the MD simulation data on Gln277 flexibility (C83-C84, Figure 9) challenges the 'valve' model's assumption of stable interactions. This represents appropriate scientific discourse.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose that ASICs more likely recover from low pH desensitization by passing through closed states rather than open states, based on the absence of slowed deactivation or resurgent current in L414A. They observe that faster recoveries are best fit by rapid time constants and steeper slopes that are correlated, which cannot be explained by simple kinetic models. They conclude that ASIC recovery involves multiple steps and some degree of cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 present mechanistic insights into the recovery pathway. The inference that recovery proceeds through closed states (C86) is reasonable based on the absence of expected phenomena if recovery went through open states (C85), though single-channel data would strengthen this conclusion. The observation about correlated time constants and slopes (C87) is supported by data in Figure 5\u2014figure supplement 1C, and the comparison with kinetic modeling (C88) appropriately shows that simple models are insufficient. The conclusion about multiple steps and cooperativity (C89-C90) is well-reasoned.",
+    "result_type": "MAJOR"
+  }
+]

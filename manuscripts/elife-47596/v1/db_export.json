@@ -1,0 +1,1368 @@
+{
+  "submission": {
+    "id": "9cd37a04-efc5-436e-803d-e19d03a5be8f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:54:31.176044Z",
+    "updated_at": "2025-12-02T11:54:31.176044Z"
+  },
+  "content": [
+    {
+      "id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "submission_id": "9cd37a04-efc5-436e-803d-e19d03a5be8f",
+      "content_type": "manuscript",
+      "content_text": "# Population response magnitude variation in inferotemporal cortex predicts image memorability\n\n## Authors\n\n- Andrew Jaegle<sup>1</sup> ([ORCID: 0000-0003-1698-9901](https://orcid.org/0000-0003-1698-9901))\n- Vahid Mehrpour<sup>1</sup> ([ORCID: 0000-0003-1682-5931](https://orcid.org/0000-0003-1682-5931))\n- Yalda Mohsenzadeh<sup>2</sup> ([ORCID: 0000-0001-8525-957X](https://orcid.org/0000-0001-8525-957X))\n- Travis Meyer<sup>1</sup> ([ORCID: 0000-0003-4672-5368](https://orcid.org/0000-0003-4672-5368))\n- Aude Oliva<sup>2</sup> ([ORCID: 0000-0002-6920-914X](https://orcid.org/0000-0002-6920-914X))\n- Nicole Rust<sup>1</sup> ([ORCID: 0000-0002-7820-6696](https://orcid.org/0000-0002-7820-6696)) \u2020\n\n### Affiliations\n\n1. Department of Psychology University of Pennsylvania Philadelphia United States\n2. Computer Science and Artificial Intelligence Laboratory Massachusetts Institute of Technology Cambridge United States\n3. Department of Computer Science Western University London Canada\n4. Brain and Mind Institute, Western University London Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost accounts of image and object encoding in inferotemporal cortex (IT) focus on the distinct patterns of spikes that different images evoke across the IT population. By analyzing data collected from IT as monkeys performed a visual memory task, we demonstrate that variation in a complementary coding scheme, the magnitude of the population response, can largely account for how well images will be remembered. To investigate the origin of IT image memorability modulation, we probed convolutional neural network models trained to categorize objects. We found that, like the brain, different natural images evoked different magnitude responses from these networks, and in higher layers, larger magnitude responses were correlated with the images that humans and monkeys find most memorable. Together, these results suggest that variation in IT population response magnitude is a natural consequence of the optimizations required for visual processing, and that this variation has consequences for visual memory.\n\n## Introduction\n\nAt higher stages of visual processing such as inferotemporal cortex (IT), representations of image and object identity are thought to be encoded as distinct patterns of spikes across the IT population, consistent with neurons that are individually \u2018tuned\u2019 for distinct image and object properties. In a population representational space, these distinct spike patterns translate into population response vectors that point in different directions, and information about object identity is formatted such that it can be accessed from IT neural responses via a weighted linear decoder (Figure 1a; reviewed by DiCarlo et al., 2012). The magnitude of the IT population response is often assumed to be unimportant (but see Chang and Tsao, 2017), and it is typically disregarded in population-based approaches, including population decoding and representational similarity analyses (Kriegeskorte et al., 2008). Building on that understanding, investigations of cognitive processes, such as memory, appreciate the importance of equating image sets for the robustness of their underlying visual representations in an attempt to isolate the cognitive process under investigation from variation due to changes in the robustness of the sensory input. This process amounts to matching decoding performance or representational similarity between sets of images, in order to control for low-level factors (e.g. contrast, luminance and spatial frequency content) and visual discriminability (Willenbockel et al., 2010). Here we demonstrate that variation in IT population response magnitude has important behavioral consequences for one higher cognitive process: how well images will be remembered. Our results suggest that the lack of appreciation for this type of variation in IT population response should be reconsidered.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47596/elife-47596-fig1-v1.jpg)\n\n**Figure 1.:** In geometric depictions of how IT represents image identity, the population response to an image is depicted as a vector in an N-dimensional space, where N indicates the number of neurons in the population, and identity is encoded by the direction of the population vector. Here we test the hypothesis that image memorability is encoded by the magnitude (or equivalently length) of the IT population vector, where images that produce larger population responses are more memorable.\n\n\u2018Image memorability\u2019 refers to the simple notion that some images are easy to remember while others are easy to forget (Isola et al., 2011). While a large component of image memorability variation is consistent across different individuals (Isola et al., 2011; Khosla et al., 2015), a full account of the sources of image memorability has remained elusive. The neural correlates of memorability are likely to reside at higher stages of the visual form processing pathway, where image memorability can be decoded from human fMRI activity patterns (Bainbridge et al., 2017; Bainbridge and Rissman, 2018), as well as with a consistent cortical timescale from human MEG data at\u00a0~150 msec (Mohsenzadeh et al., 2019). Linear decodability could imply that information about image memorability is represented in the same fashion as information about object identity: as population response vectors that point in different directions (Figure 1a; DiCarlo et al., 2012). However, under this proposal, it is not clear how our experience of image identity and image memorability would be represented by the same neural populations, for\u00a0example the fact that one image of a person can be more memorable than another image of that same person. Here we present an alternative proposal, hinted at by the fact that more memorable images evoke larger fMRI responses (Bainbridge et al., 2017): we propose that memorability variation is determined principally by the magnitude of the IT population response (Figure 1). This scenario incorporates a representational scheme for memorability that is orthogonal to the scheme thought to support object identity, and if correct, would provide a straightforward account of how a high-level visual brain area such as inferotemporal cortex (IT) multiplexes visual information about image content (as the population vector direction) as well as memorability (as population vector magnitude). In an earlier report, we tested the hypothesis that changes in the lengths of IT population response vectors with stimulus repetition (\u2018repetition suppression\u2019) could account for rates of remembering and forgetting as a function of time (Meyer and Rust, 2018). However, that work explicitly assumed that the population response vectors corresponding to different images were the same length (see Methods), whereas here we focus on whether variation in the lengths of these vectors can account for a previously undocumented behavioral signature in monkeys: image memorability.\n\n## Results\n\nTo test the hypothesis presented in Figure 1, we obtained image memorability scores by passing images through a model designed to predict image memorability for humans (Khosla et al., 2015). The neural data, also reported in Meyer and Rust (2018), were recorded from IT as two rhesus monkeys performed a single-exposure visual memory task in which they reported whether images were novel (never before seen) or were familiar (seen once previously; Figure 2a). In each experimental session, neural populations with an average size of 26 units were recorded, across 27 sessions in total. Because accurate estimate of population response magnitude requires many hundreds of units, data were concatenated across sessions into a larger pseudopopulation in a manner that aligned images with similar memorability scores (see Methods and Figure 2\u2014figure supplement 1). The resulting pseudopopulation contained the responses of 707 IT units to 107 images, averaged across novel and familiar presentations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47596/elife-47596-fig2-v1.jpg)\n\n**Figure 2.:** (a) The monkeys\u2019 task involved viewing each image for 400 ms and then reporting whether the image was novel or familiar with an eye movement to one of two response targets. The probability of a novel versus familiar image was fixed at 50% and images were repeated with delays ranging from 0 to 63 intervening trials (4.5 s to 4.8 min). Shown are 5 example trials with image memorability scores labeled. The memorability of each image was scored from 0-1, where the score reflects the predicted chance-corrected hit rate for detecting a familiar image (i.e., 0 maps to chance and 1 maps to ceiling; Khosla et al., 2015). (b) The relationship between image memorability scores and IT population response magnitudes. Each point corresponds to a different image (N=107 images). Population response magnitudes were computed as the L2 norm\u00a0$\\sqrt{\\sumi=1Nr_{i}^{2}}$, where ri is the spike count response of the ith unit, across a pseudopopulation of 707 units. Spikes were counted in an 80 ms window positioned 180 to 260 ms following stimulus onset (see Figure 2\u2014figure supplement 3a for different window positions). The Pearson correlation and its p-value are labeled. The solid line depicts the linear regression fit to the data. For reference, the mean firing rates for two example images are also labeled (see also Figure 2\u2014figure supplement 3b). (c) Mean and standard error (across experimental sessions) of monkey behavioral performance on the memory task as a function of human-based image memorability scores. For visualization, performance was binned across images with neighboring memorability scores and pooled across monkeys (see Figure 2\u2014figure supplement 4 for plots by individual). The dashed line corresponds to the grand average performance, and if there were no correlation, all points should fall near this line. The point-biserial correlation and its p-value, computed for the raw data (i.e. 2889 continuous memorability scores and 2889 binary performance values for each image in each session) are labeled. Source data are included as Figure 2\u2014source data 1 and Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47596/elife-47596-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Memorability scores range from 0 to 1, where the score reflects the predicted chance-corrected hit rate for detecting a familiar image and 0 maps to chance (see Methods and Khosla et al., 2015).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47596/elife-47596-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a-b) Figure 2b replotted for each monkey individually (monkey 1: 353 units; monkey 2 354 units). To compensate for parsing the data, the spike count window was increased to 250 ms in these plots (positioned 150 ms \u2013 400 ms) relative to the 80 ms window depicted in Figure 2. The Pearson correlation and its p-value are labeled. The following two points were included in computing the correlations but fall outside the boundaries of the plot or are obscured by text: Monkey 1 (panel a): memorability\u00a0=\u00a00.86, response magnitude\u00a0=\u00a083.6; Monkey 2 (panel b): memorability\u00a0=\u00a00.57, response magnitude\u00a0=\u00a071.5. Solid lines depict the linear regression fits to the data.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47596/elife-47596-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) The same analysis described for Figure 2b, but applied to 80 ms windows shifted at different positions relative to stimulus onset, where the correlations are plotted against the center of each time bin. Figure 2b is shown at the peak of this plot (220 ms). Also shown (dotted line) is the critical correlation threshold for p<0.01, which the population reached at 80 ms following stimulus onset. (b) Correlations between memorability and grand mean firing rate across the 707 units (in contrast to the plots of response magnitude in Figure 2b). The two example images from 2b are indicated. Solid line depicts the linear regression fit to the data. (c) The analysis in Figure 2b with N% top-ranked firing rate units excluded from the pseudopopulation for different N. The dotted line indicates the critical correlation for the significance level p=0.01.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/47596/elife-47596-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The analysis presented in Figure 2c, applied to each monkey individually. To compensate for parsing the data, the data is parsed into five bins as opposed to the seven bins in Figure 2c. The dashed lines correspond to the grand average performance, and if there were no correlation, all points should fall near this line. The point-biserial correlation and its p-value, computed for the raw data, are labeled.\n\nFigure 2b shows the correlation between image memorability and IT population response magnitudes, which was strong and highly significant (Pearson correlation: r\u00a0=\u00a00.68; p=1\u00d710\u221215). This correlation remained strong when parsed by the data collected from each monkey individually (Figure 2\u2014figure supplement 2) and, after accounting for the time required for signals to reach IT, across the entire 400 ms viewing period (Figure 2\u2014figure supplement 3a). The correlation also remained strong when computed for a quantity closely related to response magnitude, grand mean firing rate (Figure 2\u2014figure supplement 3b), as well as when the highest firing units were excluded from the analysis (Figure 2\u2014figure supplement 3c). A strong correlation was also observed when images containing faces and/or bodies were excluded from the analysis (Pearson correlation: r\u00a0=\u00a00.62; p=2\u00d710\u221210), suggesting that our results are not an artifactual consequence of recording from patches of neurons enriched for face or body selectivity (Pinsk et al., 2005; Tsao et al., 2003). Finally, at the same time that IT neural responses exhibited repetition suppression for familiar as compared to novel image presentations (mean proportional reduction in this spike count window\u00a0=\u00a06.2%; see also Meyer and Rust, 2018), the correlation remained strong when computed for the images both when they were novel (Pearson correlation: r\u00a0=\u00a00.62; p=2\u00d710\u221212) as well as when they were familiar (Pearson correlation: r\u00a0=\u00a00.58; p=8\u00d710\u221211).\n\nThe strength of the correlation between memorability and IT response magnitude is notable given the species difference, as the memorability scores were derived from a model designed to predict what humans find memorable whereas the neural data were collected from rhesus monkeys. In contrast to the human-based scores, which reflect the estimated average performance of\u00a0~80 human individuals, our monkey behavioral data are binary (i.e. correct/incorrect for each image). As such, the monkey behavioral data cannot be used in the same way to concatenate neural data across sessions to create a pseudopopulation sufficiently large to accurately estimate IT population response magnitudes. However, our data did allow us to evaluate whether human-based memorability scores were predictive of the images that the monkeys found most memorable during the single-exposure visual memory task, and we found that this was in fact the case (Figure 2c).\n\nWhile the monkeys involved in these experiments were not explicitly trained to report object identity, they presumably acquired the ability to identify objects naturally over their lifetimes. The correlations between IT population response magnitude and image memorability could thus result from optimizations for visual memory, or it could follow more simply from the optimizations that support visual processing, including object and scene identification. If it were the case that a system trained to categorize objects and scenes (but not trained to report familiarity) could account for the correlations we observe between IT response magnitude variation and image memorability, this would suggest that image memorability follows from the optimizations for visual (as opposed to mnemonic) processing. To investigate the origin of memorability variation, we investigated the correlate of memorability in a convolutional neural network (CNN) model trained to categorize thousands of objects and scenes but not explicitly trained to remember images or estimate memorability (Khosla et al., 2015). We found that the correlation between image memorability scores and their corresponding population response magnitudes was significantly higher in the trained as compared to a randomly initialized version of the network in all layers, and the strength of this correlation generally increased across the hierarchy (Figure 3). These results were also replicated in two other CNNs trained for object classification (Krizhevsky et al., 2012; Simonyan and Zisserman, 2015), where correlation strength also generally increased across the hierarchy of the network (Figure 3\u2014figure supplement 1), suggesting that this signature is not unique to this particular architecture or training procedure. These results suggest that variation in population response magnitude across images is reflected in visual systems that are trained to classify objects, and that this variation is directly related to variation in image memorability.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47596/elife-47596-fig3-v1.jpg)\n\n**Figure 3.:** Shown\u00a0are\u00a0mean and 95% CIs of the Pearson correlations between image memorability and population response magnitude for each hierarchical layer of the CNN described in Zhou et al. (2014), up to the last hidden layer. \u2018Conv\u2019: convolutional layer; \u2018FC\u2019: fully connected layer. p-values for a one-sided comparison that correlation strength was larger for the trained than the randomly connected network: p<0.0001 for all layers.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47596/elife-47596-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Shown\u00a0are\u00a0mean and 95% CIs of the Pearson correlations between image memorability and population response magnitude for each hierarchical layer for two CNNs, including (a) AlexNet (Krizhevsky et al., 2012), (b) VGG-16 (Simonyan and Zisserman, 2015), up to the last hidden layer. \u2018Conv\u2019: convolutional layer; \u2018FC\u2019: fully connected layer. p-values for a one-sided comparison that correlation strength was larger for the trained than the randomly connected network, AlexNet: p<0.0001 for all layers; VGG-16: p=0.8, 0.2, 0.9, and 0.5 for Conv 1.1, 1.2, 2.1, and 2.2, respectively, p=0.0008 for Conv 3.2, and p<0.0001 for all other layers.\n\n## Discussion\n\nHere we have demonstrated that variation in the ability of humans and monkeys to remember images is strongly correlated with the magnitude of the population response in IT cortex. These results indicate that memorability is reflected in IT via a representational scheme that lies largely orthogonal to the one IT has been presumed to use for encoding object identity (Figure 1). For example, investigations of how monkey IT and its human analogs represent objects using \u2018representational similarity analysis\u2019 typically begin by normalizing population response vector magnitude to be the same for all images such that all that is left is the direction of the population response pattern, under the assumption that population vector magnitude is irrelevant for encoding object or image identity (Kriegeskorte et al., 2008). Before our study, data from human fMRI had pinpointed the locus of memorability to the human analog of IT, but we did not understand \u2018how\u2019 the representations of memorable and non-memorable images differed. Our results point to a simple and coherent account of how IT multiplexes representations of visual and memorability information using two complementary representational schemes (Figure 1).\n\nInvestigations of cognitive processes such as memory have long appreciated the need to equate image sets for the robustness of their visual representations. The significance of our result follows from the unexpected finding that there is variation in the robustness of visual representations within the class of natural images that is not accounted for by classic population-based decoding approaches, and that this variation correlates with our understanding of the content that makes images more or less memorable. Our results demonstrate that despite the host of homeostatic mechanisms that contribute to maintaining constant global firing rates across a cortical population (Turrigiano, 2012), changes in image content can result in IT population response magnitudes that differ by\u00a0~20% (Figure 2b; Figure 2\u2014figure supplement 3b). Future work will be required to explore the ultimate bounds of image memorability variation, possibly via the use of newly developed generative adversarial network\u00a0models that create images with increased or decreased memorability (Goetschalckx et al., 2019).\n\nOur work relates to \u2018subsequent memory effects\u2019 whereby indicators of higher neural activity in structures both within and outside the medial temporal lobe during memory encoding are predictive of more robust remembering later on (reviewed by Paller and Wagner, 2002). To tease apart whether the origin of memorability could be attributed to optimizations for visual as opposed to mnemonic processing, we investigated CNNs optimized to categorize objects but not explicitly trained to predict the memorability of images. While this class of models has been demonstrated to mimic many aspects of how IT represents visual object identity (reviewed by Yamins and DiCarlo, 2016), image memorability has a distinct representational scheme from identity (Figure 1). The fact that CNNs trained for object recognition mimic the neural representation of a distinct behavior \u2013 visual memorability \u2013 is compelling evidence that this strategy of multiplexing visual identity and memorability results from the computational requirements of optimizing for robust object representations. Our results are remarkably well-aligned with one study reporting the correlation between one CNN that we tested, VGG-16 (Figure 3\u2014figure supplement 1b), and patterns of confusions during human rapid visual categorization behavior (Eberhardt et al., 2016). The correlation between what humans and monkeys find memorable (Figure 2c) is at first pass surprising in light of the presumed differences in what typical humans and monkeys experience. However, understanding that memorability variation emerges in CNNs trained for object categorization (Figure 3), coupled with the similarities in object representations between humans and monkeys (Rajalingham et al., 2015), provides insight into the preservation of memorability correlations across these two primate species.\n\nThe mechanism that we describe here is also likely to be partially but not entirely overlapping with descriptions of salience, where a relation between memorability and eye movement patterns exists (Bylinskii et al., 2015) and CNNs trained to categorize objects have been coupled with human fMRI responses to predict eye movement behavior (O'Connell and Chun, 2018). However, memorability effects are typically found even after controlling for factors commonly associated with salience, including images features and object categories (Bainbridge et al., 2017; Bainbridge et al., 2013; Mohsenzadeh et al., 2019), suggesting that memorability and salience are unlikely to be one and the same. For example, (Bainbridge et al., 2017; Bainbridge et al., 2013) reported differences in memorability between face stimuli that were identical in saliency in terms of their shapes, parts, image features, and fixation patterns. Our modeling results offer insight into the nature of the specific mechanisms that are most likely to contribute to image memorability. The brain perceives and remembers using both feedforward and feedback processing, and this processing is modulated by top-down and bottom-up attention. Because of this, it is difficult to attribute\u00a0an effect like the one we describe to any single mechanism using neural data alone. The fact that variations in response magnitudes that correlate with memorability emerge from static, feed-forward, and fixed networks suggests that memorability variation is unlikely to follow primarily from the types of attentional mechanisms that require top-down processing or plasticity beyond that required for wiring up a system to identify objects.\n\n## Materials and methods\n\nAs an overview, three types of data are included in this paper: (1) Behavioral and neural data collected from two rhesus monkeys that were performing a single-exposure visual memory task; (2) Human-based memorability scores for the images used in the monkey experiments, and (3) The responses of units at different layers of three convolutional neural network models trained to classify objects and scenes . The Methods associated with each type of data are described below.\n\n### Behavioral and neural data collected from two rhesus monkeys that were performing a single-exposure visual memory task\n\nExperiments were performed on two na\u00efve adult male rhesus macaque monkeys (Macaca mulatta) with implanted head posts and recording chambers. All procedures were performed in accordance with the guidelines of the University of Pennsylvania Institutional Animal Care and Use Committee. Monkey behavioral and neural data were also included in an earlier report that examined the relationship between behavioral reports of familiarity as a function of the time between novel and familiar presentations (e.g., \u2018rates of forgetting\u2019) and neural responses in IT cortex (Meyer and Rust, 2018). The results presented here cannot be inferred from that report.\n\n### The single-exposure visual memory task\n\nAll behavioral training and testing were performed using standard operant conditioning (juice reward), head stabilization, and high-accuracy, infrared video eye tracking. Stimuli were presented on an LCD monitor with an 85 Hz refresh rate using customized software (http://mworks-project.org).\n\nEach trial of the monkeys\u2019 task involved viewing one image for at least 400 ms and indicating whether it was novel (had never been seen before) or familiar (had been seen exactly once) with an eye movement to one of two response targets. Images were never presented more than twice (once as novel and then as familiar) during the entire training and testing period of the experiment. Trials were initiated by the monkey fixating on a red square (0.25\u00b0) on the center of a gray screen, within an invisible square window of\u00a0\u00b11.5\u00b0, followed by a 200 ms delay before a 4\u00b0 stimulus appeared. The monkeys had to maintain fixation of the stimulus for 400 ms, at which time the red square turned green (go cue) and the monkey made a saccade to the target indicating that the stimulus was novel or familiar. In monkey 1, response targets appeared at stimulus onset; in monkey 2, response targets appeared at the time of the go cue. In both cases, targets were positioned 8\u00b0 above or below the stimulus. The association between the target (up vs. down) and the report (novel vs. familiar) was swapped between the two animals. The image remained on the screen until a fixation break was detected. The first image presented in each session was always a novel image. The probability of a trial containing a novel vs. familiar image quickly converged to 50% for each class. Delays between novel and familiar presentations were pseudorandomly selected from a uniform distribution, in powers of two (n-back\u00a0=\u00a01, 2, 4, 8, 16, 32 and 64 trials corresponding to mean delays of 4.5 s, 9 s, 18 s, 36 s, 1.2 min, 2.4 min, and 4.8 min, respectively).\n\nThe images used for both training and testing were collected via an automated procedure that downloaded images from the Internet. Images smaller than 96*96 pixels were not considered and eligible images were cropped to be square and resized to 256*256 pixels. An algorithm removed duplicate images. The image database was randomized to prevent clustering of images according to the order in which they were downloaded. In both the training and testing phases, all images of the dataset were presented sequentially in a random order (i.e. without any consideration of their content). During the testing phase, \u2018novel\u2019 images were those that each monkey had never encountered in the entire history of training and testing. To determine the degree to which these results depended on images with faces and/or body parts, images were scored by two human observers who were asked to determine whether each image contained one or more faces or body parts of any kind (human, animal or character). Conflicts between the observers were resolved by scrutinizing the images. Only 19% of the images used in these experiments contained faces and/or body parts.\n\nThe activity of neurons in IT was recorded via a single recording chamber in each monkey. Chamber placement was guided by anatomical magnetic resonance images in both monkeys. The region of IT recorded was located on the ventral surface of the brain, over an area that spanned 5 mm lateral to the anterior middle temporal sulcus and 14\u201317 mm anterior to the ear canals. Recording sessions began after the monkeys were fully trained on the task and after the depth and extent of IT was mapped within the recording chamber. Combined recording and behavioral training sessions happened 4\u20135 times per week across a span of 5 weeks (monkey 1) and 4 weeks (monkey 2). Neural activity was recorded with 24-channel U-probes (Plexon, Inc) with linearly arranged recording sites spaced with 100 \u03bcm intervals. Continuous, wideband neural signals were amplified, digitized at 40 kHz and stored using the Grapevine Data Acquisition System (Ripple, Inc). Spike sorting was done manually offline (Plexon Offline Sorter). At least one candidate unit was identified on each recording channel, and 2\u20133 units were occasionally identified on the same channel. Spike sorting was performed blind to any experimental conditions to avoid bias. For quality control, recording sessions were screened based on their neural recording stability across the session, their numbers of visually responsive units, and the numbers of behavioral trials completed. A multi-channel recording session was included in the analysis if: (1) the recording session was stable, quantified as the grand mean firing rate across channels changing less than 2-fold across the session; (2) over 50% of neurons were visually responsive (a loose criterion based on our previous experience in IT), assessed by a visual inspection of rasters; and (3) the number of successfully completed novel/familiar pairs of trials exceeded 100. In monkey 1, 21 sessions were recorded and six were removed (two from each of the three criteria). In monkey 2, 16 sessions were recorded and four were removed (1, 2 and 1 due to criterion 1, 2 and 3, respectively). The resulting data set included 15 sessions for monkey 1 (n\u00a0=\u00a0403 candidate units), and 12 sessions for monkey 2 (n\u00a0=\u00a0396 candidate units). The sample size (number of successful sessions recorded) was chosen to match our previous work (Meyer and Rust, 2018). Both monkeys performed many hundreds of trials during each session (~600\u20131000, corresponding to\u00a0~300\u2013500 images each repeated twice). The data reported here correspond to the subset of images for which the monkeys\u2019 behavioral reports were recorded for both novel and familiar presentations (e.g. trials in which the monkeys did not prematurely break fixation during either the novel or the familiar presentation of an image). Finally, units were screened for stimulus-evoked activity via a comparison of their responses in a 200 ms period before stimulus onset (\u2212200 ms \u2013 0 ms) versus after stimulus onset (80\u2013280 ms) with a two-sided t-test, p<0.01. This yielded 353 (of 403) units for monkey 1 and 354 (out of 396) units for monkey 2.\n\nAccurate estimate of population response magnitude requires many hundreds of units, and when too few units are included, magnitude estimates are dominated by the stimulus selectivity of the sampled units. To perform our analyses, we thus concatenated units across sessions to create a larger pseudopopulation. In the case of the pooled data, this included 27 sessions in total (15 sessions from monkey 1 and 12 from monkey 2). When creating this pseudopopulation, we aligned data across sessions in a manner that preserved whether the trials were presented as novel or familiar, their n-back separation, and image memorability scores (obtained using Materials\u00a0and\u00a0methods described below). More specifically, the responses for each unit always contained sets of novel/familiar pairings of the same images, and pseudopopulation responses across units were always aligned for novel/familiar pairs that contained the same n-back separation and images with similar memorability scores. The number of images that could be included in the pseudopopulation was limited by the session for which the fewest images were obtained.\n\nFor the other sessions, a matched number of images were subselected separately for each n-back by ranking images within that n-back by their memorability scores, preserving the lowest-ranked and highest-ranked images within that session, and selecting the number of additional images required as those with memorability scores that were evenly spaced between the two extreme memorability scores for that session. The resulting pseudopopulation consisted of the responses to 107 images presented as both novel and familiar (i.e. 15, 15, 16, 17, 17, 15 and 12 trials at 1, 2, 4, 8, 16, 32 and 64-back, respectively). To perform the neural analyses (Figure 2b, Figure 2\u2014figure supplements 2\u20133), a memorability score for each of the 107 pseudopopulation images was computed as the mean of the memorability scores across all the actual images that were aligned to produce that pseudopopulation response. The average standard deviation across the set of memorability scores used to produce each pseudopopulation response was 0.05, where memorability ranges 0\u20131. To perform behavioral analyses (Figure 2c, Figure 2\u2014figure supplement 4), the memorability score as well as binary performance values (correct/wrong at reporting that a familiar image was familiar) were retained for each of the 107 images, across each of the 27 sessions. As a control analysis, we created a second pseudopopulation using the same techniques but after excluding the responses to images that contained faces and/or body parts (where the content of each image was determined as described above). The resulting pseudopopulation consisted of the responses to 87 images presented as both novel and familiar. Because only a small fraction of images contained faces or body parts (19%), we were not able to create a pseudopopulation with images that only contained only faces and/or bodies using the same methods applied for the main analysis.\n\n### Human-based memorability scores for the images used in the monkey experiments\n\nWe obtained memorability scores for the images used in the monkey experiments using MemNet (Khosla et al., 2015) estimates. MemNet is a convolutional neural network (CNN) trained to estimate image memorability on a large-scale dataset of natural images (LaMem; Khosla et al., 2015), publicly available at memorability.csail.mit.edu). LaMem consists of 60K images drawn from a diverse range of sources (see Khosla et al., 2015 for more detail). Each image in this dataset is associated with a memorability score based on human performances in an online memory game on Amazon\u2019s Mechanical Turk. Behavioral performances were corrected for the delay interval between first and second presentation to produce a single memorability score for each image. Specifically, (Isola et al., 2011) demonstrated that memorability follows a log-linear relationship as a function of the delay interval between the first and second image presentations, described as:\n\n$$\nm_{t}^{i}=m_{T}^{i}+\\alphalog\u2061\\frac{t}{T}\n$$\n\nwhere $m_{T}^{i}$ denotes the memorability score for image $i$\u00a0after a delay of\u00a0$T$, $c^{i}$\u00a0represents the base memorability, and $\\alpha$\u00a0is the memorability decay factor over time. Memorability scores were corrected for delay interval using this equation. After training, MemNet estimates visual memorability of natural images near the upper bound imposed by human performance: MemNet estimates reach 0.64 rank correlation with mean human-estimated memorability, while the upper bound of consistency between human scores has a rank correlation of 0.68. Here we treat MemNet memorability estimates as a proxy for human memorability scores.\n\nThe memorability scores were obtained using the network weights reported in Khosla et al.\u00a0(2015) and publicly available at http://memorability.csail.mit.edu/download.html. This network was originally trained using the Caffe framework (Jia et al., 2014), and we ported the trained network to Pytorch (Paszke et al., 2017) using the caffe-to-torch-to-pytorch package at https://github.com/fanq15/caffe_to_torch_to_pytorch. Before passing images into MemNet, we preprocessed them as described in Zhou et al. (2014): we resized images to 256\u00a0\u00d7\u00a0256 pixels (with bilinear interpolation), subtracted the mean RGB image intensity (computed over the dataset used for pretraining, as described in Zhou et al., 2014), and then produced 10 crops of size 227\u00a0\u00d7\u00a0227 pixels. The 10 crops were obtained by cropping the full image at the center and at each of the four corners and by flipping each of these five cropped images about the vertical axis. All 10 crops were passed through MemNet. The average of these 10 scores was used as the mean prediction of the model for the input image. This mean prediction was then linearly transformed to obtain the estimated memorability score:\n\nMemorability_score\u00a0=\u00a0min (max ((output - mean_pred)*2\u00a0+\u00a0additive_mean, 0), 1)\n\nwhere following Khosla et al. (2015), we set mean_pred\u00a0=\u00a00.7626 and additive_mean\u00a0=\u00a00.65.\n\n### The responses of units at different layers of CNN models trained to classify objects and scenes\n\nWe evaluated the correlation between response magnitude and image memorability on images from the LaMem dataset (Khosla et al., 2015) using three commonly used convolutional neural networks (CNNs). All reported models were evaluated on the full test set of split 1 of LaMem, which contains 10,000 images. We chose to use LaMem images, as each image in this dataset is labeled with a memorability score computed directly from human behavioral performance (i.e. not estimated with a model; see above and Khosla et al., 2015 for details of data collection and memorability score computation). All networks were run in TensorFlow 1.10 (Abadi et al., 2016; software available from tensorflow.org), using custom Python evaluation code.\n\nThe results presented in Figure 3 were obtained by running images from this dataset through HybridCNN (Zhou et al., 2014). HybridCNN is a network with an identical architecture to AlexNet (Krizhevsky et al., 2012). HybridCNN was first trained to classify natural images of objects and scenes using data from the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2012, a 1000-way object classification dataset (Deng et al., 2009), as well as the Places 183-way scene classification dataset (Zhou et al., 2014), for a combined 1183-way classification task. For details of training, see Zhou et al. (2014). Results were obtained using the network weights reported in Zhou et al. (2014) and publicly available at\u00a0http://places.csail.mit.edu/downloadCNN.html. This network was originally trained using the Caffe framework (Jia et al., 2014), and we ported the trained network to TensorFlow using the caffe-tensorflow package https://github.com/ethereon/caffe-tensorflow.\u00a0Random initialization baselines were obtained using the same architecture, but randomly sampling the weights using the initialization algorithm described in Glorot and Bengio (2010).\n\nBefore passing images into each network, we preprocessed them as described in Zhou et al. (2014) and above: we resized images to 256\u00a0\u00d7\u00a0256 pixels (with bilinear interpolation), subtracted the mean RGB image intensity (computed over the training dataset), and then cropped the central 227 \u00d7 227 and passed it into the network. The response magnitude (L2 norm) of each layer was computed over the full output vector of each hidden layer. In all cases, we show the magnitude of hidden layer output after applying the nonlinear operation. Results for the two networks presented in Figure 3\u2014figure supplement 1 were obtained in an identical manner, except for the image preprocessing step. For each network, images were preprocessed as described in the original papers (AlexNet: Krizhevsky et al., 2012; VGG-16: Simonyan and Zisserman, 2015).\n\nFor all three networks (HybridCNN, AlexNet, and VGG-16), we computed correlations for all convolutional and fully-connected hidden layers. The Pearson correlation coefficient was used to measure correlation. All correlations were computed over the full set of 10,000 images described above. 95% confidence intervals for the correlation coefficient of each layer were obtained by bootstrapping over the set of 10,000 per-image layer magnitudes and memorability scores. 95% confidence intervals were estimated empirically as the upper and lower 97.5%-centiles of the bootstrapped correlation coefficients for each layer and condition. Bootstrapped resampling was performed independently for each layer and each condition (trained or randomly connected). In all cases, bootstrap estimates were performed using 10,000 samples (with replacement) of the full dataset of 10,000 images. The bootstrapping procedure was also used to conduct one-tailed tests to determine whether the correlations between memorability and response magnitude were stronger in the trained as compared to the randomly initialized network at each layer separately. p-values were estimated by taking pairs of correlation coefficients computed on the bootstrapped data for each condition and measuring the rate at which the correlation for the random layer exceeded the correlation for the trained layer.\n",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "3ebf1b09-6fde-4eb2-b34b-9244e770b336",
+      "submission_id": "9cd37a04-efc5-436e-803d-e19d03a5be8f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tatiana Pasternak, University of Rochester United States\n\nReviewers:\n- Elizabeth A Buffalo\n\n## Review text\n\nDOI: [10.7554/eLife.47596.014](https://doi.org/10.7554/eLife.47596.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Population response magnitude variation in inferotemporal cortex predicts image memorability\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Elizabeth A. Buffalo (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers were impressed with several aspects of the work, including linking the strength of the overall population response in IT to memorability and the idea that coding schemes for memorability and identity may be orthogonal. However, they raised a number of issues that should be addressed, before the paper will be considered for publication in eLife. These are listed below.\n\nEssential revisions:\n\n1) Please provide the rationale for not utilizing the monkey behavioral data to directly link the strength and variability of responses to behavior. The question how the monkey IT was trained in classification needs to be clarified.\n\n2) Please address the question of the role of learning and experience in making some images more memorable. A related question is whether IT population response depends on whether the stimuli are novel or familiar. This important question cannot be addressed with responses that are averaged across the two groups of stimuli, as it is currently the case.\n\n3) Please clarify the approach used to create pseudopopulations since some of the data was likely to be collected for simultaneously recorded neurons and combined with the data collected on other days.\n\n4) Please address the question whether model predictions can be used to modify images to increase their memorability.\n\n5) Please discuss whether the face and body parts are the features with the highest positive correlation to memorability.\n\n6) Please address the effect of categorization training on correlations between the model responses on image memorability and on the population response magnitude.\n\nReviewer #1:\n\nIn this paper, Jaegle and colleagues explore the connection between population responses in IT cortex and image memorability. Their hypothesis is that images that evoke a stronger population response will correlate positively with the likelihood of being able to remember that image. Using a combination of model predictions prom human experiments and their IT recordings, they obtain evidence supporting this hypothesis. Taken together, the authors suggest that prior attempts to reduce variability in population responses may have missed this potentially important connection.\n\nThe basic message in this paper is relatively clear, with the notion that overall response levels might both be variable and that this variability can be directly linked to behavior is intriguing. The paper is weakened considerably by the fact that the monkey behavioral data are not really used to draw these conclusions (Figure 2C does present a version of this, but it doesn't really form the basis for the core analyses). Indeed, the authors have a nicely designed behavioral paradigm, and we don't even see the effect of delay on the monkeys' performance. The main correlations are between the memorability predictions from the model designed to predict behavioral in human participants and evoked pseudopopulation response magnitudes. While the inability to clearly connect the behavioral data to the neural data in the same experiment is somewhat disappointing, the authors do point out that the relation may be explained by the development of representations that are more generally a results of having to classify objects, which could be preserved between species. This may be true, but exactly how the monkey's IT cortex has been trained in classification is not entirely clear.\n\nA related question that the paper raises that is not directly addressed is how specific learning or training could alter their findings. It would seem that specialization of neural representations resulting from training could make certain images more memorable than others as a function of experiences. While it seems like the authors are assuming that they are sampling a large space where no subset of image would likely be more familiar or experienced than others, it might be worth at least discussing how experience might affect their results. Further, the authors clearly didn't target any particular cell populations, but they could have landed in a cluster of specialized cells (faces or other categories). It's not clear how their hypotheses would account for this?\n\nAnother point that I thought could have been briefly discussed is the relation of this work to the large literature of studies of memory formation, wherein activity at the time of encoding can affect subsequent recall. This work is clearly distinct from that, but that distinction could be made more clear.\n\nI found the description of the creation of the pseudopopulations a bit difficult to follow (Materials and methods section), which leaves me somewhat concerned about the conclusions that are drawn from these. What happens when the sessions with 20 or so sites are used to make predictions, as these populations are real and simultaneously collected under identical conditions?\n\nDo the authors have any approach for using their network predictions to help modify images to make them more or less memorable? This would be a powerful manipulation if it directly affected neural responses.\n\nReviewer #2:\n\nIn this manuscript, Jaegle et al. examine the hypothesis that variation in the magnitude of the population response of neurons in the monkey inferotemporal (IT) cortex is positively correlated with image memorability. The authors analyze a pseudo population of 707 IT units recorded as monkeys performed a recognition memory task with a large set of complex images, with each image presented once as novel and once as familiar. The data suggests that while image identity can be decoded through the population vector direction (as shown in DiCarlo et al., 2012), image memorability correlates with the response magnitude of the population, with higher magnitude population response reflecting greater image memorability. In addition, the authors probed CNN models trained to categorize objects and found that larger magnitude responses in higher layers of the network correlated with images that had high memorability. The question of how neural activity in IT contributes to recognition memory is not well understood, and the hypothesis that memorability and identity may be related to orthogonal population responses is novel and intriguing. The manuscript is well-written and should be of interest to a wide audience. I have just a few suggestions to improve clarity.\n\n1) In constructing the population response, each neuron's response to a given image is averaged across the novel and familiar presentation. Because memorability is defined here as a bottom-up feature of the stimuli, it would be interesting to know whether there was a change in the IT population response for novel vs familiar presentations. If experience affected the response, then, presumably, the response to just the novel presentation would provide the strongest correlation with memorability.\n\n2) The data in Khosla et al. suggests that memorability is strongly related to salience, in that stimuli with more consistent fixation locations across subjects had higher memorability. It would be helpful to discuss the extent to which memorability is thought to reflect something beyond image salience. That is, would it be expected that IT population response magnitude (and the monkey's recognition memory performance) would also be positively correlated with a measure of image salience?\n\n3) Khosla et al. also suggest that CNN features with the highest positive correlation to memorability correspond to faces and body parts. It would be helpful to discuss whether this relationship to IT stimulus selectivity may underlie the relationship between IT population response magnitude and the memorability index.\n\n4) The authors report a correlation between responses in higher layers of the CNN and image memorability after categorization training. It would be interesting to know what effect the categorization training had on population responses, i.e., did the training produce a separation in population magnitude across images that was more consistent early in training or was there a more complex relationship between training and population response magnitude?\n",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a397caaa-6764-4d8f-aa7a-0f8598d09dc5",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C1",
+      "claim": "Variation in IT population response magnitude can largely account for how well images will be remembered.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing data collected from IT as monkeys performed a visual memory task, we demonstrate that variation in a complementary coding scheme, the magnitude of the population response, can largely account for how well images will be remembered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a main finding based on analysis of neural data from monkeys performing a memory task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "b9fdb904-5850-4195-beac-927958ef4fbb",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C2",
+      "claim": "Different natural images evoke different magnitude responses from CNNs trained to categorize objects.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, like the brain, different natural images evoked different magnitude responses from these networks",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports findings from CNN model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "a17eee8c-eefd-4751-857d-852c0e14e198",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C3",
+      "claim": "In higher layers of CNNs, larger magnitude responses are correlated with images that humans and monkeys find most memorable.",
+      "claim_type": "EXPLICIT",
+      "source": "in higher layers, larger magnitude responses were correlated with the images that humans and monkeys find most memorable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports correlation findings from CNN analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "4b2bf52f-ff29-4fad-8179-d9b082fb26e8",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C4",
+      "claim": "Variation in IT population response magnitude is a natural consequence of optimizations required for visual processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that variation in IT population response magnitude is a natural consequence of the optimizations required for visual processing, and that this variation has consequences for visual memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as an inference from the combined neural and CNN results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "62f1cb81-25f8-4464-9265-e635d1b7e98c",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C5",
+      "claim": "At higher stages of visual processing such as inferotemporal cortex (IT), representations of image and object identity are thought to be encoded as distinct patterns of spikes across the IT population.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher stages of visual processing such as inferotemporal cortex (IT), representations of image and object identity are thought to be encoded as distinct patterns of spikes across the IT population, consistent with neurons that are individually 'tuned' for distinct image and object properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established understanding in the field, referencing prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "91d3168a-5ac5-4d4a-90b6-b9cc3980cfa7",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C6",
+      "claim": "Information about object identity in IT is formatted such that it can be accessed via a weighted linear decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "information about object identity is formatted such that it can be accessed from IT neural responses via a weighted linear decoder (Figure 1a; reviewed by DiCarlo et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to a review article and reference to Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "ba50d017-dab2-4659-a94b-97976689737a",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C7",
+      "claim": "The magnitude of the IT population response is often assumed to be unimportant.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the IT population response is often assumed to be unimportant (but see Chang and Tsao, 2017), and it is typically disregarded in population-based approaches, including population decoding and representational similarity analyses (Kriegeskorte et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a common assumption in the field, with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "ccbc1ac2-8874-47dd-8350-3b0e3b4f56eb",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C8",
+      "claim": "Some images are easy to remember while others are easy to forget.",
+      "claim_type": "EXPLICIT",
+      "source": "'Image memorability' refers to the simple notion that some images are easy to remember while others are easy to forget (Isola et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a definition with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "03cbc6b2-29d8-4a1f-b910-c60625fb31f6",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C9",
+      "claim": "A large component of image memorability variation is consistent across different individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "While a large component of image memorability variation is consistent across different individuals (Isola et al., 2011; Khosla et al., 2015), a full account of the sources of image memorability has remained elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "dcf94c9c-7bae-4b04-9240-ee55d83a46e9",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C10",
+      "claim": "Neural correlates of memorability are likely to reside at higher stages of the visual form processing pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural correlates of memorability are likely to reside at higher stages of the visual form processing pathway, where image memorability can be decoded from human fMRI activity patterns (Bainbridge et al., 2017; Bainbridge and Rissman, 2018), as well as with a consistent cortical timescale from human MEG data at ~150 msec (Mohsenzadeh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to fMRI and MEG studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "0d8540d6-07c7-4448-9542-53bf6d72a87f",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C11",
+      "claim": "More memorable images evoke larger fMRI responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present an alternative proposal, hinted at by the fact that more memorable images evoke larger fMRI responses (Bainbridge et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an fMRI study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "089126e3-d7b0-43be-a5b5-7f0dd5f7f691",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C12",
+      "claim": "The correlation between image memorability and IT population response magnitudes was strong and highly significant (r = 0.68; p=1\u00d710\u221215).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2b shows the correlation between image memorability and IT population response magnitudes, which was strong and highly significant (Pearson correlation: r = 0.68; p=1\u00d710\u221215).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of statistical analysis results shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "83826c2a-f6e4-403b-a1a3-1e7a3935a885",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C13",
+      "claim": "The correlation between memorability and IT response magnitude remained strong when parsed by data from each monkey individually.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation remained strong when parsed by the data collected from each monkey individually (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to supplementary figure showing individual monkey data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "df2ac2e2-b38d-4f1e-bae1-9bb64d96b44c",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C14",
+      "claim": "The correlation between memorability and IT response magnitude remained strong across the entire 400 ms viewing period after accounting for signal propagation time to IT.",
+      "claim_type": "EXPLICIT",
+      "source": "and, after accounting for the time required for signals to reach IT, across the entire 400 ms viewing period (Figure 2\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to supplementary figure showing temporal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "ac3d156c-64b2-4455-ae17-65c1561840cf",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C15",
+      "claim": "The correlation between memorability and IT response magnitude remained strong when computed for grand mean firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation also remained strong when computed for a quantity closely related to response magnitude, grand mean firing rate (Figure 2\u2014figure supplement 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to supplementary figure showing alternative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "c3c17935-3d90-4661-b325-cd1cbc023f04",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C16",
+      "claim": "The correlation between memorability and IT response magnitude remained strong when the highest firing units were excluded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as when the highest firing units were excluded from the analysis (Figure 2\u2014figure supplement 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to supplementary figure showing control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "9a9d091e-386f-4bb9-aac3-4884b3fef696",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C17",
+      "claim": "A strong correlation between memorability and IT response magnitude was observed when images containing faces and/or bodies were excluded (r = 0.62; p=2\u00d710\u221210).",
+      "claim_type": "EXPLICIT",
+      "source": "A strong correlation was also observed when images containing faces and/or bodies were excluded from the analysis (Pearson correlation: r = 0.62; p=2\u00d710\u221210)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of statistical analysis results from a control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "2c396748-407b-4628-b97e-cca1c1a3a426",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C18",
+      "claim": "The results are not an artifactual consequence of recording from patches of neurons enriched for face or body selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that our results are not an artifactual consequence of recording from patches of neurons enriched for face or body selectivity (Pinsk et al., 2005; Tsao et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the control analysis excluding face/body images, with citations to prior work on face/body patches.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "9b27b7a4-b167-4c00-bce6-bcbe9b21ccc4",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C19",
+      "claim": "IT neural responses exhibited repetition suppression for familiar as compared to novel image presentations with a mean proportional reduction of 6.2% in the spike count window.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, at the same time that IT neural responses exhibited repetition suppression for familiar as compared to novel image presentations (mean proportional reduction in this spike count window = 6.2%; see also Meyer and Rust, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data analysis with citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "6b44e5cf-65d4-4679-a18e-2da2d137addf",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C20",
+      "claim": "The correlation between memorability and IT response magnitude remained strong when computed for novel images (r = 0.62; p=2\u00d710\u221212).",
+      "claim_type": "EXPLICIT",
+      "source": "the correlation remained strong when computed for the images both when they were novel (Pearson correlation: r = 0.62; p=2\u00d710\u221212)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "d13af536-998d-4f78-8ca8-cebe3e8cd1f9",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C21",
+      "claim": "The correlation between memorability and IT response magnitude remained strong when computed for familiar images (r = 0.58; p=8\u00d710\u221211).",
+      "claim_type": "EXPLICIT",
+      "source": "as well as when they were familiar (Pearson correlation: r = 0.58; p=8\u00d710\u221211).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "0600729c-455b-43d6-94c0-47412736ddfa",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C22",
+      "claim": "Human-based memorability scores were predictive of the images that monkeys found most memorable during the single-exposure visual memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data did allow us to evaluate whether human-based memorability scores were predictive of the images that the monkeys found most memorable during the single-exposure visual memory task, and we found that this was in fact the case (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of analysis results shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "89cf97d8-8410-4ca1-89b0-df7f1f043474",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C23",
+      "claim": "The correlation between image memorability scores and population response magnitudes was significantly higher in trained CNNs compared to randomly initialized versions in all layers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the correlation between image memorability scores and their corresponding population response magnitudes was significantly higher in the trained as compared to a randomly initialized version of the network in all layers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of CNN analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "5f78abe9-f7ca-4a84-97a0-ccec00ec8fb9",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C24",
+      "claim": "The strength of correlation between memorability and CNN response magnitude generally increased across the hierarchy of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "and the strength of this correlation generally increased across the hierarchy (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of CNN analysis results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "eb3efdb5-24bb-42c4-84d3-66863a0798c6",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C25",
+      "claim": "The correlation pattern between memorability and response magnitude was replicated in two other CNNs trained for object classification (AlexNet and VGG-16).",
+      "claim_type": "EXPLICIT",
+      "source": "These results were also replicated in two other CNNs trained for object classification (Krizhevsky et al., 2012; Simonyan and Zisserman, 2015), where correlation strength also generally increased across the hierarchy of the network (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of replication analysis with citations to the CNN architectures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "2d254b90-3dde-4f03-927a-125e9ca1dfda",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C26",
+      "claim": "The memorability-response magnitude signature is not unique to a particular CNN architecture or training procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that this signature is not unique to this particular architecture or training procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the replication across multiple CNN architectures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "2df8428f-ed80-4dfb-8248-bddf9e8c8510",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C27",
+      "claim": "Variation in population response magnitude across images is reflected in visual systems that are trained to classify objects.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that variation in population response magnitude across images is reflected in visual systems that are trained to classify objects, and that this variation is directly related to variation in image memorability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the CNN analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "09a825cd-10bd-461d-9953-cae10da9408c",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C28",
+      "claim": "Variation in IT population response magnitude has important behavioral consequences for how well images will be remembered.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that variation in IT population response magnitude has important behavioral consequences for one higher cognitive process: how well images will be remembered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main finding based on the combined neural and behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "a482a91d-a8a2-426e-9693-b9a5dcdaaa2e",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C29",
+      "claim": "Memorability is reflected in IT via a representational scheme that lies largely orthogonal to the one IT uses for encoding object identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have demonstrated that variation in the ability of humans and monkeys to remember images is strongly correlated with the magnitude of the population response in IT cortex. These results indicate that memorability is reflected in IT via a representational scheme that lies largely orthogonal to the one IT has been presumed to use for encoding object identity (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data showing memorability correlates with response magnitude while identity is encoded in response direction.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "5540b1e9-3841-4ee6-82e6-bbf7d5d47d57",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C30",
+      "claim": "Representational similarity analysis typically normalizes population response vector magnitude to be the same for all images.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, investigations of how monkey IT and its human analogs represent objects using 'representational similarity analysis' typically begin by normalizing population response vector magnitude to be the same for all images such that all that is left is the direction of the population response pattern, under the assumption that population vector magnitude is irrelevant for encoding object or image identity (Kriegeskorte et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a common practice in the field with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "76ce95f0-8aa6-4fa9-a7ba-b59a3811d516",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C31",
+      "claim": "There is variation in the robustness of visual representations within the class of natural images that is not accounted for by classic population-based decoding approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The significance of our result follows from the unexpected finding that there is variation in the robustness of visual representations within the class of natural images that is not accounted for by classic population-based decoding approaches, and that this variation correlates with our understanding of the content that makes images more or less memorable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding and its significance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "b1d61394-cbd8-44e9-8c2a-3262d6d6bd3e",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C32",
+      "claim": "Changes in image content can result in IT population response magnitudes that differ by approximately 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that despite the host of homeostatic mechanisms that contribute to maintaining constant global firing rates across a cortical population (Turrigiano, 2012), changes in image content can result in IT population response magnitudes that differ by ~20% (Figure 2b; Figure 2\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of data analysis with reference to figures and citation to homeostatic mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "e56e2e8c-f4fb-4d27-84db-d071ed91aad4",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C33",
+      "claim": "Subsequent memory effects show that indicators of higher neural activity during memory encoding are predictive of more robust remembering later on.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work relates to 'subsequent memory effects' whereby indicators of higher neural activity in structures both within and outside the medial temporal lobe during memory encoding are predictive of more robust remembering later on (reviewed by Paller and Wagner, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to a review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "6e045e60-3b84-4f64-ab4a-2e8171a5b7c2",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C34",
+      "claim": "CNNs trained for object recognition mimic many aspects of how IT represents visual object identity.",
+      "claim_type": "EXPLICIT",
+      "source": "While this class of models has been demonstrated to mimic many aspects of how IT represents visual object identity (reviewed by Yamins and DiCarlo, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to a review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "a294a312-b938-4d37-a4f2-51670546b58b",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C35",
+      "claim": "CNNs trained for object recognition mimic the neural representation of visual memorability despite not being trained for this task.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that CNNs trained for object recognition mimic the neural representation of a distinct behavior \u2013 visual memorability \u2013 is compelling evidence that this strategy of multiplexing visual identity and memorability results from the computational requirements of optimizing for robust object representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the CNN analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "f36548d3-ab87-4501-a9ca-0e584a25dcfc",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C36",
+      "claim": "There is a correlation between VGG-16 CNN responses and patterns of confusions during human rapid visual categorization behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are remarkably well-aligned with one study reporting the correlation between one CNN that we tested, VGG-16 (Figure 3\u2014figure supplement 1b), and patterns of confusions during human rapid visual categorization behavior (Eberhardt et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citation to prior work and reference to a figure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "dc19c4e0-d424-4b0d-8579-2078522c3d78",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C37",
+      "claim": "There are similarities in object representations between humans and monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "However, understanding that memorability variation emerges in CNNs trained for object categorization (Figure 3), coupled with the similarities in object representations between humans and monkeys (Rajalingham et al., 2015), provides insight into the preservation of memorability correlations across these two primate species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "f01ae804-a246-4b6b-bb0b-013fbfa87d1b",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C38",
+      "claim": "A relation between memorability and eye movement patterns exists.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism that we describe here is also likely to be partially but not entirely overlapping with descriptions of salience, where a relation between memorability and eye movement patterns exists (Bylinskii et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "acf6fbc1-e07e-40ba-b628-b8f94d759af7",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C39",
+      "claim": "CNNs trained to categorize objects have been coupled with human fMRI responses to predict eye movement behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "and CNNs trained to categorize objects have been coupled with human fMRI responses to predict eye movement behavior (O'Connell and Chun, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "59908a69-ab4c-4052-8f63-0646250728ec",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C40",
+      "claim": "Memorability effects are typically found even after controlling for factors commonly associated with salience.",
+      "claim_type": "EXPLICIT",
+      "source": "However, memorability effects are typically found even after controlling for factors commonly associated with salience, including images features and object categories (Bainbridge et al., 2017; Bainbridge et al., 2013; Mohsenzadeh et al., 2019), suggesting that memorability and salience are unlikely to be one and the same.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "c85ebc3f-028f-4953-9aff-7d3f35c1658c",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C41",
+      "claim": "Differences in memorability exist between face stimuli that are identical in saliency in terms of their shapes, parts, image features, and fixation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, (Bainbridge et al., 2017; Bainbridge et al., 2013) reported differences in memorability between face stimuli that were identical in saliency in terms of their shapes, parts, image features, and fixation patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "e7116581-7a0a-4688-8cec-1c3c80daa5ee",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C42",
+      "claim": "Memorability variation is unlikely to follow primarily from attentional mechanisms that require top-down processing or plasticity beyond that required for wiring up a system to identify objects.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that variations in response magnitudes that correlate with memorability emerge from static, feed-forward, and fixed networks suggests that memorability variation is unlikely to follow primarily from the types of attentional mechanisms that require top-down processing or plasticity beyond that required for wiring up a system to identify objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the CNN modeling results showing memorability emerges in feedforward networks.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "f667efd9-6de8-406c-82c4-40874221f6f9",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C43",
+      "claim": "Neural data were recorded from IT as two rhesus monkeys performed a single-exposure visual memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural data, also reported in Meyer and Rust (2018), were recorded from IT as two rhesus monkeys performed a single-exposure visual memory task in which they reported whether images were novel (never before seen) or were familiar (seen once previously; Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "9ed7a1b6-8587-4e9b-8aac-3f4ce47d767f",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C44",
+      "claim": "Neural populations with an average size of 26 units were recorded across 27 sessions in total.",
+      "claim_type": "EXPLICIT",
+      "source": "In each experimental session, neural populations with an average size of 26 units were recorded, across 27 sessions in total.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "b3d048b2-b732-4c58-bc63-ac5b6fb8fc09",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C45",
+      "claim": "Data were concatenated across sessions into a larger pseudopopulation in a manner that aligned images with similar memorability scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Because accurate estimate of population response magnitude requires many hundreds of units, data were concatenated across sessions into a larger pseudopopulation in a manner that aligned images with similar memorability scores (see Methods and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct description of the data analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "fcf3d0cf-28f2-4853-8cf2-362f44f6451f",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C46",
+      "claim": "The resulting pseudopopulation contained the responses of 707 IT units to 107 images.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting pseudopopulation contained the responses of 707 IT units to 107 images, averaged across novel and familiar presentations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the final dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "fd14c203-639d-406f-b31a-8c5bdd22dd79",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C47",
+      "claim": "Experiments were performed on two na\u00efve adult male rhesus macaque monkeys with implanted head posts and recording chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed on two na\u00efve adult male rhesus macaque monkeys (Macaca mulatta) with implanted head posts and recording chambers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "edacf9f4-db0a-4c51-a693-d017d3772661",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C48",
+      "claim": "All procedures were performed in accordance with the guidelines of the University of Pennsylvania Institutional Animal Care and Use Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were performed in accordance with the guidelines of the University of Pennsylvania Institutional Animal Care and Use Committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "4e409db1-c583-4eb5-8398-26a3e556b512",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C49",
+      "claim": "Images were never presented more than twice during the entire training and testing period of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were never presented more than twice (once as novel and then as familiar) during the entire training and testing period of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "0ff1f957-1b26-453e-9398-152bd0107cb5",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C50",
+      "claim": "The probability of a trial containing a novel vs. familiar image quickly converged to 50% for each class.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of a trial containing a novel vs. familiar image quickly converged to 50% for each class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "15d77e7c-9020-4847-a6d4-bdf82b506f87",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C51",
+      "claim": "Delays between novel and familiar presentations were pseudorandomly selected from a uniform distribution in powers of two (n-back = 1, 2, 4, 8, 16, 32 and 64 trials).",
+      "claim_type": "EXPLICIT",
+      "source": "Delays between novel and familiar presentations were pseudorandomly selected from a uniform distribution, in powers of two (n-back = 1, 2, 4, 8, 16, 32 and 64 trials corresponding to mean delays of 4.5 s, 9 s, 18 s, 36 s, 1.2 min, 2.4 min, and 4.8 min, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "85852cb4-d437-4ae3-bf99-e5a2ae30a1fe",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C52",
+      "claim": "Only 19% of the images used in these experiments contained faces and/or body parts.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 19% of the images used in these experiments contained faces and/or body parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of image content analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "1306d6b6-cc1f-4738-9fa5-e5e5566b63af",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C53",
+      "claim": "The region of IT recorded was located on the ventral surface of the brain, over an area that spanned 5 mm lateral to the anterior middle temporal sulcus and 14\u201317 mm anterior to the ear canals.",
+      "claim_type": "EXPLICIT",
+      "source": "The region of IT recorded was located on the ventral surface of the brain, over an area that spanned 5 mm lateral to the anterior middle temporal sulcus and 14\u201317 mm anterior to the ear canals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the recording location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "c9fe88d7-10d4-4fdd-bedc-b23fc3fc79bb",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C54",
+      "claim": "Neural activity was recorded with 24-channel U-probes with linearly arranged recording sites spaced with 100 \u03bcm intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural activity was recorded with 24-channel U-probes (Plexon, Inc) with linearly arranged recording sites spaced with 100 \u03bcm intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the recording equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "797048d5-0c9d-4323-8e80-1c231bcfc1a7",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C55",
+      "claim": "The resulting data set included 15 sessions for monkey 1 (n = 403 candidate units) and 12 sessions for monkey 2 (n = 396 candidate units).",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting data set included 15 sessions for monkey 1 (n = 403 candidate units), and 12 sessions for monkey 2 (n = 396 candidate units).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the final dataset after quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "0dc3a576-31ac-43b5-ae17-ed217e9d283c",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C56",
+      "claim": "Units were screened for stimulus-evoked activity via a comparison of responses before versus after stimulus onset with a two-sided t-test (p<0.01), yielding 353 units for monkey 1 and 354 units for monkey 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, units were screened for stimulus-evoked activity via a comparison of their responses in a 200 ms period before stimulus onset (\u2212200 ms \u2013 0 ms) versus after stimulus onset (80\u2013280 ms) with a two-sided t-test, p<0.01. This yielded 353 (of 403) units for monkey 1 and 354 (out of 396) units for monkey 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the data screening procedure and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "2714e331-738d-42f1-ae34-cca22396b78a",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C57",
+      "claim": "The average standard deviation across the set of memorability scores used to produce each pseudopopulation response was 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "The average standard deviation across the set of memorability scores used to produce each pseudopopulation response was 0.05, where memorability ranges 0\u20131.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of data quality metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "d450b6dd-d388-4297-b7b9-df7ab6fdca51",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C58",
+      "claim": "MemNet is a CNN trained to estimate image memorability on a large-scale dataset of natural images (LaMem).",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained memorability scores for the images used in the monkey experiments using MemNet (Khosla et al., 2015) estimates. MemNet is a convolutional neural network (CNN) trained to estimate image memorability on a large-scale dataset of natural images (LaMem; Khosla et al., 2015), publicly available at memorability.csail.mit.edu).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the method used to obtain memorability scores.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "75e200a6-301a-46be-baea-0ca1c75395bf",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C59",
+      "claim": "LaMem consists of 60K images drawn from a diverse range of sources.",
+      "claim_type": "EXPLICIT",
+      "source": "LaMem consists of 60K images drawn from a diverse range of sources (see Khosla et al., 2015 for more detail).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the dataset with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "995f7bdc-833f-4565-afb3-d82454e88ed9",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C60",
+      "claim": "Each image in LaMem is associated with a memorability score based on human performances in an online memory game on Amazon's Mechanical Turk.",
+      "claim_type": "EXPLICIT",
+      "source": "Each image in this dataset is associated with a memorability score based on human performances in an online memory game on Amazon's Mechanical Turk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of how memorability scores were obtained.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "3cb9077b-a798-4753-b346-eafd5f8f6589",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C61",
+      "claim": "MemNet estimates reach 0.64 rank correlation with mean human-estimated memorability.",
+      "claim_type": "EXPLICIT",
+      "source": "After training, MemNet estimates visual memorability of natural images near the upper bound imposed by human performance: MemNet estimates reach 0.64 rank correlation with mean human-estimated memorability",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of model performance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "59aa0637-31c0-4147-921e-c1adaa540849",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C62",
+      "claim": "The upper bound of consistency between human memorability scores has a rank correlation of 0.68.",
+      "claim_type": "EXPLICIT",
+      "source": "while the upper bound of consistency between human scores has a rank correlation of 0.68.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of human performance consistency.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "82321714-6ae9-4feb-8252-b67e259bd798",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C63",
+      "claim": "All reported CNN models were evaluated on the full test set of split 1 of LaMem, which contains 10,000 images.",
+      "claim_type": "EXPLICIT",
+      "source": "All reported models were evaluated on the full test set of split 1 of LaMem, which contains 10,000 images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the evaluation dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "7ea019a5-a322-4c04-aa41-e6c214768bc5",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C64",
+      "claim": "HybridCNN is a network with an identical architecture to AlexNet.",
+      "claim_type": "EXPLICIT",
+      "source": "HybridCNN is a network with an identical architecture to AlexNet (Krizhevsky et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the network architecture with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "a039e56e-d663-44e0-9b7e-8ba12c10444c",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C65",
+      "claim": "HybridCNN was first trained to classify natural images using data from ImageNet ILSVRC 2012 and Places datasets for a combined 1183-way classification task.",
+      "claim_type": "EXPLICIT",
+      "source": "HybridCNN was first trained to classify natural images of objects and scenes using data from the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2012, a 1000-way object classification dataset (Deng et al., 2009), as well as the Places 183-way scene classification dataset (Zhou et al., 2014), for a combined 1183-way classification task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the training procedure with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "426033d8-955d-429b-aa74-bee03926e589",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "claim_id": "C66",
+      "claim": "95% confidence intervals for the correlation coefficient of each CNN layer were obtained by bootstrapping over 10,000 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "95% confidence intervals for the correlation coefficient of each layer were obtained by bootstrapping over the set of 10,000 per-image layer magnitudes and memorability scores. 95% confidence intervals were estimated empirically as the upper and lower 97.5%-centiles of the bootstrapped correlation coefficients for each layer and condition. Bootstrapped resampling was performed independently for each layer and each condition (trained or randomly connected). In all cases, bootstrap estimates were performed using 10,000 samples (with replacement) of the full dataset of 10,000 images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the statistical analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c8b49c22-1015-4f5b-9df2-d06a5b01623e",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IT population response magnitude strongly correlates with image memorability (r=0.68, p=1\u00d710\u207b\u00b9\u2075), with this correlation remaining robust across individual monkeys, time windows, alternative magnitude metrics, and when excluding high-firing units. Changes in image content produce ~20% variation in IT population response magnitudes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 provide converging statistical evidence with highly significant p-values and multiple control analyses. The correlation is strong (r=0.68) and survives numerous robustness checks including individual monkey analyses, temporal windows, and exclusion of high-firing units. The effect size (~20% variation, C32) is substantial and biologically meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "5ff55c4e-ed3b-4f1f-b093-af269865175e",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The correlation between IT response magnitude and memorability remains strong (r=0.62, p=2\u00d710\u207b\u00b9\u2070) when excluding images containing faces/bodies, indicating results are not artifacts of recording from face/body-selective patches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 provide important control analysis showing the effect persists when face/body images (only 19% of stimuli, C52) are excluded. This addresses a potential confound given known face/body patches in IT. The correlation remains highly significant with only modest reduction in strength.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "ca2dae8d-8852-4c61-a7e7-f733c55e9c8d",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The memorability-magnitude correlation persists for both novel (r=0.62, p=2\u00d710\u207b\u00b9\u00b2) and familiar (r=0.58, p=8\u00d710\u207b\u00b9\u00b9) image presentations, despite IT showing 6.2% repetition suppression for familiar images.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 demonstrate the effect is not driven by novelty/familiarity status. The correlation remains highly significant in both conditions with similar effect sizes, even though repetition suppression is present. This strengthens the interpretation that memorability is an intrinsic image property reflected in IT responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "24e3d268-9e6f-494b-b48a-2cf404037b6f",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Human-based memorability scores predict which images monkeys find most memorable during the single-exposure visual memory task.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C22 reports cross-species validation but the manuscript notes monkey behavioral data are binary (correct/incorrect) rather than graded memorability scores. Figure 2c shows a trend but the statistical power for this cross-species comparison is limited. The correlation exists but its strength and reliability require further validation with larger behavioral datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "36f4d8a8-1ddc-4a63-831b-f78c8ff6a6fc",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In CNNs trained for object categorization (HybridCNN), the correlation between image memorability and population response magnitude is significantly higher in trained versus randomly initialized networks across all layers, with correlation strength generally increasing across the network hierarchy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 provide clear statistical evidence (p<0.0001 for all layers) that training for object recognition produces memorability-magnitude correlations. The hierarchical increase (C24, Figure 3) parallels the IT findings. The comparison to random networks is an appropriate control demonstrating the effect requires training.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "4c5c2cf3-064e-4f08-bedc-993d488f6ffb",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The memorability-response magnitude correlation pattern replicates in two additional CNN architectures (AlexNet and VGG-16), with correlation strength increasing across network hierarchies, suggesting the signature is not unique to a particular architecture or training procedure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 demonstrates replication across multiple architectures with similar hierarchical patterns. However, VGG-16 shows non-significant effects in early layers (p=0.2-0.9 for Conv 1.1-2.2), indicating some architecture-dependence. The overall pattern supports generalization but with nuances across architectures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "a1ad1747-bae7-41ad-8a71-ada1cbecd1ac",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Variation in IT population response magnitude is proposed as a natural consequence of optimizations required for visual processing (object recognition), with memorability emerging from feedforward computations rather than requiring top-down attention or memory-specific plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C27, C35, C42 make mechanistic inferences from CNN modeling. While CNNs trained only for object recognition do show memorability-magnitude correlations (supporting C35, C42), this demonstrates correlation not causation. The claim that memorability is a \"natural consequence\" of visual processing optimizations (C4) is a reasonable hypothesis but requires additional experiments manipulating training objectives or testing untrained biological systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "ca8bad7a-ec2f-4f83-9d2d-879987821765",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Memorability is reflected in IT via a representational scheme (response magnitude) that is largely orthogonal to how IT encodes object identity (response direction), revealing previously unappreciated variation in robustness of visual representations within natural images.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C31 present a coherent theoretical framework supported by the empirical findings. The orthogonality claim is well-justified: identity is decoded from response patterns (direction) while memorability correlates with magnitude. This explains how IT can multiplex both types of information and why standard analyses normalizing magnitude would miss memorability effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "edcc044d-7e44-43be-a150-4e6d79706f28",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neural data were collected from 707 IT units across 27 recording sessions in two rhesus monkeys performing a single-exposure visual memory task, with data concatenated into pseudopopulations by aligning images with similar memorability scores to enable accurate population response magnitude estimation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C57 describe the experimental methods. While the data collection appears rigorous (appropriate screening, quality control, ethical compliance), the pseudopopulation construction (C45) raises concerns. Aligning images by memorability scores (average SD=0.05, C57) could introduce circularity bias\u2014grouping images by the dependent variable (memorability) before testing correlation with neural responses. This methodological choice requires careful justification and sensitivity analyses to rule out artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "7e8b99e2-3c9c-4c49-8f5e-a44309f7d9bd",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Image memorability scores were obtained using MemNet, a CNN trained on 60K images from LaMem dataset with human memorability scores, achieving 0.64 rank correlation with human estimates (near the 0.68 human consistency upper bound).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 describe the memorability scoring method with appropriate citations. MemNet's performance (0.64 correlation) approaches human consistency limits (0.68), validating its use as a proxy for human memorability judgments. This is a well-established method from prior work (Khosla et al., 2015).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "426e07fc-6659-428a-a147-ea72f2b464bc",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CNN analyses used three architectures (HybridCNN, AlexNet, VGG-16) evaluated on 10,000 LaMem test images, with 95% confidence intervals obtained via bootstrapping over 10,000 samples, comparing trained networks to randomly initialized controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 describe appropriate computational methods. The sample size (10,000 images) is substantial, bootstrapping provides valid confidence intervals, and the random initialization control is essential for interpretation. The methods are clearly described and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "f055f938-f846-4d49-9228-21d40d2e5fa0",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior understanding holds that IT encodes object identity as distinct spike patterns (response direction) accessible via linear decoding, with population response magnitude typically assumed unimportant and disregarded in representational similarity analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C30 accurately characterize established knowledge about IT coding schemes with appropriate citations (DiCarlo et al., 2012; Kriegeskorte et al., 2008; Chang and Tsao, 2017). This provides necessary context for the novelty of examining response magnitude.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "8fb4d427-0b08-4639-b0ad-3f43773b93ca",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Image memorability refers to consistent cross-individual variation in how well images are remembered, with neural correlates residing in higher visual areas where memorability can be decoded from fMRI/MEG, and more memorable images evoking larger fMRI responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 accurately summarize prior memorability research with appropriate citations (Isola et al., 2011; Khosla et al., 2015; Bainbridge et al., 2017; Mohsenzadeh et al., 2019). This establishes the foundation for the current study's focus on IT and response magnitude.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    },
+    {
+      "id": "eb94265d-c686-48c8-85a6-67aece586100",
+      "content_id": "f04a056d-df38-4027-a768-d7ffbb23cbb3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings relate to subsequent memory effects, CNN models of IT object representations, cross-species similarities in object processing, and distinctions between memorability and salience, as established in prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C41 provide appropriate contextualization with relevant citations. These accurately represent prior work on subsequent memory effects (Paller & Wagner, 2002), CNN-IT correspondence (Yamins & DiCarlo, 2016), human-monkey similarities (Rajalingham et al., 2015), and memorability-salience distinctions (Bainbridge et al., 2013, 2017). This situates the current findings within the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:54:31.176044Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a397caaa-6764-4d8f-aa7a-0f8598d09dc5",
+      "result_id": "c8b49c22-1015-4f5b-9df2-d06a5b01623e"
+    },
+    {
+      "claim_id": "089126e3-d7b0-43be-a5b5-7f0dd5f7f691",
+      "result_id": "c8b49c22-1015-4f5b-9df2-d06a5b01623e"
+    },
+    {
+      "claim_id": "83826c2a-f6e4-403b-a1a3-1e7a3935a885",
+      "result_id": "c8b49c22-1015-4f5b-9df2-d06a5b01623e"
+    },
+    {
+      "claim_id": "df2ac2e2-b38d-4f1e-bae1-9bb64d96b44c",
+      "result_id": "c8b49c22-1015-4f5b-9df2-d06a5b01623e"
+    },
+    {
+      "claim_id": "ac3d156c-64b2-4455-ae17-65c1561840cf",
+      "result_id": "c8b49c22-1015-4f5b-9df2-d06a5b01623e"
+    },
+    {
+      "claim_id": "c3c17935-3d90-4661-b325-cd1cbc023f04",
+      "result_id": "c8b49c22-1015-4f5b-9df2-d06a5b01623e"
+    },
+    {
+      "claim_id": "09a825cd-10bd-461d-9953-cae10da9408c",
+      "result_id": "c8b49c22-1015-4f5b-9df2-d06a5b01623e"
+    },
+    {
+      "claim_id": "b1d61394-cbd8-44e9-8c2a-3262d6d6bd3e",
+      "result_id": "c8b49c22-1015-4f5b-9df2-d06a5b01623e"
+    },
+    {
+      "claim_id": "9a9d091e-386f-4bb9-aac3-4884b3fef696",
+      "result_id": "5ff55c4e-ed3b-4f1f-b093-af269865175e"
+    },
+    {
+      "claim_id": "2c396748-407b-4628-b97e-cca1c1a3a426",
+      "result_id": "5ff55c4e-ed3b-4f1f-b093-af269865175e"
+    },
+    {
+      "claim_id": "85852cb4-d437-4ae3-bf99-e5a2ae30a1fe",
+      "result_id": "5ff55c4e-ed3b-4f1f-b093-af269865175e"
+    },
+    {
+      "claim_id": "9b27b7a4-b167-4c00-bce6-bcbe9b21ccc4",
+      "result_id": "ca2dae8d-8852-4c61-a7e7-f733c55e9c8d"
+    },
+    {
+      "claim_id": "6b44e5cf-65d4-4679-a18e-2da2d137addf",
+      "result_id": "ca2dae8d-8852-4c61-a7e7-f733c55e9c8d"
+    },
+    {
+      "claim_id": "d13af536-998d-4f78-8ca8-cebe3e8cd1f9",
+      "result_id": "ca2dae8d-8852-4c61-a7e7-f733c55e9c8d"
+    },
+    {
+      "claim_id": "0600729c-455b-43d6-94c0-47412736ddfa",
+      "result_id": "24e3d268-9e6f-494b-b48a-2cf404037b6f"
+    },
+    {
+      "claim_id": "b9fdb904-5850-4195-beac-927958ef4fbb",
+      "result_id": "36f4d8a8-1ddc-4a63-831b-f78c8ff6a6fc"
+    },
+    {
+      "claim_id": "a17eee8c-eefd-4751-857d-852c0e14e198",
+      "result_id": "36f4d8a8-1ddc-4a63-831b-f78c8ff6a6fc"
+    },
+    {
+      "claim_id": "89cf97d8-8410-4ca1-89b0-df7f1f043474",
+      "result_id": "36f4d8a8-1ddc-4a63-831b-f78c8ff6a6fc"
+    },
+    {
+      "claim_id": "5f78abe9-f7ca-4a84-97a0-ccec00ec8fb9",
+      "result_id": "36f4d8a8-1ddc-4a63-831b-f78c8ff6a6fc"
+    },
+    {
+      "claim_id": "eb3efdb5-24bb-42c4-84d3-66863a0798c6",
+      "result_id": "4c5c2cf3-064e-4f08-bedc-993d488f6ffb"
+    },
+    {
+      "claim_id": "2d254b90-3dde-4f03-927a-125e9ca1dfda",
+      "result_id": "4c5c2cf3-064e-4f08-bedc-993d488f6ffb"
+    },
+    {
+      "claim_id": "4b2bf52f-ff29-4fad-8179-d9b082fb26e8",
+      "result_id": "a1ad1747-bae7-41ad-8a71-ada1cbecd1ac"
+    },
+    {
+      "claim_id": "2df8428f-ed80-4dfb-8248-bddf9e8c8510",
+      "result_id": "a1ad1747-bae7-41ad-8a71-ada1cbecd1ac"
+    },
+    {
+      "claim_id": "a294a312-b938-4d37-a4f2-51670546b58b",
+      "result_id": "a1ad1747-bae7-41ad-8a71-ada1cbecd1ac"
+    },
+    {
+      "claim_id": "e7116581-7a0a-4688-8cec-1c3c80daa5ee",
+      "result_id": "a1ad1747-bae7-41ad-8a71-ada1cbecd1ac"
+    },
+    {
+      "claim_id": "a482a91d-a8a2-426e-9693-b9a5dcdaaa2e",
+      "result_id": "ca8bad7a-ec2f-4f83-9d2d-879987821765"
+    },
+    {
+      "claim_id": "76ce95f0-8aa6-4fa9-a7ba-b59a3811d516",
+      "result_id": "ca8bad7a-ec2f-4f83-9d2d-879987821765"
+    },
+    {
+      "claim_id": "f667efd9-6de8-406c-82c4-40874221f6f9",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "9ed7a1b6-8587-4e9b-8aac-3f4ce47d767f",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "b3d048b2-b732-4c58-bc63-ac5b6fb8fc09",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "fcf3d0cf-28f2-4853-8cf2-362f44f6451f",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "fd14c203-639d-406f-b31a-8c5bdd22dd79",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "edacf9f4-db0a-4c51-a693-d017d3772661",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "4e409db1-c583-4eb5-8398-26a3e556b512",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "0ff1f957-1b26-453e-9398-152bd0107cb5",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "15d77e7c-9020-4847-a6d4-bdf82b506f87",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "1306d6b6-cc1f-4738-9fa5-e5e5566b63af",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "c9fe88d7-10d4-4fdd-bedc-b23fc3fc79bb",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "797048d5-0c9d-4323-8e80-1c231bcfc1a7",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "0dc3a576-31ac-43b5-ae17-ed217e9d283c",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "2714e331-738d-42f1-ae34-cca22396b78a",
+      "result_id": "edcc044d-7e44-43be-a150-4e6d79706f28"
+    },
+    {
+      "claim_id": "d450b6dd-d388-4297-b7b9-df7ab6fdca51",
+      "result_id": "7e8b99e2-3c9c-4c49-8f5e-a44309f7d9bd"
+    },
+    {
+      "claim_id": "75e200a6-301a-46be-baea-0ca1c75395bf",
+      "result_id": "7e8b99e2-3c9c-4c49-8f5e-a44309f7d9bd"
+    },
+    {
+      "claim_id": "995f7bdc-833f-4565-afb3-d82454e88ed9",
+      "result_id": "7e8b99e2-3c9c-4c49-8f5e-a44309f7d9bd"
+    },
+    {
+      "claim_id": "3cb9077b-a798-4753-b346-eafd5f8f6589",
+      "result_id": "7e8b99e2-3c9c-4c49-8f5e-a44309f7d9bd"
+    },
+    {
+      "claim_id": "59aa0637-31c0-4147-921e-c1adaa540849",
+      "result_id": "7e8b99e2-3c9c-4c49-8f5e-a44309f7d9bd"
+    },
+    {
+      "claim_id": "82321714-6ae9-4feb-8252-b67e259bd798",
+      "result_id": "426e07fc-6659-428a-a147-ea72f2b464bc"
+    },
+    {
+      "claim_id": "7ea019a5-a322-4c04-aa41-e6c214768bc5",
+      "result_id": "426e07fc-6659-428a-a147-ea72f2b464bc"
+    },
+    {
+      "claim_id": "a039e56e-d663-44e0-9b7e-8ba12c10444c",
+      "result_id": "426e07fc-6659-428a-a147-ea72f2b464bc"
+    },
+    {
+      "claim_id": "426033d8-955d-429b-aa74-bee03926e589",
+      "result_id": "426e07fc-6659-428a-a147-ea72f2b464bc"
+    },
+    {
+      "claim_id": "62f1cb81-25f8-4464-9265-e635d1b7e98c",
+      "result_id": "f055f938-f846-4d49-9228-21d40d2e5fa0"
+    },
+    {
+      "claim_id": "91d3168a-5ac5-4d4a-90b6-b9cc3980cfa7",
+      "result_id": "f055f938-f846-4d49-9228-21d40d2e5fa0"
+    },
+    {
+      "claim_id": "ba50d017-dab2-4659-a94b-97976689737a",
+      "result_id": "f055f938-f846-4d49-9228-21d40d2e5fa0"
+    },
+    {
+      "claim_id": "5540b1e9-3841-4ee6-82e6-bbf7d5d47d57",
+      "result_id": "f055f938-f846-4d49-9228-21d40d2e5fa0"
+    },
+    {
+      "claim_id": "ccbc1ac2-8874-47dd-8350-3b0e3b4f56eb",
+      "result_id": "8fb4d427-0b08-4639-b0ad-3f43773b93ca"
+    },
+    {
+      "claim_id": "03cbc6b2-29d8-4a1f-b910-c60625fb31f6",
+      "result_id": "8fb4d427-0b08-4639-b0ad-3f43773b93ca"
+    },
+    {
+      "claim_id": "dcf94c9c-7bae-4b04-9240-ee55d83a46e9",
+      "result_id": "8fb4d427-0b08-4639-b0ad-3f43773b93ca"
+    },
+    {
+      "claim_id": "0d8540d6-07c7-4448-9542-53bf6d72a87f",
+      "result_id": "8fb4d427-0b08-4639-b0ad-3f43773b93ca"
+    },
+    {
+      "claim_id": "e56e2e8c-f4fb-4d27-84db-d071ed91aad4",
+      "result_id": "eb94265d-c686-48c8-85a6-67aece586100"
+    },
+    {
+      "claim_id": "6e045e60-3b84-4f64-ab4a-2e8171a5b7c2",
+      "result_id": "eb94265d-c686-48c8-85a6-67aece586100"
+    },
+    {
+      "claim_id": "f36548d3-ab87-4501-a9ca-0e584a25dcfc",
+      "result_id": "eb94265d-c686-48c8-85a6-67aece586100"
+    },
+    {
+      "claim_id": "dc19c4e0-d424-4b0d-8579-2078522c3d78",
+      "result_id": "eb94265d-c686-48c8-85a6-67aece586100"
+    },
+    {
+      "claim_id": "f01ae804-a246-4b6b-bb0b-013fbfa87d1b",
+      "result_id": "eb94265d-c686-48c8-85a6-67aece586100"
+    },
+    {
+      "claim_id": "acf6fbc1-e07e-40ba-b628-b8f94d759af7",
+      "result_id": "eb94265d-c686-48c8-85a6-67aece586100"
+    },
+    {
+      "claim_id": "59908a69-ab4c-4052-8f63-0646250728ec",
+      "result_id": "eb94265d-c686-48c8-85a6-67aece586100"
+    },
+    {
+      "claim_id": "c85ebc3f-028f-4953-9aff-7d3f35c1658c",
+      "result_id": "eb94265d-c686-48c8-85a6-67aece586100"
+    }
+  ],
+  "comparisons": []
+}

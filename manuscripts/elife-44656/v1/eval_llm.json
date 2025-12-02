@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "TRF1 regulates pluripotency by controlling genome-wide polycomb binding through TERRA-mediated mechanisms. TRF1 depletion leads to increased TERRA levels, enhanced TERRA binding to pluripotency genes, and altered polycomb recruitment, resulting in loss of the na\u00efve pluripotent state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The major conclusion is well-supported by converging evidence from multiple experimental approaches: RNA-seq demonstrates gene expression changes (C1, C49), ChIP-seq shows altered SUZ12/H3K27me3 binding (C56, C60), Northern blot and RNA-FISH confirm TERRA upregulation (C79-C84), CHIRT-seq maps TERRA binding genome-wide (C91-C113), and RIP demonstrates increased SUZ12-TERRA interaction (C114). The mechanistic model linking TRF1\u2192TERRA\u2192PRC2\u2192gene expression is supported by correlative data across multiple genomic loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TRF1 depletion in 2i-grown iPS cells increases multitelomeric signals without significantly increasing DNA damage response markers (\u03b3H2AX) or telomere-induced foci (TIFs) under the experimental conditions used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by direct experimental evidence from telomeric FISH (Figure 1\u2014figure supplement 1A), Western blot (Figure 1\u2014figure supplement 1B), immunofluorescence (Figure 1\u2014figure supplement 1C), and TIF quantification (Figure 1\u2014figure supplement 1D). The authors appropriately note these are the specific experimental conditions used, acknowledging potential time-dependent effects. This validates that observed transcriptional changes are not secondary to DNA damage responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "TRF1 depletion causes widespread transcriptional changes affecting 328 downregulated and 483 upregulated genes, with downregulated genes enriched for pluripotency factor targets (OCT4, SOX2, NANOG, MYC) and upregulated genes enriched for polycomb targets and differentiation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data (C49) with GSEA and Enrichr analyses (C42-C48, C50-C55) provide robust statistical support for these enrichments. The use of two independent biological replicates, appropriate FDR thresholds (FDR <0.05), and multiple complementary pathway analyses (GSEA, Enrichr, KEGG, Wikipathways) strengthen confidence. The specific percentages reported (e.g., >40% OCT4 targets in C50) are directly supported by Figure 1L data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "TRF1 abrogation dramatically increases genome-wide SUZ12 binding (440\u21924230 peaks) and H3K27me3 deposition (14,317\u219216,165 peaks) without altering total protein levels, with recruited sites enriched at pluripotency and differentiation pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data with two biological replicates (Figure 2, Figure 2\u2014figure supplement 1) demonstrate reproducible increases in polycomb binding. Western blots from four independent experiments confirm unchanged total SUZ12 and H3K27me3 levels (C57, C61), ruling out overexpression artifacts. The dramatic ~10-fold increase in SUZ12 peaks is striking and well-documented. Pathway enrichment analyses (C58, C59, C62) are appropriately conducted and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "A subset of 14 downregulated genes recruit both SUZ12 and H3K27me3 upon TRF1 depletion, including the key pluripotency regulator Myc, with these genes enriched for pluripotency factor targets and relevant developmental pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Venn diagram analysis (C63, Figure 3A) identifies the overlap, ChIP-seq tracks show clear Myc recruitment (C64, Figure 3B), and q-PCR validation in three independent experiments confirms downregulation (Figure 3C). Enrichr analysis of Cluster 1 genes (C65, C66) provides statistical support for pathway enrichments. The convergence of RNA-seq, ChIP-seq, and q-PCR validation across multiple experiments is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Upregulated genes upon TRF1 deletion show recruitment of SUZ12 and H3K27me3, are targets of differentiation and polycomb factors, and are enriched in differentiation and pluripotency pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Venn diagram (C67, Figure 4A), heatmap analyses (Figure 4D), and Enrichr results (C68, C69, Figures 4E, 4\u2014figure supplement 1A) provide consistent support. Q-PCR validation in three independent experiments (Figure 4C) confirms upregulation. The observation that polycomb-marked genes can be transcriptionally active is consistent with prior literature (Pasini et al., 2007, cited in text) and the bivalent gene model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "TRF1 depletion induces recruitment of SUZ12 and H3K27me3 to bivalent genes including Hox clusters, consistent with transition from na\u00efve to primed pluripotent state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by heatmap analysis of known bivalent genes (C71, Figure 2\u2014figure supplement 3A), genome browser tracks showing Hox cluster recruitment (C72, Figure 2\u2014figure supplement 3B), and analysis showing ~70% of H3K27me3-enriched upregulated genes are bivalent (C73). The interpretation is strengthened by citation to Marks et al., 2012 (C70, C74) establishing the na\u00efve/primed distinction. This provides important biological context for the observed changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TRF1 binds few genomic sites outside telomeres (mostly at TTAGGG/CCCTAA repeats), with only three TRF1-bound genes showing altered expression upon TRF1 depletion. Mass spectrometry did not detect SUZ12 in TRF1 immunocomplexes, suggesting no direct TRF1-PRC2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "TRF1 ChIP-seq with two replicates (C75, C76, Figure 2\u2014figure supplement 4A-B), overlap analysis with RNA-seq (C75), and mass spectrometry data (C78, Supplementary file 4) support these claims. The finding that TRF1 binds ZFP322A target genes (C77) is interesting but preliminary. Importantly, these data argue against direct TRF1-mediated polycomb recruitment, supporting the TERRA-mediated mechanism proposed. The authors appropriately acknowledge the experimental limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "TRF1 depletion dramatically increases TERRA expression in multiple cell types (iPS cells and keratinocytes), with TERRA levels higher in iPS cells than differentiated MEFs, indicating TRF1 functions as a TERRA repressor during pluripotency induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal methods demonstrate TERRA upregulation: RNA-FISH (C79, Figure 5A), Northern blot in three independent experiments (C80, Figure 5B), comparison across cell types (C81, C82, Figure 5C), and validation in Terf1\u0394/\u0394 keratinocytes (C84, Figure 5D). The consistency across methods, cell types, and genetic models is compelling. The inference that TRF1 represses TERRA (C83) is well-supported by the data, though the mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "TRF1 depletion increases TERRA levels in human cells (prior work), but effects in mouse immortalized MEFs are inconsistent across studies, suggesting potential cell-type or context-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior literature (C85: Porro et al., 2014; Zeng et al., 2017; Sadhukhan et al., 2018; C86: Sfeir et al., 2009; Schoeftner and Blasco, 2008). The authors appropriately acknowledge discrepancies and propose reasonable explanations (immortalization effects, cell-type specificity). This contextualizes their findings within the broader literature and highlights the importance of their specific experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "TRF2 depletion in 2i-grown iPS cells does not increase TERRA levels as measured by RNA-FISH or Northern blot, suggesting TRF2 does not have a major role in controlling TERRA expression in this system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both RNA-FISH (C87, Figure 5\u2014figure supplement 1B) and Northern blot (C88, Figure 5\u2014figure supplement 1C) show no TERRA increase upon TRF2 depletion. The authors appropriately limit their conclusion to their specific experimental system (2i-grown iPS cells), acknowledging that TRF2 may regulate TERRA in other contexts. This control experiment strengthens the specificity of the TRF1-TERRA relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "TERRA expression decreases during ES cell differentiation with retinoic acid, coincident with decreased TRF1 protein levels, suggesting coordinated regulation during developmental transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-FISH shows decreased TERRA (C89, Figure 5\u2014figure supplement 2B) and immunofluorescence shows decreased TRF1 (C90, Figure 5\u2014figure supplement 2C) upon retinoic acid treatment. The correlation is consistent with the proposed model, though causality is not established. The experiment was performed once, limiting confidence, but the findings align with prior work (Marion et al., 2009; Schneider et al., 2013) showing higher TRF1 in pluripotent cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "TERRA binds 10,670 genomic locations (\u226510-fold enrichment) in 2i-grown iPS cells, predominantly in non-coding regions, with 90.4% overlap with previously identified TERRA binding sites in ESCs and highest enrichment at the chromosome 18 subtelomere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CHIRT-seq data (C91) with appropriate enrichment thresholds, genomic distribution analysis (C92, Figure 6A), comparison with Chu et al., 2017 (C93, Figure 6B), and identification of chr18 subtelomere as top peak (C94, Figure 6C) provide strong validation. The high overlap with prior ESC data and identification of known TERRA loci validate the technique. The experiment was performed once, which is a limitation, but the extensive validation against prior work increases confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Genes associated with TERRA peaks are enriched for SUZ12 targets (>40%), PRC2 complex binding, pluripotency/differentiation transcription factors, and H3K27me3 marks, with ~34% of SUZ12 peaks and ~33% of H3K27me3 peaks having TERRA binding nearby.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Enrichr analyses (C95, C96, C97, Figures 6D-E) and heatmap quantification (C98, Figure 6F) support these enrichments. The substantial overlap between TERRA binding sites and polycomb-marked regions is consistent with the proposed mechanism. However, the ~34% overlap (C98) indicates that TERRA binding alone does not fully explain polycomb recruitment, suggesting additional mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Among genes with SUZ12 or H3K27me3 peaks exclusive to TRF1-depleted cells, 43.9% (SUZ12) and 49.2% (H3K27me3) are also annotated in TERRA CHIRT-seq, suggesting TERRA involvement in TRF1-dependent polycomb recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Venn diagram analysis (C99, C100, Figure 6G) demonstrates substantial overlap between TRF1-dependent polycomb sites and TERRA binding sites. The ~44-49% overlap is significant but not complete, suggesting TERRA is an important but not exclusive mechanism for TRF1-dependent polycomb recruitment. The authors appropriately acknowledge that secondary effects and technical limitations (chromatin sonication disrupting long-range interactions) may affect these percentages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Approximately 30% of genes with altered expression upon TRF1 deletion are annotated to TERRA peaks, with ~29% of downregulated and ~27% of upregulated genes showing TERRA binding near their TSS. Among TERRA-bound differentially expressed genes, 90.1% of downregulated and 70.1% of upregulated genes show increased SUZ12 or H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Venn diagram analyses (C101, C102, Figure 7A), heatmap quantifications (C103, C104, Figures 7B-C), and overlap assessments (C105, C106, Figures 7D-E) provide quantitative support. The high percentage of TERRA-bound genes showing polycomb recruitment (90.1% and 70.1%) strengthens the mechanistic link. However, the modest overall overlap (~30%) indicates TERRA-independent mechanisms also contribute to TRF1-dependent gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Downregulated genes with increased PRC2 and TERRA binding are enriched for pluripotency factor targets (OCT4, SOX2, NANOG) and PluriNetwork pathway, while upregulated genes with increased PRC2 and TERRA binding are enriched for differentiation factors and Neural Crest Differentiation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Enrichr analyses (C107, C108, C109, C110, Figures 7F-I) demonstrate statistically significant pathway enrichments. The distinct enrichment patterns for downregulated (pluripotency) versus upregulated (differentiation) genes support the model that TRF1 depletion causes loss of na\u00efve state and initiation of differentiation programs. The biological coherence of these findings strengthens confidence in the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "CHIRT-qPCR validation confirms increased TERRA binding upon TRF1 depletion at TERRA transcription sites, downregulated gene loci, and upregulated gene loci, supporting increased TERRA transcription and enhanced genomic binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CHIRT-qPCR data (C111, C112, C113, Figure 7J) validate CHIRT-seq findings at selected loci. The increased binding at TERRA transcription sites (C111) supports the interpretation that elevated TERRA levels result from increased transcription. Validation at both downregulated and upregulated genes (C112, C113) confirms the genome-wide CHIRT-seq patterns. The experiment was performed once, which is a limitation, but the consistency across multiple loci increases confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "SUZ12 shows increased binding to TERRA when TRF1 is depleted, as demonstrated by RNA immunoprecipitation, supporting the model that elevated TERRA levels mediate increased SUZ12 recruitment to the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RIP experiment (C114, Figure 9) directly demonstrates increased SUZ12-TERRA interaction upon TRF1 depletion. This is a critical mechanistic link supporting the TRF1\u2192TERRA\u2192PRC2 model. The experiment was performed once, which limits confidence, but the result is consistent with all other data in the manuscript. Additional validation (e.g., TERRA knockdown rescuing polycomb recruitment) would strengthen the causal claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background claims establishing the roles of H3K27me3, PRC2 components, polycomb complexes in pluripotency, telomere structure, TRF1 in reprogramming, and PRC2-TERRA interactions, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C7-C38) accurately summarize established knowledge from cited literature. They provide essential context for interpreting the current findings. The citations appear appropriate and the claims are consistent with the cited work. These are standard background claims that frame the study's rationale and significance.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28"
+    ],
+    "result": "As of February 20, 2020, COVID-19 had caused over 75,000 cases in China and spread to 25 countries. New epidemic hotspots emerged on multiple continents, prompting widespread implementation of traveler screening measures globally, though effectiveness varied by jurisdiction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the epidemiological context through citations to WHO reports and news sources. The temporal progression from initial containment to emerging hotspots is well-documented and provides appropriate background for the screening analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Screening is an imperfect barrier to disease spread due to multiple factors including incubation period, symptom variability, equipment performance, and traveler evasion. Previous work estimated arrival screening would miss 50-75% of infected cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by multiple citations to prior screening studies. The enumeration of failure modes is comprehensive and grounded in established literature, providing appropriate context for the current analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C153",
+      "C154"
+    ],
+    "result": "Key COVID-19 parameters remain uncertain but critical for screening effectiveness. The mean incubation period is estimated at 5-6.5 days across studies. Clinical data show 80% of cases are mild, with conspicuously few cases in children. Asymptomatic fractions range from 31-70% in active surveillance contexts, with a recent estimate of 34.6%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These parameter estimates are well-documented with specific citations and sample sizes. The authors appropriately acknowledge uncertainty and provide ranges. The convergence of multiple independent estimates for incubation period strengthens confidence, though asymptomatic fraction estimates show wider variation reflecting different surveillance contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The model categorizes infected travelers into four detectability classes based on symptom presence and exposure awareness. Detection probability depends on incubation period, subclinical case fraction, scanner sensitivity, exposure awareness, and self-reporting rates. In growing epidemics, most travelers are recently infected and pre-symptomatic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model structure is clearly described and logically sound. The four-category framework appropriately captures the screening process. The dependence on epidemic growth phase is epidemiologically justified - growing epidemics naturally have more recent infections. Model assumptions are consistent with WHO guidelines (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C95"
+    ],
+    "result": "In a growing epidemic under best-case assumptions (5% subclinical, both departure and arrival screening), only 30% (95% CI: 10-53%) of infected travelers are detected. Nearly two-thirds are fundamentally undetectable because they are pre-symptomatic, with fever screening being the dominant detection mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a core finding directly supported by model simulations shown in Figure 3A-B. The quantitative estimates are clearly presented with uncertainty intervals. The mechanistic explanation (recent infection in growing epidemics) is epidemiologically sound. The finding that most failures are due to undetectable cases rather than screening errors is important and well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C96"
+    ],
+    "result": "In a stable epidemic with 25% subclinical cases, arrival screening alone detects 17-53% of infected travelers, while combined departure and arrival screening detects 23-63%. Screening effectiveness increases as epidemics transition from growing to stable due to changes in infection age distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These results are supported by model simulations (Figure 3-supplement 1). The comparison between growing and stable epidemics is methodologically sound and the mechanistic explanation (more time for symptom development in stable epidemics) is valid. The quantitative estimates include appropriate uncertainty ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "During a growing epidemic, the probability of detecting the first two consecutive cases ranges from 0.02-0.11, and detecting three or more cases never exceeds 0.04. More than half of simulations fail to detect the first imported case. Screening is very unlikely to delay importation beyond 1-3 cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are directly supported by simulation results in Figure 3C. The analysis appropriately addresses the policy-relevant question of whether screening can delay initial importation. The consistently low probabilities across scenarios strengthen the conclusion that screening provides minimal delay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Sensitivity analysis shows detection fraction is moderately sensitive to all parameters (PRCC 0.1-0.3). R0 and incubation period are negatively associated with detection, while scanner sensitivity, questionnaire sensitivity, and exposure awareness are positively associated. In stable epidemics, sensitivity to symptom screening parameters increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sensitivity analysis uses appropriate methods (Latin hypercube sampling, PRCC) and results are shown in Figure 4. The direction of associations is intuitive and mechanistically explained. The finding that stable epidemics show different sensitivity patterns is logically consistent with the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Model predictions are consistent with independent empirical observations: other studies estimate two-thirds of imported cases go undetected, 72% of imported cases had symptom onset after travel, and numerous PCR-positive cases were asymptomatic at screening on repatriation flights and cruise ships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This external validation strengthens confidence in model predictions. The authors appropriately compare their results to independent data sources (C108: Niehus et al., Bhatia et al.; C110-111: line list analysis; C112: multiple surveillance reports). The consistency across different data types is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C139"
+    ],
+    "result": "Even under generous assumptions, undetectable cases (pre-symptomatic or unaware of exposure) contribute most to screening failure, while correctable failures (missed fever or exposure awareness) play a minor role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is clearly demonstrated in Figure 3B showing the large red 'undetectable' region. The distinction between fundamental limitations and correctable errors is important for policy. The result is robust across parameter scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The true fraction of subclinical cases remains a crucial unknown that strongly impacts screening effectiveness. Up to half of cases in active surveillance show no symptoms at diagnosis. Children are conspicuously underrepresented in clinical data (2.1% of 44,672 cases), suggesting possible age-related differences in symptom severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately identify this as a key uncertainty. The empirical observations about asymptomatic cases and age distribution are well-cited (C117-118). The speculation about age-severity interactions (C119-120) is clearly presented as uncertain but is a reasonable hypothesis given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C97",
+      "C98",
+      "C99",
+      "C113",
+      "C150"
+    ],
+    "result": "Fundamental challenges to screening effectiveness include: transmission possible before symptom onset, long incubation periods providing a window for undetected travel, and the difficulty of detecting mild or indistinct symptoms. These factors make respiratory viruses inherently difficult to screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize well-established principles of infectious disease screening. Pre-symptomatic transmission (C25) is supported by citations. The mechanistic explanations (C98-99) are logically sound. The general principle (C113, C150) is appropriately cited to Fraser et al. 2004.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Limited evidence exists for specific COVID-19 risk factors. The model assumes at most 40% of travelers would be aware of exposure, and based on 2009 influenza pandemic data, assumes a minority would self-report honestly. These factors combined create many fundamentally undetectable cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C100 (limited risk factors) is reasonable for February 2020, the specific assumptions about awareness (C101: 40%) and self-reporting (C104: minority) are weakly justified. C101 is stated as an assumption without strong empirical basis. C104 relies on historical data from a different pathogen. These assumptions significantly impact results but lack robust validation for COVID-19 specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Parameter estimates may be biased by early outbreak data overrepresenting severe cases. The incubation period tail is difficult to characterize precisely. Informal reports suggest people may evade screening by taking antipyretics or using alternative travel routes, potentially causing the model to overestimate effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge limitations. The concern about early outbreak bias (C121) is valid and well-recognized in outbreak epidemiology. The statistical challenge with tail estimation (C122) is accurate. The evasion concerns (C123-126) are appropriately cited and the acknowledgment that this could lead to overestimation shows appropriate caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Arrival screening could delay case introduction but delays would be minimal. For every detected case, one or more infected travelers are missed. Single importations don't guarantee sustained transmission, especially for infections with superspreading, though such outbreaks are explosive when they occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C127-128 are supported by model results and citation to Cowling et al. C129 is a direct inference from detection rates. C130-132 appropriately cite transmission dynamics literature (Kucharski, Lloyd-Smith) and acknowledge the stochastic nature of outbreak establishment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Screening provides opportunities for risk communication and may help reduce transmission risk, though quantitative effectiveness is unknown. Once local transmission begins, screening may limit parallel transmission chains. In generalized spread, departure screening becomes more valuable than arrival screening. Screening should complement rather than replace on-the-ground response strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These policy recommendations are appropriately cautious. C133 is supported by WHO guidance citation. C134 acknowledges uncertainty about effectiveness. C135-136 provide reasonable epidemiological logic about screening value in different epidemic phases. C137-138 offer balanced policy guidance grounded in the analysis results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Potential improvements to screening include: better thermal scanner technology, redundant screening stations, refined questionnaires as risk factors become known, rapid PCR testing (though expensive at scale), and smartphone-based post-travel surveillance (though limited by adherence).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These recommendations are reasonable inferences from the model results. The suggestions are appropriately qualified with limitations (C143: false positives, C147: expense, C149: adherence). C146 provides specific evidence for rapid PCR availability. The recommendations balance potential benefits with practical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "In situations with widespread epidemic transmission in source populations, travel screening programs can slow but not stop importation of infected cases. Screening programs in other settings face the same fundamental challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central qualitative conclusion, well-supported by all the quantitative results. The generalization to other screening contexts (C152) is appropriate given the model structure addresses fundamental biological and epidemiological constraints rather than travel-specific factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Literature review shows R0 estimates for COVID-19 range from 2.2 to 6.47, thermal scanner sensitivity ranges from 60-88% (with some studies showing 4-30%), and time from symptom onset to hospitalization/isolation ranges from 2.9 to 7 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These parameter ranges are comprehensively documented with specific citations and confidence intervals. The wide range for R0 reflects genuine uncertainty in early 2020. The variation in thermal scanner sensitivity (C70-72) appropriately notes dependence on device and conditions. Time-to-isolation estimates are consistently cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Screening is less effective in growing epidemics due to excess recently-exposed travelers. Concerns exist about COVID-19 spread to developing countries lacking resources for screening. Symptom screening is being used beyond air travel in rail stations, healthcare settings, cruise ships, and quarantine facilities. Screening weaknesses affect importations for up to two weeks (the maximum incubation period).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C21 is supported by prior modeling work. C29-30 appropriately cite concerns about resource-limited settings. C31-32 correctly note the lag between screening failure and case detection. C33-34 document the breadth of screening applications with appropriate citations.",
+    "result_type": "MINOR"
+  }
+]

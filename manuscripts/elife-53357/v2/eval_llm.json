@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C58",
+      "C59",
+      "C60",
+      "C64",
+      "C105"
+    ],
+    "result": "DISC is a novel algorithm that combines divisive segmentation, hierarchical agglomerative clustering (HAC), and the Viterbi algorithm to perform unsupervised idealization of single-molecule trajectories with O(Nlog(N)) time complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C64 and C105 collectively describe the DISC algorithm's three-phase approach (divisive segmentation, HAC, Viterbi) with detailed methodology. The algorithmic design is well-documented with appropriate citations to established methods (C31, C32, C42, C44) and the time complexity analysis (C46) follows from the recursive binary partitioning structure. The methodological description is internally consistent and builds on established computational approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Divisive segmentation combined with HAC in DISC provides superior state detection accuracy compared to change-point detection alone or CP-HAC methods, while maintaining computational efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by data in Figure 2a-b showing that divisive segmentation provides more accurate state estimates than CP detection alone (C50-C51), and that the sequential combination of divisive segmentation and HAC achieves the highest state detection accuracy with minimal computational cost (C55). The comparative performance data directly validates these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Refining unsupervised clustering results with the Viterbi algorithm significantly improves event detection accuracy, particularly for fast transitions across two orders of magnitude of varying koff rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by data in Figure 2d showing that CP detection alone fails to identify faster transitions, while Viterbi refinement significantly improves event detection accuracy across varying koff rates. The improvement is quantified and consistent with prior work (C56 cites Hadzic et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C111",
+      "C124"
+    ],
+    "result": "DISC achieves superior accuracy (0.91 \u00b1 0.05 for SNR > 3) compared to STaSI and vbFRET, while being 400-1,200-fold faster than vbFRET and 2-8,700-fold faster than STaSI on simulated single-molecule trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C74-C87, C111, and C124 are strongly supported by comprehensive benchmarking data in Figures 3 and 4. The accuracy metrics (precision, recall) are well-defined in Materials and Methods, and the computational performance comparisons are conducted on standardized MATLAB implementations (C73). The simulations include realistic noise characteristics and heterogeneous intensities (C65-C69), making the validation robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C76"
+    ],
+    "result": "DISC shows lower accuracy at SNR = 2, likely due to the use of BIC for state detection, but performs exceptionally well at SNR > 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C76 are supported by data in Figure 3a. While C76 is speculative about the cause (BIC penalty), the observed performance pattern is documented. The authors appropriately acknowledge this limitation and suggest AIC as an alternative (C76), demonstrating scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "DISC accuracy increases with increasing number of data points per trajectory, indicating minimum data requirements for accurate idealization at a given SNR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by data in Figure 4b showing the relationship between trajectory length, SNR, and accuracy. This is an expected result that validates the algorithm's behavior and provides practical guidance for users.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C116"
+    ],
+    "result": "DISC successfully processed 13,670 ZMW trajectories in 20 minutes on a standard laptop, enabling stringent trace selection that retained 293 molecules with 1.2 \u00d7 10^5 s of combined protein activity for analysis of HCN CNBD cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C91-C98, and C116 describe the application of DISC to a large experimental dataset. The computational performance (C93) and comparison to STaSI (C94) demonstrate practical utility. The trace selection criteria are described, though the specific thresholds could be more detailed. The asynchronous decay observation (C97) is appropriately noted as speculation with supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C117"
+    ],
+    "result": "Single-molecule analysis of tetrameric HCN CNBDs reveals non-cooperative ligand binding, with a binomial distribution fit showing 31% occupancy probability at 1 \u00b5M fcAMP and linear relationships between kon and koff rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 and C117 are supported by data in Figure 5c-e. The binomial fit matches the observed distribution well (C99), the occupancy probability is similar to monomeric studies (C100), and the linear relationship of rate constants (C102) is consistent with non-cooperative binding. The conclusion contradicts prior ensemble measurements (C101), which is appropriately noted and discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C118"
+    ],
+    "result": "The observed cooperativity in macroscopic HCN channel measurements may be an artifact of model fitting or may require transmembrane domains, as it is not intrinsic to isolated CNBDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104 and C118 are speculative interpretations (both marked as SPECULATION in evidence_type) based on the experimental findings. While the single-molecule data clearly show non-cooperative binding in isolated CNBDs, the mechanistic explanation for the discrepancy with ensemble measurements requires additional experiments. The authors appropriately present this as a postulate rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "DISC is designed as a flexible, modular framework that can be adapted to different experimental modalities by adjusting information criteria and change-point detection methods, though it requires user expertise and preprocessing for certain noise sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 and C119-C123 describe DISC's flexibility and limitations. The modular design is demonstrated through the algorithm structure (C36), and the software implementation (C106, C120) provides user options. The acknowledgment of limitations (C122) and need for user expertise (C63) demonstrates appropriate scientific caution. However, the claim of easy extension to other modalities (C119, C121) is not experimentally validated beyond the primary application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112"
+    ],
+    "result": "Existing analysis tools impose computational bottlenecks for high-throughput single-molecule data, particularly HMMs which require extensive model exploration and infinite HMMs which can take days per trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C15, C20-C23, C28-C30, and C107-C110 establish the motivation for DISC by documenting limitations of existing methods. These claims are well-supported by citations (C14, C23, C28-C30, C109) and are consistent with the comparative performance data presented. The characterization of the computational bottleneck is accurate and provides clear justification for the new method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Simulations were designed to closely match experimental HCN CNBD data, including heterogeneous bound intensities, realistic SNR distributions, and kinetic parameters from prior studies, with 4000 trajectories totaling 8 \u00d7 10^6 data points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 describe the simulation methodology. The simulations are based on established kinetic parameters (C65 with citations), include realistic noise characteristics (C66-C69), and use appropriate benchmarking algorithms (C72-C73). The heterogeneous intensity modeling (C66-C67) adds realism, though the exact source remains uncertain (C67). The simulation design is rigorous and appropriate for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Single-molecule approaches provide insight into biomolecular dynamics but require extensive sampling, and emerging high-throughput technologies generate large datasets that need efficient analysis algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C13, and C126-C128 establish the scientific context and motivation. These are well-supported by appropriate citations to the literature and represent accurate characterizations of the field. The claims provide essential background but are not novel contributions of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Existing single-molecule analysis methods include HMMs (with various implementations like QuB, vbFRET) and CP-HAC approaches (like STaSI), each with specific computational characteristics and limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C24-C27, and C37-C39 provide accurate descriptions of existing methods with appropriate citations. These claims establish the technical background and are consistent with the literature. The computational complexity analyses (C25, C38-C39) are mathematically correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C113",
+      "C114",
+      "C115",
+      "C125"
+    ],
+    "result": "DISC software is publicly available and offers capabilities similar to SKM for event detection but with unsupervised state learning like CP-HAC, making it applicable to growing single-molecule datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C113-C115, and C125 describe DISC's positioning relative to existing methods and its availability. The software availability (C106) is verifiable, and the comparisons to SKM and CP-HAC (C113-C115) are accurate based on the methodological descriptions. The applicability claim (C125) is a reasonable inference from the performance data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Over-fitting in divisive segmentation results from downward error propagation where suboptimal early splits lead to redundant sub-clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 provides a mechanistic explanation for the over-fitting tendency of divisive segmentation alone, which is corrected by the HAC phase. This is an inference based on algorithmic analysis and is consistent with the observed behavior shown in Figure 2a. The explanation is logical and helps justify the two-phase clustering approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "No algorithm can idealize trajectories at SNR = 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by the performance data showing that all tested algorithms fail at SNR = 1. This is an expected result given the fundamental limitations of signal detection in high noise, and serves to establish the practical limits of the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Previous macroscopic studies showed that HCN channel ligand binding exhibits cooperativity dependent on ligation state and membrane potential, with physiological implications for cardiac pacemaking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 accurately cite prior work (Kusch et al., 2012; Thon et al., 2015) and establish the biological context. These claims provide the scientific motivation for the experimental application but are not novel findings of this work.",
+    "result_type": "MINOR"
+  }
+]

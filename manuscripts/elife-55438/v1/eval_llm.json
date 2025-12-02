@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C14",
+      "C15",
+      "C87"
+    ],
+    "result": "Crystal structures of tcTERT were determined at 2.5-2.9 \u00c5 resolution throughout the catalytic cycle (prenucleotide binary, ternary, and product complexes), revealing minimal global structural rearrangements (RMSD 1.04-1.52 \u00c5) and identifying conserved active site residues responsible for nucleotide selection, metal coordination, and catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural claims are well-supported by crystallographic data with appropriate resolution and validation statistics. The identification of active site residues is based on direct structural observations, and the conservation with hTERT is documented through sequence alignments. The minimal conformational changes are quantified with RMSD values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C44",
+      "C45",
+      "C46",
+      "C3",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Pre-steady-state kinetic measurements demonstrate that tcTERT exhibits moderate base selection fidelity, inserting mismatched nucleotides at a rate of ~1 in 10,000 insertion events (kpol 1.05 s\u207b\u00b9 for correct vs 0.0081 s\u207b\u00b9 for mismatch; Kd 18.1 \u03bcM vs 1.3 mM), predicting ~1 mismatch per 10 kb of telomere extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fidelity measurements are supported by rigorous pre-steady-state kinetic experiments with multiple nucleotide concentrations and proper controls. The calculated error rate agrees with published telomere sequencing data (C75), providing independent validation. The lack of proofreading domain (C74) is established knowledge that supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C4",
+      "C50",
+      "C5",
+      "C77"
+    ],
+    "result": "tcTERT discriminates against ribonucleotide insertion with a 14,000-fold reduction in catalytic efficiency compared to dNTPs (kpol 0.0037 s\u207b\u00b9 vs 1.05 s\u207b\u00b9; Kd 0.89 mM vs 18.1 \u03bcM), translating to ~1 rNTP insertion per 280 events under cellular conditions, or ~40 ribonucleotides per 10 kb of telomere extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sugar discrimination measurements are based on sound pre-steady-state kinetics. The extrapolation to cellular conditions appropriately accounts for the ~50-fold higher rNTP concentrations in cells (cited to Traut, 1994). The calculated insertion rates are consistent with the kinetic parameters and comparable to other DNA polymerases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C6"
+    ],
+    "result": "Y256 in tcTERT functions as a steric gate that discriminates against ribonucleotide insertion. The Y256A mutation increases rGTP insertion efficiency by 18,000-fold (kpol from 0.0037 to 5.5 s\u207b\u00b9), reducing sugar selectivity from 14,000-fold to <2-fold, with structural data showing the distance from C2 carbon to residue 256 increases from 3.3 to 5.7 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The steric gate identification is strongly supported by converging structural and kinetic evidence. The Y256A mutation specifically abolishes sugar discrimination while maintaining dNTP insertion activity, and the structural basis (increased space for 2'-OH) is directly demonstrated. This is a classic loss-of-function experiment with clear mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C78",
+      "C91",
+      "C92"
+    ],
+    "result": "Human telomerase activity assays demonstrate that Y717 (homologous to tcTERT Y256) is the steric gate in human telomerase. The Y717A variant shows 3-fold increased primer extension with rNTPs compared to WT, and rNTP incorporation inhibits telomerase translocation in both WT and Y717A variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The human telomerase experiments provide critical validation that the tcTERT findings translate to the human enzyme. The activity assays show clear differences between WT and Y717A with rNTPs vs dNTPs. The observation that rNTPs inhibit translocation even in Y717A suggests additional discrimination mechanisms beyond single nucleotide insertion, which is appropriately noted as inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Active site residues R194 and Q308 primarily affect the chemistry step rather than nucleotide binding, with R194A and Q308A mutations reducing kpol by 28-fold and 60-fold respectively, while having modest effects on Kd. The human homolog R631 is implicated in idiopathic pulmonary fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic characterization of R194A and Q308A mutants clearly demonstrates their role in catalysis based on the larger effects on kpol than Kd. The connection to IPF through R631 is appropriately presented as inference based on the kinetic data and supported by citations linking R631 mutations to disease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "TERT proceeds through its catalytic cycle with minimal global structural rearrangement, contrasting with many DNA polymerases that undergo open-to-closed conformational changes upon nucleotide binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the low RMSD values between catalytic states (1.04-1.52 \u00c5) and appropriate comparison to other polymerases through citations. The structural data directly demonstrates the lack of large conformational changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The telomerase active site has evolved high stringency toward noncanonical nucleotides because mismatches and ribonucleotides in telomeres would likely disrupt G-quadruplex stability, inhibit shelterin binding, and cause telomeric strand breaks through RNA hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the fidelity and discrimination data are solid, the downstream consequences are largely speculative. The authors appropriately note that consequences of telomeric mismatches 'have not been studied in a biological context to our knowledge' (C76). The inferences about G-quadruplex disruption and shelterin binding are reasonable but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Telomerase may pause after inserting ribonucleotides to allow for proofreading or ribonucleotide excision repair, similar to pausing observed after 8-oxodGTP insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation ('It is possible that...') in C80. While the pausing behavior is observed in the activity assays and previous work with 8-oxodGTP is cited (C81), the proposed mechanism for why pausing occurs remains hypothetical without direct evidence for proofreading or RER involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Background information on telomerase function, the end replication problem, telomere biology, and the telomerase catalytic cycle is presented, establishing context for the experimental work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field, appropriately cited and used to provide context. The descriptions of the catalytic cycle are consistent with current understanding and supported by the structural data presented.",
+    "result_type": "MINOR"
+  }
+]

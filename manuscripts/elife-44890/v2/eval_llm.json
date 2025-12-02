@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C49"
+    ],
+    "result": "Dual regression can largely overcome minor spatial misalignment between surface-aligned data (MSMAll vs MSMSulc) but fails to correct for substantial misalignment in volumetrically aligned data. The difference in correlation between dual regression estimates and ground truth maps was not significant between MSMAll and MSMSulc (\u0394Z=0.013, p=0.061), but volumetric data showed significantly lower correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C49 are well-supported by statistical analyses with appropriate controls (N=22 subjects, ANOVA with Bonferroni correction). The use of single-subject ICA as 'ground truth' provides a reasonable benchmark, and the comparison across three alignment methods (MSMAll, MSMSulc, volumetric) with proper statistical testing supports the conclusions about dual regression's ability to handle different degrees of misalignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C3",
+      "C4"
+    ],
+    "result": "There is a significant negative correlation (r = -0.22) between temporal network matrix edges and spatial overlap matrix edges obtained from ICA-DR across 1004 subjects and 1225 edges. This negative relationship indicates that when spatial maps for two nodes are less correlated, there is more positive functional connectivity between those nodes, which is attributed to systematic bias from spatial overlap between brain networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by empirical data from 1004 HCP subjects shown in Figure 3. The negative correlation is counterintuitive but is explained mechanistically through mathematical derivations (claims C3-C4) and validated through simulations (Figure 4). The large sample size and consistency between empirical observations, mathematical theory, and simulations provide strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C46",
+      "C47"
+    ],
+    "result": "Spatial ICA underestimates map weights in overlapping regions due to the independence constraint, leading to systematic biases in dual regression estimates. Temporal network matrix edges are shifted positively and spatial overlap matrix edges are shifted negatively compared to ground truth, even though first-order map and timecourse estimates remain highly correlated with ground truth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 and C46-C47 are supported by simulation results (Figure 4) with known ground truth, mathematical derivations explaining the mechanism, and consistency with empirical observations. The simulation design appropriately isolates the effect of spatial overlap (50 subjects, 2D maps with 25% overlap, repeated 10 times). The distinction between accurate first-order estimates and biased second-order edge estimates is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C44",
+      "C57"
+    ],
+    "result": "Spatial overlap between functional networks is prominent in the temporo-parietal-occipital junction and higher visual areas, with similar spatial organization observed between PROFUMO and ICA-DR results. PROFUMO shows more extensive overlap than ICA-DR, with strong spatial correlation between un-thresholded PFM maps (r = 0.46) compared to no correlation between un-thresholded ICA maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C44, and C57 are supported by data analysis from 1004 HCP subjects shown in Figure 5. The methodology (normalizing maps, thresholding, summing absolute values) is appropriate for visualizing overlap. The comparison between PROFUMO and ICA-DR provides converging evidence, and the quantitative correlation values (r = 0.46 for PFM vs. 0 for ICA) clearly demonstrate the difference in capturing spatial overlap between methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C56"
+    ],
+    "result": "In simulations with ground truth, PROFUMO shows superior accuracy for spatial map estimation compared to both ICA-DR variants, while thresholded ICA-DR performs best for temporal edge estimation among edges with significantly positive ground truth spatial correlation. All three methods show relatively good accuracy for timeseries estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 and C56 are supported by comprehensive simulation results (Figure 7) with appropriate design (10,000 voxels, 30 subjects, 15 nodes, 10 repetitions). The simulation includes realistic features (subject-specific warps, sparse correlated timecourses, HRF convolution, noise). The focus on edges with significantly positive spatial correlation (126 out of 1050 edges after Bonferroni correction) appropriately tests the methods where spatial overlap matters most.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C48",
+      "C54",
+      "C55"
+    ],
+    "result": "PROFUMO spatial overlap matrices show the strongest relationship with behavior (RUV = 0.72), significantly stronger than both original ICA-DR (p=0.03) and thresholded ICA-DR (p=0.001) temporal network matrices. Partial CCA analysis reveals that thresholded ICA-DR temporal networks lose significance after removing spatial information (Rpartial = 0.01, pBonferroni = 1), indicating that behavioral variability in temporal network matrices is largely driven by spatial information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43, C48, C54-C55 are supported by CCA analysis on 1001 HCP subjects with 158 behavioral variables. The statistical comparisons include appropriate significance testing, and the partial CCA approach properly isolates unique variance. The shared variance analysis (29.6% for original ICA-DR, 26.8% for thresholded ICA-DR, 24.5% for PROFUMO) quantitatively demonstrates reduced conflation in the improved methods. However, the interpretation that spatial overlap is 'highly sensitive' to behavior (C48) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Individual differences in the amount of spatial overlap likely explain previous results showing conflation of temporal and spatial information in connectivity estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by the convergence of multiple lines of evidence: mathematical derivations showing how spatial overlap biases dual regression, simulations demonstrating the effect with known ground truth, empirical observations of negative correlations between spatial and temporal edges, and behavioral analyses showing spatial overlap is strongly associated with behavior. This provides a coherent mechanistic explanation for previous findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Misalignment is likely to play a larger role when using volume-based alignment procedures or anatomically-derived hard parcellations that are unlikely to match subject-specific functional organization well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 are partially supported by the volumetric alignment results (C15) and citations to prior work, but C51 regarding hard parcellations is largely speculative inference without direct empirical testing in this manuscript. The authors acknowledge this limitation and state that 'further work is needed' to test the hypothesis about hard parcellations. The claim about volumetric alignment (C50) is better supported by the empirical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Previous work showed that network-based modeling of brain connectivity interacts strongly with spatial configuration of brain regions, with spatial information explaining up to 62% of interindividual variance in node-based functional connectivity across multiple parcellation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C9 are supported by citations to previous work (Bijsterbosch et al., 2018). These claims establish the context and motivation for the current study. The specific quantitative result (62% variance explained) and the robustness across parcellation methods are clearly attributed to prior published work with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C10",
+      "C11",
+      "C12",
+      "C22",
+      "C58"
+    ],
+    "result": "Background claims about functional connectivity, rfMRI methods, cortical alignment approaches, and V1 organization are established knowledge in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C10-C12, C22, and C58 represent established knowledge supported by appropriate citations to foundational and methodological papers. These provide necessary background context and are not novel findings of this manuscript. The citations are appropriate and the claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study used data from 1004 subjects from the Human Connectome Project S1200 release with 4800 resting state timepoints, preprocessed using the HCP minimal preprocessing pipeline and FIX cleanup, with three subjects excluded from CCA due to incomplete genetic information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe the dataset and preprocessing methods with appropriate citations. The sample size is substantial (N=1004 for most analyses, N=1001 for CCA), and the preprocessing pipeline is well-established and appropriate for HCP data. The exclusion criterion is clearly stated and reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The correct interpretation of spatial edges requires further investigation, and thresholded dual regression will be implemented in the next version of FSL dual_regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 are statements about future work and software implementation rather than current findings. C52 appropriately acknowledges uncertainty about the neural basis and interpretation of spatial edges. C53 is a statement of intent for future software release. Neither claim can be evaluated as supported or unsupported as they are not empirical findings.",
+    "result_type": "MINOR"
+  }
+]

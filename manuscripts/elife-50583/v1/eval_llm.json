@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "PDB is a post-embryonic cholinergic motor neuron with its cell body in the preanal ganglion that sends a neurite posteriorly forming a V-shape turn to the dorsal nerve cord where it forms synapses onto dorsal body wall muscles and plays a role in motor coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe the basic anatomy and function of the PDB neuron. C1 and C2 are supported by established knowledge and citations, C3 is supported by imaging data in Figure 1A, and C4 is supported by citation to prior work. These foundational claims are well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C11"
+    ],
+    "result": "PDB undergoes developmental neurite pruning where transient H-shape posterior neurites present at L2 stage are pruned by retraction (not severing) by L4 stage, with 82.6% of posterior neurites pruned within 24 hours, resulting in the characteristic V-shape turn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 and C11 describe the developmental pruning process with strong quantitative data from longitudinal imaging (Figures 1B-E, Figure 1\u2014figure supplement 1). The time-lapse imaging in C8 directly demonstrates retraction rather than severing. The conclusion in C11 logically follows from the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "PDB neurite pruning is not dependent on neuronal activity, as demonstrated by normal pruning in unc-13 mutants that lack synaptic vesicle fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are supported by data in Figures 1B and 2D showing that unc-13 mutants exhibit normal pruning despite lacking neurotransmitter release. The citation for unc-13 function (C10) is appropriate. This distinguishes PDB pruning from activity-dependent pruning mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "lin-44/wnt is expressed in tail hypodermal cells where it regulates multiple developmental processes, and the pruning posterior neurite of PDB is located in close proximity to hyp10, which shows the brightest lin-44 expression at L2 stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 establish the spatial relationship between lin-44 expression and PDB neurites. C12-C13 are supported by multiple citations and confirmed by Figure 2A. C14-C15 are supported by detailed imaging in Figures 2B-C showing the proximity of the posterior neurite to hyp10. This spatial correlation is critical for the instructive cue hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "lin-44/wnt is required for PDB posterior neurite pruning, as lin-44 null mutants show 54.3% of animals with ectopic posterior neurites at L4 stage and only 30% of posterior neurites are pruned compared to 82.6% in wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 demonstrate the requirement for lin-44 in pruning through quantitative genetic analysis. The data in Figures 2D and 3C-D show significant pruning defects in lin-44 mutants. The longitudinal tracking data (C17) provides strong evidence. C18 is a reasonable inference from the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "LIN-17/Frizzled acts as the receptor for LIN-44/Wnt in PDB neurite pruning, functioning cell-autonomously in PDB, as demonstrated by similar pruning defects in lin-17 mutants (17% pruning), non-additive double mutant phenotypes, and cell-specific rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 establish the genetic pathway through multiple lines of evidence: lin-17 mutant phenotypes (C20, Figures 3B-D), epistasis analysis (C21-C22), and cell-specific rescue (C23-C24, Figure 3\u2014figure supplement 1). The non-additive phenotype in double mutants strongly supports that lin-44 and lin-17 act in the same pathway. The conclusion in C25 is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "lin-44/wnt acts as an instructive (not permissive) cue for PDB neurite pruning, as ectopic expression from egl-20 or unc-129dm promoters fails to rescue pruning defects, while expression from the endogenous lin-44 promoter fully rescues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 distinguish instructive from permissive signaling through ectopic expression experiments (Figure 4A-B). The failure of rescue with anterior expression (C27-C28) and successful rescue with proper spatial expression (C29) strongly support the instructive model. The logic and experimental design are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "LIN-44 is the major Wnt instructive cue for PDB neurite pruning, as egl-20 cannot substitute for lin-44 function despite their redundancy in other contexts, and other Wnts (cwn-1) do not affect PDB morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 establish the specificity of lin-44 through substitution experiments (C32, Figure 4A-B) and analysis of other Wnt mutants (C34, C36, Figure 2D). The inability of egl-20 to rescue when expressed from the lin-44 promoter (C32) is particularly strong evidence for functional divergence (C33). The conclusion in C37 is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Despite the established importance of Wnt gradients in C. elegans development, anterior expression of lin-44 does not induce ectopic anterior neurite pruning, and both anterior and posterior neurites are located close to lin-44-expressing cells, with the posterior neurite tip overlapping with hyp10 while the anterior neurite tip shows a gap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 set up the paradox that motivates the gradient-independent model. C38 is well-supported by citations. C39-C40 report negative results (data not shown) that are important for the model. C41-C42 provide detailed spatial analysis from Figure 2B showing differential proximity. These observations challenge the gradient model and motivate the contact-dependent hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Membrane-tethered Wnt (Nrt-Wg) in Drosophila abrogates gradient distribution but supports viability with no major morphological defects, suggesting gradient distribution is not essential for normal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 establish the precedent for gradient-independent Wnt signaling from Drosophila work. All claims are supported by appropriate citations to Alexandre et al., 2014 and related work. The inference in C46 is reasonable based on the viability of nrt-wg flies, though the authors note some fitness costs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Membrane-tethered LIN-44 (NRT-BFP-LIN-44) is localized on the surface of lin-44-expressing cells and is sufficient to induce normal neurite pruning in PDB, with 71.2% of posterior neurites pruned in nrt-bfp-lin-44 animals comparable to wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 present the key finding that membrane-tethered LIN-44 rescues pruning. C47 is supported by imaging in Figure 5B showing membrane localization. C48-C49 provide quantitative data from Figure 5C-E showing rescue of pruning to near-wildtype levels. The conclusion in C50 is well-supported by the data. This is a critical result for the gradient-independent model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Membrane-tethered LIN-44 cannot rescue gradient-dependent functions in DA9 synapse patterning and DD6 axon termination, demonstrating that NRT-BFP-LIN-44 is non-diffusible and cannot exert gradient-dependent functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C64 establish that nrt-bfp-lin-44 fails to rescue gradient-dependent phenotypes. The DA9 and DD6 phenotypes are well-established from prior work (C54, C57, C59, C62) and confirmed here. The data in Figures 6C-F show that nrt-bfp-lin-44 phenocopies lin-44 null for these gradient-dependent processes. This provides strong evidence that the membrane-tethered construct is truly non-diffusible and validates the gradient-independent model for PDB pruning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "PDB responds to diffusible and non-diffusible Wnt signals in a context-dependent manner: it requires LIN-44 gradient for cell fate, neurite guidance, and presynaptic vesicle localization, but uses gradient-independent LIN-44 signal for neurite pruning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 synthesize the differential requirements for gradient-dependent vs. gradient-independent LIN-44 functions in PDB. The data on RAB-3 localization (C65-C67, Figure 6\u2014figure supplement 1) show that presynaptic patterning requires diffusible LIN-44. Combined with the pruning data, this supports the context-dependent model (C68-C70). This is a sophisticated conclusion well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "LIN-17/Frizzled receptor accumulates asymmetrically at posterior neurite tips in a lin-44-dependent manner, with significantly higher LIN-17::GFP puncta at posterior vs. anterior neurites in wildtype and nrt-bfp-lin-44 animals but not in lin-44 null mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 demonstrate asymmetric receptor localization. C71-C72 establish the precedent from prior work. C73-C75 provide quantitative imaging data (Figure 7A-D) showing lin-44-dependent asymmetric localization that is maintained with membrane-tethered LIN-44. C76-C77 note the absence of ventral puncta in nrt-bfp-lin-44, which may relate to gradient-dependent functions. The data support the model that locally restricted Wnt recruits receptors to pruning sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "DSH-1/Dishevelled is recruited to posterior neurites in a LIN-17/Frizzled-dependent and lin-44-dependent manner, supporting the conclusion that locally restricted Wnt instructs asymmetric neurite pruning via recruiting Frizzled receptor and Dishevelled proteins to pruning neurites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 extend the receptor localization findings to the downstream signaling component Dishevelled. C78-C81 establish the background from prior work. C82 notes lack of single mutant phenotypes (likely due to redundancy). C83-C84 show DSH-1 localization depends on both lin-44 and lin-17 (Figure 7\u2014figure supplement 1). The conclusion in C85 integrates the receptor and Dishevelled localization data into a coherent model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In C. elegans AIM interneurons, CWN-1/2 Wnts act through CAM-1/Ror to protect neurites from pruning, in contrast to LIN-44/Wnt which instructs pruning in PDB, consistent with antagonistic functions of cam-1/Ror and lin-17/fz receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 provide important context by comparing PDB pruning to AIM neurite protection. All claims are supported by appropriate citations. This comparison highlights that different Wnt-receptor combinations can have opposite effects on pruning, which is important for understanding the specificity of the PDB pruning mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Wnt signaling has a conserved role as a pruning cue across species, as Drosophila CSDn dendrites require Wingless and Wnt5 for activity-dependent pruning, though whether Wnt plays an instructive or permissive role in CSDn remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 discuss the evolutionary conservation of Wnt in pruning. C89-C92 are supported by citation to Singh et al., 2010. C93 appropriately notes the uncertainty about instructive vs. permissive roles in Drosophila while concluding that the pruning function is conserved. This provides important comparative context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "While gradient-independent Wnt signaling is largely sufficient for normal tissue patterning in Drosophila (as shown by viable nrt-wg flies), gradient-dependent Wnt signaling is still important for fitness and is critically required for specific processes like renal tube patterning and intestinal compartmentalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 provide nuanced discussion of when gradients matter. C94-C96 are supported by citations to Alexandre et al., 2014, noting both viability and fitness costs of nrt-wg. C97 cites recent work showing gradient requirements for specific processes. This balanced discussion appropriately contextualizes the gradient-independent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The membrane-tethered LIN-44 is sufficient for PDB neurite pruning but not synapse patterning, is non-diffusible based on failure to rescue gradient-dependent phenotypes, and suggests that contact with Wnt-expressing cells rather than gradient distribution triggers PDB neurite pruning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 synthesize the main findings. C98 summarizes the differential rescue (supported by data throughout). C99 infers non-diffusibility from the gradient-dependent phenotypes. C100 proposes the contact-dependent model. These are reasonable inferences from the experimental data, though C100 represents a model rather than direct proof of contact-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The contact-dependent neurite pruning model can explain why the anterior neurite ignores the LIN-44/Wnt pruning cue despite proximity to lin-44-expressing cells, and how the PDB neurite can initially grow posteriorly toward the source of pruning cue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 are speculative explanations for observations. While the contact-dependent model is supported by the nrt-bfp-lin-44 data, these specific explanations are not directly tested. The authors appropriately present these as explanations that the model \"can explain\" rather than proven mechanisms. Alternative explanations (e.g., protective factors for anterior neurite) are not ruled out.",
+    "result_type": "MINOR"
+  }
+]

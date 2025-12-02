@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The ZBTB16 locus encoding PLZF is repressed by Polycomb (PcG) and H3K27me3 in naive hMSCs, and upon osteogenic differentiation (pre-osteoblast stage), the locus loses PcG binding and H3K27me3, gains JMJD3 recruitment and H3K27ac, resulting in high PLZF expression. This derepression is an early event corresponding to the transition from stem cells to osteoblast committed progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C37-C40, C65-C67, C70-C72 are supported by ChIP-seq and ChIP-QPCR data shown in Figures 1C, 1D, 1E, and expression data in Figure 2A-B. The data demonstrate loss of H3K27me3 and SUZ12 binding, gain of JMJD3, H3K27ac, and H3K4me3 at the ZBTB16 locus, correlating with PLZF expression at day 2 of differentiation. The temporal sequence and molecular changes are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C41",
+      "C42",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C146",
+      "C147"
+    ],
+    "result": "PLZF is recruited to osteogenic enhancers (primarily intergenic and intronic regions, not promoters) where it influences H3K27 acetylation and expression of nearby genes important for osteogenic function. Approximately 18% of PLZF-bound regions gained H3K27ac upon differentiation, correlating with increased expression of proximal genes related to bone development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C41-C42, C73-C88, C146-C147 are supported by ChIP-seq data in Figures 2C-G showing 2,282 PLZF peaks predominantly at intergenic (45.5%) and intronic (34.7%) regions, with co-occurrence of H3K27ac and H3K4me1 marks. The correlation between H3K27ac gain at PLZF-bound sites and increased expression of nearby osteogenic genes is demonstrated by integrated ChIP-seq and RNA-seq analyses. The motif analysis (Figure 2\u2014figure supplement 1) validates PLZF binding specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C138"
+    ],
+    "result": "PLZF knockdown by siRNA reduces H3K27ac at PLZF-bound enhancers and significantly affects the osteogenic transcriptional program (p < 0.0001), with reduced expression of genes normally induced in osteoblast committed progenitor cells. Only 44% of differentially regulated genes overlapped between control and PLZF knockdown conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105, C138 are supported by ChIP-seq data after PLZF knockdown (Figure 3B) and RNA-seq data (Figures 3D-F, Supplementary file 8). The data show reproducible reduction in H3K27ac at PLZF peaks and significant changes in gene expression (1,897 genes in control vs 1,184 in knockdown, with only 44% overlap). GO term analyses confirm enrichment for osteogenic terms in control but not in PLZF knockdown cells. Statistical significance (p < 0.0001) is reported for the effect on the osteogenic transcriptional program.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C43",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C148"
+    ],
+    "result": "A latent enhancer (EnP) within the ZBTB16 locus, repressed by PcG and H3K27me3 in naive hMSCs, becomes active during osteogenic differentiation, gaining H3K4me1, H3K27ac, PLZF, p300, and Mediator (MED1, MED12) binding. EnP shows differentiation-specific activity in a GFP reporter assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C43, C106-C113, C116-C120, C148 are supported by ChIP-seq data (Figure 4A), ChIP-QPCR data (Figures 4B-C), and GFP reporter assay (Figures 4E-G). The data demonstrate that EnP is marked by H3K27me3 in naive cells, gains enhancer marks (H3K4me1, H3K27ac) and binds PLZF, p300, and Mediator upon differentiation. The reporter assay shows EnP is inactive in naive cells but active after 2 days of osteogenic differentiation (73% GFP+ cells). Integration efficiency controls (Figure 4G) validate the reporter results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C44",
+      "C45",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C149"
+    ],
+    "result": "The ZBTB16 intragenic enhancer EnP physically contacts the promoter of the NNMT gene (~100 kb downstream) through chromatin looping in a differentiation-specific manner, as demonstrated by 4C-seq with both EnP and NNMT promoter as viewpoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C44-C45, C122-C126, C149 are supported by 4C-seq data in Figures 5A-B. The data show specific contact between EnP and the NNMT promoter in pre-osteoblasts (day 2) but not in naive hMSCs. The reciprocal 4C-seq experiment using NNMT promoter as viewpoint confirms the interaction. The extended contact area (>10 kb) observed when using NNMT promoter as viewpoint suggests a cluster of enhancers. Statistical analysis (\u03c72-test, FDR < 0.01) identifies regions with higher contact frequency in differentiated cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "NNMT expression increases upon osteogenic differentiation, correlating with a statistically significant but minor decline in SAM levels (p = 0.01). The increase in NNMT expression and decline in SAM levels are dependent on PLZF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C129-C134 are supported by RT-QPCR and western blot data (Figures 6A-B) showing increased NNMT expression, and SAM assay data (Figure 6D) showing decreased SAM levels upon differentiation (p = 0.01, t-test). PLZF knockdown experiments (Figure 7A-C) demonstrate that the reduction in SAM levels is abrogated in the absence of PLZF. However, the authors acknowledge the SAM decrease is minor, suggesting a delicate balance. The biochemical relationship between NNMT and SAM is supported by prior literature (C131).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C136",
+      "C137"
+    ],
+    "result": "The decline in SAM levels is required for osteogenic differentiation, as NNMT knockdown inhibits the increase in ZBTB16 and ALPL expression normally observed during differentiation, suggesting a block in differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C136-C137 are based on NNMT knockdown experiments (Figures 6E-G) showing reduced ZBTB16 and ALPL expression. While the data show correlation between NNMT knockdown and impaired marker expression, the claim that SAM decline is 'required' for differentiation is inferred rather than directly demonstrated. The authors do not show that restoring SAM levels rescues the differentiation defect, nor do they demonstrate that the effect is specifically due to SAM changes rather than other NNMT functions. Additional experiments would be needed to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C157"
+    ],
+    "result": "PLZF influences NNMT expression through recruitment of Mediator (MED12) and RNA PolII at the EnP enhancer, without affecting enhancer-promoter looping. MED12 binding at EnP is dependent on PLZF, although no direct interaction between PLZF and MED12 was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C140-C143, C157 are supported by 4C-seq data after PLZF knockdown (Figure 7\u2014figure supplement 1A-B) showing that EnP-NNMT looping is maintained in the absence of PLZF, and ChIP-QPCR data (Figure 7D) showing that MED12 and RNA PolII recruitment to EnP is PLZF-dependent. The data clearly separate the looping mechanism from the transcriptional activation mechanism. The lack of direct PLZF-MED12 interaction (C158) suggests involvement of other cofactors, which is appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "26% of PLZF-binding sites (603/2,282) localize within \u00b11 kb of FANTOM5-predicted enhancers. PLZF-bound enhancers are highly enriched for enhancers expressed in naive hMSCs (p < 5\u00d710\u207b\u2078) and osteoblasts (p < 4\u00d710\u207b\u00b3\u2079), with approximately 42% overlap between the two cell types, suggesting that other TFs define active enhancers in naive cells that are later bound by PLZF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 are supported by comparison of ChIP-seq data with FANTOM5 CAGE data (Figure 2H, Supplementary file 6). Statistical analysis using Fisher's exact test shows significant enrichment of PLZF-bound sites at FANTOM5 enhancers active in both naive hMSCs and osteoblasts. The data support the inference that PLZF binds to a subset of enhancers that are already active (or primed) in naive cells, as well as to lineage-specific enhancers that become active during differentiation. The statistical significance is strong and the interpretation is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C69"
+    ],
+    "result": "Day 10 of osteogenic differentiation represents immature osteoblasts that have committed to the osteoblast lineage but are far from mineralization (days 15-21). Day 2 represents pre-osteoblasts (osteogenic committed progenitor cells) that are still proliferating. Genome-wide analysis shows correlation between loss of H3K27me3, gain of H3K4me3, and increased expression of genes associated with bone formation, though H3K27me3 levels are surprisingly stable overall with only few genes showing significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57, C63-C64, C68-C69 are supported by microarray data (Figure 1\u2014figure supplement 1B), calcium staining (Figure 1\u2014figure supplement 1C), western blots (Figure 1\u2014figure supplement 1A), and ChIP-seq/RNA-seq data (Figures 1B, 2A-B). The characterization of differentiation stages is validated by multiple markers (cyclin E, pRB2, calcium deposition). Claims C58-C62 are supported by integrated ChIP-seq and RNA-seq analysis (Figure 1\u2014figure supplement 1D-I) and GO term analysis. The observation that H3K27me3 is surprisingly stable (C63-C64) is supported by genome-wide analysis (Figure 1B, Supplementary file 3) and provides important context for the significance of ZBTB16 locus changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The ZBTB16 intragenic region covering ~50 kb (introns 3-5) that contacts the NNMT promoter shows strong enrichment for H3K27ac and H3K4me1 and gains PLZF binding at multiple positions, suggesting it could represent a cluster of several active enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128, C162-C164 are supported by ChIP-seq data (Figure 4A) showing multiple PLZF peaks and broad H3K27ac enrichment across the ZBTB16 intragenic region, and 4C-seq data (Figure 5B) showing an extended contact area (>10 kb) when using NNMT promoter as viewpoint. The inference that this represents an enhancer cluster is reasonable given the chromatin signatures and is supported by citation to prior literature on enhancer clusters (Whyte et al., 2013). However, functional validation of individual elements within this region is limited to EnP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C165",
+      "C166"
+    ],
+    "result": "PLZF expression is not specific for the osteogenic lineage, as it is also induced during chondrogenic and adipogenic differentiation of hMSCs. This suggests PLZF functions at an early state of hMSCs differentiation to promote transition from naive stem cells to a more committed state for all three lineages, requiring cooperation with other cell-type-specific transcription factors for lineage-specific outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C153, C165-C166 are based on unpublished data ('data not shown') showing PLZF expression in chondrogenic and adipogenic differentiation. While the inference is reasonable and consistent with prior literature (Djouad et al., 2014), the lack of presented data makes it difficult to evaluate the extent and timing of PLZF expression in these other lineages. The speculation about EnP function in other lineages (C166) and the need for cooperation with other TFs (C153) are logical but not directly tested. Additional data would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C170"
+    ],
+    "result": "Fine-tuning of global methylation during osteogenic differentiation could partly result from small changes in SAM levels via NNMT expression regulated through PLZF and the intragenic enhancer EnP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135 and C170 are speculative interpretations based on the observed correlation between NNMT expression and SAM levels. While the biochemical relationship between NNMT and SAM is established (C131), and the regulatory mechanism (PLZF\u2192EnP\u2192NNMT) is demonstrated, the claim about 'fine-tuning of global methylation' is not directly tested. The authors acknowledge this is speculation ('it is tempting to speculate') and note that the SAM decrease is minor. Direct measurement of global DNA or histone methylation changes, or demonstration that SAM level changes affect specific methylation marks, would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background and motivation claims establishing the importance of hMSCs, the limited understanding of osteogenic differentiation mechanisms, the role of Polycomb/Trithorax complexes, enhancer function, and prior knowledge about PLZF function in other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C36 are background statements supported by citations to prior literature. These establish the context and motivation for the study. The claims accurately represent the state of knowledge in the field and are appropriately cited. These are not novel findings of the current study but provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C121",
+      "C145",
+      "C154",
+      "C155",
+      "C156",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Background claims about enhancer mechanisms (p300/CBP, Mediator, RNA PolII recruitment, enhancer-promoter looping), prior genetic studies (Zbtb16 knockout mice), other transcription factors (Runx2, OSR2), and NNMT function in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115, C121, C145, C154-C156, C167-C169 are background statements supported by citations to prior literature. These provide context for interpreting the current findings and are accurately represented. These are not novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C144",
+      "C150",
+      "C171"
+    ],
+    "result": "Summary and conclusion claims synthesizing the major findings: activation of ZBTB16 locus is important for osteogenic differentiation; PLZF regulates differentiation through binding at enhancers and positively affecting transcription; EnP is a latent developmental enhancer that regulates NNMT through looping and affects SAM homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C51, C144, C150, C171 are summary statements that synthesize the major findings presented in the manuscript. These conclusions are supported by the collective evidence from ChIP-seq, RNA-seq, 4C-seq, reporter assays, and knockdown experiments. The claim that this is 'one of the few known examples' of enhancer-promoter dynamics in MSC differentiation (C150) is supported by citation to Dixon et al., 2015. The model in Figure 7E effectively summarizes the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C158",
+      "C159"
+    ],
+    "result": "There is limited co-occurrence of PLZF with PRC1 (RNF2), PRC2 (SUZ12), and H3K27me3 in immature osteoblasts. No direct interaction between PLZF and MED12 was observed, suggesting involvement of other cofactors. PLZF influence on H3K27ac might facilitate MED12 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by ChIP-seq clustering analysis (Figure 2F, Figure 2\u2014figure supplement 2A) showing limited overlap between PLZF and Polycomb marks. Claim C158 is stated as unpublished data ('data not shown') but is appropriately acknowledged. Claim C159 is speculation about the mechanism by which PLZF affects MED12 recruitment, which is reasonable given the data but not directly tested. The overall interpretation that PLZF functions primarily as an activator rather than repressor in this context is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "EnP functions only upon induction of differentiation in the context of a GFP reporter, suggesting it requires lineage-specific factors such as PLZF for activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 are supported by the GFP reporter assay data (Figures 4E-F) showing EnP is inactive in naive cells but active after differentiation. The inference that EnP requires lineage-specific factors like PLZF (C161) is reasonable given that PLZF is absent in naive cells and binds to EnP upon differentiation. However, the reporter assay does not directly test whether PLZF is required for EnP activity in the reporter context (e.g., by combining reporter assay with PLZF knockdown).",
+    "result_type": "MINOR"
+  }
+]

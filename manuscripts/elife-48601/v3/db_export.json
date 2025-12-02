@@ -1,0 +1,2350 @@
+{
+  "submission": {
+    "id": "d2243f2d-3be8-4208-93e4-c071a59d0aee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:04:55.228355Z",
+    "updated_at": "2025-12-02T13:04:55.228355Z"
+  },
+  "content": [
+    {
+      "id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "submission_id": "d2243f2d-3be8-4208-93e4-c071a59d0aee",
+      "content_type": "manuscript",
+      "content_text": "# Mask family proteins ANKHD1 and ANKRD17 regulate YAP nuclear import and stability\n\n## Authors\n\n- Clara Sidor<sup>1</sup>\n- Nerea Borreguero-Munoz<sup>1</sup>\n- Georgina C Fletcher<sup>1</sup>\n- Ahmed Elbediwy<sup>1</sup> ([ORCID: 0000-0002-2102-7339](https://orcid.org/0000-0002-2102-7339))\n- Oriane Guillermin<sup>1</sup>\n- Barry J Thompson<sup>1</sup> ([ORCID: 0000-0002-0103-040X](https://orcid.org/0000-0002-0103-040X)) \u2020\n\n### Affiliations\n\n1. Epithelial Biology Laboratory Francis Crick Institute London United Kingdom\n2. EMBL Australia, ACRF Department of Cancer Biology and Therapeutics John Curtin School of Medical Research, The Australian National University Canberra Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nMask family proteins were discovered in Drosophila to promote the activity of the transcriptional coactivator Yorkie (Yki), the sole fly homolog of mammalian YAP (YAP1) and TAZ (WWTR1). The molecular function of Mask, or its mammalian homologs Mask1 (ANKHD1) and Mask2 (ANKRD17), remains unclear. Mask family proteins contain two ankyrin repeat domains that bind Yki/YAP as well as a conserved nuclear localisation sequence (NLS) and nuclear export sequence (NES), suggesting a role in nucleo-cytoplasmic transport. Here we show that Mask acts to promote nuclear import of Yki, and that addition of an ectopic NLS to Yki is sufficient to bypass the requirement for Mask in Yki-driven tissue growth. Mammalian Mask1/2 proteins also promote nuclear import of YAP, as well as stabilising YAP and driving formation of liquid droplets. Mask1/2 and YAP normally colocalise in a granular fashion in both nucleus and cytoplasm, and are co-regulated during mechanotransduction.\n\n## Introduction\n\nThe YAP/TAZ family of oncoproteins has a single homolog in Drosophila named Yorkie (Yki) that was discovered to control tissue growth in proliferating epithelia (Huang et al., 2005). Genetic analysis of YAP and TAZ in mice is revealing an important role for both proteins in driving cell proliferation during tissue regeneration as well as during formation of several tumour types (Cai et al., 2015; Cai et al., 2010; Camargo et al., 2007; Chen et al., 2014; Dong et al., 2007; Elbediwy et al., 2016; Gruber et al., 2016; Reginensi et al., 2015; Schlegelmilch et al., 2011; Vincent-Mistiaen et al., 2018; Zhang et al., 2011). Yki/YAP/TAZ were shown to function as transcriptional co-activators of the nuclear DNA binding transcription factors TEAD1-4 (named Scalloped in Drosophila) (Koontz et al., 2013; Wu et al., 2008). The molecular mechanisms by which Yki/YAP/TAZ are physiologically regulated are still being determined.\n\nOne key mechanism regulating Yki/YAP/TAZ subcellular localisation is phosphorylation by the Hippo pathway kinase Warts/LATS on five Serine residues, which induces retention in the cytoplasm by binding to 14-3-3 proteins (Huang et al., 2005; Oh and Irvine, 2008; Oh and Irvine, 2009; Zhao et al., 2007). In response to mechanical stretching/flattening of cells, both Yki (Fletcher et al., 2018) and YAP/TAZ (Dupont et al., 2011; Wada et al., 2011; Zhao et al., 2007) can translocate from the cytoplasm to the nucleus. Both Yki (Manning et al., 2018) and YAP (Ege et al., 2018) undergo dynamic and continuous nuclear-cytoplasmic shuttling which must involve specific nuclear import and export factors. Several regulators of YAP nuclear export have been proposed (Furukawa et al., 2017; Lee et al., 2018). In contrast, no nuclear import factors for the Yki/YAP/TAZ family have been identified and these proteins lack a conventional nuclear localisation sequence (NLS) (Kofler et al., 2018; Wang et al., 2016).\n\nHere we show that the Mask family of ankyrin-repeat domain proteins, which feature conserved NLS and NES (nuclear export sequence) motifs, mediate nuclear import of both Drosophila Yki and mammalian YAP. Previous work identified an essential requirement for Drosophila Mask and its mammalian homologs Mask1 (ANKHD1) and Mask2 (ANKRD17) in promoting Yki/YAP transcriptional activity, but the mechanism by which Mask family proteins act has remained unclear (Dong et al., 2016; Machado-Neto et al., 2014; Sansores-Garcia et al., 2013; Sidor et al., 2013). We find that loss of Mask family proteins prevents nuclear import of Yki/YAP in both mammalian cells and Drosophila. Furthermore, while Mask is normally required for Yorkie to drive tissue growth, addition of an ectopic NLS to Yki is sufficient to bypass this requirement in Drosophila. Double conditional knockout of Mask1/ANKHD1 and Mask2/ANKRD17 in mouse intestinal organoids, together with siRNA knockdown of these proteins in human intestinal cells, confirms an essential requirement for Mask proteins in YAP nuclear import and stability. Finally, we show that overexpression of Mask1/2 is sufficient to stabilise YAP protein levels and can also drive phase separation of YAP into liquid droplets, suggesting that colloidal phase separation may contribute to the regulation of YAP activity.\n\n## Results\n\nWe began by examining whether Mask family proteins have a role in regulating the subcellular localisation of Yki, as we were unable to identify a direct transcriptional activation function for Mask in a GAL4 reporter assay (Figure 1\u2014figure supplement 1). Previously, we ruled out a possible role for Mask in promoting Yki nuclear import based on antibody staining for Yki in mask10.22 null mutant clones in the Drosophila wing disc, where Yki is mostly cytoplasmic (Sidor et al., 2013). Recently, a Yki-GFP knock-in line revealed robust nuclear localisation of Yki in the mechanically stretched cells of the Drosophila ovarian follicle cell epithelium (Fletcher et al., 2018). We therefore induced mask10.22 null mutant clones induced in the developing follicle cell epithelium, in which an endogenously tagged Yki-GFP knock-in is cytoplasmic at stage 10 but becomes strongly nuclear during stage 11 as the columnar cells are stretched mechanically (Fletcher et al., 2018) (Figure 1A,B). We find that Yki-GFP is lost from the nucleus and accumulates in the cytoplasm in mask mutant cells (Figure 1C\u2013F). These findings indicate that Mask proteins are required for normal nuclear localisation of Yki.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig1-v3.jpg)\n\n**Figure 1.:** (A) Stage 10 Drosophila egg chamber with endogenously tagged Yki-GFP (green) localised to the nucleus of stretch cells (anterior) and cytoplasm of columnar cells (posterior). (A\u2019) Magnification of columnar cells. (B) Stage 11 Drosophila egg chamber with endogenously tagged Yki-GFP (green) localised to the nucleus of stretch cells (anterior) and nucleus of flattening columnar cells caused by growth of the oocyte (posterior). (B\u2019) Magnification of flattening columnar cells. (C) Stage 10 Drosophila egg chamber containing null mutant clones of mask (marked by absence of nuclear RFP, red) display cytoplasmic Yki-GFP. (C\u2019) Yki-GFP single channel. (D) Stage 11 Drosophila egg chamber containing null mutant clones of mask (marked by absence of nuclear RFP, red) display cytoplasmic Yki-GFP. (D\u2019) Yki-GFP single channel. (E) Quantification of nuclear:cytoplasmic ratio of Yki-GFP in (C) n\u00a0=\u00a07 clones. (F) Quantification of nuclear:cytoplasmic ratio of Yki-GFP in (D) n\u00a0=\u00a012 clones.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Drosophila S2 cells were transfected with a UAS.Luciferase reporter gene and various GAL4 linked constructs, including GAL4 DNA binding domain (DBD) alone, GAL4-DBD-Yki and GAL4-DBD-Mask. No effect of Mask on luciferase reporter activity was measured, while Yki had a very strong transcriptional activity on the UAS.Luciferase reporter gene.\n\nThe above observations suggest a potential role for Mask in nuclear import of Yki. Mask family proteins have a conserved nuclear localisation signal (NLS) located just C-terminal to the second ankyrin repeat domain (Figure 2A). To test whether this NLS is required for the function of Mask in vivo, we generated a mask CRISPR-knockin lacking the NLS motif (mask\u2206NLS), which was homozygous lethal but showed normal expression of the mutant protein and localisation to the cytoplasm in clones (Figure 2\u2014figure supplement 1). Consistent with a role for Mask in nuclear import, clones of follicle cells homozygous for the mask\u2206NLS allele show a strong decrease in nuclear Yki-GFP and a corresponding increase in the level of cytoplasmic Yki-GFP (Figure 2B\u2013D). These results demonstrate the essential requirement for the NLS motif in Mask function and support a key role for Mask in Yki nuclear import.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic diagram of the Mask family proteins and their conserved domains and motifs. (B) Stage 13 Drosophila egg chamber with endogenously tagged Yki-GFP (green) localised to the nucleus of flattening columnar cells. Nuclear localised RFP is also shown (red). (C) Stage 13 Drosophila egg chamber with endogenously tagged Yki-GFP (green) containing homozygous mutant clones for a CRISPR-knockin mask\u2206NLS mutant allele, marked by the absence of nuclear RFP (red). Note that Yki-GFP is no longer localised to the nucleus of flattening columnar cells in the mask\u2206NLS mutant clone. (D) Quantification of nuclear:cytoplasmic ratio of Yki-GFP in multiple mask\u2206NLS mutant clones as shown in (C) n\u00a0=\u00a022 clones.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The Nuclear Localisation Signal (NLS) region of the wild-type Mask protein is indicated in red. This region was deleted in the mask\u2206NLS allele. (B) Clones homozygous for the FRT mask\u2206NLS allele were induced by flp-FRT recombination over an FRT nlsRFP marker chromosome. Loss of nlsRFP indicates the homozygous cells. Note normal expression and cytoplasic localization of the Mask\u2206NLS protein. (C) Clones homozygous for the null mutant allele of FRT82 mask10.22 show a loss of Mask protein.\n\nSince the phenotypic characterisation of mask mutants focused on the proliferating epithelia of Drosophila, such as the developing wing (Sansores-Garcia et al., 2013; Sidor et al., 2013), we sought to examine the role of Mask in regulating Yki-GFP in this tissue. Yki is known to be primarily cytoplasmic in the developing wing, which is composed of densely packed columnar epithelial cells (Oh and Irvine, 2008) (Figure 3A). Since clones overexpressing Yki (MARCM clones expressing tub.Gal4 UAS.Yki) were shown to require Mask in order to drive cell proliferation in the wing (Sidor et al., 2013), we examined whether Mask affects the nuclear localisation of overexpressed Yki. We find that overexpressed Yki is readily detected in both nucleus and cytoplasm in control MARCM clones, but not in mask mutant MARCM clones, where the level of nuclear Yki is reduced relative to the level of Yki in the cytoplasm (Figure 3A). To test the function of Mask in nuclear import of endogenous Yki, we examined the peripodial epithelium, which features strongly nuclear Yki-GFP. We find that silencing of Mask expression by RNAi in the peripodial epithelium with Ubx.Gal4, prevents the normally strongly nuclear Yki-GFP localisation in these cells (Figure 3B). These results confirm that Mask is required for the nuclear localisation of both endogenous and overexpressed Yki in the developing wing of Drosophila.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig3-v3.jpg)\n\n**Figure 3.:** (A) Columnar epithelium of the wing imaginal disc from third instar larva showing mostly cytoplasmic localisation of endogenously tagged Yki-GFP (left). MARCM clones expressing Yki with the GAL4/UAS system show both nuclear and cytoplasmic Yki localisation, as detected by Yki antibody staining (nlsGFP+). MARCM clones for a null mask mutant allele show reduced nuclear Yki (nlsGFP+). n\u00a0=\u00a06 clones. (B) Squamous peripodial epithelium from the wing imaginal disc from third instar larva showing mostly nuclear localisation of endogenously tagged Yki-GFP (left). Silencing of Mask expression by ubx.Gal4 driven UAS.mask-IR (inverted repeat hairpin RNAi) in the peripodial epithelium is sufficient to reduce nuclear Yki-GFP localisation.\n\nThe above results suggest that the reduced level of nuclear Yki may account for the failure of overexpressed Yki to drive cell proliferation in mask mutant clones in the developing wing. To test this notion, we linked an ectopic nuclear localisation sequence (NLS) and an epitope tag (HA) to Yki and expressed it in wild-type and mask mutant MARCM clones in the wing. We confirm that MARCM clones expressing tub.Gal4 UAS.Yki-NLS-HA are able to restore both nuclear localisation of Yki and cell proliferation in mask mutant cells (Figure 4A\u2013G; Sidor et al., 2013). We note that even Yki-NLS-HA is still mildly less nuclear and more cytoplasmic when expressed in mask mutant cells compared to wild-type cells, and that this may therefore explain the mild difference in growth between these two types of clones (Figure 4E\u2013G). We find similar results in the eye imaginal disc (Figure 4H\u2013K). Thus, linkage of a nuclear localisation sequence to Yki can largely bypass the requirement for mask in Yki-driven cell proliferation in vivo. These results indicate that the primary function of Mask is to promote nuclear localisation of Yki in Drosophila.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig4-v3.jpg)\n\n**Figure 4.:** (A) Wing imaginal disc containing control MARCM clones (nlsGFP+, green). (B) Wing imaginal disc containing null mutant mask MARCM clones (nlsGFP+, green) are almost eliminated. (C) Wing imaginal disc containing control MARCM clones also expressing nlsYkiHA (nlsGFP+, green) proliferate more strongly than controls. (D) Wing imaginal disc containing null mutant mask MARCM clones also expressing nlsYkiHA (nlsGFP+, green) are rescued for their growth and survival to a level similar to wild-type clones. (E) Quantification of average clone sizes in A-D. (F) Close-up view of control MARCM clones expressing nlsYkiHA in red (marked by nlsGFP+, green). DAPI in blue. (G) Close-up view of null mutant mask MARCM clones expressing nlsYkiHA in red (marked by nlsGFP+, green). DAPI in blue. (H) Eye imaginal disc containing control MARCM clones (nlsGFP+, green). (I) Eye imaginal disc containing null mutant mask MARCM clones (nlsGFP+, green) are almost eliminated. (J) Eye imaginal disc containing control MARCM clones also expressing nlsYkiHA (nlsGFP+, green) proliferate more strongly than controls. (K) Eye imaginal disc containing null mutant mask MARCM clones also expressing nlsYkiHA (nlsGFP+, green) are rescued for their growth and survival to a level similar to wild-type clones.\n\nTo extend these findings to mammals, we performed siRNA knockdown experiments in human HEK293T and Caco2 cells. In both cases, silencing of Mask1 (ANKHD1) was sufficient to reduce both nuclear localisation of YAP and total YAP levels, as measured by immunostaining or western blotting of cell lysates (Figure 5A\u2013C). Notably, double siRNA against Mask1/2 causes apoptosis of transfected cells, indicating that the two proteins act redundantly (Figure 5C; Figure 5\u2014figure supplement 1). Furthermore, we generated double conditional floxed mice for Mask1 (ANKHD1) and Mask2 (ANKRD17). The double floxed Mask1/2 mice were used to generate intestinal organoids, which were then infected with GFP-tagged Adenoviral Cre (AdCre-GFP) to drive deletion of Mask1/2 in clones. Clonal deletion of Mask1/2 resulted in a strong reduction in YAP levels compared to surrounding wild-type cells (Figure 5D) and clone sizes were typically only 1\u20132 cells, with cells frequently undergoing extrusion from the epithelium and death (Figure 5\u2014figure supplement 2). We find a similar effect of Mask1 siRNA on TAZ localisation (Figure 5\u2014figure supplement 3). These findings show that mammalian Mask1/2 have a conserved function in nuclear import of YAP but are additionally required to stabilise the YAP protein.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig5-v3.jpg)\n\n**Figure 5.:** (A) HEK293T cells display nuclear YAP localisation after transfection with control scrambled siRNA, and low levels of cytoplasmic YAP localisation after transfection with Mask1 siRNA oligonucleotides. (B) Western analysis of Mask1 and YAP after transfection of HEK293T cells with control scrambled or Mask1 siRNA oligonucleotides (left). Quantification of the nuclear:cytoplasmic ratio of YAP subcellular localisation after transfection of HEK293T cells with control scrambled or Mask1 siRNA oligonucleotides as shown in A (right). (C) Caco2 intestinal epithelial cells transfected with control or Mask1 or Mask1/2 siRNA oligonucleotides and immunostained for YAP or stained with DAPI to mark nuclei. (D) Intestinal organoids freshly cultured from Mask1/2 double conditional knockout mice, in which Ad-Cre was used to induce clonal knockout of both Mask1 and Mask2 in single cells (marked by Ad-Cre-GFP in red). Note the dramatic reduction in YAP protein levels (n\u00a0=\u00a012 organoids).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Caco2 intestinal epithelial cells are eliminated following transfection of both Mask1/2 siRNAs. No YAP-negative or Mask1-negative cells remain. (B) HaCat skin epithelial cells are eliminated following transfection of both Mask1/2 siRNAs. No YAP-negative or Mask 1-negative cells remain.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Mouse intestinal organoids derived from Mask1/2 double floxed conditional knockout mice were cultured in Matrigel and infected with Ad-Cre-GFP (green) before immunostaining for YAP (red) and phalloidin (purple)/DAPI (blue). Note that Ad-Cre-GFP clones do not grow larger than single cells and tend to be extruded from the epithelium. Representative examples of n\u00a0=\u00a025 organoids are shown.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Human Caco2 epithelial cells were transfected with scrambled siRNA (control) or specific siRNAs targeting Mask1 and then immunostained for TAZ, Mask1 and Nuclei (with DAPI). Silencing of Mask1 reduces the expression level of both Mask1 and TAZ proteins, with TAZ also showing a cytoplasmic localization in the absence of Mask1.\n\nWe next tested whether overexpression of Mask1/2 might be sufficient to cause mis-regulation of YAP in human cells. We find that overexpression of either Mask1 or Mask2 caused strong stabilisation of YAP protein levels in Caco2 cells (Figure 6A,B). Furthermore, overexpression of Mask1 in HEK293T cells, which are known to generate high levels of expression, caused formation of abnormally large droplets containing both Mask1 and YAP proteins (Figure 6). We speculate that Mask proteins may cluster/polymerise YAP to drive colloidal phase separation \u2013 a classic mechanism of cellular compartmentalisation (Hardy, 1899; Iborra, 2007; Walter and Brooks, 1995; Wilson, 1899). Recent work has shown that cells expressing GFP-tagged YAP can exhibit colloidal phase separation and formation of YAP liquid droplets in both nucleus and cytoplasm after treatment with 25% PEG to induce macromolecular crowding (Cai et al., 2018). Our findings suggest that endogenous YAP may also phase separate when it becomes stabilised and concentrated by clustering with Mask family proteins.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig6-v3.jpg)\n\n**Figure 6.:** (A) Caco2 intestinal epithelial cells overexpressing H\u00c1-tagged Mask1, which induces stabilisation of endogenous YAP. DAPI marks nuclei in the right-hand panel. (B) Caco2 intestinal epithelial cells overexpressing H\u00c1-tagged Mask2, which also induces stabilisation of endogenous YAP. DAPI marks nuclei in the right-hand panel. (C) HEK293T cells overexpressing H\u00c1-tagged Mask1, which induces stabilisation of endogenous YAP and formation of large liquid-like droplets with smooth boundaries containing both proteins \u2013 suggestive of colloidal phase separation.\n\nTo further explore the possible physiological role of colloidal phase separation, we examined the subcellular localisation of Yki/YAP and Mask family proteins. Yki-GFP localises to intracellular granules in either the nucleus and cytoplasm of follicle cells or cultured Drosophila S2 cells (Figure 7A). Similarly, antibody staining for Yki and Mask reveals co-localisation in the same intracellular granules in Drosophila S2 cells (Figure 7B). In human cells in culture, immunostaining for YAP and Mask1 reveals a similarly granular pattern in both cytoplasm and nucleus (Figure 7C). These findings indicate that endogenous Yki/YAP and Mask proteins co-localise and may cluster/polymerise to form intracellular granules (or \u2018hubs\u2019) as they interact with cytoplasmic 14-3-3 or nuclear TEAD (Figure 7D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig7-v3.jpg)\n\n**Figure 7.:** (A) Yki-GFP exhibits a granular appearance in both nucleus and cytoplasm of flattened Drosophila follicle cells. Yki-GFP also exhibits a granular appearance in the cytoplasm of S2 cells. (B) Co-localisation of endogenous Yki and Mask in nuclear and cytoplasmic granules of S2 cells. (C) Co-localisation of endogenous YAP and Mask1 in nuclear and cytoplasmic granules of HEK293 cells. (D) Schematic diagram of multivalent interactions between YAP binding partners and the possible formation of clusters (hubs/granules) in either the cytoplasm or nucleus.\n\nWe previously showed that human Mask1/2 proteins can relocalise with YAP from the cytoplasm to the nucleus of cultured human cells in a density-dependent fashion (Sidor et al., 2013). We later found that integrin signalling via Src family kinases is the primary mechanism of YAP mechano-regulation in these cells and is crucial to regulate wound healing (Elbediwy et al., 2018; Elbediwy et al., 2016). We therefore tested whether the density-dependent subcellular localisation of Mask1/2 proteins was affected by loss of integrin adhesions (by removing Calcium), by loss of mechanical forces (by treatment with the actin drug Latrunculin), by loss of Src family kinase activity (by treatment with the Src inhibitor Dasatinib), or after scratch wounding (Figure 8A,B). In all cases, alterations in the localisation of Mask1/2 and YAP before and after treatment were the same, suggesting that binding of Mask1/2 to YAP determines its localisation (8A-C). Finally, we previously identified a physiological role for YAP (and TAZ) in skin wound healing, which causes YAP to localise to the nucleus in leading edge skin epithelial cells (Elbediwy et al., 2016). Mask1/2 are similarly nuclear localised during skin wound healing (Figure 8D), supporting the notion that these proteins are co-regulated in response to both mechanical cues and tissue damage in vitro and in vivo.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig8-v3.jpg)\n\n**Figure 8.:** (A) Caco2 intestinal epithelial cells immunostained for YAP, Mask1 and Mask2 at different densities and following treatments to interrupt Integrin-Src mediated mechanotransduction (low Calcium, Latrunculin, or Dasatinib). (B) Caco2 intestinal epithelial cells immunostained for YAP, Mask1 and Mask2 at various times after scratch wounding of the epithelium. (C) Schematic diagram of Mask-YAP interactions in the nucleus and cytoplasm and their co-regulation during nucleo-cytoplasmic shuttling. (D) Mouse skin epithelium before (left) and after (right) wounding, showing upregulation and nuclear localisation of Mask1/2 in vivo.\n\n## Discussion\n\nOur results shed light on the molecular mechanisms governing the activity of Yki/YAP family of transcriptional co-activators. Dynamic and continuous nucleo-cytoplasmic shutting of both Yki and YAP is well established (Ege et al., 2018; Manning et al., 2018). Dynamic shutting enables the subcellular localisation of the bulk of Yki/YAP protein to be governed simply by the availability of binding partners such as cytoplasmic 14-3-3 proteins or nuclear Sd/TEAD. Indeed, shuttling enables Hippo signalling to control bulk Yki/YAP subcellular localisation by regulating phosphorylation of Yki/YAP and thus its binding to 14-3-3 proteins. In the absence of a Hippo signal, unphosphorylated Yki/YAP binds primarily to nuclear Sd/TEAD and thus adopts a bulk nuclear localisation while maintaining shuttling to allow continuous sensing of Hippo activity in the cytoplasm. Our results reveal a novel molecular mechanism for Yki/YAP nuclear import by Mask family proteins.\n\nWe have established the essential requirement for the canonical nuclear localisation signal (NLS) in the Drosophila Mask protein, which is conserved in mammalian Mask1 (ANKHD1) and Mask2 (ANKRD17). Deletion of the Mask NLS by CRISPR knockin caused accumulation of Yki-GFP within mutant clones of cells. Furthermore, attachment of an ectopic NLS to Yki was sufficient to bypass the requirement for Mask in Yki-dependent cell proliferation and tissue growth. Finally, our results demonstrated a conserved requirement for human Mask1 in driving YAP to the nucleus in human cells.\n\nAlthough the above findings demonstrate the primacy of the Mask NLS in mediating nuclear import, it is possible that non-canonical \u2018RaDAR\u2019 nuclear import motifs that bind RanGDP within the ankyrin repeat domains of Mask family proteins may also contribute, although the corresponding residues in Mask proteins are not strongly hydrophobic so may only function weakly, if at all (Lu et al., 2014). Furthermore, it is possible that Importin-alpha binding non-canonical nuclear import motifs within Yki (Wang et al., 2016) and a Ran-independent nuclear import sequence in YAP/TAZ (Kofler et al., 2018) may also contribute to import. However, these non-canonical motifs are not sufficient to maintain normal nuclear localisation of either Yki or YAP in the absence of Mask proteins.\n\nIn order for Mask to promote nuclear-cytoplasmic shuttling of Yki, the Mask-Yki interaction must be weak and constitutive \u2013 so that a pool of Yki protein is always dynamically shuttling. The regulation of the bulk distribution of Yki is then determined simply by its choice of strong binding partner, namely either 14-3-3 in the cytoplasm or Sd in the nucleus, as mentioned above. Thus, there is always a 14-3-3 bound pool of Yki, a Sd bound pool of Yki and a third pool of Yki that can shuttle between the cytoplasm and nucleus by binding to Mask proteins and possibly other import/export factors. The relative proportions of the 14-3-3 bound and Sd bound pools determines the bulk distribution of Yki. Hippo signalling affects the 14-3-3 interaction (by Yki phosphorylation), while expression levels of the sd gene affects the Sd interaction. According to this model, there is no requirement for regulation of the Yki-Mask interaction and we have no evidence for it.\n\nOur findings also establish a novel role for mammalian Mask1/2 in stabilising YAP protein levels. Unlike Drosophila Yki, YAP/TAZ stability is regulated by two SCF-type E3 ubiquitin ligases, beta-TrCP and FBXW7, which earmark YAP/TAZ for degradation after phosphorylation by LATS and CK1 on a specific phosphodegron containing Ser381 (Tu et al., 2014; Zhang et al., 2016; Zhao et al., 2010). Consequently, while loss of Drosophila Mask does not reduce total Yki levels, loss of Mask1/2 causes a dramatic loss of YAP protein, suggesting that binding of Mask1/2 to YAP is essential to prevent YAP degradation.\n\nAn interesting consequence of the role of Mask1/2 in stabilising YAP protein is that overexpression of Mask proteins is sufficient to dramatically raise the concentration of YAP within the cytoplasm, even causing formation of what appear to be YAP liquid droplets in human cells. Similar YAP liquid droplets have recently been shown to occur by phase separation after treatment of cells expressing GFP-tagged YAP with 25% PEG to drive macromolecular crowding (Cai et al., 2018). Whether phase-separation of YAP has a physiological role is still unknown, but the possibility is supported by our finding that endogenous YAP can also be observed to form droplets when in a complex with Mask1 at high concentrations. Interestingly, phase-separation has been proposed to support formation of transcriptional enhancer complexes (\u2018transcription factories\u2019) in the nucleus (Boehning et al., 2018; Boija et al., 2018; Hnisz et al., 2017; Iborra, 2007; Jackson et al., 1993; Lu et al., 2018; Sabari et al., 2018), and we speculate that Mask proteins might function in this manner to promote transcription. Furthermore, Mask family proteins contain a conserved RNA binding KH-domain, and several RNA binding proteins have key roles in colloidal phase separation (Anderson and Kedersha, 2006; Lin et al., 2015; Maharana et al., 2018; Mao et al., 2011; Molliex et al., 2015; Ramaswami et al., 2013; Weber and Brangwynne, 2012). Finally, the fact that Mask family proteins contain two YAP-binding ankyrin repeat domains provides a plausible multivalent interaction mechanism by which Mask proteins could promote clustering of multiple YAP molecules in either the nucleus or cytoplasm, although further work is needed to explore this possibility (Figure 7D).\n\nIn conclusion, our results identify novel molecular mechanisms regulating the Yki/YAP/TAZ family of transcriptional co-activators. Mask family proteins promote nuclear import of both Yki and YAP, while also acting to stabilise YAP protein levels, which can lead to what appear to be YAP droplets at high concentrations. Endogenous Mask1/2 and YAP co-localise in intracellular granules in both the nucleus and cytoplasm, and the nucleo-cytoplasmic distribution of Mask1/2 and YAP is co-regulated in response to mechanical cues in human cells, most likely through direct association of the two proteins. These functions of Mask family proteins are crucial to enable dynamic nuclear-cytoplasic shuttling and thus regulation of these co-activators by Hippo signalling and Integrin signalling to control cellular behaviour.\n\n## Materials and methods\n\n### Drosophila genetics\n\nAll Drosophila strains have been previously described in Sidor et al. (2013) and Fletcher et al. (2018) or are available from Bloomington Drosophila Stock Centre, with the exception of the mask\u2206NLS allele, which was generated in this study, as follows. CRISPR/Cas9-mediated genome editing by homology-dependent repair (HDR) of Mask/CG33106 3R (95F3-95F5) using one guide RNA and a dsDNA plasmid donor was used to knockin a cassette, PBacDsRed, into the injection strain w1118. Genome editing involved deleting a 48 bp nuclear localization sequence (NLS) \u2018CGTCGTCGTGAGCGCaagaagaagaagaagatggagaagaaagaggagaagCGCCGTCAA\u2019 and replacement by PBacDsRed. This cassette contains a 3XP3-DsRed that facilitated the genetic screening and was then excised by Piggy Bac transposase to enable normal expression of the gene. Only one TTAA motif was left after transposition that is embedded in nearby mutated silenced mutation from GTCAAG to GTtAAG encoded in VK. The following guide RNAs were used:\n\n#### gRNA 1\n\n#### gRNA 2\n\nValidation of the exised allele was performed by sequencing after PCR across the excised region. Genomic DNA was obtained from single fly of each stock following single-fly DNA prep.Injection strain w1118was used as a negative control. PCR was performed using KOD-FX (TOYOBO) on BioRad S1000 Thermal Cycler.100bp DNA Ladder from GenePurewas used as reference. There was a 737bp-product in the injection strain control. The product length was 2373 bp before excision of the PBacDsRed cassette and 677 bp after excision using the following PCR primers:\n\n### Induction of clones in Drosophila\n\nMosaic tissues were generated using the FLP/FRT and the MARCM system with a heat shock promoter (hs) to drive the expression of the FLP recombinase. Clones in imaginal discs were induced by heat shocking larvae at 60 hr (\u00b112 hr) of development and larvae were dissected at the third instar stage. Clones in ovarian follicle cells were induced by heat shocking adult females fed with yeast for 3 days before dissection at various times after heat shock.\n\n### Fluorescent immunostaining\n\n#### Drosophila\n\nOvaries and imaginal discs were dissected in PBS, fixed for 20 mins in 4% paraformaldehyde in PBS, washed for 30 min in PBS/0.1% Triton X-100 (PBST) and blocked for 15 min in 5% normal goat serum/PBST (PBST/NGS). Primary antibodies were diluted in PBST/NGS and samples were incubated overnight at 4\u00b0C (Fletcher et al., 2018). The following primary antibodies were used:\n\nSecondary antibodies (all from Molecular Probes, Invitrogen) were used at 1:500 for 2\u20134 hr prior to multiple washes in PBST and staining with DAPI at 1 \u03bcg/ml for 10-30mins prior to mounting on slides in Vectashield (Vector labs).\n\n#### Human cells\n\nAll cell lines were obtained from the Francis Crick Institute Cell Services Core Facility and are certified mycoplasma-free. Cells were fixed and stained by standard procedures using the following antibodies:\n\nDNA was stained with DAPI. Samples were imaged with a Leica SP5 Confocal Microscope.\n\n#### siRNA methods\n\n##### siRNAs\n\nthree different pools of siRNAs were used at a final concentration of 300 nM (75 nM of each individual siRNA):\n\nCells were plated in 12 well plates and transfected with siRNA pools using the Lipofectamine RNAiMax reagent (invitrogen). Cells were harvested after 48 hr and analysed by immunostaining or western blot.\n\n#### Luciferase assay in S2 cells\n\nThe luciferase assay was performed in sextuplicates in a 96 well plate. Cells were transfected with 20 ng of each DNA plasmid per well. 48 hr after transfection, cells were lysed and tested for Luciferase and Renilla activity using the Dual-luciferase reporter assay system kit (Promega) and a luminometer.\n\n### Mouse genetics\n\nAll experiments were carried out in accordance with the United Kingdom Animal Scientific Procedures Act (1986) and UK home office regulations under project license number 70/7926. For the generation of the Mask1/2 double conditional knockouts, the following EUCOMM ES cell lines were used:\n\n### Organoid cultures\n\nIntestinal crypts were isolated from the proximal part of the small intestine of 6\u201310 weeks Mask1 fl/fl Mask2 fl/fl mice (generated from EUCOMM ES cells for this study) as follows. The whole gut was harvested and washed in cold DPBS (#14190250, Gibco). The most proximal 5 cm were cut open, and the villi scraped off with a coverslip. The remaining tissue was cut in 0.5 cm pieces, washed several times by pipetting up and down in 8 mL fresh DPBS, and incubated in DPBS + 2 mM EDTA for 30 min at 4\u00b0C. Crypts were then mechanically extracted by vigorous shaking in DPBS, and filtered through a 70 \u00b5M Nylon cell strainer (#352350, Falcon). After several low speed washes in ADF-12 (#12634\u2013010, Gibco), isolated crypts were resuspended and plated in Matrigel (#354230, Corning). Organoids were cultured in IntestiCult medium (#06005, Stemcell technologies) supplemented with Primocin antibiotic (1:50, ant-pm-2, Invivogen), either in 24-well plates for maintenance, or in 8-well chambers (#80827, Ibidi) for Ad-Cre-GFP infection and immunostaining. Passages were performed by resuspending Matrigel-embedded organoids in cold DPBS and transferring them to a Falcon tube using a 2 mL syringe with a 27 G \u00bd needle (BD Microlance #300635) to break them up. After two low speed washes in ADF-12, organoids were resuspended and plated in Matrigel.\n\n### Organoid infection with Ad-Cre-GFP\n\nCre recombinase was expressed in organoids using Recombinant Adenovirus Ad-Cre-GFP from SignaGen Laboratories (#SL100706), which co-expresses GFP as a marker. The Ad-Cre-GFP virus was diluted in IntestiCult Medium to a concentration of 1.106 pfu/\u03bcl. Organoid infection was performed using the Mix and Seed approach from 5-day old Mask1 fl/fl; Mask2 fl/fl organoids were passaged into fresh Matrigel. Ad-Cre-GFP was added to the unpolymerized Matrigel-organoid mix at a final concentration of 5.106 pfu per 100 \u03bcl. Organoids were then plated in 8-well chambers and grown in IntestiCult medium for 3 days at 37\u00b0C.\n\n### Organoid fixation and staining\n\nOrganoids embedded in Matrigel were washed once in PBS, then incubated in fix solution (PBS + 4% formaldehyde) for 30 min. After two washes (5 min) in PBS, they were incubated in quenching solution (PBS + 50 mM NH4Cl), then washed again 3 times 5 min in PBS. Organoids were permeabilised in PBST (PBS + 0.3% Triton) for 30 min, then blocked for 30 min in Blocking solution (PBS + 0.1% Triton + 5% NGS). Immunostaining was performed by incubating with Mouse Anti-YAP 63.7 from Santa Cruz (sc-101199; 1 in 100) in blocking solution overnight at 4\u00b0C in a wet chamber. After three 30 min washes in PBS, organoids were incubated in secondary antibody, DAPI and Phalloidin-647 for 1 hr and 30 min at room temperature and washed again 3 times. After removal of the last wash, 80% glycerol was added to the wells at least one hour prior to imaging. Imaging was performed with a Leica SP5 laser-scanning confocal microscope.\n",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "12b84545-1c7e-4a44-b766-91ea97fe90af",
+      "submission_id": "d2243f2d-3be8-4208-93e4-c071a59d0aee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roger J Davis, University of Massachusetts Medical School United States\n\nReviewers:\n- Junhao Mao, United States\n\n## Review text\n\nDOI: [10.7554/eLife.48601.sa1](https://doi.org/10.7554/eLife.48601.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nMask family proteins have been implicated as positive regulators of the Hippo signaling pathway. However, the mechanistic basis for Mask family protein regulation has not been established. The study by Sidor et al. demonstrates that Mask family proteins bind to the transcriptional regulator Yorkie and promote nuclear import. This finding represents an important advance in understanding the function of the Hippo pathway.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mask family proteins ANKHD1 and ANKRD17 regulate YAP nuclear import, stability and phase separation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kevin Struhl as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Junhao Mao (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an interesting study that was designed to re-examine the role of Mask proteins in the Hippo pathway. Previous analysis by these authors demonstrated that Mask is required for Yki signaling, that it binds Yki, and that it may act as a co-activator (and not nucleocytoplasmic transport). Here the authors employ YFP-Yki (rather than immunostaining) and demonstrate that Mask is required for Yki transport to the nucleus. The data presented concerning a role for Mask in Yki nuclear import are convincing. However, there are a number of issues that remain to be addressed.\n\nEssential revisions:\n\n1) The Mask\u2206NLS allele studies are important. However, this allele is not described. The Materials and methods section refers to previous literature, but this information is not obvious. The authors need to state how the allele was made and the nature of the mutation. The Mask\u2206NLS phenotype resembles a Mask loss of function allele \u2013 is the Mask\u2206NLS protein expressed at WT levels? What is the localization of the Mask\u2206NLS protein?\n\n2) Yki nuclear accumulation is regulated. No information is provided concerning how Mask contributes to Yki nuclear accumulation. For example, Yki binds Mask \u2013 is this interaction regulated or is it constitutive? Some insight into the mechanism of regulated nuclear accumulation of Yki is needed \u2013 what is the role of Mask? For example, is there a role for Yki phosphorylation in Mask function? etc.\n\n3) Mask regulation of YAP nuclear import in mammalian cells is not fully documented. The authors show co-localization of Mask and Yki/YAP in vitro and in vivo (Fig7/8); however, the interpretation of siRNA experiments in 293 cells (Figure 5) is complicated by dramatically decreased YAP expression. This study can be strengthened by measuring its relative levels in nuclear and cytoplasmic fractions by immunoblots. The Mask1/2 DKO organoid assay (Figure 5D) has a similar concern, as only one or two cells carry Mask KO and have much lower YAP levels.\n\n4) Do Mask1/2 also regulate TAZ nuclear localization or stability?\n\n5) Figure 6. Conclusions concerning the role of Mask in YAP phase separation are speculative \u2013 this should be noted. This section of the manuscript represents a weakness of the overall study. The authors should test whether mutated forms of Mask, including \u2206NLS and \u2206NES affect YAP protein aggregation in different cellular compartments.\n",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3d85c63c-ef41-4f17-8446-f633480a87f9",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C1",
+      "claim": "Mask family proteins were discovered in Drosophila to promote the activity of the transcriptional coactivator Yorkie (Yki), the sole fly homolog of mammalian YAP (YAP1) and TAZ (WWTR1).",
+      "claim_type": "EXPLICIT",
+      "source": "Mask family proteins were discovered in Drosophila to promote the activity of the transcriptional coactivator Yorkie (Yki), the sole fly homolog of mammalian YAP (YAP1) and TAZ (WWTR1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research establishing the relationship between Mask proteins and Yorkie/YAP/TAZ.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "26afa497-7dcc-4692-8aea-fcce64c48d36",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C2",
+      "claim": "The molecular function of Mask, or its mammalian homologs Mask1 (ANKHD1) and Mask2 (ANKRD17), remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular function of Mask, or its mammalian homologs Mask1 (ANKHD1) and Mask2 (ANKRD17), remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the state of knowledge prior to the current study and is based on existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "69cb6342-3c53-495b-8c83-b22d02b5f33f",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C3",
+      "claim": "Mask family proteins contain two ankyrin repeat domains that bind Yki/YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mask family proteins contain two ankyrin repeat domains that bind Yki/YAP as well as a conserved nuclear localisation sequence (NLS) and nuclear export sequence (NES), suggesting a role in nucleo-cytoplasmic transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by prior knowledge of Mask protein structure and binding properties.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "2cdfc5f9-16cc-42de-86a8-5115e5804a12",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C4",
+      "claim": "Mask family proteins contain a conserved nuclear localisation sequence (NLS) and nuclear export sequence (NES).",
+      "claim_type": "EXPLICIT",
+      "source": "Mask family proteins contain two ankyrin repeat domains that bind Yki/YAP as well as a conserved nuclear localisation sequence (NLS) and nuclear export sequence (NES), suggesting a role in nucleo-cytoplasmic transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis of Mask proteins shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "271dece2-522a-451e-b66b-bb93d61a3192",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C5",
+      "claim": "Mask acts to promote nuclear import of Yki.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that Mask acts to promote nuclear import of Yki, and that addition of an ectopic NLS to Yki is sufficient to bypass the requirement for Mask in Yki-driven tissue growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1-4 demonstrating loss of nuclear Yki in mask mutants and rescue by NLS addition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "e6d115b4-4394-4e84-b407-fe7d423ddd13",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C6",
+      "claim": "Addition of an ectopic NLS to Yki is sufficient to bypass the requirement for Mask in Yki-driven tissue growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that Mask acts to promote nuclear import of Yki, and that addition of an ectopic NLS to Yki is sufficient to bypass the requirement for Mask in Yki-driven tissue growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 4 showing rescue of mask mutant phenotypes by Yki-NLS-HA expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "a544e679-65af-4fb4-9f84-38734b6af484",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C7",
+      "claim": "Mammalian Mask1/2 proteins promote nuclear import of YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Mask1/2 proteins also promote nuclear import of YAP, as well as stabilising YAP and driving formation of liquid droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 5 showing reduced nuclear YAP upon Mask1/2 knockdown or knockout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "95d8ad29-07a5-444e-820a-c9ad15ef2a4e",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C8",
+      "claim": "Mammalian Mask1/2 proteins stabilise YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Mask1/2 proteins also promote nuclear import of YAP, as well as stabilising YAP and driving formation of liquid droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 5 and 6 showing reduced YAP protein levels upon Mask1/2 loss and increased YAP levels upon Mask1/2 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "4d985f8a-c9d9-40f1-ad23-30ad0320a738",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C9",
+      "claim": "Mammalian Mask1/2 proteins drive formation of liquid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Mask1/2 proteins also promote nuclear import of YAP, as well as stabilising YAP and driving formation of liquid droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 6C showing large liquid-like droplets containing both Mask1 and YAP upon Mask1 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "6ff20d6c-c0aa-42cc-9250-0638cd9a0eae",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C10",
+      "claim": "Mask1/2 and YAP normally colocalise in a granular fashion in both nucleus and cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Mask1/2 and YAP normally colocalise in a granular fashion in both nucleus and cytoplasm, and are co-regulated during mechanotransduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunostaining data in Figure 7 showing granular colocalization of Mask and YAP proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "82d8d51c-773c-49db-9537-848ab6dba5d0",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C11",
+      "claim": "Mask1/2 and YAP are co-regulated during mechanotransduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Mask1/2 and YAP normally colocalise in a granular fashion in both nucleus and cytoplasm, and are co-regulated during mechanotransduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 8 showing similar subcellular localization changes of Mask1/2 and YAP in response to mechanical cues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "63466606-b5aa-4791-af23-f331e7647414",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C12",
+      "claim": "Yorkie (Yki) was discovered to control tissue growth in proliferating epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "The YAP/TAZ family of oncoproteins has a single homolog in Drosophila named Yorkie (Yki) that was discovered to control tissue growth in proliferating epithelia (Huang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Huang et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "e995f4da-6967-4cf6-bc34-bf897b93f2b3",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C13",
+      "claim": "YAP and TAZ have an important role in driving cell proliferation during tissue regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic analysis of YAP and TAZ in mice is revealing an important role for both proteins in driving cell proliferation during tissue regeneration as well as during formation of several tumour types (Cai et al., 2015; Cai et al., 2010; Camargo et al., 2007; Chen et al., 2014; Dong et al., 2007; Elbediwy et al., 2016; Gruber et al., 2016; Reginensi et al., 2015; Schlegelmilch et al., 2011; Vincent-Mistiaen et al., 2018; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "0f86873e-6c68-4092-be16-f9cce0ca6bdf",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C14",
+      "claim": "YAP and TAZ have an important role in driving cell proliferation during formation of several tumour types.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic analysis of YAP and TAZ in mice is revealing an important role for both proteins in driving cell proliferation during tissue regeneration as well as during formation of several tumour types (Cai et al., 2015; Cai et al., 2010; Camargo et al., 2007; Chen et al., 2014; Dong et al., 2007; Elbediwy et al., 2016; Gruber et al., 2016; Reginensi et al., 2015; Schlegelmilch et al., 2011; Vincent-Mistiaen et al., 2018; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "4ba7c7fb-4e63-427f-b8a9-766cec8c7eb1",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C15",
+      "claim": "Yki/YAP/TAZ function as transcriptional co-activators of the nuclear DNA binding transcription factors TEAD1-4 (named Scalloped in Drosophila).",
+      "claim_type": "EXPLICIT",
+      "source": "Yki/YAP/TAZ were shown to function as transcriptional co-activators of the nuclear DNA binding transcription factors TEAD1-4 (named Scalloped in Drosophila) (Koontz et al., 2013; Wu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Koontz et al., 2013 and Wu et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "3e9813e9-e870-4426-a077-46b78f10ec37",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C16",
+      "claim": "Phosphorylation by the Hippo pathway kinase Warts/LATS on five Serine residues induces retention of Yki/YAP/TAZ in the cytoplasm by binding to 14-3-3 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "One key mechanism regulating Yki/YAP/TAZ subcellular localisation is phosphorylation by the Hippo pathway kinase Warts/LATS on five Serine residues, which induces retention in the cytoplasm by binding to 14-3-3 proteins (Huang et al., 2005; Oh and Irvine, 2008; Oh and Irvine, 2009; Zhao et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "9b37db7f-2aea-4b5f-ab77-d30e16f45ba0",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C17",
+      "claim": "In response to mechanical stretching/flattening of cells, Yki can translocate from the cytoplasm to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to mechanical stretching/flattening of cells, both Yki (Fletcher et al., 2018) and YAP/TAZ (Dupont et al., 2011; Wada et al., 2011; Zhao et al., 2007) can translocate from the cytoplasm to the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Fletcher et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "41ee59ad-5dd3-4905-8365-1da29c133584",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C18",
+      "claim": "In response to mechanical stretching/flattening of cells, YAP/TAZ can translocate from the cytoplasm to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to mechanical stretching/flattening of cells, both Yki (Fletcher et al., 2018) and YAP/TAZ (Dupont et al., 2011; Wada et al., 2011; Zhao et al., 2007) can translocate from the cytoplasm to the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dupont et al., 2011; Wada et al., 2011; Zhao et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "008ea3b3-2bfd-46d9-bc15-142bdb3ff5b5",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C19",
+      "claim": "Both Yki and YAP undergo dynamic and continuous nuclear-cytoplasmic shuttling.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Yki (Manning et al., 2018) and YAP (Ege et al., 2018) undergo dynamic and continuous nuclear-cytoplasmic shuttling which must involve specific nuclear import and export factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Manning et al., 2018 and Ege et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "896184ba-4a1a-4941-8ee1-494be1625d34",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C20",
+      "claim": "Nuclear-cytoplasmic shuttling of Yki/YAP must involve specific nuclear import and export factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Yki (Manning et al., 2018) and YAP (Ege et al., 2018) undergo dynamic and continuous nuclear-cytoplasmic shuttling which must involve specific nuclear import and export factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference from the observation of dynamic shuttling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "26b2474b-a472-474e-8b55-d5572e9a4db8",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C21",
+      "claim": "Several regulators of YAP nuclear export have been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Several regulators of YAP nuclear export have been proposed (Furukawa et al., 2017; Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Furukawa et al., 2017 and Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "4d0a6898-9b67-4d4d-9519-1d9a7a9ca832",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C22",
+      "claim": "No nuclear import factors for the Yki/YAP/TAZ family have been identified prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no nuclear import factors for the Yki/YAP/TAZ family have been identified and these proteins lack a conventional nuclear localisation sequence (NLS) (Kofler et al., 2018; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kofler et al., 2018 and Wang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "43e1a152-016c-4564-aaa1-74f8f96ae26f",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C23",
+      "claim": "Yki/YAP/TAZ proteins lack a conventional nuclear localisation sequence (NLS).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no nuclear import factors for the Yki/YAP/TAZ family have been identified and these proteins lack a conventional nuclear localisation sequence (NLS) (Kofler et al., 2018; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kofler et al., 2018 and Wang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "fc7a3dc0-c003-4eba-8be9-7ecc35a14e03",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C24",
+      "claim": "Previous work identified an essential requirement for Drosophila Mask and its mammalian homologs Mask1 (ANKHD1) and Mask2 (ANKRD17) in promoting Yki/YAP transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work identified an essential requirement for Drosophila Mask and its mammalian homologs Mask1 (ANKHD1) and Mask2 (ANKRD17) in promoting Yki/YAP transcriptional activity, but the mechanism by which Mask family proteins act has remained unclear (Dong et al., 2016; Machado-Neto et al., 2014; Sansores-Garcia et al., 2013; Sidor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dong et al., 2016; Machado-Neto et al., 2014; Sansores-Garcia et al., 2013; Sidor et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "9c254ee6-f152-4790-82e9-e5cac90ebc93",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C25",
+      "claim": "Loss of Mask family proteins prevents nuclear import of Yki/YAP in both mammalian cells and Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that loss of Mask family proteins prevents nuclear import of Yki/YAP in both mammalian cells and Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 1-5 showing cytoplasmic accumulation of Yki/YAP in mask mutants or upon Mask1/2 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "64a25df6-d661-42d0-adcc-3afe5053188c",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C26",
+      "claim": "Double conditional knockout of Mask1/ANKHD1 and Mask2/ANKRD17 in mouse intestinal organoids confirms an essential requirement for Mask proteins in YAP nuclear import and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Double conditional knockout of Mask1/ANKHD1 and Mask2/ANKRD17 in mouse intestinal organoids, together with siRNA knockdown of these proteins in human intestinal cells, confirms an essential requirement for Mask proteins in YAP nuclear import and stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 5D showing loss of YAP in Mask1/2 double knockout organoid clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "e42cc3e0-7f26-4ac6-8a5a-bf2cdd79c4ab",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C27",
+      "claim": "siRNA knockdown of Mask1/2 in human intestinal cells confirms an essential requirement for Mask proteins in YAP nuclear import and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Double conditional knockout of Mask1/ANKHD1 and Mask2/ANKRD17 in mouse intestinal organoids, together with siRNA knockdown of these proteins in human intestinal cells, confirms an essential requirement for Mask proteins in YAP nuclear import and stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 5C showing reduced YAP levels and nuclear localization upon Mask1/2 siRNA in Caco2 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "082df480-2e3b-47f7-a4ca-09a280e1cde4",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C28",
+      "claim": "Overexpression of Mask1/2 is sufficient to stabilise YAP protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that overexpression of Mask1/2 is sufficient to stabilise YAP protein levels and can also drive phase separation of YAP into liquid droplets, suggesting that colloidal phase separation may contribute to the regulation of YAP activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 6A-B showing increased YAP levels upon Mask1/2 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "dcda53ba-3f45-467a-904c-452d1f4df085",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C29",
+      "claim": "Overexpression of Mask1/2 can drive phase separation of YAP into liquid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that overexpression of Mask1/2 is sufficient to stabilise YAP protein levels and can also drive phase separation of YAP into liquid droplets, suggesting that colloidal phase separation may contribute to the regulation of YAP activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 6C showing large liquid-like droplets containing Mask1 and YAP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "b5cc0017-2beb-490d-a99f-140e01e7a641",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C30",
+      "claim": "Colloidal phase separation may contribute to the regulation of YAP activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that overexpression of Mask1/2 is sufficient to stabilise YAP protein levels and can also drive phase separation of YAP into liquid droplets, suggesting that colloidal phase separation may contribute to the regulation of YAP activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observation of liquid droplet formation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "e963062b-1053-4c36-9460-9d6a12bc356b",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C31",
+      "claim": "Yki-GFP is cytoplasmic at stage 10 in Drosophila ovarian follicle cell epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a Yki-GFP knock-in line revealed robust nuclear localisation of Yki in the mechanically stretched cells of the Drosophila ovarian follicle cell epithelium (Fletcher et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to Fletcher et al., 2018 and by Figure 1A showing cytoplasmic Yki-GFP at stage 10.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "0c5e5867-a4c8-4f62-a6d2-d3e1b7f85c5a",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C32",
+      "claim": "Yki-GFP becomes strongly nuclear during stage 11 as the columnar cells are stretched mechanically in Drosophila ovarian follicle cell epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a Yki-GFP knock-in line revealed robust nuclear localisation of Yki in the mechanically stretched cells of the Drosophila ovarian follicle cell epithelium (Fletcher et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to Fletcher et al., 2018 and by Figure 1B showing nuclear Yki-GFP at stage 11.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "d45ace58-9bf9-4073-aeba-b007510bba7e",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C33",
+      "claim": "Yki-GFP is lost from the nucleus and accumulates in the cytoplasm in mask mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Yki-GFP is lost from the nucleus and accumulates in the cytoplasm in mask mutant cells (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C-F with quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "a603c426-16eb-4537-9a2d-59847a8f5d3f",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C34",
+      "claim": "Mask proteins are required for normal nuclear localisation of Yki.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that Mask proteins are required for normal nuclear localisation of Yki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing cytoplasmic accumulation of Yki in mask mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "48b93798-fb07-4644-a735-a2408ccd3b89",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C35",
+      "claim": "Mask has no direct transcriptional activation function in a GAL4 reporter assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We began by examining whether Mask family proteins have a role in regulating the subcellular localisation of Yki, as we were unable to identify a direct transcriptional activation function for Mask in a GAL4 reporter assay (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "eafd354a-18d1-499d-a61c-23ea997b14e4",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C36",
+      "claim": "Clones of follicle cells homozygous for the mask\u2206NLS allele show a strong decrease in nuclear Yki-GFP and a corresponding increase in the level of cytoplasmic Yki-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for Mask in nuclear import, clones of follicle cells homozygous for the mask\u2206NLS allele show a strong decrease in nuclear Yki-GFP and a corresponding increase in the level of cytoplasmic Yki-GFP (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B-D with quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "adc11a97-5592-4300-a402-70078a8743a4",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C37",
+      "claim": "The NLS motif in Mask is essential for Mask function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate the essential requirement for the NLS motif in Mask function and support a key role for Mask in Yki nuclear import.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that mask\u2206NLS mutants phenocopy mask null mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "411aa5a2-3c2d-4e11-a1a3-69d00c50a9d6",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C38",
+      "claim": "The mask\u2206NLS allele is homozygous lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this NLS is required for the function of Mask in vivo, we generated a mask CRISPR-knockin lacking the NLS motif (mask\u2206NLS), which was homozygous lethal but showed normal expression of the mutant protein and localisation to the cytoplasm in clones (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observation of the mask\u2206NLS allele.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "1399969e-7b3b-4281-903d-287094799619",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C39",
+      "claim": "The mask\u2206NLS mutant protein shows normal expression and localisation to the cytoplasm in clones.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this NLS is required for the function of Mask in vivo, we generated a mask CRISPR-knockin lacking the NLS motif (mask\u2206NLS), which was homozygous lethal but showed normal expression of the mutant protein and localisation to the cytoplasm in clones (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "ee8a4a6d-6b2e-4427-82df-7b174088738a",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C40",
+      "claim": "Yki is known to be primarily cytoplasmic in the developing wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Yki is known to be primarily cytoplasmic in the developing wing, which is composed of densely packed columnar epithelial cells (Oh and Irvine, 2008) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to Oh and Irvine, 2008 and by Figure 3A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "9db67373-19ed-44e6-bc1d-3bf5fea6e5c1",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C41",
+      "claim": "Clones overexpressing Yki require Mask in order to drive cell proliferation in the wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Since clones overexpressing Yki (MARCM clones expressing tub.Gal4 UAS.Yki) were shown to require Mask in order to drive cell proliferation in the wing (Sidor et al., 2013), we examined whether Mask affects the nuclear localisation of overexpressed Yki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sidor et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "6fc66cb4-ec90-481f-b69f-96ca901bfcc8",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C42",
+      "claim": "Overexpressed Yki is readily detected in both nucleus and cytoplasm in control MARCM clones.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that overexpressed Yki is readily detected in both nucleus and cytoplasm in control MARCM clones, but not in mask mutant MARCM clones, where the level of nuclear Yki is reduced relative to the level of Yki in the cytoplasm (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "9e415ac4-3ea7-44de-a44e-0b4fffba51c4",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C43",
+      "claim": "In mask mutant MARCM clones, the level of nuclear Yki is reduced relative to the level of Yki in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that overexpressed Yki is readily detected in both nucleus and cytoplasm in control MARCM clones, but not in mask mutant MARCM clones, where the level of nuclear Yki is reduced relative to the level of Yki in the cytoplasm (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "aac6e28b-7d7c-4249-88f1-db829d65e070",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C44",
+      "claim": "Silencing of Mask expression by RNAi in the peripodial epithelium prevents the normally strongly nuclear Yki-GFP localisation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that silencing of Mask expression by RNAi in the peripodial epithelium with Ubx.Gal4, prevents the normally strongly nuclear Yki-GFP localisation in these cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "a3b967f9-464c-4597-98b3-c1bc821d3dac",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C45",
+      "claim": "Mask is required for the nuclear localisation of both endogenous and overexpressed Yki in the developing wing of Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that Mask is required for the nuclear localisation of both endogenous and overexpressed Yki in the developing wing of Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "595321a7-17d5-4a01-84cc-af2305a6ffbe",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C46",
+      "claim": "MARCM clones expressing Yki-NLS-HA are able to restore both nuclear localisation of Yki and cell proliferation in mask mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm that MARCM clones expressing tub.Gal4 UAS.Yki-NLS-HA are able to restore both nuclear localisation of Yki and cell proliferation in mask mutant cells (Figure 4A\u2013G; Sidor et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "e0d22ed0-da9d-4fe7-887e-f0948f0e444c",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C47",
+      "claim": "Yki-NLS-HA is still mildly less nuclear and more cytoplasmic when expressed in mask mutant cells compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that even Yki-NLS-HA is still mildly less nuclear and more cytoplasmic when expressed in mask mutant cells compared to wild-type cells, and that this may therefore explain the mild difference in growth between these two types of clones (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "06da03ee-f3e2-4a86-b7b9-a9f92ddedda2",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C48",
+      "claim": "Linkage of a nuclear localisation sequence to Yki can largely bypass the requirement for mask in Yki-driven cell proliferation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, linkage of a nuclear localisation sequence to Yki can largely bypass the requirement for mask in Yki-driven cell proliferation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data in Figure 4 showing rescue of mask mutant phenotypes by Yki-NLS-HA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "229446a6-4145-4bfd-849d-9a5a6c23afa4",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C49",
+      "claim": "The primary function of Mask is to promote nuclear localisation of Yki in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the primary function of Mask is to promote nuclear localisation of Yki in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that addition of an NLS to Yki bypasses the requirement for Mask.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "5dde4883-6982-4e5b-92d8-8db5954807c8",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C50",
+      "claim": "Silencing of Mask1 (ANKHD1) is sufficient to reduce both nuclear localisation of YAP and total YAP levels in human HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, silencing of Mask1 (ANKHD1) was sufficient to reduce both nuclear localisation of YAP and total YAP levels, as measured by immunostaining or western blotting of cell lysates (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "48e99d56-2ef2-4360-b822-6f9ec46441c0",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C51",
+      "claim": "Silencing of Mask1 (ANKHD1) is sufficient to reduce both nuclear localisation of YAP and total YAP levels in human Caco2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, silencing of Mask1 (ANKHD1) was sufficient to reduce both nuclear localisation of YAP and total YAP levels, as measured by immunostaining or western blotting of cell lysates (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "0507e581-a3fe-4f09-bbfd-a3d7d4653f2b",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C52",
+      "claim": "Double siRNA against Mask1/2 causes apoptosis of transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, double siRNA against Mask1/2 causes apoptosis of transfected cells, indicating that the two proteins act redundantly (Figure 5C; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "19c5d725-ddb0-4715-8fab-f40d720bb0f9",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C53",
+      "claim": "Mask1 and Mask2 act redundantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, double siRNA against Mask1/2 causes apoptosis of transfected cells, indicating that the two proteins act redundantly (Figure 5C; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that double knockdown causes cell death.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "18a1672d-af0e-465f-afad-14d7a1c14409",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C54",
+      "claim": "Clonal deletion of Mask1/2 in intestinal organoids results in a strong reduction in YAP levels compared to surrounding wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal deletion of Mask1/2 resulted in a strong reduction in YAP levels compared to surrounding wild-type cells (Figure 5D) and clone sizes were typically only 1\u20132 cells, with cells frequently undergoing extrusion from the epithelium and death (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "f8b25945-9697-459c-ad64-198b04093c0a",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C55",
+      "claim": "Mask1/2 double knockout clone sizes in intestinal organoids are typically only 1\u20132 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal deletion of Mask1/2 resulted in a strong reduction in YAP levels compared to surrounding wild-type cells (Figure 5D) and clone sizes were typically only 1\u20132 cells, with cells frequently undergoing extrusion from the epithelium and death (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "6ee78202-f8a0-4654-a28f-78ee9a083ece",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C56",
+      "claim": "Mask1/2 double knockout cells in intestinal organoids frequently undergo extrusion from the epithelium and death.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal deletion of Mask1/2 resulted in a strong reduction in YAP levels compared to surrounding wild-type cells (Figure 5D) and clone sizes were typically only 1\u20132 cells, with cells frequently undergoing extrusion from the epithelium and death (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "610b34b9-5ad6-485b-ab6a-bf2a595bcf6c",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C57",
+      "claim": "Mammalian Mask1/2 have a conserved function in nuclear import of YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that mammalian Mask1/2 have a conserved function in nuclear import of YAP but are additionally required to stabilise the YAP protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing reduced nuclear YAP upon Mask1/2 loss.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "c3a46180-3a1d-4868-ae67-294b9fbbe0cb",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C58",
+      "claim": "Mammalian Mask1/2 are additionally required to stabilise the YAP protein.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that mammalian Mask1/2 have a conserved function in nuclear import of YAP but are additionally required to stabilise the YAP protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing reduced total YAP levels upon Mask1/2 loss.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "d7dfca25-c278-415e-9864-fc579db7bed8",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C59",
+      "claim": "Mask1 siRNA has a similar effect on TAZ localisation as on YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a similar effect of Mask1 siRNA on TAZ localisation (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "4edfa320-041d-4004-8361-d98a330694ac",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C60",
+      "claim": "Overexpression of either Mask1 or Mask2 causes strong stabilisation of YAP protein levels in Caco2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that overexpression of either Mask1 or Mask2 caused strong stabilisation of YAP protein levels in Caco2 cells (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "154476f1-a100-4bfa-a1a0-7425f1a57835",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C61",
+      "claim": "Overexpression of Mask1 in HEK293T cells causes formation of abnormally large droplets containing both Mask1 and YAP proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, overexpression of Mask1 in HEK293T cells, which are known to generate high levels of expression, caused formation of abnormally large droplets containing both Mask1 and YAP proteins (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "63f5a3cd-f39f-4634-8139-af84f33e988b",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C62",
+      "claim": "Mask proteins may cluster/polymerise YAP to drive colloidal phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that Mask proteins may cluster/polymerise YAP to drive colloidal phase separation \u2013 a classic mechanism of cellular compartmentalisation (Hardy, 1899; Iborra, 2007; Walter and Brooks, 1995; Wilson, 1899).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observation of droplet formation and citations to prior work on phase separation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "cd119457-b599-4731-a8ad-33c0964b0897",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C63",
+      "claim": "Cells expressing GFP-tagged YAP can exhibit colloidal phase separation and formation of YAP liquid droplets in both nucleus and cytoplasm after treatment with 25% PEG to induce macromolecular crowding.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has shown that cells expressing GFP-tagged YAP can exhibit colloidal phase separation and formation of YAP liquid droplets in both nucleus and cytoplasm after treatment with 25% PEG to induce macromolecular crowding (Cai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cai et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "261af618-3a43-4c69-8b8c-ab00843778aa",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C64",
+      "claim": "Endogenous YAP may phase separate when it becomes stabilised and concentrated by clustering with Mask family proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that endogenous YAP may also phase separate when it becomes stabilised and concentrated by clustering with Mask family proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observation of droplet formation with Mask overexpression.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "d8d895f4-7281-4b29-9547-0889c2641347",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C65",
+      "claim": "Yki-GFP localises to intracellular granules in either the nucleus and cytoplasm of follicle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Yki-GFP localises to intracellular granules in either the nucleus and cytoplasm of follicle cells or cultured Drosophila S2 cells (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "940254e3-7de7-4483-8f83-054326f2022f",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C66",
+      "claim": "Yki-GFP localises to intracellular granules in cultured Drosophila S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Yki-GFP localises to intracellular granules in either the nucleus and cytoplasm of follicle cells or cultured Drosophila S2 cells (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "73e01df1-252b-407b-bb36-d30cf6cb5de4",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C67",
+      "claim": "Antibody staining for Yki and Mask reveals co-localisation in the same intracellular granules in Drosophila S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, antibody staining for Yki and Mask reveals co-localisation in the same intracellular granules in Drosophila S2 cells (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "c60cde7d-2f24-4ccd-8ef6-f7166537b4ae",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C68",
+      "claim": "In human cells in culture, immunostaining for YAP and Mask1 reveals a similarly granular pattern in both cytoplasm and nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells in culture, immunostaining for YAP and Mask1 reveals a similarly granular pattern in both cytoplasm and nucleus (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "7271ab92-98d0-4b31-8944-71db9d10d051",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C69",
+      "claim": "Endogenous Yki/YAP and Mask proteins co-localise and may cluster/polymerise to form intracellular granules (or 'hubs').",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that endogenous Yki/YAP and Mask proteins co-localise and may cluster/polymerise to form intracellular granules (or 'hubs') as they interact with cytoplasmic 14-3-3 or nuclear TEAD (Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation of granular colocalization and is speculative regarding clustering/polymerization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "e27b877b-a98a-4bc9-a5ea-1cae9ed1d306",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C70",
+      "claim": "Human Mask1/2 proteins can relocalise with YAP from the cytoplasm to the nucleus of cultured human cells in a density-dependent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that human Mask1/2 proteins can relocalise with YAP from the cytoplasm to the nucleus of cultured human cells in a density-dependent fashion (Sidor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sidor et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "b1594782-3f20-4c65-b268-98d63fc992e3",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C71",
+      "claim": "Integrin signalling via Src family kinases is the primary mechanism of YAP mechano-regulation in cultured human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We later found that integrin signalling via Src family kinases is the primary mechanism of YAP mechano-regulation in these cells and is crucial to regulate wound healing (Elbediwy et al., 2018; Elbediwy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Elbediwy et al., 2018 and Elbediwy et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "80a70594-ad62-4c04-8e68-044cffcf7571",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C72",
+      "claim": "Integrin signalling via Src family kinases is crucial to regulate wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "We later found that integrin signalling via Src family kinases is the primary mechanism of YAP mechano-regulation in these cells and is crucial to regulate wound healing (Elbediwy et al., 2018; Elbediwy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Elbediwy et al., 2018 and Elbediwy et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "67757445-6122-4ca8-8912-fc11078f5821",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C73",
+      "claim": "Alterations in the localisation of Mask1/2 and YAP in response to loss of integrin adhesions, mechanical forces, or Src kinase activity are the same.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, alterations in the localisation of Mask1/2 and YAP before and after treatment were the same, suggesting that binding of Mask1/2 to YAP determines its localisation (8A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "52257d5a-7d50-4fe7-9586-89f0438bec14",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C74",
+      "claim": "Binding of Mask1/2 to YAP determines YAP localisation.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, alterations in the localisation of Mask1/2 and YAP before and after treatment were the same, suggesting that binding of Mask1/2 to YAP determines its localisation (8A-C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that Mask1/2 and YAP colocalize under various conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "a836ebeb-daaf-4a91-acbd-425813f470e4",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C75",
+      "claim": "YAP (and TAZ) have a physiological role in skin wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we previously identified a physiological role for YAP (and TAZ) in skin wound healing, which causes YAP to localise to the nucleus in leading edge skin epithelial cells (Elbediwy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Elbediwy et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "ce97cad2-d8ee-467a-97b4-e26d688a7de9",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C76",
+      "claim": "Skin wound healing causes YAP to localise to the nucleus in leading edge skin epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we previously identified a physiological role for YAP (and TAZ) in skin wound healing, which causes YAP to localise to the nucleus in leading edge skin epithelial cells (Elbediwy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Elbediwy et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "69410fc3-f473-4571-9bdf-42d6fa1a4952",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C77",
+      "claim": "Mask1/2 are similarly nuclear localised during skin wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "Mask1/2 are similarly nuclear localised during skin wound healing (Figure 8D), supporting the notion that these proteins are co-regulated in response to both mechanical cues and tissue damage in vitro and in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "bb615ed9-32a1-4133-bde9-ed596af941c4",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C78",
+      "claim": "Mask1/2 and YAP are co-regulated in response to both mechanical cues and tissue damage in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Mask1/2 are similarly nuclear localised during skin wound healing (Figure 8D), supporting the notion that these proteins are co-regulated in response to both mechanical cues and tissue damage in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that Mask1/2 and YAP show similar localization changes in response to various stimuli.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "479496cf-2286-43c0-b83e-e0dd86695d64",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C79",
+      "claim": "Dynamic and continuous nucleo-cytoplasmic shuttling of both Yki and YAP is well established.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic and continuous nucleo-cytoplasmic shutting of both Yki and YAP is well established (Ege et al., 2018; Manning et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ege et al., 2018 and Manning et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "1759613f-812a-456e-b245-395d21ea6ac0",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C80",
+      "claim": "Dynamic shuttling enables the subcellular localisation of the bulk of Yki/YAP protein to be governed simply by the availability of binding partners such as cytoplasmic 14-3-3 proteins or nuclear Sd/TEAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic shutting enables the subcellular localisation of the bulk of Yki/YAP protein to be governed simply by the availability of binding partners such as cytoplasmic 14-3-3 proteins or nuclear Sd/TEAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the established mechanism of Yki/YAP regulation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "bd8b3219-0d53-4c7d-8888-dc5d3b34d285",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C81",
+      "claim": "Shuttling enables Hippo signalling to control bulk Yki/YAP subcellular localisation by regulating phosphorylation of Yki/YAP and thus its binding to 14-3-3 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, shuttling enables Hippo signalling to control bulk Yki/YAP subcellular localisation by regulating phosphorylation of Yki/YAP and thus its binding to 14-3-3 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the established mechanism of Hippo pathway regulation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "a2b655bb-c4bc-435e-9b4f-53efe076c4f9",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C82",
+      "claim": "In the absence of a Hippo signal, unphosphorylated Yki/YAP binds primarily to nuclear Sd/TEAD and thus adopts a bulk nuclear localisation while maintaining shuttling to allow continuous sensing of Hippo activity in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of a Hippo signal, unphosphorylated Yki/YAP binds primarily to nuclear Sd/TEAD and thus adopts a bulk nuclear localisation while maintaining shuttling to allow continuous sensing of Hippo activity in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the established mechanism of Hippo pathway regulation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "a369898d-50fc-441f-9980-472b7bdcbaaa",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C83",
+      "claim": "The canonical nuclear localisation signal (NLS) in the Drosophila Mask protein is conserved in mammalian Mask1 (ANKHD1) and Mask2 (ANKRD17).",
+      "claim_type": "EXPLICIT",
+      "source": "We have established the essential requirement for the canonical nuclear localisation signal (NLS) in the Drosophila Mask protein, which is conserved in mammalian Mask1 (ANKHD1) and Mask2 (ANKRD17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing the requirement for the NLS and by sequence conservation shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "33e1af33-d74d-4fce-86db-5adf1cfc7e8b",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C84",
+      "claim": "Deletion of the Mask NLS by CRISPR knockin caused accumulation of Yki-GFP within mutant clones of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the Mask NLS by CRISPR knockin caused accumulation of Yki-GFP within mutant clones of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "3c50e22f-0e27-4dc0-9fb8-6db6007ff8a1",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C85",
+      "claim": "Attachment of an ectopic NLS to Yki was sufficient to bypass the requirement for Mask in Yki-dependent cell proliferation and tissue growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, attachment of an ectopic NLS to Yki was sufficient to bypass the requirement for Mask in Yki-dependent cell proliferation and tissue growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "decccba1-43a2-4694-a34e-ea588bb6338b",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C86",
+      "claim": "Human Mask1 is required for driving YAP to the nucleus in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our results demonstrated a conserved requirement for human Mask1 in driving YAP to the nucleus in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "4095ff01-9307-41e0-9d28-4fddd5713d54",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C87",
+      "claim": "Non-canonical 'RaDAR' nuclear import motifs that bind RanGDP within the ankyrin repeat domains of Mask family proteins may contribute to nuclear import.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the above findings demonstrate the primacy of the Mask NLS in mediating nuclear import, it is possible that non-canonical 'RaDAR' nuclear import motifs that bind RanGDP within the ankyrin repeat domains of Mask family proteins may also contribute, although the corresponding residues in Mask proteins are not strongly hydrophobic so may only function weakly, if at all (Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on citation to Lu et al., 2014 and sequence analysis.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "a07edca4-f3a6-45c2-95b9-c91edc9e6829",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C88",
+      "claim": "Importin-alpha binding non-canonical nuclear import motifs within Yki may contribute to import.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is possible that Importin-alpha binding non-canonical nuclear import motifs within Yki (Wang et al., 2016) and a Ran-independent nuclear import sequence in YAP/TAZ (Kofler et al., 2018) may also contribute to import.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on citations to Wang et al., 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "e65688c2-7e51-4f1c-9296-63a43ffe001a",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C89",
+      "claim": "A Ran-independent nuclear import sequence in YAP/TAZ may contribute to import.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is possible that Importin-alpha binding non-canonical nuclear import motifs within Yki (Wang et al., 2016) and a Ran-independent nuclear import sequence in YAP/TAZ (Kofler et al., 2018) may also contribute to import.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on citation to Kofler et al., 2018.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "21c0abf2-ba0a-44ed-a125-83693f4c24a5",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C90",
+      "claim": "Non-canonical motifs in Yki and YAP/TAZ are not sufficient to maintain normal nuclear localisation of either Yki or YAP in the absence of Mask proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these non-canonical motifs are not sufficient to maintain normal nuclear localisation of either Yki or YAP in the absence of Mask proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing loss of nuclear localization in mask mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "561eb23a-d8d7-423a-a95f-20876f589e6e",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C91",
+      "claim": "The Mask-Yki interaction must be weak and constitutive for Mask to promote nuclear-cytoplasmic shuttling of Yki.",
+      "claim_type": "EXPLICIT",
+      "source": "In order for Mask to promote nuclear-cytoplasmic shuttling of Yki, the Mask-Yki interaction must be weak and constitutive \u2013 so that a pool of Yki protein is always dynamically shuttling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the proposed mechanism of Mask function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "aacf16c8-b66a-49ad-9bc9-8691a5679526",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C92",
+      "claim": "The regulation of the bulk distribution of Yki is determined by its choice of strong binding partner, namely either 14-3-3 in the cytoplasm or Sd in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of the bulk distribution of Yki is then determined simply by its choice of strong binding partner, namely either 14-3-3 in the cytoplasm or Sd in the nucleus, as mentioned above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the proposed mechanism of Yki regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "038a36b6-b7a4-4a31-b4d8-46d55b900dda",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C93",
+      "claim": "There is always a 14-3-3 bound pool of Yki, a Sd bound pool of Yki and a third pool of Yki that can shuttle between the cytoplasm and nucleus by binding to Mask proteins and possibly other import/export factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is always a 14-3-3 bound pool of Yki, a Sd bound pool of Yki and a third pool of Yki that can shuttle between the cytoplasm and nucleus by binding to Mask proteins and possibly other import/export factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the proposed mechanism of Yki regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "73f33aea-77ea-4eab-9347-8e1d06564034",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C94",
+      "claim": "The relative proportions of the 14-3-3 bound and Sd bound pools determines the bulk distribution of Yki.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative proportions of the 14-3-3 bound and Sd bound pools determines the bulk distribution of Yki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the proposed mechanism of Yki regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "2d6473d1-5c0e-4b78-87fb-b0afc245d848",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C95",
+      "claim": "Hippo signalling affects the 14-3-3 interaction by Yki phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippo signalling affects the 14-3-3 interaction (by Yki phosphorylation), while expression levels of the sd gene affects the Sd interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of Hippo pathway regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "4fca11c9-afac-4832-814a-72aae1e23625",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C96",
+      "claim": "Expression levels of the sd gene affects the Sd interaction with Yki.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippo signalling affects the 14-3-3 interaction (by Yki phosphorylation), while expression levels of the sd gene affects the Sd interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "aaa2422f-7d34-42ca-9082-f25320e5c009",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C97",
+      "claim": "There is no requirement for regulation of the Yki-Mask interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this model, there is no requirement for regulation of the Yki-Mask interaction and we have no evidence for it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the proposed model and lack of experimental evidence for regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "ad7a83cd-ab56-4746-bf16-e4cd80332a31",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C98",
+      "claim": "Unlike Drosophila Yki, YAP/TAZ stability is regulated by two SCF-type E3 ubiquitin ligases, beta-TrCP and FBXW7.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also establish a novel role for mammalian Mask1/2 in stabilising YAP protein levels. Unlike Drosophila Yki, YAP/TAZ stability is regulated by two SCF-type E3 ubiquitin ligases, beta-TrCP and FBXW7, which earmark YAP/TAZ for degradation after phosphorylation by LATS and CK1 on a specific phosphodegron containing Ser381 (Tu et al., 2014; Zhang et al., 2016; Zhao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tu et al., 2014; Zhang et al., 2016; Zhao et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "b3c67f8d-9210-4478-9bdb-a644f982b607",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C99",
+      "claim": "Beta-TrCP and FBXW7 earmark YAP/TAZ for degradation after phosphorylation by LATS and CK1 on a specific phosphodegron containing Ser381.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also establish a novel role for mammalian Mask1/2 in stabilising YAP protein levels. Unlike Drosophila Yki, YAP/TAZ stability is regulated by two SCF-type E3 ubiquitin ligases, beta-TrCP and FBXW7, which earmark YAP/TAZ for degradation after phosphorylation by LATS and CK1 on a specific phosphodegron containing Ser381 (Tu et al., 2014; Zhang et al., 2016; Zhao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tu et al., 2014; Zhang et al., 2016; Zhao et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "30ee902e-f58e-4fd8-8c8b-510ba6709cfd",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C100",
+      "claim": "Loss of Drosophila Mask does not reduce total Yki levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, while loss of Drosophila Mask does not reduce total Yki levels, loss of Mask1/2 causes a dramatic loss of YAP protein, suggesting that binding of Mask1/2 to YAP is essential to prevent YAP degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observation comparing Drosophila and mammalian systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "40b03c9d-f3d6-45a6-bba2-8102fbc39295",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C101",
+      "claim": "Loss of Mask1/2 causes a dramatic loss of YAP protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, while loss of Drosophila Mask does not reduce total Yki levels, loss of Mask1/2 causes a dramatic loss of YAP protein, suggesting that binding of Mask1/2 to YAP is essential to prevent YAP degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "8fd89c43-ce20-4dd8-a91b-558a631f514c",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C102",
+      "claim": "Binding of Mask1/2 to YAP is essential to prevent YAP degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, while loss of Drosophila Mask does not reduce total Yki levels, loss of Mask1/2 causes a dramatic loss of YAP protein, suggesting that binding of Mask1/2 to YAP is essential to prevent YAP degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that loss of Mask1/2 causes YAP protein loss.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "197a9641-af76-49c3-9714-15b94eb0d4f0",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C103",
+      "claim": "Similar YAP liquid droplets have been shown to occur by phase separation after treatment of cells expressing GFP-tagged YAP with 25% PEG to drive macromolecular crowding.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar YAP liquid droplets have recently been shown to occur by phase separation after treatment of cells expressing GFP-tagged YAP with 25% PEG to drive macromolecular crowding (Cai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cai et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "1898e271-15ef-4862-931b-be01ec2de517",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C104",
+      "claim": "Whether phase-separation of YAP has a physiological role is still unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether phase-separation of YAP has a physiological role is still unknown, but the possibility is supported by our finding that endogenous YAP can also be observed to form droplets when in a complex with Mask1 at high concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the current state of knowledge and is speculative.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "3ba12d1e-20db-47ee-9e0d-2b67b11a5f81",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C105",
+      "claim": "Endogenous YAP can be observed to form droplets when in a complex with Mask1 at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether phase-separation of YAP has a physiological role is still unknown, but the possibility is supported by our finding that endogenous YAP can also be observed to form droplets when in a complex with Mask1 at high concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "8f6990b8-4549-4638-9e51-76f9078b351a",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C106",
+      "claim": "Phase-separation has been proposed to support formation of transcriptional enhancer complexes ('transcription factories') in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, phase-separation has been proposed to support formation of transcriptional enhancer complexes ('transcription factories') in the nucleus (Boehning et al., 2018; Boija et al., 2018; Hnisz et al., 2017; Iborra, 2007; Jackson et al., 1993; Lu et al., 2018; Sabari et al., 2018), and we speculate that Mask proteins might function in this manner to promote transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "119c5217-d0a9-4088-bcf1-d8395bfb1e24",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C107",
+      "claim": "Mask proteins might function to promote transcription through phase-separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, phase-separation has been proposed to support formation of transcriptional enhancer complexes ('transcription factories') in the nucleus (Boehning et al., 2018; Boija et al., 2018; Hnisz et al., 2017; Iborra, 2007; Jackson et al., 1993; Lu et al., 2018; Sabari et al., 2018), and we speculate that Mask proteins might function in this manner to promote transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the observation of droplet formation and citations to prior work on transcription factories.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "a5adfcf3-456b-407b-a1a5-7aa3e2fa6d49",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C108",
+      "claim": "Mask family proteins contain a conserved RNA binding KH-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Mask family proteins contain a conserved RNA binding KH-domain, and several RNA binding proteins have key roles in colloidal phase separation (Anderson and Kedersha, 2006; Lin et al., 2015; Maharana et al., 2018; Mao et al., 2011; Molliex et al., 2015; Ramaswami et al., 2013; Weber and Brangwynne, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of Mask proteins shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "22d6d367-787a-408a-80e5-c8742da917fb",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C109",
+      "claim": "Several RNA binding proteins have key roles in colloidal phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Mask family proteins contain a conserved RNA binding KH-domain, and several RNA binding proteins have key roles in colloidal phase separation (Anderson and Kedersha, 2006; Lin et al., 2015; Maharana et al., 2018; Mao et al., 2011; Molliex et al., 2015; Ramaswami et al., 2013; Weber and Brangwynne, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "71cccbfd-4271-47d1-b2a5-c2e6ff376920",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C110",
+      "claim": "Mask family proteins contain two YAP-binding ankyrin repeat domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the fact that Mask family proteins contain two YAP-binding ankyrin repeat domains provides a plausible multivalent interaction mechanism by which Mask proteins could promote clustering of multiple YAP molecules in either the nucleus or cytoplasm, although further work is needed to explore this possibility (Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis of Mask proteins shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "303973f2-33d8-4a8b-8be3-8a7a1430f7aa",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C111",
+      "claim": "The two YAP-binding ankyrin repeat domains in Mask proteins provide a plausible multivalent interaction mechanism by which Mask proteins could promote clustering of multiple YAP molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the fact that Mask family proteins contain two YAP-binding ankyrin repeat domains provides a plausible multivalent interaction mechanism by which Mask proteins could promote clustering of multiple YAP molecules in either the nucleus or cytoplasm, although further work is needed to explore this possibility (Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on structural features of Mask proteins.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "1cb5f678-d2f6-4b0e-930d-b109e0d9f512",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C112",
+      "claim": "Mask family proteins promote nuclear import of both Yki and YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our results identify novel molecular mechanisms regulating the Yki/YAP/TAZ family of transcriptional co-activators. Mask family proteins promote nuclear import of both Yki and YAP, while also acting to stabilise YAP protein levels, which can lead to what appear to be YAP droplets at high concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "32659417-8c92-4f66-8a81-653267e0eb80",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C113",
+      "claim": "Mask family proteins act to stabilise YAP protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our results identify novel molecular mechanisms regulating the Yki/YAP/TAZ family of transcriptional co-activators. Mask family proteins promote nuclear import of both Yki and YAP, while also acting to stabilise YAP protein levels, which can lead to what appear to be YAP droplets at high concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "583b5cf9-b908-4d92-b011-f8fd8f5dc27d",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C114",
+      "claim": "Stabilisation of YAP protein levels by Mask proteins can lead to what appear to be YAP droplets at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our results identify novel molecular mechanisms regulating the Yki/YAP/TAZ family of transcriptional co-activators. Mask family proteins promote nuclear import of both Yki and YAP, while also acting to stabilise YAP protein levels, which can lead to what appear to be YAP droplets at high concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "9d433581-6235-4275-8cd0-c0f110dcdd8f",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C115",
+      "claim": "Endogenous Mask1/2 and YAP co-localise in intracellular granules in both the nucleus and cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous Mask1/2 and YAP co-localise in intracellular granules in both the nucleus and cytoplasm, and the nucleo-cytoplasmic distribution of Mask1/2 and YAP is co-regulated in response to mechanical cues in human cells, most likely through direct association of the two proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "80d9aa57-70eb-4588-be8a-857f933eabff",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C116",
+      "claim": "The nucleo-cytoplasmic distribution of Mask1/2 and YAP is co-regulated in response to mechanical cues in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous Mask1/2 and YAP co-localise in intracellular granules in both the nucleus and cytoplasm, and the nucleo-cytoplasmic distribution of Mask1/2 and YAP is co-regulated in response to mechanical cues in human cells, most likely through direct association of the two proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "d3755016-935d-40ae-963c-cb89246a316f",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C117",
+      "claim": "The co-regulation of Mask1/2 and YAP distribution is most likely through direct association of the two proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous Mask1/2 and YAP co-localise in intracellular granules in both the nucleus and cytoplasm, and the nucleo-cytoplasmic distribution of Mask1/2 and YAP is co-regulated in response to mechanical cues in human cells, most likely through direct association of the two proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation of colocalization and co-regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "0f891d45-692d-49ac-84fa-411e6a770574",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "claim_id": "C118",
+      "claim": "The functions of Mask family proteins are crucial to enable dynamic nuclear-cytoplasic shuttling and thus regulation of Yki/YAP/TAZ by Hippo signalling and Integrin signalling to control cellular behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "These functions of Mask family proteins are crucial to enable dynamic nuclear-cytoplasic shuttling and thus regulation of these co-activators by Hippo signalling and Integrin signalling to control cellular behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing the requirement for Mask in Yki/YAP function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1739b368-a2a0-4290-a51c-16650adfd155",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mask proteins are required for nuclear import of Yki in Drosophila. Loss of Mask function results in cytoplasmic accumulation of Yki-GFP in follicle cells and wing tissues. The NLS motif in Mask is essential for this function, as deletion of the NLS (mask\u0394NLS) phenocopies mask null mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C25, C33-C37, C43-C45, C49, and C84 collectively demonstrate through multiple experimental systems (follicle cells, wing disc) that Mask is required for Yki nuclear localization. The data includes quantitative measurements (Figures 1-3) and genetic validation with the mask\u0394NLS allele (Figure 2), providing strong converging evidence for this core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "1fdadd11-d31c-4ded-91b5-7e5f990ff9a6",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Addition of an ectopic NLS to Yki bypasses the requirement for Mask in Yki-driven tissue growth and cell proliferation. Yki-NLS-HA expression rescues both nuclear localization and proliferation in mask mutant clones, though a mild residual defect remains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C46-C48, and C85 are supported by experimental data in Figure 4 showing rescue of mask mutant phenotypes by Yki-NLS-HA in both wing and eye imaginal discs. The quantification of clone sizes and nuclear/cytoplasmic ratios provides strong evidence that the primary function of Mask is to promote nuclear import of Yki.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "36978c29-b8be-4852-9de1-330740c5db64",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mammalian Mask1/2 proteins have a conserved function in promoting nuclear import of YAP. siRNA knockdown of Mask1 in human HEK293T and Caco2 cells reduces nuclear YAP localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C50-C51, C57, and C86 are supported by experimental data in Figure 5A-C showing reduced nuclear YAP upon Mask1 knockdown in multiple human cell lines. The conservation of function from Drosophila to mammals is well-demonstrated through immunostaining and western blot analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "6c87cd1c-4222-4857-966d-30746391e4fb",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mammalian Mask1/2 proteins stabilize YAP protein levels, a function not observed for Drosophila Mask/Yki. Loss of Mask1/2 causes dramatic reduction in YAP protein levels and cell death. Double knockout of Mask1/2 in intestinal organoids results in small clones (1-2 cells) with reduced YAP and frequent cell extrusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C26-C27, C52-C56, C58, and C100-C102 are supported by experimental data in Figure 5 showing reduced YAP protein levels upon Mask1/2 loss in multiple systems (siRNA, organoid knockout). The observation that double knockdown causes apoptosis (Figure 5\u2014figure supplement 1) and that organoid clones remain small with cell extrusion (Figure 5\u2014figure supplement 2) provides strong evidence for an essential role in YAP stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "f65c9630-227b-4913-aa1b-317681b0a130",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Overexpression of Mask1 or Mask2 is sufficient to stabilize YAP protein levels in Caco2 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C60, and C113 are supported by experimental data in Figure 6A-B showing increased YAP levels upon Mask1/2 overexpression. This gain-of-function experiment complements the loss-of-function data and demonstrates sufficiency of Mask proteins for YAP stabilization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "f2070030-c5e1-44a2-b5f6-b5facb984964",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Overexpression of Mask1 in HEK293T cells drives formation of abnormally large liquid-like droplets containing both Mask1 and YAP proteins, suggesting phase separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C29, C61, C105, and C114 are supported by experimental data in Figure 6C showing large droplets with smooth boundaries containing both proteins. While the interpretation as phase separation is reasonable given the morphology and prior literature (C63, C103), the physiological relevance remains uncertain (C104) and would benefit from additional characterization (e.g., FRAP, sensitivity to 1,6-hexanediol).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "4a7be6a2-cf0a-442d-85fb-b3abac66cc88",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Endogenous Yki/YAP and Mask proteins colocalize in intracellular granules in both nucleus and cytoplasm across Drosophila and human cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C65-C69, and C115 are supported by immunostaining data in Figure 7 showing granular colocalization patterns in follicle cells, S2 cells, and human cells. The observation is consistent across species and cellular compartments, though the functional significance of these granules remains speculative (C69).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "4bb4e07e-4c5e-4350-956b-c56df79c5103",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mask1/2 and YAP are co-regulated during mechanotransduction and wound healing. Their subcellular localization changes coordinately in response to mechanical cues, integrin signaling disruption, and tissue damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C73-C74, C77-C78, and C116-C117 are supported by experimental data in Figure 8 showing similar localization changes of Mask1/2 and YAP in response to various stimuli (density, calcium, latrunculin, dasatinib, wounding). The co-regulation is well-demonstrated, though the inference that binding determines localization (C74, C117) is reasonable but not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "2ced3e37-acaa-4276-b206-f2ab3b515fce",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mask has no direct transcriptional activation function in a GAL4 reporter assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by experimental data in Figure 1\u2014figure supplement 1 showing no luciferase activity with GAL4-DBD-Mask. This negative result helps establish that Mask functions through nuclear import rather than direct transcriptional activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "541129be-016b-41fe-ab20-81f6a74fcd89",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mask\u0394NLS allele is homozygous lethal but shows normal expression and cytoplasmic localization of the mutant protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by experimental data in Figure 2\u2014figure supplement 1 showing normal protein expression but cytoplasmic localization of Mask\u0394NLS. This validates the CRISPR knockin and confirms that the NLS deletion specifically affects nuclear localization without disrupting protein stability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "3afe2275-0b06-45ba-b656-df1913c41014",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mask1 siRNA has a similar effect on TAZ localization as on YAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by experimental data in Figure 5\u2014figure supplement 3 showing reduced TAZ levels and cytoplasmic localization upon Mask1 knockdown. This extends the findings to TAZ, the YAP paralog.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "9101a31e-5fd5-4dab-ab75-a0de86b8d7b1",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Colloidal phase separation may contribute to regulation of YAP activity. Mask proteins might promote transcription through phase separation and clustering of YAP molecules via multivalent interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30, C62, C64, C104, C107, and C111 are speculative interpretations based on the droplet formation observed with Mask1 overexpression (C61) and structural features (two ankyrin repeat domains, KH domain). While the hypothesis is plausible and supported by analogy to prior work (C63, C103, C106, C109), direct evidence for physiological phase separation and its functional role in transcription is lacking. Additional experiments (FRAP, mutation of multivalent interaction sites, functional assays) would be needed to support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A model for Yki/YAP regulation through dynamic shuttling: Mask mediates constitutive nuclear-cytoplasmic shuttling, while bulk distribution is determined by binding to 14-3-3 (cytoplasmic) or TEAD (nuclear). Hippo signaling regulates the 14-3-3 interaction through phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 and C91-C97 present a mechanistic model that integrates the current findings with established knowledge of Yki/YAP regulation. The model is well-supported by the experimental data showing that Mask is required for shuttling (C5-C7) and that NLS addition bypasses Mask requirement (C6). The inference that Mask-Yki interaction must be weak and constitutive (C91) is logical but not directly tested. The model provides a coherent framework for understanding Mask function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "2d21ef6e-d527-415a-b522-16cee959c40b",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The canonical NLS in Drosophila Mask is conserved in mammalian Mask1 and Mask2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by sequence conservation shown in Figure 2A and by the functional conservation demonstrated in mammalian cells (C7, C50-C51, C57, C86). The conservation of both sequence and function provides strong evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "bda044ec-f46c-453e-8553-6c1da08a0ff9",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Non-canonical nuclear import motifs (RaDAR motifs in Mask, Importin-alpha binding motifs in Yki, Ran-independent sequences in YAP/TAZ) may contribute to nuclear import but are not sufficient in the absence of Mask proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C89 are speculative based on sequence analysis and citations to prior work. Claim C90 is inferred from the experimental data showing loss of nuclear localization in mask mutants. While the speculation about additional import mechanisms is reasonable, direct experimental evidence for their contribution is lacking. The conclusion that they are insufficient (C90) is well-supported by the loss-of-function data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "39b1609e-388e-4ce9-9c28-34057a7b3c8e",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "YAP/TAZ stability is regulated by SCF-type E3 ubiquitin ligases beta-TrCP and FBXW7, which target YAP/TAZ for degradation after phosphorylation by LATS and CK1 on Ser381.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 are supported by citations to prior research (Tu et al., 2014; Zhang et al., 2016; Zhao et al., 2010). This represents established knowledge that provides context for understanding why Mask1/2 loss affects YAP stability in mammals but not Yki stability in Drosophila (C100).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "d7ec5ac4-725c-4886-b6cb-99f6d9b97e5a",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mask family proteins contain conserved structural features including a KH domain and two ankyrin repeat domains that bind YAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108 and C110 are supported by structural analysis shown in Figure 2A and by prior knowledge of Mask protein structure. These structural features are relevant for understanding potential mechanisms of Mask function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "267a4f8f-5322-48e0-a409-7c926c817f66",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background and context: Mask family proteins promote Yki/YAP activity but their molecular function was unclear. Yki/YAP/TAZ are transcriptional coactivators regulated by Hippo signaling and mechanical cues through phosphorylation and 14-3-3 binding. No nuclear import factors had been identified prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C12-C24 represent background knowledge and prior work that is well-supported by citations. These claims establish the context and rationale for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "575e1790-3cd2-4510-995f-5092537066b8",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Yki-GFP localization varies by tissue and developmental stage: cytoplasmic at stage 10, nuclear at stage 11 in follicle cells; primarily cytoplasmic in wing disc columnar epithelium; nuclear in peripodial epithelium. Overexpressed Yki requires Mask for proliferation in wing disc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32, C40-C42 are supported by experimental data and citations (Fletcher et al., 2018; Oh and Irvine, 2008; Sidor et al., 2013). These observations establish the experimental systems used to study Mask function and provide context for the nuclear import findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "024be1c9-7840-434a-bf43-ece50c0c25f8",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior work context: YAP can undergo phase separation with PEG treatment; Mask1/2 relocalize with YAP in a density-dependent manner; integrin-Src signaling regulates YAP mechanotransduction and wound healing; phase separation has been proposed for transcription factories; RNA binding proteins have roles in phase separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C70-C72, C75-C76, C103, C106, and C109 represent prior work that is well-supported by citations. These claims provide context for interpreting the current findings regarding phase separation and mechanotransduction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    },
+    {
+      "id": "5374a524-89bc-4d5d-b923-e316e92645ee",
+      "content_id": "83f6ecd0-6b7f-4be4-9dda-4e63f781f4bc",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Summary conclusions: Mask family proteins promote nuclear import of Yki and YAP, and these functions are crucial for dynamic shuttling and regulation by Hippo and Integrin signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112 and C118 represent summary conclusions that are well-supported by the experimental data throughout the manuscript. These conclusions integrate the major findings into a coherent understanding of Mask function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:04:55.228355Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "271dece2-522a-451e-b66b-bb93d61a3192",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "9c254ee6-f152-4790-82e9-e5cac90ebc93",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "d45ace58-9bf9-4073-aeba-b007510bba7e",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "a603c426-16eb-4537-9a2d-59847a8f5d3f",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "eafd354a-18d1-499d-a61c-23ea997b14e4",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "adc11a97-5592-4300-a402-70078a8743a4",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "9e415ac4-3ea7-44de-a44e-0b4fffba51c4",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "aac6e28b-7d7c-4249-88f1-db829d65e070",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "a3b967f9-464c-4597-98b3-c1bc821d3dac",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "229446a6-4145-4bfd-849d-9a5a6c23afa4",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "33e1af33-d74d-4fce-86db-5adf1cfc7e8b",
+      "result_id": "1739b368-a2a0-4290-a51c-16650adfd155"
+    },
+    {
+      "claim_id": "e6d115b4-4394-4e84-b407-fe7d423ddd13",
+      "result_id": "1fdadd11-d31c-4ded-91b5-7e5f990ff9a6"
+    },
+    {
+      "claim_id": "595321a7-17d5-4a01-84cc-af2305a6ffbe",
+      "result_id": "1fdadd11-d31c-4ded-91b5-7e5f990ff9a6"
+    },
+    {
+      "claim_id": "e0d22ed0-da9d-4fe7-887e-f0948f0e444c",
+      "result_id": "1fdadd11-d31c-4ded-91b5-7e5f990ff9a6"
+    },
+    {
+      "claim_id": "06da03ee-f3e2-4a86-b7b9-a9f92ddedda2",
+      "result_id": "1fdadd11-d31c-4ded-91b5-7e5f990ff9a6"
+    },
+    {
+      "claim_id": "3c50e22f-0e27-4dc0-9fb8-6db6007ff8a1",
+      "result_id": "1fdadd11-d31c-4ded-91b5-7e5f990ff9a6"
+    },
+    {
+      "claim_id": "a544e679-65af-4fb4-9f84-38734b6af484",
+      "result_id": "36978c29-b8be-4852-9de1-330740c5db64"
+    },
+    {
+      "claim_id": "5dde4883-6982-4e5b-92d8-8db5954807c8",
+      "result_id": "36978c29-b8be-4852-9de1-330740c5db64"
+    },
+    {
+      "claim_id": "48e99d56-2ef2-4360-b822-6f9ec46441c0",
+      "result_id": "36978c29-b8be-4852-9de1-330740c5db64"
+    },
+    {
+      "claim_id": "610b34b9-5ad6-485b-ab6a-bf2a595bcf6c",
+      "result_id": "36978c29-b8be-4852-9de1-330740c5db64"
+    },
+    {
+      "claim_id": "decccba1-43a2-4694-a34e-ea588bb6338b",
+      "result_id": "36978c29-b8be-4852-9de1-330740c5db64"
+    },
+    {
+      "claim_id": "95d8ad29-07a5-444e-820a-c9ad15ef2a4e",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "64a25df6-d661-42d0-adcc-3afe5053188c",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "e42cc3e0-7f26-4ac6-8a5a-bf2cdd79c4ab",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "0507e581-a3fe-4f09-bbfd-a3d7d4653f2b",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "19c5d725-ddb0-4715-8fab-f40d720bb0f9",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "18a1672d-af0e-465f-afad-14d7a1c14409",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "f8b25945-9697-459c-ad64-198b04093c0a",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "6ee78202-f8a0-4654-a28f-78ee9a083ece",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "c3a46180-3a1d-4868-ae67-294b9fbbe0cb",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "30ee902e-f58e-4fd8-8c8b-510ba6709cfd",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "40b03c9d-f3d6-45a6-bba2-8102fbc39295",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "8fd89c43-ce20-4dd8-a91b-558a631f514c",
+      "result_id": "6c87cd1c-4222-4857-966d-30746391e4fb"
+    },
+    {
+      "claim_id": "082df480-2e3b-47f7-a4ca-09a280e1cde4",
+      "result_id": "f65c9630-227b-4913-aa1b-317681b0a130"
+    },
+    {
+      "claim_id": "4edfa320-041d-4004-8361-d98a330694ac",
+      "result_id": "f65c9630-227b-4913-aa1b-317681b0a130"
+    },
+    {
+      "claim_id": "32659417-8c92-4f66-8a81-653267e0eb80",
+      "result_id": "f65c9630-227b-4913-aa1b-317681b0a130"
+    },
+    {
+      "claim_id": "4d985f8a-c9d9-40f1-ad23-30ad0320a738",
+      "result_id": "f2070030-c5e1-44a2-b5f6-b5facb984964"
+    },
+    {
+      "claim_id": "dcda53ba-3f45-467a-904c-452d1f4df085",
+      "result_id": "f2070030-c5e1-44a2-b5f6-b5facb984964"
+    },
+    {
+      "claim_id": "154476f1-a100-4bfa-a1a0-7425f1a57835",
+      "result_id": "f2070030-c5e1-44a2-b5f6-b5facb984964"
+    },
+    {
+      "claim_id": "3ba12d1e-20db-47ee-9e0d-2b67b11a5f81",
+      "result_id": "f2070030-c5e1-44a2-b5f6-b5facb984964"
+    },
+    {
+      "claim_id": "583b5cf9-b908-4d92-b011-f8fd8f5dc27d",
+      "result_id": "f2070030-c5e1-44a2-b5f6-b5facb984964"
+    },
+    {
+      "claim_id": "6ff20d6c-c0aa-42cc-9250-0638cd9a0eae",
+      "result_id": "4a7be6a2-cf0a-442d-85fb-b3abac66cc88"
+    },
+    {
+      "claim_id": "d8d895f4-7281-4b29-9547-0889c2641347",
+      "result_id": "4a7be6a2-cf0a-442d-85fb-b3abac66cc88"
+    },
+    {
+      "claim_id": "940254e3-7de7-4483-8f83-054326f2022f",
+      "result_id": "4a7be6a2-cf0a-442d-85fb-b3abac66cc88"
+    },
+    {
+      "claim_id": "73e01df1-252b-407b-bb36-d30cf6cb5de4",
+      "result_id": "4a7be6a2-cf0a-442d-85fb-b3abac66cc88"
+    },
+    {
+      "claim_id": "c60cde7d-2f24-4ccd-8ef6-f7166537b4ae",
+      "result_id": "4a7be6a2-cf0a-442d-85fb-b3abac66cc88"
+    },
+    {
+      "claim_id": "7271ab92-98d0-4b31-8944-71db9d10d051",
+      "result_id": "4a7be6a2-cf0a-442d-85fb-b3abac66cc88"
+    },
+    {
+      "claim_id": "9d433581-6235-4275-8cd0-c0f110dcdd8f",
+      "result_id": "4a7be6a2-cf0a-442d-85fb-b3abac66cc88"
+    },
+    {
+      "claim_id": "82d8d51c-773c-49db-9537-848ab6dba5d0",
+      "result_id": "4bb4e07e-4c5e-4350-956b-c56df79c5103"
+    },
+    {
+      "claim_id": "67757445-6122-4ca8-8912-fc11078f5821",
+      "result_id": "4bb4e07e-4c5e-4350-956b-c56df79c5103"
+    },
+    {
+      "claim_id": "52257d5a-7d50-4fe7-9586-89f0438bec14",
+      "result_id": "4bb4e07e-4c5e-4350-956b-c56df79c5103"
+    },
+    {
+      "claim_id": "69410fc3-f473-4571-9bdf-42d6fa1a4952",
+      "result_id": "4bb4e07e-4c5e-4350-956b-c56df79c5103"
+    },
+    {
+      "claim_id": "bb615ed9-32a1-4133-bde9-ed596af941c4",
+      "result_id": "4bb4e07e-4c5e-4350-956b-c56df79c5103"
+    },
+    {
+      "claim_id": "80d9aa57-70eb-4588-be8a-857f933eabff",
+      "result_id": "4bb4e07e-4c5e-4350-956b-c56df79c5103"
+    },
+    {
+      "claim_id": "d3755016-935d-40ae-963c-cb89246a316f",
+      "result_id": "4bb4e07e-4c5e-4350-956b-c56df79c5103"
+    },
+    {
+      "claim_id": "48b93798-fb07-4644-a735-a2408ccd3b89",
+      "result_id": "2ced3e37-acaa-4276-b206-f2ab3b515fce"
+    },
+    {
+      "claim_id": "411aa5a2-3c2d-4e11-a1a3-69d00c50a9d6",
+      "result_id": "541129be-016b-41fe-ab20-81f6a74fcd89"
+    },
+    {
+      "claim_id": "1399969e-7b3b-4281-903d-287094799619",
+      "result_id": "541129be-016b-41fe-ab20-81f6a74fcd89"
+    },
+    {
+      "claim_id": "d7dfca25-c278-415e-9864-fc579db7bed8",
+      "result_id": "3afe2275-0b06-45ba-b656-df1913c41014"
+    },
+    {
+      "claim_id": "b5cc0017-2beb-490d-a99f-140e01e7a641",
+      "result_id": "9101a31e-5fd5-4dab-ab75-a0de86b8d7b1"
+    },
+    {
+      "claim_id": "63f5a3cd-f39f-4634-8139-af84f33e988b",
+      "result_id": "9101a31e-5fd5-4dab-ab75-a0de86b8d7b1"
+    },
+    {
+      "claim_id": "261af618-3a43-4c69-8b8c-ab00843778aa",
+      "result_id": "9101a31e-5fd5-4dab-ab75-a0de86b8d7b1"
+    },
+    {
+      "claim_id": "1898e271-15ef-4862-931b-be01ec2de517",
+      "result_id": "9101a31e-5fd5-4dab-ab75-a0de86b8d7b1"
+    },
+    {
+      "claim_id": "119c5217-d0a9-4088-bcf1-d8395bfb1e24",
+      "result_id": "9101a31e-5fd5-4dab-ab75-a0de86b8d7b1"
+    },
+    {
+      "claim_id": "303973f2-33d8-4a8b-8be3-8a7a1430f7aa",
+      "result_id": "9101a31e-5fd5-4dab-ab75-a0de86b8d7b1"
+    },
+    {
+      "claim_id": "479496cf-2286-43c0-b83e-e0dd86695d64",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "1759613f-812a-456e-b245-395d21ea6ac0",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "bd8b3219-0d53-4c7d-8888-dc5d3b34d285",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "a2b655bb-c4bc-435e-9b4f-53efe076c4f9",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "561eb23a-d8d7-423a-a95f-20876f589e6e",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "aacf16c8-b66a-49ad-9bc9-8691a5679526",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "038a36b6-b7a4-4a31-b4d8-46d55b900dda",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "73f33aea-77ea-4eab-9347-8e1d06564034",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "2d6473d1-5c0e-4b78-87fb-b0afc245d848",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "4fca11c9-afac-4832-814a-72aae1e23625",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "aaa2422f-7d34-42ca-9082-f25320e5c009",
+      "result_id": "b774e181-ae51-4e12-ad1c-c2dec0092ae5"
+    },
+    {
+      "claim_id": "a369898d-50fc-441f-9980-472b7bdcbaaa",
+      "result_id": "2d21ef6e-d527-415a-b522-16cee959c40b"
+    },
+    {
+      "claim_id": "4095ff01-9307-41e0-9d28-4fddd5713d54",
+      "result_id": "bda044ec-f46c-453e-8553-6c1da08a0ff9"
+    },
+    {
+      "claim_id": "a07edca4-f3a6-45c2-95b9-c91edc9e6829",
+      "result_id": "bda044ec-f46c-453e-8553-6c1da08a0ff9"
+    },
+    {
+      "claim_id": "e65688c2-7e51-4f1c-9296-63a43ffe001a",
+      "result_id": "bda044ec-f46c-453e-8553-6c1da08a0ff9"
+    },
+    {
+      "claim_id": "21c0abf2-ba0a-44ed-a125-83693f4c24a5",
+      "result_id": "bda044ec-f46c-453e-8553-6c1da08a0ff9"
+    },
+    {
+      "claim_id": "ad7a83cd-ab56-4746-bf16-e4cd80332a31",
+      "result_id": "39b1609e-388e-4ce9-9c28-34057a7b3c8e"
+    },
+    {
+      "claim_id": "b3c67f8d-9210-4478-9bdb-a644f982b607",
+      "result_id": "39b1609e-388e-4ce9-9c28-34057a7b3c8e"
+    },
+    {
+      "claim_id": "a5adfcf3-456b-407b-a1a5-7aa3e2fa6d49",
+      "result_id": "d7ec5ac4-725c-4886-b6cb-99f6d9b97e5a"
+    },
+    {
+      "claim_id": "71cccbfd-4271-47d1-b2a5-c2e6ff376920",
+      "result_id": "d7ec5ac4-725c-4886-b6cb-99f6d9b97e5a"
+    },
+    {
+      "claim_id": "3d85c63c-ef41-4f17-8446-f633480a87f9",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "26afa497-7dcc-4692-8aea-fcce64c48d36",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "69cb6342-3c53-495b-8c83-b22d02b5f33f",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "2cdfc5f9-16cc-42de-86a8-5115e5804a12",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "63466606-b5aa-4791-af23-f331e7647414",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "e995f4da-6967-4cf6-bc34-bf897b93f2b3",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "0f86873e-6c68-4092-be16-f9cce0ca6bdf",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "4ba7c7fb-4e63-427f-b8a9-766cec8c7eb1",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "3e9813e9-e870-4426-a077-46b78f10ec37",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "9b37db7f-2aea-4b5f-ab77-d30e16f45ba0",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "41ee59ad-5dd3-4905-8365-1da29c133584",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "008ea3b3-2bfd-46d9-bc15-142bdb3ff5b5",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "896184ba-4a1a-4941-8ee1-494be1625d34",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "26b2474b-a472-474e-8b55-d5572e9a4db8",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "4d0a6898-9b67-4d4d-9519-1d9a7a9ca832",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "43e1a152-016c-4564-aaa1-74f8f96ae26f",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "fc7a3dc0-c003-4eba-8be9-7ecc35a14e03",
+      "result_id": "267a4f8f-5322-48e0-a409-7c926c817f66"
+    },
+    {
+      "claim_id": "e963062b-1053-4c36-9460-9d6a12bc356b",
+      "result_id": "575e1790-3cd2-4510-995f-5092537066b8"
+    },
+    {
+      "claim_id": "0c5e5867-a4c8-4f62-a6d2-d3e1b7f85c5a",
+      "result_id": "575e1790-3cd2-4510-995f-5092537066b8"
+    },
+    {
+      "claim_id": "ee8a4a6d-6b2e-4427-82df-7b174088738a",
+      "result_id": "575e1790-3cd2-4510-995f-5092537066b8"
+    },
+    {
+      "claim_id": "9db67373-19ed-44e6-bc1d-3bf5fea6e5c1",
+      "result_id": "575e1790-3cd2-4510-995f-5092537066b8"
+    },
+    {
+      "claim_id": "6fc66cb4-ec90-481f-b69f-96ca901bfcc8",
+      "result_id": "575e1790-3cd2-4510-995f-5092537066b8"
+    },
+    {
+      "claim_id": "cd119457-b599-4731-a8ad-33c0964b0897",
+      "result_id": "024be1c9-7840-434a-bf43-ece50c0c25f8"
+    },
+    {
+      "claim_id": "e27b877b-a98a-4bc9-a5ea-1cae9ed1d306",
+      "result_id": "024be1c9-7840-434a-bf43-ece50c0c25f8"
+    },
+    {
+      "claim_id": "b1594782-3f20-4c65-b268-98d63fc992e3",
+      "result_id": "024be1c9-7840-434a-bf43-ece50c0c25f8"
+    },
+    {
+      "claim_id": "80a70594-ad62-4c04-8e68-044cffcf7571",
+      "result_id": "024be1c9-7840-434a-bf43-ece50c0c25f8"
+    },
+    {
+      "claim_id": "a836ebeb-daaf-4a91-acbd-425813f470e4",
+      "result_id": "024be1c9-7840-434a-bf43-ece50c0c25f8"
+    },
+    {
+      "claim_id": "ce97cad2-d8ee-467a-97b4-e26d688a7de9",
+      "result_id": "024be1c9-7840-434a-bf43-ece50c0c25f8"
+    },
+    {
+      "claim_id": "197a9641-af76-49c3-9714-15b94eb0d4f0",
+      "result_id": "024be1c9-7840-434a-bf43-ece50c0c25f8"
+    },
+    {
+      "claim_id": "8f6990b8-4549-4638-9e51-76f9078b351a",
+      "result_id": "024be1c9-7840-434a-bf43-ece50c0c25f8"
+    },
+    {
+      "claim_id": "22d6d367-787a-408a-80e5-c8742da917fb",
+      "result_id": "024be1c9-7840-434a-bf43-ece50c0c25f8"
+    },
+    {
+      "claim_id": "1cb5f678-d2f6-4b0e-930d-b109e0d9f512",
+      "result_id": "5374a524-89bc-4d5d-b923-e316e92645ee"
+    },
+    {
+      "claim_id": "0f891d45-692d-49ac-84fa-411e6a770574",
+      "result_id": "5374a524-89bc-4d5d-b923-e316e92645ee"
+    }
+  ],
+  "comparisons": []
+}

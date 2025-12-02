@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "VF-FLIM is a fluorescence lifetime-based method that uses VF2.1.Cl dye to quantify absolute membrane potential (Vmem) with single-cell resolution. VF2.1.Cl exhibits a biexponential fluorescence lifetime decay that responds linearly to voltage with a sensitivity of 3.50 \u00b1 0.08 ps/mV in HEK293T cells. The method achieves an intra-cell voltage resolution of 3.5 \u00b1 0.4 mV and inter-cell resolution of 19 mV within a 15 s acquisition time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C49 provide comprehensive experimental validation of VF-FLIM using simultaneous electrophysiology and FLIM measurements. The linear voltage response (C42), reproducibility across cells (C43), and control experiments with voltage-insensitive VF2.0.Cl (C44) strongly support the method's validity. Quantitative performance metrics (C45-C49) are derived from rigorous calibration experiments with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C61"
+    ],
+    "result": "VF-FLIM demonstrates superior voltage resolution compared to the genetically encoded voltage indicator CAESR. CAESR shows 3-fold lower voltage sensitivity (-1.2 ps/mV vs 3.5 ps/mV) and 7-fold higher voltage-independent variability in lifetime compared to VF2.1.Cl, resulting in a 19-fold improvement in inter-cell Vmem resolution for VF-FLIM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 and C61 provide direct experimental comparison between VF-FLIM and CAESR using identical measurement conditions and analysis methods. The quantitative metrics (sensitivity, variability, resolution) are clearly defined and consistently measured, allowing valid comparison. The 19-fold improvement claim (C61) is mathematically consistent with the reported resolution values (19 mV vs 370 mV).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "VF-FLIM demonstrates superior voltage resolution compared to ratiometric imaging with di-8-ANEPPS. Di-8-ANEPPS shows intra-cell resolution of 18 \u00b1 3 mV and inter-cell resolution of 150 mV, representing 5-fold and 8-fold lower accuracy than VF-FLIM, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 provide quantitative characterization of di-8-ANEPPS performance using simultaneous ratio imaging and voltage clamp. The normalized sensitivity values (C58) agree well with published literature, validating the measurement approach. The 8-fold improvement claim (C62) is directly supported by the resolution measurements (19 mV vs 150 mV for inter-cell resolution).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "VF-FLIM is generalizable across multiple mammalian cell lines (A431, CHO, HEK293T, MCF-7, MDA-MB-231) and culture conditions. All cell lines show linear \u03c4fl-Vmem responses with sensitivities ranging from 3.1 to 3.7 ps/mV and intra-cell voltage resolution \u22645 mV. Calibrations are reproducible in cell groups and under serum-starved conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 demonstrate systematic validation across five cell lines with appropriate statistical analysis (ANOVA with post-hoc tests, C67-C69). The consistency of linear responses (C63) and similar sensitivities across most cell lines (C64, C68) supports generalizability. Validation in cell groups (C70-C72) and different culture conditions (C73) strengthens the practical applicability of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "VF-FLIM measurements of resting membrane potentials across five cell lines range from -53 to -29 mV in standard buffer and -26 to +4 mV in high K+ buffer. These values fall within ranges reported in the literature and are consistent with theoretical predictions from the Goldman-Hodgkin-Katz equation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 provide validation of VF-FLIM measurements against both literature values (C75) and theoretical calculations (C77-C78). The depolarization observed in high K+ buffer (C76) is physiologically expected and provides an internal control. The GHK calculations (C77) appropriately acknowledge uncertainty in ion permeabilities and concentrations while establishing reasonable bounds for expected Vmem values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C100",
+      "C101"
+    ],
+    "result": "VF-FLIM provides 100-fold improved throughput over patch clamp electrophysiology, enabling Vmem measurements across thousands of cells, with improved spatial resolution compared to electrophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C100 are supported by the demonstrated ability to measure thousands of cells (shown in Figures 3 and supplements) compared to the typical single-cell measurements of patch clamp. The 100-fold improvement is reasonable given that VF-FLIM can image multiple cells simultaneously while patch clamp is limited to one cell at a time. Claim C101 regarding spatial resolution is supported by the ability to image membrane regions optically, though pixel-level interpretation is appropriately cautioned against in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "VF-FLIM reveals that EGF treatment of A431 cells induces a 10-15 mV hyperpolarization within 60-90 seconds in approximately 80% of cells, followed by a slow return to baseline within 15 minutes. This hyperpolarization depends on EGFR kinase activity, as demonstrated by abolishment with canertinib and substantial reduction with gefitinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 are well-supported by time-series VF-FLIM data with appropriate controls (vehicle treatment C81, voltage-insensitive dye C82). The pharmacological experiments with EGFR inhibitors (C84-C85) provide mechanistic validation. Statistical significance is demonstrated at multiple time points. The dose-response relationship (referenced in methods) further supports the specificity of the EGF effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C108"
+    ],
+    "result": "The EGF-induced hyperpolarization in A431 cells is mediated by the Ca2+-activated K+ channel KCa3.1. This conclusion is supported by: (1) abolishment of hyperpolarization by high extracellular K+, charybdotoxin (KCa blocker), and TRAM-34 (KCa3.1-specific inhibitor); (2) enhancement by 4-aminopyridine (Kv blocker); (3) requirement for intracellular Ca2+; and (4) transcriptomic evidence that KCa3.1 is the major KCa channel in A431 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C99 and C108 provide convergent pharmacological evidence for KCa3.1 involvement. The high K+ experiment (C87) confirms K+ dependence, while specific channel blockers (C89-C90) identify the channel type. The intracellular Ca2+ requirement (C94-C95) supports the proposed mechanism. The transcriptomic evidence (C108) provides independent validation. The model (C99) is well-supported by the experimental data, though some mechanistic details (e.g., how EGFR activates Ca2+ release) remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "VF-FLIM temporal resolution is limited by photon counting requirements to events lasting longer than a few seconds, which is sufficient for measuring resting membrane potential and Vmem dynamics associated with cell growth or differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 accurately describe the technical limitation of TCSPC-based FLIM, which requires accumulation of sufficient photons for reliable lifetime fitting. The 15-30 second acquisition times used in the study support this assessment. Claim C104 is appropriately qualified as speculation ('likely sufficient') and is supported by the successful measurement of EGF-induced changes occurring over minutes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "VF-FLIM histograms of resting membrane potential appear unimodal, showing no clear evidence of distinct cell cycle-related Vmem states. This is consistent with theoretical predictions that electrical coupling between adjacent cells leads to Vmem equilibration across cell groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by the histogram data shown in Figures 3 and supplements, which show relatively smooth, unimodal distributions. Claim C106 provides theoretical support from cited literature. However, the authors appropriately acknowledge that their analysis method (averaging across cell groups) and resolution limits may prevent detection of subtle Vmem differences. The conclusion is appropriately cautious and suggests this as an area for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Under conditions where K+-mediated hyperpolarization is blocked (CTX, high K+, BAPTA-AM), VF-FLIM reveals a small (~3-4 mV) secondary depolarizing current, likely arising from initial Ca2+ entry. Enhancement of EGF signaling with orthovanadate increases hyperpolarization, while inhibition of downstream kinase activity with wortmannin has little effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 describe secondary observations from the pharmacology experiments. The small depolarizing current (C109) is consistently observed across multiple blocking conditions and is reasonably attributed to Ca2+ entry based on prior literature (C110). The orthovanadate and wortmannin experiments (C111-C112) provide additional mechanistic insights, though the interpretation that downstream kinases are not involved should be qualified by the possibility that wortmannin concentration or specificity may be insufficient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background and motivation claims establish that: (1) membrane potential is important in both excitable and non-excitable cells; (2) existing methods (patch clamp, intensity-based optical methods, ratiometric approaches, FLIM with GEVIs) have significant limitations for measuring absolute Vmem; and (3) VoltageFluor dyes operate via a PeT-based mechanism that modulates fluorescence in response to voltage changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C35 provide appropriate background context supported by citations to established literature. The characterization of existing methods' limitations (C13-C31) is accurate and well-documented. The description of VF dye mechanism (C32-C35) is supported by prior work from the same laboratory. These claims appropriately frame the motivation for developing VF-FLIM but do not constitute novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Shortened VF lifetimes were observed at high dye concentrations, similar to concentration-dependent effects reported for fluorescein derivatives. All subsequent VF-FLIM studies were conducted at concentrations below this regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by data in Figure 1\u2014figure supplement 2 and Figure 2\u2014figure supplement 4, showing concentration-dependent lifetime changes beginning between 200-500 nM across multiple cell lines. This is an important methodological control that validates the use of 50-100 nM dye concentrations in subsequent experiments. The observation is consistent with known fluorescein behavior (cited).",
+    "result_type": "MINOR"
+  }
+]

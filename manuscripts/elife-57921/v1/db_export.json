@@ -1,0 +1,2243 @@
+{
+  "submission": {
+    "id": "be4c8c78-4c1b-4ac3-815b-c2f990132b69",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:33:32.429519Z",
+    "updated_at": "2025-12-02T21:33:32.429519Z"
+  },
+  "content": [
+    {
+      "id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "submission_id": "be4c8c78-4c1b-4ac3-815b-c2f990132b69",
+      "content_type": "manuscript",
+      "content_text": "# Robo functions as an attractive cue for glial migration through SYG-1/Neph\n\n## Authors\n\n- Zhongwei Qu<sup>1</sup> ([ORCID: 0000-0002-6994-0530](https://orcid.org/0000-0002-6994-0530))\n- Albert Zhang<sup>1</sup> ([ORCID: 0000-0003-1310-5680](https://orcid.org/0000-0003-1310-5680))\n- Dong Yan<sup>1</sup> ([ORCID: 0000-0002-7542-1251](https://orcid.org/0000-0002-7542-1251)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics and Microbiology, Duke University Medical Center Durham United States\n2. Department of Neurobiology, Regeneration Next Initiative, Duke Center for Neurodegeneration and Neurotherapeutics, and Duke Institute for Brain Sciences, Duke University Medical Center Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs one of the most-studied receptors, Robo plays functions in many biological processes, and its functions highly depend on Slit, the ligand of Robo. Here we uncover a Slit-independent role of Robo in glial migration and show that neurons can release an extracellular fragment of Robo upon cleavage to attract glia during migration in Caenorhabditis elegans. Furthermore, we identified the conserved cell adhesion molecule SYG-1/Neph as a receptor for the cleaved extracellular Robo fragment to mediate glial migration and SYG-1/Neph functions through regulation of the WAVE complex. Our studies reveal a previously unknown Slit-independent function and regulatory mechanism of Robo and show that the cleaved extracellular fragment of Robo can function as a ligand for SYG-1/Neph to guide glial migration. As Robo, the cleaved region of Robo, and SYG-1/Neph are all highly conserved across the animal kingdom, our findings may present a conserved Slit-independent Robo mechanism during brain development.\n\n## Introduction\n\nThe evolutionarily conserved Robo family was first identified in the classic genetic studies of Drosophila CNS axonal midline crossing (Seeger et al., 1993) and belongs to the immunoglobulin (Ig) superfamily. Besides their functions in axon guidance (Dickson and Gilestro, 2006), Robo is also involved in cell migration (Killeen and Sybingco, 2008; Viveiros et al., 2011; Hinck, 2004; Grieshammer et al., 2004), organogenesis (Grieshammer et al., 2004; Mommersteeg et al., 2013), cancer development (Wang et al., 2008), and immune cell regulation (Wu et al., 2001; Branchfield et al., 2016). In these processes Robo functions as the receptor for the guidance cue molecule \u2013 Slit. However, mutations of Robo cause abnormalities in Caenorhabditis elegans (Zallen et al., 1998; Hao et al., 2001), zebrafish (Fricke et al., 2001), and cultured mammalian neurons (Hivert et al., 2002; Liu et al., 2004) that have not been observed in Slit mutants, suggesting that there may be evolutionarily conserved Slit-independent aspects of Robo function and regulation.\n\nGlial cells often need to migrate over long distances from their birthplace to appropriate regions where they form functional units with neurons or perform other roles (Gilmour et al., 2002; Jarjour and Kennedy, 2004; Kinrade et al., 2001; Kl\u00e4mbt, 2009). Some guidance molecules including those in the Netrin and Semaphorin families were shown to be involved in glial migration (Kinrade et al., 2001; Jarjour et al., 2003; Sasse and Kl\u00e4mbt, 2016; Spassky et al., 2002; Unni et al., 2012). In Drosophila, CNS-derived glial cells can move along nerves to reach their final position, and during migration the glial expression of ROBO2 receptor is required for preventing glial breakaway from the nerve in a Slit-dependent manner (Sasse and Kl\u00e4mbt, 2016).\n\nProteolytic modifications play important roles in regulating Ig superfamily proteins. One good example is the Netrin receptor DCC. DCC can be cleaved first at the extracellular region and subsequently at the intracellular domains (Neuhaus-Follini and Bashaw, 2015). The DCC intracellular cleavage fragment can then translocate into the nucleus and equip DCC with transcriptional regulatory function (Neuhaus-Follini and Bashaw, 2015). Similarly, NCAM and EphrinA5 can go through extracellular cleavage to release adhesive interactions and cause cell detachment (Brennaman et al., 2014). Drosophila Robo can be cleaved at the FN3 (Fibronectin type-III) repeats of the extracellular region, and the extracellular cleavage fragment can recruit Son of sevenless (Sos) to mediate Slit-dependent midline repulsion (Coleman et al., 2010). However, in all these cases the cleaved fragments and the function of the receptors highly rely on their canonical ligands. It is still unknown whether the cleavage of Ig superfamily receptors can function in a fashion that is independent of their canonical ligands.\n\nThere are in total 56 glia in C. elegans, which include 50 neuroepithelial glia that ensheath sensory neuron receptive endings (Oikonomou and Shaham, 2011; Shaham, 2015). The largest sensory organ of the worm, called the amphid sensilla, is a pair of sensilla composed\u00a0of 12 neurons and two glial cells each (Ward et al., 1975). These glia, called the amphid sheath (AMsh) and amphid socket (AMso) cells, form channels that ensheath the dendrites of sensory neurons in the amphid sensilla (Oikonomou and Shaham, 2011; Ward et al., 1975; Perkins et al., 1986). Furthermore, these glial cells are vital for the proper functioning of the neurons that they ensheath, where they can modulate neural activity through secreted molecules at the receptive endings and control neuron receptive ending shape (Bacaj et al., 2008; Shaham, 2010; Singhvi et al., 2016). In previous studies we show\u00a0that the fate determination of C. elegans AMsh glial cells utilizes similar mechanisms as those in mammals (Zhang et al., 2020a). AMsh glia are born close to the nose of C. elegans, where their processes anchor to the nose region while the cell bodies migrate toward the nerve ring (Shaham, 2015; Heiman and Shaham, 2009), and the position of AMsh glia is important for their function (Zhang et al., 2020b). With all these advantages, AMsh glia have emerged as a powerful model to study the potential conserved mechanisms underlying glial development and function.\n\n### SAX-3/Robo regulates glial migration in a Slit-independent manner\n\nIn an unbiased genetic screen for glial migration, we isolated two loss-of-function alleles of sax-3, the only Robo receptor in C. elegans (Zallen et al., 1998), with defects in AMsh glial migration. To quantify the migration of AMsh, we used the pharyngeal terminal bulb as a reference point and found that AMsh cell bodies reside at the side of and align with the center of pharyngeal terminal bulbs in day 1 (D1) young adults (Figure 1a and b). AMsh glia fail to migrate to their final positions in both sax-3(lf) alleles, and yad10 animals display stronger phenotypes than yad147 animals and show a similar extent of defects as those in the null allele of sax-3 (ky123) (Zallen et al., 1998), suggesting that yad10 is likely a null allele of sax-3 (Figure 1a and b and Figure 1\u2014figure supplement 1a and c). To further characterize the sax-3(lf) phenotype we examined AMsh migration at different developmental stages in a single animal and found that sax-3(lf) animals exhibited migration defects in all post-embryonic stages, suggesting that sax-3 is required for AMsh migration during development (Figure 1\u2014figure supplement 1b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57921/elife-57921-fig1-v1.jpg)\n\n**Figure 1.:** (a) Loss-of-function in sax-3 causes defects in AMsh glial migration. Confocal images and schematic representation of AMsh glia in control and sax-3(yad10) animals expressing Pf53f4.13::GFP (yadIs48). TB: pharyngeal terminal bulb. Scale bar, 10 \u00b5m. (b) Quantification of Migration Index (MI) in control and three alleles of sax-3(lf) animals. MI is calculated as (b\u2013a)/a \u00d7\u00a0100%. As illustrated in the (a), \u2018a\u2019 represents the distance between the tip of nose and the center of the pharyngeal terminal bulb. \u2018b\u2019 shows the distance between the tip of nose and the center of the AMsh cell bodies. (c) The function of sax-3 does not rely on slt-1. White and gray bars show the percentage of animals with defects in one AMsh or both AMsh glia respectively. \u2018no vab\u2019: animals with normal head morphology. (d) Expression of a secreted SAX-3 extracellular fragment in neurons rescue AMsh defects in sax-3(lf) animals. Data shows the percentage of animals with AMsh migration defects. Punc-33(Pneuron), Pf53f4.13(PAMsh), and Pf16f9.3(PAMsh(2)) are used as pan-neuronal and AMsh-specific promoters to express genes in neurons or AMsh glia. In (b), data are represented as mean\u00a0\u00b1\u00a0SEM. One-way ANOVA test. **, p<0.01; Each point represents at least 30 worms. In (c) and (d), data are represented as mean\u00a0\u00b1\u00a0SEM. Two-way ANOVA test. **, p<0.01; ns, no significant difference. Each point represents three experiments of at least 50 worms each.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57921/elife-57921-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Diagram shows the mutations in four different sax-3 alleles examined in this study. (b) Data showing the distance between the nose tip and the center of AMsh cell bodies at different developmental stages of individual animals. Five animals were quantified for each genotype, and each animal is represented by a single line. (c) Gel pictures (top) and quantification of RT-PCR results show that both yad10 and yad147 mutations decrease the expression of sax-3 mRNA. act-1/actin was used as a control. Student\u2019s t-test, *p<0.05. (d\u2013e) AMsh migration defects in sax-3 mutants did not originate from a displaced nerve ring. Confocal images (d) and quantification data (e), % of animals with AMsh glia locating at the anterior of the nerve ring, show\u00a0that AMsh glia are at the anterior of the displaced nerve ring. (g) Confocal images show that\u00a0both PAMsh (Pf53f4.13) and PAMsh(2) (Pf16f9.3) are expressed in the AMsh glia at the 1.5-fold stage. H2B::GFP was expressed under these promoters. (f) Quantification shows the\u00a0percentage of animals with \u2018vab head\u2019 defects. Punc-33 promoter is used as the pan-neuronal promoter. (h) Diagrams show all constructs used in this study. In (e) and (f), data are represented as mean\u00a0\u00b1\u00a0SEM. Two-way ANOVA test. **, p<0.01; ns, no significant difference. Each point represents three experiments of at least 50 worms. Scale bar, 10 \u00b5m.\n\nNext, we examined the function of the canonical Robo ligand, Slit, in AMsh migration and found that loss-of-function of slt-1(ok255, null allele), the only Slit in C. elegans, did not cause any defects, suggesting that Robo functions in a Slit-independent manner to regulate AMsh migration (Figure 1c). As sax-3 is involved in the\u00a0regulation of nerve ring position (Zallen et al., 1998; Sasakura et al., 2005), it could be argued that the AMsh migration defect could originate from the anteriorly\u00a0positioned nerve ring in sax-3(lf) mutants. To exclude this possibility, we examined the relative position of AMsh glial cells and the nerve ring. Results show that AMsh cell bodies reside posterior to the nerve ring in control animals but are misplaced anterior to the nerve ring in sax-3(lf) animals (Figure 1\u2014figure supplement 1d and e), suggesting that the AMsh migration defect is not a side phenotype coming from a displaced nerve ring. As about 40% of sax-3(lf) animals display defects in head morphogenesis, called \u2018vab head\u2019 (Ghenea et al., 2005), it is also possible that AMsh defects could be a result of abnormal head morphology. To rule out this possibility, we examined sax-3(lf) animals without \u2018vab head\u2019 phenotypes and found that they displayed the same degree of AMsh defects as in all sax-3(lf) animals, supporting the conclusion that the AMsh migration defects in sax-3(lf) animals are independent of the \u2018vab head\u2019 phenotypes (Figure 1c).\n\n### The extracellular cleavage fragment of SAX-3/Robo functions as an attractive cue for glial migration\n\nTo understand how sax-3 regulates AMsh migration, we carried out tissue-specific rescue experiments. Unexpectedly, as a well-studied receptor, sax-3 does not function cell-autonomously in AMsh migration, and instead expression of sax-3 cDNA in neurons fully rescues sax-3(lf) AMsh phenotypes (Figure 1d, Figure 1\u2014figure supplement 1g). It is even more striking that expression of truncated forms of SAX-3 lacking the intracellular domains (\u0394C) or both intracellular and transmembrane domains (\u0394[C+TM]) fully rescues sax-3 AMsh defects (Figure 1d, Figure 1\u2014figure supplement 1h), while these transgenes did not affect the sax-3(lf) \u2018vab head\u2019 phenotypes (Figure 1\u2014figure supplement 1f and h). A possible explanation for these observations is that a secreted extracellular fragment of SAX-3 may function as an attractive cue released by neurons to guide AMsh migration. To reach this possibility, either sax-3 should\u00a0have an alternative splicing form that only contains its extracellular region or SAX-3 protein should be cleaved in the extracellular region. The C. elegans genome has been well annotated and studied (Gupta and Sternberg, 2003), and sax-3 does not have any known splicing forms containing only the extracellular region. Interestingly, Drosophila and human Robo have been shown to be cleaved at the FN3 repeats of the extracellular region (Coleman et al., 2010; Seki et al., 2010). As FN3 repeats are highly conserved between C. elegans SAX-3 and Drosophila Robo, we decided to test whether SAX-3 could also be cleaved in the extracellular region. We first generated transgenes expressing SAX-3::HA in the nervous system and collected animals at different developmental stages. As shown in Figure 2a and Figure 2\u2014figure supplement 1a, we were able to detect a cleavage fragment around 70 kDa in different transgene lines and using different anti-HA antibodies. As the HA tag is fused to the C-terminus of SAX-3, based on the molecular weight (about 70 kDa) the cleavage site is likely to be in the FN3 repeats, which is consistent with what was found in Drosophila Robo (Coleman et al., 2010). More importantly, the extracellular cleavage happens from the embryonic 1.5-fold stage to early larval stages, when AMsh glia migrate from their birthplace to the nerve ring region (Figure 2a and Figure 2\u2014figure supplement 1a). As the function of sax-3 in AMsh migration is independent of Slit, we asked whether the cleavage of SAX-3 relied on Slit and found that the cleavage of SAX-3 was not regulated by Slit (Figure 2b and Figure 2\u2014figure supplement 1b). To further confirm that the cleavage site is in the FN3 repeats, we generated transgenes expressing a mini SAX-3 extracellular region that only contains the FN3 repeats, transmembrane domain, and a GFP inserted between the signal peptide and the first FN3 repeat (GFP-FN3-TM) and examined the cleavage products of this fragment. We found that FN3 repeats were sufficient for the cleavage (Figure 2c), and based on the molecular weights of free GFP (27 kDa), GFP-FN3-TM (~80 kDa), and the cleavage product (~45 kDa) we concluded that the cleavage site was in the second repeat of FN3. We then generated transgenes expressing the GFP-FN3-TM fragment lacking one of the three FN3 repeats. As deletion of the first FN3 repeat (FN3-a) caused failure of expression, we were only able to examine the effect of removing the second (FN3-b) or the third FN3 (FN3-c) repeat. We found that the cleavage was abolished if the second FN3 repeat was absent, while deletion of the third FN3 repeat did not affect the cleavage (Figure 2d). Consistent with its important role in SAX-3 cleavage, extracellular cleavage was undetectable in transgenes expressing a truncated form of SAX-3 without the second FN3 repeat (Figure 2e). These data support the conclusion that the cleavage site of SAX-3 is in the second repeat of FN3. To test whether the extracellular cleavage of SAX-3 is essential for its function in AMsh migration, we examined the rescue ability of the truncated form of SAX-3 that lacks the second FN3 repeat and found that this mutant form of SAX-3 completely lost rescue ability (Figure 2f, Figure 2\u2014figure supplement 1c). The extracellular cleavage of SAX-3 appears to show certain specificity for AMsh migration, as the same transgene (SAX-3 \u0394FN3-b) fully rescued sax-3(lf) \u2018vab head\u2019 phenotypes (Figure 1\u2014figure supplement 1f, Figure 2\u2014figure supplement 1c). To further confirm the role of extracellular SAX-3 cleavage in AMsh migration, we generated a sax-3(yad175) deletion allele that lacks the second repeat of FN3 (FN3-b). sax-3(yad175) decreases sax-3 mRNA to about 50% of that in control animals (Figure 2\u2014figure supplement 1d) and appears to be a weak loss-of-function allele of sax-3, as both sax-3(ky123, presumptive null allele) and sax-3(yad10) show higher penetrance of vab head and AVM guidance defects (Zallen et al., 1999; Figure 1\u2014figure supplement 1f and Figure 2\u2014figure supplement 1e). Despite being a weak allele, sax-3(yad175) exhibits stronger AMsh migration defects when compared with any other sax-3 alleles examined, supporting the critical role of SAX-3 extracellular cleavage in AMsh migration (Figure 2f). To illustrate the function of the extracellular cleavage fragment, we expressed a secreted SAX-3 extracellular fragment containing Ig 1\u20135 domains and the first FN3 repeat (FN3-a) under pan-neuronal (Punc-33 and Prgef-1) or amphid neuron-specific (Parl-13) promoters, which mimics the cleavage product, and found that this fragment was able to fully rescue sax-3(lf) AMsh defects (Figure 2f, Figure 2\u2014figure supplement 1f). Further experiments show that both Ig domains and the first FN3 repeat (FN3-a) may be important for the function of the SAX-3 extracellular cleavage fragment in AMsh migration (Figure 2f).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57921/elife-57921-fig2-v1.jpg)\n\n**Figure 2.:** (a) SAX-3 is cleaved in the extracellular region during development. A schematic diagram at the top panel shows that the HA tag was fused at the C-terminal of SAX-3, and the leftover of the extracellular cleavage detected by the HA antibody is about 70 kDa. Results from western\u00a0blot show a cleavage fragment of SAX-3 in later embryonic and early larval stages. F: full length SAX-3::HA; C: the C-terminal fragment generated by SAX-3 extracellular cleavage. (b) Loss-of-function of slt-1/Slit does not affect the cleavage of SAX-3. F: full length SAX-3::HA; C: SAX-3 cleavage fragment. (c) The FN3 repeats mediate SAX-3 cleavage. FN3: FN3 repeats; TM: transmembrane domain; F: full length; C: cleavage fragment; G: free GFP. (d) FN3-b (the second repeat of FN3 repeats) is required for the cleavage. F: full length; C: cleavage fragment. (e) Deletion of FN3-b prevents SAX-3 cleavage. Images show results from two independent transgenic lines with FN3-b deletion (\u0394FN3-b). Although having slightly different expression patterns, they both lose the extracellular cleavage fragment of SAX-3. (f) Expression of a fragment mimicking the SAX-3 extracellular fragment fully rescues AMsh defects in sax-3(lf) animals. Data are represented as mean\u00a0\u00b1\u00a0SEM. Two-way ANOVA test. **, p<0.01; ns, no significant difference. Each point represents three experiments of at least 50 worms each.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57921/elife-57921-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Images show the results from a second anti-HA antibody to confirm that SAX-3 has a developmental-stage-dependent cleavage (a), and this cleavage does not depend on slt-1 (b). (c) Deletion of the second FN3 repeats (FN3-b) did not decrease the expression or change the expression pattern of SAX-3 in transgenes. (d) Gel pictures (top) and quantification of RT-PCR results show that yad175 mutation decreases the expression of sax-3 mRNA. act-1/actin was used as a control. Student\u2019s t-test, *p<0.05. (e) Quantification shows percentage of animals with AVM guidance defects. AVM was visualized using zdIs5 (Pmec-4::GFP) marker, and AVM guidance defects were defined as any abnormality in AVM axon growth direction. (f) Quantification data show that expression of a fragment (Ig(1-5)-FN3-a) mimicking the SAX-3 extracellular cleavage product by pan-neuronal (Punc-33, Prgef-1) or amphid neuron-specific (Parl-13) promoters can fully rescue AMsh migration defects in sax-3(lf) animals. Data are represented as mean\u00a0\u00b1\u00a0SEM. Two-way ANOVA test. **, p<0.01; ns, no significant difference. Each point represents three experiments of at least 50 worms. Scale bar, 10 \u00b5m.\n\n### SYG-1/Neph is the receptor for the SAX-3/Robo extracellular cleavage fragment during glial migration\n\nWith the discovery of the function of the SAX-3 extracellular cleavage fragment in AMsh glial migration, we hypothesized that the cleavage fragment is released from neurons, where sax-3 is expressed (Zallen et al., 1998), and functions as an attractive cue for glial migration. If that is the case, there should be a receptor in AMsh glia to interact with the SAX-3 cleavage fragment and mediate AMsh migration. To identify the potential receptor for the SAX-3 cleavage fragment, we generated a transgene expressing a functional FLAG::SAX-3 fusion protein, in which a FLAG tag was inserted between the signal peptide and the first Ig domain. We first confirmed that we could detect the developmental-stage-dependent SAX-3 cleavage in this transgene (Figure 3a). Then we carried out immunoprecipitation (IP) using anti-FLAG-coated beads on protein lysate collected from 44 cell and threefold stage embryos and submitted them for proteomics (Figure 3\u2014figure supplement 1a). As the SAX-3 cleavage happens only in threefold but not\u00a0in 44-cell stage embryos, we focused on membrane proteins that specifically interacted with SAX-3 in threefold stage embryos. Furthermore, Ig superfamily proteins have been shown to be able to interact with each other in many biological processes (Cameron and McAllister, 2018; Wai Wong et al., 2012), so we also focused our analysis on Ig superfamily proteins. syg-1, a nephrin family adhesion molecule (Shen and Bargmann, 2003), caught our attention (Figure 3\u2014figure supplement 1b, Supplementary file 2) because it contains multiple Ig domains in its extracellular regions (Zallen et al., 1998; Shen and Bargmann, 2003). To confirm the interaction between SYG-1 and SAX-3, we first generated a transgene expressing SYG-1::HA in glia and FLAG::SAX-3 in neurons and then examined the interaction between SYG-1::HA and FLAG::SAX-3 by IP using anti-HA-coated beads. As shown in Figure 3b, the extracellular cleavage fragment but not the full-length SAX-3 can bind with SYG-1::HA, suggesting that SYG-1 can directly or indirectly bind with the SAX-3 extracellular cleavage fragment. With these findings, we further examined the function of syg-1 in AMsh migration and found that syg-1 was expressed in AMsh glia during migration and loss-of-function of syg-1(ok3640, null allele) caused similar AMsh migration defects as those in sax-3(lf) mutants (Figure 3c\u2013e, Figure 3\u2014figure supplement 2a). Furthermore, double mutants of syg-1;sax-3 displayed the same extent of defects as in sax-3 single mutants (Figure 3d and e), supporting the conclusion that syg-1 and sax-3 function in the same genetic pathway to regulate AMsh migration. As syg-1 has been shown to function together with syg-2, another Ig super family protein, in synapse formation and axon branching (Shen et al., 2004; Chia et al., 2014), we examined the function of syg-2 in AMsh migration and did not observe any abnormalities in syg-2(lf) mutants (Figure 3e). Consistent with its potential role as a receptor for the SAX-3 cleavage fragment, syg-1 cell autonomously regulates AMsh migration (Figure 3e, Figure 3\u2014figure supplement 2b). Further genetic analysis also showed that the conserved WIRS (WAVE Regulatory receptor sequence) in the SYG-1 C-terminal\u00a0(Chia et al., 2014) is essential for its function in AMsh migration (Figure 3e), and interruption of WAVE complex function by mutating gex-3, one of the key components of the WAVE complex (Chia et al., 2014), cell autonomously caused similar AMsh migration defects as observed in sax-3(lf) and syg-1(lf) mutants (Figure 3f,g). Finally, to further test the ligand/receptor function of the SAX-3 cleavage fragment and SYG-1, we tested whether AMsh glia can further migrate along the body in transgenic animals that express the cleavage product of SAX-3 in the tail neurons (Pitr-1b) or tail hypodermis (Plin-44) of sax-3(lf) animals (Ou et al., 2010). We found that in these transgenes the migration distance of AMsh was almost three times that of control animals, and loss-of-function in syg-1 completely blocked the over-migration phenotypes in these transgenes (Figure 3h and i). With this evidence we believe that the neuron-released SAX-3 extracellular cleavage fragment functions as an attractive cue, and SYG-1 functions as its receptor to mediate AMsh migration (Figure 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57921/elife-57921-fig3-v1.jpg)\n\n**Figure 3.:** (a) Image from western\u00a0blot show the SAX-3 extracellular fragment by N-terminal tagging FLAG transgenes. Stars (*) label bands that are nonspecifically recognized by the anti-FLAG antibody. A schematic diagram at the top panel shows that the FLAG tag was fused at the N-terminal of SAX-3, and the extracellular cleavage fragment detected by the FLAG antibody is about 55 kDa. (b) SYG-1 specifically binds with the SAX-3 extracellular cleavage fragment. SYG-1::HA expression is driven by the pan-glial promoter Pmir-228, and FLAG::SAX-3 is expressed under the pan-neuronal promoter Punc-33. Stars (*) label bands that are nonspecifically recognized by the anti-FLAG antibody. (c) Confocal images of AMsh glia in control and syg-1(ok3640) animals. TB: pharyngeal terminal bulb. Stars (*) label AMsh cell bodies. Scale bar, 10 \u00b5m. (d) Quantification of Migration Index (MI) in control, syg-1, sax-3, and syg-1;sax-3 double mutants show that double mutants of syg-1;sax-3 display similar defects as in sax-3 single mutants. (e) syg-1 cell autonomously regulates AMsh glial migration, and the WAVE regulatory receptor sequence is required for syg-1 function. (f\u00a0and\u00a0g) gex-3 cell autonomously regulates AMsh glial migration. Quantification of Migration Index (f) and the percentage of animals with AMsh defects (g) show that gex-3 is required for AMsh migration. (h\u00a0and\u00a0i) Confocal images (h) and quantification (i) show that ectopic expression of a fragment mimicking the SAX-3 cleavage fragment in the tail neurons (Pitr-1) or hypodermis (Plin-44) causes syg-1-dependent over-migration of AMsh glia. Red arrowheads point to the center of the pharyngeal terminal bulb. Green arrowheads indicate AMsh cell body position. Scale bar, 10 \u00b5m. In d, f, and i, data are represented as mean\u00a0\u00b1\u00a0SEM. One-way ANOVA test. **, p<0.01; Each point represents at least 30 worms. In (e and g), data are represented as mean\u00a0\u00b1\u00a0SEM. Two-way ANOVA test. **, p<0.01; ns, no significant difference. Each point represents three experiments of at least 50 worms each.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57921/elife-57921-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) A image from silver staining shows the full length (black stars) and cleaved fragment (red stars) of SAX-3. These samples were then submitted for proteomics. (b) A screenshot of the Scaffold software that shows\u00a0that SYG-1 was identified with specific interactions with SYG-1 in threefold but not\u00a0in 44-cell stage embryos. The green color of the asparagine(N) means that\u00a0this amino acid was deamidated to either aspartic acid or isoaspartic acid.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57921/elife-57921-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Confocal images show that a 2.5 kb syg-1 promoter can drive GFP expression in AMsh (labeled by Pf53f4.13::H2B::mCherry) in embryos (left) and larva (right). Scale bar, 10 \u00b5m. (b) Expression of syg-1 in AMsh glia driven by PAMsh(2) (Pf16f9.3) can rescue syg-1(lf) phenotypes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57921/elife-57921-fig4-v1.jpg)\n\n## Discussion\n\nStudies in different organisms show that Robo functions as the receptor for the repulsive guidance cue Slit (Dickson and Gilestro, 2006), and loss-of-function in Robo causes many phenotypes that are shared by Slit mutants (Dickson and Gilestro, 2006). However, genetic studies also showed that some Robo-mutant phenotypes are not related to Slit (Zallen et al., 1998; Hao et al., 2001; Fricke et al., 2001; Hivert et al., 2002; Liu et al., 2004). In C. elegans, there is only one Robo, sax-3, and one Slit, slt-1. sax-3(lf) animals display many phenotypes that are not observed in slt-1 mutants, including embryonic lethality, abnormal head morphology (vab head), and misplacement of neurons (Zallen et al., 1998; Hao et al., 2001). Based on these observations, it has been long speculated that there are Slit-independent Robo regulatory mechanisms. Here we present evidence to show that neuron-expressed Robo/SAX-3 can be cleaved in the extracellular FN3 repeats during development, and the cleaved extracellular fragment can interact with glial-expressed SYG-1/Neph to mediate F-actin organization and to facilitate glial migration.\n\nThe extracellular region of Robo is evolutionarily conserved from nematodes to mammals and contains five Ig and three FN3 domains. The extracellular cleavages of Robo appear to be conserved in C. elegans (this study), Drosophila, and human (Coleman et al., 2010; Seki et al., 2010), though different metalloproteases were utilized in Drosophila and human. Recent biochemical and structural studies show that the extracellular domains of Robo can dimerize through the Ig domains, and the dimerization may be inhibited by the FN3 domain in the absence of Slit (Hivert et al., 2002; Liu et al., 2004; Zakrys et al., 2014; Aleksandrova et al., 2018; Barak et al., 2019; Yamamoto et al., 2019; Pak et al., 2020). The cleavages of the extracellular domains provide possibility for additional regulatory mechanisms of Robo. Since the extracellular SAX-3/Robo cleavage fragment lacks the inhibitory second FN3 domain, it will be expected to strongly bind with itself or with the full length SAX-3/Robo, and these interactions may play a regulatory role in the activation of Robo downstream signals. In this study we show that the SAX-3/Robo extracellular cleavage fragment can bind with the Ig domain-containing adhesion molecule SYG-1/Neph to regulate the WAVE complex. Since sax-3/Robo and syg-1/ Neph are both expressed in and functionally important for neurons and other cells, it\u00a0is possible that interactions between the SAX-3 cleaved extracellular fragment and syg-1/Neph also play functions beyond glial migration. The potential dimerization of SAX-3/Robo extracellular cleavage fragments may also mediate crosstalk between syg-1/Neph and sax-3/Robo signals. The extracellular cleavage of SAX-3/Robo generated two fragments: one has all the Ig and the first FN3 domains while the other contains the rest of the FN3, transmembrane, and the intracellular domains. While the released SAX-3/Robo extracellular cleavage fragment functions as a ligand for SYG-1/Neph and has potential to interact with the full length SAX-3/Robo, the membrane-anchored fragment may also play an active role in neuronal development.\n\nTo achieve their vital roles in the nervous system and to form functional units with neurons, glia need to migrate over what are often long distances from their birthplace to the appropriate regions (Gilmour et al., 2002; Jarjour and Kennedy, 2004; Kinrade et al., 2001; Kl\u00e4mbt, 2009; Barres, 2008; Fields et al., 2015; Mori et al., 2005). The migration of glia relies on guidance cues and shares many similar mechanisms with neurons (Kinrade et al., 2001; Jarjour et al., 2003; Sasse and Kl\u00e4mbt, 2016; Spassky et al., 2002; Unni et al., 2012). Our studies uncover a surprising role of Robo receptors \u2013 an attractive cue for glial migration\u00a0\u2013 and identify SYG-1/Neph as the glial receptor for the neuronal-released Robo cleavage fragment, suggesting that the function and regulation of guidance molecules are more complicated than anticipated.\n\n## Materials and methods\n\nFurther information and requests for resources should be directed to and will be fulfilled by the Lead Contact, Dong Yan (dong.yan@duke.edu).\n\n### Experimental model and subject details\n\n#### C. elegans genetics\n\nC. elegans strains were maintained on nematode growth media (NGM) plates using Escherichia coli OP50 as a food source. Animals were grown according to standard methods (Brenner, 1974) at 20\u00b0C unless otherwise stated. Wild-type worms were of the Bristol N2 strain. Only hermaphrodite animals were used for experiments. All transgenes and strains are described in Supplementary file 1. yadIs48 (Pf53f4.13::GFP) was used to visualize AMsh cells. The null alleles used in genetic analyses were sax-3(yad10), slit-1 (ok255), syg-1(ok3640), syg-2(ky671), and gex-3(zu196) unless specific alleles were mentioned. gex-3(zu196) homozygous animals are sterile, and we analyzed the AMsh phenotypes in first generation homozygotes of gex-3(zu196), which may not represent null allele phenotypes due to maternal effects. All other data were acquired in animals that have been homozygous for genotypes of interest for at least three generations. The recessive sax-3 alleles yad10 and yad147 were isolated from a visualized EMS mutagenesis screen of over 4000 haploid genomes and were two of five mutants with reduced migration defects. Genetic studies show that\u00a0those five mutants belong to three complementation groups, and yad10 and yad147 are in one complementation group. Based on their X-linkage and the vab head phenotypes, we tested whether they were alleles of sax-3 and found that\u00a0they both failed to complement sax-3(ky123) null alleles. yad10 and yad147 mutations were finally confirmed through sequencing and rescue experiments. The \u2018vab\u2019 head phenotype in sax-3 mutants was defined as any abnormality of head morphology.\n\n### Method details\n\n#### Cloning and constructs\n\nAll DNA expression constructs were generated using Gateway cloning technology (Invitrogen, Carlsbad, CA) and subsequently sequenced. sax-3, syg-1, and gex-3 cDNA were amplified from C. elegans yk cDNA clones gifted from Dr. Yuji Kohara\u2019s lab. Pf53f4.13 (PAMsh), Pf16f9.3 (PAMsh 2), Punc-33 (Pneuron), and Prgef-1(Pneuron) promoters were used to express genes of interest in AMsh and all neurons. Parl-13 was used to drive gene expression in amphid neurons. In embryos and other stages, f53f4.13 and f16f9.3 are exclusively expressed in AMsh glia, arl-13 is exclusively expressed in amphid neurons, and unc-33 and rgef-1 are broadly expressed in neurons (Packer et al., 2019). A complete list of DNA constructs used is included in Supplementary file 1. In general, plasmids used in this study were injected at a concentration of 1\u201350 ng/\u00b5L with a Pttx-3::RFP co-injection marker injected at a concentration of 50 ng/\u00b5L.\n\n#### Microscopy\n\nRepresentative images were acquired with a Zeiss LSM700 confocal microscope using a Plan-Apochromat 40\u00d7/1.4 objective. Worms were immobilized using 1.5% 1-phenoxy-2-propanol (TCI America, Portland, OR) in M9 buffer and mounted on 5% agar slides. 3D reconstructions were done using Zeiss Zen software. A Zeiss Axio Imager two microscope equipped with Chroma HQ filters was used to score AMsh migration defects and take images to measure Migration Index. Experiments were conducted in triplicates consisting of at least 50 day one adult animals\u00a0each.\n\n#### Protein analysis\n\nAll protein analyses were carried out using transgenes made in this study (see details in Supplementary file 1). Synchronous animals were grown on NGM plates to reach adult stages, and animals were bleached to collect embryos. The freshly isolated embryos were mostly between the 16-cell and 44-cell stages. Embryos were incubated in M9 buffer and collected at different embryonic stages or at the L1 stage. L1 animals were then cultured in NGM plates with O.P. 50 as a food source until they reached the L4 stage, where they were subsequently collected for protein analysis. For western blotting, protein was directly extracted in SDS sample buffer containing 1 mM DTT by freeze-thawing for 20\u201350 cycles between dry ice/ethanol and a 37\u00b0C water bath, and then denatured by heating to 95\u00b0C for 5 min. Blots were probed with anti-HA (Sigma, H9658; abcam, ab9110), anti-GFP (Sigma, G1544), and anti-FLAG (Sigma, F3165) antibodies and visualized with Amersham HRP-conjugated anti-rabbit or anti-mouse secondary antibodies at a 1:5000 dilution (GE Healthcare Life Sciences) using the SuperSignal West Femto kit (Pierce, Rockford, IL). For IP experiments, embryos were collected at the 44-cell and 1.5-\u00a0to\u00a03-fold stages and subsequently lysed with IP lysis buffer (25 mM Tris-HCl pH 7.4, 150 mM NaCl, 1% NP-40, 1 mM EDTA, 5% glycerol) containing protease inhibitor cocktail (Thermo Fisher, 87785, added before use) and sonicated by an ultrasonic cell crusher. Lysates were centrifuged for 10 min at 12,000 rpm at 4\u00b0C and supernatant was used for Co-IP using the anti-Protein A/G magnetic beads (Thermo Fisher, 78608) or anti-HA Magnetic beads (Thermo Fisher, 88836) separately according the manufacturer\u2019s protocol. Briefly, beads were equilibrated before use and added to the supernatant and mixed gently. The mixture was incubated on a rotator at 4\u00b0C overnight. Beads were collected with a magnetic stand and washed twice with phosphate buffered saline. Supernatant was discarded and proteins were eluted from the beads using SDS-sample buffer at 95\u00b0C for 10 min.\n\n### Collection\u00a0of\u00a0supernatant for western\u00a0blot\n\n#### RT-PCR\n\nTo measure sax-3 mRNA levels in N2, yad10, and yad147 animals, total RNA were isolated from mixed-stage animals. Briefly, worms were collected in the tube and washed with M9 buffer on an end-over-end rotator three times for 90 min in total. RNA was then isolated by using TRI Reagent (Invitrogen). Total RNA (1 \u03bcg) of each genotype was reverse transcribed using an iScript Reverse Transcription Supermix (Bio-Rad Laboratories). Relative sax-3 mRNA levels were determined by PCR with 1 \u03bcL cDNAs as templates, and act-1/actin was used as internal control. Primers for sax-3, Forward: 5\u02b9 CTGTTTGATTGTCGTGTGACTGG-3\u02b9; Reverse: 5\u02b9-AAAGCTGCCTTGCTCAACG-3\u02b9. Primers for act-1, Forward: 5\u02b9-TTGCCGCTCTTGTTGTAGAC-3\u02b9; Reverse: 5\u02b9-TTCGTAGATTGGGACGGTG-3\u02b9. The PCR products were run in the agarose gel, and the density was calculated using Image J software.\n\n#### CRISPR-Cas9-based homology recombination approach\n\nThe sax-3 FN3-b deletion allele, yad175, was constructed by using CRISPR-Cas9-based homology recombination. Briefly, two arms containing about 1000 bp on both sides of FN3-b of sax-3 were amplified from genomic DNA of wild-type animals, and the fusion fragment of the two arms was then cloned into the PCR8 vector. Two sgRNAs of sax-3 FN3-b deletion were cloned into pDD122 plasmid (Addgene, #47550). Finally, the recombination template and the two sgRNAs were injected into young adult of yadIs48 worms simultaneously. yad175 were isolated from the F2 generation, and the deletion was confirmed by sequencing. sax-3 sgRNA1: GGATGGAGAGTCAACATG; sequence of sax-3 sgRNA2: GGATGTGCGAATCCGTAT.\n\n#### Mass spectrometric analysis\n\nTo identify the potential proteins binding with SAX-3, embryos from FLAG::SAX-3::GFP expressing worms were collected at the 44-cell and 1.5-\u00a0to\u00a03-fold stages. In the same experiment, 1.5-\u00a0to\u00a03-fold stage embryos of FLAG::INX-3::GFP transgenes were also collected as a control to further preclude unspecific proteins. Next, embryos were subsequently lysed with IP lysis buffer (25 mM Tris-HCl pH 7.4, 150 mM NaCl, 1% NP-40, 1 mM EDTA, 5% glycerol) containing protease inhibitor cocktail (Thermo Fisher, 87785, added before use) and sonicated by an ultrasonic cell crusher. Lysates were centrifuged for 10 min at 12,000 rpm at 4\u00b0C and supernatant was used for Co-IP to pull down all the proteins that bind to SAX-3 by using the anti-FLAG magnetic agarose beads (Thermo Fisher, A36798) according\u00a0to the manufacturer\u2019s protocol.\n\nIP products were sent to the Duke Center for Genomic and Computational Biology for mass spectrum analysis. Briefly, these in-solution samples were brought to 4% SDS and then subjected to S-trap (Protifi) trypsin digestion and sample cleanup using manufacturer recommended protocols. Digested peptides were lyophilized to dryness and resuspended in 15 \u00b5L of 0.2% formic acid/2% acetonitrile. Each sample was subjected to chromatographic separation on a Waters NanoAquity UPLC equipped with a 1.7 \u00b5m HSS T3 C18 75 \u00b5m I.D.\u00a0\u00d7 250 mm reversed-phase column (NanoFlow data). The mobile phase consisted of (A) 0.1% formic acid in water and (B) 0.1% formic acid in acetonitrile. Of\u00a0this,\u00a03 \u00b5L was injected and peptides were trapped for 3 min on a 5 \u00b5m Symmetry C18 180 \u00b5m I.D.\u00a0\u00d7 20 mm column at 5 \u00b5L/min in 99.9% A. The analytical column was then switched in-line and a linear elution gradient of 5% B to 40% B was performed over 30 min at 400 nL/min for in-gel band analysis and over 90 min at 400 nL/min for Co-IP studies. The analytical column was connected to a Fusion Lumos mass spectrometer (Thermo) through an electrospray interface operating in a data-dependent mode of acquisition. The instrument was set to acquire a precursor MS scan from m/z 375\u20131500 at R\u00a0=\u00a0120,000 (target AGC 2e5, max IT 50 ms) with MS/MS spectra acquired in the ion trap (target AGC 5e3, max IT 100 ms). For all experiments, HCD energy settings were 30 v and a 20 s dynamic exclusion was employed for previously fragmented precursor ions.\n\nRaw LC-MS/MS data files were processed in Proteome Discoverer (Thermo Scientific) and then submitted to independent Mascot searches (Matrix Science) against a C. elegans protein database containing both forward (4043 entries) and reverse entries of each protein. Search tolerances were five ppm for precursor ions and 0.8 Da for product ions using trypsin specificity with up to two missed cleavages. Carbamidomethylation (+57.0214 Da on C) was set as a fixed modification, whereas oxidation (+15.9949 Da on M) and deamidation (+0.98 Da on QN) were considered dynamic mass modifications. All searched spectra were imported into Scaffold (v4.4, Proteome Software) and scoring thresholds were set to achieve a peptide false discovery rate of 1% using the PeptideProphet algorithm.\n\n### Quantification and statistical analyses\n\n#### Statistical analysis\n\nData were analyzed using Student\u2019s t-test and one-way or two-way ANOVA followed by Tukey\u2019s post-hoc test in Graphpad Prism (Graphpad Software, La Jolla, CA). Statistical details are included in the figure legends. In general, a p-value cutoff of 0.05 was considered statistically significant. The data are represented by mean\u00a0\u00b1\u00a0SEM. For phenotype penetrance experiments, three biological replicates of at least 50 animals each were used unless otherwise stated.\n",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "9b24f011-f65e-4b8e-bd37-5074b9322d0e",
+      "submission_id": "be4c8c78-4c1b-4ac3-815b-c2f990132b69",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kang Shen, Howard Hughes Medical Institute, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57921.sa1](https://doi.org/10.7554/eLife.57921.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour manuscript identified a new function of the SAX-3/ROBO guidance receptor in regulating glial cell migration. The finding that the ROBO ectodomain is secreted and interacts with a Ig adhesion receptor to guide glial cell migration broadens our understanding of receptor-ligand interactions in developmental neurobiology.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Robo functions as an attractive cue for glial migration through SYG-1/Neph\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Kang Shen as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jonathan Cooper as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nAll three reviewers found that this work is interesting for several reasons. For example, one reviewers wrote \"Dong and colleagues described a slit independent function of the well-known axon guidance receptor ROBO/SAX-3 in the migration of glial cells in C. elegans. They found that both ROBO and an IgSF protein SYG-1 were required for the glial cell migration. Through structure-function analyses, they found the extracellular domain of ROBO was sufficient to rescue the phenotype when overexpressed and they proposed that the extracellular domain of ROBO functions as a secreted ligand to attract SYG-1 expressing glial cell migration. The novelty of this manuscript lies in two folds. First, the development of glial cells are poorly understood. Second that this is the first paper to assign a secreted function of ROBO through interaction with SYG-1. The majority of the genetic data supports each other and is consistent with the model they proposed.\"\n\nEssential revisions:\n\nHowever, all three reviewers found that there are important experiments that need to be performed in order to fully support the model. They mostly fall into three areas. First, the use of mis-expression constructs using exogenous promoters is potentially risky in drawing conclusions about cellular locus of SAX-3 in this case. Second, inclusion of cleaner genetic experiments such as a knockin will strengthen the model. Three, there are several concerns about the masspec and biochemistry data presented. The detailed comments are as following:\n\n1) Cell autonomy\n\nMisexpression of SAX-3 and SYG-1 high-copy transgenes under control of Punc-33 for neurons and Pf53f4.13 for the amphid sheath cell is used to infer cell autonomy. There are three issues with this \u2013 first, these promoters are not specific, in particular Punc-33 is expressed prominently in the amphid socket which could also affect amphid sheath migration (Altun-Gultekin et al. Development 2001). Pitr-1 used for the over-migration experiment is also expressed in the amphid socket. Second, promoters can be expressed differently in embryos than larvae, so images of the expression pattern of Pf53f4.13 in 1.5 fold embryos in particular should be provided. Third, it is risky to base such a major claim on misexpression experiments especially since promoters can be expressed transiently in unexpected places, so these experiments should really include mosaic analysis as well. Alternatively, the authors can use additional sets of promoters to strengthen the arguments. For example, an amphid neuron promoter might be able to tested, as well as neurons that do not associate with the glial cells but still has a process in the nerve ring such as PVQ or AVA. There are promoters available for those experiments.\n\nFigure 3H and I and crucial for the model. These are quite compelling results but I am not entirely sure about the interpretation of these results. The DA9 expression of itr-1 promoter does not turn on consistently until L3-L4. Do the sheath cells continue to grow in the sax-3 single mutants expressing the transgene? To mimic more endogenous situation, the authors should use the lin-44 promoter which expresses embryonically.\n\n2) Overexpression issues.\n\nAll rescue experiments are based on overexpression. At least one knockin should be done to show that the FN3(2) is required. For example, if FN3(2) is deleted using crispr, they can try to test if the it is required for slit function and for this new function of sax-3.\n\n3) Binding to SYG-1\n\nThe syg-1 phenotype is convincing but the SAX-3 binding data is less convincing. First, the list of hits from the mass spec screen is not shown. How many other hits were there, what were they, and how did the representation of syg-1 compare? Second, there are no specificity controls (for the antibody or for the SAX-3-SYG-1 binding itself) in the IP experiments. This is especially important because the SAX-3 fragment is running at the wrong size in this experiment compared to all other gels in the paper.\n\nRelated to this issue, A. The mass spectrometric analysis is not explained. Presumably, the authors identified hundreds of peptides, many of which might have been non-specific \u2013 a common issue with such analysis. The fact that only two peptides covering 5% of SYG-1 were identified by mass spec (buried in supplement and not mentioned in text) implies that the confidence level for this identification was likely not high. This is generally fine; the authors followed up this finding with additional experiments. But a proper report of total number of peptides identified, cutoffs, and how SYG-1 stands out from the list of peptides is warranted. I suggest authors contact their mass spec facility for details and statistical analysis.\n\nAdditionally, the supplement shows one Asn labeled green in the second peptide by the mass spec analysis software. Does that imply a chemical modification/artifact that affected the mass of the peptide? The supplement, which is essential, could be explained better. Currently, it is a screen snapshot from an unknown piece of software that is not mentioned or cited.\n\nB) The authors should report exact boundaries of their deletion constructs (\u0394C, \u0394C+TM, Ig(1-5)FN3(1), etc.) presented in Figures 1, 2 and 3, especially since they would be relevant for judging whether their manipulations (domain deletions or inclusions) could inadvertently cause misfolding of proteins, or where exactly the cleavage might be happening. It would help narrow down a binding site on the sequence for the proposed SYG-1 interaction. In addition, we'd know if they removed the long linker sequences shown to be important between some of the IG and FN domains (Barak et al., 2019; Aleksandrova et al., 2018; Pak et al., 2020), when they removed the domains. It would be of interest to see if proteolysis reported by Qu et al. matches that observed by Pak et al., 2020, between the first and second FN domains of human Robo3. On that remark, I cannot find how they draw their schematics for Figure 4 degradation product (containing two FN domains).\n\nC) Authors present glial migration phenotypes for a set of truncations and deletions of SAX-3. The data provided is self-consistent with the biochemistry they present (which is sparse but enough for an initial study of this kind). However, they do not present data that shows that these deletions (such as IG(1-5) or FN3(1) in Figure 2, which did not rescue) are successfully expressed, make it to through the secretory machinery and are presented on/secreted from neurons. One exception is the FN3(2)\u0394 constructs, where they did show protein production, but not necessarily successful display on cells. These are useful controls that actually allow them to support their conclusions. It would also be preferable to see if the expression levels of these deletions are comparable to wild-type, so that the observed phenotypes are not due to underexpression of or overproduction of SAX-3. Due to the current circumstances with the coronavirus pandemic, the authors may be given a dispensation from completing these experiments, as long as they clarify the possibility that some of these constructs might not be produced and secreted/displayed in vivo, and hence the lack of rescue.\n\nD) I do not understand the comment about FN domains being mostly structural, while IG domains are functional. If this is a general comment about IG/FN proteins such as Robo, one of the most prominent IG/FN receptors DCC/UNC-40 binds its Netrin ligand with the FN domains, not IG. If this is a comment about the FN domains of Robos not being \"functional\", that's also not appropriate: While Slits bind the Robo IG domain 1, the other known extracellular ligand of Robos, the NELL proteins, bind the first FN domain of vertebrate Robos (Pak et al., 2020 and Yamamoto et al., 2019), the same domain identified by the authors for SYG-1 binding, and NELLs don't touch the IG domains.\n\nIn fact, the authors may want to discuss the relevance of the FN domains for Robo function, which was recently resolved in a burst of publications (the Pak et al., Yamamoto, et al., Barak et al. and Aleksandrova et al. manuscripts). The cleavage described here might actually act to open Robo receptors for binding other ligands, such as NELLs (not present in C. elegans) or SYG-1.\n\nE).The authors do not show that the interaction is direct at any point in the manuscript. The pull-downs can simply be the result of a third protein mediating this interaction; this is not an uncommon occurrence. This does not make the paper less interesting, but the possibility has to be clearly mentioned across the manuscript.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Robo functions as an attractive cue for glial migration through SYG-1/Neph\" for further consideration by eLife. Your revised article has been evaluated by Jonathan Cooper (Senior Editor) and Kang Shen as a Reviewing Editor.\n\nThe manuscript has been improved and but there are some remaining issues that need to be addressed before acceptance, as outlined below: Can you address these points by providing more information and clarification in your writing when providing the revision.\n\nReviewer #2:\n\n1) Cell autonomy experiments still depend exclusively on promoters whose expression and timing in the embryo, relative to AMsh migration, have not been determined. The images of AMsh-specific promoters (Figure 1\u2014figure supplement 1G) appear to show different cells, one much more anterior than the other. Mosaic analysis was not performed.\n\n2) In the mass spectrometry experiments, it appears that SYG-1 was one of the weakest hits detected, ranking below 1000 in the overall list. Even with aggressive filtering, SYG-1 is among a few dozen hits and appears at the level of background noise, consistent with the presence of a \"DECOY\" hit with identical results. This is not the impression given in the manuscript.\n\n3) The relative position of the nerve ring and the AMsh in Figure \u2014figure supplement 1D strongly suggests that the AMsh is tracking with the displaced nerve ring, contrary to the authors' interpretation. Due to COVID, the authors could not obtain videos of glial migration.\n\n4) yad10 is expected to encode a protein similar to the Ig(1-5)FN(1-3) fragment used for rescue. One possibility was that the mRNA is not expressed but the authors now show that is not the case. The yad10 phenotype contradicts the overexpression results in which the N-terminal fragment of SAX-3 is sufficient for rescue.\n\nReviewer #3:\n\nThe authors responded to comments satisfactorily as much as I can judge. My geneticist colleagues should review the validity of the new experiments with the new promoters and the CRISPR deletion of the second FN3 domain.\n\nI am not sure the statement \"Recent biochemical and structural studies show that the extracellular domains of Robo can dimerize through the fourth Ig domain, and this dimerization is inhibited by the second FN3 domain in the absent of Slit\" is strictly true. It may be safest to define this as \"FN3 domains\", since both are involved FN3 domains are involved in a hairpin-like structure. Also, there is plenty of evidence that Robo1 is a dimer even when the FN3 domains are there, so I would say \"the dimerization may be inhibited\" to allow for multiple possibilities. Also see the typo, \"in the absent of\".\n\nAlso, the last statement appears to be false. NELLs bind the first FN3 domain, not second, so they would not be binding the membrane-anchored fragment. NELLs probably should not be mentioned here at the end of the text at all. My initial comment was that the first FN3(1) domain is not a non-functional/only structural domain as implied by the original draft. NELLs do bind the first FN3 domain, and can turn on a repulsive Robo response.\n\nI should also remind the authors that they still use inconsistent naming of the Fibronectin domains. Figure 1\u2014figure supplement 1 has FN3-a and FN1 for the same domains in panels F and H. Or there is FN1 in Figure 3I, but refers to this domain as FN3-a in Figure 2F. Minor issue, but no reason to confuse readers.\n",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ce4189d6-78b0-44d6-ad27-c4c9c0070b02",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C1",
+      "claim": "Two loss-of-function alleles of sax-3 (yad10 and yad147) were isolated in an unbiased genetic screen for glial migration.",
+      "claim_type": "EXPLICIT",
+      "source": "In an unbiased genetic screen for glial migration, we isolated two loss-of-function alleles of sax-3, the only Robo receptor in C. elegans (Zallen et al., 1998), with defects in AMsh glial migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text directly states the isolation of two alleles in a genetic screen, supported by citation to prior work identifying sax-3 as the only Robo receptor.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "9dd57fc4-ba9f-4599-9444-ba9cc9220ad3",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C2",
+      "claim": "sax-3 is the only Robo receptor in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In an unbiased genetic screen for glial migration, we isolated two loss-of-function alleles of sax-3, the only Robo receptor in C. elegans (Zallen et al., 1998), with defects in AMsh glial migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Zallen et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "d30d8bd5-5375-419a-8e41-559f1c146add",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C3",
+      "claim": "AMsh cell bodies reside at the side of and align with the center of pharyngeal terminal bulbs in day 1 (D1) young adults.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the migration of AMsh, we used the pharyngeal terminal bulb as a reference point and found that AMsh cell bodies reside at the side of and align with the center of pharyngeal terminal bulbs in day 1 (D1) young adults (Figure 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by reference to Figure 1a and b showing the positioning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f2d1268e-b9bf-4a9b-a107-1373febad279",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C4",
+      "claim": "AMsh glia fail to migrate to their final positions in both sax-3(lf) alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "AMsh glia fail to migrate to their final positions in both sax-3(lf) alleles, and yad10 animals display stronger phenotypes than yad147 animals and show a similar extent of defects as those in the null allele of sax-3 (ky123) (Zallen et al., 1998), suggesting that yad10 is likely a null allele of sax-3 (Figure 1a and b and Figure 1\u2014figure supplement 1a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1a and b and Figure 1\u2014figure supplement 1a and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "0b2848b1-fc5d-4f81-a4d0-79d8039b6cb4",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C5",
+      "claim": "yad10 animals display stronger AMsh migration phenotypes than yad147 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "AMsh glia fail to migrate to their final positions in both sax-3(lf) alleles, and yad10 animals display stronger phenotypes than yad147 animals and show a similar extent of defects as those in the null allele of sax-3 (ky123) (Zallen et al., 1998), suggesting that yad10 is likely a null allele of sax-3 (Figure 1a and b and Figure 1\u2014figure supplement 1a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data in Figure 1a and b and Figure 1\u2014figure supplement 1a and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "18ead591-2ac5-49cf-8d3d-3aa3761c5c92",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C6",
+      "claim": "yad10 is likely a null allele of sax-3.",
+      "claim_type": "EXPLICIT",
+      "source": "AMsh glia fail to migrate to their final positions in both sax-3(lf) alleles, and yad10 animals display stronger phenotypes than yad147 animals and show a similar extent of defects as those in the null allele of sax-3 (ky123) (Zallen et al., 1998), suggesting that yad10 is likely a null allele of sax-3 (Figure 1a and b and Figure 1\u2014figure supplement 1a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the comparison of phenotypes between yad10 and the known null allele ky123, supported by data in figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "b6db590a-e504-4a98-9c1e-6d46984453ee",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C7",
+      "claim": "sax-3(lf) animals exhibited migration defects in all post-embryonic stages.",
+      "claim_type": "EXPLICIT",
+      "source": "To further characterize the sax-3(lf) phenotype we examined AMsh migration at different developmental stages in a single animal and found that sax-3(lf) animals exhibited migration defects in all post-embryonic stages, suggesting that sax-3 is required for AMsh migration during development (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "5bdfe36a-3cbf-4240-839f-6f8c934670d7",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C8",
+      "claim": "sax-3 is required for AMsh migration during development.",
+      "claim_type": "EXPLICIT",
+      "source": "To further characterize the sax-3(lf) phenotype we examined AMsh migration at different developmental stages in a single animal and found that sax-3(lf) animals exhibited migration defects in all post-embryonic stages, suggesting that sax-3 is required for AMsh migration during development (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation of migration defects across all post-embryonic stages, supported by data in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "2f2f741f-2fa9-49b5-ac2f-05543585fcf9",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C9",
+      "claim": "Loss-of-function of slt-1 (ok255, null allele) did not cause any AMsh migration defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined the function of the canonical Robo ligand, Slit, in AMsh migration and found that loss-of-function of slt-1(ok255, null allele), the only Slit in C. elegans, did not cause any defects, suggesting that Robo functions in a Slit-independent manner to regulate AMsh migration (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "609f5359-0cdc-45eb-b52d-0e4324df9746",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C10",
+      "claim": "slt-1 is the only Slit in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined the function of the canonical Robo ligand, Slit, in AMsh migration and found that loss-of-function of slt-1(ok255, null allele), the only Slit in C. elegans, did not cause any defects, suggesting that Robo functions in a Slit-independent manner to regulate AMsh migration (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "3ccff071-cc49-4341-9154-3c415d1ed586",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C11",
+      "claim": "Robo functions in a Slit-independent manner to regulate AMsh migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined the function of the canonical Robo ligand, Slit, in AMsh migration and found that loss-of-function of slt-1(ok255, null allele), the only Slit in C. elegans, did not cause any defects, suggesting that Robo functions in a Slit-independent manner to regulate AMsh migration (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that slt-1 loss-of-function does not cause defects while sax-3 loss-of-function does, supported by data in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "ad6eff33-82b5-4ba3-990a-58c25c1f85a1",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C12",
+      "claim": "AMsh cell bodies reside posterior to the nerve ring in control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude this possibility, we examined the relative position of AMsh glial cells and the nerve ring. Results show that AMsh cell bodies reside posterior to the nerve ring in control animals but are misplaced anterior to the nerve ring in sax-3(lf) animals (Figure 1\u2014figure supplement 1d and e), suggesting that the AMsh migration defect is not a side phenotype coming from a displaced nerve ring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1\u2014figure supplement 1d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "3577df4f-9cb1-4327-8995-dda43654b2c4",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C13",
+      "claim": "AMsh cell bodies are misplaced anterior to the nerve ring in sax-3(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude this possibility, we examined the relative position of AMsh glial cells and the nerve ring. Results show that AMsh cell bodies reside posterior to the nerve ring in control animals but are misplaced anterior to the nerve ring in sax-3(lf) animals (Figure 1\u2014figure supplement 1d and e), suggesting that the AMsh migration defect is not a side phenotype coming from a displaced nerve ring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1\u2014figure supplement 1d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "bfecf618-4286-4951-b937-b72e2b25524a",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C14",
+      "claim": "The AMsh migration defect is not a side phenotype coming from a displaced nerve ring.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude this possibility, we examined the relative position of AMsh glial cells and the nerve ring. Results show that AMsh cell bodies reside posterior to the nerve ring in control animals but are misplaced anterior to the nerve ring in sax-3(lf) animals (Figure 1\u2014figure supplement 1d and e), suggesting that the AMsh migration defect is not a side phenotype coming from a displaced nerve ring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that AMsh cells are anterior to the nerve ring in mutants, supported by data in Figure 1\u2014figure supplement 1d and e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f894f76b-c647-4cd0-8266-8c237fd03957",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C15",
+      "claim": "About 40% of sax-3(lf) animals display defects in head morphogenesis, called 'vab head'.",
+      "claim_type": "EXPLICIT",
+      "source": "As about 40% of sax-3(lf) animals display defects in head morphogenesis, called 'vab head' (Ghenea et al., 2005), it is also possible that AMsh defects could be a result of abnormal head morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Ghenea et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "8b5f59bf-7059-4d02-a9c2-c06a57d3d04c",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C16",
+      "claim": "sax-3(lf) animals without 'vab head' phenotypes displayed the same degree of AMsh defects as in all sax-3(lf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To rule out this possibility, we examined sax-3(lf) animals without 'vab head' phenotypes and found that they displayed the same degree of AMsh defects as in all sax-3(lf) animals, supporting the conclusion that the AMsh migration defects in sax-3(lf) animals are independent of the 'vab head' phenotypes (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e1101364-43e1-4ff8-b694-c584bdf3e700",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C17",
+      "claim": "The AMsh migration defects in sax-3(lf) animals are independent of the 'vab head' phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "To rule out this possibility, we examined sax-3(lf) animals without 'vab head' phenotypes and found that they displayed the same degree of AMsh defects as in all sax-3(lf) animals, supporting the conclusion that the AMsh migration defects in sax-3(lf) animals are independent of the 'vab head' phenotypes (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that AMsh defects occur regardless of vab head phenotype, supported by data in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "ae8c1e5d-d2c6-411b-b2b9-d2cc8a90e8dd",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C18",
+      "claim": "sax-3 does not function cell-autonomously in AMsh migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, as a well-studied receptor, sax-3 does not function cell-autonomously in AMsh migration, and instead expression of sax-3 cDNA in neurons fully rescues sax-3(lf) AMsh phenotypes (Figure 1d, Figure 1\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by rescue experiments shown in Figure 1d and Figure 1\u2014figure supplement 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "afedd9e0-cd1b-42b9-b8c4-9d3cad8d5cf4",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C19",
+      "claim": "Expression of sax-3 cDNA in neurons fully rescues sax-3(lf) AMsh phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, as a well-studied receptor, sax-3 does not function cell-autonomously in AMsh migration, and instead expression of sax-3 cDNA in neurons fully rescues sax-3(lf) AMsh phenotypes (Figure 1d, Figure 1\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1d and Figure 1\u2014figure supplement 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "37a381a5-48f0-4767-be35-f996bd9d9d7b",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C20",
+      "claim": "Expression of truncated forms of SAX-3 lacking the intracellular domains (\u0394C) fully rescues sax-3 AMsh defects.",
+      "claim_type": "EXPLICIT",
+      "source": "It is even more striking that expression of truncated forms of SAX-3 lacking the intracellular domains (\u0394C) or both intracellular and transmembrane domains (\u0394[C+TM]) fully rescues sax-3 AMsh defects (Figure 1d, Figure 1\u2014figure supplement 1h), while these transgenes did not affect the sax-3(lf) 'vab head' phenotypes (Figure 1\u2014figure supplement 1f and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1d and Figure 1\u2014figure supplement 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "c6929ed2-ff83-412c-ad13-454ed22c27aa",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C21",
+      "claim": "Expression of truncated forms of SAX-3 lacking both intracellular and transmembrane domains (\u0394[C+TM]) fully rescues sax-3 AMsh defects.",
+      "claim_type": "EXPLICIT",
+      "source": "It is even more striking that expression of truncated forms of SAX-3 lacking the intracellular domains (\u0394C) or both intracellular and transmembrane domains (\u0394[C+TM]) fully rescues sax-3 AMsh defects (Figure 1d, Figure 1\u2014figure supplement 1h), while these transgenes did not affect the sax-3(lf) 'vab head' phenotypes (Figure 1\u2014figure supplement 1f and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1d and Figure 1\u2014figure supplement 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f691c242-30c8-41f2-af65-8b48b6021321",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C22",
+      "claim": "Truncated SAX-3 transgenes (\u0394C and \u0394[C+TM]) did not affect the sax-3(lf) 'vab head' phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is even more striking that expression of truncated forms of SAX-3 lacking the intracellular domains (\u0394C) or both intracellular and transmembrane domains (\u0394[C+TM]) fully rescues sax-3 AMsh defects (Figure 1d, Figure 1\u2014figure supplement 1h), while these transgenes did not affect the sax-3(lf) 'vab head' phenotypes (Figure 1\u2014figure supplement 1f and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1\u2014figure supplement 1f and h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "a02dbdc9-9713-49ec-b43f-8ca421a50bc8",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C23",
+      "claim": "Drosophila and human Robo have been shown to be cleaved at the FN3 repeats of the extracellular region.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Drosophila and human Robo have been shown to be cleaved at the FN3 repeats of the extracellular region (Coleman et al., 2010; Seki et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Coleman et al., 2010 and Seki et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "ffdf5820-bde5-4937-b92b-1f993c4d2c69",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C24",
+      "claim": "FN3 repeats are highly conserved between C. elegans SAX-3 and Drosophila Robo.",
+      "claim_type": "EXPLICIT",
+      "source": "As FN3 repeats are highly conserved between C. elegans SAX-3 and Drosophila Robo, we decided to test whether SAX-3 could also be cleaved in the extracellular region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "41a7db74-aea1-4fab-9015-a07c876289b2",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C25",
+      "claim": "A cleavage fragment of SAX-3 around 70 kDa was detected in different transgene lines.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2a and Figure 2\u2014figure supplement 1a, we were able to detect a cleavage fragment around 70 kDa in different transgene lines and using different anti-HA antibodies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2a and Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "7f3dc06e-f0d4-4e99-867d-3b0656a0fc32",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C26",
+      "claim": "Based on the molecular weight (about 70 kDa) the cleavage site is likely to be in the FN3 repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "As the HA tag is fused to the C-terminus of SAX-3, based on the molecular weight (about 70 kDa) the cleavage site is likely to be in the FN3 repeats, which is consistent with what was found in Drosophila Robo (Coleman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the molecular weight of the cleavage fragment and comparison to Drosophila Robo, supported by citation to Coleman et al., 2010.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e57a090e-7365-4391-ad65-cf5c3a1d9794",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C27",
+      "claim": "The extracellular cleavage of SAX-3 happens from the embryonic 1.5-fold stage to early larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the extracellular cleavage happens from the embryonic 1.5-fold stage to early larval stages, when AMsh glia migrate from their birthplace to the nerve ring region (Figure 2a and Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2a and Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "2ae88e3a-6a89-483b-b7ec-80fefd800a97",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C28",
+      "claim": "The cleavage of SAX-3 was not regulated by Slit.",
+      "claim_type": "EXPLICIT",
+      "source": "As the function of sax-3 in AMsh migration is independent of Slit, we asked whether the cleavage of SAX-3 relied on Slit and found that the cleavage of SAX-3 was not regulated by Slit (Figure 2b and Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2b and Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "ff0a09f0-86e5-4483-8c4a-9ae85d2381af",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C29",
+      "claim": "FN3 repeats were sufficient for the cleavage of SAX-3.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that FN3 repeats were sufficient for the cleavage (Figure 2c), and based on the molecular weights of free GFP (27 kDa), GFP-FN3-TM (~80 kDa), and the cleavage product (~45 kDa) we concluded that the cleavage site was in the second repeat of FN3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "188bbcb6-4d81-4c3b-9a0b-fe5361bc2d39",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C30",
+      "claim": "The cleavage site of SAX-3 was in the second repeat of FN3.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that FN3 repeats were sufficient for the cleavage (Figure 2c), and based on the molecular weights of free GFP (27 kDa), GFP-FN3-TM (~80 kDa), and the cleavage product (~45 kDa) we concluded that the cleavage site was in the second repeat of FN3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from molecular weight analysis of cleavage products, supported by data in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f9d28d55-6d11-429d-833b-56293333dc42",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C31",
+      "claim": "The cleavage was abolished if the second FN3 repeat was absent.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cleavage was abolished if the second FN3 repeat was absent, while deletion of the third FN3 repeat did not affect the cleavage (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "37069279-34a7-4bc9-8258-60837c257ae5",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C32",
+      "claim": "Deletion of the third FN3 repeat did not affect the cleavage of SAX-3.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cleavage was abolished if the second FN3 repeat was absent, while deletion of the third FN3 repeat did not affect the cleavage (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "67b3af2f-0269-4a2c-b5d7-22a5304bc985",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C33",
+      "claim": "Extracellular cleavage was undetectable in transgenes expressing a truncated form of SAX-3 without the second FN3 repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with its important role in SAX-3 cleavage, extracellular cleavage was undetectable in transgenes expressing a truncated form of SAX-3 without the second FN3 repeat (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e8cad803-f31b-43ca-acdc-9a76956fa587",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C34",
+      "claim": "The truncated form of SAX-3 that lacks the second FN3 repeat completely lost rescue ability for AMsh migration.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the extracellular cleavage of SAX-3 is essential for its function in AMsh migration, we examined the rescue ability of the truncated form of SAX-3 that lacks the second FN3 repeat and found that this mutant form of SAX-3 completely lost rescue ability (Figure 2f, Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2f and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "0f5d2e0b-91e8-4d71-b10f-6d519d5a285c",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C35",
+      "claim": "SAX-3 \u0394FN3-b fully rescued sax-3(lf) 'vab head' phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular cleavage of SAX-3 appears to show certain specificity for AMsh migration, as the same transgene (SAX-3 \u0394FN3-b) fully rescued sax-3(lf) 'vab head' phenotypes (Figure 1\u2014figure supplement 1f, Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 1\u2014figure supplement 1f and Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "032987b5-c058-4a30-ba8c-cfb2aea77974",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C36",
+      "claim": "sax-3(yad175) is a deletion allele that lacks the second repeat of FN3 (FN3-b).",
+      "claim_type": "EXPLICIT",
+      "source": "To further confirm the role of extracellular SAX-3 cleavage in AMsh migration, we generated a sax-3(yad175) deletion allele that lacks the second repeat of FN3 (FN3-b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "80610506-e07c-4c37-aa51-621ad015a875",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C37",
+      "claim": "sax-3(yad175) decreases sax-3 mRNA to about 50% of that in control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "sax-3(yad175) decreases sax-3 mRNA to about 50% of that in control animals (Figure 2\u2014figure supplement 1d) and appears to be a weak loss-of-function allele of sax-3, as both sax-3(ky123, presumptive null allele) and sax-3(yad10) show higher penetrance of vab head and AVM guidance defects (Zallen et al., 1999; Figure 1\u2014figure supplement 1f and Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f5dd98ee-a7ed-43e3-8000-3765e01b4aa3",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C38",
+      "claim": "sax-3(yad175) appears to be a weak loss-of-function allele of sax-3.",
+      "claim_type": "EXPLICIT",
+      "source": "sax-3(yad175) decreases sax-3 mRNA to about 50% of that in control animals (Figure 2\u2014figure supplement 1d) and appears to be a weak loss-of-function allele of sax-3, as both sax-3(ky123, presumptive null allele) and sax-3(yad10) show higher penetrance of vab head and AVM guidance defects (Zallen et al., 1999; Figure 1\u2014figure supplement 1f and Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from comparison of phenotypes with other alleles, supported by data in Figure 1\u2014figure supplement 1f and Figure 2\u2014figure supplement 1e and citation to Zallen et al., 1999.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "aa2390eb-5374-4a6d-9e46-df2ff0771580",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C39",
+      "claim": "sax-3(yad175) exhibits stronger AMsh migration defects when compared with any other sax-3 alleles examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being a weak allele, sax-3(yad175) exhibits stronger AMsh migration defects when compared with any other sax-3 alleles examined, supporting the critical role of SAX-3 extracellular cleavage in AMsh migration (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "b7f6e15d-5a1f-4fbc-b97d-586625eda42a",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C40",
+      "claim": "A secreted SAX-3 extracellular fragment containing Ig 1\u20135 domains and the first FN3 repeat (FN3-a) was able to fully rescue sax-3(lf) AMsh defects.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate the function of the extracellular cleavage fragment, we expressed a secreted SAX-3 extracellular fragment containing Ig 1\u20135 domains and the first FN3 repeat (FN3-a) under pan-neuronal (Punc-33 and Prgef-1) or amphid neuron-specific (Parl-13) promoters, which mimics the cleavage product, and found that this fragment was able to fully rescue sax-3(lf) AMsh defects (Figure 2f, Figure 2\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2f and Figure 2\u2014figure supplement 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e8b3525e-3a3a-4daa-ae4a-d5e0f207e571",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C41",
+      "claim": "Both Ig domains and the first FN3 repeat (FN3-a) may be important for the function of the SAX-3 extracellular cleavage fragment in AMsh migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Further experiments show that both Ig domains and the first FN3 repeat (FN3-a) may be important for the function of the SAX-3 extracellular cleavage fragment in AMsh migration (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "250c7a6a-e2cf-4b1e-9656-7e9f1998b545",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C42",
+      "claim": "The extracellular cleavage fragment but not the full-length SAX-3 can bind with SYG-1::HA.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3b, the extracellular cleavage fragment but not the full-length SAX-3 can bind with SYG-1::HA, suggesting that SYG-1 can directly or indirectly bind with the SAX-3 extracellular cleavage fragment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "04a95164-78be-4346-a671-f05e1a71a01a",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C43",
+      "claim": "SYG-1 can directly or indirectly bind with the SAX-3 extracellular cleavage fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3b, the extracellular cleavage fragment but not the full-length SAX-3 can bind with SYG-1::HA, suggesting that SYG-1 can directly or indirectly bind with the SAX-3 extracellular cleavage fragment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the binding data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "21f5488f-e6d7-4c70-8dca-4d1dd8165473",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C44",
+      "claim": "syg-1 was expressed in AMsh glia during migration.",
+      "claim_type": "EXPLICIT",
+      "source": "With these findings, we further examined the function of syg-1 in AMsh migration and found that syg-1 was expressed in AMsh glia during migration and loss-of-function of syg-1(ok3640, null allele) caused similar AMsh migration defects as those in sax-3(lf) mutants (Figure 3c\u2013e, Figure 3\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3c\u2013e and Figure 3\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "2b33090f-17fb-4e6d-b3f8-abacee9bc449",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C45",
+      "claim": "Loss-of-function of syg-1(ok3640, null allele) caused similar AMsh migration defects as those in sax-3(lf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "With these findings, we further examined the function of syg-1 in AMsh migration and found that syg-1 was expressed in AMsh glia during migration and loss-of-function of syg-1(ok3640, null allele) caused similar AMsh migration defects as those in sax-3(lf) mutants (Figure 3c\u2013e, Figure 3\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3c\u2013e and Figure 3\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "0bc926a0-168a-42b2-8893-df9393fb5a6d",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C46",
+      "claim": "Double mutants of syg-1;sax-3 displayed the same extent of defects as in sax-3 single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, double mutants of syg-1;sax-3 displayed the same extent of defects as in sax-3 single mutants (Figure 3d and e), supporting the conclusion that syg-1 and sax-3 function in the same genetic pathway to regulate AMsh migration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "18cc0d36-526b-486e-a839-43e595278705",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C47",
+      "claim": "syg-1 and sax-3 function in the same genetic pathway to regulate AMsh migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, double mutants of syg-1;sax-3 displayed the same extent of defects as in sax-3 single mutants (Figure 3d and e), supporting the conclusion that syg-1 and sax-3 function in the same genetic pathway to regulate AMsh migration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the double mutant analysis, supported by data in Figure 3d and e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "94ef2479-1850-4bae-9616-2959dc753d12",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C48",
+      "claim": "syg-1 has been shown to function together with syg-2 in synapse formation and axon branching.",
+      "claim_type": "EXPLICIT",
+      "source": "As syg-1 has been shown to function together with syg-2, another Ig super family protein, in synapse formation and axon branching (Shen et al., 2004; Chia et al., 2014), we examined the function of syg-2 in AMsh migration and did not observe any abnormalities in syg-2(lf) mutants (Figure 3e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Shen et al., 2004 and Chia et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "3a6517fe-11ca-4c53-9355-72116a4c7137",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C49",
+      "claim": "syg-2(lf) mutants did not show any abnormalities in AMsh migration.",
+      "claim_type": "EXPLICIT",
+      "source": "As syg-1 has been shown to function together with syg-2, another Ig super family protein, in synapse formation and axon branching (Shen et al., 2004; Chia et al., 2014), we examined the function of syg-2 in AMsh migration and did not observe any abnormalities in syg-2(lf) mutants (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "ca88b90e-f211-4779-82d0-436292fcc953",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C50",
+      "claim": "syg-1 cell autonomously regulates AMsh migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with its potential role as a receptor for the SAX-3 cleavage fragment, syg-1 cell autonomously regulates AMsh migration (Figure 3e, Figure 3\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3e and Figure 3\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "a3e84c8f-dfa2-491f-90db-20b9e657b859",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C51",
+      "claim": "The conserved WIRS (WAVE Regulatory receptor sequence) in the SYG-1 C-terminal is essential for its function in AMsh migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Further genetic analysis also showed that the conserved WIRS (WAVE Regulatory receptor sequence) in the SYG-1 C-terminal (Chia et al., 2014) is essential for its function in AMsh migration (Figure 3e), and interruption of WAVE complex function by mutating gex-3, one of the key components of the WAVE complex (Chia et al., 2014), cell autonomously caused similar AMsh migration defects as observed in sax-3(lf) and syg-1(lf) mutants (Figure 3f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3e and citation to Chia et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "40929910-11c4-4e12-8a5c-a5de3cc20dd6",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C52",
+      "claim": "Interruption of WAVE complex function by mutating gex-3 cell autonomously caused similar AMsh migration defects as observed in sax-3(lf) and syg-1(lf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Further genetic analysis also showed that the conserved WIRS (WAVE Regulatory receptor sequence) in the SYG-1 C-terminal (Chia et al., 2014) is essential for its function in AMsh migration (Figure 3e), and interruption of WAVE complex function by mutating gex-3, one of the key components of the WAVE complex (Chia et al., 2014), cell autonomously caused similar AMsh migration defects as observed in sax-3(lf) and syg-1(lf) mutants (Figure 3f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3f,g and citation to Chia et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "716ede54-ef2d-4d7b-bf2f-68d174abaf18",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C53",
+      "claim": "Expression of the cleavage product of SAX-3 in the tail neurons (Pitr-1b) or tail hypodermis (Plin-44) of sax-3(lf) animals caused AMsh glia to migrate almost three times the distance of control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to further test the ligand/receptor function of the SAX-3 cleavage fragment and SYG-1, we tested whether AMsh glia can further migrate along the body in transgenic animals that express the cleavage product of SAX-3 in the tail neurons (Pitr-1b) or tail hypodermis (Plin-44) of sax-3(lf) animals (Ou et al., 2010). We found that in these transgenes the migration distance of AMsh was almost three times that of control animals, and loss-of-function in syg-1 completely blocked the over-migration phenotypes in these transgenes (Figure 3h and i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3h and i and citation to Ou et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f7b267eb-e433-42ff-82ff-12c2c60e3495",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C54",
+      "claim": "Loss-of-function in syg-1 completely blocked the over-migration phenotypes caused by ectopic expression of SAX-3 cleavage product.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to further test the ligand/receptor function of the SAX-3 cleavage fragment and SYG-1, we tested whether AMsh glia can further migrate along the body in transgenic animals that express the cleavage product of SAX-3 in the tail neurons (Pitr-1b) or tail hypodermis (Plin-44) of sax-3(lf) animals (Ou et al., 2010). We found that in these transgenes the migration distance of AMsh was almost three times that of control animals, and loss-of-function in syg-1 completely blocked the over-migration phenotypes in these transgenes (Figure 3h and i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by data shown in Figure 3h and i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "c6e2f200-33f5-4b3d-b53b-d3166201bb3d",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C55",
+      "claim": "The neuron-released SAX-3 extracellular cleavage fragment functions as an attractive cue, and SYG-1 functions as its receptor to mediate AMsh migration.",
+      "claim_type": "EXPLICIT",
+      "source": "With this evidence we believe that the neuron-released SAX-3 extracellular cleavage fragment functions as an attractive cue, and SYG-1 functions as its receptor to mediate AMsh migration (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by the cumulative evidence presented and illustrated in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e4a9761b-bd9d-44f3-9787-f48fce0ac344",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C56",
+      "claim": "Robo functions as the receptor for the repulsive guidance cue Slit.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in different organisms show that Robo functions as the receptor for the repulsive guidance cue Slit (Dickson and Gilestro, 2006), and loss-of-function in Robo causes many phenotypes that are shared by Slit mutants (Dickson and Gilestro, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Dickson and Gilestro, 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "bfb87912-6bcd-4687-befb-eb92f973be70",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C57",
+      "claim": "Loss-of-function in Robo causes many phenotypes that are shared by Slit mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in different organisms show that Robo functions as the receptor for the repulsive guidance cue Slit (Dickson and Gilestro, 2006), and loss-of-function in Robo causes many phenotypes that are shared by Slit mutants (Dickson and Gilestro, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Dickson and Gilestro, 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "0b714f24-9312-404d-8040-1360d87ea64f",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C58",
+      "claim": "Some Robo-mutant phenotypes are not related to Slit.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genetic studies also showed that some Robo-mutant phenotypes are not related to Slit (Zallen et al., 1998; Hao et al., 2001; Fricke et al., 2001; Hivert et al., 2002; Liu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "bc558043-fff7-48a9-a850-f991a3411f33",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C59",
+      "claim": "sax-3(lf) animals display many phenotypes that are not observed in slt-1 mutants, including embryonic lethality, abnormal head morphology (vab head), and misplacement of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, there is only one Robo, sax-3, and one Slit, slt-1. sax-3(lf) animals display many phenotypes that are not observed in slt-1 mutants, including embryonic lethality, abnormal head morphology (vab head), and misplacement of neurons (Zallen et al., 1998; Hao et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Zallen et al., 1998 and Hao et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "902abdb7-243e-444a-84e5-0e740e379f66",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C60",
+      "claim": "The extracellular region of Robo is evolutionarily conserved from nematodes to mammals and contains five Ig and three FN3 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular region of Robo is evolutionarily conserved from nematodes to mammals and contains five Ig and three FN3 domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "5d1039fd-3a69-460f-ba99-306b2d93ab90",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C61",
+      "claim": "The extracellular cleavages of Robo appear to be conserved in C. elegans, Drosophila, and human.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular cleavages of Robo appear to be conserved in C. elegans (this study), Drosophila, and human (Coleman et al., 2010; Seki et al., 2010), though different metalloproteases were utilized in Drosophila and human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Coleman et al., 2010 and Seki et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f08de1d1-c15d-4d3a-ab35-f4ac860305cf",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C62",
+      "claim": "Different metalloproteases were utilized for Robo cleavage in Drosophila and human.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular cleavages of Robo appear to be conserved in C. elegans (this study), Drosophila, and human (Coleman et al., 2010; Seki et al., 2010), though different metalloproteases were utilized in Drosophila and human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Coleman et al., 2010 and Seki et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "6e384787-78a6-4cc8-932a-a66b7b5454f5",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C63",
+      "claim": "The extracellular domains of Robo can dimerize through the Ig domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent biochemical and structural studies show that the extracellular domains of Robo can dimerize through the Ig domains, and the dimerization may be inhibited by the FN3 domain in the absence of Slit (Hivert et al., 2002; Liu et al., 2004; Zakrys et al., 2014; Aleksandrova et al., 2018; Barak et al., 2019; Yamamoto et al., 2019; Pak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f6430ed2-75b6-4281-8158-288402509921",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C64",
+      "claim": "The dimerization of Robo extracellular domains may be inhibited by the FN3 domain in the absence of Slit.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent biochemical and structural studies show that the extracellular domains of Robo can dimerize through the Ig domains, and the dimerization may be inhibited by the FN3 domain in the absence of Slit (Hivert et al., 2002; Liu et al., 2004; Zakrys et al., 2014; Aleksandrova et al., 2018; Barak et al., 2019; Yamamoto et al., 2019; Pak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "cb02afe4-e441-4062-a58d-86ac176483fa",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C65",
+      "claim": "The extracellular SAX-3/Robo cleavage fragment lacks the inhibitory second FN3 domain.",
+      "claim_type": "IMPLICIT",
+      "source": "Since the extracellular SAX-3/Robo cleavage fragment lacks the inhibitory second FN3 domain, it will be expected to strongly bind with itself or with the full length SAX-3/Robo, and these interactions may play a regulatory role in the activation of Robo downstream signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the cleavage site being in the second FN3 domain, as established earlier in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "c2d1faa8-fcbf-40b4-879b-44bb0cb908ca",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C66",
+      "claim": "The SAX-3/Robo extracellular cleavage fragment is expected to strongly bind with itself or with the full length SAX-3/Robo.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the extracellular SAX-3/Robo cleavage fragment lacks the inhibitory second FN3 domain, it will be expected to strongly bind with itself or with the full length SAX-3/Robo, and these interactions may play a regulatory role in the activation of Robo downstream signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the lack of the inhibitory domain.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "8bda1927-18bd-4fee-83f5-0d0f8b9020e4",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C67",
+      "claim": "Interactions between SAX-3 cleavage fragments may play a regulatory role in the activation of Robo downstream signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the extracellular SAX-3/Robo cleavage fragment lacks the inhibitory second FN3 domain, it will be expected to strongly bind with itself or with the full length SAX-3/Robo, and these interactions may play a regulatory role in the activation of Robo downstream signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from structural properties.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "bc98519e-2ef6-40ad-921c-557f1dccb89f",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C68",
+      "claim": "sax-3/Robo and syg-1/Neph are both expressed in and functionally important for neurons and other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since sax-3/Robo and syg-1/ Neph are both expressed in and functionally important for neurons and other cells, it is possible that interactions between the SAX-3 cleaved extracellular fragment and syg-1/Neph also play functions beyond glial migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "611b7ae4-daba-4b8a-b5e6-71e341764041",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C69",
+      "claim": "Interactions between the SAX-3 cleaved extracellular fragment and syg-1/Neph may play functions beyond glial migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Since sax-3/Robo and syg-1/ Neph are both expressed in and functionally important for neurons and other cells, it is possible that interactions between the SAX-3 cleaved extracellular fragment and syg-1/Neph also play functions beyond glial migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the expression patterns of the proteins.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "796e9318-957a-452e-b3d3-072b4efc1e97",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C70",
+      "claim": "The extracellular cleavage of SAX-3/Robo generated two fragments: one has all the Ig and the first FN3 domains while the other contains the rest of the FN3, transmembrane, and the intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular cleavage of SAX-3/Robo generated two fragments: one has all the Ig and the first FN3 domains while the other contains the rest of the FN3, transmembrane, and the intracellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "c8b685b9-c505-4d76-9fd9-d6ee88b42e38",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C71",
+      "claim": "The membrane-anchored fragment of SAX-3/Robo may play an active role in neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "While the released SAX-3/Robo extracellular cleavage fragment functions as a ligand for SYG-1/Neph and has potential to interact with the full length SAX-3/Robo, the membrane-anchored fragment may also play an active role in neuronal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, suggesting a potential function for the membrane-anchored fragment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "882aa18d-7472-49e2-afdb-5d9647fa0463",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C72",
+      "claim": "Glia need to migrate over long distances from their birthplace to appropriate regions to achieve their vital roles in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve their vital roles in the nervous system and to form functional units with neurons, glia need to migrate over what are often long distances from their birthplace to the appropriate regions (Gilmour et al., 2002; Jarjour and Kennedy, 2004; Kinrade et al., 2001; Kl\u00e4mbt, 2009; Barres, 2008; Fields et al., 2015; Mori et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "a14cef33-f280-4cb6-896b-8b1ed34b132a",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C73",
+      "claim": "The migration of glia relies on guidance cues and shares many similar mechanisms with neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The migration of glia relies on guidance cues and shares many similar mechanisms with neurons (Kinrade et al., 2001; Jarjour et al., 2003; Sasse and Kl\u00e4mbt, 2016; Spassky et al., 2002; Unni et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "27ccdd12-967c-4076-91ee-a94566d04d3f",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C74",
+      "claim": "Robo receptors can function as an attractive cue for glial migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies uncover a surprising role of Robo receptors \u2013 an attractive cue for glial migration \u2013 and identify SYG-1/Neph as the glial receptor for the neuronal-released Robo cleavage fragment, suggesting that the function and regulation of guidance molecules are more complicated than anticipated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "d29db964-32a6-409e-b5bc-151f0efce649",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C75",
+      "claim": "SYG-1/Neph is the glial receptor for the neuronal-released Robo cleavage fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies uncover a surprising role of Robo receptors \u2013 an attractive cue for glial migration \u2013 and identify SYG-1/Neph as the glial receptor for the neuronal-released Robo cleavage fragment, suggesting that the function and regulation of guidance molecules are more complicated than anticipated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "75c943fa-c68a-4d73-bd5d-db94384c5f56",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C76",
+      "claim": "The function and regulation of guidance molecules are more complicated than anticipated.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies uncover a surprising role of Robo receptors \u2013 an attractive cue for glial migration \u2013 and identify SYG-1/Neph as the glial receptor for the neuronal-released Robo cleavage fragment, suggesting that the function and regulation of guidance molecules are more complicated than anticipated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the discovery of a novel Slit-independent function of Robo.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "c0008c71-0f2a-4d4e-8aa3-3ccbb2cd9303",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C77",
+      "claim": "Robo plays functions in many biological processes, and its functions highly depend on Slit.",
+      "claim_type": "EXPLICIT",
+      "source": "As one of the most-studied receptors, Robo plays functions in many biological processes, and its functions highly depend on Slit, the ligand of Robo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "565a3916-18cf-463b-b26f-4bdeebcd6dd0",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C78",
+      "claim": "Neurons can release an extracellular fragment of Robo upon cleavage to attract glia during migration in Caenorhabditis elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we uncover a Slit-independent role of Robo in glial migration and show that neurons can release an extracellular fragment of Robo upon cleavage to attract glia during migration in Caenorhabditis elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "b8022c49-57fd-409e-80e2-203fd777a10a",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C79",
+      "claim": "The conserved cell adhesion molecule SYG-1/Neph functions as a receptor for the cleaved extracellular Robo fragment to mediate glial migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we identified the conserved cell adhesion molecule SYG-1/Neph as a receptor for the cleaved extracellular Robo fragment to mediate glial migration and SYG-1/Neph functions through regulation of the WAVE complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "ebc980cd-798a-4a67-af40-17dc0644180a",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C80",
+      "claim": "SYG-1/Neph functions through regulation of the WAVE complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we identified the conserved cell adhesion molecule SYG-1/Neph as a receptor for the cleaved extracellular Robo fragment to mediate glial migration and SYG-1/Neph functions through regulation of the WAVE complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "357f6cc0-51f8-41bd-8f85-d0bc33893aa4",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C81",
+      "claim": "Robo, the cleaved region of Robo, and SYG-1/Neph are all highly conserved across the animal kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "As Robo, the cleaved region of Robo, and SYG-1/Neph are all highly conserved across the animal kingdom, our findings may present a conserved Slit-independent Robo mechanism during brain development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "765be247-175e-41b8-ae15-aad2c61253f1",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C82",
+      "claim": "The findings may present a conserved Slit-independent Robo mechanism during brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "As Robo, the cleaved region of Robo, and SYG-1/Neph are all highly conserved across the animal kingdom, our findings may present a conserved Slit-independent Robo mechanism during brain development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the conservation of the proteins involved.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "77d9a033-0294-4b3e-b867-2796ebd562d9",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C83",
+      "claim": "The Robo family was first identified in classic genetic studies of Drosophila CNS axonal midline crossing.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionarily conserved Robo family was first identified in the classic genetic studies of Drosophila CNS axonal midline crossing (Seeger et al., 1993) and belongs to the immunoglobulin (Ig) superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Seeger et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "7ca936e9-faad-4e8f-a61e-c8e42956e5b2",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C84",
+      "claim": "The Robo family belongs to the immunoglobulin (Ig) superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionarily conserved Robo family was first identified in the classic genetic studies of Drosophila CNS axonal midline crossing (Seeger et al., 1993) and belongs to the immunoglobulin (Ig) superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "29623160-ec5d-44ce-947b-78df00dd1e53",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C85",
+      "claim": "Robo is involved in cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides their functions in axon guidance (Dickson and Gilestro, 2006), Robo is also involved in cell migration (Killeen and Sybingco, 2008; Viveiros et al., 2011; Hinck, 2004; Grieshammer et al., 2004), organogenesis (Grieshammer et al., 2004; Mommersteeg et al., 2013), cancer development (Wang et al., 2008), and immune cell regulation (Wu et al., 2001; Branchfield et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "15630698-ae25-4f24-b8f0-73b657eab13a",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C86",
+      "claim": "Robo is involved in organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides their functions in axon guidance (Dickson and Gilestro, 2006), Robo is also involved in cell migration (Killeen and Sybingco, 2008; Viveiros et al., 2011; Hinck, 2004; Grieshammer et al., 2004), organogenesis (Grieshammer et al., 2004; Mommersteeg et al., 2013), cancer development (Wang et al., 2008), and immune cell regulation (Wu et al., 2001; Branchfield et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Grieshammer et al., 2004 and Mommersteeg et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "d10219f5-45ff-413b-af0e-814b19bc4110",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C87",
+      "claim": "Robo is involved in cancer development.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides their functions in axon guidance (Dickson and Gilestro, 2006), Robo is also involved in cell migration (Killeen and Sybingco, 2008; Viveiros et al., 2011; Hinck, 2004; Grieshammer et al., 2004), organogenesis (Grieshammer et al., 2004; Mommersteeg et al., 2013), cancer development (Wang et al., 2008), and immune cell regulation (Wu et al., 2001; Branchfield et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Wang et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "a6bce997-7c64-47c4-a9f2-287a22b5214c",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C88",
+      "claim": "Robo is involved in immune cell regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides their functions in axon guidance (Dickson and Gilestro, 2006), Robo is also involved in cell migration (Killeen and Sybingco, 2008; Viveiros et al., 2011; Hinck, 2004; Grieshammer et al., 2004), organogenesis (Grieshammer et al., 2004; Mommersteeg et al., 2013), cancer development (Wang et al., 2008), and immune cell regulation (Wu et al., 2001; Branchfield et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Wu et al., 2001 and Branchfield et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "fdce4235-ac88-4d21-bb53-054b8c2bcb5e",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C89",
+      "claim": "In these processes Robo functions as the receptor for the guidance cue molecule \u2013 Slit.",
+      "claim_type": "EXPLICIT",
+      "source": "In these processes Robo functions as the receptor for the guidance cue molecule \u2013 Slit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "94901aa8-a450-4319-a47c-a4be0b618ef9",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C90",
+      "claim": "Mutations of Robo cause abnormalities in Caenorhabditis elegans that have not been observed in Slit mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutations of Robo cause abnormalities in Caenorhabditis elegans (Zallen et al., 1998; Hao et al., 2001), zebrafish (Fricke et al., 2001), and cultured mammalian neurons (Hivert et al., 2002; Liu et al., 2004) that have not been observed in Slit mutants, suggesting that there may be evolutionarily conserved Slit-independent aspects of Robo function and regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Zallen et al., 1998 and Hao et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "975f925a-9188-449f-b55f-e6139a95c1b0",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C91",
+      "claim": "Mutations of Robo cause abnormalities in zebrafish that have not been observed in Slit mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutations of Robo cause abnormalities in Caenorhabditis elegans (Zallen et al., 1998; Hao et al., 2001), zebrafish (Fricke et al., 2001), and cultured mammalian neurons (Hivert et al., 2002; Liu et al., 2004) that have not been observed in Slit mutants, suggesting that there may be evolutionarily conserved Slit-independent aspects of Robo function and regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Fricke et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "fd5ecade-f5e9-43e1-8050-f522bd83f6da",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C92",
+      "claim": "Mutations of Robo cause abnormalities in cultured mammalian neurons that have not been observed in Slit mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutations of Robo cause abnormalities in Caenorhabditis elegans (Zallen et al., 1998; Hao et al., 2001), zebrafish (Fricke et al., 2001), and cultured mammalian neurons (Hivert et al., 2002; Liu et al., 2004) that have not been observed in Slit mutants, suggesting that there may be evolutionarily conserved Slit-independent aspects of Robo function and regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Hivert et al., 2002 and Liu et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f6cf5d89-f537-404f-9a72-dea6996cbc1e",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C93",
+      "claim": "There may be evolutionarily conserved Slit-independent aspects of Robo function and regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutations of Robo cause abnormalities in Caenorhabditis elegans (Zallen et al., 1998; Hao et al., 2001), zebrafish (Fricke et al., 2001), and cultured mammalian neurons (Hivert et al., 2002; Liu et al., 2004) that have not been observed in Slit mutants, suggesting that there may be evolutionarily conserved Slit-independent aspects of Robo function and regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of Robo phenotypes not seen in Slit mutants across multiple species.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e691f7d8-186b-4e99-b6c5-a03d00edb0dc",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C94",
+      "claim": "Some guidance molecules including those in the Netrin and Semaphorin families were shown to be involved in glial migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Some guidance molecules including those in the Netrin and Semaphorin families were shown to be involved in glial migration (Kinrade et al., 2001; Jarjour et al., 2003; Sasse and Kl\u00e4mbt, 2016; Spassky et al., 2002; Unni et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "65ddf4ac-8963-4e09-b6eb-91d82793025a",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C95",
+      "claim": "In Drosophila, CNS-derived glial cells can move along nerves to reach their final position.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, CNS-derived glial cells can move along nerves to reach their final position, and during migration the glial expression of ROBO2 receptor is required for preventing glial breakaway from the nerve in a Slit-dependent manner (Sasse and Kl\u00e4mbt, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Sasse and Kl\u00e4mbt, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "8308ed6c-e66f-42cc-a8b9-58bac07f673b",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C96",
+      "claim": "During migration the glial expression of ROBO2 receptor is required for preventing glial breakaway from the nerve in a Slit-dependent manner in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, CNS-derived glial cells can move along nerves to reach their final position, and during migration the glial expression of ROBO2 receptor is required for preventing glial breakaway from the nerve in a Slit-dependent manner (Sasse and Kl\u00e4mbt, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Sasse and Kl\u00e4mbt, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "9096e420-0b08-4da5-a5b6-b964b084ee63",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C97",
+      "claim": "DCC can be cleaved first at the extracellular region and subsequently at the intracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "One good example is the Netrin receptor DCC. DCC can be cleaved first at the extracellular region and subsequently at the intracellular domains (Neuhaus-Follini and Bashaw, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Neuhaus-Follini and Bashaw, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e55c9d09-d827-4248-9e1b-800544f9cb0e",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C98",
+      "claim": "The DCC intracellular cleavage fragment can translocate into the nucleus and equip DCC with transcriptional regulatory function.",
+      "claim_type": "EXPLICIT",
+      "source": "The DCC intracellular cleavage fragment can then translocate into the nucleus and equip DCC with transcriptional regulatory function (Neuhaus-Follini and Bashaw, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Neuhaus-Follini and Bashaw, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "2f5b63ce-5eb6-4d46-b47b-658604ecf1ff",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C99",
+      "claim": "NCAM and EphrinA5 can go through extracellular cleavage to release adhesive interactions and cause cell detachment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, NCAM and EphrinA5 can go through extracellular cleavage to release adhesive interactions and cause cell detachment (Brennaman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Brennaman et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "effc4aef-861f-409f-a4ba-4b72bd53dc9f",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C100",
+      "claim": "Drosophila Robo can be cleaved at the FN3 (Fibronectin type-III) repeats of the extracellular region.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Robo can be cleaved at the FN3 (Fibronectin type-III) repeats of the extracellular region, and the extracellular cleavage fragment can recruit Son of sevenless (Sos) to mediate Slit-dependent midline repulsion (Coleman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Coleman et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "4910437f-1230-494b-98da-0511952c093d",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C101",
+      "claim": "The extracellular cleavage fragment of Drosophila Robo can recruit Son of sevenless (Sos) to mediate Slit-dependent midline repulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Robo can be cleaved at the FN3 (Fibronectin type-III) repeats of the extracellular region, and the extracellular cleavage fragment can recruit Son of sevenless (Sos) to mediate Slit-dependent midline repulsion (Coleman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Coleman et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e2c05f96-a9ff-4a0f-b3e2-a5534059660d",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C102",
+      "claim": "In all these cases the cleaved fragments and the function of the receptors highly rely on their canonical ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in all these cases the cleaved fragments and the function of the receptors highly rely on their canonical ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "7ceba161-afe3-455b-a59b-802551dab203",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C103",
+      "claim": "There are in total 56 glia in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "There are in total 56 glia in C. elegans, which include 50 neuroepithelial glia that ensheath sensory neuron receptive endings (Oikonomou and Shaham, 2011; Shaham, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Oikonomou and Shaham, 2011 and Shaham, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "081659e6-584c-48fc-b198-e8e70d167291",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C104",
+      "claim": "C. elegans has 50 neuroepithelial glia that ensheath sensory neuron receptive endings.",
+      "claim_type": "EXPLICIT",
+      "source": "There are in total 56 glia in C. elegans, which include 50 neuroepithelial glia that ensheath sensory neuron receptive endings (Oikonomou and Shaham, 2011; Shaham, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Oikonomou and Shaham, 2011 and Shaham, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "72e60e25-be32-414d-b809-dfb441de32ad",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C105",
+      "claim": "The amphid sensilla is a pair of sensilla composed of 12 neurons and two glial cells each.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest sensory organ of the worm, called the amphid sensilla, is a pair of sensilla composed of 12 neurons and two glial cells each (Ward et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Ward et al., 1975.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "6d5b2c8e-ec1e-4d7e-aa4f-10cdc0aa6327",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C106",
+      "claim": "The amphid sheath (AMsh) and amphid socket (AMso) cells form channels that ensheath the dendrites of sensory neurons in the amphid sensilla.",
+      "claim_type": "EXPLICIT",
+      "source": "These glia, called the amphid sheath (AMsh) and amphid socket (AMso) cells, form channels that ensheath the dendrites of sensory neurons in the amphid sensilla (Oikonomou and Shaham, 2011; Ward et al., 1975; Perkins et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "7fa75fbc-a37d-45cf-84e2-579f72dafe69",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C107",
+      "claim": "Amphid glial cells are vital for the proper functioning of the neurons that they ensheath.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these glial cells are vital for the proper functioning of the neurons that they ensheath, where they can modulate neural activity through secreted molecules at the receptive endings and control neuron receptive ending shape (Bacaj et al., 2008; Shaham, 2010; Singhvi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Bacaj et al., 2008, Shaham, 2010, and Singhvi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "2c4dca56-56b0-48dc-be91-a4960ae4f6c3",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C108",
+      "claim": "Amphid glial cells can modulate neural activity through secreted molecules at the receptive endings.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these glial cells are vital for the proper functioning of the neurons that they ensheath, where they can modulate neural activity through secreted molecules at the receptive endings and control neuron receptive ending shape (Bacaj et al., 2008; Shaham, 2010; Singhvi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Bacaj et al., 2008, Shaham, 2010, and Singhvi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "63e4242d-2c69-4513-872c-e2b3670b36ec",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C109",
+      "claim": "Amphid glial cells control neuron receptive ending shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these glial cells are vital for the proper functioning of the neurons that they ensheath, where they can modulate neural activity through secreted molecules at the receptive endings and control neuron receptive ending shape (Bacaj et al., 2008; Shaham, 2010; Singhvi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Bacaj et al., 2008, Shaham, 2010, and Singhvi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "4634af35-cdf7-47d1-8393-92cf289393f1",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C110",
+      "claim": "The fate determination of C. elegans AMsh glial cells utilizes similar mechanisms as those in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies we show that the fate determination of C. elegans AMsh glial cells utilizes similar mechanisms as those in mammals (Zhang et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Zhang et al., 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "ac130fc4-14e2-4d30-9307-ae8b0ffbb459",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C111",
+      "claim": "AMsh glia are born close to the nose of C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "AMsh glia are born close to the nose of C. elegans, where their processes anchor to the nose region while the cell bodies migrate toward the nerve ring (Shaham, 2015; Heiman and Shaham, 2009), and the position of AMsh glia is important for their function (Zhang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Shaham, 2015 and Heiman and Shaham, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "0636021a-b6fb-4f42-82c5-21df6cc124ec",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C112",
+      "claim": "AMsh glial processes anchor to the nose region while the cell bodies migrate toward the nerve ring.",
+      "claim_type": "EXPLICIT",
+      "source": "AMsh glia are born close to the nose of C. elegans, where their processes anchor to the nose region while the cell bodies migrate toward the nerve ring (Shaham, 2015; Heiman and Shaham, 2009), and the position of AMsh glia is important for their function (Zhang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to Shaham, 2015 and Heiman and Shaham, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "5acf34ba-3c0c-46fb-9c0e-7617f1539d87",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "claim_id": "C113",
+      "claim": "The position of AMsh glia is important for their function.",
+      "claim_type": "EXPLICIT",
+      "source": "AMsh glia are born close to the nose of C. elegans, where their processes anchor to the nose region while the cell bodies migrate toward the nerve ring (Shaham, 2015; Heiman and Shaham, 2009), and the position of AMsh glia is important for their function (Zhang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to Zhang et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2adb82b6-0f9e-4320-b280-01480cb69c63",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two loss-of-function alleles of sax-3 (yad10 and yad147) were isolated in a genetic screen and cause AMsh glial migration defects. yad10 is likely a null allele based on phenotypic comparison to the known null allele ky123, and sax-3 is required for AMsh migration throughout post-embryonic development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide converging evidence from genetic screening, allelic comparison, and developmental staging experiments. The phenotypic data (Figures 1a-b, Figure 1\u2014figure supplement 1a-c) support the identification and characterization of these alleles. The inference that yad10 is a null allele is reasonable based on phenotypic similarity to ky123.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "b3c53dd8-d26d-49b9-8977-4900f6758e38",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "sax-3/Robo functions in a Slit-independent manner to regulate AMsh migration, as loss-of-function of slt-1 (the only Slit in C. elegans) does not cause AMsh migration defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 demonstrate that slt-1 loss-of-function does not phenocopy sax-3 loss-of-function for AMsh migration (Figure 1c). This is a critical negative control supporting Slit-independent function. The logic is sound: if Robo required Slit for this function, slt-1 mutants would show similar defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "b0e3d9da-fdf9-461a-be9e-180cfc9cef59",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AMsh migration defects in sax-3(lf) animals are independent of both displaced nerve ring position and 'vab head' morphological defects, indicating a specific role for sax-3 in AMsh migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 address potential confounding phenotypes through appropriate controls. The data (Figure 1\u2014figure supplement 1d-e, Figure 1c) show that AMsh defects occur regardless of nerve ring position or head morphology, supporting specificity. These are important controls for interpreting the primary phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "b49807e8-78a1-4193-9f08-57475ba532a3",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "sax-3 functions non-cell-autonomously in AMsh migration. Neuronal expression of sax-3 cDNA or truncated forms lacking intracellular domains (\u0394C) or both intracellular and transmembrane domains (\u0394[C+TM]) fully rescues AMsh defects, while these transgenes do not rescue 'vab head' phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 demonstrate non-cell-autonomous function through tissue-specific rescue experiments (Figure 1d, Figure 1\u2014figure supplement 1f-h). The rescue by secreted forms strongly supports a ligand function. The differential rescue of AMsh vs. vab head phenotypes indicates functional specificity. This is a key mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "99c2815e-bbf4-4433-8023-50ccc95e447d",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SAX-3 undergoes extracellular cleavage at the FN3 repeats during development (1.5-fold embryonic stage to early larval stages), producing a ~70 kDa C-terminal fragment. This cleavage is conserved with Drosophila and human Robo and is independent of Slit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 provide biochemical evidence for SAX-3 cleavage (Figure 2a-b, Figure 2\u2014figure supplement 1a-b). The molecular weight analysis and developmental timing are consistent with the proposed mechanism. The Slit-independence is demonstrated experimentally. The conservation argument (C23) is well-supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "1d2b996f-c0c1-4368-a8a0-49a4fb14ccad",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The cleavage site of SAX-3 is in the second FN3 repeat (FN3-b). FN3 repeats are sufficient for cleavage, and deletion of FN3-b abolishes cleavage while deletion of the third FN3 repeat does not affect cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 use domain deletion analysis to map the cleavage site (Figure 2c-e). The molecular weight calculations and deletion experiments converge on FN3-b as the cleavage site. The logic is sound and the data support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e8b3a305-6f99-4a61-a0de-6c2cf1923ec0",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Extracellular cleavage of SAX-3 is essential for AMsh migration but not for 'vab head' phenotypes. The deletion allele sax-3(yad175) lacking FN3-b exhibits stronger AMsh migration defects than other sax-3 alleles despite being a weak loss-of-function allele for other phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 demonstrate functional importance through loss-of-rescue experiments and a separation-of-function allele (Figure 2f, Figure 2\u2014figure supplement 1c-e). The yad175 allele provides strong genetic evidence that cleavage is specifically required for AMsh migration. The phenotypic dissociation is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "468ab51d-f8ef-4d0d-ac9f-59d6df10905c",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A secreted SAX-3 extracellular fragment containing Ig 1\u20135 domains and the first FN3 repeat (FN3-a) fully rescues sax-3(lf) AMsh defects when expressed in neurons. Both Ig domains and FN3-a are important for function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 demonstrate sufficiency of the cleavage fragment through gain-of-function rescue experiments (Figure 2f, Figure 2\u2014figure supplement 1f). The domain requirement analysis supports the structural importance of both Ig and FN3-a domains. This is strong functional evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "c2f83c56-3a15-4ea4-bac7-7032cd4562da",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The SAX-3 extracellular cleavage fragment, but not full-length SAX-3, binds to SYG-1::HA, suggesting SYG-1 can directly or indirectly bind the SAX-3 cleavage fragment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 provide biochemical evidence for interaction through co-immunoprecipitation (Figure 3b). The selective binding of the cleavage fragment vs. full-length protein is a key observation supporting the ligand-receptor model. The caveat about direct vs. indirect binding is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "4fe5ee40-aefa-4286-a16c-a59f226a3afd",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "syg-1 is expressed in AMsh glia during migration, and loss-of-function of syg-1 causes similar AMsh migration defects as sax-3(lf). Double mutants of syg-1;sax-3 show the same defects as sax-3 single mutants, indicating they function in the same genetic pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 establish syg-1 function through expression analysis, loss-of-function phenotypes, and epistasis analysis (Figure 3c-e, Figure 3\u2014figure supplement 2a). The genetic pathway analysis is appropriately conducted and interpreted. This is strong genetic evidence for the pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "e8ea5976-a134-4238-a6e2-de32c672adf9",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "syg-1 functions cell-autonomously in AMsh migration and does not require syg-2, despite syg-1 and syg-2 functioning together in other contexts (synapse formation and axon branching).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 demonstrate cell-autonomous function and independence from syg-2 (Figure 3e, Figure 3\u2014figure supplement 2b). The syg-2 negative result is an important control showing context-specific function. The cell-autonomous rescue supports the receptor model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "3946a511-9e41-467b-9cde-9185e2eca6bf",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The conserved WIRS (WAVE Regulatory receptor sequence) in SYG-1 C-terminal is essential for AMsh migration, and mutation of gex-3 (a WAVE complex component) cell-autonomously causes similar AMsh migration defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 link SYG-1 to downstream WAVE complex signaling through domain analysis and genetic analysis (Figure 3e-g). This provides mechanistic insight into how SYG-1 transduces the signal. The cell-autonomous requirement for gex-3 is consistent with the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "6d7b5bd7-b244-4cdd-ba79-899f6f1dfd55",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Ectopic expression of the SAX-3 cleavage product in tail neurons or hypodermis causes syg-1-dependent over-migration of AMsh glia, demonstrating that the neuron-released SAX-3 extracellular cleavage fragment functions as an attractive cue with SYG-1 as its receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 provide functional evidence through ectopic expression experiments (Figure 3h-i). The syg-1-dependence of the over-migration phenotype strongly supports the ligand-receptor relationship. This is a compelling gain-of-function experiment that validates the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "970e6730-add2-4d14-a504-e03175dd5d27",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The extracellular region of Robo is evolutionarily conserved and contains five Ig and three FN3 domains. Extracellular cleavage of Robo is conserved across C. elegans, Drosophila, and human, though different metalloproteases are used. Robo extracellular domains can dimerize through Ig domains, with dimerization potentially inhibited by FN3 domains in the absence of Slit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 provide context from prior literature (multiple citations). These are well-established facts about Robo structure and biochemistry that support the authors' mechanistic interpretations. The conservation argument strengthens the biological significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "fea8ef74-9200-468d-b785-cbb2e42200e6",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The SAX-3/Robo extracellular cleavage fragment lacks the inhibitory second FN3 domain and is expected to strongly bind with itself or full-length SAX-3/Robo, potentially playing a regulatory role in Robo downstream signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C67 are speculative (C66-C67 explicitly marked as speculation). While the inference about lacking the inhibitory domain (C65) is logical, the binding predictions and regulatory roles are not experimentally tested in this study. These are reasonable hypotheses for future work but not demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "f83eba0a-f814-4503-aaf0-8364bcb224f3",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "sax-3/Robo and syg-1/Neph are expressed in neurons and other cells beyond glia, suggesting potential functions beyond glial migration. The membrane-anchored fragment of SAX-3/Robo may also play an active role in neuronal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 and C71 are speculative about broader functions not tested in this study. While the expression patterns (C68) are factual, the functional implications (C69, C71) are hypotheses for future investigation. These do not represent demonstrated results from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "49f93864-235b-44e4-8449-6631fb2f957d",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Robo is a well-studied receptor that typically functions with Slit in multiple biological processes including axon guidance, cell migration, organogenesis, cancer development, and immune regulation. However, some Robo phenotypes in C. elegans, zebrafish, and mammalian neurons are not observed in Slit mutants, suggesting evolutionarily conserved Slit-independent functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59, C77, C83-C93 provide extensive background from prior literature (multiple citations). These establish the context for the current study and justify the investigation of Slit-independent Robo functions. The prior observations of Slit-independent phenotypes are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "0edca2ce-1306-4a46-a444-7fd74f649066",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Glial migration relies on guidance cues and shares mechanisms with neuronal migration. Various guidance molecules (Netrin, Semaphorin, Robo) and proteolytic modifications of receptors (DCC, NCAM, EphrinA5, Robo) have been shown to regulate migration, though typically in ligand-dependent manners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73, C94-C102 provide relevant background from prior literature (multiple citations). These establish the biological context for glial migration and receptor cleavage, supporting the novelty of the Slit-independent Robo function discovered in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "b93ccaad-a380-4afc-99ff-0b1efebe090e",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "C. elegans has 56 glia including 50 neuroepithelial glia. The amphid sensilla contains AMsh and AMso glial cells that ensheath sensory neuron dendrites and are vital for neuronal function. AMsh glia are born near the nose and migrate toward the nerve ring, with their position being important for function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C113 provide essential background about the C. elegans glial system and AMsh biology (multiple citations including authors' prior work). These establish the experimental system and justify its use as a model for studying glial migration mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    },
+    {
+      "id": "3c3ff557-4b47-414c-9ea5-b1099f73b8d9",
+      "content_id": "fe295427-a5c1-41f9-ab37-13128abd995a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "This study uncovers a novel role for Robo receptors as an attractive cue for glial migration and identifies SYG-1/Neph as the glial receptor for the neuronal-released Robo cleavage fragment. SYG-1/Neph functions through WAVE complex regulation. Given the conservation of these proteins, this may represent a conserved Slit-independent Robo mechanism in brain development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C82 represent the main conclusions synthesized from the experimental results. The attractive cue function (C74, C78) and receptor identification (C75, C79) are well-supported by the data. The WAVE complex connection (C80) is demonstrated. The conservation argument (C81-C82) is reasonable given the protein conservation, though the broader applicability (C82) remains to be tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:33:32.429519Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ce4189d6-78b0-44d6-ad27-c4c9c0070b02",
+      "result_id": "2adb82b6-0f9e-4320-b280-01480cb69c63"
+    },
+    {
+      "claim_id": "9dd57fc4-ba9f-4599-9444-ba9cc9220ad3",
+      "result_id": "2adb82b6-0f9e-4320-b280-01480cb69c63"
+    },
+    {
+      "claim_id": "f2d1268e-b9bf-4a9b-a107-1373febad279",
+      "result_id": "2adb82b6-0f9e-4320-b280-01480cb69c63"
+    },
+    {
+      "claim_id": "0b2848b1-fc5d-4f81-a4d0-79d8039b6cb4",
+      "result_id": "2adb82b6-0f9e-4320-b280-01480cb69c63"
+    },
+    {
+      "claim_id": "18ead591-2ac5-49cf-8d3d-3aa3761c5c92",
+      "result_id": "2adb82b6-0f9e-4320-b280-01480cb69c63"
+    },
+    {
+      "claim_id": "b6db590a-e504-4a98-9c1e-6d46984453ee",
+      "result_id": "2adb82b6-0f9e-4320-b280-01480cb69c63"
+    },
+    {
+      "claim_id": "5bdfe36a-3cbf-4240-839f-6f8c934670d7",
+      "result_id": "2adb82b6-0f9e-4320-b280-01480cb69c63"
+    },
+    {
+      "claim_id": "2f2f741f-2fa9-49b5-ac2f-05543585fcf9",
+      "result_id": "b3c53dd8-d26d-49b9-8977-4900f6758e38"
+    },
+    {
+      "claim_id": "609f5359-0cdc-45eb-b52d-0e4324df9746",
+      "result_id": "b3c53dd8-d26d-49b9-8977-4900f6758e38"
+    },
+    {
+      "claim_id": "3ccff071-cc49-4341-9154-3c415d1ed586",
+      "result_id": "b3c53dd8-d26d-49b9-8977-4900f6758e38"
+    },
+    {
+      "claim_id": "ad6eff33-82b5-4ba3-990a-58c25c1f85a1",
+      "result_id": "b0e3d9da-fdf9-461a-be9e-180cfc9cef59"
+    },
+    {
+      "claim_id": "3577df4f-9cb1-4327-8995-dda43654b2c4",
+      "result_id": "b0e3d9da-fdf9-461a-be9e-180cfc9cef59"
+    },
+    {
+      "claim_id": "bfecf618-4286-4951-b937-b72e2b25524a",
+      "result_id": "b0e3d9da-fdf9-461a-be9e-180cfc9cef59"
+    },
+    {
+      "claim_id": "f894f76b-c647-4cd0-8266-8c237fd03957",
+      "result_id": "b0e3d9da-fdf9-461a-be9e-180cfc9cef59"
+    },
+    {
+      "claim_id": "8b5f59bf-7059-4d02-a9c2-c06a57d3d04c",
+      "result_id": "b0e3d9da-fdf9-461a-be9e-180cfc9cef59"
+    },
+    {
+      "claim_id": "e1101364-43e1-4ff8-b694-c584bdf3e700",
+      "result_id": "b0e3d9da-fdf9-461a-be9e-180cfc9cef59"
+    },
+    {
+      "claim_id": "ae8c1e5d-d2c6-411b-b2b9-d2cc8a90e8dd",
+      "result_id": "b49807e8-78a1-4193-9f08-57475ba532a3"
+    },
+    {
+      "claim_id": "afedd9e0-cd1b-42b9-b8c4-9d3cad8d5cf4",
+      "result_id": "b49807e8-78a1-4193-9f08-57475ba532a3"
+    },
+    {
+      "claim_id": "37a381a5-48f0-4767-be35-f996bd9d9d7b",
+      "result_id": "b49807e8-78a1-4193-9f08-57475ba532a3"
+    },
+    {
+      "claim_id": "c6929ed2-ff83-412c-ad13-454ed22c27aa",
+      "result_id": "b49807e8-78a1-4193-9f08-57475ba532a3"
+    },
+    {
+      "claim_id": "f691c242-30c8-41f2-af65-8b48b6021321",
+      "result_id": "b49807e8-78a1-4193-9f08-57475ba532a3"
+    },
+    {
+      "claim_id": "a02dbdc9-9713-49ec-b43f-8ca421a50bc8",
+      "result_id": "99c2815e-bbf4-4433-8023-50ccc95e447d"
+    },
+    {
+      "claim_id": "ffdf5820-bde5-4937-b92b-1f993c4d2c69",
+      "result_id": "99c2815e-bbf4-4433-8023-50ccc95e447d"
+    },
+    {
+      "claim_id": "41a7db74-aea1-4fab-9015-a07c876289b2",
+      "result_id": "99c2815e-bbf4-4433-8023-50ccc95e447d"
+    },
+    {
+      "claim_id": "7f3dc06e-f0d4-4e99-867d-3b0656a0fc32",
+      "result_id": "99c2815e-bbf4-4433-8023-50ccc95e447d"
+    },
+    {
+      "claim_id": "e57a090e-7365-4391-ad65-cf5c3a1d9794",
+      "result_id": "99c2815e-bbf4-4433-8023-50ccc95e447d"
+    },
+    {
+      "claim_id": "2ae88e3a-6a89-483b-b7ec-80fefd800a97",
+      "result_id": "99c2815e-bbf4-4433-8023-50ccc95e447d"
+    },
+    {
+      "claim_id": "ff0a09f0-86e5-4483-8c4a-9ae85d2381af",
+      "result_id": "1d2b996f-c0c1-4368-a8a0-49a4fb14ccad"
+    },
+    {
+      "claim_id": "188bbcb6-4d81-4c3b-9a0b-fe5361bc2d39",
+      "result_id": "1d2b996f-c0c1-4368-a8a0-49a4fb14ccad"
+    },
+    {
+      "claim_id": "f9d28d55-6d11-429d-833b-56293333dc42",
+      "result_id": "1d2b996f-c0c1-4368-a8a0-49a4fb14ccad"
+    },
+    {
+      "claim_id": "37069279-34a7-4bc9-8258-60837c257ae5",
+      "result_id": "1d2b996f-c0c1-4368-a8a0-49a4fb14ccad"
+    },
+    {
+      "claim_id": "67b3af2f-0269-4a2c-b5d7-22a5304bc985",
+      "result_id": "1d2b996f-c0c1-4368-a8a0-49a4fb14ccad"
+    },
+    {
+      "claim_id": "e8cad803-f31b-43ca-acdc-9a76956fa587",
+      "result_id": "e8b3a305-6f99-4a61-a0de-6c2cf1923ec0"
+    },
+    {
+      "claim_id": "0f5d2e0b-91e8-4d71-b10f-6d519d5a285c",
+      "result_id": "e8b3a305-6f99-4a61-a0de-6c2cf1923ec0"
+    },
+    {
+      "claim_id": "032987b5-c058-4a30-ba8c-cfb2aea77974",
+      "result_id": "e8b3a305-6f99-4a61-a0de-6c2cf1923ec0"
+    },
+    {
+      "claim_id": "80610506-e07c-4c37-aa51-621ad015a875",
+      "result_id": "e8b3a305-6f99-4a61-a0de-6c2cf1923ec0"
+    },
+    {
+      "claim_id": "f5dd98ee-a7ed-43e3-8000-3765e01b4aa3",
+      "result_id": "e8b3a305-6f99-4a61-a0de-6c2cf1923ec0"
+    },
+    {
+      "claim_id": "aa2390eb-5374-4a6d-9e46-df2ff0771580",
+      "result_id": "e8b3a305-6f99-4a61-a0de-6c2cf1923ec0"
+    },
+    {
+      "claim_id": "b7f6e15d-5a1f-4fbc-b97d-586625eda42a",
+      "result_id": "468ab51d-f8ef-4d0d-ac9f-59d6df10905c"
+    },
+    {
+      "claim_id": "e8b3525e-3a3a-4daa-ae4a-d5e0f207e571",
+      "result_id": "468ab51d-f8ef-4d0d-ac9f-59d6df10905c"
+    },
+    {
+      "claim_id": "250c7a6a-e2cf-4b1e-9656-7e9f1998b545",
+      "result_id": "c2f83c56-3a15-4ea4-bac7-7032cd4562da"
+    },
+    {
+      "claim_id": "04a95164-78be-4346-a671-f05e1a71a01a",
+      "result_id": "c2f83c56-3a15-4ea4-bac7-7032cd4562da"
+    },
+    {
+      "claim_id": "21f5488f-e6d7-4c70-8dca-4d1dd8165473",
+      "result_id": "4fe5ee40-aefa-4286-a16c-a59f226a3afd"
+    },
+    {
+      "claim_id": "2b33090f-17fb-4e6d-b3f8-abacee9bc449",
+      "result_id": "4fe5ee40-aefa-4286-a16c-a59f226a3afd"
+    },
+    {
+      "claim_id": "0bc926a0-168a-42b2-8893-df9393fb5a6d",
+      "result_id": "4fe5ee40-aefa-4286-a16c-a59f226a3afd"
+    },
+    {
+      "claim_id": "18cc0d36-526b-486e-a839-43e595278705",
+      "result_id": "4fe5ee40-aefa-4286-a16c-a59f226a3afd"
+    },
+    {
+      "claim_id": "94ef2479-1850-4bae-9616-2959dc753d12",
+      "result_id": "e8ea5976-a134-4238-a6e2-de32c672adf9"
+    },
+    {
+      "claim_id": "3a6517fe-11ca-4c53-9355-72116a4c7137",
+      "result_id": "e8ea5976-a134-4238-a6e2-de32c672adf9"
+    },
+    {
+      "claim_id": "ca88b90e-f211-4779-82d0-436292fcc953",
+      "result_id": "e8ea5976-a134-4238-a6e2-de32c672adf9"
+    },
+    {
+      "claim_id": "a3e84c8f-dfa2-491f-90db-20b9e657b859",
+      "result_id": "3946a511-9e41-467b-9cde-9185e2eca6bf"
+    },
+    {
+      "claim_id": "40929910-11c4-4e12-8a5c-a5de3cc20dd6",
+      "result_id": "3946a511-9e41-467b-9cde-9185e2eca6bf"
+    },
+    {
+      "claim_id": "716ede54-ef2d-4d7b-bf2f-68d174abaf18",
+      "result_id": "6d7b5bd7-b244-4cdd-ba79-899f6f1dfd55"
+    },
+    {
+      "claim_id": "f7b267eb-e433-42ff-82ff-12c2c60e3495",
+      "result_id": "6d7b5bd7-b244-4cdd-ba79-899f6f1dfd55"
+    },
+    {
+      "claim_id": "c6e2f200-33f5-4b3d-b53b-d3166201bb3d",
+      "result_id": "6d7b5bd7-b244-4cdd-ba79-899f6f1dfd55"
+    },
+    {
+      "claim_id": "902abdb7-243e-444a-84e5-0e740e379f66",
+      "result_id": "970e6730-add2-4d14-a504-e03175dd5d27"
+    },
+    {
+      "claim_id": "5d1039fd-3a69-460f-ba99-306b2d93ab90",
+      "result_id": "970e6730-add2-4d14-a504-e03175dd5d27"
+    },
+    {
+      "claim_id": "f08de1d1-c15d-4d3a-ab35-f4ac860305cf",
+      "result_id": "970e6730-add2-4d14-a504-e03175dd5d27"
+    },
+    {
+      "claim_id": "6e384787-78a6-4cc8-932a-a66b7b5454f5",
+      "result_id": "970e6730-add2-4d14-a504-e03175dd5d27"
+    },
+    {
+      "claim_id": "f6430ed2-75b6-4281-8158-288402509921",
+      "result_id": "970e6730-add2-4d14-a504-e03175dd5d27"
+    },
+    {
+      "claim_id": "cb02afe4-e441-4062-a58d-86ac176483fa",
+      "result_id": "fea8ef74-9200-468d-b785-cbb2e42200e6"
+    },
+    {
+      "claim_id": "c2d1faa8-fcbf-40b4-879b-44bb0cb908ca",
+      "result_id": "fea8ef74-9200-468d-b785-cbb2e42200e6"
+    },
+    {
+      "claim_id": "8bda1927-18bd-4fee-83f5-0d0f8b9020e4",
+      "result_id": "fea8ef74-9200-468d-b785-cbb2e42200e6"
+    },
+    {
+      "claim_id": "bc98519e-2ef6-40ad-921c-557f1dccb89f",
+      "result_id": "f83eba0a-f814-4503-aaf0-8364bcb224f3"
+    },
+    {
+      "claim_id": "611b7ae4-daba-4b8a-b5e6-71e341764041",
+      "result_id": "f83eba0a-f814-4503-aaf0-8364bcb224f3"
+    },
+    {
+      "claim_id": "c8b685b9-c505-4d76-9fd9-d6ee88b42e38",
+      "result_id": "f83eba0a-f814-4503-aaf0-8364bcb224f3"
+    },
+    {
+      "claim_id": "e4a9761b-bd9d-44f3-9787-f48fce0ac344",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "bfb87912-6bcd-4687-befb-eb92f973be70",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "0b714f24-9312-404d-8040-1360d87ea64f",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "bc558043-fff7-48a9-a850-f991a3411f33",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "c0008c71-0f2a-4d4e-8aa3-3ccbb2cd9303",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "77d9a033-0294-4b3e-b867-2796ebd562d9",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "7ca936e9-faad-4e8f-a61e-c8e42956e5b2",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "29623160-ec5d-44ce-947b-78df00dd1e53",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "15630698-ae25-4f24-b8f0-73b657eab13a",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "d10219f5-45ff-413b-af0e-814b19bc4110",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "a6bce997-7c64-47c4-a9f2-287a22b5214c",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "fdce4235-ac88-4d21-bb53-054b8c2bcb5e",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "94901aa8-a450-4319-a47c-a4be0b618ef9",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "975f925a-9188-449f-b55f-e6139a95c1b0",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "fd5ecade-f5e9-43e1-8050-f522bd83f6da",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "f6cf5d89-f537-404f-9a72-dea6996cbc1e",
+      "result_id": "49f93864-235b-44e4-8449-6631fb2f957d"
+    },
+    {
+      "claim_id": "882aa18d-7472-49e2-afdb-5d9647fa0463",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "a14cef33-f280-4cb6-896b-8b1ed34b132a",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "e691f7d8-186b-4e99-b6c5-a03d00edb0dc",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "65ddf4ac-8963-4e09-b6eb-91d82793025a",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "8308ed6c-e66f-42cc-a8b9-58bac07f673b",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "9096e420-0b08-4da5-a5b6-b964b084ee63",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "e55c9d09-d827-4248-9e1b-800544f9cb0e",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "2f5b63ce-5eb6-4d46-b47b-658604ecf1ff",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "effc4aef-861f-409f-a4ba-4b72bd53dc9f",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "4910437f-1230-494b-98da-0511952c093d",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "e2c05f96-a9ff-4a0f-b3e2-a5534059660d",
+      "result_id": "0edca2ce-1306-4a46-a444-7fd74f649066"
+    },
+    {
+      "claim_id": "7ceba161-afe3-455b-a59b-802551dab203",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "081659e6-584c-48fc-b198-e8e70d167291",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "72e60e25-be32-414d-b809-dfb441de32ad",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "6d5b2c8e-ec1e-4d7e-aa4f-10cdc0aa6327",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "7fa75fbc-a37d-45cf-84e2-579f72dafe69",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "2c4dca56-56b0-48dc-be91-a4960ae4f6c3",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "63e4242d-2c69-4513-872c-e2b3670b36ec",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "4634af35-cdf7-47d1-8393-92cf289393f1",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "ac130fc4-14e2-4d30-9307-ae8b0ffbb459",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "0636021a-b6fb-4f42-82c5-21df6cc124ec",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "5acf34ba-3c0c-46fb-9c0e-7617f1539d87",
+      "result_id": "b93ccaad-a380-4afc-99ff-0b1efebe090e"
+    },
+    {
+      "claim_id": "27ccdd12-967c-4076-91ee-a94566d04d3f",
+      "result_id": "3c3ff557-4b47-414c-9ea5-b1099f73b8d9"
+    },
+    {
+      "claim_id": "d29db964-32a6-409e-b5bc-151f0efce649",
+      "result_id": "3c3ff557-4b47-414c-9ea5-b1099f73b8d9"
+    },
+    {
+      "claim_id": "75c943fa-c68a-4d73-bd5d-db94384c5f56",
+      "result_id": "3c3ff557-4b47-414c-9ea5-b1099f73b8d9"
+    },
+    {
+      "claim_id": "565a3916-18cf-463b-b26f-4bdeebcd6dd0",
+      "result_id": "3c3ff557-4b47-414c-9ea5-b1099f73b8d9"
+    },
+    {
+      "claim_id": "b8022c49-57fd-409e-80e2-203fd777a10a",
+      "result_id": "3c3ff557-4b47-414c-9ea5-b1099f73b8d9"
+    },
+    {
+      "claim_id": "ebc980cd-798a-4a67-af40-17dc0644180a",
+      "result_id": "3c3ff557-4b47-414c-9ea5-b1099f73b8d9"
+    },
+    {
+      "claim_id": "357f6cc0-51f8-41bd-8f85-d0bc33893aa4",
+      "result_id": "3c3ff557-4b47-414c-9ea5-b1099f73b8d9"
+    },
+    {
+      "claim_id": "765be247-175e-41b8-ae15-aad2c61253f1",
+      "result_id": "3c3ff557-4b47-414c-9ea5-b1099f73b8d9"
+    }
+  ],
+  "comparisons": []
+}

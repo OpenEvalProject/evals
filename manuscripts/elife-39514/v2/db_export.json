@@ -1,0 +1,1621 @@
+{
+  "submission": {
+    "id": "e7be22d5-a57a-49a0-b207-1ad411de8f25",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:28:41.359547Z",
+    "updated_at": "2025-12-02T06:28:41.359547Z"
+  },
+  "content": [
+    {
+      "id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "submission_id": "e7be22d5-a57a-49a0-b207-1ad411de8f25",
+      "content_type": "manuscript",
+      "content_text": "# Visualization of the type III secretion mediated Salmonella\u2013host cell interface using cryo-electron tomography\n\n## Authors\n\n- Donghyun Park<sup>1</sup> ([ORCID: 0000-0003-2048-6004](https://orcid.org/0000-0003-2048-6004))\n- Maria Lara-Tejero<sup>1</sup>\n- M Neal Waxham<sup>3</sup>\n- Wenwei Li<sup>1</sup>\n- Bo Hu<sup>4</sup>\n- Jorge E Gal\u00e1n<sup>1</sup> ([ORCID: 0000-0002-6531-0355](https://orcid.org/0000-0002-6531-0355))\n- Jun Liu<sup>1</sup> ([ORCID: 0000-0003-3108-6735](https://orcid.org/0000-0003-3108-6735)) \u2020\n\n### Affiliations\n\n1. Department of Microbial Pathogenesis Yale University School of Medicine New Haven United States\n2. Microbial Sciences Institute, Yale University School of Medicine New Haven United States\n3. Department of Neurobiology and Anatomy McGovern Medical School, The University of Texas Health Science Center at Houston Texas United States\n4. Department of Microbiology and Molecular Genetics McGovern Medical School, The University of Texas Health Science Center at Houston Texas United States\n5. Department of Pathology and Laboratory Medicine McGovern Medical School, The University of Texas Health Science Center at Houston Texas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany important gram-negative bacterial pathogens use highly sophisticated type III protein secretion systems (T3SSs) to establish complex host-pathogen interactions. Bacterial-host cell contact triggers the activation of the T3SS and the subsequent insertion of a translocon pore into the target cell membrane, which serves as a conduit for the passage of effector proteins. Therefore the initial interaction between T3SS-bearing bacteria and host cells is the critical step in the deployment of the protein secretion machine, yet this process remains poorly understood. Here, we use high-throughput cryo-electron tomography (cryo-ET) to visualize the T3SS-mediated Salmonella-host cell interface. Our analysis reveals the intact translocon at an unprecedented level of resolution, its deployment in the host cell membrane, and the establishment of an intimate association between the bacteria and the target cells, which is essential for effector translocation. Our studies provide critical data supporting the long postulated direct injection model for effector translocation.\n\n## Introduction\n\nType III secretion systems (T3SSs) are widely utilized by many pathogenic or symbiotic Gram-negative bacteria to directly inject bacterially encoded effector proteins into eukaryotic host cells (Deng et al., 2017; Gal\u00e1n et al., 2014; Notti and Stebbins, 2016). The central element of the T3SS is the injectisome, a multi-protein machine that mediates the selection and translocation of the effectors destined to travel this delivery pathway. The injectisome is highly conserved, both structurally and functionally, across different bacterial species including important pathogens such as Salmonella, Yersinia, Shigella, Pseudomonas and Chlamydia species. It consists of defined substructures such as the needle complex, the export apparatus, and the cytoplasmic sorting platform (Gal\u00e1n et al., 2014; Hu et al., 2017; Loquet et al., 2012; Schraidt and Marlovits, 2011; Worrall et al., 2016). The needle complex is composed of a membrane-anchored base, a protruding needle filament, and a tip complex at the distal end of the needle (Kubori et al., 1998; Schraidt et al., 2010; Schraidt and Marlovits, 2011; Worrall et al., 2016). The export apparatus, which is formed by several inner membrane proteins, functions as the conduit for substrate translocation across the bacterial inner membrane (Dietsche et al., 2016). The sorting platform is a large cytoplasmic multiple-protein complex that orderly selects and delivers the substrates to the export apparatus (Lara-Tejero et al., 2011).\n\nIn many bacterial species the activity of these protein injection machines is stimulated upon contact with the target eukaryotic cell membrane, a process thought to be mediated by the tip complex (Barta et al., 2012; Blocker et al., 2008; Deane et al., 2006; M\u00e9nard et al., 1994; Zierler and Gal\u00e1n, 1995). Host cell contact triggers a cascade of poorly understood events that lead to the deployment of the protein translocases onto the host cell membrane where they form a protein channel that mediates the passage of the effector proteins. In the case of the Salmonella enterica serovar Typhimurium (S. Typhimurium) T3SS encoded within its pathogenicity island 1, the protein translocases are SipB and SipC, which through a process that requires the tip protein SipD, are inserted in the host-cell membrane to form the translocon channel (Collazo and Gal\u00e1n, 1997). Deployment of the translocon also results in the intimate association of the bacteria and the host cell, which is orchestrated by the protein translocases themselves (Lara-Tejero and Gal\u00e1n, 2009; Misselwitz et al., 2011). Despite the critical role of the translocases in intimate attachment and effector translocation, little is known about their structural organization when deployed in the host cell membrane, and previous attempts to visualize them did not provide distinct structural details. This paucity of information is due at least in part to the intrinsic difficulties of imaging bacteria/host cell interactions at high resolution. Here, we used bacterial minicells and cultured mammalian cells combined with high-throughput cryo-ET to study the initial interaction between S. Typhimurium and host cells. This experimental system allowed the visualization of the intact translocon deployed in the host cell membrane, in contact with the tip-complex of the T3SS injectisome, at unprecedented resolution. This study provides new insights into the initial events of the T3SS-mediated bacteria-host cell interactions and highlights the potential of cryo-ET as a valuable tool for investigating the host cell-pathogen interface.\n\n## Results\n\n### In situ structures of the T3SS injectisome in the presence or absence of protein translocases\n\nAn intrinsic property of many T3SSs is that their activity is stimulated by contact with the target host cell membrane (M\u00e9nard et al., 1994; Zierler and Gal\u00e1n, 1995). This interaction results not only in the stimulation of secretion but also in the deployment of the protein translocases in the host cell membrane, a poorly understood process that is orchestrated by the tip complex of the injectisome\u2019s needle filament. In the case of the S. Typhimurium SPI-1 T3SS the tip complex is thought to be composed of a single protein, SipD, which organizes as a pentamer at the tip of the needle filament (Rathinavelan et al., 2014). However, it has been previously proposed that in Shigella spp., in addition to IpaD, a homolog of SipD, the tip complex also contains IpaB, a homolog of SipB (Cheung et al., 2015). To get insight into the structural organization of the tip complex prior to bacterial contact with cultured cells, we compared the in situ structures of fully assembled injectisomes from minicells obtained from wild-type, \u2206sipB, and \u2206sipD S. Typhimurium strains (Figure 1A\u2013D, Table 1). We found that injectisomes from wild-type or the \u2206sipB strains were indistinguishable from one another. In contrast, injectisomes from a \u2206sipD strain exhibited a shorter needle (~45 nm) in comparison to the needle filaments of injectisomes from the wild-type or \u2206sipB strains (~50 nm). These observations suggest that SipD is the only structural component of the tip complex (Figure 1E). To further explore this hypothesis, we examined by cryo-ET the injectisomes of minicells obtained from S. Typhimurium strains expressing FLAG-epitope-tagged versions of SipB, SipC, and SipD, after labeling with anti-FLAG antibodies (Lara-Tejero and Gal\u00e1n, 2009) (Figure 1F\u2013H, Figure 1\u2014figure supplement 1). Only injectisomes from minicells obtained from the strain expressing SipD-FLAG showed the antibodies bound to the needle tip (Figure 1H, Figure 1\u2014figure supplement 1D,I). This observation is consistent with the notion that, prior to cell contact, SipD is the main, and most likely only component of the tip-complex (Lara-Tejero and Gal\u00e1n, 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig1-v2.jpg)\n\n**Figure 1.:** (A) A central section of a tomogram showing S. Typhimurium minicell containing multiple injectisomes. (B\u2013D) Central sections of sub-tomogram averages showing injectisomes of WT, \u0394sipB, and \u0394sipD, respectively. (E) A schematic of the injectisome. Outer membrane (OM), peptidoglycan (PG), sorting platform, and inner membrane (IM) of S. Typhimurium are annotated. (F\u2013H) Central sections of tomograms showing injectisomes from strains expressing epitope-tagged (FLAG) SipB, SipC, and SipD, respectively. Yellow arrow indicates antibody bound to the epitope-tag.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) sipB-FLAG, (B) sipC-FLAG, (C) antibody-free sipD-FLAG, and (D) antibody-bound sipD-FLAG needles. (E-H) Sub-tomogram averages of FLAG-epitope-tagged S. Typhimurium strains shown in panels (A-D), respectively. Yellow arrows indicate anti-FLAG antibodies bound to the epitope-tag. (I) Quantification of anti-FLAG antibody bound needles.\n\n**Table 1.**\n Needle lengths of S. Typhimurium WT, \u0394sipB, \u0394sipD and \u0394sipBCD cells.A summary of statistical measures including needle length average, standard deviation, and standard error of mean. Data were compared using an unpaired t test.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Sample size</th>\n      <th>Average (nm)</th>\n      <th>Standard Deviation</th>\n      <th>Standard Error of Mean(nm)</th>\n      <th>P value campared to WT</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT</td>\n      <td>135</td>\n      <td>51.0</td>\n      <td>4.8</td>\n      <td>0.42</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u2206sipB</td>\n      <td>46</td>\n      <td>50.6</td>\n      <td>4.0</td>\n      <td>0.59</td>\n      <td>0.62</td>\n    </tr>\n    <tr>\n      <td>\u2206sipD</td>\n      <td>61</td>\n      <td>46.5</td>\n      <td>3.9</td>\n      <td>0.50</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>\u2206sipBCD</td>\n      <td>46</td>\n      <td>45.3</td>\n      <td>3.0</td>\n      <td>0.44</td>\n      <td>&lt;0.0001</td>\n    </tr>\n  </tbody>\n</table>\n\n### High-resolution imaging of the T3SS mediated Salmonella-host cell interface\n\nIt is well established that effector translocation through the T3SS requires an intimate association between the bacteria and the host cell (Grosdent et al., 2002). It has also been previously demonstrated that such intimate attachment requires an intact type III secretion machine, and in particular, the protein translocases, which most likely mediate such bacteria/host cell interaction (Lara-Tejero and Gal\u00e1n, 2009). Despite its central role in effector translocation, however, very little is known about the architecture of this specialized host/bacteria interface. This is largely because of the lack of amenable experimental approaches that would allow a detail view of this interface. Cryo-ET is uniquely suited to examine host/pathogen interactions at high resolution. However, sample thickness limits the utility of this approach. To get around this limitation we used bacterial minicells as a surrogate for whole bacteria since it has been previously shown that they are capable of assembling functional T3SS injectisomes that can deliver de novo synthesized T3SS substrates into cultured cells (Carleton et al., 2013). However, minicells are inefficient at triggering membrane ruffling, actin filament remodeling, and bacterial internalization due to inefficient partitioning of the effector proteins that trigger these responses. Consequently, while minicells are proficient at establishing a T3SS-mediated intimate association with cultured epithelial cells, they are inefficient at triggering their own internalization thus remaining firmly attached on the cell surface. These features make them ideally suited for high-resolution cryo-ET imaging. Therefore, we applied bacterial minicells obtained from wild-type S. Typhimurium onto cultured epithelial cells grown on cryo-EM grids. We found that the periphery of adherent cells is sufficiently thin (<500 nm) for high-resolution imaging (Figure 2\u2014figure supplement 1). We readily observed T3SS injectisomes at the interface between minicells and the plasma membrane of cultured epithelial cells (Figure 2A,B). We found that in the presence of the injectisomes, the spacing between the surface of the S. Typhimurium minicells and the cultured-cell plasma membrane was\u00a0~50 nm, which matches the needle length of the injectisome imaged prior to their application to cultured cells (Figure 2\u2014figure supplement 2A\u2013F,M). The orientation of the injectisomes in the bacteria/target cell interface was perpendicular relative to the host PM, and the needle of the host-interacting injectisomes appeared straight (Figure 2C). We also observed that the interaction of the injectisome and the target cell resulted in a noticeable inward bend of the PM (Figure 2C, Video 1). Consistent with this observation, the distance between the bacterial cell and the PM was shorter (~30 nm) than the distance observed in areas immediately adjacent to the injectisomes (Figure 2\u2014figure supplement 2A\u2013L). However, we did not observe any sign of penetration of the needle filament through the host cell plasma membrane as it has been previously proposed (Hoiczyk and Blobel, 2001). The length of the bacterial-envelope-embedded injectisome base substructure before (30.5\u00a0\u00b1\u00a02.3 nm) and after (30.8\u00a0\u00b1\u00a02.2 nm) the bacteria/target cell interactions remained unchanged (Figure 2\u2014figure supplement 2M,N). This is in contrast to the Chlamydia T3SS, which has been reported to undergo significant conformational changes upon contact with host cells (Nans et al., 2015). The reasons for these differences are unclear and may either reflect intrinsic differences between these T3SS, or differences in the methodology used, which resulted in higher resolution of the visualized S. Typhimurium T3SS structures. Together, these observations indicate that (1) the interactions of the T3SS injectisome with the target cell results in the bending of the PM without penetration of the needle filament, and (2) upon contact with target cells the injectisome does not undergo conformational changes that could be seen at this level of resolution.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig2-v2.jpg)\n\n**Figure 2.:** (A) A central slice showing a S. Typhimurium minicell interacting with a host. Plasma membrane (PM) of HeLa cell, outer membrane (OM) and inner membrane (IM) of S. Typhimurium are annotated. (B) 3D rendering of the tomogram shown in (A). (C) Tomographic slices showing injectisomes interacting with the host PM. Blue arrows indicate needles attached to the host PM. Direction of the arrow represents the angle of needle perpendicular to the host PM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Phase contrast microscopy image of HeLa cells grown on a gold Quantifoil grid. (B) A zoom-in view of the boxed area in panel a. (C) A snapshot of HeLa cell edge in a low-magnification montage. (D) Tomographic slice of the boxed area in panel C showing cellular features such as actin filaments and microtubules.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A-C) Central slices of tomograms showing different Salmonella - host cell contacts in the presence of T3SS injectisomes. (D-F) The zoom-in views of the boxed regions in the tomographic slices from panels (A-C) respectively. (G-I) Central slices of tomograms showing different Salmonella - host cell contacts without the presence of T3SS injectisomes. (J-L) The zoom-in views of the boxed regions in the tomographic slices from panels (G-I), respectively. Plasma membrane (PM) of HeLa cell, outer membrane (OM) and cytoplasmic membrane (CM) of S. Typhimurium are annotated. (M) Average membrane spacing between S. Typhimurium minicells and HeLa cells at different positions as indicated across the bottom of the bar graph. Error bars indicate s.e.m. Data were compared using an unpaired t test. (N) A summary of statistical measures including average, standard deviation, and standard error of mean.\n\n![Video 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-video1.mp4.jpg)\n\n### Visualization of the formation of the translocon in the target host cell membrane\n\nThe deployment of the translocon is an essential step in the T3SS-mediated delivery of effector proteins. However, very little information is available on both, the architecture of the assembled translocon, as well as the mechanisms leading to its deployment on the target cell. It is believed that the deployment process must be initiated by a sensing step most likely mediated by the tip complex (i.e. SipD), a step that must be followed by the subsequent secretion of the translocon components (i.e. SipB and SipC) destined to be inserted on the target eukaryotic cell PM. To capture the formation of the translocon, we analyzed over 600 injectisomes adjacent to the host PM. Classification of sub-tomograms depicting the region of the tip complex (Figure 3A) showed the PM at various conformations and distances to the needle tip (Figure 3B\u2013I), which presumably represent intermediate steps prior to the deployment of the translocon and the resulting intimate attachment of the bacteria to the PM. After further alignment and classification of the injectisomes in intimate association with the PM, we obtained a distinct structure of the putative translocon in the host PM (Figure 3J). Sub-tomogram averages of injectisomes from the S. Typhimurium translocase-deficient mutants \u0394sipB or \u0394sipD in close proximity to the target cell PM did not show this distinct structure (Figure 3K,L), thus confirming that this density most likely corresponds to the assembled translocon. To better visualize the translocon in 3D, we segmented the distinct translocon structure in the context of the host PM, the needle, and its tip complex (Figure 3M,N). We found that the translocon has a thickness of 8.1 nm spanning the host PM and a diameter of 13.5 nm on its protruding portion (Figure 3J). This size is substantially smaller than reported size of the translocon of enteropathogenic E. coli assembled from purified proteins in vitro, which was estimated to be 55\u201365 nm in diameter (Ide et al., 2001). One half of the translocon is embedded in the host PM, while the other half protrudes towards the host cytoplasm. In the middle of the protruded portion, we observed a hemispherical hole, which may represent the channel through which effectors make their way into the target cell plasma membrane (Figure 3N). The presence of this structure is entirely consistent with the long-standing notion that the translocon forms a conduit through the host PM to facilitate the translocation of effectors (Mueller et al., 2008).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig3-v2.jpg)\n\n**Figure 3.:** (A) A schematic representation of the S. Typhimurium injectisome with a box highlighting the area used for alignment and classification. (B\u2013E) Central sections and (F\u2013I) 3-D surface views of class averages showing different spacings between the needle and the plasma membrane (PM). (J\u2013L) Central sections of the sub-tomogram averages of the interface between the host PM and the needle of WT, \u0394sipB, and \u0394sipD, respectively. (M) Cross-section and (N) diagonal view of the surface rendering of the translocon in panel (J).\n\nComparison of the arrangement of the injectisomes in relation to the target cell PM in wild-type and translocase-deficient strains revealed marked differences. In comparison to wild-type, bacterial cells obtained from translocase-deficient mutants showed a smaller proportion of injectisomes attached to the host PM (Figure 4A). We also noticed that, unlike wild-type injectisomes, which most often appeared perpendicular to the target cell PM (Figure 2C), the injectisomes from the translocase deficient mutant strains \u0394sipB, \u0394sipD, or \u0394sipBCD appeared arranged at various angles relative to the PM (Figure 4B\u2013J, Figure 4\u2014figure supplement 1). These observations are consistent with the observations indicating that in the absence of the translocases, the injectisomes do not intimately attach to the target cell PM (Lara-Tejero and Gal\u00e1n, 2009). These data also further support the notion that the distinct structure embedded in host membrane in close apposition to the T3SS injectisome needle tip is formed by the translocon.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig4-v2.jpg)\n\n**Figure 4.:** (A) Percentage of minicells attached to the host membrane via needle-membrane contact. Data were compared using a chi-squared test. (B, C) Central slices from tomograms showing the \u0394sipBCD injectisomes interacting with the host PM. (E, F) Central slices from tomograms showing the \u0394sipB injectisomes interacting with the host PM. (H, I) Central slices from tomograms showing the \u0394sipD injectisomes interacting with the host PM. Blue arrows indicate needles attached to the host PM. Red arrows indicate unattached needles. (D, G, J) Schematic models depicting needle-attachment patterns from three mutants, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Central slices from representative tomograms showing (A) host-free and (B) host-interacting S. Typhimurium minicells from WT, \u0394sipB, \u0394sipD, \u0394sipBCD, and \u0394spaO strain.\n\nOne of the striking features associated with the intimate T3SS mediated contact and the formation of the translocon is the target cell PM remodeling around the translocon-injectisome needle tip interface, appearing in a \u2018tent-like\u2019 conformation (Figure 2C, Video 1). This feature is likely the result of the close association between the bacteria and the target cell presumably mediated not only by the T3SS but also by multiple additional adhesins encoded by S. Typhimurium. In fact, the distance of the bacteria OM and the target cell is shorter than the length of the needle itself, which results in the bending of the target cell PM and the \u2018tent-like\u2019 conformation around the injectisome target cell PM interface. It is possible that this intimate association may facilitate the T3SS-mediated translocation of effector proteins (Figure 5, Video 2). These observations are also consistent with previous reports indicating that needle length, which presumably influences the ability of the bacteria to \u2018push\u2019 the needle against the host cell membrane, does contribute to type III secretion translocation efficiency (Mota et al., 2005).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig5-v2.jpg)\n\n**Figure 5.:** (A) A schematic diagram of S. Typhimurium interacting with the host cell. (B) Molecular model of the T3SS injectisome at the Salmonella-host cell interface.\n\n![Video 2.](https://cdn.elifesciences.org/articles/39514/elife-39514-video2.mp4.jpg)\n\n## Discussion\n\nWe have presented here a high-resolution view of the interface between the S. Typhimurium T3SS injectisome and the target eukaryotic cell plasma membrane, which has provided new details on the intimate attachment of this pathogen that precedes T3SS-mediated effector protein translocation. Notably, we observed a well-defined \u2018bend\u2019 on the target cell membrane in areas of the bacteria/host cell membrane interface surrounding the needle filament. These observations reflect the intimate attachment that is known to be required for optimal T3SS-mediated effector translocation. Importantly, we have been able to visualize a distinct density within the region of the target host cell membrane in close apposition to the needle tip of the T3SS injectisome. We present evidence that this density corresponds to the deployed T3SS translocon since this density was absent in the bacteria/PM interface of mutant bacteria that lack the translocon components. It has been previously shown that protein translocases SipB and SipC form a complex in the host membrane (Hayward and Koronakis, 1999; Myeni et al., 2013). Single-molecule fluorescence photobleaching experiments in a Pseudomonas aeruginosa T3SS further suggested that two translocases form a hetero-complex of defined stoichiometry in a membrane bilayer (Romano et al., 2016). Although our in situ structure of the translocon is not sufficient in detail to determine its stoichiometry, it appears to be large enough to accommodate multiple copies of SipB/SipC complex. The translocon is partially embedded in the host membrane. A large portion of the translocon extends towards the host cytoplasm, which is consistent with results in P. aeruginosa showing that the translocase PopB is stably inserted into lipid bilayers with its N-terminal domain and C-terminal ends exposed to the host cytoplasm (Discola et al., 2014). The dimensions of the in situ translocon structure determined in this study (~13.5 nm in diameter, 8 nm in thickness) are much smaller than previous estimates (50\u201365 nm in diameter) obtained from the observation of EPEC translocons assembled from purified components on red blood cells (Ide et al., 2001). It is unlikely that these differences may reflect substantial differences between the dimensions of translocons from different T3SSs. It is possible that the observed differences may reflect differences in the experimental approaches used in the different studies. However, most likely these observations indicate fundamental differences in the translocon assembly mechanisms from purified components in comparison to translocon assembly during bacteria/target cell membrane interactions. It is well established that the deployment of the translocon during bacterial infections is orchestrated by the tip complex of the T3SS injectisome. In the absence of the tip protein, the components of the translocon are very efficiently secreted but they are unable to form the translocon (Kaniga et al., 1995; M\u00e9nard et al., 1994). It is therefore possible that the insertion in the membrane of the purified translocon components in the absence of the tip protein may lead to a structure that is substantially different from the one that results from the interaction of bacteria with target cells.\n\nContrary to what has been previously proposed for the Chlamydia T3SS (Nans et al., 2015), we did not observe any obvious conformational changes in the injectisomes prior and post interaction with host cells. It is unlikely that these observations are an indication of fundamental differences between the T3SS injectisomes in different bacteria. Rather, the differences observed might reflect differences in the experimental approaches used in our studies, which resulted in a substantially higher resolution.\n\nIn summary, our studies have provided a close-up view of the interface between the T3SS injectisome and the target cell PM, which has resulted in the visualization of the deployed T3SS translocon complex. Importantly, given the highly conserved nature of the T3SSs among many Gram-negative bacteria, our studies have broad scientific implications and provide a paradigm for the study of host-pathogen interactions in a greater detail.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resources</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>SB1780 (Salmonella enterica serovar Typhymurium SL1344)</td>\n      <td>PMID: 23481398</td>\n      <td>minD::cat (wt)</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>SB3542</td>\n      <td>This study</td>\n      <td>\u0394sipB minD::cat</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>SB3543</td>\n      <td>This study</td>\n      <td>\u0394sipD minD::cat</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>SB3141</td>\n      <td>This study</td>\n      <td>\u0394sipBCD minD::cat</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>SB3046</td>\n      <td>PMID: 28283062</td>\n      <td>\u0394spaO minD::cat</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>SB3544</td>\n      <td>This study</td>\n      <td>sipB3xFLAG minD::cat</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>SB3545</td>\n      <td>This study</td>\n      <td>sipB3xFLAG minD::cat</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>SB3546</td>\n      <td>This study</td>\n      <td>sipB3xFLAG minD::cat</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent</td>\n      <td>pSB3292 (Plasmid)</td>\n      <td>PMID: 28283062</td>\n      <td>hilA in pBAD24</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent</td>\n      <td>minD::cat P22 (P22 bacteriophage lysate)</td>\n      <td>Gal\u00e1n Laboratory (Yale University)</td>\n      <td>P22 lysate from SB1780 S. Typhimurium strain</td>\n      <td>Source of minD:: cat allele</td>\n    </tr>\n    <tr>\n      <td>Cell line</td>\n      <td>HeLa</td>\n      <td>ATCC</td>\n      <td>Hela (ATCC CCL-2)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>M2</td>\n      <td>Sigma-Aldrich</td>\n      <td>F3165</td>\n      <td>1:1000 by volume</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>LB Broth</td>\n      <td>Fisher BioReagents</td>\n      <td>BP1426</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>LB Agar</td>\n      <td>Fisher BioReagents</td>\n      <td>BP1425</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>L-arabinose</td>\n      <td>VWR</td>\n      <td>1B1473</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ampicillin Sodium Salt</td>\n      <td>Fisher BioReagents</td>\n      <td>BP1760-25</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Gold grid</td>\n      <td>Quantifoil</td>\n      <td>R 2/1 on Au 200 mesh</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SerialEM</td>\n      <td>PMID: 16182563</td>\n      <td>http://bio3d.colorado.edu/SerialEM/</td>\n      <td>Data acquisition</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>PMID: 28250466</td>\n      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>\n      <td>Motion correction</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Tomoauto</td>\n      <td>PMID: 26863591</td>\n      <td>https://github.com/DustinMorado/tomoauto</td>\n      <td>Tomogram reconstruction</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Tomo3D</td>\n      <td>PMID: 25528570</td>\n      <td>https://sites.google.com/site/3demimageprocessing/tomo3d</td>\n      <td>Tomogram reconstruction</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IMOD</td>\n      <td>PMID: 8742726</td>\n      <td>http://bio3d.colorado.edu/imod/</td>\n      <td>Tomogram reconstruction</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>I3</td>\n      <td>PMID: 16973379</td>\n      <td>http://www.electrontomography.org/</td>\n      <td>Sub-tomogram averaging</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>PMID: 15264254</td>\n      <td>http://www.cgl.ucsf.edu/chimera/</td>\n      <td>3D rendering</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF ChimeraX</td>\n      <td>PMID: 28710774</td>\n      <td>https://www.rbvi.ucsf.edu/chimerax/</td>\n      <td>3D rendering</td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial strains\n\nThe minicell producing S.Typhimurium \u0394minD, which is referred to in this study as wild-type, has been previously described (Carleton et al., 2013; Hu et al., 2017). Mutations in the genes encoding the translocases (\u2206sipB, \u2206sipC) or tip complex (\u2206sipD) proteins where introduced in into the \u2206minD S. Typhimurium strain by allelic exchange as previously described (Lara-Tejero et al., 2011). The strains were listed in Key Resources Table.\n\n### Isolation of minicells\n\nMinicell producing bacterial strains were grown overnight at 37\u00b0C in LB containing 0.3M NaCl. Fresh cultures were prepared from a 1:100 dilution of the overnight culture and then grown at 37\u00b0C to late log phase in the presence of ampicillin (200 \u03bcg/mL) and L-arabinose (0.1%) to induce the expression of regulatory protein HilA and thus increase the number of injectisomes partitioning to the minicells (Carleton et al., 2013). To enrich for minicells, the culture was centrifuged at 1000 x g for 5 min to remove bacterial cells, and the supernatant fraction was further centrifuged at 20,000 x g for 20 min to collect the minicells. The minicell pellet was resuspended in Dulbecco\u2019s Modified Eagles Medium (DMEM) prior to their application to cultured HeLa cells.\n\n### Antibody labeling\n\nMinicells expressing 3xFLAG-epitope-tagged versions of SipB, SipC, and SipD were incubated with a saturating amount of anti-FLAG antibody (1:1000 by volume) for 30 min at room temperature. After incubation, minicells were pelleted and resuspended in a fresh LB broth containing ampicillin (200 \u03bcg/ml) for 3 times to remove unbound antibodies.\n\n### HeLa cell culture on EM grid and infection\n\nHeLa cells were cultured in DMEM supplemented with 10% fetal bovine serum and gentamicin (50 \u03bcg/ml). The day before plating, gold EM grids with 2/1 Quantifoil were placed in glass bottom MatTek dishes (facilitating fluorescence imaging and removal for cryo-preservation) and coated with 0.1 mg/ml poly-D-lysine overnight at 37\u00b0C. After rinsing the grids with sterile water, freshly trypsinized HeLa cells were plated on top of the pre-treated grids that were allowed to grow overnight at 37\u00b0C/5% CO2. To infect HeLa cells with S. Typhimurium minicells, grids with adherent HeLa cells were removed from the culture dish and minicells were directly applied to the grids.\n\n### Vitrification and cryoEM sample preparation\n\nAt different time points after infection, the EM grids with HeLa cells and S. Typhimurium minicells were blotted with filter paper and vitrified in liquid ethane using a gravity-driven plunger apparatus as described (Hu et al., 2017; Hu et al., 2015).\n\n### Cryo-ET data collection and reconstruction\n\nThe frozen-hydrated specimens were imaged with 300kV electron microscopes. 713 tomograms were acquired from single-axis tilt series at\u00a0~6 \u03bcm defocus with cumulative does of \u223c80 e\u2212/\u00c52 using Polara equipped with a field emission gun and a direct detection device (Gatan K2 Summit). 313 tomograms were acquired from single-axis tilt series at\u00a0~1 \u03bcm defocus with cumulative does of \u223c50 e\u2212/\u00c52 using Titan Krios equipped with a field emission gun, an energy filter, Volta phase plate, and a direct detection device (Gatan K2 Summit). The tomographic package SerialEM (Mastronarde, 2005) was utilized to collect 35 image stacks at a range of tilt angles between \u221251\u00b0 and\u00a0+51\u00b0 for each data set. Each stack contained 10\u201315 images, which were first aligned using Motioncorr (Li et al., 2013) and were then assembled into the drift-corrected stacks by TOMOAUTO (Hu et al., 2015). The drift-corrected stacks were aligned and reconstructed by using marker-free alignment (Winkler and Taylor, 2006) or IMOD marker-dependent alignment (Kremer et al., 1996). In total, 1051 tomograms (3,600\u00a0\u00d7\u00a03,600\u00a0\u00d7\u00a0400 pixels) were generated for detailed examination of the Salmonella-host interactions (Table 2). The softwares used in the study were listed in Key Resources Table.\n\n**Table 2.**\n Number of tomograms collected and analyzed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Number of tomograms collected</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT - HeLa</td>\n      <td>458</td>\n    </tr>\n    <tr>\n      <td>\u0394sipB - HeLa</td>\n      <td>46</td>\n    </tr>\n    <tr>\n      <td>\u0394sipD - HeLa</td>\n      <td>52</td>\n    </tr>\n    <tr>\n      <td>\u0394sipBCD - HeLa</td>\n      <td>86</td>\n    </tr>\n    <tr>\n      <td>\u0394spaO - HeLa</td>\n      <td>84</td>\n    </tr>\n    <tr>\n      <td>WT minicells</td>\n      <td>85</td>\n    </tr>\n    <tr>\n      <td>\u0394sipB minicell</td>\n      <td>115</td>\n    </tr>\n    <tr>\n      <td>\u0394sipD minicell</td>\n      <td>142</td>\n    </tr>\n    <tr>\n      <td>sipB-FLAG - HeLa</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>sipC-FLAG - HeLa</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>sipD-FLAG - HeLa</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>sipB-FLAG</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>sipB-FLAG</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>sipB-FLAG</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>1051</td>\n    </tr>\n  </tbody>\n</table>\n\n### Sub-tomogram analysis\n\nSub-tomogram analysis was accomplished as described previously (Hu et al., 2015) to analyze over 700 injectisomes extracted from 458 tomograms. Briefly, we first identified the injectisomes visually on each minicell. Two coordinates along the needle were used to estimate the initial orientation of each particle assembly. For initial analysis, 4\u00a0\u00d7\u00a04\u00a0\u00d7\u00a04 binned sub-tomograms (128\u00a0\u00d7\u00a0128\u00a0\u00d7\u00a0128 voxels) of the intact injectisome were used for alignment and averaging by using the tomographic package I3 (Winkler and Taylor, 2006; Winkler et al., 2009). Then multivariate statistical analysis and hierarchical ascendant classification were used to analyze the needle tip complex (Winkler et al., 2009).\n\n### 3-D visualization and molecular modeling\n\nOuter membrane (OM) and inner membrane (IM) of S. Typhimurium, Plasma membrane (PM) of HeLa cells, actin filaments, and ribosomes were segmented using EMAN2 (Chen et al., 2017). UCSF Chimera (Pettersen et al., 2004) and UCSF ChimeraX (Goddard et al., 2018) were used to visualize the sub-tomogram average structures in 3-D and build atomic model of the T3SS injectisome. The atomic model was built as described briefly (Hu et al., 2017) except for the basal body, which we docked PDB-5TCR (Worrall et al., 2016) and PDB-3J1W (Bergeron et al., 2013). Video clips for the supplemental videos were generated using UCSF Chimera, UCSF Chimera X, and IMOD, and edited with iMovie.\n\n### Distance measurement and statistical analysis\n\nIMOD (3dmod Graph) was used to measure lengths (in pixels) of various features. Each measurement was recorded in MS Excel for statistical analysis: Mean, standard deviation, standard error of mean, and Welch\u2019s t-test.\n",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "84f4370e-4fc5-4b5f-a3ea-cb589da7a5a1",
+      "submission_id": "e7be22d5-a57a-49a0-b207-1ad411de8f25",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrea Musacchio, Max Planck Institute of Molecular Physiology Germany\n- Kim Orth, Howard Hughes Medical Institute, University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39514.017](https://doi.org/10.7554/eLife.39514.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Visualization of the type III secretion mediated Salmonella-host cell interface using cryo-electron tomography\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Andrea Musacchio as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Eric Cascales (Reviewer #1); Samuel Wagner (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nBased on all of the three reviews, the work can be described with the reviewer's assessment that this \"is a beautiful new look into the biology of the T3SS (Type 3 Secretion System) employing cutting edge methods to get at decades-old, unsolved questions in how this critical virulence system functions.\"\n\nEssential revisions:\n\nHowever, the following concerns brought up by reviewers are valid:\n\n1) It is not entirely convincing to use the antibody-based approach to label SipB, SipC and SipD. The extra-density shown at the needle tip in Figure 1H could correspond to anything. Additional data should be provided to support the claim that this extra-density corresponds to an antibody specifically bound to the tip (and not random background). May be an anti-FLAG antibody coupled to anything (additional enzymatic domain, gold particle, etc.) will be sufficient.\n\n2) Similarly, there is no proof that the extra-density in Figure 3J corresponds to the translocon rather than host cell membrane rearrangements upon needle attachment. Here again, supplementary data should be provided to unambiguously support the author's statement.\n\n3) The study is lacking rigorous statistical analyses and significance. For most of the experiments, the sample size, the standard deviation and the statistical significance are missing. These should be added for the final submission.\n\n4) Some discussion of previous work relating to the transmembrane topology and stoichiometry of translocator proteins are missing.\n\n- Translocon structure with cytoplasmic protrusion suggests that most of the translocon protein is on the cytoplasmic side of the membrane. This is in contrast to previous studies on the topologies of the Pseudomonas homologs of these proteins. See Discola et al., 2014.\n\n- Please reflect on the finding here and the stoichiometries reported for in vitro reconstituted Pseudomonas translocons: Romano et al., 2016.\n\n- Furthermore, the \"tent-like\" PM around the translocon suggests that considerable tension is required for proper filament-tip-translocon interaction and injection of proteins. Please discuss this in the light of the \"Needle length does matter\" findings by the Cornelis group. Mota et al., 2005.\n",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "984943a3-6a34-4e61-8dd6-9139df17051b",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C1",
+      "claim": "Many important gram-negative bacterial pathogens use type III protein secretion systems (T3SSs) to establish complex host-pathogen interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Many important gram-negative bacterial pathogens use highly sophisticated type III protein secretion systems (T3SSs) to establish complex host-pathogen interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about T3SSs supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "264f6462-8ba3-48e2-a318-012399fb60db",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C2",
+      "claim": "Bacterial-host cell contact triggers the activation of the T3SS.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial-host cell contact triggers the activation of the T3SS and the subsequent insertion of a translocon pore into the target cell membrane, which serves as a conduit for the passage of effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field of T3SS biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "0750200e-ed29-4ef7-a858-920f504cb683",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C3",
+      "claim": "The translocon pore serves as a conduit for the passage of effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial-host cell contact triggers the activation of the T3SS and the subsequent insertion of a translocon pore into the target cell membrane, which serves as a conduit for the passage of effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about T3SS function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "ae8242e3-84b9-46dc-a860-7280f56063e4",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C4",
+      "claim": "The study reveals the intact translocon at an unprecedented level of resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis reveals the intact translocon at an unprecedented level of resolution, its deployment in the host cell membrane, and the establishment of an intimate association between the bacteria and the target cells, which is essential for effector translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cryo-ET data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "84859ff2-e5fe-489a-94dc-5f5c53a302a1",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C5",
+      "claim": "An intimate association between bacteria and target cells is essential for effector translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis reveals the intact translocon at an unprecedented level of resolution, its deployment in the host cell membrane, and the establishment of an intimate association between the bacteria and the target cells, which is essential for effector translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the observations in the study and previous knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "352d833d-ce26-4678-8ae7-25a6fbe2f29a",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C6",
+      "claim": "The studies provide critical data supporting the direct injection model for effector translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies provide critical data supporting the long postulated direct injection model for effector translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data obtained from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "5d523a76-453f-48f9-807c-a3d42e57b9e7",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C7",
+      "claim": "Type III secretion systems are widely utilized by many pathogenic or symbiotic Gram-negative bacteria to directly inject bacterially encoded effector proteins into eukaryotic host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Type III secretion systems (T3SSs) are widely utilized by many pathogenic or symbiotic Gram-negative bacteria to directly inject bacterially encoded effector proteins into eukaryotic host cells (Deng et al., 2017; Gal\u00e1n et al., 2014; Notti and Stebbins, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "72a42767-d126-4443-ba7f-5d03f8e0c3de",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C8",
+      "claim": "The injectisome is highly conserved, both structurally and functionally, across different bacterial species including Salmonella, Yersinia, Shigella, Pseudomonas and Chlamydia species.",
+      "claim_type": "EXPLICIT",
+      "source": "The injectisome is highly conserved, both structurally and functionally, across different bacterial species including important pathogens such as Salmonella, Yersinia, Shigella, Pseudomonas and Chlamydia species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "9ff6d91d-f373-4492-b0d9-2068e027825d",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C9",
+      "claim": "The injectisome consists of defined substructures such as the needle complex, the export apparatus, and the cytoplasmic sorting platform.",
+      "claim_type": "EXPLICIT",
+      "source": "It consists of defined substructures such as the needle complex, the export apparatus, and the cytoplasmic sorting platform (Gal\u00e1n et al., 2014; Hu et al., 2017; Loquet et al., 2012; Schraidt and Marlovits, 2011; Worrall et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "ae97f47f-6c5b-444d-8124-7d1b71925639",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C10",
+      "claim": "The needle complex is composed of a membrane-anchored base, a protruding needle filament, and a tip complex at the distal end of the needle.",
+      "claim_type": "EXPLICIT",
+      "source": "The needle complex is composed of a membrane-anchored base, a protruding needle filament, and a tip complex at the distal end of the needle (Kubori et al., 1998; Schraidt et al., 2010; Schraidt and Marlovits, 2011; Worrall et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "6576f332-5d74-4304-86d9-4c4dd4647d0a",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C11",
+      "claim": "The export apparatus functions as the conduit for substrate translocation across the bacterial inner membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The export apparatus, which is formed by several inner membrane proteins, functions as the conduit for substrate translocation across the bacterial inner membrane (Dietsche et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "3c4182cf-9384-4a26-9540-879c816670ba",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C12",
+      "claim": "The sorting platform orderly selects and delivers the substrates to the export apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "The sorting platform is a large cytoplasmic multiple-protein complex that orderly selects and delivers the substrates to the export apparatus (Lara-Tejero et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "4e8696d6-257f-4a7e-ac42-f04d9387b378",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C13",
+      "claim": "In many bacterial species the activity of protein injection machines is stimulated upon contact with the target eukaryotic cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In many bacterial species the activity of these protein injection machines is stimulated upon contact with the target eukaryotic cell membrane, a process thought to be mediated by the tip complex (Barta et al., 2012; Blocker et al., 2008; Deane et al., 2006; M\u00e9nard et al., 1994; Zierler and Gal\u00e1n, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "d6e3114b-54c6-4d9d-b55f-12cf704f5863",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C14",
+      "claim": "The tip complex mediates the stimulation of T3SS activity upon host cell contact.",
+      "claim_type": "EXPLICIT",
+      "source": "In many bacterial species the activity of these protein injection machines is stimulated upon contact with the target eukaryotic cell membrane, a process thought to be mediated by the tip complex (Barta et al., 2012; Blocker et al., 2008; Deane et al., 2006; M\u00e9nard et al., 1994; Zierler and Gal\u00e1n, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents current understanding in the field.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "5807d3d2-dca2-4541-86c9-0f891c6b22ca",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C15",
+      "claim": "In the Salmonella enterica serovar Typhimurium T3SS encoded within pathogenicity island 1, the protein translocases are SipB and SipC.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the Salmonella enterica serovar Typhimurium (S. Typhimurium) T3SS encoded within its pathogenicity island 1, the protein translocases are SipB and SipC, which through a process that requires the tip protein SipD, are inserted in the host-cell membrane to form the translocon channel (Collazo and Gal\u00e1n, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "a5089155-b2fb-4083-a4e0-7bef732787c8",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C16",
+      "claim": "SipB and SipC are inserted in the host-cell membrane to form the translocon channel through a process that requires the tip protein SipD.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the Salmonella enterica serovar Typhimurium (S. Typhimurium) T3SS encoded within its pathogenicity island 1, the protein translocases are SipB and SipC, which through a process that requires the tip protein SipD, are inserted in the host-cell membrane to form the translocon channel (Collazo and Gal\u00e1n, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "3d4073f2-2404-4a87-82e7-1dfdaedaed2d",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C17",
+      "claim": "Deployment of the translocon results in the intimate association of the bacteria and the host cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Deployment of the translocon also results in the intimate association of the bacteria and the host cell, which is orchestrated by the protein translocases themselves (Lara-Tejero and Gal\u00e1n, 2009; Misselwitz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "af1b4c6e-a971-41b6-98ed-b94804d882f0",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C18",
+      "claim": "The intimate association between bacteria and host cell is orchestrated by the protein translocases themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Deployment of the translocon also results in the intimate association of the bacteria and the host cell, which is orchestrated by the protein translocases themselves (Lara-Tejero and Gal\u00e1n, 2009; Misselwitz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "c43fdb55-5bd2-42e7-9432-7b8aae8861ef",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C19",
+      "claim": "Previous attempts to visualize the translocases did not provide distinct structural details.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the critical role of the translocases in intimate attachment and effector translocation, little is known about their structural organization when deployed in the host cell membrane, and previous attempts to visualize them did not provide distinct structural details.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the existing literature in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "9157fae7-dbde-4e1f-aa8a-23b13908c727",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C20",
+      "claim": "The S. Typhimurium SPI-1 T3SS tip complex is thought to be composed of a single protein, SipD, which organizes as a pentamer at the tip of the needle filament.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the S. Typhimurium SPI-1 T3SS the tip complex is thought to be composed of a single protein, SipD, which organizes as a pentamer at the tip of the needle filament (Rathinavelan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "66986670-33f8-4a2c-ac72-3a8afa384615",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C21",
+      "claim": "In Shigella spp., the tip complex contains IpaD and IpaB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has been previously proposed that in Shigella spp., in addition to IpaD, a homolog of SipD, the tip complex also contains IpaB, a homolog of SipB (Cheung et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "834bf54b-ac7f-4d48-8d48-cf8c844765fd",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C22",
+      "claim": "Injectisomes from wild-type and \u2206sipB S. Typhimurium strains are indistinguishable from one another.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that injectisomes from wild-type or the \u2206sipB strains were indistinguishable from one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observation from cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "d2eaf7a1-859c-478c-9311-a2de618cac0d",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C23",
+      "claim": "Injectisomes from a \u2206sipD strain exhibited a shorter needle (~45 nm) in comparison to the needle filaments of injectisomes from the wild-type or \u2206sipB strains (~50 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, injectisomes from a \u2206sipD strain exhibited a shorter needle (~45 nm) in comparison to the needle filaments of injectisomes from the wild-type or \u2206sipB strains (~50 nm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on measurements from cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "b1d5f082-1822-472a-910d-fb036e888c7c",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C24",
+      "claim": "SipD is the only structural component of the tip complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that SipD is the only structural component of the tip complex (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural observations and antibody labeling experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "7899a0f8-7d0f-400f-b896-d63258e5824a",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C25",
+      "claim": "Only injectisomes from minicells obtained from the strain expressing SipD-FLAG showed the antibodies bound to the needle tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Only injectisomes from minicells obtained from the strain expressing SipD-FLAG showed the antibodies bound to the needle tip (Figure 1H, Figure 1\u2014figure supplement 1D,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging of antibody-labeled samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "4f2d970b-418c-41c5-b9d5-8627c3895501",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C26",
+      "claim": "Prior to cell contact, SipD is the main, and most likely only component of the tip-complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with the notion that, prior to cell contact, SipD is the main, and most likely only component of the tip-complex (Lara-Tejero and Gal\u00e1n, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in the study and a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "0070077e-c660-422a-8549-89b80bfb93db",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C27",
+      "claim": "Effector translocation through the T3SS requires an intimate association between the bacteria and the host cell.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that effector translocation through the T3SS requires an intimate association between the bacteria and the host cell (Grosdent et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "94f415bd-3754-4d4d-8b39-a81b7ce418d3",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C28",
+      "claim": "Intimate attachment requires an intact type III secretion machine, and in particular, the protein translocases.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been previously demonstrated that such intimate attachment requires an intact type III secretion machine, and in particular, the protein translocases, which most likely mediate such bacteria/host cell interaction (Lara-Tejero and Gal\u00e1n, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "9b443ff3-e0b0-4083-8e22-79d4c9f7bde4",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C29",
+      "claim": "Bacterial minicells are capable of assembling functional T3SS injectisomes that can deliver de novo synthesized T3SS substrates into cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To get around this limitation we used bacterial minicells as a surrogate for whole bacteria since it has been previously shown that they are capable of assembling functional T3SS injectisomes that can deliver de novo synthesized T3SS substrates into cultured cells (Carleton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "2a0bf64d-3064-461e-9303-4e0c57d93a27",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C30",
+      "claim": "Minicells are inefficient at triggering membrane ruffling, actin filament remodeling, and bacterial internalization due to inefficient partitioning of the effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, minicells are inefficient at triggering membrane ruffling, actin filament remodeling, and bacterial internalization due to inefficient partitioning of the effector proteins that trigger these responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about minicell behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "5ec3f292-d5e9-4e22-9f4f-98eea90ad23a",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C31",
+      "claim": "Minicells are proficient at establishing a T3SS-mediated intimate association with cultured epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, while minicells are proficient at establishing a T3SS-mediated intimate association with cultured epithelial cells, they are inefficient at triggering their own internalization thus remaining firmly attached on the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of minicell behavior and observations in the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "c1ad5948-30c0-46fd-87f4-2f3797185e74",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C32",
+      "claim": "The periphery of adherent cells is sufficiently thin (<500 nm) for high-resolution imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the periphery of adherent cells is sufficiently thin (<500 nm) for high-resolution imaging (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "0bab2bc4-1705-4d1d-b224-92d594916ad3",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C33",
+      "claim": "In the presence of the injectisomes, the spacing between the surface of the S. Typhimurium minicells and the cultured-cell plasma membrane was ~50 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in the presence of the injectisomes, the spacing between the surface of the S. Typhimurium minicells and the cultured-cell plasma membrane was ~50 nm, which matches the needle length of the injectisome imaged prior to their application to cultured cells (Figure 2\u2014figure supplement 2A\u2013F,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on measurements from cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "ff1b34d3-ff71-490b-821e-e7eff9268ff5",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C34",
+      "claim": "The spacing between minicells and plasma membrane matches the needle length of the injectisome imaged prior to their application to cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in the presence of the injectisomes, the spacing between the surface of the S. Typhimurium minicells and the cultured-cell plasma membrane was ~50 nm, which matches the needle length of the injectisome imaged prior to their application to cultured cells (Figure 2\u2014figure supplement 2A\u2013F,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on measurements from cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "b0a0fc8b-0387-4e3a-913e-68e6f4e7f798",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C35",
+      "claim": "The orientation of the injectisomes in the bacteria/target cell interface was perpendicular relative to the host PM.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation of the injectisomes in the bacteria/target cell interface was perpendicular relative to the host PM, and the needle of the host-interacting injectisomes appeared straight (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "f19b6041-012a-46b1-b85e-3817bf78ff8f",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C36",
+      "claim": "The needle of the host-interacting injectisomes appeared straight.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation of the injectisomes in the bacteria/target cell interface was perpendicular relative to the host PM, and the needle of the host-interacting injectisomes appeared straight (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "95f15e73-826d-4095-b59e-3c2945f75d22",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C37",
+      "claim": "The interaction of the injectisome and the target cell resulted in a noticeable inward bend of the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the interaction of the injectisome and the target cell resulted in a noticeable inward bend of the PM (Figure 2C, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "60fd38ad-c938-4184-82c5-f7c03e36f4d7",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C38",
+      "claim": "The distance between the bacterial cell and the PM was shorter (~30 nm) than the distance observed in areas immediately adjacent to the injectisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, the distance between the bacterial cell and the PM was shorter (~30 nm) than the distance observed in areas immediately adjacent to the injectisomes (Figure 2\u2014figure supplement 2A\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on measurements from cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "606e7ef5-b002-43cc-8b4f-58be4049bedc",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C39",
+      "claim": "There was no sign of penetration of the needle filament through the host cell plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any sign of penetration of the needle filament through the host cell plasma membrane as it has been previously proposed (Hoiczyk and Blobel, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "f831cb18-b05b-4d52-a31a-e3926169ea8e",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C40",
+      "claim": "The length of the bacterial-envelope-embedded injectisome base substructure before (30.5 \u00b1 2.3 nm) and after (30.8 \u00b1 2.2 nm) the bacteria/target cell interactions remained unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the bacterial-envelope-embedded injectisome base substructure before (30.5 \u00b1 2.3 nm) and after (30.8 \u00b1 2.2 nm) the bacteria/target cell interactions remained unchanged (Figure 2\u2014figure supplement 2M,N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on measurements from cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "fad81873-d126-487c-9260-2192886ca58d",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C41",
+      "claim": "The Chlamydia T3SS has been reported to undergo significant conformational changes upon contact with host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to the Chlamydia T3SS, which has been reported to undergo significant conformational changes upon contact with host cells (Nans et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "0cadef00-b5ba-438f-8054-7ef952e453e3",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C42",
+      "claim": "The interactions of the T3SS injectisome with the target cell results in the bending of the PM without penetration of the needle filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations indicate that (1) the interactions of the T3SS injectisome with the target cell results in the bending of the PM without penetration of the needle filament, and (2) upon contact with target cells the injectisome does not undergo conformational changes that could be seen at this level of resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-ET observations in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "c884537a-2e4b-4e08-b042-bce1f56c5a7f",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C43",
+      "claim": "Upon contact with target cells the injectisome does not undergo conformational changes that could be seen at this level of resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations indicate that (1) the interactions of the T3SS injectisome with the target cell results in the bending of the PM without penetration of the needle filament, and (2) upon contact with target cells the injectisome does not undergo conformational changes that could be seen at this level of resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-ET observations in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "36fc410a-f262-44ed-9ba0-904d87502c55",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C44",
+      "claim": "Over 600 injectisomes adjacent to the host PM were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "To capture the formation of the translocon, we analyzed over 600 injectisomes adjacent to the host PM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "4a1fdf4d-4603-4b21-8b69-ebf3abd66ee5",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C45",
+      "claim": "Classification of sub-tomograms showed the PM at various conformations and distances to the needle tip, which presumably represent intermediate steps prior to the deployment of the translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "Classification of sub-tomograms depicting the region of the tip complex (Figure 3A) showed the PM at various conformations and distances to the needle tip (Figure 3B\u2013I), which presumably represent intermediate steps prior to the deployment of the translocon and the resulting intimate attachment of the bacteria to the PM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on classification analysis of cryo-ET data and represents an interpretation of the observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "df608ec6-1a64-43a4-9063-948202b407fa",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C46",
+      "claim": "A distinct structure of the putative translocon in the host PM was obtained after alignment and classification of the injectisomes in intimate association with the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "After further alignment and classification of the injectisomes in intimate association with the PM, we obtained a distinct structure of the putative translocon in the host PM (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sub-tomogram averaging of cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "93ed91a6-b84a-4422-8070-038f3ab5f989",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C47",
+      "claim": "Sub-tomogram averages of injectisomes from the S. Typhimurium translocase-deficient mutants \u0394sipB or \u0394sipD in close proximity to the target cell PM did not show the distinct translocon structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Sub-tomogram averages of injectisomes from the S. Typhimurium translocase-deficient mutants \u0394sipB or \u0394sipD in close proximity to the target cell PM did not show this distinct structure (Figure 3K,L), thus confirming that this density most likely corresponds to the assembled translocon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sub-tomogram averaging of cryo-ET data from mutant strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "2f28d8b5-dd4d-4e2f-b9de-62c769ecd7da",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C48",
+      "claim": "The observed density most likely corresponds to the assembled translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "Sub-tomogram averages of injectisomes from the S. Typhimurium translocase-deficient mutants \u0394sipB or \u0394sipD in close proximity to the target cell PM did not show this distinct structure (Figure 3K,L), thus confirming that this density most likely corresponds to the assembled translocon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the comparison of wild-type and mutant structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "e199c1b8-9383-41bc-b598-61e16b56d073",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C49",
+      "claim": "The translocon has a thickness of 8.1 nm spanning the host PM and a diameter of 13.5 nm on its protruding portion.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the translocon has a thickness of 8.1 nm spanning the host PM and a diameter of 13.5 nm on its protruding portion (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on measurements from the cryo-ET structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "4a837e31-ad67-4080-8b88-203b8c089591",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C50",
+      "claim": "The translocon size is substantially smaller than the reported size of the translocon of enteropathogenic E. coli assembled from purified proteins in vitro, which was estimated to be 55\u201365 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "This size is substantially smaller than reported size of the translocon of enteropathogenic E. coli assembled from purified proteins in vitro, which was estimated to be 55\u201365 nm in diameter (Ide et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with a previous study cited in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "96c7ae41-c2d6-4378-8ef1-75c8d4649022",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C51",
+      "claim": "One half of the translocon is embedded in the host PM, while the other half protrudes towards the host cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "One half of the translocon is embedded in the host PM, while the other half protrudes towards the host cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the 3D structure obtained from cryo-ET.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "c69615e2-5fd6-4aaa-ab46-d66d83cec792",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C52",
+      "claim": "A hemispherical hole was observed in the middle of the protruded portion of the translocon, which may represent the channel through which effectors make their way into the target cell plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In the middle of the protruded portion, we observed a hemispherical hole, which may represent the channel through which effectors make their way into the target cell plasma membrane (Figure 3N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on observation from the cryo-ET structure and represents a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "055d7dd6-8bdc-44fe-b6f2-011e5acd78ac",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C53",
+      "claim": "The presence of the hemispherical hole structure is consistent with the notion that the translocon forms a conduit through the host PM to facilitate the translocation of effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of this structure is entirely consistent with the long-standing notion that the translocon forms a conduit through the host PM to facilitate the translocation of effectors (Mueller et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural observation and a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "8a74d107-8706-4140-ac10-8ad1ff968d90",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C54",
+      "claim": "Bacterial cells obtained from translocase-deficient mutants showed a smaller proportion of injectisomes attached to the host PM compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the arrangement of the injectisomes in relation to the target cell PM in wild-type and translocase-deficient strains revealed marked differences. In comparison to wild-type, bacterial cells obtained from translocase-deficient mutants showed a smaller proportion of injectisomes attached to the host PM (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis of cryo-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "e649fe25-a8fa-40b5-9cc3-142cb46c3a89",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C55",
+      "claim": "Unlike wild-type injectisomes, which most often appeared perpendicular to the target cell PM, the injectisomes from the translocase deficient mutant strains \u0394sipB, \u0394sipD, or \u0394sipBCD appeared arranged at various angles relative to the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that, unlike wild-type injectisomes, which most often appeared perpendicular to the target cell PM (Figure 2C), the injectisomes from the translocase deficient mutant strains \u0394sipB, \u0394sipD, or \u0394sipBCD appeared arranged at various angles relative to the PM (Figure 4B\u2013J, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "27d64d86-a499-4770-8b2e-46e2cef246f1",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C56",
+      "claim": "These observations are consistent with observations indicating that in the absence of the translocases, the injectisomes do not intimately attach to the target cell PM.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with the observations indicating that in the absence of the translocases, the injectisomes do not intimately attach to the target cell PM (Lara-Tejero and Gal\u00e1n, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in the study and a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "15cce81e-b1db-40c2-b61b-7e92dc6395cd",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C57",
+      "claim": "The data further support the notion that the distinct structure embedded in host membrane in close apposition to the T3SS injectisome needle tip is formed by the translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "These data also further support the notion that the distinct structure embedded in host membrane in close apposition to the T3SS injectisome needle tip is formed by the translocon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of wild-type and mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "2612d485-c2bc-4d1f-8836-1a971c2edf50",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C58",
+      "claim": "One striking feature associated with the intimate T3SS mediated contact and the formation of the translocon is the target cell PM remodeling around the translocon-injectisome needle tip interface, appearing in a 'tent-like' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the striking features associated with the intimate T3SS mediated contact and the formation of the translocon is the target cell PM remodeling around the translocon-injectisome needle tip interface, appearing in a 'tent-like' conformation (Figure 2C, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "6af39028-7cea-4b18-9e7f-0f98682921da",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C59",
+      "claim": "The 'tent-like' conformation is likely the result of the close association between the bacteria and the target cell presumably mediated not only by the T3SS but also by multiple additional adhesins encoded by S. Typhimurium.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature is likely the result of the close association between the bacteria and the target cell presumably mediated not only by the T3SS but also by multiple additional adhesins encoded by S. Typhimurium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the observations and knowledge of S. Typhimurium biology.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "b3cd4f8e-1cfd-479a-b54e-462c0ee5cabf",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C60",
+      "claim": "The distance of the bacteria OM and the target cell is shorter than the length of the needle itself, which results in the bending of the target cell PM and the 'tent-like' conformation around the injectisome target cell PM interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the distance of the bacteria OM and the target cell is shorter than the length of the needle itself, which results in the bending of the target cell PM and the 'tent-like' conformation around the injectisome target cell PM interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on measurements and observations from cryo-ET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "df0c1725-a2a9-49c5-9054-6659964e0e21",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C61",
+      "claim": "This intimate association may facilitate the T3SS-mediated translocation of effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that this intimate association may facilitate the T3SS-mediated translocation of effector proteins (Figure 5, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the structural observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "ee5a255d-4a6d-42f6-b7ae-b46fb6b4a6aa",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C62",
+      "claim": "These observations are consistent with previous reports indicating that needle length, which presumably influences the ability of the bacteria to 'push' the needle against the host cell membrane, does contribute to type III secretion translocation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are also consistent with previous reports indicating that needle length, which presumably influences the ability of the bacteria to 'push' the needle against the host cell membrane, does contribute to type III secretion translocation efficiency (Mota et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the observations in the study and a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "f88eba0d-5f07-41f8-bfc0-dce82b4df89a",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C63",
+      "claim": "A well-defined 'bend' on the target cell membrane was observed in areas of the bacteria/host cell membrane interface surrounding the needle filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed a well-defined 'bend' on the target cell membrane in areas of the bacteria/host cell membrane interface surrounding the needle filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "f3663fe4-c892-452f-bfb0-5a3948db7a22",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C64",
+      "claim": "These observations reflect the intimate attachment that is known to be required for optimal T3SS-mediated effector translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations reflect the intimate attachment that is known to be required for optimal T3SS-mediated effector translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the observations and established knowledge in the field.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "773f9c7f-dbc4-4243-9c78-9a11347e1bfc",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C65",
+      "claim": "A distinct density was visualized within the region of the target host cell membrane in close apposition to the needle tip of the T3SS injectisome.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we have been able to visualize a distinct density within the region of the target host cell membrane in close apposition to the needle tip of the T3SS injectisome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observation from cryo-ET imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "ad5d8fec-da94-4e79-8df7-31a1f0a96307",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C66",
+      "claim": "This density corresponds to the deployed T3SS translocon since this density was absent in the bacteria/PM interface of mutant bacteria that lack the translocon components.",
+      "claim_type": "EXPLICIT",
+      "source": "We present evidence that this density corresponds to the deployed T3SS translocon since this density was absent in the bacteria/PM interface of mutant bacteria that lack the translocon components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of wild-type and mutant structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "36fd133e-a514-4f11-acb4-cc5bbfda761a",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C67",
+      "claim": "Protein translocases SipB and SipC form a complex in the host membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that protein translocases SipB and SipC form a complex in the host membrane (Hayward and Koronakis, 1999; Myeni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "1920ebf7-a3ca-4a89-96c8-9753ba4799b4",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C68",
+      "claim": "Single-molecule fluorescence photobleaching experiments in a Pseudomonas aeruginosa T3SS suggested that two translocases form a hetero-complex of defined stoichiometry in a membrane bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule fluorescence photobleaching experiments in a Pseudomonas aeruginosa T3SS further suggested that two translocases form a hetero-complex of defined stoichiometry in a membrane bilayer (Romano et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "1f0b4f0b-3688-4677-98a8-acf8e80e528d",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C69",
+      "claim": "The in situ structure of the translocon appears to be large enough to accommodate multiple copies of SipB/SipC complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our in situ structure of the translocon is not sufficient in detail to determine its stoichiometry, it appears to be large enough to accommodate multiple copies of SipB/SipC complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the size of the observed structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "413f38ea-bbdf-4bb9-8d04-324fdc57e51d",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C70",
+      "claim": "The translocon is partially embedded in the host membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The translocon is partially embedded in the host membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the 3D structure obtained from cryo-ET.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "678ea666-7c18-456f-8be6-a5df2f015cad",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C71",
+      "claim": "A large portion of the translocon extends towards the host cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "A large portion of the translocon extends towards the host cytoplasm, which is consistent with results in P. aeruginosa showing that the translocase PopB is stably inserted into lipid bilayers with its N-terminal domain and C-terminal ends exposed to the host cytoplasm (Discola et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the 3D structure and supported by a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "41d40dab-17a1-4bf9-bf30-b3d701db194b",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C72",
+      "claim": "The dimensions of the in situ translocon structure (~13.5 nm in diameter, 8 nm in thickness) are much smaller than previous estimates (50\u201365 nm in diameter) obtained from the observation of EPEC translocons assembled from purified components on red blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimensions of the in situ translocon structure determined in this study (~13.5 nm in diameter, 8 nm in thickness) are much smaller than previous estimates (50\u201365 nm in diameter) obtained from the observation of EPEC translocons assembled from purified components on red blood cells (Ide et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of measurements from this study with a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "3e965116-1cde-486c-98fd-d1505677255b",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C73",
+      "claim": "It is unlikely that the observed differences in translocon size may reflect substantial differences between the dimensions of translocons from different T3SSs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unlikely that these differences may reflect substantial differences between the dimensions of translocons from different T3SSs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on knowledge of T3SS conservation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "17014ad4-c5b7-4317-ba2b-9afa8444ec01",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C75",
+      "claim": "The deployment of the translocon during bacterial infections is orchestrated by the tip complex of the T3SS injectisome.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that the deployment of the translocon during bacterial infections is orchestrated by the tip complex of the T3SS injectisome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "2ad14f7c-3a54-455b-b43b-0d41ffe35f22",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C76",
+      "claim": "In the absence of the tip protein, the components of the translocon are very efficiently secreted but they are unable to form the translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of the tip protein, the components of the translocon are very efficiently secreted but they are unable to form the translocon (Kaniga et al., 1995; M\u00e9nard et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "c02797e0-d5c9-40a0-9b78-4f8bdab5f385",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C77",
+      "claim": "It is possible that the insertion in the membrane of the purified translocon components in the absence of the tip protein may lead to a structure that is substantially different from the one that results from the interaction of bacteria with target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that the insertion in the membrane of the purified translocon components in the absence of the tip protein may lead to a structure that is substantially different from the one that results from the interaction of bacteria with target cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation to explain the observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "8e2b2ddf-55d9-478c-8bf7-31c541969c70",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C78",
+      "claim": "No obvious conformational changes in the injectisomes were observed prior and post interaction with host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to what has been previously proposed for the Chlamydia T3SS (Nans et al., 2015), we did not observe any obvious conformational changes in the injectisomes prior and post interaction with host cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of structures before and after host cell contact.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "486fd5d3-55eb-423e-a04a-39feebf7f16d",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C79",
+      "claim": "It is unlikely that the lack of observed conformational changes indicates fundamental differences between the T3SS injectisomes in different bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unlikely that these observations are an indication of fundamental differences between the T3SS injectisomes in different bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on knowledge of T3SS conservation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "a4aa6908-79ab-4dbd-b487-4e7c73ebac1f",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C80",
+      "claim": "The differences in observed conformational changes might reflect differences in the experimental approaches used in different studies, which resulted in substantially higher resolution in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the differences observed might reflect differences in the experimental approaches used in our studies, which resulted in a substantially higher resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation to explain differences with previous studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "0c2c6d24-410c-48f6-b83d-11915538a7ee",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C81",
+      "claim": "The studies have provided a close-up view of the interface between the T3SS injectisome and the target cell PM.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our studies have provided a close-up view of the interface between the T3SS injectisome and the target cell PM, which has resulted in the visualization of the deployed T3SS translocon complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the main achievement of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "08abda99-957a-4c5f-a076-a0744c3fc1ba",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C82",
+      "claim": "Given the highly conserved nature of the T3SSs among many Gram-negative bacteria, the studies have broad scientific implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, given the highly conserved nature of the T3SSs among many Gram-negative bacteria, our studies have broad scientific implications and provide a paradigm for the study of host-pathogen interactions in a greater detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of T3SS conservation and represents an inference about the broader impact.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "201e6a75-6e98-4029-937b-3f389799d4cd",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C83",
+      "claim": "The studies provide a paradigm for the study of host-pathogen interactions in greater detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, given the highly conserved nature of the T3SSs among many Gram-negative bacteria, our studies have broad scientific implications and provide a paradigm for the study of host-pathogen interactions in a greater detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the methodological contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "9a3e51e8-cca6-46e0-b801-82c370f9fa5c",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "claim_id": "C90",
+      "claim": "1051 tomograms were generated for detailed examination of the Salmonella-host interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 1051 tomograms (3,600 \u00d7 3,600 \u00d7 400 pixels) were generated for detailed examination of the Salmonella-host interactions (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the total dataset collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "26d635a8-1dcf-468e-89d5-0a4e828619b7",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SipD is the sole structural component of the T3SS tip complex prior to host cell contact. Cryo-ET analysis showed that injectisomes from wild-type and \u0394sipB strains were indistinguishable, while \u0394sipD strains had shorter needles (~45 nm vs ~50 nm). Antibody labeling experiments confirmed that only SipD-FLAG showed antibodies bound to the needle tip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 provide converging evidence from structural comparison (C22-C23), inference from measurements (C24), and direct antibody labeling (C25) that SipD is the only tip complex component. The statistical significance (p<0.0001) for needle length differences and the specificity of antibody binding provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The T3SS injectisome interacts with the host cell membrane without needle penetration, causing membrane bending while maintaining structural integrity. The spacing between minicells and plasma membrane (~50 nm) matches the needle length, injectisomes orient perpendicular to the membrane with straight needles, and the membrane shows an inward bend at the contact site. No conformational changes in the injectisome were observed upon host cell contact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C43 collectively demonstrate the physical interaction between injectisome and host membrane through direct cryo-ET observations and measurements. The consistency between needle length and membrane spacing (C33-C34), perpendicular orientation (C35), and absence of needle penetration (C39) are well-documented with quantitative data. The lack of conformational changes (C40, C43) is supported by measurements showing unchanged base structure dimensions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "356d5f3f-8b91-47f9-9899-9dccf61305b7",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The deployed T3SS translocon was visualized in the host plasma membrane with unprecedented resolution. Analysis of over 600 injectisomes revealed a distinct structure (13.5 nm diameter, 8.1 nm thickness) that was absent in \u0394sipB and \u0394sipD mutants. The translocon is partially embedded in the membrane with a hemispherical hole that may represent the effector translocation channel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C53 provide strong evidence for translocon visualization through large sample size (C44), sub-tomogram classification (C45-C46), genetic controls (C47-C48), and structural measurements (C49). The absence of the structure in translocase-deficient mutants (C47) provides critical validation. However, the interpretation of the hemispherical hole as the translocation channel (C52) remains speculative, though consistent with prior models (C53).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "c83ca58a-4395-4438-854a-a0b1c66a02f2",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Translocase-deficient mutants show impaired intimate attachment to host cells. Compared to wild-type, \u0394sipB, \u0394sipD, and \u0394sipBCD mutants showed fewer injectisomes attached to the host membrane and those that were near the membrane appeared at various angles rather than perpendicular orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 demonstrate the functional importance of translocases through quantitative comparison of attachment patterns between wild-type and mutant strains. The observations are consistent with prior work (C56) and provide additional validation that the observed membrane-embedded structure is the translocon (C57). Statistical analysis (chi-squared test, Figure 4A) supports the quantitative differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "11ee3a6b-a9ad-4f6c-95af-c0e1360c0948",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Intimate T3SS-mediated contact creates a 'tent-like' membrane conformation at the bacteria-host interface. The bacterial outer membrane is closer to the host cell than the needle length, resulting in membrane bending. This intimate association may facilitate effector translocation and is consistent with reports linking needle length to translocation efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 describe the membrane remodeling phenomenon with direct cryo-ET observations (C58, C63) and measurements (C60). However, the mechanistic interpretation that this facilitates translocation (C61) is speculative. The proposed role of additional adhesins (C59) is reasonable but not directly tested. The consistency with prior work on needle length (C62) provides supporting context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "3d99c283-fa54-4f96-950d-e16702896cf6",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The in situ translocon structure is partially embedded in the host membrane with a large portion extending toward the host cytoplasm. The structure appears large enough to accommodate multiple copies of SipB/SipC complexes, though stoichiometry cannot be determined at current resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C71 describe the translocon architecture based on cryo-ET data. The identification is validated by absence in mutants (C66). The membrane topology (C70-C71) is consistent with prior biochemical studies in P. aeruginosa. The inference about stoichiometry (C69) is appropriately cautious given resolution limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "270fe540-7c6a-41ee-8036-07bc4e6e9fc3",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The in situ translocon dimensions (~13.5 nm diameter, 8 nm thickness) are substantially smaller than previous estimates from in vitro assembled EPEC translocons (50-65 nm). This difference likely reflects different assembly mechanisms rather than species-specific variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C73 and C77 compare current findings with prior work, but the explanation remains speculative. While C72 accurately reports the size discrepancy, the proposed explanation (C77) that tip protein-mediated assembly produces different structures is plausible but untested. Alternative explanations (different T3SS systems, experimental artifacts in prior studies) are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "c72034f2-4ef9-4613-b709-29911eff57e4",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "No obvious conformational changes in the Salmonella injectisome were observed upon host cell contact, contrasting with reports for Chlamydia T3SS. The differences likely reflect methodological improvements rather than fundamental biological differences between systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C80 report negative findings and propose explanations. While the observation of no conformational changes is supported by measurements (C40), the interpretation that this reflects methodological differences (C80) rather than biological differences (C79) is speculative. The resolution improvement claim is not quantitatively compared to the Chlamydia study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "b78b7774-8a2e-4fe9-81e6-b5322867f899",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Bacterial minicells serve as a suitable model system for studying T3SS-host interactions, as they assemble functional injectisomes and establish intimate associations with host cells while remaining on the cell surface due to inefficient effector partitioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 describe the minicell system used in the study. The functionality of minicells (C29) is supported by prior work (Carleton et al., 2013). The properties that make them suitable for cryo-ET (remaining on surface, C31) are based on established knowledge (C30) and confirmed by observations in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "7ca81211-1aa1-4356-99a4-ea7fda6c46c9",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "This study provides unprecedented high-resolution visualization of the intact T3SS translocon and bacteria-host interface, supporting the direct injection model for effector translocation. Given T3SS conservation across Gram-negative bacteria, these findings have broad implications for understanding host-pathogen interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6, and C81-C83 summarize the study's main contributions. The visualization achievement (C4, C81) is well-supported by the data. Support for the direct injection model (C6) is reasonable given the structural observations, though direct functional evidence of translocation through the visualized structure is not provided. The broader implications (C82-C83) are appropriate given T3SS conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing the known features of T3SS biology, including system conservation, structural organization, activation mechanisms, and the role of translocases in host cell interaction and effector translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C7-C21, C27-C28, C67-C68, and C75-C76 represent established knowledge in the field, supported by multiple citations to prior research. These provide necessary context for interpreting the novel findings but do not constitute new results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    },
+    {
+      "id": "a918e713-9233-4a60-9d23-59f9187c88de",
+      "content_id": "1966e795-f5a1-4c9d-a868-0dd930dc65f4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A total of 1,051 tomograms were collected for analysis of Salmonella-host interactions across multiple strains and conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 reports the dataset size, which is documented in Table 2. This represents a substantial data collection effort that enables the statistical power of the study's conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:28:41.359547Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "834bf54b-ac7f-4d48-8d48-cf8c844765fd",
+      "result_id": "26d635a8-1dcf-468e-89d5-0a4e828619b7"
+    },
+    {
+      "claim_id": "d2eaf7a1-859c-478c-9311-a2de618cac0d",
+      "result_id": "26d635a8-1dcf-468e-89d5-0a4e828619b7"
+    },
+    {
+      "claim_id": "b1d5f082-1822-472a-910d-fb036e888c7c",
+      "result_id": "26d635a8-1dcf-468e-89d5-0a4e828619b7"
+    },
+    {
+      "claim_id": "7899a0f8-7d0f-400f-b896-d63258e5824a",
+      "result_id": "26d635a8-1dcf-468e-89d5-0a4e828619b7"
+    },
+    {
+      "claim_id": "4f2d970b-418c-41c5-b9d5-8627c3895501",
+      "result_id": "26d635a8-1dcf-468e-89d5-0a4e828619b7"
+    },
+    {
+      "claim_id": "c1ad5948-30c0-46fd-87f4-2f3797185e74",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "0bab2bc4-1705-4d1d-b224-92d594916ad3",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "ff1b34d3-ff71-490b-821e-e7eff9268ff5",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "b0a0fc8b-0387-4e3a-913e-68e6f4e7f798",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "f19b6041-012a-46b1-b85e-3817bf78ff8f",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "95f15e73-826d-4095-b59e-3c2945f75d22",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "60fd38ad-c938-4184-82c5-f7c03e36f4d7",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "606e7ef5-b002-43cc-8b4f-58be4049bedc",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "f831cb18-b05b-4d52-a31a-e3926169ea8e",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "0cadef00-b5ba-438f-8054-7ef952e453e3",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "c884537a-2e4b-4e08-b042-bce1f56c5a7f",
+      "result_id": "9b376b0b-c0d0-4072-8d3f-444d2fcc5595"
+    },
+    {
+      "claim_id": "36fc410a-f262-44ed-9ba0-904d87502c55",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "4a1fdf4d-4603-4b21-8b69-ebf3abd66ee5",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "df608ec6-1a64-43a4-9063-948202b407fa",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "93ed91a6-b84a-4422-8070-038f3ab5f989",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "2f28d8b5-dd4d-4e2f-b9de-62c769ecd7da",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "e199c1b8-9383-41bc-b598-61e16b56d073",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "4a837e31-ad67-4080-8b88-203b8c089591",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "96c7ae41-c2d6-4378-8ef1-75c8d4649022",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "c69615e2-5fd6-4aaa-ab46-d66d83cec792",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "055d7dd6-8bdc-44fe-b6f2-011e5acd78ac",
+      "result_id": "356d5f3f-8b91-47f9-9899-9dccf61305b7"
+    },
+    {
+      "claim_id": "8a74d107-8706-4140-ac10-8ad1ff968d90",
+      "result_id": "c83ca58a-4395-4438-854a-a0b1c66a02f2"
+    },
+    {
+      "claim_id": "e649fe25-a8fa-40b5-9cc3-142cb46c3a89",
+      "result_id": "c83ca58a-4395-4438-854a-a0b1c66a02f2"
+    },
+    {
+      "claim_id": "27d64d86-a499-4770-8b2e-46e2cef246f1",
+      "result_id": "c83ca58a-4395-4438-854a-a0b1c66a02f2"
+    },
+    {
+      "claim_id": "15cce81e-b1db-40c2-b61b-7e92dc6395cd",
+      "result_id": "c83ca58a-4395-4438-854a-a0b1c66a02f2"
+    },
+    {
+      "claim_id": "2612d485-c2bc-4d1f-8836-1a971c2edf50",
+      "result_id": "11ee3a6b-a9ad-4f6c-95af-c0e1360c0948"
+    },
+    {
+      "claim_id": "6af39028-7cea-4b18-9e7f-0f98682921da",
+      "result_id": "11ee3a6b-a9ad-4f6c-95af-c0e1360c0948"
+    },
+    {
+      "claim_id": "b3cd4f8e-1cfd-479a-b54e-462c0ee5cabf",
+      "result_id": "11ee3a6b-a9ad-4f6c-95af-c0e1360c0948"
+    },
+    {
+      "claim_id": "df0c1725-a2a9-49c5-9054-6659964e0e21",
+      "result_id": "11ee3a6b-a9ad-4f6c-95af-c0e1360c0948"
+    },
+    {
+      "claim_id": "ee5a255d-4a6d-42f6-b7ae-b46fb6b4a6aa",
+      "result_id": "11ee3a6b-a9ad-4f6c-95af-c0e1360c0948"
+    },
+    {
+      "claim_id": "f88eba0d-5f07-41f8-bfc0-dce82b4df89a",
+      "result_id": "11ee3a6b-a9ad-4f6c-95af-c0e1360c0948"
+    },
+    {
+      "claim_id": "f3663fe4-c892-452f-bfb0-5a3948db7a22",
+      "result_id": "11ee3a6b-a9ad-4f6c-95af-c0e1360c0948"
+    },
+    {
+      "claim_id": "773f9c7f-dbc4-4243-9c78-9a11347e1bfc",
+      "result_id": "3d99c283-fa54-4f96-950d-e16702896cf6"
+    },
+    {
+      "claim_id": "ad5d8fec-da94-4e79-8df7-31a1f0a96307",
+      "result_id": "3d99c283-fa54-4f96-950d-e16702896cf6"
+    },
+    {
+      "claim_id": "1f0b4f0b-3688-4677-98a8-acf8e80e528d",
+      "result_id": "3d99c283-fa54-4f96-950d-e16702896cf6"
+    },
+    {
+      "claim_id": "413f38ea-bbdf-4bb9-8d04-324fdc57e51d",
+      "result_id": "3d99c283-fa54-4f96-950d-e16702896cf6"
+    },
+    {
+      "claim_id": "678ea666-7c18-456f-8be6-a5df2f015cad",
+      "result_id": "3d99c283-fa54-4f96-950d-e16702896cf6"
+    },
+    {
+      "claim_id": "41d40dab-17a1-4bf9-bf30-b3d701db194b",
+      "result_id": "270fe540-7c6a-41ee-8036-07bc4e6e9fc3"
+    },
+    {
+      "claim_id": "3e965116-1cde-486c-98fd-d1505677255b",
+      "result_id": "270fe540-7c6a-41ee-8036-07bc4e6e9fc3"
+    },
+    {
+      "claim_id": "c02797e0-d5c9-40a0-9b78-4f8bdab5f385",
+      "result_id": "270fe540-7c6a-41ee-8036-07bc4e6e9fc3"
+    },
+    {
+      "claim_id": "8e2b2ddf-55d9-478c-8bf7-31c541969c70",
+      "result_id": "c72034f2-4ef9-4613-b709-29911eff57e4"
+    },
+    {
+      "claim_id": "486fd5d3-55eb-423e-a04a-39feebf7f16d",
+      "result_id": "c72034f2-4ef9-4613-b709-29911eff57e4"
+    },
+    {
+      "claim_id": "a4aa6908-79ab-4dbd-b487-4e7c73ebac1f",
+      "result_id": "c72034f2-4ef9-4613-b709-29911eff57e4"
+    },
+    {
+      "claim_id": "9b443ff3-e0b0-4083-8e22-79d4c9f7bde4",
+      "result_id": "b78b7774-8a2e-4fe9-81e6-b5322867f899"
+    },
+    {
+      "claim_id": "2a0bf64d-3064-461e-9303-4e0c57d93a27",
+      "result_id": "b78b7774-8a2e-4fe9-81e6-b5322867f899"
+    },
+    {
+      "claim_id": "5ec3f292-d5e9-4e22-9f4f-98eea90ad23a",
+      "result_id": "b78b7774-8a2e-4fe9-81e6-b5322867f899"
+    },
+    {
+      "claim_id": "ae8242e3-84b9-46dc-a860-7280f56063e4",
+      "result_id": "7ca81211-1aa1-4356-99a4-ea7fda6c46c9"
+    },
+    {
+      "claim_id": "352d833d-ce26-4678-8ae7-25a6fbe2f29a",
+      "result_id": "7ca81211-1aa1-4356-99a4-ea7fda6c46c9"
+    },
+    {
+      "claim_id": "0c2c6d24-410c-48f6-b83d-11915538a7ee",
+      "result_id": "7ca81211-1aa1-4356-99a4-ea7fda6c46c9"
+    },
+    {
+      "claim_id": "08abda99-957a-4c5f-a076-a0744c3fc1ba",
+      "result_id": "7ca81211-1aa1-4356-99a4-ea7fda6c46c9"
+    },
+    {
+      "claim_id": "201e6a75-6e98-4029-937b-3f389799d4cd",
+      "result_id": "7ca81211-1aa1-4356-99a4-ea7fda6c46c9"
+    },
+    {
+      "claim_id": "984943a3-6a34-4e61-8dd6-9139df17051b",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "264f6462-8ba3-48e2-a318-012399fb60db",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "0750200e-ed29-4ef7-a858-920f504cb683",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "5d523a76-453f-48f9-807c-a3d42e57b9e7",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "72a42767-d126-4443-ba7f-5d03f8e0c3de",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "9ff6d91d-f373-4492-b0d9-2068e027825d",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "ae97f47f-6c5b-444d-8124-7d1b71925639",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "6576f332-5d74-4304-86d9-4c4dd4647d0a",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "3c4182cf-9384-4a26-9540-879c816670ba",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "4e8696d6-257f-4a7e-ac42-f04d9387b378",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "d6e3114b-54c6-4d9d-b55f-12cf704f5863",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "5807d3d2-dca2-4541-86c9-0f891c6b22ca",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "a5089155-b2fb-4083-a4e0-7bef732787c8",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "3d4073f2-2404-4a87-82e7-1dfdaedaed2d",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "af1b4c6e-a971-41b6-98ed-b94804d882f0",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "c43fdb55-5bd2-42e7-9432-7b8aae8861ef",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "9157fae7-dbde-4e1f-aa8a-23b13908c727",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "66986670-33f8-4a2c-ac72-3a8afa384615",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "0070077e-c660-422a-8549-89b80bfb93db",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "94f415bd-3754-4d4d-8b39-a81b7ce418d3",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "36fd133e-a514-4f11-acb4-cc5bbfda761a",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "1920ebf7-a3ca-4a89-96c8-9753ba4799b4",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "17014ad4-c5b7-4317-ba2b-9afa8444ec01",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "2ad14f7c-3a54-455b-b43b-0d41ffe35f22",
+      "result_id": "0564bc2d-ecdd-4ea2-be7c-689691f5af00"
+    },
+    {
+      "claim_id": "9a3e51e8-cca6-46e0-b801-82c370f9fa5c",
+      "result_id": "a918e713-9233-4a60-9d23-59f9187c88de"
+    }
+  ],
+  "comparisons": []
+}

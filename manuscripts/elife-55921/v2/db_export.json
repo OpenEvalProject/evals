@@ -1,0 +1,2519 @@
+{
+  "submission": {
+    "id": "c639aa1d-7890-492c-b289-45b0a3d716a9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:43:51.899502Z",
+    "updated_at": "2025-12-02T17:43:51.899502Z"
+  },
+  "content": [
+    {
+      "id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "submission_id": "c639aa1d-7890-492c-b289-45b0a3d716a9",
+      "content_type": "manuscript",
+      "content_text": "# Self-restoration of cardiac excitation rhythm by anti-arrhythmic ion channel gating\n\n## Authors\n\n- Rupamanjari Majumder<sup>1</sup> ([ORCID: 0000-0002-3851-9225](https://orcid.org/0000-0002-3851-9225))\n- Tim De Coster<sup>1</sup> ([ORCID: 0000-0002-4942-9866](https://orcid.org/0000-0002-4942-9866))\n- Nina Kudryashova<sup>1</sup>\n- Arie O Verkerk<sup>4</sup> ([ORCID: 0000-0003-2140-834X](https://orcid.org/0000-0003-2140-834X))\n- Ivan V Kazbanov<sup>2</sup>\n- Bal\u00e1zs \u00d6rd\u00f6g<sup>1</sup>\n- Niels Harlaar<sup>1</sup>\n- Ronald Wilders<sup>4</sup> ([ORCID: 0000-0002-1340-0869](https://orcid.org/0000-0002-1340-0869))\n- Antoine AF de Vries<sup>1</sup>\n- Dirk L Ypey<sup>1</sup>\n- Alexander V Panfilov<sup>1</sup>\n- Dani\u00ebl A Pijnappels<sup>1</sup> ([ORCID: 0000-0001-6731-4125](https://orcid.org/0000-0001-6731-4125)) \u2020\n\n### Affiliations\n\n1. Laboratory of Experimental Cardiology, Department of Cardiology, Leiden University Medical Center Leiden Netherlands\n2. Department of Physics and Astronomy, Ghent University Ghent Belgium\n3. Department of Cardiovascular Sciences, KU Leuven Leuven Belgium\n4. Department of Medical Biology, Amsterdam UMC Amsterdam Netherlands\n5. Department of Experimental Cardiology, Amsterdam UMC Amsterdam Netherlands\n6. Laboratory of Computational Biology and Medicine, Ural Federal University Ekaterinburg Russian Federation\n\n\u2020 Corresponding author\n\n## Abstract\n\nHomeostatic regulation protects organisms against hazardous physiological changes. However, such regulation is limited in certain organs and associated biological processes. For example, the heart fails to self-restore its normal electrical activity once disturbed, as with sustained arrhythmias. Here we present proof-of-concept of a biological self-restoring system that allows automatic detection and correction of such abnormal excitation rhythms. For the heart, its realization involves the integration of ion channels with newly designed gating properties into cardiomyocytes. This allows cardiac tissue to i) discriminate between normal rhythm and arrhythmia based on frequency-dependent gating and ii) generate an ionic current for termination of the detected arrhythmia. We show in silico, that for both human atrial and ventricular arrhythmias, activation of these channels leads to rapid and repeated restoration of normal excitation rhythm. Experimental validation is provided by injecting the designed channel current for arrhythmia termination in human atrial myocytes using dynamic clamp.\n\n## Introduction\n\nLiving organisms strive to maintain a stable internal environment through continuous regulation of the body\u2019s physiological processes. Such homeostatic regulation involves three principal mechanisms: detection, processing and effectuation. The \u2018detector\u2019 senses a change in the environment, communicates it to a \u2018processor\u2019, which processes the information and commands the \u2018effector\u2019 to react appropriately (Horrobin, 1970). Given their highly conserved nature, these \u2018detector-effector\u2019 (DE) systems are considered to be effective means to respond to changes that, if sustained, may cause harm to the organism. Light sensitivity coupled to movement is an example of a detector-effector mechanism for the full scale of evolved organisms, as exemplified by phototaxis in unicellular organisms (Nagel et al., 2002) and pupil reflex in higher order vertebrates (Sherman and Stark, 1957). At the cellular level, many DE systems operate through ion channels, which may act as functional detector-effector units. These channels can detect changes in, for example, voltage, hormones or light to which they respond by activation to generate a flow of ions (i.e. an electrical current) or by inactivation to stop a flow of ions (Catterall, 2000; Stojilkovic et al., 2010; Govorunova et al., 2015). Although the human body maintains a multitude of DE systems that contribute to its every day function, a DE system responding specifically to sustained hazardous heart rhythm disturbances seems not to have been evolved. Nevertheless, under natural cardiac electrophysiological conditions, heart rhythm disorders can terminate spontaneously, resulting in non-sustained arrhythmias (Bub et al., 2003; Katritsis et al., 2012). For those that are sustained, the most effective means for acute restoration of sinus rhythm, especially in atrial and ventricular fibrillation (AF and VF), consists of delivery of high-voltage shocks to the heart for arrhythmia termination (i.e. defibrillation) (Wellens et al., 1998; Link et al., 2010; Laslett et al., 2012; Borne et al., 2013; Kumar and Schwartz, 2014). This therapy is based on an electronic detector (i.e. sensor of electrical activity) and effector (i.e. electroshock generator), which are incorporated into a single device. Implantation of this device (the implantable cardioverter defibrillator or ICD) allows continuous monitoring of cardiac rhythm in order to ensure rapid arrhythmia detection for automatic delivery of electroshocks. Due to their non-biological nature, these electronic DE systems have a number of shortcomings including limited battery lives, technical malfunction and inappropriate shock deliveries. However, from a patient\u2019s perspective, major concerns are the severe pain, anxiety and depression resulting from the electroshocks (Sears et al., 2011), not to mention the possibility of permanent tissue damage (Ashihara and Trayanova, 2005).\n\nNow imagine that the mammalian heart itself would be able to detect and terminate an arrhythmia in an automatic and repetitive manner just like the ICD, thereby eliminating the need for traumatizing electroshocks. In this article, we present the theoretical fingerprints of a biological DE system that is tailored to detect and terminate cardiac arrhythmias. We refer to it as the Biologically Integrated Cardiac Defibrillator, or BioICD. We envision the BioICD as an ion channel of which the gating is customized to differentiate between sinus rhythm and arrhythmia, and to act accordingly. Conceptually, such an ion channel could be implemented by proper choice of frequency-dependent activation-inactivation kinetics. We use computer modelling to design the kinetics of this channel via three different approaches and demonstrate the possibility for human cardiac tissue to auto-detect and terminate tachyarrhythmias and fibrillation in both atria and ventricles once this type of channel has been integrated. We prove the concept of our study in simulated monolayers of human cardiomyocytes and in anatomically realistic in silico models of the human atrial and ventricular musculature, by showing that in each case considered, the arrhythmia can be detected and terminated to restore sinus rhythm, within seconds of its initiation, on a fully biological basis. In order to provide experimental evidence of the validity of the BioICD concept, we exploited the dynamic clamp technique (Wilders, 2006) to realise the designed BioICD function with the use of optogenetically modified human atrial myocytes that are optically stimulated at arrhythmic frequencies.\n\n## Results\n\nOur concept of the BioICD involves the introduction of a new type of ion channel with specific properties into the sarcolemma of cardiac muscle cells, which is possible through genetic modification (Nyns et al., 2016). We explored the properties of this ion channel in silico and found that in order to provide the basis for a DE system, such channel should have the ability to sense the frequency of electrical activation through gating mechanisms that are controlled by the cell\u2019s membrane potential (voltage difference across the cell membrane). In the subsequent sections, we show the behaviour of a heart endowed with the new ion channel (referred to as \u2018BioICD\u2019), and compare it with the normal \u2018Control\u2019 situation.\n\n### Principle\n\nIn order to show the behaviour of the BioICD ion channel, we first demonstrate how it works in a simplified controllable system, that\u00a0is tachyarrhythmias in a 2D in silico model consisting exclusively of isotropically arranged human ventricular myocytes. Three possible realisations of this ion channel are provided, each of them relying on a different ionic mechanism: Model I is a minimal model that allows frequency-dependent gating, Model II has a different inactivation mechanism, and Model III has a gating mechanism insensitive to the shape of the action potential (AP). The results of Model II and III can be found in the Supporting Information (Appendix 1 Figures 1, 2, 3). The detailed description of Model I together with its results is provided below.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55921/elife-55921-fig1-v2.jpg)\n\n**Figure 1.:** (A) Development of a sustained tachyarrhythmia, induced via an extrasystole, in a simulated monolayer of normal human ventricular tissue (TNNP model; ten Tusscher and Panfilov, 2006). (B) Auto-detection and termination of the tachyarrhythmia, followed by restoration of sinus rhythm in the same monolayer upon expression of the BioICD channel. (C) Voltage traces recorded from representative cardiomyocytes (white asterisks) in the simulation domains (orange: Control, black: BioICD). Time frames in A-B are chosen to represent the relevant stages in arrhythmia progression, detection and termination and therefore do not correspond linearly with the voltage traces in C.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55921/elife-55921-fig2-v2.jpg)\n\n**Figure 2.:** (A) Markov diagram for BioICD channel Model I.\u00a0(B) and (C) Traces of voltage ($V$) and state variables $O$ and $a_{1}$, at 1.2\u00a0Hz and 4.2\u00a0Hz, respectively. $O$: open state of the frequency-sensing channel subunit, $C$: closed state of the frequency-sensing channel subunit, $a_{0}$: inactive state of the catalytic channel deactivation agent, $a_{1}$: active state of the catalytic channel deactivation agent. A detailed mathematical description of $C$, $O$, $a_{0}$ and $a_{1}$ is provided in the Materials and methods section.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55921/elife-55921-fig3-v2.jpg)\n\n**Figure 3.:** (A) A substrate for VT.\u00a0(B) A substrate for VF. (C) A substrate with diffuse fibrosis. (D) A substrate with an anatomical scar. In each panel, successive frames (from left to right) show the voltage distribution in the monolayers at subsequent relevant time points. The left column shows established reentrant tachyarrhythmias. The middle column shows, for the different arrhythmia conditions, stages of advanced repolarization in the arrhythmia termination process (large dark blue areas), while the right column shows the final tissue-wide repolarization (dark blue) stage, thereby allowing restoration of sinus rhythm (SR). The insets show the corresponding situation in the absence of BioICD channels. (E\u2013H) Voltage time series extracted from representative cardiomyocytes (white asterisks) in the simulation domains of situations A-D, respectively. (I) The BioICD channel has no significant influence on the action potential (AP) at sinus rhythm (1.2\u00a0Hz, left AP traces), but slightly increases the AP duration in the tail (APD90) at close-to-arrhythmic frequencies (right AP traces). The dotted line of the widest AP in the right traces shows the AP at\u00a01.2\u00a0Hz for reference. The orange lines show the APs without BioICD current (control). (J) APD restitution curve for the original parameters of the human ventricular cardiomyocyte model, with and without BioICD channel. Orange shading is used to indicate the region of the restitution curve where the slope exceeds 1. DI, diastolic interval.\n\nFigure 1A illustrates the control situation for a simulation experiment in a monolayer without expression of the BioICD channel. In this situation, induction of a figure-of-eight reentrant source, via an extrasystole during sinus rhythm, results in a sustained reentrant tachyarrhythmia. In monolayers expressing the BioICD channel (see section BioICD model I below), the exact same stimulation first leads to the development of the same reentrant pattern, however then, because of the concurrent increase in activation frequency, the BioICD channel is activated, resulting in termination of the figure-of-eight reentry and restoration of sinus rhythm (Figure 1B). Representative voltage traces (Figure 1C) demonstrate how the action of the BioICD channel can be recognized in the membrane potential behaviour of a single cardiomyocyte. Of note, the presence of the BioICD channel exerts no influence on wave propagation during sinus rhythm, both before and after the arrhythmia.\n\n### BioICD model I\n\nThe schematic representation of Model I is presented in Figure 2A. The ion channel comprises a group of subunits that exhibit two states: open ($O$) and closed ($C$), with voltage-dependent transitions between these states, indicated by arrows in Figure 2A. The ion channel subunits slowly move to the open state $O$ when voltage ($V$) exceeds $V_{t\u2062h\u2062r\u2062e\u2062s\u2062h\u2062o\u2062l\u2062d}$, ($V_{t\u2062h\u2062r\u2062e\u2062s\u2062h\u2062o\u2062l\u2062d}$ is typically around $-60\u2062mV$). When $V<V_{t\u2062h\u2062r\u2062e\u2062s\u2062h\u2062o\u2062l\u2062d}$, the channel subunits move back to the closed state $C$. Thus, at any given moment in time, the number of open subunits increases with the total time spent by the cardiomyocyte in the suprathreshold (depolarized) state. This ensures that at low activation frequencies the subunits alternate between open and closed states (black line in Figure 2B), whereas at high frequencies, temporal summation of activation leads to a higher number of subunits in the open state (black line in Figure 2C). We assumed that the ion channel can produce current only if all of its identical subunits are in an open state. Such collective kinetics is required to render the current amplitude sensitive to changes in the activation frequency. In this case, the conductivity of the whole collection of $n$ independent, non-cooperative subunits is proportional to the $n^{t\u2062h}$ power of $O$ (the fraction of subunits in the open state $O$). Higher values of $n$ provide higher selectivity to the frequency changes, bringing it closer to the all-or-nothing response. Given these conditions, we found that a good intermediate solution for effective collective behaviour, which ensures simplicity (low $n$) and accuracy (high $n$), is $n=8$. Because we require the BioICD channel to produce a depolarizing current upon activation (in line with classical defibrillation), its reversal potential was set close to 0\u00a0mV, thus assuming a simple pore without selectivity for any specific ion.\n\nAs channel activation occurs at high frequency, it only produces current after the onset of a tachyarrhythmia (i.e. after a substantial and sustained increase in activation frequency). Activation of this channel raises the membrane potential everywhere in the tissue to \u2248\u00a00\u00a0mV, and the ion channel subunits continue to stay in the open state unless they are influenced to move back to the closed state by some separate, yet integrated mechanism. Thus, we included an additional deactivation mechanism to restore the initial closed state of the BioICD channel. A \u2018deactivating agent\u2019 $a$ is designed to accumulate in the $a_{1}$ state if the membrane potential is close to 0\u00a0mV for a substantial amount of time. Accumulation of $a_{1}$ potentiates the deactivation of the BioICD channel (transition from open state $O$ to closed state $C$).\n\nIn electrophysiological terms, only if the cell stays depolarized longer than the normal duration of the plateau in an AP, $a_{1}$ accumulates and facilitates the closure of the BioICD channel. A complete mathematical description and equations of this channel are given in the Materials and methods section (Equations 1-6), and the anti-arrhythmic action of this ion channel at the tissue level is illustrated in Figure 1.\n\n### Self-restoration of excitation rhythm in different virtual pathological substrates\n\nSustained cardiac arrhythmias typically occur in diseased myocardial tissue. Our simulations of human ventricular monolayers with BioICD channels demonstrate that abnormally fast rhythms can be detected and terminated successfully in a variety of pathological substrates. This is illustrated in Figure 3 (and also in Supporting Videos 1\u20134) for rotor-driven arrhythmias in substrates for (i) ventricular tachycardia (VT) (Figure 3A and E), (ii) VF (Figure 3B and F), (iii) VT in fibrotic tissue (Figure 3C and G) and (iv) VT in the presence of an anatomical scar (Figure 3D and H). In each case, the BioICD channel activates within 1 s after initiation of the arrhythmias, thereby electrically synchronizing the whole simulation domain within 300 ms and resetting all activity within 700 ms for VT based on functional reentry (Figure 3A and E), 1000 ms for VF (Figure 3B and F) and VT in fibrosis (Figure 3C and G), and 600 ms for anatomical reentry (Figure 3D and H). Sinus rhythm resumes in all cases, once the electrophysiological steady state has been restored. Thus, the entire process from arrhythmia initiation to restoration of sinus rhythm takes about 2 s in the ventricular monolayers. In substrates with more fibrosis (30% instead of 20% fibroblasts as in Figure 3C and G), our BioICD model is still able to auto-detect and terminate VT albeit somewhat slower (data not shown).\n\n![Video 1.](https://cdn.elifesciences.org/articles/55921/elife-55921-video1.mp4.jpg)\n\n**Video 1.:** The activation of the BioICD current is shown in grey, as an overlay on the voltage map in the BioICD case.\n\n![Video 2.](https://cdn.elifesciences.org/articles/55921/elife-55921-video2.mp4.jpg)\n\n**Video 2.:** The activation of the BioICD current is shown in grey, as an overlay on the voltage map in the BioICD case.\n\n![Video 3.](https://cdn.elifesciences.org/articles/55921/elife-55921-video3.mp4.jpg)\n\n**Video 3.:** The activation of the BioICD current is shown in grey, as an overlay on the voltage map in the BioICD case.\n\n![Video 4.](https://cdn.elifesciences.org/articles/55921/elife-55921-video4.mp4.jpg)\n\n**Video 4.:** Self-restoration of cardiac excitation rhythm after VT in monolayers of human ventricular tissue, in the presence of an anatomically realistic scar (3.4 cm long), surrounded by a grey zone, where $I_{K\u2062s}$ was reduced by 80%, $I_{K\u2062r}$ by 70%, $I_{C\u2062a\u2062L}$ by 69% and $I_{N\u2062a}$ by 62%.The activation of the BioICD current is shown in purple, as an overlay on the voltage map in the BioICD case.\n\nAs shown in Figure 3I, the presence of the BioICD channel exerts no significant influence on the AP at sinus rhythm (1.2\u00a0Hz) (the black and orange traces coincide), but slightly increases the APD at close-to-arrhythmic frequencies. This is also accounted for in the APD restitution curve of Figure 3J, which shows that the BioICD channel effectively increases the minimal APD of the cardiomyocytes. As a consequence of their sensitivity to frequency, the BioICD channels are unable to detect and eliminate reentrant activity anchored to scars if the activation frequency is too low, for example in substrates with large scars (see Video 5 in the Supporting Information).\n\n![Video 5.](https://cdn.elifesciences.org/articles/55921/elife-55921-video5.mp4.jpg)\n\n**Video 5.:** Failure of self-restoration of cardiac excitation rhythm after VT in monolayers of human ventricular tissue, in the presence of a large anatomically realistic scar (5.8 cm long), surrounded by a grey zone, where $I_{K\u2062s}$ was reduced by 80%, $I_{K\u2062r}$ by 70%, $I_{C\u2062a\u2062L}$ by 69% and $I_{N\u2062a}$ by 62%.The activation of the BioICD current is shown in grey, as an overlay on the voltage map in the BioICD case.\n\n### Self-restoration of excitation rhythm in the virtual human heart with sustained fibrillation\n\nNext, we incorporated the BioICD channel in cardiomyocytes of anatomically realistic human atria and ventricles. We find that the same channel successfully detects and terminates sustained fibrillation in both ventricles and atria to restore sinus rhythm, as illustrated in Figure 4A and B (the corresponding videos can be found in Supporting Information Videos 6\u20137). The mechanism of defibrillation is similar to that in monolayers. Arrhythmia-triggered activation of the BioICD channel in some regions leads to complete reset of the cells, whereas in others it prolongs APD, leading to extinction of the arrhythmia sources. With our choice of parameters, the BioICD channels in human atria could detect ongoing AF within 1.7\u00a0s and terminate it within 1.2\u00a0s to restore sinus rhythm. The corresponding channels in the ventricles could detect VF within 3\u00a0s and terminate it within 500\u00a0ms to restore sinus rhythm.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55921/elife-55921-fig4-v2.jpg)\n\n**Figure 4.:** The upper panels show representative plots of the control situation (in the absence of a BioICD channel). Induction, during sinus rhythm, of reentrant activity by giving an extra external stimulus leads to sustained AF and VF in atria and ventricles, respectively. The lower panels show the exact same situation, but in atria and ventricles expressing the BioICD channel. Once the arrhythmia is induced, the heart itself is able to detect and terminate fibrillation in order to restore sinus rhythm.\n\n![Video 6.](https://cdn.elifesciences.org/articles/55921/elife-55921-video6.mp4.jpg)\n\n![Video 7.](https://cdn.elifesciences.org/articles/55921/elife-55921-video7.mp4.jpg)\n\n### Self-restoration of excitation rhythm in human atrial myocytes\n\nIn order to assess, in actual cardiomyocytes, the anti-arrhythmic effect of the BioICD channel, the BioICD current was mimicked in vitro using dynamic patch-clamping (Wilders, 2006). This technique can be used to introduce virtual voltage-gated ion channels (like the BioICD channel) into electrically excitable cells such as cardiomyocytes, in this case human atrial myocytes derived from a conditionally immortalized cell line (Harlaar et al., 2019; Figure 5A). These cells were optogenetically modified (Feola et al., 2016; Figure 5E) to control their excitation rhythm by light using a dynamically controlled LED source. The dynamic clamp experiment was carried out in current clamp mode, which allowed the unbiased recording of the membrane potential as it develops as the net result of the activity of all endogenous ion channels and the BioICD channel. The real-time measured membrane potential was used to calculate the amplitude of the BioICD current, which was injected into the cell via the recording electrode. A real-time interface between the patch-clamp amplifier and a computer constituted the feedback loop (Figure 5B) that allowed us to mimic the presence of the BioICD channel, and to observe the effects of BioICD channel activity in cardiomyocytes (Figure 5C\u2013D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55921/elife-55921-fig5-v2.jpg)\n\n**Figure 5.:** (A) Human atrial myocytes stained for (from left to right) $\\alpha$-actinin (ACTN2), enhanced yellow fluorescent protein (eYFP) and DNA. (B) Dynamic patch-clamp set-up creating a feedback system for current injection and optical pacing. (C) Typical membrane potential ($V_{m}$) and injected current ($I_{i\u2062n\u2062j}$) traces with and without the BioICD current ($I_{B\u2062i\u2062o\u2062I\u2062C\u2062D}$) enabled at 7\u00a0Hz. Both traces are from the same cell and were recorded\u00a07\u00a0s apart. Dots indicate the stimulus times. (D) Typical membrane potential and injected current traces with and without the BioICD current enabled in the same cell as (C) at 8\u00a0Hz. Also here, both traces were recorded 7\u00a0s apart. (E) eYFP fluorescence produced by optogenetically modified human atrial myocyte. (F) Zoom-in of the trace in (C) showing termination of arrhythmic activity. The last optical stimulus is blocked, allowing 1\u00a0Hz activation to regain. (G) Maximal basic cycle length (BCL) for which termination still occurs as a function of baseline APD. Data obtained from 7 cells. Other abbreviations: real-time (RT), analog/digital (A/D), voltage input for the LED driver ($V_{L\u2062E\u2062D}$), current output of the LED driver ($I_{L\u2062E\u2062D}$).\n\nTo simulate arrhythmia conditions, light pacing was switched from 1\u00a0Hz to high frequency pacing (Figure 5C\u2013D). We found that the same ion channel gating properties used for the in silico studies successfully detected fast pacing rhythms in a living cell. While no significant distortions of AP were registered at 1\u00a0Hz (the black and orange traces coincide), the depolarizing current produced by the BioICD channel at high frequencies built up resulting in APD prolongation. In tissue, the cells depolarised by the BioICD current would create conduction block to \u2018defibrillate\u2019. In order to simulate this tissue-level feedback in a single-cell set-up, the light-pacing protocol was augmented with a feedback mechanism that detected pacing block (simulating conduction block in tissue) and subsequently lowered the pacing frequency, leading to restoration of the original cardiac excitation rhythm. Figure 5F shows a zoom-in of panel 5C focussing on the termination phase.\n\nThis process of arrhythmia detection, current accumulation, and pacing block is frequency-dependent, as evidenced by the smaller time until termination following 8\u00a0Hz optical pacing (1.16\u00a0s, Figure 5D) versus\u00a07\u00a0Hz pacing (1.92\u00a0s, Figure 5C) within the same cell. The frequency at which termination occurs is also dependent on the baseline APD (Figure 5G). For a total of 7 cells showing different baseline APDs (APD at 90% of repolarization (APD90) measured at 1\u00a0Hz), basic cycle length (BCL) was decreased slowly (frequency was increased) to find the maximal BCL at which self-restoration of excitation rhythm would occur. Upon an increase in baseline APD, the BioICD channel is activated earlier, namely at longer BCLs. Collectively, these findings show that the proposed ionic gating mechanism is able to restore cardiac excitation rhythm in living excitable cells.\n\n## Discussion\n\nIn this study we present evidence that the heart itself may be empowered to detect and terminate arrhythmias. This is achieved by adding only one additional type of customized ion channel, with tailored frequency-dependent gating properties, to the existing repertoire of ion channels. In virtual hearts equipped with this so-called BioICD channel, sinus rhythm is rapidly restored after arrhythmia initiation, in a fully automatic and shock-free manner without the need of a non-biological factor.\n\nRegarding the customized gating properties of the BioICD ion channel, we show that, amongst the parameters characteristic for tachyarrhythmia or fibrillation, even an obvious one like its frequency can already provide a basis for the detection mechanism. Here, arrhythmia detection relies on positive feedback upon frequency increase. We propose three possible realisations of such anti-arrhythmic gating, as described in the different BioICD models I-III. However, these should not be viewed as the ultimate designs of a BioICD channel, but more as a first set of rigorous outlines that can serve as a basis for additional research now that the concept has been proven in the virtual human heart. Our model can be further improved or modified in several aspects (see Supplementary Information), for\u00a0example the power $n$ can be lowered. In proteins, this can result in a good trade-off between the detecting-terminating abilities of the BioICD ion channels and their complexity. Also, changing time constants will alter the activation time course of the channel, which can result in a shorter or longer delay preceding arrhythmia termination. Indeed, the structure of our BioICD model allows ample freedom to choose kinetic as well as threshold parameters for the channel within certain limits. As proof-of-principle in the virtual human heart, we tested the BioICD channels in homogeneous, anatomically realistic atria and ventricles. Based on our dynamic patch-clamp experiments, we conjecture that the model should also work for pathological substrates where the arrhythmia comes with an increase in activation frequency. This is based on the notion that the mechanism for self-restoration of cardiac excitation rhythm relies only on the detection of high-frequency signals, irrespective of the nature and underlying cause of the arrhythmia.\n\nHaving explained the guiding principles behind the functioning of BioICD channels at the cellular level, we find it fascinating to consider the resemblance between functioning of these ion channels at the organ level and \u2018spontaneous termination\u2019 of arrhythmias. Note that, in nature, not all high-frequency arrhythmias are sustained. A significant fraction does get self-terminated (Josephson and Kastor, 1977), although the mechanisms behind such spontaneous termination are still up for speculation. For example, reentrant circuits can act as feedback systems in which changes in the duration of one cycle have the potential to affect conduction in the subsequent cycles (Frame and Rhee, 1991). Cycle length was found to oscillate with progressively increasing alternations of long and short periods until a sufficiently short cycle led to conduction block (Ortiz et al., 1993; Frame and Simson, 1988; Quan and Rudy, 1990). A feedback system with the aforementioned characteristic was studied in silico and in vivo in the atrioventricular-node (Simson et al., 1981; Sun et al., 1995). Also, a frequency-based feedback system exists in the atrioventricular and sinoatrial nodes in the heart, where overdrive suppression creates block of nodal activation (Kunysz et al., 1995; Vassalle, 1970; Kunysz et al., 1997). In addition, Nagai et al., 2000 demonstrated a way to end paroxysmal arrhythmias based on overdrive suppression in a circular ring of regular cardiac cells interspersed with two pacemakers. Interestingly, whereas unstable tachycardias demonstrate cycle length oscillations that can lead to spontaneous termination of the tachycardia, stable tachycardias exhibit damped oscillations when perturbed. Despite the phenomena discussed above, these damped oscillations can still lead to sustained reentry. In the present study, we focused on developing a DE system capable of handling sustained arrhythmias, including the most hazardous ones like fibrillation. This concept came to expression in the design of anti-arrhythmic ion channel gating, that\u00a0is the BioICD channel.\n\nAs a consequence of the design, this particular BioICD model allows for the detection and elimination of relatively fast sustained rhythms, thereby targeting those arrhythmias that require intervention for acute termination. This means that relatively low frequency arrhythmias are not detected by the BioICD channel and are therefore also not terminated. An example is a reentrant wave anchored to an anatomical obstacle (i.e. a scar) with a large perimeter (see Supporting Information, Video 5). In this case, the period of rotation, which is determined by the perimeter of the scar and directly related to the activation frequency, stays below the detection threshold. Thus, the abnormal electrical activity sustains in the cardiac tissue, despite the presence of the BioICD channel. However, as low-frequency arrhythmias are considered to be less hazardous than those with a high frequency, like fibrillation, they can be managed otherwise (Cho and Marb\u00e1n, 2010; Stevenson, 2013; Nattel et al., 2014; Bongianino and Priori, 2015). Alternatively, other biological arrhythmia detection mechanisms could be explored and developed if needed.\n\nAdditional next steps in developing the BioICD channel, from a computational point of view, should be (i) extending the space of synthetic models, together with (ii) modifying existing in silico models of known ion channels to propose a candidate for experimental realization. Indeed, future research should lead to identification of the most robust and broadly applicable BioICD channel with the highest translational potential. We believe that, for the construction of a BioICD channel, all the essential knowledge about ion channel structure-function relationships (B\u00f6rjesson and Elinder, 2008; Catterall, 2010; Moreau et al., 2014), as well as the molecular tools to manipulate these relationships in a systemic and rational manner are available (Bayley and Jayasinghe, 2004; Subramanyam and Colecraft, 2015). The ion channels from which functions can serve as a blueprint are not limited to eukaryotic organisms only, but encompass prokaryotic ones as well (Ren et al., 2001; Martinac et al., 2008) and can be searched for in extensive databases, such as the IUPHAR/BPS (Southan et al., 2016). Also, the field of optogenetics has allowed the study of biological arrhythmia termination and could thereby add to the translation of our findings (Boyle et al., 2018; Entcheva and Bub, 2016; Boyden et al., 2005). Here, cardiomyocytes are genetically modified to express light-gated ion channels, allowing control of electric current generation in these cells by light. In earlier work from our group and others, it was shown that cardiomyocytes are indeed able to generate sufficient electrical current, based on the natural electrochemical gradients, for biological auto-termination of both atrial and ventricular arrhythmias, including fibrillation. This was shown in vitro using monolayers of neonatal atrial myocytes (Bingen et al., 2014), but later also in the whole heart of adult rodents (Bruegmann et al., 2016; Crocini et al., 2016; Nyns et al., 2016), and most recently also integrated in a hybrid bio-electronic system (Nyns et al., 2019). In these studies, the gating of ion channels was controlled by light to terminate cardiac arrhythmias. As a next step, we now show how such gating could be controlled by the arrhythmia itself, thereby giving rise to a new fully biological DE system.\n\nIn this study, we used optogenetics to provide experimental proof of the aforementioned concept with the use of human atrial myocytes. These atrial myocytes were optogenetically modified and used in dynamic patch-clamp experiments to separate the pacing mechanism (optical) from the rhythm restoration mechanism (chemical/electrical) in order to improve signal interpretation, that\u00a0is stimulation block at depolarised membrane potentials. Our studies reveal that the in vitro data (Figure 5C\u2013D) show the same phenomenological phases as visible in the traces coming from the in silico simulations (Figure 1). Because the BioICD channel is capable of restoring normal excitation rhythm in cells with short baseline APDs under high frequency, the design of the gating properties makes that such restoration will work also for cells with long baseline APDs (Figures 2 and 5G), like those found in ventricular myocytes. This motivated our decision to use an atrial cell line for the experimental validation of our proposed concept.\n\nTaken together, our study presents insight into acquired homeostatic regulation of excitation rhythm under disturbed conditions, including cardiac fibrillation. It is shown, by a combination of theoretical and experimental studies, that such regulation can be established by creation of a biologically engineered DE system for arrhythmias through expression of customized ion channels. Self-resetting of an acutely disturbed heart rhythm by an engineered biological DE system may yield unique insight into arrhythmia management and may lay the foundation for the development of distinctively innovative treatment options by the creation of new biology for therapeutic purposes, ultimately leading to acute, yet trauma-free termination of arrhythmias. This would stretch the field of synthetic biology into cardiology and also provide a radically new perspective for other medical fields, given the general nature and versatility of biological DE systems. This perspective involves that a diseased organ, begets its own remedy, for\u00a0example a Biologically Integrated Cardiac Defibrillator (BioICD) in case of the heart.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>Conditionally immortalised human atrial cell line</td>\n      <td>doi:10.1093/eurheartj</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Chlamydomonas reinhardtii)</td>\n      <td>ChR2(H134R)</td>\n      <td>Addgene</td>\n      <td>plasmid #26973</td>\n      <td>source of the H134R variant of channelrhodopsin 2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent</td>\n      <td>LVV-ChR2(H134R)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentiviral vector particles to transduce and express ChR2(H134R)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>graphics processing unit-usable code</td>\n      <td>doi:10.1152/ajp-heart.00109.2006, doi:10.1038/srep20835</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RTXI dynamic clamp software</td>\n      <td>doi:10.1371/journal. pcbi.1005430</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nDetailed formulations for our BioICD ion channel model, based on a Markov chain formalism (Hermanns, 2002; Rudy and Silva, 2006), are provided below.\n\n### BioICD model I\n\nTotal BioICD current is expressed as:\n\n$$\nI_{B\u2062i\u2062o\u2062I\u2062C\u2062D}=G_{B\u2062i\u2062o\u2062I\u2062C\u2062D}\u2062O^{8}\u2062(V-E_{B\u2062i\u2062o\u2062I\u2062C\u2062D}).\n$$\n\nwhere $G_{B\u2062i\u2062o\u2062I\u2062C\u2062D}=150\u2062nS/pF$ is the maximal conductance, and $E_{B\u2062i\u2062o\u2062I\u2062C\u2062D}=0\u2062mV$ denotes the reversal potential of the BioICD channel. There is a frequency-sensing channel subunit with 2 states: open (O) and closed (C). Eight subunits together compose a BioICD channel. Deactivation of the channel is facilitated with a catalytic agent ($a$), which has 2 states: inactive $a_{0}$ and active $a_{1}$. These states evolve according to Equations 2, 3, 4, 5, 6:\n\n$$\n(2)\\frac{\u2202O}{\u2202t}=\\frac{k_{CO}C\u2212k_{OC}^{\u2032}(a_{1})O}{\\tau_{o}},(3)\\frac{\u2202a_{1}}{\u2202t}=\\frac{k_{01}a_{0}\u2212k_{10}a_{1}}{\\tau_{a}},(4)k_{OC}^{\u2032}(a_{1})=k_{OC}+K_{OC}(a_{1}),(5)C+O=1(6)a_{0}+a_{1}=1\n$$\n\nwhere $\\tau_{o}=\\tau_{a}=1400\u2062ms$ is the characteristic time, $K_{O\u2062C}\u2062(a_{1})=2\u22c510^{4}\u2062a15$, and $k_{C\u2062O}$, $k_{O\u2062C}$, $k_{01}$, and $k_{10}$ are functions of voltage that determine the opening and closing rates:\n\n$$\n(7)k_{CO}={0.0if\u00a0V<\u221260mV,1.0otherwise,(8)k_{OC}={7.0if\u00a0V<\u221260mV,0.0otherwise,(9)k_{01}={1.0if\u00a0\u22125\u00a05mV<V<0mV,0.0otherwise,(10)k_{10}={0.0if\u221255mV<V<0mV,200.0otherwise.\n$$\n\nHere, we assume that the number of catalyst molecules in the cell is much higher than the number of BioICD channels, such that the binding between them does not significantly change the number of active catalysts $a_{1}$. The fifth power of $a_{1}$ in $K_{O\u2062C}\u2062(a_{1})$ stands for the non-cooperative binding of 5 catalyst molecules to the BioICD channel. The full detailed Markov chain model for this process requires a large number of catalyst-bound states. This type of models can often be reduced to lower dimensions, as described by Keener, 2009. We thus substituted the complex catalyst-binding process with an extra facilitated flow from state $O$ to state $C$. The reduced model reproduces the same overall kinetics of the $O\u2192C$ catalysed reaction and is more suitable for whole-heart simulations due to its simplicity.\n\n### Human cardiac tissue model\n\nTo study the effect of the BioICD channel in human cardiac tissue, we integrated the BioICD channel model as a conductance into the electrophysiological model of each cardiomyocyte. For human ventricular tissue, the mathematical model proposed by Ten Tusscher et al., 2009 was used, where the transmembrane voltage ($V$) is calculated in millivolts (mV) according to Equation 11:\n\n$$\n\\frac{\\partial\u2061V}{\\partial\u2061t}=\\nabla\u2061(D~\u2062\\nabla\u2061V)-\\frac{I_{i\u2062o\u2062n}+I_{s\u2062t\u2062i\u2062m}}{C_{m}},\n$$\n\nwhere $t$ is time in milliseconds (ms), $I_{i\u2062o\u2062n}$ is the total ionic current density in micro-amperes per square centimetre (\u00b5A/cm2), $I_{s\u2062t\u2062i\u2062m}$ is the external stimulus current, $C_{m}$ is the specific membrane capacitance in microfarad per square centimetre (\u00b5F/cm2), and $D~$ is the diffusion tensor, whose components are related to the electrical conductivity of cardiac tissue in each direction of propagation.\n\n$$\nI_{ion}=I_{Na}+I_{CaL}+I_{K1}+I_{to}+I_{NaCa}+I_{NaK}+I_{Kr}+I_{Ks}+I_{bNa}+I_{bCa}+I_{pCa}+I_{pK}+I_{BioICD}.\n$$\n\nHere, the different cardiac currents are represented as follows: $I_{N\u2062a}$: the fast $N\u2062a^{+}$ current, $I_{C\u2062a\u2062L}$: the L-type $C\u2062a^{2+}$ current, $I_{K\u20621}$: the inward-rectifier K+ current, $I_{t\u2062o}$: the transient outward K+ current, $I_{N\u2062a\u2062C\u2062a}$: the $N\u2062a^{+}/C\u2062a^{2+}$ exchanger current, $I_{N\u2062a\u2062K}$: the $N\u2062a^{+}/K^{+}$ pump current, $I_{K\u2062r}$: the rapid delayed rectifier K+ current, $I_{K\u2062s}$: the slow delayed rectifier K+ current, $I_{b\u2062N\u2062a}$: the background $N\u2062a^{+}$ current, $I_{b\u2062C\u2062a}$: the background $C\u2062a^{2+}$ current, $I_{p\u2062C\u2062a}$: the plateau $C\u2062a^{2+}$ current, and $I_{p\u2062K}$: the plateau K+ current. Units for conductance measurements ($G_{X}$) and measurements of intracellular and extracellular ionic concentrations ($[X]_{i}$ and $[X]_{o}$), are in nanosiemens per picofarad (nS/pF) and millimole per litre (mM), respectively.\n\nFor simulations of Figure 3, we used a monolayer model, containing 512\u00a0\u00d7\u00a0512 grid points, such that the physical size of the simulated tissue was 12.8\u00a0\u00d7\u00a012.8 cm. Our model for fibrosis contained 20% randomly distributed fibroblasts, which did not couple electrotonically to the neighbouring cardiomyocytes (Ten Tusscher and Panfilov, 2007). For simulations with the realistic scar, a grey border zone (GZ) was taken into consideration. In the GZ, $I_{K\u2062s}$ was reduced by 80%, $I_{K\u2062r}$ by 70%, $I_{C\u2062a\u2062L}$ by 69% and $I_{N\u2062a}$ by 62% (Arevalo et al., 2013).\n\nFor human atrial tissue, data and fibre directions were obtained from D\u00f6ssel et al., 2011. The ionic cell model that was used is the AF-induced electrically remodelled human atrial Courtemanche et al., 1999 model\u00a0(adapted from Courtemanche et al., 1998, which was taken from CellML (Yu et al., 2011) with the use of Myokit (Clerx et al., 2016) and transformed to graphics processing unit-usable code). The transmembrane voltage ($V$) is described in millivolts (mV) according to Equation 12 with $I_{p\u2062K}$ replaced by $I_{K\u2062u\u2062r}$, an ultra-rapid delayed rectifier K+ current.\n\nWe used an S1-S2 cross-field protocol to generate spiral and scroll waves (ten Tusscher and Panfilov, 2006). In human ventricular monolayers, we assumed isotropy. Thus, the diffusion tensor of Equation 11 could be replaced by a scalar coefficient D. However, in 3D, owing to the natural anisotropy of realistic cardiac tissue, the elements were computed on the basis of a reconstructed fibre direction field as described by Ten Tusscher et al., 2009. The transverse diffusion coefficient ($D_{t}$, for signal propagation across the fibers) was assumed to be 4 (ventricles) or 6 (atria) times less than the longitudinal diffusion coefficient ($D_{l}$, for signal propagation along the fibers). Elements of the diffusion tensor were computed as follows:\n\n$$\nD_{i\u2062j}=(D_{l}-D_{t})\u2062\\alpha_{i}\u2062\\alpha_{j}+D_{t}\u2062\\delta_{i\u2062j},\n$$\n\nwhere $\\alpha_{i}$ are components of the unit vector that is oriented along the direction of a fibre. We used $D_{l}=1.54\u2062cm^{2}/s$ for ventricles and $D_{l}=1.6\u2062cm^{2}/s$ for atria.\n\nWe integrated Equation 11 in time using the forward Euler method with time step $\\deltat=0.02ms$ (ventricular model) or $\\deltat=0.01ms$ (atrial model), and in space, using the centred finite-differencing scheme with space step $\\deltax=\\deltay=0.025cm$ in monolayers, 0.05 cm in whole ventricles and 0.0330 cm in whole atria, subject to \u2018no flux\u2019 boundary conditions. The simulation domains for the whole ventricles and atria contained 1,\u00a0693,\u00a0010 and 2,\u00a0173,\u00a0891 grid points, respectively. The gating variables in the electrophysiological model for the human cardiomyocyte were integrated using the Rush and Larsen, 1978\u00a0scheme.\n\n### Cell lines\n\nThe cell line used in this study has recently been generated by transducing human foetal atrial myocytes with a human immunodeficiency virus type 1-based vector conferring doxycycline-controlled expression of simian virus 40 large tumour antigen as described in Harlaar et al., 2019. The cells were tested negative for the presence of mycoplasma by the MycoAlert mycoplasma detection kit (Lonza, Basel, Switzerland), as well as by Hoechst 33342 (Life Technologies Europe, Bleiswijk, the Netherlands) staining of Vero cells cultured with conditioned human atrial myocyte medium.\n\n### Preparation of ChR2(H134R)-expressing human atrial myocytes\n\nSelf-inactivating lentiviral vector particles encoding an eYFP-tagged version of the H134R mutant of Chlamydomonas reinhardtii channelrhodopsin 2 (LVV-ChR2(H134R)), were created by standard laboratory procedures (Feola et al., 2016) and used to transduce human atrial myocytes differentiated from a conditionally immortalised cell line (Harlaar et al., 2019). On the day before the patch-clamp experiments, cells were dissociated and re-plated on fibronectin-coated glass coverslips at 2.5\u00a0\u00d7\u00a0104 cells per well in 24-well culture plates (Greiner Bio-One, Alphen aan den Rijn, the Netherlands).\n\n### Electrophysiological analysis\n\nAPs were recorded in single cells or small clusters of cells using the amphotericin-B perforated patch-clamp technique (Wilders, 2006). Voltage control, data acquisition, and analysis were accomplished with custom-made software. Potentials were corrected for the calculated liquid junction potential (Barry and Lynch, 1991). Signals were low-pass-filtered (cut-off of 5\u00a0kHz) and digitized at 5\u00a0kHz. Cell membrane capacitance ($C_{m}$) was estimated by dividing the time constant of the decay of the capacitive transient in response to 5\u00a0mV hyperpolarizing voltage clamp steps from \u221240 mV by the series resistance.\n\nAPs were measured at 36\u00a0\u00b1\u00a00.2\u00b0C in extracellular solution containing (in mM): NaCl 140, KCl 5.4, CaCl2 1.8, MgCl2 1, glucose 5.5, HEPES 5; pH 7.4 (NaOH). Pipettes (resistance 2.5\u00a0\u2212\u00a03\u00a0M\u03a9) were pulled from borosilicate glass capillaries (Harvard Apparatus, Cambourne, UK) using a custom-made microelectrode puller, and filled with solution containing (in mM): K-gluconate 125, KCl 20, NaCl 5, amphotericin-B 0.44, HEPES 10; pH 7.2 (KOH). APs were elicited by 10\u00a0ms pulses of light (470\u00a0nm, 3mW/mm2). The light source comprised of a 470L3-C4 mounted LED (Thorlabs, Newton, NJ), driven by the LEDD1B modulated power supply. Light was delivered via the COP1-A collimation lens assembly (Thorlabs, Newton, NJ) positioned above the bath at a distance of 15\u00a0cm.\n\n### Dynamic clamp protocol\n\nA Linux computer running RTXI dynamic clamp software (Patel et al., 2017) with a time step $\u0394\u2062t=50\u2062\\mu\u2062s$ allowed real-time dynamic interaction between the input and output channels of the patch-clamp amplifier. At a variety of frequencies, an optical stimulus train was applied that consisted of the following phases: i) 7 pulses of pre-pacing are applied at 1\u00a0Hz with the BioICD channel enabled, ii) 8 pulses are applied at 1\u00a0Hz with the BioICD channel still enabled, iii) an undetermined number of pulses is applied at increased frequency with the BioICD channel enabled, either until termination occurs due to the feedback mechanism, or until a stable state has been achieved (in which case the protocol is terminated), iv) after restoration of excitation rhythm, another 7 pulses are applied at 1\u00a0Hz with the BioICD channel enabled, v) 8 pulses are applied at 1\u00a0Hz with the BioICD channel disabled, vi) an undetermined number of pulses is applied at increased frequency with the BioICD channel still disabled until the stimulus train is stopped externally. The feedback mechanism detected refractory beats as defined by membrane potential values more positive than \u221220\u00a0mV\u00a0during the entire pulse duration.\n\n### Data and software availability\n\nThe key component of the graphics processing unit-usable code that is sufficient for reproduction of the results was made readily available. More detailed information about the data and software that support the findings of this study are available from the corresponding author upon reasonable request.\n",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "6c6583ae-cf6c-4270-bf12-261b5659b99f",
+      "submission_id": "c639aa1d-7890-492c-b289-45b0a3d716a9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark T Nelson, University of Vermont United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55921.sa1](https://doi.org/10.7554/eLife.55921.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript suggests that an engineered ion channel can act as a novel feedback mechanism to protect against arrhythmias. Evidence is provided that a channel with appropriate kinetics can do this in computer models, and using a dynamic clamp, in atrial myocytes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Self-restoration of cardiac excitation rhythm by anti-arrhythmic ion channel gating\" for consideration by eLife. Your article has been reviewed by Kenton Swartz as the Senior Editor, a Reviewing Editor, and two reviewers. The following individual involved in review of your submission have agreed to reveal their identity: Gil Bub (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. In recognition of the fact that revisions may take longer we typically allow, until the research enterprise restarts in full, we will give authors as much time as they need to submit revised manuscripts.\n\nSummary:\n\nThis manuscript suggests that an engineered channel can act as a novel feedback system to protect against arrhythmias. It is shown that a channel with appropriate kinetics can do this in computer models and, using the dynamic clamp, in atrial myocytes. The idea and modeling are fascinating. There are, of course, two problems in potential implementation. (1) How will an appropriate channel be designed and synthesized? (2) The channel would need to be expressed long term throughout the ventricle in order to deal with ventricular arrhythmias \u2013 no easy feat.\n\nEssential revisions:\n\n1) The experiments in the new Figure 5, while compelling, potentially can benefit from some clarification. As I understand it, the clamp protocol injects current based on a measurement of the current voltage. In a real channel, the current may be limited and offset by compensating currents from other channels, while here this may be overpowered the clamp. If the latter is true, then the experiment doesn't show that a BioICD channel would work in real life (the heart cell being in effect forced to show the right result by the clamp). I concede that this point may turn out to be a misunderstanding on my part as I have not worked with voltage or current clamp protocols (in which case the authors can answer this in rebuttal without changes to the manuscript).\n\n2) It is unclear how the BioICD channel would operate under conditions of sustained exercise. It would be very helpful if the authors would provide both dynamic and standard restitution plots (up to 3.3 Hz, a good upper limit for heart rate in a healthy adult) to show that the channel wouldn't interfere with cardiac function in normal circumstances.\n\n3) Heterogeneous expression of a BioICD channel may result in increased APD dispersion during exercise (e.g. the patient goes jogging). It would be good to repeat the simulations suggested in point 2 above for cells with a 10% difference in BioICD channel concentration to make sure that this overall approach is not potentially pro-arrhythmic. Of course, if the restitution curves in point 2 are identical to those of a cell without a BioICD channel then this simulation is not necessary.\n",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ed525ce2-bb1a-4148-b1b2-e72b258d37ab",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C1",
+      "claim": "Homeostatic regulation protects organisms against hazardous physiological changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostatic regulation protects organisms against hazardous physiological changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about homeostatic regulation presented as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "75a2535c-c80f-4fb4-b2ef-5d0b48e7d393",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C2",
+      "claim": "Homeostatic regulation is limited in certain organs and associated biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such regulation is limited in certain organs and associated biological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge about the limitations of homeostatic regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "3dd946fb-3965-40bb-877d-807cfa556be5",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C3",
+      "claim": "The heart fails to self-restore its normal electrical activity once disturbed, as with sustained arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the heart fails to self-restore its normal electrical activity once disturbed, as with sustained arrhythmias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an established fact about cardiac physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "fda4cf9d-ed01-40da-9b81-0cf25cae8ce8",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C4",
+      "claim": "A biological self-restoring system can allow automatic detection and correction of abnormal excitation rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present proof-of-concept of a biological self-restoring system that allows automatic detection and correction of such abnormal excitation rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational and experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "0ca13804-2311-4752-aad1-c693b5f7c84c",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C5",
+      "claim": "The realization of a biological self-restoring system for the heart involves the integration of ion channels with newly designed gating properties into cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the heart, its realization involves the integration of ion channels with newly designed gating properties into cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the approach taken in the study, supported by the computational models and experimental validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "cc535e86-1f04-4b2d-85ff-426ee397c83a",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C6",
+      "claim": "Cardiac tissue with BioICD channels can discriminate between normal rhythm and arrhythmia based on frequency-dependent gating.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows cardiac tissue to i) discriminate between normal rhythm and arrhythmia based on frequency-dependent gating",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through computational simulations and dynamic clamp experiments showing frequency-dependent activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "6a732106-c317-4518-a456-a6a747fb44e5",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C7",
+      "claim": "Cardiac tissue with BioICD channels can generate an ionic current for termination of detected arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows cardiac tissue to i) discriminate between normal rhythm and arrhythmia based on frequency-dependent gating and ii) generate an ionic current for termination of the detected arrhythmia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through computational simulations showing current generation and arrhythmia termination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "b41c7378-1d80-49c2-98ab-c9882998ef4c",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C8",
+      "claim": "For both human atrial and ventricular arrhythmias, activation of BioICD channels leads to rapid and repeated restoration of normal excitation rhythm in silico.",
+      "claim_type": "EXPLICIT",
+      "source": "We show in silico, that for both human atrial and ventricular arrhythmias, activation of these channels leads to rapid and repeated restoration of normal excitation rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational simulations shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "c5728cfc-7866-45d7-99be-8448c053a6ac",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C9",
+      "claim": "Experimental validation of the BioICD concept is provided by injecting the designed channel current for arrhythmia termination in human atrial myocytes using dynamic clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental validation is provided by injecting the designed channel current for arrhythmia termination in human atrial myocytes using dynamic clamp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "55911231-4afa-4f46-ae5c-a1f01fc4f518",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C10",
+      "claim": "Homeostatic regulation involves three principal mechanisms: detection, processing and effectuation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such homeostatic regulation involves three principal mechanisms: detection, processing and effectuation. The 'detector' senses a change in the environment, communicates it to a 'processor', which processes the information and commands the 'effector' to react appropriately (Horrobin, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Horrobin, 1970.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "9b85d6c5-46c8-41ef-ba9f-446f0d4b5c32",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C11",
+      "claim": "Detector-effector systems are considered to be effective means to respond to changes that, if sustained, may cause harm to the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their highly conserved nature, these 'detector-effector' (DE) systems are considered to be effective means to respond to changes that, if sustained, may cause harm to the organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "09403a1f-1b6c-468c-8aa5-3696dc49c31e",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C12",
+      "claim": "Light sensitivity coupled to movement is an example of a detector-effector mechanism for the full scale of evolved organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Light sensitivity coupled to movement is an example of a detector-effector mechanism for the full scale of evolved organisms, as exemplified by phototaxis in unicellular organisms (Nagel et al., 2002) and pupil reflex in higher order vertebrates (Sherman and Stark, 1957).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nagel et al., 2002 and Sherman and Stark, 1957.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "50447477-6ae8-4a93-9489-8e70d8e036e3",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C13",
+      "claim": "At the cellular level, many detector-effector systems operate through ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, many DE systems operate through ion channels, which may act as functional detector-effector units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about cellular physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "a34c044d-0afb-4228-9a81-ad6c32a7663f",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C14",
+      "claim": "Ion channels can detect changes in voltage, hormones or light and respond by activation to generate a flow of ions or by inactivation to stop a flow of ions.",
+      "claim_type": "EXPLICIT",
+      "source": "These channels can detect changes in, for example, voltage, hormones or light to which they respond by activation to generate a flow of ions (i.e. an electrical current) or by inactivation to stop a flow of ions (Catterall, 2000; Stojilkovic et al., 2010; Govorunova et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Catterall, 2000; Stojilkovic et al., 2010; Govorunova et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "5ff532c5-38a1-4149-874c-7219a16d4fd7",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C15",
+      "claim": "A detector-effector system responding specifically to sustained hazardous heart rhythm disturbances seems not to have been evolved.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the human body maintains a multitude of DE systems that contribute to its every day function, a DE system responding specifically to sustained hazardous heart rhythm disturbances seems not to have been evolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an observation about the absence of such a system in nature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "778dcc93-c515-41a7-802f-3a5a6177621c",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C16",
+      "claim": "Under natural cardiac electrophysiological conditions, heart rhythm disorders can terminate spontaneously, resulting in non-sustained arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, under natural cardiac electrophysiological conditions, heart rhythm disorders can terminate spontaneously, resulting in non-sustained arrhythmias (Bub et al., 2003; Katritsis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bub et al., 2003; Katritsis et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "fb6727f3-3099-4240-b3e9-16dbf459ed3b",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C17",
+      "claim": "The most effective means for acute restoration of sinus rhythm in atrial and ventricular fibrillation consists of delivery of high-voltage shocks to the heart for arrhythmia termination.",
+      "claim_type": "EXPLICIT",
+      "source": "For those that are sustained, the most effective means for acute restoration of sinus rhythm, especially in atrial and ventricular fibrillation (AF and VF), consists of delivery of high-voltage shocks to the heart for arrhythmia termination (i.e. defibrillation) (Wellens et al., 1998; Link et al., 2010; Laslett et al., 2012; Borne et al., 2013; Kumar and Schwartz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "b0b0eb9d-4449-4c72-b409-3202e24e6800",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C18",
+      "claim": "Electronic detector-effector systems have shortcomings including limited battery lives, technical malfunction and inappropriate shock deliveries.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their non-biological nature, these electronic DE systems have a number of shortcomings including limited battery lives, technical malfunction and inappropriate shock deliveries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about implantable cardioverter defibrillators.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "de4fcd09-5fdf-44b7-9572-d77633e0ed1a",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C19",
+      "claim": "Major concerns from a patient's perspective are the severe pain, anxiety and depression resulting from electroshocks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, from a patient's perspective, major concerns are the severe pain, anxiety and depression resulting from the electroshocks (Sears et al., 2011), not to mention the possibility of permanent tissue damage (Ashihara and Trayanova, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sears et al., 2011 and Ashihara and Trayanova, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "6b64f871-8031-4196-bfac-db7963860ecc",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C20",
+      "claim": "Electroshocks can cause permanent tissue damage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, from a patient's perspective, major concerns are the severe pain, anxiety and depression resulting from the electroshocks (Sears et al., 2011), not to mention the possibility of permanent tissue damage (Ashihara and Trayanova, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ashihara and Trayanova, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "18b1ab4d-a946-4948-ba3a-09cbd6bbdd18",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C21",
+      "claim": "Three different approaches were used to design the kinetics of the BioICD channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We use computer modelling to design the kinetics of this channel via three different approaches",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the manuscript with Models I, II, and III.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "18b32d0b-03b0-47a7-9643-943fc0588cd6",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C22",
+      "claim": "The BioICD channel can detect and terminate tachyarrhythmias and fibrillation in both atria and ventricles once integrated into human cardiac tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We use computer modelling to design the kinetics of this channel via three different approaches and demonstrate the possibility for human cardiac tissue to auto-detect and terminate tachyarrhythmias and fibrillation in both atria and ventricles once this type of channel has been integrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through computational simulations shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "eb2cd67f-1f95-4abe-8493-e940105049ac",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C23",
+      "claim": "In simulated monolayers of human cardiomyocytes, the arrhythmia can be detected and terminated to restore sinus rhythm within seconds of its initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We prove the concept of our study in simulated monolayers of human cardiomyocytes and in anatomically realistic in silico models of the human atrial and ventricular musculature, by showing that in each case considered, the arrhythmia can be detected and terminated to restore sinus rhythm, within seconds of its initiation, on a fully biological basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation results shown in Figures 1 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "293c3600-fac3-4368-8df5-5e3b251e212f",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C24",
+      "claim": "In anatomically realistic in silico models of the human atrial and ventricular musculature, the arrhythmia can be detected and terminated to restore sinus rhythm within seconds of its initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We prove the concept of our study in simulated monolayers of human cardiomyocytes and in anatomically realistic in silico models of the human atrial and ventricular musculature, by showing that in each case considered, the arrhythmia can be detected and terminated to restore sinus rhythm, within seconds of its initiation, on a fully biological basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "dc1966fa-22e4-45b7-9602-736eeed71f39",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C25",
+      "claim": "The dynamic clamp technique was exploited to realise the designed BioICD function with the use of optogenetically modified human atrial myocytes that are optically stimulated at arrhythmic frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to provide experimental evidence of the validity of the BioICD concept, we exploited the dynamic clamp technique (Wilders, 2006) to realise the designed BioICD function with the use of optogenetically modified human atrial myocytes that are optically stimulated at arrhythmic frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "7fbc476a-fa8b-4b3f-98b3-80c453c890fa",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C26",
+      "claim": "The BioICD ion channel should have the ability to sense the frequency of electrical activation through gating mechanisms that are controlled by the cell's membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored the properties of this ion channel in silico and found that in order to provide the basis for a DE system, such channel should have the ability to sense the frequency of electrical activation through gating mechanisms that are controlled by the cell's membrane potential (voltage difference across the cell membrane).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational modeling and analysis of the channel properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "8a842fd2-f308-4af4-afe3-9cb4868784be",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C27",
+      "claim": "Induction of a figure-of-eight reentrant source via an extrasystole during sinus rhythm results in a sustained reentrant tachyarrhythmia in a simulated monolayer without expression of the BioICD channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1A illustrates the control situation for a simulation experiment in a monolayer without expression of the BioICD channel. In this situation, induction of a figure-of-eight reentrant source, via an extrasystole during sinus rhythm, results in a sustained reentrant tachyarrhythmia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1A showing the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "2c90f790-9761-4b8f-af51-411fbb2a870c",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C28",
+      "claim": "In monolayers expressing the BioICD channel, the same stimulation first leads to the development of the same reentrant pattern, but then the BioICD channel is activated due to the concurrent increase in activation frequency, resulting in termination of the figure-of-eight reentry and restoration of sinus rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "In monolayers expressing the BioICD channel (see section BioICD model I below), the exact same stimulation first leads to the development of the same reentrant pattern, however then, because of the concurrent increase in activation frequency, the BioICD channel is activated, resulting in termination of the figure-of-eight reentry and restoration of sinus rhythm (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1B showing the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "649a65e1-ddc8-40f3-b521-0628630c8482",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C29",
+      "claim": "The presence of the BioICD channel exerts no influence on wave propagation during sinus rhythm, both before and after the arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the presence of the BioICD channel exerts no influence on wave propagation during sinus rhythm, both before and after the arrhythmia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "5e6bb9b1-e739-45f4-b4c7-00a7afc53c35",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C32",
+      "claim": "At any given moment in time, the number of open subunits increases with the total time spent by the cardiomyocyte in the suprathreshold (depolarized) state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at any given moment in time, the number of open subunits increases with the total time spent by the cardiomyocyte in the suprathreshold (depolarized) state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the voltage-dependent gating mechanism described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "56d977b7-9c00-4c12-996c-fc9f0d0dbcca",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C33",
+      "claim": "At low activation frequencies the subunits alternate between open and closed states.",
+      "claim_type": "EXPLICIT",
+      "source": "This ensures that at low activation frequencies the subunits alternate between open and closed states (black line in Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2B showing the state variable traces at 1.2 Hz.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "d4a13ebc-c5e0-4d94-9465-5468717ba724",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C34",
+      "claim": "At high frequencies, temporal summation of activation leads to a higher number of subunits in the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas at high frequencies, temporal summation of activation leads to a higher number of subunits in the open state (black line in Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2C showing the state variable traces at 4.2 Hz.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "49e904cf-192a-41cd-9fee-997e2426f010",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C36",
+      "claim": "Collective kinetics is required to render the current amplitude sensitive to changes in the activation frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Such collective kinetics is required to render the current amplitude sensitive to changes in the activation frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design rationale for the BioICD channel Model I.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "5a16d2d1-b919-40dc-8281-fefe4663d627",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C40",
+      "claim": "The reversal potential of the BioICD channel was set close to 0 mV, assuming a simple pore without selectivity for any specific ion.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we require the BioICD channel to produce a depolarizing current upon activation (in line with classical defibrillation), its reversal potential was set close to 0 mV, thus assuming a simple pore without selectivity for any specific ion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design choice for the BioICD channel Model I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "7b217ae2-4f6c-432c-aab9-7a4667820887",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C41",
+      "claim": "Channel activation occurs at high frequency, producing current only after the onset of a tachyarrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "As channel activation occurs at high frequency, it only produces current after the onset of a tachyarrhythmia (i.e. after a substantial and sustained increase in activation frequency).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the frequency-dependent gating mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "b6a1fcfd-d0dc-4c7b-8094-baf691616e90",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C42",
+      "claim": "Activation of the BioICD channel raises the membrane potential everywhere in the tissue to approximately 0 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of this channel raises the membrane potential everywhere in the tissue to \u2248 0 mV",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "de0afa3d-a1a3-498b-a0b7-f2a37a15210d",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C43",
+      "claim": "An additional deactivation mechanism is included to restore the initial closed state of the BioICD channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we included an additional deactivation mechanism to restore the initial closed state of the BioICD channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the BioICD channel Model I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "6d0692e2-4a4c-4d46-b85f-41091a4b953c",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C47",
+      "claim": "Abnormally fast rhythms can be detected and terminated successfully in a variety of pathological substrates in simulations of human ventricular monolayers with BioICD channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations of human ventricular monolayers with BioICD channels demonstrate that abnormally fast rhythms can be detected and terminated successfully in a variety of pathological substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3 for various pathological substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "34621ca8-8bcf-4fbf-a386-4b9df3abf6a0",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C48",
+      "claim": "The BioICD channel activates within 1 s after initiation of ventricular tachycardia in a substrate for VT.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the BioICD channel activates within 1 s after initiation of the arrhythmias, thereby electrically synchronizing the whole simulation domain within 300 ms and resetting all activity within 700 ms for VT based on functional reentry (Figure 3A and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3A and E showing the simulation results for VT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "5d12fdab-1d50-4241-9754-e08dae966e77",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C49",
+      "claim": "The BioICD channel electrically synchronizes the whole simulation domain within 300 ms for VT based on functional reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the BioICD channel activates within 1 s after initiation of the arrhythmias, thereby electrically synchronizing the whole simulation domain within 300 ms and resetting all activity within 700 ms for VT based on functional reentry (Figure 3A and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3A and E showing the simulation results for VT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "71e3a049-c4e7-4a3b-afbf-9430c5205120",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C50",
+      "claim": "The BioICD channel resets all activity within 700 ms for VT based on functional reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the BioICD channel activates within 1 s after initiation of the arrhythmias, thereby electrically synchronizing the whole simulation domain within 300 ms and resetting all activity within 700 ms for VT based on functional reentry (Figure 3A and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3A and E showing the simulation results for VT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "c877e140-acc7-4ee3-8fc2-8650d442c1ff",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C51",
+      "claim": "The BioICD channel resets all activity within 1000 ms for VF.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the BioICD channel activates within 1 s after initiation of the arrhythmias, thereby electrically synchronizing the whole simulation domain within 300 ms and resetting all activity within 700 ms for VT based on functional reentry (Figure 3A and E), 1000 ms for VF (Figure 3B and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3B and F showing the simulation results for VF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "51ea11de-531f-4e33-af3c-b155dde7d17c",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C52",
+      "claim": "The BioICD channel resets all activity within 1000 ms for VT in fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the BioICD channel activates within 1 s after initiation of the arrhythmias, thereby electrically synchronizing the whole simulation domain within 300 ms and resetting all activity within 700 ms for VT based on functional reentry (Figure 3A and E), 1000 ms for VF (Figure 3B and F) and VT in fibrosis (Figure 3C and G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3C and G showing the simulation results for VT in fibrosis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "ed7ed24d-f30f-49f7-b74f-53a2c4a820d0",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C53",
+      "claim": "The BioICD channel resets all activity within 600 ms for anatomical reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the BioICD channel activates within 1 s after initiation of the arrhythmias, thereby electrically synchronizing the whole simulation domain within 300 ms and resetting all activity within 700 ms for VT based on functional reentry (Figure 3A and E), 1000 ms for VF (Figure 3B and F) and VT in fibrosis (Figure 3C and G), and 600 ms for anatomical reentry (Figure 3D and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3D and H showing the simulation results for anatomical reentry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "d6bcbf33-2ab5-4c15-961c-b1de002f817a",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C54",
+      "claim": "Sinus rhythm resumes in all cases once the electrophysiological steady state has been restored.",
+      "claim_type": "EXPLICIT",
+      "source": "Sinus rhythm resumes in all cases, once the electrophysiological steady state has been restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "65db252f-3f84-4446-9e30-697d05b23a39",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C55",
+      "claim": "The entire process from arrhythmia initiation to restoration of sinus rhythm takes about 2 s in the ventricular monolayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the entire process from arrhythmia initiation to restoration of sinus rhythm takes about 2 s in the ventricular monolayers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the timing data from the simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "aad6dfbb-fe28-42a5-b6d7-0a80b1c41449",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C56",
+      "claim": "In substrates with more fibrosis (30% instead of 20% fibroblasts), the BioICD model is still able to auto-detect and terminate VT albeit somewhat slower.",
+      "claim_type": "EXPLICIT",
+      "source": "In substrates with more fibrosis (30% instead of 20% fibroblasts as in Figure 3C and G), our BioICD model is still able to auto-detect and terminate VT albeit somewhat slower (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on additional simulations not shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "82c35368-5631-4c1d-b05f-82e48cff262d",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C57",
+      "claim": "The presence of the BioICD channel exerts no significant influence on the AP at sinus rhythm (1.2 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3I, the presence of the BioICD channel exerts no significant influence on the AP at sinus rhythm (1.2 Hz) (the black and orange traces coincide)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3I showing overlapping AP traces at 1.2 Hz.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "46ced9bd-1d89-4855-97ba-b460813e1752",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C58",
+      "claim": "The BioICD channel slightly increases the APD at close-to-arrhythmic frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3I, the presence of the BioICD channel exerts no significant influence on the AP at sinus rhythm (1.2 Hz) (the black and orange traces coincide), but slightly increases the APD at close-to-arrhythmic frequencies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3I showing AP traces at higher frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "219b0119-cd17-4b31-91d2-b8fd36b016a6",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C59",
+      "claim": "The BioICD channel effectively increases the minimal APD of the cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also accounted for in the APD restitution curve of Figure 3J, which shows that the BioICD channel effectively increases the minimal APD of the cardiomyocytes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3J showing the APD restitution curve.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "c29d23e1-b56b-465b-a40c-72f35eb29c9d",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C60",
+      "claim": "The BioICD channels are unable to detect and eliminate reentrant activity anchored to scars if the activation frequency is too low.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence of their sensitivity to frequency, the BioICD channels are unable to detect and eliminate reentrant activity anchored to scars if the activation frequency is too low, for example in substrates with large scars (see Video 5 in the Supporting Information).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Video 5 showing failure of termination with a large scar.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "8f140ea9-a66e-4f08-ad77-c7a530471490",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C61",
+      "claim": "The BioICD channel successfully detects and terminates sustained fibrillation in both ventricles and atria to restore sinus rhythm in anatomically realistic human hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we incorporated the BioICD channel in cardiomyocytes of anatomically realistic human atria and ventricles. We find that the same channel successfully detects and terminates sustained fibrillation in both ventricles and atria to restore sinus rhythm, as illustrated in Figure 4A and B",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4A and B showing the simulation results in anatomically realistic models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "b660b235-7dde-4332-bb7d-7bbe8b5583ad",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C62",
+      "claim": "The mechanism of defibrillation in anatomically realistic hearts is similar to that in monolayers.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism of defibrillation is similar to that in monolayers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the simulation results in monolayers and anatomically realistic models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "18be4ad5-6556-4ef6-bdfc-583ef35d850c",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C63",
+      "claim": "Arrhythmia-triggered activation of the BioICD channel in some regions leads to complete reset of the cells, whereas in others it prolongs APD, leading to extinction of the arrhythmia sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Arrhythmia-triggered activation of the BioICD channel in some regions leads to complete reset of the cells, whereas in others it prolongs APD, leading to extinction of the arrhythmia sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of arrhythmia termination observed in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "1e977809-2eee-4b4c-97a4-fcf8168ec0b6",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C64",
+      "claim": "The BioICD channels in human atria could detect ongoing AF within 1.7 s.",
+      "claim_type": "EXPLICIT",
+      "source": "With our choice of parameters, the BioICD channels in human atria could detect ongoing AF within 1.7 s and terminate it within 1.2 s to restore sinus rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the timing data from the simulations in anatomically realistic atria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "f681397c-073d-487c-814e-cf525c528add",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C65",
+      "claim": "The BioICD channels in human atria could terminate AF within 1.2 s to restore sinus rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "With our choice of parameters, the BioICD channels in human atria could detect ongoing AF within 1.7 s and terminate it within 1.2 s to restore sinus rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the timing data from the simulations in anatomically realistic atria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "40eb7eff-2b7e-47d5-8bcb-9d6e9a5d7671",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C66",
+      "claim": "The BioICD channels in the ventricles could detect VF within 3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding channels in the ventricles could detect VF within 3 s and terminate it within 500 ms to restore sinus rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the timing data from the simulations in anatomically realistic ventricles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "9fd41535-64ca-4add-bf51-02ee40253760",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C67",
+      "claim": "The BioICD channels in the ventricles could terminate VF within 500 ms to restore sinus rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding channels in the ventricles could detect VF within 3 s and terminate it within 500 ms to restore sinus rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the timing data from the simulations in anatomically realistic ventricles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "45acf820-18a9-4653-b4ac-da8da93a2b39",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C68",
+      "claim": "The BioICD current was mimicked in vitro using dynamic patch-clamping.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to assess, in actual cardiomyocytes, the anti-arrhythmic effect of the BioICD channel, the BioICD current was mimicked in vitro using dynamic patch-clamping (Wilders, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "7b04865f-3402-4fa8-b749-c8a3e493277d",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C69",
+      "claim": "Dynamic patch-clamping can be used to introduce virtual voltage-gated ion channels into electrically excitable cells such as cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique can be used to introduce virtual voltage-gated ion channels (like the BioICD channel) into electrically excitable cells such as cardiomyocytes, in this case human atrial myocytes derived from a conditionally immortalized cell line (Harlaar et al., 2019; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Wilders, 2006 and demonstrated in the experiments shown in Figure 5.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "3c1faa4b-df48-4f61-9e3a-04190e6b45e7",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C70",
+      "claim": "Human atrial myocytes were optogenetically modified to control their excitation rhythm by light using a dynamically controlled LED source.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells were optogenetically modified (Feola et al., 2016; Figure 5E) to control their excitation rhythm by light using a dynamically controlled LED source.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Feola et al., 2016 and shown in Figure 5E.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "986fb981-a167-46cd-ae11-953f7872ff87",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C71",
+      "claim": "The dynamic clamp experiment was carried out in current clamp mode, which allowed the unbiased recording of the membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic clamp experiment was carried out in current clamp mode, which allowed the unbiased recording of the membrane potential as it develops as the net result of the activity of all endogenous ion channels and the BioICD channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "a39569d2-b144-405c-b832-d139c976d725",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C72",
+      "claim": "The real-time measured membrane potential was used to calculate the amplitude of the BioICD current, which was injected into the cell via the recording electrode.",
+      "claim_type": "EXPLICIT",
+      "source": "The real-time measured membrane potential was used to calculate the amplitude of the BioICD current, which was injected into the cell via the recording electrode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "c31070a7-6a85-4d58-aceb-554661919c8a",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C73",
+      "claim": "A real-time interface between the patch-clamp amplifier and a computer constituted the feedback loop that allowed mimicking the presence of the BioICD channel.",
+      "claim_type": "EXPLICIT",
+      "source": "A real-time interface between the patch-clamp amplifier and a computer constituted the feedback loop (Figure 5B) that allowed us to mimic the presence of the BioICD channel, and to observe the effects of BioICD channel activity in cardiomyocytes (Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "1e98fca4-03fc-41c7-bf45-07b4b0fd1270",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C74",
+      "claim": "The same ion channel gating properties used for the in silico studies successfully detected fast pacing rhythms in a living cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the same ion channel gating properties used for the in silico studies successfully detected fast pacing rhythms in a living cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "1ea4c2cc-e085-4a36-8363-9abb239f83b8",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C75",
+      "claim": "No significant distortions of AP were registered at 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "While no significant distortions of AP were registered at 1 Hz (the black and orange traces coincide), the depolarizing current produced by the BioICD channel at high frequencies built up resulting in APD prolongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the experimental traces shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "41cc676b-7da7-42e7-bb5c-e3e468163aaa",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C76",
+      "claim": "The depolarizing current produced by the BioICD channel at high frequencies built up resulting in APD prolongation.",
+      "claim_type": "EXPLICIT",
+      "source": "While no significant distortions of AP were registered at 1 Hz (the black and orange traces coincide), the depolarizing current produced by the BioICD channel at high frequencies built up resulting in APD prolongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the experimental traces shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "d1472bc1-6772-4a9c-9c0a-e32dae5a35c3",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C77",
+      "claim": "The process of arrhythmia detection, current accumulation, and pacing block is frequency-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This process of arrhythmia detection, current accumulation, and pacing block is frequency-dependent, as evidenced by the smaller time until termination following 8 Hz optical pacing (1.16 s, Figure 5D) versus 7 Hz pacing (1.92 s, Figure 5C) within the same cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing the experimental results at different frequencies shown in Figure 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "180b336a-58b0-47d9-8ea4-7267bed19c75",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C78",
+      "claim": "The frequency at which termination occurs is dependent on the baseline APD.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency at which termination occurs is also dependent on the baseline APD (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5G showing the relationship between baseline APD and maximal BCL for termination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "2017370d-1e41-4c7b-8ca5-880eb4cbc80e",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C79",
+      "claim": "Upon an increase in baseline APD, the BioICD channel is activated earlier, namely at longer BCLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon an increase in baseline APD, the BioICD channel is activated earlier, namely at longer BCLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 5G showing the relationship between baseline APD and maximal BCL for termination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "4ba8f67b-8213-4029-865c-4f45bfaef4ef",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C80",
+      "claim": "The proposed ionic gating mechanism is able to restore cardiac excitation rhythm in living excitable cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings show that the proposed ionic gating mechanism is able to restore cardiac excitation rhythm in living excitable cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "1f2c92e6-9fc2-4b9c-8bdb-80eee25130fb",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C81",
+      "claim": "Arrhythmia detection relies on positive feedback upon frequency increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, arrhythmia detection relies on positive feedback upon frequency increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the BioICD channel.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "e6c2933a-a805-43c3-819f-81e3d429eecd",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C82",
+      "claim": "Three possible realisations of anti-arrhythmic gating are described in the different BioICD models I-III.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose three possible realisations of such anti-arrhythmic gating, as described in the different BioICD models I-III.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the models presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "8a7a45ec-7d5d-4979-aabf-73c79c6cdee7",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C83",
+      "claim": "The BioICD models should not be viewed as the ultimate designs of a BioICD channel, but more as a first set of rigorous outlines that can serve as a basis for additional research.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these should not be viewed as the ultimate designs of a BioICD channel, but more as a first set of rigorous outlines that can serve as a basis for additional research now that the concept has been proven in the virtual human heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scope and limitations of the current work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "c2dac627-960f-4e6a-b0e4-1074143bb135",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C85",
+      "claim": "Changing time constants will alter the activation time course of the channel, which can result in a shorter or longer delay preceding arrhythmia termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, changing time constants will alter the activation time course of the channel, which can result in a shorter or longer delay preceding arrhythmia termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential modifications to the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "f8a81b16-1e97-4845-8705-787ed9e68eeb",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C86",
+      "claim": "The structure of the BioICD model allows ample freedom to choose kinetic as well as threshold parameters for the channel within certain limits.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the structure of our BioICD model allows ample freedom to choose kinetic as well as threshold parameters for the channel within certain limits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the flexibility of the model design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "36806ac1-10c1-4254-9607-519ef80f2ce5",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C87",
+      "claim": "The BioICD channels were tested in homogeneous, anatomically realistic atria and ventricles as proof-of-principle in the virtual human heart.",
+      "claim_type": "EXPLICIT",
+      "source": "As proof-of-principle in the virtual human heart, we tested the BioICD channels in homogeneous, anatomically realistic atria and ventricles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the computational studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "c3d8116c-d606-44a0-8cc1-84c81d05820c",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C88",
+      "claim": "The model should also work for pathological substrates where the arrhythmia comes with an increase in activation frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our dynamic patch-clamp experiments, we conjecture that the model should also work for pathological substrates where the arrhythmia comes with an increase in activation frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conjecture based on the experimental results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "3df33be4-359f-46cc-b461-462b434746de",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C89",
+      "claim": "The mechanism for self-restoration of cardiac excitation rhythm relies only on the detection of high-frequency signals, irrespective of the nature and underlying cause of the arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "This is based on the notion that the mechanism for self-restoration of cardiac excitation rhythm relies only on the detection of high-frequency signals, irrespective of the nature and underlying cause of the arrhythmia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generality of the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "cb7d6a60-db1f-4160-b0b3-da7fae455894",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C90",
+      "claim": "Not all high-frequency arrhythmias are sustained in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that, in nature, not all high-frequency arrhythmias are sustained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about cardiac arrhythmias.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "735173a2-328a-4021-8628-4b62786144fd",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C91",
+      "claim": "A significant fraction of high-frequency arrhythmias does get self-terminated.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant fraction does get self-terminated (Josephson and Kastor, 1977)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Josephson and Kastor, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "dfc2d8b9-3a67-40da-8997-97b5a4b8ea5b",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C92",
+      "claim": "The mechanisms behind spontaneous termination of arrhythmias are still up for speculation.",
+      "claim_type": "EXPLICIT",
+      "source": "although the mechanisms behind such spontaneous termination are still up for speculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "f508922b-f5ff-4b61-b3bc-40f0e6d141b6",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C93",
+      "claim": "Reentrant circuits can act as feedback systems in which changes in the duration of one cycle have the potential to affect conduction in the subsequent cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, reentrant circuits can act as feedback systems in which changes in the duration of one cycle have the potential to affect conduction in the subsequent cycles (Frame and Rhee, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Frame and Rhee, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "9dbc91dd-cbd5-42e6-a3c1-17caf127bfd1",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C94",
+      "claim": "Cycle length was found to oscillate with progressively increasing alternations of long and short periods until a sufficiently short cycle led to conduction block.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycle length was found to oscillate with progressively increasing alternations of long and short periods until a sufficiently short cycle led to conduction block (Ortiz et al., 1993; Frame and Simson, 1988; Quan and Rudy, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ortiz et al., 1993; Frame and Simson, 1988; Quan and Rudy, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "28a0040f-c8b3-4476-986f-d3299d478d98",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C95",
+      "claim": "A feedback system with cycle length oscillations was studied in silico and in vivo in the atrioventricular-node.",
+      "claim_type": "EXPLICIT",
+      "source": "A feedback system with the aforementioned characteristic was studied in silico and in vivo in the atrioventricular-node (Simson et al., 1981; Sun et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Simson et al., 1981; Sun et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "057a2554-1228-459b-908d-eca688184d55",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C96",
+      "claim": "A frequency-based feedback system exists in the atrioventricular and sinoatrial nodes in the heart, where overdrive suppression creates block of nodal activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, a frequency-based feedback system exists in the atrioventricular and sinoatrial nodes in the heart, where overdrive suppression creates block of nodal activation (Kunysz et al., 1995; Vassalle, 1970; Kunysz et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kunysz et al., 1995; Vassalle, 1970; Kunysz et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "8bb167c0-a725-49d8-b08d-ff63bf21e8d8",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C97",
+      "claim": "Nagai et al., 2000 demonstrated a way to end paroxysmal arrhythmias based on overdrive suppression in a circular ring of regular cardiac cells interspersed with two pacemakers.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Nagai et al., 2000 demonstrated a way to end paroxysmal arrhythmias based on overdrive suppression in a circular ring of regular cardiac cells interspersed with two pacemakers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nagai et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "5b234b0e-0bd6-42af-946e-5418a679816d",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C98",
+      "claim": "Unstable tachycardias demonstrate cycle length oscillations that can lead to spontaneous termination of the tachycardia.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas unstable tachycardias demonstrate cycle length oscillations that can lead to spontaneous termination of the tachycardia, stable tachycardias exhibit damped oscillations when perturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about tachycardia dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "5157804b-1f5b-4d1b-b4f8-aa4f41a703f3",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C99",
+      "claim": "Stable tachycardias exhibit damped oscillations when perturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas unstable tachycardias demonstrate cycle length oscillations that can lead to spontaneous termination of the tachycardia, stable tachycardias exhibit damped oscillations when perturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about tachycardia dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "8f2b7d8a-d266-4e75-97f3-a8f516ad515a",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C100",
+      "claim": "Damped oscillations in stable tachycardias can still lead to sustained reentry.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the phenomena discussed above, these damped oscillations can still lead to sustained reentry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about tachycardia dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "f26100dd-17cd-464c-baea-7b9f193cd484",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C101",
+      "claim": "The study focused on developing a detector-effector system capable of handling sustained arrhythmias, including the most hazardous ones like fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we focused on developing a DE system capable of handling sustained arrhythmias, including the most hazardous ones like fibrillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the focus and scope of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "631247f9-9451-4287-adcb-92bcfdc1bdb4",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C102",
+      "claim": "The BioICD model allows for the detection and elimination of relatively fast sustained rhythms, thereby targeting those arrhythmias that require intervention for acute termination.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence of the design, this particular BioICD model allows for the detection and elimination of relatively fast sustained rhythms, thereby targeting those arrhythmias that require intervention for acute termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the design choices made for the BioICD channel.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "cbfe6a50-5ae7-483d-8036-87e7a96f9156",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C103",
+      "claim": "Relatively low frequency arrhythmias are not detected by the BioICD channel and are therefore also not terminated.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that relatively low frequency arrhythmias are not detected by the BioICD channel and are therefore also not terminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the frequency-dependent detection mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "788d502c-4006-4f4f-a540-d698afee04f7",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C104",
+      "claim": "A reentrant wave anchored to an anatomical obstacle with a large perimeter is an example of a low frequency arrhythmia not detected by the BioICD channel.",
+      "claim_type": "EXPLICIT",
+      "source": "An example is a reentrant wave anchored to an anatomical obstacle (i.e. a scar) with a large perimeter (see Supporting Information, Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Video 5 showing failure of detection and termination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "86fe3266-055d-4f87-b26f-0b492cb1e36e",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C105",
+      "claim": "Low-frequency arrhythmias are considered to be less hazardous than those with a high frequency, like fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as low-frequency arrhythmias are considered to be less hazardous than those with a high frequency, like fibrillation, they can be managed otherwise (Cho and Marb\u00e1n, 2010; Stevenson, 2013; Nattel et al., 2014; Bongianino and Priori, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "47fd0965-cb7c-4ea5-bdea-1a7aa98d0dc4",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C106",
+      "claim": "All the essential knowledge about ion channel structure-function relationships is available for the construction of a BioICD channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that, for the construction of a BioICD channel, all the essential knowledge about ion channel structure-function relationships (B\u00f6rjesson and Elinder, 2008; Catterall, 2010; Moreau et al., 2014), as well as the molecular tools to manipulate these relationships in a systemic and rational manner are available (Bayley and Jayasinghe, 2004; Subramanyam and Colecraft, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on ion channel structure-function relationships and molecular tools.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "85f25bbb-9ba0-43ab-880a-903e3f0ebddf",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C107",
+      "claim": "The molecular tools to manipulate ion channel structure-function relationships in a systemic and rational manner are available.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that, for the construction of a BioICD channel, all the essential knowledge about ion channel structure-function relationships (B\u00f6rjesson and Elinder, 2008; Catterall, 2010; Moreau et al., 2014), as well as the molecular tools to manipulate these relationships in a systemic and rational manner are available (Bayley and Jayasinghe, 2004; Subramanyam and Colecraft, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on molecular tools.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "69fd730b-ead6-47ab-9583-da1894864fe9",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C108",
+      "claim": "Ion channels from which functions can serve as a blueprint are not limited to eukaryotic organisms only, but encompass prokaryotic ones as well.",
+      "claim_type": "EXPLICIT",
+      "source": "The ion channels from which functions can serve as a blueprint are not limited to eukaryotic organisms only, but encompass prokaryotic ones as well (Ren et al., 2001; Martinac et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ren et al., 2001; Martinac et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "b156d309-1618-404a-ab36-2d90addad9bd",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C109",
+      "claim": "Ion channels can be searched for in extensive databases, such as the IUPHAR/BPS.",
+      "claim_type": "EXPLICIT",
+      "source": "and can be searched for in extensive databases, such as the IUPHAR/BPS (Southan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Southan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "de663cb4-26a8-415a-bece-8760d2f2d163",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C110",
+      "claim": "The field of optogenetics has allowed the study of biological arrhythmia termination and could thereby add to the translation of the findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the field of optogenetics has allowed the study of biological arrhythmia termination and could thereby add to the translation of our findings (Boyle et al., 2018; Entcheva and Bub, 2016; Boyden et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to optogenetics literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "c419578f-72a5-4f9f-936a-4a2cdf37e784",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C111",
+      "claim": "Cardiomyocytes are able to generate sufficient electrical current, based on the natural electrochemical gradients, for biological auto-termination of both atrial and ventricular arrhythmias, including fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "In earlier work from our group and others, it was shown that cardiomyocytes are indeed able to generate sufficient electrical current, based on the natural electrochemical gradients, for biological auto-termination of both atrial and ventricular arrhythmias, including fibrillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "8cc9a61a-5c78-448b-ae0d-ff4e1b2873b8",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C112",
+      "claim": "Biological auto-termination of arrhythmias was shown in vitro using monolayers of neonatal atrial myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This was shown in vitro using monolayers of neonatal atrial myocytes (Bingen et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bingen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "37f4f400-47ff-48e6-8a76-9a2a2e2a1049",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C113",
+      "claim": "Biological auto-termination of arrhythmias was shown in the whole heart of adult rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "but later also in the whole heart of adult rodents (Bruegmann et al., 2016; Crocini et al., 2016; Nyns et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bruegmann et al., 2016; Crocini et al., 2016; Nyns et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "d37ac7d8-27f0-4982-9b7f-a1319e6dbdff",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C114",
+      "claim": "Biological auto-termination of arrhythmias was integrated in a hybrid bio-electronic system.",
+      "claim_type": "EXPLICIT",
+      "source": "and most recently also integrated in a hybrid bio-electronic system (Nyns et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nyns et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "8ed9a60b-7da8-4dee-b38e-a78f0e771614",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C115",
+      "claim": "In previous studies, the gating of ion channels was controlled by light to terminate cardiac arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, the gating of ion channels was controlled by light to terminate cardiac arrhythmias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes previous work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "17706bcb-95c8-4a22-813a-8040fbdc6f8a",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C116",
+      "claim": "The study shows how ion channel gating could be controlled by the arrhythmia itself, thereby giving rise to a new fully biological detector-effector system.",
+      "claim_type": "EXPLICIT",
+      "source": "As a next step, we now show how such gating could be controlled by the arrhythmia itself, thereby giving rise to a new fully biological DE system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the novel contribution of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "883e2455-63bf-45cc-85dc-b0b3bc6eb937",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C117",
+      "claim": "Optogenetics was used to provide experimental proof of the BioICD concept with the use of human atrial myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we used optogenetics to provide experimental proof of the aforementioned concept with the use of human atrial myocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "f501c469-d185-452d-b354-89a95ce20279",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C118",
+      "claim": "Atrial myocytes were optogenetically modified and used in dynamic patch-clamp experiments to separate the pacing mechanism (optical) from the rhythm restoration mechanism (chemical/electrical) in order to improve signal interpretation.",
+      "claim_type": "EXPLICIT",
+      "source": "These atrial myocytes were optogenetically modified and used in dynamic patch-clamp experiments to separate the pacing mechanism (optical) from the rhythm restoration mechanism (chemical/electrical) in order to improve signal interpretation, that is stimulation block at depolarised membrane potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "e5b02102-6873-43ba-80b3-0cc1b8d48a58",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C119",
+      "claim": "The in vitro data show the same phenomenological phases as visible in the traces coming from the in silico simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies reveal that the in vitro data (Figure 5C\u2013D) show the same phenomenological phases as visible in the traces coming from the in silico simulations (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of experimental and simulation results shown in Figures 1 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "31c82e28-9954-4719-b1ee-a31da6afbcc3",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C120",
+      "claim": "The BioICD channel is capable of restoring normal excitation rhythm in cells with short baseline APDs under high frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the BioICD channel is capable of restoring normal excitation rhythm in cells with short baseline APDs under high frequency, the design of the gating properties makes that such restoration will work also for cells with long baseline APDs (Figures 2 and 5G), like those found in ventricular myocytes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the experimental results shown in Figures 2 and 5G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "5869cd53-5ed5-4cda-8245-48c3348c2cf9",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C121",
+      "claim": "The design of the gating properties makes that restoration will work also for cells with long baseline APDs, like those found in ventricular myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the BioICD channel is capable of restoring normal excitation rhythm in cells with short baseline APDs under high frequency, the design of the gating properties makes that such restoration will work also for cells with long baseline APDs (Figures 2 and 5G), like those found in ventricular myocytes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental results and the design of the BioICD channel.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "3f1b33cf-5761-4938-be62-b26bb145a18a",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C122",
+      "claim": "The decision to use an atrial cell line for the experimental validation was motivated by the fact that the BioICD channel is capable of restoring normal excitation rhythm in cells with short baseline APDs.",
+      "claim_type": "EXPLICIT",
+      "source": "This motivated our decision to use an atrial cell line for the experimental validation of our proposed concept.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for the experimental design choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "c9794d13-aa1f-454e-aacb-5fb075baadee",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C123",
+      "claim": "The study presents insight into acquired homeostatic regulation of excitation rhythm under disturbed conditions, including cardiac fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our study presents insight into acquired homeostatic regulation of excitation rhythm under disturbed conditions, including cardiac fibrillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "a389d3fc-0f6e-4949-8754-62fb3f732650",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C124",
+      "claim": "Homeostatic regulation of excitation rhythm can be established by creation of a biologically engineered detector-effector system for arrhythmias through expression of customized ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "It is shown, by a combination of theoretical and experimental studies, that such regulation can be established by creation of a biologically engineered DE system for arrhythmias through expression of customized ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the computational and experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "1c55cb56-d7cc-479e-8904-4f7b3a7283a9",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C125",
+      "claim": "Self-resetting of an acutely disturbed heart rhythm by an engineered biological detector-effector system may yield unique insight into arrhythmia management.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-resetting of an acutely disturbed heart rhythm by an engineered biological DE system may yield unique insight into arrhythmia management",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential impact of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "1148f654-d3bf-4447-ae26-4237084dd7c2",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C126",
+      "claim": "Self-resetting of an acutely disturbed heart rhythm may lay the foundation for the development of distinctively innovative treatment options by the creation of new biology for therapeutic purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-resetting of an acutely disturbed heart rhythm by an engineered biological DE system may yield unique insight into arrhythmia management and may lay the foundation for the development of distinctively innovative treatment options by the creation of new biology for therapeutic purposes, ultimately leading to acute, yet trauma-free termination of arrhythmias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential impact of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "55ec5d16-9d24-4938-b501-35115578ae10",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C127",
+      "claim": "The approach could ultimately lead to acute, yet trauma-free termination of arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-resetting of an acutely disturbed heart rhythm by an engineered biological DE system may yield unique insight into arrhythmia management and may lay the foundation for the development of distinctively innovative treatment options by the creation of new biology for therapeutic purposes, ultimately leading to acute, yet trauma-free termination of arrhythmias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential clinical application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "a905ddd0-498c-4df6-aa5b-73431103b4c9",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C128",
+      "claim": "This approach would stretch the field of synthetic biology into cardiology.",
+      "claim_type": "EXPLICIT",
+      "source": "This would stretch the field of synthetic biology into cardiology and also provide a radically new perspective for other medical fields, given the general nature and versatility of biological DE systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader impact of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "d534c596-d89f-4e3b-abaf-d1e55e11ac71",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C129",
+      "claim": "This approach would provide a radically new perspective for other medical fields, given the general nature and versatility of biological detector-effector systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This would stretch the field of synthetic biology into cardiology and also provide a radically new perspective for other medical fields, given the general nature and versatility of biological DE systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader impact of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "92380893-c43c-4cc9-bf27-528934ef4f6a",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C130",
+      "claim": "The perspective involves that a diseased organ begets its own remedy, for example a Biologically Integrated Cardiac Defibrillator (BioICD) in case of the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "This perspective involves that a diseased organ, begets its own remedy, for example a Biologically Integrated Cardiac Defibrillator (BioICD) in case of the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about the philosophy behind the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "d11e57fb-3c17-49f8-8e4f-1956d7c4c6de",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C131",
+      "claim": "The mathematical model proposed by Ten Tusscher et al., 2009 was used for human ventricular tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "For human ventricular tissue, the mathematical model proposed by Ten Tusscher et al., 2009 was used",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ten Tusscher et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "07595d08-e88a-49fb-acf5-f6c3333a90f0",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C132",
+      "claim": "The model for fibrosis contained 20% randomly distributed fibroblasts, which did not couple electrotonically to the neighbouring cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model for fibrosis contained 20% randomly distributed fibroblasts, which did not couple electrotonically to the neighbouring cardiomyocytes (Ten Tusscher and Panfilov, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ten Tusscher and Panfilov, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "20fba302-0a57-481f-b522-57a1c29fbb96",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C134",
+      "claim": "For human atrial tissue, data and fibre directions were obtained from D\u00f6ssel et al., 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "For human atrial tissue, data and fibre directions were obtained from D\u00f6ssel et al., 2011.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to D\u00f6ssel et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "3944b1d0-a77e-40e3-9abe-b71fcd44b9de",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C135",
+      "claim": "The ionic cell model used for human atrial tissue is the AF-induced electrically remodelled human atrial Courtemanche et al., 1999 model.",
+      "claim_type": "EXPLICIT",
+      "source": "The ionic cell model that was used is the AF-induced electrically remodelled human atrial Courtemanche et al., 1999 model (adapted from Courtemanche et al., 1998, which was taken from CellML (Yu et al., 2011) with the use of Myokit (Clerx et al., 2016) and transformed to graphics processing unit-usable code).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Courtemanche et al., 1999, Courtemanche et al., 1998, Yu et al., 2011, and Clerx et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "2270dc93-1e43-4404-9696-5c71019f88fb",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C136",
+      "claim": "An S1-S2 cross-field protocol was used to generate spiral and scroll waves.",
+      "claim_type": "EXPLICIT",
+      "source": "We used an S1-S2 cross-field protocol to generate spiral and scroll waves (ten Tusscher and Panfilov, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to ten Tusscher and Panfilov, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "6fecd5a3-a461-47b8-ab03-b88f6d05a5d0",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C137",
+      "claim": "The cell line used was generated by transducing human foetal atrial myocytes with a human immunodeficiency virus type 1-based vector conferring doxycycline-controlled expression of simian virus 40 large tumour antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell line used in this study has recently been generated by transducing human foetal atrial myocytes with a human immunodeficiency virus type 1-based vector conferring doxycycline-controlled expression of simian virus 40 large tumour antigen as described in Harlaar et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Harlaar et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "8912e350-9aee-41c6-861a-0eaae12cc06c",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C138",
+      "claim": "The cells were tested negative for the presence of mycoplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells were tested negative for the presence of mycoplasma by the MycoAlert mycoplasma detection kit (Lonza, Basel, Switzerland), as well as by Hoechst 33342 (Life Technologies Europe, Bleiswijk, the Netherlands) staining of Vero cells cultured with conditioned human atrial myocyte medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control procedures for the cell line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "6a56d908-4878-4a52-9eca-f2bfb27ca508",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C139",
+      "claim": "Self-inactivating lentiviral vector particles encoding an eYFP-tagged version of the H134R mutant of Chlamydomonas reinhardtii channelrhodopsin 2 were created by standard laboratory procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-inactivating lentiviral vector particles encoding an eYFP-tagged version of the H134R mutant of Chlamydomonas reinhardtii channelrhodopsin 2 (LVV-ChR2(H134R)), were created by standard laboratory procedures (Feola et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Feola et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "492c52f0-4dc2-4d56-a0ca-7ca6e6b45468",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C140",
+      "claim": "Lentiviral vector particles were used to transduce human atrial myocytes differentiated from a conditionally immortalised cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-inactivating lentiviral vector particles encoding an eYFP-tagged version of the H134R mutant of Chlamydomonas reinhardtii channelrhodopsin 2 (LVV-ChR2(H134R)), were created by standard laboratory procedures (Feola et al., 2016) and used to transduce human atrial myocytes differentiated from a conditionally immortalised cell line (Harlaar et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "c65d47f2-3ce8-48d5-8678-cb820f83209b",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C141",
+      "claim": "APs were recorded in single cells or small clusters of cells using the amphotericin-B perforated patch-clamp technique.",
+      "claim_type": "EXPLICIT",
+      "source": "APs were recorded in single cells or small clusters of cells using the amphotericin-B perforated patch-clamp technique (Wilders, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wilders, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "23af7e48-79af-4543-bf51-497ac8bc1957",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "claim_id": "C142",
+      "claim": "Potentials were corrected for the calculated liquid junction potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentials were corrected for the calculated liquid junction potential (Barry and Lynch, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Barry and Lynch, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2015b290-0037-4b6e-be0f-faccd9546c35",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes that while homeostatic regulation protects organisms against physiological changes, the heart lacks a natural detector-effector system for sustained arrhythmias, representing a gap in biological regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C15 present established knowledge about homeostatic regulation and cardiac physiology that is well-supported by citations and general understanding. These claims provide the biological context and motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "1513b114-11aa-4923-8e45-8a75bba6e584",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A biological self-restoring system (BioICD) can be realized through integration of ion channels with frequency-dependent gating properties that discriminate between normal rhythm and arrhythmia and generate ionic current for arrhythmia termination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 and C26 describe the core concept of the BioICD system, supported by computational modeling (Figures 1-4) and experimental validation (Figure 5). The frequency-dependent gating mechanism is demonstrated both in silico and in vitro.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "5916a9f5-8f97-438c-a660-b4ef44d84e32",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Three different computational approaches (Models I, II, III) were used to design BioICD channel kinetics that enable detection and termination of tachyarrhythmias and fibrillation in both atria and ventricles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C22, and C82 describe the computational design approach. While Model I is detailed in the main text with supporting data (Figures 1-4), Models II and III are mentioned but relegated to supplementary information, limiting full evaluation of all three approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "6655536a-e34d-4088-b869-17f77ab9c164",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In simulated monolayers, the BioICD channel allows arrhythmia to develop initially but then activates due to increased frequency, terminating reentry and restoring sinus rhythm without affecting normal rhythm propagation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are directly supported by Figure 1 showing control vs. BioICD conditions. The voltage traces and spatial maps clearly demonstrate the described behavior, providing strong evidence for the proof-of-concept.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "a1b2a804-64a8-484a-a980-72255b9735f4",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BioICD Model I uses voltage-dependent subunit gating with collective kinetics (n=8 subunits) to achieve frequency-dependent activation, producing depolarizing current (reversal potential ~0 mV) only at high frequencies, with an additional deactivation mechanism for channel reset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C43 describe the mathematical design of Model I, supported by Figure 2 and equations 1-10. The frequency-dependent behavior is demonstrated at 1.2 Hz vs 4.2 Hz. However, the choice of n=8 and specific parameter values lacks detailed justification beyond stating it provides 'good intermediate solution.'",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "ab9a0109-99bc-450c-ab2c-743a13245557",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In ventricular monolayer simulations, the BioICD channel successfully detects and terminates various arrhythmias (VT, VF, fibrosis, anatomical reentry) within 1-2 seconds, with activation within 1s, synchronization within 300ms, and reset within 600-1000ms depending on substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C56 are supported by Figure 3 and Videos 1-4 showing termination across multiple pathological substrates. The timing data is specific and consistent. Claim C56 about 30% fibrosis is stated as 'data not shown,' which weakens support but doesn't contradict the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "d1859388-1fa9-45f2-a867-96189965e901",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The BioICD channel has no significant effect on action potentials at sinus rhythm (1.2 Hz) but slightly increases APD at near-arrhythmic frequencies, effectively increasing minimal APD as shown in restitution curves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by Figure 3I-J showing overlapping traces at 1.2 Hz and APD restitution curves. This demonstrates the frequency-selective nature of the channel, though quantification of 'slight increase' and 'no significant influence' would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "94edf8e4-1933-419d-a6ac-b792cc4b867b",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The BioICD channel cannot detect and terminate low-frequency arrhythmias, such as reentry around large scars, due to its frequency-dependent detection mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C103, and C104 acknowledge a limitation of the system, supported by Video 5 showing failure with large scars. This is an important limitation that is appropriately disclosed, though it raises questions about clinical applicability in certain pathological conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "80b67100-32ff-4ead-a022-734d246915ca",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In anatomically realistic 3D models of human atria and ventricles, the BioICD channel successfully detects and terminates fibrillation (AF within 1.7s detection/1.2s termination; VF within 3s detection/500ms termination) through a mechanism similar to monolayers involving cell reset and APD prolongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 are supported by Figure 4 and Videos 6-7 showing successful termination in anatomically realistic models. The specific timing data is provided, though the mechanism description (C62-C63) is somewhat qualitative. The transition from 2D to 3D represents important validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "29a0d24c-2810-4715-b574-2a9ee55b8a90",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dynamic clamp experiments in optogenetically modified human atrial myocytes demonstrate that the BioICD channel gating properties successfully detect and terminate high-frequency pacing in living cells, with frequency-dependent and baseline APD-dependent behavior matching in silico predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C80 describe experimental validation supported by Figure 5. The dynamic clamp approach is well-described and appropriate. The frequency-dependence (7 Hz vs 8 Hz) and APD-dependence (Figure 5G) provide strong experimental support. However, n=7 cells is a modest sample size, and experiments are limited to atrial cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "9492d0a9-3ae7-4f66-b0e3-d4da64553073",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Experimental data from atrial myocytes show phenomenological phases matching in silico simulations, and the design ensures function in cells with both short and long baseline APDs, justifying the use of atrial cells for validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C119 is supported by comparison of Figures 1 and 5. However, claims C120-C122 involve inference about ventricular cells based on atrial cell data. While the reasoning is logical (if it works for short APD, it should work for long APD), direct experimental validation in ventricular myocytes is absent, making this inference uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "7ed0dada-5053-4c4d-a2c7-60a9ee404005",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The BioICD models represent initial designs with flexibility for parameter optimization rather than ultimate solutions, and should work for pathological substrates with increased activation frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C85, C86, and C88 appropriately acknowledge limitations and flexibility of the models. These are reasonable statements about the proof-of-concept nature of the work, though C88 is explicitly labeled as conjecture.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "e4ebabd8-1211-4099-83a6-f2112f3f32ef",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study focused on developing a frequency-based detection system for sustained high-frequency arrhythmias requiring intervention, tested in homogeneous anatomically realistic models as proof-of-principle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C89, C101, and C102 describe the scope and design philosophy of the study. These are well-supported by the presented data, though the limitation to homogeneous tissue (C87) and high-frequency arrhythmias (C102) represents important constraints on generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "333647d0-1a0c-4213-8688-8f6a316e88cb",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on detector-effector systems, ion channels, spontaneous arrhythmia termination, and limitations of current ICD therapy is established through citations to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C20 present background knowledge supported by appropriate citations. These establish the biological and clinical context for the work. The citations appear appropriate, though detailed verification of cited content is beyond this evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "062e46e5-a772-4827-841f-88d2c6b4b37d",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has documented spontaneous arrhythmia termination, cycle length oscillations in reentrant circuits, overdrive suppression mechanisms, and differences between stable and unstable tachycardias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C100 present established knowledge about arrhythmia dynamics supported by citations. This provides important context for understanding natural termination mechanisms and how the BioICD concept relates to existing biological phenomena.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "045fb661-78e9-4e38-8852-2068d254eab9",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work demonstrates that low-frequency arrhythmias are less hazardous, knowledge and tools for ion channel engineering exist, optogenetics enables biological arrhythmia termination, and the current study advances from light-controlled to arrhythmia-controlled gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C118 establish the feasibility and novelty of the approach through citations to prior work. The progression from optogenetic control (prior work) to autonomous arrhythmia-controlled gating (current work) is clearly articulated and represents a logical advance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "ac228ca8-ddde-4c0e-800c-8fb3a0e88975",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study demonstrates that acquired homeostatic regulation of cardiac excitation rhythm can be established through biologically engineered detector-effector systems using customized ion channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C124 represent the main conclusion, supported by the combination of computational modeling (Figures 1-4) and experimental validation (Figure 5). The evidence supports this conclusion as a proof-of-concept, though translation to clinical application requires substantial additional work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "f251647a-882f-473b-b87a-4fd21a9f1472",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The BioICD concept may yield insights into arrhythmia management, enable innovative treatment options through synthetic biology, lead to trauma-free arrhythmia termination, and extend to other medical fields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C125-C130 are speculative statements about potential future impact. While the proof-of-concept is demonstrated, these claims about clinical translation, broader medical applications, and trauma-free termination are aspirational and lack supporting evidence. They represent reasonable speculation but not demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    },
+    {
+      "id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892",
+      "content_id": "c19611c8-685e-4896-af36-ab6c23fb4bc0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The computational models use established human cardiac tissue models (Ten Tusscher for ventricles, Courtemanche for atria) with appropriate parameters for fibrosis, anatomical structure, and fiber directions, while experimental work uses validated human atrial cell lines with appropriate quality control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C131-C142 describe methods supported by appropriate citations. The use of established, validated models and cell lines strengthens the work. Quality control measures (mycoplasma testing, C138) are appropriate. The methods appear sound, though full reproducibility would require access to complete code and protocols.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:43:51.899502Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ed525ce2-bb1a-4148-b1b2-e72b258d37ab",
+      "result_id": "2015b290-0037-4b6e-be0f-faccd9546c35"
+    },
+    {
+      "claim_id": "75a2535c-c80f-4fb4-b2ef-5d0b48e7d393",
+      "result_id": "2015b290-0037-4b6e-be0f-faccd9546c35"
+    },
+    {
+      "claim_id": "3dd946fb-3965-40bb-877d-807cfa556be5",
+      "result_id": "2015b290-0037-4b6e-be0f-faccd9546c35"
+    },
+    {
+      "claim_id": "5ff532c5-38a1-4149-874c-7219a16d4fd7",
+      "result_id": "2015b290-0037-4b6e-be0f-faccd9546c35"
+    },
+    {
+      "claim_id": "fda4cf9d-ed01-40da-9b81-0cf25cae8ce8",
+      "result_id": "1513b114-11aa-4923-8e45-8a75bba6e584"
+    },
+    {
+      "claim_id": "0ca13804-2311-4752-aad1-c693b5f7c84c",
+      "result_id": "1513b114-11aa-4923-8e45-8a75bba6e584"
+    },
+    {
+      "claim_id": "cc535e86-1f04-4b2d-85ff-426ee397c83a",
+      "result_id": "1513b114-11aa-4923-8e45-8a75bba6e584"
+    },
+    {
+      "claim_id": "6a732106-c317-4518-a456-a6a747fb44e5",
+      "result_id": "1513b114-11aa-4923-8e45-8a75bba6e584"
+    },
+    {
+      "claim_id": "7fbc476a-fa8b-4b3f-98b3-80c453c890fa",
+      "result_id": "1513b114-11aa-4923-8e45-8a75bba6e584"
+    },
+    {
+      "claim_id": "18b1ab4d-a946-4948-ba3a-09cbd6bbdd18",
+      "result_id": "5916a9f5-8f97-438c-a660-b4ef44d84e32"
+    },
+    {
+      "claim_id": "18b32d0b-03b0-47a7-9643-943fc0588cd6",
+      "result_id": "5916a9f5-8f97-438c-a660-b4ef44d84e32"
+    },
+    {
+      "claim_id": "e6c2933a-a805-43c3-819f-81e3d429eecd",
+      "result_id": "5916a9f5-8f97-438c-a660-b4ef44d84e32"
+    },
+    {
+      "claim_id": "8a842fd2-f308-4af4-afe3-9cb4868784be",
+      "result_id": "6655536a-e34d-4088-b869-17f77ab9c164"
+    },
+    {
+      "claim_id": "2c90f790-9761-4b8f-af51-411fbb2a870c",
+      "result_id": "6655536a-e34d-4088-b869-17f77ab9c164"
+    },
+    {
+      "claim_id": "649a65e1-ddc8-40f3-b521-0628630c8482",
+      "result_id": "6655536a-e34d-4088-b869-17f77ab9c164"
+    },
+    {
+      "claim_id": "5e6bb9b1-e739-45f4-b4c7-00a7afc53c35",
+      "result_id": "a1b2a804-64a8-484a-a980-72255b9735f4"
+    },
+    {
+      "claim_id": "56d977b7-9c00-4c12-996c-fc9f0d0dbcca",
+      "result_id": "a1b2a804-64a8-484a-a980-72255b9735f4"
+    },
+    {
+      "claim_id": "d4a13ebc-c5e0-4d94-9465-5468717ba724",
+      "result_id": "a1b2a804-64a8-484a-a980-72255b9735f4"
+    },
+    {
+      "claim_id": "49e904cf-192a-41cd-9fee-997e2426f010",
+      "result_id": "a1b2a804-64a8-484a-a980-72255b9735f4"
+    },
+    {
+      "claim_id": "5a16d2d1-b919-40dc-8281-fefe4663d627",
+      "result_id": "a1b2a804-64a8-484a-a980-72255b9735f4"
+    },
+    {
+      "claim_id": "7b217ae2-4f6c-432c-aab9-7a4667820887",
+      "result_id": "a1b2a804-64a8-484a-a980-72255b9735f4"
+    },
+    {
+      "claim_id": "b6a1fcfd-d0dc-4c7b-8094-baf691616e90",
+      "result_id": "a1b2a804-64a8-484a-a980-72255b9735f4"
+    },
+    {
+      "claim_id": "de0afa3d-a1a3-498b-a0b7-f2a37a15210d",
+      "result_id": "a1b2a804-64a8-484a-a980-72255b9735f4"
+    },
+    {
+      "claim_id": "6d0692e2-4a4c-4d46-b85f-41091a4b953c",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "34621ca8-8bcf-4fbf-a386-4b9df3abf6a0",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "5d12fdab-1d50-4241-9754-e08dae966e77",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "71e3a049-c4e7-4a3b-afbf-9430c5205120",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "c877e140-acc7-4ee3-8fc2-8650d442c1ff",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "51ea11de-531f-4e33-af3c-b155dde7d17c",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "ed7ed24d-f30f-49f7-b74f-53a2c4a820d0",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "d6bcbf33-2ab5-4c15-961c-b1de002f817a",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "65db252f-3f84-4446-9e30-697d05b23a39",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "aad6dfbb-fe28-42a5-b6d7-0a80b1c41449",
+      "result_id": "ab9a0109-99bc-450c-ab2c-743a13245557"
+    },
+    {
+      "claim_id": "82c35368-5631-4c1d-b05f-82e48cff262d",
+      "result_id": "d1859388-1fa9-45f2-a867-96189965e901"
+    },
+    {
+      "claim_id": "46ced9bd-1d89-4855-97ba-b460813e1752",
+      "result_id": "d1859388-1fa9-45f2-a867-96189965e901"
+    },
+    {
+      "claim_id": "219b0119-cd17-4b31-91d2-b8fd36b016a6",
+      "result_id": "d1859388-1fa9-45f2-a867-96189965e901"
+    },
+    {
+      "claim_id": "c29d23e1-b56b-465b-a40c-72f35eb29c9d",
+      "result_id": "94edf8e4-1933-419d-a6ac-b792cc4b867b"
+    },
+    {
+      "claim_id": "cbfe6a50-5ae7-483d-8036-87e7a96f9156",
+      "result_id": "94edf8e4-1933-419d-a6ac-b792cc4b867b"
+    },
+    {
+      "claim_id": "788d502c-4006-4f4f-a540-d698afee04f7",
+      "result_id": "94edf8e4-1933-419d-a6ac-b792cc4b867b"
+    },
+    {
+      "claim_id": "8f140ea9-a66e-4f08-ad77-c7a530471490",
+      "result_id": "80b67100-32ff-4ead-a022-734d246915ca"
+    },
+    {
+      "claim_id": "b660b235-7dde-4332-bb7d-7bbe8b5583ad",
+      "result_id": "80b67100-32ff-4ead-a022-734d246915ca"
+    },
+    {
+      "claim_id": "18be4ad5-6556-4ef6-bdfc-583ef35d850c",
+      "result_id": "80b67100-32ff-4ead-a022-734d246915ca"
+    },
+    {
+      "claim_id": "1e977809-2eee-4b4c-97a4-fcf8168ec0b6",
+      "result_id": "80b67100-32ff-4ead-a022-734d246915ca"
+    },
+    {
+      "claim_id": "f681397c-073d-487c-814e-cf525c528add",
+      "result_id": "80b67100-32ff-4ead-a022-734d246915ca"
+    },
+    {
+      "claim_id": "40eb7eff-2b7e-47d5-8bcb-9d6e9a5d7671",
+      "result_id": "80b67100-32ff-4ead-a022-734d246915ca"
+    },
+    {
+      "claim_id": "9fd41535-64ca-4add-bf51-02ee40253760",
+      "result_id": "80b67100-32ff-4ead-a022-734d246915ca"
+    },
+    {
+      "claim_id": "45acf820-18a9-4653-b4ac-da8da93a2b39",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "7b04865f-3402-4fa8-b749-c8a3e493277d",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "3c1faa4b-df48-4f61-9e3a-04190e6b45e7",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "986fb981-a167-46cd-ae11-953f7872ff87",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "a39569d2-b144-405c-b832-d139c976d725",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "c31070a7-6a85-4d58-aceb-554661919c8a",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "1e98fca4-03fc-41c7-bf45-07b4b0fd1270",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "1ea4c2cc-e085-4a36-8363-9abb239f83b8",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "41cc676b-7da7-42e7-bb5c-e3e468163aaa",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "d1472bc1-6772-4a9c-9c0a-e32dae5a35c3",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "180b336a-58b0-47d9-8ea4-7267bed19c75",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "2017370d-1e41-4c7b-8ca5-880eb4cbc80e",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "4ba8f67b-8213-4029-865c-4f45bfaef4ef",
+      "result_id": "29a0d24c-2810-4715-b574-2a9ee55b8a90"
+    },
+    {
+      "claim_id": "e5b02102-6873-43ba-80b3-0cc1b8d48a58",
+      "result_id": "9492d0a9-3ae7-4f66-b0e3-d4da64553073"
+    },
+    {
+      "claim_id": "31c82e28-9954-4719-b1ee-a31da6afbcc3",
+      "result_id": "9492d0a9-3ae7-4f66-b0e3-d4da64553073"
+    },
+    {
+      "claim_id": "5869cd53-5ed5-4cda-8245-48c3348c2cf9",
+      "result_id": "9492d0a9-3ae7-4f66-b0e3-d4da64553073"
+    },
+    {
+      "claim_id": "3f1b33cf-5761-4938-be62-b26bb145a18a",
+      "result_id": "9492d0a9-3ae7-4f66-b0e3-d4da64553073"
+    },
+    {
+      "claim_id": "8a7a45ec-7d5d-4979-aabf-73c79c6cdee7",
+      "result_id": "7ed0dada-5053-4c4d-a2c7-60a9ee404005"
+    },
+    {
+      "claim_id": "c2dac627-960f-4e6a-b0e4-1074143bb135",
+      "result_id": "7ed0dada-5053-4c4d-a2c7-60a9ee404005"
+    },
+    {
+      "claim_id": "f8a81b16-1e97-4845-8705-787ed9e68eeb",
+      "result_id": "7ed0dada-5053-4c4d-a2c7-60a9ee404005"
+    },
+    {
+      "claim_id": "c3d8116c-d606-44a0-8cc1-84c81d05820c",
+      "result_id": "7ed0dada-5053-4c4d-a2c7-60a9ee404005"
+    },
+    {
+      "claim_id": "36806ac1-10c1-4254-9607-519ef80f2ce5",
+      "result_id": "e4ebabd8-1211-4099-83a6-f2112f3f32ef"
+    },
+    {
+      "claim_id": "3df33be4-359f-46cc-b461-462b434746de",
+      "result_id": "e4ebabd8-1211-4099-83a6-f2112f3f32ef"
+    },
+    {
+      "claim_id": "f26100dd-17cd-464c-baea-7b9f193cd484",
+      "result_id": "e4ebabd8-1211-4099-83a6-f2112f3f32ef"
+    },
+    {
+      "claim_id": "631247f9-9451-4287-adcb-92bcfdc1bdb4",
+      "result_id": "e4ebabd8-1211-4099-83a6-f2112f3f32ef"
+    },
+    {
+      "claim_id": "55911231-4afa-4f46-ae5c-a1f01fc4f518",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "9b85d6c5-46c8-41ef-ba9f-446f0d4b5c32",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "09403a1f-1b6c-468c-8aa5-3696dc49c31e",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "50447477-6ae8-4a93-9489-8e70d8e036e3",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "a34c044d-0afb-4228-9a81-ad6c32a7663f",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "778dcc93-c515-41a7-802f-3a5a6177621c",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "fb6727f3-3099-4240-b3e9-16dbf459ed3b",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "b0b0eb9d-4449-4c72-b409-3202e24e6800",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "de4fcd09-5fdf-44b7-9572-d77633e0ed1a",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "6b64f871-8031-4196-bfac-db7963860ecc",
+      "result_id": "333647d0-1a0c-4213-8688-8f6a316e88cb"
+    },
+    {
+      "claim_id": "cb7d6a60-db1f-4160-b0b3-da7fae455894",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "735173a2-328a-4021-8628-4b62786144fd",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "dfc2d8b9-3a67-40da-8997-97b5a4b8ea5b",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "f508922b-f5ff-4b61-b3bc-40f0e6d141b6",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "9dbc91dd-cbd5-42e6-a3c1-17caf127bfd1",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "28a0040f-c8b3-4476-986f-d3299d478d98",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "057a2554-1228-459b-908d-eca688184d55",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "8bb167c0-a725-49d8-b08d-ff63bf21e8d8",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "5b234b0e-0bd6-42af-946e-5418a679816d",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "5157804b-1f5b-4d1b-b4f8-aa4f41a703f3",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "8f2b7d8a-d266-4e75-97f3-a8f516ad515a",
+      "result_id": "062e46e5-a772-4827-841f-88d2c6b4b37d"
+    },
+    {
+      "claim_id": "86fe3266-055d-4f87-b26f-0b492cb1e36e",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "47fd0965-cb7c-4ea5-bdea-1a7aa98d0dc4",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "85f25bbb-9ba0-43ab-880a-903e3f0ebddf",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "69fd730b-ead6-47ab-9583-da1894864fe9",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "b156d309-1618-404a-ab36-2d90addad9bd",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "de663cb4-26a8-415a-bece-8760d2f2d163",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "c419578f-72a5-4f9f-936a-4a2cdf37e784",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "8cc9a61a-5c78-448b-ae0d-ff4e1b2873b8",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "37f4f400-47ff-48e6-8a76-9a2a2e2a1049",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "d37ac7d8-27f0-4982-9b7f-a1319e6dbdff",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "8ed9a60b-7da8-4dee-b38e-a78f0e771614",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "17706bcb-95c8-4a22-813a-8040fbdc6f8a",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "883e2455-63bf-45cc-85dc-b0b3bc6eb937",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "f501c469-d185-452d-b354-89a95ce20279",
+      "result_id": "045fb661-78e9-4e38-8852-2068d254eab9"
+    },
+    {
+      "claim_id": "c9794d13-aa1f-454e-aacb-5fb075baadee",
+      "result_id": "ac228ca8-ddde-4c0e-800c-8fb3a0e88975"
+    },
+    {
+      "claim_id": "a389d3fc-0f6e-4949-8754-62fb3f732650",
+      "result_id": "ac228ca8-ddde-4c0e-800c-8fb3a0e88975"
+    },
+    {
+      "claim_id": "1c55cb56-d7cc-479e-8904-4f7b3a7283a9",
+      "result_id": "f251647a-882f-473b-b87a-4fd21a9f1472"
+    },
+    {
+      "claim_id": "1148f654-d3bf-4447-ae26-4237084dd7c2",
+      "result_id": "f251647a-882f-473b-b87a-4fd21a9f1472"
+    },
+    {
+      "claim_id": "55ec5d16-9d24-4938-b501-35115578ae10",
+      "result_id": "f251647a-882f-473b-b87a-4fd21a9f1472"
+    },
+    {
+      "claim_id": "a905ddd0-498c-4df6-aa5b-73431103b4c9",
+      "result_id": "f251647a-882f-473b-b87a-4fd21a9f1472"
+    },
+    {
+      "claim_id": "d534c596-d89f-4e3b-abaf-d1e55e11ac71",
+      "result_id": "f251647a-882f-473b-b87a-4fd21a9f1472"
+    },
+    {
+      "claim_id": "92380893-c43c-4cc9-bf27-528934ef4f6a",
+      "result_id": "f251647a-882f-473b-b87a-4fd21a9f1472"
+    },
+    {
+      "claim_id": "d11e57fb-3c17-49f8-8e4f-1956d7c4c6de",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "07595d08-e88a-49fb-acf5-f6c3333a90f0",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "20fba302-0a57-481f-b522-57a1c29fbb96",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "3944b1d0-a77e-40e3-9abe-b71fcd44b9de",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "2270dc93-1e43-4404-9696-5c71019f88fb",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "6fecd5a3-a461-47b8-ab03-b88f6d05a5d0",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "8912e350-9aee-41c6-861a-0eaae12cc06c",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "6a56d908-4878-4a52-9eca-f2bfb27ca508",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "492c52f0-4dc2-4d56-a0ca-7ca6e6b45468",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "c65d47f2-3ce8-48d5-8678-cb820f83209b",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    },
+    {
+      "claim_id": "23af7e48-79af-4543-bf51-497ac8bc1957",
+      "result_id": "79747d8b-a714-4f62-a0bc-b8f7c3c44892"
+    }
+  ],
+  "comparisons": []
+}

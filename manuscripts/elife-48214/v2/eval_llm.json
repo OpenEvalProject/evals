@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C23",
+      "C27",
+      "C28",
+      "C67",
+      "C68",
+      "C72",
+      "C73",
+      "C105",
+      "C107",
+      "C133"
+    ],
+    "result": "Experiment 1 demonstrates that fully focused shading gradients can be misperceived as blurred when they lack sharp bounding contours with orientation-intensity covariation. Level cut contours that exhibit this covariation eliminate perceived blur and enhance 3D shape perception, but only when the surface appears convex. Rotated contours lacking covariation fail to eliminate blur and impair shape perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The paired comparison data (N=20) show clear, statistically significant effects (F(1,19)=64.68, p<0.001, d=1.85) with appropriate contrasts. The convexity manipulation produces systematic differences in both perceived focus and shape classification. The correlation between perceived focus and convexity (\u03c1=0.904, p<.001) supports the proposed mechanism. Sample size is adequate for the effect sizes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C106"
+    ],
+    "result": "Experiment 2 shows that perceived 3D shape strength decreases monotonically as orientation-intensity covariation is weakened by adding noise to shaded ribbons. The effect is mediated by the measured Pearson correlation coefficient between orientation and intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The linear regression (R\u00b2=0.923, p<0.001) and monotonic relationship across correlation bins provide strong quantitative support. The ribbon stimuli isolate the orientation-intensity covariation while controlling for other factors. However, the use of linear rather than cosine shading (justified as highly correlated, \u03c1=0.979) is a minor deviation from the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C81",
+      "C85",
+      "C100",
+      "C101",
+      "C134"
+    ],
+    "result": "Experiment 3 demonstrates that optical blur can be misperceived: when sharp level cut contours are present, foreground blur affecting surface peaks is not detected as defocus, while background blur affecting the contours is accurately perceived. Without sharp contours, both types of blur are detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interaction between blur type and contour presence is statistically robust (t(9)=20.74, p<0.001, d=6.91 for level cut; t(9)=0.31, p=0.763 for smoothed). The design cleverly manipulates focal plane while preserving image structure. Sample size (N=10) is modest but adequate given large effect sizes. The finding that focused smoothed surfaces appear as blurred as level cut surfaces with weak background blur (t(9)=0.71, p=0.494) is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "Experiment 4 reveals that foreground blur is partially misattributed to changes in surface material (reduced gloss) and 3D shape (reduced curvature), while background blur is accurately perceived as defocus. The transformations in perceived shape involve systematic reductions in ridge curvature, height, and position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The three-task design (focus, gloss, shape) provides converging evidence for misattribution. Statistical analyses show significant effects of foreground blur on gloss (t(9)=-21.57, p<0.001, d=7.19) and shape (F(19,38)=34.48, p<0.001 for matte; F(19,38)=38.84, p<0.001 for smooth gloss), while background blur primarily affects perceived focus. The gauge figure task provides quantitative shape measurements. However, different sample sizes across tasks (N=10 for focus/gloss, N=5 for shape) and the use of expert observers for shape may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C103",
+      "C104",
+      "C131",
+      "C132",
+      "C135",
+      "C136"
+    ],
+    "result": "Across all experiments, the authors conclude that computations of blur are inherently linked to computations of surface shape, material, and illumination, and that sharp bounding contours with orientation-intensity covariation play a critical role in modulating perceived defocus and 3D shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the convergent findings across four experiments. The systematic manipulation of contour properties, surface convexity, and optical blur parameters provides strong evidence for the proposed coupling. However, the claim that defocus perception does not occur in a \"completely independent visual pathway\" (C136) is an inference that goes beyond what the data directly demonstrate\u2014the experiments show interactions but do not rule out parallel processing with cross-talk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C52",
+      "C62",
+      "C63",
+      "C76",
+      "C108",
+      "C110",
+      "C123"
+    ],
+    "result": "The authors propose a theoretical framework in which two photogeometric constraints\u2014orientation-intensity covariation along contours and surface convexity\u2014jointly determine perceived focus. The covariation alone is insufficient; contours must bound convex surfaces and appear attached to shading gradients to effectively signal focus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical framework is well-motivated by the experimental findings, particularly the differential effects of convex vs. bistable level cuts in Experiment 1 and the correlation between perceived focus and convexity. However, the mechanism by which convexity modulates the effectiveness of orientation-intensity covariation remains somewhat speculative (C109, C110). The framework would benefit from computational modeling to formalize the proposed interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The manuscript establishes that orientation-intensity covariation arises generically along smooth self-occluding contours and planar cuts due to the mutual dependence of contour orientation and shading intensity on local 3D surface orientation. For Lambertian surfaces under collimated illumination, intensity declines as a cosine function of contour orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical derivation in the Materials and Methods is sound and builds on established principles of Lambertian reflectance and projective geometry. The empirical demonstration of cosine-like relationships in Figure 2A and the absence of covariation in Figure 2B support the theoretical predictions. The extension to natural light fields is supported by prior work (Marlow et al., 2019). The acknowledgment that planar cuts exhibit weaker covariation than self-occlusions (C50) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C16",
+      "C119"
+    ],
+    "result": "The authors identify a gap in the literature: how the visual system distinguishes blur from environmental sources of low spatial frequency structure has not been explicitly addressed, and the perceptual conflation of shading gradients and optical focus has not been previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review is thorough and the identified gap appears genuine. The authors appropriately cite prior work on blur perception and shape from shading while noting that these literatures have not addressed the discrimination problem. However, the claim that the phenomenon has \"not been previously reported\" (C16) should be tempered\u2014it's possible that informal observations exist but were not systematically investigated or published.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The findings explain why prior studies using globally convex shaded objects have not observed illusory blur: self-occluding contours of such objects exhibit strong orientation-intensity covariation and bound convex surface regions. The results also explain differential effects of contour manipulations in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are plausible post-hoc explanations for patterns in prior literature, but they remain speculative without direct empirical testing. The connection to prior findings (e.g., Fleming et al., 2004; Egan and Todd, 2015) is logical but inferential. The recommendation for future use of planar cuts (C116) is reasonable but not directly tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The data reveal that identical low-frequency shading gradients can be perceived as vividly focused or highly blurred depending on context, implying that models of focus perception relying solely on local gradient features are insufficient. Optical focus should be characterized as a mid-level perceptual category interacting with other mid-level properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental demonstrations clearly show context-dependent perception of identical gradients (Experiments 1 and 3). The conclusion that local feature models are insufficient is well-justified. However, the positive claim about what focus perception \"should be\" characterized as (C123) is more speculative\u2014the data show interactions but don't fully specify the computational architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors speculate that sharp bounding contours are not the sole means of estimating focus; high-curvature shading and specular reflections may also provide focus cues, but only when they respect photogeometric constraints linking them to surface geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable speculations supported by informal observations (Figure 12) and prior work on gloss perception, but they are not systematically tested in the current experiments. The claim about specular reflections (C127, C128) is based on informal observation and citation of prior work rather than new empirical data. These ideas would benefit from dedicated experimental investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C22",
+      "C25",
+      "C26",
+      "C35",
+      "C36",
+      "C47"
+    ],
+    "result": "The stimulus generation methods successfully created shaded surfaces with controlled geometric and photometric properties, including level cuts with orientation-intensity covariation and rotated versions lacking this covariation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stimulus generation is well-documented and appropriate. The use of Blender for rendering, the specific parameters for surface deformation and illumination, and the quantitative measurement of orientation-intensity covariation are all clearly described. The plots in Figure 2 demonstrate the intended manipulation. Code availability on GitHub enhances reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The experiments used appropriate sample sizes and participant populations, with na\u00efve observers for most tasks and experienced observers for the demanding gauge figure task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Sample sizes (N=10-20 for most tasks, N=5 for gauge figures) are adequate given the large effect sizes observed. The use of na\u00efve participants for most experiments and experienced observers for the shape task is appropriate. However, the inclusion of an author (SM) in Experiments 2, 3, and 4 introduces potential bias, though this is partially mitigated by the use of multiple na\u00efve observers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The bistable level cut stimuli (Figure 2C) demonstrate that perceived focus depends on whether the surface is perceived as convex or concave, with convex interpretations appearing more focused. This bistability arises from conflicting biases toward top-down illumination and surface convexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The informal observations about bistability and its relationship to perceived focus (C59-C61) are plausible and consistent with the theoretical framework, but they are not quantitatively tested in the experiments. Experiment 1 includes bistable conditions but does not directly measure the relationship between perceived convexity/concavity and perceived focus on a trial-by-trial basis. The claims about illumination and convexity biases (C55, C56) are well-established in prior literature, but their specific interaction in these stimuli is inferred rather than demonstrated.",
+    "result_type": "MINOR"
+  }
+]

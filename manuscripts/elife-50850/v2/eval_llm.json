@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "DYRK2 phosphorylates NDEL1 at S336, which primes subsequent phosphorylation at S332 by GSK3\u03b2 in a sequential manner. This was demonstrated through in silico prediction, band shift assays showing dual phosphorylation with both kinases, and mutational analysis showing S336A abolishes both phosphorylations while S332A retains S336 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequential phosphorylation mechanism is well-supported by converging evidence from computational prediction (C19), biochemical assays showing single and dual phosphorylation bands (C16, C17), and systematic mutational analysis demonstrating the priming requirement (C20-C22). The data clearly establish S336 as the priming site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "DYRK2 and HIPK4 were identified as kinases responsible for NDEL1 phosphorylation through screening 218 serine/threonine kinases from a human kinome library using band shift assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinome screening methodology is clearly described (C12) and the identification of DYRK2 and HIPK4 is supported by experimental data (C10, C11). However, the manuscript focuses primarily on DYRK2 with limited follow-up on HIPK4, suggesting DYRK2 is the more relevant kinase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "Endogenous NDEL1 S336/S332 phosphorylation was detected in developing mouse brain, peaking at E18 and P7, and could be increased by overexpression of DYRK2 and GSK3\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "LC-MS/MS analysis provides direct evidence for endogenous phosphorylation at these sites in vivo (C23), developmental profiling shows biologically relevant timing (C24), and overexpression experiments confirm the kinase-substrate relationship (C26). This establishes physiological relevance of the phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C30",
+      "C32"
+    ],
+    "result": "Phosphorylated NDEL1 (pNDEL1) localizes to neuronal growth cones where it colocalizes with both F-actin and microtubules, particularly in filopodia-like structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunostaining data demonstrate specific localization of pNDEL1 to growth cones (C28) with validated antibody specificity through knockdown controls (C27). Colocalization with both cytoskeletal elements (C30, C32) supports a role at the actin-microtubule interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "NDEL1 phosphorylation at S336/S332 promotes neurite outgrowth in cultured hippocampal neurons. Knockdown reduces neurite length by ~31-33%, which is rescued by wild-type but not phospho-deficient NDEL1. Overexpression of kinases with wild-type NDEL1 increases neurite length by ~19-22%, and CRISPR knock-in of phospho-deficient mutations reduces neurite length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (knockdown with rescue, kinase overexpression, CRISPR knock-in) consistently demonstrate the requirement for S336/S332 phosphorylation in neurite outgrowth (C33-C40). The phospho-deficient mutant consistently fails to rescue or enhance outgrowth, establishing specificity. Statistical significance is reported for all measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C58"
+    ],
+    "result": "NDEL1 phosphorylation at S336/S332 is critical for dendritic arborization in layer II/III pyramidal neurons in vivo. Suppression of phosphorylation decreases dendritic length, branch number, and complexity, while overexpression with kinases increases these parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In utero electroporation experiments demonstrate clear effects on dendritic morphology with appropriate rescue controls (C45-C55). Sholl analysis and branch counting provide quantitative measures. The authors acknowledge potential non-cell-autonomous effects but the consistency across multiple readouts supports the conclusion (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "TARA scaffolds DYRK2 and GSK3\u03b2 to form a tripartite complex and enhances NDEL1 S336/S332 phosphorylation. TARA interacts with both kinases, enhances their interaction with each other, and promotes NDEL1 phosphorylation in a manner dependent on the NDEL1-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support TARA's scaffolding role: band shift assays show TARA-dependent phosphorylation (C60-C63), LC-MS/MS confirms S336 phosphorylation (C65), co-IP demonstrates protein-protein interactions (C68-C70), and deletion mutants establish domain requirements (C61). The enhancement of DYRK2-GSK3\u03b2 interaction by TARA (C70) directly supports the scaffolding model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "TARA-mediated enhancement of NDEL1 phosphorylation promotes neuronal morphogenesis. Co-expression of TARA with wild-type but not phospho-deficient NDEL1 increases neurite length in culture and dendritic arborization in vivo, while TARA deletion mutants lacking the NDEL1-binding domain fail to enhance morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional consequences of TARA-mediated phosphorylation are demonstrated through both in vitro (C73-C77) and in vivo (C79-C80) experiments with appropriate controls including phospho-deficient mutants and TARA deletion constructs. The requirement for both TARA-NDEL1 interaction and phosphorylation sites establishes mechanistic specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C96"
+    ],
+    "result": "NDEL1 S336/S332 phosphorylation enhances F-actin dynamics at growth cones. Phosphorylated NDEL1 associates with F-actin fractions, and knockdown reduces fluorescence recovery in FRAP assays, which is rescued by wild-type but not phospho-deficient NDEL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "F-actin fractionation demonstrates association of phosphorylated NDEL1 with F-actin (C84), and FRAP assays provide quantitative measurements of actin dynamics (C85-C87). The interpretation that reduced recovery reflects decreased F-actin formation rather than stabilization (C88-C89) is reasonable given the fractionation data, though additional experiments could strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "NDEL1 S336/S332 phosphorylation does not significantly affect microtubule dynamics or NDEL1 interactions with dynein-LIS1. Both wild-type and phospho-deficient NDEL1 similarly enhance microtubule dynamics and lysosomal trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "FRAP assays with \u03b1-tubulin (C90-C91), co-IP experiments (C93-C94), and lysosomal trafficking assays (C95) consistently show no differential effects of phosphorylation on microtubule-related functions. This negative result is important for establishing specificity of the phosphorylation effect on F-actin rather than microtubules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C18"
+    ],
+    "result": "DYRK2 and HIPK4 belong to the DYRK family sharing a conserved DH-box, and DYRK family kinases often act as priming kinases for GSK3. GSK3\u03b2S9A is a constitutively active form of GSK3\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-established in the literature and supported by appropriate citations (C13-C15). The characterization of GSK3\u03b2S9A (C18) is standard knowledge. These provide important context for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C113"
+    ],
+    "result": "NDE1, a paralog of NDEL1 lacking the C-terminal region containing S336 and S332, fails to rescue neurite defects caused by NDEL1 knockdown, highlighting the functional importance of these phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The failure of NDE1 to rescue NDEL1 knockdown phenotypes (C56) is supported by experimental data and the structural difference is well-documented (C57, C113). This negative control strengthens the specificity of the S336/S332 phosphorylation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C29",
+      "C31"
+    ],
+    "result": "E18 and P7 represent developmental stages of intense neurite outgrowth and maturation, and growth cones are regions where actin-microtubule crosstalk is required for neurite extension and branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about neurodevelopment supported by appropriate citations (C25, C29, C31). They provide important biological context for interpreting the timing and localization of NDEL1 phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C47"
+    ],
+    "result": "Prior studies have shown that NDEL1 suppression decreases dendritic branches in mouse brain and NudE loss causes abnormal dendritic arborization in Drosophila. NDEL1 phosphorylation is prominently detected in cortical layers II/III at P14, and knockdown causes abnormal neuronal positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide important context from prior literature (C42-C43) and establish the biological relevance of studying layer II/III neurons (C44). The observation of positioning defects (C47) is consistent with known NDEL1 functions in neuronal migration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C82",
+      "C83",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "TARA is a short isoform of TRIOBP that directly binds NDEL1 and F-actin, has functions in cell mitosis and migration, and shows abnormal aggregation in schizophrenia patient brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about TARA are well-supported by citations to prior literature (C59, C82-C83, C105-C109). They provide essential background for understanding TARA's role in the current study and potential disease relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C110",
+      "C111"
+    ],
+    "result": "NDEL1 plays multifaceted roles in neurodevelopment including neuronal proliferation, migration, and maturation. NDEL1 expression begins early in development and continues through adulthood, and its deficiency causes embryonic lethality. NDEL1 has been implicated in schizophrenia and other neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These introductory claims establish the importance of NDEL1 and are well-supported by extensive citations to prior literature (C97-C111). They provide essential context for the significance of discovering new regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The C-terminal region of NDEL1 contains multiple phosphorylation sites targeted by Aurora A and CDK1/CDK5. Prior work has shown that dual phosphorylation at T219/S251 has distinct effects from single phosphorylation, suggesting similar regulation may exist for S336/S332.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about other NDEL1 phosphorylation sites are supported by appropriate citations (C112, C114-C117) and provide important context for understanding how dual phosphorylation can have distinct functional consequences (C118). This supports the plausibility of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Actin-microtubule crosstalk is critical for neuronal morphogenesis. NDEL1 regulates multiple cytoskeletal elements, and TARA recruits NDEL1 to the cell periphery to upregulate F-actin. The authors postulate that NDEL1 may associate with microtubules while simultaneously upregulating F-actin dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The background claims about cytoskeletal crosstalk and prior NDEL1/TARA functions are well-supported by citations (C119-C122). However, the postulated mechanism (C123) is speculative and not directly tested in this study. While consistent with the data, it requires additional experiments to confirm NDEL1 is simultaneously bound to microtubules while affecting F-actin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "DYRK2 and GSK3 act on multiple substrates in various cellular processes, and TARA and CRMP1 have been found in insoluble aggregates in schizophrenia patient brains, suggesting potential involvement of the TARA-DYRK2-GSK3\u03b2 signaling module in disease pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about DYRK2-GSK3 substrates and disease associations are supported by appropriate citations (C124-C125). These provide important context for the broader significance of the findings, though the connection to disease pathogenesis remains speculative and requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

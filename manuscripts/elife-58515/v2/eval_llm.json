@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Two distinct firing phenotypes of CCK+INs exist in rat hippocampal CA3: TOR cells (n=290) showing membrane potential-dependent firing with delayed onset (252\u00b115 ms from hyperpolarized potentials) and RS cells (n=267) showing regular firing with short delays (33\u00b12 ms). Both phenotypes are stable over prolonged recordings and show similar firing from depolarized potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C34 provide converging evidence from 557 recorded cells with detailed quantitative measurements, statistical analyses, and voltage-dependence characterization (V1/2 values, Boltzmann fits with R\u00b2>0.99). The stability over 45-64 min recordings (C34) confirms these are intrinsic properties rather than recording artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "TOR and RS cells show similar basic electrophysiological properties (input resistance, AP threshold, half-width, rate of rise, after-hyperpolarization, spontaneous synaptic events) and are present in both young and adult rats, suggesting the firing phenotypes are not age-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 report quantitative measurements with statistical comparisons showing no significant differences in basic properties. Claims C38-C39 demonstrate presence in adult rats (>70 days), though the inference about age-independence (C39) is based on presence rather than developmental tracking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C114"
+    ],
+    "result": "TOR and RS firing phenotypes do not correlate with previously established morphological subtypes of CCK+INs (basket cells, mossy fiber-associated, Schaffer collateral-associated cells), as both firing types occur similarly across all three morphological categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide morphological classification of 172 cells with distribution data (Figure 2B) showing both firing types across all morphological subtypes. This is further supported by quantitative morphological analyses (Figure 2\u2014figure supplements 1-2) referenced in C114.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C55",
+      "C56"
+    ],
+    "result": "Single-cell RNA sequencing of 8 TOR and 8 RS cells reveals highly similar overall transcriptomic profiles (3000+ genes detected), with most CCK+IN marker genes expressed comparably. However, Satb1 and Lypd1 show differential expression, with Satb1 being predictive of TOR identity (present in all TOR cells vs. 4/8 RS cells, p=0.0095).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 provide RNA-seq data with appropriate quality metrics and statistical analyses. The hierarchical cluster analysis (C48) failing to separate the groups supports the similarity claim. However, the small sample size (n=8 per group) and the fact that Satb1 was only present in 4/8 RS cells (not 0/8) suggests some overlap between groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Immunohistochemical validation confirms RNA-seq findings: CB1R, VGluT3, Reelin, and Calb1 proteins occur similarly in both cell types, while Satb1 protein is predominantly found in TOR cells (82.6% of TOR vs. 10.9% of RS cells). Satb1 expression in non-recorded CCK+ cells (126/425 in CA3) confirms this is not a recording artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 provide immunohistochemical validation with large sample sizes (>100 cells per group for Satb1). The concordance between RNA-seq and protein data strengthens the findings, and the analysis of non-recorded cells (C54) addresses potential recording-induced artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TOR cells exhibit larger low-voltage-activated potassium currents (ISA) at firing threshold (683\u00b1109 pA vs. 148\u00b128 pA in RS cells, p=0.0006) with left-shifted voltage dependence of inactivation (V1/2: -64.5 mV vs. -57.4 mV, p=0.0006) and slower inactivation kinetics (71.2\u00b19.1 ms vs. 18.8\u00b11.7 ms, p=0.0007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 provide comprehensive voltage-clamp characterization with appropriate statistical comparisons, sample sizes (n=11-17), and high-quality Boltzmann fits (R\u00b2=0.999). The measurements are internally consistent and explain the functional differences between cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Nucleated patch recordings reveal that despite lower ISA density in TOR cells (1.91\u00b10.46 nS/pF vs. 3.86\u00b10.8 nS/pF in RS), the left-shifted activation and slower inactivation result in larger inhibitory charge during physiologically relevant voltage steps (0.47\u00b10.1 vs. 0.21\u00b10.05 pC/pF, p=0.032).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 provide nucleated patch data with statistical analyses. The apparent paradox (lower density but larger functional effect) is resolved by the kinetic differences, demonstrating sophisticated understanding of channel biophysics. However, the small sample sizes (n=7-8) warrant caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Outside-out patch recordings confirm higher somatic ISA density in RS cells (70.5\u00b115.2 vs. 42.2\u00b15.2 pA/\u00b5m\u00b2, p=0.047) but similar dendritic density (19.6\u00b13.3 vs. 19.5\u00b13.0 pA/\u00b5m\u00b2) with no distance-dependent gradient. TOR cells show pronounced patch-to-patch variability in ISA kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 provide detailed subcellular localization data with large sample sizes (n=47-56 patches). The lack of dendritic gradient (C70) is supported by appropriate statistical analyses (R\u00b2=0.01-0.011, p>0.2). The variability observation (C71) is descriptive but consistent with clustered channel distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Pharmacological experiments demonstrate that Kv4-mediated currents are crucial for the TOR phenomenon: HpTX (1 \u00b5M) reversibly shortened the delay of first APs in TOR cells from 239\u00b161 ms to 116\u00b138 ms (p=0.01) and increased early firing, while having no effect on RS cells. Neither TEA nor low-dose 4-AP eliminated the TOR phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 provide systematic pharmacological characterization with appropriate controls, reversibility testing, and statistical analyses. The selective effect of HpTX on TOR cells (C75-C76) with no effect on RS cells (C77) strongly supports the mechanistic interpretation (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Both TOR and RS cells contain substantial HpTX-sensitive (Kv4-mediated) currents, but with different properties: TOR cell currents activate at more negative voltages, have slower inactivation (49.1\u00b112.6 ms vs. 11.8\u00b11.6 ms), and show left-shifted voltage dependence of inactivation (V1/2: -64.0\u00b10.6 mV vs. -56.8\u00b11.3 mV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 provide detailed pharmacological characterization of HpTX-sensitive currents with quantitative measurements and appropriate sample sizes (n=7 per group). The conclusion (C82) that Kv4 channels mediate ISA in both cell types is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C115",
+      "C116"
+    ],
+    "result": "Computational modeling demonstrates that swapping ISA conductance properties alone (ISARS to ISATOR+RS) is sufficient to convert RS to TOR firing phenotype in the same reconstructed cells. TOR firing requires 57.9% less total ISA conductance than RS firing (1.72\u00b10.27 vs. 2.97\u00b10.47 mS/cm\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C115-C116 describe realistic computational models using 10 reconstructed cells with detailed morphology and known conductances. The sufficiency demonstration (swapping single conductance converts phenotype) is compelling, though the models rely on assumptions about conductance distributions and parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C4",
+      "C108",
+      "C109"
+    ],
+    "result": "Computational simulations predict that TOR cells are selectively silenced during 8-15 Hz oscillatory inputs (37.2\u00b10.4% fewer APs compared to RS configuration) but show only minor differences at lower (1-6 Hz) and higher (25-100 Hz) frequencies. Under basal conditions, TOR cells are unlikely to contribute to theta oscillations unless primed by preceding depolarizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 provide quantitative modeling results with physiologically relevant input patterns. The frequency-selective silencing is well-demonstrated in Figure 4D. However, the predictions (C4, C108-C109) require in vivo validation, and the models make assumptions about synaptic input patterns that may not fully capture in vivo complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C117"
+    ],
+    "result": "Kv4.3 mRNA is detected in most CCK+INs (15/16 cells) with comparable expression levels between TOR and RS cells (1.56\u00b10.34 vs. 2.03\u00b10.4, p=0.37). Immunohistochemistry confirms Kv4.3 protein presence in both cell types (15/20 TOR, 19/23 RS), but with stronger signal in RS cells, consistent with higher channel density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C92-C94, C117 provide convergent RNA-seq and immunohistochemical evidence. The paradox that RS cells have more Kv4.3 despite TOR cells showing the distinctive Kv4-dependent phenotype is acknowledged and explained by auxiliary subunit differences. The immunohistochemistry is qualitative ('usually stronger') rather than quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C101",
+      "C119",
+      "C120"
+    ],
+    "result": "KChIP1 is differentially expressed between cell types: detected in most RS cells (6/8 by RNA-seq, 20/27 by immunohistochemistry) but absent or low in TOR cells (3/8 RNA-seq, 5/21 immunohistochemistry; p=0.025 for RNA). KChIP1 is known to increase Kv4 surface expression and accelerate inactivation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97, C101 provide convergent RNA-seq and immunohistochemical evidence with statistical support. The functional interpretation (C119-C120) relies on literature citations rather than direct experimental validation in this system. The overlap between groups (KChIP1 present in some TOR cells) suggests this is not an absolute determinant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "TOR cells primarily express the KChIP4e isoform (7/8 cells), a transmembrane KChIP that does not facilitate Kv4 surface expression and confers slow inactivation kinetics, while RS cells express KChIP1. This differential expression of auxiliary subunit isoforms underlies the distinct ISA properties and firing phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide exon-level RNA-seq analysis identifying specific isoforms. The mechanistic interpretation (C102, C123) integrates the molecular data with functional properties and literature on KChIP4e function (C121-C122). However, direct functional validation of KChIP4e effects in this system is lacking, and the immunohistochemistry for KChIP4 was largely negative (contradicting RNA data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C124"
+    ],
+    "result": "DPP10c is ubiquitously expressed in both cell types, while DPP6 isoforms differ: RS cells primarily express DPP6L, whereas TOR cells express DPP6S (7/8 cells) and/or DPP6L (4/8 cells). DPP6S may contribute to the left-shifted voltage dependence of activation in TOR cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 provide isoform-level RNA-seq analysis. The functional interpretation (C124) regarding DPP6S effects is based on literature rather than direct validation. The presence of both DPP6S and DPP6L in some TOR cells complicates the interpretation, and the relative contributions of different DPLP isoforms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C125",
+      "C118"
+    ],
+    "result": "The distinct firing phenotypes and functional properties of TOR and RS cells are established by alternative splicing of a few auxiliary subunit genes (KChIP1 vs. KChIP4e, DPP6L vs. DPP6S), representing a minor change in the whole transcriptome that determines cell-type identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C125, C118 synthesize the molecular and functional findings into a coherent model. The evidence from RNA-seq, immunohistochemistry, electrophysiology, pharmacology, and modeling converges to support this conclusion. However, direct causal validation (e.g., manipulating auxiliary subunit expression to convert cell types) is not provided, and the relative contributions of different auxiliary subunits remain incompletely resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The different excitability properties destine TOR and RS cells for distinct functions during network oscillations. The TOR phenomenon potentially explains variable recruitment of individual CCK+INs during theta cycles, and the elimination of bursts in TOR cells during theta is expected to diminish GABAergic inhibition from this subset onto CA3 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C110, C112 make functional predictions based on modeling and known CCK+IN properties (C111 from literature). While the modeling is rigorous (C85-C87), these functional interpretations require in vivo validation. The predictions are plausible but speculative (C110 uses 'potentially'), and alternative explanations for variable CCK+IN recruitment are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C113",
+      "C114"
+    ],
+    "result": "Despite their functional distinction, TOR and RS cells have surprisingly similar general intrinsic excitability, morphology, and gene expression profiles, and cannot be distinguished by standard transcriptomic or morphological cell-type classification approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C113-C114 are supported by comprehensive characterization including electrophysiology (C35-C36), morphology (C40-C42, Figure 2\u2014figure supplements 1-2), and RNA-seq (C48-C49). The cluster analyses failing to separate the groups (Figure 2\u2014figure supplement 2) provide strong support. This challenges conventional cell-type definitions.",
+    "result_type": "MAJOR"
+  }
+]

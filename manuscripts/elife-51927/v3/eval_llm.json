@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C49",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors characterize ITD statistics (ITDrc and ITDv) from human HRTFs, showing that \u221aFIITD is consistent across individuals, acoustic environments, and broadband signals. ITDrc depends on head geometry while ITDv depends on frequency interference within cochlear filters, and these two statistics are weakly correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20, C49, C61-C62 provide converging evidence from HRTF analysis showing that ITD statistics are robust across subjects (low variability), environments (anechoic vs reverberant), and signal types. The weak correlation between ITDrc and ITDv (rSpearman = -0.41, C17) and the demonstration that ITDv depends on frequency interference (C16, C62) while ITDrc does not (C61) support the independence of these measures. The ergodicity finding (C20, C49) strengthens the validity of the temporal variability measure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C40",
+      "C41",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "\u221aFIITD predicts human ITD discrimination thresholds better than ITDrc alone, as demonstrated by reanalysis of Mills (1958) free-field data and new dichotic stimulation experiments, though 250 Hz represents an outlier requiring additional explanatory factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 and C40-C41 demonstrate that \u221aFIITD shows higher correlation with discrimination thresholds than ITDrc in both free-field (Mills 1958) and dichotic experiments. The consistency across two independent datasets (C22: rSpearman = 0.64) and statistical validation using linear mixed-effects models (C52) strengthen this finding. The 250 Hz outlier is acknowledged and appropriately qualified (C25, C41), with supporting citation (C24). Potential confounds from free-field vs dichotic stimulation and training effects are discussed (C50, C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C42",
+      "C43",
+      "C44",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C67"
+    ],
+    "result": "MMN amplitude for spatial deviance detection is better predicted by \u221aFIITD than ITDrc alone, with the optimal model weighting the standard stimulus (80%) more heavily than the deviant (20%), suggesting that natural ITD statistics influence the formation of spatial memory traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 and C42-C44 demonstrate that \u221aFIITD predicts MMN amplitude better than ITDrc, with proper MMN methodology (C26-C28, C54, C67) and statistical validation (C53). The 80:20 weighting finding (C29, C43) is empirically derived from the data (Figure 3C). The interpretation about 'stronger' standards (C44) is a reasonable inference from the weighting pattern. Claims C55-C56 appropriately acknowledge speculative elements about underlying mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C35",
+      "C38",
+      "C45"
+    ],
+    "result": "The Stern and Colburn (1978) labeled-line model of ITD coding is consistent with natural ITD statistics, requiring only minor adjustments to the originally proposed density distribution to match \u221aFIITD patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 show that the Stern and Colburn model's density distribution correlates highly with \u221aFIITD and requires only minor modifications to match ITD statistics (Figure 4A-B). This provides a plausible mechanistic link between neural coding and perceptual performance (C35, C38, C45). The analysis appropriately demonstrates compatibility between the classic model and the new statistical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C65"
+    ],
+    "result": "The Harper and McAlpine (2004) rate-code model shows low correlation with ITD statistics in its original form, but when modified to match \u221aFIITD, predicts peripheral IPD tuning consistent with mammalian brainstem recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C65 demonstrate that the original Harper and McAlpine model does not predict ITD statistics well (low correlation, Figure 4C), which is expected given its premise of uniform Fisher information maximization. However, C34 shows that when the model is adjusted to match \u221aFIITD, it predicts peripheral IPD clustering consistent with physiological data, supported by multiple citations. This demonstrates both the limitation of the original model and the compatibility of the rate-code framework with ITD statistics when appropriately parameterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C37",
+      "C46",
+      "C58"
+    ],
+    "result": "Natural ITD statistics (combined as \u221aFIITD) are correlated with human auditory spatial perception across multiple measures including discrimination thresholds and deviance detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C37, C46, and C58 represent the main conclusion supported by the discrimination threshold experiments (Result 2) and MMN experiments (Result 3). These summary claims are well-supported by the convergent evidence from multiple experimental approaches and are appropriately stated as correlational rather than causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "ITDv represents a novel factor influencing spatial information in auditory stimuli, distinct from the previously recognized ITDrc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by the characterization of ITDv as dependent on frequency interference within cochlear filters (C16, C62), its weak correlation with ITDrc (C17), and its contribution to improved prediction of perceptual performance when combined with ITDrc in \u221aFIITD (Results 2 and 3). This represents a genuine novel contribution to understanding auditory spatial cues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C13",
+      "C15",
+      "C48",
+      "C60",
+      "C66"
+    ],
+    "result": "Background claims establish that ITD is the primary horizontal sound localization cue, detected by brainstem neurons in narrow frequency bands, with better discrimination in frontal locations explained by head geometry and affected by diffraction, and that sensory variability influences discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9, C12-C13, C15, C48, C60, and C66 provide well-cited background establishing the scientific context. These are appropriately supported by multiple citations to established literature and represent accepted knowledge in the field. Claims C12-C13 additionally confirm expected patterns in the authors' own HRTF analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C39",
+      "C57",
+      "C59",
+      "C68"
+    ],
+    "result": "The results are consistent with the hypothesis that natural ITD statistics may be genetically encoded and evolutionarily conserved, potentially representing an adaptive mechanism for optimal auditory spatial perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C39, C57, C59, and C68 make evolutionary and genetic encoding claims that extend beyond the data. While the low inter-subject variability (C14) is consistent with genetic encoding, the study provides no direct genetic, developmental, or evolutionary evidence. The cross-species comparison with owls (C39) is limited. These claims are appropriately framed as speculative (C47, C68 include 'may'), but represent interpretations rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C69"
+    ],
+    "result": "The authors speculate about functional implications including hunting/foraging efficiency, differences between human and owl ITD processing, and potential clinical applications for hearing aids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C63, and C69 are explicitly speculative. C4 draws an analogy to vision without direct evidence for auditory spatial perception. C63 makes inferences about species differences based on limited comparative analysis. C69 proposes clinical applications without any validation. These are appropriately presented as speculation but lack empirical support.",
+    "result_type": "MINOR"
+  }
+]

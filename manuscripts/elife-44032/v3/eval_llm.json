@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prior work established that mormyrid fish use electroreceptors for passive electrolocation, but their own EODs create self-generated interference that persists for ~200 ms. This interference is cancelled in ELL neurons through anti-Hebbian plasticity at granule cell synapses, forming negative images. However, all past studies were restricted to low, regular EOD rates (~5 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by multiple citations to prior literature (Bell et al., 1981; Bell and Russell, 1978; Engelmann et al., 2010; etc.). These claims establish the background knowledge and identify the gap in prior research that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C59"
+    ],
+    "result": "In freely behaving fish, EOD rates vary widely from 1-5 Hz during rest to up to 60 Hz during foraging or exploration. The observed generalization of cancellation performance supports the ethological relevance of negative images for passive electrolocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by four citations documenting natural EOD rate variation. Claim C59 is an inference connecting the experimental findings to behavioral relevance, which is reasonable given the documented natural behavior patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20"
+    ],
+    "result": "Using microstimulation to control EOD command rates up to 50-60 Hz, sensory cancellation in ELL output neurons (E and I cells) generalizes across EOD rates. Learning at only 10 Hz produces cancellation comparable to learning at all tested rates (10, 40, 60 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C19, and C20 represent the primary experimental finding, supported by data in Figures 2A-D. The microstimulation method (C15) is validated, and the recording approach (C16-C17) follows established protocols. The degree of cancellation was quantified and compared statistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The observed cancellation is due to negative image formation rather than peripheral adaptation or fatigue. Responses to the command alone after learning resemble negative images of the mimic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by control experiments showing no reduction in response to mimics presented independently (Figure 2A). Claim C23 provides direct evidence for negative images (Figure 2\u2014figure supplement 1). These controls effectively rule out alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The original computational model with minimal regularization can learn to cancel at different EOD rates but fails to generalize from low to high rates, exhibiting dramatic over-cancellation at high rates. This failure is consistent with overfitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by modeling results in Figure 3A-D. The model description (C24-C27) is clearly specified. The finding that the model learns but doesn't generalize (C29) is a key negative result that motivates subsequent model improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C11"
+    ],
+    "result": "Increasing regularization (decreasing decay time constant from 1000s to 10s) substantially improves generalization compared to minimal regularization, but still fails to match experimental performance. Regularization prevents overfitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by Figure 3E showing improved but still inadequate generalization with full regularization. Claim C11 correctly identifies regularization as important for preventing overfitting, though insufficient alone. The modeling approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Whole-cell recordings from 21 of 28 granule cells showed prominent early depolarizations (~8 mV, ~2.5 ms latency) with little temporal summation at high command rates. This contrasts sharply with the original model, which shows pronounced summation and membrane depolarization at high rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by experimental data in Figure 4A-D with statistical comparisons. The conclusion (C39) that the original model fails to describe actual granule cell responses is well-justified by the quantitative discrepancies shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The integrate-and-fire model fits granule cell data well when inputs are inferred from recordings rather than computed from the original model assumptions. This suggests the failure to generalize lies in inaccurate representation of EOD-rate dependence of mossy fiber inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by model fits shown in Figure 4E and Figure 4\u2014figure supplement 1. The inference (C41) is logical given that the model architecture works when correct inputs are used, implicating the input assumptions as the problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C65"
+    ],
+    "result": "Early mossy fibers fire precise bursts after each EOD command. At 10 Hz they fire identical bursts, but at 40-60 Hz they drop one or more spikes per command. The average number of spikes per command decreases progressively with increasing command rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C65 are supported by experimental recordings shown in Figure 4F-G. This is a novel finding about rate-dependent spike dropping in early mossy fibers, with clear quantification of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Tonic inputs to granule cells (observed in 19 of 28 cells) decrease firing at higher command rates. Pause inputs also decrease firing significantly at high rates. Golgi cells markedly increase firing with increasing EOD command rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by experimental recordings in Figure 4H and supplementary figures. These represent additional novel findings about rate-dependent changes in multiple input types to granule cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Command rate-dependent Golgi inhibition could contribute to reducing temporal summation of excitatory inputs in granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 is explicitly labeled as speculation in the evidence. While the increased Golgi firing at high rates is documented (C48), the functional consequence for granule cells is not directly tested. This remains a plausible hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The revised model incorporating realistic mossy fiber rate dependencies shows similar responses to the original model at low rates but differs dramatically at high rates, eliminating the increased depolarization seen in the original model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by modeling results in Figure 5A-D showing that inclusion of rate-dependent inputs dramatically changes model granule cell responses to better match experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C12"
+    ],
+    "result": "The revised model with full regularization shows cancellation that generalizes at a level comparable to recorded ELL neurons. However, the revised model with minimal regularization still shows over-cancellation, indicating that realistic mossy fiber inputs alone are insufficient. Both regularization and rate-dependent inputs are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by Figure 6A-D showing that both features are necessary. Claim C12 correctly summarizes that approximate matching between corollary discharge and electrosensory input rate-dependence is important, supported by the combined experimental and modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C69"
+    ],
+    "result": "ELL neurons and ampullary afferents both exhibit decreasing response profiles at high EOD rates. Afferent responses to isolated EODs consist of firing rate increases followed by reductions below baseline, resembling damped oscillations. Afferent responses exhibit roughly linear dependence on EOD rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C69 are supported by experimental recordings in Figure 2A, Figure 6E, and Figure 6\u2014figure supplement 2-3. The linear model approximation for afferents is tested and shown to be reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C66"
+    ],
+    "result": "Generalization across EOD rates is achieved by combining regularized plasticity (forcing negative images close to mean granule cell response) and mossy fiber rate dependencies (ensuring mean granule cell response approximates the sensory signal). Rate-dependent grading of early mossy fiber bursts conveys information important for generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 synthesizes the key mechanistic findings from both experimental and modeling work. Claim C66 is a reasonable inference given the experimental findings and modeling results showing both features are necessary for generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Negative images and cancellation of self-generated inputs have been described in multiple electrosensory and related systems including active electrolocation in mormyrid and gymnotid fish, passive electrolocation in elasmobranchs, and cerebellum-like structures in lateral line and auditory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by appropriate citations (Bastian, 1996; Bodznick et al., 1999; Montgomery and Bodznick, 1994; Singla et al., 2017). These establish the broader context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Regularization is ubiquitous in machine learning to prevent overfitting. Consistent with this, an ELL model lacking adequate regularization could learn negative images at low rates but showed poor cancellation at high untrained rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by citation to Bishop, 2006. Claim C64 is supported by the modeling results. The connection between machine learning principles and the biological system is appropriate and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Both MG and output cells integrate electrosensory and corollary discharge input and exhibit anti-Hebbian plasticity. However, it is presently unknown how MG cells contribute to sensory cancellation and negative image formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by four citations. Claim C68 acknowledges a limitation of current knowledge. The model simplification (C25) that doesn't distinguish these cell types is appropriately noted as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Granule cells exhibit markedly nonlinear properties, including prominent rectification and burst firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by multiple citations to studies in both mormyrid fish and mammals. This establishes that nonlinearity is a general feature of granule cells, making the linear summation assumption problematic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In gymnotid ELL, cancellation is mediated by anti-Hebbian plasticity but driven by proprioception/feedback rather than corollary discharge. Cancellation remains accurate over wide stimulus contrasts. Model features important for generalization in gymnotids (granule cell properties, slow synaptic decay) are related to those in mormyrid ELL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by appropriate citations (Harvey-Girard et al., 2010; Bastian et al., 2004; Mejias et al., 2013; Lewis and Maler, 2004). This comparison to related systems strengthens the generality of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "VOR adaptation shows various patterns of generalization and specificity depending on training conditions. Under some conditions learning is specific to training context, while under others (e.g., training at high frequency, testing at low) generalization is observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by citations to Boyden et al., 2004; Baker et al., 1987; Yakushin et al., 2000. This provides relevant context from motor learning literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Patterns of generalization in human motor learning can be explained by tuning of basis elements. The present study is the first to directly relate granule cell responses recorded during a learning task to generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by three citations. Claim C79 is a novelty claim that appears reasonable given the literature review, though such claims are inherently difficult to verify completely.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Experiments used paralyzed Gnathonemus petersii (7-12 cm) following approved protocols. Paralysis blocks EODs but motor commands continue at 2-5 Hz. Microstimulation-evoked responses were indistinguishable from spontaneous commands. Recording criteria for different cell types are described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 describe methods and validation. The ethical approval (C80), preparation details (C81-C82), validation of microstimulation (C83), and cell identification criteria (C84-C86) are clearly stated and follow established protocols.",
+    "result_type": "MINOR"
+  }
+]

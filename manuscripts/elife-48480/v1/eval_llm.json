@@ -1,0 +1,622 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "PAR-CL-MS identified 259 mRNA-binding proteins (mRBPs) in yeast, including 10 glycolysis enzymes, with nearly half being non-canonical RBPs lacking conventional RNA binding domains. The study identified 69 novel mRBPs and validated the approach through comparison with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are well-supported by the PAR-CL-MS experimental data (Figure 1A-B). The identification of mRBPs is based on clear criteria (>2 counts in +UV, 0 in -UV, or FDR<10%), and validation through comparison with previous studies (C46) strengthens confidence. The autoradiography validation (C51) provides orthogonal confirmation of RNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PAR-CLIP-seq identified direct mRNA substrates for three glycolysis enzymes: Pfk2 (439 mRNAs, 559 sites), Eno1 (1,001 mRNAs, 1,432 sites), and Fba1 (721 mRNAs, 1,014 sites). Results were validated by comparison with independent CRAC data for Eno1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by PAR-CLIP-seq data with empirically determined RPM thresholds (Figure 1\u2014figure supplement 1B). The validation through comparison with independent CRAC data (C55-C56) showing 69/100 overlap provides strong orthogonal support. The autoradiography (C51) confirms RNA binding for the tested enzymes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Glycolysis enzymes bind overlapping sets of mRNAs, with 490 mRNAs bound by at least two enzymes and 131 by all three. Bound mRNAs are enriched for glycolysis and metabolic pathway annotations, with 16 of 22 glycolytic enzyme-encoding mRNAs bound by Pfk2, Fba1, and/or Eno1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 are well-supported by PAR-CLIP-seq analysis (Figure 2A-B). The overlap analysis is straightforward and the GO term enrichment provides functional validation. The identification of glycolytic enzyme-encoding mRNAs as substrates (Figure 1\u2014figure supplement 1C) is particularly compelling for the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Glycolysis enzyme binding sites are primarily in 3' UTRs and coding sequences (except Fba1), with short footprints (22 nt average). Pfk2 sites contain AU-rich elements while Eno1/Fba1 sites are pyrimidine-rich. Binding sites show 10-19% overlap between enzymes, with unique sites showing higher enrichment but overlapping sites having greater sequencing depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C74 are supported by detailed PAR-CLIP-seq binding site analysis (Figure 2C-F). The motif analysis (C66-C67) and overlap quantification (C68-C69) are clearly presented. The interpretation that overlapping sites have higher depth due to mRNA abundance (C74) is reasonable given the enrichment analysis (C72-C73).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Of 43 previously identified G body components, 36 are mRBPs. Glycolysis enzymes are diffusely localized and bind RNA under normoxic conditions, suggesting G bodies may contain RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 integrate previous work (C76-C77 from Jin et al. 2017) with current PAR-CLIP-seq data (C78-C79). The inference that G bodies contain RNA (C80) is reasonable given the high proportion of mRBPs among G body components, though this is tested more directly in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "G body RIP-qPCR showed 3.5-11.5 fold enrichment of RNAs in G bodies versus control, though only 2.4-7% of flow-through RNA was recovered, suggesting a small fraction of each mRNA accumulates in G bodies (unlike stress granules where up to 95% of mRNAs localize).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by G body RIP-qPCR data (Figure 2\u2014figure supplement 1C). The low recovery rate is appropriately interpreted as indicating only a small fraction of mRNA in G bodies. The comparison to stress granules (C85) provides useful context, though the cited 95% figure is from a different system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "G body RIP-seq identified 297 transcripts enriched over flow-through (101 high-confidence when also enriched over total RNA). RNAs bound by glycolysis enzymes were nearly 2-fold overrepresented in G body RNAs, indicating correlation between normoxic RNA binding and hypoxic G body localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by G body RIP-seq analysis (Figure 3A-D). The statistical enrichment of glycolysis enzyme-bound RNAs in G bodies (C89) provides strong evidence for the connection between normoxic binding and hypoxic localization. The 2-fold enrichment threshold and p<0.05 criteria are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "smFISH validation showed mRNA colocalization with G bodies correlates with RIP-seq enrichment, with maximally 2% of any mRNA localized to G bodies. G body mRNAs are enriched near G body centers with peripheral clustering, suggesting G bodies concentrate a small fraction of mRNAs initially bound by glycolysis enzymes in normoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are well-supported by smFISH analysis (Figure 3E-G). The correlation between smFISH colocalization and RIP-seq enrichment (C92-C93) validates the RIP-seq approach. The quantification showing only ~2% of mRNA in G bodies (C94) is consistent with the low RIP recovery rates. The distance analysis (C95) and peripheral localization (C96) provide spatial detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Targeting RNases (MqsR or RNase A) to G bodies via Pfk2 fusion caused dose-dependent reduction in G body formation in hypoxia. The Pfk2-MqsR-Flag fusion was expressed even without CuSO4 induction and colocalized with Pfk2-GFP at low CuSO4 concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 are supported by the RNase targeting experiments (Figure 4A-B, Figure 4\u2014figure supplement 1-2). The dose-dependent inhibition (C104) is clearly demonstrated, and controls showing no effect of CuSO4 alone (C105) are appropriate. The leaky expression (C100, C106) is documented by western blot and explains the baseline effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Inhibition of G body formation by MqsR requires RNase activity, as demonstrated by rescue with the MqsA antitoxin and reduced effect of the RNase AH12A mutant with decreased activity. G bodies appeared larger in Pfk2-MqsR-Flag-MqsA cells, possibly due to Pfk2 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 are supported by control experiments (Figure 4C, Figure 4\u2014figure supplement 2B). The MqsA rescue (C109-C110) and RNase AH12A partial effect (C112) demonstrate that RNase activity is required. The interpretation that residual activity of RNase AH12A contributes to modest G body loss (C113) is reasonable given published data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Untargeted MqsR-Flag had no effect on G body formation, demonstrating that targeting to G bodies is required. Pfk2-RNase A similarly inhibited formation of other G body markers (Eno2, Cdc19, Fba1) in a dose-dependent manner, indicating RNA is required for G body formation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 are supported by experiments showing untargeted RNase has no effect (Figure 4D) and that multiple G body markers are affected (Figure 4\u2014figure supplement 3A). The conclusion that RNA is required for G body formation (C118) is well-supported by the combined evidence, though alternative explanations (e.g., loss of specific mRNAs) are acknowledged but considered unlikely.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Targeting RNase to pre-formed G bodies (after 20 hr hypoxia) resulted in cells with multiple puncta rather than complete dissolution, suggesting fragmentation. G bodies persisted for tens of hours in normoxia. The effects demonstrate that nascent G body formation requires both RNase activity and targeting, while pre-formed G bodies fragment but don't fully dissolve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 are supported by post-hypoxia RNase induction experiments (Figure 5). The fragmentation phenotype (C121-C122, C125) is clearly distinct from the inhibition of nascent formation (C123-C124). The persistence of G bodies for tens of hours (C126) is directly observed. The summary (C123-C126) accurately reflects the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Pfk2 contains an N-terminal IDR (residues 140-165) required for G body localization. The N-terminal domain is conserved and resembles a glyoxylase domain that interacts with Pfk1, along with other Pfk1-interacting regions, providing potential for multivalent interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 integrate disorder prediction (C127), previous work on IDR deletion (C128), sequence conservation (C129), and structural information from related species (C130-C132). The interpretation of multivalent interaction potential (C133) is reasonable given the multiple interaction domains, though this is tested more directly in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Deletion of the Pfk2 N-terminal domain (\u03941-202) drastically reduced G body localization, with a stronger defect than the smaller IDR deletion (\u0394140-165), suggesting structured and disordered portions of the N-terminus act together to promote G body localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 are supported by deletion analysis (Figure 6C). The comparison between \u03941-202 and \u0394140-165 (C136) provides evidence that both structured and disordered regions contribute. However, the interpretation that the N-terminus is required for 'either G body formation or Pfk2 localization' (C135) acknowledges ambiguity that is resolved by subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The Pfk2 N-terminal region (1-202) is not sufficient for G body localization when integrated as the sole Pfk2 form, but can be recruited to G bodies when expressed from a plasmid in cells with full-length Pfk2, indicating it requires interaction with full-length Pfk2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are supported by experiments comparing integrated vs. plasmid-expressed Pfk21-202-GFP (Figure 6D). The differential localization clearly demonstrates that the N-terminus is necessary but not sufficient, requiring interaction with full-length Pfk2. This is a well-designed experiment addressing the sufficiency question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Pfk1-GFP puncta formation was reduced in pfk2\u0394 cells compared to wild-type, suggesting Pfk1 is recruited to G bodies in concert with Pfk2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 are supported by Pfk1-GFP localization analysis in pfk2\u0394 cells (Figure 6E). The reduced Pfk1 puncta in the absence of Pfk2 supports the interpretation of Pfk2-dependent recruitment, consistent with the known Pfk1-Pfk2 interaction from structural studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "G bodies showed no significant loss after 1 hr treatment with 5% 1,6-hexanediol, but appeared smaller with reduced \u03c3X, \u03c3Y, and amplitude values, indicating partial but not complete dissolution. The modest loss in untreated cells was likely due to continued cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C149 are supported by 1,6-hexanediol treatment experiments with quantitative Gaussian fitting analysis (Figure 7\u2014figure supplement 1A). The size reduction (C147-C148) is well-documented, and the interpretation of partial dissolution (C149) is appropriate. The explanation for control loss (C145) is reasonable given cited literature on 1,6-hexanediol effects on cell division.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "As controls, 1,6-hexanediol treatment disrupted P bodies (Edc3-GFP) but caused only small, non-significant loss of stress granules (Pab1-GFP) in glucose-starved cells. During starvation, 1,6-hexanediol inhibited P body but not stress granule formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 are supported by control experiments (Figure 7\u2014figure supplement 1B-C). These controls validate the 1,6-hexanediol treatment approach and confirm expected differential effects on P bodies vs. stress granules, consistent with published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "1,6-hexanediol treatment during hypoxia did not affect nascent G body formation in wild-type cells, indicating it cannot prevent nucleation. Unexpectedly, treatment of snf1\u0394 cells increased single G body frequency, suggesting 1,6-hexanediol promotes aggregation in this mutant. G bodies are largely insensitive to 1,6-hexanediol, similar to stress granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C159 are supported by experiments during hypoxia (Figure 7\u2014figure supplement 1D). The lack of effect on nascent formation (C153-C154) contrasts with effects on mature G bodies. The snf1\u0394 result (C156-C157) is unexpected but appropriately interpreted as potentially representing a different aggregation mode. The overall conclusion (C159) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "FRAP analysis showed very weak recovery of Pfk2-GFP (9.5% in YPD, 15% in SMD) with half-times on the order of minutes. Fba1-GFP showed more recovery (28%) with similar half-time (25 min), while Eno2-GFP displayed linear recovery not fitting exponential models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 are supported by FRAP experiments (Figure 7\u2014figure supplement 2A-C). The weak recovery and slow dynamics are clearly documented. The different behaviors of the three proteins (C160-C163) suggest heterogeneity in G body dynamics, though the linear Eno2 recovery (C163) is unusual and may indicate technical issues or distinct behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Cells expressing Pfk2D348S-MqsR-Flag showed slightly greater FRAP recovery (13% vs. 4.1%) with faster dynamics (5.7 vs. 10.6 min) compared to vector control, suggesting RNA depletion modestly enhances Pfk2-GFP recovery and that RNA promotes stronger Pfk2 binding in G bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C164-C167 are based on FRAP with RNase treatment (Figure 7\u2014figure supplement 2D). While the data show increased recovery with RNase (C164), the interpretation that this indicates RNA promotes stronger binding (C166-C167) is one possibility, but the effect is modest and could have alternative explanations. The use of Pfk2D348S controls for catalytic activity but adds complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "G bodies fuse in vivo during mating, with fusion occurring over 2-60 min (median 18 min) from initial contact. Some fused G bodies remained oblong while others became spherical over tens of minutes, suggesting gel-like behavior with slow fusion dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C173 are supported by time-lapse imaging of mating cells (Figure 7A-B). The fusion events are directly observed and quantified (C171). The slow timescale and shape changes (C172) support the gel-like interpretation (C173), contrasting with rapid fusion of liquid droplets. This is compelling evidence for gel-like properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "De novo G body formation during imaging showed two foci appearing and fusing within 2 min of contact. In mating cells, the fraction with overlapping puncta increased from 3-24 hr while adjacent unassociated puncta decreased from 41% to 11%, consistent with fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C177 are supported by time-lapse imaging and time-course analysis (Figure 7B, D-E). The progression from multiple to single puncta (C175-C176) is consistent with fusion, though de novo formation cannot be completely ruled out. The interpretation (C177) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C178"
+    ],
+    "result": "G bodies can fuse over minutes and are largely insensitive to 1,6-hexanediol, properties reminiscent of gels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C178 is a summary statement well-supported by the combined fusion experiments (C169-C177) and 1,6-hexanediol experiments (C143-C159). The gel-like properties are supported by multiple lines of evidence including slow fusion, partial 1,6-hexanediol resistance, and weak FRAP recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Growth competition assays showed vector control cells (capable of forming G bodies) made up 65% of cultures after 6-7 generations in hypoxia when co-cultured with Pfk2-MqsR-Flag cells. The advantage was not due to extra Pfk2 activity and increased with generations, indicating cells with G bodies have a significant growth advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C185 are supported by growth competition assays (Figure 7\u2014figure supplement 4). The controls with Pfk2D348S-MqsR-Flag (C180) and MqsR alone (C181) rule out catalytic activity effects. The serial dilution experiment (C183) confirms the advantage increases with generations. This provides functional evidence for G body importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "G bodies have properties of phase-separated gels in vivo, including lack of membranes, presence of IDR-containing proteins, reduced sensitivity to 1,6-hexanediol compared to P bodies (though with partial size reduction), and slow fusion dynamics consistent with weak FRAP exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C190 synthesize multiple lines of evidence into the conclusion that G bodies are gel-like. The evidence includes composition (C187), 1,6-hexanediol response (C188-C189), and dynamics (C190). This integration is well-supported by the data, though the gel vs. liquid distinction is somewhat qualitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "G body formation involves fusion of smaller granules, with fusion events insensitive to 1,6-hexanediol during hypoxia. Mature G bodies can still fuse in mating cells after extended hypoxia. Like stress granule cores, G bodies can be purified intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C194 are supported by time-lapse observations (C191), 1,6-hexanediol experiments during hypoxia (C192), mating experiments (C193), and previous purification work (C194). These observations support the model of G body formation through fusion and their stability as gel-like structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Unlike stress granules (which disperse in tens of minutes) and nucleoli (which rapidly assemble/disassemble during mitosis), G bodies can persist for tens of hours, as shown by post-hypoxia RNase induction experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C197 compare G body stability to other granules. The persistence of G bodies (C197) is directly demonstrated by the post-hypoxia experiments (Figure 5). The comparisons to stress granules and nucleoli (C195-C196) are from cited literature and provide useful context for the unusual stability of G bodies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "G bodies may initially form as liquids and solidify over time, though they can be disrupted by targeted RNase, demonstrating they are not static. Small amounts of RNA degradation are sufficient for fragmentation, with fragmented foci appearing larger, suggesting additional Pfk2 accumulation. RNA is primarily required for fusion and nucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C198-C204 mix speculation (C198) with data-supported observations (C199-C203). The RNase disruption (C199) and fragmentation (C200-C203) are well-documented. However, the speculation about liquid-to-solid transition (C198) lacks direct evidence. The interpretation that RNA is primarily required for fusion/nucleation (C204) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "Both N- and C-terminal domains of Pfk2 are necessary but not sufficient for G body recruitment. Pfk1 is recruited via interaction with Pfk2. Protein-RNA interactions are required for G body formation. Multivalent interactions are necessary for phase separation and can drive granule formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C205-C208 summarize the multivalent interaction model. C205-C207 are well-supported by the deletion experiments (Figure 6) and RNase targeting (Figure 4). C208 is from cited literature and provides theoretical framework. The integration of protein-protein and protein-RNA interactions supports the phase separation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "RNA is required for G body stability/integrity, as degradation leads to multiple puncta. FRAP data suggest RNA contributes to Pfk2 recruitment, as weak RNase induction made Pfk2-GFP slightly more dynamic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C211 are supported by post-hypoxia RNase experiments (C209, Figure 5) and FRAP with RNase (C210-C211, Figure 7\u2014figure supplement 2D). The fragmentation phenotype clearly demonstrates RNA's role in integrity. The FRAP interpretation is more tentative but consistent with RNA promoting stable association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218"
+    ],
+    "result": "PAR-CLIP-seq revealed glycolysis enzymes bind similar transcripts primarily in 3' UTRs and coding regions. Many mRNA substrates are recruited to G bodies in hypoxia, as shown by RIP-seq and validated by smFISH. However, no RNA was strongly enriched in G bodies, suggesting modest preference for specific RNA species as long as they bind glycolysis enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C212-C218 integrate PAR-CLIP-seq (C212-C214), G body RIP-seq (C215), and smFISH (C216-C217) data. The conclusion of modest RNA specificity (C218) is well-supported by the observation that no RNA is strongly enriched (C217) despite clear enrichment of glycolysis enzyme-bound RNAs overall. This is an important finding about G body RNA composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C219",
+      "C220",
+      "C221",
+      "C222"
+    ],
+    "result": "The authors propose RNA serves as a scaffold for G body nucleation and growth, supported by in vitro data showing RNA promotes Cdc19 aggregation. Glycolysis enzyme mRNAs are among commonly bound transcripts. Weak, dynamic interactions between G body components with RNA and each other would allow G body growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C219-C222 present a model integrating the findings. The scaffold model (C219) is supported by the RNase experiments and RNA localization data. The in vitro Cdc19 data (C220) provides supporting evidence from literature. The binding of glycolysis enzyme mRNAs (C221) is directly shown. The proposed mechanism (C222) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "RNA interactions with glycolysis enzymes may facilitate post-transcriptional regulation and contribute to G body formation through localized translation or by providing common substrates for multivalent interactions. Alternatively, hypoxia may weaken RNA interactions, allowing protein-protein interactions to dominate. Peripheral RNAs may facilitate fusion by bridging G bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C223-C227 are largely speculative (C224-C227) with C223 from cited literature. While these are reasonable hypotheses given the data, they lack direct experimental support in this study. The speculation about peripheral RNA function (C227) is interesting but untested. These represent potential mechanisms requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232"
+    ],
+    "result": "Phase separation is emerging as a mechanism for metabolic pathway organization, distinct from membrane-bound compartmentalization (e.g., glycosomes in protozoa). G bodies and glycosomes may represent convergent evolution, as both concentrate glycolysis enzymes and are associated with increased glucose flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C228-C232 place the work in broader context. C228-C231 are from cited literature and general knowledge. The speculation about convergent evolution (C232) is reasonable given the functional similarities, though it's an inference rather than a tested hypothesis. This provides useful perspective on the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237"
+    ],
+    "result": "Cancer cells form glycolysis enzyme aggregates even in oxygen, suggesting enzyme concentration is conserved. Pyrenoids in Chlamydomonas form via phase separation to enhance carbon fixation. Carbon metabolism can be controlled at fixation and harvesting levels via phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C233-C237 are from cited literature and provide evolutionary/comparative context. The examples of cancer cells (C233-C234) and pyrenoids (C235-C236) support the broader significance of phase separation in metabolism (C237). These claims appropriately contextualize the G body findings within metabolic organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C238",
+      "C239"
+    ],
+    "result": "Cells capable of forming G bodies have a distinct growth advantage over multiple generations when co-cultured with cells unable to form G bodies. RNA-induced coalescence of glycolysis enzymes promotes proliferation in hypoxia, likely by enhancing glycolysis rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C238-C239 are supported by the growth competition assays (Figure 7\u2014figure supplement 4). The growth advantage (C238) is clearly demonstrated. The interpretation that this is due to enhanced glycolysis (C239) is reasonable given previous work showing G bodies correlate with increased glucose consumption, though the mechanism is not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246"
+    ],
+    "result": "Phase separation may enhance reaction rates through decreased substrate inhibition, as shown for dextranase in vitro. Phosphofructokinase, which mediates an irreversible glycolysis step and is subject to ATP substrate inhibition, may experience increased activity in phase-separated compartments. Alternatively, enzyme concentration may enhance flux via substrate channeling or facilitate enhanced translation of glycolysis enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C240-C246 are largely speculative about mechanisms of enhanced glycolysis in G bodies. C240-C242 are from literature or general knowledge. The speculation about phosphofructokinase activity (C243), substrate channeling (C245), or enhanced translation (C246) are reasonable hypotheses but lack direct experimental support in this study. These represent important questions for future work.",
+    "result_type": "MINOR"
+  }
+]

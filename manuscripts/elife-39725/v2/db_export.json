@@ -1,0 +1,1319 @@
+{
+  "submission": {
+    "id": "1a6c42d2-a81d-4eca-8a14-0b73547c4afd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:12:35.936385Z",
+    "updated_at": "2025-12-02T09:12:35.936385Z"
+  },
+  "content": [
+    {
+      "id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "submission_id": "1a6c42d2-a81d-4eca-8a14-0b73547c4afd",
+      "content_type": "manuscript",
+      "content_text": "# Reduced signal for polygenic adaptation of height in UK Biobank\n\n## Authors\n\n- Jeremy J Berg<sup>1</sup> ([ORCID: 0000-0001-5411-6840](https://orcid.org/0000-0001-5411-6840)) \u2020\n- Arbel Harpak<sup>1</sup> ([ORCID: 0000-0002-3655-748X](https://orcid.org/0000-0002-3655-748X))\n- Nasa Sinnott-Armstrong<sup>3</sup> ([ORCID: 0000-0003-4490-0601](https://orcid.org/0000-0003-4490-0601))\n- Anja Moltke Joergensen<sup>4</sup>\n- Hakhamanesh Mostafavi<sup>1</sup> ([ORCID: 0000-0002-1060-2844](https://orcid.org/0000-0002-1060-2844))\n- Yair Field<sup>3</sup>\n- Evan August Boyle<sup>3</sup> ([ORCID: 0000-0003-4494-9771](https://orcid.org/0000-0003-4494-9771))\n- Xinjun Zhang<sup>5</sup> ([ORCID: 0000-0003-1298-3545](https://orcid.org/0000-0003-1298-3545))\n- Fernando Racimo<sup>4</sup> ([ORCID: 0000-0002-5025-2607](https://orcid.org/0000-0002-5025-2607))\n- Jonathan K Pritchard<sup>2</sup> ([ORCID: 0000-0002-8828-5236](https://orcid.org/0000-0002-8828-5236)) \u2020\n- Graham Coop<sup>7</sup> ([ORCID: 0000-0001-8431-0302](https://orcid.org/0000-0001-8431-0302)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences Columbia University New York United States\n2. Department of Biology Stanford University Stanford United States\n3. Department of Genetics Stanford University Stanford United States\n4. Lundbeck GeoGenetics Centre, Department of Biology University of Copenhagen Copenhagen Denmark\n5. Department of Anthropology University of California, Davis Davis United States\n6. Howard Hughes Medical Institute, Stanford University Stanford United States\n7. Center for Population Biology University of California, Davis Davis United States\n8. Department of Evolution and Ecology University of California, Davis Davis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSeveral recent papers have reported strong signals of selection on European polygenic height scores. These analyses used height effect estimates from the GIANT consortium and replication studies. Here, we describe a new analysis based on the the UK Biobank (UKB), a large, independent dataset. We find that the signals of selection using UKB effect estimates are strongly attenuated or absent. We also provide evidence that previous analyses were confounded by population stratification. Therefore, the conclusion of strong polygenic adaptation now lacks support. Moreover, these discrepancies highlight (1) that methods for correcting for population stratification in GWAS may not always be sufficient for polygenic trait analyses, and (2) that claims of differences in polygenic scores between populations should be treated with caution until these issues are better understood.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).\n\n## Introduction\n\nIn recent years, there has been great progress in understanding the polygenic basis of a wide variety of complex traits. One significant development has been the advent of \u2018polygenic scores\u2019, which aim to predict the additive genetic component of individual phenotypes using a linear combination of allelic contributions to a given trait across many sites. An important application of polygenic scores has been the study of polygenic adaptation\u2014the adaptive change of a phenotype through small allele frequency shifts at many sites that affect the phenotype.\n\nThus far, the clearest example of polygenic adaptation in humans has come from analyses of polygenic scores for height in Europe. However, as we will show here, this signal is strongly attenuated or absent using new data from the UK Biobank (Bycroft et al., 2018), calling this example into question.\n\nStarting in 2012, a series of papers identified multiple lines of evidence suggesting that average polygenic scores for height increase from south-to-north across Europe (Table 1). Analyses from multiple groups have concluded that the steepness of this cline is inconsistent with a neutral model of evolution, suggesting that natural selection drove these differences in allele frequencies and polygenic scores (Turchin et al., 2012; Berg and Coop, 2014; Robinson et al., 2015; Zoledziewska et al., 2015; Berg et al., 2017; Racimo et al., 2018; Guo et al., 2018). Significant differences in polygenic scores for height have also been reported among ancient populations, and these are also argued to have been driven by selection (Mathieson et al., 2015; Martiniano et al., 2017; Berg et al., 2017). In parallel, (Field et al., 2016) developed the Singleton Density Score (SDS)\u2014which compares the distance to the nearest singleton on two alternative allelic backgrounds\u2014to infer recent changes in allele frequencies, and used it to analyze a large sample of British individuals (the UK10K;\u00a0UK10K Consortium, 2015). They found a significant covariance of SDS and effect on height, suggesting that natural selection drove a concerted rise in the frequency of height-increasing alleles in the ancestors of modern British individuals during the last 2,000 years (Field et al., 2016).\n\n**Table 1.**\n Studies reporting signals of height adaptation in Europeans.Prior to the UK Biobank dataset, studies consistently found evidence for polygenic adaptation of height. Notes: Most of the papers marked as having \u2018strong\u2019 signals report p-values $<10^{-5}$, and sometimes $\u226a10^{-5}$. In the present paper, the UK Biobank analyses generally yield p-values $>10^{-3}$.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>GWAS</th>\n      <th>Approach</th>\n      <th>Signal</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GIANT 2010</td>\n      <td>European frequency cline of top SNPs</td>\n      <td>strong</td>\n      <td>Turchin\u00a0et\u00a0al., 2012</td>\n    </tr>\n    <tr>\n      <td>validation: Framingham sibs</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GIANT 2010</td>\n      <td>Polygenic measures of pop. frequency differences</td>\n      <td>strong</td>\n      <td>Berg and Coop, 2014</td>\n    </tr>\n    <tr>\n      <td>GIANT</td>\n      <td>Polygenic measures of pop. frequency differences</td>\n      <td>strong</td>\n      <td>Berg et al., 2017</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>strong</td>\n      <td>Racimo\u00a0et\u00a0al., 2018</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>strong</td>\n      <td>Guo\u00a0et\u00a0al., 2018</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Polygenic diffs between ancient and modern populations</td>\n      <td>strong</td>\n      <td>Mathieson\u00a0et\u00a0al., 2015</td>\n    </tr>\n    <tr>\n      <td>GIANT</td>\n      <td>Heterogeneity of polygenic scores among populations</td>\n      <td>strong</td>\n      <td>Robinson\u00a0et\u00a0al., 2015</td>\n    </tr>\n    <tr>\n      <td>validation: R15-sibs</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sardinia cohort</td>\n      <td>Low polygenic height scores in Sardinians. Effect estimates from Sardinian cohort at GIANT hit SNPs</td>\n      <td>strong</td>\n      <td>Zoledziewska\u00a0et\u00a0al., 2015</td>\n    </tr>\n    <tr>\n      <td>GIANT and R15-sibs</td>\n      <td>Singleton density (SDS) in UK sample vs GWAS</td>\n      <td>strong</td>\n      <td>Field\u00a0et\u00a0al., 2016</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Also: LD Score regression (SDS vs GWAS)</td>\n      <td>strong</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UK Biobank</td>\n      <td>Population frequency differences</td>\n      <td>weak or absent</td>\n      <td>This paper*</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Singleton density (SDS) in UK sample</td>\n      <td>weak or absent</td>\n      <td>This paper*</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>LD Score regression (SDS vs GWAS)</td>\n      <td>weak</td>\n      <td>This paper*</td>\n    </tr>\n  </tbody>\n</table>\n\n_*See also results from Sohail et al., 2019._\n\nAll such studies rely on estimates of individual allelic effects on height, as calculated from genome-wide association studies (GWAS). These GWAS estimates are then combined with population-genetic analysis to test for selection. Under a null model of no directional change, we would not expect \u2018tall\u2019 alleles to increase (or decrease) in frequency in concert; thus, loosely speaking, a systematic shift in frequency of \u2018tall\u2019 alleles in the same direction has been interpreted as evidence for selection.\n\nWhile our focus here is on the the distribution of height polygenic scores in Europe, we see this as a case study for understanding the challenges in comparing polygenic scores across populations in general. Compared to other complex traits, height is particularly well-characterized, and the evidence for adaptation of height in Europeans seemed clear. Thus our work highlights a need for caution in this area until these issues are more fully understood (Novembre and Barton, 2018).\n\n### GWAS data used to study adaptation of height\n\nUntil recently, the largest height GWAS dataset came from the GIANT consortium (253,288 individuals as of 2014; Wood et al., 2014). This is the primary GWAS underlying most studies of adaptation of height. Additionally, several groups have used other, smaller, datasets to replicate signals found using GIANT (Turchin et al., 2012; Robinson et al., 2015; Zoledziewska et al., 2015; Field et al., 2016; Berg et al., 2017). In particular, because it is known that population structure may be a confounder in GWAS, leading to false positive inferences of polygenic adaptation, several groups sought to replicate signals using family-based analyses, which protect against confounding due to stratification (Allison et al., 1999; Spielman and Ewens, 1998; Abecasis et al., 2000).\n\nThe first replication, by Turchin et al. (2012), showed that the effect sizes of the top 1,400 GIANT associations (based on an earlier version of GIANT, published by (Lango Allen et al., 2010) were statistically consistent with effect sizes re-estimated in a smaller sibling-based regression approach using data from the Framingham Heart Study (4819 individuals across 1761 nuclear sibships from Splansky et al., 2007). Sibling-based regression is considered to be immune to confounding by population structure, and so the agreement of effect sizes between studies was taken as validation of the north-south gradient observed when using the GIANT effect sizes.\n\nThe second, partially independent, replication came from Zoledziewska et al. (2015), who selected 691 height-associated SNPs on the basis of the GIANT association study, and then computed polygenic scores using effect sizes re-estimated in a cohort of 6307 individuals of Sardinian ancestry. They determined that the average polygenic score of Sardinian individuals was significantly lower than observed for other European populations, consistent with the previously reported north-south gradient of polygenic scores.\n\nA third replication was performed by Robinson et al. (2015), who used a different, larger sibling-based GWAS to identify associations ($\u223c17,500$ sibling pairs from Hemani et al., 2013). We refer to this sibling-based dataset as \u2018R15-sibs\u2019. These authors showed that the north-south frequency gradient replicates using SNPs ascertained from the sibling-based GWAS. This replication is stronger than that performed by either Turchin et al. (2012), or that by Zoledziewska et al. (2015), as the cohort is larger and the SNP ascertainment did not rely on GIANT. As pointed out in the supplementary note of Robinson et al. (2015), this two-step procedure\u2014ascertaining with a large but potentially biased GWAS like GIANT, before switching to a less powerful but hopefully unbiased replication GWAS\u2014has the potential to introduce an ascertainment bias, even if the effects are correctly estimated in the replication study (we note that a small fraction of the GIANT samples are contained within the R15-sibs analysis, so the effect sizes are not strictly independent; however, because of the sibling design, any bias due to stratification in GIANT should be absent in R15-sibs). The R15-sibs study was also used by Field et al. (2016) to verify a signal of recent selection in ancestors of the present day British population. Field et al. (2016) found that the signal of selection was fully replicated when using R15-sibs data.\n\nLastly, Field et al. (2016) also used LD Score regression to test for height adaptation in the British while controlling for population structure (Bulik-Sullivan et al., 2015a; Bulik-Sullivan et al., 2015b). While LD Score regression is typically used to estimate genetic covariance between two phenotypes, Field et al. (2016) used it to test for a relationship between height effects and a recent increase in frequency (measured by SDS)\u2014and found a strong covariance of the two consistent with selection driving allele frequency change at height loci.\n\nHere, we reassess these previously reported signals using data from the UK Biobank (UKB) with genotype and phenotype data for nearly 500,000 residents of the United Kingdom (Bycroft et al., 2018). UKB has recently become a key resource for GWAS, thanks to its large sample, the relatively unstructured population (compared to international studies such as GIANT), and the opportunity for researchers to work directly with the genotype data rather than with summary statistics.\n\nThis paper has two aims. First, we will show that previously reported signals of directional selection on height in European populations generally do not replicate when using GWAS effect estimates from the UK Biobank. Similar findings have been obtained independently by other groups working in parallel (Sohail et al., 2019; Uricchio et al., 2019). Second, we will show that both the GIANT and R15-sibs GWAS are confounded due to stratification along the North-South gradient where signals of selection were previously reported. Signals detected using R15-sibs effect estimates were previously used as a significant source of evidence in favor of adaptation by Field et al. (2016), as well as in (Berg et al., 2017). However, the investigators leading the (Robinson et al., 2016) GWAS have now confirmed that the effect size estimates released from their 2015 study were strongly affected by population structure due to a computational bug (Robinson and Visscher, 2018). We include an analysis of the R15-sibs GWAS here to document how these spurious signals affected previous inferences, as well as the evidence that indicated the presence of confounding in the data prior to detection of the bug.\n\nThe conclusion that adaptation signals in GIANT were spurious has broader implications for GWAS analysis, as it indicates that standard approaches for population structure correction may not always be sufficient, and that further study is needed to understand their limitations. While we anticipate that current methods are likely adequate for many applications, in particular for identification and broad-scale localization of strong genotype-phenotype associations\u2014they may be insufficient for applications such as phenotypic prediction and the detection of polygenic adaptation as these can be highly prone to the cumulative bias through uncorrected structure. Such analysis should be undertaken with great care.\n\n## Results\n\n### GWAS datasets\n\nWe downloaded or generated seven different height GWAS datasets, each relying on different subsets of individuals or using different analysis methods. The bold-faced text give the identifiers by which we will refer to each dataset throughout this paper. These include two previous datasets that show strong evidence for polygenic adaptation, as well as an updated version of the R15-sibs dataset released in response to results in the initial preprint version of this manuscript:\n\nGIANT: ($n$\u00a0=\u00a0253 k) 2014 GIANT consortium meta-analysis of 79 separate GWAS for height in individuals of European ancestry, with each study independently controlling for population structure via the inclusion of principal components as covariates (Wood et al., 2014).\n\nR15-sibs: ($n$\u00a0=\u00a035 k) Family-based sib-pair analysis of data from European cohorts (Hemani et al., 2013; Robinson et al., 2015). The effect sizes associated with this paper were publicly released in 2016 (Robinson et al., 2016).\n\nR15-sibs-updated: ($n$\u00a0=\u00a035 k) In November 2018, while this paper was in the final stages of revision, the authors of the R15-sibs data reported that their earlier data release failed to correct properly for structure confounding. They released this corrected dataset as a replacement (Robinson and Visscher, 2018).\n\nWe also considered four different GWAS analyses of the UK Biobank data, using different subsets of individuals and different processing pipelines:\n\nUKB-GB: ($n$\u00a0=\u00a0337 k) Linear regression controlling for 10 principal components of ancestry (unrelated British ancestry individuals only) (Churchhouse and Neale, 2017).\n\nUKB-Eur: ($n$\u00a0=\u00a0459 k) All individuals of European ancestry, including relatives. Structure correction was performed using a Linear Mixed Model (LMM) approach, which controls for genetic stratification effects by modeling the genetic background as a random effect with covariance structure given by the kinship matrix. Mild amounts of environmental stratification are subsumed into this term, and therefore controlled implicitly (Loh et al., 2017).\n\nUKB-GB-NoPCs: ($n$\u00a0=\u00a0337 k) Linear regression without any structure correction\u2014with only genotype, age, sex and sequencing array as covariates (unrelated British ancestry individuals only) [newly calculated by us, see Materials\u00a0and\u00a0methods].\n\nUKB-sibs: ($n$\u00a0=\u00a035 k) Family-based sib-pair analysis [newly calculated by us, see Materials and methods].\n\nTo understand the extent to which these different datasets capture a shared signal, we treated each set of summary statistics as if it were derived from a GWAS of a different phenotype and estimated the genetic correlation between them using bivariate LD Score regression (Bulik-Sullivan et al., 2015a). We find that all of these studies show high pairwise genetic correlations , consistent with the view that all of them estimate a largely-similar genetic basis of height (Table 2).\n\n**Table 2.**\n Pairwise genetic correlations between GWAS datasets.Genetic correlation estimates (lower triangle) and their standard errors (upper triangle) between each of the height datasets, estimated using LD Score regression (Bulik-Sullivan et al., 2015a). All trait pairs show a strong genetic correlation, as expected for different studies of the same trait.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Giant</th>\n      <th>R15-sibs</th>\n      <th>UKB-Eur</th>\n      <th>UKB-GB-NoPCs</th>\n      <th>Ukb-gb</th>\n      <th>UKB-sibs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>(0.04)</td>\n      <td>(0.01)</td>\n      <td>(0.01)</td>\n      <td>(0.01)</td>\n      <td>(0.05)</td>\n      <td>GIANT</td>\n    </tr>\n    <tr>\n      <td>0.98</td>\n      <td></td>\n      <td>(0.04)</td>\n      <td>(0.04)</td>\n      <td>(0.05)</td>\n      <td>(0.08)</td>\n      <td>R15-sibs</td>\n    </tr>\n    <tr>\n      <td>1.03</td>\n      <td>0.87</td>\n      <td></td>\n      <td>(0.004)</td>\n      <td>(0.004)</td>\n      <td>(0.05)</td>\n      <td>UKB-Eur</td>\n    </tr>\n    <tr>\n      <td>1.01</td>\n      <td>0.82</td>\n      <td>1.00</td>\n      <td></td>\n      <td>(0.002)</td>\n      <td>(0.05)</td>\n      <td>UKB-GB-NoPCs</td>\n    </tr>\n    <tr>\n      <td>1.03</td>\n      <td>0.89</td>\n      <td>1.02</td>\n      <td>1.00</td>\n      <td></td>\n      <td>(0.05)</td>\n      <td>UKB-GB</td>\n    </tr>\n    <tr>\n      <td>1.02</td>\n      <td>0.93</td>\n      <td>1.06</td>\n      <td>1.02</td>\n      <td>1.06</td>\n      <td></td>\n      <td>UKB-sibs</td>\n    </tr>\n  </tbody>\n</table>\n\n### Signal of selection across Eurasia\n\nOne well-studied signal of adaptation of height in Europe has been the observation that, among height-associated SNPs, the \u2018tall\u2019 alleles tend to be at higher frequencies in northern populations. Equivalently, the average polygenic scores of individuals in northern populations tend to be higher than individuals in southern populations. To evaluate this signal for each dataset, we independently ascertained the SNP with the smallest p-value within each of 1700 approximately independent LD blocks (Berisa and Pickrell, 2016; Berg et al., 2017) (subject to the constraint that MAF $>$ 0.05 within the GBR 1000 Genomes population). We used these loci to calculate average polygenic scores for each of a set of European population samples taken from the 1000 Genomes and Human Origins panels (Lazaridis et al., 2014; 1000 Genomes Project Consortium et al., 2015) (see Materials and methods for statistical details).\n\nAs expected, we find highly significant latitudinal gradients in both the GIANT and R15-sibs data. However, this signal does not replicate in any of the four UK Biobank datasets (Figure 1, top row), or in the R15-sibs-updated dataset (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig1-v2.jpg)\n\n**Figure 1.:** The top row shows European populations from the combined 1000 Genomes plus Human Origins panel, plotted against latitude, while the bottom row shows all Eurasian populations from the same combined dataset, plotted against longitude.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Top Panel: European polygenic scores computed from 1700 smallest p-value SNPs across approximately independent linkage blocks in the R15-sibs-updated dataset, plotted against latitude. Bottom Panel: Eurasian polygenic scores from the same SNP set, plotted against longitude.\n\nWe also tested whether the polygenic scores are over-dispersed compared to a neutral model, without requiring any relationship with latitude (the $Q_{X}$ test from Berg and Coop, 2014). Here we find a similar pattern: we strongly reject neutrality using both the GIANT and R15-sibs datasets, but see little evidence against neutrality among the UK Biobank datasets, or the R15-sibs-updated dataset (Figure 1). The sole exception is for the UKB-GB dataset, though the rejection of neutrality in this dataset is marginal compared to that observed with GIANT and R15-sibs, and it does not align with latitude.\n\nWhile most studies have focused on a latitudinal cline in Europe, a preprint by Berg et al. (2017) also recently reported a cline of polygenic scores decreasing from west to east across all of Eurasia. Extending this analysis across all six datasets, we observe similarly inconsistent signals (Figure 1, bottom row). Only the GIANT dataset shows the clear longitudinal signal reported by Berg et al. (2017), though the R15-sibs dataset is again strongly over-dispersed in general, and retains some of the longitudinal signal. Interestingly, we find a weakly significant relationship between longitude and polygenic score in the UKB-Eur dataset (though not in the other UKB datasets), suggesting there may be systematic differences between the results based on British-only and pan-European samples, even when state of the art corrections for population structure are applied.\n\nWe also experimented with a larger number of SNPs using a procedure similar to Robinson et al. (2015) (Appendix 1). We found that in some cases this led to significant values of $Q_{X}$ when using UKB-GB effect sizes to ascertain SNPs. However, this signal was sensitive to the particular method of ascertainment, and seems to be diffuse (i.e. spread out across all axes of population structure, Appendix 1\u2013figure 6), with part of the signal coming from closely linked SNPs. Thus we conclude that this signal is not robust and may, at least partially, arise from a violation of the assumption of independence among SNPs that underlies our neutral model. We also tested different frequency, effect size and probability-of-association cutoffs to determine which SNPs we included in the computation of the scores, but found none of these cutoffs affected the discrepancy observed between the GIANT and UKB-GB datasets (Appendix 2).\n\n### SDS signal of selection in Britain\n\nWe next evaluated the Singleton Density Score (SDS) signal of selection for increased height in the British population, previously reported by Field et al. (2016). SDS estimates recent changes in allele frequencies at each SNP within a population by comparing the distances to the nearest singleton variants linked to each of the focal SNP\u2019s alleles. (Field et al., 2016) applied SDS calculated across the UK10K sample (UK10K Consortium, 2015) to investigate allele frequency changes in the ancestors of modern British individuals. SDS can be polarized according to the sign of a GWAS effect at each SNP\u2013this is denoted trait-SDS, or tSDS. Here, tSDS\u00a0$>$\u00a00 indicates that a height-increasing allele has risen in frequency in the recent past; tSDS\u00a0$<$\u00a00 correspondingly indicates a decrease in frequency of the height-increasing allele. A systematic pattern of tSDS\u00a0$>$\u00a00 is consistent with directional selection for increased height.\n\nUsing both GIANT and R15-sibs, Field et al. (2016) found a genome-wide pattern of positive tSDS, indicating that on average, height-increasing alleles have increased in frequency in the last \u223c75 generations. tSDS also showed a steady increase with the significance of a SNP\u2019s association with height. We replicate these trends in Figure 2A,B.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013F) Each point shows the average tSDS (SDS polarized to height-increasing allele) of 1000 consecutive SNPs in the ordered list of GWAS p-values. Positive values of tSDS are taken as evidence for selection for increased height, and a global monotonic increase\u2014as seen in panels A and B\u2014suggests highly polygenic selection. (G\u2013L) tSDS distribution for the most significant SNPs in each GWAS, thinned according to LD to represent approximately independent signals. Dashed vertical lines show tSDS\u00a0=\u00a00, as expected under the neutral null; solid vertical lines show mean tSDS. A significantly positive mean value of tSDS suggests selection for increased height.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Top Panel: SNPs are sorted by p-value in the R15-sibs-updated dataset and then average tSDS is calculated within bins of 1,000 SNPs. Bottom Panel: The distribution of tSDS for 1700 smallest p-value SNPs across approximately independent linkage blocks in the R15-sibs-updated dataset.\n\nThis tSDS trend is greatly attenuated in all four GWAS versions performed on the UK Biobank sample (Figure 2C\u2013F), as well as the R15-sibs-updated dataset (Figure 2\u2014figure supplement 1). The correlation between UKB-GB GWAS p-value and tSDS is weak (Spearman $\u03c1=0.009$, block-jackknife $p=0.04$). This correlation is stronger for the UKB-Eur GWAS ($\u03c1=0.018$, $p=5\\times10^{\u22127}$). Since the UKB-Eur GWAS is not limited to British individuals\u2014but instead includes all European ancestry individuals\u2014this might suggest that residual European population structure continues to confound UKB-Eur effect estimates, despite the use of LMM correction for structure, similar to the longitudinal signal detected above for this same dataset (Figure 1).\n\nWe wondered whether the main reason for the weakened trend in UKB-GB is an overly conservative PC-correction. This could occur if the genetic contribution to height is highly correlated with population structure axes. If this were the case, we would expect the correlation between GWAS p-value and tSDS to still be observed in a UKB GWAS without population structure correction (namely, in UKB-GB-NoPCs). However, we see no evidence for this correlation (block jackknife p\u00a0=\u00a00.6). Taken together with the UKB-GB-NoPCs polygenic score analysis (Figure 1), the lack of signal in UKB-GB-NoPCs suggests that the main reason that UKB is less confounded by population structure than GIANT is the relatively-homogeneous ancestry of the UKB British sample\u2014rather than differences in GWAS correction procedures.\n\nLastly, we examined tSDS at the most significant height-associated SNPs of each UKB GWAS (as before, ascertained in approximately-independent LD blocks). Significant SNPs show a positive average tSDS (Figure 2I,K,L; t-test p\u00a0$<$\u00a00.05)\u2014with the exception of the UKB-GB-NoPCs GWAS (Figure 2J) in which the average tSDS is not significantly different from zero (t-test p\u00a0=\u00a00.6).\n\n### Relationship between GWAS estimates and European population structure\n\nWe have now shown that signals of polygenic adaptation of height are greatly reduced in the UKB data relative to the GIANT and R15-sibs datasets. To better understand the differences among the datasets, we ascertained 1,652 approximately-independent lead SNPs based on the GIANT p-values to form the basis of comparison between the GIANT and UKB-GB datasets.\n\nFigure 3A shows the effect sizes of ancestral alleles, as estimated using GIANT (x-axis) and UKB-GB (y-axis). The two datasets are highly correlated ($r^{2}=0.78$, $p<2.2\\times10^{\u221216}$), consistent with the strong genetic correlation estimated in Table 2. The fact that the slope is $<1$ probably reflects, at least in part, the standard winner\u2019s curse effect for SNPs ascertained in one study and replicated in another.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig3-v2.jpg)\n\n**Figure 3.:** Top Row: SNPs ascertained using GIANT compared with UKB-GB. (A) The x- and y-axes show the estimated effect sizes of SNPs in GIANT and in UKB-GB. Note that the signals are highly correlated overall, indicating that these partially capture a shared signal (presumably true effects of these SNPs on height). (B) The x-axis shows the difference in ancestral allele frequency for each SNP between 1000 Genomes GBR and TSI; the y-axis shows the difference in effect size as estimated by GIANT and UKB-GB. These two variables are significantly correlated, indicating that a component of the difference between GIANT and UKB-GB is related to the major axis of population structure across Europe. Bottom Row: SNPs ascertained using R15-sibs compared with UKB-GB. (C) The same plot as panel (A), but ascertaining with and plotting R15-sibs effect sizes rather than GIANT. Here, the correlation between effect size estimates of the two studies is reduced relative to panel A\u2013likely due to the lower power of the R15-sibs study compared to GIANT (D). Similarly, the same as (B), but with the R15-sibs ascertainment and effect sizes.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) SNPs are ascertained using GIANT, and the difference in effect sizes between GIANT and UKB-GB is plotted against the difference in frequency between the TSI and CHB 1000 Genomes population samples. These variables exhibit a highly significant correlation ($r^{2}=0.04$, $p=1.43\\times10^{\u221215}$). (B) SNPs are ascertained using UKB-GB, and the difference in effect sizes between GIANT and UKB-GB is again plotted against the difference in frequency between the TSI and CHB 1000 Genomes population samples. In this case, there is no significant correlation ($r^{2}=1.8\\times10^{\u22124}$, $p=0.26$).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Each panel in this figure shows the same comparisons as Figure 3, except that SNPs have been ascertained with UKB-GB p-values, rather than those of GIANT or R15-sibs. Note that in both cases, the correlation between the difference in effect sizes and the GBR-TSI allele frequency difference is substantially reduced in both cases.\n\nImportantly however, we also see clear evidence that the differences between the GIANT and UKB-GB effect sizes are correlated with European population structure (Figure 3B). Specifically, for each SNP we plotted the difference in effect size between GIANT and UKB-GB against the difference in allele frequency between northern and southern European samples (specifically, between the British (GBR) and Tuscan (TSI) subsets of 1000 Genomes) . These differences have a significant correlation ($r^{2}=0.06$, $p<2.2\\times10^{\u221216}$), indicating that alleles that are more frequent in GBR, compared to TSI, tend to have more positive effect sizes in GIANT than in UKB-GB, and vice versa. We also observed a similar signal for frequency differences between TSI and the Han Chinese in Beijing (CHB, Figure 3\u2014figure supplement 1), suggesting that longitudinal patterns observed by Berg et al. (2017) were also likely driven by incompletely controlled stratification in GIANT.\n\nSimilar patterns are present in a comparison of the R15-sibs and UKB-GB datasets when ascertaining from R15-sibs p-values (Figure 3, panels C and D; 1,642 SNPs). Here, the correlation between effect size estimates is much lower ($r^{2}=0.14$, $p<2.2\\times10^{\u221216}$), likely due to the much smaller sample size of R15-sibs, and therefore elevated winner\u2019s curse effects. However, the correlation between the effect-size difference and the GBR-TSI allele frequency difference remains ($r^{2}=0.07$, $p<2.2\\times10^{\u221216}$). In contrast, when SNPs are ascertained on the basis of their UKB-GB p-value, these patterns are considerably weaker in both the GIANT and R15-sibs datasets (Figure 3\u2014figure supplement 2).\n\nFinally, an unexpected feature of the R15-sibs dataset can be seen in Figure 3D: there is a strong skew for the ancestral allele to be associated with increased height (1,201 out of the 1,642 SNPs ascertained with R15-sibs p-values have positive effect sizes in R15-sibs). This pattern is not present in the R15-sibs-updated dataset (851 out of 1,699 SNPs with positive effects), or any other dataset we analyzed, suggesting that it is likely a result of the failure to control for population structure.\n\nTogether, these observations suggest that while all of the datasets primarily capture real signals of association with height, both the GIANT and R15-sibs effect size estimates suffer from confounding along major axes of variation in Europe and Eurasia. This could drive false positive signals in geographic-based analyses of polygenic adaptation. Furthermore, since SDS measured in Britain correlates with north-south frequency differences (Field et al., 2016), this could also drive false positives for SDS.\n\nTo explore this further, we next turn to an analysis of the datasets based on LD Score regression.\n\n### LD Score regression signal\n\nAnother line of evidence from Field et al. (2016) came from LD Score regression (Bulik-Sullivan et al., 2015a; Bulik-Sullivan et al., 2015b). LD Score regression applies the principle that, under a polygenic model, SNPs in regions of stronger LD (quantified by\u00a0a\u00a0SNP's \u2018LD Score\u2019) should tag more causal variants and therefore have larger squared effect size estimates. Similarly, if two traits share a genetic basis, then the correlation between estimated effect sizes of these traits should increase with LD Score. Meanwhile, confounders such as population structure are argued to affect SNPs of different LD Score equally, and therefore affect the intercept but not the slope of a linear regression to LD Score (we return to this point below; Bulik-Sullivan et al., 2015b).\n\nWhile LD Score regression is commonly used to estimate the genetic covariance between pairs of phenotypes (Bulik-Sullivan et al., 2015a), Field et al. (2016) used it to test for a relationship between height and SDS. SDS is similar to GWAS effect estimates in that the expected change in frequency of an allele depends on both direct selection it experiences due to its own fitness effect as well as correlated selection due to the effects of those in linkage disequilibrium with it. Field et al. (2016) predicted that the covariance between estimated marginal height effect and SDS should increase with LD Score\u2014and found this to be the case using both GIANT and R15-sibs. This provided further evidence for polygenic adaptation for increased stature in Britain.\n\nHere, we revisit Field et al. (2016)\u2019s observations (Figure 4A,B). Both GIANT and R15-sibs exhibit a highly significant LD Score regression slope (scaled GIANT slope\u00a0$=0.17$, $p=5\\times10^{-9}$; scaled R15-sibs slope\u00a0$=0.46$, $p=7\\times10^{\u221217}$), as well as a highly significant intercept (GIANT intercept\u00a0$=0.093$, $p=4\\times10^{\u221271}$; R15-sibs intercept\u00a0$=0.119$, $p=2\\times10^{\u221287}$). These large intercepts suggest that both GWAS suffer from stratification along an axis of population structure that is correlated with SDS in the British population. In contrast, in LD Score regression with the UKB-GB GWAS, the intercept is not significant ($p=0.10$), suggesting that UKB-GB is not strongly stratified (or at least, not along an axis that correlates with SDS). The slope is \u223c1/3 as large as in GIANT, though still modestly significant ($p=1.2\\times10^{\u22122}$, Figure 4C). There is no significant slope ($p=0.389$) or intercept ($p=0.405$) in R15-sibs-updated (Figure 4\u2014figure supplement 1B), and analyses of other UKB datasets give similar results to those for UKB-GB (Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig4-v2.jpg)\n\n**Figure 4.:** (A), (B), and (C) LD Score covariance analysis of SDS with GIANT, R15-sibs, and UKB-GB, respectively. The x-axis of each plot shows LD Score, and the y-axis shows the average value of the product of effect size on height and SDS, for all SNPs in a bin. Genetic correlation estimates are a function of slope, reference LD Scores, and the sample size Bulik-Sullivan et al. (2015a). Both the slope and intercept are substantially attenuated in UKB-GB. (D), (E) and (F) Genetic covariance between GBR-TSI frequency differences vs. GIANT, R15-sibs, and UKB-GB. GIANT and R15-sibs show highly significant nonzero intercepts, consistent with a signal of population structure in both datasets, while UKB-GB does not. In addition, R15-sibs shows a significant slope with LD Score.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The \u2018genetic correlation\u2019 estimates of the difference in allele frequency between GBR and TSI from 1000 Genomes versus the R15-sibs-updated dataset. (B) The \u2018genetic correlation\u2019 estimates of SDS versus the R15-sibs-updated dataset.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Bivariate LD Score analyses of SDS with each of the height datasets.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** GIANT and R15-sibs show highly significant intercepts. The \u2018genetic correlation\u2019 estimates of the difference in allele frequency between GBR and TSI from 1000 Genomes versus each of the height traits under study.\n\n### LD Score regression of population frequency differences\n\nWe next extended Field et al.\u2019s LD Score rationale from SDS to test whether SNP effects on height affected allele frequency differentiation between northern and southern Europe. We used 1000 Genomes British (GBR) and Tuscan (TSI) samples as proxies for northern and southern ancestry respectively. To control for the correlation between allele frequencies and LD Score, we normalized the frequency differences to have variance 1 within 1% average minor allele frequency bins. For shorthand, we refer to this measure as [GBR-TSI]. Under a model of selection driving allele frequency differences, we would expect the covariance of [GBR-TSI] and effect sizes to increase with LD Score. To test this, we regressed the product [GBR-TSI] $\\times$ effect size (estimated in previous and UKB GWAS) against LD Score.\n\nIn contrast to SDS, we find that none of the GWAS datasets show a strongly positive slope (Figure 4D\u2013F): the slope is approximately zero in GIANT, weakly positive in R15-sibs ($p=0.002$), and weakly negative in UKB-GB ($p=0.09$) Results were similar for the other UKB datasets (Figure 4\u2014figure supplement 3), and for R15-sibs-updated (Figure 4\u2014figure supplement 1A). We see extremely strong evidence for positive intercepts in GIANT (p\u00a0=\u00a04$\\times10^{-80}$) and R15-sibs (p\u00a0=\u00a09$\\times10^{\u2212161}$), but not in UKB-GB ($p=0.05$), R15-sibs-updated ($p=0.848$) or the other UKB datasets. The large intercepts in GIANT and R15-sibs are consistent with stratification affecting both of these GWAS, as the North-South allele frequency difference is systematically correlated with the effect sizes in these GWAS independently of LD Score (see the Materials and methods for a more technical discussion). However, the relative lack of slope in these analyses suggests that the LD Score signal for SDS must be driven by a component of frequency change that is largely uncorrelated with the [GBR-TSI] axis of variation.\n\n### Population structure confounds LD Score regression slope\n\nThe original LD Score regression paper noted that in the presence of linked selection, allele frequency differentiation might plausibly increase with LD Score. However, they concluded that this effect was negligible in the examples they considered (Bulik-Sullivan et al., 2015b), and subsequent applications of the LD Score regression approach have generally assumed that the two are independent. We find that in bivariate LD Score analyses of SDS, both the intercept and the slope differ significantly from zero for precisely the same GWAS datasets that show evidence of stratification (GIANT and R15-sibs), while both the slope and intercept are much reduced in all of the UK Biobank datasets. This suggests that the LD Score regression slope may not be as robust to stratification as hoped, prompting us to revisit the assumption of independence.\n\nWe find that the squared allele frequency difference [GBR-TSI]2 is significantly correlated with LD Score ($p=2.5\\times10^{-5}$, Figure 5A), as are squared allele frequency contrasts for much lower levels of differentiation (i.e. between self-identified \u2018Irish\u2019 and \u2018White British\u2019 individuals in the UK Biobank ($p=2.5\\times10^{-7}$, Figure 5\u2014figure supplement 1), and SDS2 ($p=2.9\\times10^{-42}$, Figure 5B). Strikingly, squared measures of more recent allele frequency change (i.e. SDS2 and the squared Irish vs. White British contrast) are much more tightly correlated with LD Score than that of more diverged populations [GBR-TSI]2, suggesting that the LD Score regression slope may be equally vulnerable to stratification involving closely related populations than for those that are more distantly related. Finally, the product [GBR-TSI] $\\times$ SDS is also correlated with LD Score (Figure 5C), demonstrating that the general signal of greater allele frequency change in regions of stronger LD is also shared between [GBR-TSI] and SDS.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig5-v2.jpg)\n\n**Figure 5.:** (A), (B) and (C) Magnitude of squared GBR-TSI allele frequency differences, squared SDS effect sizes, and the product of allele frequency and SDS increase with LD Score. Both SDS and GBR-TSI frequency difference are standardized and normalized within 1% minor allele frequency bins..\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39725/elife-39725-fig5-figsupp1-v2.jpg)\n\n### Background selection and LD Score\n\nAs noted above, the correlation we observe between allele frequency differentiation and LD Score could be generated by the genome-wide effects of linked selection. While a range of different modes of linked selection likely act in humans, one of the simplest is background selection (Charlesworth et al., 1993; Charlesworth, 1998; McVicker et al., 2009). Background selection (BGS) on neutral polymorphisms results from the purging of linked, strongly deleterious alleles. Because any neutral allele that is in strong LD with a deleterious mutation will also be purged from the population, the primary effect of BGS is a reduction in the number of chromosomes that contribute descendants in the next generation. The impact of BGS can therefore be approximately thought of as increasing the rate of genetic drift in genomic regions of strong LD relative to regions of weak LD. Therefore, SNPs with larger LD Scores will experience stronger BGS and a higher rate of genetic drift, and this effect could generate a positive relationship between LD Scores and allele frequency differentiation.\n\nIn Appendix 3, we derive a simple model for the effect of BGS on the relationship between allele frequency divergence and LD Scores. Empirically, we find that LD Scores are positively correlated with the strength of background selection (Appendix 3\u2014figure 1) (McVicker et al., 2009), and that our simple model of background selection is capable of explaining much of the relationship between LD Score and allele frequency divergence that we observe in Figure 5 (Appendix 3\u2014figures 1\u20133). Further, in the presence of BGS, bivariate regression of a stratified GWAS together with a measure of allele frequency differentiation can result in a positive slope, provided that the axis of stratification is correlated with the chosen measure of allele frequency divergence (Appendix 3).\n\n### Summary of LD Score regression results\n\nWhat conclusions should we draw from our LD Score regression analyses? The significant positive intercepts observed for LD Score regression of both GIANT and R15-sibs with [GBR-TSI] suggest that both datasets suffer from confounding due to stratification along a north-to-south axis within Europe. These observations are consistent with the evidence presented in Figure 3. A positive slope in such analyses was previously interpreted as evidence of positive selection either on height or a close genetic correlate (and presumed to be robust to stratification). However, BGS can, and empirically does, violate the assumptions of LD Score regression in a way that may generate a positive slope. We therefore interpret the positive slopes observed for the LD Score regression signals for GIANT and R15-sibs with SDS as likely resulting from a combination of stratification and BGS. A similar conclusion applies to the positive slope observed for R15-sibs $\\times$ [GBR-TSI]. It is unclear why stratification plus BGS should have elevated the slope for GIANT $\\times$ SDS, but not for GIANT $\\times$ [GBR-TSI]. This may suggest that the apparent SDS selection signal found in GIANT may be driven by an axis of variation that is not strongly correlated with [GBR-TSI]. We view this as an area worthy of further exploration.\n\n## Discussion\n\nTo summarize the key observations, we have reported the following:\n\nIn principle, it is possible that height in the UKB is confounded in a way that suppresses the signal of height adaptation. Instead, multiple lines of evidence strongly suggest that population-structure confounding in GIANT and R15-sibs is the main driver of the discrepancy with UKB-based analyses.\n\nThe sib design used by Robinson et al offered a strong independent replication of the polygenic adaptation signal, which should have been impervious to population structure concerns. However, our analyses highlight multiple signs of stratification in this study. Robinson et al have now confirmed (as of November 2018) that effect sizes they released from their 2015 study were strongly affected by population stratification due to a bug. Furthermore, they have now stated that the effect sizes that they released publicly in 2016 were not the effect sizes used in their 2015 paper. As part of our own investigation, we have independently confirmed that sib-studies conducted using PLINK v1.90b5 are robust to environmental stratification (Appendix 4\u2013figure 1). Our analyses using the newly rerun effect sizes released by Robinson and Visscher, 2018 show no consistent signal of selection (Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1. and Figure 4\u2014figure supplement 1), in line with our UKB-based analyses.\n\nGIANT was conducted as a collaboration among a large number of research groups that provided summary statistics to the overall consortium. While the overall value of this pioneering dataset is not in question, it would not be surprising in retrospect if this GWAS were impacted by residual stratification along major axes of population structure.\n\nLastly, we must conclude that the strong signal of LD Score genetic covariance between SDS and both GIANT and R15-sibs is largely spurious. This would imply that the LD Score regression slope is not robust to population structure confounding. Specifically, we demonstrated that background selection\u2014through its correlation with LD Score\u2014can potentially generate a spurious LD Score regression slope.\n\nTaken together, these observations lead us to conclude that what once appeared an ironclad example of population genetic evidence for polygenic adaptation now lacks any strong support. That said, there is still strong evidence that typical GWAS, including GIANT, do capture genuine signals of genotype-phenotype associations. For example, GWAS datasets regularly show strong functional enrichments of heritability within active chromatin from trait-relevant tissues (Finucane et al., 2015), and the observation that top SNPs identified in GIANT tend to replicate in UKB-GB (Figure 3A), together with the high genetic correlations among all of the datasets (Table 2), suggest that the vast majority of the signal captured by GIANT is real.\n\nNonetheless, we have shown that GIANT effect-size estimates contain a component arising from stratification along a major axis of European population structure (Figure 3B), and one would like to know the extent to which the conclusions from other analyses of GIANT, or other GWAS, may be affected. A complete investigation of this is beyond the scope of this study, and will depend on the nature of the analyses performed. The problem is likely most acute for the analysis of polygenic scores in samples drawn from heterogeneous ancestry. This is because while the bias in detection and effect sizes at any individual locus is small, the systematic nature of biases across many loci compound to significant errors at the level of polygenic scores. This error substantially inflates the proportion of the variance in polygenic scores that is among populations. Individual level prediction efforts therefore suffer dramatically from stratification bias, as even small differences in ancestry will be inadvertently translated into large differences in predicted phenotype (Kerminen et al., 2018). This seems likely to remain a difficult complication even within datasets such as the UK Biobank, though we suspect that meta-analyses such as GIANT, which collate summary statistics from many sources, may be particularly sensitive to structure confounding.\n\nThese issues are apparent even within our UK Biobank results, where we see marked differences between results based on UKB-GB and UKB-Eur (Figure 2C,I vs. D, J and Figure 4\u2014figure supplement 3). The study subjects in the two datasets were largely overlapping, and both were computed using widely-accepted structure-correction methods, suggesting that in the more demanding setting of broad European ancestry variation, the linear mixed model approach did not provide complete protection against stratification. This highlights a need for renewed exploration of the robustness of these methods, especially in the context of polygenic prediction.\n\nThe study of polygenic scores across ancestry and environmental gradients offers a range of promises and pitfalls (Berg and Coop, 2014; Novembre and Barton, 2018). Looking forward, we recommend that studies of polygenic adaptation should focus on datasets that minimize population structure (such as subsets of UKB), and where the investigators have access to full genotype data, including family data, so that they can explore sensitivity to different datasets and analysis pipelines.\n\n## Materials and methods\n\n### Newly calculated GWAS\n\nFigure 1 and Figure 2 display analyses based on six different GWAS. Two of these GWAS were newly calculated by us using UK Biobank data. Below, we describe the specifics of these two GWAS.\n\n#### UKB-GB-NoPCs\n\nTo preform this GWAS, we used the following plink v. 2.0 (Purcell et al., 2007) with command line as follows:\n\nThe covariates file included only the sex, age and sequencing array for each individual id. We filtered all A$\u2194$G or C$\u2194$T SNPs\u2013to prevent the possibility of strand errors. Finally, we excluded SNPs for which SDS was not calculated in Field et al. (2016).\n\n#### UKB-sibs\n\nWe used the estimated kinship coefficient ($\u03d5$) and the proportion of SNPs for which the individuals share no allele (IBS0) provided by the UK Biobank, to call siblings as pairs with\n\n$$\n\\frac{1}{2^{5/2}}<\u03d5<\\frac{1}{2^{3/2}}\n$$\n\nand IBS0 $>0.0012$\u2014following the conditions used by Bycroft et al. (2018). We further filtered sibling pairs such that both individuals were \u2018White British\u2019, their reported sex matched their inferred sex, were not identified by the UK Biobank as \u2018outliers\u2019 based on heterozygosity and missing rate nor had an excessive number relatives in the data, and had height measurements. We standardized height values for each sex based on its mean and standard deviation (SD) values in the sample of 336,810 unrelated British ancestry individuals: mean 175.9 cm and SD 6.7 cm for males, and mean 162.7 cm and SD 6.2 cm for females. We also removed pairs if one of the siblings was more than 5 SD away from the mean. After applying all filters, 19,268 sibling pairs remained, equaling 35,524 individuals in 17,275 families. We performed an association analysis on 10,879,183 biallelic SNPs included in UKB-GB (converting dosages from imputation to genotype calls using no hard calling threshold), using plink v. 1.9 (Purcell et al., 2007) QFAM procedure with the following command:\n\nThe family relationships, as well as the phenotypic values, were encoded in plink FAM files.\n\n#### GBR-TSI allele frequency differences\n\nIndividuals from the GBR and TSI populations from 1000G Phase 3 (N\u00a0=\u00a0189) (1000 Genomes Project Consortium et al., 2015) were assigned binary phenotype labels and a $\u03c7^{2}$ test was run using plink (Purcell et al., 2007) with a Hardy-Weinberg equilibrium cutoff of 1e-6 (--hwe 1e-6) and missing genotype rate of 0.05 (--geno 0.05), but otherwise with default parameters. Additionally, a firth adjusted logistic regression (Firth, 1993) was run and produced qualitatively similar results (data not shown).\n\n#### IRL-GBR allele frequency differences\n\nUnrelated individuals, defined using estimates from KING (Manichaikul et al., 2010), who self-identified as White British or White Irish in the UK Biobank were compared with distinct phenotype labels. Logistic regression (Hill et al., 2017) was run on the genotyped SNP set using plink2 (Chang et al., 2015) with a Hardy-Weinberg equilibrium cutoff of 1e-6 (--hwe 1e-6) and missing genotype rate of 0.05 (--geno 0.05).\n\n### Polygenic score analyses\n\n#### Population genetic datasets\n\n1000 Genomes Phase 3 VCF files were downloaded from the 1000 Genomes website, and VCF files for the Human Origins dataset were downloaded from the \u2018Affymetrix Human Origins fully public dataset\u2019 link on the Reich lab website and subsequently imputed to full genomes using the Michigan imputation server (Das et al., 2016). Because the Human Origins panel includes some 1000 Genomes populations, individual IDs were compared between the two datasets, and any duplicates were removed from the Human Origins dataset. Individuals were then clustered into populations based on groupings provided by each data resource, and allele frequencies were calculated using VCFtools version 0.1.15.\n\n#### Neutrality tests\n\nIn Figure 1, we employ two separate tests to assess the evidence that the distribution of polygenic scores among populations is driven in part by adaptive divergence. Both are based on a simple null model introduced by Berg and Coop (2014), which states that the distribution of polygenic scores under neutrality should be approximately multivariate normal. Here, we give a brief overview of the assumptions and calculations underlying the null model, before describing the two tests used in Figure 1. For a more complete treatment, see Berg and Coop (2014).\n\nLet $p\u2192_{\u2113}$ be the vector of population allele frequencies at SNP $\u2113$, while $\\alpha_{\u2113}$ is the effect size for SNP $\u2113\\in{1,\u2026,L}$. Then, population level polygenic scores are given by\n\n$$\nZ\u2192=2\u2062\\sum\u2113\\alpha_{\u2113}\u2062p\u2192_{\u2113}.\n$$\n\nUnder neutrality, the distribution of polygenic scores among populations should be approximately\n\n$$\nZ\u2192\u223cMVN(\\mu1\u2192,2V_{A}F)\n$$\n\nwhere\n\n$$\n\\mu=2\\sum\u2113\\alpha_{\u2113}\u03f5_{\u2113}\n$$\n\n\n\n$$\nV_{A}=2\\sum\u2113\\alpha_{\u2113}^{2}\u03f5_{\u2113}(1\u2212\u03f5_{\u2113})\n$$\n\nwhere $\u03f5_{\u2113}$ is the mean of $p\u2192_{\u2113}$ across populations. The matrix $\ud835\udc05$ gives the population level co-ancestry among populations. Here, we calculate the matrix $\ud835\udc05$ directly from the same set of SNPs used to calculate polygenic scores, which is a conservative procedure. Concretely, let\n\n$$\nx\u2192_{\u2113}=\\frac{p\u2192_{\u2113}-\u03f5_{\u2113}}{\\sqrt{\u03f5_{\u2113}\u2062(1-\u03f5_{\u2113})}}.\n$$\n\nThen, if $\ud835\udc17$ is a matrix with the $x\u2192_{\u2113}$ as columns, we have\n\n$$\n\ud835\udc05=\\frac{1}{L-1}\u2062\ud835\udc17\ud835\udc17^{T}.\n$$\n\nNow, based on this null model, we perform two separate neutrality tests. One is a general over-dispersion test (i.e. the '$Q_{X}$ test\u2019 from Berg and Coop, 2014), for which the test statistic is\n\n$$\nQ_{X}=\\frac{(Z\u2192-\\mu)^{T}\u2062\ud835\udc05^{-1}\u2062(Z\u2192-\\mu)}{2\u2062V_{A}}.\n$$\n\nFor $M$ populations, this statistic is expected to have a $\u03c7_{M-1}^{2}$ distribution under the multivariate normal null model (Equation 2). An unusually large value of $Q_{X}$ indicates that the neutral null model is a poor fit, and is therefore taken as evidence in favor of selection.\n\nWe also apply a second, more specific test, to test for evidence of a correlation with a specific geographic axis that is unusually strong compared to the neutral expectation. For any vector $Y\u2192$, if $Z\u2192$ has a multivariate normal distribution given by Equation 2, then\n\n$$\nY\u2192^{T}Z\u2192\u223cN(\\muY\u2192^{T}1\u2192,2V_{A}Y\u2192^{T}FY\u2192)\n$$\n\nand therefore\n\n$$\n(\\frac{Y\u2192^{T}Z\u2192\u2212\\muY\u2192^{T}1\u2192}{2V_{A}Y\u2192^{T}FY\u2192})^{2}\u223c\u03c7_{1}^{2}\n$$\n\nunder the multivariate normal null. This fact can be used to test for an unexpectedly strong association between polygenic scores and a geographic axis by choosing $Y\u2192$ to be the vector of latitudes or longitude across populations.\n\n### tSDS vs. GWAS significance\n\n#### Polarizing SDS into tSDS\n\nTo analyze tSDS as a function of GWAS p-value, we first divided SNPs into 5% minor allele frequency bins. We standardized SDS values\u2014subtracted the mean and divided by the standard deviation\u2014within each bin. While SDS values were already standardized in a similar manner by Field et al. (2016), we re-standardized SDS because the post-filtering composition of SNPs after in each GWAS was variable across GWAS. We then assigned tSDS values to each SNP by polarizing SDS to the tall allele. In other words, we set\n\n$$\ntSDS:={SDS,{derived} = {tall}\u2212SDS,otherwise\n$$\n\nwhere derived is the derived allele in UK10K (by which SDS was polarized in Field et al., 2016), and tall is the height increasing allele in the GWAS. We only used sites for which SDS values are available. Notably, this implicitly means that sites with minor allele frequency lower than 5% in UK10K were filtered out, due to the filtering used in Field et al. (2016).\n\n#### Assessing significance of the correlation between GWAS p-value and tSDS\n\nFigure 2 illustrates the correlation between tSDS and GWAS p-value (p-value for the strength of association with height). We assessed the significance of the correlation between the two while accounting for LD between SNPs. To do this, we used a blocked-jackknife approach (Kunsch, 1989; Busing et al., 1999) to estimate the standard error of our Spearman correlation point estimate, $\u03c1^$. For each GWAS, SNPs were assigned to one of b\u00a0=\u00a0200 contiguous blocks based on concatenated genomic coordinates. tSDS values should not be correlated across such large blocks. For each block $i$, we computed the Spearman correlation in the $i$\u2019th jackknife sample, $\u03c1^_{(-i)}^{b}$\u2014that\u00a0is the Spearman correlation across all SNPs but the SNPs in block $i$. We then estimated the standard error of the point Spearman estimate by $\\sigma^$, where\n\n$$\n\\sigma^^{2}=\\frac{b\u22121}{b}\\sumi=1b(\u03c1^_{(\u2212i)}^{b}\u2212\u03c1^{b}\u00af),\n$$\n\nand.\n\n$$\n\u03c1^{b}\u00af=\\frac{1}{b}\\sumi=1b\u03c1^_{(\u2212i)}^{b}\n$$\n\nis the average of jackknife samples. Finally, we compute a p-value for the null hypothesis.\n\n$$\nH_{0}:\u03c1=0,\n$$\n\nby approximating $\u03c1^$ as Normally distributed under the null with standard deviation $\\sigma^$, namely.\n\n$$\n\u03c1^\u223cN(0,\\sigma^).\n$$\n\n### LD Score regression\n\nSummary statistics for traits were filtered and allele flipped using munge_sumstats.py (a python program provided by Bulik-Sullivan et al., 2015b), with the default filters. All regressions were performed using the LD Score Regression package, using the LD Scores derived from the 489 unrelated European individuals in 1000 Genomes Phase III and a modified SNP set that excluded the HLA, LCT, and chromosome eight inversion loci.\n\nFor genetic correlations of traits presented in Table 2, raw summary statistics were used. For other analyses, effect sizes of SNPs within each 1% minor allele frequency bin (as estimated by the 489 Europeans) were normalized to mean 0 and standard deviation 1, and those normalized statistics were used for downstream analyses. The standard two-step regression method from LD Score regression was used, with the default of 200 jackknife bins and a chi-square cutoff of 30, though results with UKB-GB were reasonably robust to a wide range of bin sizes and cutoffs.\n\n### Data availability statement\n\nThe GWAS generated from the UK Biobank for this paper have been uploaded to Dryad: https://doi.org/10.5061/dryad.mg1rr36\n\nThe study also makes use of various publicly available GWAS datasets:\n\nThe data from the GIANT consortium GWAS, conducted by Wood et al. (2014) is available at the GIANT consortium website: https://portals.broadinstitute.org/collaboration/giant/index.php/GIANT_consortium_data_files\n\nThe UK Biobank GWAS of individuals of \u2018White British\u2019 ancestry only (UKB-GB), conducted by Churchhouse and Neale (2017), is available at:http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank\n\nThe UK Biobank GWAS of individuals of broadly European ancestral (UKB-Eur), conducted by Loh et al. (2017), is available at: https://data.broadinstitute.org/alkesgroup/UKBB/\n\nSibling GWAS data from Robinson et al. (2015) released in 2016 and now known to have been impacted by a computational bug, (R15-sibs, (Robinson et al., 2016)) as well as the newly rerun 2018 data (R15-sibs-updated, (Robinson and Visscher, 2018)) are both available at: http://cnsgenomics.com/data.html\n\nCopies of these datasets are independently archived at: https://github.com/jjberg2/height-data.\n",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "841913e7-a77e-43b9-8778-8bfeca6c6419",
+      "submission_id": "1a6c42d2-a81d-4eca-8a14-0b73547c4afd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Magnus Nordborg, Austrian Academy of Sciences Austria\n\nReviewers:\n- Magnus Nordborg, Austrian Academy of Sciences Austria\n- Nicholas H Barton, Institute of Science and Technology Austria Austria\n- Joachim Hermisson, University of Vienna Austria\n\n## Review text\n\nDOI: [10.7554/eLife.39725.050](https://doi.org/10.7554/eLife.39725.050)\n\nIn the interests of transparency, eLife includes the editorial decision letter, peer reviews, and accompanying author responses.\n\n[Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed.]\n\nThank you for submitting your article \"Reduced signal for polygenic adaptation of height in UK Biobank\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Magnus Nordborg as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Mark McCarthy as the Senior Editor. The following individuals involved in review of your submission have also agreed to reveal their identity: Nicholas H Barton (Reviewer #2) and Joachim Hermisson (Reviewer #3).\n\nThe Reviewing Editor has summarized the major concerns shared by all reviewers, and we have also included the separate reviews below for your consideration.\n\nIf you have any questions, please do not hesitate to contact us.\n\nSummary:\n\nThis is one of two papers demonstrating that published signals of selection on human height cannot be replicated in the recently released UK Biobank data, apparently because these signals were caused by confounding population structure that is absent in UK Biobank data.\n\nMajor concerns:\n\nWe were struck by how both papers focus on spurious signals of selection rather than the underlying cause, which is that the GWAS effect-size estimates are confounded. The former is a somewhat esoteric question, but the latter may have enormous implications for much of human genetics, and these papers are likely to be heavily cited because of this. However, the papers seem to go out of their way to avoid discussing this topic. Of course we are not the authors, but, for the record, it looks odd.\n\nFurthermore, the papers seem to suggest that confounding is not present in the UK Biobank data, but isn't it more likely that the magnitude is simply smaller?\n\nThe papers also present evidence that a sib-based study by Robinson et al., 2015, that was meant to eliminate confounding did no such thing. This is disturbing, and while we understand that identifying the reason may be beyond the present papers, the general implications should again probably be discussed.\n\nFinally, while this is a carefully written and extremely scholarly paper, it relies heavily on population genetics jargon, and will be difficult to read for outsiders. We suggest substantial editing with this in mind.\n\nSeparate reviews (please respond to each point):\n\nReviewer #1:\n\nThis one of at least two papers appearing simultaneously and reaching exactly the same conclusion. It is well written, although perhaps a bit too technical for people not directly working in the field of human population genetics.\n\nThe only thing that surprises me about this paper is that it, as well as the other one I have seen, focuses on the relatively obscure issue of whether height has been under selection, tiptoeing around the much bigger issue (the elephant in the room) that the reason the claims for selection do not stand is that the GWAS estimates of effect sizes are biased because of population structure. It is not just the selection signals that do not replicate, but the polygenic scores. I'm not surprised, but, as you know, there are probably at least a hundred papers out there that are based on the infallibility of LD Score regression and genomic prediction. I understand the need for caution before attacking this edifice, but I nonetheless think some clarification is unavoidable.\n\nReviewer #2:\n\nThis is a carefully argued and scholarly examination of why estimates of selection, based on \"polygenic scores\", are weaker in the UK Biobank data than in earlier studies. This is an important issue, and so even though the causes of the discrepancy are not at all clear, the paper will be an important contribution. I have various comments below, and on the annotated PDF; several of these ask for a clearer definition of terminology that will make the paper more accessible to those not immersed in the field.\n\nI would be encouraged by seeing a simulation of a stratified population, in which the standard correction for stratification fails, as is claimed to be the case here. One would also like to have some idea of what strength of allele frequency differentiation is needed to generate the observed differences in polygenic scores, and whether (as claimed) this indeed does not much affect GWAS estimates. However, this might be a non-trivial exercise, so I would not insist on it. I would like to see some discussion of how such a study could be approached, though.\n\nThe lesson from this is that it is extremely hard to reliably detect selection through the accumulation of slight changes in allele frequency. However, one should bear in mind that selection on polygenic traits is effective through precisely this process, and is largely unaffected by population structure. This is remarkable, but not paradoxical: natural selection can be effective even when its genetic basis cannot be identified.\n\nMinor Comments:\n\nAbstract: \"polygenic differences netween populations\" is perhaps ambiguous. You are not referring to differences in breeding value here, but to differences in BV inferred from SNP frequencies. Perhaps that can be said more directly.\n\nIntroduction first paragraph: Actually, polygenic scores predict an individual's additive genetic component, which is not the same as \"individual phenotypes\". Perhaps this could be explained: other studies of QG in the wild emphasise the importance of this distinction.\n\nSubsection \u201cGWAS data used to study adaptation of height\u201d paragraph five: SDS only gets defined in the Table, it needs explanation in the text.\n\nSubsection \u201cWeak replication in UK Biobank\u201d How confident can we that \"current methods are likely sufficient for most applications\" ? As noted above, I would have more confidence in this if we understood better how population structure confounds signals of polygenic adaptation.\n\nResults section (and elsewhere): \"genetic correlations\" needs to be defined explicitly, correlations of what with what? Do these strong correlations imply that there is no detectable difference in effect size between populations? What bounds can one put on effect size differences\n\nFigure 1: Best to label axes \"Latitude, European\" and \"Longitude, Eurasian\"\n\nSubsection \u201cSDS signal of selection in Britain.\u201d: Define LMM! Since the correction for structure is crucial, it needs to be explained clearly early on.\n\nSubsection \u201cRelationship between GWAS estimates and European population structure\u201d: Can one estimate the predicted strength of the \"winner's curse\"?\n\nSubsection \u201cLD Score regression signal\u201d: \"Meanwhile, confounders such as population structure are expected to affect SNPs of different LD Score equally\": It is not obvious to me that this is the case.\n\nSubsection \u201cSummary of LD Score Regression Results\u201d, final sentence: Delete \"going forward\"\n\nDiscussion section paragraph five: Nevertheless, one would like to know how much stratification may influence the accuracy of GWAS estimates.\n\nSubsection \u201cExpanded SNP Sets\u201d final paragraph: One should be able to quantify this. We know the strength of assortment for height, and its effect on Va. Therefore, we can estimate its effect on pairwise LD, which will be very small because there are so may pairs, but may nevertheless lead to some overall bias. More directly, is there any correlation in polygenic scores between parents, consistent with the known assortment? One might be able to separate out causes of assortment in this way: stratification vs true assortment, causally due to height.\n\nReviewer #3:\n\nBoth manuscripts by Berg et al. and Sohail et al. present thorough and insightful analyses with highly relevant results for current and future GWAS studies. Even prior to publication, the manuscripts have considerable impact. They will be widely read and cited. I do not think that further analyses are needed, with the potential exception of the third point below. All other points concern the discussion, in particular the guidance for further research that will surely emerge from these studies.\n\n# How safe are results based on the UK Biobank data?\n\nThis refers to the weak signals reported (with much caution) in the present studies, but also to potential future results on other traits. You recommend using data \"such as UKB\" and we will certainly see many more studies based on this resource. I would therefore appreciate a more specific discussion of risks connected to this particular data set.\n\n1) Stratification even within the UKB-GB data: It is well known that height and socioeconomic status are correlated in modern societies (e.g. BMJ 2016; 352:i582), and social status correlates with descent. In the UK, both factors are also geographically stratified, with people living in the north of the country having lower socioeconomic status and shorter stature, on average, than those in the south. Furthermore, the percentage of Anglo-Saxon admixture varies across the UK. How could these factors influence results based on UKB data, both here and otherwise?\n\n2) Potential influence of GxE interactions: The manuscripts focus (for good reason) on issues connected with stratification. However, if polygenic scores depend on the environment (e.g., due to countergradient variation), GxE interactions are an alternative confounding factor. Importantly, use of a homogeneous detection panel (to avoid stratification), such as UKB-GB, could increase these effects. Maybe this should be briefly discussed in the context of the present results and mentioned as a necessary caveat also for future studies that use detection panels from narrow geographic regions.\n\n# What, exactly, causes the problems with the previous data?\n\n3) There seem to be two relevant differences of the GIANT data relative to UKB: 1) UKB is much more homogeneous and 2) GIANT is a meta-study, collecting summary statistics from many sources that are individually corrected for stratification. One would like to know better which factor is decisive. This could be further addressed by combining summaries from sub-samples of the \"UKB-all\" data in an artificial meta-study.\n\n4) The Robinson et al., 2015 GWAS: Sib-based studies are done to avoid/minimize stratification effects and the Robinson 2015 data have been used as a proof of robustness in several previous studies. The fact that you find clear signs of stratification is sobering and one would like to know what has gone wrong. You may not currently have any explanation and this is fair enough. However, the discussion should be clearer and say upfront that results based on these data cannot be trusted until we understand the issues.\n\nMinor Comments:\n\na) The very low r2 in Figure 3C is strange. Any idea?\n\nb) Figure 4: I was looking for the analysis using the other GB datasets, turns out that this is done in the supplementary information, but you should briefly comment on the results in the results part of the main text.\n\nAdditional data files and statistical comments:\n\nEverything is well explained and all newly generated GWAS data are on Dryad.\n",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "80d2e442-5bfa-45c0-8a6c-2c538ce856ea",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C1",
+      "claim": "Several recent papers have reported strong signals of selection on European polygenic height scores using height effect estimates from the GIANT consortium and replication studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent papers have reported strong signals of selection on European polygenic height scores. These analyses used height effect estimates from the GIANT consortium and replication studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior studies and is stated directly in the abstract.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "dedfe820-921b-4d55-a728-20bb07f6b3a2",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C2",
+      "claim": "Signals of selection using UK Biobank effect estimates are strongly attenuated or absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a new analysis based on the the UK Biobank (UKB), a large, independent dataset. We find that the signals of selection using UKB effect estimates are strongly attenuated or absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data presented in the manuscript's figures and analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "1afba8f2-d69a-47c3-8179-4dcc939d5409",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C3",
+      "claim": "Previous analyses were confounded by population stratification.",
+      "claim_type": "EXPLICIT",
+      "source": "We also provide evidence that previous analyses were confounded by population stratification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analyses presented in the manuscript showing correlations between effect size differences and population structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "792c82df-8853-4e0b-820b-25caa818b9a8",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C4",
+      "claim": "The conclusion of strong polygenic adaptation now lacks support.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the conclusion of strong polygenic adaptation now lacks support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the findings that signals are attenuated in UKB and that previous analyses were confounded.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "34d3b9c5-55b8-4eaa-a9b7-b3147f47d747",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C5",
+      "claim": "Methods for correcting for population stratification in GWAS may not always be sufficient for polygenic trait analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these discrepancies highlight (1) that methods for correcting for population stratification in GWAS may not always be sufficient for polygenic trait analyses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that standard correction methods failed to prevent stratification confounding in previous studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "bad1fab7-ef07-4edd-ac08-59b63b21cf95",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C6",
+      "claim": "Claims of differences in polygenic scores between populations should be treated with caution until these issues are better understood.",
+      "claim_type": "EXPLICIT",
+      "source": "and (2) that claims of differences in polygenic scores between populations should be treated with caution until these issues are better understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of stratification confounding.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "3c56b6cf-9bfe-419f-8f2c-7bc8e588ad5a",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C7",
+      "claim": "Starting in 2012, a series of papers identified multiple lines of evidence suggesting that average polygenic scores for height increase from south-to-north across Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting in 2012, a series of papers identified multiple lines of evidence suggesting that average polygenic scores for height increase from south-to-north across Europe (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and summarized in Table 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "e25f6201-c625-4c45-bcdc-00ab407270af",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C8",
+      "claim": "Analyses from multiple groups have concluded that the steepness of the north-south height cline is inconsistent with a neutral model of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses from multiple groups have concluded that the steepness of this cline is inconsistent with a neutral model of evolution, suggesting that natural selection drove these differences in allele frequencies and polygenic scores (Turchin et al., 2012; Berg and Coop, 2014; Robinson et al., 2015; Zoledziewska et al., 2015; Berg et al., 2017; Racimo et al., 2018; Guo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "e14c7f10-8bc9-4779-94e8-065e2bab12e6",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C9",
+      "claim": "Significant differences in polygenic scores for height have been reported among ancient populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant differences in polygenic scores for height have also been reported among ancient populations, and these are also argued to have been driven by selection (Mathieson et al., 2015; Martiniano et al., 2017; Berg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "8a4dd272-8984-4d32-961e-c340e91a4efe",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C10",
+      "claim": "Field et al. (2016) found a significant covariance of SDS and effect on height, suggesting that natural selection drove a concerted rise in the frequency of height-increasing alleles in the ancestors of modern British individuals during the last 2,000 years.",
+      "claim_type": "EXPLICIT",
+      "source": "They found a significant covariance of SDS and effect on height, suggesting that natural selection drove a concerted rise in the frequency of height-increasing alleles in the ancestors of modern British individuals during the last 2,000 years (Field et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Field et al. 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "2cacad8e-2fde-49e5-8120-35948843b45b",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C11",
+      "claim": "All GWAS datasets show high pairwise genetic correlations, consistent with the view that all of them estimate a largely-similar genetic basis of height.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that all of these studies show high pairwise genetic correlations , consistent with the view that all of them estimate a largely-similar genetic basis of height (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genetic correlation estimates presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "80113a5d-a0bd-4567-8d38-189c4c92ca54",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C12",
+      "claim": "Highly significant latitudinal gradients in polygenic scores are found in both the GIANT and R15-sibs data.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we find highly significant latitudinal gradients in both the GIANT and R15-sibs data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "3a620275-9b14-4e43-99e7-778cd25e33be",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C13",
+      "claim": "The latitudinal gradient signal does not replicate in any of the four UK Biobank datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this signal does not replicate in any of the four UK Biobank datasets (Figure 1, top row), or in the R15-sibs-updated dataset (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1 and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "52161142-ee26-4c9f-90ff-1edcd0ba3420",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C14",
+      "claim": "Neutrality is strongly rejected using both the GIANT and R15-sibs datasets based on the QX test.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we find a similar pattern: we strongly reject neutrality using both the GIANT and R15-sibs datasets, but see little evidence against neutrality among the UK Biobank datasets, or the R15-sibs-updated dataset (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by QX test results presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "1355beca-4b26-4453-8a65-e9a27104dd0a",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C15",
+      "claim": "Little evidence against neutrality is seen among the UK Biobank datasets based on the QX test.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we find a similar pattern: we strongly reject neutrality using both the GIANT and R15-sibs datasets, but see little evidence against neutrality among the UK Biobank datasets, or the R15-sibs-updated dataset (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by QX test results presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "8929a733-8655-4a93-9b78-520a29f37671",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C16",
+      "claim": "Only the GIANT dataset shows a clear longitudinal signal of polygenic scores decreasing from west to east across Eurasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the GIANT dataset shows the clear longitudinal signal reported by Berg et al. (2017), though the R15-sibs dataset is again strongly over-dispersed in general, and retains some of the longitudinal signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 1, bottom row.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "9beee429-a675-4433-ba23-1bb12446716a",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C17",
+      "claim": "A weakly significant relationship between longitude and polygenic score is found in the UKB-Eur dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find a weakly significant relationship between longitude and polygenic score in the UKB-Eur dataset (though not in the other UKB datasets), suggesting there may be systematic differences between the results based on British-only and pan-European samples, even when state of the art corrections for population structure are applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 1 and represents an inference about population structure correction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "6859c87e-9bc1-4960-9089-764e2baa4f63",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C18",
+      "claim": "Using both GIANT and R15-sibs, Field et al. (2016) found a genome-wide pattern of positive tSDS, indicating that on average, height-increasing alleles have increased in frequency in the last \u223c75 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using both GIANT and R15-sibs, Field et al. (2016) found a genome-wide pattern of positive tSDS, indicating that on average, height-increasing alleles have increased in frequency in the last \u223c75 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Field et al. 2016 and is replicated in Figure 2A,B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "cde60ebf-8aa3-409f-b7a8-4990f830e85c",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C19",
+      "claim": "The tSDS trend is greatly attenuated in all four GWAS versions performed on the UK Biobank sample.",
+      "claim_type": "EXPLICIT",
+      "source": "This tSDS trend is greatly attenuated in all four GWAS versions performed on the UK Biobank sample (Figure 2C\u2013F), as well as the R15-sibs-updated dataset (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "d8611b92-4efe-4fb7-af32-c13225904544",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C20",
+      "claim": "The correlation between UKB-GB GWAS p-value and tSDS is weak (Spearman \u03c1=0.009, block-jackknife p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between UKB-GB GWAS p-value and tSDS is weak (Spearman \u03c1=0.009, block-jackknife p=0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "1a7f3027-8c01-46cf-ba4b-d82b76b863a4",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C21",
+      "claim": "The correlation between UKB-Eur GWAS p-value and tSDS is stronger (\u03c1=0.018, p=5\u00d710\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation is stronger for the UKB-Eur GWAS (\u03c1=0.018, p=5\u00d710\u22127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "c21dcbeb-d9e6-4615-b4d8-6cfbd8a4edc4",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C22",
+      "claim": "Residual European population structure continues to confound UKB-Eur effect estimates, despite the use of LMM correction for structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the UKB-Eur GWAS is not limited to British individuals\u2014but instead includes all European ancestry individuals\u2014this might suggest that residual European population structure continues to confound UKB-Eur effect estimates, despite the use of LMM correction for structure, similar to the longitudinal signal detected above for this same dataset (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the stronger correlation observed in UKB-Eur compared to UKB-GB.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "e60247f4-32af-4937-90c1-2dcb1f1f2606",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C24",
+      "claim": "The differences between the GIANT and UKB-GB effect sizes are correlated with European population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly however, we also see clear evidence that the differences between the GIANT and UKB-GB effect sizes are correlated with European population structure (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "f6c57015-3279-4178-9959-bd7208f0d129",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C26",
+      "claim": "A similar signal of correlation between effect size differences and population structure is observed for frequency differences between TSI and the Han Chinese in Beijing (CHB).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a similar signal for frequency differences between TSI and the Han Chinese in Beijing (CHB, Figure 3\u2014figure supplement 1), suggesting that longitudinal patterns observed by Berg et al. (2017) were also likely driven by incompletely controlled stratification in GIANT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3\u2014figure supplement 1 and represents an inference about the cause of longitudinal patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "34123a0e-2d75-44d2-9269-49e91dfd0198",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C27",
+      "claim": "There is a strong skew for the ancestral allele to be associated with increased height in the R15-sibs dataset (1,201 out of 1,642 SNPs have positive effect sizes).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, an unexpected feature of the R15-sibs dataset can be seen in Figure 3D: there is a strong skew for the ancestral allele to be associated with increased height (1,201 out of the 1,642 SNPs ascertained with R15-sibs p-values have positive effect sizes in R15-sibs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "0c1fbf9c-9ffa-4f94-8e8c-3363d2780039",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C28",
+      "claim": "The strong skew for ancestral alleles to be associated with increased height is not present in the R15-sibs-updated dataset or any other dataset analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is not present in the R15-sibs-updated dataset (851 out of 1,699 SNPs with positive effects), or any other dataset we analyzed, suggesting that it is likely a result of the failure to control for population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison across datasets and represents an inference about the cause of the skew.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "15295b8f-a9a3-4ca9-a399-e75d19e9459d",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C29",
+      "claim": "Both the GIANT and R15-sibs effect size estimates suffer from confounding along major axes of variation in Europe and Eurasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations suggest that while all of the datasets primarily capture real signals of association with height, both the GIANT and R15-sibs effect size estimates suffer from confounding along major axes of variation in Europe and Eurasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from multiple lines of evidence presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "880438af-c62f-49d7-90b8-17d5cf5fbb8c",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C30",
+      "claim": "Both GIANT and R15-sibs exhibit a highly significant LD Score regression slope with SDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GIANT and R15-sibs exhibit a highly significant LD Score regression slope (scaled GIANT slope =0.17, p=5\u00d710-9; scaled R15-sibs slope =0.46, p=7\u00d710\u221217), as well as a highly significant intercept (GIANT intercept =0.093, p=4\u00d710\u221271; R15-sibs intercept =0.119, p=2\u00d710\u221287).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by LD Score regression analysis presented in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "e7f3dd04-c2fa-4834-92aa-c97ebc30e988",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C31",
+      "claim": "The large intercepts in GIANT and R15-sibs LD Score regression with SDS suggest that both GWAS suffer from stratification along an axis of population structure that is correlated with SDS in the British population.",
+      "claim_type": "EXPLICIT",
+      "source": "These large intercepts suggest that both GWAS suffer from stratification along an axis of population structure that is correlated with SDS in the British population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the interpretation of LD Score regression intercepts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "5d2e6796-f22e-494d-af3c-af91b44069e8",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C32",
+      "claim": "In LD Score regression with the UKB-GB GWAS, the intercept is not significant (p=0.10), suggesting that UKB-GB is not strongly stratified.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in LD Score regression with the UKB-GB GWAS, the intercept is not significant (p=0.10), suggesting that UKB-GB is not strongly stratified (or at least, not along an axis that correlates with SDS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by LD Score regression analysis presented in Figure 4C and represents an inference about stratification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "c665c32a-03f4-42dd-a476-bbd470756fe2",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C33",
+      "claim": "The LD Score regression slope for UKB-GB with SDS is \u223c1/3 as large as in GIANT, though still modestly significant (p=1.2\u00d710\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "The slope is \u223c1/3 as large as in GIANT, though still modestly significant (p=1.2\u00d710\u22122, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LD Score regression analysis presented in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "285934e4-1ba9-4d7a-9630-b21eb0e1f947",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C34",
+      "claim": "There is no significant slope (p=0.389) or intercept (p=0.405) in R15-sibs-updated LD Score regression with SDS.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no significant slope (p=0.389) or intercept (p=0.405) in R15-sibs-updated (Figure 4\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LD Score regression analysis presented in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "86bb200b-e2d9-4bf8-b58d-2bc6df7c8b34",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C35",
+      "claim": "None of the GWAS datasets show a strongly positive slope in LD Score regression of [GBR-TSI] with effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to SDS, we find that none of the GWAS datasets show a strongly positive slope (Figure 4D\u2013F): the slope is approximately zero in GIANT, weakly positive in R15-sibs (p=0.002), and weakly negative in UKB-GB (p=0.09)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LD Score regression analysis presented in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "82dfb63f-5a0d-4055-a914-e408079f3b48",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C36",
+      "claim": "Extremely strong evidence for positive intercepts is seen in GIANT (p = 4\u00d710-80) and R15-sibs (p = 9\u00d710\u2212161) in LD Score regression of [GBR-TSI] with effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We see extremely strong evidence for positive intercepts in GIANT (p = 4\u00d710-80) and R15-sibs (p = 9\u00d710\u2212161), but not in UKB-GB (p=0.05), R15-sibs-updated (p=0.848) or the other UKB datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by LD Score regression analysis presented in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "523f21aa-d81b-44af-a7b4-8b1e86861514",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C37",
+      "claim": "The large intercepts in GIANT and R15-sibs LD Score regression with [GBR-TSI] are consistent with stratification affecting both of these GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "The large intercepts in GIANT and R15-sibs are consistent with stratification affecting both of these GWAS, as the North-South allele frequency difference is systematically correlated with the effect sizes in these GWAS independently of LD Score",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the interpretation of LD Score regression intercepts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "60075a55-ec73-443e-a108-baf0a5c5e8b4",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C38",
+      "claim": "The squared allele frequency difference [GBR-TSI]\u00b2 is significantly correlated with LD Score (p=2.5\u00d710-5).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the squared allele frequency difference [GBR-TSI]2 is significantly correlated with LD Score (p=2.5\u00d710-5, Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by regression analysis presented in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "bce54219-0ece-4cad-8917-5f6662788a3d",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C39",
+      "claim": "Squared allele frequency contrasts between self-identified 'Irish' and 'White British' individuals in the UK Biobank are significantly correlated with LD Score (p=2.5\u00d710-7).",
+      "claim_type": "EXPLICIT",
+      "source": "as are squared allele frequency contrasts for much lower levels of differentiation (i.e. between self-identified 'Irish' and 'White British' individuals in the UK Biobank (p=2.5\u00d710-7, Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by regression analysis presented in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "7102d8d1-2b5d-4d65-8376-3399a6a37ef7",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C40",
+      "claim": "SDS\u00b2 is significantly correlated with LD Score (p=2.9\u00d710-42).",
+      "claim_type": "EXPLICIT",
+      "source": "and SDS2 (p=2.9\u00d710-42, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by regression analysis presented in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "4cec235e-39d3-4f82-b383-069e20805f84",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C41",
+      "claim": "Squared measures of more recent allele frequency change (SDS\u00b2 and Irish vs. White British contrast) are much more tightly correlated with LD Score than that of more diverged populations [GBR-TSI]\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, squared measures of more recent allele frequency change (i.e. SDS2 and the squared Irish vs. White British contrast) are much more tightly correlated with LD Score than that of more diverged populations [GBR-TSI]2, suggesting that the LD Score regression slope may be equally vulnerable to stratification involving closely related populations than for those that are more distantly related.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the strength of correlations across different population comparisons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "6d240ab1-7a30-4b8c-9c2e-ba445efabb54",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C42",
+      "claim": "The product [GBR-TSI] \u00d7 SDS is correlated with LD Score.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the product [GBR-TSI] \u00d7 SDS is also correlated with LD Score (Figure 5C), demonstrating that the general signal of greater allele frequency change in regions of stronger LD is also shared between [GBR-TSI] and SDS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by regression analysis presented in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "d8954c38-a8a8-455f-9519-314788186643",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C43",
+      "claim": "LD Scores are positively correlated with the strength of background selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirically, we find that LD Scores are positively correlated with the strength of background selection (Appendix 3\u2014figure 1) (McVicker et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by empirical analysis and citation to McVicker et al. 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "35cb28a1-81c0-4131-8874-c1ba5cb40b75",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C44",
+      "claim": "A simple model of background selection is capable of explaining much of the relationship between LD Score and allele frequency divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "and that our simple model of background selection is capable of explaining much of the relationship between LD Score and allele frequency divergence that we observe in Figure 5 (Appendix 3\u2014figures 1\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling results presented in Appendix 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "f8015340-2066-4a84-9cbf-b736bc029cf4",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C45",
+      "claim": "In the presence of background selection, bivariate regression of a stratified GWAS together with a measure of allele frequency differentiation can result in a positive slope, provided that the axis of stratification is correlated with the chosen measure of allele frequency divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, in the presence of BGS, bivariate regression of a stratified GWAS together with a measure of allele frequency differentiation can result in a positive slope, provided that the axis of stratification is correlated with the chosen measure of allele frequency divergence (Appendix 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result derived in Appendix 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "96d30fe9-992b-4297-ad9e-485264aa7bc4",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C46",
+      "claim": "The positive intercepts observed for LD Score regression of both GIANT and R15-sibs with [GBR-TSI] suggest that both datasets suffer from confounding due to stratification along a north-to-south axis within Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant positive intercepts observed for LD Score regression of both GIANT and R15-sibs with [GBR-TSI] suggest that both datasets suffer from confounding due to stratification along a north-to-south axis within Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the interpretation of LD Score regression intercepts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "54e4e439-969d-45d8-bdb7-b62900d0b17c",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C47",
+      "claim": "The positive slopes observed for the LD Score regression signals for GIANT and R15-sibs with SDS likely result from a combination of stratification and background selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore interpret the positive slopes observed for the LD Score regression signals for GIANT and R15-sibs with SDS as likely resulting from a combination of stratification and BGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings about background selection and stratification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "1e1e53d7-8680-4ef9-a6fd-ea6493c69e19",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C48",
+      "claim": "Multiple lines of evidence strongly suggest that population-structure confounding in GIANT and R15-sibs is the main driver of the discrepancy with UKB-based analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, multiple lines of evidence strongly suggest that population-structure confounding in GIANT and R15-sibs is the main driver of the discrepancy with UKB-based analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on all the evidence presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "ea17698c-9be8-4f24-ab73-3647a0917053",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C49",
+      "claim": "Robinson et al. have confirmed (as of November 2018) that effect sizes they released from their 2015 study were strongly affected by population stratification due to a bug.",
+      "claim_type": "EXPLICIT",
+      "source": "Robinson et al have now confirmed (as of November 2018) that effect sizes they released from their 2015 study were strongly affected by population stratification due to a bug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a statement from Robinson et al. and is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "6b64dc97-f794-447a-9c08-6a740bdc5fcf",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C50",
+      "claim": "The effect sizes that Robinson et al. released publicly in 2016 were not the effect sizes used in their 2015 paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, they have now stated that the effect sizes that they released publicly in 2016 were not the effect sizes used in their 2015 paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a statement from Robinson et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "6ef1e76f-3ad5-4cd1-b363-e36b4d4ac574",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C51",
+      "claim": "Analyses using the newly rerun effect sizes released by Robinson and Visscher, 2018 show no consistent signal of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses using the newly rerun effect sizes released by Robinson and Visscher, 2018 show no consistent signal of selection (Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1. and Figure 4\u2014figure supplement 1), in line with our UKB-based analyses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analyses of the R15-sibs-updated dataset presented in multiple figure supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "2aff66d4-750e-408c-a597-7d511338ccec",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C52",
+      "claim": "The strong signal of LD Score genetic covariance between SDS and both GIANT and R15-sibs is largely spurious.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we must conclude that the strong signal of LD Score genetic covariance between SDS and both GIANT and R15-sibs is largely spurious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings about stratification and background selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "14c497d2-dfcc-4308-954d-465292a45fe8",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C53",
+      "claim": "The LD Score regression slope is not robust to population structure confounding.",
+      "claim_type": "EXPLICIT",
+      "source": "This would imply that the LD Score regression slope is not robust to population structure confounding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings about background selection and stratification affecting LD Score regression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "69539b2b-7f47-4e3d-bd8f-ea6eeaa9d04a",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C54",
+      "claim": "Background selection\u2014through its correlation with LD Score\u2014can potentially generate a spurious LD Score regression slope.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we demonstrated that background selection\u2014through its correlation with LD Score\u2014can potentially generate a spurious LD Score regression slope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on theoretical and empirical analysis of background selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "f66aaba4-8190-48db-bdf7-47b408ffdc63",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C55",
+      "claim": "What once appeared an ironclad example of population genetic evidence for polygenic adaptation now lacks any strong support.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations lead us to conclude that what once appeared an ironclad example of population genetic evidence for polygenic adaptation now lacks any strong support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the evidence presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "7f8afe34-5b4d-4e0e-b94a-34cfc63a0da8",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C56",
+      "claim": "GWAS datasets regularly show strong functional enrichments of heritability within active chromatin from trait-relevant tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, GWAS datasets regularly show strong functional enrichments of heritability within active chromatin from trait-relevant tissues (Finucane et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Finucane et al. 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "7c43fe59-2516-4e24-a814-e7e8519465db",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C57",
+      "claim": "Top SNPs identified in GIANT tend to replicate in UKB-GB.",
+      "claim_type": "EXPLICIT",
+      "source": "and the observation that top SNPs identified in GIANT tend to replicate in UKB-GB (Figure 3A), together with the high genetic correlations among all of the datasets (Table 2), suggest that the vast majority of the signal captured by GIANT is real.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3A and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "a451ffe1-c1b4-4a11-86bc-9dab27232028",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C58",
+      "claim": "GIANT effect-size estimates contain a component arising from stratification along a major axis of European population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, we have shown that GIANT effect-size estimates contain a component arising from stratification along a major axis of European population structure (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "85c4cb0f-c0f9-40b9-a619-57d9d83e2a08",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C59",
+      "claim": "The problem of stratification bias is likely most acute for the analysis of polygenic scores in samples drawn from heterogeneous ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "The problem is likely most acute for the analysis of polygenic scores in samples drawn from heterogeneous ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of how biases compound across many loci.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "6465b6ce-5a21-40ad-a7a9-3dee21663983",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C60",
+      "claim": "While the bias in detection and effect sizes at any individual locus is small, the systematic nature of biases across many loci compound to significant errors at the level of polygenic scores.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because while the bias in detection and effect sizes at any individual locus is small, the systematic nature of biases across many loci compound to significant errors at the level of polygenic scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how small biases accumulate in polygenic scores.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "29e674b6-1bbb-44b4-b4e8-76bad21a2552",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C61",
+      "claim": "Stratification bias substantially inflates the proportion of the variance in polygenic scores that is among populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This error substantially inflates the proportion of the variance in polygenic scores that is among populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the effect of stratification bias on polygenic score variance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "2016725e-14fb-4a81-8fd8-900f05e97724",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C62",
+      "claim": "Individual level prediction efforts suffer dramatically from stratification bias, as even small differences in ancestry will be inadvertently translated into large differences in predicted phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual level prediction efforts therefore suffer dramatically from stratification bias, as even small differences in ancestry will be inadvertently translated into large differences in predicted phenotype (Kerminen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kerminen et al. 2018 and represents an inference about the impact of stratification bias.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "2b47db1d-846a-4770-b16a-727a7d68c6c2",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C63",
+      "claim": "Meta-analyses such as GIANT, which collate summary statistics from many sources, may be particularly sensitive to structure confounding.",
+      "claim_type": "EXPLICIT",
+      "source": "This seems likely to remain a difficult complication even within datasets such as the UK Biobank, though we suspect that meta-analyses such as GIANT, which collate summary statistics from many sources, may be particularly sensitive to structure confounding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "a53a31f4-6172-465d-a7ee-0b0ce8471d3f",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C64",
+      "claim": "Marked differences are seen between results based on UKB-GB and UKB-Eur.",
+      "claim_type": "EXPLICIT",
+      "source": "These issues are apparent even within our UK Biobank results, where we see marked differences between results based on UKB-GB and UKB-Eur (Figure 2C,I vs. D, J and Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2 and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "e9117b65-5f3c-402b-a5cf-1e5758a4a376",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C65",
+      "claim": "In the more demanding setting of broad European ancestry variation, the linear mixed model approach did not provide complete protection against stratification.",
+      "claim_type": "EXPLICIT",
+      "source": "The study subjects in the two datasets were largely overlapping, and both were computed using widely-accepted structure-correction methods, suggesting that in the more demanding setting of broad European ancestry variation, the linear mixed model approach did not provide complete protection against stratification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differences observed between UKB-GB and UKB-Eur results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "14ba763e-8a62-4c8f-89e6-daa42df016cf",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C66",
+      "claim": "Studies of polygenic adaptation should focus on datasets that minimize population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking forward, we recommend that studies of polygenic adaptation should focus on datasets that minimize population structure (such as subsets of UKB)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "65ee70d5-1d78-400a-81df-24bd5b49e640",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "claim_id": "C67",
+      "claim": "Investigators should have access to full genotype data, including family data, so that they can explore sensitivity to different datasets and analysis pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "and where the investigators have access to full genotype data, including family data, so that they can explore sensitivity to different datasets and analysis pipelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5effb104-0b5f-42f7-939e-da9bc5dba7bf",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Signals of polygenic adaptation for height previously detected using GIANT and R15-sibs datasets are strongly attenuated or absent when using UK Biobank effect estimates. Specifically, latitudinal gradients in polygenic scores do not replicate in any of the four UK Biobank datasets (C13), neutrality tests show little evidence against neutrality in UKB datasets (C15), the tSDS trend is greatly attenuated in all UKB GWAS versions (C19), and the corrected R15-sibs-updated dataset shows no consistent signal of selection (C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent lines of evidence consistently demonstrate attenuation of selection signals in UKB data. The claims are supported by statistical tests (QX tests, correlation analyses), visual evidence in multiple figures (Figures 1, 2), and replication across four different UKB GWAS pipelines. The corrected R15-sibs-updated dataset independently confirms the absence of signals, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "ed50c131-08d5-471e-ab03-83504ac86116",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous analyses reporting polygenic adaptation of height were confounded by population stratification in GIANT and R15-sibs datasets. The differences between GIANT/R15-sibs and UKB-GB effect sizes are significantly correlated with European population structure (C24), with similar patterns observed for TSI-CHB frequency differences (C26). LD Score regression reveals highly significant positive intercepts in GIANT and R15-sibs when regressed against [GBR-TSI] frequency differences (C36, C37), indicating stratification confounding along a north-south European axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The evidence for stratification confounding is compelling and multi-faceted: (1) direct correlation between effect size differences and population structure (Figure 3B, r\u00b2=0.06, p<2.2\u00d710\u207b\u00b9\u2076), (2) highly significant LD Score regression intercepts (p=4\u00d710\u207b\u2078\u2070 for GIANT, p=9\u00d710\u207b\u00b9\u2076\u00b9 for R15-sibs), (3) confirmation of a computational bug in R15-sibs by the original authors (C49), and (4) absence of these signals in properly controlled UKB datasets. The convergence of multiple independent analytical approaches strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "55925c93-7c04-4837-84fe-e581c77efdd8",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LD Score regression analysis reveals that the previously reported genetic covariance between SDS and height GWAS is largely spurious due to stratification. GIANT and R15-sibs show highly significant LD Score regression slopes and intercepts with SDS (C30, C31), while UKB-GB shows a non-significant intercept and greatly attenuated slope (C32, C33). The corrected R15-sibs-updated dataset shows no significant slope or intercept (C34). Background selection, through its correlation with LD Score, can generate spurious LD Score regression slopes in the presence of stratification (C54).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The LD Score regression findings are well-supported by statistical evidence (Figure 4) and theoretical modeling (Appendix 3). The pattern of significant intercepts in stratified datasets (GIANT, R15-sibs) but not in properly controlled datasets (UKB-GB, R15-sibs-updated) is consistent across analyses. The demonstration that background selection correlates with LD Score (C43, C44) and can generate spurious slopes provides a mechanistic explanation. However, the interpretation relies on modeling assumptions about background selection that, while plausible, add some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "bb4495cb-bc1a-442c-885e-800506d826a8",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Allele frequency differentiation measures are significantly correlated with LD Score, violating a key assumption of LD Score regression. Squared allele frequency differences [GBR-TSI]\u00b2 (C38), Irish vs. White British contrasts (C39), and SDS\u00b2 (C40) all show significant positive correlations with LD Score. Strikingly, more recent allele frequency changes are more tightly correlated with LD Score than diverged populations (C41). Background selection can explain much of this relationship and can generate spurious LD Score regression slopes when stratification is present (C44, C45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlations between allele frequency differentiation and LD Score are statistically robust (Figure 5, p-values ranging from 2.5\u00d710\u207b\u2075 to 2.9\u00d710\u207b\u2074\u00b2). The empirical demonstration that LD Scores correlate with background selection strength (Appendix 3) and that a simple background selection model can explain the observed patterns provides strong mechanistic support. The theoretical derivation in Appendix 3 showing how this can generate spurious slopes is mathematically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "114c5b73-d8f6-45dd-996a-8537747b4671",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Despite stratification confounding, GIANT and other GWAS datasets capture genuine signals of height associations. All GWAS datasets show high pairwise genetic correlations (C11, Table 2), and top SNPs identified in GIANT replicate in UKB-GB (C57, Figure 3A, r\u00b2=0.78).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic correlations in Table 2 are consistently high (>0.82) across all dataset pairs, and the replication of GIANT effect sizes in UKB-GB (Figure 3A) demonstrates substantial shared signal. This is important context showing that the stratification bias affects polygenic score analyses more than individual SNP associations, though the winner's curse effect (slope <1 in Figure 3A) is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "c1418195-06dd-4505-9260-9388f2d4a0a2",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Previous studies using GIANT and R15-sibs datasets reported strong signals of polygenic adaptation for height. These included highly significant latitudinal gradients in Europe (C12), rejection of neutrality (C14), longitudinal signals across Eurasia (C16), and positive tSDS patterns (C18).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior published findings and are replicated in the current manuscript's analyses (Figures 1, 2). They serve as essential context for demonstrating the discrepancy with UKB results. The claims are well-supported by the data and citations to original studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "bdfae8ac-a75d-43f9-bb8a-e0af72e02d28",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Even within UK Biobank, residual population structure affects results when analyzing broader European ancestry samples. UKB-Eur shows a weakly significant longitudinal signal (C17) and stronger correlation between tSDS and GWAS p-values (C21, C22) compared to UKB-GB. Marked differences exist between UKB-GB and UKB-Eur results (C64), suggesting that linear mixed model approaches may not provide complete protection against stratification in heterogeneous samples (C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The differences between UKB-GB (British only) and UKB-Eur (all European ancestry) are consistently observed across multiple analyses (Figures 1, 2, 4). The inference that LMM correction is insufficient for heterogeneous samples is reasonable given the data, though the effect sizes are modest. This highlights an important limitation of current correction methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "bed87ecb-4561-4fd9-87bf-9ccce542736d",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The R15-sibs dataset shows an anomalous skew where ancestral alleles are preferentially associated with increased height (1,201 of 1,642 SNPs with positive effects), which is absent in R15-sibs-updated and all other datasets, suggesting this pattern resulted from failure to control for population structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The skew is clearly visible in Figure 3D and the statistical evidence is strong (73% of SNPs with positive effects vs. expected 50%). The absence of this pattern in the corrected R15-sibs-updated dataset (50% with positive effects) and all other datasets strongly supports the inference that this was an artifact of stratification. This provides additional independent evidence of problems with the original R15-sibs data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "060ea781-ea3f-486b-b4e5-4ad538d115f8",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors of the R15-sibs study confirmed that their 2015 effect sizes were affected by population stratification due to a computational bug, and that the publicly released 2016 effect sizes were not those used in the 2015 paper.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are based on direct statements from Robinson and Visscher (2018) and are appropriately cited. This external confirmation from the original authors provides crucial validation of the manuscript's findings regarding stratification in R15-sibs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "9c815f79-e473-48f7-93da-8c5d128d892d",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The conclusion of strong polygenic adaptation of height in Europeans now lacks support. What once appeared as strong evidence for polygenic adaptation is undermined by the failure to replicate in properly controlled datasets and the demonstration of stratification confounding in previous analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion is well-supported by the convergence of multiple lines of evidence: (1) failure to replicate in four independent UKB GWAS, (2) demonstration of stratification confounding in GIANT and R15-sibs, (3) confirmation of computational errors in R15-sibs, (4) absence of signals in corrected R15-sibs-updated data, and (5) theoretical and empirical demonstration that LD Score regression can be confounded. The evidence is comprehensive and compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "67cb368b-5f15-4df7-85d2-8e4d8350a042",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings have important implications for GWAS methodology and polygenic score applications. Standard population structure correction methods may be insufficient for polygenic trait analyses (C5), particularly for heterogeneous ancestry samples (C59, C63). Small biases at individual loci compound to significant errors in polygenic scores (C60, C61), with serious implications for prediction efforts (C62). The authors recommend that future polygenic adaptation studies use datasets minimizing population structure and provide access to full genotype data (C66, C67).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These broader implications and recommendations logically follow from the demonstrated findings. The inference that small per-locus biases compound in polygenic scores is mathematically sound and well-illustrated by the data. The recommendations are reasonable and appropriately cautious. However, some claims (C63) are explicitly speculative, and the full scope of impact on other GWAS applications remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    },
+    {
+      "id": "e0b634d6-11e7-4a8e-9cdb-4089a2c50bdb",
+      "content_id": "c8cbcc4b-668a-42de-80c6-bc9d35d5430c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior literature reported multiple lines of evidence for polygenic adaptation of height in Europeans, including north-south clines, signals in ancient populations, and recent selection in Britain. These studies used GIANT consortium data and various replication datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize the prior literature and are appropriately cited (Table 1 and multiple references throughout). They provide essential context for the current study. The characterization of prior work appears accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:12:35.936385Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dedfe820-921b-4d55-a728-20bb07f6b3a2",
+      "result_id": "5effb104-0b5f-42f7-939e-da9bc5dba7bf"
+    },
+    {
+      "claim_id": "3a620275-9b14-4e43-99e7-778cd25e33be",
+      "result_id": "5effb104-0b5f-42f7-939e-da9bc5dba7bf"
+    },
+    {
+      "claim_id": "1355beca-4b26-4453-8a65-e9a27104dd0a",
+      "result_id": "5effb104-0b5f-42f7-939e-da9bc5dba7bf"
+    },
+    {
+      "claim_id": "cde60ebf-8aa3-409f-b7a8-4990f830e85c",
+      "result_id": "5effb104-0b5f-42f7-939e-da9bc5dba7bf"
+    },
+    {
+      "claim_id": "d8611b92-4efe-4fb7-af32-c13225904544",
+      "result_id": "5effb104-0b5f-42f7-939e-da9bc5dba7bf"
+    },
+    {
+      "claim_id": "1a7f3027-8c01-46cf-ba4b-d82b76b863a4",
+      "result_id": "5effb104-0b5f-42f7-939e-da9bc5dba7bf"
+    },
+    {
+      "claim_id": "6ef1e76f-3ad5-4cd1-b363-e36b4d4ac574",
+      "result_id": "5effb104-0b5f-42f7-939e-da9bc5dba7bf"
+    },
+    {
+      "claim_id": "1afba8f2-d69a-47c3-8179-4dcc939d5409",
+      "result_id": "ed50c131-08d5-471e-ab03-83504ac86116"
+    },
+    {
+      "claim_id": "e60247f4-32af-4937-90c1-2dcb1f1f2606",
+      "result_id": "ed50c131-08d5-471e-ab03-83504ac86116"
+    },
+    {
+      "claim_id": "f6c57015-3279-4178-9959-bd7208f0d129",
+      "result_id": "ed50c131-08d5-471e-ab03-83504ac86116"
+    },
+    {
+      "claim_id": "15295b8f-a9a3-4ca9-a399-e75d19e9459d",
+      "result_id": "ed50c131-08d5-471e-ab03-83504ac86116"
+    },
+    {
+      "claim_id": "82dfb63f-5a0d-4055-a914-e408079f3b48",
+      "result_id": "ed50c131-08d5-471e-ab03-83504ac86116"
+    },
+    {
+      "claim_id": "523f21aa-d81b-44af-a7b4-8b1e86861514",
+      "result_id": "ed50c131-08d5-471e-ab03-83504ac86116"
+    },
+    {
+      "claim_id": "96d30fe9-992b-4297-ad9e-485264aa7bc4",
+      "result_id": "ed50c131-08d5-471e-ab03-83504ac86116"
+    },
+    {
+      "claim_id": "1e1e53d7-8680-4ef9-a6fd-ea6493c69e19",
+      "result_id": "ed50c131-08d5-471e-ab03-83504ac86116"
+    },
+    {
+      "claim_id": "a451ffe1-c1b4-4a11-86bc-9dab27232028",
+      "result_id": "ed50c131-08d5-471e-ab03-83504ac86116"
+    },
+    {
+      "claim_id": "880438af-c62f-49d7-90b8-17d5cf5fbb8c",
+      "result_id": "55925c93-7c04-4837-84fe-e581c77efdd8"
+    },
+    {
+      "claim_id": "e7f3dd04-c2fa-4834-92aa-c97ebc30e988",
+      "result_id": "55925c93-7c04-4837-84fe-e581c77efdd8"
+    },
+    {
+      "claim_id": "5d2e6796-f22e-494d-af3c-af91b44069e8",
+      "result_id": "55925c93-7c04-4837-84fe-e581c77efdd8"
+    },
+    {
+      "claim_id": "c665c32a-03f4-42dd-a476-bbd470756fe2",
+      "result_id": "55925c93-7c04-4837-84fe-e581c77efdd8"
+    },
+    {
+      "claim_id": "285934e4-1ba9-4d7a-9630-b21eb0e1f947",
+      "result_id": "55925c93-7c04-4837-84fe-e581c77efdd8"
+    },
+    {
+      "claim_id": "2aff66d4-750e-408c-a597-7d511338ccec",
+      "result_id": "55925c93-7c04-4837-84fe-e581c77efdd8"
+    },
+    {
+      "claim_id": "14c497d2-dfcc-4308-954d-465292a45fe8",
+      "result_id": "55925c93-7c04-4837-84fe-e581c77efdd8"
+    },
+    {
+      "claim_id": "69539b2b-7f47-4e3d-bd8f-ea6eeaa9d04a",
+      "result_id": "55925c93-7c04-4837-84fe-e581c77efdd8"
+    },
+    {
+      "claim_id": "54e4e439-969d-45d8-bdb7-b62900d0b17c",
+      "result_id": "55925c93-7c04-4837-84fe-e581c77efdd8"
+    },
+    {
+      "claim_id": "60075a55-ec73-443e-a108-baf0a5c5e8b4",
+      "result_id": "bb4495cb-bc1a-442c-885e-800506d826a8"
+    },
+    {
+      "claim_id": "bce54219-0ece-4cad-8917-5f6662788a3d",
+      "result_id": "bb4495cb-bc1a-442c-885e-800506d826a8"
+    },
+    {
+      "claim_id": "7102d8d1-2b5d-4d65-8376-3399a6a37ef7",
+      "result_id": "bb4495cb-bc1a-442c-885e-800506d826a8"
+    },
+    {
+      "claim_id": "4cec235e-39d3-4f82-b383-069e20805f84",
+      "result_id": "bb4495cb-bc1a-442c-885e-800506d826a8"
+    },
+    {
+      "claim_id": "6d240ab1-7a30-4b8c-9c2e-ba445efabb54",
+      "result_id": "bb4495cb-bc1a-442c-885e-800506d826a8"
+    },
+    {
+      "claim_id": "d8954c38-a8a8-455f-9519-314788186643",
+      "result_id": "bb4495cb-bc1a-442c-885e-800506d826a8"
+    },
+    {
+      "claim_id": "35cb28a1-81c0-4131-8874-c1ba5cb40b75",
+      "result_id": "bb4495cb-bc1a-442c-885e-800506d826a8"
+    },
+    {
+      "claim_id": "f8015340-2066-4a84-9cbf-b736bc029cf4",
+      "result_id": "bb4495cb-bc1a-442c-885e-800506d826a8"
+    },
+    {
+      "claim_id": "2cacad8e-2fde-49e5-8120-35948843b45b",
+      "result_id": "114c5b73-d8f6-45dd-996a-8537747b4671"
+    },
+    {
+      "claim_id": "7c43fe59-2516-4e24-a814-e7e8519465db",
+      "result_id": "114c5b73-d8f6-45dd-996a-8537747b4671"
+    },
+    {
+      "claim_id": "80113a5d-a0bd-4567-8d38-189c4c92ca54",
+      "result_id": "c1418195-06dd-4505-9260-9388f2d4a0a2"
+    },
+    {
+      "claim_id": "52161142-ee26-4c9f-90ff-1edcd0ba3420",
+      "result_id": "c1418195-06dd-4505-9260-9388f2d4a0a2"
+    },
+    {
+      "claim_id": "8929a733-8655-4a93-9b78-520a29f37671",
+      "result_id": "c1418195-06dd-4505-9260-9388f2d4a0a2"
+    },
+    {
+      "claim_id": "6859c87e-9bc1-4960-9089-764e2baa4f63",
+      "result_id": "c1418195-06dd-4505-9260-9388f2d4a0a2"
+    },
+    {
+      "claim_id": "9beee429-a675-4433-ba23-1bb12446716a",
+      "result_id": "bdfae8ac-a75d-43f9-bb8a-e0af72e02d28"
+    },
+    {
+      "claim_id": "c21dcbeb-d9e6-4615-b4d8-6cfbd8a4edc4",
+      "result_id": "bdfae8ac-a75d-43f9-bb8a-e0af72e02d28"
+    },
+    {
+      "claim_id": "a53a31f4-6172-465d-a7ee-0b0ce8471d3f",
+      "result_id": "bdfae8ac-a75d-43f9-bb8a-e0af72e02d28"
+    },
+    {
+      "claim_id": "e9117b65-5f3c-402b-a5cf-1e5758a4a376",
+      "result_id": "bdfae8ac-a75d-43f9-bb8a-e0af72e02d28"
+    },
+    {
+      "claim_id": "34123a0e-2d75-44d2-9269-49e91dfd0198",
+      "result_id": "bed87ecb-4561-4fd9-87bf-9ccce542736d"
+    },
+    {
+      "claim_id": "0c1fbf9c-9ffa-4f94-8e8c-3363d2780039",
+      "result_id": "bed87ecb-4561-4fd9-87bf-9ccce542736d"
+    },
+    {
+      "claim_id": "ea17698c-9be8-4f24-ab73-3647a0917053",
+      "result_id": "060ea781-ea3f-486b-b4e5-4ad538d115f8"
+    },
+    {
+      "claim_id": "6b64dc97-f794-447a-9c08-6a740bdc5fcf",
+      "result_id": "060ea781-ea3f-486b-b4e5-4ad538d115f8"
+    },
+    {
+      "claim_id": "792c82df-8853-4e0b-820b-25caa818b9a8",
+      "result_id": "9c815f79-e473-48f7-93da-8c5d128d892d"
+    },
+    {
+      "claim_id": "f66aaba4-8190-48db-bdf7-47b408ffdc63",
+      "result_id": "9c815f79-e473-48f7-93da-8c5d128d892d"
+    },
+    {
+      "claim_id": "34d3b9c5-55b8-4eaa-a9b7-b3147f47d747",
+      "result_id": "67cb368b-5f15-4df7-85d2-8e4d8350a042"
+    },
+    {
+      "claim_id": "bad1fab7-ef07-4edd-ac08-59b63b21cf95",
+      "result_id": "67cb368b-5f15-4df7-85d2-8e4d8350a042"
+    },
+    {
+      "claim_id": "85c4cb0f-c0f9-40b9-a619-57d9d83e2a08",
+      "result_id": "67cb368b-5f15-4df7-85d2-8e4d8350a042"
+    },
+    {
+      "claim_id": "6465b6ce-5a21-40ad-a7a9-3dee21663983",
+      "result_id": "67cb368b-5f15-4df7-85d2-8e4d8350a042"
+    },
+    {
+      "claim_id": "29e674b6-1bbb-44b4-b4e8-76bad21a2552",
+      "result_id": "67cb368b-5f15-4df7-85d2-8e4d8350a042"
+    },
+    {
+      "claim_id": "2016725e-14fb-4a81-8fd8-900f05e97724",
+      "result_id": "67cb368b-5f15-4df7-85d2-8e4d8350a042"
+    },
+    {
+      "claim_id": "2b47db1d-846a-4770-b16a-727a7d68c6c2",
+      "result_id": "67cb368b-5f15-4df7-85d2-8e4d8350a042"
+    },
+    {
+      "claim_id": "14ba763e-8a62-4c8f-89e6-daa42df016cf",
+      "result_id": "67cb368b-5f15-4df7-85d2-8e4d8350a042"
+    },
+    {
+      "claim_id": "65ee70d5-1d78-400a-81df-24bd5b49e640",
+      "result_id": "67cb368b-5f15-4df7-85d2-8e4d8350a042"
+    },
+    {
+      "claim_id": "80d2e442-5bfa-45c0-8a6c-2c538ce856ea",
+      "result_id": "e0b634d6-11e7-4a8e-9cdb-4089a2c50bdb"
+    },
+    {
+      "claim_id": "3c56b6cf-9bfe-419f-8f2c-7bc8e588ad5a",
+      "result_id": "e0b634d6-11e7-4a8e-9cdb-4089a2c50bdb"
+    },
+    {
+      "claim_id": "e25f6201-c625-4c45-bcdc-00ab407270af",
+      "result_id": "e0b634d6-11e7-4a8e-9cdb-4089a2c50bdb"
+    },
+    {
+      "claim_id": "e14c7f10-8bc9-4779-94e8-065e2bab12e6",
+      "result_id": "e0b634d6-11e7-4a8e-9cdb-4089a2c50bdb"
+    },
+    {
+      "claim_id": "8a4dd272-8984-4d32-961e-c340e91a4efe",
+      "result_id": "e0b634d6-11e7-4a8e-9cdb-4089a2c50bdb"
+    },
+    {
+      "claim_id": "7f8afe34-5b4d-4e0e-b94a-34cfc63a0da8",
+      "result_id": "e0b634d6-11e7-4a8e-9cdb-4089a2c50bdb"
+    }
+  ],
+  "comparisons": []
+}

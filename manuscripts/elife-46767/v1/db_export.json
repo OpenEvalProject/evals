@@ -1,0 +1,2233 @@
+{
+  "submission": {
+    "id": "b8b47d09-2118-4cce-a68c-7dedf35ba50b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:05:47.736393Z",
+    "updated_at": "2025-12-02T11:05:47.736393Z"
+  },
+  "content": [
+    {
+      "id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "submission_id": "b8b47d09-2118-4cce-a68c-7dedf35ba50b",
+      "content_type": "manuscript",
+      "content_text": "# KHNYN is essential for the zinc finger antiviral protein (ZAP) to restrict HIV-1 containing clustered CpG dinucleotides\n\n## Authors\n\n- Mattia Ficarelli<sup>1</sup> ([ORCID: 0000-0002-9380-132X](https://orcid.org/0000-0002-9380-132X))\n- Harry Wilson<sup>1</sup> ([ORCID: 0000-0002-3185-1073](https://orcid.org/0000-0002-3185-1073))\n- Rui Pedro Gal\u00e3o<sup>1</sup> ([ORCID: 0000-0003-3368-5053](https://orcid.org/0000-0003-3368-5053))\n- Michela Mazzon<sup>2</sup> ([ORCID: 0000-0002-2462-9925](https://orcid.org/0000-0002-2462-9925))\n- Irati Antzin-Anduetza<sup>1</sup>\n- Mark Marsh<sup>2</sup>\n- Stuart JD Neil<sup>1</sup> ([ORCID: 0000-0003-3306-5831](https://orcid.org/0000-0003-3306-5831)) \u2020\n- Chad M Swanson<sup>1</sup> ([ORCID: 0000-0002-6650-3634](https://orcid.org/0000-0002-6650-3634)) \u2020\n\n### Affiliations\n\n1. Department of Infectious Diseases, School of Immunology and Microbial Sciences King\u2019s College London London United Kingdom\n2. MRC Laboratory for Molecular Cell Biology University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCpG dinucleotides are suppressed in most vertebrate RNA viruses, including HIV-1, and introducing CpGs into RNA virus genomes inhibits their replication. The zinc finger antiviral protein (ZAP) binds regions of viral RNA containing CpGs and targets them for degradation. ZAP does not have enzymatic activity and recruits other cellular proteins to inhibit viral replication. We found that KHNYN, a protein with no previously known function, interacts with ZAP. KHNYN overexpression selectively inhibits HIV-1 containing clustered CpG dinucleotides and this requires ZAP and its cofactor TRIM25. KHNYN requires both its KH-like domain and NYN endonuclease domain for antiviral activity. Crucially, depletion of KHNYN eliminated the deleterious effect of CpG dinucleotides on HIV-1 RNA abundance and infectious virus production and also enhanced the production of murine leukemia virus. Overall, we have identified KHNYN as a novel cofactor for ZAP to target CpG-containing retroviral RNA for degradation.\n\n## Introduction\n\nA major component of the innate immune system are cell intrinsic antiviral proteins. These act at multiple steps in viral replication cycles and some are induced by type I interferons (Schneider et al., 2014). Many viruses have evolved mechanisms to evade inhibition by these proteins. First, viruses can encode proteins that counteract specific antiviral factors. Examples of this mechanism in HIV-1 are the accessory proteins Vif and Vpu that counteract APOBEC3 cytosine deaminases and Tetherin, respectively (Malim and Bieniasz, 2012). Second, viral protein or nucleic acid sequences can evolve to prevent recognition by antiviral factors. The abundance of CpG dinucleotides is suppressed in many vertebrate RNA virus genomes and when CpGs are experimentally introduced into picornaviruses or influenza A virus, replication is inhibited (Atkinson et al., 2014; Burns et al., 2009; Gaunt et al., 2016; Karlin et al., 1994; Tulloch et al., 2014). This shows that CpG suppression in diverse RNA viruses is required for efficient replication.\n\nCpG dinucleotides are also suppressed in the HIV-1 genome and multiple studies have shown that they are deleterious for replication (Antzin-Anduetza et al., 2017; Kypr et al., 1989; Shpaer and Mullins, 1990; Takata et al., 2017; Theys et al., 2018; Wasson et al., 2017). Recently, the cellular antiviral protein ZAP was shown to bind regions of HIV-1 RNA with high CpG abundance and target them for degradation, which at least partly explains why this dinucleotide inhibits viral replication (Takata et al., 2017). ZAP (also known as ZC3HAV1) is a component of the innate immune response targeting viral RNAs in the cytoplasm to prevent viral protein synthesis (Li et al., 2015). ZAP inhibits the replication of a diverse range of viruses including retroviruses, alphaviruses, filoviruses, hepatitis B virus and Japanese encephalitis virus as well as retroelements (Bick et al., 2003; Chiu et al., 2018; Gao et al., 2002; Goodier et al., 2015; Mao et al., 2013; Moldovan and Moran, 2015; M\u00fcller et al., 2007; Takata et al., 2017; Zhu et al., 2011). There are two human ZAP isoforms, ZAP-L and ZAP-S (Kerns et al., 2008). Both isoforms contain a N-terminal RNA binding domain containing four CCCH-type zinc finger motifs but ZAP-L also contains a catalytically inactive C-terminal poly(ADP-ribose) polymerase (PARP)-like domain (Chen et al., 2012; Guo et al., 2004; Kerns et al., 2008). Importantly, neither isoform of ZAP has nuclease activity and it likely recruits other cellular proteins to degrade viral RNAs. Identifying and characterizing these cofactors for ZAP is essential to understand how it restricts viral replication.\n\nZAP requires the E3 ubiquitin ligase TRIM25 for its antiviral activity against Sindbis virus and HIV-1 with clustered CpGs (Li et al., 2017; Takata et al., 2017; Zheng et al., 2017). While ZAP has been reported to interact with several components of the 5\u2019\u22123\u2019 and 3\u2019\u22125\u2019 RNA degradation pathways, depletion of these proteins did not substantially increase infectious virus production for HIV-1 containing clustered CpG dinucleotides (Goodier et al., 2015; Guo et al., 2007; Takata et al., 2017; Zhu et al., 2011). This suggests that additional proteins may be required for ZAP to inhibit viral replication. Herein, we identify KHNYN as a cytoplasmic protein that interacts with ZAP and is necessary for CpG dinucleotides to inhibit HIV-1 RNA and protein abundance.\n\n## Results\n\n### KHNYN interacts with ZAP and selectively inhibits HIV-1 containing clustered CpG dinucleotides in a ZAP- and TRIM25-dependent manner\n\nTo identify candidate interaction partners for ZAP, a yeast two-hybrid screen was performed for full-length ZAP-S and ZAP-L using prey fragments from a mixed Pam3CSK4-induced and IFN\u03b2-induced human macrophage cDNA library. Candidate interacting proteins were assigned a Predicted Biological Score (PBS) of A to F (Formstecher et al., 2005): A\u00a0=\u00a0very high confidence in the interaction, B\u00a0=\u00a0high confidence in the interaction and C\u00a0=\u00a0good confidence in the interaction. Scores of D to F are low confidence interactions, non-specific interactions or proven technical artifacts. For ZAP-S, 11 clones were obtained from 60.4 million tested interactions. 10 of these contained a prey fragment encoding KHNYN (Figure 1) and had a PBS\u00a0=\u00a0A. One clone had an insert encoding MARK3 but this was in the antisense orientation and therefore did not receive a score. For ZAP-L, two positive clones were analyzed from 104 million tested interactions. Both of these had an insert encoding KHNYN and had a PBS\u00a0=\u00a0C. KHNYN has two isoforms (KHNYN-1 and KHNYN-2) that contain a N-terminal KH-like domain and a C-terminal NYN endoribonuclease domain (Figure 1) (Anantharaman and Aravind, 2006). The selected interaction domain, which is the amino acid sequence shared by all prey fragments matching KHNYN, comprised amino acids 572\u2013719 of KHNYN-2 for the clones identified in both screens. A yeast two-hybrid screen was then performed using the same library with full length KHNYN-2 as the bait. Nine clones were isolated that encode ZAP and these had a PBS\u00a0=\u00a0A. The selected interaction domain was amino acids 4\u2013352, which is present in both isoforms (Figure 1). Supporting the reproducibility of this interaction, KHNYN has also been identified as a ZAP-interacting factor in large-scale affinity purification\u2013mass spectrometry and in vivo proximity-dependent biotinylation (BioID) screens (Huttlin et al., 2017; Youn et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig1-v1.jpg)\n\n**Figure 1.:** A yeast two-hybrid screen for ZAP-S and ZAP-L interacting factors identified a region in KHNYN-1 and KHNYN-2. The selected interaction domain (SID) is the amino acid sequence shared by all prey fragments and is shown in magenta. A reciprocal yeast two-hybrid screen using KHNYN-2 as the bait identified a region in ZAP-S and ZAP-L. The SID is shown in red.\n\nWe first confirmed the interaction between ZAP and KHNYN by co-immunoprecipitation and found both KHNYN isoforms interacted with both isoforms of ZAP (Figure 2A and B). This interaction was RNase insensitive (Figure 2C). Since ZAP mediates degradation of HIV-1 RNAs with clustered CpG dinucleotides in the cytoplasm (Takata et al., 2017), its cofactors are likely to be localized in this compartment. Therefore, we analyzed the subcellular localization of KHNYN and observed that it localizes to the cytoplasm similar to ZAP (Figure 2D). Its localization was not affected when ZAP was knocked out using CRISPR-Cas9-mediated genome editing.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig2-v1.jpg)\n\n**Figure 2.:** (A) Lysates of HEK293T cells transfected either with pGFP-FLAG, pKHNYN-1-FLAG or pKHNYN-2-FLAG were immunoprecipitated with an anti-ZAP antibody. Post-nuclear supernatants and immunoprecipitation samples were analyzed by immunoblotting for Hsp90, KHNYN-FLAG and ZAP. * indicates a non-specific band. (B) Lysates of HEK293T cells transfected either with pGFP-FLAG, pKHNYN-1-FLAG or pKHNYN-2-FLAG were immunoprecipitated with an anti-FLAG antibody. Post-nuclear supernatants and immunoprecipitation samples were analyzed by immunoblotting for HSP90, KHNYN-FLAG and ZAP. * indicates a non-specific band. (C) Lysates of HEK293T cells transfected with pZAP-L and either pGFP-FLAG, pKHNYN-1-FLAG or pKHNYN-2-FLAG were treated with RNase and then immunoprecipitated with an anti-FLAG antibody. Post-nuclear supernatants and immunoprecipitation samples were analyzed by immunoblotting for HSP90, KHNYN-FLAG and ZAP. * indicates a non-specific band. (D) Panels show representative fields for the localization of KHNYN-1-FLAG or KHNYN-2-FLAG and endogenous ZAP in either 293T Control CRISPR cells expressing a guide RNA targeting LacZ or 293T ZAP guide 1 (ZAP-G1) CRISPR cells. Cells were stained with an anti-FLAG antibody (red), anti-ZAP antibody (green) and DAPI (blue). The scale bar represents 10 \u00b5M. (E\u2013F) HeLa cells were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561 and 500 ng of pGFP-FLAG, pKHNYN-1-FLAG or pKHNYN-2-FLAG. See also Figure 2\u2014figure supplement 1. Culture supernatants were used to infect TZM-bl reporter cells to measure infectivity (E). The bar charts show the average values of three independent experiments normalized to the value obtained for HeLa cells co-transfected with pHIV-1 and pGFP-FLAG. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by a two-tailed unpaired t-test. p-values for GFP verses KHNYN-1 and KHNYN-2 for wild-type HIV-1 are 2.76 \u00d7 10\u22129 and 2.20 \u00d7 10\u22126,\u00a0respectively. p-Values for GFP verses KHNYN-1 and KHNYN-2 for HIV-1EnvCpG86-561 are 1.50 \u00d7 10\u22123 and 1.51 \u00d7 10\u22123, respectively. Gag expression in the media as well as Gag, Hsp90, Env, Actin, KHNYN-FLAG and GFP-FLAG expression in the cell lysates was detected using quantitative immunoblotting (F).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** MacVector ClustalW alignment of nucleotides 1\u2013600 of env from wild-type HIV-1 and HIV-1EnvCpG86-561. CpG dinucleotides introduced through synonymous mutations are highlighted in red.\n\nThe mechanisms that allow a virus to escape the innate immune response often have to be inactivated to study the effect of antiviral proteins. For example, HIV-1 Vpu or Vif have to be mutated to allow Tetherin or APOBEC3 antiviral activity to be analyzed (Malim and Bieniasz, 2012). Since CpG dinucleotides are suppressed in HIV-1, endogenous ZAP does not target the wild-type virus (Takata et al., 2017). However, a ZAP-sensitive HIV-1 can be created by introducing CpGs through synonymous mutations into the env open-reading frame in the viral genome. This makes HIV-1 an excellent system to study the mechanism of action of this antiviral protein because isogenic viruses can be analyzed that differ only in their CpG abundance and therefore ZAP-sensitivity (Takata et al., 2017). To determine if KHNYN overexpression inhibited wild-type HIV-1 or HIV-1 with 36 CpG dinucleotides introduced into env nucleotides 86\u2013561 (HIV-1EnvCpG86-561) (Figure 2\u2014figure supplement 1), each isoform was overexpressed in the context of a single cycle replication assay. As expected, transfection of the HIV-1EnvCpG86-561 provirus into HeLa cells yielded substantially less infectious virus than wild-type HIV-1, which was accounted for by reduced expression of Gag and Env proteins (Figure 2E and F). While KHNYN-1 or KHNYN-2 overexpression decreased wild-type HIV-1 infectivity by\u00a0~5 fold, they decreased HIV-1EnvCpG86-561 infectivity by\u00a0~400 fold (Figure 2E). The inhibition of infectivity by KHNYN-1 or KHNYN-2 correlated with decreases in Gag expression, Env expression, and virion production (Figure 2F). Overall, KHNYN appeared to selectively inhibit HIV-1EnvCpG86-561 infectious virus production.\n\nWe then determined whether ZAP is necessary for KHNYN to inhibit HIV-1 with clustered CpG dinucleotides. Control or ZAP knockout cells (Figure 3A) were co-transfected with pHIV-1 or pHIV-1EnvCpG86-561 and increasing amounts of pKHNYN-1. Wild-type HIV-1 infectious virus production was not affected by ZAP depletion and HIV-1EnvCpG86-561 infectivity was restored in ZAP knockout cells (Figures 3B, 0 ng of KHNYN-1), confirming that ZAP is necessary to inhibit HIV-1 with CpGs introduced in env (Takata et al., 2017). At low levels of KHNYN-1 overexpression (such as 62.5 ng), there was no substantial decrease in infectivity for wild-type HIV-1 while HIV-1EnvCpG86-561 infectivity was inhibited in a ZAP-dependent manner (Figures 3B and 4A). The decrease in infectivity for HIV-1EnvCpG86-561 in control cells transfected with pKHNYN-1 correlated with decreases in Gag expression, Env expression and virion production (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig3-v1.jpg)\n\n**Figure 3.:** (A) ZAP, TRIM25 and Actin expression in HeLa cells, HeLa Control CRISPR cells (expressing a guide RNA targeting the firefly luciferase gene), HeLa ZAP CRISPR guide 1 (ZAP-G1) cells and HeLa TRIM25 CRISPR guide 1 (TRIM25-G1) cells were detected using quantitative immunoblotting. (B\u2013C) HeLa Control CRISPR cells or ZAP-G1 CRISPR cells were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561 and 500 ng of pGFP-FLAG or 31.25 ng, 62.5 ng, 125 ng, 250 ng or 500 ng pKHNYN-1-FLAG plus the amount of pGFP-FLAG required to make 500 ng total. Culture supernatants from the cells were used to infect TZM-bl reporter cells (B). Each point shows the average value of three independent experiments normalized to the value obtained for HeLa Control CRISPR cells co-transfected with pHIV-1 and pGFP-FLAG. Data are represented as mean\u00a0\u00b1\u00a0SD. Gag expression in the media as well as Gag, Hsp90, Env, Actin, KHNYN-FLAG and GFP-FLAG expression in the cell lysates was detected using quantitative immunoblotting (C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C) HeLa Control CRISPR cells or ZAP-G1 CRISPR cells were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561 and 500 ng of pGFP-FLAG or 62.5 ng pKHNYN-1/2-FLAG plus 437.5 ng of pGFP-FLAG. Culture supernatants from the cells were used to infect TZM-bl reporter cells (A). The bar chart shows the average value of five independent experiments normalized to the value obtained for HeLa Control CRISPR cells co-transfected with pHIV-1 and pGFP-GFP. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by a two-tailed unpaired t-test. p-values for GFP verses KHNYN-1 and KHNYN-2 for HIV-1EnvCpG86-561 in Control cells are 6.78 \u00d7 10\u22123 and 7.20 \u00d7 10\u22123, respectively. p-Values for GFP verses KHNYN-1 and KHNYN-2 for HIV-1EnvCpG86-561 in ZAP-G1 cells are 3.22 \u00d7 10\u22121 and 5.33 \u00d7 10\u22121, respectively. RNA was extracted from cell lysates (B) and media (C) and genomic RNA (gRNA) abundance was quantified by qRT-PCR. The bar charts show the average value of five independent experiments normalized to the value obtained for HeLa Control CRISPR cells co-transfected with pHIV-1 and pGFP-GFP. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by a two-tailed unpaired t-test. For HIV-1EnvCpG86-561 genomic RNA in Control cell lysates, the GFP verses KHNYN-1 and KHNYN-2 p-values are 2.14 \u00d7 10\u22122 and 2.30 \u00d7 10\u22122, respectively. For HIV-1EnvCpG86-561 genomic RNA in ZAP-G1 cell lysates, the GFP verses KHNYN-1 and KHNYN-2 p-values are 1.01 \u00d7 10\u22121 and 4.33 \u00d7 10\u22122, respectively. For HIV-1EnvCpG86-561 genomic RNA in Control cell media, p-values for GFP verses KHNYN-1 and KHNYN-2 are 8.97 \u00d7 10\u22124 and 9.38 \u00d7 10\u22124, respectively. For HIV-1EnvCpG86-561 genomic RNA in ZAP-G1 cell media, p-values for GFP verses KHNYN-1 and KHNYN-2 are 6.09 \u00d7 10\u22121 and 1.87 \u00d7 10\u22121, respectively.\n\nNext, we analyzed how ZAP and KHNYN regulate HIV-1 genomic RNA abundance in cell lysates and media. As expected (Takata et al., 2017), HIV-1EnvCpG86-561 genomic RNA abundance was decreased in control cells but was similar to wild-type HIV-1 in ZAP knockout cells (Figure 4B\u2013C, compare GFP samples). In control cells, 62.5 ng of KHNYN-1 or KHNYN-2 inhibited HIV-1EnvCpG86-561 genomic RNA abundance compared to the GFP control (Figure 4B\u2013C). Importantly, KHNYN-1 and KHNYN-2 did not affect wild-type HIV-1 genomic RNA levels and did not substantially inhibit HIV-1EnvCpG86-561 genomic RNA abundance in ZAP knockout cells. This demonstrates that KHNYN targets HIV-1 RNA containing clustered CpG dinucleotides in a ZAP-dependent manner.\n\nTRIM25 is required for ZAP\u2019s antiviral activity, although the mechanism by which it regulates ZAP is unclear (Li et al., 2017; Zheng et al., 2017). To determine if TRIM25 is necessary for the antiviral activity of KHNYN, 62.5 ng of pKHNYN-1 or pKHNYN-2 was co-transfected with pHIV-1 or pHIV-1EnvCpG86-561 in control and TRIM25 knockout cells. Both isoforms of KHNYN inhibited HIV-1EnvCpG86-561 much less potently in TRIM25 knockout cells than control cells and had no effect on wild-type HIV-1 in either cell line (Figure 5A\u2013B). One possible reason that TRIM25 is necessary for KHNYN antiviral activity could be that it regulates the interaction between ZAP and KHNYN. We pulled down KHNYN-FLAG and western blotted for ZAP in control and TRIM25 knockdown cells (Figure 5C). Both isoforms of KHNYN pulled down ZAP in both cell lines, indicating that TRIM25 is not required for the interaction between these proteins. Interestingly, KHNYN also pulled down TRIM25 in control cells (Figure 5C). Therefore, we analyzed whether KHNYN interacted with TRIM25 in control and ZAP knockout cells and observed that both isoforms of KHNYN-FLAG immunoprecipitated TRIM25 in the presence and absence of ZAP (Figure 5D). In sum, KHNYN requires TRIM25 to inhibit HIV-1 containing clustered CpG dinucleotides, but TRIM25 is not necessary for the interaction between ZAP and KHNYN. Furthermore, ZAP, KHNYN and TRIM25 appear to be in a complex together.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013B) HeLa Control CRISPR cells or TRIM25-G1 CRISPR cells were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561 and 500 ng of pGFP-FLAG or 62.5 ng pKHNYN-1-FLAG or pKHNYN-2-FLAG plus 437.5 ng of pGFP-FLAG. Culture supernatants from the cells were used to infect TZM-bl reporter cells (A). The bar charts show the average value of three independent experiments normalized to the value obtained for HeLa Control CRISPR cells co-transfected with pHIV-1 and pGFP-FLAG. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by a two-tailed unpaired t-test. p-values for GFP verses KHNYN-1 and KHNYN-2 for HIV-1EnvCpG86-561 in Control cells are 8.95 \u00d7 10\u22124 and 5.42 \u00d7 10\u22124, respectively. p-values for GFP verses KHNYN-1 and KHNYN-2 for HIV-1EnvCpG86-561 in TRIM25-G1 CRISPR cells are 1.78 \u00d7 10\u22123 and 1.01 \u00d7 10\u22124, respectively. Gag expression in the media as well as Gag, Hsp90, Env, Actin, KHNYN-FLAG and GFP-FLAG expression in the cell lysates was detected using quantitative immunoblotting (B). (C) Lysates of Control and TRIM25 CRISPR HEK293T cells transfected with pGFP-FLAG, pKHNYN-1-FLAG or pKHNYN-2-FLAG were immunoprecipitated with an anti-FLAG antibody. Post-nuclear supernatants and immunoprecipitation samples were analyzed by immunoblotting for HSP90, KHNYN-FLAG, TRIM25 and ZAP. The blots are representative of two independent experiments. (D) Lysates of Control and ZAP CRISPR HEK293T cells transfected with pGFP-FLAG, pKHNYN-1-FLAG or pKHNYN-2-FLAG were immunoprecipitated with an anti-FLAG antibody. Post-nuclear supernatants and immunoprecipitation samples were analyzed by immunoblotting for HSP90, KHNYN-FLAG, TRIM25 and ZAP. * indicates a non-specific band. The blots are representative of two independent experiments.\n\n### The KH-like and NYN domains are necessary for KHNYN antiviral activity\n\nAs its name implies, KHNYN contains a KH-like domain and a NYN domain (Figure 6A). The KH-like domain differs from canonical KH domains due to a potential small metal chelating module containing two cysteines and a histidine inserted into the central region of the domain (Anantharaman and Aravind, 2006). Since this has diverged substantially from a standard KH domain, it has also been called a CGIN1 domain and is only known to be present in two other proteins (Marco and Mar\u00edn, 2009). While most KH domains bind nucleic acids (Nicastro et al., 2015), the insertion in the KH-like domain in KHNYN may disrupt RNA binding and indicate that it has a different function. To analyze the functional importance of the KH-like domain, we deleted it and found that KHNYN-1\u2206KH and KHNYN-2\u2206KH had reduced antiviral activity compared to the wild-type protein (Figure 6B\u2013C). These mutant proteins localized to the cytoplasm and formed foci that were not present for wild-type KHNYN-1 or KHNYN-2 (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic of KHNYN-1 and KHNYN-2 domains and mutations in the NYN domain. (B\u2013C) HeLa cells were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561 and either 500 ng of pGFP-FLAG or 62.5 ng pKHNYN-1/2-FLAG and 437.5 ng of pGFP-FLAG. Culture supernatants were used to infect TZM-bl reporter cells to measure infectivity (B). The bar charts show the average values of three independent experiments normalized to the value obtained for HeLa cells co-transfected with pHIV-1 and pGFP-FLAG. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by a two-tailed unpaired t-test. p-values for KHNYN-1 versus \u0394KH-KHNYN-1, D443N-KHNYN-1, and D524A/D525A-KHNYN-1 for HIV-1EnvCpG86-561 are 1.31 \u00d7 10\u22122, 5.22 \u00d7 10\u22123, and 1.26 \u00d7 10\u22123, respectively. p-values for KHNYN-2 versus \u0394KH-KHNYN-2, D443N-KHNYN-2, and D524A/D525A-KHNYN-2 for HIV-1EnvCpG86-561 are 2.88 \u00d7 10\u22122, 3.26 \u00d7 10\u22122, and 2.56 \u00d7 10\u22124, respectively. Gag expression in the media as well as Gag, Hsp90, Env, Actin, KHNYN-1/2-FLAG and GFP-FLAG expression in the cell lysates was detected using quantitative immunoblotting (C). See also Figure 6\u2014figure supplements 1 and 2.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Panels show representative fields for the localization of KHNYN-1/2-FLAG wild type or mutant proteins in 293T Control CRISPR cells. Cells were stained with an anti-FLAG antibody (red) and DAPI (blue). The scale bar represents 10 \u00b5m.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) MacVector ClustalW alignment of the NYN domains from KHNYN and ZC3H12A. The amino acid identity and similarity is shown. The four aspartic acid residues that coordinate the magnesium ion in the active site are highlighted in red. (B) MacVector ClustalW alignment of NYN domains from KHNYN, N4BP1, ZC3H12A, ZC3H12B, ZC3H12C, ZC3H12D and MARF1. The four aspartic acid residues that coordinate the magnesium ion in the active site are highlighted in red.\n\nNYN domains have endonuclease activity and belong to the PIN nuclease domain superfamily. There are at least eight human proteins with a potentially active NYN domain and they have been structurally characterized in several proteins including ZC3H12A and MARF1 (Matelska et al., 2017; Matsushita et al., 2009; Nishimura et al., 2018; Xu et al., 2012; Yao et al., 2018). These domains contain a negatively charged active site with four aspartic acid residues coordinating a magnesium ion, which activates a water molecule for nucleophilic attack of the phosphodiester group on the target RNA. Mutation of these acidic residues inhibits nuclease activity by disrupting the bonds that directly or indirectly interact with the magnesium ion. ZC3H12A (also known as MCPIP1 and Regnase) is a RNA binding protein that, similar to ZAP, contains a CCCH zinc finger domain and degrades cellular and viral RNAs (Takeuchi, 2018). The NYN domain in ZC3H12A has 56% identity to the NYN domain in KHNYN (Figure 6\u2014figure supplement 2A). ZC3H12A containing a D141N mutation in the NYN domain had decreased endonuclease activity and did not degrade RNA containing the IL-6 3\u2019 UTR (Matsushita et al., 2009). MARF1 is required for meiosis and retrotransposon silencing in oocytes and a D426A/D427A mutation inhibited its endoribonuclease activity (Nishimura et al., 2018; Su et al., 2012). We made these equivalent mutations in KHNYN (Figure 6A and Figure 6\u2014figure supplement 2B) and tested their ability to inhibit HIV-1EnvCpG86-561 gene expression and infectious virus production (Figure 6B\u2013C). KHNYN-1 D443N and KHNYN-2 D484N had substantially decreased activity against HIV-1EnvCpG86-561. Strikingly, KHNYN-1 D524A/D525A and KHNYN-2 D565A/D566A had no antiviral activity even though they were expressed at similar levels to the wild-type KHNYN. KHNYN proteins with mutations in the NYN domain localized to the cytoplasm, indicating that disruption of this domain\u2019s activity did not substantially affect their subcellular localization (Figure 6\u2014figure supplement 1).\n\n### KHNYN is necessary for CpG dinucleotides to inhibit HIV-1 RNA and protein expression\n\nTo determine if KHNYN is required for CpG dinucleotides to inhibit infectious HIV-1 production, we depleted it using CRISPR-Cas9-mediated genome editing using single-guide RNAs (sgRNAs) targeting two independent sequences in KHNYN (Figure 7A-C = sgRNA 1, Figure 7\u2014figure supplement 1\u00a0= sgRNA 2). We were unable to identify an antibody that detected endogenous KHNYN. However, FLAG-tagged KHNYN-1 and KHNYN-2 were depleted in the bulk population of cells expressing each sgRNA as well as two clonal cell lines from each bulk population (Figure 7A and Figure 7\u2014figure supplement 1A). Importantly, when the CRISPR PAM sequence was mutated in the KHNYN plasmids, KHNYN-1 and KHNYN-2 were no longer depleted. The relevant region of KHNYN was also sequenced to identify the insertion or deletion in the bulk populations as well as the clones and genetic alterations that inactive the protein were identified in each (Figure 7\u2014figure supplement 2). These KHNYN CRISPR cells were then transfected with pHIV-1 or pHIV-1EnvCpG86-561. In the KHNYN CRISPR cells, the CpG dinucleotides in HIV-1EnvCpG86-561 no longer inhibited infectious virus production, Gag expression or Env expression (Figure 7B\u2013C, Figure 7\u2014figure supplement 1B\u2013C). Wild-type HIV-1 Gag expression, Env expression and infectious virus production was not altered in the KHNYN CRISPR cells compared to the control cells. Overall, the KHNYN CRISPR cells phenocopied the ZAP CRISPR cells (Figure 7B\u2013C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig7-v1.jpg)\n\n**Figure 7.:** (A) 100 ng pKHNYN-1-FLAG, pKHNYN-2-FLAG, pKHNYN-1-FLAG with a mutation in the PAM that prevents it from being targeted by KHNYN guide 1 (pKHNYN-1-CRG1-FLAG) or pKHNYN-2-CRG1-FLAG plus 400 ng of pGFP were transfected into HeLa Control CRISPR cells, KHNYN guide 1 (KHNYN-G1) CRISPR bulk cells or KHNYN-G1 CRISPR single cell clones A and B. KHNYN-FLAG abundance was measured by quantitative western blotting. (B\u2013C) HeLa Control CRISPR cells, ZAP-G1 CRISPR cells, KHNYN guide 1 (KHNYN-G1) CRISPR bulk cell population or single cell clones A and B were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561 and 500 ng pGFP. Culture supernatants were used to infect TZM-bl reporter cells to measure infectivity (B). The bar charts show the average value of six independent experiments normalized to the value obtained for HeLa Control CRISPR cells co-transfected with pHIV-1 and pGFP. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by a two-tailed unpaired t-test. p-values for HIV-1EnvCpG86-561 in Control cells versus ZAP-G1, KHNYN-G1 Bulk, KHNYN-G1 Clone A, and KHNYN-G1 Clone B CRISPR cells are 8.23 \u00d7 10\u22126, 2.81 \u00d7 10\u22126, 1.60 \u00d7 10\u22126, and 2.24 \u00d7 10\u22126, respectively. Gag expression in the media as well as Gag, Hsp90, Env, and Actin expression in the cell lysates was detected using quantitative immunoblotting (C). (D\u2013E) HeLa Control CRISPR cells, ZAP-G1 CRISPR cells and KHNYN G1 CRISPR clone B were transfected with 650 ng pMLV, 250ng p2.87 Vpu and 100 ng pGFP. Gag expression in the media (D) as well as Gag and Hsp90 expression in the cell lysates (E) was detected using quantitative immunoblotting. The bar charts show the average value of five independent experiments normalized to the value obtained for HeLa Control CRISPR cells. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by a two-tailed unpaired t-test. p-values for virions from Control cells versus ZAP-G1 and KHNYN-G1 Clone B CRISPR cells without type I IFN are 1.28 \u00d7 10\u22123 and 1.50 \u00d7 10\u22123, respectively, and 4.17 \u00d7 10\u22123 and 1.92 \u00d7 10\u22122 with type I IFN treatment. p-values for the cell lysates from Control cells versus ZAP-G1 and KHNYN-G1 Clone B CRISPR cells are 1.78 \u00d7 10\u22122 and 8.01 \u00d7 10\u22123 without type I interferon, respectively, and 6.37 \u00d7 10\u22122 and 1.73 \u00d7 10\u22124 with type I interferon treatment.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) 100 ng pKHNYN-1-FLAG, pKHNYN-2-FLAG, pKHNYN-1-FLAG with a mutation in the PAM that prevents it from being targeted by KHNYN guide 2 (pKHNYN-1-CRG2-FLAG) or pKHNYN-2-CRG2-FLAG plus 400 ng pGFP were transfected into HeLa Control CRISPR cells, KHNYN guide 2 (KHNYN-G2) CRISPR bulk cells or KHNYN-G2 CRISPR single cell clones A and B. KHNYN-FLAG abundance was measured by quantitative immunoblotting. (B\u2013C) HeLa Control CRISPR cells, KHNYN-G2 CRISPR bulk cells or KHNYN-G2 CRISPR single cell clones A and B were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561 and 500 ng pGFP. Culture supernatants were used to infect TZM-bl reporter cells to measure infectivity (B). The bar charts show the average value of three independent experiments normalized to the value obtained for HeLa Control CRISPR cells co-transfected with pHIV-1 and pGFP. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by two-tailed unpaired t-test. p-values for HIV-1EnvCpG86-561 in Control cells versus KHNYN-G2 Bulk, KHNYN-G2 Clone A, and KHNYN-G2 Clone B CRISPR cells are 7.98 \u00d7 10\u22123, 1.49 \u00d7 10\u22122, and 3.44 \u00d7 10\u22122, respectively. Gag expression in the media as well as Gag, Hsp90, Env, and Actin expression in the cell lysates was detected using quantitative immunoblotting (C).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A\u2013B) The nucleotide sequence surrounding the guide RNA sequence for KHNYN guide 1 (A) and KHNYN guide 2 (B). The sequence in the parental cells not transduced with lentiCRISPRv2 (untransduced) as well as lentiCRISPRv2 expressing a guide RNA targeting luciferase (Control), the bulk population of cells expressing either KHNYN guide 1 or guide 2 as well as two single-cell clones from each bulk population. The numbers to the right of each sequence represent the frequency that the sequence was identified in the total number of sequences for the specific cell line.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A\u2013B) HeLa Control CRISPR cells, ZAP-G1 CRISPR cells, TRIM25 CRISPR cells and KHNYN-G1 CRISPR clone B were infected with Sindbis virus and the amount of infectious virus was measured in the cell supernatants 8, 16, 24 and 32 hr post-infection. (A) The relative amount of infectious virus at 24 hr. The bar chart shows the average value of three independent experiments normalized to the value obtained for HeLa Control CRISPR cells. Data are represented as mean\u00a0\u00b1\u00a0SD. (B) The three independent Sindbis virus replication curves.\n\nWe also analyzed the effect of KHNYN depletion on murine leukemia virus (MLV). While most retroviruses are suppressed in CpG abundance, the degree of this suppression varies between the different genera (Berkhout et al., 2002). HIV-1NL4-3 is highly suppressed (9 CpGs/kb; 0.2 observed/expected), which is conserved in HIV-1 (Berkhout et al., 2002; Kypr et al., 1989; Shpaer and Mullins, 1990). However, the CpG abundance in MLV is much less suppressed (35 CpGs/kb; 0.5 observed/expected) and ZAP was initially identified as an antiviral protein based on its ability to bind MLV RNA and target it for degradation (Gao et al., 2002; Guo et al., 2004; Guo et al., 2007). To determine if KHNYN inhibits MLV, control, ZAP and KHNYN CRISPR cells were co-transfected with pMLV, p2.87 Vpu (which encodes a highly active HIV-1 Vpu to counteract endogenous Tetherin expression in these cells [Neil et al., 2008; Pickering et al., 2014]) and pGFP. MLV Gag expression and virion production were measured by immunoblotting. Since ZAP is a type I interferon-stimulated gene (Shaw et al., 2017), MLV Gag expression and virion production were also analyzed after type I interferon treatment. There was a small but reproducible increase in MLV Gag expression and virion production in the ZAP and KHNYN CRISPR cells in the absence of type I interferon (Figure 7D). However, after type I interferon treatment, MLV virion production was decreased to almost undetectable levels in the control CRISPR cells but was substantially higher in the ZAP and KHNYN CRISPR cells (Figure 7E).\n\nThe Sindbis virus genome is not substantially depleted in CpG dinucleotides (58 CpGs/kb; 0.9 observed/expected) and is restricted by ZAP (Bick et al., 2003). However, unlike retroviruses, the predominant ZAP antiviral activity for alphaviruses is to inhibit viral RNA translation, although there may be an additional effect on RNA stability (Bick et al., 2003; Kozaki et al., 2015). As expected (Bick et al., 2003; Kozaki et al., 2015; Li et al., 2017; Zheng et al., 2017), depletion of TRIM25 and ZAP substantially increased Sindbis virus replication (Figure 7\u2014figure supplement 3). In contrast, there was no substantial increase in Sindbis virus replication in the KHNYN CRISPR cells. Thus, KHNYN appears to be required for the restriction of retroviral genomes, but not all ZAP-sensitive RNA viruses.\n\nWe then analyzed HIV-1 genomic RNA abundance in the KHNYN CRISPR cells. Similar to HIV-1 protein expression and infectivity, HIV-1EnvCpG86-561 genomic RNA abundance was similar in the cell lysate and media to wild-type HIV-1 (Figure 8A and C), indicating that the CpG dinucleotides no longer inhibited RNA abundance. As expected, nef mRNA abundance was not affected by the introduction of CpG dinucleotides in env or by KHNYN depletion since it is a fully spliced mRNA that does not contain the introduced CpGs (Figure 8B). The wild-type HIV-1 genomic RNA abundance was not altered in the KHNYN CRISPR cells compared to the control cells, further showing the specific effect of KHNYN for viral RNA containing CpG dinucleotides.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig8-v1.jpg)\n\n**Figure 8.:** (A\u2013C) HeLa Control CRISPR cells, ZAP-G1 CRISPR cells, KHNYN-G1 CRISPR bulk cells or two independent clones were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561 and 500 ng pGFP-FLAG. RNA was extracted from cell lysates (A\u2013B) and media (C). Genomic RNA (gRNA) (A, C) or nef mRNA (B) abundance was quantified by qRT-PCR. The bar charts show the average value of three independent experiments normalized to the value obtained for HeLa Control CRISPR cells co-transfected with pHIV-1 and pGFP-FLAG. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by a two-tailed unpaired t-test. p-values for HIV-1EnvCpG86-561 genomic RNA in Control cell versus ZAP-G1, KHNYN-G1 Bulk, KHNYN-G1 Clone A, and KHNYN-G1 Clone B CRISPR cell lysates are 2.98 \u00d7 10\u22122, 3.70 \u00d7 10\u22122, 4.26 \u00d7 10\u22122, and 1.30 \u00d7 10\u22124, respectively. p-Values for HIV-1EnvCpG86-561nef mRNA in Control cell versus ZAP-G1, KHNYN-G1 Bulk, KHNYN-G1 Clone A, and KHNYN-G1 Clone B CRISPR cell lysates are 0.29, 0.54, 0.90 and 0.42, respectively. p-Values for HIV-1EnvCpG86-561 genomic RNA in Control cell versus ZAP-G1, KHNYN-G1 Bulk, KHNYN-G1 Clone A, and KHNYN-G1 Clone B CRISPR cell media are 1.65 \u00d7 10\u22122, 8.64 \u00d7 10\u22123, 2.82 \u00d7 10\u22123, and 3.54 \u00d7 10\u22124, respectively.\n\nTo determine the specificity of the KHNYN knockdown, we titrated CRISPR-resistant pKHNYN-1 or pKHNYN-2 into the KHNYN CRISPR cells. Even very low levels of KHNYN-1 or KHNYN-2 restored selective inhibition of HIV-1EnvCpG86-561 in these cells (Figure 9A\u2013B) and KHNYN-1 was consistently slightly more active than KHNYN-2. This shows that both isoforms are capable of inhibiting infectious virus production of HIV-1 containing clustered CpG dinucleotides. We also analyzed whether KHNYN with the KH-like domain deleted or the putative catalytic mutations in the NYN domain could inhibit HIV-1EnvCpG86-561 infectious virus production in the CRISPR cells. Expression of 31.25 ng of KHNYN-1 in the KHNYN CRISPR cells inhibited HIV-1EnvCpG86-561 (Figure 9C\u2013D) and all of the mutations substantially reduced KHNYN antiviral activity. In sum, endogenous KHNYN is required for CpG dinucleotides to inhibit HIV-1 infectious virus production.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/46767/elife-46767-fig9-v1.jpg)\n\n**Figure 9.:** (A\u2013B) HeLa KHNYN-G1 CRISPR clone B cells were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561 and 500 ng of pGFP-FLAG or 31.25 ng, 62.5 ng, 125 ng, 250 ng or 500 ng of pKHNYN-1-CRG1-FLAG or pKHNYN-2-CRG1-FLAG plus the amount of pGFP-FLAG required to make 500 ng total. Culture supernatants from the cells were used to infect TZM-bl reporter cells (A). Each point shows the average value of three independent experiments normalized to the value obtained for HeLa Control CRISPR cells co-transfected with pHIV-1 and pGFP. Data are represented as mean\u00a0\u00b1\u00a0SD. Gag expression in the media as well as Gag, Hsp90, Env, Actin, KHNYN-FLAG and GFP-FLAG expression in the cell lysates was detected using quantitative immunoblotting (B). (C\u2013D) HeLa KHNYN-G1 CRISPR clone B cells were transfected with 500 ng pHIV-1 or pHIV-1EnvCpG86-561, 468.75 ng of pGFP-FLAG and 31.25 ng of pKHNYN-1-CRG1-FLAG expressing either wild-type or mutant proteins. Culture supernatants from the cells were used to infect TZM-bl reporter cells (C). Each point shows the average value of seven independent experiments normalized to the value obtained for HeLa Control CRISPR cells co-transfected with pHIV-1 and pGFP. Data are represented as mean\u00a0\u00b1\u00a0SD. *p<0.05 as determined by a two-tailed unpaired t-test. p-Values for HIV-1EnvCpG86-561 with KHNYN-1-CRG1 versus \u0394KH-KHNYN-1-CGR1, D443N-KHNYN-1-CGR1 and D524A/D525A-KHNYN-1-CGR1 are 2.56 \u00d7 10\u22125, 1.95 \u00d7 10\u22124, and 2.12 \u00d7 10\u22124, respectively. Gag expression in the media as well as Gag, Hsp90, Env, Actin, KHNYN-FLAG and GFP-FLAG expression in the cell lysates was detected using quantitative immunoblotting (D).\n\n## Discussion\n\nSeveral members of the CCCH zinc finger domain protein family target viral and/or cellular mRNAs for degradation (Fu and Blackshear, 2017). For example, ZC3H12A degrades pro-inflammatory cytokine mRNAs and also inhibits the replication of several viruses, including HIV-1 and hepatitis C virus (Lin et al., 2013; Lin et al., 2014; Liu et al., 2013; Matsushita et al., 2009). It contains a CCCH zinc finger domain as well as a NYN endonuclease domain, which allows it to degrade specific RNAs (Matsushita et al., 2009; Xu et al., 2012). ZAP has four CCCH zinc finger domains and specifically interacts with CpG dinucleotides in RNA (Gao et al., 2002; Guo et al., 2004; Takata et al., 2017). However, it does not contain nuclease activity. While ZAP has been reported to directly or indirectly interact with components of the 5\u2019\u22123\u2019 and 3\u2019\u22125\u2019 degradation pathways including DCP1-DCP2, XRN1, PARN and the exosome, knockdown of several proteins in these pathways did not substantially rescue infectious virus production of HIV-1 containing clustered CpG dinucleotides (Goodier et al., 2015; Guo et al., 2007; Takata et al., 2017; Zhu et al., 2011). Therefore, we hypothesized that ZAP may interact with additional unidentified proteins that regulate viral RNA degradation.\n\nHerein, we have identified that KHNYN is an essential ZAP cofactor that inhibits HIV-1 gene expression and infectious virus production when the viral RNA contains clustered CpG dinucleotides. KHNYN overexpression inhibits genomic RNA abundance, Gag expression, Env expression and infectious virus production for HIV-1 containing clustered CpG dinucleotides. This activity requires ZAP and TRIM25. Furthermore, depletion of KHNYN using CRISPR-Cas9 specifically increased genomic RNA abundance, Gag expression, Env expression and infectious virus production for HIV-1 containing clustered CpG dinucleotides. This indicates that KHNYN is essential for CpG dinucleotides to inhibit infectious virus production. Similarly, KHNYN depletion increased MLV Gag expression and virion production. However, Sindbis virus replication was not substantially increased in the KHNYN knockout cells. The difference between the requirement for KHNYN to inhibit retroviruses versus Sindbis virus may be because the antiviral effect for retroviruses is predominantly at the level of RNA stability and for alphaviruses it is predominately at the level of translation (Bick et al., 2003; Gao et al., 2002; Guo et al., 2004; Guo et al., 2007; MacDonald et al., 2007). A mechanistic explanation for why the major antiviral effect of ZAP appears to be promoting RNA degradation for some viruses and inhibiting translation for other viruses remains unclear, although ZAP has been reported to inhibit translation initiation by interfering with the interaction between eIF4A and eIF4G (Zhu et al., 2012). Therefore, KHNYN may not be required for ZAP to inhibit translation.\n\nWe hypothesize that a complex containing ZAP and KHNYN binds HIV-1 CpG-containing RNA. ZAP and KHNYN could directly interact to form a heterodimer or there could be other factors mediating this interaction. The interaction between ZAP and KHNYN has been detected using several different assays including yeast-two-hybrid, co-immunoprecipitation, affinity purification\u2013mass spectrometry (Huttlin et al., 2017) and BioID (Youn et al., 2018). If there is an unknown factor mediating this interaction, it would have to present in the yeast-two-hybrid assay. It remains unclear how TRIM25 regulates ZAP, but it is not required for ZAP and KHNYN to interact. Interestingly, TRIM25 co-immunoprecipitates with KHNYN and the ZAP antiviral complex may simultaneously consist of all three proteins. ZAP and TRIM25 are interferon-stimulated genes while KHNYN is not induced by interferon in human cells (Shaw et al., 2017). Whether KHNYN is regulated by type I interferons or viral infection in a different way, such as post-translational modification, is not known.\n\nThe zinc finger RNA binding domains in ZAP could target KHNYN to CpG regions in viral RNA. This would allow the endonuclease domain in KHNYN to cleave this RNA, thereby inhibiting viral RNA abundance. Conceptually, the ZAP-KHNYN complex could function similarly to ZC3H12A, but with the RNA binding and endonuclease domains divided between the two proteins. The NYN domain in KHNYN could cleave HIV-1 RNA containing CpG dinucleotides similar to how ZC3H12A cleaves a specific site in the 3\u2019 UTR of the IL-6 mRNA (Matsushita et al., 2009). While we do not yet have evidence that the NYN domain in KHNYN is an active endonuclease domain, it is highly conserved with the active NYN domain in ZC3H12A and is required for KHNYN antiviral activity. Strikingly, mutation of two conserved aspartic acid residues in the NYN domain predicted to coordinate a magnesium ion necessary for nucleophilic attack of the target RNA eliminated KHNYN antiviral activity. However, biochemical and structural studies will be necessary to determine the specific nature of the interaction between ZAP, KHNYN, TRIM25 and RNA and how these interactions promote viral RNA degradation.\n\nAn increasingly common theme for RNA decay is that endonucleic and exonucleic degradation pathways work together to fully degrade RNAs. For example, nonsense-mediated decay (NMD) targets mRNAs that do not efficiently terminate translation at the stop codon and uses up to four mechanisms to degrade these mRNAs: endonucleic cleavage, deadenylation, decapping and exonucleic degradation (Lykke-Andersen and Jensen, 2015). In this pathway, the endonuclease SMG6 interacts with the core regulatory protein UPF1 and cleaves mRNA near a premature termination codon. The 5\u2019 and 3\u2019 cleavage fragments are then degraded by the 5\u2019\u22123\u2019 exonuclease XRN1 and the 3\u2019\u22125\u2019 exonuclease exosome complex. The CCR4\u2013NOT deadenylase complex and DCP1-DCP2 decapping complex are recruited by proteins in the NMD complex including UPF1, SMG5, SMG7 and PNRC2. Similarly, the 5\u2019\u22123\u2019 and 3\u2019\u22125\u2019 degradation pathway components previously shown to interact with ZAP could work in conjunction with KHNYN-mediated endonucleic decay (Goodier et al., 2015; Guo et al., 2007; Zhu et al., 2011). In this model, KHNYN would initiate cleavage of the viral RNA and the exonucleic pathways would then degrade the resulting RNA fragments. Identifying the full complement of ZAP-interacting factors and characterizing how these target viral RNAs for degradation will be an exciting area of future investigation.\n\nAnother important area of future research will be to determine how KHNYN and other cellular proteins that contain an NYN endonuclease domain inhibit the replication of different viruses in different cell types with and without interferon treatment. The interferon-stimulated gene N4BP1, which is a KHNYN paralog (Anantharaman and Aravind, 2006), was recently identified to genetically interact with ZAP in a CRISPR-based screen to identify interferon-induced antiviral proteins targeting HIV-1 (OhAinle et al., 2018). In the monocytic THP-1 cell line, depletion of N4BP1 led to a small increase in wild-type HIV-1 replication. However, N4BP1 depletion did not inhibit replication of the alphavirus Semliki Forest virus, indicating that it may have a virus specific effect. While ZAP inhibits a range of viruses in different cell types, it remains unknown whether its cofactor requirements are cell type dependent. In this study, we have analyzed the antiviral activity of ZAP and KHNYN on HIV-1 and MLV in HeLa cells, but the role of NYN domain-containing proteins in targeting viral RNAs for degradation may be an important component of the antiviral innate immune response in a variety of cell types. It will also be interesting to determine if proteins containing an endonuclease domain other than KHNYN interact with CCCH zinc finger proteins to mediate antiviral activity. There are 57 human CCCH zinc finger proteins (Fu and Blackshear, 2017). At least 15 of these proteins are known to promote RNA decay and, including ZAP, six human CCCH zinc finger proteins are antiviral (Fu and Blackshear, 2017). Identifying the full complement of CCCH zinc finger proteins that inhibit viral replication and determining whether they require proteins containing endonuclease domains such as KHNYN or N4BP1 for this activity will increase our understanding of antiviral responses targeting viral RNA.\n\n## Materials and methods\n\n### Plasmids\n\nAll primers were ordered from Eurofins. Polymerase chain reactions (PCR) for cloning steps were performed with Phusion High Fidelity polymerase (New England Biolabs). KHNYN-2 (NM_001290256) was synthesized by GenScript. KHNYN-1 was cloned by amplifying the nucleotides 123\u20132157 from KHNYN-2 and sub-cloning the PCR product into the pcDNA3.1 (+) backbone using the HindIII site in the vector and SbfI site in the KHNYN open reading frame. KHNYN-1 \u0394KH, D443N, D524A/D525A, -CRG1, -CRG2 and KHNYN-2 \u0394KH, D484N, D565A/D566A, -CRG1, -CRG2 were generated via overlap extension PCR and subsequently sub-cloning the PCR product into the pcDNA3.1 (+) backbone as described above. pGFP-FLAG was cloned by amplifying GFP from pcDNA3.1-GFP\u00a0(Swanson et al., 2010) and cloning it into pcDNA3.1. Diagnostic restriction enzyme digestion and DNA sequencing (Eurofins, Genewiz) was used to ensure the correct identity of modified sequences inserted into plasmids. pHIV-1NL4-3 contains the HIV-1 provirus in the pGL4 vector (Antzin-Anduetza et al., 2017). To generate HIV-1EnvCpG86-561, we synthesized a HIV-1NL4-3 EcoRI/StuI DNA fragment with synonymous mutations that inserted 36 CpG dinucleotides into env (Figure 2\u2014figure supplement 1). This DNA fragment was digested with EcoRI and StuI and inserted into the corresponding sites of pHIV-1NL4-3. pMLV is pNCS, which contains the Moloney murine leukemia virus provirus DNA (Yueh and Goff, 2003). pCR3.1 2.87 Vpu contains the HA-tagged codon-optimized HIV-1 Vpu 2.87 (Pickering et al., 2014).\n\n### Cell lines\n\nHeLa and HEK293T cells were obtained from the ATCC and were maintained in high glucose DMEM supplemented with GlutaMAX, 10% fetal bovine serum, 20 \u00b5g/mL gentamicin or 100 U/ml penicillin and 100 \u03bcg/ml streptomycin and incubated with 5% CO2 at 37\u00b0C. BHK-21 cells were obtained from ATCC and were maintained in GMEM supplemented with 10% fetal bovine serum, 10% tryptose phosphate broth, and penicillin/streptomycin. Their identity has not been authenticated and they are routinely tested for mycoplasma contamination with all tests negative. CRISPR guides targeting the firefly luciferase gene, lacZ gene, human TRIM25, ZAP (also known as ZC3HAV1), and KHNYN genes were cloned into BsmBI restriction enzyme sites in the lentiviral vector genome plasmid lentiCRISPRv2\u00a0(Sanjana et al., 2014). The CRISPR guide sequences are: LacZ-G1: 5\u2019- CGA TTA AGT TGG GTA ACG CC \u22123\u2019, Luciferase-G1: 5\u2019-CTT TAC CGA CGC ACA TAT CG-3\u2019, TRIM25-G1: 5\u2019-GAG CCG GTC ACC ACT CCG TG \u22123\u2019, ZAP-G1: 5\u2019- ACT TCC ATC TGC CTT ACC GG \u22123\u2019, KHNYN-G1: 5\u2019-GGG GGT GAG CGT CCT TCC GA-3\u2019, KHNYN-G2: 5\u2019-CAG ACA CCG CAA AGC GAT CT-3\u2019. LentiCRISPR vectors encoding guide RNAs targeting KHNYN or LacZ were produced in HEK293T cells seeded in a 10 cm dish and transfected using 100 ul PEI with 8 \u00b5g of lentiCRISPRv2-Guide, 8 \u00b5g of pCRV1-HIV-Gag Pol (Neil et al., 2008) and 4 \u00b5g of pCMV-VSV-G (Neil et al., 2008). Lentiviral vectors encoding guide RNAs targeting ZAP or TRIM25 were produced by transfecting HEK293T cells seeded in a six-well plate using 10 \u00b5l PEI with 0.5 \u00b5g pVSV-G (Fouchier et al., 1997), 1.0 \u00b5g pCMV\u2206R8.91 (Zufferey et al., 1997), and 1.0 \u00b5g LentiCRISPRv2-Guide. Virus containing supernatant was harvested 48 hr after transfection, rendered cell-free via filtration through 0.45 \u00b5M filters (Millipore) and used to transduce HeLa or HEK293T cells followed by selection in puromycin.\n\n### Yeast two-hybrid screen\n\nThe yeast two-hybrid screen was performed by Hybrigenics Services, S.A.S., Paris, France (http://www.hybrigenics-services.com). Full length ZAP-S, ZAP-L and KHNYN-2 were PCR-amplified and cloned into pB27 as a C-terminal fusion to LexA. These constructs were used as a bait to screen a random-primed Induced Macrophages cDNA library constructed into pP6. pB27 and pP6 derive from the original pBTM116 (Vojtek and Hollenberg, 1995) and pGADGH (Bartel and Fields, 1995) plasmids, respectively. Clones were screened using a mating approach with YHGX13 (Y187 ade2-101::loxP-kanMX-loxP, mat\u03b1) and L40\u2206Gal4 (mata) yeast strains as previously described (Fromont-Racine et al., 1997). His\u00a0+\u00a0colonies were selected on a medium lacking tryptophan, leucine and histidine. Because KHNYN-2 had some autoactivating activity, the selection medium was supplemented with 10 mM 3-Aminotriazol.\n\nThe prey fragments of the positive clones were amplified by PCR and sequenced at their 5\u2019 and 3\u2019 junctions. The resulting sequences were used to identify the corresponding interacting proteins in the GenBank database (NCBI) using a fully automated procedure. A confidence score (PBS, for Predicted Biological Score) was attributed to each interaction as previously described (Formstecher et al., 2005). The PBS relies on two different levels of analysis. First, a local score takes into account the redundancy and independency of prey fragments, as well as the distribution of reading frames and stop codons in overlapping fragments. Second, a global score takes into account the interactions found in all the screens performed at Hybrigenics using the same library. This global score represents the probability of an interaction being nonspecific. The scores were divided into six categories: A (highest confidence) to D (lowest confidence) plus category E that demarcates interactions involving highly connected prey domains previously found several times in screens performed on libraries derived from the same organism and category F that indicates highly connected domains that have been confirmed as false-positives. The PBS scores have been shown to positively correlate with the biological significance of interactions (Rain et al., 2001; Wojcik et al., 2002).\n\n### Transfections\n\nHeLa and HEK293T cells were grown to 70% confluence in six-well plates. HeLa cells were transfected according to the manufacturer\u2019s instructions using TransIT-LT1 (Mirus) at the ratio of 3 \u00b5L TransIT- LT1 to 1 \u00b5g DNA. HEK293T cells were transfected according to the manufacturer\u2019s instructions using PEI (1 mg/mL) (Sigma-Aldrich) at the ratio of 4 \u00b5L PEI to1 \u00b5g DNA. For the HIV-1 experiments, 0.5 \u00b5g pHIV-1 and the designated amount of pKHNYN-FLAG, pGFP-FLAG or pGFP (Swanson et al., 2010) were transfected for a total of 1 \u00b5g DNA. For the MLV experiments, 0.65 \u00b5g pMLV, 0.25 \u00b5g pCR3.1 2.87 Vpu and 0.10 \u00b5g pGFP were transfected. The transfection medium was replaced with fresh medium after a 6 hr incubation (HEK293T) or 24 hr incubation (HeLa).\n\n### Analysis of protein expression by immunoblotting\n\nHeLa cells were seeded on six-well plates and transfected the following day with as described above. Approximately 48 hr post-transfection, HeLa cells were lysed in radioimmunoprecipitation assay (RIPA) buffer (150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 1% sodium deoxycholate, 0.1% SDS, 10 mM Tris\u2013HCl pH 7.5) supplemented with complete protease inhibitor (Roche) and sheared using a 0.25G needle. Media was filtered through a 0.45 \u00b5M filter and virions were pelleted for 2 hr at 20,000 x g through a 20% sucrose cushion in phosphate-buffered saline (PBS) solution. The pellet was resuspended in 2X loading buffer (60 mM Tris\u2013HCl pH 6.8, 2% sodium dodecyl sulfate (SDS), 10% glycerol, 10% \u03b2-mercaptoethanol, 0.1% bromophenol blue). Cell lysates and virions were resolved by 10% SDS-polyacrylamide gel electrophoresis (PAGE), transferred to a nitrocellulose membrane (GE Healthcare) and blocked in 1% non-fat milk in PBS with 0.1% Tween 20 (Fischer Bioreagents). Primary antibodies were incubated for 2 hr at room temperature. After washing in PBS, blots were incubated for 1 hr with the appropriate secondary antibody. Bound antibodies were visualized on the LI-COR (Odyssey Fc) measuring the immunofluorescence or using Amersham ECL Prime Western Blotting Detection reagent (GE Lifesciences) for HRP-linked antibodies using an ImageQuant (LAS4000 Mini). For the co-immunoprecipitation experiments, lysates were resolved using precast Mini-PROTEAN TGX gels 8\u201316% gradient gels (Bio-Rad) and transferred to nitrocellulose membranes (Bio-Rad). Antibodies used in study were 1:50 HIV- one anti-p24Gag\u00a0(Chesebro et al., 1992), 1:3000 anti-HIV-1 gp160/120 Rabbit (ADP421; Centralized Facility for AIDS Reagents (CFAR)), 1:10,0000 anti-HSP90 (sc7947, Santa Cruz Biotechnology), 1:5000 anti-HSP90 Rabbit (GeneTex, GTX109753), 1:4000 anti-HSP90 Mouse (SantaCruz, sc-515081), 1:5000 anti-ZAP (Abcam, ab154680), 1:1000 anti-\u03b2-Actin Mouse (Sigma, A2228), 1:2500 anti-DYKDDDDK (Rabbit) (Cell Signaling, 14793), 1:2500 anti-FLAG (Mouse) (Sigma, F1804), 1:2500 anti-FLAG (Rabbit) (Sigma, F7425), 1:10000 anti-TRIM25 (Abcam, ab167154), 1:10000 anti-MLV p30 (Rat) (ATCC CRL-1912) (Chesebro et al., 1983), 1:10,000 Dylight 800- conjugated secondary antibodies (Cell Signaling Technology, 5151S and 5257S), 1:5000 anti-rabbit HRP (Cell Signaling Technology, 7074), 1:5000 anti-mouse HRP (Cell Signaling Technology, 7076), 1:4000 anti-rabbit IRDye 800CW (LI-COR, 926\u201332211) or 1:4000 anti-mouse IRDye 680RD (LI-COR, 926\u201368070).\n\n### TZM-bl infectivity assay\n\nMedia was recovered approximately 48 hr post-transfection and cell-free virus stocks were generated by filtering the media through 0.45 \u00b5M filters (Millipore). The TZM-bl indicator cell line was used to quantify the amount of infectious virus (Derdeyn et al., 2000; Platt et al., 1998; Wei et al., 2002). TZM-bl cells were seeded at 70% confluency in 24-well plates and infected by overnight incubation with virus stocks. 48 hr post infection, the cells were lysed and infectivity was measured by analyzing \u03b2-galactosidase expression using the Galacto-Star System following manufacturer\u2019s instructions (Applied Biosystems). \u03b2-galactosidase activity was quantified as relative light units per second using a PerkinElmner Luminometer.\n\n### Immunoprecipitation assays\n\nHEK293T cells in six-well plates were transfected with 800 ng of pKHNYN-1-FLAG, pKHNYN-2-FLAG, pGFP-FLAG as a control using 3 \u00b5L TransIT-LT1 per 1 \u00b5g of DNA added. For the experiments in which lysates were treated with Ribonuclease A (RNase A), 500 ng of pHA-ZAP-L (Kerns et al., 2008) was also added. The cells were lysed on ice in lysis buffer (0.5% NP-40, 150 mM KCl, 10 mM HEPES pH 7.5, 3 mM MgCl2) supplemented with complete EDTA-free Protease inhibitor cocktail tablets (Sigma-Aldrich), 10 mM N-Ethylmaleimide (Sigma-Aldrich) and PhosSTOP tablets (Sigma-Aldrich). The lysates were sonicated and then centrifugated at 20,000 x g for 5 min at 4\u00b0C. 50 \u03bcl of the post-nuclear supernatants was saved as the input lysate and 450 \u03bcl were incubated with either 18 \u03bcg of anti-Flag antibody (Sigma-Aldrich, F7425) or 4.275 \u03bcg of anti-ZAP antibody (Abcam) for one hour at 4\u00b0C with rotation. Protein G Dynabeads (Invitrogen) were then added and incubated for 3 hr at 4\u00b0C with rotation. The lysates were then washed four times with wash buffer (0.05% NP-40, 150 mM KCl, 10 mM HEPES pH 7.5, 3 mM MgCl2) before bound proteins were eluted with Laemmli buffer and boiled for 10 min. When indicated, RNase A (Sigma-Aldrich) was added to the post-nuclear supernatant and incubated for 30 min at 37\u00b0C. Protein expression was analyzed via western blot as described above.\n\n### RNA purification and quantitative RT-PCR\n\nTotal RNA was isolated from transfected HeLa cells using a QIAGEN RNeasy kit accordingly with the manufacturer\u2019s instructions. Viral RNA was extracted from cell supernatants using a QIAGEN QIAamp Viral mini kit accordingly with the manufacturer\u2019s instructions. 500 ng of purified cellular RNA was reverse transcribed using random hexamer primers and a High-Capacity cDNA Reverse Transcription kit (Applied Biosystems). Quantitative PCR was performed using a QuantiStudio 5 System (Thermo Fisher). For genomic RNA and nef mRNA in the cell lysate, the HIV-1 RNA abundance was normalized to GAPDH levels using the GAPDH Taqman Assay (Applied Biosystems, Cat# Hs99999905_m1). For the genomic RNA in the media, absolute quantification was determined using a standard curve of the HIV-1 provirus DNA plasmid. The genomic RNA primers were GGCCAGGGAATTTTCTTCAGA/TTGTCTCTTCCCCAAACCTGA (forward/reverse) and the probe was FAM-ACCAGAGCCAACAGCCCCACCAGA-TAMRA. The nef mRNA primers were GGCGGCGACTGGAAGAAGC/GATTGGGAGGTGGGTTGCTTTG-3\u2019 (forward/reverse) (Jablonski and Caputi, 2009).\n\n### Microscopy\n\nCells were seeded on 24-well plates on coverslips pre-treated with poly-lysine. HEK293T cells expressing a control guide RNA targeting the LacZ gene or a guide RNA targeting ZAP were transfected with 250 ng of pKHNYN-FLAG. 24 hr post-transfection, the cells were fixed with 4% paraformaldehyde for 15 min at room temperature, washed with PBS, and then washed with 10 mM glycine. The cells were then permeabilized for 15 min with 1% BSA and 0.1% Triton-X in PBS. Mouse anti-FLAG (1:500) and rabbit anti-ZAP (1:500) antibodies were diluted in PBS/0.01% Triton-X and the cells were stained for 1 hr at room temperature. The cells were then washed three times in PBS/0.01% Triton-X and incubated with Alexa Fluor 594 anti-mouse and Alexa Fluor 488 anti-rabbit antibodies (Molecular Probes, 1:500 in PBS/0.01% Triton-X) for 45 min in the dark. Finally, the coverslips were washed three times with PBS/0.01% Triton-X and then mounted on slides with Prolong Diamond Antifade Mountant with DAPI (Invitrogen). Imaging was performed on a Nikon Eclipse Ti Inverted Microscope, equipped with a Yokogawa CSU/X1-spinning disk unit, under 60-100x objectives and laser wavelengths of 405 nm, 488 nm and 561 nm. Image processing and co-localization analysis was performed with NIS Elements Viewer and Image J (Fiji) software.\n\n### Analysis of CpG frequency in HIV-1, MLV and Sindbis virus\n\nThe \u2018analyze base composition\u2019 tool in MacVector was used to calculate the CpG frequencies for the HIV-1NL4-3 (NCBI accession number M19921) genomic RNA, MLV genomic RNA (J02255) and Sindbis virus (NC_001547). The CpG frequencies were calculated using the following formula: number of CpG occurrences / (frequency of C * frequency of G) where frequency of the base is the number of occurrences of the base/total number of bases in sequence.\n\n### Sindbis virus replication assays\n\nSindbis virus (SINV), a kind gift from Penny Powell (University of East Anglia), was expanded and titrated in BHK-21 cells (Mazzon et al., 2018). Control, ZAP, TRIM25 or KHNYN HeLa cells were plated at 100,000 cells/well in 12-well plates. The following day, the cells were infected with Sindbis virus at a multiplicity of infection of 0.005 pfu/cell. After 90 mins, the infectious media was removed, the cells were washed once with PBS and then incubated with 1 ml of media. The media from the infected cells was harvested at 8, 16, 24 and 32 hr post-infection. 100 \u03bcl of serial diluted media from the cells (from 10\u22121 to 10\u22128) were added onto BHK-21 cells in 96 well plates (8,000 cells/well plated the previous day). After 90 min, the media was removed and replaced with fresh media. An MTT assay was carried out on each plate 24 hr later. Briefly, 20 \u03bcl of 50 mg/ml Thiazolyl Blue Tetrazolium Bromide in PBS were added onto the cell media for 2 hr at 37\u00b0C, after which the supernatant is removed and replaced with 40 \u03bcl of a 1:1 solution of isopropanol and DMSO. 20 min later, 35 \u03bcl of the supernatant are transferred onto a 96 well plate and signal read at 570 nm. Values from this assay were used to determine the TCID50 and pfu/ml.\n\n### Statistical analysis\n\nStatistical significance was determined using unpaired two-tailed t tests calculated using Microsoft excel software. Data are represented as mean\u00a0\u00b1\u00a0SD. Significance was ascribed to p values p\u00a0<\u00a00.05.\n",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "d94eae9b-f0ef-4b20-bc7c-518ffa46d532",
+      "submission_id": "b8b47d09-2118-4cce-a68c-7dedf35ba50b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Viviana Simon, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- Michael Emerman, Fred Hutchinson Cancer Research Center United States\n- Eric Freed\n\n## Review text\n\nDOI: [10.7554/eLife.46767.021](https://doi.org/10.7554/eLife.46767.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"KHNYN is essential for ZAP-mediated restriction of HIV-1 containing clustered CpG dinucleotides\" for consideration by eLife. Your article has been reviewed by P\u00e4ivi Ojala as the Senior Editor, a Reviewing Editor, and two reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Emerman (Reviewer #1); Eric Freed (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study, Ficarelli and colleagues identify KHNYN, a protein with no previously defined function, as a co-factor in ZAP-mediated degradation of viral RNAs containing CpG dinucleotides. While other co-factors for ZAP have previously been described, the factor encoding a putative RNA-degrading activity had not been found. The authors identify KHNYN as a ZAP-interacting protein in a yeast two-hybrid screen, confirming the results of previous screens for ZAP interactors performed by other groups. Overexpression of KHNYN resulted in the degradation of an HIV-1 variant engineered to contain 36 introduced CpG dinucleotides but had only a small effect of WT HIV-1, which, like many viral RNA genomes, is underrepresented for CpGs. Reductions in RNA levels were accompanied by reductions in viral protein production. The effect of KHNYN overexpression was found to be dependent on ZAP and also on expression of TRIM25, confirming earlier findings that TRIM25 is involved in ZAP-mediated antiviral activity. The authors show that knock-out of KHNYN prevented ZAP-mediated degradation of the CpG-containing HIV-1 RNA.\n\nIn summary, this is a very nice study with straightforward assays showing that KHNYN is essential for this function of ZAP. The data are clear-cut and of high quality, and add important information to the mechanism of ZAP-mediated antiviral activity. The narrow focus on a high CG-containing HIV-1, an unnatural target of ZAP, limits the conclusions and slightly reduces the overall high impact of the study. This work will, nonetheless, be of great interest to a broad audience well beyond the HIV field.\n\nEssential revisions:\n\n1) The authors convincingly show that KHNYN is required and necessary for ZAP to inhibit a high CG-containing HIV. While this makes a nice model, it is not a natural target of ZAP. The authors could broaden their claims by using other viruses to show whether or not KHNYN is needed for ZAP-mediated inhibition of other targets; for example, MLV would work, and/or alphaviruses. The existing knockout cells should be sufficient for these assays.\n\n2) The authors confine their studies to HeLa and 293 cells. It is possible that the factor needed to degrade high CG RNA via ZAP is different in different cells. Specifically, the authors should look at OhAinle et al., 2018, especially the data and text describing ZAP and N4BP1 in THP-1 cells. The authors are welcome to these reagents if they want them.\n\nN4BP1 is the other NYN protein described in the Marco and Marin, (2009). While additional experiments are not expected here, the authors should discuss the possibility that the effector protein needed for ZAP might be different in different cells and could confer different specificity on the CG-containing RNAs that are degraded (also note that N4BP1 is on the list of interactors in the Youn et al., 2018).\n\n3) In Figure 1 please show the entire dataset of high confidence interactors unless KHNYN is the only one. What is the overlap between this list and the ZAP-interactors identified by BioID (Youn et al., 2018)?\n\n4) The authors need to more thoroughly examine effects of KHNYN on RNA levels. While most of the assays used are measuring protein or infectivity, the essential data for the proposed mechanism is examining RNA levels. Figure 8A is the only one that measures this, but is not quite satisfying. Importantly, they should show levels of different spliced forms of HIV-1 RNA. Presumably, the Nef spliced message should not be decreased and would be a good control. The authors should also present the data as actual levels of HIV-1 RNA normalized to a cellular message, rather than only relative RNA abundance of HIV-1.\n\n5) The authors state that they do not have a good anti-KHNYN antibody to detect endogenous protein levels in their KO cells, but the KOs should be analyzed by providing the genomic analysis in the supplement to determine the percentage knockouts in the pool and to show the nature of the lesions in the clones.\n",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9854a967-f8bb-4028-bdea-dc308d963f99",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C1",
+      "claim": "CpG dinucleotides are suppressed in most vertebrate RNA viruses, including HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "CpG dinucleotides are suppressed in most vertebrate RNA viruses, including HIV-1, and introducing CpGs into RNA virus genomes inhibits their replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature establishing CpG suppression in vertebrate RNA viruses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "b8ca7715-06d9-4c2f-8432-1eb9980503b2",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C2",
+      "claim": "Introducing CpGs into RNA virus genomes inhibits their replication.",
+      "claim_type": "EXPLICIT",
+      "source": "CpG dinucleotides are suppressed in most vertebrate RNA viruses, including HIV-1, and introducing CpGs into RNA virus genomes inhibits their replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and is established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "9268d7d5-e7f1-4de9-811b-eaa9f0f8e4e1",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C3",
+      "claim": "The zinc finger antiviral protein (ZAP) binds regions of viral RNA containing CpGs and targets them for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The zinc finger antiviral protein (ZAP) binds regions of viral RNA containing CpGs and targets them for degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature establishing ZAP's mechanism of action.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "375b565e-7f14-48de-a958-fcc787aca12e",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C4",
+      "claim": "ZAP does not have enzymatic activity and recruits other cellular proteins to inhibit viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAP does not have enzymatic activity and recruits other cellular proteins to inhibit viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge about ZAP's lack of enzymatic activity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "85fafe85-997a-4ac4-bbea-fe7a557483ff",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C5",
+      "claim": "KHNYN interacts with ZAP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that KHNYN, a protein with no previously known function, interacts with ZAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from yeast two-hybrid screens and co-immunoprecipitation experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "8c79e2b8-50ec-4fb3-b120-03afe3e47dc7",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C6",
+      "claim": "KHNYN overexpression selectively inhibits HIV-1 containing clustered CpG dinucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "KHNYN overexpression selectively inhibits HIV-1 containing clustered CpG dinucleotides and this requires ZAP and its cofactor TRIM25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing differential effects of KHNYN overexpression on wild-type HIV-1 versus HIV-1 with CpG dinucleotides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "273ec300-4f80-4348-a9a4-f0127f8e30df",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C7",
+      "claim": "KHNYN's selective inhibition of HIV-1 containing clustered CpG dinucleotides requires ZAP.",
+      "claim_type": "EXPLICIT",
+      "source": "KHNYN overexpression selectively inhibits HIV-1 containing clustered CpG dinucleotides and this requires ZAP and its cofactor TRIM25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from ZAP knockout cells showing loss of KHNYN antiviral activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "3071bdb2-c47b-4bf8-819b-343d18e5f6be",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C8",
+      "claim": "KHNYN's selective inhibition of HIV-1 containing clustered CpG dinucleotides requires TRIM25.",
+      "claim_type": "EXPLICIT",
+      "source": "KHNYN overexpression selectively inhibits HIV-1 containing clustered CpG dinucleotides and this requires ZAP and its cofactor TRIM25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from TRIM25 knockout cells showing reduced KHNYN antiviral activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "4c61110d-bd3c-4a70-9847-321449fbd5db",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C9",
+      "claim": "KHNYN requires both its KH-like domain and NYN endonuclease domain for antiviral activity.",
+      "claim_type": "EXPLICIT",
+      "source": "KHNYN requires both its KH-like domain and NYN endonuclease domain for antiviral activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that deletion of the KH-like domain or mutation of the NYN domain reduces or eliminates KHNYN antiviral activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "b0f19092-260f-41b6-8d9d-1d4617dbcba3",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C10",
+      "claim": "Depletion of KHNYN eliminated the deleterious effect of CpG dinucleotides on HIV-1 RNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, depletion of KHNYN eliminated the deleterious effect of CpG dinucleotides on HIV-1 RNA abundance and infectious virus production and also enhanced the production of murine leukemia virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from KHNYN CRISPR knockout cells showing restoration of HIV-1 RNA levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "078f88e6-4ae7-4167-b4e2-f5b8218adcc8",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C11",
+      "claim": "Depletion of KHNYN eliminated the deleterious effect of CpG dinucleotides on HIV-1 infectious virus production.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, depletion of KHNYN eliminated the deleterious effect of CpG dinucleotides on HIV-1 RNA abundance and infectious virus production and also enhanced the production of murine leukemia virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from KHNYN CRISPR knockout cells showing restoration of infectious virus production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "f2a45009-cef4-4d87-b141-7157693eaa81",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C12",
+      "claim": "Depletion of KHNYN enhanced the production of murine leukemia virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, depletion of KHNYN eliminated the deleterious effect of CpG dinucleotides on HIV-1 RNA abundance and infectious virus production and also enhanced the production of murine leukemia virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing increased MLV production in KHNYN knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "1d9a7bc8-9f36-46af-a8df-bbaa3f3a1008",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C13",
+      "claim": "KHNYN is a novel cofactor for ZAP to target CpG-containing retroviral RNA for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we have identified KHNYN as a novel cofactor for ZAP to target CpG-containing retroviral RNA for degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the collective experimental data presented in the manuscript showing KHNYN's interaction with ZAP and its requirement for ZAP-mediated restriction of CpG-containing viruses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "ab197f84-59a7-4247-a34b-f9c6e7fe55f7",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C14",
+      "claim": "A yeast two-hybrid screen for full-length ZAP-S identified 10 clones containing a prey fragment encoding KHNYN with a PBS = A.",
+      "claim_type": "EXPLICIT",
+      "source": "For ZAP-S, 11 clones were obtained from 60.4 million tested interactions. 10 of these contained a prey fragment encoding KHNYN (Figure 1) and had a PBS = A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by data from the yeast two-hybrid screen described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "80dd8bc2-0def-4616-ac38-ea08cdd3a825",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C15",
+      "claim": "A yeast two-hybrid screen for full-length ZAP-L identified 2 clones containing a prey fragment encoding KHNYN with a PBS = C.",
+      "claim_type": "EXPLICIT",
+      "source": "For ZAP-L, two positive clones were analyzed from 104 million tested interactions. Both of these had an insert encoding KHNYN and had a PBS = C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by data from the yeast two-hybrid screen described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "8960916e-b546-47af-aea2-ed32b8fcd37d",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C16",
+      "claim": "KHNYN has two isoforms (KHNYN-1 and KHNYN-2) that contain a N-terminal KH-like domain and a C-terminal NYN endoribonuclease domain.",
+      "claim_type": "EXPLICIT",
+      "source": "KHNYN has two isoforms (KHNYN-1 and KHNYN-2) that contain a N-terminal KH-like domain and a C-terminal NYN endoribonuclease domain (Figure 1) (Anantharaman and Aravind, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior literature and is illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "196ec25f-24ea-42ee-a1fa-6b18ba7ba06e",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C17",
+      "claim": "The selected interaction domain for KHNYN in the ZAP yeast two-hybrid screen comprised amino acids 572\u2013719 of KHNYN-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The selected interaction domain, which is the amino acid sequence shared by all prey fragments matching KHNYN, comprised amino acids 572\u2013719 of KHNYN-2 for the clones identified in both screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by data from the yeast two-hybrid screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "f0996b08-659c-49ae-a902-33461463f726",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C18",
+      "claim": "A reciprocal yeast two-hybrid screen using KHNYN-2 as bait identified 9 clones encoding ZAP with a PBS = A.",
+      "claim_type": "EXPLICIT",
+      "source": "A yeast two-hybrid screen was then performed using the same library with full length KHNYN-2 as the bait. Nine clones were isolated that encode ZAP and these had a PBS = A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by data from the reciprocal yeast two-hybrid screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "20ebc426-4db9-4aed-bbba-ca227b348fbf",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C19",
+      "claim": "The selected interaction domain for ZAP in the KHNYN-2 yeast two-hybrid screen was amino acids 4\u2013352.",
+      "claim_type": "EXPLICIT",
+      "source": "The selected interaction domain was amino acids 4\u2013352, which is present in both isoforms (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by data from the yeast two-hybrid screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "25aa84f4-6ac4-4762-87f3-b49ccb61570e",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C20",
+      "claim": "KHNYN has been identified as a ZAP-interacting factor in large-scale affinity purification\u2013mass spectrometry screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting the reproducibility of this interaction, KHNYN has also been identified as a ZAP-interacting factor in large-scale affinity purification\u2013mass spectrometry and in vivo proximity-dependent biotinylation (BioID) screens (Huttlin et al., 2017; Youn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "bbc3896b-4b4e-4a06-af28-1d47528a2081",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C21",
+      "claim": "KHNYN has been identified as a ZAP-interacting factor in in vivo proximity-dependent biotinylation (BioID) screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting the reproducibility of this interaction, KHNYN has also been identified as a ZAP-interacting factor in large-scale affinity purification\u2013mass spectrometry and in vivo proximity-dependent biotinylation (BioID) screens (Huttlin et al., 2017; Youn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "e3cd0f31-74b4-449f-b0c0-e9d566964b7b",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C22",
+      "claim": "Both KHNYN isoforms interact with both isoforms of ZAP as confirmed by co-immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed the interaction between ZAP and KHNYN by co-immunoprecipitation and found both KHNYN isoforms interacted with both isoforms of ZAP (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "da35f1c6-39a1-4ed6-980b-e64a3204867f",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C23",
+      "claim": "The interaction between ZAP and KHNYN is RNase insensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction was RNase insensitive (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "83dd2e8d-41a1-4486-aa44-123358a57077",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C24",
+      "claim": "KHNYN localizes to the cytoplasm similar to ZAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we analyzed the subcellular localization of KHNYN and observed that it localizes to the cytoplasm similar to ZAP (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "44c98ec5-0fd7-421e-8a8f-95c10ec8c098",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C25",
+      "claim": "KHNYN localization is not affected when ZAP is knocked out using CRISPR-Cas9-mediated genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Its localization was not affected when ZAP was knocked out using CRISPR-Cas9-mediated genome editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microscopy data comparing KHNYN localization in control and ZAP knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "7ca20d15-6b4d-4965-adf2-c1656b7bc432",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C26",
+      "claim": "Transfection of the HIV-1EnvCpG86-561 provirus into HeLa cells yielded substantially less infectious virus than wild-type HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, transfection of the HIV-1EnvCpG86-561 provirus into HeLa cells yielded substantially less infectious virus than wild-type HIV-1, which was accounted for by reduced expression of Gag and Env proteins (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "7f368e47-e649-4045-8dc5-3217073463e0",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C27",
+      "claim": "The reduced infectious virus production of HIV-1EnvCpG86-561 compared to wild-type HIV-1 was accounted for by reduced expression of Gag and Env proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, transfection of the HIV-1EnvCpG86-561 provirus into HeLa cells yielded substantially less infectious virus than wild-type HIV-1, which was accounted for by reduced expression of Gag and Env proteins (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "052da26c-30e4-47fd-9afd-78caf5f8179e",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C28",
+      "claim": "KHNYN-1 or KHNYN-2 overexpression decreased wild-type HIV-1 infectivity by ~5 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "While KHNYN-1 or KHNYN-2 overexpression decreased wild-type HIV-1 infectivity by ~5 fold, they decreased HIV-1EnvCpG86-561 infectivity by ~400 fold (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "eff5b577-441c-4ae5-b283-c79880d8b3ba",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C29",
+      "claim": "KHNYN-1 or KHNYN-2 overexpression decreased HIV-1EnvCpG86-561 infectivity by ~400 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "While KHNYN-1 or KHNYN-2 overexpression decreased wild-type HIV-1 infectivity by ~5 fold, they decreased HIV-1EnvCpG86-561 infectivity by ~400 fold (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "d11ecca1-fbbe-4150-bcc0-f95bc6276bc6",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C30",
+      "claim": "The inhibition of infectivity by KHNYN-1 or KHNYN-2 correlated with decreases in Gag expression, Env expression, and virion production.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition of infectivity by KHNYN-1 or KHNYN-2 correlated with decreases in Gag expression, Env expression, and virion production (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "233d5c65-df9c-4a10-bfb5-2e7c99e3f647",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C31",
+      "claim": "Wild-type HIV-1 infectious virus production was not affected by ZAP depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type HIV-1 infectious virus production was not affected by ZAP depletion and HIV-1EnvCpG86-561 infectivity was restored in ZAP knockout cells (Figures 3B, 0 ng of KHNYN-1), confirming that ZAP is necessary to inhibit HIV-1 with CpGs introduced in env (Takata et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "67b8ba9d-d635-417c-8caa-d7487882503e",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C32",
+      "claim": "HIV-1EnvCpG86-561 infectivity was restored in ZAP knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type HIV-1 infectious virus production was not affected by ZAP depletion and HIV-1EnvCpG86-561 infectivity was restored in ZAP knockout cells (Figures 3B, 0 ng of KHNYN-1), confirming that ZAP is necessary to inhibit HIV-1 with CpGs introduced in env (Takata et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "be42dbd2-0cce-45e8-9ba3-9be516c9bb2a",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C33",
+      "claim": "ZAP is necessary to inhibit HIV-1 with CpGs introduced in env.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type HIV-1 infectious virus production was not affected by ZAP depletion and HIV-1EnvCpG86-561 infectivity was restored in ZAP knockout cells (Figures 3B, 0 ng of KHNYN-1), confirming that ZAP is necessary to inhibit HIV-1 with CpGs introduced in env (Takata et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "ef85380f-bc6d-4c08-b92e-213d3e8856fc",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C34",
+      "claim": "At low levels of KHNYN-1 overexpression (such as 62.5 ng), there was no substantial decrease in infectivity for wild-type HIV-1 while HIV-1EnvCpG86-561 infectivity was inhibited in a ZAP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "At low levels of KHNYN-1 overexpression (such as 62.5 ng), there was no substantial decrease in infectivity for wild-type HIV-1 while HIV-1EnvCpG86-561 infectivity was inhibited in a ZAP-dependent manner (Figures 3B and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3B and 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "debb7191-d5d2-4dc5-88e8-4e9b28a8ebcf",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C35",
+      "claim": "The decrease in infectivity for HIV-1EnvCpG86-561 in control cells transfected with pKHNYN-1 correlated with decreases in Gag expression, Env expression and virion production.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in infectivity for HIV-1EnvCpG86-561 in control cells transfected with pKHNYN-1 correlated with decreases in Gag expression, Env expression and virion production (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "daa5a0dd-3720-4a83-b4dc-ba2fb8acaccd",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C36",
+      "claim": "62.5 ng of KHNYN-1 or KHNYN-2 inhibited HIV-1EnvCpG86-561 genomic RNA abundance compared to the GFP control in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In control cells, 62.5 ng of KHNYN-1 or KHNYN-2 inhibited HIV-1EnvCpG86-561 genomic RNA abundance compared to the GFP control (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "b985490e-15bc-43cf-9671-9dc00cb69845",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C37",
+      "claim": "KHNYN-1 and KHNYN-2 did not affect wild-type HIV-1 genomic RNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, KHNYN-1 and KHNYN-2 did not affect wild-type HIV-1 genomic RNA levels and did not substantially inhibit HIV-1EnvCpG86-561 genomic RNA abundance in ZAP knockout cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "7c25ae5b-cefd-4499-9683-2f0a297164cb",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C38",
+      "claim": "KHNYN-1 and KHNYN-2 did not substantially inhibit HIV-1EnvCpG86-561 genomic RNA abundance in ZAP knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, KHNYN-1 and KHNYN-2 did not affect wild-type HIV-1 genomic RNA levels and did not substantially inhibit HIV-1EnvCpG86-561 genomic RNA abundance in ZAP knockout cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "8e7035b4-3329-4305-a171-2f4b08977275",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C39",
+      "claim": "KHNYN targets HIV-1 RNA containing clustered CpG dinucleotides in a ZAP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that KHNYN targets HIV-1 RNA containing clustered CpG dinucleotides in a ZAP-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental data showing KHNYN's selective effect on CpG-containing HIV-1 RNA that is lost in ZAP knockout cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "76b798fe-4c03-42e4-8969-cd906ef56b53",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C40",
+      "claim": "TRIM25 is required for ZAP's antiviral activity.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM25 is required for ZAP's antiviral activity, although the mechanism by which it regulates ZAP is unclear (Li et al., 2017; Zheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "b0c44802-5acf-47ff-ba70-0714f88fea4c",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C41",
+      "claim": "Both isoforms of KHNYN inhibited HIV-1EnvCpG86-561 much less potently in TRIM25 knockout cells than control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both isoforms of KHNYN inhibited HIV-1EnvCpG86-561 much less potently in TRIM25 knockout cells than control cells and had no effect on wild-type HIV-1 in either cell line (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "712155ab-3752-471f-bbf8-be6ada7588bd",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C42",
+      "claim": "KHNYN had no effect on wild-type HIV-1 in control or TRIM25 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both isoforms of KHNYN inhibited HIV-1EnvCpG86-561 much less potently in TRIM25 knockout cells than control cells and had no effect on wild-type HIV-1 in either cell line (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "0efad766-4d62-438f-b4b4-231757622f35",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C43",
+      "claim": "Both isoforms of KHNYN pulled down ZAP in control and TRIM25 knockdown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both isoforms of KHNYN pulled down ZAP in both cell lines, indicating that TRIM25 is not required for the interaction between these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "b87c670f-2f7a-4296-b383-ff856f3284b8",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C44",
+      "claim": "TRIM25 is not required for the interaction between ZAP and KHNYN.",
+      "claim_type": "EXPLICIT",
+      "source": "Both isoforms of KHNYN pulled down ZAP in both cell lines, indicating that TRIM25 is not required for the interaction between these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing KHNYN-ZAP interaction in TRIM25 knockdown cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "69fe332c-92ad-4b1d-aab2-a5775dfd5e03",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C45",
+      "claim": "KHNYN pulled down TRIM25 in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, KHNYN also pulled down TRIM25 in control cells (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "69ecfc70-80fb-474a-af72-3c804bee5062",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C46",
+      "claim": "Both isoforms of KHNYN-FLAG immunoprecipitated TRIM25 in the presence and absence of ZAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we analyzed whether KHNYN interacted with TRIM25 in control and ZAP knockout cells and observed that both isoforms of KHNYN-FLAG immunoprecipitated TRIM25 in the presence and absence of ZAP (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "eda95600-422e-42cd-abef-e03edabe523e",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C47",
+      "claim": "KHNYN requires TRIM25 to inhibit HIV-1 containing clustered CpG dinucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, KHNYN requires TRIM25 to inhibit HIV-1 containing clustered CpG dinucleotides, but TRIM25 is not necessary for the interaction between ZAP and KHNYN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing reduced KHNYN antiviral activity in TRIM25 knockout cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "f17a646b-a705-4467-b341-5d5493f0604c",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C48",
+      "claim": "ZAP, KHNYN and TRIM25 appear to be in a complex together.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ZAP, KHNYN and TRIM25 appear to be in a complex together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from co-immunoprecipitation data showing interactions between all three proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "8c49df78-62d8-4e9b-912a-583b36c53732",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C49",
+      "claim": "KHNYN-1\u2206KH and KHNYN-2\u2206KH had reduced antiviral activity compared to the wild-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze the functional importance of the KH-like domain, we deleted it and found that KHNYN-1\u2206KH and KHNYN-2\u2206KH had reduced antiviral activity compared to the wild-type protein (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "754f2cbc-1c3c-47e8-8214-3413c0d0c6be",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C50",
+      "claim": "KHNYN-1\u2206KH and KHNYN-2\u2206KH localized to the cytoplasm and formed foci that were not present for wild-type KHNYN-1 or KHNYN-2.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutant proteins localized to the cytoplasm and formed foci that were not present for wild-type KHNYN-1 or KHNYN-2 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "408441ef-3c8a-432e-949e-cdf0350c890d",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C51",
+      "claim": "NYN domains have endonuclease activity and belong to the PIN nuclease domain superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "NYN domains have endonuclease activity and belong to the PIN nuclease domain superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge about NYN domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "c0156837-86c2-4a11-bd60-0f46df2e6e1a",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C52",
+      "claim": "There are at least eight human proteins with a potentially active NYN domain.",
+      "claim_type": "EXPLICIT",
+      "source": "There are at least eight human proteins with a potentially active NYN domain and they have been structurally characterized in several proteins including ZC3H12A and MARF1 (Matelska et al., 2017; Matsushita et al., 2009; Nishimura et al., 2018; Xu et al., 2012; Yao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "75a917c9-1127-4d90-9613-18e44b78e3af",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C53",
+      "claim": "NYN domains contain a negatively charged active site with four aspartic acid residues coordinating a magnesium ion.",
+      "claim_type": "EXPLICIT",
+      "source": "These domains contain a negatively charged active site with four aspartic acid residues coordinating a magnesium ion, which activates a water molecule for nucleophilic attack of the phosphodiester group on the target RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge about NYN domain structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "17b4817c-e38d-4f8b-8b7a-7efad19b5974",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C54",
+      "claim": "The NYN domain in ZC3H12A has 56% identity to the NYN domain in KHNYN.",
+      "claim_type": "EXPLICIT",
+      "source": "The NYN domain in ZC3H12A has 56% identity to the NYN domain in KHNYN (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 6\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "8ee71ff4-eade-446e-a77b-55fce82d9018",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C55",
+      "claim": "ZC3H12A containing a D141N mutation in the NYN domain had decreased endonuclease activity and did not degrade RNA containing the IL-6 3' UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "ZC3H12A containing a D141N mutation in the NYN domain had decreased endonuclease activity and did not degrade RNA containing the IL-6 3' UTR (Matsushita et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "968c98ff-acd5-4d17-9f0f-47df26ae9c3c",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C56",
+      "claim": "A D426A/D427A mutation in MARF1 inhibited its endoribonuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "MARF1 is required for meiosis and retrotransposon silencing in oocytes and a D426A/D427A mutation inhibited its endoribonuclease activity (Nishimura et al., 2018; Su et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "0b209c08-a469-4227-a704-3d81a97ac8aa",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C57",
+      "claim": "KHNYN-1 D443N and KHNYN-2 D484N had substantially decreased activity against HIV-1EnvCpG86-561.",
+      "claim_type": "EXPLICIT",
+      "source": "KHNYN-1 D443N and KHNYN-2 D484N had substantially decreased activity against HIV-1EnvCpG86-561.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "c1972a96-c682-4b7c-b5c7-d64de7875fa7",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C58",
+      "claim": "KHNYN-1 D524A/D525A and KHNYN-2 D565A/D566A had no antiviral activity even though they were expressed at similar levels to the wild-type KHNYN.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, KHNYN-1 D524A/D525A and KHNYN-2 D565A/D566A had no antiviral activity even though they were expressed at similar levels to the wild-type KHNYN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "46f20f96-b516-49ef-99c9-fea63fd7fa97",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C59",
+      "claim": "KHNYN proteins with mutations in the NYN domain localized to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "KHNYN proteins with mutations in the NYN domain localized to the cytoplasm, indicating that disruption of this domain's activity did not substantially affect their subcellular localization (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "92fb047e-8545-4a19-92e7-981f784a6b03",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C60",
+      "claim": "Disruption of the NYN domain's activity did not substantially affect KHNYN subcellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "KHNYN proteins with mutations in the NYN domain localized to the cytoplasm, indicating that disruption of this domain's activity did not substantially affect their subcellular localization (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that NYN domain mutants still localize to the cytoplasm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "0d2a02fd-0606-4ddd-a7a3-910a6d840789",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C61",
+      "claim": "FLAG-tagged KHNYN-1 and KHNYN-2 were depleted in the bulk population of cells expressing each sgRNA as well as two clonal cell lines from each bulk population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, FLAG-tagged KHNYN-1 and KHNYN-2 were depleted in the bulk population of cells expressing each sgRNA as well as two clonal cell lines from each bulk population (Figure 7A and Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A and Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "01e04a74-872d-4217-8e31-3f48511b4514",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C62",
+      "claim": "When the CRISPR PAM sequence was mutated in the KHNYN plasmids, KHNYN-1 and KHNYN-2 were no longer depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when the CRISPR PAM sequence was mutated in the KHNYN plasmids, KHNYN-1 and KHNYN-2 were no longer depleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing resistance of PAM-mutated KHNYN to CRISPR depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "b2e8a53f-4fb3-451c-ae89-f87d8a484546",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C63",
+      "claim": "In the KHNYN CRISPR cells, the CpG dinucleotides in HIV-1EnvCpG86-561 no longer inhibited infectious virus production, Gag expression or Env expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In the KHNYN CRISPR cells, the CpG dinucleotides in HIV-1EnvCpG86-561 no longer inhibited infectious virus production, Gag expression or Env expression (Figure 7B\u2013C, Figure 7\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7B-C and Figure 7\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "74c651bf-63ee-43e7-be35-442ba835b28e",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C64",
+      "claim": "Wild-type HIV-1 Gag expression, Env expression and infectious virus production was not altered in the KHNYN CRISPR cells compared to the control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type HIV-1 Gag expression, Env expression and infectious virus production was not altered in the KHNYN CRISPR cells compared to the control cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "feac490c-49dc-4738-b5ab-5261009787a4",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C65",
+      "claim": "The KHNYN CRISPR cells phenocopied the ZAP CRISPR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the KHNYN CRISPR cells phenocopied the ZAP CRISPR cells (Figure 7B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the similar effects of KHNYN and ZAP depletion on HIV-1 with CpG dinucleotides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "ccb508c1-b878-4363-aeac-04e943e2ef85",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C66",
+      "claim": "MLV CpG abundance is much less suppressed (35 CpGs/kb; 0.5 observed/expected) than HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the CpG abundance in MLV is much less suppressed (35 CpGs/kb; 0.5 observed/expected) and ZAP was initially identified as an antiviral protein based on its ability to bind MLV RNA and target it for degradation (Gao et al., 2002; Guo et al., 2004; Guo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "a456937f-8f7a-4218-beb2-f0a8b4c4b4d0",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C67",
+      "claim": "ZAP was initially identified as an antiviral protein based on its ability to bind MLV RNA and target it for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the CpG abundance in MLV is much less suppressed (35 CpGs/kb; 0.5 observed/expected) and ZAP was initially identified as an antiviral protein based on its ability to bind MLV RNA and target it for degradation (Gao et al., 2002; Guo et al., 2004; Guo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "b4f7e7b8-63bf-4c9f-a53f-e460914472e3",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C68",
+      "claim": "There was a small but reproducible increase in MLV Gag expression and virion production in the ZAP and KHNYN CRISPR cells in the absence of type I interferon.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a small but reproducible increase in MLV Gag expression and virion production in the ZAP and KHNYN CRISPR cells in the absence of type I interferon (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "5ffe471f-7951-47a3-9f4a-b04cc8fc6d2a",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C69",
+      "claim": "After type I interferon treatment, MLV virion production was decreased to almost undetectable levels in the control CRISPR cells but was substantially higher in the ZAP and KHNYN CRISPR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after type I interferon treatment, MLV virion production was decreased to almost undetectable levels in the control CRISPR cells but was substantially higher in the ZAP and KHNYN CRISPR cells (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "5233d528-0346-4200-b3c6-7d641d83829d",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C70",
+      "claim": "The Sindbis virus genome is not substantially depleted in CpG dinucleotides (58 CpGs/kb; 0.9 observed/expected).",
+      "claim_type": "EXPLICIT",
+      "source": "The Sindbis virus genome is not substantially depleted in CpG dinucleotides (58 CpGs/kb; 0.9 observed/expected) and is restricted by ZAP (Bick et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "01c73d4b-97b2-4320-aa2c-c538ee49eefa",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C71",
+      "claim": "Sindbis virus is restricted by ZAP.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sindbis virus genome is not substantially depleted in CpG dinucleotides (58 CpGs/kb; 0.9 observed/expected) and is restricted by ZAP (Bick et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "a3cc4249-52fc-4558-b902-c11183f7d0ce",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C72",
+      "claim": "The predominant ZAP antiviral activity for alphaviruses is to inhibit viral RNA translation, although there may be an additional effect on RNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike retroviruses, the predominant ZAP antiviral activity for alphaviruses is to inhibit viral RNA translation, although there may be an additional effect on RNA stability (Bick et al., 2003; Kozaki et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "92758301-89ac-421e-a7a5-391e6245b42b",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C73",
+      "claim": "Depletion of TRIM25 and ZAP substantially increased Sindbis virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Bick et al., 2003; Kozaki et al., 2015; Li et al., 2017; Zheng et al., 2017), depletion of TRIM25 and ZAP substantially increased Sindbis virus replication (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7\u2014figure supplement 3 and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "b69a7f2c-8c70-438d-98e0-353350451319",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C74",
+      "claim": "There was no substantial increase in Sindbis virus replication in the KHNYN CRISPR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was no substantial increase in Sindbis virus replication in the KHNYN CRISPR cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "65a45959-649e-4dbb-9f8f-e1299319ab70",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C75",
+      "claim": "KHNYN appears to be required for the restriction of retroviral genomes, but not all ZAP-sensitive RNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, KHNYN appears to be required for the restriction of retroviral genomes, but not all ZAP-sensitive RNA viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the differential effects of KHNYN depletion on retroviruses versus Sindbis virus.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "321b4172-d1f0-4164-9bc3-c4c5c1387a8f",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C76",
+      "claim": "HIV-1EnvCpG86-561 genomic RNA abundance was similar in the cell lysate and media to wild-type HIV-1 in KHNYN CRISPR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to HIV-1 protein expression and infectivity, HIV-1EnvCpG86-561 genomic RNA abundance was similar in the cell lysate and media to wild-type HIV-1 (Figure 8A and C), indicating that the CpG dinucleotides no longer inhibited RNA abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "39c0b145-c002-44e0-973b-162924ef6bd3",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C77",
+      "claim": "The CpG dinucleotides no longer inhibited HIV-1 RNA abundance in KHNYN CRISPR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to HIV-1 protein expression and infectivity, HIV-1EnvCpG86-561 genomic RNA abundance was similar in the cell lysate and media to wild-type HIV-1 (Figure 8A and C), indicating that the CpG dinucleotides no longer inhibited RNA abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that HIV-1EnvCpG86-561 RNA levels are restored to wild-type levels in KHNYN CRISPR cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "229419e0-efd9-4eba-9239-7d7390e70929",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C78",
+      "claim": "nef mRNA abundance was not affected by the introduction of CpG dinucleotides in env or by KHNYN depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, nef mRNA abundance was not affected by the introduction of CpG dinucleotides in env or by KHNYN depletion since it is a fully spliced mRNA that does not contain the introduced CpGs (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "d45aebe3-6f54-4dbf-ae89-d17f562e1374",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C79",
+      "claim": "nef is a fully spliced mRNA that does not contain the introduced CpGs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, nef mRNA abundance was not affected by the introduction of CpG dinucleotides in env or by KHNYN depletion since it is a fully spliced mRNA that does not contain the introduced CpGs (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on knowledge of HIV-1 RNA splicing and the location of the introduced CpGs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "262fd89d-190a-42e8-9f3c-835601c37b1f",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C80",
+      "claim": "The wild-type HIV-1 genomic RNA abundance was not altered in the KHNYN CRISPR cells compared to the control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The wild-type HIV-1 genomic RNA abundance was not altered in the KHNYN CRISPR cells compared to the control cells, further showing the specific effect of KHNYN for viral RNA containing CpG dinucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 8A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "fd772d05-b5e4-41b0-94a3-a1c401f61e31",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C81",
+      "claim": "Even very low levels of KHNYN-1 or KHNYN-2 restored selective inhibition of HIV-1EnvCpG86-561 in KHNYN CRISPR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Even very low levels of KHNYN-1 or KHNYN-2 restored selective inhibition of HIV-1EnvCpG86-561 in these cells (Figure 9A\u2013B) and KHNYN-1 was consistently slightly more active than KHNYN-2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 9A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "b66942fb-55d7-40eb-8aa6-68766a14f1a9",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C82",
+      "claim": "KHNYN-1 was consistently slightly more active than KHNYN-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Even very low levels of KHNYN-1 or KHNYN-2 restored selective inhibition of HIV-1EnvCpG86-561 in these cells (Figure 9A\u2013B) and KHNYN-1 was consistently slightly more active than KHNYN-2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 9A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "0a9f5914-5515-4c65-b760-65351b1393c7",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C83",
+      "claim": "Both KHNYN isoforms are capable of inhibiting infectious virus production of HIV-1 containing clustered CpG dinucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that both isoforms are capable of inhibiting infectious virus production of HIV-1 containing clustered CpG dinucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the rescue experiments showing both isoforms restore antiviral activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "2f64e66f-1125-4f47-87b8-c0700222de33",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C84",
+      "claim": "Expression of 31.25 ng of KHNYN-1 in the KHNYN CRISPR cells inhibited HIV-1EnvCpG86-561.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of 31.25 ng of KHNYN-1 in the KHNYN CRISPR cells inhibited HIV-1EnvCpG86-561 (Figure 9C\u2013D) and all of the mutations substantially reduced KHNYN antiviral activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 9C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "77c4b98a-8a97-4bb7-8f24-9f1d00528817",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C85",
+      "claim": "All of the mutations in KHNYN (\u0394KH, D443N, D524A/D525A) substantially reduced KHNYN antiviral activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of 31.25 ng of KHNYN-1 in the KHNYN CRISPR cells inhibited HIV-1EnvCpG86-561 (Figure 9C\u2013D) and all of the mutations substantially reduced KHNYN antiviral activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 9C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "a0800099-ca16-47d0-9f38-3921f8146f2d",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C86",
+      "claim": "Endogenous KHNYN is required for CpG dinucleotides to inhibit HIV-1 infectious virus production.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, endogenous KHNYN is required for CpG dinucleotides to inhibit HIV-1 infectious virus production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the collective experimental data showing loss of CpG-mediated inhibition in KHNYN knockout cells and restoration upon KHNYN re-expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "fa541fe3-6ebb-43ec-a5cc-6389b8ad5c21",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C87",
+      "claim": "ZAP has four CCCH zinc finger domains and specifically interacts with CpG dinucleotides in RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAP has four CCCH zinc finger domains and specifically interacts with CpG dinucleotides in RNA (Gao et al., 2002; Guo et al., 2004; Takata et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "96566391-ce4f-49bf-95db-e80a402ceb53",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C88",
+      "claim": "ZAP does not contain nuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it does not contain nuclease activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about ZAP's lack of enzymatic activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "44f95658-7e57-41ea-b57a-e99468748665",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C89",
+      "claim": "Knockdown of several proteins in the 5'\u22123' and 3'\u22125' degradation pathways did not substantially rescue infectious virus production of HIV-1 containing clustered CpG dinucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "While ZAP has been reported to directly or indirectly interact with components of the 5'\u22123' and 3'\u22125' degradation pathways including DCP1-DCP2, XRN1, PARN and the exosome, knockdown of several proteins in these pathways did not substantially rescue infectious virus production of HIV-1 containing clustered CpG dinucleotides (Goodier et al., 2015; Guo et al., 2007; Takata et al., 2017; Zhu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "5669c631-bdb3-4752-9d87-d3dbf2857143",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C90",
+      "claim": "KHNYN is an essential ZAP cofactor that inhibits HIV-1 gene expression and infectious virus production when the viral RNA contains clustered CpG dinucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein, we have identified that KHNYN is an essential ZAP cofactor that inhibits HIV-1 gene expression and infectious virus production when the viral RNA contains clustered CpG dinucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the collective experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "f89c6c72-d7fd-4cb6-939c-ed5bb85e2695",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C91",
+      "claim": "KHNYN overexpression inhibits genomic RNA abundance, Gag expression, Env expression and infectious virus production for HIV-1 containing clustered CpG dinucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "KHNYN overexpression inhibits genomic RNA abundance, Gag expression, Env expression and infectious virus production for HIV-1 containing clustered CpG dinucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "c34d4291-74ce-4509-8437-7068e127de4b",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C92",
+      "claim": "KHNYN depletion increased MLV Gag expression and virion production.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, KHNYN depletion increased MLV Gag expression and virion production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from KHNYN knockout cells infected with MLV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "64e914af-949a-41db-87fe-b29abb1f3838",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C93",
+      "claim": "The difference between the requirement for KHNYN to inhibit retroviruses versus Sindbis virus may be because the antiviral effect for retroviruses is predominantly at the level of RNA stability and for alphaviruses it is predominately at the level of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the requirement for KHNYN to inhibit retroviruses versus Sindbis virus may be because the antiviral effect for retroviruses is predominantly at the level of RNA stability and for alphaviruses it is predominately at the level of translation (Bick et al., 2003; Gao et al., 2002; Guo et al., 2004; Guo et al., 2007; MacDonald et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on known differences in ZAP's mechanism of action against different viruses.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "5aae45e8-a003-4838-92cc-3bea022d3b7a",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C94",
+      "claim": "ZAP has been reported to inhibit translation initiation by interfering with the interaction between eIF4A and eIF4G.",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanistic explanation for why the major antiviral effect of ZAP appears to be promoting RNA degradation for some viruses and inhibiting translation for other viruses remains unclear, although ZAP has been reported to inhibit translation initiation by interfering with the interaction between eIF4A and eIF4G (Zhu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "13345cb6-7b26-4859-a05c-1c6aed51b89a",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C95",
+      "claim": "KHNYN may not be required for ZAP to inhibit translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, KHNYN may not be required for ZAP to inhibit translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the observation that KHNYN is not required for ZAP to inhibit Sindbis virus.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "6175ce6a-6d59-4a1e-b1f8-a911b2501e9a",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C96",
+      "claim": "A complex containing ZAP and KHNYN binds HIV-1 CpG-containing RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that a complex containing ZAP and KHNYN binds HIV-1 CpG-containing RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "7277c832-4525-47a1-bea6-a47fc74e0cdd",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C97",
+      "claim": "ZAP and KHNYN could directly interact to form a heterodimer or there could be other factors mediating this interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAP and KHNYN could directly interact to form a heterodimer or there could be other factors mediating this interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the nature of the ZAP-KHNYN interaction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "423070d2-ea44-4fee-a302-8a410fc9bfa7",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C98",
+      "claim": "ZAP and TRIM25 are interferon-stimulated genes while KHNYN is not induced by interferon in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ZAP and TRIM25 are interferon-stimulated genes while KHNYN is not induced by interferon in human cells (Shaw et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "765c3ee5-b204-4e19-99f1-8275ecad6510",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C99",
+      "claim": "The zinc finger RNA binding domains in ZAP could target KHNYN to CpG regions in viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The zinc finger RNA binding domains in ZAP could target KHNYN to CpG regions in viral RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the mechanism of ZAP-KHNYN function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "cc75baf5-7456-4e5c-9bdb-4714ec652967",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C100",
+      "claim": "The endonuclease domain in KHNYN could cleave viral RNA, thereby inhibiting viral RNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "This would allow the endonuclease domain in KHNYN to cleave this RNA, thereby inhibiting viral RNA abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about KHNYN's mechanism of action.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "7b5503c8-8269-4e90-a4ca-acf904481d16",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C101",
+      "claim": "The ZAP-KHNYN complex could function similarly to ZC3H12A, but with the RNA binding and endonuclease domains divided between the two proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceptually, the ZAP-KHNYN complex could function similarly to ZC3H12A, but with the RNA binding and endonuclease domains divided between the two proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning drawing an analogy to ZC3H12A.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "e4d23090-7ad1-402d-b37f-25e4993db18d",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C102",
+      "claim": "The NYN domain in KHNYN could cleave HIV-1 RNA containing CpG dinucleotides similar to how ZC3H12A cleaves a specific site in the 3' UTR of the IL-6 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The NYN domain in KHNYN could cleave HIV-1 RNA containing CpG dinucleotides similar to how ZC3H12A cleaves a specific site in the 3' UTR of the IL-6 mRNA (Matsushita et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning drawing an analogy to ZC3H12A's mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "e54dc17b-33f6-4152-997b-b5ac57af08cd",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C103",
+      "claim": "The NYN domain in KHNYN is highly conserved with the active NYN domain in ZC3H12A.",
+      "claim_type": "EXPLICIT",
+      "source": "While we do not yet have evidence that the NYN domain in KHNYN is an active endonuclease domain, it is highly conserved with the active NYN domain in ZC3H12A and is required for KHNYN antiviral activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence alignment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "9ca1ceda-e76f-4abd-b84a-cca6ac5ae77f",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C104",
+      "claim": "The NYN domain is required for KHNYN antiviral activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While we do not yet have evidence that the NYN domain in KHNYN is an active endonuclease domain, it is highly conserved with the active NYN domain in ZC3H12A and is required for KHNYN antiviral activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing loss of activity with NYN domain mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "62f13561-6e68-4220-bcc1-1afe5a2c30f6",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C105",
+      "claim": "The 5'\u22123' and 3'\u22125' degradation pathway components previously shown to interact with ZAP could work in conjunction with KHNYN-mediated endonucleic decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the 5'\u22123' and 3'\u22125' degradation pathway components previously shown to interact with ZAP could work in conjunction with KHNYN-mediated endonucleic decay (Goodier et al., 2015; Guo et al., 2007; Zhu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about how different RNA degradation pathways might work together.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "4f16fdca-daff-4b70-b55f-7217180768ce",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C106",
+      "claim": "In a model where KHNYN and exonucleic pathways work together, KHNYN would initiate cleavage of the viral RNA and the exonucleic pathways would then degrade the resulting RNA fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, KHNYN would initiate cleavage of the viral RNA and the exonucleic pathways would then degrade the resulting RNA fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about a proposed model of RNA degradation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "7ecf472f-cfc0-42ed-83ce-9ffac3ad8c27",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C107",
+      "claim": "The interferon-stimulated gene N4BP1, which is a KHNYN paralog, was recently identified to genetically interact with ZAP in a CRISPR-based screen to identify interferon-induced antiviral proteins targeting HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The interferon-stimulated gene N4BP1, which is a KHNYN paralog (Anantharaman and Aravind, 2006), was recently identified to genetically interact with ZAP in a CRISPR-based screen to identify interferon-induced antiviral proteins targeting HIV-1 (OhAinle et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "3c084a10-1b16-4379-a47b-2dce32455af1",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C108",
+      "claim": "In the monocytic THP-1 cell line, depletion of N4BP1 led to a small increase in wild-type HIV-1 replication.",
+      "claim_type": "EXPLICIT",
+      "source": "In the monocytic THP-1 cell line, depletion of N4BP1 led to a small increase in wild-type HIV-1 replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "184bb369-694a-46a8-9e4c-dac67d468ebb",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C109",
+      "claim": "N4BP1 depletion did not inhibit replication of the alphavirus Semliki Forest virus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, N4BP1 depletion did not inhibit replication of the alphavirus Semliki Forest virus, indicating that it may have a virus specific effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "f3dde232-3dcb-449b-9734-86b36e61edf2",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C110",
+      "claim": "HIV-1NL4-3 is highly suppressed in CpG dinucleotides (9 CpGs/kb; 0.2 observed/expected).",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1NL4-3 is highly suppressed (9 CpGs/kb; 0.2 observed/expected), which is conserved in HIV-1 (Berkhout et al., 2002; Kypr et al., 1989; Shpaer and Mullins, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "158a6965-b8d3-4286-990e-35d3ae40b004",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "claim_id": "C111",
+      "claim": "CpG suppression is conserved in HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1NL4-3 is highly suppressed (9 CpGs/kb; 0.2 observed/expected), which is conserved in HIV-1 (Berkhout et al., 2002; Kypr et al., 1989; Shpaer and Mullins, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "df345b95-8b2a-4905-8117-786deb44aa23",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CpG dinucleotides are suppressed in vertebrate RNA viruses including HIV-1, and introducing CpGs inhibits viral replication. The zinc finger antiviral protein (ZAP) binds CpG-containing viral RNA and targets it for degradation, but lacks enzymatic activity and requires cellular cofactors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the background knowledge about CpG suppression in viruses and ZAP's mechanism. These are well-supported by citations to prior literature and represent established scientific knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "KHNYN interacts with ZAP as demonstrated by yeast two-hybrid screens and co-immunoprecipitation. Both KHNYN isoforms (containing KH-like and NYN domains) interact with both ZAP isoforms in an RNase-insensitive manner. The interaction has been independently validated in multiple proteomics studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C14-C23 provide converging evidence from multiple independent methods (yeast two-hybrid, co-IP, mass spectrometry, BioID) demonstrating the KHNYN-ZAP interaction. The data includes reciprocal screens, domain mapping, and RNase treatment controls, providing strong support for this protein-protein interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "e960ab90-d2cc-49a3-b23c-8ce8279871ca",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "KHNYN localizes to the cytoplasm similar to ZAP, and this localization is independent of ZAP expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by microscopy data (Figure 2D) showing cytoplasmic localization of KHNYN in both control and ZAP knockout cells. This is consistent with ZAP's known cytoplasmic function and supports a functional interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "f040c5b9-3ff6-4493-9ac6-34e5b846329f",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KHNYN overexpression selectively inhibits HIV-1 containing clustered CpG dinucleotides (HIV-1EnvCpG86-561) with ~400-fold reduction in infectivity, compared to only ~5-fold reduction for wild-type HIV-1. This inhibition correlates with decreased Gag and Env expression and virion production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 are supported by experimental data in Figure 2E-F showing dose-dependent, selective inhibition of CpG-containing HIV-1 by KHNYN overexpression. The magnitude of the effect (~80-fold difference in selectivity) and correlation with protein expression provide strong evidence for CpG-dependent antiviral activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "173aba1e-e0cc-4dc4-892c-80a68d740da3",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "KHNYN requires ZAP for its antiviral activity against CpG-containing HIV-1. In ZAP knockout cells, KHNYN overexpression does not inhibit HIV-1EnvCpG86-561, and the virus is no longer sensitive to CpG dinucleotides. KHNYN selectively reduces genomic RNA abundance of CpG-containing HIV-1 in a ZAP-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C39 are supported by comprehensive data from ZAP knockout experiments (Figures 3B-C, 4A-C) showing loss of KHNYN antiviral activity and restoration of HIV-1EnvCpG86-561 replication in the absence of ZAP. The RNA abundance data provides mechanistic insight. This establishes ZAP-dependence convincingly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "e4a025dd-eb59-4d1d-877a-327755c2717c",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "KHNYN requires TRIM25 for antiviral activity against CpG-containing HIV-1, but TRIM25 is not required for the KHNYN-ZAP interaction. KHNYN, ZAP, and TRIM25 appear to form a complex together.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C48 are supported by data from TRIM25 knockout cells (Figure 5A-B) showing reduced KHNYN activity, and co-IP experiments (Figure 5C-D) demonstrating that KHNYN-ZAP interaction persists without TRIM25 while KHNYN can pull down both ZAP and TRIM25. This suggests a tripartite complex with TRIM25 playing a regulatory rather than structural role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "4bd89677-7aba-47a5-a0b2-dee772aacc69",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Deletion of the KH-like domain reduces KHNYN antiviral activity and causes the mutant protein to form cytoplasmic foci not observed with wild-type KHNYN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by experimental data (Figure 6B-C, Figure 6\u2014figure supplement 1) showing reduced antiviral activity of \u0394KH mutants and altered subcellular distribution. However, the functional significance of the foci formation is unclear and requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The NYN endonuclease domain is essential for KHNYN antiviral activity. Mutations in conserved aspartic acid residues predicted to coordinate the catalytic magnesium ion (D443N, D524A/D525A) substantially reduce or eliminate antiviral activity without affecting cytoplasmic localization. The KHNYN NYN domain shares 56% identity with the active NYN domain in ZC3H12A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C60 are supported by mutagenesis data (Figure 6B-C) showing that NYN domain mutations eliminate antiviral activity, sequence alignment data showing conservation with known active endonucleases, and localization data showing mutations don't affect trafficking. The D524A/D525A double mutant completely lacks activity, strongly suggesting catalytic importance. However, direct biochemical evidence of endonuclease activity is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "83676b7b-6aba-47c3-8dc7-c79deedaadf1",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both the KH-like domain and NYN endonuclease domain are required for KHNYN antiviral activity, as demonstrated by deletion and point mutation studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result synthesizes claims about domain requirements. The data from Figures 6 and 9 consistently show that mutations in either domain reduce or eliminate antiviral activity. The \u0394KH deletion reduces activity, while NYN domain mutations (especially D524A/D525A) completely eliminate it, supporting the requirement for both domains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "a093241b-3dcf-40b3-8399-fb929b24f3ff",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Endogenous KHNYN is essential for CpG dinucleotides to inhibit HIV-1. CRISPR-mediated depletion of KHNYN eliminates the inhibitory effect of CpG dinucleotides on HIV-1 RNA abundance, protein expression, and infectious virus production, phenocopying ZAP knockout cells. Wild-type HIV-1 is unaffected by KHNYN depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65, C76-C80, C86 are supported by comprehensive CRISPR knockout data (Figures 7-8) using two independent guide RNAs, bulk populations, and clonal cell lines. The rescue with PAM-mutated KHNYN (C62) and specificity for CpG-containing virus provide strong evidence. The nef mRNA control (C78-C79) demonstrates specificity for CpG-containing transcripts. This is the most critical result establishing KHNYN's essential role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "70516ade-ee0a-4974-ae0e-369b61b1646f",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Low levels of CRISPR-resistant KHNYN-1 or KHNYN-2 restore selective inhibition of HIV-1EnvCpG86-561 in KHNYN knockout cells, with KHNYN-1 being slightly more active than KHNYN-2. Domain mutations (\u0394KH, D443N, D524A/D525A) substantially reduce rescue activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 are supported by rescue experiments (Figure 9) demonstrating specificity of the KHNYN knockout phenotype and confirming domain requirements in the physiological context. The dose-response and mutant analysis provide strong validation of the knockout results and domain function studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "6ccd7776-8232-4292-94ae-9b31e3beb7ed",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Depletion of KHNYN eliminates the deleterious effect of CpG dinucleotides on HIV-1 RNA abundance and infectious virus production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is strongly supported by multiple independent measurements (RNA abundance in cells and media, protein expression, infectivity) across multiple CRISPR cell lines (bulk and clones) shown in Figures 7-8. The consistency across measurements and cell lines provides robust evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "69af24b5-7738-4544-84ff-b21a801b9f95",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "KHNYN depletion enhances murine leukemia virus (MLV) production, particularly after type I interferon treatment. MLV has less CpG suppression (35 CpGs/kb; 0.5 observed/expected) than HIV-1 and was the original target used to identify ZAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C66-C69, C92 are supported by MLV infection data (Figure 7D-E) showing increased virion production in KHNYN knockout cells, with a more pronounced effect after interferon treatment. This extends KHNYN's role beyond HIV-1 to another retrovirus with moderate CpG content, supporting a general role in restricting CpG-containing retroviruses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "e1524974-1c42-4e4a-8ae9-34f59607066c",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "KHNYN is not required for ZAP-mediated restriction of Sindbis virus, an alphavirus with normal CpG content (58 CpGs/kb; 0.9 observed/expected) that is restricted by ZAP primarily at the translational level rather than RNA stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 are supported by Sindbis virus replication data (Figure 7\u2014figure supplement 3) showing that while ZAP and TRIM25 depletion increase replication, KHNYN depletion does not. This important negative result suggests KHNYN is specifically required for ZAP's RNA degradation activity but not its translational inhibition activity, providing mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "69ddf2bd-1d0f-4221-a0d7-587dc62921c2",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "KHNYN is a novel cofactor for ZAP that is essential for targeting CpG-containing retroviral RNA for degradation. KHNYN overexpression inhibits genomic RNA abundance, protein expression, and infectious virus production for HIV-1 containing clustered CpG dinucleotides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C90-C91 represent the main conclusion synthesizing all experimental findings. This is well-supported by the collective data showing: (1) KHNYN-ZAP interaction, (2) selective inhibition of CpG-containing viruses by KHNYN overexpression, (3) ZAP-dependence of KHNYN activity, (4) requirement for both KHNYN domains, and (5) essential role of endogenous KHNYN demonstrated by knockout studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "050eaa8c-d6c0-467c-9c46-6d3eb6b899a7",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ZAP has four CCCH zinc finger domains and specifically interacts with CpG dinucleotides in RNA but lacks nuclease activity. Knockdown of 5'\u21923' and 3'\u21925' RNA degradation pathway components did not substantially rescue HIV-1 with clustered CpG dinucleotides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 provide important mechanistic context supported by prior literature. These establish that ZAP requires additional factors beyond the canonical RNA degradation machinery, motivating the search for KHNYN as a cofactor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "7cff6be7-2d53-4fd1-826a-b4dfa6b82973",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The differential requirement for KHNYN to inhibit retroviruses versus Sindbis virus may be explained by ZAP acting predominantly on RNA stability for retroviruses but on translation for alphaviruses. KHNYN may not be required for ZAP's translational inhibition activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C95 are explicitly speculative (using \"may be\") and represent a hypothesis to explain the Sindbis virus data. While the hypothesis is reasonable and supported by citations about ZAP's different mechanisms, it lacks direct experimental validation in this study. Further experiments would be needed to test this model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A proposed model suggests that a ZAP-KHNYN complex binds CpG-containing viral RNA, with ZAP's zinc finger domains targeting KHNYN's endonuclease domain to CpG regions for RNA cleavage. This would function analogously to ZC3H12A but with RNA binding and endonuclease activities divided between two proteins. The cleaved RNA fragments could then be degraded by exonucleic pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C103, C105-C106 represent a mechanistic model that is reasonable given the data but remains speculative. While the NYN domain conservation (C103) and requirement (C104) are supported, direct evidence of endonuclease activity, RNA binding, and the proposed mechanism is lacking. The model is explicitly presented as a hypothesis requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "f909df63-c263-46ba-9acf-8620c0242d7c",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "N4BP1, a KHNYN paralog and interferon-stimulated gene, was identified to genetically interact with ZAP and has virus-specific effects, increasing wild-type HIV-1 replication in THP-1 cells but not affecting Semliki Forest virus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 are supported by citations to prior literature (OhAinle et al., 2018). This provides important context about related proteins in the ZAP pathway and suggests broader implications for the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    },
+    {
+      "id": "98c9526b-df00-41b5-9d51-c1161f25df0e",
+      "content_id": "2141a9c5-3003-49da-b659-342e6fdd17bf",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "HIV-1NL4-3 is highly suppressed in CpG dinucleotides (9 CpGs/kb; 0.2 observed/expected), and this CpG suppression is conserved across HIV-1 strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C111 are supported by sequence analysis data and citations to prior literature. This establishes the biological context for why HIV-1 normally evades ZAP/KHNYN restriction and why CpG-enriched mutants are required to study the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:47.736393Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9854a967-f8bb-4028-bdea-dc308d963f99",
+      "result_id": "df345b95-8b2a-4905-8117-786deb44aa23"
+    },
+    {
+      "claim_id": "b8ca7715-06d9-4c2f-8432-1eb9980503b2",
+      "result_id": "df345b95-8b2a-4905-8117-786deb44aa23"
+    },
+    {
+      "claim_id": "9268d7d5-e7f1-4de9-811b-eaa9f0f8e4e1",
+      "result_id": "df345b95-8b2a-4905-8117-786deb44aa23"
+    },
+    {
+      "claim_id": "375b565e-7f14-48de-a958-fcc787aca12e",
+      "result_id": "df345b95-8b2a-4905-8117-786deb44aa23"
+    },
+    {
+      "claim_id": "85fafe85-997a-4ac4-bbea-fe7a557483ff",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "ab197f84-59a7-4247-a34b-f9c6e7fe55f7",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "80dd8bc2-0def-4616-ac38-ea08cdd3a825",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "8960916e-b546-47af-aea2-ed32b8fcd37d",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "196ec25f-24ea-42ee-a1fa-6b18ba7ba06e",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "f0996b08-659c-49ae-a902-33461463f726",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "20ebc426-4db9-4aed-bbba-ca227b348fbf",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "25aa84f4-6ac4-4762-87f3-b49ccb61570e",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "bbc3896b-4b4e-4a06-af28-1d47528a2081",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "e3cd0f31-74b4-449f-b0c0-e9d566964b7b",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "da35f1c6-39a1-4ed6-980b-e64a3204867f",
+      "result_id": "a4208181-ea7b-4d24-b63c-1fa74678ac7a"
+    },
+    {
+      "claim_id": "83dd2e8d-41a1-4486-aa44-123358a57077",
+      "result_id": "e960ab90-d2cc-49a3-b23c-8ce8279871ca"
+    },
+    {
+      "claim_id": "44c98ec5-0fd7-421e-8a8f-95c10ec8c098",
+      "result_id": "e960ab90-d2cc-49a3-b23c-8ce8279871ca"
+    },
+    {
+      "claim_id": "7ca20d15-6b4d-4965-adf2-c1656b7bc432",
+      "result_id": "f040c5b9-3ff6-4493-9ac6-34e5b846329f"
+    },
+    {
+      "claim_id": "7f368e47-e649-4045-8dc5-3217073463e0",
+      "result_id": "f040c5b9-3ff6-4493-9ac6-34e5b846329f"
+    },
+    {
+      "claim_id": "052da26c-30e4-47fd-9afd-78caf5f8179e",
+      "result_id": "f040c5b9-3ff6-4493-9ac6-34e5b846329f"
+    },
+    {
+      "claim_id": "eff5b577-441c-4ae5-b283-c79880d8b3ba",
+      "result_id": "f040c5b9-3ff6-4493-9ac6-34e5b846329f"
+    },
+    {
+      "claim_id": "d11ecca1-fbbe-4150-bcc0-f95bc6276bc6",
+      "result_id": "f040c5b9-3ff6-4493-9ac6-34e5b846329f"
+    },
+    {
+      "claim_id": "233d5c65-df9c-4a10-bfb5-2e7c99e3f647",
+      "result_id": "173aba1e-e0cc-4dc4-892c-80a68d740da3"
+    },
+    {
+      "claim_id": "67b8ba9d-d635-417c-8caa-d7487882503e",
+      "result_id": "173aba1e-e0cc-4dc4-892c-80a68d740da3"
+    },
+    {
+      "claim_id": "be42dbd2-0cce-45e8-9ba3-9be516c9bb2a",
+      "result_id": "173aba1e-e0cc-4dc4-892c-80a68d740da3"
+    },
+    {
+      "claim_id": "ef85380f-bc6d-4c08-b92e-213d3e8856fc",
+      "result_id": "173aba1e-e0cc-4dc4-892c-80a68d740da3"
+    },
+    {
+      "claim_id": "debb7191-d5d2-4dc5-88e8-4e9b28a8ebcf",
+      "result_id": "173aba1e-e0cc-4dc4-892c-80a68d740da3"
+    },
+    {
+      "claim_id": "daa5a0dd-3720-4a83-b4dc-ba2fb8acaccd",
+      "result_id": "173aba1e-e0cc-4dc4-892c-80a68d740da3"
+    },
+    {
+      "claim_id": "b985490e-15bc-43cf-9671-9dc00cb69845",
+      "result_id": "173aba1e-e0cc-4dc4-892c-80a68d740da3"
+    },
+    {
+      "claim_id": "7c25ae5b-cefd-4499-9683-2f0a297164cb",
+      "result_id": "173aba1e-e0cc-4dc4-892c-80a68d740da3"
+    },
+    {
+      "claim_id": "8e7035b4-3329-4305-a171-2f4b08977275",
+      "result_id": "173aba1e-e0cc-4dc4-892c-80a68d740da3"
+    },
+    {
+      "claim_id": "76b798fe-4c03-42e4-8969-cd906ef56b53",
+      "result_id": "e4a025dd-eb59-4d1d-877a-327755c2717c"
+    },
+    {
+      "claim_id": "b0c44802-5acf-47ff-ba70-0714f88fea4c",
+      "result_id": "e4a025dd-eb59-4d1d-877a-327755c2717c"
+    },
+    {
+      "claim_id": "712155ab-3752-471f-bbf8-be6ada7588bd",
+      "result_id": "e4a025dd-eb59-4d1d-877a-327755c2717c"
+    },
+    {
+      "claim_id": "0efad766-4d62-438f-b4b4-231757622f35",
+      "result_id": "e4a025dd-eb59-4d1d-877a-327755c2717c"
+    },
+    {
+      "claim_id": "b87c670f-2f7a-4296-b383-ff856f3284b8",
+      "result_id": "e4a025dd-eb59-4d1d-877a-327755c2717c"
+    },
+    {
+      "claim_id": "69fe332c-92ad-4b1d-aab2-a5775dfd5e03",
+      "result_id": "e4a025dd-eb59-4d1d-877a-327755c2717c"
+    },
+    {
+      "claim_id": "69ecfc70-80fb-474a-af72-3c804bee5062",
+      "result_id": "e4a025dd-eb59-4d1d-877a-327755c2717c"
+    },
+    {
+      "claim_id": "eda95600-422e-42cd-abef-e03edabe523e",
+      "result_id": "e4a025dd-eb59-4d1d-877a-327755c2717c"
+    },
+    {
+      "claim_id": "f17a646b-a705-4467-b341-5d5493f0604c",
+      "result_id": "e4a025dd-eb59-4d1d-877a-327755c2717c"
+    },
+    {
+      "claim_id": "8c49df78-62d8-4e9b-912a-583b36c53732",
+      "result_id": "4bd89677-7aba-47a5-a0b2-dee772aacc69"
+    },
+    {
+      "claim_id": "754f2cbc-1c3c-47e8-8214-3413c0d0c6be",
+      "result_id": "4bd89677-7aba-47a5-a0b2-dee772aacc69"
+    },
+    {
+      "claim_id": "408441ef-3c8a-432e-949e-cdf0350c890d",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "c0156837-86c2-4a11-bd60-0f46df2e6e1a",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "75a917c9-1127-4d90-9613-18e44b78e3af",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "17b4817c-e38d-4f8b-8b7a-7efad19b5974",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "8ee71ff4-eade-446e-a77b-55fce82d9018",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "968c98ff-acd5-4d17-9f0f-47df26ae9c3c",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "0b209c08-a469-4227-a704-3d81a97ac8aa",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "c1972a96-c682-4b7c-b5c7-d64de7875fa7",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "46f20f96-b516-49ef-99c9-fea63fd7fa97",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "92fb047e-8545-4a19-92e7-981f784a6b03",
+      "result_id": "5e0093b3-709d-42cc-b3c2-103c36c25a9c"
+    },
+    {
+      "claim_id": "4c61110d-bd3c-4a70-9847-321449fbd5db",
+      "result_id": "83676b7b-6aba-47c3-8dc7-c79deedaadf1"
+    },
+    {
+      "claim_id": "8c49df78-62d8-4e9b-912a-583b36c53732",
+      "result_id": "83676b7b-6aba-47c3-8dc7-c79deedaadf1"
+    },
+    {
+      "claim_id": "0b209c08-a469-4227-a704-3d81a97ac8aa",
+      "result_id": "83676b7b-6aba-47c3-8dc7-c79deedaadf1"
+    },
+    {
+      "claim_id": "c1972a96-c682-4b7c-b5c7-d64de7875fa7",
+      "result_id": "83676b7b-6aba-47c3-8dc7-c79deedaadf1"
+    },
+    {
+      "claim_id": "77c4b98a-8a97-4bb7-8f24-9f1d00528817",
+      "result_id": "83676b7b-6aba-47c3-8dc7-c79deedaadf1"
+    },
+    {
+      "claim_id": "9ca1ceda-e76f-4abd-b84a-cca6ac5ae77f",
+      "result_id": "83676b7b-6aba-47c3-8dc7-c79deedaadf1"
+    },
+    {
+      "claim_id": "0d2a02fd-0606-4ddd-a7a3-910a6d840789",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "01e04a74-872d-4217-8e31-3f48511b4514",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "b2e8a53f-4fb3-451c-ae89-f87d8a484546",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "74c651bf-63ee-43e7-be35-442ba835b28e",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "feac490c-49dc-4738-b5ab-5261009787a4",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "321b4172-d1f0-4164-9bc3-c4c5c1387a8f",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "39c0b145-c002-44e0-973b-162924ef6bd3",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "229419e0-efd9-4eba-9239-7d7390e70929",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "d45aebe3-6f54-4dbf-ae89-d17f562e1374",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "262fd89d-190a-42e8-9f3c-835601c37b1f",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "a0800099-ca16-47d0-9f38-3921f8146f2d",
+      "result_id": "a093241b-3dcf-40b3-8399-fb929b24f3ff"
+    },
+    {
+      "claim_id": "fd772d05-b5e4-41b0-94a3-a1c401f61e31",
+      "result_id": "70516ade-ee0a-4974-ae0e-369b61b1646f"
+    },
+    {
+      "claim_id": "b66942fb-55d7-40eb-8aa6-68766a14f1a9",
+      "result_id": "70516ade-ee0a-4974-ae0e-369b61b1646f"
+    },
+    {
+      "claim_id": "0a9f5914-5515-4c65-b760-65351b1393c7",
+      "result_id": "70516ade-ee0a-4974-ae0e-369b61b1646f"
+    },
+    {
+      "claim_id": "2f64e66f-1125-4f47-87b8-c0700222de33",
+      "result_id": "70516ade-ee0a-4974-ae0e-369b61b1646f"
+    },
+    {
+      "claim_id": "77c4b98a-8a97-4bb7-8f24-9f1d00528817",
+      "result_id": "70516ade-ee0a-4974-ae0e-369b61b1646f"
+    },
+    {
+      "claim_id": "b0f19092-260f-41b6-8d9d-1d4617dbcba3",
+      "result_id": "6ccd7776-8232-4292-94ae-9b31e3beb7ed"
+    },
+    {
+      "claim_id": "078f88e6-4ae7-4167-b4e2-f5b8218adcc8",
+      "result_id": "6ccd7776-8232-4292-94ae-9b31e3beb7ed"
+    },
+    {
+      "claim_id": "b2e8a53f-4fb3-451c-ae89-f87d8a484546",
+      "result_id": "6ccd7776-8232-4292-94ae-9b31e3beb7ed"
+    },
+    {
+      "claim_id": "321b4172-d1f0-4164-9bc3-c4c5c1387a8f",
+      "result_id": "6ccd7776-8232-4292-94ae-9b31e3beb7ed"
+    },
+    {
+      "claim_id": "39c0b145-c002-44e0-973b-162924ef6bd3",
+      "result_id": "6ccd7776-8232-4292-94ae-9b31e3beb7ed"
+    },
+    {
+      "claim_id": "f2a45009-cef4-4d87-b141-7157693eaa81",
+      "result_id": "69af24b5-7738-4544-84ff-b21a801b9f95"
+    },
+    {
+      "claim_id": "ccb508c1-b878-4363-aeac-04e943e2ef85",
+      "result_id": "69af24b5-7738-4544-84ff-b21a801b9f95"
+    },
+    {
+      "claim_id": "a456937f-8f7a-4218-beb2-f0a8b4c4b4d0",
+      "result_id": "69af24b5-7738-4544-84ff-b21a801b9f95"
+    },
+    {
+      "claim_id": "b4f7e7b8-63bf-4c9f-a53f-e460914472e3",
+      "result_id": "69af24b5-7738-4544-84ff-b21a801b9f95"
+    },
+    {
+      "claim_id": "5ffe471f-7951-47a3-9f4a-b04cc8fc6d2a",
+      "result_id": "69af24b5-7738-4544-84ff-b21a801b9f95"
+    },
+    {
+      "claim_id": "c34d4291-74ce-4509-8437-7068e127de4b",
+      "result_id": "69af24b5-7738-4544-84ff-b21a801b9f95"
+    },
+    {
+      "claim_id": "5233d528-0346-4200-b3c6-7d641d83829d",
+      "result_id": "e1524974-1c42-4e4a-8ae9-34f59607066c"
+    },
+    {
+      "claim_id": "01c73d4b-97b2-4320-aa2c-c538ee49eefa",
+      "result_id": "e1524974-1c42-4e4a-8ae9-34f59607066c"
+    },
+    {
+      "claim_id": "a3cc4249-52fc-4558-b902-c11183f7d0ce",
+      "result_id": "e1524974-1c42-4e4a-8ae9-34f59607066c"
+    },
+    {
+      "claim_id": "92758301-89ac-421e-a7a5-391e6245b42b",
+      "result_id": "e1524974-1c42-4e4a-8ae9-34f59607066c"
+    },
+    {
+      "claim_id": "b69a7f2c-8c70-438d-98e0-353350451319",
+      "result_id": "e1524974-1c42-4e4a-8ae9-34f59607066c"
+    },
+    {
+      "claim_id": "65a45959-649e-4dbb-9f8f-e1299319ab70",
+      "result_id": "e1524974-1c42-4e4a-8ae9-34f59607066c"
+    },
+    {
+      "claim_id": "1d9a7bc8-9f36-46af-a8df-bbaa3f3a1008",
+      "result_id": "69ddf2bd-1d0f-4221-a0d7-587dc62921c2"
+    },
+    {
+      "claim_id": "5669c631-bdb3-4752-9d87-d3dbf2857143",
+      "result_id": "69ddf2bd-1d0f-4221-a0d7-587dc62921c2"
+    },
+    {
+      "claim_id": "f89c6c72-d7fd-4cb6-939c-ed5bb85e2695",
+      "result_id": "69ddf2bd-1d0f-4221-a0d7-587dc62921c2"
+    },
+    {
+      "claim_id": "fa541fe3-6ebb-43ec-a5cc-6389b8ad5c21",
+      "result_id": "050eaa8c-d6c0-467c-9c46-6d3eb6b899a7"
+    },
+    {
+      "claim_id": "96566391-ce4f-49bf-95db-e80a402ceb53",
+      "result_id": "050eaa8c-d6c0-467c-9c46-6d3eb6b899a7"
+    },
+    {
+      "claim_id": "44f95658-7e57-41ea-b57a-e99468748665",
+      "result_id": "050eaa8c-d6c0-467c-9c46-6d3eb6b899a7"
+    },
+    {
+      "claim_id": "64e914af-949a-41db-87fe-b29abb1f3838",
+      "result_id": "7cff6be7-2d53-4fd1-826a-b4dfa6b82973"
+    },
+    {
+      "claim_id": "5aae45e8-a003-4838-92cc-3bea022d3b7a",
+      "result_id": "7cff6be7-2d53-4fd1-826a-b4dfa6b82973"
+    },
+    {
+      "claim_id": "13345cb6-7b26-4859-a05c-1c6aed51b89a",
+      "result_id": "7cff6be7-2d53-4fd1-826a-b4dfa6b82973"
+    },
+    {
+      "claim_id": "6175ce6a-6d59-4a1e-b1f8-a911b2501e9a",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "7277c832-4525-47a1-bea6-a47fc74e0cdd",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "423070d2-ea44-4fee-a302-8a410fc9bfa7",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "765c3ee5-b204-4e19-99f1-8275ecad6510",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "cc75baf5-7456-4e5c-9bdb-4714ec652967",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "7b5503c8-8269-4e90-a4ca-acf904481d16",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "e4d23090-7ad1-402d-b37f-25e4993db18d",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "e54dc17b-33f6-4152-997b-b5ac57af08cd",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "62f13561-6e68-4220-bcc1-1afe5a2c30f6",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "4f16fdca-daff-4b70-b55f-7217180768ce",
+      "result_id": "81ecce6f-190d-4e00-b68a-4f31d19e47e8"
+    },
+    {
+      "claim_id": "7ecf472f-cfc0-42ed-83ce-9ffac3ad8c27",
+      "result_id": "f909df63-c263-46ba-9acf-8620c0242d7c"
+    },
+    {
+      "claim_id": "3c084a10-1b16-4379-a47b-2dce32455af1",
+      "result_id": "f909df63-c263-46ba-9acf-8620c0242d7c"
+    },
+    {
+      "claim_id": "184bb369-694a-46a8-9e4c-dac67d468ebb",
+      "result_id": "f909df63-c263-46ba-9acf-8620c0242d7c"
+    },
+    {
+      "claim_id": "f3dde232-3dcb-449b-9734-86b36e61edf2",
+      "result_id": "98c9526b-df00-41b5-9d51-c1161f25df0e"
+    },
+    {
+      "claim_id": "158a6965-b8d3-4286-990e-35d3ae40b004",
+      "result_id": "98c9526b-df00-41b5-9d51-c1161f25df0e"
+    }
+  ],
+  "comparisons": []
+}

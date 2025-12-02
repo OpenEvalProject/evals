@@ -1,0 +1,2089 @@
+{
+  "submission": {
+    "id": "4f189609-3f3c-41f6-a9cc-d504fdd5991f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:56:14.166213Z",
+    "updated_at": "2025-12-02T20:56:14.166213Z"
+  },
+  "content": [
+    {
+      "id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "submission_id": "4f189609-3f3c-41f6-a9cc-d504fdd5991f",
+      "content_type": "manuscript",
+      "content_text": "# Probing the ionotropic activity of glutamate GluD2 receptor in HEK cells with genetically-engineered photopharmacology\n\n## Authors\n\n- Damien Lemoine<sup>1</sup>\n- Sarah Mondoloni<sup>1</sup> ([ORCID: 0000-0002-6134-3715](https://orcid.org/0000-0002-6134-3715))\n- J\u00e9rome Tange<sup>1</sup>\n- Bertrand Lambolez<sup>1</sup> ([ORCID: 0000-0002-0653-480X](https://orcid.org/0000-0002-0653-480X))\n- Philippe Faure<sup>1</sup> ([ORCID: 0000-0003-3573-4971](https://orcid.org/0000-0003-3573-4971))\n- Antoine Taly<sup>2</sup> ([ORCID: 0000-0001-5109-0091](https://orcid.org/0000-0001-5109-0091))\n- Ludovic Tricoire<sup>1</sup> ([ORCID: 0000-0003-3345-1468](https://orcid.org/0000-0003-3345-1468)) \u2020\n- Alexandre Mourot<sup>1</sup> ([ORCID: 0000-0002-8839-7481](https://orcid.org/0000-0002-8839-7481)) \u2020\n\n### Affiliations\n\n1. Neuroscience Paris Seine - Institut de Biologie Paris Seine (NPS - IBPS), CNRS, INSERM, Sorbonne Universit\u00e9 Paris France\n2. CNRS, Universit\u00e9 de Paris, UPR 9080, Laboratoire de Biochimie Th\u00e9orique Paris France\n3. Institut de Biologie Physico-Chimique-Fondation Edmond de Rothschild, PSL Research University Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nGlutamate delta (GluD) receptors belong to the ionotropic glutamate receptor family, yet they don\u2019t bind glutamate and are considered orphan. Progress in defining the ion channel function of GluDs in neurons has been hindered by a lack of pharmacological tools. Here, we used a chemo-genetic approach to engineer specific and photo-reversible pharmacology in GluD2 receptor. We incorporated a cysteine mutation in the cavity located above the putative ion channel pore, for site-specific conjugation with a photoswitchable pore blocker. In the constitutively open GluD2 Lurcher mutant, current could be rapidly and reversibly decreased with light. We then transposed the cysteine mutation to the native receptor, to demonstrate with high pharmacological specificity that metabotropic glutamate receptor signaling triggers opening of GluD2. Our results assess the functional relevance of GluD2 ion channel and introduce an optogenetic tool that will provide a novel and powerful means for probing GluD2 ionotropic contribution to neuronal physiology.\n\n## Introduction\n\nThe delta glutamate receptors, GluD1 and GluD2, belong to the ionotropic glutamate receptor (iGluR) family, yet they don\u2019t bind glutamate (Yuzaki and Aricescu, 2017). They are considered as glutamate receptors solely based on their strong sequence and structure homology with AMPA, NMDA and kainate receptors (Lomeli et al., 1993; Araki et al., 1993; Schmid and Hollmann, 2008; Elegheert et al., 2016; Burada et al., 2020a; Burada et al., 2020b). GluD receptors are widely expressed throughout the brain, GluD1 predominantly in the forebrain, while GluD2 is highly enriched in cerebellar Purkinje cells (PCs) (Konno et al., 2014; Hepp et al., 2015; Nakamoto et al., 2020b). Both GluD1 and GluD2 play a role in the formation, stabilization, function and plasticity of synapses through their interaction with members of the cerebellin (Cbln) family (Fossati et al., 2019; Tao et al., 2018; Matsuda et al., 2010; Kakegawa et al., 2008). Cbln1 notably binds both the N-terminal domain of postsynaptic GluD2 and presynaptic neurexins, leading to a trans-synaptic bridge that promotes synaptogenesis and is essential for GluD2 signaling in vivo (Elegheert et al., 2016; Suzuki et al., 2020). Deletion of genes coding for GluD1 or GluD2 in mouse results in marked behavioral alterations (Yadav et al., 2012; Lalouette et al., 2001; Yadav et al., 2013; Nakamoto et al., 2020a), and mutations in these genes in humans have been associated with neurodevelopmental and psychiatric diseases (Griswold et al., 2012; Treutlein et al., 2009; Greenwood et al., 2011; Cristino, 2019), attesting to their functional importance in brain circuits.\n\nDespite their structural similarity with other iGluRs, and notably the presence of a ligand-binding domain (LBD), GluDs stand out because they are not activated by glutamate (Araki et al., 1993; Lomeli et al., 1993). Nonetheless, recent studies revealed that GluD pore opening could be triggered indirectly, through the activation of Gq-coupled metabotropic receptors, and contributes to neurotransmission and neuronal excitability (Ady et al., 2014; Dadak et al., 2017; Benamer et al., 2018; Gantz et al., 2020). Indeed, the activation of GluD channels triggered by metabotropic glutamate receptors (mGlu1/5) underlies the slow excitatory postsynaptic current in cerebellar PCs (GluD2, Ady et al., 2014) and in midbrain dopaminergic neurons (GluD1, Benamer et al., 2018). Moreover, the demonstration that GluD1 channels carry the noradrenergic slow excitatory current in dorsal raphe neurons (Gantz et al., 2020), suggests that the contribution of GluD channels to neuronal excitability and synaptic physiology may be widespread. The above studies relied largely on genetic tools, such as dead-pore mutants or targeted deletions, to assess the ion channel function of GluDs. Yet, due to the absence of specific pharmacological tools to block their ion permeation, the role of GluD1/2 channels in the regulation of neural activity remains largely elusive.\n\nPore blockers for GluDs, such as pentamidine and 1-Naphthyl acetyl spermine (NASPM), were previously identified using a point mutation (A654T) in GluD2 that confers constitutive ion flow and causes the degeneration of cerebellar PCs in Lurcher (GluD2Lc) mice (Wollmuth et al., 2000; Zuo et al., 1997). These molecules are however also pore blockers of NMDA and AMPA receptors, respectively. Other ligands such as D-serine and glycine bind to the LBD and reduce spontaneous currents in GluD2Lc, which suggests a coupling between the LBD and the channel (Naur et al., 2007; Hansen et al., 2009), but these molecules have broad spectrum activity. Finally, 7-chlorokynurenic acid has been identified to modulate GluD2Lc current by binding to the D-serine site but it is also a GluN1 competitive antagonist (Kristensen et al., 2016).\n\nTo fill this gap, we bestowed light-sensitivity to the GluD ion channel pore using a photoswitchable tethered ligand (PTL) approach (Paoletti et al., 2019; Mondoloni et al., 2019). Using structure-based design, we incorporated a cysteine point mutation at the surface of GluD2, right above the hypothetical channel lumen, onto which can be anchored a photoswitchable pore blocker. Different wavelengths of light are then used to modify the geometry of the PTL, thereby presenting/removing the blocker to/from the channel, resulting in optical control of ionotropic activity. Here we demonstrate rapid and reversible, optical control of ion current through a cysteine-substituted GluD2 receptor. This novel tool, called light-controllable GluD2 (LiGluD2), allows rapid, reversible and pharmacologically-specific control of ionic current through GluD2, and may help provide a mechanistic understanding of how this receptor contributes to brain circuit function and behaviors.\n\n## Results\n\n### Designing a light-controllable GluD receptor\n\nOur approach to probing the functionality of the ion channel in GluD is to install a photo-isomerizable pore blocker at the extracellular entrance to the channel lumen (Figure 1A). The tethered ligand is site-specifically attached to a cysteine-substituted residue. In darkness or under green light (500\u2013535 nm), the PTL adopts an elongated shape and reaches the lumen, resulting in ion channel blockade, while under violet light (380\u2013390 nm), it switches to a twisted, shorter configuration, relieving blockade. Our design of the PTL was based on the chemical structure of pentamidine (Figure 1B), a pore blocker that efficiently blocks current through GluD2Lc receptors (Williams et al., 2003). The PTL, called MAGu, contains a thiol-reactive maleimide (M) moiety, a central photo-isomerizable azobenzene (A) chromophore, and a guanidinium (Gu) head group that resembles the amidinium groups of pentamidine (Figure 1C). MAGu was selected notably because its synthesis route has been described (referred to as PAG1c in the original article) and because it was shown to have no adverse effect on native brain tissue (Lin et al., 2015). In aqueous solution, MAGu could be converted to its cis form using 380 nm light, and converted back to trans either slowly in darkness (t1/2 ~ 20 min) or rapidly upon illumination with 525 nm light (Figure 1\u2014figure supplement 1A\u2013B), in agreement with previous reports (Lin et al., 2018). To find the best attachment site for MAGu on GluD, we developed a homology model of the GluD2 receptor, based on the structure of the recently crystallized GluA2 receptor (Twomey et al., 2017) (see methods). Using this model, we selected a series of 15 residues, located on the peptide that links the LBD to the third transmembrane domain (M3) that lines the channel lumen, for mutation to cysteine (Figure 1D\u2013E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59026/elife-59026-fig1-v2.jpg)\n\n**Figure 1.:** (A) GluD2 is genetically-modified to incorporate a cysteine residue (yellow) at the entrance to the pore, which serves as a handle for the covalent attachment of a synthetic, photoswitchable tethered ligand (PTL). Under green light (500 nm), the PTL adopts an elongated state and places its cationic head group in the lumen, resulting in ion channel blockade. Under violet light (380 nm), the PTL switches to a twisted, shorter form and unblocks the channel. The position of the Lurcher (Lc) mutation, which produces a permanently open channel, is depicted in red. (B) Chemical structure of pentamidine, a non-selective iGluR blocker with two amidinium head groups. (C) Chemical structures of the PTL MAGu in its trans (top) and cis (bottom) configurations. MAGu is composed of a cysteine-reactive maleimide group, a central azobenzene chromophore, and a guanidinium cationic head group. (D) Molecular model of GluD2, based on the structure of activated GluA2 (5weo). Residues mutated to cysteine are depicted in yellow, while the Lc mutant is shown in red. (E) Top, schematic representation of one GluD subunit, with its ligand-binding domain (LDB) and its four membrane segments (M1-4, M2 being a non-membrane spanning pore loop). Bottom, sequence alignment between the mouse GluA2 and GluD2 receptors around the engineered mutations. M3 is shown in gray, the 15 residues mutated to cysteine in yellow, and the position of the A654T Lc mutation in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59026/elife-59026-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) UV-visible spectra of MAGu under 520 nm light (green, mostly trans) or under 390 nm light (pink, mostly cis). (B) Thermal relaxation of cis MAGu in aqueous solution in darkness. Absorbance at 362 nm is plotted as a function of time in darkness following illumination with 390 nm light. Data points were fitted with the following monoexponential decay equation: y\u00a0=\u00a0A exp(-x/k) and yielded: A\u00a0=\u00a095.8\u00a0\u00b1\u00a01.9 and k\u00a0=\u00a05.8e-04\u00a0\u00b1\u00a00.2e-04 s\u22121. The half-life of cis MAGu was ln(2)/k\u00a0=\u00a01195 s.\n\n### Cysteine screening\n\nSince no known ligand directly gates the ion channel of GluD2, we used a Lc mutant, A654T, which displays a constitutively open channel (Wollmuth et al., 2000; Zuo et al., 1997), for screening the 15 single-cysteine mutations. Accordingly, we found that heterologous expression of GluD2-A654T, but not of the wild-type (WT) protein, in HEK cells produces large currents that reverse at membrane potential close to 0 mV and are reduced by externally-applied pentamidine (Figure 2A). Subtracted Lc current showed clear rectification at positive potentials, as reported with the blockade by NASP, another GluD blocker (Kohda et al., 2000). Therefore, the A654T Lc mutant was subsequently used as a screening platform to find the best attachment site for MAGu on GluD2. Each of the 15 residues identified in Figure 1D were mutated individually to cysteine on the A654T background, and tested using patch-clamp electrophysiology. Cells were treated with MAGu (20 \u00b5M, 20 min) and Lc currents were measured in voltage-clamp mode (\u221260 mV) under different illumination conditions to toggle MAGu between its cis and trans states. As expected, current through A654T was not affected by light, indicating that in the absence of a properly-positioned cysteine, MAGu has no effect on this Lc channel. In contrast, we found several cysteine mutants for which current was significantly larger under 380 than under 535 nm light, and one mutant (Q669C) for which there was a tendency for \u2018reverse photoswitching\u2019, that\u00a0is larger currents under 535 than under 380 nm light (Figure 2B). We then quantified the degree of photoswitching by comparing the block in darkness (trans state) to the block evoked by a saturating concentration of pentamidine (100 \u03bcM). We excluded from the analysis mutants that displayed no pentamidine-decreased leak current (i.e. mutants for which pentamidine block was significantly smaller than that observed on A654T, Figure 2\u2014figure supplement 1A\u2013B), because they were likely either not expressed or not functional. Photoswitching was significant for Q666C, Q669C, D670C, Q674C, and I677C, suggesting that MAGu covalently reacted with these cysteine mutants and that, once tethered, it could modulate current in one of its conformer (Figure 2C). Importantly, photomodulation was absent in the control A654T and the other cysteine mutants, indicating that the effect of light is specific to the attachment of MAGu to the above-mentioned cysteine mutants. From a structural point of view, the photocontrollable mutants are all located at the very top of the linker, that\u00a0is further away from the membrane domain compared to other tested residues (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59026/elife-59026-fig2-v2.jpg)\n\n**Figure 2.:** (A) Left, representative current-voltage relationship for GluD2-A654T Lc, with (blue) and without (black) pentamidine (100 \u03bcM). The subtracted current (gray) shows clear inward rectification and block at positive voltages. Right, currents recorded at \u221260 mV were larger for GluD2-A654T than for WT (n\u00a0=\u00a06 cells, p=0.0033, two-sample t-test), and were strongly reduced with 100 \u03bcM pentamidine for A654T (n\u00a0=\u00a06 cells, p=0.0045, paired t-test) but not for the WT GluD2 (n\u00a0=\u00a06 cells, p=0.34, paired t-test). (B) Left, ratio of the currents recorded at \u221260 mV under 380 and 535 nm light, for A654T and the fifteen cysteine mutants engineered on the A654T background (n\u00a0=\u00a03\u20138 cells, one-sample t-test, or Wilcoxon when normality is not verified, compared with a theoretical mean value of 1). Right, representative change in holding current when switching between dark, 380 and 535 nm light, for A654T and for five mutants that show modulation of the holding current when switching between 380 and 535 nm light (p<0.05 except for Q669C where p=0.09). (C) Left, representative current traces (Vm = \u221260 mV) recorded for A654T and A654T-I677C in darkness, then under 380 nm light (violet), upon application of pentamidine (blue, 100 \u03bcM), and then under 535 nm after pentamidine washout (green). Right, percent photoswitching (PS\u00a0=\u00a0Blockphoto/Blockpenta) for A654T and the cysteine mutants that show both clear leak current and pentamidine block. Photoswitching reached 15.5 \u00b1 3.1% for Q666C (p=0.016, n\u00a0=\u00a04),\u20131.9 \u00b1 0.4% for Q669C (p=0.008, n\u00a0=\u00a06), 14.6 \u00b1 1.7% for D670C (p=0.003, n\u00a0=\u00a04), 20.5 \u00b1 4.2% for Q674C (p=0.008, n\u00a0=\u00a05) and 46.3 \u00b1 4.3% for I677C (p=1.34E-05, n\u00a0=\u00a08, one-sample t-test, or Wilcoxon when normality is not verified, compared with a theoretical mean value of 0). Photoswitching was absent in the control A654T mutant (0.37 \u00b1 0.9%, p=0.72, n\u00a0=\u00a05) and in the other two cysteine mutants K673C (\u22120.9 \u00b1 1.06%, p=0.43) and D676C (0.39 \u00b1 0.57%, p=0.53). (D) Model of GluD2 showing the location of A654 (red), Q666, D670, Q674 and I677C (violet), Q669 (green), and all the non-photocontrollable cysteine mutants (yellow). Data are presented as mean value\u00a0\u00b1\u00a0sem. Source files of individual data points used for the quantitative analysis are available in the Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59026/elife-59026-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Currents recorded at \u221260 mV for A654T and each of the fifteen cysteine mutants (n\u00a0=\u00a03\u20138 cells). (B) Pentamidine block for A654T and each of the fifteen cysteine mutants (n\u00a0=\u00a03\u20138 cells). Data are presented as mean value\u00a0\u00b1\u00a0sem.\n\n### Photocontrol of GluD2-A654T-I677C tethered with MAGu\n\nWe then selected the best mutant GluD2-A654T-I677C for further characterization. Because pentamidine does not fully block GluD2, even at saturating concentrations (Williams et al., 2003), we quantified the extent of photoswitching by blocking leak current completely, using impermeant N-Methyl-D-glucamine (NMDG). We found that MAGu blocked about 33% of the leak current in its trans form (Figure 3A). Photoregulation was fully reversible over many cycles of 380 and 535 nm light (Figure 3B), in agreement with the fact that azobenzenes photobleach minimally (Beharry and Woolley, 2011). Under our illumination conditions, light pulses of 200 ms were sufficient to fully unblock the current, while shorter illumination times could be used to finely tune the degree of blockade (Figure 3C). Once in the cis configuration, MAGu relaxes back to its thermodynamically stable trans state slowly, with a half-life of about 20 min in solution (Figure 1\u2014figure supplement 1B). Accordingly, relief of blockade persisted for many seconds in darkness after a brief flash of 380 nm light (Figure 3D), eliminating the need for constant illumination, an important feature for future neurophysiology experiments.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59026/elife-59026-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative current traces (Vm = \u221260 mV) recorded for A654T-I677C in darkness, then under 380 light (violet), upon application of pentamidine or NMDG (blue, 100 \u03bcM), and then under 535 nm (green). Membrane potential is switched from \u221260 to \u221268 mV during NMDG application to correct for the change in junction potential, and percent BlockNMDG is calculated for Vm = \u221268 mV. Right, percent block for pentamidine (blue, 74.4 \u00b1 6.5%) and for transMAGu (green, 535 nm, 33.0 \u00b1 2.4%) compared to NMDG block (n\u00a0=\u00a08 cells). (B) Representative recording showing the reversibility of block/unblock over multiple cycles of 380/535 nm light. (C) Left, representative recording showing the extent of current unblock when varying the illumination time under violet light. Right, quantification of current unblock as a function of illumination time (n\u00a0=\u00a08 cells). Inset, averaged time-course of current unblock when switching from dark to 380 nm light (mean value in black,\u00b1\u00a0SEM in purple, n\u00a0=\u00a07 cells) and corresponding mono-exponential fit (red, k\u00a0=\u00a00.0296\u00a0\u00b1\u00a00.0002 ms\u22121; t1/2 = 23.4 ms). (D) Left, representative current trace showing the thermal stability of cis MAGu in darkness after a brief flash of 380 nm light. Right, 86.2 \u00b1 2.5% of the residual current remains after 1 min in darkness (n\u00a0=\u00a09 cells). Data are presented as mean value\u00a0\u00b1\u00a0sem. Source files of individual data points used for the quantitative analysis are available in the Figure 3\u2014source data 1.\n\nFrom a pharmacological point of view, current blockade occurred in the trans state (535 nm) and was relieved in the cis configuration (380 nm) for all membrane potential tested, with very little voltage-dependence (Figure 4A), which contrasts with the profound voltage-dependence of block observed with pentamidine. This suggested to us that the positive charge of MAGu may not sense the electrical field of the membrane as much as pentamidine does, and thus that the two molecules may bind to different sites. To investigate whether MAGu and pentamidine compete for the same binding site, we evaluated the dose-response relationship of pentamidine block on GluD2-A654T-I677C conjugated with MAGu, under both 380 and 535 nm light (Figure 4B). We found the IC50s under both wavelengths to be virtually indistinguishable, favoring the idea that MAGu and pentamidine have distinct, non-overlapping binding sites. To get further molecular insight into trans MAGu-induced reduction of current, we performed molecular modeling experiments. After inserting the cysteine mutation, trans MAGu was docked by covalent docking, that\u00a0is the reactive maleimide moiety was forced to be in contact with the cysteine while the rest of the molecule was free to move. We found that the guanidinium headgroup of trans MAGu couldn\u2019t reach the membrane-embedded lumen of GluD2 (Figure 4C), in agreement with our electrophysiology data. The effect of trans MAGu on the ion current was tested with the MOLEonline webserver (Pravda et al., 2018), which allowed to compute the geometry of the ion channel. We found that the photoswitch has a direct steric effect on the size of the cavity above the channel, as shown by the comparison of the computed channel in presence or absence of the photoswitch (Figure 4D). In addition, the charge of the photoswitch could modify the electrostatic potential in the cavity and thereby affect ion transfer.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59026/elife-59026-fig4-v2.jpg)\n\n**Figure 4.:** (A) Average current-versus-voltage relationship under 380 and 535 nm light (n\u00a0=\u00a021). S.E.M is shown is shade, and subtracted current in gray. (B) Left, representative dose-dependent blockade of the current upon pentamidine (0.1\u2013100 \u03bcM) application, under 380 and 535 nm light. Right, quantification of pentamidine blockade under both wavelengths of light. IC50380\u00a0=\u00a05.1\u00a0\u00b1\u00a00.3 \u03bcM, IC50535\u00a0=\u00a04.8\u00a0\u00b1\u00a00.5 \u03bcM (n\u00a0=\u00a06 cells). (C) Molecular modeling showing trans MAGu tethered to I677C. (D) Molecular modeling showing the ion channel computed in the absence (top) and presence (bottom) of trans MAGu. The channel is represented with a color coding of the diameter in order to facilitate observation of the change induced by trans MAGu (from green, large, to red, small). One subunit is omitted for clarity. Data are presented as mean value\u00a0\u00b1\u00a0sem. Source files of individual data points used for the quantitative analysis are available in the Figure 4\u2014source data 1.\n\n### Optical control of the native GluD2 channel\n\nWe next sought to determine whether the non-Lc, native channel could be photocontrolled after installation of MAGu on the cysteine-substituted GluD2-I677C receptor. In heterologous expression system, activation of mGlu1 using the selective agonist 3,5-Dihydroxyphenylglycine (DHPG) was reported to trigger opening of GluD2 receptors (Ady et al., 2014; Dadak et al., 2017). Therefore, we co-expressed the b isoform of mGlu1, which displays low basal activity (Pr\u00e9zeau et al., 1996), together with GluD2 in HEK cells. Cells were labeled with MAGu and DHPG currents were recorded while alternating between 380 and 535 nm light. We found that DHPG-induced currents were reversibly reduced by about 23% under 535 nm compared to 380 nm light for I677C, indicating that optical blockade with MAGu could be transposed to the native, non-Lc GluD2 (Figure 5A). Importantly, DHPG-induced currents were identical in both wavelengths of light for the WT receptor (Figure 5B), confirming that the effect of light is specific to the attachment of MAGu to I677C (Figure 5C). In addition, we observed that the holding current increased when switching from darkness to 380 nm light for I677C, and decreased when switching back to 535 nm light, but remained constant in both wavelengths of light for WT (Figure 5D). This suggests that a fraction GluD2 receptors are constitutively open prior to DHPG application, likely due to some basal mGlu1 activity in these cells. Altogether, these results show that the GluD2 I677C mutant labeled with MAGu (a.k.a. LiGluD2) possesses a functional ion channel, which can be gated through the mGlu signaling pathway, and which can be reversibly blocked and unblocked with green and purple light, respectively.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59026/elife-59026-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative DHPG-induced current (measured as indicated by the red arrow) for a MAGu-treated (20 \u00b5M, 20 min) cell co-expressing mGlu1b and GluD2-I677C, under 380, 535 and 380 nm light. Note the drop in holding current at the onset of the 380 nm illumination, and the return to the baseline under 535 nm light. (B) Representative DHPG-induced current for a MAGu-treated cell co-expressing mGlu1b and WT GluD2, under 380, 535 and 380 nm light. (C) DHPG-induced currents were reduced under 535 compared to 380 nm light for I677C (22.8 \u00b1 4.6%, n\u00a0=\u00a08 cells) but not for WT GluD2 (3.3 \u00b1 6.4%, n\u00a0=\u00a06 cells, p=0.02, two-sample t-test). (D)\u00a0Ratio of the holding current recorded under 380 nm light and in darkness is different from one for I677C (1.09 \u00b1 0.004%, p=2.44 e-7, n\u00a0=\u00a08 cells) but not for WT GluD2 (1.01 \u00b1 0.006%, p=0.10, n\u00a0=\u00a08 cells, one-sample t-test). Source files of individual data points used for the quantitative analysis are available in the Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59026/elife-59026-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Top, DHPG (200 \u03bcM)-induced current in vehicle-treated cerebellar slices were of similar amplitude under 380 and 535 nm light (\u2212800\u00a0\u00b1\u00a057 pA vs. \u2212799\u00a0\u00b1\u00a057 pA, p>0.999, n\u00a0=\u00a010). Middle, DHPG (200 \u03bcM)-induced current in MAGu-treated cerebellar slices were of similar amplitude under 380 and 535 nm light (\u2212666\u00a0\u00b1\u00a0113 pA vs. \u2212661\u00a0\u00b1\u00a0111 pA, p=0.625, n\u00a0=\u00a013). Bottom, ratio between the current measured under 380 and 535 nm light are not different from one for both vehicle-treated (1.004\u00a0\u00b1\u00a00.008, p=0.6475) and MAGu-treated cells (1.003\u00a0\u00b1\u00a00.01, p=0.7755). (B) Top, Excitatory post-synaptic currents (EPSCs) in vehicle-treated cerebellar slices were of similar amplitude under 380 and 535 nm light (\u2212272\u00a0\u00b1\u00a032 pA vs \u2212273\u00a0\u00b1\u00a034 pA, p=0.742, n\u00a0=\u00a08). Middle, EPSCs in MAGu-treated cerebellar slices were of similar amplitude under 380 and 535 nm light (\u2212176\u00a0\u00b1\u00a020 pA vs. \u2212180\u00a0\u00b1\u00a019 pA, p=0.320, n\u00a0=\u00a011). Bottom, ratio between the current measured under 380 and 535 nm light are not different from one for both vehicle-treated (0.9976\u00a0\u00b1\u00a00.0185, p>0.999) and MAGu-treated cells (1.035\u00a0\u00b1\u00a00.020, p=0.1748). Data are presented as mean value\u00a0\u00b1\u00a0sem.\n\nIn order to evaluate the usefulness of LiGluD2 in neurons, we verified that MAGu treatment does not lead to photosensitization of native glutamate currents in PCs of WT mice. Since GluD2 is enriched at the parallel fiber-PC synapse (Landsend et al., 1997), we used local application of DHPG (200 \u00b5M) to induce inward current in both MAGu- and vehicle-treated slices. We found that the DHPG current amplitude remained unchanged under 535 nm compared to 380 nm in the two treatment conditions, resulting in a ratio of current amplitude I380/I535 measured for each cell not significantly different from 1 (Figure 5\u2014figure supplement 1A). We then recorded AMPA-mediated excitatory post-synaptic currents (EPSCs) in both vehicle- and MAGu-treated PCs. We found that the amplitude of electrically evoked EPSCs was stable under 535 nm compared to 380 nm, and that the ratio of EPSC amplitudes I380/I535 was not significantly different from one in both conditions (Figure 5\u2014figure supplement 1B). These control experiments demonstrate that wild-type GluD and GluA receptors, which lack a properly-positioned cysteine residue near the pore lumen, remain insensitive to light after MAGu treatment.\n\n## Discussion\n\nThe PTL strategy has been successfully applied to several members of the iGluR family, including kainate (Volgraf et al., 2006) and NMDA (Berlin et al., 2016) receptors. In these former studies, the photoswitches were made with a glutamate head group, and were tethered to the LBD in proximity to the glutamate binding pocket, providing photocontrol of channel gating (Reiner et al., 2015). Because their activation mechanism is still unknown, we adopted a different strategy for photocontrolling GluD receptors. We installed the photoswitchable ligand MAGu in proximity to the pore lumen, in hope to alter ion conduction through non-competitive antagonism. We found several cysteine mutants for which current was specifically modulated by light after attachment of MAGu, notably I677C (a.k.a. LiGluD2). In LiGluD2, trans MAGu likely does not reach the pore lumen as originally designed. Nevertheless, it reversibly modulates current through the open GluD2 channel with high temporal and pharmacological precision.\n\nThe compounds traditionally used to probe the ionic function of GluDs, such as pentamidine and NASPM (Kohda et al., 2000; Williams et al., 2003), are not specific of GluD and also block NMDA and AMPA receptors. As to D-serine and glycine, they partially inhibit GluD2Lc and mGlu1-gated GluD currents (Naur et al., 2007; Ady et al., 2014; Benamer et al., 2018), but they are also co-agonists of NMDA receptors. Here, the pharmacological specificity of LiGluD2 is exquisite: after MAGu treatment, only the I677C mutant, and not the WT receptor, became sensitive to light. Likewise, MAGu did not photosensitize other WT glutamate receptors expressed in native brain tissue, in agreement with previous report demonstrating that MAGu has no off-target effects on WT GABA receptors, glutamate receptors and voltage-gated ion channels (Lin et al., 2015). Indeed, even though the maleimide group of MAGu reacts in principle with any extracellular cysteine freely accessible on the cell surface, the ability of the tethered ligand (here guanidinium) to reach a particular site of action on any given protein in one configuration, but not the other (e.g. trans but not cis), is highly improbable. In fact, the PTL approach has already demonstrated exquisite pharmacological specificity for a large variety of cysteine-substituted ion channels and receptors (Paoletti et al., 2019; Mondoloni et al., 2019), even in complex biological settings such as brain slices (Berlin et al., 2016) or intact neuronal circuits in vivo (Lin et al., 2015; Durand-de Cuttoli et al., 2018).\n\nAttachment of MAGu to GluD2 requires a single amino acid substitution, which is unlikely to disrupt the function of the receptor. In line with this, we found that the functional coupling of GluD2 with mGlu1 signaling (Ady et al., 2014; Dadak et al., 2017) was intact in LiGluD2. This enabled us to validate that activation of mGlu1 triggers the opening of the GluD2 channel in heterologous expression system, in support of earlier evidence that opening of the ion channel of GluD receptors can be triggered in response to metabotropic signaling mechanisms (Ady et al., 2014; Dadak et al., 2017; Benamer et al., 2018; Gantz et al., 2020). Even though light-induced blockade in LiGluD2 is partial, the rapid kinetics of block/unblock, coupled to the genetic specificity of the methodology, provide a unique opportunity to detect even small variations in GluD2 current, such as the tonic current we observed in heterologous expression system. LiGluD2 remains to be deployed in neuronal setting, yet we believe it will be a crucial tool for probing the ionotropic contribution of this orphan receptor to synaptic physiology.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK tsa201</td>\n      <td>Sigma-Aldrich #96121229</td>\n      <td>RRID:CVCL_2737</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MAGu</td>\n      <td>10.1016/j.neuron.2015.10.026</td>\n      <td></td>\n      <td>Originally named PAG-1c. Custom-synthetized by Enamine, Ukraine</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMSO</td>\n      <td>Sigma-Aldrich</td>\n      <td>D2650</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pentamidine</td>\n      <td>Sigma-Aldrich</td>\n      <td>1504900</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N-methyl-d-glucamine (NMDG)</td>\n      <td>Sigma-Aldrich</td>\n      <td>M2004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(R,S)\u22123,5-DHPG</td>\n      <td>Hello-bio</td>\n      <td>HB0026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CNQX</td>\n      <td>Hello-bio</td>\n      <td>HB0205</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-APV</td>\n      <td>Hello-bio</td>\n      <td>HB0225</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SR 95531 (Gabazine)</td>\n      <td>Hello-bio</td>\n      <td>HB0901</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CGP 55845</td>\n      <td>Hello-bio</td>\n      <td>HB0960</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Grid2 (glutamate receptor, ionotropic, delta 2)</td>\n      <td>Genbank</td>\n      <td>GeneID: 14804</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Rattus norvegicus)</td>\n      <td>Grm1 (glutamate receptor, metabotropic 1)</td>\n      <td>Genbank</td>\n      <td>Gene ID: 24414</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Mus musculus)</td>\n      <td>pcDNA3-GluD2</td>\n      <td>https://doi.org/10.1002/embr.201337371</td>\n      <td>NM_008167.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Mus musculus)</td>\n      <td>pRK5-mGlu1b</td>\n      <td>Laurent Prezeau (IGF, Montpellier, France).</td>\n      <td>NM_001114330.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R Project for Statistical Computing</td>\n      <td>http://www.r-project.org/</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Modeller 9.19</td>\n      <td>https://salilab.org/modeller/9.19/release.html</td>\n      <td>RRID:SCR_008395</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Smina</td>\n      <td>https://sourceforge.net/projects/smina/</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Chemicals\n\nBio-grade Chemicals products was provided by Sigma-Aldrich from Merck. MAGu was synthesized as previously described (Lin et al., 2015) and provided by Enamine Ltd., Kyiv, Ukraine (www.enamine.net). MAGu was stored at \u221280\u00b0C as stock solutions in anhydrous DMSO.\n\n### Spectrophotometry\n\nUV-visible spectra were recorded on a Nanodrop 2000 (Thermo Scientific, 1 mm path) with 100 \u03bcM MAGu in PBS pH 7.4 (10% final DMSO). The sample was illuminated for 1 min using ultra high-power LEDs (Prizmatix) connected to an optical fiber (URT, 1 mm core, Thorlabs), followed by an immediate measurement of absorbance. Light intensity at the tip of the 1 mm fiber was 100 mW for the 390 nm LED, and 150 mW for the 520 nm LED.\n\n### Molecular biology\n\nThe single-cysteine mutations of GuD2 were generated by site-directed mutagenesis using the Quick Change II kit (Agilent technology) performed on pcDNA3-GluD2 (Ady et al., 2014). All mutants were verified by sequencing.\n\n### Cell line\n\nWe used human Embryonic Kidney cells (HEK tsA201, Sigma-Aldrich # 96121229). Cells were certified by Sigma-Aldrich. Mycoplasma contamination status were negative.\n\n### Cell culture\n\nCells were cultured in 25 cm2 tissue culture flask (Falcon, Vented Cap, 353109) with a culture medium composed of Dulbeco\u2019s Modified Eagle Medium (Gibco life technologies, 31966047) containing Glutamax and supplemented with Fetal Bovine Serum (10%, Gibco life technologies, 10500064), Nonessential Amino-Acids (1%, Life Technologies, 11140\u2013035), ampicillin, streptomycin (50,000 U, Gibco, life technologies, 15140\u2013122) and mycoplasma prophylactic (2.5 mg, InvivoGen) antibiotics.\n\n### Transfection\n\nHEK tsA201 cells were freshly seeded and plated out in a 6-well plate, on coverslips (10 mm) treated with poly-L-lysine hydrobromide (Sigma, P6282-5MG). Cells were transiently transfected using calcium-phosphate precipitation, as described in Lemoine et al., 2016, using 1 \u00b5g of cDNA of GluD2 cysteine mutant per well. For co-transfection experiments, we used mGlu1b/GluD2 ratio from 0.7 to 1, with a maximum of 2 \u00b5g of total DNA. The plasmid pRK5-mGlu1b used in this study is a generous gift of L. Prezeau (IGF, Montpellier).\n\n### In vitro electrophysiology\n\nElectrophysiological currents were recorded on HEK tsA201 cells at room temperature (21\u201325\u00b0C), 24\u201348 hr after transfection. Prior to whole-cell patch-clamp experiments, cells were incubated for 20 min with an extracellular solution containing 20 \u03bcM MAGu, and then washed for at least 5 min with a fresh external solution. Cells were perfused with an external solution containing (in mM): 140 NaCl, 2.8 KCl, 2 CaCl2, 2 MgCl2, 12 glucose, 10 HEPES and NaOH-buffered at pH 7.32. The external NMDG solution contained (in mM): 140 NMDG, 2.8 KCl, 2 CaCl2, 2 MgCl2, 12 glucose, 10 HEPES and was KOH-buffered at pH 7.32. Cells were patched with a borosilicate pipette (4\u20135 M\u03a9) containing an intracellular solution containing (in mM): 140 KCl, 5 MgCl2, 5 EGTA, 10 HEPES, and pH-adjusted to 7.32 with KOH. For recording metabotropic activation of GluD2 by mGlu1, the internal solution contained (in mM): 140 K-gluconate, 6 KCl, 12.6 NaCl, 0.1 CaCl2, 5 Mg-ATP, 0.4 Na-GTP, 1 EGTA, 10 HEPES, and was adjusted to pH 7.32 with KOH. Pentamidine and NMDG solutions were applied using a fast-step perfusion system equipped with three square tubes (SF77B, warning instruments), as described in Lemoine et al., 2016. Illumination was carried out using a high-power LED system (pE-2, Cooled) mounted directly on the epifluorescence port of a vertical microscope (SliceScope Pro 6000, Scientifica). Light output at the focal plane was 5 and 11.7 mW/mm2 for the 380 and 535 nm LEDs, respectively. Currents were recorded with an axopatch 200B and digitized with a digidata 1440 (Molecular devices). Signals were low-pass filtered (Bessel, 2 kHz) and collected at 10 kHz using the data acquisition software pClamp 10.5 (Molecular Devices). Electrophysiological recordings were extracted using Clampfit (Molecular Devices) and analyzed with R.\n\n### Slice electrophysiology\n\nAnimal breeding and euthanasia were performed in accordance with European Commission guidelines and French legislation (2010/63/UE) and procedures were approved by the French Ministry of Research (Agreement APAFIS#16198\u20132018071921137716 v3). Mice at age P30-40 were anesthetized with isoflurane and decapitated. Cerebella were rapidly extracted and transferred into ice-cold ACSF supplemented with 50 mM sucrose and 1 mM kynurenic acid. The composition of ACSF in mM was as follows: 126 NaCl, 26 NaHCO3, 2.5 KCl, 1.25 NaH2PO4, 1 MgCl2, 2 CaCl2, 20 glucose. pH was adjusted to 7.4 by continuous gassing with carbogen. Sagittal slices (250 \u00b5m) were sectioned from the vermis on a vibratome (Leica VT 1200S) and transferred to oxygenated ACSF. Slices were incubated for 15 min at 30\u00b0C then transferred at room temperature before recording. Unless stated otherwise, all the steps were performed at room temperature. Purkinje cells were visually identified using infrared Dodt contrast imaging with a 60\u00a0\u00d7\u00a0water immersion objective. Whole-cell recordings from Purkinje cells in cerebellar lobules IV-VI (voltage-clamped at \u221270 mV, liquid junction potentials not corrected) were performed with borosilicate glass pipettes (WPI, 2\u20134 M\u03a9) pulled with a horizontal micropipette puller (Sutter instruments). Internal pipette solutions contained (in mM): 140 Cs-gluconate, 5 CsCl, 2 MgCl2, 0.5 EGTA, 2 Na-ATP (pH 7.3, adjusted with CsOH). Whole-cell currents were recorded at 20 kHz and filtered with a Bessel low-pass filter at 4 kHz using a patch-clamp amplifier (Multiclamp 700B, Molecular Devices) connected to a Digidata 1440A interface board (Molecular Devices). Only Purkinje cells with a series resistance\u00a0<12 M\u03a9 (not compensated; monitored during experiments by applying 200 ms, \u22125 mV voltage pulses) were used for the analyses.\n\nSlices were incubated for 20 min under continuous oxygenation with MAGu 20 \u00b5M or vehicle (DMSO 0.4%) dissolved in 750 \u00b5l ACSF in a well of 24-well plate. The slices were then washed in ACSF for at least 20 min, and transferred in the recording chamber. Photoswitching was achieved by illuminating the slice as described above alternatively at 380 nm and 535 nm for 1 s.\n\n(RS)-DHPG (200 \u00b5M) was diluted in ACSF and locally pressure-applied using a patch pipette placed in the dendrites of the recorded Purkinje-cell. A pneumatic microinjector (Picopump, WPI) was used to deliver 0.1\u20130.2 ms air pressure pulses (4\u201310 PSI) every minute. DHPG-mediated currents were recorded at room temperature in presence of CNQX 10 \u00b5M, D-APV 25 \u00b5M, gabazine 10 \u00b5M and CGP 55845 0.5 \u00b5M. DHPG was applied immediately after the light stimulation.\n\nParallel fiber stimulation was achieved every 10 s with a glass pipette filled with ACSF and placed in the outer half part of molecular layer. A constant voltage isolation unit (DS3, Digitimer Ltd) was used to deliver 10 \u00b5s rectangular pulses (50\u2013200 \u00b5A) for extracellular stimulation. Parallel fibers inputs were identified by paired-pulse facilitation at 50 ms inter stimulus interval. Amplitudes of evoked EPSCs were averaged from 6 to 12 traces. EPSCs were recorded at 30\u00b0C in presence of gabazine 10 \u00b5M. Electrical stimulations were performed immediately after the light stimulation.\n\n### Molecular modeling\n\nThe model of the GluD receptor has been obtained by homology modeling using the software modeller version 9.19 (Webb and Sali, 2016). The template was that of the glutamate receptor GluA2 (PDB code 5weo) (Twomey et al., 2017). The automodel class has been used with slow level of MD refinement and the optimization has been repeated three times for each model. 500 models were prepared and the best, as assessed by the DOPE score, was retained for further studies.\n\nThe structure of the protein and ligand were converted to pdbqt files with the software open babel 2.4.1. Covalent docking was then performed with the software smina (Koes et al., 2013). The box of 25*25*25 angstrom was defined manually to encompass the mutated residue and extend to the\u00a0axis of symmetry. Covalent docking forced the maleimide to be in direct contact with the SG atom of the cysteine with which it is shown experimentally to form a covalent bond. The geometry of the ion channel has been computed with MOLEonline webserver, with the 'pore' mode. The resulting ion channel was color-coded as a function of the diameter of the channel allowing to illustrate the reduction of the diameter from a large (green) to a small (red) diameter.\n\n### Data analysis\n\nData are plotted as mean\u00a0\u00b1\u00a0SEM. Total number (n) of cells in each group and statistics used are indicated in figure and/or figure legend. Comparisons between means were performed using parametric tests (two-sample t-test, Normality always verified, Shapiro-Wilk test of normality). Homogeneity of variances was tested preliminarily and the t-tests were Welch-corrected accordingly. For comparison with theoretical values of 0 or 1, we performed either one-sample t-tests when Normality was verified, or a non-parametric test (one-sample Wilcoxon tests) when Normality was not verified. #p<0.1, *p<0.05, **p<0.01, ***p<0.001.\n\nTime-course of current unblock and of thermal relaxation were fitted with the following mono-exponential function:\n\n$$\ny=100\\times1-e^{-kx}\n$$\n\nwith k the decay constant, and ln2/k the half-life.\n\nDose-response relationships were fitted with the following equation:\n\n$$\ny=MIN+\\frac{MAX-MIN}{1+(\\frac{x}{IC50})^{nH}}\n$$\n\nwith MAX the maximal current, MIN the minimal current, IC50 the pentamidine concentration yielding half block, and nH the Hill number.\n",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "773b830e-46b2-4c67-9cd0-38660b8dd12f",
+      "submission_id": "4f189609-3f3c-41f6-a9cc-d504fdd5991f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Merritt Maduke, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59026.sa1](https://doi.org/10.7554/eLife.59026.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nGluD2 is a member of the ionotropic glutamate receptor family, but its specific role in the central nervous system is not yet understood. This study demonstrates a novel chemogenetic tool to probe function of GluD2 in HEK cells. This tool has the potential to be very powerful to advance the understanding of GluD2 channel function in neurons since it appears highly selective.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Probing the ionotropic activity of the orphan glutamate delta 2 receptor with genetically-engineered photopharmacology\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor (Merritt Maduke) and Kenton Swartz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Stephanie C Gantz (Reviewer #1); Lonnie Wollmuth (Reviewer #2); Anna Koster (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe editors have judged that your manuscript is of interest; however, as described below, additional experiments are required to support the conclusions. Therefore, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). In recognition that many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts.\n\nSummary:\n\nUnlike other ionotropic glutamate receptors, GluD2 is not gated by glutamate. No specific or high-affinity chemical modulators that induce channel activity exist for this receptor. To address this challenge, the authors used a previously characterized photoswitchable tethered ligand (PTL) called MAGu to target a very non-specific blocker (pentamidine) to a new ion channel target (the GluD2 receptor). This approach (using this exact PTL) has been used to target knock-in cysteine mutants of the GABAA receptor in mouse brain slices and in vivo in an awake, behaving mouse. Based on this precedent, it is not unreasonable to believe that this tool could similarly be used for the GluD2 receptor, which would be a significant advance in the field for understanding the physiological role of this protein in disease. However, there are concerns about signal-to-noise, since the pore block by trans-MAGu is only a fraction of total presumed current through GluD; therefore, it has not yet been demonstrated that the MAGu response will be sufficient for physiological studies.\n\nEssential revisions:\n\n1) In order to evaluate the potential of this new tool, it is essential that the authors provide a more thorough quantification of its effects, as described below, which will be relevant to the signal:noise in physiological experiments.\n\nThe photo-switchable capability of MAGu is convincing, but what is not clear is how good of a blocker trans-MAGu is. It is clear that trans-MAGu is not producing full block of leak current, but it is not quantified. These data need to be added to have a clear understanding of the strategy and mechanism. cis-MAGu unblocks a portion of leak current, but it is not clear how much of the total leak current is blocked by trans-MAGu. Knowing how much leak current is blocked by trans-MAGu is critical to interpreting the effect on mGluR-activated GluD2 current.\n\nIn Figure 2C I677C, there is still substantial leak in 535 nm. The quantification in Figure 2C (% photoswitching) shows the % of I-Blockphoto over I-Blockpenta, but the arrows in the righthand trace, it would appear I-Blockphoto is actually the current unblocked. It would be helpful to quantify the amount of leak current blocked by trans-MAGu. In Figure 2C, the extent of block for photoswitching is being quantified relative to that for pentamidine, which is reasonable. However, for pentamidine, what is the concentration used for the experiments? Where is it at on the concentration-block curve for pentamidine? Presumably, if complete block the leak current should go to zero and hence the efficacy of block of photoswitching blocker would be less (e.g., Figure 4B). Please clarify. Additional discussion as the structural basis for incomplete block may also be helpful.\n\nHow does MAGu work on the cysteine-engineered receptor that would presumably be used for future in vivo studies? Because the GluD2-I677C point mutant (lacking the L654T background) does not show current, the authors use the known effect of mGlu1 receptor agonism as a readout of GluD2-I677C activity in response to light and only see a 23% decrease in mGlu1 current--is this very small effect physiologically significant or to be expected? It seems like MAGu might be a useful tool to modulate GluD2 in Lurcher mice (which harbor the L654T mutation), but it is hard to know what the probe efficacy and usefulness is for evaluating the physiology of the WT GluD2 receptor in the absence of a way to measure a direct functional effect on the channel. How else might this be addressed?\n\nDiscussion paragraph two states that the WT receptor is insensitive to MAGu, but it is not clear where those data are presented. It would be beneficial to show the magnitude of the DHPG-induced current in WT GluD2-expressing cells before and after addition of MAGu to address the possibility that MAGu affects the current irrespective of trans- or cis- conformation.\n\nIt is also not clear how MAGu will be selective for site-specific conjugation when introduced in a neuronal setting. Is it expected MAGu will react with any available cysteine? It would be helpful to discuss possible limitations going forward towards use in neurons.\n\n2) The Introduction and Abstract are rather general and antiquated, to the disservice of the readers. It may be time to move away from the notion that ion channel function of GluD is debated. The authors have published many elegant studies demonstrating ion channel function. By appearances of the literature, the interpretation of these studies are not contested. In addition to pharmacology, ion channel function of GluD has been demonstrated using selective genetic strategies (e.g. Ady et al., 2013; Benamer et al., 2018; Gantz et al., 2020). To this end, the Abstract and Introduction should be changed. It does not seem fitting to state \"direct evidence for ionotropic activity of GluD in neuronal setting [sic] is lacking\" provided the studies referenced above. Broadly, the readers would benefit from restructuring of the Introduction and Abstract to state the specific issue addressed by the present study (i.e. the lack of specific antagonists/pore blockers to study GluD without affecting other iGluRs) and highlight the potential application of the ligand.\n\n3) It would be helpful to define early and explicitly what the photoswitchable functional strategy is \u2013 that it is working via a pore block mechanism. In the Abstract, for example, instead of calling it \u201c\u2026a photoswitchable ligand.\u201d how about just \u201c\u2026a photoswitchable pore blocker.\" The functional strategy \u2013 that you are generating a photoswitchable pore blocker \u2013 should also be explicitly stated in the Introduction, where right now it is touched on but not explicitly stated.\n\n4) PTLs have been shown to generate a high local concentration of ligand to accelerate pharmacological response (and in this case, provide some level of specificity for a very non-specific, greasy cation), but it is hard to rationalize \"absolute\" pharmacological specificity claimed by the authors (Abstract, Discussion paragraph two). At the mid-\u03bcM concentrations required to elicit response, it seems unlikely that MAGu will not react with any other extracellular cysteines present in cells. Further, the guanidinium group by itself will certainly not direct the maleimide reactivity towards GluD2 over any other cation channel or electronegative protein surface. The language of this claim should be modified in the absence of other types of specificity assays.\n\n5) Figure 4A. Please also show the difference current and contrast/compare to what is shown in Figure 2A. This would clarify the \u201cvoltage-independence\u201d of action for those unfamiliar.\n\n6) Figure 4D. It is not clear how the \u201cion channel\u201d or red/green pore was generated. Is this from the structure or from some modeling? Please add details. This is an interesting figure, but it appears somewhat speculative and requires more details for the reader to understand its basis. What is driving the positioning of the trans MAGu? Is it being fixed? And what is driving the change in the coloration \u2013 presumed pore blocking by trans MAGu?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Probing the ionotropic activity of glutamate GluD2 receptor in HEK cells with genetically-engineered photopharmacology\" for consideration by eLife. Your article has been reviewed by the three original peer reviewers, and the evaluation has been overseen by Merritt Maduke as the Reviewing Editor and Kenton Swartz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Stephanie C Gantz (Reviewer #1); Lonnie Wollmuth (Reviewer #2); Anna Koster (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another. They agree the revisions have greatly strengthened the manuscript but that a few additional relatively minor revisions are essential. The Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nUnlike other ionotropic glutamate receptors, GluD2 is not gated by glutamate. No specific or high-affinity chemical modulators that induce channel activity exist for this receptor. To address this challenge, the authors used a previously characterized photoswitchable tethered ligand (PTL) called MAGu to target a very non-specific blocker (pentamidine) to a new ion channel target (the GluD2 receptor). This approach (using this exact PTL) has been used to target knock-in cysteine mutants of the GABAA receptor in mouse brain slices and in vivo in an awake, behaving mouse. Based on this precedent, it is not unreasonable to believe that this tool could similarly be used for the GluD2 receptor, which would be a significant advance in the field for understanding the physiological role of this protein in disease. However, there are concerns about signal-to-noise, since the pore block by trans-MAGu is only a fraction of total presumed current through GluD; therefore, it has not yet been demonstrated that the MAGu response will be sufficient for physiological studies.\n\nRevisions:\n\nIt is unclear how the block of DHPG-induced current was measured, especially in regards to the tonic current. Figure 5A top-left shows the tonic current and then the additional DHPG-induced current. The dashed line makes it seem that this is where the magnitude of the DHPG-induced current was measured from. But it would be best to measure DHPG-induced current as a change from the tonic inward current, which is perhaps what the red arrow is indicating? Including details in the figure legend would be helpful.\n\nIf the inhibition of DHPG-induced current included the tonic current, it may be substantially less than 22% block. If this is the case, we would suggest paired statistics to be sure the decrease in DHPG-current is significant, especially since there is some variability in both the mutant and WT conditions (seen in source data).\n",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b6de556f-d79b-400f-8f4f-116c589f704b",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C1",
+      "claim": "Glutamate delta (GluD) receptors belong to the ionotropic glutamate receptor family.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamate delta (GluD) receptors belong to the ionotropic glutamate receptor family, yet they don't bind glutamate and are considered orphan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by citations to established literature throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "373ba9d2-330a-4f38-a08d-3d70e2b091d4",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C2",
+      "claim": "GluD receptors don't bind glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamate delta (GluD) receptors belong to the ionotropic glutamate receptor family, yet they don't bind glutamate and are considered orphan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction (Araki et al., 1993; Lomeli et al., 1993).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "fba5e948-3f77-4501-b73c-47a4c6d446e8",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C3",
+      "claim": "GluD receptors are considered orphan receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamate delta (GluD) receptors belong to the ionotropic glutamate receptor family, yet they don't bind glutamate and are considered orphan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract and is a characterization based on their lack of known endogenous ligands.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "b0c02193-cb05-430c-9a32-f8f391bf079d",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C4",
+      "claim": "Progress in defining the ion channel function of GluDs in neurons has been hindered by a lack of pharmacological tools.",
+      "claim_type": "EXPLICIT",
+      "source": "Progress in defining the ion channel function of GluDs in neurons has been hindered by a lack of pharmacological tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a motivation for the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "b927d6c5-53ca-483c-a7f5-ef63bc3cb6e2",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C5",
+      "claim": "A cysteine mutation can be incorporated in the cavity located above the putative ion channel pore of GluD2 for site-specific conjugation with a photoswitchable pore blocker.",
+      "claim_type": "EXPLICIT",
+      "source": "We incorporated a cysteine mutation in the cavity located above the putative ion channel pore, for site-specific conjugation with a photoswitchable pore blocker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the experimental approach described in the abstract and demonstrated throughout the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "1c57e647-83e1-45b0-8b40-ec0435199c5a",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C6",
+      "claim": "In the constitutively open GluD2 Lurcher mutant, current could be rapidly and reversibly decreased with light.",
+      "claim_type": "EXPLICIT",
+      "source": "In the constitutively open GluD2 Lurcher mutant, current could be rapidly and reversibly decreased with light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated with electrophysiological data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "c64996f1-5499-42b8-853c-74b99df9dba9",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C7",
+      "claim": "Metabotropic glutamate receptor signaling triggers opening of GluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "We then transposed the cysteine mutation to the native receptor, to demonstrate with high pharmacological specificity that metabotropic glutamate receptor signaling triggers opening of GluD2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated with data in Figure 5 showing DHPG-induced currents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "035e89dc-5ceb-48ac-afda-42e507c880dd",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C8",
+      "claim": "GluD receptors are considered as glutamate receptors solely based on their strong sequence and structure homology with AMPA, NMDA and kainate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "They are considered as glutamate receptors solely based on their strong sequence and structure homology with AMPA, NMDA and kainate receptors (Lomeli et al., 1993; Araki et al., 1993; Schmid and Hollmann, 2008; Elegheert et al., 2016; Burada et al., 2020a; Burada et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "30ffafe5-fd35-45d0-b426-261cd3c937ff",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C9",
+      "claim": "GluD1 is predominantly expressed in the forebrain.",
+      "claim_type": "EXPLICIT",
+      "source": "GluD receptors are widely expressed throughout the brain, GluD1 predominantly in the forebrain, while GluD2 is highly enriched in cerebellar Purkinje cells (PCs) (Konno et al., 2014; Hepp et al., 2015; Nakamoto et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "99391666-551a-4f07-9258-516cc57a7083",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C10",
+      "claim": "GluD2 is highly enriched in cerebellar Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GluD receptors are widely expressed throughout the brain, GluD1 predominantly in the forebrain, while GluD2 is highly enriched in cerebellar Purkinje cells (PCs) (Konno et al., 2014; Hepp et al., 2015; Nakamoto et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "c4a9de9d-c5e0-46c1-aa58-bc68e17d571e",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C11",
+      "claim": "Both GluD1 and GluD2 play a role in the formation, stabilization, function and plasticity of synapses through their interaction with members of the cerebellin (Cbln) family.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GluD1 and GluD2 play a role in the formation, stabilization, function and plasticity of synapses through their interaction with members of the cerebellin (Cbln) family (Fossati et al., 2019; Tao et al., 2018; Matsuda et al., 2010; Kakegawa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "85846749-c8b3-46bb-a2d0-a8b54c53d875",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C12",
+      "claim": "Cbln1 binds both the N-terminal domain of postsynaptic GluD2 and presynaptic neurexins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cbln1 notably binds both the N-terminal domain of postsynaptic GluD2 and presynaptic neurexins, leading to a trans-synaptic bridge that promotes synaptogenesis and is essential for GluD2 signaling in vivo (Elegheert et al., 2016; Suzuki et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "15b61f28-8967-4f07-991c-4b27677f0f83",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C13",
+      "claim": "Cbln1 binding leads to a trans-synaptic bridge that promotes synaptogenesis and is essential for GluD2 signaling in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Cbln1 notably binds both the N-terminal domain of postsynaptic GluD2 and presynaptic neurexins, leading to a trans-synaptic bridge that promotes synaptogenesis and is essential for GluD2 signaling in vivo (Elegheert et al., 2016; Suzuki et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "d2d3c416-4dda-4af8-a1c3-c5da92d257c7",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C14",
+      "claim": "Deletion of genes coding for GluD1 or GluD2 in mouse results in marked behavioral alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of genes coding for GluD1 or GluD2 in mouse results in marked behavioral alterations (Yadav et al., 2012; Lalouette et al., 2001; Yadav et al., 2013; Nakamoto et al., 2020a), and mutations in these genes in humans have been associated with neurodevelopmental and psychiatric diseases (Griswold et al., 2012; Treutlein et al., 2009; Greenwood et al., 2011; Cristino, 2019), attesting to their functional importance in brain circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "77f1434a-8367-4766-96ee-55b177df9c40",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C15",
+      "claim": "Mutations in GluD1 or GluD2 genes in humans have been associated with neurodevelopmental and psychiatric diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of genes coding for GluD1 or GluD2 in mouse results in marked behavioral alterations (Yadav et al., 2012; Lalouette et al., 2001; Yadav et al., 2013; Nakamoto et al., 2020a), and mutations in these genes in humans have been associated with neurodevelopmental and psychiatric diseases (Griswold et al., 2012; Treutlein et al., 2009; Greenwood et al., 2011; Cristino, 2019), attesting to their functional importance in brain circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "d7f62269-04cf-45a2-9777-71872882fbae",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C16",
+      "claim": "GluDs are not activated by glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their structural similarity with other iGluRs, and notably the presence of a ligand-binding domain (LBD), GluDs stand out because they are not activated by glutamate (Araki et al., 1993; Lomeli et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "8276d3c0-ad9a-497d-a8e7-9d6aba415085",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C17",
+      "claim": "GluD pore opening can be triggered indirectly through the activation of Gq-coupled metabotropic receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, recent studies revealed that GluD pore opening could be triggered indirectly, through the activation of Gq-coupled metabotropic receptors, and contributes to neurotransmission and neuronal excitability (Ady et al., 2014; Dadak et al., 2017; Benamer et al., 2018; Gantz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "8bece8fb-47dc-4d9b-9c85-62be1c1b45aa",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C18",
+      "claim": "The activation of GluD channels triggered by metabotropic glutamate receptors (mGlu1/5) underlies the slow excitatory postsynaptic current in cerebellar Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the activation of GluD channels triggered by metabotropic glutamate receptors (mGlu1/5) underlies the slow excitatory postsynaptic current in cerebellar PCs (GluD2, Ady et al., 2014) and in midbrain dopaminergic neurons (GluD1, Benamer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "a16c3560-7c15-4bb1-94a5-ee242c7def38",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C19",
+      "claim": "The activation of GluD1 channels triggered by metabotropic glutamate receptors underlies the slow excitatory postsynaptic current in midbrain dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the activation of GluD channels triggered by metabotropic glutamate receptors (mGlu1/5) underlies the slow excitatory postsynaptic current in cerebellar PCs (GluD2, Ady et al., 2014) and in midbrain dopaminergic neurons (GluD1, Benamer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "cf5f96aa-8959-43a2-8185-36883f3b123f",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C20",
+      "claim": "GluD1 channels carry the noradrenergic slow excitatory current in dorsal raphe neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the demonstration that GluD1 channels carry the noradrenergic slow excitatory current in dorsal raphe neurons (Gantz et al., 2020), suggests that the contribution of GluD channels to neuronal excitability and synaptic physiology may be widespread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "1868f10a-6de5-4d87-a115-9599961ef62a",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C21",
+      "claim": "The contribution of GluD channels to neuronal excitability and synaptic physiology may be widespread.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the demonstration that GluD1 channels carry the noradrenergic slow excitatory current in dorsal raphe neurons (Gantz et al., 2020), suggests that the contribution of GluD channels to neuronal excitability and synaptic physiology may be widespread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion based on inference from cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "e635357e-d645-4147-ad80-81163cfe5849",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C22",
+      "claim": "Pentamidine is a pore blocker of GluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Pore blockers for GluDs, such as pentamidine and 1-Naphthyl acetyl spermine (NASPM), were previously identified using a point mutation (A654T) in GluD2 that confers constitutive ion flow and causes the degeneration of cerebellar PCs in Lurcher (GluD2Lc) mice (Wollmuth et al., 2000; Zuo et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "c51d5e11-7320-4e98-b8d7-02637cf4d2e4",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C23",
+      "claim": "NASPM is a pore blocker of GluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Pore blockers for GluDs, such as pentamidine and 1-Naphthyl acetyl spermine (NASPM), were previously identified using a point mutation (A654T) in GluD2 that confers constitutive ion flow and causes the degeneration of cerebellar PCs in Lurcher (GluD2Lc) mice (Wollmuth et al., 2000; Zuo et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "f1e18a5f-2149-40b6-99c8-2b1020cb24d1",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C24",
+      "claim": "The A654T point mutation in GluD2 confers constitutive ion flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Pore blockers for GluDs, such as pentamidine and 1-Naphthyl acetyl spermine (NASPM), were previously identified using a point mutation (A654T) in GluD2 that confers constitutive ion flow and causes the degeneration of cerebellar PCs in Lurcher (GluD2Lc) mice (Wollmuth et al., 2000; Zuo et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "99704f5a-5543-478d-a66e-f3dac74f943b",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C25",
+      "claim": "The A654T mutation causes the degeneration of cerebellar Purkinje cells in Lurcher mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Pore blockers for GluDs, such as pentamidine and 1-Naphthyl acetyl spermine (NASPM), were previously identified using a point mutation (A654T) in GluD2 that confers constitutive ion flow and causes the degeneration of cerebellar PCs in Lurcher (GluD2Lc) mice (Wollmuth et al., 2000; Zuo et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "17ac89f0-5223-435f-83ac-f9638bb72abf",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C26",
+      "claim": "Pentamidine is also a pore blocker of NMDA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These molecules are however also pore blockers of NMDA and AMPA receptors, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a limitation of existing pharmacological tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "918b1357-7004-4b0c-b567-0fd95ce7a813",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C27",
+      "claim": "NASPM is also a pore blocker of AMPA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These molecules are however also pore blockers of NMDA and AMPA receptors, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a limitation of existing pharmacological tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "650bf103-602e-4992-b704-f66034279709",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C28",
+      "claim": "D-serine and glycine bind to the ligand-binding domain of GluD2 and reduce spontaneous currents in GluD2Lc.",
+      "claim_type": "EXPLICIT",
+      "source": "Other ligands such as D-serine and glycine bind to the LBD and reduce spontaneous currents in GluD2Lc, which suggests a coupling between the LBD and the channel (Naur et al., 2007; Hansen et al., 2009), but these molecules have broad spectrum activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "a828bdf9-49b7-4704-b99b-e3c7f2735906",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C29",
+      "claim": "D-serine and glycine binding to GluD2 suggests a coupling between the ligand-binding domain and the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Other ligands such as D-serine and glycine bind to the LBD and reduce spontaneous currents in GluD2Lc, which suggests a coupling between the LBD and the channel (Naur et al., 2007; Hansen et al., 2009), but these molecules have broad spectrum activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an inference from cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "e2bac410-2afd-4baa-9961-f79fb5fa0589",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C30",
+      "claim": "7-chlorokynurenic acid modulates GluD2Lc current by binding to the D-serine site.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, 7-chlorokynurenic acid has been identified to modulate GluD2Lc current by binding to the D-serine site but it is also a GluN1 competitive antagonist (Kristensen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "4e4a4c2a-ec82-4d19-94cb-f6267f6954d7",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C31",
+      "claim": "7-chlorokynurenic acid is also a GluN1 competitive antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, 7-chlorokynurenic acid has been identified to modulate GluD2Lc current by binding to the D-serine site but it is also a GluN1 competitive antagonist (Kristensen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "7a7be419-8d03-468c-81c8-a96d1a0c4e4a",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C32",
+      "claim": "MAGu contains a thiol-reactive maleimide moiety, a central photo-isomerizable azobenzene chromophore, and a guanidinium head group.",
+      "claim_type": "EXPLICIT",
+      "source": "The PTL, called MAGu, contains a thiol-reactive maleimide (M) moiety, a central photo-isomerizable azobenzene (A) chromophore, and a guanidinium (Gu) head group that resembles the amidinium groups of pentamidine (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "8b0a2fb4-af5e-4e48-8b6c-4b4028a7b6ee",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C33",
+      "claim": "The guanidinium head group of MAGu resembles the amidinium groups of pentamidine.",
+      "claim_type": "EXPLICIT",
+      "source": "The PTL, called MAGu, contains a thiol-reactive maleimide (M) moiety, a central photo-isomerizable azobenzene (A) chromophore, and a guanidinium (Gu) head group that resembles the amidinium groups of pentamidine (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "244c3af3-6cec-490c-bae9-1d9ec2ae0860",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C34",
+      "claim": "MAGu can be converted to its cis form using 380 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "In aqueous solution, MAGu could be converted to its cis form using 380 nm light, and converted back to trans either slowly in darkness (t1/2 ~ 20 min) or rapidly upon illumination with 525 nm light (Figure 1\u2014figure supplement 1A\u2013B), in agreement with previous reports (Lin et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "f6f893d1-85a7-47a6-9322-5939ee12ee9c",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C35",
+      "claim": "MAGu can be converted back to trans slowly in darkness with a half-life of approximately 20 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In aqueous solution, MAGu could be converted to its cis form using 380 nm light, and converted back to trans either slowly in darkness (t1/2 ~ 20 min) or rapidly upon illumination with 525 nm light (Figure 1\u2014figure supplement 1A\u2013B), in agreement with previous reports (Lin et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "0872f328-2ad7-444b-8682-752f0c785180",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C36",
+      "claim": "MAGu can be converted back to trans rapidly upon illumination with 525 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "In aqueous solution, MAGu could be converted to its cis form using 380 nm light, and converted back to trans either slowly in darkness (t1/2 ~ 20 min) or rapidly upon illumination with 525 nm light (Figure 1\u2014figure supplement 1A\u2013B), in agreement with previous reports (Lin et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "892dedec-0c65-4665-9a67-4aa183b36a69",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C37",
+      "claim": "A homology model of the GluD2 receptor was developed based on the structure of the crystallized GluA2 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "To find the best attachment site for MAGu on GluD, we developed a homology model of the GluD2 receptor, based on the structure of the recently crystallized GluA2 receptor (Twomey et al., 2017) (see methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "1f689ffc-2733-4c4c-932f-72fbba333f49",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C38",
+      "claim": "15 residues located on the peptide that links the LBD to the third transmembrane domain (M3) were selected for mutation to cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this model, we selected a series of 15 residues, located on the peptide that links the LBD to the third transmembrane domain (M3) that lines the channel lumen, for mutation to cysteine (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "038ae7ec-28c5-4cdb-8b51-a1a9dd5bf8b8",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C39",
+      "claim": "Heterologous expression of GluD2-A654T in HEK cells produces large currents that reverse at membrane potential close to 0 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that heterologous expression of GluD2-A654T, but not of the wild-type (WT) protein, in HEK cells produces large currents that reverse at membrane potential close to 0 mV and are reduced by externally-applied pentamidine (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "f2019199-bf10-42db-8f8b-4248d9462261",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C40",
+      "claim": "Heterologous expression of wild-type GluD2 in HEK cells does not produce large currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that heterologous expression of GluD2-A654T, but not of the wild-type (WT) protein, in HEK cells produces large currents that reverse at membrane potential close to 0 mV and are reduced by externally-applied pentamidine (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "daafc4ef-bd7e-45ec-b88a-4331e4cd1a8d",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C41",
+      "claim": "GluD2-A654T currents are reduced by externally-applied pentamidine.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that heterologous expression of GluD2-A654T, but not of the wild-type (WT) protein, in HEK cells produces large currents that reverse at membrane potential close to 0 mV and are reduced by externally-applied pentamidine (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "1d627645-347f-407c-8ff7-b0b636008242",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C42",
+      "claim": "Subtracted GluD2-A654T Lurcher current showed clear rectification at positive potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Subtracted Lc current showed clear rectification at positive potentials, as reported with the blockade by NASP, another GluD blocker (Kohda et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with a supporting citation and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "016b5e62-4858-4616-87cb-6575f774ce05",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C43",
+      "claim": "Current through A654T was not affected by light in the absence of a properly-positioned cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, current through A654T was not affected by light, indicating that in the absence of a properly-positioned cysteine, MAGu has no effect on this Lc channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "62995f2a-38de-4add-89e2-c68d3e728cc2",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C44",
+      "claim": "MAGu has no effect on the GluD2-A654T Lurcher channel in the absence of a properly-positioned cysteine.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, current through A654T was not affected by light, indicating that in the absence of a properly-positioned cysteine, MAGu has no effect on this Lc channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "b55f5960-5f2c-474c-8f58-8048fc66b0b0",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C45",
+      "claim": "Several cysteine mutants showed currents that were significantly larger under 380 than under 535 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found several cysteine mutants for which current was significantly larger under 380 than under 535 nm light, and one mutant (Q669C) for which there was a tendency for 'reverse photoswitching', that is larger currents under 535 than under 380 nm light (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "7b042b6d-02e8-439b-aa22-6bf6f761d5cf",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C46",
+      "claim": "Q669C showed a tendency for 'reverse photoswitching', with larger currents under 535 than under 380 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found several cysteine mutants for which current was significantly larger under 380 than under 535 nm light, and one mutant (Q669C) for which there was a tendency for 'reverse photoswitching', that is larger currents under 535 than under 380 nm light (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "33f40950-6cdd-4256-944d-f6ee2aacdb6d",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C47",
+      "claim": "Photoswitching was significant for Q666C, Q669C, D670C, Q674C, and I677C.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoswitching was significant for Q666C, Q669C, D670C, Q674C, and I677C, suggesting that MAGu covalently reacted with these cysteine mutants and that, once tethered, it could modulate current in one of its conformer (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "3a03c032-c044-4f6a-8e85-60993af70b28",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C48",
+      "claim": "MAGu covalently reacted with Q666C, Q669C, D670C, Q674C, and I677C cysteine mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoswitching was significant for Q666C, Q669C, D670C, Q674C, and I677C, suggesting that MAGu covalently reacted with these cysteine mutants and that, once tethered, it could modulate current in one of its conformer (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a suggestion based on the photoswitching data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "71c2f83c-eea2-4c50-b17c-ddbba2abd9b0",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C49",
+      "claim": "Once tethered, MAGu could modulate current in one of its conformers for Q666C, Q669C, D670C, Q674C, and I677C.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoswitching was significant for Q666C, Q669C, D670C, Q674C, and I677C, suggesting that MAGu covalently reacted with these cysteine mutants and that, once tethered, it could modulate current in one of its conformer (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a suggestion based on the photoswitching data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "dd109c70-5106-41a9-9776-1dc7e1ee35a4",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C50",
+      "claim": "Photomodulation was absent in the control A654T and the other cysteine mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, photomodulation was absent in the control A654T and the other cysteine mutants, indicating that the effect of light is specific to the attachment of MAGu to the above-mentioned cysteine mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "6372c646-0438-49c6-b83d-fa128d4312af",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C51",
+      "claim": "The effect of light is specific to the attachment of MAGu to Q666C, Q669C, D670C, Q674C, and I677C cysteine mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, photomodulation was absent in the control A654T and the other cysteine mutants, indicating that the effect of light is specific to the attachment of MAGu to the above-mentioned cysteine mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the specificity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "8a624879-6a20-4a5d-8f50-d0d43d2d2809",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C52",
+      "claim": "The photocontrollable mutants are all located at the very top of the linker, further away from the membrane domain compared to other tested residues.",
+      "claim_type": "EXPLICIT",
+      "source": "From a structural point of view, the photocontrollable mutants are all located at the very top of the linker, that is further away from the membrane domain compared to other tested residues (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "521fe74b-3e45-4dee-9a82-b140e1925868",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C53",
+      "claim": "MAGu blocked about 33% of the leak current in its trans form for GluD2-A654T-I677C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MAGu blocked about 33% of the leak current in its trans form (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "c369e8cb-57b1-4df1-8c3a-f5ec747fa454",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C54",
+      "claim": "Photoregulation of GluD2-A654T-I677C was fully reversible over many cycles of 380 and 535 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoregulation was fully reversible over many cycles of 380 and 535 nm light (Figure 3B), in agreement with the fact that azobenzenes photobleach minimally (Beharry and Woolley, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "c2b4da7e-321e-4d08-8717-c463867aa581",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C55",
+      "claim": "Azobenzenes photobleach minimally.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoregulation was fully reversible over many cycles of 380 and 535 nm light (Figure 3B), in agreement with the fact that azobenzenes photobleach minimally (Beharry and Woolley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "1f2df345-f094-4aeb-99c1-7fbef0ab444b",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C56",
+      "claim": "Light pulses of 200 ms were sufficient to fully unblock the current in GluD2-A654T-I677C.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our illumination conditions, light pulses of 200 ms were sufficient to fully unblock the current, while shorter illumination times could be used to finely tune the degree of blockade (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "7b759628-78dc-4546-932e-c60799dae021",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C57",
+      "claim": "Shorter illumination times could be used to finely tune the degree of blockade in GluD2-A654T-I677C.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our illumination conditions, light pulses of 200 ms were sufficient to fully unblock the current, while shorter illumination times could be used to finely tune the degree of blockade (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "3d69c5c4-b242-49c0-b6ba-815d256fca01",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C58",
+      "claim": "Relief of blockade persisted for many seconds in darkness after a brief flash of 380 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, relief of blockade persisted for many seconds in darkness after a brief flash of 380 nm light (Figure 3D), eliminating the need for constant illumination, an important feature for future neurophysiology experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "81053720-7234-470f-979d-2fd8959a0b9d",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C59",
+      "claim": "Current blockade occurred in the trans state (535 nm) and was relieved in the cis configuration (380 nm) for all membrane potentials tested, with very little voltage-dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "From a pharmacological point of view, current blockade occurred in the trans state (535 nm) and was relieved in the cis configuration (380 nm) for all membrane potential tested, with very little voltage-dependence (Figure 4A), which contrasts with the profound voltage-dependence of block observed with pentamidine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "f988acb9-f336-4b94-8925-a507a2e4e61e",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C60",
+      "claim": "The voltage-dependence of MAGu block contrasts with the profound voltage-dependence of block observed with pentamidine.",
+      "claim_type": "EXPLICIT",
+      "source": "From a pharmacological point of view, current blockade occurred in the trans state (535 nm) and was relieved in the cis configuration (380 nm) for all membrane potential tested, with very little voltage-dependence (Figure 4A), which contrasts with the profound voltage-dependence of block observed with pentamidine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results as a comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "41897ee2-407b-4522-bbb0-30b186f827a4",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C61",
+      "claim": "The positive charge of MAGu may not sense the electrical field of the membrane as much as pentamidine does.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested to us that the positive charge of MAGu may not sense the electrical field of the membrane as much as pentamidine does, and thus that the two molecules may bind to different sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion based on the voltage-dependence data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "78a11f0c-d6a4-4f3f-b116-4540caa8cb81",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C62",
+      "claim": "MAGu and pentamidine may bind to different sites on GluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested to us that the positive charge of MAGu may not sense the electrical field of the membrane as much as pentamidine does, and thus that the two molecules may bind to different sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion based on the voltage-dependence data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "97cf0c04-2598-442f-93ef-9a34dadf2d36",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C63",
+      "claim": "The IC50s of pentamidine under both 380 and 535 nm wavelengths are virtually indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the IC50s under both wavelengths to be virtually indistinguishable, favoring the idea that MAGu and pentamidine have distinct, non-overlapping binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "1ba08b38-2fab-406a-a120-f320dfd83ab8",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C64",
+      "claim": "MAGu and pentamidine have distinct, non-overlapping binding sites on GluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the IC50s under both wavelengths to be virtually indistinguishable, favoring the idea that MAGu and pentamidine have distinct, non-overlapping binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the IC50 data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "8a6ff59d-bcfd-4503-af7b-2f1cfe31de78",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C65",
+      "claim": "The guanidinium headgroup of trans MAGu couldn't reach the membrane-embedded lumen of GluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the guanidinium headgroup of trans MAGu couldn't reach the membrane-embedded lumen of GluD2 (Figure 4C), in agreement with our electrophysiology data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results based on molecular modeling shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "39894f27-b25d-4b53-92a6-0ce422c9d066",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C66",
+      "claim": "Trans MAGu has a direct steric effect on the size of the cavity above the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the photoswitch has a direct steric effect on the size of the cavity above the channel, as shown by the comparison of the computed channel in presence or absence of the photoswitch (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results based on molecular modeling shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "0db32f15-0e59-4447-92d5-9e932e926aea",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C67",
+      "claim": "The charge of the photoswitch could modify the electrostatic potential in the cavity and thereby affect ion transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the charge of the photoswitch could modify the electrostatic potential in the cavity and thereby affect ion transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility based on the modeling results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "6b9507a7-9c5e-4466-bcee-2a24b4fd02f1",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C68",
+      "claim": "Activation of mGlu1 using DHPG triggers opening of GluD2 receptors in heterologous expression system.",
+      "claim_type": "EXPLICIT",
+      "source": "In heterologous expression system, activation of mGlu1 using the selective agonist 3,5-Dihydroxyphenylglycine (DHPG) was reported to trigger opening of GluD2 receptors (Ady et al., 2014; Dadak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "7bb64594-4fbc-4eb4-b632-d6d07ccb6134",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C69",
+      "claim": "DHPG-induced currents were reversibly reduced by about 23% under 535 nm compared to 380 nm light for GluD2-I677C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DHPG-induced currents were reversibly reduced by about 23% under 535 nm compared to 380 nm light for I677C, indicating that optical blockade with MAGu could be transposed to the native, non-Lc GluD2 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "40b72537-2308-4519-ac23-6e1c4d7b33be",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C70",
+      "claim": "Optical blockade with MAGu can be transposed to the native, non-Lurcher GluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DHPG-induced currents were reversibly reduced by about 23% under 535 nm compared to 380 nm light for I677C, indicating that optical blockade with MAGu could be transposed to the native, non-Lc GluD2 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an inference from the DHPG data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "b4a8c547-43e4-4477-8c9f-afc0faa4c1aa",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C71",
+      "claim": "DHPG-induced currents were identical in both wavelengths of light for the wild-type GluD2 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, DHPG-induced currents were identical in both wavelengths of light for the WT receptor (Figure 5B), confirming that the effect of light is specific to the attachment of MAGu to I677C (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "145f95ac-ed7e-425d-a0cb-196b1a9f9d77",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C72",
+      "claim": "The effect of light on DHPG-induced currents is specific to the attachment of MAGu to I677C.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, DHPG-induced currents were identical in both wavelengths of light for the WT receptor (Figure 5B), confirming that the effect of light is specific to the attachment of MAGu to I677C (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a confirmation based on the specificity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "436c9d40-2a51-42d9-8a72-9f9e2819c095",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C73",
+      "claim": "A fraction of GluD2 receptors are constitutively open prior to DHPG application, likely due to some basal mGlu1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a fraction GluD2 receptors are constitutively open prior to DHPG application, likely due to some basal mGlu1 activity in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion based on the holding current changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "4b767eb5-c3d0-47bb-88ce-71638e875932",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C74",
+      "claim": "The GluD2 I677C mutant labeled with MAGu (LiGluD2) possesses a functional ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results show that the GluD2 I677C mutant labeled with MAGu (a.k.a. LiGluD2) possesses a functional ion channel, which can be gated through the mGlu signaling pathway, and which can be reversibly blocked and unblocked with green and purple light, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "594f3d47-e461-42bc-ab85-8d9d085b1ac1",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C75",
+      "claim": "The LiGluD2 ion channel can be gated through the mGlu signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results show that the GluD2 I677C mutant labeled with MAGu (a.k.a. LiGluD2) possesses a functional ion channel, which can be gated through the mGlu signaling pathway, and which can be reversibly blocked and unblocked with green and purple light, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "753b34fd-3bc6-48a1-bcb6-c53b3b5ea40e",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C76",
+      "claim": "The LiGluD2 ion channel can be reversibly blocked and unblocked with green and purple light, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results show that the GluD2 I677C mutant labeled with MAGu (a.k.a. LiGluD2) possesses a functional ion channel, which can be gated through the mGlu signaling pathway, and which can be reversibly blocked and unblocked with green and purple light, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "203b3e81-35c3-45f5-95e1-45fe695a5718",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C77",
+      "claim": "MAGu treatment does not lead to photosensitization of native glutamate currents in Purkinje cells of wild-type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to evaluate the usefulness of LiGluD2 in neurons, we verified that MAGu treatment does not lead to photosensitization of native glutamate currents in PCs of WT mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and demonstrated in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "d2518e04-0ac3-4bdc-ba32-71082ffc2a8f",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C78",
+      "claim": "GluD2 is enriched at the parallel fiber-Purkinje cell synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Since GluD2 is enriched at the parallel fiber-PC synapse (Landsend et al., 1997), we used local application of DHPG (200 \u00b5M) to induce inward current in both MAGu- and vehicle-treated slices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "ef8b98ab-bb8f-447b-b498-3db7df9ad1b7",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C79",
+      "claim": "The DHPG current amplitude remained unchanged under 535 nm compared to 380 nm in both MAGu- and vehicle-treated slices.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the DHPG current amplitude remained unchanged under 535 nm compared to 380 nm in the two treatment conditions, resulting in a ratio of current amplitude I380/I535 measured for each cell not significantly different from 1 (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "3f38cdc3-43cf-4a51-b6f4-bf7660ea03fa",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C80",
+      "claim": "The amplitude of electrically evoked EPSCs was stable under 535 nm compared to 380 nm in both vehicle- and MAGu-treated Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the amplitude of electrically evoked EPSCs was stable under 535 nm compared to 380 nm, and that the ratio of EPSC amplitudes I380/I535 was not significantly different from one in both conditions (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "a60084a8-352f-4c20-901a-7448852fe8f9",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C81",
+      "claim": "Wild-type GluD and GluA receptors, which lack a properly-positioned cysteine residue near the pore lumen, remain insensitive to light after MAGu treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These control experiments demonstrate that wild-type GluD and GluA receptors, which lack a properly-positioned cysteine residue near the pore lumen, remain insensitive to light after MAGu treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the control experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "44d3e2f6-0ac9-4c36-9d94-c08955047566",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C82",
+      "claim": "The PTL strategy has been successfully applied to kainate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The PTL strategy has been successfully applied to several members of the iGluR family, including kainate (Volgraf et al., 2006) and NMDA (Berlin et al., 2016) receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "6a319a8c-ef54-446d-9fe0-62d05e737b9f",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C83",
+      "claim": "The PTL strategy has been successfully applied to NMDA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The PTL strategy has been successfully applied to several members of the iGluR family, including kainate (Volgraf et al., 2006) and NMDA (Berlin et al., 2016) receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "4dd595e4-a908-49ec-b2b6-82702407be73",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C84",
+      "claim": "In previous PTL studies on iGluRs, the photoswitches were made with a glutamate head group and were tethered to the ligand-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In these former studies, the photoswitches were made with a glutamate head group, and were tethered to the LBD in proximity to the glutamate binding pocket, providing photocontrol of channel gating (Reiner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "e2719b3b-bead-4964-a7b6-09f74abb4dda",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C85",
+      "claim": "Previous PTL approaches on iGluRs provided photocontrol of channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In these former studies, the photoswitches were made with a glutamate head group, and were tethered to the LBD in proximity to the glutamate binding pocket, providing photocontrol of channel gating (Reiner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "484de931-946b-48da-ba86-d3cde7681e84",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C86",
+      "claim": "The activation mechanism of GluD receptors is still unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Because their activation mechanism is still unknown, we adopted a different strategy for photocontrolling GluD receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a rationale for the approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "a69f9e02-9df3-4319-8855-549def55fb3d",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C87",
+      "claim": "Trans MAGu likely does not reach the pore lumen in LiGluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "In LiGluD2, trans MAGu likely does not reach the pore lumen as originally designed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the modeling and electrophysiology data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "03cd532a-a316-4de1-b051-faa7792431ce",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C88",
+      "claim": "Trans MAGu reversibly modulates current through the open GluD2 channel with high temporal and pharmacological precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it reversibly modulates current through the open GluD2 channel with high temporal and pharmacological precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "f2f918d8-4965-4554-9023-9f93cb57fd69",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C89",
+      "claim": "After MAGu treatment, only the I677C mutant, and not the wild-type receptor, became sensitive to light.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the pharmacological specificity of LiGluD2 is exquisite: after MAGu treatment, only the I677C mutant, and not the WT receptor, became sensitive to light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "35e2507b-5735-48d0-a7b7-575752061326",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C90",
+      "claim": "MAGu did not photosensitize other wild-type glutamate receptors expressed in native brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, MAGu did not photosensitize other WT glutamate receptors expressed in native brain tissue, in agreement with previous report demonstrating that MAGu has no off-target effects on WT GABA receptors, glutamate receptors and voltage-gated ion channels (Lin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "50463160-305a-4691-b96b-b60e6e44b103",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C91",
+      "claim": "MAGu has no off-target effects on wild-type GABA receptors, glutamate receptors and voltage-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, MAGu did not photosensitize other WT glutamate receptors expressed in native brain tissue, in agreement with previous report demonstrating that MAGu has no off-target effects on WT GABA receptors, glutamate receptors and voltage-gated ion channels (Lin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "987afdef-0e1e-47ee-b6c4-cad106b03ff2",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C92",
+      "claim": "The PTL approach has demonstrated exquisite pharmacological specificity for a large variety of cysteine-substituted ion channels and receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the PTL approach has already demonstrated exquisite pharmacological specificity for a large variety of cysteine-substituted ion channels and receptors (Paoletti et al., 2019; Mondoloni et al., 2019), even in complex biological settings such as brain slices (Berlin et al., 2016) or intact neuronal circuits in vivo (Lin et al., 2015; Durand-de Cuttoli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "9861e606-a114-4305-8a65-178c78c0f54d",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C93",
+      "claim": "The PTL approach has been successful in complex biological settings such as brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the PTL approach has already demonstrated exquisite pharmacological specificity for a large variety of cysteine-substituted ion channels and receptors (Paoletti et al., 2019; Mondoloni et al., 2019), even in complex biological settings such as brain slices (Berlin et al., 2016) or intact neuronal circuits in vivo (Lin et al., 2015; Durand-de Cuttoli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "b7e022d9-f563-4eed-a9fe-596c13fe8891",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C94",
+      "claim": "The PTL approach has been successful in intact neuronal circuits in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the PTL approach has already demonstrated exquisite pharmacological specificity for a large variety of cysteine-substituted ion channels and receptors (Paoletti et al., 2019; Mondoloni et al., 2019), even in complex biological settings such as brain slices (Berlin et al., 2016) or intact neuronal circuits in vivo (Lin et al., 2015; Durand-de Cuttoli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "49c2e6c9-061e-48d8-a5d5-88c8c2a2c249",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C95",
+      "claim": "Attachment of MAGu to GluD2 requires a single amino acid substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "Attachment of MAGu to GluD2 requires a single amino acid substitution, which is unlikely to disrupt the function of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "2c1e2f9b-8e31-4fc0-a480-4e4201a7ad61",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C96",
+      "claim": "A single amino acid substitution is unlikely to disrupt the function of GluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Attachment of MAGu to GluD2 requires a single amino acid substitution, which is unlikely to disrupt the function of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "1de4d102-6881-4737-8971-f26e7a3a8698",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C97",
+      "claim": "The functional coupling of GluD2 with mGlu1 signaling was intact in LiGluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, we found that the functional coupling of GluD2 with mGlu1 signaling (Ady et al., 2014; Dadak et al., 2017) was intact in LiGluD2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "f8b6146c-b7c1-4baa-8ab1-839760a4ff9d",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C98",
+      "claim": "The rapid kinetics of block/unblock in LiGluD2, coupled to the genetic specificity of the methodology, provide a unique opportunity to detect even small variations in GluD2 current.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though light-induced blockade in LiGluD2 is partial, the rapid kinetics of block/unblock, coupled to the genetic specificity of the methodology, provide a unique opportunity to detect even small variations in GluD2 current, such as the tonic current we observed in heterologous expression system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "73e16ed2-f8ec-4b01-b876-a72c4cd8a500",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C99",
+      "claim": "A tonic current was observed in heterologous expression system for LiGluD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though light-induced blockade in LiGluD2 is partial, the rapid kinetics of block/unblock, coupled to the genetic specificity of the methodology, provide a unique opportunity to detect even small variations in GluD2 current, such as the tonic current we observed in heterologous expression system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "35a9b030-d3fc-42b5-8ae0-a5897bdca076",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C100",
+      "claim": "LiGluD2 will be a crucial tool for probing the ionotropic contribution of GluD2 to synaptic physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "LiGluD2 remains to be deployed in neuronal setting, yet we believe it will be a crucial tool for probing the ionotropic contribution of this orphan receptor to synaptic physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a prospective statement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "68358cd1-0f7a-40ac-b180-58f84da97056",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C101",
+      "claim": "The b isoform of mGlu1 displays low basal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we co-expressed the b isoform of mGlu1, which displays low basal activity (Pr\u00e9zeau et al., 1996), together with GluD2 in HEK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "795bb007-54f4-4402-b37a-614dd4f6cd87",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C102",
+      "claim": "Pentamidine does not fully block GluD2, even at saturating concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because pentamidine does not fully block GluD2, even at saturating concentrations (Williams et al., 2003), we quantified the extent of photoswitching by blocking leak current completely, using impermeant N-Methyl-D-glucamine (NMDG).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "49a2dc10-2245-4211-a247-91543fd56d84",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C103",
+      "claim": "The half-life of cis MAGu thermal relaxation is approximately 1195 seconds (about 20 minutes).",
+      "claim_type": "EXPLICIT",
+      "source": "The half-life of cis MAGu was ln(2)/k = 1195 s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 1\u2014figure supplement 1 legend based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "efd5478a-01e0-4620-aae5-ea35fdd23e58",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C104",
+      "claim": "The time constant for current unblock when switching from dark to 380 nm light is k = 0.0296 \u00b1 0.0002 ms\u22121, corresponding to a half-life of 23.4 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Inset, averaged time-course of current unblock when switching from dark to 380 nm light (mean value in black,\u00b1 SEM in purple, n = 7 cells) and corresponding mono-exponential fit (red, k = 0.0296 \u00b1 0.0002 ms\u22121; t1/2 = 23.4 ms).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 3C legend based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "74981fe4-e625-47e3-a40c-e6f9c5b98aa3",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C105",
+      "claim": "86.2 \u00b1 2.5% of the residual current remains after 1 minute in darkness following a brief flash of 380 nm light.",
+      "claim_type": "EXPLICIT",
+      "source": "Right, 86.2 \u00b1 2.5% of the residual current remains after 1 min in darkness (n = 9 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 3D legend based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "78b31f45-1aa4-4a37-a3fe-350e4929951a",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C106",
+      "claim": "The IC50 of pentamidine under 380 nm light is 5.1 \u00b1 0.3 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "IC50380 = 5.1 \u00b1 0.3 \u03bcM, IC50535 = 4.8 \u00b1 0.5 \u03bcM (n = 6 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 4B legend based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "c4eae9f5-5ec1-4289-8789-e6b295b8de65",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "claim_id": "C107",
+      "claim": "The IC50 of pentamidine under 535 nm light is 4.8 \u00b1 0.5 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "IC50380 = 5.1 \u00b1 0.3 \u03bcM, IC50535 = 4.8 \u00b1 0.5 \u03bcM (n = 6 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 4B legend based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9bcd2079-27ba-4270-ab80-b67fe83564df",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The photoswitchable tethered ligand MAGu was designed and characterized. MAGu contains a maleimide moiety for cysteine attachment, an azobenzene chromophore for photoisomerization, and a guanidinium head group resembling pentamidine. MAGu can be converted between cis and trans forms using 380 nm and 525 nm light, with thermal relaxation occurring slowly in darkness (t1/2 ~20 min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 describe the chemical structure and photoisomerization properties of MAGu, supported by spectrophotometry data (Figure 1\u2014figure supplement 1) and citations to prior work. The characterization is consistent with established azobenzene photochemistry and provides the foundation for the photocontrol approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "489baf06-b937-441e-bf9f-b1d6ec3d100e",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A homology model of GluD2 based on GluA2 structure was used to identify 15 residues in the linker between the ligand-binding domain and M3 transmembrane domain for cysteine mutation and MAGu attachment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 and C5 describe the rational design approach using homology modeling to select mutation sites. The methodology is clearly described and shown in Figure 1D-E. This structure-based approach is appropriate for identifying potential attachment sites for the photoswitchable ligand.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "f237b624-c8c1-4f5d-996d-1fffb44179b7",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The GluD2-A654T Lurcher mutant produces constitutively open channels with large currents in HEK cells, while wild-type GluD2 does not. These currents reverse near 0 mV, are blocked by pentamidine, and show rectification at positive potentials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C39-C42 establish the Lurcher mutant as a screening platform. The electrophysiological characterization (Figure 2A) demonstrates the expected properties of a constitutively open, non-selective cation channel. This validates the use of A654T as a tool for screening cysteine positions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "fa55b786-4130-47e5-88c3-d09ffd3356a5",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Screening of 15 cysteine mutants on the A654T background identified five positions (Q666C, Q669C, D670C, Q674C, I677C) that showed significant photoswitching after MAGu conjugation. These photocontrollable mutants are located at the top of the linker region, and the effect is specific to MAGu attachment at these positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C52 describe the systematic screening that identified photocontrollable mutants. The data in Figure 2B-D show clear photoswitching for specific mutants with appropriate controls (A654T alone shows no light sensitivity). The structural interpretation is supported by the homology model. Statistical significance is reported for the photocontrollable mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The GluD2-A654T-I677C mutant conjugated with MAGu shows reversible photocontrol with ~33% block in the trans state. Photoregulation is fully reversible over multiple cycles, requires 200 ms light pulses for full unblock, and persists in darkness after brief 380 nm illumination (86% remaining after 1 min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 and C102-C105 characterize the kinetics and reversibility of photocontrol in the best mutant (I677C). Figure 3 provides comprehensive data on block magnitude, reversibility, kinetics, and thermal stability. The quantitative measurements (half-lives, time constants, percentages) are clearly reported with error estimates and sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "920a9296-1ac4-45e3-a9a8-ba750135b7f8",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MAGu block shows minimal voltage-dependence, contrasting with pentamidine's voltage-dependent block. The IC50 of pentamidine is virtually identical under both 380 nm (5.1 \u00b1 0.3 \u03bcM) and 535 nm (4.8 \u00b1 0.5 \u03bcM) light, suggesting MAGu and pentamidine bind to distinct, non-overlapping sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 and C106-C107 characterize the pharmacological properties of MAGu block. Figure 4A-B provides I-V relationships and dose-response curves supporting the lack of voltage-dependence and non-competitive interaction with pentamidine. The inference about distinct binding sites (C64) is reasonable given the IC50 data, though it remains an interpretation rather than direct proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "017c696a-c10b-47f1-a914-6ba48eb92516",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Molecular modeling indicates that trans MAGu cannot reach the membrane-embedded pore lumen but has a direct steric effect on the cavity above the channel. The photoswitch may also modify the electrostatic potential in the cavity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 present molecular modeling results (Figure 4C-D) that provide mechanistic insight into MAGu's mode of action. The modeling is consistent with the electrophysiology data showing non-voltage-dependent block. However, C67 is speculative about electrostatic effects. The modeling provides a plausible structural explanation for the observed functional effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The I677C mutation was transposed to native (non-Lurcher) GluD2, creating LiGluD2. When co-expressed with mGlu1b and labeled with MAGu, DHPG-induced currents were reversibly reduced by ~23% under 535 nm compared to 380 nm light for I677C but not wild-type GluD2. This demonstrates that LiGluD2 possesses a functional ion channel that can be gated through mGlu signaling and reversibly photocontrolled.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C76, C97, C99, and C101 demonstrate successful transposition of photocontrol to native GluD2. Figure 5A-D shows specific, reversible photomodulation of DHPG-induced currents in I677C but not WT, with appropriate controls. The observation of tonic current (C73, C99) provides additional evidence for basal channel activity. This is a critical validation that the approach works on native receptors, not just the constitutively open Lurcher mutant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "7373d14e-2a24-49a5-acb8-e22afcf09e01",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Control experiments in cerebellar slices from wild-type mice demonstrate that MAGu treatment does not photosensitize native DHPG-induced currents or AMPA-mediated EPSCs in Purkinje cells. Wild-type GluD and GluA receptors remain insensitive to light after MAGu treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 provide critical specificity controls in native tissue (Figure 5\u2014figure supplement 1). The data show no photosensitization of native receptors lacking the engineered cysteine, with I380/I535 ratios not significantly different from 1. These controls are essential for validating the specificity of the approach and its potential utility in neuronal preparations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "1a3e4ada-f617-4fff-a5b0-e356365ea724",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Metabotropic glutamate receptor (mGlu1) signaling triggers opening of GluD2 ion channels, as demonstrated by DHPG-induced currents in the LiGluD2 system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C17, C18, C68, and C75 establish that mGlu signaling gates GluD2 channels. While C17 and C18 cite prior work, the current study provides direct pharmacological evidence using the photocontrollable LiGluD2 tool (Figure 5). The high specificity of photocontrol strengthens the conclusion that GluD2 channels are indeed opened by mGlu1 activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "4acb7a4c-f902-4ae5-a122-d5acd46d0e85",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The LiGluD2 system demonstrates exquisite pharmacological specificity: only the I677C mutant (not wild-type) becomes light-sensitive after MAGu treatment, and MAGu does not photosensitize other wild-type receptors or ion channels in native tissue. This specificity is consistent with prior PTL applications in various biological settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C94 emphasize the pharmacological specificity of the approach. The experimental data (Figures 5B-C and Figure 5\u2014figure supplement 1) combined with citations to prior PTL work support this conclusion. The specificity is a key strength of the methodology and is well-documented both in the current study and in the cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "32902e8f-641b-448c-9e3b-b4a9c71ded70",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GluD receptors are orphan members of the ionotropic glutamate receptor family that do not bind glutamate but play important roles in synapse formation and function. GluD1 and GluD2 have distinct expression patterns and are implicated in various neurological and psychiatric conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8-C16, C20-C21 provide background on GluD receptors, all supported by appropriate citations to established literature. These claims accurately represent the current understanding of GluD receptor biology and provide context for the study. The claims are well-supported by the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Progress in understanding GluD ion channel function has been limited by lack of specific pharmacological tools. Existing blockers (pentamidine, NASPM) and ligands (D-serine, glycine, 7-chlorokynurenic acid) lack specificity for GluD receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C22-C31 establish the motivation for developing LiGluD2 by documenting limitations of existing pharmacological tools. The claims are supported by appropriate citations and accurately represent the state of the field. This provides clear justification for the development of a more specific tool.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "ded4b19f-dd38-40bd-8f4d-42d85343a096",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The PTL strategy has been successfully applied to other ionotropic glutamate receptors (kainate and NMDA receptors) by tethering glutamate-containing photoswitches to the ligand-binding domain. Because GluD activation mechanisms are unknown, a different strategy targeting the pore was adopted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C86 provide context for the methodological approach by comparing to prior PTL work on other iGluRs. The claims are supported by appropriate citations and clearly explain why a different strategy was needed for GluD receptors. This justifies the pore-blocking approach rather than an agonist-based approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "2722eb63-606b-411c-90fc-ea79204919dc",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Trans MAGu likely does not reach the pore lumen as originally designed but nevertheless reversibly modulates current with high temporal and pharmacological precision. The single amino acid substitution required for MAGu attachment is unlikely to disrupt receptor function, and the rapid kinetics coupled with genetic specificity enable detection of small current variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88, C95-C96, and C98 discuss the mechanism and advantages of the LiGluD2 system. C87-C88 are supported by modeling and electrophysiology data. C96 is somewhat speculative but reasonable given that functional coupling with mGlu1 is preserved (C97). C98 is an interpretation of the results that is well-supported by the data showing detection of tonic currents.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    },
+    {
+      "id": "a32a4638-0b1b-4892-b963-d96b6e11d830",
+      "content_id": "b91134a8-43b8-429d-bc34-b7e4e048cb2d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "LiGluD2 will be a crucial tool for probing the ionotropic contribution of GluD2 to synaptic physiology in neuronal settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C100 is a prospective statement about future utility. While the tool shows promise based on HEK cell data and control experiments in slices, it has not yet been deployed to study native GluD2 function in neurons. The claim is reasonable speculation but cannot be evaluated as supported without additional neuronal experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:56:14.166213Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7a7be419-8d03-468c-81c8-a96d1a0c4e4a",
+      "result_id": "9bcd2079-27ba-4270-ab80-b67fe83564df"
+    },
+    {
+      "claim_id": "8b0a2fb4-af5e-4e48-8b6c-4b4028a7b6ee",
+      "result_id": "9bcd2079-27ba-4270-ab80-b67fe83564df"
+    },
+    {
+      "claim_id": "244c3af3-6cec-490c-bae9-1d9ec2ae0860",
+      "result_id": "9bcd2079-27ba-4270-ab80-b67fe83564df"
+    },
+    {
+      "claim_id": "f6f893d1-85a7-47a6-9322-5939ee12ee9c",
+      "result_id": "9bcd2079-27ba-4270-ab80-b67fe83564df"
+    },
+    {
+      "claim_id": "0872f328-2ad7-444b-8682-752f0c785180",
+      "result_id": "9bcd2079-27ba-4270-ab80-b67fe83564df"
+    },
+    {
+      "claim_id": "892dedec-0c65-4665-9a67-4aa183b36a69",
+      "result_id": "489baf06-b937-441e-bf9f-b1d6ec3d100e"
+    },
+    {
+      "claim_id": "1f689ffc-2733-4c4c-932f-72fbba333f49",
+      "result_id": "489baf06-b937-441e-bf9f-b1d6ec3d100e"
+    },
+    {
+      "claim_id": "b927d6c5-53ca-483c-a7f5-ef63bc3cb6e2",
+      "result_id": "489baf06-b937-441e-bf9f-b1d6ec3d100e"
+    },
+    {
+      "claim_id": "f1e18a5f-2149-40b6-99c8-2b1020cb24d1",
+      "result_id": "f237b624-c8c1-4f5d-996d-1fffb44179b7"
+    },
+    {
+      "claim_id": "038ae7ec-28c5-4cdb-8b51-a1a9dd5bf8b8",
+      "result_id": "f237b624-c8c1-4f5d-996d-1fffb44179b7"
+    },
+    {
+      "claim_id": "f2019199-bf10-42db-8f8b-4248d9462261",
+      "result_id": "f237b624-c8c1-4f5d-996d-1fffb44179b7"
+    },
+    {
+      "claim_id": "daafc4ef-bd7e-45ec-b88a-4331e4cd1a8d",
+      "result_id": "f237b624-c8c1-4f5d-996d-1fffb44179b7"
+    },
+    {
+      "claim_id": "1d627645-347f-407c-8ff7-b0b636008242",
+      "result_id": "f237b624-c8c1-4f5d-996d-1fffb44179b7"
+    },
+    {
+      "claim_id": "016b5e62-4858-4616-87cb-6575f774ce05",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "62995f2a-38de-4add-89e2-c68d3e728cc2",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "b55f5960-5f2c-474c-8f58-8048fc66b0b0",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "7b042b6d-02e8-439b-aa22-6bf6f761d5cf",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "33f40950-6cdd-4256-944d-f6ee2aacdb6d",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "3a03c032-c044-4f6a-8e85-60993af70b28",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "71c2f83c-eea2-4c50-b17c-ddbba2abd9b0",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "dd109c70-5106-41a9-9776-1dc7e1ee35a4",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "6372c646-0438-49c6-b83d-fa128d4312af",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "8a624879-6a20-4a5d-8f50-d0d43d2d2809",
+      "result_id": "fa55b786-4130-47e5-88c3-d09ffd3356a5"
+    },
+    {
+      "claim_id": "521fe74b-3e45-4dee-9a82-b140e1925868",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "c369e8cb-57b1-4df1-8c3a-f5ec747fa454",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "c2b4da7e-321e-4d08-8717-c463867aa581",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "1f2df345-f094-4aeb-99c1-7fbef0ab444b",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "7b759628-78dc-4546-932e-c60799dae021",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "3d69c5c4-b242-49c0-b6ba-815d256fca01",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "795bb007-54f4-4402-b37a-614dd4f6cd87",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "49a2dc10-2245-4211-a247-91543fd56d84",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "efd5478a-01e0-4620-aae5-ea35fdd23e58",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "74981fe4-e625-47e3-a40c-e6f9c5b98aa3",
+      "result_id": "d67d5224-5960-4d8f-8414-ed6d4d1d7a94"
+    },
+    {
+      "claim_id": "81053720-7234-470f-979d-2fd8959a0b9d",
+      "result_id": "920a9296-1ac4-45e3-a9a8-ba750135b7f8"
+    },
+    {
+      "claim_id": "f988acb9-f336-4b94-8925-a507a2e4e61e",
+      "result_id": "920a9296-1ac4-45e3-a9a8-ba750135b7f8"
+    },
+    {
+      "claim_id": "41897ee2-407b-4522-bbb0-30b186f827a4",
+      "result_id": "920a9296-1ac4-45e3-a9a8-ba750135b7f8"
+    },
+    {
+      "claim_id": "78a11f0c-d6a4-4f3f-b116-4540caa8cb81",
+      "result_id": "920a9296-1ac4-45e3-a9a8-ba750135b7f8"
+    },
+    {
+      "claim_id": "97cf0c04-2598-442f-93ef-9a34dadf2d36",
+      "result_id": "920a9296-1ac4-45e3-a9a8-ba750135b7f8"
+    },
+    {
+      "claim_id": "1ba08b38-2fab-406a-a120-f320dfd83ab8",
+      "result_id": "920a9296-1ac4-45e3-a9a8-ba750135b7f8"
+    },
+    {
+      "claim_id": "78b31f45-1aa4-4a37-a3fe-350e4929951a",
+      "result_id": "920a9296-1ac4-45e3-a9a8-ba750135b7f8"
+    },
+    {
+      "claim_id": "c4eae9f5-5ec1-4289-8789-e6b295b8de65",
+      "result_id": "920a9296-1ac4-45e3-a9a8-ba750135b7f8"
+    },
+    {
+      "claim_id": "8a6ff59d-bcfd-4503-af7b-2f1cfe31de78",
+      "result_id": "017c696a-c10b-47f1-a914-6ba48eb92516"
+    },
+    {
+      "claim_id": "39894f27-b25d-4b53-92a6-0ce422c9d066",
+      "result_id": "017c696a-c10b-47f1-a914-6ba48eb92516"
+    },
+    {
+      "claim_id": "0db32f15-0e59-4447-92d5-9e932e926aea",
+      "result_id": "017c696a-c10b-47f1-a914-6ba48eb92516"
+    },
+    {
+      "claim_id": "6b9507a7-9c5e-4466-bcee-2a24b4fd02f1",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "7bb64594-4fbc-4eb4-b632-d6d07ccb6134",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "40b72537-2308-4519-ac23-6e1c4d7b33be",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "b4a8c547-43e4-4477-8c9f-afc0faa4c1aa",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "145f95ac-ed7e-425d-a0cb-196b1a9f9d77",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "436c9d40-2a51-42d9-8a72-9f9e2819c095",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "4b767eb5-c3d0-47bb-88ce-71638e875932",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "594f3d47-e461-42bc-ab85-8d9d085b1ac1",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "753b34fd-3bc6-48a1-bcb6-c53b3b5ea40e",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "1de4d102-6881-4737-8971-f26e7a3a8698",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "73e16ed2-f8ec-4b01-b876-a72c4cd8a500",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "68358cd1-0f7a-40ac-b180-58f84da97056",
+      "result_id": "d31ca1f4-70c0-4c0b-9082-62f2d653851c"
+    },
+    {
+      "claim_id": "203b3e81-35c3-45f5-95e1-45fe695a5718",
+      "result_id": "7373d14e-2a24-49a5-acb8-e22afcf09e01"
+    },
+    {
+      "claim_id": "d2518e04-0ac3-4bdc-ba32-71082ffc2a8f",
+      "result_id": "7373d14e-2a24-49a5-acb8-e22afcf09e01"
+    },
+    {
+      "claim_id": "ef8b98ab-bb8f-447b-b498-3db7df9ad1b7",
+      "result_id": "7373d14e-2a24-49a5-acb8-e22afcf09e01"
+    },
+    {
+      "claim_id": "3f38cdc3-43cf-4a51-b6f4-bf7660ea03fa",
+      "result_id": "7373d14e-2a24-49a5-acb8-e22afcf09e01"
+    },
+    {
+      "claim_id": "a60084a8-352f-4c20-901a-7448852fe8f9",
+      "result_id": "7373d14e-2a24-49a5-acb8-e22afcf09e01"
+    },
+    {
+      "claim_id": "c64996f1-5499-42b8-853c-74b99df9dba9",
+      "result_id": "1a3e4ada-f617-4fff-a5b0-e356365ea724"
+    },
+    {
+      "claim_id": "8276d3c0-ad9a-497d-a8e7-9d6aba415085",
+      "result_id": "1a3e4ada-f617-4fff-a5b0-e356365ea724"
+    },
+    {
+      "claim_id": "8bece8fb-47dc-4d9b-9c85-62be1c1b45aa",
+      "result_id": "1a3e4ada-f617-4fff-a5b0-e356365ea724"
+    },
+    {
+      "claim_id": "6b9507a7-9c5e-4466-bcee-2a24b4fd02f1",
+      "result_id": "1a3e4ada-f617-4fff-a5b0-e356365ea724"
+    },
+    {
+      "claim_id": "594f3d47-e461-42bc-ab85-8d9d085b1ac1",
+      "result_id": "1a3e4ada-f617-4fff-a5b0-e356365ea724"
+    },
+    {
+      "claim_id": "f2f918d8-4965-4554-9023-9f93cb57fd69",
+      "result_id": "4acb7a4c-f902-4ae5-a122-d5acd46d0e85"
+    },
+    {
+      "claim_id": "35e2507b-5735-48d0-a7b7-575752061326",
+      "result_id": "4acb7a4c-f902-4ae5-a122-d5acd46d0e85"
+    },
+    {
+      "claim_id": "50463160-305a-4691-b96b-b60e6e44b103",
+      "result_id": "4acb7a4c-f902-4ae5-a122-d5acd46d0e85"
+    },
+    {
+      "claim_id": "987afdef-0e1e-47ee-b6c4-cad106b03ff2",
+      "result_id": "4acb7a4c-f902-4ae5-a122-d5acd46d0e85"
+    },
+    {
+      "claim_id": "9861e606-a114-4305-8a65-178c78c0f54d",
+      "result_id": "4acb7a4c-f902-4ae5-a122-d5acd46d0e85"
+    },
+    {
+      "claim_id": "b7e022d9-f563-4eed-a9fe-596c13fe8891",
+      "result_id": "4acb7a4c-f902-4ae5-a122-d5acd46d0e85"
+    },
+    {
+      "claim_id": "b6de556f-d79b-400f-8f4f-116c589f704b",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "373ba9d2-330a-4f38-a08d-3d70e2b091d4",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "fba5e948-3f77-4501-b73c-47a4c6d446e8",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "035e89dc-5ceb-48ac-afda-42e507c880dd",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "30ffafe5-fd35-45d0-b426-261cd3c937ff",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "99391666-551a-4f07-9258-516cc57a7083",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "c4a9de9d-c5e0-46c1-aa58-bc68e17d571e",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "85846749-c8b3-46bb-a2d0-a8b54c53d875",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "15b61f28-8967-4f07-991c-4b27677f0f83",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "d2d3c416-4dda-4af8-a1c3-c5da92d257c7",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "77f1434a-8367-4766-96ee-55b177df9c40",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "d7f62269-04cf-45a2-9777-71872882fbae",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "cf5f96aa-8959-43a2-8185-36883f3b123f",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "1868f10a-6de5-4d87-a115-9599961ef62a",
+      "result_id": "32902e8f-641b-448c-9e3b-b4a9c71ded70"
+    },
+    {
+      "claim_id": "b0c02193-cb05-430c-9a32-f8f391bf079d",
+      "result_id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b"
+    },
+    {
+      "claim_id": "e635357e-d645-4147-ad80-81163cfe5849",
+      "result_id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b"
+    },
+    {
+      "claim_id": "c51d5e11-7320-4e98-b8d7-02637cf4d2e4",
+      "result_id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b"
+    },
+    {
+      "claim_id": "17ac89f0-5223-435f-83ac-f9638bb72abf",
+      "result_id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b"
+    },
+    {
+      "claim_id": "918b1357-7004-4b0c-b567-0fd95ce7a813",
+      "result_id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b"
+    },
+    {
+      "claim_id": "650bf103-602e-4992-b704-f66034279709",
+      "result_id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b"
+    },
+    {
+      "claim_id": "a828bdf9-49b7-4704-b99b-e3c7f2735906",
+      "result_id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b"
+    },
+    {
+      "claim_id": "e2bac410-2afd-4baa-9961-f79fb5fa0589",
+      "result_id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b"
+    },
+    {
+      "claim_id": "4e4a4c2a-ec82-4d19-94cb-f6267f6954d7",
+      "result_id": "2e46c07a-2c3c-4283-89b3-300e11da2a2b"
+    },
+    {
+      "claim_id": "44d3e2f6-0ac9-4c36-9d94-c08955047566",
+      "result_id": "ded4b19f-dd38-40bd-8f4d-42d85343a096"
+    },
+    {
+      "claim_id": "6a319a8c-ef54-446d-9fe0-62d05e737b9f",
+      "result_id": "ded4b19f-dd38-40bd-8f4d-42d85343a096"
+    },
+    {
+      "claim_id": "4dd595e4-a908-49ec-b2b6-82702407be73",
+      "result_id": "ded4b19f-dd38-40bd-8f4d-42d85343a096"
+    },
+    {
+      "claim_id": "e2719b3b-bead-4964-a7b6-09f74abb4dda",
+      "result_id": "ded4b19f-dd38-40bd-8f4d-42d85343a096"
+    },
+    {
+      "claim_id": "484de931-946b-48da-ba86-d3cde7681e84",
+      "result_id": "ded4b19f-dd38-40bd-8f4d-42d85343a096"
+    },
+    {
+      "claim_id": "a69f9e02-9df3-4319-8855-549def55fb3d",
+      "result_id": "2722eb63-606b-411c-90fc-ea79204919dc"
+    },
+    {
+      "claim_id": "03cd532a-a316-4de1-b051-faa7792431ce",
+      "result_id": "2722eb63-606b-411c-90fc-ea79204919dc"
+    },
+    {
+      "claim_id": "49c2e6c9-061e-48d8-a5d5-88c8c2a2c249",
+      "result_id": "2722eb63-606b-411c-90fc-ea79204919dc"
+    },
+    {
+      "claim_id": "2c1e2f9b-8e31-4fc0-a480-4e4201a7ad61",
+      "result_id": "2722eb63-606b-411c-90fc-ea79204919dc"
+    },
+    {
+      "claim_id": "f8b6146c-b7c1-4baa-8ab1-839760a4ff9d",
+      "result_id": "2722eb63-606b-411c-90fc-ea79204919dc"
+    },
+    {
+      "claim_id": "35a9b030-d3fc-42b5-8ae0-a5897bdca076",
+      "result_id": "a32a4638-0b1b-4892-b963-d96b6e11d830"
+    }
+  ],
+  "comparisons": []
+}

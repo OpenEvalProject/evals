@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Nudt21+/- mice exhibit partial post-transcriptional compensation of CFIm25 protein levels. Despite a 50% reduction in Nudt21 mRNA (C3), CFIm25 protein is reduced by only 30% (C4). CFIm25 is expressed in neuronal nuclei in cortex and hippocampus (C44), with no detectable expression in non-neuronal cells (C45). Complete loss of CFIm25 is embryonic lethal (C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 are supported by RT-qPCR and Western blot data (Figure 1E-F), showing reproducible measurements across replicates. The immunofluorescence data (Figure 1A-B) confirms neuronal expression. The breeding data (Figure 1D) demonstrates embryonic lethality with appropriate statistical analysis (chi-square test, p=0.004). The homeostatic compensation mechanism is a novel finding that is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Nudt21+/- mice exhibit learning and memory deficits across multiple behavioral paradigms. In conditioned fear tests, mutant mice showed ~50% reduced freezing during training (C52) and ~30% reduced freezing in contextual and cued tests (C53). In Morris water maze, they required more time to locate the platform (C56) and spent ~30% less time in the correct quadrant during probe trials (C58). Open field testing confirmed these deficits were not due to hyperactivity (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral phenotypes are supported by multiple independent assays with appropriate controls and statistical analyses. Sample sizes (n=14-20) are adequate for behavioral studies. The open field control (C54) appropriately addresses potential confounding by hyperactivity. The consistency across multiple learning paradigms strengthens the conclusion. Statistical significance is reported with appropriate tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60"
+    ],
+    "result": "Nudt21+/- mice exhibit cortical hyperexcitability. EEG recordings revealed significantly more spikes in the frontal cortex of mutant mice compared to wild-type littermates (C59), indicating that Nudt21 haploinsufficiency alone is sufficient to cause cortical hyperexcitability (C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EEG data (Figure 3) demonstrates increased spike activity with appropriate statistical analysis (Mann-Whitney test, p=0.029). The use of geometric mean for lognormally distributed data is appropriate. The finding is specific to frontal cortex, with no significant changes in parietal cortex or dentate gyrus, suggesting regional specificity. Sample sizes appear adequate for EEG studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C105"
+    ],
+    "result": "Nudt21+/- mice exhibit altered alternative polyadenylation and protein levels in the hippocampus. PAC-seq identified 20 genes with significantly different poly(A) site distributions (C61), with genotypes separating by PCA (C62). Mass spectrometry showed corresponding proteomic changes (C63), with 5 of 20 APA-altered genes showing protein level changes (C64). Example gene Ddx6 showed increased short isoform expression (C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular phenotypes are supported by appropriate sequencing and mass spectrometry approaches with adequate replicates (n=3-4/genotype). PCA demonstrates reproducible separation between genotypes. The authors appropriately acknowledge that effects may be diluted by glial mRNA. The trend of protein increase with mRNA shortening (C65) is noted but appropriately not statistically tested due to small sample size. Validation by RT-qPCR strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Human ESC-derived neurons infected with shNUDT21 exhibit homeostatic stabilization of CFIm25 protein. Despite a 40% reduction in NUDT21 mRNA (C66), CFIm25 protein is reduced by only 30% (C67), demonstrating post-transcriptional compensation similar to that observed in mice (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The human neuron data (Figure 5) parallels the mouse findings with appropriate RT-qPCR and Western blot validation. The inference of homeostatic stabilization (C68) is reasonable given the consistent mRNA-protein discrepancy observed in both systems. Sample sizes (n=3-4) are adequate for molecular studies. The use of validated shRNA clones strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "NUDT21 depletion in human neurons causes widespread APA misregulation affecting hundreds of genes, including many associated with intellectual disability. PAC-seq revealed predominantly shorter mRNAs (C72), with >90% of reads mapping to 3' UTRs (C100). Key genes MECP2, VMA21, and PAK1 showed 3' UTR shortening (C69-C71). Of misregulated genes, 129 have high loss-of-function intolerance (pLI>0.9) (C73), 26 cause intellectual disability when mutated (C74), and 9 are dominant (C75). UGUA motif enrichment patterns support CFIm25-mediated regulation (C101-C103).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PAC-seq analysis is comprehensive with appropriate quality controls, validation by RT-qPCR, and motif analysis confirming mechanism. Statistical testing (chi-square, p<0.0001) demonstrates enrichment of shortened mRNAs. The cross-referencing with gnomAD and disease databases is appropriate. Sample sizes (n=3/treatment) are standard for sequencing studies. The UGUA motif analysis provides mechanistic validation. However, the claim of 'hundreds of genes' should be more precisely quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "NUDT21 depletion in human neurons causes protein level misregulation in hundreds of genes. Mass spectrometry revealed that NUDT21 loss commonly results in shorter mRNAs and increased protein (C76), with MeCP2, VMA21, and PAK1 showing 40%, 90%, and 100% protein increases respectively (C77-C79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mass spectrometry data (Figure 6D) demonstrates protein level changes with appropriate statistical analysis (conditional chi-square, p<0.0001). The multi-step statistical approach appropriately tests the relationship between mRNA shortening and protein increase. Sample sizes are adequate for proteomics. The imputation method for missing values is reasonable and documented. The specific examples provide concrete evidence for the general trend.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "NUDT21 depletion causes downstream transcriptomic and proteomic dysregulation in human neurons. Differential expression analysis revealed numerous DEGs (C80), with only 2 genes showing both APA and expression changes (C81). Of DEGs, 21 have pLI>0.9 (C82) and 4 are associated with intellectual disability (C83). PCA of the proteome shows genotype segregation (C84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression analysis is appropriately conducted with DESeq2 and adequate replicates. The observation that APA changes have minimal direct effect on mRNA levels (C81) is interesting and well-documented. PCA demonstrates reproducible proteomic changes. The cross-referencing with disease databases is appropriate. However, the claim that DEGs result from 'secondary effects' is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Disruption of NUDT21-regulated APA events in the brain causes intellectual disability. The combined evidence from Nudt21+/- mice showing learning deficits, cortical hyperexcitability, and APA/proteomic misregulation (C87), together with human neuron data showing widespread APA and protein dysregulation (C88), patient data, and gnomAD constraint scores, provides strong evidence that partial loss of NUDT21 function causes intellectual disability (C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the convergence of multiple lines of evidence: mouse behavioral phenotypes, molecular changes in both mice and human neurons, patient CNV data, and population genetics (gnomAD). The logic connecting APA dysregulation to disease is sound. However, the causal chain from APA changes to behavioral deficits could be strengthened with additional mechanistic studies. The inference is reasonable but relies on correlative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "NUDT21-spanning CNVs are associated with intellectual disability in humans, but patients' CNVs include other genes. Nine individuals with duplications have intellectual disability (C40), and two with deletions have intellectual disability and seizures (C41). However, duplication patients have 3 other common genes (C42) and deletion patients have ~20 common genes (C43) in their CNVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to prior work (Gennarino et al., 2015) and the Decipher database. The acknowledgment of confounding genes in patient CNVs (C2, C42-C43) appropriately motivates the mouse model studies. This represents established prior knowledge that frames the current study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "NUDT21 is a highly constrained gene in human populations. gnomAD data shows only 15 missense variants (vs. 125 expected) and zero loss-of-function variants (vs. 13 expected) in ~140,000 individuals (C38-C39), suggesting NUDT21 loss of function is incompatible with health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gnomAD analysis is appropriately cited (Lek et al., 2016) and the interpretation of constraint is standard in the field. The comparison of observed vs. expected variants provides strong population genetic evidence for selection against NUDT21 loss of function. This supports the disease relevance of the gene.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Nudt21+/- mice have normal lifespan but reduced body weight. Mutant mice consistently weighed ~10% less than wild-type littermates (C51) from weaning through at least 30 weeks of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The weight phenotype is documented with appropriate longitudinal measurements and statistical analysis (two-way repeated measures ANOVA, p=0.002-0.004). This represents a consistent but relatively minor phenotype that may indicate broader metabolic or developmental effects of Nudt21 haploinsufficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Nudt21+/- mice show reduced anxiety-like behavior. In the open field assay, mutant mice spent ~15% more time in the exposed center area (C55), suggesting reduced anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is supported by open field data (Figure 2Bii) with appropriate statistical analysis (p=0.01). The interpretation as reduced anxiety is standard for this assay. This represents an additional neuropsychiatric phenotype beyond learning deficits, though it is not the primary focus of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "NUDT21-regulated genes in neurons are similar to those in cancer cell lines, and partial NUDT21 loss broadly causes 3' UTR shortening and increased protein levels. This demonstrates the constitutive function of NUDT21 across cell types (C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with cancer cell line studies (C85) is supported by citations and the current data. The conclusion about constitutive function (C86) is reasonable given the consistency across cell types. However, the claim that 'many' genes are the same could be more quantitatively supported with direct comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Individuals with missense variants in NUDT21 may have intellectual disability (C90), and NUDT21 duplications should lead to comparable APA dysregulation and disease (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative predictions (C90, C91) based on the current findings. While the logic is reasonable\u2014if 30% reduction causes deficits, then functional missense variants might too\u2014these remain untested hypotheses. The duplication prediction (C91) assumes symmetric effects of increased vs. decreased NUDT21, which may not hold. These require future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "A 30% reduction of CFIm25 in mouse brain is sufficient to cause learning deficits, and mice are neurologically less sensitive to genetic insult than humans (C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is directly supported by the behavioral data. Claim C93 is supported by citation to prior work (Tan and Zoghbi, 2019). Together, these support the translational relevance of the findings, suggesting human patients may be even more sensitive to NUDT21 disruption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Neurons are particularly sensitive to protein-level disequilibrium (C96). The 40% MeCP2 increase likely contributes to patient symptoms (C97), but patient symptoms most likely result from additive effects of numerous misregulated genes (C98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is inferred from the data showing small changes cause large effects, which is reasonable but not directly tested. Claims C97-C98 are speculative interpretations. While the MeCP2 increase is documented and MeCP2 is known to be dose-sensitive, the relative contributions of MeCP2 vs. other genes to patient phenotypes are not experimentally determined. These represent reasonable hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Normalization of CFIm25 levels is the most viable molecular therapeutic strategy for treating NUDT21-associated disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This therapeutic speculation (C99) is based on the finding that widespread dysregulation results from CFIm25 reduction. While logical, this has not been tested experimentally. Alternative strategies (e.g., targeting specific downstream effectors) are not evaluated. This represents a reasonable hypothesis for future therapeutic development but lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C94",
+      "C95",
+      "C104"
+    ],
+    "result": "Background knowledge about neuronal protein dose sensitivity, APA mechanisms, and NUDT21 function. These claims establish the scientific context for the study, including general principles of neuronal biology (C11-C13), examples of dose-sensitive genes (C14-C16), APA biology (C17-C25), NUDT21 mechanism (C26-C36), and specific gene associations (C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established scientific knowledge supported by appropriate citations to prior literature. They provide necessary context for interpreting the current findings. The citations appear appropriate and the knowledge claims are consistent with the field's understanding.",
+    "result_type": "MINOR"
+  }
+]

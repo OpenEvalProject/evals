@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C125"
+    ],
+    "result": "The study mapped the hTR RNA interactome using RAP-RNA[FA] RNA-seq and identified 80 RNA species interacting with hTR in VA13-hTR cells and 16 RNA species in HeLa cells, with 11 overlapping between the two cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C35, C38, C39, C40, and C125 collectively describe the primary experimental approach and findings. The RAP-RNA[FA] method is well-established (C35, C41), and the identification of 80 and 16 RNA species in the two cell lines is supported by the RNA-seq data presented in Figure 1 and supplementary materials. The overlap of 11 RNAs between cell types is consistent with the expected competition between telomerase RNP formation and non-canonical interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Computational predictions suggest that the majority of hTR-RNA interactions are mediated by direct RNA-RNA base pairing, with predicted interaction sites falling mostly within regions of hTR not involved in telomerase activity or trafficking regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are supported by the computational duplex formation predictions shown in Figure 2A and 2B, which demonstrate significantly lower duplex formation energies for enriched sequences compared to antisense or shuffled controls. However, C44 is speculative about these regions functioning as 'hubs' for RNA-RNA interactions, which is acknowledged in the evidence type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The RAP-RNA[FA] approach was validated by identifying HSP90AB1, previously reported to interact with hTR, and by qRT-PCR verification of selected candidates including TPT1, FLNA, and IFITM3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 provide validation of the experimental approach. The identification of HSP90AB1 (C45) confirms consistency with previous transcriptome-wide studies, and the qRT-PCR verification (C46) shown in Figure 1\u2014figure supplement 2 provides independent confirmation of the RNA-seq findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HIST1H1C mRNA was identified as one of the most highly enriched RNAs in hTR pull-downs, with computational predictions identifying a 15-nt region (TRIAGE) in the HIST1H1C ORF complementary to the P6b stem-loop of hTR, which is exposed in the telomerase holoenzyme structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C53, C54, and C55 describe the identification and characterization of the hTR-HIST1H1C interaction. The enrichment is supported by RNA-seq data (Figure 3A, 3B), the predicted base-pairing is shown in Figure 3C, and the accessibility of P6b is supported by the cited cryo-EM structure (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mutations in the P6b region of hTR that disrupt complementarity to TRIAGE abolished HIST1H1C enrichment in pull-downs, demonstrating that sequence complementarity is necessary but not sufficient for the interaction, as HIST1H1B contains the same TRIAGE sequence but shows much lower enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, C58, and C59 are supported by the mutagenesis experiments shown in Figure 3D. The abrogation of HIST1H1C enrichment in all P6b mutants (including the RS variant) demonstrates the necessity of complementarity, while the differential enrichment of HIST1H1B despite having the same TRIAGE sequence indicates that additional factors determine interaction specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "hTR variants (SW and RS) that disrupt the HIST1H1C interaction but maintain P6b secondary structure showed telomerase activities comparable to wild-type hTR, indicating that neither the P6b sequence nor its interaction with HIST1H1C RNA are required for catalytically active telomerase RNP assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C63, C64, C65, and C66 are supported by the qTRAP assay data in Figure 4B and the expression data in Figure 4A. The finding that SW and RS variants maintain telomerase activity comparable to wild-type hTR, while the \u0394P6b variant shows reduced activity, demonstrates that the P6b structure but not its specific sequence or HIST1H1C interaction is required for enzymatic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Disruption of the hTR-HIST1H1C interaction through P6b mutations (SW and RS variants) resulted in markedly increased telomere elongation compared to wild-type hTR (~100-114 nt/cycle vs ~82 nt/cycle), without affecting cell growth characteristics or telomerase enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69, C70, C71, and C72 are strongly supported by the TRF analysis data in Figures 4D, 4E, and Figure 4\u2014figure supplement 2, along with the population doubling data in Figure 4C. The increased telomere elongation in SW and RS variants compared to wild-type hTR is consistent across multiple time points and independent cell lines, while controls (U1 promoter, \u0394P6b, m1) show no significant elongation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Over-expression of wild-type HIST1H1C (wtHIST1H1C) led to telomere attrition and accumulation of short telomeres after 34 population doublings, while expression of silentHIST1H1C (with silent mutations disrupting hTR complementarity) had no effect on telomere length, demonstrating that the TRIAGE sequence is responsible for the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C74, C75, C76, C77, C78, and C79 are supported by the TRF analysis in Figure 5C and Western blot data in Figure 5B. The differential effect of wtHIST1H1C versus silentHIST1H1C on telomere length, despite similar protein expression levels, provides strong evidence that the TRIAGE sequence mediates the telomere attrition phenotype independently of H1.2 protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C81",
+      "C82",
+      "C92",
+      "C93",
+      "C114"
+    ],
+    "result": "HIST1H1C RNA negatively regulates telomere length independently of its protein coding potential, acting at a step downstream of telomerase RNP assembly, as demonstrated by frameshift constructs that abolish protein expression but maintain the telomere shortening phenotype when the TRIAGE sequence is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C81, C82, C92, C93, and C114 are supported by the frameshift experiments shown in Figures 7A-D and Figure 7\u2014figure supplement 1, along with the qTRAP data in Figure 5E. The observation that FS_HIST1H1C (with wild-type TRIAGE) causes significant telomere shortening (~700 nt by 3 months) compared to FS_silentHIST1H1C, despite neither producing H1.2 protein, demonstrates a non-coding RNA function. The lack of effect on telomerase activity (C81) supports the conclusion that HIST1H1C acts downstream of RNP assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Two of three polyclonal wtHIST1H1C-expressing cell lines lost transgene expression upon long-term culture (120 days), while none of the silentHIST1H1C lines lost expression, suggesting strong selection pressure against cells with elevated TRIAGE-containing HIST1H1C RNA. The cell line maintaining wtHIST1H1C expression showed increased p53 levels indicative of DNA damage response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, C85, and C86 are supported by the Western blot data in Figure 5D. The selective loss of wtHIST1H1C but not silentHIST1H1C expression, along with elevated p53 in the cell line maintaining wtHIST1H1C expression, provides evidence for selection pressure against TRIAGE-mediated telomere shortening. However, C85 is somewhat speculative about the survival advantage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In clonal HT1080 cell lines, HIST1H1C over-expression was generally associated with shorter mean telomere length, higher frequency of short telomeres, and increased cellular senescence, while hTR expression levels did not correlate with senescence, suggesting that clonal variations in hTR are not limiting for telomere maintenance in this setting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C88, C89, C90, and C91 are supported by the TeSLA data in Figures 6B, 6C, and Figure 6\u2014figure supplement 2, the \u03b2-galactosidase staining in Figures 6D and 6E, and the qRT-PCR data in Figure 6A and Figure 6\u2014figure supplement 1. The correlation between HIST1H1C over-expression and both telomere shortening and senescence, combined with the lack of correlation between hTR levels and senescence, provides strong evidence for the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The hTR RNA interactome is highly enriched in mRNAs coding for proteins involved in apoptosis regulation and cytoskeleton organization, with 45.5% (35/77) of identified mRNAs in VA13-hTR cells falling into these categories, including prominent candidates TPT1 and FLNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C138, C139, and C140 are supported by the functional annotation analysis shown in Figure 8 and the identification of TPT1 and FLNA in Figure 1B and Figure 1\u2014figure supplement 2. The enrichment in apoptosis-related mRNAs is consistent with the previously reported anti-apoptotic role of hTR (C22, C126), providing a potential mechanistic link through RNA-RNA interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "hTR selectively interacts with a subset of scaRNAs, most prominently scaRNA2 and scaRNA17, with the association significantly reduced in the m1 hTR variant that does not accumulate in Cajal bodies. Computational predictions suggest scaRNA2 can potentially occupy both pseudouridylation pockets of hTR, raising the possibility that hTR might function as an active pseudouridylation guide RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134 and C135 are supported by the data in Figures 9A-C showing selective enrichment of scaRNAs and reduced association with the m1 variant. Claim C136 is supported by computational predictions in Figure 9D. However, C137 is highly speculative, as no experimental evidence is provided to demonstrate that hTR actually functions as a pseudouridylation guide RNA. This would require additional experiments such as pseudouridine mapping or functional assays to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Only one mRNA (HSP90AB1) identified in this study overlaps with previous transcriptome-wide RNA-RNA interaction screens, likely reflecting insufficient saturation of those methods and biases from psoralen crosslinking, which preferentially detects interactions with staggered uridines. Many predicted hTR-RNA duplexes, including TRIAGE-P6b, lack appropriately positioned uridines for psoralen crosslinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128, C129, C130, and C131 are supported by comparison with previous studies (C128), the observation that many predicted duplexes lack appropriately positioned uridines (C130, shown in Figures 3C and 9D), and citations to previous work documenting the limitations of psoralen-based methods (C30, C31). The conclusion that a large fraction of the RNA interactome remains unexplored (C131) is a reasonable inference from these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The TRIAGE sequence is conserved in HIST1H1C, HIST1H1B, and HIST1H1E (with one nucleotide difference maintaining G-U pairing in HIST1H1E), but HIST1H1C shows preferential enrichment in hTR pull-downs compared to other variants, possibly due to differences in RNA secondary structure or RNA-binding protein associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C99, and C100 are supported by the sequence alignment in Figure 3C and the enrichment data in Figure 3A. Claims C101 and C102 are speculative about the reasons for HIST1H1C specificity and potential interactions in other contexts, but this speculation is appropriately qualified and based on the observed data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The P6b stem-loop and TRIAGE sequences are highly conserved in most placental mammals, but mouse and rat P6b sequences are highly divergent, suggesting the P6b-TRIAGE interaction may not occur in these species. This may reflect divergent evolutionary strategies in short-lived rodent species with long telomeres and somatic telomerase activity, consistent with the observation that mouse telomerase RNA does not accumulate in Cajal bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is supported by sequence analysis (stated as DATA evidence), and C113 is supported by citation to previous research. However, C111 and C112 are speculative interpretations about the evolutionary significance of sequence divergence. While the speculation is reasonable and supported by citations about rodent telomere biology, no experimental evidence is provided to test whether the P6b-TRIAGE interaction actually occurs or is functionally relevant in rodents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "Background claims establishing the biological context for the study, including the role of telomerase RNA in telomere maintenance, the structure and function of vertebrate TRs, the expression patterns of hTR and hTERT, the extra-telomeric functions of hTR, and the state of knowledge regarding RNA-RNA interaction mapping methods and the hTR RNA interactome prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C37, excluding those already grouped) provide essential background information supported by citations to previous research and established scientific knowledge. They set the context for the study's rationale and experimental design. All are appropriately supported by citations or represent well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C61",
+      "C62",
+      "C67",
+      "C68",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C116",
+      "C118",
+      "C119",
+      "C122",
+      "C123",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Background claims providing context about histone locus bodies, Cajal bodies, linker histones, their cellular functions, and the clinical relevance of telomere biology, including the role of telomerase in cancer and telomeropathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide important biological context for understanding the significance of the HIST1H1C-hTR interaction. All are supported by appropriate citations to previous research and represent established knowledge in the fields of chromatin biology, telomere biology, and cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C117",
+      "C120",
+      "C121",
+      "C124",
+      "C127",
+      "C133"
+    ],
+    "result": "The findings define a novel non-coding RNA function for HIST1H1C and identify an RNA-based regulatory mechanism for telomere length homeostasis. The HIST1H1C-hTR interaction might constitute a tumor suppressor mechanism and could have therapeutic applications, while some extra-telomeric functions of hTR might be mediated through RNA-RNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115 and C117 are supported by the experimental data demonstrating the non-coding RNA function of HIST1H1C. However, C120, C121, C124, C127, and C133 are speculative about potential tumor suppressor functions, therapeutic applications, and mechanisms of extra-telomeric hTR functions. While these speculations are reasonable based on the data, they require additional experimental validation in appropriate biological contexts (e.g., stem cells, cancer models) to be considered supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "A growing number of snoRNAs and other non-coding RNAs have been shown to be processed into smaller fragments that regulate cellular functions beyond their canonical roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is supported by citations to previous research documenting the processing and alternative functions of snoRNAs and other non-coding RNAs. This provides context for the speculation in C133 about potential hTR-derived smaller RNA species.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C85",
+      "C86"
+    ],
+    "result": "Nucleosomes maintain a strong negative electrostatic field despite a ~50% reduction in net charge compared to free DNA. Ion counting experiments show that canonical nucleosomes have \u03b2+ = 0.83 \u00b1 0.020 and \u03b2\u2013 = 0.17 \u00b1 0.015, similar to free 147 bp DNA (\u03b2+ = 0.85 \u00b1 0.02, \u03b2\u2013 = 0.16 \u00b1 0.01), indicating preferential cation attraction characteristic of strong electrostatic fields. The nucleosome charge (qNuc = \u2013144.0 \u00b1 1.7) is approximately half that of free DNA (qDNA = \u2013292.0 \u00b1 4.9), consistent with histone octamer charge (+151 \u00b1 3.6 experimental, +149.0 e calculated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C13-C17 provide converging experimental evidence from ion counting measurements showing that nucleosomes retain strong negative electrostatic fields (\u03b2+ \u2248 0.83) similar to free DNA (\u03b2+ \u2248 0.85) despite ~50% charge reduction. The measurements are internally consistent, with appropriate controls (C85, C86) confirming sample integrity. Statistical analysis (C62) shows significant differences between canonical and H3-tailless nucleosomes (p=0.028), supporting the validity of the measurements. This strongly supports Model II over Model I.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C62"
+    ],
+    "result": "Removal of H3 histone tails increases the nucleosome's negative electrostatic field. H3-tailless nucleosomes show higher \u03b2+ (0.88 \u00b1 0.025) and lower \u03b2\u2013 (0.11 \u00b1 0.020) compared to canonical nucleosomes (\u03b2+ = 0.83 \u00b1 0.020), with the difference being statistically significant (p = 0.028). This suggests that positively charged H3 tails make local contacts with nucleosomal DNA, partially screening its negative charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 provide direct experimental measurements showing increased electrostatic field strength in H3-tailless nucleosomes, with C62 providing statistical validation (p=0.028). The measured charge (q = \u2013160 \u00b1 3.1) agrees well with theoretical predictions (\u2013160e), and the interpretation (C24-C25) that H3 tails make local DNA contacts is reasonable and supported by cited literature. The experimental design appropriately tests the role of histone tails in modulating nucleosome electrostatics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Nucleosomes show enhanced preferential attraction of Mg2+ over Na+ compared to free DNA, providing additional evidence for strong electrostatic fields. The Mg2+:Na+ ratio for H3-tailless nucleosomes (2.75 \u00b1 0.17) is substantially higher than for free 147 bp DNA (1.15 \u00b1 0.02), suggesting that the electrostatic field increases upon DNA complexation into nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 provide clear experimental measurements of Mg2+:Na+ ratios using ion counting, with the ~2.4-fold difference between H3-tailless nucleosomes and free DNA being substantial and well-documented. The interpretation (C28-C29) that this reflects stronger electrostatic fields in nucleosomes is consistent with established PB theory (C71-C75) and provides orthogonal validation of the \u03b2 coefficient measurements. The use of H3-tailless nucleosomes appropriately controls for tail-mediated screening effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Individual histone proteins and their complexes generate substantial positive electrostatic fields (\u03b2\u2013 = 0.69-0.75), though weaker than DNA's negative field. PB calculations predict that histone octamer assembly increases electrostatic field strength (predicted \u03b2\u2013 = 0.84) to levels comparable to but opposite in sign from free DNA (\u03b2+ = 0.85), requiring uptake of ~13 ions to balance the increased field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C33 provide experimental measurements for individual histones and stable subcomplexes, showing consistent positive electrostatic fields. However, C34-C38 rely entirely on PB calculations for the histone octamer because it is unstable under experimental conditions. While C35 shows agreement between PB predictions and experimental measurements for individual histones (validating the computational approach), the octamer predictions remain unvalidated experimentally. The inability to directly measure octamer electrostatics is a significant limitation that prevents full support of these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The strong negative electrostatic field of nucleosomes arises from structural features that increase local charge density: only ~50% of DNA contacts the histone octamer, DNA wrapping brings distant phosphoryl groups into proximity, and duplex geometry alterations decrease phosphoryl group spacing. These features increase the negative field, which is only partially mitigated by histone core association, resulting in a field stronger than free linear DNA. Ion release during nucleosome formation provides favorable energy to offset increased electrostatic repulsion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide a mechanistic explanation for the maintained strong electrostatic field, combining structural analysis (C39-C41, supported by crystal structure and citations) with PB calculations (C42-C43) that are consistent with experimental ion counting data. The explanation that increased local charge density from DNA wrapping creates stronger fields despite lower net charge is theoretically sound and supported by cited computational studies (C80-C81). Claim C44 regarding ion release is directly supported by ion counting experiments (Figure 3G) and consistent with known salt-sensitivity of nucleosome formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "PB calculations predict spatial variation in nucleosome electrostatic potential, with strongest negative potential on the 'sides' (around DNA) and weakest/slightly positive potential at the 'top' (histone core). This suggests nucleosomes may preferentially stack off-center or associate perpendicularly rather than side-by-side, consistent with recent cryo-EM observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 present PB calculations showing spatial heterogeneity in electrostatic potential, which is a reasonable extension of the validated PB approach. The prediction of preferential nucleosome orientations (C47) follows logically from electrostatic principles (opposite charges attract). Importantly, C48 provides independent experimental support from recent cryo-EM studies showing nucleosome associations consistent with these electrostatic predictions, strengthening confidence in the computational results. However, C47 uses cautious language ('may be') appropriately acknowledging this is a prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "The authors propose that nucleosomes' strong electrostatic fields may attract multivalent counterions (polyamines, H1) more effectively than free DNA, potentially promoting bridging interactions between nucleosomes and chromatin compaction. Histone tails, previously proposed to mediate inter-nucleosome bridging, may exploit the enhanced nucleosome electrostatic field. The authors hypothesize that nucleosome electrostatics play a fundamental role in chromatin phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 and C54 are explicitly speculative proposals ('propose', 'could promote', 'hypothesize') based on the Mg2+:Na+ competition data but lacking direct experimental validation of multivalent ion bridging or phase separation effects. Claim C51 cites established knowledge about histone tail bridging, and C52 reasonably extends this to the current findings, but this remains inferential. While these hypotheses are plausible and well-motivated by the experimental data, they represent future directions rather than demonstrated results. The speculative nature is appropriately acknowledged in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C58",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "BE-ICP MS ion counting is an effective method for measuring nucleic acid electrostatics, allowing study of various ions over broad concentration ranges (\u03bcM to M) with high precision. The method has limitations: it cannot assay most halogens except Br\u2013, and provides no information about ion distribution within the ion atmosphere. ASAXS can measure ion atmosphere shape and extent but with lower precision than BE-ICP MS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C58 describe the BE-ICP MS method with appropriate citations to previous work establishing its effectiveness. Claims C76-C79 honestly acknowledge method limitations, including the inability to measure spatial ion distribution and halogen detection issues. The comparison to ASAXS (C78-C79) is supported by citations and provides appropriate context. The choice to use NaBr instead of NaCl is justified by C59-C61 showing equivalent behavior. This transparent discussion of methodology and limitations strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C68",
+      "C69"
+    ],
+    "result": "Two competing models exist for nucleosome electrostatics: Model I assumes complete charge attenuation (\u03b2+ = \u03b2\u2013 \u2248 0.5), while Model II predicts retention of strong negative fields (\u03b2+ > \u03b2\u2013, similar to free DNA). The authors' experimental approach was designed to distinguish between these models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 accurately describe the two competing models in the field, with C2 representing a common assumption (Model I) and C3 citing theoretical/computational predictions (Model II). Claims C68-C69 provide clear, testable predictions for each model. This framing appropriately sets up the experimental test and provides context for interpreting the results. The characterization of Model I as a 'common assumption' rather than explicitly published work is acknowledged in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C83",
+      "C84"
+    ],
+    "result": "The strong and spatially varied electrostatics of nucleosomes likely influence DNA-protein interactions and gene expression regulation. Most DNA-binding proteins are positively charged, and their binding affinities are expected to depend on local nucleosome electrostatics. The energetics of DNA-protein interactions will strongly depend on the magnitude of nucleosome electrostatic fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C83 state established knowledge about DNA-binding proteins being positively charged and using electrostatic interactions, supported by multiple citations. Claims C84 and C56 make reasonable inferences that nucleosome electrostatics will affect these interactions and gene regulation, which follows logically from the experimental findings. However, these remain predictions about functional consequences rather than demonstrated effects. The claims appropriately use language like 'expected' and 'likely' to indicate these are inferences rather than direct observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C70"
+    ],
+    "result": "Background claims about nucleosome structure, DNA charge properties, and electrostatic screening mechanisms represent established knowledge in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10, and C70 present well-established background knowledge about nucleosome structure, DNA electrostatics, and screening mechanisms, all supported by appropriate citations to foundational work. These provide necessary context for the experimental studies but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Theoretical background on polyelectrolyte behavior and ion counting interpretation: charge density determines electrostatic field strength; low charge density molecules show equal counterion/coion attraction (\u03b2+ = \u03b2\u2013 \u2248 0.5) while high charge density molecules preferentially attract counterions; \u03b2 coefficients sum to 1.0 due to charge neutrality; divalent cation preference increases with field strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C59-C61 cite previous experimental work validating the methods and establishing baseline values. Claims C63-C67 and C71-C75 describe established polyelectrolyte theory (PB theory) with appropriate citations. These theoretical principles are well-established in the field and provide the framework for interpreting the experimental ion counting data. The authors appropriately rely on this established theory rather than re-deriving it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior computational models predict that DNA wrapping in nucleosomes creates enhanced local charge density and electrostatic focusing effects that increase electrostatic field strength despite lower net charge. Strong electrostatic repulsion opposes DNA compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 accurately cite prior computational models predicting electrostatic focusing in nucleosomes, providing important context for Model II. Claim C82 states established knowledge about electrostatic repulsion opposing compaction. These claims appropriately attribute prior work and provide theoretical motivation for the experimental studies, though they do not represent findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Recent work has implicated dynamic multivalent interactions in heterochromatin formation through phase separation of nucleosome arrays into higher-order condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 accurately cites recent work on chromatin phase separation, providing context for the authors' hypothesis (C54) about the role of nucleosome electrostatics in this process. This represents prior work rather than a finding from this study.",
+    "result_type": "MINOR"
+  }
+]

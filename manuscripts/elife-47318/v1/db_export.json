@@ -1,0 +1,2123 @@
+{
+  "submission": {
+    "id": "aafde379-882e-40fa-9f4f-f73a5167b870",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:02:28.867168Z",
+    "updated_at": "2025-12-02T19:02:28.867168Z"
+  },
+  "content": [
+    {
+      "id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "submission_id": "aafde379-882e-40fa-9f4f-f73a5167b870",
+      "content_type": "manuscript",
+      "content_text": "# A minimal self-organisation model of the Golgi apparatus\n\n## Authors\n\n- Quentin Vagne<sup>1</sup>\n- Jean-Patrick Vrel<sup>2</sup>\n- Pierre Sens<sup>2</sup> ([ORCID: 0000-0003-4523-3791](https://orcid.org/0000-0003-4523-3791)) \u2020\n\n### Affiliations\n\n1. Center for Systems Biology Dresden, Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n2. Institut Curie, PSL Research University, CNRS, UMR 168, F-75005 Paris France\n3. UPMC Univ Paris 06, CNRS, UMR 168, F-75005 Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe design principles dictating the spatio-temporal organisation of eukaryotic cells, and in particular the mechanisms controlling the self-organisation and dynamics of membrane-bound organelles such as the Golgi apparatus, remain elusive. Although this organelle was discovered 120 years ago, such basic questions as whether vesicular transport through the Golgi occurs in an anterograde (from entry to exit) or retrograde fashion are still strongly debated. Here, we address these issues by studying a quantitative model of organelle dynamics that includes: de-novo compartment generation, inter-compartment vesicular exchange, and biochemical conversion of membrane components. We show that anterograde or retrograde vesicular transports are asymptotic behaviors of a much richer dynamical system. Indeed, the structure and composition of cellular compartments and the directionality of vesicular exchange are intimately linked. They are emergent properties that can be tuned by varying the relative rates of vesicle budding, fusion and biochemical conversion.\n\n## Introduction\n\nThe Golgi apparatus is an intracellular organelle at the crossroad of the secretory, lysosomal and endocytic pathways (Heald and Cohen-Fix, 2014). One of its most documented functions is the sorting and processing of many proteins synthesized by eukaryotic cells (Lippincott-Schwartz et al., 2000). Proteins translated in the endoplasmic reticulum (ER) are addressed to the Golgi, where they undergo post-translational maturation and sorting, before being exported to their final destination. The Golgi itself is composed of distinct sub-compartments, called cisternae, of different biochemical identities (Stanley, 2011). From the ER, cargo-proteins successively reside in cisternae of the cis, medial and trans-identities, after which they exit the Golgi via the trans-Golgi network (TGN). In some organisms such as the yeast Saccharomyces cerevisiae cisternae are dispersed throughout the cell (Suda and Nakano, 2012) and each cisterna undergoes maturation from a cis to a trans-identity (Losev et al., 2006; Matsuura-Tokita et al., 2006). In most other eukaryotes, cisternae are stacked in a polarized fashion, with cargo-proteins entering via the cis-face and exiting via the trans-face (Boncompain and Perez, 2013). This polarity is robustly conserved over time, despite cisternae constantly exchanging vesicles with each other, the ER and the TGN (Lippincott-Schwartz et al., 2000). Pharmacological treatments that alter the structure and stacking of Golgi compartments in mammalian cells affect the processing of certain proteins, and in particular glycosylation (Hu et al., 2005; Shen et al., 2007; Xiang et al., 2013; Bekier et al., 2017).\n\nThe highly dynamical nature and compact structure of a stacked Golgi makes it difficult to determine how cargo-proteins are transported in an anterograde fashion from the cis to trans-side of the stack and how this transport is coupled to processing. Several models have been proposed to explain the transport dynamics of Golgi cargo (See sketch in Figure 1A). They mostly belong to two classes: one involving stable compartments exchanging components through fusion-based mechanisms and one involving transient compartments undergoing en-block maturation and in which fusion mechanisms are dispensable for cargo transport. Historically (Malhotra and Mayor, 2006), the 'Vesicular transport\u2019 model postulated that cisternae have fixed identities and cargo progresses from one cisterna to the next via anterograde vesicular transport, while the 'Cisternal Maturation\u2019 model postulated that cisternae themselves undergo maturation from the cis to the trans-identity and physically move through the stack, while Golgi resident proteins remain in the stack by moving toward the cis-face by retrograde vesicular transport. Several extensions of these two models have been proposed, including cisternal maturation with tubular connections (Trucco et al., 2004; Rizzo et al., 2013), rapid partitioning within Golgi cisternae between processing and exporting sub-compartments (Patterson et al., 2008), or the cisternal progenitor model (Pfeffer, 2010), in which stable cisternae exchange material by the fusion and fission of sub-compartments defined by their composition of Rab GTPases, which evolve over time through exchange with the cytosol. The strengths and weaknesses of these different models are nicely reviewed in Glick and Luini, 2011. Variations of these models, such as the \u2018rim progression\u2019 model also exist (Lavieu et al., 2013). It is noteworthy that these models do not provide a quantitative analysis of the generation and maintenance of Golgi compartments, nor do they attempt to relate the Golgi structure (number and size of compartments) and transport dynamics. Therefore, much remains unknown regarding the mechanisms that dictate the organisation and dynamics of the Golgi.\n\nAlthough there is a large diversity in Golgi structures and dynamics among different species, the physiological function of the organelle as a sorting and processing hub is common to all species, suggesting that important mechanisms controlling Golgi dynamics are conserved. Works in evolutionary biology and biophysics have attempted to describe these mechanisms (Klute et al., 2011; Sens and Rao, 2013). Different classes of mathematical models have been proposed, from models of vesicle budding and fusion based on rate equations (Binder et al., 2009; Ispolatov and M\u00fcsch, 2013; Mukherji and O'Shea, 2014) - some specifically including space (Sachdeva et al., 2016), to continuous, discrete and stochastic models of protein sorting in the Golgi (Gong et al., 2010; Vagne and Sens, 2018b) and computer simulations based on membrane mechanics (Tachikawa and Mochizuki, 2017). To account for the ability of the Golgi to reassemble after mitosis (Wei and Seemann, 2017), many of these studies have sought to describe the Golgi as a self-organized system (Binder et al., 2009; K\u00fchnle et al., 2010). However, the manner in which the kinetics of the Golgi two main functions (namely the transport and biochemical conversion of its components) interplay with one another to yield a robust steady-state has so far received much less attention (Sachdeva et al., 2016; Vagne and Sens, 2018b).\n\nMost existing models discuss transport through a pre-existing compartmentalised Golgi structure. The main goal of our model is to explain how this compartmentalised structure and the flux within it can spontaneously emerge through self-organisation. We propose here a model in which both Golgi self-organisation and vesicular transport are solely directed by (local) molecular interactions resulting in composition-dependent budding and fusion. In particular, we neglect the spatial structure of the Golgi, and assume that any two components of the system can interact with one another (see the Discussion section for the relevance of this approximation). Thus, the directionality of vesicular transport is an emergent property of the self-organisation process that co-evolves with the size and number of Golgi sub-compartments, rather than being fixed by arbitrary rules. This approach brings new conceptual insights that highlight the link between the large-scale steady-state organisation of the Golgi, the directionality of vesicular transport, and the kinetics of individual processes at the molecular scale. We show that a wide variety of organelle phenotypes can be observed upon varying the rates of the local processes. In particular, our model uncovers a correlation between the size and composition (purity) of Golgi sub-compartments. Besides, it emphasizes that composition-dependent exchange between compartments yields complex vesicular flux patterns that are neither purely anterograde (as in the \u2018vesicular transport\u2019 model) nor purely retrograde (as in the \u2018cisternal maturation\u2019 model).\n\n### Model\n\nThe model, shown in Figure 1 and fully described in the Appendix 1 Detailed\u00a0model is a coarse-grained representation of the Golgi Apparatus. The parameters used in the model are summarised in Appendix 1\u2014table 1, and the quantities used to charaterise a compartment and the steady-state of the system are summarised in Appendix 1\u2014table 2 and Appendix 1\u2014table 3, respectively.\u00a0The system is discretised at the scale of small vesicles, which define the unit size of the system. Vesicles can fuse together or with existing compartments to form larger compartments and can bud from compartments. Compartments consist of a number of membrane patches (of size unity) with distinct identities. The biochemical identity of a membrane patch is defined in a very broad sense by its composition in lipids and proteins that influence its interaction with other patches, such as Rab GTPases (Grosshans et al., 2006) or fusion proteins such as SNAREs (Cai et al., 2007). Consistently with the three main biochemical identities reported for Golgi membranes (Day et al., 2013), vesicles and membrane patches are of either cis, medial or trans-identity, and can undergo irreversible biochemical conversion from the cis to the trans-identity. The system is fed by a constant influx $J$ of cis vesicles coming from the ER, and vesicles and compartments can fuse homotypically with the ER (itself of cis identity) and the TGN (of trans identity).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47318/elife-47318-fig1-v1.jpg)\n\n**Figure 1.:** (A) Top: classical representation of the structure of the Golgi, showing some of the important protein actors. The three main membrane identities are shown in different colors (cis: blue, medial: orange, trans: green): ER\u00a0=\u00a0Endoplasmic Reticulum, ERGIC\u00a0=\u00a0ER Golgi intermediate Compartment, TGN\u00a0=\u00a0Trans Golgi-Network, PM\u00a0=\u00a0Plasma Membrane. Bottom: Sketches of the four main models of Golgi transport (see text). (B) Our quantitative model of Golgi self-organisation. The left boundary is the ER, composed of a cis-membrane identity, and the right boundary is the TGN, composed of a trans-membrane identity. Golgi compartments self-organise via three stochastic mechanisms: Fusion: (1) All compartments can aggregate using homotypic fusion mechanisms: the fusion rate is higher between compartment of similar identities. (2) Each compartment can exit the system by fusing homotypically with the boundaries. Budding: (3) Each compartment larger than a vesicle can create a vesicle by losing a patch of membrane. Biochemical conversion: (4) Each patch of membrane undergoes a conversion from a cis to a trans-identity. New cis-vesicles (0) bud from the ER at a constant rate. In the sketch, the boundaries also contain neutral (gray) membrane species that dilute their identity (impact of this dilution in Appendix 7).\n\nCompartments are defined by their size $n$ (a number of patches) and their composition, the fractions $\u03d5_{i}$ (with $i=c\u2062i\u2062s,m\u2062e\u2062d\u2062i\u2062a\u2062l,t\u2062r\u2062a\u2062n\u2062s$) of patches of the three different identities composing it. These quantities are dynamically controlled by three, composition dependent, microscopic mechanisms \u2013 budding, fusion and biochemical conversion \u2013 as described below.\n\nIn its simplest form, our model contains only four parameters: the rates of injection, fusion, budding, and biochemical conversion ($J,K_{f},K_{b},K_{m}$). By normalizing time with the fusion rate, we are left with three parameters: $j=J/K_{f}$, $k_{b}=K_{b}/K_{f}$ and $k_{m}=K_{m}/K_{f}$. The dynamics of the system is entirely governed by these stochastic transition rates, and can be simulated exactly using a Gillespie algorithm (Gillespie, 1977), described in Appendix\u00a01.\n\nCodes used for the simulation can be found in Source code 1.\n\n## Results\n\n### Mean-field description of the system\n\nThe complexity of the system prohibits rigorous analytical calculation. Nevertheless, analytical results can be obtained for a number of interesting quantities in certain asymptotic regimes where simplifying assumptions can be made. We present below some of these derivations.\n\n#### De-novo formation and steady-state composition in the well-sorted limit\n\nThe composition of the system at steady-state is difficult to compute due to the fact that the exit of components from the system, through fusion with the boundaries, depends on the composition of the exiting compartments, which cannot be derived analytically in the general case. This calculation becomes straightforward if the system is well sorted and all compartments are pure. As explained below, this corresponds to the limit of high budding rate: $k_{b}\u226bk_{m}$. In the well-sorted limit, only cis components exit through the cis boundary and only trans components exit through the trans boundary, and mean-field equations can be derived for the total amount $N_{\ud835\udc50\ud835\udc56\ud835\udc60}$, $N_{\ud835\udc5a\ud835\udc52\ud835\udc51\ud835\udc56\ud835\udc4e\ud835\udc59}$ and $N_{\ud835\udc61\ud835\udc5f\ud835\udc4e\ud835\udc5b\ud835\udc60}$ of each species:\n\n$$\n\\frac{\u2202N_{cis}}{\u2202t}=j\u2212N_{cis}(\\alpha_{ER}+k_{m})\u00a0,\u00a0\\frac{\u2202N_{medial}}{\u2202t}=k_{m}(N_{cis}\u2212N_{medial})\u00a0,\u00a0\\frac{\u2202N_{trans}}{\u2202t}=k_{m}N_{medial}\u2212\\alpha_{TGN}N_{trans}\n$$\n\nWith $j$ the injection rate of new cis-vesicles in the system and $k_{m}$ the biochemical conversion rates, both normalized by the fusion rate, and $\\alpha_{ER}$ ($\\alpha_{TGN}$) is the fraction of cis (trans) species promoting homotypic fusions with Golgi components in the ER (TGN). At steady-state, the total amounts of cis, medial and trans-species are fixed by the balance between influx, exchange, biochemical conversion and exit:\n\n$$\nN_{cis}=N_{medial}=\\frac{j}{\\alpha_{ER}+k_{m}}\u00a0,\u00a0N_{trans}=\\frac{k_{m}}{\\alpha_{TGN}}\\frac{j}{\\alpha_{ER}+k_{m}}\n$$\n\nTo estimate the typical size of compartments, we assume that for each species, a single large compartment of size $n$ interacts through budding and fusion with a number $n_{v}$ of vesicles of the same identity (so that $N=n+n_{v}$). The compartments size for each species then satisfies:\n\n$$\n\\frac{\u2202n}{\u2202t}=n_{v}\u2212k_{b}n\u2192steady\u00a0staten=\\frac{N}{1+k_{b}}\n$$\n\nTo limit the number of parameters, we fix the average system\u2019s size $N=N_{\ud835\udc50\ud835\udc56\ud835\udc60}+N_{\ud835\udc5a\ud835\udc52\ud835\udc51\ud835\udc56\ud835\udc4e\ud835\udc59}+N_{\ud835\udc61\ud835\udc5f\ud835\udc4e\ud835\udc5b\ud835\udc60}$ to a set value $N=300$ in the main text, which is suitable for Golgi ministacks whose total area is of the order of 1\u00a0\u03bcm2 (the area of a mammalian Golgi ribbon is much larger) (Yelinek et al., 2009), corresponding to about a few hundreds of vesicles of diameter ~\u00a010-50\u00a0nm. This is obtained by adjusting the influx to the variation of the other parameters according to:\n\n$$\nj=\\frac{N\u00a0(\\alpha_{ER}+k_{m})\u00a0\\alpha_{TGN}}{2\\alpha_{TGN}+k_{m}}\n$$\n\nWe show in Appendix 1\u2014figure 1 that the overall structure of the phase diagrams for the compartments size and composition is robust upon variation of the average system\u2019s size.\n\nThe de-novo formation of the system can be approached with Equation 3. Starting with an empty system with an influx $J(=K_{f}\u2062j)$ of cis vesicles, the system grows stochastically to reach the steady-state size after a time of order $1/K_{f}$. The evolution of the size of the system with time obtained from numerical simulations, shown in Appendix 4\u2014figure 1 for different sets of parameters, agrees with Equation 3. At steady-state, the influx of vesicles is balanced by an outflux of material. The exit kinetics can be quantified by looking at the fate of a pulse of cargo released from the ER at a given time. Appendix 4\u2014figure 2 shows that the exit kinetics is exponential, in agreement with results of FRAP (Patterson et al., 2008) or pulse-chase (Boncompain et al., 2012) experiments.\n\nAlthough Equation 6 is only valid in the well-sorted limit, it permits a satisfactory control of the average system size over the entire range of parameters, with only a 10% variation for small budding rates (Appendix\u00a05, Appendix 5\u2014figure 1). At steady-state, the system size exhibits stochastic fluctuations around the mean value that depend on the parameters (Appendix\u00a05, Appendix 5\u2014figure 1). The large fluctuation (about 30%) for low budding rate $k_{b}$ stem from the fact that compartments are large and transient, as explained below.\n\n#### Compartment size and composition in the maturation-dominated regime\n\nFor low values of the budding rate $k_{b}$, compartments do not shed vesicles and evolve in time independently of one another in a way dictated by a balance between fusion-mediated growth and biochemical maturation. Their size and composition can be approximatively calculated by assuming that compartments grow in size by fusion from a constant pool of vesicles containing the same number $n_{v}$ of vesicle for all three identities. Calling $n_{\ud835\udc50\ud835\udc56\ud835\udc60}\u2062(t)$, $n_{\ud835\udc5a\ud835\udc52\ud835\udc51\ud835\udc56\ud835\udc4e\ud835\udc59}\u2062(t)$ and $n_{\ud835\udc61\ud835\udc5f\ud835\udc4e\ud835\udc5b\ud835\udc60}\u2062(t)$ the amount of components of the three identities in a given compartment of total size $n=n_{\ud835\udc50\ud835\udc56\ud835\udc60}+n_{\ud835\udc5a\ud835\udc52\ud835\udc51\ud835\udc56\ud835\udc4e\ud835\udc59}+n_{\ud835\udc61\ud835\udc5f\ud835\udc4e\ud835\udc5b\ud835\udc60}$, and neglecting vesicle budding, the mean-field equations satisfied by these quantities are:\n\n$$\n\\partial_{t}n_{\ud835\udc50\ud835\udc56\ud835\udc60}=n_{v}\\frac{n_{\ud835\udc50\ud835\udc56\ud835\udc60}}{n}-k_{m}n_{\ud835\udc50\ud835\udc56\ud835\udc60}\u2003,\\partial_{t}n_{\ud835\udc5a\ud835\udc52\ud835\udc51\ud835\udc56\ud835\udc4e\ud835\udc59}=n_{v}\\frac{n_{\ud835\udc5a\ud835\udc52\ud835\udc51\ud835\udc56\ud835\udc4e\ud835\udc59}}{n}+k_{m}(n_{\ud835\udc50\ud835\udc56\ud835\udc60}-n_{\ud835\udc5a\ud835\udc52\ud835\udc51\ud835\udc56\ud835\udc4e\ud835\udc59})\u2003,\\partial_{t}n_{\ud835\udc61\ud835\udc5f\ud835\udc4e\ud835\udc5b\ud835\udc60}=n_{v}\\frac{n_{\ud835\udc61\ud835\udc5f\ud835\udc4e\ud835\udc5b\ud835\udc60}}{n}+k_{m}n_{\ud835\udc5a\ud835\udc52\ud835\udc51\ud835\udc56\ud835\udc4e\ud835\udc59}.\n$$\n\nStarting with a vesicle of cis identity for $t=0:\u00a0n_{cis}(0)=1$, $n_{\ud835\udc5a\ud835\udc52\ud835\udc51\ud835\udc56\ud835\udc4e\ud835\udc59}\u2062(0)=n_{\ud835\udc61\ud835\udc5f\ud835\udc4e\ud835\udc5b\ud835\udc60}\u2062(0)=0$, the compartment size evolves linearly with time: $n\u2062(t)=1+n_{v}\u2062t$, and the composition of each species satisfies:\n\n$$\nn_{cis}(t)=(1+n_{v}t)e^{\u2212k_{m}t}n_{medial}(t)=(1+n_{v}t)k_{m}t\u00a0e^{\u2212k_{m}t}n_{trans}(t)=(1+n_{v}t)(1\u2212(1+k_{m}t)e^{\u2212k_{m}t})\n$$\n\nThe fraction of each species in the compartment is thus independent on $n_{v}$, and reads:\n\n$$\n\u03d5_{cis}(t)=e^{\u2212k_{m}t}\u00a0,\u00a0\u03d5_{medial}(t)=k_{m}t\u00a0e^{\u2212k_{m}t}\u00a0,\u00a0\u03d5_{trans}(t)=(1\u2212(1+k_{m}t)e^{\u2212k_{m}t}).\n$$\n\nThese results show that in this regime, a given compartment smoothly evolves from a mostly cis to a mostly trans identity over a typical time $1/K_{m}$. The maximum amount of medial identity is obtain for $k_{m}\u2062t=1$ and is $\u03d5_{medial}=1/e\u22430.37$. Therefore, the mechanism does not lead to pure medial compartments. These analytical results are confirmed by the full numerical solution of the system in the low budding rate regime shown in Appendix\u00a05 and discussed in detail below.\n\n### Steady-state organisation\n\nThe steady-state organisation and dynamics of the system is described in terms of the average size and purity of compartments (introduced here and detailed in the Appendix\u00a02). The stationary size distribution of compartments is a decreasing function of the compartment size, which typically shows a power law decay at small size, with an exponential cut-off at large size (Figure 2A). This is expected for a non-equilibrium steady-state controlled by scission and aggregation (Turner et al., 2005) and means that there exist many small compartments and very few large ones. The typical compartment\u2019s size is defined as the ratio of the second over the first moments of the size distribution. This corresponds to a size close to half the size of the exponential cut-off (see\u00a0Appendix\u00a02) beyond which it is unlikely to find a compartment (Vagne et al., 2015).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47318/elife-47318-fig2-v1.jpg)\n\n**Figure 2.:** (A) Size distribution of compartments for a biochemical conversion rate $k_{m}=1$ and different values of the budding rate $k_{b}$. The red bar shows the characteristic compartment size. (B) Phase diagram of the size of the compartments as the function of $k_{b}$ and $k_{m}$. Black lines: theoretical prediction (Equations 4,6) (C) Phase diagram of the purity of the system as a function of $k_{b}$ and $k_{m}$. Dashed line is $k_{m}=k_{b}$, black lines are a theoretical prediction (see Appendix\u00a03). (D) System snapshots for $k_{m}=1$ showing the mixed regime (square - $k_{b}=10^{-2}$), the sorted regime (triangle - $k_{b}=1$), and the vesicular regime (circle - $k_{b}=10^{2}$) - see text. (E) Average compartment purity as a function of their average size, obtained by varying the budding rate $k_{b}$ for $k_{m}=1$ (black dots: simulation results \u2013 gray line: guide for the eyes). For all panels, $\\alpha_{ER}=\\alpha_{TGN}=1$. See also Appendix\u00a05 for further characterizations of the steady-state organisation, Appendix\u00a07 for the role of composition of the exit compartment, and Appendix\u00a08 for results with alternative budding and fusion kinetics.\n\nThe typical compartment size varies with parameters as shown in Figure 2B. Increasing the ratio of budding to fusion rate $k_{b}$ decreases the compartment size (Turner et al., 2005). The size depends on the biochemical conversion rate $k_{m}$ in a non-monotonic manner: for a given budding rate, the size is smallest for intermediate values of the biochemical conversion rate ($k_{m}\u22431$). The conversion rate controls the composition of the compartment and hence their fusion probability. This dependency is well explained by the simple analytical model discussed above (Equations 3,4) that approximates the system by three pure compartments interacting with a pool of vesicles (solid lines in Figure 2B).\n\nThe purity of a given compartment is defined as the (normalized) Euclidean distance of the composition of the compartment (the fractions $\u03d5_{i}$ in the different i-identities, $i=$\u00a0cis, medial and trans) from a perfectly mixed composition. $P=0,\u00a01/2,\u00a01$\u00a0correspond respectively to compartments that contain the same amount of the three identities, the same amount of two identities, and a single identity (Appendix\u00a02). The purity of the system is the average purity of each compartment weighted by its size, ignoring vesicles. The dependency of the average purity with the parameters is shown in Figure 2C. As for the size of the compartments, it is non-monotonic in the biochemical conversion rate, and regions of lowest purity are found for intermediate biochemical conversion rates $k_{m}\u22431$, when all three identities are in equal amount. The purity increases with the budding rate $k_{b}$ in a sigmoidal fashion (see also Figure 3A). This can be understood by analyzing the processes involved in mixing and sorting of different identities. In a first approximation, mixing occurs by biochemical conversion and sorting occurs by budding of contaminating species, suggesting a transitions from low to high purity when the budding rate reaches the biochemical conversion rate ($k_{b}\u2243k_{m}$). A \u2018purity transition\u2019 is indeed observed in an intermediate range of biochemical conversion rates ($0.1<k_{m}\u00a0<10$, see Figure 2C). It is most pronounced for $k_{m}\u22431$. Beyond this range, the system is dominated by one identity and compartments are always pure. The purity variation can be qualitatively reproduced by an analytical model (Appendix\u00a03) that accounts for the competition between biochemical conversion and budding, but also includes fusion between compartments and with the exits (solid lines in Figure 2C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47318/elife-47318-fig3-v1.jpg)\n\n**Figure 3.:** Directionality of vesicular transport, displayed varying the budding rate $k_{b}$ for a biochemical conversion rate $k_{m}=1$ (equal amount of all species in the system).(A) System purity as a function of the budding rate \u2013 a cut through the purity phase diagram shown Figure 2C. (B) Normalized enrichment in cis (blue), medial (orange) and trans (green) identities between the acceptor and donor compartments during vesicular exchange (solid lines are guides for the eyes). See Appendix\u00a06 for non-normalized fluxes. (C) Sketches showing the direction of the dominant vesicular fluxes \u2013 consistent with data of A and B and data from Appendix 6\u2014figure 1 \u2013 omitting less contributive transports. Before the purity transition (low values of $k_{b}$ - purity ~\u00a00.5) the vesicular flux is retrograde. After the transition (high values of $k_{b}$ - purity ~\u00a01) the vesicular flux is anterograde. Around the crossover ($k_{b}\u223c0.1$), the vesicular flux is centripetal and oriented toward medial-compartments. The centripetal flux disappears if inter-compartments fusion is prohibited, see Appendix\u00a08.\n\nIn summary, three types of organisation can be found, mostly controlled by the ratio of budding over fusion rate $k_{b}$: a mixed regime at low $k_{b}$, where compartments are large and contain a mixture of identities, a vesicular regime at high $k_{b}$, where compartments are made of only a few vesicles and are very pure, and a sorted regime for intermediate values of $k_{b}$, where compartments are both rather large, and rather pure. Snapshots of these three steady-states are shown in Figure 2D. The relationship between average size and average purity of compartments is shown in Figure 2E. The existence of a well-defined intermediate regime with large sorted compartments is promoted by our assumption of \u2018saturated budding\u2019 where the budding flux of any identity only depends on the compartment size (Equation 2). If the budding flux is linear with the number of patches of a given identity, the purity transition occurs for larger values of the budding rate $k_{b}$, where compartments are smaller (see Appendix\u00a08).\n\n### Vesicular transport\n\nVesicular exchange between compartments is quantified by following the dynamics over time of passive cargo injected from the ER. Each cargo in a compartment of size $n$ has a probability $1/n$ to join a vesicle budding from this compartment. When this vesicle fuses with another compartment or a boundary, the composition difference $\u0394\u2062\u03d5_{i}$ between the receiving and emitting compartment (a number between \u22121 and 1) is recorded for the three i-identities ($i=$cis, medial, trans). Averaged over all budding/fusion events, this defines the enrichment vector\u00a0$E\u2192$, whose three components $E_{i}$ are normalized for readability so that $\\sum_{i}|E_{i}|=1$ (see Appendix 6\u2014figure 1 for non-normalized enrichment). Vesicular flux is predominantly anterograde if $E_{cis}<0$ and $E_{trans}>0$, while it is predominantly retrograde if $E_{cis}>0$ and $E_{trans}<0$.\n\nWe focus on systems containing comparable amounts of each species at steady-state ($k_{m}=1$ - see Equation 6). The enrichment in cis, medial and trans-identities are shown in Figure 3B as a function of the budding rate $k_{b}$. The most striking result is the high correlation between purity of the compartment and the directionality of vesicular transport. For low values of the budding rate ($k_{b}\u226a1$), compartments are well mixed (purity $\u22721/2$) and the vesicular flux is retrograde, with a gain in cis-identities and a loss in trans-identities. For high values of the budding rate ($k_{b}\u226b1$), compartments are pure (purity $\u22431$) and the vesicular flux is anterograde, with a gain in trans-identities and a loss in cis-identities. The archetypal behaviors most often discussed in the literature are thus, within the limits of our model, asymptotic regimes for extreme values of the ratio of budding to fusion rates. Remarkably, the cross over between these two asymptotic behaviors is rather broad ($k_{b}\u223c0.1-1$) and displays a more complex vesicular transport dynamics, mostly oriented toward medial compartments.\n\nIn our model organelle, vesicle budding and fusion are biased solely by local compositions, which is subjected to irreversible biochemical conversions. The interplay between these microscopic processes gives rise to an irreversible flux of vesicles across the system. To better understand the directionality of vesicular exchanges, the net vesicular flux leaving compartments with a given composition is represented as a vector field in the compartments composition space in Figure 4. This is shown as a triangle plots in which each point corresponds to a fraction of cis, medial and trans components in a compartment, and the three vertices of the triangle correspond to pure compartments (see Appendix\u00a02). The variation of the vesicular flux with the budding rate $k_{b}$ (Figure 4) is consistent with that of the composition enrichment in the different identities (Figure 3B). As $k_{b}$ increases, the flux evolves from being mostly retrograde at low $k_{b}$ (from trans-rich toward less mature compartments) to being anterograde at high $k_{b}$ (from cis to medial, and medial to trans-compartments). In between, the vesicular flux is centripetal toward mixed compartments, leading to a net enrichment in medial-identity. The relationship between structure and transport is explained below, and a dissection of this fluxes with respect to the composition of the vesicles is shown in Appendix\u00a06. The net flux leaving a particular region of the triangular phase space is proportional to the total system\u2019s size (number of compartments times their size) with this composition, while the flux arriving at a particular region depends on the number of compartments with that composition. Both quantities are shown on Figure 4.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47318/elife-47318-fig4-v1.jpg)\n\n**Figure 4.:** Distribution of the total size of the system (truncated scale, maximum value in brackets) and number of compartments, and the vesicular flux between them, shown in a triangular composition space. Each point represents a given composition of compartments and the triangle vertices are compartments of pure cis, medial and trans identity. Arrows show the vesicular flux. The base of each arrow is the composition of the donor compartment and the tip is the average composition of receiving compartments (ignoring back fusion). The opacity of the arrows is proportional to the flux of transported cargo going through this path per unit time ($1/K_{f}$), normalized by the total number of cargo-proteins. The dashed line on the top-left triangle is the theoretical prediction given by Equation 9. See also Appendix\u00a06 for further characterizations of the vesicular transport, and Appendix\u00a08 to discuss the impact of other budding and fusion implementations on the vesicular fluxes.\n\nAt low budding rate ($k_{b}\u226a1$ - top row in Figure 4), the system is in the mixed regime, where compartments are large (hundreds of vesicles in size) but mixed (purity $\u22721/2$). The system is dominated by compartment maturation, and the compartment distribution is spread around a path going from purely cis to purely trans-compartments, consistent with a dynamics where each compartment maturates independently from the other and given by Equation 9. - see top left panel of Figure 4. The majority of the transport vesicles are emitted by trans-rich compartments, which concentrate most of the components of the system, leading to a retrograde vesicular flux. Note that although vesicular flux is clearly retrograde in the maturation-dominated regime, as seen from the increase in cis identity and the decrease in trans identity between emitting and receiving compartment (Figure 3B), there is no net flux of vesicles from medial-rich to cis compartments in this limit (Figure 4). This differs from the classical \u2018cisternal progression and maturation\u2019 mechanism sketched in Figure 1A, and is due to the fact that the compartments that contain the highest fraction of medial identity in this regime are well mixed ($\u03d5_{c\u2062i\u2062s}\u2243\u03d5_{m\u2062e\u2062d\u2062i\u2062a\u2062l}\u2243\u03d5_{t\u2062r\u2062a\u2062n\u2062s}\u22431/3$). The vesicular flux leaving such compartments is equally split into cis, medial and trans vesicles, which fuse homotypically with compartments enriched in their identity, yielding a vanishing net flux averaged over the three identities. There is nevertheless a strong retrograde flux of cis vesicles toward cis compartments, as shown in Appendix 6\u2014figure 1. In the classical \u2018cisternal maturation\u2019 mechanism, retrograde transport is needed to recycle cis-Golgi components from more mature compartments. Within the present model, this can be achieved by targeting such components to $c\u2062i\u2062s$ vesicles budding from more mature compartments.\n\nAt high budding rate ($k_{b}\u226b1$ - bottom row in Figure 4), the system is in the vesicular regime, where compartments are fairly pure, but rather small, with a size equivalent to a few vesicles. Compartments are exclusively distributed along the cis/medial and medial/trans-axes of composition, and accumulate at the vertices of the triangle. Membrane patches that just underwent conversion bud quickly from the donor compartment and fuse with pure compartments with the appropriate medial or trans-identity, explaining the clear anterograde vesicular transport. This feature is further reinforced under very high budding rate, where the vesicular flux is dominated by budding vesicles undergoing biochemical conversion before fusion, which prohibits their back fusion with the donor compartment.\n\nIn the intermediate regime (middle row in Figure 4), the distribution of mixed compartments is more homogeneous along the line describing the maturation of individual compartments - both in terms of size and number of compartments. Cis-rich and trans-rich compartments emit comparable amount of transport vesicles, while large medial-rich compartments are absent. This leads to a centripetal vesicular flux with an enrichment in medial identity (see Figure 3B). The lack of large medial-rich compartment is due to the fact that they can be contaminated by either cis or trans-species and fuse with cis-rich or trans-rich compartments. If inter-compartment fusion is prohibited, the enrichment in medial-identity in the intermediate regime is abolished, with a direct transition from anterograde to retrograde vesicular transport upon increasing $k_{b}$ (see Appendix\u00a08 and the Discussion section).\n\nA graphical sketch consistent with our numerical observations for the typical size and composition of different compartments and for the dominant vesicular fluxes between them in the different regimes is shown in Figure 3C.\n\n## Discussion\n\nThe genesis and maintenance of complex membrane-bound organelles such as the Golgi apparatus rely on self-organisation principles that are yet to be fully understood. Here we present a minimal model in which steady-state Golgi-like structures spontaneously emerge from the interplay between three basic mechanisms: the biochemical conversion of membrane components, the composition-dependent vesicular budding, and inter-compartment fusion. As our model does not include space, we do not refer to the spatial structure of a stacked Golgi, but rather to the self-organisation of Golgi components into compartments of distinct identities undergoing vesicular exchange. We show that directional vesicular exchanges between compartments of different identities spontaneously emerge from local biochemical interactions, despite the absence of spatial information. This is in line with recent observations that the Golgi functionality is preserved under major perturbation of its spatial structure resulting from land-locking Golgi cisternae to mitochondria (Dunlop et al., 2017). Indeed, cargo transport still proceed, and is merely slowed down by a factor of two (from 20 min to 40 min) in land-locked Golgi despite the absence of spatial proximity between cisternae. This suggests that spatial information is less crucial to the Golgi function than biochemical information. Our main result is that the steady-state organisation of the organelle, in terms of size and composition of its compartments, is intimately linked to the directionality of vesicular exchange between compartments through the mechanism of homotypic fusion. Both aspects are controlled by a kinetic competition between vesicular exchange and biochemical conversion.\n\nThe results presented in Figure 2 can be used to explain a number of experimental observations. The predicted role of the budding and fusion rates is in agreement with the phenotype observed upon deletion of Arf1 (a protein involved in vesicle budding), which decreases the number of compartments and increases their size, particularly that of trans-compartments which seem to aggregate into one major cisterna (Bhave et al., 2014). A comparable phenotype has been observed upon mutation of NSF (a fusion protein), which produces extremely large, but transient, trans-compartments (Tanabashi et al., 2018), thereby increasing the stochasticity of the system. This is consistent with an increase of the fusion rate according to our model (see Appendix\u00a05 for a quantification of the fluctuations in our model). Modifying the expression of VPS74 (yeast homolog of GOLPH3) leads to an altered Golgi organisation, comparable to the ARF1 deletion phenotype (Iyer et al., 2018). Both $\u0394$arf1 and $\u0394$vps74 present an enlargement of the Golgi cisternae and a disruption of molecular gradients in the system, which we interpret, in the limits of our system, as a lower purity due to slower sorting kinetics following an impairment of the budding dynamics. Importantly, the correlation between the size and purity of the compartments predicted by our model is in agreement with the observation that decreasing the budding rate by altering the activity of COPI (a budding protein) leads to larger and less sorted compartments (Papanikou et al., 2015). In yeast again, over-expression of Ypt1 (a Rab protein) increases the transition rate from early to transitional Golgi, and increases the co-localization of early and late Golgi markers (Kim et al., 2016). We interpret this as a decrease of the purity of Golgi cisternae upon increasing the biochemical conversion rate by unbalancing the ratio of budding to conversion rates. This suggests that the wild-type Yeast Golgi is closed to the line $k_{m}=k_{b}$ shown in Figure 2.\n\nOne crucial model prediction is that the size and purity of Golgi compartments should be affected in a correlated fashion by physiological perturbations. This could be tested experimentally by further exploring the phase diagrams of Figure 2B\u2013C by simultaneously varying the ratios of biochemical conversion over fusion rate $k_{m}$ and of budding over fusion rate $k_{b}$. Compartment purity can be altered without changing their size by acting on $k_{m}$, while it should be correlated with a change of size by acting on $k_{b}$. We thus predict that the purity decrease concomitant with the size increase observed in Papanikou et al., 2015 upon impairing COP-I activity (decreasing $k_{b}$) could be reversed without a change of cisterna size upon decreasing the biochemical conversion rate $k_{m}$, for\u00a0example by impairing Ypt1 activity (as done in Kim et al., 2016). Along the same line, we predict that the decrease of purity observed by Kim et al., 2016 upon Ypt1 over-expression (which increases the early to transitional conversion rate) should not be associated to change of cisternae size (at steady-state) if altering Ypt1 does not modify the budding rate $k_{b}$. We can predict further that the loss of purity phenotype could be reversed upon increasing the budding rate by over-expressing COP-I, but that this would be accompanied by an decrease of cisternae size. This experimental proposal is represented graphically on the size and purity phase diagrams in Appendix 9\u2014figure 1, with somewhat arbitrary arrows, to give a feel for the way our model may be used to design experimental strategies.\n\nThe directionality of vesicular transport is intimately linked to the steady-state organisation of the organelle; vesicular transport is anterograde when compartments are pure, and it is retrograde when they are mixed. This can be intuitively understood with the notion of \u2018contaminating species\u2019. If a compartment enriched in a particular molecular identity emits a vesicle of that identity, the vesicle will likely fuse back with the emitting compartment by homotypic fusion, yielding no vesicular exchange. One the other hand, an emitted vesicle that contains a minority (contaminating) identity will homotypically fuse with another compartment. If budding is faster than biochemical conversion, the contaminating species is the one that just underwent conversion, and its budding and fusion with more mature compartment leads to an anterograde transport. In such systems, compartments are rather small and pure. If biochemical conversion is faster than budding, the contaminating species is the less mature one, leading to a retrograde transport. Such systems are rather mixed with large compartments. Thus, the directionality of vesicular exchange is an emergent property intimately linked to the purity of the compartments. The medial-rich compartments are special in that regard: for intermediate values of the purity ($k_{b}\u223ck_{m}$), they may be contaminated both by yet to be matured cis-species and already matured trans-species and can fuse both with cis-rich and trans-rich compartments. If inter-compartment fusion is allowed, large medial-rich compartments are relatively scarce, and emit few vesicles. On the other hand, medial-vesicles emitted by cis/medial and medial/trans-compartments may fuse together to form (small) medial-rich compartments. For intermediate values of the budding rates, this vesicular flux dominates vesicular exchange and leads to a centripetal vesicular flux towards medial-compartments (details in Appendix\u00a06). If inter-compartment fusion is prohibited, which for instance corresponds to a situation where Golgi cisternae are immobilized (Dunlop et al., 2017), medial-rich compartments are present at steady-state, the centripetal vesicular flux is less intense, and the purity transition is accompanied with a direct transition from retrograde to anterograde vesicular flux (Appendix\u00a08). Note that vesicular transport of cargo through the Golgi is not bound to follow the net vesicular flux between compartments discussed above. Indeed, the net flux is the average of the flux of vesicles of the three identities. A given cargo follows this flux - on average - if it does not interact preferentially with membrane of particular identity. On the other hand, a cargo that is preferentially packaged into vesicles of trans identity (for example) will be transported toward trans-rich compartment even if the net vesicular flux is mostly retrograde.\n\nRegardless of the details of the model, we find that systems showing a well defined polarity with well sorted cisternae exhibit anterograde vesicular fluxes, whereas systems with mixed compartments exhibit retrograde fluxes. The former dynamics is expected when biochemical conversion is the slowest kinetic process and compartments are long-lived, while the latter is expected when vesicular exchange is slow and the system is composed of transient compartments undergoing individual maturation. One can relate this prediction to the difference in organisation and dynamics between the Golgi of S. cerevisiae and the more organized Golgi of higher organisms such as vertebrates. Maturation of Golgi cisternae has been directly observed in S. cerevisiae (Losev et al., 2006), with colocalization of different identity markers within single cisternae (low purity) during maturation, whereas vesicular transport phenotypes have been indirectly observed (Dunlop et al., 2017) or inferred through modeling (Dmitrieff et al., 2013) in mammalian cells. Consistent with our predictions, Golgi dynamics is one to two orders of magnitude faster in S. cerevisiae Golgi cisternae (as measured by the typical maturation rate of cisternae $\u223c1/min.$\u00a0[Losev et al., 2006; Matsuura-Tokita et al., 2006]) than in mammalian cells (as measured by the typical Golgi exit rate of cargo $\u223c1/20\u2062min.$ to $\u223c1/40\u2062min.$\u00a0Bonfanti et al., 1998; Hirschberg et al., 1998; Patterson et al., 2008; Boncompain et al., 2012]). At this point, one may speculate a link between structure and function through kinetics. A well sorted and polarized Golgi is presumably required to accurately process complex cargo. The glycosylation of secreted cargo is key to the interaction of a vertebrate cell with the immune system of the organism it belongs to Ryan and Cobb, 2012, and glycans appear to be more diverse in higher eukaryotes - which also possess a highly organized Golgi - than in unicellular eukaryotes like yeast (Wang et al., 2017). The Golgi organisation in S. cerevisiae could thus be the result of an adaptation that has favored fast transport over robustness of processing, leading to a less organized Golgi characterized by cisternal maturation and retrograde vesicular transport. Remarkably, the slowing down of Golgi transport when S. cerevisiae is starved in a glucose-free environment coincides with the Golgi becoming more polarized (Levi et al., 2010), strengthening the proposal derived from our model of a strong connection between transport kinetics and steady-state Golgi structure.\n\nThe present model is designed to account for crucial dynamical processes at play in the Golgi with a limited number of parameters. It is sufficient to yield robust self-organised structures which can reproduce a number of experimental observations, but cannot be expected to account for the full richness of Golgi dynamics, especially under severe perturbation. The model includes a single kind of exchange mechanism based on vesicles. Exchange could also proceed via the pinching and fusion of larger cisterna fragments (Pfeffer, 2010; Dmitrieff et al., 2013), or via tubular connection between compartments (Trucco et al., 2004), although the relevance of the latter to Golgi transport is still debated (Glick and Luini, 2011). Exchange mechanisms that do not establish stable connections able to relax concentration gradient between compartments by diffusion could be included as extension of our vesicle exchange mechanism (at the expense of introducing additional parameters to characterise their composition and size-dependent nucleation, scission and fusion rates). Stable Golgi tubulation without tubule detachment is observed under brefeldin A treatment, which prevent the membrane association of COPI coat. This eventually leads to the disappearance of the Golgi by quick resorption into the ER whenever a tubular connection is established between them, in a way suggesting a purely physical (tension-driven) mechanism (Sciaky et al., 1997). According to our model, preventing COPI vesicle budding should lead to larger cisternae, as discussed above. The brefeldin A phenotype can be reconciled with our framework by invoking the fact that larger cisternae should have a higher surface to volume ratio and hence a lower membrane tension, decreasing the force required to nucleate membrane tubules and increasing the probability of direct tubular connection with the ER. Such tension effects are clearly beyond the scope of the present model, but this phenotype could be qualitatively reproduced by invoking an increase of the ER fusion parameter $\\alpha_{ER}$ with the size of the compartment due to membrane mechanics considerations.\n\nThe model does not account for the possibility of lateral partitioning between processing and exporting domains within compartments which could play an important role in regulating cisterna composition and cargo processing (Patterson et al., 2008). A detailed kinetic model of organisation based on this concept and supported by extensive quantitative live cell imaging experiments is proposed in Patterson et al., 2008 to account for the distinct composition of the different Golgi cisterna and the kinetics of cargo transport. This rapid partitioning model (RPM) is very different in scope with the model we propose here, since it focuses on the transport of lipids and cargo molecules in a pre-established Golgi apparatus with a prescribed structure, while the present model describes de-novo Golgi formation and maintenance, through self-organised fusion and scission mechanisms between dynamic compartments. The two models share important similarities, such as the fact that no directionality is assumed a priori for intra-cisternal vesicular transport, and that export is allowed from every cisterna, which is crucial to reproduce the exponential kinetics observed in experiments. The RPM is much more precise in terms of the microscopic description of the biochemical processes, and consequently involves many parameters. Combining our simple model of Golgi self-organisation with the detailed description given by the RPM for the kinetics of lipid, enzymes and cargo within the Golgi is the logical next step to push forward our understanding of Golgi self-organisation.\n\nIn summary, we have analyzed a model of self-organisation and transport in cellular organelles based on a limited number of kinetic steps allowing for the generation and biochemical conversion of compartments, and vesicular exchange between them. Although we kept the complexity of individual steps to a minimum, our model gives rise to a rich diversity of phenotypes depending on the parameter values, and reproduces the effect of a number of specific protein mutations. We identify the concomitance of a structural transition (from large and mixed to small and pure sub-compartments) and a dynamical transition (from retrograde to anterograde vesicular exchange). Within our model, anterograde vesicular transport is accompanied by many spurious events of vesicle back-fusion. For very high budding rates, compartments are very pure and anterograde transport is dominated by vesicles undergoing biochemical conversion after budding from a compartment. In our model, such vesicle biochemical conversion events, which have been described in the secretory pathway as a way to direct vesicular traffic and to prevent vesicles back-fusion (Lord et al., 2011), only occur when compartments are very small (high budding rate). Adding composition-dependent feedback involving specific molecular actors to tune budding and fusion rates - for instance to reduce or prevent the budding of the majority species - will displace the purity transition to lower budding rates and thus extend the regime of anterograde transport to larger sub-compartment steady-state sizes. Cisternal stabilizers like GRASP or vesicles careers like Golgins, known to already be present in the ancestor of eukaryotes (Barlow et al., 2018), are obvious candidates. Although more complex models, and in particular the inclusion of spatial dependencies, are surely relevant to dynamics of the organelle, the fundamental relationship between kinetics, structure and transport highlighted by our model is a universal feature of the interplay between biochemical conversion and vesicular exchange in cellular organelles.\n",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e1797548-6c19-4519-b2e1-9d6be2fecf58",
+      "submission_id": "aafde379-882e-40fa-9f4f-f73a5167b870",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.47318.sa1](https://doi.org/10.7554/eLife.47318.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nVagne et al. study a minimal model for the self-organisation of the Golgi, showing how the traditional models of \"vesicular transport\" and \"cisternal maturation\" arise as limiting cases of rich dynamical behaviour in a model of vesicle budding, maturation, fusion that leads to self-organised Golgi structure and cargo transport.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"A minimal self-organization model of the golgi apparatus\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Jane Kondev (Reviewer #3).\n\nYou will see that the reviewers had differing views on the paper, with two highly critical and one supportive. Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe consensus among the reviewers is that there is no doubt in the potential utility of the kind of minimal model that you have developed, but there were serious questions about the connection between that model and existing data, about the presentation of the model itself, and the structure of the paper.\n\nReviewer #1:\n\nThe Sens group has been developing mathematical models of the Golgi apparatus since 2011 and this paper represents a continuation of this effort. Here, theoretical roles of vesicle budding, maturation and self-organization are used to describe the Golgi's various activities. While the mathematical computations and simulations are not in question, the paper provides no experiments on the Golgi to support or verify the proposed model, and the study fails to incorporate significant features of the Golgi (including the Golgi's unique lipid composition, its tubular-vesicular character, and its ability to form de novo from ER). The paper reads as an exercise for modeling a minimal, self-organizing system that, while attempting to capture some features of organelles (i.e., fusion, budding and maturation), is far removed from the actual complex system comprising the Golgi apparatus. Because the proposed model does not significantly further our understanding of the Golgi apparatus, I cannot support its publication in eLife. Among the concerns of this study is that the model is built on faulty or unproven assumptions regarding the Golgi apparatus (some of these are listed below). It is also worrisome that several papers providing quantitative experimental data detailing Golgi dynamics are never cited, perhaps because these data cannot easily be explained by their model.\n\n1) In their Introduction, the authors state that proteins passing through the Golgi interact with Golgi enzymes in a pre-determined order dictated by the position of the enzyme in the Golgi stack (i.e., cis first and trans last). There is no evidence for this in the literature. Indeed, Farquhar et al., showed many years ago that some trans-acting enzymes are, in fact, in the cis-most cisternae. We also know that carbohydrate processing by Golgi enzymes occurs in a sequential manner whether or not the enzymes are in the ER (i.e., in BFA-treated cells) or Golgi. In both cases, it's substrate availability that dictates the processing events.\n\n2) The authors claim in their Introduction that there are only two major classes of models for explaining the Golgi's activities (i.e., the vesicle transport and maturation models). However, a third model involving tubular continuities and lipid partitioning has also been proposed by the groups of Luini and Lippincott-Schwartz. This third model can account for key experimentally observed features of the Golgi that neither the vesicle transport or maturation models explain. These features include: the finding that secretory cargo rapidly mixes throughout the Golgi stack upon arrival; that different types of cargo exhibit different export kinetics from the Golgi; and that cargo export from the Golgi follows mass action laws. Sens' model cannot account for any these observed features of the Golgi.\n\n3) The authors claim that each membrane patch in their model undergoes maturation from a cis to medial to trans identity. This may have some type of support in yeast (in which membrane patches budding out from the ER clearly \u201cmature\u201d by exchanging cytosolic components over time), but it has no support in mammalian Golgi systems. There, cargo transport through the Golgi stack has never been visualized due to the extremely compact nature of the stack, whose individual cisterna are separated by <20 nm, well below the diffraction limit of imaging.\n\n4) The authors' model predicts that there will be more cis/medial components associated with Golgi structures having low maturation rates, and more trans components for Golgi with high maturation rates. There is no evidence in the literature supporting this prediction. If anything, when one lowers the temperature to slow movement through the Golgi (which in the Sens' model would slow maturation), molecules tend to accumulate at the trans face of the Golgi, the opposite of their prediction.\n\n5) The authors state that cargo flux through the Golgi in yeast is two orders of magnitude faster than in mammalian Golgi. This is unlikely. Bonfanti's paper examining flux of VSVG through the Golgi by EM, which they cite as supporting evidence, is inappropriate for this calculation at many levels- from using repeated temperature shifts to counting a few immuno-gold particles per Golgi (a super crude quantification) to having to compare different fixed cells at different time points. The authors ignore the quantitative live cell imaging data of Golgi export of VSVG-GFP provided by Hirschberg et al., 1998, which measured VSVG export out of the Golgi in real time, with thousands of data points per cell. There, VSVG was shown to be transported out the Golgi at an enormous rate (~7,000 molecules leaving the Golgi per sec) at peak flux after release from the ER. Importantly, the Hirschberg paper also revealed that the amount of VSVG cargo leaving the Golgi is directly correlated with the amount of cargo in the Golgi, with a single rate constant characterizing VSVG efflux kinetics. Sens' paper does not integrate any of these findings into their analysis.\n\n6) The few predictions made by the author's model are not supported by findings in the literature. For example, the authors' state that their model predicts that deletion of Arf1 will decrease the number of Golgi compartments and increase their size. Experimentally, this has already been tested with brefeldin A (which inactivates Arf1) or with Arf1 mutants. Contrary to the Sens' model prediction, when Arf1 is inactivated in cells, the Golgi disappears, being resorbed quickly into the ER with no increase in any Golgi subcompartment. This occurs through retrograde transport back to the ER, a pathway not incorporated into the Sens' model.\n\nI appreciate the efforts made by the Sens group in using modeling to describe self-organizing systems, but their attempt to describe the Golgi apparatus with this approach is missing key aspects of Golgi organization and dynamics. This has resulted in predictions by the model that are counter to experimental data.\n\nReviewer #2:\n\nPoorly written, hard to understand.\n\nI was excited to read this paper since the work of one of the authors is known to me and I expected an understandable and well-crafted paper. I was rather crestfallen to find a poorly written paper, and one where I could not figure out what the authors were actually doing.\n\nOne major concern is that this paper is not at all easy to read. It is either i) not self-contained, or ii) sloppily put together. The authors refer to a \"steady state\" but do not at any time show that such a state exists, as far as I can see. There is no plot with the time evolution of any quantities being measured. In fact, they admit that there is no steady state, since the size of the system is not constant. They state that \"the maximum number of time-steps is typically set to 106 or 107 in order to reach steady state and accumulate enough statistics on all the measured quantities\", but that in and of itself is meaningless if one doesn't correctly specify the conditions underlying the measurement.\n\nThe paper as a whole is an odd combination of being verbose AND telegraphic at the same time. Echoing my above comment, I do not feel that I am getting enough information, enough detail, despite the verbosity. An example: it takes a long time to get to the point of how heterogeneous compartments can form; they say \"this homotypic fusion mechanism (relying on local interactions) allows vesicular transport between compartments of different identities \u2013 a process that may be regarded as heterotypic fusion. It merely requires that the receiving compartment contains some membrane patches of identity similar to that of the emitted vesicle\". Why not just give the rule, rather than the metaphysical description? It would take up less space!\n\nDoes seemingly everything have to be in the Appendix? One can understand page limits, but this is ridiculous. More explanation of the model in the main text would have been very welcome, because in its present form, the paper is extremely difficult to understand.\n\nThe question of system size should appear in the main text. As mentioned above, they cannot really keep it constant, so they just adjust the injection rate so it is more or less constant when they change K. They say that they aim for N ~ 300, but the actual system size (sometimes called size, sometimes mass) in the \"steady state\" changes significantly with K (see Appendix 1\u2014figure 1B and Appendix 4). Moreover, the fluctuations are very large (since no time evolution plot is ever shown, one suspects that they are not really fluctuations\u2026). Of course, the results would be highly dependent on system size, and one gets no justification for their choice of N ~ 300 until the Appendix.\n\nThe plots that are shown in the paper are not very useful. They rather tend to obfuscate. Figure 2A intends to show a power law for the size of the compartments with an exponential cutoff, but by plotting a bar diagram (even though it is a log-log scale), it is very difficult to see how well this works. They should plot actual points and a fit, or a parallel line showing an actual power law. In a similar vein, they overuse density plots that are not really quantitative (even in the Appendices). In Figure 2BC, they could at the very least plot some contour lines (perhaps dotted) for the same values that are plotted with a continuous line for the analytical approximation \u2013 from the colour map, it is difficult to judge.\n\nNomenclature:\n\nIt is confusing to keep track for reasons that are fully avoidable. For instance, their parameters are (Ki,Kf,Kb,Km): the rates of injection, fusion, budding and maturation. All of them are normalised by Kf, which sets the time unit. But then they define km = Km/Kf and, instead of maintaining the use of lowercase k for the others, they then define K=Kb/Kf, J=Ki/Kf. As if the other problems with the paper weren't enough, now the reader has to remember what each means.\n\nMain result is obfuscated:\n\nThe main result, in my opinion, is the existence of an intermediate \"sorted\" regime. It would be trivial to have a regime with a large mixed compartment or with small pure ones. The potentially interesting aspect of the model is that it can create pure compartments of at least intermediate size, if the parameters are chosen correctly. This is highly dependent on the way budding is modeled -- only explained in the Appendix, in an unclear way. In short, the budding flux for species i is defined as\n\nJb,i = Kb \\times n \\times f(\\phii)\n\nwhere n is the size of the compartment and phii the proportion of vesicles of type i (phii = ni /n). This is already confusing nomenclature, since they use Jb for this flux, when J is also the normalised injection rate. They then say that if the budding rate for species i depends linearly on its concentration, so\n\nJb,i = Kb n \\phii = Kn ni\n\nthen you cannot get the intermediate regime. For that you need what they call \"non-linear budding\". In their words: \"In order to reproduce this feature we choose a highly non-linear budding scheme f(phispecies) = 1 if phispecies > 0 and f(phispecies) = 0 otherwise\". First of all, they are now using phispecies for what was before phii.\n\nI can only imagine what biological readers might make of this labeled \"highly non-linear scheme\". It is, after all, just a constant!\n\nphii cannot be negative and if phii = 0, then there are no vesicles to bud. So the budding rate is just a constant, independent of everything and the same for all species in the same compartment.\n\nProblematic statistical analysis:\n\nThe statistical analysis is problematic. First of all, because we don't know whether there is a steady state, can one even define averages? But even if there is a steady state, there are things like the figure in Appendix 4. There, they measure the \"temporal standard deviation\" of the mass and purity. How are they defining this standard deviation, when the individual measurements come from a correlated time series and are, therefore, not independent? Note that there is a very large dependence with K, which could be trivial for this reason (as the correlation time would obviously depend on K).\n\nConclusion:\n\nI cannot recommend publication of the paper \u2013 it is too flawed at present \u2013 and importantly, it is not possible to evaluate whether the research presented is even correct. A revised version, should the editors wish to solicit one, at the very least, must show some evidence of a steady state and explain how averages are calculated. The authors should pay special attention and care to make the paper more readable. Much more readable. In particular, the model (the actual model) could be fit in the text and justification/discussion of terms could be left for the Appendix.\n\nReviewer #3:\n\nThis paper explores a simple model for the dynamics of vesicles as they progress through the Golgi apparatus and shows that a number of observed phenomena can be understood based on a small number of biologically, and physically, well-motivated assumptions.\n\nI thoroughly enjoyed reading this paper, even though I am not an expert on the Golgi. I think it's a great example of theory at its best, applied to an interesting biological problem. The authors start with some simple observations that have been reported in the literature, which they turn them into a mathematical model that upon analysis yields some interesting and experimentally testable predictions. I am optimistic that their results will lead to some new experiments.\n\nThe key result of the paper is the connection between the directionality of the vesicular transport and the chemical composition of the Golgi compartments, for which there seems to be experimental evidence. The connection is established within a very simple model whose assumptions seem reasonable. The paper also describes the emergence of a number of structural and dynamical properties of the Golgi, from the same small set of assumptions. A particularly interesting feature of the model is how different structures and dynamics can be accommodated within the model by changing one or more parameters (of which there are only four). For example, the model predicts that there is an inverse relationship between the speed of vesicle transport and fidelity of processing, which is consistent with published comparisons between the structure of Golgi in normal and starved yeast.\n\nThe paper is very clearly written, and there were only a few places where I was not quite sure about what the authors had in mind.\n\n1) When describing the Budding mechanism, there is reference to a non-linear budding scheme that depends on the compartment size and contamination state. These are described in detail later, but I would recommend that the authors say a few words here to give the reader an intuitive sense of the thing without having to skip ahead.\n\n2) In describing maturation, the chemical transformations are described as going only one way. How is this justified? Is it known that the reverse reactions are very slow? Also, is the maturation rate independent of the composition of the compartment and if so, what is the justification for that?\n\n3) A typical compartment size is defined as the ratio of the second and the first moment of the size distribution. I was struck by the fact that this would give a \"typical size\" even for an exponential distribution of sizes, which I would not say defines a typical size (at least not from the point of view that the mean and standard deviation of such a distribution are equal). Might be worth a short comment on why this is a good definition of \"typical size\".\n\n4) In the \"Steady-state organization\" section there is reference to a cut-off size, which I don't think was defined.\n\n5) In the Discussion there is a conclusion that the spatial information is less crucial than biochemical composition for the organization of the Golgi. I am not sure this is warranted since a comparison between the two cannot be made in a model lacking spatial information.\n\nIn general I was left wondering whether simple testable quantitative predictions can be made from the model. I very much liked the qualitative observations that the model neatly explains, but I would be even more excited if there was a prospect for putting it to a much more stringent test provided by quantitative experiments, which the authors might propose for an intrepid experimentalist to do.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"A minimal self-organization model of the golgi apparatus\" for consideration by eLife. Your revised article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Suzanne Pfeffer as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nFollowing your submission of a revised manuscript we sought the opinion of the original reviewers and, more recently, that of an additional reviewer (a theorist chosen specifically to be outside the field of Golgi research). As you can appreciate, purely theoretical papers in eLife need to be accessible to the biological readership of the journal and, if on the abstract side, may require extra effort to be suitable for publication. Such is the case here. As detailed below, we fully appreciate the significance of your major conclusions regarding the emergence of two distinct models from a singe underlying dynamics. At the same time, the reviewers request changes in the structure of the paper to improve readability, and that you address some key questions about the role of the actual structure of the Golgi.\n\nSummary:\n\nVagne et al. study a minimal model for the self-organisation of the Golgi, showing how the traditional models of \"vesicular transport\" and \"cisternal maturation\" arise as limiting cases of rich dynamical behaviour in a model of vesicle budding, maturation, fusion that leads to self-organised Golgi structure and cargo transport.\n\nRevisions:\n\n1) Regarding prior work, the reviewers note that as the work of Patterson et al., 2008, provided a detailed quantitative model of the Golgi using one set of parameters, and furthermore assessed and tested those parameters by doing extensive quantitative live cell imaging experiments, it would be appropriate to seek a comparison between your model (with its dimensionless parameters) and those results. This would likely enlarge the scope of potential predictions for direct experimental tests. Workers in the Golgi field would benefit from some suggested experiments expected to skew the pathway in one direction or another, with predicted outcomes on the size of the compartment or the speed of traversal etc. For example, the cisternal progression model predicted that larger cargo export rates would be more sensitive to nocodazole dissolution of microtubules and resulting creation of ministacks, a prediction that turned out to be correct: PMID 25103235.\n\n2) To help the general reader understand the context of this work better, we would like to see an introductory figure illustrating the structure of the Golgi (and perhaps some of the models for transport in the Golgi).\n\n3) The reviewers suggest that putting more of the model equations in the main text would streamline the argument; one way of making things more understandable might be to start by writing down simple mean-field equations (as in the early parts of Appendix 3), before delving into the analysis of the detailed model. The back-and-forth between the main text and the appendices makes for difficult reading.\n\n4) An important concern is that the model shows how Golgi structure and vesicular transport can arise in a self-organised fashion, but it remains unclear to what extent the authors can claim that vesicular transport in actual Golgi is dominated by this transport arising from self-organisation. When reading the paper, we wondered about the contribution of spatial structure or biochemical processes (that might bias which vesicles cargo goes into, or which compartments a vesicle fuses into). It was only pages later, in the Discussion, that one finds a paragraph on the role of spatial structure: even if experiments show that \"Golgi functionality is preserved under major perturbation of its spatial structure\", how is transport affected? From a quick look at the reference (Dunlop et al., 2017), it seems that transport can be slowed down massively, hinting that spatial structure is just as important as self-organisation. Are there similar experimental results on biochemical effects?\n\n5) One of the main results in the paper is the existence of different regimes of self-organisation, and in particular the existence of an intermediate, sorted regime with large pure compartments. However, the definition of these regimes remains rather qualitative. Perhaps some plots of mean compartment size against mean purity, to complement Figure 2, would put this part of the analysis on a clearer footing.\n\n6) The model shows very clear anterograde transport of cargo in the limit kb>>1, but the retrograde transport in the limit kb<<1 is less clear; in particular, the model appears to show transport from the trans to well-mixed compartments, but not into the cis compartments: rather, there is weak flow from the cis compartments to well-mixed ones, i.e. anterograde flow in part of the system. Is it possible to show that flow cannot be purely retrograde? \u2013 This might be an important constraint on the \"cisternal maturation\" mechanism. (Perhaps part of this issue is addressed in Appendix 6.)\n",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fdf41108-1d68-4bb0-8215-4937d3b20ee2",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C1",
+      "claim": "The Golgi apparatus was discovered 120 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this organelle was discovered 120 years ago, such basic questions as whether vesicular transport through the Golgi occurs in an anterograde (from entry to exit) or retrograde fashion are still strongly debated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact stated in the introduction to contextualize the long-standing nature of questions about Golgi function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "c94b74f3-a208-4a91-a7bf-c4f170f41dad",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C2",
+      "claim": "Whether vesicular transport through the Golgi occurs in an anterograde or retrograde fashion is still strongly debated.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this organelle was discovered 120 years ago, such basic questions as whether vesicular transport through the Golgi occurs in an anterograde (from entry to exit) or retrograde fashion are still strongly debated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of scientific debate in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "8a6c9197-86b6-4d53-ab00-3255bb97d809",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C3",
+      "claim": "Anterograde or retrograde vesicular transports are asymptotic behaviors of a much richer dynamical system.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that anterograde or retrograde vesicular transports are asymptotic behaviors of a much richer dynamical system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e85b7bd6-02df-48e4-96ef-961a7830bc40",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C4",
+      "claim": "The structure and composition of cellular compartments and the directionality of vesicular exchange are intimately linked.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the structure and composition of cellular compartments and the directionality of vesicular exchange are intimately linked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion derived from the model's results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "0124e789-bbbf-4e6b-a35d-ca47831a6e70",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C5",
+      "claim": "The structure and composition of cellular compartments and the directionality of vesicular exchange are emergent properties that can be tuned by varying the relative rates of vesicle budding, fusion and biochemical conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "They are emergent properties that can be tuned by varying the relative rates of vesicle budding, fusion and biochemical conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "73be24ba-6224-49e0-82f8-02bce21f6b90",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C6",
+      "claim": "The Golgi apparatus is an intracellular organelle at the crossroad of the secretory, lysosomal and endocytic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The Golgi apparatus is an intracellular organelle at the crossroad of the secretory, lysosomal and endocytic pathways (Heald and Cohen-Fix, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "50609c86-c330-4a73-a50a-6f77f6e67097",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C7",
+      "claim": "One of the Golgi's most documented functions is the sorting and processing of many proteins synthesized by eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "One of its most documented functions is the sorting and processing of many proteins synthesized by eukaryotic cells (Lippincott-Schwartz et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "27110945-d8f7-446c-b533-acf6cf75c0eb",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C8",
+      "claim": "Proteins translated in the endoplasmic reticulum (ER) are addressed to the Golgi, where they undergo post-translational maturation and sorting, before being exported to their final destination.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins translated in the endoplasmic reticulum (ER) are addressed to the Golgi, where they undergo post-translational maturation and sorting, before being exported to their final destination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established pathway of protein processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "61399976-72a2-4f31-ad74-9607d1a6a9a3",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C9",
+      "claim": "The Golgi itself is composed of distinct sub-compartments, called cisternae, of different biochemical identities.",
+      "claim_type": "EXPLICIT",
+      "source": "The Golgi itself is composed of distinct sub-compartments, called cisternae, of different biochemical identities (Stanley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "968e85d6-79e2-460f-9b62-5637ed534cd2",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C10",
+      "claim": "From the ER, cargo-proteins successively reside in cisternae of the cis, medial and trans-identities, after which they exit the Golgi via the trans-Golgi network (TGN).",
+      "claim_type": "EXPLICIT",
+      "source": "From the ER, cargo-proteins successively reside in cisternae of the cis, medial and trans-identities, after which they exit the Golgi via the trans-Golgi network (TGN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established progression of cargo through the Golgi.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "a6b91b2b-2faa-41f3-866c-b0c5729be180",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C11",
+      "claim": "In yeast Saccharomyces cerevisiae, cisternae are dispersed throughout the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In some organisms such as the yeast Saccharomyces cerevisiae cisternae are dispersed throughout the cell (Suda and Nakano, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e5405259-447c-4475-8dff-912a6d57ad24",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C12",
+      "claim": "In yeast Saccharomyces cerevisiae, each cisterna undergoes maturation from a cis to a trans-identity.",
+      "claim_type": "EXPLICIT",
+      "source": "In some organisms such as the yeast Saccharomyces cerevisiae cisternae are dispersed throughout the cell (Suda and Nakano, 2012) and each cisterna undergoes maturation from a cis to a trans-identity (Losev et al., 2006; Matsuura-Tokita et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "c70bd502-ec0f-46b9-867b-725ff5a1373d",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C13",
+      "claim": "In most eukaryotes other than yeast, cisternae are stacked in a polarized fashion, with cargo-proteins entering via the cis-face and exiting via the trans-face.",
+      "claim_type": "EXPLICIT",
+      "source": "In most other eukaryotes, cisternae are stacked in a polarized fashion, with cargo-proteins entering via the cis-face and exiting via the trans-face (Boncompain and Perez, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "fe881b6f-24fa-4cf8-8315-57cafd6483f8",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C14",
+      "claim": "Golgi polarity is robustly conserved over time, despite cisternae constantly exchanging vesicles with each other, the ER and the TGN.",
+      "claim_type": "EXPLICIT",
+      "source": "This polarity is robustly conserved over time, despite cisternae constantly exchanging vesicles with each other, the ER and the TGN (Lippincott-Schwartz et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "54f4c3e9-aa6e-445f-9700-fe1f28c82db3",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C15",
+      "claim": "Pharmacological treatments that alter the structure and stacking of Golgi compartments in mammalian cells affect the processing of certain proteins, particularly glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological treatments that alter the structure and stacking of Golgi compartments in mammalian cells affect the processing of certain proteins, and in particular glycosylation (Hu et al., 2005; Shen et al., 2007; Xiang et al., 2013; Bekier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "423fdab1-034f-4289-a93a-9ae32412acf6",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C16",
+      "claim": "The highly dynamical nature and compact structure of a stacked Golgi makes it difficult to determine how cargo-proteins are transported in an anterograde fashion from the cis to trans-side of the stack.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly dynamical nature and compact structure of a stacked Golgi makes it difficult to determine how cargo-proteins are transported in an anterograde fashion from the cis to trans-side of the stack and how this transport is coupled to processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a challenge in the field based on the physical properties of the Golgi.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "9a230698-b353-4430-800b-5f67da419ba2",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C17",
+      "claim": "Several models have been proposed to explain the transport dynamics of Golgi cargo, mostly belonging to two classes: one involving stable compartments exchanging components through fusion-based mechanisms and one involving transient compartments undergoing en-block maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Several models have been proposed to explain the transport dynamics of Golgi cargo (See sketch in Figure 1A). They mostly belong to two classes: one involving stable compartments exchanging components through fusion-based mechanisms and one involving transient compartments undergoing en-block maturation and in which fusion mechanisms are dispensable for cargo transport.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This summarizes existing models in the literature, with reference to a figure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "d1d0a8dc-bd02-458b-8137-c8db41424ced",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C18",
+      "claim": "The 'Vesicular transport' model postulated that cisternae have fixed identities and cargo progresses from one cisterna to the next via anterograde vesicular transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Historically (Malhotra and Mayor, 2006), the 'Vesicular transport' model postulated that cisternae have fixed identities and cargo progresses from one cisterna to the next via anterograde vesicular transport",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a historical model with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "d7ddb0e9-1007-4ee0-8199-3d93244af225",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C19",
+      "claim": "The 'Cisternal Maturation' model postulated that cisternae themselves undergo maturation from the cis to the trans-identity and physically move through the stack, while Golgi resident proteins remain in the stack by moving toward the cis-face by retrograde vesicular transport.",
+      "claim_type": "EXPLICIT",
+      "source": "while the 'Cisternal Maturation' model postulated that cisternae themselves undergo maturation from the cis to the trans-identity and physically move through the stack, while Golgi resident proteins remain in the stack by moving toward the cis-face by retrograde vesicular transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a historical model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "a12780c3-2686-46ab-85a6-12a7a4c611f2",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C20",
+      "claim": "Extensions of the vesicular transport and cisternal maturation models have been proposed, including cisternal maturation with tubular connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Several extensions of these two models have been proposed, including cisternal maturation with tubular connections (Trucco et al., 2004; Rizzo et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "fd7f2c00-78d8-4c41-955d-7810a2a82de9",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C21",
+      "claim": "The rapid partitioning model proposes rapid partitioning within Golgi cisternae between processing and exporting sub-compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "rapid partitioning within Golgi cisternae between processing and exporting sub-compartments (Patterson et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "398d3d6b-a75c-479c-8eed-6b69873ca74d",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C22",
+      "claim": "The cisternal progenitor model proposes that stable cisternae exchange material by the fusion and fission of sub-compartments defined by their composition of Rab GTPases, which evolve over time through exchange with the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "or the cisternal progenitor model (Pfeffer, 2010), in which stable cisternae exchange material by the fusion and fission of sub-compartments defined by their composition of Rab GTPases, which evolve over time through exchange with the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "27fe9295-e28a-4dbd-a750-62f9143dcc42",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C23",
+      "claim": "Existing Golgi transport models do not provide a quantitative analysis of the generation and maintenance of Golgi compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that these models do not provide a quantitative analysis of the generation and maintenance of Golgi compartments, nor do they attempt to relate the Golgi structure (number and size of compartments) and transport dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "5e79c3da-349f-4a6b-a88d-f2a694a7a1f7",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C24",
+      "claim": "Much remains unknown regarding the mechanisms that dictate the organisation and dynamics of the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, much remains unknown regarding the mechanisms that dictate the organisation and dynamics of the Golgi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "b03c629d-2f7d-44f5-b87f-ce7e7266d129",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C25",
+      "claim": "There is a large diversity in Golgi structures and dynamics among different species.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is a large diversity in Golgi structures and dynamics among different species, the physiological function of the organelle as a sorting and processing hub is common to all species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative biology knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "26b70fd6-6728-49eb-8a61-1507411c0109",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C26",
+      "claim": "The physiological function of the Golgi as a sorting and processing hub is common to all species.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is a large diversity in Golgi structures and dynamics among different species, the physiological function of the organelle as a sorting and processing hub is common to all species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative biology knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "3556d53b-388a-4380-a5ed-dd452c5bb5da",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C27",
+      "claim": "Important mechanisms controlling Golgi dynamics are conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that important mechanisms controlling Golgi dynamics are conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the conservation of function despite structural diversity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "537d708a-1642-4811-b237-67182be85300",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C28",
+      "claim": "Different classes of mathematical models of Golgi dynamics have been proposed, including models based on rate equations.",
+      "claim_type": "EXPLICIT",
+      "source": "Different classes of mathematical models have been proposed, from models of vesicle budding and fusion based on rate equations (Binder et al., 2009; Ispolatov and M\u00fcsch, 2013; Mukherji and O'Shea, 2014) - some specifically including space (Sachdeva et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "c8adf014-579b-4224-8349-e12dc11df0e3",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C29",
+      "claim": "Continuous, discrete and stochastic models of protein sorting in the Golgi have been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "to continuous, discrete and stochastic models of protein sorting in the Golgi (Gong et al., 2010; Vagne and Sens, 2018b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "27579d77-0495-4b67-bc13-91f45ef2af37",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C30",
+      "claim": "Computer simulations based on membrane mechanics have been used to model the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "and computer simulations based on membrane mechanics (Tachikawa and Mochizuki, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "83aafe90-5da6-421d-9ee9-9a5475a20c6c",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C31",
+      "claim": "The Golgi can reassemble after mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for the ability of the Golgi to reassemble after mitosis (Wei and Seemann, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "5b223325-e35a-4d07-8470-cbfdb5ead8f4",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C32",
+      "claim": "Many studies have sought to describe the Golgi as a self-organized system.",
+      "claim_type": "EXPLICIT",
+      "source": "many of these studies have sought to describe the Golgi as a self-organized system (Binder et al., 2009; K\u00fchnle et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "18b478d4-453c-4998-99d9-d95995a192ec",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C33",
+      "claim": "The manner in which the kinetics of the Golgi's two main functions (transport and biochemical conversion) interplay to yield a robust steady-state has received much less attention.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the manner in which the kinetics of the Golgi two main functions (namely the transport and biochemical conversion of its components) interplay with one another to yield a robust steady-state has so far received much less attention (Sachdeva et al., 2016; Vagne and Sens, 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the literature with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "fb37a291-924b-41e3-a79f-86babb1227f4",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C34",
+      "claim": "Most existing models discuss transport through a pre-existing compartmentalised Golgi structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Most existing models discuss transport through a pre-existing compartmentalised Golgi structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of existing models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "1041f9dd-f1ed-4ca6-a55c-f6ff24e7d7a4",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C35",
+      "claim": "The main goal of the model is to explain how compartmentalised structure and flux can spontaneously emerge through self-organisation.",
+      "claim_type": "EXPLICIT",
+      "source": "The main goal of our model is to explain how this compartmentalised structure and the flux within it can spontaneously emerge through self-organisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the primary objective of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "44362af6-5f52-4d41-a963-5554ae33fc19",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C36",
+      "claim": "In the model, both Golgi self-organisation and vesicular transport are solely directed by local molecular interactions resulting in composition-dependent budding and fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose here a model in which both Golgi self-organisation and vesicular transport are solely directed by (local) molecular interactions resulting in composition-dependent budding and fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the model design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "18df4456-b33e-491e-9479-ad028038d5c5",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C37",
+      "claim": "The model neglects the spatial structure of the Golgi and assumes that any two components of the system can interact with one another.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we neglect the spatial structure of the Golgi, and assume that any two components of the system can interact with one another (see the Discussion section for the relevance of this approximation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "953dc9cf-2501-401f-bf15-a2c7ac40b7bb",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C38",
+      "claim": "The directionality of vesicular transport is an emergent property of the self-organisation process that co-evolves with the size and number of Golgi sub-compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the directionality of vesicular transport is an emergent property of the self-organisation process that co-evolves with the size and number of Golgi sub-compartments, rather than being fixed by arbitrary rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "27ba0ebf-b2a2-4737-bc44-20b2bf882e5e",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C39",
+      "claim": "The model highlights the link between the large-scale steady-state organisation of the Golgi, the directionality of vesicular transport, and the kinetics of individual processes at the molecular scale.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach brings new conceptual insights that highlight the link between the large-scale steady-state organisation of the Golgi, the directionality of vesicular transport, and the kinetics of individual processes at the molecular scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key insight from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "0bc45dbe-37cb-4089-850a-b5192d799b4b",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C40",
+      "claim": "A wide variety of organelle phenotypes can be observed upon varying the rates of the local processes.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a wide variety of organelle phenotypes can be observed upon varying the rates of the local processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "668f63b5-8c57-46b0-865d-90cd1b5487af",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C41",
+      "claim": "The model uncovers a correlation between the size and composition (purity) of Golgi sub-compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our model uncovers a correlation between the size and composition (purity) of Golgi sub-compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "ddfd8a76-ced6-49b1-82c3-a0b2f47d62a8",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C42",
+      "claim": "Composition-dependent exchange between compartments yields complex vesicular flux patterns that are neither purely anterograde nor purely retrograde.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, it emphasizes that composition-dependent exchange between compartments yields complex vesicular flux patterns that are neither purely anterograde (as in the 'vesicular transport' model) nor purely retrograde (as in the 'cisternal maturation' model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e1b83a61-c0b8-4ec6-903b-c9b542e954f5",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C43",
+      "claim": "The system is discretised at the scale of small vesicles, which define the unit size of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "The system is discretised at the scale of small vesicles, which define the unit size of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the model design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e2edeba5-6ac0-4270-9ad1-dcd77826aea7",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C44",
+      "claim": "Vesicles can fuse together or with existing compartments to form larger compartments and can bud from compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Vesicles can fuse together or with existing compartments to form larger compartments and can bud from compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dynamics included in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "8e4096dd-a2b9-4ad1-bc3f-75f5e2a9ccdc",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C45",
+      "claim": "Compartments consist of a number of membrane patches with distinct identities.",
+      "claim_type": "EXPLICIT",
+      "source": "Compartments consist of a number of membrane patches (of size unity) with distinct identities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of compartments in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "b11727c9-8590-4630-80b5-224f2ab6d356",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C46",
+      "claim": "The biochemical identity of a membrane patch is defined by its composition in lipids and proteins that influence its interaction with other patches, such as Rab GTPases or fusion proteins such as SNAREs.",
+      "claim_type": "EXPLICIT",
+      "source": "The biochemical identity of a membrane patch is defined in a very broad sense by its composition in lipids and proteins that influence its interaction with other patches, such as Rab GTPases (Grosshans et al., 2006) or fusion proteins such as SNAREs (Cai et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the biological basis for the model's identity concept, with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "a91d3ef1-0f03-4534-b368-bb6dc3c0f513",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C47",
+      "claim": "Vesicles and membrane patches are of either cis, medial or trans-identity, consistent with the three main biochemical identities reported for Golgi membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with the three main biochemical identities reported for Golgi membranes (Day et al., 2013), vesicles and membrane patches are of either cis, medial or trans-identity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a model feature based on biological knowledge with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "fa9599de-e0d6-4154-a4a9-ac0c85e9d177",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C48",
+      "claim": "Membrane patches can undergo irreversible biochemical conversion from the cis to the trans-identity.",
+      "claim_type": "EXPLICIT",
+      "source": "and can undergo irreversible biochemical conversion from the cis to the trans-identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key process in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "f72db490-171c-4387-9abe-396a91dc11db",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C50",
+      "claim": "Vesicles and compartments can fuse homotypically with the ER (itself of cis identity) and the TGN (of trans identity).",
+      "claim_type": "EXPLICIT",
+      "source": "and vesicles and compartments can fuse homotypically with the ER (itself of cis identity) and the TGN (of trans identity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes exit mechanisms in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "0ec82d47-0a5f-42ff-942f-d9d80d53368e",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C51",
+      "claim": "The stationary size distribution of compartments is a decreasing function of the compartment size, which typically shows a power law decay at small size, with an exponential cut-off at large size.",
+      "claim_type": "EXPLICIT",
+      "source": "The stationary size distribution of compartments is a decreasing function of the compartment size, which typically shows a power law decay at small size, with an exponential cut-off at large size (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the model simulations shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "9d579a69-12bf-4905-8afa-bf6002c05272",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C52",
+      "claim": "The size distribution pattern (power law with exponential cut-off) is expected for a non-equilibrium steady-state controlled by scission and aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected for a non-equilibrium steady-state controlled by scission and aggregation (Turner et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "b9708c5c-1aea-4fba-bb15-ee27c9163439",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C53",
+      "claim": "There exist many small compartments and very few large ones in the steady-state.",
+      "claim_type": "EXPLICIT",
+      "source": "and means that there exist many small compartments and very few large ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the size distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "fff9d68c-7e57-4144-a578-99fe275e567f",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C58",
+      "claim": "Mixing occurs by biochemical conversion and sorting occurs by budding of contaminating species.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be understood by analyzing the processes involved in mixing and sorting of different identities. In a first approximation, mixing occurs by biochemical conversion and sorting occurs by budding of contaminating species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "35bcad0a-1746-42b8-99c0-86c549037154",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C65",
+      "claim": "The archetypal behaviors (anterograde and retrograde transport) most often discussed in the literature are asymptotic regimes for extreme values of the ratio of budding to fusion rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The archetypal behaviors most often discussed in the literature are thus, within the limits of our model, asymptotic regimes for extreme values of the ratio of budding to fusion rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key interpretation of the model results in relation to existing literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "6785af4e-b786-4c74-b14b-85d34cd36c0f",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C67",
+      "claim": "In the model, vesicle budding and fusion are biased solely by local compositions, which is subjected to irreversible biochemical conversions.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model organelle, vesicle budding and fusion are biased solely by local compositions, which is subjected to irreversible biochemical conversions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the model design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "dc9fe77f-79bf-4bbb-9967-746ecd1a3b4f",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C68",
+      "claim": "The interplay between microscopic processes (budding, fusion, biochemical conversion) gives rise to an irreversible flux of vesicles across the system.",
+      "claim_type": "EXPLICIT",
+      "source": "The interplay between these microscopic processes gives rise to an irreversible flux of vesicles across the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "f582f4c0-9881-480e-82fd-0fc3550982c3",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C70",
+      "claim": "At low budding rate, the system is dominated by compartment maturation, and the compartment distribution is spread around a path going from purely cis to purely trans-compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The system is dominated by compartment maturation, and the compartment distribution is spread around a path going from purely cis to purely trans-compartments, consistent with a dynamics where each compartment maturates independently from the other and given by Equation 9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model simulations and analytical approximation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "aa4bc8fe-e780-4605-be1f-d5af40d5a26d",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C71",
+      "claim": "At low budding rate, the majority of the transport vesicles are emitted by trans-rich compartments, which concentrate most of the components of the system, leading to a retrograde vesicular flux.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the transport vesicles are emitted by trans-rich compartments, which concentrate most of the components of the system, leading to a retrograde vesicular flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "b7b2c458-f18d-4050-8ca7-2a1f7e6acbaa",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C73",
+      "claim": "At high budding rate, compartments are exclusively distributed along the cis/medial and medial/trans-axes of composition, and accumulate at the vertices of the triangle.",
+      "claim_type": "EXPLICIT",
+      "source": "Compartments are exclusively distributed along the cis/medial and medial/trans-axes of composition, and accumulate at the vertices of the triangle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "b5fcb275-0bf6-4b10-a2d4-6f4203bcecc2",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C74",
+      "claim": "At high budding rate, membrane patches that just underwent conversion bud quickly from the donor compartment and fuse with pure compartments with the appropriate medial or trans-identity, explaining the clear anterograde vesicular transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane patches that just underwent conversion bud quickly from the donor compartment and fuse with pure compartments with the appropriate medial or trans-identity, explaining the clear anterograde vesicular transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "737f6843-0c03-4eff-bf60-9d87620cdc14",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C75",
+      "claim": "In the intermediate regime, the distribution of mixed compartments is more homogeneous along the line describing the maturation of individual compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "In the intermediate regime (middle row in Figure 4), the distribution of mixed compartments is more homogeneous along the line describing the maturation of individual compartments - both in terms of size and number of compartments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "ced16d23-5f4d-41f0-92d9-7ccff20b0932",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C76",
+      "claim": "In the intermediate regime, cis-rich and trans-rich compartments emit comparable amount of transport vesicles, while large medial-rich compartments are absent, leading to a centripetal vesicular flux with an enrichment in medial identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cis-rich and trans-rich compartments emit comparable amount of transport vesicles, while large medial-rich compartments are absent. This leads to a centripetal vesicular flux with an enrichment in medial identity (see Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "187e7872-1be8-448d-bca7-d8388e5912de",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C77",
+      "claim": "The lack of large medial-rich compartment is due to the fact that they can be contaminated by either cis or trans-species and fuse with cis-rich or trans-rich compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of large medial-rich compartment is due to the fact that they can be contaminated by either cis or trans-species and fuse with cis-rich or trans-rich compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "3e967966-dc6a-4ab5-b94b-45de15e71047",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C79",
+      "claim": "The model does not include space, so it does not refer to the spatial structure of a stacked Golgi, but rather to the self-organisation of Golgi components into compartments of distinct identities undergoing vesicular exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "As our model does not include space, we do not refer to the spatial structure of a stacked Golgi, but rather to the self-organisation of Golgi components into compartments of distinct identities undergoing vesicular exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies the scope of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "08bf2aec-7ab4-4310-baa6-bda1f9034cd3",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C80",
+      "claim": "Directional vesicular exchanges between compartments of different identities spontaneously emerge from local biochemical interactions, despite the absence of spatial information.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that directional vesicular exchanges between compartments of different identities spontaneously emerge from local biochemical interactions, despite the absence of spatial information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "3bd7753e-7d72-4134-bc77-198aef8c5551",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C81",
+      "claim": "The Golgi functionality is preserved under major perturbation of its spatial structure resulting from land-locking Golgi cisternae to mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with recent observations that the Golgi functionality is preserved under major perturbation of its spatial structure resulting from land-locking Golgi cisternae to mitochondria (Dunlop et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "793d50f6-fc79-4b8a-966f-81830fc44621",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C82",
+      "claim": "Cargo transport still proceeds in land-locked Golgi, and is merely slowed down by a factor of two (from 20 min to 40 min) despite the absence of spatial proximity between cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cargo transport still proceed, and is merely slowed down by a factor of two (from 20 min to 40 min) in land-locked Golgi despite the absence of spatial proximity between cisternae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "fb3de258-d522-4e01-ad36-a4f775e7d578",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C83",
+      "claim": "Spatial information is less crucial to the Golgi function than biochemical information.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that spatial information is less crucial to the Golgi function than biochemical information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the land-locking experiments.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "81538563-901c-47d7-8476-45db84f2b9ad",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C84",
+      "claim": "The steady-state organisation of the organelle, in terms of size and composition of its compartments, is intimately linked to the directionality of vesicular exchange between compartments through the mechanism of homotypic fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our main result is that the steady-state organisation of the organelle, in terms of size and composition of its compartments, is intimately linked to the directionality of vesicular exchange between compartments through the mechanism of homotypic fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "9db7420c-4aa2-45b9-80fd-7b91ee26c069",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C85",
+      "claim": "Both the steady-state organisation and directionality of vesicular exchange are controlled by a kinetic competition between vesicular exchange and biochemical conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Both aspects are controlled by a kinetic competition between vesicular exchange and biochemical conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "30f2dd67-523e-4bfe-8ccc-c87b72067718",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C86",
+      "claim": "The predicted role of the budding and fusion rates is in agreement with the phenotype observed upon deletion of Arf1, which decreases the number of compartments and increases their size, particularly that of trans-compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted role of the budding and fusion rates is in agreement with the phenotype observed upon deletion of Arf1 (a protein involved in vesicle budding), which decreases the number of compartments and increases their size, particularly that of trans-compartments which seem to aggregate into one major cisterna (Bhave et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares model predictions with experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "7a68c205-bc71-4239-8ec1-767c78c9b79f",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C87",
+      "claim": "A comparable phenotype to Arf1 deletion has been observed upon mutation of NSF (a fusion protein), which produces extremely large, but transient, trans-compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparable phenotype has been observed upon mutation of NSF (a fusion protein), which produces extremely large, but transient, trans-compartments (Tanabashi et al., 2018), thereby increasing the stochasticity of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "7503827d-1df0-4537-90af-7a19752b59fd",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C88",
+      "claim": "Modifying the expression of VPS74 leads to an altered Golgi organisation, comparable to the ARF1 deletion phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Modifying the expression of VPS74 (yeast homolog of GOLPH3) leads to an altered Golgi organisation, comparable to the ARF1 deletion phenotype (Iyer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "02168c25-510e-4164-b704-d0ea009e2236",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C90",
+      "claim": "The correlation between the size and purity of the compartments predicted by the model is in agreement with the observation that decreasing the budding rate by altering the activity of COPI leads to larger and less sorted compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the correlation between the size and purity of the compartments predicted by our model is in agreement with the observation that decreasing the budding rate by altering the activity of COPI (a budding protein) leads to larger and less sorted compartments (Papanikou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares model predictions with experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "28101737-e0ed-4561-a330-0d41badfb9c0",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C91",
+      "claim": "Over-expression of Ypt1 (a Rab protein) increases the transition rate from early to transitional Golgi, and increases the co-localization of early and late Golgi markers.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast again, over-expression of Ypt1 (a Rab protein) increases the transition rate from early to transitional Golgi, and increases the co-localization of early and late Golgi markers (Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "0829c5b7-c2bb-457b-a4f7-533eb15e27ba",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C92",
+      "claim": "One crucial model prediction is that the size and purity of Golgi compartments should be affected in a correlated fashion by physiological perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "One crucial model prediction is that the size and purity of Golgi compartments should be affected in a correlated fashion by physiological perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a testable prediction from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "c612f376-2e88-4910-813c-b76487162723",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C94",
+      "claim": "The directionality of vesicular transport is intimately linked to the steady-state organisation of the organelle; vesicular transport is anterograde when compartments are pure, and it is retrograde when they are mixed.",
+      "claim_type": "EXPLICIT",
+      "source": "The directionality of vesicular transport is intimately linked to the steady-state organisation of the organelle; vesicular transport is anterograde when compartments are pure, and it is retrograde when they are mixed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "94a8b0e4-de7d-4c42-ba8a-2dfb2c4ccec4",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C95",
+      "claim": "If budding is faster than biochemical conversion, the contaminating species is the one that just underwent conversion, and its budding and fusion with more mature compartment leads to an anterograde transport.",
+      "claim_type": "EXPLICIT",
+      "source": "If budding is faster than biochemical conversion, the contaminating species is the one that just underwent conversion, and its budding and fusion with more mature compartment leads to an anterograde transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "ace28bed-7fc0-49f3-9bb9-6ddc6dfb7615",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C96",
+      "claim": "If biochemical conversion is faster than budding, the contaminating species is the less mature one, leading to a retrograde transport.",
+      "claim_type": "EXPLICIT",
+      "source": "If biochemical conversion is faster than budding, the contaminating species is the less mature one, leading to a retrograde transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "34934687-637c-43e7-8165-a959d639a680",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C97",
+      "claim": "The directionality of vesicular exchange is an emergent property intimately linked to the purity of the compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the directionality of vesicular exchange is an emergent property intimately linked to the purity of the compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "25771eb7-c964-4c01-9253-37fec8c33a54",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C98",
+      "claim": "Systems showing a well defined polarity with well sorted cisternae exhibit anterograde vesicular fluxes, whereas systems with mixed compartments exhibit retrograde fluxes.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the details of the model, we find that systems showing a well defined polarity with well sorted cisternae exhibit anterograde vesicular fluxes, whereas systems with mixed compartments exhibit retrograde fluxes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "2bc0e94c-8f9b-4b29-84df-0d1a0db1d728",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C99",
+      "claim": "Anterograde flux is expected when biochemical conversion is the slowest kinetic process and compartments are long-lived.",
+      "claim_type": "EXPLICIT",
+      "source": "The former dynamics is expected when biochemical conversion is the slowest kinetic process and compartments are long-lived",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "b6b2bea6-27f2-45c2-9342-b36673687103",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C100",
+      "claim": "Retrograde flux is expected when vesicular exchange is slow and the system is composed of transient compartments undergoing individual maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "while the latter is expected when vesicular exchange is slow and the system is composed of transient compartments undergoing individual maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "3a0389de-310b-4db4-9a41-6c5cd8e9eecc",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C101",
+      "claim": "Maturation of Golgi cisternae has been directly observed in S. cerevisiae, with colocalization of different identity markers within single cisternae (low purity) during maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Maturation of Golgi cisternae has been directly observed in S. cerevisiae (Losev et al., 2006), with colocalization of different identity markers within single cisternae (low purity) during maturation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "68141bba-1714-4918-953a-af49b02dd272",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C102",
+      "claim": "Vesicular transport phenotypes have been indirectly observed or inferred through modeling in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas vesicular transport phenotypes have been indirectly observed (Dunlop et al., 2017) or inferred through modeling (Dmitrieff et al., 2013) in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "af7dae77-c288-48d3-b850-fe8a41e6dd35",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C104",
+      "claim": "A well sorted and polarized Golgi is presumably required to accurately process complex cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "A well sorted and polarized Golgi is presumably required to accurately process complex cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional significance of Golgi organization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "01092b6a-83e2-4381-bd03-1d177708e6ca",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C105",
+      "claim": "The glycosylation of secreted cargo is key to the interaction of a vertebrate cell with the immune system of the organism it belongs to.",
+      "claim_type": "EXPLICIT",
+      "source": "The glycosylation of secreted cargo is key to the interaction of a vertebrate cell with the immune system of the organism it belongs to Ryan and Cobb, 2012",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e2f2f3bd-93a8-45c2-adea-e69fcf365ab7",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C106",
+      "claim": "Glycans appear to be more diverse in higher eukaryotes - which also possess a highly organized Golgi - than in unicellular eukaryotes like yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "and glycans appear to be more diverse in higher eukaryotes - which also possess a highly organized Golgi - than in unicellular eukaryotes like yeast (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "743020e4-ead6-4390-9ed2-8bdd84d71307",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C107",
+      "claim": "The Golgi organisation in S. cerevisiae could be the result of an adaptation that has favored fast transport over robustness of processing, leading to a less organized Golgi characterized by cisternal maturation and retrograde vesicular transport.",
+      "claim_type": "EXPLICIT",
+      "source": "The Golgi organisation in S. cerevisiae could thus be the result of an adaptation that has favored fast transport over robustness of processing, leading to a less organized Golgi characterized by cisternal maturation and retrograde vesicular transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about evolutionary adaptation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e5eedd3d-8b13-42bd-b82a-ad02232970e9",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C108",
+      "claim": "The slowing down of Golgi transport when S. cerevisiae is starved in a glucose-free environment coincides with the Golgi becoming more polarized.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the slowing down of Golgi transport when S. cerevisiae is starved in a glucose-free environment coincides with the Golgi becoming more polarized (Levi et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "bdb5f827-5ed4-433c-8ee7-8cb1722b01a6",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C109",
+      "claim": "The model is designed to account for crucial dynamical processes at play in the Golgi with a limited number of parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The present model is designed to account for crucial dynamical processes at play in the Golgi with a limited number of parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design philosophy of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "8b478d61-44da-4394-a46c-db477307dda7",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C110",
+      "claim": "The model is sufficient to yield robust self-organised structures which can reproduce a number of experimental observations, but cannot be expected to account for the full richness of Golgi dynamics, especially under severe perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is sufficient to yield robust self-organised structures which can reproduce a number of experimental observations, but cannot be expected to account for the full richness of Golgi dynamics, especially under severe perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges the limitations of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "6f9dd3b8-d39b-497f-b144-2b8fc3bce925",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C111",
+      "claim": "The model includes a single kind of exchange mechanism based on vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The model includes a single kind of exchange mechanism based on vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "1f29b7ec-92a8-41ba-8b78-acc286b12fe8",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C112",
+      "claim": "Exchange could also proceed via the pinching and fusion of larger cisterna fragments or via tubular connection between compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Exchange could also proceed via the pinching and fusion of larger cisterna fragments (Pfeffer, 2010; Dmitrieff et al., 2013), or via tubular connection between compartments (Trucco et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This discusses alternative mechanisms with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "16a6c82c-c40f-41e6-a99b-9ba990ee06ae",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C113",
+      "claim": "The relevance of tubular connections to Golgi transport is still debated.",
+      "claim_type": "EXPLICIT",
+      "source": "although the relevance of the latter to Golgi transport is still debated (Glick and Luini, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "716c747d-8b0a-4b7d-bcde-f8092f120d26",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C114",
+      "claim": "Stable Golgi tubulation without tubule detachment is observed under brefeldin A treatment, which prevent the membrane association of COPI coat.",
+      "claim_type": "EXPLICIT",
+      "source": "Stable Golgi tubulation without tubule detachment is observed under brefeldin A treatment, which prevent the membrane association of COPI coat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "5b5b1ef6-3ef0-40b0-95fa-aa0aa0940ea6",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C115",
+      "claim": "Brefeldin A treatment leads to the disappearance of the Golgi by quick resorption into the ER whenever a tubular connection is established between them, in a way suggesting a purely physical (tension-driven) mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This eventually leads to the disappearance of the Golgi by quick resorption into the ER whenever a tubular connection is established between them, in a way suggesting a purely physical (tension-driven) mechanism (Sciaky et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "73a7a9ca-3b42-4cfb-83a3-5adcdf4b7d85",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C116",
+      "claim": "The model does not account for the possibility of lateral partitioning between processing and exporting domains within compartments which could play an important role in regulating cisterna composition and cargo processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The model does not account for the possibility of lateral partitioning between processing and exporting domains within compartments which could play an important role in regulating cisterna composition and cargo processing (Patterson et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the model with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "0c3e7e22-f686-4cc6-a6d2-ac38dacf29b1",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C117",
+      "claim": "A detailed kinetic model of organisation based on rapid partitioning is proposed in Patterson et al., 2008 to account for the distinct composition of the different Golgi cisterna and the kinetics of cargo transport.",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed kinetic model of organisation based on this concept and supported by extensive quantitative live cell imaging experiments is proposed in Patterson et al., 2008 to account for the distinct composition of the different Golgi cisterna and the kinetics of cargo transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "499411e9-40b2-4588-954a-5e58d32eaf7e",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C118",
+      "claim": "The rapid partitioning model (RPM) focuses on the transport of lipids and cargo molecules in a pre-established Golgi apparatus with a prescribed structure, while the present model describes de-novo Golgi formation and maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "This rapid partitioning model (RPM) is very different in scope with the model we propose here, since it focuses on the transport of lipids and cargo molecules in a pre-established Golgi apparatus with a prescribed structure, while the present model describes de-novo Golgi formation and maintenance, through self-organised fusion and scission mechanisms between dynamic compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the scope of different models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "6d6ab1b3-1d44-4fbd-abb7-7784d627aad6",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C119",
+      "claim": "The RPM and the present model share important similarities, such as the fact that no directionality is assumed a priori for intra-cisternal vesicular transport, and that export is allowed from every cisterna.",
+      "claim_type": "EXPLICIT",
+      "source": "The two models share important similarities, such as the fact that no directionality is assumed a priori for intra-cisternal vesicular transport, and that export is allowed from every cisterna, which is crucial to reproduce the exponential kinetics observed in experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares features of different models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "526c515d-5f04-4779-a737-d399852d6cb2",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C120",
+      "claim": "The RPM is much more precise in terms of the microscopic description of the biochemical processes, and consequently involves many parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The RPM is much more precise in terms of the microscopic description of the biochemical processes, and consequently involves many parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the complexity of different models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "11b0094e-f912-40e9-a761-c67b607baae1",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C121",
+      "claim": "The model gives rise to a rich diversity of phenotypes depending on the parameter values, and reproduces the effect of a number of specific protein mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we kept the complexity of individual steps to a minimum, our model gives rise to a rich diversity of phenotypes depending on the parameter values, and reproduces the effect of a number of specific protein mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the capabilities of the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "c2fc4e5a-df7b-4c40-a38c-5c60969a9703",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C122",
+      "claim": "The model identifies the concomitance of a structural transition (from large and mixed to small and pure sub-compartments) and a dynamical transition (from retrograde to anterograde vesicular exchange).",
+      "claim_type": "EXPLICIT",
+      "source": "We identify the concomitance of a structural transition (from large and mixed to small and pure sub-compartments) and a dynamical transition (from retrograde to anterograde vesicular exchange).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "8d6a94af-93db-46ee-8df7-c0933125a09f",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C123",
+      "claim": "Within the model, anterograde vesicular transport is accompanied by many spurious events of vesicle back-fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Within our model, anterograde vesicular transport is accompanied by many spurious events of vesicle back-fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "4b4c7e5b-b1c5-4712-a991-81322da6726a",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C124",
+      "claim": "For very high budding rates, compartments are very pure and anterograde transport is dominated by vesicles undergoing biochemical conversion after budding from a compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "For very high budding rates, compartments are very pure and anterograde transport is dominated by vesicles undergoing biochemical conversion after budding from a compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "523a468d-c227-4316-9a3d-907aa7f64960",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C125",
+      "claim": "Vesicle biochemical conversion events have been described in the secretory pathway as a way to direct vesicular traffic and to prevent vesicles back-fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, such vesicle biochemical conversion events, which have been described in the secretory pathway as a way to direct vesicular traffic and to prevent vesicles back-fusion (Lord et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "b922b7ef-912d-4682-94bb-00b79d5273fd",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C126",
+      "claim": "In the model, vesicle biochemical conversion events only occur when compartments are very small (high budding rate).",
+      "claim_type": "EXPLICIT",
+      "source": "only occur when compartments are very small (high budding rate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "49aba049-c729-4796-9c6a-ecdce57ccd46",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C127",
+      "claim": "Adding composition-dependent feedback to tune budding and fusion rates will displace the purity transition to lower budding rates and extend the regime of anterograde transport to larger sub-compartment steady-state sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding composition-dependent feedback involving specific molecular actors to tune budding and fusion rates - for instance to reduce or prevent the budding of the majority species - will displace the purity transition to lower budding rates and thus extend the regime of anterograde transport to larger sub-compartment steady-state sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about model extensions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "30f59f5b-0f90-4253-9649-9e1d902b6bbc",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C128",
+      "claim": "Cisternal stabilizers like GRASP or vesicles careers like Golgins are known to already be present in the ancestor of eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cisternal stabilizers like GRASP or vesicles careers like Golgins, known to already be present in the ancestor of eukaryotes (Barlow et al., 2018), are obvious candidates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "578b9a70-8ea0-46db-b011-8e66118651b0",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "claim_id": "C129",
+      "claim": "The fundamental relationship between kinetics, structure and transport highlighted by the model is a universal feature of the interplay between biochemical conversion and vesicular exchange in cellular organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although more complex models, and in particular the inclusion of spatial dependencies, are surely relevant to dynamics of the organelle, the fundamental relationship between kinetics, structure and transport highlighted by our model is a universal feature of the interplay between biochemical conversion and vesicular exchange in cellular organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion about the significance of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on Golgi apparatus structure, function, and the ongoing debate about vesicular transport directionality. The Golgi is described as a conserved organelle with distinct cisternae (cis, medial, trans) that processes proteins, with structural diversity across species but conserved function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C2, C6-C16, C24-C27) are well-supported by citations to established literature and represent accepted knowledge in the field. They provide appropriate context for the study and accurately describe the current state of understanding and debate about Golgi organization and transport mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "85f3f958-5c80-495e-bcf7-31635d32f023",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Existing models of Golgi transport fall into two main classes (vesicular transport vs. cisternal maturation), with various extensions proposed. However, these models lack quantitative analysis of compartment generation and maintenance, and do not relate structure to transport dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C34 accurately summarize existing models and their limitations, supported by appropriate citations. The critical assessment that existing models lack quantitative analysis of compartment generation/maintenance (C23, C34) is reasonable and establishes the gap this study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "2cdb3434-659f-4b00-9690-70ee7274063b",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors present a minimal coarse-grained model of Golgi self-organization based on three mechanisms: composition-dependent vesicular budding and fusion, and biochemical conversion of membrane components. The model is discretized at the vesicle scale, neglects spatial structure, and uses three membrane identities (cis, medial, trans).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C50, C67, C79, C109-C111 clearly describe the model design and its key assumptions. The model is appropriately simplified for its stated goal of understanding self-organization principles. The neglect of spatial structure (C37, C79) is acknowledged as a limitation and justified by experimental observations (C81-C83).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e525cefc-3274-47a2-8107-8409c1b97397",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model demonstrates that anterograde and retrograde transport are asymptotic behaviors of a richer dynamical system, where compartment structure/composition and vesicular transport directionality are intimately linked emergent properties controlled by the kinetic competition between budding, fusion, and biochemical conversion rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C38-C42, C68, C80, C84-C85, C97, C122, C129 represent the core findings of the model. These are well-supported by the simulation results shown in Figures 2-4 and the analytical approximations provided. The identification of emergent properties arising from local interactions is a significant conceptual contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "57746efd-8a12-45be-9801-e84070124829",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The steady-state size distribution of compartments shows a power law decay at small sizes with exponential cut-off at large sizes, consistent with non-equilibrium steady-states controlled by scission and aggregation, resulting in many small compartments and few large ones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by simulation data (Figure 2A) and theoretical expectations from prior work (C52, Turner et al. 2005). The size distribution is a standard result for aggregation-fragmentation systems and provides validation of the model's physical reasonableness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model reveals three distinct regimes: (1) low budding rate - large mixed compartments with retrograde flux dominated by trans-rich compartments; (2) high budding rate - small pure compartments with anterograde flux; (3) intermediate regime - mixed compartments with centripetal flux toward medial identity. Transport directionality is linked to compartment purity through the concept of 'contaminating species'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C70-C77, C94-C100 describe the three transport regimes identified in the model, supported by Figures 3-4. The mechanistic explanation based on contaminating species (C58, C95-C96) provides intuitive understanding. The correlation between purity and directionality is clearly demonstrated in the simulation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e82aa6c9-f685-45b9-bd44-395b643c1ac3",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The archetypal transport behaviors (anterograde and retrograde) discussed in the literature are asymptotic regimes for extreme values of the budding-to-fusion rate ratio, with complex intermediate behaviors that are neither purely anterograde nor retrograde.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C65 represent a key conceptual insight that reconciles existing models. This is well-supported by the phase diagrams (Figures 2-3) showing continuous transitions between regimes. The identification of intermediate 'centripetal' transport (C76) is a novel prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "dd5bcd52-d09b-4195-935c-dfa6608fc7e8",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Model predictions are consistent with experimental observations: Arf1 deletion and NSF mutation produce larger compartments; VPS74 modification shows similar phenotypes; COPI activity reduction leads to larger, less sorted compartments; Ypt1 overexpression increases marker colocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 compare model predictions with experimental data from multiple studies. The qualitative agreement between model predictions and experimental phenotypes provides validation. However, these are post-hoc comparisons rather than a priori predictions, and quantitative validation is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "bce37bbe-9d1e-49f0-ba97-dab63078ee9a",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model predicts that compartment size and purity should be affected in a correlated fashion by physiological perturbations, providing a testable experimental prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 presents a clear, testable prediction arising from the model's core finding (C41) of size-purity correlation. This prediction is well-grounded in the model results (Figure 2E) and represents a falsifiable hypothesis for future experimental work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "d061e66b-9102-4134-8c47-423b1ed87218",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Experimental observations show that Golgi functionality is preserved when cisternae are land-locked to mitochondria, with cargo transport slowed only 2-fold despite loss of spatial proximity, suggesting biochemical information is more crucial than spatial information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 cite experimental work (Dunlop et al. 2017) to support the model's neglect of spatial structure. The inference that biochemical information is more important than spatial information (C83) is reasonable given the experimental data, though it remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "e11585da-0a99-4616-b966-e2225d472ef8",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model's predictions align with species differences: S. cerevisiae shows cisternal maturation with low purity and fast dynamics (~1/min), while mammalian cells show vesicular transport with higher organization and slower dynamics (~1/20-40 min). This may reflect evolutionary adaptation favoring speed vs. processing robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C102 cite experimental observations, but C104 and C107 are explicitly speculative. While the correlation between model predictions and species differences is intriguing, the evolutionary interpretation (C107) lacks direct evidence. The observation about glucose starvation (C108) provides some support but is insufficient for strong conclusions about evolutionary adaptation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model has limitations: it includes only vesicular exchange (not tubular connections or cisternal fragments), lacks lateral partitioning within compartments, and is less detailed than models like the Rapid Partitioning Model (RPM) which focuses on transport in pre-established structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C120 appropriately acknowledge model limitations and compare with alternative mechanisms and models. The discussion of tubular connections (C112-C115) and the RPM (C116-C120) is balanced, noting both differences in scope and complementary insights. This demonstrates appropriate scientific humility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    },
+    {
+      "id": "0504f991-5e9a-43d0-ab9a-9067bec0d572",
+      "content_id": "21f1f61e-7341-4c9e-97fd-96203af9e378",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Despite minimal complexity, the model produces diverse phenotypes and reproduces mutation effects. At high budding rates, anterograde transport involves vesicle biochemical conversion after budding. Adding composition-dependent feedback could extend anterograde transport to larger compartments, with proteins like GRASP or Golgins as candidates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C121-C126 summarize model capabilities and mechanisms, supported by simulation results. The prediction about composition-dependent feedback (C127) is reasonable speculation based on model logic. The identification of GRASP/Golgins as candidates (C128) is supported by citation showing their evolutionary conservation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:02:28.867168Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fdf41108-1d68-4bb0-8215-4937d3b20ee2",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "c94b74f3-a208-4a91-a7bf-c4f170f41dad",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "73be24ba-6224-49e0-82f8-02bce21f6b90",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "50609c86-c330-4a73-a50a-6f77f6e67097",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "27110945-d8f7-446c-b533-acf6cf75c0eb",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "61399976-72a2-4f31-ad74-9607d1a6a9a3",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "968e85d6-79e2-460f-9b62-5637ed534cd2",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "a6b91b2b-2faa-41f3-866c-b0c5729be180",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "e5405259-447c-4475-8dff-912a6d57ad24",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "c70bd502-ec0f-46b9-867b-725ff5a1373d",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "fe881b6f-24fa-4cf8-8315-57cafd6483f8",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "54f4c3e9-aa6e-445f-9700-fe1f28c82db3",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "423fdab1-034f-4289-a93a-9ae32412acf6",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "5e79c3da-349f-4a6b-a88d-f2a694a7a1f7",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "b03c629d-2f7d-44f5-b87f-ce7e7266d129",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "26b70fd6-6728-49eb-8a61-1507411c0109",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "3556d53b-388a-4380-a5ed-dd452c5bb5da",
+      "result_id": "c1694ec7-5910-46b7-8dc8-a67de2392d2b"
+    },
+    {
+      "claim_id": "9a230698-b353-4430-800b-5f67da419ba2",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "d1d0a8dc-bd02-458b-8137-c8db41424ced",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "d7ddb0e9-1007-4ee0-8199-3d93244af225",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "a12780c3-2686-46ab-85a6-12a7a4c611f2",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "fd7f2c00-78d8-4c41-955d-7810a2a82de9",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "398d3d6b-a75c-479c-8eed-6b69873ca74d",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "27fe9295-e28a-4dbd-a750-62f9143dcc42",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "537d708a-1642-4811-b237-67182be85300",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "c8adf014-579b-4224-8349-e12dc11df0e3",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "27579d77-0495-4b67-bc13-91f45ef2af37",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "83aafe90-5da6-421d-9ee9-9a5475a20c6c",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "5b223325-e35a-4d07-8470-cbfdb5ead8f4",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "18b478d4-453c-4998-99d9-d95995a192ec",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "fb37a291-924b-41e3-a79f-86babb1227f4",
+      "result_id": "85f3f958-5c80-495e-bcf7-31635d32f023"
+    },
+    {
+      "claim_id": "1041f9dd-f1ed-4ca6-a55c-f6ff24e7d7a4",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "44362af6-5f52-4d41-a963-5554ae33fc19",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "18df4456-b33e-491e-9479-ad028038d5c5",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "e1b83a61-c0b8-4ec6-903b-c9b542e954f5",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "e2edeba5-6ac0-4270-9ad1-dcd77826aea7",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "8e4096dd-a2b9-4ad1-bc3f-75f5e2a9ccdc",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "b11727c9-8590-4630-80b5-224f2ab6d356",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "a91d3ef1-0f03-4534-b368-bb6dc3c0f513",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "fa9599de-e0d6-4154-a4a9-ac0c85e9d177",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "f72db490-171c-4387-9abe-396a91dc11db",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "6785af4e-b786-4c74-b14b-85d34cd36c0f",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "3e967966-dc6a-4ab5-b94b-45de15e71047",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "bdb5f827-5ed4-433c-8ee7-8cb1722b01a6",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "8b478d61-44da-4394-a46c-db477307dda7",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "6f9dd3b8-d39b-497f-b144-2b8fc3bce925",
+      "result_id": "2cdb3434-659f-4b00-9690-70ee7274063b"
+    },
+    {
+      "claim_id": "8a6c9197-86b6-4d53-ab00-3255bb97d809",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "e85b7bd6-02df-48e4-96ef-961a7830bc40",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "0124e789-bbbf-4e6b-a35d-ca47831a6e70",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "953dc9cf-2501-401f-bf15-a2c7ac40b7bb",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "27ba0ebf-b2a2-4737-bc44-20b2bf882e5e",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "0bc45dbe-37cb-4089-850a-b5192d799b4b",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "668f63b5-8c57-46b0-865d-90cd1b5487af",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "ddfd8a76-ced6-49b1-82c3-a0b2f47d62a8",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "dc9fe77f-79bf-4bbb-9967-746ecd1a3b4f",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "08bf2aec-7ab4-4310-baa6-bda1f9034cd3",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "81538563-901c-47d7-8476-45db84f2b9ad",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "9db7420c-4aa2-45b9-80fd-7b91ee26c069",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "34934687-637c-43e7-8165-a959d639a680",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "c2fc4e5a-df7b-4c40-a38c-5c60969a9703",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "578b9a70-8ea0-46db-b011-8e66118651b0",
+      "result_id": "e525cefc-3274-47a2-8107-8409c1b97397"
+    },
+    {
+      "claim_id": "0ec82d47-0a5f-42ff-942f-d9d80d53368e",
+      "result_id": "57746efd-8a12-45be-9801-e84070124829"
+    },
+    {
+      "claim_id": "9d579a69-12bf-4905-8afa-bf6002c05272",
+      "result_id": "57746efd-8a12-45be-9801-e84070124829"
+    },
+    {
+      "claim_id": "b9708c5c-1aea-4fba-bb15-ee27c9163439",
+      "result_id": "57746efd-8a12-45be-9801-e84070124829"
+    },
+    {
+      "claim_id": "fff9d68c-7e57-4144-a578-99fe275e567f",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "f582f4c0-9881-480e-82fd-0fc3550982c3",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "aa4bc8fe-e780-4605-be1f-d5af40d5a26d",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "b7b2c458-f18d-4050-8ca7-2a1f7e6acbaa",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "b5fcb275-0bf6-4b10-a2d4-6f4203bcecc2",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "737f6843-0c03-4eff-bf60-9d87620cdc14",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "ced16d23-5f4d-41f0-92d9-7ccff20b0932",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "187e7872-1be8-448d-bca7-d8388e5912de",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "c612f376-2e88-4910-813c-b76487162723",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "94a8b0e4-de7d-4c42-ba8a-2dfb2c4ccec4",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "ace28bed-7fc0-49f3-9bb9-6ddc6dfb7615",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "25771eb7-c964-4c01-9253-37fec8c33a54",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "2bc0e94c-8f9b-4b29-84df-0d1a0db1d728",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "b6b2bea6-27f2-45c2-9342-b36673687103",
+      "result_id": "e5877eb9-bef7-4ecd-854f-9888845cf6a0"
+    },
+    {
+      "claim_id": "35bcad0a-1746-42b8-99c0-86c549037154",
+      "result_id": "e82aa6c9-f685-45b9-bd44-395b643c1ac3"
+    },
+    {
+      "claim_id": "ddfd8a76-ced6-49b1-82c3-a0b2f47d62a8",
+      "result_id": "e82aa6c9-f685-45b9-bd44-395b643c1ac3"
+    },
+    {
+      "claim_id": "30f2dd67-523e-4bfe-8ccc-c87b72067718",
+      "result_id": "dd5bcd52-d09b-4195-935c-dfa6608fc7e8"
+    },
+    {
+      "claim_id": "7a68c205-bc71-4239-8ec1-767c78c9b79f",
+      "result_id": "dd5bcd52-d09b-4195-935c-dfa6608fc7e8"
+    },
+    {
+      "claim_id": "7503827d-1df0-4537-90af-7a19752b59fd",
+      "result_id": "dd5bcd52-d09b-4195-935c-dfa6608fc7e8"
+    },
+    {
+      "claim_id": "02168c25-510e-4164-b704-d0ea009e2236",
+      "result_id": "dd5bcd52-d09b-4195-935c-dfa6608fc7e8"
+    },
+    {
+      "claim_id": "28101737-e0ed-4561-a330-0d41badfb9c0",
+      "result_id": "dd5bcd52-d09b-4195-935c-dfa6608fc7e8"
+    },
+    {
+      "claim_id": "0829c5b7-c2bb-457b-a4f7-533eb15e27ba",
+      "result_id": "bce37bbe-9d1e-49f0-ba97-dab63078ee9a"
+    },
+    {
+      "claim_id": "3bd7753e-7d72-4134-bc77-198aef8c5551",
+      "result_id": "d061e66b-9102-4134-8c47-423b1ed87218"
+    },
+    {
+      "claim_id": "793d50f6-fc79-4b8a-966f-81830fc44621",
+      "result_id": "d061e66b-9102-4134-8c47-423b1ed87218"
+    },
+    {
+      "claim_id": "fb3de258-d522-4e01-ad36-a4f775e7d578",
+      "result_id": "d061e66b-9102-4134-8c47-423b1ed87218"
+    },
+    {
+      "claim_id": "3a0389de-310b-4db4-9a41-6c5cd8e9eecc",
+      "result_id": "e11585da-0a99-4616-b966-e2225d472ef8"
+    },
+    {
+      "claim_id": "68141bba-1714-4918-953a-af49b02dd272",
+      "result_id": "e11585da-0a99-4616-b966-e2225d472ef8"
+    },
+    {
+      "claim_id": "af7dae77-c288-48d3-b850-fe8a41e6dd35",
+      "result_id": "e11585da-0a99-4616-b966-e2225d472ef8"
+    },
+    {
+      "claim_id": "01092b6a-83e2-4381-bd03-1d177708e6ca",
+      "result_id": "e11585da-0a99-4616-b966-e2225d472ef8"
+    },
+    {
+      "claim_id": "e2f2f3bd-93a8-45c2-adea-e69fcf365ab7",
+      "result_id": "e11585da-0a99-4616-b966-e2225d472ef8"
+    },
+    {
+      "claim_id": "743020e4-ead6-4390-9ed2-8bdd84d71307",
+      "result_id": "e11585da-0a99-4616-b966-e2225d472ef8"
+    },
+    {
+      "claim_id": "e5eedd3d-8b13-42bd-b82a-ad02232970e9",
+      "result_id": "e11585da-0a99-4616-b966-e2225d472ef8"
+    },
+    {
+      "claim_id": "1f29b7ec-92a8-41ba-8b78-acc286b12fe8",
+      "result_id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd"
+    },
+    {
+      "claim_id": "16a6c82c-c40f-41e6-a99b-9ba990ee06ae",
+      "result_id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd"
+    },
+    {
+      "claim_id": "716c747d-8b0a-4b7d-bcde-f8092f120d26",
+      "result_id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd"
+    },
+    {
+      "claim_id": "5b5b1ef6-3ef0-40b0-95fa-aa0aa0940ea6",
+      "result_id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd"
+    },
+    {
+      "claim_id": "73a7a9ca-3b42-4cfb-83a3-5adcdf4b7d85",
+      "result_id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd"
+    },
+    {
+      "claim_id": "0c3e7e22-f686-4cc6-a6d2-ac38dacf29b1",
+      "result_id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd"
+    },
+    {
+      "claim_id": "499411e9-40b2-4588-954a-5e58d32eaf7e",
+      "result_id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd"
+    },
+    {
+      "claim_id": "6d6ab1b3-1d44-4fbd-abb7-7784d627aad6",
+      "result_id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd"
+    },
+    {
+      "claim_id": "526c515d-5f04-4779-a737-d399852d6cb2",
+      "result_id": "9448e3da-a3b9-4619-bd6c-c51ddc48c4cd"
+    },
+    {
+      "claim_id": "11b0094e-f912-40e9-a761-c67b607baae1",
+      "result_id": "0504f991-5e9a-43d0-ab9a-9067bec0d572"
+    },
+    {
+      "claim_id": "8d6a94af-93db-46ee-8df7-c0933125a09f",
+      "result_id": "0504f991-5e9a-43d0-ab9a-9067bec0d572"
+    },
+    {
+      "claim_id": "4b4c7e5b-b1c5-4712-a991-81322da6726a",
+      "result_id": "0504f991-5e9a-43d0-ab9a-9067bec0d572"
+    },
+    {
+      "claim_id": "523a468d-c227-4316-9a3d-907aa7f64960",
+      "result_id": "0504f991-5e9a-43d0-ab9a-9067bec0d572"
+    },
+    {
+      "claim_id": "b922b7ef-912d-4682-94bb-00b79d5273fd",
+      "result_id": "0504f991-5e9a-43d0-ab9a-9067bec0d572"
+    },
+    {
+      "claim_id": "49aba049-c729-4796-9c6a-ecdce57ccd46",
+      "result_id": "0504f991-5e9a-43d0-ab9a-9067bec0d572"
+    },
+    {
+      "claim_id": "30f59f5b-0f90-4253-9649-9e1d902b6bbc",
+      "result_id": "0504f991-5e9a-43d0-ab9a-9067bec0d572"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Microarray profiling identified ~500 EC-restricted lncRNAs from three primary human EC lines compared to non-EC lines. Hierarchical clustering showed lncRNAs are stronger classifiers than mRNAs for distinguishing EC from non-EC lines, with significant variability among EC lines. The 498 enriched lncRNAs include various classes (intergenic, antisense, bidirectional, etc.) and are associated with genes involved in vascular development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C32-C42, C117-C119 are well-supported by the microarray data presented in Figure 1 and supplementary files. The hierarchical clustering analysis (C34, Figure 1A), classification of lncRNA types (C37, Figure 1C), and functional enrichment analysis (C42, Figure 1\u2014figure supplement 2A) provide converging evidence. The methodology is clearly described with appropriate controls and statistical analysis (FDR <10%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C15"
+    ],
+    "result": "lncEGFL7OS is located in the opposite strand of the EGFL7/miR-126 gene and is human/primate-specific. The existence of lncEGFL7OS was confirmed by RT-PCR cloning and sequencing, with conserved homologous sequences only found in humans and rhesus monkeys, not in lower vertebrates including mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C43-C46, C15 are supported by genomic organization data (Figure 2A), RACE-PCR cloning (Figure 2\u2014figure supplement 1A), and sequence conservation analysis. The primate-specific nature is established through bioinformatics comparison across species, though the manuscript would benefit from showing the actual sequence alignment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "lncEGFL7OS is enriched in highly vascularized human tissues (lung, placenta, heart), with differential expression patterns compared to EGFL7 isoforms (B and C) and miR-126 across various human tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C52 are supported by qRT-PCR data shown in Figure 2B and Figure 2\u2014figure supplement 1B-C. The tissue distribution patterns are consistent with vascularized tissues. However, the manuscript lacks information on sample sizes and biological replicates for the human tissue panel, which limits assessment of statistical robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "lncEGFL7OS is expressed in both cytoplasm and nucleus but is predominantly nuclear in HUVECs, with an average copy number of ~19 per cell as determined by RNA FISH and qRT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by semi-quantitative RT-PCR (Figure 2C) and high-resolution RNA FISH (Figure 2D). The copy number determination uses two independent methods (RNA FISH and qRT-PCR with in vitro transcribed standards) that yield consistent results (19 vs 23-28 copies), strengthening the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "lncEGFL7OS, EGFL7B, EGFL7C, and pri-miR-126 are significantly upregulated in hearts of dilated cardiomyopathy (DCM) patients compared to controls, along with increased ANP (heart failure marker) and marginally increased PECAM-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C58 are supported by qRT-PCR data from DCM patient hearts (Figure 2E, Figure 2\u2014figure supplement 1D). The study uses appropriate controls (n=5-7) and shows statistical significance. However, the manuscript does not establish causality\u2014the upregulation could be compensatory rather than pathogenic, as the authors acknowledge in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "lncEGFL7OS is regulated by ETS transcription factors through a bidirectional promoter containing CpG islands and binding sites for MAX, MYC, and RNA Pol II. ETS1 activates the promoter in both directions, and ETS1/2 silencing reduces both lncEGFL7OS and pri-miR-126 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C59-C69 are supported by multiple lines of evidence: ENCODE data analysis (Figure 2F), ChIP-PCR (Figure 2\u2014figure supplement 2A), luciferase assays (Figure 2G), and siRNA knockdown experiments (Figure 2H). The bidirectional promoter hypothesis is well-supported by functional data showing similar activity in both orientations and ETS1-dependent activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C70"
+    ],
+    "result": "lncEGFL7OS silencing impairs angiogenesis in EC-fibroblast co-culture assays, with both siRNAs significantly reducing vascular tubule formation at 7 days as measured by PECAM-1 staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C70 are supported by EC-fibroblast co-culture data (Figure 3A-B) showing significant reduction in tube length with two independent siRNAs. The use of two independent siRNAs strengthens the conclusion by reducing off-target effects. Quantification is provided with statistical significance (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C71",
+      "C72"
+    ],
+    "result": "lncEGFL7OS silencing impairs angiogenesis in vivo in Matrigel implantation assays, showing reduced EC networking compared to controls. The formed vessels recruit red blood cells and smooth muscle cells, indicating functional vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C71-C72 are supported by in vivo Matrigel data (Figure 3C-D, Figure 3\u2014figure supplement 2A-B) showing reduced vessel formation with lncEGFL7OS knockdown. Co-staining with Ter-119 and \u03b1-SMA confirms vessel functionality. However, the manuscript lacks quantification of vessel density and statistical analysis for the in vivo experiments (n=3 mice), limiting the strength of the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C73",
+      "C74"
+    ],
+    "result": "lncEGFL7OS silencing drastically represses ex vivo human choroid sprouting angiogenesis, with sprouting cells confirmed as ECs by ICAM-2 and isolectin B4 staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C73-C74 are supported by the human choroid sprouting assay (Figure 3F-H), which represents a novel ex vivo human tissue model. The EC identity confirmation (Figure 3H) and quantification of sprouting distance (Figure 3G) strengthen the conclusion. This is a particularly strong result as it demonstrates the effect in human tissue rather than cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "lncEGFL7OS silencing reduces EC proliferation as shown by BrdU incorporation (particularly with VEGF stimulation) and causes G1 cell cycle arrest with increased G0/G1 phase cells and decreased S and G2/M phase cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by BrdU incorporation assays (Figure 4A) and cell cycle analysis (Figure 4B-C). The data show consistent effects with two independent siRNAs. However, C75 notes that si-lncEGFL7OS#1 was not statistically significant under starvation conditions, indicating some variability between siRNAs. The G1 arrest conclusion (C79) is appropriately inferred from the cell cycle distribution data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "lncEGFL7OS silencing significantly represses EC migration in response to VEGF treatment in scratch wound assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by scratch wound assay data (Figure 4D-E) showing reduced migration with lncEGFL7OS knockdown. The use of 5-fluorouracil to block proliferation is appropriate to isolate the migration effect. Statistical significance is demonstrated with n=3 replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "lncEGFL7OS silencing significantly increases EC death from ~0.4% to ~0.55-0.64% as measured by TUNEL assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by TUNEL assay data (Figure 4\u2014figure supplement 1). While statistically significant, the authors appropriately note this increase is likely not biologically important given the small absolute change (~0.2% increase). This honest assessment strengthens confidence in the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C82",
+      "C83"
+    ],
+    "result": "lncEGFL7OS overexpression (>2000-fold) enhances angiogenesis in EC-fibroblast co-culture assays, showing significantly increased total tube length compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C82-C83 are supported by adenoviral overexpression experiments (Figure 4\u2014figure supplement 2A-C). The massive overexpression level (>2000-fold) raises questions about physiological relevance, but the gain-of-function data complement the loss-of-function experiments and support a causal role for lncEGFL7OS in angiogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "lncEGFL7OS knockdown dramatically decreases EGFL7B and EGFL7C expression at both mRNA and protein levels, and downregulates miR-126 and miR-126* expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by qRT-PCR data (Figure 5A-B) and Western blot analysis (Figure 5\u2014figure supplement 1). The coordinate downregulation of EGFL7 isoforms and miR-126/126* is consistent with regulation at the locus level. Two independent siRNAs show consistent effects, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C88"
+    ],
+    "result": "lncEGFL7OS is required for MAPK and AKT pathway activation by regulating EGFL7/miR-126 expression, as evidenced by significantly reduced ERK1/2 and AKT phosphorylation in response to VEGF after lncEGFL7OS knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C88 are supported by Western blot data (Figure 5C) showing reduced phosphorylation of ERK1/2 and AKT after lncEGFL7OS knockdown. The mechanistic link through miR-126 is supported by prior literature (C87) showing miR-126 targets Spred-1 and PI3KR2. However, the manuscript does not directly test whether miR-126 restoration rescues the signaling defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "lncEGFL7OS overexpression increases miR-126 expression ~2-fold and EGFL7B expression ~3-fold in ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by qRT-PCR data (Figure 5\u2014figure supplement 2A-B) from adenoviral overexpression experiments. The modest increases (2-3 fold) compared to the massive overexpression of lncEGFL7OS (>2000-fold) suggest either saturation of the regulatory mechanism or that lncEGFL7OS is not the rate-limiting factor under overexpression conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The combination of miR-126 and EGFL7 enhances angiogenesis in wild-type HUVECs and largely rescues the anti-angiogenic effect of lncEGFL7OS silencing in EC-fibroblast co-culture assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by rescue experiments (Figure 5D-E) showing that EGFL7 protein plus adeno-miR-126 can restore angiogenesis in lncEGFL7OS-depleted cells. This is a critical experiment establishing that the angiogenic effects of lncEGFL7OS are mediated through EGFL7/miR-126. However, the rescue is described as 'to a great extent' rather than complete, suggesting additional mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "MAX protein was identified as a lncEGFL7OS-interacting protein through bioinformatics prediction and validated by RNA immunoprecipitation. The F1 fragment (5' end) of lncEGFL7OS is the major domain interacting with MAX, and this interaction is enhanced by lncEGFL7OS overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C93-C96 are supported by catRAPID prediction (C93), RIP assays (Figure 6B), and domain mapping experiments (Figure 6C-D). The use of multiple approaches (prediction, RIP, domain mapping) strengthens the conclusion. The increased interaction with overexpression (C95) provides additional validation, though this could also reflect mass action effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C97",
+      "C98",
+      "C101",
+      "C102"
+    ],
+    "result": "MAX binds to the bidirectional lncEGFL7OS/EGFL7/miR-126 promoter/enhancer region, and this binding is enhanced by lncEGFL7OS overexpression. H3K27 acetylation is enriched at this region and further increased by lncEGFL7OS overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C97-C98, C101-C102 are supported by ChIP-PCR data (Figure 6E-F) showing MAX binding and H3K27ac enrichment at the promoter/enhancer region. The enhancement by lncEGFL7OS overexpression supports a functional role for the lncRNA in recruiting or stabilizing MAX at the locus. Control regions show no enrichment (Figure 6\u2014figure supplement 1A), strengthening specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "MAX interacts with p300 in ECs as demonstrated by co-immunoprecipitation assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by co-IP data (Figure 6\u2014figure supplement 1B) showing MAX and p300 interaction. This supports the proposed mechanism whereby MAX recruits p300/CBP to enhance histone acetylation. However, the manuscript does not test whether lncEGFL7OS affects the MAX-p300 interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Overexpression of lncEGFL7OS-F(2+3), which lacks the MAX-binding F1 domain, does not affect EGFL7B and miR-126 expression or angiogenesis in EC-fibroblast co-culture assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by data (Figure 6\u2014figure supplement 1C-F) showing that the truncated lncEGFL7OS lacking the MAX-binding domain has no effect on gene expression or angiogenesis. This is a critical control demonstrating that the MAX interaction is required for lncEGFL7OS function, strengthening the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "MAX silencing significantly decreases expression of EGFL7, lncEGFL7OS, and miR-126, leads to repressed angiogenesis in EC-fibroblast co-culture assays, and blunts the induction of miR-126 by lncEGFL7OS overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by MAX knockdown experiments (Figure 6G-L) using two independent siRNAs. The data show that MAX is required for both basal expression and lncEGFL7OS-mediated induction of the locus. This establishes MAX as a critical mediator of lncEGFL7OS function, supporting the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "lncEGFL7OS silencing significantly reduces MAX binding and H3K27 acetylation at the EGFL7/miR-126 promoter/enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by ChIP-PCR data (Figure 7A-B) showing reduced MAX binding and H3K27ac after lncEGFL7OS knockdown. This complements the overexpression data (C98, C102) and establishes that endogenous lncEGFL7OS levels are important for maintaining MAX recruitment and histone acetylation at the locus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Cyclin D2 and DHFR are MAX target genes in ECs. lncEGFL7OS overexpression enhances their expression and increases MAX binding and H3K27 acetylation at their promoters, but lncEGFL7OS knockdown does not repress their expression, suggesting lncEGFL7OS does not act in trans under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by comprehensive data (Figure 7C-L) including MAX knockdown, lncEGFL7OS overexpression, and ChIP assays. The asymmetry between overexpression and knockdown effects (C110 vs C111) is appropriately interpreted as evidence for cis-acting regulation. This careful analysis strengthens confidence that lncEGFL7OS functions primarily at its own locus rather than globally affecting MAX targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "lncEGFL7OS acts in cis by interacting with MAX transcription factor to enhance H3K27 acetylation and promote EGFL7/miR-126 expression, likely through recruitment of CBP/P300 by MAX/MYC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 represent the integrated mechanistic model supported by multiple lines of evidence: lncEGFL7OS-MAX interaction (C94-C96), MAX binding to the locus (C97-C98), H3K27 acetylation changes (C101-C102, C107-C108), MAX-p300 interaction (C100), and cis-acting regulation (C112). While each component is supported, the complete mechanistic pathway involves some inference, particularly regarding the role of p300/CBP recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C14",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "CRISPR-mediated targeting of the EGFL7/miR-126/lncEGFL7OS locus using dCas9-KRAB significantly represses angiogenesis in EC-fibroblast co-culture assays and drastically reduces expression of EGFL7B, miR-126, and lncEGFL7OS. dCas9-KRAB alone has no effect, ruling out off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C113-C116 are supported by CRISPRi experiments (Figure 8B-D) using two independent sgRNAs targeting different regions of the locus. The requirement for both sgRNA and dCas9-KRAB (C113) and the lack of effect with dCas9-KRAB alone (C114) are appropriate controls. This demonstrates therapeutic potential for targeting the entire locus, though in vivo validation would strengthen the translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "lncEGFL7OS is critical for human angiogenesis based on multiple in vitro, in vivo, and ex vivo assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by converging evidence from EC-fibroblast co-culture (C6, C70), in vivo Matrigel (C7, C71), ex vivo human choroid sprouting (C8, C73), and mechanistic studies showing effects on proliferation (C75-C79), migration (C80), and signaling pathways (C10-C11, C88). The consistency across multiple assay systems and the rescue experiments (C91-C92) strongly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Background claims establishing the importance of angiogenesis in disease, the role of lncRNAs in biology, and prior knowledge about the EGFL7/miR-126 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C31, C120-C130, C134-C139 are background/context claims supported by appropriate citations to published literature. These establish the rationale for studying lncRNAs in angiogenesis and the importance of the EGFL7/miR-126 locus. The citations appear appropriate and accurately represent the cited work based on the claims made.",
+    "result_type": "MINOR"
+  }
+]

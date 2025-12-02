@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "During hESC pancreatic differentiation, 74.7% of lncRNAs showed dynamic expression patterns, with 37.4% strongly enriched in and 37.3% specific to a single developmental stage, while 25.3% were constitutively expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide quantitative characterization of lncRNA expression dynamics during pancreatic differentiation. The data are presented with specific percentages and sample sizes (n=592 constitutive, n=1745 dynamic), supported by Figure 1B and source data. The classification methodology appears sound and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Many dynamically regulated lncRNAs are coregulated with proximal coding genes, including specific coregulation with key endodermal and pancreatic transcription factors (GATA6, FOXA2, PDX1, SOX9), likely due to shared chromatin environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 demonstrate correlation between lncRNA and TF expression patterns. The correlation analysis is supported by Figure 1C-D and supplementary data. The chromatin environment explanation (C34) is appropriately qualified as 'likely' and supported by ChIP-seq data (Figure 1\u2014figure supplement 1E-H).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In PP2 pancreatic progenitor cells, 34% of lncRNAs were cytosolic while 21% were nuclear, with cytosolic lncRNAs expressed at higher levels similar to mRNAs. Nearly half (49.4%) of cytosol-enriched lncRNAs showed dynamic expression during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C40 describe subcellular localization patterns. However, C97 acknowledges only two biological replicates were used for fractionation RNA-seq, which is insufficient for robust statistical conclusions. While the findings align with prior studies (C37), the low replicate number undermines confidence in the specific percentages reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Ribosome profiling identified 625 novel sORFs in lncRNAs (median 47 amino acids), with 76% not in existing databases. These sORFs are located in 285 cytosolically localized lncRNAs that are highly expressed and exhibit translational efficiencies similar to mRNAs, though they show poor sequence conservation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 describe comprehensive Ribo-seq analysis with stringent criteria (detection in \u22654/6 replicates). The methodology is well-described with high sequencing depth (average 85M reads). The lack of conservation (C46) is appropriately noted and consistent with the novelty of these sORFs. Quality control metrics (Figure 2\u2014figure supplement 1C-F) support data reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In vitro validation demonstrated that all ten tested sORFs produce detectable microproteins when fused to GFP in HEK293T cells, with signal abolished by frameshift or stop codon mutations. Some microproteins showed distinct subcellular localizations, including mitochondrial (sORF4) and perinuclear aggresome-like (sORF7) patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide functional validation of sORF translation capacity. The experimental design includes appropriate negative controls (frameshift, stop codon) and alternative tags (FLAG). However, these are overexpression experiments in a heterologous system (HEK293T), which may not reflect endogenous conditions, as acknowledged in C99.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "For ten selected lncRNAs, at least two independent knockout clones were generated. Despite efficient depletion, deletion of six lncRNAs (including LINC00261, DIGIT, GATA6-AS1) showed no effect on definitive endoderm formation or expression of neighboring transcription factors, contrasting with prior reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe rigorous knockout screen with multiple clones and comprehensive phenotyping. The use of multiple independent clones and different sgRNA combinations strengthens conclusions. The contrast with prior studies (C54) is appropriately noted, with possible explanations discussed (C84-C85). Multiple orthogonal assays (qRT-PCR, immunofluorescence, flow cytometry) support the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Seven of eight lncRNAs tested showed no effect on pancreatic progenitor or endocrine cell formation, with only minor gene expression changes in LHFPL3-AS2 and RP11-834C11.4 knockouts. None of the lncRNAs near pancreatic TFs altered expression of these TFs, arguing against cis-regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 demonstrate that most tested lncRNAs are dispensable for pancreatic development. The conclusion is based on multiple independent differentiations (5-16 replicates per clone) and multiple readouts (insulin+ cells, insulin mRNA, flow cytometry). The lack of cis-regulation is supported by RNA-seq data showing no effect on neighboring TFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "LINC00261 deletion caused no phenotype in definitive endoderm but resulted in a consistent 30-50% reduction in insulin+ cells at the endocrine stage across four independent knockout lines (5-8 differentiations each). Insulin content and mRNA were also reduced, with minimal effect on per-cell insulin levels, indicating LINC00261 primarily regulates endocrine differentiation rather than insulin production maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 identify LINC00261 as functionally important for endocrine development. The phenotype is robust, replicated across multiple independent clones and numerous differentiations. Multiple complementary measurements (flow cytometry, immunofluorescence, ELISA, qRT-PCR) support the conclusion. The interpretation that LINC00261 affects differentiation rather than maintenance (C65) is reasonably inferred from the per-cell insulin analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "LINC00261 deletion did not affect FOXA2 expression but downregulated beta cell differentiation regulators MAFB and PAX4. Differentially expressed genes mapped to all chromosomes without enrichment at the LINC00261 locus, suggesting trans- rather than cis-regulatory function, consistent with its cytosolic localization and prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 characterize LINC00261's mechanism of action. The lack of FOXA2 regulation is supported by multiple methods (qRT-PCR, RNA-seq, immunofluorescence; C81-C83). The trans-regulatory interpretation (C70) is appropriately qualified as 'suggest' and supported by chromosomal distribution analysis (C69) and prior literature (C71). The downregulation of MAFB and PAX4 provides a plausible mechanistic link to the insulin+ cell phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Individual frameshift mutations in each of LINC00261's seven sORFs did not impair endocrine cell development for most endpoints, though one clone each of sORF4 and sORF7 showed reduced insulin+ cells. Transcriptome analysis of sORF3 frameshift cells revealed no differentially expressed genes, indicating no single dominant sORF is required for endocrine formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 systematically dissect coding versus noncoding functions. The one-by-one sORF disruption approach is rigorous, with at least two clones per sORF and multiple phenotypic readouts. The inconsistent phenotype in single clones for sORF4/7 (C74) suggests these may be clonal artifacts rather than true effects. The contrast between full LINC00261 deletion and individual sORF mutations strongly supports the conclusion that the RNA itself, not individual microproteins, is functionally important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Simultaneous mutation of all seven sORF start codons (\u0394ATGsORF1-7) did not affect LINC00261 transcript stability compared to wild-type, suggesting sORF translation does not regulate LINC00261 levels through nonsense-mediated decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 test whether translation regulates RNA stability. The experimental design (actinomycin D chase, multiple timepoints, n=3 replicates) is appropriate. However, this experiment was performed in HEK293T cells rather than the pancreatic differentiation system, which may limit direct applicability. The conclusion appropriately uses 'suggesting' to indicate inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "No evidence was found for cis-regulation of neighboring TFs (FOXA2, GSC, GATA6, SOX9, LHX) by their associated lncRNAs, despite prior reports of FOXA2 regulation by LINC00261. FOXA2 expression was examined at multiple stages using qRT-PCR, RNA-seq, and immunofluorescence, showing no differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 address discrepancies with prior literature. The use of multiple orthogonal methods (C81-C83) and examination at multiple developmental stages strengthens the conclusion. The authors appropriately acknowledge the contrast with prior studies (C80) and discuss possible explanations (C84-C85), including methodological differences (CRISPR deletion vs. shRNA knockdown) and potential compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Many lncRNAs near lineage-determining transcription factors are dynamically regulated, predominantly cytosolic, and highly translated during hESC pancreatic differentiation. Of ten genetically ablated lncRNAs, nine are dispensable for pancreatic endocrine development, but LINC00261 deletion diminishes insulin+ cells independently of nearby FOXA2. Individual sORF disruption suggests the RNA, not microproteins, is required for endocrine development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 summarize the main findings. These are well-supported by the comprehensive experimental approach including RNA-seq, Ribo-seq, fractionation, and systematic genetic ablation with extensive phenotyping. The conclusion about RNA versus microprotein function (C27) is appropriately qualified as 'suggests' and supported by the systematic sORF disruption experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "LINC00261 is a novel regulator of pancreatic endocrine differentiation. It is highly abundant and predominantly cytosolic in pancreatic progenitors, associates with ribosomes to translate multiple sORFs that can produce microproteins with distinct localizations in vitro. However, individual sORF frameshifts did not impair endocrine development, suggesting the requirement for LINC00261 can be uncoupled from microprotein translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 synthesize the LINC00261-specific findings. The identification as a novel regulator (C86) is supported by the robust phenotype across multiple clones and differentiations. The characterization of localization (C87-C88) and translation (C89) is well-documented. The conclusion about uncoupling RNA from microprotein function (C92) is appropriately qualified as 'suggesting' and represents a key conceptual advance, though alternative explanations (redundancy, C102-C103) cannot be fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Multiple lines of evidence suggest LINC00261 regulates endocrine differentiation in trans: diffuse subcellular distribution, genome-wide distribution of differentially expressed genes, and lack of effect on nearby FOXA2. This is supported by GTEx Consortium data and prior studies suggesting non-nuclear mechanisms including \u03b2-catenin regulation and miRNA sponge activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 propose a trans-regulatory mechanism. The evidence is circumstantial but compelling: chromosomal distribution of affected genes (C69), cytosolic localization (C88), and lack of local effects (C66). The support from prior literature (C94-C96) strengthens the interpretation. However, the specific molecular mechanism remains undefined, appropriately reflected in the use of 'suggest' throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Study limitations include low replicate numbers for fractionation experiments (n=2), lack of endogenous protein-level evidence for LINC00261 microproteins in the differentiation system or in vivo, and LINC00261's absence from prior sORF analyses due to its specific expression pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 acknowledge important limitations. The authors appropriately identify weaknesses in their study, including the low replicate number for fractionation (C97) and lack of endogenous microprotein detection (C99). These limitations are significant but do not invalidate the main conclusions, as the functional studies (knockout phenotypes) are well-replicated. The acknowledgment of these limitations demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background context establishes that pancreatic endocrine development defects increase diabetes risk, molecular mechanisms are partially defined, some lncRNAs are important for beta cells, but systematic functional assessment is lacking. Most functionally characterized lncRNAs are nuclear, though many are cytosolic with unexplored developmental roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide literature context supported by appropriate citations. These establish the rationale for the study by identifying gaps in knowledge (C4, C7). The claims accurately represent the state of the field based on the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Many cytosolic lncRNAs contain translated sORFs, though the fraction that is functional and whether translation is regulatory or produces stable microproteins remains debated. Poor sequence conservation has been a reason for doubting sORF coding capacity, but recent studies show many produce functional, evolutionarily young microproteins, some essential for cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 establish the conceptual framework for studying lncRNA translation. These are well-supported by citations to recent literature and accurately represent the ongoing debate in the field (C9). The claims appropriately acknowledge uncertainty while providing context for the study's focus on translated lncRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "LncRNAs are frequently coregulated with nearby protein-coding genes in cis, with examples including DIGIT/GSC, Gata6as/Gata6, Paupar/Pax6, and LINC00261/FOXA2. However, whether such cis-acting lncRNAs are translated and may function through trans-acting, microprotein-dependent mechanisms in pancreas development is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 establish precedent for lncRNA-TF relationships and identify a key knowledge gap (C20). The examples are appropriately cited, though the study's findings ultimately contradict some of these prior reports (particularly C19), which is addressed in the Discussion. The identification of this knowledge gap provides clear motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Possible explanations for discrepancies with prior studies include that CRISPR deletion may trigger compensatory mechanisms not activated by shRNA knockdown, as shown for coding genes. Alternative explanations for lack of sORF phenotypes include that translation itself may be regulatory, or that LINC00261's microproteins/sORFs may have redundant functions despite limited sequence similarity and different translation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C101-C103 offer speculative but reasonable explanations for unexpected findings. These are appropriately qualified as possibilities ('it is possible', 'may have', 'cannot rule out'). The genetic compensation mechanism (C85) is supported by citation. These speculations are valuable for guiding future research but do not constitute supported results themselves.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C42",
+      "C43"
+    ],
+    "result": "Modified COPA analysis on RNA-seq data identified a lineage-specific PAX8 regulon in ovarian cancer consisting of PAX8 and eight additional genes (CDH6, CLDN16, FGF18, FOLR1, SLC34A2, SOX17, SPON1, WNT7A), with PAX8 acting as the master regulator transcriptionally activating all genes except FOLR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C12-C14 are well-supported by computational COPA analysis (Figure 1B, 1D-E), GTEx tissue expression data (C13), and CRISPR-Cas9 epistatic experiments (C14, Figure 1F). The validation that COPA successfully identifies known lineage-survival oncogenes (C42-C43) strengthens confidence in the PAX8 regulon discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C41"
+    ],
+    "result": "PAX8 is ubiquitously expressed across various histopathological subtypes of ovarian carcinomas but not in adjacent or normal tissues, and is focally amplified in a subset of TCGA ovarian cancer subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by immunohistochemical staining of 674 ovarian cancer samples (Figure 1C) showing PAX8 expression across serous, clear cell, endometrioid, and mucinous subtypes. Claim C41 is supported by TCGA copy number data (Figure 1\u2014figure supplement 1C). Both claims provide converging evidence for PAX8's role in ovarian cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C48"
+    ],
+    "result": "PAX8 deficiency results in downregulation of cell cycle and tumor metastasis pathways, impaired cell proliferation, defective transwell migration, and abnormally enhanced focal adhesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by microarray/GSEA analysis (Figure 2A-B) and CRISPR-Cas9 knockout experiments in multiple cell lines (Figure 2C-E). Claim C48 provides additional mechanistic support through immunofluorescence imaging (Figure 2\u2014figure supplement 1B). The convergence of transcriptomic and phenotypic data strongly supports PAX8's role in proliferation and migration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C18",
+      "C19",
+      "C20",
+      "C46",
+      "C47"
+    ],
+    "result": "The PAX8-FGF18 axis promotes ovarian tumor cell migration in an autocrine fashion, with PAX8 directly binding to and driving FGF18/FGFR expression, and FGF18 specifically regulating migration without affecting proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by ChIP-qPCR (Figure 2H) and microarray data (Figure 2I). Claims C11, C20, C46-C47 are supported by phenogenotypic screens (Figure 2F-G), rescue experiments (Figure 2K), and FGFR inhibitor studies (Figure 2J). The mechanistic chain from PAX8 binding to FGF18 expression to migration phenotype is well-established through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C49",
+      "C50"
+    ],
+    "result": "HDAC inhibitors, including panobinostat and romidepsin, potently inhibit PAX8 expression in a dose- and time-dependent manner across multiple ovarian cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is supported by high-throughput image-based screening (Figure 3B-D). Claims C21, C49-C50 are supported by Western blot (Figure 3E-G), immunofluorescence (Figure 3D, Figure 3\u2014figure supplement 1B), and cell viability assays (Figure 3H) across multiple cell lines. The consistency across different assays and cell lines strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Class I HDAC inhibitors (romidepsin, entinostat), but not class II inhibitors (tubacin, TMP195), specifically eliminate PAX8 accumulation, and genetic knockout of HDAC1-3 recapitulates this effect, which can be partially reversed by PAX8 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by Western blot comparisons of different HDAC inhibitor classes (Figure 3\u2014figure supplement 1C) and CRISPR-Cas9 knockout of HDAC1-3 (Figure 3\u2014figure supplement 2A-B). Claim C24 is supported by rescue experiments (Figure 3\u2014figure supplement 2C-D). The convergence of pharmacological and genetic evidence strongly supports class I HDAC specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "HDAC inhibitors perturb a super-enhancer structure at the PAX8 promoter by altering H3K27ac distribution, resulting in rapid and pronounced downregulation of PAX8 transcripts, with PAX8 being one of the most hypersensitive genes to HDAC inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by ChIP-seq data showing H3K27ac occupancy (Figure 4A) and ChIP-qPCR showing altered H3K27ac distribution upon HDAC inhibitor treatment (Figure 4B, Figure 4\u2014figure supplement 1A). Claims C27-C28 are supported by qPCR (Figure 4C) and time-course RNA-seq (Figure 4\u2014figure supplement 1B). The mechanistic link from epigenetic changes to transcriptional downregulation is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C52",
+      "C53"
+    ],
+    "result": "HDAC blockade causes global gene expression changes that preferentially affect the PAX8 signature, with HDAC inhibition and PAX8 depletion showing overlapping pathway effects despite HDAC inhibitors having broader effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, C52-C53 are supported by RNA-seq heatmaps (Figure 4D, Figure 4\u2014figure supplement 1C), PCA analysis (Figure 4E), pathway analysis (Figure 4F), and GSEA showing PAX8 signature enrichment in HDAC-modulated transcripts (Figure 4G). The data demonstrate mechanistic linkage between HDAC and PAX8 at the transcriptome level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C54",
+      "C60",
+      "C61"
+    ],
+    "result": "HDAC inhibitors reduce expression of lineage-survival oncogenes NKX2-1 in lung adenocarcinoma and SOX2 in squamous cell carcinoma, suggesting that many lineage-survival oncogenes may be vulnerable to epigenetic therapies targeting super-enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C54 are supported by qPCR data in lung cancer cell lines (Figure 4\u2014figure supplement 2A) and crystal violet staining (Figure 4\u2014figure supplement 2B). Claims C60-C61 are supported by citation to Whyte et al., 2013 and the preliminary lung cancer data. While the generalization (C61) is somewhat speculative, it is reasonably supported by the PAX8, NKX2-1, and SOX2 examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "PAX8 knockout significantly hampers tumor development and abdominopelvic spreading in xenograft models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by in vivo bioluminescence imaging (Figure 5A) and 3D reconstruction of tumor lesions (Figure 5B) in HEY and SKOV3 xenograft models. The data demonstrate PAX8's role in both tumor growth and metastatic dissemination in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C51"
+    ],
+    "result": "HDAC antagonists (panobinostat and romidepsin) efficaciously suppress ovarian tumor growth, spreading, and cell migration as single agents in xenograft models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34 are supported by in vivo treatment experiments showing reduced tumor burden and metastatic dissemination (Figure 5C-D). Claim C51 is supported by transwell migration assays (Figure 3J). The convergence of in vitro and in vivo data strongly supports the anti-tumor efficacy of HDAC inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C55",
+      "C37"
+    ],
+    "result": "Combination of HDAC inhibitors (panobinostat or romidepsin) with cisplatin synergistically inhibits cell viability and induces concurrent apoptotic and pyroptotic cell death, as evidenced by enhanced PARP cleavage, GSDME cleavage, and LDH release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C55 are supported by Western blot showing cleaved PARP, cleaved GSDME, and downregulated cyclin D1 (Figure 6A), and LDH release assays (Figure 6\u2014figure supplement 1A). Claim C37 is supported by synergy score calculations and crystal violet staining (Figure 6B-C). The multiple markers of cell death provide strong evidence for the synergistic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "HDAC inhibitors exert synergistic effects in combination with cisplatin in both chemo-sensitive and chemo-resistant cells, and the cisplatin + panobinostat combination significantly suppresses tumor progression in PDX models with reduced PAX8 expression associated with deficient proliferation and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38 are supported by experiments in chemo-resistant SKOV3 cells (Figure 6\u2014figure supplement 1B-C). Claims C39-C40 are supported by PDX treatment experiments (Figure 6D-E) and immunohistochemistry (Figure 6F). The demonstration of efficacy in both resistant cells and PDX models strengthens the translational potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C57"
+    ],
+    "result": "PAX8 is significantly associated with the majority of regulon components at the mRNA level in both EOC cell lines and TCGA tissues, and the PAX8 regulon signature resembles PAX8 expression patterns in ovarian cancer subgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C57 are supported by correlation analysis (Figure 1\u2014figure supplement 4A-B) and subgroup comparison (Figure 1\u2014figure supplement 5A). The data demonstrate that the PAX8 regulon is coordinately regulated and reflects PAX8 activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Neither PAX8 nor the PAX8-responsive regulon predicted high-grade serous ovarian cancer patient prognosis using the median expression cutoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by Kaplan-Meier survival analysis (Figure 1\u2014figure supplement 5B) showing no significant prognostic value. This negative result is important for understanding PAX8's role as a lineage-dependency factor rather than a prognostic marker.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "PAX8 was restrictedly expressed in two PDXs of epithelial ovarian cancer out of 221 models from seven different types of solid cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by RNA-seq analysis of PDX models (Figure 6\u2014figure supplement 1D). This validates PAX8's lineage-specific expression in patient-derived models and supports the selection of ovarian PDX models for therapeutic testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C59"
+    ],
+    "result": "PAX8 is a prototype lineage-survival oncogene in epithelial ovarian cancer, which is de facto M\u00fcllerian rather than coelomic in nature, and is frequently upregulated and functionally essential in a major subset of ovarian cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9 are supported by citations to Cheung et al., 2011 and Project Achilles data. Claim C59 is supported by citations to multiple studies (Dubeau, 2008; Dubeau and Drapkin, 2013; Karnezis et al., 2017). These claims establish the foundational context for the study based on prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C58",
+      "C62"
+    ],
+    "result": "PAX8 belongs to a conserved family of transcription factors, is restrictedly expressed in developing brain, thyroid, kidney, and M\u00fcllerian tract (which gives rise to fallopian tubes, uterus, cervix, and upper vagina), and PAX8 knockout causes hypothyroidism and infertility, with expression attenuating after development but remaining detectable in some adult tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C58, C62 are supported by citations to established literature (Robson et al., 2006; Mansouri et al., 1998; Mittag et al., 2007; Perets et al., 2013) and established embryological knowledge. These claims provide important biological context for PAX8's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multiple lineage-survival oncogenes have been identified in various cancer types (AR in prostate, CCND1 in breast, MITF in melanoma, NKX2-1 in lung adenocarcinoma, SOX2 in squamous cell carcinomas, ASCL1 in neuroendocrine tumors, OLIG2 in glioma, CDX2 in colorectal, FLT3 in AML, IRF4 in myeloma), and during neoplastic transformation, dependency may maintain on the altered core regulatory circuitry predetermined by cell of origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 are supported by citations to established literature for each lineage-survival oncogene and the general concept (Garraway and Sellers, 2006). These claims provide important conceptual context for understanding PAX8 as part of a broader class of oncogenes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Platinum-based chemotherapy remains the mainstay for ovarian cancer treatment, cleaved PARP is a marker of apoptosis, LDH release indicates membrane rupture, and GSDME is an executor of pyroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by established clinical and biological knowledge (C74-C76) and citations to recent literature on GSDME (Lu et al., 2018; Rogers et al., 2017; Wang et al., 2017). These claims provide necessary background for interpreting the combination therapy results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The zyd mutation causes temperature-sensitive seizures without affecting brain morphology or baseline neuronal function. Zyd mutants exhibit elevated basal Ca\u00b2\u207a in cortex glia, loss of Ca\u00b2\u207a microdomains, but normal cortex glial structure, cell survival, and baseline behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (imaging C20-C23, behavioral assays C31-C33, cell death markers C30, Ca\u00b2\u207a imaging C28-C29) consistently demonstrate that zyd affects glial Ca\u00b2\u207a regulation without structural or baseline functional deficits. Statistical analyses show non-significant differences in morphology (p=0.138, p=0.0892) and behaviors, while Ca\u00b2\u207a phenotypes are clearly documented. The conditional knockdown experiments (C24) confirm the phenotype is due to loss of zyd function specifically in cortex glia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C34"
+    ],
+    "result": "Neuronal activity is required for zyd seizures, as pan-neuronal knockdown of the voltage-gated Ca\u00b2\u207a channel Cacophony rescues the seizure phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue of zyd seizures by neuronal cac knockdown (C27, p=0.0004) demonstrates that elevated neuronal activity is necessary for seizure generation. The reduction in locomotion (C34) confirms effective knockdown. This establishes that the glial defect requires neuronal hyperactivity to manifest as seizures, supporting a glia-to-neuron signaling mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Calcineurin activity in cortex glia is required for zyd seizures. Pan-glial and cortex glial-specific knockdown of CanB2 completely rescues seizures, while knockdown of CanA subunits provides partial rescue. Multiple RNAi lines, genetic alleles, and conditional expression confirm this requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcineurin requirement is demonstrated through multiple independent approaches: four different CanB2 RNAi lines (C35, C40), a heterozygous knockout allele (C37), two CanA subunit knockdowns (C42-C43), and a dominant-negative construct (C44). Cell-type specificity is shown by rescue with cortex glial but not astrocyte drivers (C38-C39). Conditional adult-stage knockdown (C41) rules out developmental effects. Electrophysiological recordings (C36) confirm functional rescue. The convergence of multiple genetic tools strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Calcineurin activity is elevated in zyd cortex glia and acts downstream of Ca\u00b2\u207a elevation. CN knockdown does not alter Ca\u00b2\u207a levels or oscillations in wildtype or zyd glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CalexA reporter system demonstrates basal CN activity in wildtype (C47) and enhanced activity in zyd (C48-C49, 23\u00b13% increase, p<0.0001). CanB2 knockdown reduces this activity (C50, 27\u00b11% reduction). Critically, CN manipulation does not affect Ca\u00b2\u207a phenotypes (C45), establishing CN acts downstream of Ca\u00b2\u207a. The use of both imaging and Western blot quantification strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Pharmacological inhibition of calcineurin with cyclosporin A (CsA) rescues zyd seizures in a dose-dependent and reversible manner. FK506 provides partial rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CsA treatment shows dose-dependent rescue (C51-C52, ~80% rescue at 1 mM, p<0.0001), reversibility upon drug withdrawal (C53), and is replicated with a second CN inhibitor FK506 (C54). The time course and dose-response relationships are well-characterized. While off-target effects cannot be completely excluded, the consistency with genetic CN knockdown data strongly supports CN as the relevant target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Knockdown of sandman, a K2P channel, phenocopies zyd seizures with similar kinetics and temperature threshold. Sandman acts downstream of calcineurin and Ca\u00b2\u207a signaling, as CN inhibition does not rescue sandman knockdown seizures, and sandman knockdown does not alter Ca\u00b2\u207a phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence establish sandman as a key downstream effector: pan-glial knockdown causes seizures (C55) with identical characteristics to zyd (C56, temperature threshold p=0.5185), similar electrophysiological phenotypes (C57), and cortex glial-specific effects (C58). Epistasis experiments place sandman downstream of CN (C59) and Ca\u00b2\u207a (C60). The genetic interaction data are internally consistent and support a linear pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "SAND:GFP protein levels are reduced in zyd cortex glia (~34-53% reduction) without differential phosphorylation. The reduction is specific to sandman, as membrane-tethered GFP is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches demonstrate reduced SAND:GFP: immunofluorescence (C64, 53\u00b16.85% reduction), Western blot (C65, 34\u00b115% reduction), and validation of RNAi knockdown (C61, ~45% reduction). Phos-tag analysis shows no differential phosphorylation between wildtype and zyd (C62), though SAND is phosphorylated (C63). The specificity control with mCD8:GFP (C66) rules out general membrane protein defects. The convergent evidence from multiple techniques supports this conclusion, though the variability in reduction percentages across methods suggests some measurement uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Elevated Ca\u00b2\u207a in zyd causes hyperactivation of endocytosis and accumulation of early endosomes. Knockdown of endocytic machinery (Rab5, EndoA) or conditional inhibition of dynamin rescues zyd seizures. CsA treatment reduces early endosome accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The endocytosis phenotype is demonstrated through multiple approaches: Rab5::GFP imaging shows increased large early endosomes in zyd (C70, p=0.0088), which are normalized by CsA treatment (C71, p=0.0378). Genetic rescue is shown with Rab5 and EndoA knockdown (C67), conditional Rab5RNAi (C68, ~75% rescue), and Rab5DN (C69, ~60% rescue). Critically, chronic (6 hr) but not acute dynamin inhibition rescues seizures (C72), and this rescue is reversible (C73), indicating chronic endocytic imbalance causes the phenotype. The temporal requirement for chronic inhibition is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Enhanced endocytosis leads to sandman internalization and degradation, impairing K\u207a buffering. Overexpression of sandman or a constitutively open K\u207a channel (EKO) rescues zyd seizures, restoring rhythmic neuronal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic link between endocytosis, sandman, and K\u207a buffering is supported by: partial rescue with sandman overexpression (C74), strong rescue with EKO overexpression (C75, ~75% for vortex; C76, ~60% for heat shock), and restoration of rhythmic CPG activity (C77). The interpretation that K\u207a buffering is critical for neuronal excitability (C78) is well-supported by the functional rescue data. The summary model (C79) integrates all findings into a coherent pathway. The partial rescue with sandman overexpression (likely due to continued internalization) versus stronger rescue with EKO (not subject to the same regulation) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Drosophila cortex glia are specialized astrocyte-like cells that specifically ensheath neuronal cell bodies without contacting synapses, providing an ideal system to study glia-soma interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the biological context and rationale for the study. They are supported by cited literature (C17-C19) and the anatomical characterization in the manuscript (C1, C18). The spatial segregation of cortex glia from synaptic regions is well-established in the field and confirmed by the imaging data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior work has established that astrocytes exhibit Ca\u00b2\u207a oscillations in response to neuronal activity and neurotransmitters, and that pathological elevation of glial Ca\u00b2\u207a is associated with seizures and abnormal neuronal excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the relevant prior literature with appropriate citations. They establish the broader context for understanding glial Ca\u00b2\u207a signaling and its relationship to neuronal excitability. The citations appear appropriate and the claims are consistent with the established literature in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Epilepsy affects ~50 million people worldwide, and targeting glial pathways may offer therapeutic opportunities. Drosophila seizure models respond to anti-epileptic drugs, and CN inhibitors have shown efficacy in rodent seizure models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion claims appropriately contextualize the findings within the broader epilepsy field. The WHO statistic (C80) is properly cited, and the claims about drug responses in Drosophila (C82) and rodent models (C83) are supported by appropriate citations. These claims establish the translational relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The molecular components of the pathway (TRESK/sandman, calcineurin, Kir channels) have established roles in other systems. Mammalian TRESK is regulated by CN dephosphorylation, while Drosophila sandman is regulated by activity-dependent internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work on the molecular components studied. The citations are appropriate and the claims provide important context for interpreting the current findings. The contrast between mammalian TRESK regulation by dephosphorylation (C84) and Drosophila sandman regulation by internalization (C85) is particularly relevant to the mechanistic conclusions.",
+    "result_type": "MINOR"
+  }
+]

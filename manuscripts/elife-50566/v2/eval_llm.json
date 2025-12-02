@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C52",
+      "C53",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "AIA interneurons require coincident activation of AWA and inhibition of glutamatergic sensory neurons for reliable responses. Optogenetic activation of AWA alone produces unreliable AIA responses (56% activation, >6s delay), while diacetyl at increasing concentrations produces progressively more reliable responses by engaging both AWA activation and inhibition of glutamatergic neurons (ASK, AWC). This demonstrates AND-gate logic requiring multiple coordinated sensory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 demonstrate through optogenetics that AWA activation alone is insufficient (56% response rate, >6s delay vs. >90% for high diacetyl). Claims C106-C108 systematically show dose-dependent reliability correlating with engagement of multiple sensory pathways. The AND-gate interpretation (C2, C7) is well-supported by converging evidence from multiple experimental approaches including mutant analysis (C52-C53) showing AWA is necessary but not sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C72"
+    ],
+    "result": "AWA activates AIA through gap junctions composed of innexin proteins UNC-7 and UNC-9, with preferentially anterograde information flow. Chemical synapses from AWA are not required, as demonstrated by tetanus toxin experiments and synaptic transmission mutants. The gap junction is functionally asymmetric: AWA stimulation robustly activates AIA, but AIA stimulation produces only weak AWA responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence converge: tetanus toxin in AWA (C56-C57), unc-13/unc-18 mutants (C58-C59), innexin double mutants (C61-C63), and genetic rescue (C64-C65) all support gap junction-mediated transmission. Asymmetry is demonstrated by bidirectional optogenetic experiments (C67-C68). The wiring diagram predictions (C54-C55) are validated experimentally. Controls are appropriate and the logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Chemical synapses from glutamatergic sensory neurons (AWC, ASE, ASK, ASG) tonically inhibit AIA. Synaptic transmission mutants (unc-13, unc-18) show faster and more reliable AIA responses to both diacetyl and AWA optogenetic stimulation. Cell-specific glutamate knockout and rescue experiments identify multiple redundant glutamatergic inputs, with ASK showing partial effects and AWC/ASE together being sufficient for inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The counterintuitive finding that synaptic mutants enhance AIA responses (C78-C79, C82) is well-controlled (C80, C84) and mechanistically explained through glutamatergic inhibition (C86-C87). Cell-specific manipulations using eat-4-FRT (C88-C90) and unc-18 rescue (C91-C92) provide strong evidence for redundant glutamatergic inhibition. The conclusion of net inhibitory effect (C81, C85) is well-supported by multiple independent approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Multiple sensory neurons detect attractive odors with distinct response profiles: ASK and AWC are tonically active and inhibited by diacetyl and isoamyl alcohol, while ASE is activated by diacetyl. These responses are dose-dependent and, for ASK and AWC, occur independently of synaptic transmission, indicating direct odor detection. ASE's response to diacetyl requires synaptic input from other neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Calcium imaging data (C96-C97, C109-C111) directly demonstrate the response profiles. Dose-dependence is shown systematically (C98). The distinction between direct and indirect sensing is supported by appropriate controls using unc-18 mutants (C100-C103). The hypothesis about tonic inhibition (C94) is supported by prior literature (C95) and the current data. The experimental design appropriately uses multiple odor concentrations and genetic controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C137"
+    ],
+    "result": "AIA exhibits bistable electrophysiological properties with stable states at approximately -80 mV and -20 mV, transitioning rapidly at a low current threshold of 2-3 pA. This bistability is associated with high membrane resistance between these states and creates a threshold nonlinearity. Simultaneous voltage and calcium recordings show that GCaMP responses are also bistable and correlate with the voltage transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Direct electrophysiological recordings (C122-C124) provide clear evidence for bistability. Voltage-clamp experiments (C125) support the mechanism. Simultaneous voltage and calcium measurements (C126) validate that the calcium imaging reflects the underlying bistable voltage dynamics. The conclusion about nonlinear computation (C127, C137) follows logically from the bistable properties. The experimental approach is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C143"
+    ],
+    "result": "AIA responses to isoamyl alcohol demonstrate combinatorial integration with dose-dependent reliability. At low concentrations (0.9 \u03bcM), both AWA and AWC are independently required. At higher concentrations (9-90 \u03bcM), AWA and AWC show partial redundancy. This demonstrates that different combinations of sensory neurons can generate reliable AIA activation depending on stimulus strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-dependent reliability (C112) is systematically demonstrated. Genetic analysis using odr-7 (AWA mutant) and ceh-36 (AWC mutant) single and double mutants (C115-C118) provides clear evidence for both independent requirement at low doses and partial redundancy at high doses. This supports the broader conclusion about combinatorial integration (C143). The experimental design appropriately tests multiple concentrations and genetic combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C138",
+      "C139"
+    ],
+    "result": "The proposed model for AIA AND-gate function involves glutamate-gated chloride channels that decrease membrane resistance in the absence of odor, preventing AWA-mediated activation via gap junctions. In the presence of attractive odors, glutamatergic neurons are inhibited, chloride channels close, resistance increases, and AWA depolarization can drive AIA to its plateau potential through gap junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a mechanistic model (C128-C132, C138-C139) that integrates the experimental findings but includes speculative elements. While the model is consistent with the data (glutamatergic inhibition, gap junction transmission, bistability), direct evidence for the specific mechanism (chloride channel closure increasing resistance to enable gap junction transmission) is not provided. The model invokes Ohm's law (C138) appropriately but lacks direct measurement of resistance changes during odor stimulation or direct demonstration of shunting at gap junctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "AIA is proposed to encode positive valence based on integrated sensory state. This interpretation is supported by AIA's role in integrating attractive and repulsive stimuli (copper-diacetyl interactions requiring ASH inhibition of AIA) and by the observation that sensory neurons contributing to AIA activation have roles distinct from their roles in chemotaxis behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The valence encoding interpretation (C8, C161) is speculative and based on inference rather than direct measurement of valence. Supporting evidence from copper-diacetyl interactions (C162-C163) is cited but not experimentally demonstrated in this study. The dissociation between chemotaxis requirements and AIA activation requirements (C164-C165) is noted but not systematically tested. While the interpretation is plausible and consistent with the data, it requires additional behavioral and functional experiments to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "AWA calcium responses to diacetyl are concentration-dependent, with stronger responses at 115 nM than 11.5 nM, and rapid desensitization at 1.15 \u03bcM. Optogenetic activation of AWA with Chrimson produces responses comparable in magnitude to \u2265115 nM diacetyl, requires retinal and transgene expression, and shows minimal desensitization over 10 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The concentration-dependence of AWA responses (C27-C29) is clearly demonstrated in Figure 1A,C and supported by prior work (Larsch et al., 2015). The optogenetic characterization (C32-C35) includes appropriate controls for retinal and transgene requirements (C34) and comparison to odor responses (C35). The data support the conclusion that optogenetic stimulation produces physiologically relevant AWA activation levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "AIA calcium responses to diacetyl show stable baseline fluorescence, dose-dependent probability and latency (nearly all neurons respond to high concentrations with ~1s delay; lower probability and ~2s delay at 11.5 nM), and trial-to-trial variability in latency but not magnitude. Response latencies are independent of GCaMP expression levels and transgene expression. When responses occur, rise times are stereotyped across stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of AIA response properties is thorough and well-controlled. Baseline stability (C37), dose-dependence (C38-C40), and independence from technical factors (C45-C46) are clearly demonstrated. The analysis of trial-to-trial variability (C47-C49) appropriately uses paired pulse experiments and correlation analysis. The stereotyped rise times (C50) are shown in supplementary data with appropriate alignment methods. These are important characterization data supporting the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "AWA-defective mutants (odr-7, odr-10) show less reliable AIA responses to high diacetyl concentrations, but retain some residual response. This residual response suggests additional diacetyl-sensing neurons communicate with AIA through chemical synapses, consistent with the wiring diagram showing AIA receives chemical synapses from many chemosensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reduced reliability in AWA mutants (C51) is clearly shown in Figure 2A-B. The residual response (C75) is evident in the same data. The inference about additional sensory inputs (C76) is logical and supported by the wiring diagram data (C77, Supplementary file 1). This sets up the subsequent experiments identifying glutamatergic inhibition. The logic is sound though the specific identity of additional excitatory inputs is not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The rapid AIA response to direct optogenetic stimulation indicates that delayed responses to sensory stimuli are not due to slow intrinsic calcium dynamics but rather to circuit-level properties requiring integration of multiple inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Direct AIA optogenetic stimulation (C67, Figure 2G-H) shows rapid responses, contrasting with delayed responses to AWA stimulation or low-dose odors. This control experiment (C73) appropriately rules out slow intrinsic dynamics as an explanation for delayed sensory responses. The inference about circuit-level delays (C74) is logical and supported by subsequent findings about requirement for multiple inputs. This is an important control supporting the integration model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "AWA is not the source of ASE's diacetyl response (response preserved in odr-10 mutants), and ASK, AWC, and ASE do not respond to AWA optogenetic stimulation, indicating these sensory neurons detect odors independently rather than through AWA signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The odr-10 control (C104) appropriately tests whether AWA signals to ASE. The lack of responses to AWA::Chrimson in other sensory neurons (C105) is clearly shown in supplementary data. These controls support the conclusion that sensory neurons detect odors independently, which is important for the model of parallel sensory pathways converging on AIA. The experiments are straightforward and well-controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "E. coli OP50-conditioned medium, which activates AWA and ASE while inhibiting AWC and ASK, elicits reliable AIA responses with similar dynamics to high concentrations of diacetyl or isoamyl alcohol. This demonstrates that the AND-gate logic applies to complex natural food stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The OP50 response data (C120) is shown in Figure 5L and supplements. The sensory neuron response profile (C119) is cited from prior work (Zaslaver et al., 2015). The conclusion that AND-gate logic applies to natural stimuli (C121) is supported by the similarity in response dynamics and the engagement of multiple sensory pathways. This extends the findings from defined odors to more naturalistic stimuli, strengthening the biological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "For both diacetyl and isoamyl alcohol, AIA activation timing matches the arrival of the second sensory input rather than the first. At low odor levels, glutamatergic neuron inhibition is graded and gradual, and AWA action potentials lag stimulus onset by ~1 second, contributing to delayed AIA responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The timing analysis (C133) is shown in supplementary figures with simultaneous recordings of multiple neurons. The graded nature of inhibition (C134) is evident in Figure 5A-C. The AWA action potential timing (C135) is appropriately cited from prior work (Liu et al., 2018). These observations explain the mechanistic basis for delayed AIA responses at low stimulus levels and support the AND-gate model requiring coincident inputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C140",
+      "C141",
+      "C142",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C166"
+    ],
+    "result": "The AIA AND-gate computation is compared to similar mechanisms in other systems: plateau potentials in C. elegans RMD neurons, AND-gates in transcriptional regulation and coincidence detection in neural circuits, mixed chemical-electrical synapses in escape circuits, disinhibition in the inferior olive and mammalian cortex. The authors speculate this combination of features may represent a general circuit motif in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide appropriate context by citing relevant literature (C136, C140-C141, C151-C160) comparing the AIA mechanism to similar phenomena in other systems. The comparisons are accurate based on the cited references. The speculation about a general circuit motif (C166) is appropriately qualified as speculative. These contextual claims support the significance of the findings but are primarily literature-based rather than experimental contributions of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background information about C. elegans nervous system, chemosensory system, sensory neuron functions, and prior knowledge about AIA's behavioral roles and responses to attractive odors. These establish the context and prior knowledge for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are background claims citing established literature (White et al., 1986; Bargmann, 2006; Robertson and Thomas, 2006; Bargmann et al., 1993; Troemel et al., 1997; Shinkai et al., 2011; Larsch et al., 2013, 2015; Chalasani et al., 2007, 2010; Cho et al., 2016; L\u00f3pez-Cruz et al., 2019). The citations appear appropriate and the claims accurately represent prior knowledge. These provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Comparison of AIA to AIB interneuron: AIB shows less reliable coupling to odor stimuli (57% vs >90% for AIA), integrates sensory input with motor state, and receives equal synaptic input from sensory neurons and interneurons (unlike AIA which receives 3x more from sensory neurons). This may explain why AIA is more coupled to sensory state than AIB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to AIB is based on appropriate citations (Chalasani et al., 2007; Gordus et al., 2015; Kato et al., 2015; White et al., 1986). The wiring diagram analysis (C147-C148) is cited appropriately. The inference about differential coupling to sensory vs. motor state (C149) is logical based on the connectivity differences, though it is not directly tested in this study. This provides useful context for understanding AIA's specific role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "Summary statement that AWA excites AIA via electrical synapses in the context of chemical synapses from other neurons, as predicted by the wiring diagram.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an accurate summary of the major findings regarding synaptic mechanisms (supported by claims C3, C4, C56-C66, C78-C93). It correctly notes that the findings match wiring diagram predictions. This summary claim is well-supported by the experimental data.",
+    "result_type": "MINOR"
+  }
+]

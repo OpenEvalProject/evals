@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "U. maydis undergoes a unique G2 cell cycle arrest during mating and infection. Unlike most fungi that arrest at G1, U. maydis arrests at G2 phase in response to pheromone recognition. This arrest is initiated upon pheromone recognition in each mating partner and sustained after cell fusion until plant entry. The sustained G2 arrest is mandatory for infection, as its impairment results in inability to infect plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C13, C16-C26 collectively establish the biological context and uniqueness of U. maydis cell cycle regulation during mating and infection. These claims are well-supported by multiple citations to prior work (C7-C13, C16, C18-C19, C22-C23, C25) and describe established knowledge about the U. maydis system. The claims are internally consistent and provide the necessary background for understanding the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Expression of the activated fuz7DD allele faithfully recapitulates pheromone-induced G2 cell cycle arrest. Cells expressing fuz7DD accumulate 2C DNA content with intact nuclear membranes, show increased Cdk1 inhibitory phosphorylation, and this arrest is dependent on Kpp2 but independent of Prf1. Preventing Cdk1 inhibitory phosphorylation abrogates the arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by experimental data (FACS analysis in Figure 1A, microscopy in Figure 1B, Western blots in Figures 1C-D) and prior citations validating the fuz7DD system. The genetic dependencies (Kpp2, Prf1) are demonstrated in Figure 1\u2014figure supplement 1E. The conclusion that G2 arrest depends on Cdk1 inhibitory phosphorylation is well-supported by the cdk1AF and wee1 downregulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Pheromone cascade-induced cell cycle arrest differs mechanistically from b-factor-induced arrest. While both downregulate hsl1, the pheromone cascade does not involve Chk1 or upregulate biz1. Cdc25 protein levels drop upon fuz7DD expression, but overexpression of Cdc25 does not abrogate arrest, indicating the decrease is not causal. This contrasts with b-dependent arrest, which can be overwhelmed by high Cdc25 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by qRT-PCR data (Figure 1\u2014figure supplement 3A), genetic analysis (Figure 1\u2014figure supplement 3B), Western blots (Figure 1E), and overexpression experiments (Figures 1F, 1\u2014figure supplement 4). The comparison to b-dependent arrest is supported by citation C41. The logic is sound: if Cdc25 decrease were causal, overexpression should rescue, but it doesn't, indicating a different mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Pcl12 and Crk1 form a complex required for pheromone cascade-induced cell cycle arrest. Pcl12 is a cyclin strongly induced by the pheromone MAPK, and its ectopic expression induces G2-arrested conjugation tubes. Crk1 was identified as a major Pcl12-interacting protein by LC/MS. Both are required for fuz7DD-induced cell cycle arrest and Cdc25 downregulation. Cdk5, which forms a separate complex with Pcl12 for morphogenesis, is not required for cell cycle arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44-C45, C92-C99 are supported by genetic data (Figures 2A-E), proteomic analysis (Figure 2\u2014figure supplement 2), and prior citations. The LC/MS identification of Crk1 as a Pcl12 interactor is direct evidence. The genetic requirement for both proteins in cell cycle arrest is demonstrated by loss-of-function experiments. The distinction from the Pcl12-Cdk5 complex is supported by the cdk5ts experiment (Figure 2\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Crk1 activation for cell cycle arrest does not require phosphorylation by the MAPK cascade. Cells carrying crk1 alleles refractory to phosphorylation by Fuz7 (crk1AEF) or Kpp2 (crk1AAA) can still arrest upon fuz7DD or pcl12 expression. The authors propose Crk1 can be activated by two distinct mechanisms: as a MAPK by T-loop phosphorylation for polar growth, or as a CDK by interaction with Pcl12 for cell cycle arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by genetic data showing that phosphorylation-defective crk1 alleles retain cell cycle arrest function (Figures 2F, 2C, 2\u2014figure supplement 3). This is surprising given prior work showing these phosphorylations are required for morphogenesis. The dual activation model (C48) is a reasonable inference to explain these observations, though it remains a hypothesis requiring further mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Ectopic pcl12 expression induces cell cycle arrest by excluding Cdc25 from the nucleus without decreasing Cdc25 protein levels. GFP-Cdc25 is excluded from nuclei in pcl12-expressing filaments in a Crk1-dependent manner. The Crk1-Pcl12 complex inhibits the interaction between Cdc25 and its importin Kap123, but G2 arrest alone does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by multiple lines of evidence: cell cycle arrest depends on Cdk1 phosphorylation (Figure 3\u2014figure supplement 1A-B), Cdc25 levels don't decrease (Figure 3\u2014figure supplement 1C), microscopy shows nuclear exclusion (Figures 3A-B), and co-IP shows Crk1-Pcl12 disrupts Cdc25-Kap123 interaction (Figure 3C). The control using Wee1 overexpression to induce G2 arrest without Crk1-Pcl12 is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C101"
+    ],
+    "result": "Kap123 is phosphorylated upon pheromone cascade activation. Kap123 shows reduced electrophoretic mobility upon fuz7DD or pcl12 expression, which is sensitive to phosphatase treatment. The mobility shift upon fuz7DD expression requires Crk1, Pcl12, and Kpp2, while pcl12-induced shift requires only Crk1. Kap123 is a \u03b2-importin of class 3/4 required for nuclear localization of Cdc25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58, C101 are supported by Western blot data showing mobility shifts (Figures 3D-H), phosphatase sensitivity (Figure 3E), genetic dependencies (Figures 3G-H), phylogenetic analysis (Figure 3\u2014figure supplement 2A), and functional data (Figure 3\u2014figure supplement 2B-C). The phosphatase treatment directly demonstrates phosphorylation. The genetic requirements match the cell cycle arrest requirements, supporting a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Phosphorylation of Kap123 at T867 is required for pheromone cascade-induced cell cycle arrest. The kap123T867A mutant shows no mobility shift upon fuz7DD or pcl12 expression, cannot undergo cell cycle arrest, cannot retain Cdc25 in the cytoplasm, and maintains interaction with Cdc25 even in the presence of Crk1-Pcl12 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by comprehensive functional analysis of the kap123T867A mutant: Western blots (Figures 4B-C), cell cycle analysis (Figures 4D-E), microscopy (Figures 4F-G), and co-IP (Figure 4H). The identification of T867 as the critical residue was done systematically by testing multiple predicted phosphorylation sites (Figure 4\u2014figure supplement 1). The mutant phenotypes are consistent across all assays, strongly supporting the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The kap123T867A mutant cannot arrest in response to synthetic pheromone. Cells carrying this allele fail to arrest even at high pheromone concentrations, show no Kap123 mobility shift, and cannot exclude Cdc25 from the nucleus in response to pheromone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 validate the model using physiological pheromone stimulation rather than the fuz7DD system. The data (Figures 5A-D) show consistent phenotypes: no cell cycle arrest, no Kap123 phosphorylation, and no Cdc25 nuclear exclusion. This demonstrates the mechanism operates during normal pheromone response, not just with the artificial fuz7DD system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Strains lacking pheromone-induced cell cycle arrest (kap123T867A) are as virulent as wild-type in plant infections. These mutants can mate (positive fuzzy phenotype), but resulting filaments are multinucleated (2-4 nuclei). The kap123T867A allele does not affect b-factor-induced cell cycle arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by plant infection data (Figure 6A), mating assays (Figure 6B), microscopy (Figures 6C-D), and b-factor arrest assays (Figure 6\u2014figure supplement 1). The unexpected finding that virulence is unaffected is explained by the authors: b-factor can resynchronize nuclei after fusion. The multinucleated filaments (2-4 nuclei) are consistent with fusion at different cell cycle stages, but b-factor prevents further divisions. This is a logical explanation supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C80"
+    ],
+    "result": "Cdc25 downregulation requires high pheromone signaling and cytoplasmic retention. Low pheromone (0.25 \u03bcg/ml) induces arrest without Cdc25 downregulation, while higher concentrations cause dose-dependent Cdc25 decrease. Downregulation requires cytoplasmic retention (absent in kap123T867A) and the MAPK Kpp2. Kpp2 physically interacts with Cdc25 under conditions of high MAPK signaling and cytoplasmic retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75, C80 are supported by dose-response experiments (Figure 7A), genetic analysis (Figures 7B-C), and co-IP (Figure 7D). The logic is sound: retention is necessary but not sufficient (pcl12 alone doesn't cause downregulation), and high MAPK activity is required (Kpp2 dependence). The physical interaction between Kpp2 and Cdc25 under specific conditions supports direct targeting. The conclusion (C80) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The N-terminal extension of Cdc25 contains MAPK phosphorylation sites required for its downregulation. U. maydis Cdc25 has an unusual 270 amino acid N-terminal extension. Deletion of this region or mutation of three putative MAPK sites (cdc25AAA) stabilizes Cdc25 upon fuz7DD expression. These mutations do not affect cell cycle arrest or cytoplasmic retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by sequence analysis (Figure 7E), Western blots showing stabilization (Figures 7F-G), and functional assays (Figures 7H-I). The N-terminal extension is unique to U. maydis Cdc25. Both deletion and point mutations prevent downregulation while maintaining arrest function, indicating the extension is specifically required for degradation but not for the arrest mechanism itself. This is consistent with the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Strains carrying the cdc25AAA allele (resistant to downregulation) are strongly defective in virulence. Compatible crosses are affected, but the solopathogenic SG200 strain is unaffected, indicating a mating-specific defect. Mutant crosses show weak fuzzy phenotype, can undergo cell fusion, but produce multinucleated filaments with >5 nuclei. The cdc25AAA allele does not affect de novo b-factor-induced arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are supported by plant infection data (Figure 8A), mating assays (Figure 8B), microscopy (Figures 8C-D), and b-factor arrest assays (Figure 8E). The key finding is that preventing Cdc25 downregulation causes virulence defects specifically in crosses, not in solopathogenic strains. The multinucleated filaments (>5 nuclei) contrast with kap123T867A (\u22644 nuclei), suggesting the stable Cdc25 can eventually overwhelm b-factor arrest. This supports the model that Cdc25 downregulation is required for proper transition to b-dependent arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The pheromone and b-factor regulatory networks use distinct mechanisms to control Cdc25. Both upregulate Wee1 by repressing hsl1, but differ in Cdc25 regulation: pheromone cascade inhibits Cdc25 nuclear import via Kap123 phosphorylation (cannot be bypassed by overexpression), while b-factor retains Cdc25 via 14-3-3 proteins and represses clb1 (can be overwhelmed by overexpression). The authors propose pheromone-dependent arrest is reversible, while b-dependent arrest is more terminal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C115-C126 synthesize the experimental findings into a coherent model. The mechanistic differences are well-supported by the data: overexpression experiments distinguish the two mechanisms (C39, C41, C125-C126), and the functional interpretations about reversibility (C121-C124) are logical given the biological context. The model explains why Cdc25 must be downregulated before b-factor activation: to prevent overwhelming the 14-3-3 retention system. This is supported by the cdc25AAA phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Crk1 is a member of the RD kinase family with features of both CDKs and MAPKs. It carries a TEY signature typical of MAPKs but structurally resembles Cdk2. Crk1 belongs to the Ime2 family of fungal kinases involved in sexual development. RD kinases can be activated by T-loop phosphorylation or by cyclin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C132 provide the structural and evolutionary context for understanding Crk1's dual functionality. These are supported by citations to prior work on RD kinases (C127, C129), Crk1 structure (C130), and the Ime2 family (C131-C132). The information is consistent with the experimental observation that Crk1 can function in cell cycle arrest without MAPK-type phosphorylation when bound to Pcl12. This provides a mechanistic framework for the dual activation model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C27",
+      "C28",
+      "C89",
+      "C90",
+      "C91",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Background on cell cycle regulation during mating in eukaryotes and fungi. Most organisms synchronize at G1 before fusion; U. maydis is exceptional in synchronizing at G2. Cell cycle-infection connections exist in other fungal pathogens. G2/M transition in U. maydis is controlled by Cdk1-Clb2 complex and Cdk1 inhibitory phosphorylation. The b-factor maintains arrest through multiple mechanisms including DDR activation and transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12, C14, C27-C28, C89-C91, C100, C102-C114 provide essential background and context. These are supported by numerous citations to prior work and represent established knowledge in the field. They set up the biological problem and provide the framework for understanding the significance of the current findings. While not novel results, they are accurately presented and appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

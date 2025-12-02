@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Grid cells in the medial entorhinal cortex encode position using a distributed, modular representation with distinct spatial scales, conferring the neural code with large capacity and high dynamic range that exceeds unimodal coding schemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 establish well-documented properties of grid cells based on extensive prior experimental and theoretical work. These are foundational claims supported by multiple citations to established literature and represent accepted knowledge in the field rather than novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Neurons within a grid cell module maintain strict relationships in their joint activity that persist across diverse conditions, strongly suggesting coordination by recurrent connectivity consistent with attractor models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 summarize well-established experimental observations and theoretical interpretations from prior work. The rigidity of within-module correlations across multiple experimental conditions provides strong support for attractor dynamics, though these are not novel findings of the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Uncoupled noise-driven drifts between modules can rapidly produce catastrophic readout errors, necessitating a coupling mechanism that restricts changes to a low-dimensional subspace while preserving the high-dimensional steady state manifold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C22 establish the core computational problem addressed by the manuscript. The demonstration in Figure 1A combined with theoretical arguments from prior work (C19-C20) and the design requirements (C21-C22) provide clear motivation for the proposed solution. The problem formulation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The double-ring attractor architecture, originally proposed for head direction cells and recently supported by Drosophila central complex findings, provides the foundation for the coupling mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 accurately describe prior theoretical and experimental work. The double-ring architecture is an established model, and the Drosophila findings provide biological validation. These claims appropriately contextualize the modeling framework used in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The proposed velocity coupling mechanism suppresses incompatible drifts through all-to-all synaptic connectivity between modules with uniform weight magnitudes and signs determined by sub-population identity, preserving rotational symmetry and the combinatorially large manifold of steady states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28-C31 describe the core theoretical contribution. The mathematical derivations (Equations 5-12) demonstrate that the proposed connectivity structure achieves the design goals: coupling velocities without restricting phase combinations. The symmetry properties (C31) are direct consequences of the connectivity structure, ensuring preservation of capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37"
+    ],
+    "result": "Simulations demonstrate that coupled modules shift in a coordinated manner even with incompatible velocity inputs, substantially reducing trajectory mismatch compared to uncoupled modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C37 are directly supported by simulation results in Figures 3 and 4. Figure 4F quantitatively shows dramatic reduction in mean square displacement between module trajectories. The simulations use realistic parameters and measured rat trajectories, providing strong evidence for the coupling mechanism's effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The coupling mechanism prevents catastrophic readout errors: coupled modules maintain continuous, accurate position decoding over 20s with 100% success, while uncoupled modules exhibit discontinuous trajectories and sharply increasing MSE due to incompatible phase drifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are strongly supported by systematic simulations in Figure 5 with 100 realizations. The quantitative comparison shows coupled networks maintain 100% decoding success while uncoupled networks fail rapidly (Figure 5C). The MSE analysis (Figure 5D) demonstrates that catastrophic errors, not gradual drift, dominate uncoupled performance. The evidence is compelling and statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The coupling mechanism is effective against intrinsic neural noise: the diffusion tensor becomes highly anisotropic with ~40-fold suppression of incompatible drift, dramatically reducing readout discontinuities and MSE in Poisson spiking networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C49-C51 extend the results to intrinsic stochasticity. The diffusion tensor analysis (Figure 6A, Equation 25) provides theoretical support, while simulations with Poisson neurons (Figure 6B-C) demonstrate practical effectiveness. The ~40-fold anisotropy ratio matches the velocity response ratio, showing consistency between input noise and intrinsic noise suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The number of grid cell modules in rodents is unknown but at least four exist; increasing module number reduces discontinuity rates within a given environment but enables representation of larger environments with higher error rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 accurately represent experimental knowledge (C54) and theoretical predictions (C55). Figure 5\u2014figure supplement 2 demonstrates the trade-offs with varying module numbers and environment sizes. The claims appropriately acknowledge uncertainty about the actual number of modules while exploring the implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The velocity coupling mechanism may play an especially important role in generating cognitive maps of novel environments where hippocampal coupling is ineffective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is speculative and based on logical inference about when hippocampal inputs would be unavailable. While the reasoning is sound, there is no direct experimental evidence presented to support this specific functional role. The claim appropriately uses tentative language ('may play') but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Phase resets occur at environmental boundaries and can theoretically be implemented through border cell inputs to grid cells in attractor models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 accurately summarize prior experimental findings (C57) and theoretical proposals (C58) from cited work. These claims provide context for how external inputs might interact with the proposed coupling mechanism but are not novel contributions of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The proposed all-to-all connectivity differs fundamentally from the spatially local connectivity in Kang and Balasubramanian (2019), which produces interlocked patterns with preferred relative phases that would limit representational capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide accurate comparison with alternative models. The distinction between phase-invariant all-to-all connectivity (preserving capacity) versus spatially local connectivity (producing phase preferences) is clearly articulated and represents an important conceptual difference in approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Negative self-coupling of velocities can suppress noise-driven diffusion in single ring attractors, potentially stabilizing short-term memory in head direction cells of rodents and insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 extend the mechanism to single-module systems but are largely speculative. While the theoretical reasoning is sound, no simulations or experimental evidence are provided for head direction cell applications. The claims appropriately use tentative language but require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Disconnecting one module from others is predicted to weaken its velocity response and increase its grid spacing due to removal of positive inter-module coupling while retaining negative self-coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 presents a testable experimental prediction supported by the model's mathematical structure and illustrated in Figure 4\u2014figure supplement 1. The prediction follows logically from the coupling architecture and provides a specific, falsifiable test of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Testing for inter-module coupling requires weak sensory cues and should focus on correlations in phase updates rather than phases themselves; sleep recordings show reduced correlations but this could reflect increased environmental repertoire rather than absent coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 provide methodologically sound recommendations for experimental testing. The distinction between phase correlations (which average out over large environments) and velocity correlations (which would reveal coupling) is important. The alternative interpretation of sleep data (C66) demonstrates appropriate consideration of confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Conjunctive cells in layer III and deeper MEC layers may provide the substrate for the proposed connectivity, and recent evidence suggests excitatory connections have sufficient spatial extent for adjacent module coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 speculate about biological implementation. While conjunctive cells are plausible candidates and recent anatomical data (Fu et al., 2018) is consistent with the model, direct evidence for the proposed connectivity pattern is lacking. The claims appropriately acknowledge these as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The coupling mechanism may be implemented by recurrent synaptic connectivity within the MEC with a relatively simple and biologically plausible structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C5 proposes biological plausibility but lacks direct experimental validation. While the all-to-all connectivity with uniform weights is mathematically simple, whether this represents a 'simple' biological implementation is debatable. The claim requires experimental verification of the proposed connectivity patterns in MEC.",
+    "result_type": "MAJOR"
+  }
+]

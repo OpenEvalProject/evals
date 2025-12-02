@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "A phosphoproteomic screen identified 2672 unique phosphopeptides on 949 proteins with differential phosphorylation under calorie restriction (CR) versus normal glucose conditions. The abundance of phosphopeptides generally decreased under CR, consistent with known kinase downregulation. Among these, 318 proteins showed increased phosphorylation under CR, 427 showed decreased phosphorylation, and 113 showed both. Gene Ontology analysis revealed enrichment in biological processes including glycolysis, cytokinesis, signal transduction, transcription, and stress response, with many phosphorylation events coinciding with known CR/nutrient-sensing pathways (PKA, Tor, Snf1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively describe a comprehensive phosphoproteomic screen with appropriate statistical thresholds (p < 0.05), quantitative data, and bioinformatic validation through GO analysis. The results are consistent with prior knowledge of CR-mediated kinase regulation and are supported by multiple figures showing mass spectrometry data, distribution plots, and pathway analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Functional screening of 135 candidate proteins identified Ids2 as a key regulator under CR. The ids2-S148D phosphomimetic strain displayed growth defects under heat shock, glycerol, and CR conditions, and showed shortened chronological lifespan (CLS). Mass spectrometry identified S148 on Ids2 as dephosphorylated under CR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 describe a systematic functional screen with phenotypic validation. The identification of Ids2-S148 dephosphorylation by mass spectrometry (C10) and the consistent phenotypes of ids2\u0394 and ids2-S148D mutants in multiple assays (growth, stress resistance, CLS) provide strong converging evidence. The data are shown in Figures 1B-D and Figure 2\u2014figure supplement 1A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "PKA directly phosphorylates Ids2 at S148 in response to glucose. Ids2-S148 phosphorylation decreased under CR but not under nitrogen starvation or TOR inhibition. Computational prediction and genetic analysis suggested PKA as the kinase, with deletion of TPK3 significantly reducing Ids2 phosphorylation. In vitro kinase assays demonstrated that both yeast PKA and bovine PKA catalytic subunit phosphorylate GST-Ids2, but not the S148A mutant or when using PKA kinase-dead extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 provide multiple lines of evidence for PKA-mediated phosphorylation of Ids2-S148: Western blot analysis with phospho-specific antibodies (C15-C16), computational prediction (C17), genetic analysis (C18-C19), and in vitro kinase assays with appropriate controls (C20-C22). The convergence of computational, genetic, and biochemical evidence strongly supports the conclusion that PKA directly phosphorylates Ids2-S148.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PP2C phosphatases (Ptc2/Ptc3) dephosphorylate Ids2-S148 under CR. Ids2 phosphorylation increased in ptc2\u0394 ptc3\u0394 cells, and recombinant Ptc2 removed S148 phosphorylation in vitro. The ids2-S148A mutation rescued growth defects in ptc2\u0394, ptc3\u0394, and ptc2\u0394 ptc3\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 provide genetic and biochemical evidence for PP2C-mediated dephosphorylation: increased phosphorylation in phosphatase mutants (C24), in vitro phosphatase activity (C25), and genetic rescue experiments (C27). The convergence of these approaches strongly supports PP2C as the phosphatase for Ids2-S148.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Ids2 physically interacts with HSP90 chaperones (Hsc82/Hsp82) in a phosphorylation-dependent manner. TAP-MS identified Hsc82 and Hsp82 as Ids2 interaction partners. Co-immunoprecipitation and yeast two-hybrid assays confirmed the interaction, mapping it to amino acids 92-256 of Ids2 and 272-579 of Hsc82. The phosphomimetic S148D mutation significantly decreased the Ids2-Hsc82 interaction, while the S148A mutation increased it. CR significantly enhanced the Ids2-Hsc82 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 provide comprehensive evidence for phosphorylation-regulated Ids2-Hsc82 interaction using multiple complementary approaches: TAP-MS (C29), co-immunoprecipitation (C31, C33-C34, C37), yeast two-hybrid (C32), and in vitro pull-down assays (C35). The consistent effects of phosphomimetic and dephosphomimetic mutations across multiple assays strongly support the phosphorylation-dependent regulation of this interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Ids2 acts as a co-chaperone that stimulates HSP90 ATPase activity rather than serving as an HSP90 substrate. Deletion of HSC82 did not affect Ids2 stability. In vitro ATPase assays showed that Ids2 triggers Hsc82 ATPase activity, and phosphorylation of Ids2 attenuates this activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 distinguish between Ids2 as a substrate versus regulator of HSP90. The stability data (C38) rules out Ids2 as a substrate, while the ATPase assay (C40-C41) demonstrates a regulatory role. The phosphorylation-dependent modulation of ATPase activity provides a mechanistic link between Ids2 phosphorylation and HSP90 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Ids2 phosphorylation impairs mitochondrial function. The ids2\u0394 and ids2-S148D strains displayed growth defects on glycerol and formed white colonies, indicative of mitochondrial dysfunction. This is consistent with Hsc82's known role in mitochondrial F1-ATPase assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 link Ids2 phosphorylation to mitochondrial function through phenotypic analysis (growth on glycerol, colony color) and citation to prior work on Hsc82's role in mitochondrial function. The consistent phenotypes of ids2\u0394 and ids2-S148D support the inference that Ids2 phosphorylation impairs Hsc82 chaperone activity, leading to mitochondrial defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Ids2 functions as a co-regulator of HSP90 chaperone activity in protein folding. Multiple HSP90-dependent assays showed impaired function in ids2\u0394 and ids2-S148D strains: firefly luciferase expression was reduced or lost, glucocorticoid receptor (GR) activity decreased by ~30%, and v-Src toxicity was reduced. The ids2-S148A mutant showed wild-type levels of luciferase expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 provide multiple independent HSP90-dependent functional assays (luciferase folding, GR maturation, v-Src toxicity) that consistently show impaired HSP90 function in ids2\u0394 and ids2-S148D strains. The rescue by the S148A mutation (C49) and the consistency across different HSP90 substrates strongly support Ids2 as a co-regulator of HSP90 chaperone activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Ids2 phosphorylation promotes protein aggregation. The number of Gln1-GFP foci dramatically increased in ids2-S148D mutants compared to wild-type and ids2-S148A strains under glucose deprivation, suggesting that Ids2 phosphorylation triggers protein aggregation through downregulation of HSP90 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 use a well-established protein aggregation marker (Gln1-GFP foci) to demonstrate that Ids2 phosphorylation promotes aggregation. The dramatic increase in foci in the phosphomimetic mutant (C56) and the rescue by the dephosphomimetic mutation provide strong evidence. The mRNA levels were controlled (Figure 4D), ruling out transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Dephosphorylated Ids2 is critical for CR-mediated lifespan extension. The ids2-S148A strain showed normal CR-mediated CLS extension, while the ids2-S148D strain lost CR-mediated lifespan extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 directly link Ids2 phosphorylation status to CR-mediated longevity. The differential effects of phosphomimetic versus dephosphomimetic mutations on CLS under CR (Figure 4\u2014figure supplement 2C) provide strong evidence that Ids2 dephosphorylation is required for CR-mediated lifespan extension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study establishes a mechanistic link between glucose sensing and protein quality control through PKA-mediated phosphorylation of the HSP90 co-chaperone Ids2. The phosphoproteomic screen mapped 632 CR-responsive proteins, leading to identification of Ids2 as a co-chaperone inactivated by glucose intake. PKA and PP2C orchestrate glucose sensing and protein folding, with Ids2 phosphorylation impeding its association with HSP90, thereby linking glucose concentration to HSP90 chaperone activity and cellular longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 synthesize the major findings into a coherent model. The claims are well-supported by the comprehensive experimental evidence from phosphoproteomics, genetics, biochemistry, and functional assays presented throughout the manuscript. The model is summarized in Figure 5 and represents a novel mechanistic connection between nutrient sensing and proteostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The findings are consistent with prior genetic interaction data and suggest evolutionary conservation. Previous large-scale analysis showed genetic interaction between HSP90 and Ids2. Sequence alignments show conservation of Ids2 homologues across species, including the S148 residue, suggesting potential conservation of this regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 place the findings in broader context. The consistency with prior genetic interaction data (C66) and sequence conservation analysis (C69) support the biological significance of the findings. However, C67 is speculative and would require additional experimental validation in other organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study reveals a previously underappreciated mechanism of glucose-mediated chaperone regulation: glucose concentration modulates HSP90 activity through PKA-dependent co-chaperone phosphorylation. This is supported by prior observations that glucose intake modulates HSP90 expression and PKA-mediated HSP90\u03b1 phosphorylation in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 contextualize the findings within existing literature on glucose-HSP90 connections in mammals. The citations to prior work (C70-C71) support the broader relevance of the mechanism discovered in yeast. The claim of a 'previously underappreciated' mechanism (C72) is justified by the novelty of the co-chaperone phosphorylation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Heat shock and oxidative stress reduce Ids2 phosphorylation, suggesting a general stress response mechanism. Cells may use Ids2 dephosphorylation to stimulate chaperone activity for coping with various stresses beyond glucose limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 extend the findings beyond glucose sensing to general stress responses. The experimental data showing reduced Ids2 phosphorylation under heat shock and oxidative stress (C75) support this extension. However, C76 is somewhat speculative and would benefit from additional functional validation under these stress conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "PP2C phosphatases antagonize PKA function to extend lifespan by maintaining HSP90 chaperone activity. While PP2C phosphatases are known negative regulators of MAPK, and MAPK deficiency extends CLS, this study provides an alternative mechanism: PP2C removes PKA-mediated Ids2 phosphorylation to maintain chaperone activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 propose a mechanism for PP2C-mediated lifespan extension through Ids2 dephosphorylation. The genetic rescue experiments (C27) and in vitro phosphatase assays (C25) support this mechanism. The discussion acknowledges the lack of direct evidence for PP2C control of stress tolerance through MAPK (C81), making the alternative mechanism through Ids2 a valuable contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Ids2 binds to the middle domain (M) of HSP90 and stimulates its ATPase activity, similar to the co-chaperone Aha1. Domain mapping showed that Ids2 binds to amino acids 272-579 (M domain) of Hsc82. Ids2 also forms a complex with Aha1 in TAP-MS data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 place Ids2 within the established framework of HSP90 co-chaperones. The domain mapping by yeast two-hybrid (C85, Figure 3\u2014figure supplement 2) and ATPase stimulation assays (C86, Figure 4A) are well-supported. The detection of Aha1 in the Ids2-TAP complex (C87) suggests potential functional relationships, though the mechanistic details remain to be elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Summary of the main findings: A phosphoproteomic screen identified Ids2 as a key regulator linking nutrient sensing to proteostasis. Ids2 is activated by PP2C under CR and inactivated by PKA under glucose intake. Loss of Ids2 function (deletion or phosphomimetic mutation) causes heat sensitivity and lifespan shortening. Ids2 serves as a co-chaperone for HSP90, and phosphorylation impedes this association. PP2C and PKA orchestrate glucose sensing and protein folding to maintain protein quality for longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C99 summarize the major findings from the abstract and introduction. These claims are well-supported by the comprehensive experimental evidence presented throughout the manuscript, including phosphoproteomics, genetics, biochemistry, cell biology, and lifespan assays. The integration of nutrient sensing and proteostasis through Ids2 phosphorylation represents a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Background and context: Aging involves gradual loss of physiological functions and has been attributed to nine hallmarks, but crosstalk between hallmarks is rare. Calorie restriction (CR) is the most effective intervention to extend lifespan across species. In yeast, CR (0.5% vs 2% glucose) extends lifespan by 30-40% through metabolic regulation and enhanced stress resistance, involving downregulation of mTOR and PKA pathways and activation of Rim15, Msn2/4, Gis1, and Snf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C116 provide established background information supported by appropriate citations. These claims set the context for the study and justify the experimental approach. The characterization of yeast CR models and known signaling pathways is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "Ids2 is involved in modulation of Ime2 during meiosis but is functionally unknown in the mitotic cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by citation to prior work (Sia and Mitchell, 1995) and provides context for why Ids2 was not previously recognized as important in mitotic cells. This background information justifies the novelty of the findings.",
+    "result_type": "MINOR"
+  }
+]

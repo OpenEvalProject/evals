@@ -1,0 +1,536 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors established a CRC PDX model by subcutaneous implantation of patient tumor samples in NSG mice. 48.3% of samples engrafted, with MSI-H tumors showing the highest engraftment rate (83.3%). AJCC stage was not associated with engraftment (p=0.35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 provide descriptive statistics about the PDX cohort establishment. The engraftment rates, patient characteristics, and mutation profiles are directly measured data from the experiments. The statistical test for AJCC stage association is appropriately reported with a p-value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C37",
+      "C38",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Subcutaneous tumor engraftment was associated with worse patient survival (p=0.045), but subcutaneous tumor growth rate was not significantly associated with survival (p=0.27). In contrast, liver metastatic growth rate was significantly correlated with patient survival (p=0.031).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C30, C37 present survival analyses with appropriate statistical tests (log-rank tests) and significant p-values. The differential prognostic power of subcutaneous versus liver growth is well-documented with converging evidence. Claims C105-C107 in the Discussion section appropriately summarize these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Liver metastatic colonization was achieved in 15/17 patient samples with time to sacrifice ranging from 51-407 days. PDXs fell into two groups based on liver growth rates (fast vs. slow), but these groups showed similar subcutaneous growth rates (p=0.09), suggesting distinct selective pressures in the liver microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 present directly measured experimental data. The inference in C36 about distinct selective pressures is reasonable given the lack of correlation between subcutaneous and liver growth rates (C33, R\u00b2=0.046, p=0.50) and the similar subcutaneous growth of PDXs with different liver growth rates (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Both subcutaneous and liver engrafted tumors recapitulated the histological architecture of the primary tumors from which they were derived, maintaining their differentiation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by histological analysis shown in Figure 2\u2014figure supplement 2. The preservation of tumor architecture and differentiation status across different implantation sites validates the PDX model's fidelity to patient tumors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In vivo selection generated liver metastatic derivatives that colonized mouse livers more efficiently than parental PDXs. Transcriptomic analysis revealed hypoxia as the most significantly enriched gene signature (NES=2.12, q<0.001) in liver metastatic derivatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by direct experimental measurements shown in Figure 3. Claim C43 is based on GSEA analysis with appropriate statistical metrics. Claim C44 appropriately contextualizes the finding with cited prior work about hypoxia in the liver microenvironment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Fisher's combined probability test identified 24 genes significantly upregulated across liver metastatic derivatives. This gene signature was significantly enriched in patient liver metastases (p=0.007) and correlated with patient data (rho=0.39, p=0.047).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe the transcriptomic analysis pipeline and validation in patient datasets. The statistical methods are appropriate, and the validation in independent patient cohorts (C48, C49) supports the clinical relevance of the findings. The identification of previously known metastasis genes (C46) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "PCK1 was highly upregulated in human CRC liver metastases relative to primary tumors across multiple independent patient datasets, including paired samples from the same patients (p=0.01 in GSE50760, p=0.01 in GSE14297, p<0.0001 in GSE6988).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate consistent PCK1 upregulation across multiple independent datasets with appropriate statistical tests. The validation in paired samples (C53, C54) is particularly strong as it controls for patient-to-patient variability. qRT-PCR confirmation (C51) provides orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PCK1 depletion significantly impaired liver metastatic colonization in multiple CRC cell lines (p<0.0001 in SW480 and LS174T; p=0.039 and p=0.005 in immunocompetent CT26 model) but did not affect subcutaneous tumor growth or in vitro proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 present functional validation of PCK1's role in liver metastasis using multiple cell lines, independent shRNAs, and both immunodeficient and immunocompetent models. The specificity for liver colonization versus subcutaneous growth (C58) and the lack of effect on basal proliferation (C60) strengthen the conclusion. Statistical tests are appropriate with highly significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "PCK1 overexpression in SW480 cells significantly increased liver metastatic colonization (p=0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 provides gain-of-function validation complementing the loss-of-function studies. The significant p-value and consistency with knockdown experiments support the conclusion that PCK1 promotes liver metastasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Inducible PCK1 depletion after initial liver colonization (days 0-4) continued to impair metastatic liver growth (p=0.004) without increasing apoptosis. Growth rate analysis showed PCK1 modulation altered the rate of in vivo growth, revealing that PCK1 promotes the rate of metastatic growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 present mechanistic experiments using inducible knockdown and growth rate analysis. The temporal control (C61) demonstrates PCK1's role extends beyond initial colonization. The lack of increased apoptosis (C62) and altered growth rates (C63) support the conclusion in C64 that PCK1 affects growth rate rather than cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C121"
+    ],
+    "result": "PCK1 depletion significantly reduced CRC cell growth under hypoxia but not under normoxia, providing the first evidence that PCK1 can promote hypoxic growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 demonstrate oxygen-dependent effects of PCK1 with appropriate controls. The specificity for hypoxia is well-documented with statistical significance. Claim C121 appropriately notes this as novel finding. The rescue experiment in Figure 6\u2014figure supplement 1A provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C6"
+    ],
+    "result": "Metabolite profiling revealed that three out of four PDX pairs showed increased abundance of pyrimidine biosynthetic pathway metabolites (orotate, dihydroorotate, ureidopropionate) in liver metastatic derivatives, indicating that metastatic colonization selects for enhanced pyrimidine biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are based on metabolite profiling data shown in Figure 6C. The observation in 3/4 PDX pairs provides reasonable support, though not universal. Claim C6 from the abstract appropriately summarizes this finding. The consistency across multiple independent PDX lines strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "PCK1-depleted cells showed significant depletion of nucleosides and nucleotides (uridine, guanine, UMP, CMP, CDP, IMP, GMP, AMP) under hypoxia but not normoxia, revealing that PCK1 is required for nucleotide pool maintenance in hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 present metabolite profiling data with appropriate statistical analysis (FDR-adjusted q-values). The oxygen-dependent effect (C72) strengthens the mechanistic link to hypoxia. Claim C73 is a reasonable conclusion from the data, though the precise mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "13C-glutamine tracing revealed that PCK1 depletion significantly decreased pyrimidine precursor generation (aspartate and orotate) via reductive carboxylation, while oxidative TCA cycle-derived precursors were increased or unchanged, demonstrating that PCK1 promotes reductive carboxylation under hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 present isotope tracing data with appropriate statistical analysis. The differential effects on reductive versus oxidative pathways (C75) provide mechanistic specificity. Claim C76 is a well-supported conclusion from the flux analysis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Aspartate supplementation partially rescued the hypoxic growth defect of PCK1-depleted cells, while combined aspartate and pyruvate supplementation nearly fully rescued growth, revealing that PCK1 promotes growth by maintaining aspartate levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 present metabolite rescue experiments with clear dose-response relationships. The partial rescue with aspartate alone (C78) and near-complete rescue with combined supplementation (C80) support the mechanistic model. Claim C81 is a reasonable conclusion, though C82 appropriately notes additional mechanisms may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Uridine supplementation rescued the hypoxic growth defect caused by PCK1 depletion, while purines or ribose had modest effects, revealing PCK1 induction as a mechanism to generate pyrimidine nucleotide pools under hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 present rescue experiments demonstrating specificity for pyrimidines over purines or ribose. This directly links PCK1 function to pyrimidine biosynthesis. Claim C85 is a well-supported mechanistic conclusion integrating multiple lines of evidence from metabolite profiling, flux analysis, and rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Pharmacological inhibition of PCK1 with 3-MPA significantly reduced liver metastatic colonization (p=0.01 for pre-treatment; p=0.008 and p=0.005 for short-term treatment) without affecting subcutaneous tumor growth, establishing PCK1 as a potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 demonstrate therapeutic potential using a PCK1 inhibitor in multiple experimental paradigms. The specificity for liver colonization (C87) and efficacy with short-term treatment (C88) support clinical relevance. Claim C89 is a reasonable conclusion, though further validation would strengthen therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C100"
+    ],
+    "result": "Leflunomide treatment significantly impaired CRC growth under hypoxia more than normoxia, confirming that metastatic CRC cell growth under hypoxia is sensitive to pyrimidine biosynthesis inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C100 present cell viability data showing oxygen-dependent effects of leflunomide. Claim C91 is a well-supported conclusion linking DHODH inhibition to hypoxic growth. The consistency with PCK1 findings strengthens the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "DHODH depletion substantially reduced liver metastatic colonization, and leflunomide treatment caused ~90-fold reduction in colonization with significantly improved survival (p=0.006), demonstrating therapeutic efficacy despite 5-FU resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 present genetic and pharmacological validation of DHODH as a therapeutic target with strong effect sizes and statistical significance. Claim C96 appropriately notes the potential advantage over 5-FU, though this is based on a single cell line (Lvm3b) and requires broader validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Leflunomide treatment only modestly impacted primary tumor growth in two CRC populations, suggesting enhanced sensitivity of CRC cells to DHODH inhibition during liver metastatic colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 presents experimental data showing differential effects on primary versus metastatic growth. Claim C98 is a reasonable inference from the differential sensitivity, though the mechanism underlying this selectivity is not fully elucidated and would benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Uridine supplementation rescued the impaired growth caused by leflunomide under hypoxia, confirming that the metastatic colonization defect is caused by pyrimidine depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 presents a rescue experiment that directly links leflunomide's mechanism to pyrimidine depletion. This validates the on-target effect of the drug and supports the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C129"
+    ],
+    "result": "Highly metastatic cells exhibit enhanced dependence on pyrimidine biosynthesis, and upregulation of metabolites in this pathway is a selective adaptive trait of highly metastatic CRC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 integrate findings from metabolite profiling (C68), differential drug sensitivity (C90, C100), and in vivo selection experiments. Claim C129 from the Discussion appropriately summarizes this conclusion. The convergence of multiple experimental approaches supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C139"
+    ],
+    "result": "DHODH and PCK1 represent key metabolic drivers of CRC metastasis and therapeutic targets, with leflunomide providing proof-of-concept for therapeutic inhibition of CRC metastatic progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 and C139 represent the main conclusions integrating genetic, pharmacological, and mechanistic studies. The evidence from multiple cell lines, PDX models, and patient data validation supports these targets. However, clinical validation is needed to fully establish therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C137"
+    ],
+    "result": "PDX modeling of CRC is prognostic of clinical survival outcomes, with both subcutaneous engraftment and liver colonization rate predicting patient survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38, and C137 summarize the prognostic value of the PDX model. This is supported by survival analyses in C28 (subcutaneous engraftment, p=0.045) and C37 (liver colonization rate, p=0.031). The model's predictive power is a key validation of its clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "Integration of PDX modeling with in vivo selection can generate highly metastatic derivatives that can be profiled transcriptomically and metabolically to identify key drivers of metastatic progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 describes the methodological approach validated by the successful identification of PCK1 and pyrimidine biosynthesis as metastasis drivers. The approach is well-documented in Figures 3-4 and represents a valuable platform for future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C120",
+      "C122"
+    ],
+    "result": "PCK1 strongly drives liver metastatic colonization but minimally impacts primary tumor growth, and plays a key role in pyrimidine biosynthesis under hypoxia via reductive carboxylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120 and C122 summarize novel mechanistic insights about PCK1. The differential effects on metastatic versus primary growth (C120) are supported by C55-C58. The role in pyrimidine biosynthesis via reductive carboxylation (C122) is supported by C74-C76. These represent important advances in understanding PCK1 function in cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "PCK1 may additionally promote hypoxic growth by increasing NAD+ pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is explicitly speculative based on the synergistic rescue with pyruvate and aspartate (C80). While the hypothesis is reasonable given pyruvate's role in NAD+ regeneration, no direct measurements of NAD+ levels are provided. This remains an untested hypothesis requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C108",
+      "C110"
+    ],
+    "result": "The discrepancy in prognostic power between subcutaneous and liver growth is likely due to greater selective pressure in the liver microenvironment, providing a mechanistic basis for the sensitivity of CRC metastatic progression to gluconeogenic pathway inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is a reasonable inference from the differential prognostic power (C106-C107) and lack of correlation between growth sites (C33, C35). Claim C110 connects the findings to epidemiologic data about metformin (C109), though this connection is somewhat speculative and would benefit from direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "CRC is a major cause of death with an estimated 145,000 diagnoses and 51,000 deaths in the US in 2019. Mortality is primarily due to liver metastasis, and few prognostic indicators of metastatic progression exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C13 provide epidemiological context cited from the National Cancer Institute and established clinical knowledge. These claims appropriately frame the clinical significance of the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "PDX models can capture tumor diversity and patient variability better than cell lines, which suffer from tissue culture drift. Previous CRC PDX models used subcutaneous implantation, which does not metastasize or expose tumors to the hepatic microenvironment. Orthotopic implantation has limited feasibility in CRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 provide background on PDX models and their advantages/limitations, appropriately cited from prior work. These claims establish the rationale for developing a liver colonization model but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C77",
+      "C95",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Prior work has established various roles for PCK1, PCK2, and DHODH in cancer metabolism, and 5-FU targets the pyrimidine pathway but resistance is common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C70, C77, C95, C111-C119, C123, C125-C128, C130, C132-C136 provide literature context appropriately cited from prior publications. These claims establish the scientific background and novelty of the current findings but are not results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "The time from subcutaneous tumor implantation to harvest ranged from 35 to 88 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 presents descriptive data about the experimental timeline. This is a minor methodological detail that supports the feasibility of the approach but is not a key finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Upregulation of hypoxia genes in liver metastatic derivatives is consistent with hypoxia being an important feature of the liver metastatic microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 contextualizes the hypoxia signature finding (C43) with cited prior work. This validates the model but is not a novel discovery, as the role of hypoxia in liver metastasis was previously established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Two of the top ten upregulated genes (IFITM1 and CKB) have been previously implicated as promoters of CRC metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 notes that known metastasis genes were identified, providing validation of the approach. However, this is confirmatory rather than novel, and CKB was previously identified by the same group.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Three candidate genes were enzymes (ACSL6, CKB, PCK1) and one was a cell-surface receptor (CDHR1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 classifies identified genes by function. This is a descriptive observation that guided target selection but is not a key finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Metabolite profiling of PCK1-depleted cells under hypoxia revealed increased abundance of phosphoenolpyruvate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 presents a metabolite observation that supports the proposed mechanism of PCK1 operating in reverse (C123). While consistent with the model, this single metabolite change is insufficient to definitively establish the mechanism and represents supporting rather than conclusive evidence.",
+    "result_type": "MINOR"
+  }
+]

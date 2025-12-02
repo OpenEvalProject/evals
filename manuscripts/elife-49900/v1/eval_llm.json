@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "The manuscript provides background on T-cell receptor (TCR) biology, including the diversity of the TCR repertoire, the V(D)J recombination process, thymic selection, and peripheral maintenance of naive T cells. These claims establish the biological context for the study, citing established literature on TCR generation, selection, and homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 are well-supported by appropriate citations to established literature. These claims provide essential background knowledge and are not novel findings of this study, but rather set the stage for the experimental work. The citations appear appropriate and the claims are consistent with current understanding of T-cell biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Analysis of naive and memory T-cell repertoires from two volunteers (experiment 1) reveals that most TCR sequences in naive repertoires are observed only once, while memory repertoires contain much more abundant sequences. Sequences with frequency >5 in naive samples are predominantly shared with memory samples from the same individual, showing a linear correlation in abundance, suggesting 0.1-1.5% contamination of naive samples with memory cells for CD8+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 are supported by experimental data shown in Figure 1A and 1B. The linear correlation analysis provides quantitative evidence for contamination, and the lack of correlation between different donors serves as an appropriate control. The contamination estimate is reasonable and the authors appropriately acknowledge this technical limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C26",
+      "C80",
+      "C82"
+    ],
+    "result": "Generation probability distributions of TCR sequences are indistinguishable between naive and memory T cells, providing no evidence that V(D)J recombination preferentially produces sequences more likely to enter the memory pool. However, TCR\u03b1 sequences shared between naive and memory are enriched for high generation probabilities, while this enrichment is less evident for TCR\u03b2. Abundant sequences in naive samples tend to have fewer N-insertions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by data in Figure 1C, 1D, and Figure 1\u2014figure supplement 1. The finding that generation probability distributions are similar between naive and memory is important for ruling out bias in the recombination process. The enrichment of high generation probability sequences in the overlap population, particularly for TCR\u03b1, is well-documented and the authors appropriately note that shared TCR\u03b1 sequences may represent different clonotypes due to different TCR\u03b2 pairing (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C66",
+      "C67"
+    ],
+    "result": "In experiment 2, where naive T cells were split into three subsamples before mRNA extraction, 3.4% of TCR\u03b1 and 0.61% of TCR\u03b2 sequences were observed in more than one subsample. Permutation analysis revealed that approximately 25% of abundant \u03b1 chains and >75% of abundant \u03b2 chains with frequency >1 in individual samples may arise from sampling multiple RNA molecules from single cells, with T cells containing ~100 TCR\u03b1 and ~300 TCR\u03b2 mRNA molecules on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C66-C67 are supported by experimental data in Figure 2A and Figure 2\u2014figure supplement 1A, with C29 citing Oakes et al., 2017. The subsampling experiment is a clever design to address the multiple mRNA sampling issue. The permutation analysis provides quantitative estimates of this confounding effect. The higher impact on TCR\u03b2 is consistent with the higher mRNA content per cell.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C84",
+      "C85"
+    ],
+    "result": "TCR\u03b1 sequences observed in two and three subsamples have 56- and 165-fold higher median generation probabilities than those observed once, and tend to be closer to germline rearrangements. For TCR\u03b2, sequences observed twice have higher generation probabilities than those observed once, but sequences observed three times have generation probabilities similar to or lower than those observed twice, and are not closer to germline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C34, C84, C85 are supported by data in Figure 2B, 2C, and 2D. This is a key finding of the paper, showing differential mechanisms for TCR\u03b1 versus TCR\u03b2 abundance. The paradoxical finding for TCR\u03b2 (incidence 3 having lower generation probability than incidence 2) is striking and well-documented. This pattern is consistent across multiple measures (generation probability, N-insertions, VJ-deletions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C86",
+      "C87"
+    ],
+    "result": "TCR\u03b1 and TCR\u03b2 sequences observed in two or three subsamples are significantly more often shared with an independent cohort than those observed once. The most frequent TCR\u03b1 sequences (incidence 3) show the highest sharing degree. However, the most frequent TCR\u03b2 sequences (incidence 3) were less public than sequences observed twice, consistent with their lower generation probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C86-C87 are supported by data in Figure 2\u2014figure supplement 3A and 3B. The sharing analysis with independent cohorts provides external validation of the generation probability findings. The differential pattern between TCR\u03b1 and TCR\u03b2 is consistent with the main hypothesis that abundant TCR\u03b1 arise from repeated recombination while abundant TCR\u03b2 arise from large clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C53",
+      "C54",
+      "C70",
+      "C71",
+      "C76"
+    ],
+    "result": "Computational modeling shows that a neutral model (where TCR does not affect T-cell lifespan or division rate) captures some features of TCR\u03b1 abundance but cannot account for TCR\u03b2 distributions. A power-law distribution with slope ~2.3 predicts both TCR\u03b1 and TCR\u03b2 data well. A mixture model where 1-5% of cells are derived from large clones (10^5-10^6 cells) also fits the data. Multiple distributions are compatible with the observed data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C53-C54, C70-C71, C76 are supported by modeling results shown in Figure 4. The authors appropriately test multiple models and acknowledge that the data cannot definitively distinguish between them due to sampling limitations. The neutral model assumptions are clearly stated (C70-C71, C76). The finding that multiple models fit the data is an honest assessment of the limitations, though it reduces the definitiveness of the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Based on model predictions and experimental data, a significant proportion of TCR\u03b2 sequences observed twice are derived from two or more different naive T-cell clones (due to identical recombination events), while TCR sequences observed three times or more must be derived from large naive T-cell clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are inferences based on the combined modeling and experimental results. The logic is sound: the enrichment of high generation probability in incidence-2 TCR\u03b2 suggests contribution from repeated recombination, while the lack of such enrichment in incidence-3 TCR\u03b2 suggests these arise from large clones. However, these are inferences rather than direct observations, and the word 'must' in C89 may be too strong given the modeling uncertainties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C58"
+    ],
+    "result": "Zero-insertion TCR sequences (characteristic of prenatal development when TdT is not expressed) are strongly enriched in sequences observed more than once in the three subsamples. The authors speculate that large clones may be established early in T-cell development, before immune system homeostasis is achieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by data in Figure 5A. However, the interpretation is complicated by the fact that zero-insertion sequences also have higher generation probabilities (C43). The speculation in C58 is reasonable but explicitly acknowledged as speculative. The enrichment of zero-insertion sequences is consistent with early establishment but does not prove it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C56",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Analysis of MAIT and NKT cell-characteristic sequences shows that while a substantial fraction of observed TCR\u03b2 sequences match MAIT or NKT characteristics, this fraction does not show clear relation to incidence. Only a small fraction of abundant sequences are derived from MAIT or NKT cell phenotypes (0.3-1.7% for NKT in TCR\u03b1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C56, C91-C96 are supported by data in Figure 5B and C. The analysis appropriately addresses whether the abundant sequences could be explained by semi-invariant T-cell populations. The conclusion that MAIT/NKT cells do not explain the abundant sequences is well-supported. Claims C91-C93 about MAIT/NKT characteristics are appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C97",
+      "C98"
+    ],
+    "result": "High abundance TCR\u03b1 sequences observed in more than one subsample show striking enrichment for sequences with known antigen-specific annotation in the VDJdb database, with lesser enrichment for TCR\u03b2. The authors discuss multiple possible explanations including contamination with antigen-experienced cells with naive phenotype, ascertainment bias, or evolutionary optimization of recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 is supported by data in Figure 5D (referred to as 5C in text). However, the interpretation is uncertain as the authors appropriately note multiple possible explanations (C97-C98). The ascertainment bias issue (high generation probability sequences may be over-represented in databases) is a significant confounding factor that is difficult to rule out. The finding is interesting but the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C55",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "The main conclusions are that abundant TCR\u03b1 sequences are primarily attributed to many identical recombination events in different cells (with the highest generation probability sequences produced hundreds of thousands to millions of times), while abundant TCR\u03b2 sequences are primarily derived from large clones making up a small percentage of the naive repertoire. These large clones could be established early in development and may arise from preferential selection on self-peptide/MHC. The naive TCR repertoire has an extremely broad distribution of clone sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C52, C55, C57, C59-C60 represent the main conclusions of the paper. These are well-supported by the combined experimental and modeling evidence, though some aspects are speculative (C48, C57, C58). The differential mechanisms for TCR\u03b1 versus TCR\u03b2 are convincingly demonstrated. The claim about early establishment (C48) and preferential selection (C57) are reasonable speculations but not definitively proven. The overall conclusion (C49) about broad clone size distribution is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript describes the experimental methods including FACS sorting of naive and memory T cells from volunteers, UMI-based TCR sequencing, use of the Decombinator pipeline with an improved UMI error correction algorithm, and sequencing of whole blood samples from 28 additional volunteers for sharing analysis. Data are deposited in public repositories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C61-C65, C68-C69 describe the methods. These are well-documented and the improved UMI correction algorithm (C64-C65) is a methodological contribution. The data availability statements (C62, C69) are appropriate. The methods appear sound and the UMI-based approach with error correction is rigorous.",
+    "result_type": "MINOR"
+  }
+]

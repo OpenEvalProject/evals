@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C87"
+    ],
+    "result": "iCLIP analysis identified 108 high-confidence MARF1-bound mRNAs, with the vast majority of peaks mapping to 3'UTRs. 34 of these targets were upregulated in Marf1 knockout or catalytically inactive mouse oocytes, with 29 upregulated in both contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C87 are well-supported by the iCLIP data shown in Figure 1B-D and comparison with published oocyte transcriptome datasets. The methodology is appropriate and the overlap between iCLIP targets and upregulated mRNAs in knockout oocytes provides strong validation of direct MARF1 targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Full-length MARF1 efficiently represses luciferase reporters containing MARF1 target 3'UTRs in a NYN endonuclease-dependent manner, reducing both reporter activity and mRNA stability. MARF1 also reduces steady-state levels of endogenous target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are supported by multiple complementary assays shown in Figure 2, including luciferase reporter assays, RT-qPCR of mRNA levels, and mRNA stability measurements. The NYN-dependence is demonstrated by loss of activity in \u0394NYN mutants. Controls with non-target IL-6 demonstrate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C88"
+    ],
+    "result": "No short sequence motifs were identified in MARF1 iCLIP peaks, suggesting MARF1 may recognize structural motifs rather than specific nucleotide sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40, C41, and C88 report negative results from motif analysis and propose an alternative hypothesis. While the absence of sequence motifs is noted, the inference that MARF1 recognizes structural motifs is speculative and not directly tested. Additional structural analysis of target RNAs would be needed to support this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C97",
+      "C99"
+    ],
+    "result": "MARF1 utilizes its central LOTUS domains (3-5) to bind target mRNAs. Deletion of LOTUS domains 3, 4, or 5 abolishes repression of reporters with endogenous 3'UTRs but not artificially tethered reporters, indicating these domains are required for target recognition but not nuclease activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51, C97, and C99 are well-supported by systematic deletion analysis shown in Figure 3. The differential effects on endogenous versus tethered reporters provide strong evidence that central LOTUS domains mediate target recognition. Multiple target 3'UTRs were tested, demonstrating generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C98"
+    ],
+    "result": "LOTUS domains 3 and 5 are highly conserved across MARF1 orthologs and share high sequence identity with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, and C98 are supported by sequence alignment data shown in Figure 3\u2014figure supplement 1. The conservation analysis provides evolutionary support for the functional importance of these domains identified experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C101",
+      "C102"
+    ],
+    "result": "RRM1 is required for MARF1-mediated repression of target mRNAs irrespective of recruitment mode. Deletion or mutation of RRM1 abolishes repression of both endogenous and artificially tethered reporters, indicating RRM1 is required for NYN-mediated cleavage rather than target recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60, C101, and C102 are supported by deletion and point mutation analysis shown in Figure 4. The key observation that RRM1 is required even for tethered reporters (unlike LOTUS domains) provides strong evidence for a role in catalysis rather than target binding. Multiple target 3'UTRs were tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "RRM1 may function to properly position the NYN domain on target mRNAs to promote efficient cleavage, supported by the observation that all MARF1 proteins with NYN domains also contain RRM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103 and C104 present a mechanistic hypothesis about RRM1 function based on experimental observations and evolutionary conservation. While the hypothesis is reasonable, it is explicitly stated as speculation and lacks direct structural or biochemical evidence for the proposed positioning mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C106",
+      "C107"
+    ],
+    "result": "EDC4 antagonizes MARF1-mediated repression of target mRNAs in a dose-dependent manner. EDC4 depletion or overexpression reciprocally affects MARF1 activity, but only when MARF1 is recruited via LOTUS domains, not when artificially tethered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C74, C106, and C107 are supported by multiple complementary experiments in Figure 5, including titration experiments, siRNA knockdowns, and overexpression studies. The specificity for LOTUS-dependent recruitment (C72, C107) is a key observation that constrains the mechanism. Both luciferase and endogenous mRNA measurements support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C117"
+    ],
+    "result": "The EDC4-MARF1 interaction localizes MARF1 to P-bodies and prevents MARF1 from efficiently repressing target mRNAs. MARF1 lacking its C-terminal EDC4-binding motif shows diffuse cytoplasmic localization, and expressing the C-terminal motif in trans rescues MARF1 activity by competing for EDC4 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 and C117 are supported by immunofluorescence microscopy (Figure 6B) and functional competition experiments (Figure 6C). The competition experiment provides strong evidence that the EDC4-MARF1 interaction is responsible for inhibition. The localization data directly demonstrate P-body sequestration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C108"
+    ],
+    "result": "EDC4 impairs MARF1 repression by preventing MARF1 from binding to targeted 3'UTRs. RNA immunoprecipitation shows that EDC4 overexpression dramatically reduces MARF1 co-precipitation with target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, and C108 are supported by RNA immunoprecipitation experiments shown in Figure 6D. The ~4.5-fold reduction in target mRNA binding upon EDC4 overexpression provides direct mechanistic evidence that EDC4 prevents MARF1-RNA interactions. This is consistent with all prior observations about LOTUS domain-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "MARF1-targeted mRNAs may be underrepresented in the CLIP dataset due to the presence of endogenous EDC4 during the experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is explicitly stated as speculation in the discussion. While the hypothesis is consistent with the finding that EDC4 inhibits MARF1-RNA binding, the iCLIP experiments were not designed to test this possibility (e.g., by depleting EDC4 prior to CLIP). This remains an untested hypothesis that could guide future experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The LOTUS domain is a conserved wHTH fold that can bind double-stranded RNA, supporting a model whereby MARF1 contacts structural elements within target 3'UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by citations to structural and biochemical studies of LOTUS domains. While the specific structural recognition by MARF1 LOTUS domains is not directly demonstrated in this study, the model is well-supported by prior literature and consistent with the lack of sequence motifs observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C119"
+    ],
+    "result": "EDC4-mediated regulation may prevent MARF1 from binding mRNAs when expressed at low levels, with MARF1 only able to bind targets when dramatically upregulated (e.g., during oogenesis). P-bodies may regulate mRNA metabolism by sequestering decay effectors like MARF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113, C114, and C119 are explicitly stated as speculation in the discussion. While consistent with the dose-dependent effects observed and MARF1's high expression in oocytes, these physiological regulatory models are not directly tested. The P-body sequestration model is supported by localization data but its broader regulatory significance remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C111"
+    ],
+    "result": "This is the first example of mRNA decapping machinery stabilizing mRNAs by inhibiting an RNA binding protein from interacting with targets. MARF1 is unique among metazoan endonucleases in physically interacting with decapping factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C111 make novelty claims about the findings. The uniqueness of MARF1's interaction with decapping factors is supported by comparison with other endonucleases (C110, C112). The non-canonical stabilizing role of EDC4 is well-demonstrated by the experimental data. These claims appropriately characterize the significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C56",
+      "C61",
+      "C62",
+      "C63",
+      "C93",
+      "C94",
+      "C95",
+      "C100",
+      "C105",
+      "C110",
+      "C112",
+      "C115",
+      "C116"
+    ],
+    "result": "Background claims about mRNA decay pathways, MARF1 and EDC4 properties, and prior characterization of these proteins in various systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8, C10-C27, C56, C61-C63, C93-C95, C100, C105, C110, C112, C115-C116 represent established knowledge from prior literature, appropriately cited. These provide necessary context for the current study and are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C85",
+      "C86"
+    ],
+    "result": "Summary claims about the overall findings: MARF1 is an endoribonuclease that promotes oogenesis and contains multiple RNA binding domains; different domains are required for target binding versus decay; EDC4 binding localizes MARF1 to P-bodies and impairs its activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C85-C86 are high-level summary statements of the study's findings. These are well-supported by the collective experimental evidence from multiple result groups above. They accurately synthesize the major conclusions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C9"
+    ],
+    "result": "Abstract summary claims: MARF1 predominantly binds 3'UTRs via LOTUS domains to promote decay; RRM1 enhances endonuclease activity; EDC4 impairs MARF1 by preventing LOTUS domain binding; EDC4 acts as both enhancer and repressor of mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C9 are abstract-level summaries of the major findings. All are well-supported by the detailed experimental results described in other result groups. These accurately capture the key discoveries of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "An N-terminal MARF1 fragment containing NYN and RRMs but lacking LOTUS domains efficiently represses tethered reporter mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by data in Figure 3B showing that the N-terminal fragment represses RL-5BoxB. This observation is important for demonstrating that LOTUS domains are specifically required for target recognition, not for nuclease activity per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "MARF1 is 'trapped' in P-bodies and unable to interface with endogenous target mRNAs when bound to EDC4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by the combination of localization data (Figure 6B) showing P-body sequestration and RNA-IP data (Figure 6D) showing reduced target binding. The 'trapping' model is a reasonable inference from these observations, though the precise mechanism of how P-body localization prevents RNA binding could be further explored.",
+    "result_type": "MAJOR"
+  }
+]

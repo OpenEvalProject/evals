@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Antibiotic selection frequently caused population extinction in collateral sensitivity experiments, with extinction rates significantly higher when both drugs were present (constrained treatments). Extinction was more frequent when switching to \u03b2-lactam antibiotics targeting the cell wall compared to aminoglycosides targeting ribosomes, and drug order significantly affected extinction outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 and C55-C59 provide consistent experimental evidence from both clonal and population-level experiments showing frequent extinction events. Statistical analyses (C23, C24, C55, C58) with reported p-values support the significance of these findings. The data demonstrate clear patterns related to drug combinations, concentration increases, and drug targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Surviving bacterial populations evolved resistance to the second drug, with outcomes dependent on drug order. The CAR>GEN switch led to multidrug resistance, while the GEN>CAR switch showed re-sensitization to the original drug under unconstrained conditions. Re-sensitization occurred in 36% of tested cases in validation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 and C60-C63 provide experimental data from both clonal and population-level experiments showing consistent patterns of resistance evolution and re-sensitization. The data include quantitative measurements (IC90 fold-changes, biomass dynamics) and statistical validation across multiple replicates and drug combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The stability of collateral sensitivity is shaped by multiple factors including drug targets, effect size of collateral sensitivity, and general adaptation trade-offs. The most stable collateral sensitivity was observed for switches from aminoglycosides to \u03b2-lactams, with highest stability achieved for low collateral sensitivity effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 and C73-C77 are supported by generalized linear model (GLM) analyses with reported F-statistics and p-values. The statistical analysis appropriately considers multiple predictors and their relative contributions. The conclusions about drug order effects and stability factors are well-supported by the quantitative data presented in Figures 3 and 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "Whole genome sequencing identified specific mutations underlying evolutionary outcomes. Multidrug resistance in CAR>GEN involved mutations in ptsP (unconstrained) or nuoD/nuoG (constrained). Re-sensitization in GEN>CAR was associated with mutations in nalC/nalD and deletions in pmrB, potentially through antagonistic pleiotropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C40, C42-C44 are supported by population genomic data shown in Figure 4. The sequencing covered 5 starting clones and 21 evolved populations with appropriate coverage (300x). Claim C46 is an inference about mechanism that is reasonable given the genomic data, though it requires functional validation which is provided in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C93"
+    ],
+    "result": "Functional genetic analysis using constructed mutants revealed that re-sensitization to GEN is mediated by antagonistic pleiotropy and negative epistasis. Double mutants (pmrB with nalC or nalD) showed substantially lower MICs to GEN than expected from additive effects, with the pmrB+nalC double mutant showing >30-fold lower MIC than expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 and C93 are supported by experimental MIC measurements of single and double mutants constructed using scar-free recombination. The epistasis analysis follows established methods (Wong, 2017) and provides quantitative evidence for negative epistasis. The functional genetic validation directly tests the genomic predictions and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C73",
+      "C77",
+      "C89"
+    ],
+    "result": "A general adaptation trade-off, measured as reduced growth rate in drug-free conditions, influenced evolutionary outcomes. Starting clones showed up to 50% reduction in growth rate relative to the ancestor. This trade-off inhibited rapid adaptation, with populations showing improved growth rates after evolution under unconstrained conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by growth rate measurements shown in Figure 3. Claim C35 references previous data (Barbosa et al., 2017) appropriately. Claims C73, C77, and C89 connect the growth rate data to evolutionary outcomes through statistical analysis (Figure 6d). The interpretation that this represents a general adaptation trade-off is reasonable given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Evolved reciprocal collateral sensitivity generally limited bacterial adaptation, particularly when switching to \u03b2-lactams. High stability for aminoglycoside-to-\u03b2-lactam switches was observed in both clonal and population-level experiments, potentially due to slower adaptation, efficient re-sensitization, pleiotropy, and negative epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 and C83 are well-supported by the comprehensive experimental data from both datasets. Claims C84-C86 provide mechanistic explanations that are reasonable inferences based on the data in Figures 3 and 4. Claim C87 is supported by data in Figure 6. The conclusions integrate multiple lines of evidence consistently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C97"
+    ],
+    "result": "Epistasis is of high importance for the temporal stability of antibiotic sensitivity. The study identifies negative epistasis between pleiotropic resistance mutations as a previously unknown mechanism underlying re-sensitization in the GEN>CAR switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 and C97 are supported by the functional genetic analysis (C47-C54) and genomic data (C38-C46). The conclusion that this is a previously unknown mechanism is supported by comparison to prior literature (C94-C96) showing different mechanisms in other systems. The claim is appropriately framed as a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C108",
+      "C109"
+    ],
+    "result": "The study used P. aeruginosa UCBPP-PA14 and clones from previously evolved resistant populations (CAR-10, GEN-4, PIT-1, STR-2). Two cases of reciprocal collateral sensitivity were identified and validated using dose-response analysis: PIT/STR and CAR/GEN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 and C108-C109 describe the experimental materials and initial validation. These are supported by citations to previous work (Barbosa et al., 2017) and dose-response data shown in Figure 1. The methodology is clearly described and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The mutations observed in this study (efflux regulators nalC/nalD and two-component systems pmrAB/phoQF) are commonly associated with resistant clinical isolates, particularly from cystic fibrosis patients. This suggests the negative epistasis observed could potentially be encountered and exploited in clinical settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 are supported by citations to clinical studies. However, claim C102 is speculative about clinical applicability. While the overlap between experimental and clinical mutations is noted, the claim that this epistasis \"could be encountered and exploited in clinical settings\" requires validation in clinical isolates and patient-relevant conditions, which is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study suggests that collateral sensitivity exploitation could be optimized by switching from aminoglycosides to \u03b2-lactams, focusing on drugs with large adaptation trade-offs, and using combinations with small collateral sensitivity effect sizes. Success depends on collateral sensitivity evolving in response to treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C107 are recommendations for future applications based on the experimental data. While the experimental findings (C105-C107) are supported, these are extrapolations to treatment strategies that require clinical validation. Claim C103 appropriately frames this as \"could represent\" a promising strategy, acknowledging the speculative nature. Claim C104 correctly identifies a critical prerequisite.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establish that evolution drives antibiotic resistance, collateral sensitivity is a pervasive phenomenon across bacterial species and cancer cells, and can slow resistance evolution during combination and sequential therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C12 are background statements supported by appropriate citations to established literature. These provide context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work has shown that collateral sensitivity can be variable, with contrasting collateral effects observed across different bacteria, and that population size and evolutionary history can affect outcomes. Previous studies in P. aeruginosa and E. coli showed partial re-sensitization after drug switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 summarize relevant prior literature with appropriate citations. These establish the knowledge gap that the current study addresses - namely, the temporal stability of collateral sensitivity and factors affecting evolutionary outcomes. The citations appear accurate based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C45"
+    ],
+    "result": "Background information on gene functions: ptsP is a component of ABC transporter regulation, nuoD/nuoG affect proton motive force and aminoglycoside resistance, and nalC mutations mediate resistance to CAR and hypersensitivity to GEN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41, and C45 provide functional context for genes identified in the genomic analysis. These are supported by appropriate citations to previous literature and help interpret the genomic findings. The information is accurate based on the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Extinction rates are often not reported in related studies and are known to vary among treatment types based on previous evolution experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are observations about the literature supported by citations. These contextualize why the current study's focus on extinction rates is important and novel. The claims are appropriately framed as observations rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Both antibiotic combinations (PIT/STR and CAR/GEN) are synergistic against P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by citation to previous work (Barbosa et al., 2018). This information is used to rule out synergy differences as an explanation for observed extinction rate differences between drug pairs. The citation appears appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C94",
+      "C95",
+      "C96",
+      "C98",
+      "C99"
+    ],
+    "result": "Prior work has shown that epistasis affects collateral sensitivity expression across genetic backgrounds and species, and that different mechanisms (clonal interference, efflux system imbalance, inducible resistance) can mediate re-sensitization. Positive epistasis can amplify resistance while negative epistasis can limit evolutionary trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C94-C99 summarize relevant prior literature on epistasis and re-sensitization mechanisms with appropriate citations. These provide context for interpreting the novel finding of negative epistasis between pleiotropic mutations (C97) as a distinct mechanism.",
+    "result_type": "MINOR"
+  }
+]

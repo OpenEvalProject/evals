@@ -1,0 +1,1355 @@
+{
+  "submission": {
+    "id": "9310392f-3604-4dfe-b61a-17a3a8780e15",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:36:19.958923Z",
+    "updated_at": "2025-12-02T13:36:19.958923Z"
+  },
+  "content": [
+    {
+      "id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "submission_id": "9310392f-3604-4dfe-b61a-17a3a8780e15",
+      "content_type": "manuscript",
+      "content_text": "# Elements of a stochastic 3D prediction engine in larval zebrafish prey capture\n\n## Authors\n\n- Andrew D Bolton<sup>1</sup> ([ORCID: 0000-0003-3059-7226](https://orcid.org/0000-0003-3059-7226)) \u2020\n- Martin Haesemeyer<sup>1</sup> ([ORCID: 0000-0003-2704-3601](https://orcid.org/0000-0003-2704-3601))\n- Josua Jordi<sup>1</sup>\n- Ulrich Schaechtle<sup>2</sup>\n- Feras A Saad<sup>2</sup>\n- Vikash K Mansinghka<sup>2</sup>\n- Joshua B Tenenbaum<sup>2</sup>\n- Florian Engert<sup>1</sup>\n\n### Affiliations\n\n1. Center for Brain Science Harvard University Cambridge United States\n2. Brain and Cognitive Sciences Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe computational principles underlying predictive capabilities in animals are poorly understood. Here, we wondered whether predictive models mediating prey capture could be reduced to a simple set of sensorimotor rules performed by a primitive organism. For this task, we chose the larval zebrafish, a tractable vertebrate that pursues and captures swimming microbes. Using a novel naturalistic 3D setup, we show that the zebrafish combines position and velocity perception to construct a future positional estimate of its prey, indicating an ability to project trajectories forward in time. Importantly, the stochasticity in the fish\u2019s sensorimotor transformations provides a considerable advantage over equivalent noise-free strategies. This surprising result coalesces with recent findings that illustrate the benefits of biological stochasticity to adaptive behavior. In sum, our study reveals that zebrafish are equipped with a recursive prey capture algorithm, built up from simple stochastic rules, that embodies an implicit predictive model of the world.\n\n## Introduction\n\nIt is becoming clear from recent ethological and neuroscience studies that remarkable capabilities in animals are often built by combining sets of more basic behaviors. For example, seemingly complicated behaviors like schooling in fish arise from stereotypic visuomotor rules being executed by members of the group, without reference to the emerging global pattern (Couzin and Krause, 2003). Bees learning to pull strings for hidden rewards appear to be displaying insight and ingenuity, but are in fact instituting a set of observational and associative learning rules in sequence (Alem et al., 2016). The synthesis of intelligence from the interaction of \u2018mindless\u2019 behavioral modules has long been a staple of computer science and artificial intelligence (Brooks, 1991; Minsky, 1988; Braitenberg, 1986). However, a precise mechanistic explanation of how intelligent behavior is generated has remained elusive.\n\nIntelligence itself can been defined as the practice of model-building about ourselves and our surroundings (Lake et al., 2017). Indeed, humans and animals have evolved internal models that allow us to both predict ongoing dynamics in the environment and anticipate how our own actions give rise to consequences in the world (Battaglia et al., 2013; Ullman et al., 2017; Baillargeon, 1987; Mischiati et al., 2015; Borghuis and Leonardo, 2015). Much progress has been made on the neurobiological and computational principles that could mediate these complex abilities, but how exactly internal models are built from component behavioral parts is unknown. Moreover, many theories of mind rely on deterministic digital logic, while the brain generates intelligence using noisy, stochastic units in neurons (e.g. McCulloch and Pitts, 1943). Noise in any computing system is usually considered inconvenient and a nuisance to be overcome (K\u00f6rding and Wolpert, 2004). However, there is precedent for noisy sensory detection and stochastic movements working to the benefit of many animals. Crayfish and paddlefish, for instance, both take advantage of stochastic resonance to detect sparse prey and predators (Douglass et al., 1993; Russett et al., 1999). Beneficially stochastic foraging has been observed in animals ranging down to micro-organisms, while predated animals use mixed stochastic strategies to avoid predictability by predators (Jensen, 2018).\n\nCan internal models that mediate predictive abilities be reduced to a set of simple rules that are benefited by the stochasticity of neural systems? We posit that explicit physical intelligence is likely built upon a framework of more primitive sensorimotor behaviors that constitute an implicit model of how objects exist and move within the world (i.e. Brooks, 1991). Therefore, characterizing the goals, algorithms, and advantages of animals possessing implicit models should provide insight into the evolution of more advanced forms of predictive knowledge (Spelke and Hespos, 2018).\n\nHere, we examine these questions through characterization and computational modeling of 3D prey capture sequences executed by the larval zebrafish. The larval zebrafish, a teleost with\u00a0~100,000 neurons, is a tractable model organism amenable to an array of modern neuroscience techniques (Avella et al., 2012; Dunn et al., 2016). Prey capture requires the zebrafish to select, pursue, and ultimately consume fast moving single-celled organisms swimming through its environment. We chose this model system and behavior for a multitude of reasons. Foremost, we hypothesized that the pursuit of fast-moving prey should be benefitted by internal models; the ability to extrapolate prey trajectories forward in time and the prediction of how each pursuit movement impacts prey position would both, a priori, appear to be helpful in capturing fast-moving objects (e.g. Yoo et al., 2019; Borghuis and Leonardo, 2015). Furthermore, there is precedent for the zebrafish constructing relatively complex behaviors from simple rules. For example, stabilization of position in turbulent streams is accomplished by instantiating a curl-detector for local water flow and an optomotor response (Oteiza et al., 2017; Naumann et al., 2016), while energy-efficient foraging emerges from the zebrafish\u2019s innate tendency to locomote via alternating series of unidirectional turns (Dunn et al., 2016). Finally, the zebrafish\u2019s ongoing behavior is largely probabilistic, reflecting the stochasticity of its neural systems. For instance, the precise number of unidirectional turns in any spontaneous swimming stretch is stochastic, while turn magnitude in response to angular optic flow varies widely (Dunn et al., 2016; Naumann et al., 2016).\n\nWe build upon foundational studies in zebrafish prey capture (Patterson et al., 2013; Trivedi and Bollmann, 2013; Bianco et al., 2011) by analyzing this behavior in its natural 3D setting, whereas previous studies have typically neglected vertical fish and prey movements. Moreover, we develop an experimental and computational framework that can simultaneously record fish and prey trajectories. This approach allowed us to accurately map the fish\u2019s sensorimotor transformations in response to ongoing prey features, which are described in an egocentric spherical coordinate system that specifies the fish\u2019s three-dimensional point of view. Particularly, we illustrate three main elements of the fish\u2019s prey capture algorithm that reflect an implicit intuitive model of physics. First, sensorimotor transformations during prey capture are largely controlled by the azimuth angle, altitude angle and computed radial distance of prey before the fish initiates a pursuit movement. Second, all aspects of the fish\u2019s 3D movement choices are strongly and proportionally modulated by the angular and radial velocity of its prey. Combining these two rules yields an emergent strategy whereby the fish predicts future prey locations and recursively halves the angle of attack. Third, we show that the speed of the fish\u2019s recursive hunting strategy is benefited by noise in its sensorimotor transformations. Importantly, this stochasticity is graded, meaning that the further away a prey item is from the fish\u2019s goal, the more variable the outcome of the fish\u2019s choice becomes. Using a series of computational models and virtual prey capture simulations, we show that position perception, velocity projection, and graded variance are all essential for effective and energy-efficient prey capture performance. This suggests that the fish\u2019s implicit models are, in fact, adaptive to the animal.\n\nOverall, this work reveals that even the most complex behavior in larval zebrafish can be reduced to a set of simple rules. These rules coalesce to generate a stochastic recursive algorithm embodied by zebrafish during hunting, which ultimately reflects an implicit predictive model of the world.\n\n## Results\n\n### Developing a 3D environment for elucidating hunting sequences in zebrafish\n\nWe first sought to characterize the sensorimotor transformations larval zebrafish implement when pursuing and capturing paramecia. Hunting sequences were recorded from 46 larval zebrafish using a behavioral setup that could simultaneously image the fish and its prey from the top and side at high resolution and speed (Figure 1A). Custom computer vision software was designed to reconstruct the fish\u2019s 3D position and two of the principal axes, yaw and pitch (Figure 1B), as well as the trajectories of paramecia in the environment (Figure 1C). These reconstructions allowed us to spatially map prey position and velocity to an egocentric spherical coordinate system originating at the mouth of the fish. Hereby, each paramecium is assigned an azimuth, altitude and distance as a positional coordinate (\u2018Prey Az, Prey Alt, Prey Dist\u2019), along with angular (Prey \u03b4Az / \u03b4t, Prey \u03b4Alt / \u03b4t) and radial (Prey \u03b4Dist / \u03b4t) velocities with respect to the fish\u2019s 3D point of view (Figure 1D). To view the prey environment from the fish\u2019s reconstructed 3D perspective, see Video 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig1-v2.jpg)\n\n**Figure 1.:** (A) 3D rendering of rig design and features. (B) Computer vision algorithms extract the continuous eye angle, yaw, pitch, and tail angle of the zebrafish. In every frame, prey are detected using a contour finding algorithm. (C) Prey contours from the two cameras are matched in time using a correlation and 3D distance-based algorithm, allowing 3D reconstruction of prey trajectories. (D) Prey features are mapped to a spherical coordinate system originating at the fish\u2019s mouth. Altitude is positive above the fish, negative below. Azimuth is positive right of the fish, negative left. Distance is the magnitude of the vector pointing from the fish\u2019s mouth to the prey.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Spectral clustering (scikit-learn) was used to cluster the continuous eye angle over each bout for both eyes.\u00a0The initiation of hunt sequences was identified using Cluster three and deconvergence of the eyes was demarked by Cluster 1. (B) Hunt sequence types in the dataset. The user\u2019s only role is to denote the last bout of the hunt sequence, characterize the sequence as a strike hit, strike miss, or abort, and note the chosen prey ID assigned by our automated prey reconstruction algorithm. The program then outputs the descriptors in B per hunt. \u2018Collisions\u2019 imply that the fish head has collided with the wall during the hunt (detected using fish COM and edge coordinates), preventing analysis of whether the fish would have struck or aborted. Collisions with unknown target are likely hunting of a paramecium reflection. Deconvergence, known target and unknown target, is the standard abort described previously (Johnson et al., 2019; Henriques et al., 2019), with \u2018unknown targets\u2019 being too ambiguous for the user to make a call on pursued prey ID. No deconvergence, known target are hunts where fish had initiated to and pursued a particular prey item, but clearly stopped pursuit on a particular bout not assigned to Cluster 1. \u2018Probably not a hunt\u2019 was a rare case where the fish converged, swam through the tank without choosing a prey, and did not deconverge within eight bouts. \u2018Strike at Nothing\u2019 was another rare case where the fish converged and struck without a prey item present. The fish did spend some time striking at immobile objects that were almost invariably residue stuck to the top of the tank. During strike hits, fish choose a prey and consume it, with strike misses typically a deflection of the prey off the fish\u2019s mouth at hunt termination. The main manuscript is built off of strike hits and misses (which combined into a \u2018strikes at known prey\u2019 category would be the most common outcome), while Supplementary Figure 3\u2019s abort algorithm is built from known target, deconverge and no-deconverge hunts. Collisions are simply an outcome of having a relatively small tank for parfocal imaging compared to the fish\u2019s real environment; hunts resulting in collisions were not analyzed except for the initial choice.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Colors are histograms of coordinates for prey chosen at hunt initiation, gray are all prey records [chosen + ignored.\u00a0Note: XY records passing a threshold length and velocity that remain unpaired after prey reconstruction are assigned the Z-coordinate of the tank ceiling because live paramecia show anti-gravitaxis (Roberts 2010); we always noted that a subset of prey gather at the ceiling and never noticed coagulation of prey on the ground unless dead; results are very similar to those shown if ceiling assigned prey are not counted]. (B) Histograms showing the distribution of spherical velocities for chosen prey do not reveal a bias in magnitude or direction. (C) Count plots of distance rank for selected prey (0\u00a0=\u00a0closest). (D) We virtually displaced fish coordinates at hunt initiation bouts into randomly recorded paramecium environments and asked whether the closest prey item in that environment shared azimuth and altitude features with prey that fish actually chose. Histograms of the closest prey in random prey environments and prey environments in which initiation actually occurred are plotted in red (for random condition, fish orientation and position at hunt initiation is projected into a different time during the experiment; left panel). Blue (az) and yellow (alt) histograms are chosen prey histograms from (A) for comparison. The closest prey item in a random environment does not show the same distribution as selected prey in (A), indicating that the closest prey does not necessarily have to share the altitude and azimuth features of chosen prey. This suggests that somewhat specific prey features are preferred for entry into the hunting state, although transition probabilities governing hunting mode entry are also at play (Johnson et al., 2019; Mearns et al., 2019).\n\n![Video 1.](https://cdn.elifesciences.org/articles/51975/elife-51975-video1.mp4.jpg)\n\n**Video 1.:** The virtual reality reconstruction, built in Panda3D, is generated from 3D prey coordinates and unit vectors derived from the 3D position, pitch, and yaw of the fish.\n\nLarval zebrafish swim in discrete \u2018bouts\u2019, which consist of a pulse of velocity lasting\u00a0~200 ms, followed by a variable period of intermittent quiescence (Figure 2A; Budick and O'Malley, 2000). We took advantage of this unique facet of fish behavior to frame each bout performed during a hunting sequence as an individual \u2018decision\u2019 based on the spherical position and velocity of pursued prey. Specifically, we identified the start-time and end-time of each swim bout using fluctuations in tail variance and velocity (see Materials\u00a0and\u00a0methods). This allowed us to precisely understand how the fish transforms pre-bout prey features into movements that displace and rotate the fish to a new location in 3D space at the end of the bout.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig2-v2.jpg)\n\n**Figure 2.:** (A) During hunt sequences, fish swim in bouts that can be detected using tail variance. Bouts can change the yaw, pitch, and position of the fish, while time between bouts is marked by quiescence. (B) Histograms showing the distributions of spherical prey positions when fish successfully ate a paramecium during a strike. (C, D) Regression fits between prey position and bout variables executed by the fish. (E, F) Features of sensorimotor transformations based on prey position: fish swim forward if prey are directly in front. Otherwise, if prey are on right, fish displace and rotate right; and vice versa. Fish displace downward if prey are at 0\u00b0 altitude, but displace with no altitude change if prey are at 13.75\u00b0. In all schematics (C\u2013F), positions and orientations at the beginning of the bout are represented by transparent fish, and by opaque fish at the end of the bout.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Regression fits between prey position and bout variables during hunt sequences ending in an abort.\u00a0Gray points and lines represent the last three pursuit bouts before the quit bout occurs, colors are all bouts between initiation and the last 3. The algorithm strongly resembles Figure 2 transformations at the beginning of hunt sequences that will eventually end in aborts, but goes awry in the last three bouts before quitting. (B) Pursuit bouts during abort sequences show modulation by velocity at inflection points similar to Figure 3\u2014figure supplement 1B. (C) Orange model is the same as Figure 4 (Orange Model 2), which issues bouts based on multiple regression to prey position variables only. Green model is same as Figure 4 (Green Model 3), which issues bouts based on multiple regression to prey position and velocity variables. However, both are fit using pursuit bouts during aborted sequences (outside of the last three bouts before quitting) instead of strike sequences (i.e. Figure 4). As with models fit on strike sequences, multiple regression using prey position and velocity outperforms position only regression due to proportional velocity modulation. Both models are fed the exact same prey trajectories as models in Figure 4. Fitting on pursuit bouts during aborted sequences thus shows similar performance levels to models fit on strike sequences.\n\nHunting sequences themselves consist of an initiation bout, multiple pursuit bouts, and a termination bout. Initiation bouts were identified by detecting whether the eyes on a given bout have converged. Eye convergence, which allows the use of stereovision by creating a small binocular zone, is a well-known correlate of hunting state entrance in zebrafish (Gahtan et al., 2005; Bianco et al., 2011). Hunt sequences were therefore identified by clustering the continuous eye angle record for both eyes during each bout (Figure 1B, Figure 1\u2014figure supplement 1A). Hunt sequences were terminated on the bouts where fish either struck at their pursued prey or clearly quit pursuit. Quitting has been called an \u2018aborted\u2019 hunt in the literature (Henriques et al., 2019; Johnson et al., 2019), and most aborts in our dataset, as in other studies, corresponded to the cluster demarking deconvergence of the eyes (Figure 1\u2014figure supplement 1B) and a return to an exploratory state. The average hunting sequence ending in a strike in our dataset lasted for five bouts (Interquartile Range\u00a0=\u00a04 to 7).\n\n### Zebrafish typically choose the closest prey item when initiating a hunt sequence\n\nNearly all hunt sequences in our dataset began with the choice of a single prey item to pursue (Figure 1\u2014figure supplement 1B). The choice of prey item was straightforward. Fish almost invariably chose the closest paramecium in the environment conditioned on the fact that the paramecium was fairly close to its midline in azimuth and significantly above it in altitude (Figure 1\u2014figure supplement 2; \u03bcaz = 0.7\u00b0 \u03c3az = 48.4\u00b0; \u03bcalt = 19.9\u00b0 \u03c3alt = 19.7\u00b0; \u03bcdist = 3.4 mm \u03c3dist = 1.6 mm). There was no particular bias of prey choice in terms of direction or magnitude of velocity (Figure 1\u2014figure supplement 2A, bottom panels).\n\n### Sensorimotor transformations during prey capture are largely controlled by Pre-Bout prey position\n\nAfter choosing a prey item during an initiation bout, the fish engages in a series of pursuit bouts (see Video 1) that can each influence the position, yaw, and pitch of the animal (Figure 2A). Pursuit bouts are conducted until prey are positioned in a \u2018strike zone\u2019, which defines the termination condition for successful hunts in spherical coordinates relative to the fish: this zone is directly in front of, and considerably above the fish (Figure 2B; avg. 0.9\u00b0 Prey Az, 17.4\u00b0 Prey Alt, .870 mm Prey Dist; Mearns et al., 2019). We investigated whether displacements and rotations during pursuit bouts were influenced by 3D prey position before each bout. For the rest of this manuscript, only sensorimotor transformations during hunt sequences in which a strike was performed are described. However, the algorithm the fish uses during aborts is nearly identical (Figure 2\u2014figure supplement 1; note that the last three bouts in abort sequences tend to go awry for unknown reasons; Henriques et al., 2019).\n\nFor every pursuit bout, we calculate an axis of motion in egocentric spherical coordinates along which fish displace during the bout. This axis is defined by an azimuth and an altitude angle (\u2018Bout Az\u2019, \u2018Bout Alt\u2019), and the magnitude of displacement along this axis is termed \u2018Bout Distance\u2019. Because the axis of motion during bouts is not perfectly aligned to the axis of symmetry, yaw and pitch changes are independently described per bout (\u2018Bout \u0394Yaw\u2019, \u2018Bout \u0394Pitch\u2019). Diagrams of rotation and displacement variables are provided alongside Figure 2C and D.\n\nEach bout aspect is primarily controlled by the position of the prey relative to the fish immediately preceding bout initiation (Figure 2C and D). Regression fits show that Bout Az and Bout \u0394Yaw are well correlated to Prey Az, with negligible offset (0.3\u00b0 and 0.48\u00b0). This transformation simply implies that fish displace and turn towards their prey. A similar linear relationship is seen when mapping Bout Alt and Bout \u0394Pitch of pursuit bouts to Prey Alt, but this time with significant negative offsets (\u221215.13\u00b0 and \u22121.79\u00b0). These negative offsets imply that if Prey Alt before a pursuit bout is 0\u00b0, which one may preconceive as the fish\u2019s ultimate \u2018goal\u2019, the fish will dive downwards by\u00a0~15\u00b0 and rotate downward by\u00a0~2\u00b0, thereby consistently maintaining the prey above itself at the end of pursuit bouts. Schematics of these rules are shown in Figure 2E and F. Interestingly, these positional transformations reflect the fish\u2019s preferred position in which to strike for prey consumption: with\u00a0prey\u00a0directly in front and significantly above\u00a0the\u00a0fish (Figure 2B).\n\nBout Distance along the axis of motion established by Bout Az and Bout Alt is a more complex variable and will be addressed below.\n\n### All 3D movements during prey capture are strongly modulated by prey velocity\n\nFish must capture prey that can move very quickly (in our assay, 74% 3D vector velocity\u00a0>3 paramecium lengths per second, 27%\u00a0>\u00a06 paramecium lengths per second; avg. Prey \u03b4Az / \u03b4t\u00a0=\u00a029\u00b0/s, Prey \u03b4Alt / \u03b4t\u00a0=\u00a025\u00b0/s; Figure 3\u2014figure supplement 1A). We therefore surmised that prey velocity perception should be required for prey capture. Previous studies had suggested that kinematics of zebrafish movements change from slow to fast bouts based on whether prey are approaching or swimming away from the fish (Patterson et al., 2013). Our 3D setup allowed us to conduct a detailed analysis of prey velocity perception in all planes.\n\nWe find that every movement the fish performs during prey capture is strongly and proportionally influenced by both the radial and angular velocity of its prey (Figure 3). All angular bout variables are amplified if prey are moving away from the fish (Figure 3 light colors) and dampened when prey are moving towards the fish (Figure 3 dark colors; Figure 3\u2014figure supplement 1B). Modulation of bout features is proportional to the velocity of the prey, as it is well fit by multiple linear regression transforming position and velocity of prey into fish bout variables (see Figure 3 legend).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Light colors depict each bout variable if prey are moving away from the fish while dark colors indicate that prey are moving toward the fish in the same 5\u00b0 window of space.\u00a0A pattern emerges of dampening movements when prey velocity is towards the fish, and amplifying movements when prey velocity is away from the fish. Point locations are means with error bars representing 95% CIs. Multiple regression fitting of bout variables to prey position and velocity in all planes confirm and quantify the dampening and amplification (azimuth velocity moving left to right of the fish is positive, altitude velocity upward is positive). Bout Az is biased by .251 * Prey \u03b4Az / \u03b4t (.219 - .283 95% CI), Bout \u0394Yaw by .054 * Prey \u03b4Az / \u03b4t (.046-.061 95% CI), Bout Alt by .300 * Prey \u03b4Alt / \u03b4t (.268 - .331 95% CI), and Bout \u0394Pitch by .031 * Prey \u03b4Alt / \u03b4t (.024 -\u00a0.039 95% CI). Dividing these coefficients by the average bout length (0.176 s) yields the projected positional coefficients described in the text. (C) Bout Distance is linearly proportional to Prey Distance but only within 4 mm of the fish, with breakdown in relationship above 6 mm. Likewise, dampening of Bout Distance when Prey \u03b4Dist / \u03b4t\u00a0<\u00a00 (prey approaching radially), and amplifying when Prey \u03b4Dist / \u03b4t\u00a0>\u00a00 (prey moving afar), occurs in two windows: 0\u20131 mm, and 1\u20132 mm from the fish. Overall, multiple regression finds: Bout Distance\u00a0=\u00a00.105 * Prey Dist + .053 * Prey \u03b4Dist / \u03b4t (95% CIs\u00a0=\u00a00.094-.116, .034-.071), which reflects the fact that\u00a0~70% of pursuit bouts occur when prey are within 2 mm. (*: p<0.05/6, Bonferroni corrected two-tailed t-tests. p-values: 0\u20131 mm\u00a0=\u00a02.7 * 10\u22126, 1\u20132 mm: 0.0016, 2\u20133 mm: 0.38, 3\u20134 mm: 0.73, 4\u20136 mm: .00046, 6+: 0.92).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Distribution of 3D velocities of prey hunted by fish in our study.\u00a0Mean azimuth and altitude velocities (absolute value) are shown in reference to the fish, averaged over 80 ms before pursuit bout initiation, which is the time interval of all velocity calculations implemented here. (B) Example histograms for two 5\u00b0 windows of prey space, as shown in Figure 3A,B. Again, light colors indicate that prey are moving away from the fish and dark moving toward. If prey are 0\u20135\u00b0 to the right of the fish, but swimming toward the fish in azimuth, the fish will actually turn and displace left, predicting that the prey will cross its midline. If swimming away, fish turn and displace to the right. In a window 15\u201320\u00b0 above the fish in altitude, the fish will actually \u2018wait\u2019 for prey with downward velocity (i.e. Bout Alt\u00a0~0\u00b0), anticipating that the prey will arrive in the strike zone. Otherwise if prey are moving upwards, fish displace and rotate upwards.\n\nWe next wondered whether velocity perception constitutes a prediction of future prey position. Given that most bouts zebrafish make during hunts are 176 ms long (IQR\u00a0=\u00a0144 ms to 208 ms), we can calculate from each prey velocity the change in prey position that would occur during an average bout. We find that zebrafish transform projected prey position changes by 1.43 for Bout Az,. 31 for Bout \u0394Yaw, 1.70 for Bout Alt, and. 18 for Bout \u0394Pitch (see Figure 3 legend). Critically, these values closely approximate the coefficients describing bout transformations to prey position itself in Figure 2. This is the first hint that the fish has reduced the problem of position prediction to adding velocity multiplied by bout time to its current prey position percept. In this sense, the fish are performing Euler\u2019s Method of approximating a future position based on its instantaneous derivative.\n\nThe final bout variable to address, Bout Distance, is more nuanced than the other four bout features. The linear relationship between Bout Distance and Prey Distance, in general, is only strong when prey are\u00a0<4 mm from the fish (Figure 3C). Bout Distance is significantly modulated by radial prey velocity (\u03b4Dist / \u03b4t; see Figure 1D) when prey are within 2 mm (Figure 3C). In this spatial window, radial velocity of prey coming toward the fish dampens Bout Distance while radial velocity moving away from the fish amplifies Bout Distance. Indeed, multiple regression finds an overall correlation between Bout Distance and Prey Distance with significant dampening when Prey \u03b4Dist / \u03b4t\u00a0<\u00a00 and amplification of Bout Distance when Prey \u03b4Dist / \u03b4t\u00a0>\u00a00 (Figure 3C legend for coefficients).\n\n### Computational models of prey capture behavior show efficiency and success arise from velocity perception\n\nNext, we asked to which degree the use of prey velocity contributes to the animal\u2019s ability to efficiently and successfully capture prey. To that end we constructed a Virtual Prey Capture Simulation Environment in which computational models of fish behavior with different \u2018powers\u2019 can be pitted against each other. Each of these models varied along two axes: how the fish perceives its prey and how it transforms prey perception into movements. The relative powers possessed by each model allowed us to assess how the fish balances prey capture speed and accuracy with the energy required for such a movement sequence. We started by re-creating paramecium trajectories of 225 hunt sequences initiated by the fish that resulted in a real-life strike (Figure 4A, Materials\u00a0and\u00a0methods). From the initial conditions of these trajectories, we launched five models that transform current paramecium features into 3D bouts as the prey moves through the environment.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig4-v2.jpg)\n\n**Figure 4.:** (A) A virtual prey capture environment mimicking the prey capture tank was generated to test three different types of models, and six models overall, described in the schematic.\u00a0Models control a virtual fish consisting of a 3D position (red dot) and a 3D unit vector pointing in the direction of the fish\u2019s heading. Virtual fish are started at the exact position and rotation where fish initiated hunts in the dataset. Prey trajectories are launched that reconstruct the real paramecium movements that occurred during hunts. The virtual fish moves in bouts timed to real life bouts, and if the prey enters the strike zone (defined by the distributions in Figure 2B, Materials\u00a0and\u00a0methods), the hunt is terminated. (B) Barplots (total #) and box plots (median and quartiles) showing performance of all six models in success (# Strikes), energy use per hunt sequence, and how many bouts each model performed during the hunt (a metric of hunt speed). (C) KDE plots showing the distribution of Post-Bout Prey Az and Post-Bout Prey Alt distributions for each model during virtual hunts. Dotted lines demark the strike zone mean.\n\nEach model initiates a bout at the precise moment when the real fish initiated a bout during the sequence, and model sequences are terminated when the prey enters the virtual strike zone (Figure 2B, Materials\u00a0and\u00a0methods). Moreover, we compare all models to the real 3D fish trajectory (the \u2018real fish\u2019 model, Figure 4 Model 1 [Blue]), both assuring that our 3D bout and strike-zone characterizations recapitulate real-life performance, and allowing us to compare post-bout coordinates of all models to the characterization of real bouts.\n\nThe capabilities of each model are as follows (Figure 4A): First, a multiple regression model was fit on only positional features of the paramecium (Model 2 [Orange]). This model linearly transforms current position of the prey into 3D bout features according to the regression fits in Figure 2C,D (and the bout distance fit from 3C). Model 3 (Green), a multiple regression model fit on both the position and velocity of prey, accounts for the amplification and dampening of bout features by prey velocity in Figure 3; position transforms are thus linearly biased by the velocity coefficients described in the Figure 3 legend.\n\nModels 4\u20136 are \u2018Choice\u2019 models which can draw from a distribution of 1782 pursuit bouts conducted by fish in our dataset during sequences ending in a strike. This bout pool can be thought of as the \u2018pursuit repertoire\u2019 of larval zebrafish. Model 4 (Red) simply assembles random bouts drawn from the bout pool into a hunt sequence. Model 5 (Purple) chooses the ideal bout from the pool, with each bout scored on its achievement in reducing the prey\u2019s azimuth, altitude, and distance to the mean values of the strike zone (see Materials\u00a0and\u00a0methods). Model 5 does not have access to the velocity of the prey, meaning that it will zero in on the pre-bout prey position. Lastly, Model 6 (Gold) has the same capabilities to choose ideally as Model 5, but will extrapolate the current prey velocity and add its time multiplied bias to the current position. Therefore, Model 6 can predict the future paramecium position at the end of the bout, but chooses ideally instead of linearly.\n\nTo compare the models, we describe four facets of their performance intended to score raw hunting success as well as energetic cost: First, how many times out of 225 the model achieved success in placing the virtual prey in its strike zone. Second, how much total energy was expended by the bout combination used during the hunt (see Materials\u00a0and\u00a0methods). Third, how many total bout choices the model made per hunt as a metric for capture speed (Figure 4B). And lastly, the Post-Bout Prey Az and Alt prey coordinate for each transformation was plotted to illustrate how well each model does in reducing prey coordinates to the strike zone (Figure 4C). Performance of each model for an\u00a0example prey trajectory can be viewed in Video 2.\n\n![Video 2.](https://cdn.elifesciences.org/articles/51975/elife-51975-video2.mp4.jpg)\n\n**Video 2.:** Each model from Figure 4 begins at the same position and orientation and is given the task of hunting the same paramecium trajectory. In this representative hunt sequence, every model except the Random Choice and Multiple Regression (Position Only) models consume the prey (indicated by red STRIKE flash). As is typical in the simulations, the Ideal Choice (Position) model lags the Ideal Choice (Velocity) model by one bout.\n\nThe first clear result is that the velocity-based regression Model 3 (Green) improves hunting success over the position-only regression Model 2 (Orange) by 65%. Moreover, the average number of bouts is one less for the velocity model, matching the average of the real fish (Blue). This indicates that the velocity information processed by the fish, which allows projection of future prey coordinates, is critical for both its success rate and speed in capture. When examining the Post-Bout Prey Az for the regression models, the velocity-based Model three shows a tighter distribution around 0\u00b0, indicating that it is closer to the strike zone on average than position-only Model 2 (Figure 4C, right top panels). This is also true for Post-Bout Prey Alt, where the green plot shows a stronger bias toward the strike zone.\n\nVelocity information is also critical to the performance of ideal choice models. As expected, the random choice Model 4 (Red) performs very poorly, indicating that although similar \u2018types\u2019 of pursuit bouts are chosen, success can only be gained by accounting for prey features. Model 5 (Purple), interestingly, does not outperform the real fish in terms of success (3% worse) or average speed of capture, and expends significantly more energy. Model 5 therefore issues high energy bouts (i.e. bouts that strongly rotate and displace the fish), but without any average improvement over what the fish actually did, owing to the high velocity of the average prey item (Figure 3\u2014figure supplement 1A). Model 6 (Gold), however, by accounting for prey velocity and choosing ideally, improves success rate over Model 1 (Real Fish) and 5 (Ideal Position) by 14% and 17%, reduces the average number of required bouts by 1, and more effectively reduces Post-Bout Prey Az and Alt to the strike-zone (Figure 4C, bottom panels). Nevertheless, Model 6 expends the most energy of any model per hunt sequence, meaning that fully ideal choice comes at an energetic cost.\n\nWe therefore conclude that position perception improves performance over issuing random pursuit bouts with no reference to the prey, and that velocity information in all formats improves model performance over position perception alone. Of note, the high energy usage of the ideal models relative to the real fish argues against the natural implementations of these seemingly optimal strategies. Lastly, although the real fish takes fewer bouts to reach the target than the regression models (#2, #3), it requires slightly more total energy to do so. This implies that a modicum of additional energy is expended per bout, and we speculate that the generation of stochasticity in the real fish\u2019s algorithm (described below) is to blame.\n\n### Pre-Bout to Post-Bout prey coordinate transformation reveals a canonical hunting strategy\n\nWe next wondered which of the numerous prey capture strategies observed in nature arises from the rules implemented in Figures 2 and 3. For example, a strategy of immediately zeroing the angle of attack is used by many predators and is called \u2018pure pursuit\u2019. Other common strategies include \u2018deviated pursuit\u2019, where a constant angle of attack is maintained throughout the hunting sequence. We find that larval zebrafish use neither of the two, but rather reduce Prey Az and Prey Alt by a factor of 0.5 at each bout. In the first two panels of Figure 5A (blue and yellow), the post bout angle of attack is plotted against the pre bout angle, and a constant ratio of\u00a0~0.5, regardless of prey velocity direction, is apparent in the slopes of the regression lines. This strategy of reducing prey angle in both planes to a fixed proportion on each bout is schematically depicted in Figure 5B and Figure 5\u2014figure supplement 1. Notably, when prey are below the fish, the slope changes to 0.9, meaning that the fish is only getting 10% closer in altitude per bout. This poor performance for negative Prey Alt is consistent with our observation that hunt initiations are triggered almost exclusively by prey located above the fish. In fact, 92.4% of all bouts in our dataset occur when prey are above 0\u00b0 Alt (Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig5-v2.jpg)\n\n**Figure 5.:** (A) Regression plots showing relationships between pre-bout prey coordinates and post-bout prey coordinates. Dark colors, prey are moving toward the fish. Light colors, prey are moving away from the fish. 95% CI on azimuth transforms\u2019 y-intercept includes 0\u00b0. Top right panel fit on all distances\u00a0<\u00a06 mm (see Figure 3C). (B) Schematic showing recursive halving of the angle of attack during pursuit. (C) Regression slopes are constant across the hunt sequence; color coded to 5A. (D) Pseudocode describing the recursive prey capture algorithm that transforms according to 5A until it arrives at the strike zone. The combined (both velocity directions) distance transform is .84 * Pre-Bout Prey Dist -. 0125 mm\u00a0=\u00a0Post Bout Prey Dist. The azimuth transform is .53 * Pre-Bout Prey Az\u00a0=\u00a0Post Bout Prey Az. The altitude transformation is .54 * Pre-Bout Prey Alt + 8.34\u00b0\u00a0=\u00a0Post Bout Prey Alt. Implementing these equations recursively will terminate the algorithm at 18.1\u00b0 Prey Alt (since .54 * 18.1\u00b0 + 8.34\u00b0\u00a0= 18.1\u00b0) and 0\u00b0 Prey Az (.53 * 0\u00b0\u00a0=\u00a00\u00b0), which aligns precisely with the strike zone described in Figure 2B. See Appendix for full pseudocode of all sub-functions.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** This strategy emerges from the position transforms in Figure 2 and the modulation of rotation and displacement by prey velocity in Figure 3 (Bout \u0394Yaw, pink wheel; Bout Az, blue wheel).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Most bouts in the dataset (>92%) occur when prey are above the fish. This change when prey cross 0\u00b0 Alt is accounted for in all algorithms (see Appendix).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The initiation bout is a large angle turn that divides azimuth more than a pursuit bout; altitude is also significantly more reduced by the initiation bout. All regression models in simulations therefore use an independent regression fit to initiation bouts to start every simulated hunt.\n\nNext, we analyzed how much the radial distance to the prey object is reduced as a consequence of each pursuit bout. We find that on average fish become 16% closer to the prey per bout, or in other words, the Prey Distance is scaled by 0.84 at every iteration. This reduction, however, is significantly less for prey objects that move radially away from the fish (0.87) versus when prey move toward it (0.81; Figure 5A, light red vs dark red regression fits), which is consistent with the fact that the fish does not modulate Bout Distance based on radial prey velocity when prey are further than 2 mm away (see Figure 3C). However, once prey are maneuvered to within 2 mm, radial velocity is taken into consideration and the two fits converge on similar outcomes. Importantly, 69% of pursuit bouts occur when prey are 0\u20132 mm from the fish, indicating that Bout Distance is typically modulated by radial prey velocity, and that fish can most often achieve a preferred Post-Bout Prey Distance after a bout is completed.\n\nTo summarize, because fish account for prey velocity in all directions (Figure 3), they are on average capable of achieving a fixed proportional reduction of Prey Az, Alt, and Dist during pursuit bouts. These proportions are consistent from the beginning to the end of hunting sequences (Figure 5C); therefore, this data reflects a \u2018deterministic recursive algorithm\u2019 for prey capture: The fish recursively transforms current prey coordinates into more favorable prey coordinates by a fixed scale factor in all planes until the strike zone is attained (Figure 5D).\n\n### Graded stochasticity in Pre-Bout to Post-Bout prey coordinates benefits hunting efficiency\n\nInterestingly, we noticed a clear graded increase in variance of the post-bout coordinate in all spherical planes as pre-bout coordinates trended away from the strike zone (Figure 5A, Figure 6A left panels, Figure 6\u2014figure supplement 1). This suggested to us that the fish is implementing a stochastic recursive algorithm rather than the deterministic recursion described in Figure 5D.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig6-v2.jpg)\n\n**Figure 6.:** (A) KDE plots of post-bout variable distributions for pre-bout input coordinates described in the legend, color-coded to the KDEs (i.e.\u00a0the blue KDE in Az is the distribution of all Post-Bout Prey Az given that Pre-Bout Prey Az is 5\u00b0). Real data is binned in 5\u00b0 windows for angles and. 25 mm bins for distance. DPMM-generated post-bout variables are directly simulated from the model 5000 times, conditioned on the pre-bout value in the legend. (B) The median performance of the DPMMs embedded in a recursive loop (stochastic recursion algorithm; run 200 times per initial prey position) typically ties or outperforms the deterministic recursion model, which transforms with the same pre-bout to post-bout slopes as the DPMMs. Pink line is the performance of the real fish. Right panel: KDE plot of data from 6A, showing that the stochastic algorithm approaches the speed of the real fish. (C, D) A Graded Variance Algorithm where proportional noise is injected into each choice (equations below) is applied 500 times per initial distance (0.1 mm to 10 mm, .1 mm steps) or azimuth (10\u00b0 to 200\u00b0 in steps of 2\u00b0). Termination condition is a window from. 1 mm to 1 mm for distance, \u221210\u00b0 to 10\u00b0 for azimuth (see Appendix for full algorithm). Deterministic recursion algorithm (Figure 5D) is also run on each initial azimuth and distance with .53 * az for azimuth and .84 * dist - .0125 mm as the fixed transforms. Graded Variance uses these exact transforms as the mean while injecting graded noise: \u03c3d = 0.137 * dist + 0.034 mm; \u03c3az =\u00a0.36 * az + 7.62\u00b0, which were fit using linear regression on samples generated by our Bayesian model (6B). (C) shows examples of Graded Variance performance (\u2018stochastic\u2019) vs. deterministic performance for an example start distance of 3.8 mm. (D) is a barplot comparing the deterministic performance for each input distance and azimuth to the median Graded Variance (\u2018stochastic\u2019) performance where we directly injected noise. Average performance using noise injection typically ties or defeats deterministic choices by one bout.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51975/elife-51975-fig6-figsupp1-v2.jpg)\n\nIn order to capture the stochasticity of pre-bout to post-bout prey transforms made by zebrafish during pursuit, we chose to use probabilistic generative models (Dirichlet Process Mixture Models: \u2018DPMMs\u2019). These models are Bayesian, non-parametric models which avoid the key problem in the statistical modeling field of having to arbitrarily specify the number of variables that best characterizes your data (Gershman and Blei, 2012). They can be thought of as \u2018probabilistic programs\u2019 that accurately mimic fish choices given a particular pre-bout prey coordinate (Goodman et al., 2008; Mansinghka et al., 2015;\u00a0Cusumano-Towner et al., 2019). Using this framework, we sought to uncover whether a stochastically implemented version of the recursive hunting algorithm was beneficial to the fish. To that end, we pitted a stochastic algorithm defined by our Bayesian model against the deterministic algorithm (5D) and compared performances of both models to each other and to the performance of the real fish (Figure 6B). Remarkably, the stochastic model outperformed the deterministic model in terms of capture speed (# Bouts to Capture, Figure 6B; Wilcoxon signed rank\u00a0=\u00a07.5 * 10\u221217). This suggested that the fish\u2019s strategy of graded stochastic transforms centered on a preferred post-bout value is actually beneficial versus accurately achieving a fixed, preferred post-bout value. Moreover, although everything except initial prey position has been abstracted away, the performance of the stochastic model approaches that of the real fish (Figure 6B, right panel).\n\nTo confirm that graded stochasticity in our Bayesian model was responsible for its increased prey capture speed, we simply injected proportional noise into deterministic bout choices and asked whether we could speed up prey capture (Figure 6C,D). This was clearly the case (Wilcoxon Signed Rank: 1.87 * 10\u22129 azimuth, 3.96 * 10\u221214 distance); common scenarios that we observed in these simulations are illustrated in Figure 6C. The deterministic algorithm definitively achieves the strike zone in a fixed number of transforms (Figure 6C, top), but injecting proportional noise can either directly improve on deterministic choices (\u2018Beneficial\u2019 panel, 6C), start poorly but then recover and outpace deterministic choices (\u2018Recovery\u2019, 6C), or perform detrimentally (\u2018Detrimental\u2019, 6C). Nevertheless, the average performance when injecting proportional noise is typically equivalent or better by one bout (Figure 6D). Given that successful hunts in our dataset had an interquartile range of 4 to 7 total bouts, improving by one bout constitutes an average 14\u201325% gain in capture speed. We therefore conclude that the fish\u2019s graded stochasticity produces performance that is curiously beneficial to the fish while hunting prey.\n\n## Discussion\n\nIn our study, we uncovered three basic rules that larval zebrafish implement while hunting their fast-moving prey: 1) prey position linearly governs the aspects of five degrees of freedom in which fish can rotate or translate through the water: rotation in yaw and pitch, as well as lateral, vertical and radial displacement; 2) prey velocity modulates all of these aspects of 3D motion and allows the fish to project prey position forward in time; and 3) prey coordinate transformation operates via graded variance based on prey proximity to the strike zone. The first two rules are interesting, since their 3D features and specific contingencies have not been examined in zebrafish, and it certainly was not clear that position prediction was already implemented at the larval stage. This general strategy of using velocity to increase prey capture efficiency, however, is implemented in many hunting organisms such as dragon flies and salamanders (e.g. Borghuis and Leonardo, 2015), while superposition of position and motion information has been observed in Drosophila (Bahl et al., 2013). The third rule, which describes the benefits of stochasticity in these hunting algorithms has, to our knowledge, not been described in any trajectory prediction assay to date.\n\nAs we show, the aforesaid rules work in tandem to generate excellent, energy efficient performance in prey capture (Figures 4 and 6), which is the most complex behavior that larval zebrafish perform and would appear to require elements of physical knowledge. We focus our discussion on how these rules apply to related studies on the neural mechanisms of prey capture, how examining prey capture at two levels of abstraction was beneficial to our study, and how the fish\u2019s algorithms appear to be built around the inherent constraints of its own body.\n\n### From algorithms to neurobiology\n\nWith respect to the neural implementations of the algorithms we describe, the transformation of angular prey position into informative neural activity is encapsulated to a large extent by the abundant research related to retinotopic maps (e.g. Sperry, 1963; Apter, 1946; Muto et al., 2013; but see Avitan et al., 2016). The encoding of distance to an object has been well studied in mammalian visual neuroscience and is primarily focused on binocular disparity allowing stereoscopic comparison of each eye\u2019s retinotopic map (DeAngelis et al., 1998), with some studies focusing on monocular motion parallax (e.g. Nadler et al., 2008). Neuronal encoding of object speed, however, requires more sophisticated circuitry and much less is known about its implementation during prey capture. Speed sensitive neurons that discriminate between \u2018fast\u2019 and \u2018slow\u2019 prey-like stimuli have been uncovered in the zebrafish optic tectum (Bianco and Engert, 2015), while \u2018small field\u2019 tectal neurons that respond to velocity have been found in toads (Ewert, 1987).\n\nUnlike these and other reports studying velocity during prey capture (Trivedi and Bollmann, 2013; Patterson et al., 2013; Monroy and Nishikawa, 2011), we specifically contend that velocity perception is used to point-estimate a future prey position, and that the fish conducts bouts to achieve this estimate, on average, by biasing their prey position-controlled movements. We show that the perception and projection of velocity is key to prey capture success, and that without it, the azimuth and altitude coordinates of prey after bouts are less likely to lie near the strike zone (Figure 4). This type of predictive use of velocity is reminiscent of elegant behavioral studies that have illustrated trajectory prediction in salamanders and dragonflies (Mansinghka et al., 2015; Borghuis and Leonardo, 2015). Quantitative descriptions of such complex algorithms are an absolute necessity for generating hypotheses about neural implementations (Marr, 1982), and virtual prey capture setups for head fixed larvae provide promising inroads for testing our work at the neural level (Bianco and Engert, 2015; Avitan et al., 2016; Trivedi and Bollmann, 2013). Relatedly, monkeys also predict future locations of virtual prey using Newtonian physical attributes in a very similar paradigm to that shown here. In the monkey brain, these attributes are all reflected by neural activity in the dorsal anterior cingulate, which has no known homolog in the zebrafish, nor in other simple animals that use predictive prey models (Yoo et al., 2019). This suggests that in more primitive organisms the necessary computations are executed in earlier evolved brain areas which also might play an essential role in the primate.\n\nThe stochasticity that gives rise to the graded variance we describe can have several biological sources. It will be important to unravel whether the neural command signals arriving at muscles grow in variance with increased amplitude or if instead the muscles receive fixed input from the brain for a given prey condition, but themselves respond with graded noise. If the source of the variance is largely of a neuronal nature, then it would be interesting to study where exactly in the pathway from sensory areas to motor neurons such noise starts to appear (Stern et al., 2017). Further elucidation of the fish\u2019s probabilistic strategy should eventually integrate our findings into more general theories describing the utility of noisy biological behavior (see Jensen, 2018; Wiesenfeld and Moss, 1995, for review) and intentionally probabilistic circuit structures for solving computational problems (Mansinghka et al., 2008).\n\n### Strategic behavior arises from simple behavioral rules\n\nThe stochastic recursive algorithm in Figure 6 describes the progression of pre-bout to post-bout prey coordinates without explicitly accounting for prey velocity or specifically executing fish movements. This transformation pattern, which reveals a preferred future prey position and thus a trajectory prediction ability, emerges from the execution of the position and velocity-based rules described in Figures 2 and 3. Zebrafish prey capture in Figure 6C has, in fact, been reduced to a single input and a recursive series of stochastic divisions with a termination condition, which largely recapitulates the performance of the fish (Figure 6B, DPMM). It is unlikely that we would have found such a straightforward description of proportionality and stochasticity at the lower level of abstraction (i.e. in the fish\u2019s actual sensorimotor transformations), because pre-bout to post-bout prey transformation is a formulation of fish movements along five different axes acting simultaneously. Describing prey capture in this way allowed us to assess the goals of the fish on each bout (i.e. Marr, 1982), revealed that the fish possess an implicit model of how objects move in the world, and may lead to descriptions about how fish are evaluating their own performance during prey capture.\n\nWith regard to the benefits of the zebrafish\u2019s strategy, the proportional reduction of angle and distance saves energy at the expense of speed (Figure 4). Ideal bout choice improved speed of prey capture in our modeling data (Figure 4, Model 6); but it did so at the price of spending almost twice as much energy per paramecium captured. This suggests that the increase in feeding rate that the ideal model would afford seems not to be essential for providing an adaptive advantage. Interestingly, the inherent stochasticity in the algorithm significantly improves the speed of capture (Figure 6) while adding only a modicum of energy expenditure (Figure 4: comparison of Real Fish Model 1 vs. deterministic regression Model 3). This suggests that the fish has evolved a proper balance between energy expenditure and speed of capture. On the whole, the evolution of an efficient algorithm for prey capture in the zebrafish is in agreement with the theme of efficient behaviors arising from simple rules. However, quantifying the fish\u2019s overall energy consumption in a context where they often quit is difficult: energy consumption should therefore be revisited, incorporating work on the decay of the prey capture algorithm in the last three pursuit bouts of aborted sequences (e.g. Henriques et al., 2019; Johnson et al., 2019).\n\nWith respect to hunting schemes, predatory animals have evolved a variety of strategies to optimize pursuit and intercept prey. Tiger beetles, for example, engage in pure pursuit where the angle of attack is kept constant at zero degrees (Haselsteiner et al., 2014). Salamanders, on the other hand, lead the trajectory of their prey (Borghuis and Leonardo, 2015). Dragonflies and falcons often utilize a strategy of maintaining a constant line of sight which affords the benefit of motion camouflage (Kane and Zamani, 2014, Mizutani et al., 2003; but see Mischiati et al., 2015). Relevantly, dragonflies also implement an implicit predictive model of their prey as well as a model of the effects of their own body movements on prey drift, which foreshadowed the possible use of predictive models across animals with small brains (Mischiati et al., 2015). Larval zebrafish have been assumed to engage in pure pursuit, the simplest and most heuristic of these strategies. However, we find that the strategy used by these animals is more complex and reflects an implicit predictive model of where prey will be at a specified time in the future. Furthermore, the quantal nature of the zebrafish\u2019s swim bouts allowed us to uncover that the angle of attack is recursively and stochastically reduced by an average proportion until the prey enters a terminal strike zone.\n\n### Embodied physical knowledge\n\nOne branch of artificial intelligence research advocates against a central processing unit where relevant computation occurs in favor of a distributed network of sensorimotor transformations, tuned to the capabilities of the body, that can accomplish the goals of the system (Brooks, 1991). Our study reinforces these sentiments and suggests that approaching the study of the brain without considering its embodiment may be precarious.\n\nSpecifically, interesting relationships in the data we provide suggest that the fish\u2019s algorithms are built around the capabilities and constraints of its body. First, the amount of \u2018fixed noise\u2019 in the fish\u2019s azimuth transformations is 7.64\u00b0. This is the standard deviation of Post-Bout Prey Az given a Pre-Bout Prey Az coordinate of 0\u00b0, the minimum of graded stochasticity observed in Figure 6A. The standard deviation of the strike zone itself is 7.2\u00b0 in azimuth. We contend that the similarity between these two numbers suggests that the fish\u2019s strike zone is constructed to deal with noise that the fish cannot overcome in its motor program. If the prey is at, for example, 5\u00b0 azimuth, performing another bout to get to the very center of the strike zone (~0\u00b0 Az) would in many cases worsen the Post-Bout Prey Az coordinate due to fixed noise. Perfection is the enemy of good in this case. In this sense, the command to end pursuit and issue a strike is triggered by a visual releasing stimulus that evolved due to the fish\u2019s own bodily constraints. This is akin to the idea of embodied cognition (Maturana and Varela, 1987). Further evidence for embodied knowledge comes from the bias in the fish\u2019s responses to prey altitude. The fish\u2019s algorithm for transforming prey altitude biases the prey to\u00a0~18\u00b0 above the fish, which aligns almost perfectly with the mean altitude coordinate at which they strike (17.4\u00b0, Figures 2, 3 and 5). The mechanics of the fish jaw necessitate this: to open its jaw widely for paramecium entrance into the mouth, the fish must tilt its head up due to torsional constraints (Mearns et al., 2019). Therefore, the fish\u2019s entire sensation of prey altitude and its method of keeping the prey above it by biasing its bouts downward emerge from the way its jaw co-operates with the rest of its head. Also of note is that graded variance is minimal for altitude transformations at Pre-Bout Alt\u00a0=\u00a020\u00b0 (Figure 6A), whereas the azimuth minimum is at 0\u00b0; this is also likely a function of its jaw features, which allows the least motor noise when the prey are located in the ideal strike position.\n\nFinally, it is tempting to speculate that, in addition to possessing an implicit model of how objects move, the zebrafish is also equipped with a second forward model that predicts how its own body movements should give rise to expected sensory input (Figure 5). One way to determine the existence of this model is to test whether fish can adjust the gain of their movements in settings where they do not consistently achieve their preferred post-bout outcomes (i.e. Ahrens et al., 2012).\n\nAll things considered, the implicit predictive model of 3D prey motion shown in this study is: 1) embodied by the fish\u2019s stochastic recursive algorithm 2) shaped by the constraints and capabilities of the fish and 3) formulated by the interaction of three simple rules. These rules transform position of prey into fish movements, bias the vigor of fish movements based on prey velocity, and inject proportional noise into each sensorimotor transformation. Importantly, these more nuanced features of the fish\u2019s hunting algorithm would not have been revealed without examining prey capture in its more naturalistic 3D setting, which we believe has laid a groundwork for future studies examining the ontogeny, plasticity, and neural implementation of prey capture algorithms and physical knowledge in general (e.g. Avitan et al., 2017).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BayesDB</td>\n      <td>arxiv</td>\n      <td>arxiv:1512.05006</td>\n      <td>http://probcomp.csail.mit.edu/software/bayesdb/</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>WIK</td>\n      <td>ZFIN</td>\n      <td>ZFIN_ZDB-GENO-010531\u20132</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nExperiments were conducted according to the guidelines of the National Institutes of Health and were approved by the Standing Committee on the Use of Animals in Research of Harvard University. All experiments were performed on dpf 7\u20138 larval zebrafish of the WIK strain. Fish were raised in an automated system where they were delivered paramecia twice a day from dpf4 onward. Importantly, fish in the system experienced a full range of paramecium movement due to the height of the water in their home tank (~6\u2019). Fish were fasted for 4\u20136 hr before experiments.\n\n### Behavioral setup\n\nAfter the fasting period, fish were added with\u00a0~100 paramecia (Paramecia Multimicronucleatum) in the dark to a 2 cm x 2 cm x 2 cm cube tank made of clear acrylic capped with coverglass. 3.56 megapixel images were simultaneously acquired from the top and side of the tank using two Point Grey Grasshopper 3 NIR cameras; the cameras were synchronized by a TTL pulse triggered by a Pyboard microcontroller at 62.5 Hz. Custom acquisition code was written using C# with the EmguCV library for high-speed video-writing.\n\nCamera positions were calibrated by using known reference points (i.e. body features of the fish) for the shared plane of the cameras. Identification of known object positions in both planes was extremely accurate (~200 micron mean error), calculated by average position of the fish\u2019s eye center in both cameras over all experiments. This allowed accurate reconstruction of 3D prey and fish features (see below).\n\nFor the duration of the experiment, fish were illuminated with an infrared LED array, and after 2 min in the dark, fish were exposed to a uniform white LED which commenced prey capture. Fish hunted in the white light illuminated condition for 8 min before the experiment was terminated. Fish that did not consume more than one paramecium over the 8 min experiment were discarded for analysis (46/53 fish passed this criteria).\n\n### Behavioral analysis\n\nCustom Python software using the OpenCV library was written to extract the body features of the fish (eye convergence angle, tail curvature, yaw, 3D position) and the position of each paramecium in the XY and XZ planes. Pitch was calculated by taking the 2D vertical angle in the side camera and fitting a cone to the fish using the yaw angle from the top camera. The tail angle of the fish was fed to a bout detection algorithm that returned frames where swim bouts were initiated and terminated using tail angle variance and bout velocity.\n\nHunt sequences were identified by spectral clustering (scikit-learn) the continuous eye angle of both eyes over each swim bout for all fish into five clusters. One of the five clusters showed clear convergence of both eyes at bout initiation (\u2018hunt initiation cluster\u2019), while a second cluster showed clear deconvergence (\u2018hunt termination cluster\u2019, see Figure 1\u2014figure supplement 1A). Custom annotation software cycled through frames marked as hunt initiations and allowed the user to terminate hunt sequences on frames where the fish consumed its prey or clearly quit hunting. Most hunt terminations coincided with the hunt termination cluster.\n\nUpon identifying the frame boundaries of hunt sequences, a 3D prey trajectory reconstruction algorithm was applied that matched prey discovered in the two separate cameras. This is a nontrivial task because the two cameras only overlap in one axis; any two prey items that share similar values in the overlapping plane must be separated using dynamics in time. We therefore matched prey trajectories from the top and side using correlation of velocity profiles and post-hoc 3D position similarity. In this way, each prey item is assigned an ID for a given hunt sequence; the user is required to specify the prey ID that is struck at on strikes, and the \u2018best guess\u2019 prey ID that fish pursue during abort sequences. All prey trajectories for each hunt sequence are mapped to a spherical coordinate system based on unit vectors fit from the fish\u2019s XYZ position, pitch, and yaw, with its origin at the fish\u2019s oral cavity. Manual quality control for mistakes in fish characterization or prey reconstruction was applied rarely by eliminating hunt sequences from analysis showing clear mistakes from the computer vision algorithms.\n\n### Regression fitting and modeling environment\n\nAll regression models were fit with Generalized Linear Model tools using the Python StatsModels package. When regression fits are shown in figures, we used the Seaborn library in Python, and 95% CIs for fits are represented as light shaded regions behind the regression line.\n\nIdeal choice models used in the Virtual Prey Capture Simulation Environment cycled through bouts combined in a \u2018bout pool\u2019 from all 46 zebrafish that were performed during sequences that ended in a strike. Each bout during Choice was pre-filtered for bout duration before scoring for prey closeness to the strike zone; ideal bouts could not be shorter than the bout chosen by the fish at that juncture, and could not extend past the time of the next bout chosen by the fish.\n\nPrey trajectories used in the modeling environment were selected from real capture sequences where the fish struck at the prey and the prey was swimming (>330 microns per second; 89% of all hunted prey records pass velocity criteria, which through inspection distinguishes swimming from floating prey). All virtual hunt reconstructions were initiated with the virtual fish and prey items in the exact same positions and orientations as when the real sequences were initiated. Energy consumption in the virtual environment was calculated under the assumption that the head to center of mass distance for a larval zebrafish is .53 mm (as measured in ImageJ) and the mass of the fish is 1 mg (Avella et al., 2012). Rotational energy of yaw and pitch and kinetic energy of center of mass displacement were added for each bout. Strike zone achievement was defined by the 95% CI on the angular position of a prey item during successful strikes (Figure 2B), likewise conditioned on the radial distance being less than two standard deviations from the mean.\n\nBoth regression and ideal models choose initiation bouts and pursuit bouts independently. The first bout of regression models is fit on only initiation bouts, and the first bout of choice models is chosen from the pool of all initiation plus pursuit bouts. This is largely because initiation bout transformations are significantly different from pursuits (Figure 5\u2014figure supplement 3).\n\n### Abstracted models and Bayesian nonparametric methods\n\nPseudocode describing the transformations of pre-bout to post-bout paramecium locations (Appendix, Figure 5D) were written according to the method of Russell and Norvig (2010). The Appendix contains all pseudocode required to implement the deterministic and stochastic choices made in Figures 5 and 6.\n\nWe inferred mixture models in Figure 6 from empirical data (Pre-Bout Prey Az, Alt, Dist and Post-Bout Prey Az Alt, Dist for all pursuit bouts in the dataset) using a non-parametric Bayesian prior called a Dirichlet Process Mixture Model (DPMM) (Rasmussen, 1999; Antoniak, 1974; Mansinghka et al., 2016). In order to accurately reflect realistic, stochastic pre-bout to post-bout transformations, our model choice had to be multivariate, heteroskedastic, and include multi-modal probability distributions over pursuit choices. While our linear parametric models (Figure 5A) captured the average transformation made by the fish in multiple velocity conditions, analytically tractable model families are unable to qualitatively capture the above phenomena. DPMMs can approximate a broad class of multivariate distributions without requiring a priori specification of the number of components in the mixture model. The mixture models generated via a DPMM prior can be converted to probabilistic programs for inference to generate the kinds of conditional simulations used in Figure 6 (Saad et al., 2019). In this representation, each pre-bout to post-bout prey transformation made by a zebrafish can be thought of as arising from a program that first chooses a prototypical transform (corresponding to a component in the mixture), and then generates a random transform from a distribution over transforms associated with the prototype. We used the BayesDB software library (Mansinghka et al., 2015; Saad and Mansinghka, 2016) to implement the computations needed to build these models and generate conditional simulations. BayesDB simulations were embedded inside a recursive loop that take an initial prey position as input and output the number of bouts until striking (see PREYCAPTURE algorithm in Figure 5D with STOCHASTIC_TRANSFORM substitution). When comparing deterministic and stochastic models in Figure 6, the initiation bout for both models was equal and deterministic; only pursuit bouts differed between deterministic and DPMM models. The deterministic model transformed using the average slopes of 10,000 samples generated from the DPMMs to isolate stochastic effects. For validation of noise injection in Figure 6C and D, the GRADED_VARIANCE algorithm in the Appendix was used.\n\n### Data and software availability\n\nAll software related to behavioral analysis, modeling, and virtual prey capture simulation is freely available at www.github.com/larrylegend33/PreycapMaster (copy archived at\u00a0https://github.com/elifesciences-publications/PreycapMaster;\u00a0Bolton, 2019). The software is licensed under a GNU General Public License 3.0. Source data for analysis and simulations is enclosed as \u2018Source Data\u2019 in relevant figures. Source Data for Figure 2 contains all pursuit bouts analyzed in the dataset; it was used to construct Figures 2, 3, 5 and 6A, and is accompanied by instructions for running queries. Source Data for Figure 6 contains the generators for simulating from the DPMMs in Figure 6. Using the code at www.github.com/larrylegend33/PreycapMaster and the generators in Source Data \u2013 Figure 6 requires obtaining the BayesDB software package, which is freely available at http://probcomp.csail.mit.edu/software/bayesdb/.\n",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "b55ca868-17f3-4913-8677-ec4616f688d0",
+      "submission_id": "9310392f-3604-4dfe-b61a-17a3a8780e15",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, Emory University United States\n\nReviewers:\n- Phillip Washbourne, University of Oregon United States\n- Stacey A Combes, University of California, Davis United States\n\n## Review text\n\nDOI: [10.7554/eLife.51975.sa1](https://doi.org/10.7554/eLife.51975.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper presents a highly detailed account of the kinematics of larval zebrafish hunting paramecia and compares these to various computational models to infer key aspects of zebrafish pursuit strategy and control. The work employs a free behavioral assay in which zebrafish can pursue their prey in 3D space, and takes advantage of the distinct pursuit \"bouts\" that zebrafish engage in during prey pursuits, unlike many other predators that display continuous pursuits. The most novel and exciting aspect of this work is the finding that the stochastic (\"noisy\") pursuit kinematics displayed by live zebrafish actually perform better than \"ideal\" alternatives that are modeled, in terms of striking a beneficial balance between capture success, speed, and energetic expenditure. The authors conclude their study with a well-written Discussion that touches on many potential causes and implications of this beneficial, stochastic pursuit strategy in 3D. This work will likely be of interest to researchers interested in prey capture writ large, as well as those interested in the role of noise and strategy in animal behavior, and points towards novel models to understand goal-directed behavior in animals.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Elements of a stochastic 3D prediction engine in larval zebrafish prey capture\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Phillip Washbourne (Reviewer #1); Stacey A Combes (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the reviews were largely positive on the technical aspects of the work, most of the necessary revisions detailed below relate to how the work is presented. Most broadly, there was a consensus amongst the reviewers that the writing was somewhat unclear and jargon-full at times, making it less accessible to the broad eLife readership than it could be, so the manuscript could greatly benefit from additional copy editing and tightening (including potentially making some figures supplementary). The manuscript also would greatly benefit from additional exposition explaining the technical choices made (including, for example, the DPMM) and the consequences of these choices over other possibilities.\n\nAll of that being said, all reviewers expressed excitement about the scientific results presented in the work, and we look forward to seeing the revised submission.\n\nEssential revisions:\n\n- As the reviews were largely positive on the technical aspects of the work, most of the necessary revisions detailed below relate to how the work is presented. Most broadly, there was a consensus amongst the reviewers that the writing was somewhat unclear and jargon-full at times, making it less accessible to the broad eLife readership than it could be, so the manuscript could greatly benefit from additional copy editing and tightening (including potentially making some additional figures supplementary).\n\n- The manuscript also would greatly benefit from additional exposition explaining the technical choices made (including, for example, the DPMM) and the consequences of these choices over other possibilities.\n\n- The finding that larval zebrafish use both the position and velocity of their prey to predict future prey locations has been shown in many other animals, including invertebrates such as dragonflies. The reviewers didn't find this result particularly surprising, although there was less familiarity with the zebrafish prey capture literature amongst the reviewers than with other studies on other predator-prey systems \u2013 so perhaps this overturns some long-standing assumptions about the capabilities of larval zebrafish. If this is the case, the authors should emphasize more strongly why these findings are surprising. Otherwise, the findings concerning the benefit of \"noisy\" pursuit trajectories should receive more of the emphasis in the Abstract, conclusions, etc.\n",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "15726634-318b-4094-92e4-6896977b7dd8",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C1",
+      "claim": "Larval zebrafish combines position and velocity perception to construct a future positional estimate of its prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a novel naturalistic 3D setup, we show that the zebrafish combines position and velocity perception to construct a future positional estimate of its prey, indicating an ability to project trajectories forward in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the 3D behavioral setup showing that zebrafish use both position and velocity information during prey capture, as detailed in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "b75dab68-9eeb-44f2-aecb-4aec2d0a8aec",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C2",
+      "claim": "Stochasticity in the fish's sensorimotor transformations provides a considerable advantage over equivalent noise-free strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the stochasticity in the fish's sensorimotor transformations provides a considerable advantage over equivalent noise-free strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling data in Figure 6 showing that stochastic algorithms outperform deterministic ones in prey capture speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "bebf3757-c237-46b5-acc7-7b82df354124",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C3",
+      "claim": "Zebrafish are equipped with a recursive prey capture algorithm built up from simple stochastic rules.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, our study reveals that zebrafish are equipped with a recursive prey capture algorithm, built up from simple stochastic rules, that embodies an implicit predictive model of the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing recursive halving of prey coordinates (Figure 5) and stochastic transformations (Figure 6), combined with computational modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "34182c56-f7c1-444d-b5b7-cd9863ef2685",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C4",
+      "claim": "Seemingly complicated behaviors like schooling in fish arise from stereotypic visuomotor rules being executed by members of the group.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, seemingly complicated behaviors like schooling in fish arise from stereotypic visuomotor rules being executed by members of the group, without reference to the emerging global pattern (Couzin and Krause, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Couzin and Krause, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "842332a8-60ea-400d-b7d6-7892a5530ba8",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C5",
+      "claim": "Bees learning to pull strings for hidden rewards are instituting a set of observational and associative learning rules in sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Bees learning to pull strings for hidden rewards appear to be displaying insight and ingenuity, but are in fact instituting a set of observational and associative learning rules in sequence (Alem et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Alem et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "f3486123-8324-43ab-9a10-53286884273b",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C6",
+      "claim": "Humans and animals have evolved internal models that allow prediction of ongoing dynamics in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, humans and animals have evolved internal models that allow us to both predict ongoing dynamics in the environment and anticipate how our own actions give rise to consequences in the world (Battaglia et al., 2013; Ullman et al., 2017; Baillargeon, 1987; Mischiati et al., 2015; Borghuis and Leonardo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "276def60-66c2-4198-8b50-15223612a10c",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C7",
+      "claim": "Crayfish and paddlefish take advantage of stochastic resonance to detect sparse prey and predators.",
+      "claim_type": "EXPLICIT",
+      "source": "Crayfish and paddlefish, for instance, both take advantage of stochastic resonance to detect sparse prey and predators (Douglass et al., 1993; Russett et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by Douglass et al., 1993 and Russett et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "6982d6cb-5182-4e4a-bf15-57b4a86d7b15",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C8",
+      "claim": "The larval zebrafish is a teleost with approximately 100,000 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The larval zebrafish, a teleost with ~100,000 neurons, is a tractable model organism amenable to an array of modern neuroscience techniques (Avella et al., 2012; Dunn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and represents established knowledge about zebrafish neurobiology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "ffec576b-d974-406d-b19e-1db54e3c5a91",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C9",
+      "claim": "Stabilization of position in turbulent streams by zebrafish is accomplished by instantiating a curl-detector for local water flow and an optomotor response.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, stabilization of position in turbulent streams is accomplished by instantiating a curl-detector for local water flow and an optomotor response (Oteiza et al., 2017; Naumann et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by Oteiza et al., 2017 and Naumann et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "8a175a75-c8e8-4238-b7cd-5ab5abedc6fd",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C10",
+      "claim": "Energy-efficient foraging in zebrafish emerges from the fish's innate tendency to locomote via alternating series of unidirectional turns.",
+      "claim_type": "EXPLICIT",
+      "source": "while energy-efficient foraging emerges from the zebrafish's innate tendency to locomote via alternating series of unidirectional turns (Dunn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Dunn et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "2d13fa9f-ff1d-455c-a6bd-5dcf4c41d077",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C11",
+      "claim": "The zebrafish's ongoing behavior is largely probabilistic, reflecting the stochasticity of its neural systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the zebrafish's ongoing behavior is largely probabilistic, reflecting the stochasticity of its neural systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and general knowledge about zebrafish behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "4fa72959-6064-4bbb-962d-9b04674d04f6",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C12",
+      "claim": "The precise number of unidirectional turns in any spontaneous swimming stretch by zebrafish is stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the precise number of unidirectional turns in any spontaneous swimming stretch is stochastic, while turn magnitude in response to angular optic flow varies widely (Dunn et al., 2016; Naumann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by Dunn et al., 2016 and Naumann et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "f90bec4a-c7e1-450f-a157-06362eac3d36",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C13",
+      "claim": "Hunting sequences were recorded from 46 larval zebrafish using a behavioral setup that could simultaneously image the fish and its prey from the top and side at high resolution and speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Hunting sequences were recorded from 46 larval zebrafish using a behavioral setup that could simultaneously image the fish and its prey from the top and side at high resolution and speed (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the experimental methodology and is supported by the description in the text and Figure 1A showing the setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "851f78b0-aca6-4907-877e-acaeac868bb3",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C14",
+      "claim": "Custom computer vision software was designed to reconstruct the fish's 3D position and two of the principal axes, yaw and pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Custom computer vision software was designed to reconstruct the fish's 3D position and two of the principal axes, yaw and pitch (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the computational methods developed for the study, supported by Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "abb0f06b-c129-47fd-acb2-af74bd7f4d94",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C15",
+      "claim": "Each paramecium is assigned an azimuth, altitude and distance as a positional coordinate, along with angular and radial velocities with respect to the fish's 3D point of view.",
+      "claim_type": "EXPLICIT",
+      "source": "Hereby, each paramecium is assigned an azimuth, altitude and distance as a positional coordinate ('Prey Az, Prey Alt, Prey Dist'), along with angular (Prey \u03b4Az / \u03b4t, Prey \u03b4Alt / \u03b4t) and radial (Prey \u03b4Dist / \u03b4t) velocities with respect to the fish's 3D point of view (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the coordinate system used in the study, supported by Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "441906e4-ea8c-4216-97cc-f8747f875c6c",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C16",
+      "claim": "Larval zebrafish swim in discrete 'bouts', which consist of a pulse of velocity lasting approximately 200 ms, followed by a variable period of intermittent quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval zebrafish swim in discrete 'bouts', which consist of a pulse of velocity lasting ~200 ms, followed by a variable period of intermittent quiescence (Figure 2A; Budick and O'Malley, 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by both the current study's data (Figure 2A) and citation to prior work by Budick and O'Malley, 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "e5a9ce77-9227-4f26-8c52-99dac8521979",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C17",
+      "claim": "Eye convergence allows the use of stereovision by creating a small binocular zone and is a well-known correlate of hunting state entrance in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye convergence, which allows the use of stereovision by creating a small binocular zone, is a well-known correlate of hunting state entrance in zebrafish (Gahtan et al., 2005; Bianco et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by Gahtan et al., 2005 and Bianco et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "46c4b68f-c71d-4b2b-9f8f-dc64941682ac",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C18",
+      "claim": "The average hunting sequence ending in a strike lasted for five bouts with an interquartile range of 4 to 7.",
+      "claim_type": "EXPLICIT",
+      "source": "The average hunting sequence ending in a strike in our dataset lasted for five bouts (Interquartile Range = 4 to 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "f709f506-54b5-4165-ae75-e5736d5dcdd9",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C19",
+      "claim": "Fish almost invariably chose the closest paramecium in the environment conditioned on the fact that the paramecium was fairly close to its midline in azimuth and significantly above it in altitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish almost invariably chose the closest paramecium in the environment conditioned on the fact that the paramecium was fairly close to its midline in azimuth and significantly above it in altitude (Figure 1\u2014figure supplement 2; \u03bcaz = 0.7\u00b0 \u03c3az = 48.4\u00b0; \u03bcalt = 19.9\u00b0 \u03c3alt = 19.7\u00b0; \u03bcdist = 3.4 mm \u03c3dist = 1.6 mm).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "609b85c3-c6c7-492d-adf3-d4112e8d678d",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C20",
+      "claim": "The strike zone is directly in front of and considerably above the fish with average coordinates of 0.9\u00b0 Prey Az, 17.4\u00b0 Prey Alt, 0.870 mm Prey Dist.",
+      "claim_type": "EXPLICIT",
+      "source": "Pursuit bouts are conducted until prey are positioned in a 'strike zone', which defines the termination condition for successful hunts in spherical coordinates relative to the fish: this zone is directly in front of, and considerably above the fish (Figure 2B; avg. 0.9\u00b0 Prey Az, 17.4\u00b0 Prey Alt, .870 mm Prey Dist; Mearns et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B and citation to Mearns et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "f8d3d823-bdfc-4e79-8d5a-9cd9fe8f6041",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C21",
+      "claim": "Bout Az and Bout \u0394Yaw are well correlated to Prey Az, with negligible offset (0.3\u00b0 and 0.48\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "Regression fits show that Bout Az and Bout \u0394Yaw are well correlated to Prey Az, with negligible offset (0.3\u00b0 and 0.48\u00b0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by regression analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "30ba61d8-bbed-41c8-8d10-060d1b408988",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C22",
+      "claim": "A linear relationship exists between Bout Alt and Bout \u0394Pitch to Prey Alt with significant negative offsets (\u221215.13\u00b0 and \u22121.79\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "A similar linear relationship is seen when mapping Bout Alt and Bout \u0394Pitch of pursuit bouts to Prey Alt, but this time with significant negative offsets (\u221215.13\u00b0 and \u22121.79\u00b0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by regression analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "3ce88eb7-e100-4811-90f9-2cf7d5b4b917",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C23",
+      "claim": "74% of prey in the assay have 3D vector velocity greater than 3 paramecium lengths per second.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish must capture prey that can move very quickly (in our assay, 74% 3D vector velocity >3 paramecium lengths per second, 27% > 6 paramecium lengths per second; avg. Prey \u03b4Az / \u03b4t = 29\u00b0/s, Prey \u03b4Alt / \u03b4t = 25\u00b0/s; Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "33ec7f8c-80ab-41e0-b749-0eb2126c476f",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C24",
+      "claim": "Every movement the fish performs during prey capture is strongly and proportionally influenced by both the radial and angular velocity of its prey.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that every movement the fish performs during prey capture is strongly and proportionally influenced by both the radial and angular velocity of its prey (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "ea87986b-901c-4273-b7a1-b07e6c96014a",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C25",
+      "claim": "All angular bout variables are amplified if prey are moving away from the fish and dampened when prey are moving towards the fish.",
+      "claim_type": "EXPLICIT",
+      "source": "All angular bout variables are amplified if prey are moving away from the fish (Figure 3 light colors) and dampened when prey are moving towards the fish (Figure 3 dark colors; Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 3 and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "76b21f30-1a1e-40b4-968c-ff84769060c4",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C26",
+      "claim": "Zebrafish transform projected prey position changes by 1.43 for Bout Az, 0.31 for Bout \u0394Yaw, 1.70 for Bout Alt, and 0.18 for Bout \u0394Pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that zebrafish transform projected prey position changes by 1.43 for Bout Az,. 31 for Bout \u0394Yaw, 1.70 for Bout Alt, and. 18 for Bout \u0394Pitch (see Figure 3 legend).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calculations based on velocity coefficients from regression analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "34d1153e-5411-4db7-9f84-f997f72cc357",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C27",
+      "claim": "The linear relationship between Bout Distance and Prey Distance is only strong when prey are less than 4 mm from the fish.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear relationship between Bout Distance and Prey Distance, in general, is only strong when prey are <4 mm from the fish (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by regression analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "bca2fc75-6c1a-41c6-963b-6a4afe8798c3",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C28",
+      "claim": "Bout Distance is significantly modulated by radial prey velocity when prey are within 2 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Bout Distance is significantly modulated by radial prey velocity (\u03b4Dist / \u03b4t; see Figure 1D) when prey are within 2 mm (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "054a17f6-29d9-4714-a0eb-317fffa064f2",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C29",
+      "claim": "69% of pursuit bouts occur when prey are 0\u20132 mm from the fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 69% of pursuit bouts occur when prey are 0\u20132 mm from the fish, indicating that Bout Distance is typically modulated by radial prey velocity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "0345ce94-8721-44bf-aaf8-a9b30107ebc3",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C30",
+      "claim": "The velocity-based regression Model 3 improves hunting success over the position-only regression Model 2 by 65%.",
+      "claim_type": "EXPLICIT",
+      "source": "The first clear result is that the velocity-based regression Model 3 (Green) improves hunting success over the position-only regression Model 2 (Orange) by 65%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results comparing different models in the virtual prey capture environment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "ebbf6c08-c2c6-4d20-b625-252bec9709f9",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C31",
+      "claim": "The average number of bouts for the velocity-based model is one less than the position-only model, matching the average of the real fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the average number of bouts is one less for the velocity model, matching the average of the real fish (Blue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "5a09b9b9-8eed-427c-bb97-9704fa8f6f2a",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C32",
+      "claim": "Model 6, which accounts for prey velocity and chooses ideally, improves success rate over the Real Fish model and Ideal Position model by 14% and 17%.",
+      "claim_type": "EXPLICIT",
+      "source": "Model 6 (Gold), however, by accounting for prey velocity and choosing ideally, improves success rate over Model 1 (Real Fish) and 5 (Ideal Position) by 14% and 17%, reduces the average number of required bouts by 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results comparing different models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "07a703ec-acad-4749-ac12-7b58cea322ce",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C33",
+      "claim": "Model 6 expends the most energy of any model per hunt sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, Model 6 expends the most energy of any model per hunt sequence, meaning that fully ideal choice comes at an energetic cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "29ec12b6-bbf6-45f8-9058-b062afc23746",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C34",
+      "claim": "Larval zebrafish reduce Prey Az and Prey Alt by a factor of 0.5 at each bout.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that larval zebrafish use neither of the two, but rather reduce Prey Az and Prey Alt by a factor of 0.5 at each bout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by regression analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "af1272f5-c18c-4412-b7bc-3061d7b9abb6",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C35",
+      "claim": "When prey are below the fish, the slope changes to 0.9, meaning that the fish is only getting 10% closer in altitude per bout.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when prey are below the fish, the slope changes to 0.9, meaning that the fish is only getting 10% closer in altitude per bout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by regression analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "04a8314b-7a02-41d6-aba1-d33534df99ae",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C36",
+      "claim": "92.4% of all bouts in the dataset occur when prey are above 0\u00b0 Alt.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, 92.4% of all bouts in our dataset occur when prey are above 0\u00b0 Alt (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "4aa880c0-a64e-41b9-b8d3-0d855032cead",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C37",
+      "claim": "Fish become 16% closer to the prey per bout on average, or in other words, the Prey Distance is scaled by 0.84 at every iteration.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that on average fish become 16% closer to the prey per bout, or in other words, the Prey Distance is scaled by 0.84 at every iteration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by regression analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "d114ca5f-7f2b-4dff-95e1-13d6ee92c045",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C38",
+      "claim": "There is a clear graded increase in variance of the post-bout coordinate in all spherical planes as pre-bout coordinates trended away from the strike zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noticed a clear graded increase in variance of the post-bout coordinate in all spherical planes as pre-bout coordinates trended away from the strike zone (Figure 5A, Figure 6A left panels, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figures 5A, 6A, and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "8505f69b-849d-4123-90b0-5089f6f992ce",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C39",
+      "claim": "The stochastic model outperformed the deterministic model in terms of capture speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the stochastic model outperformed the deterministic model in terms of capture speed (# Bouts to Capture, Figure 6B; Wilcoxon signed rank = 7.5 * 10\u221217).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 6B with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "4881ee3f-8321-40fe-a80d-cd308bac6a75",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C40",
+      "claim": "Injecting proportional noise into deterministic bout choices speeds up prey capture.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that graded stochasticity in our Bayesian model was responsible for its increased prey capture speed, we simply injected proportional noise into deterministic bout choices and asked whether we could speed up prey capture (Figure 6C,D). This was clearly the case (Wilcoxon Signed Rank: 1.87 * 10\u22129 azimuth, 3.96 * 10\u221214 distance)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 6C,D with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "73a25a21-4b50-4de7-8f46-fb13410965e1",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C41",
+      "claim": "The average performance when injecting proportional noise is typically equivalent or better by one bout compared to deterministic choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the average performance when injecting proportional noise is typically equivalent or better by one bout (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "61fedbef-c375-4114-88e7-01f809bcb6e1",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C42",
+      "claim": "Improving by one bout constitutes an average 14\u201325% gain in capture speed given that successful hunts had an interquartile range of 4 to 7 total bouts.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that successful hunts in our dataset had an interquartile range of 4 to 7 total bouts, improving by one bout constitutes an average 14\u201325% gain in capture speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on calculation from the data on hunt bout numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "eaafa3bb-fe83-4682-91b6-df85022ad6fe",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C43",
+      "claim": "Speed sensitive neurons that discriminate between 'fast' and 'slow' prey-like stimuli have been uncovered in the zebrafish optic tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "Speed sensitive neurons that discriminate between 'fast' and 'slow' prey-like stimuli have been uncovered in the zebrafish optic tectum (Bianco and Engert, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Bianco and Engert, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "a821abd4-9c70-4aa9-a34c-32a9d23ec754",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C44",
+      "claim": "'Small field' tectal neurons that respond to velocity have been found in toads.",
+      "claim_type": "EXPLICIT",
+      "source": "while 'small field' tectal neurons that respond to velocity have been found in toads (Ewert, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Ewert, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "47243c3d-3d03-45c6-b9b8-689a82a51aee",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C45",
+      "claim": "Velocity perception is used to point-estimate a future prey position, and the fish conducts bouts to achieve this estimate by biasing their prey position-controlled movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike these and other reports studying velocity during prey capture (Trivedi and Bollmann, 2013; Patterson et al., 2013; Monroy and Nishikawa, 2011), we specifically contend that velocity perception is used to point-estimate a future prey position, and that the fish conducts bouts to achieve this estimate, on average, by biasing their prey position-controlled movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the study's data analysis and represents an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "c4767e79-45dd-41e9-ae46-c486599d14aa",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C46",
+      "claim": "Without velocity perception, the azimuth and altitude coordinates of prey after bouts are less likely to lie near the strike zone.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the perception and projection of velocity is key to prey capture success, and that without it, the azimuth and altitude coordinates of prey after bouts are less likely to lie near the strike zone (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "c454084d-802a-4a20-a736-77ea404d1920",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C47",
+      "claim": "Monkeys predict future locations of virtual prey using Newtonian physical attributes, and these attributes are reflected by neural activity in the dorsal anterior cingulate.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatedly, monkeys also predict future locations of virtual prey using Newtonian physical attributes in a very similar paradigm to that shown here. In the monkey brain, these attributes are all reflected by neural activity in the dorsal anterior cingulate, which has no known homolog in the zebrafish, nor in other simple animals that use predictive prey models (Yoo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Yoo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "20187311-87c2-456a-9842-bd0a8344b2be",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C48",
+      "claim": "The amount of 'fixed noise' in the fish's azimuth transformations is 7.64\u00b0, which is the standard deviation of Post-Bout Prey Az given a Pre-Bout Prey Az coordinate of 0\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, interesting relationships in the data we provide suggest that the fish's algorithms are built around the capabilities and constraints of its body. First, the amount of 'fixed noise' in the fish's azimuth transformations is 7.64\u00b0. This is the standard deviation of Post-Bout Prey Az given a Pre-Bout Prey Az coordinate of 0\u00b0, the minimum of graded stochasticity observed in Figure 6A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "629d7e03-1c0a-4607-b86f-79b0269f2dea",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C49",
+      "claim": "The standard deviation of the strike zone is 7.2\u00b0 in azimuth.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard deviation of the strike zone itself is 7.2\u00b0 in azimuth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "9e11215c-ff56-4356-a694-f2a6f213cbb5",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C50",
+      "claim": "The fish's strike zone is constructed to deal with noise that the fish cannot overcome in its motor program.",
+      "claim_type": "EXPLICIT",
+      "source": "We contend that the similarity between these two numbers suggests that the fish's strike zone is constructed to deal with noise that the fish cannot overcome in its motor program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an interpretation based on the similarity between fixed noise and strike zone variance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "48f3590e-8017-4e29-b053-0aefd1e67020",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C51",
+      "claim": "The fish's algorithm for transforming prey altitude biases the prey to approximately 18\u00b0 above the fish, which aligns almost perfectly with the mean altitude coordinate at which they strike (17.4\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence for embodied knowledge comes from the bias in the fish's responses to prey altitude. The fish's algorithm for transforming prey altitude biases the prey to ~18\u00b0 above the fish, which aligns almost perfectly with the mean altitude coordinate at which they strike (17.4\u00b0, Figures 2, 3 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figures 2, 3, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "589381bd-276a-4e81-b71a-dcbd3cb79fee",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C52",
+      "claim": "To open its jaw widely for paramecium entrance into the mouth, the fish must tilt its head up due to torsional constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanics of the fish jaw necessitate this: to open its jaw widely for paramecium entrance into the mouth, the fish must tilt its head up due to torsional constraints (Mearns et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Mearns et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "2cbf7331-ecd3-4de8-91c7-1abc4e630b98",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C53",
+      "claim": "Graded variance is minimal for altitude transformations at Pre-Bout Alt = 20\u00b0, whereas the azimuth minimum is at 0\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Also of note is that graded variance is minimal for altitude transformations at Pre-Bout Alt = 20\u00b0 (Figure 6A), whereas the azimuth minimum is at 0\u00b0",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "821cda2c-7167-4d1d-af3a-e4a7684a946d",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C54",
+      "claim": "Experiments were conducted according to the guidelines of the National Institutes of Health and were approved by the Standing Committee on the Use of Animals in Research of Harvard University.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were conducted according to the guidelines of the National Institutes of Health and were approved by the Standing Committee on the Use of Animals in Research of Harvard University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "6c1a6b6e-7631-4f66-bac2-4749b99f41c9",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C55",
+      "claim": "All experiments were performed on dpf 7\u20138 larval zebrafish of the WIK strain.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed on dpf 7\u20138 larval zebrafish of the WIK strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "1ed79183-df43-4328-a4d7-1f4d8eca3061",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C56",
+      "claim": "Fish were raised in an automated system where they were delivered paramecia twice a day from dpf4 onward.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish were raised in an automated system where they were delivered paramecia twice a day from dpf4 onward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rearing conditions for the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "19d130f7-25b6-4059-bc32-3d1c72639973",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C57",
+      "claim": "Fish were fasted for 4\u20136 hr before experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish were fasted for 4\u20136 hr before experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "e982d40e-63bc-4efb-84a1-772230647ca9",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C58",
+      "claim": "3.56 megapixel images were simultaneously acquired from the top and side of the tank using two Point Grey Grasshopper 3 NIR cameras synchronized at 62.5 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "3.56 megapixel images were simultaneously acquired from the top and side of the tank using two Point Grey Grasshopper 3 NIR cameras; the cameras were synchronized by a TTL pulse triggered by a Pyboard microcontroller at 62.5 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "ff34dd6c-cb9c-48b3-89fb-b4c9b6862aec",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C59",
+      "claim": "Camera positions were calibrated using known reference points with approximately 200 micron mean error.",
+      "claim_type": "EXPLICIT",
+      "source": "Camera positions were calibrated by using known reference points (i.e. body features of the fish) for the shared plane of the cameras. Identification of known object positions in both planes was extremely accurate (~200 micron mean error)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration accuracy of the imaging system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "94021c0d-e054-40b1-92b5-6c6847b5ed33",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C60",
+      "claim": "Fish hunted in the white light illuminated condition for 8 min before the experiment was terminated.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish hunted in the white light illuminated condition for 8 min before the experiment was terminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "56324037-e844-421e-bb3b-3b1d1b2675cf",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C61",
+      "claim": "Fish that did not consume more than one paramecium over the 8 min experiment were discarded for analysis (46/53 fish passed this criteria).",
+      "claim_type": "EXPLICIT",
+      "source": "Fish that did not consume more than one paramecium over the 8 min experiment were discarded for analysis (46/53 fish passed this criteria).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "30589269-e3e1-4075-866f-2b8a5e06ab59",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C62",
+      "claim": "Pitch was calculated by taking the 2D vertical angle in the side camera and fitting a cone to the fish using the yaw angle from the top camera.",
+      "claim_type": "EXPLICIT",
+      "source": "Pitch was calculated by taking the 2D vertical angle in the side camera and fitting a cone to the fish using the yaw angle from the top camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method for calculating pitch.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "7ba9d88f-6631-4548-a2e6-a1524df9cdf8",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C63",
+      "claim": "Dirichlet Process Mixture Models can approximate a broad class of multivariate distributions without requiring a priori specification of the number of components in the mixture model.",
+      "claim_type": "EXPLICIT",
+      "source": "DPMMs can approximate a broad class of multivariate distributions without requiring a priori specification of the number of components in the mixture model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a property of the statistical modeling approach used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "b90094e8-5882-4079-ab6f-5fb1e3b49960",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C64",
+      "claim": "The implicit predictive model of 3D prey motion is embodied by the fish's stochastic recursive algorithm, shaped by the constraints and capabilities of the fish, and formulated by the interaction of three simple rules.",
+      "claim_type": "EXPLICIT",
+      "source": "All things considered, the implicit predictive model of 3D prey motion shown in this study is: 1) embodied by the fish's stochastic recursive algorithm 2) shaped by the constraints and capabilities of the fish and 3) formulated by the interaction of three simple rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim synthesizing the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "7d014389-6977-4a5d-946d-6fa20d18c583",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "claim_id": "C65",
+      "claim": "The three simple rules transform position of prey into fish movements, bias the vigor of fish movements based on prey velocity, and inject proportional noise into each sensorimotor transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These rules transform position of prey into fish movements, bias the vigor of fish movements based on prey velocity, and inject proportional noise into each sensorimotor transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the three main rules identified in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4dd4d2c1-6902-4886-a1ac-3291f69d8f7a",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel 3D behavioral setup that simultaneously images larval zebrafish and prey from top and side views at high resolution (62.5 Hz), with custom computer vision software to reconstruct 3D positions, orientations (yaw and pitch), and spherical prey coordinates relative to the fish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 and C58-C59 describe the experimental methodology with specific technical details (camera specifications, frame rate, calibration accuracy ~200 microns). The setup is well-documented in Figure 1 and represents a clear methodological advance over prior 2D studies. The calibration accuracy is quantified and appropriate for the spatial scales studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "9a683b31-b4bd-4fef-af1f-9bcbbff230f5",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Zebrafish preferentially select the closest paramecium for hunting when it is near the midline in azimuth (\u03bc=0.7\u00b0, \u03c3=48.4\u00b0) and above the fish in altitude (\u03bc=19.9\u00b0, \u03c3=19.7\u00b0), pursuing prey until it enters a strike zone directly in front and above the fish (0.9\u00b0 Az, 17.4\u00b0 Alt, 0.87 mm distance). Successful hunts averaged 5 bouts (IQR 4-7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C18 are supported by quantitative data analysis shown in Figures 1-2 and supplementary figures. The prey selection criteria are clearly defined with statistical parameters, and the strike zone characterization is well-documented. Sample size (46 fish) appears adequate for these behavioral measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "a67535b9-b23b-4698-808d-fa24759f13a6",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fish sensorimotor transformations during pursuit are primarily controlled by pre-bout prey position: bout azimuth and yaw changes correlate linearly with prey azimuth (negligible offsets 0.3\u00b0 and 0.48\u00b0), while bout altitude and pitch show linear relationships with prey altitude but with negative offsets (-15.13\u00b0 and -1.79\u00b0). Bout distance correlates with prey distance primarily when prey are <4 mm away, with significant modulation by radial velocity when prey are within 2 mm (where 69% of pursuit bouts occur).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 and C27-C29 are supported by regression analyses shown in Figures 2-3. The linear relationships are quantified with specific coefficients and offsets. The distance-dependent effects are appropriately analyzed with spatial binning. However, the manuscript does not report confidence intervals for all regression parameters or correct for multiple comparisons across the many regression models tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "eecb7459-8571-40b4-a7f8-f6da30f9b088",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All aspects of fish 3D movements during prey capture are strongly and proportionally modulated by both angular and radial prey velocity. Movements are amplified when prey move away and dampened when prey approach. The fish transforms projected prey position changes (velocity \u00d7 bout duration) by factors of 1.43 (Bout Az), 0.31 (Bout \u0394Yaw), 1.70 (Bout Alt), and 0.18 (Bout \u0394Pitch), which approximate the position-based transformation coefficients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are supported by multiple regression analyses in Figure 3 showing velocity modulation across all movement dimensions. The calculation of projected position changes using average bout duration (176 ms) is reasonable. However, the claim that these coefficients \"closely approximate\" position coefficients (C26) requires more rigorous statistical comparison. The velocity effects are demonstrated but the interpretation as trajectory prediction could be strengthened.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "a8820387-76f8-45bd-bdb5-4c9754a06f79",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Computational modeling in a virtual prey capture environment demonstrates that velocity-based models (Model 3) improve hunting success by 65% over position-only models (Model 2) and reduce capture time by one bout. An ideal choice model incorporating velocity (Model 6) further improves success by 14-17% over real fish and position-only ideal models, but at the highest energetic cost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 and C46 are supported by systematic computational modeling comparing six different models (Figure 4). The virtual environment uses real prey trajectories and quantifies success, energy, and speed. However, the energy calculations rely on assumptions about fish mass (1 mg) and head-to-COM distance (0.53 mm) that are not independently validated. The models appropriately isolate the contribution of velocity perception, though the \"ideal\" models may not fully capture biological constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "a6a2c990-248a-493e-ae27-bbeb15cf8b31",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Zebrafish employ a recursive halving strategy, reducing prey azimuth and altitude by a factor of ~0.5 per bout and distance by a factor of 0.84 per bout. When prey are below the fish (rare, <8% of bouts), the altitude reduction factor changes to 0.9, indicating poor performance in this regime.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are supported by regression analyses of pre-bout to post-bout coordinate transformations (Figure 5A). The recursive halving strategy is clearly demonstrated with consistent slopes across hunt sequences (Figure 5C). The poor performance for negative altitudes is appropriately noted and quantified. The analysis appropriately separates different velocity conditions (prey approaching vs. receding).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "f9ab89ce-9d5f-4545-9a4c-267f9a5a00e0",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Graded stochasticity in sensorimotor transformations, where variance increases with distance from the strike zone, provides a performance advantage. Stochastic models outperform deterministic models in capture speed (p=7.5\u00d710\u207b\u00b9\u2077), and injecting proportional noise into deterministic choices improves performance by one bout on average (14-25% speed gain), confirmed by statistical testing (p=1.87\u00d710\u207b\u2079 azimuth, p=3.96\u00d710\u207b\u00b9\u2074 distance).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by Bayesian modeling using DPMMs and noise injection experiments (Figure 6). The graded variance is clearly demonstrated in Figure 6A. Statistical tests (Wilcoxon signed rank) appropriately compare stochastic vs. deterministic performance. However, the DPMM approach, while sophisticated, makes the results less transparent and harder to independently verify. The claim that stochasticity is \"beneficial\" is supported but the mechanism (e.g., avoiding local minima, exploration) is not fully explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "c88ae3ee-2b2d-40f6-8ad3-68024872997c",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Larval zebrafish combine position and velocity perception to construct future positional estimates of prey, using velocity to point-estimate future prey position and biasing position-controlled movements accordingly, indicating trajectory prediction ability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C45 represent the main interpretive conclusion, supported by the convergence of findings from C21-C26 (velocity modulation), C30-C33 (modeling showing velocity importance), and C34-C37 (recursive strategy). The evidence that velocity coefficients approximate position coefficients when multiplied by bout duration (C26) supports trajectory prediction. However, this is an inference from behavioral data rather than direct neural evidence of predictive computation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "6a4fc252-4d9a-46c0-9645-0955090a1b52",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Zebrafish are equipped with a recursive prey capture algorithm built from three simple stochastic rules: (1) transforming prey position into fish movements, (2) biasing movement vigor based on prey velocity, and (3) injecting proportional noise into sensorimotor transformations. This stochastic algorithm provides considerable advantages over noise-free strategies and embodies an implicit predictive model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C64-C65 synthesize the main findings into a coherent framework. The three rules are well-supported by the experimental and modeling results (position control: C21-C22; velocity modulation: C24-C26; graded stochasticity: C38-C42). The claim of \"considerable advantage\" is quantified (14-25% speed improvement). However, the term \"implicit predictive model\" is interpretive and could be more precisely defined. The algorithm description is supported but represents a high-level abstraction of the behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "7cf6cdfb-ff8d-495a-a4bd-3790ba2ff4df",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The fish's hunting algorithm shows evidence of embodied constraints: fixed noise in azimuth transformations (7.64\u00b0) matches strike zone variance (7.2\u00b0), suggesting the strike zone accommodates irreducible motor noise. The altitude bias (~18\u00b0) matches the strike altitude (17.4\u00b0), which is necessitated by jaw mechanics requiring head tilt for mouth opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 present an interesting interpretation linking behavioral parameters to biomechanical constraints. The numerical correspondence between fixed noise and strike zone variance (C48-C49) is compelling, though the interpretation (C50) is speculative. The altitude bias matching strike altitude (C51) is well-supported by data in Figures 2, 3, and 5. The jaw mechanics explanation (C52) is supported by citation to prior work (Mearns et al., 2019). This represents thoughtful analysis but some claims are interpretive rather than directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "845cd7e1-f64b-4003-a568-a4970bf91c58",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Larval zebrafish swim in discrete bouts (~200 ms velocity pulses followed by quiescence), and eye convergence, which enables stereovision via a binocular zone, reliably indicates hunting state entrance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 describe well-established zebrafish behaviors supported by both current data (Figure 2A) and extensive prior literature (Budick and O'Malley 2000; Gahtan et al. 2005; Bianco et al. 2011). These are foundational observations for the study's bout-by-bout analysis framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "c531782b-4deb-4a96-9b5a-96343c1bc4d1",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Experiments used 7-8 dpf WIK strain zebrafish raised with paramecia feeding from 4 dpf, fasted 4-6 hours before 8-minute hunting trials. 46 of 53 fish consumed >1 paramecium and were included in analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57, C60-C61 describe standard experimental protocols with appropriate ethical approval, clear inclusion criteria, and reasonable sample size. The methods are sufficiently detailed for replication. The 87% inclusion rate (46/53 fish) is acceptable and suggests the protocol was effective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "aa4525ab-7b5c-4c1b-8952-61d117263ec6",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Pitch was calculated by combining 2D vertical angle from side camera with yaw from top camera using cone fitting. Dirichlet Process Mixture Models (DPMMs) were used for probabilistic modeling as they can approximate multivariate distributions without requiring a priori specification of component numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 describe technical methodological details. The pitch calculation method (C62) is clearly explained. The DPMM justification (C63) is appropriate for capturing heteroskedastic, multimodal distributions in the data. However, the manuscript could provide more details on DPMM hyperparameters, convergence diagnostics, and model validation to ensure reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    },
+    {
+      "id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab",
+      "content_id": "66a88b2e-07a2-483d-8fd5-ee4549ffafa2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within prior work on emergent behaviors from simple rules (schooling, bee learning), internal predictive models across species, beneficial stochasticity in sensory systems, zebrafish neurobiology and behavior, velocity-sensitive neurons in zebrafish and toads, predictive prey capture in monkeys, and zebrafish jaw biomechanics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C12, C43-C44, C47, and C52 appropriately cite relevant prior work to contextualize the study. The citations appear accurate and relevant. These background claims establish the conceptual framework and are standard for scientific manuscripts. No issues with citation accuracy or relevance are apparent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:36:19.958923Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f90bec4a-c7e1-450f-a157-06362eac3d36",
+      "result_id": "4dd4d2c1-6902-4886-a1ac-3291f69d8f7a"
+    },
+    {
+      "claim_id": "851f78b0-aca6-4907-877e-acaeac868bb3",
+      "result_id": "4dd4d2c1-6902-4886-a1ac-3291f69d8f7a"
+    },
+    {
+      "claim_id": "abb0f06b-c129-47fd-acb2-af74bd7f4d94",
+      "result_id": "4dd4d2c1-6902-4886-a1ac-3291f69d8f7a"
+    },
+    {
+      "claim_id": "e982d40e-63bc-4efb-84a1-772230647ca9",
+      "result_id": "4dd4d2c1-6902-4886-a1ac-3291f69d8f7a"
+    },
+    {
+      "claim_id": "ff34dd6c-cb9c-48b3-89fb-b4c9b6862aec",
+      "result_id": "4dd4d2c1-6902-4886-a1ac-3291f69d8f7a"
+    },
+    {
+      "claim_id": "f709f506-54b5-4165-ae75-e5736d5dcdd9",
+      "result_id": "9a683b31-b4bd-4fef-af1f-9bcbbff230f5"
+    },
+    {
+      "claim_id": "609b85c3-c6c7-492d-adf3-d4112e8d678d",
+      "result_id": "9a683b31-b4bd-4fef-af1f-9bcbbff230f5"
+    },
+    {
+      "claim_id": "46c4b68f-c71d-4b2b-9f8f-dc64941682ac",
+      "result_id": "9a683b31-b4bd-4fef-af1f-9bcbbff230f5"
+    },
+    {
+      "claim_id": "f8d3d823-bdfc-4e79-8d5a-9cd9fe8f6041",
+      "result_id": "a67535b9-b23b-4698-808d-fa24759f13a6"
+    },
+    {
+      "claim_id": "30ba61d8-bbed-41c8-8d10-060d1b408988",
+      "result_id": "a67535b9-b23b-4698-808d-fa24759f13a6"
+    },
+    {
+      "claim_id": "34d1153e-5411-4db7-9f84-f997f72cc357",
+      "result_id": "a67535b9-b23b-4698-808d-fa24759f13a6"
+    },
+    {
+      "claim_id": "bca2fc75-6c1a-41c6-963b-6a4afe8798c3",
+      "result_id": "a67535b9-b23b-4698-808d-fa24759f13a6"
+    },
+    {
+      "claim_id": "054a17f6-29d9-4714-a0eb-317fffa064f2",
+      "result_id": "a67535b9-b23b-4698-808d-fa24759f13a6"
+    },
+    {
+      "claim_id": "3ce88eb7-e100-4811-90f9-2cf7d5b4b917",
+      "result_id": "eecb7459-8571-40b4-a7f8-f6da30f9b088"
+    },
+    {
+      "claim_id": "33ec7f8c-80ab-41e0-b749-0eb2126c476f",
+      "result_id": "eecb7459-8571-40b4-a7f8-f6da30f9b088"
+    },
+    {
+      "claim_id": "ea87986b-901c-4273-b7a1-b07e6c96014a",
+      "result_id": "eecb7459-8571-40b4-a7f8-f6da30f9b088"
+    },
+    {
+      "claim_id": "76b21f30-1a1e-40b4-968c-ff84769060c4",
+      "result_id": "eecb7459-8571-40b4-a7f8-f6da30f9b088"
+    },
+    {
+      "claim_id": "0345ce94-8721-44bf-aaf8-a9b30107ebc3",
+      "result_id": "a8820387-76f8-45bd-bdb5-4c9754a06f79"
+    },
+    {
+      "claim_id": "ebbf6c08-c2c6-4d20-b625-252bec9709f9",
+      "result_id": "a8820387-76f8-45bd-bdb5-4c9754a06f79"
+    },
+    {
+      "claim_id": "5a09b9b9-8eed-427c-bb97-9704fa8f6f2a",
+      "result_id": "a8820387-76f8-45bd-bdb5-4c9754a06f79"
+    },
+    {
+      "claim_id": "07a703ec-acad-4749-ac12-7b58cea322ce",
+      "result_id": "a8820387-76f8-45bd-bdb5-4c9754a06f79"
+    },
+    {
+      "claim_id": "c4767e79-45dd-41e9-ae46-c486599d14aa",
+      "result_id": "a8820387-76f8-45bd-bdb5-4c9754a06f79"
+    },
+    {
+      "claim_id": "29ec12b6-bbf6-45f8-9058-b062afc23746",
+      "result_id": "a6a2c990-248a-493e-ae27-bbeb15cf8b31"
+    },
+    {
+      "claim_id": "af1272f5-c18c-4412-b7bc-3061d7b9abb6",
+      "result_id": "a6a2c990-248a-493e-ae27-bbeb15cf8b31"
+    },
+    {
+      "claim_id": "04a8314b-7a02-41d6-aba1-d33534df99ae",
+      "result_id": "a6a2c990-248a-493e-ae27-bbeb15cf8b31"
+    },
+    {
+      "claim_id": "4aa880c0-a64e-41b9-b8d3-0d855032cead",
+      "result_id": "a6a2c990-248a-493e-ae27-bbeb15cf8b31"
+    },
+    {
+      "claim_id": "d114ca5f-7f2b-4dff-95e1-13d6ee92c045",
+      "result_id": "f9ab89ce-9d5f-4545-9a4c-267f9a5a00e0"
+    },
+    {
+      "claim_id": "8505f69b-849d-4123-90b0-5089f6f992ce",
+      "result_id": "f9ab89ce-9d5f-4545-9a4c-267f9a5a00e0"
+    },
+    {
+      "claim_id": "4881ee3f-8321-40fe-a80d-cd308bac6a75",
+      "result_id": "f9ab89ce-9d5f-4545-9a4c-267f9a5a00e0"
+    },
+    {
+      "claim_id": "73a25a21-4b50-4de7-8f46-fb13410965e1",
+      "result_id": "f9ab89ce-9d5f-4545-9a4c-267f9a5a00e0"
+    },
+    {
+      "claim_id": "61fedbef-c375-4114-88e7-01f809bcb6e1",
+      "result_id": "f9ab89ce-9d5f-4545-9a4c-267f9a5a00e0"
+    },
+    {
+      "claim_id": "15726634-318b-4094-92e4-6896977b7dd8",
+      "result_id": "c88ae3ee-2b2d-40f6-8ad3-68024872997c"
+    },
+    {
+      "claim_id": "47243c3d-3d03-45c6-b9b8-689a82a51aee",
+      "result_id": "c88ae3ee-2b2d-40f6-8ad3-68024872997c"
+    },
+    {
+      "claim_id": "b75dab68-9eeb-44f2-aecb-4aec2d0a8aec",
+      "result_id": "6a4fc252-4d9a-46c0-9645-0955090a1b52"
+    },
+    {
+      "claim_id": "bebf3757-c237-46b5-acc7-7b82df354124",
+      "result_id": "6a4fc252-4d9a-46c0-9645-0955090a1b52"
+    },
+    {
+      "claim_id": "b90094e8-5882-4079-ab6f-5fb1e3b49960",
+      "result_id": "6a4fc252-4d9a-46c0-9645-0955090a1b52"
+    },
+    {
+      "claim_id": "7d014389-6977-4a5d-946d-6fa20d18c583",
+      "result_id": "6a4fc252-4d9a-46c0-9645-0955090a1b52"
+    },
+    {
+      "claim_id": "20187311-87c2-456a-9842-bd0a8344b2be",
+      "result_id": "7cf6cdfb-ff8d-495a-a4bd-3790ba2ff4df"
+    },
+    {
+      "claim_id": "629d7e03-1c0a-4607-b86f-79b0269f2dea",
+      "result_id": "7cf6cdfb-ff8d-495a-a4bd-3790ba2ff4df"
+    },
+    {
+      "claim_id": "9e11215c-ff56-4356-a694-f2a6f213cbb5",
+      "result_id": "7cf6cdfb-ff8d-495a-a4bd-3790ba2ff4df"
+    },
+    {
+      "claim_id": "48f3590e-8017-4e29-b053-0aefd1e67020",
+      "result_id": "7cf6cdfb-ff8d-495a-a4bd-3790ba2ff4df"
+    },
+    {
+      "claim_id": "589381bd-276a-4e81-b71a-dcbd3cb79fee",
+      "result_id": "7cf6cdfb-ff8d-495a-a4bd-3790ba2ff4df"
+    },
+    {
+      "claim_id": "2cbf7331-ecd3-4de8-91c7-1abc4e630b98",
+      "result_id": "7cf6cdfb-ff8d-495a-a4bd-3790ba2ff4df"
+    },
+    {
+      "claim_id": "441906e4-ea8c-4216-97cc-f8747f875c6c",
+      "result_id": "845cd7e1-f64b-4003-a568-a4970bf91c58"
+    },
+    {
+      "claim_id": "e5a9ce77-9227-4f26-8c52-99dac8521979",
+      "result_id": "845cd7e1-f64b-4003-a568-a4970bf91c58"
+    },
+    {
+      "claim_id": "821cda2c-7167-4d1d-af3a-e4a7684a946d",
+      "result_id": "c531782b-4deb-4a96-9b5a-96343c1bc4d1"
+    },
+    {
+      "claim_id": "6c1a6b6e-7631-4f66-bac2-4749b99f41c9",
+      "result_id": "c531782b-4deb-4a96-9b5a-96343c1bc4d1"
+    },
+    {
+      "claim_id": "1ed79183-df43-4328-a4d7-1f4d8eca3061",
+      "result_id": "c531782b-4deb-4a96-9b5a-96343c1bc4d1"
+    },
+    {
+      "claim_id": "19d130f7-25b6-4059-bc32-3d1c72639973",
+      "result_id": "c531782b-4deb-4a96-9b5a-96343c1bc4d1"
+    },
+    {
+      "claim_id": "94021c0d-e054-40b1-92b5-6c6847b5ed33",
+      "result_id": "c531782b-4deb-4a96-9b5a-96343c1bc4d1"
+    },
+    {
+      "claim_id": "56324037-e844-421e-bb3b-3b1d1b2675cf",
+      "result_id": "c531782b-4deb-4a96-9b5a-96343c1bc4d1"
+    },
+    {
+      "claim_id": "30589269-e3e1-4075-866f-2b8a5e06ab59",
+      "result_id": "aa4525ab-7b5c-4c1b-8952-61d117263ec6"
+    },
+    {
+      "claim_id": "7ba9d88f-6631-4548-a2e6-a1524df9cdf8",
+      "result_id": "aa4525ab-7b5c-4c1b-8952-61d117263ec6"
+    },
+    {
+      "claim_id": "34182c56-f7c1-444d-b5b7-cd9863ef2685",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "842332a8-60ea-400d-b7d6-7892a5530ba8",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "f3486123-8324-43ab-9a10-53286884273b",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "276def60-66c2-4198-8b50-15223612a10c",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "6982d6cb-5182-4e4a-bf15-57b4a86d7b15",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "ffec576b-d974-406d-b19e-1db54e3c5a91",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "8a175a75-c8e8-4238-b7cd-5ab5abedc6fd",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "2d13fa9f-ff1d-455c-a6bd-5dcf4c41d077",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "4fa72959-6064-4bbb-962d-9b04674d04f6",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "eaafa3bb-fe83-4682-91b6-df85022ad6fe",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "a821abd4-9c70-4aa9-a34c-32a9d23ec754",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "c454084d-802a-4a20-a736-77ea404d1920",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    },
+    {
+      "claim_id": "589381bd-276a-4e81-b71a-dcbd3cb79fee",
+      "result_id": "95163c5d-4722-4c1a-85e9-a763fdbc20ab"
+    }
+  ],
+  "comparisons": []
+}

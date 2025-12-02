@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Molecular docking analysis predicts that SIRT6, but not SIRT1 or SIRT7, has favorable binding affinity to DSBs (-12.7 kcal/mol), which is lower than the binding affinity of NAD+ to any nuclear SIRT (-8 to -10 kcal/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claims rely solely on computational molecular docking predictions (C1-C5) without experimental validation of the predicted binding affinities. Molecular docking provides theoretical estimates that require experimental confirmation through techniques like isothermal titration calorimetry or surface plasmon resonance. The predicted values may not reflect actual binding in biological conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "SIRT6 directly binds to DNA double-strand breaks (DSBs) in vitro with a Kd of 166.3 nM, while SIRT1 and SIRT7 show minimal binding. This binding is specific to linearized DNA rather than circular DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal experimental approaches support this result: pulldown assays (C6-C8), fluorescence polarization with measured Kd (C9-C11), and competition assays showing specificity for linearized DNA (C12-C13). The convergence of these independent methods provides strong evidence for direct SIRT6-DSB binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "SIRT6 forms an asymmetric hexamer with three potential DSB-binding pockets, each consisting of N- and C-termini from adjacent molecules. The N- and C-termini are essential for chromatin association, and SIRT6 molecules interact with each other as demonstrated by BiFC and co-IP assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hexameric structure and binding pocket composition are supported by prior crystallographic data (C15-C17, citing Pan et al., 2011) and confirmed by new BiFC (C19) and co-IP experiments (C20-C21). The structural model is consistent with the functional requirement for N- and C-termini in chromatin association (C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "SIRT6 is acetylated at K33 in the N-terminus, and this acetylation is dynamic. The K33R mutation significantly reduces SIRT6 acetylation, while K15R and K17R mutations have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acetylation of SIRT6 is demonstrated by immunoprecipitation with anti-acetyl-lysine antibodies (C26), and K33 is identified by LC-MS/MS (C27). Mutational analysis shows that K33R specifically reduces acetylation (C28) while K15R and K17R do not (C29-C30), supporting K33 as a major acetylation site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "K33 acetylation status regulates SIRT6 binding to DSBs and recruitment to DNA damage sites. The K33Q mutation (mimicking acetylation) impairs DSB binding and recruitment, while K33R (mimicking deacetylation) maintains these functions comparably to wild-type SIRT6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple assays demonstrate that K33Q compromises DSB binding (C32, C36) and recruitment to damage sites (C38, C41), while K33R maintains function (C34, C35, C40, C43). The H133Y catalytic mutant also shows impaired binding and recruitment (C33, C39, C42), providing additional validation. The consistency across pulldown, fluorescence polarization, microscopy, and ChIP assays strongly supports this regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "SIRT6 WT and K33R, but not K33Q or H133Y, downregulate H3K9ac and H3K56ac levels at DSBs and promote SNF2H recruitment, which is required for chromatin remodeling during DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence data show that SIRT6 WT and K33R reduce H3K9ac and H3K56ac at damage sites (C46-C47), while K33Q and H133Y fail to do so (C48-C49). Cell fractionation assays demonstrate that K33Q and H133Y also impair SNF2H recruitment (C50-C51), while K33R does not (C52). These findings are consistent with the known role of SIRT6 in chromatin remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The K33R and K33Q mutations do not affect the intrinsic deacetylase activity of SIRT6 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In vitro deacetylase assays using a synthesized acetyl-H3 peptide show that K33R and K33Q have comparable activity to wild-type SIRT6 (C54). This indicates that the functional differences observed in cells are due to altered DSB binding and chromatin recruitment rather than changes in catalytic activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "Dynamic K33 (de)acetylation modulates SIRT6 polymerization. K33Q mutation impairs SIRT6-SIRT6 interaction, while K33R maintains it, suggesting that deacetylation promotes polymerization necessary for DSB binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP experiments demonstrate that SIRT6 self-associates (C55-C56), but this interaction is significantly reduced with K33Q (C57). The H133Y mutation also impairs polymerization (C58), consistent with its role in chromatin association. The data support a model where K33 deacetylation facilitates SIRT6 oligomerization (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SIRT6 acetylation is elevated by class III HDAC inhibitors (NAM and Ex527) but not by the class I/II HDAC inhibitor TSA, suggesting that a sirtuin family member deacetylates SIRT6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunoprecipitation and western blot data show increased SIRT6 acetylation with NAM and Ex527 (C61-C62) but not TSA (C63). This pharmacological profile indicates that a class III HDAC (sirtuin) is responsible for SIRT6 deacetylation, providing a rationale for investigating SIRT1 as the deacetylase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "SIRT6 physically interacts with SIRT1 through the N-terminus of SIRT6. This interaction is demonstrated by co-IP in multiple cell lines, GST pulldown assays, and co-localization by confocal microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SIRT1-SIRT6 interaction is supported by reciprocal co-IP in HEK293 and HeLa cells (C64-C67), direct binding in vitro (C68), and co-localization in cells (C69-C70). Domain mapping shows that deletion of the N-terminus or C-terminus abolishes the interaction (C71-C72), with the N-terminus likely being the primary binding interface (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C93"
+    ],
+    "result": "SIRT1 deacetylates SIRT6 at K33 in a catalytic activity-dependent manner. Overexpression of SIRT1 reduces SIRT6 acetylation, while SIRT1 knockdown or knockout increases it. The catalytic mutant SIRT1-H363Y fails to deacetylate SIRT6 despite maintaining physical interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support SIRT1-mediated deacetylation of SIRT6 at K33: overexpression reduces acetylation (C75), knockdown increases it (C77), the catalytic mutant fails to deacetylate (C78-C79), in vitro assays confirm NAD+-dependent deacetylation (C82-C84), and K33R is resistant to changes in SIRT1 levels (C85-C87). The specificity for K33 is demonstrated by the lack of effect on K33R (C86-C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "A K33ac-containing peptide blocks SIRT6-SIRT1 interaction in vitro, and the N-terminus of SIRT6 is responsible for this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GST pulldown assays show that a K33ac peptide effectively competes for SIRT1 binding (C91), and domain mapping indicates the N-terminus is the primary interaction site (C92). This provides mechanistic insight into how acetylation at K33 might regulate the SIRT1-SIRT6 interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114"
+    ],
+    "result": "SIRT6 recognizes \u03b3H2AX through its N-terminus, and this interaction is enhanced by K33 deacetylation. \u03b3H2AX is dispensable for initial SIRT6 recruitment but essential for retention at DSBs. K33R binds \u03b3H2AX efficiently, while K33Q does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP shows SIRT6 interacts with \u03b3H2AX only after DNA damage (C96), and peptide pulldown assays confirm direct binding to \u03b3H2AX but not H2AX (C97-C98). Domain mapping identifies the N-terminus as critical (C99-C100). Laser micropoint analysis demonstrates that H2AX is not required for initial recruitment (C103-C104) but is essential for retention (C105-C106), and this retention depends on S139 phosphorylation (C108-C110). K33R maintains \u03b3H2AX binding while K33Q does not (C101-C102), supporting the model that deacetylation enhances this interaction (C113-C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Caffeine, an ATM/ATR inhibitor, reduces \u03b3H2AX levels and impairs SIRT6 retention at DSBs after laser-induced damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Laser micropoint analysis and western blotting show that caffeine treatment inhibits \u03b3H2AX formation and subsequent SIRT6 retention (C111-C112). This is consistent with the requirement for ATM/ATR-mediated H2AX phosphorylation for SIRT6 retention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "SIRT1 is required for efficient SIRT6 recruitment to DSBs. SIRT1 knockdown or knockout significantly reduces SIRT6 recruitment, while SIRT6 downregulation does not affect SIRT1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR shows reduced SIRT6 recruitment when SIRT1 is silenced (C115), and laser micropoint analysis demonstrates deferred SIRT6 recruitment in Sirt1\u2212/\u2212 MEFs (C116-C117). Conversely, SIRT6 downregulation does not affect SIRT1 recruitment (C118), indicating a unidirectional dependency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The SIRT1-SIRT6 interaction is enhanced upon DNA damage, and SIRT6 is deacetylated by SIRT1 in response to CPT treatment in a K33-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP shows increased SIRT1-SIRT6 interaction after CPT treatment (C119), and SIRT6 acetylation decreases upon CPT treatment (C120). This effect is abolished in K33R mutant or SIRT1\u2212/\u2212 cells (C121-C122), supporting a model where DNA damage triggers SIRT1-mediated deacetylation of SIRT6 at K33 (C123).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C137"
+    ],
+    "result": "SIRT6 WT and K33R, but not K33Q or H133Y, enhance DNA repair efficacy and homologous recombination (HR) capacity. K33 deacetylation is indispensable for DNA repair function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Comet assays show that SIRT6 WT and K33R promote DNA repair after CPT treatment (C124, C127), while K33Q and H133Y do not (C125-C126). HR assays confirm that WT and K33R enhance HR capacity (C128-C129), while K33Q and H133Y do not (C130-C131). These functional data support the conclusion that K33 deacetylation is essential for SIRT6's role in DNA repair (C137).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "SIRT6 WT and K33R, but not K33Q or H133Y, improve cell viability, colony formation, and reduce \u03b3H2AX foci after DNA damage, indicating enhanced DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MTS assays show higher viability with SIRT6 WT and K33R after CPT or IR treatment (C132-C133), colony formation assays show K33Q impairs survival (C134), and immunofluorescence shows fewer \u03b3H2AX foci with WT and K33R at 8 hr post-IR (C135-C136). These complementary assays support the functional importance of K33 deacetylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "SIRT6 K33R rescues DNA repair defects caused by SIRT1 deficiency, demonstrating synergistic action between SIRT1 and SIRT6 in DNA repair. SIRT6 WT and K33R, but not K33Q or H133Y, restore DNA repair and HR capacity in SIRT1\u2212/\u2212 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Comet assays show that SIRT6 WT, K33R, and SIRT1 overexpression rescue DNA repair in SIRT1\u2212/\u2212 cells (C138-C140), while K33Q and H133Y do not (C141-C142). HR assays confirm that WT and K33R rescue HR defects (C145-C146), while K33Q and H133Y do not (C147-C148). The observation that WT and K33R have similar rescue effects (C143) suggests that overexpressed SIRT6 may not be effectively acetylated. These data strongly support synergistic action between SIRT1 and SIRT6 (C149).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The manuscript proposes a model where SIRT1 deacetylates SIRT6 at K33, promoting SIRT6 polymerization and mobilization to DSBs. Deacetylated SIRT6 then anchors to \u03b3H2AX, enabling retention and chromatin remodeling. This synergistic mechanism between SIRT1 and SIRT6 is essential for DNA damage response and repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative model is supported by the collective evidence: SIRT6 oligomerizes and binds DSBs (C150-C151), K33R rescues SIRT1 deficiency (C163), SIRT1 deacetylates SIRT6 at K33 (C164), K33 deacetylation promotes polymerization and DSB mobilization (C165-C166), deacetylated SIRT6 binds \u03b3H2AX (C167), enables retention (C168), and facilitates chromatin remodeling (C169). The model is validated in human and mouse cells (C170) and demonstrates synergistic action (C171).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C44",
+      "C45",
+      "C73",
+      "C94",
+      "C95",
+      "C107",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The manuscript cites prior work establishing general principles of acetylation, DNA damage response, and sirtuin function that provide context for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims reference established knowledge and prior publications that support the conceptual framework of the study. The citations appear appropriate and accurately represent the cited work, providing necessary background on acetylation (C23-C25), histone modifications during DNA damage (C44-C45), nuclear localization signals (C73), \u03b3H2AX function (C94-C95, C107), temporal dynamics of DSB recognition (C152-C153), and known functions of SIRT1 and SIRT6 (C154-C162).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C90"
+    ],
+    "result": "SIRT6 K143/145R acetylation is reduced by SIRT1 overexpression, while SIRT1 acetylation is unaffected by SIRT6 overexpression, suggesting additional acetylation sites on SIRT6 that may be SIRT1 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunoprecipitation and western blot data show that K143/145R acetylation decreases with SIRT1 overexpression (C88), while SIRT1 acetylation is unchanged with SIRT6 overexpression (C90). This indicates that SIRT1 may deacetylate SIRT6 at multiple sites, though K33 is the primary functionally relevant site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144"
+    ],
+    "result": "The authors speculate that overexpressed exogenous SIRT6 WT might not be effectively acetylated, based on the observation that SIRT6 WT and K33R have similar rescue effects in SIRT1 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculation (C144) to explain why SIRT6 WT and K33R show similar rescue effects. While plausible, this hypothesis is not directly tested. Alternative explanations could include saturation of acetylation machinery or differences in expression levels. Additional experiments measuring acetylation levels of overexpressed SIRT6 WT in SIRT1 KO cells would be needed to validate this speculation.",
+    "result_type": "MINOR"
+  }
+]

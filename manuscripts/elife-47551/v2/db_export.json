@@ -1,0 +1,1620 @@
+{
+  "submission": {
+    "id": "9fc7692d-7ee3-4024-a0f0-76374e50e49a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:49:52.108116Z",
+    "updated_at": "2025-12-02T14:49:52.108116Z"
+  },
+  "content": [
+    {
+      "id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "submission_id": "9fc7692d-7ee3-4024-a0f0-76374e50e49a",
+      "content_type": "manuscript",
+      "content_text": "# High-speed motility originates from cooperatively pushing and pulling flagella bundles in bilophotrichous bacteria\n\n## Authors\n\n- Klaas Bente<sup>1</sup> ([ORCID: 0000-0002-2520-4697](https://orcid.org/0000-0002-2520-4697))\n- Sarah Mohammadinejad<sup>2</sup> ([ORCID: 0000-0002-3758-5693](https://orcid.org/0000-0002-3758-5693))\n- Mohammad Avalin Charsooghi<sup>1</sup> ([ORCID: 0000-0002-7772-8513](https://orcid.org/0000-0002-7772-8513))\n- Felix Bachmann<sup>1</sup>\n- Agnese Codutti<sup>1</sup>\n- Christopher T Lef\u00e8vre<sup>6</sup>\n- Stefan Klumpp<sup>4</sup> ([ORCID: 0000-0003-0584-2146](https://orcid.org/0000-0003-0584-2146)) \u2020\n- Damien Faivre<sup>1</sup> ([ORCID: 0000-0001-6191-3389](https://orcid.org/0000-0001-6191-3389)) \u2020\n\n### Affiliations\n\n1. Department of Biomaterials Max Planck Institute of Colloids and Interfaces Potsdam Germany\n2. Department of Theory and Bio-Systems Max Planck Institute of Colloids and Interfaces Potsdam Germany\n3. Department of Biological Sciences Institute for Advanced Studies in Basic Sciences Zanjan Islamic Republic of Iran\n4. Institute for the Dynamics of Complex Systems University of G\u00f6ttingen G\u00f6ttingen Germany\n5. Department of Physics Institute for Advanced Studies in Basic Sciences Zanjan Islamic Republic of Iran\n6. Aix-Marseille Universit\u00e9, CEA, CNRS, BIAM, F-13108 Saint-Paul-lez-Durance France\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacteria propel and change direction by rotating long, helical filaments, called flagella. The number of flagella, their arrangement on the cell body and their sense of rotation hypothetically determine the locomotion characteristics of a species. The movement of the most rapid microorganisms has in particular remained unexplored because of additional experimental limitations. We show that magnetotactic cocci with two flagella bundles on one pole swim faster than 500 \u00b5m\u00b7s\u22121 along a double helical path, making them one of the fastest natural microswimmers. We additionally reveal that the cells reorient in less than 5 ms, an order of magnitude faster than reported so far for any other bacteria. Using hydrodynamic modeling, we demonstrate that a mode where a pushing and a pulling bundle cooperate is the only possibility to enable both helical tracks and fast reorientations. The advantage of sheathed flagella bundles is the high rigidity, making high swimming speeds possible.\n\n## Introduction\n\nThe understanding of microswimmer motility has implications ranging from the comprehension of phytoplankton migration to the autonomously acting microbots in medical scenarios (Sengupta et al., 2017; Felfoul et al., 2016). The most present microswimmers in our daily lives are bacteria, most of which use flagella for locomotion. Well-studied examples of swimming microorganisms include the peritrichous (several flagella all over the body surface) Escherichia coli with an occasionally distorted hydrodynamic flagella bundling (Turner et al., 2000) and the monotrichous (one polar flagellum) Vibrio alginolyticus, which are pushed or pulled by a flagellum and exploit a mechanical buckling instability to change direction (Xie et al., 2011; Son et al., 2013). The swimming speeds of so far studied cells are in the range of several 10 \u00b5m s\u22121 and their reorientation events occur on the time scale of 50\u2013100 ms (Son et al., 2013; Berg and Brown, 1972).\n\nMagnetococcus marinus (MC-1) is a magnetotactic, spherical bacterium that is capable of swimming extremely fast (Zhang et al., 2014; Fenchel and Thar, 2004; Bazylinski et al., 2013; Garcia-Pichel, 1989). MC-1 as well as the closely related strain MO-1 (Ruan et al., 2012) are equipped with two bundles of flagella on one hemisphere (bilophotrichous cells). The bacterium also features a magnetosome chain, which imparts the cell with a magnetic moment (\u2018magnetotactic\u2019 cell). They are assumed to swim with the cell body in front of both flagella bundles, which synchronously push the cell forward (Zhang et al., 2014). This assumption leads to helical motion in the presence of a strong magnetic field, which exerts a torque on the cell\u2019s magnetic moment, as seen in hydrodynamic simulations (Yang et al., 2012). In the absence of a magnetic field, this model predicts rather straight trajectories.\n\nOur observations disagree with the above-mentioned model, indicating that an understanding of the physics of their swimming is still missing, even though proof of concept biomedical applications of these bacteria have already emerged (Felfoul et al., 2016). Here, we confirm that MC-1 cells reach speeds of over 500 \u00b5m s\u22121 (Figure 1D) and observe that the cells travel along a double helical path, which has not been reported for bilophotrichous cells so far. In addition, we observed that this rapid movement is complemented by an extremely fast reorientation ability (less than 5 ms). We connect the flagella bundle architecture and the swimming mechanism by hydrodynamic simulations and show that only a striking cooperative movement where one flagella bundle pushes while the other pulls the cell explains these motility characteristics.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig1-v2.jpg)\n\n**Figure 1.:** (A) MC-1 cells were transitioned into agar-free medium, the solution was degassed to remove the oxygen and inserted into a microcapillary. Due to one open and one closed end, an oxygen gradient formed and the cells accumulated near their preferred microoxic conditions (the oxic-anoxic-interface, OAI). (B) The cells were observed near the band using 400 fps phase contrast video microscopy with a spherical aberration, which causes interference patterns around the spherical swimmers. These patterns can be correlated with patterns from silica beads of known height relative to the focal plane. (C) A tracking algorithm enables high-throughput 3D tracking of the microswimmers (Taute et al., 2015). Colors indicate different cells. (D) Individual tracks were analyzed and a clockwise helical travel path with a radius close to the cell diameter was found as well as instantaneous traveling speeds between 100 \u00b5m s\u22121 and 500 \u00b5m s\u22121. Tracks can be interrupted by rapid reorientation events that last only 2.5\u20135 ms. The helix parameters like pitch and period time do not change before and after an event, but apparently do so in the projected 2D tracks (see projected shadow in D).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Top simulation parameters: Theta (reorientation angle) was 90 \u00b0, velocity was 100 \u00b5m/s, and runtime was 0.86 s. Bottom parameters: Theta was 170 \u00b0, velocity was 14 \u00b5m/s and runtime was 0.86 s. The mean time each reorientation lasted was 0.14 s for both cases.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Turning angle \u03b8 after a reorientation event, (B) effective traveling speed, (C) runtimes and D) runlengths in-between events.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The radius, pitch and period time of the helix remain constant before and after the event, which is identified as a drop in velocity to 0 and which lasted 3.75 ms\u00a0\u00b1\u00a01.25 ms (error due to frame rate). While the top view indicates a change in helix parameters, the 3D view reveals no apparent changes.\n\n## Results\n\nMC-1 cells were observed in a physicochemically controlled environment that resembled the cell\u2019s natural habitat (Adler, 1973; Figure 1A). The cells were introduced into a flat, rectangular microcapillary tube with a height of 200 \u00b5m, where they accumulated in a band near their preferred oxygen conditions. The cells were imaged near this band (Frankel et al., 1997; Fenchel, 1994) at central height to avoid surface interactions. The capillary was placed at the center of three orthogonal Helmholtz coils (Bennet et al., 2014), which were used to cancel the Earth\u2019s magnetic field with a precision of 0.2 \u00b5T after the band had formed. Hence, the cells\u2019 motion could be observed in the absence of significant magnetic torques. Tracking was performed in 3D at 400 frames s\u22121 (fps) (Figure 1B). A high-throughput tracking method was used (Taute et al., 2015) (see Materials\u00a0and\u00a0methods) for the reconstruction of the tracks (Figure 1C and D).\n\nOur first set of observations revealed that the cells traveled on helical paths (with a pitch of 5.3 \u00b5m\u00a0\u00b1\u00a01.3 \u00b5m, a diameter of 1.7 \u00b5m\u00a0\u00b1\u00a00.2 \u00b5m, and a period of 46 ms\u00a0\u00b1\u00a032 ms, n\u00a0=\u00a065, errors are standard deviations) in the absence of magnetic torques (parameter extraction was performed with an automated track analysis algorithm, which was validated against simulated swim tracks, see Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2). In addition, abrupt changes of the direction of the helical axis were observed (e.g. around 90\u00b0 in Figure 1\u2014figure supplement 3). These directional changes occur within 2.5 ms to 5 ms, at least one order of magnitude faster than any previously analyzed reorientation events (Son et al., 2013; Berg and Brown, 1972). Directional changes did not occur via a continuous modulation of the ratio of radius and pitch (Crenshaw and Edelstein-Keshet, 1993), as it has been observed as a part of the chemotaxis of sperm (Jikeli et al., 2015). Rather, the helix parameters were the same before and after such an event. 3D tracking is essential to obtain this conclusion, as projected 2D tracks exhibit apparent changes in the helix parameters (see projected shadow of the track in Figure 1D and Figure 1\u2014figure supplement 3).\n\nThe cells were further examined at 1640 fps in high-intensity dark-field video microscopy to visualize the cell body and the flagella bundle movement in detail (Figure 2, Materials\u00a0and\u00a0methods). A representative track of the cell body movement is shown in Figure 2A together with the tracked velocity. At such frame rates, a more complex movement pattern becomes apparent, which was not detectable during the 3D tracking at 400 fps. The cell track can be represented by a superposition of two helices, a small helix on a large helix (Figure 2B), resulting in a position over time $x_{d}(t)=[r_{l}cos\u2061\\frac{2\\pit}{T_{l}}+r_{s}cos\u2061\\frac{2\\pit}{T_{s}},r_{l}sin\u2061\\frac{2\\pit}{T_{l}}+r_{s}sin\u2061\\frac{2\\pit}{T_{s}},\\frac{p_{l}t}{T_{l}}]'$. The large helical track featured a pitch pl of\u00a0~4 \u00b5m, a radius rl of\u00a0~1 \u00b5m and a period Tl of 72 ms. The small helix featured a pitch of\u00a0~0.66 \u00b5m, a radius rs of\u00a0~0.125 \u00b5m and a period Ts close to 14.4 ms. The ratio between this specific track\u2019s period times was close to 6, which was later used to choose the flagella bundle\u2019s rigidities and torque in the numerical simulations. The parameters for the small helix have been determined for a single track and do not possess statistical information. However, comparable double helical paths were apparent in all recorded tracks, including the cell track of the flagella imaging attempt (Figure 4, Video 1 and Video 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig2-v2.jpg)\n\n**Figure 2.:** In (A) the tracked path is displayed after smoothing by a 5-point moving average filter and then plotted together with the cell velocity. Green arrows indicate velocity maxima. In (B) it is shown that the projected swimming path and projected velocity can be described by a projection of a large 3D double helix $v_{d}(t)$.\n\n![Video 1.](https://cdn.elifesciences.org/articles/47551/elife-47551-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/47551/elife-47551-video2.mp4.jpg)\n\nThe flagella bundle morphology and movements were imaged in transmission electron microscopy (TEM) and in high-intensity dark-field video microscopy (Figure 3, Video 1 and Video 2). In the video microscopy at 1424 fps, short fibers next to the cell body and bright spots on the cell surface could be observed, which we identified as a part of a flagellum bundle close to the cell surface (Son et al., 2013). Although a state-of-the-art flagella imaging method, a sufficiently high framerate and a photon density close to the cell death limit were chosen, the resulting images reveal only little information about the exact flagella bundle positions and dynamics. This is the result of the combination of the small size of the cells and their extraordinary high swimming speed and possibly their strong flagella bundle movement.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig3-v2.jpg)\n\n**Figure 3.:** (A) TEM image of an MC-1 cell stained with uranyl acetate. Two flagella bundles emerge from the MC-1 cell body. Each bundle features seven flagella, which emerge from a cavity on the cell surface. The individual flagella are bundled by a sheath (scale bar is 1 \u00b5m). (B-D) Individual frames from the high-speed dark-field video microscopy experiment at different points in time (Video 1, scale bars 1 \u00b5m). Bright spots appeared on the cell surface and next to the cell, which were identified as the parts of the flagella bundles that were closest to the cell surface. As the cell swam downwards in the image (blue track), the flagella bundle spots appeared in front of and behind the cell (relative to its overall movement direction). When comparing the times of B and C, the abrupt change in position indicates that another flagella bundle moved into focus of the microscope. When comparing C and D, it becomes apparent that the spots appear at nearly the same position on the cell at nearly the same horizontal position in the helical movement pattern, indicating a periodic flagella movement pattern that causes the helical track.\n\nDespite the difficulties in imaging the flagella bundles in full length, the position of the flagella bundle near the cell surface were tracked together with the cell\u2019s trajectory over 85 ms, which corresponds to 1.6 periods on the large helical trajectory of the cell (Figure 4). The observed movement pattern is more complex than previously assumed (Felfoul et al., 2016; Frankel et al., 1997; Bazylinski et al., 2013; Waisbord et al., 2016). The two flagella bundle positions moved rapidly around the cell. Crucially, one flagella bundle position is often seen in front of the cell (relative to its swimming direction), contrary to the model of two pushing flagella bundles, which remain behind the cell body. Additionally, the bright spots\u2019 movement pattern featured the same periodicity as the large helical swimming track of the cell (also compare Figure 3C and Figure 3D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig4-v2.jpg)\n\n**Figure 4.:** (A) The cell swam from top to bottom in the field of view. Moving bright spots were identified as the parts of the flagella bundles that were closes to the cell surface. The cell\u2019s helical traveling path had a period time of 52 ms. (B) The positions were tracked over time and are depicted relative to the center of the cell, represented by different spheres for different time intervals. (C) The schematic of the cell\u2019s large helical track is color-coded according to the different time intervals where the flagella bundle parts were visible to highlight the periodicity of the flagella bundle movement.\n\nWe turned to numerical simulations of the cell\u2019s swimming behavior, to develop a deeper understanding of the mechanisms of propulsion and rapid reorientation and to compensate the missing information from flagella bundle imaging. We performed Stokesian dynamics simulations (Adhyapak and Stark, 2015) for a spherical cell body (1.3 \u00b5m in diameter) with two discretized helical filaments (4 \u00b5m long and 50 nm thick if not stated differently) representing the flagella bundles (see Materials\u00a0and\u00a0methods for details). A large helical path of a microswimmer is produced from an off-axis (relative to the swimming direction) torque which continuously changes the direction of the thrust force. In case of a bilophotrichous cell, this requires a significant asymmetry in the propulsion force vectors of the two flagella bundles. Five possible asymmetries in flagella bundle configuration were considered to produce this torque and the resulting swimming paths were compared to experimental data\u00a0(Figure 5). Three asymmetric configurations were ruled out numerically, as they did not result in a significant match between simulated and experimentally observed helix diameter, helix pitch and speed. These configurations are: A difference in flagella bundle length (Figure 5\u2014figure supplement 1), a difference in motor strength (Table 1) and an asymmetry in the equilibrium angle of the two flagella bundles relative to the cell surface (Shum, 2019) (see\u00a0Appendix\u00a01). Another scenario would be a periodic, time-dependent movement of the flagella equilibrium angles relative to the cell surface (Nguyen and Graham, 2017). However, constant offsets in these angles already did not produce any significant matches between experiment and simulation. This indicates that this scenario will also fail this test and was not investigated further. Although not fully reaching experimentally observed helix pitches, the asymmetry in sense of motor rotation was the only scenario producing significant matches in helix diameter and cell speeds.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig5-v2.jpg)\n\n**Figure 5.:** The principle cell and flagella bundle arrangement is shown in (A) at four distinct time points where the cell body diverges strongly from the helix axis. (B) Shows the projected track of a simulated MC-1 with the flagellar opening angle 60o together with the projected speed. The results are comparable to measured data from Figure 2A. (C) Histogram of turning angles for the reorientation events seen in experiments and in simulations, where reorientation results from periods of synchronous rotation. (D) Validation of the cooperative pushing and pulling model in the presence of a strong magnetic field (3 mT). A third hyper-helix is observed in both experiment and simulation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** No match could be reached for either pitch or diameter in the simulations.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** While the pitch is not fully matched for any opening angles between the two flagella, the helix diameter and cell\u2019s speed could be simulated.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig5-figsupp3-v2.jpg)\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig5-figsupp4-v2.jpg)\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig5-figsupp5-v2.jpg)\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/47551/elife-47551-fig5-figsupp6-v2.jpg)\n\n**Figure 5\u2014figure supplement 6.:** The tested flagella rotation patterns are shown together with the resulting cell trajectories for five different conditions: no magnetic field, weak magnetic field (50 \u03bcT) for a cell with magnetic moment parallel and perpendicular to the flagellar axes, and strong magnetic field (5 mT), again with magnetic moment parallel and perpendicular to the flagellar axes.. In the absence of a magnetic field, two pushing flagella produce small helices, two pulling flagella cause a strongly distorted movement pattern and only a cooperatively pushing and pulling flagella combination reproduces the experimentally observed double helical motion shown in Figure 2A. A strong magnetic field results in the hyper-helical motion shown in Figure 4D, if the magnetic moment is not parallel to the flagellar axes.\n\n**Table 1.**\n Simulated swim track parameters for an asymmetry in motor torques for MC-1 cells for different opening angles between the two flagella bundles.The second row gives statistical averages of experimental values for diameter (D), pitch (P), period time (T) and speed (Vt).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Opening angle</th>\n      <th>Tm2/Tm1</th>\n      <th>D (\u03bcm)</th>\n      <th>P (\u03bcm)</th>\n      <th>T (ms)</th>\n      <th>Vt (\u03bcm/s)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Experiment</td>\n      <td>1.7</td>\n      <td>5.3</td>\n      <td>46.0</td>\n      <td>100.0</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">60 \u00b0</td>\n      <td>0.1</td>\n      <td>0.43</td>\n      <td>0.93</td>\n      <td>47.4</td>\n      <td>52.33</td>\n    </tr>\n    <tr>\n      <td>0.5</td>\n      <td>0.29</td>\n      <td>0.73</td>\n      <td>20.2</td>\n      <td>58.85</td>\n    </tr>\n    <tr>\n      <td>0.9</td>\n      <td>0.18</td>\n      <td>1.58</td>\n      <td>33.4</td>\n      <td>88.42</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">80 \u00b0</td>\n      <td>0.1</td>\n      <td>0.54</td>\n      <td>1.08</td>\n      <td>54.4</td>\n      <td>54.76</td>\n    </tr>\n    <tr>\n      <td>0.5</td>\n      <td>0.39</td>\n      <td>1.09</td>\n      <td>32</td>\n      <td>60.44</td>\n    </tr>\n    <tr>\n      <td>0.9</td>\n      <td>0.20</td>\n      <td>1.61</td>\n      <td>34.8</td>\n      <td>84.14</td>\n    </tr>\n  </tbody>\n</table>\n\nSince TEM images did not allow for a precise determination of the opening angle between the two flagella bundles (with respect to the body center; see, for example, Figure 3A), a wide range of opening angles (30\u00b0\u2212120\u00b0) was used in the simulations (Figure 5\u2014figure supplement 2). The effect of the flagellar motors was included as a torque at the base of the helices, which rotates the filament, and a counter-torque, which rotates the cell body. We considered the two bundles to rotate independently either counter-clockwise (CCW) or clockwise (CW). The parameters for bending rigidity, torsion rigidity and torque of the flagella bundles were adjusted to reproduce the observed movement characteristics (i.e. the parameters of the small helices and velocities). A motor torque of 12 pN \u00b5m, about 3.5 times the motor torque of an E. coli cell, had to be chosen together with high isotropic bending and twisting rigidities of 7 pN \u03bcm2, about two times larger than for single flagella (Adhyapak and Stark, 2015). We assume that this increase is attributed to the structure of the flagella bundle, where seven protein motors power seven sheathed flagella cooperatively (Figure 3A). Only this assumption allowed for stable and high swimming velocities in the simulations, indicating that the function of the flagella bundle is to combine high torques with high rigidities.\n\nDifferent swimming scenarios arising from combinations of CW and CCW rotation of the two bundles were simulated: both flagella bundles pushing the cell (CCW and CCW), both flagella bundles pulling (CW and CW) and one flagellum pushing, one pulling (CCW and CW). The fact that flagella can pull cells is well established (Son et al., 2013; Constantino et al., 2016) and our simulations show that only the CCW and CW model results in the double-helical tracks experimentally observed (Figure 4A and B, Figure 5\u2014figure supplement 2, Video 3 and Video 4). Tracking the simulated cells resulted in time traces of the velocity and the projected position that are strikingly similar to the experimental ones (for a quantitative comparison, see Figure 5 and Figure 2A). We tested the dependence of the trajectories on model parameters, in particular the opening angle and motor torque (Table 2 and Table 3). Double helical trajectories were observed for flagellar opening angles in the whole parameter range, with diameter and speed in agreement with the experiments (but no fully quantitative agreement for the pitch of the large helix).\n\n**Table 2.**\n Swimming features of MC-1 cells using CCW and CW swimming mechanism for simulations with different flagellar opening angles.The given output parameters are the helix diameter, its pitch, the period time (period), the effective velocity (Vz) and the instantaneous velocity (Vt).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Flagellar opening angle</th>\n      <th>Diameter (\u03bcm)</th>\n      <th>Pitch (\u03bcm)</th>\n      <th>Period (ms)</th>\n      <th>Vz (\u03bcm/s)</th>\n      <th>Vt (\u03bcm/s)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>30\u00b0</td>\n      <td>2.1</td>\n      <td>3.0</td>\n      <td>144</td>\n      <td>21</td>\n      <td>76</td>\n    </tr>\n    <tr>\n      <td>45\u00b0</td>\n      <td>1.7</td>\n      <td>2.3</td>\n      <td>88</td>\n      <td>27</td>\n      <td>87</td>\n    </tr>\n    <tr>\n      <td>60\u00b0</td>\n      <td>1.4</td>\n      <td>1.7</td>\n      <td>59</td>\n      <td>30</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td>80\u00b0</td>\n      <td>1.1</td>\n      <td>1.2</td>\n      <td>39</td>\n      <td>32</td>\n      <td>106</td>\n    </tr>\n    <tr>\n      <td>100\u00b0</td>\n      <td>0.9</td>\n      <td>1.1</td>\n      <td>34</td>\n      <td>32</td>\n      <td>108</td>\n    </tr>\n    <tr>\n      <td>120\u00b0</td>\n      <td>0.7</td>\n      <td>1.1</td>\n      <td>34</td>\n      <td>33</td>\n      <td>106</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Swimming features of MC-1 cells for different motor torques.The 3.5 times increase of motor torque compared to E-coli cells was chosen for the simulations described in the main text due to the best fits of swimming track parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Motor torque (Tm/Tm-Ecoli)</th>\n      <th>D (\u03bcm)</th>\n      <th>P (\u03bcm)</th>\n      <th>T (ms)</th>\n      <th>Vt (\u03bcm/s)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>3.5</td>\n      <td>1.4</td>\n      <td>1.7</td>\n      <td>59</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>1.44</td>\n      <td>1.56</td>\n      <td>74.4</td>\n      <td>80.84</td>\n    </tr>\n    <tr>\n      <td>2.5</td>\n      <td>1.43</td>\n      <td>1.64</td>\n      <td>84.2</td>\n      <td>69.41</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>1.49</td>\n      <td>1.39</td>\n      <td>101.2</td>\n      <td>53.27</td>\n    </tr>\n  </tbody>\n</table>\n\n![Video 3.](https://cdn.elifesciences.org/articles/47551/elife-47551-video3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/47551/elife-47551-video4.mp4.jpg)\n\nWe also tracked the position of the flagella bundle positions in the simulations (by tracking the first beads of each discretized flagellum). Both flagella bundles rotated with 100 Hz - 150 Hz and one period of the rotation coincides with one period of the large helix in the cell\u2019s trajectory. This agrees with the flagella bundle movement in the experiments (Figure 4).\n\nOur model suggests a pushing flagella bundle together with a pulling flagella bundle rotating in opposite senses. The experimentally observed rapid reorientation events that lasts between 2.5 ms and 5 ms are most reasonably produced by a sharp change in the rotation of at least one flagella bundle. We tested different scenarios (Figure 5\u2014figure supplements 3\u20135) and found a transiently synchronous rotations of the two flagella bundles to be the most likely process. We tested this by changing the sense of rotation from CCW and CW to CCW and CCW for 4 ms in the simulations and calculating the angle between the trajectory segments before starting and after finishing this transient CCW and CCW step (outtake in Video 5). This procedure indeed resulted in rapid reorientation with a change in direction by 80\u00b0\u00a0\u00b1\u00a08\u00b0 (Figure 4C), in agreement with the 94\u00b0\u00a0\u00b1\u00a039\u00b0 change seen in the experiments (errors are standard deviations). The standard deviation of the directional change is small in our simulations, where only the runtime was varied, compared to the experimental value. The mismatch likely arises from biological diversity in flagella lengths and opening angles, but also due to shifts in local physiochemical conditions, which can for\u00a0example influence the motor torque (Son et al., 2013). A transient buckling deformation was observed in the simulated flagella bundles during an event, which caused the fast reorientations.\n\n![Video 5.](https://cdn.elifesciences.org/articles/47551/elife-47551-video5.mp4.jpg)\n\nTo further validate our simulations, we predicted the cell\u2019s swimming behavior at high magnetic fields using our simulation without changing further parameters. The direction of the cell\u2019s magnetic moment was assumed to be perpendicular to the bisector of the two flagella bundle axes (further scenarios can be found in Figure 5\u2014figure supplement 6). The simulations showed an additional, large hyper-helical movement pattern (with diameter $D_{sim}\u22433.9$ \u00b5m and pitch $P_{sim}\u224319.1$ \u00b5m). The same pattern could thereafter be found in experimental data with similar parameters ($D_{exp}\u22434.2$ \u00b5m and $P_{exp}\u224330$ \u00b5m). Typical MC-1 hyper-helical trajectories from simulations and experiments are shown in Figure 5D.\n\n## Discussion\n\nMagnetococci are exceptional swimmers with respect to both their high speed and their reorientation swiftness. In addition, they are likely to make use of a previously unrecognized pattern of motion of their flagella bundles, with one bundle pushing the cell body and the other pulling it. Key to observing this pattern of motion was the 3D tracking of single cells in the absence of magnetic torques to observe the unexpected two-helix trajectories, together with hydrodynamic simulations. The hierarchically organized flagella bundles provide a high torque and rigidity, necessary to reach record speeds of over 200 body lengths per second, while the unusual type of coordination of the two bundles provides a mechanism for rapid reorientation. Magnetotactic cocci such as MC-1 thrive and generally represent the most abundant MTB in aquatic environments (Lef\u00e8vre et al., 2015). Their unusual motility is certainly an adaptation that represents a selective advantage that make them competitive in the highly coveted biotopes that are the oxic-anoxic interfaces (Brune et al., 2000). Indeed, the observed geometry of this resulting swimming pattern is reminiscent of the situation recently reported for magnetospirilla (Murat et al., 2015), despite the difference in body plan. The magnetosprilla have two flagella at opposite cell poles, and a magnetic moment parallel to the flagellar axis, while the flagella of the cocci studied here are attached on one hemisphere of the cell and almost perpendicular to the magnetic moment. Nevertheless, both swim aligned with a magnetic field with one flagellum ahead and one trailing. In summary, record-breaking cells like MC-1 can help to understand physical limits of natural microswimmers and provide design principles for their artificial counterparts.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Magnetococcus marinus)</td>\n      <td>MC-1</td>\n      <td>CEA</td>\n      <td>NCBI:txid156889</td>\n      <td>Dr. Christopher Lef\u00e8vre, CNRS</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MatLab</td>\n      <td>The MathWorks</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell medium and culturing\n\nMC-1 was cultured similarly to the procedure reported by Bazylinski et al. (2013). Artificial sea water (ASW) was used as a base medium, containing 20 g NaCl, 6 g MgCl2, 2.4 g Na2SO4, 0.5 g KCl and 1 g CaCl2 per liter H20. To this was added (per liter) the following, in order, prior to autoclaving: 0.05 mL 0.2% (w/w) aqueous resazurin, 5 mL Wolfe\u2019s mineral solution (ATCC, MD-TMS), 0.3 g NH4Cl, 2.4 g HEPES and 1.6 g agar (Kobe I, Carl Roth). The medium was then adjusted to pH 6.3 and autoclaved. After the medium had cooled to about 45\u00b0C, the following solutions were added (per liter), in order, from previously sterile-filtered stock solutions: 0.5 ml vitamin solution (ATCC, MD-VS-10mL), 1.8 mL 0.5 M potassium phosphate buffer, pH 7, 3 mL0.01 M FeCl2 and 40% (w/w) Na thiosulfate. Finally, 0.4 g cysteine was added (per liter), which was made fresh and filter-sterilized indirectly into the medium. The medium (12 mL) was dispensed into sterile Hungate tubes after verifying a pH of 7.0. All cultures were incubated at room temperature (~25\u00b0C) and, after approximately one week, a microaerobic band of MC-1 formed at the oxic\u2013anoxic interface (pink-colorless interface) of the tubes. The cells were harvested in volumes of 1 mL from that region and magnetically transferred to ASW for experiments. The transfer step was necessary to remove agar for swimming experiments and to minimize background scattering in dark-field microscopy.\n\n### Cell morphology analysis\n\nThe flagella bundle length was determined with ImageJ from images taken with a Zeiss EM 912 Omega transmission electron microscope using an acceleration voltage of 120 kV. The cells were dried on a carbon film on a regular TEM copper grid and stained with 4% uranyl acetate for 6 min. Due to the staining, the cell walls appeared electron dense and covered the sight on flagella on top or below the cells. Hence, we added the average cell radius to the mean of the flagella length. A mean flagella bundle length of 3.3 \u00b5m\u00a0\u00b1\u00a00.4 \u00b5m (n\u00a0=\u00a027) resulted. The size of the non-dried cells were measured with ImageJ from images taken with a LSM780 (Zeiss; Germany) confocal microscope. The mean size was 1.3 \u00b5m\u00a0\u00b1\u00a00.1 \u00b5m (n\u00a0=\u00a0103).\n\n### Microcapillary experiments\n\n1 mL of a freshly harvested sample was degassed using nitrogen for 15 min and the sample was introduced into a rectangular micro-capillary (VitroTubes, #3520\u2013050,) by capillary forces. One end of the capillary was sealed with petroleum jelly and the capillary was mounted on a microscope slide that was used to hold the sample on the microscope stage. The oxygen diffusion from the open end caused an oxygen gradient inside the medium, which led together with the oxygen consumption of the cells to the formation of a microaerobic bacteria band. The band formed in the presence of a 50 \u00b5T magnetic field towards the sealed end. The tracks were taken after 30 min of microcapillary infiltration at 0 \u00b5T.\n\n### 3d tracking experiments\n\n3D swim tracks were recorded at 400 fps in a microcapillary in the vicinity of the microaerobic band (Nikon, S Plan Fluor ELWD,\u00d740, Ph2, NA 0.6; NA 0.76 condenser lens; Ph2 aperture ring, 635 nm LED illumination). The 3D tracks were reconstructed using the high-throughput phase contrast reference method by Taute et al. (2015). A spherical aberration was introduced using a misalignment of the correction collar of the\u00a0\u00d740 phase contrast objective to a cover slip thickness correction of 1.2 mm. The aberration caused inference pattern, which can be correlated with the relative height of the microswimmer. A custom made microscope platform, developed by Bennet et al. (2014), was used, which features three orthogonal Helmholtz coil pairs around the sample position. The setup can generate homogeneous fields at the sample position with arbitrary direction with a precision of 0.2 \u00b5T. The Earth\u2019s magnetic field was canceled or an artificial field towards low oxygen conditions was generated during a capillary experiments.\n\n### Dark-field microscopy\n\nFlagella bundle positions were visualized at 1424 fps using high-intensity dark-field microscopy (Nikon 60\u00d7, 0.5\u20131.25 NA CFI P-Fluor oil objective at 0.75 NA; 1.2 NA oil condenser; mercury lamp illumination) and an Andor Zyla 5.5 (10-tap) camera (6.5 \u03bcm per pixel). The cells were placed inside a 10 \u00b5m deep chamber in ASW. A deeper chamber did not allow for successful dark-field imaging of flagella bundles due to an increase in noise from background scattering. The focal plane was adjusted to the center of the chamber, such that interactions between the observed flagella bundles and the chamber surfaces were avoided. Presumably due to the flagella bundle size and the high rotation speed of the cell and of the bundles, a direct observation of the whole flagella bundles was not successful and only a small section of each flagellum could be visualized. A sub-millisecond exposure time set the requirement for high photon intensity at the sample position. The intensity was increased until the cells melted instantly when swimming into focus. A green filter prevented the melting while still facilitating sufficient brightness. Scrupulous cleanliness at all optical interfaces was obligatory. High-speed cell body tracking could be accomplished at the center of a 200 \u00b5m deep chamber. Optimized visualization was achieved at 1640 fps using dark-field microscopy without the critical illumination from flagella tracking (Zeiss 60\u00d7, 1.0 NA; 1.2 NA oil condenser; halogen lamp illumination). The dark-field setup did not allow for a cancellation of external magnetic fields. Measurements of the magnetic field at the capillary position yielded Bx = \u2212195 \u00b5T\u00a0\u00b1\u00a00.2 \u00b5T, By\u00a0=\u00a060 \u00b5T\u00a0\u00b1\u00a00.2 \u00b5T and Bz\u00a0=\u00a027 \u00b5T\u00a0\u00b1\u00a00.2 \u00b5T.\n\n### Cell and flagella tracking software\n\n3D track reconstruction was performed in MatLab (The MathWorks) using an adapted version of the code from Taute et al.\u00a0(2015). For automated analysis of the reorientation angle distribution, the script was successfully tested against simulated data with known reorientation angles (See SI). The helix parameter determination was performed automatically on tracks extending a duration of 0.4 s, with a mean-square-displacement of at least 10 \u00b5m2 and a mean opening angle between all consecutive velocity vectors of less than 60 \u00b0 to exclude strongly irregular tracks. The same exclusion parameters have been used for the reorientation angle analysis. Simultaneous dark-field cell and flagella tracking was performed using an in-house semi-automatic MatLab program. Tracking of the cell trajectory at 1640 fps without the flagella movement was performed using the TrackMate plugin of ImageJ.\n\n### Hydrodynamic simulations\n\nEach flagellum was modeled as a helical filament and a rotary motor. The helical filament was discretized with 20 beads with a discretization distance of 200 nm and bead diameter of 50 nm. Excluded volume interactions between all particles are considered using a truncated Lennard-Jones potential. Hydrodynamic interactions are taking into account using Stokesian dynamics simulation method having the translational anisotropic friction coefficients of $\\gamma_{\u2551}=1.6\u221910^{-3}$\u00a0pNs/\u03bcm2 and $\\gamma_{\u22a5}=2.810^{-3}$\u00a0pNs/\u03bcm2 and the rotational friction of $\\gamma_{r}=1.2610^{-6}$\u00a0pNs for the flagellum beads and $\\gamma_{bt}=6\\pi\u03b7R_{b}$\u00a0and $\\gamma_{br}=8\\pi\u03b7R_{b}^{3}$ for the translational and rotational friction coefficients of the cell body. Irrespective of the high motor torque and isotropic bending and twisting rigidities mentioned in the main text, a stretching rigidity of 1000 pN, comparable to that of single flagella, could be chosen. A Rotne-Prager matrix was used for calculating the cross-mobilities and cross-hydrodynamics (Dhont, 1996). The swimming dynamics of the model cell at low Reynold number was calculated by solving the translational and rotational Stokes equations of motion for the cell body, flagellar beads and the bonds between them. A second-order Runge-Kutta algorithm (Sewell, 1988; Press et al., 1992) and simulation time-steps of 10\u22127 s were used to solve the equations of motion numerically.\n",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "fe41086f-729d-44f8-9358-ce0e432a9c8e",
+      "submission_id": "9fc7692d-7ee3-4024-a0f0-76374e50e49a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.47551.sa1](https://doi.org/10.7554/eLife.47551.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper reports on the discovery of an unusual and fascinating form of motility in a magnetotactic bacterium. Through a combination of experiment and theory the authors have found that the two flagellar bundles work in opposite ways \u2013 one pushing and one pulling the cells through their fluid environment in double-helical paths. The very fast motility and very rapid trajectories changes appear to arise from these features. This work will surely be of interest not only to those interested in the biology of motility, but also physical scientists interested in the fluid dynamics of locomotion.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"High-speed motility originates from cooperatively pushing and pulling flagella bundles in bilophotrichous bacteria\" for peer review at eLife. Your article is being evaluated by three peer reviewers, and the evaluation is being overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor.\n\nThe essence of the criticisms concerns the interpretation of the experimental observations (and the possibility of achieving better imaging of the flagella) and the analysis of the computational results. In both cases further details are needed, and in the former it appears that additional imaging would be in order.\n\nReviewer #1:\n\nIn my opinion the topic of the article is interesting as it identifies a new flagellar arrangement for motility (though similar simultaneous pushing/pulling has been observed for species with bundles at opposite poles rather than the same hemisphere, both in magnetospirilla). However, I am not completely convinced by the authors' evidence. As detailed below, while the story is quite plausible, the experiments seem to not have key evidence which I would have expected to have easily been observed if the scenario were true, and the numerics are not performed (or perhaps just not described) in a way that convincingly rules out other hypotheses.\n\n1) In the dark field imaging, bright spots on the cell body are identified with flagella. This identification is not obvious to me, and it is quite puzzling why the authors do not actually image the flagellar bundles. If the bundles were indeed extended from the body in front and behind the cell, I would expect that they could be visualized which would definitively prove their proposed configuration. In Son, Guasto and Stocker, 2013, sheathed flagella are quite readily imaged. In my experience, there may be difficulty seeing flagella with darkfield at 1640 fps, but they should be readily imaged at <200 fps using their camera. Note that 200 fps is more than fast enough to resolve the larger helical motion with period 72 ms. It is unclear if the authors attempted this. If the authors tried and were not able to see a leading and lagging bundle, I would take that as evidence against their claim.\n\n2) The authors describe the double helical path as \"unexplored\" in the Introduction, but based on my knowledge, double helical paths are what should be expected from most types of propulsion by flagellar bundles, with the main distinguishing feature being the size of the larger helix. The smaller helix has in the past been attributed to the rotation of the bundle or flagellar helix, see Keller and Rubinow, 1976. The larger helix arises anytime there is non-axisymmetric propulsion, see Hyon, Powers, Stocker, Fu 2012 and has been observed in many species, albeit with varying sizes of the larger helix. As discussed in point 3 below, an important implication of this is that the bar for numerical simulations cannot be simply qualitative as in \"straight\" vs. \"double-helical,\" but must involve some quantitative analysis of the trajectory pitch and radius.\n\n3) The numerics have not been described in a way that clearly rules out alternative hypotheses.\n\nFirst, as mentioned above, the quantitative details of the helical trajectory are important, but these are not well-matched. The authors say that their trajectories match the experimental helical diameter and period of the trajectories but not the pitch. The results are strongly dependent on the angle between the bundles, which is used as a fitting parameter. They say that they believe that the pitch could be matched eventually by fitting the opening angle and flagella length but do not actually do it.\n\nSecond, changing directions of bundles is also likely able to produce many different types of helical trajectories with varying pitch and radii. These have not been eliminated as possibilities.\n\nThird, the fast reorientation in the simulations is interesting, but again, it is not ruled out whether other configurations could also yield similarly fast reorientations.\n\nFourth, the speed of the swimming is used as supporting evidence, but this is achieved by increasing the torque on the motor (to a value somewhat higher than some report for E. coli, but not out of the realm of possibility). If one is allowed to adjust the motor torque, then any speed can be reached for any configuration.\n\nReviewer #2:\n\nThe manuscript reports results of a detailed experimental and numerical study of the swimming motion of magnetotactic cocci, bilophotrichous bacteria with flagellar bundles at both poles. The experiments show that bacteria swim along a double helical path, with a very high swim speed and short reorient time compared to other bacteria. Hydrodynamic modelling demonstrates that this is due to a pushing and a pulling bundle. Experimental and numerical results are in good semi-quantitative agreement.\n\nI think this is a very nice investigation, which carefully elucidates the complex swimming motion of a bilophotrichous bacterium. Experiment and hydrodynamic simulation complement each other very well to characterize the geometry of the flagellar organization and swim pattern. Thus, I strongly support publication of this manuscript in eLife.\n\nI have only a few comments, which the authors should consider before publication:\n\n1) In the main text, the authors talk about flagella as well as flagella bundles. I found this pretty confusing, until I saw Figure S1. I recommend clarifying this point early in the main text.\n\n2) The reorientation angle could be discussed in a bit more detail. As far as I understand, as one bundle changes its direction of rotation, both bundles are in pushing (or pulling) mode, which leads to a (roughly) 90\u00b0 reorientation of the swimming direction. This would explain the particular value of the reorientation angle. This seems to be somewhat similar to the behavior seen in simulations of the early stages of swimming and bundle formation of peritrichous bacteria, when the flagella are initially pointing in arbitrary directions, see, J. Hu et al., Sci. Rep. 5, 9586 (2015). However, the bundle rotation direction has to change back. This would result in another 90\u00b0 angle, but uncorrelated with the first. Please clarify.\n\nReviewer #3:\n\nThe authors present a very thorough study of the exceptional swimming capacities in terms of speed and possibilities to suddenly change direction, displayed by a magnetotactic bacterium strain (MC-1). They use a holographic method to track in 3D the swimming trajectories and fast camera observations of the rotating body to visualize the positions of the flagellar bundles hooked to the cell. They discover the presence of a double helical path characterizing the swimming kinematics that can be explained by two sets of pushing and pulling flagella bundles working cooperatively and positioned within the same hemisphere of the spherical body. They simulate a hydrodynamic model to corroborate their finding, yielding very reasonable quantitative agreement with the experiments. The model, when set to some limits also helped to discover a new swimming pattern under the application of a magnetic field. Importantly, they also find that to reach such performances, the flagella must assume motive torque and bundle rigidity significantly larger than what is usually obtained for other bacterial strains.\n\nI found the experimental study excellent with important conclusions on an original propulsion model. My opinion is that the paper could deserve publication in eLife. My only concern is sometimes on the pedagogy and clarity of the explanations delivered. I believe this could be significantly be improved. I do not deny that the authors really tried to make an effort to deliver their message, in particular visually. However, it remains that sometimes, it took me several subsequent readings of the same paragraph to really understand what they actually meant. Figure 3 is a particular example of that, and I found in this instance, very hard to follow the reasoning in the caption in association with the visual message. Then I would suggest that the paper could significant gain in pedagogy and impact, if it was critically read by someone who could help to clarify some explanatory sentences.\n",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "814eb02e-39f6-41a8-9457-7f6c769be2fb",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C1",
+      "claim": "Magnetotactic cocci with two flagella bundles on one pole swim faster than 500 \u00b5m\u00b7s\u22121 along a double helical path.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that magnetotactic cocci with two flagella bundles on one pole swim faster than 500 \u00b5m\u00b7s\u22121 along a double helical path, making them one of the fastest natural microswimmers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental tracking data showing instantaneous traveling speeds between 100 \u00b5m s\u22121 and 500 \u00b5m s\u22121 (Figure 1D) and double helical path observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "ecfd6c4f-47e0-4ef7-969a-9af997486481",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C2",
+      "claim": "Magnetotactic cocci are one of the fastest natural microswimmers.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that magnetotactic cocci with two flagella bundles on one pole swim faster than 500 \u00b5m\u00b7s\u22121 along a double helical path, making them one of the fastest natural microswimmers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with previously reported swimming speeds of other bacteria (several 10 \u00b5m s\u22121) and measured speeds over 500 \u00b5m\u00b7s\u22121.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "8eb46839-075c-4ed8-b62f-4ced027c6160",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C3",
+      "claim": "MC-1 cells reorient in less than 5 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally reveal that the cells reorient in less than 5 ms, an order of magnitude faster than reported so far for any other bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by high-speed tracking data showing reorientation events lasting 2.5-5 ms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "a5913b39-4d55-4103-82b2-4b58b7dcf165",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C4",
+      "claim": "MC-1 reorientation is an order of magnitude faster than reported for any other bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally reveal that the cells reorient in less than 5 ms, an order of magnitude faster than reported so far for any other bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with previously reported reorientation times of 50-100 ms for other bacteria (Son et al., 2013; Berg and Brown, 1972).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "a1037ec8-5f4a-4e6f-9fd4-5d8ea98aba4a",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C5",
+      "claim": "A mode where a pushing and a pulling bundle cooperate is the only possibility to enable both helical tracks and fast reorientations in MC-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using hydrodynamic modeling, we demonstrate that a mode where a pushing and a pulling bundle cooperate is the only possibility to enable both helical tracks and fast reorientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Stokesian dynamics simulations testing multiple flagella configurations, where only CCW and CW rotation produced matching experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "5f18dbb3-c7c0-4157-8238-42d3e333e2c8",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C6",
+      "claim": "The advantage of sheathed flagella bundles is the high rigidity, making high swimming speeds possible.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of sheathed flagella bundles is the high rigidity, making high swimming speeds possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation requirements of high isotropic bending and twisting rigidities (7 pN \u03bcm2) to achieve stable high swimming velocities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "5b724fab-0749-48a9-9bbb-593bf79ba328",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C7",
+      "claim": "Escherichia coli is peritrichous with several flagella all over the body surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Well-studied examples of swimming microorganisms include the peritrichous (several flagella all over the body surface) Escherichia coli with an occasionally distorted hydrodynamic flagella bundling (Turner et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established literature on bacterial flagellar arrangements.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "289ba585-4af8-4384-9779-ba14a98fabc0",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C8",
+      "claim": "Vibrio alginolyticus is monotrichous with one polar flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "the monotrichous (one polar flagellum) Vibrio alginolyticus, which are pushed or pulled by a flagellum and exploit a mechanical buckling instability to change direction (Xie et al., 2011; Son et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established literature on bacterial flagellar arrangements.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "a643a6d2-87e9-4f50-a9c8-e0d27e6a044c",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C9",
+      "claim": "Vibrio alginolyticus exploits a mechanical buckling instability to change direction.",
+      "claim_type": "EXPLICIT",
+      "source": "the monotrichous (one polar flagellum) Vibrio alginolyticus, which are pushed or pulled by a flagellum and exploit a mechanical buckling instability to change direction (Xie et al., 2011; Son et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research on V. alginolyticus motility mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "fb49bb34-68fc-4418-8c35-07ba3f84420b",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C10",
+      "claim": "Swimming speeds of previously studied cells are in the range of several 10 \u00b5m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The swimming speeds of so far studied cells are in the range of several 10 \u00b5m s\u22121 and their reorientation events occur on the time scale of 50\u2013100 ms (Son et al., 2013; Berg and Brown, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies on bacterial swimming speeds.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "80875733-3ebd-4e2f-96ec-3626546c7d82",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C11",
+      "claim": "Reorientation events in previously studied bacteria occur on the time scale of 50\u2013100 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The swimming speeds of so far studied cells are in the range of several 10 \u00b5m s\u22121 and their reorientation events occur on the time scale of 50\u2013100 ms (Son et al., 2013; Berg and Brown, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies on bacterial reorientation dynamics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "b00d04c8-c43f-4ca1-9e0d-6b17c8a56ff9",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C12",
+      "claim": "Magnetococcus marinus (MC-1) is a magnetotactic, spherical bacterium that is capable of swimming extremely fast.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetococcus marinus (MC-1) is a magnetotactic, spherical bacterium that is capable of swimming extremely fast (Zhang et al., 2014; Fenchel and Thar, 2004; Bazylinski et al., 2013; Garcia-Pichel, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature on MC-1 characteristics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "bcbbf070-44d4-45a7-8523-484331fdb982",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C13",
+      "claim": "MC-1 and the closely related strain MO-1 are equipped with two bundles of flagella on one hemisphere (bilophotrichous cells).",
+      "claim_type": "EXPLICIT",
+      "source": "MC-1 as well as the closely related strain MO-1 (Ruan et al., 2012) are equipped with two bundles of flagella on one hemisphere (bilophotrichous cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature and confirmed by TEM imaging in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "c193e339-2ba8-4b3e-baf6-e52ed3c66573",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C14",
+      "claim": "MC-1 features a magnetosome chain, which imparts the cell with a magnetic moment.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterium also features a magnetosome chain, which imparts the cell with a magnetic moment ('magnetotactic' cell).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of magnetotactic bacteria and confirmed by experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "7cea144e-fdcf-46fb-ab5d-ba3aa1abd2ec",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C15",
+      "claim": "MC-1 was previously assumed to swim with the cell body in front of both flagella bundles, which synchronously push the cell forward.",
+      "claim_type": "EXPLICIT",
+      "source": "They are assumed to swim with the cell body in front of both flagella bundles, which synchronously push the cell forward (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature as a prior assumption that this study challenges.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "3eff94a0-8f92-41b1-b630-e4ef0a28bec5",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C16",
+      "claim": "The previous model of MC-1 swimming predicts helical motion in the presence of a strong magnetic field.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption leads to helical motion in the presence of a strong magnetic field, which exerts a torque on the cell's magnetic moment, as seen in hydrodynamic simulations (Yang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous hydrodynamic simulations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "3c4c997e-f310-4fe3-a588-6538d3faf881",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C17",
+      "claim": "The previous model of MC-1 swimming predicts rather straight trajectories in the absence of a magnetic field.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of a magnetic field, this model predicts rather straight trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the previous model's assumptions about synchronized pushing flagella.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "b2646daa-92bc-4700-8315-450bf3ef6e68",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C18",
+      "claim": "The authors' observations disagree with the previous model of MC-1 swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations disagree with the above-mentioned model, indicating that an understanding of the physics of their swimming is still missing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations of double helical paths in the absence of magnetic fields, contradicting predictions of straight trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "2a13527d-2745-4135-8f7b-58f280749615",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C19",
+      "claim": "MC-1 cells reach speeds of over 500 \u00b5m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we confirm that MC-1 cells reach speeds of over 500 \u00b5m s\u22121 (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by experimental tracking data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "bb9042b6-489e-43ab-83a4-7cf699597124",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C22",
+      "claim": "MC-1 cells have an extremely fast reorientation ability (less than 5 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed that this rapid movement is complemented by an extremely fast reorientation ability (less than 5 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from high-speed tracking data showing reorientation events lasting 2.5-5 ms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "e4c1d0b8-dcbc-4dec-835a-e497b74821d5",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C23",
+      "claim": "Only a cooperative movement where one flagella bundle pushes while the other pulls the cell explains MC-1's motility characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "We connect the flagella bundle architecture and the swimming mechanism by hydrodynamic simulations and show that only a striking cooperative movement where one flagella bundle pushes while the other pulls the cell explains these motility characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through systematic testing of different flagellar rotation scenarios in Stokesian dynamics simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "2a0a6c3c-603d-4128-9c0f-95c5d4948656",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C24",
+      "claim": "MC-1 cells traveled on helical paths with a pitch of 5.3 \u00b5m \u00b1 1.3 \u00b5m in the absence of magnetic torques.",
+      "claim_type": "EXPLICIT",
+      "source": "Our first set of observations revealed that the cells traveled on helical paths (with a pitch of 5.3 \u00b5m \u00b1 1.3 \u00b5m, a diameter of 1.7 \u00b5m \u00b1 0.2 \u00b5m, and a period of 46 ms \u00b1 32 ms, n = 65, errors are standard deviations) in the absence of magnetic torques",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from 3D tracking data with automated track analysis algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "5341aa00-f94e-4c31-a101-17ba8c58c055",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C25",
+      "claim": "MC-1 cells traveled on helical paths with a diameter of 1.7 \u00b5m \u00b1 0.2 \u00b5m in the absence of magnetic torques.",
+      "claim_type": "EXPLICIT",
+      "source": "Our first set of observations revealed that the cells traveled on helical paths (with a pitch of 5.3 \u00b5m \u00b1 1.3 \u00b5m, a diameter of 1.7 \u00b5m \u00b1 0.2 \u00b5m, and a period of 46 ms \u00b1 32 ms, n = 65, errors are standard deviations) in the absence of magnetic torques",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from 3D tracking data with automated track analysis algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "91fee7d1-c230-4c22-8def-7ed33b21ee48",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C26",
+      "claim": "MC-1 cells traveled on helical paths with a period of 46 ms \u00b1 32 ms in the absence of magnetic torques.",
+      "claim_type": "EXPLICIT",
+      "source": "Our first set of observations revealed that the cells traveled on helical paths (with a pitch of 5.3 \u00b5m \u00b1 1.3 \u00b5m, a diameter of 1.7 \u00b5m \u00b1 0.2 \u00b5m, and a period of 46 ms \u00b1 32 ms, n = 65, errors are standard deviations) in the absence of magnetic torques",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from 3D tracking data with automated track analysis algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "c41fa06c-edcb-49ff-bc9a-57335e4c63a8",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C27",
+      "claim": "Abrupt changes of the direction of the helical axis occur within 2.5 ms to 5 ms in MC-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, abrupt changes of the direction of the helical axis were observed (e.g. around 90\u00b0 in Figure 1\u2014figure supplement 3). These directional changes occur within 2.5 ms to 5 ms, at least one order of magnitude faster than any previously analyzed reorientation events (Son et al., 2013; Berg and Brown, 1972).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from high-speed tracking data and compared to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "d02fe281-ee6f-4cf9-bd85-942035d25ad2",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C28",
+      "claim": "MC-1 directional changes are at least one order of magnitude faster than any previously analyzed reorientation events.",
+      "claim_type": "EXPLICIT",
+      "source": "These directional changes occur within 2.5 ms to 5 ms, at least one order of magnitude faster than any previously analyzed reorientation events (Son et al., 2013; Berg and Brown, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of measured reorientation times (2.5-5 ms) with literature values (50-100 ms).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "a644b7f5-aa3c-482c-b07b-58b70a4ee014",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C29",
+      "claim": "MC-1 directional changes do not occur via a continuous modulation of the ratio of radius and pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Directional changes did not occur via a continuous modulation of the ratio of radius and pitch (Crenshaw and Edelstein-Keshet, 1993), as it has been observed as a part of the chemotaxis of sperm (Jikeli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from tracking data showing constant helix parameters before and after reorientation events.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "d5fee73e-1dcb-48e2-a979-690e79f83103",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C30",
+      "claim": "The helix parameters in MC-1 were the same before and after reorientation events.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the helix parameters were the same before and after such an event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from 3D tracking data as shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "ad5949b4-b02a-4739-a2b4-d059f37b7344",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C31",
+      "claim": "3D tracking is essential to determine that helix parameters remain constant during reorientation, as projected 2D tracks exhibit apparent changes.",
+      "claim_type": "EXPLICIT",
+      "source": "3D tracking is essential to obtain this conclusion, as projected 2D tracks exhibit apparent changes in the helix parameters (see projected shadow of the track in Figure 1D and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparison of 3D tracks with their 2D projections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "3d477bc1-8bad-4a33-a7fb-f7c10dbf0c4d",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C32",
+      "claim": "The large helical track in MC-1 featured a pitch of ~4 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The large helical track featured a pitch pl of ~4 \u00b5m, a radius rl of ~1 \u00b5m and a period Tl of 72 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from high-speed dark-field microscopy tracking at 1640 fps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "8b71bd5a-4349-4c69-a14e-49c00b8deb1d",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C33",
+      "claim": "The large helical track in MC-1 featured a radius of ~1 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The large helical track featured a pitch pl of ~4 \u00b5m, a radius rl of ~1 \u00b5m and a period Tl of 72 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from high-speed dark-field microscopy tracking at 1640 fps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "c9e5008b-2fec-4bc5-ba35-dd45fa6d52ff",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C34",
+      "claim": "The large helical track in MC-1 featured a period of 72 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The large helical track featured a pitch pl of ~4 \u00b5m, a radius rl of ~1 \u00b5m and a period Tl of 72 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from high-speed dark-field microscopy tracking at 1640 fps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "64bca81d-a2c7-4d8c-b94a-3f9c1ef93f8d",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C35",
+      "claim": "The small helix in MC-1 featured a pitch of ~0.66 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The small helix featured a pitch of ~0.66 \u00b5m, a radius rs of ~0.125 \u00b5m and a period Ts close to 14.4 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from high-speed dark-field microscopy tracking at 1640 fps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "566b1e52-ca9a-40a3-a9e9-123a5925fd17",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C36",
+      "claim": "The small helix in MC-1 featured a radius of ~0.125 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The small helix featured a pitch of ~0.66 \u00b5m, a radius rs of ~0.125 \u00b5m and a period Ts close to 14.4 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from high-speed dark-field microscopy tracking at 1640 fps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "82b01d29-fcec-4634-be8b-72e75c7d0b4f",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C37",
+      "claim": "The small helix in MC-1 featured a period close to 14.4 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The small helix featured a pitch of ~0.66 \u00b5m, a radius rs of ~0.125 \u00b5m and a period Ts close to 14.4 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from high-speed dark-field microscopy tracking at 1640 fps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "c7b731dc-e5f4-417c-9b21-a17834792779",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C38",
+      "claim": "The ratio between the large and small helix period times was close to 6 in the analyzed track.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio between this specific track's period times was close to 6, which was later used to choose the flagella bundle's rigidities and torque in the numerical simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from measured period times (72 ms / 14.4 ms \u2248 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "026f276e-c93a-41eb-a8fd-cb3ede98de2e",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C39",
+      "claim": "Each MC-1 flagella bundle features seven flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Each bundle features seven flagella, which emerge from a cavity on the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in TEM images of MC-1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "751d1201-d03a-48f4-8eb1-2ec3d4b70fa1",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C40",
+      "claim": "MC-1 flagella bundles emerge from a cavity on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Each bundle features seven flagella, which emerge from a cavity on the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in TEM images of MC-1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "d26af5ce-41b4-480b-a0c1-93d72ccd01ed",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C41",
+      "claim": "The individual flagella in MC-1 are bundled by a sheath.",
+      "claim_type": "EXPLICIT",
+      "source": "The individual flagella are bundled by a sheath (scale bar is 1 \u00b5m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in TEM images of MC-1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "d9afe7a0-d9b3-4f3e-8894-c0b2a49d4f85",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C42",
+      "claim": "One flagella bundle position is often seen in front of the MC-1 cell relative to its swimming direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, one flagella bundle position is often seen in front of the cell (relative to its swimming direction), contrary to the model of two pushing flagella bundles, which remain behind the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in high-speed dark-field microscopy tracking of flagella bundle positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "62cf85e4-5584-4384-932e-f865f1096c4e",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C43",
+      "claim": "The observation of a flagella bundle in front of the cell contradicts the model of two pushing flagella bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, one flagella bundle position is often seen in front of the cell (relative to its swimming direction), contrary to the model of two pushing flagella bundles, which remain behind the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the observation that pushing flagella should remain behind the cell body.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "0b11b414-86c5-4bbb-9a65-1df698236ff8",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C44",
+      "claim": "The bright spots' movement pattern featured the same periodicity as the large helical swimming track of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the bright spots' movement pattern featured the same periodicity as the large helical swimming track of the cell (also compare Figure 3C and Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed by comparing flagella bundle position tracking with cell trajectory tracking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "011e1f06-9400-4c12-aa75-f23cf6caba77",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C45",
+      "claim": "A motor torque of 12 pN \u00b5m was required in simulations to reproduce MC-1 movement characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "A motor torque of 12 pN \u00b5m, about 3.5 times the motor torque of an E. coli cell, had to be chosen together with high isotropic bending and twisting rigidities of 7 pN \u03bcm2, about two times larger than for single flagella (Adhyapak and Stark, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined through parameter optimization in Stokesian dynamics simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "efc25c7f-f4e8-47db-b66b-5c2f5206cbb6",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C46",
+      "claim": "MC-1 motor torque is about 3.5 times the motor torque of an E. coli cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A motor torque of 12 pN \u00b5m, about 3.5 times the motor torque of an E. coli cell, had to be chosen together with high isotropic bending and twisting rigidities of 7 pN \u03bcm2, about two times larger than for single flagella (Adhyapak and Stark, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from simulation parameters and comparison with known E. coli motor torque.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "dfcc7ee0-4dde-43dd-ab23-ea91e493576b",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C47",
+      "claim": "MC-1 flagella bundles have isotropic bending and twisting rigidities of 7 pN \u03bcm2.",
+      "claim_type": "EXPLICIT",
+      "source": "A motor torque of 12 pN \u00b5m, about 3.5 times the motor torque of an E. coli cell, had to be chosen together with high isotropic bending and twisting rigidities of 7 pN \u03bcm2, about two times larger than for single flagella (Adhyapak and Stark, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined through parameter optimization in Stokesian dynamics simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "a07387aa-fc44-4985-8ba7-e4eebec6e49a",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C48",
+      "claim": "MC-1 flagella bundle rigidities are about two times larger than for single flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "A motor torque of 12 pN \u00b5m, about 3.5 times the motor torque of an E. coli cell, had to be chosen together with high isotropic bending and twisting rigidities of 7 pN \u03bcm2, about two times larger than for single flagella (Adhyapak and Stark, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with literature values for single flagella rigidities.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "b8cde806-af15-4a43-96fd-87920e9f284a",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C49",
+      "claim": "The increased rigidity is attributed to the structure of the flagella bundle, where seven protein motors power seven sheathed flagella cooperatively.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that this increase is attributed to the structure of the flagella bundle, where seven protein motors power seven sheathed flagella cooperatively (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from TEM observations of bundle structure and simulation requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "76165178-5dc8-4b3e-8b02-7be0863673d2",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C50",
+      "claim": "High torques combined with high rigidities allow for stable and high swimming velocities in MC-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Only this assumption allowed for stable and high swimming velocities in the simulations, indicating that the function of the flagella bundle is to combine high torques with high rigidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through simulation results showing that only high rigidity parameters produced stable high-speed swimming.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "1f30b946-ba3f-4828-9b70-bbe3a044d374",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C51",
+      "claim": "Flagella can pull cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that flagella can pull cells is well established (Son et al., 2013; Constantino et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established literature on bacterial flagellar mechanics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "211b4e92-0d49-40c3-9a30-577adaa222c5",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C52",
+      "claim": "Only the CCW and CW model results in the double-helical tracks experimentally observed in MC-1.",
+      "claim_type": "EXPLICIT",
+      "source": "our simulations show that only the CCW and CW model results in the double-helical tracks experimentally observed (Figure 4A and B, Figure 5\u2014figure supplement 2, Video 3 and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by systematic comparison of different flagellar rotation scenarios in simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "2662ec67-a712-49bd-a81d-1fc52fe9feff",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C53",
+      "claim": "Double helical trajectories were observed for flagellar opening angles in the whole parameter range tested (30\u00b0-120\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the dependence of the trajectories on model parameters, in particular the opening angle and motor torque (Table 2 and Table 3). Double helical trajectories were observed for flagellar opening angles in the whole parameter range, with diameter and speed in agreement with the experiments (but no fully quantitative agreement for the pitch of the large helix).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through systematic parameter variation in simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "a70aaf0c-b50d-4913-b2ba-860c86d1893e",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C54",
+      "claim": "Simulations achieved agreement with experiments for helix diameter and speed but not fully for pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Double helical trajectories were observed for flagellar opening angles in the whole parameter range, with diameter and speed in agreement with the experiments (but no fully quantitative agreement for the pitch of the large helix).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of simulation outputs with experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "f7ff304a-c925-4c29-99b9-565fd4b17127",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C55",
+      "claim": "Both flagella bundles in MC-1 rotated with 100 Hz - 150 Hz in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Both flagella bundles rotated with 100 Hz - 150 Hz and one period of the rotation coincides with one period of the large helix in the cell's trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from simulation tracking of flagella bundle positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "3287cd8a-7417-4c29-b785-29a9c8335ddf",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C56",
+      "claim": "One period of flagella bundle rotation coincides with one period of the large helix in the cell's trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Both flagella bundles rotated with 100 Hz - 150 Hz and one period of the rotation coincides with one period of the large helix in the cell's trajectory. This agrees with the flagella bundle movement in the experiments (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in both simulations and experiments through tracking of flagella bundle positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "4c460119-60e8-4ca8-aec0-7b06ca01a690",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C57",
+      "claim": "Transiently synchronous rotations of the two flagella bundles is the most likely process for rapid reorientation in MC-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested different scenarios (Figure 5\u2014figure supplements 3\u20135) and found a transiently synchronous rotations of the two flagella bundles to be the most likely process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Determined by testing multiple reorientation scenarios in simulations and comparing with experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "25d0940b-e7b1-4d25-bfb8-ed2889012813",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C58",
+      "claim": "Simulated reorientation by changing from CCW/CW to CCW/CCW for 4 ms resulted in a directional change of 80\u00b0 \u00b1 8\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this by changing the sense of rotation from CCW and CW to CCW and CCW for 4 ms in the simulations and calculating the angle between the trajectory segments before starting and after finishing this transient CCW and CCW step (outtake in Video 5). This procedure indeed resulted in rapid reorientation with a change in direction by 80\u00b0 \u00b1 8\u00b0 (Figure 4C), in agreement with the 94\u00b0 \u00b1 39\u00b0 change seen in the experiments (errors are standard deviations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from simulation results of reorientation events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "13866392-ee97-4f32-b4f5-eb6fbcc59f72",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C59",
+      "claim": "Experimental reorientation events showed a directional change of 94\u00b0 \u00b1 39\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure indeed resulted in rapid reorientation with a change in direction by 80\u00b0 \u00b1 8\u00b0 (Figure 4C), in agreement with the 94\u00b0 \u00b1 39\u00b0 change seen in the experiments (errors are standard deviations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from experimental tracking data of reorientation events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "a1c3ecce-5907-4ef8-a507-e8ff4856c319",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C60",
+      "claim": "A transient buckling deformation was observed in the simulated flagella bundles during a reorientation event.",
+      "claim_type": "EXPLICIT",
+      "source": "A transient buckling deformation was observed in the simulated flagella bundles during an event, which caused the fast reorientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in simulation visualizations during reorientation events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "f5a5df12-dbb2-4e5c-8794-6c499338ec11",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C61",
+      "claim": "Transient buckling deformation of flagella bundles causes fast reorientations in MC-1.",
+      "claim_type": "EXPLICIT",
+      "source": "A transient buckling deformation was observed in the simulated flagella bundles during an event, which caused the fast reorientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from simulation observations showing buckling coinciding with rapid reorientation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "cf16aad2-bcd9-43e6-a1dd-6381c1b16068",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C64",
+      "claim": "Magnetococci are exceptional swimmers with respect to both their high speed and their reorientation swiftness.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetococci are exceptional swimmers with respect to both their high speed and their reorientation swiftness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on measured speeds over 500 \u00b5m/s and reorientation times of 2.5-5 ms, compared to other bacteria.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "044f4946-1299-4796-b302-c860833b0331",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C65",
+      "claim": "MC-1 likely makes use of a previously unrecognized pattern of motion of their flagella bundles, with one bundle pushing the cell body and the other pulling it.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, they are likely to make use of a previously unrecognized pattern of motion of their flagella bundles, with one bundle pushing the cell body and the other pulling it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through simulations showing only CCW/CW rotation produces observed trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "e5c948ae-44e9-4538-93cf-1d6ce685ac30",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C66",
+      "claim": "The hierarchically organized flagella bundles provide a high torque and rigidity necessary to reach record speeds of over 200 body lengths per second.",
+      "claim_type": "EXPLICIT",
+      "source": "The hierarchically organized flagella bundles provide a high torque and rigidity, necessary to reach record speeds of over 200 body lengths per second",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from simulation requirements and TEM observations of bundle structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "b85fbb2b-6c99-4ed4-ad75-a330c1968f98",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C67",
+      "claim": "The unusual type of coordination of the two bundles provides a mechanism for rapid reorientation in MC-1.",
+      "claim_type": "EXPLICIT",
+      "source": "while the unusual type of coordination of the two bundles provides a mechanism for rapid reorientation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through simulations showing transient synchronous rotation produces rapid reorientation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "6171e6d1-d5c9-41e6-8302-0a38ad4690f3",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C68",
+      "claim": "Magnetotactic cocci such as MC-1 thrive and generally represent the most abundant MTB in aquatic environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetotactic cocci such as MC-1 thrive and generally represent the most abundant MTB in aquatic environments (Lef\u00e8vre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous ecological studies of magnetotactic bacteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "9baf83f3-f970-4d41-b6f3-5dc228897839",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C69",
+      "claim": "MC-1's unusual motility is an adaptation that represents a selective advantage in oxic-anoxic interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Their unusual motility is certainly an adaptation that represents a selective advantage that make them competitive in the highly coveted biotopes that are the oxic-anoxic interfaces (Brune et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ecological context and cited literature on bacterial competition at oxic-anoxic interfaces.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "17b7479d-06ae-448d-8d38-1efe6e5b3467",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C70",
+      "claim": "The swimming pattern geometry of MC-1 is reminiscent of the situation recently reported for magnetospirilla.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the observed geometry of this resulting swimming pattern is reminiscent of the situation recently reported for magnetospirilla (Murat et al., 2015), despite the difference in body plan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited literature on magnetospirilla swimming patterns.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "3ddcde3b-ea73-4f2a-ac15-ea2b50098661",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C71",
+      "claim": "Magnetospirilla have two flagella at opposite cell poles and a magnetic moment parallel to the flagellar axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnetosprilla have two flagella at opposite cell poles, and a magnetic moment parallel to the flagellar axis, while the flagella of the cocci studied here are attached on one hemisphere of the cell and almost perpendicular to the magnetic moment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature on magnetospirilla morphology and compared with MC-1 observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "0090aba3-4fd7-4291-8d69-b6731b1c6e7b",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C72",
+      "claim": "MC-1 flagella are attached on one hemisphere of the cell and almost perpendicular to the magnetic moment.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnetosprilla have two flagella at opposite cell poles, and a magnetic moment parallel to the flagellar axis, while the flagella of the cocci studied here are attached on one hemisphere of the cell and almost perpendicular to the magnetic moment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from TEM images and inferred from simulation results with magnetic fields.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "73474b6f-3f71-4a3c-af72-9f341388ead2",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C73",
+      "claim": "Both magnetospirilla and MC-1 swim aligned with a magnetic field with one flagellum ahead and one trailing.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, both swim aligned with a magnetic field with one flagellum ahead and one trailing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with magnetospirilla literature and MC-1 observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "c8feb839-dfe9-41ee-af2c-e22a314a79aa",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C74",
+      "claim": "MC-1 was cultured in artificial sea water (ASW) as a base medium.",
+      "claim_type": "EXPLICIT",
+      "source": "MC-1 was cultured similarly to the procedure reported by Bazylinski et al. (2013). Artificial sea water (ASW) was used as a base medium, containing 20 g NaCl, 6 g MgCl2, 2.4 g Na2SO4, 0.5 g KCl and 1 g CaCl2 per liter H20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "16c25dde-8adf-471f-b66f-9cbfad5d5a76",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C75",
+      "claim": "The flagella bundle length in MC-1 was 3.3 \u00b5m \u00b1 0.4 \u00b5m (n = 27).",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we added the average cell radius to the mean of the flagella length. A mean flagella bundle length of 3.3 \u00b5m \u00b1 0.4 \u00b5m (n = 27) resulted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from TEM images using ImageJ.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "3db39352-3485-4d8b-ba87-1534440b4470",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C76",
+      "claim": "The mean size of non-dried MC-1 cells was 1.3 \u00b5m \u00b1 0.1 \u00b5m (n = 103).",
+      "claim_type": "EXPLICIT",
+      "source": "The size of the non-dried cells were measured with ImageJ from images taken with a LSM780 (Zeiss; Germany) confocal microscope. The mean size was 1.3 \u00b5m \u00b1 0.1 \u00b5m (n = 103).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from confocal microscopy images using ImageJ.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "e7aae532-b506-4ad0-bc24-12e31b97a7b8",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C77",
+      "claim": "Each flagellum in the simulations was modeled as a helical filament discretized with 20 beads.",
+      "claim_type": "EXPLICIT",
+      "source": "Each flagellum was modeled as a helical filament and a rotary motor. The helical filament was discretized with 20 beads with a discretization distance of 200 nm and bead diameter of 50 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "3650d2b2-3aad-40a4-918d-d0639745f9a8",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C78",
+      "claim": "The discretization distance in the flagellum model was 200 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The helical filament was discretized with 20 beads with a discretization distance of 200 nm and bead diameter of 50 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "71fde2e7-ce1f-4372-8f9e-1705255ed025",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C79",
+      "claim": "The bead diameter in the flagellum model was 50 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The helical filament was discretized with 20 beads with a discretization distance of 200 nm and bead diameter of 50 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "e68e5f23-d538-47e6-86de-d7b5f72e7959",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C80",
+      "claim": "A stretching rigidity of 1000 pN was used in the simulations, comparable to that of single flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of the high motor torque and isotropic bending and twisting rigidities mentioned in the main text, a stretching rigidity of 1000 pN, comparable to that of single flagella, could be chosen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "d7fdc021-b64d-459c-9524-66b1479c04b6",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C81",
+      "claim": "A second-order Runge-Kutta algorithm was used to solve the equations of motion numerically.",
+      "claim_type": "EXPLICIT",
+      "source": "A second-order Runge-Kutta algorithm (Sewell, 1988; Press et al., 1992) and simulation time-steps of 10\u22127 s were used to solve the equations of motion numerically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "a7272b27-d948-4be2-94bd-8bb6dea826aa",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "claim_id": "C82",
+      "claim": "Simulation time-steps of 10\u22127 s were used.",
+      "claim_type": "EXPLICIT",
+      "source": "A second-order Runge-Kutta algorithm (Sewell, 1988; Press et al., 1992) and simulation time-steps of 10\u22127 s were used to solve the equations of motion numerically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de721c42-cee6-4c02-b39b-665a8ddbff2e",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MC-1 magnetotactic cocci swim at speeds exceeding 500 \u00b5m/s along double helical paths, making them among the fastest natural microswimmers. This is based on 3D tracking experiments showing instantaneous speeds between 100-500 \u00b5m/s and comparison with other bacteria that swim at several tens of \u00b5m/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C19 are well-supported by experimental tracking data (Figure 1D) showing speeds over 500 \u00b5m/s and double helical trajectories. The comparison with literature values for other bacteria (C10: several 10 \u00b5m/s) provides appropriate context for the 'fastest' claim. Sample size (n=65) and statistical reporting (mean \u00b1 SD) are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "1bc003df-53df-40db-b4b9-a23c0e5e5cff",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MC-1 cells reorient in 2.5-5 ms, which is at least one order of magnitude faster than any previously reported bacterial reorientation (50-100 ms). This represents an unprecedented reorientation speed for bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C22, C27, and C28 are supported by high-speed tracking data showing reorientation events lasting 2.5-5 ms. The comparison with literature values (C11: 50-100 ms from Son et al., 2013; Berg and Brown, 1972) appropriately justifies the 'order of magnitude faster' claim. The temporal resolution appears sufficient to resolve these rapid events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "bfe1c195-a93f-46de-8258-91ccf240c0c1",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MC-1 cells exhibit double helical swimming trajectories characterized by a large helix (pitch ~4-5.3 \u00b5m, radius ~1-1.7 \u00b5m, period 46-72 ms) superimposed with a small helix (pitch ~0.66 \u00b5m, radius ~0.125 \u00b5m, period ~14.4 ms). The period ratio between large and small helices is approximately 5-6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 and C32-C38 provide detailed quantitative characterization of the double helical motion from two different experimental approaches (400 fps 3D tracking and 1640 fps dark-field microscopy). The measurements are internally consistent and include appropriate statistical reporting (n=65, mean \u00b1 SD). However, C38 contains a minor arithmetic inconsistency (72/14.4 \u2248 5, not 6 as stated).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "ed7bf87b-5522-4159-bc01-100bfb9235d6",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MC-1 reorientation events occur abruptly without continuous modulation of helix parameters (radius and pitch), which remain constant before and after reorientation. 3D tracking is essential to observe this, as 2D projections show apparent parameter changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by 3D tracking data (Figure 1\u2014figure supplement 3) showing constant helix parameters before and after reorientation events. The comparison with 2D projections effectively demonstrates the necessity of 3D tracking. The distinction from sperm chemotaxis mechanisms (C29) provides appropriate biological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "e7e209e3-a03f-4829-aa54-96052d7298b3",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MC-1 cells possess two bundles of flagella on one hemisphere (bilophotrichous arrangement), with each bundle containing seven flagella that emerge from a cavity on the cell surface and are enclosed by a sheath.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C13 are supported by TEM imaging data (Figure 3A) showing the flagellar bundle structure. The observations are consistent with prior literature (Ruan et al., 2012) and provide clear morphological characterization. Sample size for flagella counting is not explicitly stated but appears adequate from the images.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "3a062669-43e5-4940-9aff-87b8f4adf164",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "One flagella bundle is frequently observed in front of the cell relative to its swimming direction, contradicting the previous model of two synchronously pushing flagella bundles. The flagella bundle movement exhibits the same periodicity as the large helical swimming track.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by high-speed dark-field microscopy observations (Figure 3, Figure 4) tracking flagella bundle positions. The observation of a bundle in front of the cell directly contradicts the pushing-only model (C15, C43). The periodicity match between bundle movement and cell trajectory (C44) provides strong evidence for mechanical coupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "09dbbe50-8460-487d-ba36-68fdadfe0655",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Only a cooperative mode where one flagella bundle pushes (CCW rotation) while the other pulls (CW rotation) can explain both the double helical trajectories and fast reorientations observed in MC-1. This represents a previously unrecognized flagellar coordination pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C23, C52, and C65 are supported by systematic Stokesian dynamics simulations testing multiple flagellar configurations (Figure 5, Figure 5\u2014figure supplement 2). Only the CCW/CW model reproduced experimental observations. Alternative scenarios (different bundle lengths, motor torques, opening angles) were appropriately ruled out. The conclusion is well-justified by the elimination of alternatives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "ea4a7a8c-877c-47bb-8109-560959b4b07c",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MC-1 flagella bundles require high motor torque (12 pN \u00b5m, ~3.5\u00d7 E. coli) and high rigidity (7 pN \u00b5m\u00b2, ~2\u00d7 single flagella) to achieve stable high-speed swimming. This increased rigidity is attributed to the cooperative action of seven sheathed flagella powered by seven motors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are supported by simulation parameter optimization showing that only high torque and rigidity values produced stable high-speed swimming matching experiments. The comparisons with E. coli motor torque (C46) and single flagella rigidity (C48) are appropriately cited. The attribution to bundle structure (C49) is a reasonable inference from TEM observations and simulation requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "9c6216cb-3d73-4f34-91df-04bedef68916",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The sheathed flagella bundle structure provides high rigidity that enables high swimming speeds exceeding 200 body lengths per second, representing a key functional advantage of this hierarchical organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C66 are supported by the simulation results (C47, C50) showing that high rigidity is necessary for stable high-speed swimming. The calculation of 200 body lengths/second is consistent with ~500 \u00b5m/s speed and ~2.6 \u00b5m cell diameter. The functional interpretation linking structure to performance is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "83fab5c0-7f27-4d79-abb6-1096bd23ac72",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Simulations with the CCW/CW model produced double helical trajectories across a wide range of flagellar opening angles (30\u00b0-120\u00b0), with good agreement for helix diameter and swimming speed but incomplete quantitative agreement for helix pitch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C54 are supported by systematic parameter exploration (Table 2, Figure 5\u2014figure supplement 2). The authors appropriately acknowledge the limitation in pitch matching while demonstrating robust agreement for diameter and speed. This honest assessment of model limitations strengthens rather than weakens the overall conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "f233cda9-5f86-4c16-a9b4-7e3ba8abad9b",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both flagella bundles rotate at 100-150 Hz in simulations, with one rotation period coinciding with one period of the large helix in the cell trajectory. This agrees with experimental observations of flagella bundle movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C56 are supported by simulation tracking of flagella bundle positions and comparison with experimental data (Figure 4). The frequency match between bundle rotation and large helix period provides strong validation of the simulation model. The agreement between simulation and experiment strengthens confidence in the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "ed1ea8c3-7c6d-4593-8d20-f5e26a124bd1",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Rapid reorientation in MC-1 occurs through transient synchronous rotation of both flagella bundles (switching from CCW/CW to CCW/CCW for ~4 ms), producing directional changes of 80\u00b0\u00b18\u00b0 in simulations versus 94\u00b0\u00b139\u00b0 in experiments. This involves transient buckling deformation of the flagella bundles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 and C67 are supported by systematic testing of reorientation scenarios (Figure 5\u2014figure supplements 3-5) and good quantitative agreement between simulated and experimental reorientation angles (C58, C59). The observation of buckling deformation (C60) provides a mechanical explanation. The larger experimental variance (39\u00b0 vs 8\u00b0) is appropriately attributed to biological variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "e115b8a7-52eb-4bc0-87c5-83d72f41d162",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors' observations of double helical paths in the absence of magnetic fields disagree with the previous model predicting straight trajectories, indicating that understanding of MC-1 swimming physics was incomplete.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 is supported by the experimental observation of helical trajectories without magnetic fields (C24-C26), which contradicts the prediction of straight trajectories from the previous model (C17). This discrepancy appropriately motivates the new mechanistic investigation. The comparison with prior work (C15-C17) is accurately represented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "30853693-2397-431d-9e3c-bed258963630",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MC-1 flagella bundles have a mean length of 3.3\u00b10.4 \u00b5m (n=27) and cells have a mean diameter of 1.3\u00b10.1 \u00b5m (n=103), as measured by TEM and confocal microscopy respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C76 provide morphological measurements with appropriate sample sizes and statistical reporting. The methods are clearly described (TEM for flagella, confocal for cells). The flagella length measurement accounts for the cell radius, which is methodologically sound. These measurements provide essential parameters for the simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "978be9f9-ce59-47e1-8700-783ad90b958a",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Stokesian dynamics simulations modeled each flagellum as a helical filament discretized with 20 beads (200 nm spacing, 50 nm diameter), using a stretching rigidity of 1000 pN, second-order Runge-Kutta integration, and 10\u207b\u2077 s time steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C82 provide detailed simulation methodology with appropriate technical specifications. The discretization parameters, numerical methods, and time steps are clearly stated. The stretching rigidity (C80) being comparable to single flagella while bending/twisting rigidities are higher (C47) is physically reasonable for a sheathed bundle. The methods are sufficiently detailed for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "7632bb71-5451-49c4-99fb-cc3b75369a81",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "MC-1's unusual motility represents an adaptation providing selective advantage in oxic-anoxic interfaces, making them competitive in these highly coveted biotopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is speculative and not directly tested in this study. While the ecological context from Brune et al. (2000) is cited and the motility characteristics are well-established, the causal link between motility and competitive advantage is inferred rather than demonstrated. This would require comparative fitness studies or ecological experiments not performed here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "aab9ed41-bc2e-42e1-a8d6-9db8d471caaf",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Despite different body plans, MC-1 (bilophotrichous cocci with flagella perpendicular to magnetic moment) and magnetospirilla (bipolar flagella parallel to magnetic moment) both swim with one flagellum ahead and one trailing when aligned with magnetic fields, showing convergent swimming geometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 appropriately compare MC-1 with magnetospirilla based on Murat et al. (2015). The morphological differences (C71, C72) are accurately stated and the functional similarity (C73) is a reasonable inference supported by the simulation results with magnetic fields (Figure 5D). This comparative analysis provides valuable evolutionary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    },
+    {
+      "id": "9c8da600-f3a0-486f-a127-198f8ee265f9",
+      "content_id": "6f345bd5-1568-4bdd-8ece-7dfe86265fde",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about bacterial flagellar arrangements (E. coli peritrichous, V. alginolyticus monotrichous), swimming speeds (several 10 \u00b5m/s), reorientation times (50-100 ms), MC-1 characteristics, and previous models are accurately cited from established literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12, C14-C17, C51, and C68 appropriately cite established literature for background information. The citations appear accurate and provide necessary context for understanding the novelty of the current findings. These claims serve to position the work within the existing knowledge framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:49:52.108116Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "814eb02e-39f6-41a8-9457-7f6c769be2fb",
+      "result_id": "de721c42-cee6-4c02-b39b-665a8ddbff2e"
+    },
+    {
+      "claim_id": "ecfd6c4f-47e0-4ef7-969a-9af997486481",
+      "result_id": "de721c42-cee6-4c02-b39b-665a8ddbff2e"
+    },
+    {
+      "claim_id": "2a13527d-2745-4135-8f7b-58f280749615",
+      "result_id": "de721c42-cee6-4c02-b39b-665a8ddbff2e"
+    },
+    {
+      "claim_id": "8eb46839-075c-4ed8-b62f-4ced027c6160",
+      "result_id": "1bc003df-53df-40db-b4b9-a23c0e5e5cff"
+    },
+    {
+      "claim_id": "a5913b39-4d55-4103-82b2-4b58b7dcf165",
+      "result_id": "1bc003df-53df-40db-b4b9-a23c0e5e5cff"
+    },
+    {
+      "claim_id": "bb9042b6-489e-43ab-83a4-7cf699597124",
+      "result_id": "1bc003df-53df-40db-b4b9-a23c0e5e5cff"
+    },
+    {
+      "claim_id": "c41fa06c-edcb-49ff-bc9a-57335e4c63a8",
+      "result_id": "1bc003df-53df-40db-b4b9-a23c0e5e5cff"
+    },
+    {
+      "claim_id": "d02fe281-ee6f-4cf9-bd85-942035d25ad2",
+      "result_id": "1bc003df-53df-40db-b4b9-a23c0e5e5cff"
+    },
+    {
+      "claim_id": "2a0a6c3c-603d-4128-9c0f-95c5d4948656",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "5341aa00-f94e-4c31-a101-17ba8c58c055",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "91fee7d1-c230-4c22-8def-7ed33b21ee48",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "3d477bc1-8bad-4a33-a7fb-f7c10dbf0c4d",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "8b71bd5a-4349-4c69-a14e-49c00b8deb1d",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "c9e5008b-2fec-4bc5-ba35-dd45fa6d52ff",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "64bca81d-a2c7-4d8c-b94a-3f9c1ef93f8d",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "566b1e52-ca9a-40a3-a9e9-123a5925fd17",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "82b01d29-fcec-4634-be8b-72e75c7d0b4f",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "c7b731dc-e5f4-417c-9b21-a17834792779",
+      "result_id": "bfe1c195-a93f-46de-8258-91ccf240c0c1"
+    },
+    {
+      "claim_id": "a644b7f5-aa3c-482c-b07b-58b70a4ee014",
+      "result_id": "ed7bf87b-5522-4159-bc01-100bfb9235d6"
+    },
+    {
+      "claim_id": "d5fee73e-1dcb-48e2-a979-690e79f83103",
+      "result_id": "ed7bf87b-5522-4159-bc01-100bfb9235d6"
+    },
+    {
+      "claim_id": "ad5949b4-b02a-4739-a2b4-d059f37b7344",
+      "result_id": "ed7bf87b-5522-4159-bc01-100bfb9235d6"
+    },
+    {
+      "claim_id": "026f276e-c93a-41eb-a8fd-cb3ede98de2e",
+      "result_id": "e7e209e3-a03f-4829-aa54-96052d7298b3"
+    },
+    {
+      "claim_id": "751d1201-d03a-48f4-8eb1-2ec3d4b70fa1",
+      "result_id": "e7e209e3-a03f-4829-aa54-96052d7298b3"
+    },
+    {
+      "claim_id": "d26af5ce-41b4-480b-a0c1-93d72ccd01ed",
+      "result_id": "e7e209e3-a03f-4829-aa54-96052d7298b3"
+    },
+    {
+      "claim_id": "bcbbf070-44d4-45a7-8523-484331fdb982",
+      "result_id": "e7e209e3-a03f-4829-aa54-96052d7298b3"
+    },
+    {
+      "claim_id": "d9afe7a0-d9b3-4f3e-8894-c0b2a49d4f85",
+      "result_id": "3a062669-43e5-4940-9aff-87b8f4adf164"
+    },
+    {
+      "claim_id": "62cf85e4-5584-4384-932e-f865f1096c4e",
+      "result_id": "3a062669-43e5-4940-9aff-87b8f4adf164"
+    },
+    {
+      "claim_id": "0b11b414-86c5-4bbb-9a65-1df698236ff8",
+      "result_id": "3a062669-43e5-4940-9aff-87b8f4adf164"
+    },
+    {
+      "claim_id": "a1037ec8-5f4a-4e6f-9fd4-5d8ea98aba4a",
+      "result_id": "09dbbe50-8460-487d-ba36-68fdadfe0655"
+    },
+    {
+      "claim_id": "e4c1d0b8-dcbc-4dec-835a-e497b74821d5",
+      "result_id": "09dbbe50-8460-487d-ba36-68fdadfe0655"
+    },
+    {
+      "claim_id": "211b4e92-0d49-40c3-9a30-577adaa222c5",
+      "result_id": "09dbbe50-8460-487d-ba36-68fdadfe0655"
+    },
+    {
+      "claim_id": "044f4946-1299-4796-b302-c860833b0331",
+      "result_id": "09dbbe50-8460-487d-ba36-68fdadfe0655"
+    },
+    {
+      "claim_id": "011e1f06-9400-4c12-aa75-f23cf6caba77",
+      "result_id": "ea4a7a8c-877c-47bb-8109-560959b4b07c"
+    },
+    {
+      "claim_id": "efc25c7f-f4e8-47db-b66b-5c2f5206cbb6",
+      "result_id": "ea4a7a8c-877c-47bb-8109-560959b4b07c"
+    },
+    {
+      "claim_id": "dfcc7ee0-4dde-43dd-ab23-ea91e493576b",
+      "result_id": "ea4a7a8c-877c-47bb-8109-560959b4b07c"
+    },
+    {
+      "claim_id": "a07387aa-fc44-4985-8ba7-e4eebec6e49a",
+      "result_id": "ea4a7a8c-877c-47bb-8109-560959b4b07c"
+    },
+    {
+      "claim_id": "b8cde806-af15-4a43-96fd-87920e9f284a",
+      "result_id": "ea4a7a8c-877c-47bb-8109-560959b4b07c"
+    },
+    {
+      "claim_id": "76165178-5dc8-4b3e-8b02-7be0863673d2",
+      "result_id": "ea4a7a8c-877c-47bb-8109-560959b4b07c"
+    },
+    {
+      "claim_id": "5f18dbb3-c7c0-4157-8238-42d3e333e2c8",
+      "result_id": "9c6216cb-3d73-4f34-91df-04bedef68916"
+    },
+    {
+      "claim_id": "e5c948ae-44e9-4538-93cf-1d6ce685ac30",
+      "result_id": "9c6216cb-3d73-4f34-91df-04bedef68916"
+    },
+    {
+      "claim_id": "2662ec67-a712-49bd-a81d-1fc52fe9feff",
+      "result_id": "83fab5c0-7f27-4d79-abb6-1096bd23ac72"
+    },
+    {
+      "claim_id": "a70aaf0c-b50d-4913-b2ba-860c86d1893e",
+      "result_id": "83fab5c0-7f27-4d79-abb6-1096bd23ac72"
+    },
+    {
+      "claim_id": "f7ff304a-c925-4c29-99b9-565fd4b17127",
+      "result_id": "f233cda9-5f86-4c16-a9b4-7e3ba8abad9b"
+    },
+    {
+      "claim_id": "3287cd8a-7417-4c29-b785-29a9c8335ddf",
+      "result_id": "f233cda9-5f86-4c16-a9b4-7e3ba8abad9b"
+    },
+    {
+      "claim_id": "4c460119-60e8-4ca8-aec0-7b06ca01a690",
+      "result_id": "ed1ea8c3-7c6d-4593-8d20-f5e26a124bd1"
+    },
+    {
+      "claim_id": "25d0940b-e7b1-4d25-bfb8-ed2889012813",
+      "result_id": "ed1ea8c3-7c6d-4593-8d20-f5e26a124bd1"
+    },
+    {
+      "claim_id": "13866392-ee97-4f32-b4f5-eb6fbcc59f72",
+      "result_id": "ed1ea8c3-7c6d-4593-8d20-f5e26a124bd1"
+    },
+    {
+      "claim_id": "a1c3ecce-5907-4ef8-a507-e8ff4856c319",
+      "result_id": "ed1ea8c3-7c6d-4593-8d20-f5e26a124bd1"
+    },
+    {
+      "claim_id": "f5a5df12-dbb2-4e5c-8794-6c499338ec11",
+      "result_id": "ed1ea8c3-7c6d-4593-8d20-f5e26a124bd1"
+    },
+    {
+      "claim_id": "b85fbb2b-6c99-4ed4-ad75-a330c1968f98",
+      "result_id": "ed1ea8c3-7c6d-4593-8d20-f5e26a124bd1"
+    },
+    {
+      "claim_id": "b2646daa-92bc-4700-8315-450bf3ef6e68",
+      "result_id": "e115b8a7-52eb-4bc0-87c5-83d72f41d162"
+    },
+    {
+      "claim_id": "16c25dde-8adf-471f-b66f-9cbfad5d5a76",
+      "result_id": "30853693-2397-431d-9e3c-bed258963630"
+    },
+    {
+      "claim_id": "3db39352-3485-4d8b-ba87-1534440b4470",
+      "result_id": "30853693-2397-431d-9e3c-bed258963630"
+    },
+    {
+      "claim_id": "e7aae532-b506-4ad0-bc24-12e31b97a7b8",
+      "result_id": "978be9f9-ce59-47e1-8700-783ad90b958a"
+    },
+    {
+      "claim_id": "3650d2b2-3aad-40a4-918d-d0639745f9a8",
+      "result_id": "978be9f9-ce59-47e1-8700-783ad90b958a"
+    },
+    {
+      "claim_id": "71fde2e7-ce1f-4372-8f9e-1705255ed025",
+      "result_id": "978be9f9-ce59-47e1-8700-783ad90b958a"
+    },
+    {
+      "claim_id": "e68e5f23-d538-47e6-86de-d7b5f72e7959",
+      "result_id": "978be9f9-ce59-47e1-8700-783ad90b958a"
+    },
+    {
+      "claim_id": "d7fdc021-b64d-459c-9524-66b1479c04b6",
+      "result_id": "978be9f9-ce59-47e1-8700-783ad90b958a"
+    },
+    {
+      "claim_id": "a7272b27-d948-4be2-94bd-8bb6dea826aa",
+      "result_id": "978be9f9-ce59-47e1-8700-783ad90b958a"
+    },
+    {
+      "claim_id": "9baf83f3-f970-4d41-b6f3-5dc228897839",
+      "result_id": "7632bb71-5451-49c4-99fb-cc3b75369a81"
+    },
+    {
+      "claim_id": "17b7479d-06ae-448d-8d38-1efe6e5b3467",
+      "result_id": "aab9ed41-bc2e-42e1-a8d6-9db8d471caaf"
+    },
+    {
+      "claim_id": "3ddcde3b-ea73-4f2a-ac15-ea2b50098661",
+      "result_id": "aab9ed41-bc2e-42e1-a8d6-9db8d471caaf"
+    },
+    {
+      "claim_id": "0090aba3-4fd7-4291-8d69-b6731b1c6e7b",
+      "result_id": "aab9ed41-bc2e-42e1-a8d6-9db8d471caaf"
+    },
+    {
+      "claim_id": "73474b6f-3f71-4a3c-af72-9f341388ead2",
+      "result_id": "aab9ed41-bc2e-42e1-a8d6-9db8d471caaf"
+    },
+    {
+      "claim_id": "5b724fab-0749-48a9-9bbb-593bf79ba328",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "289ba585-4af8-4384-9779-ba14a98fabc0",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "a643a6d2-87e9-4f50-a9c8-e0d27e6a044c",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "fb49bb34-68fc-4418-8c35-07ba3f84420b",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "80875733-3ebd-4e2f-96ec-3626546c7d82",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "b00d04c8-c43f-4ca1-9e0d-6b17c8a56ff9",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "c193e339-2ba8-4b3e-baf6-e52ed3c66573",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "7cea144e-fdcf-46fb-ab5d-ba3aa1abd2ec",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "3eff94a0-8f92-41b1-b630-e4ef0a28bec5",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "3c4c997e-f310-4fe3-a588-6538d3faf881",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "1f30b946-ba3f-4828-9b70-bbe3a044d374",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    },
+    {
+      "claim_id": "6171e6d1-d5c9-41e6-8302-0a38ad4690f3",
+      "result_id": "9c8da600-f3a0-486f-a127-198f8ee265f9"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Trans-species small RNAs are produced by diverse pathogens and parasites (fungi, oomycetes, parasitic plants) and can target host mRNAs through extensive complementarity, as documented in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C11 establish the background knowledge about trans-species sRNA systems through multiple citations to peer-reviewed literature. These are well-established findings from prior work that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Four generalist Cuscuta species produce hundreds of haustorially-induced sRNAs (HI-sRNAs) that are 21-22 nucleotides long, with approximately half of C. campestris HI-sRNAs derived from MIRNA hairpins, including previously identified miRNA families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 are supported by herbaria data analysis (C16), DESeq2 differential expression analysis (C17), size distribution data (C18), and genome annotation (C21-C23). The methods are appropriate and the data clearly presented in Figure 1 and supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Most HI-sRNAs show limited conservation between species and isolates when using strict sequence similarity cutoffs, suggesting rapid differentiation in expression or sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by family grouping analysis shown in Figure 1C using a maximum edit distance of 1. However, the interpretation (C26) is tentative as the authors later show that relaxed clustering reveals substantial superfamily conservation, suggesting the strict cutoff may underestimate true evolutionary relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Cuscuta HI-sRNAs target host mRNAs as confirmed by secondary siRNA accumulation and degradome analysis, identifying 68 target sites across 54 A. thaliana mRNAs, with target mRNAs generally down-regulated in parasitized tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are supported by two complementary methods (secondary siRNA and NanoPARE degradome analysis) with appropriate controls (xrn4 mutants). The CRCK2 example (C31) provides clear evidence with both methods. RNA-seq data (C34) confirms functional consequences. The dual confirmation approach strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "This work expands the number of confirmed host targets from six to 54 mRNAs and demonstrates that trans-species sRNAs are used by multiple Cuscuta species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by comparison with prior work (Shahid et al., 2018) and confirmed targeting data from four different Cuscuta species. This represents a substantial expansion of knowledge about the Cuscuta trans-species sRNA system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "C. campestris homologs of targeted A. thaliana mRNAs have lower complementarity to HI-sRNAs, with only four self-targeting interactions confirmed, suggesting HI-sRNAs function primarily in trans in the host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by target prediction analysis (Figure 4) and self-targeting analysis (Figure 4\u2014figure supplement 1). The stark contrast between host targeting (68 sites) and self-targeting (4 sites) provides strong evidence for trans-specific function, though the inference in C39 is appropriately cautious ('may largely function').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "SEOR1 is the most frequently targeted mRNA across species, though most confirmed targets are species-specific. The analysis likely missed many targets due to methodological limitations and use of A. thaliana as a non-natural host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by the targeting data (Figure 2F). The acknowledgment of limitations (C44-C45) is appropriate and scientifically honest. The SEOR1 targeting is particularly notable given prior functional data (C42) showing enhanced parasite growth on seor1 mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Confirmed targets include genes involved in auxin signaling, phloem function, receptor-like kinases, defense responses, and brassinosteroid signaling, with an overall theme of targeting host immunity and vascular system function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 are supported by confirmed targeting data and appropriate citations for gene functions. The functional interpretation (C55) is reasonable given the categories of genes targeted. However, some connections (e.g., C47 linking auxin to defense via glucosinolates) are speculative and marked as inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "HI-sRNAs can be grouped into superfamilies using relaxed sequence similarity criteria, with substantial sharing between species. Approximately 158 of 332 C. campestris superfamilies are likely miRNAs, including 22 of 23 superfamilies with confirmed targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by clustering analysis (Figure 5A) and comparison with C. campestris genome annotations. The extrapolation to other species (C60-C61) is reasonable but involves inference since genome assemblies are lacking for three species. The shuffling control (Figure 5\u2014figure supplement 2) validates the clustering approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "HI-sRNA superfamilies show variation in a three-nucleotide period that corresponds to synonymous-site variation in highly conserved protein-coding target sites, with 18 significant examples of co-variation (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by sequence alignments (Figure 5B), conservation analysis (Figure 5C), and statistical correlation analysis. The three-nucleotide periodicity is visually apparent and the correlation analysis provides quantitative support. However, the sample size for correlation (n=20-24 positions) is modest, and only 18 of many possible comparisons reached significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "HI-sRNA superfamily variation occurs within single Cuscuta species, such that multiple variants are deployed during infestation, potentially ensuring successful targeting across diverse hosts by covering synonymous-site variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by within-species variation shown in Figure 5B and Supplementary file 7. The mechanistic interpretation (C70) is reasonable given the data but remains somewhat speculative ('may ensure'). The strategy is logically consistent with the generalist lifestyle of these parasites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Targeting of homologous mRNAs was confirmed in N. benthamiana, with the TIR1 example demonstrating how sRNA superfamily variation accommodates synonymous-site differences between host species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by analysis of N. benthamiana data and qRT-PCR showing target downregulation (Figure 6A). The TIR1 example (Figure 6B) provides direct evidence for the compensatory variation hypothesis across different host species. This is a key validation of the main model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Ten gene family-specific motifs in A. thaliana are potentially targeted by HI-sRNA superfamilies, including the WRKY motif in defense-related transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 are based on target predictions (Supplementary file 11) without experimental confirmation. The authors acknowledge that 'most remain predictions' and note that false negatives are common with their confirmation methods. While the sequence covariation patterns are 'striking,' these remain computational predictions requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Multiple Cuscuta species use trans-species miRNAs to target conserved protein-coding sites in host mRNAs involved in defense and vascular function. By deploying sRNA superfamilies with variation matching synonymous-site diversity, this system is robust against host resistance evolution and suitable for generalist parasites, providing a novel paradigm for trans-species sRNA evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 represent the main conclusions synthesizing all results. The core findings (C78-C82) are well-supported by the experimental data. The evolutionary interpretations (C83-C86) involve reasonable inferences from the data, though some aspects remain speculative. The 'novel paradigm' claim (C86) is justified given the unique characteristics of compensatory variation at synonymous sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Trans-species silencing benefits the parasite while being detrimental to the host, implying target sites are not under selection to maintain sRNA complementarity. The precise excision of miRNAs implies selection for targeting specific sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 establish logical framework and definitions. C12-C13 present reasonable evolutionary logic about parasitic relationships. C14-C15 correctly define miRNA characteristics based on established knowledge (Axtell and Meyers, 2018). These provide important conceptual foundation for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Multiple Cuscuta species produce trans-species sRNAs targeting conserved protein-coding regions of host mRNAs, with sRNA superfamilies showing three-nucleotide periodic variation that compensates for synonymous-site variation in targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 summarize the main findings of the paper. These are well-supported by the experimental data from four Cuscuta species (C3), conservation analysis (C4), superfamily clustering (C5), and correlation analysis (C6). This represents the core discovery of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Prior work showed C. campestris HI-sRNAs can target host mRNAs in several hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 accurately cites prior work (Shahid et al., 2018) establishing the foundation for the current study. This is appropriate attribution of previous findings.",
+    "result_type": "MINOR"
+  }
+]

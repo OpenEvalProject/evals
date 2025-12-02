@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C15"
+    ],
+    "result": "The ventral tenia tecta (vTT) is a component of the olfactory cortex located in the ventromedial aspect of the olfactory peduncle that receives both bottom-up odor signals from the olfactory bulb and top-down signals, but its physiological and behavioral functions are poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C10, and C15 establish the anatomical context and knowledge gap. These are well-supported by established neuroanatomical knowledge (C8-C9) and appropriate citations, providing clear motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C54",
+      "C55"
+    ],
+    "result": "During odor presentation in the go/no-go task, 25% of vTT cells (68/270) increased firing rates similarly for both go and no-go odor cues, with peak firing ~100ms after odor onset, and did not encode learned odor differences during odor presentation phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 and C54-C55 are supported by quantitative ROC analysis (auROC values, p<0.01) and correlation analysis (p<10^-13). The statistical methods are appropriate, sample sizes are adequate (270 cells from 6 mice), and the conclusion that vTT cells do not differentiate odor cues during presentation is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C59",
+      "C60"
+    ],
+    "result": "Individual vTT cells in the go/no-go task exhibited specific firing rate tuning to distinct behavioral epochs (7% approach, 24% odor-sampling, 23% moving, 11% waiting, 15% drinking), with cells tending to suppress firing during non-preferred epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 and C59-C60 are supported by systematic ROC analysis with appropriate statistical validation (permutation tests, p<0.01). The classification methodology using tuning peak times is clearly described, and the observation of suppressed activity during non-preferred epochs is demonstrated in Figure 2B with statistical validation against cell-shuffled controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In the eating/no-eating task, 374 vTT cells were recorded, with 19% tuned to approach, 20% to eating, and 12% to food removal epochs, demonstrating epoch-specific tuning in a different behavioral context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide quantitative results from a second behavioral paradigm with adequate sample size (374 cells from 6 mice). The classification methodology is consistent with the go/no-go task, and the results demonstrate generalizability of epoch-specific tuning across different behavioral contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C4"
+    ],
+    "result": "The duration of sustained discharge in vTT cells was strongly correlated with the duration of behavioral epochs across tasks (r=1.00, p<10^-3), indicating that neural tuning durations match behavioral epoch durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C4 report a perfect correlation (r=1.00) between neural tuning durations and behavioral epoch durations. While the correlation is extremely strong and statistically significant, the perfect correlation value raises questions about whether all sources of variability have been adequately considered. However, the result is supported by Figure 4A showing data from multiple epochs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C5",
+      "C61"
+    ],
+    "result": "The repertoire of vTT tuning peak times encompassed almost the entire temporal window of the tasks, with many cells exhibiting short-duration activity at transitions between epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C5, and C61 are supported by Figure 4B showing the distribution of tuning peak times across the task timeline. The observation of cells with short-duration activity at epoch transitions is demonstrated, though the functional interpretation (linking epochs) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C56",
+      "C62"
+    ],
+    "result": "More vTT cells showed differential firing between go and no-go trials just before odor port exit compared to during odor presentation, and SVM decoding accuracy increased from chance to near-behavioral accuracy levels before port exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C56, C62 demonstrate context-dependent activity using ROC analysis and SVM decoding. The decoding analysis includes appropriate controls (1000 trial-label-shuffled datasets) and shows that population activity can discriminate trial types only near the decision point, not during odor presentation. This supports the interpretation of context-dependent rather than odor-specific coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Approximately 86% of vTT cells were Slc17a7-positive (glutamatergic) and 8% were Gad1/2-positive (GABAergic), suggesting that principal neurons of the vTT are glutamatergic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by in situ hybridization data from 3 mice shown in Figure 6A-B. The quantification is clear and the interpretation that principal neurons are glutamatergic is reasonable given the high percentage of Slc17a7-positive cells. The sample size (n=3 mice) is adequate for this type of anatomical characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The vTT has dense reciprocal connections with the olfactory bulb, projects to the AON and APC, and receives top-down projections from the APC, PPC, and mPFC, with sparse projections to mPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 combine prior literature (C46-C47) with new retrograde tracing data (C48-C52). The connectivity pattern is supported by CTB tracing experiments with appropriate anatomical controls. The asymmetry in connectivity (strong inputs from mPFC but weak outputs to mPFC) is clearly demonstrated in Figure 6, though sample sizes for some injection sites are small (n=2-3 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C7",
+      "C63",
+      "C64"
+    ],
+    "result": "Individual vTT cells are highly tuned to specific behavioral epochs and contexts during learned tasks, with each cell having unique behavior- and context-dependent preferences demonstrated by tuning peak time and duration, indicating that vTT function changes dynamically in a context-dependent manner during goal-directed behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C6-C7, C63-C64 represent the main conclusions of the study. These are well-supported by the convergent evidence from multiple analyses: epoch-specific tuning (C24-C28, C31-C33), correlation between neural and behavioral durations (C38), context-dependent activity (C41-C42), and coverage of the task timeline (C40). The interpretation is justified by the data, though some aspects remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C82"
+    ],
+    "result": "During the eating epoch, vTT cells showed significant differences in firing between vanilla essence and powder chow but not between eugenol and vanilla essence or eugenol and powder chow, suggesting largely odor-independent firing during eating behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C82 are supported by statistical analysis (ANOVA, p<0.05) shown in Figure 3\u2014figure supplement 4. However, the interpretation that firing is 'largely independent' of odor type is somewhat overstated given that one significant difference was observed. The sample selection criteria (minimum 10 trials per condition) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "No significant differences in baseline firing rates or mean firing rates during preferred epochs were observed between the go/no-go and eating/no-eating tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by appropriate statistical tests (Wilcoxon rank-sum test, Tukey's test, p>0.05) comparing firing rates across tasks. This control analysis strengthens the interpretation that differences in activity patterns reflect behavioral context rather than general excitability differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The tuning durations of cells in the eating epoch showed a bimodal distribution with both tonic and phasic responses, suggesting that a subset of vTT cells are tuned to smaller scale behaviors or task elements, with cells at epoch transitions potentially encoding movement initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is supported by data in Figure 4\u2014figure supplement 4 showing bimodal distribution. However, claims C77-C78 are speculative interpretations without direct experimental validation. The functional significance of phasic vs. tonic responses and the specific role of transition-tuned cells require additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C65",
+      "C67",
+      "C69",
+      "C72",
+      "C75",
+      "C80",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "The firing activity of vTT cells reflects animal behavior in a task context-dependent manner, potentially representing episodic behavioral context information and providing signals about moment-to-moment behavioral changes to widespread olfactory areas, with context-dependent activity potentially driven by top-down inputs from mPFC and other higher brain areas rather than bottom-up olfactory input alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58, C65, C67, C69, C72, C75, C80-C81, C83-C84 represent speculative interpretations and hypotheses about mechanisms. While these interpretations are reasonable given the data, they lack direct experimental validation. The authors appropriately use speculative language ('may', 'speculate', 'conjecture'), but causal relationships between mPFC inputs and vTT activity, or between vTT outputs and downstream olfactory processing, remain untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Behavioral measurements across tasks showed median nose poke durations of 839ms (go) and 738ms (no-go), behavioral accuracies of 0.90-0.99 across conditions, baseline firing rates of 2.4Hz (go/no-go) and 3.2Hz (eating/no-eating), and median epoch durations of 2.57s (approach) and 5.44s (eating).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C89-C95 provide quantitative behavioral and neural measurements with appropriate sample sizes and statistical reporting (medians with interquartile ranges, means with SEM). These measurements are essential for interpreting the neural data and are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C68",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "Prior research has established that neocortical sensory neurons receive both bottom-up sensory and top-down cognitive signals, olfactory tubercle neurons encode goal-directed behaviors with enhanced odor responses during attention, context-dependent modulation occurs in olfactory bulb mitral cells, mPFC neurons encode contextual information, and reward-predicting responses occur throughout the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14, C68, C71, C73-C74 summarize prior literature with appropriate citations. These establish the conceptual framework for the study and are accurately represented based on the cited sources.",
+    "result_type": "MINOR"
+  }
+]

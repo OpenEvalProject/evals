@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Tid1 inhibits D-loop formation by Rad51 and Rad54 in an ATPase-independent and concentration-dependent manner. Both wild-type Tid1 and the ATPase-defective mutant Tid1-KR inhibit D-loop formation, with up to 4-9 fold decreases observed at the highest concentrations tested. This inhibition is independent of substrate type and DNA topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33-C40 collectively demonstrate robust in vitro evidence for ATPase-independent inhibition of D-loop formation by Tid1. The use of both wild-type and ATPase-defective mutant (Tid1-KR), multiple substrates, and different DNA topologies provides strong converging evidence. Quantitative data from gel assays (Figures 1B-E) support the concentration-dependent effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Tid1 competes directly with Rad54 for binding to the Rad51 filament. A 50% reduction in D-loop formation requires a twofold molar excess of Tid1 over Rad54. Order-of-addition experiments show that Tid1-KR inhibits D-loop formation only when added before or simultaneously with Rad54, but not after. Tid1-KR also inhibits Rad54 ATPase activity sixfold when added prior to Rad54, but has no effect when added after.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51 provide strong mechanistic evidence for competition between Tid1 and Rad54. The stoichiometric relationship (C42), order-of-addition experiments (C44-C47), and ATPase activity measurements (C48-C50) are internally consistent and support the competition model. The experimental design appropriately tests the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Tid1 expression is fourfold lower in diploid compared to haploid cells due to MAT-heterozygosity-dependent repression. The ATPase-independent inhibition of D-loops by Tid1 is specific to haploid cells under endogenous expression conditions, but overexpression of Tid1 or Tid1-KR in diploid cells recapitulates the inhibitory effect, demonstrating that the haploid-specific function depends on Tid1 abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 demonstrate differential Tid1 expression between haploid and diploid cells (C53-C55) and its functional consequences (C56-C61). The Western blot data (Figure 3A-B), DLC assays (Figure 3C-D), and overexpression experiments provide consistent evidence that Tid1's effect on D-loops is concentration-dependent and haploid-specific under physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C84"
+    ],
+    "result": "The D-loop Mapping Assay (DMA) employs bisulfite modification under non-denaturing conditions to map D-loop footprints at single-molecule resolution. The assay detects D-loops with a minimum length of ~120-200 nt and shows 84% correlation with gel-based quantification. D-loop footprints are highly strand-specific (19-97 fold enrichment on top strand), vary in length up to the full homology region, and are enriched at the 3'-end of the invading DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 and C84 describe the DMA method and its validation. The strong correlation with gel assays (C66, Figure 4F), strand specificity (C64, Figure 4E), and consistency across multiple substrates (Figure 4B-D) validate the assay. The detection limit (C63) is clearly stated. The method represents a significant technical advance for studying D-loop structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Tid1 restricts D-loop length in addition to inhibiting D-loop formation. Using the DMA with subsaturating Rad51 concentrations, increasing Tid1-KR concentration led to a 1.5-fold decrease in average D-loop length (from 410 to 270 nt) and a fourfold decrease in D-loops longer than 450 nt. Both wild-type Tid1 and Tid1-KR produce shorter D-loops, while D-loop position distribution remains unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 demonstrate that Tid1 restricts D-loop length using the validated DMA method. The experimental design appropriately uses subsaturating Rad51 to create gaps in the filament (C70-C71), and the quantitative analysis of D-loop length distributions (C72-C74, Figure 5D-G) is rigorous. The observation that both Tid1 and Tid1-KR produce similar effects (C77) argues against artifacts from the mutant protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Tid1 regulates mating-type switching in a homology-length-dependent manner. In tid1\u0394 mutants, D-loop extension kinetics are accelerated with long homology (2216 bp) but decreased with short homology (148 bp). Deletion of TID1 reduces cell viability by 20% with long homology but has no effect with short homology, demonstrating that Tid1 is required for cell survival during recombination events involving long homologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 demonstrate the physiological relevance of Tid1's effects on D-loops in the context of mating-type switching. The primer extension assays (C78-C79, Figure 6B-C) and viability measurements (C81-C82, Figure 6D) show consistent homology-length-dependent effects. The experimental design using strains with defined homology lengths is appropriate for testing the proposed function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose a 'roadblock model' where Tid1 and Rad54 compete for binding sites within Rad51 filaments at pre-synaptic or post-synaptic stages. Tid1 acts as a physical roadblock to Rad54 translocation, limiting both D-loop formation and D-loop length. This mechanism may prevent formation of long, stable D-loops and aid mating-type switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C87-C91 present a mechanistic model that integrates the experimental findings. The model is well-supported by the competition experiments (C41-C51), D-loop length restriction data (C72-C77), and physiological relevance (C78-C83). The proposal that Rad51 gaps provide binding sites for both proteins (C89) is supported by literature citations and consistent with the subsaturating Rad51 experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Rdh54/Tid1 is a Rad54 paralog in S. cerevisiae, a member of the SWI2/SNF2 family, and is conserved in eukaryotes. While well-known for its role with Dmc1 during meiotic recombination, Tid1 is also expressed in somatic cells. Biochemically, Rad54 and Tid1 are very similar, with Rad51 primarily working with Rad54 and Dmc1 with Tid1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C21-C25 provide established background information about Tid1/Rdh54, supported by multiple literature citations. These claims accurately represent the current state of knowledge in the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Homologous recombination is a universal DNA repair pathway where Rad51 filaments execute homology search and strand invasion, Rad54 creates stable D-loops by displacing Rad51, and various helicases (Sgs1-Top3-Rmi1, Mph1, Srs2) revert D-loops to enforce repair fidelity. Defects in HR lead to genomic instability and tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 provide well-established background on homologous recombination, supported by appropriate citations. These claims accurately represent the current understanding of HR mechanisms and regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In somatic cells, Tid1 is phosphorylated by Mec1 in response to DNA damage, recruited to DSBs in a Rad51-dependent manner, and interacts with Rad51. Deletion of RDH54/TID1 only subtly affects DSB repair unless sister chromatid repair is eliminated, but negatively affects D-loops in vivo. Previous work showed that rdh54-KR/tid1-KR had no change in D-loop signal, suggesting an ATPase-independent role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 summarize prior work on Tid1 in somatic cells, appropriately citing Piazza et al., 2019 and other relevant studies. These claims provide important context for the current study and accurately represent the state of knowledge that motivated this investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Tid1 stimulates Rad51-mediated DNA strand invasion, but significantly less efficiently than Rad54.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by experimental data in Figure 1\u2014figure supplement 1E and is consistent with prior observations (Nimonkar et al., 2012). This finding helps explain why Tid1 can inhibit Rad54-mediated D-loop formation despite having some strand invasion activity itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose that in the absence of Tid1, long stable D-loops may persist leading to toxicity. Long D-loops are prone to double Holliday junction formation and crossovers, which could be more deleterious in haploid cells. Tid1's ability to restrict D-loop length may explain the 70-fold decrease in inter-chromosomal template switches in tid1\u0394 mutants. However, ICTC and other functions require Tid1's ATPase activity, suggesting additional downstream roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C102 present speculative interpretations and connections to other phenotypes. While the reasoning is logical and supported by citations, many of these claims involve speculation about mechanisms (C92, C96) or attempt to explain complex phenotypes (C95, C97-C98) that may involve multiple factors. The distinction between ATPase-independent and ATPase-dependent functions (C98-C101) is noted but not fully resolved.",
+    "result_type": "MINOR"
+  }
+]

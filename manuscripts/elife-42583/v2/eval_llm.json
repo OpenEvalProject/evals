@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Mice performed a visual contrast-detection task in virtual reality where they navigated a corridor and indicated the side containing a grating by turning left or right. Performance depended on contrast, and mice began turning toward their chosen side before reaching the end of the corridor, with heading angle predicting final choice with increasing accuracy as mice progressed through the corridor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 describe the behavioral task and demonstrate that mice successfully performed contrast-dependent navigation with trajectories that diverged based on choice. The data in Figures 1c-h provide clear quantitative support for these behavioral observations, including psychometric curves and trajectory analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Two-photon calcium imaging was performed in PPC of seven mice during task performance, with PPC identified using retinotopic mapping. The study used multiple mouse strains and verified absence of epileptiform activity, with no significant differences found between strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 and C108-C129 describe the experimental methods in detail. The imaging approach is standard and well-documented, PPC localization is validated against prior studies (C40), and appropriate controls for strain differences were performed (C110-C113). The methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PPC neurons could be divided into two groups forming choice-dependent sequences of activation, with one group responding primarily during leftward choices and another during rightward choices. Most cells fired unambiguously for only one choice direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 describe the basic observation of choice-selective sequences shown in Figure 1k-n. This replicates prior findings (Harvey et al., 2012) and is clearly demonstrated in the data. The observation itself is well-supported, though the interpretation of what drives these sequences is addressed in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PPC neurons were selective for specific combinations of spatial position and heading angle. Position-heading fields accurately predicted individual neuron activity across the population, with median correlation of 27% (\u00b116% m.a.d., n=7,646 cells) in cross-validated analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C48-C55 present the core finding that position-heading fields predict PPC activity. Figure 2 provides compelling single-cell examples, and the population statistics (C53-C54) are based on rigorous cross-validation. The correlation values are appropriately interpreted as high given the cross-validation (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Position-heading selectivity predicted both individual neuron activity and the arrangement of choice-selective sequences. These sequences emerged from the combination of different trajectories for left vs. right choices and neurons' preferences for different position-heading combinations, with preferred heading sufficient to explain choice selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C56-C61 demonstrate that position-heading fields explain the sequential organization of PPC activity. Figure 3 shows that the model reproduces choice-selective sequences and that heading preference determines choice selectivity. The mechanistic explanation (C58, C61) is well-supported by the data showing nearly invariant relationships between heading preference and choice selectivity (C59-C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C94",
+      "C95",
+      "C96",
+      "C107"
+    ],
+    "result": "Choice-selective sequences reflect PPC encoding of navigation trajectory (position and heading) rather than abstract decision signals. When mice use vision to guide navigation, PPC encodes navigational attributes such as position and heading, and this fully accounts for apparent decision-dependent activity sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C84-C88, and C94-C96 present the main interpretation that PPC encodes navigation variables rather than abstract decisions. This is supported by the superior performance of position-heading models over decision models (addressed in other results), the mechanistic explanation of sequences, and successful decoding of trajectories. The conclusion is well-justified by the collective evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Models using decision as a predictor instead of heading yielded worse fits (5.6% lower correlation), while adding decision to position-heading models only slightly improved fits (0.4% increase). Heading angle was a much better predictor than decision, suggesting PPC activity is explained by position and heading rather than decision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C62-C70 present quantitative model comparisons shown in Figure 4. The analysis appropriately uses cross-validation and excludes positions where heading and decision are highly correlated. The statistical comparisons are clear (C64, C67, C68) and support the conclusion that heading is superior to decision as a predictor. The results are consistent across individual sessions (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The extended model including position, heading, and decision performed only slightly better than position-heading alone (0.4% improvement). The results do not completely rule out decision signals, as the task cannot fully distinguish navigation and decision encoding due to potential covariation between trajectory and evolving decision variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C97-C102 acknowledge limitations in distinguishing navigation from decision encoding. The small improvement with the extended model (C67) is honestly reported, and the authors appropriately discuss the fundamental limitation that trajectories may reflect evolving decisions (C99-C102). This represents appropriate scientific caution about the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Alternative models based on visual or motor variables were inferior to position-heading models. In playback conditions without active navigation, most PPC neurons lost their position-heading preferences, while V1 responses were more consistent. Motor-based models also performed markedly worse than position-heading models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C71-C80 address potential confounds from visual and motor variables. The playback experiment (C75-C76, C79) provides strong evidence against pure visual encoding, shown in Figure 4\u2014figure supplement 2. The motor model comparison (C80) is shown in Figure 4\u2014figure supplement 3. These controls strengthen the conclusion that PPC encodes position-heading rather than sensory or motor variables alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "A Bayesian decoder successfully predicted the animal's position in position-heading space at individual time points and replicated trajectories. The population decoder was as accurate as the animal's actual heading in predicting final choice, showing similar dependence on position and stimulus contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 demonstrate successful decoding of position-heading from PPC activity, shown in Figure 5. The decoder's performance matching behavioral heading in predicting choice (C83) provides strong validation that PPC population activity encodes navigation trajectory. The methods are described in detail in the Materials and Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The discrepancy with Harvey et al. (2012) may be due to task differences, or the same spatial factors may have contributed to their results. In Harvey et al., trajectories showed heading differences correlated with decision, but trials with such differences were progressively excluded until the difference was no longer significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C93 speculate about differences with prior work. While C92-C93 make factual claims about Harvey et al.'s methods, the overall interpretation (C89-C91) is speculative. The authors appropriately frame these as possibilities rather than definitive conclusions. However, without reanalysis of Harvey et al.'s data, these remain uncertain hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PPC activity could be influenced by unmeasured postural attributes that may correlate with apparent decision signals. Mounting evidence suggests postural and motor variables powerfully determine cortical activity. The precise motor, postural, or cognitive correlates of heading and decision need further examination with tasks designed to distinguish these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 acknowledge important limitations and suggest future directions. The concern about unmeasured postural variables (C103, C105) is valid and supported by recent literature (C104). The call for future work (C106) is appropriate given these limitations. This represents honest assessment of what the current study can and cannot conclude.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior literature has implicated PPC in navigation, movement control, and visually-guided decisions across species. PPC neurons can be influenced by various motor, attentional, and postural factors, encode decision signals (especially in rodents where they form choice-selective sequences), and encode spatial navigation attributes. Mixed selectivity has been observed in PPC of both monkeys and rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C12-C25 summarize prior literature with appropriate citations. These provide context for the current study and are standard background claims. The citations appear appropriate for the claims made, though detailed verification of each cited work is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The virtual reality environment and behavioral protocols are described in detail, including corridor dimensions, visual stimulus parameters, trial structure, feedback, and training requirements. Mice performed 200-400 trials per session with typical trial duration of 6.0\u00b12.0 seconds, requiring 7-36 training sessions to reach criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C125 provide detailed methodological information about the behavioral task. These are straightforward descriptions of experimental parameters that are necessary for reproducibility. The level of detail is appropriate for the Methods section.",
+    "result_type": "MINOR"
+  }
+]

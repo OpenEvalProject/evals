@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Short-term plasticity (STP) is precisely preserved during the expression of presynaptic homeostatic plasticity (PHP). PHP doubles presynaptic release without altering paired-pulse ratios at both low (0.75 mM) and high (3.0 mM) extracellular calcium concentrations, maintaining release dynamics despite a ~2-fold increase in release magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C36 collectively demonstrate that STP is preserved during PHP through electrophysiological recordings at multiple calcium concentrations (Figure 1A-C). Statistical analyses show no significant changes in paired-pulse ratios (p=0.65 at 0.75 mM Ca2+, p=0.45 at 3.0 mM Ca2+), while EPSC amplitudes are maintained at control levels following PhTx application. The data are internally consistent and supported by appropriate controls and statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The ratio of primed to super-primed synaptic vesicles remains constant during PHP expression. PdBu application potentiates release by ~140% in both control and PhTx-treated synapses, indicating that the proportion of PdBu-sensitive (primed but not super-primed) vesicles is maintained during PHP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C60 provide converging evidence from PdBu experiments (Figure 1E) showing that the percentage increase in release caused by PdBu is identical (~140%) before and after PHP induction. The calcium-dependence of PdBu effects (absent at 3.0 mM Ca2+) validates the experimental approach. The conclusion that the primed/super-primed ratio is constant is well-supported by the quantitative data showing equivalent proportional PdBu responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Heterozygous loss-of-function mutations in Rop (RopG27/+ and DfRop/+) significantly suppress PHP without affecting baseline neurotransmission at 0.3 mM extracellular calcium. PHP is reduced but not eliminated in these mutants, with EPSP amplitudes significantly reduced in the presence of PhTx compared to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by data from two independent heterozygous mutants (Figure 2B-I) showing consistent PHP suppression (p<0.001) while baseline release remains normal. The use of two independent alleles strengthens the conclusion. Statistical analyses are appropriate, and the finding that baseline transmission is unaffected argues against a ceiling effect, supporting a specific role for Rop in PHP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Presynaptic knockdown of Rop using UAS-Rop-RNAi driven by c155-Gal4 strongly suppresses PHP and decreases baseline transmission by ~30%. The severity of mEPSP frequency reduction correlates with the extent of Rop depletion across different genetic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 demonstrate presynaptic requirement for Rop using cell-type-specific knockdown (Figure 3A-F). The progressive severity of phenotypes (wild type > RopG27/+ > Rop-RNAi) in mEPSP frequency provides internal consistency. The baseline transmission defect in knockdown animals is more severe than in heterozygous mutants, consistent with greater protein depletion, supporting the interpretation that Rop levels are limiting for PHP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PHP suppression in RopG27/+ mutants is constant (~30%) across a 10-fold range of extracellular calcium concentrations (0.3-3.0 mM), while baseline release remains highly sensitive to calcium changes. This demonstrates that Rop function in PHP is independent of release magnitude and calcium concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 provide strong evidence against a ceiling effect through systematic calcium titration experiments (Figure 4). The constant proportional suppression of PHP across different calcium concentrations, despite ~10-fold changes in baseline release, argues convincingly for a specific role of Rop in PHP mechanisms rather than a general limitation on release capacity. The cooperative calcium-release relationship is maintained in mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "RopG27/+ mutants show normal homeostatic modulation of the readily releasable pool (RRP) but impaired potentiation of the initial EPSC amplitude during PHP. The decreased Ptrain (initial EPSC/cumulative EPSC) in mutants suggests defective expansion of the super-primed vesicle pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 use cumulative EPSC analysis (Figure 5) to dissect RRP from initial release probability. The finding that RRP expansion is normal while initial EPSC potentiation is impaired provides mechanistic insight into Rop function. The Ptrain analysis is appropriate for distinguishing these components. However, C103-C104 are speculative explanations that, while plausible, require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "RopG27/+ and rim103/+ show a strong synergistic genetic interaction. While single heterozygous mutants have normal baseline release and partially suppressed PHP, the double heterozygous condition (RopG27/rim103) shows ~50% reduction in baseline quantal content and complete block of PHP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C119 demonstrate a robust genetic interaction using appropriate double heterozygous analysis (Figure 6B-E). The synergistic effect on both baseline release and PHP, with 87% of PhTx data points falling outside wild-type 95% confidence intervals, provides strong evidence for functional convergence. The authors appropriately note that the data cannot distinguish between linear and parallel pathways (C117-C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The RopG27/rbpSTOP1 double heterozygous mutant shows normal PHP, demonstrating specificity of the Rop-RIM genetic interaction. However, PHP is highly variable in this genotype, limiting further conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 show that not all genetic combinations with Rop produce interactions (Figure 6F), supporting specificity. However, the high variability noted in C126 undermines confidence in the conclusion that PHP is truly 'normal' versus simply not significantly different due to large variance. Additional experiments or larger sample sizes would be needed to definitively establish whether this represents a true lack of interaction or insufficient statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C132",
+      "C133"
+    ],
+    "result": "Genetic interactions between rim and other priming proteins (dunc-13, rbp) show distinct patterns. The rim/dunc-13 double heterozygous mutant has normal PHP, while rim/rbp shows decreased baseline but normal PHP. Surprisingly, rim/dunc-13 shows enhanced PHP compared to rim alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 systematically test genetic interactions to establish specificity (Figure 6G-H, Supplementary file 1). The differential outcomes with different genetic combinations support the conclusion that the Rop-RIM interaction is specific rather than a general property of priming proteins. The unexpected enhancement in rim/dunc-13 (C132) is interesting but appropriately presented as surprising rather than explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The RopG27/rim103 double heterozygous mutant shows dramatically enhanced PdBu sensitivity (~350% potentiation vs ~165% in controls), indicating a severely reduced super-primed vesicle pool. This correlates with the complete block of PHP in these mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C146 use PdBu as a functional probe of vesicle priming states (Figure 7). The ~2-fold increase in PdBu effect size in double heterozygous mutants compared to controls provides strong evidence for reduced super-priming. The correlation with PHP blockade supports the model that maintaining primed/super-primed ratios is essential for PHP. Statistical analyses (p<0.01 ANOVA) are appropriate. The authors correctly note limitations in pathway ordering (C145).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Loss of one copy of syntaxin1A (syx1A\u0394229/+) completely rescues PHP in the RopG27/+ mutant background. The double heterozygous condition (RopG27/syx1A\u0394229) shows normal baseline transmission, full PHP expression, and restored mEPSP frequency, suggesting that Syntaxin normally restricts Rop activity required for PHP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C167 present a surprising genetic rescue (Figure 8) that is well-documented across multiple parameters (baseline transmission, PHP, mEPSP frequency). The rescue is complete and robust, arguing against technical artifacts. The interpretation that Syntaxin restricts Rop activity (C166-C167) is the most parsimonious explanation for a rescue by reducing gene dosage. The excess of Syntaxin over Unc-18 in other systems (C155) provides supporting context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Recombinant wild-type Rop binds strongly to Syntaxin1A (KD = 0.4 \u03bcM), while the RopG11 point mutation (D45N) abolishes this binding in vitro (KD = 36.1 \u03bcM). The mutation resides within a predicted Syntaxin-binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C170 provide biochemical validation of the Rop-Syntaxin interaction using in vitro binding assays (Figure 9B-C). The ~90-fold difference in KD values between wild-type and mutant is substantial and well-quantified. The binding curves show good fits (R\u00b2=0.93 for WT). The location of the mutation in a predicted binding interface (C169) is consistent with the biochemical effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The RopG11 allele, which disrupts Rop-Syntaxin binding in vitro, fully rescues PHP when placed in trans to RopG27 or DfRop, despite these combinations lacking wild-type Rop protein. This genetic rescue is consistent with the syx1A rescue and supports a model where Syntaxin regulates Rop availability for PHP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C183 present a second, independent genetic rescue that converges with the syntaxin results (Figure 9D-F). The viability and robust transmission in RopG11/RopG27 and RopG11/DfRop combinations is surprising but well-documented. The authors appropriately acknowledge that RopG11 does not completely block all Rop-Syntaxin interactions in vivo (C175), likely due to interactions with open Syntaxin conformations (C176-C178). The convergence of two independent genetic rescues strongly supports the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Rop (Unc-18) is an evolutionarily conserved, essential, and limiting component of PHP signaling in both Drosophila and mice. Multiple lines of evidence including heterozygous mutant analysis, calcium titration, and genetic interactions demonstrate that Rop has a specific, required function in PHP distinct from its role in baseline transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C192 synthesize the major findings into a coherent conclusion about Rop function. The evolutionary conservation (C185-C187) is supported by prior work in mice (Sons et al., 2003). The evidence that Rop is limiting (C188) comes from multiple experiments showing dose-dependent effects. The distinction from prior work (C189) is valid - the current study rules out ceiling effects through calcium titration. The genetic interactions (C192) place Rop in a known PHP framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "Unc-18 is the first integral component of the synaptic vesicle fusion apparatus linked to PHP expression, providing a molecular endpoint for homeostatic signaling. While the data cannot formally establish that Rop functions downstream of RIM, Rop is positioned to directly modulate the fusion apparatus and likely mediates signaling localized by the RIM-dependent cytomatrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C199 place the findings in the context of PHP signaling pathways. The novelty claim (C193) is justified - prior PHP components were signaling molecules or scaffolds, not fusion machinery. The authors appropriately acknowledge limitations in ordering pathway components (C198) while making reasonable inferences about Rop's position (C199) based on its direct role in fusion. The connection to trans-synaptic signals (C195-C196) is well-supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "A model is proposed where Syntaxin restricts Unc-18 availability by sequestering it in a peri-active zone reservoir through binding to closed Syntaxin conformations. PHP involves mobilizing Unc-18 to the active zone, where it promotes vesicle priming. This model is consistent with prior single-molecule imaging and protein stoichiometry data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C200-C209 present a mechanistic model to explain the genetic rescue data. While the model is plausible and consistent with prior work on Unc-18 localization (C201) and Syntaxin excess (C202), it remains largely speculative (C203-C206 are explicitly speculative). The model makes testable predictions but lacks direct experimental validation in the current study. The proposed mobilization mechanism (C209) is reasonable but unproven. This represents a working hypothesis rather than an established result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217"
+    ],
+    "result": "PHP expression requires coordinate homeostatic control of three processes: calcium influx (via ENaC channels), RRP expansion (via RIM/RBP/actin), and Unc-18-dependent vesicle priming. Only simultaneous potentiation of all three processes enables increased release while preserving release dynamics, highlighting the molecular complexity of PHP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C210-C217 synthesize current and prior findings into an integrated model of PHP. The requirement for multiple coordinated processes is well-supported by the current study (Unc-18/priming) and prior work (calcium influx C215, RRP modulation C216). The logic that all three must be coordinately regulated to preserve dynamics (C212) is sound. The call for future work on pathway interdependence (C217) is appropriate. This represents a well-supported conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224"
+    ],
+    "result": "Unc-18 maintains a constant ratio of primed to super-primed vesicles during PHP. Evidence includes: (1) PdBu experiments showing constant primed/super-primed ratios, (2) Rop loss primarily affecting the first EPSC of stimulus trains, and (3) dramatic loss of super-primed vesicles in RopG27/rim103 mutants correlating with PHP blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C218-C224 integrate multiple experimental approaches (PdBu pharmacology, train analysis, genetic interactions) to support a unified conclusion about Unc-18 function. The convergence of evidence from different methodologies strengthens the conclusion. The PdBu data (C220-C222) directly assess priming states, the Ptrain analysis (C223) shows selective effects on initial release, and the genetic interaction (C224) provides functional validation. The evidence is internally consistent and mutually reinforcing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C225",
+      "C226",
+      "C227",
+      "C228"
+    ],
+    "result": "Preservation of release dynamics during PHP appears to be a fundamental property that stabilizes both synaptic gain and activity-dependent information transfer. This may be essential for maintaining muscle excitation quality at the NMJ and, if extended to central synapses, could stabilize information flow through neural circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C225-C228 discuss the functional significance of STP preservation. C225-C226 are well-supported conclusions from the experimental data. C227 is a reasonable inference about NMJ function. C228 is more speculative regarding central nervous system implications but is appropriately qualified ('if extended') and supported by citation showing PHP occurs centrally. The broader significance is plausible but represents extrapolation beyond the direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C229",
+      "C230",
+      "C231"
+    ],
+    "result": "The study identifies regulated Unc-18 action at the presynaptic release site as a novel mechanism participating in PHP and STP preservation. This represents an important advance toward a systems-level understanding of presynaptic neurotransmitter release regulation during PHP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C229-C231 provide appropriate summary statements about the study's contributions. The complexity of coordinate regulation (C229) is well-established by the data. The novelty of the Unc-18 mechanism (C230) is justified. The significance statement (C231) is reasonable given that the study connects trans-synaptic signaling to the fusion machinery through Unc-18, providing a key missing link in PHP mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

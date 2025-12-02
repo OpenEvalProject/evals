@@ -1,0 +1,440 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Electrophysiological recordings from 5415 RSC neurons across 8 rats revealed a subpopulation of cells that fire consistently at the edge of the arena, with varied preferred firing distances (up to 15-18 cm from walls) and firing throughout the environment on all four walls, unlike traditional MEC/subiculum border cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from direct experimental observations. The sample size (5415 neurons, 8 animals, 82 sessions) is substantial, and the firing patterns are clearly documented with specific distance ranges and comparisons to known border cells in other regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "A novel Earth Mover's Distance (EMD)-based template-matching method was developed to classify RSC border cells, identifying 485/5415 cells (9.0%) as border cells with EMD scores below 0.191 and firing rates above 0.5 Hz, showing no correlation between firing rate and EMD score (r=0.037, p=0.42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 describe a methodological advance with clear justification (traditional border score inadequate for RSC cells) and validation (statistical null distribution, independence from firing rate). The EMD metric properties are well-defined and the classification criteria are explicit with appropriate statistical controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "RSC border cells showed similar firing rates to other cells (p=0.955) but significantly higher spatial stability between sessions (r=0.52 vs 0.20, p=1.60\u00d710\u207b\u00b9\u00b3\u00b2), were found across granular and dysgranular RSC regions with similar waveform properties, and showed immediate activity in novel environments without adaptation time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 provide comprehensive characterization with appropriate statistical tests (Wilcoxon ranksum, signed-rank tests) and strong effect sizes. The spatial stability result is particularly robust (p=1.60\u00d710\u207b\u00b9\u00b3\u00b2), and the novel environment data (C18) demonstrates functional properties across conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "RSC border cell firing was modulated by running speed (lower rates at 0-12 cm/s, p<0.05) but this did not account for spatial tuning, as animal speed was uniform across space and unrelated to wall distance. Linear-nonlinear modeling confirmed speed and wall-distance are independent factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 address a potential confound (speed) with appropriate controls. Statistical tests show speed modulation exists but cannot explain spatial tuning, and the linear-nonlinear model (C21, citing Hardcastle et al., 2017) provides independent validation of feature independence with Bonferroni correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Border cells formed new firing fields around added walls, with increased firing rates in wall ROIs (1.19\u21921.58 Hz, p=0.0076), decreased spatial correlations between regular and wall sessions (r=0.51\u21920.25, p=9.31\u00d710\u207b\u2076), increased boundary template EMD scores, and decreased added-wall template EMD scores, indicating incorporation of new boundary information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 demonstrate dynamic remapping with converging evidence from multiple metrics (firing rates, spatial correlations, EMD scores with two templates). Statistical tests are appropriate with Bonferroni corrections, and the dual-template approach (C25-C26) provides strong evidence for specific boundary encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "RSC border cells maintained tuning to outer walls and did not fire near added objects (FR unchanged, p=0.53), though EMD scores increased for boundary template (p=0.002). Object template fitting showed no decrease in dissimilarity (p=0.51), and spatial correlations remained stable, indicating RSC border cells encode boundary-specific information that differentiates walls from objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 provide strong evidence for boundary specificity through multiple complementary analyses. The lack of response to objects (C28, C30) contrasts with wall responses (previous result), and the maintained spatial correlations (C31) rule out general disruption. The interpretation (C32) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "RSC border cells maintained stable EMD scores (p=0.75) and spatial correlations (p=0.54) in complete darkness, indicating border cell activity is not generated through visual sensory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate sensory independence with appropriate controls (infrared tracking, no visible light). Statistical tests show no significant changes across conditions, and the interpretation (C35) is justified by the data, though it relies on the assumption that rats have limited vision at 850nm wavelength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In drop-edge experiments, the majority of border cells (17/25) were unaffected by wall removal (EMD stable, p=0.10), but a subset (8/25) showed disrupted firing with increased EMD scores (p=0.003) and decreased spatial correlations (p=0.008), indicating heterogeneity in tactile dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 reveal population heterogeneity with appropriate statistical separation of affected/unaffected cells using a data-driven threshold (95th percentile of null distribution). The bimodal response suggests complex sensory integration, though the mechanism for the subset's disruption remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Whisker trimming did not significantly change the proportion of border cells (z=1.00, p=0.32) or overall firing rates (z=1.04, p=0.30), suggesting whisker sensation is not essential for boundary representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide direct evidence against whisker-mediated boundary detection with appropriate statistical tests (binomial test for proportions, Wilcoxon signed-rank for rates). However, the interpretation (C42) should be tempered as whisker trimming may not eliminate all tactile sensation, and compensatory mechanisms could maintain function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "S1 barrel cortex contained border-responsive cells (23/173 cells) that, unlike RSC border cells, fired consistently near added objects, with significant changes in both boundary and object template EMD scores (p<0.001), highlighting the selective tuning of RSC border cells to boundaries but not objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide important comparative data showing S1bf cells respond to both boundaries and objects while RSC cells are boundary-specific. Statistical tests are robust (Friedman test with post-hoc comparisons, Bonferroni correction), supporting the functional distinction between regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The combined sensory manipulation results suggest RSC border cell activity is not simply driven by visual or tactile boundary detection, and their distinct firing around boundaries but not objects implies additional computational processes in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 synthesize results from darkness (C33-C35), drop-edge (C36-C39), whisker trimming (C40-C42), and S1bf comparison (C43-C44) experiments. The interpretation is well-supported by converging evidence from multiple sensory manipulations, though the nature of the 'additional computations' remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "190/485 RSC border cells (39.2%) showed significant egocentric directional tuning (MVL above 95th percentile), while only 190/666 directionally-tuned cells (28.5%) had boundary-distance tuning, making this population considerably different from Alexander et al., 2020. Body-centric coordinate analysis confirmed directionally-tuned border cells fired when walls occupied specific angles from the animal's viewpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 characterize directional properties with appropriate statistical thresholds (95th percentile of shuffled distribution) and provide comparison to prior work. The body-centric analysis (C50) validates the egocentric nature of the tuning, though the comparison to Alexander et al., 2020 (C49) would benefit from more detailed methodological comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "During 90\u00b0 rotation of the experimental setup, allocentric head-direction cells rotated their tuning (median shift 62.9\u00b0, p=3.8\u00d710\u207b\u2076) while border cell directional tuning remained unchanged (median shift 0\u00b0, p=0.89). RSC place cells rotated with head-direction cells (p=4.4\u00d710\u207b\u2074), indicating border cells maintain wall-tuning as conjunctive position and head-direction coding rotates together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 provide strong evidence for coordinate transformation through rotation experiments with appropriate controls (multiple session comparisons, Bonferroni correction). The differential response of border cells vs. HD/place cells supports the interpretation of conjunctive coding (C55), though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "RSC border cells were predominantly tuned to very near proximity (peak at 5 cm), though some cells had fields up to 20 cm from walls. Simulations confirmed the boundary template could classify cells up to 18 cm away, and testing alternative templates at increasing distances did not yield substantial new cells, confirming most RSC border cells exhibit distance tuning at wall proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 characterize distance tuning with validation through simulations (C58) and systematic template testing (C59). The convergence of observed distribution, simulation results, and template testing provides strong support for the conclusion (C60), though the upper limit of detection (18 cm) should be noted as a potential methodological constraint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Border cells showed hemisphere-specific directional bias: left hemisphere cells had mean direction -114\u00b0 (z=3.16, p=0.041, n=41), right hemisphere cells had mean direction 41\u00b0 (z=38.8, p=9.1\u00d710\u207b\u00b9\u2079, n=149), with distributions significantly different (Kuiper test, p=0.001). The majority of border cells were tuned to the contralateral side, though not exclusively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 reveal lateralized organization with appropriate circular statistics (Rayleigh test, Kuiper test). The large sample size difference between hemispheres (41 vs 149 cells) raises questions about sampling bias, but the strong statistical significance (especially for right hemisphere) and biological plausibility support the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Whisker trimming (t(6)=1.80, p=0.12) and darkness (t(4)=-0.51, p=0.64) did not affect directional tuning of border cells, implying the hemisphere-specific directional bias is not a direct consequence of lateralized sensory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 test the sensory basis of directional bias with appropriate controls. However, the small sample sizes (n=7 and n=5 directionally-tuned cells) limit statistical power, and the interpretation (C67) assumes complete elimination of lateralized sensory input, which may not be achieved by these manipulations alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "DREADDs-mediated inactivation of MEC (26/44 cells reduced firing to 47.2\u00b15.5% baseline) led to disruption of RSC border cells with increased EMD scores (0.181\u21920.186, p=0.016) and decreased firing rates (1.52\u21921.12 Hz, p=0.0016), without affecting animal running speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 demonstrate MEC\u2192RSC dependency with appropriate pharmacogenetic manipulation. The partial effect (59% of MEC cells affected, modest EMD increase) suggests incomplete inactivation or redundant pathways. The lack of behavioral effect (C71) is important for ruling out indirect effects, though longer-term behavioral consequences are not assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "DREADDs-mediated inactivation of RSC had no significant effect on MEC border cell tuning (border score unchanged, z=0.56, p=0.57) or firing rates (z=-0.31, p=0.76), indicating unidirectional dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 demonstrate lack of RSC\u2192MEC dependency with appropriate controls (n=83 border cells). The asymmetric relationship supports the interpretation of MEC as upstream of RSC, though the possibility of compensatory mechanisms or incomplete inactivation should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Optogenetic inhibition of MEC inputs to RSC (both axon-terminal and cell-body) disrupted RSC border coding with increased EMD scores (axon-terminal: p=0.032, n=34; cell-body: p=4.7\u00d710\u207b\u2076, n=141) without changing firing rates or behavior. Control experiments without opsins showed no laser effects (p=0.14), confirming specificity to MEC input silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 provide strong causal evidence with appropriate optogenetic controls (two targeting strategies, laser-off controls, no-opsin controls). The larger effect size for cell-body inhibition (C78) vs. axon-terminal (C77) may reflect more complete inactivation. The control experiment (C81-C82) is critical for ruling out non-specific laser effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Optogenetic MEC inhibition did not affect RSC head-direction cell tuning (firing rate p=0.92, MVL p=0.036 but post-hoc non-significant, preferred direction p=0.34), indicating the head-direction signal in RSC is likely provided by brain regions other than MEC, such as the anterodorsal thalamic nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 demonstrate selective effect on border cells vs. HD cells with appropriate statistical tests (Friedman test, post-hoc with Bonferroni correction). The interpretation (C84) citing anterodorsal thalamus is reasonable based on known anatomy (Mitchell et al., 2018), though direct evidence for this alternative source is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "MEC inhibition affected RSC spatial cells, with spatial correlations dropping significantly during laser-on sessions (r=0.59\u21920.44, z=5.87, p=4.5\u00d710\u207b\u2079, n=83), suggesting spatial firing beyond border coding is contingent on MEC spatial information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 extend the MEC\u2192RSC dependency beyond border cells to spatial cells generally. The effect size is substantial and statistically robust, supporting the interpretation (C86) that MEC provides broader spatial information to RSC, though the specific mechanisms remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The combined manipulation results confirm RSC and MEC are involved in a broader border coding network, where border representations in RSC depend on direct MEC inputs but not vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 synthesizes results from DREADDs (C70-C75) and optogenetic (C76-C82) experiments. The unidirectional dependency is well-supported by converging evidence from multiple manipulation approaches, establishing a clear hierarchical relationship in the border coding network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "MEC border cells differ from RSC border cells: MEC cells fire at one or two walls (CV=0.458 vs RSC CV=0.103, p=4.6\u00d710\u207b\u2074\u2070), have higher peak firing rates (5.30 vs 4.02 Hz, p=0.0053), similar distance tuning distributions, and show allocentric head-direction selectivity while RSC cells show egocentric directional tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide comprehensive comparison between RSC and MEC border cells with appropriate statistical tests. The large effect sizes (especially C89) and multiple distinguishing features support functional differentiation between regions, though the similar distance tuning (C91) suggests some shared properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "SVM decoding of wall distance from population activity showed high accuracy for both RSC and MEC at 0-20 cm (p<0.05), but RSC performance dropped to chance at 30-50 cm (p>0.05) while MEC remained above chance to 50 cm (p<0.05). Population vector correlations decayed faster for MEC than RSC beyond 20 cm, allowing MEC to distinguish wall distance to a larger extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 demonstrate functional differences through population-level decoding with appropriate controls (chance level comparison, speed uniformity check). The convergence of decoding performance (C93-C96) and population vector analysis (C97-C98) provides strong support for differential spatial range encoding, suggesting RSC encodes local information while MEC has extended range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "RSC border cell spikes preceded animal movement, with maximal motion map information at -300 to -50 ms time lags (p<0.05), and consistent turning behavior 200 ms after cell firing. Turning direction was hemisphere-specific (right RSC\u2192right turns, left RSC\u2192left turns). This prospective activity was not observed in MEC border cells or simulated egocentric cells, confirming the relationship between RSC border cell firing and the animal's next motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 reveal prospective coding with appropriate time-lagged analysis and controls (MEC comparison, simulated cells). The hemisphere-specific turning (C103) aligns with the directional bias (C61-C64). However, the causal relationship between firing and movement remains unclear\u2014cells could be predicting movement or reflecting motor planning signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "RSC and MEC encode different aspects of border representations, playing distinct roles in navigation behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 synthesizes the comparative analyses (C88-C106) into an overarching conclusion. The evidence from firing properties, decoding, and prospective activity strongly supports functional differentiation, with MEC providing allocentric boundary information and RSC transforming this into egocentric, action-relevant representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The manuscript provides extensive background on spatial navigation, place/grid cells, border cells, egocentric vs. allocentric representations, coordinate transformation theories, RSC anatomy and function, and prior work on egocentric boundary coding, establishing the context and motivation for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C128 accurately cite and summarize prior work from the literature, providing appropriate context for the study. The citations appear accurate and relevant, establishing the knowledge gaps (C114, C118) that motivate the current investigation. These are primarily literature review claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The study used 19 male Long-Evans rats (400-550g, 3-5 months old) with experiments approved by local authorities (RP Darmstadt, protocol F126/1009) in accordance with European animal welfare conventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 provide basic methodological information about subjects and ethical approval. These are straightforward factual statements that are appropriately documented, though the exclusive use of male subjects limits generalizability.",
+    "result_type": "MINOR"
+  }
+]

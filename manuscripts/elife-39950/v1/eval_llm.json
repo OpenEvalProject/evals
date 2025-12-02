@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The Multi-Stage Model of Carcinogenesis (MMC) was developed in the 1950s-70s and postulated carcinogenesis as a Darwinian somatic selection process. At the time, cellular organization of tissues, cancer drivers, and stem cells were poorly understood. The MMC paradigm was later confirmed, and cancer incidence was explained as a function of mutation occurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide accurate historical context about the development and confirmation of the MMC. These are well-established facts in the cancer biology literature, appropriately cited, and serve as necessary background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The MMC has never been tested for its ability to account for discrepancies in driver mutation numbers and stem cell compartment organization across different cancers with similar age-dependent incidence patterns. Analytical models have not been tested across cancers with different mutation requirements and stem cell pool sizes. Models unifying cancer progression across cancer types and species are lacking, and the MMC lacks consideration of evolutionary processes shaping life history traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C22-C24 identify legitimate gaps in the literature that motivate the current study. These gaps are well-articulated and establish the need for the modeling approach presented. The claims are appropriately supported by the absence of such comprehensive models in cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19"
+    ],
+    "result": "Historical development of the MMC includes Fisher and Hollomon's observation of sixth power age dependence, Nordling's sequential mutation theory, and Armitage and Doll's mathematical model. The original model assumed constant mutation accumulation rates throughout life, though later studies showed ~50% of mutations accumulate before maturity (not universally observed), explained by stem cell division rate slowdown upon maturation. Armitage and Doll assumed ~6 sequential mutations based on age-power relationships. Nowell later developed the clonal selection concept. Early theorists noted childhood cancers deviate from age-dependent patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C19 provide accurate historical context with appropriate citations to foundational work. The claims correctly identify both the original assumptions of the MMC and subsequent challenges to those assumptions, establishing the scientific foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C20",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Cancers driven by very different mutations requiring different numbers of drivers show very similar temporal distribution with age. Different cancers originate from very different stem cell systems with different lifetime stem cell numbers and cell division profiles. CML (driven by one mutation) exhibits age-dependent incidence kinetics similar to cancers requiring many more mutations (AML, CLL, colon cancers). Hematopoietic clones driven by single driver mutations increase with age following similar incidence patterns as mutationally complex cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C20, C25-C30 identify a key paradox that motivates the study: cancers with vastly different etiologies show similar age-dependent incidence patterns. This is supported by Figure 1 showing normalized incidence curves and clonal hematopoiesis data. The observation is well-documented and represents a genuine challenge to the standard MMC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Cancer incidence closely follows the physiological aging curve in animals and scales to lifespan but not to body size, a phenomenon known as Peto's paradox.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 accurately describe Peto's paradox with appropriate citations. This well-established phenomenon in comparative oncology provides important context for the evolutionary aspects of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Somatic selection depends on tissue microenvironment. Co-evolution of stem cells and tissue regulatory processes should have adapted stem cells to well-regulated microenvironments, promoting stabilizing and purifying selection against phenotype-altering mutations. Aging disrupts tissue ecosystems and should promote positive selection for mutants adaptive to new microenvironments. Age-dependent clonal evolution and expansions are tightly linked with age-dependent cancer incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 present the theoretical foundation for the MMC-DS model based on evolutionary principles. While these are theoretical propositions, they are logically sound and supported by citations to studies on the hematopoietic system (C36). The evolutionary reasoning is consistent with established principles of selection and adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The model operates with a simulated pool of cells (300 initial, growing to 10,000 by age 18-20) competing for niche space, designed to replicate human HSC dynamics in bone marrow. HSCs form one population competing for limited niche space with established migration capacity. Most leukemias initiate in the HSC compartment. Cell division rates change age-dependently during growth and maturation (from ~1 division per 3 weeks to ~1 per 40 weeks in adults). The simulation runs for 5200 weekly updates (100 years). The phenotypic mutation rate integrates all heritable changes affecting somatic fitness. Multiple mutations have synergistic rather than additive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48, C96-C101 describe the model architecture with appropriate citations to support parameter choices. The model design is reasonable for simulating HSC dynamics, though the exact pool size is acknowledged as not critically important for relative dynamics. The parameters are justified by published estimates, and the simplifications are appropriate for the modeling goals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C69"
+    ],
+    "result": "The MMC model holds generally and is robust against departures from mutation accumulation linearity. Non-linear changes in cell division rates early in life do not significantly influence the model's capability to replicate exponential succession of clones driven by accumulating driver mutations. The MMC reproduces the general exponential shape of cancer incidence regardless of whether stem cell divisions remain stable or change dramatically during maturation. Clones with different numbers of drivers have different timing of expansions. Under select assumptions, the MMC can replicate higher late-life rates of somatic evolution despite rapidly decelerating stem cell division rates. MMC-DS can also reproduce late-life increases due to stronger late-life positive selection. Cell division profile does not discriminate between MMC-DS and standard MMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C49-C53, C69 present key findings from the simulations shown in Figure 3A-B. The results demonstrate that the MMC is more robust than previously thought regarding non-linear mutation accumulation. The statistical analysis (Figure 3 supplements) supports these conclusions. However, the claim that cell division profile doesn't discriminate between models (C53) may be overstated given that MMC-DS shows delayed clonal expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C72"
+    ],
+    "result": "Differences in required driver mutation numbers, mutation rate, and driver strength cause the MMC to fail to reproduce the expected temporal correlation in incidence of different cancers. The current MMC is incapable of explaining childhood leukemia incidence. The current MMC does not explain why most cancers show strikingly similar late-life incidence patterns despite requiring very different numbers of driver mutations and originating in very different sized/organized stem cell pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C72 identify critical failures of the standard MMC model revealed by the simulations. Figure 3A shows that clones with different driver numbers have substantially different timing, contradicting the observed similarity in cancer incidence (Figure 1C). This represents a major finding that motivates the need for MMC-DS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C70"
+    ],
+    "result": "Differential aging-dependent somatic selection improves MMC performance and partially resolves problems with explaining cancer incidence patterns. The MMC requires incorporation of differential aging-dependent somatic selection to universally postpone increased rates of somatic evolution to late ages, independent of driver mutation numbers and selective magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C70 present the central conclusion that MMC-DS improves upon standard MMC. The simulation results in Figures 3-4 support this conclusion by showing that MMC-DS delays clonal expansions until late life more uniformly across different driver numbers. However, the claim of 'partial' resolution (C41) is appropriately cautious, as the model still doesn't fully explain all observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The effects of adult cell division rate range within the dynamic profile are modest. MMC-DS delays high rates of clonal evolution until later lifespan. Both MMC and MMC-DS are sensitive to mutation rate. MMC-DS, unlike MMC, prevents all clones from expanding through youth. The number of drivers has much less effect within MMC-DS, with expansion kinetics delayed until and compressed in old age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 describe simulation results from Figures 3B-C showing differential responses of MMC vs MMC-DS to various parameters. The results are clearly shown in the figures and statistical supplements. The key finding that MMC-DS compresses clonal dynamics to late life regardless of driver number is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Greater fitness advantage accelerates somatic evolution rates in both MMC and MMC-DS models. MMC-DS, unlike MMC, delays all clonal expansions until old age independent of driver mutation numbers. It is not necessary for early life selection to be negative for MMC-DS to delay clonal expansions; even without negative selection, the age-dependent character of clonal expansions holds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe results from Figure 4A testing fitness advantage effects. The finding that MMC-DS doesn't require negative early-life selection (C61) is important and well-demonstrated by the MMC-DS(b) simulations. This shows the model is robust to different assumptions about early-life selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Increasing pool size does not increase the relative presence of mutant clones, and this relationship largely holds for both MMC and MMC-DS. However, MMC appears more sensitive to stem cell pool size than MMC-DS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 describe results from Figure 4B addressing Peto's paradox. The finding that relative clone frequencies don't increase with pool size is well-demonstrated and provides insight into body size independence of cancer risk. The greater sensitivity of MMC to pool size is shown in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Earlier aging that produces earlier onset of positive selection on mutant cells leads to corresponding earlier expansions of mutant clones accumulating driver mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 describes results from Figure 4C showing that shifting the aging curve shifts clonal expansion timing accordingly. This is an expected result that validates the model's behavior and demonstrates how lifespan differences could affect cancer timing across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Under MMC-DS, many clones demonstrate a minor peak very early in life but are later suppressed until the second half of lifespan. This is due to larger presence of random drift in smaller pool sizes interacting with faster cell division rates. Such clonal dynamics might explain elevated rates of early childhood leukemia. Replication of the full pattern of leukemia incidence requires MMC-DS with purifying selection early in life. Early-life processes should be driven by drift due to small initial stem cell pools. Later suppression can be explained by purifying selection in larger adult pools during reproductive periods. Early childhood cancers mostly comprise malignancies from large stem cell systems (hematopoietic), while childhood carcinomas from small fragmented epithelial compartments are rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C75-C79 describe the early-life peak phenomenon shown in Figure 5B and provide mechanistic explanation. The drift-based explanation for early peaks is reasonable given small pool sizes. The pattern of childhood cancer types (C78-C79) is supported by SEER data citations. This represents an important capability of MMC-DS that standard MMC lacks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The principle of aging-dependent somatic selection can potentially explain the scaling of increased cancer incidence to species-specific lifespan, such that most cancers occur after 1.5 years for mice and 50 years for humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 proposes that MMC-DS can explain cross-species scaling of cancer incidence. While this is a logical extension of the model shown in Figure 4C, the study does not actually test this with data from multiple species or provide quantitative validation. The claim is theoretical and requires additional empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Previous attempts to explain age-dependence of multi-stage carcinogenesis have mostly used analytical modeling with fixed effects of mutations on cellular fitness. However, fitness is a dynamic phenomenon arising at the interface of phenotype and environment, determined by the mode of selection acting on a phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 accurately characterize previous modeling approaches and provide the conceptual foundation for why MMC-DS differs. The citations support the characterization of previous models, and the definition of fitness as dynamic is consistent with evolutionary theory (Wade and Kalisz, 1990).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Previous studies have demonstrated how the somatic fitness effects of oncogenic mutations can be dramatically affected by the age of the host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 provides empirical support for the age-dependent fitness concept with appropriate citations to experimental studies. This strengthens the theoretical foundation of MMC-DS by showing that age-dependent fitness effects have been experimentally observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Somatic selection and germline selection are directly linked through mutual feedback via reproductive success. Somatic selection impacts age-dependent tissue and individual fitness, providing fuel for germline selection. The effect of somatic mutations on cell fitness is subject to germline selection based on health risks. Reproductive success determines the strength and directionality of germline selection on somatic alterations. Germline selection acts on somatic mutation effects depending on species-specific age-dependent mortality profiles. Germline selection for tumor suppressive mechanisms is somatic mutation-specific and species-specific. Aging-dependent differential selection at the tissue level is likely a mechanism common across animal species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C87 present an elaborate theoretical framework linking somatic and germline selection through reproductive success (illustrated in Figure 6). While this is an intellectually coherent evolutionary argument, it is largely speculative and not directly tested by the simulations. The framework makes logical sense but lacks empirical validation or quantitative modeling to support the specific mechanisms proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Evidence of unique tumor suppression mechanisms exists for multiple species, including hyaluronic acid in naked mole rats and p53 alterations in elephants. Tumor suppressive mechanisms tailored to limit driver mutation impacts could be species-specific or common across mammals/animals. The general aging-dependent shift in somatic selection and evolved group-specific pathway-tailored tumor suppressor mechanisms represent two different dimensions of overall tumor suppression regulation in animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide examples of species-specific tumor suppression mechanisms with appropriate citations and integrate them into the theoretical framework. The examples are well-documented in the literature. The conceptualization of two dimensions (aging-dependent selection and evolved mechanisms) is a reasonable synthesis, though the relative contributions remain to be quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Cancers deviating from the general late-life pattern and occurring at earlier ages tend to be associated with infections, to be very rare, and/or associated with modern lifestyles. Increased cancer incidence in humans and captive animals mirrors the species-specific aging profile and occurs after ages most individuals survive in the wild.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 address exceptions to the general pattern and provide evolutionary context. The characterization of early-onset cancers is supported by citations. The observation about captive animals (C94) is appropriately cited and consistent with the evolutionary framework, though it represents correlation rather than mechanistic proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C8",
+      "C95"
+    ],
+    "result": "Two additional major mechanisms need to be incorporated into the MMC: aging-dependent somatic selection and life history-dependent evolution of species-specific tumor suppressor mechanisms. Differential aging-dependent somatic selection in cooperation with group-specific evolution of genes and cellular machinery depending on life history traits are sufficient to generalize carcinogenesis such that childhood cancer peaks, Peto's paradox, and universal lifespan-dependent patterns can be explained within one theoretical paradigm placing somatic evolution within evolutionary theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C95 present the main conclusions of the study. The simulations clearly support the need for aging-dependent somatic selection (first mechanism). However, the second mechanism (life history-dependent evolution of species-specific tumor suppressors) is primarily theoretical and not directly tested by the simulations. The claim that these mechanisms are 'sufficient' to explain all mentioned phenomena is ambitious and not fully demonstrated\u2014particularly for Peto's paradox and cross-species patterns, which are not quantitatively validated against real data.",
+    "result_type": "MAJOR"
+  }
+]

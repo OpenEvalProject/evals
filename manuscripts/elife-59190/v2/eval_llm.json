@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "HetR interacts with HetL at the same interface as PatS. The interaction is mediated by the HetR hood domain, with residue R223 being critical for binding both PatS and HetL. HetL can form dimers/oligomers, and the HetL D151A variant shows impaired binding to HetR while maintaining dimerization capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary experimental approaches (bacterial two-hybrid assays, BLi with KD=6 \u00b5M, molecular docking) consistently demonstrate the HetR-HetL interaction. The R223W and D151A mutants provide strong evidence for the shared binding interface with PatS. The mutants retain their ability to form dimers/oligomers, ruling out misfolding artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The HetR-HetL interaction does not inhibit HetR's DNA-binding activity, unlike PatS-5 binding which abolishes DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EMSA data (Figure 1D) clearly show that HetR-HetL complex can still bind the hetP promoter, with even enhanced complex formation compared to HetR alone. This contrasts with PatS-5 which inhibits DNA binding, providing a functional distinction between the two interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "PatS-5 and PatS-6 peptides compete with HetL for binding to HetR in a dose-dependent manner, with complete inhibition of HetR-HetL interaction at 5 \u00b5M PatS-5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple techniques (BLi, bacterial two-hybrid with co-expression, EMSA) consistently demonstrate dose-dependent competition between PatS peptides and HetL for HetR binding. The data support a competitive binding mechanism at the same interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HetL does not directly interact with PatS-5, ruling out a titration mechanism. HetR binds PatS-5 with KD=600 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ITC experiments (Figure 3) provide clear thermodynamic evidence: HetR shows exothermic binding to PatS-5 (KD=600 nM), while HetL shows no heat exchange with PatS-5, definitively ruling out direct HetL-PatS interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "HetL overexpression suppresses PatS-mediated inhibition of heterocyst differentiation in vivo, but this requires the HetR-binding capacity of HetL. The HetL D151A variant, which cannot bind HetR, fails to suppress PatS inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic experiments are well-controlled with qRT-PCR confirmation of overexpression (30-fold). Microscopy data clearly show that wild-type HetL, but not D151A variant, rescues heterocyst formation in the presence of PatS overproduction or exogenous PatS-5. This directly links the biochemical interaction to biological function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C65",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "hetL expression is induced 3.5-fold at 8 hours after nitrogen starvation and this induction requires HetR, though hetL expression levels are relatively low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qRT-PCR data (Figure 5A) clearly demonstrate hetL induction in wild-type but not in \u0394hetR mutant, with appropriate controls (hetP as positive control). The temporal pattern and HetR-dependence are well-documented, though the mechanism (direct vs. indirect) remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "HetL acts specifically in heterocysts to provide immunity against PatS inhibition. Expression from the heterocyst-specific patS promoter, but not the vegetative cell-specific rbcL promoter, allows differentiation in the presence of PatS-5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The promoter-swap experiment (Figure 5B) provides strong evidence for cell-type-specific function. The use of well-characterized cell-type-specific promoters and clear phenotypic differences support the conclusion that HetL functions specifically in heterocysts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "HetL provides immunity against PatX-6 (HRGTGR) peptide in addition to PatS peptides. The HRGTGR peptide inhibits HetR-HetL interaction, and HetL overexpression (but not D151A variant) suppresses PatX-6 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BLi data (Figure 6A) show that PatX-6 inhibits HetR-HetL interaction similar to PatS-5. Microscopy data (Figure 6B) demonstrate that wild-type HetL, but not D151A, rescues differentiation in the presence of PatX-6, extending the protective mechanism to multiple inhibitory peptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Among 31 pentapeptide repeat proteins (PRPs) in Nostoc, All4303 interacts with HetR in bacterial two-hybrid assays, though the interaction is two-fold weaker than HetR-HetL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Bacterial two-hybrid data (Figure 7B) clearly show All4303-HetR interaction above negative control levels. The quantitative comparison to HetR-HetL interaction is appropriate. However, the biological significance and whether All4303 can functionally compensate for HetL remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "In vitro, HetR has 10-fold higher affinity for PatS (KD=600 nM) than for HetL (KD=6 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison is based on two different techniques (ITC for PatS, BLi for HetL), both appropriately conducted. The 10-fold difference in affinity is clearly documented and raises important questions about the in vivo mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The concentration of HetL in the proheterocyst must be higher than PatS peptide to overcome the affinity difference. This is plausible because PatS is diffusible while HetL lacks secretion signals and likely accumulates in differentiating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a reasonable inference based on the affinity difference and known properties of PatS and HetL, but it lacks direct experimental evidence. No measurements of actual protein concentrations in different cell types are provided. The logic is sound but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Septal junctions have a 7 nm lumen compatible with peptide diffusion but likely incompatible with HetL dimer/multimer transfer between cells, given HetL monomer dimensions (3.5 nm \u00d7 6.5 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural constraints are based on published electron cryotomography data (Weiss et al., 2019) and HetL structure (Ni et al., 2009). The size comparison is straightforward and the conclusion about HetL oligomer transfer is reasonable, though direct experimental evidence for HetL localization is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "HetR is regulated by phosphorylation, which could potentially explain differential affinity for HetL in heterocysts versus vegetative cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is cited from prior work (Valladares et al., 2016; Roumezi et al., 2019) but presented as speculation about cell-type-specific phosphorylation. No experimental data in this manuscript address whether phosphorylation differs between cell types or affects HetL binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "A hetL deletion mutant shows normal heterocyst differentiation, and all4303 transcription is induced by nitrogen starvation, suggesting potential functional redundancy among PRPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by citations to prior work (Liu and Golden, 2002; Flaherty et al., 2011). This provides context for interpreting the All4303-HetR interaction and supports the redundancy hypothesis, though direct testing of double mutants is noted as future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The authors propose a model where HetR engages in two different networks depending on cell type: a positive HetR-HetL network in heterocysts and a negative HetR-inhibiting peptide network in vegetative cells. This adds a 'local protection' module to the classical 'local activation and long-range inhibition' model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conceptual model integrates the experimental findings into a coherent framework. The model is well-supported by the data showing HetL expression in heterocysts, its protective function, and the competitive binding mechanism. However, it remains a model requiring further validation of spatial protein dynamics in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Strings of 3-4 developing cells appear before resolving into a single proheterocyst, correlated with stochastic hetR expression. The authors propose that stochastic hetL expression variation might contribute to the resolving mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation about cell strings is from prior work (Wilcox et al., 1973; Corrales-Guerrero et al., 2015). The proposal about stochastic hetL variation is speculative and not supported by experimental data in this manuscript. Single-cell expression analysis would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background information on Turing patterns, heterocyst differentiation in Nostoc, HetR function, PatS/HetN/PatX inhibitory peptides, and the local activation/long-range inhibition model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge supported by appropriate citations to prior literature. They set the context for the current work but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Prior work showed that ectopic hetL expression suppresses PatS inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately cite prior work (Liu and Golden, 2002) and are confirmed by the current study's data (Figures 4B, 4-supplement 1). They provide important context for the mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "hetP expression does not increase significantly in the \u0394hetR strain, consistent with HetR-dependent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qRT-PCR data (Figure 5A) show 10-fold induction in wild-type but not in \u0394hetR mutant. This serves as a positive control for the hetL expression analysis and confirms the experimental system is working as expected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C94"
+    ],
+    "result": "The Nostoc genome contains 31 genes encoding pentapeptide repeat proteins (PRPs), which are abundant in all cyanobacterial genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is based on genomic analysis and established knowledge about cyanobacterial genomes. It provides important context for understanding potential functional redundancy and the evolutionary conservation of this protein family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The gyrase-binding PRP was the first PRP with an identified partner, and HetL-HetR represents the second case of a PRP-protein complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by citation to prior work (Tran et al., 2005) and represents an accurate assessment of the literature. It highlights the novelty of identifying HetL's binding partner.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C102"
+    ],
+    "result": "HetL homologues are widespread across cyanobacteria, suggesting the protective mechanism might be conserved in other heterocyst-forming cyanobacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The presence of HetL homologs is based on genomic analysis, but functional conservation is speculative. No experimental data from other cyanobacterial species are provided to test whether the mechanism is actually conserved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Cross-complementation of hetL mutation with all4303 or another PRP is a possible scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is speculation based on the All4303-HetR interaction. While plausible, it requires experimental testing through double mutant analysis or complementation experiments, which are noted as future work.",
+    "result_type": "MINOR"
+  }
+]

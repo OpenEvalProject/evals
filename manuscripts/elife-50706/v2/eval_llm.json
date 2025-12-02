@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "T5 neurons exhibit a receptive field structure with fast depolarization at the center and persistent, spatially offset hyperpolarization on the trailing side. This structure is similar to T4 neurons and is characterized by asymmetric spatial inputs and temporal dynamics that differ between leading and trailing sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C35 collectively demonstrate the T5 receptive field structure through whole-cell recordings and systematic mapping (Figure 2). The data show clear spatial asymmetry with depolarization dominating the center and hyperpolarization on the trailing side, with temporal differences in rise and decay times. The comparison to T4 neurons (C35) and agreement with voltage imaging studies (C27) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "T5 neurons generate directional selectivity exclusively through null direction suppression, with no evidence of preferred direction enhancement. This mechanism is consistent across all stimulus conditions tested, including different bar widths, speeds, and positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C36-C43 provide strong evidence from pairwise bar flash experiments (Figure 3) showing only suppressive responses to null direction motion. Statistical analysis demonstrates significant correlation between ND suppression and directional selectivity (C41, R\u00b2=0.396) but no correlation for PD enhancement (C42, R\u00b2=0.02). The findings hold across multiple stimulus parameters (C40), providing robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A passive biophysical model (EI model) using direct inhibition accurately predicts T5 responses to diverse visual stimuli, including bar flashes, moving bars, and drifting gratings. The model integrates fast excitatory and slow inhibitory conductances with spatial offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C44-C53 demonstrate that the EI model, optimized only on static bar flash responses, successfully predicts responses to moving stimuli (Figures 4-5). The model captures response magnitude, dynamics, and even complex features like amplitude adaptation in drifting gratings (C51-C53). Quantitative comparisons show good agreement between model predictions and measurements across stimulus conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A model based on removal of excitation (E+E- model) cannot accurately predict T5 responses and is qualitatively different from direct inhibition. The E+E- model fails to generalize to wider bars and produces lower directional selectivity than measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C54-C59 show through systematic comparison (Figures 6-7) that the E+E- model fails to generalize beyond optimization stimuli (C54), overestimates responses (C55), and produces lower directional selectivity (C56). The analysis in Figure 7 identifies three specific mechanisms explaining why direct inhibition is superior to removal of excitation (C57-C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "T5 neurons show directionally selective responses to moving bars with wide directional tuning. Responses exhibit characteristic hyperpolarization following preferred direction motion and preceding null direction motion, with stimulus size affecting response magnitude but not directional selectivity index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 describe basic response properties from 17 recorded T5 neurons (Figure 1). The data clearly show directional selectivity with characteristic voltage dynamics. The observation that wider bars increase response magnitude without increasing DSI (C22) is well-documented, though the smallest bar (C20-C21) shows reduced hyperpolarization, suggesting size-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Linear summation of bar flash responses consistently overestimates T5 response magnitudes to moving bars, particularly for strong stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is demonstrated in Figure 4D-E, showing systematic overestimation by the linear model. This finding establishes the necessity of nonlinear integration and motivates the EI model. The result is well-supported by quantitative comparisons across multiple stimulus conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "T4 and T5 neurons share high anatomical similarity and use nearly identical directional selectivity mechanisms (fast depolarization with asymmetric slow hyperpolarization), despite T4 receiving mixed neurotransmitter inputs while T5 receives only cholinergic columnar inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 synthesize anatomical data from cited studies with the functional findings from this work. The anatomical similarities (C60-C63) are well-established in the literature, while the functional similarity (C65) is supported by the current experimental results. The contrast between input types (C64) and functional similarity creates an important puzzle addressed in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Potential sources of inhibitory input to T5 include CT1 neurons functioning as small-field columnar neurons, or cholinergic inputs activating inhibitory conductances. T5 neurons express GABA receptors consistent with receiving inhibitory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C68 propose potential mechanisms to reconcile the functional requirement for inhibition with the anatomical observation of all-cholinergic columnar inputs. While C67 (GABA receptor expression) is supported by cited transcriptomic data, C66 and C68 are speculative proposals based on recent literature. These remain hypotheses requiring direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors propose a unifying framework where T5 voltage responses are generated by a 2-degree-of-freedom nonlinearity producing null direction suppression, potentially followed by a voltage-to-calcium transformation that could produce preferred direction enhancement observed in calcium imaging studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C75 attempt to reconcile electrophysiological findings (no PD enhancement in voltage, C69, C72) with calcium imaging results from other studies. While C69 and C72 are well-supported by the current data (Figures 3-4), the proposed unifying framework (C73-C75) is largely speculative. The model does not explain calcium imaging results (C74), and the proposed secondary mechanism (C75) lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background context on fly motion vision: ON and OFF pathways compute motion separately, with T4 and T5 as first directionally selective neurons. T4 uses local excitatory and inhibitory inputs, while T5 lacks small-field inhibitory inputs based on connectomics and transcriptomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 establish background knowledge from prior literature. These are well-supported by multiple citations to established work in the field. The inference that cholinergic inputs are unlikely to provide inhibition (C16) is reasonable but represents an assumption that the current work challenges through functional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "In T4 neurons, asymmetric slow-decaying hyperpolarization is the main contributor to directional selectivity generation through differential temporal summation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 references the authors' previous T4 study (Gruntman et al., 2018) and is used as context for interpreting T5 results. This is appropriately cited prior work that motivates the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Methodological details: experiments used 1-2 day old female Drosophila, recordings from left brain hemisphere, LED display covering 216\u00b0 \u00d7 72\u00b0 visual field with 2.25\u00b0 pixel size, and 565 nm green LEDs with ~31 cd/m\u00b2 background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe experimental methods that are clearly stated in Materials and Methods. These are straightforward methodological facts that are well-documented and appropriate for the experimental design.",
+    "result_type": "MINOR"
+  }
+]

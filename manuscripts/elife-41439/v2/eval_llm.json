@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Synthetic target site drives targeting EGFP at three genomic locations showed drive conversion efficiencies of 32-54% and embryo resistance rates of 80-91%, which are similar to standard drives targeting natural sites. This demonstrates that synthetic target site drives can serve as effective molecular safeguards while maintaining comparable performance to standard drives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 and C96-C103 provide comprehensive experimental data showing that synthetic target site drives perform comparably to standard drives. The data includes conversion efficiencies across multiple genomic locations with appropriate statistical comparisons to prior work (C35, C38, C39). The experimental design is sound with proper controls and phenotypic scoring methods described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C109",
+      "C110"
+    ],
+    "result": "A split drive system where Cas9 and gRNA are separated at unlinked loci showed 74% drive conversion efficiency, significantly higher than a comparable standard drive (62%, p<0.0001). The split drive also showed 74% embryo resistance compared to 20% for the standard drive (p<0.001), demonstrating that split drives perform similarly or better than standard drives while providing molecular safeguarding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 and C48-C110 provide experimental evidence with appropriate statistical testing showing the split drive performs comparably or better than standard drives. The experimental design properly controls for genomic location and promoter elements. However, the higher embryo resistance rate (C48) suggests some differences in mechanism that are appropriately discussed in claims C49-C50.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C44",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Using the split drive system, the authors found that both Cas9 and gRNA must be maternally deposited for resistance alleles to form in the early embryo. Additionally, maternally-deposited Cas9 alone can persist to gametocytes and power germline drive conversion (54% efficiency in 15/16 mosaic yellow females) in individuals lacking a genomic source of Cas9, though this Cas9 does not persist to the next generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C44, C58-C63 provide experimental evidence from genetic crosses showing Mendelian inheritance when Cas9 and gRNA are not co-inherited maternally (C43-C44), and drive conversion in mosaic females lacking genomic Cas9 (C59). The phenotypic observations (yellow mosaicism, progeny phenotypes) support the mechanistic conclusions about maternal deposition requirements and Cas9 persistence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Maternally-deposited gRNA is not necessary for drive conversion when a genomic source of gRNA is provided, as progeny receiving paternal drive alleles with maternally-deposited Cas9 showed 38% germline conversion efficiency. The results suggest that germline drive rates may be affected by the level of maternally-deposited Cas9 and gRNAs, with potential trade-offs between increased drive conversion and increased resistance allele formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 provide experimental data (C65-C66) showing drive conversion with only maternally-deposited Cas9, though at reduced efficiency compared to the full split drive (C67). The mechanistic interpretations (C68-C70) are appropriately presented as inferences from the data, acknowledging both potential benefits and drawbacks of maternal deposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The higher drive conversion efficiency of the split drive compared to the standard drive implies that not all resistance alleles form prior to drive conversion. The authors propose that resistance alleles may form at multiple stages: in pre-gonial germline cells, in gametocytes as an alternative to drive conversion, or in late meiosis when homology-directed repair is unavailable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C57 present mechanistic interpretations of the observed higher conversion efficiency in split drives. While the inference that not all resistance forms pre-conversion is logical (C55), the specific timing proposals (C56-C57) are speculative and presented as possibilities rather than demonstrated facts. Additional experiments would be needed to definitively determine when resistance alleles form.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C47",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Location-specific variation in Cas9 expression levels likely explains differences in embryo resistance rates between drives at different genomic positions. The split drive's higher embryo resistance (74% vs 20%) is attributed to higher Cas9 expression at its new location (277 nucleotides from synthetic target site B with 88% embryo resistance) and Cas9 being the main limiting factor for cleavage rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40, C47, C49-C51 provide speculative explanations for observed differences in drive performance. While the proximity data (C51) and correlative evidence from site B (C49-C50) support the hypothesis, direct measurements of Cas9 expression levels at different genomic locations are not provided. The explanations are reasonable but remain inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors conclude that synthetic target site drives and split drives show highly similar behavior to standard drives and can be used for most testing in lieu of standard drives. They recommend that gene drive research should consistently adopt these molecular safeguarding strategies, particularly for large-scale cage experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 present conclusions and recommendations that are well-supported by the experimental data showing comparable performance of safeguarded drives (Results 1-2). The recommendation for consistent adoption (C75-C76) is a reasonable policy suggestion based on the demonstrated efficacy of these safeguarding approaches, though it represents a normative rather than empirical claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The finding that both Cas9 and gRNA must be maternally deposited for embryo resistance suggests that a split drive in a laboratory population should behave similarly to a standard drive. A hypothetical reverse split drive (Cas9 in driving element, gRNA in supporting element) would presumably have nearly identical behavior to a standard drive due to identical Cas9 copy number and genomic position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 present logical inferences from the maternal deposition findings (C30, C44). The conclusion about split drive behavior in laboratory populations (C52) follows from the experimental evidence. The prediction about reverse split drives (C53-C54) is speculative but based on sound reasoning about genetic architecture and expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The synthetic target site drives used a recoded 3xP3v2 promoter for dsRed and P10 3'UTR to avoid misalignment with homology arms, as initial tests with identical promoters resulted in poor drive efficiency. The drive constructs contained Cas9 with nanos promoter, dsRed marker, and gRNA targeting EGFP. The split drive contained dsRed marker, gRNA targeting yellow, and an unlinked Cas9 element with EGFP marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 and C89-C95 describe the molecular design of the drive constructs with appropriate rationale for design choices. The recoding strategy (C77-C78) is justified by initial test results showing poor efficiency with identical promoters (C79). The component descriptions match Figure 1 and represent standard molecular biology design principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Mosaicism for EGFP was observed in the eyes of synthetic target site drive heterozygotes, suggesting the germline nanos promoter may drive low-level somatic expression. This mosaicism may be due to proximity of the nanos promoter to the 3xP3 promoter (8 nucleotides apart in synthetic target site flies vs 68 nucleotides in split Cas9 construct), as no body mosaicism was observed in split drive flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C85 report an observed phenomenon (eye mosaicism, C80) and propose an explanation based on promoter proximity (C83-C85). While the correlation between promoter spacing and mosaicism is suggestive, the explanation remains speculative without direct functional testing. The observation itself (C80) is supported, but the mechanistic interpretation (C81, C83) is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "All experiments were conducted using Arthropod Containment Level 2 protocols at the Sarkaria Arthropod Research Laboratory at Cornell University, a USDA APHIS-compliant quarantine facility, with additional safety protocols approved by the Institutional Biosafety Committee.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 describe the biosafety measures used in the study. These are factual statements about experimental protocols and facility compliance that are appropriately documented in the methods section.",
+    "result_type": "MINOR"
+  }
+]

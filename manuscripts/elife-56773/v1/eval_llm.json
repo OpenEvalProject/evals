@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C91",
+      "C92"
+    ],
+    "result": "P. falciparum trophozoite-stage parasites can tolerate heat shock at 40\u00b0C for up to 6 hours without significant reduction in growth or developmental arrest, but prolonged heat shock (\u22659 hours) leads to 32-41% reduction in parasite loads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C91, and C92 are supported by experimental data from Figure 1\u2014figure supplement 1. The study demonstrates that parasites maintain >97% trophozoite stage even after 12 hr heat shock with no significant growth reduction up to 6 hr (p>0.05), but show significant reduction with prolonged exposure (p<0.05). The experimental design and statistical analysis are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C93",
+      "C94"
+    ],
+    "result": "PI3K inhibitors Wortmannin and LY294002 reduce parasite fitness under heat shock, with LY294002 showing a 2-fold decrease in EC50 and 18\u00b110% reduction in parasite loads, while the inactive analog LY303511 shows no heat-dependent effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33, C93-C94 are well-supported by dose-response curves (Figures 1A-D) and appropriate controls. The use of LY303511 as an inactive analog control (C31) strengthens the conclusion that the effect is PI3K-specific. Statistical significance is reported (p<0.05) and multiple antimalarial drugs with different mechanisms show no heat-dependent effects, supporting specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Heat shock induces a 1.3-2.3 fold increase in PI(3)P levels in P. falciparum parasites, while uninfected RBCs show no change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 are supported by experimental data in Figure 1E using a PI(3)P-specific binding assay with 2xFyve. The inclusion of uninfected RBCs as a control (C35) demonstrates that the PI(3)P increase is parasite-specific. Statistical significance is reported (p<0.0001), and the methodology is appropriate for lipid quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "LY294002 treatment causes heat-dependent redistribution of the DV protein PM2GT out of the digestive vacuole, while DMSO control and LY303511 show no such effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by live cell microscopy data in Figure 2. The use of PM2GT-GFP as a DV marker is appropriate, and quantitative measurements (DV MFI and MFI ratios) provide objective assessment. The inactive analog LY303511 serves as an important negative control (C40). However, Wortmannin results (C37) are confounded by high background at 37\u00b0C, limiting interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C95",
+      "C96"
+    ],
+    "result": "PI3K inhibitors Wortmannin and LY294002, but not control antimalarials or LY303511, cause heat-dependent DV destabilization as measured by LysoTracker Red accumulation, with no correlation between DV destabilization and drug potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47, C95-C96 are well-supported by LysoTracker Red microscopy data (Figure 3). The study includes appropriate controls (DMSO, LY303511, and multiple antimalarials with different mechanisms). The lack of correlation between DV MFI reduction and EC50 (C47, p=0.34, r=-0.47) supports the specificity of the PI(3)P-dependent mechanism. Optimization to avoid laser-induced photolysis (C96) demonstrates methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C97"
+    ],
+    "result": "Heat-induced DV destabilization in PI(3)P-deficient parasites precedes mitochondrial depolarization and cell death, with LY294002 treatment maintaining mitochondrial membrane potential while Wortmannin causes ~55% mitochondrial depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48-C50, C97 are supported by JC-1 mitochondrial membrane potential assays (Figure 4). The temporal relationship between DV destabilization (>70% with Wortmannin) and mitochondrial depolarization (~55% with Wortmannin) suggests DV permeabilization precedes cell death. However, the mixed phenotype with Wortmannin (C49-C50) complicates interpretation, possibly due to higher potency (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C99"
+    ],
+    "result": "Heat-induced DV destabilization in PI(3)P-deficient parasites is reversible after withdrawal of LY294002 and heat stress, with LysoTracker Red accumulation restored after 3 hr recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51, and C99 are supported by recovery experiments in Figure 5. The demonstration of reversibility challenges the assumption that DV permeabilization is always lethal (C99) and provides important mechanistic insight. The experimental design with appropriate controls (maintained vs. washed LY294002) is sound. Statistical significance is reported (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "A chemoproteomic approach identified 12 Plasmodium PI(3)P-binding proteins, including three DV-associated proteins (PfRan, PfAlba1, PfHsp70-1) that were validated by protein-lipid overlay assays showing specific binding to PI(3)P and other phosphoinositides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57, C100-C103 are supported by proteomic data (Table 1) and biochemical validation (Figure 6). The use of saponin fractionation (C100), appropriate controls (PfHop negative control, 2xFyve positive control), and lipid strip assays demonstrate methodological rigor. The proteins show preferential binding to PI(3,5)P2 and phosphatidylinositol monophosphates (C57), though quantitative binding affinities are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C108"
+    ],
+    "result": "PfHsp70-1 is a PI(3)P-binding protein whose LID domain is required for PI(3)P binding, and inhibition with 15-DSG phenocopies PI(3)P-deficient parasites by causing heat-dependent DV destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58, C60-C64, C108 are supported by multiple lines of evidence: proteomic identification (Table 1), protein-lipid overlay assays (Figure 6), 15-DSG inhibitor studies (Figure 7A), and domain deletion experiments (Figure 7\u2014figure supplement 2). The connection to mammalian Hsp70 function (C58) provides biological plausibility. The demonstration that LID domain deletion disrupts PI(3)P binding (C64) establishes a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114"
+    ],
+    "result": "PfHsp70-1 is essential for intraerythrocytic replication, and the conditional knockdown strain shows decreased basal PfHsp70-1 expression and increased heat sensitivity even at high aTc concentrations, while the YFP control line shows no such effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C109-C112, C114 are supported by data from the TetR-aptamer conditional knockdown system (Figure 7\u2014figure supplements 3-5). The essentiality of PfHsp70-1 is demonstrated by growth inhibition upon aTc removal (C65). The increased heat sensitivity of the transgenic line compared to wild-type and YFP controls (C111-C112) is attributed to decreased basal expression (C114), supported by Western blot data. The experimental design with appropriate controls is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C66",
+      "C67"
+    ],
+    "result": "Conditional knockdown of PfHsp70-1 phenocopies PI(3)P-deficient parasites under heat shock, causing DV destabilization without mitochondrial membrane permeabilization at 500 nM aTc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C66, C67 are supported by experiments using the conditional PfHsp70-1 knockdown strain (Figures 7B and 7\u2014figure supplement 7). The demonstration that DV destabilization occurs without mitochondrial depolarization at 500 nM aTc (C67) parallels the LY294002 results and supports the temporal relationship between DV and mitochondrial events. The phenocopy of PI(3)P-deficient parasites strengthens the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PfHsp70-1 downregulation hypersensitizes parasites to PI3K inhibitors (Wortmannin and LY294002) by 1.9-2.3 fold, but not to Bafilomycin A, and this effect is not observed in the YFP control line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C68-C71 are supported by dose-response experiments (Figures 7C-D and 7\u2014figure supplements 8A-C). The specificity of hypersensitivity to PI3K inhibitors but not Bafilomycin A (C69-C70) supports a common pathway between PI(3)P and PfHsp70-1. The absence of this effect in the YFP control line (C71) demonstrates that the phenotype is specific to PfHsp70-1 knockdown, not the aptamer system itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C81"
+    ],
+    "result": "Inhibiting PI(3)P production did not affect K48-ubiquitination levels under heat shock, but proteasome inhibition with bortezomib caused DV destabilization similar to PI(3)P depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C81 are supported by preliminary data (Figure 8\u2014figure supplements 1-2), but the authors acknowledge these are preliminary findings. The lack of effect on K48-ubiquitination (C79) argues against a simple ubiquitin-proteasome mechanism, while the bortezomib effect (C81) suggests proteasome involvement. These contradictory findings require further investigation to resolve the mechanism. The data are insufficient to draw definitive conclusions about the role of the ubiquitin-proteasome pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C46",
+      "C74",
+      "C75",
+      "C76",
+      "C89"
+    ],
+    "result": "PI(3)P levels correlate with tolerance to artemisinin and heat stress in P. falciparum, with literature suggesting connections between PfKelch13 mutations, PI(3)P accumulation, and artemisinin resistance, though the mechanism remains controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1, C14-C18, C46, C74-C76, C89 rely heavily on citations to prior work, particularly Mbengue et al., 2015. The current study provides supporting evidence that artesunate causes heat-dependent DV destabilization (C45), consistent with PI(3)P disruption. However, the authors note controversy regarding PfKelch13-PfPI3K interaction (C14), with some studies not detecting this interaction. The speculation about antipyretic effects on artemisinin efficacy (C89) is plausible but requires clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C72",
+      "C73",
+      "C77",
+      "C78",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Background claims from literature establish the biological context for PI(3)P function, heat stress responses, artemisinin mechanism, and connections to mammalian lysosomal biology and clinical malaria treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C19-C24, C72-C73, C77-C78, C80, C82-C88 are background knowledge claims supported by appropriate citations to published literature. These establish the scientific context for the study, including: parasite stage-specific heat sensitivity (C10-C11), artemisinin mechanism (C12-C13), PI(3)P function in eukaryotes (C19-C20), lysosomal membrane permeabilization (C23, C72-C73), and clinical implications of antipyretic use (C86-C88). The citations appear appropriate and accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The authors speculate that co-administering antipyretics may prolong parasite clearance by artesunate in malaria patients by alleviating heat stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is explicitly labeled as speculation by the authors. While the hypothesis is plausible based on the study's findings that artesunate reduces heat tolerance through altered PI(3)P levels, this clinical prediction requires validation through clinical trials. The contradictory results from prior clinical studies (C86-C88) highlight the complexity of this question and the need for further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PI(5)P and PI(3,5)P2 appear absent in Plasmodium, and studying PI(3)P-PfHsp70-1 interaction in cells is challenging due to the essential and multifunctional nature of both proteins and the cytoplasmic localization of PfHsp70-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by citations (C104-C106) and experimental data (C107, Figure 7\u2014figure supplement 1). The absence of PI(5)P and PI(3,5)P2 in Plasmodium (C104) is relevant for interpreting the in vitro lipid-binding data. The challenges in studying the interaction in cells (C105-C107) are well-documented, and the authors appropriately acknowledge these limitations. The microscopy data showing cytoplasmic PfHsp70-1 localization (C107) supports the difficulty in detecting DV-specific recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Treatment with PI3K inhibitors, but not control antimalarial compounds, sensitized the PfHsp70-1 knockdown line to heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is supported by experimental data in Figure 7\u2014figure supplement 6. This result is consistent with findings in wild-type parasites and further supports the functional connection between PI(3)P and PfHsp70-1. The inclusion of control antimalarials demonstrates specificity of the effect to PI3K inhibitors.",
+    "result_type": "MINOR"
+  }
+]

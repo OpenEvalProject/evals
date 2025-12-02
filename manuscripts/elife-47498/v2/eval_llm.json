@@ -1,0 +1,501 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Mass spectrometry analysis of 3\u00d7Tg-AD and control mouse brains identified 3760 protein groups, with 2414-2574 proteins quantified at each time point. Principal component analysis revealed that proteins cluster by age (40.9% variance) and disease state (18.3% variance), with increasing divergence between control and AD proteomes during disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are well-supported by the mass spectrometry data and PCA analysis shown in Figures 1C-D. The high Pearson correlation coefficients (>0.96) between replicates (C21) demonstrate data quality and reproducibility. The quantification criteria and statistical analyses are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Age-related segregation in the brain proteome was driven by extracellular matrix proteins and microglia markers, many previously reported as brain aging markers. Disease-related segregation showed APP and tau clustering with AD-upregulated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by PCA loading analysis (Figure 1E) and citations to prior literature validating these proteins as aging markers. The identification of expected AD-related proteins (APP, tau) provides internal validation of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Pathway analysis revealed that cell death, apoptosis, and mitochondrial dysfunction signatures appear at the first symptomatic time point (6 months), while cytoskeletal disturbances emerge only at late stages (18 months), correlating with hyperphosphorylated tau appearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by Ingenuity Pathway Analysis (Figures 2A-C) and tau phosphorylation data (Figure 1\u2014figure supplement 1). The temporal progression of pathway changes is clearly documented, though the mechanistic connections between pathways remain correlative rather than causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Upstream regulator analysis identified mutant tau, APP, and PSEN1 as principal drivers of differences between wild-type and 3\u00d7Tg-AD brains, with their downstream effectors largely overlapping and contributing primarily to apoptosis, mitochondrial dysfunction, and oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by IPA upstream regulator analysis (Figure 2\u2014figure supplement 1A-C). The overlap analysis and functional enrichment provide mechanistic insights, though these are computational predictions based on literature knowledge rather than direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Several protein groups showed coordinated temporal expression changes during AD progression, including mRNA processing proteins (Hnrnpm, Hnrnpl, Nono, Matrin3) that were progressively upregulated and serine protease inhibitors (Serpina1c, Serpina3k, Mug1) that were progressively downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by time-course expression data (Figures 2H-I). The coordinated expression patterns suggest functional relationships, though the biological significance requires further investigation. The connection to cognitive decline (C39) is supported by citation but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C111"
+    ],
+    "result": "Hebp1 was identified as the most highly and consistently upregulated protein at all time points in 3\u00d7Tg-AD mice, including the presymptomatic stage (2 months).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C111 are directly supported by the proteomic data showing Hebp1 upregulation across all time points (Figures 2J-L). The consistency of upregulation and early appearance make Hebp1 a strong candidate presymptomatic marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C112"
+    ],
+    "result": "Hebp1 and Glo1 expression was elevated in human AD patients compared to controls, with the strongest differences observed in rapidly-progressing AD cases (death within 4 years of diagnosis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C112 are supported by immunoblot analysis of human postmortem brain samples (Figures 3A-C). Statistical significance is demonstrated (p<0.025 for Hebp1, p<0.001 for Glo1 in rpAD vs control). However, sample sizes are modest (n=8-9 per group) and the rapidly-progressing classification relies on retrospective clinical assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Analysis of publicly available datasets demonstrated significantly elevated HEBP1 mRNA expression in prefrontal and primary visual cortex of AD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by analysis of Harvard Brain Tissue Resource Center datasets (Figure 3\u2014figure supplement 1) showing statistically significant increases (p<0.0001) in multiple brain regions. The large sample sizes (n=133-417) strengthen these findings, though the effect sizes appear modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Hebp1 showed region-specific expression in mouse brain, being most abundant in hippocampus, followed by brain stem and cortex, but undetectable in cerebellum. Expression was dramatically elevated in all four regions in 3\u00d7Tg-AD mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by immunoblot analysis (Figure 4A) and immunohistochemistry (Figure 4B, Figure 4\u2014figure supplement 1). The regional distribution and disease-related upregulation are clearly demonstrated, though quantification of the immunohistochemistry would strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C61",
+      "C62"
+    ],
+    "result": "Hebp1 is predominantly expressed in Ctip2-positive neurons but shows poor association with GFAP-positive astrocytes or Iba-1-positive microglia in the hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C61-C62 are supported by co-immunostaining data (Figure 4C, Figure 4\u2014figure supplement 2). The cell-type specificity is clearly demonstrated through colocalization analysis with multiple cell-type markers. This neuronal localization is important for understanding Hebp1's role in AD pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C5"
+    ],
+    "result": "Hebp1 exhibits perimitochondrial localization, as demonstrated by subcellular fractionation showing presence in synaptosomal and crude mitochondrial fractions, detection in isolated mitochondria from cultured neurons, and live imaging showing EGFP-Hebp1 juxtaposed to mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C65-C68 are supported by multiple complementary approaches: subcellular fractionation (Figure 5A), mitochondria isolation (Figure 5B), and live imaging (Figures 5C-F). The convergence of biochemical and imaging evidence strongly supports the perimitochondrial localization, though the protein lacks a canonical mitochondrial targeting sequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Hebp1 interacts with the mitochondrial contact site complex (MICOS), with core components Mic60, Mic19, and Mic25, as well as outer membrane proteins SAMM50 and Mtx2, enriched in Hebp1 co-immunoprecipitation samples. The Hebp1-Mic60 interaction was confirmed by immunoblotting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C69-C72 are supported by co-IP mass spectrometry (Figure 6A) and immunoblot validation (Figure 6B). The identification of multiple MICOS components and associated proteins provides strong evidence for this interaction. However, the stoichiometry and functional significance of these interactions require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C6",
+      "C7"
+    ],
+    "result": "CRISPR/Cas9-mediated knockout of Hebp1 in rat hippocampal neurons protected against hemin-induced cytotoxicity. Wildtype neurons showed 2.69-2.86 fold increase in cell death upon hemin treatment, while Hebp1-deficient neurons exhibited no significant cell death, with this protective effect consistently observed across multiple gRNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C78-C81 are supported by CRISPR knockout validation (Figure 7A) and cytotoxicity assays (Figure 7B). The use of multiple independent gRNAs (KO1, KO2) strengthens the conclusion that the protective effect is specifically due to Hebp1 loss. Statistical significance is clearly demonstrated (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The protective effect of Hebp1 deficiency was specific to hemin-induced cytotoxicity, as all neuron groups (wildtype, control, and Hebp1-deficient) showed increased toxicity in response to tert-butyl-hydroperoxide or staurosporine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by cytotoxicity assays with alternative apoptosis inducers (Figures 7C-D). This specificity control is critical for establishing that Hebp1's role is specifically related to heme-mediated toxicity rather than general apoptosis resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Hemin treatment decreased mitochondrial membrane potential in all neuron types, but Hebp1-deficient neurons showed a steeper decrease (58.7-60.9%) compared to wildtype and control neurons (14.1-15.1%), suggesting that mitochondrial membrane potential changes alone cannot explain Hebp1's role in neuronal apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by mitochondrial membrane potential assays (Figure 7E). The paradoxical finding that Hebp1-deficient neurons have greater MMP loss but are protected from apoptosis is well-documented and appropriately interpreted as evidence that Hebp1 acts downstream of or independently from MMP changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C8"
+    ],
+    "result": "Cytochrome C was released from mitochondria in all neuron types upon hemin treatment, but procaspase 9 activation occurred only in wildtype and control neurons, not in Hebp1-deficient neurons, indicating that Hebp1 deficiency blocks the mitochondrial-associated caspase signaling pathway downstream of CytC release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C90-C93 are supported by immunoblot analysis of mitochondrial and cytosolic fractions (Figures 8A-C). The demonstration that CytC release occurs normally but caspase 9 activation is blocked in Hebp1-deficient neurons identifies a specific mechanistic step where Hebp1 functions. This is a key finding for understanding the apoptotic pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Hemin exposure caused dramatic increases in caspase 3/7+ cells in wildtype (58.5%) and control neurons (62.4%) but not in Hebp1-deficient neurons (8.69-9.86%). Hebp1 was released from mitochondria upon hemin exposure, suggesting that mitochondrial Hebp1 release is a critical trigger linking mitochondrial damage to neuronal apoptosis via procaspase 9 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by caspase 3/7 activity assays (Figures 8D-E) and subcellular fractionation (Figure 8B). The correlation between Hebp1 release and caspase activation is compelling, though the mechanistic details of how Hebp1 promotes caspase 9 activation remain unclear. The inference in C96 is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Hebp1-deficient neurons were protected from A\u03b242-induced cytotoxicity (7.29-7.51% vs 40.2-42.8% in controls) and showed minimal cytotoxicity even with concurrent A\u03b242 and hemin treatment (22.9-23.9% vs 87.9-89.1% in controls), indicating that Hebp1 participates in converging pathways triggered by A\u03b242 and heme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by cytotoxicity assays with A\u03b242 alone and in combination with hemin (Figure 9). The protection against A\u03b242 toxicity extends Hebp1's relevance beyond heme-specific effects to broader AD pathology. However, the mechanism by which Hebp1 mediates A\u03b242 toxicity requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Mic60 was released from mitochondria specifically in Hebp1-deficient cells upon hemin treatment, while Cox4 remained in the mitochondrial pellet across all neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by immunoblot analysis of subcellular fractions (Figure 8A-B). The selective release of Mic60 in Hebp1-deficient neurons is an intriguing observation, though the authors appropriately note that its significance remains unclear. This finding warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establishing AD as the most prevalent neurodegenerative disorder characterized by A\u03b2 plaques and tau tangles, affecting >40 million people worldwide, with mutations in APP and presenilins causing familial AD, though A\u03b2 and tau aggregation alone do not fully account for cognitive decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C16 represent established knowledge about AD pathology and epidemiology, supported by appropriate citations to the literature. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "The 3\u00d7Tg-AD mouse model harbors three mutated genes (PSEN1 M146V, APP Swe, MAPT P301L) and develops AD-related phenotypes progressively, mimicking the human disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 describe the mouse model used in the study, supported by citations to the original publications characterizing this model. This is standard methodological information rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Half of the identified presymptomatic markers were previously associated with AD or other neurodegenerative disorders, including ApoA1, Gmpr, and Glo1, with Glo1 restoration proposed as a therapeutic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by literature review (Table 1) and appropriate citations. This validation against prior literature strengthens confidence in the proteomic approach, though these are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C63",
+      "C64"
+    ],
+    "result": "Hebp1 belongs to the SOUL protein family and was originally identified as a tetrapyrol-binding protein capable of binding heme. Heme is essential for mitochondrial function and cell survival, with impairments in heme metabolism associated with AD. Hebp1 has been proposed to transport heme from mitochondria to cytosol, and its homolog Hebp2/SOUL mediates cell death through mitochondrial permeability transition pore recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C63-C64 represent prior knowledge about Hebp1 and related proteins, supported by appropriate citations. This background information provides important context for interpreting the novel findings but is not original to this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C52",
+      "C104"
+    ],
+    "result": "Cell survival, mitochondrial function, and seizure-related proteins are among the first pathways affected in AD based on proteomic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C104 are supported by pathway analysis (Figures 2A-B, Figure 2\u2014figure supplement 1C). This represents an important finding about early AD pathology, though the inference is based on correlative proteomic changes rather than direct functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Cytoskeleton-related protein alterations became apparent only at late disease stages, coinciding with tau aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by pathway analysis and tau phosphorylation data. This temporal relationship between cytoskeletal changes and tau pathology is well-documented and provides insight into disease progression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "mRNA processing proteins including Matrin-3, Nono, Hnrnpm, and Hnrnpl showed progressive upregulation during AD, with U1 snRNP components previously found enriched in insoluble brain proteome of AD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by proteomic data and citations to prior literature. The coordinated upregulation of mRNA processing proteins suggests dysregulation of this process in AD, though functional validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Serpins were downregulated in both this study and a 5\u00d7FAD mouse model, with protease inhibitor restoration (e.g., TIMP2) shown to improve cognitive function in aged mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by citations to prior studies. The convergence of findings across different AD models strengthens the relevance of serpin downregulation, though this is confirmatory rather than novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Rapidly-progressing AD cases are characterized by distinct pathological features and clinical parameters, associated with faster progression and more severe disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by citations to prior literature characterizing rapidly-progressing AD. This provides important context for interpreting the differential Hebp1 expression in these patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Prior literature establishes that Hebp2/SOUL shows similar subcellular localization to Hebp1, heme metabolism is dysregulated in AD, A\u03b2-heme complexes contribute to oxidative stress and cytotoxicity, cerebral amyloid angiopathy leads to heme leakage, and free heme is toxic to cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 represent prior knowledge supported by appropriate citations. This background establishes the biological plausibility of Hebp1's role in AD pathology through heme-mediated mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Endogenous Hebp1 levels are sufficient to trigger neuronal cell death influenced by heme concentrations, as overexpression did not significantly increase cytotoxicity beyond endogenous levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by overexpression data (Figure 7\u2014figure supplement 1) showing that increased hemin concentration, rather than Hebp1 overexpression, drives cytotoxicity. This suggests Hebp1 functions in a heme-dependent manner at physiological expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior literature establishes that Mic60 reduction increases apoptosis through CytC release, CytC release leads to caspase 9 and 3 activation, SOUL promotes cell death through mitochondrial membrane permeabilization, neuronal loss in AD is attributed to apoptosis, and anti-apoptotic interventions decrease pathology in 3\u00d7Tg-AD mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C113-C117 represent established knowledge about apoptotic pathways and their relevance to AD, supported by appropriate citations. This provides the mechanistic framework for interpreting Hebp1's role in the caspase cascade.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Prior literature establishes that heme oxygenase-1 reduces A\u03b2-induced cytotoxicity, heme synthesis is impaired in AD with potential heme overload, cerebral amyloid angiopathy contributes to AD and causes vascular disruption with heme release, and CAA is associated with apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 represent prior knowledge supported by citations, establishing multiple potential sources of heme dysregulation in AD and connecting vascular pathology to heme-mediated neurotoxicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Cathepsin D cleaves Hebp1 to generate F2L peptide that binds FPR2 on microglia and promotes migration. FPR2-positive microglia are recruited to A\u03b2 plaques in AD patients. Cathepsin D expression correlates with aging in the dataset and is increased in AD patient hippocampus, suggesting possible F2L-mediated microglial recruitment during AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C128 are supported by citations and proteomic data showing cathepsin D upregulation. However, C129 is speculative, as the authors appropriately note with \"it is possible that.\" No direct evidence is provided for F2L generation or microglial recruitment in their experimental system. This represents an interesting hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Hebp1 plays a role in progressive neuronal loss during AD progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 represents the overall conclusion of the study, supported by the combined evidence of Hebp1 upregulation in AD (C2, C47, C53-C54), neuronal expression (C3, C61-C62), mitochondrial localization (C5, C65-C68), MICOS interaction (C4, C69-C72), and mediation of heme- and A\u03b2-induced apoptosis (C6-C8, C78-C103). While the in vitro mechanistic studies are compelling, direct demonstration of Hebp1's role in neuronal loss in vivo would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  }
+]

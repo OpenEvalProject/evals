@@ -1,0 +1,2343 @@
+{
+  "submission": {
+    "id": "80fdcf23-3534-4312-b5c2-bffe5f73689d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:22:35.764726Z",
+    "updated_at": "2025-12-02T14:22:35.764726Z"
+  },
+  "content": [
+    {
+      "id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "submission_id": "80fdcf23-3534-4312-b5c2-bffe5f73689d",
+      "content_type": "manuscript",
+      "content_text": "# Defining murine monocyte differentiation into colonic and ileal macrophages\n\n## Authors\n\n- Mor Gross-Vered<sup>1</sup>\n- S\u00e9bastien Trzebanski<sup>1</sup> ([ORCID: 0000-0002-0647-6814](https://orcid.org/0000-0002-0647-6814))\n- Anat Shemer<sup>1</sup>\n- Biana Bernshtein<sup>1</sup>\n- Caterina Curato<sup>1</sup> ([ORCID: 0000-0003-4938-7288](https://orcid.org/0000-0003-4938-7288))\n- Gil Stelzer<sup>2</sup>\n- Tomer-Meir Salame<sup>2</sup>\n- Eyal David<sup>1</sup>\n- Sigalit Boura-Halfon<sup>1</sup>\n- Louise Chappell-Maor<sup>1</sup>\n- Dena Leshkowitz<sup>2</sup>\n- Steffen Jung<sup>1</sup> ([ORCID: 0000-0003-4290-5716](https://orcid.org/0000-0003-4290-5716)) \u2020\n\n### Affiliations\n\n1. Department of Immunology Weizmann Institute of Science Rehovot Israel\n2. Bioinformatics Unit, Life Science Core Facilities Weizmann Institute of Science Rehovot Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nMonocytes are circulating short-lived macrophage precursors that are recruited on demand from the blood to sites of inflammation and challenge. In steady state, classical monocytes give rise to vasculature-resident cells that patrol the luminal side of the endothelium. In addition, classical monocytes feed macrophage compartments of selected organs, including barrier tissues, such as the skin and intestine, as well as the heart. Monocyte differentiation under conditions of inflammation has been studied in considerable detail. In contrast, monocyte differentiation under non-inflammatory conditions remains less well understood. Here we took advantage of a combination of cell ablation and precursor engraftment to investigate the generation of gut macrophages from monocytes. Collectively, we identify factors associated with the gradual adaptation of monocytes to tissue residency. Moreover, comparison of monocyte differentiation into the colon and ileum-resident macrophages revealed the graduated acquisition of gut segment-specific gene expression signatures.\n\n## Introduction\n\nThe recent past has seen major advance in our understanding of the diverse origins of tissue macrophages, as well as their discrete maintenance strategies. Macrophages were shown to arise from three distinct developmental pathways that differentially contribute to the tissue compartments in the embryo and adult (Ginhoux and Guilliams, 2016). In the mouse, embryonic tissue macrophages first develop from primitive macrophage progenitors that originate in the yolk sac (YS). In the brain, YS-macrophage-derived macrophages persist throughout adulthood, while in most other tissues these cells are replaced by fetal monocytes that derive from multi-potent erythro-myeloid progenitors (EMP). Definitive hematopoiesis commences from E10.5 with the generation of hematopoietic stem cells (HSC) that first also locate to the fetal liver, but eventually seed the bone marrow (BM) to maintain adult hematopoiesis. Most EMP-derived tissue macrophage compartments persevere throughout adulthood without major input from HSC-derived cells; however, in certain barrier tissues, as well as selected other organs, like the heart, embryonic macrophages are progressively replaced by HSC-derived cells involving a blood monocyte intermediate (Varol et al., 2015).\n\nMonocytes are continuously generated in the BM involving a sequence of developmental intermediates, before extravasation into the circulation (Ginhoux and Jung, 2014; Mildner et al., 2016). Once in the blood, murine classical Ly6C+ monocytes have a limited half-life (Yona et al., 2013). On demand, Ly6C+ monocytes can be rapidly recruited to sites of injury and challenge, where they complement tissue-resident macrophages and dendritic cells. In absence of challenge, some Ly6C+ monocytes give rise to vasculature-resident Ly6C- cells, which patrol the vessel walls (Auffray et al., 2007). These cells display macrophage characteristics including extended life spans (Yona et al., 2013; Mildner et al., 2017). In addition, Ly6C+ monocytes replenish the above-mentioned selected steady state tissue macrophage compartments, including the gut and skin (Ginhoux and Jung, 2014). Given their mobility, plasticity and key role in pathologies, the manipulation of monocytes and their differentiation could bear considerable therapeutic potential. However, monocyte differentiation into tissue resident cells remains incompletely understood.\n\nGut macrophages, which reside in the connective tissue underlying the gut epithelium, the lamina propria, are considered key players for the maintenance of intestinal homeostasis. As such, they constantly sense their environment and respond to the unique microbiota and food challenge (Bain and Mowat, 2011; Zigmond and Jung, 2013). Recent studies revealed that monocyte-derived lamina propria macrophages comprise in mice two populations, that\u00a0is short-lived cells and long-lived cells with self-renewing capacity (Shaw et al., 2018); the latter population might also include remnants of embryonic populations, as could additional intestinal long-lived macrophage populations that reside near blood vessels, nerves and in the Peyer's Patches (De Schepper et al., 2018). Evidence for macrophages with different half-lives is also emerging for the human small intestine (Bujko et al., 2018). Collectively, these findings highlight the existence of considerable macrophage heterogeneity, not only between different organs, but also within given tissues.\n\nMonocyte differentiation into intestinal macrophages involves phenotypic changes with respect to Ly6C, CD64 and MHCII expression, a sequence described as \u2018monocyte waterfall\u2019 (Tamoutounour et al., 2012). Mature steady-state gut macrophages tolerate the commensal microbiota and food antigens (Bain and Mowat, 2011; Zigmond and Jung, 2013). Their relative unresponsiveness is thought to rely on regulatory circuits that balance the expression of pro- and anti-inflammatory gene products, such as cytokines and molecules participating in pattern recognition receptor signaling cascades.\n\nMacrophages located in different tissues display characteristic enhancer landscapes and gene expression profiles, which have been attributed to the exposure of instructing factors of the microenvironment they reside in Amit et al. (2016). Gut segments display distinct anatomy, function and microbiota load (Mowat and Agace, 2014) and macrophages of small and large intestine hence also likely differ. Despite the known distinct susceptibility of the colon and ileum to pathology, such as to the IL10R deficiency (Glocker et al., 2009; Zigmond et al., 2014) and in ulcerative colitis, so far no comparative analysis of their macrophages has been reported. Likewise, our general understanding of monocyte-derived tissue resident macrophages remains scarce and is largely restricted to settings of inflammation.\n\nHere we investigated monocyte differentiation into intestinal macrophages in the small and large intestine. Using adoptive monocyte transfers into macrophage-depleted recipients (Varol et al., 2007; Varol et al., 2009), we synchronized the macrophages in terms of development, isolated colonic and ileal macrophages and subjected them to transcriptome profiling. Our data establish the distinct identities of gut segment resident macrophages and shed light on the kinetics and gradual gene expression of specific factors for their establishment of their identities.\n\n## Results\n\n### Monocyte transcriptomes acquired during differentiation into ileal and colonic gut macrophages\n\nTissue macrophages display distinct gene expression profiles and enhancer landscapes (Amit et al., 2016). This holds also for intestinal macrophages residing in small and large intestine. Transcriptomes of Ly6C+ BM monocytes, that\u00a0is the macrophage precursors, and transcriptomes of their progeny in colon and ileum displayed 6200 genes differentially expressed at least 2-fold across all analyzed data sets out of a total of 12345 detected genes (Figure 1\u2014figure supplement 1A\u2013C). 2255 genes were expressed in monocytes and down-regulated in macrophages (cluster I). Conversely, cluster II comprised genes whose expression was absent from monocytes, but shared by both small and large intestinal macrophages. Finally, 1087 and 987 genes were either preferentially or exclusively expressed in ileal or colonic macrophages, respectively.\n\nTo further characterize adult monocyte-derived gut macrophages, we took advantage of an experimental system involving monocyte engraftment of macrophage-depleted animals (Varol et al., 2007; Varol et al., 2009). Analysis of transferred cells at different intervals from engraftment allows the study of intestinal macrophage development over time, since monocyte differentiation is synchronized. For the cell ablation we used [CD11c-DTR\u00a0>\u00a0WT] BM chimeras, in which diphtheria toxin (DTx) receptor (DTR) transgenic intestinal macrophages can be conditionally ablated by DTx injection (Varol et al., 2007; Varol et al., 2009) (Figure 1A). Two days prior to monocyte transfer, DTx was applied to the recipients to clear their intestinal macrophage niche and mice were subsequently treated with DTx every second day. The monocyte graft was isolated from BM of Cx3cr1GFP/+ mice (Jung et al., 2000) and defined as CD117- CD11b+ CD115+ Ly6C+ GFPint cells; donor animals also harbored an allotypic marker (CD45.1) (Figure 1A, Figure 1\u2014figure supplement 1A). Grafted cells could be visualized in recipient gut tissue and underwent expansion, as reported earlier (Varol et al., 2009) (Figure 1\u2014figure supplement 2). Intestinal tissues of recipient mice were harvested on day 4, 8 and 12 post engraftment (Figure 1A) to isolate graft-derived macrophages according to CD45.1 and CX3CR1/GFP expression; these cells were CD11b+ CD64+ Ly6C- and mainly CD11chi (Figure 1B). Of note, specifics of the system preclude harvest of graft-derived cells at later time points (Varol et al., 2009). The monocyte graft and colonic and ileal macrophage populations were subjected to bulk RNA-seq using MARS-Seq technology (Jaitin et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig1-v1.jpg)\n\n**Figure 1.:** (A) Experimental protocol.\u00a0Briefly, [CD11c-DTR\u00a0>\u00a0C57BL/6] BM chimeras were treated as indicated with DTx. 2 \u00d7 106 CD117- CD11b+ CD115+ Ly6C+ GFPint BM monocytes isolated from Cx3cr1GFP/+ mice were injected intravenously. Macrophages were sorted from the colon and ileum at days 4, 8 and 12 post-transfer. Experiment was repeated three times, total 3\u20134 samples from each tissue at each time point. (B) Graft-derived macrophages were sorted at days 4, 8 and 12 post transfer based on CD45.1 and CX3CR1 (GFP) expression. GFP+ cells also express CD64, CD11b and variable levels of CD11c, and lacked Ly6C expression. (C) Principal component analysis (PCA) of transcriptomes of BM monocytes and grafted cells from colon and ileum at 4, 8 and 12 days post-transfer. Analysis performed in MATLAB. (D) Expression heat map of 4213 genes that show at least four fold change across all samples in the dataset, divided to seven clusters by the unbiased K-means algorithm in MATLAB. (Supplementary file 1, data sets 1,2, 5\u201311). (E) Representative genes from heat map in (D). (F\u2013H) Double volcano plots of genes that change from monocytes to day 4, day 4 to day 8 and day 8 to day 12 in the colon (green dots) and ileum (blue dots). Blue and green squares indicate genes that are significantly (Student's T-test, p-value<0.05) changed between the different time points. Numbers within blue and green squares represent the number of genes in the square, namely genes that significantly change. Arrows indicate up \u2013or down-regulation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Sorting schemes for BM Monocytes and resident intestinal macrophages isolated from CX3CR1-heterozygous CX3CR1GFP/+ C57BL/6 mice according to the following surface markers: CD117-CD11b+ CD115+ Ly6Chigh CX3CR1/GFPint (monocytes); DAPI- CD45+ CD11b+ CD64+ Ly6C-MHCII+ (macrophages). (B) Principal component analysis (PCA) of all 12346 genes expressed in BM monocytes and resident macrophages from the colon ad ileum of CX3CR1+/gfp mice. Analysis was performed in MATLAB. BM monocytes (n\u00a0=\u00a03); colon, ileum macrophages (n\u00a0=\u00a04, each) (Suppl. file 1, data sets 1, 2, 5).) (C) Heat map of transcriptomes and representative genes. 6200 genes that show at least two fold change across all samples in the dataset divided to four clusters by the K-means algorithm in MATLAB. Visualization performed in Gene-E. (Suppl. file 1, data sets 1, 2, 5). GO pathway analysis of clusters. (D) Example genes for the clusters in (C).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Fluorescent images of ileum of CX3CR1GFP/+ mouse (top) and DTx-treated [CD11c-DTR\u00a0>\u00a0WT] BM chimeras engrafted with CX3CR1GFP/+ monocytes at the indicated days post-transfer. (B) Flow cytometric analysis of engrafted (CD45.1) and host (CD45.2) intestinal macrophages in the adoptive transfer model involving monocyte engraftment of DTx-treated [CD11c-DTR\u00a0>\u00a0WT] BM chimeras; representative analyzed sample is from day eight post engraftment.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Elbow plot to determine number of clusters.\u00a0Since the plot was continuous, visual inspection was performed with different cluster numbers; according to cluster homogeneity we selected k\u00a0=\u00a07. (B) Schematic of clusters related to Figure 1D. (C) Metascape pathway analysis cluster II, genes shared by colonic and ileal monocyte graft-derived macrophages. (D) Metascape pathway analysis of cluster III, genes preferentially expressed by colonic monocyte graft-derived macrophages. (E) Metascape pathway analysis of cluster IV, genes preferentially expressed by ileal monocyte graft-derived macrophages.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Expression of genes in engrafted colonic and ileal macrophages, resident colonic and ileal macrophages at steady state, infiltrating monocytes and resident macrophages isolated from the colon of mice challenged with 1.5% DSS for 7 days and their respective controls.\n\nGene expression profiling revealed robust changes already at day four post engraftment; changes appeared to be tissue- rather than time-specific, with the exception of two day 4 samples of ileal macrophages, which clustered with the colonic samples (Figure 1C, Figure 1\u2014figure supplement 3A). Transcriptomes of the retrieved engrafted macrophages lacked expression of pro-inflammatory genes, such as Saa3, Lcn2, Il1b, Il6 and Tnf, as opposed to cells retrieved from colitic animals treated with Dextran Sulfate Sodium (DSS) (Okayasu et al., 1990) (Figure 1\u2014figure supplement 4). This supports the earlier notion that the cell ablation results in a transient tissue response, but the monocyte transfer system mimics cell differentiation close to steady-state conditions (Varol et al., 2009).\n\nComparative transcriptome analysis of grafted monocytes, their progeny retrieved from the recipient intestines, and resident ileal and colonic macrophages that were independently retrieved from Cx3cr1GFP/+ mice revealed 4213 differentially expressed genes (DEG) (>4 fold differences in any pairwise comparison among a total of 12878 genes) (Figure 1D). 748 genes were exclusively expressed in the monocyte graft, including Ly6c2, Ccl6 and Cebpe (Cluster I) (Figure 1D,E). 793 genes shared expression in graft-derived cells and gut macrophages in colon and ileum (Cluster II). These included Irf6, Gata6, Ly6A and Smad7. Cluster III comprised 634 genes that were either exclusively or preferentially expressed in colonic macrophages, such as Pparg, Foxa1 and Tlr1 (Figure 1E). Cluster IV comprised 539 genes exclusively or preferentially expressed in ileal macrophages, such as Nos2, Sox4 and Mmp9 (Figure 1E). Metascape analysis (Zhou et al., 2019) highlighted that genes associated with cluster II, II and IV were associated with distinct pathways, particularly with respect to epithelial cell communication and cell metabolism (Figure 1\u2014figure supplement 3B). We also identified genes that differed in expression between engrafted and resident macrophages. Specifically, 796 and 467 genes displayed high or low expression levels in monocytes, respectively, were highly expressed in resident colonic macrophages, but either low or absent in the graft-derived cells (Cluster V and VI). Finally, cluster VII comprised 236 genes that were expressed in monocytes, and down-regulated in resident gut macrophages, but not in the grafted cells.\n\nVolcano plot analysis revealed that early monocyte differentiation (graft vs day 4) was characterized by abundant changes in gene expression in both colon and ileum. In the colon 3407 genes were up- and 3608 genes were down-regulated; in the ileum 2975 genes were up- and 3206 genes were down-regulated, with up to 10 fold change (Figure 1F). Later time points (day 4 to day 8 and day 8 to day 12) were characterized by less pronounced alterations, both with respect to the number of DEG and their fold change (Figure 1G,H). In the colon 289 genes (66% of all significantly-changed genes) were induced between day 4 and 8 and only 111 genes (19%) were up-regulated between day 8 and 12. In the ileum this trend was reversed, with 95 genes (21%) up-regulated between day 4 and 8, but 321 genes (85%) induced between day 8 and 12. Collectively, this establishes that monocytes that enter distinct gut segments rapidly acquire characteristic transcriptomic signatures.\n\n### Transcriptomes of engrafted cells differ from resident macrophages\n\nOur experimental set up allows us to focus on cells that entered the gut in a defined time window. Interestingly, even by day 12, monocyte graft-derived cells differed in expression profiles when compared to resident ileal and colonic macrophages (Figure 2A). Differences included genes absent from, and exclusively expressed by engrafted cells (Figure 1D clusters V - VII, Figure 2B\u2013D). These differences might be attributable to incomplete macrophage maturation or to the recently reported heterogeneity of the intestinal macrophage compartment (Shaw et al., 2018; De Schepper et al., 2018). Notably, the majority of the cells we retrieve likely comprise lamina propria/mucosa resident macrophages, rather than the less abundant macrophages of the submucosa or muscularis layer (Shaw et al., 2018; De Schepper et al., 2018). Generation of a CD4+ Timd4+ subpopulation of lamina propria macrophages was reported to require prolonged residence in the tissue (Shaw et al., 2018). Although grafted cells in both colon and ileum acquired with time some expression of a hallmark of the long-lived cells, the phosphatidyl serine receptor Timd4 (Tim4) (Figure 2B, Figure 1D cluster VI), other signature genes, such as Cd209f, C2 and Rusc2 (Shaw et al., 2018), were not expressed in the time frame analyzed here (Figure 2B). The hypothesis that 12 days were insufficient for engrafted macrophages to acquire the full gene expression profile of resident cells was furthermore corroborated by the delayed onset of MHCII (encoded by H2-ab1) expression, one of the markers for intestinal macrophage maturation (Tamoutounour et al., 2012; Schridde et al., 2017) (Figure 2C). Engrafted macrophages were also characterized by lack of expression of Irf1 and the member of the TAM receptor kinase family Axl (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig2-v1.jpg)\n\n**Figure 2.:** (A) Volcano plots of genes that change from engrafted macrophages at day 12 and resident macrophages in the colon (left) and ileum (right).\u00a0Gray dots represent genes that do not significantly change (p-value>0.05), black dots represent genes that significantly change (p-value<0.05). Green and blue squares mark genes with at least 2-fold log fold change (equals 4-fold read change). Numbers inside squares indicate number of genes in square, namely genes that significantly change. Arrows indicate up- or down-regulated genes in resident macrophages compared to engrafted macrophages at day 12 post transfer. (B) Example genes characterizing long-lived intestinal macrophages according to Shaw et al. (C) Example genes highly expressed in resident macrophages compared to engrafted cells. (D) Example genes highly expressed in engrafted cells compared to long-lived macrophages. (E) Example genes participating in IL10/IL10R axis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative flow cytometric analysis of colonic myeloid cells.\u00a0Recent monocytic infiltrates and macrophages in the colon were defined as CD45+ CD11b+ Ly6C+ MHCII- and CD45+ CD11b+CD64+ Ly6C- MHCII+ cells, respectively and sorted accordingly for RNAseq. (B) Representative correlation coefficients between indicated cell populations (Suppl. file 1, data sets 3, 4, 5, 6). (C) Representative genes differentially expressed between monocyte graft, engrafted cells (d4), early monocyte infiltrates and resident macrophages.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Venn diagrams of gene lists up- and downregulated as compared to the monocyte graft. (B) Representative upregulated genes similarly expressed between the colonic macrophages as compared to the monocyte graft; engrafted cells isolated from [CD11c-DTR\u00a0>\u00a0WT] mice (d12); engrafted cells isolated from [CX3CR1-DTR\u00a0>\u00a0WT] mice (d14). (C) Representative downregulated genes similarly expressed between the colonic macrophages as compared to the monocyte graft; engrafted cells isolated from [CD11c-DTR\u00a0>\u00a0WT] mice (d12); engrafted cells isolated from [CX3CR1-DTR\u00a0>\u00a0WT] mice (d14).\n\nGenes, whose expression was low to absent in resident macrophages from both colon and ileum, but prominent in the engrafted cells (Figure 1D cluster VII), included the ones encoding ribosome-associated proteins and histones (Figure 2D). As previously shown (Varol et al., 2009), the reconstitution of emptied intestinal tissue with monocyte-derived cells involves clonal expansion, that is less likely to occur in physiological setting. In line with this notion, out of the 6383 genes significantly differing between engrafted and resident macrophages from either colon or ileum, 897 were annotated with a Gene Ontology (GO) term associated with \u2018proliferation\u2019 and \u2018cell cycle\u2019; 99 of these DEG were low to absent in resident macrophages from both tissues retrieved from non-engrafted Cx3cr1GFP/+ mice, such as Hmga1 (Figure 1D).\n\nWe recently reported the requirement of IL10Ra on colonic macrophages for gut homeostasis. Mice lacking this cytokine receptor on intestinal macrophages develop severe gut inflammation in the colon, but not the ileum (Zigmond et al., 2014; Bernshtein et al., 2019), as do children that harbor an IL10RA deficiency (Glocker et al., 2009). Interestingly, Il10ra was not induced in engrafted colonic macrophages, even 12 days after tissue entry, while engrafted ileal macrophages displayed Il10ra transcripts as early as day 4 (Figure 2E). Expression of the cytokine IL10 itself was almost absent from monocytes and engrafted macrophages in both tissues, but significantly present in resident macrophages retrieved from non-engrafted Cx3cr1GFP/+ mice, to a larger extent in the colon than the ileum (Figure 2E). Of note, Il1b expression displayed a similar pattern in line with an earlier suggestion that IL1 might induce macrophage IL-10 expression (Foey et al., 1998). Likewise, genes induced following macrophage exposure to Il10, such as Ccr5 (Houle et al., 1999) and Socs3 (Cassatella et al., 1999) displayed similar expression patterns. This suggests that in our model the IL10/IL10R axis is inactive in newly differentiated macrophages and established only after further maturation in the tissue.\n\nFlow cytometric analysis of colon tissue of WT C57BL/6 mice identifies a small population of CD11b+ Ly6C+ MHCII- cells that likely represent recent monocyte immigrants into the tissue (Figure 2\u2014figure supplement 1A). These rare cells probably entered the lamina propria to maintain the steady state macrophage pool of the intestine, before differentiating and have been referred to as P1 population of a \u2018monocyte waterfall\u2019 (Tamoutounour et al., 2012). Global RNAseq analysis of this population, alongside the Ly6C+ MHCII- macrophages revealed that, like the day four graft, these endogenous gut immigrants down-regulated monocyte markers and gained a gut macrophage signature, including expression of the Forkhead transcription factor (TF) FoxD2 and the nuclear receptor Nr3c2 (Figure 2\u2014figure supplement 1B,C). Endogenous gut immigrants did not display a signature indicating proliferation, such as Rpl10 or Hmga1. However, like the grafted cells, these early colonic immigrants lacked signature genes associated with long-lived gut macrophages, including Timd4 and CD209f, as well as expression of Il10ra and Il10.\n\nTo further corroborate our data, we used a distinct cell ablation model and performed adoptive monocyte transfers into DTx-treated [CX3CR1-DTR\u00a0>\u00a0WT] BM chimeras (Diehl et al., 2013; Aychek et al., 2015). The gene lists of upregulated and down regulated genes in macrophages retrieved from engrafted [CD11c-DTR\u00a0>\u00a0WT] and [CX3CR1-DTR\u00a0>\u00a0WT] chimeras showed with 71% and 59%, respectively, considerable overlap (Figure 2\u2014figure supplement 2). While our adoptive transfer inherently aims at the reconstitution of ablated cells which differ in the two models, the observed coherence suggests robustness of the approach.\n\nCollectively, these data show that despite some differences, monocyte graft-derived cells recapitulate the \u2018monocyte waterfall\u2019 (Tamoutounour et al., 2012).\n\n### Monocyte differentiation into gut segment-specific macrophages\n\nWe next focused on factors that might be involved in the generation of segment-specific macrophages, that\u00a0is genes whose expression differed between colonic and ileal macrophages.\n\n458 genes were up-regulated during monocyte differentiation in a segment-specific manner \u2013 351 in colonic macrophages and 107 in ileal macrophages (Figure 3A). Monocyte differentiation into ileal macrophages was accompanied by induction of Gata and Hbox TF family members, such as Gata5 and Hbox3 (Figure 3A), as well as genes encoding\u00a0the chemokine Ccl5 and the chemokine receptor CCR9. Monocytes that entered colon tissue preferentially up-regulated Foxd2, the nuclear receptor Nr3c2, and the dominant negative helix-loop-helix protein Id2 (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig3-v1.jpg)\n\n**Figure 3.:** (A) Example genes that are significantly up-regulated in intestinal macrophages from monocytes to day 4: either up-regulated in the colon but do not change in the ileum, or significantly up-regulated in the ileum but do not change in the colon.\u00a0Numbers indicate number of genes to follow the trend. Only genes which have significantly different levels between colonic and ileal macrophages at all time points (monocytes\u00a0>\u00a0day 4, day4\u00a0>\u00a0day8, day8\u00a0>\u00a0day12) were selected. (B) Example genes that are significantly down-regulated from monocytes to day four in intestinal macrophages: either down-regulated in the colon but do not change in the ileum, or significantly down-regulated in the ileum but do not change in the colon. Numbers indicate number of genes to follow the trend. (C) Example genes that are either up-regulated in the colon from monocytes to day four and down-regulated in the ileum from monocytes to day four or vice versa.\n\nOf the genes, which were specifically down-regulated in only one intestinal segment, 78 genes followed this trend in colonic and 99 in ileal macrophages. The latter down-regulated genes included 7 TFs, such as Foxp1 and Trim16, while Arid5a and Elk3 were specifically down-regulated in the colon (Figure 3B).\n\nMany genes related to immune reaction and response to challenge displayed higher expression in ileal macrophages than their colonic counterparts. Examples are: Arid5a, whose gene product regulates IL6 (Masuda et al., 2016); Elk3, which encodes a member of the ETS TF family and was reported to modulate the phagocytosis of bacteria by macrophages (Tsoyi et al., 2015) and Ano6, that is down-regulated in colonic macrophages (Figure 3B), and reportedly supports microbiocidal activity of macrophages involving P2X7 receptor signaling (Ousingsawat et al., 2015). In contrast, the enzyme Sod1, which was reported to impair macrophage-related parasite killing in cutaneous Leishmaniasis (Khouri et al., 2009), showed lower expression in ileal macrophages (Figure 3B).\n\nAnother interesting group of genes are those, which are expressed in monocytes, but further up-regulated in one tissue upon differentiation and down-regulated in the other. These genes might encode factors whose expression is incompatible with segment-specific macrophage fates. 54 such genes were expressed in colonic engrafted macrophages and silenced in their ileal counterparts; 15 genes followed an opposite trend (Figure 3C). Only one TF was found in both groups, KLF4 (Figure 3C). Aldh2 encoded by Aldh2, mostly known for its role in alcohol detoxification, was recently reported to play a role in repression of ATP6V0E2, which is critical for proper lysosomal function, autophagy, and degradation of oxidized LDL (Zhong et al., 2019) (Figure 3C). Hdac7 encoded by Hdac7 and up-regulated in ileal macrophages and down-regulated in colonic macrophages, was reported to interfere with the myeloid gene expression pattern and to inhibited macrophage-specific functions (Barneda-Zahonero et al., 2013) (Figure 3C). Finally, Fmnl3 participates in filopodia generation (Harris et al., 2010) (Figure 3C).\n\nCollectively, these data establish that monocytes establish gut segment specific gene expression patterns, likely under the influence of local cues.\n\n### Monocyte differentiation into generic tissue macrophages\n\nTranscriptomes of colonic and ileal macrophages 4 days after monocyte tissue entry were alike, with many genes sharing expression in both tissues when compared to their monocyte progenitors. Overall, by day 4, expression of 2007 genes was down-regulated more than 2-fold in the monocyte graft following differentiation into macrophages in both tissues (out of 12485 genes expressed). 2404 genes were induced in both the colon and ileum, arguably as part of a generic transcriptome signature of intestinal macrophages (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig4-v1.jpg)\n\n**Figure 4.:** (A) Dot plot for genes whose expression changes at least 2-fold between both monocytes to engrafted colonic macrophages at day four and monocytes to engrafted ileal macrophages at day 4. Black dots: genes that significantly change in the transition to both tissues. Blue dots: genes that significantly change in monocytes to engrafted ileum macrophages only. Green dots: genes that significantly change from monocytes to engrafted colon macrophages only. Only genes that significantly changed from monocytes to both colonic and ileal macrophages at day 4, but expression levels not distinct between colon and ileum at day 4, were selected. (B) Log averages of all genes that are up-regulated (left) or down-regulated (right) in generic intestinal macrophages compared to monocytes. Red line marks threshold (50 reads, 5.672 in log2) of very low/no expression levels. (C) Top 5 GO pathways that are related to genes that are 'selectively expressed in generic intestinal macrophages compared with monocytes (left) or selectively expressed in monocytes compared with macrophages (right). Bars show percent of genes (out of total genes) that are related to each GO term, red markers illustrate the p-value of each GO term. (D) Example genes from GO pathways. Bars indicate mean normalized reads, error bars represent SEM.\n\nNotably, 919 of the genes induced during monocyte differentiation into generic intestinal macrophages displayed very low prior expression in monocytes \u2013 below 50 reads (Figure 4B). In contrast, expression of fewer transcripts (183) seemed to be actively silenced during the differentiation process, as seen in the violin blot in Figure 4B. This implies that monocytes actively acquire macrophage identities by de novo mRNA synthesis, while much of the monocytic gene expression is compatible with the differentiation process.\n\nThe top 5 GO-terms associated with genes up-regulated in intestinal macrophages related to cell adhesion and migration processes (Figure 4C), including the chemokine Cxcl1, Ptprk which regulates cell contact and adhesion, and the integrin Itga6 (Figure 4D). The top 5 GO-terms associated with down-regulated genes in macrophages included cell cycle and division, as well as mRNA processing and DNA repair (Figure 4C,D), for example DNA polymerase beta (Polb), a cell cycle checkpoint regulator (Rad17) and an RNA helicase (Setx). Collectively, these data are in line with the transformation of circulating monocytes into non-migratory tissue resident cells and suggest a role for DNA damage-associated molecules during the differentiation process.\n\nGene expression changes are driven by TFs. In the case of intestinal macrophages, three major TF families seem to participate in monocyte-macrophage differentiation: CCAAT-enhancer-binding proteins (C/EBPs), E2 transcription factors (E2F) and early growth response TFs (Egr). Four of the Cebp family members (Cebpa, b, d, g) and 5 E2F family members (E2f2, 4, 6, 7, 8) were significantly down-regulated upon monocyte differentiation into macrophages (Figure 5A). In contrast, Egr1, 2 and 3 were up-regulated. Other down-regulated TFs included the regulators of immune response Bach1, Bcl6, Irf9, Nfatc3, Nfkb1 and Rela, as well as the master macrophage TF Spi1 (PU.1) (Figure 5B). The list of induced genes was enriched with homeobox TFs such as Sox13, Pbx1, Foxa1 and others (Figure 5C). In addition, this group comprised TFs that had previously been reported to be critical for the development of other tissue macrophages, such as the nuclear receptor LXR\u03b1 encoded by Nr1h3 for splenic macrophages and Gata6 for peritoneal macrophages (Varol et al., 2015; Rosas et al., 2014).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig5-v1.jpg)\n\n**Figure 5.:** (A) Expression graphs of 3 TF families: Cebp (left), E2f (middle) and Egr (right). Lines mark average normalized reads, error bars represent SEM. (B) Representative TFs that are down-regulated in generic intestinal macrophages. (C) Representative TFs that are up-regulated in generic intestinal macrophages.\n\n### Comparison of tissue-resident and vasculature-resident monocyte-derived cells\n\nMonocytes are generated in the BM to be subsequently disseminated throughout the body via blood vessels. Under inflammation, the cells are rapidly recruited to the site of injury. In absence of challenges, Ly6C+ monocytes can have distinct fates. A fraction of them gives rise to vasculature-resident Ly6C- \u2018patrolling\u2019 cells (Auffray et al., 2007). Other cells contribute to the homeostatic replenishment of selective tissue macrophage compartments (Figure 6A). To gauge the impact of the blood environment, as compared to a solid tissue such as the intestine, on the differentiation process, we next compared transcriptomes of Ly6C- blood cells and gut macrophages to their Ly6C+ monocyte precursors (Figure 6\u2014figure supplement 1). A heat map of all 1303 genes, whose expression significantly differed between Ly6C+ monocytes compared to blood- and gut tissue-resident cells (day 4), revealed five clusters (Figure 6B). Monocyte progeny, whether in vasculature or tissue shared signatures, showed considerable similarities as reflected in the expression pattern of two thirds of the genes (66.7%). Specifically, clusters I and II comprised 780 genes that were down-regulated upon Ly6C+ monocyte differentiation, including hallmark monocyte markers, such as Ly6c, Ccr2 and Mmp8 and Myd88 (Figure 6B,C). 160 genes were induced in both blood- and tissue resident monocyte-derived cells, albeit to different extend, including as Pparg, Ets2 and Tgfbr2 (Cluster III) (Figure 6B,D). Cluster IV and V spanned one third of the genes differentially expressed by Ly6C+ monocytes and their progenies, but distinct in tissue and vascular resident cells. Specifically, cluster IV comprised 253 genes up-regulated in blood-resident cells and down-regulated in gut macrophages. This included Csf2ra, Nfkb1, Il10ra and Spi1 (PU.1). Cluster V comprised 110 genes induced in gut macrophages but not vasculature-resident cells, such as the mitochondrial master regulator Ppargc1b and the metalloprotease Adam19 (Figure 6B). Concerning TFs, Cebpb was induced in Ly6C- blood monocytes, as was previously reported (Mildner et al., 2017), while Cebpa and Cebpd were down-regulated in both blood- and gut-resident cells (Figure 6E). Irf family members 7, 8 and 9 were down-regulated during Ly6C+ monocyte differentiation in blood and gut.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig6-v1.jpg)\n\n**Figure 6.:** (A) Scheme of monocyte development and fates during physiology and inflammation. (B) Fold change heat map of all 1303 genes that significantly change during the transition of Ly6C+ blood monocytes to Ly6C- blood monocytes and BM Ly6C+ monocytes to engrafted intestinal macrophages at day 4.\u00a0Colors represent fold change between tissue-resident cells and their respective precursor cells. (Supplementary file 1, data sets 1, 2, 5, 12,13). (C) Representative monocyte-related genes. (D) Representative genes related to monocyte-derived cells. (E) Expression of TFs of the Cebp and Irf gene families.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49998/elife-49998-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Representative flow cytometric analysis indicating gates used for isolation of blood monocyte subsets.\n\nCollectively, these data establish that vasculature-resident Ly6C- monocytes and gut macrophages that derive both from Ly6C+ monocytes display considerable overlap in transcriptomic signatures, but also display gene expression patterns that are likely associated with their specific environments.\n\n## Discussion\n\nAdult tissue macrophages can derive from distinct origins (Ginhoux and Guilliams, 2016; Varol et al., 2015). Most tissue macrophages are currently believed to be generated in the embryo from EMP via a fetal liver monocyte intermediate and subsequently maintain themselves through self-renewal. Selected macrophages residing in barrier tissues, such as gut and skin, however rely on constant replenishment from blood monocytes. Here we report the study of this macrophage generation from monocyte precursors.\n\nFollowing tissue damage and infection, classical monocytes, defined as CD14+ cells in humans, and Ly6C+ cells in mice critically contribute to inflammatory reactions by promoting and resolving acute challenges (Ginhoux and Jung, 2014; Mildner et al., 2016). At the sites of injury, monocytes can give rise to cells with both macrophage and DC features. Monocyte differentiation during inflammation has been studied in various pathophysiological settings, including experimental auto-immune encephalitis (Yamasaki et al., 2014; Masuda et al., 2016), colitis (Rivollier et al., 2012; Zigmond et al., 2012) and others (Avraham-Davidi et al., 2013). To study less well understood physiological monocyte differentiation in absence of overt inflammation, we took advantage of an experimental system that allows synchronized reconstitution of macrophage compartments by monocyte engraftment (Varol et al., 2007; Varol et al., 2009).\n\nThe majority of changes in gene expression, both in fold change and numbers, occurred in the transition from monocytes to either colonic or ileal macrophages at day four post transfer, that\u00a0is immediately after extravasation. Engrafted colonic and ileal macrophages segregated in gene expression according to tissue. Tissue-specific macrophage imprinting occurs hence early during development, shortly after tissue infiltration. Interestingly, two samples of engrafted ileal macrophages clustered with the colonic samples rather than the ileal ones, suggesting that the colonic signature is default. Colonic macrophages at day 12 post engraftment were also more distinct from endogenous colonic macrophages, compared to their ileal counterparts, which implies that the mature colonic gene signature might take longer time to develop or could be more heterogeneous. Recent studies have noted heterogeneity within murine blood monocytes, in particular with respect to an intermediate between the Ly6C+ and Ly6- populations (Mildner et al., 2017). While we currently cannot formally rule out that, colonic and ileal macrophages could hence derive from distinct precursors, we consider this however unlikely.\n\nMowat and colleagues have reported a transcriptome analysis of monocytes and colonic macrophages, including intermediates of the \u2018waterfall\u2019 (Schridde et al., 2017). The authors highlighted the critical role of TGFb in the differentiation process. While a comparison of these data to ours confirmed the late onset of genes that characterize long-lived gut macrophages, the use of the distinct platforms and distinct experimental set up precluded further direct alignment. Of note, monocyte-derived cells are in our system synchronized with respect to development and therefore allow additional temporal resolution, especially with respect to final population of the scheme (P4), which comprises in the cited study (Schridde et al., 2017) a heterogeneous conglomerate.\n\nWith their extended half-life, Ly6C- monocytes that patrol the endothelium, have been proposed to represent vasculature-resident macrophages (Ginhoux and Jung, 2014). Indeed, these cells shared gene signatures with the gut resident macrophages, such as the reduction in IRF TFs following monocyte differentiation and induction of characteristic macrophage genes, such as PPARg and TGFbR. However, the comparison of these blood-resident cells to gut tissue-resident macrophages revealed also considerable differences likely associated with the residence in vasculature and the solid tissue, respectively.\n\nThough anatomically close, the small and large intestine represent very distinct tissues, including structural dissimilarities, such as the extended ileal villi and Peyer\u2019s Patches, characteristic distinct abundance of immune cells, as well as different luminal microbiome content (Mowat and Agace, 2014). Highlighting these differences, ileum and colon display also unique susceptibility to perturbations, as for instance to a IL10R deficiency (Zigmond et al., 2014; Bernshtein et al., 2019). Our comparative analysis of colonic and ileal macrophages, including their generation from monocytes, might provide critical insights into the mechanism underlying segment-specific pathology resistance or - susceptibility in the gut. Together with earlier reports (Mildner et al., 2017; Schridde et al., 2017), our data sets can provide a starting point for hypothesis-driven experiments.\n\nTo conclude, we characterized here monocyte-derived intestinal macrophages generated under conditions avoiding overt inflammation. We highlight specific genes and TFs which are regulated following monocyte differentiation to generic or segment-specific intestinal macrophages. By comparing transcriptomes of early intestinal macrophages and blood-resident Ly6C- cells, we show that the populations which share a common ancestor \u2013 the Ly6C+ blood monocytes \u2013 show considerable overlap in gene expression, while they also display adaptation to their specific environments. Our data provide a gateway and reference point to further studies on monocyte differentiation to macrophages.\n\n## Materials and methods\n\n### Mice\n\nMice were kept in a specific-pathogen-free (SPF), temperature-controlled (22 \u00b1 1\u00b0C) facility on a reverse 12 hr light/dark cycle at the Weizmann Institute of Science. Food and water were given ad libitum. Mice were fed regular chow diet (Harlan Biotech Israel Ltd, Rehovot, Israel). The following mice strains all on C57BL6 background were used: Cx3cr1gfp/+ mice (Jung et al., 2000), CD11c-DTR transgenic mice (B6.FVB-Tg [Itgax-DTR/GFP] 57Lan/J) (Jung et al., 2002) and CX3CR1-DTR transgenic mice (Diehl et al., 2013). BM chimeras were generated by engraftment of 7\u201310 weeks old recipient mice that were irradiated the day before with a single dose of 950 cGy using a XRAD 320 machine (Precision X-Ray (PXI). Femurs and tibiae of donor mice were removed and BM was flushed with cold PBS. BM was washed with cold PBS twice and filtered by 100 \u03bcm filter. BM cells were suspended in PBS and 5 \u00d7 106 cells were injected IV into irradiated recipient. Mice were handled and experiments were performed under protocols approved by the Weizmann Institute Animal Care Committee (IACUC) in accordance with international guidelines.\n\n### Isolation of BM monocyte grafts and monocyte transfers\n\nFemurs and tibias of donor mice were removed and BM was flushed with cold PBS. BM was washed with cold PBS twice and filtered by 100 \u03bcm filter. Cells were suspended with PBS and loaded on equal amount of Ficoll (GE healthcare). Tubes were centrifuged 920 g in room temperature for 20 min without breaks and Buffy coats were collected and washed with cold PBS. CD11c-DTR\u00a0>\u00a0wt]. Cells were stained and sorted according to the following markers: CD117- CD11b+ CD115+ Ly6C+ GFPint. BM chimeras were treated with 18 ng / gram bodyweight Diphtheria toxin (DTx) (Sigma-Aldrich, Cat # D0564) for two consecutive days before transfer. At the day of transfer mice were injected with 106 BM monocytes IV. At days 1, 3, 5, 7 and 9 after transfer mice were injected with 9 ng / gr bodyweight DTx.\n\n### Isolation of intestinal lamina propria cells\n\nIntestines were removed and fecal content flushed out with PBS; tubes were opened longitudinally and cut into 0.5 cm sections. Pieces were placed in 5ml/sample (up to 300gr of tissue) of Hanks' Balanced Salt Solution (HBSS) with 10% heat-inactivated FCS/FBS, 2.5 mM EDTA and 1 mM DL-Dithiothreitol ((DTT), Sigma-Aldrich Cat# D9779) and incubated on a 37\u00b0C shaker at 300 rpm for 30 min to remove mucus and epithelial cells. Following incubation, samples were vortexed for 10 s and filtered through a crude cell strainer. Pieces that did not pass the strainer were collected and transferred to 5 ml/sample of PBS +/+ with 5% heat-inactivated FCS/FBS, 1 mg/ml Collagenase VIII (Sigma-Aldrich Cat# C2139) and 0.1 mg/ml DNase I (Roche Cat# 10104159001). Tissue was incubated in a 37\u00b0C shaker at 300 rpm for 40 min (colon) or 20 min (ileum) in the solution. After incubation, samples were vortexed for 30 s until tissue was dissolved, then filtered through a crude cell strainer. The strainer was washed with PBS -\u00a0/-\u00a0and centrifuged in 4\u00baC, 375G for 6 min. Cells were stained and subjected to FACS analysis or sorting.\n\n### Isolation of murine blood monocytes\n\nBlood was retrieved from the vena cava, immediately placed in 150 U/ml Heparin and loaded on Ficoll (GE healthcare). Tubes were centrifuged 920 g in room temperature for 20 min without breaks and Buffy coats were collected and washed with cold PBS. Cells were sorted according to the following parameters: CD45+ CD11b+ CD115+ Ly6C+/-.\n\n### Flow cytometry analysis\n\nSamples were suspended and incubated in staining medium (PBS without calcium and magnesium with 2% heat-inactivated Fetal Calf/Bovine Serum (FCS/FBS) and 1 mM EDTA) containing fluorescent antibodies. Following incubation, cells were washed with staining buffer only or staining buffer with DAPI, centrifuged, filtered through 80 \u03bcm filter and read. For FACS analysis, LSRFortessa (BD Biosciences) was used. For cell sorting, FACSAria III or FACSAria Fusion (BD Biosciences) were used. Results were analyzed in FlowJo software (Tree Star). Staining antibodies (clones indicated within brackets): anti-CD45 (30-F11), CD11b (M1/70), CD115/CSF-1R (AF598), Ly-6C (HK1.4), CD64/Fc\u03b3RI (X54-5/7.1), CD11c (N418), anti-I-Ab (MHCII) (AF6-120.1), DAPI.\n\n### RNA sequencing and analysis\n\nRNA-seq of populations was performed as described previously (Diehl et al., 2013; Jaitin et al., 2014). Cells were sorted into 100 \u00b5l of lysis/binding buffer (Life Technologies) and stored at 80\u00b0C. mRNA was captured using Dynabeads oligo(dT) (Life Technologies) according to manufacturer\u2019s guidelines. A derivation of MARS-seq (Jaitin et al., 2014) was used to prepare libraries for RNA-seq, as detailed in Shemer et al. (2018). RNA-seq libraries were sequenced using the Illumina NextSeq 500. Raw reads were mapped to the genome (NCBI37/mm9) using hisat (version 0.1.6). Only reads with unique mapping were considered for further analysis. Gene expression levels were calculated and normalized using the HOMER software package (analyzeRepeats.pl rna mm9 -d < tagDir > count exons -condenseGenes -strand + -raw). Gene expression matrix was clustered using k-means algorithm (MATLAB function kmeans) with correlation as the distance metric. PCA was performed by MATLAB function pca. Gene ontology was performed by DAVID (https://david.ncifcrf.gov). Data on molecules and pathways was partly obtained by Ingenuity Pathway Analysis (IPA), Ingenuity Target Explorer, Qiagen and Metascape Pathway analysis (Zhou et al., 2019).\n\n### Statistics\n\nResults are presented as mean\u00a0\u00b1\u00a0SEM. Statistical analysis was performed using Student\u2019s t test. * p-value<0.05 ** p-value<0.01 *** p-value<0.001.\n",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "0e336e73-cd36-48c0-97da-842bfb94704a",
+      "submission_id": "80fdcf23-3534-4312-b5c2-bffe5f73689d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew J MacPherson, University of Bern Switzerland\n\nReviewers:\n- Christoph Mueller, University of Bern Switzerland\n\n## Review text\n\nDOI: [10.7554/eLife.49998.sa1](https://doi.org/10.7554/eLife.49998.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper shows transcriptomic studies of diphtheria toxin ablation of CD11c cells with engraftment of CX3CR1 donor cells in a well-established macrophage reconstitution model. The main conclusions of the paper are that most transcriptomic signatures of the intestinal context (compared with blood monocytes) are rapidly acquired; that there are distinct transcriptomic signatures between the small and large intestinal macrophages and that early uptake differences in line with the Mowat 'waterfall' effect can be captured.\n\nThis is a well-established model by a group with a strong track-record in the field addressing an important problem to understand the differences in intestinal macrophages between the small and large intestines.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors were asked to provide a plan for revisions before the editors issued a final decision, this was subsequently approved by the editors. What follows is the editors\u2019 letter requesting such plan.]\n\nThank you for sending your article entitled \"Defining monocyte differentiation into colonic and ileal macrophages\" for peer review at eLife. Your article is being evaluated by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation is being overseen by Satyajit Rath as the Senior Editor.\n\nGiven the list of essential revisions, including new experiments, the editors and reviewers invite you to respond with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a binding recommendation.\n\nThere are two main issues where we would be very grateful for clarification. The first is how you would intend to respond to the potential bias introduced by the CD11c depletion strategy as in the major comment of reviewer 2 and the general remarks of reviewer 3. A second vital issue is that the paper could easily be very quickly superseded by a single cell approach. If you have, or intend to obtain single cell data, we would ask that it is included in this paper. Of course, we would respect your wishes if you choose to publish this data and the single cell data elsewhere, although we would have concerns if the eLife manuscript is preliminary to another publication.\n\nReviewer #1:\n\n1) A concern is that the specifics of the k-means clustering with subsequent selectivity of individual transcripts. Justification of the groupings (elbow, gap statistics) is not shown, and it is generally unclear how multiplicity of testing is dealt with. It would likely transform the paper to show 'pseudo-time' analyses (E.g. Nature Communications 9:2442). In addition, color-coding the bulk plots for the different cell populations would give a feeling for the groupings independently of the most extreme cases. It would be helpful to rationalize results according to discrimination of different intestinal contexts and may be more powerful in revealing contextual differences.\n\n2) The authors (almost certainly correctly) argue that lamina propria macrophages are the main population being studied. Nevertheless, they are showing bulk analyses of heterogeneous populations (developmentally and according to micro-anatomical position). This data seems extremely likely to be rapidly superseded by single cell analyses. At the very least the authors should acknowledge this point. It would rather devalue the impact of the paper in eLife if the authors are able to publish single cell analyses in a different paper in the near future: to include such data would empower the above approach and transform the paper.\n\n3) It appears that many of the annotated gene expression results selected for individual display in the histograms are derived from the bulk transcriptomic analyses. The question of reproducibility could be dealt with by qPCR methodology for critical targets.\n\n4) The manuscript rather catalogues the microphage contextual differences without clear validation. It would help to use in enrichment plots or STRING analyses to display the biological interpretations.\n\nReviewer #2:\n\nThe present manuscript by Steffen Jung and collaborators entitled \"Defining monocyte differentiation into colonic and ileal macrophages\" represents a well-written report by experienced leaders in the field of macrophage/dendritic cell biology.\n\nThe authors used CD11c-DTR bone marrow chimeric mice to deplete CD11c+ macrophages before reconstituting with CD45.1 congenic Ly6C+ bone marrow-derived monocytes. This allowed to synchronize, and, comparatively analyze, the differentiation of monocyte-macrophage differentiation under homeostatic conditions during a 12 day period in the ileum, and the colon by RNA profiling.\n\nHence, the authors addressed a so far under-investigated topic, i.e. the site-specific differentiation/maturation of monocyte-derived macrophages in distinct intestinal compartments under non-inflammatory, homeostatic conditions.\n\nNovel findings reported include the identification of distinct expression profiles of macrophages in separate intestinal segments under homeostatic conditions, likely driven by site-specific microenvironmental cues which (likely) lead to the distinct expression profiles seen in resident macrophages in the ileum and the colon. Remarkably, following engraftment, the monocyte-intestinal macrophage differentiation essentially recapitulated the monocyte-macrophage waterfall as previously described by Bernard Malissen and colleagues.\n\nLast but not least, I also agree with their conclusion that \"their data provide a gateway and reference point to further studies on monocyte differentiation to macrophages\" \u2013 despite some discrepant findings to reports in the literature -which were also acknowledged by the authors and ascribed to different experimental set-ups and use of distinct analysis platforms.\n\nMy main concern with the present manuscript is the used the cell-depletion protocol, which most likely results in a biased depletion of some, but not all, host-derived intestinal macrophage subsets in recipient mice:\n\nThe authors took advantage of a (CD11c-DTR)-targeted cell-depletion-reconstitution strategy to obtain a synchronized reconstitution of the intestinal macrophage compartment by the adoptive transfer of bone marrow-derived Ly6C+ monocytes. This experimental system was previously used by the authors, for example, to successfully dissect the different origins and functions of intestinal lamina propria DC subsets (Varol et al., 2009). In this article, the authors also acknowledge that \"DTx treatment of [CD11c-DTR > WT] chimeras resulted in the depletion of all lamina propria DC subsets, whereas the population of CD11c-/lo CD11b+ lpM\u00f8 remained unaltered\". Hence, in the present study even after repeated DT treatment, the intestinal lamina propria is likely to be still populated with host (CD45.2)-derived intestinal CD11b+ CD11c-/lo macrophages at the time of engraftment with the CD45.1 Ly6C+ BM-derived monocytes. Hence, it cannot be ruled out that these host-derived macrophages affect the differentiation pathway of the engrafted BM-monocytes in the present study, e.g. by competing with engrafted monocytes for appropriate niches for the further differentiation/maturation in the lamina propria, and/or by further influencing the site-specific microenvironment (e.g. by selective secretion of mediators that affects the differentiation of engrafted monocytes).\n\nHence, the presence of a biased population of host-derived macrophages during the synchronized differentiation of monocytes to macrophages need to be considered and the possible implications on the interpretations of the results obtained need to be addressed by the authors. As an example, providing information on the relative distribution and frequencies of these CD45.2+ CD11c -/lo CD11b+ lamina propria macrophages in untreated, and engrafted chimeric CD45.1 mice may allow assessing the consequences of the biased depletion of intestinal macrophages using this particular experimental cell-depletion system.\n\nReviewer #3:\n\nGross-Vered et al. use a strategy where they ablate all CD11c+ cells and then transfer blood monocytes to repopulate intestinal macrophages. They then seek to define the transcriptional program of differentiation of monocytes into tissue resident macrophages. At 4 days post-transfer (earliest timepoint looked at), the authors find that cells which have extravasated into the tissue no longer transcriptionally resemble monocytes and are more similar to tissue resident macrophages. The authors also identify some changes between small and large intestine. However, resident cell populations examined are likely a mixed population. Others have shown that monocytes do not reconstitute all intestinal macrophage populations so differences with resident cells could be due to altered cell populations. As the ablation strategy depletes all CD11c+ cells (all lamina propria macrophages and all dendritic cells) it is unclear how physiologically relevant this system is. Finally, functional predictions from the data are lacking, making it difficult to assess significance.\n\n1) What is the resident population? If defined as in Figure 1\u2014figure supplement 1A they are CD11b+CD64+MHCII+ Recent publications (Shaw et al., 2018, Schepper et al., 2018) demonstrated that this contains at least 3 macrophage populations: a self-renewing population, one with slow turnover from monocytes and one with rapid turnover from monocytes. The authors should compare with each population that repopulates (slowly and quickly) from monocytes.\n\n2) The ablation strategy utilized will get rid of all macrophage populations as well as dendritic cells. It is unclear if transferred monocytes can repopulate all macrophage populations. Altered transcriptional profiles could be due to changed proportion of differentiated cells. Similarly, different representation of each population could lead to differences between small and large intestine.\n\n3) Shaw et al., 2018, Schepper et al., 2018, and Schridde et al., 2017, performed transcriptional profiling of these populations during distinct developmental windows or during repopulation after ablation of individual populations. It is unclear how the data presented in Gross-Vered fits with the findings in these publications. In Discussion the authors note minimal overlap with Schridde and claim that differences in finding (which are not elaborated) are because Schridde et al. did not synchronize precursors, but this could be because the ablation strategy removes and does not repopulate a broad range of cell populations.\n\n4) A mapping or network analysis would be helpful to understand how these cell populations could be functionally distinct. It is unclear how any described differences would lead to differential outcomes in the tissue. The authors have superficial analysis with listing of GO terms, but these are quite generic.\n\n5) Unclear what the comparison with monocytes adds. These are functionally very different cells so it is not surprising they have distinct transcriptional profile from tissue resident macrophages.\n\n6) What do the authors mean that since two of the ileal samples cluster with the colon it means the colon is the default? More data would need to support this statement.\n",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b9be87e0-35ef-43b3-9375-dd8f792eee12",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C1",
+      "claim": "Classical monocytes give rise to vasculature-resident cells that patrol the luminal side of the endothelium in steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "In steady state, classical monocytes give rise to vasculature-resident cells that patrol the luminal side of the endothelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about monocyte behavior in steady state conditions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "c92b0880-50ce-4fa5-94e4-5c9546b54884",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C2",
+      "claim": "Classical monocytes feed macrophage compartments of selected organs including barrier tissues such as the skin and intestine, as well as the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, classical monocytes feed macrophage compartments of selected organs, including barrier tissues, such as the skin and intestine, as well as the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about monocyte contribution to tissue macrophages.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "31a8832e-42e7-4fb9-b0ac-0a9cd7f041b3",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C3",
+      "claim": "Monocyte differentiation under conditions of inflammation has been studied in considerable detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocyte differentiation under conditions of inflammation has been studied in considerable detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field, indicating existing research on inflammatory monocyte differentiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "d22bfea2-73d9-48ed-8b9f-dc2e275c05f8",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C4",
+      "claim": "Monocyte differentiation under non-inflammatory conditions remains less well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, monocyte differentiation under non-inflammatory conditions remains less well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in knowledge that motivates the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "a62a287f-936c-4a35-8540-ca0590c6a956",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C5",
+      "claim": "Comparison of monocyte differentiation into the colon and ileum-resident macrophages revealed the graduated acquisition of gut segment-specific gene expression signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, comparison of monocyte differentiation into the colon and ileum-resident macrophages revealed the graduated acquisition of gut segment-specific gene expression signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on transcriptomic analysis of engrafted cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "2afa8a83-2359-4889-8bf3-8ae7582c0be3",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C6",
+      "claim": "Embryonic tissue macrophages first develop from primitive macrophage progenitors that originate in the yolk sac in the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse, embryonic tissue macrophages first develop from primitive macrophage progenitors that originate in the yolk sac (YS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about macrophage development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "2732c983-79ee-4ba9-8f5d-b4bc68e91fe6",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C7",
+      "claim": "YS-macrophage-derived macrophages persist throughout adulthood in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the brain, YS-macrophage-derived macrophages persist throughout adulthood, while in most other tissues these cells are replaced by fetal monocytes that derive from multi-potent erythro-myeloid progenitors (EMP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about tissue-specific macrophage maintenance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "39088d54-cc80-45e6-bb7f-bd72f3bdc26f",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C8",
+      "claim": "In most tissues other than brain, YS-macrophage-derived cells are replaced by fetal monocytes that derive from multi-potent erythro-myeloid progenitors (EMP).",
+      "claim_type": "EXPLICIT",
+      "source": "In the brain, YS-macrophage-derived macrophages persist throughout adulthood, while in most other tissues these cells are replaced by fetal monocytes that derive from multi-potent erythro-myeloid progenitors (EMP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about macrophage replacement in tissues.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "0e06984d-3241-449d-ab1b-74f6627fe249",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C9",
+      "claim": "Definitive hematopoiesis commences from E10.5 with the generation of hematopoietic stem cells (HSC).",
+      "claim_type": "EXPLICIT",
+      "source": "Definitive hematopoiesis commences from E10.5 with the generation of hematopoietic stem cells (HSC) that first also locate to the fetal liver, but eventually seed the bone marrow (BM) to maintain adult hematopoiesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about developmental hematopoiesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f24311e1-2b1e-4021-8bf2-3a04b7a7401d",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C10",
+      "claim": "Most EMP-derived tissue macrophage compartments persevere throughout adulthood without major input from HSC-derived cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Most EMP-derived tissue macrophage compartments persevere throughout adulthood without major input from HSC-derived cells; however, in certain barrier tissues, as well as selected other organs, like the heart, embryonic macrophages are progressively replaced by HSC-derived cells involving a blood monocyte intermediate (Varol et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "c5cfbdd7-9461-4a85-a4c1-9a5f6f1a2ea6",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C11",
+      "claim": "In certain barrier tissues and selected other organs like the heart, embryonic macrophages are progressively replaced by HSC-derived cells involving a blood monocyte intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "Most EMP-derived tissue macrophage compartments persevere throughout adulthood without major input from HSC-derived cells; however, in certain barrier tissues, as well as selected other organs, like the heart, embryonic macrophages are progressively replaced by HSC-derived cells involving a blood monocyte intermediate (Varol et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "3703fb66-e1f2-4022-9197-e0c297138b5d",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C12",
+      "claim": "Murine classical Ly6C+ monocytes have a limited half-life once in the blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Once in the blood, murine classical Ly6C+ monocytes have a limited half-life (Yona et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "249611d9-ee86-4eef-b27e-1d5963aeebc1",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C13",
+      "claim": "Ly6C+ monocytes can be rapidly recruited to sites of injury and challenge on demand.",
+      "claim_type": "EXPLICIT",
+      "source": "On demand, Ly6C+ monocytes can be rapidly recruited to sites of injury and challenge, where they complement tissue-resident macrophages and dendritic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about monocyte function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f3cfa1c7-fd83-4f23-9001-7f4ff4ee3f9e",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C14",
+      "claim": "In absence of challenge, some Ly6C+ monocytes give rise to vasculature-resident Ly6C- cells which patrol the vessel walls.",
+      "claim_type": "EXPLICIT",
+      "source": "In absence of challenge, some Ly6C+ monocytes give rise to vasculature-resident Ly6C- cells, which patrol the vessel walls (Auffray et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "615f99f2-f277-4275-b663-e2c7f8899352",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C15",
+      "claim": "Vasculature-resident Ly6C- cells display macrophage characteristics including extended life spans.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells display macrophage characteristics including extended life spans (Yona et al., 2013; Mildner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "bec31a8a-6bd0-49fa-972b-32e9cfcdac56",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C16",
+      "claim": "Ly6C+ monocytes replenish selected steady state tissue macrophage compartments including the gut and skin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ly6C+ monocytes replenish the above-mentioned selected steady state tissue macrophage compartments, including the gut and skin (Ginhoux and Jung, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "994ac171-54c5-4bda-94aa-8c6d7b9bfa92",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C17",
+      "claim": "Gut macrophages reside in the connective tissue underlying the gut epithelium, the lamina propria.",
+      "claim_type": "EXPLICIT",
+      "source": "Gut macrophages, which reside in the connective tissue underlying the gut epithelium, the lamina propria, are considered key players for the maintenance of intestinal homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about gut macrophage location.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "cf4f1d4b-d994-4de5-a937-63a13a18dd4f",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C18",
+      "claim": "Gut macrophages are considered key players for the maintenance of intestinal homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gut macrophages, which reside in the connective tissue underlying the gut epithelium, the lamina propria, are considered key players for the maintenance of intestinal homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about gut macrophage function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "49fe1b2e-107c-4ea5-b6f1-558bd6acb777",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C19",
+      "claim": "Monocyte-derived lamina propria macrophages comprise in mice two populations: short-lived cells and long-lived cells with self-renewing capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies revealed that monocyte-derived lamina propria macrophages comprise in mice two populations, that is short-lived cells and long-lived cells with self-renewing capacity (Shaw et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as recent knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "d9b8c754-9d0a-4834-b632-4d3e135dcb44",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C20",
+      "claim": "The long-lived lamina propria macrophage population might include remnants of embryonic populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies revealed that monocyte-derived lamina propria macrophages comprise in mice two populations, that is short-lived cells and long-lived cells with self-renewing capacity (Shaw et al., 2018); the latter population might also include remnants of embryonic populations, as could additional intestinal long-lived macrophage populations that reside near blood vessels, nerves and in the Peyer's Patches (De Schepper et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility based on cited work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "5f26c6f5-c9a9-4580-a81e-0a4e1ac56833",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C21",
+      "claim": "Additional intestinal long-lived macrophage populations reside near blood vessels, nerves and in the Peyer's Patches.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies revealed that monocyte-derived lamina propria macrophages comprise in mice two populations, that is short-lived cells and long-lived cells with self-renewing capacity (Shaw et al., 2018); the latter population might also include remnants of embryonic populations, as could additional intestinal long-lived macrophage populations that reside near blood vessels, nerves and in the Peyer's Patches (De Schepper et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "a6de2f7d-5d13-477f-9bf9-89eab61a812a",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C22",
+      "claim": "Evidence for macrophages with different half-lives is emerging for the human small intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for macrophages with different half-lives is also emerging for the human small intestine (Bujko et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as emerging knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "0ec15108-f793-4bc2-b7cf-1e9b2f7d2306",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C23",
+      "claim": "Monocyte differentiation into intestinal macrophages involves phenotypic changes with respect to Ly6C, CD64 and MHCII expression, a sequence described as 'monocyte waterfall'.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocyte differentiation into intestinal macrophages involves phenotypic changes with respect to Ly6C, CD64 and MHCII expression, a sequence described as 'monocyte waterfall' (Tamoutounour et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "b10aba25-bbdd-4f98-b163-8edc91963e84",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C24",
+      "claim": "Mature steady-state gut macrophages tolerate the commensal microbiota and food antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature steady-state gut macrophages tolerate the commensal microbiota and food antigens (Bain and Mowat, 2011; Zigmond and Jung, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "12ae5c57-2686-4458-8f04-fb7282277b57",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C25",
+      "claim": "The relative unresponsiveness of gut macrophages is thought to rely on regulatory circuits that balance the expression of pro- and anti-inflammatory gene products.",
+      "claim_type": "EXPLICIT",
+      "source": "Their relative unresponsiveness is thought to rely on regulatory circuits that balance the expression of pro- and anti-inflammatory gene products, such as cytokines and molecules participating in pattern recognition receptor signaling cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis about the mechanism of gut macrophage tolerance.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "c62fc237-c524-4d29-aa5e-c85fb0f6b8ce",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C26",
+      "claim": "Macrophages located in different tissues display characteristic enhancer landscapes and gene expression profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages located in different tissues display characteristic enhancer landscapes and gene expression profiles, which have been attributed to the exposure of instructing factors of the microenvironment they reside in Amit et al. (2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "7bfe521b-aa69-46fb-9eb0-e13ead136b48",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C27",
+      "claim": "Gut segments display distinct anatomy, function and microbiota load.",
+      "claim_type": "EXPLICIT",
+      "source": "Gut segments display distinct anatomy, function and microbiota load (Mowat and Agace, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "1ab5857a-56cf-422d-822d-1eb2a592837d",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C28",
+      "claim": "Macrophages of small and large intestine likely differ.",
+      "claim_type": "EXPLICIT",
+      "source": "Gut segments display distinct anatomy, function and microbiota load (Mowat and Agace, 2014) and macrophages of small and large intestine hence also likely differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference based on the differences in gut segments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "42039b32-abbc-43d0-aa6a-889d8efaf542",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C29",
+      "claim": "The colon and ileum display distinct susceptibility to pathology such as to IL10R deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the known distinct susceptibility of the colon and ileum to pathology, such as to the IL10R deficiency (Glocker et al., 2009; Zigmond et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "4b1079cf-58db-4a39-a598-353387822967",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C30",
+      "claim": "No comparative analysis of colonic and ileal macrophages has been reported prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the known distinct susceptibility of the colon and ileum to pathology, such as to the IL10R deficiency (Glocker et al., 2009; Zigmond et al., 2014) and in ulcerative colitis, so far no comparative analysis of their macrophages has been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in the literature that this study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "a384f63c-68f9-413f-846a-597b871829ce",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C31",
+      "claim": "Transcriptomes of Ly6C+ BM monocytes and their progeny in colon and ileum displayed 6200 genes differentially expressed at least 2-fold across all analyzed data sets out of a total of 12345 detected genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptomes of Ly6C+ BM monocytes, that is the macrophage precursors, and transcriptomes of their progeny in colon and ileum displayed 6200 genes differentially expressed at least 2-fold across all analyzed data sets out of a total of 12345 detected genes (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on RNA-seq data analysis, with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f1905c3a-58c8-44fa-ae9b-6a53afb5a63a",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C32",
+      "claim": "2255 genes were expressed in monocytes and down-regulated in macrophages (cluster I).",
+      "claim_type": "EXPLICIT",
+      "source": "2255 genes were expressed in monocytes and down-regulated in macrophages (cluster I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "4c1455b1-9224-4df0-aedf-fe2f43447982",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C33",
+      "claim": "Cluster II comprised genes whose expression was absent from monocytes but shared by both small and large intestinal macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, cluster II comprised genes whose expression was absent from monocytes, but shared by both small and large intestinal macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "7efc1f9b-97da-46a9-af56-007f23d78f79",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C34",
+      "claim": "1087 and 987 genes were either preferentially or exclusively expressed in ileal or colonic macrophages, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, 1087 and 987 genes were either preferentially or exclusively expressed in ileal or colonic macrophages, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "9f427efe-661a-47ac-a091-470f4c55c2b9",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C35",
+      "claim": "Grafted cells underwent expansion following monocyte transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Grafted cells could be visualized in recipient gut tissue and underwent expansion, as reported earlier (Varol et al., 2009) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental system with reference to prior work and supplementary figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "3c911b8b-53c3-4a88-9759-8a88da303821",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C36",
+      "claim": "Graft-derived macrophages were CD11b+ CD64+ Ly6C- and mainly CD11chi.",
+      "claim_type": "EXPLICIT",
+      "source": "Intestinal tissues of recipient mice were harvested on day 4, 8 and 12 post engraftment (Figure 1A) to isolate graft-derived macrophages according to CD45.1 and CX3CR1/GFP expression; these cells were CD11b+ CD64+ Ly6C- and mainly CD11chi (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a characterization of the isolated cells based on flow cytometry data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "c6e31b35-dfc2-477d-be18-4339f134451b",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C37",
+      "claim": "Transcriptomes of the retrieved engrafted macrophages lacked expression of pro-inflammatory genes such as Saa3, Lcn2, Il1b, Il6 and Tnf, as opposed to cells retrieved from colitic animals treated with DSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptomes of the retrieved engrafted macrophages lacked expression of pro-inflammatory genes, such as Saa3, Lcn2, Il1b, Il6 and Tnf, as opposed to cells retrieved from colitic animals treated with Dextran Sulfate Sodium (DSS) (Okayasu et al., 1990) (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from transcriptomic analysis comparing engrafted cells to inflammatory controls, with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "d52042db-8a11-496d-96fd-0c5a553999d1",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C38",
+      "claim": "The monocyte transfer system mimics cell differentiation close to steady-state conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the earlier notion that the cell ablation results in a transient tissue response, but the monocyte transfer system mimics cell differentiation close to steady-state conditions (Varol et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "d3ab7b34-d181-4ed5-a59f-8d1c5296fc28",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C39",
+      "claim": "Comparative transcriptome analysis revealed 4213 differentially expressed genes (>4 fold differences in any pairwise comparison among a total of 12878 genes).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative transcriptome analysis of grafted monocytes, their progeny retrieved from the recipient intestines, and resident ileal and colonic macrophages that were independently retrieved from Cx3cr1GFP/+ mice revealed 4213 differentially expressed genes (DEG) (>4 fold differences in any pairwise comparison among a total of 12878 genes) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the transcriptomic analysis with reference to Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "2a972639-99d3-4e9d-a230-7caa85a65bcc",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C40",
+      "claim": "748 genes were exclusively expressed in the monocyte graft, including Ly6c2, Ccl6 and Cebpe (Cluster I).",
+      "claim_type": "EXPLICIT",
+      "source": "748 genes were exclusively expressed in the monocyte graft, including Ly6c2, Ccl6 and Cebpe (Cluster I) (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "4f27de8f-38bb-4559-957d-af1c3c3112f7",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C41",
+      "claim": "793 genes shared expression in graft-derived cells and gut macrophages in colon and ileum (Cluster II), including Irf6, Gata6, Ly6A and Smad7.",
+      "claim_type": "EXPLICIT",
+      "source": "793 genes shared expression in graft-derived cells and gut macrophages in colon and ileum (Cluster II). These included Irf6, Gata6, Ly6A and Smad7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "7071cd7a-c282-4822-a2e5-20169bf80d6e",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C42",
+      "claim": "Cluster III comprised 634 genes that were either exclusively or preferentially expressed in colonic macrophages, such as Pparg, Foxa1 and Tlr1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster III comprised 634 genes that were either exclusively or preferentially expressed in colonic macrophages, such as Pparg, Foxa1 and Tlr1 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "11cb953e-f3ae-4f5e-b255-3dc542c360e0",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C43",
+      "claim": "Cluster IV comprised 539 genes exclusively or preferentially expressed in ileal macrophages, such as Nos2, Sox4 and Mmp9.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster IV comprised 539 genes exclusively or preferentially expressed in ileal macrophages, such as Nos2, Sox4 and Mmp9 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "07cd90e2-0134-4f59-8342-e3d4ab5cc3b7",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C44",
+      "claim": "Genes associated with clusters II, III and IV were associated with distinct pathways, particularly with respect to epithelial cell communication and cell metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Metascape analysis (Zhou et al., 2019) highlighted that genes associated with cluster II, II and IV were associated with distinct pathways, particularly with respect to epithelial cell communication and cell metabolism (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from pathway analysis with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "24ebdb54-92b2-4427-8443-6a152e443418",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C45",
+      "claim": "Early monocyte differentiation (graft vs day 4) was characterized by abundant changes in gene expression in both colon and ileum.",
+      "claim_type": "EXPLICIT",
+      "source": "Volcano plot analysis revealed that early monocyte differentiation (graft vs day 4) was characterized by abundant changes in gene expression in both colon and ileum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the volcano plot analysis of transcriptomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "77b3dc73-d0c4-41d4-8fd8-ffc07ebeaa61",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C46",
+      "claim": "In the colon 3407 genes were up- and 3608 genes were down-regulated from monocytes to day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In the colon 3407 genes were up- and 3608 genes were down-regulated; in the ileum 2975 genes were up- and 3206 genes were down-regulated, with up to 10 fold change (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the transcriptomic analysis with reference to Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "538b8870-30f4-46fc-b8a6-8d112fb236af",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C47",
+      "claim": "In the ileum 2975 genes were up- and 3206 genes were down-regulated from monocytes to day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In the colon 3407 genes were up- and 3608 genes were down-regulated; in the ileum 2975 genes were up- and 3206 genes were down-regulated, with up to 10 fold change (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the transcriptomic analysis with reference to Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "185ee558-89d3-4c9e-a287-6bec7f864f68",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C48",
+      "claim": "Later time points (day 4 to day 8 and day 8 to day 12) were characterized by less pronounced alterations, both with respect to the number of DEG and their fold change.",
+      "claim_type": "EXPLICIT",
+      "source": "Later time points (day 4 to day 8 and day 8 to day 12) were characterized by less pronounced alterations, both with respect to the number of DEG and their fold change (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the temporal analysis of transcriptomic data with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "ae1185d7-bc4b-4c64-a3b2-678949423e29",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C49",
+      "claim": "In the colon 289 genes (66% of all significantly-changed genes) were induced between day 4 and 8.",
+      "claim_type": "EXPLICIT",
+      "source": "In the colon 289 genes (66% of all significantly-changed genes) were induced between day 4 and 8 and only 111 genes (19%) were up-regulated between day 8 and 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the temporal transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "d32a0fd7-0bca-489e-9929-4a797650f509",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C50",
+      "claim": "In the colon only 111 genes (19%) were up-regulated between day 8 and 12.",
+      "claim_type": "EXPLICIT",
+      "source": "In the colon 289 genes (66% of all significantly-changed genes) were induced between day 4 and 8 and only 111 genes (19%) were up-regulated between day 8 and 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the temporal transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "1a6e9e69-543a-439d-9d09-2c6ea23786e1",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C51",
+      "claim": "In the ileum 95 genes (21%) were up-regulated between day 4 and 8.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ileum this trend was reversed, with 95 genes (21%) up-regulated between day 4 and 8, but 321 genes (85%) induced between day 8 and 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the temporal transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "39e73d19-6d05-4949-905e-74c4a8bb060b",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C52",
+      "claim": "In the ileum 321 genes (85%) were induced between day 8 and 12.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ileum this trend was reversed, with 95 genes (21%) up-regulated between day 4 and 8, but 321 genes (85%) induced between day 8 and 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the temporal transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "fc3e8f90-970f-4e93-bb5e-10c49f08c212",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C53",
+      "claim": "Monocytes that enter distinct gut segments rapidly acquire characteristic transcriptomic signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, this establishes that monocytes that enter distinct gut segments rapidly acquire characteristic transcriptomic signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the transcriptomic data showing early and tissue-specific gene expression changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f726ac4c-03c5-4df5-9d6e-e144723bf322",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C54",
+      "claim": "Even by day 12, monocyte graft-derived cells differed in expression profiles when compared to resident ileal and colonic macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, even by day 12, monocyte graft-derived cells differed in expression profiles when compared to resident ileal and colonic macrophages (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic comparison with reference to Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "3fe7a784-31e6-4b07-b477-9d4aa607e166",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C55",
+      "claim": "Differences between engrafted and resident macrophages might be attributable to incomplete macrophage maturation or to the recently reported heterogeneity of the intestinal macrophage compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences might be attributable to incomplete macrophage maturation or to the recently reported heterogeneity of the intestinal macrophage compartment (Shaw et al., 2018; De Schepper et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed differences with citations to relevant work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "eda370d1-96cb-468b-9c91-83efee12c3bd",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C56",
+      "claim": "The majority of the cells retrieved likely comprise lamina propria/mucosa resident macrophages, rather than the less abundant macrophages of the submucosa or muscularis layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the majority of the cells we retrieve likely comprise lamina propria/mucosa resident macrophages, rather than the less abundant macrophages of the submucosa or muscularis layer (Shaw et al., 2018; De Schepper et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cell population being studied based on the isolation method and cited work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "7a97ecd0-6a00-4a85-947f-7abd3dd3e709",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C57",
+      "claim": "Generation of a CD4+ Timd4+ subpopulation of lamina propria macrophages was reported to require prolonged residence in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of a CD4+ Timd4+ subpopulation of lamina propria macrophages was reported to require prolonged residence in the tissue (Shaw et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "7f298566-24b3-4bfc-8c83-c8f04a96b459",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C58",
+      "claim": "Grafted cells in both colon and ileum acquired with time some expression of Timd4 (Tim4).",
+      "claim_type": "EXPLICIT",
+      "source": "Although grafted cells in both colon and ileum acquired with time some expression of a hallmark of the long-lived cells, the phosphatidyl serine receptor Timd4 (Tim4) (Figure 2B, Figure 1D cluster VI)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "7c6de87e-eea0-41a6-83ac-681c354e04ab",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C59",
+      "claim": "Signature genes of long-lived macrophages such as Cd209f, C2 and Rusc2 were not expressed in engrafted cells in the time frame analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Although grafted cells in both colon and ileum acquired with time some expression of a hallmark of the long-lived cells, the phosphatidyl serine receptor Timd4 (Tim4) (Figure 2B, Figure 1D cluster VI), other signature genes, such as Cd209f, C2 and Rusc2 (Shaw et al., 2018), were not expressed in the time frame analyzed here (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to figures and cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "e6cf175d-2bc2-4090-afc6-e9a03ad22307",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C60",
+      "claim": "The hypothesis that 12 days were insufficient for engrafted macrophages to acquire the full gene expression profile of resident cells was corroborated by the delayed onset of MHCII (encoded by H2-ab1) expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothesis that 12 days were insufficient for engrafted macrophages to acquire the full gene expression profile of resident cells was furthermore corroborated by the delayed onset of MHCII (encoded by H2-ab1) expression, one of the markers for intestinal macrophage maturation (Tamoutounour et al., 2012; Schridde et al., 2017) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data supported by citations to prior work and reference to Figure 2C.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "b48c63ee-5450-49cd-a584-d998aeb42286",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C61",
+      "claim": "Engrafted macrophages were characterized by lack of expression of Irf1 and the TAM receptor kinase family member Axl.",
+      "claim_type": "EXPLICIT",
+      "source": "Engrafted macrophages were also characterized by lack of expression of Irf1 and the member of the TAM receptor kinase family Axl (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f7e672bb-6b7d-4fff-938f-603d37e25bd8",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C62",
+      "claim": "Genes encoding ribosome-associated proteins and histones were low to absent in resident macrophages from both colon and ileum but prominent in the engrafted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes, whose expression was low to absent in resident macrophages from both colon and ileum, but prominent in the engrafted cells (Figure 1D cluster VII), included the ones encoding ribosome-associated proteins and histones (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f366d01c-3c3e-4bf1-a626-78bddabc67de",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C63",
+      "claim": "The reconstitution of emptied intestinal tissue with monocyte-derived cells involves clonal expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown (Varol et al., 2009), the reconstitution of emptied intestinal tissue with monocyte-derived cells involves clonal expansion, that is less likely to occur in physiological setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "1cbfb3f0-322c-401f-beb7-d1f0543a5eca",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C64",
+      "claim": "Out of the 6383 genes significantly differing between engrafted and resident macrophages from either colon or ileum, 897 were annotated with a Gene Ontology (GO) term associated with 'proliferation' and 'cell cycle'.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this notion, out of the 6383 genes significantly differing between engrafted and resident macrophages from either colon or ileum, 897 were annotated with a Gene Ontology (GO) term associated with 'proliferation' and 'cell cycle'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the GO term analysis of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "7f98c11f-360d-4eaf-8821-a745c73348d6",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C65",
+      "claim": "Il10ra was not induced in engrafted colonic macrophages even 12 days after tissue entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Il10ra was not induced in engrafted colonic macrophages, even 12 days after tissue entry, while engrafted ileal macrophages displayed Il10ra transcripts as early as day 4 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "72b75465-d02f-4371-b751-3fe3069fab9d",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C66",
+      "claim": "Engrafted ileal macrophages displayed Il10ra transcripts as early as day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Il10ra was not induced in engrafted colonic macrophages, even 12 days after tissue entry, while engrafted ileal macrophages displayed Il10ra transcripts as early as day 4 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "2e97bcf9-a4eb-4bf3-ae97-a9a50c687ba9",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C67",
+      "claim": "Expression of the cytokine IL10 itself was almost absent from monocytes and engrafted macrophages in both tissues but significantly present in resident macrophages retrieved from non-engrafted Cx3cr1GFP/+ mice, to a larger extent in the colon than the ileum.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the cytokine IL10 itself was almost absent from monocytes and engrafted macrophages in both tissues, but significantly present in resident macrophages retrieved from non-engrafted Cx3cr1GFP/+ mice, to a larger extent in the colon than the ileum (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "a3ed6c31-57fb-426b-8363-0fd3186bcda3",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C68",
+      "claim": "Il1b expression displayed a similar pattern to Il10 in line with an earlier suggestion that IL1 might induce macrophage IL-10 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, Il1b expression displayed a similar pattern in line with an earlier suggestion that IL1 might induce macrophage IL-10 expression (Foey et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data interpreted in light of cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f7ce28a2-050b-486e-a0fc-8c6895c39014",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C69",
+      "claim": "Genes induced following macrophage exposure to Il10, such as Ccr5 and Socs3, displayed similar expression patterns to Il10.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, genes induced following macrophage exposure to Il10, such as Ccr5 (Houle et al., 1999) and Socs3 (Cassatella et al., 1999) displayed similar expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis interpreted in light of cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "b3fe1b60-121f-4b92-8f46-11765789ba17",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C70",
+      "claim": "In the experimental model, the IL10/IL10R axis is inactive in newly differentiated macrophages and established only after further maturation in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that in our model the IL10/IL10R axis is inactive in newly differentiated macrophages and established only after further maturation in the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the transcriptomic data regarding IL10 and IL10R expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "73263b84-d277-494c-b3a6-bba6452ccc4c",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C71",
+      "claim": "Flow cytometric analysis of colon tissue of WT C57BL/6 mice identifies a small population of CD11b+ Ly6C+ MHCII- cells that likely represent recent monocyte immigrants into the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometric analysis of colon tissue of WT C57BL/6 mice identifies a small population of CD11b+ Ly6C+ MHCII- cells that likely represent recent monocyte immigrants into the tissue (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from flow cytometry with reference to supplementary figure and an inference about cell identity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "6367eb21-e110-4e0e-bb5a-703be66d2b37",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C72",
+      "claim": "Endogenous gut immigrants down-regulated monocyte markers and gained a gut macrophage signature, including expression of FoxD2 and Nr3c2.",
+      "claim_type": "EXPLICIT",
+      "source": "Global RNAseq analysis of this population, alongside the Ly6C+ MHCII- macrophages revealed that, like the day four graft, these endogenous gut immigrants down-regulated monocyte markers and gained a gut macrophage signature, including expression of the Forkhead transcription factor (TF) FoxD2 and the nuclear receptor Nr3c2 (Figure 2\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "92d23a31-466e-454d-afdf-8caacd5102e2",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C73",
+      "claim": "Endogenous gut immigrants did not display a signature indicating proliferation, such as Rpl10 or Hmga1.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous gut immigrants did not display a signature indicating proliferation, such as Rpl10 or Hmga1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "cd276982-8934-4271-93a8-150a3a6bd1c2",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C74",
+      "claim": "Early colonic immigrants lacked signature genes associated with long-lived gut macrophages, including Timd4 and CD209f, as well as expression of Il10ra and Il10.",
+      "claim_type": "EXPLICIT",
+      "source": "However, like the grafted cells, these early colonic immigrants lacked signature genes associated with long-lived gut macrophages, including Timd4 and CD209f, as well as expression of Il10ra and Il10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "84b147f1-4416-4502-ac72-f782764d86ac",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C75",
+      "claim": "The gene lists of upregulated and down regulated genes in macrophages retrieved from engrafted [CD11c-DTR > WT] and [CX3CR1-DTR > WT] chimeras showed with 71% and 59%, respectively, considerable overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene lists of upregulated and down regulated genes in macrophages retrieved from engrafted [CD11c-DTR > WT] and [CX3CR1-DTR > WT] chimeras showed with 71% and 59%, respectively, considerable overlap (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the comparative analysis of two different experimental models with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f5f15598-c065-43b0-aaa6-08f758d22394",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C76",
+      "claim": "Despite some differences, monocyte graft-derived cells recapitulate the 'monocyte waterfall'.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data show that despite some differences, monocyte graft-derived cells recapitulate the 'monocyte waterfall' (Tamoutounour et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data with citation to the original description of the monocyte waterfall.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "fbf1650f-3e2a-4402-8c0b-1546dcf5947d",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C77",
+      "claim": "458 genes were up-regulated during monocyte differentiation in a segment-specific manner \u2013 351 in colonic macrophages and 107 in ileal macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "458 genes were up-regulated during monocyte differentiation in a segment-specific manner \u2013 351 in colonic macrophages and 107 in ileal macrophages (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the transcriptomic analysis with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "19529683-128c-46b9-9437-45aa28b27daa",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C78",
+      "claim": "Monocyte differentiation into ileal macrophages was accompanied by induction of Gata and Hbox TF family members, such as Gata5 and Hbox3.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocyte differentiation into ileal macrophages was accompanied by induction of Gata and Hbox TF family members, such as Gata5 and Hbox3 (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "1f8ab7a9-c4f5-47a8-b279-ea7783dce0a5",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C79",
+      "claim": "Monocyte differentiation into ileal macrophages was accompanied by induction of genes encoding the chemokine Ccl5 and the chemokine receptor CCR9.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocyte differentiation into ileal macrophages was accompanied by induction of Gata and Hbox TF family members, such as Gata5 and Hbox3 (Figure 3A), as well as genes encoding the chemokine Ccl5 and the chemokine receptor CCR9.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "dc99f3c1-87bc-4df1-b60f-14dc238954ec",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C80",
+      "claim": "Monocytes that entered colon tissue preferentially up-regulated Foxd2, the nuclear receptor Nr3c2, and the dominant negative helix-loop-helix protein Id2.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocytes that entered colon tissue preferentially up-regulated Foxd2, the nuclear receptor Nr3c2, and the dominant negative helix-loop-helix protein Id2 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f09d736f-ae4a-4596-89fb-ef5a16e506b6",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C81",
+      "claim": "Of the genes specifically down-regulated in only one intestinal segment, 78 genes followed this trend in colonic and 99 in ileal macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the genes, which were specifically down-regulated in only one intestinal segment, 78 genes followed this trend in colonic and 99 in ileal macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "0560bae5-0214-47ab-8de1-f7e12aa108b8",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C82",
+      "claim": "Genes specifically down-regulated in ileal macrophages included 7 TFs, such as Foxp1 and Trim16.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter down-regulated genes included 7 TFs, such as Foxp1 and Trim16, while Arid5a and Elk3 were specifically down-regulated in the colon (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "a289db43-0183-4161-8cca-b5be0f99aacd",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C83",
+      "claim": "Arid5a and Elk3 were specifically down-regulated in the colon.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter down-regulated genes included 7 TFs, such as Foxp1 and Trim16, while Arid5a and Elk3 were specifically down-regulated in the colon (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "a2c88257-f8dd-4930-92d8-b4da11fe2a8b",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C84",
+      "claim": "Many genes related to immune reaction and response to challenge displayed higher expression in ileal macrophages than their colonic counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Many genes related to immune reaction and response to challenge displayed higher expression in ileal macrophages than their colonic counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "3982f3bb-ee98-4072-aca9-b679f28b28e9",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C85",
+      "claim": "Arid5a, whose gene product regulates IL6, is down-regulated in colonic macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples are: Arid5a, whose gene product regulates IL6 (Masuda et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with citation to prior work on gene function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "be57d38d-f5fa-4679-b496-07f6cb418da3",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C86",
+      "claim": "Elk3, which encodes a member of the ETS TF family and was reported to modulate the phagocytosis of bacteria by macrophages, is down-regulated in colonic macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Elk3, which encodes a member of the ETS TF family and was reported to modulate the phagocytosis of bacteria by macrophages (Tsoyi et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with citation to prior work on gene function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "bdf7cf1d-f3c1-4233-a89d-f6821b2f3943",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C87",
+      "claim": "Ano6, which is down-regulated in colonic macrophages, reportedly supports microbiocidal activity of macrophages involving P2X7 receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "and Ano6, that is down-regulated in colonic macrophages (Figure 3B), and reportedly supports microbiocidal activity of macrophages involving P2X7 receptor signaling (Ousingsawat et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with citation to prior work on gene function and reference to Figure 3B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "d0ba7a17-8605-42f6-8f9d-2f2f17d3a670",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C88",
+      "claim": "The enzyme Sod1, which was reported to impair macrophage-related parasite killing in cutaneous Leishmaniasis, showed lower expression in ileal macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the enzyme Sod1, which was reported to impair macrophage-related parasite killing in cutaneous Leishmaniasis (Khouri et al., 2009), showed lower expression in ileal macrophages (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with citation to prior work on gene function and reference to Figure 3B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "9626a802-ec83-42ed-989a-b138cfd1e34b",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C89",
+      "claim": "54 genes were expressed in colonic engrafted macrophages and silenced in their ileal counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "54 such genes were expressed in colonic engrafted macrophages and silenced in their ileal counterparts; 15 genes followed an opposite trend (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the transcriptomic analysis with reference to Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "ebd73e45-b18b-4536-bcb7-644db16127a0",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C90",
+      "claim": "15 genes were expressed in ileal engrafted macrophages and silenced in their colonic counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "54 such genes were expressed in colonic engrafted macrophages and silenced in their ileal counterparts; 15 genes followed an opposite trend (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the transcriptomic analysis with reference to Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "59c5c571-640d-4c6f-b769-2b7e0b7f46a3",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C91",
+      "claim": "KLF4 was the only TF found in both groups of genes that are up-regulated in one tissue and down-regulated in the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one TF was found in both groups, KLF4 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f18398ed-7dc7-436d-81b2-b91971484819",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C92",
+      "claim": "Aldh2 encoded by Aldh2 was recently reported to play a role in repression of ATP6V0E2, which is critical for proper lysosomal function, autophagy, and degradation of oxidized LDL.",
+      "claim_type": "EXPLICIT",
+      "source": "Aldh2 encoded by Aldh2, mostly known for its role in alcohol detoxification, was recently reported to play a role in repression of ATP6V0E2, which is critical for proper lysosomal function, autophagy, and degradation of oxidized LDL (Zhong et al., 2019) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as recent knowledge with citation to prior work and reference to Figure 3C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "ec115c65-3945-4d13-9f2c-357b595b7fa4",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C93",
+      "claim": "Hdac7 encoded by Hdac7 and up-regulated in ileal macrophages and down-regulated in colonic macrophages was reported to interfere with the myeloid gene expression pattern and to inhibit macrophage-specific functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hdac7 encoded by Hdac7 and up-regulated in ileal macrophages and down-regulated in colonic macrophages, was reported to interfere with the myeloid gene expression pattern and to inhibited macrophage-specific functions (Barneda-Zahonero et al., 2013) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with citation to prior work on gene function and reference to Figure 3C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f652bcc5-c1ea-4e02-9c92-77352183bc9f",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C94",
+      "claim": "Fmnl3 participates in filopodia generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Fmnl3 participates in filopodia generation (Harris et al., 2010) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work and reference to Figure 3C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "7dab5ebd-3be6-4c7e-af21-48c067a9f933",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C95",
+      "claim": "Monocytes establish gut segment specific gene expression patterns, likely under the influence of local cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data establish that monocytes establish gut segment specific gene expression patterns, likely under the influence of local cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the transcriptomic data showing segment-specific gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "cb169cc6-f56c-4ccb-b827-8be2cd8e47d9",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C96",
+      "claim": "By day 4, expression of 2007 genes was down-regulated more than 2-fold in the monocyte graft following differentiation into macrophages in both tissues (out of 12485 genes expressed).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, by day 4, expression of 2007 genes was down-regulated more than 2-fold in the monocyte graft following differentiation into macrophages in both tissues (out of 12485 genes expressed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "eff86527-ac6f-40a1-bda3-3925ad8fd143",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C97",
+      "claim": "2404 genes were induced in both the colon and ileum by day 4, arguably as part of a generic transcriptome signature of intestinal macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "2404 genes were induced in both the colon and ileum, arguably as part of a generic transcriptome signature of intestinal macrophages (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the transcriptomic analysis with reference to Figure 4A and an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "63b5e667-e9d3-4847-88e3-0da312f7f3c2",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C98",
+      "claim": "919 of the genes induced during monocyte differentiation into generic intestinal macrophages displayed very low prior expression in monocytes \u2013 below 50 reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 919 of the genes induced during monocyte differentiation into generic intestinal macrophages displayed very low prior expression in monocytes \u2013 below 50 reads (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the transcriptomic analysis with reference to Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "ec165096-a94e-45b0-abd4-005b3670ac5a",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C99",
+      "claim": "Expression of 183 transcripts seemed to be actively silenced during the differentiation process.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, expression of fewer transcripts (183) seemed to be actively silenced during the differentiation process, as seen in the violin blot in Figure 4B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "ed73bdb3-06bf-4b4c-bc70-0d0adfc2108c",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C100",
+      "claim": "Monocytes actively acquire macrophage identities by de novo mRNA synthesis, while much of the monocytic gene expression is compatible with the differentiation process.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that monocytes actively acquire macrophage identities by de novo mRNA synthesis, while much of the monocytic gene expression is compatible with the differentiation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the transcriptomic data regarding gene induction versus silencing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "a9fbbc17-2e8f-4842-82f0-8c6627c5382d",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C101",
+      "claim": "The top 5 GO-terms associated with genes up-regulated in intestinal macrophages related to cell adhesion and migration processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 5 GO-terms associated with genes up-regulated in intestinal macrophages related to cell adhesion and migration processes (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the GO term analysis with reference to Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "ab5c2b3f-6121-41d6-8bb5-1f5c2956a1e5",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C102",
+      "claim": "The top 5 GO-terms associated with down-regulated genes in macrophages included cell cycle and division, as well as mRNA processing and DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 5 GO-terms associated with down-regulated genes in macrophages included cell cycle and division, as well as mRNA processing and DNA repair (Figure 4C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the GO term analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "61ce5c16-69f2-4261-8c7e-abe1756da318",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C103",
+      "claim": "The data are in line with the transformation of circulating monocytes into non-migratory tissue resident cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data are in line with the transformation of circulating monocytes into non-migratory tissue resident cells and suggest a role for DNA damage-associated molecules during the differentiation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the GO term analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "48b80a18-b37c-4e37-af4d-43a387aa1bd0",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C104",
+      "claim": "The data suggest a role for DNA damage-associated molecules during the differentiation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data are in line with the transformation of circulating monocytes into non-migratory tissue resident cells and suggest a role for DNA damage-associated molecules during the differentiation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the GO term analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "1d3f1598-9f5c-4478-b23b-0b4501b37ce7",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C105",
+      "claim": "Four of the Cebp family members (Cebpa, b, d, g) were significantly down-regulated upon monocyte differentiation into macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the Cebp family members (Cebpa, b, d, g) and 5 E2F family members (E2f2, 4, 6, 7, 8) were significantly down-regulated upon monocyte differentiation into macrophages (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "e5afa0da-4c23-4f7e-91db-f2b65d348730",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C106",
+      "claim": "5 E2F family members (E2f2, 4, 6, 7, 8) were significantly down-regulated upon monocyte differentiation into macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the Cebp family members (Cebpa, b, d, g) and 5 E2F family members (E2f2, 4, 6, 7, 8) were significantly down-regulated upon monocyte differentiation into macrophages (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "d15dfd5c-37b2-440e-9c6e-7b9d80b01a8e",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C107",
+      "claim": "Egr1, 2 and 3 were up-regulated upon monocyte differentiation into macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Egr1, 2 and 3 were up-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "22e3715c-ff9f-4934-8345-a8c84b11e1e3",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C108",
+      "claim": "Down-regulated TFs included the regulators of immune response Bach1, Bcl6, Irf9, Nfatc3, Nfkb1 and Rela, as well as the master macrophage TF Spi1 (PU.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Other down-regulated TFs included the regulators of immune response Bach1, Bcl6, Irf9, Nfatc3, Nfkb1 and Rela, as well as the master macrophage TF Spi1 (PU.1) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "54f16ffa-6470-47fa-9350-ca05f15b98e3",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C109",
+      "claim": "The list of induced genes was enriched with homeobox TFs such as Sox13, Pbx1, Foxa1 and others.",
+      "claim_type": "EXPLICIT",
+      "source": "The list of induced genes was enriched with homeobox TFs such as Sox13, Pbx1, Foxa1 and others (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "229afbbd-0e1d-4c65-bd21-7347afd17fe5",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C110",
+      "claim": "The induced genes group comprised TFs that had previously been reported to be critical for the development of other tissue macrophages, such as the nuclear receptor LXR\u03b1 encoded by Nr1h3 for splenic macrophages and Gata6 for peritoneal macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this group comprised TFs that had previously been reported to be critical for the development of other tissue macrophages, such as the nuclear receptor LXR\u03b1 encoded by Nr1h3 for splenic macrophages and Gata6 for peritoneal macrophages (Varol et al., 2015; Rosas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis interpreted in light of cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "94cb3b3d-2cbd-4a18-98af-621f683fc9b9",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C111",
+      "claim": "Vasculature-resident Ly6C- monocytes and gut macrophages that derive both from Ly6C+ monocytes display considerable overlap in transcriptomic signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data establish that vasculature-resident Ly6C- monocytes and gut macrophages that derive both from Ly6C+ monocytes display considerable overlap in transcriptomic signatures, but also display gene expression patterns that are likely associated with their specific environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative transcriptomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "205f824e-956c-465c-9fcb-40f177a38d67",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C112",
+      "claim": "Vasculature-resident Ly6C- monocytes and gut macrophages display gene expression patterns that are likely associated with their specific environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data establish that vasculature-resident Ly6C- monocytes and gut macrophages that derive both from Ly6C+ monocytes display considerable overlap in transcriptomic signatures, but also display gene expression patterns that are likely associated with their specific environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative transcriptomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "9bbdd2d6-b548-4bc7-90f5-cb1b4a6791ca",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C113",
+      "claim": "Monocyte progeny in vasculature and tissue shared signatures showing considerable similarities as reflected in the expression pattern of two thirds of the genes (66.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "Monocyte progeny, whether in vasculature or tissue shared signatures, showed considerable similarities as reflected in the expression pattern of two thirds of the genes (66.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the comparative transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "97900e6d-962c-49fc-92d6-c8ccc127444e",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C114",
+      "claim": "Clusters I and II comprised 780 genes that were down-regulated upon Ly6C+ monocyte differentiation, including hallmark monocyte markers such as Ly6c, Ccr2 and Mmp8 and Myd88.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, clusters I and II comprised 780 genes that were down-regulated upon Ly6C+ monocyte differentiation, including hallmark monocyte markers, such as Ly6c, Ccr2 and Mmp8 and Myd88 (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the comparative transcriptomic analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "4e20d432-3f94-4486-b642-e18681055656",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C115",
+      "claim": "160 genes were induced in both blood- and tissue resident monocyte-derived cells, albeit to different extent, including Pparg, Ets2 and Tgfbr2 (Cluster III).",
+      "claim_type": "EXPLICIT",
+      "source": "160 genes were induced in both blood- and tissue resident monocyte-derived cells, albeit to different extend, including as Pparg, Ets2 and Tgfbr2 (Cluster III) (Figure 6B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the comparative transcriptomic analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "91b9db8c-f440-498e-a38d-087ae9775347",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C116",
+      "claim": "Cluster IV comprised 253 genes up-regulated in blood-resident cells and down-regulated in gut macrophages, including Csf2ra, Nfkb1, Il10ra and Spi1 (PU.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, cluster IV comprised 253 genes up-regulated in blood-resident cells and down-regulated in gut macrophages. This included Csf2ra, Nfkb1, Il10ra and Spi1 (PU.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "a530fa18-bf64-4f5b-8978-db256a0677ea",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C117",
+      "claim": "Cluster V comprised 110 genes induced in gut macrophages but not vasculature-resident cells, such as the mitochondrial master regulator Ppargc1b and the metalloprotease Adam19.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster V comprised 110 genes induced in gut macrophages but not vasculature-resident cells, such as the mitochondrial master regulator Ppargc1b and the metalloprotease Adam19 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the comparative transcriptomic analysis with reference to Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "57291b67-1d95-46c9-a5ef-badd68b61f3f",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C118",
+      "claim": "Cebpb was induced in Ly6C- blood monocytes, as was previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerning TFs, Cebpb was induced in Ly6C- blood monocytes, as was previously reported (Mildner et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "2f417678-3b41-4c70-9964-fa9769dc0519",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C119",
+      "claim": "Cebpa and Cebpd were down-regulated in both blood- and gut-resident cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerning TFs, Cebpb was induced in Ly6C- blood monocytes, as was previously reported (Mildner et al., 2017), while Cebpa and Cebpd were down-regulated in both blood- and gut-resident cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the transcriptomic analysis with reference to Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "1b685fb1-6977-4fee-9e09-303b7ddc768e",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C120",
+      "claim": "Irf family members 7, 8 and 9 were down-regulated during Ly6C+ monocyte differentiation in blood and gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Irf family members 7, 8 and 9 were down-regulated during Ly6C+ monocyte differentiation in blood and gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "af6e5983-4cd9-4221-b10b-c75cdaf62ffe",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C121",
+      "claim": "Tissue-specific macrophage imprinting occurs early during development, shortly after tissue infiltration.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue-specific macrophage imprinting occurs hence early during development, shortly after tissue infiltration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that engrafted cells segregate by tissue at day 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "cccf6393-e372-4412-8db6-59ec9b3a8eb5",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C122",
+      "claim": "Two samples of engrafted ileal macrophages clustered with the colonic samples rather than the ileal ones, suggesting that the colonic signature is default.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, two samples of engrafted ileal macrophages clustered with the colonic samples rather than the ileal ones, suggesting that the colonic signature is default.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the clustering analysis and an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "fee4e86a-e979-4a97-9067-022cfa5bc0e0",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C123",
+      "claim": "Colonic macrophages at day 12 post engraftment were more distinct from endogenous colonic macrophages compared to their ileal counterparts, which implies that the mature colonic gene signature might take longer time to develop or could be more heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Colonic macrophages at day 12 post engraftment were also more distinct from endogenous colonic macrophages, compared to their ileal counterparts, which implies that the mature colonic gene signature might take longer time to develop or could be more heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the transcriptomic comparison and a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "42faecd4-4eda-4bfc-8bd4-e82f5521c5e1",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C124",
+      "claim": "The majority of changes in gene expression, both in fold change and numbers, occurred in the transition from monocytes to either colonic or ileal macrophages at day four post transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of changes in gene expression, both in fold change and numbers, occurred in the transition from monocytes to either colonic or ileal macrophages at day four post transfer, that is immediately after extravasation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the temporal transcriptomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "2cf5388c-efdd-4bf5-b630-0ee9d2333be4",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "claim_id": "C125",
+      "claim": "The data sets can provide a starting point for hypothesis-driven experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with earlier reports (Mildner et al., 2017; Schridde et al., 2017), our data sets can provide a starting point for hypothesis-driven experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the data generated in this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "13231ac3-d4fb-4d42-95b2-e0aee4366671",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on monocyte biology, macrophage development, and intestinal macrophage characteristics, establishing the context and knowledge gaps that motivate the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C30 represent established knowledge from prior literature, appropriately cited throughout. These claims accurately summarize the current understanding of monocyte differentiation, tissue macrophage origins, and intestinal macrophage biology, providing necessary context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "e613a090-c11c-457e-bd65-53df5616f8ab",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transcriptomic analysis reveals that monocytes and their progeny in colon and ileum display distinct gene expression profiles, with 6200-4213 differentially expressed genes organized into clusters representing monocyte-specific, shared macrophage, and tissue-specific signatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C44 present quantitative transcriptomic findings with specific gene numbers and cluster assignments, supported by Figure 1 and supplementary figures. The clustering approach (k-means) is described, and representative genes are provided for each cluster, making the results verifiable and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "69f0403a-5016-4ea5-94e3-7ce15ea2bafc",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The monocyte engraftment system successfully recapitulates steady-state differentiation, as evidenced by lack of inflammatory gene expression, appropriate surface marker expression, and validation across two different depletion models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38, C63, C75-C76 validate the experimental model through multiple lines of evidence: visualization of engrafted cells, flow cytometry characterization, comparison to inflammatory controls (DSS), and cross-validation with an alternative depletion system (71% and 59% overlap). The model's fidelity to steady-state conditions is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Monocyte differentiation into gut macrophages is characterized by rapid, extensive transcriptional changes at day 4 (3000+ genes up/down-regulated), with subsequent time points showing fewer changes and tissue-specific kinetics (colon: 66% of changes by day 8; ileum: 85% of changes by day 12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C53, C124 present temporal transcriptomic analysis with specific quantitative data supported by volcano plots (Figure 1F-H). The finding that most changes occur early (day 4) with tissue-specific kinetics thereafter is clearly documented and represents a key temporal insight into the differentiation process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "bf885ee3-6f39-433e-a50b-bcdca65a4843",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Engrafted macrophages at day 12 remain transcriptionally distinct from resident macrophages, lacking full expression of long-lived macrophage markers (Cd209f, C2, Rusc2) and maturation markers (MHCII, Irf1, Axl), while displaying proliferation-associated genes, suggesting incomplete maturation within the experimental timeframe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62, C64, C71-C74 document incomplete maturation through multiple complementary observations: differential expression analysis (Figure 2A), specific marker expression patterns (Figure 2B-D), GO term enrichment for proliferation genes, and validation with endogenous early immigrants. The interpretation that 12 days is insufficient for full maturation is well-supported by converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "76bf43a7-d9f8-4a1d-92b6-5075669c233e",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The IL10/IL10R axis shows tissue-specific and maturation-dependent expression: Il10ra is induced early in ileal but not colonic engrafted macrophages (even at day 12), while IL10 itself is expressed only in resident macrophages, suggesting the axis becomes functional only after prolonged tissue residence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 present a coherent finding about IL10/IL10R expression patterns supported by transcriptomic data (Figure 2E) and interpretation consistent with prior literature on IL10-induced genes (Ccr5, Socs3). The tissue-specific difference in Il10ra induction is particularly notable given the known differential susceptibility of colon vs. ileum to IL10R deficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "f9e3148e-e9b7-4505-906d-450551f35084",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Monocyte differentiation into colonic versus ileal macrophages involves segment-specific gene expression programs: 351 genes are preferentially induced in colon (including Foxd2, Nr3c2, Id2) and 107 in ileum (including Gata5, Hbox3, Ccl5, CCR9), with distinct transcription factors and functional genes differentially regulated between tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C95 comprehensively document tissue-specific differentiation programs with quantitative data (Figure 3A-C), specific gene examples, and functional context from cited literature. The identification of genes up-regulated in one tissue and down-regulated in the other (54 vs. 15 genes) provides strong evidence for active tissue-specific programming rather than passive environmental effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Generic intestinal macrophage differentiation involves induction of 2404 genes (919 with very low prior expression) and down-regulation of 2007 genes (183 actively silenced), with GO term enrichment showing up-regulation of cell adhesion/migration genes and down-regulation of cell cycle/DNA repair genes, consistent with transformation to non-migratory tissue-resident cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C104 characterize the shared differentiation program across both tissues with quantitative transcriptomic data (Figure 4A-D) and GO term analysis. The observation that most induced genes had very low prior expression (919/2404) while fewer genes were actively silenced (183/2007) supports the interpretation that differentiation primarily involves de novo gene activation rather than silencing of monocyte programs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "4b81d13d-10b7-492e-8f68-8746fa00f226",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Transcription factor analysis reveals coordinated regulation during monocyte-to-macrophage differentiation: down-regulation of Cebp family members (Cebpa, b, d, g), E2F family members (E2f2, 4, 6, 7, 8), and immune regulators (Bach1, Bcl6, Irf9, Nfkb1, Rela, Spi1), with up-regulation of Egr family (Egr1, 2, 3), homeobox TFs (Sox13, Pbx1, Foxa1), and tissue macrophage-associated TFs (Nr1h3, Gata6).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C110 systematically document transcription factor changes supported by Figure 5A-C. The identification of specific TF families and their coordinated regulation provides mechanistic insight into the differentiation process. The inclusion of TFs previously reported for other tissue macrophages (Nr1h3, Gata6) with appropriate citations strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Comparison of vasculature-resident Ly6C- monocytes and gut tissue macrophages reveals that 66.7% of differentially expressed genes show shared patterns (780 down-regulated including Ly6c, Ccr2; 160 up-regulated including Pparg, Ets2, Tgfbr2), while 33.3% are environment-specific (253 genes higher in blood; 110 genes higher in gut including Ppargc1b, Adam19).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C120 present a comparative analysis supported by Figure 6B-E, quantifying the overlap and differences between blood- and tissue-resident monocyte-derived cells. The finding that two-thirds of genes show shared patterns while one-third are environment-specific provides important insight into the relative contributions of developmental program versus tissue environment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "21542b50-eb92-43e3-8460-6134828446b7",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tissue-specific macrophage imprinting occurs early (by day 4), with engrafted cells segregating by tissue in PCA analysis, though two ileal samples clustered with colon (suggesting colonic signature may be default), and colonic macrophages showed greater divergence from resident cells at day 12 compared to ileal counterparts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C121-C123 present observations about timing and patterns of tissue imprinting, but the interpretations are somewhat speculative. The clustering of two ileal samples with colon (C122) is noted but the 'default' interpretation lacks mechanistic support. The observation about greater colonic divergence (C123) is presented with alternative explanations (longer maturation time or greater heterogeneity) that cannot be distinguished with the current data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    },
+    {
+      "id": "a360e968-44e9-426c-aff3-061ff2127631",
+      "content_id": "876a9d45-0841-4d01-833a-1105e579c36a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study addresses a knowledge gap in non-inflammatory monocyte differentiation and provides datasets that can serve as a resource for future hypothesis-driven experiments on intestinal macrophage development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C125 accurately characterize the state of the field and the contribution of this work. The statement that monocyte differentiation under non-inflammatory conditions is less well understood (C4) is supported by the literature review, and the claim that the datasets provide a resource (C125) is reasonable given the comprehensive transcriptomic profiling performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:22:35.764726Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9be87e0-35ef-43b3-9375-dd8f792eee12",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "c92b0880-50ce-4fa5-94e4-5c9546b54884",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "2afa8a83-2359-4889-8bf3-8ae7582c0be3",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "2732c983-79ee-4ba9-8f5d-b4bc68e91fe6",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "39088d54-cc80-45e6-bb7f-bd72f3bdc26f",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "0e06984d-3241-449d-ab1b-74f6627fe249",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "f24311e1-2b1e-4021-8bf2-3a04b7a7401d",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "c5cfbdd7-9461-4a85-a4c1-9a5f6f1a2ea6",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "3703fb66-e1f2-4022-9197-e0c297138b5d",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "249611d9-ee86-4eef-b27e-1d5963aeebc1",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "f3cfa1c7-fd83-4f23-9001-7f4ff4ee3f9e",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "615f99f2-f277-4275-b663-e2c7f8899352",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "bec31a8a-6bd0-49fa-972b-32e9cfcdac56",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "994ac171-54c5-4bda-94aa-8c6d7b9bfa92",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "cf4f1d4b-d994-4de5-a937-63a13a18dd4f",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "49fe1b2e-107c-4ea5-b6f1-558bd6acb777",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "d9b8c754-9d0a-4834-b632-4d3e135dcb44",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "5f26c6f5-c9a9-4580-a81e-0a4e1ac56833",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "a6de2f7d-5d13-477f-9bf9-89eab61a812a",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "0ec15108-f793-4bc2-b7cf-1e9b2f7d2306",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "b10aba25-bbdd-4f98-b163-8edc91963e84",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "12ae5c57-2686-4458-8f04-fb7282277b57",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "c62fc237-c524-4d29-aa5e-c85fb0f6b8ce",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "7bfe521b-aa69-46fb-9eb0-e13ead136b48",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "1ab5857a-56cf-422d-822d-1eb2a592837d",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "42039b32-abbc-43d0-aa6a-889d8efaf542",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "4b1079cf-58db-4a39-a598-353387822967",
+      "result_id": "13231ac3-d4fb-4d42-95b2-e0aee4366671"
+    },
+    {
+      "claim_id": "a384f63c-68f9-413f-846a-597b871829ce",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "f1905c3a-58c8-44fa-ae9b-6a53afb5a63a",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "4c1455b1-9224-4df0-aedf-fe2f43447982",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "7efc1f9b-97da-46a9-af56-007f23d78f79",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "d3ab7b34-d181-4ed5-a59f-8d1c5296fc28",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "2a972639-99d3-4e9d-a230-7caa85a65bcc",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "4f27de8f-38bb-4559-957d-af1c3c3112f7",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "7071cd7a-c282-4822-a2e5-20169bf80d6e",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "11cb953e-f3ae-4f5e-b255-3dc542c360e0",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "07cd90e2-0134-4f59-8342-e3d4ab5cc3b7",
+      "result_id": "e613a090-c11c-457e-bd65-53df5616f8ab"
+    },
+    {
+      "claim_id": "9f427efe-661a-47ac-a091-470f4c55c2b9",
+      "result_id": "69f0403a-5016-4ea5-94e3-7ce15ea2bafc"
+    },
+    {
+      "claim_id": "3c911b8b-53c3-4a88-9759-8a88da303821",
+      "result_id": "69f0403a-5016-4ea5-94e3-7ce15ea2bafc"
+    },
+    {
+      "claim_id": "c6e31b35-dfc2-477d-be18-4339f134451b",
+      "result_id": "69f0403a-5016-4ea5-94e3-7ce15ea2bafc"
+    },
+    {
+      "claim_id": "d52042db-8a11-496d-96fd-0c5a553999d1",
+      "result_id": "69f0403a-5016-4ea5-94e3-7ce15ea2bafc"
+    },
+    {
+      "claim_id": "f366d01c-3c3e-4bf1-a626-78bddabc67de",
+      "result_id": "69f0403a-5016-4ea5-94e3-7ce15ea2bafc"
+    },
+    {
+      "claim_id": "84b147f1-4416-4502-ac72-f782764d86ac",
+      "result_id": "69f0403a-5016-4ea5-94e3-7ce15ea2bafc"
+    },
+    {
+      "claim_id": "f5f15598-c065-43b0-aaa6-08f758d22394",
+      "result_id": "69f0403a-5016-4ea5-94e3-7ce15ea2bafc"
+    },
+    {
+      "claim_id": "24ebdb54-92b2-4427-8443-6a152e443418",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "77b3dc73-d0c4-41d4-8fd8-ffc07ebeaa61",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "538b8870-30f4-46fc-b8a6-8d112fb236af",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "185ee558-89d3-4c9e-a287-6bec7f864f68",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "ae1185d7-bc4b-4c64-a3b2-678949423e29",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "d32a0fd7-0bca-489e-9929-4a797650f509",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "1a6e9e69-543a-439d-9d09-2c6ea23786e1",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "39e73d19-6d05-4949-905e-74c4a8bb060b",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "fc3e8f90-970f-4e93-bb5e-10c49f08c212",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "42faecd4-4eda-4bfc-8bd4-e82f5521c5e1",
+      "result_id": "f80d5a9f-5d99-4bac-86a6-64f94bd0846d"
+    },
+    {
+      "claim_id": "f726ac4c-03c5-4df5-9d6e-e144723bf322",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "3fe7a784-31e6-4b07-b477-9d4aa607e166",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "eda370d1-96cb-468b-9c91-83efee12c3bd",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "7a97ecd0-6a00-4a85-947f-7abd3dd3e709",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "7f298566-24b3-4bfc-8c83-c8f04a96b459",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "7c6de87e-eea0-41a6-83ac-681c354e04ab",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "e6cf175d-2bc2-4090-afc6-e9a03ad22307",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "b48c63ee-5450-49cd-a584-d998aeb42286",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "f7e672bb-6b7d-4fff-938f-603d37e25bd8",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "1cbfb3f0-322c-401f-beb7-d1f0543a5eca",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "73263b84-d277-494c-b3a6-bba6452ccc4c",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "6367eb21-e110-4e0e-bb5a-703be66d2b37",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "92d23a31-466e-454d-afdf-8caacd5102e2",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "cd276982-8934-4271-93a8-150a3a6bd1c2",
+      "result_id": "bf885ee3-6f39-433e-a50b-bcdca65a4843"
+    },
+    {
+      "claim_id": "7f98c11f-360d-4eaf-8821-a745c73348d6",
+      "result_id": "76bf43a7-d9f8-4a1d-92b6-5075669c233e"
+    },
+    {
+      "claim_id": "72b75465-d02f-4371-b751-3fe3069fab9d",
+      "result_id": "76bf43a7-d9f8-4a1d-92b6-5075669c233e"
+    },
+    {
+      "claim_id": "2e97bcf9-a4eb-4bf3-ae97-a9a50c687ba9",
+      "result_id": "76bf43a7-d9f8-4a1d-92b6-5075669c233e"
+    },
+    {
+      "claim_id": "a3ed6c31-57fb-426b-8363-0fd3186bcda3",
+      "result_id": "76bf43a7-d9f8-4a1d-92b6-5075669c233e"
+    },
+    {
+      "claim_id": "f7ce28a2-050b-486e-a0fc-8c6895c39014",
+      "result_id": "76bf43a7-d9f8-4a1d-92b6-5075669c233e"
+    },
+    {
+      "claim_id": "b3fe1b60-121f-4b92-8f46-11765789ba17",
+      "result_id": "76bf43a7-d9f8-4a1d-92b6-5075669c233e"
+    },
+    {
+      "claim_id": "fbf1650f-3e2a-4402-8c0b-1546dcf5947d",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "19529683-128c-46b9-9437-45aa28b27daa",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "1f8ab7a9-c4f5-47a8-b279-ea7783dce0a5",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "dc99f3c1-87bc-4df1-b60f-14dc238954ec",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "f09d736f-ae4a-4596-89fb-ef5a16e506b6",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "0560bae5-0214-47ab-8de1-f7e12aa108b8",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "a289db43-0183-4161-8cca-b5be0f99aacd",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "a2c88257-f8dd-4930-92d8-b4da11fe2a8b",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "3982f3bb-ee98-4072-aca9-b679f28b28e9",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "be57d38d-f5fa-4679-b496-07f6cb418da3",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "bdf7cf1d-f3c1-4233-a89d-f6821b2f3943",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "d0ba7a17-8605-42f6-8f9d-2f2f17d3a670",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "9626a802-ec83-42ed-989a-b138cfd1e34b",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "ebd73e45-b18b-4536-bcb7-644db16127a0",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "59c5c571-640d-4c6f-b769-2b7e0b7f46a3",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "f18398ed-7dc7-436d-81b2-b91971484819",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "ec115c65-3945-4d13-9f2c-357b595b7fa4",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "f652bcc5-c1ea-4e02-9c92-77352183bc9f",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "7dab5ebd-3be6-4c7e-af21-48c067a9f933",
+      "result_id": "f9e3148e-e9b7-4505-906d-450551f35084"
+    },
+    {
+      "claim_id": "cb169cc6-f56c-4ccb-b827-8be2cd8e47d9",
+      "result_id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396"
+    },
+    {
+      "claim_id": "eff86527-ac6f-40a1-bda3-3925ad8fd143",
+      "result_id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396"
+    },
+    {
+      "claim_id": "63b5e667-e9d3-4847-88e3-0da312f7f3c2",
+      "result_id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396"
+    },
+    {
+      "claim_id": "ec165096-a94e-45b0-abd4-005b3670ac5a",
+      "result_id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396"
+    },
+    {
+      "claim_id": "ed73bdb3-06bf-4b4c-bc70-0d0adfc2108c",
+      "result_id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396"
+    },
+    {
+      "claim_id": "a9fbbc17-2e8f-4842-82f0-8c6627c5382d",
+      "result_id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396"
+    },
+    {
+      "claim_id": "ab5c2b3f-6121-41d6-8bb5-1f5c2956a1e5",
+      "result_id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396"
+    },
+    {
+      "claim_id": "61ce5c16-69f2-4261-8c7e-abe1756da318",
+      "result_id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396"
+    },
+    {
+      "claim_id": "48b80a18-b37c-4e37-af4d-43a387aa1bd0",
+      "result_id": "323d60f6-6b09-4ca2-aefb-51bb3a2cc396"
+    },
+    {
+      "claim_id": "1d3f1598-9f5c-4478-b23b-0b4501b37ce7",
+      "result_id": "4b81d13d-10b7-492e-8f68-8746fa00f226"
+    },
+    {
+      "claim_id": "e5afa0da-4c23-4f7e-91db-f2b65d348730",
+      "result_id": "4b81d13d-10b7-492e-8f68-8746fa00f226"
+    },
+    {
+      "claim_id": "d15dfd5c-37b2-440e-9c6e-7b9d80b01a8e",
+      "result_id": "4b81d13d-10b7-492e-8f68-8746fa00f226"
+    },
+    {
+      "claim_id": "22e3715c-ff9f-4934-8345-a8c84b11e1e3",
+      "result_id": "4b81d13d-10b7-492e-8f68-8746fa00f226"
+    },
+    {
+      "claim_id": "54f16ffa-6470-47fa-9350-ca05f15b98e3",
+      "result_id": "4b81d13d-10b7-492e-8f68-8746fa00f226"
+    },
+    {
+      "claim_id": "229afbbd-0e1d-4c65-bd21-7347afd17fe5",
+      "result_id": "4b81d13d-10b7-492e-8f68-8746fa00f226"
+    },
+    {
+      "claim_id": "94cb3b3d-2cbd-4a18-98af-621f683fc9b9",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "205f824e-956c-465c-9fcb-40f177a38d67",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "9bbdd2d6-b548-4bc7-90f5-cb1b4a6791ca",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "97900e6d-962c-49fc-92d6-c8ccc127444e",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "4e20d432-3f94-4486-b642-e18681055656",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "91b9db8c-f440-498e-a38d-087ae9775347",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "a530fa18-bf64-4f5b-8978-db256a0677ea",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "57291b67-1d95-46c9-a5ef-badd68b61f3f",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "2f417678-3b41-4c70-9964-fa9769dc0519",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "1b685fb1-6977-4fee-9e09-303b7ddc768e",
+      "result_id": "dbdf00f4-cce2-4ef6-8fc7-acd2e3efaf0b"
+    },
+    {
+      "claim_id": "af6e5983-4cd9-4221-b10b-c75cdaf62ffe",
+      "result_id": "21542b50-eb92-43e3-8460-6134828446b7"
+    },
+    {
+      "claim_id": "cccf6393-e372-4412-8db6-59ec9b3a8eb5",
+      "result_id": "21542b50-eb92-43e3-8460-6134828446b7"
+    },
+    {
+      "claim_id": "fee4e86a-e979-4a97-9067-022cfa5bc0e0",
+      "result_id": "21542b50-eb92-43e3-8460-6134828446b7"
+    },
+    {
+      "claim_id": "31a8832e-42e7-4fb9-b0ac-0a9cd7f041b3",
+      "result_id": "a360e968-44e9-426c-aff3-061ff2127631"
+    },
+    {
+      "claim_id": "d22bfea2-73d9-48ed-8b9f-dc2e275c05f8",
+      "result_id": "a360e968-44e9-426c-aff3-061ff2127631"
+    },
+    {
+      "claim_id": "a62a287f-936c-4a35-8540-ca0590c6a956",
+      "result_id": "a360e968-44e9-426c-aff3-061ff2127631"
+    },
+    {
+      "claim_id": "2cf5388c-efdd-4bf5-b630-0ee9d2333be4",
+      "result_id": "a360e968-44e9-426c-aff3-061ff2127631"
+    }
+  ],
+  "comparisons": []
+}

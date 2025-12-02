@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors sequenced 86 single nuclei from seven Rhizophagus isolates using FACS, whole genome amplification, and Illumina sequencing. This includes three new genome assemblies (SL1, R. diaphanus, R. cerebriforme) added to public databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C42 describe the experimental design with clear sample sizes and methods. The approach is well-established (citing Ropars et al. 2016) and data are deposited in public repositories, providing transparency and reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C99"
+    ],
+    "result": "SL1 is confirmed as a dikaryon with two MAT-loci and characteristic 50:50 allele frequency, but shows higher assembly fragmentation than other isolates despite similar gene content. R. diaphanus and R. cerebriforme are homokaryons with single MAT-loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 are well-supported by genome assembly data (Table 1), allele frequency plots (Figure 1B), and BUSCO/K-mer analyses (Table 2). The inference that fragmentation stems from genetic diversity (C36, C38) is reasonable but remains speculative without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Basic SNP filtering methods produce 96% false positives (6/148 validated), while stringent filtering reduces SNP counts by 93.8% but achieves 84% validation rate (30/36). Nuclear genomes show 0.06-0.12% divergence from reference and 99.62-99.87% inter-nuclear similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 provide critical validation data showing that basic filtering is unreliable. The stringent filtering approach is conservative and well-justified, though it likely removes true positives. This methodological result is essential for interpreting all subsequent findings and demonstrates appropriate rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Dikaryons harbor ~30-fold more SNPs than homokaryons (9-131 SNPs in homokaryons vs thousands in dikaryons). In dikaryons A4 and A5, nuclei segregate into two clades based exclusively on MAT-locus identity, with no evidence of inter-MAT recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are supported by stringent SNP data (Supplementary file 4) and clustering analysis (Figure 2A,B). The clear bi-allelic structure in A4/A5 contrasts with SL1 and provides important comparative context. Sample sizes are adequate (A4 n=14, A5 n=8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In SL1, nuclei segregate into two clades but show mosaic genotypes inconsistent with MAT-locus identity. Nucleus 7 (MAT-5) shares significant sequence similarity with MAT-1 nuclei, indicating inter-nuclear recombination. Recombination occurs across the genome, among many nuclei regardless of mating-type, encompassing hundreds to thousands of base pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 provide strong evidence for recombination in SL1, supported by sequence similarity matrices (Figure 2C), detailed genotype analysis (Figure 3, Supplementary file 6), and Sanger validation. The mosaic patterns are compelling and distinct from A4/A5. However, the sample size (n=15) and partial genome coverage (14% average) are limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Inter-nuclear recombination is detected in A4, though rarely, with at least one event involving ~1000 bp exchange between MAT-1 and MAT-2 nuclei. Recombination is even less frequent in A5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe limited recombination in A4/A5, supported by specific examples (scaffold 70 in A4). The contrast with SL1's extensive recombination is important, though the rarity of events and smaller sample size for A5 (n=8) limit confidence in quantifying frequency differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C78"
+    ],
+    "result": "Evidence for inter-nuclear recombination remains consistent across different assembly methods (SPAdes, ALLPATHS-LG) and variant callers (freebayes, GATK-HaplotypeCaller, Mutect2), with SL1 consistently showing more recombination than A4/A5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 demonstrate robustness by testing multiple computational approaches (Supplementary files 7-12). This addresses potential concerns about assembly artifacts or variant calling biases, strengthening confidence in the recombination findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "AMF nuclei show very low divergence (0.001-0.38%), inconsistent with the Meselson effect prediction for ancient asexuals. The 0.38% estimate from basic filtering is inflated by false positives. Low nuclear polymorphism is a hallmark across multiple AMF species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 are well-supported by the pairwise comparison data and validation experiments. The comparison to Meselson effect predictions is appropriate, and the finding extends beyond R. irregularis to other species. However, the conclusion that AMF 'may not' follow Meselson predictions (C70) is cautious given that recombination is not universal across all isolates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C96"
+    ],
+    "result": "AMF nuclei with distinct genotypes can undergo recombination, with frequency varying among strains. Despite recombination, nuclear genomes maintain \u226599.8% similarity. In SL1, recombination appears to result from multiple independent events at different mycelial locations, while A4 shows rare exchanges between conserved genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C77, C79-C81, C96 represent the core findings. The evidence for recombination is strong in SL1 (validated by Sanger sequencing) and present but rare in A4. The inference of multiple independent events (C79-C80) is reasonable given diverse recombination patterns but remains indirect. The \u226599.8% similarity claim (C7) is well-supported by pairwise comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors argue that observed recombination is likely driven by meiotic events rather than parasexuality, based on: (1) presence of complete meiosis gene sets, (2) haploid nuclei confirmed by flow cytometry, (3) absence of widespread diploidy in sequencing data, and (4) rarity of parasexuality in fungi. Parasexuality remains a possibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C91 present a mechanistic interpretation. While the presence of meiosis genes (C88) and absence of diploidy (C87) support meiosis, no direct observation of meiotic structures or processes is provided. The argument is inferential and relies on prior literature. Parasexuality cannot be ruled out (C91), and the mechanism remains unproven without cytological or functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C97",
+      "C98"
+    ],
+    "result": "AMF can generate genetic diversity via meiotic-like processes without observable mating. The dikaryotic life-stage is a primary source of nuclear variability with potential for strain enhancement. However, clonality remains the prevalent mode of evolution in lab cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C97-C98 synthesize the findings appropriately. The evidence supports recombination in dikaryons (especially SL1) as a source of diversity. The caveat that clonality remains prevalent (C98) is important given that recombination is rare/absent in some dikaryons (A4, A5) and all homokaryons. The 'meiotic-like' qualifier (C8) is appropriate given mechanistic uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The findings support the hypothesis that essentially all fungal species have found means to recombine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by the recombination evidence in this study combined with the cited literature (Nieuwenhuis and James, 2016). However, the generalization to 'essentially all' fungi extends beyond the data presented and relies heavily on the cited hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The cause of varying recombination rates among dikaryons (SL1, A4, A5) is unclear. Possible explanations include: non-permissive genotypes, lack of environmental triggers, insufficient mating compatibility, or contributions from mobile genetic elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 acknowledge an important gap in understanding. While C92-C93 establish that culture conditions were similar, the proposed explanations (C94-C95) are speculative. No experiments were performed to test these hypotheses, making this an area requiring future work.",
+    "result_type": "MINOR"
+  }
+]

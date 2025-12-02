@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mouse TRPA1 preferentially localizes to cholesterol-rich lipid raft domains. TIRF microscopy showed 89% colocalization between mTRPA1-mCherry and lipid raft marker cholera toxin B (C21, C22). Density gradient centrifugation revealed enrichment of TRPA1 in 30-35% OptiPrep fractions containing flotillin-2 and gangliosides (C27, C28). MCD treatment shifted TRPA1 from lipid raft to non-raft fractions (C29, C30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (TIRF microscopy and density gradient centrifugation) converge on the same conclusion. The colocalization score is quantitative (89%), and the biochemical fractionation data show appropriate controls (flotillin-2 as raft marker, Na/K-ATPase as non-raft marker). MCD treatment produces the expected shift, validating the cholesterol-dependence of the localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C46",
+      "C47",
+      "C81",
+      "C82",
+      "C88"
+    ],
+    "result": "Cholesterol depletion by MCD or SMase reduces TRPA1 sensitivity to chemical agonists AITC and thymol in both native DRG neurons and heterologous expression systems. MCD treatment increased the EC50 for AITC by 5-fold in HEK293T cells (C47, C82) and reduced response amplitudes in DRG neurons (C33, C36) without affecting cell viability (C34). Effects were concentration-dependent (C41) and observed with both electrophilic (AITC) and non-electrophilic (thymol) agonists (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional effects of cholesterol depletion are demonstrated across multiple cell types (DRG neurons, HEK293T, CHO cells) and with two independent cholesterol-depleting agents (MCD and SMase). Appropriate controls (high K+, capsaicin responses) validate cell viability and specificity. The dose-response data are quantitative with error estimates. The 5-fold EC50 shift is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C44",
+      "C45",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C68",
+      "C70",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Two CRAC motifs in transmembrane segments TM2 and TM4 mediate cholesterol-TRPA1 interactions that are necessary for normal agonist sensitivity and plasma membrane localization. Five CRAC motifs were identified, with CRACs 2-5 highly conserved across mammals (C44, C45). Mutations V780A and F786A (TM2) and L850A and Y852A (TM4) increased EC50 values and rendered channels insensitive to MCD treatment (C48-C53), indicating loss of cholesterol regulation. These mutants also displayed clustered membrane localization similar to MCD-treated WT channels (C68, C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis strategy is well-designed, targeting conserved residues in predicted CRAC motifs. The functional data show that mutations phenocopy cholesterol depletion (increased EC50, loss of MCD sensitivity), providing strong evidence for direct cholesterol interaction. The localization data independently support the functional findings. The correlation between calcium responses and electrophysiological currents (R=0.94, C65) validates the functional measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In silico docking simulations identify four independent cholesterol binding sites in TM2 and TM4. Cholesterol could not dock to the full channel structure due to steric hindrance (C55), but docking to isolated TM domains in vacuum revealed two sites in TM2 (containing V780 and F786) and two in TM4 (containing L850 and Y852) (C56). V780 and L850 interact with cholesterol's hydrocarbon tail, while F786 and Y852 interact with the \u03b1-face rings (C59, C60). Mutations affect only their own binding site (C61), and aromatic residue mutations produce larger binding energy reductions (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The computational approach has significant limitations acknowledged by the authors: simulations were performed in vacuum with isolated TM domains rather than the full membrane-embedded channel. The failure to dock cholesterol to the full structure (C55) raises questions about physiological relevance. While the binding energy calculations are internally consistent and support the mutagenesis data, the artificial simulation conditions limit confidence in the structural details. The results are more hypothesis-generating than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The mCherry tag does not affect TRPA1 function. The EC50 for AITC was not significantly different between WT mTRPA1 and mTRPA1-mCherry (C23), and thymol responses were also unaffected (C24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an important control validating the use of the mCherry-tagged construct for localization studies. The dose-response data for AITC and functional responses to thymol provide adequate evidence that the tag does not interfere with channel function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Whole-cell patch-clamp recordings confirm that AITC-induced currents in WT and mutant channels are mediated by TRPA1. AITC enhanced typical TRPA1 currents in all constructs (C63), currents were blocked by the TRPA1 antagonist HC030031 (C64), and current amplitudes strongly correlated with calcium responses (R=0.94) (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological data provide independent validation of the calcium imaging results. The use of a specific antagonist confirms channel identity, and the strong correlation between methods validates the calcium imaging approach used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "MCD treatment alters WT TRPA1 membrane localization from even distribution to clustered pattern with ~75% reduction in plasma membrane expression. WT channels showed even membrane distribution in control conditions (C66), but MCD treatment caused clustering and retention in sub-membrane aggregates (C67). MCD failed to further reduce membrane localization in most mutants (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The confocal microscopy data with quantitative analysis of membrane distribution patterns provide clear evidence for cholesterol-dependent membrane targeting. The observation that mutants already display the MCD-treated phenotype in control conditions strengthens the conclusion that the CRAC motifs mediate cholesterol-dependent localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C25",
+      "C26",
+      "C31",
+      "C42",
+      "C43",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "Background and context claims about TRPA1 properties, lipid raft markers, cholesterol depletion methods, and prior work on TRP channel regulation by cholesterol. These claims establish the scientific context and rationale for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately supported by citations to prior literature and represent established knowledge in the field. They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose that lipid rafts serve as scaffolds for 'esthesiosomes' containing TRPA1, TRPV1, and their modulators. This is based on the colocalization of TRPA1 in lipid rafts together with TRPV1, and potential interactions with bradykinin receptors (C94-C97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is primarily a speculative proposal (C97 is explicitly labeled as speculation) based on the current findings combined with prior literature. While the identification of TRPA1 in lipid rafts provides some support, the study does not directly demonstrate the proposed 'esthesiosome' complex or test interactions with TRPV1 or bradykinin receptors in the same membrane domains. This represents an interesting hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

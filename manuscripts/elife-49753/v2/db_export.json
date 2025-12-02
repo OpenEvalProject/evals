@@ -1,0 +1,1663 @@
+{
+  "submission": {
+    "id": "a813b508-4ede-49cb-8b7a-393101208336",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:28:15.505331Z",
+    "updated_at": "2025-12-02T13:28:15.505331Z"
+  },
+  "content": [
+    {
+      "id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "submission_id": "a813b508-4ede-49cb-8b7a-393101208336",
+      "content_type": "manuscript",
+      "content_text": "# Excitatory neurons are more disinhibited than inhibitory neurons by chloride dysregulation in the spinal dorsal horn\n\n## Authors\n\n- Kwan Yeop Lee<sup>1</sup>\n- St\u00e9phanie Ratt\u00e9<sup>1</sup>\n- Steven A Prescott<sup>1</sup> ([ORCID: 0000-0002-3827-4512](https://orcid.org/0000-0002-3827-4512)) \u2020\n\n### Affiliations\n\n1. Neurosciences and Mental Health The Hospital for Sick Children Toronto Canada\n2. Department of Physiology University of Toronto Toronto Canada\n3. Institute of Biomaterials and Biomedical Engineering University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeuropathic pain is a debilitating condition caused by the abnormal processing of somatosensory input. Synaptic inhibition in the spinal dorsal horn plays a key role in that processing. Mechanical allodynia \u2013 the misperception of light touch as painful \u2013 occurs when inhibition is compromised. Disinhibition is due primarily to chloride dysregulation caused by hypofunction of the potassium-chloride co-transporter KCC2. Here we show, in rats, that excitatory neurons are disproportionately affected. This is not because chloride is differentially dysregulated in excitatory and inhibitory neurons, but, rather, because excitatory neurons rely more heavily on inhibition to counterbalance strong excitation. Receptive fields in both cell types have a center-surround organization but disinhibition unmasks more excitatory input to excitatory neurons. Differences in intrinsic excitability also affect how chloride dysregulation affects spiking. These results deepen understanding of how excitation and inhibition are normally balanced in the spinal dorsal horn, and how their imbalance disrupts somatosensory processing.\n\n## Introduction\n\nNeuropathic pain results from damage to or dysfunction of the nervous system. It affects\u00a0~10% of the population (van Hecke et al., 2014) and is notoriously difficult to treat (Woolf, 2010). Hypersensitivity to tactile stimulation is a troubling feature of such pain. This so-called mechanical allodynia can be acutely reproduced by blocking synaptic inhibition at the spinal level (Miraucourt et al., 2009; Sivilotti and Woolf, 1994; Sorkin and Puig, 1996; Sorkin et al., 1998; Yaksh, 1989). Numerous other studies have shown that synaptic inhibition in the spinal dorsal horn is reduced after nerve injury (for reviews, see Prescott, 2015; Price et al., 2009). Disinhibition can result from reduced activation of GABAA or glycine receptors, or from reduced current flow through activated receptors. The former has several possible causes (Zeilhofer et al., 2012) but the latter stems uniquely from dysregulation of intracellular chloride due to KCC2 hypofunction (Coull et al., 2003). Enhancing KCC2 function reverses injury-induced allodynia (Gagnon et al., 2013; Lavertu et al., 2014; Mapplebeck et al., 2019), thus demonstrating that chloride dysregulation contributes significantly to injury-induced disinhibition.\n\nKnowing the molecular mechanism through which disinhibition occurs is important for devising therapeutic interventions, but the effects of disinhibition must also be considered at the circuit level to explain how sensory processing is disrupted (or conversely, to infer how disinhibition arises based on observable/reportable sensory changes that reflect circuit function). Indeed, selective disinhibition of inhibitory or excitatory dorsal horn neurons would likely yield opposite effects. Chloride dysregulation has been shown to occur in dorsal horn neurons with different spiking patterns (Coull et al., 2003), but circuit operation (and sensory processing) depends on how much inhibition each cell type normally experiences and how much is lost under pathological conditions.\n\nDisinhibition is known to unmask low-threshold input to projection neurons that normally respond exclusively to noxious input (Baba et al., 2003; Cheng et al., 2017; Keller et al., 2007; Lavertu et al., 2014; Lu et al., 2013; Miraucourt et al., 2007; Miraucourt et al., 2009; Torsney and MacDermott, 2006). Low-threshold input is conveyed polysynaptically to projection neurons via excitatory interneurons (for reviews, see Duan et al., 2018; Peirs and Seal, 2016; Prescott et al., 2014; Takazawa and MacDermott, 2010b). The disproportionate effect of disinhibition on low-threshold input (resulting in allodynia) suggests that excitatory interneurons are disinhibited; greater effects on noxious input (resulting in hyperalgesia) would be expected if disinhibition occurred selectively in projection neurons, that\u00a0is after the convergence of low- and high-threshold inputs. Separate work indicates that excitatory interneurons are necessary for mechanical allodynia (Cheng et al., 2017; Duan et al., 2014; Hu et al., 2006; Malmberg et al., 1997; Wang et al., 2013). Inhibitory neurons also receive inhibitory input (Takazawa and MacDermott, 2010a; Zheng et al., 2010), and could, therefore, also become disinhibited, but whether the resultant increase in GABAergic/glycinergic transmission enhances inhibition depends on the degree of chloride dysregulation in postsynaptic neurons (Doyon et al., 2011; Prescott et al., 2006). Thus, despite many advances, many questions remain about the balance of excitatory and inhibitory input to different dorsal horn neurons and how this E-I balance becomes pathologically altered.\n\nBeyond \u2018gating\u2019 sensory input in the spinal dorsal horn (Melzack and Wall, 1965), synaptic inhibition plays an important role in organizing receptive fields (RFs) (Isaacson and Scanziani, 2011). As originally described in retinal cells by Kuffler (1953), many neurons have an RF with an excitatory center and inhibitory surround. This includes dorsal horn neurons (Hillman and Wall, 1969). A center-surround organization has important implications for sensory processing and for how that processing is disrupted by disinhibition. Notwithstanding other explanations, reduced two-point discrimination in patients with neuropathic pain (Pleger et al., 2006) is consistent with increased RF overlap that could occur if surround inhibition is lost and RFs expand. Animal studies have demonstrated that RFs expand after nerve injury (Behbehani and Dollberg-Stolik, 1994; Cumberbatch et al., 1998; Devor and Wall, 1981; Suzuki et al., 2000; Tabo et al., 1999). This will affect the spatial summation of diffuse (broadly distributed) stimuli \u2013 moreso than for punctate (spatially restricted) stimuli \u2013 and is liable to affect dynamic mechanical allodynia, which is commonly provoked by clothes touching the skin.\n\nThe present study began with an exploration of how chloride dysregulation affects the RFs of superficial dorsal horn neurons. To this end, we blocked spinal KCC2 in vivo while monitoring the responses of neurons to tactile stimulation of the hind paw. Beyond RFs expanding, we found that unmasked excitatory input from the original RF surround became the predominant source of excitation. In vivo recordings also revealed two distinct cell types: units identified by their adapting spike pattern during tactile stimulation correspond to excitatory neurons whereas non-adapting units correspond to inhibitory neurons. In vitro patch clamp recordings showed that chloride regulation did not differ between excitatory and inhibitory neurons, and in vivo application of BDNF verified that both cell types experience chloride dysregulation under pathological conditions. That said, adapting and non-adapting cells responded differently to equivalent chloride dysregulation in part because of differences in intrinsic properties and in part because of differences in E-I balance at the circuit level. Most notably, inhibitory neurons were found to receive weak excitation counterbalanced by weak inhibition, whereas excitatory neurons receive strong excitation counterbalanced by strong inhibition. Because excitatory neurons rely more heavily on inhibition, they are disproportionately affected by disinhibition.\n\n## Results\n\n### Disinhibition causes cutaneous receptive fields to expand\n\nFor a RF with center-surround organization, disinhibition is expected to expand the RF by unmasking excitatory input originating from the surround (Figure 1A). This will enhance spatial summation, which is critical for diffuse stimuli \u2013 like the rubbing of clothes \u2013 that typically provoke dynamic allodynia. Compared with the punctate allodynia evoked by stimuli like von Frey hairs, dynamic allodynia is more troubling for patients (Hansson, 2003). Dorsal horn neuron RFs have been reported to change on a short timescale (minutes), consistent with an RF shaped by the balance of excitatory and inhibitory input rather than being \u2018hard wired\u2019 (Cook et al., 1987; Dubuisson et al., 1979; Laird and Cervero, 1989; McMahon and Wall, 1984). We therefore set out to determine how the RF size of spinal lamina I-II neurons depends on chloride regulation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon depicts how narrowly tuned excitation combined with broadly tuned inhibition produces a receptive field (RF) with an excitatory center and inhibitory surround. (B) Firing rate histograms from a typical neuron responding to brush stimulation (black bars) applied to the RF center (orange) or surround (green) before (left) and after (right) blockade of KCC2 by intrathecal DIOA. (C) Summary of spike rates evoked by brush stimulation in the RF center or surround 10 and 30 min after application of 100 \u00b5M DIOA (n\u00a0=\u00a010) or 50 \u00b5M VU (n\u00a0=\u00a022) to block KCC2; data for DIOA and VU were pooled based on the absence of any significant differences. KCC2 blockade had a significant effect on brush-evoked firing (F2,62 = 17.78, p<0.001, two-way repeated measures ANOVA). Results of Wilcoxon tests are reported on graphs. Firing rates were stably elevated for at least 20 min, thus allowing for other effects of disinhibition (e.g. on RF size) to be measured. (D) To quantify the excitatory drive originating from each RF zone, average evoked firing rate (\u00b1\u00a0sem) was plotted against average surface area (\u00b1\u00a0sem) of the RF zone in which the stimulus was applied. Each data point demarcates a rectangle (colored) whose area is proportional to excitatory drive from that RF zone. (E) By calculating the product of RF zone area and firing rate on a cell-by-cell basis (n\u00a0=\u00a022), disinhibition was found to significantly increase total drive (F1,21 = 139.17, p<0.001; two-way repeated measures ANOVA on log-transformed data) but this depended on the RF zone (interaction, F1,21 = 49.81, p<0.001): the RF surround contributed significantly greater drive than the RF center after KCC2 blockade. Results of Student-Newman-Keuls (SNK) tests are reported on graphs.\n\nTo test the effects of KCC2 blockade on RF size, we used brush stimulation to map the cutaneous RF of dorsal horn neurons recorded in vivo. The RF measured under normal (baseline) conditions was labeled the RF center; by definition, areas outside the RF center evoked negligible spiking (Figure 1B left). After blockade of KCC2 by intrathecal DIOA, stimulation in the RF center evoked larger responses and stimulation outside the RF center evoked vigorous spiking (Figure 1B right). The RF was re-mapped and the additional area was labeled the RF surround. KCC2 blockade significantly increased firing evoked by stimulation in the RF center or surround (Z\u00a0=\u00a04.79, p<0.001 and Z\u00a0=\u00a04.72, p<0.001 respectively; Wilcoxon tests) (Figure 1C). Firing rate histograms in Figure 1B include all spikes but the spontaneous firing rate preceding each stimulus was subtracted from firing during stimulation to focus on evoked firing in Figure 1C\u2013E.\n\nNext, we compared the enhanced excitatory drive from the RF center with the unmasked excitatory drive from the RF surround by plotting the average area for each RF zone against the average firing rate evoked by stimulation in that zone. This defines a rectangle whose area is proportional to the total excitatory drive contributed by that RF zone (Figure 1D). By multiplying the area of each RF zone with the corresponding firing rate for each unit (i.e. calculating the area of the aforementioned rectangle on a cell-by-cell basis), we found that KCC2 blockade significantly increased drive from both the RF center and surround (Q21\u00a0=\u00a03.60, p=0.015 and Q21\u00a0=\u00a018.54, p<0.001, respectively; post-hoc Student-Newman-Keuls [SNK] tests). Excitatory drive from the RF surround was (by definition) significantly less than from the RF center under baseline conditions (Q21\u00a0=\u00a05.91, p<0.001), but the inverse was true after disinhibition (Q21\u00a0=\u00a03.42, p=0.022) (Figure 1E). Hence, after disinhibition caused by KCC2 blockade, neurons were driven more strongly by unmasked excitatory input from the RF surround than by enhanced input from the RF center.\n\n### Units recorded in vivo comprise two distinct groups\n\nOver the course of these experiments we noticed that some units had a monophasic spike waveform whereas others had a biphasic waveform (Figure 2A). The former exhibited spike rate adaptation during sustained tactile stimulation with a von Frey (VF) filament whereas the latter did not (Figure 2B). The adaptation time constant measured from exponential-rise-to-maximum fits of the cumulative probability distribution of spike times from each unit differed significantly between units classified by their spike waveform (T23\u00a0=\u00a08.58, p<0.001; unpaired t-test) (Figure 2B inset). The difference in adaptation argues that units with distinct spike waveforms represent distinct cell types rather than, for example, somatic and axonal recording from the same population of neurons. The two cell types are henceforth referred to as adapting and non-adapting. In subsequent experiments, we found that approximately 80% of units responsive to light tactile stimulation could be readily classified by their adaptation pattern; unclassified units were excluded from subsequent analysis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig2-v2.jpg)\n\n**Figure 2.:** (A) Spike waveforms were separated according to their monophasic (blue) or biphasic (red) shape. (B) Units subdivided by spike waveform also differed in their adaptation pattern, as illustrated by sample rasters showing responses to 1 s-long 10 g von Frey stimulation (top). The cumulative probability of spiking was fit for each unit with the curve y\u00a0=\u00a01/(1-e-t/\u03c4). The adaptation time constant \u03c4 differed significantly between groups (T23\u00a0=\u00a08.58, p<0.001; unpaired t-test). Units are henceforth referred to as adapting (blue) or non-adapting (red). (C) Adapting units had a significantly smaller RF than non-adapting units at baseline (Q21\u00a0=\u00a017.5, p=0.013; Mann-Whitney test) but there was no difference in RF size after KCC2 blockade (Q21\u00a0=\u00a049.0, p=0.83). RF size was significantly affected by KCC2 blockade in both type of units (F1,20 = 66.10, p<0.001; two-way repeated measures ANOVA). Results of SNK tests are reported on graphs. (D) KCC2 blockade caused a larger, though not quite significant, increase in drive from the RC center relative to the RF surround in adapting units compared with non-adapting units (T14\u00a0=\u00a01.89, p=0.080; unpaired t-test). (E) Cross-correlograms were calculated from all pairs of simultaneously recorded primary afferent neurons and spinal neurons with overlapping RFs. The number of pairs is reported on each panel. Primary afferents were classified as rapid-adapting (RA, left) or slow-adapting (SA, right); rasters show sample responses to 1 s-long 10 g von Frey stimulation (top). Adapting units displayed an increased probability of spiking after RA spikes (top left) but not after SA spikes (top right) whereas non-adapting units displayed a large increase in spike probability after SA spikes (bottom right) and a modest increase after RA spikes (bottom left). In other words, adapting units receive input exclusively from RA afferents whereas non-adapting units receive input preferentially from SA afferents.\n\nAnalysis of additional response properties support the classification based on adaptation pattern. The RFs of adapting units were significantly smaller than RFs of non-adapting units at baseline (U\u00a0=\u00a017.5, p=0.013; Mann-Whitney test) (Figure 2C). KCC2 blockade enlarged RFs in both adapting units (Q14\u00a0=\u00a011.69, p<0.001; SNK test) and non-adapting units (Q6\u00a0=\u00a05.94, p<0.001). Of the units analyzed in Figure 1E, 12 were subsequently identified as adapting and four as non-adapting; the disinhibition-mediated increase in drive from the RF surround relative to increased drive from the RF center tended to be greater in adapting units, though the difference did not reach significance (T14\u00a0=\u00a01.89, p=0.080; unpaired t-test) (Figure 2D).\n\nTo assess functional connectivity between primary afferent neurons and each type of spinal unit, we recorded simultaneously from the dorsal root ganglion and spinal cord. Mechanosensitive afferents were subdivided into rapid-adapting (RA) and slow-adapting (SA) (Johansson and Vallbo, 1979). We calculated cross-correlograms by measuring the probability of a spinal unit firing at different times relative to each spike in a simultaneously recorded primary afferent with overlapping RF. According to this analysis, adapting units receive tactile input exclusively from RA afferents whereas non-adapting units receive tactile input preferentially from SA afferents (Figure 2E). Differences in adaptation during evoked firing may be due to differences in primary afferent input and feedforward inhibition (Zhang et al., 2018), but differences in spontaneous spiking (see ) suggest that adapting and non-adapting spinal units also differ in their intrinsic excitability. Indeed, data in Figure 2E may reflect differential responsivity of spinal units rather than differential connectivity per se: Neurons operating as coincidence detectors respond preferentially to synchronous inputs (Ratt\u00e9 et al., 2013) that are likely to arise from RA afferents whose spikes occur synchronously (Lankarany et al., 2019), whereas neurons operating as integrators also respond to asynchronous inputs that are likely to arise from SA afferents whose spikes occur asynchronously. Natural tactile stimuli will co-activate both types of spinal neurons, but may do so in different proportions depending on stimulus characteristics. Recent efforts using optogenetics to identify which type of low-threshold mechanoreceptors mediate allodynia after nerve injury are interesting in this regard: Dhandapani et al. (2018) showed that activating TrkB-ChR2-positive neurons \u2013 which include D-hair (A\u03b4) and RA afferents \u2013 provokes allodynia whereas Chamessian et al. (2019) showed that activating Vglut1-ChR2-positive neurons \u2013 which include RA and SA afferents \u2013 does not. The discrepancy suggests that activation of RA but not SA afferents produces allodynia, which implies that spinal circuits implement a NIMPLY logic gate. This is consistent with our data and supports combinatorial coding over labeled lines (Ma, 2010; Prescott et al., 2014; Prescott and Ratt\u00e9, 2012). These are important considerations for future studies.\n\n### Adapting and non-adapting units correspond to excitatory and inhibitory neurons, respectively\n\nNext, we asked whether adapting and non-adapting units represent different cell types within the dorsal horn circuit. Since projection neurons are absent in lamina II and represent only\u00a0~5% of neurons in lumbar segments of lamina I in rats (Spike et al., 2003), the units we recorded were most likely local interneurons, of which approximately 2/3 are excitatory and 1/3 are inhibitory (Abraira et al., 2017; Polg\u00e1r et al., 2003; Prescott and Ratt\u00e9, 2012; Todd, 2010; Todd, 2017). Without transgenic rats to genetically identify neuron types, and rather than switch to mice in which certain experiments (e.g. Figure 2E or 8B) would be prohibitively difficult, we undertook a series of tests designed to link adaptation pattern to pharmacologically testable markers and other distinctive properties.\n\nFirst, we intrathecally applied agonists of receptors expressed selectively by excitatory or inhibitory dorsal horn neurons to test for differential effects in adapting and non-adapting units. Metabotropic glutamate receptor five is expressed almost exclusively on excitatory neurons and its agonist 3,5-dihydroxyphenylglycine (DHPG) has been shown to selectively modulate the excitability of excitatory neurons (Hu and Gereau, 2011). Comparing brush-evoked firing before and after intrathecal DHPG revealed that adapting cells were preferentially affected (\u03c72 = 9.95, p=0.007) (Figure 3A), consistent with adapting cells being excitatory neurons. Spontaneous spiking was unchanged by DHPG, consistent with adapting units not spiking spontaneously under any condition (see Discussion). Moreover, DHPG is known to reduce the A-type potassium current (Hu and Gereau, 2011), which, because of its gating properties, predominantly affects the spiking driven by abrupt depolarization (e.g. AMPA receptor-mediated excitation) (Zhang et al., 2018).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sample firing rate histograms from a typical adapting unit (blue) and non-adapting unit (red) during brush stimulation (bars) before and after intrathecal application of 200 \u03bcM 3,5-dihydroxyphenylglycine (DHPG). Adapting units were disproportionately affected (\u03c72 = 9.95, p=0.007), consistent with them being excitatory neurons, which selectively express metabotropic glutamate receptor 5. (B) Sample firing rate histograms before and after intrathecal application of 50 \u03bcM somatostatin (SST). Non-adapting units were disproportionately affected (\u03c72 = 16.85, p=0.001), consistent with them being inhibitory neurons, which selectively express the sst2a receptor. Some adapting units exhibited reduced spiking (see Results). Spontaneous firing was increased by SST selectively in non-adapting units. (C) Distribution of recording depths for units responsive to light touch at baseline (left) and for units that became responsive after KCC2 blockade (right).\n\nThe somatostatin (SST) receptor sst2a is expressed selectively on inhibitory neurons (Todd et al., 1998). Intrathecal application of SST preferentially affected brush-evoked spiking in non-adapting cells (\u03c72 = 16.85, p<0.001) (Figure 3B), consistent with non-adapting cells being inhibitory neurons. Unlike the majority (55%) of non-adapting units whose evoked firing was increased by SST, evoked firing was reduced in a minority (32%) of adapting units presumably via an indirect circuit-level effect, namely, increased inhibition mediated by sst2a-expressing neurons. Non-adapting units also exhibited an increase in spontaneous firing (see Figure 3B), which must be a direct effect of SST on those units given the absence of SST-induced spontaneous firing in any other units. Spontaneous spiking has been previously reported in preprodynorphin neurons (Zhang et al., 2018), which express the sst2a receptor (Kardon et al., 2014). Notably, sst2a receptor activation causes hyperpolarization via activation of an inward rectifying potassium current according to in vitro recordings (Kim et al., 2002), contrary to the excitatory effect that we observed in vivo. The reason for the inverted effect is unclear, but one possibility is that application of a high concentration of SST caused receptor internalization (Stroh et al., 2000) and paradoxically reduced normal sst2a signaling; indeed, early electrophysiological studies of SST reported conflicting excitatory and inhibitory effects (e.g. Mueller et al., 1986).\n\nFigure 3C summarizes the depth of each unit from the dorsal surface of the spinal cord. The distributions of adapting and non-adapting units were significantly different (D\u00a0=\u00a00.56, p<0.001; Kolmogorov-Smirnov test) with an average depth (\u00b1\u00a0sd) of 156\u00a0\u00b1\u00a072 \u03bcm and 234\u00a0\u00b1\u00a057 \u03bcm, respectively (Figure 3C left), which is consistent with the increasing proportion of inhibitory neurons between lamina I to III (Polg\u00e1r et al., 2003). The relative numbers of adapting and non-adapting units (n\u00a0=\u00a064 and 41, respectively) did not differ significantly (\u03c72 = 0.74, p=0.39) from the overall 2:1 ratio of excitatory to inhibitory neurons in the superficial dorsal horn (see above), though one must consider that we recorded selectively from neurons responsive to innocuous tactile stimulation. We identified an additional 27 units that responded to tactile stimulation only after KCC2 blockade (Figure 3C right). These units presumably receive low-threshold input via polysynaptic pathways normally blocked by inhibition. Of these units, 22 were adapting and five were non-adapting, consistent with the emerging picture that polysynaptic pathways comprising excitatory interneurons relay low-threshold inputs to superficial projection neurons (see Introduction).\n\n### Spiking in adapting and non-adapting units is differentially affected by KCC2 blockade\n\nTo explore whether putative excitatory and inhibitory neurons are differentially affected by chloride dysregulation, we measured evoked firing before and after KCC2 blockade. Figure 4A shows sample input-output (i-o) curves for representative adapting and non-adapting units activated by von Frey stimulation of their RF surround. KCC2 blockade significantly increased i-o curve slope in adapting and non-adapting units (Z\u00a0=\u00a03.82, p<0.001 and Z\u00a0=\u00a03.30, p<0.001, respectively; Wilcoxon tests) (Figure 4B). The y-intercept was not analyzed since the spontaneous firing rate was subtracted to isolate the evoked response, but separate analysis showed that spontaneous firing was significantly greater in non-adapting units than in adapting units at baseline (U\u00a0=\u00a0116.5, p<0.001; Mann-Whitney test), and that KCC2 blockade significantly increased spontaneous firing in non-adapting units (Z\u00a0=\u00a03.58, p<0.001; Wilcoxon test) but not in adapting units (Z\u00a0=\u00a00.39, p=0.70) (Figure 4C). Recall that spontaneous firing in non-adapting units was also increased by SST (see Figure 3B), yet other manipulations like glycine receptor blockade did not affect spontaneous firing in non-adapting units (T9\u00a0=\u00a01.654, p=0.13; paired t-test) (see Figure 4\u2014figure supplement 1). The latter observation argues that spontaneous firing is not a consequence of circuit-level disinhibition, but is instead most likely due to the depolarization caused by manipulations like KCC2 blockade. Indeed, inhibitory neurons experience strong tonic GABAergic or glycinergic input (Gradwell et al., 2017; Takazawa and MacDermott, 2010a), meaning a depolarizing shift in chloride reversal potential will cause depolarization even in the absence of stimulus-evoked synaptic input, and tonic-spiking inhibitory neurons respond to subtle depolarization with sustained spiking because of their voltage-gated channels (Prescott and De Koninck, 2005; Ratt\u00e9 et al., 2014). To summarize, KCC2 blockade affected touch-evoked spiking in both adapting and non-adapting units but the selective modulation of spontaneous spiking in the latter likely reflects the intrinsic excitability of that cell type.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig4-v2.jpg)\n\n**Figure 4.:** (A) Input-output (i\u2013o) curves show firing rate evoked by increasing force applied by von Frey hairs to the RF surround in a typical adapting unit (blue) and non-adapting unit (red) before and after blockade of KCC2. (B) KCC2 blockade had a significant effect on slope (F1,31 = 35.68, p<0.001; two-way repeated measures ANOVA). That effect did not differ between cell types (interaction, F1,31 = 0.15, p=0.71) although the largest increases were observed in adapting units. Results of Wilcoxon tests are reported on graphs. (C) KCC2 blockade also had a significant effect on spontaneous firing (F1,57 = 58.60, p<0.001; two-way repeated measures ANOVA) but that effect differed between cell types (F1,57 = 33.79, p<0.001): non-adapting units experienced a significant increase in spontaneous firing (Z19\u00a0=\u00a03.58, p<0.001; Wilcoxon test) whereas adapting units did not (Z38\u00a0=\u00a00.39, p=0.70). Spontaneous firing differed significantly between cell types at baseline (U58\u00a0=\u00a0116.5, p<0.001; Mann-Whitney test) and after KCC2 blockade (U58\u00a0=\u00a055.5, p<0.001). See also Figure 4\u2014figure supplement 1 for the effect of glycine receptor blockade on spontaneous firing.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig4-figsupp1-v2.jpg)\n\n### Excitatory and inhibitory neurons are differentially affected by equivalent chloride dysregulation\n\nDifferential effects of KCC2 blockade on spiking in adapting and non-adapting units could be due to differences in chloride regulation (KCC2 expression) and/or differences in intrinsic excitability that influence how chloride dysregulation affects spiking. To test the former, we conducted whole-cell patch clamp recordings in a spinal slice preparation (see Materials\u00a0and\u00a0methods). Specifically, we identified neurons as excitatory or inhibitory based on their spiking pattern recorded in current clamp (see below) and, after loading the neuron with high chloride, we measured chloride reversal potential (ECl) before and after blocking KCC2 based on voltage clamp responses to puffed GABA (Figure 5A). Changes in ECl measured under a defined chloride load is a more sensitive measure of chloride extrusion capacity than perforated patch measurements of ECl in low chloride-load conditions (Doyon et al., 2016). Results revealed no difference in chloride extrusion capacity between excitatory and inhibitory neurons (T12\u00a0=\u00a00.030, p=0.98, unpaired t-test) (Figure 5B), thus excluding differences in chloride regulation as the basis for the differentially modulated spiking reported in Figure 4C.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig5-v2.jpg)\n\n**Figure 5.:** (A) Responses to 5\u201310 ms-long puffs of 1 mM GABA (arrowhead) were measured in voltage clamp at different holding potentials (inset) in neurons patched with a high-chloride (25 mM) pipette solution. Chloride reversal potential ECl, which corresponds to where the I-V curve intersects the x-axis, was measured before (black) and after (gray) blockade of KCC2 with 15 \u00b5M bath-applied VU. The shift in ECl reflects chloride extrusion capacity, which is not equivalent to the change in ECl caused by KCC2 blockade under natural conditions (i.e. without intracellular chloride loading). (B) Neurons identified as excitatory or inhibitory based on spiking pattern (inset) displayed no difference in chloride extrusion capacity (T12\u00a0=\u00a00.030, p=0.98; unpaired T-test).\n\nFor all in vitro experiments, excitatory and inhibitory neurons were identified by their spiking pattern during sustained somatic current injection (see traces on Figure 5B). The A-type potassium current, which is associated with delayed- and single-spiking (Balachandar and Prescott, 2018), is selectively expressed in the spinal dorsal horn by excitatory neurons (Hu et al., 2006) whereas tonic-spiking is observed almost exclusively in inhibitory neurons (Yasaka et al., 2010) (for reviews, see Prescott and Ratt\u00e9, 2012; Todd, 2010; Todd, 2017). This is consistent with excitatory neurons genetically identified by somatostatin expression (most of which exhibit delayed-, single-, or burst-spiking) and inhibitory neurons genetically identified by dynorphin expression (most of which exhibit tonic- or burst-spiking) (Duan et al., 2014). Thus, although some spiking patterns (e.g. bursting) are not predictive of cell type, other patterns are (see also Hughes et al., 2012). Accordingly, we tested single- or delayed-spiking excitatory neurons and tonic-spiking inhibitory neurons; neurons with other spiking patterns or whose classification was unclear were excluded. Given these inclusion criteria, data in Figure 5 do not rule out differences in chloride extrusion within certain subpopulations of neurons, but they do rule out a systematic difference between the most common excitatory and inhibitory neurons.\n\nTo test whether differences in intrinsic excitability influence how chloride dysregulation affects spiking, we used dynamic clamp to simulate equivalent virtual disinhibition in different cell types. All neurons received virtual excitatory and inhibitory synaptic inputs modeled as Ornstein-Uhlenbeck processes (Figure 6A). Firing rate was measured for different average excitatory conductance (gexc0). The average inhibitory conductance (ginh0) was co-varied with gexc0 according to \u03b1, where \u03b1 = \u00bd represents stimulation inside the RF whereas \u03b1\u00a0=\u00a02 represents stimulation in the RF surround (Figure 6B). This parameterization assumes a center-surround organization formed by the combination of narrowly tuned excitatory input and broadly tuned inhibitory input (see Introduction). Chloride dysregulation was modeled as a shift in the anion reversal potential (Einh) from \u221270 mV to \u221245 mV, where \u221245 mV represents the largest shift in Einh observed after nerve injury (Coull et al., 2003). We used Einh = \u221245 mV to simulate complete blockade of KCC2; partial downregulation of KCC2 after nerve injury would produce a subtler shift.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig6-v2.jpg)\n\n**Figure 6.:** (A) Cartoon depicts dynamic clamp experiments: noisy excitatory and inhibitory conductances were generated through separate Ornstein-Uhlenbeck processes, converted to currents based on recorded voltage, and applied to the neuron. Average excitatory conductance, gexc0, was systematically varied to plot input-output (i\u2013o) curves. (B) Average inhibitory conductance, ginh0, was co-varied with gexc0 according to \u03b1 = ginh0/gexc0, where \u03b1\u00a0=\u00a00.5 for virtual stimulation in the RF center and \u03b1\u00a0=\u00a02 for virtual stimulation in the RF surround. (C) Average i-o curves (\u00b1\u00a0sem) for excitatory cells (blue, n\u00a0=\u00a06) and inhibitory cells (red, n\u00a0=\u00a08) for \u03b1\u00a0=\u00a02; see Figure 6\u2014figure supplement 1 for results with \u03b1\u00a0=\u00a00.5. Each neuron was tested with normal inhibition (Einh = \u221270 mV) and again after virtual disinhibition (Einh = \u221245 mV). Disinhibition affected the i-o curve slope of both cell types but shifted the i-o curve only in inhibitory cells. (D) Einh had a significant effect on slope (F1,13 = 28.12, p<0.001, two-way repeated measures ANOVA). That effect did not differ significantly between cell types (interaction, F1,13 = 3.81, p=0.073) but there was a trend towards a larger increase in excitatory cells. Einh also had a significant effect on the y-intercept (F1,13 = 14.48, p=0.002) but only in inhibitory neurons (interaction, F1,13 = 11.75, p=0.004). Results of SNK tests are reported on graphs. (E) Summary of disinhibitory effects in vitro (data from panels C and D) for comparison with disinhibitory effects in vivo (data from Figure 4). Data are summarized as mean\u00a0\u00b1\u00a0sem. Each colored arrow indicates a significant effect of disinhibition (p<0.05). Disinhibition significantly increased firing rate gain in all neuron types but increased spontaneous firing selectively in inhibitory neurons and non-adapting units.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Average i-o curves (\u00b1\u00a0sem) for excitatory neurons (blue) and inhibitory neurons (red). (B) Einh had a significant effect on slope (F1,13 = 8.82, p=0.011, two-way repeated measures ANOVA) but only in excitatory cells. Results of SNK tests are reported on graphs. The effect of Einh on the y-intercept differed significantly between excitatory and inhibitory cells (interaction, F1,13 = 5.67, p=0.033), with only inhibitory cells experiencing a significant change. Like for virtual stimulation in the RF surround (Figure 6), the y-intercept differed significantly (p=0.017; SNK test) between excitatory and inhibitory cells for Einh = \u221245 mV.\n\nFigure 6C shows the average i-o curves for excitatory neurons (top) and inhibitory neurons (bottom) tested with \u03b1\u00a0=\u00a02. Both types of neurons responded to virtual chloride dysregulation with an increase in firing rate gain (slope) but only inhibitory neurons exhibited a pronounced shift in their average i-o curve. To quantify these changes, we fitted data from each neuron individually and compared the slope and y-intercept between cell types. Disinhibition significantly increased the slope in both excitatory and inhibitory neurons (Q5\u00a0=\u00a06.62, p<0.001 and Q8\u00a0=\u00a03.75, p=0.020, respectively; SNK tests) (Figure 6D top), but increased the y-intercept only in inhibitory neurons (Q8\u00a0=\u00a08.09, p<0.001 vs Q5\u00a0=\u00a00.35, p=0.81 in excitatory neurons) (Figure 6D bottom). The increase in slope tended to be larger for excitatory neurons but the interaction between Einh and cell type did not reach significance (F1,13 = 3.81, p=0.073). Similar trends were observed for \u03b1 = \u00bd (see Figure 6\u2014figure supplement 1) though effects of disinhibition were weaker, consistent with weaker inhibition relative to excitation in the RF center. Indeed, firing rate gain under normal conditions (Einh = \u221270 mV) was significantly less for \u03b1\u00a0=\u00a02 than for \u03b1 = \u00bd (Q5\u00a0=\u00a08.67, p<0.001 and Q5\u00a0=\u00a07.45, p<0.001 for excitatory and inhibitory neurons, respectively; SNK tests), consistent with past work on inhibition-mediated gain control (Prescott and De Koninck, 2003; Silver, 2010).\n\nFigure 6E summarizes the effects of virtual disinhibition in vitro (left panels) for comparison with effects of KCC2 blockade in vivo (right panels). Whereas the firing rate gain of all cell types was significantly increased by disinhibition, only inhibitory neurons (in vitro) and non-adapting units (in vivo) exhibited a significant change in spontaneous spiking. Notably, the relative increase in spontaneous spiking caused by disinhibition is similar between in vitro and in vivo conditions, but the absolute increase is greater in the latter. Also, the differential increase in firing rate gain between excitatory and inhibitory neurons tends to be greater for in vitro experiments than observed in vivo. These differences presumably reflect conditions in vivo that were not recapitulated in our in vitro experiments. Notwithstanding quantitative differences, the qualitative concordance between in vitro and in vivo data supports the interpretation of data in Figure 3, namely that adapting units represent excitatory neurons whereas non-adapting units represent inhibitory neurons.\n\n### BDNF induces chloride dysregulation in both cell types\n\nAlthough excitatory and inhibitory neurons exhibit equivalent chloride extrusion capacity according to Figure 5, those results do not address whether KCC2 is equivalently downregulated in each cell type after nerve injury. To address this issue, we tested whether adapting and non-adapting units are comparably affected by brain-derived neurotrophic factor (BDNF), which plays a key role in downregulating KCC2 after nerve injury (Coull et al., 2005). Notwithstanding sex differences in neuroimmune signaling (Sorge et al., 2015), we recently showed that BNDF is sufficient to downregulate KCC2 and cause allodynia in both male and female rodents (Mapplebeck et al., 2019). Rather than compare nerve-injured and control animals, in which other changes induced by nerve injury might compromise our classification scheme, we compared responses for each unit before and after intrathecal BDNF, and re-tested again after applying acetazolamide (ACTZ), which selectively reverses effects of chloride dysregulation by reducing bicarbonate efflux through GABAA/glycine receptors (Lee and Prescott, 2015). Reversal of BDNF effects by ACTZ serves as a control for off-target (non-KCC2-mediated) effects of BDNF.\n\nIntrathecal BDNF significantly increased firing evoked by brush stimulation applied to the RF center of adapting and non-adapting units (Z\u00a0=\u00a03.10, p<0.001 for both cell types; Wilcoxon tests) (Figure 7A left). Comparable effects were observed for stimuli applied to the RF surround (Z\u00a0\u2265\u00a02.93, p<0.001) (Figure 7A right). In all cases, BDNF-mediated enhancement of evoked firing was significantly reversed by subsequent application of ACTZ (Z\u00a0\u2265\u00a02.85, p\u22640.002). Moreover, BDNF failed to induce spontaneous firing in adapting units (Z\u00a0=\u00a00.51 p=0.64) but significantly increased spontaneous firing in non-adapting units (Z\u00a0=\u00a02.52, p=0.008) (Figure 7B). This differential change in spontaneous firing is consistent with the effect of KCC2 blockade (Figure 4C), and is unlike the effect of glycine receptor blockade (Figure 4\u2014figure supplement 1). The BDNF-mediated enhancement of spontaneous firing was significantly reversed by ACTZ (Z\u00a0=\u00a02.52, p=0.008). These results demonstrate that BDNF causes comparable disinhibition in both cell types, but, like for direct blockade of KCC2, spontaneous firing was increased selectively in non-adapting units.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig7-v2.jpg)\n\n**Figure 7.:** (A) Intrathecal BDNF (70 \u00b5g) and ACTZ (10 mM) had a significant effect on the firing evoked by brush stimulation of the RF center (F2,56 = 15.41, p<0.001; two-way repeated measures ANOVA) or surround (F2,56 = 17.92, p<0.001). BDNF significantly increased evoked firing and subsequent application of ACTZ significantly reduced firing in adapting (blue) and non-adapting (red) units. Results of SNK tests are reported on graphs. (B) BDNF and ACTZ also had a significant effect on spontaneous firing (F2,56 = 6.76, p=0.002; two-way repeated measures ANOVA) but that effect differed between cell types (interaction, F1,56 = 8.10, p=0.008). Only non-adapting units responded to BDNF with significantly increased spontaneous firing, which was entirely reversed by ACTZ. Results of SNK tests are reported on graphs.\n\n### Surround inhibition is greater, and disininhibition more consequential, for adapting units\n\nIn a final set of experiments, we tested how expansion of the RF affects spatial summation of tactile input. To this end, we compared responses to co-stimulation in the RF center and surround with responses to stimulation in the RF center alone. Stimulation of the RF surround is predicted to reduce evoked firing under baseline conditions (ratio\u00a0<1) and to increase it after KCC2 blockade (ratio\u00a0>1) (Figure 8A). As predicted, stimulation in the RF surround significantly reduced the response to stimulation in the RF center (T22\u00a0=\u00a0\u22129.26, p<0.001 and T11\u00a0=\u00a0\u22122.90, p=0.014 for adapting and non-adapting units, respectively; one sample t-tests on log-transformed data) (Figure 8B). Adapting units experienced a significantly larger reduction than non-adapting units (Q33\u00a0=\u00a03.61, p=0.013; SNK test). After KCC2 blockade, the effect of stimulation in the RF surround was inverted and enhanced the response to stimulation in the RF center (T22\u00a0=\u00a06.24, p<0.001 and T11\u00a0=\u00a06.06, p<0.001 for adapting and non-adapting units, respectively). Moreover, adapting units experienced a significantly larger enhancement than non-adapting units (Q33\u00a0=\u00a02.91, p=0.044; SNK test). These data suggest that adapting units receive strong excitatory input balanced by strong inhibitory input, whereas non-adapting units receive weaker excitatory input balanced by weaker inhibitory input. Because of their heavier reliance on inhibition to counterbalance strong excitation, adapting units experience greater disinhibition than non-adapting units.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/49753/elife-49753-fig8-v2.jpg)\n\n**Figure 8.:** (A) Stimulation of the RF center (Scenter) evokes net excitation whereas stimulation of the RF surround (Ssurround) normally evokes net inhibition but evokes excitation after KCC2 blockade. (B) Responses to brush co-stimulation, Scenter + Ssurround, expressed as a ratio of the response to Scenter alone. A ratio\u00a0<1 means that Ssurround evoked inhibition whereas a ratio\u00a0>1 means that Ssurround contributed to excitation. KCC2 blockade had a significant effect on the ratio (F1,33 = 83.93, p<0.001; two-way repeated measures ANOVA) but that effect differed between cell types (interaction, F1,33 = 8.89, p=0.005). Specifically, co-stimulation had a significantly stronger inhibitory effect under baseline conditions (Q33\u00a0=\u00a03.61, p=0.013; SNK test) and a significantly stronger excitatory effect after disinhibition (Q33\u00a0=\u00a02.92, p=0.044) in adapting units compared with non-adapting units. (C) A simple model can explain data in panel B: adapting units rely on strong inhibition to counterbalance strong touch-evoked excitation whereas non-adapting units require less inhibition to counterbalance weaker excitation. The RF (black) is defined by the summation of spatially distributed excitatory (purple) and inhibitory (gray) input; RF size is highlighted by black arrows while net excitatory drive is proportional to the area of the black region. However, this version of the model incorrectly predicts that disinhibition (i) increases drive from the RF center more in adapting units than in non-adapting units (green arrows) and (ii) causes a greater increase in drive from the RF center than from the RF surround (see D). (D) The two discrepancies identified in C were resolved through changes to the spatial distribution of excitatory input. Crosshatched and hatched areas show the disinhibition-mediated increase in drive from the RF center and surround, respectively.\n\nFigure 8C depicts the balance of excitatory and inhibitory input described above. The RF at baseline is shown in black; after disinhibition, the RF expands to fill the area under the purple curve. This simple model predicts that adapting units receive more inhibition in the RF center than do inhibitory neurons. To test this, we compared the firing rate evoked by brush stimulation in the RF center before and after KCC2 blockade or BDNF application (using data from Figures 8B and 7A, respectively). The increase in firing caused by KCC2 blockade in adapting units (6.0\u00a0\u00b1\u00a01.9 spk/s) and non-adapting units (7.5\u00a0\u00b1\u00a03.0 spk/s) was not significantly different (T33\u00a0=\u00a00.59, p=0.56; unpaired t-test). Likewise, the increase in firing caused by BDNF in adapting units (4.8\u00a0\u00b1\u00a01.7 spk/s) and non-adapting units (5.2\u00a0\u00b1\u00a01.3 spk/s) was not significantly different (T33\u00a0=\u00a00.28, p=0.86; unpaired t-test). These results argue that both cell types experience a similar enhancement of input from the RF center following disinhibition, contrary to what our model predicted. Contrary to data in Figure 1, this model also predicted that disinhibition unmasks greater excitation from the RF center than from the RF surround. We therefore asked if and how our initial model could be revised to resolve these discrepancies. Adding a broad component to the excitatory RF for both cell types and slightly narrowing the original excitatory RF for adapting units was sufficient (Figure 8D). Consistent with Figure 2D, this revised model correctly predicts that increased input from the RF surround relative to increased input from the RF center is about twice as large for adapting units than for non-adapting units. The broadly tuned excitatory input whose inclusion improved upon the original model may reflect the ungating of polysynaptic circuits, but this and other aspects of the model require additional testing.\n\n## Discussion\n\nChloride dysregulation has emerged as an important mechanism by which synaptic inhibition can be compromised (Doyon et al., 2016). It is now well established in dorsal horn neurons that intracellular chloride levels become elevated after nerve injury, that disrupting chloride regulation (e.g. by KCC2 blockade) produces mechanical allodynia, and that restoring chloride regulation reverses the mechanical allodynia caused by nerve injury (for review, see Prescott, 2015). Recent work has verified that these findings apply equally to male and female rodents despite sex-differences in neuroimmune signaling (Mapplebeck et al., 2019). Other studies have revealed the diversity of cells types in the dorsal horn and how they connect to form circuits (for reviews, see Duan et al., 2018; Peirs and Seal, 2016; Todd, 2017). But many unknowns remain; for instance, without knowing which cell types experience chloride dysregulation and how their spiking is affected, one cannot predict how chloride dysregulation affects circuit function or, in turn, how altered circuit function produces allodynia. Though informative, manipulations targeting a specific cell type fail to address how changes occurring concurrently in different cell types interact at the circuit level. Moreover, the concept of gating, though invaluable in guiding pain research for over 50 years (Melzack and Wall, 1965), is too simplistic to account for complex sensory changes. More detailed investigation of phenomena like spatial and temporal summation is imperative (e.g. Fitzgerald and Jennings, 1999), hence the impetus for the current study and its focus on RF structure.\n\nOur results show that dorsal horn neuron RFs are dramatically enlarged by disinhibition, so much so that after KCC2 blockade, neurons receive more excitatory input from the RF surround than they receive from the RF center (Figure 1). Though not an initial goal of our study, we were able to separate the majority (~80%) of the units recorded in vivo into two groups that were readily distinguished by their spiking response to tactile stimulation, though several additional features (spike waveform, spontaneous spiking, etc.) also differed between the groups. Pharmacological testing (Figure 3) as well as the concordance between in vitro and in vivo testing (Figure 6E) argue that adapting and non-adapting units correspond to excitatory and inhibitory neurons, respectively. Both cell types experience chloride dysregulation under pathological conditions, modeled here with BDNF (Figure 7), but certain effects manifest differently.\n\n### Effects of disinhibition on spontaneous spiking\n\nKCC2 blockade (as well as BDNF and SST) increased spontaneous spiking selectively in inhibitory neurons (Figures 3, 4 and 7) whereas none of those manipulation, nor DHPG, caused spontaneously spiking in excitatory neurons. Differential modulation of spontaneous spiking was reproduced qualitatively in vitro using dynamic clamp, where virtual disinhibition increased the firing rate gain of both cell types but increased spontaneous spiking (reflected in the y-intercept) selectively in inhibitory neurons (Figure 6). Differences in intrinsic excitability likely explain the differential effects. First, because of voltage-gated currents, subthreshold depolarization is actively amplified and drives repetitive spiking in tonic-spiking inhibitory neurons but is actively attenuated and fails to drive repetitive spiking in single- and delayed-spiking excitatory neurons (Prescott and De Koninck, 2005; Ratt\u00e9 et al., 2014). Second, inhibitory neurons are subject to strong tonic inhibition (Gradwell et al., 2017; Takazawa and MacDermott, 2010a). Glycine receptor blockade did not increase spontaneous spiking in inhibitory neurons (Figure 4\u2014figure supplement 1) but a strong tonic chloride conductance would make the resting membrane potential of inhibitory neurons very sensitive to KCC2 blockade. Alone or together, these factors render inhibitory neurons prone to spontaneous spiking when chloride is dysregulated.\n\nExcitatory neurons did not spike spontaneously under normal conditions, and so the absence of (increased) spontaneous spiking after KCC2 blockade might be ascribed to a floor effect. However, excitatory neurons responded vigorously to weak tactile stimulation, which means that they do not operate far from spike threshold, contrary to what a floor effect would imply. Moreover, if non-adapting units are indeed inhibitory neurons, the continued lack of spontaneous firing in adapting units after KCC2 blockade argues that GABA/glycinergic transmission does not become paradoxically excitatory, which is consistent with past computational work (Doyon et al., 2011; Prescott et al., 2006) and with past experiments showing that only a small minority of neurons ever exhibit GABA-evoked spikes (Coull et al., 2003).\n\n### Effects of disinhibition on evoked spiking\n\nThe effect of chloride dysregulation on evoked spiking is more difficult to interpret because of the many additional factors involved, including the type of primary afferent input (Figure 2E) and the relative strength of excitation and inhibition triggered by that input, which depends on the circuit. Intrinsic neuronal excitability, reflected in the spiking response to somatic current injection, has also been shown to influence the response to cutaneous stimulation or an in vitro facsimile thereof (Graham et al., 2007). At the circuit level, E-I balance depends on where the stimulus occurs relative to the neuron\u2019s RF, which changes over time as a dynamic stimulus moves across an RF. The spatiotemporal characteristics of natural tactile stimuli are not readily reproduced with electrical or optogenetic stimulation. By stimulating different parts of the RF alone or in combination (Figure 8), our results demonstrate that spatial summation is altered by chloride dysregulation. The consequences of this for sensory processing will depend on the spatial extent of the stimulus on the skin.\n\nA stimulus that extends beyond the RF center and into the RF surround normally engages surround inhibition, causing fewer spikes than if the stimulus was restricted to the RF center. This runs counter to intuition that a broader stimulus will cause greater spatial summation and elicit a bigger response, but it is entirely consistent with experiments in the visual system showing that broader stimuli evoke greater inhibition (Haider et al., 2010; Vinje and Gallant, 2002). However, when disinhibition occurs, not only is the surround inhibition lost, so too is subliminal excitatory input unmasked. This means that a stimulus extending into the RF surround will engage more total excitation (and drive stronger spiking) than a stimulus limited to the RF center. Furthermore, beyond one neuron being more strongly activated, more neurons will be activated as their expanded RFs encroach on the area of stimulation. For a projection neuron receiving convergent input from excitatory interneurons, these effects of disinhibition compound \u2013 more input from each excitatory interneuron and input from more excitatory interneurons \u2013 plus reduced inhibition to the projection neuron itself.\n\nDynamic allodynia provoked by light brushing of the skin is a far greater clinical problem than the allodynia provoked by punctate stimuli or pressure (Hansson, 2003). In individuals with neuropathic pain, dynamic allodynia is commonly provoked by clothes moving against the skin, which is precisely the sort of stimulus for which spatial summation is important. That said, preclinical testing of mechanosensitivity relies almost exclusively on von Frey stimulation (Mogil, 2009). Moreover, different forms of mechanical allodynia subserved by different primary afferents (Koltzenburg et al., 1992; Ochoa and Yarnitsky, 1993) and differences in central processing have also been uncovered. Cheng et al. (2017) recently found that dynamic allodynia required a set of neurons defined by the co-expression of VGLUT3 and Lbx1, whereas hypersensitivity to von Frey stimulation persisted after those neurons were ablated. Having tested with both brush and von Frey stimuli, our results show that disinhibition caused by chloride dysregulation affects responses to both types of stimuli, which is consistent with most (if not all) neurons being under inhibitory control. Additional work, including behavioral testing, is required to assess how changes in spatial summation due to chloride dysregulation contributes to allodynia. Human psychophysical testing that extends beyond the standard battery of quantitative sensory tests (Sommer, 2016) would also be informative. It should be mentioned here that nerve injury or other insults leading to neuropathic pain cause changes beyond chloride dysregulation in spinal neurons, and that the chloride dysregulation triggered by nerve injury may be more modest than modeled here by KCC2 blockade or intrathecal BDNF.\n\n### Effects of disinhibition on E-I balance\n\nBy co-stimulating the RF center and surround and comparing the evoked response with responses to stimulation of the RF center alone (Figure 8), our study also revealed that E-I balance differs between putative excitatory and inhibitory neurons. Specifically, we found that excitatory neurons receive strong excitation that is counterbalanced by strong inhibition, whereas inhibitory neurons receive weak excitation that is counterbalanced by weak inhibition. In other words, both cell types appear to receive similar relative levels of excitatory and inhibitory input, but the absolute levels of each input are greater in excitatory neurons. Because excitatory neurons rely on strong inhibition to counterbalance their strong excitatory input, they are more affected than inhibitory neurons by a loss of inhibition. This observation could not have been made through targeted manipulations (e.g. ablation) of a specific cell type, as is now common in many studies (e.g. Cheng et al., 2017). That said, our results are fully consistent with excitatory interneurons playing a critical in allodynia. Consistent with earlier work (Torsney and MacDermott, 2006), our results argue that disinhibition of those excitatory neurons is key.\n\nThe disproportionate disinhibition of excitatory neurons is interesting for two reasons. First, the differential effect is due to circuit organization, that\u00a0is the amount of excitatory and inhibitory input received by each cell type. Indeed, we did not observe any difference in chloride regulation between cell types (Figure 5). Second, sensory processing might not be disrupted if the evoked responses in excitatory and inhibitory neurons were equivalently affected by disinhibition. That said, the disproportionate disinhibition of excitatory neurons is liable to be less evident (or consequential) with punctate stimulation, for which spatial summation is minimal. In contrast to the changes in evoked firing, changes in spontaneous firing may indicate that inhibitory neurons experience stronger tonic inhibition and are disproportionately disinhibited in the absence of stimulation. This may be important for understanding spontaneous pain.\n\nIn summary, this study has explored the consequences of chloride dysregulation in superficial dorsal horn neurons. Our results show that both excitatory and inhibitory neurons experience chloride dysregulation but respond differently because of differences in their intrinsic excitability and because of circuit-level differences in E-I balance. Additionally, we demonstrated that dorsal horn neuron RFs have a center-surround organization, and that loss of surround inhibition unmasks substantial excitatory drive, especially in excitatory neurons. Loss of surround inhibition and the unmasking of subliminal excitatory input dramatically alters spatial summation, which may contribute significantly to dynamic allodynia.\n\n## Materials and methods\n\nAll experimental procedures were approved by the Animal Care Committee at the Hospital for Sick Children and were performed in accordance to guidelines from the Canadian Council on Animal Care. Experiments were performed on adult male Sprague Dawley rats obtained from Charles River, Montreal. In separate experiments, we have determined that KCC2 is equally important for chloride regulation in males and female rodents, and that KCC2 downregulation contributes equally to neuropathic pain in both sexes (Mapplebeck et al., 2019) despite differences in upstream, neuroimmune signaling (Sorge et al., 2015).\n\n### Animal preparation for in vivo experiments\n\nUnder urethane anesthesia (20% in normal saline; 1.2 g/kg i.p.), a laminectomy was performed to expose L4\u2013S1 segments of the spinal cord. The rat (350\u2013450 g) was placed in a stereotaxic frame and its vertebrae clamped above and below the recording site to immobilize the spinal cord. The left hind paw was immobilized in clay with the plantar surface facing upwards for stimulation. Rectal temperature was maintained at 37\u00b0C using a feedback controlled heating pad (TR-200, Fine Science Tools).\n\n### Single unit extracellular recordings\n\nA four-electrode array with a total of 16 recording sites (A4 type, NeuroNexus) was implanted at the L5 spinal level. The array was oriented so that each electrode was at the same mediolateral position. Electrode tips were lowered 328\u00a0\u00b1\u00a095 \u03bcm (mean\u00a0\u00b1\u00a0SD) below the dorsal surface. Since recording sites are spaced at 50 \u03bcm intervals up each electrode, we determined on which site a unit was recorded and from this measured the depth of recorded neurons to be\u00a0<300 \u03bcm (see Figure 3C), which places them within lamina I or II (Watson et al., 2008). Neurons that responded to limb displacement, indicating proprioceptive input, were excluded. The signal was amplified, filtered at 500 Hz \u2013 10 kHz, digitized at 20 kHz with an Omniplex Data Acquisition System (Plexon) and stored with stimulus markers on disk. Single units were isolated using Offline Sorter V3 software (Plexon), and were analyzed with Neuroexplorer 4 (Plexon). Spike waveforms were identified as monophasic or biphasic based on the absence or presence, respectively, of a negative phase (upward deflection) following the initial positive phase (see Figure 2A).\n\n### Drug application in vivo\n\nAfter the laminectomy, a Vaseline well was built around the spinal cord to target drug delivery to the recording site. In each experiment, 200 \u00b5l of saline containing drug was delivered into the well through a small tube (OD: 0.016 inch; Cole-Palmer) inserted intrathecally. To block KCC2, R-(+)-[(2-n-butyl-6,7-dichloro-2-cyclopentyl-2,3-dihydro-1-oxo-1H-inden-5-yl)oxy] acetic acid (DIOA; Sigma-Aldrich) and VU0240551 (VU; Tocris Bioscience) were diluted in a stock solution of dimethyl sulphoxide (DMSO) and then diluted in buffered saline for a final concentration of 100 \u00b5M for DIOA (Keller et al., 2007) and 50 \u00b5M for VU (Lavertu et al., 2014). Results using DIOA and VU were pooled after determining that there was no difference between them, consistent with past work (Lee and Prescott, 2015). 200 \u03bcM 3,5-dihydroxyphenylglycine (DHPG; Tocris), 50 \u03bcM somatostatin (SST; Abcam), 50 \u03bcM strychnine (Abcam) and 70 \u00b5g recombinant human brain-derived neurotrophic factor (BDNF; PeproTech) were prepared in saline. Acetazolamide (ACTZ; Sigma-Aldrich) was dissolved in buffered saline with pH 8.2, after which pH was reduced to 7.4 and concentration was adjusted to 10 mM (Asiedu et al., 2010).\n\n### Mechanical stimulation and receptive field mapping\n\nCutaneous receptive fields (RFs) were identified from the spiking evoked by mechanical stimuli applied by brush, blunt probes, or von Frey filaments to the glabrous skin of the left hind paw. By using weak search stimuli, we targeted neurons receiving low-threshold input and avoided causing sensitization. The RF zone eliciting a response under baseline conditions was defined as the RF center. Testing outside the RF center was conducted prior to any pharmacological manipulations (to demonstrate the absence of suprathreshold input) but the RF surround was only mapped after KCC2 blockade. Each stimulus comprised ten 1 s-long applications of the brush or von Frey filament (2, 4, 6, 8, and 10 g) repeated at 2 s intervals. Each stimulus was applied twice onto different locations within each RF zone for each test condition. For experiments in Figure 8, two brushes were held together and applied concurrently to two different RF zones.\n\n### In vivo data analysis\n\nTo quantify the spiking evoked by mechanical stimulation, we measured the mean firing rate during each stimulus, subtracted the spontaneous firing rate measured from the 10 s epoch preceding each stimulus, and then averaged across the two stimuli for each RF zone and test condition. Input-output (i-o) plots produced by varying von Frey force were fitted by linear regression to obtain the slope for each neuron. All data are presented as mean\u00a0\u00b1\u00a0sem.\n\n### Slice preparation for in vitro experiments\n\nSpinal slices were prepared as previously described (Prescott and De Koninck, 2002). Briefly, the rat (100\u2013200 g) was anesthetized with 4% isoflorane and perfused intracardially with ice-cold oxygenated (95% O2 and 5% CO2) sucrose-substituted artificial cerebrospinal fluid (ACSF) containing (in mM): 252 sucrose, 2.5 KCl, 2 CaCl2, 2 MgCl2, 10 glucose, 26 NaHCO3, 1.25 NaH2PO4 and 5 kynurenic acid; pH 7.35. The rat was decapitated, the spinal cord was removed by hydraulic extrusion, and 300\u2013400 \u03bcm-thick sections were cut from the lumbar enlargement in the parasagittal plane. Slices were kept in normal oxygenated ACSF (126 mM NaCl instead of sucrose and without kynurenic acid) at room temperature until recording.\n\n### Whole-cell patch clamp recordings\n\nSlices were transferred to a recording chamber constantly perfused at\u00a0~2 ml/min with oxygenated (95% O2 and 5% CO2) ACSF. Visually identified neurons in lamina I and II were patched in the whole cell configuration with\u00a0>70% series resistance compensation using an Axopatch 200B amplifier (Molecular Devices). Patch pipettes were pulled from borosilicate glass capillaries (WPI) and were filled with one of two intracellular solutions. For dynamic clamp experiments, the solution comprised (in mM): 125 KMeSO4, 5 KCl, 10 HEPES, 2 MgCl2, 4 ATP, 0.4 GTP as well as 0.1% Lucifer Yellow; pH was adjusted to 7.2 with KOH. For chloride extrusion measurements, KCl was increased to 25 mM and KMeSO4 was reduced to 115 mM. Recordings were at room temperature (22\u201326\u00b0C). Traces were low-pass filtered at 2 KHz, digitized at 20 KHz using a CED 1401 computer interface (Cambridge Electronic Design), and analyzed offline. Membrane potential (after correction for the liquid junction potential) was adjusted to \u221265 mV through tonic current injection. Based on responses to series of 500 ms-long current steps, spiking patterns were classified as previously described (Prescott and De Koninck, 2002).\n\n### Chloride extrusion measurements\n\nSpiking pattern was determined in current clamp mode immediately after rupturing the membrane. Thereafter, 1 \u00b5M tetrodotoxin (Alomone Labs) and 1 \u00b5M CGP55845 (Abcam) were bath applied to block sodium and GABAB channels, respectively. After allowing at least 15 min for the chloride from the pipette solution to dialyze, the cell was voltage clamped at different holding potentials while short (5\u201310 ms-long) puffs of GABA (1 mM prepared in HEPES-buffered pipette solution) were applied\u00a0~5 \u03bcm from the soma using a puff pipette (5 M\u03a9 resistance) attached to a picospritzer (Toohey Company, Fairfield, NJ). Experiments were repeated after bath application of 15 \u00b5M VU to block KCC2.\n\n### Virtual synaptic input by dynamic clamp\n\nTo simulate irregular synaptic input, noisy excitatory and inhibitory conductances (gexc and ginh) were constructed from separate Ornstein-Uhlenbeck processes (Prescott and De Koninck, 2009; Uhlenbeck and Ornstein, 1930) such that g fluctuates randomly while returning to its average value g0 with a time constant \u03c4 according to\n\n$$\n\\frac{dg_{exc}}{dt}=\u2212\\frac{g_{exc}(t)\u2212g_{exc0}}{\\tau_{exc}}+\\sqrt{\\frac{2}{\\tau_{exc}}}\u00a0\\sigma_{exc}\u22c5\u03be_{exc}(0,1),\\frac{dg_{inh}}{dt}=\u2212\\frac{g_{inh}(t)\u2212g_{inh0}}{\\tau_{inh}}+\\sqrt{\\frac{2}{\\tau_{inh}}}\u00a0\\sigma_{inh}\u22c5\u03be_{inh}(0,1),\n$$\n\nwhere \u03be(0,1) is a random number with 0 mean and unit variance and $\\sqrt{2/\\tau}$ is a scaling factor so that \u03c3 specifies the standard deviation of the conductance fluctuations. Based on synaptic decay kinetics, \u03c4exc = 3 ms and \u03c4inh = 10 ms give appropriate autocorrelation structure. Conductances were rectified to disallow negative values. The voltage V is recorded from the neuron at each time step, from which the driving forces are calculated and multiplied by the time-varying conductances, and the resultant currents summed according to\n\n$$\n\\sqrt{2/}\n$$\n\nIsynaptic was applied to the recorded neuron using the dynamic clamp capability of Signal 5 software (Cambridge Electronic Design). Input-output (i-o) curves were plotted by varying gexc0 while co-varying ginh0 according to a fixed ratio of inhibition to excitation, where \u03b1 = ginh0/gexc0\u00a0=\u00a00.5 or two to simulate stimulation in the RF center or surround, respectively. Einh was set to \u221270 mV or \u221245 mV to simulate normal and disinhibited conditions, respectively. Eexc\u00a0=\u00a00 mV. Background synaptic activity was blocked with 10 \u03bcM bicuculline and 10 \u03bcM CNQX (Abcam).\n\n### Statistical analysis\n\nAll statistical analysis was conducted in SigmaPlot 11. An appropriate non-parametric test was applied when the normality (Shapiro-Wilk) test failed. Paired tests were used in all cases where responses from the same cell were measured before and after a manipulation. Unpaired tests were used for between-group comparisons. All tests were two-sided. Once a recorded neuron was classified based on its spiking pattern (see Results) and was included or excluded on the basis of that pattern, no data were excluded for any other reason. Sample sizes are evident on the figures, which show data from individual cells, and from the degrees of freedom reported with statistical tests. Sample sizes were not computed because we did not have any prior knowledge of the expected effect size or variance; instead, experiments were continued until we collected\u00a0>n cells of each type for each experiment, where n\u00a0=\u00a05 for in vitro experiments and n\u00a0=\u00a010 for in vivo experiments (because variability is typically greater in vivo). The only exception is in Figure 2D, where data collected for analysis in Figure 1 were re-analyzed after classification described in Figure 2B. The total number or type of cells recorded from each rat is unpredictable, but cells comprising each data set come from\u00a0\u22655 rats in all cases.\n",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "18698c7f-f69a-40be-9288-07e5a8027621",
+      "submission_id": "a813b508-4ede-49cb-8b7a-393101208336",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claire Wyart, H\u00f4pital Piti\u00e9-Salp\u00eatri\u00e8re, Sorbonne Universit\u00e9s, UPMC Univ Paris 06, Inserm, CNRS France\n\nReviewers:\n- Qiufu Ma, Dana-Farber Cancer Institute, Harvard Medical School United States\n\n## Review text\n\nDOI: [10.7554/eLife.49753.sa1](https://doi.org/10.7554/eLife.49753.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour findings on how excitation and inhibition are physiologically regulated in the spinal dorsal horn and how their imbalance impairs somatosensory processing are very exciting: thank you for choosing eLife to report them.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Excitatory neurons are more disinhibited than inhibitory neurons by chloride dysregulation in the spinal dorsal horn\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Claire Wyart as a Reviewing Editor and Eve Marder as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Qiufu Ma (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe study by Lee et al. explores how KCC2-mediated chloride dysregulation impacts on putative spinal excitatory neurons (ENs) and inhibitory neurons (INs) located in the dorsal horn, whose identification was based on differential adaption patterns and distinct firing patterns. In depth analysis on how dysfunction of this chloride transporter alters neuronal activity will contribute for a better understanding of the cellular mechanisms behind neuropathic pain. Using a combination of in vivo and in vitro recordings the authors conclude block of KCC2 function has significantly larger effect in excitatory neurons than in inhibitory ones. The authors show first that ENs and INs showed circuit-level difference in E-I balance, with ENs showing stronger excitatory inputs balanced with stronger inhibition, and INs showing weaker excitation balanced with weaker inhibition; as such, disinhibition following KCC2 inhibition leads to larger unmasked excitation in ENs. They also revealed that both ENs and INs show center excitation-surround inhibition, and KCC2 inhibition leads to the recruitment of surround excitatory inputs, which is particularly prominent for ENs; as such, KCC2-mediated chloride dysregulation could lead to a form of spatial summation and subsequent manifestation of dynamic allodynia in response to tactile stimuli across a large skin area.\n\nThe question addressed is relevant and the work performed is of high quality. Although the findings are interesting, several important issues need to be addressed in the revised manuscript.\n\nMajor comments:\n\n1) In Figure 4 it would be important to investigate if the \u03b4 increase in the slope by KCC2 block is different between adapting and non-adapting neurons. In the dynamic clamp experiment, the increase in slope between excitatory in inhibitory neurons was qualitatively replicated but quantitatively it looks likes that the increase in slope was smaller in the dynamic clamp experiment for inhibitory neurons than the one obtained in vivo with KCC2 block. If this is true it needs to be reported and discussed by the authors.\n\nFurthermore, the differential inputs to ENs and INs by rapid-adapting (RA) and slow-adapting (SA) afferents are interesting, and the authors should provide some discussion based on current knowledge of the roles of these afferents in mediating allodynia.\n\n2) Why there is no effect of DHPG in spontaneous firing of adapting cells? Could this be due to the relatively low firing rate of this cells (floor effect)? This is important since it could help understanding why KCC2 block did not impact spontaneous firing on excitatory cells.\n\n3) Why did the authors use a shift in the anion reversal potential from -70 mV to -45mV when the experiment reported in Figure 5 suggest a significantly smaller shift? This needs to be justified/discussed.\n\n4) In the dynamic clamp the difference in spontaneous firing between excitatory and inhibitory cells is relatively small compared to the KCC2 to the data. This needs to be commented.\n\n5) The authors suggest that non-adapting cells receive less excitation as well as less inhibition than adapting neurons (according to the scheme in Figure 8C). However, in Figure 2 the RF area is different between adapting and non-adapting cells. Could this affect the interpretation of Figure 8B? Is it possible that more inhibition in present in the RF center in inhibitory neurons? What was the impact of KCC2 block in the firing of adapting and non-adapting neurons in the center of the RF?\n\n6) The impact of chloride dysregulation on putative ENs and INs was revealed via intrathecal delivery of KCC2 inhibitors or BDNF. While such manipulations allowed the investigators to record the same neurons before and after treatments, they were unable to reveal potential differential KCC2-mediated chloride dysregulation in ENs versus INs that naturally occurred following nerve injury (e.g., only a subset of ENs neurons might have chloride dysregulation). The authors need to point out this caveat in the Discussion.\n\n7) SST has been reported to cause inhibition via activation of sst2a in dynorphin+ inhibitory neurons, which in turn leads to sensitisation of itch transmission ENs. Surprisingly, the authors claimed an activation by SST in non-adapting neurons, which were considered as INs in this study. Further clarification is needed.\n\n8) There are reported conflicts regarding the behavioural outcomes following intrathecal injection of BDNF; the authors mentioned allodynia development in a separate submitted manuscript. During revision and in responses to reviewers' comments, the authors should present the behavioural data in their response to reviewers, particularly the dynamic allodynia that is more relevant for this study, to help to understand the BDNF data described in current manuscript.\n",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8294abf0-9883-470c-a81f-93a7ca708a92",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C1",
+      "claim": "Neuropathic pain affects approximately 10% of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "It affects ~10% of the population (van Hecke et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to van Hecke et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "3eabef0d-6128-4d72-85cb-2d6a07d00ffe",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C2",
+      "claim": "Neuropathic pain is difficult to treat.",
+      "claim_type": "EXPLICIT",
+      "source": "and is notoriously difficult to treat (Woolf, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Woolf, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "cfa7ad6c-c58b-4dbb-99bf-b71c90bd333d",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C3",
+      "claim": "Mechanical allodynia can be acutely reproduced by blocking synaptic inhibition at the spinal level.",
+      "claim_type": "EXPLICIT",
+      "source": "This so-called mechanical allodynia can be acutely reproduced by blocking synaptic inhibition at the spinal level (Miraucourt et al., 2009; Sivilotti and Woolf, 1994; Sorkin and Puig, 1996; Sorkin et al., 1998; Yaksh, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "47163730-ddfb-4a9b-8575-9b93bcf9054d",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C4",
+      "claim": "Synaptic inhibition in the spinal dorsal horn is reduced after nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous other studies have shown that synaptic inhibition in the spinal dorsal horn is reduced after nerve injury (for reviews, see Prescott, 2015; Price et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review articles",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "512da6e8-a1b1-4955-981e-0f1fe1ce8e56",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C5",
+      "claim": "Disinhibition can result from reduced current flow through activated receptors due to dysregulation of intracellular chloride caused by KCC2 hypofunction.",
+      "claim_type": "EXPLICIT",
+      "source": "but the latter stems uniquely from dysregulation of intracellular chloride due to KCC2 hypofunction (Coull et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Coull et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "90d865ee-3a5d-4012-a24d-dbb2b5b28386",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C6",
+      "claim": "Enhancing KCC2 function reverses injury-induced allodynia.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancing KCC2 function reverses injury-induced allodynia (Gagnon et al., 2013; Lavertu et al., 2014; Mapplebeck et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "15a6f85f-d0c2-44f3-b961-9d3a151b3721",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C7",
+      "claim": "Chloride dysregulation contributes significantly to injury-induced disinhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "thus demonstrating that chloride dysregulation contributes significantly to injury-induced disinhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the reversal of allodynia by enhancing KCC2 function",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "28519c37-99c5-444d-ba77-73cccdfbda59",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C8",
+      "claim": "Chloride dysregulation has been shown to occur in dorsal horn neurons with different spiking patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Chloride dysregulation has been shown to occur in dorsal horn neurons with different spiking patterns (Coull et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Coull et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "533d44a6-478d-4b25-bba2-cb0831379fcd",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C9",
+      "claim": "Disinhibition unmasks low-threshold input to projection neurons that normally respond exclusively to noxious input.",
+      "claim_type": "EXPLICIT",
+      "source": "Disinhibition is known to unmask low-threshold input to projection neurons that normally respond exclusively to noxious input (Baba et al., 2003; Cheng et al., 2017; Keller et al., 2007; Lavertu et al., 2014; Lu et al., 2013; Miraucourt et al., 2007; Miraucourt et al., 2009; Torsney and MacDermott, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "1b60e70c-8813-4fea-acee-35ab94bbdced",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C10",
+      "claim": "Low-threshold input is conveyed polysynaptically to projection neurons via excitatory interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-threshold input is conveyed polysynaptically to projection neurons via excitatory interneurons (for reviews, see Duan et al., 2018; Peirs and Seal, 2016; Prescott et al., 2014; Takazawa and MacDermott, 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review articles",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "bdab18f0-9f70-40c7-9510-581e78b326d9",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C11",
+      "claim": "Excitatory interneurons are necessary for mechanical allodynia.",
+      "claim_type": "EXPLICIT",
+      "source": "Separate work indicates that excitatory interneurons are necessary for mechanical allodynia (Cheng et al., 2017; Duan et al., 2014; Hu et al., 2006; Malmberg et al., 1997; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "cb716977-ecd8-4c41-aed0-0b792abbea4d",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C12",
+      "claim": "Inhibitory neurons receive inhibitory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory neurons also receive inhibitory input (Takazawa and MacDermott, 2010a; Zheng et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "e55995e9-42f5-425e-aecc-5851eeec8cfe",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C13",
+      "claim": "Many neurons have a receptive field with an excitatory center and inhibitory surround.",
+      "claim_type": "EXPLICIT",
+      "source": "As originally described in retinal cells by Kuffler (1953), many neurons have an RF with an excitatory center and inhibitory surround. This includes dorsal horn neurons (Hillman and Wall, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kuffler (1953) and Hillman and Wall (1969)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "10c2c1fc-637d-4a3a-b6d1-7b6fcb159d6e",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C14",
+      "claim": "Reduced two-point discrimination in patients with neuropathic pain is consistent with increased RF overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Notwithstanding other explanations, reduced two-point discrimination in patients with neuropathic pain (Pleger et al., 2006) is consistent with increased RF overlap that could occur if surround inhibition is lost and RFs expand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on citation to Pleger et al., 2006",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "4b3acc35-e28e-4c1c-8001-efa592e3bafb",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C15",
+      "claim": "Receptive fields expand after nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal studies have demonstrated that RFs expand after nerve injury (Behbehani and Dollberg-Stolik, 1994; Cumberbatch et al., 1998; Devor and Wall, 1981; Suzuki et al., 2000; Tabo et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "193dc587-4446-4deb-afbd-609d1c781463",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C16",
+      "claim": "KCC2 blockade significantly increased firing evoked by stimulation in the RF center.",
+      "claim_type": "EXPLICIT",
+      "source": "KCC2 blockade significantly increased firing evoked by stimulation in the RF center or surround (Z = 4.79, p<0.001 and Z = 4.72, p<0.001 respectively; Wilcoxon tests) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "1d007abc-928f-44fe-9b4e-0506bf7b1386",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C17",
+      "claim": "KCC2 blockade significantly increased firing evoked by stimulation in the RF surround.",
+      "claim_type": "EXPLICIT",
+      "source": "KCC2 blockade significantly increased firing evoked by stimulation in the RF center or surround (Z = 4.79, p<0.001 and Z = 4.72, p<0.001 respectively; Wilcoxon tests) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "ad5db17d-481c-4d2b-8218-0e8d452ed1c5",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C18",
+      "claim": "After disinhibition caused by KCC2 blockade, neurons were driven more strongly by unmasked excitatory input from the RF surround than by enhanced input from the RF center.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, after disinhibition caused by KCC2 blockade, neurons were driven more strongly by unmasked excitatory input from the RF surround than by enhanced input from the RF center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from data analysis in Figure 1E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "06fd3a84-3412-4c46-9834-d61a9bdb0677",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C19",
+      "claim": "Some units had a monophasic spike waveform whereas others had a biphasic waveform.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of these experiments we noticed that some units had a monophasic spike waveform whereas others had a biphasic waveform (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental recordings shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "a2745522-4880-4460-858b-7f34f7f96bdd",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C20",
+      "claim": "Units with monophasic waveforms exhibited spike rate adaptation during sustained tactile stimulation whereas units with biphasic waveforms did not.",
+      "claim_type": "EXPLICIT",
+      "source": "The former exhibited spike rate adaptation during sustained tactile stimulation with a von Frey (VF) filament whereas the latter did not (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental recordings shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "ad2fe9ee-9d46-4c74-9076-52c3dc82ad94",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C21",
+      "claim": "The adaptation time constant differed significantly between units classified by their spike waveform.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptation time constant measured from exponential-rise-to-maximum fits of the cumulative probability distribution of spike times from each unit differed significantly between units classified by their spike waveform (T23 = 8.58, p<0.001; unpaired t-test) (Figure 2B inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 2B inset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "af7d57c3-6940-47c0-b276-27bfc0f128aa",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C22",
+      "claim": "Adapting units had a significantly smaller RF than non-adapting units at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "The RFs of adapting units were significantly smaller than RFs of non-adapting units at baseline (U = 17.5, p=0.013; Mann-Whitney test) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "f73a2eeb-6564-4960-97df-53a2e4c21307",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C23",
+      "claim": "KCC2 blockade enlarged RFs in both adapting units and non-adapting units.",
+      "claim_type": "EXPLICIT",
+      "source": "KCC2 blockade enlarged RFs in both adapting units (Q14 = 11.69, p<0.001; SNK test) and non-adapting units (Q6 = 5.94, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "b4aa94a3-7164-4198-b572-4dc988fc793d",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C24",
+      "claim": "Adapting units receive tactile input exclusively from rapid-adapting (RA) afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this analysis, adapting units receive tactile input exclusively from RA afferents whereas non-adapting units receive tactile input preferentially from SA afferents (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from cross-correlogram analysis shown in Figure 2E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "0cf8c44a-56ed-43b3-b441-14b1dc213ae1",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C25",
+      "claim": "Non-adapting units receive tactile input preferentially from slow-adapting (SA) afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this analysis, adapting units receive tactile input exclusively from RA afferents whereas non-adapting units receive tactile input preferentially from SA afferents (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from cross-correlogram analysis shown in Figure 2E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "449d2451-c67c-464c-a642-0ac492b042d3",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C26",
+      "claim": "Projection neurons are absent in lamina II and represent only approximately 5% of neurons in lumbar segments of lamina I in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Since projection neurons are absent in lamina II and represent only ~5% of neurons in lumbar segments of lamina I in rats (Spike et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Spike et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "b8bffb3f-8804-40d1-9f62-613a318a95f6",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C27",
+      "claim": "Approximately 2/3 of local interneurons in the superficial dorsal horn are excitatory and 1/3 are inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "of which approximately 2/3 are excitatory and 1/3 are inhibitory (Abraira et al., 2017; Polg\u00e1r et al., 2003; Prescott and Ratt\u00e9, 2012; Todd, 2010; Todd, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "9f0b38c4-b6c3-43c0-a5d7-4671baa98ce6",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C28",
+      "claim": "Metabotropic glutamate receptor five is expressed almost exclusively on excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabotropic glutamate receptor five is expressed almost exclusively on excitatory neurons and its agonist 3,5-dihydroxyphenylglycine (DHPG) has been shown to selectively modulate the excitability of excitatory neurons (Hu and Gereau, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu and Gereau, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "8bfd6480-b2ac-4c8e-ad2f-383cd60051f6",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C29",
+      "claim": "DHPG preferentially affected adapting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing brush-evoked firing before and after intrathecal DHPG revealed that adapting cells were preferentially affected (\u03c72 = 9.95, p=0.007) (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "11a2dbc1-5dbe-4de0-bb9e-38b95a52f0c4",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C30",
+      "claim": "Adapting cells are excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with adapting cells being excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on DHPG preferentially affecting adapting cells and DHPG's known selectivity for excitatory neurons",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "b6dc5938-2f95-4cba-8a92-4760e478104f",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C31",
+      "claim": "The somatostatin receptor sst2a is expressed selectively on inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The somatostatin (SST) receptor sst2a is expressed selectively on inhibitory neurons (Todd et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Todd et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "90ff2521-87fc-466a-ba8f-646347020285",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C32",
+      "claim": "Intrathecal application of SST preferentially affected brush-evoked spiking in non-adapting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrathecal application of SST preferentially affected brush-evoked spiking in non-adapting cells (\u03c72 = 16.85, p<0.001) (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "f82ee016-88ff-41ba-b955-2b9c3d8d84fa",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C33",
+      "claim": "Non-adapting cells are inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with non-adapting cells being inhibitory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on SST preferentially affecting non-adapting cells and SST's known selectivity for inhibitory neurons",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "bf6d16f9-1200-4e35-b7c2-d7ae049c02b4",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C34",
+      "claim": "The distributions of adapting and non-adapting units by depth were significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions of adapting and non-adapting units were significantly different (D = 0.56, p<0.001; Kolmogorov-Smirnov test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "807c5580-f5d0-451e-a66b-e4bcf950b98c",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C35",
+      "claim": "The average depth of adapting units was 156 \u00b1 72 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "with an average depth (\u00b1 sd) of 156 \u00b1 72 \u03bcm and 234 \u00b1 57 \u03bcm, respectively (Figure 3C left)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measurement from experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "46109d35-64a6-4230-95c6-ee4b8befa026",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C36",
+      "claim": "The average depth of non-adapting units was 234 \u00b1 57 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "with an average depth (\u00b1 sd) of 156 \u00b1 72 \u03bcm and 234 \u00b1 57 \u03bcm, respectively (Figure 3C left)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measurement from experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "9e37ae90-3fb3-4857-9eaf-b9a6208794a9",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C37",
+      "claim": "KCC2 blockade significantly increased i-o curve slope in adapting and non-adapting units.",
+      "claim_type": "EXPLICIT",
+      "source": "KCC2 blockade significantly increased i-o curve slope in adapting and non-adapting units (Z = 3.82, p<0.001 and Z = 3.30, p<0.001, respectively; Wilcoxon tests) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "c6f4a0eb-a014-4271-904f-266e95e69908",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C38",
+      "claim": "Spontaneous firing was significantly greater in non-adapting units than in adapting units at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "but separate analysis showed that spontaneous firing was significantly greater in non-adapting units than in adapting units at baseline (U = 116.5, p<0.001; Mann-Whitney test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "5b124233-60f6-46c2-92bc-a76f5e639ad8",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C39",
+      "claim": "KCC2 blockade significantly increased spontaneous firing in non-adapting units.",
+      "claim_type": "EXPLICIT",
+      "source": "and that KCC2 blockade significantly increased spontaneous firing in non-adapting units (Z = 3.58, p<0.001; Wilcoxon test) but not in adapting units (Z = 0.39, p=0.70) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "3264aa23-3239-4b94-a56f-e84cf9bd62bb",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C40",
+      "claim": "KCC2 blockade did not significantly increase spontaneous firing in adapting units.",
+      "claim_type": "EXPLICIT",
+      "source": "and that KCC2 blockade significantly increased spontaneous firing in non-adapting units (Z = 3.58, p<0.001; Wilcoxon test) but not in adapting units (Z = 0.39, p=0.70) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "48103843-4041-432e-8d4a-3874bc210380",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C41",
+      "claim": "Excitatory and inhibitory neurons display no difference in chloride extrusion capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Results revealed no difference in chloride extrusion capacity between excitatory and inhibitory neurons (T12 = 0.030, p=0.98, unpaired t-test) (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "3d66fad8-ee2e-46a0-9877-a689dd474078",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C42",
+      "claim": "The A-type potassium current is selectively expressed in the spinal dorsal horn by excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The A-type potassium current, which is associated with delayed- and single-spiking (Balachandar and Prescott, 2018), is selectively expressed in the spinal dorsal horn by excitatory neurons (Hu et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "8689291b-2657-4883-ac04-92eb5df8a92f",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C43",
+      "claim": "Tonic-spiking is observed almost exclusively in inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas tonic-spiking is observed almost exclusively in inhibitory neurons (Yasaka et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yasaka et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "6f3a31dc-d180-414e-b9f7-22c994f857e0",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C44",
+      "claim": "Disinhibition significantly increased the slope in both excitatory and inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Disinhibition significantly increased the slope in both excitatory and inhibitory neurons (Q5 = 6.62, p<0.001 and Q8 = 3.75, p=0.020, respectively; SNK tests) (Figure 6D top)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "bc949aa0-775b-4385-949b-2a91bd45cdde",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C45",
+      "claim": "Disinhibition increased the y-intercept only in inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "but increased the y-intercept only in inhibitory neurons (Q8 = 8.09, p<0.001 vs Q5 = 0.35, p=0.81 in excitatory neurons) (Figure 6D bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "1f266fdb-ffed-495b-8bb7-93e53673b014",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C46",
+      "claim": "Intrathecal BDNF significantly increased firing evoked by brush stimulation applied to the RF center of adapting and non-adapting units.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrathecal BDNF significantly increased firing evoked by brush stimulation applied to the RF center of adapting and non-adapting units (Z = 3.10, p<0.001 for both cell types; Wilcoxon tests) (Figure 7A left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "e82993ee-f85c-48a9-a782-6f0035f99058",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C47",
+      "claim": "BDNF-mediated enhancement of evoked firing was significantly reversed by subsequent application of ACTZ.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, BDNF-mediated enhancement of evoked firing was significantly reversed by subsequent application of ACTZ (Z \u2265 2.85, p\u22640.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "1fc496a1-4dbf-4578-a330-466e1ac0e948",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C48",
+      "claim": "BDNF failed to induce spontaneous firing in adapting units.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, BDNF failed to induce spontaneous firing in adapting units (Z = 0.51 p=0.64) but significantly increased spontaneous firing in non-adapting units (Z = 2.52, p=0.008) (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "f6567520-ac49-480d-8100-09a35d857160",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C49",
+      "claim": "BDNF significantly increased spontaneous firing in non-adapting units.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, BDNF failed to induce spontaneous firing in adapting units (Z = 0.51 p=0.64) but significantly increased spontaneous firing in non-adapting units (Z = 2.52, p=0.008) (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "446f7c54-da0a-4d2e-9318-1349e4360048",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C50",
+      "claim": "BDNF causes comparable disinhibition in both adapting and non-adapting cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that BDNF causes comparable disinhibition in both cell types",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "45aaa9dc-0481-4c83-bea3-e369e1071c86",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C51",
+      "claim": "Stimulation in the RF surround significantly reduced the response to stimulation in the RF center under baseline conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, stimulation in the RF surround significantly reduced the response to stimulation in the RF center (T22 = \u22129.26, p<0.001 and T11 = \u22122.90, p=0.014 for adapting and non-adapting units, respectively; one sample t-tests on log-transformed data) (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 8B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "7e60e13f-ac33-4498-809c-2d6765a5037f",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C52",
+      "claim": "Adapting units experienced a significantly larger reduction from RF surround stimulation than non-adapting units under baseline conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Adapting units experienced a significantly larger reduction than non-adapting units (Q33 = 3.61, p=0.013; SNK test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "6405181f-5f1b-47f2-ab63-a64df51b029d",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C53",
+      "claim": "After KCC2 blockade, the effect of stimulation in the RF surround was inverted and enhanced the response to stimulation in the RF center.",
+      "claim_type": "EXPLICIT",
+      "source": "After KCC2 blockade, the effect of stimulation in the RF surround was inverted and enhanced the response to stimulation in the RF center (T22 = 6.24, p<0.001 and T11 = 6.06, p<0.001 for adapting and non-adapting units, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "8d581e14-0f95-4f07-b4c1-7779ba5befe3",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C54",
+      "claim": "Adapting units experienced a significantly larger enhancement from RF surround stimulation than non-adapting units after KCC2 blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, adapting units experienced a significantly larger enhancement than non-adapting units (Q33 = 2.91, p=0.044; SNK test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "5a74ffd0-d7a1-4437-a5d5-21eb1bd8ceb4",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C55",
+      "claim": "Adapting units receive strong excitatory input balanced by strong inhibitory input.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that adapting units receive strong excitatory input balanced by strong inhibitory input, whereas non-adapting units receive weaker excitatory input balanced by weaker inhibitory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from experimental data in Figure 8",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "5ce7152d-1297-4916-b927-4c0f51b9f9e8",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C56",
+      "claim": "Non-adapting units receive weaker excitatory input balanced by weaker inhibitory input.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that adapting units receive strong excitatory input balanced by strong inhibitory input, whereas non-adapting units receive weaker excitatory input balanced by weaker inhibitory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from experimental data in Figure 8",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "96bdb117-1f1f-43d3-9346-cc3ce9059920",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C58",
+      "claim": "Excitatory neurons are more disinhibited than inhibitory neurons by chloride dysregulation in the spinal dorsal horn.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory neurons are more disinhibited than inhibitory neurons by chloride dysregulation in the spinal dorsal horn",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion of the study, supported by multiple experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "b3de620a-4cf7-4547-b5d8-f15acfd09da0",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C59",
+      "claim": "Excitatory neurons rely more heavily on inhibition to counterbalance strong excitation than inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not because chloride is differentially dysregulated in excitatory and inhibitory neurons, but, rather, because excitatory neurons rely more heavily on inhibition to counterbalance strong excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "9cfc9b3f-f9d2-46fe-9303-730aa7fe831b",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C60",
+      "claim": "Receptive fields in both excitatory and inhibitory cell types have a center-surround organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptive fields in both cell types have a center-surround organization but disinhibition unmasks more excitatory input to excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "7d0319db-4c1c-495c-8694-94204a60d101",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C61",
+      "claim": "Disinhibition unmasks more excitatory input to excitatory neurons than to inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptive fields in both cell types have a center-surround organization but disinhibition unmasks more excitatory input to excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "125ecc48-9e3b-48ef-831f-72875a4a223a",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C62",
+      "claim": "Differences in intrinsic excitability affect how chloride dysregulation affects spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in intrinsic excitability also affect how chloride dysregulation affects spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "6cbe8e41-c97b-4b5e-8192-b7047dd6f553",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C63",
+      "claim": "Inhibitory neurons are subject to strong tonic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, inhibitory neurons are subject to strong tonic inhibition (Gradwell et al., 2017; Takazawa and MacDermott, 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "a75d30ad-cb35-465e-a917-5dd2c2936be6",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C64",
+      "claim": "BDNF is sufficient to downregulate KCC2 and cause allodynia in both male and female rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "we recently showed that BNDF is sufficient to downregulate KCC2 and cause allodynia in both male and female rodents (Mapplebeck et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mapplebeck et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "5faf12f5-ad15-4909-8c76-a901d4d8ca89",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C65",
+      "claim": "Dynamic allodynia provoked by light brushing of the skin is a far greater clinical problem than the allodynia provoked by punctate stimuli or pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic allodynia provoked by light brushing of the skin is a far greater clinical problem than the allodynia provoked by punctate stimuli or pressure (Hansson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hansson, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "3a0f3b19-45ab-41d0-a13e-ba3ca1fe8918",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C66",
+      "claim": "Activating TrkB-ChR2-positive neurons provokes allodynia.",
+      "claim_type": "EXPLICIT",
+      "source": "Dhandapani et al. (2018) showed that activating TrkB-ChR2-positive neurons \u2013 which include D-hair (A\u03b4) and RA afferents \u2013 provokes allodynia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dhandapani et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "3962b989-bb87-4dc4-8738-dfc303993ff1",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C67",
+      "claim": "Activating Vglut1-ChR2-positive neurons does not provoke allodynia.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Chamessian et al. (2019) showed that activating Vglut1-ChR2-positive neurons \u2013 which include RA and SA afferents \u2013 does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chamessian et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "bb94e7dc-0d04-4f6b-a280-95e3210a74ed",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C68",
+      "claim": "Activation of RA but not SA afferents produces allodynia.",
+      "claim_type": "IMPLICIT",
+      "source": "The discrepancy suggests that activation of RA but not SA afferents produces allodynia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from comparing results of Dhandapani et al. (2018) and Chamessian et al. (2019)",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "0917035e-6c94-4373-972b-02941ec187e7",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C70",
+      "claim": "KCC2 is equally important for chloride regulation in males and female rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "In separate experiments, we have determined that KCC2 is equally important for chloride regulation in males and female rodents, and that KCC2 downregulation contributes equally to neuropathic pain in both sexes (Mapplebeck et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mapplebeck et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "2923a2f2-946e-4cf0-986a-1de94f9a8a2a",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C71",
+      "claim": "KCC2 downregulation contributes equally to neuropathic pain in both male and female rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "In separate experiments, we have determined that KCC2 is equally important for chloride regulation in males and female rodents, and that KCC2 downregulation contributes equally to neuropathic pain in both sexes (Mapplebeck et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mapplebeck et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "89bb367f-17ab-4f8f-89a3-fc3303b18f39",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C72",
+      "claim": "Neurons operating as coincidence detectors respond preferentially to synchronous inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons operating as coincidence detectors respond preferentially to synchronous inputs (Ratt\u00e9 et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ratt\u00e9 et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "2468df62-8dd1-4860-a55f-0cc3dceef5f5",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C73",
+      "claim": "RA afferents' spikes occur synchronously.",
+      "claim_type": "EXPLICIT",
+      "source": "that are likely to arise from RA afferents whose spikes occur synchronously (Lankarany et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lankarany et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "7c4e9546-c404-40db-ba92-3e993e82bef6",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C74",
+      "claim": "Neurons operating as integrators respond to asynchronous inputs.",
+      "claim_type": "IMPLICIT",
+      "source": "whereas neurons operating as integrators also respond to asynchronous inputs that are likely to arise from SA afferents whose spikes occur asynchronously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on established knowledge of neuronal integration",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "9c8f2f8b-75a8-4957-a748-db674f4ff9a0",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C75",
+      "claim": "Preprodynorphin neurons exhibit spontaneous spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous spiking has been previously reported in preprodynorphin neurons (Zhang et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "21a6b820-326a-447c-93b6-0c74e77ee85b",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C76",
+      "claim": "Preprodynorphin neurons express the sst2a receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "which express the sst2a receptor (Kardon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kardon et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "760dffdd-53ab-49a5-ab5a-1dfa03ae6fb9",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C77",
+      "claim": "sst2a receptor activation causes hyperpolarization via activation of an inward rectifying potassium current according to in vitro recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, sst2a receptor activation causes hyperpolarization via activation of an inward rectifying potassium current according to in vitro recordings (Kim et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "a74de49c-461c-45e2-aa86-bc7bd4cb4647",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C78",
+      "claim": "Application of a high concentration of SST may cause receptor internalization and paradoxically reduce normal sst2a signaling.",
+      "claim_type": "IMPLICIT",
+      "source": "but one possibility is that application of a high concentration of SST caused receptor internalization (Stroh et al., 2000) and paradoxically reduced normal sst2a signaling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on citation to Stroh et al., 2000",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "76209b72-16ce-4492-b1f6-5e87d94ac074",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C79",
+      "claim": "Excitatory neurons genetically identified by somatostatin expression exhibit delayed-, single-, or burst-spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with excitatory neurons genetically identified by somatostatin expression (most of which exhibit delayed-, single-, or burst-spiking) and inhibitory neurons genetically identified by dynorphin expression (most of which exhibit tonic- or burst-spiking) (Duan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duan et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "bcce27c5-d16d-4522-84ca-b1344ed55bfa",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C80",
+      "claim": "Inhibitory neurons genetically identified by dynorphin expression exhibit tonic- or burst-spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with excitatory neurons genetically identified by somatostatin expression (most of which exhibit delayed-, single-, or burst-spiking) and inhibitory neurons genetically identified by dynorphin expression (most of which exhibit tonic- or burst-spiking) (Duan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duan et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "99f06855-ab0e-45d2-bbf1-f937c2920de0",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C81",
+      "claim": "Subthreshold depolarization is actively amplified and drives repetitive spiking in tonic-spiking inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "First, because of voltage-gated currents, subthreshold depolarization is actively amplified and drives repetitive spiking in tonic-spiking inhibitory neurons but is actively attenuated and fails to drive repetitive spiking in single- and delayed-spiking excitatory neurons (Prescott and De Koninck, 2005; Ratt\u00e9 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "1cf637da-9f6e-4527-b2be-f666f6a23dd2",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C82",
+      "claim": "Subthreshold depolarization is actively attenuated and fails to drive repetitive spiking in single- and delayed-spiking excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "First, because of voltage-gated currents, subthreshold depolarization is actively amplified and drives repetitive spiking in tonic-spiking inhibitory neurons but is actively attenuated and fails to drive repetitive spiking in single- and delayed-spiking excitatory neurons (Prescott and De Koninck, 2005; Ratt\u00e9 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "0b78c6f7-8caa-4fee-9cad-218f5c9dbaef",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C83",
+      "claim": "Broader stimuli evoke greater inhibition in the visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "but it is entirely consistent with experiments in the visual system showing that broader stimuli evoke greater inhibition (Haider et al., 2010; Vinje and Gallant, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "21a0d94e-f6ed-41a3-8e6e-5625d30821df",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C84",
+      "claim": "Dynamic allodynia required a set of neurons defined by the co-expression of VGLUT3 and Lbx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cheng et al. (2017) recently found that dynamic allodynia required a set of neurons defined by the co-expression of VGLUT3 and Lbx1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cheng et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "e1cbde4b-ba8a-407b-80e5-cdb848ccbce4",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C85",
+      "claim": "Hypersensitivity to von Frey stimulation persisted after ablation of VGLUT3/Lbx1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas hypersensitivity to von Frey stimulation persisted after those neurons were ablated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cheng et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "eee559c5-5b6b-430c-ace8-a87de012f673",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C86",
+      "claim": "Disinhibition caused by chloride dysregulation affects responses to both brush and von Frey stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Having tested with both brush and von Frey stimuli, our results show that disinhibition caused by chloride dysregulation affects responses to both types of stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "d98b3d31-66b5-4e30-ab3c-d3962b7838aa",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "claim_id": "C87",
+      "claim": "Most (if not all) dorsal horn neurons are under inhibitory control.",
+      "claim_type": "IMPLICIT",
+      "source": "which is consistent with most (if not all) neurons being under inhibitory control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "44eea5f6-d627-405f-8f62-353ed26a548c",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "KCC2 blockade causes receptive field (RF) expansion in dorsal horn neurons. After KCC2 blockade, firing evoked by stimulation in both the RF center and surround significantly increased, with neurons being driven more strongly by unmasked excitatory input from the RF surround than by enhanced input from the RF center. This RF expansion occurred in both adapting and non-adapting units.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 and C23 are well-supported by statistical analyses (Wilcoxon tests, SNK tests) with significant p-values (<0.001) and are illustrated in Figures 1 and 2. The data demonstrate both increased firing rates and RF expansion following KCC2 blockade, with appropriate controls and replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "8ad436e6-fd9b-4f1d-82e9-273d29594eb1",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dorsal horn neurons comprise two distinct populations based on spike waveform and adaptation patterns. Units with monophasic waveforms exhibit spike rate adaptation during tactile stimulation and have smaller RFs, receiving input exclusively from rapid-adapting (RA) afferents. Units with biphasic waveforms do not adapt, have larger RFs, and receive input preferentially from slow-adapting (SA) afferents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C25 are supported by multiple lines of evidence including spike waveform analysis, adaptation time constant measurements (T23=8.58, p<0.001), RF size comparisons (U=17.5, p=0.013), and cross-correlogram analysis shown in Figure 2. The classification scheme is internally consistent and statistically validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "bf34c44d-e71c-447a-bbc1-c1b697f289e7",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adapting units correspond to excitatory neurons and non-adapting units correspond to inhibitory neurons. This classification is supported by pharmacological testing showing that DHPG (selective for excitatory neurons) preferentially affected adapting cells (\u03c7\u00b2=9.95, p=0.007), while SST (selective for inhibitory neurons) preferentially affected non-adapting cells (\u03c7\u00b2=16.85, p<0.001). The two cell types also differ in their depth distribution within the dorsal horn.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 are supported by pharmacological experiments with appropriate statistical tests and are consistent with known receptor expression patterns. The depth distribution data (D=0.56, p<0.001) further supports the classification. However, the classification relies on indirect pharmacological evidence rather than direct genetic identification, which is acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "6c2d2333-14cf-4885-bc09-f7bb7189125c",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KCC2 blockade differentially affects spontaneous and evoked firing in adapting versus non-adapting units. While KCC2 blockade significantly increased input-output curve slope in both cell types (Z=3.82 and Z=3.30, p<0.001), it selectively increased spontaneous firing in non-adapting units (Z=3.58, p<0.001) but not in adapting units (Z=0.39, p=0.70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are well-supported by statistical analyses shown in Figure 4. The differential effects on spontaneous firing are consistent across multiple manipulations and are explained by differences in intrinsic excitability. Appropriate controls (e.g., glycine receptor blockade in Figure 4\u2014figure supplement 1) strengthen the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "bde21b66-08aa-4779-9417-77977cddff79",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Excitatory and inhibitory neurons display equivalent chloride extrusion capacity. In vitro patch clamp recordings measuring chloride reversal potential shifts after KCC2 blockade revealed no significant difference between excitatory and inhibitory neurons (T12=0.030, p=0.98).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by direct measurements using whole-cell patch clamp with high chloride loading, shown in Figure 5B. The methodology is appropriate for measuring chloride extrusion capacity, and the statistical test is valid. However, the authors appropriately note that this does not rule out differences within certain subpopulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "422a8bd7-d821-4561-a003-2da962c5f1c4",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Virtual disinhibition in vitro differentially affects excitatory and inhibitory neurons. Dynamic clamp experiments showed that disinhibition (modeled as a shift in Einh from -70 mV to -45 mV) significantly increased firing rate gain (slope) in both cell types (Q5=6.62, p<0.001 for excitatory; Q8=3.75, p=0.020 for inhibitory), but increased the y-intercept only in inhibitory neurons (Q8=8.09, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by dynamic clamp experiments with appropriate statistical analyses shown in Figure 6D. The results are consistent with in vivo observations and provide mechanistic insight into how intrinsic excitability differences contribute to differential disinhibition effects. The experimental design appropriately controls for circuit-level effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "a4e6696f-8de1-4d4c-a17f-64682496a565",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BDNF causes comparable chloride dysregulation in both adapting and non-adapting units. Intrathecal BDNF significantly increased evoked firing in both cell types (Z=3.10, p<0.001), and these effects were reversed by acetazolamide (ACTZ). However, BDNF selectively increased spontaneous firing in non-adapting units (Z=2.52, p=0.008) but not in adapting units (Z=0.51, p=0.64).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are well-supported by experiments shown in Figure 7. The use of ACTZ as a control for chloride-specific effects strengthens the interpretation. The differential effects on spontaneous firing are consistent with KCC2 blockade experiments and intrinsic excitability differences. The conclusion that BDNF causes comparable disinhibition in both cell types is justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "35b21c4d-87f3-4949-8262-35fd87be96e0",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Adapting and non-adapting units differ in excitation-inhibition (E-I) balance. Under baseline conditions, RF surround stimulation significantly reduced responses to RF center stimulation in both cell types, with adapting units experiencing a larger reduction (Q33=3.61, p=0.013). After KCC2 blockade, this effect was inverted, with adapting units experiencing a larger enhancement (Q33=2.91, p=0.044). These data suggest adapting units receive strong excitation balanced by strong inhibition, while non-adapting units receive weaker excitation balanced by weaker inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 are supported by co-stimulation experiments with appropriate statistical analyses shown in Figure 8B. The interpretation regarding differential E-I balance is logical and consistent with other findings in the study. However, the inference about absolute levels of excitation and inhibition (C55-C56) relies on indirect evidence and modeling assumptions presented in Figure 8C-D.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "b6333d30-ba62-4d61-a2a4-6bd418b8a55d",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Excitatory neurons are more disinhibited than inhibitory neurons by chloride dysregulation because they rely more heavily on inhibition to counterbalance strong excitation. Both cell types have center-surround RF organization, but disinhibition unmasks more excitatory input to excitatory neurons. Differences in intrinsic excitability also contribute to differential effects of chloride dysregulation on spiking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 represent the main conclusions of the study and are supported by convergent evidence from multiple experiments (Figures 1-8). The conclusion integrates findings about RF organization, E-I balance, chloride regulation, and intrinsic excitability. While the overall conclusion is well-supported, it relies on the validity of the adapting/non-adapting classification as excitatory/inhibitory, which is based on indirect pharmacological evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "5b60bba1-5555-4e97-9824-269fbb9f43cf",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing the context for neuropathic pain, mechanical allodynia, and the role of chloride dysregulation. These claims cite prior literature on the prevalence of neuropathic pain, the difficulty of treatment, the role of synaptic inhibition, KCC2 function, and receptive field organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 are background claims supported by appropriate citations to prior literature. These establish the scientific context and rationale for the current study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Additional background and contextual claims from prior literature supporting the interpretation of results. These include claims about neuronal populations in the dorsal horn, receptor expression patterns, intrinsic excitability properties, and findings from related studies on allodynia mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C85 are supported by appropriate citations to prior literature. These claims provide important context for interpreting the current findings and are generally consistent with established knowledge. Claim C78 is appropriately identified as speculative by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    },
+    {
+      "id": "0dddaf18-7b3b-4d58-bfe9-cc508f97a7c2",
+      "content_id": "7ff3e34d-5566-4836-aa6d-48bcad14032b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Disinhibition caused by chloride dysregulation affects responses to both brush and von Frey stimuli, consistent with most (if not all) dorsal horn neurons being under inhibitory control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 are supported by the experimental data showing effects of KCC2 blockade on responses to both types of stimuli. The inference that most neurons are under inhibitory control is reasonable given the widespread effects observed, though the claim is appropriately qualified as an inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:28:15.505331Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "193dc587-4446-4deb-afbd-609d1c781463",
+      "result_id": "44eea5f6-d627-405f-8f62-353ed26a548c"
+    },
+    {
+      "claim_id": "1d007abc-928f-44fe-9b4e-0506bf7b1386",
+      "result_id": "44eea5f6-d627-405f-8f62-353ed26a548c"
+    },
+    {
+      "claim_id": "ad5db17d-481c-4d2b-8218-0e8d452ed1c5",
+      "result_id": "44eea5f6-d627-405f-8f62-353ed26a548c"
+    },
+    {
+      "claim_id": "f73a2eeb-6564-4960-97df-53a2e4c21307",
+      "result_id": "44eea5f6-d627-405f-8f62-353ed26a548c"
+    },
+    {
+      "claim_id": "06fd3a84-3412-4c46-9834-d61a9bdb0677",
+      "result_id": "8ad436e6-fd9b-4f1d-82e9-273d29594eb1"
+    },
+    {
+      "claim_id": "a2745522-4880-4460-858b-7f34f7f96bdd",
+      "result_id": "8ad436e6-fd9b-4f1d-82e9-273d29594eb1"
+    },
+    {
+      "claim_id": "ad2fe9ee-9d46-4c74-9076-52c3dc82ad94",
+      "result_id": "8ad436e6-fd9b-4f1d-82e9-273d29594eb1"
+    },
+    {
+      "claim_id": "af7d57c3-6940-47c0-b276-27bfc0f128aa",
+      "result_id": "8ad436e6-fd9b-4f1d-82e9-273d29594eb1"
+    },
+    {
+      "claim_id": "b4aa94a3-7164-4198-b572-4dc988fc793d",
+      "result_id": "8ad436e6-fd9b-4f1d-82e9-273d29594eb1"
+    },
+    {
+      "claim_id": "0cf8c44a-56ed-43b3-b441-14b1dc213ae1",
+      "result_id": "8ad436e6-fd9b-4f1d-82e9-273d29594eb1"
+    },
+    {
+      "claim_id": "8bfd6480-b2ac-4c8e-ad2f-383cd60051f6",
+      "result_id": "bf34c44d-e71c-447a-bbc1-c1b697f289e7"
+    },
+    {
+      "claim_id": "11a2dbc1-5dbe-4de0-bb9e-38b95a52f0c4",
+      "result_id": "bf34c44d-e71c-447a-bbc1-c1b697f289e7"
+    },
+    {
+      "claim_id": "90ff2521-87fc-466a-ba8f-646347020285",
+      "result_id": "bf34c44d-e71c-447a-bbc1-c1b697f289e7"
+    },
+    {
+      "claim_id": "f82ee016-88ff-41ba-b955-2b9c3d8d84fa",
+      "result_id": "bf34c44d-e71c-447a-bbc1-c1b697f289e7"
+    },
+    {
+      "claim_id": "bf6d16f9-1200-4e35-b7c2-d7ae049c02b4",
+      "result_id": "bf34c44d-e71c-447a-bbc1-c1b697f289e7"
+    },
+    {
+      "claim_id": "807c5580-f5d0-451e-a66b-e4bcf950b98c",
+      "result_id": "bf34c44d-e71c-447a-bbc1-c1b697f289e7"
+    },
+    {
+      "claim_id": "46109d35-64a6-4230-95c6-ee4b8befa026",
+      "result_id": "bf34c44d-e71c-447a-bbc1-c1b697f289e7"
+    },
+    {
+      "claim_id": "9e37ae90-3fb3-4857-9eaf-b9a6208794a9",
+      "result_id": "6c2d2333-14cf-4885-bc09-f7bb7189125c"
+    },
+    {
+      "claim_id": "c6f4a0eb-a014-4271-904f-266e95e69908",
+      "result_id": "6c2d2333-14cf-4885-bc09-f7bb7189125c"
+    },
+    {
+      "claim_id": "5b124233-60f6-46c2-92bc-a76f5e639ad8",
+      "result_id": "6c2d2333-14cf-4885-bc09-f7bb7189125c"
+    },
+    {
+      "claim_id": "3264aa23-3239-4b94-a56f-e84cf9bd62bb",
+      "result_id": "6c2d2333-14cf-4885-bc09-f7bb7189125c"
+    },
+    {
+      "claim_id": "48103843-4041-432e-8d4a-3874bc210380",
+      "result_id": "bde21b66-08aa-4779-9417-77977cddff79"
+    },
+    {
+      "claim_id": "6f3a31dc-d180-414e-b9f7-22c994f857e0",
+      "result_id": "422a8bd7-d821-4561-a003-2da962c5f1c4"
+    },
+    {
+      "claim_id": "bc949aa0-775b-4385-949b-2a91bd45cdde",
+      "result_id": "422a8bd7-d821-4561-a003-2da962c5f1c4"
+    },
+    {
+      "claim_id": "1f266fdb-ffed-495b-8bb7-93e53673b014",
+      "result_id": "a4e6696f-8de1-4d4c-a17f-64682496a565"
+    },
+    {
+      "claim_id": "e82993ee-f85c-48a9-a782-6f0035f99058",
+      "result_id": "a4e6696f-8de1-4d4c-a17f-64682496a565"
+    },
+    {
+      "claim_id": "1fc496a1-4dbf-4578-a330-466e1ac0e948",
+      "result_id": "a4e6696f-8de1-4d4c-a17f-64682496a565"
+    },
+    {
+      "claim_id": "f6567520-ac49-480d-8100-09a35d857160",
+      "result_id": "a4e6696f-8de1-4d4c-a17f-64682496a565"
+    },
+    {
+      "claim_id": "446f7c54-da0a-4d2e-9318-1349e4360048",
+      "result_id": "a4e6696f-8de1-4d4c-a17f-64682496a565"
+    },
+    {
+      "claim_id": "45aaa9dc-0481-4c83-bea3-e369e1071c86",
+      "result_id": "35b21c4d-87f3-4949-8262-35fd87be96e0"
+    },
+    {
+      "claim_id": "7e60e13f-ac33-4498-809c-2d6765a5037f",
+      "result_id": "35b21c4d-87f3-4949-8262-35fd87be96e0"
+    },
+    {
+      "claim_id": "6405181f-5f1b-47f2-ab63-a64df51b029d",
+      "result_id": "35b21c4d-87f3-4949-8262-35fd87be96e0"
+    },
+    {
+      "claim_id": "8d581e14-0f95-4f07-b4c1-7779ba5befe3",
+      "result_id": "35b21c4d-87f3-4949-8262-35fd87be96e0"
+    },
+    {
+      "claim_id": "5a74ffd0-d7a1-4437-a5d5-21eb1bd8ceb4",
+      "result_id": "35b21c4d-87f3-4949-8262-35fd87be96e0"
+    },
+    {
+      "claim_id": "5ce7152d-1297-4916-b927-4c0f51b9f9e8",
+      "result_id": "35b21c4d-87f3-4949-8262-35fd87be96e0"
+    },
+    {
+      "claim_id": "96bdb117-1f1f-43d3-9346-cc3ce9059920",
+      "result_id": "b6333d30-ba62-4d61-a2a4-6bd418b8a55d"
+    },
+    {
+      "claim_id": "b3de620a-4cf7-4547-b5d8-f15acfd09da0",
+      "result_id": "b6333d30-ba62-4d61-a2a4-6bd418b8a55d"
+    },
+    {
+      "claim_id": "9cfc9b3f-f9d2-46fe-9303-730aa7fe831b",
+      "result_id": "b6333d30-ba62-4d61-a2a4-6bd418b8a55d"
+    },
+    {
+      "claim_id": "7d0319db-4c1c-495c-8694-94204a60d101",
+      "result_id": "b6333d30-ba62-4d61-a2a4-6bd418b8a55d"
+    },
+    {
+      "claim_id": "125ecc48-9e3b-48ef-831f-72875a4a223a",
+      "result_id": "b6333d30-ba62-4d61-a2a4-6bd418b8a55d"
+    },
+    {
+      "claim_id": "8294abf0-9883-470c-a81f-93a7ca708a92",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "3eabef0d-6128-4d72-85cb-2d6a07d00ffe",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "cfa7ad6c-c58b-4dbb-99bf-b71c90bd333d",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "47163730-ddfb-4a9b-8575-9b93bcf9054d",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "512da6e8-a1b1-4955-981e-0f1fe1ce8e56",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "90d865ee-3a5d-4012-a24d-dbb2b5b28386",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "15a6f85f-d0c2-44f3-b961-9d3a151b3721",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "28519c37-99c5-444d-ba77-73cccdfbda59",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "533d44a6-478d-4b25-bba2-cb0831379fcd",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "1b60e70c-8813-4fea-acee-35ab94bbdced",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "bdab18f0-9f70-40c7-9510-581e78b326d9",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "cb716977-ecd8-4c41-aed0-0b792abbea4d",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "e55995e9-42f5-425e-aecc-5851eeec8cfe",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "10c2c1fc-637d-4a3a-b6d1-7b6fcb159d6e",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "4b3acc35-e28e-4c1c-8001-efa592e3bafb",
+      "result_id": "5b60bba1-5555-4e97-9824-269fbb9f43cf"
+    },
+    {
+      "claim_id": "449d2451-c67c-464c-a642-0ac492b042d3",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "b8bffb3f-8804-40d1-9f62-613a318a95f6",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "9f0b38c4-b6c3-43c0-a5d7-4671baa98ce6",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "b6dc5938-2f95-4cba-8a92-4760e478104f",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "3d66fad8-ee2e-46a0-9877-a689dd474078",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "8689291b-2657-4883-ac04-92eb5df8a92f",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "6cbe8e41-c97b-4b5e-8192-b7047dd6f553",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "a75d30ad-cb35-465e-a917-5dd2c2936be6",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "5faf12f5-ad15-4909-8c76-a901d4d8ca89",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "3a0f3b19-45ab-41d0-a13e-ba3ca1fe8918",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "3962b989-bb87-4dc4-8738-dfc303993ff1",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "bb94e7dc-0d04-4f6b-a280-95e3210a74ed",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "0917035e-6c94-4373-972b-02941ec187e7",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "2923a2f2-946e-4cf0-986a-1de94f9a8a2a",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "89bb367f-17ab-4f8f-89a3-fc3303b18f39",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "2468df62-8dd1-4860-a55f-0cc3dceef5f5",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "7c4e9546-c404-40db-ba92-3e993e82bef6",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "9c8f2f8b-75a8-4957-a748-db674f4ff9a0",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "21a6b820-326a-447c-93b6-0c74e77ee85b",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "760dffdd-53ab-49a5-ab5a-1dfa03ae6fb9",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "a74de49c-461c-45e2-aa86-bc7bd4cb4647",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "76209b72-16ce-4492-b1f6-5e87d94ac074",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "bcce27c5-d16d-4522-84ca-b1344ed55bfa",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "99f06855-ab0e-45d2-bbf1-f937c2920de0",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "1cf637da-9f6e-4527-b2be-f666f6a23dd2",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "0b78c6f7-8caa-4fee-9cad-218f5c9dbaef",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "21a0d94e-f6ed-41a3-8e6e-5625d30821df",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "e1cbde4b-ba8a-407b-80e5-cdb848ccbce4",
+      "result_id": "eca0d775-b6c8-40c9-9014-1f5cc47e3a4c"
+    },
+    {
+      "claim_id": "eee559c5-5b6b-430c-ace8-a87de012f673",
+      "result_id": "0dddaf18-7b3b-4d58-bfe9-cc508f97a7c2"
+    },
+    {
+      "claim_id": "d98b3d31-66b5-4e30-ab3c-d3962b7838aa",
+      "result_id": "0dddaf18-7b3b-4d58-bfe9-cc508f97a7c2"
+    }
+  ],
+  "comparisons": []
+}

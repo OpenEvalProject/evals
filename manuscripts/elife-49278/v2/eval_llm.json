@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "H3K9me2 is an evolutionarily conserved, specific mark of peripheral heterochromatin that is localized at the nuclear lamina from C. elegans to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 collectively demonstrate through immunostaining, super-resolution microscopy (STORM), and cross-species analysis that H3K9me2 specifically marks peripheral heterochromatin at the nuclear lamina. The data show clear spatial restriction to the nuclear periphery, validated by multiple imaging modalities and conserved across species, providing strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The anti-H3K9me2 antibody is highly specific for the dimethyl modification on lysine 9 of histone H3, distinguishing specific peripheral signal from non-specific background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 demonstrate rigorous antibody validation through peptide blocking experiments, signal intensity analysis, and STORM imaging. The data clearly show that the antibody detects only H3K9me2 and not other histone modifications, establishing the specificity required for the subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "CEC-4 functions as a reader of H3K9me2 and is required for peripheral localization of H3K9me2-marked chromatin in C. elegans, with specific effects on H3K9me2 but not H3K9me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 demonstrate through loss-of-function and rescue experiments that CEC-4 is necessary for H3K9me2 peripheral localization. The cec-4-null phenotype shows loss of peripheral H3K9me2 localization, which is rescued by CEC-4-mCherry expression. The specificity for H3K9me2 over H3K9me3 is clearly demonstrated, supporting the model of CEC-4 as an H3K9me2 reader.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Dimethylation of H3K9 is required for peripheral localization of chromatin, as demonstrated by H3K9A and H3K9E mutants failing to partition to the nuclear periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 show through GFP-tagged histone H3 mutants that K9 methylation is essential for peripheral localization. Wild-type H3 localizes to the periphery while K9A and K9E mutants do not, providing direct evidence that K9 dimethylation orchestrates chromatin positioning. The interpretation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "H3K9 and H3S10 function as a phospho-methyl switch to regulate peripheral heterochromatin localization, with S10 phosphorylation preventing peripheral localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 demonstrate through H3S10E and H3S10A mutants that S10 phosphorylation prevents peripheral localization while the non-phosphorylatable S10A mutant behaves like wild-type. The data are consistent with prior literature on phospho-methyl switches and supported by biochemical evidence from cited work showing reduced CEC-4 binding upon S10 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "H3K9me2 persists through mitosis, and H3S10 phosphorylation beginning in prophase correlates with detachment of H3K9me2-marked chromatin from the nuclear periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 demonstrate through immunostaining across mitotic stages that H3K9me2 is retained on mitotic chromatin while H3K9me2S10p appears in prophase concurrent with peripheral detachment. The antibody specificity for H3K9me2S10p is validated (C32), and the temporal correlation between phosphorylation and detachment is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "During telophase, H3K9me2-marked chromatin reassembles at the nuclear lamina in parallel with nuclear lamina reformation, while H3K9me2S10p-marked chromatin remains in the nucleoplasm until dephosphorylation occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 show through detailed telophase imaging that H3K9me2 chromatin aggregates at the forming nuclear lamina while H3K9me2S10p remains nucleoplasmic, suggesting dephosphorylation precedes lamina association. The temporal sequence is well-documented with multiple time points and signal intensity profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "H3K9me3 shows distinct localization patterns from H3K9me2 during mitosis and telophase, with H3K9me3 not enriched at the forming nuclear lamina during mitotic exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 demonstrate clear differences between H3K9me2 and H3K9me3 localization during mitosis and telophase. The data show H3K9me3 persists through mitosis but does not preferentially associate with the reforming nuclear lamina, distinguishing it from H3K9me2 behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Specific LADs positioned at the nuclear periphery in interphase cells are repositioned at the periphery by telophase, while non-LADs remain in the nucleoplasm, demonstrating inheritance of spatial positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 provide direct evidence through oligopaint FISH tracking 82 genomic loci that LADs specifically reposition to the periphery by telophase while non-LADs do not. The quantitative data show 82% of LADs at the periphery in interphase, similar distances for both in metaphase, and re-establishment of peripheral positioning by telophase. This is the key experiment demonstrating mitotic inheritance of spatial organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "H3K9me2 acts as a 3D architectural mitotic guidepost, with the phospho-methyl switch mechanism ensuring epigenetic memory and inheritance of spatial genome organization through cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 represent the integrated model synthesizing all experimental findings. The model is well-supported by the collective evidence showing H3K9me2 persistence through mitosis, S10 phosphorylation-mediated release, dephosphorylation-dependent reassembly, and specific LAD repositioning. This provides a mechanistic framework for 3D architectural inheritance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C102"
+    ],
+    "result": "The H3K9me2-based mechanism provides a mechanistic explanation for the requirement of chromatin for nuclear lamina reassembly and advances the concept of 3D architectural mitotic bookmarking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 and C102 synthesize the findings to explain long-standing observations about chromatin requirements for nuclear lamina reassembly. The model is supported by the experimental data and provides a novel conceptual framework extending mitotic bookmarking to 3D genome organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The H3K9me2S10 phospho-methyl switch mechanism is employed for mitotic memory of nuclear architecture and is utilized to release peripheral heterochromatin during cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are well-supported by the experimental data showing the phospho-methyl switch operates during mitosis. The mechanism is demonstrated through the temporal correlation of S10 phosphorylation with peripheral release and dephosphorylation with reassembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "H3K9me2-marked LADs re-established at the nuclear periphery at mitotic exit are likely distinct from H3K9me3-marked NADs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by the differential localization patterns of H3K9me2 and H3K9me3 during telophase (C40-C42) and the specific enrichment of H3K9me2 at the reforming lamina. The distinction between LADs and NADs is a reasonable inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C97",
+      "C98"
+    ],
+    "result": "The period during late mitosis when H3S10 is dephosphorylated but before H3K9me2 chromatin is fully re-established may provide a vulnerable window for modifying genome organization and cell fate changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C97, and C98 are speculative hypotheses about the implications of the findings. While the temporal window is demonstrated, the claims about vulnerability to genome reorganization and cell fate changes are not directly tested and remain speculative, though they are reasonable hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The model for epigenetic inheritance may have implications for understanding asymmetric cell divisions and how cellular identity is lost or altered in cancer or trans-differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 are speculative about broader implications of the findings. While the model is well-established, these specific applications to asymmetric division, cancer, and trans-differentiation are not tested and represent future directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

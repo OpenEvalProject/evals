@@ -1,0 +1,2051 @@
+{
+  "submission": {
+    "id": "6ec7b5c2-ab3a-42af-81c1-96e346344e5e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:16:18.451071Z",
+    "updated_at": "2025-12-02T20:16:18.451071Z"
+  },
+  "content": [
+    {
+      "id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "submission_id": "6ec7b5c2-ab3a-42af-81c1-96e346344e5e",
+      "content_type": "manuscript",
+      "content_text": "# Genome expansion in early eukaryotes drove the transition from lateral gene transfer to meiotic sex\n\n## Authors\n\n- Marco Colnaghi<sup>1</sup> ([ORCID: 0000-0002-5641-9324](https://orcid.org/0000-0002-5641-9324))\n- Nick Lane<sup>1</sup> ([ORCID: 0000-0002-5433-3973](https://orcid.org/0000-0002-5433-3973))\n- Andrew Pomiankowski<sup>1</sup> ([ORCID: 0000-0002-5171-8755](https://orcid.org/0000-0002-5171-8755)) \u2020\n\n### Affiliations\n\n1. CoMPLEX, University College London London United Kingdom\n2. Department of Genetics, Evolution and Environment University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nProkaryotes acquire genes from the environment via lateral gene transfer (LGT). Recombination of environmental DNA can prevent the accumulation of deleterious mutations, but LGT was abandoned by the first eukaryotes in favour of sexual reproduction. Here we develop a theoretical model of a haploid population undergoing LGT which includes two new parameters, genome size and recombination length, neglected by previous theoretical models. The greater complexity of eukaryotes is linked with larger genomes and we demonstrate that the benefit of LGT declines rapidly with genome size. The degeneration of larger genomes can only be resisted by increases in recombination length, to the same order as genome size \u2013 as occurs in meiosis. Our results can explain the strong selective pressure towards the evolution of sexual cell fusion and reciprocal recombination during early eukaryotic evolution \u2013 the origin of meiotic sex.\n\n## Introduction\n\nUnderstanding the origin and maintenance of sex in the face of multiple costs was long considered the \u2018Queen of problems in evolutionary biology\u2019 (Bell, 1982). Sexual reproduction breaks up advantageous combinations of alleles, halves the number of genes transmitted to the offspring, and is less efficient and energetically more costly than asexual reproduction (Bell, 1982; Otto and Lenormand, 2002; Otto, 2009). In spite of these disadvantages sex is a universal feature of eukaryotic life. The presence of common molecular machinery, widespread among all eukaryotic lineages, is a strong indication that the Last Eukaryotic Common Ancestor (LECA) was already a fully sexual organism (Schurko and Logsdon, 2008; Speijer et al., 2015). Meiotic genes are commonly found in putative asexual eukaryotes, including Amoebozoa (Lahr et al., 2011; Hofstatter et al., 2018), Diplomonads (Ramesh et al., 2005), Choanoflagellates (Carr et al., 2010) and even lineages once thought to be early diverging such as Trichonomas vaginalis (Malik et al., 2008). Eukaryotic asexuality is not ancestral but a secondarily evolved state. The selective pressures that gave rise to the origin of meiotic sex must therefore be understood in the context of early eukaryotic evolution.\n\nPhylogenomic analysis shows that eukaryotes arose from the endosymbiosis between an archaeal host and a bacterial endosymbiont, the ancestor of mitochondria (M\u00fcller et al., 2012;\u00a0Williams et al., 2013; Martin et al., 2015; Zaremba-Niedzwiedzka et al., 2017). The presence of energy-producing endosymbionts allowed the first eukaryotes to escape the bioenergetic constraints that limit the genome size and cellular complexity of prokaryotes (Lane and Martin, 2010; Lane, 2020). Extra energetic availability came with the evolutionary challenge of the coexistence of two different genomes within the same organism. As with other endosymbioses, the symbiont genome underwent a massive reduction, with the loss of many redundant gene functions (Timmis et al., 2004; L\u00f3pez-Madrigal and Gil, 2017). Alongside this, symbiont release of DNA into the host\u2019s cytosol caused the repeated transfer of genes to the host genome, many of which were retained, contributing to the massive genome size expansion during early eukaryotic evolution (Timmis et al., 2004; Martin and Koonin, 2006; Lane, 2011).\n\nBoth the host and the endosymbiont, like modern archaea and proteobacteria, are likely to have been capable of transformation \u2013 the uptake of exogenous DNA from the environment followed by homologous recombination (Bernstein and Bernstein, 2013; Vos et al., 2015; Ambur et al., 2016). This process involves the acquisition of foreign DNA, the recognition of homologous sequences and recombination, and therefore presents striking similarities with meiosis in eukaryotes. The Rad51/Dcm1 gene family, which plays a central role in meiosis, has high protein sequence similarity with RecA, which promotes homologous search and recombination in prokaryotes (Lin et al., 2006; Johnston et al., 2014). It has been suggested that RecA was acquired by the archaeal ancestor of eukaryotes via endosymbiosis from its bacterial endosymbiont (Lin et al., 2006). Alternatively, the Rad51/Dcm1 family could have evolved from archaeal homologs of RadA (Seitz et al., 1998). Regardless, the presence of this common molecular machinery and the striking similarities between these processes suggest that meiosis evolved from bacterial transformation (Schurko and Logsdon, 2008; Bernstein and Bernstein, 2013;\u00a0Mirzaghaderi and H\u00f6randl, 2016). But the selective pressures that determined this transition are still poorly understood.\n\nHistorically, the main focus of the literature on the origin and the maintenance of sex has been the comparison of sexual and clonal populations, or the spread of modifiers that increase the frequency of recombination (Bell, 1982; Otto, 2009). Recombination can eliminate the linkage between beneficial and deleterious alleles due to Hill-Robertson effects (Felsenstein and Yokoyama, 1976; Barton and Otto, 2005), increase adaptability in rapidly changing (Hamilton, 1980; Gandon and Otto, 2007; Jokela et al., 2009) or spatially heterogeneous (Pylkov et al., 1998; Lenormand and Otto, 2000) environments, and prevent the accumulation of deleterious mutations due to drift predicted by Muller\u2019s ratchet for asexual populations (Muller, 1964; Haigh, 1978). These benefits of recombination outweigh the multiple costs of sexual reproduction and explain the rarity of asexual eukaryotes (Otto, 2009). But remarkably, they provide us with virtually no understanding of why bacterial transformation was abandoned in favour of reciprocal meiotic recombination. The real question is not why sex is better than clonal reproduction, but why did meiotic sex evolve from prokaryotic transformation?\n\nLateral Gene Transfer (LGT) has been recognised as a major force shaping prokaryotic genomes (Ochman et al., 2000; Lapierre and Gogarten, 2009; Vos et al., 2015). Unlike conjugation and transduction, mediated respectively by plasmids and phages, transformation is the only LGT mechanism to be exclusively encoded by genes present on prokaryotic chromosomes (Ambur et al., 2016), and is maintained by natural selection because it provides benefits analogous to those of sexual recombination (Vos, 2009;\u00a0Levin and Cornejo, 2009; Wylie et al., 2010; Takeuchi et al., 2014; Vos et al., 2015). Recombination via transformation allows adaptation by breaking down disadvantageous combinations of alleles (Levin and Cornejo, 2009; Wylie et al., 2010) and preventing the fixation of deleterious mutations (Levin and Cornejo, 2009; Takeuchi et al., 2014). Some theoretical studies (Redfield, 1988; Redfield et al., 1997) suggest that transformation is only advantageous in the\u00a0presence of strong positive epistasis, a condition rarely met by extant prokaryotes. But more recent modelling work shows that transformation facilitates the elimination of deleterious mutations and prevents Muller\u2019s ratchet (Levin and Cornejo, 2009; Takeuchi et al., 2014). As transformation provides similar advantages to meiotic sex, why did the first eukaryotes forsake one for the other? How did the unique conditions at the origin of eukaryotic life give rise to the selective pressures that determined this transition? In particular, is it possible that the massive expansion in genome size in early eukaryotes created the conditions for the evolution of a more systematic way of achieving recombination?\n\nWe know very little about the relation between genome size and the accumulation of deleterious mutations in populations undergoing transformation, as previous models either do not consider it explicitly (Levin and Cornejo, 2009; Wylie et al., 2010) or treat it as a constant parameter (Takeuchi et al., 2014). In order to evaluate the impact of genome size and recombination rate on the dynamics of accumulation of mutation, we develop a new theoretical and computational model of Muller\u2019s ratchet in a population of haploid individuals undergoing homologous recombination of genetic material via transformation. For simplicity, we refer to this process simply as \u2018LGT\u2019. We do not consider genetic exchange facilitated by plasmids or other selfish genetic elements (Ochman et al., 2000; Lapierre and Gogarten, 2009; Vos et al., 2015).\n\nThe population is subjected to variable rates of mutation and recombination due to LGT. Our model includes two new parameters, genome size and recombination length, which have not been taken into account by previous theoretical studies (Levin and Cornejo, 2009; Wylie et al., 2010; Takeuchi et al., 2014). We evaluate the effects of different selective landscapes, either uniform across the genome, or split between core and accessory genomes. The severity of the ratchet is evaluated using standard approaches for measuring the rate of fixation of deleterious mutations and the expected extinction time of the fittest class (Haigh, 1978; Gordo and Charlesworth, 2000; Takeuchi et al., 2014). We suggest that systematic recombination across the entire bacterial genomes was a necessary development to preserve the integrity of the larger genomes that arose with the emergence of eukaryotes, giving a compelling explanation for the origin of meiotic sex.\n\n## Results\n\nWe use a Fisher-Wright process with discrete generations to model the evolution of haploid organisms with genome size $g$, and population size $N$ (Figure 1). They undergo homologous recombination via LGT at a rate $\\lambda$ of recombination length $L$ (Figure 1). The environmental DNA (eDNA) available for recombination is a random portion of the genomes of the previous generation. After undergoing LGT, each genome acquires deleterious mutations at a rate $\\mu$ per gene. Then, reproduction takes place, using a multiplicative fitness function which depends on the number of mutations (see Materials and Methods for more details).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58873/elife-58873-fig1-v1.jpg)\n\n**Figure 1.:** After the birth of a new generation, eDNA is acquired from the environment and randomly recombined with recombination length $L$, at a rate $\\lambda$ per genome. Following LGT, mutations are randomly introduced at a rate $\\mu$\u00a0per\u00a0locus.\u00a0A new generation is then sampled at random, in proportion to reproductive fitness $w_{m}$. The old generation dies and its DNA is released, constituting the eDNA pool for the new generation.\n\n### Constant mutation rate per locus\n\nGenome size increases the severity of the ratchet, measured by $T_{ext}$, the expected extinction time of the least loaded class, LLC (Figure 2). Large genomes gain de novo mutations at a faster rate than small ones, leading to a decline in LLC extinction time, as there are more independent loci that can possibly fix for the mutant (Figure 2, no LGT). LGT reduces the severity of the ratchet and increases the expected LLC extinction time (Figure 2), making the population less vulnerable to stochastic fluctuations in population size. The beneficial effect is more evident as recombination length ($L$) and LGT rate ($\\lambda$) increase (Figure 2). However, as genome size ($g$) increases the expected extinction time plummets, rapidly approaching that of a clonal population with a larger genome, both in the presence of high ($\\lambda=0.1$, Figure 2A) and low ($\\lambda=0.01$, Figure 2B) LGT rates. The sole exception is when recombination length is of the same order as the magnitude of genome size ($L=0.2g$, Figure 2). Only under this condition can increases in genome size be tolerated without a drastic decline in $T_{ext}$.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58873/elife-58873-fig2-v1.jpg)\n\n**Figure 2.:** The mean extinction time (generations) of the Least-Loaded Class ($T_{ext}$) is shown as a function of genome size ($g$) for various recombination lengths ($L$), in the presence of (A) low ($\\lambda=0.01$) and (B) high ($\\lambda=0.1$) LGT rates. The blue lines show the extinction time when there is no LGT, and is the same in (A) and (B). Parameters: $s=10^{-3}$, $N=5\\times10^{3}$, $\\mu=10^{-4}$, $U=\\mu\\timesg$. Error bars show the standard deviation over 50 independent iterations.\n\nThe rate of accumulation of deleterious mutations shows an analogous pattern (Figure 3). As genome size increases, the rate of mutation accumulation markedly increases, both genome wide and per locus (Figure 3). In a small genome, LGT reduces the speed at which mutations accumulate in a population, counteracting the ratchet effect both in the presence of a high ($\\lambda=0.1$) or low ($\\lambda=0.01$) LGT rate (Figure 3). This effect is more pronounced with higher LGT rates ($\\lambda$) and longer recombination lengths ($L$). But even in presence of LGT, large genomes are subjected to higher rates of accumulation, comparable to those of a purely clonal population (Figure 3). Only when recombination length approaches the same order of magnitude as genome size ($L=0.2g$) and occurs at high frequency ($\\lambda=0.1$) can LGT sufficiently repress mutation accumulation in large genomes (Figures 3B and D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58873/elife-58873-fig3-v1.jpg)\n\n**Figure 3.:** The mean genome-wide rate of fixation of deleterious mutations per generation, calculated over a time interval $t=10^{5}$ generations, as a function of genome size ($g$) for various recombination lengths ($L$). This is shown for (A) low ($\\lambda=0.01$) and (B) high ($\\lambda=0.1$) LGT rates. Similarly, the rate of fixation of deleterious mutation per locus per generation is shown, again for (C) low ($\\lambda=0.01$) and (D) high ($\\lambda=0.1$) LGT rates. As genome size increases, LGT becomes less effective in reducing the mutational burden of a population. An increase in recombination length improves the efficiency of LGT in preventing the accumulation of mutations, but this beneficial effect declines rapidly with genome size. Only if recombination length is of the same order of magnitude as genome size ($L=0.2g$) and the rate of LGT is high ($\\lambda=10^{-1}$) can large genomes be maintained in a mutation-free state. Parameters: $s=10^{-3}$, $N=10^{4}$, $\\mu=10^{-4}$, $U=\\mu\\timesg$. Error bars show the standard deviation over 50 independent iterations.\n\n### Constant genome-wide mutation rate\n\nThe limitations of LGT in large genomes become evident in simulations with a constant genome-wide mutation rate in which we increase genome size but constrain the genome-wide mutation rate ($U$) to a constant value. In this case, changes in the efficacy of LGT cannot be due to changes in the rate at which new mutations arise in a genome.\n\nWith a low LGT rate ($\\lambda=0.01$), recombination of short fragments ($L=1$) is not enough to halt the mutational advance and provides virtually no benefits compared to clonal reproduction, with either a low (Figure 4A) or high genome-wide mutation rate (Figure 4B). With a high LGT rate ($\\lambda=0.1$, Figure 4B and D), larger values of $L$ (i.e. $L\\geq5$) can drastically reduce the rate of accumulation of mutations in small genomes, but are not able to counter Muller\u2019s ratchet in larger genomes. As in the previous section, this effect is less evident with a low LGT rate (Figures 4A and C). However, when the recombination length approaches the same order of magnitude as genome size ($L=0.2g$), the accumulation of mutation load is retarded regardless of genome size, both in the presence of a low ($U=0.01$, Figures 4A and B) and high genome-wide mutation rates ($U=0.1$, Figures 4C and D). In the presence of a high LGT rate ($\\lambda=0.1$), recombination of such long fragments ($L=0.2g$) effectively prevents any increase in mutation load (Figure 4C and D). We even see a decline in mutation accumulation as genome size increases (Figure 4D). But this is for the artefactual reason that for a fixed genome wide mutation rate, the per gene mutation rate declines with $g$. This results in a net benefit as genome size increases under the condition that $L=0.2g$ where the recombination length remains a constant fraction of $g$. Even though unrealistic, constraining the genome-wide mutation rate reveals that LGT becomes less efficient per se as genome size increases.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58873/elife-58873-fig4-v1.jpg)\n\n**Figure 4.:** The mean genome-wide rate of fixation of deleterious mutations per generation. This is shown for a low rate genome-wide mutation rate $U=0.01$ for (A) low ($\\lambda=0.01$) and (B) high ($\\lambda=0.1$) LGT rates, and a high genome-wide mutation rate $U=0.1$ for (C) low ($\\lambda=0.01$) and (D) high ($\\lambda=0.1$) LGT rates, across a range of recombination lengths ($L$). The fixation rate was calculated over a time interval of $t=10^{5}$ generations, as a function of genome size. LGT is not able to prevent the accumulation of mutation in large genomes, except for a recombination length on the order of the whole genome ($L=0.2g$). Parameters: $s=10^{-3}$, $N=5\\times10^{3}$. Error bars show the standard deviation over 50 independent iterations. The different data points have been slightly off-set in order to prevent overlap between errorbars.\n\n### Non-uniform strength of selection\n\nDifferent loci in the genome are typically under different strengths of selection. In order to capture this fact in our model, we consider the core and accessory genomes differently. The size of the core genome is fixed ($g_{c}=50$), while the accessory genome size increases as the genome expands. The core loci are under strong selection ($s=0.005$) and the accessory loci are under weak selection ($s=0.001$). Core and accessory loci are randomly distributed in the genome.\n\nUnder this selection regime, mutations preferentially accumulate in the accessory genome, where the strength of selection is lower, while the core genome accumulates mutations at a relatively slow rate (Figure 5). Genome size expansion results in more severe ratchet effects, with a marked increase in the rate of mutations reaching fixation in the regions of the genome that are under weaker selection, alongside a moderate increase in core genome mutation fixation rate (Figure 6). LGT is effective in reducing the mutational burden, both in the accessory and in the core genome; but this beneficial effect is less evident in large genomes than in small ones (Figure 6). Recombination across the whole genome ($L=0.2g$) completely eliminates fixation in the core genome, regardless of genome size, and markedly reduces the fixation rate in the accessory genome, facilitating genomic expansion (Figure 6).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58873/elife-58873-fig5-v1.jpg)\n\n**Figure 5.:** Fixed mutations in the core and accessory genome after $t=10^{5}$ generations for no LGT with (A) small ($g=100$) and (B) large ($g=500$) genome size, and for LGT ($\\lambda=0.1$, $L=5$) with (C) small ($g=100$) and (D) large ($g=500$) genome size. Mutations preferentially accumulate in the accessory genome under weaker selection ($s=0.001$), while the strongly selected core genome ($s=0.005$) accumulates few or no mutations. The rate of fixation increases with genome size, while the benefits of LGT decline with genome size. Parameters: $N=10^{4}$, $\\mu=10^{-4}$,$U=\\mu\\timesg$.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58873/elife-58873-fig6-v1.jpg)\n\n**Figure 6.:** The fixation of mutants in (A) the\u00a0core and (B) the\u00a0accessory genome is shown after $t=10^{5}$ generations, normalised by genome size. A higher number of mutations accumulate in the accessory genome that is under weaker selection. Genome size expansion increases the severity of the ratchet and the number of fixed mutations in the core and accessory genome. The introduction of LGT considerably reduces the mutational burden. Parameters: $\\lambda=10^{\u22121},\u00a0L=5,\u00a0N=10^{4}$, $\\mu=10^{-4},U=\\mu\\timesg$, $s_{core}=0.005$ and $s_{acc}=0.001$.\n\n## Discussion\n\nAsexual organisms are well known to be vulnerable to the effects of drift, which reduces the genetic variation within a population, causing the progressive and inescapable accumulation of deleterious mutations known as Muller\u2019s ratchet (Muller, 1964; Haigh, 1978; Otto, 2009). In eukaryotes, sexual recombination counters the effects of genetic drift and restores genetic variance, increasing the effectiveness of purifying selection and preventing mutational meltdown (Otto, 2009). In prokaryotes, sexual fusion does not occur. But the exchange of genetic material does occur through transformation, the lateral gene transfer (LGT) and recombination of environmental DNA (eDNA). Meiotic recombination likely arose from bacterial transformation. Understanding the reasons why this transition occurred during early eukaryotic evolution are critical to a rigorous understanding of the Queen of problems in evolutionary biology, the origin of sex. Sex did not arise from cloning, as tacitly assumed in the classic theoretical literature, but from prokaryotic transformation, a very different question which we explored. To elucidate this transition, we examined the effectiveness of LGT at countering the dynamics of Muller\u2019s ratchet, to understand where and why LGT becomes ineffective at maintaining genome integrity, necessitating the transition to sexual reproduction in early eukaryotes.\n\nWe assessed the effect of LGT on the severity of the ratchet using the expected extinction time of the least-loaded class and the rate of fixation of deleterious mutations. Unlike previous modelling work, we included genome size as a variable as opposed to a constant (e.g. 100; Takeuchi et al., 2014). Genome size is plainly important in relation to the evolution of eukaryotes, which have expanded considerably in almost every measure of genome size (e.g. DNA content, number of protein-coding genes, size of genes, number of gene families, regulatory DNA content; Lane and Martin, 2010). Considering gene number in our model reveals a strong inverse relationship between genome size and the benefits of LGT. In small genomes, LGT is effective at preventing Muller\u2019s ratchet, with long extinction times (Figure 2) and low rates of mutation accumulation (Figure 4). These results mirror those from modelling assuming a single genome size ($g=100$), which show that LGT can halt Muller\u2019s ratchet even if the environmental DNA has a higher mutation load than the population (Takeuchi et al., 2014). However, our results show that large genomes limit the efficiency of LGT, increasing the overall input of mutations to the genome. Larger genomes increase the severity of the ratchet leading to shorter extinction times and faster rates of mutation accumulation (Figures 2\u20133). In order to avoid unnecessary complexity, our model does not take into account other possible benefits of LGT. In particular, a number of other theoretical studies indicate that LGT can increase the rate of adaptive evolution (Iles et al., 2003; Levin and Cornejo, 2009; Wylie et al., 2010). In light of our results, it would be reasonable to expect these adaptive benefits decline as genome size increases.\n\nHere we deliberately fixed genome size to evaluate the efficacy of LGT in the face of mutation accumulation. It would be illuminating to model the spread of modifiers, both of recombination length and the rate of LGT, given different variable genome size. As in the literature on organisms with meiotic sex (Iles et al., 2003; Barton and Otto, 2005), the frequency of modifiers of LGT-induced recombination will spread by hitchhiking as they generate variance in fitness, dependent on population size and the number of loci. This approach could be extended to ask how the spread of modifiers of LGT lead to changes in genome size. This could be attempted within a general model in which there is a fitness advantage of acquiring new genes through LGT balanced by the rate of deletion (Sela et al., 2016). The role of recombination length and the rate of LGT in genome size expansion and the frequency of gene loss needs to be clarified, and we intend to address this question in future work.\n\nUnder the assumption of a constant mutation rate per locus, theoretical results predict that the severity of the ratchet (measured as the equilibrium number of individuals in the least-loaded class) increases exponentially with genome size (Haigh, 1978; Appendix 1; Appendix 1\u2014figure 1). In addition to this effect \u2013 which could potentially be offset by a lower mutation rate per locus \u2013 large genomes are penalized by the decreased effectiveness of LGT at reducing the mutation load. This result holds true regardless of the assumption that large genomes present a greater mutational target than smaller ones. Even with a constant genome-wide mutation rate, LGT becomes less effective at purging large genomes from deleterious mutations, showing that this effect is not due to a higher mutation rate, but to an intrinsic limitation of LGT (Figure 4).\n\nThe increased potency of the ratchet as genome size increases is ameliorated by an increase in the rate of LGT ($\\lambda$; Figures 2\u20133). Is this a viable option for prokaryotic species to enable them to expand genome size? In a number of species, LGT has been estimated as being the same magnitude (or higher) as the rate of nucleotide substitution, including Bacillus cereus (Hao and Golding, 2006), Streptococcus (Marri et al., 2006), Corynebacterium (Marri et al., 2007), and Pseudomonas syringae (Nowell et al., 2014). Rates are highly variable among species (Croucher et al., 2012; Vos et al., 2015). Competence for transformation can be induced by a range of environmental stressors including DNA damage, high cell density and limited nutrient availability (Bernstein and Bernstein, 2013). But LGT rates are constrained by eDNA availability, which depends on the amount of DNA in the environment and the degree of sequence homology (Croucher et al., 2012; Vos et al., 2015). The model predicts that higher LGT rates will strengthen purifying selection and favour the elimination of mutants. This result is compatible with the strong correlation observed between the number of horizontally transferred genes and genome size across a range of prokaryotes (Jain et al., 2003; Fuchsman et al., 2017). However, it is not clear to what extent the rate of LGT can be modified. Our modelling suggests that larger bacterial genomes are more likely to be sustained by higher rates of LGT, but the benefits of LGT as actually practiced by bacteria \u2013 the non-reciprocal uptake of small pieces of DNA comprising one or a few genes \u2013 are unlikely to sustain eukaryotic-sized genomes. In short, we show that LGT as actually practised by bacteria cannot prevent the degeneration of larger genomes.\n\nImportantly, we show that the benefits of LGT also increase with recombination length ($L$; Figures 2\u20134). In gram-positive bacteria, recombination of large eDNA sequences is the exception rather than the rule (Croucher et al., 2012; Mell et al., 2014). Experimental work indicates that the distribution of eDNA length acquired is skewed towards short fragments, with a third of transformation events less than 1kb, a median around 2-6kb and range extending up to ~50kb (Croucher et al., 2012). This appears to be an evolved state in Streptococcus pneumoniae, as the dedicated system cleaves eDNA into smaller fragments before recombination takes place (Claverys et al., 2009). Some studies have reported a larger median and range for transfer sizes (Hiller et al., 2010). Given that loci are around 1kb, with short intergenic regions, this represents the potential for several genes to be transferred in a single LGT event (Mira et al., 2001; Moran, 2002). There are several potential reasons for cells to focus on small genomic pieces in LGT recombination. Cleavage of eDNA into smaller sequences increases the likelihood of homologous recombination, while the acquisition of long sequences can be associated with loss of genetic information (Croucher et al., 2012) and can potentially disrupt regulatory and physiological networks (Bernstein and Bernstein, 2013). It has also been suggested that the small size of recombination fragments is a mechanism for preventing the spread of mobile genetic elements (Croucher et al., 2016). On the other hand, gram-negative bacteria do not cleave eDNA on import, but their ability to acquire eDNA sequences >50kb is limited by physical constraints (Mell and Redfield, 2014). The high variability of LGT size suggests that there is flexibility and the potential for evolutionary change. But there is no evidence that larger genome size is accompanied by a higher recombination length. To our knowledge bacteria do not load large pieces of chromosome via LGT (i.e. >10% of a genome), although in principle it should be possible for them to do so.\n\nAs for purely asexual populations (Haigh, 1978), the strength of selection plays a critical role in determining the rate of mutation accumulation, with regions of the genome under strong selection accumulating mutations at a low rate (Figures 5\u20136). The ratchet effect is mainly observed in the accessory genome, with mutations accumulating preferentially in loci under weak selection (Figures 5\u20136). Our model predicts that genome size expansion can occur in populations under strong purifying selection (e.g. due to a larger effective population size). Strong selection decreases the rate of genetic information loss, allowing the acquisition of new genetic content without an attendant increase in mutation fixation. This prediction is in agreement with the positive correlation observed between genome size and dN/dS in bacteria (Novichkov et al., 2009; Bobay and Ochman, 2018). However, organisms under similar selective pressures often display a broad range of genome sizes (Novichkov et al., 2009), indicating that other factors, including mutation rate and LGT, have a strong impact on prokaryotic genome size. Under high mutation rate and weak selective pressure, genome size expansion is disfavoured.\n\nEukaryotes, including many protists, typically possess much larger genomes than prokaryotes (Koonin, 2009; Elliott and Gregory, 2015). Eukaryotic genome size expansion was favoured by the acquisition of an endosymbiont, which evolved into the mitochondrion. This released bioenergetic constraints on cell size and allowed the evolution of genetic and morphological complexity (Lane and Martin, 2010; Lane, 2014; Lane, 2020). The endosymbionts underwent gene loss, a frequently observed process in extant endosymbiotic relationships (L\u00f3pez-Madrigal and Gil, 2017) and transferred multiple genes to the host, enriching the host\u2019s genome size with genes of proto-mitochondrial origin (Timmis et al., 2004; Martin et al., 2015). The reduction of energetic constraints on genome size probably also facilitated gene and even whole genome duplications, leading to several thousand new gene families in LECA (Koonin et al., 2004), as well as lower selective pressure for gene loss after acquisition of novel gene functions by LGT (Sz\u00f6llosi et al., 2006). The acquisition of endosymbiotic DNA is also thought to have allowed the spread of mobile genetic elements in the host cell\u2019s genome, contributing to the increase in genome size and likely increasing the mutation rate (Timmis et al., 2004; Martin and Koonin, 2006; Rogozin et al., 2012). Our model explicitly considers an increase in the number of selected loci. The benefits of LGT would decline in a similar fashion if genome size expansion proceeded through the acquisition of non-selected 'junk' DNA. The presence of non-coding sequence would reduce the likelihood that a locus under selection undergoes recombination in a single LGT event (corresponding to smaller $\\lambda$ in the model), thus increasing the severity of the ratchet. The same would follow if increases in genome size followed from the expansion of mobile elements within the genome, although this would introduce complexities relating to repeated sequences and ectopic recombination that require further analysis.\n\nSuch a large genome brought the first eukaryotes under the threat of mutational accumulation, creating the need for stronger purifying selection in order to keep the expanded genetic content free from mutations. Our results offer a possible explanation of why this process drove the transition from LGT to meiotic recombination at the origin of sex. In small prokaryotic genomes, LGT provides sufficient benefits to maintain genome integrity, without incurring the multiple costs associated with sexual reproduction. But LGT fails to prevent the accumulation of deleterious mutations in larger genomes, promoting the loss of genetic information and therefore constraining genome size. Our model shows that genome size expansion is only possible through a proportional increase in recombination length. We considered a recombination length $L=0.2g$, which is equivalent to 500 genes for a species with genome size of 2,500 genes \u2013 two orders of magnitude above the average estimated eDNA length in extant bacteria (Croucher et al., 2012). Recombination events of this magnitude are unknown among prokaryotes, possibly because of physical constraints on eDNA acquisition. Limiting factors likely include the restricted length of eDNA, uptake kinetics and the absence of an alignment mechanism for large eDNA strands (Thomas and Nielsen, 2005; Baltrus, 2013; Croucher et al., 2016).\n\nThe requirement for a longer recombination length $L$ cannot be achieved by LGT, which must therefore have failed to maintain a mutation-free genome, generating a strong selective pressure towards the evolution of a new mechanism of inheritance with the loss of energetic constraints on genome size. However, this magnitude of $L$ is easily achievable via meiotic sex. The transition from LGT to meiotic sex involves the evolution of cell fusion, the transition from circular to linear chromosomes, whole-chromosome alignment and homologous recombination (Lane, 2011; Goodenough and Heitman, 2014). We have not explicitly modelled the details of this process or considered the order in which these factors arose. These aspects are crucial to our understanding of the origin of meiotic sex and will be addressed in a series of future publications. Nonetheless, our results show that eukaryotes had to increase the magnitude of recombination length beyond the limits of LGT in order to permit the expansion in genetic complexity without the attendant increase in mutational burden. Eukaryotes had to abandon LGT in order to increase recombination length and maintain a large genome. Sex was forced upon us.\n\n## Materials and methods\n\nWe use a Fisher-Wright process with discrete generations to model the evolution of a population of $N$ haploid individuals, subject to a rate of deleterious mutation $\\mu$ per locus per generation, with LGT at a rate $\\lambda$. The genome of an individual $j$ is described by a state vector $z\u2192^{(j)}_{}={z_{1},\u2026,z_{g}}$, where $g$ is the number of loci. Each locus $i$ can accumulate a number of mutations {0,1,2\u2026.}. The components $z_{i}^{(j)}$ are the number of deleterious mutations at the $i$-th locus of the $j$-th individual. This allows us to keep track of the number of mutants in an individual and the distribution of mutations at each locus in the population. We define fixation of a mutant at a locus when the least-loaded class (LLC) at that locus is lost. As we neglect back-mutation, fixation of a mutant is permanent.\u00a0Parameters and variables of the model are summarised in Table 1.\n\n**Table 1.**\n Parameters and variables.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>N</td>\n      <td>population size</td>\n    </tr>\n    <tr>\n      <td>\u03bc</td>\n      <td>mutation rate per locus per generation</td>\n    </tr>\n    <tr>\n      <td>g</td>\n      <td>genome size (number of loci)</td>\n    </tr>\n    <tr>\n      <td>U</td>\n      <td>genome-wide mutation rate</td>\n    </tr>\n    <tr>\n      <td>s</td>\n      <td>strength of selection against deleterious mutations</td>\n    </tr>\n    <tr>\n      <td>\u03bb</td>\n      <td>LGT rate</td>\n    </tr>\n    <tr>\n      <td>L</td>\n      <td>recombination length (number of loci)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe consider two different mutational regimes: constant mutation rate per locus and constant genome-wide mutation rate. In the first scenario, the genome-wide mutation rate $U=\\mug$ is calculated as the product between the mutation rate per locus per generation ($\\mu$) and the number of loci ($g$). We assume that the mutation rate per locus is constant across the whole genome. Under this assumption, the severity of the ratchet increases exponentially with genome size, and this effect can only partially be offset by an increase in population size (Appendix 1 and Appendix 1\u2014figure 1). In order to study the intrinsic limitations of LGT, we also investigate the effect of a constant genome-wide mutation rate $U$ for genomes of different size. We introduce a new parameter $L$, the number of contiguous genes acquired with each LGT recombination event (i.e. the size of imported DNA), which has not been taken into account by previous theoretical studies (Levin and Cornejo, 2009; Wylie et al., 2010; Takeuchi et al., 2014). In order to avoid unnecessary complexity, we ignore the probability of ectopic recombination, and assume that DNA strands present in the environment (eDNA pool) are only stable for one generation before decaying irreversibly.\n\nIn the first part of this study, we assume that all mutations are mildly deleterious. Each mutation at a locus and across loci causes the same decrease in individual fitness $s$. Following previous studies of Muller\u2019s ratchet (Haigh, 1978; Gordo and Charlesworth, 2000; Takeuchi et al., 2014), we choose a multiplicative function to model the fitness of an individual carrying $m$ mutations, given by the formula $w_{m}=1-s^{m}$ (i.e. no epistasis). In the second part of the study we investigate more complex distributions of strength of selection across the genome.\u00a0In particular, we differentiate between a strongly selected core genome and accessory genome under weaker selection. Which genes belong to the core and to the accessory genome is determined by random sampling. The fitness of an individual that carries $m_{i}$ mutations at locus $i$ is given by $w(t)=\\prod_{i=1}^{g}1-s_{i}^{m_{i}}$, where $s_{i}=0.005$ if locus $i$\u00a0belongs to the core genome and $s_{i}=0.001$ otherwise.\n\nEach generation, the life history of the population follows the following processes\u00a0(Figure 1). The new generation is obtained by sampling $N$ individuals at random, with replacement, from the old population. The probability of reproduction is proportional to the individual fitness $w_{m}$. Each individual acquires $n^{(j)}$\u00a0new deleterious mutations, where $n^{(j)}$ is a random variable drawn from a Poisson distribution with mean $U$, which is equivalent to each locus acquiring a new mutation with probability $\\mu$. The number of mutations and their position in the genome are randomly determined. Then the old generation dies, and their DNA forms the genetic pool from which the new generation acquires exogenous DNA (eDNA) for recombination. Each individual has a probability $\\lambda$ of undergoing LGT. For each individual that undergoes LGT, a random donor is selected from the previous generation and $L$ contiguous loci are randomly selected from its genome. The genome is assumed to be circular, so locus $g$ is contiguous with locus 1. The corresponding components of the state vector of the recipient become equal to those of the donor. This can lead both to an increase or a decrease in the mutation load of the recipient.\n\nSimulations are started from a population free of mutation and run for 10,000 generations, with 50 replicates for a given set of parameter values. Two measures $T_{ext}$ and $\u0394m/\u0394t$ have been used to assess the effect of the ratchet (Haigh, 1978; Gordo and Charlesworth, 2000; Takeuchi et al., 2014). After recombination, we calculate the number of individuals in the least-loaded class (LLC), the set of individuals whose genomes are mutation free: $z\u2192^{(j)}_{}={0,0,\u2026,0}$. In populations undergoing LGT the loss of the least-loaded class is reversible, unless a mutant reaches fixation at a particular locus. At this point, the mutation-free class is irreversibly lost, and we mark this as $T_{ext}$ (extinction time of the LLC). $T_{ext}$\u00a0gives an estimate of the time that a population can remain free of mutations. The second measure is the genome-wide rate of fixation $\u0394m/\u0394t$, which is calculated as the ratio between the total number of fixed mutations at the end of the simulation, and the duration of the simulation itself (i.e. 10,000 generations). The rate of fixation per single locus is the ratio between the genome-wide rate of fixation and genome size $g$. $\u0394m/\u0394t$ is a measure of the rate of accumulation of mutations.\n\nSimulation code is available on GitHub at https://github.com/MarcoColnaghi1990/Colnaghi-Lane-Pomiankowski-2020\u00a0(Colnaghi, 2020;\u00a0copy archived at https://github.com/elifesciences-publications/Colnaghi-Lane-Pomiankowski-2020).\n",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "87e66cb6-cdf1-4e53-b322-35032a4be708",
+      "submission_id": "6ec7b5c2-ab3a-42af-81c1-96e346344e5e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Paul B Rainey, Max Planck Institute for Evolutionary Biology Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58873.sa1](https://doi.org/10.7554/eLife.58873.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors investigate how the effect of Muller's ratchet is reduced by lateral gene transfer and recombination of environmental DNA, with a particular focus on how recombination length and genome size alter the magnitude of this reduction. This is a very interesting area and it's exciting to see this particular problem tackled theoretically. Both the Introduction and conclusions are strong, in particular the reorientation of the question of the paradox of sex (why did meiotic sex evolve from prokaryotic transformation?) and the focus on rapid genome expansion in early eukaryotes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Genome expansion in early eukaryotes drove the transition from lateral gene transfer to meiotic sex\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Paul B Rainey as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: George Constable (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe authors investigate how the effect of Muller's ratchet is reduced by lateral gene transfer and recombination of environmental DNA, with a particular focus on how recombination length and genome size alter the magnitude of this reduction. This is a very interesting area and it's exciting to see this particular problem tackled theoretically. Both the Introduction and conclusions are strong, in particular the reorientation of the question of the paradox of sex (why did meiotic sex evolve from prokaryotic transformation?) and the focus on rapid genome expansion in early eukaryotes.\n\nEssential revisions:\n\nThe way the model is established, LGT provides two benefits in terms of slowing Muller's ratchet that are difficult to disentangle.\n\nThe first advantage is that, as the authors state, \"Recombination via transformation allows adaptation by breaking down disadvantageous combinations of alleles\". This benefit is the one that is most relevant when comparing LGT to meiotic sex, and indeed it is suggested that this is the main benefit of LGT in the paper.\n\nThe second (not evidently intentional) advantage, is that by having mutation occur after formation of the eDNA pool (see Figure 1), the eDNA pool in some sense acts like an \"effective germ-line\" that experiences a lower mutational load. This has the consequence of slightly lowering the effective mutation rate experienced by populations undergoing LGT, as is described below for a simplified case.\n\nWe therefore request that the authors experiment with altering the ordering of events in their model (see Figure 1) to place the mutational step before the formation of the eDNA pool. This would allow the benefits arising from transformation to be easily distinguished from the benefits potentially arising from the smaller mutational load currently experienced by the eDNA pool. The outcome stands to range between two extremes:\n\nA) The ordering of these events has little effect on the qualitative results. The model is robust to these changes and the arguments of the paper are strengthened.\n\nB) It may turn out that the model behaviour observed so far is entirely dependent on the reduced mutational load of the eDNA pool (rather than transformation). Although it appears unlikely, this scenario would be difficult to justify from a biological perspective and would likely undermine the value of the paper.\n\nIssue of decreased mutational load of eDNA pool\n\nSuppose we begin with a population with no mutations. We use this ancestral population to (1) form the eDNA pool and (2) provide the samples for the new generation. Individuals in the new generation are then subject to mutation, receiving an average number of U mutations each. Let's assume for simplicity that the maximum number of mutations is 1. With probability \u03bb the individual undergoes LGT, replacing part of its genome with a sample from the mutation-free eDNA pool. With the circular genome assumed, the probability of losing a mutation acquired by an individual in the new generation during LGT is L/g (recombination length / genome length). An effective mutation rate, Ueff, in this simplified scenario can then be defined\n\nUeff = U (1 \u2013 \u03bb L/g) = mu g ( 1 \u2013\u03bb L /g) [constant mutation rate per locus]\n\nThis has a number of straightforward consequences.\n\nAs g -> inf with L held constant, the effective mutation rate tends to the actual mutation rate. This could explain why the simulation results in Figure 2 with LGT and L=1-10 (which experience something like this effective mutation rate, Ueff) tend to the result of the simulations without LGT (which experiences the actual mutation rate, U) as g gets large.\n\nAs g -> inf with L held proportional to g (i.e. L=0.2g), the effective mutation rate is always strictly lower than the actual mutation rate. This could explain why the simulations in Figure 2 with L=0.2g always take longer to accumulate deleterious mutations than those without LGT.\n\nFinally, in Figure 2B the simulation results with LGT and L=10 are very close to those with L=0.2g when g is low (g approx100). For these parameters, we have (L/g)=0.1 and (L/g)=0.2 respectively, which can lead to similar values of Ueff, and thus could explain the observed similarity in the average extinction time of the LLC in this parameter range.\n\nThe above discussion comes with the caveat that the numerical differences between U and this (admittedly crude) approximation for Ueff are very low for the parameters investigated (Ueff can be at most (1-\u03bb)U=0.9U). Nevertheless it is important to understand which components of the model set-up are driving the dynamics. Placing mutation before the formation of the eDNA pool would circumvent the problem of these different effective mutation rates, and provide a fairer comparison of the robustness of populations under LGT and under no LGT to Muller's ratchet.\n",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "616be80a-9944-4d1a-9f5b-b1ac4b1cefc6",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C1",
+      "claim": "Prokaryotes acquire genes from the environment via lateral gene transfer (LGT).",
+      "claim_type": "EXPLICIT",
+      "source": "Prokaryotes acquire genes from the environment via lateral gene transfer (LGT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about prokaryotic gene acquisition mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b31e700d-d1bd-4e1e-bb94-e24161eb99e2",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C2",
+      "claim": "Recombination of environmental DNA can prevent the accumulation of deleterious mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination of environmental DNA can prevent the accumulation of deleterious mutations, but LGT was abandoned by the first eukaryotes in favour of sexual reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws from established understanding of recombination benefits in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "4487548e-c6a7-494e-a478-451c4cebc4e1",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C3",
+      "claim": "LGT was abandoned by the first eukaryotes in favour of sexual reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination of environmental DNA can prevent the accumulation of deleterious mutations, but LGT was abandoned by the first eukaryotes in favour of sexual reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a central premise of the paper based on evolutionary understanding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "9d356865-4ec3-4ea2-9858-7dbd1c299e89",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C4",
+      "claim": "The greater complexity of eukaryotes is linked with larger genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The greater complexity of eukaryotes is linked with larger genomes and we demonstrate that the benefit of LGT declines rapidly with genome size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eukaryotic genome characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b9b312a3-0dba-4601-b038-1161493bf68f",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C5",
+      "claim": "The benefit of LGT declines rapidly with genome size.",
+      "claim_type": "EXPLICIT",
+      "source": "The greater complexity of eukaryotes is linked with larger genomes and we demonstrate that the benefit of LGT declines rapidly with genome size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "7d726f7e-f3db-4642-b900-b2ea6c07f661",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C6",
+      "claim": "The degeneration of larger genomes can only be resisted by increases in recombination length to the same order as genome size.",
+      "claim_type": "EXPLICIT",
+      "source": "The degeneration of larger genomes can only be resisted by increases in recombination length, to the same order as genome size \u2013 as occurs in meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model simulations shown in Figures 2-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b7e9dfe6-699d-4119-a440-1a34b3defa8d",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C7",
+      "claim": "Increases in recombination length to the same order as genome size occurs in meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The degeneration of larger genomes can only be resisted by increases in recombination length, to the same order as genome size \u2013 as occurs in meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about meiotic recombination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "9dc22d27-b190-4a74-96cb-7243587d6684",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C8",
+      "claim": "Sexual reproduction breaks up advantageous combinations of alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual reproduction breaks up advantageous combinations of alleles, halves the number of genes transmitted to the offspring, and is less efficient and energetically more costly than asexual reproduction (Bell, 1982; Otto and Lenormand, 2002; Otto, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on the costs of sex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "e7950265-7d59-4484-8aa4-9a3ccf9db5b8",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C9",
+      "claim": "Sexual reproduction halves the number of genes transmitted to the offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual reproduction breaks up advantageous combinations of alleles, halves the number of genes transmitted to the offspring, and is less efficient and energetically more costly than asexual reproduction (Bell, 1982; Otto and Lenormand, 2002; Otto, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on the costs of sex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "a4a38d1a-5791-4b4a-b6ae-3a3c37080c53",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C10",
+      "claim": "Sexual reproduction is less efficient and energetically more costly than asexual reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual reproduction breaks up advantageous combinations of alleles, halves the number of genes transmitted to the offspring, and is less efficient and energetically more costly than asexual reproduction (Bell, 1982; Otto and Lenormand, 2002; Otto, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on the costs of sex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "454c6e79-a07b-449a-b563-fb086ea99a13",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C11",
+      "claim": "Sex is a universal feature of eukaryotic life.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of these disadvantages sex is a universal feature of eukaryotic life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eukaryotic biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "31b80c8a-049d-4ec8-930d-ddc01ab987f4",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C12",
+      "claim": "The presence of common molecular machinery widespread among all eukaryotic lineages is a strong indication that the Last Eukaryotic Common Ancestor (LECA) was already a fully sexual organism.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of common molecular machinery, widespread among all eukaryotic lineages, is a strong indication that the Last Eukaryotic Common Ancestor (LECA) was already a fully sexual organism (Schurko and Logsdon, 2008; Speijer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on LECA and meiotic machinery.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "08f3c7b5-f9f2-4d6f-8cff-dcaca0ce6d22",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C13",
+      "claim": "Meiotic genes are commonly found in putative asexual eukaryotes, including Amoebozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiotic genes are commonly found in putative asexual eukaryotes, including Amoebozoa (Lahr et al., 2011; Hofstatter et al., 2018), Diplomonads (Ramesh et al., 2005), Choanoflagellates (Carr et al., 2010) and even lineages once thought to be early diverging such as Trichonomas vaginalis (Malik et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies finding meiotic genes in these organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "8cf082c8-fa3f-4308-9f26-5dc6500808f6",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C14",
+      "claim": "Meiotic genes are commonly found in putative asexual eukaryotes, including Diplomonads.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiotic genes are commonly found in putative asexual eukaryotes, including Amoebozoa (Lahr et al., 2011; Hofstatter et al., 2018), Diplomonads (Ramesh et al., 2005), Choanoflagellates (Carr et al., 2010) and even lineages once thought to be early diverging such as Trichonomas vaginalis (Malik et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies finding meiotic genes in these organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "72fee315-99c5-45d0-80f2-f25c7886ef2f",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C15",
+      "claim": "Meiotic genes are commonly found in putative asexual eukaryotes, including Choanoflagellates.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiotic genes are commonly found in putative asexual eukaryotes, including Amoebozoa (Lahr et al., 2011; Hofstatter et al., 2018), Diplomonads (Ramesh et al., 2005), Choanoflagellates (Carr et al., 2010) and even lineages once thought to be early diverging such as Trichonomas vaginalis (Malik et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies finding meiotic genes in these organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "10d77e00-2872-4487-813c-f9ec18b465cd",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C16",
+      "claim": "Meiotic genes are commonly found in Trichonomas vaginalis.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiotic genes are commonly found in putative asexual eukaryotes, including Amoebozoa (Lahr et al., 2011; Hofstatter et al., 2018), Diplomonads (Ramesh et al., 2005), Choanoflagellates (Carr et al., 2010) and even lineages once thought to be early diverging such as Trichonomas vaginalis (Malik et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies finding meiotic genes in these organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "8150c08a-5497-4ce2-a532-8bfb943853a7",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C17",
+      "claim": "Eukaryotic asexuality is not ancestral but a secondarily evolved state.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic asexuality is not ancestral but a secondarily evolved state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the presence of meiotic genes in putatively asexual lineages.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "600a6f97-14b3-4854-b89b-628cf110be26",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C18",
+      "claim": "Phylogenomic analysis shows that eukaryotes arose from the endosymbiosis between an archaeal host and a bacterial endosymbiont, the ancestor of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenomic analysis shows that eukaryotes arose from the endosymbiosis between an archaeal host and a bacterial endosymbiont, the ancestor of mitochondria (M\u00fcller et al., 2012; Williams et al., 2013; Martin et al., 2015; Zaremba-Niedzwiedzka et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to phylogenomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "adc30cbd-f3ac-4876-852f-e4f6afb94b56",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C19",
+      "claim": "The presence of energy-producing endosymbionts allowed the first eukaryotes to escape the bioenergetic constraints that limit the genome size and cellular complexity of prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of energy-producing endosymbionts allowed the first eukaryotes to escape the bioenergetic constraints that limit the genome size and cellular complexity of prokaryotes (Lane and Martin, 2010; Lane, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work on bioenergetic constraints.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b08d78bc-501e-4bec-9271-d0f5500cd91a",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C20",
+      "claim": "The symbiont genome underwent a massive reduction, with the loss of many redundant gene functions.",
+      "claim_type": "EXPLICIT",
+      "source": "As with other endosymbioses, the symbiont genome underwent a massive reduction, with the loss of many redundant gene functions (Timmis et al., 2004; L\u00f3pez-Madrigal and Gil, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on endosymbiotic genome reduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "55c37790-a6ca-41bc-93bf-705b2254d52a",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C21",
+      "claim": "Symbiont release of DNA into the host's cytosol caused the repeated transfer of genes to the host genome, many of which were retained, contributing to the massive genome size expansion during early eukaryotic evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Alongside this, symbiont release of DNA into the host's cytosol caused the repeated transfer of genes to the host genome, many of which were retained, contributing to the massive genome size expansion during early eukaryotic evolution (Timmis et al., 2004; Martin and Koonin, 2006; Lane, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on endosymbiotic gene transfer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "6920005f-3c35-40c1-8db6-ecbfe9283786",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C22",
+      "claim": "Both the host and the endosymbiont, like modern archaea and proteobacteria, are likely to have been capable of transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the host and the endosymbiont, like modern archaea and proteobacteria, are likely to have been capable of transformation \u2013 the uptake of exogenous DNA from the environment followed by homologous recombination (Bernstein and Bernstein, 2013; Vos et al., 2015; Ambur et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on transformation in archaea and bacteria.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "6e84eb33-bd1c-4701-93d5-0d4d5f9e55d4",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C23",
+      "claim": "Transformation involves the acquisition of foreign DNA, the recognition of homologous sequences and recombination, and therefore presents striking similarities with meiosis in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "This process involves the acquisition of foreign DNA, the recognition of homologous sequences and recombination, and therefore presents striking similarities with meiosis in eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanistic similarities between the two processes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "579271e5-3401-4374-9678-d3c3d8bb953e",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C24",
+      "claim": "The Rad51/Dcm1 gene family, which plays a central role in meiosis, has high protein sequence similarity with RecA, which promotes homologous search and recombination in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rad51/Dcm1 gene family, which plays a central role in meiosis, has high protein sequence similarity with RecA, which promotes homologous search and recombination in prokaryotes (Lin et al., 2006; Johnston et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on protein sequence similarity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "6f55a4b7-977c-4279-bf47-8d82aedf94a6",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C25",
+      "claim": "It has been suggested that RecA was acquired by the archaeal ancestor of eukaryotes via endosymbiosis from its bacterial endosymbiont.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that RecA was acquired by the archaeal ancestor of eukaryotes via endosymbiosis from its bacterial endosymbiont (Lin et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study proposing this hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "63a59741-42d3-4555-9f3b-240217ef30b9",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C26",
+      "claim": "The Rad51/Dcm1 family could have evolved from archaeal homologs of RadA.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the Rad51/Dcm1 family could have evolved from archaeal homologs of RadA (Seitz et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study proposing this alternative hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "f64028fc-0e57-40ab-9652-106ee03c5c6d",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C27",
+      "claim": "The presence of common molecular machinery and the striking similarities between transformation and meiosis suggest that meiosis evolved from bacterial transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, the presence of this common molecular machinery and the striking similarities between these processes suggest that meiosis evolved from bacterial transformation (Schurko and Logsdon, 2008; Bernstein and Bernstein, 2013; Mirzaghaderi and H\u00f6randl, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies proposing this evolutionary relationship.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "687c97c8-428b-4258-8b57-c931f8b417bc",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C28",
+      "claim": "Recombination can eliminate the linkage between beneficial and deleterious alleles due to Hill-Robertson effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination can eliminate the linkage between beneficial and deleterious alleles due to Hill-Robertson effects (Felsenstein and Yokoyama, 1976; Barton and Otto, 2005), increase adaptability in rapidly changing (Hamilton, 1980; Gandon and Otto, 2007; Jokela et al., 2009) or spatially heterogeneous (Pylkov et al., 1998; Lenormand and Otto, 2000) environments, and prevent the accumulation of deleterious mutations due to drift predicted by Muller's ratchet for asexual populations (Muller, 1964; Haigh, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical studies on recombination benefits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "13faee44-1c9d-4e6f-88d6-07f5872239fa",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C29",
+      "claim": "Recombination can increase adaptability in rapidly changing environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination can eliminate the linkage between beneficial and deleterious alleles due to Hill-Robertson effects (Felsenstein and Yokoyama, 1976; Barton and Otto, 2005), increase adaptability in rapidly changing (Hamilton, 1980; Gandon and Otto, 2007; Jokela et al., 2009) or spatially heterogeneous (Pylkov et al., 1998; Lenormand and Otto, 2000) environments, and prevent the accumulation of deleterious mutations due to drift predicted by Muller's ratchet for asexual populations (Muller, 1964; Haigh, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical and empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b819f0da-f119-41ec-8b57-bf776929adfa",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C30",
+      "claim": "Recombination can increase adaptability in spatially heterogeneous environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination can eliminate the linkage between beneficial and deleterious alleles due to Hill-Robertson effects (Felsenstein and Yokoyama, 1976; Barton and Otto, 2005), increase adaptability in rapidly changing (Hamilton, 1980; Gandon and Otto, 2007; Jokela et al., 2009) or spatially heterogeneous (Pylkov et al., 1998; Lenormand and Otto, 2000) environments, and prevent the accumulation of deleterious mutations due to drift predicted by Muller's ratchet for asexual populations (Muller, 1964; Haigh, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "6dc8198b-f0a1-4470-828c-33535c947be0",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C31",
+      "claim": "Recombination can prevent the accumulation of deleterious mutations due to drift predicted by Muller's ratchet for asexual populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination can eliminate the linkage between beneficial and deleterious alleles due to Hill-Robertson effects (Felsenstein and Yokoyama, 1976; Barton and Otto, 2005), increase adaptability in rapidly changing (Hamilton, 1980; Gandon and Otto, 2007; Jokela et al., 2009) or spatially heterogeneous (Pylkov et al., 1998; Lenormand and Otto, 2000) environments, and prevent the accumulation of deleterious mutations due to drift predicted by Muller's ratchet for asexual populations (Muller, 1964; Haigh, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical studies on Muller's ratchet.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "9f12c22e-5c96-46c3-ae8c-f5ee0a787b79",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C32",
+      "claim": "Lateral Gene Transfer (LGT) has been recognised as a major force shaping prokaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral Gene Transfer (LGT) has been recognised as a major force shaping prokaryotic genomes (Ochman et al., 2000; Lapierre and Gogarten, 2009; Vos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on LGT in prokaryotes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "3acd0a90-8f31-4d4f-843f-d56c0c859466",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C33",
+      "claim": "Transformation is the only LGT mechanism to be exclusively encoded by genes present on prokaryotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike conjugation and transduction, mediated respectively by plasmids and phages, transformation is the only LGT mechanism to be exclusively encoded by genes present on prokaryotic chromosomes (Ambur et al., 2016), and is maintained by natural selection because it provides benefits analogous to those of sexual recombination (Vos, 2009; Levin and Cornejo, 2009; Wylie et al., 2010; Takeuchi et al., 2014; Vos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on transformation mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "ff53d74e-e15a-4d93-9694-ea8c51ae6e44",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C34",
+      "claim": "Transformation is maintained by natural selection because it provides benefits analogous to those of sexual recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike conjugation and transduction, mediated respectively by plasmids and phages, transformation is the only LGT mechanism to be exclusively encoded by genes present on prokaryotic chromosomes (Ambur et al., 2016), and is maintained by natural selection because it provides benefits analogous to those of sexual recombination (Vos, 2009; Levin and Cornejo, 2009; Wylie et al., 2010; Takeuchi et al., 2014; Vos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical studies on transformation benefits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "75644dcb-77ab-4300-b6e4-6076a7339583",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C35",
+      "claim": "Recombination via transformation allows adaptation by breaking down disadvantageous combinations of alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination via transformation allows adaptation by breaking down disadvantageous combinations of alleles (Levin and Cornejo, 2009; Wylie et al., 2010) and preventing the fixation of deleterious mutations (Levin and Cornejo, 2009; Takeuchi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "3b356de6-cbff-47c9-a26d-5a406a3369ea",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C36",
+      "claim": "Recombination via transformation prevents the fixation of deleterious mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination via transformation allows adaptation by breaking down disadvantageous combinations of alleles (Levin and Cornejo, 2009; Wylie et al., 2010) and preventing the fixation of deleterious mutations (Levin and Cornejo, 2009; Takeuchi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "ff054bb8-f35f-474b-aef9-db959cae1ab8",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C37",
+      "claim": "Some theoretical studies suggest that transformation is only advantageous in the presence of strong positive epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Some theoretical studies (Redfield, 1988; Redfield et al., 1997) suggest that transformation is only advantageous in the presence of strong positive epistasis, a condition rarely met by extant prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "ee5b4f93-d491-4548-b8c4-ef135fbe0753",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C38",
+      "claim": "Strong positive epistasis is a condition rarely met by extant prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Some theoretical studies (Redfield, 1988; Redfield et al., 1997) suggest that transformation is only advantageous in the presence of strong positive epistasis, a condition rarely met by extant prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about prokaryotic genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "cc6074ca-5585-4835-bd5c-e18419425c42",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C39",
+      "claim": "More recent modelling work shows that transformation facilitates the elimination of deleterious mutations and prevents Muller's ratchet.",
+      "claim_type": "EXPLICIT",
+      "source": "But more recent modelling work shows that transformation facilitates the elimination of deleterious mutations and prevents Muller's ratchet (Levin and Cornejo, 2009; Takeuchi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "ea9bfabc-c257-4969-a1fd-bbca79ae8713",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C40",
+      "claim": "Previous models of transformation either do not consider genome size explicitly or treat it as a constant parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "We know very little about the relation between genome size and the accumulation of deleterious mutations in populations undergoing transformation, as previous models either do not consider it explicitly (Levin and Cornejo, 2009; Wylie et al., 2010) or treat it as a constant parameter (Takeuchi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "875fb0bb-a231-4da1-9909-667308ac0ac7",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C42",
+      "claim": "Large genomes gain de novo mutations at a faster rate than small ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Large genomes gain de novo mutations at a faster rate than small ones, leading to a decline in LLC extinction time, as there are more independent loci that can possibly fix for the mutant (Figure 2, no LGT).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "222072ea-48ef-49db-a6e9-4936c5f136b3",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C43",
+      "claim": "LGT reduces the severity of the ratchet and increases the expected LLC extinction time.",
+      "claim_type": "EXPLICIT",
+      "source": "LGT reduces the severity of the ratchet and increases the expected LLC extinction time (Figure 2), making the population less vulnerable to stochastic fluctuations in population size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "353894ee-db6c-407e-917a-2c738fbb2a87",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C47",
+      "claim": "As genome size increases, the rate of mutation accumulation markedly increases, both genome wide and per locus.",
+      "claim_type": "EXPLICIT",
+      "source": "As genome size increases, the rate of mutation accumulation markedly increases, both genome wide and per locus (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b116cdd3-23cd-4e82-8cda-09eec846a87d",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C49",
+      "claim": "Even in presence of LGT, large genomes are subjected to higher rates of accumulation, comparable to those of a purely clonal population.",
+      "claim_type": "EXPLICIT",
+      "source": "But even in presence of LGT, large genomes are subjected to higher rates of accumulation, comparable to those of a purely clonal population (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "a9b655b1-9715-4be6-b244-1579e1ba6058",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C55",
+      "claim": "Mutations preferentially accumulate in the accessory genome, where the strength of selection is lower, while the core genome accumulates mutations at a relatively slow rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this selection regime, mutations preferentially accumulate in the accessory genome, where the strength of selection is lower, while the core genome accumulates mutations at a relatively slow rate (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "ab710261-b6f7-4191-b8e5-3c409245d2e6",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C56",
+      "claim": "Genome size expansion results in more severe ratchet effects, with a marked increase in the rate of mutations reaching fixation in the regions of the genome that are under weaker selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome size expansion results in more severe ratchet effects, with a marked increase in the rate of mutations reaching fixation in the regions of the genome that are under weaker selection, alongside a moderate increase in core genome mutation fixation rate (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "603fc47b-d878-48de-9153-6611a47223c5",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C57",
+      "claim": "LGT is effective in reducing the mutational burden, both in the accessory and in the core genome.",
+      "claim_type": "EXPLICIT",
+      "source": "LGT is effective in reducing the mutational burden, both in the accessory and in the core genome; but this beneficial effect is less evident in large genomes than in small ones (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "7360e3f9-b52e-44f5-aae0-ef788febaa14",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C58",
+      "claim": "The beneficial effect of LGT is less evident in large genomes than in small ones.",
+      "claim_type": "EXPLICIT",
+      "source": "LGT is effective in reducing the mutational burden, both in the accessory and in the core genome; but this beneficial effect is less evident in large genomes than in small ones (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "3a98d56a-10b5-4326-b3b0-90d1faa60cf9",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C60",
+      "claim": "Asexual organisms are vulnerable to the effects of drift, which reduces the genetic variation within a population, causing the progressive and inescapable accumulation of deleterious mutations known as Muller's ratchet.",
+      "claim_type": "EXPLICIT",
+      "source": "Asexual organisms are well known to be vulnerable to the effects of drift, which reduces the genetic variation within a population, causing the progressive and inescapable accumulation of deleterious mutations known as Muller's ratchet (Muller, 1964; Haigh, 1978; Otto, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to foundational studies on Muller's ratchet.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "879dc02f-14a6-48f8-86b9-6ddb66f3a515",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C61",
+      "claim": "In eukaryotes, sexual recombination counters the effects of genetic drift and restores genetic variance, increasing the effectiveness of purifying selection and preventing mutational meltdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, sexual recombination counters the effects of genetic drift and restores genetic variance, increasing the effectiveness of purifying selection and preventing mutational meltdown (Otto, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review on the benefits of sex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "393ce677-8d9a-4a4b-8e8b-204c4c03e18d",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C62",
+      "claim": "In prokaryotes, sexual fusion does not occur.",
+      "claim_type": "EXPLICIT",
+      "source": "In prokaryotes, sexual fusion does not occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about prokaryotic biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "f0302a47-abd9-4d16-87d1-1325c8b3999b",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C63",
+      "claim": "The exchange of genetic material in prokaryotes occurs through transformation, the lateral gene transfer and recombination of environmental DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "But the exchange of genetic material does occur through transformation, the lateral gene transfer (LGT) and recombination of environmental DNA (eDNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about prokaryotic genetic exchange.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "641c5e84-c574-46b8-a0e9-fcea2555776a",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C64",
+      "claim": "Meiotic recombination likely arose from bacterial transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiotic recombination likely arose from bacterial transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarities between the two processes discussed earlier in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "2b1a8586-6f04-4ea0-b767-5280d9c94874",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C65",
+      "claim": "In small genomes, LGT is effective at preventing Muller's ratchet, with long extinction times and low rates of mutation accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In small genomes, LGT is effective at preventing Muller's ratchet, with long extinction times (Figure 2) and low rates of mutation accumulation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "7903b018-7990-4068-80ba-90325e6f0ba1",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C67",
+      "claim": "Large genomes limit the efficiency of LGT, increasing the overall input of mutations to the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results show that large genomes limit the efficiency of LGT, increasing the overall input of mutations to the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "eabc534f-f813-40e2-a62f-72b947b8b459",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C68",
+      "claim": "Larger genomes increase the severity of the ratchet leading to shorter extinction times and faster rates of mutation accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger genomes increase the severity of the ratchet leading to shorter extinction times and faster rates of mutation accumulation (Figures 2\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figures 2-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "a568c410-4c16-481d-aff3-392a2c99482a",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C69",
+      "claim": "Other theoretical studies indicate that LGT can increase the rate of adaptive evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a number of other theoretical studies indicate that LGT can increase the rate of adaptive evolution (Iles et al., 2003; Levin and Cornejo, 2009; Wylie et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "e15132dd-fc9e-4c7f-ab78-af794837e1ef",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C70",
+      "claim": "It would be reasonable to expect that adaptive benefits of LGT decline as genome size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of our results, it would be reasonable to expect these adaptive benefits decline as genome size increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings of the current model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "c3de0454-7214-470d-9508-61e4d3addaff",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C71",
+      "claim": "Theoretical results predict that the severity of the ratchet increases exponentially with genome size.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the assumption of a constant mutation rate per locus, theoretical results predict that the severity of the ratchet (measured as the equilibrium number of individuals in the least-loaded class) increases exponentially with genome size (Haigh, 1978; Appendix 1; Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to theoretical work and reference to the appendix.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "8c1d9801-45c9-4520-8c63-4e37b3fe3441",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C72",
+      "claim": "Large genomes are penalized by the decreased effectiveness of LGT at reducing the mutation load.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this effect \u2013 which could potentially be offset by a lower mutation rate per locus \u2013 large genomes are penalized by the decreased effectiveness of LGT at reducing the mutation load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "fbba840b-99ca-4c84-8f6a-065bf461c668",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C73",
+      "claim": "Even with a constant genome-wide mutation rate, LGT becomes less effective at purging large genomes from deleterious mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Even with a constant genome-wide mutation rate, LGT becomes less effective at purging large genomes from deleterious mutations, showing that this effect is not due to a higher mutation rate, but to an intrinsic limitation of LGT (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "2228e172-2232-4f7c-be21-c95a1ea8c796",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C75",
+      "claim": "In a number of species, LGT has been estimated as being the same magnitude (or higher) as the rate of nucleotide substitution, including Bacillus cereus.",
+      "claim_type": "EXPLICIT",
+      "source": "In a number of species, LGT has been estimated as being the same magnitude (or higher) as the rate of nucleotide substitution, including Bacillus cereus (Hao and Golding, 2006), Streptococcus (Marri et al., 2006), Corynebacterium (Marri et al., 2007), and Pseudomonas syringae (Nowell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "56af0c39-95fd-412c-8cc0-cf81725b0d88",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C76",
+      "claim": "LGT rates are highly variable among species.",
+      "claim_type": "EXPLICIT",
+      "source": "Rates are highly variable among species (Croucher et al., 2012; Vos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "2485d2d4-9ff2-44dd-ac1d-2427ec853398",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C77",
+      "claim": "Competence for transformation can be induced by a range of environmental stressors including DNA damage, high cell density and limited nutrient availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Competence for transformation can be induced by a range of environmental stressors including DNA damage, high cell density and limited nutrient availability (Bernstein and Bernstein, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review on transformation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b599c320-b16d-4834-b575-04c3b8afa4b8",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C78",
+      "claim": "LGT rates are constrained by eDNA availability, which depends on the amount of DNA in the environment and the degree of sequence homology.",
+      "claim_type": "EXPLICIT",
+      "source": "But LGT rates are constrained by eDNA availability, which depends on the amount of DNA in the environment and the degree of sequence homology (Croucher et al., 2012; Vos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on LGT constraints.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "22fec10e-fa7d-498d-a40d-e8ff30424a6b",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C79",
+      "claim": "The model predicts that higher LGT rates will strengthen purifying selection and favour the elimination of mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicts that higher LGT rates will strengthen purifying selection and favour the elimination of mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "6dade285-e86b-4e07-aabd-41e1a7238e96",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C80",
+      "claim": "This result is compatible with the strong correlation observed between the number of horizontally transferred genes and genome size across a range of prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is compatible with the strong correlation observed between the number of horizontally transferred genes and genome size across a range of prokaryotes (Jain et al., 2003; Fuchsman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies showing this correlation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "9c692113-4251-4c63-8bc2-5f59ca6e3684",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C82",
+      "claim": "In gram-positive bacteria, recombination of large eDNA sequences is the exception rather than the rule.",
+      "claim_type": "EXPLICIT",
+      "source": "In gram-positive bacteria, recombination of large eDNA sequences is the exception rather than the rule (Croucher et al., 2012; Mell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "cc673097-4da3-4e04-9c01-4878deaa6182",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C83",
+      "claim": "Experimental work indicates that the distribution of eDNA length acquired is skewed towards short fragments, with a third of transformation events less than 1kb, a median around 2-6kb and range extending up to ~50kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental work indicates that the distribution of eDNA length acquired is skewed towards short fragments, with a third of transformation events less than 1kb, a median around 2-6kb and range extending up to ~50kb (Croucher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an empirical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "3a907f3d-6265-4cf6-b7a4-250b736ad6cb",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C84",
+      "claim": "In Streptococcus pneumoniae, the dedicated system cleaves eDNA into smaller fragments before recombination takes place.",
+      "claim_type": "EXPLICIT",
+      "source": "This appears to be an evolved state in Streptococcus pneumoniae, as the dedicated system cleaves eDNA into smaller fragments before recombination takes place (Claverys et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an empirical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "51c2ee06-6117-4c2f-a7a2-67ba4a6f6d72",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C85",
+      "claim": "Cleavage of eDNA into smaller sequences increases the likelihood of homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage of eDNA into smaller sequences increases the likelihood of homologous recombination, while the acquisition of long sequences can be associated with loss of genetic information (Croucher et al., 2012) and can potentially disrupt regulatory and physiological networks (Bernstein and Bernstein, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on recombination mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "a9e2ef64-7245-4416-8a56-6768900fbd74",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C86",
+      "claim": "The acquisition of long sequences can be associated with loss of genetic information.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage of eDNA into smaller sequences increases the likelihood of homologous recombination, while the acquisition of long sequences can be associated with loss of genetic information (Croucher et al., 2012) and can potentially disrupt regulatory and physiological networks (Bernstein and Bernstein, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on recombination mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "0426df64-8898-4a09-83d9-02a9689a16fc",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C87",
+      "claim": "The acquisition of long sequences can potentially disrupt regulatory and physiological networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage of eDNA into smaller sequences increases the likelihood of homologous recombination, while the acquisition of long sequences can be associated with loss of genetic information (Croucher et al., 2012) and can potentially disrupt regulatory and physiological networks (Bernstein and Bernstein, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on recombination mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "4a31a4f0-e80c-4ee6-9ee4-6d9922841fc0",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C88",
+      "claim": "It has been suggested that the small size of recombination fragments is a mechanism for preventing the spread of mobile genetic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been suggested that the small size of recombination fragments is a mechanism for preventing the spread of mobile genetic elements (Croucher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study proposing this hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b7546143-52d1-4fc7-9d96-293db6a8e043",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C89",
+      "claim": "Gram-negative bacteria do not cleave eDNA on import.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, gram-negative bacteria do not cleave eDNA on import, but their ability to acquire eDNA sequences >50kb is limited by physical constraints (Mell and Redfield, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an empirical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "fb99727c-da82-4f7b-a9d1-8bd2ba84fb35",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C90",
+      "claim": "The ability of gram-negative bacteria to acquire eDNA sequences >50kb is limited by physical constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, gram-negative bacteria do not cleave eDNA on import, but their ability to acquire eDNA sequences >50kb is limited by physical constraints (Mell and Redfield, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an empirical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "3614c98b-c28b-4dd6-81e9-24cbdcca8923",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C91",
+      "claim": "There is no evidence that larger genome size is accompanied by a higher recombination length.",
+      "claim_type": "EXPLICIT",
+      "source": "But there is no evidence that larger genome size is accompanied by a higher recombination length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the lack of empirical evidence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "30e3d65d-5865-4b0b-a91a-fb3a0d5427b4",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C92",
+      "claim": "Bacteria do not load large pieces of chromosome via LGT (i.e. >10% of a genome).",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge bacteria do not load large pieces of chromosome via LGT (i.e. >10% of a genome), although in principle it should be possible for them to do so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about bacterial LGT practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "e0747d0b-3dd8-40a3-b693-64da2e3c35a7",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C93",
+      "claim": "The strength of selection plays a critical role in determining the rate of mutation accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As for purely asexual populations (Haigh, 1978), the strength of selection plays a critical role in determining the rate of mutation accumulation, with regions of the genome under strong selection accumulating mutations at a low rate (Figures 5\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and demonstrated by model results in Figures 5-6.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "3a280f04-83ac-4efd-9404-9680845ec514",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C94",
+      "claim": "The ratchet effect is mainly observed in the accessory genome, with mutations accumulating preferentially in loci under weak selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratchet effect is mainly observed in the accessory genome, with mutations accumulating preferentially in loci under weak selection (Figures 5\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model results shown in Figures 5-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "25886c87-b1bd-426a-9bde-5983988ab6a4",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C95",
+      "claim": "The model predicts that genome size expansion can occur in populations under strong purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that genome size expansion can occur in populations under strong purifying selection (e.g. due to a larger effective population size).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "eaa67beb-87a7-4623-a860-0bde6b9f7297",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C96",
+      "claim": "Strong selection decreases the rate of genetic information loss, allowing the acquisition of new genetic content without an attendant increase in mutation fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong selection decreases the rate of genetic information loss, allowing the acquisition of new genetic content without an attendant increase in mutation fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "81310031-1209-46d9-89ea-26b4631a9570",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C97",
+      "claim": "This prediction is in agreement with the positive correlation observed between genome size and dN/dS in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction is in agreement with the positive correlation observed between genome size and dN/dS in bacteria (Novichkov et al., 2009; Bobay and Ochman, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "2362b26f-4cb0-4d22-a49a-cf903e9b70c0",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C98",
+      "claim": "Organisms under similar selective pressures often display a broad range of genome sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, organisms under similar selective pressures often display a broad range of genome sizes (Novichkov et al., 2009), indicating that other factors, including mutation rate and LGT, have a strong impact on prokaryotic genome size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an empirical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "6f3a24c9-3f9a-4310-b612-1bb33c0fc414",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C99",
+      "claim": "Other factors, including mutation rate and LGT, have a strong impact on prokaryotic genome size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, organisms under similar selective pressures often display a broad range of genome sizes (Novichkov et al., 2009), indicating that other factors, including mutation rate and LGT, have a strong impact on prokaryotic genome size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of genome size variation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "17538dd6-2da1-4273-bcd1-a8068a28d72b",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C100",
+      "claim": "Under high mutation rate and weak selective pressure, genome size expansion is disfavoured.",
+      "claim_type": "EXPLICIT",
+      "source": "Under high mutation rate and weak selective pressure, genome size expansion is disfavoured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "0584a48f-cb42-4b39-a598-1241b3ac425f",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C101",
+      "claim": "Eukaryotes, including many protists, typically possess much larger genomes than prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotes, including many protists, typically possess much larger genomes than prokaryotes (Koonin, 2009; Elliott and Gregory, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on genome size.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "7876834a-c579-465c-b8a1-83c4c112f9fd",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C102",
+      "claim": "Eukaryotic genome size expansion was favoured by the acquisition of an endosymbiont, which evolved into the mitochondrion.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic genome size expansion was favoured by the acquisition of an endosymbiont, which evolved into the mitochondrion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eukaryotic evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "3aef1e87-5ebf-4096-ba9a-baf511871a96",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C103",
+      "claim": "The acquisition of mitochondria released bioenergetic constraints on cell size and allowed the evolution of genetic and morphological complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "This released bioenergetic constraints on cell size and allowed the evolution of genetic and morphological complexity (Lane and Martin, 2010; Lane, 2014; Lane, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work on bioenergetic constraints.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "298c1f30-e849-455d-b309-28573439438d",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C104",
+      "claim": "The endosymbionts underwent gene loss, a frequently observed process in extant endosymbiotic relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosymbionts underwent gene loss, a frequently observed process in extant endosymbiotic relationships (L\u00f3pez-Madrigal and Gil, 2017) and transferred multiple genes to the host, enriching the host's genome size with genes of proto-mitochondrial origin (Timmis et al., 2004; Martin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on endosymbiotic gene loss.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "054ec841-8b4f-43eb-9d38-34f626836149",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C105",
+      "claim": "Endosymbionts transferred multiple genes to the host, enriching the host's genome size with genes of proto-mitochondrial origin.",
+      "claim_type": "EXPLICIT",
+      "source": "The endosymbionts underwent gene loss, a frequently observed process in extant endosymbiotic relationships (L\u00f3pez-Madrigal and Gil, 2017) and transferred multiple genes to the host, enriching the host's genome size with genes of proto-mitochondrial origin (Timmis et al., 2004; Martin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on endosymbiotic gene transfer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "34264b38-75b3-42ec-bd50-da05d1cdbc7d",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C106",
+      "claim": "The reduction of energetic constraints on genome size probably also facilitated gene and even whole genome duplications, leading to several thousand new gene families in LECA.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction of energetic constraints on genome size probably also facilitated gene and even whole genome duplications, leading to several thousand new gene families in LECA (Koonin et al., 2004), as well as lower selective pressure for gene loss after acquisition of novel gene functions by LGT (Sz\u00f6llosi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on gene duplication and LECA.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "516730da-2bb2-4dd3-9e35-7f41baaa8afa",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C107",
+      "claim": "The reduction of energetic constraints led to lower selective pressure for gene loss after acquisition of novel gene functions by LGT.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction of energetic constraints on genome size probably also facilitated gene and even whole genome duplications, leading to several thousand new gene families in LECA (Koonin et al., 2004), as well as lower selective pressure for gene loss after acquisition of novel gene functions by LGT (Sz\u00f6llosi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on gene loss.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "ef3a619b-a7bf-4df6-b444-f66f39ee90f4",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C108",
+      "claim": "The acquisition of endosymbiotic DNA is thought to have allowed the spread of mobile genetic elements in the host cell's genome, contributing to the increase in genome size and likely increasing the mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The acquisition of endosymbiotic DNA is also thought to have allowed the spread of mobile genetic elements in the host cell's genome, contributing to the increase in genome size and likely increasing the mutation rate (Timmis et al., 2004; Martin and Koonin, 2006; Rogozin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on mobile elements and genome evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "c7197d25-a32b-4a1c-80b9-03188e0a74e7",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C109",
+      "claim": "The benefits of LGT would decline in a similar fashion if genome size expansion proceeded through the acquisition of non-selected 'junk' DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The benefits of LGT would decline in a similar fashion if genome size expansion proceeded through the acquisition of non-selected 'junk' DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the model results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "eea5cbd7-6a28-457e-a75d-82add720b1ec",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C111",
+      "claim": "A large genome brought the first eukaryotes under the threat of mutational accumulation, creating the need for stronger purifying selection in order to keep the expanded genetic content free from mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a large genome brought the first eukaryotes under the threat of mutational accumulation, creating the need for stronger purifying selection in order to keep the expanded genetic content free from mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results applied to early eukaryotic evolution.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "7bfc683d-df30-486d-b259-5b27e41d020e",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C112",
+      "claim": "The results offer a possible explanation of why genome expansion drove the transition from LGT to meiotic recombination at the origin of sex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results offer a possible explanation of why this process drove the transition from LGT to meiotic recombination at the origin of sex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "6ea84ad4-9d58-4d90-a94e-bf6402195bba",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C113",
+      "claim": "In small prokaryotic genomes, LGT provides sufficient benefits to maintain genome integrity, without incurring the multiple costs associated with sexual reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "In small prokaryotic genomes, LGT provides sufficient benefits to maintain genome integrity, without incurring the multiple costs associated with sexual reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b758df42-8a80-4d65-982d-a55526b0b09e",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C114",
+      "claim": "LGT fails to prevent the accumulation of deleterious mutations in larger genomes, promoting the loss of genetic information and therefore constraining genome size.",
+      "claim_type": "EXPLICIT",
+      "source": "But LGT fails to prevent the accumulation of deleterious mutations in larger genomes, promoting the loss of genetic information and therefore constraining genome size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "a1788b5b-29f1-4c8e-abb3-6e1111aa618d",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C115",
+      "claim": "The model shows that genome size expansion is only possible through a proportional increase in recombination length.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model shows that genome size expansion is only possible through a proportional increase in recombination length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "d94973bf-729d-464e-a142-484c286a9574",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C117",
+      "claim": "Recombination events of the magnitude required for large genomes are unknown among prokaryotes, possibly because of physical constraints on eDNA acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination events of this magnitude are unknown among prokaryotes, possibly because of physical constraints on eDNA acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation with speculation about the cause.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "20d553b8-607e-4aab-8c7b-4e7c16a90396",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C118",
+      "claim": "Limiting factors for large recombination events likely include the restricted length of eDNA, uptake kinetics and the absence of an alignment mechanism for large eDNA strands.",
+      "claim_type": "EXPLICIT",
+      "source": "Limiting factors likely include the restricted length of eDNA, uptake kinetics and the absence of an alignment mechanism for large eDNA strands (Thomas and Nielsen, 2005; Baltrus, 2013; Croucher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on transformation mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "1eaa4451-ce7b-4d47-8431-db6af63d7d3b",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C121",
+      "claim": "The transition from LGT to meiotic sex involves the evolution of cell fusion, the transition from circular to linear chromosomes, whole-chromosome alignment and homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from LGT to meiotic sex involves the evolution of cell fusion, the transition from circular to linear chromosomes, whole-chromosome alignment and homologous recombination (Lane, 2011; Goodenough and Heitman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on the evolution of meiosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "b3d52632-e59c-4a1a-ba50-164416438637",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C122",
+      "claim": "Eukaryotes had to increase the magnitude of recombination length beyond the limits of LGT in order to permit the expansion in genetic complexity without the attendant increase in mutational burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our results show that eukaryotes had to increase the magnitude of recombination length beyond the limits of LGT in order to permit the expansion in genetic complexity without the attendant increase in mutational burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "64c5e3dc-1080-4ee1-8911-a8a19f26f80a",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C123",
+      "claim": "Eukaryotes had to abandon LGT in order to increase recombination length and maintain a large genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotes had to abandon LGT in order to increase recombination length and maintain a large genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "288f1128-a34e-4abe-bd28-b6b112a0aa12",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C126",
+      "claim": "The environmental DNA available for recombination is a random portion of the genomes of the previous generation.",
+      "claim_type": "EXPLICIT",
+      "source": "The environmental DNA (eDNA) available for recombination is a random portion of the genomes of the previous generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "c0054bc9-08a5-4054-a0e5-d6a8c508105e",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "claim_id": "C128",
+      "claim": "Reproduction takes place using a multiplicative fitness function which depends on the number of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, reproduction takes place, using a multiplicative fitness function which depends on the number of mutations (see Materials and Methods for more details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "da47f76a-66d9-4136-9bc9-7325a766cefc",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The model demonstrates that the benefit of LGT in preventing Muller's ratchet declines rapidly with increasing genome size. Large genomes accumulate mutations faster and experience shorter extinction times of the least-loaded class compared to small genomes, even in the presence of LGT. This effect can only be counteracted by increasing recombination length to the same order of magnitude as genome size (L=0.2g), as occurs in meiosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C42, C43, C47, C49, C65, C67, C68, C72, C73, C114, and C115 collectively demonstrate the core finding through computational modeling shown in Figures 2-4. The model systematically varies genome size and recombination length, showing consistent patterns across multiple metrics (extinction time, mutation accumulation rate). The finding holds under both constant per-locus mutation rate and constant genome-wide mutation rate, strengthening the conclusion that this is an intrinsic limitation of LGT rather than an artifact of mutational input.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "58a35e11-5cf3-42e4-a75d-8a5d578c931c",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "When the genome is divided into core and accessory regions under different selective pressures, mutations preferentially accumulate in the weakly selected accessory genome while the strongly selected core genome accumulates mutations at a slower rate. Genome size expansion increases mutation fixation rates in both regions, and while LGT reduces mutational burden in both compartments, its beneficial effect is less evident in large genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C56, C57, C58, C93, and C94 are supported by model results shown in Figures 5-6, which demonstrate differential mutation accumulation between core and accessory genomes under non-uniform selection. The model appropriately implements different selection coefficients (s=0.005 for core, s=0.001 for accessory) and tracks mutations separately in each compartment. The results are consistent with theoretical expectations about the relationship between selection strength and mutation accumulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "3de639b1-9a7c-4974-a086-050642844398",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model predicts that genome size expansion can occur under strong purifying selection, which decreases genetic information loss and allows acquisition of new genetic content without increased mutation fixation. This prediction is compatible with the observed positive correlation between genome size and dN/dS in bacteria, though other factors including mutation rate and LGT also impact prokaryotic genome size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95, C96, C97, C98, and C99 present model predictions that are logically consistent with the simulation results and supported by empirical correlations cited from the literature (Novichkov et al., 2009; Bobay and Ochman, 2018). The model appropriately acknowledges that genome size variation exists even under similar selective pressures, indicating multiple contributing factors. However, the model does not directly simulate genome size evolution, only fixing genome size and evaluating mutation accumulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "1feadba5-1da6-49ad-bf1e-e4ad8f8ad033",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors conclude that their results explain why genome expansion in early eukaryotes drove the transition from LGT to meiotic recombination at the origin of sex. They argue that eukaryotes had to increase recombination length beyond the limits of LGT and abandon LGT in order to maintain large genomes without increased mutational burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C112, C122, and C123 represent the main evolutionary conclusion of the paper, but this interpretation extends beyond what the model directly demonstrates. The model shows that LGT becomes less effective with increasing genome size and that recombination length proportional to genome size is beneficial, but it does not model the actual evolutionary transition from LGT to meiosis, the costs and benefits of meiotic sex, or the selective pressures during early eukaryotic evolution. The conclusion is plausible and consistent with the model results, but requires additional assumptions about early eukaryotic biology, the constraints on LGT, and the feasibility of evolving meiotic machinery that are not tested in the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "f98816d8-3de9-453e-8165-070495f741e0",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Empirical evidence from bacteria shows that recombination of large eDNA sequences is rare, with most transformation events involving short fragments (median 2-6kb, range up to ~50kb). Physical constraints limit the acquisition of very large eDNA sequences, and there is no evidence that larger genome size is accompanied by higher recombination length in bacteria. Bacteria do not load large pieces of chromosome via LGT (>10% of genome).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C92, C117, and C118 summarize empirical findings from the literature about bacterial transformation, supported by multiple citations to experimental studies (Croucher et al., 2012; Mell et al., 2014; Claverys et al., 2009; Mell and Redfield, 2014). These observations provide important biological context for interpreting the model results and support the argument that bacteria cannot achieve the recombination lengths required for large genomes. The claims appropriately distinguish between what is observed empirically and what is speculated about mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "344e0ed4-77f5-431f-aad8-4626be7dd4b3",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LGT rates vary widely among bacterial species and can be as high as or higher than nucleotide substitution rates. LGT rates are constrained by eDNA availability and can be induced by environmental stressors. The model predicts that higher LGT rates strengthen purifying selection, which is compatible with the observed correlation between horizontally transferred genes and genome size in prokaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 combine empirical observations from the literature (supported by citations to Hao and Golding, 2006; Marri et al., 2006, 2007; Nowell et al., 2014; Croucher et al., 2012; Vos et al., 2015; Bernstein and Bernstein, 2013) with model predictions (C79) and their compatibility with empirical patterns (C80, citing Jain et al., 2003; Fuchsman et al., 2017). The model results shown in Figures 2-3 support the prediction that higher LGT rates reduce mutation accumulation, which is consistent with the cited empirical correlations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Eukaryotes arose from endosymbiosis between an archaeal host and bacterial endosymbiont (ancestor of mitochondria), which released bioenergetic constraints and allowed genome expansion through endosymbiotic gene transfer, gene duplications, and spread of mobile elements. Both ancestral partners were likely capable of transformation, and meiosis likely evolved from bacterial transformation based on molecular similarities. The resulting large genome brought early eukaryotes under threat of mutational accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C27 and C101-C111 present established knowledge and well-supported hypotheses about eukaryotic origins, extensively cited from the literature (M\u00fcller et al., 2012; Williams et al., 2013; Martin et al., 2015; Lane and Martin, 2010; Timmis et al., 2004; Lin et al., 2006; Schurko and Logsdon, 2008; and many others). These claims provide essential biological context for the model but are not findings of this study. The inference that large genomes created mutational threats (C111) follows logically from the model results combined with this background knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "6af94554-4d23-45fe-8a5b-d294eb9adc69",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context for the study: prokaryotes use LGT for genetic exchange while eukaryotes use sexual reproduction; sex is universal in eukaryotes and was present in LECA; recombination provides benefits by countering Muller's ratchet and Hill-Robertson effects; transformation in prokaryotes shares similarities with meiosis and likely gave rise to it; previous models have not adequately considered genome size as a variable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C7-C17, C28-C40, and C60-C64 present established knowledge from the literature, supported by extensive citations. These claims provide the conceptual foundation and motivation for the study but are not novel findings. The characterization of previous models (C40) is accurate based on the cited literature (Levin and Cornejo, 2009; Wylie et al., 2010; Takeuchi et al., 2014). This background appropriately frames the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "145bdde4-2ec8-4ce6-ba67-1daa331dd216",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model uses a Fisher-Wright process where environmental DNA for recombination is a random portion of genomes from the previous generation, and reproduction occurs using a multiplicative fitness function dependent on mutation number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C126 and C128 describe key methodological features of the computational model, which are clearly specified in the Materials and Methods section and Figure 1. The model assumptions are standard for population genetic simulations of Muller's ratchet. However, the manuscript lacks details about implementation (e.g., random seed specification, software versions) that would be needed for full reproducibility, and the code repository is mentioned but computational reproducibility cannot be fully assessed from the manuscript alone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "a68c06d7-31cf-454c-88a8-cd4a79565eed",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors note that other theoretical studies show LGT can increase adaptive evolution rates, and speculate that these adaptive benefits would also decline with genome size based on their results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 accurately cites prior theoretical work (Iles et al., 2003; Levin and Cornejo, 2009; Wylie et al., 2010), but claim C70 is speculation that extends beyond the model, which only examines deleterious mutations and Muller's ratchet, not adaptive evolution. The speculation is reasonable but untested. The authors appropriately acknowledge this limitation, noting their model \"does not take into account other possible benefits of LGT.\"",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "806428cc-e8d1-4b04-98e1-b1f5cd343d15",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Under constant mutation rate per locus, theoretical results predict that the severity of Muller's ratchet increases exponentially with genome size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by citation to Haigh (1978) and reference to Appendix 1 and Appendix 1\u2014figure 1 in the manuscript. This represents established theoretical understanding rather than a novel finding of this study. The claim provides important context for interpreting why genome size has such strong effects in the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "e42ccb3e-1d6b-405d-9fa1-ae0ab2a5c42c",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In small prokaryotic genomes, LGT provides sufficient benefits to maintain genome integrity without incurring the costs of sexual reproduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C113 is an inference from the model results (Figures 2-4) showing that LGT effectively prevents mutation accumulation in small genomes. However, the model does not actually simulate or quantify the costs of sexual reproduction, so the comparison is conceptual rather than quantitative. The inference is reasonable given the established literature on costs of sex (cited earlier in the manuscript) combined with the model's demonstration of LGT efficacy in small genomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    },
+    {
+      "id": "8a139ec2-eb61-4157-9981-7398bffaa4a9",
+      "content_id": "c29b25f9-85eb-4e1a-9886-3a75f1d2b01c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The transition from LGT to meiotic sex involves evolution of cell fusion, transition from circular to linear chromosomes, whole-chromosome alignment, and homologous recombination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C121 summarizes established understanding of the mechanistic changes required for the evolution of meiosis, supported by citations to Lane (2011) and Goodenough and Heitman (2014). This is background knowledge rather than a finding of the current study. The authors explicitly acknowledge they \"have not explicitly modelled the details of this process or considered the order in which these factors arose.\"",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:16:18.451071Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9b312a3-0dba-4601-b038-1161493bf68f",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "7d726f7e-f3db-4642-b900-b2ea6c07f661",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "875fb0bb-a231-4da1-9909-667308ac0ac7",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "222072ea-48ef-49db-a6e9-4936c5f136b3",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "353894ee-db6c-407e-917a-2c738fbb2a87",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "b116cdd3-23cd-4e82-8cda-09eec846a87d",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "2b1a8586-6f04-4ea0-b767-5280d9c94874",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "7903b018-7990-4068-80ba-90325e6f0ba1",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "eabc534f-f813-40e2-a62f-72b947b8b459",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "8c1d9801-45c9-4520-8c63-4e37b3fe3441",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "fbba840b-99ca-4c84-8f6a-065bf461c668",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "b758df42-8a80-4d65-982d-a55526b0b09e",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "a1788b5b-29f1-4c8e-abb3-6e1111aa618d",
+      "result_id": "da47f76a-66d9-4136-9bc9-7325a766cefc"
+    },
+    {
+      "claim_id": "a9b655b1-9715-4be6-b244-1579e1ba6058",
+      "result_id": "58a35e11-5cf3-42e4-a75d-8a5d578c931c"
+    },
+    {
+      "claim_id": "ab710261-b6f7-4191-b8e5-3c409245d2e6",
+      "result_id": "58a35e11-5cf3-42e4-a75d-8a5d578c931c"
+    },
+    {
+      "claim_id": "603fc47b-d878-48de-9153-6611a47223c5",
+      "result_id": "58a35e11-5cf3-42e4-a75d-8a5d578c931c"
+    },
+    {
+      "claim_id": "7360e3f9-b52e-44f5-aae0-ef788febaa14",
+      "result_id": "58a35e11-5cf3-42e4-a75d-8a5d578c931c"
+    },
+    {
+      "claim_id": "e0747d0b-3dd8-40a3-b693-64da2e3c35a7",
+      "result_id": "58a35e11-5cf3-42e4-a75d-8a5d578c931c"
+    },
+    {
+      "claim_id": "3a280f04-83ac-4efd-9404-9680845ec514",
+      "result_id": "58a35e11-5cf3-42e4-a75d-8a5d578c931c"
+    },
+    {
+      "claim_id": "25886c87-b1bd-426a-9bde-5983988ab6a4",
+      "result_id": "3de639b1-9a7c-4974-a086-050642844398"
+    },
+    {
+      "claim_id": "eaa67beb-87a7-4623-a860-0bde6b9f7297",
+      "result_id": "3de639b1-9a7c-4974-a086-050642844398"
+    },
+    {
+      "claim_id": "81310031-1209-46d9-89ea-26b4631a9570",
+      "result_id": "3de639b1-9a7c-4974-a086-050642844398"
+    },
+    {
+      "claim_id": "2362b26f-4cb0-4d22-a49a-cf903e9b70c0",
+      "result_id": "3de639b1-9a7c-4974-a086-050642844398"
+    },
+    {
+      "claim_id": "6f3a24c9-3f9a-4310-b612-1bb33c0fc414",
+      "result_id": "3de639b1-9a7c-4974-a086-050642844398"
+    },
+    {
+      "claim_id": "17538dd6-2da1-4273-bcd1-a8068a28d72b",
+      "result_id": "3de639b1-9a7c-4974-a086-050642844398"
+    },
+    {
+      "claim_id": "7bfc683d-df30-486d-b259-5b27e41d020e",
+      "result_id": "1feadba5-1da6-49ad-bf1e-e4ad8f8ad033"
+    },
+    {
+      "claim_id": "b3d52632-e59c-4a1a-ba50-164416438637",
+      "result_id": "1feadba5-1da6-49ad-bf1e-e4ad8f8ad033"
+    },
+    {
+      "claim_id": "64c5e3dc-1080-4ee1-8911-a8a19f26f80a",
+      "result_id": "1feadba5-1da6-49ad-bf1e-e4ad8f8ad033"
+    },
+    {
+      "claim_id": "9c692113-4251-4c63-8bc2-5f59ca6e3684",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "cc673097-4da3-4e04-9c01-4878deaa6182",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "3a907f3d-6265-4cf6-b7a4-250b736ad6cb",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "51c2ee06-6117-4c2f-a7a2-67ba4a6f6d72",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "a9e2ef64-7245-4416-8a56-6768900fbd74",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "0426df64-8898-4a09-83d9-02a9689a16fc",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "4a31a4f0-e80c-4ee6-9ee4-6d9922841fc0",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "b7546143-52d1-4fc7-9d96-293db6a8e043",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "fb99727c-da82-4f7b-a9d1-8bd2ba84fb35",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "3614c98b-c28b-4dd6-81e9-24cbdcca8923",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "30e3d65d-5865-4b0b-a91a-fb3a0d5427b4",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "d94973bf-729d-464e-a142-484c286a9574",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "20d553b8-607e-4aab-8c7b-4e7c16a90396",
+      "result_id": "f98816d8-3de9-453e-8165-070495f741e0"
+    },
+    {
+      "claim_id": "2228e172-2232-4f7c-be21-c95a1ea8c796",
+      "result_id": "344e0ed4-77f5-431f-aad8-4626be7dd4b3"
+    },
+    {
+      "claim_id": "56af0c39-95fd-412c-8cc0-cf81725b0d88",
+      "result_id": "344e0ed4-77f5-431f-aad8-4626be7dd4b3"
+    },
+    {
+      "claim_id": "2485d2d4-9ff2-44dd-ac1d-2427ec853398",
+      "result_id": "344e0ed4-77f5-431f-aad8-4626be7dd4b3"
+    },
+    {
+      "claim_id": "b599c320-b16d-4834-b575-04c3b8afa4b8",
+      "result_id": "344e0ed4-77f5-431f-aad8-4626be7dd4b3"
+    },
+    {
+      "claim_id": "22fec10e-fa7d-498d-a40d-e8ff30424a6b",
+      "result_id": "344e0ed4-77f5-431f-aad8-4626be7dd4b3"
+    },
+    {
+      "claim_id": "6dade285-e86b-4e07-aabd-41e1a7238e96",
+      "result_id": "344e0ed4-77f5-431f-aad8-4626be7dd4b3"
+    },
+    {
+      "claim_id": "600a6f97-14b3-4854-b89b-628cf110be26",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "adc30cbd-f3ac-4876-852f-e4f6afb94b56",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "b08d78bc-501e-4bec-9271-d0f5500cd91a",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "55c37790-a6ca-41bc-93bf-705b2254d52a",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "6920005f-3c35-40c1-8db6-ecbfe9283786",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "6e84eb33-bd1c-4701-93d5-0d4d5f9e55d4",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "579271e5-3401-4374-9678-d3c3d8bb953e",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "6f55a4b7-977c-4279-bf47-8d82aedf94a6",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "63a59741-42d3-4555-9f3b-240217ef30b9",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "f64028fc-0e57-40ab-9652-106ee03c5c6d",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "0584a48f-cb42-4b39-a598-1241b3ac425f",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "7876834a-c579-465c-b8a1-83c4c112f9fd",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "3aef1e87-5ebf-4096-ba9a-baf511871a96",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "298c1f30-e849-455d-b309-28573439438d",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "054ec841-8b4f-43eb-9d38-34f626836149",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "34264b38-75b3-42ec-bd50-da05d1cdbc7d",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "516730da-2bb2-4dd3-9e35-7f41baaa8afa",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "ef3a619b-a7bf-4df6-b444-f66f39ee90f4",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "c7197d25-a32b-4a1c-80b9-03188e0a74e7",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "eea5cbd7-6a28-457e-a75d-82add720b1ec",
+      "result_id": "994b7a12-7f35-4696-a2bd-3fc7e4612f9a"
+    },
+    {
+      "claim_id": "616be80a-9944-4d1a-9f5b-b1ac4b1cefc6",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "b31e700d-d1bd-4e1e-bb94-e24161eb99e2",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "4487548e-c6a7-494e-a478-451c4cebc4e1",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "9d356865-4ec3-4ea2-9858-7dbd1c299e89",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "b7e9dfe6-699d-4119-a440-1a34b3defa8d",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "9dc22d27-b190-4a74-96cb-7243587d6684",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "e7950265-7d59-4484-8aa4-9a3ccf9db5b8",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "a4a38d1a-5791-4b4a-b6ae-3a3c37080c53",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "454c6e79-a07b-449a-b563-fb086ea99a13",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "31b80c8a-049d-4ec8-930d-ddc01ab987f4",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "08f3c7b5-f9f2-4d6f-8cff-dcaca0ce6d22",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "8cf082c8-fa3f-4308-9f26-5dc6500808f6",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "72fee315-99c5-45d0-80f2-f25c7886ef2f",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "10d77e00-2872-4487-813c-f9ec18b465cd",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "8150c08a-5497-4ce2-a532-8bfb943853a7",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "687c97c8-428b-4258-8b57-c931f8b417bc",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "13faee44-1c9d-4e6f-88d6-07f5872239fa",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "b819f0da-f119-41ec-8b57-bf776929adfa",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "6dc8198b-f0a1-4470-828c-33535c947be0",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "9f12c22e-5c96-46c3-ae8c-f5ee0a787b79",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "3acd0a90-8f31-4d4f-843f-d56c0c859466",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "ff53d74e-e15a-4d93-9694-ea8c51ae6e44",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "75644dcb-77ab-4300-b6e4-6076a7339583",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "3b356de6-cbff-47c9-a26d-5a406a3369ea",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "ff054bb8-f35f-474b-aef9-db959cae1ab8",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "ee5b4f93-d491-4548-b8c4-ef135fbe0753",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "cc6074ca-5585-4835-bd5c-e18419425c42",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "ea9bfabc-c257-4969-a1fd-bbca79ae8713",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "3a98d56a-10b5-4326-b3b0-90d1faa60cf9",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "879dc02f-14a6-48f8-86b9-6ddb66f3a515",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "393ce677-8d9a-4a4b-8e8b-204c4c03e18d",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "f0302a47-abd9-4d16-87d1-1325c8b3999b",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "641c5e84-c574-46b8-a0e9-fcea2555776a",
+      "result_id": "6af94554-4d23-45fe-8a5b-d294eb9adc69"
+    },
+    {
+      "claim_id": "288f1128-a34e-4abe-bd28-b6b112a0aa12",
+      "result_id": "145bdde4-2ec8-4ce6-ba67-1daa331dd216"
+    },
+    {
+      "claim_id": "c0054bc9-08a5-4054-a0e5-d6a8c508105e",
+      "result_id": "145bdde4-2ec8-4ce6-ba67-1daa331dd216"
+    },
+    {
+      "claim_id": "a568c410-4c16-481d-aff3-392a2c99482a",
+      "result_id": "a68c06d7-31cf-454c-88a8-cd4a79565eed"
+    },
+    {
+      "claim_id": "e15132dd-fc9e-4c7f-ab78-af794837e1ef",
+      "result_id": "a68c06d7-31cf-454c-88a8-cd4a79565eed"
+    },
+    {
+      "claim_id": "c3de0454-7214-470d-9508-61e4d3addaff",
+      "result_id": "806428cc-e8d1-4b04-98e1-b1f5cd343d15"
+    },
+    {
+      "claim_id": "6ea84ad4-9d58-4d90-a94e-bf6402195bba",
+      "result_id": "e42ccb3e-1d6b-405d-9fa1-ae0ab2a5c42c"
+    },
+    {
+      "claim_id": "1eaa4451-ce7b-4d47-8431-db6af63d7d3b",
+      "result_id": "8a139ec2-eb61-4157-9981-7398bffaa4a9"
+    }
+  ],
+  "comparisons": []
+}

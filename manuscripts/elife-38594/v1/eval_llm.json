@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C90",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "Cooperative pyoverdine production is frequently upregulated early in P. aeruginosa CF infection (super-cooperators detected in 55% of lineages), and this upregulation significantly increases the risk of invasion by non-producing cheats. Super-cooperators were associated with higher rates of cheat invasion (33% vs 19% in lineages without super-cooperators), consistent with evolutionary theory predicting that higher cooperation levels increase cheat fitness advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C38-C41 provide strong statistical evidence from survival analysis (\u03c7\u00b2=5.7, p<0.05) showing significantly higher cheat invasion with super-cooperators. The phenotypic measurements (C4, C31, C100) and genomic analysis (C37) support upregulation early in infection. The interpretation as cheating (C42-C46) is well-supported by prior work and evolutionary theory. The temporal patterns and statistical tests are appropriate for the longitudinal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C91"
+    ],
+    "result": "Following loss of cooperative pyoverdine production from the population, and only after this loss, the private phu heme uptake system is upregulated through phuS//phuR mutations. This privatization occurs in 15 of 16 cases after pyoverdine loss (survival analysis \u03c7\u00b2=11.7, p<0.01), demonstrating that upregulation is driven by the social environment rather than infection duration or host adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58, C66, C71, C73 present the core finding with strong statistical support from survival analysis. The genomic evidence (C60-C65) identifies specific mutations and their timing. Claim C70 provides compelling negative evidence that phu remains unchanged for >30 years when pyoverdine is maintained. The temporal ordering is well-established through longitudinal sampling, though the authors acknowledge potential overestimation of timing due to sampling intervals. The conclusion that this is a social rather than host-driven response (C73, C91) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C92"
+    ],
+    "result": "Phu system upregulation provides fitness benefits only at intermediate heme concentrations (2.5 \u03bcM) but is detrimental at high concentrations (5-10 \u03bcM), explaining why privatization occurs only after loss of cooperation. This concentration-dependent benefit demonstrates that privatization carries costs and represents a constrained evolutionary response rather than an optimal adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 present experimental growth data with appropriate statistical analysis (Two-Way ANOVA with interaction term F=48.11, p<0.01; post-hoc Tukey HSD tests). The isogenic pair design (C79-C83) provides strong evidence for the mutation's effect. The interpretation that this explains conditional upregulation (C74, C84) is logical. However, the clinical isolate pairs showed less clear results (mentioned but not detailed), and the experiment tests only one mutation in one genetic background, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Loss of the cooperative pyoverdine system occurs earliest among iron uptake system mutations in 16 of 25 clonal lineages, consistent with expectations based on system size and mutation rate. Other iron systems (pyochelin, has, feo) show different mutation patterns, with pyochelin loss not differing from random expectations and feo rarely mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide statistical analysis using Poisson tests comparing observed to expected mutation rates based on gene size. The finding that pyoverdine loss occurs first in 64% of cases (16/25) is not significantly different from the expected 59% (14.69/25), appropriately interpreted as consistent with neutral expectations given system size. The analysis of other systems (C50-C53) provides context. However, the analysis excludes cases where order was unclear, potentially biasing results, and the has system analysis may be incomplete due to sequencing depth issues (C51).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Mutations in the phu receptor gene phuR are significantly biased toward extracellular loops (Poisson test p<0.05), which may represent compensatory mutations to reduce iron uptake if concentrations become toxic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 provide statistical evidence for non-random mutation distribution using Poisson tests. However, the interpretation as compensatory mutations (C88) is speculative without functional validation. The predicted protein structure used for localization may be inaccurate, and the functional significance of mutations in extracellular loops versus other domains is not experimentally tested. Alternative explanations (e.g., differential mutation rates, selection for other functions) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C96",
+      "C97",
+      "C10",
+      "C11"
+    ],
+    "result": "This study reports the first observation of a natural population responding to cheat invasion by adopting a privatization strategy, demonstrating that switching to private mechanisms can provide an evolutionary alternative to extinction following loss of cooperation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C6, C13, C96 present the core novelty claim supported by the longitudinal genomic and phenotypic data showing the sequence: cooperation \u2192 cheat invasion \u2192 privatization. The ~1.3 million generation timescale (C12) and multiple independent observations strengthen the finding. However, the claim of being 'first' (C13) is qualified as 'to our knowledge' and the generalizability beyond this system is uncertain. The interpretation that this 'avoids extinction' is somewhat speculative as the bacteria continue to survive and the functional importance of iron acquisition is assumed rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C12"
+    ],
+    "result": "The study analyzed 551 whole-genome sequenced P. aeruginosa isolates from 64 patients over an estimated 1.3 million generations, with the isolate collection validated to represent genetic diversity well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C30 describe the dataset with appropriate citations. The generation estimate (C12) is based on reasonable assumptions about doubling times, though these are estimates. The validation of sampling representativeness (C30) is important for the study's conclusions. The authors appropriately acknowledge that incomplete sampling could lead to misclassification but would bias toward null findings (Type I error), making detected effects conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "Pyoverdine production can be maintained for >30 years in some lineages, potentially stabilized by limited diffusion in viscous CF sputum that impairs cheat exploitation, though three of twelve DK1 lineages maintained production while five lost it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C101 present observations of long-term cooperation maintenance with mechanistic speculation supported by citations. The data (C101) showing both maintenance and loss in different lineages of the same clone type is valuable for demonstrating variation in outcomes. However, the mechanism (limited diffusion, C98) is inferred rather than directly tested, and the caveat about potential exchange between microcolonies (C99) complicates the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C89",
+      "C95"
+    ],
+    "result": "Background claims establish that cheat invasion typically leads to cooperation loss and potential extinction, that P. aeruginosa uses multiple iron acquisition systems in CF infection with pyoverdine as the primary cooperative mechanism, and that both host adaptation and intraspecific competition drive bacterial evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C8-C9, C14-C25, C89, C95) provide established knowledge and theoretical framework supported by appropriate citations. They set up the study's hypotheses and context. The characterization of different iron systems (C16-C21) is well-established, though the has system characterization (C21) is based on a related species. These background claims are appropriately used to frame the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C104"
+    ],
+    "result": "The effect of social environment on iron acquisition remains statistically detectable despite patient variation, and failure to appreciate social factors can lead to misinterpretation of bacterial adaptation. The pattern may apply to other exoproducts during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 appropriately notes the robustness of findings across patient heterogeneity. Claim C94 makes a reasonable point about interpretation with citation support. However, claim C104 is speculative about generalization to other systems without direct evidence. These are appropriate discussion points but represent implications rather than direct findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript provides background on transcription machinery, describing the basal transcription factors required for in vitro transcription, the coactivator complexes needed for cellular transcription, and the structural and functional properties of SAGA and TFIID complexes including their roles in TBP-DNA loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 accurately summarize established knowledge from the literature about transcription initiation machinery, SAGA and TFIID structure and function, and TBP loading mechanisms. All claims are supported by appropriate citations to prior work and represent accurate descriptions of the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior genome-wide studies established that genes could be classified as 'TFIID-dominated' (~90% of genes) or 'SAGA-dominated' based on steady-state mRNA measurements, but subsequent work revealed limitations of these classifications including effects on mRNA stability, widespread SAGA chromatin modifications, and conflicting results from different depletion methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 accurately describe prior literature on TFIID and SAGA gene specificity, including the original Huisinga and Pugh classification and subsequent challenges to this model. All claims are appropriately supported by citations and provide necessary context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "SAGA deletions cause strong genome-wide transcription defects at nearly all genes, while rapid SAGA depletion produces only modest defects at 13% of genes (coactivator-redundant genes) that are more sensitive to rapid TFIID depletion. In contrast, 87% of genes (TFIID-dependent) show strong sensitivity to TFIID depletion but little response to rapid SAGA depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C31 describe the central experimental findings using 4-thioU RNA-seq to measure transcription after deletion or rapid depletion of SAGA/TFIID subunits. The data in Figures 1-2 clearly support the distinction between deletion and degron phenotypes and the identification of two gene classes with different coactivator dependencies. Technical controls (viability, stress response correlation) support data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "K-means clustering identified two gene classes: TFIID-dependent genes (87%, 4245 genes) showing ~4.5-fold decrease upon TFIID depletion and ~2.7-fold decrease in spt3\u0394 but little change upon rapid SAGA depletion; and coactivator-redundant genes (13%, 655 genes) showing modest sensitivity to both SAGA deletions (~3-4 fold) and TFIID depletion (~1.5-2 fold), with coactivator-redundant genes being more sensitive to rapid TFIID depletion (~2 fold) than rapid SAGA depletion (~1.6 fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 describe the k-means clustering analysis and quantitative transcription changes in each gene class. The clustering approach is appropriate and the quantitative fold-changes are clearly supported by the box plots in Figure 2A. The surprising finding that coactivator-redundant genes are more sensitive to TFIID than SAGA depletion is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Simultaneous depletion of both TFIID and SAGA causes severe transcription defects at coactivator-redundant genes (~5.7-fold decrease), with the defect being greater than the sum of individual depletions, demonstrating substantial functional redundancy. TFIID-dependent genes show no additional defects in double degron strains compared to TFIID depletion alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 describe the double degron experiments that directly test for redundancy between TFIID and SAGA. The data in Figure 2B-C and Figure 2\u2014figure supplement 1 clearly show synergistic effects at coactivator-redundant genes but not at TFIID-dependent genes. Western blots confirm ~90% depletion of degron-tagged proteins, and the inference that single subunit depletion is sufficient is well-supported by the double degron data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The newly defined coactivator-redundant gene set differs substantially from the previously defined 'SAGA-dominated' genes (>50% different), contains 2/3 of SAGA-dominated genes plus 311 TFIID-dominated genes, and is enriched among highly expressed genes, particularly the top 10% (44%) and top 50 genes (94%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 compare the new gene classifications with prior work and analyze expression level distributions. The data in Figure 3A-B and Figure 3\u2014figure supplement 1 clearly support these comparisons and the enrichment of coactivator-redundant genes among highly expressed genes. The quantitative statements about overlap and enrichment are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Among coactivator-redundant genes, 68% are more sensitive to Taf13 depletion than SAGA depletion (mean difference -0.49), but among the top 100 expressed genes, sensitivity is equally divided between TFIID and SAGA (mean difference -0.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 describe the relationship between expression level and relative TFIID/SAGA sensitivity within the coactivator-redundant class. The data in Figure 3C clearly support these quantitative observations about the distribution of sensitivities across expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Promoter analysis reveals that 60-65% of coactivator-redundant genes contain TATA motifs (vs ~25% of TFIID-dependent genes), but both gene classes contain nearly equal numbers of TATA-containing genes. De novo motif discovery identified 14 transcription factor motifs preferentially enriched in one gene class, including Reb1 (18% of TFIID-dependent genes) and TATA/Msn2 (enriched in coactivator-redundant genes), but no single motif is exclusive to either class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 describe promoter sequence analysis using both existing TATA annotations and de novo motif discovery. The data in Figure 3D-E and Supplementary file 5 support the enrichment patterns described. The conclusion that no single motif defines gene classes is well-supported by the observation that motifs are enriched but not exclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The distinction between TFIID-dependent and coactivator-redundant gene classes is due to multiple components rather than any single regulatory factor or promoter sequence motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is a synthesis conclusion supported by the promoter analysis showing that while certain motifs are enriched in each gene class, no single motif is exclusive or sufficient to define the classes. This is well-supported by claims C57-C63 and the associated data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Ribosomal protein (RP) genes (95% in TFIID-dependent category) show comparable TFIID-dependence to other TFIID-dependent genes but are highly expressed (83% in expression quintile 5), and do not segregate into a distinct category by clustering analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe the analysis of RP genes as a special case. The data in Figure 3\u2014figure supplement 2 support the expression distribution, and the text describes clustering analyses that did not separate RP genes. This addresses a common assumption in the field that RP genes are exceptional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Deletion of GCN5 (HAT function) causes genome-wide transcription defects nearly as strong as spt3\u0394 in both gene classes, while deletion of UBP8 (deubiquitination function) causes more modest defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe transcription phenotypes of SAGA enzymatic function deletions. The data in Figure 4 clearly show that gcn5\u0394 has strong effects comparable to spt3\u0394 while ubp8\u0394 has weaker effects, supporting the conclusion that HAT activity is critical for SAGA's genome-wide role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "SAGA deletion strains show reduced H3K18-Ac (34-70% of WT) and H2B-Ub (16-29% of WT) levels, while rapid SAGA depletion maintains H3K18-Ac at >70% of WT after 30 min, declining slowly to 45-50% by 6 hours. H2B-Ub levels show no consistent changes during rapid depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 describe Western blot analysis of bulk histone modifications. The data in Figure 5A-B and Figure 5\u2014figure supplement 1 clearly support the quantitative differences between deletion and degron strains and the slow kinetics of H3K18-Ac decline after rapid depletion. This provides a mechanistic explanation for the different transcription phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ChIP-seq analysis shows >10-fold average defect in promoter-linked H3 acetylation in gcn5\u0394 and spt7\u0394 strains and 3.3-fold in spt3\u0394, but only 1.7-fold reduction after 30 min SAGA depletion. Changes are similar at both TFIID-dependent and coactivator-redundant genes, with little change in ubp8\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 describe ChIP-seq analysis of promoter-localized H3 acetylation. The data in Figure 5C and Figure 5\u2014figure supplement 2 clearly support the quantitative fold-changes and the distinction between deletion and rapid depletion. The finding that changes are similar at both gene classes is consistent with SAGA's genome-wide chromatin modification role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Updated ChEC-seq mapping identified 2938-3723 TFIID-bound promoters (Taf1/7/13) and 1601-3536 SAGA-bound promoters (Spt3/7), with ~75% overlap with ChIP-exo for TFIID, ~97% overlap between Spt3 and Spt7 sites, \u226586% overlap between TFIID and SAGA binding, and little preference for binding to either promoter class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe genome-wide mapping of TFIID and SAGA binding using an improved ChEC-seq method. The data in Figure 6 and Figure 6\u2014figure supplement 1 clearly support the numbers of binding sites, overlaps between different subunits and methods, and the widespread co-binding of both factors. The lack of binding preference for gene classes is well-documented in Figure 6C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "At Gcn4 target genes, SPT deletion strains show >4-fold decreased basal transcription and impaired activation (eliminated in spt3\u0394, reduced in spt7\u0394). However, rapid SAGA depletion before induction still allows greater-than-normal fold-activation (3.6-6.9 fold), while depletion after induction reduces transcription 1.7-2.6 fold, indicating SAGA's gene-specific role is more important for maintenance of ongoing transcription than for induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 describe RT-qPCR analysis of Gcn4-dependent gene activation. The data in Figure 7 clearly support the different effects of deletion vs. rapid depletion and the timing experiments showing that SAGA depletion before vs. after induction has different effects. The conclusion about maintenance vs. induction is well-supported by the experimental design and results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "SAGA has two separable functions: (1) a general function important for transcription of nearly all genes, revealed by deletions and strongly linked to Gcn5-dependent H3 acetylation required for efficient global transcription, and (2) a gene-specific role revealed by rapid depletion affecting only 13% of genes. TFIID and SAGA function is substantially redundant at coactivator-redundant genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 represent the major conclusions synthesizing the experimental findings. The two-function model is well-supported by the contrasting phenotypes of deletion vs. rapid depletion, the chromatin modification kinetics data, and the double degron experiments demonstrating redundancy. The link to H3 acetylation is supported by the gcn5\u0394 phenotype and ChIP-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose that TFIID-dependent genes exclusively require Tafs for promoter recognition and TBP-DNA loading, while coactivator-redundant genes can use either SAGA or TFIID. SAGA may recruit TBP more directly at coactivator-redundant genes via TBP-TATA interactions and other TBP-compatible DNA motifs, potentially explaining the viability of TBP mutants defective in TATA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 represent mechanistic proposals and speculation based on the experimental findings and prior knowledge. While the model is consistent with the data (redundancy, TATA enrichment, prior TBP mutant studies), it is not directly tested in this study. The proposals are reasonable interpretations but require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Rapid SAGA depletion primarily decreases ongoing/activated transcription rather than activation per se at Gcn4-dependent genes. The TFIID-directed pathway does not seem inherently limiting for high transcription levels (except top 50 genes), and efficient TBP-DNA loading may be important for transcription reinitiation at coactivator-redundant genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by the Gcn4 activation experiments (Figure 7) and expression level analysis (Figure 3). Claim C101 is speculation about future work. The conclusions about maintenance vs. activation and the lack of inherent TFIID pathway limitations are well-supported by the data, though the reinitiation hypothesis requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The overlapping function of TFIID and SAGA at coactivator-redundant genes is linked to TBP-DNA recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C25 proposes a mechanistic link between the observed redundancy and TBP-DNA recruitment. While this is a reasonable hypothesis consistent with prior knowledge about SAGA and TFIID TBP-loading functions (C5, C10), it is not directly tested in this study. The proposal is supported by circumstantial evidence (TATA enrichment, prior structural studies) but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The transcription changes observed are not due to general stress response (poor correlation with stress signature) and degron strains maintain \u226585% viability after 30 min IAA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 describe important technical controls. The correlation analysis with stress signatures (Figure 1\u2014figure supplement 4A) and viability measurements (Figure 1\u2014figure supplement 4B) support the conclusion that the observed transcription changes are specific effects of coactivator depletion rather than general stress or toxicity.",
+    "result_type": "MINOR"
+  }
+]

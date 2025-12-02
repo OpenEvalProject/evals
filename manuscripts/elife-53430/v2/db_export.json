@@ -1,0 +1,1749 @@
+{
+  "submission": {
+    "id": "6ad37c0a-bba1-4b1e-b017-5d8c1472e55b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:07:49.548188Z",
+    "updated_at": "2025-12-02T16:07:49.548188Z"
+  },
+  "content": [
+    {
+      "id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "submission_id": "6ad37c0a-bba1-4b1e-b017-5d8c1472e55b",
+      "content_type": "manuscript",
+      "content_text": "# Gating and selectivity mechanisms for the lysosomal K+ channel TMEM175\n\n## Authors\n\n- SeCheol Oh<sup>1</sup> ([ORCID: 0000-0002-1685-5922](https://orcid.org/0000-0002-1685-5922))\n- Navid Paknejad<sup>1</sup>\n- Richard K Hite<sup>1</sup> ([ORCID: 0000-0003-0496-0669](https://orcid.org/0000-0003-0496-0669)) \u2020\n\n### Affiliations\n\n1. Structural Biology Program, Memorial Sloan Kettering Cancer Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransmembrane protein 175 (TMEM175) is a K+-selective ion channel expressed in lysosomal membranes, where it establishes a membrane potential essential for lysosomal function and its dysregulation is associated with the development of Parkinson\u2019s Disease. TMEM175 is evolutionarily distinct from all known channels, predicting novel ion-selectivity and gating mechanisms. Here we present cryo-EM structures of human TMEM175 in open and closed conformations, enabled by resolutions up to 2.6 \u00c5. Human TMEM175 adopts a homodimeric architecture with a central ion-conduction pore lined by the side chains of the pore-lining helices. Conserved isoleucine residues in the center of the pore serve as the gate in the closed conformation. In the widened channel in the open conformation, these same residues establish a constriction essential for K+ selectivity. These studies reveal the mechanisms of permeation, selectivity and gating and lay the groundwork for understanding the role of TMEM175 in lysosomal function.\n\n## Introduction\n\nLysosomes are small, acidic organelles that play essential roles in nutrient sensing, signaling, autophagy and degradation of macromolecules (Ballabio and Bonifacino, 2020; Condon and Sabatini, 2019; Lawrence and Zoncu, 2019; Platt et al., 2018). Many of these processes are intricately linked to ion transport across the membrane via numerous channels and transporters and defects in lysosomal transport proteins lead to a\u00a0variety of diseases (Grimm et al., 2017; Li et al., 2019; van Veen et al., 2020). Transmembrane protein 175 (TMEM175) was recently identified as a\u00a0constitutively-active potassium (K+) selective channel expressed in lysosomal membranes responsible for establishing a membrane potential across the lysosomal membrane (Cang et al., 2015). TMEM175 is implicated in cellular proteostasis and its mutation is associated with the development of Parkinson\u2019s disease through a yet unknown mechanism, underscoring the importance of this channel to regulation of cellular homeostasis (Blauwendraat et al., 2019; Cang et al., 2015; Iwaki et al., 2019; Jinn et al., 2019; Jinn et al., 2017; Krohn et al., 2020; Nalls et al., 2014).\n\nTMEM175 is evolutionarily distinct from known K+ channels, displaying a unique membrane topology as well as lacking the conserved TVGYG selectivity filter present in canonical K+ channels such as shaker K+, BK and KcsA (Doyle, 1998; Long et al., 2005; Tao et al., 2017). In accordance with its divergent sequence, TMEM175 differs from canonical K+ channels in its ion-permeation properties and its pharmaceutical sensitivities. Canonical K+ channels are strongly selective for K+ over Na+, but are blocked by Cs+. In contrast, TMEM175 permeates cations according to a lyotropic sequence, with Ca2+ being least permeable, followed by Na+, K+ and Cs+ being most permeable (Cang et al., 2015). Only one of the common K+ channel inhibitors, 4-aminopyridine, can inhibit TMEM175 activity, while others, such as tetraethylammonium, do not alter channel activity (Cang et al., 2015). Together, these features predict unique ion permeation and selectivity mechanisms for TMEM175.\n\nStructures of TMEM175 homologs from the prokaryotes Chamaesiphon minutus (Lee et al., 2017) and Marivirga tractuosa (Brunner et al., 2018) revealed that prokaryotic TMEM175 channels adopt a homotetrameric architecture with each protomer comprising a single 6-TM domain surrounding a central ion-conduction pathway. However, differences in the structures of the ion-conduction pathways led to differing proposals for how TMEM175 channels discriminate between cations, and thus ion selectivity in prokaryotic TMEM175 remains an open question. Moreover, unlike mammalian TMEM175 channels, prokaryotic TMEM175 channels are only minimally selective for K+, permeating only 2 to 4 K+ ions for every Na+ ion compared to 36 for human TMEM175 (Brunner et al., 2018; Cang et al., 2015). Due to the differences in ion selectivity, it remains unknown whether the mechanisms proposed to govern prokaryotic TMEM175 channels are relevant to K+ selectivity in mammalian TMEM175 channels. To elucidate the mechanisms underlying TMEM175 function in mammalian cells, we determined single-particle cryo-electron microscopic (cryo-EM) structures and analyzed the ion-permeation and selectivity properties of human TMEM175 (hTMEM175).\n\n## Results\n\n### Human TMEM175 is highly selective for K+\n\nTo measure the ion selectivity of recombinant hTMEM175 channels, we took advantage of the observation that while hTMEM175 is endogenously expressed in the membranes of endosomes and lysosomes, transient overexpression as a GFP-fusion protein in HEK293T cells leads to expression of hTMEM175 at the plasma membrane (Figure 1\u2014figure supplement 1;\u00a0Lee et al., 2017). The permeation properties of these plasma membrane-localized hTMEM175 channels can be analyzed using whole-cell patch clamp. In a bi-ionic condition, in which the pipette (intracellular) solution contains 150 mM K+ and the bath (extracellular) solution contains 150 mM Na+, hTMEM175 displays a strong preference for K+ (Figure 1A). The reversal potential calculated from voltage families stepping from \u2212100 mV to +100 mV was \u221255\u00a0\u00b1\u00a02.7 mV, corresponding to a K+/Na+ permeation ratio (PK/PNa) of\u00a0~9 (Figure 1B). Consistent with previous results (Cang et al., 2015), hTMEM175 is also selective for Cs+ over Na+. In a Cs+/Na+ bi-ionic condition, the mean reversal potential of hTMEM175 is \u221265\u00a0\u00b1\u00a04.1 mV (PCs/PNa of\u00a0~13) (Figure 1C\u2013D). We also measured whole-cell currents from non-transfected HEK293T cells, which revealed the presence of non-selective currents whose magnitude varied between 50 and 100 pA at +100 mV (Figure 1\u2014figure supplement 1). Because these endogenous currents are also present in the hTMEM175 transfected cells, the ion-selectivity measurements determined using whole-cell patch clamp underrepresent the selectivity of hTMEM175 and the true values are likely closer to those measured in endolysosomal patch clamp (PK/PNa ~36) (Cang et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig1-v2.jpg)\n\n**Figure 1.:** (A, C) Representative whole-cell electrical recordings of hTMEM175-transfected HEK293T cells. In bi-ionic conditions of 150 mM K+ (intracellular) and 150 mM Na+ (extracellular) (A) or 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular) (C), currents were measured using the following protocol (red): from a holding potential of 0 mV, the voltage was stepped to voltages between \u2212100 and +100 mV, in 20 mV increments, then returned to 0 mV. (B, D) Normalized current-voltage relationships of three independent whole-cell patch clamp recordings of hTMEM175-transfected HEK293T cells in bi-ionic conditions of 150 mM K+ (intracellular) and 150 mM Na+ (extracellular) (B) or 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular) (D). (E) K+ efflux from purified hTMEM175 reconstituted into liposomes in the presence or absence of 1 mM 4-aminopyridine and from empty liposomes was monitored using a fluorescence-based flux assay. Arrows mark addition of the proton ionophore CCCP to initiate K+ flux and addition of the K+ ionophore valinomycin to measure total flux capacity of the liposomes. All experiments were performed in triplicate and error bars represent SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative differential interference contrast microscopy (left) and GFP fluorescence microscopy (right) of non-transfected and hTMEM175 transfected HEK293T cells used for whole-cell patch clamp. (B) Three representative whole-cell electrical recordings of non-transfected HEK293T cells in bi-ionic conditions of 150 mM K+ (intracellular) and 150 mM Na+ (extracellular) (left) or 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular) (right). (C) Normalized current-voltage relationships of experiments shown in B. Currents were normalized to the maximum current of each experiment (at +100 mV). Error bars are shown in SEM. Recording protocol is same as in Figure 1A.\n\nWe next overexpressed hTMEM175 in HEK293S GnTi- cells and purified it to homogeneity (Figure 2\u2014figure supplement 1). To assess the activity of the purified channels, we reconstituted hTMEM175 into proteoliposomes composed of a 3:1 ratio of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (POPG) and measured channel activity. Using a 9-amino-6-chloro-2-methoxyacridine (ACMA)-based flux assay (Su et al., 2016) with 300 mM K+ inside of the vesicles and 300 mM Na+ outside, robust K+ efflux was detected from proteoliposomes containing hTMEM175 following the addition of the ionophore carbonyl cyanide m-chlorophenylhydrazone (CCCP) compared to empty liposomes (Figure 1E). No flux could be detected when the inhibitor 4-aminopyridine (4-AP) was added to the proteoliposomes at a concentration of 1 mM, demonstrating that reconstituted hTMEM175 channels are active and that they retain their K+ selectivity and their pharmacological sensitivity to 4-AP.\n\n### Structure of hTMEM175\n\nTo investigate the mechanisms that govern hTMEM175 function, we collected cryo-EM images of hTMEM175 purified in 150 mM K+. Three-dimensional classification revealed that two conformations were present among the imaged particles; class 1, which was resolved at a resolution of 2.6 \u00c5, and class 2, which was resolved at a resolution of 3.0 \u00c5 (Figure 2A and Figure 2\u2014figure supplement 1, 2 and Table 1). Due to the high degree of similarity between the two classes, we will first describe the higher-resolution class 1 structure (Figure 2B). hTMEM175 is composed of two homologous 6-helix repeat domains that share\u00a0~23% sequence identity (Figure 2C and Figure 2\u2014figure supplement 3). Consequently, the density map revealed that while hTMEM175 is homodimeric, similarities between the two 6-helix repeat domains result in a pseudo-four-fold symmetric architecture. Inspection of the map identified features that were sufficiently well resolved to permit us to distinguish repeat I (TM1-TM6) from repeat II (TM7-TM12) and build a de novo structure of hTMEM175, comprising TM1-TM4 and TM7-TM12. The densities corresponding to peripheral helices TM5 and TM6 are too poorly resolved in the map for modelling (Figure 2\u2014figure supplement 2). Viewed from the cytoplasm, hTMEM175 is a diamond-shaped channel measuring\u00a0~85 \u00c5 along the long axis and\u00a0~60 \u00c5 along the short axis with the ion-conduction pathway located at the center of the channel along the pseudo-four-fold axis (Figure 2B). The six helices of each repeat form distinct domains and no swapping of domains or helices is evident. Viewed from within the plane of the membrane, most of hTMEM175 is embedded within the membrane with only short loops extending out of the membrane on either side (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cryo-EM density maps of class 1 (cyan) and class 2 (gold) hTMEM175 in KCl depicted from within the membrane. (B) Structure of class 1 hTMEM175 depicted from within the membrane (left) and from the cytoplasm (right). TM1-TM4 (repeat I) and TM7-TM12 (repeat II) of protomer A are shown in blue and red, respectively. Protomer B is shown in grey. Approximate width of the lipid bilayer is shown as grey bars. (C) Topology of hTMEM175. TM1-TM4 (repeat I) and TM7-TM12 (repeat II) are shown in blue and red, respectively. Unmodelled helices TM5 and TM6 are shown in black. (D) Superposition of class 1 hTMEM175 repeat I (blue) with repeat II (red).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Superdex 200 size exclusion profile of hTMEM175 (left) and Coomassie-stained PAGE analysis of purified hTMEM175 purified in LMNG and 150 mM KCl (right). Peak fractions from gel filtration are highlighted in the image of the Coomassie-stained gel by a blue box (B) Representative image and 2D class averages of hTMEM175 in 150 mM KCl. (C) Simplified image processing workflow. (D) Density map of class 1\u00a0colored by local resolution. (E) Fourier shell correlation (FSC) of two unfiltered half-maps for class 1 (solid cyan) and class 2 (solid gold) and cross correlation plot of two unfiltered half-maps following density modification for class 1 (dotted cyan) and class 2 (dotted gold). (F) Fourier shell correlation (FSC) of refined class 1 model compared with density modified map (cyan) and refined class 2 model compared with density modified map (gold).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Section through 6 \u00c5 lowpass-filtered class 1 (left, cyan) and class 2 (right, gold) density maps revealing weak density for poorly ordered transmembrane helices TM5 and TM6. (B\u2013C) Density-modified class 1 (B) and class 2 (C) cryo-EM density maps with atomic model in sticks for TM1, TM2, TM7 and TM8, thresholded at\u00a010 \u03c3 and\u00a03 \u03c3, respectively.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Hs \u2013 human TMEM175, Bt \u2013 cow TMEM175, Mm \u2013 mouse TMEM175, Rn \u2013 Rat TMEM175, Gg \u2013 chicken TMEM175, Dr \u2013 Zebrafish TMEM175, Cm - Chamaesiphon minutus TMEM175, Mt - Marivirga tractuosa TMEM175. Identical residues are colored by amino acid. RxxxFSD motif interaction network residues are highlighted by magenta boxes, isoleucine constriction residues are highlighted by blue boxes and residues whose side chains coordinate water molecules that stabilize the kinks in TM1 and TM7 are highlighted by green boxes.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Superposition of class 1 hTMEM175 (cyan) with TMEM175Cm (left, brown - main-chain RMSD\u00a0=\u00a03.2 \u00c5) and TMEM175Mt (right, magenta - main-chain RMSD\u00a0=\u00a04.0 \u00c5). (B) Superposition of TM7-TM12 of class 1 hTMEM175 (cyan) with monomeric structures of TMEM175Cm (left, brown - main-chain RMSD\u00a0=\u00a02.3 \u00c5) and TMEM175Mt (right, magenta - main-chain RMSD\u00a0=\u00a03.9 \u00c5).\n\n**Table 1.**\n Cryo-EM data acquisition, reconstruction and model refinement statistics.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>hTMEM175</td>\n      <td>hTMEM175</td>\n      <td>hTMEM175</td>\n      <td>hTMEM175</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Class 1 K+</td>\n      <td>Class 2 K+</td>\n      <td>Class 1 Cs+</td>\n      <td>Class 2 Cs+</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Cryo-EM acquisition and processing</td>\n    </tr>\n    <tr>\n      <td>EMDB accession #</td>\n      <td>21603</td>\n      <td>21604</td>\n      <td>21605</td>\n      <td>21606</td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>22,500x</td>\n      <td>22,500x</td>\n      <td>22,500x</td>\n      <td>22,500x</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n      <td>300</td>\n      <td>300</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Total electron\u00a0exposure (e-\u00a0/ \u00c52)</td>\n      <td>61</td>\n      <td>61</td>\n      <td>61</td>\n      <td>61</td>\n    </tr>\n    <tr>\n      <td>Exposure time (s)</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Defocus range (uM)</td>\n      <td>-1.0 to -2.5</td>\n      <td>-1.0 to -2.5</td>\n      <td>-1.0 to -2.5</td>\n      <td>-1.0 to -2.5</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.088</td>\n      <td>1.088</td>\n      <td>1.088</td>\n      <td>1.088</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C2</td>\n      <td>C2</td>\n      <td>C2</td>\n      <td>C2</td>\n    </tr>\n    <tr>\n      <td>Initial particles</td>\n      <td>4,153,614</td>\n      <td>4,153,614</td>\n      <td>4,275,219</td>\n      <td>4,275,219</td>\n    </tr>\n    <tr>\n      <td>Final particles</td>\n      <td>342,340</td>\n      <td>57,152</td>\n      <td>94,653</td>\n      <td>70,132</td>\n    </tr>\n    <tr>\n      <td>Resolution (masked FSC = 0.143, \u00c5)</td>\n      <td>2.64</td>\n      <td>3.03</td>\n      <td>3.17</td>\n      <td>3.24</td>\n    </tr>\n    <tr>\n      <td>Density modified CC (0.5, \u00c5)</td>\n      <td>2.67</td>\n      <td>3.09</td>\n      <td>3.12</td>\n      <td>3.23</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Model Refinement</td>\n    </tr>\n    <tr>\n      <td>PDB ID</td>\n      <td>6WC9</td>\n      <td>6WCA</td>\n      <td>6WCB</td>\n      <td>6WCC</td>\n    </tr>\n    <tr>\n      <td>Model resolution (FSC = 0.50/0.143\u00c5)</td>\n      <td>2.68 / 2.32</td>\n      <td>3.07 / 2.67</td>\n      <td>3.18 / 2.71</td>\n      <td>3.27 / 2.84</td>\n    </tr>\n    <tr>\n      <td>Model refinement resolution</td>\n      <td>300-2.6</td>\n      <td>300-3.0</td>\n      <td>300-3.2</td>\n      <td>300-3.2</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">RMS deviations</td>\n    </tr>\n    <tr>\n      <td>Bond length (\u00c5)</td>\n      <td>0.005</td>\n      <td>0.002</td>\n      <td>0.004</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angle (\u00b0)</td>\n      <td>0.532</td>\n      <td>0.507</td>\n      <td>0.406</td>\n      <td>0.506</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Ramachandran plot</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>96.13</td>\n      <td>96.42</td>\n      <td>99.17</td>\n      <td>99.17</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>3.87</td>\n      <td>3.58</td>\n      <td>0.83</td>\n      <td>0.83</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Rotamer Outliers (%)</td>\n      <td>2.27</td>\n      <td>1.61</td>\n      <td>1.29</td>\n      <td>2.26</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Validation</td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>1.71</td>\n      <td>1.74</td>\n      <td>1.12</td>\n      <td>1.49</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>3.88</td>\n      <td>6.28</td>\n      <td>2.50</td>\n      <td>4.39</td>\n    </tr>\n  </tbody>\n</table>\n\nConsistent with the high sequence homology between repeat I (TM1-TM6) and repeat II (TM7-TM12), alignment reveals that their structures are nearly identical with an RMSD of 1.7 \u00c5 (Figure 2D). The structures of repeat I and repeat II are also homologous with the monomeric structures of TMEM175 channels from the prokaryotes Chamaesiphon minutus (TMEM175Cm) (Lee et al., 2017) and Marivirga tractuosa (TMEM175Mt) (Brunner et al., 2018;\u00a0Figure 2\u2014figure supplement 4). Thus, while prokaryotic TMEM175 channels are homotetramers rather than homodimers, the global architecture of TMEM175 channels is conserved.\n\n### Ion-conduction pathway contains ordered ions and waters\n\nThe ion-conduction pathway of hTMEM175 is located along the central axis of the channel extending approximately 45 \u00c5 from the cytoplasm to the lysosomal lumen (Figure 3A) The pore is lined by the side chains of the kinked pore-lining helices, TM1 and TM7. The side chains of TM1 and TM7 create multiple constrictions whose radii are less than 2.0 \u00c5 and would restrict the permeation of hydrated K+ ions. The narrowest of these constrictions is formed by the side chains of Ile46 from TM1 and Ile271 from TM7, which are conserved among all eukaryotic TMEM175 channels, and has minimum radius of 1.7 \u00c5 (Figure 3B). Just below the constriction formed by Ile46 and Ile271, the pore contains an expanded vestibule that is also lined by the side chains of Thr49 and Leu53 from TM1 and Thr274, Leu275 and Leu278, making it much more hydrophobic than the rest of the pore (Figure 3A). Despite its hydrophobicity, multiple non-protein density peaks are resolved within the vestibule (Figure 3\u2014figure supplement 1). Non-protein density peaks are also present in the vestibule in a density map calculated without symmetry, indicating that they represent ordered molecules rather than arising from the accumulation of noise along the two-fold symmetry axis during image processing (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig3-v2.jpg)\n\n**Figure 3.:** (A) Ion permeation pathway of class 1 hTMEM175. Pore-lining helices TM1 from protomers A (blue) and B (grey) are shown at left and TM7 from protomers A (red) and B (grey) are shown at right with all other helices removed for clarity. Pore-lining residues are shown as sticks. Surface representation of the ion permeation pathway colored by hydrophobicity calculated using the class 1 structure without ions and water molecules calculated using CHAP (Klesse et al., 2019). (B) Dimensions of the ion conduction pathway in class 1 calculated using CHAP (Klesse et al., 2019). (C) Overlapping non-protein density peaks in the ion permeation pathway of class 1 in the presence of K+ (blue mesh, 12 \u03c3 threshold) and Cs+ (gold mesh, 8 \u03c3 threshold). hTMEM175 is shown as in A. K+ ions are shown as violet spheres. (D) Density map near the isoleucine constriction displayed as blue mesh and contoured at 12 \u03c3 threshold. K+ ions are shown as violet spheres and water molecules are shown as red spheres.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) Non-protein densities near the isoleucine constriction for class 1 with C2 symmetry imposed (A) and without imposing symmetry (B). (C\u2013D) Non-protein densities in the cytoplasmic region of the pore for class 1 with C2 symmetry imposed (C) and without imposing symmetry (D). Density is shown as blue mesh contoured at 12 \u03c3 threshold for C2 map and at 8 \u03c3 threshold for C1 map.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative image and 2D class averages of hTMEM175 in 150 mM CsCl. (B) Simplified image processing workflow. (C) Fourier shell correlation (FSC) of two unfiltered half-maps for class 1 (solid cyan) and class 2 (solid gold) and cross correlation plot of two unfiltered half-maps following density modification for class 1 (dotted cyan) and class 2 (dotted gold). (D) Fourier shell correlation (FSC) of refined class 1 model compared with density modified map (cyan) and refined class 2 model compared with density modified map (gold).\n\nIn addition to the non-protein densities resolved in the hydrophobic vestibule, numerous other non-protein densities are resolved in the other, more hydrophilic regions of the pore (Figure 3\u2014figure supplement 1). However, due to the large number of non-protein peaks and lack of obvious protein-coordinated ion-binding sites, it was not possible to unambiguously distinguish ions from water molecules based on the density map alone. To aid in assigning the identity of these peaks, we collected cryo-EM images of hTMEM175 purified in 150 mM Cs+. We chose to determine structures in the presence of Cs+ for two reasons. First, Cs+ scatters electrons approximately three times more strongly than K+ (Peng, 1998) and thus bound Cs+ ions should yield density peaks that can be distinguished from those corresponding to water and other non-protein atoms in the density map. Second, because the permeation of Cs+ is similar to K+, we hypothesized that Cs+ would occupy the same binding sites in the pore as does K+ and thus facilitate identification of the ion-binding sites (Figure 1).\n\nThree-dimensional classification revealed that hTMEM175 adopts the same two conformations in the presence of Cs+ that exist in the presence of K+ (Figure 3\u2014figure supplement 2 and Table 1). A number of non-protein densities are resolved in the pore of class 1 hTMEM175 in the presence of Cs+. Because of the similarities between the class 1 structures determined in Cs+ and K+ (all-atom RMSD\u00a0=\u00a00.2 \u00c5), we could directly compare the density maps at a threshold of \u03c3\u00a0=\u00a012 for the class 1 map determined in K+ and of \u03c3\u00a0=\u00a08 for the class 1 map determined in Cs+, identifying four overlapping non-protein density peaks in both maps (Figure 3C). We therefore modelled these overlapping densities as ions, either K+ or Cs+ depending on the condition. We assigned the remaining non-protein densities as ordered waters. Despite the narrow dimensions of the pore, the protein only minimally participates in the direct coordination of the bound ions (Figure 3D). Instead, ordered water molecules form nearly all of the direct interactions with the bound ions. Near the cytoplasmic entrance to the pore, the ion in the K1 site is directly coordinated by the side chain of Ser38 and indirectly coordinated by the side chain of Asp266 and the backbone oxygens of Ser38 and Glu259 via ordered waters (Figure 4A). The ion in the K2 site is indirectly coordinated by the side chain of Ser45 and the backbone oxygens of Ala263 and Gly267 via ordered waters (Figure 4B). The K3 site, the weakest of the four sites in both density maps, is located near the isoleucine constriction that is flanked by two layers of four water molecules (Figure 4C). The waters on the cytoplasmic side are coordinated by the side chain of Ser45 and the backbone oxygen of Gly267, while the waters on the luminal side are indirectly coordinated by the side chains of Thr49 and Thr274 and by the backbone oxygens of Ile46 and Ile271. Unlike the spherical densities resolved at the other ion-binding sites, the density for the K3 ion is elongated and extends between the two layers of waters on either side of the isoleucine constriction (Figure 3D). The waters on the luminal side of the constriction are located between 3.1 and 3.4 \u00c5 away from the center of the luminal portion of the density peak, while the waters on the cytoplasmic side are located between 3.1 and 3.2 \u00c5 away from the center of the cytoplasmic portion of the density peak. Because the center of the constriction is hydrophobic, ions are unlikely to stably bind there, and so we speculate that the K3 density corresponds to the sum of two partially-occupied ion-binding sites positioned on either the cytoplasmic or the luminal side of the constriction where the ions can be directly coordinated by the nearby waters. The fourth ion-binding site (K4) is located in the hydrophobic vestibule near the luminal entrance to the pore (Figure 4D). Notably, two symmetry-related copies of sites K1, K2 and K4 are present in the structure because the K1, K2 and K4 sites are located slightly off of the central axis of the pore (Figure 4). However, the distances between the pairs of K1, K2 and K4 ion-binding sites are 3.0 \u00c5, 2.9 \u00c5 and 3.3 \u00c5, respectively, which are likely too close for both symmetry-related sites to be simultaneously occupied with ions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig4-v2.jpg)\n\n**Figure 4.:** Structure of the K1 (A), K2 (B), K3 (C) and K4 (D) binding sites in class 1. K+ ions are shown as violet spheres and water molecules are shown as red spheres. Density for K+ and water molecules shown as blue mesh and contoured at 12 \u03c3 threshold.\n\n### Structural heterogeneity reveals gating mechanism\n\nTo better understand the functional states of the two conformations resolved in our data sets, we next superimposed the class 1 and class 2 structures determined in the presence of K+ (Figure 5A). Overall, the two classes are very similar, with an all-atom RMSD of 0.9 \u00c5. The similarities are especially pronounced in the cytoplasmic side of the channel, which likely arises from the existence of interaction networks at the intra-subunit interfaces between repeats I and II and at the inter-subunit interfaces between protomers (Figure 5B). These interaction networks adopt identical configurations in both conformations and are anchored by the essential RxxxFSD motif on TM1 and TM7 (Cang et al., 2015). In addition to the RxxxFSD motif, the networks involve a conserved histidine and a conserved tryptophan on TM2/TM8 and a conserved asparagine on TM3/TM9 (Figure 2\u2014figure supplement 3). Similar interaction networks were resolved in the prokaryotic structures (Brunner et al., 2018; Lee et al., 2017), suggesting a conserved role for the RxxxFSD motif in maintaining channel quaternary structure during conformational changes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig5-v2.jpg)\n\n**Figure 5.:** (A) Superposition of class 1 (cyan) and class 2 (gold) viewed from within the membrane (left) and from the lysosomal lumen (right). (B) Alignment of the RxxxFSD inter- and intra-subunit interaction networks in class 1 (cyan) and class 2 (gold) depicted as sticks and viewed from the cytosol. Ionic and polar interaction are shown as dashed lines. (C) Ion conduction pathways of class 1 (cyan) and class 2 (gold). TM1 is shown at left and TM7 is shown at right with all other helices removed for clarity. K+ ion binding sites are shown as spheres. Dotted lines correspond to minimum distance between opposing residues at the isoleucine constriction.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Order water molecule stabilizing the kinked TM1 in class 1 is coordinated by Ala48, Met51 and Thr84. (B) Side chain of Met51 occupies the position of the water molecule in class 2 and TM1 adopts a straight configuration. (C) Order water molecule stabilizing the kinked TM7 in class 1 is coordinated by Val272, Ala273, Leu276 and Ser316. (D) Side chain of Leu276 occupies the position of the water molecule in class 2 and TM7 adopts a straight configuration.\n\nIn contrast to the rigid cytoplasmic side, differences between the two classes can be readily detected on the luminal side of the channel (Figure 5A and Video 1). When viewed from the luminal side of the channel, the ends of the transmembrane helices in the class 2 structure are rotated in a clockwise manner compared to their positions in class 1 (Figure 5A). The luminal loops between the transmembrane helices also adopt different conformations, with the loop between TM9 and TM10 undergoing the largest change. In class 2, the last turn of TM9 is unwound and moves nearly 12 \u00c5 from its position adjacent to the loop between TM11 and TM12 in class 1 to interact with the loop between TM1 and TM2.\n\n![Video 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-video1.mp4.jpg)\n\nInspection of the pore-lining helices, TM1 and TM7, reveals that the clockwise rotation of their luminal ends from class 1 to class 2 is accompanied by the adoption of a straighter, \u03b1-helical conformation, particularly for TM7 (Figure 5C). In class 1, the kink in TM1 is stabilized by Pro54 and by a water molecule coordinated by the side chain of Thr84 on TM2, the backbone carbonyl oxygen of Ala48 and the backbone amide nitrogen of Met51, while the kink in TM7 is stabilized by a water molecule coordinated by the side chain of Ser316 on TM8, the backbone carbonyl oxygens of Val272 and Ala273 and the backbone amide nitrogen of Leu276 (Figure 5\u2014figure supplement 1). In class 2, the waters stabilizing the kinks are displaced by the side chains of Met51 and Leu276. The resultant straightening of TM1 and TM7 in class 2 alters the shape of the pore, particularly at the isoleucine constriction (Figure 5C). In class 1, the minimum radius of the isoleucine constriction is 1.7 \u00c5 with an ion-binding site in the center surrounded by the isoleucine side chains in a nearly four-fold symmetric configuration. In class 2, the four-fold arrangement of the isoleucine side chains is broken by an inward movement of all four isoleucine residues and a rotation of the Ile271 side chains. These changes reduce the minimum pore radius to 0.5 \u00c5, which is too narrow to accommodate dehydrated K+ ions. Accordingly, no density is resolved in the K3 ion-binding site in class 2. Thus, class 2 represents a closed conformation with Ile46 and Ile271 forming the channel gate.\n\nIf class 2 represents a closed conformation, what state does class 1 represent? The proteoliposome flux assay demonstrated that purified hTMEM175 can conduct ions in the absence of stimuli, indicating that hTMEM175 can adopt an open state in the similar conditions used for cryo-EM analysis (Figure 1E). However, in order for class 1 to be a conductive state, ions would have to be able to permeate its narrow pore in a partially dehydrated state. In the cytosolic and luminal regions of the pore, the bound ions are coordinated by numerous water molecules and the constrictions are formed by polar and charged side chains, suggesting that partially hydrated ions can readily translocate. In contrast, ions would have to be almost completely dehydrated to penetrate the isoleucine constriction because of its size and hydrophobicity. However, the dehydration need only be transient due to the layers of water molecules on either side of the isoleucine constriction that can rehydrate the ion once it passes through the constriction (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig6-v2.jpg)\n\n**Figure 6.:** (A) The isoleucine constriction is flanked by two layers of ordered water molecules. The cytosolic layer of waters is partially coordinated by Ser45, while the luminal layer is partially coordinated by Thr49 and Thr274. (B) Mean current recorded from HEK293T cells transfected with hTMEM175 (blue), S45A (red dashed), S45T (red), T274V (orange dashed), T274S (orange), I46M (green), I46M/I271M (magenta) and non-transfected (white) at +100 mV in a bi-ionic condition of 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular). (C) Normalized I-V relationship of whole-cell patch clamp of hTMEM175 transfected (blue), S45T transfected (red), T274S transfected (orange) and I46M transfected (green) HEK293T cells in a bi-ionic condition of 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular). All experiments were performed at least three times and error bars represent SEM. (D) Model for ion selectivity and gating in hTMEM175. In the open state, ions are transiently dehydrated through the isoleucine constriction, favoring permeation of K+ ions. In the closed state, the isoleucine constriction closes, preventing ion permeation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Superose 6 fluorescence size exclusion chromatography traces of hTMEM175 (blue), S45A (red dashed), S45T (red), T274V (orange dashed), T274S (orange), I46M (green), I46M/I271M (magenta) and non-transfected (black). (B) Representative whole-cell electrical recordings of HEK293T cells transfected with S45A, S45T, T274V, T274S, I46M or I46M/I271M mutants in bi-ionic condition of 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular). Recording protocol is same as in Figure 1C.\n\nTo determine if the ordered water molecules facilitate ion permeation through the isoleucine constriction, we mutated Ser45 or Thr274, conserved residues on the cytosolic side and luminal side of the isoleucine constriction, respectively, whose side-chain hydroxyl groups participate in the coordination of ordered waters (Figure 6A). We first analyzed the effects of the mutations on protein stability using fluorescence size-exclusion chromatography (Goehring et al., 2014), which revealed that channels with mutations to Ser45 and Thr274 are properly folded as dimers and express at levels within two-fold of wild-type hTMEM175 (Figure 6\u2014figure supplement 1). We next assessed the effects of the mutations on channel activity using whole-cell patch clamp in a bi-ionic Cs+/Na+ condition. Currents recorded from cells expressing the S45A and T274V mutants, which lack one of the hydroxyl groups involved in water coordination, were indistinguishable from those recorded from non-transfected cells (Figure 6B). In contrast, cells expressing either the S45T or the T274S mutant yielded Cs+-selective currents (Figure 6B\u2013C). These results reveal a critical role for residues that coordinate water molecules in facilitating the permeation of ions through the isoleucine constriction and suggest that the water molecules themselves may participate in ion permeation. We therefore speculate that ions can permeate through the isoleucine constriction of class 1 in a partially hydrated state and that class 1 represents a conductive state.\n\n### Mechanisms of ion selectivity\n\nThe transient dehydration of ions through the isoleucine constriction implies a mechanism for ion selectivity. Because the enthalpies of dehydration for Cs+ (250 kJ/mol) and K+ (295 kJ/mol) are lower than that of Na+ (365 kJ/mol) (Marcus, 1991), Cs+ and K+ ions can more readily access the partially dehydrated state necessary to permeate through the\u00a0isoleucine constriction and are thus permeated more efficiently than Na+. Previously, mutation of Ile46 and Ile271 to asparagine was shown to diminish ion selectivity, which led to the proposal that the Ile46 and Ile271 act as a hydrophobic selectivity filter (Lee et al., 2017). However, in the class 1 structure of hTMEM175 the branched side chains of Ile46 and Ile271 form a constriction that we propose is precisely shaped to allow dehydrated ions to permeate, suggesting that the unique shape of isoleucine may also be essential (Figure 3D). To test if hydrophobicity itself is sufficient to impart ion selectivity, we mutated Ile46 to methionine, which is similar to isoleucine in terms of volume occupied and hydrophobicity, and recorded whole-cell currents. In a bi-ionic Cs+/Na+ condition, the I46M mutant displayed less selectivity for Cs+ with a mean reversal potential of \u221221\u00a0\u00b1\u00a01.5 mV compared to \u221265\u00a0\u00b1\u00a04.1 mV for wild-type hTMEM175 (Figure 6C). We also attempted to record whole-cell currents from cells expressing the I46M/I271M double mutant. However, no exogenous currents could be detected, consistent with a previous report that mutations of Ile46 and Ile271 to alanine, valine, leucine and phenylalanine were not functional (Lee et al., 2017). These results point to a unique role for isoleucine side chains in establishing a selectivity filter that cannot be duplicated by other amino acids.\n\nAlthough the isoleucine constriction participates in the selective permeation of ions by hTMEM175, it is unclear if the energetic differences between\u00a0K+ and Na+ dehydration are alone sufficient to generate a nearly forty-fold selectivity for K+ over Na+. Moreover, alignment of hTMEM175 with prokaryotic homologs reveal that isoleucine residues are broadly conserved at the position of the isoleucine constrictions (Brunner et al., 2018; Lee et al., 2017;\u00a0Figure 2\u2014figure supplement 3), suggesting that the isoleucine constriction may be a conserved feature among TMEM175 channels. Given the greater selectivity of hTMEM175 compared to its prokaryotic homologs (Brunner et al., 2018; Lee et al., 2017), additional, unknown mechanisms may further contribute to K+ selectivity in hTMEM175. Because the ion-binding sites are largely formed by waters, we hypothesized that ion coordination by waters might represent an additional mechanism of selectivity in hTMEM175. Comparing the structures of the water-mediated ion-binding sites with the structure of the ion-binding sites in KcsA revealed that the distances between water molecules in the layers on either side of the isoleucine constriction in hTMEM175 are 4.8 \u00c5 and 5.1 \u00c5, similar to the distances between opposing backbone carbonyl oxygens that form the ion-binding sites in the TVGYG selectivity filter of KcsA (4.5\u20135.1 \u00c5) (Zhou et al., 2001;\u00a0Figure 6A). The similarity of these structures suggests that the water molecules in hTMEM175 may play an analogous role in hTMEM175 and participate in ion selectivity. To examine the influence of the ordered water molecules near the isoleucine constriction on ion selectivity, we compared the reversal potential of S45T and T274S mutants with wild-type hTMEM175. While the reversal potential of the S45T was similar to wild type (\u221262\u00a0\u00b1\u00a01.9 mV), it was right-shifted to \u221234\u00a0\u00b1\u00a05.1 mV for the T274S mutant, suggesting that the T274S mutant is less selective than wild-type hTMEM175 (Figure 6B\u2013C). These results suggest that minor differences in residues that coordinate water molecules near the isoleucine constriction can influence ion selectivity. Because Thr274 does not directly interact with the permeating ions, these results suggest that the network of ordered molecules in the pore may also contribute to ion selectivity in hTMEM175 channels.\n\n## Discussion\n\nTo gain insights into the mechanisms underlying TMEM175 channel function, we determined cryo-EM structures of hTMEM175 in two conformations. Numerous non-protein densities are resolved in the ion conduction pathways of both structures. However, unlike anomalous X-ray diffraction experiments, which can specifically localize atoms in protein structures, ligand identification in cryo-EM structures relies on examination of the local environment of the binding sites. While such analyses can be straightforward for well-characterized proteins, densities can be ambiguous in structures of less well-characterized proteins. Because TMEM175 channels are evolutionarily distinct from all other known ion channels, we needed to an alternative approach to distinguish between the ion densities in the pore and ordered waters. Therefore, we determined structures of hTMEM175 in the presence of two ions, K+ and Cs+, which are permeated similarly by hTMEM175, but have different electron scattering properties (Figure 1). The comparison revealed four overlapping peaks in the class 1 maps and three in the class 2 maps (Figure 3). While this approach enabled us to better identify ion densities and may be useful for identifying ion-binding sites in other proteins, the signal is much weaker than that generated by anomalous X-ray diffraction experiments and future efforts will be required to improve identification of ligands in cryo-EM density maps.\n\nIdentification of the ion-binding sites enabled us to tentatively assign the two conformations as an open state and a closed state. However, cryo-EM structures represent snapshots of the protein being imaged and it is difficult to explicitly assign functional states to the conformational states resolved. Because the population of imaged particles represents the equilibrium of states at the condition being imaged, it is sometimes possible to infer that the fraction of particles in a particular structural state corresponds to the likelihood of the corresponding functional state (Hite and MacKinnon, 2017). For small proteins like hTMEM175, such correspondence is difficult due to the large number of particles that are removed from the data sets during classification and thus whose conformational state is unknown (Table 1). Moreover, while care is taken during image processing to identify all conformations, it is possible that additional low-abundance conformations remain unidentified in the data sets. Thus, future orthogonal experiments will be necessary to test the functional assignments that we propose for our structures as well as the mechanisms derived from their interpretation.\n\nIn contrast to most ion channels, for which gating and selectivity are physically uncoupled, the precise three-dimensional arrangement of Ile46 and Ile271 in the two hTMEM175 structures suggests that they serve as both the gating residues as well as the ion selectivity filter. Notably, what factors influence the likelihood of hTMEM175 adopting open or closed states is an open question. Due to hTMEM175\u2019s association with lysosomal homeostasis and the development of Parkinson\u2019s Disease (Blauwendraat et al., 2019; Cang et al., 2015; Iwaki et al., 2019; Jinn et al., 2019; Jinn et al., 2017; Nalls et al., 2014), future studies will be necessary to identify stimuli that regulate gating and to understand how these stimuli alter the equilibrium between open and closed states to regulate lysosomal K+ flux.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or\u00a0resource</th>\n      <th>Designation</th>\n      <th>Source or\u00a0reference</th>\n      <th>Identifiers</th>\n      <th>Additional\u00a0information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>hTMEM175</td>\n      <td>Synbio technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK-293T</td>\n      <td>ATCC</td>\n      <td>CRL-3216 RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK-293S GnTi-</td>\n      <td>ATCC</td>\n      <td>CRL-3022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine</td>\n      <td>Avanti Polar Lipids</td>\n      <td>850757</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (sodium salt)</td>\n      <td>Avanti Polar Lipids</td>\n      <td>840457</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>carbonyl cyanide m-chlorophenylhydrazone (CCCP)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>215911250 MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>9-amino-6-chloro-2-methoxyacridine (ACMA)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A1324</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>valinomycin</td>\n      <td>Sigma</td>\n      <td>V0627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polyethylenimine, Linear, MW 25000, Transfection Grade (PEI 25K)</td>\n      <td>Polysciences, Inc</td>\n      <td>23966\u20131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium Butyrate</td>\n      <td>Sigma</td>\n      <td>8451440100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>lauryl maltoside neopentyl glycol</td>\n      <td>Anatrace</td>\n      <td>NG310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>n-Octyl-\u03b2-D-Maltopyranoside</td>\n      <td>Anatrace</td>\n      <td>O310S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>Zheng et al., 2017</td>\n      <td>RRID:SCR_016499</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CtfFind 4.1.10</td>\n      <td>Rohou and Grigorieff, 2015</td>\n      <td>RRID:SCR_016731</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION 3.1</td>\n      <td>Scheres, 2016</td>\n      <td>http://www2.mrc-lmb.cam.ac.uk/relion RRID:SCR_016274</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SerialEM</td>\n      <td>Mastronarde, 2005</td>\n      <td>RRID:SCR_017293</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSPARC v2</td>\n      <td>Structura Biotechnology</td>\n      <td>https://cryosparc.com/ RRID:SCR_016501</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>Liebschner et al., 2019</td>\n      <td>https://www.phenix-online.org/ RRID:SCR_014224</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>Emsley et al., 2010</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/ RRID:SCR_014222</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>Schr\u00f6dinger, 2020</td>\n      <td>https://pymol.org/2/ RRID:SCR_000305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>Pettersen et al., 2004</td>\n      <td>https://www.cgl.ucsf.edu/chimera RRID:SCR_004097</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 7</td>\n      <td>GraphPad Software</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SoftMax Pro 6</td>\n      <td>Molecular Devices</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Axon Digidata 1550B digitizer</td>\n      <td>Molecular Devices</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clampex 10.6</td>\n      <td>Molecular Devices</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CHAP</td>\n      <td>Klesse et al., 2019</td>\n      <td>https://www.channotation.org/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clampfit 10.6</td>\n      <td>Molecular Devices</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>QUANTIFOIL R1.2/1.3 holey carbon grids</td>\n      <td>Quantifoil</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>FEI Vitrobot Mark IV</td>\n      <td>FEI Thermo Fisher</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nThe gene encoding human TMEM175 was synthesized (SynBio) and subcloned into a BacMam expression vector with a C-terminal EGFP-tag fused via a short linker containing a PreScission protease site (Goehring et al., 2014). The plasmid was mixed with PEI 25 k (Polysciences, Inc) for 30 min and then used to transfect HEK293S GnTi\u2013 cells (ATCC\u00a0CRL-3022). After 24 hr incubation at 37 \u00b0C, sodium butyrate was added to a final concentration of 10 mM, and cells were allowed to grow at 37 \u00b0C for an additional 48\u201372 hr before harvesting. Cell pellets were washed in phosphate-buffered saline solution and flash frozen in liquid nitrogen. Expressed protein was solubilized in 2% lauryl maltose neopentyl glycol (LMNG, Anatrace), 20 mM HEPES pH 7.5, 150 mM KCl supplemented with protease-inhibitor cocktail (1 mM PMSF, 2.5 \u03bcg/mL aprotinin, 2.5 \u03bcg/mL leupeptin, 1 \u03bcg/mL pepstatin A) and DNase. Solubilized protein was separated by centrifugation 74,766 g for 40 mins, followed by binding to anti-GFP nanobody resin for 2 hr. Anti-GFP nanobody affinity chromatography was performed by 20 column volumes of washing with buffer containing 0.1% LMNG, 20 mM HEPES pH 7.5, 150 mM KCl, 2 mM DTT, followed by overnight PreScission digestion, and elution with wash buffer. Eluted protein was further purified by size exclusion chromatography on a Superdex 200 Increase 10/300 GL (GE healthcare) in SEC buffer (0.1% LMNG, 50 mM Tris pH 8.0, 150 mM KCl, 2 mM DTT). Peak fractions were pooled and concentrated to\u00a0~4 mg/mL using CORNING SPIN-X concentrators (100 kDa cutoff). For the CsCl samples, KCl was replaced with CsCl for all steps of the purification.\n\n### Proteoliposome reconstitution and flux assay\n\n1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (POPG) in chloroform (Avanti) were mixed in a ratio 3:1 (mg:mg) and dried under argon gas. The dried lipid mixture was solubilized in pentane and dried again under argon gas to remove residual chloroform. Dried lipids were then desiccated for 2 hr under vacuum. Lipids were resuspended in 10 mM Hepes pH 7.4, 300 mM KCl to a final concentration of 10 mg/ml. Unilamellar vesicles were formed by sonication and then solubilized using 8% (w/v) octyl maltoside. Full length hTMEM175 purified in LMNG at a concentration of 1 mg/ml was mixed with the octyl maltoside-solubilized lipids and dialyzed using 25 kDa MWC bags (SpectraPor) in 10 mM Hepes pH 7.4, 300 mM KCl, 2 mM dithiothreitol (DTT) for 5 days with daily exchange of dialysis buffer. After dialysis, harvested proteoliposomes were snap frozen in liquid nitrogen and stored at \u221280 \u00b0C until use. Proteoliposomes were rapidly thawed at 37 \u00b0C, sonicated for 5 s, incubated at room temperature for 2\u20134 hr before use, and then diluted 100-fold into a flux assay buffer composed of 10 mM Hepes pH 7.4, 300 mM NaCl, 0.2 \u00b5M 9-amino-6-chloro-2-methoxyacridine (ACMA).\n\nData were collected on a SpectraMax M5 fluorometer (Molecular Devices) using Softmax Pro six software. ACMA excitation/emission wavelengths were 410/490 nm, respectively. Fluorescence intensity measurements were collected every 30 s. The ionophore CCCP (1 \u00b5M) and valinomycin (20 nM) were added at 150 s and 600 s, respectively.\n\n### Electron microscopy sample preparation and data acquisition\n\n4\u20135 \u03bcl of purified hTMEM175 at a concentration of 4 mg/ml was applied to glow-discharged Au 400 mesh QUANTIFOIL R1.2/1.3 holey carbon grids (Quantifoil, and then plunged into liquid nitrogen-cooled liquid ethane with an FEI Vitrobot Mark IV (FEI Thermo Fisher). Grids were transferred to a 300 keV FEI Titan Krios microscopy equipped with a K2 summit direct electron detector (Gatan). Images were recorded with SerialEM (Mastronarde, 2005) in super-resolution mode at 22,500x, corresponding to pixel size of 0.544 \u00c5. Dose rate was eight electrons/pixel/s, and defocus range was 1.2\u20132.5 \u00b5m. Images were recorded for 8 s with 0.2 s subframes (total 40 subframes), corresponding to a total dose of 61 electrons/\u00c52.\n\n### Electron microscopy data processing\n\n40-frame super-resolution movies (0.544 \u00c5/pixel) of TMEM175 in KCl were gain corrected, Fourier cropped by two and aligned using whole-frame and local motion correction algorithms by Motioncor2 (Zheng et al., 2017) (1.088 \u00c5/pixel). Whole-frame CTF parameters were determined using CTFfind 4.1.10 (Rohou and Grigorieff, 2015). Approximately 500 particles were manually selected to generate initial templates for autopicking that were improved by several rounds of two-dimensional classification in Relion 3.0 (Scheres, 2016), resulting in 2,499,425 particles for KCl data set 1 and 1,654,189 particles for KCl data set 2. False-positive selections and contaminants were excluded from the data using multiple rounds of heterogeneous classification in cryoSPARC v2 (Punjani et al., 2017) using models generated from the ab initio algorithm in cryoSPARC v2, resulting in a stack of 571,468 particles. After particle polishing in Relion and local CTF estimation and higher order aberration correction in cryoSPARC v2, a consensus reconstruction was determined at resolution of 2.7 \u00c5. 3D variability analysis in cryoSPARC v2 was then employed to characterize conformational heterogeneity, revealing two states that were subsequently used for iterative rounds of supervised heterogeneous refinement in cryoSPARC v2. The final stack for class 1 contained 342,340 particles and yielded a reconstruction with an estimated resolution of 2.6 \u00c5 by non-uniform refinement in cryoSPARC v2 (Punjani et al., 2019). The final stack for class 2 contained 70,132 particles and yielded a reconstruction with an estimated resolution of 3.0 \u00c5 by non-uniform refinement in cryoSPARC v2. The final reconstructions of class 1 and class 2 were further improved by employing density modification on the two unfiltered half-maps with a soft mask in Phenix (Terwilliger et al., 2019).\n\n40-frame super-resolution movies (0.544 \u00c5/pixel) of TMEM175 in CsCl were gain corrected, Fourier cropped by two and aligned using whole-frame and local motion correction algorithms by Motioncor2 (1.088 \u00c5/pixel). Approximately 500 particles were manually selected to generate initial templates for autopicking that were improved by several rounds of two-dimensional classification in Relion and autopicking using Relion, resulting in 2,537,436 particles for CsCl data set 1 and 1,737,783 particles for CsCl data set 2. False-positive selections and contaminants were excluded through iterative rounds of heterogeneous classification in cryoSPARC v2 using models generated from the ab initio algorithm in cryoSPARC v2, resulting in a stack of 330,698 particles. After particle polishing in Relion and local CTF estimation and higher order aberration correction in cryoSPARC v2, a consensus reconstruction was determined to 3.1 \u00c5. 3D variability analysis in cryoSPARC v2 was then employed to characterize conformational heterogeneity, revealing two states that were used for iterative rounds of seeded heterogeneous refinement in cryoSPARC v2. The final stack for class 1 contained 104,126 particles and yielded a reconstruction with an estimated resolution of 3.2 \u00c5 by non-uniform refinement in cryoSPARC v2. The final stack for class 2 contained 70,132 particles and yielded a reconstruction with an estimated resolution of 3.2 \u00c5 by non-uniform refinement in cryoSPARC v2. The final reconstructions of class 1 and class 2 were further improved by employing density modification on the two unfiltered half-maps with a soft mask that includes the detergent micelle in Phenix.\n\n### Model building and coordinate refinement\n\nPoly-alanine helices were manually built into the transmembrane helices of the class 1 K+ density map using coot (Emsley et al., 2010). The helices were manually registered using large side chains and the connecting loops were manually built into the density. Densities corresponding to TM5 and TM6 (residues 174\u2013251) were too poorly ordered and omitted from the model. The final model contains residues 30\u2013173, and 254\u2013476. Four ions were assigned by identifying overlapping non-protein density peaks in the class 1 K+ and Cs+ maps. Atomic coordinates were refined against the density modified map using phenix.real_space_refinement with geometric and Ramachandran restraints maintained throughout (Adams et al., 2010).\n\nThe refined class 1 structure was manually docked into the class 2 density map using chimera (Pettersen et al., 2004). The model was manually rebuilt using coot to fit the density. Three ions were assigned by identifying overlapping non-protein density peaks in the K+ and Cs+ maps. Water molecules were placed into the remaining non-protein density peaks. Atomic coordinates were refined against the density modified map using phenix.real_space_refinement with geometric and Ramachandran restraints maintained throughout (Adams et al., 2010).\n\nThe Cs+ class 1 and class 2 structures were determined by docking in the K+ class 1 and class 2 structure in Coot and manually rebuilding the protein to best fit the density map. Atomic coordinates were refined against the density modified map using phenix.real_space_refinement with geometric and Ramachandran restraints maintained throughout (Adams et al., 2010).\n\n### Fluorescence size exclusion chromatography (FSEC)\n\nPlasmids encoding GFP-tagged versions of wild-type and mutant hTMEM175 were mixed with PEI 25 k (Polysciences, Inc) for 30 min and then used to transfect HEK293S GnTi\u2013 cells. After 24 hr incubation at 37 \u00b0C, sodium butyrate was added to a final concentration of 10 mM, and cells were allowed to grow at 37 \u00b0C for an additional 48\u201372 hr before harvesting. Cell pellets were washed in phosphate-buffered saline solution and flash frozen in liquid nitrogen. Expressed protein was solubilized in 2% lauryl maltose neopentyl glycol (LMNG), 20 mM HEPES pH 7.5, 150 mM KCl supplemented with protease-inhibitor cocktail (1 mM PMSF, 2.5 \u03bcg/mL aprotinin, 2.5 \u03bcg/mL leupeptin, 1 \u03bcg/mL pepstatin A) and DNase. Solubilized protein was separated by centrifugation 21,130 g for 60 mins. Separated proteins were injected to and monitored by fluorescence size exclusion chromatography on a Superose 6 Increase 10/300 GL (GE healthcare) in SEC buffer (0.1% LMNG, 50 mM Tris pH 8.0, 150 mM KCl, 2 mM DTT). Fluorescence was monitored at 488/509 nm of excitation/emission wavelength, respectively.\n\n### Electrophysiology\n\nElectrophysiological recordings of hTMEM175 constructs were performed in HEK293T cells (ATCC\u00a0CRL-3216). HEK293T cells cultured in DMEM supplemented with 10% FBS were transfected with 2 \u03bcg of hTMEM175 plasmid using 6 \u03bcg of PEI 25 k (Polysciences, Inc). 24\u201348 hr following transfection, cells were detached by trypsin treatment. The detached cells were transferred to poly-Lys-treated 35 mm single dishes (FluoroDish, World Precision Instruments) and incubated overnight at 37 \u00b0C in fresh media. Immediately prior to recording, media was replaced with a bath solution containing 145 mM Na- methanesulfonate (MS), 5 mM NaCl or KCl, 1 mM MgCl2, 1 mM CaCl2, 10 mM HEPES/Tris pH 7.4. 10 cm long borosilicate glass were pulled and fire polished (Sutter instrument). The resistance of glass pipette was 5\u00a0~\u00a08 M\u03a9 were filled with a pipette solution containing 150 mM K-MS or Cs-MS, 5 mM MgCl2, 10 mM EGTA/Tris, 10 mM HEPES/Tris pH 7.4, G\u03a9 seals were formed after gentle suction. The recordings were performed in whole cell patch clamp configuration using the following protocol: from a holding potential of 0 mV, the voltage was stepped to voltages between \u2212100 and +100 mV, in 20 mV increments. The currents were recorded using Axon Digidata 1550B digitizer and Clampex 10.6 (Molecular Devices, LLC) and analyzed using Clampfit 10.6 (Molecular Devices, LLC). Each experiment was performed a unique cell and currents were normalized to the maximum current of each experiment (at +100 mV). Each condition includes cells from at least two independent transfections.\n\nIn bi-ionic conditions, the relative permeability between cations are calculated using the following equations.\n\n$$\n\\frac{P_{X}}{P_{Y}}=\\frac{[Y^{+}]_{ext}}{[X^{+}]_{int}}e^{-(\\frac{E_{rev}F}{RT})}\n$$\n\nWhere PX and PY are the permeabilities of intracellular and extracellular cation X and Y, respectively, Erev is the measured reversal potential, F is Faradays\u2019 constant, R is the gas constant, and T is the absolute temperature.\n\nFigures were prepared with UCSF Chimera (Pettersen et al., 2004), PyMol (Schr\u00f6dinger), CHAP (Klesse et al., 2019) and Prism 7 (GraphPad).\n",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "01c5fadf-cfc2-4483-84f4-cb232afc4123",
+      "submission_id": "6ad37c0a-bba1-4b1e-b017-5d8c1472e55b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, University of Wisconsin-Madison United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53430.sa1](https://doi.org/10.7554/eLife.53430.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nAlthough the human lysosomal potassium ion channel, TMEM175, lacks a canonical selectivity filter, it is 40-fold more selective to potassium than sodium. In a canonical K+ selectivity filter, K+ ions bind preferentially to the ion binding sites in the filter. This study reveals a potentially alternate mechanism of ion selectivity wherein the cost of desolvation of an ion as it enters a hydrophobic constriction is the most important determinant. K+ can be desolvated more easily than Na+ and therefore these channels are potassium selective.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural basis for permeation and selectivity in the non-canonical human lysosomal K+ channel TMEM175\" for consideration by eLife. Your article has been reviewed by Richard Aldrich as the Senior Editor, a Reviewing Editor, and three reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study represents a significant contribution to our understanding of ion selectivity in a recently discovered new family of K+-permeable channels, the TMEM175 potassium channel family, which is present in all three kingdoms of life. In prokaryotes, these channels display modest potassium over sodium selectivity but in humans the TMEM175 is ~ 40-folds more selective for K+ than for Na+ ions. Interestingly, these novel channels lack the typical signature sequence (i.e., TTVGYGD) that is characteristic of the highly K+ selective channels, which are exemplified by the shaker and KcsA channels. Although structures of the prokaryotic channels have been solved recently, the ion-binding sites have not been observed in those structures. The authors solved structures of this channel in several conditions: (1) high potassium, (2) low pH, and (3) high Cs. The high K+ structure is at a resolution below 3 \u00c5, and very high quality. There are several interesting aspects to this structure. First, two of the transmembrane segments from one of the two 6-TM repeats in the dimer are disordered and cannot be modeled, while the corresponding two segments from the other repeat are very well ordered. Second, despite the fact that the pore appears very narrow with the narrowest constriction formed by 4 isoleucines where only dehydrated potassium can squeeze by, there are many non-protein densities in the pore that the authors attribute to water and K+. To distinguish between them, they determined the structure in Cs+, under the assumption that since Cs+ scatters electrons stronger than K+, hTMEM175 in Cs+ should display strong peaks at the Cs+ binding sites, which should be in the same locations as K+, since Cs+ permeates the channel as well. They identified 5 K+ binding sites, where 3 are on the symmetry axis and 2 are off it but none of them are fully coordinated by protein atoms. They thus conclude that the selectivity arises from the transient dehydration of the ions as they pass through the narrowest Ile constriction. Overall, this study contributes new knowledge that will ultimately lead to a broader understanding of the mechanisms of ion selectivity. Nevertheless, all the reviewers have expressed concerns that the interpretation of the data is some instances is too narrow and a more nuanced discussion is in order.\n\nEssential revisions:\n\n1) One of the key points here is the role of TMEM175 \"hydrophobic constrictions\" as sieving barriers for discriminating between the various dehydrated cations. This is difficult to reconcile with our existing knowledge of ion permeation even though a similar mechanism has been proposed previously by Jiang and his colleagues. One possibility is these channels are in a closed conformation and that these hydrophobic constrictions act as dewetted gates (as opposed to steric gates). Although mutations in the hydrophobic residues alter ion conduction, it is not clear whether these mutations modify the structure. I would like the authors to rationalize their point of view and discuss it in the context of dewetting and the possibility that the hydrophobic constriction could be hydrophobic gates (Aryal et al., 2015).\n\n2) Related to the above point. Please add a paragraph in the Discussion section acknowledging the possibility that the channel is in a closed state in the structures presented and that there may be additional determinants for selectivity in this channel family.\n\n3) In subsection \u201cHuman TMEM175 is highly selective for K+\u201d, the ACMA assay to test the function of the TMEM175 was done in POPE:POPG liposomes and the phospholipid composition so the lysosome is dramatically different. Can the authors argue why did they do the assay in this lipid composition? Why not to perform the ACMA assay as it has been done before for the Hv1 channel? The Mackinnon group performed the assay in a lipid composition that mimic the membrane of human neutrophil plasma membrane, which is more physiologically relevant.\n\n4) Subsection \u201cStructure of the ion conduction pathway\u201d, the authors concluded too strong that because the T274V was nonconductive, \"the water-mediated ion binding site, which is disrupted in the T274V mutant is essential for ion permeation\". Although it is indeed very provocative to state this conclusion, we can imagine several possible scenarios in which the T274V halt ion conduction beside disrupting the water-mediated ion binding site. I advise the authors to be more conservative and less conclusive since in the absence of the T274V structure, they cannot categorically conclude this. Other mutations could have been done (as T274S), and the cryo-EM structures of these mutants could have been solved to support the mechanism proposed by the authors.\n\n5) The authors attempted to use a low resolution cryo-EM structure soaked in Cesium to assign the K+-binding sites in the TMTM175 structure. This experimental approach assume that the putative 5 ion binding sites are equivalents and that they have the same ion selectivity. It has been shown that in KcsA, the second binding site although highly selective for potassium ions, at steady state conditions, does not coordinate Cesium or Rubidium ions. So, the authors should explain to the reader the limitation(s) of this experimental approach since it could draw incorrect conclusions. For example, the Cs4 does not directly correspond to densities found on the hTMEM175k density map and that could be explain by a different type of interaction between Cs+ ions and the protein at that specific site.\n\n6) In Subsection \u201cStructure of the ion conduction pathway\u201d the authors concluded that because the cryo-EM structure at pH 5.5, that mimics a late endosomes and lysosomes, seems to be identical to the hTMEM175k (obtained at basic pH), then these results are consistent with a channel no gated by pH. I agree to disagree here, since there are many assumptions and generalization in this sentence. For starters, nobody knows how the hTMEM175 channel is gated. The very simplistic and superficial functional studies of the hTMEM175 solely showed non-inactivating and non-voltage dependent macroscopic currents. But these whole cell currents could arise for channels that are inactivated but at the steady state have a sizable rate of recovery from the inactive state. One could argue that the absence of a lipid bilayer precluded the structural changes elicited by the acidic pH. The lack of structural changes does not categorically prove the point of Oh et al. Hence, I would advise a more conservative narrative that include other reasons of why the structures at different pHs are identical. Finally, it is very intriguing why the protonation state of the acidic residues that coordinate K1 (i.e., D279 or E282), which are very close to the luminal side, did not change the occupancy of the ion at the K1 site. I would argue that in the absence of a lipid bilayer, the local concentration of protons is significantly lower in the cryo-EM structure and therefore the ion occupancy of the K1 site is the same as the one obtained at basic pH.\n\n7) The authors proposed that negative charges on the channel help to select cations over anions. However, there is no experimental data to support this claim. Does the selectivity change if these charges are neutralized? If this model is true, the channel ion selectivity should change as a function of the pHs, as the protonation state of these residues is changed.\n\n8) I would like the authors to discuss the fact that the TMEM175 normally works with a deltapH, which is acidic at the luminal side (pH of ~4.8). How does this fact affect their conclusions about the lack of pH-dependent putative structural changes? In physiologically relevant conditions the channel confront to dramatically different environments in regard to the proton concentration.\n\n9) I am concerned about the reversal potential measurements. If the seals have some degree of leak, the authors could be wrong estimating the reversal potential. For instance, if the cells have some chloride leak, as usually happen, your reversal potential is going to be altered. A leak subtraction protocol (P over N) could solve this problem. As the ion selectivity measurements are an important dataset in the present work, I think the authors should make sure that the reported measurements are fully reliable, hence a very clear explanation how they were performed must be provided.\n\n10) Lack of functional activity in a mutant channel, such as the T274V or the I46M/I271M mutants can arise due to an effect on channel folding/assembly in the membrane. An interpretation of the mutants requires that an effect of the amino acid substitution on folding/assembly is ruled out.\n\n11) A I46N/I274N substitution has been shown to result in a loss of ionic selectivity (in Lee, 2017). This result should be described and discussed in the manuscript.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Gating and selectivity mechanisms for the lysosomal K+ channel TMEM175\" for further consideration by eLife. Your revised article has been evaluated by Richard Aldrich (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) The reviewers agree that the manuscript has improved significantly, and the additional data may provide insight into the mechanism of gating in TMEM175. Nonetheless, the reviewers remain concerned that you are over interpreting your data and want you to tone down the claims. While your discovery is certainly exciting, it is important to convey to a general reader the uncertainties associated with interpretations based primarily on the structure. Given that there is no single channel data or additional biochemistry to provide a \"functional\" framework for interpreting this structural data, it is necessary that you explicitly address these caveats.\n\n2) Even with regards to ion selectivity, one has to be careful because the open structure may not correspond to an open state unless it is validated in another way. If that is the case, then the mechanism of ion selectivity as proposed may not stand. Therefore, please make sure this caveat is taken into consideration.\n\n3) The figure numbers are out registry i.e., in subsection \u201cIon-conduction pathway contains ordered ions and waters\u201d it reads.\u2026\"Glu259 via ordered water (Figure 4A)\" it should be (Figure 5A).\n\n4) Can the authors add the distance between the ions on Figure 4A, B and D?\n\n5) The assignment of the density at the Ile constriction as K+ is highly speculative. The density is very weak in the Cs+ map and is very poor when the C2 symmetry is not applied. It is also hard to imagine that K+ ions would be stable in an hydrophobic environment. The authors need to mention that the assignment of the density as K+ is speculative.\n\n6) The FSEC profiles shown in Figure 3\u2014figure supplement 1A are saturating the detector (flat at the top). These curves cannot be used to claim that the mutants were expressed at similar levels to wild type as the levels can be different but not seen due to detector saturation. That claim should be dropped. The curves do indicate that the mutants fold similar to the wild type.\n",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f41d4af8-7a6f-4108-a854-e0c3fddcfe91",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C1",
+      "claim": "TMEM175 is a K+-selective ion channel expressed in lysosomal membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane protein 175 (TMEM175) is a K+-selective ion channel expressed in lysosomal membranes, where it establishes a membrane potential essential for lysosomal function and its dysregulation is associated with the development of Parkinson's Disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational claim about TMEM175 function and is supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "8c1cec36-231a-4284-939a-ec4fc227d8d1",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C2",
+      "claim": "TMEM175 establishes a membrane potential essential for lysosomal function.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane protein 175 (TMEM175) is a K+-selective ion channel expressed in lysosomal membranes, where it establishes a membrane potential essential for lysosomal function and its dysregulation is associated with the development of Parkinson's Disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is stated in the abstract and is consistent with the channel's ion permeation properties demonstrated in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "031beb88-2377-44c0-bc9f-ca7aa9a0da1f",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C3",
+      "claim": "Dysregulation of TMEM175 is associated with the development of Parkinson's Disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane protein 175 (TMEM175) is a K+-selective ion channel expressed in lysosomal membranes, where it establishes a membrane potential essential for lysosomal function and its dysregulation is associated with the development of Parkinson's Disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This association is stated in the abstract and supported by multiple citations in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "53da1dcb-dd5e-4225-a894-b050a11fa09c",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C4",
+      "claim": "Human TMEM175 adopts a homodimeric architecture with a central ion-conduction pore lined by the side chains of the pore-lining helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Human TMEM175 adopts a homodimeric architecture with a central ion-conduction pore lined by the side chains of the pore-lining helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural finding is directly stated in the abstract and supported by the cryo-EM structures presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "b1e1ba7c-bdfc-4422-be92-c2307bbc53b3",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C5",
+      "claim": "Conserved isoleucine residues in the center of the pore serve as the gate in the closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conserved isoleucine residues in the center of the pore serve as the gate in the closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This gating mechanism is stated in the abstract and demonstrated by structural comparison of open and closed conformations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "bb5b6d0e-24d8-46c2-985b-54d5b3975a31",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C6",
+      "claim": "Conserved isoleucine residues establish a constriction essential for K+ selectivity in the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the widened channel in the open conformation, these same residues establish a constriction essential for K+ selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This selectivity mechanism is stated in the abstract and supported by mutagenesis data showing that mutations to these residues alter ion selectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "6319eafd-fd13-4249-84bd-bcfb02c89c23",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C7",
+      "claim": "TMEM175 was recently identified as a constitutively-active potassium (K+) selective channel expressed in lysosomal membranes responsible for establishing a membrane potential across the lysosomal membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane protein 175 (TMEM175) was recently identified as a constitutively-active potassium (K+) selective channel expressed in lysosomal membranes responsible for establishing a membrane potential across the lysosomal membrane (Cang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Cang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "1c3a5843-55f1-457b-842a-240ee087b920",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C8",
+      "claim": "TMEM175 is implicated in cellular proteostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM175 is implicated in cellular proteostasis and its mutation is associated with the development of Parkinson's disease through a yet unknown mechanism, underscoring the importance of this channel to regulation of cellular homeostasis (Blauwendraat et al., 2019; Cang et al., 2015; Iwaki et al., 2019; Jinn et al., 2019; Jinn et al., 2017; Krohn et al., 2020; Nalls et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "cacccf95-1033-4bf8-ac6f-7ecf3d1634ac",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C9",
+      "claim": "Mutation of TMEM175 is associated with the development of Parkinson's disease through a yet unknown mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM175 is implicated in cellular proteostasis and its mutation is associated with the development of Parkinson's disease through a yet unknown mechanism, underscoring the importance of this channel to regulation of cellular homeostasis (Blauwendraat et al., 2019; Cang et al., 2015; Iwaki et al., 2019; Jinn et al., 2019; Jinn et al., 2017; Krohn et al., 2020; Nalls et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "462b86ff-e463-480d-ab4e-a1d5208d1a2e",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C10",
+      "claim": "TMEM175 is evolutionarily distinct from known K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM175 is evolutionarily distinct from known K+ channels, displaying a unique membrane topology as well as lacking the conserved TVGYG selectivity filter present in canonical K+ channels such as shaker K+, BK and KcsA (Doyle, 1998; Long et al., 2005; Tao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to canonical K+ channel structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "e82e5751-851c-4144-8d14-4b16695d77bf",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C11",
+      "claim": "TMEM175 lacks the conserved TVGYG selectivity filter present in canonical K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM175 is evolutionarily distinct from known K+ channels, displaying a unique membrane topology as well as lacking the conserved TVGYG selectivity filter present in canonical K+ channels such as shaker K+, BK and KcsA (Doyle, 1998; Long et al., 2005; Tao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to canonical K+ channel structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "452abae0-c213-42e6-8e33-b7d381b7a601",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C12",
+      "claim": "TMEM175 permeates cations according to a lyotropic sequence, with Ca2+ being least permeable, followed by Na+, K+ and Cs+ being most permeable.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TMEM175 permeates cations according to a lyotropic sequence, with Ca2+ being least permeable, followed by Na+, K+ and Cs+ being most permeable (Cang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This permeation property is stated in the introduction with citation to Cang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "f14b9100-5da5-41fa-970b-7f98cfe60c9c",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C13",
+      "claim": "4-aminopyridine can inhibit TMEM175 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one of the common K+ channel inhibitors, 4-aminopyridine, can inhibit TMEM175 activity, while others, such as tetraethylammonium, do not alter channel activity (Cang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This pharmacological property is stated in the introduction with citation to Cang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "38ce31d2-f190-4a8b-a894-65396c9bf448",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C14",
+      "claim": "Tetraethylammonium does not alter TMEM175 channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one of the common K+ channel inhibitors, 4-aminopyridine, can inhibit TMEM175 activity, while others, such as tetraethylammonium, do not alter channel activity (Cang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This pharmacological property is stated in the introduction with citation to Cang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "eaeb8d8b-923c-4551-9e1d-f6e3c15fd438",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C15",
+      "claim": "Prokaryotic TMEM175 channels adopt a homotetrameric architecture with each protomer comprising a single 6-TM domain surrounding a central ion-conduction pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures of TMEM175 homologs from the prokaryotes Chamaesiphon minutus (Lee et al., 2017) and Marivirga tractuosa (Brunner et al., 2018) revealed that prokaryotic TMEM175 channels adopt a homotetrameric architecture with each protomer comprising a single 6-TM domain surrounding a central ion-conduction pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information about prokaryotic homologs is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "c9e541fd-07ab-4268-ab06-9a3a06402884",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C16",
+      "claim": "Prokaryotic TMEM175 channels are only minimally selective for K+, permeating only 2 to 4 K+ ions for every Na+ ion compared to 36 for human TMEM175.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, unlike mammalian TMEM175 channels, prokaryotic TMEM175 channels are only minimally selective for K+, permeating only 2 to 4 K+ ions for every Na+ ion compared to 36 for human TMEM175 (Brunner et al., 2018; Cang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison of selectivity between prokaryotic and mammalian TMEM175 is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "c3fd5abb-382d-4ba3-b2d2-d985c5b3c522",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C17",
+      "claim": "Transient overexpression of hTMEM175 as a GFP-fusion protein in HEK293T cells leads to expression at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure the ion selectivity of recombinant hTMEM175 channels, we took advantage of the observation that while hTMEM175 is endogenously expressed in the membranes of endosomes and lysosomes, transient overexpression as a GFP-fusion protein in HEK293T cells leads to expression of hTMEM175 at the plasma membrane (Figure 1\u2014figure supplement 1; Lee et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental observation is stated in the results and supported by Figure 1\u2014figure supplement 1 and citation to Lee et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "4354a1d0-757a-43ac-90ce-38597be4baf4",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C18",
+      "claim": "In a bi-ionic condition with 150 mM K+ intracellular and 150 mM Na+ extracellular, hTMEM175 displays a reversal potential of \u221255 \u00b1 2.7 mV, corresponding to a K+/Na+ permeation ratio of ~9.",
+      "claim_type": "EXPLICIT",
+      "source": "In a bi-ionic condition, in which the pipette (intracellular) solution contains 150 mM K+ and the bath (extracellular) solution contains 150 mM Na+, hTMEM175 displays a strong preference for K+ (Figure 1A). The reversal potential calculated from voltage families stepping from \u2212100 mV to +100 mV was \u221255 \u00b1 2.7 mV, corresponding to a K+/Na+ permeation ratio (PK/PNa) of ~9 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This electrophysiological measurement is stated in the results and supported by data in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "8f1ed610-a235-44ba-b676-342a9ba24ea9",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C19",
+      "claim": "In a Cs+/Na+ bi-ionic condition, the mean reversal potential of hTMEM175 is \u221265 \u00b1 4.1 mV (PCs/PNa of ~13).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous results (Cang et al., 2015), hTMEM175 is also selective for Cs+ over Na+. In a Cs+/Na+ bi-ionic condition, the mean reversal potential of hTMEM175 is \u221265 \u00b1 4.1 mV (PCs/PNa of ~13) (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This electrophysiological measurement is stated in the results and supported by data in Figure 1C-D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "be598076-d701-4af2-830a-823b4e93891d",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C20",
+      "claim": "Non-transfected HEK293T cells display non-selective currents whose magnitude varied between 50 and 100 pA at +100 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured whole-cell currents from non-transfected HEK293T cells, which revealed the presence of non-selective currents whose magnitude varied between 50 and 100 pA at +100 mV (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This control measurement is stated in the results and supported by data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "eb682165-da5c-49df-b7c6-d4e5a8d42d2c",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C21",
+      "claim": "The true ion-selectivity values of hTMEM175 are likely closer to those measured in endolysosomal patch clamp (PK/PNa ~36).",
+      "claim_type": "EXPLICIT",
+      "source": "Because these endogenous currents are also present in the hTMEM175 transfected cells, the ion-selectivity measurements determined using whole-cell patch clamp underrepresent the selectivity of hTMEM175 and the true values are likely closer to those measured in endolysosomal patch clamp (PK/PNa ~36) (Cang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results with citation to Cang et al., 2015.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "7b2ec9b6-1a8c-4186-8b31-06f02aeda3cc",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C22",
+      "claim": "Robust K+ efflux was detected from proteoliposomes containing hTMEM175 following the addition of CCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a 9-amino-6-chloro-2-methoxyacridine (ACMA)-based flux assay (Su et al., 2016) with 300 mM K+ inside of the vesicles and 300 mM Na+ outside, robust K+ efflux was detected from proteoliposomes containing hTMEM175 following the addition of the ionophore carbonyl cyanide m-chlorophenylhydrazone (CCCP) compared to empty liposomes (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This flux assay result is stated in the results and supported by data in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "b7e9f1e5-45da-432d-8d4f-ad405ffb383d",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C23",
+      "claim": "No flux could be detected when 1 mM 4-aminopyridine was added to the proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "No flux could be detected when the inhibitor 4-aminopyridine (4-AP) was added to the proteoliposomes at a concentration of 1 mM, demonstrating that reconstituted hTMEM175 channels are active and that they retain their K+ selectivity and their pharmacological sensitivity to 4-AP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This inhibition result is stated in the results and supported by data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "03da0a40-ac4f-44c5-b5f7-98699c4a7d48",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C24",
+      "claim": "Reconstituted hTMEM175 channels retain their K+ selectivity and pharmacological sensitivity to 4-AP.",
+      "claim_type": "EXPLICIT",
+      "source": "No flux could be detected when the inhibitor 4-aminopyridine (4-AP) was added to the proteoliposomes at a concentration of 1 mM, demonstrating that reconstituted hTMEM175 channels are active and that they retain their K+ selectivity and their pharmacological sensitivity to 4-AP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is stated in the results based on the flux assay data in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "2b8fd3fd-e254-4057-ba6f-266ee577c93a",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C25",
+      "claim": "Two conformations of hTMEM175 were present among the imaged particles: class 1 resolved at 2.6 \u00c5 and class 2 resolved at 3.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Three-dimensional classification revealed that two conformations were present among the imaged particles; class 1, which was resolved at a resolution of 2.6 \u00c5, and class 2, which was resolved at a resolution of 3.0 \u00c5 (Figure 2A and Figure 2\u2014figure supplement 1, 2 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural finding is stated in the results and supported by Figure 2A, Figure 2\u2014figure supplement 1, 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "116c297a-d1ca-4235-b4ea-6a12a56a1209",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C26",
+      "claim": "hTMEM175 is composed of two homologous 6-helix repeat domains that share ~23% sequence identity.",
+      "claim_type": "EXPLICIT",
+      "source": "hTMEM175 is composed of two homologous 6-helix repeat domains that share ~23% sequence identity (Figure 2C and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural finding is stated in the results and supported by Figure 2C and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "680ee60d-a3df-4db9-80c3-95b6f570b988",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C27",
+      "claim": "hTMEM175 is homodimeric with a pseudo-four-fold symmetric architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the density map revealed that while hTMEM175 is homodimeric, similarities between the two 6-helix repeat domains result in a pseudo-four-fold symmetric architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural finding is stated in the results based on the cryo-EM density map.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "2db458b2-b64d-487f-9bb3-9fec32d2a4e2",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C28",
+      "claim": "The densities corresponding to peripheral helices TM5 and TM6 are too poorly resolved in the map for modelling.",
+      "claim_type": "EXPLICIT",
+      "source": "The densities corresponding to peripheral helices TM5 and TM6 are too poorly resolved in the map for modelling (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This limitation of the structure is stated in the results and supported by Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "acee9ac0-4d0e-47f5-948f-ec30ecdec083",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C29",
+      "claim": "hTMEM175 is a diamond-shaped channel measuring ~85 \u00c5 along the long axis and ~60 \u00c5 along the short axis when viewed from the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Viewed from the cytoplasm, hTMEM175 is a diamond-shaped channel measuring ~85 \u00c5 along the long axis and ~60 \u00c5 along the short axis with the ion-conduction pathway located at the center of the channel along the pseudo-four-fold axis (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural description is stated in the results and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "8338875c-9cba-41dd-a110-9146ec7fea85",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C30",
+      "claim": "The ion-conduction pathway is located at the center of the channel along the pseudo-four-fold axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Viewed from the cytoplasm, hTMEM175 is a diamond-shaped channel measuring ~85 \u00c5 along the long axis and ~60 \u00c5 along the short axis with the ion-conduction pathway located at the center of the channel along the pseudo-four-fold axis (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural finding is stated in the results and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "f4904c3d-2cb4-4e37-aff3-31d00c71dcc5",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C31",
+      "claim": "The structures of repeat I and repeat II are nearly identical with an RMSD of 1.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the high sequence homology between repeat I (TM1-TM6) and repeat II (TM7-TM12), alignment reveals that their structures are nearly identical with an RMSD of 1.7 \u00c5 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural comparison is stated in the results and supported by Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "79dd3c48-ea26-471d-8d66-66aa6e832965",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C32",
+      "claim": "The structures of repeat I and repeat II are homologous with the monomeric structures of TMEM175 channels from prokaryotes Chamaesiphon minutus and Marivirga tractuosa.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures of repeat I and repeat II are also homologous with the monomeric structures of TMEM175 channels from the prokaryotes Chamaesiphon minutus (TMEM175Cm) (Lee et al., 2017) and Marivirga tractuosa (TMEM175Mt) (Brunner et al., 2018; Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural comparison is stated in the results and supported by Figure 2\u2014figure supplement 4 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "ab54ff93-6d6c-4efb-855b-32faf74392bd",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C33",
+      "claim": "The ion-conduction pathway of hTMEM175 extends approximately 45 \u00c5 from the cytoplasm to the lysosomal lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "The ion-conduction pathway of hTMEM175 is located along the central axis of the channel extending approximately 45 \u00c5 from the cytoplasm to the lysosomal lumen (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural measurement is stated in the results and supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "85cc0b84-64b7-4db2-839c-8430e37eac9b",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C34",
+      "claim": "The pore is lined by the side chains of the kinked pore-lining helices, TM1 and TM7.",
+      "claim_type": "EXPLICIT",
+      "source": "The pore is lined by the side chains of the kinked pore-lining helices, TM1 and TM7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural feature is stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "ccb42cf1-22ae-4a24-a074-0ec3bf4453d1",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C35",
+      "claim": "The narrowest constriction in the pore is formed by the side chains of Ile46 from TM1 and Ile271 from TM7, which has a minimum radius of 1.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The narrowest of these constrictions is formed by the side chains of Ile46 from TM1 and Ile271 from TM7, which are conserved among all eukaryotic TMEM175 channels, and has minimum radius of 1.7 \u00c5 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural measurement is stated in the results and supported by Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "b4222bb4-d941-46c2-b9a6-78bc79bb0120",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C36",
+      "claim": "Ile46 and Ile271 are conserved among all eukaryotic TMEM175 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The narrowest of these constrictions is formed by the side chains of Ile46 from TM1 and Ile271 from TM7, which are conserved among all eukaryotic TMEM175 channels, and has minimum radius of 1.7 \u00c5 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conservation is stated in the results and can be verified in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "25a76ef3-4d0f-42ce-9cb4-12e0b396247c",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C37",
+      "claim": "Multiple non-protein density peaks are resolved within the hydrophobic vestibule below the isoleucine constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Just below the constriction formed by Ile46 and Ile271, the pore contains an expanded vestibule that is also lined by the side chains of Thr49 and Leu53 from TM1 and Thr274, Leu275 and Leu278, making it much more hydrophobic than the rest of the pore (Figure 3A). Despite its hydrophobicity, multiple non-protein density peaks are resolved within the vestibule (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the results and supported by Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "3d816ff3-10d7-4ccc-94b1-25cd8b0c3cd7",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C38",
+      "claim": "Non-protein density peaks in the vestibule represent ordered molecules rather than arising from the accumulation of noise along the two-fold symmetry axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-protein density peaks are also present in the vestibule in a density map calculated without symmetry, indicating that they represent ordered molecules rather than arising from the accumulation of noise along the two-fold symmetry axis during image processing (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interpretation is stated in the results and supported by Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "239e8d8d-96f7-42fb-ac87-0fac722d6994",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C39",
+      "claim": "Four overlapping non-protein density peaks were identified in both K+ and Cs+ class 1 maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the similarities between the class 1 structures determined in Cs+ and K+ (all-atom RMSD = 0.2 \u00c5), we could directly compare the density maps at a threshold of \u03c3 = 12 for the class 1 map determined in K+ and of \u03c3 = 8 for the class 1 map determined in Cs+, identifying four overlapping non-protein density peaks in both maps (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural finding is stated in the results and supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "90550754-b974-4587-b6aa-d9c82233e4d3",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C40",
+      "claim": "The overlapping densities in K+ and Cs+ maps were modelled as ions.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore modelled these overlapping densities as ions, either K+ or Cs+ depending on the condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This modeling decision is stated in the results based on the overlapping densities observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "9d1860ca-95ce-41b8-ad3e-6c5d06887552",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C41",
+      "claim": "The protein only minimally participates in the direct coordination of the bound ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the narrow dimensions of the pore, the protein only minimally participates in the direct coordination of the bound ions (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the results and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "219eee74-fc4f-40c6-ad1a-353bfeb088e9",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C42",
+      "claim": "Ordered water molecules form nearly all of the direct interactions with the bound ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, ordered water molecules form nearly all of the direct interactions with the bound ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation is stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "5328880e-862c-4aed-b9bd-a283502764fc",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C43",
+      "claim": "The ion in the K1 site is directly coordinated by the side chain of Ser38 and indirectly coordinated by the side chain of Asp266 and the backbone oxygens of Ser38 and Glu259 via ordered waters.",
+      "claim_type": "EXPLICIT",
+      "source": "Near the cytoplasmic entrance to the pore, the ion in the K1 site is directly coordinated by the side chain of Ser38 and indirectly coordinated by the side chain of Asp266 and the backbone oxygens of Ser38 and Glu259 via ordered waters (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural detail is stated in the results and supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "e273e908-abe2-4edb-853c-9a1e42023e44",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C44",
+      "claim": "The ion in the K2 site is indirectly coordinated by the side chain of Ser45 and the backbone oxygens of Ala263 and Gly267 via ordered waters.",
+      "claim_type": "EXPLICIT",
+      "source": "The ion in the K2 site is indirectly coordinated by the side chain of Ser45 and the backbone oxygens of Ala263 and Gly267 via ordered waters (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural detail is stated in the results and supported by Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "73e6004c-ee63-4894-bda0-6c32a1271c78",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C45",
+      "claim": "The K3 site is located near the isoleucine constriction and is flanked by two layers of four water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The K3 site, the weakest of the four sites in both density maps, is located near the isoleucine constriction that is flanked by two layers of four water molecules (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural detail is stated in the results and supported by Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "2c2af7e8-b27d-400d-b02a-5a08261ce146",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C46",
+      "claim": "The density for the K3 ion is elongated and extends between the two layers of waters on either side of the isoleucine constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the spherical densities resolved at the other ion-binding sites, the density for the K3 ion is elongated and extends between the two layers of waters on either side of the isoleucine constriction (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the results and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "46e87555-4c9b-45d8-a046-c5d9056383b2",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C47",
+      "claim": "The K3 density corresponds to the sum of two partially-occupied ion-binding sites positioned on either the cytoplasmic or the luminal side of the constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the center of the constriction is hydrophobic, ions are unlikely to stably bind there, and so we speculate that the K3 density corresponds to the sum of two partially-occupied ion-binding sites positioned on either the cytoplasmic or the luminal side of the constriction where the ions can be directly coordinated by the nearby waters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results as speculation based on the structural observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "a8e10bcb-48dc-44c1-b4d2-81b285c670c5",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C48",
+      "claim": "The fourth ion-binding site (K4) is located in the hydrophobic vestibule near the luminal entrance to the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The fourth ion-binding site (K4) is located in the hydrophobic vestibule near the luminal entrance to the pore (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural detail is stated in the results and supported by Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "79d48c85-9612-4808-9618-ce61a1cbc88e",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C49",
+      "claim": "Two symmetry-related copies of sites K1, K2 and K4 are present in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, two symmetry-related copies of sites K1, K2 and K4 are present in the structure because the K1, K2 and K4 sites are located slightly off of the central axis of the pore (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the results and supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "efe2a198-f274-4472-88d6-390e5a36390d",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C50",
+      "claim": "The distances between the pairs of K1, K2 and K4 ion-binding sites are too close for both symmetry-related sites to be simultaneously occupied with ions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the distances between the pairs of K1, K2 and K4 ion-binding sites are 3.0 \u00c5, 2.9 \u00c5 and 3.3 \u00c5, respectively, which are likely too close for both symmetry-related sites to be simultaneously occupied with ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results based on the measured distances.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "d33d9442-a5c5-4b1f-bfb7-5be936783bb1",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C51",
+      "claim": "The class 1 and class 2 structures have an all-atom RMSD of 0.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the two classes are very similar, with an all-atom RMSD of 0.9 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural comparison is stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "3e2ff1e1-b5c8-4c21-8996-012a758e5fbb",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C52",
+      "claim": "The similarities between class 1 and class 2 are especially pronounced in the cytoplasmic side of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarities are especially pronounced in the cytoplasmic side of the channel, which likely arises from the existence of interaction networks at the intra-subunit interfaces between repeats I and II and at the inter-subunit interfaces between protomers (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the results and supported by Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "bf730496-810b-460d-8907-fc6b6222db53",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C53",
+      "claim": "The interaction networks are anchored by the essential RxxxFSD motif on TM1 and TM7.",
+      "claim_type": "EXPLICIT",
+      "source": "These interaction networks adopt identical configurations in both conformations and are anchored by the essential RxxxFSD motif on TM1 and TM7 (Cang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation is stated in the results with citation to Cang et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "d8be5359-567a-4e05-9915-01a530593c8a",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C54",
+      "claim": "Similar interaction networks were resolved in the prokaryotic structures, suggesting a conserved role for the RxxxFSD motif in maintaining channel quaternary structure during conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar interaction networks were resolved in the prokaryotic structures (Brunner et al., 2018; Lee et al., 2017), suggesting a conserved role for the RxxxFSD motif in maintaining channel quaternary structure during conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results with citations to prokaryotic structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "13d6b99a-f3d6-4720-8c16-45081a60fe02",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C55",
+      "claim": "Differences between class 1 and class 2 can be readily detected on the luminal side of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the rigid cytoplasmic side, differences between the two classes can be readily detected on the luminal side of the channel (Figure 5A and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the results and supported by Figure 5A and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "167ea6aa-4ee1-4fff-8d98-83dba67c8a29",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C56",
+      "claim": "The ends of the transmembrane helices in the class 2 structure are rotated in a clockwise manner compared to their positions in class 1 when viewed from the luminal side.",
+      "claim_type": "EXPLICIT",
+      "source": "When viewed from the luminal side of the channel, the ends of the transmembrane helices in the class 2 structure are rotated in a clockwise manner compared to their positions in class 1 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the results and supported by Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "6e17d6d3-682a-448a-97cc-6f135abaa030",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C57",
+      "claim": "In class 2, the last turn of TM9 is unwound and moves nearly 12 \u00c5 from its position in class 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In class 2, the last turn of TM9 is unwound and moves nearly 12 \u00c5 from its position adjacent to the loop between TM11 and TM12 in class 1 to interact with the loop between TM1 and TM2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation is stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "5c6765f5-514c-48ff-929e-869f33f03142",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C58",
+      "claim": "The clockwise rotation of the luminal ends of TM1 and TM7 from class 1 to class 2 is accompanied by the adoption of a straighter, \u03b1-helical conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the pore-lining helices, TM1 and TM7, reveals that the clockwise rotation of their luminal ends from class 1 to class 2 is accompanied by the adoption of a straighter, \u03b1-helical conformation, particularly for TM7 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural observation is stated in the results and supported by Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "86e701ef-11f9-432c-9c84-427d4307b20a",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C59",
+      "claim": "In class 1, the kink in TM1 is stabilized by Pro54 and by a water molecule coordinated by the side chain of Thr84, the backbone carbonyl oxygen of Ala48 and the backbone amide nitrogen of Met51.",
+      "claim_type": "EXPLICIT",
+      "source": "In class 1, the kink in TM1 is stabilized by Pro54 and by a water molecule coordinated by the side chain of Thr84 on TM2, the backbone carbonyl oxygen of Ala48 and the backbone amide nitrogen of Met51, while the kink in TM7 is stabilized by a water molecule coordinated by the side chain of Ser316 on TM8, the backbone carbonyl oxygens of Val272 and Ala273 and the backbone amide nitrogen of Leu276 (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural detail is stated in the results and supported by Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "190da6ce-419b-476c-aeea-4e233d9c47ea",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C60",
+      "claim": "In class 2, the waters stabilizing the kinks are displaced by the side chains of Met51 and Leu276.",
+      "claim_type": "EXPLICIT",
+      "source": "In class 2, the waters stabilizing the kinks are displaced by the side chains of Met51 and Leu276.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation is stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "0513cce7-23cf-4c7b-822a-59ddd6f5c7f6",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C61",
+      "claim": "In class 2, the minimum pore radius at the isoleucine constriction is 0.5 \u00c5, which is too narrow to accommodate dehydrated K+ ions.",
+      "claim_type": "EXPLICIT",
+      "source": "In class 2, the four-fold arrangement of the isoleucine side chains is broken by an inward movement of all four isoleucine residues and a rotation of the Ile271 side chains. These changes reduce the minimum pore radius to 0.5 \u00c5, which is too narrow to accommodate dehydrated K+ ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation and interpretation is stated in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "9b2290c6-6150-4ff1-939c-5c750fc0f066",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C62",
+      "claim": "No density is resolved in the K3 ion-binding site in class 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, no density is resolved in the K3 ion-binding site in class 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation is stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "68885cf4-ab60-4b42-95b2-5f264a629a42",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C63",
+      "claim": "Class 2 represents a closed conformation with Ile46 and Ile271 forming the channel gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, class 2 represents a closed conformation with Ile46 and Ile271 forming the channel gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results based on the structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "08dbc26a-bc84-4d3c-bca8-1cdf39865b5f",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C64",
+      "claim": "Purified hTMEM175 can conduct ions in the absence of stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteoliposome flux assay demonstrated that purified hTMEM175 can conduct ions in the absence of stimuli, indicating that hTMEM175 can adopt an open state in the similar conditions used for cryo-EM analysis (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This functional observation is stated in the results and supported by Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "1e634668-b672-41f2-aa96-371946aceafa",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C65",
+      "claim": "Ions would have to be almost completely dehydrated to penetrate the isoleucine constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ions would have to be almost completely dehydrated to penetrate the isoleucine constriction because of its size and hydrophobicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "095fa482-6a4e-4459-a129-a42b22c9f09f",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C66",
+      "claim": "The dehydration of ions through the isoleucine constriction need only be transient due to the layers of water molecules on either side.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the dehydration need only be transient due to the layers of water molecules on either side of the isoleucine constriction that can rehydrate the ion once it passes through the constriction (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interpretation is stated in the results and supported by Figure 6A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "e9b2e0c8-b577-4869-9618-1ff63b061db2",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C67",
+      "claim": "Channels with S45A and T274V mutations express at levels within two-fold of wild-type hTMEM175.",
+      "claim_type": "EXPLICIT",
+      "source": "We first analyzed the effects of the mutations on protein stability using fluorescence size-exclusion chromatography (Goehring et al., 2014), which revealed that channels with mutations to Ser45 and Thr274 are properly folded as dimers and express at levels within two-fold of wild-type hTMEM175 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is stated in the results and supported by Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "6f1d3907-f247-4d7c-83c8-54503c9fd2db",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C68",
+      "claim": "Currents recorded from cells expressing the S45A and T274V mutants were indistinguishable from those recorded from non-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Currents recorded from cells expressing the S45A and T274V mutants, which lack one of the hydroxyl groups involved in water coordination, were indistinguishable from those recorded from non-transfected cells (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is stated in the results and supported by Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "8ffb6911-3fff-4e8f-9c50-06291759f571",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C69",
+      "claim": "Cells expressing either the S45T or the T274S mutant yielded Cs+-selective currents.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells expressing either the S45T or the T274S mutant yielded Cs+-selective currents (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is stated in the results and supported by Figure 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "06601894-2d7d-4631-ace3-6877c0a87ec8",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C70",
+      "claim": "Residues that coordinate water molecules play a critical role in facilitating the permeation of ions through the isoleucine constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal a critical role for residues that coordinate water molecules in facilitating the permeation of ions through the isoleucine constriction and suggest that the water molecules themselves may participate in ion permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results based on the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "fb7caf6f-305d-4611-9f97-b861c169555a",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C71",
+      "claim": "Class 1 represents a conductive state.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore speculate that ions can permeate through the isoleucine constriction of class 1 in a partially hydrated state and that class 1 represents a conductive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results as speculation based on the structural and functional data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "aafcdcbb-b34f-4165-99f5-c6bf09cbd3d1",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C72",
+      "claim": "The enthalpies of dehydration for Cs+ (250 kJ/mol) and K+ (295 kJ/mol) are lower than that of Na+ (365 kJ/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "Because the enthalpies of dehydration for Cs+ (250 kJ/mol) and K+ (295 kJ/mol) are lower than that of Na+ (365 kJ/mol) (Marcus, 1991), Cs+ and K+ ions can more readily access the partially dehydrated state necessary to permeate through the isoleucine constriction and are thus permeated more efficiently than Na+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This thermodynamic property is stated in the results with citation to Marcus, 1991.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "86e02d34-3047-4c7e-beb7-29a898be6259",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C73",
+      "claim": "Cs+ and K+ ions can more readily access the partially dehydrated state necessary to permeate through the isoleucine constriction and are thus permeated more efficiently than Na+.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the enthalpies of dehydration for Cs+ (250 kJ/mol) and K+ (295 kJ/mol) are lower than that of Na+ (365 kJ/mol) (Marcus, 1991), Cs+ and K+ ions can more readily access the partially dehydrated state necessary to permeate through the isoleucine constriction and are thus permeated more efficiently than Na+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic interpretation is stated in the results based on thermodynamic properties and structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "6dd5aa89-7220-4761-ba32-fb3ba1d3332f",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C74",
+      "claim": "Mutation of Ile46 and Ile271 to asparagine diminishes ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, mutation of Ile46 and Ile271 to asparagine was shown to diminish ion selectivity, which led to the proposal that the Ile46 and Ile271 act as a hydrophobic selectivity filter (Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This previous finding is stated in the results with citation to Lee et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "1ca59aca-507d-4dcb-ad34-2122c829eabf",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C75",
+      "claim": "The I46M mutant displayed less selectivity for Cs+ with a mean reversal potential of \u221221 \u00b1 1.5 mV compared to \u221265 \u00b1 4.1 mV for wild-type hTMEM175.",
+      "claim_type": "EXPLICIT",
+      "source": "In a bi-ionic Cs+/Na+ condition, the I46M mutant displayed less selectivity for Cs+ with a mean reversal potential of \u221221 \u00b1 1.5 mV compared to \u221265 \u00b1 4.1 mV for wild-type hTMEM175 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is stated in the results and supported by Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "7e6a1609-3bdf-4b42-9139-bd17d685a8bb",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C76",
+      "claim": "No exogenous currents could be detected from cells expressing the I46M/I271M double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We also attempted to record whole-cell currents from cells expressing the I46M/I271M double mutant. However, no exogenous currents could be detected, consistent with a previous report that mutations of Ile46 and Ile271 to alanine, valine, leucine and phenylalanine were not functional (Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental result is stated in the results with citation to Lee et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "f739196d-2c91-4c36-bea7-77c40868b659",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C77",
+      "claim": "Isoleucine side chains play a unique role in establishing a selectivity filter that cannot be duplicated by other amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "These results point to a unique role for isoleucine side chains in establishing a selectivity filter that cannot be duplicated by other amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results based on the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "7a99d2c3-92db-45ab-b3c0-273cc2a129da",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C78",
+      "claim": "Isoleucine residues are broadly conserved at the position of the isoleucine constrictions in prokaryotic homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, alignment of hTMEM175 with prokaryotic homologs reveal that isoleucine residues are broadly conserved at the position of the isoleucine constrictions (Brunner et al., 2018; Lee et al., 2017; Figure 2\u2014figure supplement 3), suggesting that the isoleucine constriction may be a conserved feature among TMEM175 channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conservation is stated in the results and supported by Figure 2\u2014figure supplement 3 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "ccfa3497-de97-44f9-952a-fe900c9d644f",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C79",
+      "claim": "The distances between water molecules in the layers on either side of the isoleucine constriction in hTMEM175 are 4.8 \u00c5 and 5.1 \u00c5, similar to the distances between opposing backbone carbonyl oxygens in the TVGYG selectivity filter of KcsA (4.5\u20135.1 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the structures of the water-mediated ion-binding sites with the structure of the ion-binding sites in KcsA revealed that the distances between water molecules in the layers on either side of the isoleucine constriction in hTMEM175 are 4.8 \u00c5 and 5.1 \u00c5, similar to the distances between opposing backbone carbonyl oxygens that form the ion-binding sites in the TVGYG selectivity filter of KcsA (4.5\u20135.1 \u00c5) (Zhou et al., 2001; Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural comparison is stated in the results and supported by Figure 6A and citation to Zhou et al., 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "b929bef9-b35c-4835-a1fb-27ab8bcd47d3",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C80",
+      "claim": "The water molecules in hTMEM175 may play an analogous role to the TVGYG selectivity filter in KcsA and participate in ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity of these structures suggests that the water molecules in hTMEM175 may play an analogous role in hTMEM175 and participate in ion selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results based on the structural comparison.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "dd844cb1-98e5-4458-92da-5d96251c674c",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C81",
+      "claim": "The reversal potential of the S45T mutant was similar to wild type (\u221262 \u00b1 1.9 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "While the reversal potential of the S45T was similar to wild type (\u221262 \u00b1 1.9 mV), it was right-shifted to \u221234 \u00b1 5.1 mV for the T274S mutant, suggesting that the T274S mutant is less selective than wild-type hTMEM175 (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result is stated in the results and supported by Figure 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "3a75f2f3-2b9b-475c-9bb5-81320798a0d2",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C82",
+      "claim": "The reversal potential of the T274S mutant was right-shifted to \u221234 \u00b1 5.1 mV, suggesting that the T274S mutant is less selective than wild-type hTMEM175.",
+      "claim_type": "EXPLICIT",
+      "source": "While the reversal potential of the S45T was similar to wild type (\u221262 \u00b1 1.9 mV), it was right-shifted to \u221234 \u00b1 5.1 mV for the T274S mutant, suggesting that the T274S mutant is less selective than wild-type hTMEM175 (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This experimental result and interpretation is stated in the results and supported by Figure 6B-C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "734f3cb9-bdac-4116-a203-b1754d30fd00",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C83",
+      "claim": "The network of ordered molecules in the pore may contribute to ion selectivity in hTMEM175 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Thr274 does not directly interact with the permeating ions, these results suggest that the network of ordered molecules in the pore may also contribute to ion selectivity in hTMEM175 channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the results based on the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "9c8c47cd-847a-4b48-87ed-ea59d59e2105",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C84",
+      "claim": "The precise three-dimensional arrangement of Ile46 and Ile271 serves as both the gating residues as well as the ion selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to most ion channels, for which gating and selectivity are physically uncoupled, the precise three-dimensional arrangement of Ile46 and Ile271 in the two hTMEM175 structures suggests that they serve as both the gating residues as well as the ion selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is stated in the discussion based on the structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "51743a0b-2216-44db-aace-5e703b6be44e",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "claim_id": "C85",
+      "claim": "What factors influence the likelihood of hTMEM175 adopting open or closed states is an open question.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, what factors influence the likelihood of hTMEM175 adopting open or closed states is an open question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an unresolved question.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a1a6244a-9997-4f73-9d4b-4d21f714e935",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Human TMEM175 displays K+ selectivity over Na+ with a permeation ratio of ~9 in whole-cell patch clamp experiments, though this likely underestimates the true selectivity (~36) due to endogenous non-selective currents in HEK293T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 collectively demonstrate K+ selectivity through electrophysiological measurements (C18, C19), appropriate controls (C20), and acknowledgment of technical limitations (C21). The data are internally consistent and properly controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "ded9cfc8-51d6-4e47-8c93-fd6534b776a5",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Reconstituted hTMEM175 in proteoliposomes exhibits K+ flux that is blocked by 4-aminopyridine, demonstrating that purified channels retain activity, K+ selectivity, and pharmacological sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 provide converging evidence from flux assays showing functional reconstitution with appropriate positive (CCCP) and negative (4-AP inhibition, empty liposomes) controls as shown in Figure 1E.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "65e73d3d-e4ee-42af-a3f2-4fadc5d15338",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cryo-EM structures reveal that hTMEM175 is a homodimer with pseudo-four-fold symmetry arising from two homologous 6-helix repeat domains (~23% sequence identity, RMSD 1.7 \u00c5), with the ion-conduction pathway located centrally along the pseudo-four-fold axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 describe the overall architecture supported by high-resolution cryo-EM data (2.6 \u00c5 and 3.0 \u00c5). The structural claims are well-supported by density maps and comparisons with prokaryotic homologs. The limitation regarding TM5/TM6 (C28) is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "94d53ab0-cf77-4e99-a4fc-9e6d7603592d",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The ion-conduction pathway extends ~45 \u00c5 and is lined by TM1 and TM7, with the narrowest constriction (1.7 \u00c5 radius) formed by conserved isoleucine residues (Ile46, Ile271). Multiple ordered non-protein densities are resolved in the pore, including in a hydrophobic vestibule.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 describe the pore architecture with specific structural measurements supported by Figure 3. The identification of ordered molecules is validated by C2 and C1 symmetry comparisons (C38), demonstrating these are not artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "a8b69eb5-6471-47de-b387-e23f8cf24144",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Four ion-binding sites (K1-K4) were identified by comparing K+ and Cs+ structures, with ions primarily coordinated by ordered water molecules rather than protein side chains. The K3 site shows elongated density suggesting two partially-occupied sites flanking the isoleucine constriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C50 describe ion-binding sites identified through a clever comparative approach using K+ vs Cs+ (different electron scattering). The water-mediated coordination is well-documented in Figure 4. The interpretation of K3 as partially occupied sites (C47) is appropriately presented as speculation based on structural reasoning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Two conformational states (class 1 and class 2, RMSD 0.9 \u00c5) differ primarily on the luminal side, with class 2 showing clockwise rotation of transmembrane helices, straightening of TM1/TM7, and displacement of water molecules that stabilize kinks in these helices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C60 describe conformational differences supported by structural comparisons in Figure 5. The cytoplasmic rigidity is explained by conserved interaction networks (C52-C54), while luminal flexibility is well-documented with specific structural changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "8f41f156-3651-4892-a70e-e5580adccc87",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Class 2 represents a closed conformation where the isoleucine constriction narrows to 0.5 \u00c5 radius (too narrow for dehydrated K+), with no ion density at the K3 site, and Ile46/Ile271 forming the gate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 provide structural evidence for gate closure with specific measurements and absence of ion density. The interpretation is logical based on pore dimensions and is consistent with the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "0c503239-a62e-4be9-815a-2fc2af2ba088",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Class 1 is proposed to represent a conductive/open state where ions permeate through the isoleucine constriction in a transiently dehydrated state, facilitated by layers of water molecules on either side that enable rapid rehydration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C66 and C71 propose a mechanism for ion permeation, but this is explicitly stated as speculation (C71). While the flux assay (C64) shows activity and the structural features are consistent with this model, direct evidence that class 1 conducts ions is lacking. Molecular dynamics simulations or other functional validation would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "76afb5ad-9819-4392-99a2-dbc056fb8999",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mutations to residues that coordinate water molecules near the isoleucine constriction (S45A, T274V) abolish channel activity, while conservative substitutions (S45T, T274S) retain activity, demonstrating that water coordination is critical for ion permeation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 present mutagenesis data with appropriate controls showing proper protein folding (C67) and functional effects (C68-C69). The interpretation (C70) is well-supported by the data showing that hydroxyl groups are essential for function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "435192e6-a6e2-4b40-81ab-3fee2719b6e4",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The lower dehydration enthalpies of K+ (295 kJ/mol) and Cs+ (250 kJ/mol) compared to Na+ (365 kJ/mol) explain their preferential permeation through the isoleucine constriction, as they can more readily access the partially dehydrated state required for passage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 provide a thermodynamic explanation for ion selectivity based on established dehydration energies (C72, cited from Marcus 1991). The mechanistic interpretation (C73) logically connects these properties to the structural features of the constriction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "126976ea-d435-4bd3-8271-7b2b70e377e0",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The isoleucine residues at the constriction play a unique role in selectivity that cannot be replicated by other amino acids. The I46M mutation reduces selectivity, the I46M/I271M double mutant is non-functional, and isoleucine is broadly conserved at this position in prokaryotic homologs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 demonstrate through mutagenesis that isoleucine is uniquely required for proper function. The data show graded effects (C75: reduced selectivity; C76: loss of function) and evolutionary conservation (C78), supporting the interpretation of a unique role (C77).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "b3838614-80d7-4828-a7cb-c8a345dc63f1",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Water molecules flanking the isoleucine constriction are spaced similarly to carbonyl oxygens in the KcsA selectivity filter (4.8-5.1 \u00c5 vs 4.5-5.1 \u00c5), suggesting they may play an analogous role in ion selectivity. Mutations affecting water coordination (T274S) reduce selectivity, supporting this hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 draw a structural analogy to KcsA (C79) supported by measurements, propose a functional role for water molecules (C80), and test this with mutagenesis (C81-C83). The T274S mutation reduces selectivity despite not directly contacting ions, supporting the water network hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "19b74432-912f-4c5c-bf52-17c92e8162d5",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The isoleucine residues (Ile46, Ile271) serve dual roles as both the gate and the selectivity filter, representing a coupling of gating and selectivity mechanisms that differs from most ion channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 synthesizes structural and functional data showing that the same residues control both gating (C61-C63) and selectivity (C75-C77). This is a well-supported conclusion based on the presented evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "a3bdfd8e-8dfe-44b5-901b-70422802803d",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TMEM175 is a K+-selective channel in lysosomal membranes that establishes membrane potential essential for lysosomal function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C7 state established knowledge about TMEM175 function supported by citations (particularly Cang et al., 2015). While the current manuscript focuses on structure and mechanism, these foundational claims are well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "b7fb1388-0903-4480-a8f1-acb99bc9f31e",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TMEM175 dysregulation is associated with Parkinson's Disease development through an unknown mechanism, and the channel is implicated in cellular proteostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C8, and C9 cite multiple studies linking TMEM175 to Parkinson's Disease. These are background claims establishing biological significance rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "4deaff38-2ffb-4867-8db0-1182625f02c2",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "TMEM175 is evolutionarily distinct from canonical K+ channels, lacking the TVGYG selectivity filter and displaying unique permeation properties (lyotropic sequence) and pharmacological sensitivities (inhibited by 4-AP but not TEA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 describe established differences between TMEM175 and canonical K+ channels, supported by citations. These provide important context for why structural studies are needed but are not new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "cc8969fd-2f47-4691-bea3-97356a2f9dfc",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prokaryotic TMEM175 channels are homotetrameric and show minimal K+ selectivity (PK/PNa of 2-4) compared to human TMEM175 (PK/PNa ~36).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 summarize prior structural and functional work on prokaryotic homologs, establishing the rationale for studying human TMEM175. These are background claims supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "6b2ca5e6-a5c9-4462-897e-a9693e3ad06f",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Transient overexpression of hTMEM175-GFP in HEK293T cells leads to plasma membrane localization, enabling whole-cell patch clamp analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 describes a methodological approach supported by Figure 1\u2014figure supplement 1 and citation to Lee et al., 2017. This is an important technical detail but not a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    },
+    {
+      "id": "3729ea9f-ec81-4e5e-b2ca-69c98b85649a",
+      "content_id": "dbd9f11e-585e-4438-a9b9-6d259ea5981d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The factors that influence whether hTMEM175 adopts open or closed states remain unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 explicitly acknowledges a limitation and identifies an important open question for future research. This is appropriately stated as uncertain/unknown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:49.548188Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4354a1d0-757a-43ac-90ce-38597be4baf4",
+      "result_id": "a1a6244a-9997-4f73-9d4b-4d21f714e935"
+    },
+    {
+      "claim_id": "8f1ed610-a235-44ba-b676-342a9ba24ea9",
+      "result_id": "a1a6244a-9997-4f73-9d4b-4d21f714e935"
+    },
+    {
+      "claim_id": "be598076-d701-4af2-830a-823b4e93891d",
+      "result_id": "a1a6244a-9997-4f73-9d4b-4d21f714e935"
+    },
+    {
+      "claim_id": "eb682165-da5c-49df-b7c6-d4e5a8d42d2c",
+      "result_id": "a1a6244a-9997-4f73-9d4b-4d21f714e935"
+    },
+    {
+      "claim_id": "7b2ec9b6-1a8c-4186-8b31-06f02aeda3cc",
+      "result_id": "ded9cfc8-51d6-4e47-8c93-fd6534b776a5"
+    },
+    {
+      "claim_id": "b7e9f1e5-45da-432d-8d4f-ad405ffb383d",
+      "result_id": "ded9cfc8-51d6-4e47-8c93-fd6534b776a5"
+    },
+    {
+      "claim_id": "03da0a40-ac4f-44c5-b5f7-98699c4a7d48",
+      "result_id": "ded9cfc8-51d6-4e47-8c93-fd6534b776a5"
+    },
+    {
+      "claim_id": "2b8fd3fd-e254-4057-ba6f-266ee577c93a",
+      "result_id": "65e73d3d-e4ee-42af-a3f2-4fadc5d15338"
+    },
+    {
+      "claim_id": "116c297a-d1ca-4235-b4ea-6a12a56a1209",
+      "result_id": "65e73d3d-e4ee-42af-a3f2-4fadc5d15338"
+    },
+    {
+      "claim_id": "680ee60d-a3df-4db9-80c3-95b6f570b988",
+      "result_id": "65e73d3d-e4ee-42af-a3f2-4fadc5d15338"
+    },
+    {
+      "claim_id": "2db458b2-b64d-487f-9bb3-9fec32d2a4e2",
+      "result_id": "65e73d3d-e4ee-42af-a3f2-4fadc5d15338"
+    },
+    {
+      "claim_id": "acee9ac0-4d0e-47f5-948f-ec30ecdec083",
+      "result_id": "65e73d3d-e4ee-42af-a3f2-4fadc5d15338"
+    },
+    {
+      "claim_id": "8338875c-9cba-41dd-a110-9146ec7fea85",
+      "result_id": "65e73d3d-e4ee-42af-a3f2-4fadc5d15338"
+    },
+    {
+      "claim_id": "f4904c3d-2cb4-4e37-aff3-31d00c71dcc5",
+      "result_id": "65e73d3d-e4ee-42af-a3f2-4fadc5d15338"
+    },
+    {
+      "claim_id": "79dd3c48-ea26-471d-8d66-66aa6e832965",
+      "result_id": "65e73d3d-e4ee-42af-a3f2-4fadc5d15338"
+    },
+    {
+      "claim_id": "ab54ff93-6d6c-4efb-855b-32faf74392bd",
+      "result_id": "94d53ab0-cf77-4e99-a4fc-9e6d7603592d"
+    },
+    {
+      "claim_id": "85cc0b84-64b7-4db2-839c-8430e37eac9b",
+      "result_id": "94d53ab0-cf77-4e99-a4fc-9e6d7603592d"
+    },
+    {
+      "claim_id": "ccb42cf1-22ae-4a24-a074-0ec3bf4453d1",
+      "result_id": "94d53ab0-cf77-4e99-a4fc-9e6d7603592d"
+    },
+    {
+      "claim_id": "b4222bb4-d941-46c2-b9a6-78bc79bb0120",
+      "result_id": "94d53ab0-cf77-4e99-a4fc-9e6d7603592d"
+    },
+    {
+      "claim_id": "25a76ef3-4d0f-42ce-9cb4-12e0b396247c",
+      "result_id": "94d53ab0-cf77-4e99-a4fc-9e6d7603592d"
+    },
+    {
+      "claim_id": "3d816ff3-10d7-4ccc-94b1-25cd8b0c3cd7",
+      "result_id": "94d53ab0-cf77-4e99-a4fc-9e6d7603592d"
+    },
+    {
+      "claim_id": "239e8d8d-96f7-42fb-ac87-0fac722d6994",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "90550754-b974-4587-b6aa-d9c82233e4d3",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "9d1860ca-95ce-41b8-ad3e-6c5d06887552",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "219eee74-fc4f-40c6-ad1a-353bfeb088e9",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "5328880e-862c-4aed-b9bd-a283502764fc",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "e273e908-abe2-4edb-853c-9a1e42023e44",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "73e6004c-ee63-4894-bda0-6c32a1271c78",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "2c2af7e8-b27d-400d-b02a-5a08261ce146",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "46e87555-4c9b-45d8-a046-c5d9056383b2",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "a8e10bcb-48dc-44c1-b4d2-81b285c670c5",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "79d48c85-9612-4808-9618-ce61a1cbc88e",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "efe2a198-f274-4472-88d6-390e5a36390d",
+      "result_id": "a8b69eb5-6471-47de-b387-e23f8cf24144"
+    },
+    {
+      "claim_id": "d33d9442-a5c5-4b1f-bfb7-5be936783bb1",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "3e2ff1e1-b5c8-4c21-8996-012a758e5fbb",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "bf730496-810b-460d-8907-fc6b6222db53",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "d8be5359-567a-4e05-9915-01a530593c8a",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "13d6b99a-f3d6-4720-8c16-45081a60fe02",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "167ea6aa-4ee1-4fff-8d98-83dba67c8a29",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "6e17d6d3-682a-448a-97cc-6f135abaa030",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "5c6765f5-514c-48ff-929e-869f33f03142",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "86e701ef-11f9-432c-9c84-427d4307b20a",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "190da6ce-419b-476c-aeea-4e233d9c47ea",
+      "result_id": "dcdb1e3a-cb58-4328-9837-83a5ceeda827"
+    },
+    {
+      "claim_id": "0513cce7-23cf-4c7b-822a-59ddd6f5c7f6",
+      "result_id": "8f41f156-3651-4892-a70e-e5580adccc87"
+    },
+    {
+      "claim_id": "9b2290c6-6150-4ff1-939c-5c750fc0f066",
+      "result_id": "8f41f156-3651-4892-a70e-e5580adccc87"
+    },
+    {
+      "claim_id": "68885cf4-ab60-4b42-95b2-5f264a629a42",
+      "result_id": "8f41f156-3651-4892-a70e-e5580adccc87"
+    },
+    {
+      "claim_id": "08dbc26a-bc84-4d3c-bca8-1cdf39865b5f",
+      "result_id": "0c503239-a62e-4be9-815a-2fc2af2ba088"
+    },
+    {
+      "claim_id": "1e634668-b672-41f2-aa96-371946aceafa",
+      "result_id": "0c503239-a62e-4be9-815a-2fc2af2ba088"
+    },
+    {
+      "claim_id": "095fa482-6a4e-4459-a129-a42b22c9f09f",
+      "result_id": "0c503239-a62e-4be9-815a-2fc2af2ba088"
+    },
+    {
+      "claim_id": "fb7caf6f-305d-4611-9f97-b861c169555a",
+      "result_id": "0c503239-a62e-4be9-815a-2fc2af2ba088"
+    },
+    {
+      "claim_id": "e9b2e0c8-b577-4869-9618-1ff63b061db2",
+      "result_id": "76afb5ad-9819-4392-99a2-dbc056fb8999"
+    },
+    {
+      "claim_id": "6f1d3907-f247-4d7c-83c8-54503c9fd2db",
+      "result_id": "76afb5ad-9819-4392-99a2-dbc056fb8999"
+    },
+    {
+      "claim_id": "8ffb6911-3fff-4e8f-9c50-06291759f571",
+      "result_id": "76afb5ad-9819-4392-99a2-dbc056fb8999"
+    },
+    {
+      "claim_id": "06601894-2d7d-4631-ace3-6877c0a87ec8",
+      "result_id": "76afb5ad-9819-4392-99a2-dbc056fb8999"
+    },
+    {
+      "claim_id": "aafcdcbb-b34f-4165-99f5-c6bf09cbd3d1",
+      "result_id": "435192e6-a6e2-4b40-81ab-3fee2719b6e4"
+    },
+    {
+      "claim_id": "86e02d34-3047-4c7e-beb7-29a898be6259",
+      "result_id": "435192e6-a6e2-4b40-81ab-3fee2719b6e4"
+    },
+    {
+      "claim_id": "6dd5aa89-7220-4761-ba32-fb3ba1d3332f",
+      "result_id": "126976ea-d435-4bd3-8271-7b2b70e377e0"
+    },
+    {
+      "claim_id": "1ca59aca-507d-4dcb-ad34-2122c829eabf",
+      "result_id": "126976ea-d435-4bd3-8271-7b2b70e377e0"
+    },
+    {
+      "claim_id": "7e6a1609-3bdf-4b42-9139-bd17d685a8bb",
+      "result_id": "126976ea-d435-4bd3-8271-7b2b70e377e0"
+    },
+    {
+      "claim_id": "f739196d-2c91-4c36-bea7-77c40868b659",
+      "result_id": "126976ea-d435-4bd3-8271-7b2b70e377e0"
+    },
+    {
+      "claim_id": "7a99d2c3-92db-45ab-b3c0-273cc2a129da",
+      "result_id": "126976ea-d435-4bd3-8271-7b2b70e377e0"
+    },
+    {
+      "claim_id": "ccfa3497-de97-44f9-952a-fe900c9d644f",
+      "result_id": "b3838614-80d7-4828-a7cb-c8a345dc63f1"
+    },
+    {
+      "claim_id": "b929bef9-b35c-4835-a1fb-27ab8bcd47d3",
+      "result_id": "b3838614-80d7-4828-a7cb-c8a345dc63f1"
+    },
+    {
+      "claim_id": "dd844cb1-98e5-4458-92da-5d96251c674c",
+      "result_id": "b3838614-80d7-4828-a7cb-c8a345dc63f1"
+    },
+    {
+      "claim_id": "3a75f2f3-2b9b-475c-9bb5-81320798a0d2",
+      "result_id": "b3838614-80d7-4828-a7cb-c8a345dc63f1"
+    },
+    {
+      "claim_id": "734f3cb9-bdac-4116-a203-b1754d30fd00",
+      "result_id": "b3838614-80d7-4828-a7cb-c8a345dc63f1"
+    },
+    {
+      "claim_id": "9c8c47cd-847a-4b48-87ed-ea59d59e2105",
+      "result_id": "19b74432-912f-4c5c-bf52-17c92e8162d5"
+    },
+    {
+      "claim_id": "f41d4af8-7a6f-4108-a854-e0c3fddcfe91",
+      "result_id": "a3bdfd8e-8dfe-44b5-901b-70422802803d"
+    },
+    {
+      "claim_id": "8c1cec36-231a-4284-939a-ec4fc227d8d1",
+      "result_id": "a3bdfd8e-8dfe-44b5-901b-70422802803d"
+    },
+    {
+      "claim_id": "6319eafd-fd13-4249-84bd-bcfb02c89c23",
+      "result_id": "a3bdfd8e-8dfe-44b5-901b-70422802803d"
+    },
+    {
+      "claim_id": "031beb88-2377-44c0-bc9f-ca7aa9a0da1f",
+      "result_id": "b7fb1388-0903-4480-a8f1-acb99bc9f31e"
+    },
+    {
+      "claim_id": "1c3a5843-55f1-457b-842a-240ee087b920",
+      "result_id": "b7fb1388-0903-4480-a8f1-acb99bc9f31e"
+    },
+    {
+      "claim_id": "cacccf95-1033-4bf8-ac6f-7ecf3d1634ac",
+      "result_id": "b7fb1388-0903-4480-a8f1-acb99bc9f31e"
+    },
+    {
+      "claim_id": "462b86ff-e463-480d-ab4e-a1d5208d1a2e",
+      "result_id": "4deaff38-2ffb-4867-8db0-1182625f02c2"
+    },
+    {
+      "claim_id": "e82e5751-851c-4144-8d14-4b16695d77bf",
+      "result_id": "4deaff38-2ffb-4867-8db0-1182625f02c2"
+    },
+    {
+      "claim_id": "452abae0-c213-42e6-8e33-b7d381b7a601",
+      "result_id": "4deaff38-2ffb-4867-8db0-1182625f02c2"
+    },
+    {
+      "claim_id": "f14b9100-5da5-41fa-970b-7f98cfe60c9c",
+      "result_id": "4deaff38-2ffb-4867-8db0-1182625f02c2"
+    },
+    {
+      "claim_id": "38ce31d2-f190-4a8b-a894-65396c9bf448",
+      "result_id": "4deaff38-2ffb-4867-8db0-1182625f02c2"
+    },
+    {
+      "claim_id": "eaeb8d8b-923c-4551-9e1d-f6e3c15fd438",
+      "result_id": "cc8969fd-2f47-4691-bea3-97356a2f9dfc"
+    },
+    {
+      "claim_id": "c9e541fd-07ab-4268-ab06-9a3a06402884",
+      "result_id": "cc8969fd-2f47-4691-bea3-97356a2f9dfc"
+    },
+    {
+      "claim_id": "c3fd5abb-382d-4ba3-b2d2-d985c5b3c522",
+      "result_id": "6b2ca5e6-a5c9-4462-897e-a9693e3ad06f"
+    },
+    {
+      "claim_id": "51743a0b-2216-44db-aace-5e703b6be44e",
+      "result_id": "3729ea9f-ec81-4e5e-b2ca-69c98b85649a"
+    }
+  ],
+  "comparisons": []
+}

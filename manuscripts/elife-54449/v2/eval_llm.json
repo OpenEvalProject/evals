@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C33",
+      "C34",
+      "C81",
+      "C87"
+    ],
+    "result": "RSC has a tripartite rigid core (head, body, arm) scaffolded by an asymmetric Rsc8 dimer, with two flexible lobes (leg and tail). The core was resolved to ~3.0 \u00c5 and contains 14 mapped proteins, with five evolutionarily conserved subunits comprising 72% of the core mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C33, C34, C81, and C87 are directly supported by high-resolution cryo-EM structural data (3.0 \u00c5 resolution) with detailed protein mapping and validation through crosslinking mass spectrometry (C35: 90% of crosslinks within expected distance). The structural organization is well-documented with appropriate resolution and validation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C97",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The flexible ATPase lobe (leg) is composed of Sth1 (including HSA helix), Arp7, Arp9, and Rtt102, with Sth1 spanning multiple lobes through its Scaffold I and II domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C94-C97 are supported by structural data from the RSC-NCP model showing the organization of the leg lobe and Sth1 domain architecture. The flexibility of this lobe is documented through 3D classification showing multiple conformations (C38, Figure 3C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C38",
+      "C39",
+      "C49",
+      "C50",
+      "C51",
+      "C54"
+    ],
+    "result": "RSC engages nucleosomes through its arm lobe (Rsc8 SWIRM domains, Sfh1, Npl6), contacting both the acidic patch via Sfh1 C-terminus and nucleosomal DNA likely via Npl6 CRC domain. Two distinct binding modes (swiveled and locked) were observed at 19 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C36, C38-C39, C49-C51, C54 describe nucleosome engagement supported by 19 \u00c5 resolution cryo-EM data. However, the resolution is insufficient to definitively assign specific residues or domains to nucleosome contacts. The assignment of Npl6 CRC domain to DNA binding (C54) is based on inference and homology rather than direct observation. The ATPase domain of Sth1 was not resolved (C37), limiting mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C84"
+    ],
+    "result": "Crosslinking mass spectrometry validation identified 780 inter-molecular and 617 intra-molecular unique links, with 90% of mappable crosslinks within the expected 38 \u00c5 distance in the RSC core structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C84 are supported by crosslinking mass spectrometry data with appropriate validation showing good agreement between observed crosslinks and the structural model. The 90% agreement rate is reasonable given experimental constraints and provides strong orthogonal validation of the cryo-EM structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "An asymmetric Rsc8 dimer with four conserved domains (SWIRM, ZZ, SANT, CC) serves as the structural backbone, scaffolding the three core lobes and contacting all core proteins except Rsc3 and Rsc30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C88-C90 are well-supported by high-resolution structural data showing Rsc8 domain organization and interactions. The scaffolding role is consistent with previous biochemical studies (C43, Mashtalir et al., 2018) and directly visualized in the structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C99",
+      "C101",
+      "C102"
+    ],
+    "result": "The body lobe contains a helical bundle backbone (Rsc8 CC, Rsc6 CC, Htl1 CC), an \u03b1-solenoid belly (Rsc9 armadillo repeats, Rsc6 SwiB), and a \u03b2-sandwich hook (Rsc9 and Rsc6 \u03b2-strands), with additional contributions from Rsc58 and Sth1 segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46, C99, C101-C102 are supported by high-resolution structural data (body lobe refined to 2.96-3.48 \u00c5) with clear visualization of secondary structure elements and domain organization. The assignments are consistent with sequence predictions and domain annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Rsc3 and Rsc30 dimer is absent in 75% of RSC particles and constitutes the flexible tail lobe. The presence/absence of this dimer correlates with tail lobe occupancy, and these subunits have no equivalents in yeast SWI/SNF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C103-C105 are supported by 3D classification data showing heterogeneity in Rsc3/Rsc30 occupancy and correlation with tail lobe density. The assignment is further supported by comparison with SWI/SNF structure (C82-C83, C105) and previous biochemical data (C103, Angus-Hill et al., 2001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The C-terminal region of Sfh1 is highly conserved, contains nine lysine and arginine residues predicted to form a helix, and is implicated in nucleosome binding based on deletion studies of its SWI/SNF homolog Snf5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by sequence conservation analysis, secondary structure prediction, and functional data from deletion studies (Sen et al., 2017). The structural context from the RSC-NCP model (C51) provides additional support for the proposed nucleosome-binding role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The head lobe contains six subunits (Rsc8, Rsc58, Sth1, Rsc4, Rsc1/2) with multiple histone reader domains (BrDs and BAH). Only Rsc8 and Sth1 are evolutionarily conserved. The BrD-containing subunits are positioned to potentially reach H3 tails of engaged nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are supported by structural data (head lobe refined to 3.07-3.14 \u00c5) showing domain organization and positioning. Only one BrD (Rsc58) was resolved (C59), with others extending from flexible linkers. The positioning analysis (C60) is based on modeling and is reasonable but not directly observed. Previous biochemical data (C58, C61) support the functional roles of these domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C40",
+      "C86"
+    ],
+    "result": "A mechanistic model proposes that RSC recruitment occurs via H3 acetylation mark recognition, followed by arm lobe engagement positioning the SHL2 site for Sth1 ATPase binding, with the core maintaining histone contacts during DNA translocation. The observed RSC-NCP structure represents an intermediate in the engagement pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66, C40, C86 present a mechanistic model based on structural observations and previous biochemical data. However, these are explicitly stated as proposals and inferences (evidence_type includes SPECULATION, INFERENCE). The model is reasonable but lacks direct experimental validation of the proposed sequential steps. The absence of resolved ATPase domain (C37) limits mechanistic conclusions. Additional functional studies would be needed to validate this pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "A conserved assembly pathway is proposed where Rsc8 CC dimerization is followed by sequential binding of Rsc6, Sfh1, Rsc9, and Sth1 (with ARP module), then yeast-specific factors (Npl6, Htl1, Rsc58, Rsc1/2, Rsc4, Ldb7), and finally Rsc3/Rsc30. This pathway is conserved across SWI/SNF family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C80 propose an assembly model based on structural analysis and comparison with mammalian SWI/SNF assembly intermediates (C73, Mashtalir et al., 2018). The model is well-supported by the observed protein-protein contacts in the structure and structural similarities between RSC and SWI/SNF (C78, C82-C83). However, the sequential order is inferred rather than directly demonstrated for RSC. The conservation argument (C77) is reasonable given the structural conservation of core subunits (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "All SWI/SNF complexes share conserved features: bromodomains for acetylated histone binding, Sfh1 homolog for acidic patch binding, and catalytic DNA translocase domain for nucleosome remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by knowledge of SWI/SNF family conservation and citation to previous literature (Clapier and Cairns, 2009). The structural data from RSC and comparison with SWI/SNF (C82-C83) provide additional support for this conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Yeast SWI/SNF has a rigid core sharing features with RSC and a flexible leg in similar positions, but lacks a tail lobe, indicating RSC has additional regulatory domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by negative stain EM analysis comparing RSC and SWI/SNF structures. The absence of tail lobe in SWI/SNF is consistent with the lack of Rsc3/Rsc30 equivalents (C105) and supports the assignment of these subunits to the tail module.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background information on chromatin remodeler families, RSC composition, function, and subunit properties based on previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C32 provide background information from the introduction, all supported by appropriate citations to previous literature. These establish the context for the current structural study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Yeast SWI/SNF and human BAF have one bromodomain (on ATPase subunit), while human PBAF has eight, suggesting bromodomains contribute to functional specificity within the SWI/SNF family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by knowledge of complex composition across species. The inference about functional specificity is reasonable given the differential distribution of bromodomains, though direct functional evidence is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C37",
+      "C98"
+    ],
+    "result": "The RSC core binds nucleosomes in a defined orientation that would position the Sth1 catalytic domain at SHL2, though the ATPase domain itself was not resolved in the structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C37, C98 describe the positioning of the ATPase domain based on modeling using the Snf2-NCP structure. The core positioning is supported by 19 \u00c5 resolution data, but the ATPase domain placement is inferred rather than directly observed. The model is reasonable but represents a hypothesis requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Detailed localization of Rsc6, Rsc9, and Rsc58 domains across multiple lobes of the RSC structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 describe specific domain localizations supported by high-resolution structural data with clear density for these regions. The assignments are consistent with domain predictions and crosslinking data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The RFX-type WH domain of Rsc9 is likely part of the tail lobe based on the position of modeled Rsc9 sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is an inference based on the position of modeled Rsc9 sequences. The RFX-type WH domain was not directly resolved in the structure, making this assignment tentative. The correlation between Rsc3/Rsc30 and tail lobe presence (C48) provides indirect support.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C78",
+      "C80",
+      "C81",
+      "C85"
+    ],
+    "result": "The authors developed SCAMPR (Single-Cell Assay for Measuring Plasmid Retention), a novel assay using a GFP-2\u03bc reporter plasmid with dual markers (G418 resistance and GFP) to measure plasmid copy number heterogeneity and loss in live yeast cells at single-cell resolution via flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42-C45, C78, C80-C81, and C85 collectively describe the development and validation of SCAMPR. The plasmid design (C42, C78, C80) is well-documented with appropriate citations to prior work establishing the insertion site. The assay methodology (C43-C45) is clearly described with supporting data in Figure 1. The claim that GFP intensity scales with copy number (C81) is supported by multiple citations. The conclusion that the reporter is suitable for comparative studies (C85) is reasonable given the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C87",
+      "C88",
+      "C89",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Three S. cerevisiae strains (Y9, Y12, YPS1009) naturally lacking endogenous 2\u03bc plasmids were identified and shown to reproducibly inhibit mitotic plasmid stability when the GFP-2\u03bc reporter plasmid was introduced, demonstrating that plasmid absence results from host genetic variation rather than stochastic loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C87-C89 describe the identification of plasmid-free strains using PCR and Southern blotting (Figure 2\u2014figure supplement 1). Claims C95-C100 present multiple lines of evidence (colony sectoring, MCM assay, SCAMPR) showing that these strains actively restrict plasmid stability. The data in Figure 2A-C consistently demonstrate significant differences between permissive and non-permissive strains, supporting the conclusion that absence is due to genetic variation rather than stochastic loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "SCAMPR analysis revealed that plasmid loss in Y9 cells occurs primarily via segregation failure during mitosis, characterized by an increase in GFP-negative cells without substantial changes in median GFP intensity of plasmid-bearing cells, rather than through copy number suppression or under-replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 and C108-C112 describe SCAMPR data from Figure 1\u2014figure supplement 1 showing distinct patterns of plasmid loss in BY4742 versus Y9 strains. The observation that Y9 cells show increased plasmid-negative cells (48% to 83%) without median GFP intensity changes in plasmid-bearing cells (C52-C53, C109) supports the conclusion of segregation defects (C54, C110-C111) rather than copy number suppression. This interpretation is consistent with the theoretical predictions illustrated in Figure 1C-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C113",
+      "C114",
+      "C115",
+      "C118",
+      "C119",
+      "C120",
+      "C187"
+    ],
+    "result": "Plasmid restriction in the Y9 strain is heritable, dominant, and multigenic, with tetrad analysis and Castle-Wright estimation suggesting at least 2-3 independently segregating large effect loci contribute to the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C113-C115 demonstrate dominance through heterozygous diploid experiments (Figure 3A). Claims C118-C120 present tetrad analysis data (Figure 3\u2014figure supplement 1) showing complex inheritance patterns inconsistent with a single locus, with only ~20% of tetrads showing 2:2 segregation. The Castle-Wright estimation (C120) provides a quantitative estimate of 2-3 loci, though the authors appropriately note potential effects of phenotypic variability. The conclusion of heritable, dominant, multigenic inheritance (C187) is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C121",
+      "C122",
+      "C123",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C188"
+    ],
+    "result": "Bulk segregant analysis of 600 meiotic progeny identified a high-confidence QTL on chromosome V (LOD score ~10) associated with 2\u03bc plasmid instability, with a 90% confidence interval of ~91 kb containing 54 ORFs and a 50% confidence interval of 23 kb containing 16 ORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C121-C123, C128-C132, and C188 describe the QTL mapping approach and results shown in Figures 3-4. The experimental design (selecting top and bottom ~20% of progeny for bulk sequencing) is appropriate. The LOD score of ~10 (C128) is well above established significance thresholds of 3.1-6.3 cited from prior studies (C129). The confidence intervals (C131-C132) are clearly defined in Figure 4C and Figure 4\u2014figure supplement 3. The methodology and statistical analysis appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C189"
+    ],
+    "result": "A single Thr69Ile missense variant in MMS21, a SUMO E3 ligase component of the Smc5/6 complex, was identified as contributing to 2\u03bc plasmid instability in Y9. Reciprocal hemizygosity experiments showed that deletion of the Y9 MMS21 allele (but not the BY4742 allele) significantly increased plasmid stability by ~8% in heterozygous diploids, demonstrating dominant restriction rather than haploinsufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C149 and C189 describe the identification and functional validation of the MMS21 variant. The variant is well-positioned near the LOD peak (C139) and in a functionally relevant gene (C140-C142). The reciprocal hemizygosity experiments (Figure 5B) provide strong evidence: deletion of Y9 MMS21 increases stability by ~8% (C146), while deletion of BY4742 MMS21 does not (C145-C147). This demonstrates allele-specific effects consistent with dominant restriction (C149). However, the authors appropriately note that MMS21 does not explain the entire phenotype (C150), consistent with multigenic inheritance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C190",
+      "C191"
+    ],
+    "result": "MMS21 does not fully account for the Y9 plasmid instability phenotype, with the remaining genetic determinants likely including other minor QTL peaks or linked polymorphisms within the chromosome V region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 and C190-C191 acknowledge the incomplete explanation of the phenotype by MMS21 alone. The ~8% effect size from reciprocal hemizygosity (C146, C190) is modest compared to the overall difference between Y9 and BY4742 strains. This is consistent with the tetrad analysis suggesting 2-3 loci (C120) and the presence of other moderate LOD peaks (Figure 4B). The speculation about additional determinants (C151, C191) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Analysis of 1,011 sequenced S. cerevisiae strains revealed that the Thr69 allele is ancestral, with Ile69 arising more recently in 96 strains. Strains homozygous for Ile69 show lower prevalence of 2\u03bc plasmids, particularly A-type plasmids, though this association cannot be distinguished from shared evolutionary history due to phylogenetic relatedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C165 describe population-level analysis of the MMS21 polymorphism using data from Peter et al., 2018 (Figure 5C). While the observation of lower plasmid prevalence in Ile69 strains (C162-C163) is interesting, the authors appropriately acknowledge that causation cannot be distinguished from phylogenetic relatedness (C165). The claim that Ile69 might specifically restrict A-type plasmids (C164) is speculative. Without additional functional validation or phylogenetic correction, the causal relationship remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C216",
+      "C218"
+    ],
+    "result": "The Thr69Ile polymorphism occurs in the third alpha-helix of the Mms21 N-terminal domain at the Mms21-Smc5 binding interface. The authors speculate this may affect the Smc5/6 complex function rather than SUMO ligase activity, though these functions are interdependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C172, C216, and C218 describe the structural location and potential mechanism of the Thr69Ile variant. The structural information (C168) is supported by citation to Duan et al., 2009 and shown in Figure 5\u2014figure supplement 3. The known functions of MMS21 and the Smc5/6 complex (C169-C170) are well-cited. The speculation about mechanism (C171, C218) is reasonable given the structural location, though the authors appropriately acknowledge the interdependence of Mms21's functions (C172, C217). The mechanistic interpretation is plausible but remains speculative without direct functional assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C197"
+    ],
+    "result": "Growth rate measurements showed that BY4742 and Y9 strains have similar growth rates without the reporter plasmid and exhibit similar decreases in growth rate when carrying the plasmid under G418 selection, indicating that differential plasmid carriage cost does not explain the instability phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 and C197 describe growth rate experiments shown in Figure 2\u2014figure supplement 2. The data demonstrate that both strains show similar growth rates and similar fitness costs from plasmid carriage. This rules out differential fitness cost as the primary explanation for plasmid instability differences (C107). The experimental design is appropriate and the conclusion is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The haploid Y9 parent strain was found to be disomic for chromosome XIV, but this aneuploidy does not significantly contribute to the plasmid instability phenotype, as euploid Y9 diploids show similar plasmid loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 address an unexpected finding from whole genome sequencing (Figure 4\u2014figure supplement 2A). The authors appropriately tested whether this aneuploidy affects the phenotype by comparing euploid and aneuploid Y9 diploids (C126, Figure 4\u2014figure supplement 2B). The similar phenotypes support the conclusion that chromosome XIV disomy is not a major contributor (C127). This control experiment strengthens confidence in the QTL mapping results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Although URA3 is present in Y9 and deleted in BY4742 within the QTL region, follow-up studies conclusively ruled out a role for URA3 in the plasmid instability phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 address a potential confounding factor, as URA3 often falls within fitness-related QTLs in BY4742 crosses. The authors performed detailed follow-up studies (Figure 4\u2014figure supplement 4) showing that \u0394ura3 Y9 strains have similar plasmid instability to wildtype Y9 (C134). This control is important for validating the QTL mapping results and is well-executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Traditional plasmid loss assays (MCM and qPCR) have limitations: MCM is low-throughput and cannot detect copy number variation, while qPCR cannot detect population heterogeneity. Even combined, these methods lack resolution to determine plasmid copy number distribution within populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 describe limitations of existing methods that motivated development of SCAMPR. The characterization of MCM (C71-C73) and qPCR (C74-C76) limitations is based on established knowledge and logical inference about what these methods can and cannot measure. The conclusion that combined methods still lack single-cell resolution (C77) is accurate and provides clear justification for developing SCAMPR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The stability of the GFP-2\u03bc reporter plasmid appears lower than that of endogenous 2\u03bc plasmids based on comparison to prior estimates, possibly due to measurement precision differences or costs of constitutive marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 compare the reporter plasmid stability to prior estimates from Futcher and Cox, 1983. However, this comparison is indirect and involves different measurement methods (SCAMPR vs. colony-hybridization Southern blots). The authors appropriately present this as an inference (C83) and offer alternative explanations (C84). Without direct side-by-side comparison of endogenous and reporter plasmids using the same method, this remains uncertain. However, the authors correctly note this doesn't affect the utility for comparative studies (C85).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The MMS21 locus contains 16 polymorphisms between Y9 and BY4742 (1 missense, 4 synonymous, 11 intergenic). Comparative analysis with Y12 and UC5 strains suggests only three sites (the missense SNP and two synonymous SNPs) strictly correlate with plasmid instability, though regulatory differences may still contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C157 describe detailed genomic analysis of the MMS21 locus (Figure 5\u2014figure supplement 1). The identification of polymorphisms (C153-C154) is straightforward. The comparative analysis with UC5 (C155-C156) provides a logical approach to narrow candidate variants, identifying three sites that correlate with phenotype. The acknowledgment that regulatory differences may still contribute (C157) is appropriately cautious. The analysis is sound, though functional validation of specific variants would strengthen conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "The Thr69Ile change is not found in the third non-permissive strain YPS1009, suggesting independent evolutionary origins of plasmid instability in this strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 note that YPS1009 lacks the Thr69Ile variant despite showing plasmid instability. This observation (C158) is data-based, and the inference of independent evolutionary origin (C159) is reasonable. This suggests genetic heterogeneity in plasmid restriction mechanisms, which is interesting for understanding the evolutionary dynamics of host-parasite interactions. The conclusion is appropriately stated as a suggestion rather than definitive proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "The authors favor a separation-of-function model over a dominant-negative model for the Y9 MMS21 allele, based on the observation that both Y9 and BY4742 strains show equal fitness loss with plasmids, inconsistent with predictions of the dominant-negative scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C199 present a logical analysis of two mechanistic scenarios. The reciprocal hemizygosity data (C193, Figure 5B) establish dominant action. The dominant-negative scenario (C194-C196) predicts differential fitness costs, but the growth data (C197, Figure 2\u2014figure supplement 2) show equal costs. The evolutionary argument (C198) provides additional support. The separation-of-function model (C199) is therefore better supported by the data, though the authors appropriately present this as their favored interpretation rather than definitive proof.",
+    "result_type": "MINOR"
+  }
+]

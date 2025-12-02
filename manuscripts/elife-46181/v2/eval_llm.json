@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C14",
+      "C15"
+    ],
+    "result": "Standard fluorescent protein reporters have long half-lives (>20 hr) that limit temporal resolution of gene expression dynamics. Destabilized reporters with shorter half-lives exist but have limited in vivo application due to signal loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10, C14-C15 establish the background problem: standard FP reporters lose dynamic information due to long half-lives, and while destabilized versions exist, they suffer from signal loss in vivo. These are well-established limitations in the field supported by general knowledge and citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mathematical modeling demonstrates that destabilized FPs with 2 hr half-life provide 90% shorter response time and up to 4-fold larger dynamic range compared to 20 hr half-life FPs, but cause 90% signal loss at constant expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 present modeling results shown in Figure 1 that quantify the trade-offs between temporal resolution and signal intensity. The modeling approach is clearly described with equations in Figure 1 supplement, and the conclusions about response time, dynamic range, and signal loss are directly supported by the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "Translational enhancing elements (IVS, Syn21, p10 polyA) successfully rescue signal loss from destabilization, restoring reporter intensity to levels comparable to stable reporters while maintaining short half-life (~2.6-3 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C27, C64-C67, C72 describe the core methodological innovation. Figure 2 clearly shows that destabilized reporters alone have near-background signal (C26), but addition of translational enhancers restores signal to levels similar to stable reporters (C27). The half-life measurements (C25, C28) confirm the destabilization is maintained. This is the key technical advance of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In vivo measurements confirm destabilized GFP (edGFP) has a half-life of ~2.1-2.6 hr, resulting in ~8% signal intensity compared to stable GFP, consistent with the 91% reduction predicted by modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C73-C75 report experimental measurements of reporter half-lives in vivo. The data in Figures 2 and 3 show consistent half-life measurements across different experimental conditions (cultured cells vs. in vivo), and the observed signal reduction matches theoretical predictions. The measurements include error estimates and are based on appropriate kinetic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Live imaging of STAT reporter in developing embryos shows destabilized reporter reveals transient STAT activity with improved temporal resolution, detecting transcriptional activity ~2 hr earlier than stable reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 demonstrate the functional advantage of the destabilized reporter in live imaging (Figure 3, Videos 1-2). The quantitative analysis in Figure 3b shows clear improvement in response time, and the estimated transcriptional timing is consistent with prior literature on upd expression (C33). The live imaging data directly validates the predicted benefits from modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "A dual-color transcriptional timer (TransTimer) combining fast-maturing destabilized GFP (0.1 hr maturation, 2 hr half-life) with slow-maturing stable RFP (1.5 hr maturation, 20 hr half-life) produces color transitions (green\u2192yellow\u2192red) that encode transcriptional dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34-C36, C68-C71 describe the TransTimer design and principle. The rationale is sound: differential maturation and degradation kinetics create temporal color separation. Figure 4a illustrates the concept, and the maturation times and half-lives are supported by citations and experimental measurements. The logic is straightforward and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "TransTimer reveals wave-like STAT activity propagating through the larval optic lobe neuroepithelium, showing a 'green front' and 'red rear' pattern consistent with the known differentiation wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 demonstrate TransTimer application to STAT signaling in the optic lobe. Figure 4b shows clear spatial separation of green and red signals that stable reporters cannot resolve. The pattern is consistent with prior work on STAT's role in the differentiation wave (C37, C39 cite Yasugi et al. 2008). This validates the timer's ability to reveal spatial-temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "TransTimer reveals that Notch activity is preferentially maintained in neuroblasts compared to their progeny, showing improved spatial and temporal resolution compared to stable reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 demonstrate TransTimer application to Notch signaling in neuroblasts. Figure 4c and supplements show destabilized reporter is enriched in NBs while stable reporter accumulates in both NBs and progeny. This is consistent with functional studies (C40-C41 cite prior work). Live imaging (Figure 4 supplement 2) confirms improved temporal resolution. The results are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C80"
+    ],
+    "result": "Control experiments with constitutive promoters show stable dGFP/RFP ratios across tissues, indicating that color changes in TransTimer primarily reflect transcriptional dynamics rather than tissue-specific degradation differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C80 address a critical control: whether tissue-specific differences in protein degradation could confound interpretation. Figure 4 supplement 3c and Supplementary file 2 show that constitutive promoters produce stable ratios across different tissues and developmental stages. This validates that observed color changes reflect transcriptional activity, not degradation variability. The control is appropriate and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "UAS-TransTimer reveals heterogeneity in intestinal stem cell populations, differentiating cells, and tumors, showing that different tumor types (Dl vs. Dome mutants) have distinct spatial patterns of stem cell marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 demonstrate TransTimer applications in the intestinal stem cell system. Figure 5 shows clear color separation identifying differentiating cells (C47-C48), increased dynamics during regeneration (C49), tumor heterogeneity (C50), and differences between tumor types (C51-C52). The interpretations are supported by marker analysis (Pros staining) and are consistent with stem cell biology. The data quality is good.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Screen of ~450 Gal4 lines with UAS-TransTimer identified 37 lines (~8%) with dynamic expression patterns, including Piezo, which shows dynamic expression in enteroendocrine precursor cells that differentiate into EE cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 report a screen demonstrating TransTimer's utility for discovering genes with dynamic expression. The screen identified a reasonable hit rate (8%), and validation of Piezo (Figure 6b-c) shows the expected pattern: 'red' cells are Pros+ and have downregulated Piezo, consistent with differentiation. The Piezo result is supported by prior work (C54, C57 cite He et al. 2018). This demonstrates practical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Modeling and experimental comparison show that the Gal4/UAS system amplifies signal but delays reporter dynamics, with UAS-TransTimer showing broader activation patterns than direct promoter-driven TransTimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 address an important caveat of the UAS/Gal4 system. Figure 6 supplement 1 shows modeling predicting both amplification and delay effects, and experimental comparison (Figure 6 supplement 1g-h) confirms broader patterns with UAS-TransTimer. This is an honest assessment of the system's limitations and provides guidance for interpretation. The analysis is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Enhancer trap screen with TransTimer identified 17/46 lines with dynamic expression at endogenous levels. Functional validation showed CG30159 is required for intestinal stem cell maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 report an enhancer trap screen demonstrating TransTimer can detect dynamics at endogenous expression levels. Figure 7 shows representative lines with clear dynamic patterns. The functional validation of CG30159 (Figure 7e-f) shows significant reduction in stem cell numbers with RNAi, with appropriate statistics (p<0.001, n=7-9). C63 provides context about the human homolog. This demonstrates another practical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Degradation kinetics deviate from first-order at high FP concentrations, and degradation rates may vary across conditions, so TransTimer ratios should be interpreted as relative rather than absolute measures of transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 provide important caveats about quantitative interpretation. Figure 3 supplement 1e shows deviation from first-order kinetics at high concentrations. The authors appropriately acknowledge that degradation rates may vary (C77) and recommend interpreting ratios as relative measures (C78) with case-by-case calibration (C79). This is scientifically honest and provides appropriate guidance for users.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C33",
+      "C37",
+      "C40",
+      "C41",
+      "C54",
+      "C63",
+      "C81"
+    ],
+    "result": "Background claims about gene expression dynamics, prior reporter systems, and biological contexts are supported by appropriate citations to the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C11-C13, C33, C37, C40-C41, C54, C63, C81 provide background context and cite relevant literature. These are standard background claims that appropriately reference prior work. The citations appear relevant and support the stated claims. No issues identified with the literature citations.",
+    "result_type": "MINOR"
+  }
+]

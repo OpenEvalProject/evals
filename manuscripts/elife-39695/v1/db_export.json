@@ -1,0 +1,1202 @@
+{
+  "submission": {
+    "id": "209985a0-dec2-499d-b5b3-0a26018046b5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:24:54.562604Z",
+    "updated_at": "2025-12-02T08:24:54.562604Z"
+  },
+  "content": [
+    {
+      "id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "submission_id": "209985a0-dec2-499d-b5b3-0a26018046b5",
+      "content_type": "manuscript",
+      "content_text": "# A first order phase transition mechanism underlies protein aggregation in mammalian cells\n\n## Authors\n\n- Arjun Narayanan<sup>1</sup> ([ORCID: 0000-0002-2269-3253](https://orcid.org/0000-0002-2269-3253))\n- Anatoli Meriin<sup>2</sup> ([ORCID: 0000-0003-0087-814X](https://orcid.org/0000-0003-0087-814X))\n- J Owen Andrews<sup>1</sup>\n- Jan-Hendrik Spille<sup>1</sup>\n- Michael Y Sherman<sup>3</sup>\n- Ibrahim I Cisse<sup>1</sup> ([ORCID: 0000-0002-8764-1809](https://orcid.org/0000-0002-8764-1809)) \u2020\n\n### Affiliations\n\n1. Department of Physics Massachusetts Institute of Technology Cambridge United States\n2. Department of Biochemistry Boston University School of Medicine Boston United States\n3. Department of Molecular Biology Ariel University Ariel Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe formation of misfolded protein aggregates is a hallmark of neurodegenerative diseases. The aggregate formation process exhibits an initial lag phase when precursor clusters spontaneously assemble. However, most experimental assays are blind to this lag phase. We develop a quantitative assay based on super-resolution imaging in fixed cells and light sheet imaging of living cells to study the early steps of aggregation in mammalian cells. We find that even under normal growth conditions mammalian cells have precursor clusters. The cluster size distribution is precisely that expected for a so-called super-saturated system in first order phase transition. This means there exists a nucleation barrier, and a critical size above which clusters grow and mature. Homeostasis is maintained through a Szilard model entailing the preferential clearance of super-critical clusters. We uncover a role for a putative chaperone (RuvBL) in this disassembly of large clusters. The results indicate early aggregates behave like condensates.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).\n\n## Introduction\n\nNeurodegenerative diseases, such as Parkinson\u2019s disease, Amyotrophic Lateral Sclerosis, and Alzheimer\u2019s disease, are characterized by the appearance of large protein aggregates in cells and in the extracellular space (Selkoe, 2004). But the presence of aggregates does not always directly correlate with disease progression (Ross and Poirier, 2004). Intermediate species of aggregates, created early in the aggregation process, could be more toxic to cells than large aggregates, plaques and fibres (Cookson, 2005; Gosavi et al., 2002; Karpinar et al., 2009; Lashuel et al., 2002a; Lashuel et al., 2002b; Pountney et al., 2004; Ross and Poirier, 2004; Xu et al., 2002). However, the early steps of aggregate formation have been difficult to study, and may be critical to untangling the relationship between aggregation and disease\n\nExperimentally, late stages of aggregation can be measured both in vitro and in living cells, but the very early steps of aggregate formation remain elusive due to methodological limitations. In previous studies, the dynamics of nucleation and growth (Fink, 1998; Morris et al., 2009) of protein aggregates were most commonly measured experimentally in vitro (Buell et al., 2014; Jarrett and Lansbury, 1993; Krishnan and Lindquist, 2005; Lomakin et al., 1996; Serio et al., 2000). Nucleation in vitro typically requires a high concentration of purified monomers, which may not represent physiological conditions in living cells. Alternatively, aggregate growth dynamics have been studied in living cells, typically by seeding preformed \u2018nuclei\u2019 inside the living cells (Kaminski and Kaminski Schierle, 2016; Nonaka et al., 2010). These live cell experiments bypass the nucleation step altogether by externally seeding the aggregation. Thus, neither of these approaches has captured the early stages of protein aggregation that are likely to occur in unperturbed cells.\n\nA direct experimental readout of the very early nucleation steps, ideally directly inside an unperturbed cell, is a challenge. The initial nuclei may be sub-diffractive in size (and indeed they are for this study), which makes them difficult to capture by conventional imaging techniques. In vitro imaging of de novo assembly must rely on high resolution techniques like scanning transmission electron microscopy (STEM), atomic force microscopy (AFM), or super-resolution fluorescence microscopy to observe early aggregates (Gaczynska and Osmulski, 2008; Kaminski and Kaminski Schierle, 2016; Sunde and Blake, 1997). Although super-resolution imaging has been performed in living cells after seeding the cells with preformed small fibers, these studies have focused primarily on capturing stably growing fibers (Kaminski and Kaminski Schierle, 2016) rather than the transient early precursors. To our knowledge the size distribution, cluster dynamics, and physical nature of early pre-nucleation stage protein aggregates have not been previously determined.\n\nHere, we elucidate the early formation mechanism of misfolded protein aggregates directly in mammalian cells. We use super-resolution microscopy in fixed cells and light sheet microscopy in living cells to capture the nucleation stage of aggregate formation (Figure 1A). We find that precursor clusters exist in cells even under normal growth conditions. Moreover, the size distribution of these precursor clusters is robustly consistent with a textbook example of classical nucleation theory. Classical nucleation theory considers a simple question: Given a collection of molecules, if a subset of the molecules cluster together, would this raise or lower the energy of the system. It makes a specific prediction about the distribution of cluster sizes. An alternative mechanism, such as a vectorial active transport that locally clusters monomers, is unlikely to result in the same cluster size distribution.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of traditional experimental readouts of protein aggregation.\u00a0Such measurements are blind to the nucleation phase but begin to show signal during the growth phase and stationary phase. (B) Conventional fluorescence image of Synphilin1-Dendra2 in mammalian cell. (C) Super resolved reconstruction of the same cell reveals multiple sub-diffractive aggregates (see Figure 1\u2014figure supplement 1 for representative DBSCAN images). (D) log-log plot of the free energy from the distribution of aggregate sizes (see Box 1) reveal a low-n asymptote of slope 2/3, reminiscent of a surface energy limited system ($an^{\\frac{2}{3}}$) (See Figure 1\u2014figure supplement 3 for evidence for homogenous decoration of clusters by Synphilin1). (E) Plot of the resultant after correction of surface energy: by fitting an n2/3 surface energy term from the asymptote of (D) and subtracting it from the data,the resultant data is strikingly linear, and has a negative slope, suggesting the second term ($\u2212bn$). (F) Fit of the distribution of aggregate sizes to the full function $an^{\\frac{2}{3}}-bn$\u00a0to obtain the a and b parameters. The parameters define the nucleation barrier height and critical aggregate size (see Figure 1\u2014figure supplement 2 for expression level control and alternative tracer control, see Figure 1\u2014figure supplement 5 for application to in neuronal precursor cells). (G) Schematic of the energy function, as predicted for a super-saturated system undergoing first order phase transition. The line is dashed after the critical size to highlight that the functional form is\u00a0experimentally\u00a0valid only below this size. The barrier height and critical radius from the fit in F are represented (see Figure 1\u2014figure supplement 4 for larger schematic and definition of terms in text). Data is from 25,000 aggregates from 28 fixed cells. Errors represent s.e.m. All cells imaged in this figure were fixed cells. Log refers to the natural logarithm (base \u2018e\u2019) (see Figure 1\u2014figure supplement 5 for control in neuronal precursor cell line).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each subfigure contains - super-resolved reconstruction (centre) a pointillist image of clusters identified by the DBSCAN algorithm (left) and a zoomed in region with super-resolution (top right) and DBSCAN (bottom right) images.\u00a0Conditions represented are \u2013 (A) Plain dendra2 (unfused) control,\u00a0(B) Synphilin-Dendra2 untreated cells. (C) 30 min MG132 treatment. (D) 120 minutes MG132 treatment. (E) 150 min MG132 treatment. (F) 180 minutes MG132 treatment. (G) RuvBL knockdown. (H) AZC treatment, and (I) Rapamycin treatment. All cells represented in the figure are fixed cells.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** A Representative cells with different Synphilin expression levels \u2013 Left panels, high expression level cells with average fluorescence intensity\u00a0~15,000 counts (arbitrary units).\u00a0Right panels, Low expression level cells with average fluorescence intensity\u00a0~3500 counts (arbitrary units). (B) Sub-critical size distributions for three data sets \u2013 high expression (5 cells), low expression (5 cells) and with alpha Synuclein-Dendra2 as alternative aggregate marker. Log refers to the natural log (base \u2018e\u2019). The sub-critical size distributions show no detectable change despite the widely different expression levels.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The number of localizations assigned to individual clusters by DBSCAN versus the volume (cube of radius) over which these localizations were spread out. (A) For small clusters there is a distinct linear scaling. (B) For larger clusters, the linear scaling becomes poor at a scale experimentally found to be close to the focal depth (dotted vertical line) of our system. All our analysis concentrates on clusters in low n range where both the linear scaling holds and the theoretical predictions are expected to apply. (A) corresponds to data from\u00a0~30 nm to\u00a0~400 nm cluster radius, while all our fits utilized data below 200 nm in size).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Schematic showing the difference between bulk and surface interactions in the formation of a condensate.\u00a0Molecules buried in the centre of a cluster contribute the full free energy difference per molecule from being in the condensate while molecules at the edge contribute a reduced fraction of the full free energy gain per molecule. This is what necessitates a positive correction term $an^{2/3}$\u00a0to the total free energy difference caused by formation of a cluster of n molecules. (B) The shape of the free energy cost function for cluster formation in the sub-saturated (light grey S\u00a0<\u00a01), saturated (grey S\u00a0=\u00a01) and super-saturated (dark grey S\u00a0>\u00a01) cases. (C) Expanded view of the super-saturated case from B with definitions of terms referred to in the text. In the super-saturated state (black curve in B) unlike in the sub-saturated state (light grey curve in B) the system is not in equilibrium. Here the free energy function has a maximum at a critical size above which a cluster is favoured to grow at the expense of the saturation level. In the sub-saturated case, the distribution of cluster, being thermodynamically unfavourable fluctuations from the equilibrium monomer phase, follows a Boltzmann distribution in size. However, during the process of condensation, and if maintained at constant super-saturation by monomer input, the distribution of cluster sizes for sub-critical sizes is also well approximated by the Boltzmann distribution (Slezov, 2009).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Plotted is the energy of cluster formation ($-Log(P(n)$\u00a0as described in Box 1 versus $n$\u00a0for clusters in normal growth conditions for (i) MCF10A cells with clusters marked with Synphilin (circles), (ii) Neuro2A cells with clusters marked by alpha Synuclein (stars).\u00a0For the range of values < $n~1000000$\u00a0where the Neuro2A data set begins to exhibit a high noise level due to smaller size of data set, the two distributions are indistinguishable. Log refers to the natural log (base \u2018e\u2019). Untreated cell data is from the normalized distribution of 10,000 clusters from 10 cells, Neuro2A data from 3000 clusters from 5 cells.\n\nThe details of classical nucleation theory are revealing about how cells maintain homeostasis. The so-called homogenous nucleation is a prototypical mechanism by which first order phase transitions proceed (Kalikmanov, 2013; Sear, 2007; Slezov, 2009). A first-order phase transition describes the discontinuous changes needed for a system to go from a dispersed phase to a condensed phase (or vice versa). This may correspond to the concentration of a single component from its dispersed phase (for example condensation) or the demixing of some components from a multicomponent mixture (for example liquid-liquid phase separation). In these cases, there exists a saturation concentration above which the system transitions from dispersed to clustered phase \u2013 or from the mixed to the de-mixed phase. The saturation point then categorizes systems in two possible regimes, either sub-saturated or super-saturated. In the sub-saturated regime, the concentration of monomers is lower than the saturation concentration. The system can form clusters, but the clusters spontaneously lose molecules and dissolve. The sub-saturated state is a stable state in that the system remains in the dispersed or mixed phase. In contrast, in a super-saturated state \u2013 when the ambient concentration is above the saturation concentration - there exists a critical cluster size, below which clusters spontaneously dissolve, and above which clusters will spontaneously grow. The super-saturated state is metastable because clusters reaching a size above the critical size will grow at the expense of the dispersed phase. The condensed phase is favoured, and the concentration of monomers in the disperse phase \u2013that\u00a0is the\u00a0super-saturation level of the system\u2013 gradually decreases as larger clusters absorb monomers from the ambient environment. The theory of first order phase transitions makes a distinct prediction for the distribution of the dissolving clusters which can be used to distinguish sub-saturated from super-saturated states.\n\nBecause cells under normal growth conditions do not show large growing clusters traced by Synphilin1, the naive hypothesis is that the cell is in a sub-saturated state, which is normally a steady state. However, we find that even under normal growth conditions, the distribution of clusters suggest the cells are in a super-saturated state, which is normally not a steady state. Rather, our results suggest that cells maintain homeostasis through a so-called Szilard model of non-equilibrium steady-state super-saturation (Farkas, 1927; Slezov, 2009). The Szilard model describes how a system can be maintained in steady state super-saturation if there is a mechanism to constantly clear the largest clusters. This size-dependent clearance of large aggregates appears to be mediated by the putative chaperone RuvbL.\n\n## Results\n\n### Super-resolution imaging of fixed cells suggests classical nucleation theory underlies aggregate formation\n\nWe engineered mammalian cell lines expressing Synphilin1 - a tracer of aggregates in Parkinson\u2019s disease (Chung et al., 2001; Tanaka et al., 2004; Wakabayashi et al., 2000) - fused to a fluorescent protein Dendra2 (Chudakov et al., 2007). Dendra2 is a green to red photo-convertible protein that enables photo-activation localization microscopy (PALM) (Betzig et al., 2006), a single-molecule based super-resolution (Betzig et al., 2006; Hess et al., 2006; Rust et al., 2006) approach we used previously to study protein clustering in mammalian cells (Cho et al., 2016; Cisse et al., 2013). How Synphilin1 is recruited to aggregates is not fully understood. However, this protein is a commonly used tracer for well-studied misfolded protein aggregates such as Lewy bodies (Tanaka et al., 2004; Wakabayashi et al., 2000). Here, we concentrate on sub-diffractive Synphilin1 traced aggregates whose size distribution we measure. We checked that neither the expression level of Synphilin1 tracer protein nor the identity of the tracer (alternative tracer alpha-Synuclein) have any detectable effect on the size distribution of sub-diffractive clusters (Figure 1\u2014figure supplement 2). This suggests that Synphilin1 in our sub-diffractive clusters merely serves as a tracer and does not on its own affect cluster formation at the expression levels tested.\n\nWide-field epi-illumination (conventional) imaging of Synphilin1 in a fixed cell showed a diffuse cytoplasmic signal without any apparent aggregation (Figure 1B) as expected for a normal (i.e. without drug treatments) cell. However, super-resolution imaging of the same cell clearly revealed a large population of sub-diffractive clusters (Figure 1C).\n\nWe characterized the properties of these sub-diffractive clusters using density based spatial clustering of applications with noise (DBSCAN)\u00a0(Ester et al., 1996) (Figure 1\u2014figure supplement 1). We measured the radius and the number of localization events (corresponding to the fluorescent photo-activation and detection events) (see Materials\u00a0and\u00a0methods and\u00a0Figure 1\u2014figure supplement 3). We find that the number of localization events in a cluster, scales with the cube of the measured cluster radius This suggest that, at the relevant cluster sizes, the fluorescent detection events of the Synphilin1 tracer protein may be spread throughout the cluster volume at uniform density (Figure 1\u2014figure supplement 3). Only clusters with a radius greater than our localization accuracy [estimated to be ~20nm (Cho et al., 2016)] are interpreted in our analysis. For the analysis that follows, we defined the cluster size as a variable \u2018n\u2019, given by $n=(\\frac{R}{1\u00a0nm})^{3}$ where R is the measured cluster radius in nanometres (Figure 1\u2014figure supplement 3). Here, the parameter n is proportional to, but different from the actual number of molecules in a cluster; the proportionality constant is determined by the density of all monomers in the cluster which is not known.\n\nFollowing our observation of sub-diffractive clusters in the cell, we searched for signs of a thermodynamically driven first order phase transition in which spontaneous nucleation and growth mechanisms arise (Slezov, 2009). In condensation, the free energy change accompanying the clustering of n molecules into a single condensate is: $\\DeltaG=an^{2/3}\\pmbn$\u00a0[See Box 1]. The first term is the surface term and accounts for the interfacial energy of the $n^{2/3}\u221dR^{2}$\u00a0molecules on the surface of the condensate; the parameter \u2018a\u2019 serves as (positive) surface energy parameter. The second term is the bulk term and depends on the total number of molecules in the volume ($n^{1}\u221dR^{3})$\u00a0of the cluster; \u2018b\u2019 serves as a (positive) bulk energy parameter, and the positive or negative signs in front depends on whether the system is sub-saturated or super-saturated respectively [See Box 1]. The theory of first order phase transitions allows the determination of the free energy directly from the distribution of cluster sizes (which will follow $Pn=Ae^{-\\DeltaG/k_{B}T}$\u00a0but with corresponding positive or negative bulk energy term in the free energy differentiating between sub- or super- saturation respectively) [See Box 1]\n\nTo test the applicability of this theory to our data, we examine the distribution of cluster sizes. For either a sub-saturated or a super-saturated system the free energy as a function of cluster size is $\u0394G(n)=\u2212k_{B}TLog(P(n))$\u00a0[for n<nc, in the super-saturated case (Slezov, 2009)] where $k_{B}$ is the Boltzmann constant, $T$\u00a0the temperature (in Kelvin); P(n) represents the histogram (formally the normalized distribution function) of cluster sizes, and nc the size of maximum $\u0394G$\u00a0[Figure 1\u2014figure supplement 4 and (Slezov, 2009)]. That any of this is valid for the formation of endogenous aggregates inside living cells \u2013 complex, highly regulated, multicomponent entities forming in an intrinsically non-equilibrium environment in vivo \u2013 we could not a priori know. However, by investigating the features of the experimentally measured $\u0394G(n)=\u2212k_{B}TLog(P(n))$\u00a0we find the energetics of a condensing super-saturated system. Since classical nucleation theory makes predictions on the distribution of sub-critical clusters, we consider the behavior of our experimentally measured free energy function $\u0394G(n)=\u2212k_{B}TLog(P(n))$\u00a0for low n values(Log refers to the natural log (Base \u2018e\u2019)). The log-log plot of our experimentally measured $\u0394G$(n) reveals a linear asymptote of slope =$\\gamma_{1}=2/3$ for small n values (Figure 1D). This evokes a system dominated by a surface energy ($n^{2/3}\u221dR^{2})$\u00a0for small clusters. We then fitted the first few data points of $\u0394G$(n), corresponding to the smallest clusters, to estimate a surface energy term $an^{2/3}$\u00a0and subtracted it off of the data $(\u0394G$(n)-$an^{2/3})$ to obtain the resultant after surface correction. The resultant was linear (\u03b32=1) to within our experimental uncertainty suggestive of a bulk (volumetric, $n^{1}\u221dR^{3})$\u00a0energy contribution (Figure 1E). Moreover the slope is negative, indicating that the (negative) bulk energy term (-bn) minimizes the free energy. A positive surface tension balanced by negative bulk energy is the key signature of a super-saturated condensing system; the combination gives rise to a well-defined maximum free energy representing the free energy barrier for nucleation $(\u0394G(n_{c}))$, and the corresponding critical cluster size $n_{C}=\\frac{2a}{3b}^{3}$ above which clusters are thermodynamically stable and will spontaneously grow. By contrast, a sub-saturated system has the same surface term $(an^{2/3})$, but a positive (+bn) bulk term such that there is no maximum to the free energy and therefore no regime for stable cluster growth (Slezov, 2009). Therefore, the analysis of the cluster size distribution in unstressed cells reveals the precise energetics of a super-saturated system undergoing first-order phase transition (Abraham, 1974; Slezov, 2009).\n\nBy fitting the data, plotted as -Log(P(n)) to the functional form $\u0394G(n)\u00a0=an^{2/3}\u2212bn$(Figure 1F) (where for the case described in Box 1, $a=[36\\pi^{1/3}]\\sigmav_{1}^{2/3}/k_{B}T$\u00a0is the dimensionless surface energy, $b=Log(\\frac{c_{amb}}{c_{sat}})$\u00a0is the dimensionless bulk energy term and $\u0394G(n)$\u00a0is consequently in units of\u00a0$k_{B}T$), we obtain the two parameters\u00a0$a=1.07\\times10^{-3}\\pm0.06\\times10^{-3}$\u00a0and $b=4.3\u00a0\\times10^{\u22126}\u00a0(\\pm3\\times10^{\u22127})$\u00a0(best fit, mean $\\pm$ (s.e.m)) which determine the thermodynamic properties of the condensation process (Figure 1G and Figure 1\u2014figure supplement 4). Using these parameters, we can now extract two important biophysical properties of the process: the critical radius and the nucleation barrier (see Materials\u00a0and\u00a0methods). The nucleation barrier is $\u0394G=$\u00a07.2 (\u00b10.5) kBT, and the critical radius (i.e. the radius above which clusters will spontaneously grow) is Rc=162 (\u00b14) nm (mean $\\pm$ (s.e.m)) (Materials\u00a0and\u00a0methods).\n\nBecause the critical radius Rc is below the optical diffraction limit, this explains why a super-resolution technique was required to measure it. However, we were surprised that the value was as big as it is, because it is much higher than what would be predicted if a few monomers were sufficient to nucleate a stable cluster.\u00a0Our results suggest that the initial clusters likely form through a condensation of weakly interacting monomers.\n\nWe tested if these conclusions were generalizable to another cell type by performing our assay on clusters traced with dendra2-synphilin in Neuro2A cells (neuronal precursor cells, Figure 1\u2014figure supplement 5); we also tested labeling aggregates with an alternate tracer protein alpha Synuclein (Figure 1\u2014figure supplement 2). In all these cases we arrived at the identical distribution, suggesting the physical mechanism for sub-diffractive Synphilin1- or alpha Synuclein-marked aggregation may apply to a range of mammalian cells.\n\nIn summary, we developed a high-resolution imaging assay to look at the distribution of aggregate (cluster) sizes in fixed cell snapshots. We exploited the theoretical premise that in the distribution of cluster sizes below the critical size (sub-critical), the distribution can be approximated as a Boltzmann distribution. From this distribution we get the free energy. The resulting free energy terms extracted from the data were a surface tension term balanced by a linear bulk term, exactly as expected for the condensation of a super-saturated system. The free energy calculation allows us to determine the nucleation energy barrier and the critical cluster size (above which the clusters grow stably) for the aggregation inside mammalian cells. We could also determine how these quantities change under varying conditions. An important conclusion in this section is that even under normal growth conditions mammalian cells are super-saturated.\n\n### Super-saturation can be tuned by the levels of endogenous aggregating polypeptides\n\nTo test our model, we study how drug treatments affect its parameters. As noted before, the energetics of nucleation and growth depend on two parameters corresponding to a bulk term and a surface term. These parameters derive from the microscopic biochemical interactions within the system, and should depend on the concentration of aggregating proteins (which affects the bulk term) and on their energy of interactions.\n\nA major constituent of Synphilin1-traced aggregates is believed to be endogenous misfolded polypeptides (Zaarur et al., 2008). We employed methods to pharmacologically increase or decrease the cellular concentrations of these predicted constituents and measured the effect on cluster parameters (Rc and nucleation barrier). To decrease the concentration of aggregating polypeptides we partially inhibited translation with Rapamycin (Jefferies et al., 1997) which reduces the pool of newly synthesized misfolded, therefore aggregation prone, polypeptides (Conn and Qian, 2013; Sherman and Qian, 2013). We confirm the results with treatment by direct translation inhibitor Cycloheximide. By contrast, to increase the concentration of misfolded aggregating polypeptides, we incubated cells either with azetidine-2-carboxylic acid (AZC), a proline analogue that promotes misfolding of newly synthesized proteins (Goldberg and St John, 1976), or with the proteasome inhibitor MG132 that reduces degradation of misfolded-proteins (Nawaz et al., 1999).\n\nIn Figure 2A\u2013F we find that Rapamycin increases the nucleation barrier and critical radius, consistent with expectation for reduced super-saturation. A similar effect is also observed in treatments with the translational inhibitor cycloheximide (Figure 2\u2014figure supplement 1). In contrast, treatment with either MG132 or AZC decreases the nucleation barrier and critical radius, consistent with expectation for increased super-saturation. Therefore, over a range of complex pharmacological perturbations \u2013with simple intuition of how the perturbation would affect the saturation\u2013 the measured effects match the expectation from classical nucleation theory.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig2-v1.jpg)\n\n**Figure 2.:** and RuvBL-dependent mechanism clears super-critical clusters: (A\u2013F) Representative super-resolved reconstruction and free energy functional fit for AZC- (A and B), MG132-(C and D), and Rapamycin- (E and F) treated cells. Distribution functions were computed from 2500 to 10,000 clusters from 7 to 10 cells in each condition. Red-hot colour code is used to indicate the relative density of detections in A, C, E. Gray plot in B, D, F represents the functional fit for untreated cells for comparison. (G) Representative super-resolution reconstruction for an untreated cell showing many sub-diffractive aggregates (dark red) but few large aggregates (red hot). (H) Schematic of the observed effects of the different pharmacological treatments. (I) Representative super-resolution reconstruction for a RuvBL depleted cell and zoomed view of large (red hot) aggregates. (J) \u2013Log(P(n)) versus n curve from 7000 clusters from 9 RuvBL depletion cells shows almost no effect on the sub-critical distribution. (K\u2013M), quantification of the effect of the perturbations and comparisons of relative changes in the distributions of aggregate size (violin plot, (K), Rc (L) and the measure nucleation barrier; (M) the range of values in L and M is chosen to illustrate the main differences. Error bars in L and M represent s.e.m in fit estimation (Materials\u00a0and\u00a0methods). All cells imaged in this figure were fixed cells. Log refers to the natural log (base \u2018e\u2019) (See Figure 2 \u2013 figure supplement 1 for combined effect of AZC and MG).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Violin plots of data from untreated (Black) and amino acid substitute AZC treated (Blue) cells.\u00a0Data is from 10,000 untreated clusters (10 cells) and 4000 AZC clusters (seven cells). (B) Violin plots of data from untreated (Black), proteasome inhibitor MG132 (grey) and the combination of AZC\u00a0+MG132 (Blue) cells. AZC\u00a0+MG data is from 8000 clusters from seven cells. (C) Violin plots of cluster sizes, with HSP70 inhibitor Ver155008 in DMSO (grey), and DMSO control (black). Data is of 4000 clusters from five cells.\u00a0(D) Sub-critical cluster size distribution and bar graph of critical radius for cycloheximide treated cells. Data is from 4500 clusters from 5 cells. (E\u2013G) The sub-critical cluster size distribution is plotted for various times after MG132 treatments. Data is from 4000 to 7000 clusters from 5 to 10 cells at the various time points. In (C\u2013G) Log refers to the natural log (base \u2018e\u2019).\n\nIn summary, in this section we tested the effect of different pharmacological perturbations. We also confirmed here that the expression of the labelled tracer (Synphilin1) is not the main driving force for clustering, consistent with the previous characterization that the tracer labels aggregates that are mostly composed of misfolded polypeptides (JA, 2006; Meriin et al., 2012; Park et al., 2017; Tanaka et al., 2004). We find that the theoretical model holds robustly under different drug treatments that globally affect protein quality control: a drug that reduces global protein synthesis, thereby reducing the concentration of misfolded polypeptides is found to reduce super-saturation (i.e. increase the nucleation barrier and Rc) while a drug that promotes misfolding of newly synthesized protein is found to increase the super-saturation (i.e. decreasing the nucleation barrier, and Rc).\n\n### RUVBL-dependent mechanism clears super-critical clusters\n\nThe picture emerging from our analysis is that even untreated cells are super-saturated. In super-saturated systems if even one cluster reaches the critical size it should spontaneously grow; that cluster will come to dominate the system and absorb monomers until the system is no longer super-saturated. A violin plot of cluster sizes from untreated cells (Figure 2K, black) indicates that while a large population of small cluster sizes is apparent (indicated by the width of the violin plot in Figure 2K), there is a small minority of clusters (<5%) that have reached a size greater than Rc. Therefore, despite the fact that clusters do reach the critical size, such a population of super-critical clusters seems to be suppressed in healthy cells; this is corroborated by images of untreated cells that are distinctly devoid of large super-critical clusters (Figure 2G). In the theory of first-order phase transition, this observation is suggestive of a model with strict requirements: There ought to be a clearance mechanism that acts on the super-critical clusters without significantly affecting the sub-critical distribution.\n\nBecause a AAA+ ATPase, RuvBL, was previously suggested as a potential protein disaggregase in mammalian cells and in yeast\u00a0(Zaarur et al., 2015), we tested whether RuvBL may be involved in the clearance of super-critical clusters. Consistent with this hypothesis, we find that knocking down RuvBL1 in untreated cells results in the appearance of large clusters (Figure 2I, compare to untreated cell Figure 2G). A violin plot of cluster sizes from RuvBL knocked-down cells shows a clear population of large cluster sizes. Some clusters have radii greater than 1$\\mum$, a size range that we observed previously only after hours of proteasome inhibition (Figure 2K). These results implicate RuvBL in the clearance of large clusters from untreated cells (see Figure 3 for further tests of RuvBL).\n\nImportantly, we find that upon RuvBL knockdown, $R_{c}=157\\pm6nm$\u00a0did not change significantly from $R_{c}$ in control untreated cells ($162\\pm4nm$) (Figure 2J) suggesting that RuvBL knockdown did not significantly change the sub-critical distribution. This observation implies that RuvbL did not affect the concentration of aggregating molecules or their interactions, unlike, for instance, proteasome inhibition, and AZC incubation which reduced $R_{c}$ (Figure 2B, D, E). Our data indicate that RuvBL-dependent clearance of clusters acts preferentially on clusters that have reached a size above\u00a0$R_{c}$, without changing the sub-critical distribution or the nucleation process.\n\nWe also tested whether the classical HSP70-mediated pathway for disaggregation was involved at this stage. HSP70 is known to disaggregate amyloid fibrils (Gao et al., 2015) and the chemical Ver155008 inhibits HSP70 (Massey et al., 2010). However, here, using HSP70 inhibitor Ver155008 we were not able to generate a substantial population of super-critical clusters (Figure 2\u2014figure supplement 1). This suggests that the RuvBL mechanism is likely distinct from HSP70 mediated disaggregation.\n\nIn summary, the ultimate end point of the phase transition that occurs in super-saturated systems should be the formation of a large macroscopic condensed phase. We found it very surprising that cells are super-saturated yet they do not have many super-critical clusters under normal growth conditions. We argue that there exists a mechanism that preferentially clears large aggregates without significantly affecting the pre-nucleated distribution of aggregates. We identify a putative protein chaperone (RuvBL) that is key to this clearance mechanism.\n\n### The Szilard model for non-equilibrium steady state accounts for the genetic and pharmacological stresses tested\n\nWithout a specific mechanism in place to maintain the state, a super-saturated distribution is transient and unstable. Even if new monomers are continuously produced, super-critical clusters spontaneously absorb monomers faster than new clusters can form. One mechanism, attributed to Leo Szilard (Farkas, 1927; Slezov, 2009), was proposed to maintain a super-saturated distribution at steady state, through the preferential clearance of super-critical clusters.\n\nThe Szilard mechanism maintains a non-equilibrium steady state through the continuous production of aggregating monomers, their constant thermodynamically driven condensation (governed by the free energy function describe earlier) and a mechanism for preferential clearance of clusters at sizes greater than the critical size. Our data suggest a Szilard-type model (Figure 3A) whereby a RuvBL-dependent mechanism may help maintain cellular homeostasis in normal cells. Constituent monomers \u2013 the concentration of which may be affected through modulation of protein misfolding, damage, translation or degradation (e.g. through drug treatment or aberrant cellular processes) \u2013 condense through weak biochemical interactions with their condensation limited by their surface to volume ratio. At some point after the clusters reach a critical size beyond which their growth is favoured, they are subject to RuvBL-mediated clearance. These elements together explain the striking agreement between the distribution of sub-critical clusters and the energetics of steady state super-saturation in first order phase transitions. It also accounts for the measured effects of pharmacological treatments (e.g. in Figure 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic depiction of Szilard mechanism for maintenance of super-saturated steady state by simultaneous regulation of monomer creation and super-critical elimination. The suggested mode of action of the stress conditions utilized in Figure 2 and the RUVBL depletion discussed in Figure 2, and Figure 3 are indicated. (B) Schematic of predicted effect of Mg132 washout on sub-critical cluster size distribution and free energy function. (C, D) Data plots of \u2206G (n) vs. n measured before and after washout both without (C) and with (D) RuvBL depletion. Each curve is generated from 2500 to 6000 clusters from 6 to 10 cells in the various conditions. (E) Critical radii measured with and without RuvBL depletion, before and after MG132 washout. (F) Violin plots of cluster sizes in the four conditions of (C\u2013E) showing that the super-critical clearance is impeded in the case of RuvBL depletion compared to un-depleted cells. In (B\u2013D), Log refers to the natural log (base \u2018e\u2019).\n\nOne implication of the Szilard model is that accumulation of super-critical clusters could result from two independent mechanisms: increase in super-saturation (for example by proteasome inhibition or by increased expression of polypeptides) or alternatively by decreasing clearance (e.g. RuvBL knock down). To test this inter-dependence, we performed the treatment by proteasome inhibitor MG132 followed by washout, in cells with or without RuvBL knockdown. In all cases, after MG132 washout the free energy barrier returned to close to that of normal, untreated cells, suggesting that regardless of RuvBL knockdown, MG132 acted to increase the super-saturation in a reversible manner (Figure 3C\u2013E). However, after washout the clearance of the super-critical clusters (which existed during MG132 treatment) was only possible in the controls with normal levels of RuvBL. On the other hand, in the cells where RuvBL was knocked down, although the free energy barrier returned close to normal untreated level, a population of super-critical clusters remained after MG132 wash-out, corroborating the fact that RuvBL was necessary for the clearance of the super-critical clusters. These experiments lend further support for RuvBL\u2019s role as a part of a super-critical cluster clearance mechanism and help to demonstrate how cellular relaxation and adaptation after complex combinations of perturbations can be fully explained by the Szilard steady state model.\n\n### Live cell imaging data further support the model of super-critical clusters as condensates\n\nAll the analysis and conclusions thus far were driven by a free energy function extracted from a distribution of cluster sizes in fixed cell snapshots. This model has implications about the clusters, which can be tested in living cells. First, we aimed to test whether the same free energy function describes the distribution of clusters in live cells. This required the development of a light-sheet-based imaging assay where the brightness of the cluster is used as a proxy for cluster size. The distribution obtained by light sheet imaging is biased toward brighter (i.e. larger sized) clusters compared to super-resolution imaging. Nonetheless we are able to resolve enough of the sub-critical distribution and verify that the same free energy function describes the live cell data. Secondly, we used this live cell data to estimate the surface tension of the cluster-cytoplasm interface. We found that the surface tension is comparable to previous estimates of phase-separated condensates in the literature. Third, we measured the growth kinetics of the few super-critical clusters found in the living cells. We found that the growth and behavior of the super-critical clusters was entirely consistent with the model \u2013 suggested by our analysis in the sub-critical regime- of cluster formation by condensation. In particular, we found that growth and shrinkage was size dependent as expected from classical nucleation theory. We also found clusters underwent merger events (~1 mergers visible per cell imaged over ten minutes) as would be expected of condensates.\n\n### Cluster size quantification in living cells corroborate fixed cell data\n\nTo study the nucleation process directly in living cells, the relatively fast motion of clusters in living cells precluded our previously developed quantitative live cell super-resolution approaches (Cho et al., 2016; Cisse et al., 2013). Here, we develop a complementary, light sheet based, approach to study aggregation directly in the living cells. We opted for a non-diffractive, lattice light sheet (Chen et al., 2014) approach to selectively illuminate a thin optical sheet in the living cells; the reduced background of excited molecules we anticipated would give us sufficient contrast to detect sub-diffractive clusters as bright diffraction-limited spots.\n\nWe found that the light sheet reveals many condensates as diffraction-limited spots throughout the cell (Figure 4A and Videos 1 and 2). Since light-sheet microscopy is not inherently a super-resolution technique, the apparent spot size is not the physical size of the cluster and it is impossible to accurately correlate the total intensity of the clusters with their real volume. However, since we have established from fixed cell measurements that out tracer protein Sypnhilin1 is homogenously distributed throughout the volume of clusters over the range of cluster sizes (Figure 1\u2014figure supplement 3), the total fluorescence intensity of the directly illuminated, pre-converted (green state) Dendra2-Synphilin1 signal can serve as an estimate of the number of fluorescent molecules.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig4-v1.jpg)\n\n**Figure 4.:** (A) 2D maximum intensity projection of 3D direct imaging of Dendra2-Synphilin1 traced aggregates in a representative cell imaged with light sheet microscope. (B) Using the relative intensities rather than the radius as a measure of aggregate size, we may plot distributions that reproduce all the features of the fixed cell measurements (N=2800 aggregates from 22 cells). Insets: log-linear plot. (C)\u00a0The free energy functional fit (yielding $a=0.166\\pm.01andb=0.011\\pm.001$(best fit $\\pm$ s.e.m)) of the live cell data corroborates the conclusions of the condensation through first order phase transition. Here, the variable parameter N is an estimate of the number of fluorescent Dendra2-Synphilin imaged per aggregate and Log refers to the natural log (base \u2018e\u2019). All cells imaged in this figure were live cells.\n\n![Video 1.](https://cdn.elifesciences.org/articles/39695/elife-39695-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/39695/elife-39695-video2.mp4.jpg)\n\nWe obtain a live cell cluster size distribution (Figure 4B and C) that corroborates our conclusions. The distribution fits well to the functional form $\u0394G(N)\u00a0=aN^{2/3}\u2212bN$, and the measured nucleation barrier in live cell is\u00a0~6.6 (\u00b10.7) kBT in agreement with the 7.2 (\u00b10.5) kBT barrier measured by fixed cell super-resolution in Figure 1.\n\nThe critical cluster is estimated to have Nc\u00a0=\u00a01400 (\u00b1300) labeled, fluorescent molecules in a live cell. Taken together with the super-resolution measured Rc, this suggests a spacing of (Nc/Rc) at most one Dendra2-Synphilin every 15 nm. Therefore, given a Stokes radius of Dendra2\u00a0~1.5 nm, the labeled molecules occupy only about a thousandth of the volume of a cluster. This supports further that the clusters are likely heterogeneous and composed of far more unlabeled endogenous proteins than the fluorescent tracer (Synphilin 1) that labels aggregates.\n\n### Estimation of surface tension at the condensate-cytoplasm interface\n\nThe live cell measurements allow us to make bounded estimates for the surface tension of the condensate-cytoplasm interface. Estimates for the surface tension allow for direct comparison between condensates formed in a wide range of systems, and in different studies. Briefly, the measured value of $a$ plays the role of a surface tension in the theory,\u00a0$a^{\u2217}=(\\frac{r_{1}^{2}\\sigma}{k_{b}T})$, with $r_{1}$ the length-scale of a monomer (taken to be ~1nm), $\\sigma$\u00a0the surface tension; we previously noted that our definition of n in fixed cells (or N in live cells) were correct up to a multiplicative constant. While this does not affect our ability to calculate the critical radius and nucleation barrier (see materials\u00a0and\u00a0methods), it does impact our estimate of the individual parameter $a$. Nonetheless, we can still provide bounds on the value of the surface tension at the condensate-cytoplasm interface.\n\nIn the fixed cell data we measure the radius R with high spatial resolution and then calculate $R^{3}$ but $n_{tot}=R^{3}\u03c1$\u00a0where $\u03c1$\u00a0is the density of polypeptides in the cluster which is an unknown. In the live cell measurements we measure the total intensity I and calculate $N=I/I_{Singlemol}$\u00a0but again $n_{tot}=Nk$\u00a0with k unknown. So both $N=I/I_{Singlemol}$\u00a0=\u00a0$n_{tot}/k$ and\u00a0$n=R^{3}=n_{tot}/\u03c1$ are only measures of the total number of molecules up to a proportionality factor. Therefore from our fits we in fact get\u00a0$a=a^{*}\u03c1^{2/3}andb=b^{*}\u03c1$ from the fixed cell data $a=a^{*}k^{2/3}andb=b^{*}k$\u00a0from live cell data - where starred parameters represent the real energetic terms if we had measured the total number of molecules. Since surface tension is determined by\u00a0$a^{\u2217}=(\\frac{r_{1}^{2}\\sigma}{k_{b}T})$, and we do\u00a0not know\u00a0$a^{*}$, we need to use bounds on\u00a0$\u03c1$,\u00a0$k$ in order to estimate the surface tension.\n\nFor upper bounds - from live cell data we know that $n_{tot}$ is greater than the number of molecules that are fluorescing (only Synphilin1-Dendra2). That is, the real parameter $a^{*}$ is less than the measured parameter\u00a0$a$. Consequently the surface tension calculated from the measurement over-estimates the real surface tension and is an upper bound \u2013 since the measured parameter $a$\u00a0(from live cell data) was 0.166 at 310K (assuming ambient temperature as the temperature) and using\u00a0$a^{\u2217}=(\\frac{r_{1}^{2}\\sigma}{k_{b}T})$, this works out to\u00a0$\\sigma<6\\times10^{\u22124}N/m$. From fixed cell data, taking as input from the live cell measurements that a critical cluster has at least 1400 molecules (the number of Synphilin molecules estimated by intensity measurements), and that the critical cluster size is measured to be 162 nm, we can estimate a lower bound on the density. That density is at least\u00a0$3.3\\times10^{-4}moleculespernm^{3}$. Since the measured value of $a$ was 0.001 we can use $a=a^{*}\u03c1^{2/3}$\u00a0to get an upper bound on the real value of $a$ and consequently on the surface tension this works out to\u00a0$\\sigma<8\\times10^{\u22124}N/m$.\n\nLower bounds may be obtained by noting that the density of the cluster cannot be more than 1 molecule per nm3. This value corresponds to the size of proteins involved in the process. Using this value of $\u03c1=1moleculepernm^{3}$\u00a0we can compute the value of $a^{*}$ to be at least the measured value\u00a0$a$ ($a$= 0.001 in fixed cells) and consequently establish a lower bound of $\\sigma>4\\times10^{\u22126}\\frac{N}{m}.$\n\nInterestingly, the values $\\sigma\u223c10^{\u22126}\u00a0to\u00a010^{\u22124}N/m$\u00a0are similar to the order-of-magnitude estimate for the surface tension of in vivo liquid droplets more apparent in large oocytes and embryos. For example a surface tension around $10^{-5}N/m$\u00a0was estimated for the nucleolar interface in oocytes (Brangwynne et al., 2011) or $10^{-6}N/m$\u00a0for germline P-granules liquid droplets interface with the cytoplasm in c. elegans (Brangwynne et al., 2009). The comparable values of surface tensions suggest that despite differences in their sizes, our diffraction-sized clusters may have the same droplet-like properties as previously reported large in vivo condensates. It is also feasible that cluster formation mechanism described in this study may be in play in the formation of larger in vivo condensates reported in other studies.\n\n### Live cell cluster dynamics reveal key signatures associated with condensing systems\n\nNucleation and growth describes the evolution of a system toward matured, stable clusters. In our live cell imaging, we expected most of the clusters to be unstable because they were either sub-critical or under the influence of RuvBL clearance. Consistent with this expectation, comparable to fixed cells, we find that less than eight percent (<8%) of clusters were in the super-critical size range needed for stability, and most of the tracked clusters did not last as long as the full duration of our live cell experiments (6 min). Of the few that survived, we measured the dynamics of a representative population: we investigated the growth and shrinkage dynamics of 30 individual clusters from seven living cells imaged with the light sheet at 15 s time interval over 6 min. These represent a pool of the largest clusters; smaller clusters than this pool did not last the full 6 min of imaging or could not be tracked.\n\nFirst, by normalizing the cluster intensity at t\u00a0=\u00a00, we find that individual clusters have gradually grown or shrunk by up to 40% in the course of 6 min (Figure 5A). We color-coded the growth/shrinkage dynamics with clusters growing more than 10% in red, and those shrinking more than 10% in blue. Those clusters that have not changed in size by more than 10% after 6 min are in black. Strikingly, the growth/shrinkage correlates directly with the original cluster intensity: Figure 5B shows that growing clusters (red) were almost unanimously the largest clusters in the pool, while the shrinking clusters (blue) were the smallest. The unchanged clusters had intensities N\u00a0~\u00a02000 close to the estimated Nc, indicating that these stable clusters are likely around or above the critical size.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig5-v1.jpg)\n\n**Figure 5.:** (A) Aggregate growth and diminution kinetics over a period of 6 min from 30 long-lived aggregates from seven cells. Here, the intensity is normalized to the initial intensity. Color code: red are growing intensity, blue are diminishing intensity, and black represent no change (<10%) between start and end time points. (B) The intensity time traces of the individual aggregates show a clear difference in the global trend with the initially larger aggregates also corresponding to the growing (red) aggregates, and initially smaller aggregates shrinking (blue). Instantaneously all aggregates exhibit individual steps of both growth and diminution, and one small aggregate out of the 30, was seen to grow more than 10%. (C) Schematic depicting the expectations from Ostwald ripening: This coarsening/ripening behavior that large aggregates grow larger while small aggregates diminish is a key dynamic signature of a fluid in phase transition. (D and E) The aggregates coalesce. (D) A montage three aggregates successively coalescing into one aggregate over the period of\u00a0~6 min. (E)\u00a0The intensity trace of the three clusters in (D) shows that in each time upon merging the new droplet is the sum of the two precursor aggregates. Also see Figure 5; Video 1 associated with 4D and 4E and Figure 5;\u00a0Video 2 for more examples). All cells imaged in this figure were live cells.\n\nThis coarsening behavior, that large clusters tend to grow larger while smaller clusters tend to shrink, is a key dynamic signature of complex systems in phase transition, an example of which is the well-known phenomenon of Ostwald ripening (Ostwald, 1897) where larger clusters, owing to the lower curvature at their surface have a reduced pressure differential (Laplace pressure\u00a0$\u0394P=2\\sigma/r$) across their surface and consequently reduced solubility relative to smaller clusters. Within the framework illustrated in Figure 1 and Figure 4, coarsening can be understood by the fact that smaller condensates have a higher surface to volume ratio and therefore a higher free energy than large condensates; as such, above the critical barrier, large clusters spontaneously grow larger, and in steady state this happens at the detriment of smaller aggregates which will shrink.\n\nInstantaneously, any given cluster can exhibit growth and shrinkage steps. And a few small aggregates will stochastically grow to reach super-critical sizes. Consistent with this view, in the time traces of Figure 5B one of the smaller aggregates has grown (red) over the imaging window. These reversible steps are consistent with a thermodynamically driven, probabilistic process.\n\nOver the course of imaging, the overall growth or shrinkage seems roughly linear with time (N(t) \u221d t) for the individual clusters. We note that since our super-resolution data shows that cluster size scales with the cube of the average radius (Figure 1\u2014figure supplement 3), our live cell data is consistent with N(t) \u221d R3 \u221d t. Therefore, our observations of individual cluster growth and shrinkage in live cell would be consistent with condensed phase coarsening with R \u221d t 1/3, the prediction for both diffusion-limited Ostwald ripening, or coarsening by Brownian motion-induced coalescence (Berry et al., 2015; Ratke and Voorhees, 2002; Slezov, 2009).\n\nIn addition, we observe in the living cells that diffusing clusters, upon contact, merge into a single condensate (Figure 5D and E and Videos 1 and 2). In 15 cells imaged for 6 min each, we manually identified nine merger events, suggesting a rate of occurrence of about 1 in every 10 min. This coalescence is another common feature of systems undergoing condensation, where the net attractive interaction between monomers and the fact that the surface energy cost is minimized by fusion favor coalescence upon contact. Together, the observations from intensity distributions in live cells that\u00a0is the corroboration of a thermodynamic free energy akin to condensation, the estimation of a surface tension comparable to phase separated biomolecules in vivo (Brangwynne et al., 2009; Brangwynne et al., 2011), the coexistence of fast stochastic dynamics with slow size-dependent coarsening, and the incidents of coalescence \u2013 all provide support for the conclusion that aggregate formation and growth is governed by the thermodynamics of a first order phase transition in live mammalian cells.\n\n## Discussion\n\nAggregation of misfolded proteins is typically understood as sequential oligomerization in discrete, often irreversible steps adding monomers to an already formed nucleus (Serio et al., 2000). However, how the original nucleus forms in live cells has not been clarified. Our work establishes that a first-order phase transition is an appropriate thermodynamic framework to describe de novo formation and growth of protein aggregates in mammalian cells. Our results reveal that at the early stages, the formation of misfolded protein clusters is akin to a first order phase transition leading to the formation of a condensate. This link between condensation and early steps of aggregation provides a conceptual framework for our understanding of aggregation in vivo, with clear predictions and implications that can be tested and falsified in experimental studies.\n\nA key prediction from the existence of the free energy form is that super-saturation is being maintained in steady-state in the living mammalian cells. One testable implication is that even healthy cells are already super-saturated and may have sub-diffractive condensates that may\u00a0be impossible to detect by conventional imaging, but\u00a0that\u00a0are readily apparent with the high-resolution microscopes used here.\n\nA requirement for physically maintaining a super-saturated steady state is that a mechanism exists to recognize and clear condensates that are larger than a critical size. This expectation has led us to identify the RuvBL-dependent pathway for aggregate clearance. It is possible that an accumulation of super-critical clusters could result from the misregulation of RuvBL-dependent clearance of super-critical clusters. We found that knocking down RuvBL was sufficient to increase super-critical clusters in the cells. In future studies, it would be interesting to look for correlations between disease onset and RuvBL expression level, or mutations.\n\nSimilarly, it has been hypothesized that intermediate aggregates could be more toxic to cells than late stage aggregates in aggregation diseases (Cookson, 2005; Gosavi et al., 2002; Karpinar et al., 2009; Lashuel et al., 2002a; Lashuel et al., 2002b; Pountney et al., 2004; Ross and Poirier, 2004; Xu et al., 2002). If maturing condensates represent the toxic species, then it would help explain the need for maintaining homeostasis by clearing condensates above a critical size. The Szilard model offers a predictive quantitative framework for testing such hypotheses, since it predicts and describes how alterations in cellular protein homeostasis would thermodynamically alter the balance between condensate formation and clearance.\n\nMost aggregates studied in vitro require higher than physiological concentrations of proteins for de novo nucleation and formation of plaques, fibers or inclusions of homogeneous compositions (e.g. with\u00a0a single protein constituent). Often, however, the protein\u2019s expression is not increased in cells that contain visible aggregates in vivo, raising a question on whether there are missing nucleators that facilitate this transition. Rather, in vivo condensates have very high concentrations of constituents,\u00a0andcondensates can mature and acquire a variety of complex physical properties (including gelation or solidification [Patel et al., 2015] and irreversibility) over long time scales.\n\nThere is mounting evidence in the literature suggesting that in disease, intermediate steps of aggregate formation may proceed through the type of nucleation process that we observe here. In a classic study (Serio et al., 2000), Lindquist and colleagues examined the in vitro mechanism by which a prion protein Sup35 forms self-seeded amyloid fibers. They found that variably sized spherical complexes (akin to condensates and apparent by high-resolution imaging (STEM and AFM)), appear to be crucial intermediates in de novo amyloid nucleation (Serio et al., 2000). Similarly for Huntingtin N terminal fragments, in vitro studies (Crick et al., 2013; Posey et al., 2018) show that below the concentration required for growth of a structured fibrilar phase, there exists another saturation point distinguishing monomers and small oligomers of\u00a0<10 nm size from spherical complexes of\u00a0~25 nm size (Posey et al., 2018); globular complexes have also been isolated from Huntingtin rat models (Sathasivam et al., 2010). Intermediate steps are also suggested by fluorescence correlation spectroscopy studies of nucleation of amyloids, where hints of a second nucleation barrier between small multimers and large structured aggregates were seen (Garai et al., 2008).\n\nIn light of such precedence and the high concentrations needed for the nucleation (T\u00f6rnquist et al., 2018) of fibrils in vitro, it is plausible that, the micro-environment within in vivo condensates such as the one found in our current study, could serve to provide the high concentrations needed for a secondary nucleation (Buell et al., 2014; Buell et al., 2014) of fibers or plaques with various properties (Vitalis and Pappu, 2011). Further, the regulatory template of the Szilard mechanism - with\u00a0a\u00a0preferential regulation of super-critical clusters \u2013 could be useful in\u00a0re-examining previous results, such as for example, the regulated competition between fibrilar and amorphous aggregation of Amyloid beta\u00a0(Garai et al., 2018).\u00a0It is also possible that mechanisms similar to those described here may be relevant in other contexts (Cho et al., 2018;\u00a0Chong et al., 2018; Sabari et al., 2018).\n\nOur assays and analytical framework also highlight various avenues where progress in the experimental state-of-the-art in the near future may yield rich insights. On one hand, the super-resolution methods are still limited by their localization accuracy (in our case\u00a0~20 nm); if the critical cluster size is not greater, the sub-critical cluster sizes would not be readily quantifiable. Super-resolution techniques are also limited in temporal resolution, making them unsuited for imaging fast moving sub-diffractive clusters in living cell. On the other hand, the lattice light sheet approach we used for live cell imaging is not sensitive enough to study detailed dynamics of the smallest clusters. And the gradual photo-bleaching of the fluorescent labels limits how long individual clusters can be imaged in living cells. Given these challenges there are still many questions made addressable by the ability to apply thermodynamic principles to aggregation in living cells.\n\nWhile our investigation has focused on aggregates related to Parkinson\u2019s disease, we note that the methodology can be readily extended to any protein that can be fluorescently tagged (for example fused to the GFP-like Dendra2). Similar mechanisms may in fact apply in other cellular processes. For example, there are large membraneless\u00a0cellular organelles that have been shown to behave like liquids, suggesting that their formation is akin to liquid-liquid phase separation. Applying the approaches described in this paper would further define the biophysical properties underlying membraneless\u00a0organelle formation and also reveal regulatory mechanisms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>MCF10A</td>\n      <td>ATCC</td>\n      <td>ATCC:CRL10317 RRID: CVCL_0598</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line \u00a0(H. sapiens)</td>\n      <td>Neuro2A</td>\n      <td>ATCC</td>\n      <td>ATCC:CCL131 RRID: CVCL_0470</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>Synphilin-GFP</td>\n      <td>Zaarur et al., 2008</td>\n      <td>n/a</td>\n      <td>Generated by Sherman lab - published Zaarur et al., 2008, backbone pCXsbr</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>Human Alpha Synuclein</td>\n      <td>Addgene</td>\n      <td>51437</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>Dendra 2</td>\n      <td>Clonetech USA</td>\n      <td>PDendra2C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>Synphilin-Dendra2</td>\n      <td>This Paper</td>\n      <td>n/a</td>\n      <td>Generated from synphilin-gfp and dendra two plasmid above. Available from Cisse lab</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>alpha Synuclein Dendra2</td>\n      <td>This paper</td>\n      <td>n/a</td>\n      <td>Generated from human alpha Synuclein and Dendra two plasmid above. Available from Cisse lab</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>siGENOME Non-Targeting siRNA #5</td>\n      <td>Dharmacon</td>\n      <td>D-001210\u201305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>siGENOME RUVBL1 siRNA</td>\n      <td>Dharmacon</td>\n      <td>(D-008977\u201304)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MG132</td>\n      <td>Sigma Aldrich</td>\n      <td>M8699</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rapamycin</td>\n      <td>Sigma Aldrich</td>\n      <td>R8781</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide</td>\n      <td>Sigma Aldrich</td>\n      <td>C7698</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Azetidine-2-Carboxylic acid</td>\n      <td>Sigma Aldrich</td>\n      <td>A0760</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cholera Toxin</td>\n      <td>Sigma Aldrich</td>\n      <td>C8052</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Human Insulin</td>\n      <td>Sigma Aldrich</td>\n      <td>I9278</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Leboqitz L15 medium</td>\n      <td>Sigma Aldrich</td>\n      <td>11415064</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hydrocortisone</td>\n      <td>Sigma Aldrich</td>\n      <td>H0888</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>dbCAMP</td>\n      <td>Sigma Aldrich</td>\n      <td>D0627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ver155008</td>\n      <td>Sigma Aldrich</td>\n      <td>SML0271</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lipofectamine RNAiMAX</td>\n      <td>Thermo Fisher</td>\n      <td>13778030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Xtremegene 9</td>\n      <td>Sigma Aldrich</td>\n      <td>6365779001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>qSR</td>\n      <td>Andrews et al. (2018)</td>\n      <td></td>\n      <td>Software made available on repository\u00a0- http://github.com/cisselab/qSR/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Lattice Light sheet processing code</td>\n      <td>Chen et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Multiple Target tracking(MTT)</td>\n      <td>Serg\u00e9 et al., 2008</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Contact for reagent and resource sharing\n\n'Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Ibrahim Cisse (icisse@mit.edu)\n\n### Experimental model and subject details\n\nCell lines were generated from MCF-10A (human breast epithelial) cells grown in 50:50 DMEM/F-12 medium supplemented with 5% horse serum, 20 ng/ml epidermal growth factor, 0.5 \u03bcg/ml hydrocortisone (Sigma Aldrich), 10 \u03bcg/ml human insulin (Sigma Aldrich), and 100 ng/ml cholera toxin (Sigma Aldrich). In all cases, medium was supplemented with Penicillin-Streptomycin and incubated at 37\u00b0C in an atmosphere of 5% CO2 in a water-saturated atmosphere.\n\nFor the Synphilin-Dendra2 cell line \u2013 The retroviral expression construct with C-terminally tagged Synphilin one sub cloned into pCXbsr vector described previously (Zaarur et al., 2008) was used with EGFP at the C-terminus of the construct replaced with Dendra2, PCR cloned from the P-Dendra2C plasmid purchased from Clontech, USA.\n\nFor the alpha Synuclein\u2013Dendra2 cell lines \u2013 alpha Synuclein gene was copied by PCR from Addgene plasmid #51437 and cloned into P-Dendra2C plasmid purchased from Clonetech, USA. For MCF10A \u2013alpha Synuclein cell line \u2013 alpha Synuclein-Dendra2 plasmid, was transiently transfected using extremegene9 and selected using Kanamycin resistance cassette in MCF10A (ATCC, USA) cells. The cell line was tested for mycoplasma contamination by the high-throughput sequencing facility at the Koch Institute using the Lonza MycoAlert Plus kit. The cell line tested negative for mycoplasma contamination. Cell line identity was authenticated by ATCC using STR profiling, and gave a 94% match to ATCC cell line CRL-10317(MCF10A). For Neuro2A- alpha Synuclein-Dendra2 control \u2013 alpha Synuclein-dendra2 plasmid, described above was transiently transfected using extremegene9 and selected using Kanamycin resistance cassette in Mouse neuroblastoma cell line - Neuro2A (CCL-131, ATCC, USA)\n\nNeuro2A was maintained in culture in growth medium consisting of 45% of DMEM high glucose medium w/L-Glutamine (GIBCO, USA), 45% of OptiMEM1 medium (GIBCO, USA) and 10% of Fetal bovine serum (GIBCO, USA) Supplemented by Penicillin-Streptomycin and incubated at 37C in an atmosphere of 5% CO2 in a water saturated atmosphere.\n\nDifferentiation to neuronal state was achieved by simultaneous lowering of serum content to 1% and addition of 0.5 mM dbcAMP (Sigma Aldrich, USA) as suggested in ATCC product manuals. In 2 days of growth, distinctly neuronal morphology was established in\u00a0~75% of the cells in culture and alpha Synuclein expression was observed throughout the cell but was enhanced at the tips of the finger-like processes of the cell. The neuronal state of N2A cells under dbcAMP differentiation has been established in the literature (Tremblay et al., 2010)\n\n### Method details\n\n#### Genetic and pharmacological treatments\n\nThe various pharmacological and genetic stresses were applied as follows-\n\nNa\u00efve (unstressed) growth \u2013 cells grown in the culture medium described above were imaged without any stress. This condition was measured as control along with every other stress and on its own on three separate occasions (independently cultured and plated imaging dishes).\n\nProteasome inhibition \u2013 cells were incubated for 0 to 4 hr using 2 \u03bcM MG132 (Sigma Aldrich, USA) in normal growth medium. Additional tests were done with lower concentrations and slightly longer incubation times, 500 nM MG132 was the lowest attempted concentration that allowed aggresome formation. This stress was measured on three separate occasions (independently cultured and plated imaging dishes).\n\nRapamycin incubation: Cells were incubated for 12 hr in normal growth medium supplemented with 100 nM rapamycin (Sigma Aldrich, USA) after being plated on the imaging coverslip. This stress was measured on two separate occasions (independently cultured and plated imaging dishes).\n\nCycloheximide incubation: Cells were incubated in normal growth medium supplemented by 500 \u03bcg/ml of Cycloheximide for 3 hr. This experiment was repeated on two occasions (independently cultured and plated imaging dishes)\n\nVer155008 incubation: Cells were incubated in normal growth medium supplemented by concentrations up to 50 \u03bcM in DMSO alongside DMSO control. Incubation was done for 3 hr and 9 hr.\n\nAmino acid substitution: Cells were incubated for 3 hr in normal growth medium containing 5 mM Azetidine-2-carboxylic acid (Sigma Aldrich, USA). This stress was measured on its own on two separate occasions separate occasions (independently cultured and plated imaging dishes), and also as control dish for combination of amino acid substitution and proteasome inhibition on two separate occasions (independently cultured and plated imaging dishes).\n\nRUVBL depletion: For siRNA transfection, we used Lipofectamine RNAiMAX (Invitrogen) and followed the manufacturer\u2019s reverse-transfection protocol. For a well on a 24-well plate, we mixed 0.4 \u03bcl of the reagent with 2 \u03bcl of 10 \u03bcM siRNA in 100 \u03bcl of OptiMEM and added the mixture to 400 \u03bcl of a cell suspension in the well. 24\u201328 hr later the transfection was stopped and the cells were plated for an experiment conducted the next day. We used the following siRNAs purchased from Dharmacon: siGENOME Non-Targeting siRNA #5 and siGENOME RUVBL1 siRNA (D-008977\u201304) this stress was measured on two separate occasions (independently cultured and plated imaging dishes).\n\n### Cellular fixation\n\nFixation was carried out by 4% Paraformaldehyde (Electron Microscopy Sciences, USA) for 15 min at room temperature. In tests to investigate possible fixation artefacts we varied fixation Paraformaldehyde concentrations and temperatures including a variety of fixation timescales from fixation in. 05% paraformaldehyde at 4C for 16 hr to the conventional fixation for 15 min. Cells were then mostly imaged immediately after fixation but were never stored longer than 5 days before imaging. The storage was at 4C under Phosphate buffered saline in dark conditions. There was no noticeable difference between cells imaged immediately after fixation and a few days after. Different fixation rates showed no difference in the resulting cluster size distributions:\n\n### Imaging\n\n#### Super-resolution imaging\n\nFor imaging, Cells were plated on 25 mm round glass coverslips (CS-25R) from Warner Instruments (Hamden, CT) for 12\u201324 hr in the specified growth conditions. Cells were either fixed and imaged or imaged live after reaching 50\u201375% confluence. All imaging was carried out in Leibowitz\u2019s L-15 medium. To conduct PALM Super resolution imaging, we used an optical system built using a Nikon Eclipse Ti microscope with a 100\u00a0\u00d7\u00a0oil immersion objective (NA 1.40). Pre-converted Dendra2 was excited by a 488 nm laser line. Photo-activation of Dendra2 was carried out with a 405 nm laser line and in the post-converted state Dendra2 was excited by a 561 nm laser line. These laser lines were, expanded, re-collimated and focussed on the back focal plane of the Microscope in an external optical path using an achromatic beam expander (AC254-040-A and AC508-300-A, from THORLABS, Newton, NJ) and an achromatic converging lens (#45\u2013354, from Edmund Optics, Barrington, NJ). Image data was collected using an Andor iXon Ultra 897 EMCCD camera. The laser power densities used for post-converted Dendra2 were 0.5 W/cm2 (405 nm) and 3.2 kW/cm2 (561 nm) on the image plane.\n\nFor live cell imaging the L15 media was supplemented with 10% Fetal Bovine Serum (Thermo Fisher). For both live and fixed cell imaging, the cells were maintained at 37\u00b0C in a temperature controlled platform (InVivo Scientific) on the microscope stage during image acquisition. Z-position of the microscope stage was maintained during acquisition using the Perfect Focus System (PFS) on the Nikon Ti Eclipse.\n\nFor fixed cell super-resolution imaging, movies with 10,000 frames, each averaged over 50 ms of exposure time, were acquired with both the excitation and photo-converting lasers on continuously.\n\n### Lattice light sheet imaging\n\nFor Lattice Light Sheet Microscopy (Chen et al., 2014), cells were plated on gelatine-coated coverslips 24\u201348 hr before imaging and grown as described above. Imaging took place in L15 medium supplemented with 10% FBS. A lattice light sheet consisting of 61 Bessel beams was generated with an annulus of inner/outer numerical aperture NA 0.44/0.55. Illumination power was 1.3 mW measured before the illumination objective. Volumetric image data with a temporal resolution of 15 s/volume (300 frames) was acquired by stepping cells through the light sheet in intervals of 0.3 \u00b5m with 50 ms exposure time using a sCMOS camera (Orca Flash v4.2, Hamamatsu). Images were processed (deskewed) using a modified version of MATLAB (The Mathworks) code supplied by Chen et al. (2014). Analysis was performed on maximum intensity projections of images stacks.\n\n### Super-resolution reconstruction\n\nTo identify single molecules in raw images of photo-converted Dendra2 fluorescence, the intensity signals were analysed using an adapted version of the multiple-target tracking algorithm (MTT) (Serg\u00e9 et al., 2008) then we used our open software qSR for visualization, super-resolution reconstruction and DBSCAN. Briefly, for each frame, the point-spread function (PSF) of spatially separated individual fluorophores was detected and fitted to a two-dimensional Gaussian distribution. The centre of the fit yielded the position of single molecules with nanometre accuracy. Super-resolution reconstruction images were generated by superimposing a 2D Gaussian curve with the same intensity value central position and standard deviation as found by the fitting procedure. Finally, the positions of single molecules were fed into the DBSCAN (Ester et al., 1996) implementation custom written to extract meaningful distribution functions from the resulting data. Representative super resolved reconstructions along with zoom-ins showing DBSCAN efficacy in all measured conditions are shown in Figure 1\u2014figure supplement 1.\n\n### Quantification and analysis\n\n#### DBSCAN image analysis\n\nDBSCAN, density-based scanning is a powerful computational technique for identifying correlations in a variety of data (Ester et al., 1996). Using two user chosen parameters, m and r, the algorithm combs through a data set of spatial coordinates \u2013 corresponding here to the super resolved localizations from Dendra2 \u2013 classifying the points as belonging to clusters if there are at least m points from that cluster within a radius r of the point. Our implementation was included in\u00a0Andrews et al. (2018)\u00a0and Andrews et al. (2017).\n\nParameter choice will depend on the total density of localizations and the relative strength of local density fluctuations constituting clusters, both of these are influenced by imaging conditions. Therefore, parameters must be chosen by careful comparison to an unclustered control dataset acquired keeping total density of localizations as close to constant as possible. Across all data sets we consider the first 10,000 frames (50 ms integration time) for each cell in all experimental treatments and with constant imaging conditions.\n\nWe chose r as 40 nm and m as 10. Our choice of parameters was based on running the algorithm on cells transfected with plain Dendra2 as our unclustered control. While super-resolution maps with\u00a0~50000 localizations in ~$(25\\mum)^{2}$\u00a0area for Dendra2 cells gave between 50 and 150 clusters/cell, with the same localization density in Synphilin-Dendra2 cells we found of the order of 1000 clusters per cell. Changing r and m by a factor of 2 did not significantly affect the number of clusters found. Thus our parameter choice (and factors of two on either side of our parameter choice) was effectively eliminating noise and not missing clusters. Lastly, we visually inspected the localization maps and DBSCAN cluster allocations and never encountered a problem. Representative super resolved reconstructions along with zoom-ins showing DBSCAN efficacy in all measured conditions are shown in Figure 1\u2014figure supplement 1.\n\n### Analysis of cluster size distributions (Super-resolution)\n\nComputation of the cluster size distribution functions was carried out in the following steps:\n\nDBSCAN was run on 10,000 frames for each cell in a given experimental condition.\n\nFor each cluster identified by DBSCAN, the number of localizations making up the cluster and their spatial spread as estimated by drawing a convex hull around the points (Radius R) were tabulated. Data from all cells in similar conditions were collated. Since our uncertainty in super-resolved molecular positions is\u00a0~20 nm we discarded all clusters (collections of points with at least m\u00a0=\u00a010 neighbours) with diameter spanning less than 50 nm.\n\nNext for each cluster we calculated the quantity $n=(Rinnm/1nm)^{3}$. In each experimental condition, we have ~ 10000 clusters collated from ~ 10 cells. In data from untreated cells, > 90% of these clusters had n values less than\u00a0$n=2\\times10^{6}$. In highly clustered experimental data sets such as 180 minutes post proteasome inhibition, the proportion of large clusters increased. However, the majority of clusters were still less than\u00a0$n=2\\times10^{6}$. The value of n corresponding to a critical size was always less than $n=2\\times10^{6}$\u00a0depending on the experimental condition. The cluster size distribution functions in the main text and this supplement were fit to the theoretical form solely in the sub-critical range where the theory is valid (which is also where the majority of our cluster data lay).\n\nThe cluster size distribution functions in each experimental condition were computed from normalized histograms of the collated cluster n values from that experimental condition with a constant bin size across all data sets ($\u0394n=3\\times10^{4}$). The main concern is to have enough data to be able to choose sufficiently small bins to effectively sample the fastest variations in the underlying distribution function without hitting a noise floor. This is the Nyquist criterion for binning. With more than 5000 clusters ranging for each condition from $n=1.5\\times10^{4}$\u00a0to $n=2\\times10^{6}$\u00a0(the sub-critical regime) we had sufficient data that even bins of size $\u0394n=5000$\u2013 dividing the sub-critical regime into ~400 bins \u2013 resulted in histograms that were noiseless enough to fit and sampling the distribution very accurately. Data reported is with $\u0394n=3\\times10^{4}$\u00a0the results of fitting the distribution function are insensitive to changing the bin size down to\u00a0$\u0394n=5000$ ($<2%$\u00a0change in estimated\u00a0$R_{c}$).\n\nFor ease of presentation, we note that the probability distribution function is $Probn=Ae^{-\\DeltaG(n)}$\u00a0where A enforces normalization. However A is determined by the fit parameters a and b since $\\int_{0}^{n_{c}}Probn=1$ implies $=1/\\int_{0}^{n_{c}}e^{-\\DeltaG(n)}$. Then\u00a0$-Log(Probn=\\DeltaGn-Log(A)$,\u00a0where Log refers to the natural log (base \u2018e\u2019). Therefore, in order to read the nucleation barrier directly from the \u2013Log(P(n) curve, we must add an offset\u00a0$Log(A)$. Equivalently this amounts to a self-consistent normalization of our experimentally measured distribution function such that A is 1. This procedure just contributes an offset to the \u2013Log(P(n)) curves without affecting critical radius and permits ease of presentation as it allows direct reading of the barrier height from the \u2013 Log(P(n)) graphs.\n\nFitting of the experimentally measured cluster size distribution functions to the theoretical functional form was carried out using the Mathematica implementation of least squares linear regression routine included in the LinearModelFit command. Errors in values of $R_{c}$ reported standard error of the mean from the best fit (computed, for instance using the MeanConfidenceBand object property of the LinearModelFit package in Mathematica).\n\nThe range of n values for fitting data is important to determine. The theoretical form is only expected to hold below the critical size and diverges above the critical size. This sets an upper bound on range of data to use. However, the more data points you include the tighter the error bars on the fit parameters. The fitting range was determined self consistently by fitting data up to that value of n which was 80% of the critical radius predicted by the fit. In practice, this amounted to fitting up to $n\u223c8\\times10^{5}$\u00a0for the case of 180 min of proteasome inhibition (when the predicted critical size was\u00a0$n~1\\times10^{6}$) and fitting up to $n~1.5\\times10^{6}$\u00a0for the case of untreated cells where the critical size corresponded to\u00a0$n~2\\times10^{6}$. The larger error bars in the 3 hour proteasome inhibited case than in the untreated cell reflect both the greater spread in the data (fewer total clusters) and smaller available fitting range. The residuals in Fig. 1 depend slightly on the data range used to fit and subtract the n2/3 term and consequently only qualitative conclusions (such as the sign of slope) should be drawn from relative comparisons between data sets fit identically. Our procedure was to always fit the range n < $2\\times10^{5}$ in all data sets and using bin size 5000 in this range.\n\nThe distribution of sub-critical cluster sizes P(n) is a Boltzmann distribution only in terms of the extensive variable\u00a0$n_{tot}$, the total number of polypetides in the cluster. Our analysis has been in terms of the defined parameter $n=(\\frac{R}{1\u00a0nm})^{3}.$ As defined, n should be proportional to the total number of molecules in the cluster as we image only a fraction of fluorescently detected molecules which constitute only one species in our aggregates (Figure 1\u2014figure supplement 3). However, the critical radius and nucleation barrier may be computed immune to a multiplicative constant in the definition of $n=(\\frac{R}{1\u00a0nm})^{3}$. This can be seen by asking what would happen were we to misrepresent the cluster size $n_{tot}$ by an arbitrary multiplicative factor k. Then\u00a0$n_{tot}$, the real cluster size would be replaced by\u00a0$n^{'}=kn_{tot}$. The free energy measured in terms of $n^{'}$ would be\u00a0$\u0394G(n^{\u2032})=\u2212b^{\u2032}n^{\u2032}+a^{\u2032}n^{\u20322/3}$. The relation between primed parameters and the unprimed \u2013 true \u2013 parameters would be $b=b'k$\u00a0and\u00a0$a=a'k^{2/3}$. Now the true value of the barrier height is $\u0394G(n_{tot}_{c})=\u2212bn_{tot_{c}}+an_{tot_{c}}^{2/3}$ with $n_{tot}_{c}=\\frac{2a}{3b}^{3}$ the critical size. If we used the scaled variables b\u2019 and a\u2019 we would get\n\n$\u0394G(n_{c}^{\u2032})=\u2212b^{\u2032}n_{c}^{\u2032}+a^{\u2032}n_{c}^{\u2032}^{2/3}$= $-b'\\frac{2a^{'}}{3b^{'}}^{3}+a'(\\frac{2a'}{3b'}^{3})^{2/3}$\n\nOn substitution, the factor k cancels out to yield\u00a0$\u0394G(n_{c}^{\u2032})=\u00a0\u2212bn_{c}+a\u00a0n_{c}^{\\frac{2}{3}}=\u0394G(n_{c})$. That is, even if we had cluster size parameter $n$\u00a0incorrect by a multiplicative factor, we can measure the barrier height (in terms of KT assuming ambient temperature as the relevant factor for thermalization). Similarly any multiplicative error made in converting R to n\u2019 can be shown to cancel when converting $n'_{c}$ back to Rc. For estimation of critical radius, we used the turning point of the fit function $\u0394G$(n) to estimate critical size and then converted from nc to Rc This procedure makes the determination of Rc independent of any multiplicative factor in the definition of n as this same factor appears in nc and is cancelled out on going back from nc to Rc.\n\n### Analysis of live cell (light sheet) data\n\nLight sheet data was analyzed to extract both distribution of cluster intensity and time evolution.\n",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "05a09b79-ec9c-4f72-8e1e-163afd8973ef",
+      "submission_id": "209985a0-dec2-499d-b5b3-0a26018046b5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antoine M van Oijen, University of Wollongong Australia\n\nReviewers:\n- Rohit V Pappu, Washington University in St Louis St Louis United States\n- Danny M Hatters, University of Melbourne Australia\n\n## Review text\n\nDOI: [10.7554/eLife.39695.018](https://doi.org/10.7554/eLife.39695.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter, peer reviews, and accompanying author responses.\n\n[Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed.]\n\nThank you for submitting your article \"A first order phase transition mechanism underlies protein aggregation in mammalian cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Rohit Pappu (Reviewer #2). The other two reviewers remain anonymous.\n\nThe Reviewing Editor has highlighted the concerns that require revision and/or responses, and we have included the separate reviews below for your consideration. If you have any questions, please do not hesitate to contact us.\n\nUsing highly quantitative fluorescence imaging approaches, the authors characterize size distributions of clusters of misfolded proteins in unstressed mammalian cells. They show that the cluster size distribution is consistent with one that is expected for a super-saturated system, with clusters that continue to grow after they have formed. Further, the authors show that the protein RuvBL is at least partially responsible for a selective clearing of the large aggregates from the cells, while maintaining a super-saturated state (with the same size distribution of smaller aggregates). The reviewers express their excitement about the high quality of the work and how it is exemplary in applying physical principles to complex biological problems.\n\nA key concern raised by the reviewers revolves around the clarity of the explanation of the physical models to a biological audience. Further, one of the reviewers raises a number of issues around potential artefacts of the drug treatments. Finally, one of the reviewers points out that the addition of a fluorescent protein to the synphilin might introduce changes in cluster-size distribution.\n\nSeparate reviews (please respond to each point):\n\nReviewer #1:\n\nUsing highly quantitative fluorescence imaging approaches, the authors show that clusters of misfolded proteins exist in unstressed mammalian cells, with a size distribution suggestive of misfolded proteins being present in a super-saturated phase: if a cluster is formed, it will keep growing. Question then is why unstressed cells remain clear of large aggregates. The authors show that the protein RuvBL is at least partially responsible for a selective clearing of the large aggregates from the cells, while maintaining a super-saturated state (with the same size distribution of smaller aggregates). They show that pharmaceutical methods of changing global levels of misfolded proteins result in changes in size distributions that affect all sizes, indicative of the system globally changing its super-saturation state.\n\nThere's a couple of methodological questions that should be addressed in a revised manuscript:\n\nKey issue is that the authors need to show that expression of the FP-Synphilin marker does not change the size distribution for small aggregates. They rely on previously published work that shows that to be the case for large aggregates. Since the novelty of this work is primarily based on the ability to see the smaller aggregates, they'll need to put forward data or a strong argument for that to be true for all sizes.\n\nAlso, the authors relate fixed-cell data with live-cell information by equating volume distributions from fixed-cell measurements with fluorescence intensity distributions from live cells. That only works if the fluorescence scales with volume for the misfolded aggregates, something that cannot be assumed given the complex nature of binding of the Synphilin marker to the clusters.\n\nReviewer #2:\n\nAmyloid formation, a long standing problem in molecular and cell biology with direct implications for neurodegeneration and molecular memory, and the problem of intracellular phase transitions are thought to be first-order phase transitions. Such transitions are governed by the presence of a saturation concentration and depending on the degree of supersaturation, the dynamics of phase separation \u2013 be it the formation of liquid-like condensates or fibrillar solids \u2013 will determine the interplay between nucleation vs. spinodal decomposition. These concepts are very well established in the physics literature. Are they germane to phase transitions in cells and what is the simplest theory that explains phase behavior in fixed / living cells? Narayanan et al. answer these questions using novel methods based on super resolution imaging of aggregation prone proteins in fixed / living cells. The striking result is that the tenets of homogeneous nucleation appear to apply rather shockingly well, albeit with a correction for cellular effects such as the clearance of higher-order, supercritical clusters by an active AAA+ ATP dependent enzyme. This work is striking and it represents the very best of science at the interface between physics and highly relevant biology. Taken together with recent work from the Brangwynne lab that is based on the use of optogenetic tools and the Halfmann lab based on so-called DAmFRET methods, the work of Narayanan et al. paves the way for serious investigations of the dynamics of phase transitions in living cells. The work is remarkable. The manuscript is very well written and easy to follow. And the findings are striking. eLife is fortunate to have received this manuscript and I urge publication pending a few important revisions that are detailed below.\n\nConceptual issues\n\n1) The box that describes free energy expressions needs revision. The free energy of nucleation is written rather simply as \u2206G = a*n^(2/3) {plus minus} bn. This is too coarse-grained and gives the impression of a purely phenomenological almost empirical treatment. In the mean-field description, the free energy of nucleation may be written precisely as \u2206G = 4*\u03c0*\u03b3*(R^2) \u2013 (4\u03c0/3)*rho_n*\u2206\u00b5*(R^3). Here, R is the cluster radius, \u03b3 is the interfacial tension, \u2206\u00b5 is the supersaturation (positive above the saturation concentration and negative below the saturation concentration), and rho_n is the number density of nucleation sites. Note that the sign of \u2206\u00b5 sets the sign of the second term. Additionally, the magnitude of \u2206\u00b5 sets the driving force for phase separation and hence the magnitude of the free energy barrier. I bring this up because the narrative does not clearly connect the pre-factors to the supersaturation and gives the impression that there is some ad hoc switch to be turned on or off. Importantly, the parameters can be further parsed by controlling the protein expression, which controls \u2206\u00b5. The authors need to be more explicit in the way they connect to the theory, i.e., start with the expressions in terms of R and then work back to the more compact form so the reader can see where the supersaturation fits in. Also, by not using the full expression, an opportunity is lost to probe how / why the homogeneous nucleation theory applies as well as it does.\n\n2) The explanation of supersaturation needs work. As written, the verbiage in terms of liquid-vapor transitions, will be very confusing to the readership of eLife. It is best to use the parlance of phase separation rather than condensation transitions. The following references might be useful for the authors in terms of connecting to a more biological audience. Please see: https://www.sciencedirect.com/science/article/pii/S1097276518305033?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb, http://www.pnas.org/content/110/50/20075.full.\n\n3) The mathematics of the Szilard model could be made more explicit in the main text. There are concepts pertaining to the thermodynamics of preferential interactions and to the issue of competing timescales that should be discussed explicitly with regard to the Szilard model.\n\n4) The Knowles group has argued, rather convincingly, that secondary nucleation is THE explanation for kinetics of amyloid formation (phase separation) in vitro. A detailed discussion of the connections to this work and the seemingly divergent views emerging from in cell studies would be helpful.\n\nScholarship issues\n\n1) There is quite a bit of precedent, albeit from in vitro studies, for the types of observations made in the current study. There is the work of Garai et al. https://aip.scitation.org/doi/10.1063/1.2822322 showing the presence of sub- and supersaturated clusters for Abeta that is directly relevant and should be discussed. There is work from the Pappu lab predicting why there should be sub- and supersaturated clusters (http://dx.doi.org/10.1016/j.abb.2007.08.033; http://dx.doi.org/10.1016/j.jmb.2008.09.026), demonstrating that these exist for Httex1 in vitro (http://www.pnas.org/content/110/50/20075.full), and showing that there are distinct phase boundaries for Httex1 (http://www.jbc.org/content/293/10/3734). The latter work is particularly relevant because the S-phase species are likely to be first cousins of the supersaturated, sub-critical species documented by Narayanan et al. This is particularly relevant because Sathasivam et al. (see Figure 5 in http://dx.doi.org/10.1093/hmg/ddp467) show that these S-phase species are clearly prevalent in R6/2 mice brains expressing mutant Httex1. Finally, the recent work of Garai et al. shows that transthyretin can suppress the formation of fibrillar aggregates of Abeta by targeting and re-routing large, subcritical albeit supersaturated clusters. In the case of TTR, this is achieved by rerouting the molecules to amorphous phases whereas the Rblv5 molecules catalyze the clearance. Inasmuch as these are unifying themes, it would be useful to discuss these references and connect to them if at all possible.\n\nThere are quite a few pronouncements throughout that go without citation and / or lack citations to the primary literature. The Slezov book is helpful, but citations to the original papers of Szilard and Ostwald are essential.\n\nIn conclusion, this is an exciting paper, powered by innovations in super resolution imaging methods. With suitable revisions, this could make for an exceedingly exciting contribution to eLife \u2013 one that will generate rather a lot of discussion and help prompt a significant leap forward. The result showing that even under normal expression levels the system is supersaturated w.r.t. to the marker proteins is impressive. Prajwal Ciryam et al. (working with Rick Morimoto, Chris Dobson, and Michele Vendruscolo) have identified the fraction of the proteome that should be supersaturated under normal expression levels. This work seems particularly relevant in the current context.\n\nMinor Comments:\n\nOn a semantic note, the theory that authors are using pertains to homogeneous nucleation not simple nucleation or just nucleation. The correct terminology should be used and the distinctions between homogeneous vs. heterogeneous nucleation and non-nucleated processes should be articulated clearly.\n\nThe authors seem to be using a rather primitive equation editor and some of the equations are hard to follow. This could be cleaned up.\n\nA purely persnickety point: Data are plural and datum is singular. Please fix this issue, which shows up throughout.\n\nThere also are rather a lot of typos that should be cleaned up.\n\nAdditional data files and statistical comments:\n\nIt would be very helpful to have access to the raw data for the clusters thus enabling independent analysis and comparative assessments for those who are interested.\n\nReviewer #3:\n\nThis manuscript describes a mechanism and new model for the aggregation process of synphilin and \u03b1-synuclein in cell culture. In essence the oligomerization behaves like a phase transition of monomers into protein condensates but whereby larger clusters are selectively removed from the system in a non-equilibrium flux as new monomers are produced (i.e., the Szilard model). The authors examined the impact of drug treatments that affect protein production and aggregation, as well as putative chaperone RuvBL to test the models.\n\nComments and points\n\n1) The authors have clearly spent effort to explain the details of the physics underpinning the models and I think the application of physics is a real strength of the work. The great challenge for me as a non-physicist is that it is not so easy to understand the underlying basis of the theory \u2013 so I cannot comment on whether the models are appropriate or consistent with the actual data and will leave that to other reviewers with the relevant background.\n\n2) It seems a little counterintuitive to me that expression level of synphilin and synuclein does not effect the clustering patterns (Figure 1\u2014figure supplement 2) because for many proteins that form aggregates in cells (eg polyglutamine) expression level is a major parameter affecting aggregation. Perhaps what is meant here is that the expression of these proteins are used as tracers for pre-existing aggregates present in the cell. If so, that needs to be rephrased more clearly. If not, does that mean the models used here are not representative of other systems?\n\n3) The treatment with rapamycin is not as straightforward as the authors indicate. Rapamycin inhibits mTOR which will affect a wide range of cellular processes including autophagy, which will affect the clearance mechanisms of proteins (Li, J., Sang G. Kim, and J. Blenis, Rapamycin: One Drug, Many Effects. Cell Metabolism, 2014. 19(3): p. 373-379.) A more direct inhibitor of translation would be cycloheximide, which directly inhibits the ribosome. This really should be investigated if translation is to be properly examined.\n\n4) Also, do the drug treatments change the levels of synphilin? (which I would anticipate they do) and if so, how would this affect the modelling? Also, there is a reasonable chance that exerting stress on these cells (certainly with MG132) can lead to the spontaneous formation of stress granules or other protein condensates (and indeed other stress responses that alter the broader activity of the protein quality control systems). How does the model account for cell-regulated formation of such structures that might coalesce with synphilin, or upregulation of stress responses?\n\n5) The results with RuvBL are intriguing. Nonethless RuvBL does seem a left-field choice of \"chaperone\" since much of the literature points to it being involved as a DNA helicase. The mechanisms might be more compelling if Hsp70-mediated mechanisms were also examined given that these are classic systems for overseeing protein folding, triage mechanisms and in dissolution of protein aggregates. (For example, Gao et al, 2015). It would be rather straightforward to test these mechanisms alongside. For example, specific Hsp70 family inhibitors are also available and would be very interesting to test here (eg VER-155008).\n\nMinor Comments:\n\n1) In the Introduction where the theory of first order phase transitions is described, I suggest it be rephrased slightly for the sake of the biology readers so that it is explicitly stated that this is a classic model being extrapolation to the solution protein context (whereby proteins are not obviously not in a gas phase).\n\n2)The sentence \"Because cells under normal growth conditions do not show large growing clusters, the na\u00efve hypothesis is that the cell is normally in a sub-saturated state\" is unclear from a biological perspective because many or most proteins normally exist and function as oligomers or as part of large complexes.\n\n3) The sentence \"Our observation is both surprising and intriguing as the Szilard model was not previously thought to exist in a natural system (Slezov, 2009),\". While I understand the point the authors are making, this statement needs to be more properly discussed in context of well-understood biological processes that effectively behave like the Szilard model. In other words, there are very well-established concepts and mechanisms that govern protein homeostasis in terms of protein production and degradation (eg degradation of protein aggregates by autophagy; a review on this topic from Bukau's lab: Tyedmers, J., A. Mogk, and B. Bukau, Cellular strategies for controlling protein aggregation. Nature Reviews Molecular Cell Biology, 2010. 11(11): p. 777-788.).\n\n4) Referring to the sentences: \"How Synphilin1 is recruited to aggregates is not fully understood. However this protein is a commonly used marker for well-studied misfolded protein aggregates such as aggresomes and Lewy bodies (Tanaka et al., 2004; Wakabayashi et al., 2000) and the ectopic expression, and the expression levels have no detectable effect on the formation of the aggresome (Zaarur et al., 2008).\" It is not clear what is meant by this phrase since normally aggresomes are only present in cell culture models when proteins are expressed abundantly and certainly in an ectopic setting. Also, the aggresome as a model is fraught with difficulties \u2013 please see this review for a detailed discussion on why this is the case (Radwan, M., R.J. Wood, X. Sui, and D.M. Hatters, When proteostasis goes bad: Protein aggregation in the cell. IUBMB Life, 2017. 69(2): p. 49-54.).\n",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "963003d4-5796-475d-98a4-0b8eaa7bd088",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C1",
+      "claim": "The formation of misfolded protein aggregates is a hallmark of neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of misfolded protein aggregates is a hallmark of neurodegenerative diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by references to neurodegenerative diseases in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "6332b28b-9608-4bfe-a0c5-f00bbe6dba61",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C2",
+      "claim": "The aggregate formation process exhibits an initial lag phase when precursor clusters spontaneously assemble.",
+      "claim_type": "EXPLICIT",
+      "source": "The aggregate formation process exhibits an initial lag phase when precursor clusters spontaneously assemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as a known characteristic of aggregation processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "f4455104-9012-47ed-8529-410c121e0519",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C3",
+      "claim": "Most experimental assays are blind to the lag phase of aggregate formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most experimental assays are blind to this lag phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing experimental approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "43de5984-47a0-4456-a524-ada72ead9fa8",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C4",
+      "claim": "Mammalian cells have precursor clusters even under normal growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that even under normal growth conditions mammalian cells have precursor clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's super-resolution imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "f6cc0727-a276-464d-8b4c-b5f2ce4f2759",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C5",
+      "claim": "The cluster size distribution is precisely that expected for a super-saturated system in first order phase transition.",
+      "claim_type": "EXPLICIT",
+      "source": "The cluster size distribution is precisely that expected for a so-called super-saturated system in first order phase transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from analysis of the measured cluster size distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "53bf9f89-a907-4c61-9b84-ecaea4eea63b",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C6",
+      "claim": "There exists a nucleation barrier and a critical size above which clusters grow and mature.",
+      "claim_type": "EXPLICIT",
+      "source": "This means there exists a nucleation barrier, and a critical size above which clusters grow and mature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the thermodynamic analysis of cluster size distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "63215e3a-c493-480a-9130-fce4b4afe5b6",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C7",
+      "claim": "Homeostasis is maintained through a Szilard model entailing the preferential clearance of super-critical clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostasis is maintained through a Szilard model entailing the preferential clearance of super-critical clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model proposed based on the observation that cells remain in super-saturation without accumulating large clusters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "2b348eb7-7d49-4af7-9677-340d826f3570",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C8",
+      "claim": "RuvBL plays a role in the disassembly of large clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We uncover a role for a putative chaperone (RuvBL) in this disassembly of large clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experiments showing accumulation of large clusters upon RuvBL knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "ac5917a5-9f8f-4754-807d-17bf19ae3362",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C9",
+      "claim": "Early aggregates behave like condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate early aggregates behave like condensates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from multiple lines of evidence including surface tension estimates and dynamic behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "787c422d-ab61-4ef1-8229-826d7300a941",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C10",
+      "claim": "The presence of aggregates does not always directly correlate with disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "But the presence of aggregates does not always directly correlate with disease progression (Ross and Poirier, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "8a0151d7-a6d9-4e09-83f8-ddc12e8700ce",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C11",
+      "claim": "Intermediate species of aggregates could be more toxic to cells than large aggregates, plaques and fibres.",
+      "claim_type": "EXPLICIT",
+      "source": "Intermediate species of aggregates, created early in the aggregation process, could be more toxic to cells than large aggregates, plaques and fibres (Cookson, 2005; Gosavi et al., 2002; Karpinar et al., 2009; Lashuel et al., 2002a; Lashuel et al., 2002b; Pountney et al., 2004; Ross and Poirier, 2004; Xu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "7451f605-5b2c-4624-9217-5abd9b34ed61",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C12",
+      "claim": "The early steps of aggregate formation have been difficult to study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the early steps of aggregate formation have been difficult to study, and may be critical to untangling the relationship between aggregation and disease",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a motivation for the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "5beb4fd4-2252-4e51-8121-ea596cf63c15",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C13",
+      "claim": "Nucleation in vitro typically requires a high concentration of purified monomers, which may not represent physiological conditions in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleation in vitro typically requires a high concentration of purified monomers, which may not represent physiological conditions in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of in vitro studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "fb3d3f9a-cdc9-4f0d-ab4c-d94169af78f3",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C14",
+      "claim": "Live cell experiments bypass the nucleation step by externally seeding the aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "These live cell experiments bypass the nucleation step altogether by externally seeding the aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of previous live cell approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "7bece301-c181-48c7-ad20-bc6f374aa67a",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C15",
+      "claim": "The initial nuclei may be sub-diffractive in size.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial nuclei may be sub-diffractive in size (and indeed they are for this study), which makes them difficult to capture by conventional imaging techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by the study's findings.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "4aedf94e-b2af-4dc4-b329-13ab6a268c09",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C16",
+      "claim": "The size distribution, cluster dynamics, and physical nature of early pre-nucleation stage protein aggregates have not been previously determined.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge the size distribution, cluster dynamics, and physical nature of early pre-nucleation stage protein aggregates have not been previously determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This establishes the novelty of the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "7e0badfa-a3b5-499f-a5d1-53f2a7fce90c",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C17",
+      "claim": "Super-resolution imaging of the same cell clearly revealed a large population of sub-diffractive clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, super-resolution imaging of the same cell clearly revealed a large population of sub-diffractive clusters (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from super-resolution microscopy shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "84a84d2a-9db3-4cc7-a678-1f1decea6fc5",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C18",
+      "claim": "The number of localization events in a cluster scales with the cube of the measured cluster radius.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the number of localization events in a cluster, scales with the cube of the measured cluster radius",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from the super-resolution data and shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "6c43727c-2b6f-4ef6-a58e-b220a29cc727",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C19",
+      "claim": "The fluorescent detection events of the Synphilin1 tracer protein may be spread throughout the cluster volume at uniform density.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggest that, at the relevant cluster sizes, the fluorescent detection events of the Synphilin1 tracer protein may be spread throughout the cluster volume at uniform density (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the cubic scaling relationship observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "2bbeb840-86c5-44ca-8e99-adbdadf09994",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C22",
+      "claim": "The slope is negative, indicating that the (negative) bulk energy term (-bn) minimizes the free energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover the slope is negative, indicating that the (negative) bulk energy term (-bn) minimizes the free energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "2045737a-7599-4148-a12b-d107dd62f818",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C26",
+      "claim": "The critical radius Rc is below the optical diffraction limit.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the critical radius Rc is below the optical diffraction limit, this explains why a super-resolution technique was required to measure it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the measured value of Rc (162 nm) being smaller than the diffraction limit (~200-250 nm).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "8ad845a6-164f-413d-8b11-d02150df9cb5",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C27",
+      "claim": "The initial clusters likely form through a condensation of weakly interacting monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the initial clusters likely form through a condensation of weakly interacting monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the large critical radius requiring many monomers to nucleate a stable cluster.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "f2cd943f-50e0-4dbf-87d3-64a39c6f68f0",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C28",
+      "claim": "Rapamycin increases the nucleation barrier and critical radius.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 2A\u2013F we find that Rapamycin increases the nucleation barrier and critical radius, consistent with expectation for reduced super-saturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2E-F from experiments with Rapamycin treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "801ab8b5-d832-4679-b829-5118d4358d8a",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C29",
+      "claim": "Treatment with either MG132 or AZC decreases the nucleation barrier and critical radius.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, treatment with either MG132 or AZC decreases the nucleation barrier and critical radius, consistent with expectation for increased super-saturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2A-D from experiments with MG132 and AZC treatments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "3299793f-d1f3-4cf7-9573-d937d2c16fe6",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C30",
+      "claim": "While a large population of small cluster sizes is apparent, there is a small minority of clusters (<5%) that have reached a size greater than Rc.",
+      "claim_type": "EXPLICIT",
+      "source": "A violin plot of cluster sizes from untreated cells (Figure 2K, black) indicates that while a large population of small cluster sizes is apparent (indicated by the width of the violin plot in Figure 2K), there is a small minority of clusters (<5%) that have reached a size greater than Rc.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the violin plot in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "6af90f63-8252-4913-9da9-84e9ee1dab51",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C31",
+      "claim": "Knocking down RuvBL1 in untreated cells results in the appearance of large clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, we find that knocking down RuvBL1 in untreated cells results in the appearance of large clusters (Figure 2I, compare to untreated cell Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing Figure 2I (RuvBL knockdown) to Figure 2G (untreated).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "349546f4-3032-4743-8164-3b06f69df1cf",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C34",
+      "claim": "Using HSP70 inhibitor Ver155008 we were not able to generate a substantial population of super-critical clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, here, using HSP70 inhibitor Ver155008 we were not able to generate a substantial population of super-critical clusters (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1 from experiments with Ver155008.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "64492dfa-8ede-423a-9bd7-f750c470c4ff",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C35",
+      "claim": "The RuvBL mechanism is likely distinct from HSP70 mediated disaggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the RuvBL mechanism is likely distinct from HSP70 mediated disaggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of effect of HSP70 inhibition on super-critical cluster accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "8ff80aab-7859-4909-bf14-9bc2356cd0c6",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C36",
+      "claim": "After MG132 washout the free energy barrier returned to close to that of normal, untreated cells, regardless of RuvBL knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, after MG132 washout the free energy barrier returned to close to that of normal, untreated cells, suggesting that regardless of RuvBL knockdown, MG132 acted to increase the super-saturation in a reversible manner (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C-E from MG132 washout experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "9b81d612-6013-48ba-a77b-e106e3d32c9f",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C37",
+      "claim": "After washout the clearance of the super-critical clusters was only possible in the controls with normal levels of RuvBL.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after washout the clearance of the super-critical clusters (which existed during MG132 treatment) was only possible in the controls with normal levels of RuvBL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3C-F from comparing washout with and without RuvBL knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "53e36058-302c-479d-893d-17c7814008d5",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C38",
+      "claim": "In cells where RuvBL was knocked down, a population of super-critical clusters remained after MG132 wash-out.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in the cells where RuvBL was knocked down, although the free energy barrier returned close to normal untreated level, a population of super-critical clusters remained after MG132 wash-out, corroborating the fact that RuvBL was necessary for the clearance of the super-critical clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3D and F from RuvBL knockdown washout experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "d3d82e7c-364c-4330-9245-609c80e71544",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C39",
+      "claim": "The light sheet reveals many condensates as diffraction-limited spots throughout the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the light sheet reveals many condensates as diffraction-limited spots throughout the cell (Figure 4A and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A and Videos 1 and 2 from light sheet imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "f4155b84-14d6-4895-a95c-b69d045b3973",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C41",
+      "claim": "The critical cluster is estimated to have Nc = 1400 (\u00b1300) labeled, fluorescent molecules in a live cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical cluster is estimated to have Nc = 1400 (\u00b1300) labeled, fluorescent molecules in a live cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the live cell data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "6ec42c88-ab51-4d69-a8ec-4036ea0c1386",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C42",
+      "claim": "The labeled molecules occupy only about a thousandth of the volume of a cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, given a Stokes radius of Dendra2 ~1.5 nm, the labeled molecules occupy only about a thousandth of the volume of a cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the estimated number of labeled molecules and cluster size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "213756ee-3b23-4cb9-b71c-be3debd93f4b",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C43",
+      "claim": "The clusters are likely heterogeneous and composed of far more unlabeled endogenous proteins than the fluorescent tracer.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports further that the clusters are likely heterogeneous and composed of far more unlabeled endogenous proteins than the fluorescent tracer (Synphilin 1) that labels aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low occupancy of labeled molecules in the cluster volume.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "23f1e1c6-4d0b-4a94-af63-8448544bf87a",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C49",
+      "claim": "Less than eight percent (<8%) of clusters were in the super-critical size range needed for stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, comparable to fixed cells, we find that less than eight percent (<8%) of clusters were in the super-critical size range needed for stability, and most of the tracked clusters did not last as long as the full duration of our live cell experiments (6 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from live cell tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "3a717630-bb2c-4e39-9c01-3fa6fb42415b",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C50",
+      "claim": "Individual clusters have gradually grown or shrunk by up to 40% in the course of 6 min.",
+      "claim_type": "EXPLICIT",
+      "source": "First, by normalizing the cluster intensity at t = 0, we find that individual clusters have gradually grown or shrunk by up to 40% in the course of 6 min (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A from tracking individual clusters over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "5dcf6fbc-ad2b-4216-a453-e488e6091ae0",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C51",
+      "claim": "The growth/shrinkage correlates directly with the original cluster intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the growth/shrinkage correlates directly with the original cluster intensity: Figure 5B shows that growing clusters (red) were almost unanimously the largest clusters in the pool, while the shrinking clusters (blue) were the smallest.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B from analysis of cluster dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "b80a45a4-a334-4aa1-81b6-e6dcc2fad00a",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C52",
+      "claim": "The unchanged clusters had intensities N ~ 2000 close to the estimated Nc, indicating that these stable clusters are likely around or above the critical size.",
+      "claim_type": "EXPLICIT",
+      "source": "The unchanged clusters had intensities N ~ 2000 close to the estimated Nc, indicating that these stable clusters are likely around or above the critical size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the intensity of stable clusters to the estimated critical size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "ee96e05e-84aa-4cd0-a1f0-664212d3b17d",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C53",
+      "claim": "Diffusing clusters, upon contact, merge into a single condensate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observe in the living cells that diffusing clusters, upon contact, merge into a single condensate (Figure 5D and E and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D-E and Videos 1 and 2 from live cell imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "aee77b93-59b0-4d9a-8f91-8ddff878eb1c",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C54",
+      "claim": "In 15 cells imaged for 6 min each, we manually identified nine merger events, suggesting a rate of occurrence of about 1 in every 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In 15 cells imaged for 6 min each, we manually identified nine merger events, suggesting a rate of occurrence of about 1 in every 10 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is counted from manual analysis of live cell videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "b95a63ef-7137-4f81-a31e-ea41aa68afea",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C55",
+      "claim": "A first-order phase transition is an appropriate thermodynamic framework to describe de novo formation and growth of protein aggregates in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work establishes that a first-order phase transition is an appropriate thermodynamic framework to describe de novo formation and growth of protein aggregates in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the experimental observations and analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "cf6df3f8-d540-4c64-99e0-2221f00056ec",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C56",
+      "claim": "At the early stages, the formation of misfolded protein clusters is akin to a first order phase transition leading to the formation of a condensate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that at the early stages, the formation of misfolded protein clusters is akin to a first order phase transition leading to the formation of a condensate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the thermodynamic analysis and dynamic observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "be160e27-6c91-441e-a2f7-2156f138106c",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C57",
+      "claim": "Even healthy cells are already super-saturated and may have sub-diffractive condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "One testable implication is that even healthy cells are already super-saturated and may have sub-diffractive condensates that may be impossible to detect by conventional imaging, but that are readily apparent with the high-resolution microscopes used here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the finding that untreated cells show super-saturation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "ebbe5f06-49b3-40be-930c-8063f631ca53",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C58",
+      "claim": "Knocking down RuvBL was sufficient to increase super-critical clusters in the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that knocking down RuvBL was sufficient to increase super-critical clusters in the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown from RuvBL knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "8b8aab00-b192-4b14-b315-d092b5a7fa7f",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C59",
+      "claim": "Synphilin1 is a tracer of aggregates in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "We engineered mammalian cell lines expressing Synphilin1 - a tracer of aggregates in Parkinson's disease (Chung et al., 2001; Tanaka et al., 2004; Wakabayashi et al., 2000) - fused to a fluorescent protein Dendra2 (Chudakov et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "61039975-d343-4a3d-b987-459694305c7b",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C60",
+      "claim": "Neither the expression level of Synphilin1 tracer protein nor the identity of the tracer have any detectable effect on the size distribution of sub-diffractive clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We checked that neither the expression level of Synphilin1 tracer protein nor the identity of the tracer (alternative tracer alpha-Synuclein) have any detectable effect on the size distribution of sub-diffractive clusters (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2 from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "0aaba245-e3ba-46c1-aa1a-9cc906d42860",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C61",
+      "claim": "Synphilin1 in sub-diffractive clusters merely serves as a tracer and does not on its own affect cluster formation at the expression levels tested.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Synphilin1 in our sub-diffractive clusters merely serves as a tracer and does not on its own affect cluster formation at the expression levels tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of effect of expression level on cluster distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "ad00dd44-7c9d-4a2f-9c95-16d8bf3b359f",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C62",
+      "claim": "Wide-field epi-illumination imaging of Synphilin1 in a fixed cell showed a diffuse cytoplasmic signal without any apparent aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Wide-field epi-illumination (conventional) imaging of Synphilin1 in a fixed cell showed a diffuse cytoplasmic signal without any apparent aggregation (Figure 1B) as expected for a normal (i.e. without drug treatments) cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B from conventional microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "0c114e9f-c311-4c0b-9993-db907578cef5",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C63",
+      "claim": "RuvBL was previously suggested as a potential protein disaggregase in mammalian cells and in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Because a AAA+ ATPase, RuvBL, was previously suggested as a potential protein disaggregase in mammalian cells and in yeast (Zaarur et al., 2015), we tested whether RuvBL may be involved in the clearance of super-critical clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "c6576ae8-d1da-4405-ab91-ce10ac78ac15",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C64",
+      "claim": "HSP70 is known to disaggregate amyloid fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "HSP70 is known to disaggregate amyloid fibrils (Gao et al., 2015) and the chemical Ver155008 inhibits HSP70 (Massey et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "419b44d9-9aa8-4fd8-8dbc-32248b2b3c6d",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C65",
+      "claim": "Lindquist and colleagues found that variably sized spherical complexes appear to be crucial intermediates in de novo amyloid nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a classic study (Serio et al., 2000), Lindquist and colleagues examined the in vitro mechanism by which a prion protein Sup35 forms self-seeded amyloid fibers. They found that variably sized spherical complexes (akin to condensates and apparent by high-resolution imaging (STEM and AFM)), appear to be crucial intermediates in de novo amyloid nucleation (Serio et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "4093b7b3-0ccc-4652-afb6-84e95131106c",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C66",
+      "claim": "For Huntingtin N terminal fragments, below the concentration required for growth of a structured fibrilar phase, there exists another saturation point distinguishing monomers and small oligomers from spherical complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly for Huntingtin N terminal fragments, in vitro studies (Crick et al., 2013; Posey et al., 2018) show that below the concentration required for growth of a structured fibrilar phase, there exists another saturation point distinguishing monomers and small oligomers of <10 nm size from spherical complexes of ~25 nm size (Posey et al., 2018); globular complexes have also been isolated from Huntingtin rat models (Sathasivam et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "7971ad16-d554-4932-97c0-ba5d78f4f323",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "claim_id": "C67",
+      "claim": "The micro-environment within in vivo condensates could serve to provide the high concentrations needed for a secondary nucleation of fibers or plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of such precedence and the high concentrations needed for the nucleation (T\u00f6rnquist et al., 2018) of fibrils in vitro, it is plausible that, the micro-environment within in vivo condensates such as the one found in our current study, could serve to provide the high concentrations needed for a secondary nucleation (Buell et al., 2014; Buell et al., 2014) of fibers or plaques with various properties (Vitalis and Pappu, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the current findings and previous literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f161ed96-c3a9-466c-8250-e46df73ba8e8",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Super-resolution imaging reveals sub-diffractive protein clusters in untreated mammalian cells that are invisible to conventional microscopy. These clusters are detected using Synphilin1-Dendra2 as a tracer in fixed cells under normal growth conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17, and C62 provide converging evidence from both conventional and super-resolution microscopy. The conventional imaging shows no apparent aggregation (C62), while super-resolution clearly reveals sub-diffractive clusters (C17), supporting the finding that these clusters exist in normal cells (C4). The imaging data in Figures 1B and 1C directly demonstrate this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "59da2dbf-3355-4bbe-8768-67bcbbd6656d",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The cluster size distribution follows classical nucleation theory for a super-saturated system undergoing first-order phase transition, with a nucleation barrier of 7.2 \u00b1 0.5 kBT and critical radius of 162 \u00b1 4 nm. The free energy function exhibits surface tension (an^2/3) and negative bulk energy (-bn) terms characteristic of super-saturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C22, C55, and C56 are well-supported by the thermodynamic analysis in Figures 1D-G. The log-log plot reveals the expected 2/3 slope for surface energy, and the negative slope after surface correction indicates negative bulk energy. The fit to the theoretical form yields quantitative parameters with error estimates. However, the assumption that the Boltzmann distribution applies to this non-equilibrium in vivo system requires careful justification, which the authors provide through the Szilard model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "ee7bf965-097e-4e0b-97c0-b47ae6e6d8b6",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The number of fluorescent localizations scales with the cube of cluster radius, suggesting uniform tracer distribution throughout cluster volume. Labeled molecules occupy only ~1/1000th of cluster volume, indicating clusters are heterogeneous and composed predominantly of unlabeled endogenous proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, C42, and C43 are supported by the cubic scaling analysis in Figure 1\u2014figure supplement 3 and live cell intensity measurements. The cubic relationship holds for small clusters below the focal depth, providing evidence for volumetric distribution. The calculation that labeled molecules occupy ~1/1000th of volume is mathematically sound given the measured parameters. This supports the interpretation that Synphilin1 serves as a tracer rather than the primary constituent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "23e01a5a-259d-40a0-a23c-1292d2472faa",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The critical radius (162 nm) is below the optical diffraction limit, explaining why super-resolution was required. The large critical size suggests initial clusters form through condensation of weakly interacting monomers rather than strong oligomerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C27 are well-supported. The measured Rc of 162 nm is indeed below the diffraction limit (~200-250 nm), validating the need for super-resolution (C26). The inference about weak interactions (C27) is reasonable given that a large critical radius requires many monomers to nucleate a stable cluster, consistent with condensation rather than strong oligomerization. However, the exact nature of these interactions is not directly measured.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "e5b91676-965b-4d02-b93e-5c1171b61251",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pharmacological perturbations that modulate protein homeostasis predictably alter nucleation parameters: Rapamycin (reducing misfolded protein production) increases nucleation barrier and critical radius, while MG132 and AZC (increasing misfolded proteins) decrease these parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C29 are supported by data in Figure 2A-F showing systematic changes in the free energy curves and extracted parameters. The effects are consistent with expectations from classical nucleation theory: reducing super-saturation increases the barrier, while increasing it decreases the barrier. Multiple independent perturbations yield consistent results, strengthening the conclusion. However, these drugs have pleiotropic effects, and the specific mechanism linking them to cluster parameters could involve multiple pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "22ff588f-0342-4e66-aedd-d54a2c82530a",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Despite super-saturation, untreated cells maintain <5% of clusters above critical size. RuvBL knockdown results in accumulation of large super-critical clusters without significantly affecting the sub-critical distribution or critical radius.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C31, and C58 are supported by violin plots (Figure 2K) and super-resolution images (Figures 2G, 2I). The observation that RuvBL knockdown increases super-critical clusters while maintaining similar Rc (157 \u00b1 6 nm vs 162 \u00b1 4 nm) is key evidence for size-selective clearance. However, the mechanism by which RuvBL specifically targets super-critical clusters is not directly demonstrated\u2014only the phenotypic consequence of its depletion is shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "4ce2a495-e3d3-43c4-8ff6-7464919d4214",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "HSP70 inhibition with Ver155008 does not generate substantial super-critical clusters, suggesting the RuvBL clearance mechanism is distinct from HSP70-mediated disaggregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C35 are supported by negative data in Figure 2\u2014figure supplement 1. The lack of super-critical cluster accumulation with HSP70 inhibition, contrasted with the effect of RuvBL knockdown, suggests distinct mechanisms. However, this is based on a single inhibitor at unspecified concentrations and timepoints, and the negative result could reflect insufficient inhibition, compensatory mechanisms, or that HSP70 acts at a different stage. Additional controls would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "c941a24f-e302-4653-86ef-96e1559acc45",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Szilard model explains cellular homeostasis: cells maintain super-saturation through continuous monomer production balanced by RuvBL-dependent clearance of super-critical clusters. MG132 washout experiments show that while the free energy barrier returns to normal regardless of RuvBL status, super-critical cluster clearance requires functional RuvBL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C36, C37, and C38 are supported by the washout experiments in Figure 3. The key observation that the barrier returns to normal in both conditions (C36) but super-critical clusters persist only with RuvBL knockdown (C37, C38) elegantly demonstrates size-selective clearance. This supports the Szilard model where super-saturation is maintained by balancing monomer input with size-dependent clearance. The experimental design effectively separates effects on nucleation from effects on clearance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "f3322e86-a7c2-4d9b-88aa-22523d87aa1c",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Live cell light sheet imaging reveals diffraction-limited condensates throughout cells. The critical cluster contains approximately 1400 \u00b1 300 labeled fluorescent molecules, and <8% of clusters are in the super-critical size range, with most clusters not persisting for the full 6-minute imaging duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C41, and C49 are supported by light sheet data in Figure 4 and Videos 1-2. The estimate of Nc = 1400 \u00b1 300 molecules is derived from fitting the live cell intensity distribution to the same theoretical framework validated in fixed cells. The observation that <8% are super-critical and most are transient is consistent with the super-saturated state and active clearance. However, photobleaching limits the tracking duration, potentially biasing the persistence measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "4bc168ae-f0bb-4213-8c3c-677e33fcb71e",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Individual cluster dynamics over 6 minutes show size-dependent growth and shrinkage: larger clusters (above critical size) tend to grow, smaller clusters tend to shrink, and clusters near Nc (~2000 intensity units) remain stable. This coarsening behavior is characteristic of condensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C51, and C52 are supported by tracking data in Figure 5A-B. The size-dependent growth/shrinkage is a key prediction of classical nucleation theory and Ostwald ripening. The observation that stable clusters have intensities near the estimated Nc provides internal consistency. However, only 30 clusters from 7 cells were tracked, representing a small sample of the largest, longest-lived clusters. The 6-minute timeframe is also relatively short for assessing long-term dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "f617f2dd-86cc-476e-9e96-c24423267034",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Diffusing clusters merge upon contact into single condensates, with approximately 9 merger events observed in 15 cells over 6 minutes (rate ~1 per 10 minutes). This coalescence behavior is characteristic of liquid-like condensates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C54 are supported by direct observation in Figure 5D-E and Videos 1-2. The merger events and intensity conservation during fusion are consistent with liquid-like behavior. However, the rate estimate is based on manual identification of only 9 events, which is a small sample size. The actual rate could vary significantly, and smaller or faster merger events might be missed. Additionally, the authors do not quantify fusion kinetics or demonstrate reversibility, which would further characterize the condensate properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "978f199e-db52-45c7-8ced-79f655c10315",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Early aggregates behave like condensates based on surface tension estimates comparable to known biomolecular condensates (\u03c3 ~ 10^-6 to 10^-4 N/m) and dynamic behaviors including size-dependent coarsening and coalescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C9 is supported by multiple lines of evidence: surface tension calculations yielding values (4\u00d710^-6 to 8\u00d710^-4 N/m) comparable to P-granules and nucleoli, size-dependent growth/shrinkage consistent with Ostwald ripening, and observed merger events. However, the surface tension estimate relies on uncertain parameters (density \u03c1 and proportionality constant k), yielding only bounds rather than precise values. Additional characterization such as FRAP, viscosity measurements, or demonstration of reversibility would strengthen the condensate interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "617c8588-b24d-43ce-b09a-c2d64f182af8",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Control experiments show that neither Synphilin1 expression level nor tracer identity (Synphilin1 vs alpha-Synuclein) detectably affects the sub-diffractive cluster size distribution, indicating the tracer does not drive cluster formation at tested expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C61 are supported by data in Figure 1\u2014figure supplement 2 showing overlapping distributions across different expression levels and with alternative tracer. This is an important control demonstrating that the observed clusters are not artifacts of tracer overexpression. However, the range of expression levels tested is not quantified, and very high overexpression might still perturb the system. The conclusion that Synphilin1 'merely serves as a tracer' is reasonable but could be overstated\u2014it likely has some affinity for the aggregates to localize there.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "ad9e96d4-9aae-4737-a2b3-ff9ba1ffd406",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A testable prediction is that even healthy cells are super-saturated and contain sub-diffractive condensates invisible to conventional imaging but detectable with high-resolution microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is a logical prediction from the finding that untreated cells show super-saturation (C4, C5). This prediction is actually validated by the study's own data showing sub-diffractive clusters in normal cells. The claim is more of a summary/implication than a new prediction. The broader implication\u2014that this may apply to other cell types and proteins\u2014remains to be tested but is reasonable given the fundamental thermodynamic framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "a639de3f-8db6-4711-b03c-3924571e0815",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior literature establishes that Synphilin1 traces Parkinson's disease aggregates, RuvBL is a putative disaggregase, HSP70 disaggregates amyloid fibrils, and spherical complexes serve as intermediates in amyloid nucleation for various proteins including Sup35 and Huntingtin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C63, C64, C65, and C66 accurately cite prior literature to establish context and rationale for the current study. These are appropriately attributed to previous work and provide important background. The citations appear accurate based on the references provided. This represents appropriate scholarship rather than new findings from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "bad55e0a-d42d-4f64-9313-8ab09e2ee954",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that the high local concentrations within in vivo condensates could provide the environment needed for secondary nucleation of fibers or plaques, potentially linking early condensation to later fibril formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is explicitly speculative ('it is plausible that') and not directly tested in this study. While the speculation is reasonable given that condensates concentrate proteins and in vitro fibril formation requires high concentrations, no evidence is provided that the observed condensates actually progress to fibrils or that secondary nucleation occurs within them. This remains a hypothesis for future testing. The claim appropriately cites relevant literature on secondary nucleation and fibril formation requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    },
+    {
+      "id": "b375323d-1466-44f4-bef0-51e5341a5058",
+      "content_id": "a6a3507b-9e87-4b68-a818-39bf753a275a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background context establishes that protein aggregation is a hallmark of neurodegenerative disease, involves a lag phase that is difficult to study with existing methods, and that intermediate aggregates may be more toxic than large aggregates. Previous approaches using in vitro systems or seeded aggregation in cells have not captured spontaneous early nucleation events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C16 accurately summarize established knowledge and limitations of prior approaches, appropriately cited to literature. These claims establish the motivation and novelty of the current study. The characterization of prior work appears accurate: in vitro studies use non-physiological concentrations (C13), live cell studies bypass nucleation by seeding (C14), and sub-diffractive nuclei are difficult to image (C15). This provides appropriate context but represents background rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:24:54.562604Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "43de5984-47a0-4456-a524-ada72ead9fa8",
+      "result_id": "f161ed96-c3a9-466c-8250-e46df73ba8e8"
+    },
+    {
+      "claim_id": "7e0badfa-a3b5-499f-a5d1-53f2a7fce90c",
+      "result_id": "f161ed96-c3a9-466c-8250-e46df73ba8e8"
+    },
+    {
+      "claim_id": "ad00dd44-7c9d-4a2f-9c95-16d8bf3b359f",
+      "result_id": "f161ed96-c3a9-466c-8250-e46df73ba8e8"
+    },
+    {
+      "claim_id": "f6cc0727-a276-464d-8b4c-b5f2ce4f2759",
+      "result_id": "59da2dbf-3355-4bbe-8768-67bcbbd6656d"
+    },
+    {
+      "claim_id": "53bf9f89-a907-4c61-9b84-ecaea4eea63b",
+      "result_id": "59da2dbf-3355-4bbe-8768-67bcbbd6656d"
+    },
+    {
+      "claim_id": "2bbeb840-86c5-44ca-8e99-adbdadf09994",
+      "result_id": "59da2dbf-3355-4bbe-8768-67bcbbd6656d"
+    },
+    {
+      "claim_id": "b95a63ef-7137-4f81-a31e-ea41aa68afea",
+      "result_id": "59da2dbf-3355-4bbe-8768-67bcbbd6656d"
+    },
+    {
+      "claim_id": "cf6df3f8-d540-4c64-99e0-2221f00056ec",
+      "result_id": "59da2dbf-3355-4bbe-8768-67bcbbd6656d"
+    },
+    {
+      "claim_id": "84a84d2a-9db3-4cc7-a678-1f1decea6fc5",
+      "result_id": "ee7bf965-097e-4e0b-97c0-b47ae6e6d8b6"
+    },
+    {
+      "claim_id": "6c43727c-2b6f-4ef6-a58e-b220a29cc727",
+      "result_id": "ee7bf965-097e-4e0b-97c0-b47ae6e6d8b6"
+    },
+    {
+      "claim_id": "6ec42c88-ab51-4d69-a8ec-4036ea0c1386",
+      "result_id": "ee7bf965-097e-4e0b-97c0-b47ae6e6d8b6"
+    },
+    {
+      "claim_id": "213756ee-3b23-4cb9-b71c-be3debd93f4b",
+      "result_id": "ee7bf965-097e-4e0b-97c0-b47ae6e6d8b6"
+    },
+    {
+      "claim_id": "2045737a-7599-4148-a12b-d107dd62f818",
+      "result_id": "23e01a5a-259d-40a0-a23c-1292d2472faa"
+    },
+    {
+      "claim_id": "8ad845a6-164f-413d-8b11-d02150df9cb5",
+      "result_id": "23e01a5a-259d-40a0-a23c-1292d2472faa"
+    },
+    {
+      "claim_id": "f2cd943f-50e0-4dbf-87d3-64a39c6f68f0",
+      "result_id": "e5b91676-965b-4d02-b93e-5c1171b61251"
+    },
+    {
+      "claim_id": "801ab8b5-d832-4679-b829-5118d4358d8a",
+      "result_id": "e5b91676-965b-4d02-b93e-5c1171b61251"
+    },
+    {
+      "claim_id": "3299793f-d1f3-4cf7-9573-d937d2c16fe6",
+      "result_id": "22ff588f-0342-4e66-aedd-d54a2c82530a"
+    },
+    {
+      "claim_id": "6af90f63-8252-4913-9da9-84e9ee1dab51",
+      "result_id": "22ff588f-0342-4e66-aedd-d54a2c82530a"
+    },
+    {
+      "claim_id": "ebbe5f06-49b3-40be-930c-8063f631ca53",
+      "result_id": "22ff588f-0342-4e66-aedd-d54a2c82530a"
+    },
+    {
+      "claim_id": "349546f4-3032-4743-8164-3b06f69df1cf",
+      "result_id": "4ce2a495-e3d3-43c4-8ff6-7464919d4214"
+    },
+    {
+      "claim_id": "64492dfa-8ede-423a-9bd7-f750c470c4ff",
+      "result_id": "4ce2a495-e3d3-43c4-8ff6-7464919d4214"
+    },
+    {
+      "claim_id": "63215e3a-c493-480a-9130-fce4b4afe5b6",
+      "result_id": "c941a24f-e302-4653-86ef-96e1559acc45"
+    },
+    {
+      "claim_id": "8ff80aab-7859-4909-bf14-9bc2356cd0c6",
+      "result_id": "c941a24f-e302-4653-86ef-96e1559acc45"
+    },
+    {
+      "claim_id": "9b81d612-6013-48ba-a77b-e106e3d32c9f",
+      "result_id": "c941a24f-e302-4653-86ef-96e1559acc45"
+    },
+    {
+      "claim_id": "53e36058-302c-479d-893d-17c7814008d5",
+      "result_id": "c941a24f-e302-4653-86ef-96e1559acc45"
+    },
+    {
+      "claim_id": "d3d82e7c-364c-4330-9245-609c80e71544",
+      "result_id": "f3322e86-a7c2-4d9b-88aa-22523d87aa1c"
+    },
+    {
+      "claim_id": "f4155b84-14d6-4895-a95c-b69d045b3973",
+      "result_id": "f3322e86-a7c2-4d9b-88aa-22523d87aa1c"
+    },
+    {
+      "claim_id": "23f1e1c6-4d0b-4a94-af63-8448544bf87a",
+      "result_id": "f3322e86-a7c2-4d9b-88aa-22523d87aa1c"
+    },
+    {
+      "claim_id": "3a717630-bb2c-4e39-9c01-3fa6fb42415b",
+      "result_id": "4bc168ae-f0bb-4213-8c3c-677e33fcb71e"
+    },
+    {
+      "claim_id": "5dcf6fbc-ad2b-4216-a453-e488e6091ae0",
+      "result_id": "4bc168ae-f0bb-4213-8c3c-677e33fcb71e"
+    },
+    {
+      "claim_id": "b80a45a4-a334-4aa1-81b6-e6dcc2fad00a",
+      "result_id": "4bc168ae-f0bb-4213-8c3c-677e33fcb71e"
+    },
+    {
+      "claim_id": "ee96e05e-84aa-4cd0-a1f0-664212d3b17d",
+      "result_id": "f617f2dd-86cc-476e-9e96-c24423267034"
+    },
+    {
+      "claim_id": "aee77b93-59b0-4d9a-8f91-8ddff878eb1c",
+      "result_id": "f617f2dd-86cc-476e-9e96-c24423267034"
+    },
+    {
+      "claim_id": "ac5917a5-9f8f-4754-807d-17bf19ae3362",
+      "result_id": "978f199e-db52-45c7-8ced-79f655c10315"
+    },
+    {
+      "claim_id": "61039975-d343-4a3d-b987-459694305c7b",
+      "result_id": "617c8588-b24d-43ce-b09a-c2d64f182af8"
+    },
+    {
+      "claim_id": "0aaba245-e3ba-46c1-aa1a-9cc906d42860",
+      "result_id": "617c8588-b24d-43ce-b09a-c2d64f182af8"
+    },
+    {
+      "claim_id": "be160e27-6c91-441e-a2f7-2156f138106c",
+      "result_id": "ad9e96d4-9aae-4737-a2b3-ff9ba1ffd406"
+    },
+    {
+      "claim_id": "8b8aab00-b192-4b14-b315-d092b5a7fa7f",
+      "result_id": "a639de3f-8db6-4711-b03c-3924571e0815"
+    },
+    {
+      "claim_id": "0c114e9f-c311-4c0b-9993-db907578cef5",
+      "result_id": "a639de3f-8db6-4711-b03c-3924571e0815"
+    },
+    {
+      "claim_id": "c6576ae8-d1da-4405-ab91-ce10ac78ac15",
+      "result_id": "a639de3f-8db6-4711-b03c-3924571e0815"
+    },
+    {
+      "claim_id": "419b44d9-9aa8-4fd8-8dbc-32248b2b3c6d",
+      "result_id": "a639de3f-8db6-4711-b03c-3924571e0815"
+    },
+    {
+      "claim_id": "4093b7b3-0ccc-4652-afb6-84e95131106c",
+      "result_id": "a639de3f-8db6-4711-b03c-3924571e0815"
+    },
+    {
+      "claim_id": "7971ad16-d554-4932-97c0-ba5d78f4f323",
+      "result_id": "bad55e0a-d42d-4f64-9313-8ab09e2ee954"
+    },
+    {
+      "claim_id": "963003d4-5796-475d-98a4-0b8eaa7bd088",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    },
+    {
+      "claim_id": "6332b28b-9608-4bfe-a0c5-f00bbe6dba61",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    },
+    {
+      "claim_id": "f4455104-9012-47ed-8529-410c121e0519",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    },
+    {
+      "claim_id": "787c422d-ab61-4ef1-8229-826d7300a941",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    },
+    {
+      "claim_id": "8a0151d7-a6d9-4e09-83f8-ddc12e8700ce",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    },
+    {
+      "claim_id": "7451f605-5b2c-4624-9217-5abd9b34ed61",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    },
+    {
+      "claim_id": "5beb4fd4-2252-4e51-8121-ea596cf63c15",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    },
+    {
+      "claim_id": "fb3d3f9a-cdc9-4f0d-ab4c-d94169af78f3",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    },
+    {
+      "claim_id": "7bece301-c181-48c7-ad20-bc6f374aa67a",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    },
+    {
+      "claim_id": "4aedf94e-b2af-4dc4-b329-13ab6a268c09",
+      "result_id": "b375323d-1466-44f4-bef0-51e5341a5058"
+    }
+  ],
+  "comparisons": []
+}

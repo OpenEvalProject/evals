@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Archaeal histones HMfA and HMfB from M. fervidus are expressed in E. coli, assemble on the chromosome, and protect DNA from MNase digestion in a pattern consistent with oligomerization dynamics observed in native archaea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C27-C36 collectively demonstrate successful expression, solubility, genome-wide binding, and MNase protection patterns with fragment sizes (60, 90, 120, 150 bp) matching archaeal nucleosome oligomerization. The ladder-like protection pattern, reproducibility across replicates, and similarity to M. fervidus native digests provide strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Histone binding in E. coli is ubiquitous but non-random, with defined footprints showing depletion at AT-rich transcriptional start sites and dyad-symmetric nucleotide enrichment patterns similar to native archaeal chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C57 demonstrate genome-wide binding with high correlation across replicates (C47-C48), sequence-dependent positioning including TSS depletion (C50-C52), and nucleotide enrichment patterns matching M. fervidus (C55-C57). Multiple independent lines of evidence support non-random, sequence-directed assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "DNA sequence is a strong predictor of nucleosome occupancy in stationary phase (\u03c1=0.72-0.76 for 120bp fragments) but not exponential phase, with transcriptional activity and replication modulating the sequence-occupancy relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C70 present LASSO modeling results with strong correlations in stationary phase (C59-C60) that are dramatically reduced in exponential phase (C62). The modulation by transcriptional activity (C66) and distance from replication origin (C69) provides mechanistic insight. Statistical significance is reported and the phase-dependent differences are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Higher nucleosome occupancy at promoters is associated with lower transcript levels, with repressive effects driven primarily by larger oligomeric nucleosomes (90-150 bp) rather than tetramers (60 bp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C73-C77 demonstrate the association between TSS occupancy and downregulation using RNA-seq and MNase-seq data. The spatial specificity (signal lost at start codon, C75-C76) argues against reverse causation. Size-dependent effects (C77) are supported by data, though the mechanistic explanation (C78-C79) includes speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Under favorable growth conditions, histone expression causes only mild phenotypic effects: cells are slightly longer, exhibit a prolonged lag phase, but divide normally and maintain normal nucleoid/cytoplasm ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C81-C85 are supported by microscopy and growth curve data showing morphological changes and transient growth effects that cells recover from. Claims C116-C118 appropriately summarize these findings as demonstrating tolerance to chromatinization under favorable conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C122"
+    ],
+    "result": "Histone expression severely impairs E. coli's ability to respond to UV damage and topological stress (novobiocin), causing marked morphological changes and growth defects, while having milder effects on responses to rifampicin and H2O2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by colony counts, growth curves, and microscopy data showing differential stress responses. The distinction between mild bacteriostatic effects (rifampicin/H2O2) and severe effects (UV/novobiocin) is well-documented. Claim C122 appropriately summarizes these stress-specific vulnerabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C119",
+      "C120"
+    ],
+    "result": "Transcriptomic analysis reveals that histone expression induces stress responses (stringent response, RpoS regulon) and downregulates DNA gyrases, with the overall response showing modest similarity to other perturbations (max \u03c1=0.34) but strongest resemblance to metabolic stress and growth arrest conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 and C119-C120 are supported by comparative transcriptome analysis across >950 perturbations. The modest correlations (C90) and specific similarities to stress responses (C92-C95) are documented with appropriate statistical measures. The unique component of the response (C91) is a reasonable inference from the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C121"
+    ],
+    "result": "Downregulation of DNA gyrases in histone-expressing cells may represent an adaptive response to counteract histone-associated negative supercoiling, potentially explaining increased novobiocin susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96, C98, and C121 are largely speculative about the adaptive significance of gyrase downregulation, though C97 correctly states established knowledge about histone-DNA topology. Claim C99 provides supporting evidence from transcriptional similarity to CcdB expression. The mechanistic link requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Histone expression leads to upregulation of H-NS target genes (\u03c1=0.19, p<2.2\u00d710\u207b\u00b9\u2076), with histones occupying H-NS binding sites, suggesting displacement of H-NS without equivalent silencing function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by comparative transcriptome analysis and occupancy data at H-NS binding sites. The correlation with \u0394h-ns (C100) and specific upregulation of direct H-NS targets (C101) provide strong evidence. The displacement mechanism (C102, C104) is a reasonable inference from occupancy data (C103). Claims C105-C106 provide relevant context from prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Histones occupy binding sites of endogenous NAPs (HU, Fis, Dps) without strong competitive exclusion, with HMfA expression generally increasing lag phase duration, though growth effects with HU deletion are non-additive, suggesting partial functional complementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by occupancy analysis at NAP binding sites and lack of transcriptional correlation with NAP deletions (C108). Growth phenotype data (C110-C114) support the reported effects on lag phase and doubling time. The non-additive effect with HU deletion (C114) is documented, though the mechanistic explanation (C115) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Modal fragment sizes shift from ~60 bp in exponential phase to ~90 bp in stationary phase, suggesting increased prevalence of larger oligomers later in the growth cycle, potentially due to elevated histone:DNA ratios or reduced perturbation from replication and transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 documents the observed shift in modal fragment sizes with data from Figure 1C. Claim C38 is a reasonable inference from this observation. However, claims C39-C40 are speculative about mechanisms, as acknowledged by the authors' use of \"might reflect.\" The observation is solid but mechanistic explanations require further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Non-binding histone mutants (K13T-R19S-T54K) show MNase digestion profiles similar to empty vector controls, confirming that DNA binding is required for the observed protection patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 provide an important negative control. C71 cites prior literature for the mutations, and C72 shows experimental validation that these mutants fail to produce nucleosome-like protection patterns, supporting the specificity of the histone-DNA interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors propose that global chromatinization was evolutionarily facilitated by AT-rich promoters remaining accessible and archaeal nucleosomes being more surmountable barriers than eukaryotic nucleosomes, representing a \"proto-restrictive\" ground state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C128 are largely speculative evolutionary interpretations of the experimental findings. While C126 cites prior in vitro data, the evolutionary scenario (C127) and the \"proto-restrictive\" concept (C128) are hypotheses that extend beyond the direct experimental evidence. These represent interesting discussion points but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors contextualize their findings within archaeal diversity, noting that histone abundance and functional importance vary substantially across archaeal species, with histones essential in some species but dispensable in others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C140 appropriately summarize prior literature on archaeal histone diversity. The transcript abundance analysis (C132-C133) provides new data supporting variable histone expression across species. The synthesis (C136, C140) represents reasonable interpretation of the cited literature, appropriately cautioning against overgeneralization from eukaryotic histones to archaeal histones.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors draw parallels to Dps deletion studies and speculate that access regulation outside transcriptional contexts may have provided evolutionary impetus for histone genome-wide spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C143 appropriately cite relevant prior work on Dps. However, claim C144 is speculative about evolutionary origins, extending beyond the experimental data. While the parallel to Dps is interesting, the evolutionary hypothesis about defense against selfish elements requires additional evidence.",
+    "result_type": "MINOR"
+  }
+]

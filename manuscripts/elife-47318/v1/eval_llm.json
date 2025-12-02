@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript provides background on Golgi apparatus structure, function, and the ongoing debate about vesicular transport directionality. The Golgi is described as a conserved organelle with distinct cisternae (cis, medial, trans) that processes proteins, with structural diversity across species but conserved function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C6-C16, C24-C27) are well-supported by citations to established literature and represent accepted knowledge in the field. They provide appropriate context for the study and accurately describe the current state of understanding and debate about Golgi organization and transport mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Existing models of Golgi transport fall into two main classes (vesicular transport vs. cisternal maturation), with various extensions proposed. However, these models lack quantitative analysis of compartment generation and maintenance, and do not relate structure to transport dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C34 accurately summarize existing models and their limitations, supported by appropriate citations. The critical assessment that existing models lack quantitative analysis of compartment generation/maintenance (C23, C34) is reasonable and establishes the gap this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C67",
+      "C79",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors present a minimal coarse-grained model of Golgi self-organization based on three mechanisms: composition-dependent vesicular budding and fusion, and biochemical conversion of membrane components. The model is discretized at the vesicle scale, neglects spatial structure, and uses three membrane identities (cis, medial, trans).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C50, C67, C79, C109-C111 clearly describe the model design and its key assumptions. The model is appropriately simplified for its stated goal of understanding self-organization principles. The neglect of spatial structure (C37, C79) is acknowledged as a limitation and justified by experimental observations (C81-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C68",
+      "C80",
+      "C84",
+      "C85",
+      "C97",
+      "C122",
+      "C129"
+    ],
+    "result": "The model demonstrates that anterograde and retrograde transport are asymptotic behaviors of a richer dynamical system, where compartment structure/composition and vesicular transport directionality are intimately linked emergent properties controlled by the kinetic competition between budding, fusion, and biochemical conversion rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C38-C42, C68, C80, C84-C85, C97, C122, C129 represent the core findings of the model. These are well-supported by the simulation results shown in Figures 2-4 and the analytical approximations provided. The identification of emergent properties arising from local interactions is a significant conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The steady-state size distribution of compartments shows a power law decay at small sizes with exponential cut-off at large sizes, consistent with non-equilibrium steady-states controlled by scission and aggregation, resulting in many small compartments and few large ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by simulation data (Figure 2A) and theoretical expectations from prior work (C52, Turner et al. 2005). The size distribution is a standard result for aggregation-fragmentation systems and provides validation of the model's physical reasonableness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C94",
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The model reveals three distinct regimes: (1) low budding rate - large mixed compartments with retrograde flux dominated by trans-rich compartments; (2) high budding rate - small pure compartments with anterograde flux; (3) intermediate regime - mixed compartments with centripetal flux toward medial identity. Transport directionality is linked to compartment purity through the concept of 'contaminating species'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C70-C77, C94-C100 describe the three transport regimes identified in the model, supported by Figures 3-4. The mechanistic explanation based on contaminating species (C58, C95-C96) provides intuitive understanding. The correlation between purity and directionality is clearly demonstrated in the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C42"
+    ],
+    "result": "The archetypal transport behaviors (anterograde and retrograde) discussed in the literature are asymptotic regimes for extreme values of the budding-to-fusion rate ratio, with complex intermediate behaviors that are neither purely anterograde nor retrograde.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C65 represent a key conceptual insight that reconciles existing models. This is well-supported by the phase diagrams (Figures 2-3) showing continuous transitions between regimes. The identification of intermediate 'centripetal' transport (C76) is a novel prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "Model predictions are consistent with experimental observations: Arf1 deletion and NSF mutation produce larger compartments; VPS74 modification shows similar phenotypes; COPI activity reduction leads to larger, less sorted compartments; Ypt1 overexpression increases marker colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 compare model predictions with experimental data from multiple studies. The qualitative agreement between model predictions and experimental phenotypes provides validation. However, these are post-hoc comparisons rather than a priori predictions, and quantitative validation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "The model predicts that compartment size and purity should be affected in a correlated fashion by physiological perturbations, providing a testable experimental prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 presents a clear, testable prediction arising from the model's core finding (C41) of size-purity correlation. This prediction is well-grounded in the model results (Figure 2E) and represents a falsifiable hypothesis for future experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Experimental observations show that Golgi functionality is preserved when cisternae are land-locked to mitochondria, with cargo transport slowed only 2-fold despite loss of spatial proximity, suggesting biochemical information is more crucial than spatial information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 cite experimental work (Dunlop et al. 2017) to support the model's neglect of spatial structure. The inference that biochemical information is more important than spatial information (C83) is reasonable given the experimental data, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The model's predictions align with species differences: S. cerevisiae shows cisternal maturation with low purity and fast dynamics (~1/min), while mammalian cells show vesicular transport with higher organization and slower dynamics (~1/20-40 min). This may reflect evolutionary adaptation favoring speed vs. processing robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 cite experimental observations, but C104 and C107 are explicitly speculative. While the correlation between model predictions and species differences is intriguing, the evolutionary interpretation (C107) lacks direct evidence. The observation about glucose starvation (C108) provides some support but is insufficient for strong conclusions about evolutionary adaptation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The model has limitations: it includes only vesicular exchange (not tubular connections or cisternal fragments), lacks lateral partitioning within compartments, and is less detailed than models like the Rapid Partitioning Model (RPM) which focuses on transport in pre-established structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 appropriately acknowledge model limitations and compare with alternative mechanisms and models. The discussion of tubular connections (C112-C115) and the RPM (C116-C120) is balanced, noting both differences in scope and complementary insights. This demonstrates appropriate scientific humility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Despite minimal complexity, the model produces diverse phenotypes and reproduces mutation effects. At high budding rates, anterograde transport involves vesicle biochemical conversion after budding. Adding composition-dependent feedback could extend anterograde transport to larger compartments, with proteins like GRASP or Golgins as candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 summarize model capabilities and mechanisms, supported by simulation results. The prediction about composition-dependent feedback (C127) is reasonable speculation based on model logic. The identification of GRASP/Golgins as candidates (C128) is supported by citation showing their evolutionary conservation.",
+    "result_type": "MINOR"
+  }
+]

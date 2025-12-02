@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The I domain of TRAP is essential for sporozoite function. Deletion of the I domain (trap\u0394I) results in parasites that phenocopy trap(-) knockouts, showing severely impaired salivary gland invasion (~10-60 sporozoites vs ~10,000 for wild type), complete loss of productive motility (0% vs ~19% for wild type), and inability to infect mice. The mutated TRAP protein is properly localized and secreted, indicating the defects are due to loss of I domain function rather than protein mislocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C51-C52, and C56-C67 provide converging evidence from multiple experimental approaches (salivary gland invasion counts in Figure 2B/Table 1, motility assays in Figure 2C, infection experiments in Table 2, and immunofluorescence in Figure 2D) demonstrating that the I domain is essential for TRAP function. The trap\u0394I phenotype closely matches trap(-), and proper protein localization rules out trafficking defects as an explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C78",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "Replacement of the TRAP I domain with the MIC2 I domain from Toxoplasma gondii fully restores tissue invasion and parasite transmission. MIC2-I parasites invade salivary glands at rates similar to wild type, show 100% infection rates by mosquito bite with similar prepatency periods, and exhibit comparable gliding speed (~1.5 \u03bcm/s) and persistence. However, MIC2-I sporozoites show reduced productive motility compared to TRAP-I (4% vs 24% for hemolymph, 15% vs 53% for salivary gland sporozoites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C53 are strongly supported by data in Figures 3F-G, 4A-E, and Tables 1-2 showing functional rescue of salivary gland invasion, motility, and mouse infection. The quantitative motility data (C86-C94) demonstrate that while MIC2-I sporozoites are less frequently motile, those that do move exhibit normal speed and persistence, explaining the successful transmission despite reduced motility frequency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C90",
+      "C91",
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "Replacement with human integrin I domains shows differential rescue: \u03b1X-I partially restores function while \u03b1L-I shows minimal rescue. \u03b1X-I sporozoites invade salivary glands at very low rates (~100-200 per gland vs ~10,000 for wild type), show ~1% productive motility, cannot transmit by mosquito bite, but can infect 50% of mice when 10,000 hemolymph sporozoites are injected intravenously. \u03b1L-I sporozoites show even more severe defects with ~30-90 per gland, 0% productive motility among >3000 observed, no transmission by bite, and minimal infectivity (1/6 mice with 25,000 hemolymph sporozoites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C79-C107 are supported by extensive data in Figures 3F-G, 4A, Table 1, and Table 2. The graded phenotypes (MIC2-I > \u03b1X-I > \u03b1L-I > trap\u0394I) correlate with I domain polyspecificity, with the polyspecific \u03b1X performing better than the highly specific \u03b1L. The data consistently show that neither human integrin I domain can support natural transmission, but \u03b1X-I retains partial function in direct injection experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "MIC2-I sporozoites show reduced hepatocyte invasion efficiency but normal intracellular development. After 1.5 hr exposure to HepG2 cells, 2-fold fewer MIC2-I sporozoites were intracellular compared to TRAP-I, and at 48 hr, 5-fold fewer had developed into liver stages. However, the size of liver stages at 48 hr was comparable between TRAP-I and MIC2-I, indicating that I domain exchange affects invasion but not subsequent development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by in vitro invasion and liver stage development data in Figures 5A-D. The reduced invasion efficiency is consistent with the reduced motility observed for MIC2-I sporozoites, while the comparable liver stage sizes provide evidence that the I domain functions specifically in invasion rather than intracellular development. The inference in C111 is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Both TRAP-I and MIC2-I sporozoites show pronounced liver tropism with ~16-fold more parasites in liver than other organs, though MIC2-I shows ~40% reduced liver burden compared to TRAP-I. This demonstrates that I domain exchange does not alter tissue tropism but does affect invasion efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by qRT-PCR data in Figure 5E and Figure 5\u2014figure supplement 1. The maintained liver tropism despite I domain exchange supports the authors' model that TRAP does not determine tissue tropism. The 40% reduction in liver burden for MIC2-I is consistent with the reduced invasion efficiency observed in vitro.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Charge reversal mutations around the TRAP I domain ligand binding site (RevCharge: 7 mutations changing pI from 9.7 to 6.8) uncouple salivary gland invasion from mammalian host infection. RevCharge sporozoites invade salivary glands normally but show severely reduced productive motility (~1% vs ~53% for TRAP-I), >99% decreased infectivity by mosquito bite (2/8 mice infected with delayed prepatency), yet retain 50-90% infectivity when 10,000 salivary gland sporozoites are injected intravenously (9/9 mice infected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C114-C121 are supported by data in Figure 6E-K and Tables 1-2. The RevCharge mutant provides strong evidence that electrostatic properties of the I domain are critical for function, particularly for transmission from mosquito to mammal. The dramatic difference between mosquito bite and intravenous injection suggests the I domain's surface charge is especially important for sporozoite exit from the dermis into circulation, as the authors speculate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Sequence analysis reveals low identity among the tested I domains: 36% between \u03b1L and \u03b1X, 18% between human integrins and P. berghei TRAP, and 28% between TRAP and MIC2. The I domains also differ in charge properties: TRAP (pI 9.7) and \u03b1X (pI 8.9) are basic, while MIC2 (pI 6.1) and \u03b1L (pI 5.8) are acidic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by sequence alignment data in Supplementary file 2 and citations to Song et al., 2012 and Song and Springer, 2014. These biochemical characterizations provide important context for interpreting the functional rescue experiments, showing that successful functional replacement can occur despite low sequence identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The \u03b1X and \u03b1L integrin I domains differ in ligand specificity: \u03b1X is polyspecific, binding multiple glycoproteins, proteolytic fragments, and heparin, while \u03b1L is highly specific for ICAM-1 and its homologues (ICAM-2, ICAM-3, ICAM-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by citations to Vorup-Jensen et al., 2005, 2007 and Grakoui et al., 1999. This prior knowledge about integrin I domain specificity provides the rationale for selecting these particular domains for the replacement experiments and supports the authors' hypothesis about polyspecificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "All I domain chimeras (MIC2-I, \u03b1X-I, \u03b1L-I) show proper TRAP localization and expression. Immunofluorescence shows identical localization in midgut sporozoites, and western blots demonstrate similar expression levels in hemolymph sporozoites, with no TRAP detected in trap(-) controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by immunofluorescence data in Figure 3B and western blot data in Figure 3C. These controls are essential for interpreting the functional data, demonstrating that phenotypic differences are due to I domain function rather than protein mislocalization or expression defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Summary of infectivity: TRAP-I and MIC2-I sporozoites are comparably infectious to mice, \u03b1X-I sporozoites are moderately infectious, and \u03b1L-I sporozoites are nearly completely deficient in infectivity but could in one case still cause infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are inferences appropriately drawn from the comprehensive infection data in Tables 2-3. The graded infectivity pattern (TRAP-I \u2248 MIC2-I > \u03b1X-I >> \u03b1L-I) is consistent across multiple experimental approaches and supports the authors' model about I domain polyspecificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C54",
+      "C55",
+      "C122",
+      "C123",
+      "C124",
+      "C134"
+    ],
+    "result": "The authors propose that apicomplexan parasites appropriated polyspecific I domains for their ability to engage multiple ligands and provide traction for emigration into diverse organs across distant phyla. They suggest TRAP functions as a polyspecific receptor providing traction rather than determining tissue tropism, with tropism determined by other receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C54-C55, C122-C124, and C134 represent the authors' interpretive model. While speculative, this model is well-supported by the experimental data: (1) MIC2-I fully rescues function despite encountering different ligands, (2) maintained liver tropism despite I domain exchange, (3) graded rescue correlating with polyspecificity (\u03b1X > \u03b1L), and (4) RevCharge uncoupling salivary gland invasion from mammalian infection. The model provides a coherent explanation for all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Structural analysis reveals that apicomplexan I domains (TRAP and MIC2) structurally resemble integrin \u03b1I domains more than \u03b2I domains. Both show similar conformational changes between open and closed states, including ~2 \u00c5 movement of the MIDAS Mg2+ ion and pistoning of the \u03b17-helix equivalent to two \u03b1-helix turns. Uniquely in apicomplexan I domains, an N-terminal segment is disulfide-linked to the \u03b17-helix in the closed conformation, and these segments reshape to form a \u03b2-ribbon in the open conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 are supported by structural data in Figure 1 and citations to Song et al., 2012 and Song and Springer, 2014. The structural similarities between apicomplexan and integrin \u03b1I domains provide the molecular basis for the domain swap experiments and explain why such swaps are feasible despite low sequence identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background information on I domains, VWA domains, integrins, apicomplexan biology, and Plasmodium life cycle. This includes the distribution of I domain-containing adhesins across phyla, the structural and functional properties of I domains, the role of TRAP and TLP in sporozoite biology, and prior work on MIDAS mutations showing their importance for invasion but not motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C13-C40 represent established knowledge supported by appropriate citations and general scientific knowledge. These background claims provide essential context for the experimental work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Supporting evidence for the polyspecificity model: (1) Toxoplasma lacks an arthropod host yet its MIC2 I domain functions in mosquito salivary gland invasion, (2) TRAP has been shown to bind multiple ligands including fetuin-A, proteoglycans, glycosaminoglycans, integrin \u03b1V, and saglin, (3) deletion of the I domain abolishes TRAP function while mutations in other domains have negligible effects, and (4) TRAP expression in bird-infecting Plasmodium species that initially infect skin rather than liver is consistent with TRAP not providing liver tropism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C133 integrate the current findings with prior literature to support the authors' model. C125-C126 are particularly compelling: MIC2-I functions in mosquito salivary glands despite Toxoplasma never encountering this environment evolutionarily. C127-C131 cite prior work on TRAP ligands, C132 is a reasonable inference from the current data plus cited work, and C133 provides additional support from comparative biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The authors propose mechanistic parallels with integrin activation and leukocyte emigration, suggesting that TRAP may be activated by other receptors (analogous to integrin activation by GPCRs or tyrosine kinase-coupled receptors), that ultrasensitive regulation might be essential for sporozoite stick-and-slip gliding, and that chemoattractants might drive directional migration. They conclude that new paradigms may be needed to understand sporozoite activation and homing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C141 are highly speculative proposals about mechanisms not directly tested in this study. While C135-C136 and C138-C139 cite relevant prior work on integrins and leukocytes, the application to sporozoites is hypothetical. C137 and C140 are particularly speculative. C141 is a reasonable conclusion given the findings, but the specific mechanistic proposals lack direct experimental support and represent directions for future research rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

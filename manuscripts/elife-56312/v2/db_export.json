@@ -1,0 +1,1166 @@
+{
+  "submission": {
+    "id": "a910546d-a004-4239-95b2-6bb7ea9e1388",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:21:38.130640Z",
+    "updated_at": "2025-12-02T17:21:38.130640Z"
+  },
+  "content": [
+    {
+      "id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "submission_id": "a910546d-a004-4239-95b2-6bb7ea9e1388",
+      "content_type": "manuscript",
+      "content_text": "# Transgenesis and web resources in quail\n\n## Authors\n\n- Olivier Serralbo<sup>1</sup> ([ORCID: 0000-0003-0808-3464](https://orcid.org/0000-0003-0808-3464)) \u2020\n- David Salgado<sup>2</sup>\n- Nad\u00e8ge V\u00e9ron<sup>1</sup>\n- Caitlin Cooper<sup>3</sup>\n- Marie-Julie Dejardin<sup>4</sup>\n- Timothy Doran<sup>3</sup>\n- J\u00e9rome Gros<sup>5</sup> \u2020\n- Christophe Marcelle<sup>1</sup> ([ORCID: 0000-0002-9612-7609](https://orcid.org/0000-0002-9612-7609)) \u2020\n\n### Affiliations\n\n1. Australian Regenerative Medicine Institute (ARMI), Monash University Clayton Australia\n2. Marseille Medical Genetics (GMGF), Aix Marseille University Marseille France\n3. CSIRO Health & Biosecurity, Australian Animal Health Laboratory Geelong Australia\n4. Institut NeuroMyoG\u00e8ne (INMG), University Claude Bernard Lyon 1 Lyon France\n5. Department of Developmental and Stem Cell Biology, Pasteur Institute Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nDue to its amenability to manipulations, to live observation and its striking similarities to mammals, the chicken embryo has been one of the major animal models in biomedical research. Although it is technically possible to genome-edit the chicken, its long generation time (6 months to sexual maturity) makes it an impractical lab model and has prevented it widespread use in research. The Japanese quail (Coturnix coturnix japonica) is an attractive alternative, very similar to the chicken, but with the decisive asset of a much shorter generation time (1.5 months). In recent years, transgenic quail lines have been described. Most of them were generated using replication-deficient lentiviruses, a technique that presents diverse limitations. Here, we introduce a novel technology to perform transgenesis in quail, based on the in vivo transfection of plasmids in circulating Primordial Germ Cells (PGCs). This technique is simple, efficient and allows using the infinite variety of genome engineering approaches developed in other models. Furthermore, we present a website centralizing quail genomic and technological information to facilitate the design of genome-editing strategies, showcase the past and future transgenic quail lines and foster collaborative work within the avian community.\n\n## Introduction\n\nDue to the easy access of chicken embryos to manipulation, this model has been at the origin of numerous seminal discoveries in a diverse range of topics (e.g. immunology, genetics, virology, cancer, cell biology, ethology, etc.; Stern, 2005). The specificities of the avian model have fostered the development of efficient techniques to target cells and tissues (e.g. in vivo electroporation, lipophilic dye labeling) that, combined with high-end imaging technologies (e.g. light sheet and fast-scanning two-photon excitation microscopy), have allowed the studies of dynamic morphogenetic processes in an amniote embryo environment with exceptional spatiotemporal resolution. Genetic approaches in birds have, however, lagged behind the two main genetic vertebrate models (mouse and fish), largely due to the particularities of the reproductive physiology of birds. The zygote is very difficult to access as it initiates its development internally, in the hen's oviduct and on a large yolk. By the time the egg is laid, the embryo has already developed into a blastoderm of about 40,000\u201350,000 cells with the germ line lineage already set aside (Eyal-Giladi and Kochav, 1976; Intarapat and Stern, 2013). Because of this, most researchers in avian genetics have focused their efforts on two distinct methods (Nishijima and Iijima, 2013): i) the genetic manipulation of primordial germ cells (PGCs) in vitro, which are injected back into recipient embryos (Idoko-Akoh et al., 2018; Park et al., 2014; Taylor et al., 2017; van de Lavoir et al., 2006) or ii) the direct infection of PGCs within the subgerminal cavity with replication-defective lentiviruses (Bosselman et al., 1989; McGrew et al., 2004). Both approaches have been applied successfully to chicken (Nishijima and Iijima, 2013). However, due to their long generation time (6 months to sexual maturity), transgenesis in chicken is impracticable within the timeframe of most research projects. Therefore, this technology has not been widely used in basic research and its development has been mainly driven by industrial interests to produce biologically active pharmaceutical proteins in eggs (Lillico et al., 2007; Nishijima and Iijima, 2013; Woodfint et al., 2018).\n\nJapanese quail (Corturnix coturnix japonica)\u00a0is a better alternative for avian genetics. Quail is a well-known model in the developmental biology field through its extensive use in the so-called quail-chick chimera technique (Le Douarin, 1973; Le Douarin, 2005). Indeed, quail and chicken are close relatives (Order: Galliformes; Family: Phasianidae), they share on average 95% homology at the gene sequence level (GenBank) and quails are susceptible to most chicken diseases (Barnes, 1987). Similar to chicken, quail lay about one egg per day, and their smaller size makes them more compatible with the frequently limited space of animal facilities. A decisive advantage of quail over chicken is that they reach sexual maturity in 6 weeks. Thus, their life cycle is significantly shorter than that of chicken (26 weeks), but also of mice (8 weeks) or zebrafish (12 weeks). As no reliable technique for the culture of quail PGCs has yet been described, transgenesis in this species has mainly relied on the infection of blastoderm stage embryos (or circulating Zhang et al., 2012) with lentiviruses carrying fluorescent markers under ubiquitous or tissue-specific promoters, leading in recent years to the generation of a few quail lines: ubiquitous (Huss et al., 2015; Zhang et al., 2012); neuronal (Scott and Lois, 2005; Seidl et al., 2013; adipose Ahn et al., 2015; intestinal Woodfint et al., 2017; endothelial Sato et al., 2010). A high titre of lentivirus is required to succeed at producing chimeric embryos carrying transgenic PGCs using this technique (Poynter and Lansford, 2008; Scott and Lois, 2005). Even though large inserts (more than 10 kilobases) can theoretically be packaged using lentiviruses, a sharp drop in viral titre is observed with insert above 4\u20135 kb, likely representing the upper limit of constructs that can be used to generate transgenic birds (Kumar et al., 2001; our observation). An important advance in the field was the recent use of adenoviral vectors to perform the first CRISPR/Cas9-mediated targeted gene knockout in quail by direct infection of blastoderm cells (Lee et al., 2019). Whereas viruses should be sufficient for a number of applications, the size limitation of inserted constructs may be a significant restriction for their use to generate complex transgenes.\n\nFor biosafety and commercial reasons, non-viral and simpler technologies for achieving transgenic poultry have been tested. The direct in vivo transfection of PGCs with commercially available liposome-based transfection reagents has recently been successfully used to generate transgenic chicken lines (Cooper et al., 2018b; Cooper et al., 2018a; Tyack et al., 2013). Insertion of Tol2 (T2) transposable elements in constructs allows the efficient and stable integration of foreign DNA into the genome of transfected PGCs in the presence of exogenously provided transposase protein. Since DNA inserts up to a size of 11 kb can be cloned between Tol2 sequences with no visible loss of transposable efficiency (Kawakami, 2007) this allows using larger and/or more complex constructs than in viruses. Another advantage of transgenesis using the Tol2 transposon system is that it leads to minimal epigenetic silencing during development (Macdonald et al., 2012).\n\nHere, we used the direct transfection of PGCs in the bloodstream of quail embryos. We present three novel quail transgenic lines carrying fluorescent proteins under ubiquitous and tissue-specific promoters. Illustrating the flexibility of the plasmid-based system, we integrated a cassette containing the GFP protein driven by a promoter for Chick \u03b2B1-Crystallin (Taube et al., 2002) making the identification of transgenic animals possible at hatching by UV illumination. Moreover, we present a community website where existing lines are described and new ones can be uploaded. This portal also centralizes useful technical resources for the study of this model and genomic information, based on the recently sequenced quail genome that will facilitate the generation of novel lines and the design of functional experiments in quail.\n\n## Results\n\n### Direct transfection of quail PGCs\n\nUnlike mammals, avian PGCs temporarily transit through the blood system. Chicken PGCs initially located at the end of gastrulation within the germinal crescent, enter the extra-embryonic blood vessels at about 30 hr of incubation (E1.5, HH9) and begin to circulate throughout the embryo. Their number in the blood peaks around E2/2.5 (HH15-16). By E3 (HH20), PGCs actively migrate back in the embryo and into the gonad anlagen (Nakamura et al., 2007; Nieuwkoop and Sutasurya, 1979). Chicken PGCs are transfected during their transient journey in the bloodstream, using a transfection mix containing lipofectamine, a transgenesis plasmid with Tol2 elements flanking the DNA construct to be inserted and a plasmid coding for transposase under an ubiquitous promoter (Tyack et al., 2013).\n\nTo test whether the direct transfection of PGCs can be achieved in quails, we determined whether we could observe PGCs transfected with fluorescent proteins once they colonized the gonads. A transfection mix containing a transgenesis plasmid coding for a membrane-localised GFP (GFP-CAAX) and a nuclear monomeric Cherry (NLS-mCherry) under the control of a strong ubiquitous promoter (CAG: CMV promoter, chick beta actin enhancer; Niwa et al., 1991) was injected into the bloodstream of quail embryos (Figure 1A). Quail develop slightly faster than chicken (17\u201318 days for quails; 21 days for chicken). However, we found that the timing of injection of the transfection mix resulting in the colonization of fluorescent PGCs was similar to that determined in chicken, that\u00a0is at 2 days (E2) of quail embryonic development. Indeed, 5 days after injection (at E7), we observed that gonads contained many fluorescent cells (Figure 1B). We confirmed that these were PGCs using whole-mount immunostaining with a PGC-specific marker VASA (Figure 1C\u2013F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56312/elife-56312-fig1-v2.jpg)\n\n**Figure 1.:** (A) Vectors used in the injection mix. (B) Gonads from E7 embryo dissected 5 days after in vivo PGC transfection, showing GFP-positive transfected PGCs (arrowheads). (C\u2013F) Confocal views of transfected (GFP- and mCherry-positive) PGCs among non-transfected PGCs, in the gonads of E7 injected embryo. PGCs are recognized by their expression of the Vasa marker (E,F). (G\u2013H) Transgenic (Tg) and wild-type (WT) chicks showing ubiquitous expression of membranal GFP and nuclear mCherry when observed with UV goggles. (I\u2013J) cross-section of an E3 transgenic quail embryo, showing strong and ubiquitous expression of the transgenes in all cells of the embryo.\n\n### Generation of a lens-specific GFP minigene to facilitate the selection of transgenic birds\n\nTo facilitate the selection of transgenic (F1) birds, we devised a fluorescent selection marker readily visible in the lens at hatching under blue light illumination. We isolated a 462bp-long lens-specific promoter of the \u03b2B1crystallin gene (CRYBB1; Duncan et al., 1995) from chicken genomic DNA and cloned it upstream of GFP to develop a selection mini-gene (CrystallGFP) based on lens expression. The CrystallGFP mini gene is only 1.7 kb long and can be added to transgene constructs. To test the specificity of the promoter, we co-electroporated the CrystallGFP construct together with a ubiquitously expressed RFP (CAG-RFP) into the optic cup of a quail E3 embryo (Figure 2A\u2013D). Twenty-four hours after electroporation, RFP-positive cells were found in the retina and lens (Figure 2B,D). However, only the lens cells expressed the GFP (Figure 2C,D), showing the specificity of the \u03b2B1crystallin promoter for lens tissues. Transgenic quails carrying the CrystallGFP selection cassette display strong expression of GFP in all lens cells during embryogenesis (Figure 2E\u2013G) and in adults (Figure 2I). The CrystallGFP selection cassette was included in some of the transgenesis constructs, such as the muscle-specific quail line described below (Figure 2H and Figure 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56312/elife-56312-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013D) Cross-section of the head of an E4 embryo, electroporated one day earlier in the optic cup with a CrystallGFP minigene. (A) DAPI, (B) electroporation marker CAG-RFP plasmid, (C) GFP, (D) overlay. (E\u2013G) Cross-section of the head of a 3-day-old embryo of the Tg(MLC:GFP-IRES-NLS-mCherry,CRYBB1:GFP) transgenic line showing the specific expression of GFP throughout the lens. (H) Electroporation constructs used to express the CrystallGFP minigene in a muscle-specific transgenic line (see Figure 4). (I) Transgenic and WT adults of the muscle-specific transgenic line showing GFP expression in lens.\n\n### Generation of transgenic quails lines\n\n#### TgT2(CAG:NLS-mCherry-IRES-GFP-CAAX): ubiquitous expression of membranal GFP and nuclear RFP\n\nTo generate a transgenic quail line ubiquitously expressing a membrane-bound GFP and a nuclear RFP, embryos injected with the pT2-CAG:NLS-mCherry-IRES-GFP-CAAX plasmid (see above) were incubated until hatching and raised to adult stage. In this and other experiments described below, we have observed that about half of the (50) injected eggs hatched. Six weeks later, we collected semen from adult males and tested by PCR for the presence of the transgene. Three (F0) males, positive for the transgene, were crossed with four females each. From these crosses, three transgenic (F1) birds could be readily spotted at hatching by fluorescence screening thanks to the ubiquitously expressed GFP and mCherry. Expression of GFP or mCherry was visible in the beak, eyes and legs of the transgenic birds compared to wild-type animals (Figure 1G,H). Immunostaining on cross-sections of E3 transgenic embryos showed a ubiquitous expression of the GFP at the cell membrane and of mCherry in nuclei (Figure 1I\u2013K). From this and other crosses we have performed in the laboratory (see below), we estimate that about 1% of the offspring contain the transgene, an efficiency comparable to that observed in the chicken using the same technology (Tyack et al., 2013). Compared to the existing quail lines carrying ubiquitously expressed fluorescent proteins, this line should prove useful to researchers in the field. Indeed, we observed that the membrane-bound GFP results in a better resolution of cell membrane processes (protrusions, filopodia, etc.) than a cytoplasmic counterpart, while it also combines a nuclear mCherry, allowing accurate segmentation of cells necessary for automated image analyses such as for 3D cell tracking. As a proof of concept of the usefulness of this transgene, we performed real-time video microscopy on 2-day-old embryos (observation time of about 12 hr), which illustrates the extensive morphogenetic changes taking place during early development (e.g. somitogenesis, heart and otic placode formation, etc.; see Video 1), while a higher magnification exquisitely shows the posteriorward migration of the pronephric primordium (see Video 2) in this embryo.\n\n![Video 1.](https://cdn.elifesciences.org/articles/56312/elife-56312-video1.mp4.jpg)\n\n**Video 1.:** Embryo was maintained at 38\u00b0C and imaged every 10mn for 12 hr using Thunder Imager Model Organism Leica stereo microscope equipped with 1x lens.\n\n![Video 2.](https://cdn.elifesciences.org/articles/56312/elife-56312-video2.mp4.jpg)\n\n**Video 2.:** Embryo was maintained at 38\u00b0C and imaged every 10mn for 12 hr using Thunder Imager Model Organism Leica stereo microscope equipped with 5x lens.\n\n#### TgT2(CAG:Kaede): ubiquitous expression of a photoconvertible fluorescent protein\n\nTo generate this transgenic line, E2 quail embryos were injected with a construct coding for a cytoplasmic form of the photoconvertible fluorescent protein Kaede (Ando et al., 2002), driven by a CAG promoter. Upon irradiation with ultraviolet light, Kaede undergoes irreversible photoconversion from green to red fluorescence. Three F1 founders were obtained in which strong and ubiquitous expression of the photoconvertible fluorescent protein is observed in adult (Figure 3A) and in developing embryos (Figure 3B). Using the region of interest (ROI) function present in most confocal microscopes, specific areas of the embryo can be UV-illuminated to efficiently photoconvert the green fluorescent Kaede protein present in tissues to its red counterpart (Figure 3C\u2013F). The long half-life of the photoconverted Kaede results in red fluorescence that can be detected up to 48 hr after photoconversion (Tomura et al., 2008). One major application of the TgT2(CAG:Kaede) quail line is the possibility to track in vivo the behaviour of cells over time. As an example, we performed a 7 hr-long time-lapse video of an E2 TgT2(CAG:Kaede) quail embryo where a section of the neural tube had been photoconverted upon exposure to UV light. Over the 7 hr of the time-lapse (one image taken every 15mn), neural crest cells can be observed migrating away from the neural tube (Figure 2G\u2013I, arrowheads, and Video 3). This quail line is the first avian line carrying a photoconvertible fluorescent protein and it should be extremely useful to perform short to medium-term lineage tracing of cells as development proceeds.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56312/elife-56312-fig3-v2.jpg)\n\n**Figure 3.:** (A) Two-week-old WT and transgenic quails showing the ubiquitous expression of the green fluorescent Kaede in the beak and eye (arrows). (B) WT and transgenic 3-day-old embryos showing strong ubiquitous expression of the protein. (C\u2013F) A newly formed somite before (C) and after (D\u2013F) photoconversion. (G\u2013I) Snapshots from a time-lapse video (see Video 3) showing the morphogenic movements of photoconverted neural tube cells. Arrowheads in H and I show neural crest cells initiating their lateral migration. NT: Neural Tube, S: Somite.\n\n![Video 3.](https://cdn.elifesciences.org/articles/56312/elife-56312-video3.mp4.jpg)\n\n**Video 3.:** Embryo was imaged using a Leica SP8 upright confocal microscope. A ROI was defined in half of the neural tube and exposed to UV light, photoconverting the Kaede protein from green to red. The area was imaged every 15mn for 7 hr showing neural crest cells migrating away from the neural tube.\n\n#### TgT2(Mmu.MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry,Gga.CRYBB1:GFP): a skeletal muscle-specific reporter quail\n\nWe generated a line carrying a promoter for the mouse alkali Myosin Light Chain gene (MLC; Kelly et al., 1995) upstream of the membrane-bound GFP and the nuclear mCherry reporters described above. We designed a muscle-specific promoter, based on a synthetic reporter derived from the MLC1F/3F gene regulatory sequences previously utilized for mouse transgenesis (3F-nlacZ-E; Kelly et al., 1995). It contains a 2 kb sequence located 5' and 3' of the MLC3F transcriptional start site together with a 260 bp enhancer sequences from the 3' UTR region of the MLC3F gene, necessary for the high level of transcription in muscles. This construct was shown to drive strong LacZ expression in all (head and body) striated muscles from the early steps of myogenesis in somites of mouse embryos throughout embryogenesis, as well as in all skeletal muscles of the foetus and in the adult (Kelly et al., 1995). We included in the transgenesis construct the CrystallGFP cassette to facilitate the selection of F1 transgenic birds (Figure 2H).\n\nF0 founder males were crossed with females and from 242 chicks that hatched, 3 transgenic F1 founders (1 male and 2 females, that\u00a0is 1.2% efficiency) were selected, based on the expression of GFP in the lens (Figure 2I). These F1 were used to characterize the expression of the transgene during embryogenesis.\n\nThe GFP and RFP reporters were expressed in all (i.e. head, trunk and limb) skeletal muscles of the developing embryo (Figure 4I\u2013N). On sections of E3 embryos, stained for GFP and RFP, strong expression was detected throughout the myotome of trunk somites (Figure 4A\u2013D). We observed that the first sign of mCherry expression was detected within the transition zone (TZ; Figure 4E\u2013H), where MYF5-expressing cells emanating from the medial border from the overlying dermomyotome translocate and extend along the antero-posterior axis of the embryo to form myocytes (Gros et al., 2009; Gros et al., 2004; Rios et al., 2011). This is coherent with a recent characterization of the MLC promoter we have done using in vivo electroporation in the chicken and where we found that its activity is initiated in myogenin-expressing, terminally differentiating myogenic cells within the TZ (Sieiro et al., 2019). MLC thus drives expression of the reporter genes from the early stages of myogenesis. It remains active in terminally differentiated myofibres, similar to what had been observed in 3F-nlacZ-E mouse embryos (Kelly et al., 1995). In contrast to this mouse line, where the expression of LacZ was observed in non-skeletal tissues (brain, optic vesicle and heart; Kelly et al., 1995), we did not detect the transgene in those tissues in the transgenic quails we analyzed, suggesting a more rigorous restriction to the skeletal muscle lineage, an observation previously made in the chicken (McGrew et al., 2010). Refined details of the developing head, body and limb musculatures can be observed when (3DISCO) cleared E3 and E6 embryos are stained for GFP and RFP (together with an immunostaining against neural crest derivatives in blue for the E4 embryo) and imaged with light sheet microscopy (Videos 4 and 5). This quail line dedicated to skeletal muscles should be useful to all researchers in the field interested in characterizing the dynamics of myogenic differentiation during embryogenesis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56312/elife-56312-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013D) Cross-section of E3 transgenic embryo stained for the indicated markers, showing the expression of the transgene throughout the primary myotome. (A) GFP-CAAX, (B) NLS-mCherry, (C) Pax7, (D) Merge. Insets in (A\u2013D) Magnifications of the regions indicated in (A\u2013D) showing the cellular localisation of the markers. (E\u2013H) E5 Transgenic embryo showing GFP-CAAX (E) and NLS-mCherry (F) in the transition zone (TZ, arrow) where progenitors from the dermomyotome translocate to elongate and differentiate. (I\u2013K) E5 embryos showing strong and specific expression of the muscle-specific reporter in somites (arrowheads). In this quail line, transgenic embryos can be selected at hatching by t\u03b7\u03b5 GFP expression in lens due to the CrystallGFP minigene (arrows). (H\u2013J) E7 transgenic embryo showing muscle-specific expression of the transgene in the head, limbs and trunk.\n\n![Video 4.](https://cdn.elifesciences.org/articles/56312/elife-56312-video4.mp4.jpg)\n\n**Video 4.:** Image rendering and video obtained with an Arivis software suite.\n\n![Video 5.](https://cdn.elifesciences.org/articles/56312/elife-56312-video5.mp4.jpg)\n\n**Video 5.:** Image rendering and video obtained with an Arivis software suite.\n\n### Quailnet: a community website to share quail lines and resources\n\n#### Transgenic lines\n\nTo foster collaborative work in the avian community, we created a website in which existing and future quail lines will be listed (http://quailnet.geneticsandbioinformatics.eu/). A restricted access to the website enables researchers that generate new quail lines to deposit information (e.g. the type of line and the method used to generate it, its availability, etc.). An online form allows contacting the researcher that produced the line and inquire about additional information. Currently, a total of 24 lines are listed, comprising three transgenic lines generated using the transposon-based method (this report), seven transgenic lines generated using the lentiviral-based method (Huss et al., 2015; Moreau et al., 2019; Saadaoui et al., 2020; Sato et al., 2010; Seidl et al., 2013), 7 quail mutant lines and 7 strains obtained through breeding-selection programs (See Figure 5A\u2013C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56312/elife-56312-fig5-v2.jpg)\n\n**Figure 5.:** (A) Interactive world map displaying the number of quail strains available by country. (B) List of quail strains together with a general description by country. (C) Detailed description of a specific quail strain (e.g. Tg(hUbC:memGFP)). (D) Quail genome browser displaying genomic information and location of a queried gene (e.g. FGF8). (E) Information associated with a queried gene (e.g. FGF8).\n\n### Gene and genomic information\n\nThe Quail Genome Consortium has recently obtained high quality genomic data, assembled and submitted for annotation at NCBI and Ensembl (Morris et al., 2019). This is a critically important step for the future design of genome engineering technologies in this organism, such as the Crispr-Cas9-based gene knockout and knock-in. QuailNet has been fitted with a gene search feature, which provides useful information such as gene models, curated coding sequences (not available elsewhere) and a genomic browser (Figure 5D,E). Furthermore, each result page embeds a link to the protocol for designing efficient Crispr-Cas9-mediated gene knock-out based on our own recent experience (Morin et al., 2017; V\u00e9ron et al., 2015) and a link to the ChopChop (Labun et al., 2019) website that we found helpful and user-friendly for the choice of gRNAs sequences.\n\n### Additional resources\n\nAs an aid to transgenic quail research, QuailNet integrates various resources:\n\nAltogether these genomic, molecular genetics, and bioinformatics resources aim at elevating the quail to the rank of genetic laboratory animal model of reference for avians.\n\n## Discussion\n\nThe avian animal model has been historically important in various areas of biomedical research and in particular in the developmental biology field. The easy access to the embryo has fostered the development of a highly diverse range of techniques to track cells, manipulate their environment and modulate their gene function that, combined with in vivo time-lapse imaging, has brought crucial insights into many dynamic biological processes. However, the somewhat technically demanding aspects of those techniques have hampered their widespread use by many laboratories. The possibility to easily generate genetically modified bird lines would represent a game changer in the field that may incite established researchers and newcomers alike to consider using genome engineering in birds to address their questions. While the generation of transgenic quails using lentiviruses has met very significant successes, we believe that the technique of liposome-mediated PGC transfection that we describe in this report, with its simplicity, efficacy and extended possibilities of diversifications, will serve as a landmark in the use of quail as an economic alternative to others vertebrate models. In the lines generated here, the size of the transgenic DNA constructs inserted between the two Tol2 sites ranged from 3 kb for the Kaede photoconvertible line to 7.5 kb for the MLC muscle specific line. This flexibility thus allows the design of complex constructs and the use of large tissue-specific promoters that would be nearly impossible to accommodate in lentiviruses.\n\nThe website we have generated completes this technical advance and provides a wealth of information and resources that should significantly help future developments of the technology, including for the targeted insertion (knock-in) of foreign DNA into the quail genome.\n\nA significant step to promote genetic approaches in avian is the recent creation of a quail transgenic facility (MQTF)\u00a0at Monash University, where the quail lines described in this report were established and novel technologies are being developed at present. At MQTF (see link to website on QuailNet), transgenic birds can be made-to-order for avian researchers around the world. The worldwide availability of existing and future quail lines is currently addressed and details about this can be found in the QuailNet website. It is our belief that the creation of this facility constitutes the cornerstone of a network of future avian facilities that will strengthen our community and attract new generations of researchers across fields to one of the most versatile experimental systems there is.\n\n## Materials and methods\n\n### Generating transgenic quail by direct injection\n\nThe direct injection technique is performed as described in Tyack et al., 2013. Plasmid DNA was purified using Nucleobond Xtra Midi EF kit. Injection mix contained 0.6 \u03bcg of Tol2 plasmid, 1.2 \u03bcg of CAG Transposase plasmid, 3 \u03bcl of Lipofectamine 2000 CD (ThermoFisher Scientific) in 90 \u03bcl of OptiPro transfection medium. 1 \u03bcl of injection mix was injected in the dorsal aorta of 2.5-day-old embryos. After injection, eggs were sealed and incubated until hatching. Chicks were grown for 6 weeks until they reached sexual maturity. Semen from the male was collected using a female teaser and massage technic as described in Che\u0142mo\u0144ska et al., 2008. In short, the foam produced by the male cloacal gland was first emptied by pressing the gland. The male was then introduced in a cage, which already contained a female. When the male was ready to mate, it was taken out, turned on its back and a massage of the cloaca led to the expulsion of semen that was collected. Genomic DNA from semen was extracted and PCR was performed to test for the presence of the transgene. Males showing a positive band were kept and crossed with wild type females. F1 offsprings were selected directly after hatching using UV goggles if expression of the transgene was readily visible in newly hatched chicks or by genotyping 5 days after hatching by plucking a feather.\n\n### Expression constructs\n\nThe T2(CAG:NLS-mCherry-IRES-GFP-CAAX) has been described previously (Sieiro-Mosti et al., 2014). The T2(CAG:Kaede) was constructed by cloning the Kaede fluorescent protein (Ando et al., 2002) into a the T2(CAG) expression vector. The T2(Mmu.MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry,Gga.CRYBB1:GFP) was made by combining two constructs. The first is the mouse Myosin Light chain MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry, described in Sieiro-Mosti et al., 2014. The second was made by PCR amplification from chicken genomic DNA of a 462bp-long promoter region of the chicken CRYBB1 gene (Duncan et al., 1995). As indicated in Figure 2H, both constructs are cloned in a head-to-tail configuration as we observed that this minimizes interferences between promoters.\n\n### Section, immunochemistry and confocal analysis\n\nTransgenic embryos were dissected and fixed for 1 hr in 4% formaldehyde. For cryostat section, embryos were embedded in 15% sucrose/7.5% gelatine/PBS solution and sectioned at 20 \u03bcm slices. The following antibodies were used: anti-GFP chicken polyclonal (Abcam), anti-RFP rabbit polyclonal (Abcam), anti-Pax7 IgG1 mouse monoclonal (Developmental Studies Hybridoma Bank), anti-Vasa (gift from Dr Craig Smith laboratory). Stained sections were examined using a Leica SP5 confocal microscope 40x lens oil immersion and images were analyzed with an Imaris software suite.\n\n### Quail lens electroporation\n\nLens electroporation were performed as described in Chen et al., 2004. Plasmids were electroporated at 1 \u00b5g/\u00b5l final concentration in the electroporation mix. Lens electroporation were performed in 2-day-old embryos (HH12) by positioning the electrodes to target the lens. Embryos were re-incubated at 38\u00b0C for 24 hr.\n\n### Embryo clearing, staining and imaging\n\nEmbryo preparation for whole mount immunostaining and 3DISCO clearing was performed as described in Belle et al., 2017. Imaging of stained embryos was performed (for the E3 quail embryo) on a Zeiss Lightsheet Z1 microscope equipped with 5X Plan-Neofluar objectives and (for the E6 quail wing) on LaVision Biotec Ultramicroscope II. Image rendering was performed with an Arivis software suite. The following antibodies were used: anti-GFP chicken polyclonal (Abcam), anti-RFP mouse IgG1 monoclonal (Abcam), anti HNK1 mouse IgM monoclonal (Developmental Studies Hybridoma Bank).\n\n### Time lapse imaging\n\nLive imaging was performed in ovo using a custom-made egg incubator designed for live observation as described in quailDB (http://quailnet.geneticsandbioinformatics.eu/). The transgenic quail eggs were carefully placed in a stainless-steel cup without damaging the egg yolk. Embryo turn to the top and the stainless-steel cup is filled up with egg white. A CultFoil 25\u00a0\u03bcm Teflon membrane (Zeiss, allowing gas exchange and avoiding dehydration) was placed over the embryo. The stainless- steel cup is then placed on a heat pad, which maintains the temperature of the embryo at 38\u00b0C. Embryos were imaged using a Leica Thunder Imager Model Organism (Videos 1 and 2) or under a Leica SP8 confocal upright (Videos 3 and 4).\n\n### Nomenclature\n\nWe propose to describe the quail transgenic lines we generated according to the nomenclature conventions described in the ZFIN zebrafish website (https://wiki.zfin.org/display/general/ZFIN+Zebrafish+Nomenclature+Conventions). For instance, in the line TgT2(Mmu.MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry,Gga.CRYBB1:GFP), Tg denotes transgenic, T2 denotes the Tol2 transposons, Mmu and Gga denotes the species of origin of the two promoters used in the transgene (Mmu\u00a0=\u00a0Mus musculus Gga\u00a0=\u00a0Gallus gallus).\n",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "6b9189c5-d826-49c1-aafc-cfcff4ac4be2",
+      "submission_id": "a910546d-a004-4239-95b2-6bb7ea9e1388",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56312.sa1](https://doi.org/10.7554/eLife.56312.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript describes the generation of three new transgenic quail lines using a relatively simple lipofection method using transposon-based plasmids (previously described) in quail embryos in ovo, by injecting the corresponding DNAs in the dorsal aorta and targeting circulating primordial germ cells. The three transgenic lines include: an ubiquitous double fluorescent line, a Kaede-based photoconvertible line and a skeletal muscle-specific line. The manuscript also describes the generation of a webpage (the Quail net Project) where different quail transgenic lines generated by different groups are listed together with direct access to curated quail sequences and other resources. In summary, it provides the avian community with new potent tools and encourage the use of quail as a solid genetic model.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Transgenesis and web resources in quail\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Marianne Bronner as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Claudio D Stern (Reviewer #1); Cornelis Weijer (Reviewer #2); Aixa Victoria Morales (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and they all were enthusiastic about the resource. However, they point out areas in which the manuscript would require further information and clarification, all of which I believe can be achieved by textual changes. I refer you to the complete reviews below for details. Given the current world situation, we will give authors as much time as they need to submit revised manuscripts.\n\nReviewer #1:\n\nThis is a very nice paper submitted as a \"Tools and Resources\" type of paper. It reports a very simple method for generating transgenic quails. The method consists of just injecting a mixture of the plasmid together with lipofectamine into the circulating blood stream of quail embryos at about E2.5, where the construct transfects some of the circulating primordial germ cells (PGCs). An elegant feature is a transgene that drives GFP expression in the lens (based on an enhancer of the crystallin gene) which allows quick and easy identification of transgenic animals in F2 for crossing and generating stable lines. The efficiency of transgenesis appears to be very high and the method lends itself to knock-in and knock-out methods for example by using CRISPR-Cas9 technology in combination with this transfection method. In principle this technique should be easily achievable in any lab with access to animal house facilities that can maintain quails (which need relatively little space and reach sexual maturity quickly). In the paper, several transgenic lines are generated including a nuclear RFP + membrane GFP double transgenic, a photoconvertible Kaede line for cell tracing, and a reporter for muscle. Examples of time-lapse films and 3d confocal imaging illustrate the usefulness of some of these for high resolution imaging and a variety of experiments. Finally the paper reports a set of online resources integrated with other existing databases, including a repository of available transgenic lines, a genome browser and other features.\n\nOverall the paper is very well written and very nicely illustrated. I have no substantial comments to make and I feel that the paper can be published essentially \"as is\", without the need for revision.\n\nReviewer #2:\n\nIn this paper it is shown that the in vivo transformation of primordial germ cells developed in chick can be adapted to quail. This makes it due to its short 6 week lifecycle and small size highly suitable for avian transgenesis experiments. The transgenesis efficiency (~1%) is manageable, especially when combined with rapid screening techniques, including such as the here developed eye lens specific crystallGFP. The authors describe the generation of three novel transgenic quail lines, a membraneGFP and nuclear RFP marker (TgT2(CAG:NLS-mCherry-IRES-GFP-CAAX)), a muscle specific marker using the promoter of the alkali myosin light chain (TgT2(Mmu.MLC1F/3F:GFP-CAAX-IRES-NLS-mCherry,Gga.CRYBB1:GFP)) as well as photo-convertable GFP line (TgT2(CAG:Kaede)).\n\nThe paper concludes with a section outlining a web resource bundling some key information concerning quail related research (transgenic lines, genomics, expression and anatomy databases as well as some tools), which useful, however see comments below\n\nThe paper is mainly a method/resource paper, it is clearly written and the methods/observations are well supported and documented. The videos are an effective addition to the figures and text. The information will be of great value to the community.\n\nPoints that would be helpful to address in more detail are:\n\nAssuming that it may prove difficult for most researchers to set up their own quail colonies and long distance shipping may not be a realistic option, effective use of these transgenic lines will require availability through a local providers. It would be useful to outline whether this is/can be addressed.\n\nThe website at the moment primarily summarises the currently existing transgenic quail lines and some novel information on anatomy. It furthermore bundles other web resources (genomics, expression studies etc., some links not active).\n\nIn order to extend this to a real community resource it will be critical to know how it is going to be maintained and updated in the longer term. Can data be provided to the anatomy section/Materials and methods section? How is this going to be curated? etc.\n\nReviewer #3:\n\nIn general, the manuscript is well written and clearly presented with beautiful and meaningful images and videos. However, there are some aspects that should be improved:\n\n1) The manuscript does not give any information concerning the number of the transgene copies that were inserted in each of the generated lines or how many separated F1 founders they were checking for each of the three transgenic lines described. It is not clear either, how stable will be the transgenic lines after several generations, as they only give data on the F2.\n\n2) The manuscript discuss poorly the transposon method they have used in relation to other methods such as lentivirus or adenovirus based method in relation to the efficiency of germline transmission. For instance, adenovirus mediated CRISPR/Cas9 mediated deletion has a transmission between 2.5 to 10% in a recent article by Lee et al., 2019, or in another recently lentivirus generated line, Ubiquitous expression of membrane tethered EGFP generated by one of the labs in the manuscript, rendered a transmission of 8% (Saadaoui et al., 2020).\n\n3) The authors should provide more details about the protocol for transgenesis: DNA quality purification, quail sperm obtaining, specific quail embryos clearing for 3DISCO.\n",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "99631250-7d68-4576-9d5e-655b9062c917",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C1",
+      "claim": "The chicken embryo has been one of the major animal models in biomedical research due to its amenability to manipulations, to live observation and its striking similarities to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its amenability to manipulations, to live observation and its striking similarities to mammals, the chicken embryo has been one of the major animal models in biomedical research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the chicken embryo's role in research, drawing from established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "c0c7ff46-6697-4bc0-81ce-bd925ccf0533",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C2",
+      "claim": "The chicken's long generation time (6 months to sexual maturity) makes it an impractical lab model and has prevented its widespread use in research.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is technically possible to genome-edit the chicken, its long generation time (6 months to sexual maturity) makes it an impractical lab model and has prevented it widespread use in research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the practical limitations of using chicken as a model organism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "67061ee0-efdc-441f-bd62-2e702a519e96",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C3",
+      "claim": "The Japanese quail (Coturnix coturnix japonica) has a much shorter generation time (1.5 months) compared to chicken.",
+      "claim_type": "EXPLICIT",
+      "source": "The Japanese quail (Coturnix coturnix japonica) is an attractive alternative, very similar to the chicken, but with the decisive asset of a much shorter generation time (1.5 months).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the generation time of Japanese quail, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "347dfe87-bdcc-447d-9879-6bf273cf265c",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C4",
+      "claim": "Most transgenic quail lines have been generated using replication-deficient lentiviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, transgenic quail lines have been described. Most of them were generated using replication-deficient lentiviruses, a technique that presents diverse limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methods used to generate transgenic quail lines, drawing from established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "972a8e62-fda5-403c-9ae6-82cb9a148648",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C5",
+      "claim": "A novel technology for transgenesis in quail is based on the in vivo transfection of plasmids in circulating Primordial Germ Cells (PGCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce a novel technology to perform transgenesis in quail, based on the in vivo transfection of plasmids in circulating Primordial Germ Cells (PGCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the manuscript, supported by the experimental data presented throughout the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "a97057d0-0795-4d0a-b049-adbcce3d991d",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C6",
+      "claim": "The plasmid-based transgenesis technique is simple, efficient and allows using the infinite variety of genome engineering approaches developed in other models.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique is simple, efficient and allows using the infinite variety of genome engineering approaches developed in other models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the properties of the technique, supported by the experimental results and comparisons made in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "7cdab383-7602-4fbb-be98-19819c1f7479",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C7",
+      "claim": "The chicken embryo has been at the origin of numerous seminal discoveries in diverse topics including immunology, genetics, virology, cancer, cell biology, and ethology.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the easy access of chicken embryos to manipulation, this model has been at the origin of numerous seminal discoveries in a diverse range of topics (e.g. immunology, genetics, virology, cancer, cell biology, ethology, etc.; Stern, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stern, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "4684bf7a-60da-4d87-9883-21d1c22040dd",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C8",
+      "claim": "By the time the egg is laid, the chicken embryo has already developed into a blastoderm of about 40,000\u201350,000 cells with the germ line lineage already set aside.",
+      "claim_type": "EXPLICIT",
+      "source": "By the time the egg is laid, the embryo has already developed into a blastoderm of about 40,000\u201350,000 cells with the germ line lineage already set aside (Eyal-Giladi and Kochav, 1976; Intarapat and Stern, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Eyal-Giladi and Kochav, 1976 and Intarapat and Stern, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "832c1b14-131d-4e5d-9c7e-1b47942148dd",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C9",
+      "claim": "Most researchers in avian genetics have focused their efforts on two distinct methods: the genetic manipulation of primordial germ cells (PGCs) in vitro, which are injected back into recipient embryos, or the direct infection of PGCs within the subgerminal cavity with replication-defective lentiviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this, most researchers in avian genetics have focused their efforts on two distinct methods (Nishijima and Iijima, 2013): i) the genetic manipulation of primordial germ cells (PGCs) in vitro, which are injected back into recipient embryos (Idoko-Akoh et al., 2018; Park et al., 2014; Taylor et al., 2017; van de Lavoir et al., 2006) or ii) the direct infection of PGCs within the subgerminal cavity with replication-defective lentiviruses (Bosselman et al., 1989; McGrew et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "118e4db2-5011-471c-bc52-fd010708cd7a",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C10",
+      "claim": "Transgenesis in chicken is impracticable within the timeframe of most research projects due to their long generation time (6 months to sexual maturity).",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to their long generation time (6 months to sexual maturity), transgenesis in chicken is impracticable within the timeframe of most research projects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the practical constraints of research timelines.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "4ead8b8b-aa08-47b6-a5b7-e265f8f5b66f",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C11",
+      "claim": "Transgenesis technology in chicken has not been widely used in basic research and its development has been mainly driven by industrial interests to produce biologically active pharmaceutical proteins in eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this technology has not been widely used in basic research and its development has been mainly driven by industrial interests to produce biologically active pharmaceutical proteins in eggs (Lillico et al., 2007; Nishijima and Iijima, 2013; Woodfint et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "f59f7eac-5a59-4bb9-b3df-71f9d269f67a",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C12",
+      "claim": "Quail and chicken share on average 95% homology at the gene sequence level.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, quail and chicken are close relatives (Order: Galliformes; Family: Phasianidae), they share on average 95% homology at the gene sequence level (GenBank) and quails are susceptible to most chicken diseases (Barnes, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to GenBank data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "ebe8a579-90f2-4ca0-8ef2-cd5c45cdc89a",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C13",
+      "claim": "Quails are susceptible to most chicken diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, quail and chicken are close relatives (Order: Galliformes; Family: Phasianidae), they share on average 95% homology at the gene sequence level (GenBank) and quails are susceptible to most chicken diseases (Barnes, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Barnes, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "4248b38a-3998-44c4-a50f-df5c4dffaa18",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C14",
+      "claim": "Quail lay about one egg per day, similar to chicken.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to chicken, quail lay about one egg per day, and their smaller size makes them more compatible with the frequently limited space of animal facilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about quail reproductive biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "dc21bf9b-3dc7-4ce9-9fd8-751265f4afac",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C15",
+      "claim": "Quail reach sexual maturity in 6 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "A decisive advantage of quail over chicken is that they reach sexual maturity in 6 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about quail development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "c53a05e6-ec18-4ec4-b514-b537a358f200",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C16",
+      "claim": "The life cycle of quail is significantly shorter than that of chicken (26 weeks), mice (8 weeks), or zebrafish (12 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, their life cycle is significantly shorter than that of chicken (26 weeks), but also of mice (8 weeks) or zebrafish (12 weeks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on established knowledge about the generation times of different model organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "77ec454e-731d-4422-a362-bced52ad5c7a",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C17",
+      "claim": "No reliable technique for the culture of quail PGCs has yet been described.",
+      "claim_type": "EXPLICIT",
+      "source": "As no reliable technique for the culture of quail PGCs has yet been described, transgenesis in this species has mainly relied on the infection of blastoderm stage embryos (or circulating Zhang et al., 2012) with lentiviruses carrying fluorescent markers under ubiquitous or tissue-specific promoters, leading in recent years to the generation of a few quail lines: ubiquitous (Huss et al., 2015; Zhang et al., 2012); neuronal (Scott and Lois, 2005; Seidl et al., 2013; adipose Ahn et al., 2015; intestinal Woodfint et al., 2017; endothelial Sato et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field, drawing from established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "24701a4c-d1d4-4077-bda3-32d52d21319e",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C18",
+      "claim": "A high titre of lentivirus is required to succeed at producing chimeric embryos carrying transgenic PGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A high titre of lentivirus is required to succeed at producing chimeric embryos carrying transgenic PGCs using this technique (Poynter and Lansford, 2008; Scott and Lois, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "2eb534d8-4681-4ee5-be56-517cbc22457b",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C19",
+      "claim": "A sharp drop in viral titre is observed with inserts above 4\u20135 kb, likely representing the upper limit of constructs that can be used to generate transgenic birds using lentiviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though large inserts (more than 10 kilobases) can theoretically be packaged using lentiviruses, a sharp drop in viral titre is observed with insert above 4\u20135 kb, likely representing the upper limit of constructs that can be used to generate transgenic birds (Kumar et al., 2001; our observation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kumar et al., 2001 and the authors' own observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "9d90ea57-9aa4-4584-aaf0-5993850bc50f",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C20",
+      "claim": "The first CRISPR/Cas9-mediated targeted gene knockout in quail was performed by direct infection of blastoderm cells using adenoviral vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "An important advance in the field was the recent use of adenoviral vectors to perform the first CRISPR/Cas9-mediated targeted gene knockout in quail by direct infection of blastoderm cells (Lee et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lee et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "a2ea7033-402d-4c09-80b1-cc4a5a3622cd",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C21",
+      "claim": "The direct in vivo transfection of PGCs with commercially available liposome-based transfection reagents has been successfully used to generate transgenic chicken lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct in vivo transfection of PGCs with commercially available liposome-based transfection reagents has recently been successfully used to generate transgenic chicken lines (Cooper et al., 2018b; Cooper et al., 2018a; Tyack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "0ba135aa-309c-4357-82ff-568ce0a1883f",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C22",
+      "claim": "DNA inserts up to a size of 11 kb can be cloned between Tol2 sequences with no visible loss of transposable efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Since DNA inserts up to a size of 11 kb can be cloned between Tol2 sequences with no visible loss of transposable efficiency (Kawakami, 2007) this allows using larger and/or more complex constructs than in viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kawakami, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "f1c508b4-57b8-4b50-b9ca-34b8b8c0d4fc",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C23",
+      "claim": "Transgenesis using the Tol2 transposon system leads to minimal epigenetic silencing during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Another advantage of transgenesis using the Tol2 transposon system is that it leads to minimal epigenetic silencing during development (Macdonald et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Macdonald et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "270b23fd-0339-4f78-88fa-f6a93d334c02",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C24",
+      "claim": "Three novel quail transgenic lines carrying fluorescent proteins under ubiquitous and tissue-specific promoters were generated using direct transfection of PGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used the direct transfection of PGCs in the bloodstream of quail embryos. We present three novel quail transgenic lines carrying fluorescent proteins under ubiquitous and tissue-specific promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main result of the manuscript, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "29144a72-45b7-4dff-8f44-985b2cb3bed0",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C25",
+      "claim": "A cassette containing the GFP protein driven by a promoter for Chick \u03b2B1-Crystallin makes the identification of transgenic animals possible at hatching by UV illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Illustrating the flexibility of the plasmid-based system, we integrated a cassette containing the GFP protein driven by a promoter for Chick \u03b2B1-Crystallin (Taube et al., 2002) making the identification of transgenic animals possible at hatching by UV illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and a citation to Taube et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "92022f34-799a-4fcc-b275-a8539e61f960",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C26",
+      "claim": "Chicken PGCs initially located at the end of gastrulation within the germinal crescent enter the extra-embryonic blood vessels at about 30 hr of incubation (E1.5, HH9) and begin to circulate throughout the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Chicken PGCs initially located at the end of gastrulation within the germinal crescent, enter the extra-embryonic blood vessels at about 30 hr of incubation (E1.5, HH9) and begin to circulate throughout the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about chicken PGC development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "14958345-bccf-490d-84f2-262b44e52a4c",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C27",
+      "claim": "The number of PGCs in the blood peaks around E2/2.5 (HH15-16).",
+      "claim_type": "EXPLICIT",
+      "source": "Their number in the blood peaks around E2/2.5 (HH15-16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about chicken PGC development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "c31738df-4924-410a-a4d0-e0e8f52ca2fc",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C28",
+      "claim": "By E3 (HH20), PGCs actively migrate back in the embryo and into the gonad anlagen.",
+      "claim_type": "EXPLICIT",
+      "source": "By E3 (HH20), PGCs actively migrate back in the embryo and into the gonad anlagen (Nakamura et al., 2007; Nieuwkoop and Sutasurya, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "b4714551-d760-498a-a1e6-8d29bf198166",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C29",
+      "claim": "The timing of injection of the transfection mix resulting in the colonization of fluorescent PGCs in quail is similar to that determined in chicken, at 2 days (E2) of quail embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the timing of injection of the transfection mix resulting in the colonization of fluorescent PGCs was similar to that determined in chicken, that is at 2 days (E2) of quail embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "6ab1b5c8-3b45-4329-bee9-9483bf476e4e",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C30",
+      "claim": "5 days after injection (at E7), gonads contained many fluorescent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 5 days after injection (at E7), we observed that gonads contained many fluorescent cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "15550b49-d8a7-4f56-bef2-e90428cafd8a",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C31",
+      "claim": "Fluorescent cells in the gonads were confirmed to be PGCs using whole-mount immunostaining with a PGC-specific marker VASA.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that these were PGCs using whole-mount immunostaining with a PGC-specific marker VASA (Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "f6d80db8-6532-46e0-8664-3e32f561c82e",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C32",
+      "claim": "A 462bp-long lens-specific promoter of the \u03b2B1crystallin gene (CRYBB1) was isolated from chicken genomic DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We isolated a 462bp-long lens-specific promoter of the \u03b2B1crystallin gene (CRYBB1; Duncan et al., 1995) from chicken genomic DNA and cloned it upstream of GFP to develop a selection mini-gene (CrystallGFP) based on lens expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure, supported by a citation to Duncan et al., 1995.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "aec89923-10b3-4b2c-9a85-aeeee7598ed1",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C33",
+      "claim": "The CrystallGFP mini gene is only 1.7 kb long and can be added to transgene constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "The CrystallGFP mini gene is only 1.7 kb long and can be added to transgene constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the size of the construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "abb56a88-e1da-4037-95b4-6b0c1d7d17f6",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C34",
+      "claim": "Only lens cells expressed GFP when the CrystallGFP construct was co-electroporated with a ubiquitously expressed RFP into the optic cup of a quail E3 embryo, showing the specificity of the \u03b2B1crystallin promoter for lens tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-four hours after electroporation, RFP-positive cells were found in the retina and lens (Figure 2B,D). However, only the lens cells expressed the GFP (Figure 2C,D), showing the specificity of the \u03b2B1crystallin promoter for lens tissues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "e35aed05-f7cf-4100-9ad6-1b2d2202091b",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C35",
+      "claim": "Transgenic quails carrying the CrystallGFP selection cassette display strong expression of GFP in all lens cells during embryogenesis and in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic quails carrying the CrystallGFP selection cassette display strong expression of GFP in all lens cells during embryogenesis (Figure 2E\u2013G) and in adults (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "77c628ff-1498-4e45-ba16-2cb909a507dc",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C36",
+      "claim": "About half of the injected eggs hatched in the transgenesis experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In this and other experiments described below, we have observed that about half of the (50) injected eggs hatched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "7e6208bb-c077-4cd0-8963-fbbe5d9a2b25",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C37",
+      "claim": "Three transgenic (F1) birds could be readily spotted at hatching by fluorescence screening thanks to the ubiquitously expressed GFP and mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "From these crosses, three transgenic (F1) birds could be readily spotted at hatching by fluorescence screening thanks to the ubiquitously expressed GFP and mCherry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "7fc9ca14-de4e-4e28-b797-3fb549f3d31f",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C38",
+      "claim": "About 1% of the offspring contain the transgene, an efficiency comparable to that observed in the chicken using the same technology.",
+      "claim_type": "EXPLICIT",
+      "source": "From this and other crosses we have performed in the laboratory (see below), we estimate that about 1% of the offspring contain the transgene, an efficiency comparable to that observed in the chicken using the same technology (Tyack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and a citation to Tyack et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "f1472d1e-63bb-4d60-9916-3366f51c351d",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C39",
+      "claim": "The membrane-bound GFP results in better resolution of cell membrane processes (protrusions, filopodia, etc.) than a cytoplasmic counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that the membrane-bound GFP results in a better resolution of cell membrane processes (protrusions, filopodia, etc.) than a cytoplasmic counterpart, while it also combines a nuclear mCherry, allowing accurate segmentation of cells necessary for automated image analyses such as for 3D cell tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "735455a5-9734-4679-afc8-602d9e05bd2f",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C40",
+      "claim": "Kaede undergoes irreversible photoconversion from green to red fluorescence upon irradiation with ultraviolet light.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon irradiation with ultraviolet light, Kaede undergoes irreversible photoconversion from green to red fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the properties of Kaede protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "3c13b2f6-a19f-4a04-899d-005fc8580d83",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C41",
+      "claim": "Three F1 founders of the TgT2(CAG:Kaede) line were obtained in which strong and ubiquitous expression of the photoconvertible fluorescent protein is observed in adult and in developing embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Three F1 founders were obtained in which strong and ubiquitous expression of the photoconvertible fluorescent protein is observed in adult (Figure 3A) and in developing embryos (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "bd80a61c-9ce1-4855-8f79-6fdf75ef47dd",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C42",
+      "claim": "The long half-life of the photoconverted Kaede results in red fluorescence that can be detected up to 48 hr after photoconversion.",
+      "claim_type": "EXPLICIT",
+      "source": "The long half-life of the photoconverted Kaede results in red fluorescence that can be detected up to 48 hr after photoconversion (Tomura et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tomura et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "bd849713-1d83-4e7b-ac73-43178b6c54a4",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C43",
+      "claim": "The TgT2(CAG:Kaede) quail line is the first avian line carrying a photoconvertible fluorescent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This quail line is the first avian line carrying a photoconvertible fluorescent protein and it should be extremely useful to perform short to medium-term lineage tracing of cells as development proceeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the line, based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "dacfab23-3ceb-4fe5-81ef-1678f5039671",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C44",
+      "claim": "A muscle-specific promoter was designed based on a synthetic reporter derived from the MLC1F/3F gene regulatory sequences previously utilized for mouse transgenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed a muscle-specific promoter, based on a synthetic reporter derived from the MLC1F/3F gene regulatory sequences previously utilized for mouse transgenesis (3F-nlacZ-E; Kelly et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design, supported by a citation to Kelly et al., 1995.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "98edc2c8-08d1-491e-ae3e-e319c1bef6e5",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C45",
+      "claim": "The muscle-specific promoter contains a 2 kb sequence located 5' and 3' of the MLC3F transcriptional start site together with a 260 bp enhancer sequences from the 3' UTR region of the MLC3F gene.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains a 2 kb sequence located 5' and 3' of the MLC3F transcriptional start site together with a 260 bp enhancer sequences from the 3' UTR region of the MLC3F gene, necessary for the high level of transcription in muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the construct design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "9737f044-829a-4a64-8c9a-93fbee1874d7",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C46",
+      "claim": "The MLC construct was shown to drive strong LacZ expression in all (head and body) striated muscles from the early steps of myogenesis in somites of mouse embryos throughout embryogenesis, as well as in all skeletal muscles of the foetus and in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct was shown to drive strong LacZ expression in all (head and body) striated muscles from the early steps of myogenesis in somites of mouse embryos throughout embryogenesis, as well as in all skeletal muscles of the foetus and in the adult (Kelly et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kelly et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "676388e6-3be8-4f96-a596-de327e6f6f30",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C47",
+      "claim": "From 242 chicks that hatched, 3 transgenic F1 founders (1 male and 2 females, that is 1.2% efficiency) were selected for the muscle-specific line.",
+      "claim_type": "EXPLICIT",
+      "source": "F0 founder males were crossed with females and from 242 chicks that hatched, 3 transgenic F1 founders (1 male and 2 females, that is 1.2% efficiency) were selected, based on the expression of GFP in the lens (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "15371a76-d4c7-4ff8-b671-f1556ca32668",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C48",
+      "claim": "The GFP and RFP reporters were expressed in all (i.e. head, trunk and limb) skeletal muscles of the developing embryo in the muscle-specific line.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFP and RFP reporters were expressed in all (i.e. head, trunk and limb) skeletal muscles of the developing embryo (Figure 4I\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "c4485624-c68a-45a1-adb9-87b5c3864c9a",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C49",
+      "claim": "The first sign of mCherry expression was detected within the transition zone (TZ), where MYF5-expressing cells emanating from the medial border from the overlying dermomyotome translocate and extend along the antero-posterior axis of the embryo to form myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the first sign of mCherry expression was detected within the transition zone (TZ; Figure 4E\u2013H), where MYF5-expressing cells emanating from the medial border from the overlying dermomyotome translocate and extend along the antero-posterior axis of the embryo to form myocytes (Gros et al., 2009; Gros et al., 2004; Rios et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4 and citations to relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "1b71b6e2-3ef3-438d-bc4e-ab56834d7a6b",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C50",
+      "claim": "MLC drives expression of the reporter genes from the early stages of myogenesis in myogenin-expressing, terminally differentiating myogenic cells within the TZ.",
+      "claim_type": "EXPLICIT",
+      "source": "This is coherent with a recent characterization of the MLC promoter we have done using in vivo electroporation in the chicken and where we found that its activity is initiated in myogenin-expressing, terminally differentiating myogenic cells within the TZ (Sieiro et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sieiro et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "bf114b14-4a9f-411f-96f9-fab89e12f1b9",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C51",
+      "claim": "MLC remains active in terminally differentiated myofibres, similar to what had been observed in 3F-nlacZ-E mouse embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains active in terminally differentiated myofibres, similar to what had been observed in 3F-nlacZ-E mouse embryos (Kelly et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and a citation to Kelly et al., 1995.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "851e0ca1-32ba-45fb-adf8-8d76b663d269",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C52",
+      "claim": "In contrast to the 3F-nlacZ-E mouse line where expression of LacZ was observed in non-skeletal tissues (brain, optic vesicle and heart), the transgene was not detected in those tissues in the transgenic quails, suggesting a more rigorous restriction to the skeletal muscle lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this mouse line, where the expression of LacZ was observed in non-skeletal tissues (brain, optic vesicle and heart; Kelly et al., 1995), we did not detect the transgene in those tissues in the transgenic quails we analyzed, suggesting a more rigorous restriction to the skeletal muscle lineage, an observation previously made in the chicken (McGrew et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to Kelly et al., 1995 and McGrew et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "d93711a6-b4ac-418a-ac4d-27d38abba97c",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C53",
+      "claim": "A website was created in which existing and future quail lines will be listed at http://quailnet.geneticsandbioinformatics.eu/.",
+      "claim_type": "EXPLICIT",
+      "source": "To foster collaborative work in the avian community, we created a website in which existing and future quail lines will be listed (http://quailnet.geneticsandbioinformatics.eu/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the creation of a resource.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "6c6ce008-9a06-4eea-8888-bed5345dd38b",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C54",
+      "claim": "A total of 24 lines are currently listed on the website, comprising three transgenic lines generated using the transposon-based method, seven transgenic lines generated using the lentiviral-based method, 7 quail mutant lines and 7 strains obtained through breeding-selection programs.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, a total of 24 lines are listed, comprising three transgenic lines generated using the transposon-based method (this report), seven transgenic lines generated using the lentiviral-based method (Huss et al., 2015; Moreau et al., 2019; Saadaoui et al., 2020; Sato et al., 2010; Seidl et al., 2013), 7 quail mutant lines and 7 strains obtained through breeding-selection programs (See Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a factual statement about the content of the website, supported by citations and Figure 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "fdbadea3-cecc-4d2c-8836-a579aaf393c4",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C55",
+      "claim": "The Quail Genome Consortium has recently obtained high quality genomic data, assembled and submitted for annotation at NCBI and Ensembl.",
+      "claim_type": "EXPLICIT",
+      "source": "The Quail Genome Consortium has recently obtained high quality genomic data, assembled and submitted for annotation at NCBI and Ensembl (Morris et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Morris et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "d8f9265d-e605-4b3d-a9c3-adf6c4a2aa98",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C56",
+      "claim": "Quail develop slightly faster than chicken (17\u201318 days for quails; 21 days for chicken).",
+      "claim_type": "EXPLICIT",
+      "source": "Quail develop slightly faster than chicken (17\u201318 days for quails; 21 days for chicken).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about quail and chicken development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "dbff8540-907d-4dd1-9de2-680ea8a05611",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C57",
+      "claim": "In the lines generated, the size of the transgenic DNA constructs inserted between the two Tol2 sites ranged from 3 kb for the Kaede photoconvertible line to 7.5 kb for the MLC muscle specific line.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lines generated here, the size of the transgenic DNA constructs inserted between the two Tol2 sites ranged from 3 kb for the Kaede photoconvertible line to 7.5 kb for the MLC muscle specific line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the constructs used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "563c1c71-9b8b-4654-830a-c8ccac0f913b",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "claim_id": "C58",
+      "claim": "A quail transgenic facility (MQTF) was recently created at Monash University, where the quail lines described in this report were established and novel technologies are being developed.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant step to promote genetic approaches in avian is the recent creation of a quail transgenic facility (MQTF) at Monash University, where the quail lines described in this report were established and novel technologies are being developed at present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the creation of a facility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c5926e94-74da-46cd-b5d4-1c245abd2b85",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully adapted a plasmid-based PGC transfection method to generate transgenic quail lines. They demonstrated that direct in vivo transfection of circulating PGCs at E2 with Tol2 transposon constructs results in fluorescent PGCs colonizing the gonads by E7, confirmed by VASA immunostaining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C24, C29-C31 provide converging experimental evidence showing successful PGC transfection in quail. The timing (C29), gonadal colonization (C30), and PGC identity confirmation via VASA staining (C31) collectively support the core technical achievement. Figure 1 provides visual evidence of fluorescent PGCs in gonads.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "efa94103-0dd2-4b45-b088-6e9b2e797a80",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A lens-specific selection marker (CrystallGFP) was developed using a 462bp chicken \u03b2B1-crystallin promoter driving GFP expression. This 1.7kb cassette enables identification of transgenic birds at hatching via UV illumination and shows specific expression in lens tissue both during embryogenesis and in adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 demonstrate the development and validation of the CrystallGFP marker. Electroporation experiments (C34) confirm lens specificity, and transgenic animals show expected expression patterns (C35). Figure 2 provides supporting visual evidence. This is a useful technical innovation but secondary to the main transgenesis method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "ad26a404-d0a6-4814-a4c9-c240ad40087d",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The transgenesis efficiency in quail is approximately 1% of offspring, with about 50% of injected eggs hatching. Three transgenic F1 birds were identified from crosses of F0 founders, demonstrating germline transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 provide quantitative data on transgenesis efficiency. The ~1% efficiency (C38) is explicitly compared to chicken using the same method (citing Tyack et al., 2013), providing appropriate context. However, the sample sizes are relatively small and statistical measures are not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "3f014881-a258-4c4d-94d2-78c098d8c7f4",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The membrane-bound GFP (GFP-CAAX) provides superior resolution of cell membrane processes compared to cytoplasmic GFP, while the nuclear mCherry enables accurate cell segmentation for automated image analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C39 makes a comparative assertion about image quality but provides no quantitative comparison, side-by-side images, or systematic evaluation. While the observation may be valid, it lacks the rigorous comparison needed to support the claim definitively. Videos 1-2 show the utility but not a direct comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "81e4a609-16df-473a-a8af-890507133892",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A transgenic quail line expressing photoconvertible Kaede protein ubiquitously was generated, representing the first avian line with this capability. The photoconverted red fluorescence persists for up to 48 hours, enabling short to medium-term lineage tracing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 describe the Kaede line generation and properties. C40 and C42 cite established knowledge about Kaede. C41 provides experimental evidence of successful line generation (Figure 3). C43's claim of being the \"first avian line\" is supported by the authors' knowledge of the field, though no systematic literature review is provided. Figure 3 and Video 3 demonstrate neural crest cell tracking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A muscle-specific transgenic quail line was generated using a mouse MLC1F/3F promoter construct. The line shows expression in all skeletal muscles from early myogenesis (transition zone) through terminal differentiation, with more restricted tissue specificity than the equivalent mouse line.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C52 comprehensively describe the muscle-specific line. The promoter design (C44-C45) is based on established mouse work (C46). Experimental data (C47-C49, Figure 4) demonstrate expected expression patterns. The comparison to mouse (C52) showing more restricted expression is supported by data and citations. The 1.2% efficiency (C47) is consistent with other lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "4439f46c-88d4-47a3-9ba2-f2f1facb5155",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Tol2 transposon system accommodates constructs ranging from 3 kb (Kaede line) to 7.5 kb (MLC muscle line) in the generated transgenic quail lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 provides factual information about construct sizes used successfully in this study. This is consistent with the cited capacity of Tol2 (C22: up to 11 kb), demonstrating practical flexibility of the system. This supports the authors' argument about advantages over lentiviral methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "bc6af945-d7f8-43a5-8f5c-51aeabfe0dc0",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A community website (QuailNet) was created to catalog quail lines and resources, currently listing 24 lines including the three transposon-based lines from this study. The site integrates recently sequenced quail genome data for research planning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 describe the creation and content of a community resource. C54 provides specific numbers of listed lines with appropriate citations. C55 references the quail genome consortium work (Morris et al., 2019). Figure 5 shows screenshots of the website functionality. This is a valuable community resource but not a primary research finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "836a9f36-ea2a-4f29-b0a8-cd826818dbb4",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A quail transgenic facility (MQTF) was established at Monash University where the reported lines were generated and new technologies are being developed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is a factual statement about facility creation. While important for the field, this is an infrastructure announcement rather than a scientific result. No evaluation of facility capabilities or output is provided beyond the lines described in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "9dc75916-e099-4f75-85fb-a5c9bb7d2afd",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Quail has a significantly shorter generation time (6 weeks to sexual maturity) compared to chicken (26 weeks), mice (8 weeks), and zebrafish (12 weeks), making it more practical for transgenic research than chicken.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C10, C15, C16 establish the rationale for using quail over chicken. The generation times cited are established knowledge in the field. However, C16 contains an error: quail at 6 weeks is actually faster than mice (8 weeks) and zebrafish (12 weeks), contradicting the claim that quail is \"significantly shorter\" than these species. The comparison to chicken is valid.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "3cd7c8d3-b3b3-4a8f-af00-16f90a4c490a",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Existing lentiviral-based transgenesis methods in quail have limitations including the requirement for high viral titers and a practical insert size limit of 4-5 kb due to drops in viral titer with larger constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17-C19 describe limitations of existing methods, providing context for the new approach. C18-C19 are supported by citations (Kumar et al., 2001; Poynter and Lansford, 2008; Scott and Lois, 2005) and the authors' observations. This establishes the need for alternative methods but is background rather than a primary result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "8261188c-7b7c-44e2-8175-4a40cf667cff",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The plasmid-based Tol2 transposon system is simple, efficient, allows constructs up to 11 kb, and leads to minimal epigenetic silencing compared to viral methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C6 asserts the technique is \"simple\" and \"efficient\" but provides limited quantitative support. C22-C23 cite advantages from other systems (Kawakami, 2007; Macdonald et al., 2012) but don't directly demonstrate these properties in quail. The ~1% efficiency (C38) is comparable to chicken but no direct comparison to lentiviral methods in quail is provided. Claims about simplicity are subjective without comparative workflow analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    },
+    {
+      "id": "4abb7e33-3a62-4e9b-96e7-d36c3b50c355",
+      "content_id": "aab95264-51ab-4f0e-aaaa-e61810e88beb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Direct in vivo transfection of PGCs with liposome-based reagents has been successfully used to generate transgenic chicken lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 describes prior work in chicken (Cooper et al., 2018a,b; Tyack et al., 2013) that forms the basis for the quail method. This is appropriately cited background information establishing the precedent for the approach adapted to quail.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:38.130640Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "972a8e62-fda5-403c-9ae6-82cb9a148648",
+      "result_id": "c5926e94-74da-46cd-b5d4-1c245abd2b85"
+    },
+    {
+      "claim_id": "270b23fd-0339-4f78-88fa-f6a93d334c02",
+      "result_id": "c5926e94-74da-46cd-b5d4-1c245abd2b85"
+    },
+    {
+      "claim_id": "b4714551-d760-498a-a1e6-8d29bf198166",
+      "result_id": "c5926e94-74da-46cd-b5d4-1c245abd2b85"
+    },
+    {
+      "claim_id": "6ab1b5c8-3b45-4329-bee9-9483bf476e4e",
+      "result_id": "c5926e94-74da-46cd-b5d4-1c245abd2b85"
+    },
+    {
+      "claim_id": "15550b49-d8a7-4f56-bef2-e90428cafd8a",
+      "result_id": "c5926e94-74da-46cd-b5d4-1c245abd2b85"
+    },
+    {
+      "claim_id": "29144a72-45b7-4dff-8f44-985b2cb3bed0",
+      "result_id": "efa94103-0dd2-4b45-b088-6e9b2e797a80"
+    },
+    {
+      "claim_id": "f6d80db8-6532-46e0-8664-3e32f561c82e",
+      "result_id": "efa94103-0dd2-4b45-b088-6e9b2e797a80"
+    },
+    {
+      "claim_id": "aec89923-10b3-4b2c-9a85-aeeee7598ed1",
+      "result_id": "efa94103-0dd2-4b45-b088-6e9b2e797a80"
+    },
+    {
+      "claim_id": "abb56a88-e1da-4037-95b4-6b0c1d7d17f6",
+      "result_id": "efa94103-0dd2-4b45-b088-6e9b2e797a80"
+    },
+    {
+      "claim_id": "e35aed05-f7cf-4100-9ad6-1b2d2202091b",
+      "result_id": "efa94103-0dd2-4b45-b088-6e9b2e797a80"
+    },
+    {
+      "claim_id": "77c628ff-1498-4e45-ba16-2cb909a507dc",
+      "result_id": "ad26a404-d0a6-4814-a4c9-c240ad40087d"
+    },
+    {
+      "claim_id": "7e6208bb-c077-4cd0-8963-fbbe5d9a2b25",
+      "result_id": "ad26a404-d0a6-4814-a4c9-c240ad40087d"
+    },
+    {
+      "claim_id": "7fc9ca14-de4e-4e28-b797-3fb549f3d31f",
+      "result_id": "ad26a404-d0a6-4814-a4c9-c240ad40087d"
+    },
+    {
+      "claim_id": "f1472d1e-63bb-4d60-9916-3366f51c351d",
+      "result_id": "3f014881-a258-4c4d-94d2-78c098d8c7f4"
+    },
+    {
+      "claim_id": "735455a5-9734-4679-afc8-602d9e05bd2f",
+      "result_id": "81e4a609-16df-473a-a8af-890507133892"
+    },
+    {
+      "claim_id": "3c13b2f6-a19f-4a04-899d-005fc8580d83",
+      "result_id": "81e4a609-16df-473a-a8af-890507133892"
+    },
+    {
+      "claim_id": "bd80a61c-9ce1-4855-8f79-6fdf75ef47dd",
+      "result_id": "81e4a609-16df-473a-a8af-890507133892"
+    },
+    {
+      "claim_id": "bd849713-1d83-4e7b-ac73-43178b6c54a4",
+      "result_id": "81e4a609-16df-473a-a8af-890507133892"
+    },
+    {
+      "claim_id": "dacfab23-3ceb-4fe5-81ef-1678f5039671",
+      "result_id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc"
+    },
+    {
+      "claim_id": "98edc2c8-08d1-491e-ae3e-e319c1bef6e5",
+      "result_id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc"
+    },
+    {
+      "claim_id": "9737f044-829a-4a64-8c9a-93fbee1874d7",
+      "result_id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc"
+    },
+    {
+      "claim_id": "676388e6-3be8-4f96-a596-de327e6f6f30",
+      "result_id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc"
+    },
+    {
+      "claim_id": "15371a76-d4c7-4ff8-b671-f1556ca32668",
+      "result_id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc"
+    },
+    {
+      "claim_id": "c4485624-c68a-45a1-adb9-87b5c3864c9a",
+      "result_id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc"
+    },
+    {
+      "claim_id": "1b71b6e2-3ef3-438d-bc4e-ab56834d7a6b",
+      "result_id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc"
+    },
+    {
+      "claim_id": "bf114b14-4a9f-411f-96f9-fab89e12f1b9",
+      "result_id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc"
+    },
+    {
+      "claim_id": "851e0ca1-32ba-45fb-adf8-8d76b663d269",
+      "result_id": "a2a9c0fd-51e6-40b2-818f-ec47b01cf3fc"
+    },
+    {
+      "claim_id": "dbff8540-907d-4dd1-9de2-680ea8a05611",
+      "result_id": "4439f46c-88d4-47a3-9ba2-f2f1facb5155"
+    },
+    {
+      "claim_id": "d93711a6-b4ac-418a-ac4d-27d38abba97c",
+      "result_id": "bc6af945-d7f8-43a5-8f5c-51aeabfe0dc0"
+    },
+    {
+      "claim_id": "6c6ce008-9a06-4eea-8888-bed5345dd38b",
+      "result_id": "bc6af945-d7f8-43a5-8f5c-51aeabfe0dc0"
+    },
+    {
+      "claim_id": "fdbadea3-cecc-4d2c-8836-a579aaf393c4",
+      "result_id": "bc6af945-d7f8-43a5-8f5c-51aeabfe0dc0"
+    },
+    {
+      "claim_id": "563c1c71-9b8b-4654-830a-c8ccac0f913b",
+      "result_id": "836a9f36-ea2a-4f29-b0a8-cd826818dbb4"
+    },
+    {
+      "claim_id": "c0c7ff46-6697-4bc0-81ce-bd925ccf0533",
+      "result_id": "9dc75916-e099-4f75-85fb-a5c9bb7d2afd"
+    },
+    {
+      "claim_id": "67061ee0-efdc-441f-bd62-2e702a519e96",
+      "result_id": "9dc75916-e099-4f75-85fb-a5c9bb7d2afd"
+    },
+    {
+      "claim_id": "118e4db2-5011-471c-bc52-fd010708cd7a",
+      "result_id": "9dc75916-e099-4f75-85fb-a5c9bb7d2afd"
+    },
+    {
+      "claim_id": "dc21bf9b-3dc7-4ce9-9fd8-751265f4afac",
+      "result_id": "9dc75916-e099-4f75-85fb-a5c9bb7d2afd"
+    },
+    {
+      "claim_id": "c53a05e6-ec18-4ec4-b514-b537a358f200",
+      "result_id": "9dc75916-e099-4f75-85fb-a5c9bb7d2afd"
+    },
+    {
+      "claim_id": "347dfe87-bdcc-447d-9879-6bf273cf265c",
+      "result_id": "3cd7c8d3-b3b3-4a8f-af00-16f90a4c490a"
+    },
+    {
+      "claim_id": "77ec454e-731d-4422-a362-bced52ad5c7a",
+      "result_id": "3cd7c8d3-b3b3-4a8f-af00-16f90a4c490a"
+    },
+    {
+      "claim_id": "24701a4c-d1d4-4077-bda3-32d52d21319e",
+      "result_id": "3cd7c8d3-b3b3-4a8f-af00-16f90a4c490a"
+    },
+    {
+      "claim_id": "2eb534d8-4681-4ee5-be56-517cbc22457b",
+      "result_id": "3cd7c8d3-b3b3-4a8f-af00-16f90a4c490a"
+    },
+    {
+      "claim_id": "a97057d0-0795-4d0a-b049-adbcce3d991d",
+      "result_id": "8261188c-7b7c-44e2-8175-4a40cf667cff"
+    },
+    {
+      "claim_id": "0ba135aa-309c-4357-82ff-568ce0a1883f",
+      "result_id": "8261188c-7b7c-44e2-8175-4a40cf667cff"
+    },
+    {
+      "claim_id": "f1c508b4-57b8-4b50-b9ca-34b8b8c0d4fc",
+      "result_id": "8261188c-7b7c-44e2-8175-4a40cf667cff"
+    },
+    {
+      "claim_id": "a2ea7033-402d-4c09-80b1-cc4a5a3622cd",
+      "result_id": "4abb7e33-3a62-4e9b-96e7-d36c3b50c355"
+    }
+  ],
+  "comparisons": []
+}

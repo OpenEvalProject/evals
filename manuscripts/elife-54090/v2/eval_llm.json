@@ -1,0 +1,560 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C93",
+      "C114"
+    ],
+    "result": "Bmal1 expression is induced by inflammatory stimulants (Ifn-\u03b3/LPS) and tumor-conditioned medium in macrophages. M1 activation and tumor-derived factors control Bmal1 expression, with protein and mRNA levels peaking at 12 hours after M1 stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C93, and C114 are well-supported by experimental data showing Bmal1 induction at both protein and mRNA levels following M1 activation (Figure 1A-C) and tumor-conditioned medium treatment (Figure 6A). The time course and magnitude of induction are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C42",
+      "C122",
+      "C123"
+    ],
+    "result": "Myeloid-specific Bmal1 knockout (M-BKO) impairs mitochondrial function in M1-activated macrophages. M-BKO macrophages show reduced mitochondrial content, decreased oxygen consumption rate, reduced ETC complex II and III activities, and fail to recover mitochondrial respiration 24 hours after acute LPS treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, C40, C42, C122, and C123 are strongly supported by multiple complementary assays including Mitotracker staining (Figure 2A), Seahorse OCR measurements (Figure 2B, Figure 2\u2014figure supplement 1D), and ETC complex activity assays (Figure 2C). The data consistently demonstrate impaired mitochondrial function in M-BKO macrophages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "M-BKO enhances succinate dehydrogenase (SDH)-mediated mitochondrial reactive oxygen species (mROS) production. M-BKO macrophages show higher mROS levels at 1 and 4 hours of M1 activation, with an additional two-fold induction upon succinate addition in M-BKO but not WT macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C65, C66, and C67 are supported by MitoSox Red measurements in isolated mitochondria (Figure 4C). The data show elevated mROS in M-BKO macrophages and differential response to succinate addition, linking SDH activity to mROS production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "M-BKO enhances Hif-1\u03b1-dependent metabolic reprogramming in M1-activated macrophages. M-BKO leads to several-fold induction of Hif-1\u03b1 protein without changes in Hif1a mRNA, and enhances expression of Hif-1\u03b1 targets (Ldha, Arg1, Il1b), which is blocked by Hif1a knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61, C62, C63, and C64 are well-supported by Western blot data showing elevated Hif-1\u03b1 protein in M-BKO (Figure 4A), reduced Hif-1\u03b1 in Bmal1-OE cells (Figure 4\u2014figure supplement 1A), and qPCR data showing enhanced expression of Hif-1\u03b1 targets that is blocked by Hif1a knockout (Figure 4B). The post-transcriptional regulation is confirmed by unchanged Hif1a mRNA (Figure 1D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C75",
+      "C77"
+    ],
+    "result": "Bmal1-mediated mitochondrial metabolism fine-tunes Hif-1\u03b1 activity by modulating oxidative stress. Hif-1\u03b1 protein accumulation in M-BKO macrophages can be normalized by antioxidant (N-AC) or SDH inhibitor (DMM) treatment, indicating that increased mROS is the cause rather than consequence of dysregulated signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C69, C75, and C77 are supported by Western blot data showing normalization of Hif-1\u03b1 protein between genotypes with N-AC or DMM treatment (Figure 4D), and by upregulation of Nrf2 target genes in M-BKO (Figure 4\u2014figure supplement 1E), indicating mROS is upstream of Hif-1\u03b1 stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "M-BKO enhances aerobic glycolysis in M1-activated macrophages. LPS injection increases ECAR and decreases OCR in WT macrophages, with further enhancement of ECAR and suppression of OCR in M-BKO. Bmal1 overexpression has the opposite effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by Seahorse extracellular flux analysis data (Figure 2D-E, Figure 2\u2014figure supplement 1F-G) showing enhanced glycolysis in M-BKO and reduced glycolysis in Bmal1-OE macrophages. The data are consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "M-BKO causes accumulation of glycolytic intermediates, succinate, and amino acids in M1-activated macrophages. Metabolomics analysis shows higher levels of glucose-6-phosphate, fructose-6-phosphate, lactate, succinate, and amino acids/urea cycle intermediates in M-BKO compared to WT, accompanied by increased glucose uptake and lactate production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, C57, C58, C59, and C60 are well-supported by comprehensive metabolomics data (Figure 3A-B) and functional assays measuring glucose uptake and lactate secretion (Figure 3C-D). The data provide a detailed metabolic profile of M-BKO macrophages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The increased glucose utilization in M-BKO macrophages is Hif-1\u03b1-dependent. M1-stimulated glucose uptake, lactate release, and aerobic glycolysis are attenuated in myeloid-specific Bmal1 and Hif1a double knockout (M-BHdKO) macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C72, and C73 are supported by glucose uptake assays (Figure 4\u2014figure supplement 1B), lactate secretion measurements (Figure 4\u2014figure supplement 1C), and glycolytic stress tests (Figure 4\u2014figure supplement 1D) in M-BHdKO macrophages. The genetic epistasis experiment clearly demonstrates Hif-1\u03b1 dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C115",
+      "C116",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Bmal1 and Hif-1\u03b1 regulate opposing metabolic programs through crosstalk mediated by succinate and SDH/complex II-facilitated mROS production. Bmal1 is an integral part of the metabolic regulatory network that regulates the balance between oxidative and glycolytic metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C115, C116, C142, C143, and C144 are supported by the collective experimental evidence showing opposite metabolic effects of Bmal1 and Hif-1\u03b1, with Bmal1 promoting oxidative metabolism and Hif-1\u03b1 promoting glycolysis. The mechanistic link through mROS is demonstrated by pharmacological interventions (Figure 4D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "M-BKO upregulates genes involved in stress/inflammatory responses, protein catabolism, amino-acid transport, and branched-chain amino acid breakdown in M1-activated macrophages. RNA-seq identified 419 genes more highly expressed in M1-activated M-BKO macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C82, C83, and C84 are supported by RNA-seq data (Figure 5\u2014figure supplement 1B, Figure 5A-B) showing differential gene expression in M-BKO macrophages. Gene ontology analysis and validation by qPCR confirm the upregulation of specific metabolic pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Amino-acid metabolism is upregulated in M-BKO macrophages and contributes to increased oxidative stress and Hif-1\u03b1 activation. M-BKO macrophages show enhanced glutamine utilization that is blocked by the L-type amino-acid transporter inhibitor BCH, which also normalizes Hif-1\u03b1 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by extracellular flux analysis showing enhanced glutamine utilization (Figure 5\u2014figure supplement 1D), Western blot showing BCH normalizes Hif-1\u03b1 (Figure 5C), and qPCR showing BCH and DMM suppress gene expression (Figure 5D). The data establish a link between amino acid metabolism and Hif-1\u03b1 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C98",
+      "C118"
+    ],
+    "result": "M-BKO increases melanoma tumor burden in both male and female mice. Macrophage Bmal1 gene deletion leads to compromised anti-tumor immunity and accelerated tumor growth in the B16-F10 melanoma model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C98, and C118 are supported by tumor volume measurements showing increased tumor growth in M-BKO mice (Figure 6F, Figure 7A). The effect is observed in both sexes and in different experimental setups, demonstrating robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C99",
+      "C100",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "M-BKO contributes to an immunosuppressive tumor microenvironment. M-BKO TAMs show upregulated expression of Arg1, Slc7a8, and Slc7a11, and co-injection of M-BKO macrophages with tumor cells leads to reduced CD8+ T cell and NK cell populations and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C99, C100, C104, C105, and C106 are supported by qPCR data from tumor-infiltrating F4/80+ cells (Figure 6G) and flow cytometry analysis of tumor-infiltrating lymphocytes (Figure 7B). The data demonstrate both altered TAM gene expression and functional consequences for anti-tumor immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C109",
+      "C110",
+      "C164",
+      "C165"
+    ],
+    "result": "Administering the SDH inhibitor dimethyl malonate (DMM) suppresses melanoma tumor growth and normalizes the difference in tumor-promoting effects between WT and M-BKO macrophages. DMM blocks T-CM-induced Hif-1\u03b1 protein stabilization in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C109, C110, C164, and C165 are supported by tumor volume measurements showing DMM suppresses tumor growth (Figure 7C) and Western blot showing DMM blocks Hif-1\u03b1 accumulation (Figure 7\u2014figure supplement 1C). The therapeutic proof-of-principle is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Tumor-conditioned medium (T-CM) induces Bmal1 expression and elicits metabolic reprogramming in macrophages that is enhanced by M-BKO. T-CM increases Bmal1 mRNA and protein, enhances mROS production and Hif-1\u03b1 protein in M-BKO macrophages, and upregulates aerobic glycolysis and energetic stress gene signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by qPCR and Western blot data (Figure 6A-C), glycolytic stress tests (Figure 6D), and gene expression analysis (Figure 6E). The data demonstrate that tumor-derived factors recapitulate the metabolic phenotype observed with M1 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The metabolic reprogramming observed in T-CM-primed BMDM is shared by tumor-associated macrophages (TAMs). M-BKO TAMs show a trend toward increased mROS and significantly higher glucose uptake compared to WT TAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C102, and C103 are supported by flow cytometry analysis of TAMs isolated from tumors (Figure 6\u2014figure supplement 1B-C). While the mROS increase shows a trend (p=0.07), the glucose uptake is significantly elevated, and the overall pattern is consistent with in vitro observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C111",
+      "C119"
+    ],
+    "result": "Bmal1 functions as a metabolic checkpoint that integrates macrophage mitochondrial metabolism, redox homeostasis, and effector functions. The Bmal1\u2013Hif-1\u03b1 nexus serves as a metabolic switch that controls macrophage effector functions through bioenergetic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C111, and C119 represent integrative conclusions supported by the collective experimental evidence showing Bmal1's role in regulating mitochondrial function, ROS production, Hif-1\u03b1 activity, and macrophage activation in both inflammatory and tumor contexts. The data support this unifying mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C112"
+    ],
+    "result": "The Bmal1-Hif-1\u03b1 regulatory loop may provide therapeutic opportunities for inflammatory diseases and immunotherapy. Targeting oxidative stress may provide a means to modulate the anti-tumor activity of TAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10 and C112 are speculative statements about potential therapeutic applications. While the DMM experiments provide proof-of-principle support, these claims represent future directions rather than established results. Additional validation in disease models and mechanistic studies would be needed to fully support these therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "M-BKO selectively affects circadian clock and metabolic gene expression without altering canonical inflammatory regulators or M2 activation. M-BKO does not affect M1 induction of Nfkb1, Stat3, Hif1a, or Myc, but dysregulates Nr1d2, Cry1, Ppard, and Pparg. Il-4-induced M2 activation is unaffected by M-BKO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C173 are supported by qPCR data (Figure 1D, Figure 1\u2014figure supplement 1C) showing selective effects of M-BKO on specific gene sets. The data demonstrate that Bmal1 deletion affects metabolic and circadian pathways without broadly disrupting inflammatory signaling or M2 polarization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41",
+      "C135"
+    ],
+    "result": "Reduced mitochondrial content in M1-activated macrophages is accompanied by elevated Bnip3 protein levels. Bnip3 protein accumulation is increased in M-BKO macrophages, though appreciable amounts are only detected at 8 hours after M1 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C135 are supported by Western blot data (Figure 2\u2014figure supplement 1A) showing increased Bnip3 protein. The timing observation (8 hours) is consistent with the mitochondrial dysfunction phenotype, though the delayed appearance suggests Bnip3 may be a consequence rather than primary driver of early mitochondrial changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "M-BKO does not affect basal mitochondrial respiration or response to serum shock, but impairs recovery from LPS-induced suppression of mitochondrial respiration. The basal OCR of M-BKO macrophages remains suppressed 24 hours after acute LPS treatment, whereas WT macrophages fully recover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C45 are supported by Seahorse Mito Stress test data (Figure 2\u2014figure supplement 1C-D). The data demonstrate that Bmal1 is specifically required for recovery from inflammatory insults rather than basal mitochondrial function, providing insight into the temporal role of Bmal1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "M-BKO mice show increased glycolytic rate in splenic macrophages and lowered circulating glucose levels 6 hours after LPS injection. These findings indicate increased glucose consumption by inflammatory myeloid cells in M-BKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 are supported by glycolytic stress tests on splenic macrophages and blood glucose measurements (Figure 2\u2014figure supplement 1H-I). The data demonstrate systemic metabolic consequences of myeloid Bmal1 deletion during inflammation, extending findings beyond cultured cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Expression of Nfe2l2- and Nrf2-induced oxidative stress responsive genes (Nqo1) is upregulated in M-BKO macrophages upon M1 stimulation, suggesting increased mROS is the cause rather than consequence of dysregulated Nrf2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by qPCR data (Figure 4\u2014figure supplement 1E) showing upregulation of Nrf2 target genes in M-BKO. The interpretation that mROS is upstream of Nrf2 activation is reasonable given the oxidative stress data, though direct causality could be further tested with Nrf2 knockout experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The majority of M1-induced or -suppressed genes are regulated similarly in WT and M-BKO macrophages, with Bmal1 deletion affecting specific inflammatory processes. Most TCA cycle enzymes are downregulated by M1 activation in both genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C79, and C80 are supported by RNA-seq data analysis (Figure 5\u2014figure supplement 1A, Figure 5A). The data show that Bmal1 deletion has selective rather than global effects on M1-induced gene expression, consistent with a specific role in metabolic regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "DMM blocks Hif-1\u03b1 protein accumulation and attenuates Arg1 upregulation in T-CM-treated macrophages, similar to its effects in M1 macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107 and C108 are supported by Western blot (Figure 7\u2014figure supplement 1C) and qPCR data (Figure 7\u2014figure supplement 1D). The data demonstrate that the SDH-mROS-Hif-1\u03b1 axis operates similarly in both M1 and tumor-conditioned macrophages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Expression of mitochondrial biogenesis regulators (Pparg) is downregulated rapidly after M1 stimulation and rebounds at 8-12 hours when Bmal1 and Ppard are induced. Ppar\u03b3 and Ppar\u03b4 expression is downregulated by M-BKO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120 and C121 are supported by qPCR data (Figure 1D) showing temporal dynamics of gene expression. The data suggest coordinated regulation of mitochondrial biogenesis through Bmal1 and downstream nuclear receptors, though direct mechanistic links would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Bmal1 gain-of-function in RAW264.7 macrophages promotes oxidative metabolism. The dysregulated mitochondrial respiration phenotype of M-BKO macrophages occurs as early as 2 hours after M1 activation, whereas Bmal1 protein accumulation peaks at 12 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124, C125, and C126 are supported by Seahorse data from Bmal1-OE cells (Figure 2\u2014figure supplement 1G) and time course data (Figure 2B, Figure 1A). The temporal discrepancy suggests Bmal1 may act through downstream effectors or that basal Bmal1 levels are sufficient for early effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The induction of Nr1d2 by M1 is almost completely abolished in M-BKO macrophages, and expression of Cx3cr1 (a direct target suppressed by Nr1d1/Nr1d2) is higher in M1-activated M-BKO macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129 and C130 are supported by qPCR data (Figure 1D) and RNA-seq data (Figure 5\u2014source data 1). The data provide evidence for disrupted circadian clock feedback loops in M-BKO macrophages, though the functional significance of Cx3cr1 upregulation is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "M-BKO macrophages exhibit a higher lactate production rate 4 hours after M1 stimulation, with this phenotype observed as early as 2 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 is supported by lactate secretion measurements (Figure 3D) and mentioned unpublished data. The early timing is consistent with the rapid metabolic reprogramming observed in M-BKO macrophages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C138",
+      "C174"
+    ],
+    "result": "LPS or M1 stimulation could 'reset the clock' by inducing/resynchronizing Bmal1 expression. The circadian clock may function as a downstream effector of M1 stimulation in a cell-autonomous manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138 and C174 are supported by experimental observations showing Bmal1 induction by M1 (Figure 1A-C) and the selective effects of M-BKO on macrophage function. The interpretation that inflammatory signals reset the circadian clock is reasonable, though formal circadian rhythm experiments would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C92",
+      "C113",
+      "C127",
+      "C128",
+      "C131",
+      "C136",
+      "C137",
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C159",
+      "C160"
+    ],
+    "result": "Background claims about macrophage metabolism, circadian rhythm, and tumor immunology from prior literature. These include established knowledge about LPS-induced metabolic shifts, the broken TCA cycle, mROS production, Hif-1\u03b1 regulation, circadian clock components, and TAM biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C11-C38, C92, C113, C127-C128, C131, C136-C137, C149, C151-C153, C159-C160) represent background information supported by citations to prior published work. The authors appropriately cite relevant literature to establish the scientific context for their study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C23",
+      "C85",
+      "C132",
+      "C133",
+      "C141",
+      "C145",
+      "C146",
+      "C147",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C166",
+      "C167"
+    ],
+    "result": "Established biological knowledge about metabolic pathways and protein functions. These include facts about Arg1 regulation by Hif-1\u03b1, Slc7a8 function, Hif-1\u03b1's role in glycolysis and mitophagy, Bmal1 and Hif-1\u03b1 structural similarity, succinate metabolism, and energy production in different macrophage states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C23, C85, C132-C133, C141, C145-C147, C155-C158, C166-C167) represent established biological knowledge that provides mechanistic context for the experimental findings. The claims are well-supported by general scientific knowledge and some are also supported by experimental data in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C35",
+      "C139",
+      "C140",
+      "C161"
+    ],
+    "result": "Speculative interpretations about circadian rhythm function and amino acid metabolism effects on lymphocytes. These include suggestions that circadian rhythm maximizes metabolic efficiency, that Bmal1 may regulate energy metabolism for monocyte trafficking, and that increased amino acid utilization by M-BKO macrophages may contribute to reduced lymphocyte populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C35, C139-C140, C161) represent speculative interpretations that extend beyond the direct experimental evidence. While they are reasonable hypotheses based on the data and prior knowledge, they would require additional targeted experiments to be definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C117",
+      "C150",
+      "C162",
+      "C163",
+      "C168"
+    ],
+    "result": "Integrative mechanistic interpretations about the Bmal1-Hif-1\u03b1 regulatory axis. These include conclusions that Bmal1 loss-of-function causes mitochondrial dysfunction leading to mROS and Hif-1\u03b1 stabilization, that Bmal1-controlled metabolism provides a brake on the succinate-mROS-Hif-1\u03b1 feedforward cycle, and that energetic stress is a key determinant of TAM polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C117, C150, C162-C163, C168) represent integrative interpretations supported by the collective experimental evidence. While they involve some inference, the mechanistic framework is well-supported by multiple complementary experiments and is consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "Amino-acid metabolism appears to be down- and upregulated by Bmal1 and Hif-1\u03b1, respectively, as demonstrated by regulation of Arg1 and Slc7a8 gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 is supported by gene expression data showing opposite regulation of amino acid metabolism genes by Bmal1 and Hif-1\u03b1 (Figure 4B, Figure 5B). The inference is reasonable based on the experimental observations, though direct mechanistic studies would strengthen the conclusion.",
+    "result_type": "MINOR"
+  }
+]

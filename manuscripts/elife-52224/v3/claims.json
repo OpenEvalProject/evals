@@ -1,0 +1,771 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Intracellular transport is predominantly heterogeneous in both time and space, exhibiting varying non-Brownian behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Intracellular transport is predominantly heterogeneous in both time and space, exhibiting varying non-Brownian behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract as a general characterization of intracellular transport, drawing on established scientific understanding.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Characterization of intracellular movement through averaging methods over an ensemble of trajectories or over the course of a single trajectory often fails to capture heterogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "Characterization of this movement through averaging methods over an ensemble of trajectories or over the course of a single trajectory often fails to capture this heterogeneity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological critique stated in the abstract, based on inference about limitations of averaging methods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "A deep learning feedforward neural network trained on fractional Brownian motion provides a novel, accurate and efficient method for resolving heterogeneous behavior of intracellular transport in space and time.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we developed a deep learning feedforward neural network trained on fractional Brownian motion, providing a novel, accurate and efficient method for resolving heterogeneous behavior of intracellular transport in space and time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main claim of the paper, supported by the experimental data and comparisons presented throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The neural network requires significantly fewer data points compared to established methods.",
+    "claim_type": "EXPLICIT",
+    "source": "The neural network requires significantly fewer data points compared to established methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by data in Figure 1b showing the DLFNN maintains accuracy with fewer points than other methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The neural network enables robust estimation of Hurst exponents for very short time series data.",
+    "claim_type": "EXPLICIT",
+    "source": "This enables robust estimation of Hurst exponents for very short time series data, making possible direct, dynamic segmentation and analysis of experimental tracks of rapidly moving cellular structures such as endosomes and lysosomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by Figure 1b and 1g showing accurate estimation with as few as 7 consecutive points.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Fractional Brownian motion with a stochastic Hurst exponent was used to interpret, for the first time, anomalous intracellular dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "By using this analysis, fractional Brownian motion with a stochastic Hurst exponent was used to interpret, for the first time, anomalous intracellular dynamics, revealing unexpected differences in behavior between closely related endocytic organelles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about novelty and application, supported by the experimental analysis of endosomes and lysosomes presented in the results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The majority of transport inside cells on the mesoscale (nm-100\u03bcm) exhibits non-Brownian anomalous behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of transport inside cells on the mesoscale (nm-100\u03bcm) is now known to exhibit non-Brownian anomalous behavior (Metzler and Klafter, 2004; Barkai et al., 2012; Waigh, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to previous literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Anomalous transport has wide ranging implications for most of the biochemical reactions inside cells and thus cellular physiology.",
+    "claim_type": "EXPLICIT",
+    "source": "This has wide ranging implications for most of the biochemical reactions inside cells and thus cellular physiology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the importance of transport to cellular function.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Classification of different non-Brownian dynamic behaviors at various time scales has been crucial to the analysis of intracellular dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "Classification of different non-Brownian dynamic behaviors at various time scales has been crucial to the analysis of intracellular dynamics (Fedotov et al., 2018; Bressloff and Newby, 2013), protein crowding in the cell (Banks and Fradin, 2005; Weiss et al., 2004), microrheology (Waigh, 2005; Waigh, 2016), entangled actin networks (Amblard et al., 1996), and the movement of lysosomes (Ba et al., 2018) and endosomes (Flores-Rodriguez et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Anomalous transport is currently analyzed by statistical averaging methods and this has been a barrier to understanding the nature of its heterogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "Anomalous transport is currently analyzed by statistical averaging methods and this has been a barrier to understanding the nature of its heterogeneity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critique of current methods based on inference about their limitations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Different DLFNN structures (triangular, rectangular, anti-triangular) performed similarly.",
+    "claim_type": "EXPLICIT",
+    "source": "Different DLFNN structures (see Figure 1c,d and e) performed similarly, and introducing more hidden layers did not affect the accuracy of estimation (Figure 1f and g).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the comparison data in Figures 1f and 1g.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Persistence in the context of intracellular transport can be understood as the processive motor-protein transport of cargo in one direction, whether it be retrograde or anterograde.",
+    "claim_type": "EXPLICIT",
+    "source": "The term persistence can be understood as the processive motor-protein transport of cargo in one direction, whether it be retrograde or anterograde.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a biological interpretation of the mathematical concept of persistence.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Anti-persistence can arise if cargo is confined to a local volume in the cytoplasm simply due to crowding or tethering biochemical interactions, which in effect leads to sub-diffusion.",
+    "claim_type": "EXPLICIT",
+    "source": "Anti-persistence can arise if cargo is confined to a local volume in the cytoplasm simply due to crowding or tethering biochemical interactions (Harrison et al., 2013), which in effect leads to sub-diffusion (Weiss et al., 2004; Ernst et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on confined motion and sub-diffusion.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Cargo movement in vivo often exhibits random switching between persistent and anti-persistent movement, even in a single trajectory.",
+    "claim_type": "EXPLICIT",
+    "source": "Cargo movement in vivo often exhibits random switching between persistent and anti-persistent movement, even in a single trajectory (Chen et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to previous experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The DLFNN was able to identify segments with different exponents in simulated fBm trajectories with Hurst exponents that varied in time.",
+    "claim_type": "EXPLICIT",
+    "source": "The DLFNN was able to identify segments with different exponents, and provided a good running estimation of the Hurst exponent values.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by Figure 2 showing the DLFNN predictions matching the simulated values.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Early endosomes labeled with GFP-Rab5 undergo bursts of rapid cytoplasmic dynein-driven motility interspersed with periods of rest.",
+    "claim_type": "EXPLICIT",
+    "source": "Early endosomes labeled with green fluorescent protein (GFP)-Rab5 undergo bursts of rapid cytoplasmic dynein-driven motility interspersed with periods of rest (Flores-Rodriguez et al., 2011; Zajac et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "A moving window of 15 points identified persistent and anti-persistent segments in GFP-Rab5-labeled endosomes, which corresponded well to the moving window velocity plots.",
+    "claim_type": "EXPLICIT",
+    "source": "A moving window of 15 points identified persistent (green) and anti-persistent (magenta) segments, which corresponded well to the moving window velocity plots (Figure 3, lower panel), confirming that the neural network is indeed distinguishing passive states from active transport states with non-zero average velocity.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "All organelles spent longer in anti-persistent than persistent states.",
+    "claim_type": "EXPLICIT",
+    "source": "Analysis of the duration and displacement of segments (Appendix C) revealed that all organelles spent longer in anti-persistent than persistent states (Figure 4) but moved much further when persistent (Appendix 3\u2014figure 1), as expected.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "GFP-SNX1 endosomes spent much less time than GFP-Rab5 endosomes or lysosomes in an anti-persistent state.",
+    "claim_type": "EXPLICIT",
+    "source": "However, GFP-SNX1 endosomes spent much less time than GFP-Rab5 endosomes or lysosomes in an anti-persistent state (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "All three organelle classes exhibited a similar range of Hurst exponents when they underwent directionally persistent motion.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, all three organelle classes exhibited a similar range of Hurst exponents when they underwent directionally persistent motion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the histogram data in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "For Rab5- and SNX1-positive endosomes, anti-persistent organelles were enriched in the cell periphery, but occasionally underwent long-range persistent movement towards the nucleus.",
+    "claim_type": "EXPLICIT",
+    "source": "For Rab5- and SNX1-positive endosomes, anti-persistent organelles were enriched in the cell periphery, but occasionally underwent long-range persistent movement towards the nucleus (Figure 6\u2014video 1; Figure 6\u2014video 2), as expected (Flores-Rodriguez et al., 2011; Zajac et al., 2013; Hunt et al., 2013; Allison et al., 2017).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the spatial distribution data shown in Figure 6 and cited previous work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Lysosomes displayed completely different behavior, with most trajectories being anti-persistent, while the persistent trajectories were not obviously organized spatially.",
+    "claim_type": "EXPLICIT",
+    "source": "Lysosomes displayed completely different behavior, with most trajectories being anti-persistent, while the persistent trajectories were not obviously organized spatially (Figure 6; Figure 6\u2014video 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the spatial distribution data shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "GFP-Rab5 endosomes moved much faster than GFP-SNX1 endosomes or lysosomes, particularly in the retrograde direction.",
+    "claim_type": "EXPLICIT",
+    "source": "These statistics revealed that each endocytic organelle moved with different characteristics. GFP-Rab5 endosomes moved much faster than GFP-SNX1 endosomes or lysosomes, particularly in the retrograde direction (Figure 7, upper panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the velocity data shown in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Although the GFP-SNX1 endosomes were slowest in both directions, they moved furthest and for longest in each segment.",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, although the GFP-SNX1 endosomes were slowest in both directions, they moved furthest and for longest in each segment, in keeping with the longer duration of persistent segments seen in the global analysis of tracks (Figure 4) and higher H values (Figure 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the displacement and time data shown in Figure 7 and Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "SNX1 also senses membrane curvature.",
+    "claim_type": "EXPLICIT",
+    "source": "However, SNX1 also senses membrane curvature (Carlton et al., 2004), and immunofluorescence labeling of MRC-5 cells with antibodies to Rab5 and SNX1 demonstrated that they reside on distinct domains of larger early endosomes (Figure 6\u2014figure supplement 1), as expected van Weering et al. (2012).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by a citation and confirmed by immunofluorescence data.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "While SNX1 endosomes were usually Rab5-positive, there was a significant population of Rab5 endosomes that lacked SNX1, especially smaller early endosomes that were often located in the cell periphery.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, while SNX1 endosomes were usually Rab5-positive, there was a significant population of Rab5 endosomes that lacked SNX1, especially smaller early endosomes that were often located in the cell periphery.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the immunofluorescence data shown in Figure 6\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The high retrograde velocity of Rab5-positive, SNX1-negative endosomes might be explained by the recruitment of dynein to Rab5 endosomes via Hook family members.",
+    "claim_type": "EXPLICIT",
+    "source": "The high retrograde velocity of these endosomes might be explained by the recruitment of dynein to Rab5 endosomes via Hook family members (Bielska et al., 2014; Zhang et al., 2014; Schroeder and Vale, 2016; Guo et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation supported by citations to previous work on dynein recruitment.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Hook family dynein adaptors have the property of recruiting two dyneins per dynactin, leading to faster rates of movement in motility assays using purified protein than adaptors that only recruit one dynein per dynactin.",
+    "claim_type": "EXPLICIT",
+    "source": "These dynein adaptors have the intriguing property of recruiting two dyneins per dynactin (Urnavicius et al., 2018; Grotjahn et al., 2018), leading to faster rates of movement in motility assays using purified protein than adaptors that only recruit one dynein per dynactin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "SNX1 endosomes might move more slowly than Rab5 endosomes because they use a 'single-dynein' adaptor.",
+    "claim_type": "EXPLICIT",
+    "source": "Perhaps, SNX1 endosomes move more slowly than Rab5 endosomes because they use a 'single-dynein' adaptor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation for the observed difference in velocity.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "SNX1 endosomes might be slowed down by interactions with the actin cytoskeleton, since SNX1 domains are enriched in the WASH complex, which controls localized actin assembly.",
+    "claim_type": "EXPLICIT",
+    "source": "An alternative explanation could be that SNX1 endosomes are slowed down by interactions with the actin cytoskeleton, since SNX1 domains are enriched in the WASH complex, which in turn controls localized actin assembly (Gomez and Billadeau, 2009; Simonetti and Cullen, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation supported by citations to previous work.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Lysosomes moved at moderate speed, and were equally fast in both directions, but each burst of movement was short.",
+    "claim_type": "EXPLICIT",
+    "source": "The analysis of anterograde and retrograde segments revealed that lysosomes moved at moderate speed, and were equally fast in both directions, but each burst of movement was short (Figure 7, upper panels).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Lysosomes often changed direction of movement.",
+    "claim_type": "EXPLICIT",
+    "source": "Lysosomes also often changed direction of movement (e.g. Figure 3\u2014figure supplement 2), as previously reported (Hendricks et al., 2010).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the trajectory data and a citation to previous work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "No activating dynein adaptor has been identified on lysosomes.",
+    "claim_type": "EXPLICIT",
+    "source": "So far, no activating dynein adaptor has been identified on lysosomes (Reck-Peterson et al., 2018), although several potential dynein interactors have been identified, such as RILP (Rab7 interacting lysosomal protein (Cabukusta and Neefjes, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "This is the first application of fBm with stochastic Hurst exponent theory to intracellular transport.",
+    "claim_type": "EXPLICIT",
+    "source": "This is the first application of such a theory to intracellular transport and opens a new method for characterizing vesicular movement.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about novelty based on the authors' knowledge of the field.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The times that lysosomes and endosomes spend in a persistent and anti-persistent state are heavy-tailed.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the times that lysosomes and endosomes spend in a persistent and anti-persistent state are heavy-tailed (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data and power-law fits shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The vesicles may have a biological mechanism to prioritize certain interactions within the complex cytoplasm, similar to ecological searching patterns.",
+    "claim_type": "EXPLICIT",
+    "source": "This implies that the vesicles may have a biological mechanism to prioritize certain interactions within the complex cytoplasm, similar to ecological searching patterns (Reynolds and Rhodes, 2009), mRNPs (Song et al., 2018), swarming bacteria (Ariel et al., 2015) and how human dynamics are often heavy tailed and bursty (Barab\u00e1si, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative interpretation of the heavy-tailed distributions, supported by analogies to other systems.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The DLFNN can predict the Hurst exponent with consistent accuracy for as few as seven consecutive data points.",
+    "claim_type": "EXPLICIT",
+    "source": "We package this DLFNN analysis code into a user-friendly application, which can predict the Hurst exponent with consistent accuracy for as few as seven consecutive data points.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the data in Figure 1b showing good accuracy at n=7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The DLFNN enabled discovery of regime switching in lysosome and endosome movement that can be modeled by fBm with a stochastic Hurst exponent.",
+    "claim_type": "EXPLICIT",
+    "source": "The DLFNN enabled us to discover regime switching in lysosome and endosome movement that can be modeled by fBm with a stochastic Hurst exponent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the segmentation analysis shown in Figures 3, 4, and 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The residence time of vesicles in a persistent or anti-persistent state is found to be heavy tailed.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the residence time of vesicles in a persistent or anti-persistent state is found to be heavy tailed, which implies that endosomes and lysosomes possess biological mechanisms to prioritize varying biological processes similar to ecological searching patterns (Reynolds and Rhodes, 2009), mRNPs (Song et al., 2018), swarming bacteria (Ariel et al., 2015) and even human dynamics (Barab\u00e1si, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the power-law fits shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "This new technique distinguishes the difference in motility between lysosomes, Rab5-positive endosomes and SNX1 positive endosomes.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, in addition to providing a new segmentation method of active and passive transport, this new technique distinguishes the difference in motility between lysosomes, Rab5-positive endosomes and SNX1 positive endosomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparative analysis shown in Figures 4, 5, and 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The manner in which these vesicles move is dependent on their identity within the endocytic pathway, especially when the motion is anti-persistent.",
+    "claim_type": "EXPLICIT",
+    "source": "The results suggest that the manner in which these vesicles move is dependent on their identity within the endocytic pathway, especially when the motion is anti-persistent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the differences observed in Figures 4 and 5.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Directionality and the correlation between consecutive steps is important to measure in addition to the displacement, velocity and duration of movement.",
+    "claim_type": "EXPLICIT",
+    "source": "This implies that directionality and the correlation between consecutive steps is important to measure in addition to the displacement, velocity and duration of movement.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the importance of Hurst exponent analysis in revealing differences between organelles.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The early endocytic pathway is essential for cell homeostasis, allowing nutrient uptake, the turnover of plasma membrane components, and uptake of growth factor receptors bound to their ligands.",
+    "claim_type": "EXPLICIT",
+    "source": "This pathway is essential for cell homeostasis, allowing nutrient uptake, the turnover of plasma membrane components, and uptake of growth factor receptors bound to their ligands.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established biological knowledge about the endocytic pathway.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Early endosomes sort components destined for degradation from material that needs to be recycled back to the cell surface or to the Trans-Golgi Network (TGN).",
+    "claim_type": "EXPLICIT",
+    "source": "Early endosomes then sort components destined for degradation from material that needs to be recycled back to the cell surface or to the Trans-Golgi Network (TGN) (Naslavsky and Caplan, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established biological knowledge supported by citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Many aspects of endosome function are regulated by Rab5, a small GTPase that is localized to the cytosolic face of early endosomes.",
+    "claim_type": "EXPLICIT",
+    "source": "Many aspects of endosome function are regulated by Rab5, a small GTPase that is localized to the cytosolic face of early endosomes (Stenmark and Olkkonen, 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established biological knowledge supported by citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Sorting nexin 1 (SNX1) localises to early endosomes, where it works with the retromer complex to retrieve and recycle cargoes from early endosomes to the TGN.",
+    "claim_type": "EXPLICIT",
+    "source": "Sorting nexin 1 (SNX1) also localises to early endosomes, where it works with the retromer complex to retrieve and recycle cargoes from early endosomes to the TGN (Simonetti and Cullen, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established biological knowledge supported by citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "SNX1 achieves cargo retrieval through regulating tubular membrane elements on early endosomes by associating with regions of high membrane curvature.",
+    "claim_type": "EXPLICIT",
+    "source": "SNX1 achieves this through regulating tubular membrane elements on early endosomes by associating with regions of high membrane curvature (Carlton et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established biological knowledge supported by citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Early endosomes mature into late endosomes, which then fuse with lysosomes, delivering their contents for degradation.",
+    "claim_type": "EXPLICIT",
+    "source": "Early endosomes mature into late endosomes, which then fuse with lysosomes, delivering their contents for degradation (Huotari and Helenius, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established biological knowledge supported by citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Endocytic pathway components are highly dynamic, with microtubule motors driving long-distance movement while short-range dynamics involve actin-based motility.",
+    "claim_type": "EXPLICIT",
+    "source": "Endocytic pathway components are highly dynamic, with microtubule motors driving long-distance movement while short-range dynamics involve actin-based motility (Granger et al., 2014; Cabukusta and Neefjes, 2018), making them ideal test cases for DLFNN analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established biological knowledge supported by citations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "fBm was chosen due to its self-similar properties that allow direct analysis at short time scales given by experimental systems.",
+    "claim_type": "EXPLICIT",
+    "source": "fBm was chosen due to its self-similar properties that allow direct analysis at short time scales given by experimental systems; and the experimental evidence for fBm in the crowded cytoplasm (Weiss et al., 2004; Szymanski and Weiss, 2009; Krapf et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a justification for the choice of model, supported by citations to experimental evidence.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Other anomalous diffusion models, such as scaled Brownian motion, subdiffusive continuous time random walks and superdiffusive L\u00e9vy walks are not suitable to interpret anomalous trajectories on the microscopic level.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, other anomalous diffusion models, such as scaled Brownian motion (Lim and Muniandy, 2002), subdiffusive continuous time random walks (Sokolov, 2012) and superdiffusive L\u00e9vy walks (Fedotov et al., 2018) are not suitable to interpret anomalous trajectories on the microscopic level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the limitations of alternative models, based on inference.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The neural network is a much more sensitive method to characterise fBm than previous statistical tools, since it is an intrinsically non-linear regression method that accounts for correlated time series.",
+    "claim_type": "EXPLICIT",
+    "source": "We find the neural network is a much more sensitive method to characterise fBm than previous statistical tools, since it is an intrinsically non-linear regression method that accounts for correlated time series.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of why the neural network performs better, based on its mathematical properties.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The neural network can estimate the Hurst exponent using as few as seven consecutive time points with good accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, it can estimate the Hurst exponent using as few as seven consecutive time points with good accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the data in Figure 1b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The values of bias, variance and MSE for the DLFNN estimation were very low.",
+    "claim_type": "EXPLICIT",
+    "source": "The values of bias, variance and MSE were very low (Figure 1i), which taken together with the simplicity of calculation and the accuracy of estimation even with small number of data points, demonstrates the strength of the DLFNN method.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the data shown in Figure 1i.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The DLFNN measures local Hurst exponents without averaging over time points and is able to characterize particle trajectories that may exhibit multi-fractional, heterogeneous dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the DLFNN measures local Hurst exponents without averaging over time points and is able to characterize particle trajectories that may exhibit multi-fractional, heterogeneous dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the capabilities of the method, demonstrated by Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The DLFNN could handle trajectories with different diffusion coefficients, and generally performed better than MSD analysis when a sliding window was used.",
+    "claim_type": "EXPLICIT",
+    "source": "The DLFNN could also handle trajectories with different diffusion coefficients, and generally performed better than MSD analysis when a sliding window was used (see Appendix B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the analysis in Appendix B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "This is the first method which is capable of resolving heterogeneous behavior of anomalous transport in both time and space.",
+    "claim_type": "EXPLICIT",
+    "source": "To our knowledge, this is the first method which is capable of resolving heterogeneous behavior of anomalous transport in both time and space.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about novelty based on the authors' knowledge of the field.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

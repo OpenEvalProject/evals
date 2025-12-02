@@ -1,0 +1,448 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C20",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C44"
+    ],
+    "result": "Neurotrophins induce an initial burst of mitochondrial fission (0-10 min) followed by establishment of a new steady state of mitochondrial length and density that is maintained as long as neurotrophin is present. This is driven by combined PI3K and Mek-Erk signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C33-37 provide converging evidence from live imaging and fixed timepoint analysis showing increased fission rates during 0-10 min NGF treatment, followed by return to baseline fission rates by 1 hr while maintaining altered mitochondrial morphology. The temporal dynamics are well-characterized with appropriate controls and statistical testing. Claims C1-2 and C44 accurately summarize these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "All three neurotrophins (NGF, BDNF, NT3) induce similar effects on mitochondrial fission and morphology. NGF withdrawal reverses these effects through a transient burst of fusion (10-20 min post-withdrawal) followed by return to pre-NGF steady state by 3 hrs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-43 demonstrate that the fission response is conserved across neurotrophin family members and is reversible. The withdrawal experiments show appropriate temporal resolution and controls. The observation that withdrawal induces fusion rather than simply stopping fission provides mechanistic insight into steady-state maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "NGF acts locally within axons through TrkA receptors to induce mitochondrial fission, with effects evident at 10 ng/mL NGF concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-52 provide multiple lines of evidence for local axonal action through TrkA: rapid time course (<10 min), local perfusion experiments, microfluidic compartmentalization, dose-response curve, k252a inhibition, and lack of effect of BDNF on TrkA-negative neurons. The convergence of these approaches strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Drp1 GTPase mediates NGF-induced mitochondrial fission. Drp1 accumulates focally at sites of fission prior to the fission event, and NGF increases the frequency of these accumulations. Inhibition of Drp1 blocks NGF-induced fission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-59 provide direct evidence through live imaging of Drp1 dynamics, immunocytochemistry, and loss-of-function experiments using three independent approaches (mDivi-1, P110, DNDrp1). The temporal relationship between Drp1 accumulation and fission is well-documented. Claims C53-54 appropriately cite established knowledge about Drp1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Actin filaments are required for NGF-induced mitochondrial fission. Actin patches form at sites of fission with high probability (80% colocalization, p=1.75\u00d710\u207b\u00b2\u00b9 for random overlap). Latrunculin-A blocks both fission and Drp1 accumulation without affecting fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-68 provide strong evidence for actin involvement through live imaging colocalization analysis with rigorous statistical assessment of non-random association (C64), and pharmacological disruption experiments. The specificity for fission over fusion (C66) strengthens the conclusion. The probability calculation in C64 appropriately accounts for the geometry of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Fission-associated actin patches represent a distinct subpopulation from filopodia-forming patches. Fission patches are longer-lived but have 5-fold lower probability of generating filopodia. Both types require Arp2/3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-75 provide quantitative evidence distinguishing two functionally distinct actin patch populations based on duration and filopodia-forming probability. Claims C76-78 establish shared requirement for Arp2/3 despite functional differences. The statistical comparisons are appropriate and sample sizes adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "PI3K and Mek-Erk pathways coordinately regulate NGF-induced fission through distinct mechanisms. Mek-Erk controls Drp1 activity via S616 phosphorylation, while PI3K contributes to Drp1 recruitment (likely through actin patch formation). Both pathways are required for fission and steady-state maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-98 provide comprehensive evidence through pharmacological inhibition, phospho-specific antibodies, and temporal correlation of pathway activation with fission. The differential effects on pS616-Drp1 (C88-89) clearly distinguish the pathways' mechanisms. The requirement for both pathways in steady-state maintenance (C97-98) is well-demonstrated. Claims C79-82 appropriately cite established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C147"
+    ],
+    "result": "PI3K may contribute to the actin-dependent aspect of fission through its established role in actin patch formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5 and C147 propose a mechanism for PI3K's role based on integration of current findings with prior work, but this remains speculative. While PI3K is required for both fission and actin patches, and actin is required for fission, the direct mechanistic link is not definitively established. The authors appropriately qualify this as a proposal and note alternative mechanisms are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Drp1-mediated fission is specifically required for NGF-induced axon branching but not growth cone morphology. Fission is required for the NGF-induced increase in actin patch formation that precedes branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-108 demonstrate requirement for fission in branching through multiple Drp1 inhibition approaches, including severed axon experiments ruling out cell body contributions. The specificity for branching over growth cone effects (C107-108) is well-documented. Claims C113-115 establish the mechanistic link through actin patch formation with appropriate temporal relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "NGF-induced fission generates shorter mitochondria that preferentially target into branches. A 'size principle' governs mitochondrial entry into branches, with shorter mitochondria having facilitated access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-120 provide quantitative evidence that mitochondria in NGF-induced branches match the shortened length found in axons after fission, while spontaneous branches contain only the rare short mitochondria present without NGF. Claims C154-156 appropriately interpret this as a size-based targeting mechanism. The logic is sound and data support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C158"
+    ],
+    "result": "Fission correlates with increased probability of subsequent mitochondrial transport (80% of fissioned mitochondria undergo transport vs 38% of non-fissioned stalled mitochondria, p=0.0025). Fission occurs only along stalled mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-24 and C158 provide quantitative evidence with appropriate statistical testing showing the correlation between fission and transport. The observation that fission occurs only in stalled mitochondria (C23) is important for interpreting the mechanism. Sample sizes appear adequate and the effect size is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "NGF does not affect most parameters of mitochondrial transport (velocity, directionality, run length, percent time moving) but increases the frequency of directional reversals during runs (55% vs 15%, p=0.0049).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-32 systematically characterize transport parameters with appropriate statistical testing. The specific effect on directional switching (C31) is well-documented while other parameters show no effect. This selective effect is mechanistically interesting and well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Expression of dominant negative Drp1 in vivo impairs developmental collateral branching of sensory axons in the embryonic spinal cord, indicating fission is required for non-neurotrophin-dependent branching during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-127 provide in vivo evidence through electroporation experiments showing DNDrp1 increases mitochondrial length and decreases branch density. The calculation of mitochondrial 'mass' (C124) appropriately addresses whether effects are due to altered mitochondrial abundance. The conclusion that fission is required for developmental branching independent of neurotrophins is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Fission is required for NGF-induced intra-axonal translation of cortactin, an actin regulatory protein required for branching. However, translation is not required for fission, establishing a unidirectional relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-137 provide evidence through FRAP experiments and immunocytochemistry showing fission inhibition blocks cortactin translation/accumulation, while translation inhibition does not affect fission. The unidirectional relationship (C137) is clearly established. Both PI3K and Mek-Erk are implicated in the translation response, consistent with their roles in fission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "This study unveils a novel biological function of neurotrophins\u2014the regulation of mitochondrial fission\u2014and provides the first example of 'beneficial' growth factor-induced fission. Novel roles for actin patches in fission and for PI3K in regulating Drp1-dependent fission are identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-145 appropriately summarize the novelty of the findings in the context of existing literature. The characterization as 'beneficial' fission (C139) is justified by the functional requirement for branching and the establishment of a regulated steady state rather than pathological fragmentation. The novelty claims are well-supported by the comprehensive experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C162",
+      "C165",
+      "C171"
+    ],
+    "result": "Fission may promote reorganization and redistribution of mitochondria within axons, allowing targeting to sites of future branching, potentially through capture at microtubule splaying sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162, C165, and C171 propose mechanisms for how fission contributes to mitochondrial positioning at branch sites. While the correlation between fission and transport is established, and microtubule splaying at branch sites is documented in prior work, the proposed capture mechanism remains speculative. The authors appropriately qualify these as suggestions and note this will be the focus of future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing the importance of neurotrophins in axon branching, their regulation of cytoskeleton and translation, the role of mitochondria in branching, and the general biology of mitochondrial dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-19 appropriately cite established literature to provide context. These are background claims supported by citations rather than new findings. They accurately represent the state of the field and provide necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Background claims establishing the timeline of NGF-induced branching, the role of PI3K and Mek-Erk in branching, and the mechanism of actin patch and filopodia formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-103 and C109-112 cite prior work to establish the temporal framework and mechanistic context for interpreting the current findings. These appropriately reference the authors' prior work and that of others to provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C152",
+      "C172",
+      "C173"
+    ],
+    "result": "NGF can induce branching in adult spinal cord but does not control developmental sensory axon branching. Recent work shows cortical axon branching also requires fission, suggesting the requirement extends beyond neurotrophin-dependent contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-122 and C152 appropriately cite prior literature. Claims C172-173 integrate the current in vivo findings with a recent study on cortical neurons to suggest broader applicability. The generalization in C173 is appropriately qualified as 'likely' and represents reasonable extrapolation from the available evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C157",
+      "C159",
+      "C160",
+      "C161",
+      "C163",
+      "C164",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Discussion claims citing prior work on mechanisms of fission, mitochondrial transport, microtubule dynamics at branch sites, translation at branch sites, and alternative branching pathways involving calcium signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-149, C157, C159-161, C163-164, C166-170, C174-178 appropriately cite and discuss prior literature to contextualize the current findings and compare with alternative mechanisms. These citations appear accurate and relevant to the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Mitochondria and fission establish permissive domains for branching but are not sufficient\u2014additional signals controlling cytoskeletal dynamics, translation, and microtubule targeting are required for branch formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-186 provide an integrated interpretation of the role of mitochondria in branching, appropriately noting that mitochondria are necessary but not sufficient. This interpretation is well-supported by the observation that mitochondria are present in axons without NGF (C183) but branching only increases with NGF treatment. The integration with prior work on other required mechanisms is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Persistent elevation of Erk and PI3K activity maintains the steady state. NGF withdrawal induces a transient burst of fusion. The mechanism underlying increased fusion after withdrawal may involve suppression of PI3K/Erk signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-188 are well-supported by the data on pathway inhibition during steady state and fusion dynamics after withdrawal. Claim C189 is appropriately qualified as speculative ('may reflect') and represents a reasonable hypothesis for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Concluding summary statements about the major findings and their implications for understanding neurotrophin function across multiple contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-192 appropriately summarize the major findings and suggest broader implications. Claim C192 is appropriately speculative about future directions while being grounded in the established findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "The median length of E14 mitochondria was increased by 33% relative to E7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 appears to be misplaced or incorrectly extracted\u2014the quoted source text describes measurements from a fusion event time series, not a developmental comparison. The claim about E14 vs E7 comparison appears in the results but the evidence attribution seems incorrect. This requires clarification of what data actually supports this developmental comparison.",
+    "result_type": "MINOR"
+  }
+]

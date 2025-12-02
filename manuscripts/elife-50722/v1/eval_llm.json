@@ -1,0 +1,456 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C139"
+    ],
+    "result": "D1min peptide binds to BKV VP1 pentamers with single-digit nanomolar affinity (KD = 1.4 nM by SPR, IC50 = 3.6 nM by AlphaScreen), demonstrating high-quality, specific interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42, C54-C56, C59, and C139 collectively demonstrate high-affinity binding through two independent methods (SPR and AlphaScreen) with concordant results. The 1:1 binding model fits the SPR data well (C55), supporting specificity. Multiple replicates and consistent measurements across assays strengthen confidence in the reported affinities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C60",
+      "C61",
+      "C62",
+      "C93",
+      "C140",
+      "C141",
+      "C153"
+    ],
+    "result": "Alanine-scanning mutagenesis identified three key D1min residues (W293, L297, L298) that are critical for VP1 binding, with single substitutions causing ~600-1000 fold loss of affinity. Loss of binding affinity correlates with loss of antiviral activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C60-C62, C93, C140-C141, and C153 demonstrate a clear structure-activity relationship. Both SPR and AlphaScreen methods show concordant results for key residues (C60-C61). The correlation between binding affinity loss and antiviral activity loss (C93, C141) provides strong evidence linking the binding site to the mechanism of action. The data are internally consistent across multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C79"
+    ],
+    "result": "NMR studies demonstrate that D1min binds specifically to the upper pore of VP1 pentamers, with VP1 residues T224, T226, V231, and V234 showing chemical shift perturbations upon peptide binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, C67-C73, and C79 provide convergent evidence from protein-observed NMR. The specificity is supported by saturable binding, selective CSPs for pore residues, and consistent binding pose for wild-type and W293A peptides (C70). The exchange kinetics observed by NMR (slow for wild-type, fast for W293A) are consistent with the measured affinities from SPR/AlphaScreen (C73), providing orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C154",
+      "C155"
+    ],
+    "result": "X-ray crystallography at 2.36 \u00c5 resolution reveals D1min binds as an \u03b1-helical peptide in the upper VP1 pore, with key residues L297 and L298 positioned in a hydrophobic pocket formed by VP1 residues T226, V231, P232, and V234.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C85-C91, C154-C155 present structural data that corroborates NMR findings. The electron density is observed in the upper pore (C87), consistent with NMR CSP data. The model agrees with a published structure (RMSD 0.85 \u00c5, C86), and the hydrophobic pocket residues match those identified by NMR and mutagenesis. However, the authors acknowledge multiple binding poses in the electron density maps, which is appropriately described as a 'structurally-guided model' rather than a definitive structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C157"
+    ],
+    "result": "VP1 pore residue substitutions (P232S, V234S, T224A/T243A) substantially reduce D1min binding, with polar substitutions showing greater effects than hydrophobic-conserving substitutions, without grossly altering VP1 pentamer structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C157 demonstrate that mutations at predicted binding residues affect peptide binding as expected. The differential effects of polar vs. hydrophobic substitutions (C74-C75) support the specificity of the hydrophobic pocket interaction. X-ray structures of mutants show no major structural rearrangements (C77), ruling out indirect effects. The data are consistent with prior work on JCV (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C46",
+      "C92"
+    ],
+    "result": "D1min exhibits potent antiviral activity against BKV with EC50 = 30 \u00b1 6.6 nM in RPTE cells, with no observable cytotoxicity in the concentration range tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C46, and C92 report consistent antiviral activity with appropriate controls. Figure 4A shows dose-response data with error bars (n=3), and Figure 4B demonstrates lack of cytotoxicity. The EC50 is approximately 20-fold higher than the binding KD, which is reasonable given cellular complexity. Statistical measures (mean \u00b1 SD) are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C43",
+      "C48",
+      "C57",
+      "C94",
+      "C134",
+      "C169"
+    ],
+    "result": "D1min shows cross-reactivity against JCV, with the homologous JCV peptide binding JCV VP1 with IC50 = 44 nM and inhibiting JCV infection with EC50 = 350 nM in COS-7 cells, suggesting a conserved mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C43, C48, C57, C94, C134, and C169 demonstrate activity against a related polyomavirus. The binding affinity for JCV peptide/VP1 is similar to BKV (C57), and antiviral activity is observed at comparable potency (C8, C94). The sequence conservation in the D1 region across polyomaviruses (C165) supports the biological relevance. However, the EC50 in COS-7 cells is ~10-fold higher than in RPTE cells for BKV (C94), which the authors appropriately acknowledge may reflect cell-type differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C146",
+      "C147"
+    ],
+    "result": "D1min antiviral activity shows MOI-dependence, with a 15.4-fold shift in EC50 from low to high MOI, consistent with the virus being the target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C146-C147 demonstrate MOI-dependent EC50 shift (59 nM at low MOI to 910 nM at high MOI). This is consistent with a mechanism where increased viral particles require proportionally more inhibitor, supporting direct viral targeting rather than a cellular mechanism. The interpretation is logical and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C142"
+    ],
+    "result": "Biotinylated D122 peptide co-purifies with infectious BKV virions, VP1 pentamers, and VLPs, with only N-terminal biotinylation being compatible with binding, consistent with the structural model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 and C142 demonstrate that the peptide can bind to intact virions containing VP2/3. The N-terminal vs. C-terminal biotinylation specificity (C98) provides additional validation of the structural model showing the N-terminus at the top of the pore (C99). This is important evidence that in vitro binding studies are relevant to the intact virus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C49",
+      "C111",
+      "C112",
+      "C113",
+      "C135",
+      "C136"
+    ],
+    "result": "Time-of-addition studies show D1min loses antiviral activity by 4 h.p.i., consistent with viral endocytosis timing. Cell-penetrating TAT-fused peptides show delayed loss of activity, supporting an intracellular mechanism requiring co-entry with virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C49, C111-C113, C135-C136 provide mechanistic insight into the timing of action. The loss of activity by 4 h.p.i. matches endocytosis timing (C111), and the neutralizing antibody P8D11 shows similar kinetics (C112). The delayed loss for TAT-fused peptides (C113, C136) is consistent with cell-penetrating properties allowing later action. The data are internally consistent and appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "D1min does not block BKV binding to cells at concentrations >100-fold over EC50, unlike the neutralizing antibody P8D11, indicating the peptide does not act by preventing viral attachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 demonstrate that D1min does not inhibit cell binding, distinguishing its mechanism from neutralizing antibodies. The negative result is convincing because high concentrations were tested (>100\u00d7 EC50), and the positive control (P8D11) worked as expected (C116). Pre-treatment of virus vs. cells shows no difference in EC50 (C117), further supporting that the peptide acts on the virus rather than cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C137",
+      "C138"
+    ],
+    "result": "Fractionation assays show D1min blocks BKV retrotranslocation from ER to cytosol, with VP1 detected in the pellet (ER) fraction but not cytosolic fraction for D1min-treated samples, while untreated virus shows cytosolic VP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123, C137-C138 demonstrate that D1min acts after endocytosis but before retrotranslocation. The presence of VP1 in pellet fractions for all samples (C122) confirms endocytosis occurred, while absence in cytosolic fraction for D1min-treated samples (C121) indicates blocked retrotranslocation. VLPs lacking VP2/3 serve as an appropriate negative control. The fractionation approach is well-controlled with appropriate markers (BiP for ER, HSP90 for cytosol).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C184"
+    ],
+    "result": "D1min treatment reduces VP2/3 exposure during infection, with decreased VP1-VP2/3 co-localization and reduced overall VP2/3 staining, while VP1 staining remains unchanged. The loss-of-function L297A peptide shows no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 and C184 demonstrate that D1min inhibits VP2/3 exposure, a critical step in polyomavirus entry. The specificity is confirmed by the lack of effect with L297A peptide (C128). The unchanged VP1 staining (C129) indicates the virus is present but unable to undergo proper disassembly. The rotated control for co-localization analysis (mentioned in Figure 5F) provides appropriate validation of the co-localization measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C162",
+      "C163",
+      "C176"
+    ],
+    "result": "Mutations in VP1 pore residues (P232, V234) or VP2/3 D1 region residues critical for peptide binding abolish or severely reduce BKV infectivity in spreading infection assays, without affecting protein expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C101-C110, C162-C163, and C176 demonstrate that residues involved in peptide binding are essential for viral infectivity. The complete intolerance to P232 substitutions (C101) and VP2/3 D1 region mutations (C108) is striking. Controls showing similar protein expression levels (C105, C109) rule out expression artifacts. The consistency with prior JCV work (C106) strengthens confidence. This provides strong evidence that the peptide-binding site represents a functionally important VP1-VP2/3 interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C170",
+      "C201"
+    ],
+    "result": "The convergence of sequence conservation, binding data, and mutagenesis phenotypes suggests the peptide-binding site represents a previously uncharacterized VP1-VP2/3 binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C170, and C201 synthesize multiple lines of evidence: (1) sequence conservation of D1 region across polyomaviruses (C165), (2) high-affinity peptide binding, (3) mutations in either VP1 pore or VP2/3 D1 region abolishing infectivity, and (4) structural data placing the peptide in the pore. The convergence of these independent observations strongly supports the conclusion that this represents a biologically relevant binding interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "NMR studies identify a second, low-affinity D1min binding site (KD >250 \u03bcM) in the lower VP1 pore involving residues I45, T46, T118, T238, and T243, consistent with the position of VP2/3 D1 region in cryo-EM structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 describe a secondary binding site with much lower affinity than the primary site. The KD estimation (>250 \u03bcM) is appropriately conservative given the NMR titration data. The consistency with cryo-EM structures (C84) provides independent validation. This finding is biologically plausible as it may represent the native VP2/3 position in intact virions, though the authors appropriately note the affinity may be higher in the context of full-length VP2/3 (C174).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C158"
+    ],
+    "result": "Truncation studies show that hexamer and trimer peptides, including those containing all three key residues (W293, L297, L298), have >1000-fold reduced binding affinity compared to full-length D1min, indicating that key residues are necessary but not sufficient for high-affinity binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C158 demonstrate that the full 13-residue peptide is required for high-affinity binding. The hexamer containing all three key residues (HEX4) shows 3800-fold loss of affinity (C64), indicating additional residues or helical structure contribute to binding. This is consistent with the \u03b1-helical structure observed in the X-ray model and the principle that peptides <9 residues rarely form secondary structures (C160).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Multiple lines of evidence argue against a cell-surface receptor mechanism: no peptide-cell binding without VP1, no induction of antiviral genes, MOI-dependent EC50, structure-activity relationship inconsistent with dual receptor binding, and differential behavior of TAT-fused peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C151 systematically address alternative mechanisms. The lack of peptide binding to cells without VP1 (C144), absence of antiviral gene induction (C145), and MOI-dependence (C146) all argue against a cellular target. The logic regarding TAT-fused peptides (C149-C151) is sound: if the target were on the cell surface, TAT fusion should not change the time-of-addition profile. The convergence of multiple negative results strengthens the conclusion that the virus is the direct target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "BKV is a clinically important human polyomavirus with ~80% seroprevalence worldwide, causing nephropathy in 3-4% of kidney transplant recipients and hemorrhagic cystitis in hematopoietic cell transplant recipients, with no FDA-approved therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C20 provide background on BKV epidemiology and clinical significance. All claims are appropriately cited to primary literature. The statistics on seroprevalence, disease incidence, and graft loss are consistent with established knowledge. The statement about lack of FDA-approved therapies (C20) is verifiable and provides important context for the therapeutic need.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "BKV entry pathway involves ganglioside receptor binding, caveolin-dependent endocytosis, trafficking to the ER, capsid disassembly by host enzymes, ERAD-mediated retrotranslocation to cytosol, and nuclear import via VP2/3 NLS domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 summarize the established BKV entry pathway, with each step appropriately cited to primary literature. This background is essential for interpreting the mechanistic studies and is consistent with current understanding of polyomavirus biology. The citations are appropriate and the pathway description is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The polyomavirus capsid consists of 72 VP1 pentamers forming a T=7d icosahedron, with VP2/3 bound at the base of VP1 pentamers in a 5+1 complex. All three structural proteins contain DNA-binding domains and contact the viral genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 describe established polyomavirus capsid structure, appropriately cited to structural studies. This background is essential for understanding the VP1 pore as a target and the VP1-VP2/3 interactions. The information is accurate and well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Prior work on polyomavirus VP1-VP2/3 interactions identified the VP2/3 C-terminal region as important for VP1 binding, and JCV VP1 pore mutations reduced PSV transduction and VP2 exposure without affecting assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 accurately summarize prior work that provides context for the current study. The citations are appropriate (Chen et al. 1998, Nakanishi et al. 2006, Nelson et al. 2015). This background establishes that the VP1 pore is functionally important and that VP2/3 C-terminal regions interact with VP1, setting up the rationale for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The 10-fold higher EC50 in COS-7 cells compared to RPTE cells may be due to differences in entry pathway between human and simian cells or higher viral titer requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 offers speculative explanations for the observed difference in EC50 between cell types. While the speculation is reasonable and cites relevant work (Bennett et al. 2013), no experiments were performed to test these hypotheses. The difference could also reflect other factors such as peptide uptake, stability, or off-target binding in different cell types. This remains an open question requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143",
+      "C152",
+      "C177",
+      "C178",
+      "C180",
+      "C187",
+      "C189",
+      "C191",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "The proposed model for D1min antiviral activity involves binding to the upper VP1 pore prior to endocytosis, co-entry with virus, and intracellular action before ER escape, potentially by blocking host factor interactions, stabilizing the capsid, or disrupting VP1-VP2/3 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143, C152, C177-C178, C180, C187, C189, C191, C193-C195 present a model and several mechanistic hypotheses. While the data support that D1min acts after endocytosis but before retrotranslocation, the specific molecular mechanism remains unclear. The authors appropriately present multiple possible mechanisms (blocking host factors, stabilizing capsid, disrupting VP1-VP2/3 interactions) but do not definitively distinguish between them. The model is consistent with available data but requires additional experiments to validate specific mechanistic details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C133",
+      "C198",
+      "C204"
+    ],
+    "result": "This study validates targeting the VP1 pore as a novel strategy for anti-polyomavirus therapeutics, representing the first anti-BKV/JCV molecule that directly targets the VP1 pentamer pore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C53, C133, C198, and C204 represent the overarching conclusions of the study. The novelty claim is supported by the literature review and the comprehensive characterization of D1min as a VP1 pore-binding antiviral. The validation of the VP1 pore as a target is supported by the mutagenesis data showing pore residues are essential for infectivity. However, the therapeutic potential (C204) remains speculative as D1min is a peptide tool compound, not a drug candidate. The claim of 'validation' for therapeutic development is somewhat overstated given the limitations of peptides as drugs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C174",
+      "C203"
+    ],
+    "result": "Speculative applications include that the D1 region may bind the lower pore site with higher affinity in the context of full-length VP2/3, and that N-terminal extensions of D1min could serve as probes for monitoring BKV entry stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C174 and C203 are explicitly speculative. C174 suggests the low-affinity second site may be higher affinity in the context of full-length VP2/3, which is plausible but untested. C203 proposes using N-terminal extensions as probes, which is a reasonable application given the structural model but has not been demonstrated. These are appropriate forward-looking statements but should not be considered validated results.",
+    "result_type": "MINOR"
+  }
+]

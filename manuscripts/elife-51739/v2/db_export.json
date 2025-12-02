@@ -1,0 +1,1606 @@
+{
+  "submission": {
+    "id": "289ce2c9-f373-45e2-9b26-e085a213ffb2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:50:13.601078Z",
+    "updated_at": "2025-12-02T14:50:13.601078Z"
+  },
+  "content": [
+    {
+      "id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "submission_id": "289ce2c9-f373-45e2-9b26-e085a213ffb2",
+      "content_type": "manuscript",
+      "content_text": "# A phenotypic screening platform utilising human spermatozoa identifies compounds with contraceptive activity\n\n## Authors\n\n- Franz S Gruber<sup>1</sup> ([ORCID: 0000-0003-2008-8460](https://orcid.org/0000-0003-2008-8460))\n- Zoe C Johnston<sup>1</sup> ([ORCID: 0000-0003-0904-7166](https://orcid.org/0000-0003-0904-7166))\n- Christopher LR Barratt<sup>2</sup> ([ORCID: 0000-0003-0062-9979](https://orcid.org/0000-0003-0062-9979)) \u2020\n- Paul D Andrews<sup>1</sup> ([ORCID: 0000-0001-7699-5604](https://orcid.org/0000-0001-7699-5604))\n\n### Affiliations\n\n1. National Phenotypic Screening Centre, School of Life Sciences University of Dundee Dundee United Kingdom\n2. Reproductive and Developmental Biology, Division of Systems Medicine, School of Medicine Ninewells Hospital and Medical School, University of Dundee Dundee United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThere is an urgent need to develop new methods for male contraception, however a major barrier to drug discovery has been the lack of validated targets and the absence of an effective high-throughput phenotypic screening system. To address this deficit, we developed a fully-automated robotic screening platform that provided quantitative evaluation of compound activity against two key attributes of human sperm function: motility and acrosome reaction. In order to accelerate contraceptive development, we screened the comprehensive collection of 12,000 molecules that make up the ReFRAME repurposing library, comprising nearly all the small molecules that have been approved or have undergone clinical development, or have significant preclinical profiling. We identified several compounds that potently inhibit motility representing either novel drug candidates or routes to target identification. This platform will now allow for major drug discovery programmes that address the critical gap in the contraceptive portfolio as well as uncover novel human sperm biology.\n\n## Introduction\n\nAn effective and comprehensive family planning strategy is fundamental to delivery on the United Nations 17 Sustainable Development Goals (Starbird et al., 2016; Goodkind et al., 2018), however the current contraceptive portfolio is suboptimal. For example, it is estimated that more than 214 million women in developing countries have an unmet need for contraception which results in 89 million unintended pregnancies and 48 million abortions every year, with substantial impacts on maternal and child health and poverty levels (Guttmacher Institute, 2017). To achieve the UN targets it is critical that involvement of men be considered of equal importance as women (Hardee et al., 2016). However, it is noticeable that no effective, reversible and widely available form of contraception has been developed for men since the condom and as such the burden falls largely on the woman. The development of drugs that can be used in the male would address a critical gap in the contraceptive portfolio.\n\nProgress in developing new male contraceptives has been slow for a plethora of reasons. Despite decades of research, safe and effective hormonal approaches to prevent spermatozoa production have yet to be realised and viable alternatives remain elusive (Page and Amory, 2018). Developing a drug for any purpose is difficult but one that blocks sperm function is a particular challenge as spermatozoa don\u2019t divide, transcribe or translate, have specialized organelles, are highly motile and continually produced in large numbers (~100 million per day). Moreover, as the production of fertilization competent cells is necessarily different between species, it is essential to use a human system early in the drug discovery cascade to increase the chances of translational success. The spermatozoa\u2019s sole function post-ejaculation is to swim until it closes in on the oocyte. The spermatozoa are then able to undergo a unique exocytotic process called the acrosome reaction (AR) which facilitates penetration of the zona pellucida, the oocyte\u2019s outer glycoprotein shell and allows fusion with the oocyte\u2019s plasma membrane, delivering its DNA. Hence, a male contraceptive could work in a number of different ways \u2013 it could completely halt spermatogenesis, block an essential function of the spermatozoon (such a motility) or perturb a cellular process that results in a non-productive interaction with the oocyte (such as prematurely triggering the acrosome reaction, and/or by blocking exocytosis or inhibiting receptor binding). Low sperm motility is a common cause of male infertility (Samplaski et al., 2019) indicating that targeting this process should yield effective drugs. The options for delivery of a contraceptive are wide ranging, but our primary aim is to develop a relatively fast-acting safe drug, self-administered by the male, that specifically and effectively irreversibly blocks the sperm\u2019s ability to get to the egg and/or fertilise it.\n\nThough some potential sperm-specific contraceptive drug targets, such as the calcium channel CatSper, have been identified (Lishko and Mannowetz, 2018), our relatively poor understanding of spermatozoon biology makes target-agnostic, or phenotypic strategies more attractive (Barratt et al., 2017). Phenotypic drug discovery is undergoing a renaissance in a number of therapeutic areas because it can uncover novel biology in an unbiased way. Retrospective analysis of drug approvals shows the approach to be more successful in first-in-class medicine discovery than previously appreciated (Swinney and Anthony, 2011; Moffat et al., 2017). However, for male contraceptive drug discovery, a limiting barrier has been the absence of a scalable drug screening system using spermatozoa.\n\nTo address this unmet need we set out to develop the first high-throughput phenotypic screening platform for sperm where an imaging-based kinetic analysis module that tracks motility, is followed by a flow cytometry -based assay module that detects both the degree of acrosome reaction (AR) and cell viability - both modules coordinated by a fully automated robotic system. The bespoke computational pipeline quantitatively evaluates each compound\u2019s effect on both motility and AR (and viability) thus achieving unprecedented throughput. The platform was used to identify motility inhibitors from a unique 12,000 molecule ReFRAME (Repurposing, Focused Rescue, and Accelerated Medchem) library, which represents the most comprehensive collection of drugs available, as it contains nearly all the small molecules that have achieved regulatory approval and others that have undergone varying degrees of clinical development or have had significant preclinical profiling (Janes et al., 2018). This advance opens up the possibility of accelerated male contraceptive development by allowing drug repurposing, target identification as well as screening of chemical diversity libraries for novel medicinal chemistry start points.\n\n## Results\n\n### Phenotypic assay development\n\nOur automated platform (Figure 1A) allows for the identification of relatively fast-acting compounds with a rapid plate-processing time (~75 minutes/ 384-well plate), where the motility assay runs for\u00a0~30 min followed directly by the AR assay (~45 min). Automated cell tracking (Figure 1B and Figure 1\u2014figure supplement 1A,B) using time-lapse images allowed kinetic parameter quantification on\u00a0>200 cells/well (Figure 1C). The kinetics show good agreement with clinical systems (Figure 1\u2014figure supplement 1C) and a comparable distribution was observed between experimental days, plates and positions (Figure 1\u2014figure supplement 2) with any small differences between days stemming from donor pool variance. Importantly, spermatozoa were found to be tolerant to the DMSO concentrations used in our screening program (0.0625%\u20130.1% Figure 1\u2014figure supplement 1D). To determine the optimal screening batch size untreated spermatozoa were dispensed every 30 min for 150 min observing only a small decrease in motility (~10%) after four plates were screened (Figure 1\u2014figure supplement 1E). A flow cytometry-based assay measuring AR (Figure 1D) was run directly afterwards (Figure 1E and Figure 1\u2014figure supplement 1F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig1-v2.jpg)\n\n**Figure 1.:** (A) Graphical summary of modular screening workflow where motility measurement is followed by acrosome reaction (AR) measurement allowing a screening throughput of\u00a0>1400 compounds per donor pool (B) Steps in imaging and analysis: human sperm are recorded with brightfield illumination (first panel) then sperm heads detected using a particle tracking algorithm (second panel) which are then tracked across the timelapse series of images (third panel) and subsequently classified (fourth panel).\u00a0Each panel contains a zoomed-in subsection of the field. Colour coding for tracking distance and kinetic classification is shown in the panel insets: Tracking panel - rainbow gradient (showing progression over time); Classification panel - red for immotile (IM), yellow for non-progressively motile (NPM) and blue for progressively motile (PM). Scale bars: 100 \u03bcm (main images), 5 \u03bcm (insets). (C) Sperm counts per well after microscopy and detection shown in a combined violin/box plot. Colours: purple violin outline (probability density of values), yellow dots (outliers of boxplot). (D) Graphical summary of the expected populations determined by flow cytometry based on distribution of cells measured with FL3-A (Pi) vertical axis and FL1-A (PNA-488) horizontal axis: dead cells (upper left, Pi+ PNA-); dead and acrosome-reacted (upper right, Pi+ PNA+); unstained/live/non-reacted (lower left) and live acrosome-reacted (lower right, Pi-PNA+). (E) Example flow cytometry data comparing sperm treated with the Ca2+ ionophore (A23187) which induces AR (left panel) with sperm from DMSO-treated well (right panel). Colours indicate event density. (F) Combined violin/box plot data showing flow cytometry event counts per well. Colours and label as in (C).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Example data for a single sperm track with x and y coordinates being used to calculate standard sperm kinetics. Colour represents the cumulative distance travelled in microns. Acronyms: VCL (curvilinear velocity), ALH (amplitude of lateral head displacement; maximum value), STR (straightness ratio). (B) Explanation of main kinematic parameters (VCL, VSL [straight line velocity], VAP [average path velocity] and ALH). (C) Comparison of data from the standard computer-assisted semen analysis (CASA) with the high-throughput system using a Bland-Altman plot of VAP, VCL and VSL. Colours: turquoise line (mean of differences), dashed purple lines (limit of agreement, mean of differences +\u00a0/-\u00a01.96 * SD). (D) Effect of DMSO on sperm motility (VCL) relative to untreated wells. Green line represents concentration range used in this study (0.0625\u20130.1%) (E) Effect of pre-dispense incubation time on sperm motility (% reduction in VCL). Colours: green line (arbitrary 10% cut-off). (F) Plots of FL3-A vs FL1-A for the flow cytometry assay controls using acrosome specific PNA-488 dye (FL-1) and cell viability marker propidium iodine (Pi, FL-3) upon addition of A23187 Ca-ionophore. Panels from left to right: with ionophore and acrosome stain; with ionophore and propidium iodide only, with ionophore but unstained. Colours: red rectangles show population gates; coloured hexagons show event density (bin size\u00a0=\u00a040).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Distribution of average path velocities (VAP) for sperm motility classes (IM\u00a0=\u00a0immotile; NPM\u00a0=\u00a0non progressively motile; PM\u00a0=\u00a0progressively motile), using data from two positions within each well (Position 1, Position 2), represented as combined box/violin plot.\u00a0Each box/violin plot is a summary of a screening day (n\u00a0=\u00a04, 384-well plates). Colours: each screening day is represented as a different colour; grey\u00a0=\u00a0boxplot outliers. (B) Distribution of numbers of tracked sperm per well across screening days, represented as combined box/violin plot. Each box/violin plot is a summary of one screening plate. Colours as in (A). (C) Distribution of events identified in the flow cytometry assay, represented as combined box/violin plots. Each box/violin plot is a summary of a screening plate. Colours as in (A).\n\n### Screening of the ReFRAME library, confirmation of hits by dose response\n\nThe ReFRAME library (11,968 compounds) was supplied in \u2018assay-ready\u2019 imaging plates and was solubilised prior to addition of sperm. High assay quality was achieved throughout with a Z\u2019-factor between 0.4\u20130.8 (Figure 2B). A total of 63 putative hit compounds decreased motility to varying degrees based on a hit selection cut-off of\u00a0>15% reduction in motility (Figure 2A with examples in Figure 2C,D,F,G and Video 1 and 2). 14 compounds were selected as putative AR+ hits (Figure 3A with examples in B, C). Motility hits were confirmed with resupplied material in dose-response experiments. There was a dose-dependent decrease in motility for 29 compounds (46% hit confirmation rate), with EC50 values as low as 0.05 \u00b5M and effect sizes ranging from 15\u2013100% (Figure 2F,G; Figure 2\u2014source data 1, Supplementary file 1). Amongst the confirmed hits were the aldehyde dehydrogenase inhibitor, Disulfiram (70% maximum reduction at 10 \u00b5M) and a putative platelet aggregation inhibitor, KF-4939 (100% max. reduction; EC50\u00a0=\u00a00.49 \u03bcM), and a range of other compounds having very modest effect and/or showing low potency (See Figure 2\u2014source data 1, Supplementary file 1). In order to test reversibility, wash out experiments were performed. Only a small recovery of motility was observed, after wash out of Disulfiram (Figure 2\u2014figure supplement 1). In the AR screen, 9 of the resupplied compounds had a dose-dependent effect with EC50 values as low as 0.4 \u00b5M (See Figure 3\u2014source data 2, Supplementary file 2). However, following the orthogonal assay triaging we implemented to eliminate assay interference compounds, none of the AR hits were found to be true positives (see examples in Figure 3\u2014figure supplement 1D) despite the primary screen showing good assay robustness.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig2-v2.jpg)\n\n**Figure 2.:** (A) Primary screening results of the motility assay.\u00a0Each dot represents a well (either compound or control well) showing % of DMSO control (Curvilinear Velocity: VCL). Positive controls (Pristimerin), negative controls (DMSO) and individual compound datapoints are shown. The dashed line showing the 15% of control (reduction in VCL) \u2013 the cut-off for primary hit selection. Total number of compounds\u00a0=\u00a011,903, excluding wells with auto-focus errors and with \u2018sticky\u2019 compounds which have been excluded from analysis. See\u00a0dataset\u00a0(http://doi.org/10.5061/dryad.jdfn2z36z)\u00a0Figure 2\u2014source code 1. (B) Assay robustness: the standard high throughput screening metric, Z' (see Materials and methods; Zhang et al., 1999) was used to determine the performance of the assay for all screening plates. Dashed lines indicate min/max Z' values. (C) Tracking data visualizations of 3 example wells showing sperm tracks of both imaging positions (Position 1 [Pos. 1] and Position 2 [Pos. 2] respectively) within the wells. A DMSO control well (left panels \u2018Control\u2019) shows a large number of progressively motile (PM) sperm (yellow) with few non-progressively motile (NPM) sperm (green and very few immotile (IM) sperm (purple) \u2013 this is in contrast to the shorter tracks and higher levels of NPM and IM in the middle panel (\u201820% reduction\u2019) for a compound that shows 20% inhibition of motility (i.e. 80% of control) and the right hand panel (\u201880% reduction\u2019) for a compound showing 80% inhibition (i.e. 20% of control), showing almost all cells are in the IM and NPM classes. (D) Histogram of sperm tracks quantification of the data show in (C). (E) Summary of motility assay hit rate (0.5%) and reconfirmation rate (0.24%). (F-G) Dose response confirmation of two hits. 8-point 3-fold dilution curves are shown with 10 \u03bcM as the highest concentration. Two data points per concentration (n\u00a0=\u00a02, data point is mean\u00a0\u00b1\u00a0SD). Each curve is a 4-parameter logistic fit. Each plot shows estimated values Hill Slope and EC50. The chemical structure of the hit compound is shown as well as some annotation and physicochemical properties. Physicochemical properties were calculated using RDKit, Python and KNIME: SlogP\u00a0=\u00a0partition coefficient (Wildman and Crippen, 1999); TPSA is the Topological Polar Surface Area (Ertl et al., 2000); MW is the exact Molecular weight; QED\u00a0=\u00a0Quantitative Estimate of Drug-likeness (Bickerton et al., 2012).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Different donor pools analysed on three different days are represented by the three different colours. Data shown are four technical replicates per donor pool for DMSO/Disulfiram and two technical replicates for the untreated samples. For each measurement a minimum of 200 cells were recorded. See Figure 2\u2014figure supplement 1\u2014source data 1 along with Figure 2\u2014figure supplement 1\u2014source code 1 .\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig3-v2.jpg)\n\n**Figure 3.:** (A) Results of primary screening of the library using the acrosome assay (live cells, acrosome reacting, Pi- PNA+ population). Each dot represents a well (either compound or control well). Shown is % Events (number of events in Pi- PNA+ gate relative to total events in the sampled well). Datapoints for compounds, negative controls (DMSO) and positive controls (A23187) are shown. Black dashed line\u00a0=\u00a015% threshold for primary hits selection. See Figure 3\u2014source data 1 along with Figure 3\u2014source code 1. (B-C) Data from two example wells: a DMSO well (left panel) and a well with 65% Pi- PNA+ population (right panel). (D) Summary of acrosome assay results before and after triage.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Results are shown of primary screening data for two of the other populations in the flow cytometry assay: (A) Acrosome reaction positive and propidium iodide positive (PI+ PNA+) events and (B) acrosome reaction negative and propidium positive (Pi+ PNA-) events. Shown is % Events (number of events relative to total events per well). Datapoints for compounds, negative controls (DMSO) and positive controls (A23187) are shown. See Figure 3\u2014source data 1 along with Figure 3\u2014source code 1 . (C) Control experiment showing microscopy images of A23187-induced acrosome-reacted sperm. Shown are individual channels (greyscale) for acrosome signal stained with PNA-Alexa488 (green band in merged image) and DNA stained with Propidium iodide indicating lack of cell viability (purple in merged image). Scale bar\u00a0=\u00a010 \u03bcM. (D) Orthogonal assay to eliminate fluorescent compounds: Two primary hits were analyzed using fluorescence microscopy without addition of staining reagents: top panels show the non-specific fluorescence of Merbromin and in bottom panels fluorescence of Manoalide which stains only significantly in the midpiece/tail. Grey scale images are shown in the left two panels and a merged image on the right. Key: green channel\u00a0=\u00a0Ex 488 nm with Em bandpass filter BP 525/50 nm; red channel\u00a0=\u00a0Ex 561 nm; Em Bandpass filter BP600/37 nm). Scale bar\u00a0=\u00a010 \u03bcM.\n\n![Video 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/51739/elife-51739-video2.mp4.jpg)\n\n**Video 2.:** Tracking is overlayed in each panel. Colour coding is detailed in Figure 2.\n\n## Discussion\n\nA major barrier in the search for new male contraceptives has been the lack of an effective high throughput phenotypic screening system. This study presents the first platform based on imaging and flow cytometry that measures two fundamental aspects of sperm behaviour \u2013 motility and AR, allowing for the rapid screening of compound collections.\n\nA significant challenge was to create a system for the tracking of these highly motile cells that was fully automated and scalable to allow throughput at sufficient speed. Moreover, concomitant assessment of a second functional attribute, AR along with cell viability was developed in order to maximise use of the biological material. Assessment of motility required novel implementation of tracking algorithms. Importantly, the kinetic outputs were equivalent to those from the \u2018industry-standard\u2019 CASA, which is very low throughput and unsuitable for screening more than a few compounds at one time. Significant workflow optimisation resulted in good assay robustness and an acceptable hit confirmation rate following the primary screen using a medium stringency cut off for hit selection (>15% reduction). For AR detection, a flow cytometry approach was taken based on established methods (Mortimer et al., 1987) and showed good assay robustness. However, the presence of assay-interfering compounds in screening libraries (potential fluorescent compounds including DNA intercalators) necessitated further triaging steps (see Materials and methods) to eliminate false positives. This combination of triaging approaches meant that, in this screen, no AR compounds were suitable for progression. An improvement to the AR primary assay could be to use a far-red labelled lectin reagent to detect the glycoproteins. Other variants of the assay would be to either use sperm that had been capacitated, a state of increased readiness to undergo the AR process or use it to find drugs that would block the AR induced by a physiological stimulus. These latter variants are worthy of future investigation.\n\nIt is worth noting that whilst the primary goal of this programme is to identify compounds that will act as contraceptive by decreasing motility we detect a larger number of putative motility upregulating hits. These compounds are of interest for not only target identification and uncovering novel sperm biology but also their potential to improve fertility treatments. Overall, although the two assays presented here are fairly complex biological assay using primary cells, it achieved acceptable throughput with the potential to increase batch size for larger screening campaigns.\n\nThe advantage of using the ReFRAME collection was the potential to repurpose drugs that are already approved for other indications, or are at earlier stages of clinical progression. The associated compound annotations and safety data offers the potential to help accelerate the development of an effective male contraceptive. In the motility assay the hit rate of\u00a0~0.2% is typical for a cell-based assay, however surprisingly a relatively high number of hits were not deemed suitable for compound progression. Examples included potentially toxic mercury-containing compounds (phenylmercuric borate and mercufenol chloride); antiseptics and antibiotics including tyrothricin, or compounds with impacts on fundamental biology for\u00a0example the microtubule stabiliser and chemotherapeutic, docetaxel. However, several hits are potentially of interest. One is Disulfiram (70% reduction at 10 \u03bcM) a drug that is well tolerated, has long been used for treating alcohol dependency and has previously been shown to inhibit sperm motility (Lal et al., 2016). Disulfiram is unlikely to be developable as a suitable contraceptive drug due to its side-effects when alcohol is consumed but has potential to facilitate mode-of-action studies. One recent report identified 3-Phosphoglycerate dehydrogenase (PHGDH) as a target for disulfiram (Spillier et al., 2019) whilst another identified NLP4, a subunit of VCP/p97 segregase (Skrott et al., 2017; Skrott et al., 2019) although the relevance of either to sperm function is unclear. The identification of KF-4939, a putative platelet aggregation factor (PAF) inhibitor, as a potent hit (100% max. reduction EC50\u00a0=\u00a00.5 \u00b5M) may also be of interest since PAF has been used to improve sperm function in male infertility treatments (Roudebush et al., 2004). It is noteworthy that like disulfiram, KF-4939 also contains a disulphide linkage indicating that its biological effect maybe mediated by modifying sulfhydryls on proteins (Yamada et al., 1985). Further thiol-containing compounds, bismuth ethanedithiol (98% max reduction; EC50\u00a0=\u00a02.5 \u03bcM) and the anti-fungal benzothiazole, Ticlatone (96% max. reduction EC50\u00a0=\u00a04.4 \u00b5M) were also potent hits, suggesting free cysteines in, as yet, unidentified protein(s), may play a critical role in motility. Of interest is the observation that the Toll-like receptor 7/8 ligand (Resquimod; R848), recently shown to preferentially reduce the motility of X chromosome-bearing mouse sperm by suppressing ATP production (Umehara et al., 2019), was a hit, demonstrating that this phenotypic screening approach has the potential to uncover new aspects of sperm biology.\n\nIt was somewhat surprising that relatively few drugs or drug-like molecules in the ReFRAME collection were potent and effective inhibitors in the motility assay. This may reflect the unique biology of the spermatozoon that has evolved for a singular purpose \u2013 to reach the oocyte and fertilise it and/or that the targets within pharma\u2019s therapeutic areas of interest over the last few decades are not similarly functional in human sperm. Conversely however, we did observe a large number of compounds (Figure 2A) that had a significant positive effect on sperm motility which may be target agonists as well as potential start points for treating men with low sperm motility. The development of an effective safe male contraceptive is challenging because a prerequisite, other than the obvious need for safety, is a level of reversibility. Other possibilities, such as a drug taken by the female or an agent for use as a topical spermicide (for example to replace nonoxynol-9) are options to consider in the future and depend to a large extent on the pharmacokinetic properties of compounds we identify and their mode of action \u2013 for example some may have poor bioavailability.\n\nIn summary, our high-throughput phenotypic platform allows for the screening of bioactives including natural products, focussed small molecule libraries and chemical diversity sets, which can provide novel start-points for male contraceptive drug development, as well as the identification of new drug targets in human spermatozoa.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Homo sapien)</td>\n      <td>Live spermatozoa</td>\n      <td>Donated semen samples</td>\n      <td></td>\n      <td>Local ethical approval (13/ES/0091)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Lectin PNA (Arachis hypogaea), Alexa Fluor 448 Conjugate</td>\n      <td>ThermoFisher Scientific</td>\n      <td>ThermoFisher:L21409; RRID: AB_2315178</td>\n      <td>Stored as 1 mg/mL stock in DMSO; used at 1:1000 final dilution</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Propidium Iodide; Live/Dead Sperm Viability kit,</td>\n      <td>ThermoFisher Scientific</td>\n      <td>ThermoFisher:L7011,</td>\n      <td>Stored as 2.4 mM stock; used at a 1:2000 final dilution</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ReFRAME (Repurposing, Focused Rescue, and Accelerated Medchem) library</td>\n      <td>CALIBR at the Scripps Institute; Publication (Janes et al., 2018)</td>\n      <td></td>\n      <td>www.reframedb.org</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pristimerin</td>\n      <td>Merck</td>\n      <td>Merck:530070</td>\n      <td>Stored as 10 mM stock in DMSO; used at final concentration of 20 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>calcium ionophore (A23187)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Sigma-Aldrich:C7522</td>\n      <td>Stored as 10 mM stock in DMSO, used at a final concentration of 10 \u00b5M)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Disulfiram</td>\n      <td>Tocris</td>\n      <td>Tocris:3807</td>\n      <td>Stored as 10 mM stock in DMSO, used at 10 \u03bcM final concentration</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trackpy v0.4.1</td>\n      <td>Zenodo. (http://doi.org/10.5281/zenodo.1226458)</td>\n      <td></td>\n      <td>Publication: (Crocker and Grier, 1996); Publication: (Allan, 2018)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FFMPEG</td>\n      <td>FFmpeg Developers (http://ffmpeg.org)</td>\n      <td>RRID:SCR_016075</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bioconductor packages</td>\n      <td>Bioconductor (https://bioconductor.org)</td>\n      <td>RRID:SCR_006442</td>\n      <td>flowCore, flowDensity, flowWorkspace, ggcyto</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HDF5</td>\n      <td>HDF Group (www.hdfgroup.org)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>dr4pl</td>\n      <td>Dr4pl (https://cran.r-project.org/web/packages/dr4pl/index.html)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Code used for data analysis</td>\n      <td>This paper</td>\n      <td></td>\n      <td>The R code used for data analysis is included in the supplement files accompanying this paper</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>KNIME</td>\n      <td>Berthold et al., 2008</td>\n      <td></td>\n      <td>https://www.knime.com</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RDKit</td>\n      <td>RDKit, 2018</td>\n      <td></td>\n      <td>https://www.rdkit.org</td>\n    </tr>\n  </tbody>\n</table>\n\n### Ethical approval\n\nWritten consent was obtained from each donor in accordance with the Human Fertilization and Embryology Authority (HFEA) Code of Practice (version 8) under local ethical approval (13/ES/0091) from the Tayside Committee of Medical Research Ethics B.\n\n### Development of methods for motility and Acrosome Reaction (AR)\n\nA pre-existing automated cell-based phenotypic screening platform was adapted with the use of live human spermatozoa. The platform utilises a Yokogawa CV7000 Cell Voyager high-throughput microscope able to image 384 multiwell plates under full environmental control acquiring timelapse images at a sufficiently high speed (~48 fps)_to capture the fast-moving sperm for tracking analysis. For high throughput screening with human spermatozoa to be effective and yield meaningful hits, the system needed to replicate, as close as possible, the manual workflow currently used in an andrology lab, so that the effect of large numbers of compounds on viable human sperm could be performed. In order to achieve this goal, we investigated a number of factors that could impact the quality of the data such as: plate type; concentration and number of spermatozoa per well; logistics of spermatozoa preparation by density gradient centrifugation and handling; donor-pooling; dispense speed for getting spermatozoa into 384 well plates; timing of compound addition; temperature control; image acquisition parameters; algorithm choice for motility assessment and data management and, evaluating the overall speed of data analysis. In addition, a flow cytometry-based assay and data analysis workflow was developed to measure acrosomal status and cell viability. We chose to perform all experiments on non-capacitated sperm as this condition is the most consistent, less prone to donor-effects and is closer to the state in which the sperm will be when they would be encountering the male contraceptive drug. The goal was to be able to screen a 384-well plate in both assays consecutively within 90 min of sperm dispensing using the fully automatic robotic system. Data was analysed for inter- and intra-plate variation (both technical and biological replicates) and signal-to-background and variance measured to demonstrate the assay was reproducible and robust. The assay was shown to be scalable and all the workflows optimal. Once established, the system was validated by screening the ReFRAME library (Janes et al., 2018) and hits confirmed by dose-response analysis.\n\n### Sperm handling\n\nControl semen samples were obtained from volunteer donors with normal sperm concentration, motility and semen characteristics (WHO, 2010) and no known fertility problems. Samples were obtained by masturbation after 48\u201372 hr of sexual abstinence. After\u00a0~\u00a030 min of liquefaction at 37\u00b0C, cells were prepared using a discontinuous density gradient procedure (DGC). Semen was loaded on top of a 40\u201380% suspension of Percoll (Sigma Aldrich, UK) diluted with non-capacitation medium using Minimal Essential Medium Eagle, supplemented with HEPES, Sodium lactate and Sodium Pyruvate to achieve a similar buffer as described previously (Tardif et al., 2014). We routinely pooled samples after DGC from 3 to 5 donors for use in each screening batch run in order to reduce donor-to-donor variability. Samples were obtained and analysed in line with suggested guidance for human semen studies where appropriate (Bj\u00f6rndahl et al., 2016).\n\n### Motility assay\n\nSperm cells were incubated for 3 hr at 37\u00b0C after DGC, transferred to the robotic platform (HighRes Biosolutions Inc) and maintained at 37\u00b0C with gentle stirring (100 rpm) in a water bath on top of a magnetic stirrer. Approximately 10,000 spermatozoa (10 \u03bcl) were dispensed per well using a MultiDrop Combi (ThermoFisher) into pre-warmed assay-ready plates. Spermatozoa were incubated with the compounds for 10 mins (thus favouring fast acting compounds) at 37\u00b0C in the CV7000 microscope prior to the commencement of imaging.\n\n### Time-lapse imaging\n\nA CV7000 Cell Voyager high-content imaging system (Yokogawa) was used as it allowed full environmental control, sufficient contrast using simple brightfield optics and a fast acquisition rate (up to 45 frames per second). Using a 20x lens with bright field illumination (0.11 ms exposure, 3% lamp power), time-lapse image series were acquired (24 frame in 0.5 s) at two positions per well (with a 400 \u03bcm gap between positions to eliminate double counting of sperm). Image acquisition across a 384-well plate with such settings takes\u00a0~\u00a017 min.\n\n### Sperm tracking\n\nA Python implementation of the particle tracking algorithm originally developed by others (Crocker and Grier, 1996) was employed (Trackpy v0.4.1 Allan, 2018). The algorithm determines the position of every sperm head in each frame and links the position over time creating tracks. We optimized the algorithm parameters for our imaging data to exclude sperm cross-tracks and avoid detecting non-sperm particles. The image data (~17,000 files amounting to 21 GB per plate) can be processed within 30 min using a standard desktop PC (Intel Core i5-6600 CPU, 3.3 GHz, 8 Gb RAM) and can also be parallelized on a compute cluster with minimal effort.\n\n### Acrosome assay\n\nA flow cytometry-based assay was developed employing an iQue Screener (Sartorius) with Alexa488-conjugated peanut agglutinin (PNA) (Mortimer et al., 1987) and general sperm viability (using propidium iodide, Pi). This assay was run directly after motility assessment. Controls (DMSO and the Ca2+ ionophore A23187) were added using an acoustic dispenser (Echo 555, Labcyte Inc) and incubated for 10 min at 37\u00b0C in the SteriStore (HighRes Biosolutions Inc). PNA488 (ThermoFisher Scientific, Cat. No. L21409, stored as 1 mg/mL stock) was then added to achieve a 1:1000 final dilution and propidium iodide (ThermoFisher Scientific, Live/Dead Sperm Viability kit, Cat. No. L7011, stored as 2.4 mM solution) was added to achieve a 1:2000 final dilution using a liquid handler (Tempest, Formulatrix). After addition of dyes, plates were incubated for 10 min at 37\u00b0C in the SteriStore before sampling using an iQue Screener (2 s sip time per well with pump setting of 45 rpm). This resulted in a sample processing time of about 25 min per 384-well plate. Cells were categorised as either: unstained cells; \u2018dead\u2019 cells (Pi+ PNA-); Acrosome-reacted but \u2018dead\u2019 cells (Pi+ PNA+); or Acrosome-reacted \u2018live\u2019 cells (Pi- PNA+). This method is capable of detecting a shift of populations (Pi+ and PNA+) upon induction of AR using A23187. The AR assay was performed as an agonist screen (scoring for induction of AR in live cells compared to DMSO controls) with the expectation that compounds could be found that induce AR beyond levels of induction with A23187.\n\n### Controls and QC criteria\n\nFor the motility assay DMSO was used as a vehicle control (negative control) and Pristimerin (Merck, Cat. No. 530070, stored as 10 mM stock in DMSO; final concentration of 20 \u00b5M) as a positive control. For the acrosome assay we added a calcium ionophore (A23187, Sigma-Aldrich, Cat. No. C7522, stored as 10 mM stock in DMSO, used at a final concentration of 10 \u00b5M) as a positive control and DMSO was added to wells as a negative control to be at the same final concentration as that present in the compound-containing wells (0.0625%). DMSO tolerance was tested by performing the standard motility assay exposing sperm to increasing concentrations (max 10%) of DMSO for 10 min. We calculate the standard statistical measure of assay robustness, the Z\u2019 value (Zhang et al., 1999) for each plate using positive and negative controls for the motility assay and observed Z\u2019 values ranging between 0.4\u20130.8. In addition, we performed a visual check of heatmaps for every plate to detect edge effects.\n\n### Data analysis and normalization\n\n#### Motility\n\ncustom R scripts were written to calculate standard sperm kinetic parameters (Mortimer et al., 2015). Those parameters allow classification of sperm into standard WHO classes: progressively motile (PM) (where average path velocity: VAP\u00a0>\u00a025 um/sec AND straightness: STR\u00a0>\u00a080%); non-progressively motile (NPM) (where VAP\u00a0>\u00a05 um/sec OR straight line velocity: VSL\u00a0>\u00a011 um/sec), and immotile (IM). In addition to calculating kinetic parameters, we established a workflow to generate movies of time-lapse videos with overlapping sperm tracks using R and FFMPEG (FFmpeg Developers. Available from http://ffmpeg.org). We expressed results as % of control curvilinear velocity: VCL. This was defined as VCL_median (cpd)/VCL_median(DMSO)*100. Hit selection criteria was 15% reduction of VCL. VCL was chosen as the main kinetic measurement as it had an acceptable Z\u2019 value and is independent of path averaging. Wells with autofocus errors or compounds which did not dissolve properly (resulting in sperm cells being stuck in one location but moving normally in the rest of the well) were excluded from analysis.\n\n#### Acrosome\n\niQue Screener Data was exported as FCS format and processed using the following Bioconductor packages for analysing flow cytometry data: flowCore, flowDensity, flowWorkspace, ggcyto (see https://bioconductor.org). These packages allow handling flow cytometry data as objects, which can then be compensated, gated and visualized efficiently. In addition, we use HDF5 format (www.hdfgroup.org) for storing processed and averaged data. Percent events for each population (Pi+ PNA+, Pi- PNA+, Pi+ PNA- and Pi- PNA-), normalized to total well events, were calculated. Hits were defined as compounds which induce AR beyond 15% (maximum level of induction achieved with positive control). Wells with irregularities (low in Pi+ or Pi+PNA+ population, or below 200 events) have been excluded from analysis.\n\n### Compound screening\n\nWe screened the\u00a0~12,000 compound ReFRAME (Repurposing, Focused Rescue, and Accelerated Medchem) library (Janes et al., 2018; and www.reframedb.org) supplied by CALIBR at the Scripps Institute. This unique library consists of bioactives and approved drugs that have been assembled from the literature, drug databases and by patent mining. Compounds dissolved in DMSO were spotted (12.5 nL, final assay concentration\u00a0~\u00a06 \u03bcM) into 384-well black-sided optical imaging plates (CellCarrier, PerkinElmer) at CALIBR and were shipped on dry ice to the screening centre in Dundee and stored at \u221220\u00a0\u00b0C\u00a0until required. Immediately prior to screening plates were thawed, controls were added using the acoustic dispenser (Echo 555, Labcyte), and 10 \u03bcl warm media added followed by shaking on a plate shaker for 10 s. Plates were then incubated for 30 min at 37\u00b0C to solubilise the compounds and prewarm the plates prior to the addition of live sperm (see above). With the addition of the media containing sperm (10 \u03bcl) the final concentration of DMSO in each well was 0.0625%.\n\nAll experiments were performed with pools of donors (3\u20135 per batch of 4 screening plates) and results normalised to DMSO-treated wells (16 wells per plate). Sperm was first prepared by DGC and then pooled. Where a single donor sample was found to less than 1/3 of the yield required then the contribution from the other doors was increased to compensate.\n\nThe ReFrame library has been screened for cytotox (using CellTiterGlo) in HEK293 and HepG2 cells (see www.reframedb.org) with some of the hit compounds displaying activity in one or both assays (Figure 2\u2014source data 1), information which helps inform compound progression decisions.\n\n### Dose response experiments\n\nAssay-ready 384-well CellCarrier plates with 8-point curves (10 \u03bcM highest concentration) were resupplied by CALIBR in duplicate and processed as described above. Curves were fitted using the R package dr4pl (https://cran.r-project.org/web/packages/dr4pl/index.html) using a 4-parameter logistic fit option.\n\n### Triaging of AR hits\n\nGiven the prevalence of a range of interfering compounds amongst the library hits, two approaches were used for triaging. These additional triaging steps, after the primary screen, allowed for the elimination of intrinsically fluorescent compounds and compounds fluorescing in the presence of biological material. Screening plates were excited at 488 nm and read at 520 nm and 670 nm in a M1000Pro multimode plate reader (Tecan) after flow cytometry. In addition, when performing dose-response curve follow up on resupply material a replicate set of compound-dosed cells were processed with no-dyes added. This identified the small number of compounds whose fluorescence is indistinguishable from a true positive. In addition, visual confirmation of the appropriate pattern of acrosome staining was performed by microscopy.\n\n### Disulfiram washout assay\n\nIn order to assess the ability of sperm cells to recover motility after Disulfiram removal, wash-out experiments were conducted at two timepoints using non-capacitating conditions. Spermatozoa were pooled after DGC preparation in the same manner as for screening. Pooled samples were diluted to a concentration of approximately 106/mL and incubated at 37\u00b0C under non-capacitating conditions (see above). After this initial incubation period, Disulfiram (10 \u03bcM final concentration) or vehicle control (DMSO to 0.1% final concentration) were added and incubated at 37\u00b0C for 20 min. Following exposure to Disulfiram or DMSO control, sperm cells were washed by centrifugation at 300 g for 5 min in 5 mL of the non-capacitation media. After washing, the pellet was resuspended in 500 \u03bcl of the appropriate media and incubated at 37\u00b0C for 1 hr. Samples were taken for analysis by computer-assisted-sperm analysis (CASA) [CEROS machine (version 12), Hamilton Thorne Research, Beverly, MA, USA] before treatment, after 20 mins treatment and 1 hr post washout. Wash-out experiments were performed on three separated days, utilising different donors to make up the pooled sample. Each condition was repeated in duplicate on each of these days and each CASA reading was performed in duplicate.\n",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "509a9b83-c0c7-4024-9539-1d44545502fa",
+      "submission_id": "289ce2c9-f373-45e2-9b26-e085a213ffb2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Polina V Lishko, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51739.sa1](https://doi.org/10.7554/eLife.51739.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nAll reviewers agreed that this manuscript reports an important advancement in the development of the tools aimed to provide an unbiased search for novel contraceptives. The authors describe novel drug screening platform to evaluate the libraries of the compounds for their ability to inhibit sperm motility and sperm fertility. The authors demonstrate that such a platform was used successfully to screen for small inhibitory molecules that could potentially serve as templates for further development of novel contraceptive drugs. Thus, this work can have a very high practical impact.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Phenotypic screening platform utilising human sperm for the identification of new compounds with contraceptive activity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Polina V Lishko as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Jean-Ju Chung (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Our goal is to provide the essential revision requirements as a single set of instructions, so that you have a clear view of the revisions that are necessary for us to publish your work.\n\nSummary:\n\nThe reviewers find that the manuscript represents a highly important advancement in the unbiased search for male-based contraceptives. The authors describe the development of a powerful drug screening platform to evaluate compounds for their ability to inhibit sperm motility and sperm fertility. The authors demonstrate that the motility screening platform was used successfully to screen out small inhibitory molecules that could potentially serve as templates for further development of novel contraceptive drugs. However, the small number of hits from the flow-cytometry based AR assays consecutive to the motility screening turn out to be all negative, indicating the system for this aspect remains to be further improved. Overall, the design and details of the current screening platforms are nice additions to the field and the properties of the candidate lead molecules for the motility inhibition will serve a useful foundation for the further endeavor to develop non-hormonal male contraceptives. The data provided are of good quality and the statistical analyses are adequate, while some additional controls will be needed (see below).\n\nCentral conclusions:\n\n1) The development of male contraceptives addresses a critical gap in the contraceptive portfolio. Namely, the field is in critical need of a high-throughput system that is robust to variations between men, and to variations within and between plates/trials.\n\n2) The manuscript describes a high-throughput drug-screening platform that can be used to target sperm motility and the sperm acrosome reaction (AR) with smart design of utilizing 12,000 molecules from ReFRAME repurposing library directly applied to human sperm cells from fertile donors.\n\n3) The use of ReFRAME allows both productive uses of compounds that have already undergone lengthy/expensive testing. Of equal importance, it enables compounds to be identified as hits known to affect sperm function or would be predicted to do so.\n\n4) Identification of disulfiram and KF-4939 provide evidence of this important attribute. Other strong positives include the long list of variables they tested to ensure the robustness of the assay.\n\nOverall, the authors provide valuable data validating the approach and showing representative data and are to be commended for revealing the full lists of their hits.\n\nEssential revisions:\n\nThe reviewers raise a number of concerns that must be adequately addressed before the paper can be accepted. Some of the required revisions will likely require further experimentation within the framework of the presented studies and techniques.\n\n1) It would be helpful to explain from the beginning the rationale of the assay design and why this assay is focused primarily on the sperm motility and acrosome reaction. To appeal to a scientifically diverse cohort of eLife readers, and particularly to people who are not experts in male fertility, the proper explanation and brief introduction to sperm biology is needed.\n\n2) Subsection \u201cPhenotypic Assay Development\u201d and Figure 1\u2014figure supplement 1D: The authors stated that 'spermatozoa were found to be tolerant to DMSO up to 4%.' As the authors note, it is far above typical screening concentration 0.1% DMSO and surprising. Reviewers noted, that to their knowledge, human sperm cells are quite sensitive to DMSO. It would be nice to show the time point of measuring the motility in Figure 1\u2014figure supplement 1D legend. Is the time-course effect of DMSO on sperm motility was tested at given concentrations? It is also recommended to show that the effect of DMSO concentration on the viability (and/or membrane integrity by PI permeability) and its own effect on the AR state of spermatozoa up to 4% DMSO to support the conclusion. Depending on the results, the reviewers recommend that the authors state the sperm tolerance specifically limited to motility or tone down. Additionally, it is needed to see DMSO alone controls on multiple men, and a couple of times, over that full range.\n\n3) The initial screening was performed at ~ 6 \u03bcm final concentration and it would be nice to state the concentration of final DMSO concentration per each well to achieve ~ 6 \u03bcm and the final concentration of DMSO in the DMSO-treated wells.\n\n4) Figure 2A clearly shows that primary screening results of the motility assay with the ReFRAME library had motility boost hits even if a lot more stringent cut-off is applied. While they were not of interest for a contraceptive development, it could have the potentials for infertility treatments. This reviewer suggests that the authors discuss these 'hits on the opposite side of the spectrum' at a minimum even if the authors decided not to show.\n\n5) Figure 2C and D: do the 20% or 80% reduction in these panels mean the reduction of total motility (PM+NPM) of control? As total sperm counting per each group is different, it will be helpful to indicate the real number of sperm counted on each bar (IM, NPM, and PM) for the readers to easily grasp the calculation.\n\n6) Subsection \u201cScreening of the ReFRAME library, confirmation of hits by dose response\u201d and regarding the negative results of the AR inducer screening: 29 hits were screened out by motility test from the initial 63 positives (~50%) after the dose-response test. In contrast, none of 9 potential candidates from the AR inducer screening were found to be true positives after following the orthogonal assay, which makes the reliability and/or robustness of the AR assays in the screening system in doubt. Can the authors explain the discrepancy in the discovery rate?\n\n7) It would be nice that some alternative strategy is discussed to test the acrosome reaction that won't be hindered by fluorescent compounds. For example, different fluorophores with emissions at more extreme ends of the spectrum could be used, so as not to overlap with the fluorescence spectra of small molecules in the screen used for the flow cytometry. Of course, this will reduce the number of false-positive, but not necessarily the number of the initial hits.\n\n8) Reversibility and less/no side effects are essential requirements for developing or screening male reproductive drugs. Can sperm motility be rescued upon drug elimination?\n\n9) Were there any drugs in the library that are known to have impacts on sperm motility that weren't identified? Failure to detect such a compound might point to a limitation or area in which the assay could be improved.\n\n10) Of the long list of issues that could affect the robustness of the approach, sperm handling is one of the most important. Could more information be provided in the subsection \u201cSperm handling\u201d, particularly regarding the discontinuous density gradient? Were the samples from different men pooled prior to DGC, or were the washed sperm pooled after? If after, were the samples pooled using equal numbers of sperm from each man, to keep each man's contribution equal, or were all the sperm recovered from each man used? Increased information on this point could help reduce inter-assay variability.\n\n11) Somewhere in the Discussion, authors should provide a paragraph on the potential immediate utility of this approach for identifying topical spermicides/contraceptives. The world does need an improvement over nonoxynol-9, which can increase transmission of STIs, particularly for commercial sex workers. It is worth mentioning that compounds that directly affect sperm function could then be used as a starting point to identify druggable targets that would impair that target during spermatogenesis. Without this discussion, you might be open to criticism that this approach would only work for topicals. There will, of course, be influences of metabolism, etc., but high throughput screening for targets is a novel and critically important contribution.\n\n12) Acrosome reaction was used as one of the key parameters for screening, and yet the assessed samples of sperm cells were ejaculated spermatozoa and not the capacitated cells. According to common knowledge, sperm ability to undergo an acrosome reaction is achieved only after they are capacitated (in vivo or in vitro), and yet in this study, the capacitation was not performed (subsection \u201cSperm handling\u201d). To clarify this confusion and make the text more digestible to readers, authors are encouraged to expand their very brief result and/or Discussion sections. Specifically, since the goal of the team was to search for male contraceptives, it is not clear whether the compounds are expected to target sperm while they are stored inside the male reproductive tract or post-ejaculated. As reviewers noted, the compounds that prematurely induce acrosome exocytosis could only serve as topical contraceptives. Whether in a condom, jelly, or foam, that would come into contact with only non-capacitated sperm. Premature induction of exocytosis would NOT be recommended as a means of killing the sperm inside male reproductive tract, because if they were in the rete or epididymis, that would result in a sperm granuloma and obstructive azoospermia. This might be a point worth mentioning in the Discussion.\n",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1dc8df31-533e-4fb6-81f5-c46d85919542",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C1",
+      "claim": "There is an urgent need to develop new methods for male contraception.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an urgent need to develop new methods for male contraception, however a major barrier to drug discovery has been the lack of validated targets and the absence of an effective high-throughput phenotypic screening system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of need in the abstract, supported by the context of the manuscript discussing the contraceptive gap.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "5bd5a1ba-9ae1-4de4-9ab2-a3af62b7c43c",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C2",
+      "claim": "A major barrier to drug discovery for male contraception has been the lack of validated targets.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an urgent need to develop new methods for male contraception, however a major barrier to drug discovery has been the lack of validated targets and the absence of an effective high-throughput phenotypic screening system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known barrier in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "1b8d391a-e136-421a-a3cf-d34a94cc1cb3",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C3",
+      "claim": "A major barrier to drug discovery for male contraception has been the absence of an effective high-throughput phenotypic screening system.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an urgent need to develop new methods for male contraception, however a major barrier to drug discovery has been the lack of validated targets and the absence of an effective high-throughput phenotypic screening system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known barrier in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "4d09a4fe-7713-4052-b09f-70dfcd2a42d9",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C4",
+      "claim": "The authors developed a fully-automated robotic screening platform for evaluating compound activity against human sperm function.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this deficit, we developed a fully-automated robotic screening platform that provided quantitative evaluation of compound activity against two key attributes of human sperm function: motility and acrosome reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, describing the platform development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "6bd56773-d34a-4cd7-9bfa-f7a59aa26853",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C5",
+      "claim": "The screening platform provides quantitative evaluation of compound activity against human sperm motility.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this deficit, we developed a fully-automated robotic screening platform that provided quantitative evaluation of compound activity against two key attributes of human sperm function: motility and acrosome reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "2cf439cd-3dbe-4aa0-aed7-9f9441b5008c",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C6",
+      "claim": "The screening platform provides quantitative evaluation of compound activity against human sperm acrosome reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this deficit, we developed a fully-automated robotic screening platform that provided quantitative evaluation of compound activity against two key attributes of human sperm function: motility and acrosome reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "445ede8f-aabc-4716-b86b-6c5d371d8d82",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C7",
+      "claim": "The ReFRAME repurposing library comprises nearly all the small molecules that have been approved or have undergone clinical development, or have significant preclinical profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to accelerate contraceptive development, we screened the comprehensive collection of 12,000 molecules that make up the ReFRAME repurposing library, comprising nearly all the small molecules that have been approved or have undergone clinical development, or have significant preclinical profiling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the ReFRAME library, supported by citation to Janes et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "8bbdf5b7-813e-4291-ab6d-7238c6f62667",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C8",
+      "claim": "The authors screened 12,000 molecules from the ReFRAME repurposing library.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to accelerate contraceptive development, we screened the comprehensive collection of 12,000 molecules that make up the ReFRAME repurposing library, comprising nearly all the small molecules that have been approved or have undergone clinical development, or have significant preclinical profiling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "fcdd440e-c58b-4889-a068-b18cfd47ffdb",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C9",
+      "claim": "The authors identified several compounds that potently inhibit sperm motility.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified several compounds that potently inhibit motility representing either novel drug candidates or routes to target identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the screening study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "66fa11c3-a4ec-48c3-a9d2-3bb44f2d8a57",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C10",
+      "claim": "More than 214 million women in developing countries have an unmet need for contraception.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is estimated that more than 214 million women in developing countries have an unmet need for contraception which results in 89 million unintended pregnancies and 48 million abortions every year, with substantial impacts on maternal and child health and poverty levels (Guttmacher Institute, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guttmacher Institute, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "a01c7d96-fb4b-43e0-b006-f408747bdc78",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C11",
+      "claim": "Unmet contraceptive need results in 89 million unintended pregnancies every year.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is estimated that more than 214 million women in developing countries have an unmet need for contraception which results in 89 million unintended pregnancies and 48 million abortions every year, with substantial impacts on maternal and child health and poverty levels (Guttmacher Institute, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guttmacher Institute, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "c6b14156-d4e1-4fdb-941e-111019382697",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C12",
+      "claim": "Unmet contraceptive need results in 48 million abortions every year.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is estimated that more than 214 million women in developing countries have an unmet need for contraception which results in 89 million unintended pregnancies and 48 million abortions every year, with substantial impacts on maternal and child health and poverty levels (Guttmacher Institute, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guttmacher Institute, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "75630d0b-274e-4559-83cc-50576c732f84",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C13",
+      "claim": "No effective, reversible and widely available form of contraception has been developed for men since the condom.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is noticeable that no effective, reversible and widely available form of contraception has been developed for men since the condom and as such the burden falls largely on the woman.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about the state of male contraception.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "9498a708-159e-4b2c-a00b-7e3016c4e3c4",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C14",
+      "claim": "Spermatozoa don't divide, transcribe or translate.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing a drug for any purpose is difficult but one that blocks sperm function is a particular challenge as spermatozoa don't divide, transcribe or translate, have specialized organelles, are highly motile and continually produced in large numbers (~100 million per day).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge about spermatozoa.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "4bfc560b-0cbe-4240-a8cc-db9cc20ba318",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C15",
+      "claim": "Spermatozoa have specialized organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing a drug for any purpose is difficult but one that blocks sperm function is a particular challenge as spermatozoa don't divide, transcribe or translate, have specialized organelles, are highly motile and continually produced in large numbers (~100 million per day).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge about spermatozoa.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "da1c8cd2-ef3c-4224-870a-e686428c4826",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C16",
+      "claim": "Spermatozoa are highly motile.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing a drug for any purpose is difficult but one that blocks sperm function is a particular challenge as spermatozoa don't divide, transcribe or translate, have specialized organelles, are highly motile and continually produced in large numbers (~100 million per day).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge about spermatozoa.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "085d60de-a3dc-4ec0-8b6f-5fd5ff2b7cd1",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C17",
+      "claim": "Spermatozoa are continually produced in large numbers (~100 million per day).",
+      "claim_type": "EXPLICIT",
+      "source": "Developing a drug for any purpose is difficult but one that blocks sperm function is a particular challenge as spermatozoa don't divide, transcribe or translate, have specialized organelles, are highly motile and continually produced in large numbers (~100 million per day).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge about spermatozoa production.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "8536ba1b-b233-438c-a36f-df75e0877fe4",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C18",
+      "claim": "Low sperm motility is a common cause of male infertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Low sperm motility is a common cause of male infertility (Samplaski et al., 2019) indicating that targeting this process should yield effective drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Samplaski et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "a92cd3c5-5f4c-4669-8eed-a179346d8038",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C19",
+      "claim": "Targeting sperm motility should yield effective contraceptive drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Low sperm motility is a common cause of male infertility (Samplaski et al., 2019) indicating that targeting this process should yield effective drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between motility and fertility.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "8b99c2fb-b62f-4063-bd66-b99435e77303",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C20",
+      "claim": "CatSper is a potential sperm-specific contraceptive drug target.",
+      "claim_type": "EXPLICIT",
+      "source": "Though some potential sperm-specific contraceptive drug targets, such as the calcium channel CatSper, have been identified (Lishko and Mannowetz, 2018), our relatively poor understanding of spermatozoon biology makes target-agnostic, or phenotypic strategies more attractive (Barratt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lishko and Mannowetz, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "82d72ff4-b56b-4ca7-a76a-ea119ef0234e",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C21",
+      "claim": "Phenotypic drug discovery is undergoing a renaissance in a number of therapeutic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic drug discovery is undergoing a renaissance in a number of therapeutic areas because it can uncover novel biology in an unbiased way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a trend in drug discovery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "429cf531-4a47-4ceb-9530-a2620f5ed4cf",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C22",
+      "claim": "Phenotypic drug discovery can uncover novel biology in an unbiased way.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic drug discovery is undergoing a renaissance in a number of therapeutic areas because it can uncover novel biology in an unbiased way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of phenotypic approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "5ac455ec-1665-417d-8781-5396e638a44c",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C23",
+      "claim": "Retrospective analysis shows phenotypic approaches are more successful in first-in-class medicine discovery than previously appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrospective analysis of drug approvals shows the approach to be more successful in first-in-class medicine discovery than previously appreciated (Swinney and Anthony, 2011; Moffat et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Swinney and Anthony, 2011 and Moffat et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "6a7f71b6-6bce-4791-962a-a0eb9c0be1d7",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C24",
+      "claim": "The platform allows for identification of relatively fast-acting compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Our automated platform (Figure 1A) allows for the identification of relatively fast-acting compounds with a rapid plate-processing time (~75 minutes/ 384-well plate), where the motility assay runs for ~30 min followed directly by the AR assay (~45 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the developed platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "4a9bb77c-2c37-4d2b-8afa-fe1f4c6f34fa",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C25",
+      "claim": "The platform has a rapid plate-processing time of approximately 75 minutes per 384-well plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our automated platform (Figure 1A) allows for the identification of relatively fast-acting compounds with a rapid plate-processing time (~75 minutes/ 384-well plate), where the motility assay runs for ~30 min followed directly by the AR assay (~45 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured characteristic of the platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "e351a071-438d-409f-b91a-2116f6cfdd94",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C26",
+      "claim": "The motility assay runs for approximately 30 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our automated platform (Figure 1A) allows for the identification of relatively fast-acting compounds with a rapid plate-processing time (~75 minutes/ 384-well plate), where the motility assay runs for ~30 min followed directly by the AR assay (~45 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured characteristic of the motility assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "3dc8b948-319c-4da3-ac96-fbdbcabb36e3",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C27",
+      "claim": "The AR assay runs for approximately 45 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our automated platform (Figure 1A) allows for the identification of relatively fast-acting compounds with a rapid plate-processing time (~75 minutes/ 384-well plate), where the motility assay runs for ~30 min followed directly by the AR assay (~45 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured characteristic of the AR assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "b016709a-d3c0-4573-a43b-3fcbb4b5d1e4",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C28",
+      "claim": "Automated cell tracking allows kinetic parameter quantification on >200 cells per well.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated cell tracking (Figure 1B and Figure 1\u2014figure supplement 1A,B) using time-lapse images allowed kinetic parameter quantification on >200 cells/well (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured capability of the tracking system, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "743cc807-d728-4b9e-b3bf-d31d8a8a093e",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C29",
+      "claim": "The kinetics from the platform show good agreement with clinical systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinetics show good agreement with clinical systems (Figure 1\u2014figure supplement 1C) and a comparable distribution was observed between experimental days, plates and positions (Figure 1\u2014figure supplement 2) with any small differences between days stemming from donor pool variance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparison data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "33a91c6b-9265-4660-a033-a768ce6fe6f7",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C30",
+      "claim": "Spermatozoa were found to be tolerant to DMSO concentrations of 0.0625%\u20130.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, spermatozoa were found to be tolerant to the DMSO concentrations used in our screening program (0.0625%\u20130.1% Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "64a3b398-16a6-4053-a999-b58f6594758e",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C31",
+      "claim": "Only a small decrease in motility (~10%) was observed after four plates were screened.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the optimal screening batch size untreated spermatozoa were dispensed every 30 min for 150 min observing only a small decrease in motility (~10%) after four plates were screened (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "9303da8f-955e-49aa-8924-6094dbafd57a",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C32",
+      "claim": "The ReFRAME library contains 11,968 compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The ReFRAME library (11,968 compounds) was supplied in 'assay-ready' imaging plates and was solubilised prior to addition of sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated fact about the library screened.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "48bacced-3ee5-42ef-a1ee-d78a77d36b7a",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C33",
+      "claim": "High assay quality was achieved throughout with a Z'-factor between 0.4\u20130.8.",
+      "claim_type": "EXPLICIT",
+      "source": "High assay quality was achieved throughout with a Z'-factor between 0.4\u20130.8 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured quality metric shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "c9563253-7778-464d-a2de-095583b5c6f5",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C34",
+      "claim": "63 putative hit compounds decreased motility based on a hit selection cut-off of >15% reduction in motility.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 63 putative hit compounds decreased motility to varying degrees based on a hit selection cut-off of >15% reduction in motility (Figure 2A with examples in Figure 2C,D,F,G and Video 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary screening result shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "8ae0400c-b8f2-450d-b2d0-f62bd610ef2b",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C35",
+      "claim": "14 compounds were selected as putative AR+ hits.",
+      "claim_type": "EXPLICIT",
+      "source": "14 compounds were selected as putative AR+ hits (Figure 3A with examples in B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary screening result shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "85f0e6b6-1154-43f1-aafc-c432cd65a4c4",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C36",
+      "claim": "29 motility hit compounds were confirmed with resupplied material in dose-response experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Motility hits were confirmed with resupplied material in dose-response experiments. There was a dose-dependent decrease in motility for 29 compounds (46% hit confirmation rate), with EC50 values as low as 0.05 \u00b5M and effect sizes ranging from 15\u2013100% (Figure 2F,G; Figure 2\u2014source data 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a confirmation result from dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "c8c0392e-760c-40dd-a1ca-af240f92a8d3",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C37",
+      "claim": "The hit confirmation rate for motility compounds was 46%.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a dose-dependent decrease in motility for 29 compounds (46% hit confirmation rate), with EC50 values as low as 0.05 \u00b5M and effect sizes ranging from 15\u2013100% (Figure 2F,G; Figure 2\u2014source data 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the confirmation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "70bafcf3-8e50-4ff9-bd54-315c98ea3bd2",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C38",
+      "claim": "Confirmed motility hits had EC50 values as low as 0.05 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a dose-dependent decrease in motility for 29 compounds (46% hit confirmation rate), with EC50 values as low as 0.05 \u00b5M and effect sizes ranging from 15\u2013100% (Figure 2F,G; Figure 2\u2014source data 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured potency from dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "ace5a8b8-6e32-4df6-b2ac-6f34c08f3d64",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C39",
+      "claim": "Confirmed motility hits had effect sizes ranging from 15\u2013100%.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a dose-dependent decrease in motility for 29 compounds (46% hit confirmation rate), with EC50 values as low as 0.05 \u00b5M and effect sizes ranging from 15\u2013100% (Figure 2F,G; Figure 2\u2014source data 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured efficacy from dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "77f03a52-3730-4be9-8c9a-ef76437464be",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C40",
+      "claim": "Disulfiram was a confirmed hit with 70% maximum reduction at 10 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the confirmed hits were the aldehyde dehydrogenase inhibitor, Disulfiram (70% maximum reduction at 10 \u00b5M) and a putative platelet aggregation inhibitor, KF-4939 (100% max. reduction; EC50 = 0.49 \u03bcM), and a range of other compounds having very modest effect and/or showing low potency (See Figure 2\u2014source data 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific hit result from dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "1693834d-59cd-44bc-82c7-81ee464562da",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C41",
+      "claim": "KF-4939 was a confirmed hit with 100% maximum reduction and EC50 = 0.49 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the confirmed hits were the aldehyde dehydrogenase inhibitor, Disulfiram (70% maximum reduction at 10 \u00b5M) and a putative platelet aggregation inhibitor, KF-4939 (100% max. reduction; EC50 = 0.49 \u03bcM), and a range of other compounds having very modest effect and/or showing low potency (See Figure 2\u2014source data 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific hit result from dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "bebc410f-f796-444a-a85b-c1a690a5413e",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C42",
+      "claim": "Only a small recovery of motility was observed after wash out of Disulfiram.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test reversibility, wash out experiments were performed. Only a small recovery of motility was observed, after wash out of Disulfiram (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from washout experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "0b25a80b-f22b-440b-8c03-5956e748db8c",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C43",
+      "claim": "9 of the resupplied AR compounds had a dose-dependent effect with EC50 values as low as 0.4 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "In the AR screen, 9 of the resupplied compounds had a dose-dependent effect with EC50 values as low as 0.4 \u00b5M (See Figure 3\u2014source data 2, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from AR dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "c43fd9d0-4aed-42c9-a753-a50351153700",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C44",
+      "claim": "None of the AR hits were found to be true positives after orthogonal assay triaging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, following the orthogonal assay triaging we implemented to eliminate assay interference compounds, none of the AR hits were found to be true positives (see examples in Figure 3\u2014figure supplement 1D) despite the primary screen showing good assay robustness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from triaging experiments shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "37766b62-f665-4727-a2f5-ca102082b5df",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C45",
+      "claim": "The hit rate of approximately 0.2% in the motility assay is typical for a cell-based assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In the motility assay the hit rate of ~0.2% is typical for a cell-based assay, however surprisingly a relatively high number of hits were not deemed suitable for compound progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to typical cell-based assay performance.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "be1abce6-46c3-4c15-95ad-9eccfbc7e120",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C46",
+      "claim": "Disulfiram is a drug that has long been used for treating alcohol dependency.",
+      "claim_type": "EXPLICIT",
+      "source": "One is Disulfiram (70% reduction at 10 \u03bcM) a drug that is well tolerated, has long been used for treating alcohol dependency and has previously been shown to inhibit sperm motility (Lal et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Disulfiram, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "a3a7b286-e6fe-48cd-bb7a-b889c8d78e05",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C47",
+      "claim": "Disulfiram has previously been shown to inhibit sperm motility.",
+      "claim_type": "EXPLICIT",
+      "source": "One is Disulfiram (70% reduction at 10 \u03bcM) a drug that is well tolerated, has long been used for treating alcohol dependency and has previously been shown to inhibit sperm motility (Lal et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lal et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "840bab7f-574b-4782-b662-5020084b600d",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C48",
+      "claim": "3-Phosphoglycerate dehydrogenase (PHGDH) has been identified as a target for disulfiram.",
+      "claim_type": "EXPLICIT",
+      "source": "One recent report identified 3-Phosphoglycerate dehydrogenase (PHGDH) as a target for disulfiram (Spillier et al., 2019) whilst another identified NLP4, a subunit of VCP/p97 segregase (Skrott et al., 2017; Skrott et al., 2019) although the relevance of either to sperm function is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Spillier et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "710814ae-bf28-4082-ad2b-feec2168d9a1",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C49",
+      "claim": "NLP4, a subunit of VCP/p97 segregase, has been identified as a target for disulfiram.",
+      "claim_type": "EXPLICIT",
+      "source": "One recent report identified 3-Phosphoglycerate dehydrogenase (PHGDH) as a target for disulfiram (Spillier et al., 2019) whilst another identified NLP4, a subunit of VCP/p97 segregase (Skrott et al., 2017; Skrott et al., 2019) although the relevance of either to sperm function is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Skrott et al., 2017 and Skrott et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "c687fab9-2693-484a-9038-bf2b2f25e461",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C50",
+      "claim": "PAF has been used to improve sperm function in male infertility treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of KF-4939, a putative platelet aggregation factor (PAF) inhibitor, as a potent hit (100% max. reduction EC50 = 0.5 \u00b5M) may also be of interest since PAF has been used to improve sperm function in male infertility treatments (Roudebush et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roudebush et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "0f10db98-f9f3-4445-b9d3-20bab284f8c3",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C51",
+      "claim": "Bismuth ethanedithiol was a potent hit with 98% maximum reduction and EC50 = 2.5 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Further thiol-containing compounds, bismuth ethanedithiol (98% max reduction; EC50 = 2.5 \u03bcM) and the anti-fungal benzothiazole, Ticlatone (96% max. reduction EC50 = 4.4 \u00b5M) were also potent hits, suggesting free cysteines in, as yet, unidentified protein(s), may play a critical role in motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific hit result from dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "6d1e77b6-2146-49eb-8e63-71fcbe894925",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C52",
+      "claim": "Ticlatone was a potent hit with 96% maximum reduction and EC50 = 4.4 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Further thiol-containing compounds, bismuth ethanedithiol (98% max reduction; EC50 = 2.5 \u03bcM) and the anti-fungal benzothiazole, Ticlatone (96% max. reduction EC50 = 4.4 \u00b5M) were also potent hits, suggesting free cysteines in, as yet, unidentified protein(s), may play a critical role in motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific hit result from dose-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "700af7d3-22ed-4df6-919d-e9179da1949c",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C53",
+      "claim": "Free cysteines in unidentified protein(s) may play a critical role in sperm motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Further thiol-containing compounds, bismuth ethanedithiol (98% max reduction; EC50 = 2.5 \u03bcM) and the anti-fungal benzothiazole, Ticlatone (96% max. reduction EC50 = 4.4 \u00b5M) were also potent hits, suggesting free cysteines in, as yet, unidentified protein(s), may play a critical role in motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the activity of thiol-containing compounds.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "29b7b63f-b502-4ebf-aef9-6ab3a49d4732",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C54",
+      "claim": "Resquimod (R848) has been shown to preferentially reduce the motility of X chromosome-bearing mouse sperm by suppressing ATP production.",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest is the observation that the Toll-like receptor 7/8 ligand (Resquimod; R848), recently shown to preferentially reduce the motility of X chromosome-bearing mouse sperm by suppressing ATP production (Umehara et al., 2019), was a hit, demonstrating that this phenotypic screening approach has the potential to uncover new aspects of sperm biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Umehara et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "a929702c-3df1-4425-b842-a747dfe53f8b",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C55",
+      "claim": "Resquimod (R848) was a hit in the motility screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest is the observation that the Toll-like receptor 7/8 ligand (Resquimod; R848), recently shown to preferentially reduce the motility of X chromosome-bearing mouse sperm by suppressing ATP production (Umehara et al., 2019), was a hit, demonstrating that this phenotypic screening approach has the potential to uncover new aspects of sperm biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a screening result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "87ab69fb-543a-4d01-bee3-46770025fee9",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C56",
+      "claim": "The phenotypic screening approach has the potential to uncover new aspects of sperm biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest is the observation that the Toll-like receptor 7/8 ligand (Resquimod; R848), recently shown to preferentially reduce the motility of X chromosome-bearing mouse sperm by suppressing ATP production (Umehara et al., 2019), was a hit, demonstrating that this phenotypic screening approach has the potential to uncover new aspects of sperm biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the identification of Resquimod as a hit.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "4231607a-cc80-4ca2-a03f-56721ed3ca6d",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C57",
+      "claim": "A large number of compounds had a significant positive effect on sperm motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely however, we did observe a large number of compounds (Figure 2A) that had a significant positive effect on sperm motility which may be target agonists as well as potential start points for treating men with low sperm motility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the screening data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "7d99624f-a085-43c4-97ca-6c906cfeb870",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C58",
+      "claim": "The platform utilises a Yokogawa CV7000 Cell Voyager high-throughput microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "The platform utilises a Yokogawa CV7000 Cell Voyager high-throughput microscope able to image 384 multiwell plates under full environmental control acquiring timelapse images at a sufficiently high speed (~48 fps)_to capture the fast-moving sperm for tracking analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the equipment used in the platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "9a5f9e41-78db-4144-b7dd-cfa940191285",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C59",
+      "claim": "The microscope can acquire timelapse images at approximately 48 fps.",
+      "claim_type": "EXPLICIT",
+      "source": "The platform utilises a Yokogawa CV7000 Cell Voyager high-throughput microscope able to image 384 multiwell plates under full environmental control acquiring timelapse images at a sufficiently high speed (~48 fps)_to capture the fast-moving sperm for tracking analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the microscope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "f37abc89-cf52-4dd7-a3f2-bf70365c6b05",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C60",
+      "claim": "All experiments were performed on non-capacitated sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to perform all experiments on non-capacitated sperm as this condition is the most consistent, less prone to donor-effects and is closer to the state in which the sperm will be when they would be encountering the male contraceptive drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "dd8dd6d2-4fe2-4385-af41-e461c9958389",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C61",
+      "claim": "Non-capacitated sperm is the most consistent condition and less prone to donor-effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to perform all experiments on non-capacitated sperm as this condition is the most consistent, less prone to donor-effects and is closer to the state in which the sperm will be when they would be encountering the male contraceptive drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the rationale for choosing non-capacitated sperm.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "064ac986-a206-4428-beb2-bd7c140b883a",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C62",
+      "claim": "Samples were routinely pooled from 3 to 5 donors for use in each screening batch run.",
+      "claim_type": "EXPLICIT",
+      "source": "We routinely pooled samples after DGC from 3 to 5 donors for use in each screening batch run in order to reduce donor-to-donor variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "28f3f64f-067b-4a59-a724-974ad851f950",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C63",
+      "claim": "Donor pooling was done to reduce donor-to-donor variability.",
+      "claim_type": "EXPLICIT",
+      "source": "We routinely pooled samples after DGC from 3 to 5 donors for use in each screening batch run in order to reduce donor-to-donor variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the rationale for pooling donors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "76e2053f-6540-46fc-8425-7accc02b6776",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C64",
+      "claim": "Approximately 10,000 spermatozoa were dispensed per well.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 10,000 spermatozoa (10 \u03bcl) were dispensed per well using a MultiDrop Combi (ThermoFisher) into pre-warmed assay-ready plates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "d7c1bcd1-5805-40fd-bd76-fefa5bf140cf",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C65",
+      "claim": "Spermatozoa were incubated with compounds for 10 minutes prior to imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Spermatozoa were incubated with the compounds for 10 mins (thus favouring fast acting compounds) at 37\u00b0C in the CV7000 microscope prior to the commencement of imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "884b08cf-553f-471b-9899-3ddc58ff97a0",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C66",
+      "claim": "Time-lapse image series were acquired at 24 frames in 0.5 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a 20x lens with bright field illumination (0.11 ms exposure, 3% lamp power), time-lapse image series were acquired (24 frame in 0.5 s) at two positions per well (with a 400 \u03bcm gap between positions to eliminate double counting of sperm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "5f12f5b5-1668-43c7-877d-85b0164c6609",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C67",
+      "claim": "Image acquisition across a 384-well plate takes approximately 17 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Image acquisition across a 384-well plate with such settings takes ~ 17 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured time for image acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "ef57a343-d065-415e-a093-052a0bd13801",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C68",
+      "claim": "A Python implementation of the Crocker and Grier particle tracking algorithm was employed.",
+      "claim_type": "EXPLICIT",
+      "source": "A Python implementation of the particle tracking algorithm originally developed by others (Crocker and Grier, 1996) was employed (Trackpy v0.4.1 Allan, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "d64c7986-7a94-4dcc-b96c-22b8a5a88d3d",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C69",
+      "claim": "Image data can be processed within 30 minutes using a standard desktop PC.",
+      "claim_type": "EXPLICIT",
+      "source": "The image data (~17,000 files amounting to 21 GB per plate) can be processed within 30 min using a standard desktop PC (Intel Core i5-6600 CPU, 3.3 GHz, 8 Gb RAM) and can also be parallelized on a compute cluster with minimal effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured processing time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "e222fda0-c589-4ccf-8f95-d22172948028",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C70",
+      "claim": "The flow cytometry assay employs Alexa488-conjugated peanut agglutinin (PNA).",
+      "claim_type": "EXPLICIT",
+      "source": "A flow cytometry-based assay was developed employing an iQue Screener (Sartorius) with Alexa488-conjugated peanut agglutinin (PNA) (Mortimer et al., 1987) and general sperm viability (using propidium iodide, Pi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assay reagents, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "bf178cf3-cee5-42a2-9589-ff1279ba4097",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C71",
+      "claim": "The flow cytometry assay uses propidium iodide for sperm viability assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "A flow cytometry-based assay was developed employing an iQue Screener (Sartorius) with Alexa488-conjugated peanut agglutinin (PNA) (Mortimer et al., 1987) and general sperm viability (using propidium iodide, Pi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assay reagents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "0a47da78-2156-428d-989e-47e89cb1ac02",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C72",
+      "claim": "Sample processing time is about 25 minutes per 384-well plate for the flow cytometry assay.",
+      "claim_type": "EXPLICIT",
+      "source": "After addition of dyes, plates were incubated for 10 min at 37\u00b0C in the SteriStore before sampling using an iQue Screener (2 s sip time per well with pump setting of 45 rpm). This resulted in a sample processing time of about 25 min per 384-well plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured processing time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "ce0ef636-a8dc-4445-afbf-da2708a71ce2",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C73",
+      "claim": "Pristimerin was used as a positive control for the motility assay at a final concentration of 20 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "For the motility assay DMSO was used as a vehicle control (negative control) and Pristimerin (Merck, Cat. No. 530070, stored as 10 mM stock in DMSO; final concentration of 20 \u00b5M) as a positive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "8d479349-886e-4114-9896-c91393d4b996",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C74",
+      "claim": "A23187 was used as a positive control for the acrosome assay at a final concentration of 10 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "For the acrosome assay we added a calcium ionophore (A23187, Sigma-Aldrich, Cat. No. C7522, stored as 10 mM stock in DMSO, used at a final concentration of 10 \u00b5M) as a positive control and DMSO was added to wells as a negative control to be at the same final concentration as that present in the compound-containing wells (0.0625%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "9d145d75-a0e6-4e7c-bfec-d10459e0e6a1",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C75",
+      "claim": "The final concentration of DMSO in each screening well was 0.0625%.",
+      "claim_type": "EXPLICIT",
+      "source": "With the addition of the media containing sperm (10 \u03bcl) the final concentration of DMSO in each well was 0.0625%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "fb35f3dd-b23e-4018-b25a-d84fd94d1e96",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C76",
+      "claim": "Compounds were screened at a final assay concentration of approximately 6 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds dissolved in DMSO were spotted (12.5 nL, final assay concentration ~ 6 \u03bcM) into 384-well black-sided optical imaging plates (CellCarrier, PerkinElmer) at CALIBR and were shipped on dry ice to the screening centre in Dundee and stored at \u221220 \u00b0C until required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the screening concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "ee1f448e-42f9-4cbf-9c66-995b76173681",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C77",
+      "claim": "Dose-response curves were performed with 8-point curves starting at 10 \u03bcM highest concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Assay-ready 384-well CellCarrier plates with 8-point curves (10 \u03bcM highest concentration) were resupplied by CALIBR in duplicate and processed as described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dose-response experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "c51891d5-92dc-45a5-8067-58b4049d5755",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C78",
+      "claim": "Washout experiments were conducted at two timepoints using non-capacitating conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to assess the ability of sperm cells to recover motility after Disulfiram removal, wash-out experiments were conducted at two timepoints using non-capacitating conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the washout experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "82aac995-52b8-48bd-8c8b-d149fc48e269",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C79",
+      "claim": "Disulfiram was tested at 10 \u03bcM final concentration in washout experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "After this initial incubation period, Disulfiram (10 \u03bcM final concentration) or vehicle control (DMSO to 0.1% final concentration) were added and incubated at 37\u00b0C for 20 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the washout experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "bbf9f641-feea-43af-8a5a-4ed1d494d9bb",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "claim_id": "C80",
+      "claim": "Washout experiments were performed on three separated days, utilising different donors to make up the pooled sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Wash-out experiments were performed on three separated days, utilising different donors to make up the pooled sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the washout experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef0b3964-bcca-4a8d-b2a3-f1ba53dad981",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the rationale for male contraceptive development by citing the unmet contraceptive need (214 million women, 89 million unintended pregnancies, 48 million abortions annually) and noting that no effective, reversible male contraceptive has been developed since the condom, with major barriers being lack of validated targets and absence of high-throughput screening systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C10-C13 provide context from cited literature (Guttmacher Institute, 2017) establishing the public health need and technical barriers. These are appropriately cited background claims that frame the study's motivation, though they represent prior work rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors justify their phenotypic screening approach by describing the unique challenges of targeting spermatozoa (non-dividing, specialized cells produced at ~100 million/day) and noting that phenotypic approaches are increasingly successful in first-in-class drug discovery, particularly given limited understanding of sperm biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 establish biological rationale through cited literature (Samplaski et al., 2019; Lishko and Mannowetz, 2018; Swinney and Anthony, 2011; Moffat et al., 2017). These are well-supported background claims from established knowledge and prior work that justify the methodological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors developed a fully-automated robotic screening platform that sequentially measures sperm motility (via time-lapse microscopy with automated tracking of >200 cells/well in ~30 min) and acrosome reaction (via flow cytometry in ~45 min), achieving ~75 min total processing time per 384-well plate. The platform uses non-capacitated sperm pooled from 3-5 donors at ~10,000 cells/well with 0.0625% DMSO tolerance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C24-C28, C58-C75 describe comprehensive technical specifications with measured parameters (processing times, cell numbers, concentrations). The methodology is well-documented with appropriate controls (Pristimerin for motility, A23187 for AR) and validated computational approaches (Trackpy algorithm). The platform design is internally consistent and technically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "2ad3d07b-3585-4b87-89f8-d1806c956134",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The platform demonstrates good technical performance with kinetics showing good agreement with clinical CASA systems (C29), tolerance to DMSO concentrations used (0.0625-0.1%, C30), minimal motility decrease (~10%) after four plates (C31), and high assay quality (Z'-factor 0.4-0.8, C33).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31, C33 are supported by comparative data (Figure 1\u2014figure supplement 1C) and quality metrics. The Z'-factor range of 0.4-0.8 indicates acceptable to excellent assay quality. The Bland-Altman comparison with clinical CASA validates the tracking approach. These validation experiments appropriately demonstrate platform robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "94adf255-6381-49d4-92f0-efa21bdbd5f4",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors screened the ReFRAME library containing 11,968 compounds (nearly all approved drugs or those in clinical development) at ~6 \u03bcM concentration, with dose-response confirmation using 8-point curves starting at 10 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C32, C76-C77 describe the screening campaign with appropriate citation (Janes et al., 2018). The library composition and screening concentration are clearly stated. The choice of ReFRAME for drug repurposing is well-justified, though the single screening concentration (~6 \u03bcM) may miss compounds with different potency ranges.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "4479e753-edb0-43cc-a10b-f9b4fd0e2ca5",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The motility screen identified 63 primary hits (>15% reduction, 0.5% hit rate), of which 29 were confirmed by dose-response (46% confirmation rate) with EC50 values as low as 0.05 \u03bcM and effect sizes of 15-100%. The hit rate is described as typical for cell-based assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C36-C39, C45 report screening outcomes with quantitative metrics. The 46% confirmation rate is reasonable for phenotypic screens. However, the authors note that many confirmed hits were unsuitable for progression (toxic compounds, antibiotics, chemotherapeutics), suggesting the effective hit rate for developable compounds is lower than reported. The comparison to 'typical' cell-based assays (C45) lacks specific citation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "a3af3c50-4c6d-444b-8e98-ec46f42065fd",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Disulfiram was confirmed as a hit with 70% maximum reduction at 10 \u03bcM. The compound is an approved drug for alcohol dependency and has previously been shown to inhibit sperm motility (Lal et al., 2016), with reported targets including PHGDH and NLP4, though relevance to sperm function is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C46-C49 describe Disulfiram with appropriate citations. The authors appropriately note that while Disulfiram validates the platform (known sperm motility inhibitor), it is unlikely developable as a contraceptive due to side effects with alcohol. The acknowledgment of unclear target relevance to sperm function is appropriately cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "ed75b2ae-3a29-44eb-aa87-2388fe7cee9c",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "KF-4939, a putative PAF inhibitor, was identified as a potent hit with 100% maximum reduction and EC50 = 0.49 \u03bcM. PAF has been used to improve sperm function in infertility treatments (Roudebush et al., 2004).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C50 describe KF-4939 with quantitative potency data and appropriate citation. The observation that a PAF inhibitor reduces motility while PAF improves fertility is biologically plausible. However, KF-4939 is described as a 'putative' PAF inhibitor, suggesting target validation is incomplete.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "516bf386-6330-4b1a-8a64-168fa8abd2bf",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple thiol-containing compounds were potent hits: bismuth ethanedithiol (98% reduction, EC50 = 2.5 \u03bcM) and Ticlatone (96% reduction, EC50 = 4.4 \u03bcM), suggesting free cysteines in unidentified protein(s) may play a critical role in motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 report dose-response data for thiol-containing compounds and infer a mechanistic hypothesis. The inference (C53) is appropriately cautious ('may play a critical role') and is reasonable given the pattern across multiple thiol-reactive compounds. However, this remains a hypothesis requiring validation through target identification studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "78140042-a967-41ae-b071-b59f034cca2d",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Resquimod (R848), a TLR7/8 ligand recently shown to reduce X-chromosome bearing mouse sperm motility by suppressing ATP production (Umehara et al., 2019), was identified as a hit, demonstrating the platform's potential to uncover new aspects of sperm biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 describe identification of Resquimod with appropriate citation. The detection of a compound with known effects on sperm validates the platform's ability to identify biologically relevant hits. However, the inference that this 'demonstrates potential to uncover new aspects of sperm biology' (C56) is overstated\u2014this is validation of known biology rather than discovery of new biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "3c448015-ae2c-4d4f-9bff-db89f9bd315d",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Washout experiments with Disulfiram (10 \u03bcM, 20 min treatment) showed only small recovery of motility after washing, performed on three separate days with different donor pools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C78-C80 describe washout experiments with appropriate replication (3 days, different donors). The finding of limited reversibility is important for contraceptive development. However, the manuscript lacks quantitative data on the degree of recovery, and Figure 2\u2014figure supplement 1 shows considerable variability between donor pools, suggesting the conclusion may be donor-dependent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "79f7d2cf-8ae3-4018-8c12-499356446259",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The AR screen identified 14 primary hits, of which 9 showed dose-dependent effects (EC50 as low as 0.4 \u03bcM), but none were true positives after orthogonal triaging to eliminate assay interference compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C43-C44 report AR screening results with appropriate acknowledgment of false positives. The complete failure to identify true AR hits despite good assay robustness (Z'-factor) highlights the challenge of fluorescence-based assays with compound libraries. The authors appropriately implemented orthogonal validation (plate reader, flow cytometry without stains, microscopy), demonstrating rigorous triaging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "510f758e-77f9-4b29-811f-0583abcc1321",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A large number of compounds had significant positive effects on sperm motility, potentially representing target agonists or starting points for treating low sperm motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 describes an observation from Figure 2A but lacks quantification ('large number'), statistical analysis, or confirmation experiments. While potentially interesting for fertility applications, this remains an unvalidated observation. The claim that these 'may be target agonists' is speculative without further characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    },
+    {
+      "id": "602b6517-8617-4169-8a7d-050fac4dbf07",
+      "content_id": "ab906f5a-17e8-40ea-85dc-5c2ae8a4f950",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The screen identified several compounds that potently inhibit sperm motility, representing either novel drug candidates or routes to target identification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C9 is a summary statement that is partially supported by the specific hit data (C36-C41, C51-C52). However, the characterization as 'novel drug candidates' is premature given that many hits were unsuitable for progression (toxic, antibiotics, chemotherapeutics) and the most potent hits (KF-4939, thiol-containing compounds) require significant additional validation. The platform successfully identified hits, but their development potential remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:50:13.601078Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1dc8df31-533e-4fb6-81f5-c46d85919542",
+      "result_id": "ef0b3964-bcca-4a8d-b2a3-f1ba53dad981"
+    },
+    {
+      "claim_id": "5bd5a1ba-9ae1-4de4-9ab2-a3af62b7c43c",
+      "result_id": "ef0b3964-bcca-4a8d-b2a3-f1ba53dad981"
+    },
+    {
+      "claim_id": "1b8d391a-e136-421a-a3cf-d34a94cc1cb3",
+      "result_id": "ef0b3964-bcca-4a8d-b2a3-f1ba53dad981"
+    },
+    {
+      "claim_id": "66fa11c3-a4ec-48c3-a9d2-3bb44f2d8a57",
+      "result_id": "ef0b3964-bcca-4a8d-b2a3-f1ba53dad981"
+    },
+    {
+      "claim_id": "a01c7d96-fb4b-43e0-b006-f408747bdc78",
+      "result_id": "ef0b3964-bcca-4a8d-b2a3-f1ba53dad981"
+    },
+    {
+      "claim_id": "c6b14156-d4e1-4fdb-941e-111019382697",
+      "result_id": "ef0b3964-bcca-4a8d-b2a3-f1ba53dad981"
+    },
+    {
+      "claim_id": "75630d0b-274e-4559-83cc-50576c732f84",
+      "result_id": "ef0b3964-bcca-4a8d-b2a3-f1ba53dad981"
+    },
+    {
+      "claim_id": "9498a708-159e-4b2c-a00b-7e3016c4e3c4",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "4bfc560b-0cbe-4240-a8cc-db9cc20ba318",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "da1c8cd2-ef3c-4224-870a-e686428c4826",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "085d60de-a3dc-4ec0-8b6f-5fd5ff2b7cd1",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "8536ba1b-b233-438c-a36f-df75e0877fe4",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "a92cd3c5-5f4c-4669-8eed-a179346d8038",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "8b99c2fb-b62f-4063-bd66-b99435e77303",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "82d72ff4-b56b-4ca7-a76a-ea119ef0234e",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "429cf531-4a47-4ceb-9530-a2620f5ed4cf",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "5ac455ec-1665-417d-8781-5396e638a44c",
+      "result_id": "6a8b83ed-98d9-4bf2-8fcd-5cfaff0d9a3a"
+    },
+    {
+      "claim_id": "4d09a4fe-7713-4052-b09f-70dfcd2a42d9",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "6bd56773-d34a-4cd7-9bfa-f7a59aa26853",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "2cf439cd-3dbe-4aa0-aed7-9f9441b5008c",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "6a7f71b6-6bce-4791-962a-a0eb9c0be1d7",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "4a9bb77c-2c37-4d2b-8afa-fe1f4c6f34fa",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "e351a071-438d-409f-b91a-2116f6cfdd94",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "3dc8b948-319c-4da3-ac96-fbdbcabb36e3",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "b016709a-d3c0-4573-a43b-3fcbb4b5d1e4",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "7d99624f-a085-43c4-97ca-6c906cfeb870",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "9a5f9e41-78db-4144-b7dd-cfa940191285",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "f37abc89-cf52-4dd7-a3f2-bf70365c6b05",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "dd8dd6d2-4fe2-4385-af41-e461c9958389",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "064ac986-a206-4428-beb2-bd7c140b883a",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "28f3f64f-067b-4a59-a724-974ad851f950",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "76e2053f-6540-46fc-8425-7accc02b6776",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "d7c1bcd1-5805-40fd-bd76-fefa5bf140cf",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "884b08cf-553f-471b-9899-3ddc58ff97a0",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "5f12f5b5-1668-43c7-877d-85b0164c6609",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "ef57a343-d065-415e-a093-052a0bd13801",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "d64c7986-7a94-4dcc-b96c-22b8a5a88d3d",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "e222fda0-c589-4ccf-8f95-d22172948028",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "bf178cf3-cee5-42a2-9589-ff1279ba4097",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "0a47da78-2156-428d-989e-47e89cb1ac02",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "ce0ef636-a8dc-4445-afbf-da2708a71ce2",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "8d479349-886e-4114-9896-c91393d4b996",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "9d145d75-a0e6-4e7c-bfec-d10459e0e6a1",
+      "result_id": "cccc0fa5-b605-4660-8046-42b3eccdb0d3"
+    },
+    {
+      "claim_id": "743cc807-d728-4b9e-b3bf-d31d8a8a093e",
+      "result_id": "2ad3d07b-3585-4b87-89f8-d1806c956134"
+    },
+    {
+      "claim_id": "33a91c6b-9265-4660-a033-a768ce6fe6f7",
+      "result_id": "2ad3d07b-3585-4b87-89f8-d1806c956134"
+    },
+    {
+      "claim_id": "64a3b398-16a6-4053-a999-b58f6594758e",
+      "result_id": "2ad3d07b-3585-4b87-89f8-d1806c956134"
+    },
+    {
+      "claim_id": "48bacced-3ee5-42ef-a1ee-d78a77d36b7a",
+      "result_id": "2ad3d07b-3585-4b87-89f8-d1806c956134"
+    },
+    {
+      "claim_id": "445ede8f-aabc-4716-b86b-6c5d371d8d82",
+      "result_id": "94adf255-6381-49d4-92f0-efa21bdbd5f4"
+    },
+    {
+      "claim_id": "8bbdf5b7-813e-4291-ab6d-7238c6f62667",
+      "result_id": "94adf255-6381-49d4-92f0-efa21bdbd5f4"
+    },
+    {
+      "claim_id": "9303da8f-955e-49aa-8924-6094dbafd57a",
+      "result_id": "94adf255-6381-49d4-92f0-efa21bdbd5f4"
+    },
+    {
+      "claim_id": "fb35f3dd-b23e-4018-b25a-d84fd94d1e96",
+      "result_id": "94adf255-6381-49d4-92f0-efa21bdbd5f4"
+    },
+    {
+      "claim_id": "ee1f448e-42f9-4cbf-9c66-995b76173681",
+      "result_id": "94adf255-6381-49d4-92f0-efa21bdbd5f4"
+    },
+    {
+      "claim_id": "c9563253-7778-464d-a2de-095583b5c6f5",
+      "result_id": "4479e753-edb0-43cc-a10b-f9b4fd0e2ca5"
+    },
+    {
+      "claim_id": "85f0e6b6-1154-43f1-aafc-c432cd65a4c4",
+      "result_id": "4479e753-edb0-43cc-a10b-f9b4fd0e2ca5"
+    },
+    {
+      "claim_id": "c8c0392e-760c-40dd-a1ca-af240f92a8d3",
+      "result_id": "4479e753-edb0-43cc-a10b-f9b4fd0e2ca5"
+    },
+    {
+      "claim_id": "70bafcf3-8e50-4ff9-bd54-315c98ea3bd2",
+      "result_id": "4479e753-edb0-43cc-a10b-f9b4fd0e2ca5"
+    },
+    {
+      "claim_id": "ace5a8b8-6e32-4df6-b2ac-6f34c08f3d64",
+      "result_id": "4479e753-edb0-43cc-a10b-f9b4fd0e2ca5"
+    },
+    {
+      "claim_id": "37766b62-f665-4727-a2f5-ca102082b5df",
+      "result_id": "4479e753-edb0-43cc-a10b-f9b4fd0e2ca5"
+    },
+    {
+      "claim_id": "77f03a52-3730-4be9-8c9a-ef76437464be",
+      "result_id": "a3af3c50-4c6d-444b-8e98-ec46f42065fd"
+    },
+    {
+      "claim_id": "be1abce6-46c3-4c15-95ad-9eccfbc7e120",
+      "result_id": "a3af3c50-4c6d-444b-8e98-ec46f42065fd"
+    },
+    {
+      "claim_id": "a3a7b286-e6fe-48cd-bb7a-b889c8d78e05",
+      "result_id": "a3af3c50-4c6d-444b-8e98-ec46f42065fd"
+    },
+    {
+      "claim_id": "840bab7f-574b-4782-b662-5020084b600d",
+      "result_id": "a3af3c50-4c6d-444b-8e98-ec46f42065fd"
+    },
+    {
+      "claim_id": "710814ae-bf28-4082-ad2b-feec2168d9a1",
+      "result_id": "a3af3c50-4c6d-444b-8e98-ec46f42065fd"
+    },
+    {
+      "claim_id": "1693834d-59cd-44bc-82c7-81ee464562da",
+      "result_id": "ed75b2ae-3a29-44eb-aa87-2388fe7cee9c"
+    },
+    {
+      "claim_id": "c687fab9-2693-484a-9038-bf2b2f25e461",
+      "result_id": "ed75b2ae-3a29-44eb-aa87-2388fe7cee9c"
+    },
+    {
+      "claim_id": "0f10db98-f9f3-4445-b9d3-20bab284f8c3",
+      "result_id": "516bf386-6330-4b1a-8a64-168fa8abd2bf"
+    },
+    {
+      "claim_id": "6d1e77b6-2146-49eb-8e63-71fcbe894925",
+      "result_id": "516bf386-6330-4b1a-8a64-168fa8abd2bf"
+    },
+    {
+      "claim_id": "700af7d3-22ed-4df6-919d-e9179da1949c",
+      "result_id": "516bf386-6330-4b1a-8a64-168fa8abd2bf"
+    },
+    {
+      "claim_id": "29b7b63f-b502-4ebf-aef9-6ab3a49d4732",
+      "result_id": "78140042-a967-41ae-b071-b59f034cca2d"
+    },
+    {
+      "claim_id": "a929702c-3df1-4425-b842-a747dfe53f8b",
+      "result_id": "78140042-a967-41ae-b071-b59f034cca2d"
+    },
+    {
+      "claim_id": "87ab69fb-543a-4d01-bee3-46770025fee9",
+      "result_id": "78140042-a967-41ae-b071-b59f034cca2d"
+    },
+    {
+      "claim_id": "bebc410f-f796-444a-a85b-c1a690a5413e",
+      "result_id": "3c448015-ae2c-4d4f-9bff-db89f9bd315d"
+    },
+    {
+      "claim_id": "c51891d5-92dc-45a5-8067-58b4049d5755",
+      "result_id": "3c448015-ae2c-4d4f-9bff-db89f9bd315d"
+    },
+    {
+      "claim_id": "82aac995-52b8-48bd-8c8b-d149fc48e269",
+      "result_id": "3c448015-ae2c-4d4f-9bff-db89f9bd315d"
+    },
+    {
+      "claim_id": "bbf9f641-feea-43af-8a5a-4ed1d494d9bb",
+      "result_id": "3c448015-ae2c-4d4f-9bff-db89f9bd315d"
+    },
+    {
+      "claim_id": "8ae0400c-b8f2-450d-b2d0-f62bd610ef2b",
+      "result_id": "79f7d2cf-8ae3-4018-8c12-499356446259"
+    },
+    {
+      "claim_id": "0b25a80b-f22b-440b-8c03-5956e748db8c",
+      "result_id": "79f7d2cf-8ae3-4018-8c12-499356446259"
+    },
+    {
+      "claim_id": "c43fd9d0-4aed-42c9-a753-a50351153700",
+      "result_id": "79f7d2cf-8ae3-4018-8c12-499356446259"
+    },
+    {
+      "claim_id": "4231607a-cc80-4ca2-a03f-56721ed3ca6d",
+      "result_id": "510f758e-77f9-4b29-811f-0583abcc1321"
+    },
+    {
+      "claim_id": "fcdd440e-c58b-4889-a068-b18cfd47ffdb",
+      "result_id": "602b6517-8617-4169-8a7d-050fac4dbf07"
+    }
+  ],
+  "comparisons": []
+}

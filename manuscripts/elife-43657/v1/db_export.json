@@ -1,0 +1,1780 @@
+{
+  "submission": {
+    "id": "917f847d-f2ea-4f85-9c6b-279a30bfd56d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:59:22.287202Z",
+    "updated_at": "2025-12-02T08:59:22.287202Z"
+  },
+  "content": [
+    {
+      "id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "submission_id": "917f847d-f2ea-4f85-9c6b-279a30bfd56d",
+      "content_type": "manuscript",
+      "content_text": "# An atlas of polygenic risk score associations to highlight putative causal relationships across the human phenome\n\n## Authors\n\n- Tom G Richardson<sup>1</sup> ([ORCID: 0000-0002-7918-2040](https://orcid.org/0000-0002-7918-2040)) \u2020\n- Sean Harrison<sup>1</sup>\n- Gibran Hemani<sup>1</sup> ([ORCID: 0000-0003-0920-1055](https://orcid.org/0000-0003-0920-1055))\n- George Davey Smith<sup>1</sup> ([ORCID: 0000-0002-1407-8314](https://orcid.org/0000-0002-1407-8314))\n\n### Affiliations\n\n1. MRC Integrative Epidemiology Unit (IEU), Population Health Sciences, Bristol Medical School University of Bristol Bristol United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe age of large-scale genome-wide association studies (GWAS) has provided us with an unprecedented opportunity to evaluate the genetic liability of complex disease using polygenic risk scores (PRS). In this study, we have analysed 162 PRS (p<5\u00d710\u221205) derived from GWAS and 551 heritable traits from the UK Biobank study (N = 334,398). Findings can be investigated using a web application (http:\u200c//\u200cmrcieu.\u200cmrsoftware.org/\u200cPRS\u200c_atlas/), which we envisage will help uncover both known and novel mechanisms which contribute towards disease susceptibility. To demonstrate this, we have investigated the results from a phenome-wide evaluation of schizophrenia genetic liability. Amongst findings were inverse associations with measures of cognitive function which extensive follow-up analyses using Mendelian randomization (MR) provided evidence of a causal relationship. We have also investigated the effect of multiple risk factors on disease using mediation and multivariable MR frameworks. Our atlas provides a resource for future endeavours seeking to unravel the causal determinants of complex disease.\n\n## Introduction\n\nDeveloping our understanding of how modifiable social, behavioural and physiological factors influence risk of disease is of vital importance to improve effective medical treatment and preventative interventions (Abraham et al., 2016). Genetic factors may also contribute substantially to disease susceptibility, as demonstrated by recent large-scale genome-wide association studies (GWAS) which have uncovered thousands of trait-associated single nucleotide polymorphisms (SNPs) throughout the human genome. However, typically the magnitude of effect and variance explained by one of these common genetic variants is small (Visscher et al., 2017). Polygenic risk scores (PRS), commonly defined as the sum of trait-associated SNPs weighted by their effect sizes, harness findings from GWAS to provide an overall measure of an individual\u2019s genetic liability to develop disease (Torkamani et al., 2018). Although early applications of PRS were found to be underwhelming in terms of disease prediction (Ripatti et al., 2010), breakthroughs in the scale of GWAS and accessibility to biobank scale datasets have substantially improved their performance (Khera et al., 2018; Lee et al., 2018). As such, they hold considerable potential to improve early disease prognosis and treatment plan formulation (Lewis and Vassos, 2017).\n\nAlong with the emerging utility of PRS to predict disease, they have also been previously used to evaluate putative causal relationships (Davies et al., 2018; Palmer et al., 2012). For example, instead of using a coronary heart disease (CHD) PRS to predict incidence of this disease, studies have investigated whether scores for known risk factors, such cholesterol and lipid levels (Holmes et al., 2015), are also strongly associated with CHD incidence. One such approach in this paradigm is Mendelian randomization (MR), a method by which genetic variants are leveraged as instrumental variables to investigate causal relationships between modifiable risk factors and disease outcomes (Davey Smith and Ebrahim, 2003; Davey Smith and Hemani, 2014). MR is typically limited to using SNPs which survive conventional GWAS corrections (i.e. p<5\u00d710\u221208), which may lack statistical power if these variants do not explain a large proportion of trait variance. In contrast, PRS derived using a more lenient threshold (e.g. p<5\u00d710\u221205) can help recover some of this missing heritability due to a larger number of SNPs being included. This may help improve detection rates for causal relationships, which can be particularly useful when evaluating associations between genetic liability for a given trait and hundreds of diverse health outcomes. Such endeavours are commonly referred to as phenome-wide association studies (Denny et al., 2013; Fritsche et al., 2018; Krapohl et al., 2016; Millard et al., 2015).\n\nTo investigate this we undertook a preliminary simulation study to compare the performance of using a PRS to detect causal relationships with a popular MR approach (the inverse variance weighted (IVW) method (Burgess et al., 2013)) (Figure 1). Results indicated that, although using a PRS provides higher statistical power, it also suffers from substantive false positive rates due to horizontal pleiotropy, the phenomenon whereby a gene influences multiple traits via independent biological pathways (Davey Smith and Hemani, 2014). SNPs which are known to be pleiotropic with large effects on different and diverse traits have been found to distort findings from PRS analyses (Felsky et al., 2018). As a consequence, findings from phenome-wide association studies using a PRS may be useful in terms of highlighting putative causal associations, although robust evaluations are necessary to investigate results. We therefore propose using\u00a0various sensitivity analyses developed in the field of MR to discern whether PRS\u00a0associations\u00a0represent causal relationships\u00a0or\u00a0not. To facilitate such future analyses, an accessible resource to evaluate associations between disease genetic liability and complex traits from across the human phenome should prove to be of considerable value.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43657/elife-43657-fig1-v1.jpg)\n\n**Figure 1.:** Simulations were conducted under different levels of horizontal pleiotropy for two different models; the causal model (where the simulated exposure has a causal effect on the outcome) and the null model (where there is no causal effect between exposure and outcome).\n\nIn this study, we have constructed 162 different PRS (based on p<5\u00d710\u221205) using findings from large-scale GWAS and evaluated their association with 551 traits in up to 334,398 individuals enrolled in the UK Biobank study (Bycroft et al., 2018; Sudlow et al., 2015). To disseminate these findings, we have developed a web application to examine and visualise this derived atlas of associations. We have also undertaken follow-up analyses to demonstrate the usefulness of this resource to help identify putative causal relationships. Firstly, we have interpreted findings from a hypothesis-free scan of associations between the schizophrenia PRS and each of the 551 traits. We demonstrate that amongst these findings are associations which may likely reflect underlying causal relationships. We have also showcased the utility of evaluating the association between all 162 PRS and a single outcome using our atlas. Using gout susceptibility as an example, we demonstrate how recently developed methodology (mediation MR and multivariable MR) can be applied to evaluate the effects of multiple risk factors on disease risk.\n\n## Results\n\n### An atlas of polygenic risk score associations across the human phenome\n\nOverall, we undertook 89,262 tests to investigate the association between 162 different PRS derived from GWAS (Supplementary file 1a) and 551 complex traits from the UK Biobank study (Supplementary file 1b). PRS were constructed using independent SNPs for each GWAS (p<5\u00d710\u221205) based on r2<\u00a00.001 using genotype data from European individuals (CEU) from phase 3 (version 5) of the 1000 Genomes project (Abecasis et al., 2012). As opposed to the conventional GWAS cut-off of p<5\u00d710\u221208, the threshold of p<5\u00d710\u221205 was selected to incorporate additional SNPs into scores which may explain additional heritability for GWAS traits. Furthermore, this allowed us to create PRS for traits which had no SNPs surviving conventional GWAS corrections, as well as increasing the number of SNPs used in scores for traits with only a small number of GWAS hits. Our final sample size for analysis consisted of 334,398 individuals. This was determined using a strict exclusion criterion to reduce false positive associations, removing individuals with withdrawn consent, evidence of genetic relatedness or who were not of \u2018white European ancestry\u2019 based on a K-means clustering (K\u00a0=\u00a04).\n\nOf the 162 GWAS we identified, 11 reported that they included UK Biobank participants in their analysis. As this may lead to overfitting, the PRS for these 11 traits were not weighted to reduce this source of bias. To demonstrate this, we evaluated the association of the sleep duration PRS in the UK Biobank study, weighting SNPs based on a GWAS involving the interim release of this dataset (Jones et al., 2016) (Supplementary file 1c). However, this only mitigates this limitation, and as such these scores in particular require extensive follow-up analyses. In case they are still useful for follow-up analyses despite overlapping with UK Biobank, these scores have been clearly flagged in Supplementary file 1a by being allocated to the \u2018unweighted\u2019 subcategory.\n\nIn this study we have only interpreted findings from associations with PRS derived using the p<5\u00d710\u221205 threshold. However, analyses have been repeated using scores derived using the conventional GWAS threshold of p<5\u00d710\u221208 for future studies that wish to evaluate these results. Complex traits from the UK Biobank study were selected based on p<0.05 from previously undertaken heritability analyses within this study (Neale Lab, 2017). This threshold was chosen as a heuristic to highlight associations worth pursuing in further detail. A web app to query and visualise these results can be found at http://mrcieu.mrsoftware.org/PRS_atlas/.\n\nStratifying the UK Biobank sample into deciles based on their PRS supported previous findings in the literature demonstrating the ability of PRS to predict risk of disease. For example, comparing the highest and lowest deciles of the coronary heart disease (CHD) PRS found that individuals had increased odds of 3.64 to develop this disease (based on the ICD10 code \u2018I25\u2019). A recent study by Khera and colleagues (Khera et al., 2018) reported a similar odds ratio for CHD in their analysis (OR:>3.0 for the highest 8% of individuals based on their PRS). However, we note that they identified a higher area under curve in their analysis (0.806), which is likely attributed to tuning parameters such as LD clumping, along with covariates adjusted for in their analysis.\n\nCombining this PRS with scores for established causal risk factors for CHD suggested that they can help improve polygenic prediction (namely low density lipoprotein (LDL) cholesterol and myocardial infarction), although integrating any associated scores in a hypothesis-free manner may hinder prediction (Figure 2). This could potentially due to the increase in variance incorporated into prediction analyses from scores that do not directly influence CHD, or alternatively may indicate that they are spurious associations. Additional research is required to evaluate the contribution of multiple PRS as predictors of a single outcome. Doing so may help develop a greater understanding regarding which traits can help predict disease outcomes using PRS.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43657/elife-43657-fig2-v1.jpg)\n\n**Figure 2.:** A receiver operating characteristic (ROC) curve to compare the sensitivity and specificity of polygenic risk scores (PRS) and individuals with ischaemic heart disease (defined using ICD 10 codes \u2018I25\u2019) in the UK Biobank study. The scores evaluated were 1. Coronary Heart Disease (CHD), 2. A combined scored of CHD, Myocardial Infarction (MI) and Low Density Lipoprotein cholesterol (LDL), 3. All traits with a p-value<1\u00d710\u221206 in our PRS analysis (excluding scores from GWAS overlapping with the UK Biobank sample). These were CHD, MI, LDL, Total cholesterol, Triglycerides, High Density Lipoprotein cholesterol, Years of schooling, Height and Waist Circumference. All PRS were constructed from GWAS using independent SNPs with p<5\u00d710\u221205.\n\nAmongst other findings, we observed that participants had increased odds of 2.43 in terms of obtaining a University or College degree when comparing top and bottom deciles for the years of schooling PRS. Other noteworthy examples included a 3.48 fold increase in odds of taking atorvastatin as medication when comparing the extreme deciles for the LDL PRS. We also observed that participants in the highest decile for the ulcerative colitis PRS had increased odds of 5.36 in terms of developing this disease in comparison to those in the lowest decile (based on the ICD10 code \u2018K51\u2019).\n\n### Uncovering known and novel findings by conducting a phenome-wide evaluation of associations\n\nTo demonstrate the value of this atlas of results, we have investigated some of the strongest associations detected between the schizophrenia PRS and all 551 complex traits analysed in the UK Biobank study (Figure 3,\u00a0Supplementary file 1d). Associations within our atlas could potentially be identified due to underlying epidemiological relationships, although there are various other possible explanations such as a shared genetic aetiology between traits. To investigate this for our associations with the schizophrenia PRS, we have used various methods in two-sample MR as an example of how future studies could evaluate findings from our atlas. For these analyses we only used SNPs with p<5\u00d710\u221208 as instrumental variables to reduce the likelihood of weak instrument bias in our analysis (Davies et al., 2015). Furthermore, in these analyses we model liability to schizophrenia as our exposure within an MR framework with associated complex traits as outcomes (unless stated otherwise). Our systematic approach involved the following:\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43657/elife-43657-fig3-v1.jpg)\n\n**Figure 3.:** Each point on this plot represents the association between the schizophrenia polygenic risk score (based on p<5\u00d710\u221205) and a complex trait in the UK Biobank study.\u00a0Along the y-axis are \u2013log10 p-values for these associations multiplied by the direction of effect for their corresponding effect size. As such, traits positively associated with schizophrenia genetic liability reside above the horizontal grey line representing the null (i.e. \u2013log10 (P)\u00a0=\u00a00), whereas negative associations are below. Points are grouped and coloured based on their corresponding complex traits\u2019 subcategory. Horizontal red lines indicate the Bonferroni corrected threshold for the 551 tests undertaken (i.e. 0.05/551\u00a0=\u00a09.07\u00d710\u221205).\n\nThe top association with the schizophrenia PRS suggests that individuals with high schizophrenia genetic liability have increased odds of seeing a psychiatrist at some point in their lives due to nerves, anxiety, tension of depression (OR\u00a0=\u00a01.09 per standard deviation increase in PRS, 95% CI\u00a0=\u00a01.08 to 1.10, p=1.55\u00d710\u221250). The schizophrenia PRS was also strongly associated with various neurological traits, such as neuroticism (Beta\u00a0=\u00a00.066, SE\u00a0=\u00a00.006, p=8.17\u00d710\u221227), being \u2018tense or highly strung\u2019 (OR\u00a0=\u00a01.07, 95% CI\u00a0=\u00a01.07 to 1.08, p=2.25\u00d710\u221247) and self-reported depression (OR\u00a0=\u00a01.07, 95% CI\u00a0=\u00a01.06 to 1.08, p=4.91\u00d710\u221218).\n\nWe identified strong evidence that schizophrenia genetic liability influences this set of neurological traits (Supplementary file 1e), except for self-reported depression where strong evidence was only detected using the inverse variance weighted (IVW) method (Beta\u00a0=\u00a00.004, SE\u00a0=\u00a00.001, p=0.009). There was also no strong evidence of directional horizontal pleiotropy for these results based on the MR Egger intercept term and associations were detected after repeating analyses using MR directionality filtering.\n\nAlong with using MR to investigate the effect of PRS traits on outcomes, we recommend investigating the converse direction of effect where possible (also known as \u2018bi-directional\u2019 MR (Timpson et al., 2011). For example, for the associations detected with the schizophrenia PRS, associated traits in the UK Biobank were modelled as our exposure in an MR setting and schizophrenia was treated as our outcome. Results suggested that neuroticism liability influences schizophrenia risk (Supplementary file 1f), although we detected evidence of directional horizontal pleiotropy based on the MR Egger intercept term (Beta\u00a0=\u00a00.043, SE\u00a0=\u00a00.018, p=0.018). After applying MR directionality filtering, we also identified evidence of association between being \u2018tense or highly strung\u2019 and schizophrenia risk. Therefore, the most parsimonious explanation for these findings could be that they have been observed due to a shared genetic aetiology between schizophrenia and other neurological traits. This is also likely to be a plausible explanation for other associations within our atlas. In particular, caution is advised when interpreting findings between autoimmune traits which are known to be influenced by highly correlated genes residing in the HLA region of the genome (Gough and Simmonds, 2007). Although these findings could still be of interest in terms of genetic correlations between traits, they may not reflect underlying causal relationships (O'Connor and Price, 2018).\n\nAmongst other findings, there were associations which suggested individuals with high schizophrenia genetic liability had a lower fluid intelligence score (Beta\u00a0=\u00a0\u22120.083, SE\u00a0=\u00a00.006, p=1.49\u00d710\u221239). We also observed evidence that these individuals performed worse than others in an assessment of cognitive function concerning memorising pairs of cards (Beta\u00a0=\u00a00.020, SE\u00a0=\u00a00.002, p=6.66\u00d710\u221234 for \u2018number of incorrect matches\u2019). Follow-up MR analyses provided evidence from multiple methods that schizophrenia genetic liability (i.e. our exposure) influences both of these outcomes (Supplementary file 1g). These results were robust to sensitivity analyses using MR directionality filtering and MR Egger intercepts did not indicate that findings were prone to directional horizontal pleiotropy. In contrast, we did not detect strong evidence of a causal effect in the opposite direction for these associations (i.e. evaluating the effect on measures of cognition and memory on schizophrenia risk), in particular after applying MR directionality filtering and when evaluating results from the weighted median and mode methods (Supplementary file 1h). We also conducted a leave-one out analysis which suggested that no individual SNPs were responsible for driving observed effects (Appendix 1\u2014Figure 1, Appendix 1\u2014Figure 2). Taken together, these analyses support evidence that schizophrenia genetic liability may lead to reduced cognitive function.\n\nElsewhere, there were associations indicating that participants with a high schizophrenia PRS were more likely to be unsuccessful when attempting to quit smoking (Beta\u00a0=\u00a00.028, SE\u00a0=\u00a00.003, p=3.87\u00d710\u221222) and, accordingly reduced odds of being a past smoker (OR\u00a0=\u00a00.97, 95% CI\u00a0=\u00a00.97 to 0.98, p=9.71\u00d710\u221217). We observed strong evidence of association that schizophrenia genetic liability influences these outcomes (Supplementary file 1i), whereas the converse direction of effect provided weak evidence of an effect (Supplementary file 1j). However, the \u2018number of unsuccessful smoking attempts\u2019 outcome could only be instrumented using a single variant which limits our ability to investigate this effect. Moreover, a recent study has uncovered a large number of SNPs robustly associated with smoking cessation and provided evidence of a bi-directional relationship between smoking and schizophrenia using MR (Wootton, 2018). Leave-one out analyses suggested that no individual SNP was responsible for driving observed associations (Appendix 1\u2014Figure 3, Appendix 1\u2014Figure 4).\n\nWe also observed a strong inverse association between the schizophrenia PRS and various anthropometric traits. However, evaluating the relationship between schizophrenia liability and body mass index (BMI) provided weak evidence of a causal effect in both directions (Supplementary files 1k & 1l). This result reinforces our recommendation that all findings within our atlas require in-depth evaluation to discern whether they represent potential causal associations.\n\n### Elucidating risk factors which may play a mediating role along the causal pathway to disease\n\nAnother strength of our atlas is that findings can be evaluated by selecting an outcome of interest and evaluating which of the 162 PRS are most strong associated with it. Doing so may motivate future endeavours to investigate the effect of multiple risk factors on disease risk. As a demonstration of this, we have evaluated the associations between all PRS and self-reported gout in the UK Biobank study (Supplementary file 1m). In this analysis, there was strong evidence of association using the PRS for gout itself (OR\u00a0=\u00a01.16, 95% CI\u00a0=\u00a01.13 to 1.19), although we also observed a much larger magnitude of effect using the urate PRS (OR\u00a0=\u00a01.75, 95% CI\u00a0=\u00a01.72 to 1.78). Although many of the PRS in our analysis may be the best polygenic predictors for their target disease/trait, there may be other examples similar to this where the strongest association for an outcome is not the corresponding PRS. For example, the strongest association for birth weight as an outcome in our atlas was with the height PRS (Beta\u00a0=\u00a00.080, SE\u00a0=\u00a00.002, p=1.31\u00d710-249).\n\nA receiver operating characteristic plot (Figure 4) illustrates this point, where the area under curve for the gout PRS was 0.54 in comparison to the urate PRS which had a value of 0.65. This may be attributed to gout being a binary outcome heavily influenced by the number of cases analysed in its corresponding GWAS (N\u00a0=\u00a02,115). In comparison, urate is a continuous trait measured in all participants for its respective GWAS (N\u00a0=\u00a0110,347). After urate, the next strongest positive associations with self-reported gout were triglycerides (TG) and body mass index (BMI) (OR\u00a0=\u00a01.14, 95% CI\u00a0=\u00a01.11 to 1.16 and OR\u00a0=\u00a01.09, 95% CI\u00a0=\u00a01.06 to 1.12 respectively). However, it is unclear whether these risk factors influence gout risk independently of one and other or if they reside on the same causal pathway to disease.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43657/elife-43657-fig4-v1.jpg)\n\n**Figure 4.:** A receiver operating characteristic (ROC) curve to compare the sensitivity and specificity of polygenic risk scores (PRS) and individuals with self-reported gout in the UK Biobank study.\u00a0The scores evaluated were gout and urate using independent SNPs identified by GWAS with p<5\u00d710-05.\n\nWe investigated this by firstly using an MR mediation framework which involved evaluating bi-directional relationships for each risk factor in turn. As before, only SNPs with p<5\u00d710\u221208 for each PRS were used as instrumental variables in MR analyses. There was strong evidence that BMI (i.e. our exposure) had a causal effect on each other trait in turn (TG, urate and gout), where effect estimates appeared to be consistent between different MR methods (Supplementary file 1n). Repeating this analysis for TG as our exposure provided evidence of a causal effect on urate and gout risk, but not BMI (Supplementary file 1o). We then modelled urate as our exposure variable, which suggested that increased urate positively influences gout risk, although there was weak evidence of an effect on either BMI or TG (Supplementary file 1p). In all analyses there was no strong evidence of horizontal pleiotropy based on the MR-Egger intercept terms and findings were robust to sensitivity analyses using MR directionality filtering (Supplementary file 1n-1p). We also undertook leave-one out analyses which found that no single SNP was driving observed effects (Appendix 1\u2014Figure 5, Appendix 1\u2014Figure 6, Appendix 1\u2014Figure 7, Appendix 1\u2014Figure 8). In conclusion, as illustrated in Figure 5a, findings from the mediation MR analysis suggests that BMI influences TG levels (Figure 5a (1)), which has an effect of urate (Figure 5a (2)), and this subsequently influences gout risk (Figure 5a (3)). Using the effect estimates from our IVW analysis, we estimated that 77% of the overall effect of BMI on gout risk (Figure 5a (4)) is mediated through this causal pathway.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/43657/elife-43657-fig5-v1.jpg)\n\n**Figure 5.:** (a) Mediation Mendelian randomization (MR) framework to investigate whether urate mediates the effect of body mass index (BMI) and triglycerides (TG) on gout risk. The various analyses undertaken suggest that 1) elevated BMI increases TG levels 2) which subsequently has an effect on urate 3) and this in turn influences gout risk. This mediation pathway may help explain the manner by which BMI, potentially driven by lifestyle factors such as diet, is a risk factor for gout. (b) Multivariable MR framework attempting to reproduce findings from the mediation analysis. Genetic instruments for BMI, TG and urate were analysed simultaneously to evaluate the joint effect of these risk factors on gout risk. The effect of BMI and TG on gout risk attenuated compared to univariable analyses, suggesting that they influence gout risk through increased urate levels. Investigating each combination of pairwise risk factors using this framework suggested that BMI influences TG rather than the opposite direction of effect, which also supports findings from the mediation analysis.\n\nWe also used a related approach to investigate the effect of these multiple risk factors on gout susceptibility, known as multivariable MR (Sanderson et al., 2018). In this analysis genetic instruments for all exposures (i.e. BMI, TG and urate) are modelled simultaneously to investigate whether these risk factors influence our outcome (i.e. gout) independently of one and other. We observed the effects of BMI and TG on gout risk attenuate when analysed in the same model as urate (Supplementary file 1q). Furthermore, in subsequent analyses we applied multivariable MR to investigate each pairwise combination of these risk factors on gout risk. There was evidence of an attenuation of the effect of BMI on gout risk when accounting for either the TG or urate effect (Supplementary files 1r and 1s). We also observed the effect of TG on gout risk attenuate when accounting for urate levels (Supplementary file 1t). These findings therefore support the same direction of effect observed using the mediation framework (Figure 5b).\n\n## Discussion\n\nIn this study we have developed an atlas of associations between PRS and complex traits across the human phenome. Along with contributing to mounting evidence that PRS can be valuable in predicting later life disease outcomes, we have provided examples of how this resource can be harnessed to help identify potential risk factors in disease which warrant further investigation. We envisage that the inferences we have made in this study are just the beginning of potential findings which can be uncovered using such catalogues of associations. Multiple lines of evidence from robust follow-up studies of putative causal risk factors will help improve our understanding of disease susceptibility (Munaf\u00f2 and Davey Smith, 2018).\n\nLarge-scale biobank datasets provide an unparalleled opportunity to undertake hypothesis-free causal inference. Such efforts can help identify evidence supporting established causal relationships, as well as potentially implicating novel ones (Davey Smith and Hemani, 2014; Cai et al., 2018). We have illustrated this approach in our study by evaluating the results of a phenome-wide association study of schizophrenia genetic liability. This identified strong associations with measures of cognitive function and smoking behaviour which MR follow-up analyses suggested may be due to putative causal relationships with schizophrenia genetic liability.\n\nThere is long standing evidence from the literature that cognitive impairment is a recognised characteristic of schizophrenia (Mohamed et al., 1999). Although PRS may prove useful in determining lifelong risk of developing schizophrenia, based on currently available data they may be less effective in terms of predicting age of schizophrenia onset as well as the severity of its progression. Characterization of cognitive decline in individuals with a high schizophrenia PRS may therefore help improve elucidation of its neurological basis, and ultimately improvement in therapeutic approaches to it (Green, 1996).\n\nThere is also a wealth of evidence in the literature from observational studies that individuals diagnosed with schizophrenia smoke more frequently compared to the general population (Sacco et al., 2005). Our results indicate that UK Biobank participants with a high schizophrenia genetic liability are more likely to be unsuccessful in their attempts to stop smoking. This may therefore suggest that the high frequency of schizophrenia patients who smoke could be attributed to their inability to quit smoking. However, we were unable to support recent evidence which suggests that smoking is a risk factor for schizophrenia which could be attributed to weak instruments in our analysis (Wootton, 2018). The positive association with smoking behaviour may also provide a possible explanation for the inverse association we observed between schizophrenia genetic liability and anthropometric traits.\n\nIn this study we have also provided an example of how investigating various PRS associations with the same outcome may help motivate studies evaluating the effect of multiple risk factors on disease risk. Our analysis detected evidence of an association between body mass index and gout risk, putatively mediated by triglycerides and urate levels. The findings from this analysis therefore appear to recapitulate known biology regarding the established causal pathway to gout (Matsubara et al., 1989), (Li et al., 2017). Speculatively, a diet including high calorie and alcohol consumption, which are known risk factors for increased body mass index and triglyceride levels, may result in elevated circulating uric acid level and in turn increase gout risk. A recent study has suggested that genetic factors may have a greater impact on serum urate levels than environmental factors such as diet (Major et al., 2018). Our findings suggest that genetic drivers of appetite which may influence higher BMI levels are likely to predominantly influence gout risk via increased urate levels. We hope this illustration will motivate creative hypotheses for future endeavours to investigate the effect of multiple risk factors on disease risk.\n\nThe application of PRS is a topic which has sparked considerable recent debate, particularly concerning whether scores are relevant for clinical decision making (Warren, 2018). Although resources such as the UK Biobank provide an unparalleled opportunity to investigate the determinants of complex disease as we have done in this study, findings regarding genetic liability may not be generalizable to individuals who are not of European descent. As such, there is likely to be an emphasis in the forthcoming years on efforts to establish disease-specific datasets for a diverse range of ancestries. We also note that, although we have adjusted all analyses in our study using the top 10 principal components from the UK Biobank, there may still be an influence of geographic clustering which remains unaccounted for Abdellaoui et al. (2018). Furthermore, although we have flagged the PRS traits in our study derived using GWAS which have overlapping samples with the UK Biobank, we are unable to assess this for scores whose GWAS predate this cohort. Future efforts to link anonymous identifiers between the UK Biobank and UK cohorts would be of helpful in terms of ascertaining this information to prevent overfitting. Lastly, certain complex traits in our study may benefit from being combined to improve statistical power. For instance, a more powerful approach to identify associations between genetic liability and statin medication could involve deriving a combined measure of all the different types of statins reported. Investigating these results in a hypothesis-free manner as we have described in this study may also prove useful for drug repurposing efforts.\n\nPolygenic risk scores hold huge promise in the era of large-scale genetic epidemiology to identify individuals who are at high risk of disease. Associations detected between these scores and outcomes undertaken by large-scale analyses should prove powerful for future studies that wish to unravel causal relationships between complex traits. Doing so will help improve disease prevention by developing a stronger understanding of complex epidemiological pathways.\n\n## Materials and methods\n\n### Simulations to compare polygenic risk score analysis with Mendelian randomization\n\nOur simulation study concerned two different models; the causal model (simulating a risk factor which has a causal effect on the simulated outcome) and the null model (where there is no causal effect between the simulated exposure and outcome). We ran 1000 simulations using each model to compare the PRS approach with the IVW method using a dataset comprising of 10,000 samples and 50 SNPs. Further details and all the code used to conduct these simulations can be found at https://\u200cgithub.com/\u200cexplodecomputer/\u200cprs-vs-mr.\n\n### Constructing polygenic risk scores from large-scale genome-wide association studies\n\nWe have used the MR-Base platform (Hemani et al., 2018) to identify SNPs from large-scale GWAS to include in our PRS. Our inclusion criteria for selected GWAS was having a sample size of more than 1000 participants, over 100,000 SNPs measured on genotyping arrays and based on European/mixed populations. If multiple studies were found for the same trait, we selected the most recent study or the one with the largest sample size.\n\nPRS were constructed using SNPs for each GWAS trait based on p<5\u00d710\u221205. A threshold of r2\u00a0<0.001 was selected to identify independent SNPs using genotype data from European individuals (CEU) from phase 3 (version 5) of the 1000 genomes project (Abecasis et al., 2012). When a GWAS SNP was not available from the UK Biobank study genotype data, we used a proxy SNP instead based on r2\u00a0\u22650.8 using the same reference panel. Scores were then calculated as the sum of the effect alleles for all SNPs weighted by their reported regression coefficients. However, a small subset of PRS were left unweighted to reduce the likelihood of overfitting. This was due to their GWAS including participants from the initial release of the UK Biobank study. As such, additional caution should be exercised when interpreting findings from these unweighted PRS. Prior to analysis, each PRS was normalised to have a mean of zero and a standard deviation (SD) of one. Our PRS construction pipeline was also applied using a more stringent threshold of p<5\u00d710\u221208. Although we have not interpreted any of the results using these more stringent scores in this report, they are available within our atlas for future use.\n\n### Complex trait and genotype data from the UK Biobank study\n\nWe selected traits from the UK Biobank study (Sudlow et al., 2015) which had p<0.05 in the heritability analyses conduct by the Neale lab (Neale Lab, 2017). Genotype data were available for approximately 490,000 individuals enrolled in the study. Phasing and imputation of these data are explained elsewhere (Bycroft et al., 2018). Individuals with withdrawn consent, evidence of genetic relatedness or who were not of \u2018white European ancestry\u2019 based on a K-means clustering (K\u00a0=\u00a04) were excluded from analysis. After exclusions there were up to 334,398 individuals with both genotype and complex trait data who were eligible for analysis.\n\n### Statistical analysis\n\nWe evaluated the association between each combination of PRS and complex trait in the UK Biobank study using linear regression (for continuous traits), logistic regression (for case/control traits), ordinal logistic regression (for ordered categorical traits) and multinomial logistic regression (for unordered categorical traits). All analyses were adjusted for age, sex, the first 10 genetic principle components (to adjust for population stratification) and genotyping chip used to measure genetic data in participants. Only female participants were included in the \u2018Age at menarche\u2019 and \u2018Age at menopause\u2019 PRS analyses.\n\nWe also calculated R2 coefficients for continuous traits and McFadden pseudo R2\u00a0coefficients for other models by repeating analyses unadjusted for covariates. McFadden\u2019s R2\u00a0is defined as:\n\nR2McF= 1 \u2013 ln(Lm/ln(L0)\n\nwhere ln is the natural logarithm, L0 is the value of the likelihood function of the model with no predictors and Lm is the likelihood of the model being estimated. We note that pseudo R2\u00a0coefficients should not be interpreted in a similar manner to those derived using linear regression (Hu et al., 2006).\n\n### Mendelian randomization analysis\n\nWe used various two-sample MR methods to evaluate associations detected in the PRS analysis. This involved using the observed effects of the genetic variants used in the PRS on both the GWAS trait that the score was based on (treated as the exposure in our MR analysis) as well as the UK Biobank trait (treated as the outcome in our MR analysis). For all MR analyses we only selected SNPs with p<5\u00d710\u221208 based on GWAS findings as instrumental variables to reduce the likelihood of weak instrument bias (Davies et al., 2015). In terms of MR methods, we applied the inverse variance weighted (IVW) (Burgess et al., 2013), weighed median (Bowden et al., 2016) and weighted mode approaches. We also conducted several different sensitivity analyses to evaluate findings. We derived Cochran\u2019s Q statistic when undertaking the IVW approach as an indicator of heterogeneity, as well as repeating all analyses after filtering out SNPs which the MR directionality test suggested did not influence the outcome of interest through the analysed exposure. The intercept of the MR-Egger approach (Bowden et al., 2015) was used to investigate directional horizontal pleiotropy and leave-one-out analyses (i.e. reapplying the IVW method after removing each SNP in turn with replacement) were conducted to discern whether any individual SNPs were driving observed associations. These types of analyses are particularly important when assessing findings from our atlas, as one possible explanation is that they could be attributed to a single pleiotropic SNP which has a large effect size (e.g. the APOE locus which is associated with Alzheimer\u2019s disease and lipid levels).\n\nTo investigate the direction of effect for associations identified in the PRS analysis we undertook bi-directional MR (Timpson et al., 2011). This involves firstly modelling our PRS trait as our exposure and complex trait as our outcome, and subsequently the complex trait as our exposure and PRS trait as our outcome in a separate analysis. Lastly, we have incorporated two recent developments within the field of MR; mediation MR and multivariable MR (Sanderson et al., 2018). These methods can be used to investigate the effect of multiple risk factors on a single outcome, as well as uncover potential mediators in disease. In this study we have evaluated findings from the PRS analysis based on the p<5\u00d710\u221205 threshold. We note however that it is only advisable to apply techniques in MR using this threshold as long as in-depth sensitivity analyses (e.g. leave-one out, MR-Egger intercept) are also undertaken to robustly evaluate findings.\n\nWhen undertaking our example of mediation MR in this study, we also calculated the proportion mediated along the causal pathway from exposure to outcome using effect estimates derived using the IVW method, where:\n\nProportion mediated = $\\frac{directeffect-indirecteffect}{directeffect}$\n\nThe direct effect here is the IVW effect estimate derived for the association between the exposure (i.e. BMI) and our outcome (i.e. gout). The indirect effect was calculated as the product of all IVW effect estimates derived for all relationships along the causal pathway of interest (i.e. the effect of BMI on triglycerides, the effect of triglycerides on urate and the effect of urate on gout).\n\nAll analyses were undertaken using R (version 3.5.1). The R package \u2018shiny\u2019 v1.1 was used to develop the web application and \u2018highcharter\u2019 v0.5 was used to generate interactive plots. Figures in this manuscript were generated using \u2018ggplot2\u2019 v2.2.1.\n\n### Data availability\n\nAll summary statistics for the analyses undertaken in this study can be downloaded using our web application (http://mrcieu.mrsoftware.org/PRS_atlas/). Our dataset was derived from the UK Biobank study as part of projects 8786 and 15825. The same dataset can be created with an application to use data from the UK Biobank study (http://biobank.ctsu.ox.ac.uk/crystal/).\n",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "7be79e04-c2f6-4b7a-a3df-8961f262c17e",
+      "submission_id": "917f847d-f2ea-4f85-9c6b-279a30bfd56d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ruth Loos, The Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.43657.020](https://doi.org/10.7554/eLife.43657.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"An atlas of polygenic risk score associations to highlight putative causal relationships across the human phenome\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mark McCarthy as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll three reviewers provided a positive review of the paper. However, they have raised several suggestions that should be addressed before the paper can be accepted for publication.\n\nMost of these are pretty minor, and we anticipate should be straightforward for you to address.\n\nReviewer #2's \"major limitation\" was discussed among reviewers. The editors clarified that since the paper is being considered as a Tools and Resources article, that this particular concern is not valid and does not need specific attention.\n\nReviewer #1:\n\nThis paper describes the atlas of polygenic risk score associations, a very useful resource, made available online through a browser. More than 160 GWAS-derived PRS were created that can be associated with more than 550 traits available in the UK Biobank. The atlas allows uncovering new risk factors of disease and, in combination with the MR-Base browser/software, to test causality.\n\nThe paper illustrates how the atlas can be used with a few examples. While generally well written, I do have the following suggestions for the paper:\n\n- Throughout the paper, while the authors do a good job reporting the statistics and various methods, the readers are often left on their own with the final interpretation. E.g. often, the authors will state that there is evidence of a causal relationship, but from the sentence, it is not clear what the exposure and what the outcome is (not everyone will want to check the supplementary tables). It would be good to go through the paper and make sure the causal relationships are described sufficiently.\n\n- Some of the PRSs were not weighed because the GWAS included the \"interim release\" of UKBiobank. The authors argue that without the weighing, they avoid overfitting of the PRS. It would be good to indeed demonstrate that; i.e. test a weighed PRS on the second part of the UKBiobank that was not part of the GWAS and compare it to the unweighted PRS in the full UKBiobank.\n\n- In the last paragraph of the subsection \u201cAn atlas of polygenic risk score associations across the human phenome\u201d, the results for CHD are being discussed. While the ORs are similar as reported before, the AUC-ROC for CAD is much lower than reported in the Khera et al. paper; i.e. 0.60 (here) vs. 0.85 (Khera et al.). Given the high profile of the Khera et al. results it would be worth explaining what this difference might be due to - likely because Khera et al. included age and sex in their model.\n\n- The fact that multiple PRSs reduce the predictive ability is interesting and probably worth a paper on its own. Has this been tested for other outcomes or has this been documented elsewhere? It currently leaves the readers a little on their own without a clear answer to why this might be.\n\n- The authors conclude that schizophrenia may lead to reduced cognitive function. However, in their results they state that there is some evidence for the opposite effect. This may need clarification.\n\n- How did the authors estimate that 77% of the effect of BMI on gout was mediated ?\n\nWith reference to the atlas:\n\n- I was surprised to see that a high PRS for adiponectin was associated with high adiposity. I assume that this unexpected positive correlation is because the PRS was calculated based on BMI-adjusted adiponectin. I believe there are other traits that we adjusted (for BMI). It should be made clear in the browser which traits, as it changes the interpretation.\n\nPunctuation throughout the text could be improved.\n\nReviewer #2:\n\nRichardson and colleagues develop an atlas of associations of 162 polygenic scores and 551 traits. They explore this atlas and develop two stories around causal inference for schizophrenia and gout.\n\nStrengths:\n\n1) The atlas may be useful for investigators to explore;\n\n2) There is a web application that will facilitate exploration of the results.\n\nMajor limitations:\n\n1) From their exploration of this resource, they highlight two stories. The significance of the biologic insights presented is incremental and limited. As such, should the work be presented as a software or web resource rather than a publication of a scientific observation?\n\nMinor limitations:\n\n1) Discussion can be trimmed and simplified.\n\nReviewer #3:\n\nRichardson et al. present a comprehensive study on an atlas of polygenic risk score associations to highlight putative causal relationships across the human phenome. The authors present a well qualified study pinpointing to the limitations of such an approach for investigating truly causal relationships.\n\nRegarding this manuscript I only have minor comments.\n\n1) Why only 334,398 individuals in the UK Biobank study?\n\n2) Simulation study details can be provided in main text. It was hard to follow what exactly was done in the simulation study.\n\n3) The first paragraph of the subsection \u201cElucidating risk factors which may play a mediating role along the causal pathway to disease\u201d, contains a speculative statement about how likely it is representative of other findings within the atlas, where the PRS for the disease of interest may not always necessarily be the best polygenic predictor of it. Can you provide another example?\n",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7626b977-27d5-49d6-b004-8d053a088519",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C1",
+      "claim": "The study analysed 162 PRS (p<5\u00d710\u221205) derived from GWAS and 551 heritable traits from the UK Biobank study (N = 334,398).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have analysed 162 PRS (p<5\u00d710\u221205) derived from GWAS and 551 heritable traits from the UK Biobank study (N = 334,398).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of PRS analyzed, the p-value threshold used, and the sample size from UK Biobank.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "a8cdae1d-1761-4168-903d-b570a96de1bd",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C2",
+      "claim": "A web application is available at http://mrcieu.mrsoftware.org/PRS_atlas/ to investigate findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings can be investigated using a web application (http:\u200c//\u200cmrcieu.\u200cmrsoftware.org/\u200cPRS\u200c_atlas/), which we envisage will help uncover both known and novel mechanisms which contribute towards disease susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides the URL and describes the purpose of the web application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "561f8d77-3fbc-4ceb-853f-f90cf3f4d2c3",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C3",
+      "claim": "Schizophrenia genetic liability shows inverse associations with measures of cognitive function.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst findings were inverse associations with measures of cognitive function which extensive follow-up analyses using Mendelian randomization (MR) provided evidence of a causal relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states inverse associations were found and supported by MR analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "a55e8031-61bc-4d24-b006-a2dafb2b2d9d",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C4",
+      "claim": "Large-scale GWAS have uncovered thousands of trait-associated single nucleotide polymorphisms (SNPs) throughout the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic factors may also contribute substantially to disease susceptibility, as demonstrated by recent large-scale genome-wide association studies (GWAS) which have uncovered thousands of trait-associated single nucleotide polymorphisms (SNPs) throughout the human genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge in the field of GWAS research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "2c735025-9f84-4cd3-b3d2-d38e2cc9e736",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C5",
+      "claim": "The magnitude of effect and variance explained by common genetic variants is typically small (Visscher et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "However, typically the magnitude of effect and variance explained by one of these common genetic variants is small (Visscher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Visscher et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "1760740b-827d-4493-8c1e-4e10210f9541",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C6",
+      "claim": "Polygenic risk scores (PRS) are commonly defined as the sum of trait-associated SNPs weighted by their effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Polygenic risk scores (PRS), commonly defined as the sum of trait-associated SNPs weighted by their effect sizes, harness findings from GWAS to provide an overall measure of an individual's genetic liability to develop disease (Torkamani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a definition of PRS with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "213dbcea-a0d5-477d-a40c-f73139da987c",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C7",
+      "claim": "Early applications of PRS were underwhelming in terms of disease prediction (Ripatti et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "Although early applications of PRS were found to be underwhelming in terms of disease prediction (Ripatti et al., 2010), breakthroughs in the scale of GWAS and accessibility to biobank scale datasets have substantially improved their performance (Khera et al., 2018; Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ripatti et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e67ef572-7757-459b-b4a5-8fc37e11f3f3",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C8",
+      "claim": "Breakthroughs in the scale of GWAS and accessibility to biobank scale datasets have substantially improved PRS performance (Khera et al., 2018; Lee et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "Although early applications of PRS were found to be underwhelming in terms of disease prediction (Ripatti et al., 2010), breakthroughs in the scale of GWAS and accessibility to biobank scale datasets have substantially improved their performance (Khera et al., 2018; Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Khera et al., 2018 and Lee et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "61d7625e-8d23-4137-85e2-0bb6bcd43f05",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C9",
+      "claim": "PRS hold considerable potential to improve early disease prognosis and treatment plan formulation (Lewis and Vassos, 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "As such, they hold considerable potential to improve early disease prognosis and treatment plan formulation (Lewis and Vassos, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lewis and Vassos, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "8e08aa21-174b-4c26-8a28-1f9307a5d0c0",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C10",
+      "claim": "PRS have been previously used to evaluate putative causal relationships (Davies et al., 2018; Palmer et al., 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "Along with the emerging utility of PRS to predict disease, they have also been previously used to evaluate putative causal relationships (Davies et al., 2018; Palmer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Davies et al., 2018 and Palmer et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "fff90da3-ae7e-4790-88aa-13173ec65449",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C11",
+      "claim": "Mendelian randomization (MR) is a method by which genetic variants are leveraged as instrumental variables to investigate causal relationships between modifiable risk factors and disease outcomes (Davey Smith and Ebrahim, 2003; Davey Smith and Hemani, 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "One such approach in this paradigm is Mendelian randomization (MR), a method by which genetic variants are leveraged as instrumental variables to investigate causal relationships between modifiable risk factors and disease outcomes (Davey Smith and Ebrahim, 2003; Davey Smith and Hemani, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim defines MR and is supported by citations to Davey Smith and Ebrahim, 2003 and Davey Smith and Hemani, 2014.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "05cf69ea-2292-4d71-bbae-476ba98924c9",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C12",
+      "claim": "MR is typically limited to using SNPs which survive conventional GWAS corrections (i.e. p<5\u00d710\u221208), which may lack statistical power if these variants do not explain a large proportion of trait variance.",
+      "claim_type": "EXPLICIT",
+      "source": "MR is typically limited to using SNPs which survive conventional GWAS corrections (i.e. p<5\u00d710\u221208), which may lack statistical power if these variants do not explain a large proportion of trait variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a limitation of MR based on established practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "06fe8a18-d025-44ed-873a-2f289036396e",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C13",
+      "claim": "PRS derived using a more lenient threshold (e.g. p<5\u00d710\u221205) can help recover some of the missing heritability due to a larger number of SNPs being included.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PRS derived using a more lenient threshold (e.g. p<5\u00d710\u221205) can help recover some of this missing heritability due to a larger number of SNPs being included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the rationale for using a more lenient threshold based on theoretical understanding.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "346ecaa9-ca14-437d-92c3-af0638362ca3",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C14",
+      "claim": "Using a PRS provides higher statistical power than the inverse variance weighted (IVW) method but suffers from substantive false positive rates due to horizontal pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicated that, although using a PRS provides higher statistical power, it also suffers from substantive false positive rates due to horizontal pleiotropy, the phenomenon whereby a gene influences multiple traits via independent biological pathways (Davey Smith and Hemani, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation study results presented in the manuscript and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "5bd5d208-b744-4694-957d-04bdd5294d3a",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C15",
+      "claim": "Horizontal pleiotropy is the phenomenon whereby a gene influences multiple traits via independent biological pathways (Davey Smith and Hemani, 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicated that, although using a PRS provides higher statistical power, it also suffers from substantive false positive rates due to horizontal pleiotropy, the phenomenon whereby a gene influences multiple traits via independent biological pathways (Davey Smith and Hemani, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines horizontal pleiotropy with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "ddfffe02-e843-49a4-abdd-614712523371",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C16",
+      "claim": "SNPs which are known to be pleiotropic with large effects on different and diverse traits have been found to distort findings from PRS analyses (Felsky et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs which are known to be pleiotropic with large effects on different and diverse traits have been found to distort findings from PRS analyses (Felsky et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Felsky et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "d88352c6-dcac-47e0-bd76-f5e77c4ca15f",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C17",
+      "claim": "The study undertook 89,262 tests to investigate the association between 162 different PRS and 551 complex traits from the UK Biobank study.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we undertook 89,262 tests to investigate the association between 162 different PRS derived from GWAS (Supplementary file 1a) and 551 complex traits from the UK Biobank study (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of tests conducted.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "da7ed0e4-e9ea-4413-8781-7b986f5e6281",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C18",
+      "claim": "PRS were constructed using independent SNPs for each GWAS (p<5\u00d710\u221205) based on r2< 0.001 using genotype data from European individuals (CEU) from phase 3 (version 5) of the 1000 Genomes project (Abecasis et al., 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "PRS were constructed using independent SNPs for each GWAS (p<5\u00d710\u221205) based on r2< 0.001 using genotype data from European individuals (CEU) from phase 3 (version 5) of the 1000 Genomes project (Abecasis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology for PRS construction with a citation to the reference panel used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "45047130-8ce2-4108-bd96-df4c0bca1fc5",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C19",
+      "claim": "The threshold of p<5\u00d710\u221205 was selected to incorporate additional SNPs into scores which may explain additional heritability for GWAS traits.",
+      "claim_type": "EXPLICIT",
+      "source": "As opposed to the conventional GWAS cut-off of p<5\u00d710\u221208, the threshold of p<5\u00d710\u221205 was selected to incorporate additional SNPs into scores which may explain additional heritability for GWAS traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the rationale for the chosen threshold.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "0502f9d6-2e0f-42a4-8618-4ef7479ac5ba",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C20",
+      "claim": "The final sample size for analysis consisted of 334,398 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our final sample size for analysis consisted of 334,398 individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the final sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "c508a172-2818-454d-b45c-b3daab1e8861",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C21",
+      "claim": "Individuals with withdrawn consent, evidence of genetic relatedness or who were not of 'white European ancestry' based on a K-means clustering (K = 4) were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This was determined using a strict exclusion criterion to reduce false positive associations, removing individuals with withdrawn consent, evidence of genetic relatedness or who were not of 'white European ancestry' based on a K-means clustering (K = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the exclusion criteria applied to the sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "39e633dd-0bf9-4973-aad0-36bfb1544062",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C22",
+      "claim": "11 of the 162 GWAS reported that they included UK Biobank participants in their analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 162 GWAS we identified, 11 reported that they included UK Biobank participants in their analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of GWAS with overlapping samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "22539db7-913d-42cc-b61e-ce4371ff4866",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C23",
+      "claim": "The PRS for the 11 traits with UK Biobank overlap were not weighted to reduce overfitting bias.",
+      "claim_type": "EXPLICIT",
+      "source": "As this may lead to overfitting, the PRS for these 11 traits were not weighted to reduce this source of bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a methodological decision to address potential overfitting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "54223aa5-e2d7-4798-be67-d358f422d6d2",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C24",
+      "claim": "Complex traits from the UK Biobank study were selected based on p<0.05 from previously undertaken heritability analyses within this study (Neale Lab, 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Complex traits from the UK Biobank study were selected based on p<0.05 from previously undertaken heritability analyses within this study (Neale Lab, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the selection criteria for traits with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "4f11c28b-6b45-4f92-9b87-518314442473",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C25",
+      "claim": "Comparing the highest and lowest deciles of the coronary heart disease (CHD) PRS found that individuals had increased odds of 3.64 to develop this disease (based on the ICD10 code 'I25').",
+      "claim_type": "EXPLICIT",
+      "source": "For example, comparing the highest and lowest deciles of the coronary heart disease (CHD) PRS found that individuals had increased odds of 3.64 to develop this disease (based on the ICD10 code 'I25').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific odds ratio from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "4202331a-14cd-4809-a856-0f477d965b7f",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C26",
+      "claim": "A recent study by Khera and colleagues (Khera et al., 2018) reported a similar odds ratio for CHD in their analysis (OR:>3.0 for the highest 8% of individuals based on their PRS).",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study by Khera and colleagues (Khera et al., 2018) reported a similar odds ratio for CHD in their analysis (OR:>3.0 for the highest 8% of individuals based on their PRS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Khera et al., 2018 for comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "bbdf91f2-2df8-40f2-a972-140c4ec452f1",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C27",
+      "claim": "Khera and colleagues identified a higher area under curve in their analysis (0.806), which is likely attributed to tuning parameters such as LD clumping, along with covariates adjusted for in their analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that they identified a higher area under curve in their analysis (0.806), which is likely attributed to tuning parameters such as LD clumping, along with covariates adjusted for in their analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of differences between studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "057999b5-6402-402f-86b3-2c86978ff486",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C28",
+      "claim": "Combining the CHD PRS with scores for established causal risk factors for CHD (namely low density lipoprotein (LDL) cholesterol and myocardial infarction) can help improve polygenic prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining this PRS with scores for established causal risk factors for CHD suggested that they can help improve polygenic prediction (namely low density lipoprotein (LDL) cholesterol and myocardial infarction), although integrating any associated scores in a hypothesis-free manner may hinder prediction (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e4619c12-783e-4698-9a37-093265fc7441",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C29",
+      "claim": "Integrating any associated scores in a hypothesis-free manner may hinder prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining this PRS with scores for established causal risk factors for CHD suggested that they can help improve polygenic prediction (namely low density lipoprotein (LDL) cholesterol and myocardial infarction), although integrating any associated scores in a hypothesis-free manner may hinder prediction (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on results shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "37aa04a4-c2f8-40a4-9934-76e5b436d13f",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C30",
+      "claim": "Participants had increased odds of 2.43 in terms of obtaining a University or College degree when comparing top and bottom deciles for the years of schooling PRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst other findings, we observed that participants had increased odds of 2.43 in terms of obtaining a University or College degree when comparing top and bottom deciles for the years of schooling PRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific odds ratio from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "ce724854-e709-41aa-9182-a0effedaacaa",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C31",
+      "claim": "Participants in the highest decile for the LDL PRS had a 3.48 fold increase in odds of taking atorvastatin as medication compared to the lowest decile.",
+      "claim_type": "EXPLICIT",
+      "source": "Other noteworthy examples included a 3.48 fold increase in odds of taking atorvastatin as medication when comparing the extreme deciles for the LDL PRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific odds ratio from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "191b9f3a-2c77-46b9-81f1-d7e2b98a8037",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C32",
+      "claim": "Participants in the highest decile for the ulcerative colitis PRS had increased odds of 5.36 in terms of developing this disease in comparison to those in the lowest decile (based on the ICD10 code 'K51').",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that participants in the highest decile for the ulcerative colitis PRS had increased odds of 5.36 in terms of developing this disease in comparison to those in the lowest decile (based on the ICD10 code 'K51').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific odds ratio from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "55824f50-bc57-4197-8ab6-0344a4e63c3c",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C33",
+      "claim": "The schizophrenia PRS is associated with increased odds of seeing a psychiatrist at some point in their lives due to nerves, anxiety, tension or depression (OR = 1.09 per standard deviation increase in PRS, 95% CI = 1.08 to 1.10, p=1.55\u00d710\u221250).",
+      "claim_type": "EXPLICIT",
+      "source": "The top association with the schizophrenia PRS suggests that individuals with high schizophrenia genetic liability have increased odds of seeing a psychiatrist at some point in their lives due to nerves, anxiety, tension of depression (OR = 1.09 per standard deviation increase in PRS, 95% CI = 1.08 to 1.10, p=1.55\u00d710\u221250).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with effect size, confidence interval, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "7bf9a761-7930-45a1-aec1-b109fe1342f2",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C34",
+      "claim": "The schizophrenia PRS was strongly associated with neuroticism (Beta = 0.066, SE = 0.006, p=8.17\u00d710\u221227).",
+      "claim_type": "EXPLICIT",
+      "source": "The schizophrenia PRS was also strongly associated with various neurological traits, such as neuroticism (Beta = 0.066, SE = 0.006, p=8.17\u00d710\u221227), being 'tense or highly strung' (OR = 1.07, 95% CI = 1.07 to 1.08, p=2.25\u00d710\u221247) and self-reported depression (OR = 1.07, 95% CI = 1.06 to 1.08, p=4.91\u00d710\u221218).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with effect size, standard error, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "8740bc4e-7219-41ca-b9d3-ad60004d9a3f",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C35",
+      "claim": "The schizophrenia PRS was strongly associated with being 'tense or highly strung' (OR = 1.07, 95% CI = 1.07 to 1.08, p=2.25\u00d710\u221247).",
+      "claim_type": "EXPLICIT",
+      "source": "The schizophrenia PRS was also strongly associated with various neurological traits, such as neuroticism (Beta = 0.066, SE = 0.006, p=8.17\u00d710\u221227), being 'tense or highly strung' (OR = 1.07, 95% CI = 1.07 to 1.08, p=2.25\u00d710\u221247) and self-reported depression (OR = 1.07, 95% CI = 1.06 to 1.08, p=4.91\u00d710\u221218).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with odds ratio, confidence interval, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "8a53e8d0-3c89-49ab-8d10-6df00e84d088",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C36",
+      "claim": "The schizophrenia PRS was strongly associated with self-reported depression (OR = 1.07, 95% CI = 1.06 to 1.08, p=4.91\u00d710\u221218).",
+      "claim_type": "EXPLICIT",
+      "source": "The schizophrenia PRS was also strongly associated with various neurological traits, such as neuroticism (Beta = 0.066, SE = 0.006, p=8.17\u00d710\u221227), being 'tense or highly strung' (OR = 1.07, 95% CI = 1.07 to 1.08, p=2.25\u00d710\u221247) and self-reported depression (OR = 1.07, 95% CI = 1.06 to 1.08, p=4.91\u00d710\u221218).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with odds ratio, confidence interval, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "44d1a8bf-6712-437d-856f-eda4af880f0a",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C37",
+      "claim": "There is strong evidence that schizophrenia genetic liability influences neurological traits (except for self-reported depression where strong evidence was only detected using the inverse variance weighted (IVW) method).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified strong evidence that schizophrenia genetic liability influences this set of neurological traits (Supplementary file 1e), except for self-reported depression where strong evidence was only detected using the inverse variance weighted (IVW) method (Beta = 0.004, SE = 0.001, p=0.009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports MR analysis results supporting causal inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "94b31284-891e-496a-b1d8-670fb837b175",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C38",
+      "claim": "There was no strong evidence of directional horizontal pleiotropy for schizophrenia-neurological trait associations based on the MR Egger intercept term.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also no strong evidence of directional horizontal pleiotropy for these results based on the MR Egger intercept term and associations were detected after repeating analyses using MR directionality filtering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from sensitivity analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "0d69da59-fd3c-4c8c-8826-b9d0ac4344a2",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C39",
+      "claim": "Individuals with high schizophrenia genetic liability had a lower fluid intelligence score (Beta = \u22120.083, SE = 0.006, p=1.49\u00d710\u221239).",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst other findings, there were associations which suggested individuals with high schizophrenia genetic liability had a lower fluid intelligence score (Beta = \u22120.083, SE = 0.006, p=1.49\u00d710\u221239).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with effect size, standard error, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "f16af5e6-3cef-4285-8cea-32edb6fb3790",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C40",
+      "claim": "Individuals with high schizophrenia genetic liability performed worse in an assessment of cognitive function concerning memorising pairs of cards (Beta = 0.020, SE = 0.002, p=6.66\u00d710\u221234 for 'number of incorrect matches').",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed evidence that these individuals performed worse than others in an assessment of cognitive function concerning memorising pairs of cards (Beta = 0.020, SE = 0.002, p=6.66\u00d710\u221234 for 'number of incorrect matches').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with effect size, standard error, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e433b247-17f8-4de1-a292-f09be883a2ee",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C41",
+      "claim": "Follow-up MR analyses provided evidence from multiple methods that schizophrenia genetic liability influences fluid intelligence and cognitive function measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Follow-up MR analyses provided evidence from multiple methods that schizophrenia genetic liability (i.e. our exposure) influences both of these outcomes (Supplementary file 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports MR analysis results supporting causal inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "da7d4cb8-cf2b-40f8-a1b4-a44843ffe710",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C42",
+      "claim": "There was no strong evidence of a causal effect of measures of cognition and memory on schizophrenia risk in the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we did not detect strong evidence of a causal effect in the opposite direction for these associations (i.e. evaluating the effect on measures of cognition and memory on schizophrenia risk), in particular after applying MR directionality filtering and when evaluating results from the weighted median and mode methods (Supplementary file 1h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from bi-directional MR analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "99fbe066-f90c-4ae4-85db-25393d55b0c7",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C43",
+      "claim": "Schizophrenia genetic liability may lead to reduced cognitive function.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these analyses support evidence that schizophrenia genetic liability may lead to reduced cognitive function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a conclusion based on multiple lines of evidence from MR analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "3a14d49b-313d-4881-b308-649c43780b15",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C44",
+      "claim": "Participants with a high schizophrenia PRS were more likely to be unsuccessful when attempting to quit smoking (Beta = 0.028, SE = 0.003, p=3.87\u00d710\u221222).",
+      "claim_type": "EXPLICIT",
+      "source": "Elsewhere, there were associations indicating that participants with a high schizophrenia PRS were more likely to be unsuccessful when attempting to quit smoking (Beta = 0.028, SE = 0.003, p=3.87\u00d710\u221222) and, accordingly reduced odds of being a past smoker (OR = 0.97, 95% CI = 0.97 to 0.98, p=9.71\u00d710\u221217).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with effect size, standard error, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "b01a2a92-c006-47dd-bab9-5bb98b89da08",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C45",
+      "claim": "Participants with a high schizophrenia PRS had reduced odds of being a past smoker (OR = 0.97, 95% CI = 0.97 to 0.98, p=9.71\u00d710\u221217).",
+      "claim_type": "EXPLICIT",
+      "source": "Elsewhere, there were associations indicating that participants with a high schizophrenia PRS were more likely to be unsuccessful when attempting to quit smoking (Beta = 0.028, SE = 0.003, p=3.87\u00d710\u221222) and, accordingly reduced odds of being a past smoker (OR = 0.97, 95% CI = 0.97 to 0.98, p=9.71\u00d710\u221217).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with odds ratio, confidence interval, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "ae89b5ea-72ab-4ddc-9cbf-ef43d1b169ec",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C46",
+      "claim": "There is strong evidence that schizophrenia genetic liability influences smoking cessation outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed strong evidence of association that schizophrenia genetic liability influences these outcomes (Supplementary file 1i), whereas the converse direction of effect provided weak evidence of an effect (Supplementary file 1j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports MR analysis results supporting causal inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "d461bc8e-682e-43d9-b914-8c782f64b114",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C48",
+      "claim": "There was a strong inverse association between the schizophrenia PRS and various anthropometric traits.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a strong inverse association between the schizophrenia PRS and various anthropometric traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports observed associations from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "644bdd16-329e-4c39-9817-f26941c6e340",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C49",
+      "claim": "Evaluating the relationship between schizophrenia liability and body mass index (BMI) provided weak evidence of a causal effect in both directions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, evaluating the relationship between schizophrenia liability and body mass index (BMI) provided weak evidence of a causal effect in both directions (Supplementary files 1k & 1l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports MR analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "02b5cbd0-2dc6-460b-9312-43ea3c48002f",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C50",
+      "claim": "There was strong evidence of association using the PRS for gout itself (OR = 1.16, 95% CI = 1.13 to 1.19).",
+      "claim_type": "EXPLICIT",
+      "source": "In this analysis, there was strong evidence of association using the PRS for gout itself (OR = 1.16, 95% CI = 1.13 to 1.19), although we also observed a much larger magnitude of effect using the urate PRS (OR = 1.75, 95% CI = 1.72 to 1.78).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with odds ratio and confidence interval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "1015385d-29c6-4767-85dc-bb27060db08e",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C51",
+      "claim": "The urate PRS showed a much larger magnitude of effect on gout (OR = 1.75, 95% CI = 1.72 to 1.78) compared to the gout PRS.",
+      "claim_type": "EXPLICIT",
+      "source": "In this analysis, there was strong evidence of association using the PRS for gout itself (OR = 1.16, 95% CI = 1.13 to 1.19), although we also observed a much larger magnitude of effect using the urate PRS (OR = 1.75, 95% CI = 1.72 to 1.78).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with odds ratio and confidence interval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "f77bcfd0-5ff1-4e0d-b481-509297528c52",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C52",
+      "claim": "The strongest association for birth weight as an outcome in the atlas was with the height PRS (Beta = 0.080, SE = 0.002, p=1.31\u00d710-249).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the strongest association for birth weight as an outcome in our atlas was with the height PRS (Beta = 0.080, SE = 0.002, p=1.31\u00d710-249).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific association with effect size, standard error, and p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "81d12412-77a3-45f0-9526-6183f7c37d5e",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C53",
+      "claim": "The area under curve for the gout PRS was 0.54 in comparison to the urate PRS which had a value of 0.65.",
+      "claim_type": "EXPLICIT",
+      "source": "A receiver operating characteristic plot (Figure 4) illustrates this point, where the area under curve for the gout PRS was 0.54 in comparison to the urate PRS which had a value of 0.65.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports AUC values shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "61c3dac8-bb67-43ab-a6b6-d7273ec626d1",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C54",
+      "claim": "The next strongest positive associations with self-reported gout after urate were triglycerides (TG) and body mass index (BMI) (OR = 1.14, 95% CI = 1.11 to 1.16 and OR = 1.09, 95% CI = 1.06 to 1.12 respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "After urate, the next strongest positive associations with self-reported gout were triglycerides (TG) and body mass index (BMI) (OR = 1.14, 95% CI = 1.11 to 1.16 and OR = 1.09, 95% CI = 1.06 to 1.12 respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific associations with odds ratios and confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "d05f5601-3750-4114-85f9-5c9c7a0b985a",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C55",
+      "claim": "There was strong evidence that BMI had a causal effect on TG, urate and gout.",
+      "claim_type": "EXPLICIT",
+      "source": "There was strong evidence that BMI (i.e. our exposure) had a causal effect on each other trait in turn (TG, urate and gout), where effect estimates appeared to be consistent between different MR methods (Supplementary file 1n).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports MR analysis results supporting causal inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "a573863d-c02b-4e68-811d-882ac2e3f7b0",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C56",
+      "claim": "TG as an exposure provided evidence of a causal effect on urate and gout risk, but not BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeating this analysis for TG as our exposure provided evidence of a causal effect on urate and gout risk, but not BMI (Supplementary file 1o).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports MR analysis results supporting causal inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "ae8b96d3-28eb-433e-8c99-2de790e2da78",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C57",
+      "claim": "Increased urate positively influences gout risk, although there was weak evidence of an effect on either BMI or TG.",
+      "claim_type": "EXPLICIT",
+      "source": "We then modelled urate as our exposure variable, which suggested that increased urate positively influences gout risk, although there was weak evidence of an effect on either BMI or TG (Supplementary file 1p).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports MR analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "2971fb45-1983-45a6-8b83-38ade69452cf",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C58",
+      "claim": "77% of the overall effect of BMI on gout risk is mediated through the causal pathway involving TG and urate.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the effect estimates from our IVW analysis, we estimated that 77% of the overall effect of BMI on gout risk (Figure 5a (4)) is mediated through this causal pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports a calculated proportion mediated based on IVW effect estimates, illustrated in Figure 5a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e8d2a2d9-d19b-43ee-bf12-78035e2aa200",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C59",
+      "claim": "The effects of BMI and TG on gout risk attenuate when analysed in the same model as urate using multivariable MR.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed the effects of BMI and TG on gout risk attenuate when analysed in the same model as urate (Supplementary file 1q).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from multivariable MR analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "f4ea129f-8df2-49ba-8f7a-5d467a90f441",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C60",
+      "claim": "There was evidence of an attenuation of the effect of BMI on gout risk when accounting for either the TG or urate effect.",
+      "claim_type": "EXPLICIT",
+      "source": "There was evidence of an attenuation of the effect of BMI on gout risk when accounting for either the TG or urate effect (Supplementary files 1r and 1s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from multivariable MR analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "1beefa3e-23e7-42e6-9eac-c25f178dde97",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C61",
+      "claim": "The effect of TG on gout risk attenuates when accounting for urate levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed the effect of TG on gout risk attenuate when accounting for urate levels (Supplementary file 1t).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from multivariable MR analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "f8457e6e-db07-4389-af8e-aae71d9b7d68",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C62",
+      "claim": "Cognitive impairment is a recognised characteristic of schizophrenia (Mohamed et al., 1999).",
+      "claim_type": "EXPLICIT",
+      "source": "There is long standing evidence from the literature that cognitive impairment is a recognised characteristic of schizophrenia (Mohamed et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge from Mohamed et al., 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "ba2e0a23-a168-4cd0-8caa-6f42a02cc684",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C63",
+      "claim": "PRS may be less effective in terms of predicting age of schizophrenia onset as well as the severity of its progression based on currently available data.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PRS may prove useful in determining lifelong risk of developing schizophrenia, based on currently available data they may be less effective in terms of predicting age of schizophrenia onset as well as the severity of its progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation based on current understanding and limitations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "f0772407-22e6-472a-a69f-5ff2ed9ed580",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C64",
+      "claim": "Characterization of cognitive decline in individuals with a high schizophrenia PRS may help improve elucidation of its neurological basis, and ultimately improvement in therapeutic approaches to it (Green, 1996).",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of cognitive decline in individuals with a high schizophrenia PRS may therefore help improve elucidation of its neurological basis, and ultimately improvement in therapeutic approaches to it (Green, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on potential applications with a supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e0b8f617-8cf2-4d8e-8823-ee991bd0fddd",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C65",
+      "claim": "Individuals diagnosed with schizophrenia smoke more frequently compared to the general population (Sacco et al., 2005).",
+      "claim_type": "EXPLICIT",
+      "source": "There is also a wealth of evidence in the literature from observational studies that individuals diagnosed with schizophrenia smoke more frequently compared to the general population (Sacco et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge from Sacco et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e21a6117-c869-4bf6-ac9b-28a55d03f4d5",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C66",
+      "claim": "The high frequency of schizophrenia patients who smoke could be attributed to their inability to quit smoking.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that UK Biobank participants with a high schizophrenia genetic liability are more likely to be unsuccessful in their attempts to stop smoking. This may therefore suggest that the high frequency of schizophrenia patients who smoke could be attributed to their inability to quit smoking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "7ab9ea8f-b79c-4d0a-98ed-d85eaf9b9385",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C67",
+      "claim": "The positive association with smoking behaviour may provide a possible explanation for the inverse association observed between schizophrenia genetic liability and anthropometric traits.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive association with smoking behaviour may also provide a possible explanation for the inverse association we observed between schizophrenia genetic liability and anthropometric traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative interpretation connecting different findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "d85c8106-6f49-4c99-ab9e-405bc38763c3",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C68",
+      "claim": "The findings from the mediation MR analysis recapitulate known biology regarding the established causal pathway to gout (Matsubara et al., 1989), (Li et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "The findings from this analysis therefore appear to recapitulate known biology regarding the established causal pathway to gout (Matsubara et al., 1989), (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets findings in the context of established knowledge with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "2913dbc2-950c-4f9b-811e-fa2d3fd15bc6",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C69",
+      "claim": "A diet including high calorie and alcohol consumption, which are known risk factors for increased body mass index and triglyceride levels, may result in elevated circulating uric acid level and in turn increase gout risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Speculatively, a diet including high calorie and alcohol consumption, which are known risk factors for increased body mass index and triglyceride levels, may result in elevated circulating uric acid level and in turn increase gout risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly labels this as speculative reasoning based on known risk factors.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "f15c9c84-104a-4b86-872e-1684882b30af",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C70",
+      "claim": "A recent study has suggested that genetic factors may have a greater impact on serum urate levels than environmental factors such as diet (Major et al., 2018).",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has suggested that genetic factors may have a greater impact on serum urate levels than environmental factors such as diet (Major et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites findings from Major et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "cf168d03-6341-4190-8d35-a95bd26d7094",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C71",
+      "claim": "Genetic drivers of appetite which may influence higher BMI levels are likely to predominantly influence gout risk via increased urate levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that genetic drivers of appetite which may influence higher BMI levels are likely to predominantly influence gout risk via increased urate levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e7cfa269-8785-4fa3-b60a-bb9657e6bb34",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C72",
+      "claim": "Findings regarding genetic liability may not be generalizable to individuals who are not of European descent.",
+      "claim_type": "EXPLICIT",
+      "source": "Although resources such as the UK Biobank provide an unparalleled opportunity to investigate the determinants of complex disease as we have done in this study, findings regarding genetic liability may not be generalizable to individuals who are not of European descent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges a limitation of the study based on the sample composition.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "8beafb7d-97d7-4293-8258-e8206f15bb3c",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C73",
+      "claim": "Although the study adjusted all analyses using the top 10 principal components from the UK Biobank, there may still be an influence of geographic clustering which remains unaccounted for Abdellaoui et al. (2018).",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that, although we have adjusted all analyses in our study using the top 10 principal components from the UK Biobank, there may still be an influence of geographic clustering which remains unaccounted for Abdellaoui et al. (2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges a potential limitation with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e43556cc-7d96-429d-9551-88877fa9de67",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C74",
+      "claim": "Polygenic risk scores hold huge promise in the era of large-scale genetic epidemiology to identify individuals who are at high risk of disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Polygenic risk scores hold huge promise in the era of large-scale genetic epidemiology to identify individuals who are at high risk of disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a concluding statement about the potential of PRS.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "df8d368e-6b87-44f3-8261-e4dd9a94caf5",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C75",
+      "claim": "Associations detected between PRS and outcomes undertaken by large-scale analyses should prove powerful for future studies that wish to unravel causal relationships between complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Associations detected between these scores and outcomes undertaken by large-scale analyses should prove powerful for future studies that wish to unravel causal relationships between complex traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a concluding statement about the utility of the resource.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "36efe4a9-1f19-4f42-93e6-b51cb982c28d",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C76",
+      "claim": "Simulations were conducted under different levels of horizontal pleiotropy for two different models: the causal model (where the simulated exposure has a causal effect on the outcome) and the null model (where there is no causal effect between exposure and outcome).",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations were conducted under different levels of horizontal pleiotropy for two different models; the causal model (where the simulated exposure has a causal effect on the outcome) and the null model (where there is no causal effect between exposure and outcome).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The figure caption describes the simulation study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "062bba13-9452-4bd7-91dc-017a7b5fdc5c",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C77",
+      "claim": "1000 simulations were run using each model to compare the PRS approach with the IVW method using a dataset comprising of 10,000 samples and 50 SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We ran 1000 simulations using each model to compare the PRS approach with the IVW method using a dataset comprising of 10,000 samples and 50 SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the simulation study parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "6487be97-817f-4b95-b9d7-42a5c00a8a20",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C78",
+      "claim": "The inclusion criteria for selected GWAS was having a sample size of more than 1000 participants, over 100,000 SNPs measured on genotyping arrays and based on European/mixed populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our inclusion criteria for selected GWAS was having a sample size of more than 1000 participants, over 100,000 SNPs measured on genotyping arrays and based on European/mixed populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the selection criteria for GWAS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "8b9b20a3-931f-4640-bb78-96824e55edf6",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C79",
+      "claim": "When a GWAS SNP was not available from the UK Biobank study genotype data, a proxy SNP was used instead based on r2 \u22650.8 using the same reference panel.",
+      "claim_type": "EXPLICIT",
+      "source": "When a GWAS SNP was not available from the UK Biobank study genotype data, we used a proxy SNP instead based on r2 \u22650.8 using the same reference panel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology for handling missing SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "bdc07196-b24a-4cb2-ab6e-f69393bb1082",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C80",
+      "claim": "Each PRS was normalised to have a mean of zero and a standard deviation (SD) of one prior to analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to analysis, each PRS was normalised to have a mean of zero and a standard deviation (SD) of one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the data preprocessing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "3d462e85-2941-4b82-af4b-a5d40f680660",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C81",
+      "claim": "All analyses were adjusted for age, sex, the first 10 genetic principle components (to adjust for population stratification) and genotyping chip used to measure genetic data in participants.",
+      "claim_type": "EXPLICIT",
+      "source": "All analyses were adjusted for age, sex, the first 10 genetic principle components (to adjust for population stratification) and genotyping chip used to measure genetic data in participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the covariates adjusted for in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "633aab28-e642-4c53-a629-37faaadc5c0f",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C82",
+      "claim": "Only female participants were included in the 'Age at menarche' and 'Age at menopause' PRS analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Only female participants were included in the 'Age at menarche' and 'Age at menopause' PRS analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a specific inclusion criterion for certain analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "c98977ce-c5d5-4f74-afae-fda86aa5322a",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C83",
+      "claim": "For all MR analyses, only SNPs with p<5\u00d710\u221208 based on GWAS findings were selected as instrumental variables to reduce the likelihood of weak instrument bias (Davies et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "For all MR analyses we only selected SNPs with p<5\u00d710\u221208 based on GWAS findings as instrumental variables to reduce the likelihood of weak instrument bias (Davies et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology for selecting instrumental variables with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "a813f8df-cefc-490a-be78-59845dff7d5f",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C84",
+      "claim": "The inverse variance weighted (IVW), weighted median, and weighted mode MR approaches were applied.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of MR methods, we applied the inverse variance weighted (IVW) (Burgess et al., 2013), weighed median (Bowden et al., 2016) and weighted mode approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the MR methods used with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "027ea72d-e114-42b0-bc9d-b38542a63dd7",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C85",
+      "claim": "Cochran's Q statistic was derived when undertaking the IVW approach as an indicator of heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "We derived Cochran's Q statistic when undertaking the IVW approach as an indicator of heterogeneity, as well as repeating all analyses after filtering out SNPs which the MR directionality test suggested did not influence the outcome of interest through the analysed exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a sensitivity analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "fef1af5f-3a62-4f3c-822e-a56a98ae33ad",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C86",
+      "claim": "The intercept of the MR-Egger approach (Bowden et al., 2015) was used to investigate directional horizontal pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "The intercept of the MR-Egger approach (Bowden et al., 2015) was used to investigate directional horizontal pleiotropy and leave-one-out analyses (i.e. reapplying the IVW method after removing each SNP in turn with replacement) were conducted to discern whether any individual SNPs were driving observed associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a sensitivity analysis method with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "97115f13-8fc5-48be-a651-16629c0d0155",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C87",
+      "claim": "Leave-one-out analyses were conducted to discern whether any individual SNPs were driving observed associations.",
+      "claim_type": "EXPLICIT",
+      "source": "The intercept of the MR-Egger approach (Bowden et al., 2015) was used to investigate directional horizontal pleiotropy and leave-one-out analyses (i.e. reapplying the IVW method after removing each SNP in turn with replacement) were conducted to discern whether any individual SNPs were driving observed associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a sensitivity analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "bfbce98f-e4bf-471e-bd16-c5ab6da96c2b",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C88",
+      "claim": "Bi-directional MR (Timpson et al., 2011) was undertaken to investigate the direction of effect for associations identified in the PRS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the direction of effect for associations identified in the PRS analysis we undertook bi-directional MR (Timpson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a methodological approach with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "69ca02bd-0313-413c-ba42-58cb40a9784a",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "claim_id": "C89",
+      "claim": "Mediation MR and multivariable MR (Sanderson et al., 2018) were incorporated to investigate the effect of multiple risk factors on a single outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we have incorporated two recent developments within the field of MR; mediation MR and multivariable MR (Sanderson et al., 2018). These methods can be used to investigate the effect of multiple risk factors on a single outcome, as well as uncover potential mediators in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes methodological approaches with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study constructed 162 PRS using SNPs with p<5\u00d710\u207b\u2075 and r\u00b2<0.001 from 1000 Genomes reference data, and analyzed associations with 551 heritable UK Biobank traits in 334,398 individuals of European ancestry. PRS were normalized and analyses adjusted for age, sex, 10 principal components, and genotyping chip, with 11 PRS left unweighted due to sample overlap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C17-C24, C80-C82 collectively describe the study design, sample selection, PRS construction methodology, and analytical approach. The methods are clearly documented with appropriate quality control measures (relatedness exclusion, ancestry restriction, covariate adjustment), though the p<5\u00d710\u207b\u2075 threshold is more lenient than conventional GWAS standards and sample overlap for 11 traits introduces potential overfitting bias that is acknowledged but not fully resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e91fc998-38d5-4108-9a2d-0eba33a6106f",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Simulation studies (1000 iterations, 10,000 samples, 50 SNPs) demonstrated that PRS approaches provide higher statistical power than IVW methods but suffer from substantive false positive rates due to horizontal pleiotropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C76-C77 describe simulation parameters and results shown in Figure 1. The simulation design is adequately specified and the trade-off between power and false positive rate is clearly demonstrated, providing empirical justification for the need for extensive sensitivity analyses when using PRS for causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "1a724148-2852-4c29-9460-b27d855b2302",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The CHD PRS showed strong predictive ability (OR=3.64 comparing extreme deciles), comparable to prior work, and combining it with established risk factor PRS (LDL, MI) improved prediction, though hypothesis-free integration of all associated scores hindered performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 report validation results for CHD prediction with appropriate comparison to published work (Khera et al., 2018) and acknowledge differences in AUC. Figure 2 supports the finding that targeted combination of mechanistically-related PRS improves prediction while indiscriminate combination does not, demonstrating both the utility and limitations of multi-PRS approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "ac7a4870-b692-40fd-b2c4-325dc7a6830c",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PRS demonstrated strong predictive associations across diverse phenotypes, including educational attainment (OR=2.43 for university degree with years of schooling PRS), medication use (OR=3.48 for atorvastatin with LDL PRS), and disease outcomes (OR=5.36 for ulcerative colitis).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 report specific effect sizes with appropriate precision. These examples demonstrate the atlas's coverage across diverse phenotypic domains and the predictive utility of PRS, though they represent selected positive findings and may not reflect the full distribution of effect sizes across all 89,262 tests performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "d88dbf5f-db71-4282-a002-26bac9b39a14",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Schizophrenia PRS showed strong associations with psychiatric/neurological traits including seeing a psychiatrist (OR=1.09), neuroticism (\u03b2=0.066), being tense/highly strung (OR=1.07), and self-reported depression (OR=1.07). MR analyses provided evidence of causal effects from schizophrenia liability to these traits (except depression where only IVW showed significance), with no evidence of directional pleiotropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 report associations with appropriate statistical measures and describe comprehensive MR follow-up analyses. The use of multiple MR methods, pleiotropy assessment via MR-Egger, and directionality filtering provide robust evidence for causal relationships, though the weaker evidence for depression (IVW only) appropriately tempers conclusions for that specific trait.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "e60be06e-c826-446b-8ace-07e0e58b2bc2",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Schizophrenia genetic liability was associated with reduced cognitive function (fluid intelligence \u03b2=-0.083, memory task errors \u03b2=0.020). MR analyses with multiple methods supported a causal effect of schizophrenia liability on cognitive outcomes, with no strong evidence for reverse causation, leading to the conclusion that schizophrenia genetic liability may lead to reduced cognitive function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 present associations supported by bi-directional MR analyses, sensitivity analyses, and leave-one-out analyses (Appendix 1 Figures 1-2). The convergence of evidence from multiple methods and the asymmetry in bi-directional analyses (stronger evidence for schizophrenia\u2192cognition than cognition\u2192schizophrenia) provides robust support for the causal interpretation, consistent with established literature (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "4ae8ddeb-35a4-46fc-9bd7-780c461eb53a",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Schizophrenia PRS was associated with unsuccessful smoking cessation attempts (\u03b2=0.028) and reduced odds of being a past smoker (OR=0.97). MR analyses provided strong evidence that schizophrenia liability influences smoking cessation outcomes, with weak evidence for reverse causation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C46 report associations and MR results, but the manuscript acknowledges that the smoking cessation outcome could only be instrumented with a single variant, limiting the robustness of causal inference. While leave-one-out analyses were performed (Appendix 1 Figures 3-4) and a recent study (Wootton, 2018) found bi-directional effects, the weak instrument limitation and inability to fully replicate bi-directional findings introduces uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "52ae815a-fb40-45bd-93d5-271369576b6d",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Strong inverse associations were observed between schizophrenia PRS and anthropometric traits, but MR analyses evaluating the schizophrenia-BMI relationship provided weak evidence of causal effects in both directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 appropriately distinguish between observed associations and causal inference. The finding of strong PRS associations but weak MR evidence illustrates the importance of follow-up causal analyses and demonstrates that not all PRS associations reflect causal relationships, supporting the study's methodological framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "7bf2a0c5-c542-4af3-a648-cb97a71795f2",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For gout prediction, the urate PRS (OR=1.75, AUC=0.65) substantially outperformed the gout PRS itself (OR=1.16, AUC=0.54), with triglycerides (OR=1.14) and BMI (OR=1.09) also showing positive associations. Similarly, height PRS was the strongest predictor of birth weight in the atlas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 demonstrate that the strongest PRS predictor for an outcome may not be the trait-matched PRS, supported by Figure 4 showing ROC curves. This finding is plausibly explained by differences in GWAS sample sizes (gout N=2,115 vs urate N=110,347) and trait measurement (binary vs continuous), highlighting important considerations for PRS construction and interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "b79e0bc3-6a49-44ea-a0e4-89b2ad7c42dd",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mediation MR analyses revealed a causal pathway where BMI influences triglycerides, which affects urate levels, which in turn influences gout risk. Using IVW effect estimates, 77% of BMI's total effect on gout was estimated to be mediated through this pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C58 describe a mediation analysis with a specific quantitative estimate (77% mediation). While the directional relationships are supported by multiple MR methods and are biologically plausible (C68), the precise 77% estimate relies on strong assumptions about the absence of unmeasured confounding and correct model specification. The calculation method is described but uncertainty intervals for the mediation proportion are not provided, and the estimate may be sensitive to violations of MR assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "324b6620-67c9-4930-9b73-e680ee2243cd",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multivariable MR analyses showed that BMI and triglyceride effects on gout attenuated when analyzed jointly with urate, and triglyceride effects attenuated when accounting for urate, supporting the mediation pathway identified in the mediation MR framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 describe multivariable MR results that corroborate the mediation analysis findings (C55-C58). The attenuation patterns are consistent with the proposed causal pathway and provide complementary evidence using a different analytical approach (Figure 5b), strengthening confidence in the overall conclusion about the BMI\u2192TG\u2192urate\u2192gout pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "6e9d132f-cab9-48c2-976f-300b2dbc41a6",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study's findings on schizophrenia-cognition and schizophrenia-smoking associations are contextualized within established literature showing cognitive impairment and high smoking rates in schizophrenia patients. The authors interpret their results as suggesting that inability to quit smoking may explain high smoking rates in schizophrenia patients, and that smoking behavior may explain inverse associations with anthropometric traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 appropriately contextualize findings within prior literature (Mohamed et al., 1999; Sacco et al., 2005) and offer plausible interpretations. However, C63-C64 and C67 involve speculation about clinical applications and mechanistic explanations that extend beyond the direct evidence, which the manuscript appropriately signals through cautious language ('may', 'could be attributed').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "9607938d-9a58-4396-b5e0-ee9157178b03",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The mediation MR findings for the BMI\u2192TG\u2192urate\u2192gout pathway recapitulate known biology about gout etiology. The authors interpret their results as suggesting that genetic drivers of appetite influencing BMI predominantly affect gout risk via increased urate levels, with genetic factors potentially having greater impact than environmental factors like diet.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 appropriately contextualize findings within established biological knowledge (Matsubara et al., 1989; Li et al., 2017; Major et al., 2018). The interpretation about genetic vs environmental factors is supported by citation to Major et al., 2018, though C69 is explicitly labeled as speculative and C71 represents an inference from the data rather than a direct observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "1453183d-e4c2-464f-bee2-3a6fd7b9c803",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study acknowledges important limitations: findings may not generalize to non-European populations, and residual population stratification from geographic clustering may remain despite adjustment for 10 principal components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 appropriately acknowledge key limitations of the study design. The restriction to European ancestry (C21) limits generalizability, and the potential for residual stratification despite PC adjustment is a recognized issue in genetic studies (Abdellaoui et al., 2018). These limitations are important for interpreting the atlas and appropriately disclosed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "2e2a7d57-2f73-49f1-9058-c5043149a336",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study developed a web application (http://mrcieu.mrsoftware.org/PRS_atlas/) to disseminate findings, with the authors concluding that PRS hold promise for identifying high-risk individuals and that the atlas should prove powerful for future causal inference studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C74-C75 describe the resource and its potential utility. The web application is a concrete deliverable (C2), while C74-C75 represent forward-looking statements about the potential impact of PRS and the atlas. These conclusions are reasonable given the demonstrated applications in the manuscript, though they involve speculation about future utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study employed comprehensive MR methodology including multiple methods (IVW, weighted median, weighted mode), sensitivity analyses (MR-Egger for pleiotropy, Cochran's Q for heterogeneity, leave-one-out analyses, MR directionality filtering), bi-directional MR, and advanced techniques (mediation MR, multivariable MR). GWAS selection criteria and instrumental variable selection (p<5\u00d710\u207b\u2078) were specified to minimize bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79, C83-C89 comprehensively document the MR methodology with appropriate citations. The use of multiple MR methods with different assumptions, extensive sensitivity analyses, and advanced techniques represents rigorous practice in the field. The methods are sufficiently detailed to allow replication, though access to the full UK Biobank data would be required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    },
+    {
+      "id": "51d006d7-9718-402d-87b5-fc00ca336c65",
+      "content_id": "46ea2904-5378-4911-a8b0-04008b85939b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about GWAS, PRS, and MR methodology, including the evolution of PRS performance, limitations of conventional MR approaches, and the rationale for using more lenient p-value thresholds to capture additional heritability while acknowledging increased risk of horizontal pleiotropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C13, C15-C16 present established knowledge appropriately supported by citations to key papers in the field. The progression from GWAS discoveries (C4-C5) through PRS development and improvement (C6-C9) to MR methodology and its limitations (C10-C13) provides appropriate context. The discussion of horizontal pleiotropy (C15-C16) sets up the study's methodological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:59:22.287202Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7626b977-27d5-49d6-b004-8d053a088519",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "d88352c6-dcac-47e0-bd76-f5e77c4ca15f",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "da7ed0e4-e9ea-4413-8781-7b986f5e6281",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "45047130-8ce2-4108-bd96-df4c0bca1fc5",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "0502f9d6-2e0f-42a4-8618-4ef7479ac5ba",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "c508a172-2818-454d-b45c-b3daab1e8861",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "39e633dd-0bf9-4973-aad0-36bfb1544062",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "22539db7-913d-42cc-b61e-ce4371ff4866",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "54223aa5-e2d7-4798-be67-d358f422d6d2",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "bdc07196-b24a-4cb2-ab6e-f69393bb1082",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "3d462e85-2941-4b82-af4b-a5d40f680660",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "633aab28-e642-4c53-a629-37faaadc5c0f",
+      "result_id": "c290e997-4c22-4989-a5b1-9ff9e7fc0646"
+    },
+    {
+      "claim_id": "346ecaa9-ca14-437d-92c3-af0638362ca3",
+      "result_id": "e91fc998-38d5-4108-9a2d-0eba33a6106f"
+    },
+    {
+      "claim_id": "36efe4a9-1f19-4f42-93e6-b51cb982c28d",
+      "result_id": "e91fc998-38d5-4108-9a2d-0eba33a6106f"
+    },
+    {
+      "claim_id": "062bba13-9452-4bd7-91dc-017a7b5fdc5c",
+      "result_id": "e91fc998-38d5-4108-9a2d-0eba33a6106f"
+    },
+    {
+      "claim_id": "4f11c28b-6b45-4f92-9b87-518314442473",
+      "result_id": "1a724148-2852-4c29-9460-b27d855b2302"
+    },
+    {
+      "claim_id": "4202331a-14cd-4809-a856-0f477d965b7f",
+      "result_id": "1a724148-2852-4c29-9460-b27d855b2302"
+    },
+    {
+      "claim_id": "bbdf91f2-2df8-40f2-a972-140c4ec452f1",
+      "result_id": "1a724148-2852-4c29-9460-b27d855b2302"
+    },
+    {
+      "claim_id": "057999b5-6402-402f-86b3-2c86978ff486",
+      "result_id": "1a724148-2852-4c29-9460-b27d855b2302"
+    },
+    {
+      "claim_id": "e4619c12-783e-4698-9a37-093265fc7441",
+      "result_id": "1a724148-2852-4c29-9460-b27d855b2302"
+    },
+    {
+      "claim_id": "37aa04a4-c2f8-40a4-9934-76e5b436d13f",
+      "result_id": "ac7a4870-b692-40fd-b2c4-325dc7a6830c"
+    },
+    {
+      "claim_id": "ce724854-e709-41aa-9182-a0effedaacaa",
+      "result_id": "ac7a4870-b692-40fd-b2c4-325dc7a6830c"
+    },
+    {
+      "claim_id": "191b9f3a-2c77-46b9-81f1-d7e2b98a8037",
+      "result_id": "ac7a4870-b692-40fd-b2c4-325dc7a6830c"
+    },
+    {
+      "claim_id": "55824f50-bc57-4197-8ab6-0344a4e63c3c",
+      "result_id": "d88dbf5f-db71-4282-a002-26bac9b39a14"
+    },
+    {
+      "claim_id": "7bf9a761-7930-45a1-aec1-b109fe1342f2",
+      "result_id": "d88dbf5f-db71-4282-a002-26bac9b39a14"
+    },
+    {
+      "claim_id": "8740bc4e-7219-41ca-b9d3-ad60004d9a3f",
+      "result_id": "d88dbf5f-db71-4282-a002-26bac9b39a14"
+    },
+    {
+      "claim_id": "8a53e8d0-3c89-49ab-8d10-6df00e84d088",
+      "result_id": "d88dbf5f-db71-4282-a002-26bac9b39a14"
+    },
+    {
+      "claim_id": "44d1a8bf-6712-437d-856f-eda4af880f0a",
+      "result_id": "d88dbf5f-db71-4282-a002-26bac9b39a14"
+    },
+    {
+      "claim_id": "94b31284-891e-496a-b1d8-670fb837b175",
+      "result_id": "d88dbf5f-db71-4282-a002-26bac9b39a14"
+    },
+    {
+      "claim_id": "0d69da59-fd3c-4c8c-8826-b9d0ac4344a2",
+      "result_id": "e60be06e-c826-446b-8ace-07e0e58b2bc2"
+    },
+    {
+      "claim_id": "f16af5e6-3cef-4285-8cea-32edb6fb3790",
+      "result_id": "e60be06e-c826-446b-8ace-07e0e58b2bc2"
+    },
+    {
+      "claim_id": "e433b247-17f8-4de1-a292-f09be883a2ee",
+      "result_id": "e60be06e-c826-446b-8ace-07e0e58b2bc2"
+    },
+    {
+      "claim_id": "da7d4cb8-cf2b-40f8-a1b4-a44843ffe710",
+      "result_id": "e60be06e-c826-446b-8ace-07e0e58b2bc2"
+    },
+    {
+      "claim_id": "99fbe066-f90c-4ae4-85db-25393d55b0c7",
+      "result_id": "e60be06e-c826-446b-8ace-07e0e58b2bc2"
+    },
+    {
+      "claim_id": "3a14d49b-313d-4881-b308-649c43780b15",
+      "result_id": "4ae8ddeb-35a4-46fc-9bd7-780c461eb53a"
+    },
+    {
+      "claim_id": "b01a2a92-c006-47dd-bab9-5bb98b89da08",
+      "result_id": "4ae8ddeb-35a4-46fc-9bd7-780c461eb53a"
+    },
+    {
+      "claim_id": "ae89b5ea-72ab-4ddc-9cbf-ef43d1b169ec",
+      "result_id": "4ae8ddeb-35a4-46fc-9bd7-780c461eb53a"
+    },
+    {
+      "claim_id": "d461bc8e-682e-43d9-b914-8c782f64b114",
+      "result_id": "52ae815a-fb40-45bd-93d5-271369576b6d"
+    },
+    {
+      "claim_id": "644bdd16-329e-4c39-9817-f26941c6e340",
+      "result_id": "52ae815a-fb40-45bd-93d5-271369576b6d"
+    },
+    {
+      "claim_id": "02b5cbd0-2dc6-460b-9312-43ea3c48002f",
+      "result_id": "7bf2a0c5-c542-4af3-a648-cb97a71795f2"
+    },
+    {
+      "claim_id": "1015385d-29c6-4767-85dc-bb27060db08e",
+      "result_id": "7bf2a0c5-c542-4af3-a648-cb97a71795f2"
+    },
+    {
+      "claim_id": "f77bcfd0-5ff1-4e0d-b481-509297528c52",
+      "result_id": "7bf2a0c5-c542-4af3-a648-cb97a71795f2"
+    },
+    {
+      "claim_id": "81d12412-77a3-45f0-9526-6183f7c37d5e",
+      "result_id": "7bf2a0c5-c542-4af3-a648-cb97a71795f2"
+    },
+    {
+      "claim_id": "61c3dac8-bb67-43ab-a6b6-d7273ec626d1",
+      "result_id": "7bf2a0c5-c542-4af3-a648-cb97a71795f2"
+    },
+    {
+      "claim_id": "d05f5601-3750-4114-85f9-5c9c7a0b985a",
+      "result_id": "b79e0bc3-6a49-44ea-a0e4-89b2ad7c42dd"
+    },
+    {
+      "claim_id": "a573863d-c02b-4e68-811d-882ac2e3f7b0",
+      "result_id": "b79e0bc3-6a49-44ea-a0e4-89b2ad7c42dd"
+    },
+    {
+      "claim_id": "ae8b96d3-28eb-433e-8c99-2de790e2da78",
+      "result_id": "b79e0bc3-6a49-44ea-a0e4-89b2ad7c42dd"
+    },
+    {
+      "claim_id": "2971fb45-1983-45a6-8b83-38ade69452cf",
+      "result_id": "b79e0bc3-6a49-44ea-a0e4-89b2ad7c42dd"
+    },
+    {
+      "claim_id": "e8d2a2d9-d19b-43ee-bf12-78035e2aa200",
+      "result_id": "324b6620-67c9-4930-9b73-e680ee2243cd"
+    },
+    {
+      "claim_id": "f4ea129f-8df2-49ba-8f7a-5d467a90f441",
+      "result_id": "324b6620-67c9-4930-9b73-e680ee2243cd"
+    },
+    {
+      "claim_id": "1beefa3e-23e7-42e6-9eac-c25f178dde97",
+      "result_id": "324b6620-67c9-4930-9b73-e680ee2243cd"
+    },
+    {
+      "claim_id": "f8457e6e-db07-4389-af8e-aae71d9b7d68",
+      "result_id": "6e9d132f-cab9-48c2-976f-300b2dbc41a6"
+    },
+    {
+      "claim_id": "ba2e0a23-a168-4cd0-8caa-6f42a02cc684",
+      "result_id": "6e9d132f-cab9-48c2-976f-300b2dbc41a6"
+    },
+    {
+      "claim_id": "f0772407-22e6-472a-a69f-5ff2ed9ed580",
+      "result_id": "6e9d132f-cab9-48c2-976f-300b2dbc41a6"
+    },
+    {
+      "claim_id": "e0b8f617-8cf2-4d8e-8823-ee991bd0fddd",
+      "result_id": "6e9d132f-cab9-48c2-976f-300b2dbc41a6"
+    },
+    {
+      "claim_id": "e21a6117-c869-4bf6-ac9b-28a55d03f4d5",
+      "result_id": "6e9d132f-cab9-48c2-976f-300b2dbc41a6"
+    },
+    {
+      "claim_id": "7ab9ea8f-b79c-4d0a-98ed-d85eaf9b9385",
+      "result_id": "6e9d132f-cab9-48c2-976f-300b2dbc41a6"
+    },
+    {
+      "claim_id": "d85c8106-6f49-4c99-ab9e-405bc38763c3",
+      "result_id": "9607938d-9a58-4396-b5e0-ee9157178b03"
+    },
+    {
+      "claim_id": "2913dbc2-950c-4f9b-811e-fa2d3fd15bc6",
+      "result_id": "9607938d-9a58-4396-b5e0-ee9157178b03"
+    },
+    {
+      "claim_id": "f15c9c84-104a-4b86-872e-1684882b30af",
+      "result_id": "9607938d-9a58-4396-b5e0-ee9157178b03"
+    },
+    {
+      "claim_id": "cf168d03-6341-4190-8d35-a95bd26d7094",
+      "result_id": "9607938d-9a58-4396-b5e0-ee9157178b03"
+    },
+    {
+      "claim_id": "e7cfa269-8785-4fa3-b60a-bb9657e6bb34",
+      "result_id": "1453183d-e4c2-464f-bee2-3a6fd7b9c803"
+    },
+    {
+      "claim_id": "8beafb7d-97d7-4293-8258-e8206f15bb3c",
+      "result_id": "1453183d-e4c2-464f-bee2-3a6fd7b9c803"
+    },
+    {
+      "claim_id": "a8cdae1d-1761-4168-903d-b570a96de1bd",
+      "result_id": "2e2a7d57-2f73-49f1-9058-c5043149a336"
+    },
+    {
+      "claim_id": "e43556cc-7d96-429d-9551-88877fa9de67",
+      "result_id": "2e2a7d57-2f73-49f1-9058-c5043149a336"
+    },
+    {
+      "claim_id": "df8d368e-6b87-44f3-8261-e4dd9a94caf5",
+      "result_id": "2e2a7d57-2f73-49f1-9058-c5043149a336"
+    },
+    {
+      "claim_id": "6487be97-817f-4b95-b9d7-42a5c00a8a20",
+      "result_id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9"
+    },
+    {
+      "claim_id": "8b9b20a3-931f-4640-bb78-96824e55edf6",
+      "result_id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9"
+    },
+    {
+      "claim_id": "c98977ce-c5d5-4f74-afae-fda86aa5322a",
+      "result_id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9"
+    },
+    {
+      "claim_id": "a813f8df-cefc-490a-be78-59845dff7d5f",
+      "result_id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9"
+    },
+    {
+      "claim_id": "027ea72d-e114-42b0-bc9d-b38542a63dd7",
+      "result_id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9"
+    },
+    {
+      "claim_id": "fef1af5f-3a62-4f3c-822e-a56a98ae33ad",
+      "result_id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9"
+    },
+    {
+      "claim_id": "97115f13-8fc5-48be-a651-16629c0d0155",
+      "result_id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9"
+    },
+    {
+      "claim_id": "bfbce98f-e4bf-471e-bd16-c5ab6da96c2b",
+      "result_id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9"
+    },
+    {
+      "claim_id": "69ca02bd-0313-413c-ba42-58cb40a9784a",
+      "result_id": "5f2eb1ae-d493-414a-b7b7-6b9ef3c49fb9"
+    },
+    {
+      "claim_id": "a55e8031-61bc-4d24-b006-a2dafb2b2d9d",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "2c735025-9f84-4cd3-b3d2-d38e2cc9e736",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "1760740b-827d-4493-8c1e-4e10210f9541",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "213dbcea-a0d5-477d-a40c-f73139da987c",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "e67ef572-7757-459b-b4a5-8fc37e11f3f3",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "61d7625e-8d23-4137-85e2-0bb6bcd43f05",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "8e08aa21-174b-4c26-8a28-1f9307a5d0c0",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "fff90da3-ae7e-4790-88aa-13173ec65449",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "05cf69ea-2292-4d71-bbae-476ba98924c9",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "06fe8a18-d025-44ed-873a-2f289036396e",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "5bd5d208-b744-4694-957d-04bdd5294d3a",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    },
+    {
+      "claim_id": "ddfffe02-e843-49a4-abdd-614712523371",
+      "result_id": "51d006d7-9718-402d-87b5-fc00ca336c65"
+    }
+  ],
+  "comparisons": []
+}

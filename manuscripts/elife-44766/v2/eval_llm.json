@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C79",
+      "C80",
+      "C33"
+    ],
+    "result": "The authors designed two PET-FCS constructs (W144/C199-Atto and W171/C225-Atto moPrP) to monitor conformational dynamics across different helical segments of the full-length mouse prion protein under native conditions. CD spectroscopy confirmed that Atto 655 labeling did not alter the secondary structure of the protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27, C79, C80 describe the experimental design and constructs used, which are clearly documented with structural details and figures. Claim C33 provides control data (CD spectroscopy) confirming that the labeling procedure did not perturb protein structure. The experimental approach is well-justified and appropriately controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C38",
+      "C81",
+      "C40",
+      "C41"
+    ],
+    "result": "PET-FCS measurements revealed three exponential processes in the autocorrelation functions for both constructs, in addition to the diffusion component. These exponential components were independent of excitation power and were absent in Trp-less control proteins, confirming they arise from PET quenching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C38 report the primary observation of three exponential processes. Claims C81, C40, and C41 provide critical controls: good fit quality (residuals), power independence, and Trp-less controls. These controls effectively rule out artifacts and confirm the PET origin of the signals. The data quality and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C74"
+    ],
+    "result": "The slowest exponential process observed by PET-FCS (50-100 \u03bcs) represents the U \u2194 I transition during protein folding. This assignment was validated by microsecond mixing experiments showing biphasic refolding kinetics, with the fast phase rate constant matching the slow PET-FCS component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C52, C53, and C74 assign the slow PET-FCS component to the U\u2194I transition. This is strongly supported by microsecond mixing data (C45, C47-C51) showing that rate constants from the two independent methods converge (C50, C51). The chevron plot extrapolation (C50) and rate constant matching at 0.75 M urea (C51) provide compelling evidence. The interpretation is logically sound and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C73",
+      "C100",
+      "C101",
+      "C43",
+      "C4"
+    ],
+    "result": "The two faster exponential processes (0.5-20 \u03bcs) observed by PET-FCS were attributed to fluctuations within the native state ensemble, leading to formation of non-fluorescent states N* and N**. This assignment was supported by agreement between equilibrium constants calculated from fluorescence spectra and PET-FCS amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C73, and C4 assign the fast components to native state fluctuations. Claims C100 and C101 provide key validation: K1+K2 values calculated independently from fluorescence spectra and PET-FCS data agree well (Table 2). Claim C43 explains the underlying assumption. The convergence of independent measurements strengthens the interpretation, though the assumption of complete quenching (C43) introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C76",
+      "C77",
+      "C78",
+      "C116"
+    ],
+    "result": "Addition of 150 mM NaCl enhanced the time scale of native state fluctuations in the protein core, particularly affecting the \u03b12-\u03b13 segment. Salt destabilized the native state by ~0.7 kcal/mol and increased rate constants for N\u2194N** transitions in the \u03b12-\u03b13 region, suggesting these fluctuations play a role in initiating protein misfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 document the effects of salt on PET-FCS parameters, showing faster fluctuations and altered amplitudes. Claim C57 provides thermodynamic data on salt-induced destabilization. Claims C59-C60 show differential effects on the two constructs, with \u03b12-\u03b13 being more affected. Claims C76-C78 and C116 draw conclusions about the role in misfolding. The data are internally consistent and the salt effects are well-documented, though the mechanistic link to aggregation (C78) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C6",
+      "C63",
+      "C117",
+      "C122"
+    ],
+    "result": "The authors conclude that native state dynamics of moPrP result in global unfolding via an intermediate, and that fluctuations within the native state lead to sampling of aggregation-competent conformations. Both the intermediate I and native-like states N* and N** are proposed to be important in initiating misfolding and aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32, C6, C63, C117, and C122 represent major conclusions about the role of native state dynamics in aggregation. While the PET-FCS and salt data support enhanced fluctuations under aggregation-promoting conditions, direct evidence linking the observed conformational states (N*, N**, I) to actual aggregation is limited. The connection relies heavily on correlation (salt promotes both faster fluctuations and aggregation) rather than direct demonstration that these states are aggregation precursors. Additional experiments directly monitoring aggregation from these states would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C119",
+      "C120",
+      "C121",
+      "C95"
+    ],
+    "result": "Salt differentially destabilizes the native state (0.7 kcal/mol) and intermediate I (0.4 kcal/mol), increasing the relative population of I. The U\u2194I transition is rapid and I is positioned on the unfolding side of the major free energy barrier. The authors suggest I might play a direct role in misfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 provide thermodynamic measurements from equilibrium unfolding experiments (Table 3, Figure 7). Claims C119-C120 interpret the kinetic and thermodynamic data to position I on the energy landscape. Claim C95 notes that salt-perturbed interactions are present in I, supporting its on-pathway nature. Claim C121 is more speculative but reasonably supported by the correlation between I population and aggregation propensity. The thermodynamic analysis is sound, though the direct role in misfolding (C121) remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C75",
+      "C113"
+    ],
+    "result": "The rate constant for the N\u2192N** transition in the \u03b12-\u03b13 segment is an order of magnitude slower than in the \u03b11-\u03b13 segment, possibly due to constraints from the disulfide bond, packing interactions, and salt bridges in the protein core. The \u03b11-\u03b21-\u03b22 subdomain is attached through a flexible loop allowing more rapid fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 reports the experimental observation of different rate constants between constructs (Figure 6a). Claims C75 and C113 provide structural explanations for this difference. The observation is clear from the data, and the structural rationalization is reasonable given the known architecture of the prion protein. The explanation is speculative but well-grounded in structural knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C114",
+      "C115"
+    ],
+    "result": "Salt had a significant effect on rate constants for the \u03b12-\u03b13 segment but negligible effect on the \u03b11-\u03b13 segment. This is attributed to salt-induced disruption of the K193-E195 salt bridge, which increases flexibility and enhances helix separation rates in the \u03b12-\u03b13 core region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 reports the differential salt effects (Figure 6b). Claim C61 cites NMR evidence for salt bridge disruption. Claims C114-C115 provide mechanistic explanations. The experimental observation is clear, and the mechanistic explanation is supported by independent NMR data from prior work. The interpretation is reasonable though somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C131",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The hydrodynamic radius calculated from PET-FCS diffusion coefficients (2.8 nm) matches previous DLS measurements, and the experimentally determined diffusion coefficient was 90\u00b110 \u03bcm\u00b2/s. Diffusion times for the labeled proteins were ~300 \u03bcs, confirming monomeric protein at the concentrations used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C131 report measurements that validate the protein is monomeric and not aggregated under experimental conditions. Claims C82-C84 provide specific diffusion time measurements. The agreement with prior DLS data (C42) and the consistency of measurements across constructs support the quality of the data and confirm that aggregation is not occurring during measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Equilibrium unfolding experiments showed 4-fold and 2-fold fluorescence enhancement upon unfolding for W144/C199-Atto and W171/C225-Atto moPrP, respectively. This increase is explained by release of PET quenching that occurs in the native state. In 6 M urea, PET-FCS amplitudes were >10-fold lower than in native conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 report equilibrium unfolding data (Figure 2\u2014figure supplement 3). Claim C87 provides the interpretation. Claim C88 shows that PET quenching is suppressed at high denaturant. These observations are internally consistent and support the model that quenching occurs in the native state. The data quality appears good and the interpretation is straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Thermodynamic parameters from equilibrium unfolding experiments yielded \u0394G_NU values of 3.9 and 3.6 kcal/mol for W144/C199-Atto and W171/C225-Atto moPrP, respectively, with m-values of 1.3 and 1.7 kcal/mol/M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 report thermodynamic parameters obtained from fitting equilibrium unfolding data (Figure 2\u2014figure supplement 3). The values are reasonable for a protein of this size and the m-values are within expected ranges. The data appear to be properly analyzed using standard two-state fitting procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The free energy barriers between N and N*/N** are much smaller than the barrier between N and I. Consequently, N* and N** will be sampled much more frequently than I via fluctuations within the native state ensemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 interpret the energy landscape based on the observed time scales and amplitudes. The inference is logical: faster processes (0.5-20 \u03bcs for N\u2194N*/N**) versus slower process (50-100 \u03bcs for U\u2194I) imply lower barriers for the native state fluctuations. This is consistent with the free energy diagram (Figure 7) and represents a reasonable interpretation of the kinetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C93",
+      "C96",
+      "C97"
+    ],
+    "result": "Extrapolation of unfolding rate constants to zero urea predicted an apparent unfolding rate constant of ~400 s\u207b\u00b9 under native conditions. Control experiments showed the fast folding phase rate constant was independent of flow rate, and PET quenching efficiency was unaffected by urea up to 0.75 M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 reports the extrapolated unfolding rate. Claims C93, C96, and C97 describe important controls ruling out artifacts from mixing or denaturant effects on PET efficiency. These controls are appropriate and strengthen confidence in the kinetic measurements. The extrapolation appears reasonable based on the chevron plot (Figure 3d).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors compare their results to previous force spectroscopy and Trp-Cys quenching studies on Syrian hamster prion protein, noting important differences in protein constructs (full-length vs truncated, intact vs disrupted disulfide bond) and arguing that aggregation-linked fluctuations likely arise from the native state rather than solely from the unfolded state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 and C125-C130 discuss prior work and highlight experimental differences that could explain discrepancies. The authors correctly note that the SHaPrP used in force spectroscopy had a disrupted disulfide bond (C70, C126), which would significantly alter the protein's behavior. Claims C71, C128 cite evidence that SHaPrP is natively folded at acidic pH, supporting the argument in C129-C130 that native state fluctuations are important. The comparison is fair and the distinctions are scientifically valid.",
+    "result_type": "MINOR"
+  }
+]

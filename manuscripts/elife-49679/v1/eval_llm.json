@@ -1,0 +1,464 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Single-nucleus RNA sequencing (sn-RNA-seq) provides an unbiased classification of trigeminal neurons. The authors analyzed over 7500 neurons and found that sn-RNA-seq better represents the neural composition of the trigeminal ganglion compared to single-cell sequencing, particularly for large diameter S100b-expressing neurons, which could be divided into several new sub-classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are well-supported by the data presented in Figure 1. The sn-RNA-seq approach is methodologically sound and addresses known biases in single-cell sequencing. The clustering analysis clearly shows improved representation of large diameter neurons and identification of new sub-classes, validating the technical advantage of the nuclear sequencing approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Nuclear RNA sequencing reduces artifactual expression of immediate early genes and injury markers compared to single-cell sequencing. The authors demonstrate that Fos and Egr1, which were prominent in earlier single-cell analysis, are not detected at high levels by ISH, matching the sn-sequencing data. Similarly, injury markers Atf3 and Gal show better correspondence between sn-sequencing and ISH than single-cell sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by the comparative data in Figure 1\u2014figure supplement 1. The ISH validation provides independent confirmation that sn-sequencing more accurately reflects in vivo gene expression patterns. This demonstrates a key technical advantage of the nuclear sequencing approach in avoiding stress-induced artifacts from cell dissociation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Two days after infraorbital nerve transection (IOT), damaged neurons expressing Atf3 cluster into two new related groups (I1 and I2) that are well-separated from uninjured neurons. These injured neurons account for approximately 13.8% of sequenced neurons and over-express a series of genes previously linked to nerve damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are strongly supported by the sn-RNA-seq data and clustering analysis presented in Figure 2a,b. The UMap projections clearly show the segregation of I1 and I2 clusters from uninjured neurons, and the quantitative data on the proportion of injured neurons is directly stated. The upregulation of injury-related genes is confirmed by both transcriptomic analysis and ISH validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Even when injury-related genes are excluded from clustering analysis, Atf3-expressing neurons still group together as two related classes and remain segregated from uninjured trigeminal neural classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by the re-clustering analysis shown in Figure 2c. This is a critical control experiment that demonstrates the injured state represents a fundamental transcriptomic transformation beyond just the upregulation of injury markers. The persistence of I1/I2 clustering after removing injury-related genes from the analysis strengthens the conclusion that damaged neurons adopt a distinct transcriptional state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Within 2 days of injury, there is upregulation of injury markers and strong downregulation of genes that normally define different trigeminal neural classes. Key sensory genes including Trpv1, Tac1, Calca, Grik1, and Scn10a are far less often present or show reduced signal intensity in Atf3-positive cells compared to uninjured neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are well-supported by both the transcriptomic data (Figure 2\u2014figure supplement 1a) and ISH validation (Figure 2d,e). The ISH images provide clear visual evidence of downregulation, and quantitative analysis is provided in Supplementary file 1. The observation of 'holes' in Scn10a expression pattern where Atf3-positive neurons cluster is particularly compelling visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The two injured neuron classes (I1 and I2) retain vestiges of their original identity. I1 neurons express markers typical of larger diameter neurons (including Piezo2), while I2 neurons have an expression profile more related to nociceptors. Some genes like Gfra1 and Gal are differentially expressed between I1 and I2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by the differential gene expression analysis shown in Figure 2\u2014figure supplement 2 and ISH validation in Figure 2f,g. The data suggest that while the injury response is stereotyped, some traces of original neuronal identity persist. However, the inference about functional implications (e.g., 'discriminative sensation' for I1) goes slightly beyond what the transcriptomic data alone can demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Time-course analysis reveals remarkable stability of both injured (I1, I2) and uninjured neuronal clusters from 2 to 75 days after IOT. However, the proportion of injured neurons progressively decreases from ~13.8% at day 2 to ~2.9% at day 75. The consistent clustering patterns rule out slow transitions into new states during this timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 are strongly supported by the co-clustering analysis across multiple timepoints shown in Figure 3. The stability of clustering combined with the progressive decrease in injured neuron proportion is a key finding. The quantitative data on proportions at each timepoint is clearly stated. This sets up the critical question of whether neurons die or recover, addressed in later experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "While the injured state is stable, some injury-induced genes show temporal dynamics. Lmo7 is rapidly upregulated but downregulated at later timepoints, while neuropeptides Nts and Npy are more slowly upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by the gene expression analysis in Figure 3d and ISH validation in Figure 3e. This demonstrates that while the overall injured state is stable, there is some temporal refinement of the injury response. The multicolor ISH provides clear visual confirmation of the temporal differences in neuropeptide expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The injury-related transcriptomic state is established within 2 days of IOT, preceding the peak development of mechanical allodynia which typically takes a week or more. This timing suggests that central processing of somatosensory input plays a major role in neuropathic pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by the combination of the authors' transcriptomic data and citations to previous behavioral studies. The temporal mismatch between transcriptomic changes (day 2) and pain development (>1 week) is an important observation. However, the inference about central processing (C80) is somewhat speculative, though it is appropriately supported by citations to recent work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Minor peripheral injuries (sham IOT surgery, facial injury, scratch lesions) induce the same transcriptomic program as nerve transection. ISH reveals Atf3-positive neurons that also express other injury markers (Sox11, Sema6a, Csf1, Gal) in all three minor injury models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are supported by the ISH data in Figure 4a. This is a critical finding that reframes the injury response as a general physiological response rather than specific to severe nerve damage. The observation of injured-state neurons even in control animals (C81) provides additional support. However, the number of animals and quantitative rigor could be stronger for the minor injury models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Minor peripheral injuries also downregulate functionally significant sensory genes (Scn10a, Calca, Tac1, Trpv1) in Atf3-positive neurons, suggesting dramatic changes in normal sensory function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by the ISH data in Figure 4b. The downregulation of sensory genes in minor injury models parallels what was observed after IOT, strengthening the conclusion that this is a general injury response. The inference about 'dramatic changes in sensory function' (C89) is reasonable but goes slightly beyond what can be concluded from gene expression alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Single-nucleus transcriptomic analysis of facial injury and scratch lesion models shows that Atf3-positive neurons from these minor injuries cluster with I1 and I2 neurons from IOT mice. There is great similarity but not complete identity between transcriptomic profiles across injury types, with some differences such as higher proportion of I2 cells in scratch lesions and low-level Gal upregulation in non-I1/I2 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by the co-clustering analysis in Figure 5 and supplementary figures. The quantitative comparison across injury types using co-clustering is methodologically sound. The identification of both similarities and differences is appropriately nuanced. This provides strong molecular evidence that minor injuries induce a similar but not identical response to severe nerve damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "After facial cuts heal, ISH indicates decreased expression of injury-related transcripts, though a few Atf3-positive cells are still observed three weeks after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are described as 'anecdotal' observations from ISH experiments. While suggestive of recovery, the lack of quantitative data and systematic analysis makes this evidence insufficient to strongly support the reversibility of the injury state. This observation motivated the more rigorous genetic marking experiments that follow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Using an Atf3-IRES-Cre mouse line with viral labeling, the authors demonstrate that injured neurons recover rather than die. The percentage of tdTomato-positive, Atf3-negative neurons rose from 11.0\u00b15.3% at day 7 to 42.7\u00b114.7% at day 21, paralleling the decrease in I1/I2 neurons in sn-transcriptomics. Recovered neurons must reacquire normal gene expression profiles since no new neuronal classes were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 are strongly supported by the genetic marking experiments in Figure 6. This is a critical experiment that definitively demonstrates recovery rather than cell death. The quantitative data on the proportion of recovered neurons is provided with error estimates. The inference that recovered neurons reacquire normal profiles (C103) is well-supported by the absence of new clusters in the time-course analysis. This is a major technical and conceptual achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Recovered neurons (tdTomato-positive, Atf3-negative) re-express sensory genes that were downregulated during injury. Calca and Scn10a, which were rarely co-expressed with Atf3, were detected in approximately 40% of recovered neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by the ISH data in Figure 6c,d and quantification in Supplementary file 1. This provides direct evidence that recovery involves reacquisition of normal sensory gene expression. The ~40% detection rate suggests incomplete recovery or that not all recovered neurons originally expressed these genes, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "The residual traces of original neural class retained in I1 and I2 make it most likely that neurons return to their own original transcriptional state after recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is a reasonable inference based on the observation that I1 and I2 retain some markers of their original classes (Figure 2\u2014figure supplement 2). However, the genetic marking experiments do not directly track individual neurons from their original state through injury to recovery. This remains the 'most likely scenario' but has not been definitively demonstrated. Future experiments with more sophisticated lineage tracing would be needed to confirm this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "A stereotyped injured neural state is induced not only by nerve transection but also by minor trauma such as self-inflicted scratch lesions or cuts through the dermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by the combined ISH (Figure 4) and sn-RNA-seq data (Figure 5) from multiple injury models. This is a key conclusion of the paper that reframes the injury response as a general physiological mechanism. The evidence is strong across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Many genes upregulated by injury have roles in tissue remodeling, neural development, and axon guidance, and probably contribute to restoration of normal peripheral innervation during wound healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by GO-analysis (Figure 5\u2014figure supplement 3) and gene annotations (Table 1a). The functional roles are well-established in the literature. However, the inference that these genes 'probably contribute to restoration of innervation' (C110) is reasonable but speculative, as the authors did not directly test the functional consequences of these gene expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The injury response involves downregulation of genes encoding receptors, ion channels, and neuropeptides that normally play major roles in sensory detection and signaling. The authors speculate this may help prevent damaged neurons from conveying aberrant sensory input to central targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is well-supported by the transcriptomic and ISH data (Table 1b, Figure 5\u2014figure supplement 1). Claim C112 is explicitly labeled as speculation by the authors. While this is a reasonable hypothesis given the functional roles of the downregulated genes, it has not been experimentally tested. The speculation is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Genetic marking and sn-transcriptomic data show that the injury-induced state, although potentially long-lived, is transient and likely reversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is strongly supported by the combination of time-course sn-RNA-seq data (Figure 3) and genetic marking experiments (Figure 6). The progressive decrease in injured neurons and the appearance of recovered neurons (tdTomato+, Atf3-) provide compelling evidence for reversibility. This is a major conclusion of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The transcriptomic transformation induced by axotomy is a standard response to many types of peripheral trauma, probably serving as an important driver for restoration of sensation and providing a mechanism for modulating sensory input from sites of injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 represent the authors' main conclusions, synthesizing evidence from multiple injury models, the reversibility of the response, and the functional roles of regulated genes. While the specific functional roles ('driver for restoration of sensation,' 'mechanism for modulating sensory input') are somewhat speculative, they are reasonable inferences from the data. The authors appropriately use qualifying language ('probably,' 'surmise').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Single-cell sequencing has vastly expanded the definition of neural class. The current sn-sequencing defined a dozen new types of large diameter trigeminal neurons. However, the transcriptomic diversity defining 27 distinct classes of uninjured trigeminal neurons is almost completely lost within 2 days of nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by the clustering analysis (Figure 1) and the dramatic transformation observed after injury (Figure 2). This highlights the remarkable transcriptional plasticity of somatosensory neurons and challenges the notion that transcriptomic classes represent fixed cell types. This is an important conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Relatively minor peripheral injury triggers the abrupt transcriptomic transition to an injured state. Different transcriptomic classes can all be rapidly transformed to a much more uniform state and then reappear on recovery, exposing great transcriptional plasticity among somatosensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by the combined evidence from minor injury models (Figures 4-5) and recovery experiments (Figure 6). This is a major conceptual conclusion about the plasticity of neuronal identity. The evidence is strong, though the molecular mechanisms underlying this plasticity remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "In the IOT model, the injury-related gene expression program is essentially complete two days after injury, preceding peak pain development. This suggests that neuropathic pain and mechanical allodynia primarily involve modulation of central processing rather than altered sensory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 is well-supported by the day 2 transcriptomic data and citations about pain development timing. Claim C122 is an inference supported by the temporal mismatch and citations to recent work on central mechanisms. However, the authors did not directly test central mechanisms, so this remains an inference rather than a demonstrated result. The conclusion is appropriately qualified and supported by relevant citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Uninjured neurons are unchanged at a transcriptomic level after SNI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by the clustering analysis showing that uninjured neurons maintain their normal profiles after IOT (Figures 2, 3). This is an important control observation that indicates the injury response is cell-autonomous and does not involve widespread changes in uninjured neurons. However, the analysis focused on major transcriptomic changes and might miss subtle alterations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Long-term peripheral trauma and delayed recovery might have potential to trigger similar types of neuropathy to more frank nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is explicitly speculative, raising a possibility based on the similarity of gene expression changes across injury types. The authors did not test whether minor injuries can lead to neuropathic pain with prolonged exposure or delayed recovery. This is an interesting hypothesis for future work but is not supported by data in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "The type of nerve damage caused by transection makes it unlikely that precise reinnervation is required for neurons to initiate recovery. Aberrant signaling from neurons with inappropriate peripheral endings could contribute to pain and sensory disturbances after severe injuries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C126 are inferences and speculation about the relationship between reinnervation and recovery. The authors did not examine peripheral reinnervation or test whether recovery requires appropriate target reinnervation. These are reasonable hypotheses but are not directly supported by the data presented. They represent interesting directions for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "In mice, spared nerve injury replicates symptoms of human neuropathic pain and induces upregulation of many genes in somatosensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent well-established background knowledge supported by extensive citations throughout the manuscript. These are not novel findings of the current study but provide important context for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Uninjured neurons were unaffected by transection of major nerve branches, segregating into many different classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 are supported by the clustering analysis showing that uninjured neurons maintain their normal classification patterns after IOT (Figures 2, 3). This is an important control observation demonstrating the specificity of the injury response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Axotomy rapidly transformed damaged neurons into just two new and closely-related classes where almost all original identity was lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are strongly supported by the clustering analysis (Figure 2) and the re-clustering excluding injury genes (Figure 2c). This is a major finding of the paper demonstrating the dramatic transcriptomic transformation induced by injury.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Sensory neurons adopted the injury-induced transcriptomic state following various minor peripheral injuries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by the ISH and sn-RNA sequencing data from facial injury and scratch lesion models (Figures 4-5). This is a major finding that reframes the injury response as a general physiological mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The injury-induced transformation was reversible, with damaged cells slowly reacquiring normal gene expression profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are strongly supported by the genetic marking experiments (Figure 6) showing tdTomato-positive, Atf3-negative neurons that re-express sensory genes. This is a major finding demonstrating the transient nature of the injury response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Transcriptomic plasticity, previously thought of as a driver of chronic pain, is a programmed response to many types of injury and a potential mechanism for regulating sensation during wound healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 represent the authors' main reframing of the injury response. C10 is supported by citations to previous work. C11 is supported by the data from multiple injury models. C12 is a reasonable inference from the reversibility and functional roles of regulated genes, though it remains somewhat speculative. This is the central conceptual contribution of the paper.",
+    "result_type": "MAJOR"
+  }
+]

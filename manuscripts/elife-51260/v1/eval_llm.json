@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study employed a within-subjects pharmacological design with 31 healthy male participants performing a restless four-armed bandit task under three drug conditions (L-dopa, haloperidol, placebo) across multiple fMRI sessions. Sample size was justified based on prior studies, and only males were included due to potential hormonal confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C70-C73 provide a clear and well-justified experimental design. The within-subjects design with n=31 is adequately powered relative to cited precedents (C71), the male-only sample is justified by hormonal considerations (C70), and ethical approval is documented (C72). The methodological description is complete and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Participants successfully learned the task structure, starting at chance level (21.5%) on trial 1 and reaching significantly above-chance performance (49.03%) by trial 5, maintaining approximately 68% selection of the best bandit throughout the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate successful task learning with appropriate statistical testing (t30=4.83, p<0.001 for above-chance performance). The progression from chance to above-chance performance with maintained high performance indicates participants understood and engaged with the task appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "No significant drug effects were observed on model-free behavioral measures including overall payout, percentage of best bandit choices, choice switches, or reaction times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 reports null findings with appropriate statistical tests (rmANOVAs) and p-values for all four measures. While null results, these are important for establishing that drug effects are specific to model-based parameters rather than gross behavioral changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C65",
+      "C66"
+    ],
+    "result": "Model comparison revealed that a Bayesian learning model incorporating directed exploration, random exploration, and perseveration (Bayes-SMEP) best explained choice behavior, extending previous models by demonstrating the importance of accounting for perseveration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30, C65, C66 are well-supported by leave-one-out cross-validation showing the Bayes-SMEP model had highest predictive accuracy across all drug conditions. The extension to include perseveration represents a methodological advance over prior work (Daw et al., 2006), improving both model fit and parameter interpretability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C67"
+    ],
+    "result": "L-dopa specifically attenuated directed exploration compared to both placebo and haloperidol, with a marginal increase in exploitation, supporting a causal role for dopamine in regulating the explore/exploit trade-off through modulation of directed exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31, C34-C37, C67 converge on a specific L-dopa effect on directed exploration with appropriate statistical support (rmANOVA F=7.18, p=.003; post-hoc t-tests p<.001 and p=.010). The specificity to directed exploration (not random exploration or perseveration) and the marginal exploitation increase (p=.065) provide a coherent pattern. However, the marginal exploitation effect (C37) weakens the strength of the complementary claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C39"
+    ],
+    "result": "L-dopa did not affect random exploration or perseveration parameters, and the percentage of random explorations and exploitations showed no significant drug modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, C39 report null findings for random exploration and perseveration with appropriate statistical tests. These null results are important for establishing the specificity of the L-dopa effect to directed exploration, though the marginal exploitation effect (C37) somewhat complicates this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C36"
+    ],
+    "result": "Haloperidol showed no significant effects on any model parameters or on the percentage of directed explorations compared to placebo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C36 report null findings for haloperidol with appropriate statistical support. While surprising given the hypothesis, the authors acknowledge this limitation (C62) and provide plausible explanations related to dose-dependent effects and potential presynaptic actions (C24, C54). The null finding is adequately documented but limits the study's ability to make strong claims about dopamine's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Exploratory choices were associated with activation in bilateral FPC, IPS, AI, and dACC, while exploitative choices were associated with activation in vmPFC, lOFC, PCC, precuneus, angular gyrus, and hippocampus, replicating prior findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 report fMRI activations with appropriate coordinates and z-scores at FWE-corrected thresholds (p<0.05). The pattern replicates prior work (Daw et al., 2006; Addicott et al., 2014) and provides a foundation for examining drug effects. The activations are well-documented and consistent with the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "No differential activation patterns were observed between directed and random exploration types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 reports a null finding from the third GLM comparing directed vs. random exploration. While a null result, this is appropriately documented and suggests these exploration subtypes may not have distinct neural signatures at the resolution examined, or that the classification scheme may not capture neural distinctions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C68"
+    ],
+    "result": "No drug effects were found on neural signatures of exploration, exploitation, or prediction error, suggesting dopamine does not control the explore/exploit trade-off by directly modulating the neural signatures of exploratory and exploitative decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C45, C46, C68 report null findings for drug effects on exploration/exploitation-related brain activation. While the authors acknowledge potential power limitations (C62), the null findings are surprising given the behavioral effects and weaken the mechanistic interpretation. The conclusion (C68) is reasonable but relies heavily on absence of evidence. Alternative explanations (indirect effects, BOLD limitations C63-C64) are discussed but not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C69"
+    ],
+    "result": "L-dopa attenuated neural representations of overall uncertainty in the insula and dACC, suggesting dopamine modulates how this cortical control network tracks accumulating uncertainty during decision-making, which may drive exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C47-C49, C69 present an exploratory post-hoc analysis showing L-dopa reduced uncertainty-related activity in insula/dACC. While C48 shows a significant effect in left PI (z=5.05, FWE-corrected), C47 and C49 rely on uncorrected thresholds (p<0.001), weakening the evidence. The mechanistic interpretation (C69) is speculative and not directly tested. This represents an interesting hypothesis-generating finding but requires replication and more direct testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C61"
+    ],
+    "result": "Dopamine modulates how insula and dACC track accumulating uncertainty during decision-making, potentially through indirect modulation of striatal processing that is transmitted to cortical structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C60, C61 present mechanistic interpretations based on the uncertainty-related fMRI findings and receptor distribution data (C59). However, these are largely speculative inferences not directly tested in the study. The proposed striatal-cortical pathway is plausible but lacks direct evidence. The interpretation relies on the uncertain fMRI findings (C47-C49) and requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "L-dopa's effects on exploration may be mediated by increased phasic striatal dopamine release that strengthens reinforcing effects of immediate rewards, fostering exploitative behavior, potentially through direct striatal effects or indirect modulation of frontal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C53 present mechanistic interpretations based on prior literature about L-dopa's effects on striatal dopamine. While the cited evidence (C50, C51) supports that L-dopa increases phasic DA, the connection to the current behavioral findings is inferential. The proposed mechanisms (C52, C53) are plausible but speculative, as the study did not directly measure striatal DA or test these pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study acknowledges limitations including moderate sample size potentially contributing to null findings, and the indirect nature of BOLD signal as a measure of dopamine activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 appropriately acknowledge study limitations. The sample size consideration (C62) is reasonable given the null fMRI drug effects, though the within-subjects design provides some mitigation. The BOLD signal limitations (C63-C64) are important caveats for interpreting the neuroimaging findings and are appropriately discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The introduction establishes theoretical background on exploration/exploitation trade-offs, dopamine's role in reward learning and exploration, genetic associations, neural systems involved, and pharmacological mechanisms of L-dopa and haloperidol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C24, C54-C59 provide appropriate background from prior literature with citations. These establish the theoretical framework and justify the experimental approach. The claims accurately represent prior work and provide necessary context, though some (e.g., C20, C24, C53) note uncertainties or alternative mechanisms appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study employed appropriate computational modeling (Kalman filter with Bayesian updating) and fMRI analysis methods (SPM12 with standard preprocessing and FWE correction) with clearly specified parameters and procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 describe the task structure, computational model assumptions, and analysis methods. The Kalman filter implementation is standard and appropriate for the restless bandit task. The hierarchical Bayesian estimation in Stan (C78) is a rigorous approach. fMRI methods (C79-C80) follow standard procedures with appropriate corrections. The methods are well-documented and reproducible.",
+    "result_type": "MINOR"
+  }
+]

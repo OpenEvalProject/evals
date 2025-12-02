@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Between April 6-24, 2020, 1,270 healthcare workers and household contacts were tested for SARS-CoV-2 at Cambridge University Hospitals NHS Foundation Trust, with a technical failure rate of 0.2% and overall positivity rate of 5% (61/1,268). The median age was 34 years, 71% were female, and turnaround time was 12-36 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide basic descriptive statistics about the study population and testing program. These are straightforward observational data reported directly from the study with no complex statistical analysis or inference required. The numbers are internally consistent and the technical failure rate is appropriately low.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "3% (31/1,032) of asymptomatic healthcare workers tested positive compared to 14% (30/221) of symptomatic healthcare workers and household contacts, a statistically significant difference (p<0.0001, Fisher's exact test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 report positivity rates across screening groups with appropriate statistical testing. The use of Fisher's exact test is appropriate for comparing proportions between groups. The p-value indicates strong statistical significance, and the direction of the effect (symptomatic individuals more likely to test positive) is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C37"
+    ],
+    "result": "Healthcare workers in 'red' or 'amber' wards (higher COVID-19 exposure risk) were significantly more likely to test positive than those in 'green' wards (lower risk), both overall (p=0.0042) and specifically in the asymptomatic screening program (p=0.0389).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C37 report statistically significant associations between ward risk category and infection rates using Fisher's exact test. The statistical approach is appropriate, p-values indicate significance, and the finding is biologically plausible given differential exposure levels. However, the manuscript acknowledges multiple possible explanations for this observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C74",
+      "C75"
+    ],
+    "result": "Viral loads (measured by CT values) were significantly lower in asymptomatic healthcare workers compared to symptomatic individuals. Among symptomatic individuals, viral loads did not correlate with symptom duration or clinical risk score.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C74-C75 report viral load comparisons with reference to Figure 1. The interpretation of CT values is correctly stated (C12). The lack of correlation with symptom duration and risk score (C74-C75) is explicitly reported with reference to figure supplements. Statistical testing appears appropriate (Mann-Whitney test mentioned in methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C56",
+      "C57",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Of 30 individuals from the asymptomatic screening group studied in depth, 6/30 (20%) had no symptoms at time of testing, with 1/6 becoming symptomatic afterward (yielding 0.5% true asymptomatic rate), 11/30 (37%) had mild prior symptoms, and 12/30 (40%) had symptoms >7 days before testing. Overall, 17/30 (57%) were truly asymptomatic or pauci-symptomatic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16, C56-C57, C76-C78 provide a detailed breakdown of symptom status in the asymptomatic screening group. The numbers are internally consistent and add up correctly. The calculation of true asymptomatic rate (0.5%) appropriately accounts for the pre-symptomatic individual (C76). The categorization into subgroups is clearly described and supported by Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C58"
+    ],
+    "result": "The majority of individuals with high COVID-19 probability symptoms >7 days before testing had appropriately self-isolated during that period and returned to work well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C58 report compliance with self-isolation protocols. The manuscript states this explicitly and the finding is important for understanding the epidemiology of the infections detected. However, no quantitative data on the exact proportion who self-isolated is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C35",
+      "C59",
+      "C81",
+      "C82"
+    ],
+    "result": "A cluster of 9 positive cases was identified on ward F (an elderly care 'green' ward), including 4/43 (9%) from asymptomatic screening, 2 from symptomatic screening, and 3 from reactive screening. Sequencing revealed 6/9 belonged to lineage B\u00b71, with 2 B1\u00b77 and 1 B2\u00b71, suggesting multiple introductions. Ward F had significantly higher positivity than other green wards (p=0.0040).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28, C35, C59, C81-C82 describe the ward F cluster with detailed case counts, sequencing results, and statistical comparison. The numbers are consistent across claims, the statistical test is appropriate, and the interpretation of multiple introductions based on lineage diversity is reasonable. The infection control response (ward closure, PPE escalation) is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C83",
+      "C84"
+    ],
+    "result": "A cluster of 9 positive cases was identified on ward Q (a 'red' COVID-19 ward), including 7/37 (19%) from asymptomatic screening, 1 from symptomatic screening, and 1 from reactive screening. All 4 sequenced viruses were lineage B\u00b71. Ward Q had significantly higher positivity than other red wards (p=0.0011).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34, C36, C83-C84 describe the ward Q cluster with case counts, sequencing results, and statistical comparison. The numbers are consistent, statistical testing is appropriate, and the finding is significant. The infection control response (PPE reviews, staff training) is documented. The limitation that some samples couldn't be sequenced due to high CT values (C33) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The majority of symptomatic individuals who tested positive had high COVID-19 probability symptoms: 22/26 (85%) of symptomatic healthcare workers and 3/4 (75%) of symptomatic household contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 report the distribution of symptom severity among positive symptomatic individuals with reference to Table 7. The data are straightforward descriptive statistics that support the conclusion that most symptomatic positive individuals had high-probability symptoms, consistent with national guidance for self-isolation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "21 individuals underwent repeat testing for various reasons (including evolving symptoms and medium probability scores), and all remained SARS-CoV-2 negative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 report repeat testing results. The data are straightforward and internally consistent. This finding supports the reliability of the testing protocol and suggests that initial negative results were accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Ward O (a 'red' medical ward) had a similar positivity rate to ward F (4/44; 9%) and was listed for further cluster investigation, though incorrect PPE usage was not noted during the study period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 report findings for ward O, noting similar positivity to ward F but without the PPE concerns observed on ward Q. The data are straightforward observational findings. The acknowledgment that further investigation was needed after the study ended is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C69",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study established a comprehensive testing program with two parallel streams (symptomatic and asymptomatic screening), using validated RT-PCR on self-collected throat+nose swabs, with on-site testing facilities (Pods), outreach services, rapid turnaround (12-36 hours), and viral sequencing of positive samples with CT \u226430.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C69, C121-C155 describe the detailed methodology of the screening program. These are straightforward descriptions of study procedures that are internally consistent and well-documented. The validation of the RT-PCR assay is cited (C69), and the sequencing methods reference established protocols (C145-C147). The operational details demonstrate a well-designed program.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Samples with CT <33 typically yielded genomes >90% coverage at 20x depth, with 34/35 genomes passing quality filters. Due to low genetic diversity, genomic similarity alone cannot infer transmission chains; integration with epidemiological data is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 report sequencing quality metrics and acknowledge important limitations of genomic analysis. The relationship between CT value and sequencing success (C158) is shown in Figure 4 supplement 1. The acknowledgment that low viral diversity limits transmission inference (C160-C161) is scientifically sound and appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C71",
+      "C88",
+      "C90",
+      "C91",
+      "C118"
+    ],
+    "result": "The study demonstrates the utility of comprehensive screening of healthcare workers with minimal or no symptoms, which will be critical for protecting patients and hospital staff. Focusing solely on symptomatic testing will miss asymptomatic and pauci-symptomatic disease. Reactive asymptomatic screening responding to sickness trends should be prioritized when testing capacity is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C71, C88, C90-C91, C118 present the main conclusions and recommendations of the study. These are well-supported by the data showing 3% positivity in asymptomatic screening (C7), the identification of ward clusters (C20-C36), and the finding that 57% of positive asymptomatic individuals were truly asymptomatic/pauci-symptomatic (C56). The recommendations are logical extensions of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C119"
+    ],
+    "result": "As testing capacity increases, rolling programs of serial screening for asymptomatic staff in all hospital areas is recommended, with frequency dictated by infection probability. The approach may benefit other institutions like care homes, and serial screening of long-term inpatients should be explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95, C119 present recommendations for future screening programs. While these are logical extensions of the study findings, they represent speculation about future applications rather than conclusions directly supported by the current data. The study did not test serial screening, care home screening, or long-term inpatient screening, so these recommendations are based on inference rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The program's success relied on collaborative efforts between stakeholders, with key factors including rapid turnaround (same-day results), on-site testing to minimize disruption, and maintenance of reserve capacity for reactive investigations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 describe factors contributing to program success. These are supported by the operational data (C6 showing 12-36 hour turnaround) and the successful identification of ward clusters (C20-C36). The emphasis on rapid turnaround and reserve capacity is logical given the reactive screening approach that identified the clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Given the potential for pre-symptomatic and asymptomatic transmission among healthcare workers, and data suggesting infectivity may peak before symptom onset, there is a strong argument for basic PPE provision in all clinical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 make a PPE recommendation based on the study findings and cited literature. The study demonstrated asymptomatic carriage (C77) and the citation to He et al. 2020 regarding peak infectivity before symptoms (C103) is appropriate. The recommendation is a reasonable inference from the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Identification of nosocomial transmission through routine data is problematic because hospitals are not closed systems and there is limited diversity in circulating SARS-CoV-2 strains. As the pandemic unfolds, real-time genomic surveillance will become increasingly important, requiring active screening and rapid sequencing of both healthcare workers and patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 discuss challenges and future directions for genomic surveillance. The limitations are appropriately acknowledged (C104-C106) and are consistent with the sequencing results showing predominantly B\u00b71 lineage (C23, C32, C60). The recommendations for future surveillance (C107-C108) are logical extensions of the study experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study is limited by the short time-frame, small number of positive tests, and lack of behavioral and detailed epidemiological data, making it difficult to draw firm conclusions about hospital transmission dynamics. Long-term benefits will require sustained longitudinal sampling to parametrize workforce depletion and transmission models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 appropriately acknowledge study limitations. These are reasonable and honest assessments of what the study can and cannot conclude. The acknowledgment that firm conclusions about transmission dynamics are difficult (C112) is consistent with the genomic analysis limitations (C160). The call for future research (C113-C115) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The manuscript cites extensive prior literature on COVID-19 epidemiology, including PCR positivity duration (median 20 days), viable virus shedding (\u22648 days), nosocomial transmission rates (12-29%), asymptomatic transmission (approximately half of cases), benefits of healthcare worker screening, and testing capacity variations across countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C41-C54, C63-C66 cite published literature to provide context for the study. These citations appear appropriate and are used to support the rationale for the screening program. The cited findings are consistent with the broader COVID-19 literature from early 2020. However, the accuracy of these citations cannot be fully verified without checking the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C109",
+      "C110",
+      "C116",
+      "C117",
+      "C120"
+    ],
+    "result": "Screening approaches focused solely on symptomatic healthcare workers are unlikely to be adequate for suppression of nosocomial spread. The need for expanded screening programs for asymptomatic and symptomatic healthcare workers is apparent. Understanding hospital transmission will be vital for infection control policy, and screening measures will increase patient confidence in accessing healthcare services.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C109-C110, C116-C117, C120 present conclusions and predictions based on the study findings and broader context. The conclusion that symptomatic-only screening is inadequate (C67) is well-supported by the finding of 3% asymptomatic positivity (C7). The predictions about future waves (C116) and patient confidence (C120) are reasonable inferences, though not directly tested in the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Nineteen wards were identified for systematic priority screening as part of hospital-wide surveillance, with two areas (wards F and Q) specifically targeted due to high staff sickness rates or PPE concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 describe the scope and targeting strategy of the asymptomatic screening program. This is straightforward descriptive information about study design that is consistent with the subsequent findings on wards F and Q (C20-C36). The reactive targeting approach is a key feature of the program.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "As a study of healthcare-associated infections, this investigation is exempt from requiring ethical approval under Section 251 of the NHS Act 2006. Written consent was obtained for anonymized case vignettes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 describe the ethical approval status and consent procedures. The exemption under Section 251 is stated with reference to the NHS Health Research Authority algorithm. The consent for case vignettes is appropriate. These are straightforward procedural matters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "In the setting of falling community COVID-19 cases, hospitals will become potential epicenters of local outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 makes a prediction about hospitals becoming outbreak epicenters as community cases fall. While this is a plausible inference from the finding of nosocomial clusters, it is speculative and not directly tested by the study. The study was conducted during rising community transmission (April 2020), not falling transmission.",
+    "result_type": "MINOR"
+  }
+]

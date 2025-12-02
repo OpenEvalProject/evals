@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Etv transcription factors (Etv1, Etv4, Etv5) are controlled by FGF-ERK signaling during lens development. Genetic ablation of Fgfr1/2, Mek1/2, or Erk1/2 abolishes Etv expression and ERK phosphorylation in the lens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from multiple genetic models (Fgfr, Mek, and Erk knockouts) showing loss of Etv expression when FGF-ERK signaling is disrupted. The data are supported by immunostaining, in situ hybridization (Figure 1), and citations to previous work, establishing a clear regulatory relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Etv1/4/5 triple knockout (Etv TKO) results in reduced lens size at E14.5, increased apoptosis in epithelium and transitional zone, reduced proliferation in lens epithelial cells, and ectopic cell cycle markers (Cyclin D1, EdU, pHH3) in the fiber cell compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are well-supported by multiple complementary assays (H&E staining, TUNEL, EdU incorporation, immunostaining for Cyclin D1 and pHH3) shown in Figure 2. Quantification is provided for EdU and TUNEL (Figure 2I), strengthening the conclusions about altered proliferation and apoptosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "RNA sequencing of Etv TKO transitional zone cells identified 834 genes with statistically significant expression changes (p<0.05), including 288 up-regulated and 283 down-regulated genes (\u22652-fold). Etv genes appear to regulate their own expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by RNA-seq data with appropriate statistical analysis (Figure 3B-C). The observation of Etv autoregulation (C11) is appropriately qualified as a suggestion based on reduced remaining transcripts in mutants. The data quality is demonstrated by cluster and PCA analysis showing clear separation between genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Fgfr1 and Fgfr3 are down-regulated in Etv TKO mutants, but this is unlikely to affect lens development based on previous studies showing Fgfr1/Fgfr3 double mutants lack overt lens phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by RNA-seq and in situ hybridization data (Figure 3C, Figure 3\u2014figure supplement 1B). The interpretation in C13 relies on appropriate citation to previous work (Zhao et al., 2008), providing context for why this feedback regulation may not be functionally significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Etv deletion leads to reduced Spry2 expression and ectopic activation of ERK signaling. Spry2 is a direct target of Etv genes, and its loss results in elevated ERK phosphorylation and increased expression of ERK early response genes (Egr1, Fos). GSEA analysis confirms enhanced MAP kinase pathway activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 form a coherent mechanistic story supported by multiple lines of evidence: RNA-seq data (C14, C19), in situ hybridization (C14, C16), immunostaining for pERK (C17), ChIP-seq citation (C15), and GSEA analysis (C18). The negative feedback loop model is well-supported and consistent with known Sprouty function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Despite Etv deletion, lens differentiation markers (Maf, \u03b1-crystallin, \u03b3A-crystallin) remain expressed at the protein and mRNA levels in Etv TKO mutants, with no statistically significant changes in transcript levels by RNA-seq. This suggests lens differentiation can proceed without Etv transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by multiple complementary approaches: immunostaining (Figure 4A-C, F-H), RNA in situ hybridization (Figure 4D-E, I-J), and RNA-seq analysis (C24). The convergence of protein, mRNA, and transcriptomic data provides strong evidence for the unexpected finding that differentiation markers are maintained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Combined deletion of Erk1/2 or Mek1/2 drastically reduces lens size but does not abolish expression of lens differentiation markers (Maf, \u03b1-crystallin, \u03b3-crystallin), similar to Etv TKO mutants. This differs from FGF receptor mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by immunostaining and in situ hybridization data (Figure 4K-T). The comparison across multiple genetic models (Etv TKO, Erk CKO, Mek CKO) strengthens the conclusion that ERK signaling and Etv are not essential for differentiation marker expression, contrasting with FGF receptor mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Genetic epistasis experiments using Fgf3 overexpression and dominant-negative EtvEnR demonstrate that Etv transcription factors are required for FGF-induced ectopic differentiation in lens epithelium but not for normal differentiation at the transitional zone. Inhibition of Etv activity prevents FGF from inducing ectopic fiber-specific genes while maintaining normal differentiation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 describe a well-designed epistasis experiment with clear results shown in Figure 5. The use of the dominant-negative EtvEnR allele provides a complementary approach to the knockout. The data show that blocking Etv activity rescues the Fgf3 overexpression phenotype, supporting the conclusion that Etv is required for ectopic but not normal differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "In Etv TKO mutants, the transitional zone (marked by Foxe3/Prox1 boundary) shifts anteriorly, and the lens epithelium (marked by Pax6/E-cadherin) is shortened relative to the posterior lens circumference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by immunostaining data (Figure 6A-B, E-F) with quantification (Figure 6I) showing statistically significant changes in the anterior/posterior perimeter ratio. This provides clear evidence for premature differentiation of lens progenitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Jag1 expression is drastically reduced in Etv TKO mutants, leading to diminished Notch1-ICD in the anterior lens epithelium. This establishes that Etv regulates Jag1-Notch signaling to control the timing of lens cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by RNA-seq (Figure 3C), immunostaining for Jag1 and Notch1-ICD (Figure 6C-D, G-H), and citations to previous work on Jag1-Notch function (C43). The data provide strong evidence linking Etv to Notch signaling regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Jag1 is a direct transcriptional target of Etv. FGF2 induces Jag1 expression in lens cell culture via MEK-ERK signaling (not PI3K). Two Etv-binding sites in Jag1 introns 2 and 5 are occupied by Etv5 as shown by ChIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide strong mechanistic evidence: western blot showing FGF2 induction and MEK-dependence (Figure 6J, Figure 6\u2014figure supplement 1), bioinformatic identification of Etv-binding sites using ATAC-seq data (Figure 6K), and ChIP validation of Etv5 occupancy (Figure 6L). This establishes Jag1 as a direct Etv target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Jag1 expression is normally restricted to nascent lens fibers but is abolished in Mek/Erk CKO mutants and expanded throughout the epithelium in Fgf3 overexpression. Suppression of Etv activity reverses the Fgf3 overexpression phenotype. This demonstrates that Etv mediates FGF-ERK-Notch crosstalk to control lens differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by immunostaining data across multiple genetic models (Figure 6M-R). The epistasis experiment with EtvEnR rescuing the Fgf3 overexpression phenotype provides strong evidence for Etv's role in mediating FGF-Notch crosstalk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Etv TKO mutants retain nuclei in the lens core, indicating defective organelle clearance. This is associated with down-regulation of Tsc2 and increased mTOR signaling (elevated pmTOR, pS6, p4EBP1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by histological data showing persistent nuclei (Figure 7A, E, Figure 7\u2014figure supplement 1), RNA-seq showing Tsc2 down-regulation (Figure 3C), and immunostaining for mTOR pathway components (Figure 7B-D, F-H). The mechanistic link between Etv, Tsc2, and mTOR is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Tsc1 CKO lenses phenocopy Etv TKO mutants, showing elevated mTOR signaling (increased pmTOR, pS6, p4EBP1) and scattered nuclei throughout the lens without a defined organelle-free zone. This supports the model that Etv control of mTOR signaling is required for terminal lens fiber differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide strong validation of the Etv-Tsc2-mTOR pathway through an independent genetic model. The Tsc1 CKO phenocopies the Etv TKO organelle clearance defect (Figure 7I-L, Figure 7\u2014figure supplement 1), supporting the proposed mechanism. However, the causal link relies on inference rather than direct rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "FGF signaling plays important roles in vertebrate lens development, with its primary function being to promote differentiation of lens epithelial cells into fiber cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 represent well-established background knowledge supported by extensive citations throughout the manuscript. These are appropriately presented as foundational context rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Deletion of Etv genes causes premature differentiation of lens progenitors due to reduced Notch signaling and leads to increased ERK and mTOR signaling. Unlike other SRTFs, ETV transcription factors can oppose the intended function of their upstream FGF signaling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 represent the major conclusions of the study, synthesizing results from multiple experiments. These are well-supported by the data presented in earlier results, though C75 represents a broader interpretive claim about SRTF function that extends beyond the lens-specific findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Etv deletion causes elevated ERK signaling (increased pERK, Egr1, Fos expression) likely due to reduced Spry2 expression. This demonstrates Etv's role in stabilizing FGF-activated intracellular signaling through negative feedback regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 synthesize earlier findings into a coherent discussion point. C80 is appropriately qualified as speculative ('may stimulate'). The mechanistic interpretation is well-supported by the data, though the full extent of network rewiring remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Despite previous in vitro studies showing Maf and Cryaa are under direct Etv control, the current in vivo study demonstrates that Etv genes are dispensable for FGF-induced cell differentiation under physiological conditions during lens development. This suggests intrinsic differences between normal and ectopic differentiation contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 address an apparent contradiction with previous work (Xie et al., 2016). The authors appropriately acknowledge the discrepancy and provide multiple lines of evidence supporting their findings. C83 is appropriately qualified as speculative regarding the mechanistic basis for context-dependent differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "FGF plays a dual role in lens development: directly promoting fiber differentiation and restraining progenitor differentiation through Jag1-Notch signaling. Etv mediates the anti-differentiation function via direct control of Jag1 but is largely dispensable for the pro-differentiation aspect, as evidenced by maintained Crystallin expression despite premature progenitor differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 synthesize the study's findings into a coherent model of FGF's dual function. The conclusions are well-supported by the data, though C89 is appropriately qualified as speculative. The distinction between Etv's role in anti-differentiation versus pro-differentiation functions is a key conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Etv deficiency augments mTOR phosphorylation, likely through reduced Tsc2 expression, leading to aberrant retention of lens fiber cell nuclei. This phenotype is mimicked by Tsc1 deletion, providing in vivo evidence that mTOR is an important regulator of organelle removal in lens maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are well-supported by the data from both Etv TKO and Tsc1 CKO models. The mechanistic link through Tsc2 is supported by RNA-seq data. C96 appropriately cites previous work, and C97 represents a significant advance by providing in vivo validation of mTOR's role in organelle clearance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "This study establishes Etv family transcription factors as SRTFs for FGF signaling in lens development, but demonstrates they deviate from or oppose FGF-ERK function. This may reflect the diversity of FGF SRTFs, which can evolve unique or opposing functions to fine-tune transcriptional responses, unlike other pathways with single downstream effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 represent well-supported conclusions from the study. C100 is established knowledge. C101 is appropriately qualified as speculative regarding evolutionary implications, representing a reasonable hypothesis based on the findings but extending beyond the direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The context-dependent function of Etv differs between tissues: Etv deletion reproduced FGF-ERK mutant phenotypes in lacrimal gland but showed divergent functions in lens. This highlights the importance of elucidating context-dependent SRTF function for therapeutic targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by appropriate citations. C104 is well-supported by the current study's findings. C105 is appropriately qualified as forward-looking speculation about therapeutic implications, representing a reasonable extension of the findings.",
+    "result_type": "MINOR"
+  }
+]

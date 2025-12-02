@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "HGT and gene loss drive rapid changes in bacterial gene content, with HGT rates potentially outpacing sequence evolution. Bacterial adaptation is primarily driven by changes in gene content rather than sequence evolution, with genes rapidly lost from individual lineages but retained in a larger mobile gene pool through HGT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by multiple citations to published research (C10-C17) and represent established knowledge in the field. The claims provide the foundational context for the study and are consistently supported throughout the literature cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C115"
+    ],
+    "result": "Slightly beneficial genes can be classified into five distinct classes based on whether they are lost without HGT and whether HGT improves population growth rates: indispensable, enrichable, rescuable, unrescuable genes, and selfish genetic elements (SGEs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This classification is derived from mathematical analysis of the ODE model (Equation 1) and is demonstrated through both analytical derivations and simulations (Figures 2, 4). The classification framework is internally consistent and well-supported by the model results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C43",
+      "C44",
+      "C49"
+    ],
+    "result": "HGT has a positive impact on population growth rates by recovering slightly beneficial genes that are hard to maintain through selection alone. For highly beneficial genes, HGT yields only marginal increases in carrier frequency that do not outweigh costs, while for genes with smaller benefits, HGT can substantially impact carrier frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by mathematical analysis (Equation 1) and demonstrated in Figure 2A. The relationship between gene benefit (b), HGT rate (h), and population growth is rigorously derived and visualized, showing clear distinctions between gene classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C116",
+      "C117"
+    ],
+    "result": "HGT is an evolutionarily stable strategy for both enrichable and rescuable genes, but can only evolve de novo for enrichable genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is demonstrated through adaptive dynamics analysis (referenced in Supplementary Material) and confirmed by IBM simulations (Figure 5D). The distinction between evolutionary stability and evolvability is clearly established through both analytical and computational approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C60",
+      "C64",
+      "C118"
+    ],
+    "result": "Evolving HGT to rescue rescuable genes faces a paradox in well-mixed populations: HGT is needed for gene persistence, but sufficient donor cells are required to make HGT adaptive. This failure is caused by positive frequency-dependent selection (Allee effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This paradox is identified through mathematical analysis and demonstrated in Figure 3, which shows that invasion of HGT+ mutants fails at low founder population sizes for rescuable genes. The Allee effect mechanism is clearly explained and supported by both ODE analysis and IBM simulations (C78, C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "In spatially structured populations (biofilms), gene classes shift to higher benefit values, making the range of enrichable and rescuable genes much broader. This occurs because carriers compete mostly with other carriers (kin competition), reducing the effective benefit of carrying genes and making them harder to maintain without HGT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by IBM simulations shown in Figures 4A-D. The mechanism is clearly explained through spatial competition dynamics (Figure 4B-C), and the quantitative effects on population growth rates are demonstrated (Figure 4D). The competitive advantage measurements provide strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C40",
+      "C41",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C119",
+      "C120",
+      "C151",
+      "C156",
+      "C157"
+    ],
+    "result": "HGT of rescuable genes cannot evolve in well-mixed populations but does evolve in spatially structured populations through local 'nucleation events'. Even minority donor cells can be locally abundant in biofilms, giving rise to gene-sharing communities that eventually overgrow the population. These communities persist even after gene influx stops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This major finding is extensively demonstrated through IBM simulations (Figures 5A-C, Video 1). The barcoding experiments (Figure 5C) provide clear visual evidence of the nucleation process and community spread. The contrast between well-mixed and spatially structured populations is consistently shown across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In the IBM, HGT of enrichable genes always evolved, HGT evolved for rescuable genes only in spatially structured populations, and HGT never evolved for indispensable and unrescuable genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is clearly demonstrated in Figure 5D, which systematically shows the evolution outcomes across different gene classes and spatial structures. The results are consistent with predictions from the ODE analysis and adaptive dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C42",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C114",
+      "C121",
+      "C122"
+    ],
+    "result": "In spatially structured populations, HGT is evolutionarily maintained even when exploited by harmful SGEs, resulting in stable coexistence of bacteria, beneficial genes, and SGEs. Strong SGEs are maintained at low frequencies with minimal impact on growth rates, while weaker SGEs impose greater burdens by reaching higher frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is demonstrated through IBM simulations in Figure 6A-C. The distinction between weak and strong SGEs is clearly shown, with \u03c6_pop and \u03c6_lod measurements providing evidence for the differential impacts. The long-term coexistence is demonstrated even after SGE influx stops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "SGEs show spatial heterogeneity in biofilms, being either locally abundant or absent. This heterogeneity is crucial for strong SGE persistence, as spatially separated bacterial strains experience opposing selection pressures for DNA uptake. Well-mixed populations can only retain weaker SGEs, and overly localized HGT prevents strong SGE persistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is supported by barcoding experiments shown in Figure 6D and comparisons with well-mixed populations in Appendix figures. The spatial dynamics and opposing selection pressures are clearly demonstrated through visualization and quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "HGT through transformation can add novel genes to bacterial genomes through homologous recombination or MGE integration. While DNA uptake enables adaptation and gene recovery, it also poses risks including SGEs, chromosome disruptions, cytotoxicity, and energetic costs, making it a costly and risky endeavor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge about HGT mechanisms and are supported by appropriate citations (C19-C27). They provide necessary biological context for the modeling work and are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The model assumes HGT is continuously costly (proportional to uptake rate), all carriers can act as donors, and uptake ability is determined by recipients. Similar gene classes and dynamics are observed when modifying these assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model assumptions are clearly stated and justified. The robustness analysis (C139) is supported by Appendix figures showing that key results hold under modified assumptions, strengthening confidence in the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The model simplifies natural bacterial populations by assuming constant environments and studying single genes at a time. Real microbial ecosystems experience changing selection pressures, and future work should consider genome-wide impacts, differential gene mobility, and MGE relationships with hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriate acknowledgments of model limitations supported by relevant citations. The authors clearly recognize the simplifications made and suggest reasonable directions for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The current model retrospectively explains dynamics from earlier work on antagonistic interactions, where toxin genes evolved as 'rescuable' and resistance genes as 'indispensable'. The model reveals that bacteria may benefit from mobilizing constantly slightly beneficial genes, not just intermittently beneficial ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This connection to prior work (van Dijk and Hogeweg, 2016) is well-reasoned and supported by the current model's framework. The reinterpretation of previous results through the new classification system is logical and adds value to understanding both studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The model's key results may hold for conjugation despite important mechanistic differences. Parallels exist with Bergstrom et al. (2000) on plasmid persistence: indispensable genes resemble highly beneficial plasmid genes where HGT is unnecessary, while rescuable genes resemble intermittently favored plasmids. Future work should directly compare transformation and conjugation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the parallels to conjugation and prior work are reasonable, the claim that results 'may hold' for conjugation (C140) is speculative. The authors appropriately acknowledge important differences (C146-C149) but provide limited evidence that the framework applies to conjugation beyond conceptual similarities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C160",
+      "C161"
+    ],
+    "result": "Spatial structure is crucial for HGT evolution, consistent with observations that HGT occurs more frequently in biofilms. While spatial structure can slow adaptation through kin competition, it enables HGT evolution through relatedness. Studying evolution in spatial contexts reveals accessible eco-evolutionary outcomes that are missed by well-mixed, single-mutant approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The importance of spatial structure is well-demonstrated throughout the manuscript (Figures 4-6). The connections to empirical observations (C152-C153) and theoretical considerations (C154-C155) are appropriately cited. The broader implications (C160-C161) are reasonable inferences from the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "By abstracting HGT mechanisms and gene benefits, the model reveals conditions where HGT is adaptive for hosts. The work complements previous studies by showing that regardless of gene loss rate, there may always be slightly beneficial traits for which HGT is adaptive and evolvable. Though such genes are hard to detect experimentally, the model provides proof-of-principle that HGT may prevent their loss, potentially explaining differential HGT rates observed in data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synthesis with prior work (C165-C168) is well-reasoned and appropriately cited. The acknowledgment of experimental challenges (C169) is realistic. The proof-of-principle claim (C170) is appropriately modest, and the speculation about future experimental insights (C171-C172) is reasonable given emerging techniques.",
+    "result_type": "MAJOR"
+  }
+]

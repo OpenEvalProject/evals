@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C30",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C50"
+    ],
+    "result": "The authors developed a behavioral task where rats chose between guaranteed and probabilistic rewards, with reward locations randomized on each trial to disambiguate spatial from abstract sequential biases. Trials were independent by design, making sequential biases maladaptive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16, C17, C30, C33-C41, and C50 collectively describe a well-designed task with explicit controls. The randomization of reward locations (C16, C37) effectively separates spatial from abstract biases (C17), and the independence of trials (C1, C50) ensures that sequential biases are maladaptive (C30). The task design is clearly documented with appropriate parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Rats exhibited a risky win-stay bias: following a risky win, they were significantly more likely to choose the risky option again (p=1.29e-13). This bias was graded with reward probability, not due to unlearning cue meanings, and distinct from changes in overall risk preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C46, C47 establish the main behavioral finding with strong statistical support. Control analyses (C48, C51-C54) rule out alternative explanations including unlearning, biased probability estimates, and fluctuations in risk preferences. The graded dependence on probability (C49) provides additional mechanistic insight. The behavioral characterization is thorough and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C56"
+    ],
+    "result": "Rats exhibited spatial win-stay/lose-switch biases that were independent of and larger in magnitude than the risky win-stay bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C55, and C56 establish that spatial biases exist and are dissociable from risky biases due to the task design where risky/safe locations switch randomly. The independence is demonstrated by the task structure (C55) and the magnitude comparison (C56) is directly stated with reference to figures showing the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "lOFC neurons encoded reward history, with 512/1459 units showing significantly different activity following rewarded vs unrewarded trials. Encoding was strongest at trial initiation, with more neurons showing higher firing after unrewarded trials (consistent with adaptation). Population-level trial factors from TCA analysis were modulated by reward history 2 trials back.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C57-C64 provide converging evidence from single-unit and population analyses. Statistical tests are reported (C58, C62), temporal dynamics are characterized (C59), and the adaptation interpretation (C60, C63) is supported by multiple citations. Control analyses (C64) address potential confounds. The neural characterization is comprehensive and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Optogenetic inhibition of lOFC during the cue period did not affect spatial win-stay/lose-switch biases or the risky win-stay bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 report null effects with appropriate statistical tests (C66: p=0.005 ANOVA). The lack of effect during the cue period contrasts with effects during the choice reporting period, establishing temporal specificity. However, the interpretation of null results requires caution regarding statistical power, though the contrast with positive effects in other conditions provides some reassurance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "During the choice reporting period, lOFC neurons encoded whether rats chose safe vs risky options (128/1459 units), with discriminability peaking after leaving the center poke. Strong side-selectivity (628 units) and reward receipt encoding (459 units) were also observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 characterize neural activity during choice reporting with appropriate statistical tests (C68: unpaired t-test) and temporal resolution (C69). The large number of side-selective neurons (C70) is noted, and a control analysis (C72) addresses potential confounds. The neural characterization is thorough and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Optogenetic inhibition of lOFC during the choice reporting period eliminated the risky win-stay bias in rats expressing opsins (p=0.667 CaMKII\u03b1-eNpHR3.0; p=0.778 Pvalb-iCre-ChR2) but not in sham controls (p=0.009). The effect was specific to the risky win-stay parameter in logistic regression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C76-C83 establish the causal role of lOFC with appropriate controls (sham animals C77), statistical tests, and specificity analyses (C80). Control analyses rule out motor effects (C78, C79) and baseline changes (C81). The effect is consistent across individual animals (C82) and specific to the risky bias (C83). This is a well-controlled causal manipulation experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C84"
+    ],
+    "result": "Optogenetic inhibition during the choice reporting period did not specifically affect spatial biases when controlling for inter-trial interval duration. Spatial biases decreased with ITI duration while risky biases did not, suggesting dissociable mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73-C75, C84 establish that spatial biases were not specifically affected by lOFC inhibition. The initial reduction (C73) was explained by ITI effects (C74, C75), and the differential sensitivity to ITI (C84) provides additional evidence for dissociable mechanisms. The control for ITI is appropriate and strengthens the specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C18",
+      "C32"
+    ],
+    "result": "Different sequential biases are neurally dissociable, with lOFC required for abstract (risky/safe) but not spatial (left/right) sequential biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C18, C32 represent the main conclusions of the study, directly supported by the differential effects of lOFC manipulation on risky vs spatial biases (established in previous result groups). The conclusion that biases are neurally dissociable is well-supported by the selective optogenetic effects and the ITI sensitivity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C89",
+      "C106",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "The authors interpret their findings as consistent with the cognitive map hypothesis, where lOFC represents the animal's location in an abstract task space. They conclude that OFC promoted learning in abstract (risky/safe) but not spatial (left/right) coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C89, C106-C108, C110 present the theoretical interpretation with appropriate citations (C107, C108). The interpretation is consistent with the data showing selective effects on abstract vs spatial biases. However, this remains an interpretation rather than direct evidence for cognitive maps, and alternative explanations are not extensively discussed. The conclusion is reasonable but not uniquely determined by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Perturbation effects were uncoupled from the most strongly encoded task variables (reward history during cue period, left/right choice during choice reporting). The authors speculate this could reflect distributed representations for some variables vs more localized representations for updating risk preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 accurately summarizes a puzzling finding, but C97-C100 are explicitly speculative. The disconnect between encoding strength and perturbation effects is interesting but not fully explained. The speculation about distributed vs localized representations (C97-C98) and which neurons are responsible (C99-C100) lacks direct supporting evidence. This represents an important observation requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes prior knowledge about sequential biases in decision-making, OFC anatomy and function, and the role of lOFC in behavioral flexibility and value-based learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C28 summarize established knowledge with appropriate citations. These provide context for the current study and are standard background material. The citations appear appropriate for the claims made, though detailed verification of each cited work is beyond this evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C31"
+    ],
+    "result": "The authors hypothesized that OFC's role in behavioral flexibility might drive sequential biases even when maladaptive, and found that rats exhibited several dissociable biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 states the hypothesis clearly, and C31 confirms the finding of dissociable biases. These are appropriately characterized as hypothesis and finding respectively. The hypothesis is reasonable given prior work on OFC function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C109"
+    ],
+    "result": "The discussion contextualizes findings within prior OFC literature, noting consistency with roles in learning, behavioral flexibility, and value representation. Comparisons are made to primate OFC and other rodent studies, with speculation about evolutionary origins and real-world relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C95, C101-C105, C109 appropriately cite and discuss prior work. The comparisons to primate OFC (C90-C95) acknowledge species differences. The speculation about evolutionary origins (C104) and real-world relevance (C105) is appropriately tentative. The connection to the mOFC study (C101, C103) is reasonable but speculative regarding VTA projections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study used 39 male rats (35 Long-Evans, 4 Sprague-Dawley), including 3 for recordings and 16 for optogenetics (5 Pvalb-iCre transgenic). Investigators were not blinded, and procedures were approved by Princeton IACUC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 provide standard methodological details. The lack of blinding (C115) is a limitation but is transparently reported. Sample sizes appear adequate for the behavioral and neural analyses, though power analyses are not reported. Ethical approval is documented (C116).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C77",
+      "C78"
+    ],
+    "result": "The biteOscope is a novel device that uses a transparent, heated substrate with artificial blood meal to attract mosquitoes, allow them to feed, and enable high-resolution imaging of feeding behavior including visualization of the stylet. The device is low-cost (900-3500 USD) and portable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C22-C30 provide converging evidence from design specifications, experimental demonstrations (Figures 1, Videos 1-5), and behavioral observations that the device successfully attracts mosquitoes and enables visualization of feeding. The cost and portability claims (C77-C78) are explicitly stated. The device represents a validated technical innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C44",
+      "C48",
+      "C49",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Machine learning methods (DeepLabCut) were used to automatically extract behavioral statistics including locomotion classification (89% accuracy), engorgement detection (81% sensitivity, 100% specificity), and body part tracking (11 pixels/275 \u03bcm accuracy for Aedes, 6 pixels/150 \u03bcm for Anopheles). All four mosquito species successfully fed on the device with species-specific engorgement rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33-C38, C44, C48-C49, and C87-C90 provide detailed validation metrics for the computational pipeline. The engorgement rates across species (C34-C38) are empirically measured. Training dataset sizes (C87-C88) and accuracy metrics (C89-C90) are clearly reported with appropriate validation procedures described in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Mosquitoes exhibit a characteristic search timescale independent of feeding success: non-feeding trajectories rarely exceed the duration of successful feeding (only 8% exceed mean feeding time). When ATP is absent, mosquitoes increase search frequency rather than duration, with significantly more exploratory bouts on PBS-only substrates (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 describe a coherent behavioral pattern supported by trajectory analysis (Figure 2E, Figure 3) and statistical testing (Wilcoxon rank-sum test, p<0.05 for C46). The interpretation (C41, C47) logically follows from the quantitative observations. The experimental design comparing PBS vs PBS+ATP provides appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "DEET repels An. coluzzii upon contact with their legs. Mosquitoes land on DEET-coated surfaces (1.9\u00d7 lower rate) but avoid prolonged contact (max 6s vs 52s on uncoated). Body part tracking revealed legs contacted DEET in all cases (9/9) while proboscis contacted in only 5/9 cases, indicating leg-mediated repellency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C56-C69 provide converging evidence from landing rates, residence times, trajectory analysis, and body part tracking (Figure 5, Videos 11-12). The experimental design with partial DEET coating is appropriate. Body part tracking provides mechanistic insight distinguishing leg vs proboscis contact. The conclusion (C69) is well-supported by the quantitative data, though the authors appropriately note they cannot rule out physical properties of DEET coating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Body part tracking revealed distinct movement patterns for three behaviors: anterior grooming (circular foreleg motion, stationary middle legs), walking (all legs oscillate along body axis, proboscis explores laterally), and probing (fore/middle legs pull toward body, proboscis stationary).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe behavioral patterns directly observed and documented in Figure 4 and associated videos. The descriptions are specific and verifiable from the visual data. These represent validated behavioral characterizations enabled by the body part tracking methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Individual mosquitoes from the same population raised under identical conditions show strong behavioral heterogeneity in number of surface visits, exploration time, and behaviors engaged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is directly supported by Figure 3 showing individual variation in ethograms. The observation is important for understanding population-level behavior but represents a descriptive finding rather than a mechanistic discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Anopheles species quickly concentrate blood meals by excreting liquid (visible as growing droplets), while Aedes excrete to a much smaller extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 describe species-specific feeding behaviors observed in Video 4. This is a well-documented phenomenon in mosquito biology and the observation confirms the device captures natural feeding behaviors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Substrate orientation affects mosquito behavior: Ae. albopictus had lower landing rates on vertical vs floor-mounted substrates, and mosquitoes aligned with gravity (head up) on vertical surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 report observational findings from methods development. These are stated as observations without quantitative data or statistical analysis, but inform experimental design choices. The findings are plausible but represent preliminary observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Blood feeding in mosquitoes remains poorly understood due to technological limitations. Current methods often use human subjects, which constrains experimental possibilities and prevents visualization of subsurface feeding structures. Post-landing behaviors and contact-dependent sensing are particularly understudied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 establish the scientific context and motivation through cited literature and general knowledge. These background claims accurately represent the state of the field and identify genuine knowledge gaps that justify the development of the biteOscope. The claims are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The biteOscope provides an alternative to human/mouse-based methods, enabling studies with infected mosquitoes and precise surface manipulations. Contact-based DEET repellency may be conserved across Anopheles and Aedes, while olfactory responses differ between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are discussion/interpretation claims that synthesize the findings and place them in broader context. C70-C71 logically follow from the device capabilities demonstrated. C72 cites modeling studies appropriately. C73-C76 compare findings across species using appropriate citations, though these represent interpretations and suggestions for future work rather than direct experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mosquitoes aged 6-25 days were used for experiments. Aedes experiments were performed during light hours while Anopheles experiments were performed during dark hours to match species activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 describe methodological details that are clearly stated and appropriate for the species studied. These represent standard experimental design choices that account for species-specific circadian rhythms.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Five epilepsy patients with invasive ECoG electrodes (depth and subdural) covering HG and STG listened to 30 minutes of speech stories, with 40 seconds of test sentences repeated six times. Speech-responsive electrodes were selected using a t-test (t>2), yielding 50/60 in HG and 47/133 in STG. High-gamma (70-150 Hz) envelope was used as the neural response measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide comprehensive methodological details about patient cohort, electrode placement, stimulus design, and electrode selection criteria. The methods are clearly stated with specific quantitative criteria and are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "A linear STRF model and a nonlinear CNN model were developed to predict neural responses from 400 ms sliding windows of auditory spectrograms. The CNN consisted of three convolutional layers (8 3\u00d73 kernels each) followed by dimensionality reduction and a two-layer fully connected network (32 hidden nodes). All hyperparameters were optimized for prediction accuracy, with ReLU activations in hidden layers and a combined MSE-correlation loss function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 describe the model architectures and training procedures in detail. The window size optimization (C14-C15) and hyperparameter selection (C20) are stated to be data-driven, with supporting figures referenced. The architectural details are specific and complete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The CNN model significantly outperformed the linear model in predicting neural responses, with higher accuracy in 87/97 electrodes (average improvement 0.10, p<<1). The improvement was significantly greater in STG (0.13) than HG (0.07, p<0.003), revealing greater nonlinearity in STG encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 present quantitative comparisons with appropriate statistical tests. The noise-corrected R-squared metric is used consistently, and the regional differences are statistically significant. The interpretation of greater nonlinearity in STG (C30) follows logically from the differential improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "All nonlinear models (LN, STP, CNN) significantly improved prediction accuracy over the linear model, with CNN showing considerably higher accuracy than LN and STP, particularly in STG. CNN outperformed the linear model even with short training data durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C34 are supported by Figure 1D-E showing model comparisons across brain regions and training data durations. The consistent superiority of CNN across conditions strengthens the conclusion, though the magnitude of differences for LN and STP models is not quantified with statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The consistent superiority of the CNN model demonstrates the efficacy of regularization methods in avoiding local minima during training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 is an interpretation without direct evidence. While the CNN consistently outperforms other models, this could be due to its greater representational capacity rather than specifically the regularization methods. No ablation study or direct test of regularization efficacy is presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The Dynamic STRF (DSTRF) is defined as the linearized equivalent function (Jacobian) that the neural network applies to each stimulus instance. For ReLU networks, DSTRF calculation is straightforward because ReLU networks implement piecewise linear functions where nodes are either inactive (input sum negative) or active and linear (input sum positive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 provide a clear mathematical definition of DSTRF with appropriate citation (C36). The explanation of why ReLU networks are particularly suitable (C38-C39) is based on established properties of ReLU activations and is mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Network complexity, defined as the sum of normalized singular values of the DSTRF matrix, was significantly higher in STG (59.7) than HG (41.0, p<0.001) and correlated with prediction improvement (r=0.66, p<0.001). STG electrodes showed significantly more node switches (p<0.01), indicating more diverse linear templates are needed in STG compared to HG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 present a novel complexity metric with clear definition (C41) and strong statistical support (C42-C44). The convergence of multiple metrics (singular values, node switches) strengthens the conclusion about regional differences. The interpretation (C45-C46) follows logically from the quantitative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The learned input-output function is robust to network initialization and hyperparameters, though internal implementation may vary. Average DSTRFs closely resemble STRFs, with similarity decreasing as neural site complexity increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 address important concerns about model robustness and interpretability. C47 is supported by reference to supplementary analysis (Figure 2\u2014figure supplement 2). The relationship between average DSTRF and STRF (C48-C49) provides validation that the nonlinear model generalizes the linear model appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Three types of DSTRF variations were identified: (1) gain change - time-varying magnitude potentially reflecting neural adaptation, quantified by standard deviation of DSTRF magnitude; (2) temporal hold - sustained response to fast features with shifted latency, enabling decoupling of response duration from temporal resolution; (3) shape change - spectrotemporal tuning changes, quantified by singular values of shift-corrected DSTRFs, representing complexity beyond gain and temporal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C62 introduce a novel taxonomy of nonlinear properties with clear operational definitions. The gain change interpretation (C52) is appropriately tentative ('may reflect') with supporting citations. Temporal hold (C54-C58) addresses a computational limitation of linear models. Shape change (C59-C62) is mathematically well-defined as residual complexity. The framework is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Gain change showed no significant difference between STG and HG (p=0.23), suggesting similar adaptive responses. Temporal hold was significantly larger in STG (15.7) than HG (10.1, p<1e-4), consistent with increased temporal integration in higher auditory areas. Shape change was significantly higher in STG (46.8) than HG (38.8, p=0.005), indicating more nonlinear encoding requiring diverse receptive field templates in STG. All parameters were consistent across network initializations and test data segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 present comprehensive regional comparisons with appropriate statistical tests (Wilcoxon rank-sum). The temporal hold finding (C65-C67) is strengthened by consistency with prior literature. The robustness analysis (C70) addresses concerns about parameter stability. The pattern of results (no difference in gain, differences in temporal hold and shape change) is internally coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "K-means clustering with gap statistic optimization identified 1-6 DSTRF subtypes per site, with 84.9% of sites containing only one main cluster (mean=1.43\u00b11.26 SD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe a clustering analysis with appropriate method (gap statistic, C71) and clear quantitative results (C72-C73). The finding that most sites have one dominant cluster is consistent with the overall framework. However, the functional significance of multiple clusters is not deeply explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The three nonlinear parameters (gain change, temporal hold, shape change) strongly predict network complexity (r=0.94, p<1e-41) and improved accuracy (r=0.76, p<1e-16). All three contribute significantly to complexity in both regions. For prediction improvement, gain change and temporal hold contribute in STG (effects=0.183, 0.202; p=0.005, 1e-4), while gain change is the main predictor in HG (effect=0.250, p=2e-5) with modest shape change contribution (effect=0.087, p=0.028).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 demonstrate that the three-parameter framework captures the essential nonlinear properties through regression analysis. The high correlations (C74, C76) validate the parameter set. The regional differences in contribution patterns (C77-C79) are statistically significant and provide mechanistic insight. The main effects analysis is appropriate for this purpose.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C82"
+    ],
+    "result": "The three DSTRF variation types are not independent and covary considerably, with STG sites exhibiting multiple nonlinearities simultaneously, making individual contributions difficult to discern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C82 acknowledge an important limitation of the three-parameter decomposition. The covariance is documented (Figure 5\u2014figure supplement 2), and the interpretation (C82) explains why shape change predicts improvement in HG but not STG. This honest assessment strengthens rather than weakens the overall framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C88"
+    ],
+    "result": "The STP model showed significant improvement only in STG responses, consistent with the hypothesis that gain change nonlinearity captures nonlinear adaptation to short-term stimulus history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 states a finding but lacks statistical support (no p-values or effect sizes provided). Claim C88 connects this to gain change, but the evidence for this connection is not fully presented. The correlation analyses mentioned in the Discussion are not shown in the results section, making it difficult to evaluate the strength of this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Increasing nonlinearity throughout sensory pathways highlights the need for nonlinear models, particularly in higher cortical areas. Important nonlinear transformations include nonmonotonic stimulus-response functions, time-varying properties (adaptation, gain control), and nonlinear interaction of stimulus dimensions. These effects are instrumental in creating robust perception through invariant perceptual categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 provide important context from prior literature with appropriate citations. These are well-established principles in sensory neuroscience that motivate the current work. The claims are properly attributed to cited sources rather than presented as novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Previous nonlinear extensions of receptive field models improve prediction accuracy at the cost of reduced interpretability. The proposed CNN approach significantly improves prediction over linear, LN, and STP models while remaining highly interpretable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 accurately characterize limitations of prior approaches with appropriate citations. Claim C96 is supported by the prediction accuracy results (C26-C32) and the interpretability framework (C36-C62). The combination of improved performance and interpretability is the key contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The DSTRF framework generalizes to any feedforward neural network but cannot be used for recurrent networks. Feedforward models are limited in capturing long-range temporal dependencies. However, only small differences were found between feedforward and recurrent networks (1% in HG, 3% in STG), and recent feedforward extensions (dilated convolution, temporal convolutional networks) can implement long-duration receptive fields. The DSTRF method would seamlessly generalize to these architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 honestly discuss limitations and extensions. The generalizability (C97) and limitation to feedforward networks (C98-C99) are clearly stated. The empirical comparison with recurrent networks (C100) provides important context showing the limitation is not severe for this dataset. The discussion of future extensions (C101-C102) is appropriately speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The proposed framework combines the ability to capture arbitrary stimulus-response mappings (as DNNs are universal function approximators) with model interpretability, addressing the major drawback of DNNs (analytical intractability). This data-driven method reveals novel nonlinear properties of cortical speech representation and demonstrates the critical need for more complete and interpretable encoding models of neural processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 provide appropriate framing of the contribution. The characterization of DNNs as universal approximators (C105) and their interpretability limitation (C106-C107) is well-established. The claim that the framework addresses both goals (C103, C108) is supported by the results showing improved prediction accuracy and the interpretable DSTRF analysis. The broader implications (C109) follow logically from the findings.",
+    "result_type": "MAJOR"
+  }
+]

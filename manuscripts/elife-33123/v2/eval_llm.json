@@ -1,0 +1,178 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C85"
+    ],
+    "result": "Expectation and repetition suppression have separable effects on neural representations of visual orientation. Unexpected stimuli showed significantly enhanced orientation selectivity (79-185 ms post-stimulus, p<0.0001), while repetition suppression had no effect on orientation selectivity despite reducing overall neural response amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support this result: forward encoding analysis (C58), backward decoding (C72-73), control analyses with different baselines (C66), and cross-temporal generalization (C81). The orthogonal experimental design (C38) allows clean separation of the two factors, and the absence of interactions (C48, C70, C71) supports independence. Statistical testing with appropriate corrections was applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C87",
+      "C91",
+      "C92"
+    ],
+    "result": "The effect of expectation on orientation selectivity operates through gain modulation rather than sharpening of tuning. Unexpected stimuli showed significantly higher amplitude (M=0.67 vs M=0.41, p=0.005) but similar tuning width (M=29.62\u00b0 vs M=26.72\u00b0, p=0.45) compared to expected stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Gaussian fitting analysis directly tested sharpening vs gain hypotheses by examining both amplitude and width parameters. The significant amplitude difference with no width difference (C62, C63) provides clear evidence for gain modulation. This is further supported by the lack of effects on other Gaussian parameters (C60, C61) and consistency across control analyses (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C82",
+      "C83",
+      "C88",
+      "C136"
+    ],
+    "result": "The neural representation of unexpected stimuli is transiently reactivated at approximately 200-400 ms post-stimulus onset. Cross-temporal generalization showed that on-axis orientation selectivity for unexpected stimuli generalized off-axis at 300-400 ms (cluster p=0.01), suggesting feedback-driven updating of sensory priors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the cross-temporal generalization data (C82) shows significant off-axis generalization, the interpretation that this reflects feedback-driven prior updating (C31, C83, C84, C88) is speculative. The temporal pattern is consistent with this interpretation, but alternative explanations (e.g., sustained processing, recurrent dynamics) are not ruled out. The claim requires additional evidence such as manipulation of feedback pathways or direct measurement of inter-areal communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Backward decoding analysis confirmed that unexpected stimuli are classified more accurately than expected stimuli (F(1,14)=76.42, p<0.00001), with no effect of repetition (F(1,14)=0.027, p=0.87) and no interaction (F(1,14)=2.52, p=0.13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The backward decoding provides independent validation of the forward encoding results using a different analytical approach. The convergence of findings across methods (C76) strengthens confidence that the effects reflect genuine differences in neural representation rather than method-specific artifacts. Statistical tests are appropriate for the design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Standard ERP analysis revealed significant repetition suppression (79-230 ms and 250-540 ms, cluster p<0.025) and expectation effects (79-130 ms, cluster p<0.025) over occipital-parietal electrodes, with no interaction between factors. Peak analysis showed repetition suppression in P1 (t(14)=3.03, p=0.009) and expectation effects in N1 (t(14)=5.75, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings replicate well-established ERP effects (C41, C45 cite extensive prior work) and provide validation that the experimental manipulation was effective. The cluster-based permutation testing with appropriate corrections and the convergence with prior literature support these claims. The absence of interaction (C48) is critical for the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Forward encoding modeling successfully reconstructed orientation-selective responses from multivariate EEG patterns, with significant orientation tuning from ~50 to ~470 ms post-stimulus (peak 120-250 ms), driven primarily by occipital-parietal electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The forward encoding approach is well-established (C26, C27) and the results show clear orientation selectivity above chance (C54, Figure 3C). The spatial distribution (C55) is consistent with known visual processing regions and prior M/EEG decoding studies (C107). This validates the methodological approach for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Control analysis using an alternative baseline period (-100 to 0 ms before the first Gabor) replicated the main findings: unexpected stimuli showed greater orientation selectivity (p=0.02), with no effect of repetition (p=0.64) and no effect on tuning width (p=0.44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control analysis addresses a potential confound regarding baseline-dependent expectation templates (mentioned in relation to Kok et al. 2017). The replication of key findings with a baseline period that cannot contain orientation-specific expectations (C66) rules out this alternative explanation and strengthens confidence in the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Cross-temporal generalization analysis revealed dynamic orientation representations with optimal on-axis selectivity between 100-300 ms and significant off-axis selectivity from 100-500 ms. Repetition suppression did not affect temporal generalization, while unexpected stimuli showed significantly more on-axis selectivity (cluster p=0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-temporal generalization approach is well-established (citations to King & Dehaene 2014, etc.) and provides insight into temporal stability of representations. The findings are internally consistent with the main results and use appropriate statistical testing. The lack of repetition effects (C79) and presence of expectation effects (C81) align with the primary conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The current findings differ from Kok et al. (2012, 2017), who found sharpening for expected stimuli using cross-modal (auditory-visual) cues. The authors speculate this difference may relate to within- vs. cross-modal prediction mechanisms or local vs. global prediction types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the comparison with prior work is accurate (C94-C97), the proposed explanations (C98-C100) are explicitly speculative. The authors acknowledge this uncertainty and suggest future work is needed (C103). Without direct experimental manipulation of these factors, the explanation for the discrepancy remains unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The experimental design employed 15 observers across two EEG sessions, presenting pairs of Gabors (100 ms duration, 600 ms SOA) that either repeated or alternated in orientation. Block-wise manipulation (80/20% contingencies) created orthogonal repetition and expectation conditions, with randomized orientation sequences to limit accumulated adaptation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described and appropriate for testing the research questions. The orthogonal design (C38) is critical for separating repetition and expectation effects. Sample size (n=15) is justified by comparison to prior work (mentioned in Methods). The randomization (C37) addresses potential confounds from accumulated effects.",
+    "result_type": "MINOR"
+  }
+]

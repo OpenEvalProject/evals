@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C13",
+      "C27",
+      "C28",
+      "C51"
+    ],
+    "result": "The manuscript provides background on TCR biology, including the structure of TCRs (\u03b1 and \u03b2 chains), the V(D)J recombination process, thymic selection, and the clonal selection mechanism of immune memory. These claims establish the biological context for the computational modeling work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13, C27-C28, and C51 are well-established facts about TCR biology that are appropriately cited or presented as general knowledge. These provide necessary background context and are not novel findings of this work. The claims are consistent with established immunology literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C14"
+    ],
+    "result": "The manuscript cites prior work demonstrating that amplified TCR sequences indicate functional importance (e.g., targeting pathogens), that V(D)J recombination biases explain TCR sharing between individuals, and that previous approaches used probabilistic graphical models with selection factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, and C14 appropriately cite prior work (Pogorelyy et al., Emerson et al., Elhanati et al.) to establish the scientific context and motivation for the current study. These are accurate representations of prior findings based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Two VAE models were developed: a 'basic' model without germline gene information and a 'count_match' model incorporating germline amino acid sequences and matching criteria. OLGA.Q was used as a baseline, combining OLGA recombination model with a simplified selection model parameterized by ~14,000 parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe the methodological approach clearly. The model architectures are documented in supplementary figures, and the OLGA.Q baseline is appropriately described with parameter counts. The methods are sufficiently detailed for the results presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "VAE models can perform accurate cohort frequency estimation and generalize well to unseen sequences. PVAE probabilities for VAE-generated sequences closely follow test sequences, while OLGA.Q-generated sequences receive lower PVAE scores, indicating VAEs learn characteristics not captured by OLGA.Q.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C36-C38 are supported by Figure 2 (frequency estimation with R\u00b2=0.442 for VAE vs 0.258 for OLGA.Q) and Figure 4 (showing PVAE distributions). The generalization claim is substantiated by similar performance on train and test sets. Statistical measures are provided to support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "VAE models learn the rules of VDJ recombination, as evidenced by their ability to generate sequences with POLGA.Q distributions comparable to real sequences. Surprisingly, the count_match model showed only minimal improvement over the basic model despite encoding germline information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C32-C35 are supported by Figure 3, which shows that VAE-generated sequences have POLGA.Q distributions similar to test sequences. The surprising finding that count_match offers minimal improvement (C35) is clearly stated and supported by the data, though the lack of statistical testing of this difference is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "VAE models generalize well to unseen sequences and can distinguish between real sequences and OLGA.Q-generated sequences based on PVAE scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by Figure 4, showing that VAE-generated and test sequences have similar PVAE distributions, while OLGA.Q sequences have consistently lower PVAE. This demonstrates both generalization (no memorization) and discriminative ability. The 50/50 train-test split methodology supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "VAE-generated sequences have characteristics similar to real sequences across multiple summary statistics. All models succeeded on J gene frequencies, but VAE models (especially basic) performed worse on V gene frequencies. OLGA.Q performed better on CDR3 length while VAEs captured nearest-neighbor distance distributions correctly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C50 are supported by Figure 5 and supplementary figures showing divergence metrics across multiple summary statistics. The mixed performance (success on some metrics, worse on others) is honestly reported. However, the lack of statistical significance testing and the qualitative nature of some comparisons ('perhaps doing better') introduce some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The VAE latent space embedding is structured according to V and J gene identity, with each determining separate axes in PCA projection. When restricting to the most popular V and J genes, CDR3 length becomes an important determinant of embedding location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by Figure 6 and supplementary figures showing clear separation by V and J genes in PCA space, and by CDR3 length when restricted to specific V/J combinations. The visual evidence is compelling and the hierarchical structure of the embedding is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The manuscript provides detailed methodological information including data sources, preprocessing steps, sequence encoding schemes, model architectures, training procedures, hyperparameter selection (\u03b2=0.75), importance sampling parameters (500 iterations), and OLGA.Q implementation details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C80 provide comprehensive methodological details that are clearly stated and appropriately documented. The encoding schemes, model architectures, and training procedures are sufficiently detailed. The choice of \u03b2=0.75 is justified by empirical testing shown in Figures 8-9. These methodological claims are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The models have important limitations: they are not directly interpretable (as typical for neural networks), were not engineered with biological mechanism in mind, operate on amino acids rather than nucleotides (thus cannot directly model VDJ recombination), and PVAE is computationally more expensive than POLGA.Q.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 honestly acknowledge important limitations of the approach. These are reasonable and accurate assessments. The limitation that amino acid models cannot directly shed light on nucleotide-level recombination (C83) is particularly important and appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The basic model without germline information performs very similarly to count_match with germline information, even when evaluated by VDJ recombination likelihood. This suggests that with sufficient data, focus should be on density estimation rather than incorporating biological knowledge into deep learning models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is supported by the data showing minimal difference between basic and count_match models. However, C86 is speculative ('may indicate') and represents an inference that may be premature. The conclusion that biological knowledge is unnecessary is not definitively established\u2014alternative explanations include insufficient model capacity, suboptimal encoding of biological knowledge, or that the specific biological knowledge encoded was not the most relevant. Additional experiments would be needed to support this strong conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The methods apply to TCR \u03b1 chains without modification. Contrasting \u03b1 and \u03b2 chains may yield insights, and the most interesting insights will come from jointly modeling paired \u03b1\u03b2 TCR sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are reasonable forward-looking statements. C87 is a logical inference given that \u03b1 chains undergo similar (though not identical) recombination. C88-C89 are appropriately framed as speculation about future work rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,981 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The insular cortex (IC) and central amygdala (CE) are functionally coupled in resting state fMRI in wild-type mice.",
+    "claim_type": "EXPLICIT",
+    "source": "Seed-based brain-wide correlation of the IC blood oxygenation level dependent signal in wild-type mice revealed functional coupling of the IC to the CE (Figure 1Ai top, n = 4; see Figure 1\u2014figure supplement 1A, B for seed placement/correlation matrix). Conversely, CE seed-based analysis showed coupling with the anterior (aIC) and the posterior (pIC) portion of the IC (Figure 1Ai bottom).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by resting state fMRI data showing seed-based correlations between IC and CE, with reference to Figure 1Ai and supplementary figures.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The IC-CE functional network includes the nucleus basalis of Meynert (NBM) as a potential relay.",
+    "claim_type": "EXPLICIT",
+    "source": "Intriguingly, this network includes the NBM as a potential relay between CE and IC (Figure 1Aii, Figure 1\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by network visualization showing connectivity between IC, CE, and NBM in resting state fMRI data.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "CS information increases in IC and CE over the course of Pavlovian learning compared to shuffled data.",
+    "claim_type": "EXPLICIT",
+    "source": "By iteratively drawing random neurons from each population and stage, we found that information on CSs increased in IC and CE over time compared to shuffled data (Figure 1Ci, Di for mean decoder accuracy of R- and F-CS within each stage and neuronal population; see Figure 1\u2014figure supplement 7A for valence-resolved decoding).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by decoder accuracy analysis showing increased CS information across learning stages in IC and CE populations.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "IC subregions discriminate between R-CS and F-CS at habituation, which improves further after conditioning.",
+    "claim_type": "EXPLICIT",
+    "source": "IC subregions, CESST and CEm discriminated both CSs at habituation, which improved further after conditioning for the IC (lower accuracy \u2013 lower similarity, Figure 1\u2014figure supplement 7Bi, ii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by CS-specific classifier analysis showing discrimination between R-CS and F-CS in IC subregions.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "CEPKC\u03b4 does not initially differentiate between CSs at habituation but acquires discrimination after learning.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, CEPKC\u03b4 did not initially differentiate between CSs, but acquired discrimination after learning (Figure 1\u2014figure supplement 7Bii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by classifier analysis showing CEPKC\u03b4 discrimination develops during learning.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The IC shows overlapping CS representations at habituation, which separate after conditioning at recall.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, we found that the IC shows overlapping CS representations at habituation, which separate after conditioning at recall for IC and CEPKC\u03b4 (Figure 1Cii, Dii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by cross-CS decoder analysis showing changes in CS representation similarity across learning stages.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The IC projects US properties onto the respective CS during learning.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the IC projected US properties onto the respective CS (higher accuracy \u2013 higher similarity, Figure 1Ciii), potentially endowing CS representations with value.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer learning analysis where a US-trained classifier successfully decodes CS activity in IC.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "CESST explicitly transfers US properties onto the CS during learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, CE subpopulations mapped US properties differentially. While CESST explicitly transferred US properties onto the CS, US and CS features in CEPKC\u03b4 did not share representations, and CEm remained neutral with learning (Figure 1Diii; this pattern is consistent across valences, see valence-resolved transfer in Figure 1\u2014figure supplement 7Cii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer learning analysis showing differential US-to-CS mapping across CE subpopulations.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "US and CS features in CEPKC\u03b4 do not share representations during learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, CE subpopulations mapped US properties differentially. While CESST explicitly transferred US properties onto the CS, US and CS features in CEPKC\u03b4 did not share representations, and CEm remained neutral with learning (Figure 1Diii; this pattern is consistent across valences, see valence-resolved transfer in Figure 1\u2014figure supplement 7Cii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer learning analysis showing lack of US-to-CS mapping in CEPKC\u03b4.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "IC subregions dissociate the primary valence of R-US and F-US, with differential population responses in aIC and pIC.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, IC subregions dissociated the primary valence of both USs, as indicated by differential population responses to R-US and F-US in aIC and pIC (Figure 1\u2014figure supplement 5B). This result highlights a positive to negative valence gradient along the IC antero-posterior axis.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by PETH analysis showing differential US responses across IC subregions.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "There is a positive to negative valence gradient along the IC antero-posterior axis.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, IC subregions dissociated the primary valence of both USs, as indicated by differential population responses to R-US and F-US in aIC and pIC (Figure 1\u2014figure supplement 5B). This result highlights a positive to negative valence gradient along the IC antero-posterior axis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is inferred from differential US responses across aIC and pIC, suggesting a spatial organization of valence processing.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The magnitude of US responses in IC correlates with later task performance at recall.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the magnitude of US responses in IC correlates with later task performance at recall (Figure 1\u2014figure supplement 8, see 'Neuronal responses to task stimuli' in Appendix 1 for details).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by correlation analysis between US response magnitude and behavioral performance.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "All CE populations respond to both R-US and F-US.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike the IC, all CE populations responded to both USs (Figure 1\u2014figure supplement 6B), suggesting that US responses in CE alone may not offer valence contrast for US discrimination, and thus are tuned to stimulus salience.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by PETH analysis showing US responses across all CE subpopulations.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "US responses in CE are tuned to stimulus salience rather than valence discrimination.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike the IC, all CE populations responded to both USs (Figure 1\u2014figure supplement 6B), suggesting that US responses in CE alone may not offer valence contrast for US discrimination, and thus are tuned to stimulus salience.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is inferred from the observation that CE populations respond to both US types without discrimination.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "CESST and CEm differentiate intrinsic CS salience at habituation.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, we propose a model wherein CESST and CEm differentiate intrinsic CS salience at habituation (Figure 1Dii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is part of a proposed model based on CS discrimination analysis at habituation.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Early CS salience in CEPKC\u03b4 is replaced by CS valence information in later learning stages.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, in this model, early CS salience in CEPKC\u03b4 is replaced by CS valence information in later learning stages, driving CS discrimination in CE (Figure 1Dii and Figure 1\u2014figure supplement 7Bii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is part of a proposed model based on changes in CS representation across learning stages in CEPKC\u03b4.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "aIC and pIC innervate CEl subpopulations symmetrically, with 92% of PKC\u03b4+ and 91% of SST+ neurons responsive to aIC input, and 100% of both populations responsive to pIC input.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that aIC and pIC innervate CEl subpopulations symmetrically (92% of PKC\u03b4+/91% of SST+ neurons responsive to aIC and 100% of PKC\u03b4+/SST+ neurons to pIC input) (Figure 2B and 'IC\u2013CE circuit architecture' in Appendix 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by slice electrophysiology data showing synaptic connectivity between IC and CE subpopulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Correct behavioral decisions are associated with significant information transfer from IC to CE.",
+    "claim_type": "EXPLICIT",
+    "source": "This analysis revealed significant information transfer from IC to CE for correct behavioral decisions (Figure 2Ci). Specifically, a subnetwork-specific transfer from aIC to CEPKC\u03b4 and CESST indicated correct port visits (Figure 2Ci green), while a transfer from pIC to CESST indicated correct freezing onsets (Figure 2Ci blue).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer entropy analysis showing directional information flow during correct behavioral episodes.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Transfer from aIC to CEPKC\u03b4 and CESST indicates correct port visits.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, a subnetwork-specific transfer from aIC to CEPKC\u03b4 and CESST indicated correct port visits (Figure 2Ci green), while a transfer from pIC to CESST indicated correct freezing onsets (Figure 2Ci blue).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer entropy analysis during reward-related behavior.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Transfer from pIC to CESST indicates correct freezing onsets.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, a subnetwork-specific transfer from aIC to CEPKC\u03b4 and CESST indicated correct port visits (Figure 2Ci green), while a transfer from pIC to CESST indicated correct freezing onsets (Figure 2Ci blue).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer entropy analysis during fear-related behavior.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Top-down information transfer from IC to CE is absent in incorrect behavioral episodes occurring outside of CS presentation.",
+    "claim_type": "EXPLICIT",
+    "source": "This top-down information transfer was absent in incorrect behavioral episodes occurring outside of the CS presentation (Figure 2Cii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer entropy analysis comparing correct and incorrect behavioral episodes.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Optogenetic aIC-CE inhibition during CS periods throughout conditioning impairs conditioned responding, with lower port visits in RC and exacerbated freezing in FC compared to controls.",
+    "claim_type": "EXPLICIT",
+    "source": "Mice receiving aIC\u2013CE inhibition during CS periods throughout conditioning showed impaired conditioned responding, as indicated by a lower number of port visits in RC and exacerbated freezing in FC compared to control animals (Figure 2Dii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by behavioral data from optogenetic manipulation experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Optogenetic aIC-CE manipulation interferes with memory acquisition, as shown by impaired recall performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with the predicted effects of acute silencing, the optogenetic aIC\u2013CE manipulation interfered with memory acquisition (Figure 2Diii left; see Figure 2\u2014figure supplement 5B for raw data).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by behavioral data from manipulation-free recall sessions following optogenetic intervention.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Tonic pIC-CE silencing at conditioning results in robust impairment of memory formation, as indicated by lower conditioned responding at recall.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, tonic pIC\u2013CE silencing at conditioning resulted in a robust impairment of memory formation, as indicated by lower conditioned responding at recall (Figure 2Diii right; see Figure 2\u2014figure supplement 7A, B for learning curves/raw data).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by behavioral data from chemogenetic manipulation experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Correct conditioned responding is characterized by top-down transfer entropy from aIC to pIC.",
+    "claim_type": "EXPLICIT",
+    "source": "This analysis showed that correct conditioned responding is characterized by top-down TE from aIC to pIC (Figure 3Ai).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer entropy analysis during correct behavioral responses.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Transfer entropy from aIC to pIC is missing in unsuccessful trials.",
+    "claim_type": "EXPLICIT",
+    "source": "These characteristics were different in unsuccessful trials, where TE from aIC to pIC was missing (Figure 3Aii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer entropy analysis comparing successful and unsuccessful trials.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "During recall, stimulus-induced increase in spike-triggered average amplitude reveals oscillatory synchronization between aIC spikes and pIC LFP.",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, during recall, we observed a stimulus-induced increase in STA amplitude, revealing oscillatory synchronization (Figure 3Biii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by spike-triggered average analysis of simultaneous aIC-pIC recordings.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "At recall, CS-specific tuning of aIC spikes to pIC LFP occurs with maximum spike-field coherence at 33 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "However, at recall, we observed CS-specific tuning of aIC spikes to pIC LFP, with maximum SFC at 33 Hz (Figure 3Bv).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by spike-field coherence analysis showing frequency-specific synchronization.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Spike-field coherence is stronger in the negative valence domain, indicating asymmetry in aIC-pIC communication.",
+    "claim_type": "EXPLICIT",
+    "source": "SFC was stronger in the negative valence domain, indicating an asymmetry in aIC\u2013pIC communication (Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by valence-resolved spike-field coherence analysis.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Chemogenetic inhibition of the aIC-pIC projection during training impairs Pavlovian fear learning.",
+    "claim_type": "EXPLICIT",
+    "source": "This specific inhibition of the projection from aIC to pIC during training impaired Pavlovian fear learning (Figure 3Cii, see Figure 2\u2014figure supplement 7Aiii,iv, B for learning curve/raw data).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by behavioral data from chemogenetic manipulation experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Feature importance for decoding in aIC is reduced in incorrect compared to correct CS presentations.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, feature importance for decoding in aIC was reduced in incorrect compared to correct CS presentations (Figure 3Di), as well as for CS-unspecific behavioral episodes (Figure 3Dii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by random forest feature importance analysis comparing correct and incorrect trials.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Transfer entropy maps during CS presentations in early learning show significant bottom-up transfer from CE to IC.",
+    "claim_type": "EXPLICIT",
+    "source": "TE maps during these CS presentations show significant bottom-up transfer from CE to IC, indicating potential recruitment of IC by CE (Figure 4A; see 'Control' in Figure 2\u2014figure supplement 2Aiii for RF decoder accuracy and feature importance).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer entropy analysis during early conditioning stages.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Chronic CENMDA reduces NBM resting-state functional connectivity to the right aIC compared to the CESHAM group.",
+    "claim_type": "EXPLICIT",
+    "source": "NBM-seeded global brain correlations in the CENMDA group showed decreased coupling to the right aIC, suggesting that CE input to NBM selectively triggers NBM\u2013aIC interactions (Figure 4B; see Figure 4\u2014figure supplement 1C for seed placement).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by resting state fMRI data comparing CE lesion and sham groups.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "CEl subpopulations primarily innervate putatively local parvocellular interneurons versus corticopetal magnocellular neurons in NBM, supporting a disinhibitory mechanism.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that CEl subpopulations, which are mostly GABAergic (Cassell et al., 1999), primarily innervate putatively local parvocellular (pc) interneurons (IN) versus corticopetal magnocellular (mc) neurons, supporting a disinhibitory mechanism of CE input gating NBM output (Figure 4C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by slice electrophysiology data and cites previous literature on CE GABAergic nature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "CEPKC\u03b4-NBM stimulation elicits pronounced LFP depolarization in aIC and, to a lesser extent, in pIC.",
+    "claim_type": "EXPLICIT",
+    "source": "Animals received 5 ms 470 nm laser pulses at 0.2 Hz in an open-loop setting while freely moving, which elicited pronounced LFP depolarization in aIC, and, to a lesser extent, in pIC (Figure 4Dii top/bottom; comparison of minima of aIC and pIC in Figure 4Diii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by in vivo optogenetic stimulation data with LFP recordings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "CEPKC\u03b4-NBM stimulation increases single unit spiking in the IC.",
+    "claim_type": "EXPLICIT",
+    "source": "This stimulation also increased single unit spiking in the IC (Figure 4\u2014figure supplement 3), indicating that CE activity may recruit the IC.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by single unit recording data during optogenetic stimulation.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Systemic administration of the M1R antagonist telenzepine dampens CEPKC\u03b4-NBM-induced IC depolarization by approximately 50%.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that systemic administration of the muscarinic receptor 1 (M1R) antagonist telenzepine (TZP) dampened CEPKC\u03b4\u2013NBM-induced IC depolarization by approximately 50%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by pharmacological manipulation data during optogenetic stimulation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "M1R antagonism abolishes CS-induced spike-field coherence between aIC and pIC.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that M1R antagonism abolished CS-induced SFC, indicating that cholinergic signaling via M1R mediates cortical gain control in the IC (Figure 4E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by spike-field coherence analysis following pharmacological manipulation.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Transfer entropy of the post-US period reveals recurrent dynamics between and within CE populations, as well as bottom-up TE from pIC to aIC.",
+    "claim_type": "EXPLICIT",
+    "source": "TE of the post-US period revealed recurrent dynamics between and within CE populations, as well as bottom-up TE from pIC to aIC. Interestingly, we found bottom-up recruitment of the CEPKC\u03b4\u2013aIC pathway, which linked hierarchies during an instructive US (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer entropy analysis during the post-US period.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "CS-aligned transfer entropy networks during habituation are remarkably similar to US-aligned networks at conditioning.",
+    "claim_type": "EXPLICIT",
+    "source": "CS-aligned TE networks during habituation were remarkably similar to US-aligned networks at conditioning, suggesting that the CE\u2013NBM\u2013aIC pathway was engaged under conditions of value ambiguity (Figure 5B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by comparison of transfer entropy networks across different task conditions.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Optogenetic inhibition of CEPKC\u03b4-NBM during CS presentations at conditioning results in aberrant Pavlovian associations during manipulation-free recall.",
+    "claim_type": "EXPLICIT",
+    "source": "Mice receiving optogenetic inhibition of CEPKC\u03b4\u2013NBM during all CS periods of conditioning displayed aberrant Pavlovian associations during manipulation-free recall. This was evident from the low number of port visits and reduced freezing levels compared to control animals (Figure 5Dii; see Figure 5\u2014figure supplement 3A, B for learning curves/raw data).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by behavioral data from optogenetic manipulation experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Optogenetic interference with the CESST-NBM pathway has no effect on Pavlovian learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Of note, optogenetic interference with the CESST\u2013NBM pathway had no effect on Pavlovian learning (Figure 5\u2014figure supplement 2; Figure 5\u2014figure supplement 3C, D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by behavioral data showing no effect of CESST-NBM manipulation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Silencing aIC impairs CS representation in CESST.",
+    "claim_type": "EXPLICIT",
+    "source": "Silencing the aIC impaired CS representation in CESST (Figure 5Eii), and CS discrimination by CEPKC\u03b4 to chance level (Figure 5Eiii and Figure 5\u2014figure supplement 5B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by neural decoding analysis during chemogenetic aIC silencing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Silencing aIC reduces CS discrimination by CEPKC\u03b4 to chance level.",
+    "claim_type": "EXPLICIT",
+    "source": "Silencing the aIC impaired CS representation in CESST (Figure 5Eii), and CS discrimination by CEPKC\u03b4 to chance level (Figure 5Eiii and Figure 5\u2014figure supplement 5B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by neural decoding analysis during chemogenetic aIC silencing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "In the absence of aIC function, CESST and CEPKC\u03b4 map US salience onto CS representations by default, obstructing stimulus discrimination by CEPKC\u03b4.",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, aIC silencing revealed a disinhibition of salience transfer from US to CS during conditioning, providing a potential mechanistic explanation for the role of IC\u2013CE pathways in Pavlovian learning (Figure 5Eiv; see Figure 5\u2014figure supplement 5C for valence-resolved transfer). More specifically, in the absence of aIC function, CESST and CEPKC\u03b4 map US salience onto CS representations by default, obstructing stimulus discrimination by CEPKC\u03b4.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by transfer learning analysis during aIC silencing showing altered US-to-CS mapping.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Successful aIC recruitment confers valence discrimination through CEPKC\u03b4.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, successful aIC recruitment confers valence discrimination through CEPKC\u03b4 (Figure 5Eiii, Figure 1Dii and Figure 5\u2014figure supplement 5Aii, B) to guide correct behavioral responding (Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is inferred from comparison of neural representations with and without aIC function.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The IC\u2194CE/NBM network is a distinct functional unit identified through brain-wide network analysis from high field small animal fMRI.",
+    "claim_type": "EXPLICIT",
+    "source": "Our study successfully integrated brain wide network analysis from high field small animal fMRI with circuit physiology, and thereby mapped the IC\u2194CE/NBM network as a distinct functional unit.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim summarizes the methodological approach and main finding of the study.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Stimulus salience at lower levels recruits top-level value representations in the IC associated with primary reinforcers.",
+    "claim_type": "EXPLICIT",
+    "source": "We established a process mechanism, wherein stimulus salience at lower levels recruits top-level value representations in the IC associated with primary reinforcers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim describes a proposed mechanism based on the experimental findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Information from IC feeds back to CE to update and reassemble the salience and valence dimensions of the CS to guide behavioral decisions.",
+    "claim_type": "EXPLICIT",
+    "source": "This information feeds back to CE to update and reassemble the salience and valence dimensions of the CS to guide behavioral decisions (Figure 5\u2014figure supplement 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim describes a proposed mechanism based on the experimental findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The CE-NBM pathway could use precision signaling to gate top-down models from higher order areas (aIC) to primary sensory areas (pIC) for sensory learning.",
+    "claim_type": "EXPLICIT",
+    "source": "In this regard, the CE\u2013NBM pathway could use precision signaling to gate top-down models from higher order areas (aIC) to primary sensory areas (pIC) for sensory learning (Feldman and Friston, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is a speculative interpretation of the findings, citing a theoretical framework.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Acetylcholine can favor communication from associative to primary sensory cortex, as shown in vitro.",
+    "claim_type": "EXPLICIT",
+    "source": "In vitro experiments indicate that acetylcholine can favor communication from associative to primary sensory cortex (Roopun et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous in vitro research to support the proposed mechanism.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Basal forebrain cholinergic neurons rapidly respond to reinforcement feedback in both valence domains.",
+    "claim_type": "EXPLICIT",
+    "source": "Basal forebrain cholinergic neurons rapidly respond to reinforcement feedback in both valence domains (Hangya et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research on NBM cholinergic neuron responses.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Disrupted functional connectivity in the IC\u2194CE/NBM network may contribute to intolerance to uncertainty observed in autism and related psychiatric conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Since CE\u2013NBM signaling promotes top-down information flow from aIC to pIC, we propose that disrupted functional connectivity in the IC\u2194CE/NBM network likely contributes to these conditions. Such hierarchical dysfunction may cause the inability to resolve uncertainty (Figure 5D), as seen in autism (Vasa et al., 2018) and comorbid anxiety (Simonoff et al., 2008).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is a speculative interpretation linking the findings to psychiatric conditions, citing relevant literature.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Individuals diagnosed with autism rely less on prior beliefs, suggesting they may predominantly utilize sensory bottom-up signaling for perception.",
+    "claim_type": "EXPLICIT",
+    "source": "Individuals diagnosed with autism rely less on prior beliefs, suggesting that they may predominantly utilize sensory bottom-up signaling for perception (Lawson et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research on autism to support the interpretation of the findings.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The magnitude of US responses along an antero-posterior valence gradient in the IC determines CS responses and conditioned responding at recall.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, the magnitude of US responses along an antero-posterior valence gradient in the IC (Figure 1\u2014figure supplement 8B) determines CS responses and conditioned responding at recall (Figure 1\u2014figure supplement 8A,C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim describes a relationship between US responses and behavioral outcomes based on the data.",
+    "evidence_type": [
+      "DATA",
+      "IMAGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The IC not only represents sensory cues but also generates CS-associated allostatic states, instructing lower hierarchies to guide behavioral responding and memory formation.",
+    "claim_type": "EXPLICIT",
+    "source": "In this process, the IC not only represents sensory cues (Livneh et al., 2017), but also generates CS-associated allostatic states, instructing lower hierarchies to guide behavioral responding and memory formation (Figure 2Ci).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is an interpretation of the findings, citing previous work on IC sensory representation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The human IC couples to the central amygdala (CE) in resting state functional MRI.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the human IC couples to the central amygdala (CE) in resting state functional MRI (fMRI) (Gorka et al., 2018; Schultz et al., 2012), with neurons in both areas acquiring CS responses over the course of Pavlovian learning (Shabel and Janak, 2009; Vincis and Fontanini, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous human fMRI studies showing IC-CE coupling.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Neurons in both IC and CE acquire CS responses over the course of Pavlovian learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the human IC couples to the central amygdala (CE) in resting state functional MRI (fMRI) (Gorka et al., 2018; Schultz et al., 2012), with neurons in both areas acquiring CS responses over the course of Pavlovian learning (Shabel and Janak, 2009; Vincis and Fontanini, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research showing CS-related neural responses in IC and CE.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The CE serves as a major gate for conditioned behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "As the CE serves as a major gate for conditioned behavior (Goosens and Maren, 2001; Haubensak et al., 2010; Li et al., 2013), the IC and CE may constitute components of a dedicated cortico-limbic network for affective decision-making and Pavlovian learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research establishing the CE's role in conditioned behavior.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Recent studies have established IC and CE circuitry as a hub for encoding and controlling affective states.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, recent studies have established IC and CE circuitry as a hub for encoding and controlling affective states (Gehrlach et al., 2019; Schiff et al., 2018; Venniro et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites recent research on IC-CE circuitry in affective processing.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The CE exhibits cytoarchitectural and functional properties of the striatum.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the CE exhibits cytoarchitectural (McDonald, 1982) and functional (Kim et al., 2017) properties of the striatum, and analogies in hierarchical organization between the motor and limbic system have been recognized (Barrett and Simmons, 2015; Shipp et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research on CE cytoarchitecture and function.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Hierarchical interactions might be essential for affective learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, as in cortico-striatal motor processing (Turner and Desmurget, 2010), hierarchical interactions might be essential for affective learning (Karalis et al., 2016; Likhtik et al., 2014; Saez et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research suggesting the importance of hierarchical interactions in affective learning.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Aberrations in hierarchical processing may underlie the affective aspects of conditions like autism, due to dysfunctional network integration.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, aberrations in hierarchical processing may underlie the affective aspects of conditions like autism, due to dysfunctional network integration (Hong et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research linking hierarchical processing dysfunction to autism.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The updating of CS value is gated depending on the uncertainty about its affective consequences, according to Pavlovian learning theories.",
+    "claim_type": "EXPLICIT",
+    "source": "On the one hand, Pavlovian learning theories posit that the updating of CS value is gated, depending on the uncertainty about its affective consequences (Pearce and Hall, 1980; Rescorla and Wagner, 1972).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites classical Pavlovian learning theories.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The nucleus basalis of Meynert (NBM) has an established role in modulating cortical arousal and plasticity.",
+    "claim_type": "EXPLICIT",
+    "source": "In the context of IC\u2013CE circuitry, the basal forebrain, in particular the nucleus basalis of Meynert (NBM), is a likely gate, given its established role in modulating cortical arousal and plasticity (Puckett et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research on NBM function.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "CS value can be constructed from its underlying salience and valence dimensions.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, CS value can be constructed from its underlying salience and valence dimensions (Cooper and Knutson, 2008; Kahnt and Tobler, 2017; Lin and Nicolelis, 2008), analogous to affective states (Calder et al., 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research on the dimensional structure of value and affect.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Signatures of salience and valence are found across both IC and CE.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, signatures of salience and valence are found across both IC and CE (Shabel and Janak, 2009; Uddin, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites previous research showing salience and valence representations in IC and CE.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  }
+]

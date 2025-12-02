@@ -1,0 +1,1925 @@
+{
+  "submission": {
+    "id": "c0c5c010-62ee-47cd-904f-38416ce1b094",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:58:10.485043Z",
+    "updated_at": "2025-12-02T19:58:10.485043Z"
+  },
+  "content": [
+    {
+      "id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "submission_id": "c0c5c010-62ee-47cd-904f-38416ce1b094",
+      "content_type": "manuscript",
+      "content_text": "# Global landscape of phenazine biosynthesis and biodegradation reveals species-specific colonization patterns in agricultural soils and crop microbiomes\n\n## Authors\n\n- Daniel Dar<sup>1</sup> ([ORCID: 0000-0002-6650-5488](https://orcid.org/0000-0002-6650-5488))\n- Linda S Thomashow<sup>3</sup>\n- David M Weller<sup>3</sup>\n- Dianne K Newman<sup>1</sup> ([ORCID: 0000-0003-1647-1918](https://orcid.org/0000-0003-1647-1918)) \u2020\n\n### Affiliations\n\n1. Division of Geological and Planetary Sciences, California Institute of Technology Pasadena United States\n2. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States\n3. Wheat Health, Genetics and Quality Research Unit, USDA Agricultural Research Service Pullman United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhenazines are natural bacterial antibiotics that can protect crops from disease. However, for most crops it is unknown which producers and specific phenazines are ecologically relevant, and whether phenazine biodegradation can counter their effects. To better understand their ecology, we developed and environmentally-validated a quantitative metagenomic approach to mine for phenazine biosynthesis and biodegradation genes, applying it to >800 soil and plant-associated shotgun-metagenomes. We discover novel producer-crop associations and demonstrate that phenazine biosynthesis is prevalent across habitats and preferentially enriched in rhizospheres, whereas biodegrading bacteria are rare. We validate an association between maize and Dyella japonica, a putative producer abundant in crop microbiomes. D. japonica upregulates phenazine biosynthesis during phosphate limitation and robustly colonizes maize seedling roots. This work provides a global picture of phenazines in natural environments and highlights plant-microbe associations of agricultural potential. Our metagenomic approach may be extended to other metabolites and functional traits in diverse ecosystems.\n\n## Introduction\n\nPhenazines are heterotricyclic N-containing metabolites mainly produced by bacteria in soil and plant-root microbiomes (Biessy and Filion, 2018; Mavrodi et al., 2010), though some are also important in chronic human infections (Sismaet et al., 2016; Wilson et al., 1988). Members of this diverse family of redox-active metabolites act as broad-spectrum antibiotics by generating toxic reactive oxygen species (ROS) as well as interfering with cellular respiration chains (Baron et al., 1989; Perry and Newman, 2019). In addition to their activity as antibiotics, phenazines can benefit their producers in other ways: promoting survival under anoxic conditions (Glasser et al., 2014; Wang et al., 2010), facilitating biofilm development (Dietrich et al., 2013) and iron acquisition (Wang et al., 2011), and increasing the fitness of phenazine-producing (phz+) fluorescent pseudomonads in the plant rhizosphere (LeTourneau et al., 2018; Mazzola et al., 1992).\n\nIn the context of the plant microbiome, phenazines produced by fluorescent pseudomonads have been shown to protect major crops such as wheat (Chen et al., 2018; Thomashow et al., 1990) and tomato (Chin-A-Woeng et al., 1998) from disease-causing fungi and water molds. Moreover, naturally produced phenazine 1-carboxylic acid (PCA) measured in commercial wheat rhizospheres reached levels as high as 1 \u00b5g PCA per gram fresh roots, and strongly correlated with the number of cultured phz+ pseudomonads (Mavrodi et al., 2012). Nonetheless, the effective concentration of phenazines is likely to be considerably greater within soil microenvironments. Interestingly, the pathogenic fungus, Fusarium oxysporum f. sp. radicis-lycopersici, was previously shown to colonize similar tomato root zones as plant-growth promoting phz+ pseudomonads, where they likely compete for plant-root exudates (Bolwerk et al., 2003). This evidence for \u2018right place at the right time\u2019 niche overlap provides a potential hint as to how phenazines, and possibly other natural antibiotics, can limit pathogen proliferation, even at low producer abundances and in large and complex environments such as plant roots. Phenazine-producing bacteria are positively correlated with warmer and more arid soils and lower species diversity (Maestre et al., 2015; Mavrodi et al., 2012), suggesting that in a warming climate, phenazine production may impact the composition of the microbial communities associated with certain crops. However, phenazines can also be degraded and consumed by other soil bacteria (Costa et al., 2015; Yang et al., 2007). The balance of phenazine production and degradation will ultimately dictate the extent to which phenazines will have agricultural relevance, yet the extent to which these processes are potentially important in agricultural environments is currently unknown.\n\nSince their discovery and characterization in pseudomonads, genomic signatures of phenazine biosynthesis have been detected in a large set of phylogenetically diverse bacteria (Hadjithomas et al., 2015; Mavrodi et al., 2010). Despite this diversity, all producer genomes contain a conserved set of core biosynthesis genes phzA/BCDEFG (Biessy and Filion, 2018; Mavrodi et al., 2010; Figure 1A). Together, these proteins synthesize one of two main phenazines that act as precursors for all other derivatives: PCA in pseudomonads and phenazine-1,6-dicarboxylic acid (PDC) in most other species (Figure 1B). Phenazine chemical diversity is determined by specific auxiliary genes, which modify and decorate the core phenazine structure. These modifications can strongly affect the toxicity spectrum and function of different phenazine species (Laursen and Nielsen, 2004).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig1-v2.jpg)\n\n**Figure 1.:** (A) Genomic regions containing the core phenazine biosynthesis genes in diverse bacteria. Core biosynthesis genes (phzA/BCDEFG) are colored as shown in the legend, all other surrounding genes are depicted in gray. (B) Chemical structures of the main phenazine precursors, PCA and PDC. (C) Phylogenetic tree constructed using the concatenated phenazine-biosynthesis protein sequences. Phylum level is color coded according to the legend and specific clades are annotated around the tree (orders in black and genera in gray). Orange bars highlight Xanthomonadales and Burkholderiales species. Tree scale and bootstrap values are depicted in the figure.\n\nWhile the majority of phenazine research has focused on pseudomonads, the growing phylogenetic diversity of phenazine producers and metabolite variants that can be identified genomically suggests much remains to be learned. Importantly, the ecology of these metabolites in natural and agricultural environments is poorly understood. Furthermore, it is generally unknown which bacterial clades and phenazine derivatives are naturally associated with various major crops. While current culturing-based approaches work well for readily-culturable bacteria such as fluorescent pseudomonads, their ability to select for organisms representing the full phylogenetic diversity of phenazine producers is limited. Therefore, the development of quantitative and culture-independent methods is necessary to facilitate the discovery of novel plant-microbe associations between crops and phenazine producers.\n\nHere, we combine computational metagenomics with field and targeted laboratory experiments to quantitatively capture the global landscape of phenazine antibiotic biosynthesis and biodegradation in soil and plant-associated environments, with the aim of uncovering novel agriculturally promising, plant-microbe associations.\n\n## Results\n\n### Constructing a comprehensive phenazine biosynthesis reference database\n\nThe accumulation of shotgun-metagenomic sequencing data in public repositories over the last decade has provided a rich database from which to perform global analysis of phenazine bioproduction in soil and crop environments. Importantly, metagenomic data are particularly suitable for mining new associations between novel phenazine producers and major crops.\n\nBecause all known phenazine producers contain the core phenazine biosynthesis genes, phzA/BCDEFG, almost always in single-copy, we reasoned that given a sufficiently broad database of these proteins, we could accurately identify and enumerate the levels of phz+ bacteria via shotgun-metagenomics (Figure 1A). We constructed a comprehensive phzA/BCDEFG reference gene set by mining the Integrated Microbial Genomes (IMG), IMG-ABC biosynthetic gene cluster atlas (Hadjithomas et al., 2015), as well as by conducting iterative homology searches. During this analysis, we noticed that highly similar copies of the phzC gene were common in non-producer genomes and therefore removed this gene from our analysis. In total, we assembled a list of 181 phenazine producer genomes (Supplementary file 1). The final reference set contained 100 proteobacterial and 81 actinobacterial genomes representing a total of 15 phylogenetic Orders, exemplifying the diversity of phenazine producers (Figure 1C; Supplementary file 1).\n\nTo explore the evolutionary relationships between different phz+ bacteria, we constructed a phylogenetic tree using the above concatenated core-biosynthesis sequences. Notably, species organization in this tree substantially differ from the known phylogenetic relationship of phz+ bacteria in our database. While Pseudomonas species are highly clustered, other clades form surprising groupings. For example, phenazine-biosynthesis actinobacterial sequences of the Micrococcales order (e.g., Brevibacterium linens) are more similar to those from proteobacteria of the Enterobacterales, Myxococcales and Vibrionales orders (Figure 1C). In addition, Burkholderiales and Xanthomonadales are both embedded deep within the actinobacterial part of the tree rather than near other proteobacteria (Figure 1C). These results support and expand on previous smaller scale analyses made with the phzF gene (Mavrodi et al., 2010), and suggest that multiple horizontal gene transfer (HGT) events have likely shaped the evolution of phenazine biosynthesis.\n\n### A quantitative approach for measuring phz+ bacteria levels via shotgun-metagenomics\n\nWhile metagenomic sequencing reads can be translated and mapped against the protein database described above, extracting quantitative and ecologically intuitive information about phenazine producer abundance is not trivial. One major complication is the uncertainty regarding the composition of the background bacterial community as well as other confounding factors that vary among environments. For example, different environments may contain different bacterial titers and some samples, especially those extracted from eukaryotic hosts, can contain high and variable amounts of non-bacterial DNA (host DNA, sequencing artifacts, other microbes such as Fungi, Protists, Archaea etc.). This variability in \u2018effective coverage\u2019 confounds normalization by library coverage and thus limits comparison between samples. This issue can be overcome by enumerating the total number of reads that map to bacteria. However, most environments contain substantial amounts of bacterial DNA for which no reference genome exists.\n\nEmploying universal marker genes as a reference point for normalizing gene abundance was previously found to be effective in mitigating these potential issues (Manor and Borenstein, 2015). We therefore generated a second reference set representing \u2018total-bacteria\u2019 that is based on the bac120 genes previously used in phylogenetic classification (Parks et al., 2018). We selected the top 25 most ubiquitous single-copy genes in the bac120 set, all of which are estimated to appear in\u00a0>92.9% of known genomes (Supplementary file 2). For each such reference gene we acquired\u00a0~25,000 protein sequences from a comprehensive set of dereplicated genomes and assembled metagenomes (Parks et al., 2018). Together, these reference genes distill a metagenomic signal representing \u2018total-bacteria\u2019 in a manner that is robust to variation in community composition and stochastic parameters such as host DNA contamination.\n\nWe devised a computational procedure for estimating the percentage of phz+ bacteria out of all bacteria in a microbiome of interest (Figure 2A). In this approach, translated metagenomic sequencing reads are first mapped to a merged protein database that contains both phenazine biosynthesis and the \u2018total-bacteria\u2019 reference genes. For every gene (phenazine or reference) total read counts are normalized by the average gene size. A \u2018total-bacteria\u2019 score is then calculated by taking the median, size-normalized signal across all 25 reference genes. A similar median score is calculated across the six phenazine biosynthesis genes (merging phzA and phzB, which share highly similar sequences). Using the median in this analysis rather than the average provides robustness to non-specific signal (for example, cases where only one or two of the genes are highly abundant). The fraction of phz+ bacteria is calculated by dividing the phenazine-specific score by the total-bacteria score (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of the computational approach. Phenazine producer abundance is calculated using the median Reads Per Kilobase (RPK) levels. (B) Validation results using simulated communities. Box plots represent different producer combinations as indicated in the legend. Each boxplot represents data from simulations performed with 80% amino-acid identity threshold and across 5\u201320M library coverages (n\u00a0=\u00a048 per individual boxplot). The black bar represents the box median. (C) Accuracy in measuring relative abundance of multiple phz+ species in a mixed community. Y-axis shows the difference between known and estimated species abundance across the indicated library coverages, considering samples with\u00a0>0.1% phz+ bacteria. (D) Example of individual simulation results with two different phz+ bacteria. Similar heights of dark and light column portions represent good agreement between known and estimated levels. (E) Scatter plot depicting phenazine degrader (M. fortuitum CT6) frequency estimates at a gradient of known levels in simulated metagenomes. M. fortuitum levels are estimated using either phdA or podA genes, shown in pink and green, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Cross-validation of Simulated communities spiked with phz+ Streptomyces at different frequencies. The simulated metagenomic data were mapped against a database that does not contain the specific Streptomyces producer that was spiked-in and various percent amino-acid identity thresholds were tested (as indicated in the legend). (B) Simulations of all simulated communities using an 80% amino-acid identity threshold, separated by different library coverages.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Histogram shows the coefficient of variation (CV; standard deviation/mean) calculated using the 25 chosen bac120 reference genes across all analyzed samples in this study.\n\nWe validated this approach in silico by generating synthetic metagenomes constructed using phylogenetically diverse bacteria (Supplementary file 3). We then tested different library coverages (5, 10, 15 and 20 million reads), producer abundances (0\u20135% total phz+ bacteria) and common phz+ taxonomic groups (Pseudomonas and/or Streptomyces). For each condition (e.g., 1% Pseudomonas phz+ with a total library of 10 million reads) we conducted a dozen technical replicates, resulting a total of 1296 simulated communities. In addition, for each such technical replicate, the abundance of each non-producer species was randomly re-generated each time to better mimic natural variations.\n\nBecause environmental samples may contain phz+ bacteria with phzA/BDEFG protein sequences that are somewhat different from those in our reference set, we first tested the specificity of our approach at increasingly loose mapping stringencies (Figure 2\u2014figure supplement 1). Overall, we find strong and agreement between the \u2018ground-truth\u2019 producer levels and the results obtained using our approach, even at a mapping threshold of 80% amino-acid identity. These results indicate that this method has the potential to accommodate new genomes with substantial sequence variation, while maintaining a high degree of accuracy (Figure 2B; Figure 2\u2014figure supplement 1; R\u00a0=\u00a00.99; Pearson). Importantly, our simulations capture the total phz+ bacteria level even in communities that contain more than one producer (Figure 2B) and the relative proportions of these different phz+ bacteria are measured with low error (Figure 2C\u2013D). In addition, our approach could identify as little as 0.1% phz+ bacteria, even in relatively low coverage metagenomic samples (5\u201310M reads) and detected no producers in any of the negative controls (Figure 2B; Figure 2\u2014figure supplement 1).\n\nIn principle this approach should be readily generalizable to study other genes and functions beyond phenazine biosynthesis. By way of illustration, we assembled a third reference set containing the phenazine degradation genes: phdA (Costa et al., 2018) and podA (Costa et al., 2017) that enable mycobacteria to consume phenazines as a carbon source. We find that this approach accurately captures the levels of phz+ and phenazine-degrading bacteria (Mycobacterium fortuitum CT6) in the same simulated communities and across a wide range of phdA+/podA+ bacterial abundances, and library coverages (Figure 2E).\n\n### Field validation in the wheat rhizosphere\n\nWhile synthetic metagenomic data are essential for quantitative evaluation purposes, environmental samples are inherently more complex. We therefore sought to further test our approach under relevant field conditions. Wheat grown in the Inland Pacific Northwest, USA, is regularly colonized by phz+ fluorescent pseudomonads that can protect these crops from disease-causing fungi (Mavrodi et al., 2018; Mavrodi et al., 2013). Thus, this environment provides an optimal test bed, where our metagenomic analysis can be directly compared with targeted culturing results, and where the levels of phz+ bacteria potentially represent agriculturally meaningful levels.\n\nWe sampled 6-weeks-old wheat seedlings grown in a field at the Washington State University\u2019s Lind Agricultural Research Station in the Inland Pacific Northwest. As a reference, bulk field soil was collected between planted wheat rows (Figure 3A; Figure 3\u2014figure supplement 1). The number of phz+ pseudomonads was determined using a culturing-based approach and was estimated at 6.5 \u00d7 106 cfu/g roots in the wheat rhizosphere and at 1.6 \u00d7 103 cfu/g in bulk soil, in agreement with previous reports (Mavrodi et al., 2018). Metagenomic DNA was extracted from seedling rhizospheres (n\u00a0=\u00a05) and bulk field soil (n\u00a0=\u00a03) and shotgun-sequenced, producing 100 bp single-end reads. The resulting metagenomic sequences were then analyzed using the computational approach as described above (Figure 2A). In agreement with the culturing results, we find clear signal representing phz+ bacteria in these samples, with an average relative abundance of 1.1% (+ / - 0.4%) in the wheat seedling rhizosphere and 0.32% (+ / - 0.14%) of the bulk field soil microbiome (Figure 3A; Supplementary file 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig3-v2.jpg)\n\n**Figure 3.:** (A) Illustration of sample collection and metagenomic results. Green and brown stripes represent planted wheat rows and field soil, respectively. Black boxes depict sampling sites. Estimated phz+ levels in wheat rhizospheres and soil collected between planted rows. Error bars represent standard deviation. (B) Order level taxonomic distribution of phz+ bacteria within each sample. Y-axis describes the relative abundance of each order out of all phz+ bacteria. (C\u2013D) Species level phz+ distributions across wheat rhizosphere samples (wr1-wr5). (E) Genomic regions displaying phenazine core and modification genes in the main Streptomyces groups detected in the rhizosphere. Specific modification genes are annotated in the figure. (F) Chemical structures of representative prenylated phenazines predicted to be produced by the mevalonate pathway highlighted in the S. luteus genomic region in E.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The Washington State University Lind Dryland Research Station (46.973\u00b0N, 118.616\u00b0W, 423.7 m above sea level). Wheat seedlings were collected from different positions and different rows. Bulk soil was collected between rows.\n\nSurprisingly, a closer examination of the phz+ bacteria in our rhizosphere metagenomes showed that two different bacterial clades occur at roughly the same abundance in this niche: the expected, culture-validated fluorescent pseudomonads, and Streptomyces spp., which were not previously known to occur in meaningful levels in this environment (Figure 3B). The average phz+ pseudomonad level is thus estimated by our approach at\u00a0~0.4% of the total rhizosphere bacteria. While the enrichment-culture and metagenomic approaches are not directly comparable, they can be used together to extrapolate the number of bacteria in the rhizosphere. Indeed, combining the average phz+ pseudomonad cfu/g with their average estimated percent out of all bacteria suggests a wheat seedling rhizosphere bacterial load of\u00a0~109 bacteria per gram roots, in agreement with other rhizosphere load estimates (Bakker et al., 2013; Mavrodi et al., 2018). Bulk field soil phz+ bacteria were mainly composed of Streptomyces and other actinobacteria of different taxonomies that were found at a lower abundance (Figure 3B; Supplementary file 4).\n\nNotably, three species in our reference set comprise\u00a0>87% of the phz+ Pseudomonas rhizosphere sequencing reads (Figure 3C). These reads mapped to multiple strains, some of which were more highly represented, including, P. fluorescens\u00a0(recently\u00a0renamed\u00a0P.\u00a0synxantha)\u00a0LBUM223, P. chlororaphis aureofaciens 30\u201384 and P. orientalis DSM 17489. Whereas these P. fluorescens and P. orientalis genomes contain a solo phzA/BCDEFG operon, Pseudomonas chlororaphis aureofaciens 30-84\u00a0also contains an adjacent phzO modification gene, suggesting that pseudomonads in this environment produce PCA and 2-hydroxyphenazine-1-carboxylic acid (2-OH-PCA) (Delaney et al., 2001). Overall, these data are consistent with sequenced Pseudomonas previously isolates from similar environments (Biessy et al., 2019; Parejko et al., 2012).\n\nThe Streptomyces mapped reads in our data mapped to many species rather than just a few genomes, as seen for Pseudomonas (Figure 3C). Nevertheless, binning these Streptomyces genomes according to similarity in their phenazine genomic regions revealed that three main groups occupy the wheat rhizosphere (Figure 3D\u2013E). The first, composed of only a single genome in our database (Streptomyces sp. URHA0041) contains two putative modification genes: a phzM homologue (~55% identity), whose product makes the precursor metabolite (5-Me-PCA) in the phenazine pyocyanin, in P. aeruginosa (Mavrodi et al., 2001), and a predicted O-methyltransferase (Figure 3D\u2013E). The second group, represented by Streptomyces sp. WAC04657, contained four putative modification genes: the phzM homologue, a protein annotated as ketosteroid isomerase, an asparagine synthase, homologous to the Pseudomonas phzH gene (42% identity) that converts PCA to phenazine-1-carboxamide (PCN) (Chin-A-Woeng et al., 2001), and an asparaginase of unknown function (Figure 3D\u2013E). The third and most abundant group, represented by S. luteus TRM45540, contained a conserved mevalonate pathway operon previously shown to produce prenylated phenazines called endophenazines (Laursen and Nielsen, 2004; Saleh et al., 2009; Figure 3D\u2013F). These data imply that in contrast to pseudomonads, the phz+ Streptomyces community is likely to produce multiple chemically diverse phenazines in this environment, some of which await description.\n\n### Global biogeographical analysis of phenazine biosynthesis and biodegradation in soil and plant-associated microbiomes\n\nOur metagenomic-based approach provides a means to describe in quantitative terms which phenazine producers and consumers exist in a habitat of interest. To acquire a more complete picture of phenazine biosynthetic and catabolic potentials in soils and crop rhizospheres, we applied our approach to an additional 799 publicly available shotgun-metagenomes (Supplementary file 4; Methods). These new samples were combined with the eight wheat and field soil samples described above and were broadly classified as either soil (58.7%; 474/807) or rhizosphere (41.3%; 333/807). Bulk soil samples were further classified into sub-categories according to the environment from which they were collected (e.g., agricultural field, forest, grassland etc.). Similarly, rhizosphere samples were sub-classified according to the plant species from which they were extracted (Figure 4\u2014figure supplement 1; Supplementary file 4).\n\nEstimated phz+ levels range from 0% to 2.7% of total environmental bacteria, with\u00a0>28% (229/807) of all samples containing at least 0.25% phz+ bacteria in their microbiome (Figure 4A; Supplementary file 4). Notably, we find a 1.9-fold higher average phz+ level in rhizospheres compared to bulk soils (Figure 4A; p=4.2\u00d710\u221217; Wilcoxon). Furthermore, samples with high total producer levels (at least 0.5% phz+) are 8.9-fold enriched in samples annotated as rhizosphere compared to bulk soil. Higher phz+ levels are particularly common in crops such as sugarcane, wheat, barley, maize, and citrus, as well as the model plant Arabidopsis thaliana (Figure 4A; Supplementary file 4). Lower yet significant phz+ levels are common in diverse agricultural field soils (rice paddies, soybean/peanut fields, etc.) as well as in grasslands and forest soils (Figure 4A; Supplementary file 4). Together, these results outline the global distribution of phenazine biosynthetic potential across diverse soil and crop-associated habitats and reveal a trend of enrichment for these metabolites in plant-root microbiomes (Figure 4A\u2013B; Supplementary file 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig4-v2.jpg)\n\n**Figure 4.:** (A) Distribution of phz+ bacteria levels per each habitat (percent of all bacteria). Soil and rhizosphere samples are depicted in brown and green, respectively. Each boxplot represents a different habitat as annotated in the x-axis. Boxplot central line shows the median and all samples are shown as black dots. (B) Comparison of the relative abundance of phz+ taxonomic distributions across habitats, considering all individual samples (e.g., the maize bar was calculated using all 32 metagenomes in our dataset; Analysis of individual samples can be found in Figure 4\u2014figure supplement 2). Order level taxonomic groups are depicted via different colors according to the legend.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Subcategory distributions for shotgun-metagenomic samples classified as either bulk soil or rhizospheres analyzed in this study.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Clustered heatmap representing the relative abundance of different phz+ clades (columns) in samples containing at least 0.25% total phz+ bacteria (rows; n\u00a0=\u00a0229). Color bar indicates abundance. On the left, the rows are color coded as either rhizosphere (green) or soil (brown). Seven main clusters are outlined and annotated as I-VII. (B\u2013C) Representative sections of clusters I, II and IV. The text on the right describes the sample origin (e.g., maize, agricultural field, etc.).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013B) Distribution of phdA+ and podA+ bacteria levels per each habitat (percent of all bacteria). Soil and rhizosphere samples are depicted in brown and green, respectively. Each boxplot represents a different habitat as annotated in the x-axis. Boxplot central line shows the median and all samples are shown as black dots. Habitats are ranked by phz+ bacteria abundance as in Figure 4 and the phz+ levels are qualitatively depicted by the blue triangle between panels A and B.\n\nNext, we examined which phenazine producer clades occurred at significant levels in different habitats. To this end, we calculated the relative abundance of major taxonomic groups in individual samples and more generally across all samples belonging to the same habitat (averaged associations). Strikingly, we find that phz+ Streptomyces represent a major portion of phz+ bacteria in most habitats (Figure 4B). Furthermore, phz+ Streptomyces are detected in substantial levels in over 67% (154/229) of phz+ rich samples (containing at least 0.25% phz+ bacteria), both soil and rhizosphere derived (Figure 4\u2014figure supplement 2). In almost all cases, phz+ Streptomyces can be found along with other producers from different clades, including various actinobacteria and proteobacteria (Figure 4\u2014figure supplement 2; Supplementary file 4). Higher-resolution analysis of the mapped phenazine biosynthesis genes suggests Streptomyces sp. WAC04657 is a cosmopolitan phz+ species that commonly appears in both soil and rhizosphere samples (Figure 3D\u2013E). In contrast, the phenazine gene signatures of other species are more sample-specific, for example, phenazine genes similar to those of S. luteus TRM45540 are abundant in the A. thaliana rhizosphere, while those of Streptomyces sp. Root1310 were most abundant in sugarcane. Furthermore, we find seven Streptomyces species that are\u00a0>2 fold enriched in plant-associated samples. Intriguingly, the genomes of five of these Streptomyces contain the mevalonate pathway for phenazine prenylation (Figure 3E\u2013F), implying these particular types of phenazines could be globally enriched in rhizosphere microbiomes.\n\nIn addition to Streptomyces, low levels of other phz+ actinobacteria such as Streptosporangiales and Pseudonocardiales are common in many habitats (Figure 4B; Figure 4\u2014figure supplement 2). In contrast to these ubiquitous, we find that other species occur in a more localized manner. For example, Pseudomonas is detected at high levels almost exclusively in our Washington wheat samples and Myxococcales are mainly detected in the barley microbiome (Figure 4\u2014figure supplement 2; Supplementary file 4). While Burkholderiales are commonly detected, their levels are highest in agricultural field soils (Figure 4\u2014figure supplement 2; Figure 4B). Surprisingly, we detected Xanthomonadales phz+ bacteria in 22% (50/229) of our phz+ rich samples (Figure 4\u2014figure supplement 2; Figure 4B). High levels of these phz+ bacteria occur exclusively in plant rhizosphere microbiomes, preferentially colonizing maize, citrus, sugarcane, and A. thaliana (Figure 4B; Figure S5). In addition to their notable distribution, Xanthomonadales bacteria represent the most abundant species in our data, reaching up to 2.7% of all bacteria in the maize rhizosphere (Supplementary file 4).\n\nOur analysis also measures the levels of bacteria capable of phenazine biodegradation (Figure 4\u2014figure supplement 3; Figure 2E). While we find scarce evidence for the podA pyocyanin oxidative demethylation gene (Costa et al., 2017) in these soil and plant environments, 21 samples contain substantial levels of phdA+ bacteria (at least 0.25%; Supplementary file 4), whose gene product begins the degradation of PCA (Costa et al., 2018). This result is consistent with the enrichment of soil bacteria that produce PCA and other phenazines rather than pyocyanin, which is more commonly associated with human chronic infections (Sismaet et al., 2016; Wilson et al., 1988). Notably, 71% (15/23) of these samples were annotated as switchgrass rhizospheres, with six samples also containing similar or higher phz+ bacterial levels composed of mostly Streptomyces (Figure 4\u2014figure supplement 3). Although rare in our studied environments, these data provide the first indication that phz+ and phenazine-degrading bacteria can occupy the same environment at similar abundances.\n\n### Characterization of phenazine production in Dyella japonica\n\nOur quantitative biogeographic analysis indicates that a group of phz+ Xanthomonadales frequently colonize the rhizospheres of several major crops, at levels equal to or higher than those of previously studied bioactive pseudomonads, suggesting they could be agriculturally relevant (Supplementary file 4). We therefore decided to study these previously unknown and potentially significant plant-microbe associations in more detail.\n\nOur phz+ reference database contains only two distantly related groups belonging to the Xanthomonadales: Lysobacter and Dyella (Figure 1C; Supplementary file 1). Strikingly, we find that our metagenomic sequencing data almost exclusively maps to Dyella rather than Lysobacter (Figure 5A). However, these phz+ Dyella were only recently isolated from the A. thaliana rhizosphere and were not studied with respect to their putative phenazine biosynthesis capabilities (Levy et al., 2018). In contrast, the phenazine repertoire of L. antibioticus, as well as the specific genes responsible for their synthesis and modification, were recently characterized in depth. Specifically, the L. antibioticus gene products LaPhzS and LaPhzNO1 were shown to catalyze the decarboxylative hydroxylation and N-oxidations of PDC to generate the phenazine iodinin (Zhao et al., 2016). In addition, the SAM-dependent O-methyltransferase, LaPhzM, was later found to convert iodinin into the highly toxic phenazine, myxin (Jiang et al., 2018). We compared the biosynthesis clusters of both L. antibioticus and D. japonica and found similar gene content between these organisms, as well as a conserved operonic structure. Notably, an adjacent putative transcription factor (TF) was also conserved between these organisms. Thus, D. japonica is likely to produce phenazines that are similar or identical to those previously detected in L. antibioticus (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig5-v2.jpg)\n\n**Figure 5.:** (A) Relative abundance of Lysobacter and Dyella out of all Xanthomonadales in high phz+ samples (B) Genomic regions containing the core phenazine biosynthesis genes (tan) and phenazine modification genes (orange) in L. antibioticus and D. japonica. A conserved transcription factor (TF) is marked in green and all other genes shown in gray. (C) D. japonica \u0394phzA, WT and \u0394phzT culture tubes following 48 hr growth in minimal defined medium. (D) WT (orange) and \u0394phzT (gray) spent-culture media LC-MS results showing UV absorbance at 280 nm. Detected phenazine structures are shown to the right with a dashed line indicating the position where their mass was detected. (E) WT D. japonica cultures grown for 24 hr in minimal defined media containing either 1 mM or 50 mM phosphate.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** D japonica WT (orange), \u0394phzT (gray) \u0394phzA(dark gray) spent-culture media LC-MS results showing UV absorbance at 254 nm (A\u2013B), 280 nm (C\u2013D) and 288 nm (E\u2013F).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Specific m/z intensity traces for PDC (A), myxin (B) and a myxin derivative, 1-Hydroxy-6-methoxyphenazine-N10-oxide (C) detected in D. japonica spent culture media. The molecular masses of the three phenazines are shown in the figure. Traces from WT and \u0394phzT mutant cultures are shown in orange and gray, respectively.\n\nTo test this prediction in Dyella, we acquired the D. japonica UNC79MFTsu3.2 strain and generated clean deletion mutants in either the phenazine biosynthesis gene, phzA, or the conserved transcription factor, N515DRAFT_3255 (denoted here as phzT), present near the operon (Figure 5B). Most phenazines are brightly pigmented. Indeed, while WT D. japonica produce a bright orange pigment when grown in minimal medium for 48 hr, both mutant cultures remain completely colorless, indicating that they are phenazine deficient (Figure 5C). We compared the metabolites found in WT, \u0394phzA and \u0394phzT spent culture medium using High-pressure Liquid Chromatography Mass Spectrometry (HPLC-MS) and searched for known phenazine masses and characteristic UV absorbances (Jiang et al., 2018; Myhren et al., 2013). We detected several phenazines previously described in L. antibioticus in the WT cultures but not in the phenazine deficient mutants (Figure 5D). These included the precursor PDC, and the potent antimicrobials myxin and a reduced myxin derivative (1-Hydroxy-6-methoxyphenazine-N10-oxide) (Chowdhury et al., 2012; Weigele et al., 1970; Figure 5D; Figure 5\u2014figure supplements 1 and 2). These results suggest that the conserved transcription factor deleted in our analysis is an essential regulator of phenazine biosynthesis in this organism.\n\nWhile the phenazines produced by D. japonica have the chemical potency required for pest control, it is important to understand under which conditions these metabolites are preferentially made. Recently, it has been suggested that redox active metabolites such as phenazines might increase phosphate solubility in soils, due to their potential to liberate absorbed phosphate from iron minerals through the process of reductive mineral dissolution (Dahlstrom et al., 2020). In P. aeruginosa, phosphate limitation has been implicated in the induction of phenazine biosynthesis (Whooley and McLoughlin, 1982; similar trends have been seen for other antibiotics made by diverse bacteria [Mart\u00edn, 1977]). Perhaps not surprisingly, therefore, we find similar induction of phenazine biosynthesis in phosphate limited D. japonica cultures, even after only 24 hr (Figure 5E).\n\n### D. japonica robustly colonizes maize seedling roots in a gnotobiotic laboratory model\n\nOur metagenomic analyses above identified Dyella in the rhizospheres of multiple crop species with the highest abundance in maize (Figure 4B). To validate and characterize D. japonica plant colonization patterns in this staple crop, we used a gnotobiotic seedling model (Niu et al., 2017). In this setup, maize kernels are first sterilized and then allowed to germinate on water agar under axenic conditions. At 48 hr post germination, the seeds are incubated with D. japonica for 30 min and are then planted in sterile \u00bd MS agar tubes (Figure 6A). The seedlings are grown for 7 days and bacterial colonization efficiency is then measured by extracting and plating bacteria from the root-base surface. We find that D. japonica accumulates to high levels in this mono-colonization model, reaching an average of 1.5 \u00d7 106 cfu/mg root-base (Figure 6B). These colonization levels are comparable to strong maize colonizers tested in this model (Niu et al., 2017) and are similar to those previously reported for plant growth-promoting Pseudomonas fluorescence in a tomato seedling model (Simons et al., 1996). We note that phenazine-deficient mutants accumulate to a slightly higher level (1.5-fold; p=0.013; t-test) (Figure 6B). These results suggest that the A. thaliana isolated D. japonica is a robust maize colonizer and that phenazine production in this mono-colonization assay has a slight adverse effect on colonization efficiency.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/59726/elife-59726-fig6-v2.jpg)\n\n**Figure 6.:** (A) Example of 7-day-old maize seedlings grown in an agar-based gnotobiotic system inside two glass tubes connected by parafilm. (B) Colonization efficiency of D. japonica WT (orange) or \u0394phzT (gray) in a mono-colonization assay (n\u00a0=\u00a05 for each genetic background). Error bars represent standard deviation. P-value for a two-tailed t-test comparison is shown in the panel. (C) Illustration of the sample preparation process for in situ imaging of bacterial colonization. Roots are encased in a stabilizing hydrogel and root-base sections are extracted and labeled before imaging. (D) Maximal-projection image depicting bacteria (green) and plant tissue via DAPI (blue) and WGA (red). (E) Zoom-in on the dashed box in panel D. Encircled are root hair tips colonized by bacteria (green patches).\n\nIn addition to viable counts, we also imaged the in planta colonization patterns of D. japonica (Figure 6C\u2013E). We fixed and permeabilized seedling roots previously colonized with D. japonica and then encased them in a clear stabilizing hydrogel (Figure 6C). The root base was sectioned to produce 1\u20132 mm slices that were optically cleared. Bacteria were labeled using the Hybridization Chain Reaction (HCR) fluorescence in situ technique (Choi et al., 2014), targeting the 16S rRNA (Methods). In contrast to fluorescence in situ hybridization (FISH), HCR can enable low magnification analysis of large tissues due to its fluorescent signal amplification. Plant tissue was labeled with 4\u2032,6-diamidino-2-phenylindole (DAPI) and rhodamine-conjugated lectin (wheat germ agglutinin [WGA]) stains. The labeled root sections were then imaged using confocal fluorescent microscopy (Figure 6C\u2013E). Bacterial HCR signal indicative of microaggregate formation was readily visible within the root inner compartment is readily detected (Figure 6D). In addition, root hair tips appeared to be preferentially colonized by D. japonica (Figure 6E).\n\n## Discussion\n\nThis is the first study to quantitatively chart the biogeographic distribution of phenazine biosynthesis and biodegradation genes in natural and agricultural habitats. We developed and field-validated a computational method to analyze\u00a0>800 metagenomes from across the world and show that phenazine biosynthesis is a highly prevalent trait that is enriched in plant microbiomes relative to bulk soils. In contrast, known phenazine biodegradation genes are rarely detected in these environments. Our data highlight new and potentially important associations between specific phz+ bacterial clades and several major crops. We experimentally validate a novel and frequent association between maize and D. japonica, identifying bioactive phenazines produced by this bacterium as well as genetic and environmental factors involved in their regulation. Furthermore, we show that D. japonica is a robust maize seedling colonizer that occupies the root interior and root hair tips.\n\nWhile the majority of research on phenazine production has been in pseudomonads (Chincholkar and Thomashow, 2013), our study demonstrates that most crops and agricultural soils are colonized by different phz+ bacteria, the most common of which are Streptomyces. Notably, our analysis discovered that phz+ Streptomyces occur even in relatively well-studied environments such as the Inland Pacific Northwest wheat fields, where pseudomonads have been considered to be the main producers. It has long been known that Streptomyces bacteria synthesize highly bioactive metabolites and antibiotics, including phenazines (Turner and Messenger, 1986), and some have been characterized as important residents of the plant-root microbiome (Bulgarelli et al., 2012; Rey and Dumas, 2017). Indeed, our data suggest that particular Streptomyces species are more common in plant rhizospheres compared with bulk soils. Notably, many of these species carried the mevalonate pathway operon involved in synthesizing prenylated phenazines (e.g., endophenazines) (Saleh et al., 2009). The potential roles of prenylated phenazines in bacterial physiology, root colonization and/or pathogen inhibition are completely unknown and represent an exciting research direction. Our data suggest that prenylated phenazines could be common in the A. thaliana rhizosphere, presenting an attractive model system for studying these metabolites, in planta. That phenazine degradation genes are generally more scarce than phenazine production genes, with some notable exceptions (e.g. switchgrass rhizospheres), suggests that phenazines might be expected to rise in abundance in certain crop soils as the climate warms (Maestre et al., 2015; Mavrodi et al., 2012); direct measurements of phenazine concentrations in soils will be needed to test this prediction.\n\nThe identification of D. japonica as the most abundant phz+ bacteria in our global analysis was our most unexpected and striking result. This recently discovered bacterium was found almost exclusively in plant rhizosphere samples and was highly enriched in citrus, sugarcane and maize crops, where it reached up to 2.7% of the entire microbiome (~7 fold higher than our measured phz+ Pseudomonas in wheat). D. japonica is a robust seedling mono-colonizer that appears to accumulate within the root interior as well as the root hair tips, where root exudates levels are high (Canarini et al., 2019). Further experiments in soil-grown maize will be needed to further establish the relevance of these colonization patterns. Notably, D. japonica can produce the highly toxic phenazine myxin, and upregulates phenazine production when limited for phosphate\u2014an environmental stress likely to become more common as phosphorus fertilizers become scarce (Cordell et al., 2009). Intriguingly, a mutant deficient in phenazine biosynthesis exhibited somewhat greater plant colonization than the wild type in this model. Because phenazines can have a fitness cost under some conditions in isogenic cultures (Meirelles and Newman, 2018), this result is perhaps unsurprising. Moreover, based on the physiological functions of phenazines (Chincholkar and Thomashow, 2013), we would expect any fitness advantage due to phenazine production to manifest at a later stage of growth, be the phenazine producer in mono-culture or in the presence of competing organisms (LeTourneau et al., 2018; Mazzola et al., 1992). The natural abundance of phz+ D. japonica in the microbiomes of economically important crops, as well as its bioactive phenazines suggest that this organism could have important agricultural effects.\n\nIn this work, we developed and field-validated a simple process for measuring the abundance of phenazine producing and biodegrading species. The basic premise of this approach is that a measure for total-bacterial signal can be calculated using a defined set of ubiquitous, single-copy genes (Manor and Borenstein, 2015; Parks et al., 2018). This reference signal can then be used to normalize gene abundances between samples in a robust manner (Manor and Borenstein, 2015). We use the fact that phenazine biosynthesis genes almost always appear in a single genomic copy to interpret our data as the abundance of phenazine producers out of all bacteria in a given environment (percent producers). We note that this more ecologically intuitive interpretation is only possible when the genomic copy of a given gene can be accurately inferred. Another potential limitation of this general approach is its reliance on a database of gene sequences that might not capture all environmental sequence variants. This issue can be addressed by defining large and diverse reference sets and/or by setting looser read mapping thresholds. Potential false positive signals can arise if highly similar, yet functionally distinct genes occur in the analyzed environment. This issue is mitigated when studying biosynthesis pathways containing multiple genes, as spurious signals are more likely to be filtered. Alternatively, one could first identify protein regions that are more specific, effectively examining a combination of smaller gene marker sections instead of the whole (Kaminski et al., 2015). While we chose to use 25 reference genes in our analysis, the high similarity in coverage between these genes within individual samples (Figure 2\u2014figure supplement 2) suggests that a smaller set might be used with similar efficacy. While our approach measures the abundance of specific microbes via their DNA signatures, additional transcriptomic and/or proteomic data would be needed to measure the fraction of these bacteria that is metabolically active. Nonetheless, this approach can readily be extended to other metabolite biosynthesis pathways and functional traits of interest.\n\nIn summary, it is now well appreciated that metabolite-mediated interactions play important roles in shaping microbial communities in plant and animals. Yet our ability to leverage this knowledge in ecological settings has been limited by our ignorance of which organisms make particular metabolites in particular niches. As shown here, a culture-independent metagenomic approach can be used to spotlight potential players and traits of interest, allowing for the targeted cultivation of ecologically relevant model organisms. These discoveries open the door for basic research and downstream applications harnessing these microbes for agricultural and medical applications.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Dyella japonica UNC79MFTsu3.2)</td>\n      <td>D. japonica WT</td>\n      <td>Levy et al., 2018</td>\n      <td>Genome IMG ID: 2556921674</td>\n      <td>WT</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Dyella japonica UNC79MFTsu3.2 \u0394phzA)</td>\n      <td>D. japonica \u0394phzA</td>\n      <td>This paper</td>\n      <td></td>\n      <td>phzA deletion mutant</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Dyella japonica UNC79MFTsu3.2 \u0394phzT)</td>\n      <td>D. japonica \u0394phzT</td>\n      <td>This paper</td>\n      <td></td>\n      <td>phzT deletion mutant</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMQ30</td>\n      <td>Shanks et al., 2006</td>\n      <td>GenBank: DQ230317.1</td>\n      <td>Plasmid for generating deletions in D. japonica</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Escherichia coli S17-1)</td>\n      <td>E. coli S17-1</td>\n      <td>Simons et al., 1996</td>\n      <td>ATCC 47055</td>\n      <td>Mobilizing strain that carries the pMQ30 plasmid</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DIAMOND v0.9.22.123</td>\n      <td>Buchfink et al., 2015</td>\n      <td>DIAMOND</td>\n      <td>Mapping translated reads to references</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trimmomatic v0.38</td>\n      <td>Bolger et al., 2014</td>\n      <td>Trimmomatic</td>\n      <td>Read quality control</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>fastq-dump v2.9.2</td>\n      <td>NCBI</td>\n      <td>fastq-dump</td>\n      <td>Retrieve public metagenomes from SRA</td>\n    </tr>\n  </tbody>\n</table>\n\n### Gene reference set construction\n\nA database of phenazine core biosynthesis genes phzA/B, phzD, phzE, phzF and phzG was constructed by mining IMG-ABC (Hadjithomas et al., 2015). The genomic regions predicted by IMG-ABC to contain phenazine biosynthesis genes were filtered to only select regions that contain the majority of required biosynthesis genes (up to one missing gene). The resulting set of organisms and specific genes was used for additional blast-based homology searches in IMG. We limited the number of strain level variants to 10. The final set of 181 bacterial species along with the IMG gene identity numbers used in the study is available in Supplementary file 1. The \u2018total-bacteria\u2019 reference set was constructed using the published bac120 gene set (Parks et al., 2018). The database was downloaded from the Genome Taxonomy Database (GTDB) https://gtdb.ecogenomic.org/. We selected the top 25 most ubiquitous genes (Supplementary file 2) and extracted their protein sequences. The podA and phdA phenazine biodegradation reference set was constructed using homology searches. The phenazine, biodegradation and total-bacteria sequences were merged and formatted into a DIAMOND database (Buchfink et al., 2015). The concatenated phzA/BDEFG sequences (for 176 species containing all core genes; Supplementary file 1) were used to construct the phenazine phylogenetic tree. The sequences were aligned using MUSCLE (Madeira et al., 2019) and the tree was constructed using FastTree 2.1 (Price et al., 2010). The tree was drawn with iTOL (Letunic and Bork, 2019).\n\n### Metagenome mapping and estimation of phz+ bacteria levels\n\nSingle-end Illumina sequencing reads or simulated metagenomes (described below) were mapped to the protein database described above using DIAMOND with the -k 1 option, which outputs the best hit (Buchfink et al., 2015). For reads that mapped equally well to more than one target genome the first occurrence in the database was selected by the DIAMOND -k 1 option. For analyses evaluating the abundance of specific species, the analysis was repeated for a subset of samples, and the reads were randomly distributed between all targets. No significant quantitative differences were observed when using the DIAMOND -k 1 option (first occurrence) or randomly distributing the reads between all targets. The data in the figures shows the results of using the DIANMOND -k 1 option. Reads were first trimmed using Trimmomatic (Bolger et al., 2014) and trimmed fastq files were converted to fasta and mapped to the reference databases. Translated reads that mapped with less than 80% amino-acid identity were discarded and total read counts per gene were normalized by the hit average gene size. The median normalized scores per category was calculated using either phenazine genes, biodegradation genes, or the reference \u2018total-bacteria\u2019 genes, producing a single score for each set. The frequency of phenazine producers and biodegraders out of all bacteria in the population was estimated by dividing the phenazine score (or biodegradation score) by the reference \u2018total-bacteria\u2019 score.\n\n### Benchmarking using simulated metagenomes\n\nA set of 28 phylogenetically diverse bacteria were selected (Supplementary file 3), several of which are highly similar taxonomically to the tested phenazine producers (e.g., Pseudomonas or Streptomyces species that do not contain the phenazine operon). We tested the accuracy of our approach by generating synthetic metagenomes where a specific phenazine producer (either P. chlororaphis 189 or Streptomyces sp. NRRL S-646) was spiked in at a known abundance (0, 0.1, 0.25, 0.5, 1, 1.5, 2.5, 3.5 and 5%). Mixed phz+ synthetic metagenomes were constructed by first setting the total phz+ level and then randomly selecting the portion of each phz+ species (e.g., total phz+=5% and P. chlororaphis\u00a0=\u00a01% while Streptomyces spp.\u00a0=\u00a04%). In addition to varying the phz+ bacteria level we also varied the library coverage, sampling a total of 5, 10, 15 or 20M 150nt fragments from each condition (Figure 2\u2014figure supplement 1). Each experiment (e.g., phz+level\u00a0=\u00a00.25% at 10M reads) was repeated 12 independent times. While the producer level was always set per condition, the relative abundance of each of the remaining 28 bacteria was randomly set in every replicate to improve result robustness. While the frequencies of phenazine producers were set as describe above, each community contained a randomly generated frequency of phenazine degraders. For each metagenome, we selected the appropriate number of reads for each species by randomly selecting 150nt fragments from their assembled genomes. These simulated metagenomes were then analyzed as described above to estimate the phz+ levels.\n\n### Lind site wheat rhizosphere and bulk soil sampling and processing\n\nThe Washington State University Lind Dryland Research Station (46.973\u00b0N, 118.616\u00b0W, 423.7 m above sea level) was sampled on May 6th, 2019 for 6-week-old wheat seedlings (Triticum aestivum L. cv. Louise) as well as bulk field soil collected between planted rows. Rhizosphere communities were extracted by shaking plant roots until only 1\u20132 mm tightly adhering soil was left covering the root system. A single plant was then placed in 20 ml sterile filtered water and vortexed (1 min) and then treated in an ultrasonic bath (1 min) to dislodge root associated bacteria. Indigenous root-associated phz+ pseudomonads were enumerated by the modified terminal dilution endpoint assay as previously described (Mavrodi et al., 2018). DNA was extracted from rhizospheres and from bulk soil samples using the DNeasy PowerSoil Kit (Qiagen, 12888\u2013100) according to the manufacturer\u2019s instructions. Illumina metagenomic DNA libraries were prepared and sequenced at the Millard and Muriel Jacobs Genetics and Genomics Laboratory at the California Institute of Technology.\n\n### Analysis of publicly available shotgun-metagenomes\n\nThe Sequence Read Archive (SRA) was mined for shotgun-metagenomic samples collected from soils and plant-roots. The results were filtered to remove poorly annotated and shallow sequenced samples. A total of 799 individual samples were selected for further analysis and are summarized in Supplementary file 4 along with producer levels and taxonomies. Samples were coarsely classified as either soil (non-plant associated) or rhizosphere (plant-associated) according to sample metadata. Samples were further sub-classified according to the environment from which they were extracted. The Raw fastq files were download using the SRA Toolkit (fastq-dump) and were processed and analyzed as described above, analyzing read1 files only in cases where paired-end data was available.\n\n### Bacterial strains, plasmids, primers, and growth conditions\n\nD. japonica UNC79MFTsu3.2 was grown aerobically with shaking at 250 rpm in lysogeny broth (LB) (Difco) or on LB agar plates at 30\u00b0C for all cloning and strain construction purposes unless otherwise noted. For phenazine pigment production assays, D. japonica was grown overnight in LB, washed twice with sterile water and diluted 1:200 into fresh defined medium containing KH2PO4 (1.93 g), K2HPO4 (6.24 g), NaCl (2.5 g), MgSO4 (0.12 g), NH4Cl (0.5 g), Glucose (20 mM) and amino acids (1x final concentration; Sigma M5550), trace metals and micro-nutrients. For phosphate limitation experiments, the level of phosphate was diluted 50-fold (50 mM to 1 mM) and the medium was buffered with 4-Morpholinepropanesulfonic acid (MOPS; 50 mM; pH 7.0) instead. The cultures were then grown at 30\u00b0C for 24\u201348 hr until pigment production saturated.\n\n### Deletion mutant generation\n\nUnmarked deletions in D. japonica were made using a variation of a previously described protocol for P. aeruginosa. Briefly,~1 kb fragments immediately upstream and downstream of the target locus were amplified by PCR (Kappa Hi-Fi) and joined with the vector pMQ30 (Shanks et al., 2006) (cut with SmaI restriction enzyme) using Gibson assembly (NEB). Primer sequences can be found in Supplementary file 5. The assembled construct was transformed into E. coli S17-1, and transformants were plated and selected on LB plus gentamicin (20 \u00b5g/ml). For all plasmids, a correctly assembled construct was identified by colony PCR and Sanger sequencing (Laragen). Conjugation between E. coli S17-1 and the D. japonica WT was performed overnight at 30\u00b0C on LB plates. D. japonica merodiploids containing the chromosomally integrated construct were selected on LB plus gentamicin (20 \u00b5g/ml) and chloramphenicol (6 \u00b5g/ml) to exclude the donor E. coli. The merodiploids were then grown to exponential phase in LB and counter selected on LB agar plates lacking NaCl and containing sucrose (10%, w/v) plus chloramphenicol (6 \u00b5g/ml). Deletions were identified by colony PCR and Sanger sequencing.\n\n### LC-MS analysis\n\nD. japonica was grown in defined medium as described above until pigment production saturated (24\u201348 hr) and the spent medium was filtered with 0.2 \u00b5m spin filters (Corning #8160), placed in sample vials (Waters #600000668CV) and loaded into the autosampler at 10\u00b0C. Samples were run on a Waters LC-MS system (Waters e2695 Separations Module, 2998 PDA Detector, QDA Detector). For each sample, 10 \u00b5L was injected onto a reverse phase C-18 column (XBridge #186006035) running a gradient of 100% H2O + 0.04% NH4OH to 70% acetonitrile + 0.04% NH4OH over 11 min (20 min total run time). UV-Vis and positive MS scans were acquired for each run. The known masses for phenazine previously detected in L. antibioticus (Jiang et al., 2018; Zhao et al., 2016) were identified by comparing among WT, \u0394phzT and \u0394phzA cultures. Phenazine UV-absorbance was measured at 254 nm, 280 nm and 288 nm (Figure 4\u2014figure supplement 2).\n\n### Gnotobiotic maize colonization assay\n\nMaize seedlings were grown as previously reported (Niu et al., 2017) with minor variations. Briefly, Zea mays cv. Sugar Buns F1 (se+) (Johnny\u2019s Selected Seeds, catalog number: 267) were sterilized for 3 min using 50% commercial bleach with 0.1% Tween and then washed with sterile water four times. The seeds were imbibed in sterile water for 2.5 hr at room temperature and then placed on 1% water agar plates, embryo side up, five per plate, and were germinated in the dark at 25\u00b0C for 48 hr. Seedlings were placed in PBS solution containing WT or mutant D. japonica at a concentration of 106 cfu/ml and were left to soak for 30 min. The seedlings were then transferred into glass test tubes (16\u00a0\u00d7\u00a0150 mm) containing 20 mL \u00bd strength Murashige and Skoog Basal Salt Mixture (MS) (Sigma-Aldrich, catalog number: M5524-50L) with 0.75% agar. The seeds were placed in the agar root first and each tube was then closed with a second tube connected using parafilm to allow gas exchange. The plants were grown for 7 days in a 16 hr light (day; 4000 lumens) and 8 hr of dark (night) cycle at 25\u00b0C. Colonization levels were calculated by collecting 2-cm-long roots immediately below the seed (root base). Root sections were washed in 1x PBS and any remaining agar pieces were carefully removed using sterile forceps. The roots were then vortexed in tubes containing 1 ml PBS with 3 glass 3 mm beads and then sonicated for 30 s to dislodge root associated bacteria. The solution was serially diluted and plated on LB agar plates and incubated for 48 hr before colony counting. To normalize between roots of different sizes, each root was patted dry and weighed and the total number of cultured bacteria was adjusted per mg root.\n\n### Imaging D. japonica colonization in planta\n\nSeedling root systems (7 day old) colonized with D. japonica were fixed in a 4% paraformaldehyde 1x PBS solution overnight at 4\u00b0C and then washed 3 times using 1x PBS. Samples were then incubated overnight in 4% (vol/vol) 29:1 acrylamide:bis-acrylamide and 0.25% (wt/vol) VA-044 hardener in 1x PBS. The following day, the root samples were moved into an anaerobic hood and left open, but covered, for 5 min to remove headspace oxygen. Capped samples were polymerized for 3 hr at 37\u00b0C in a water bath, without shaking. Gel encased roots were sectioned using a scalpel to produce 1\u20132 mm embedded root samples which were then cleared in a solution of 8% SDS, pH 8.0, at 37\u00b0C, for 24 hr. HCR was performed using the EUB338 probe as previously described (DePas et al., 2016). The root sections were incubated at RT overnight in PBS 1x plus 50 \u00b5g/ml rhodamine-conjugated lectin (wheat germ agglutinin [WGA]), washed in 1x PBS and then incubated for another 24 hr in refractive index matching solution (RIMS) with 1 \u00b5g/ml DAPI. Samples were then mounted on slides in 0.9 mm or 1.7 mm CoverWell perfusion chambers (Electron Microscopy Services) with a coverslip on the top. Imaging was performed using a Zeiss LSM 880 confocal microscope with a Plan-Apochromat 10\u00d7/0.45-numerical aperture M27 objective. Image analysis was conducted using Imaris imaging software (Bitplane) and the FIJI distribution of ImageJ.\n\n### Data and software availability\n\nThe metagenomic DNA-sequencing data generated in this study were deposited in the Sequence Read Archive (SRA) under accession PRJNA634917. All public SRA samples analyzed in this study are indicated in Supplementary file 4. Code can be found at: https://github.com/daniedar/phenazines\u00a0(Dar, 2020; copy archived at https://github.com/elifesciences-publications/phenazines).\n",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "fd29df7e-05e0-433e-b7c3-3d3b2e7e8802",
+      "submission_id": "c0c5c010-62ee-47cd-904f-38416ce1b094",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mar\u00eda Mercedes Zambrano, CorpoGen Colombia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59726.sa1](https://doi.org/10.7554/eLife.59726.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work offers an innovative approach that combines computational analysis with experimental studies to explore the production of the antibiotic phenazine by bacteria in natural environments. In addition to detecting microorganisms potentially useful in agricultural applications, this approach can also be extended to study other ecologically relevant microbial genes and properties.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Global landscape of phenazine biosynthesis reveals species-specific colonization patterns in soils and crop microbiomes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nPhenazines are natural antibiotics produced by bacteria, found mainly in soils and in the plant rhizosphere, that can also have beneficial effects on crops. However, the complexity of the plant-associated microbiome and the difficulty to culture microorganisms frustrate the identification of phenazine producers that might be relevant to crop health. In this elegant and well-designed work, Dar et al. explore the potential of phenazine production in natural environments using an innovative shotgun-metagenomics approach that is then validated experimentally. They first devised a computational procedure to measure phenazine producing bacteria, which was validated in silico and then used to provide a global view of phenazine biosynthesis and degradation by analyzing >800 soil and plant-associated metagenomes. Based on their biogeographical metagenomic analysis they identified an abundant yet less studied phenazine-producing bacterium and proceeded to characterize its interaction with a plant host of agricultural importance. This study not only increases our appreciation of phenazine biosynthesis and biodegradation in the environment but also provides novel tools for exploring specific genes and plant-microbe associations of agricultural potential.\n\nEssential revisions:\n\n1) The authors make claims about horizontal gene transfer of phenazine biosynthetic operons between phyla. While these seem well-supported overall, there are a number of things unclear about the phylogenetic analysis:\n\na) which tree reconstruction algorithm was used? The paper refers to MUSCLE, but as far as I know this is a multiple-sequence alignment algorithm, not an algorithm for phylogenetic tree reconstruction.\n\nb) How strong is the bootstrap support for the main branches in the tree?\n\nc) The authors use a concatenated alignment. Have the authors checked whether the individual gene trees are congruent, to exclude e.g. recombination of phenazine operons during evolution?\n\n2) Reference databases are used to map metagenomic reads to and thus assess the frequency of phz producers across the bacterial fraction of microbial communities. The overall approach appears sound, although I wonder how it deals with ambiguous mapping (reads that can map equally well to two or more reference sequences), as this is not explicitly explained in the paper. When mentioning that 'reads that mapped with less than 80% identity', it is also not clear whether this indicates amino acid sequence identity or nucleotide sequence identity. Also, how was this threshold determined to be optimal in terms of specificity vs. sensitivity? Finally, are there any clades of uncultivated microbes with phenazine biosynthetic capabilities that the approach could be missing?\n\n3) For the computational analysis, why were 25 genes used from the ubiquitous single copy gene set? Does the estimate of 'total bacteria' change if you do 10 or 40? Do differences in average genome lengths alter this calculation, and is this something you need to worry about? How does your work compare to other approaches assessing gene abundances per bacteria in metagenomic samples, such as MicrobeCensus?\n\n4) The abundance statistic described in Figure 2A normalizes phz+ genes to total-bacterial score or Reads Per Kilobase levels, a method analogous to the widely used RPKM metric used to measure gene expression which has certain pitfalls (https://rnajournal.cshlp.org/content/early/2020/04/13/rna.074922.120.abstract). The assumption that the RPKM or here, RPK, values are normalized and therefore comparable across multiple samples can be misleading as RPK represents the abundance of the DNA fragment from a population of sequenced DNA fragments. This population represents distinct composition and titer of microbiota that can be unique to different sets of samples (e.g. citrus or maize rhizosphere). I would like the authors to clarify how the RPK statistic proposed here addresses this issue.\n\n5) The validation using simulated metagenomes is set up well but could be explained in more detail. To more clearly show that the approach is able to accurately map frequencies of phenazine operons that are not themselves present in the phz reference database the authors may consider doing a cross-validation analysis by leaving the sequences that are spiked into the simulated metagenome out of the reference dataset. This would allow quantification of how similar a sequence needs to be to one of the reference sequences to still be accurately identified with the mapping procedure. In 2B why is the relationship not linear between estimated and known phz+?\n\n6) For the field validation, can you show a 'predicted' vs. 'experimental' phz plot? You show estimates in 3A, how do these relate to your culture-based approach? This is a key point of your study and needs a figure to demonstrate the validation.\n\n7) Since the vast majority of the metagenome sample are from public data, did the authors consider the impact of DNA quality and variability in sample biomass (https://pubmed.ncbi.nlm.nih.gov/25329041/)? Were any of the public samples from a longitudinal study where the impact of environmental conditions on the distribution of phz+ genes could be explored?\n\n8) Although most of the reads mapped to representative genomes for pseudomonads and Streptomyces, did the authors find any off-target mapping for translated DNA reads to proteins from other gene families? Short reads can represent domains shared by phi+ genes and other gene families and give rise to cross-mapping and over or underestimation. This could possibly bias the mapping counts for phi+ genes.\n\n9) What is the intuition for why phosphate limitation turns on phenazine production?\n\n10) Given that the authors did not include any transcriptomics experiments, there is no direct indication of what proportion of the microbes represented by the sequenced DNA fragments are transcriptionally and metabolically active in each sample. This limitation should be mentioned in the manuscript.\n",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bc1247a1-aed6-41de-b144-506ca8cb3b65",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C1",
+      "claim": "Phenazines are natural bacterial antibiotics that can protect crops from disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenazines are natural bacterial antibiotics that can protect crops from disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general property of phenazines, supported by established scientific knowledge about these compounds.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "8c1a6b2d-f352-4444-8f18-f28ffa2fce0e",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C2",
+      "claim": "All known phenazine producers contain the core phenazine biosynthesis genes phzA/BCDEFG, almost always in single-copy.",
+      "claim_type": "EXPLICIT",
+      "source": "Because all known phenazine producers contain the core phenazine biosynthesis genes, phzA/BCDEFG, almost always in single-copy, we reasoned that given a sufficiently broad database of these proteins, we could accurately identify and enumerate the levels of phz+ bacteria via shotgun-metagenomics (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge in the field and is the basis for the methodological approach used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "86338a38-8bbd-452c-a4a0-e1c2cdd2dc46",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C3",
+      "claim": "A comprehensive phenazine biosynthesis reference database was constructed containing 181 phenazine producer genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we assembled a list of 181 phenazine producer genomes (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data generated in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "13c246a6-7fe7-4cd6-b334-35066f82b55e",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C4",
+      "claim": "The final reference set contained 100 proteobacterial and 81 actinobacterial genomes representing a total of 15 phylogenetic Orders.",
+      "claim_type": "EXPLICIT",
+      "source": "The final reference set contained 100 proteobacterial and 81 actinobacterial genomes representing a total of 15 phylogenetic Orders, exemplifying the diversity of phenazine producers (Figure 1C; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data generated in the study and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "62cfc7a3-25e9-4b02-8c5c-141144d57a30",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C5",
+      "claim": "Species organization in the phenazine biosynthesis phylogenetic tree substantially differs from the known phylogenetic relationship of phz+ bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, species organization in this tree substantially differ from the known phylogenetic relationship of phz+ bacteria in our database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the phylogenetic analysis presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "5c64687e-0f51-4a81-8a44-dfa805ed9b47",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C6",
+      "claim": "Multiple horizontal gene transfer (HGT) events have likely shaped the evolution of phenazine biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support and expand on previous smaller scale analyses made with the phzF gene (Mavrodi et al., 2010), and suggest that multiple horizontal gene transfer (HGT) events have likely shaped the evolution of phenazine biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the phylogenetic patterns observed and supported by previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "da64ad55-e418-4ddd-8da1-8537d3e323c0",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C7",
+      "claim": "The computational approach accurately captures the total phz+ bacteria level even in communities that contain more than one producer.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our simulations capture the total phz+ bacteria level even in communities that contain more than one producer (Figure 2B) and the relative proportions of these different phz+ bacteria are measured with low error (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation data presented in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "57cdce2c-8d0b-4360-8afa-51e54e94833e",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C8",
+      "claim": "The approach could identify as little as 0.1% phz+ bacteria, even in relatively low coverage metagenomic samples (5\u201310M reads).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our approach could identify as little as 0.1% phz+ bacteria, even in relatively low coverage metagenomic samples (5\u201310M reads) and detected no producers in any of the negative controls (Figure 2B; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation validation data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "d9176bac-4746-46da-9ad3-1bc9da33acb4",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C9",
+      "claim": "The number of phz+ pseudomonads in wheat rhizosphere was estimated at 6.5 \u00d7 10^6 cfu/g roots and at 1.6 \u00d7 10^3 cfu/g in bulk soil.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of phz+ pseudomonads was determined using a culturing-based approach and was estimated at 6.5 \u00d7 106 cfu/g roots in the wheat rhizosphere and at 1.6 \u00d7 103 cfu/g in bulk soil, in agreement with previous reports (Mavrodi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from culturing experiments conducted in this study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "66b5c2f4-1b3c-41d8-bfb5-b8300450add6",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C10",
+      "claim": "Metagenomic analysis found an average relative abundance of 1.1% (\u00b1 0.4%) phz+ bacteria in wheat seedling rhizosphere and 0.32% (\u00b1 0.14%) in bulk field soil.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the culturing results, we find clear signal representing phz+ bacteria in these samples, with an average relative abundance of 1.1% (+ / - 0.4%) in the wheat seedling rhizosphere and 0.32% (+ / - 0.14%) of the bulk field soil microbiome (Figure 3A; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is metagenomic data from the field validation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "5d462c74-87ee-4361-b88d-2c622a4ce01d",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C11",
+      "claim": "Two different bacterial clades occur at roughly the same abundance in wheat rhizosphere: fluorescent pseudomonads and Streptomyces spp.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, a closer examination of the phz+ bacteria in our rhizosphere metagenomes showed that two different bacterial clades occur at roughly the same abundance in this niche: the expected, culture-validated fluorescent pseudomonads, and Streptomyces spp., which were not previously known to occur in meaningful levels in this environment (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a novel finding from the metagenomic analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "6c8c35ba-e25a-4205-8c33-bfac8d849c25",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C12",
+      "claim": "Combining the average phz+ pseudomonad cfu/g with their average estimated percent out of all bacteria suggests a wheat seedling rhizosphere bacterial load of ~10^9 bacteria per gram roots.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, combining the average phz+ pseudomonad cfu/g with their average estimated percent out of all bacteria suggests a wheat seedling rhizosphere bacterial load of ~109 bacteria per gram roots, in agreement with other rhizosphere load estimates (Bakker et al., 2013; Mavrodi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on combining culturing and metagenomic data, validated by comparison to literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "9c5356a6-b12e-4956-8612-60f5a97e73c9",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C13",
+      "claim": "More than 28% (229/807) of all samples analyzed contained at least 0.25% phz+ bacteria in their microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated phz+ levels range from 0% to 2.7% of total environmental bacteria, with >28% (229/807) of all samples containing at least 0.25% phz+ bacteria in their microbiome (Figure 4A; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statistic from the global metagenomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "bf1cdcee-1e22-4289-a1a2-9c012614a39f",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C14",
+      "claim": "There is a 1.9-fold higher average phz+ level in rhizospheres compared to bulk soils.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we find a 1.9-fold higher average phz+ level in rhizospheres compared to bulk soils (Figure 4A; p=4.2\u00d710\u221217; Wilcoxon).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the global metagenomic analysis with a p-value indicating significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "a6c251d4-06b6-4e7f-b32d-d5237be7bc77",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C15",
+      "claim": "Samples with high total producer levels (at least 0.5% phz+) are 8.9-fold enriched in samples annotated as rhizosphere compared to bulk soil.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, samples with high total producer levels (at least 0.5% phz+) are 8.9-fold enriched in samples annotated as rhizosphere compared to bulk soil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the global metagenomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "03e8a609-37cd-4eec-8a4b-bb705b4f22fa",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C16",
+      "claim": "Higher phz+ levels are particularly common in crops such as sugarcane, wheat, barley, maize, and citrus, as well as the model plant Arabidopsis thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher phz+ levels are particularly common in crops such as sugarcane, wheat, barley, maize, and citrus, as well as the model plant Arabidopsis thaliana (Figure 4A; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the global metagenomic analysis showing crop-specific patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "907d5197-2f0a-41e7-9b37-5886249cb30c",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C17",
+      "claim": "phz+ Streptomyces represent a major portion of phz+ bacteria in most habitats.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we find that phz+ Streptomyces represent a major portion of phz+ bacteria in most habitats (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis of the metagenomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "1039c813-09e9-4e61-a199-c5a7bcfb31ad",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C18",
+      "claim": "phz+ Streptomyces are detected in substantial levels in over 67% (154/229) of phz+ rich samples (containing at least 0.25% phz+ bacteria).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, phz+ Streptomyces are detected in substantial levels in over 67% (154/229) of phz+ rich samples (containing at least 0.25% phz+ bacteria), both soil and rhizosphere derived (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the taxonomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "2984002a-442f-4b7d-b86d-f5eab580e42a",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C19",
+      "claim": "Xanthomonadales phz+ bacteria were detected in 22% (50/229) of phz+ rich samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we detected Xanthomonadales phz+ bacteria in 22% (50/229) of our phz+ rich samples (Figure 4\u2014figure supplement 2; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis of the metagenomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "2c028bc0-55c1-4dea-8280-63cf83a26cc4",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C20",
+      "claim": "High levels of Xanthomonadales phz+ bacteria occur exclusively in plant rhizosphere microbiomes, preferentially colonizing maize, citrus, sugarcane, and A. thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "High levels of these phz+ bacteria occur exclusively in plant rhizosphere microbiomes, preferentially colonizing maize, citrus, sugarcane, and A. thaliana (Figure 4B; Figure S5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic and habitat analysis of the metagenomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "5549006d-2bd5-40ca-bb29-6719139e5e54",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C21",
+      "claim": "Xanthomonadales bacteria represent the most abundant species in the data, reaching up to 2.7% of all bacteria in the maize rhizosphere.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their notable distribution, Xanthomonadales bacteria represent the most abundant species in our data, reaching up to 2.7% of all bacteria in the maize rhizosphere (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the metagenomic analysis showing the maximum abundance observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "385c6363-1943-4c3d-9c66-b18920352c7c",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C22",
+      "claim": "21 samples contain substantial levels of phdA+ bacteria (at least 0.25%).",
+      "claim_type": "EXPLICIT",
+      "source": "While we find scarce evidence for the podA pyocyanin oxidative demethylation gene (Costa et al., 2017) in these soil and plant environments, 21 samples contain substantial levels of phdA+ bacteria (at least 0.25%; Supplementary file 4), whose gene product begins the degradation of PCA (Costa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the phenazine degradation gene analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "90c5133f-4aea-48dd-8d61-b20fdd2a5f75",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C23",
+      "claim": "71% (15/23) of samples with phdA+ bacteria were annotated as switchgrass rhizospheres.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 71% (15/23) of these samples were annotated as switchgrass rhizospheres, with six samples also containing similar or higher phz+ bacterial levels composed of mostly Streptomyces (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the phenazine degradation gene analysis showing habitat specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "c48546b2-89c4-4d36-abf4-5835b696c4e3",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C24",
+      "claim": "Metagenomic sequencing data almost exclusively maps to Dyella rather than Lysobacter among Xanthomonadales.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we find that our metagenomic sequencing data almost exclusively maps to Dyella rather than Lysobacter (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis of Xanthomonadales.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "fcb41e57-7f78-48f0-84aa-700ce542bac3",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C25",
+      "claim": "D. japonica is likely to produce phenazines that are similar or identical to those previously detected in L. antibioticus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, D. japonica is likely to produce phenazines that are similar or identical to those previously detected in L. antibioticus (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on genomic comparison between D. japonica and L. antibioticus.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "10c9982a-da01-4127-9cc0-a6fe6b3a0972",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C26",
+      "claim": "WT D. japonica produces a bright orange pigment when grown in minimal medium for 48 hr, while both mutant cultures (\u0394phzA and \u0394phzT) remain completely colorless.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while WT D. japonica produce a bright orange pigment when grown in minimal medium for 48 hr, both mutant cultures remain completely colorless, indicating that they are phenazine deficient (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the phenazine production assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "0f12e7e2-e9b1-41b4-be85-5cc47f8c1d5a",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C27",
+      "claim": "D. japonica produces the precursor PDC, and the potent antimicrobials myxin and a reduced myxin derivative (1-Hydroxy-6-methoxyphenazine-N10-oxide).",
+      "claim_type": "EXPLICIT",
+      "source": "These included the precursor PDC, and the potent antimicrobials myxin and a reduced myxin derivative (1-Hydroxy-6-methoxyphenazine-N10-oxide) (Chowdhury et al., 2012; Weigele et al., 1970; Figure 5D; Figure 5\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from LC-MS analysis identifying specific phenazines.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "d2ea44c3-e041-446c-8988-7f3f106f80f7",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C28",
+      "claim": "The conserved transcription factor deleted in the analysis (phzT) is an essential regulator of phenazine biosynthesis in D. japonica.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the conserved transcription factor deleted in our analysis is an essential regulator of phenazine biosynthesis in this organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phenotype of the \u0394phzT mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "8209fec4-1ff5-4943-98ab-c8f5571dddaa",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C29",
+      "claim": "D. japonica upregulates phenazine biosynthesis during phosphate limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps not surprisingly, therefore, we find similar induction of phenazine biosynthesis in phosphate limited D. japonica cultures, even after only 24 hr (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the phosphate limitation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "2ab4a309-455d-4ad5-9d51-62e1057eb7f8",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C30",
+      "claim": "D. japonica accumulates to high levels in the maize mono-colonization model, reaching an average of 1.5 \u00d7 10^6 cfu/mg root-base.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that D. japonica accumulates to high levels in this mono-colonization model, reaching an average of 1.5 \u00d7 106 cfu/mg root-base (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the gnotobiotic maize colonization assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "2d5626c3-c060-4721-b592-b81e46a1f6fa",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C31",
+      "claim": "Phenazine-deficient mutants accumulate to a slightly higher level (1.5-fold; p=0.013) than wild-type D. japonica in the maize colonization model.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that phenazine-deficient mutants accumulate to a slightly higher level (1.5-fold; p=0.013; t-test) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the gnotobiotic maize colonization assay with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "a3ef224f-2584-4afe-a04f-27239b7e7380",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C32",
+      "claim": "D. japonica colonizes the root interior and root hair tips of maize seedlings.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial HCR signal indicative of microaggregate formation was readily visible within the root inner compartment is readily detected (Figure 6D). In addition, root hair tips appeared to be preferentially colonized by D. japonica (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the in situ imaging of bacterial colonization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "265a4a6d-efce-4d38-b390-6394bb35c1ab",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C33",
+      "claim": "Phenazine biosynthesis is a highly prevalent trait that is enriched in plant microbiomes relative to bulk soils.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed and field-validated a computational method to analyze >800 metagenomes from across the world and show that phenazine biosynthesis is a highly prevalent trait that is enriched in plant microbiomes relative to bulk soils.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the global metagenomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "57216eba-7f93-4cd3-9de5-b2dd6de4dffb",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C34",
+      "claim": "Known phenazine biodegradation genes are rarely detected in soil and plant-associated environments.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, known phenazine biodegradation genes are rarely detected in these environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the global metagenomic analysis of degradation genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "cb372055-ede2-404f-b006-00b04f408146",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C35",
+      "claim": "Phenazines are heterotricyclic N-containing metabolites mainly produced by bacteria in soil and plant-root microbiomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenazines are heterotricyclic N-containing metabolites mainly produced by bacteria in soil and plant-root microbiomes (Biessy and Filion, 2018; Mavrodi et al., 2010), though some are also important in chronic human infections (Sismaet et al., 2016; Wilson et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "1dc490b6-cb21-4aef-961c-d7f05ae1185a",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C36",
+      "claim": "Phenazines act as broad-spectrum antibiotics by generating toxic reactive oxygen species (ROS) as well as interfering with cellular respiration chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of this diverse family of redox-active metabolites act as broad-spectrum antibiotics by generating toxic reactive oxygen species (ROS) as well as interfering with cellular respiration chains (Baron et al., 1989; Perry and Newman, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about phenazine mechanisms supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "f03044b7-91b0-488a-aea6-efab8134eb55",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C37",
+      "claim": "Phenazines can promote survival under anoxic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their activity as antibiotics, phenazines can benefit their producers in other ways: promoting survival under anoxic conditions (Glasser et al., 2014; Wang et al., 2010), facilitating biofilm development (Dietrich et al., 2013) and iron acquisition (Wang et al., 2011), and increasing the fitness of phenazine-producing (phz+) fluorescent pseudomonads in the plant rhizosphere (LeTourneau et al., 2018; Mazzola et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "3a70f46c-c11a-4ad5-bd35-7f62de52e1c7",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C38",
+      "claim": "Phenazines can facilitate biofilm development.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their activity as antibiotics, phenazines can benefit their producers in other ways: promoting survival under anoxic conditions (Glasser et al., 2014; Wang et al., 2010), facilitating biofilm development (Dietrich et al., 2013) and iron acquisition (Wang et al., 2011), and increasing the fitness of phenazine-producing (phz+) fluorescent pseudomonads in the plant rhizosphere (LeTourneau et al., 2018; Mazzola et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "bdb79c5d-b5d5-4f2d-987f-c6e776ddfc00",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C39",
+      "claim": "Phenazines can facilitate iron acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their activity as antibiotics, phenazines can benefit their producers in other ways: promoting survival under anoxic conditions (Glasser et al., 2014; Wang et al., 2010), facilitating biofilm development (Dietrich et al., 2013) and iron acquisition (Wang et al., 2011), and increasing the fitness of phenazine-producing (phz+) fluorescent pseudomonads in the plant rhizosphere (LeTourneau et al., 2018; Mazzola et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "9f846fad-21fc-45a7-8a04-69e0c1de1faa",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C40",
+      "claim": "Phenazines can increase the fitness of phenazine-producing (phz+) fluorescent pseudomonads in the plant rhizosphere.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their activity as antibiotics, phenazines can benefit their producers in other ways: promoting survival under anoxic conditions (Glasser et al., 2014; Wang et al., 2010), facilitating biofilm development (Dietrich et al., 2013) and iron acquisition (Wang et al., 2011), and increasing the fitness of phenazine-producing (phz+) fluorescent pseudomonads in the plant rhizosphere (LeTourneau et al., 2018; Mazzola et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "be45c6eb-c32e-422b-8acb-ae9826fa3680",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C41",
+      "claim": "Phenazines produced by fluorescent pseudomonads have been shown to protect major crops such as wheat and tomato from disease-causing fungi and water molds.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of the plant microbiome, phenazines produced by fluorescent pseudomonads have been shown to protect major crops such as wheat (Chen et al., 2018; Thomashow et al., 1990) and tomato (Chin-A-Woeng et al., 1998) from disease-causing fungi and water molds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "603fe744-e0b1-4293-8d6b-caeaa6e2bb8e",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C42",
+      "claim": "Naturally produced phenazine 1-carboxylic acid (PCA) measured in commercial wheat rhizospheres reached levels as high as 1 \u00b5g PCA per gram fresh roots.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, naturally produced phenazine 1-carboxylic acid (PCA) measured in commercial wheat rhizospheres reached levels as high as 1 \u00b5g PCA per gram fresh roots, and strongly correlated with the number of cultured phz+ pseudomonads (Mavrodi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "556603a9-4e19-41b4-ae14-e2a808e2b31a",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C43",
+      "claim": "The pathogenic fungus, Fusarium oxysporum f. sp. radicis-lycopersici, was previously shown to colonize similar tomato root zones as plant-growth promoting phz+ pseudomonads.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the pathogenic fungus, Fusarium oxysporum f. sp. radicis-lycopersici, was previously shown to colonize similar tomato root zones as plant-growth promoting phz+ pseudomonads, where they likely compete for plant-root exudates (Bolwerk et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "73701254-64e0-4372-bf85-58abc51878be",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C44",
+      "claim": "Phenazine-producing bacteria are positively correlated with warmer and more arid soils and lower species diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenazine-producing bacteria are positively correlated with warmer and more arid soils and lower species diversity (Maestre et al., 2015; Mavrodi et al., 2012), suggesting that in a warming climate, phenazine production may impact the composition of the microbial communities associated with certain crops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "e4287bf6-7c60-4bae-8445-ab6e9c4a6ed5",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C45",
+      "claim": "Phenazines can be degraded and consumed by other soil bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, phenazines can also be degraded and consumed by other soil bacteria (Costa et al., 2015; Yang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "b9629603-289d-4f2f-ae5a-c895bf65fd3c",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C46",
+      "claim": "All producer genomes contain a conserved set of core biosynthesis genes phzA/BCDEFG.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this diversity, all producer genomes contain a conserved set of core biosynthesis genes phzA/BCDEFG (Biessy and Filion, 2018; Mavrodi et al., 2010; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations and shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "8e0a3d82-e729-42dc-8b01-c88ea4c87ce8",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C47",
+      "claim": "The core biosynthesis proteins synthesize one of two main phenazines that act as precursors for all other derivatives: PCA in pseudomonads and phenazine-1,6-dicarboxylic acid (PDC) in most other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these proteins synthesize one of two main phenazines that act as precursors for all other derivatives: PCA in pseudomonads and phenazine-1,6-dicarboxylic acid (PDC) in most other species (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge shown in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "b96869bb-9d86-460e-bd40-ff6502a3fd11",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C48",
+      "claim": "Phenazine chemical diversity is determined by specific auxiliary genes, which modify and decorate the core phenazine structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenazine chemical diversity is determined by specific auxiliary genes, which modify and decorate the core phenazine structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about phenazine biosynthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "b53769c9-200b-4cee-b068-c269177c21e5",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C49",
+      "claim": "Phenazine modifications can strongly affect the toxicity spectrum and function of different phenazine species.",
+      "claim_type": "EXPLICIT",
+      "source": "These modifications can strongly affect the toxicity spectrum and function of different phenazine species (Laursen and Nielsen, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "6166c579-acd2-4e90-bcba-85a4d731203d",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C50",
+      "claim": "Highly similar copies of the phzC gene were common in non-producer genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "During this analysis, we noticed that highly similar copies of the phzC gene were common in non-producer genomes and therefore removed this gene from our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation made during the database construction process.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "9bf2a889-c753-467e-b840-e18da745c1d8",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C51",
+      "claim": "Pseudomonas species are highly clustered in the phenazine biosynthesis phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "While Pseudomonas species are highly clustered, other clades form surprising groupings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "d37601e3-6dab-4bdf-8ca3-70d17800670a",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C52",
+      "claim": "Phenazine-biosynthesis actinobacterial sequences of the Micrococcales order are more similar to those from proteobacteria of the Enterobacterales, Myxococcales and Vibrionales orders.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, phenazine-biosynthesis actinobacterial sequences of the Micrococcales order (e.g., Brevibacterium linens) are more similar to those from proteobacteria of the Enterobacterales, Myxococcales and Vibrionales orders (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the phylogenetic analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "781439ad-feb7-400d-8994-73efd375cb5b",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C53",
+      "claim": "Burkholderiales and Xanthomonadales are both embedded deep within the actinobacterial part of the phenazine biosynthesis tree rather than near other proteobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Burkholderiales and Xanthomonadales are both embedded deep within the actinobacterial part of the tree rather than near other proteobacteria (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the phylogenetic analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "de058a21-356f-4fba-aaf1-929bd75eb1c4",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C54",
+      "claim": "The approach accurately captures the levels of phz+ and phenazine-degrading bacteria in simulated communities across a wide range of abundances and library coverages.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that this approach accurately captures the levels of phz+ and phenazine-degrading bacteria (Mycobacterium fortuitum CT6) in the same simulated communities and across a wide range of phdA+/podA+ bacterial abundances, and library coverages (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result from the simulation analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "a91a8c08-8e78-46c8-a0b7-5b70dbd84672",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C55",
+      "claim": "Three species in the reference set comprise >87% of the phz+ Pseudomonas rhizosphere sequencing reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, three species in our reference set comprise >87% of the phz+ Pseudomonas rhizosphere sequencing reads (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis of the wheat rhizosphere samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "c60f08ef-5182-4009-80ce-5e4948623f79",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C56",
+      "claim": "Pseudomonas chlororaphis aureofaciens 30-84 contains an adjacent phzO modification gene, suggesting that pseudomonads in this environment produce PCA and 2-hydroxyphenazine-1-carboxylic acid (2-OH-PCA).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas these P. fluorescens and P. orientalis genomes contain a solo phzA/BCDEFG operon, Pseudomonas chlororaphis aureofaciens 30-84 also contains an adjacent phzO modification gene, suggesting that pseudomonads in this environment produce PCA and 2-hydroxyphenazine-1-carboxylic acid (2-OH-PCA) (Delaney et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on genomic analysis and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "03b0bc81-0abe-4938-985a-2232f6275396",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C57",
+      "claim": "The Streptomyces mapped reads mapped to many species rather than just a few genomes, as seen for Pseudomonas.",
+      "claim_type": "EXPLICIT",
+      "source": "The Streptomyces mapped reads in our data mapped to many species rather than just a few genomes, as seen for Pseudomonas (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis of the wheat rhizosphere samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "756fbad6-4405-44f7-a70a-a12c76f7b666",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C58",
+      "claim": "Three main Streptomyces groups occupy the wheat rhizosphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, binning these Streptomyces genomes according to similarity in their phenazine genomic regions revealed that three main groups occupy the wheat rhizosphere (Figure 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic and genomic analysis of the wheat rhizosphere samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "8abffdfe-573a-47e5-a172-b85f18bd8e52",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C59",
+      "claim": "The phz+ Streptomyces community is likely to produce multiple chemically diverse phenazines in the wheat rhizosphere environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These data imply that in contrast to pseudomonads, the phz+ Streptomyces community is likely to produce multiple chemically diverse phenazines in this environment, some of which await description.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genomic analysis of Streptomyces phenazine biosynthesis genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "a1b1675c-2d5c-41e1-96c5-964376a70d9c",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C60",
+      "claim": "The metagenomic-based approach was applied to 799 publicly available shotgun-metagenomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To acquire a more complete picture of phenazine biosynthetic and catabolic potentials in soils and crop rhizospheres, we applied our approach to an additional 799 publicly available shotgun-metagenomes (Supplementary file 4; Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "2897e1b8-f317-423d-ae1a-f800d289e3e9",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C61",
+      "claim": "The samples were broadly classified as either soil (58.7%; 474/807) or rhizosphere (41.3%; 333/807).",
+      "claim_type": "EXPLICIT",
+      "source": "These new samples were combined with the eight wheat and field soil samples described above and were broadly classified as either soil (58.7%; 474/807) or rhizosphere (41.3%; 333/807).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample classification in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "020d6341-bc4a-4971-9788-d5a55cf0cd6c",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C62",
+      "claim": "In almost all cases, phz+ Streptomyces can be found along with other producers from different clades, including various actinobacteria and proteobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In almost all cases, phz+ Streptomyces can be found along with other producers from different clades, including various actinobacteria and proteobacteria (Figure 4\u2014figure supplement 2; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis of the global metagenomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "6cb3d16c-c245-40a7-ace8-6b14f45a956b",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C63",
+      "claim": "Streptomyces sp. WAC04657 is a cosmopolitan phz+ species that commonly appears in both soil and rhizosphere samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher-resolution analysis of the mapped phenazine biosynthesis genes suggests Streptomyces sp. WAC04657 is a cosmopolitan phz+ species that commonly appears in both soil and rhizosphere samples (Figure 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the species-level taxonomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "ae819f7a-c859-4c77-9dd5-754edbe7aff8",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C64",
+      "claim": "Seven Streptomyces species are >2 fold enriched in plant-associated samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find seven Streptomyces species that are >2 fold enriched in plant-associated samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of soil vs. rhizosphere samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "0cc3209a-6e67-4114-aa19-dce673d83477",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C65",
+      "claim": "The genomes of five of the seven rhizosphere-enriched Streptomyces contain the mevalonate pathway for phenazine prenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the genomes of five of these Streptomyces contain the mevalonate pathway for phenazine prenylation (Figure 3E\u2013F), implying these particular types of phenazines could be globally enriched in rhizosphere microbiomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the genomic analysis with an inference about global distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "0a2926ca-f56d-4388-810f-a573ce3983cf",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C66",
+      "claim": "Low levels of other phz+ actinobacteria such as Streptosporangiales and Pseudonocardiales are common in many habitats.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to Streptomyces, low levels of other phz+ actinobacteria such as Streptosporangiales and Pseudonocardiales are common in many habitats (Figure 4B; Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis of the global metagenomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "8c05b53c-5edc-4ae5-ae93-67e05ae30aa1",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C67",
+      "claim": "Pseudomonas is detected at high levels almost exclusively in Washington wheat samples.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Pseudomonas is detected at high levels almost exclusively in our Washington wheat samples and Myxococcales are mainly detected in the barley microbiome (Figure 4\u2014figure supplement 2; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis showing habitat specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "acc68d6e-5aeb-42c8-ad84-270569bef5e6",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C68",
+      "claim": "Myxococcales are mainly detected in the barley microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Pseudomonas is detected at high levels almost exclusively in our Washington wheat samples and Myxococcales are mainly detected in the barley microbiome (Figure 4\u2014figure supplement 2; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis showing habitat specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "4f16ff96-8765-49cd-85d0-faf66e2d88c1",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C69",
+      "claim": "Burkholderiales levels are highest in agricultural field soils.",
+      "claim_type": "EXPLICIT",
+      "source": "While Burkholderiales are commonly detected, their levels are highest in agricultural field soils (Figure 4\u2014figure supplement 2; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the taxonomic analysis showing habitat preference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "931a14b7-8ed0-4d7f-a54c-4902968794b4",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C70",
+      "claim": "The phz+ reference database contains only two distantly related groups belonging to the Xanthomonadales: Lysobacter and Dyella.",
+      "claim_type": "EXPLICIT",
+      "source": "Our phz+ reference database contains only two distantly related groups belonging to the Xanthomonadales: Lysobacter and Dyella (Figure 1C; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the reference database composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "f56c7620-c16d-471e-9565-2b459d222738",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C71",
+      "claim": "phz+ Dyella were only recently isolated from the A. thaliana rhizosphere and were not studied with respect to their putative phenazine biosynthesis capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these phz+ Dyella were only recently isolated from the A. thaliana rhizosphere and were not studied with respect to their putative phenazine biosynthesis capabilities (Levy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "f60a13be-94f8-4e53-8f6c-067e90ad3e27",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C72",
+      "claim": "The L. antibioticus gene products LaPhzS and LaPhzNO1 catalyze the decarboxylative hydroxylation and N-oxidations of PDC to generate the phenazine iodinin.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the L. antibioticus gene products LaPhzS and LaPhzNO1 were shown to catalyze the decarboxylative hydroxylation and N-oxidations of PDC to generate the phenazine iodinin (Zhao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "d8b7b7fd-7199-4c7a-82c6-d6f9c3e510ef",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C73",
+      "claim": "The SAM-dependent O-methyltransferase, LaPhzM, converts iodinin into the highly toxic phenazine, myxin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the SAM-dependent O-methyltransferase, LaPhzM, was later found to convert iodinin into the highly toxic phenazine, myxin (Jiang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "394be24d-df80-428b-a602-0b3acb778cf9",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C74",
+      "claim": "D. japonica and L. antibioticus have similar gene content and a conserved operonic structure in their phenazine biosynthesis clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the biosynthesis clusters of both L. antibioticus and D. japonica and found similar gene content between these organisms, as well as a conserved operonic structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "42b94f87-f92a-4f25-a717-45ca74b9c7ca",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C75",
+      "claim": "An adjacent putative transcription factor was conserved between L. antibioticus and D. japonica.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, an adjacent putative transcription factor (TF) was also conserved between these organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "93c59162-f75a-4407-9690-027fcaabdd6c",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C76",
+      "claim": "D. japonica produces the phenazines PDC, myxin, and 1-Hydroxy-6-methoxyphenazine-N10-oxide that were previously described in L. antibioticus.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected several phenazines previously described in L. antibioticus in the WT cultures but not in the phenazine deficient mutants (Figure 5D). These included the precursor PDC, and the potent antimicrobials myxin and a reduced myxin derivative (1-Hydroxy-6-methoxyphenazine-N10-oxide) (Chowdhury et al., 2012; Weigele et al., 1970; Figure 5D; Figure 5\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from LC-MS analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "c2ad7bf3-d379-4abf-9bcc-86615b5dba44",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C77",
+      "claim": "Phosphate limitation has been implicated in the induction of phenazine biosynthesis in P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "In P. aeruginosa, phosphate limitation has been implicated in the induction of phenazine biosynthesis (Whooley and McLoughlin, 1982; similar trends have been seen for other antibiotics made by diverse bacteria [Mart\u00edn, 1977]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "c9bec62d-ae0e-49a3-b44f-6b1af74217a8",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C78",
+      "claim": "D. japonica colonization levels are comparable to strong maize colonizers tested in the gnotobiotic model.",
+      "claim_type": "EXPLICIT",
+      "source": "These colonization levels are comparable to strong maize colonizers tested in this model (Niu et al., 2017) and are similar to those previously reported for plant growth-promoting Pseudomonas fluorescence in a tomato seedling model (Simons et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to literature values supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "e722a170-ba0e-43f0-9894-0cc8dcc2ac5e",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C79",
+      "claim": "Phenazine production in the mono-colonization assay has a slight adverse effect on colonization efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the A. thaliana isolated D. japonica is a robust maize colonizer and that phenazine production in this mono-colonization assay has a slight adverse effect on colonization efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the colonization data comparing WT and mutant strains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "c98d9c22-1ba8-4f4e-a77b-11c0f83d3689",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C80",
+      "claim": "Most crops and agricultural soils are colonized by different phz+ bacteria, the most common of which are Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of research on phenazine production has been in pseudomonads (Chincholkar and Thomashow, 2013), our study demonstrates that most crops and agricultural soils are colonized by different phz+ bacteria, the most common of which are Streptomyces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the global metagenomic analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "5f405561-2e25-4598-b73f-8192e08a3ff2",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C81",
+      "claim": "Particular Streptomyces species are more common in plant rhizospheres compared with bulk soils.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our data suggest that particular Streptomyces species are more common in plant rhizospheres compared with bulk soils.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of soil vs. rhizosphere samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "2d3564d1-cedf-454e-9012-84f2d83fc377",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C82",
+      "claim": "The potential roles of prenylated phenazines in bacterial physiology, root colonization and/or pathogen inhibition are completely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The potential roles of prenylated phenazines in bacterial physiology, root colonization and/or pathogen inhibition are completely unknown and represent an exciting research direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "489bd039-476e-458f-a7f7-c4b088d05672",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C83",
+      "claim": "Prenylated phenazines could be common in the A. thaliana rhizosphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that prenylated phenazines could be common in the A. thaliana rhizosphere, presenting an attractive model system for studying these metabolites, in planta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genomic analysis of Streptomyces in A. thaliana rhizosphere.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "c4bafeef-f138-494d-9fd2-3110820c06bf",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C84",
+      "claim": "Phenazines might be expected to rise in abundance in certain crop soils as the climate warms.",
+      "claim_type": "EXPLICIT",
+      "source": "That phenazine degradation genes are generally more scarce than phenazine production genes, with some notable exceptions (e.g. switchgrass rhizospheres), suggests that phenazines might be expected to rise in abundance in certain crop soils as the climate warms (Maestre et al., 2015; Mavrodi et al., 2012); direct measurements of phenazine concentrations in soils will be needed to test this prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the data and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "42f8841a-2f39-4214-9801-df30ac67114b",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C85",
+      "claim": "D. japonica is a robust seedling mono-colonizer that appears to accumulate within the root interior as well as the root hair tips.",
+      "claim_type": "EXPLICIT",
+      "source": "D. japonica is a robust seedling mono-colonizer that appears to accumulate within the root interior as well as the root hair tips, where root exudates levels are high (Canarini et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings from the colonization assays.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "f7205067-55ca-4533-a75d-d176456dd9e2",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C86",
+      "claim": "A mutant deficient in phenazine biosynthesis exhibited somewhat greater plant colonization than the wild type in the gnotobiotic model.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a mutant deficient in phenazine biosynthesis exhibited somewhat greater plant colonization than the wild type in this model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the colonization assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "fd9d295b-6e17-4bdc-a119-28dacea3796b",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C87",
+      "claim": "Phenazines can have a fitness cost under some conditions in isogenic cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Because phenazines can have a fitness cost under some conditions in isogenic cultures (Meirelles and Newman, 2018), this result is perhaps unsurprising.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "488a693a-2810-46ad-8706-c7511c166197",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C88",
+      "claim": "Any fitness advantage due to phenazine production would be expected to manifest at a later stage of growth or in the presence of competing organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, based on the physiological functions of phenazines (Chincholkar and Thomashow, 2013), we would expect any fitness advantage due to phenazine production to manifest at a later stage of growth, be the phenazine producer in mono-culture or in the presence of competing organisms (LeTourneau et al., 2018; Mazzola et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "91343769-9c50-4e5b-951b-fcc1ed794a69",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C89",
+      "claim": "The natural abundance of phz+ D. japonica in the microbiomes of economically important crops, as well as its bioactive phenazines suggest that this organism could have important agricultural effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The natural abundance of phz+ D. japonica in the microbiomes of economically important crops, as well as its bioactive phenazines suggest that this organism could have important agricultural effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "4cf8945b-f27d-433b-b91d-52e76bac1582",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C90",
+      "claim": "The basic premise of the metagenomic approach is that a measure for total-bacterial signal can be calculated using a defined set of ubiquitous, single-copy genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic premise of this approach is that a measure for total-bacterial signal can be calculated using a defined set of ubiquitous, single-copy genes (Manor and Borenstein, 2015; Parks et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "16678b21-4747-49a8-a394-b68647efe429",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C91",
+      "claim": "The reference signal can be used to normalize gene abundances between samples in a robust manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This reference signal can then be used to normalize gene abundances between samples in a robust manner (Manor and Borenstein, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "9f7f8cca-cefa-4879-9409-fd21bc347de5",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C92",
+      "claim": "The metagenomic approach can readily be extended to other metabolite biosynthesis pathways and functional traits of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, this approach can readily be extended to other metabolite biosynthesis pathways and functional traits of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "61bf5243-687a-4d76-b969-f032c777f654",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "claim_id": "C93",
+      "claim": "A culture-independent metagenomic approach can be used to spotlight potential players and traits of interest, allowing for the targeted cultivation of ecologically relevant model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown here, a culture-independent metagenomic approach can be used to spotlight potential players and traits of interest, allowing for the targeted cultivation of ecologically relevant model organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion about the utility of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7b27af95-f123-43a4-b49a-37264026a3c3",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A comprehensive phenazine biosynthesis reference database was constructed containing 181 genomes from 100 proteobacterial and 81 actinobacterial species representing 15 phylogenetic Orders, based on the conserved core genes phzA/BCDEFG (excluding phzC due to non-specificity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C46, and C50 collectively describe the construction of the reference database. The database composition is clearly documented (C3, C4), the rationale is based on established knowledge about conserved core genes (C2, C46), and the exclusion of phzC is justified by observed non-specificity (C50). This is a well-supported methodological foundation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "71caa169-4a8f-4f48-96b4-382c988a4121",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis of phenazine biosynthesis genes reveals substantial differences from known species phylogeny, with unexpected groupings suggesting multiple horizontal gene transfer events shaped phenazine biosynthesis evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C51-C53 describe phylogenetic patterns that deviate from expected taxonomic relationships. The observations are supported by Figure 1C showing specific examples (C52, C53). While HGT is inferred rather than directly demonstrated (C6), the phylogenetic evidence and citation of prior work provide reasonable support for this evolutionary interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "5cc42120-7462-4380-9b60-12d5c10bd18f",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In silico validation using simulated metagenomes demonstrates the computational approach accurately quantifies phz+ bacteria levels (including multiple producers and degraders) down to 0.1% abundance across library coverages of 5-20M reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C54 describe validation results from 1296 simulated communities. The approach shows high accuracy (R=0.99) across diverse conditions including mixed communities, low abundances, and varying sequencing depths (Figure 2B-E). The comprehensive simulation design with technical replicates and randomized community compositions provides strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "8f0a50af-1912-498f-838f-7035afd96e9d",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Field validation in Washington wheat rhizospheres shows metagenomic estimates (1.1% phz+ bacteria) agree with culture-based measurements (6.5\u00d710^6 cfu/g), revealing both expected Pseudomonas and previously undetected Streptomyces at similar abundances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 present converging evidence from culture-based (C9) and metagenomic (C10) approaches. The discovery of abundant Streptomyces (C11) is novel and well-supported by the data. The bacterial load calculation (C12) provides internal consistency by matching literature values. This represents strong field validation of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "daccaf68-04eb-4593-9ee6-b6d0b35f46a2",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Species-level analysis of wheat rhizosphere reveals three Pseudomonas species comprise >87% of phz+ Pseudomonas reads producing PCA and 2-OH-PCA, while Streptomyces show greater diversity with three main groups likely producing multiple chemically diverse phenazines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 describe taxonomic composition with supporting data in Figure 3C-E. The Pseudomonas composition is well-defined (C55), and phenazine predictions are based on genomic analysis (C56). The Streptomyces diversity and inferred chemical diversity (C57-C59) are supported by genomic data, though actual phenazine production remains to be confirmed experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "74b15cf2-6fb5-4297-85ca-4126a3dd62a3",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Global analysis of 807 metagenomes reveals phenazine biosynthesis is prevalent (>28% of samples contain \u22650.25% phz+ bacteria) and significantly enriched in plant rhizospheres versus bulk soils (1.9-fold average, 8.9-fold for high producers), particularly in major crops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 and C33 present the main findings from global analysis with clear statistical support (p=4.2\u00d710^-17 for rhizosphere enrichment, C14). The sample size (807) is substantial, and the crop-specific patterns (C16) are well-documented in Figure 4A and Supplementary file 4. This represents a major discovery about phenazine biogeography.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "2ea5dbd5-f1ae-4e4b-91ca-5419ca29ea11",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Streptomyces represent the most common phz+ bacteria across habitats, detected in >67% of phz+ rich samples, with particular species enriched in rhizospheres and five containing mevalonate pathways for prenylated phenazine production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C62-C65, C80-C81 collectively establish Streptomyces as dominant producers. The prevalence statistics (C18) and co-occurrence patterns (C62) are well-documented. The identification of rhizosphere-enriched species with prenylation pathways (C64-C65) is supported by genomic analysis, though the actual production and ecological roles of prenylated phenazines remain to be demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "f122aafa-e2b3-4e6b-b06f-02326e204998",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Xanthomonadales phz+ bacteria, predominantly Dyella rather than Lysobacter, are detected in 22% of phz+ rich samples, occur exclusively in plant rhizospheres, and reach up to 2.7% abundance in maize\u2014the highest observed in the dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21, C24, and C70 describe a striking pattern of Dyella distribution. The prevalence (C19), habitat specificity (C20), and maximum abundance (C21) are clearly documented. The taxonomic distinction between Dyella and Lysobacter (C24) is supported by metagenomic mapping data (Figure 5A). This represents a major novel finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "af80c860-788a-4284-ac1e-8bd9d4cad412",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phenazine biodegradation genes are rarely detected, with phdA+ bacteria found in only 21 samples (mostly switchgrass rhizospheres) and podA essentially absent, suggesting limited phenazine degradation capacity in these environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 and C34 document the scarcity of degradation genes. The habitat specificity for phdA (71% in switchgrass, C23) is notable. However, the interpretation that degradation is 'limited' should be qualified\u2014absence of known genes doesn't preclude unknown degradation mechanisms. The conclusion is reasonably supported but could benefit from direct phenazine concentration measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "03dad557-83d8-4129-be61-11de1da6b1aa",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Comparative genomic analysis reveals D. japonica and L. antibioticus share similar phenazine biosynthesis gene content and operonic structure, including conserved modification genes and a transcription factor, suggesting D. japonica produces similar phenazines to L. antibioticus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C72-C75 present genomic comparisons. The L. antibioticus biochemistry is established (C72-C73), and the genomic similarity to D. japonica (C74-C75) is documented in Figure 5B. The inference that D. japonica produces similar phenazines (C25) is reasonable based on gene conservation, and is subsequently validated experimentally (see next result).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "85e83d0c-6675-469c-944d-a82c8fc2dc55",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Experimental validation confirms D. japonica produces phenazines: WT produces orange pigment while \u0394phzA and \u0394phzT mutants are colorless, and LC-MS identifies PDC, myxin, and a myxin derivative, demonstrating phzT is an essential regulator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 and C76 provide strong experimental evidence. The visual phenotype (C26, Figure 5C) and LC-MS identification of specific phenazines (C27, C76, Figure 5D) are clear. The identical phenotypes of both mutants (C26) and absence of phenazines in both (C27) strongly support that phzT is essential for biosynthesis (C28). This is well-executed experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "3b5ee9e0-712b-46c3-a643-0d162b04f399",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "D. japonica upregulates phenazine biosynthesis during phosphate limitation, consistent with patterns observed in P. aeruginosa and other antibiotic-producing bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C77 describe phosphate-dependent regulation. The experimental observation (C29, Figure 5E) is clear, showing increased pigmentation after 24 hr in low phosphate. The comparison to P. aeruginosa (C77) provides context. However, the experiment is primarily qualitative (visual assessment) rather than quantitative, which slightly limits the strength of the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "d8c03089-6a62-4340-a122-f261c22a760d",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "D. japonica robustly colonizes maize seedling roots in gnotobiotic assays (1.5\u00d710^6 cfu/mg root-base), with phenazine-deficient mutants showing slightly higher colonization (1.5-fold, p=0.013), suggesting a minor fitness cost of phenazine production in this context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31, C78-C79 present colonization data. The colonization levels (C30) are well-quantified and comparable to literature (C78). The statistical difference between WT and mutant (C31) is significant but modest. The interpretation of fitness cost (C79) is reasonable but should be qualified\u2014the gnotobiotic mono-colonization context may not reflect natural conditions where phenazines provide competitive advantages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "961c58d1-aa48-4c04-a011-fd2b0aeab093",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In situ imaging reveals D. japonica colonizes maize root interior and preferentially accumulates at root hair tips, sites of high root exudate levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C85 describe colonization patterns visualized by HCR-FISH (Figure 6D-E). The imaging clearly shows bacterial presence in root interior and at root hair tips. The association with root exudate sites (C85) is inferred based on literature but is reasonable. The imaging provides strong spatial evidence for colonization patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "f54803e7-d886-487f-830c-6be5c1dd30a9",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Other phz+ actinobacteria (Streptosporangiales, Pseudonocardiales) are common at low levels across habitats, while some producers show habitat specificity: Pseudomonas in Washington wheat, Myxococcales in barley, and Burkholderiales preferentially in agricultural soils.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 describe distribution patterns of less abundant producers. The observations are supported by Figure 4 and supplementary data. However, the Pseudomonas specificity to Washington wheat (C67) may reflect sampling bias rather than true ecological restriction. The patterns are descriptive and well-documented but represent minor findings relative to the main discoveries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "7172262f-9319-44cd-aad8-5ca9abf7d485",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prenylated phenazines may be common in A. thaliana rhizosphere and their roles are unknown; phenazines might increase in abundance in warming soils given the scarcity of degradation genes, though direct measurements are needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 are speculative about future research directions. C82 correctly states current knowledge gaps. C83 is a reasonable inference from genomic data but lacks experimental validation. C84 is highly speculative, extrapolating from gene presence/absence to future phenazine concentrations without considering many other factors (production rates, abiotic degradation, etc.). These represent hypotheses rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "9f4e7f71-0926-4b67-822e-1daf2b8ee2d2",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Phenazine-deficient mutants show slightly better colonization than WT in gnotobiotic assays, consistent with known fitness costs; fitness advantages may manifest later or in competitive contexts, and D. japonica's natural abundance suggests potential agricultural importance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C89 interpret the colonization results. While C86 is supported by data and C87 by literature, the expectations in C88 are speculative\u2014no data is provided for later timepoints or competitive scenarios. C89 is highly speculative about agricultural effects without any pathogen inhibition or crop benefit data. The reasoning is logical but lacks experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "06f9616b-1391-45a5-b07f-3317ba773bc8",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The metagenomic approach uses ubiquitous single-copy genes for normalization, can be extended to other biosynthetic pathways, and enables culture-independent discovery of ecologically relevant organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 describe methodological principles and potential applications. The normalization approach (C90-C91) is well-established and properly cited. The demonstration with phenazine degradation genes (C54) supports extensibility (C92). The successful discovery and cultivation of D. japonica validates the discovery pipeline (C93). These methodological conclusions are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claims establish that phenazines are bacterial antibiotics with diverse functions (ROS generation, respiration interference, anoxic survival, biofilm formation, iron acquisition, rhizosphere fitness), protect crops from pathogens, can be degraded by other bacteria, and show chemical diversity through auxiliary gene modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C35-C45, C47-C49 present established knowledge supported by appropriate citations. These provide necessary context for the study but are not novel findings. They are well-documented in the literature and properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "7a2fda7e-9b3d-460e-987c-2ebfca53e5d5",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The metagenomic approach was applied to 799 additional publicly available metagenomes, which combined with 8 field samples totaled 807 samples classified as 58.7% soil and 41.3% rhizosphere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 describe the dataset analyzed. The sample numbers and classifications are clearly documented in Supplementary file 4. This is straightforward methodological reporting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    },
+    {
+      "id": "c4fdb292-bdb2-4626-93b8-fbeb93029c7f",
+      "content_id": "1d9ee4f1-8c42-4661-8245-fabb3b9f3e1b",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Dyella species were recently isolated from A. thaliana rhizosphere but their phenazine biosynthesis capabilities had not been studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 provides background information properly cited to Levy et al., 2018. This contextualizes why D. japonica phenazine production needed experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:58:10.485043Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8c1a6b2d-f352-4444-8f18-f28ffa2fce0e",
+      "result_id": "7b27af95-f123-43a4-b49a-37264026a3c3"
+    },
+    {
+      "claim_id": "86338a38-8bbd-452c-a4a0-e1c2cdd2dc46",
+      "result_id": "7b27af95-f123-43a4-b49a-37264026a3c3"
+    },
+    {
+      "claim_id": "13c246a6-7fe7-4cd6-b334-35066f82b55e",
+      "result_id": "7b27af95-f123-43a4-b49a-37264026a3c3"
+    },
+    {
+      "claim_id": "b9629603-289d-4f2f-ae5a-c895bf65fd3c",
+      "result_id": "7b27af95-f123-43a4-b49a-37264026a3c3"
+    },
+    {
+      "claim_id": "6166c579-acd2-4e90-bcba-85a4d731203d",
+      "result_id": "7b27af95-f123-43a4-b49a-37264026a3c3"
+    },
+    {
+      "claim_id": "62cfc7a3-25e9-4b02-8c5c-141144d57a30",
+      "result_id": "71caa169-4a8f-4f48-96b4-382c988a4121"
+    },
+    {
+      "claim_id": "5c64687e-0f51-4a81-8a44-dfa805ed9b47",
+      "result_id": "71caa169-4a8f-4f48-96b4-382c988a4121"
+    },
+    {
+      "claim_id": "9bf2a889-c753-467e-b840-e18da745c1d8",
+      "result_id": "71caa169-4a8f-4f48-96b4-382c988a4121"
+    },
+    {
+      "claim_id": "d37601e3-6dab-4bdf-8ca3-70d17800670a",
+      "result_id": "71caa169-4a8f-4f48-96b4-382c988a4121"
+    },
+    {
+      "claim_id": "781439ad-feb7-400d-8994-73efd375cb5b",
+      "result_id": "71caa169-4a8f-4f48-96b4-382c988a4121"
+    },
+    {
+      "claim_id": "da64ad55-e418-4ddd-8da1-8537d3e323c0",
+      "result_id": "5cc42120-7462-4380-9b60-12d5c10bd18f"
+    },
+    {
+      "claim_id": "57cdce2c-8d0b-4360-8afa-51e54e94833e",
+      "result_id": "5cc42120-7462-4380-9b60-12d5c10bd18f"
+    },
+    {
+      "claim_id": "de058a21-356f-4fba-aaf1-929bd75eb1c4",
+      "result_id": "5cc42120-7462-4380-9b60-12d5c10bd18f"
+    },
+    {
+      "claim_id": "d9176bac-4746-46da-9ad3-1bc9da33acb4",
+      "result_id": "8f0a50af-1912-498f-838f-7035afd96e9d"
+    },
+    {
+      "claim_id": "66b5c2f4-1b3c-41d8-bfb5-b8300450add6",
+      "result_id": "8f0a50af-1912-498f-838f-7035afd96e9d"
+    },
+    {
+      "claim_id": "5d462c74-87ee-4361-b88d-2c622a4ce01d",
+      "result_id": "8f0a50af-1912-498f-838f-7035afd96e9d"
+    },
+    {
+      "claim_id": "6c8c35ba-e25a-4205-8c33-bfac8d849c25",
+      "result_id": "8f0a50af-1912-498f-838f-7035afd96e9d"
+    },
+    {
+      "claim_id": "a91a8c08-8e78-46c8-a0b7-5b70dbd84672",
+      "result_id": "daccaf68-04eb-4593-9ee6-b6d0b35f46a2"
+    },
+    {
+      "claim_id": "c60f08ef-5182-4009-80ce-5e4948623f79",
+      "result_id": "daccaf68-04eb-4593-9ee6-b6d0b35f46a2"
+    },
+    {
+      "claim_id": "03b0bc81-0abe-4938-985a-2232f6275396",
+      "result_id": "daccaf68-04eb-4593-9ee6-b6d0b35f46a2"
+    },
+    {
+      "claim_id": "756fbad6-4405-44f7-a70a-a12c76f7b666",
+      "result_id": "daccaf68-04eb-4593-9ee6-b6d0b35f46a2"
+    },
+    {
+      "claim_id": "8abffdfe-573a-47e5-a172-b85f18bd8e52",
+      "result_id": "daccaf68-04eb-4593-9ee6-b6d0b35f46a2"
+    },
+    {
+      "claim_id": "9c5356a6-b12e-4956-8612-60f5a97e73c9",
+      "result_id": "74b15cf2-6fb5-4297-85ca-4126a3dd62a3"
+    },
+    {
+      "claim_id": "bf1cdcee-1e22-4289-a1a2-9c012614a39f",
+      "result_id": "74b15cf2-6fb5-4297-85ca-4126a3dd62a3"
+    },
+    {
+      "claim_id": "a6c251d4-06b6-4e7f-b32d-d5237be7bc77",
+      "result_id": "74b15cf2-6fb5-4297-85ca-4126a3dd62a3"
+    },
+    {
+      "claim_id": "03e8a609-37cd-4eec-8a4b-bb705b4f22fa",
+      "result_id": "74b15cf2-6fb5-4297-85ca-4126a3dd62a3"
+    },
+    {
+      "claim_id": "265a4a6d-efce-4d38-b390-6394bb35c1ab",
+      "result_id": "74b15cf2-6fb5-4297-85ca-4126a3dd62a3"
+    },
+    {
+      "claim_id": "907d5197-2f0a-41e7-9b37-5886249cb30c",
+      "result_id": "2ea5dbd5-f1ae-4e4b-91ca-5419ca29ea11"
+    },
+    {
+      "claim_id": "1039c813-09e9-4e61-a199-c5a7bcfb31ad",
+      "result_id": "2ea5dbd5-f1ae-4e4b-91ca-5419ca29ea11"
+    },
+    {
+      "claim_id": "020d6341-bc4a-4971-9788-d5a55cf0cd6c",
+      "result_id": "2ea5dbd5-f1ae-4e4b-91ca-5419ca29ea11"
+    },
+    {
+      "claim_id": "6cb3d16c-c245-40a7-ace8-6b14f45a956b",
+      "result_id": "2ea5dbd5-f1ae-4e4b-91ca-5419ca29ea11"
+    },
+    {
+      "claim_id": "ae819f7a-c859-4c77-9dd5-754edbe7aff8",
+      "result_id": "2ea5dbd5-f1ae-4e4b-91ca-5419ca29ea11"
+    },
+    {
+      "claim_id": "0cc3209a-6e67-4114-aa19-dce673d83477",
+      "result_id": "2ea5dbd5-f1ae-4e4b-91ca-5419ca29ea11"
+    },
+    {
+      "claim_id": "c98d9c22-1ba8-4f4e-a77b-11c0f83d3689",
+      "result_id": "2ea5dbd5-f1ae-4e4b-91ca-5419ca29ea11"
+    },
+    {
+      "claim_id": "5f405561-2e25-4598-b73f-8192e08a3ff2",
+      "result_id": "2ea5dbd5-f1ae-4e4b-91ca-5419ca29ea11"
+    },
+    {
+      "claim_id": "2984002a-442f-4b7d-b86d-f5eab580e42a",
+      "result_id": "f122aafa-e2b3-4e6b-b06f-02326e204998"
+    },
+    {
+      "claim_id": "2c028bc0-55c1-4dea-8280-63cf83a26cc4",
+      "result_id": "f122aafa-e2b3-4e6b-b06f-02326e204998"
+    },
+    {
+      "claim_id": "5549006d-2bd5-40ca-bb29-6719139e5e54",
+      "result_id": "f122aafa-e2b3-4e6b-b06f-02326e204998"
+    },
+    {
+      "claim_id": "c48546b2-89c4-4d36-abf4-5835b696c4e3",
+      "result_id": "f122aafa-e2b3-4e6b-b06f-02326e204998"
+    },
+    {
+      "claim_id": "931a14b7-8ed0-4d7f-a54c-4902968794b4",
+      "result_id": "f122aafa-e2b3-4e6b-b06f-02326e204998"
+    },
+    {
+      "claim_id": "385c6363-1943-4c3d-9c66-b18920352c7c",
+      "result_id": "af80c860-788a-4284-ac1e-8bd9d4cad412"
+    },
+    {
+      "claim_id": "90c5133f-4aea-48dd-8d61-b20fdd2a5f75",
+      "result_id": "af80c860-788a-4284-ac1e-8bd9d4cad412"
+    },
+    {
+      "claim_id": "57216eba-7f93-4cd3-9de5-b2dd6de4dffb",
+      "result_id": "af80c860-788a-4284-ac1e-8bd9d4cad412"
+    },
+    {
+      "claim_id": "fcb41e57-7f78-48f0-84aa-700ce542bac3",
+      "result_id": "03dad557-83d8-4129-be61-11de1da6b1aa"
+    },
+    {
+      "claim_id": "f60a13be-94f8-4e53-8f6c-067e90ad3e27",
+      "result_id": "03dad557-83d8-4129-be61-11de1da6b1aa"
+    },
+    {
+      "claim_id": "d8b7b7fd-7199-4c7a-82c6-d6f9c3e510ef",
+      "result_id": "03dad557-83d8-4129-be61-11de1da6b1aa"
+    },
+    {
+      "claim_id": "394be24d-df80-428b-a602-0b3acb778cf9",
+      "result_id": "03dad557-83d8-4129-be61-11de1da6b1aa"
+    },
+    {
+      "claim_id": "42b94f87-f92a-4f25-a717-45ca74b9c7ca",
+      "result_id": "03dad557-83d8-4129-be61-11de1da6b1aa"
+    },
+    {
+      "claim_id": "10c9982a-da01-4127-9cc0-a6fe6b3a0972",
+      "result_id": "85e83d0c-6675-469c-944d-a82c8fc2dc55"
+    },
+    {
+      "claim_id": "0f12e7e2-e9b1-41b4-be85-5cc47f8c1d5a",
+      "result_id": "85e83d0c-6675-469c-944d-a82c8fc2dc55"
+    },
+    {
+      "claim_id": "d2ea44c3-e041-446c-8988-7f3f106f80f7",
+      "result_id": "85e83d0c-6675-469c-944d-a82c8fc2dc55"
+    },
+    {
+      "claim_id": "93c59162-f75a-4407-9690-027fcaabdd6c",
+      "result_id": "85e83d0c-6675-469c-944d-a82c8fc2dc55"
+    },
+    {
+      "claim_id": "8209fec4-1ff5-4943-98ab-c8f5571dddaa",
+      "result_id": "3b5ee9e0-712b-46c3-a643-0d162b04f399"
+    },
+    {
+      "claim_id": "c2ad7bf3-d379-4abf-9bcc-86615b5dba44",
+      "result_id": "3b5ee9e0-712b-46c3-a643-0d162b04f399"
+    },
+    {
+      "claim_id": "2ab4a309-455d-4ad5-9d51-62e1057eb7f8",
+      "result_id": "d8c03089-6a62-4340-a122-f261c22a760d"
+    },
+    {
+      "claim_id": "2d5626c3-c060-4721-b592-b81e46a1f6fa",
+      "result_id": "d8c03089-6a62-4340-a122-f261c22a760d"
+    },
+    {
+      "claim_id": "c9bec62d-ae0e-49a3-b44f-6b1af74217a8",
+      "result_id": "d8c03089-6a62-4340-a122-f261c22a760d"
+    },
+    {
+      "claim_id": "e722a170-ba0e-43f0-9894-0cc8dcc2ac5e",
+      "result_id": "d8c03089-6a62-4340-a122-f261c22a760d"
+    },
+    {
+      "claim_id": "a3ef224f-2584-4afe-a04f-27239b7e7380",
+      "result_id": "961c58d1-aa48-4c04-a011-fd2b0aeab093"
+    },
+    {
+      "claim_id": "42f8841a-2f39-4214-9801-df30ac67114b",
+      "result_id": "961c58d1-aa48-4c04-a011-fd2b0aeab093"
+    },
+    {
+      "claim_id": "0a2926ca-f56d-4388-810f-a573ce3983cf",
+      "result_id": "f54803e7-d886-487f-830c-6be5c1dd30a9"
+    },
+    {
+      "claim_id": "8c05b53c-5edc-4ae5-ae93-67e05ae30aa1",
+      "result_id": "f54803e7-d886-487f-830c-6be5c1dd30a9"
+    },
+    {
+      "claim_id": "acc68d6e-5aeb-42c8-ad84-270569bef5e6",
+      "result_id": "f54803e7-d886-487f-830c-6be5c1dd30a9"
+    },
+    {
+      "claim_id": "4f16ff96-8765-49cd-85d0-faf66e2d88c1",
+      "result_id": "f54803e7-d886-487f-830c-6be5c1dd30a9"
+    },
+    {
+      "claim_id": "2d3564d1-cedf-454e-9012-84f2d83fc377",
+      "result_id": "7172262f-9319-44cd-aad8-5ca9abf7d485"
+    },
+    {
+      "claim_id": "489bd039-476e-458f-a7f7-c4b088d05672",
+      "result_id": "7172262f-9319-44cd-aad8-5ca9abf7d485"
+    },
+    {
+      "claim_id": "c4bafeef-f138-494d-9fd2-3110820c06bf",
+      "result_id": "7172262f-9319-44cd-aad8-5ca9abf7d485"
+    },
+    {
+      "claim_id": "f7205067-55ca-4533-a75d-d176456dd9e2",
+      "result_id": "9f4e7f71-0926-4b67-822e-1daf2b8ee2d2"
+    },
+    {
+      "claim_id": "fd9d295b-6e17-4bdc-a119-28dacea3796b",
+      "result_id": "9f4e7f71-0926-4b67-822e-1daf2b8ee2d2"
+    },
+    {
+      "claim_id": "488a693a-2810-46ad-8706-c7511c166197",
+      "result_id": "9f4e7f71-0926-4b67-822e-1daf2b8ee2d2"
+    },
+    {
+      "claim_id": "91343769-9c50-4e5b-951b-fcc1ed794a69",
+      "result_id": "9f4e7f71-0926-4b67-822e-1daf2b8ee2d2"
+    },
+    {
+      "claim_id": "4cf8945b-f27d-433b-b91d-52e76bac1582",
+      "result_id": "06f9616b-1391-45a5-b07f-3317ba773bc8"
+    },
+    {
+      "claim_id": "16678b21-4747-49a8-a394-b68647efe429",
+      "result_id": "06f9616b-1391-45a5-b07f-3317ba773bc8"
+    },
+    {
+      "claim_id": "9f7f8cca-cefa-4879-9409-fd21bc347de5",
+      "result_id": "06f9616b-1391-45a5-b07f-3317ba773bc8"
+    },
+    {
+      "claim_id": "61bf5243-687a-4d76-b969-f032c777f654",
+      "result_id": "06f9616b-1391-45a5-b07f-3317ba773bc8"
+    },
+    {
+      "claim_id": "bc1247a1-aed6-41de-b144-506ca8cb3b65",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "cb372055-ede2-404f-b006-00b04f408146",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "1dc490b6-cb21-4aef-961c-d7f05ae1185a",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "f03044b7-91b0-488a-aea6-efab8134eb55",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "3a70f46c-c11a-4ad5-bd35-7f62de52e1c7",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "bdb79c5d-b5d5-4f2d-987f-c6e776ddfc00",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "9f846fad-21fc-45a7-8a04-69e0c1de1faa",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "be45c6eb-c32e-422b-8acb-ae9826fa3680",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "603fe744-e0b1-4293-8d6b-caeaa6e2bb8e",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "556603a9-4e19-41b4-ae14-e2a808e2b31a",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "73701254-64e0-4372-bf85-58abc51878be",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "e4287bf6-7c60-4bae-8445-ab6e9c4a6ed5",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "8e0a3d82-e729-42dc-8b01-c88ea4c87ce8",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "b96869bb-9d86-460e-bd40-ff6502a3fd11",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "b53769c9-200b-4cee-b068-c269177c21e5",
+      "result_id": "c709995a-2a2e-4d55-9dfd-6a2b15dced27"
+    },
+    {
+      "claim_id": "a1b1675c-2d5c-41e1-96c5-964376a70d9c",
+      "result_id": "7a2fda7e-9b3d-460e-987c-2ebfca53e5d5"
+    },
+    {
+      "claim_id": "2897e1b8-f317-423d-ae1a-f800d289e3e9",
+      "result_id": "7a2fda7e-9b3d-460e-987c-2ebfca53e5d5"
+    },
+    {
+      "claim_id": "f56c7620-c16d-471e-9565-2b459d222738",
+      "result_id": "c4fdb292-bdb2-4626-93b8-fbeb93029c7f"
+    }
+  ],
+  "comparisons": []
+}

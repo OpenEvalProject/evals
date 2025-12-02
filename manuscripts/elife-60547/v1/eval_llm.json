@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C12",
+      "C14",
+      "C15",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C28"
+    ],
+    "result": "Label-free AOSLO phase contrast imaging enables visualization of infiltrating immune cells in the living mouse retina. Using 796 nm near-infrared light at 200-500 \u00b5W, the technique reveals immune cell behaviors including membrane remodeling, pseudopodia formation, rolling, crawling, and trans-endothelial migration, with phase contrast detecting more cells than fluorescence labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, C15, C21-C24 provide converging experimental evidence from multiple imaging modalities (phase contrast, fluorescence validation) showing immune cells and their dynamic behaviors. Claim C28 demonstrates superiority over fluorescence labeling. The technical specifications (C12, C14, C15) are well-documented with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C30"
+    ],
+    "result": "Fluorescent marker validation confirms that rolling leukocytes are predominantly neutrophils (anti-Ly6G+), infiltrating monocytes/macrophages are CD68+, and tissue-resident cells are microglia/hyalocytes (Cx3cr1+/CD68+). However, only ~10% of circulating leukocytes may be labeled by the anti-Ly6G method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C27, C30 provide direct experimental validation using transgenic mice and antibody labeling with appropriate controls. The limitation noted in C26 (10% labeling efficiency) is properly cited and acknowledged, strengthening rather than weakening the overall finding by demonstrating awareness of methodological constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C31"
+    ],
+    "result": "Tissue-resident myeloid cells are visible by phase contrast AOSLO in healthy retinas without inflammation, revealing subcellular features including putative endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by experimental data from healthy controls. Claim C31 appropriately uses cautious language ('could represent') for subcellular structure interpretation, supported by relevant citation. The combination demonstrates the technique's sensitivity extends beyond inflammatory conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Longitudinal label-free imaging quantifies immune cell dynamics throughout inflammation from hours to months. Cell infiltration peaks at 24 hr (18-fold increase, 510.4\u00b1441 cells/mm\u00b2) with maximum motility at 6 hr (16.1\u00b19.9 \u00b5m), while motility decreases at peak infiltration (4.6\u00b14.3 \u00b5m at 24 hr). Deep learning-based cell counting correlates highly with human observers (R\u00b2=0.99, p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C5, C35-C38 provide quantitative longitudinal data from n=6 mice with appropriate statistics. The deep learning validation (C33, C34) demonstrates methodological rigor. However, the large standard deviation at 24 hr (\u00b1441 cells/mm\u00b2) suggests high inter-animal variability that warrants acknowledgment. The inverse relationship between infiltration and motility (C37-C38) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Reduced immune cell motility at peak infiltration (24 hr) is consistent with Resolvin-mediated suppression of chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C39 proposes a mechanistic interpretation based on correlation with published literature (Schwab et al., 2007). However, no direct measurement of Resolvin levels or mechanistic validation is provided. The claim appropriately uses 'consistent with' language, but remains speculative without additional experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C98"
+    ],
+    "result": "Arterioles and venules exhibit functionally opposing mechanisms to increase blood flow during inflammation. Venules dilate (36\u00b18% at 24 hr, facilitating 67\u00b127% flow increase) while arterioles maintain diameter but increase RBC velocity (48\u00b131% at 24 hr). Flow changes in arterioles and venules are correlated (R\u00b2=0.83), confirming flow conservation, with resolution toward baseline by 10 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47, C98 provide comprehensive hemodynamic analysis with appropriate statistical testing (Friedman test, p=0.008 for vein diameter, p=0.036 for artery velocity). The opposing mechanisms (C46-C47) are well-supported by quantitative data. The correlation analysis (C44) appropriately demonstrates flow conservation. Sample size (n=6 mice) is adequate for these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Combined single-cell velocimetry and high-resolution diameter measurements provide more complete understanding of hemodynamic control than diameter measurements alone, revealing functionally opposing behaviors of arterioles and venules that would be missed by diameter-only approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 appropriately contextualize the current work relative to prior studies (Sun et al., 2009) that used diameter-only measurements. The inference (C49) is logically sound given the demonstrated opposing velocity changes. This represents a clear methodological advance building on prior work (Joseph et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The label-free, non-invasive approach avoids confounds from surgical manipulation, exogenous dyes, transgenic haplo-insufficiency, and multiphoton phototoxicity, providing high-fidelity imaging of unperturbed biological systems with particular advantages for human translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 accurately describe methodological advantages relative to alternative approaches, with appropriate citations (Galli et al., 2014; You et al., 2018) supporting phototoxicity concerns. The inference about 'closest fidelity' (C55) is reasonable given the elimination of multiple confounding factors. Claim C56 appropriately notes translational advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The 796 nm imaging wavelength provides minimal phototoxicity, optimal penetration, and minimal absorption/scatter. Wave-optics simulations confirm this wavelength renders contrast to translucent cells. System axial resolution (<16 \u00b5m) relative to vessel diameter (30-50 \u00b5m) demonstrates imaging of vessel bisection rather than cells above/below the focal plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by appropriate citations (Guevara-Torres et al., 2020; Joseph et al., 2019) and optical principles. Claim C64 provides important technical validation that observed cells are within vessels rather than artifacts from out-of-plane structures. The logical reasoning is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Cell behavior patterns including parallel orientation, pausing, and slowing at the vascular barrier indicate mechanical resistance consistent with transendothelial migration (diapedesis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 provide behavioral evidence supported by video data (Figure 1\u2014figure supplement 1, Videos 2 and 4). The interpretation is appropriately cautious ('indicate', 'consistent with') and the reasoning is sound. However, definitive confirmation of TEM would require additional validation such as correlative electron microscopy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Technical limitations include requirement for clear optical media (severe cataract/vitritis affected 25% of EIU eyes at peak inflammation), reduced visualization of deeper retinal structures, and difficulty imaging the choroid due to RPE scatter/absorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 appropriately acknowledge technical limitations with quantitative data (C68: 25% failure rate). These are honest assessments supported by citations (Guevara-Torres et al., 2020) and optical principles. The 25% failure rate is substantial but acceptable for proof-of-concept work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Prior work (Scoles et al., 2017) identified putative macrophages deep in human retina using similar detection strategies, suggesting deeper retinal immune cell imaging may be possible with refinement. Current work validates that tissue immune cells are reliably detectable by label-free phase-contrast AOSLO using transgenic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 appropriately cites relevant prior work. Claim C72 is appropriately speculative about future possibilities. Claim C73 provides experimental validation in the current study. Together these support the feasibility of deeper imaging while acknowledging current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C18",
+      "C19",
+      "C79",
+      "C80",
+      "C81",
+      "C88",
+      "C89"
+    ],
+    "result": "The approach is readily translatable to humans as AOSLO systems are already available clinically, the power range (200-500 \u00b5W) is similar to safe human studies (115-280 \u00b5W), and phase contrast has successfully imaged other translucent cell types in human AOSLO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C18-C19, C79-C81, C88-C89 provide appropriate evidence for translational feasibility through multiple lines of reasoning: existing clinical infrastructure, comparable power levels with proper citations (Rossi et al., 2017; Liu et al., 2017), and precedent for imaging translucent cells in humans. The inference is reasonable though actual human validation is still required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Human translation faces challenges from eye motion (saccades/drift) affecting image registration, though single images over sparse intervals may be sufficient. Slow immune cell dynamics require extended patient cooperation, but single-cell surveillance observable over minutes makes the approach feasible within single imaging sessions shorter than electroretinography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 provide balanced assessment of translational challenges and potential solutions. The reasoning is sound: eye motion is a known challenge (C82) but may be manageable (C83), and while extended imaging is needed (C84), the demonstrated minute-scale dynamics (C85) make clinical application feasible. Comparison to electroretinography provides useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Human eyes will have ~4-fold reduced axial resolution compared to mouse due to ~2-fold smaller numerical aperture, which may impact axial specificity or contrast of immune cell visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 provide accurate optical calculations with appropriate citation (Geng et al., 2012). The inference about potential impact (C87) is appropriately cautious ('may impact'). This represents an honest assessment of a potential limitation for human translation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Potential clinical applications include quantitative single-cell characterization of immune contributions to retinal diseases, direct diagnosis of active inflammation versus surrogate biomarkers, differentiation from masquerade entities like lymphoma, monitoring treatment response, and studying systemic diseases manifesting in the eye.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C78 describe potential future applications but are entirely speculative without supporting data. While the proposed applications are reasonable extensions of the demonstrated technology, they remain hypothetical until validated in human studies. These represent aspirational goals rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Phase contrast AOSLO can detect any cell causing reasonable light scatter, providing more comprehensive characterization than labeling approaches which are limited to ~3 markers simultaneously in vivo and may miss unknown populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 accurately describe limitations of labeling approaches based on established knowledge and provide logical reasoning for phase contrast advantages. The inference (C59) is sound based on physical principles. This appropriately contextualizes the methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "Technical specifications of the AOSLO system include lateral resolution of 0.77 \u00b5m (520 nm) and 1.2 \u00b5m (796 nm), confocal axial resolution of 10.5 \u00b5m (520 nm), numerical aperture of 0.49 providing narrow depth of focus, phase contrast achieved by axial detector displacement, adaptive optics correction at 13 Hz, and 25 fps imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 provide comprehensive technical specifications with appropriate citations (Joseph et al., 2019; Geng et al., 2012; Guevara-Torres et al., 2020). These are standard characterizations for optical systems and are necessary for reproducibility and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C99",
+      "C100"
+    ],
+    "result": "The deep learning model (U-Net) was trained on 387 manually identified cells from 4 mice at 6 or 24 hr post-LPS, with training data excluded from final analysis. Severe vitritis/cataract precluded imaging in 25% of EIU eyes at peak inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C99-C100 provide appropriate methodological details. The training set size (387 cells, 4 mice) is reasonable for deep learning validation. Excluding training data from analysis (C100) demonstrates proper experimental design. The 25% imaging failure rate (C95) is honestly reported.",
+    "result_type": "MINOR"
+  }
+]

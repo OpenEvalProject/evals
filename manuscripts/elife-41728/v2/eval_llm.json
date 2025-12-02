@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Computational simulations of 720 passive cable models demonstrate that neurite geometry alone can determine electrotonic properties. Narrow uniform-diameter cables show substantial voltage attenuation (\u03bbeffective < 1 mm), while cables with STG-like tapered geometry (20 \u00b5m to 0.5 \u00b5m) show reduced attenuation (\u03bbeffective > 1 mm) for specific passive properties (Ra 50-150 \u03a9\u00d7cm, Rm > 10,000 \u03a9\u00d7cm\u00b2), even without active amplifying mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 present a systematic computational exploration showing that cable geometry fundamentally shapes electrotonic properties. The simulations are well-described with specific parameter ranges, and the results demonstrate a clear relationship between diameter and voltage propagation. The finding that geometry alone can produce compact electrotonus is supported by quantitative \u03bbeffective measurements across the parameter space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Four STG neuron types (PD, LP, VD, GM) were identified and characterized. Each neuron type exhibits distinct innervation patterns, participates in specific motor rhythms (pyloric or gastric mill), and presents highly branched, expansive neurite trees when visualized with fluorescent dye.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37-C45 establish the experimental system through standard electrophysiological identification methods and anatomical characterization. The identification criteria (matching intracellular and extracellular recordings) are well-established for STG neurons, and the morphological observations are supported by fluorescence imaging data in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C46",
+      "C48"
+    ],
+    "result": "STG neurites exhibit diameters that taper from 10-20 \u00b5m at the soma-primary neurite junction to <2 \u00b5m at terminating tips. Some neurites taper gradually while others show abrupt step reductions in diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C46, C48 describe morphological measurements supported by volumetric reconstructions shown in Figure 2D-E and supplements. The measurements are consistent with previous work (Otopalik et al., 2017a) and provide quantitative characterization of the neurite geometry that is central to the study's hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Computational simulations show that cables with gradual tapers have longer \u03bbeffective than those with abrupt step reductions. However, cables with wide diameters consistent with STG neurons maintain \u03bbeffective > 1 mm even with abrupt diameter reductions (for Ra < 100 \u03a9\u00d7cm, Rm > 10,000 \u03a9\u00d7cm\u00b2), while finer cables (1-2 \u00b5m) show \u03bbeffective < 0.5 mm with any step reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 present simulation results examining the effect of taper geometry on electrotonic properties. The findings are supported by data in Figure 2\u2014figure supplement 3 and are consistent with cable theory predictions (Holmes and Rall, 1992). The comparison between wide and narrow cables provides important context for understanding STG neuron properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Experimental measurements of apparent reversal potentials (Erevs) across multiple sites on neurite trees show that all four STG neuron types are electrotonically compact. Apparent Erevs show no substantial distance-dependent hyperpolarization and vary by <10% of the mean within individual neurons (typically \u00b16-8 mV), with no statistically significant differences across neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 present the core experimental finding of electrotonic compactness. The measurements are supported by extensive data in Figure 3 and Tables 1-2, with appropriate statistical analyses (ANOVA, linear regression, coefficient of variation). The finding that Erevs remain relatively constant across distances up to 800-1000 \u00b5m from the soma is well-documented, though some heterogeneity is noted in VD neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "Computational simulations predict that classic narrow-diameter cables show robust inward directional bias and sublinear voltage integration, while STG-like tapered cables show no directional sensitivity and relatively linear integration across a broad range of passive properties. This predicts that STG neurites operating by passive propagation will exhibit directional insensitivity and near-linear voltage integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84, C86 present simulation predictions about directional sensitivity and voltage integration arithmetic. The simulations are well-designed to test these properties across the parameter space (Figure 4 and supplements), and the predictions follow logically from cable theory. The contrast between classic and STG-like geometries provides clear testable hypotheses for the experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Experimental measurements show that all four STG neuron types exhibit little directional selectivity (RMSE < 0.5 mV*s), contrasting with the directional selectivity described in other neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 present experimental validation of the simulation predictions regarding directional insensitivity. The data in Figure 5B show that measured responses in both inward and outward directions are nearly identical (close to identity line), with low RMSE values supporting the lack of directional bias. The comparison with other neuron types is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Voltage summation experiments show that the majority of branches across all STG neuron types exhibit linear summation, with RMSE values < 1.5 mV*s. GM neurons show particularly uniform linear summation (RMSE = 0.32 mV*s), while LP and PD branches show slightly higher RMSE values (>1 mV*s), possibly indicating variable shunting or amplifying mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 present experimental findings on voltage integration arithmetic supported by data in Figure 6B and supplements. The measurements compare observed responses to arithmetic predictions, with RMSE values providing quantitative assessment of linearity. The interpretation is appropriately cautious regarding the slightly higher RMSE values in some neuron types, acknowledging possible active mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C96",
+      "C97"
+    ],
+    "result": "STG neurons are built to linearly sum and unify synaptic inputs distributed across their expansive structures rather than perform distributed computations. This biophysical architecture may be achieved passively as a consequence of neurite geometry (wide diameters tapering from 10-20 \u00b5m to sub-micron).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C96, C97 synthesize the experimental and computational findings into a coherent conclusion about STG neuron computational strategy. The conclusion is well-supported by the combined evidence of compact electrotonus (C71-C78), directional insensitivity (C87-C88), and linear integration (C89-C94), along with simulations showing these properties arise from geometry (C29-C36, C79-C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Compact electrotonus, linear integration, and directional insensitivity in STG neurons arise from their neurite geometries. A broad parameter search reveals multiple morphological and biophysical solutions for achieving different degrees of passive electrotonic decrement and computational strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 present the main mechanistic conclusion linking geometry to function. This is strongly supported by the systematic computational exploration (C29-C36) showing how different geometries and passive properties produce different electrotonic behaviors, and by the experimental validation in STG neurons (C71-C94). The parameter search demonstrates the generality of the geometric principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Synaptic sites in the STG are sparsely distributed throughout the neuropil with pre- and post-synaptic sites closely apposed on the same neurites. This organization, combined with compact electrotonus, suggests that sufficiently large synaptic potentials may originate anywhere on the neurite tree and achieve consistent neuronal output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 integrate anatomical knowledge from cited studies (King, 1976a,b; Kilman and Marder, 1996) with the functional findings of compact electrotonus. The inference that synaptic potentials can propagate effectively from any location (C55) follows logically from the demonstrated electrotonic compactness, though this specific prediction has not been directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The biophysical features of STG neurons may allow averaging of large, slow synaptic conductances in space and time, sustaining pattern generation in this motor circuit that relies on slow oscillations and graded inhibitory transmission. Similar architectures may benefit other rhythmic networks using slow oscillations or graded transmission, and wide neurites may help generate consistent output despite variable conductance properties across animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C59 present functional hypotheses about the role of compact electrotonus in circuit function. While C56 is well-supported by citations about STG physiology, claims C57-C59 are speculative interpretations not directly tested in this study. The hypotheses are reasonable given the findings, but would require additional experiments examining circuit function, neuromodulation, and inter-animal variability to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Spike initiation zones in STG neurons are located peripherally where axons exit the ganglion, with PD neurons having a second dopamine-sensitive zone. This spatial separation from the neuropil suggests TTX-sensitive channels are unlikely to shunt evoked currents and may reduce shunting of synaptic currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 discuss the anatomical organization of spike initiation zones based on cited work (Raper, 1979; Miller, 1980; Bucher et al., 2003). The inference that peripheral spike zones reduce shunting (C62-C63) is reasonable but not directly tested. The experiments were performed in TTX, so the actual contribution of these channels to integration in intact neurons remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Given the compact electrotonic architecture arising from neurite geometries, morphological features and spatial organization of synaptic contacts may not be critical determinants of distinct physiological patterns in different STG neuron types. Instead, different activity patterns are likely predominantly determined by cell-type-specific ion channel and receptor expression profiles, which are known to differ across the 14 STG neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 present an important inference about what determines cell-type-specific physiology. The logic is sound: if morphology doesn't distinguish neuron types (C20) and electrotonus is compact across types (C75-C77), then intrinsic properties must be the key differentiator. This is supported by cited evidence of differential receptor (C66) and ion channel (C67) expression across STG neuron types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "STG neurons may present expansive morphologies to enable synaptic contacts wherever partner neurons meet in the neuropil and to maximize surface area for reception of diffuse neuromodulatory substances released in the hemolymph and by descending inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 are speculative hypotheses about the functional significance of expansive morphology. While C70 is well-supported by citations about neuromodulation in the STG, the specific hypotheses about why neurons have complex morphologies (C68-C69) are not directly tested. These are reasonable speculations but would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The findings challenge the prevailing framework for dendritic computation, which predicts that highly-branched structures should show passive voltage attenuation, sublinear integration, and directional bias in the absence of active mechanisms. The widely-accepted principles derived from canonical neuron types may be less general than previously thought, as they do not account for diverse neurite morphologies observed in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 place the findings in the context of existing literature on dendritic computation. The contrast with established principles is well-supported by appropriate citations (C98-C101) and by the experimental demonstration that STG neurons violate these expectations. The critical assessment (C102-C103) is justified by the findings, though the claim about generality would be strengthened by examining additional neuron types beyond STG.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The photo-uncaging experiments were performed in the presence of 10\u207b\u2077 M TTX to block TTX-sensitive sodium channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is a straightforward methodological statement supported by the Materials and methods section. This is an important experimental detail that affects interpretation of the results, as it means the measurements reflect passive properties without contribution from voltage-gated sodium channels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C47",
+      "C49"
+    ],
+    "result": "Background and motivation: Previous work established that GM neurons operate as single electrotonic compartments despite complex morphology. Cable theory predicts that neurite diameter, membrane resistance, and axial resistance influence voltage propagation, with experimental validation primarily in narrow dendrites (<3 \u00b5m). STG neurons present unusual morphologies with wide diameters, long branches, and high morphological variability, yet no single morphological metric distinguishes neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C28, C47, C49 establish the background, motivation, and context for the study. These claims are well-supported by appropriate citations to prior work, including the authors' previous studies (Otopalik et al., 2017a,b) and foundational cable theory literature (Rall, Holmes, etc.). The claims accurately represent the state of knowledge and identify the gap that this study addresses.",
+    "result_type": "MINOR"
+  }
+]

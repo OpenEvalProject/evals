@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C24",
+      "C25"
+    ],
+    "result": "The mouse retina expresses S-opsin (peak 360 nm) and M-opsin (peak 508 nm) forming opposing, overlapping gradients along the dorsal-ventral axis, with M-opsin expressing cones relatively evenly distributed and S-opsin expressing cones showing high density ventrally and low density dorsally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C12-C14, C24-C25 are well-supported by established literature citations and confirmed by immunolabeling data in Figures 1B and 2A. The opsin expression patterns and spectral sensitivities are consistent with prior work and directly demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27"
+    ],
+    "result": "True S-cones (S+M-) are highly concentrated in the ventral retina (up to 30% of cones) and extremely sparse in the dorsal retina (~1%), contrasting with M+S- cones concentrated dorsally and mixed cones dominating medially and ventrally in pigmented mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C26-C27 are strongly supported by quantitative data in Figure 1C, Figure 2A, and Supplementary file 1A. The automated quantification algorithm was validated (R\u00b2=96-99%, C83), providing confidence in the cone type classifications and spatial distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Albino mice have slightly smaller cone populations overall, with S-opsin expression extending into the dorsal retina (greatly reduced gradient compared to pigmented mice), resulting in mostly mixed cones dorsally and very sparse M+S- cones (7% vs 97% in pigmented mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by comparative data in Figures 1B-C, 2A-B, and Supplementary file 1A-B. The strain differences in opsin expression patterns are well-documented and consistent with prior literature (Applebury et al., 2000; Ort\u00edn-Mart\u00ednez et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C78"
+    ],
+    "result": "Despite vastly different S-opsin expression patterns between pigmented and albino strains, the percentage and distribution of true S-cones are remarkably conserved: ~1% dorsally and 29-33% ventrally, with nearly identical density maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C78 are strongly supported by quantitative comparisons in Figures 1C, 2A-C, and Supplementary file 1A. The conservation of true S-cone distribution despite different opsin gradients is a key finding, though the mechanistic basis remains unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A Copine9-Venus mouse line was generated using CRISPR-mediated homologous recombination (73% HR efficiency) to specifically label S-cone bipolar cells (SCBCs), which have axon terminals in IPL sublayer 5 resembling type 9 bipolar cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C84-C86 describe methodological development supported by Figure 2\u2014figure supplement 1C, Figure 3A, and citations (Shekhar et al., 2016; Behrens et al., 2016; Stabio et al., 2018a). The genetic engineering approach is well-documented with appropriate efficiency metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C63",
+      "C80"
+    ],
+    "result": "SCBCs are skewed toward the ventral retina with a shallower gradient than true S-cones, do not cluster, and their increased ventral density does not match the steep true S-cone gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47, C63, C80 are supported by density maps and quantitative analysis in Figures 3D-E and comparison with Figure 2A. The mismatch between SCBC and true S-cone density gradients is clearly demonstrated, though the functional implications require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SCBCs exhibit specific wiring to true S-cones with regional differences: in dorsal retina, one true S-cone connects to ~4 SCBCs (1:3.6 ratio, divergent pattern), while in ventral retina, one SCBC contacts ~5 true S-cones (5.3:1 ratio, convergent pattern).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44-C46, C48-C54, C89-C91 are supported by connectivity analysis in Figure 3B-C and Supplementary files 2-3. The methodology for tracing connections is described, though sample sizes (186 SCBCs, 263 true S-cone pedicles from 5 retinas) are modest. The specificity of SCBC-true S-cone connections validates the cone type classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C57",
+      "C58",
+      "C64"
+    ],
+    "result": "True S-cones in the ventral retina form clusters rather than even distributions, as demonstrated by K-nearest neighbor analysis showing irregular placement with significantly elevated S-cone neighbor ratios (SCNR) compared to random chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C55, C57-C58, C64 are supported by spatial analysis in Figures 4A-E. The clustering analysis uses appropriate statistical methods (NNRI, VDRI, SCNR) with comparisons to simulated distributions. However, regularity indices show true S-cones are nearly indistinguishable from shuffled populations (C57), with clustering primarily evident through SCNR analysis (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C56",
+      "C62",
+      "C77",
+      "C81"
+    ],
+    "result": "True S-cone clustering may augment synaptic input to SCBCs by increasing target availability in reduced space, facilitating wiring with sparsely distributed SCBCs, and potentially enhancing signal-to-noise ratios through convergence of neighboring cones onto single SCBCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C56, C62, C77, C81 are speculative interpretations (marked as SPECULATION/INFERENCE) based on anatomical observations. While the clustering pattern is demonstrated (C7, C55), the functional consequences remain hypothetical. Figure 4F shows an example of clustered true S-cones contacting a single SCBC, but systematic functional validation is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C68",
+      "C69",
+      "C73",
+      "C74"
+    ],
+    "result": "The unique true S-cone and SCBC distribution pattern forms an anatomical basis for mouse color vision, likely reflecting evolutionary adaptation to enhance short-wavelength signaling and color coding for the upper visual field, potentially facilitating aerial predator detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C68-C69, C73-C74 are interpretive conclusions linking anatomical findings to functional and evolutionary significance. While the anatomical data are robust, the functional implications are inferred rather than directly tested. The connection to color vision is supported by prior behavioral studies (C23, C87-C88), but the evolutionary interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C39",
+      "C93"
+    ],
+    "result": "Prior to this study, true S-cones were thought to be evenly distributed across the retina and critical for color encoding, with SCBC distribution not characterized across the entire retina, and individual cone type distributions not fully mapped.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C39, C93 accurately represent prior understanding based on multiple citations (Franke et al., 2019; Haverkamp et al., 2005; Szatko et al., 2019; Wang et al., 2011). The current study challenges the assumption of even true S-cone distribution while confirming their importance for color coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C87",
+      "C88"
+    ],
+    "result": "Previous physiological and behavioral studies demonstrated that color-opponent RGCs are more abundant in the dorsal-ventral transition zone and ventral retina, with color discrimination restricted to the ventral retina, while luminance detection occurs across the entire retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C87-C88 accurately cite prior work (Chang et al., 2013; Joesch and Meister, 2016; Szatko et al., 2019; Denman et al., 2018; Breuninger et al., 2011). These findings motivated the current anatomical investigation and are consistent with the discovered true S-cone distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C59",
+      "C60"
+    ],
+    "result": "True S-cone clustering may reflect developmental mechanisms such as clonal expansion to achieve high densities, with more extreme clustering observed in wild mice and some felids at lower densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C61 are speculative regarding developmental mechanisms (C61 marked as SPECULATION) with supporting citations (Bruhn and Cepko, 1996; Reese et al., 1999; Warwick et al., 2018; Ahnelt et al., 2000). The developmental hypothesis is plausible but untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C70"
+    ],
+    "result": "Mice can detect color despite being nocturnal with rod-dominated retinas, with true S-cones providing short-wavelength signals for color discrimination, though the source of long-wavelength signals (rods vs M-cones) remains uncertain. Dorsal true S-cone signals may participate in non-image forming vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C70 are well-supported by extensive citations. The uncertainty about long-wavelength signal sources (C67) is appropriately acknowledged. The speculation about non-image forming vision (C70) is reasonable given the known involvement of short-wavelength signals in such functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The overall true S-cone percentage in mouse retina is approximately 10%, with an average true S-cone to SCBC ratio of about 1.7:1 across the whole retina, similar to other mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by data in Figure 2B and Supplementary files 1B-C, with extensive citations to comparable findings in other mammalian species. This conservation across species suggests functional significance despite regional redistribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Skewed S-cone arrangements have been reported in other terrestrial prey mammals, and zebrafish possess a UV-enriched ventral retina that enhances predation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by appropriate citations (Famiglietti and Sharpe, 1995; Juliusson et al., 1994; R\u00f6hlich et al., 1994; Zimmermann et al., 2018). These comparative examples support the evolutionary interpretation of the mouse findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "A highly reliable automated algorithm was developed to quantify different opsins and cone types from high-resolution flat-mount retina images, validated with R\u00b2=96-99% correlation to manual counting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by methodological descriptions and validation data in Figure 2\u2014figure supplement 1. The high correlation coefficients provide confidence in the automated quantification, though details about threshold selection and potential biases could be more thoroughly addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "S-opsin enrichment in ventral retina better detects short-wavelength light from the sky, M-opsin in dorsal retina perceives the ground, and co-expression of both opsins broadens spectral range and improves perception under varying light conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are interpretations supported by multiple citations (Baden et al., 2013; Gouras and Ekesten, 2004; Osorio and Vorobyev, 2005; Sz\u00e9l et al., 1992; R\u00f6hlich et al., 1994; Chang et al., 2013). These represent established understanding of the functional significance of opsin gradients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The similarity in true S-cone population and distribution between pigmented and albino mice suggests a common functional significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is a speculative interpretation (marked as SPECULATION/INFERENCE) of the conservation observed in C34-C38. While the conservation is striking and well-demonstrated, the functional significance remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "A recent study successfully modeled cone opsin expression and type determination according to graded thyroid hormone signaling in pigmented mice (C57BL/6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 accurately cites recent work (Eldred et al., 2020) and appropriately suggests that different thyroid hormone patterns might explain the conserved true S-cone distribution despite different opsin expression patterns between strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Color is encoded by comparing signals from photoreceptors with different spectral sensitivities. Photoreceptor distributions vary among vertebrates and have been evolutionarily selected for specific behaviors and lifestyles. Most terrestrial mammals are dichromatic, while some primates have trichromatic vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C95-C99 represent established knowledge in vision science, appropriately cited (Baden and Osorio, 2019; Rhim et al., 2017; Hunt and Peichl, 2014; Dominy and Lucas, 2001; Gerl and Morris, 2008; Peichl, 2005; Jacobs et al., 1996; Nathans et al., 1986; Yokoyama and Yokoyama, 1989; Marshak and Mills, 2014; Puller and Haverkamp, 2011; Jacobs, 1993). These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  }
+]

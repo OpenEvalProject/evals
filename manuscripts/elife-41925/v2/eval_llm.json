@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C15"
+    ],
+    "result": "The study used simultaneous intracellular recordings from V1 neurons and extracellular recordings from LGN neurons in anesthetized cats to characterize thalamocortical synaptic properties. The dataset was previously reported in Sedigh-Sarvestani et al. (2017), with recordings from 28 L4 and 8 L6 V1 cells, and 4-25 LGN neurons per experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide comprehensive methodological details that are internally consistent and appropriately documented. The reuse of a previously published dataset (C2) is explicitly stated, and the experimental procedures including animal subjects (C3), anesthesia protocols (C4-C6), recording techniques (C8, C14-C15), and cell selection criteria (C7, C9) are clearly described with sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C16",
+      "C17"
+    ],
+    "result": "From 296 simultaneously recorded LGN-V1 pairs with overlapping receptive fields, 36 LGN cells were identified as monosynaptically connected to 23 cortical simple cells. All cortical cells were simple cells (no complex cells found), and no differences were observed between L4 and L6 simple cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C16, and C17 describe the dataset composition and connectivity findings. The identification of connected pairs using spike-triggered averaging is a standard approach, and the reported connection rate (36/296 = 12%) is reasonable for this type of study. The lack of complex cell connections (C12) and similarity between L4 and L6 cells (C13) are clearly stated observations, though the statistical basis for C13 is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Thalamocortical synapses exhibited small and variable EPSP amplitudes with high failure rates. The mean undetectable EPSP rate was 37\u00b112% (range 7.4-56%). Average EPSP amplitude was 0.49\u00b10.23 mV for all spikes and significantly higher at 0.89\u00b10.24 mV (p=3e-9) when considering only detectable EPSPs. Undetectable EPSPs had a mean amplitude of -0.20\u00b10.09 mV, significantly different from zero (p=5e-15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 present the core findings on EPSP amplitude and reliability with appropriate statistical tests. The significant difference between all spikes and detectable EPSPs (C23, p=3e-9) is well-supported. The negative mean for undetectable EPSPs (C25) is appropriately interpreted as potentially reflecting ongoing EPSPs or coincident IPSPs. The measurements are internally consistent and the statistical significance is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Thalamocortical synapses showed high variability with a mean CV of 1.2\u00b10.47, nearly an order of magnitude larger than in vitro reports. After removing undetectable EPSPs, CV reduced to 0.18\u00b10.13. The percentage of undetectable EPSPs was negatively correlated with average EPSP amplitude (r=-0.81) and positively correlated with CV (r=0.77). The CV-amplitude correlation persisted after excluding undetectable EPSPs (r=-0.66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 characterize synaptic variability with appropriate metrics and correlations. The comparison to in vitro studies (C27) provides important context. The strong correlations (C29-C31) are consistent with binomial models of synaptic transmission as noted by the authors. The persistence of the CV-amplitude correlation after excluding undetectable EPSPs (C31) strengthens the conclusion that variability is an intrinsic property independent of detectability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "V1 cells were classified as regular-spiking (RS, n=16) or fast-spiking (FS, n=7), with 24 LGN connections to RS cells and 12 to FS cells. No significant differences in average EPSP amplitude, %undetectable, or CV were found between RS and FS cells when including all spikes. However, after excluding undetectable EPSPs, RS cells showed higher CV (0.22\u00b10.13 vs 0.11\u00b10.08, p=0.018) and smaller EPSP amplitude (0.83\u00b10.21 vs 1.0\u00b10.21 mV, p=0.025) than FS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 describe cell-type specific differences in synaptic properties. The classification into RS and FS cells (C32-C33) is based on established electrophysiological criteria. The finding that differences emerge only after excluding undetectable EPSPs (C37-C39) is interesting and statistically supported with both KS and t-tests. This suggests that undetectable EPSPs mask underlying differences in synaptic properties between cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The dataset included cortical cells with varying numbers of connected LGN inputs: 15 cells with one connection, 3 cells with two connections, and 5 cells with three connections. The CV of connections to the same postsynaptic V1 cell was as variable as connections across different cells, suggesting that postsynaptic cell identity does not overtly determine synaptic variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 address whether synaptic variability is determined by postsynaptic mechanisms. The observation that CV varies as much within as between postsynaptic cells (C43) provides evidence against strong postsynaptic determination of variability. However, the sample size for cells with multiple connections is limited (n=8 cells with 2-3 connections), which somewhat limits the strength of this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Synaptic properties were compared between white noise and drifting grating stimuli in a subset of 19 connected pairs. High correlations were found for average EPSP amplitude (r=0.90), standard deviation (r=0.85), and %undetectable (r=0.82) between the two stimulus types. Average EPSP amplitude was significantly higher during white noise (p=0.0055), but other variables were similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 demonstrate that synaptic properties are largely stable across different visual stimuli and time (~10 minutes apart). The high correlations (C46-C48) support the conclusion that synaptic variability and reliability are intrinsic properties rather than stimulus-dependent. The small difference in EPSP amplitude (C49) is statistically significant but the authors appropriately note this is unlikely due to synchronized input differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "55% (20/36) of connected pairs exhibited significant short-term synaptic plasticity (STSP), with 17 showing depression (STSD, -32\u00b115% change) and 3 showing facilitation (STSF, 24\u00b116% change). All STSF synapses connected to FS cells, while RS cells only showed STSD. Larger average EPSPs underwent greater STSD, while smaller EPSPs showed STSF. STSP was independent of presynaptic firing rate (2-24 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C60 characterize short-term plasticity with appropriate statistical methods (KS tests comparing ISI distributions). The cell-type specificity (C54-C55) is notable, though the small number of STSF synapses (n=3) limits generalizability. The relationships between EPSP amplitude and plasticity type (C57-C58) are consistent with classical models of synaptic transmission. The independence from firing rate (C60) is important for interpreting these results in awake conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors conclude that thalamocortical synapses exhibit STSP with cell-type specificity (FS cells show both STSD and STSF, RS cells only STSD), spiking history influences EPSP detectability and postsynaptic spike output, and STSD in vivo is independent of presynaptic firing rate with ~30% amplitude reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are summary conclusions well-supported by the preceding data (C50-C60). The cell-type specificity is clearly demonstrated, the influence of spiking history on detectability is shown through ISI-dependent EPSP distributions, and the independence from firing rate is empirically tested. The ~30% amplitude reduction is consistent with the measured %change values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Computational modeling showed that variable and unreliable synapses increase cortical firing by increasing membrane fluctuations. With 50 LGN inputs, unreliable synapses produced firing rates of 7.8\u00b11.4 spikes/sec versus 1.8\u00b10.84 spikes/sec for reliable synapses. Vm standard deviation, not mean Vm, determined firing rate. EPSP variability had a larger effect than failure rate, and correlated failures still produced higher firing than reliable synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 describe modeling results that are internally consistent and appropriately constrained by experimental data. The model demonstrates a clear mechanism (increased Vm fluctuations) for how unreliable synapses enhance cortical output. Control simulations (C69-C70) strengthen the conclusions by dissecting contributions of variability versus reliability. However, the model makes simplifying assumptions (e.g., LIF neurons, specific parameter choices) that should be acknowledged as limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study concludes that thalamocortical synapses in vivo are weak, unreliable, and exhibit short-term plasticity, and that synaptic variability and unreliability serve a computational function rather than acting as system noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are high-level conclusions supported by the experimental data (weak/unreliable: C18-C31; plasticity: C50-C63) and modeling results (computational function: C64-C70). The conclusion that variability serves a function is supported by the modeling showing enhanced cortical firing. However, the claim about 'computational function' is somewhat speculative as the model demonstrates a mechanism but doesn't directly test functional consequences in behavior or sensory processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The in vivo findings differ from in vitro cat studies showing large EPSPs (~2 mV) with low CV (~0.1), but are comparable to in vivo rodent barrel cortex measurements (~0.9-1.0 mV). The ~40% undetectable rate is double that reported for mouse L2/3 intracortical connections. The observed STSD (~30% at 50 ms ISI) is consistent with previous cat studies showing 20-40% depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 appropriately contextualize the findings within existing literature. The comparisons are fair and acknowledge both similarities and differences. The discrepancy with in vitro cat studies (C74) is important and the authors appropriately discuss potential explanations (calcium concentration, shunting conductances). The consistency with rodent in vivo data (C75) and previous cat depression studies (C77) strengthens the validity of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The findings are contextualized within the broader literature on thalamocortical circuits, including LGN response properties, anatomical connectivity, the disproportionate influence of thalamic input, previous in vitro studies, relationships between failure rates and EPSP amplitude, synaptic transmission models, gain modulation, and high conductance states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C91 provide extensive literature context through citations. These claims appropriately reference prior work to situate the current findings. The citations appear accurate and relevant, covering anatomical studies (C79, C88), physiological characterizations (C78, C80), previous synaptic studies (C81, C85), and theoretical frameworks (C86, C87, C89, C90). This contextualization strengthens the interpretation of the results.",
+    "result_type": "MINOR"
+  }
+]

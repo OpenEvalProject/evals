@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C27",
+      "C29",
+      "C30",
+      "C36",
+      "C37"
+    ],
+    "result": "FGF2 from bone marrow stromal cells is secreted in exosomes and is uniquely enriched in extracellular vesicles compared to other soluble cytokines. FGF2 is contained within ECVs/exosomes as demonstrated by proteinase K protection assays, though some FGF2 may also be surface-associated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal methods (ultracentrifugation, sucrose gradient, Luminex assay, proteinase K protection) consistently demonstrate FGF2 enrichment in exosome fractions (C1, C24-C30). The proteinase K experiments with and without detergent provide strong evidence for FGF2 localization within vesicles (C31-C37), though partial degradation suggests some surface localization cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C85",
+      "C86"
+    ],
+    "result": "Exosomes from bone marrow stromal cells are internalized by leukemia cells (MOLM14, K562) and murine progenitor cells, as demonstrated by confocal microscopy of fluorescently labeled vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Confocal microscopy with DiI/DiO labeling provides direct visual evidence of ECV internalization in multiple cell types (C2, C19, C20, C85, C86). However, C21 acknowledges the mechanism of internalization remains unclear, which is appropriate scientific caution but does not undermine the observation of internalization itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Stromal cell-derived exosomes protect leukemia cells from tyrosine kinase inhibitors, with protection enriched in the P100 ECV fraction compared to the S100 soluble protein fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MTS viability assays consistently show that the P100 ECV fraction provides greater protection than S100 or unfractionated conditioned media against TKIs in both K562 and MOLM14 cells (C3, C16, C17). The fractionation approach appropriately isolates the protective component to ECVs (C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "FGF2 and FGFR1 expression are coordinately upregulated in a subset of stromal cell lines (HS-5 vs HS-27) and primary AML stroma, with a strong positive correlation (r\u00b2=0.5683, p<0.0001) suggesting activation of an FGF2-FGFR1 autocrine loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunoblot and RT-PCR data demonstrate differential expression between cell lines (C4, C22, C23) and variable expression in primary samples (C5, C50). The correlation analysis in primary samples (C51) provides statistical support for coordinate regulation (C52), though the r\u00b2 of 0.57 indicates other factors also contribute to expression variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C116"
+    ],
+    "result": "Increased FGF2/FGFR1 signaling is associated with increased exosome secretion, as HS-5 cells (high FGF2/FGFR1) produce greater than two-fold more vesicles than HS-27 cells (low FGF2/FGFR1) by multiple quantification methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Three independent quantification methods (Nanosight, Virocyt, TEM) consistently show >2-fold higher ECV production in HS-5 vs HS-27 cells (C6, C38). Immunoblot analysis confirms increased exosome markers in HS-5 (C39, C40). This establishes correlation but not causation; the causal link is better addressed by perturbation experiments in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C10",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "FGFR inhibition or genetic silencing interrupts stromal autocrine growth, causing HS-5 cells to grow more slowly, increase in size, and change morphology, with minimal acute cytotoxicity at 72 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence show FGFR inhibition affects HS-5 growth and morphology: PD173074 slows growth over 15 days (C47), increases cell size (C49), and alters morphology (C48) with minimal 72-hour toxicity (C46). Genetic approaches (shRNA, CRISPR) confirm these are on-target effects (C10). The specificity is supported by lack of effect on HS-27 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C11",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "FGFR inhibition (pharmacological or genetic) significantly decreases secretion of FGF2-containing exosomes from HS-5 cells in a dose-dependent manner, with effects observable as early as 6 hours, while having no effect on HS-27 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple FGFR inhibitors (PD173074, BGJ-398) show dose-dependent reduction in ECVs by Virocyt quantification (C54, C55) and reduced exosome markers by immunoblot (C58, C59, C63). The rapid 6-hour effect (C56) suggests direct regulation (C57). Genetic validation with shRNA and siRNA confirms on-target effects (C64, C65). Specificity is demonstrated by lack of effect on HS-27 cells (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "FGFR inhibition reduces stromal protection of leukemia cells primarily by altering stromal cell secretion rather than by directly blocking paracrine FGF2 signaling to leukemia cells, as pre-treatment of stromal cells with PD173074 is more effective than adding inhibitor to conditioned media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design comparing pre-treatment vs. direct addition of PD173074 appropriately distinguishes autocrine vs. paracrine effects (C43, C44). The greater effect of pre-treatment supports the conclusion that FGFR inhibition primarily acts on stromal cells (C45). This is a well-designed experiment that addresses mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In a BCR-ABL leukemia mouse model, nilotinib-treated Fgf2 -/- mice survive significantly longer than nilotinib-treated Fgf2 +/+ mice despite similar disease burden at death, suggesting stromal FGF2 reduces TKI efficacy in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Survival analysis shows significant differences between nilotinib-treated groups (C76) with similar GFP levels at death (C77), supporting the interpretation that stromal Fgf2 affects disease progression rate rather than engraftment (C78). The experimental design appropriately controls for disease burden. However, the aggressive nature of this BCR-ABL model (noted as more AML-like than CML-like) may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In colony formation assays, ECVs from Fgf2 +/+ stroma almost completely reverse imatinib inhibition of BCR-ABL-transfected bone marrow, while ECVs from Fgf2 -/- stroma or PD173074-treated +/+ stroma provide significantly less protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The colony assay provides functional evidence that Fgf2-containing ECVs protect leukemia cells from TKI effects (C79, C80). The reduced protection with Fgf2 -/- or PD173074-treated ECVs (C81, C82) supports the causal role of FGF2 in this protection (C83). The experimental design appropriately includes washing steps to isolate ECV effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "FGFR1 localizes preferentially with HS-5 exosomes, and the FGF2-FGFR1 interaction on exosomes may play a role in FGF2 loading and/or exosome secretion regulation, as FGFR inhibitors increase cellular FGFR1 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While FGFR1 localization to exosomes is demonstrated by immunoblot (C41), the mechanistic claims about FGF2 loading and secretion regulation (C125, C126) are speculative. The observation of increased cellular FGFR1 with inhibitor treatment (C127) is consistent with altered receptor cycling (C128) but does not definitively establish the proposed mechanisms. Additional experiments would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C71",
+      "C72",
+      "C73",
+      "C84"
+    ],
+    "result": "FGFR1 and FGF2 are detected in ECVs from primary marrow stromal cultures, and Fgf2 +/+ murine stromal cells secrete significantly more ECVs than Fgf2 -/- cells, with PD173074 reducing secretion only in +/+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunoblot confirms FGF2/FGFR1 in primary human stromal ECVs (C53) and Fgf2 in murine +/+ ECVs (C84). Virocyt quantification shows genotype-dependent differences in ECV production (C71) and selective PD173074 effect in +/+ cells (C72), with immunoblot confirmation (C73). This extends cell line findings to primary cells and validates the genetic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Complete genetic deletion of FGFR1 or FGF2 prevents continued HS-5 cell growth, but partial CRISPR/Cas9 silencing transiently reduces ECVs and protection before cells die, suggesting FGF2-FGFR1 signaling is essential for HS-5 survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inability to generate stable knockouts (C67, C68) despite multiple attempts provides strong evidence for essentiality of this pathway in HS-5 cells. The transient data from partial silencing (C69, C70) support the connection between FGF2/FGFR1 and ECV production/protection. The failure to achieve FGF2 silencing with siRNA/shRNA (C66) is appropriately reported as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C118",
+      "C119",
+      "C150",
+      "C155"
+    ],
+    "result": "FGFR inhibition can modulate stromal function and reduce exosome secretion, and may be a therapeutic option to overcome TKI resistance by restoring leukemia cell sensitivity in the marrow niche.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data support that FGFR inhibition modulates stromal function (C13) and reduces exosome secretion (C14), the therapeutic potential claims (C15, C155) are speculative and based on in vitro and mouse model data. The claim about being a \"promising approach\" (C150, C155) requires clinical validation. The mechanistic understanding is solid, but translation to therapy remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Scanning electron microscopy reveals abundant membrane budding on untreated HS-5 cells, while PD173074-treated cells have smoother surfaces, suggesting altered membrane dynamics with FGFR inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SEM provides direct visual evidence of membrane changes (C61, C62). However, this is descriptive/correlative data that supports but does not prove the mechanism of reduced ECV secretion. The interpretation of \"altered membrane dynamics\" (C62) is reasonable but somewhat speculative without additional mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Markers of nucleus, endoplasmic reticulum, and mitochondria are located in the 45-60% sucrose interface containing larger microvesicles and apoptotic bodies, distinct from the exosome-enriched 15-30% fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunoblot analysis of sucrose gradient fractions appropriately demonstrates separation of cellular compartment markers from exosome markers (C42). This validates the fractionation approach and confirms that the exosome preparations are not contaminated with cellular debris or apoptotic bodies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The mechanism of ECV internalization by leukemia cells and the details of how exosomal FGF2 activates FGFR1 in recipient cells remain under investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately acknowledge limitations and areas requiring further study (C21, C135-C137). This is good scientific practice - clearly stating what is known versus unknown. These are not results per se but rather acknowledgments of knowledge gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "FGF2-FGFR1 autocrine activation in marrow stroma increases secretion of FGF2-laden exosomes that protect leukemia cells from TKIs in both in vitro and in vivo models, establishing FGF2 as a regulated autocrine growth factor important in stromal reprogramming during TKI resistance development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the collective data: correlation between FGF2/FGFR1 expression and ECV production, effects of FGFR inhibition/silencing on ECV secretion and protection, and in vivo validation in Fgf2 -/- mice (C117, C151-C153). The claim about \"reprogramming during resistance development\" draws on cited prior work showing FGF2 upregulation during resistance.",
+    "result_type": "MAJOR"
+  }
+]

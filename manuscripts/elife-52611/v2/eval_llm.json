@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53"
+    ],
+    "result": "Aminoglycosides, particularly G418 and gentamicin, stimulate readthrough of both premature termination codons (PTCs) and normal termination codons (NTCs) genome-wide. Ribosome profiling revealed increased 3'UTR ribosome density and decreased termination peaks at stop codons following aminoglycoside treatment, with G418 showing the strongest effect (preserving 20% of CDS density in 3'UTRs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C44-C46, and C48-C49, C52-C53 are strongly supported by converging evidence from luciferase reporter assays (C44-C46) and genome-wide ribosome profiling data (C47-C53). The high correlation between replicates (R > 0.99, C47), consistent observations across multiple aminoglycosides, and quantitative measurements of 3'UTR ribosome density provide robust support for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Stop codon identity, the +4 nucleotide position, and surrounding mRNA sequence context significantly influence stop codon readthrough probability. The readthrough hierarchy follows UGA > UAG > UAA for 3-nucleotide codons, with cytosine at the +4 position significantly increasing readthrough (p<0.01). Generally, A's and U's in the surrounding context increase readthrough probability while C's and G's decrease it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C70-C79 are well-supported by multiple complementary approaches including luciferase reporter assays testing different stop codon positions (C70-C71), genome-wide RRTS analysis with statistical testing (C72-C73, C75), and sequence context analysis using both kpLogo and linear regression methods (C77-C79). The consistency between reporter assays and genome-wide data strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Downstream stop codons in 3'UTRs (3'TCs) are recognized less efficiently than NTCs, with 46% of ribosome density maintained downstream of 3'TCs compared to 33% for NTCs. This difference correlates with enrichment of C's and G's near NTCs but A's and U's near 3'TCs, suggesting evolutionary pressure for efficient termination at NTCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C80-C83 are supported by quantitative ribosome profiling analysis (C83) and nucleotide frequency analysis (C80-C82). The paired t-test showing significant differences (p=0.02, C83) and the correlation between nucleotide composition and readthrough efficiency provide strong evidence. However, the analysis excludes transcripts with overlapping stop codons, which may introduce some selection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "3'UTR ribosomes in G418-treated cells derive from stop codon readthrough rather than alternative mechanisms (frameshifting, recycling failure, or reinitiation). This is demonstrated by strong three-nucleotide periodicity, conservation of reading frame in 3'UTRs, and termination at in-frame 3'TCs but not out-of-frame 3'TCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 provide compelling evidence through multiple orthogonal approaches: read length distribution analysis (C58), three-nucleotide periodicity (C59), reading frame conservation (C60-C62), and gene-specific examples (C65-C66). The exclusion of alternative mechanisms through reading frame analysis (C63) is logically sound, as frameshifting, recycling failure, and reinitiation would not maintain reading frame.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "G418 treatment restores full-length TP53 protein synthesis in Calu-6 cells harboring a R196X nonsense mutation in a dose-dependent manner, while also stabilizing TP53 mRNA levels 16-fold. Ribosome profiling confirms readthrough of the PTC, though termination remains more frequent than readthrough even at high G418 concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 are supported by converging evidence from western blotting (C84-C86), RNA-seq (C87), and ribosome profiling (C88-C90). The concordance between protein levels showing more truncated than full-length TP53 (C85-C86) and ribosome profiling showing higher RPF density upstream than downstream of the PTC (C90) provides internal consistency. The 16-fold mRNA stabilization (C87) is consistent with EJC-dependent NMD models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "G418-induced miscoding substantially affects histone gene expression, causing decreased translation, mRNA stabilization (even after 10 minutes), and ribosome translation into conserved 3'UTR hairpin structures. At 24 hours, cells show induction of the unfolded protein response and translational upregulation of ATF4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C91-C94 are supported by RNA-seq and ribosome profiling data at both 10-minute and 24-hour timepoints. The rapid effects on histone mRNAs (C93) and delayed stress response (C91-C92) suggest direct and indirect consequences of readthrough. The observation of ribosomes translating into conserved hairpins (C94) is directly visualized in gene-level profiling data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C95"
+    ],
+    "result": "G418 treatment alters selenoprotein gene translation by reducing ribosome peaks at UGA selenocysteine codons and increasing downstream ribosome density, likely due to UGA being decoded by near-cognate tRNAs instead of selenocysteine tRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C95 are supported by gene-level ribosome profiling data showing reduced peaks at selenocysteine codons and increased downstream density. The interpretation that G418 causes UGA to be decoded by nc-tRNAs instead of selenocysteine tRNA is reasonable given the known mechanism of aminoglycosides, though direct evidence of amino acid incorporation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "G418 treatment dramatically affects AMD1 translation by reducing ribosome stalling at the uORF stop codon, increasing CDS translation at both early and late timepoints, and enriching ribosomes at the first in-frame 3'TC. Notably, no ribosome queuing upstream of the 3'UTR stall site was observed despite high readthrough levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C96-C99 are supported by detailed gene-level ribosome profiling analysis. The observation that ribosome queuing does not occur (C99) challenges previous models proposing queuing as a regulatory mechanism for AMD1, though the authors appropriately note this as an observation rather than claiming to disprove the queuing model. The data clearly show the described changes in ribosome distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "G418 treatment disrupts translation initiation and elongation, increasing ribosome occupancy at start codons and causing both amino acid-specific changes (increased occupancy on all glycine and aspartic acid codons) and codon-specific changes (decreased occupancy on AUA isoleucine codon only).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by metagene analysis at start codons and codon occupancy analysis. The specificity of effects (all codons for some amino acids, single codon for isoleucine) is clearly demonstrated. However, the biological significance and mechanism of these specific effects are not explored, limiting interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on translation termination, nonsense mutations, and stop codon readthrough mechanisms, including the roles of release factors, NMD machinery, and near-cognate tRNAs. Nonsense mutations account for approximately 11% of inherited genetic disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C11-C26 represent established knowledge supported by appropriate citations to the literature. These provide necessary context for the study but are not novel findings. The prevalence statistic (C25) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Prior work has documented multiple factors influencing termination efficiency (stop codon identity, RNA structures, modifications, RNA binding proteins, tRNA availability) and high rates of readthrough in diverse organisms. Aminoglycosides promote miscoding in both bacterial and eukaryotic systems by binding the decoding center and promoting nc-tRNA accommodation while blocking termination factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C43 represent literature review supported by appropriate citations. These establish the foundation for the current study but are not novel findings. The claim about correlation between basal and AG-stimulated readthrough (C43) appropriately notes that global effects had not been documented, setting up the rationale for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C57",
+      "C74"
+    ],
+    "result": "Technical validation claims: increased readthrough predicts increased 3'UTR ribosome density (logical prediction), mammalian ribosomes protect 29-31 nt fragments, and ribosome profiling captures the +4 nucleotide at stop codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C57, and C74 represent either logical predictions (C51) or technical validations supported by citations (C57) and data (C74). These are important for methods validation but represent minor technical points rather than major findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1537 @@
+{
+  "submission": {
+    "id": "3c4a990e-6622-458c-a199-d8698f7d8abe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:32:26.878476Z",
+    "updated_at": "2025-12-02T09:32:26.878476Z"
+  },
+  "content": [
+    {
+      "id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "submission_id": "3c4a990e-6622-458c-a199-d8698f7d8abe",
+      "content_type": "manuscript",
+      "content_text": "# A switch in surface polymer biogenesis triggers growth-phase-dependent and antibiotic-induced bacteriolysis\n\n## Authors\n\n- Josu\u00e9 Flores-Kim<sup>1</sup> ([ORCID: 0000-0001-8282-6647](https://orcid.org/0000-0001-8282-6647))\n- Genevieve S Dobihal<sup>1</sup>\n- Andrew Fenton<sup>1</sup>\n- David Z Rudner<sup>1</sup> ([ORCID: 0000-0002-0236-7143](https://orcid.org/0000-0002-0236-7143)) \u2020\n- Thomas G Bernhardt<sup>1</sup> ([ORCID: 0000-0003-3566-7756](https://orcid.org/0000-0003-3566-7756)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology Harvard Medical School Boston United States\n2. The Florey Institute, Molecular Biology Biotechnology University of Sheffield Sheffield United Kingdom\n3. Howard Hughes Medical Institute Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPenicillin and related antibiotics disrupt cell wall synthesis to induce bacteriolysis. Lysis in response to these drugs requires the activity of cell wall hydrolases called autolysins, but how penicillins misactivate these deadly enzymes has long remained unclear. Here, we show that alterations in surface polymers called teichoic acids (TAs) play a key role in penicillin-induced lysis of the Gram-positive pathogen Streptococcus pneumoniae (Sp). We find that during exponential growth, Sp cells primarily produce lipid-anchored TAs called lipoteichoic acids (LTAs) that bind and sequester the major autolysin LytA. However, penicillin-treatment or prolonged stationary phase growth triggers the degradation of a key LTA synthase, causing a switch to the production of wall-anchored TAs (WTAs). This change allows LytA to associate with and degrade its cell wall substrate, thus promoting osmotic lysis. Similar changes in surface polymer assembly may underlie the mechanism of antibiotic- and/or growth phase-induced lysis for other important Gram-positive pathogens.\n\n## Introduction\n\nPenicillin and related beta-lactams are some of our oldest and most effective antibiotics. These drugs disrupt the cell wall biogenesis pathway in bacterial cells and in doing so elicit explosive lysis (Park, 1964; Park and Strominger, 1957). Despite the long history of their use in the clinic, we still know relatively little about how beta-lactams trigger this catastrophic event. Understanding the mechanisms responsible for this lethal activity has the potential to provide fundamental new insights into the cell wall assembly process and to reveal novel ways of inducing bacteriolysis for future therapeutic development.\n\nThe main targets of the beta-lactams are cell wall synthases called penicillin-binding proteins (PBPs) (Strominger and Tipper, 1965; Tipper and Strominger, 1965), of which there are two varieties: class A (aPBPs) and class B (bPBPs) (Goffin and Ghuysen, 1998; Sauvage et al., 2008). These enzymes build the peptidoglycan (PG) matrix that surrounds most bacterial cells and protects them from osmotic rupture. The aPBPs are bifunctional and possess PG glycosyltransferase (PGT) and transpeptidase (TP) activity to polymerize the glycan strands of PG and form the inter-strand crosslinks of the network, respectively. The bPBPs, on the other hand, only possess TP activity. They work in concert with a second class of PG polymerases called the SEDS (shape, elongation, division, and sporulation) family proteins to synthesize and crosslink new cell wall material (Cho et al., 2016; Emami et al., 2017; Meeske et al., 2016; Sjodt et al., 2018; Taguchi et al., 2019).\n\nBeta-lactams covalently modify the TP active site of the PBPs to block the PG crosslinking activity of the aPBPs and SEDS-bPBP complexes (Cho et al., 2016; Tipper and Strominger, 1965). The first models of the lytic mechanism following TP inhibition by these drugs proposed that lysis resulted from the gradual weakening of the wall as it was made with fewer and fewer crosslinks (Park and Strominger, 1957). However, pioneering studies from Tomasz and co-workers in the Gram-positive pathogen Streptococcus pneumoniae (Sp) changed this view by showing that lysis in this organism was dependent on the activity of a PG cleaving enzyme called LytA (Tomasz et al., 1970; Tomasz and Waks, 1975). Beta-lactam-induced lysis in other bacteria was subsequently shown to also be dependent on factors with PG processing activity (Cho et al., 2014; Chung et al., 2009; Heidrich et al., 2001; Heidrich et al., 2002; Tipper and Strominger, 1965; Uehara et al., 2009). Thus, these PG hydrolases are often referred to as autolysins, and from genome sequencing data we now know that most bacteria encode a large variety of enzymes capable of breaking bonds in the PG network (Uehara and Bernhardt, 2011; Vollmer et al., 2008).\n\nIn normally growing bacteria, PG hydrolases are thought to participate in a number of critical cellular processes. Their activity is important to create space in the existing wall matrix to allow for the insertion of new material during cell elongation (Bisicchia et al., 2007; Carballido-L\u00f3pez et al., 2006; Meisner et al., 2013; Sycuro et al., 2010; Vollmer et al., 2008). They also remodel the cell wall formed at the division site (septal PG) to shape the new poles and promote daughter cell separation (De Las Rivas et al., 2002; Fan, 1970; Heidrich et al., 2001; Hett et al., 2008; Lominski et al., 1958). Given their potential to induce cell lysis, it has long been appreciated that bacteria must possess robust mechanisms to control when and where PG hydrolases are activated to cut bonds in the PG network (Uehara and Bernhardt, 2011; Vollmer et al., 2008). However, surprisingly little is known about the regulatory systems that control these potentially deadly enzymes or how they are subverted by antibiotics like beta-lactams to lyse bacterial cells.\n\nTo better understand PG hydrolase regulation and penicillin-induced lysis, we used Sp as a model system. It has the advantage of requiring a single PG hydrolase called LytA for lysis-induction (Figure 1A and Figure 1\u2014figure supplement 1) (Tomasz et al., 1970; Tomasz and Waks, 1975). The problem is therefore more genetically tractable in Sp than in other model organisms where multiple PG hydrolases are implicated in lysis-induction (Heidrich et al., 2001; Uehara et al., 2009; Vollmer et al., 2008). Another benefit of Sp is its propensity to lyse following prolonged growth in stationary phase (Fernebro et al., 2004; Mellroth et al., 2012; Tomasz et al., 1970; Tomasz and Waks, 1975). Like penicillin-induced lysis, autolysis in stationary phase is LytA-dependent (Fernebro et al., 2004; Mellroth et al., 2012; Tomasz et al., 1970; Tomasz and Waks, 1975). This property of Sp cells enabled us to develop a genetic screen for LytA regulators. The screen revealed a key role for surface polymers called teichoic acids (TAs) in controlling LytA activity. TAs are major constituents of the cell surface in Gram-positive bacteria and are either lipid-anchored (lipoteichoic acids, LTAs) or wall-anchored (wall teichoic acids, WTAs) (Figure 1B) (Brown et al., 2013; Percy and Gr\u00fcndling, 2014). Our results indicate that Sp cells primarily produce LTAs during normal exponential growth, which bind and sequester LytA. However, entry into stationary phase and penicillin-treatment were both found to trigger the degradation of the Sp LTA synthase, causing a switch to the production of WTAs. This change allows LytA to associate with and degrade its cell wall substrate, thus promoting osmotic lysis. We propose that changes in surface polymer assembly may similarly underlie the mechanism of antibiotic-induced lysis for a number of other important Gram-positive pathogens.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig1-v2.jpg)\n\n**Figure 1.:** (A) The indicated strains were grown in THY at 37 \u02daC in 5% CO2. At an OD600 of\u00a0~0.5, they were challenged with penicillin G (PenG) (0.5 \u03bcg/ml final). Growth was monitored every 30 min for 15 hr. (B) Schematic diagram of the cell envelope of Sp. The cell wall peptidoglycan (PG) (blue) contains Wall Teichoic Acid (WTA) polymers and the lipid bilayer contains Lipoteichoic Acid (LTA). The constituents of the repeating unit in LTAs and WTAs are indicated; Cho, choline; GlcNac, N-acetylglucosamine; Rbo, ribitol; ATTGal, 2-acetamido-4-amino-2,4,6-trideoxygalactose; Glc, glucose; Phos, phosphate. The following figure supplement is available for Figure 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Growth curves of the indicated strains at 37\u00b0C in 5% CO2. Measurements of culture OD600 were recorded approximately every 30 min for 15 hr. Samples were collected at the indicates time points (E, exponential; S, stationary; A, autolysis), normalized to an OD600 of 0.5 and analyzed by SDS-PAGE and immunoblotting using an anti-LytA antibody (LytA). LC (loading control) indicates a Ponceau S stain of the nitrocellulose membrane used for immunoblot analysis.\n\n## Results\n\n### Identification of TacL as a potential LytA control factor\n\nPrevious studies indicated that LytA protein levels remain constant during growth, and we have confirmed this result (Figure 1\u2014figure supplement 1) (Fernebro et al., 2004; Henriques Normark and Normark, 2002; Mellroth et al., 2012). Based on this observation, we hypothesized that LytA activity is negatively regulated during normal exponential growth by an inhibitory factor(s). In this scenario, inhibition would be relieved upon entry into stationary phase or exposure to cell wall synthesis inhibitors triggering lysis. If correct, this hypothesis predicts that the putative LytA inhibitory factor(s) should be essential for growth in wild type (LytA+) cells but become non-essential in cells lacking LytA (\u2206lytA). Therefore, to identify the potential LytA inhibitor(s), we used transposon sequencing (Tn-Seq) to screen for Sp genes displaying the expected pattern of essentiality/non-essentiality. Transposon libraries were prepared in a wild-type strain D39 without its capsule (WT) and a derivative deleted for lytA (\u0394lytA) (Fenton et al., 2016; Land and Winkler, 2011). When the insertion profiles were compared, we found that the gene tacL (SPD_1672) was virtually devoid of insertions in the WT library, but readily inactivated by insertions in the \u0394lytA library (Figure 2A). To validate the Tn-Seq results, we constructed a TacL-depletion strain in which the sole copy of tacL was placed under control of a zinc-regulated promoter (\u0394tacL PZn-tacL) (Eberhardt et al., 2009). When TacL was produced (+Zn), cells were viable regardless of their LytA status (Figure 2B). However, when TacL was depleted (-Zn), viability was severely compromised only in cells producing LytA (Figure 2B). Furthermore, TacL depletion during growth in liquid medium caused premature LytA-dependent autolysis in exponential phase (Figure 2C). Consistent with these findings, a high-throughput CRISPRi study in Sp cells showed that TacL depletion led to increased lysis in stationary phase and aberrant cell morphology (Liu et al., 2017). Thus, tacL has the genetic properties expected for a gene encoding a LytA inhibitor that is active during normal exponential growth.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig2-v2.jpg)\n\n**Figure 2.:** (A) Transposon insertion profiles from the Tn-Seq screen. Mariner transposon libraries were generated in wild-type (WT) and \u0394lytA mutant strains and insertion sites were mapped to the Sp genome using Illumina sequencing. The height of each line reflects the number of sequencing reads at each position. Note that transposon insertions in tacL were much more readily isolated in cells lacking lytA. (B) Spot dilutions of the indicated strains in the presence and absence of inducer (Zn). The indicated strains were grown to exponential phase, normalized for OD600 and serially diluted. Aliquots (5 \u03bcl) of each dilution were spotted onto TSAII 5% SB plates in the presence or absence of 100 \u00b5M ZnCl2. Plates were incubated at 37 \u02daC in 5% CO2 and imaged. (C) Depletion of tacL results in growth arrest and lysis in exponential phase while its overexpression results in protection against growth-phase-dependent autolysis. Strains containing a zinc-inducible tacL allele (Pzn-tacL) were grown in THY to mid-exponential phase. Cultures were diluted into fresh THY to an OD600 of 0.025 in the presence or absence of 100 \u00b5M ZnCl2 and grown at 37 \u02daC in 5% CO2. Growth was monitored by taking OD600 measurements approximately every 30 min for 15 hr.\n\n### TacL protects cells from extracellular LytA\n\nLytA lacks a discernible motif for protein secretion and the mechanism by which it is exported has yet to be defined (D\u00edaz et al., 1989). Therefore, one possible way in which TacL could control the ability of LytA to cleave the cell wall is through the inhibition of LytA secretion during exponential growth. Such a model predicts that both TacL+ and TacL- cells should be equally sensitive to the addition of purified LytA. To test this possibility, recombinant LytA (rLytA) was purified from Escherichia coli (Figure 3A) and added to exponentially growing cultures of \u0394lytA or \u0394lytA \u0394tacL cells (Figure 3B). As observed previously, addition of rLytA to \u2206lytA (TacL+) cells had no impact on growth during exponential phase and only caused lysis in stationary phase (Figure 3B) (Fernebro et al., 2004; Mellroth et al., 2012). However, the addition of rLytA to \u0394lytA \u0394tacL cells led to rapid cell lysis during exponential growth (Figure 3B). We therefore conclude that TacL is required for the growth-phase-dependent control of LytA activity at a step after its export to the cell surface.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig3-v2.jpg)\n\n**Figure 3.:** (A) Coomassie-stained gel of recombinant LytA (rLytA) purified from E. coli. Molecular weight markers (in kDa) are shown. (B) Growth curves of the indicated strains before and after the addition of 1 \u03bcg/ml rLytA. Cells lacking lytA (\u0394lytA) or tacL and lytA (\u0394lytA \u0394tacL) were challenged with rLytA at an OD600 of\u00a0~0.2. In the absence of TacL, cells rapidly lyse after rLytA addition. By contrast and as reported previously, the \u0394lytA (TacL+) strain only lyses in stationary phase in a manner similar to LytA+ cells (Fernebro et al., 2004; Mellroth et al., 2012).\n\n### TacL-dependent LTA biogenesis is antagonistic with WTA synthesis\n\nTacL is a polytopic membrane protein predicted to have a large extracellular loop domain (Figure 4A). It was originally named RafX because the gene encoding it is located within a locus involved in raffinose utilization (Wu et al., 2014). Initial studies indicated that TacL was required for proper teichoic acid biogenesis (Wu et al., 2014), but its role in the process was not clear due the unique way in which Sp cells synthesize these polymers. Unlike most firmicutes, WTA and LTA in Sp cells have identical main chains (Brown et al., 2013; Denapaite et al., 2012; Fischer et al., 1993; Gisch et al., 2013; He\u00df et al., 2017; Percy and Gr\u00fcndling, 2014). Furthermore, bioinformatic analysis indicates that Sp cells are likely to make WTAs and LTAs from a common precursor polymer linked to an undecaprenyl phosphate (Und-P) lipid carrier (Figure 4A) (Denapaite et al., 2012). To make WTAs, the polymer is thought to be transferred to the cell wall by LCP-type enzymes (Figure 4A) (Brown et al., 2013; Kawai et al., 2011; Percy and Gr\u00fcndling, 2014; Schaefer et al., 2017). A recent study using mass spectrometry found that TacL is likely to be the corresponding LTA synthase (He\u00df et al., 2017). It is thought to be responsible for transferring the TA polymer from Und-P to the glycolipid anchor diglucosyl-diacylglycerol (Glc2-DAG) to form LTAs (Figure 4A) and was therefore renamed TacL for teichoic acid ligase (He\u00df et al., 2017). Consistent with this assignment, HHPred analysis indicates that TacL shares remote similarity with O-antigen ligases (99.7% probability, E-value 5.1e-13) (He\u00df et al., 2017; Wu et al., 2014), enzymes from Gram-negative bacteria that carry out a similar reaction, the transfer of O-antigen glycan polymers from Und-P to a lipid A-core glycolipid acceptor (Kalynych et al., 2014).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic model depicting the final steps in the synthesis of WTA and LTA in Sp. WTAs and LTAs are thought to be synthesized from a common precursor polymer that is linked to an undecaprenyl phosphate lipid carrier (Denapaite et al., 2012). The polymer is transferred to the PG by LCP proteins to form WTA (Denapaite et al., 2012). TacL is hypothesized to transfer the precursor to a glycolipid anchor to generate LTA (He\u00df et al., 2017). (B) Analysis of LTA and WTA levels during exponential growth in wild-type (WT) or cells lacking LytA (\u2206lytA), LytA and TacL (\u2206lytA\u2206tacL) or the double mutant harboring a Zn-inducible tacL allele (+tacL) grown in the presence of 100 \u00b5M ZnCl2. Top: Immunoblot analysis of membrane-associated LTAs separated by 16% Tris-tricine SDS-PAGE and probed with a monoclonal antibody specific for phosphocholine. Middle: Analysis of WTAs released from purified cell wall sacculi and separated by SDS-PAGE followed by alcian blue-silver staining. Bottom: LC, loading control.\n\nWe confirmed a role for TacL in LTA biogenesis by measuring LTA levels in exponentially growing cells with or without TacL inactivation (Figure 4B). Membrane preparations from whole cell lysates were analyzed by SDS-PAGE followed by immunoblotting with commercially available antibodies specific for the phosphatidyl-choline (PCho) modifications found on the TAs of Sp cells (Denapaite et al., 2012; Fischer et al., 1993; Gisch et al., 2013; Percy and Gr\u00fcndling, 2014). As reported previously using this method, we observed a ladder-like banding pattern of PCho-containing material ranging from 10 to 15 kDa in TacL+ cells (Figure 4B) (Wu et al., 2014). As expected based on the recent mass spectrometry study, the signal for this material was dramatically reduced in the \u2206tacL strain and was restored upon complementation with tacL expressed from an ectopic locus (Figure 4B) (He\u00df et al., 2017). Thus, our results are consistent with the detected material indeed being LTA and that TacL is required for its formation. In a parallel set of samples, we measured the effect of TacL inactivation on the production of WTAs, which were detected as alcian blue-silver stained polymers released from purified cell wall sacculi (Pollack and Neuhaus, 1994). Only a modest level of WTA material was produced in exponentially growing TacL+ cells (Figure 4B). However, TacL-defective cells had a striking increase in WTAs that was reduced back to near wild-type levels upon tacL complementation (Figure 4B). Our results thus provide additional support for the idea that TacL is the LTA ligase. Furthermore, the finding that WTAs increase when LTA synthesis is blocked suggests that the two pathways are antagonistic and are likely competing for the shared Und-P linked precursor (Figure 4A).\n\n### A switch from LTA to WTA synthesis occurs at the onset of autolysis\n\nOur results thus far indicate that loss of TacL function during exponential growth leads to a change in teichoic acid synthesis from LTA to WTA and the induction of LytA-dependent autolysis (Figures 2, 3 and 4). Connecting these two phenomena is that LytA not only has a cell wall cleaving amidase domain, but also possesses an array of six choline-binding domains (CBDs) that promote its association with PCho-modified teichoic acids (Fern\u00e1ndez-Tornero et al., 2001; Li et al., 2015; Sandalova et al., 2016). Thus, we reasoned that the LytA-dependent lethality observed upon TacL depletion may result from a switch in LytA localization from LTAs to WTAs where the enzyme will have better access to its substrate to promote cell wall degradation and lysis.\n\nTo test this hypothesis, we monitored the association of LytA with the membrane (LTA) and cell wall (WTA) in both TacL+ and TacL- cells through different stages of growth. To avoid complications arising from autolysis, we used a catalytically inactive variant of LytA, LytA(H26A) to monitor its localization (Mellroth et al., 2012). However, to guide the collection of samples, particularly those corresponding to the onset of autolysis (A), we grew a WT (LytA+) strain alongside the LytA(H26A) producing cells (Figure 5A). In TacL+ cells, we observed robust LTA production in exponential phase (E) and low levels of WTAs (Figure 5A and B). A significant portion of LytA(H26A) in these samples was found in the membrane fraction, presumably through association with LTAs (Figure 5A and B). The remaining portion of LytA was most likely retained in the cytoplasm awaiting export as has been reported previously (Mellroth et al., 2012). In early stationary phase (S), LTAs continued to be detected and the amount of WTAs were observed to increase (Figure 5A and B). The majority of the extracellular LytA(H26A) remained associated with the membrane fraction, but a small amount was detected in the cell wall fraction (Figure 5B). Finally, as cells reached late stationary phase when autolysis normally begins, LTA levels were dramatically reduced while the amount of WTA had increased relative to the early stationary phase time point (Figure 5A and B). Now, LytA(H26A) was no longer found associated with the membrane fraction but instead its localization switched almost entirely to the cell wall fraction where it was presumably bound to the WTAs (Figure 5A and B). In similar experiments performed in \u0394tacL cells, the WTAs were the only detectable teichoic acids at all growth stages, and LytA(H26A) was found associated with the cell wall fraction at every time point (Figure 5C and D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig5-v2.jpg)\n\n**Figure 5.:** (A and C) Growth curves of the indicated strains cultured at 37 \u02daC in 5% CO2. At the indicated time points (E, exponential; S, stationary; A, autolysis), samples from the lytA(H26A) mutants were collected, normalized to an OD600 of 0.5 and processed as described in Materials and methods. The WT growth curve was used as a reference for the timing of autolysis. (B and D) Samples from (A) and (C) were analyzed to detect LytA(H26A) in whole cell lysates (cells), associated with protoplast membranes, or cell wall sacculi. The cytoplasmic protein SigA was used as a control for protoplast integrity. The immunoblots were from the same membrane and exposure but were cropped to re-order the lanes for clarity. LTAs in the membrane fraction and WTA in the cell wall fraction were monitored by immunoblot and alcian blue-silver staining, respectively.\n\nWe wondered whether the same change in teichoic acid production and LytA localization also occurred during penicillin-induced autolysis. Analogous to the previous set of experiments, a WT (LytA+) strain was grown alongside a strain producing LytA(H26A) and served as a reference for the onset of lysis following penicillin-G (PenG) treatment (Figure 6A). Samples were harvested just before treatment (B), shortly after growth plateaued (P), and at the onset of lysis (L) (Figure 6A and B). We again saw a transition from LTA synthesis before treatment to the production of primarily WTAs at the onset of lysis (Figure 6A and B). Extracellular LytA(H26A) similarly was found to switch from the membrane to cell wall fraction during this time course (Figure 6A and B). We therefore conclude that both penicillin-induced and growth-phase-dependent autolysis follow a similar pathway involving a change from LTA to WTA synthesis and an accompanying transition in LytA localization. Based on these results, we infer that Sp cells control LytA activity during exponential growth by preferentially producing LTAs over WTAs to keep LytA at the membrane and prevent it from accessing its cell wall substrate. In response to prolonged stationary phase growth or treatment with penicillin, the synthetic bias switches. WTA production becomes favored, resulting in a change in LytA localization to the cell wall where it catalyzes the destruction of the matrix and promotes autolysis.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig6-v2.jpg)\n\n**Figure 6.:** (A) Growth curves of the indicated strains before and after challenge with penicillin G (PenG) (0.5 \u03bcg/ml final). At the indicates time points (B, before PenG addition; A, after addition; L, lysis), samples from the lytA(H26A) strain were collected, normalized to an OD600 of 0.5 and processed as described in Materials and methods. The growth curve of WT treated with PenG was used as reference for the timing of lysis (B) Samples from (A) were analyzed to detect LytA(H26A) in whole cell lysates (cells), associated with protoplast membranes, or with cell wall sacculi. The cytoplasmic protein SigA was used as a control for protoplast integrity. The immunoblots were from the same membrane and exposure but were cropped to re-order the lanes for clarity. LTAs in the membrane fraction and WTA in the cell wall fraction were monitored by immunoblot and alcian blue-silver staining, respectively.\n\n### TAs are released from cells at the onset of autolysis\n\nThe rapid disappearance of LTAs at the onset of autolysis suggests that in addition to the switch from LTA production to WTAs, other mechanisms are at work to remove existing LTA molecules from the membrane. Accordingly, Waks and Tomasz, 1978 previously observed the release of choline-containing TA polymers into the medium following treatment of Sp cells with cell wall synthesis inhibitors (Waks and Tomasz, 1978). To further investigate this phenomenon, cell membrane fractions and culture supernatants were harvested from LytA-defective cells before and during an autolysis time-course induced by either PenG treatment or stationary phase growth. As above, a WT (LytA+) strain was used as a reference to guide sample collection. In both cases, LTAs were detected in the membrane at early time points (E and B), but choline-containing material was absent from the supernatant (Figure 7). However, as autolysis progressed, an increase in choline-containing material in the supernatant was observed, while at late time points, LTAs in the membrane were barely detectable (Figure 7). Given their shared structure with WTAs (Gisch et al., 2013), it is not possible to definitively conclude that the released material is derived from LTAs. However, the coincidence of choline-containing polymers appearing in the medium with LTAs being lost from the membrane suggests that this material indeed reflects LTA release. Thus, in conjunction with the prior results of Waks and Tomasz, 1978, our results suggest that LTAs are released from cells during autolysis by an as yet unknown mechanism. Coupled with the switch in teichoic acid synthesis to favor WTAs over LTAs, LTA release would allow for the rapid depletion of LTAs and re-localization of LytA to WTAs where it can promote destruction of the wall matrix.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig7-v2.jpg)\n\n**Figure 7.:** (A) Growth curve of the indicated strains cultured at 37 \u02daC in 5% CO2. At the indicated time points (E, exponential; S, stationary; A, autolysis), samples from the \u0394lytA mutant were collected, normalized to an OD600 of 0.5 and processed as described in Materials and methods. The WT growth curve was used as a reference for the timing of autolysis. (B) Samples from (A) were analyzed to detect LTA in membranes (Memb) or culture medium (Sup, supernatant) by immonoblot. (C) Growth curve of the indicated strains cultured at 37 \u02daC in 5% CO2. At an OD600 of\u00a0~0.5 the cultures were challenged with penicillin G (PenG) (0.5 \u00b5g/ml final). At the indicated time points (B, before PenG addition; A, after addition; L, lysis), samples from the \u2206lytA mutant were collected and normalized to an OD600 of 0.5. (D) Samples from (C) were analyzed to detect LTA in membranes (Memb) or supernatant (Sup) by immunoblot.\n\n### The autolytic switch is triggered by FtsH-dependent degradation of TacL\n\nWe were next interested in determining how the switch in teichoic acid synthesis is initiated in response to autolytic conditions. Given that the change involves a loss of detectable LTAs, we suspected that TacL may be the primary regulatory target. As an initial test of this hypothesis, we monitored the effect of tacL overexpression (PZn-tacL) from an ectopic locus on autolysis induction. For both stationary-phase growth and penicillin treatment, tacL overexpression was found to prevent the induction of autolysis (Figure 8\u2014figure supplement 1), suggesting that a reduction in TacL levels underlies the autolytic switch from LTA to WTA production.\n\nTo investigate this possibility further, a functional FLAG-tagged derivative of TacL was generated and its steady-state levels were monitored in \u0394lytA cells at different phases of growth or following penicillin treatment (Figure 8A and B, and Figure 8\u2014figure supplement 2). A reproducible decrease in TacL-FLAG abundance was observed at time points corresponding to autolysis onset in a reference LytA+ strain (Figure 8A and B, and Figure 8\u2014figure supplement 2). To determine whether this reduction in TacL-FLAG levels was caused by protease degradation, we monitored the half-life of TacL-FLAG following the inhibition of protein synthesis with chloramphenicol (Cm). The protein appeared to be relatively stable in exponential phase, but its half-life decreased significantly in late stationary phase or in response to penicillin treatment (Figure 8C and Figure 8\u2014figure supplement 2C). We therefore conclude that TacL degradation is induced in response to conditions that trigger autolysis.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig8-v2.jpg)\n\n**Figure 8.:** (A) Growth curves of the indicated strains harboring a functional TacL-FLAG fusion as the sole source of TacL. At an OD600 of\u00a0~0.5 the cultures were challenged with penicillin G (PenG) (0.5 \u00b5g/ml final). At the indicated time points (B, before penG addition; A, after addition; L, lysis), samples from the \u2206lytA and \u2206ftsH\u2206lytA strains were collected and normalized to an OD600 of 0.5. Samples from a TacL+ \u2206lytA strain were collected at the same time points. The growth curve of this strain was omitted from the figure for clarity. The growth curve of the TacL-FLAG LytA+ strain (WT) treated with PenG was used as reference for the timing of lysis. (B) Samples from (A) were processed as described in Materials and methods to detect TacL-FLAG and FtsH from whole cell lysates, LTA from membrane preparations, and WTAs released from purified cell wall sacculi. A region of the nitrocellulose membrane used for immunoblot analysis was stained with Ponceau S (PonS) to control for loading. (C) TacL-FLAG stability before and after PenG exposure. Wild-type Sp harboring TacL-FLAG was grown as in (A). Prior to PenG exposure (-PenG) or 2 hr after addition (+PenG), cultures were treated with chloramphenicol (Cm) (50 \u03bcg/ml final) to block translation. Samples were collected immediately before and 10, 20, 30 min after Cm addition and analyzed by SDS-PAGE and anti-FLAG immunoblotting to detect TacL. A region of the nitrocellulose membrane used for immunoblot analysis was stained with Ponceau S (PonS) to control for loading. (D) Transposon insertion profiles from a mariner transposon library generated in wild-type Sp and grown in the presence or absence of sub-inhibitory doses of penicillin G (PenG) or chloramphenicol (Cm). Transposon insertions in ftsH were significantly enriched (p<0.0001) in the presence of PenG compared to no drug or the Cm-treated control. The following figure supplements are available for Figure 8.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Growth curves of wild-type (WT) Sp and a strain harboring a zinc-inducible tacL allele (WT\u00a0+tacL) Exponentially growing cultures were diluted into fresh THY at an OD600 of 0.025 in the presence of 100 \u00b5M ZnCl2 and incubated at 37\u00b0C in 5% CO2. (B) The same strains as in (A) were grown in THY in the presence of 100 \u00b5M ZnCl2 to an OD600 of 0.5 and then challenged with penicillin G (0.5 \u03bcg/ml final). Growth was monitored approximately every 30 min for 15 hr. Note that tacL overexpression blocks cell lysis in both conditions.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) Growth curves of the indicated strains harboring a functional TacL-FLAG fusion as the sole source of TacL. At the indicated time points (E, exponential phase; S, stationary phase; A, autolysis), samples from the \u2206lytA and \u2206ftsH \u2206lytA strains were collected and normalized to an OD600 of 0.5. Samples from a TacL+ \u2206lytA strain were collected at the same time points. The growth curve of this strain was omitted from the figure for clarity. The growth curve of the TacL-FLAG LytA+ strain (WT) was used as reference for the timing of autolysis. (B) Samples from (A) were processed as described in Materials and methods to detect TacL-FLAG and FtsH from whole cell lysates, LTA from membrane preparations, and WTAs released from purified cell wall sacculi. A region of the nitrocellulose membrane used for immunoblot analysis was stained with Ponceau S (PonS) to control for loading. (C) TacL-FLAG stability in exponential and stationary phases. Wild-type Sp harboring TacL-FLAG was grown as in (A). In exponential phase (E) or 2 hr after entry into stationary phase (S), cultures were treated with chloramphenicol (Cm) (50 \u03bcg/ml final) to block translation. Samples were collected immediately before and 10, 20, 30 min after Cm addition and analyzed by SDS-PAGE and anti-FLAG immunoblotting to detect TacL. A region of the nitrocellulose membrane used for immunoblot analysis was stained with Ponceau S (PonS) to control for loading.\n\nTo identify the protease responsible for TacL degradation, we performed an additional Tn-seq screen. The rationale for the screen was that mutants unable to degrade TacL should be defective in the induction of autolysis and therefore more tolerant than WT cells to penicillin treatment. We used our original transposon library prepared in the WT strain and grew it either without drug or in the presence of a sub-lethal concentration of penicillin G that caused a mild growth defect without affecting viability. We then compared the transposon insertion profiles observed in the Tn-Seq data from these two conditions. A few genes were identified in which transposon insertions were significantly enriched in the penicillin treated condition versus the no drug or unrelated drug control (Figure 8D). One of these genes was ftsH, encoding a highly conserved ATP-dependent zinc metallopeptidase (Ito and Akiyama, 2005). FtsH has two transmembrane segments and a well-known role in the degradation of membrane protein substrates (Langklotz et al., 2012). We therefore focused on FtsH as a candidate for the protease targeting TacL.\n\nTo test whether FtsH targets TacL for degradation, we compared TacL-FLAG levels as well as LTA and WTA production in cells with or without FtsH. Unlike cells with functional FtsH, TacL-FLAG remained stable in \u0394ftsH cells following penicillin treatment (Figure 8A and B). Moreover, these cells did not undergo the switch in teichoic acid production from LTAs to WTAs, nor did LytA+ cells lacking FtsH autolyze in response to penicillin treatment (Figure 8A and B). Similar observations were made comparing FtsH+ and FtsH- cells during prolonged stationary phase growth (Figure 8\u2014figure supplement 2A and B). Specifically, TacL-FLAG remained stable in cells lacking FtsH and LTAs continued to be produced in stationary phase where their levels were dramatically reduced in FtsH+ cells. Altogether, our results support a model in which autolysis in response to cell wall targeting drugs or stationary phase growth is caused by a switch in surface polymer biogenesis triggered by FtsH-mediated degradation of TacL.\n\n## Discussion\n\nAutolysis of Sp cells following entry into stationary phase was described by Walther Goebl and Oswald Avery almost a century ago (Avery and Cullen, 1923; Goebel and Avery, 1929; Neufeld, 1900). Although the biological relevance of this phenomenon remains unclear (Eldholm et al., 2009; Hirst et al., 2008; Kietzman et al., 2016; Martner et al., 2009), it is medically significant due to its relationship with antibiotic-induced bacteriolysis (Fernebro et al., 2004; Mellroth et al., 2012; Tomasz et al., 1970; Tomasz and Waks, 1975). The connection between these lytic events was made half a century later by Tomasz and co-workers (Tomasz et al., 1970; Tomasz and Waks, 1975). Their seminal studies demonstrated that both types of lytic events require the activity of the PG hydrolase LytA (Tomasz et al., 1970; Tomasz and Waks, 1975). Several decades have now elapsed since these discoveries were reported yet the regulatory systems controlling LytA during normal growth and how they are relieved to induce lysis have remained ill-defined. Here, we show that a change in cell surface polymer biogenesis underlies the onset of autolysis, providing a mechanistic framework to understand the process and exploit it for the development of novel lytic antibiotics.\n\nOur data indicate that LTAs and WTAs have antagonistic effects on cellular LytA activity. LTAs are required to prevent LytA-induced lysis during exponential growth whereas an increase in WTA synthesis at the expense of LTAs is associated with conditions that promote cell wall destruction by LytA (Figures 4, 5, 6, 7 and 8). The polymeric structure of LTA and WTA is identical in Sp cells (Denapaite et al., 2012; Fischer et al., 1993). LytA is therefore unlikely to have a different enzymatic potential when bound to these molecules through its choline-binding domains. Although it is possible that the association of LytA with WTA is required to properly orient the amidase domain with respect to its substrate for productive cleavage (Li et al., 2015; Mellroth et al., 2014; P\u00e9rez-Dorado et al., 2010; Sandalova et al., 2016), we favor a model in which the differential control exerted by these polymers is the result of how they affect the localization of LytA within the cell envelope (Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig9-v2.jpg)\n\n**Figure 9.:** During exponential growth, TacL-dependent LTA synthesis dominates over LCP-dependent production of WTA. LytA bound to the phosphocholine moeities (purple/black balls) on LTA is sequestered away from WTA preventing LytA from targeting the cell wall. Upon entry into stationary phase or exposure to cell wall targeting antibiotics (penicillin), TacL is degraded in an FtsH-dependent manner leading to a reduction in LTA synthesis and an increase in WTA levels. Association of LytA with newly synthesized WTA leads to cell wall cleavage and lysis.\n\nCryoelectron microscopy studies of Gram-positive bacteria by Beveridge and co-workers revealed that the PG layer is spatially separated from the cytoplasmic membrane, forming what has been referred to as the Gram-positive \u2018periplasm\u2019 (Matias and Beveridge, 2008; Matias and Beveridge, 2005; Matias and Beveridge, 2006). Evidence has also been presented that LTAs are likely to be restricted to this \u2018periplasmic\u2019 space (Matias and Beveridge, 2008; Reichmann et al., 2014). We therefore propose that in Sp cells, the protective function of LTAs is mediated by their ability to bind and sequester LytA in the membrane-proximal zone of the envelope thereby limiting its access to the cell wall and ability to cut bonds in the PG network (Figure 9). It is noteworthy that Tomasz and co-workers previously observed that purified LTAs were capable of inhibiting LytA-mediated autolysis by a mechanism that was unclear at the time (Briese and Hakenbeck, 1985; H\u00f6ltje and Tomasz, 1975). Based on our findings, we infer that these results reflect the ability of micellar forms of LTAs to similarly bind and sequester LytA to prevent its association with cell wall substrate. After several hours in stationary phase or following penicillin treatment, we observed a dramatic reduction in cellular LTAs through the inhibition of their synthesis and what appears to be their release from the membrane (Figure 7). This drop in LTA levels is associated with a corresponding increase in the level of WTAs (Figures 5, 6 and 8). At this time, LytA is similarly shifted from the membrane to cell wall fractions where it is likely bound to WTAs, its association with which has long been known to be required for cell wall cleavage activity (Giudicelli and Tomasz, 1984; H\u00f6ltje and Tomasz, 1975; Li et al., 2015; Mellroth et al., 2014; Tipper and Strominger, 1965; Tomasz et al., 1970; Waks and Tomasz, 1978). Therefore, our results support a model in which it is the change in TA polymer synthesis and subsequent recruitment of LytA from membrane-anchored LTAs to its cell wall substrate that underlies autolysis induction (Figure 9).\n\nAlthough we do not currently know the mechanism by which Sp cells preferentially make LTAs during exponential growth, our results establish that the switch to WTA synthesis under autolytic conditions involves the degradation of TacL, the likely ligase involved in making LTAs (Figure 8 and Figure 8\u2014figure supplement 2) (He\u00df et al., 2017). Furthermore, inactivation of the membrane-bound protease FtsH was shown to prevent TacL degradation and protect cells from LytA-dependent autolysis, suggesting that TacL is a direct substrate of FtsH (Figure 8 and Figure 8\u2014figure supplement 2). What remains to be determined is how TacL degradation by FtsH is triggered by conditions that induce autolysis.\n\nThe physiological signals governing FtsH activity are not known in any organism but are best understood in E. coli. As in Sp cells, E. coli FtsH controls an important branch point in an envelope biogenesis pathway (Ogura et al., 1999). In this case, its key substrate is LpxC, the enzyme catalyzing the committed step in the synthesis of lipopolysaccharide (LPS), a major component of the Gram-negative outer membrane (F\u00fchrer et al., 2006; Ogura et al., 1999). The LPS and phospholipid synthesis pathways compete for fatty acids in the form of acyl-ACP precursors (Mohan et al., 1994; Normark et al., 1969). Therefore, flux between the two pathways must be balanced for proper membrane assembly. Indirect evidence suggests that the turnover of LpxC by E. coli FtsH may be regulated by the availability of certain acyl-ACP precursors or the accumulation of downstream products in the LPS synthesis pathway (May and Silhavy, 2018; Mohan et al., 1994; Normark et al., 1969; Ogura et al., 1999). Thus, in Sp cells, FtsH may similarly respond to precursors or products of the TA polymer assembly pathways it governs. As in E. coli, the sensing mechanism might normally function in the homeostatic control of LTA and WTA levels, which may be needed for more precise activation of LytA to promote septal PG cleavage and cell separation. Autolytic conditions would then be expected to somehow short-circuit the normal balancing mechanism, swinging it too far in favor of WTA synthesis such that destructive levels of LytA activity are stimulated. Further work will be required to test this and other possible models for the upstream signals governing Sp FtsH activity, their role in normal physiology, and how they are corrupted to induce autolysis.\n\nTAs have been implicated in the control of PG hydrolases in other Gram-positive bacteria.\u00a0In Staphylococcus aureus, the major autolysin Atl that acts at division septa to promote cell separation specifically localizes to the septal PG and this localization requires WTA (Schlag et al., 2010; Yamada et al., 1996). Interestingly, localization studies suggest that WTA levels are lowest at the septum in S. aureus suggesting that Atl preferentially localizes to PG lacking attached TA polymers (Schlag et al., 2010). In B. subtilis, the cell separase LytF localizes to septal PG in a manner that depends on both WTA and LTA (Kiriyama et al., 2014; Yamamoto et al., 2008). Finally, the major autolysin AcmA in Lactococcus lactis specifically localizes to the septum while galactosyl-containing TA polymers are largely absent at this site (Steen et al., 2003). In all of these cases the presence of TA polymers appears to interfere with autolysin binding to the cell wall, however the mechanisms underlying the temporal and spatial organization/localization of TAs is not known. Although it remains to be investigated, our results in Sp cells suggest that rather than one polymer or the other predominating, it may be the interplay between the LTA and WTA synthesis pathways that plays the key role in controlling PG hydrolysis and autolytic-induction in these and other Gram-positive organisms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain (Streptococcus  pneumoniae(Sp) D39 \u0394cps)</td>\n      <td>WT (Sp D39 \u0394cps)</td>\n      <td>Malcolm Winkler lab (Lanie et al., 2007)</td>\n      <td>Wildtype S. pneumoniae D39 \u0394cps</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>AKF_Spn001</td>\n      <td>Fenton et al., 2016</td>\n      <td>\u0394bgaA::kan</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>AKF_Spn002</td>\n      <td>Fenton et al., 2016</td>\n      <td>\u0394bgaA::add9(spec)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>AKF_Spn003</td>\n      <td>Fenton et al., 2016</td>\n      <td>\u0394bgaA::tetM(tet)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>AKF_Spn004</td>\n      <td>Fenton et al., 2016</td>\n      <td>\u0394bgaA::cat</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>AKF_Spn005</td>\n      <td>Fenton et al., 2016</td>\n      <td>\u0394bgaA::erm</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>AKF_Spn351</td>\n      <td>Fenton et al., 2016</td>\n      <td>\u0394lytA::cat</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>AKF_Spn704</td>\n      <td>This study</td>\n      <td>\u0394lytA::erm</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn001</td>\n      <td>This study</td>\n      <td>\u0394lytA::erm  \u0394tacL::cat</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn002</td>\n      <td>This study</td>\n      <td>\u0394ftsH::cat</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn003</td>\n      <td>This study</td>\n      <td>\u0394lytA::erm \u0394ftsH::cat</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn004</td>\n      <td>This study</td>\n      <td>lytA(H26A), erm</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn005</td>\n      <td>This study</td>\n      <td>lytA(H26A), erm \u0394tacL::cat</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn006</td>\n      <td>This study</td>\n      <td>tacL-FLAG, spec</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn007</td>\n      <td>This study</td>\n      <td>tacL-FLAG, spec \u0394ftsH::cat</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn008</td>\n      <td>This study</td>\n      <td>tacL-FLAG, spec \u0394lytA::erm</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn009</td>\n      <td>This study</td>\n      <td>tacL-FLAG, spec \u0394lytA::erm \u0394ftsH::cat</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn010</td>\n      <td>This study</td>\n      <td>\u0394bgaA::(PZn-tacL, tet)</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn011</td>\n      <td>This study</td>\n      <td>\u0394bgaA::(PZn-tacL, tet) \u0394lytA::erm</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn012</td>\n      <td>This study</td>\n      <td>\u0394bgaA::(PZn-tacL, tet) \u0394tacL::cat</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Sp D39 \u0394cps)</td>\n      <td>JFK_Spn013</td>\n      <td>This study</td>\n      <td>\u0394bgaA::(PZn-tacL, tet) \u0394tacL::cat \u0394lytA::erm</td>\n      <td>(see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli DH5a)</td>\n      <td>DH5a</td>\n      <td>Gibco BRL</td>\n      <td>F-hsdR17 \u0394(argF-lacZ)U169 phoA glnV44 \u03a680dlacZ \u0394 M15 gyrA96 recA1 endA1 thi-1 supE44 deoR</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli BL21)</td>\n      <td>BL21</td>\n      <td>New England Biolabs</td>\n      <td>E. coli B F\u2013 ompT gal dcm lon hsdSB(rB\u2013mB\u2013) [malB+]K-12(\u03bbS)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLEM023</td>\n      <td>Fenton et al., 2016</td>\n      <td>bgaA\u2019::Pzn::MCS::tetM::bgaA\u2019 bla</td>\n      <td>plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET24a</td>\n      <td>Novagen</td>\n      <td>PT7, lacIq; vector used for protein expression</td>\n      <td>plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMagellan6</td>\n      <td>Fenton et al., 2016</td>\n      <td>IRL(MmeI)::add9::IRR(MmeI) bla</td>\n      <td>plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>\u2018pMalC9\u2019</td>\n      <td>Fenton et al., 2016</td>\n      <td>MBP::Himar1 bla</td>\n      <td>plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pJFK_001</td>\n      <td>This study</td>\n      <td>tacL in pLEM023</td>\n      <td>plasmid (see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pJFK_002</td>\n      <td>This study</td>\n      <td>lytA in pET24a</td>\n      <td>plasmid (see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>LytA (rabbit polyclonal)</td>\n      <td>This study</td>\n      <td></td>\n      <td>1:50000 (see Materials and methods)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FtsH (rabbit polyclonal)</td>\n      <td>Kotschwar et al., 2004</td>\n      <td></td>\n      <td>1:10000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>SigA (rabbit polyclonal)</td>\n      <td>Fujita, 2000</td>\n      <td></td>\n      <td>1:10000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FLAG (TacL-FLAG; rabbit polyclonal)</td>\n      <td>Sigma</td>\n      <td>RRID:AB_796202</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>LTA (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>RRID:AB_1163630</td>\n      <td>1:1000; anti-Phosphocholine TEPC-15</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-rabbit IgG-HRP</td>\n      <td>BioRad</td>\n      <td>RRID:AB_1102634</td>\n      <td>1:20000</td>\n    </tr>\n  </tbody>\n</table>\n\n### Strains, plasmids and routine growth conditions\n\nAll Sp strains were derived from the unencapsulated D39 strain (D39 \u0394cps) (Lanie et al., 2007). Cells were grown in Todd Hewitt broth (Beckton Dickinson) supplemented with 0.5% yeast extract (THY) at 37\u00b0C in an atmosphere containing 5% CO2. Strains were grown on pre-poured tryptic soy agar 5% sheep blood plates (TSAII 5% sheep blood, Beckton Dickinson) with a 5 ml overlay of 1% nutrient broth (NB, Beckton Dickinson) agar containing the required additives or on TSA agar plates containing 5% defribrinated sheep blood (Northeast laboratory). Luria-Bertani (LB) broth and LB agar were used for E. coli. Antibiotic concentrations were used as previously described (Fenton et al., 2016). All strains, plasmids and oligonucleotides used in this study are provided in the key resources and the supplemental material 1, respectively. The D39 \u0394cps genotype (\u0394cps2A\u2019-\u0394cps2H\u2019) was excluded from derivative strains for clarity. All S. pneumoniae strains used in this study are derivatives of D39 \u0394cps. Cam\u00a0=\u00a0chloramphenicol, Erm\u00a0=\u00a0erythromycin, Kan\u00a0=\u00a0kanamycin, Spec\u00a0=\u00a0spectinomycin, Tet\u00a0=\u00a0tetracycline, Amp\u00a0=\u00a0ampicillin.\n\n### Transformation of Sp\n\nTransformations were performed as previously described (Fenton et al., 2016). Briefly, cells in early exponential phase were back-diluted to an optical density at 600 nm (OD600) of 0.03 and competence was induced with 500 pg/ml competence stimulating peptide 1 (CSP-1; Anaspec), 0.2% BSA, and 1 mM CaCl2. Cells were transformed with 100 ng genomic DNA (gDNA) or plasmid DNA. Transformants were selected on TSAII overlay plates containing the appropriate additives.\n\n### Growth curves\n\nTo monitor growth kinetics and autolysis, Sp cells in early exponential phase were diluted to an OD600 of 0.025 and grown to mid exponential phase in THY media containing the appropriate additives at 37\u00b0C in an atmosphere containing 5% CO2. These cells were used as the inoculum and were diluted to OD600 of 0.025 in THY with the indicated additives and growth was monitored by measuring OD600 every 30 min. The figures that report growth curves are representative of experiments that were performed on at least two independent samples.\n\n### Library generation and transposon insertion sequencing (Tn-seq)\n\nTn-seq was performed as described previously (Fenton et al., 2016; Fenton et al., 2018). A total of two independently generated libraries were used in this study: one from D39 \u0394cps (WT) and another from its \u0394lytA derivative. Briefly, genomic DNA with Magellan6 transposon insertions generated in vitro was transformed into competent Sp. To ensure that more than 50% of all TA sites had at least one transposon insertion,>300,000 transformants were recovered from each library and gDNA isolated. gDNAs were digested with MmeI, followed by adapter ligation. Transposon\u2013chromosome junctions were amplified and sequenced on the Illumina HiSeq. 2500 platform using TruSeq Small RNA reagents (Tufts University Core Facility Genomics; RRID:SCR_016383). Reads were demultiplexed, trimmed, and transposon- insertion sites mapped onto the D39 genome using methods described previously (Fenton et al., 2016; Fenton et al., 2018). After normalization, a Mann Whitney U test was used to identify genomic regions with significant differences in transposon insertion profiles (Fenton et al., 2016; Fenton et al., 2018). Transposon insertion profiles were visualized using the Artemis genome browser (v10.2; RRID:SCR_004267) (Carver et al., 2012).\n\nAdditional libraries were also generated by replating the D39 \u0394cps (WT) library in the presence and absence of 0.025 \u03bcg/ml penicillin G or 1.25 \u03bcg/ml chloroamphenicol. To maintain library complexity,>4,000,000 colonies were collected from each library and gDNA isolated and analyzed as described above.\n\n### Isolation and analysis of pneumococcal LTAs\n\nSp strains were grown in THY at 37\u00b0C in an atmosphere containing 5% CO2 to the indicated growth phase (additives were added as indicated) and normalized to an OD600 of 0.5. 20 ml of the normalized culture was collected by centrifugation at 5000 g for 5 min and the cell pellet was washed twice with 2 ml SMM (0.5 M sucrose, 20 mM maleic acid, 20 MgCl2, pH 6.5) before resuspending it in 2 ml SMM. Protoplasts were generated by addition of 20 mg/ml lysozyme and 100 units mutanolysin (Sigma) and incubated at 37\u00b0C for 30 min. Complete protoplasting was monitored by light microscopy. Protoplasts were pelleted by centrifugation at 5000 g for 5 min and resuspended in 2 ml cold hypotonic buffer to lyse them (20 mM HEPES (Na+), pH 8.0, 100 mM NaCl, 1 mM dithiothreitol (DTT), 1 mM MgCl2, 1 mM CaCl2, 2X complete protease inhibitors (Roche), 6 \u03bcg/ml RNAse A, 6 \u03bcg/ml DNAse). Unbroken spheroplasts were removed by centrifugation 5,000 rpm for 10 min, and then the membrane fraction was collected by ultracentrifugation at 100,000 g for 1 hr at 4\u00b0C. The pellet was resuspended in 1 ml SDS sample buffer (200 mM Tris-HCL, pH 6.8, 40% glycerol, 2% SDS, 0.04% Coomassie Blue G-250), boiled for 10 min, and separated by Tris-tricine PAGE followed by immunoblotting with anti-PCho monoclonal antibody TEPC-15 (Sigma). To analyze TAs released into the culture medium, the supernatant from each sample was collected, flash-frozen using liquid nitrogen, and lyophilized. The lyophilized powder was then resuspended in 0.5 ml of distilled water. Samples were dialyzed against three 0.5 ml changes of distilled water followed by the addition of 0.5 ml of 2X SDS sample buffer (400 mM Tris-HCL, pH 6.8, 80% glycerol, 4% SDS, 0.08% Coomassie Blue G-250). To detect TAs, samples were analyzed as described above. The results in figures analyzing LTA levels are representative of experiments that were performed on at least two independently collected samples.\n\n### Isolation and analysis of pneumococcal WTAs\n\nSp strains were grown in THY at 37\u00b0C in an atmosphere containing 5% CO2 to the indicated growth phase and normalized to an OD600 of 0.5. 20 ml of the normalized culture was collected by centrifugation at 7000 g for 5 min. The pellet was resuspended in 2 ml of buffer 1 (50 mM 2-(N-morpholino) ethanesulfonic acid (MES)), pH 6.5) and centrifuged at 7000 g for 5 min. The resulting pellet was resuspended in 2 ml of buffer 2 (50 mM MES, pH 6.5, 4% (w/v) SDS) and incubated in boiling water for 1 hr. After incubation, the cell wall sacculi were collected at 7000 g for 5 min and washed with 2 ml of buffer 2. The sample was transferred into a clean microfuge tube and centrifuged at 16000 rpm for 5 min. The pellet was then washed with 2 ml of buffer 2, followed by successive washes with 2 ml of buffer 3 (50 mM MES, pH 6.5, 2% (w/v) NaCl) and 2 ml of buffer 1. The samples were then centrifuged at 16000 rpm for 5 min, resuspended in 2 ml of buffer 4 (20 mM Tris-HCl, pH 8.0, 0.5% (w/v) SDS) supplemented with 2 \u03bcl of proteinase K (20 mg/ml), and incubated at 50\u00b0C for 4 hr with shaking (1000 rpm). After incubation, the pellet was collected by centrifugation and washed with 2 ml of buffer 3 followed by three washes with distilled water. The pellet was then collected by centrifugation and subjected to alkaline hydrolysis by resuspending the pellet in 0.5 ml of 1N sodium hydroxide solution and incubation at 25\u00b0C for 16 hr with shaking (1000 rpm). Insoluble cell wall material was pelleted by centrifugation (13000 rpm for 5 min) and the supernatants containing the extractable WTA were collected and combined 1:1 with 0.5 ml native sample buffer (62.5 mM Tris-HCl, pH 6.8, 40% glycerol, 0.01% bromophenol blue). To detect WTA, samples were analyzed by native PAGE followed by alcian-blue silver staining as described in Pollack et al. (Pollack and Neuhaus, 1994). The figures that report WTA levels are representative of experiments that were performed on at least two independently collected samples.\n\n### LytA subcellular fractionation\n\nSp strains were grown in THY at 37\u00b0C in an atmosphere containing 5% CO2 to the indicated growth phase (PenG was added as indicated) and normalized to an OD600 of 0.5. 40 ml of the normalized culture was collected by centrifugation at 5000 g for 5 min. The cell pellet was washed twice with 2 ml SMM followed by resuspension with 2 ml of SMM and divided into two 1 ml samples (Samples A and B) and pelleted by centrifugation. Sample A (whole cell lysate) was lysed by resuspension in 500 \u03bcl of lysis buffer (see below), followed by addition of 500 \u03bcl SDS sample buffer containing 10% 2-mercaptoethanol and boiled for 10 min. To determine the amount of LytA that localized with the cell wall (WTA-bound) and the membrane (LTA-bound) fractions, sample B was resuspended in 500 \u03bcl SMM and protoplasts were generated by the addition of 20 mg/ml lysozyme and 100 units mutanolysin (Sigma) and incubated at 37\u00b0C for 30 min. Complete protoplasting was monitored by light microscopy. The protoplasts were then pelleted (Sample C) and the supernatant containing the cell wall (Sample D) was collected. 500 \u03bcl of SDS-sample buffer containing 10% 2-mercaptoethanol was then added to sample D and boiled for 10 min to release WTA-bound LytA. To release LytA from membrane-bound LTA, sample C was incubated with 500 \u03bcl SMM supplemented with 2% choline chloride (w/v) for 30 min at 25\u00b0C with gentle shaking. The protoplasts were then pelleted by centrifugation, and the supernatant containing LytA was collected. 500 \u03bcl of SDS-sample buffer containing 10% 2-mercaptoethanol was added to the supernatant fraction and then boiled for 10 min. Samples A, C, and D were analyzed by SDS-PAGE followed by immunoblotting with anti-LytA and anti-sigA antisera. WTAs in sample D were analyzed by alcian-silver blue staining. LTAs in sample C were analyzed by immunoblot using anti-PCho monoclonal antibody TEPC-15 (Sigma). The figures that report LytA levels are representative of experiments that were performed on at least two independently collected samples.\n\n### Measurement of TacL-FLAG steady-state level\n\nSp strains were grown in THY at 37\u00b0C in an atmosphere containing 5% CO2 to the indicated growth phase (PenG was added as indicated). Cultures were normalized to an OD600 of 0.5 and 5 ml of each were harvested immediately before and 10, 20, 30 min after addition of chloramphenicol (50 \u03bcg/ml final concentration) to block translation. The cultures were maintained at 37\u00b0C for the duration of the experiment. Samples were then analyzed by SDS-PAGE and immunoblotting using anti-FLAG polyclonal antibody (Sigma). The figures that report TacL-FLAG levels are representative of experiments that were performed on at least two independently collected samples.\n\n### Recombinant LytA (rLytA) purification\n\nRecombinant LytA was produced in E. coli BL21(DE3) containing the pET24a-lytA expression vector. Cells were grown in LB supplemented with 50 ug/ml kanamycin at 37\u00b0C with vigorous agitation and lytA expression was induced when cells reached an OD600 of 0.5 with 1 mM IPTG for 2 hr at 37\u00b0C. Cells were collected by centrifugation and stored overnight at \u221220\u00b0C. The cell pellets were resuspended in E. coli lysis buffer (20 mM Tris, pH 7.5, 500 mM NaCl, DNase 200 \u03bcg/ml, and 2X complete protease inhibitors (Roche)). The cell suspension was then lysed by two passages through a cell disruptor (Constant systems Ltd.) at 25000 psi and unbroken cells were removed by centrifugation. The supernatant was then passed over a DEAE cellulose column (Sigma). After washing with 20 column volumes of wash buffer (20 mM NaPO4, 1.5M NaCl, pH 7), LytA was eluted with two column volumes of wash buffer supplemented with 140 mM choline chloride. Protein-containing fractions were pooled and dialyzed against 20 mM Tris, pH 7.5, 150 mM NaCl, 5 mM choline chloride and 10% glycerol and flash-frozen in liquid N2 and stored at \u221280 \u02daC.\n\n### Antisera and immunoblot analysis\n\nSp cultures were normalized to an OD600 of 0.5 and 5 ml harvested by centrifugation. Cell pellets were resuspended in 100 ul of lysis buffer (20 mM Tris pH 7.5, 10 mM EDTA, 1 mg/ml lysozyme, 100 units mutanolysin (Sigma), 10 \u03bcg/ml DNase I, 100 \u03bcg/ml RNase A, and 2X complete protease inhibitors (Roche Applied Sciences) and incubation at 37\u00b0C for 10 min. Equal volume of SDS sample buffer (100 \u03bcl, 0.25 M Tris pH 6.8, 4% SDS, 20% glycerol, 10 mM EDTA) containing 10% 2-mercaptoethanol was added. Proteins were separated by SDS-PAGE, electroblotted onto nitrocellulose membrane and blocked in 5% nonfat milk in phosphate-buffered saline (PBS)\u22120.5% Tween-20. The blocked membranes were probed with anti-LytA (1:50,000), B. subtilis anti-FtsH (1:10,000) (Kotschwar et al., 2004), B. subtilis anti-SigA (Fujita, 2000) (1,10,000), anti-FLAG (Sigma; RRID:AB:796202) (1:1,000), and anti-PCho TEPC-15 (Sigma; RRID:AB_1163630) (1:1,000) diluted into 1% nonfat milk in 1X PBS-0.05% Tween-20. Primary antibodies were detected using horseradish peroxidase-conjugated goat, anti-rabbit IgG (1:20,000, BioRad; RRDID:AB_1102634) and the Western Lightning reagent kit as described by the manufacturer (PerkinElmer). Chemiluminescence was imaged on a FluorChem R system (ProteinSimple).\n\n### Strain construction\n\n#### Sp deletion strains\n\nAll Sp deletion strains were generated using linear PCR fragments as described in Fenton et al. (2016) are listed in Supplementary file 1 (Fenton et al., 2016). Briefly, regions of approximately 1 kb flanking each gene were amplified, and an antibiotic resistance cassette placed between them using isothermal assembly. Assembled PCR products were transformed directly into Sp as described above. In all cases, deletion primers were given the name: \u2018gene name\u2019_5FLANK_F/R for 5\u2032 regions and \u2018gene name\u2019_3FLANK_F/R for 3\u2032 regions. Antibiotic markers were amplified from \u0394bgaA::antibiotic cassette (bga gene disrupted with an antibiotic cassette) strains using the AB_Marker_F/R primers. A full list of primer sequences can be found in the Supplementary file 1. Extracted gDNA from deletion strains was confirmed by diagnostic PCR using the AntibioticMarker_R primer in conjunction with a primer binding \u223c200 bp 5\u2032 of the disrupted gene; these primers were given the typical name: \u2018gene name\u2019_Seq_F. Confirmed gDNAs of single gene deletions were diluted to 20 ng/\u03bcl and used for the construction of multiple knockout strains. For strains containing multiple deletions and construct integrations, transformants were verified by diagnostic re-streaking on media containing the proper antibiotics. When needed, each construct was confirmed by diagnostic PCR and/or sequencing.\n\n#### Pzn-tacL\n\nThe tacL ORF, with its native RBS, was amplified using primers tacL_F_nativeRBS_XhoI and tacL_R_BamHI. The primers introduced XhoI and BamHI sites used for cloning into pLEM023 cut with the same enzymes, resulting in plasmid pJFK001. The plasmid was sequenced and used to transform strain D39 \u0394cps \u0394bga::kan. Integration into the bga locus was confirmed by antibiotic marker replacement and PCR using the BgaA_FLANK_F primer. gDNA from the resulting strain was prepared and then used to transform the appropriate Sp strains.\n\n#### tacL-FLAG\n\nThe tacL ORF, including its native promoter and RBS and a C-terminal FLAG sequence, was generated by isothermal assembly from 3 PCR products: 1) a PCR product containing an upstream region of tacL and the tacL ORF (including a C-terminal FLAG sequence) amplified with oligos tacL_5F_F and tacL_FLAG; 2) a PCR product containing a Spec cassette amplified with oligos AB_Marker_FLAG_F and AB_Marker_R; and 3) a PCR product containing a downstream region of tacL amplified with oligos tacL_3F_F and tacL_3F_R. The assembled product was used to transform strain D39 \u0394cps \u0394lytA::erm \u0394tacL::cat. Integration into the \u0394tacL::cat locus was confirmed by antibiotic marker replacement and PCR, sequencing, and immunoblot analysis. gDNA from the resulting strain was prepared and then used to transform the appropriate S. pneumoniae strains.\n\n#### lytA-H26A\n\nThe lytA ORF, including its native promoter and RBS and the H26A mutation, was generated by isothermal from 4 PCR products: 1) a PCR product containing an upstream region of lytA and the H26A mutation amplified with oligos LytA_5F_F and LytA_H26A_R; 2) a PCR product containing the LytA-H26A mutation and the 3\u2019 end of lytA using oligos LytA_H26A_F and LytA_ABMarkerF_R; 3) a erythromycin cassette amplified with oligos AB_Marker_ F and AB_Marker_R; and 4) a PCR product containing a downstream region of lytA amplified with oligos lytA_3F_F_AB_Marker_R and lytA_3F_R. The assembled product was used to transform strain D39 \u0394cps \u0394lytA::erm. Integration into the \u0394lytA::cat locus was confirmed by antibiotic marker replacement and PCR, sequencing, and immunoblot analysis. gDNA from the resulting strain was prepared and then used to transform the appropriate Sp strains. pET24a-lytA (pJFK002)\n\nThe lytA ORF was amplified using primers lytA_F_purification_NdeI and lytA_R_purification_HindIII. The primers introduced NdeI and HindIII sites used for cloning into pET24a cut with the same enzymes, resulting in plasmid pJFK002. The plasmid was confirmed by sequencing.\n",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "a2f62e1d-47bc-4ddf-9348-d7cd5e6dd1e7",
+      "submission_id": "3c4a990e-6622-458c-a199-d8698f7d8abe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- T\u00e2m Mignot, Aix Marseille University-CNRS UMR7283 France\n\nReviewers:\n- Jan Willem Veening, University of Groningen Netherlands\n\n## Review text\n\nDOI: [10.7554/eLife.44912.017](https://doi.org/10.7554/eLife.44912.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A switch in surface polymer biogenesis triggers growth-phase-dependent and antibiotic-induced bacteriolysis\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jan Willem Veening (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this interesting paper, Flores-Kim and co-workers come up with an exciting model for how LytA (and potentially other autolysins) becomes activated. They show that inactivation of TacL (aka as waaL, rafX, spr1708, SP_1893 or SPD_1672), the Lipo teichoic acid (LTA) synthase, increases the levels of wall TAs and leads to LytA-dependent lysis. This suggests that LTAs sequester LytA away from the cell wall. As LTAs are mainly made during exponential growth cells are protected from LytA autolytic activity. The authors also identify FtsH as the main protease responsible for degradation of TacL during stationary phase or when cells get treated with Penicillin G. How this exactly works is not yet clear. This work provides several new insights into the long-standing question on how LytA activity is controlled. In addition, it provides some leads as to the regulation of autolysins in other bacteria via controlled production of LTA and WTA.\n\nEssential Revisions:\n\nAdditional verifications to improve the paper are listed below:\n\n1) Activation by WTAs. According to the model, LytA needs WTA for its activation. Since LTA and WTA share the same precursors, depleting for instance tarP/tarQ or repressing the lic1 locus (tarI) (see e.g. Liu et al., 2017) should result in cells with less WTA (and less LTA), thus making them less susceptible to rLytA.\n\n2) Link between LytA and LTA release.\n\n\u2013 the authors show that TacL is the crucial enzyme regulating the switch from LTA to WTA\n\n\u2013 the switch is controlled by the FtsH integral membrane protease degradation of TacL\n\nThis is consistent with data generated by Tomasz and colleagues that observed that lysis could be blocked by inhibiting protein synthesis with chloramphenicol and that this inhibition was not related to LytA abundance. However, Tomasz and colleagues also showed that lysis was triggered as a consequence of release of LTA into the supernatant. So, although TacL and FtsH seem important, their identification does not explain the entire process because even though TacL is degraded, if the pre-synthesized LTA remains on the cell membrane, LytA should stay sequestered at the cell membrane and prevent lysis. So, what is triggering LTA release? Is TacL involved in this process?\n\nThe authors have followed the production of LTA and WTA on the bacteria but have not monitored the released LTA and WTA. Do they also observe that lysis is linked to LTA release in the tacL mutant? If TacL is involved in the release, then the TacL overproducing strain should not release any LTA either in stationary phase or after penicillin treatment. Alternatively, LTA might be still released but compensated by the overexpression of TacL leading to enough LTA on the cell membrane to sequester LytA and block lysis. In the latter case, it would mean that something else is responsible for the LTA release and that this is dependent on protein synthesis as shown by Tomasz et al. Testing this would be essential to close the final gap.\n\nOther suggested modifications:\n\n\u2013 Subsection \u201cA switch from LTA to WTA synthesis occurs at the onset of autolysis\u201d, last paragraph. This conclusion appears a bit premature on the basis of Figure 6. In Figure 6 PenG was added at very late exponential phase (looking at the graph OD 0.4-0.5)? It would be better to disentangle PenG's effects from the 'natural' switch in LTA to WTA if this experiment was performed by adding PenG at mid-exponential phase (i.e. OD 0.1-0.2).\n\n\u2013 Subsection \u201cIdentification of TacL as a potential LytA control factor\u201d. The correct reference for PZn is Eberhardt et al., 2009. It is correct that Kloosterman et al. demonstrated that PczcD is activated by Zn2+, but it was Eberhardt et al. who made the connection to utilize this promoter as an inducible promoter for gene depletion studies.\n\n\u2013 Subsection \"Identification of TacL as a potential LytA control factor\u201d. Liu et al., 2017 showed the effects of a tacL (spd_1672) depletion by CRISPRi and reported increased lysis in stationary phase. Cells deleted for tacL were also chained with heterogenous cell shapes. These data seem in line with the data reported here and it would be appropriate to mention. However, apparently, it is possible to make a tacL deletion in encapsulated LytA+ D39 bacteria. In addition, there seem to be some Tn-insertions in tacL even in wild type cells (Figure 2A). Can the authors comment on this?\n\n\u2013 Discussion, first paragraph. An interesting hypothesis recently put forward by Kietzman et al., 2016, is that LytA is required for shedding of the capsule, thereby enabling adherence to epithelial cells.\n\n\u2013 Subsection \u201cLibrary generation and transposon insertion sequencing (Tn-seq)\u201d, last paragraph. Chloroamphenicol \u2013 Figure 2A, Figure 7D, it is not clear why total reads at that location is plotted. It would be clearer to plot unique transposon insertion positions as spurious amplification can enrich certain sites.\n\n\u2013 Figure 2A legend. This seems an incorrect statement as there are some insertions visible.\n",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "41bba48b-2510-4625-b8a0-ae256d987b89",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C1",
+      "claim": "Penicillin and related antibiotics disrupt cell wall synthesis to induce bacteriolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Penicillin and related antibiotics disrupt cell wall synthesis to induce bacteriolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by citations in the manuscript (Park, 1964; Park and Strominger, 1957).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "8e380ad4-05d2-4b97-ada2-173f48e09ef7",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C2",
+      "claim": "Lysis in response to penicillin requires the activity of cell wall hydrolases called autolysins.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysis in response to these drugs requires the activity of cell wall hydrolases called autolysins, but how penicillins misactivate these deadly enzymes has long remained unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work and is a known fact in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "0ba54361-ff6c-47a2-a228-43bebe435c7c",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C3",
+      "claim": "During exponential growth, Streptococcus pneumoniae cells primarily produce lipid-anchored teichoic acids (LTAs) that bind and sequester the major autolysin LytA.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that during exponential growth, Sp cells primarily produce lipid-anchored TAs called lipoteichoic acids (LTAs) that bind and sequester the major autolysin LytA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 4, 5, and related analyses showing LTA levels and LytA localization during exponential growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "751bdcae-6a2a-4510-aac6-3e47a485baf1",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C4",
+      "claim": "Penicillin-treatment or prolonged stationary phase growth triggers the degradation of a key LTA synthase in Streptococcus pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, penicillin-treatment or prolonged stationary phase growth triggers the degradation of a key LTA synthase, causing a switch to the production of wall-anchored TAs (WTAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 8 showing TacL degradation under these conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "5fe7d17c-f863-4d9f-b6bc-42c0bf64af63",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C5",
+      "claim": "The switch from LTA to WTA production allows LytA to associate with and degrade its cell wall substrate, promoting osmotic lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This change allows LytA to associate with and degrade its cell wall substrate, thus promoting osmotic lysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 5 and 6 showing LytA relocalization to the cell wall and increased WTA levels at the onset of lysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "e62d9295-8fa8-4ccb-af4f-2c793b8d4144",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C6",
+      "claim": "Beta-lactams covalently modify the transpeptidase active site of penicillin-binding proteins to block peptidoglycan crosslinking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Beta-lactams covalently modify the TP active site of the PBPs to block the PG crosslinking activity of the aPBPs and SEDS-bPBP complexes (Cho et al., 2016; Tipper and Strominger, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "ff08e9f3-5d53-4988-aa52-da21fb3170ba",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C7",
+      "claim": "Beta-lactam-induced lysis in Streptococcus pneumoniae is dependent on the activity of the peptidoglycan cleaving enzyme LytA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pioneering studies from Tomasz and co-workers in the Gram-positive pathogen Streptococcus pneumoniae (Sp) changed this view by showing that lysis in this organism was dependent on the activity of a PG cleaving enzyme called LytA (Tomasz et al., 1970; Tomasz and Waks, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work and confirmed by data in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "d731a563-94b0-441d-9222-4096800687ec",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C8",
+      "claim": "Streptococcus pneumoniae requires a single peptidoglycan hydrolase called LytA for lysis-induction.",
+      "claim_type": "EXPLICIT",
+      "source": "It has the advantage of requiring a single PG hydrolase called LytA for lysis-induction (Figure 1A and Figure 1\u2014figure supplement 1) (Tomasz et al., 1970; Tomasz and Waks, 1975).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and experimental data shown in Figure 1A demonstrating that \u0394lytA mutants do not lyse in response to penicillin.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "439e3dcc-1117-4679-8fdd-b3a8aaf866ab",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C9",
+      "claim": "Streptococcus pneumoniae cells lyse following prolonged growth in stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Another benefit of Sp is its propensity to lyse following prolonged growth in stationary phase (Fernebro et al., 2004; Mellroth et al., 2012; Tomasz et al., 1970; Tomasz and Waks, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and confirmed by growth curve data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "ecb47dda-6b78-4491-8751-0f0b4266ae7a",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C10",
+      "claim": "Autolysis in stationary phase is LytA-dependent in Streptococcus pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "Like penicillin-induced lysis, autolysis in stationary phase is LytA-dependent (Fernebro et al., 2004; Mellroth et al., 2012; Tomasz et al., 1970; Tomasz and Waks, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and confirmed by data in Figure 1\u2014figure supplement 1 showing \u0394lytA mutants do not lyse in stationary phase.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "b97f82e9-5b19-4335-b2b4-a34908287780",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C11",
+      "claim": "LytA protein levels remain constant during growth in Streptococcus pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies indicated that LytA protein levels remain constant during growth, and we have confirmed this result (Figure 1\u2014figure supplement 1) (Fernebro et al., 2004; Henriques Normark and Normark, 2002; Mellroth et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "b1749bdd-b349-4e29-8431-30e74bc7d07b",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C12",
+      "claim": "LytA activity is negatively regulated during normal exponential growth by an inhibitory factor(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this observation, we hypothesized that LytA activity is negatively regulated during normal exponential growth by an inhibitory factor(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on inference from the observation that LytA levels remain constant but activity changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "3705ec6a-488d-4011-9895-f3205db554ed",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C13",
+      "claim": "The gene tacL is virtually devoid of transposon insertions in wild-type Streptococcus pneumoniae but readily inactivated in \u0394lytA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "When the insertion profiles were compared, we found that the gene tacL (SPD_1672) was virtually devoid of insertions in the WT library, but readily inactivated by insertions in the \u0394lytA library (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Tn-Seq data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "1fba34e3-2d55-4c4a-b96e-5f986408a57b",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C14",
+      "claim": "TacL depletion causes premature LytA-dependent autolysis in exponential phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, TacL depletion during growth in liquid medium caused premature LytA-dependent autolysis in exponential phase (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth curve data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "40b58dad-151f-44bd-ba2a-5e63614a895e",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C15",
+      "claim": "TacL is required for the growth-phase-dependent control of LytA activity at a step after its export to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that TacL is required for the growth-phase-dependent control of LytA activity at a step after its export to the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on data in Figure 3B showing that \u0394tacL cells are sensitive to exogenously added LytA during exponential growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "ef5fd4b4-fd75-4ce0-9f49-b8c31847960b",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C16",
+      "claim": "TacL is a polytopic membrane protein predicted to have a large extracellular loop domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TacL is a polytopic membrane protein predicted to have a large extracellular loop domain (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic prediction and is illustrated in Figure 4A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "b779e85e-4f10-4f86-a43e-e39ac92a41c9",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C17",
+      "claim": "WTA and LTA in Streptococcus pneumoniae cells have identical main chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike most firmicutes, WTA and LTA in Sp cells have identical main chains (Brown et al., 2013; Denapaite et al., 2012; Fischer et al., 1993; Gisch et al., 2013; He\u00df et al., 2017; Percy and Gr\u00fcndling, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "035c7a49-e429-4010-a535-22dabe5f0719",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C18",
+      "claim": "Streptococcus pneumoniae cells make WTAs and LTAs from a common precursor polymer linked to an undecaprenyl phosphate lipid carrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bioinformatic analysis indicates that Sp cells are likely to make WTAs and LTAs from a common precursor polymer linked to an undecaprenyl phosphate (Und-P) lipid carrier (Figure 4A) (Denapaite et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis and prior work, illustrated in Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "449b2fd8-d612-4109-a629-3ccf79b656b4",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C19",
+      "claim": "TacL is likely to be the LTA synthase in Streptococcus pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study using mass spectrometry found that TacL is likely to be the corresponding LTA synthase (He\u00df et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent mass spectrometry study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "b604447d-9b1e-480e-b462-0429bcada8bb",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C20",
+      "claim": "TacL transfers the TA polymer from undecaprenyl phosphate to the glycolipid anchor diglucosyl-diacylglycerol to form LTAs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought to be responsible for transferring the TA polymer from Und-P to the glycolipid anchor diglucosyl-diacylglycerol (Glc2-DAG) to form LTAs (Figure 4A) and was therefore renamed TacL for teichoic acid ligase (He\u00df et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on a citation to prior work and illustrated in Figure 4A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "206b998b-422b-4ee6-88d6-165884f7c9ee",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C21",
+      "claim": "TacL shares remote similarity with O-antigen ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this assignment, HHPred analysis indicates that TacL shares remote similarity with O-antigen ligases (99.7% probability, E-value 5.1e-13) (He\u00df et al., 2017; Wu et al., 2014), enzymes from Gram-negative bacteria that carry out a similar reaction, the transfer of O-antigen glycan polymers from Und-P to a lipid A-core glycolipid acceptor (Kalynych et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis (HHPred) and citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "b2dd05da-02d3-4343-9cd9-e8f2ededba52",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C22",
+      "claim": "TacL is required for LTA formation in Streptococcus pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected based on the recent mass spectrometry study, the signal for this material was dramatically reduced in the \u2206tacL strain and was restored upon complementation with tacL expressed from an ectopic locus (Figure 4B) (He\u00df et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4B showing reduced LTA levels in \u0394tacL mutants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "e5cc1ff3-91a4-4a7e-90db-f187f2288c35",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C23",
+      "claim": "TacL-defective cells have a striking increase in WTAs compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TacL-defective cells had a striking increase in WTAs that was reduced back to near wild-type levels upon tacL complementation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 4B showing increased WTA levels in \u0394tacL mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "be5a757a-9554-44ad-9ef1-de1f4daf9c72",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C24",
+      "claim": "The LTA and WTA synthesis pathways are antagonistic and likely compete for the shared undecaprenyl phosphate-linked precursor.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the finding that WTAs increase when LTA synthesis is blocked suggests that the two pathways are antagonistic and are likely competing for the shared Und-P linked precursor (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that WTA levels increase when LTA synthesis is blocked.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "f6436597-ca48-4cdb-aeba-f25aeb1acadb",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C25",
+      "claim": "LytA possesses an array of six choline-binding domains that promote its association with phosphocholine-modified teichoic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Connecting these two phenomena is that LytA not only has a cell wall cleaving amidase domain, but also possesses an array of six choline-binding domains (CBDs) that promote its association with PCho-modified teichoic acids (Fern\u00e1ndez-Tornero et al., 2001; Li et al., 2015; Sandalova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "9163f228-9c96-4c18-ba8b-dc7519529b21",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C26",
+      "claim": "In TacL+ cells during exponential phase, robust LTA production is observed and low levels of WTAs are detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In TacL+ cells, we observed robust LTA production in exponential phase (E) and low levels of WTAs (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "355da857-b6ee-47c4-93b8-cf92849ce052",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C27",
+      "claim": "A significant portion of LytA in TacL+ cells during exponential phase is found in the membrane fraction, presumably through association with LTAs.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant portion of LytA(H26A) in these samples was found in the membrane fraction, presumably through association with LTAs (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 5A and 5B showing LytA localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "ebc9654b-c651-4b85-9498-57b1e21f4591",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C28",
+      "claim": "As cells reach late stationary phase when autolysis begins, LTA levels are dramatically reduced while WTA levels increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as cells reached late stationary phase when autolysis normally begins, LTA levels were dramatically reduced while the amount of WTA had increased relative to the early stationary phase time point (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "e756363b-3f13-4665-b42a-3038b2eab7b6",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C29",
+      "claim": "At the onset of autolysis, LytA localization switches from the membrane fraction to the cell wall fraction where it is presumably bound to WTAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Now, LytA(H26A) was no longer found associated with the membrane fraction but instead its localization switched almost entirely to the cell wall fraction where it was presumably bound to the WTAs (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 5A and 5B showing LytA relocalization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "9ba536ad-be43-4168-80dd-639784267626",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C30",
+      "claim": "In \u0394tacL cells, WTAs are the only detectable teichoic acids at all growth stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In similar experiments performed in \u0394tacL cells, the WTAs were the only detectable teichoic acids at all growth stages, and LytA(H26A) was found associated with the cell wall fraction at every time point (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "9d09c54d-df69-4853-bf5f-71c90d731075",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C31",
+      "claim": "During penicillin-induced autolysis, there is a transition from LTA synthesis to primarily WTA production.",
+      "claim_type": "EXPLICIT",
+      "source": "We again saw a transition from LTA synthesis before treatment to the production of primarily WTAs at the onset of lysis (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "19ad1cd8-efb5-48c6-9a91-963c2fc760de",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C32",
+      "claim": "During penicillin-induced autolysis, extracellular LytA switches from the membrane to cell wall fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular LytA(H26A) similarly was found to switch from the membrane to cell wall fraction during this time course (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "ef36c244-c682-4134-b497-0ed029b27272",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C33",
+      "claim": "Both penicillin-induced and growth-phase-dependent autolysis follow a similar pathway involving a change from LTA to WTA synthesis and an accompanying transition in LytA localization.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that both penicillin-induced and growth-phase-dependent autolysis follow a similar pathway involving a change from LTA to WTA synthesis and an accompanying transition in LytA localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on data from Figures 5 and 6 showing similar patterns in both conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "dda38ae8-079d-449f-b81a-677924b7c3bf",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C34",
+      "claim": "Streptococcus pneumoniae cells control LytA activity during exponential growth by preferentially producing LTAs over WTAs to keep LytA at the membrane and prevent it from accessing its cell wall substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we infer that Sp cells control LytA activity during exponential growth by preferentially producing LTAs over WTAs to keep LytA at the membrane and prevent it from accessing its cell wall substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing LTA production and LytA localization during exponential growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "1bf6856e-f95f-49aa-86fb-ff3aef52d409",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C35",
+      "claim": "In response to prolonged stationary phase growth or treatment with penicillin, the synthetic bias switches such that WTA production becomes favored, resulting in a change in LytA localization to the cell wall where it catalyzes the destruction of the matrix and promotes autolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to prolonged stationary phase growth or treatment with penicillin, the synthetic bias switches. WTA production becomes favored, resulting in a change in LytA localization to the cell wall where it catalyzes the destruction of the matrix and promotes autolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing the switch in TA production and LytA localization under autolytic conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "66b2ae74-5d6b-467f-9eb6-3d789ce365cb",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C36",
+      "claim": "Choline-containing TA polymers are released into the medium following treatment of Streptococcus pneumoniae cells with cell wall synthesis inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Waks and Tomasz, 1978 previously observed the release of choline-containing TA polymers into the medium following treatment of Sp cells with cell wall synthesis inhibitors (Waks and Tomasz, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "8cd86f2f-027c-4de7-9d78-a37d54b4b067",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C37",
+      "claim": "As autolysis progresses, an increase in choline-containing material in the supernatant is observed, while LTAs in the membrane become barely detectable at late time points.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as autolysis progressed, an increase in choline-containing material in the supernatant was observed, while at late time points, LTAs in the membrane were barely detectable (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "8d15d691-2740-47a7-ad9c-a077b2cbcfc1",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C38",
+      "claim": "LTAs are released from cells during autolysis by an as yet unknown mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in conjunction with the prior results of Waks and Tomasz, 1978, our results suggest that LTAs are released from cells during autolysis by an as yet unknown mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of choline-containing material in the supernatant and the loss of LTAs from the membrane.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "45ff12cc-e523-4ac2-b76e-be2e3a493ac1",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C39",
+      "claim": "tacL overexpression prevents the induction of autolysis in both stationary-phase growth and penicillin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For both stationary-phase growth and penicillin treatment, tacL overexpression was found to prevent the induction of autolysis (Figure 8\u2014figure supplement 1), suggesting that a reduction in TacL levels underlies the autolytic switch from LTA to WTA production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "bc34a9cd-6eb8-4d90-9351-eb1d1dadde02",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C40",
+      "claim": "A reproducible decrease in TacL-FLAG abundance is observed at time points corresponding to autolysis onset.",
+      "claim_type": "EXPLICIT",
+      "source": "A reproducible decrease in TacL-FLAG abundance was observed at time points corresponding to autolysis onset in a reference LytA+ strain (Figure 8A and B, and Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 8A, 8B, and Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "cccff801-4b12-426f-a6f8-699c0315b44c",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C41",
+      "claim": "TacL-FLAG is relatively stable in exponential phase, but its half-life decreases significantly in late stationary phase or in response to penicillin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein appeared to be relatively stable in exponential phase, but its half-life decreased significantly in late stationary phase or in response to penicillin treatment (Figure 8C and Figure 8\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 8C and Figure 8\u2014figure supplement 2C showing TacL stability after chloramphenicol treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "80d1024f-dc6f-4e76-a22e-8c089f4cd6b3",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C42",
+      "claim": "TacL degradation is induced in response to conditions that trigger autolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that TacL degradation is induced in response to conditions that trigger autolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on data showing TacL degradation in stationary phase and after penicillin treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "a716d789-a43e-4cc7-ae76-9884eda257a7",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C43",
+      "claim": "Transposon insertions in ftsH are significantly enriched in the presence of penicillin G compared to no drug or chloramphenicol-treated control.",
+      "claim_type": "EXPLICIT",
+      "source": "Transposon insertions in ftsH were significantly enriched (p<0.0001) in the presence of PenG compared to no drug or the Cm-treated control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Tn-Seq data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "fcf59000-f619-48bf-8608-3d12e76ee369",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C44",
+      "claim": "FtsH is a highly conserved ATP-dependent zinc metallopeptidase.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these genes was ftsH, encoding a highly conserved ATP-dependent zinc metallopeptidase (Ito and Akiyama, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "78e8b286-699a-471d-b274-32360bb8efc6",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C45",
+      "claim": "FtsH has two transmembrane segments and a well-known role in the degradation of membrane protein substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "FtsH has two transmembrane segments and a well-known role in the degradation of membrane protein substrates (Langklotz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "45f81966-21eb-4834-882c-b578ed1fa598",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C46",
+      "claim": "TacL-FLAG remains stable in \u0394ftsH cells following penicillin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike cells with functional FtsH, TacL-FLAG remained stable in \u0394ftsH cells following penicillin treatment (Figure 8A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 8A and 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "9ef98b91-9b07-4882-9cb3-67149a0a7310",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C47",
+      "claim": "\u0394ftsH cells do not undergo the switch in teichoic acid production from LTAs to WTAs following penicillin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these cells did not undergo the switch in teichoic acid production from LTAs to WTAs, nor did LytA+ cells lacking FtsH autolyze in response to penicillin treatment (Figure 8A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 8A and 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "e09550d6-c9e2-46c6-95ff-6536d339e3f2",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C48",
+      "claim": "LytA+ cells lacking FtsH do not autolyze in response to penicillin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these cells did not undergo the switch in teichoic acid production from LTAs to WTAs, nor did LytA+ cells lacking FtsH autolyze in response to penicillin treatment (Figure 8A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figures 8A and 8B showing growth curves of \u0394ftsH strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "d960c001-43bf-4791-8619-a0bf79fb036c",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C49",
+      "claim": "TacL-FLAG remains stable in cells lacking FtsH during prolonged stationary phase growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, TacL-FLAG remained stable in cells lacking FtsH and LTAs continued to be produced in stationary phase where their levels were dramatically reduced in FtsH+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 8\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "a10517ff-af74-4951-9cd7-6759473bdc5a",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C50",
+      "claim": "Autolysis in response to cell wall targeting drugs or stationary phase growth is caused by a switch in surface polymer biogenesis triggered by FtsH-mediated degradation of TacL.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results support a model in which autolysis in response to cell wall targeting drugs or stationary phase growth is caused by a switch in surface polymer biogenesis triggered by FtsH-mediated degradation of TacL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing TacL degradation by FtsH and the resulting switch in TA production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "b2bb2565-73fc-4b0e-8dba-a71199f75da1",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C51",
+      "claim": "Autolysis of Streptococcus pneumoniae cells following entry into stationary phase was described by Walther Goebl and Oswald Avery almost a century ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Autolysis of Sp cells following entry into stationary phase was described by Walther Goebl and Oswald Avery almost a century ago (Avery and Cullen, 1923; Goebel and Avery, 1929; Neufeld, 1900).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to historical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "eed85244-8339-4314-895b-a3eceecd4937",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C52",
+      "claim": "Stationary phase autolysis is medically significant due to its relationship with antibiotic-induced bacteriolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the biological relevance of this phenomenon remains unclear (Eldholm et al., 2009; Hirst et al., 2008; Kietzman et al., 2016; Martner et al., 2009), it is medically significant due to its relationship with antibiotic-induced bacteriolysis (Fernebro et al., 2004; Mellroth et al., 2012; Tomasz et al., 1970; Tomasz and Waks, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "6d17def1-ae16-48b4-99b2-8f674cf7e621",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C53",
+      "claim": "The polymeric structure of LTA and WTA is identical in Streptococcus pneumoniae cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The polymeric structure of LTA and WTA is identical in Sp cells (Denapaite et al., 2012; Fischer et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "6fa3a7ca-64cf-47b4-b1a4-37794e18f113",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C54",
+      "claim": "The differential control exerted by LTAs and WTAs on LytA activity is the result of how they affect the localization of LytA within the cell envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is possible that the association of LytA with WTA is required to properly orient the amidase domain with respect to its substrate for productive cleavage (Li et al., 2015; Mellroth et al., 2014; P\u00e9rez-Dorado et al., 2010; Sandalova et al., 2016), we favor a model in which the differential control exerted by these polymers is the result of how they affect the localization of LytA within the cell envelope (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental data and illustrated in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "180d30b8-6469-4cbd-9df3-e2ff1511e5d5",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C55",
+      "claim": "Cryoelectron microscopy studies reveal that the peptidoglycan layer in Gram-positive bacteria is spatially separated from the cytoplasmic membrane, forming a 'periplasm'.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryoelectron microscopy studies of Gram-positive bacteria by Beveridge and co-workers revealed that the PG layer is spatially separated from the cytoplasmic membrane, forming what has been referred to as the Gram-positive 'periplasm' (Matias and Beveridge, 2008; Matias and Beveridge, 2005; Matias and Beveridge, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior cryoelectron microscopy studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "bb66f9ac-852f-4c10-9688-cb161e5e5a9a",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C56",
+      "claim": "LTAs are likely to be restricted to the 'periplasmic' space in Gram-positive bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence has also been presented that LTAs are likely to be restricted to this 'periplasmic' space (Matias and Beveridge, 2008; Reichmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "4100514c-4bd7-4a52-9434-074c87a8971c",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C57",
+      "claim": "The protective function of LTAs is mediated by their ability to bind and sequester LytA in the membrane-proximal zone of the envelope thereby limiting its access to the cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that in Sp cells, the protective function of LTAs is mediated by their ability to bind and sequester LytA in the membrane-proximal zone of the envelope thereby limiting its access to the cell wall and ability to cut bonds in the PG network (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the experimental data and illustrated in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "a9eebf4f-db3c-4898-b5c2-3e6ba6acf7c3",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C58",
+      "claim": "Purified LTAs are capable of inhibiting LytA-mediated autolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that Tomasz and co-workers previously observed that purified LTAs were capable of inhibiting LytA-mediated autolysis by a mechanism that was unclear at the time (Briese and Hakenbeck, 1985; H\u00f6ltje and Tomasz, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "05dda6e1-2413-454e-a992-b2887117380b",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C59",
+      "claim": "Micellar forms of LTAs can bind and sequester LytA to prevent its association with cell wall substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our findings, we infer that these results reflect the ability of micellar forms of LTAs to similarly bind and sequester LytA to prevent its association with cell wall substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current findings and prior observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "5cb01b2a-7256-4fa2-acd9-c5057142163e",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C60",
+      "claim": "The association of LytA with WTAs is required for cell wall cleavage activity.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time, LytA is similarly shifted from the membrane to cell wall fractions where it is likely bound to WTAs, its association with which has long been known to be required for cell wall cleavage activity (Giudicelli and Tomasz, 1984; H\u00f6ltje and Tomasz, 1975; Li et al., 2015; Mellroth et al., 2014; Tipper and Strominger, 1965; Tomasz et al., 1970; Waks and Tomasz, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "ad0bd814-9f13-4843-9c4f-fdc92888a139",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C61",
+      "claim": "The change in TA polymer synthesis and subsequent recruitment of LytA from membrane-anchored LTAs to its cell wall substrate underlies autolysis induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our results support a model in which it is the change in TA polymer synthesis and subsequent recruitment of LytA from membrane-anchored LTAs to its cell wall substrate that underlies autolysis induction (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model supported by the experimental data and illustrated in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "9cbe829a-3e08-4dc1-a7f1-8908eb45608e",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C62",
+      "claim": "The switch to WTA synthesis under autolytic conditions involves the degradation of TacL, the likely ligase involved in making LTAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not currently know the mechanism by which Sp cells preferentially make LTAs during exponential growth, our results establish that the switch to WTA synthesis under autolytic conditions involves the degradation of TacL, the likely ligase involved in making LTAs (Figure 8 and Figure 8\u2014figure supplement 2) (He\u00df et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 8 and Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "8bb248f5-1f20-4288-b121-778fcb95c129",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C63",
+      "claim": "Inactivation of the membrane-bound protease FtsH prevents TacL degradation and protects cells from LytA-dependent autolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inactivation of the membrane-bound protease FtsH was shown to prevent TacL degradation and protect cells from LytA-dependent autolysis, suggesting that TacL is a direct substrate of FtsH (Figure 8 and Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 8 and Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "c91e664c-45c2-4036-8c50-e601d5dc8ee8",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C64",
+      "claim": "TacL is a direct substrate of FtsH.",
+      "claim_type": "IMPLICIT",
+      "source": "Furthermore, inactivation of the membrane-bound protease FtsH was shown to prevent TacL degradation and protect cells from LytA-dependent autolysis, suggesting that TacL is a direct substrate of FtsH (Figure 8 and Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that FtsH inactivation prevents TacL degradation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "5e62ef25-7a74-49ae-bf69-f9e9fc5269a8",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C65",
+      "claim": "In Escherichia coli, FtsH controls an important branch point in an envelope biogenesis pathway by targeting LpxC, the enzyme catalyzing the committed step in lipopolysaccharide synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As in Sp cells, E. coli FtsH controls an important branch point in an envelope biogenesis pathway (Ogura et al., 1999). In this case, its key substrate is LpxC, the enzyme catalyzing the committed step in the synthesis of lipopolysaccharide (LPS), a major component of the Gram-negative outer membrane (F\u00fchrer et al., 2006; Ogura et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on E. coli FtsH.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "bec04325-21fd-4649-a9ae-a1a1844d5cfc",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C66",
+      "claim": "The LPS and phospholipid synthesis pathways in Escherichia coli compete for fatty acids in the form of acyl-ACP precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "The LPS and phospholipid synthesis pathways compete for fatty acids in the form of acyl-ACP precursors (Mohan et al., 1994; Normark et al., 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "96127eb0-e04c-4509-bd0f-65ad6ba1f15b",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C67",
+      "claim": "The turnover of LpxC by Escherichia coli FtsH may be regulated by the availability of certain acyl-ACP precursors or the accumulation of downstream products in the LPS synthesis pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Indirect evidence suggests that the turnover of LpxC by E. coli FtsH may be regulated by the availability of certain acyl-ACP precursors or the accumulation of downstream products in the LPS synthesis pathway (May and Silhavy, 2018; Mohan et al., 1994; Normark et al., 1969; Ogura et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "3dde7f54-93f8-4c65-b866-29e5eb597851",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C68",
+      "claim": "In Streptococcus pneumoniae, FtsH may respond to precursors or products of the TA polymer assembly pathways it governs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in Sp cells, FtsH may similarly respond to precursors or products of the TA polymer assembly pathways it governs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on analogy to E. coli FtsH regulation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "858cdb0a-4098-4bb2-bf13-2f4efec48475",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C69",
+      "claim": "The FtsH sensing mechanism might normally function in the homeostatic control of LTA and WTA levels, which may be needed for more precise activation of LytA to promote septal PG cleavage and cell separation.",
+      "claim_type": "EXPLICIT",
+      "source": "As in E. coli, the sensing mechanism might normally function in the homeostatic control of LTA and WTA levels, which may be needed for more precise activation of LytA to promote septal PG cleavage and cell separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the normal physiological role of FtsH.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "f3e3a64f-8ca7-40e4-a6a6-d41499893052",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C70",
+      "claim": "Autolytic conditions would short-circuit the normal balancing mechanism, swinging it too far in favor of WTA synthesis such that destructive levels of LytA activity are stimulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Autolytic conditions would then be expected to somehow short-circuit the normal balancing mechanism, swinging it too far in favor of WTA synthesis such that destructive levels of LytA activity are stimulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how autolytic conditions might affect the FtsH regulatory mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "89b54d28-b543-45a7-8d7c-d8c5a4492131",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C71",
+      "claim": "Teichoic acids have been implicated in the control of peptidoglycan hydrolases in other Gram-positive bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "TAs have been implicated in the control of PG hydrolases in other Gram-positive bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the examples provided in the following sentences with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "8ac92f27-3e42-4b70-ae80-57d15b350f95",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C72",
+      "claim": "In Staphylococcus aureus, the major autolysin Atl specifically localizes to the septal PG and this localization requires WTA.",
+      "claim_type": "EXPLICIT",
+      "source": "In Staphylococcus aureus, the major autolysin Atl that acts at division septa to promote cell separation specifically localizes to the septal PG and this localization requires WTA (Schlag et al., 2010; Yamada et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "18538e59-cde5-46fd-b147-e7be187bf0c5",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C73",
+      "claim": "Localization studies suggest that WTA levels are lowest at the septum in Staphylococcus aureus, suggesting that Atl preferentially localizes to PG lacking attached TA polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, localization studies suggest that WTA levels are lowest at the septum in S. aureus suggesting that Atl preferentially localizes to PG lacking attached TA polymers (Schlag et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "c41f00a6-c9a8-4d47-af21-ce32d00e736b",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C74",
+      "claim": "In Bacillus subtilis, the cell separase LytF localizes to septal PG in a manner that depends on both WTA and LTA.",
+      "claim_type": "EXPLICIT",
+      "source": "In B. subtilis, the cell separase LytF localizes to septal PG in a manner that depends on both WTA and LTA (Kiriyama et al., 2014; Yamamoto et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "c3e24bf5-2eb8-4cea-a5ab-ab353898c1b6",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C75",
+      "claim": "The major autolysin AcmA in Lactococcus lactis specifically localizes to the septum while galactosyl-containing TA polymers are largely absent at this site.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the major autolysin AcmA in Lactococcus lactis specifically localizes to the septum while galactosyl-containing TA polymers are largely absent at this site (Steen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "ec0e32e7-a5df-4337-9bac-043beb166790",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C76",
+      "claim": "In all of these cases the presence of TA polymers appears to interfere with autolysin binding to the cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "In all of these cases the presence of TA polymers appears to interfere with autolysin binding to the cell wall, however the mechanisms underlying the temporal and spatial organization/localization of TAs is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited examples.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "41e864af-e96e-4053-bff3-29cf87d948f9",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "claim_id": "C77",
+      "claim": "The interplay between the LTA and WTA synthesis pathways may play a key role in controlling PG hydrolysis and autolytic-induction in other Gram-positive organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it remains to be investigated, our results in Sp cells suggest that rather than one polymer or the other predominating, it may be the interplay between the LTA and WTA synthesis pathways that plays the key role in controlling PG hydrolysis and autolytic-induction in these and other Gram-positive organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings in Sp and the examples from other organisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "24135713-17ea-4868-b913-6b70a73b250e",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Beta-lactam antibiotics, including penicillin, disrupt cell wall synthesis by covalently modifying penicillin-binding proteins, and lysis in Streptococcus pneumoniae requires the single peptidoglycan hydrolase LytA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C6, C7, and C8 are well-established facts supported by extensive prior literature and confirmed by experimental data in Figure 1A showing that \u0394lytA mutants do not lyse in response to penicillin. The mechanism of beta-lactam action and the requirement for LytA in S. pneumoniae lysis are foundational observations in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "3c7e629a-9ab5-4ec1-9d79-072b9c613525",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Streptococcus pneumoniae undergoes LytA-dependent autolysis during prolonged stationary phase growth, with LytA protein levels remaining constant throughout growth, a phenomenon described nearly a century ago and medically significant due to its relationship with antibiotic-induced lysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, C11, C51, and C52 are supported by historical citations and confirmed by experimental data in Figure 1\u2014figure supplement 1 showing growth curves and LytA protein levels. The constancy of LytA levels during growth is a key observation that motivates the hypothesis of regulatory control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "fdf500dc-f67d-4167-9eb2-3012e4029f1b",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TacL is identified as a critical regulator of LytA activity during exponential growth, with its depletion causing premature LytA-dependent autolysis and its requirement demonstrated at a step after LytA export to the cell surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 are supported by Tn-Seq data (Figure 2A) showing tacL essentiality is LytA-dependent, growth curve data (Figure 2C) demonstrating premature lysis upon TacL depletion, and exogenous LytA sensitivity experiments (Figure 3B) indicating TacL acts post-export. The genetic and phenotypic evidence converge to support TacL as a LytA regulator.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "d762bd58-5856-44e3-99a1-d65200b33403",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TacL is a polytopic membrane protein that functions as the LTA synthase in S. pneumoniae, transferring teichoic acid polymers from undecaprenyl phosphate to a glycolipid anchor, with WTA and LTA having identical polymeric structures in this organism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 and C53 are supported by bioinformatic predictions, prior mass spectrometry studies (He\u00df et al., 2017), and experimental data in Figure 4B showing dramatic reduction of LTA in \u0394tacL mutants. The structural identity of WTA and LTA polymers is well-established in prior literature. The convergence of computational, literature, and experimental evidence supports TacL's role as the LTA synthase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "a93ef101-0e18-4ee2-b088-0b09a5edf408",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The LTA and WTA synthesis pathways are antagonistic, with TacL-defective cells showing striking increases in WTA levels, suggesting competition for a shared undecaprenyl phosphate-linked precursor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C24 are supported by experimental data in Figure 4B showing increased WTA levels when LTA synthesis is blocked in \u0394tacL mutants. The inference that the pathways compete for a shared precursor is reasonable given the established biosynthetic model (C18) and the reciprocal changes in LTA and WTA levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "a333519f-9326-45ce-9210-0838550022c6",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "During exponential growth, S. pneumoniae cells preferentially produce LTAs that bind and sequester LytA at the membrane through its choline-binding domains, preventing access to the cell wall substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25, C26, C27, and C34 are supported by experimental data in Figures 4B, 5A, and 5B showing robust LTA production and LytA localization to the membrane fraction during exponential phase. The choline-binding domain structure of LytA (C25) is well-established. The inference that LTA sequesters LytA (C34) is reasonable based on the localization data and the known binding properties of LytA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "a5e9ac6b-378b-46a5-ba7b-bba568e53084",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "At the onset of autolysis (both stationary phase and penicillin-induced), LTA levels decrease while WTA levels increase, accompanied by LytA relocalization from the membrane to the cell wall, where it promotes cell wall degradation and lysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 and C35 are supported by comprehensive experimental data in Figures 5 and 6 showing the switch in TA production and LytA localization under both autolytic conditions. The parallel observations in stationary phase and penicillin-treated cells strengthen the conclusion that both follow a similar pathway. The data directly demonstrate the correlation between TA switching and LytA relocalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "9c0c053f-ca5e-49ab-9c52-875fefb0a7e5",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LTAs are released from cells during autolysis by an unknown mechanism, with choline-containing material appearing in the culture supernatant as membrane-associated LTAs disappear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 are supported by prior work (Waks and Tomasz, 1978) and experimental data in Figure 7 showing choline-containing material in supernatants during autolysis coinciding with loss of membrane LTAs. While the mechanism remains unknown (C38), the observation of LTA release is well-documented. The claim is appropriately cautious about mechanistic details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "63f69b53-f9e4-4e4b-a5f1-2cf24beaaf8f",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Penicillin treatment and prolonged stationary phase growth trigger degradation of TacL, with tacL overexpression preventing autolysis induction and TacL-FLAG showing decreased stability under autolytic conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C39-C42, and C62 are supported by experimental data in Figure 8 and Figure 8\u2014figure supplement 1 and 2 showing TacL-FLAG degradation at autolysis onset, protection from autolysis by tacL overexpression, and decreased TacL half-life under autolytic conditions. The convergence of overexpression, protein stability, and timing data strongly supports TacL degradation as a trigger for the autolytic switch.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "21c68322-1bfa-4901-8290-650eb4c161cc",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The membrane-bound protease FtsH mediates TacL degradation under autolytic conditions, with FtsH inactivation preventing TacL degradation, blocking the LTA-to-WTA switch, and protecting cells from autolysis, suggesting TacL is a direct FtsH substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50, C63, and C64 are supported by Tn-Seq data (Figure 8D) showing ftsH enrichment in penicillin-treated libraries and experimental data (Figure 8A-B and supplements) showing TacL-FLAG stability in \u0394ftsH mutants, maintenance of LTA production, and protection from autolysis. While direct substrate evidence would require in vitro reconstitution, the genetic and cellular data strongly support FtsH-mediated TacL degradation. The inference that TacL is a direct substrate (C64) is reasonable but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "6f972acc-32b7-48a9-8281-1153aeedc559",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The differential control of LytA by LTAs versus WTAs results from their effects on LytA localization within the cell envelope, with LTAs sequestering LytA in the membrane-proximal 'periplasmic' space while WTA association enables cell wall cleavage activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61 present a mechanistic model supported by the localization data (Figures 5-6), prior structural knowledge of the Gram-positive envelope (C55-C56), and historical observations of LTA inhibitory activity (C58). While the model involves some speculation (C54, C57), it is well-grounded in the experimental data showing LytA localization patterns and the established requirement for WTA association for LytA activity (C60). The model provides a coherent explanation for the observed phenomena.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "5f4d6d25-d90e-4ce7-a0c9-65d20f87fa57",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "By analogy to E. coli FtsH regulation of LpxC in LPS synthesis, S. pneumoniae FtsH may respond to precursors or products of TA polymer assembly pathways for homeostatic control, with autolytic conditions potentially short-circuiting this mechanism to favor excessive WTA synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C70 are largely speculative (C68-C70 explicitly marked as speculation) and based on analogy to E. coli rather than direct experimental evidence in S. pneumoniae. While the E. coli precedent (C65-C67) is well-established, the extension to S. pneumoniae remains hypothetical. The speculation is reasonable and provides a framework for future investigation, but lacks experimental support in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    },
+    {
+      "id": "3dec29e0-7677-421f-ae8e-1d97539d022d",
+      "content_id": "8997cc19-4c5b-4876-8b7e-0f87759616d0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Teichoic acids control peptidoglycan hydrolases in other Gram-positive bacteria (S. aureus, B. subtilis, L. lactis), with TA polymers generally interfering with autolysin binding to cell wall, suggesting the LTA/WTA interplay may broadly control autolysis in Gram-positive organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 are supported by multiple citations to prior work in other organisms (C72-C75) showing TA-dependent autolysin localization. The inference that TA presence interferes with autolysin binding (C76) is reasonable based on the cited examples. The speculation that LTA/WTA interplay may be broadly important (C77) is appropriately cautious and grounded in the S. pneumoniae findings and comparative examples. This provides important context and suggests broader significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:26.878476Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "41bba48b-2510-4625-b8a0-ae256d987b89",
+      "result_id": "24135713-17ea-4868-b913-6b70a73b250e"
+    },
+    {
+      "claim_id": "8e380ad4-05d2-4b97-ada2-173f48e09ef7",
+      "result_id": "24135713-17ea-4868-b913-6b70a73b250e"
+    },
+    {
+      "claim_id": "e62d9295-8fa8-4ccb-af4f-2c793b8d4144",
+      "result_id": "24135713-17ea-4868-b913-6b70a73b250e"
+    },
+    {
+      "claim_id": "ff08e9f3-5d53-4988-aa52-da21fb3170ba",
+      "result_id": "24135713-17ea-4868-b913-6b70a73b250e"
+    },
+    {
+      "claim_id": "d731a563-94b0-441d-9222-4096800687ec",
+      "result_id": "24135713-17ea-4868-b913-6b70a73b250e"
+    },
+    {
+      "claim_id": "439e3dcc-1117-4679-8fdd-b3a8aaf866ab",
+      "result_id": "3c7e629a-9ab5-4ec1-9d79-072b9c613525"
+    },
+    {
+      "claim_id": "ecb47dda-6b78-4491-8751-0f0b4266ae7a",
+      "result_id": "3c7e629a-9ab5-4ec1-9d79-072b9c613525"
+    },
+    {
+      "claim_id": "b97f82e9-5b19-4335-b2b4-a34908287780",
+      "result_id": "3c7e629a-9ab5-4ec1-9d79-072b9c613525"
+    },
+    {
+      "claim_id": "b2bb2565-73fc-4b0e-8dba-a71199f75da1",
+      "result_id": "3c7e629a-9ab5-4ec1-9d79-072b9c613525"
+    },
+    {
+      "claim_id": "eed85244-8339-4314-895b-a3eceecd4937",
+      "result_id": "3c7e629a-9ab5-4ec1-9d79-072b9c613525"
+    },
+    {
+      "claim_id": "b1749bdd-b349-4e29-8431-30e74bc7d07b",
+      "result_id": "fdf500dc-f67d-4167-9eb2-3012e4029f1b"
+    },
+    {
+      "claim_id": "3705ec6a-488d-4011-9895-f3205db554ed",
+      "result_id": "fdf500dc-f67d-4167-9eb2-3012e4029f1b"
+    },
+    {
+      "claim_id": "1fba34e3-2d55-4c4a-b96e-5f986408a57b",
+      "result_id": "fdf500dc-f67d-4167-9eb2-3012e4029f1b"
+    },
+    {
+      "claim_id": "40b58dad-151f-44bd-ba2a-5e63614a895e",
+      "result_id": "fdf500dc-f67d-4167-9eb2-3012e4029f1b"
+    },
+    {
+      "claim_id": "ef5fd4b4-fd75-4ce0-9f49-b8c31847960b",
+      "result_id": "d762bd58-5856-44e3-99a1-d65200b33403"
+    },
+    {
+      "claim_id": "b779e85e-4f10-4f86-a43e-e39ac92a41c9",
+      "result_id": "d762bd58-5856-44e3-99a1-d65200b33403"
+    },
+    {
+      "claim_id": "035c7a49-e429-4010-a535-22dabe5f0719",
+      "result_id": "d762bd58-5856-44e3-99a1-d65200b33403"
+    },
+    {
+      "claim_id": "449b2fd8-d612-4109-a629-3ccf79b656b4",
+      "result_id": "d762bd58-5856-44e3-99a1-d65200b33403"
+    },
+    {
+      "claim_id": "b604447d-9b1e-480e-b462-0429bcada8bb",
+      "result_id": "d762bd58-5856-44e3-99a1-d65200b33403"
+    },
+    {
+      "claim_id": "206b998b-422b-4ee6-88d6-165884f7c9ee",
+      "result_id": "d762bd58-5856-44e3-99a1-d65200b33403"
+    },
+    {
+      "claim_id": "b2dd05da-02d3-4343-9cd9-e8f2ededba52",
+      "result_id": "d762bd58-5856-44e3-99a1-d65200b33403"
+    },
+    {
+      "claim_id": "6d17def1-ae16-48b4-99b2-8f674cf7e621",
+      "result_id": "d762bd58-5856-44e3-99a1-d65200b33403"
+    },
+    {
+      "claim_id": "e5cc1ff3-91a4-4a7e-90db-f187f2288c35",
+      "result_id": "a93ef101-0e18-4ee2-b088-0b09a5edf408"
+    },
+    {
+      "claim_id": "be5a757a-9554-44ad-9ef1-de1f4daf9c72",
+      "result_id": "a93ef101-0e18-4ee2-b088-0b09a5edf408"
+    },
+    {
+      "claim_id": "0ba54361-ff6c-47a2-a228-43bebe435c7c",
+      "result_id": "a333519f-9326-45ce-9210-0838550022c6"
+    },
+    {
+      "claim_id": "f6436597-ca48-4cdb-aeba-f25aeb1acadb",
+      "result_id": "a333519f-9326-45ce-9210-0838550022c6"
+    },
+    {
+      "claim_id": "9163f228-9c96-4c18-ba8b-dc7519529b21",
+      "result_id": "a333519f-9326-45ce-9210-0838550022c6"
+    },
+    {
+      "claim_id": "355da857-b6ee-47c4-93b8-cf92849ce052",
+      "result_id": "a333519f-9326-45ce-9210-0838550022c6"
+    },
+    {
+      "claim_id": "dda38ae8-079d-449f-b81a-677924b7c3bf",
+      "result_id": "a333519f-9326-45ce-9210-0838550022c6"
+    },
+    {
+      "claim_id": "ebc9654b-c651-4b85-9498-57b1e21f4591",
+      "result_id": "a5e9ac6b-378b-46a5-ba7b-bba568e53084"
+    },
+    {
+      "claim_id": "e756363b-3f13-4665-b42a-3038b2eab7b6",
+      "result_id": "a5e9ac6b-378b-46a5-ba7b-bba568e53084"
+    },
+    {
+      "claim_id": "9ba536ad-be43-4168-80dd-639784267626",
+      "result_id": "a5e9ac6b-378b-46a5-ba7b-bba568e53084"
+    },
+    {
+      "claim_id": "9d09c54d-df69-4853-bf5f-71c90d731075",
+      "result_id": "a5e9ac6b-378b-46a5-ba7b-bba568e53084"
+    },
+    {
+      "claim_id": "19ad1cd8-efb5-48c6-9a91-963c2fc760de",
+      "result_id": "a5e9ac6b-378b-46a5-ba7b-bba568e53084"
+    },
+    {
+      "claim_id": "ef36c244-c682-4134-b497-0ed029b27272",
+      "result_id": "a5e9ac6b-378b-46a5-ba7b-bba568e53084"
+    },
+    {
+      "claim_id": "1bf6856e-f95f-49aa-86fb-ff3aef52d409",
+      "result_id": "a5e9ac6b-378b-46a5-ba7b-bba568e53084"
+    },
+    {
+      "claim_id": "66b2ae74-5d6b-467f-9eb6-3d789ce365cb",
+      "result_id": "9c0c053f-ca5e-49ab-9c52-875fefb0a7e5"
+    },
+    {
+      "claim_id": "8cd86f2f-027c-4de7-9d78-a37d54b4b067",
+      "result_id": "9c0c053f-ca5e-49ab-9c52-875fefb0a7e5"
+    },
+    {
+      "claim_id": "8d15d691-2740-47a7-ad9c-a077b2cbcfc1",
+      "result_id": "9c0c053f-ca5e-49ab-9c52-875fefb0a7e5"
+    },
+    {
+      "claim_id": "751bdcae-6a2a-4510-aac6-3e47a485baf1",
+      "result_id": "63f69b53-f9e4-4e4b-a5f1-2cf24beaaf8f"
+    },
+    {
+      "claim_id": "45ff12cc-e523-4ac2-b76e-be2e3a493ac1",
+      "result_id": "63f69b53-f9e4-4e4b-a5f1-2cf24beaaf8f"
+    },
+    {
+      "claim_id": "bc34a9cd-6eb8-4d90-9351-eb1d1dadde02",
+      "result_id": "63f69b53-f9e4-4e4b-a5f1-2cf24beaaf8f"
+    },
+    {
+      "claim_id": "cccff801-4b12-426f-a6f8-699c0315b44c",
+      "result_id": "63f69b53-f9e4-4e4b-a5f1-2cf24beaaf8f"
+    },
+    {
+      "claim_id": "80d1024f-dc6f-4e76-a22e-8c089f4cd6b3",
+      "result_id": "63f69b53-f9e4-4e4b-a5f1-2cf24beaaf8f"
+    },
+    {
+      "claim_id": "9cbe829a-3e08-4dc1-a7f1-8908eb45608e",
+      "result_id": "63f69b53-f9e4-4e4b-a5f1-2cf24beaaf8f"
+    },
+    {
+      "claim_id": "a716d789-a43e-4cc7-ae76-9884eda257a7",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "fcf59000-f619-48bf-8608-3d12e76ee369",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "78e8b286-699a-471d-b274-32360bb8efc6",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "45f81966-21eb-4834-882c-b578ed1fa598",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "9ef98b91-9b07-4882-9cb3-67149a0a7310",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "e09550d6-c9e2-46c6-95ff-6536d339e3f2",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "d960c001-43bf-4791-8619-a0bf79fb036c",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "a10517ff-af74-4951-9cd7-6759473bdc5a",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "8bb248f5-1f20-4288-b121-778fcb95c129",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "c91e664c-45c2-4036-8c50-e601d5dc8ee8",
+      "result_id": "21c68322-1bfa-4901-8290-650eb4c161cc"
+    },
+    {
+      "claim_id": "6fa3a7ca-64cf-47b4-b1a4-37794e18f113",
+      "result_id": "6f972acc-32b7-48a9-8281-1153aeedc559"
+    },
+    {
+      "claim_id": "180d30b8-6469-4cbd-9df3-e2ff1511e5d5",
+      "result_id": "6f972acc-32b7-48a9-8281-1153aeedc559"
+    },
+    {
+      "claim_id": "bb66f9ac-852f-4c10-9688-cb161e5e5a9a",
+      "result_id": "6f972acc-32b7-48a9-8281-1153aeedc559"
+    },
+    {
+      "claim_id": "4100514c-4bd7-4a52-9434-074c87a8971c",
+      "result_id": "6f972acc-32b7-48a9-8281-1153aeedc559"
+    },
+    {
+      "claim_id": "a9eebf4f-db3c-4898-b5c2-3e6ba6acf7c3",
+      "result_id": "6f972acc-32b7-48a9-8281-1153aeedc559"
+    },
+    {
+      "claim_id": "05dda6e1-2413-454e-a992-b2887117380b",
+      "result_id": "6f972acc-32b7-48a9-8281-1153aeedc559"
+    },
+    {
+      "claim_id": "5cb01b2a-7256-4fa2-acd9-c5057142163e",
+      "result_id": "6f972acc-32b7-48a9-8281-1153aeedc559"
+    },
+    {
+      "claim_id": "ad0bd814-9f13-4843-9c4f-fdc92888a139",
+      "result_id": "6f972acc-32b7-48a9-8281-1153aeedc559"
+    },
+    {
+      "claim_id": "5e62ef25-7a74-49ae-bf69-f9e9fc5269a8",
+      "result_id": "5f4d6d25-d90e-4ce7-a0c9-65d20f87fa57"
+    },
+    {
+      "claim_id": "bec04325-21fd-4649-a9ae-a1a1844d5cfc",
+      "result_id": "5f4d6d25-d90e-4ce7-a0c9-65d20f87fa57"
+    },
+    {
+      "claim_id": "96127eb0-e04c-4509-bd0f-65ad6ba1f15b",
+      "result_id": "5f4d6d25-d90e-4ce7-a0c9-65d20f87fa57"
+    },
+    {
+      "claim_id": "3dde7f54-93f8-4c65-b866-29e5eb597851",
+      "result_id": "5f4d6d25-d90e-4ce7-a0c9-65d20f87fa57"
+    },
+    {
+      "claim_id": "858cdb0a-4098-4bb2-bf13-2f4efec48475",
+      "result_id": "5f4d6d25-d90e-4ce7-a0c9-65d20f87fa57"
+    },
+    {
+      "claim_id": "f3e3a64f-8ca7-40e4-a6a6-d41499893052",
+      "result_id": "5f4d6d25-d90e-4ce7-a0c9-65d20f87fa57"
+    },
+    {
+      "claim_id": "89b54d28-b543-45a7-8d7c-d8c5a4492131",
+      "result_id": "3dec29e0-7677-421f-ae8e-1d97539d022d"
+    },
+    {
+      "claim_id": "8ac92f27-3e42-4b70-ae80-57d15b350f95",
+      "result_id": "3dec29e0-7677-421f-ae8e-1d97539d022d"
+    },
+    {
+      "claim_id": "18538e59-cde5-46fd-b147-e7be187bf0c5",
+      "result_id": "3dec29e0-7677-421f-ae8e-1d97539d022d"
+    },
+    {
+      "claim_id": "c41f00a6-c9a8-4d47-af21-ce32d00e736b",
+      "result_id": "3dec29e0-7677-421f-ae8e-1d97539d022d"
+    },
+    {
+      "claim_id": "c3e24bf5-2eb8-4cea-a5ab-ab353898c1b6",
+      "result_id": "3dec29e0-7677-421f-ae8e-1d97539d022d"
+    },
+    {
+      "claim_id": "ec0e32e7-a5df-4337-9bac-043beb166790",
+      "result_id": "3dec29e0-7677-421f-ae8e-1d97539d022d"
+    },
+    {
+      "claim_id": "41e864af-e96e-4053-bff3-29cf87d948f9",
+      "result_id": "3dec29e0-7677-421f-ae8e-1d97539d022d"
+    }
+  ],
+  "comparisons": []
+}

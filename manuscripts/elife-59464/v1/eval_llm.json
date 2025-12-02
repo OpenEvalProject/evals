@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "ChIP-Seq for UNC-3 using an endogenous GFP-tagged allele identified 6892 unique binding peaks corresponding to 3502 protein-coding genes as putative direct targets. The majority of binding peaks (91.95%) are located 0-3 kb upstream of transcription start sites, suggesting UNC-3 acts primarily at promoters and enhancers. A 12 bp pseudo-palindromic COE motif was identified as the UNC-3 binding site. The ChIP-Seq showed high quality, detecting 90% of previously identified direct targets and 88.37% of downstream targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C29 collectively demonstrate successful ChIP-Seq methodology with appropriate controls (C19-C21), robust peak calling (C22), and validation against known targets (C26-C28). The genomic distribution analysis (C23-C24) and motif discovery (C25) are standard bioinformatic approaches. The high recovery rate of previously known targets (C26-C27) provides strong validation of the experimental quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Protein class ontology analysis of the 3502 UNC-3 target genes revealed three broad categories: terminal identity genes (42.18%), gene expression regulators including 104 TFs and 239 nucleic acid-binding proteins (24.07%), and enzymes (24.14%). Comparison with single-cell RNA-Seq data showed that 52.95% of motor neuron-expressed genes are bound by UNC-3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 present a comprehensive ontology analysis using PANTHER, a standard tool for protein classification. The percentages are clearly stated and the integration with single-cell RNA-Seq data (C34) provides orthogonal validation that UNC-3 targets are expressed in the relevant cell type. The analysis appropriately identifies the breadth of biological processes controlled by UNC-3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cis-regulatory analysis of 16 randomly selected transcription factors identified as UNC-3 targets revealed that 10 drive expression in ventral cord motor neurons. Of 9 TFs expressed in cholinergic MNs, 8 are positively regulated by UNC-3 (nhr-1, nhr-40, zfh-2, ztf-26, ceh-44, cfi-1, bnc-1, mab-9), while nhr-49 is negatively regulated by UNC-3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 describe a systematic cis-regulatory validation approach using transgenic reporters. The methodology is appropriate for testing whether ChIP-Seq peaks correspond to functional regulatory elements. The identification of both positive and negative regulation (C37-C38) demonstrates that UNC-3 can act as both activator and repressor, extending understanding of its regulatory mechanisms. Data are presented in Table 1 with appropriate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Four terminal identity genes (acr-2/AChR, unc-129/TGFbeta, glr-4/GluR, unc-17/VAChT) and three transcription factors (zfh-2/Zfhx3, ztf-26, nhr-1) critically depend on UNC-3 at all developmental stages examined (L2, L4, day 1 adult). Auxin-inducible degradation experiments confirmed that UNC-3 is continuously required to maintain expression of terminal identity genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 demonstrate temporal requirement through longitudinal analysis at multiple developmental stages combined with inducible protein degradation (C40). The auxin-inducible degradation system provides strong evidence for continuous requirement by allowing temporal control of UNC-3 depletion. The data are shown in Figure 3A and Figure 3\u2014figure supplement 1-2 with appropriate quantification and statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C7"
+    ],
+    "result": "Five transcription factors (cfi-1, bnc-1, mab-9, nhr-40, ceh-44) do not require UNC-3 for early expression (L2 stage) but depend on UNC-3 for maintenance during late larval and/or adult stages. This reveals 'temporal modularity' in terminal selector function, where the suite of UNC-3 targets in motor neurons is modified across different life stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C7 present the key conceptual finding of temporal modularity. The longitudinal analysis at multiple stages (L2, L4, adult) clearly demonstrates differential temporal requirements. The data in Figure 3B show that early expression is UNC-3-independent while later maintenance is UNC-3-dependent, supporting the temporal modularity concept. This represents a novel finding that challenges the prevailing model of constant terminal selector function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A 2.5 kb distal enhancer located ~12 kb upstream of cfi-1 is sufficient for both embryonic initiation and post-embryonic maintenance of cfi-1 expression in motor neurons. Within this enhancer, a 769 bp sequence containing eight UNC-3 binding sites (COE motifs) is required for both initiation and maintenance. Mutation of all eight COE motifs does not affect early cfi-1 expression (L2) but significantly down-regulates expression at later stages (L4, adult), demonstrating that UNC-3 directly maintains cfi-1 expression through these motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 provide mechanistic insights through systematic cis-regulatory dissection using transgenic reporters (C44), CRISPR-mediated enhancer deletion (C45), bioinformatic motif identification (C46), and targeted motif mutagenesis (C47-C48). The finding that the same enhancer controls both initiation and maintenance but through different mechanisms (Hox-dependent initiation vs. UNC-3-dependent maintenance) is well-supported by the data in Figure 4. The exclusion of auto-regulation (C49) strengthens the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The Hox proteins LIN-39 and MAB-5 are necessary for cfi-1 initiation in cholinergic motor neurons and act through the same distal enhancer utilized by UNC-3 for maintenance. Expression of endogenous cfi-1 is severely affected at all stages (embryonic, larval, adult) in lin-39; mab-5 double mutants. LIN-39 and MAB-5 bind to the cfi-1 distal enhancer, and mutation of a single LIN-39 binding site decreases reporter expression. The two Hox proteins act synergistically, as single mutants show mild effects while double mutants show severe effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 establish the role of Hox proteins in cfi-1 initiation through multiple lines of evidence: longitudinal analysis of double mutants (C51), ChIP-Seq data from modENCODE (C53), transgenic reporter analysis (C54-C55), and genetic epistasis experiments (C56). The data in Figure 5 comprehensively support the model that Hox proteins control initiation while both Hox and UNC-3 control maintenance. The synergistic action (C56) is well-demonstrated by comparing single and double mutant phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CFI-1 is required during early development to establish DA and DB motor neuron subtype identity by acting as a transcriptional repressor. In cfi-1 null animals, glr-4/GluR becomes ectopically expressed in DA and DB neurons. CFI-1 is also required post-embryonically to continuously prevent DA and DB neurons from adopting mixed identity, as demonstrated by auxin-inducible degradation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 establish the functional importance of maintained cfi-1 expression. C60 cites prior work establishing CFI-1's role in early development. C61-C62 extend this by demonstrating continuous requirement through inducible degradation experiments (Figure 5\u2014figure supplement 2). The ectopic expression of glr-4 in DA/DB neurons upon CFI-1 loss provides a clear molecular readout of mixed identity, supporting the functional significance of temporal modularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C8"
+    ],
+    "result": "Animals carrying the mNG::AID::cfi-1 8 COE motifs mut allele, which selectively disrupts cfi-1 maintenance but not initiation, display statistically significant locomotion defects in adults. This demonstrates that minimal disruption of temporal modularity in UNC-3 function can affect animal behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C8 demonstrate the functional consequence of disrupting temporal modularity using high-resolution behavioral analysis (Figure 6). The use of the COE motif mutant allele is elegant because it specifically disrupts maintenance while leaving initiation intact, providing a direct test of temporal modularity's importance. The locomotion defects are milder than cfi-1 null but statistically significant, appropriately reflecting the partial disruption of cfi-1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "LIN-39 and MAB-5 are required for bnc-1 expression at all stages examined (L2, L4, day 1 adult), suggesting roles in both initiation and maintenance. UNC-3 is absolutely required for bnc-1 maintenance in the adult (day 1), with weaker effects at L2 and L4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 extend the temporal modularity findings to a second transcription factor (bnc-1) using an endogenous reporter allele. The data in Figure 5\u2014figure supplement 3 show similar patterns to cfi-1, supporting the generality of the mechanism. However, the analysis is less comprehensive than for cfi-1 (no enhancer dissection or motif analysis), appropriately placing this as supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C9"
+    ],
+    "result": "UNC-30/PITX, the terminal selector of GABAergic motor neuron identity, also exhibits temporal modularity. Terminal identity genes (unc-25/GAD, unc-47/VGAT) require UNC-30 for both initiation and maintenance, while cfi-1 requires UNC-30 only for maintenance. UNC-30 binds to the same distal enhancer of cfi-1 as UNC-3, but at distinct binding sites, providing an example of 'enhancer pleiotropy' where the same cis-regulatory element controls gene expression in different neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 and C9 demonstrate that temporal modularity is not unique to UNC-3 but is also observed in UNC-30/PITX, supporting the potential generality of this mechanism. The analysis parallels that done for UNC-3, with longitudinal analysis at multiple stages (C68-C69) and ChIP-Seq data (C71-C72). The enhancer pleiotropy finding (C73-C74) adds mechanistic insight into how the same enhancer can integrate inputs from different terminal selectors in different cell types. Data are shown in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background and context claims establishing that UNC-3/Ebf is the terminal selector of C. elegans cholinergic motor neurons, defining terminal selectors as TFs that establish and maintain neuronal identity, and noting that mutations in the human ortholog EBF3 cause neurodevelopmental disorders. Previous work showed UNC-3 acts indirectly to prevent alternative identities and directly activates terminal identity genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C18 provide essential background context from prior work, appropriately cited. These establish the conceptual framework and prior knowledge upon which the current study builds. C1-C2 reference the authors' previous work (Feng et al., 2020), while C10-C18 cite the broader literature on terminal selectors. These are well-established facts in the field and appropriately support the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Discussion and interpretation claims proposing that temporal modularity is necessary for generating and maintaining neuronal subtype diversity, that UNC-3 indirectly maintains MN subtype identity through selective maintenance of TFs like cfi-1, and that temporal modularity represents a 'double safety' mechanism. The authors propose that Hox-dependent initiation and Hox/UNC-3-dependent maintenance are 'funneled' through the same enhancer via distinct TF combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 represent interpretations and mechanistic models derived from the experimental data. These are appropriately framed as proposals and interpretations rather than direct experimental findings. The models are well-supported by the data presented in the Results section, particularly the enhancer analysis (C78-C79) and the functional studies showing CFI-1's role in preventing mixed identity (C76). These interpretations logically follow from the experimental evidence.",
+    "result_type": "MINOR"
+  }
+]

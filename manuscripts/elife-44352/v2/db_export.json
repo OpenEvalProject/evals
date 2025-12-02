@@ -1,0 +1,1712 @@
+{
+  "submission": {
+    "id": "3a60d44e-ddf9-445c-8fbb-8edb40bc1db4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:59:38.512759Z",
+    "updated_at": "2025-12-02T09:59:38.512759Z"
+  },
+  "content": [
+    {
+      "id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "submission_id": "3a60d44e-ddf9-445c-8fbb-8edb40bc1db4",
+      "content_type": "manuscript",
+      "content_text": "# A terpene synthase-cytochrome P450 cluster in Dictyostelium discoideum produces a novel trisnorsesquiterpene\n\n## Authors\n\n- Xinlu Chen<sup>1</sup> ([ORCID: 0000-0002-7560-6125](https://orcid.org/0000-0002-7560-6125))\n- Katrin Luck<sup>2</sup>\n- Patrick Rabe<sup>3</sup>\n- Christopher QD Dinh<sup>4</sup>\n- Gad Shaulsky<sup>5</sup> ([ORCID: 0000-0002-0532-0551](https://orcid.org/0000-0002-0532-0551))\n- David R Nelson<sup>6</sup> ([ORCID: 0000-0003-0583-5421](https://orcid.org/0000-0003-0583-5421))\n- Jonathan Gershenzon<sup>2</sup>\n- Jeroen S Dickschat<sup>3</sup> ([ORCID: 0000-0002-0102-0631](https://orcid.org/0000-0002-0102-0631))\n- Tobias G K\u00f6llner<sup>2</sup>\n- Feng Chen<sup>1</sup> ([ORCID: 0000-0002-3267-4646](https://orcid.org/0000-0002-3267-4646)) \u2020\n\n### Affiliations\n\n1. Department of Plant Sciences University of Tennessee Knoxville United States\n2. Department of Biochemistry Max Planck Institute for Chemical Ecology Jena Germany\n3. Kekul\u00e9-Institute of Organic Chemistry and Biochemistry University of Bonn Bonn Germany\n4. Department of Biochemistry and Molecular Biology Baylor College of Medicine Houston United States\n5. Department of Molecular and Human Genetics Baylor College of Medicine Houston United States\n6. Department of Microbiology, Immunology, and Biochemistry University of Tennessee Health Science Center Memphis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTerpenoids are enormously diverse, but our knowledge of their biosynthesis and functions is limited. Here we report on a terpene synthase (DdTPS8)-cytochrome P450 (CYP521A1) gene cluster that produces a novel C12 trisnorsesquiterpene and affects the development of Dictyostelium discoideum. DdTPS8 catalyzes the formation of a sesquiterpene discoidol, which is undetectable from the volatile bouquet of wild type D. discoideum. Interestingly, a DdTPS8 knockout mutant lacks not only discoidol, but also a putative trisnorsesquiterpene. This compound was hypothesized to be derived from discoidol via cytochrome P450 (CYP)-catalyzed oxidative cleavage. CYP521A1, which is clustered with DdTPS8, was identified as a top candidate. Biochemical assays demonstrated that CYP521A1 catalyzes the conversion of discoidol to a novel trisnorsesquiterpene named discodiene. The DdTPS8 knockout mutant exhibited slow progression in development. This study points to the untapped diversity of natural products made by D. discoideum, which may have diverse roles in its development and chemical ecology.\n\n## Introduction\n\nWith over 80,000 structures identified, terpenoids constitute the largest class of natural products made by living organisms (Christianson, 2017). Most terpenoid natural products are known from plants (Chen et al., 2011), but bacteria (Yamada et al., 2015; Dickschat, 2016) and fungi (Keller et al., 2005; Schmidt-Dannert, 2015) are also rich sources. Recently we have shown that dictyostelid social amoebae, a class of eukaryotic soil microorganisms, also have the genetic capacity to produce monoterpenes (C10), sesquiterpenes (C15) and diterpenes (C20) (Chen et al., 2016). Dictyostelid social amoebae have a unique life cycle, consisting of both unicellular and multicellular phases. When their bacterial food supply becomes scarce, amoebae start to aggregate, going through clearly-defined morphological changes to eventually form fruiting bodies (Kessin, 2001). Dictyostelium discoideum and D. purpureum are among the most extensively investigated species of dictyostelid social amoebae. Our recent studies illustrated that the multicellular stages of the life cycle of both D. discoideum (Chen et al., 2016) and D. purpureum (Chen et al., 2018) are characterized by the emission of a complex mixture of volatile organic compounds that is dominated by sesquiterpenes. While some terpenoids are produced by both species, most appear to be species-specific (Chen et al., 2018). The biological function of these terpenoids is completely unknown.\n\nThe D. discoideum genome contains nine full-length genes (DdTPS1-9) encoding terpene synthases, the pivotal enzymes that create the terpenoid carbon skeleton (Christianson, 2017). All nine genes are expressed during the multicellular stage, suggesting a role for volatile terpenoid biosynthesis in fruiting body development. Indeed, biochemical characterization of the encoded proteins DdTPS1-9 revealed terpene synthase activity for all tested enzymes. The sesquiterpene products of DdTPS1-4, DdTPS6, DdTPS7 and DdTPS9, as well as the diterpene product of DdTPS5, could be detected in the volatile bouquet of D. discoideum during multicellular development (Chen et al., 2016; Rabe et al., 2016a; Rinkel et al., 2017). D. discoideum also released the monoterpene linalool that was produced by several recombinant terpene synthases including DdTPS2, DdTPS3 and DdTPS9, suggesting that at least one of these enzymes functions as a monoterpene synthase in vivo. In brief, the in vitro products of all DdTPSs except DdTPS8 could be detected in the volatile bouquet of D. discoideum.\n\nDdTPS8 has sesquiterpene synthase activity, but does not produce mono- or diterpenes in vitro (Chen et al., 2016). DdTPS8 exhibits the second highest level of expression among all nine DdTPS genes during development, so it was surprising to see that the major sesquiterpene product of DdTPS8 was not detected in the D. discoideum volatiles (Chen et al., 2016). One possibility is that the product of DdTPS8 serves as a substrate for other enzymes, particularly cytochrome P450s (CYPs). CYPs are heme-containing proteins that catalyze a wide variety of oxidative reactions (Coon, 2005), often on terpenoid substrates (Hamberger and Bak, 2013). In this context it is interesting to note that the profile of volatiles emitted by D. discoideum contains a number of unknown compounds that are candidates for derivatives of the DdTPS8 product. Here we present conclusive evidence that the DdTPS8 sesquiterpene product is modified by a CYP that is physically clustered with DdTPS8 on chromosome six and produces a novel trisnorsesquiterpene named as discodiene. A DdTPS8-knockout mutant of D. discoideum, which failed to produce discodiene, showed slower progression in development than the wild type strain. This raises interesting questions about the specific biological role of discodiene as one constituent of a bouquet of volatiles produced by D. discoideum during its development.\n\n## Results\n\n### The product of DdTPS8 is the new sesquiterpene alcohol discoidol\n\nDdTPS8 had been shown to have sesquiterpene synthase activity in previous work (Chen et al., 2016), but the structure of its product was not identified. In the present study, the coding sequence of DdTPS8 was cloned into the expression vector pET32a and expressed heterologously in Escherichia coli. After protein purification by Ni2+-NTA affinity chromatography, the recombinant DdTPS8 enzyme was incubated with its substrate farnesyl diphosphate (FDP), resulting in the formation of a sesquiterpene alcohol as a single product. The compound was purified and structure elucidation by NMR spectroscopy (Supplementary file 1) revealed a new bicyclic sesquiterpenoid, which was named discoidol (Figure 1A). Discoidol is a stereoisomer of the known sesquiterpene alcohol jinkoh-eremol (Nakanishi et al., 1983).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig1-v2.jpg)\n\n**Figure 1.:** (A) Structure of discoidol. (B) Contiguous spin systems indicated by bold lines observed in discoidol by 1H,1H-COSY NMR, single headed arrows indicate diagnostic HMBC correlations. (C) important NOESY correlations that are indicated by double headed arrows observed in discoidol. (D) biosynthetic mechanism from farnesyl diphosphate (FDP) to discoidol catalyzed by DdTPS8. See also Figure 1\u2014figure supplements 1\u20134.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig1-figsupp3-v2.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig1-figsupp4-v2.jpg)\n\nThe absolute configuration of discoidol was determined by enzymatic conversion of enantioselectively deuterated (R)- and (S)-(1-13C,1-2H)geranyl diphosphate (Rabe et al., 2017) that were elongated with isopentenyl diphosphate to the corresponding FDP isotopomers using the FDP synthase from Streptomyces coelicolor (Rabe et al., 2016b). Their conversion by the discoidol synthase resulted in enantioselectively deuterated discoidol with known absolute configuration at the deuterated carbon (Figure 1B). The absolute configuration of discoidol was then deduced by assignment of the relative orientation of the two hydrogen atoms at C2 by NOESY (Figure 1C). The additional 13C-NMR label at this carbon was used for a highly efficient analysis by HSQC spectroscopy, giving an intensive cross-peak for the attached hydrogen (Figure 1\u2014figure supplement 1). These experiments resulted in the assigned absolute configuration of (4S,5S,7S)-discoidol.\n\nThe proposed cyclization mechanism of discoidol synthase (Figure 1D) starts with a 1,10-cyclization of FDP with attack of water to yield the neutral intermediate hedycaryol. A protonation-induced second cyclization results in cation 1, that upon a 1,2-hydride shift to cation 2, 1,2-methyl group migration to cation three and deprotonation reacts to form discoidol. This mechanism was experimentally supported by a series of incubation experiments using isotopically labeled substrates. The reprotonation of hedycaryol was demonstrated by incubation of (6-13C)FDP (Rabe et al., 2015) with discoidol synthase in a deuterium oxide enriched buffer, resulting in a triplet in the 13C-NMR spectrum of the product cation 1 (Figure 1\u2014figure supplement 2) that indicated a direct 13C-2H connection. The stereochemical course for the reprotonation was evident from HSQC analysis of the obtained labeled product (Rabe et al., 2016b), demonstrating reprotonation from the Si face of C6. The 1,2-hydride shift from cation 1 to cation two was followed with (3-13C,2-2H)FDP (Klapschinski et al., 2016), resulting in a triplet for C4 of discoidol that demonstrated a direct 13C-2H bond (Figure 1\u2014figure supplement 3). Finally, the stereochemical fate of the terminal geminal methyl groups of FDP was followed with (12-13C)FDP and (13-13C)FDP (Rabe et al., 2015), showing a stereospecific incorporation of labeling into discoidol (Figure 1\u2014figure supplement 4).\n\n### A DdTPS8 knockout mutant of D. discoideum lacks discoidol and a putative discoidol metabolite\n\nThe absence of the DdTPS8 product discoidol in D. discoideum culture coupled with the high level of expression of the corresponding gene, suggested that discoidol is produced but further modified in vivo. If this hypothesis holds true, the disruption of discoidol biosynthesis would abolish the biosynthesis of the modified product as well. Therefore, we analyzed a D. discoideum mutant in which DdTPS8 was disrupted by an insertion of a blasticidin resistance cassette between nucleotides 544 and 545 of the DdTPS8 open reading frame (Figure 2A), which was verified by sequencing (Figure 2\u2014figure supplement 1). The DdTPS8 mutant was next allowed to develop until the culmination stage of multicellular development (the ultimate stage in fruiting body formation when the expression of DdTPS8 is the highest) and subjected to headspace chemical profiling. In comparison to the wild type, the DdTPS8 mutant lacked a major peak (peak one in Figure 2B) whose structure was unknown. This unknown compound appeared to have a molecular mass of 162, consistent with the mass of a degraded sesquiterpene that had lost a fragment containing three carbon atoms and one oxygen atom. Based on these findings, we hypothesized that the unknown compound is a putative C12 trisnorsesquiterpene derived from discoidol through C-C bond cleavage.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic presentation of DdTPS8 gene with an insert of 1.6 kb. (B) Volatiles were collected from the headspace of the cultures and analyzed using GC-MS. Total ion chromatograms are shown. 1, unknown compound; 2, unidentified compound; 3, unidentified sesquiterpene hydrocarbon; 4, unidentified compound; 5, \u03b2-maaliene; 6, aristolene; 7, calarene; 8\u201310, unidentified sesquiterpene hydrocarbons; 11, nerolidol. See also Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig2-figsupp1-v2.jpg)\n\n### The CYP family of D. discoideum: identification and coexpression analysis with DdTPS8\n\nAmong the diverse reactions catalyzed by CYPs with terpenes as substrates are oxidative degradations (Stanjek et al., 1999; Irmler et al., 2000; Larbat et al., 2009; Lee et al., 2010). This led us to hypothesize that the cleavage of discoidol to form the unknown compound is catalyzed by a CYP. Analysis of the D. discoideum genome led to the identification of a total of 54 putative CYP genes. Among them, 41 were annotated as full-length intact genes whereas the rest were pseudogenes or partial genes (Supplementary file 2). The 41 full-length genes were assigned to 17 families and 34 subfamilies (Supplementary file 2).\n\nCoexpression analysis of TPS genes and CYP genes has been a useful tool to identify candidate CYPs that catalyze the modification of TPS products (e.g. Ginglinger et al., 2013). Thus we performed coexpression analysis of CYP genes with DdTPS8 in D. discoideum based on their expression patterns during the 24 hr of multicellular development that consists of several stages: vegetative growth, streaming, loose aggregate, mound, Mexican hat, and fruiting body (Figure 3A). Gene expression data of CYP genes and DdTPS8 were obtained from dictyExpress (http://dictyexpress.biolab.si) (Parikh et al., 2010) and used to calculate Pearson correlation coefficients (r) between individual CYP genes and DdTPS8. Among the 41 CYP genes, three showed significant correlation coefficients with DdTPS8 exhibiting a P value lower than 0.001 (Supplementary file 3): CYP521A1 (r\u00a0=\u00a00.994), CYP508C1 (r\u00a0=\u00a00.992) and CYP519C1 (r\u00a0=\u00a00.951). These three CYP genes, like DdTPS8, showed a maximal level of expression at 16 hr during multicellular development (Figure 3A). Examination of gene expression during development revealed that the transcripts of both DdTPS8 and CYP521A1 were nearly undetectable in vegetatively growing cells. Small amounts of transcripts accumulated between 4\u20138 hr of development, continued to accumulate until they peaked at 16 hr, and declined thereafter (Figure 3A). We also noticed that the top candidate CYP521A1 is located 685 bp away from DdTPS8 in a head-to-head configuration on chromosome 6 (Figure 3B), suggesting a possibility that DdTPS8 and CYP521A1 form a biosynthetic cluster.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig3-v2.jpg)\n\n**Figure 3.:** (A) Expression pattern of three CYP genes that showed highest level of coexpression coefficient with DdTPS8. The cartoons show the six stages of multicellular development of D. discoideum: individual cells (0 hr), streaming (8 hr), loose aggregate (10 hr), slug (16 hr), Mexican hat (20 hr) and fruiting bodies (24 hr). (B) DdTPS8 and CYP521A1 are neighbor genes. The number above the black line indicates the length of the intergenic region in base pairs.\n\n### CYP521A1 catalyzes the oxidative degradation of discoidol to form the novel trisnorsesquiterpene discodiene\n\nIn our first attempts to characterize the enzymatic activity of CYP521A1, we expressed it together with yeast or Arabidopsis P450 reductases in Saccharomyces cerevisiae and incubated the resulting microsome preparations with discoidol. However, no enzymatic activity was detected. Assays containing yeast microsomes, recombinant DdTPS8 produced in Escherichia coli, and (E,E)-FDP showed no activity either. The lack of activity could be due to the incompatibility of the P450 reductase from a plant (Arabidopsis) or a fungus (yeast) with a CYP from D. discoideum. As such, we turned to a P450 reductase from D. discoideum. Among the three P450 reductase genes, redA, redB and redC, of D. discoideum, redB showed an expression pattern (Gonzalez-Kristeller et al., 2008) similar to that of DdTPS8 and CYP521A1. Thus, we selected redB for our assays. The open reading frames of CYP521A1 and redB were inserted into the vector pRSFDuet\u22121, which allows their coexpression in E. coli. The resulting constructs, together with another expression vector carrying the complete open reading frame of DdTPS8, were both introduced into E. coli Bl21 (DE3)-Star. Assuming that the intrinsic FDP pool of E. coli is sufficient to provide substrate for DdTPS8, we analyzed potential terpene accumulation in the headspace of the resulting E. coli culture (Figure 4A). Indeed, GC-MS analysis confirmed the formation of both discoidol with a molecular mass of m/z\u00a0=\u00a0222 (Figure 4B) and the unknown terpenoid with a molecular mass of m/z\u00a0=\u00a0162 (Figure 4C). E. coli cells harboring DdTPS8, redB, and CYP508C1, another P450 gene highly coexpressed with DdTPS8, produced only discoidol and no further terpenoids (Figure 4A). When CYP521A1 and redB were expressed in the absence of DdTPS8, no terpene formation was observed. To test the enzyme activities in a cell-free system, a crude protein extract made from E. coli expressing CYP521A1, redB, and DdTPS8 was incubated with (E,E)-FDP and NADPH. Although product formation was rather low, we were able to detect discoidol and the P450 metabolite with m/z\u00a0=\u00a0162 in the headspace of the assay (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig4-v2.jpg)\n\n**Figure 4.:** Volatiles were collected from the headspace of the induced bacterial cultures using PDMS tubes and analyzed using GC-TDU-MS. The extracted ion chromatograms for m/z 105 (A) and the mass spectra of the DdTPS8 product (B) and CYP521A1 product (C) are shown. See also Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig4-figsupp1-v2.jpg)\n\nProduction of the unknown P450 oxidation product in all of the assays tested was too low for NMR analysis. However, the molecular ion at m/z\u00a0=\u00a0162 in the EI mass spectrum (Figure 5A), pointed to a degradation of discoidol with loss of a fragment representing a molecular weight of 60 Da. The same reaction with completely labeled (13C15)discoidol, obtained from (13C15)FDP (Rabe et al., 2015) with discoidol synthase, produced a degradation product with incorporation of twelve 13C atoms (Figure 5B), demonstrating that the degradation product is a trisnorsesquiterpene. Furthermore, the fragment ion at m/z\u00a0=\u00a059 observed in the mass spectrum of discoidol (indicative of its 1-hydroxy-1-methylethyl group) was missing, suggesting that the degradation may have affected this portion of the molecule. There are two plausible hypotheses for the reaction catalyzed by CYP521A1 that would be consistent with the observed mass spectrum of the trisnorsesquiterpene (Figure 5\u2014figure supplement 1). The reactive iron-oxo species of the cytochrome P450 could initiate the degradation reaction by hydrogen abstraction from the carbon originating from C-9 of FPP with formation of a stabilized allyl radical or from C-1 of FDP leading to a less stable radical (Figure 5\u2014figure supplement 1). The radical intermediate then can react in the oxygen rebound by the cleavage of acetone and formation of water, resulting in different C\u00a0=\u00a0C double bond positions in the C12H18 product. To confirm the loss of the 1-hydroxy-1-methylethyl group and to distinguish between the alternative products, an incubation experiment with (11-13C,1,1-2H2)FDP (Rinkel et al., 2016) was performed (Figure 5\u2014figure supplement 1). This substrate was converted into (11-13C,6,6-2H2)\u22121 by the discoidol synthase and degraded by CYP521A1 into a product with a mass spectrum showing the loss of the 13C label from the 1-hydroxy-1-methylethyl group (Figure 5C), but retaining both deuterium atoms (Figure 5D). This result is consistent with the mechanism that leads to a product with a conjugated double bond system, but not with the mechanism that would result in a product with the non-conjugated double bonds (Figure 5\u2014figure supplement 1). The tentatively identified compound is a new natural product for which we propose the name discodiene. A full structure elucidation of discodiene by NMR spectroscopy was not possible, because of the poor conversion of discoidol by CYP521A1. Future structure elucidation may be possible by synthesis of a reference compound.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig5-v2.jpg)\n\n**Figure 5.:** The genes were coexpressed in E. coli Bl21-DE3-Star together with the P450 reductase gene RedB. Crude protein extracts were incubated with unlabeled or labeled (E,E)-FDP and volatile enzyme products were collected from the headspace of the assays using PDMS tubes. Product analysis was performed with GC-TDU-MS. See also Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig5-figsupp1-v2.jpg)\n\n### The DdTPS8 knockout mutant of D. discoideum displayed delayed multicellular development\n\nTo examine the biological function of discodiene, cells of the DdTPS8 mutant strain and the wild type parental AX4 strain were grown separately in HL5 medium. They were then starved, deposited on black nitrocellulose filters, and allowed to develop and their morphologies were compared. Comparing their morphologies, the mutant and the wild type developed well on black filters for the first few hours and there were no differences between them. However, a difference was observed after 16 hr of starvation: the multicellular development of the mutant was delayed compared to the wild type (Figure 6). At this time point, the wild type cells formed fingers, whereas the mutant was mainly at the tipped aggregate stage. At 20 hr (Figure 6), the wild type began to transition from fingers into so-called \u2018Mexican hats\u2019, so a mix of the two stages was observed, while the mutant was delayed at the finger stage. It is also worthwhile noting that the mutant fingers were slightly elongated and narrower compared to the wild type. At 24 hr, the wild type began entering the culmination stage, which involves complex cell movements to form a ball of spores carried on top of a cellular stalk. However, the mutant was still mostly at the finger stage with some Mexican hats visible (Figure 6). Eventually, both the wild type and the mutant developed into well-proportioned fruiting bodies, with stalks and spores, and they were largely indistinguishable (Figure 6, 54h). Spore formation and germination were also compared but no differences were observed between the wild type and the DdTPS8 mutant. These data suggest that DdTPS8 has a function during later stages of multicellular development in D. discoideum, during the transition from fingers to Mexican hats, which is consistent with its temporal expression pattern (Figure 3A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig6-v2.jpg)\n\n**Figure 6.:** Wild type AX4 cells (WT) and mutant DdTPS8 cells (mutant) were grown separately in HL5 to the log phase, washed in buffer, and plated clonally on dark nitrocellulose filters. The filters were cut in half and placed next to each other in one dish. The cells were incubated in the dark at 22\u00b0C and photographed from above with a dissecting microscope at the indicated times. This experiment was independently performed three times with same results and the data shown represent one of the replicates.\n\n### Other putative TPS-CYP gene clusters in D. discoideum and D. purpureum\n\nFollowing the functional validation of the DdTPS8-CYP521A1 gene cluster, we examined other members of the TPS and CYP families in D. discoideum and identified two additional putative TPS-CYP gene clusters (Figure 7A). DdTPS2 is organized in a head-to-head fashion with CYP519C1 and the two are separated by an intergenic region of 580 bp. Interestingly, the opposite side of CYP519C1 is\u00a0adjacent\u00a0to DpTPS11, which encodes a predicted partial terpene synthase (Chen et al., 2016). DdTPS3 also appear to be part of a gene cluster that contains two CYP genes. The immediate neighbor of DdTPS3 is a partial CYP gene CYP515A2_ps. Nevertheless, in a distance of 3148 bp from the start codon of DdTPS3 there is an intact CYP512A1 gene, which is arranged in a tail-to-head fashion with DdTPS3.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/44352/elife-44352-fig7-v2.jpg)\n\n**Figure 7.:** Green blocks depict TPS genes, red blocks indicate CYP genes. The blue block indicates a non-TPS/CYP gene. The numbers above the black lines indicate length in base pairs.\n\nAs mentioned earlier, D. purpureum is related to D. discoideum and its TPS family has been comprehensively characterized in our recent study (Chen et al., 2018). For comparison, we also analyzed the CYP family in D. purpureum and searched for putative TPS-CYP clusters in this species. We found a total of 54 putative CYP genes (Supplementary file 4). Among them, 47 were annotated as full-length intact genes whereas the remaining are partial genes. The 47 full-length genes were assigned to 12 families and 29 subfamilies. By examining the physical locations of TPS and CYP genes, two putative TPS-CYP clusters were identified in D. purpureum: DpTPS5 is linked to CYP5121A1_Dp with an intergenic region of 612 bp and DdTPS12 is linked to CYP919E1_Dp with an intergenic region of 900 bp (Figure 7B). In the former cluster, DdTPS5 is in a tandem repeat with DdTPS4.\n\n## Discussion\n\nIn this study, we identified and characterized a terpene synthase (DdTPS8)-cytochrome P450 (CYP521A1) gene cluster in the social amoeba D. discoideum (Figure 3) that encodes two enzymes catalyzing consecutive reactions to form the novel trisnorsesquiterpene discodiene (Figure 4, Figure 5). We also present evidence that the biosynthesis of discodiene has an effect on multicellular development of D. discoideum (Figure 6). The successful determination of CYP521A1 as discodiene synthase relied on a number of lines of evidence. First, it was clear that the sesquiterpene product of DdTPS8, discoidol (Figure 1), does not accumulate (Figure 2) and thus must be further modified after formation. Second, chemical profiling of the DdTPS8 knockout mutant of D. discoideum in comparison to the wild type suggested that discoidol is converted into a degradation product (Figure 2). Third, coexpression analysis and colocalization in the genome implicated CYP521A1 as the top candidate that acts downstream of DdTPS8 (Figure 3). Fourth, enzyme assays confirmed that cytochrome CYP521A1 converts discoidol into a trisnorsesquiterpene that was tentatively identified by an isotopic labeling strategy as discodiene (Figure 5), the same compound that is produced by the wild type D. discoideum but not the DdTPS8 mutant (Figure 2).\n\nDdTPS8 is a microbial terpene synthase that shares many mechanistic features of other typical plant terpene synthases, such as a protonation-induced cyclization of a neutral intermediate, a 1,2-hydride shift and a methyl group migration (Degenhardt et al., 2009). DdTPS8 catalyzes the formation of a new sesquiterpene alcohol, discoidol (Figure 1). It is interesting to note that the most closely related terpene synthase in D. discoideum, DdTPS4, also forms a sesquiterpene alcohol (Chen et al., 2016). However, the product of DdTPS4, (E)-nerolidol, is an acyclic compound in contrast to the cyclic product of DdTPS8. Based on evolutionary relatedness, the encoding genes can be inferred to have arisen from a gene duplication event. It will be interesting to determine the mechanism underlying the functional divergence of DdTPS4 and DdTPS8 in forming acyclic and cyclic sesquiterpene alcohols, respectively. It is also interesting to note that a stereoisomer of discoidol known as jinkoh-eremol has been previously isolated from an agarwood (Aquilaria sp.), a eudicotyledon flowering plant (Nakanishi et al., 1983). Since the biosynthesis of jinkoh-eremol in agarwood is most likely catalyzed by typical plant terpene synthases, which are only distantly related to the microbial type terpene synthases that include D. discoideum TPSs (Jia et al., 2016), convergent evolution has occurred in D. discoideum and plants for the biosynthesis of similar terpenes. Such convergence has been previously reported, as in the recent discovery that the fungal diterpene phomopsene is the product of a bacterial terpene synthase (Lauterbach et al., 2018). However, bacterial terpene synthases are frequently observed to make the opposite enantiomers of terpenes found in plants (Rabe et al., 2016a), which clearly points to different evolutionary origins in these cases.\n\nDiscodiene, the degradation product of discoidol, is a novel trisnorsesquiterpene natural product. Another important member of this group is geosmin, a particularly widespread compound in soil microorganisms that exhibits the smell of earth. While it was initially speculated that geosmin may be formed by oxidation of a terpene synthase product (Spiteller et al., 2002; Cane and Watt, 2003), it became later evident from feeding experiments (Dickschat et al., 2005) and characterization of the enzyme (Jiang et al., 2007) that a bifunctional terpene synthase catalyzes the formation of this compound involving initial cyclization to an enantiomer of hedycaryol followed by a second cyclization and oxidative cleavage of a 1-hydroxy-1-methylethyl unit. Trisnorsesquiterpenes with loss of the same 1-hydroxy-1-methylethyl unit as in discodiene have been reported from the myxobacterium Chondromyces crocatus (Schulz et al., 2004) and from streptomycetes (Citron et al., 2012), but the enzymology and mechanism of their formation are unclear. Oxidative dealkylations such as the reaction catalyzed by CYP521A1 converting discoidol into discodiene are known from a few other cytochrome P450s, including angelicin synthase (CYP71AJ4) from Ammi majus (Larbat et al., 2009), secologanin synthase (CYP72A1) from Catharanthus roseus (Irmler et al., 2000), DMNT/TMTT synthase (CYP82G1) from Arabidopsis (Lee et al., 2010), and the degradation of (+)-marmesin to psoralene by the psoralene synthase (Stanjek et al., 1999). All these enzymes are derived from plants, belonging to different CYP families. The fact that D. discoideum and plants belong to different kingdoms suggests convergent evolution of CYPs for catalyzing oxidative cleavage reactions.\n\nD. discoideum morphogenesis is a tightly regulated developmental process that begins with the aggregation of individual cells into a mound of approximately 50,000 cells and ends with the formation of a fruiting body that consists of spores and a stalk (Kessin, 2001). The culmination stage, which is marked by the onset of stalk formation, occurs at the end of development, between 16 and 24 hr after the process begins. The DdTPS8 knockout mutant exhibited delayed development at the culmination stage (Figure 6), around the same time that DdTPS8 and CYP521A1 exhibited their maximal level of expression, suggesting a potential role of discodiene in regulating D. discoideum development. A number of metabolites have been demonstrated to regulate Dictyostelium development, such as the polyketides DIF-1 (Thompson and Kay, 2000) and 4-methyl-5-pentylbenzene-1,3-diol (Anjard et al., 2011), gamma-aminobutyric acid, the nucleotide cyclic diguanylate, the cytokinin discadenine and an unidentified steroid (Loomis, 2014; Schaap, 2016). One major difference between discodiene and these metabolites is that discodiene is a volatile. Since disrupting DdTPS8 did not fully block the development of D. discoideum, discodiene might be merely a component of the volatile bouquet needed for development. It is also possible that discodiene may not control developmental programs directly, but rather influence them indirectly by acting as an \u2018aggregation/culmination pheromone\u2019 as already speculated for volatile terpenoids in D. discoideum (Chen et al., 2016).\n\nThe organization of terpenes synthase genes and CYP genes involved in the same biochemical pathway as metabolic gene clusters has been documented in a growing number of cases including bacteria (Nett et al., 2017), fungi (Quin et al., 2014), and plants (Boutanaev et al., 2015). Our findings add the Dictyostelium social amoebae to this list. With only 9 TPS genes in D. discoideum, it is unlikely that the clustering of with CYP genes (Figure 3B and Figure 7A) is accidental. It is equally intriguing to observe that D. purpureum contains two TPS-CYP clusters (Figure 7B). With the evolutionary relationship of TPS genes from D. discoideum and D. purpureum recently determined (Chen et al., 2018), we are able to examine the relatedness of these TPS-CYP gene clusters. The ortholog of DdTPS8 in D. purpureum is DpTPS6 (Chen et al., 2018), which is not clustered with any CYP gene. Moreover, D. purpureum lacks an ortholog of CYP521A1, implying that the D. purpureum may not produce discodiene, consist with the volatile profiling of this species (Chen et al., 2018). DdTPS2-CYP519C1 and DpTPS2-CYP919E1_Dp appear to be species-specific. In contrast, DdTPS3-CYP515A1 and DpTPS5-CYP515A1_Dp are an orthologous pair based on the orthology of the respective TPS genes (DdTPS3 and DpTPS5) (Chen et al., 2018) and CYP genes (CYP515A1 and CYP515A1-Dp are in the same subfamily). Taken together, these TPS-CYP clusters suggest the biosynthesis of both shared as well as species-specific terpenoids in D. discoideum and D. purpureum.\n\nBesides terpenoids, dictyostelid social amoebae produces many other types of natural products (Barnett and Stallforth, 2018), including polyketides. Polyketide synthases (PKSs) are pivotal enzymes for polyketide biosynthesis (Khosla, 2009) and the production of some polyketides involves CYPs (e.g., Bedewitz et al., 2018). The D. discoideum genome contains 40 PKS genes (Zucko et al., 2007). With the demonstration of the DdTPS8-CYP521A1 cluster catalyzing consecutive reactions to produce a novel natural product, the potential for generating chemical diversity of natural products in D. discoideum using the building blocks derived from 9 TPSs, 41 CYPs and 40 PKSs is enormous, which can be envisioned to be a fruitful future research direction. It would be interesting to know what functions these natural products have, especially in chemical communications between the organism and its environment.\n\n## Materials and methods\n\n### Strains of D. discoideum and mutant analysis\n\nThe wild type AX4 strain of D. discoideum (DBS0237637) was obtained from the Dictybase Stock Center (http://dictybase.org/). The DdTPS8 mutant was obtained from the gridded collection of the Genome Wide Dictyostelium Insertion (GWDI) Project (https://remi-seq.org). The mutant stain was cultured clonally and the genotype was verified by diagnostic PCR with insertion (Blasticidin resistance gene) specific and gene specific primers (Supplementary file 5), followed by characterization with gene-insert specific primers to verify the location of the insertion. To characterize the developmental progression of the mutant, we grew both wild type (AX4) and DdTPS8 mutant in HL5 liquid medium to the mid-log growth phase. We then collected the cells by centrifugation, washed them and deposited them on black nitrocellulose filters (Shaulsky and Loomis, 1993). We examined developmental morphology and photographed the structures from above using a dissecting microscope. This experiment was repeated three times.\n\n### Headspace collection and GC-MS analysis\n\nCulturing of the wild type AX4 and the DdTPS8 mutant strain of D. discoideum, headspace collection and chemical identification using GC-MS were performed as previously reported (Chen et al., 2016) with three biological replicates.\n\n### CYP gene search and gene co-expression analysis\n\nProteome sequences of D. discoideum and D. purpureum were downloaded from Dictybase (http://dictybase.org) and were used as dataset for identifying CYP genes. A HMM model of P450 gene family (PF00067) downloaded from Pfam 31.0 (http://pfam.xfam.org) was used to search putative p450 genes against the downloaded protein dataset using HMMER 3.1b two with an e-value cutoff of 1e\u22122. CYPs were blast searched against named CYPs from all protists. Sequences were sorted based on best blast hit percent ID and named based on the Standardized Cytochrome P450 nomenclature rules (Nelson et al., 1996).\n\nExpression data of CYP genes in D. discoideum during its 24 hr developmental program were obtained from online web-interface program DictyExpress (https://dictyexpress.research.bcm.edu). Pearson correlation coefficients (PCCs) between the expression of DdTPS8 and that of CYP genes of D. discoideum were calculated using IBM SPSS (v.25, https://www.ibm.com).\n\n### Cloning of two CYP genes, redB gene and vector construction\n\nFull-length cDNAs for two CYP genes, CYP521A1 and CYP508C1, and one cytochrome p450 reductase gene (DDB_G0269912, known as redB) were cloning by RT-PCR. Approximately 0.1 g tissue of D. discoideum at the culmination stage was collected and disrupted by TissueLyser II (https://www.qiagen.com). Total RNA was isolated using RNeasy Plant Mini Kit (https://www.qiagen.com) and converted to cDNAs using the First strand cDNA synthesis kit (https://www.gelifesciences.com). Full-length cDNAs for each of the three genes were amplified by PCR using gene-specific primers (Supplementary file 5), cloned into pGEM-T Easy vector (https://www.promega.com), and fully sequenced. Next, the redB gene was added with the NdeI and KpnI restriction sites using PCR and ligated into the NdeI and KpnI site of\u00a0the second MSC of the vector pRSFDuet1\u00a0(http://www.emdmillipore.com) to produce pRSFDuet1::redB. Then CYP521A1 and CYP508C1 were cloned into the BamH1 and PstI sites of the first MSC of pRSFDuet1::redB to produce two plasmids pRSFDuet1:: CYP521A1::redB and pRSFDuet1:: CYP508C1::redB.\n\n### DdTPS8 protein purification and product isolation\n\nA full-length cDNA for DdTPS8 was cloned into the pET32a vector. E. coli BL 21 harboring pET32a_DdTPS8 was inoculated in a LB liquid preculture containing ampicillin (50 mg/L). For protein isolation the preculture was used to inoculate large scale 2YT liquid cultures (8 \u00d7 1 L) containing ampicillin (50 mg/L). Cells were grown to an OD600\u00a0=\u00a00.4 at 37\u00b0C and 160 rpm, followed by cooling of the cultures to 18\u00b0C. IPTG (0.4 mm) was added and the culture was further incubated at 18\u00b0C and 160 rpm over night. Cells were harvested by centrifugation at 4\u00b0C and 3600 rpm for 30 min. The supernatant was discarded and the cell pellet was resuspended in 80 mL binding buffer (20 mm Na2HPO4, 0.5 m NaCl, 20 mm imidazole, 1 mm MgCl2, pH 7.0). Cell disruption was done by ultra-sonication on ice for 8 \u00d7 60 s. The cell debris was removed by repeated centrifugation (2 \u00d7 10 min) at 4\u00b0C and 11000 rpm to yield the soluble enzyme fractions. Protein purification was performed by Ni2+-NTA affinity chromatography with Ni2+-NTA superflow (Qiagen) using binding buffer (4 \u00d7 20 mL; 20 mm Na2HPO4, 0.5 m NaCl, 20 mm imidazole, 1 mm MgCl2, pH 7.0) and elution buffer (4 \u00d7 20 mL; 20 mm Na2HPO4, 0.5 m NaCl, 20 mM imidazole, 1 mm MgCl2, pH 7.0). The enzyme fractions were used for enzyme reactions with the natural substrate FDP (50 mg, final concentration c\u00a0=\u00a00.2 mg/mL). The incubation experiment was performed at 28\u00b0C for 3 hr and was extracted three times with hexane. The combined organic layers were dried over MgSO4 and concentrated under reduced pressure. Column chromatography on silica gel (pentane: diethyl ether 5:1) yielded the terpene alcohol (5.0 mg) as colorless oil.\n\n### E. coli expression and headspace analysis\n\nThe two plasmids pEXP5-CT/TOPO::DdTPS8 and pRSFDuet1:: CYP:: redB were cotransformed into E.\u00a0coli Bl21. The resultant strain was cultured overnight and then induced for protein expression by adding isopropyl \u03b2-D-1-thiogalactopyranoside. Volatiles emitted from the\u00a0E. coli culture were collected by solid phase microextraction for 1 hr, and analyzed by GC-MS. Protein expression and headspace collections were repeated three times.\n\n### Enzyme reactions with isotopically labeled substrates\n\nIncubation experiments with DdTPS8 and labeled substrates were performed with the pure protein fractions obtained from 300 mL E. coli BL 21 pET32a_DdTPS8 liquid culture as reported above. All incubation experiments were done with the isotopically labeled substrate (0.6\u20131 mg, c\u00a0=\u00a00.1 mg/mL) at 28\u00b0C for 3 hr. The reaction mixtures were extracted with benzene-d6 (0.8 mL), the organic layers were separated and directly analyzed by GC/MS and NMR. For the determination of the absolute configuration of the DdTPS8 product (R)-(1-13C,1-2H) and (S)-(1-13C,1-2H)geranyl diphosphate (each 0.8 mg) were elongated with FDP synthase and isopentenyl diphosphate (0.5 mg) in the same reaction vessel and extracted after 3 hr incubation at 28\u00b0C.\n",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "759f82da-d0bc-432f-b5de-5aa1f3bf991c",
+      "submission_id": "3a60d44e-ddf9-445c-8fbb-8edb40bc1db4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Merijn R Kant, University of Amsterdam Netherlands\n\nReviewers:\n- Ren\u00e9 Feyereisen, University of Copenhagen Denmark\n\n## Review text\n\nDOI: [10.7554/eLife.44352.025](https://doi.org/10.7554/eLife.44352.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A Terpene Synthase-Cytochrome P450 Cluster in Dictyostelium Produces a Novel Norsesquiterpene and Regulates Development\" for consideration by eLife. Your article has been reviewed by Detlef Weigel as the Senior Editor, a Reviewing Editor, and two reviewers. One of the reviewers, Ren\u00e9 Feyereisen, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe manuscript by Chen and colleagues makes key advances in understanding the role of low molecular weight signals in the biology of Dictyostelium. The study demonstrates that this amoeba produces terpenes, at least one of which is converted into a novel terpenoid via a cytochrome P450 and suggests that it may influence the timing of multicellular development. These results provide the first biochemical characterization of a terpene synthase \u2013 P450 cluster in amoebas.\n\nWe agreed that the data are important and deserve publication. However, we are not convinced of the biological relevance of the developmental effect attributed to discodiene, given the small effect size of the DdTPR8 mutant. Moreover, you obtained your mutant via random insertion and you did not attempt to rule out that the phenotype was only pleiotropic (e.g. via complementing the mutant with the wild-type gene and test whether this restores normal development by generating a second knock-out by homologous recombination). This part of your manuscript should therefore be significantly reduced and toned down to be acceptable to eLife. Finally, we also think that there might be alternative scenarios for the role and formation of discodiene worthwhile discussing. That is why we ask you for the following:\n\n1) The effect of discodiene on the development of the amoeba must be substantiated by demonstrating that it is not only pleiotropic. If not, it can only be cursorily mentioned. In that case \"and regulates multicellular development\" should be removed from the Title.\n\n2) The effects of loss of DdTPS8 gene function on development are rather minor (so assuming they are not pleiotropic). A few hours difference in developmental progression also easily occurs on a day to day base for wild-type Dictyostelium. Therefore, you should clearly acknowledge that the biological significance of this individual terpene may be rather small. However, we suggest you to also mention that discodiene might be merely a component of a (terpene) bouquet needed for development and that knocking out just one may not be enough to fully block whatever role these volatiles may play in Dictyostelium development (or other aspects of their life history). Finally, you should acknowledge that discodiene may not control developmental programs directly (if at all) but may influence these indirectly by acting as facilitator, or \"aggregation pheromone\".\n\n3) While we judge that the role of discodiene in development is overstated (see 1 and 2), we also feel that the novelty of a functional biosynthetic cluster of terpene synthase \u2013 P450 in this organism (including the uncommon reaction catalyzed by the P450) is understated. Dictyostelium has 40 PKS, 41 P450 and 9 TPS genes: the potential for generating chemical diversity in \"synthetic biology\" using these building blocks is therefore enormous, and because this is not a plant, a fungus or a bacterium, diversity can be assumed (and indeed, discodiene is itself a previously unreported (nor)sesquiterpene). We believe that there is sufficient reason to emphasize the novelty from the perspective of the fields of natural products \u2013 chemical ecology much more while being much more cautious about its role in developmental programs.\n\n4) There was much discussion about the robustness of the data in Figure 6, because it was not immediately clear that these experiments had actually been repeated three times. This is too much hidden in the Materials and methods section. Mention and discuss the reproducibility of these results explicitly (and also mention this in the figure legend).\n\n5) In the first paragraph it is stated that apart from cAMP no low molecular weight signaling molecules have been reported to be active in Dictyostelium development. This is incorrect. There are at least two polyketides, DIF-1 (Thompson and Kay, 2000) and MBPD, with essential developmental roles. Other low molecular weight compounds required for stalk and spore differentiation are GABA, the nucleotide c-di-GMP, the cytokinin discadenine and un unidentified steroid (see the Loomis, 2014 and Schaap, 2016 reviews). This must be mentioned to place the discodiene story in the right context.\n\n6) We propose an alternative mechanism for the carbon-carbon scission yielding acetone and discoidiene i.e. P450 abstraction of the C8 \u03b1 hydrogen, leading to a discoidol C8 radical that would rearrange by scission of the adjacent isopropanol group to a radical. This isopropanol radical would react in the classical oxygen rebound with the [Fe-OH]3+, and loss of water to acetone. This may be more likely that the abstraction of the hydroxyl hydrogen and regioselective rearrangement of the radical following carbon-carbon cleavage. The alternative mechanism would be consistent with the retention of deuterium and would replace a relatively difficult selective rebound on the hypothetical C7 radical (with removal of a C8 but not C6 hydrogen), by a probably favored rebound on the isopropanol radical. Such an alternative mechanism has been proposed for the analogous reactions of CYP71AJ1 and CYP71AJ4, with modeling of CYP71AJ1 with marmesin (Larbat et al., 2007) specifically showing the optimal positioning of the carbon \u03b1 to the isopropyl group (i.e. C8 of discoidol). Similarly, in the CYP82G1 model, the C5 carbon of the nerolidol and geranyllinalool substrates (equivalent to C8 of discoidol) is ideally positioned for hydrogen abstraction, whereas the C3 hydroxyl group is predicted to hydrogen bond with an active site threonine. If an analogous substrate positioning and hydrogen bonding could be shown in CYP521A1, then this would favor oxygen rebound on the isopropanol radical.\n",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "48b849fb-9fcd-44f4-9584-c18c410134dd",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C1",
+      "claim": "Terpenoids constitute the largest class of natural products made by living organisms with over 80,000 structures identified.",
+      "claim_type": "EXPLICIT",
+      "source": "With over 80,000 structures identified, terpenoids constitute the largest class of natural products made by living organisms (Christianson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Christianson, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "06701408-38ae-4ce8-9c18-7b9612ca86da",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C2",
+      "claim": "Most terpenoid natural products are known from plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Most terpenoid natural products are known from plants (Chen et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "6e342c0b-e10f-4bd2-bf0e-2e3e1dd79059",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C3",
+      "claim": "Bacteria are rich sources of terpenoid natural products.",
+      "claim_type": "EXPLICIT",
+      "source": "bacteria (Yamada et al., 2015; Dickschat, 2016) and fungi (Keller et al., 2005; Schmidt-Dannert, 2015) are also rich sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Yamada et al., 2015 and Dickschat, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "24f9ad8c-b19b-4b4f-881f-35da3b7a8596",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C4",
+      "claim": "Fungi are rich sources of terpenoid natural products.",
+      "claim_type": "EXPLICIT",
+      "source": "bacteria (Yamada et al., 2015; Dickschat, 2016) and fungi (Keller et al., 2005; Schmidt-Dannert, 2015) are also rich sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Keller et al., 2005 and Schmidt-Dannert, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "74f2ffe0-153b-4ee1-9a61-a5c2e04687b0",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C5",
+      "claim": "Dictyostelid social amoebae have the genetic capacity to produce monoterpenes (C10), sesquiterpenes (C15) and diterpenes (C20).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently we have shown that dictyostelid social amoebae, a class of eukaryotic soil microorganisms, also have the genetic capacity to produce monoterpenes (C10), sesquiterpenes (C15) and diterpenes (C20) (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "fa4e37dc-7723-4ed6-b3f1-c2decc623131",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C6",
+      "claim": "Dictyostelid social amoebae have a unique life cycle consisting of both unicellular and multicellular phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Dictyostelid social amoebae have a unique life cycle, consisting of both unicellular and multicellular phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about dictyostelid social amoebae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "8f31c6cc-ce42-484f-b185-98c9e636e582",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C7",
+      "claim": "When bacterial food supply becomes scarce, dictyostelid amoebae start to aggregate and go through morphological changes to form fruiting bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "When their bacterial food supply becomes scarce, amoebae start to aggregate, going through clearly-defined morphological changes to eventually form fruiting bodies (Kessin, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kessin, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "6fa1388e-8fac-4a5c-8ec6-f8d4d1f29ad6",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C8",
+      "claim": "The multicellular stages of D. discoideum life cycle are characterized by the emission of a complex mixture of volatile organic compounds dominated by sesquiterpenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent studies illustrated that the multicellular stages of the life cycle of both D. discoideum (Chen et al., 2016) and D. purpureum (Chen et al., 2018) are characterized by the emission of a complex mixture of volatile organic compounds that is dominated by sesquiterpenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2016 and Chen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "fe6032e9-5712-4fd4-a9b3-285c42e893d7",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C9",
+      "claim": "The multicellular stages of D. purpureum life cycle are characterized by the emission of a complex mixture of volatile organic compounds dominated by sesquiterpenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent studies illustrated that the multicellular stages of the life cycle of both D. discoideum (Chen et al., 2016) and D. purpureum (Chen et al., 2018) are characterized by the emission of a complex mixture of volatile organic compounds that is dominated by sesquiterpenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2016 and Chen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "41527d2b-6e1e-499c-8b32-cddc0cd560e9",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C10",
+      "claim": "Most terpenoids produced by D. discoideum and D. purpureum appear to be species-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "While some terpenoids are produced by both species, most appear to be species-specific (Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "55eb2852-da8f-4fd8-8494-5a508bb603ff",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C11",
+      "claim": "The biological function of terpenoids produced by D. discoideum and D. purpureum is completely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological function of these terpenoids is completely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the lack of knowledge at the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "73920390-764f-4ca2-9fea-b4a8fdbc3edf",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C12",
+      "claim": "The D. discoideum genome contains nine full-length genes (DdTPS1-9) encoding terpene synthases.",
+      "claim_type": "EXPLICIT",
+      "source": "The D. discoideum genome contains nine full-length genes (DdTPS1-9) encoding terpene synthases, the pivotal enzymes that create the terpenoid carbon skeleton (Christianson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genomic data and a citation to Christianson, 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "809bb6d7-b23b-4a8e-a743-5f03bc796abe",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C13",
+      "claim": "All nine DdTPS genes are expressed during the multicellular stage of D. discoideum.",
+      "claim_type": "EXPLICIT",
+      "source": "All nine genes are expressed during the multicellular stage, suggesting a role for volatile terpenoid biosynthesis in fruiting body development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "3940a1c2-0515-4951-bd70-3f003e5566d8",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C14",
+      "claim": "Biochemical characterization of DdTPS1-9 revealed terpene synthase activity for all tested enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, biochemical characterization of the encoded proteins DdTPS1-9 revealed terpene synthase activity for all tested enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by biochemical assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "89d422db-d5fa-4da7-811a-157ee3257378",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C15",
+      "claim": "The sesquiterpene products of DdTPS1-4, DdTPS6, DdTPS7 and DdTPS9 could be detected in the volatile bouquet of D. discoideum during multicellular development.",
+      "claim_type": "EXPLICIT",
+      "source": "The sesquiterpene products of DdTPS1-4, DdTPS6, DdTPS7 and DdTPS9, as well as the diterpene product of DdTPS5, could be detected in the volatile bouquet of D. discoideum during multicellular development (Chen et al., 2016; Rabe et al., 2016a; Rinkel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2016, Rabe et al., 2016a, and Rinkel et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "3c664f17-d7a0-430d-b441-f1349a561789",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C16",
+      "claim": "The diterpene product of DdTPS5 could be detected in the volatile bouquet of D. discoideum during multicellular development.",
+      "claim_type": "EXPLICIT",
+      "source": "The sesquiterpene products of DdTPS1-4, DdTPS6, DdTPS7 and DdTPS9, as well as the diterpene product of DdTPS5, could be detected in the volatile bouquet of D. discoideum during multicellular development (Chen et al., 2016; Rabe et al., 2016a; Rinkel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2016, Rabe et al., 2016a, and Rinkel et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "2a564589-13ab-4d62-b5fa-d51cdf3fe876",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C17",
+      "claim": "D. discoideum releases the monoterpene linalool that is produced by several recombinant terpene synthases including DdTPS2, DdTPS3 and DdTPS9.",
+      "claim_type": "EXPLICIT",
+      "source": "D. discoideum also released the monoterpene linalool that was produced by several recombinant terpene synthases including DdTPS2, DdTPS3 and DdTPS9, suggesting that at least one of these enzymes functions as a monoterpene synthase in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data on volatile emissions and enzyme assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "4eac23d3-6834-411d-a3d3-21f6d32e5f03",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C18",
+      "claim": "The in vitro products of all DdTPSs except DdTPS8 could be detected in the volatile bouquet of D. discoideum.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, the in vitro products of all DdTPSs except DdTPS8 could be detected in the volatile bouquet of D. discoideum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of in vitro enzyme assays and volatile profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "b51c3146-fed8-4cac-aa0b-c6b50a77cfb5",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C19",
+      "claim": "DdTPS8 has sesquiterpene synthase activity but does not produce mono- or diterpenes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "DdTPS8 has sesquiterpene synthase activity, but does not produce mono- or diterpenes in vitro (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "4ab01358-74fa-49a2-a078-d5b6896120af",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C20",
+      "claim": "DdTPS8 exhibits the second highest level of expression among all nine DdTPS genes during development.",
+      "claim_type": "EXPLICIT",
+      "source": "DdTPS8 exhibits the second highest level of expression among all nine DdTPS genes during development",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "dbf8c3d7-8187-46d1-a58c-b27fc6f92572",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C21",
+      "claim": "The major sesquiterpene product of DdTPS8 was not detected in the D. discoideum volatiles.",
+      "claim_type": "EXPLICIT",
+      "source": "so it was surprising to see that the major sesquiterpene product of DdTPS8 was not detected in the D. discoideum volatiles (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "1aceeb2e-84b0-4acb-8d0a-6bfa7c59f94c",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C22",
+      "claim": "CYPs are heme-containing proteins that catalyze a wide variety of oxidative reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "CYPs are heme-containing proteins that catalyze a wide variety of oxidative reactions (Coon, 2005), often on terpenoid substrates (Hamberger and Bak, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Coon, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "4a2487f8-b9bf-4110-8156-7e1fc5114af9",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C23",
+      "claim": "CYPs often catalyze oxidative reactions on terpenoid substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "CYPs are heme-containing proteins that catalyze a wide variety of oxidative reactions (Coon, 2005), often on terpenoid substrates (Hamberger and Bak, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hamberger and Bak, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "cdb21260-2cf6-4724-913e-43a12410da71",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C24",
+      "claim": "DdTPS8 and CYP521A1 are physically clustered on chromosome six.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present conclusive evidence that the DdTPS8 sesquiterpene product is modified by a CYP that is physically clustered with DdTPS8 on chromosome six and produces a novel trisnorsesquiterpene named as discodiene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genomic location data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "83cc1019-48ee-4e50-afb8-f523ff641866",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C25",
+      "claim": "CYP521A1 modifies the DdTPS8 sesquiterpene product to produce a novel trisnorsesquiterpene named discodiene.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present conclusive evidence that the DdTPS8 sesquiterpene product is modified by a CYP that is physically clustered with DdTPS8 on chromosome six and produces a novel trisnorsesquiterpene named as discodiene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by biochemical assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "f81b0e11-0d0b-4dc6-89ff-a29087122cc7",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C26",
+      "claim": "A DdTPS8-knockout mutant of D. discoideum failed to produce discodiene.",
+      "claim_type": "EXPLICIT",
+      "source": "A DdTPS8-knockout mutant of D. discoideum, which failed to produce discodiene, showed slower progression in development than the wild type strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by chemical profiling data of the mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "44e05b7f-3772-4389-b94e-7b8c1eeaf3a1",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C27",
+      "claim": "A DdTPS8-knockout mutant of D. discoideum showed slower progression in development than the wild type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "A DdTPS8-knockout mutant of D. discoideum, which failed to produce discodiene, showed slower progression in development than the wild type strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by developmental phenotype data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "017860fd-c305-4471-adb9-f9fd566bff5c",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C28",
+      "claim": "DdTPS8 catalyzes the formation of a sesquiterpene alcohol as a single product when incubated with farnesyl diphosphate (FDP).",
+      "claim_type": "EXPLICIT",
+      "source": "After protein purification by Ni2+-NTA affinity chromatography, the recombinant DdTPS8 enzyme was incubated with its substrate farnesyl diphosphate (FDP), resulting in the formation of a sesquiterpene alcohol as a single product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by enzyme assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "ea65e42c-15a0-4869-a0f1-f6ced46b7b05",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C29",
+      "claim": "The product of DdTPS8 is a new bicyclic sesquiterpenoid named discoidol.",
+      "claim_type": "EXPLICIT",
+      "source": "The compound was purified and structure elucidation by NMR spectroscopy (Supplementary file 1) revealed a new bicyclic sesquiterpenoid, which was named discoidol (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by NMR spectroscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "40b937ee-5da3-46eb-8471-426d850906e5",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C30",
+      "claim": "Discoidol is a stereoisomer of the known sesquiterpene alcohol jinkoh-eremol.",
+      "claim_type": "EXPLICIT",
+      "source": "Discoidol is a stereoisomer of the known sesquiterpene alcohol jinkoh-eremol (Nakanishi et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural comparison and a citation to Nakanishi et al., 1983.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "457ba3bc-88a2-4eae-80dc-e7f1ce81635d",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C31",
+      "claim": "The absolute configuration of discoidol is (4S,5S,7S).",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments resulted in the assigned absolute configuration of (4S,5S,7S)-discoidol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by isotopic labeling experiments and NMR spectroscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "a95bfa75-8e19-4279-9120-b69019e57b34",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C32",
+      "claim": "The cyclization mechanism of discoidol synthase starts with a 1,10-cyclization of FDP with attack of water to yield hedycaryol.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed cyclization mechanism of discoidol synthase (Figure 1D) starts with a 1,10-cyclization of FDP with attack of water to yield the neutral intermediate hedycaryol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mechanistic analysis and isotopic labeling experiments shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "adc60a61-a37f-4e45-b1f4-d637b6a2e694",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C33",
+      "claim": "The DdTPS8 mutant lacks a major peak (peak one) whose structure was unknown and has a molecular mass of 162.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to the wild type, the DdTPS8 mutant lacked a major peak (peak one in Figure 2B) whose structure was unknown. This unknown compound appeared to have a molecular mass of 162",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GC-MS data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "12d13008-8eeb-4f34-b707-88c5ff6ba7a5",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C34",
+      "claim": "The unknown compound with molecular mass 162 is consistent with a degraded sesquiterpene that had lost a fragment containing three carbon atoms and one oxygen atom.",
+      "claim_type": "EXPLICIT",
+      "source": "This unknown compound appeared to have a molecular mass of 162, consistent with the mass of a degraded sesquiterpene that had lost a fragment containing three carbon atoms and one oxygen atom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mass spectrometry data and inference about molecular composition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "277bb512-6bc5-49a8-a34f-9364e0f4e4c4",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C35",
+      "claim": "Analysis of the D. discoideum genome led to the identification of a total of 54 putative CYP genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the D. discoideum genome led to the identification of a total of 54 putative CYP genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "dad77691-7d97-4128-ac04-9d90d506e7d6",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C36",
+      "claim": "Among the 54 putative CYP genes in D. discoideum, 41 were annotated as full-length intact genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, 41 were annotated as full-length intact genes whereas the rest were pseudogenes or partial genes (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genomic annotation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "0c466d7b-eba7-46ab-b063-f89fe439675d",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C37",
+      "claim": "The 41 full-length CYP genes in D. discoideum were assigned to 17 families and 34 subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "The 41 full-length genes were assigned to 17 families and 34 subfamilies (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phylogenetic classification data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "f8e3242c-2451-468f-a4be-377220800435",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C38",
+      "claim": "Three CYP genes showed significant correlation coefficients with DdTPS8 with a P value lower than 0.001: CYP521A1 (r = 0.994), CYP508C1 (r = 0.992) and CYP519C1 (r = 0.951).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 41 CYP genes, three showed significant correlation coefficients with DdTPS8 exhibiting a P value lower than 0.001 (Supplementary file 3): CYP521A1 (r = 0.994), CYP508C1 (r = 0.992) and CYP519C1 (r = 0.951).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "d3246ca0-2a27-4039-82d3-e74403d57de1",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C39",
+      "claim": "CYP521A1, CYP508C1, and CYP519C1 showed maximal level of expression at 16 hr during multicellular development, like DdTPS8.",
+      "claim_type": "EXPLICIT",
+      "source": "These three CYP genes, like DdTPS8, showed a maximal level of expression at 16 hr during multicellular development (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "be0bbca6-999e-4d7e-ba66-af0a3f83cc0f",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C40",
+      "claim": "CYP521A1 is located 685 bp away from DdTPS8 in a head-to-head configuration on chromosome 6.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that the top candidate CYP521A1 is located 685 bp away from DdTPS8 in a head-to-head configuration on chromosome 6 (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genomic location data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "88de539d-00ac-4ef6-aacf-b4f3d123c591",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C41",
+      "claim": "E. coli cells harboring DdTPS8, redB, and CYP521A1 produced both discoidol and the unknown terpenoid with a molecular mass of m/z = 162.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, GC-MS analysis confirmed the formation of both discoidol with a molecular mass of m/z = 222 (Figure 4B) and the unknown terpenoid with a molecular mass of m/z = 162 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GC-MS data shown in Figures 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "8d3ec622-9646-4754-9cdd-f14cb4a40ea9",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C42",
+      "claim": "E. coli cells harboring DdTPS8, redB, and CYP508C1 produced only discoidol and no further terpenoids.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli cells harboring DdTPS8, redB, and CYP508C1, another P450 gene highly coexpressed with DdTPS8, produced only discoidol and no further terpenoids (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GC-MS data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "66ef64bf-1f17-4f1c-a7b6-7bf73bb9ab89",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C43",
+      "claim": "When CYP521A1 and redB were expressed in the absence of DdTPS8, no terpene formation was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When CYP521A1 and redB were expressed in the absence of DdTPS8, no terpene formation was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by enzyme assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "95515ec3-eb2c-4a15-beb4-d71ffbf4fc6f",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C44",
+      "claim": "The molecular ion at m/z = 162 in the EI mass spectrum points to a degradation of discoidol with loss of a fragment representing a molecular weight of 60 Da.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the molecular ion at m/z = 162 in the EI mass spectrum (Figure 5A), pointed to a degradation of discoidol with loss of a fragment representing a molecular weight of 60 Da.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "44cb616c-13d2-4826-8b01-4690b7a393c5",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C45",
+      "claim": "The degradation product of discoidol is a trisnorsesquiterpene with incorporation of twelve 13C atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The same reaction with completely labeled (13C15)discoidol, obtained from (13C15)FDP (Rabe et al., 2015) with discoidol synthase, produced a degradation product with incorporation of twelve 13C atoms (Figure 5B), demonstrating that the degradation product is a trisnorsesquiterpene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by isotopic labeling experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "30f2b170-d114-4119-aa0a-5653fb8fcbab",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C46",
+      "claim": "The tentatively identified compound produced by CYP521A1 from discoidol is a new natural product named discodiene.",
+      "claim_type": "EXPLICIT",
+      "source": "The tentatively identified compound is a new natural product for which we propose the name discodiene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis and isotopic labeling experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "c0308bd7-f5f6-4fa4-b73d-81f8964a9a6f",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C47",
+      "claim": "At 16 hr of starvation, the multicellular development of the DdTPS8 mutant was delayed compared to the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a difference was observed after 16 hr of starvation: the multicellular development of the mutant was delayed compared to the wild type (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by developmental phenotype data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "ee0fc788-1053-425f-bc92-27c68eb40b44",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C48",
+      "claim": "At 16 hr, the wild type D. discoideum cells formed fingers, whereas the DdTPS8 mutant was mainly at the tipped aggregate stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time point, the wild type cells formed fingers, whereas the mutant was mainly at the tipped aggregate stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by developmental phenotype observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "ce111a01-a4fe-4a06-b58f-a89827c68709",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C49",
+      "claim": "At 20 hr, the wild type D. discoideum began to transition from fingers into Mexican hats, while the DdTPS8 mutant was delayed at the finger stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At 20 hr (Figure 6), the wild type began to transition from fingers into so-called 'Mexican hats', so a mix of the two stages was observed, while the mutant was delayed at the finger stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by developmental phenotype data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "7d08588c-6b05-4f9b-a862-4213bc56e2d1",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C50",
+      "claim": "At 24 hr, the wild type D. discoideum began entering the culmination stage, while the DdTPS8 mutant was still mostly at the finger stage with some Mexican hats visible.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 hr, the wild type began entering the culmination stage, which involves complex cell movements to form a ball of spores carried on top of a cellular stalk. However, the mutant was still mostly at the finger stage with some Mexican hats visible (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by developmental phenotype data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "39e5bcf0-d4c4-487e-bfab-e60d74732029",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C51",
+      "claim": "Eventually, both the wild type and the DdTPS8 mutant developed into well-proportioned fruiting bodies with stalks and spores that were largely indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, both the wild type and the mutant developed into well-proportioned fruiting bodies, with stalks and spores, and they were largely indistinguishable (Figure 6, 54h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by developmental phenotype data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "0db4753e-0777-4be3-8c7c-e1581e65aace",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C52",
+      "claim": "No differences in spore formation and germination were observed between the wild type and the DdTPS8 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Spore formation and germination were also compared but no differences were observed between the wild type and the DdTPS8 mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "bc38478b-8943-4d07-bba0-90901f1f160f",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C53",
+      "claim": "DdTPS8 has a function during later stages of multicellular development in D. discoideum, during the transition from fingers to Mexican hats.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that DdTPS8 has a function during later stages of multicellular development in D. discoideum, during the transition from fingers to Mexican hats, which is consistent with its temporal expression pattern (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the developmental phenotype data and gene expression pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "f048fb37-0a78-49b8-a58e-3270eb85d04e",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C54",
+      "claim": "Two additional putative TPS-CYP gene clusters were identified in D. discoideum: DdTPS2-CYP519C1 and DdTPS3-CYP515A1.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the functional validation of the DdTPS8-CYP521A1 gene cluster, we examined other members of the TPS and CYP families in D. discoideum and identified two additional putative TPS-CYP gene clusters (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genomic analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "30ddd8ac-2754-4c79-aa3d-cea6800650e6",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C55",
+      "claim": "DdTPS2 is organized in a head-to-head fashion with CYP519C1 and the two are separated by an intergenic region of 580 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "DdTPS2 is organized in a head-to-head fashion with CYP519C1 and the two are separated by an intergenic region of 580 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genomic location data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "1f525cfa-d6b8-44df-9f9a-4e2bac015ce0",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C56",
+      "claim": "A total of 54 putative CYP genes were found in D. purpureum.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a total of 54 putative CYP genes (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "e62dc696-175e-44d8-bec1-57eb7d737473",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C57",
+      "claim": "Among the 54 putative CYP genes in D. purpureum, 47 were annotated as full-length intact genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, 47 were annotated as full-length intact genes whereas the remaining are partial genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genomic annotation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "76da2824-4494-4eb3-adaf-8d1a1778ee75",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C58",
+      "claim": "The 47 full-length CYP genes in D. purpureum were assigned to 12 families and 29 subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "The 47 full-length genes were assigned to 12 families and 29 subfamilies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phylogenetic classification data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "3d68dd67-1cfa-4a1e-96bc-89f2938770bf",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C59",
+      "claim": "Two putative TPS-CYP clusters were identified in D. purpureum: DpTPS5-CYP5121A1_Dp and DdTPS12-CYP919E1_Dp.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining the physical locations of TPS and CYP genes, two putative TPS-CYP clusters were identified in D. purpureum: DpTPS5 is linked to CYP5121A1_Dp with an intergenic region of 612 bp and DdTPS12 is linked to CYP919E1_Dp with an intergenic region of 900 bp (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genomic analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "faef6ed0-9a8c-4ea3-849c-b5e96e8b8312",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C60",
+      "claim": "DdTPS8 is a microbial terpene synthase that shares many mechanistic features of typical plant terpene synthases.",
+      "claim_type": "EXPLICIT",
+      "source": "DdTPS8 is a microbial terpene synthase that shares many mechanistic features of other typical plant terpene synthases, such as a protonation-induced cyclization of a neutral intermediate, a 1,2-hydride shift and a methyl group migration (Degenhardt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mechanistic analysis and a citation to Degenhardt et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "adda634c-342f-4be0-8f08-bd7d5f9c90a0",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C61",
+      "claim": "The most closely related terpene synthase to DdTPS8 in D. discoideum is DdTPS4, which forms the acyclic sesquiterpene alcohol (E)-nerolidol.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the most closely related terpene synthase in D. discoideum, DdTPS4, also forms a sesquiterpene alcohol (Chen et al., 2016). However, the product of DdTPS4, (E)-nerolidol, is an acyclic compound in contrast to the cyclic product of DdTPS8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phylogenetic analysis and a citation to Chen et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "ae41582d-8b45-4c93-b7c4-80a8bdd41568",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C62",
+      "claim": "Jinkoh-eremol has been previously isolated from agarwood (Aquilaria sp.), a eudicotyledon flowering plant.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also interesting to note that a stereoisomer of discoidol known as jinkoh-eremol has been previously isolated from an agarwood (Aquilaria sp.), a eudicotyledon flowering plant (Nakanishi et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nakanishi et al., 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "e9042fa6-cead-4971-9e8d-df011722e9c0",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C63",
+      "claim": "Convergent evolution has occurred in D. discoideum and plants for the biosynthesis of similar terpenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the biosynthesis of jinkoh-eremol in agarwood is most likely catalyzed by typical plant terpene synthases, which are only distantly related to the microbial type terpene synthases that include D. discoideum TPSs (Jia et al., 2016), convergent evolution has occurred in D. discoideum and plants for the biosynthesis of similar terpenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from phylogenetic relationships and structural similarities, supported by a citation to Jia et al., 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "09117e8d-063c-4283-ba75-25c92bef9734",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C64",
+      "claim": "Geosmin is a particularly widespread trisnorsesquiterpene compound in soil microorganisms that exhibits the smell of earth.",
+      "claim_type": "EXPLICIT",
+      "source": "Another important member of this group is geosmin, a particularly widespread compound in soil microorganisms that exhibits the smell of earth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about geosmin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "a3877f39-a759-435a-b080-395b6070fadb",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C65",
+      "claim": "A bifunctional terpene synthase catalyzes the formation of geosmin involving initial cyclization to an enantiomer of hedycaryol followed by a second cyclization and oxidative cleavage of a 1-hydroxy-1-methylethyl unit.",
+      "claim_type": "EXPLICIT",
+      "source": "it became later evident from feeding experiments (Dickschat et al., 2005) and characterization of the enzyme (Jiang et al., 2007) that a bifunctional terpene synthase catalyzes the formation of this compound involving initial cyclization to an enantiomer of hedycaryol followed by a second cyclization and oxidative cleavage of a 1-hydroxy-1-methylethyl unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Dickschat et al., 2005 and Jiang et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "11cd1e44-64d1-47d0-a974-930d67a410be",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C66",
+      "claim": "Oxidative dealkylations such as the reaction catalyzed by CYP521A1 are known from a few other cytochrome P450s, including angelicin synthase (CYP71AJ4) from Ammi majus.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxidative dealkylations such as the reaction catalyzed by CYP521A1 converting discoidol into discodiene are known from a few other cytochrome P450s, including angelicin synthase (CYP71AJ4) from Ammi majus (Larbat et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Larbat et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "b2a4bf89-3f5e-4e77-9598-1b599a7eed85",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C67",
+      "claim": "Secologanin synthase (CYP72A1) from Catharanthus roseus catalyzes oxidative dealkylation reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "secologanin synthase (CYP72A1) from Catharanthus roseus (Irmler et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Irmler et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "c9e2c518-b899-4696-a62c-6d74881ead74",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C68",
+      "claim": "DMNT/TMTT synthase (CYP82G1) from Arabidopsis catalyzes oxidative dealkylation reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "DMNT/TMTT synthase (CYP82G1) from Arabidopsis (Lee et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lee et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "2450133f-23e6-4f01-a22a-d506e694ebda",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C69",
+      "claim": "Psoralene synthase catalyzes the degradation of (+)-marmesin to psoralene.",
+      "claim_type": "EXPLICIT",
+      "source": "the degradation of (+)-marmesin to psoralene by the psoralene synthase (Stanjek et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Stanjek et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "c4a42ed6-6ea4-4a00-af0d-3cc2238b9712",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C70",
+      "claim": "The culmination stage of D. discoideum development occurs at the end of development, between 16 and 24 hr after the process begins.",
+      "claim_type": "EXPLICIT",
+      "source": "The culmination stage, which is marked by the onset of stalk formation, occurs at the end of development, between 16 and 24 hr after the process begins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about D. discoideum development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "25863836-d034-49c5-948c-80e8c658b40a",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C71",
+      "claim": "A number of metabolites have been demonstrated to regulate Dictyostelium development, such as the polyketides DIF-1 and 4-methyl-5-pentylbenzene-1,3-diol.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of metabolites have been demonstrated to regulate Dictyostelium development, such as the polyketides DIF-1 (Thompson and Kay, 2000) and 4-methyl-5-pentylbenzene-1,3-diol (Anjard et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Thompson and Kay, 2000 and Anjard et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "802a7fe3-9347-464c-b45d-2d1a129ee8cb",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C72",
+      "claim": "Gamma-aminobutyric acid, the nucleotide cyclic diguanylate, the cytokinin discadenine and an unidentified steroid regulate Dictyostelium development.",
+      "claim_type": "EXPLICIT",
+      "source": "gamma-aminobutyric acid, the nucleotide cyclic diguanylate, the cytokinin discadenine and an unidentified steroid (Loomis, 2014; Schaap, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Loomis, 2014 and Schaap, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "98e0b386-c9e4-42ce-9857-4863146c6f13",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C73",
+      "claim": "Discodiene is a volatile compound.",
+      "claim_type": "EXPLICIT",
+      "source": "One major difference between discodiene and these metabolites is that discodiene is a volatile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the chemical properties of discodiene.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "d7807f01-4748-4dc2-b7e2-10fdfbc8964a",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C74",
+      "claim": "Disrupting DdTPS8 did not fully block the development of D. discoideum.",
+      "claim_type": "EXPLICIT",
+      "source": "Since disrupting DdTPS8 did not fully block the development of D. discoideum, discodiene might be merely a component of the volatile bouquet needed for development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by developmental phenotype data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "6d625cb6-e776-4d94-b308-a63e68294d22",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C75",
+      "claim": "The organization of terpene synthase genes and CYP genes involved in the same biochemical pathway as metabolic gene clusters has been documented in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The organization of terpenes synthase genes and CYP genes involved in the same biochemical pathway as metabolic gene clusters has been documented in a growing number of cases including bacteria (Nett et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nett et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "da5fef7c-6857-475f-a131-389a5555d06f",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C76",
+      "claim": "The organization of terpene synthase genes and CYP genes involved in the same biochemical pathway as metabolic gene clusters has been documented in fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "fungi (Quin et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Quin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "79576a1a-767b-4791-b44d-e5bd28e4edb6",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C77",
+      "claim": "The organization of terpene synthase genes and CYP genes involved in the same biochemical pathway as metabolic gene clusters has been documented in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "plants (Boutanaev et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Boutanaev et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "945a49e5-8678-4b2d-a12f-ffdea3ad0bb2",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C78",
+      "claim": "The ortholog of DdTPS8 in D. purpureum is DpTPS6.",
+      "claim_type": "EXPLICIT",
+      "source": "The ortholog of DdTPS8 in D. purpureum is DpTPS6 (Chen et al., 2018), which is not clustered with any CYP gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phylogenetic analysis and a citation to Chen et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "1ab53fee-1af7-4f8f-84d4-67e68ccb9ee5",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C79",
+      "claim": "D. purpureum lacks an ortholog of CYP521A1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, D. purpureum lacks an ortholog of CYP521A1, implying that the D. purpureum may not produce discodiene",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "2242fe54-c350-4392-bf2a-9f3bbc20a648",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C80",
+      "claim": "D. purpureum may not produce discodiene.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, D. purpureum lacks an ortholog of CYP521A1, implying that the D. purpureum may not produce discodiene, consist with the volatile profiling of this species (Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the absence of CYP521A1 ortholog and supported by a citation to Chen et al., 2018.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "bd7bf659-c546-4b76-ba08-6079f0d38098",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C81",
+      "claim": "DdTPS3-CYP515A1 and DpTPS5-CYP515A1_Dp are an orthologous pair.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DdTPS3-CYP515A1 and DpTPS5-CYP515A1_Dp are an orthologous pair based on the orthology of the respective TPS genes (DdTPS3 and DpTPS5) (Chen et al., 2018) and CYP genes (CYP515A1 and CYP515A1-Dp are in the same subfamily).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phylogenetic analysis and a citation to Chen et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "4ab66cd1-7762-44ee-a0ce-04412a4bde3e",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C82",
+      "claim": "The D. discoideum genome contains 40 PKS genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The D. discoideum genome contains 40 PKS genes (Zucko et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zucko et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "cf42ebc7-edba-4976-baa6-5dfbd2a9f842",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C83",
+      "claim": "The DdTPS8 mutant was obtained from the gridded collection of the Genome Wide Dictyostelium Insertion (GWDI) Project.",
+      "claim_type": "EXPLICIT",
+      "source": "The DdTPS8 mutant was obtained from the gridded collection of the Genome Wide Dictyostelium Insertion (GWDI) Project (https://remi-seq.org).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the source of the mutant strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "fb4c6d97-c68b-4c37-8bce-6e2974e50ed9",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "claim_id": "C84",
+      "claim": "The DdTPS8 gene was disrupted by an insertion of a blasticidin resistance cassette between nucleotides 544 and 545 of the DdTPS8 open reading frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we analyzed a D. discoideum mutant in which DdTPS8 was disrupted by an insertion of a blasticidin resistance cassette between nucleotides 544 and 545 of the DdTPS8 open reading frame (Figure 2A), which was verified by sequencing (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequencing data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "36350362-9c6c-4b0c-ad67-d66814fa768c",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DdTPS8 catalyzes the formation of discoidol, a novel bicyclic sesquiterpene alcohol with absolute configuration (4S,5S,7S), which is a stereoisomer of jinkoh-eremol. The cyclization mechanism involves 1,10-cyclization of FDP, water attack to form hedycaryol, reprotonation, 1,2-hydride shift, and methyl migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 provide comprehensive structural and mechanistic characterization of discoidol through NMR spectroscopy, isotopic labeling experiments, and mechanistic analysis. The absolute configuration was determined using enantioselectively deuterated substrates and NOESY analysis, and the proposed mechanism is supported by multiple isotopic labeling experiments shown in Figures 1 and supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "25903fff-3c40-4a0b-bb7f-bfd8baed775a",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A DdTPS8 knockout mutant lacks a major volatile compound (peak one) with molecular mass 162, consistent with a trisnorsesquiterpene that lost a C3O fragment from a sesquiterpene. The mutant also fails to produce discodiene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 and C26 are supported by GC-MS data comparing wild type and mutant volatile profiles (Figure 2B). The molecular mass of 162 is consistent with loss of 60 Da (C3H4O or equivalent) from a sesquiterpene (222 Da), supporting the hypothesis of a degraded sesquiterpene product.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "1daec18c-b01f-4f49-a42b-3d1381f5ecfc",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genomic and coexpression analysis identified CYP521A1 as the top candidate for modifying the DdTPS8 product. Among 41 full-length CYP genes in D. discoideum (from 54 total putative CYPs), CYP521A1 showed the highest correlation with DdTPS8 expression (r=0.994, P<0.001), peaks at 16 hr development, and is physically clustered 685 bp from DdTPS8 in a head-to-head configuration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 provide converging lines of evidence from genomic analysis, statistical coexpression analysis, and physical gene clustering. The high correlation coefficient with appropriate statistical significance, coordinated temporal expression patterns (Figure 3A), and physical proximity (Figure 3B) strongly support CYP521A1 as a candidate enzyme acting on the DdTPS8 product.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "dc64c938-d10d-4cc1-9a6b-0c85fc374e2e",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Heterologous expression experiments in E. coli demonstrate that CYP521A1 (with redB) converts the DdTPS8 product to the compound with m/z=162, while CYP508C1 does not. CYP521A1 requires DdTPS8 for activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by GC-MS data from E. coli coexpression experiments (Figure 4). The specificity of CYP521A1 is demonstrated by negative controls: CYP508C1 produces only discoidol, and CYP521A1 without DdTPS8 produces no terpenes. These controls effectively rule out alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "ec7a196c-3b4e-43db-a5d7-22c7ecfa27cc",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The CYP521A1 product is a novel trisnorsesquiterpene named discodiene. Mass spectrometry shows m/z=162 (loss of 60 Da from discoidol), and isotopic labeling with (13C15)discoidol demonstrates incorporation of 12 carbon atoms, confirming it is a C12 trisnorsesquiterpene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by mass spectrometry and isotopic labeling experiments (Figure 5). The loss of three 13C atoms from fully labeled substrate definitively establishes the trisnorsesquiterpene nature. However, the authors acknowledge that full NMR structure elucidation was not possible due to low conversion, so the structure is 'tentatively identified' based on isotopic labeling patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "7216789e-2426-456c-8378-ec9d2e838fdc",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The DdTPS8 knockout mutant shows delayed multicellular development compared to wild type, particularly during the transition from fingers to Mexican hats (16-24 hr), but eventually forms normal fruiting bodies. DdTPS8 functions during later stages of development, consistent with its expression pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 are supported by developmental phenotype observations (Figure 6) showing stage-specific delays at 16, 20, and 24 hr, with eventual recovery by 54 hr. The temporal specificity of the phenotype matches the peak expression of DdTPS8 at 16 hr (Figure 3A). However, the experiment was performed three times but only one representative replicate is shown; quantification of developmental timing across replicates would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "03007f50-e100-4cc1-b39d-fa32a1c30288",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Additional putative TPS-CYP gene clusters were identified in D. discoideum (DdTPS2-CYP519C1, DdTPS3-CYP515A1) and D. purpureum (DpTPS5-CYP5121A1_Dp, DpTPS12-CYP919E1_Dp) based on physical proximity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 and C59 are supported by genomic location data (Figure 7). The identification is based on physical clustering with intergenic distances of 580-900 bp. However, these are 'putative' clusters without functional validation, unlike the DdTPS8-CYP521A1 cluster. The biological significance remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "1c48f0ed-75d8-48b1-9ed2-d3e9afa16938",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "D. purpureum contains 54 putative CYP genes, of which 47 are full-length intact genes assigned to 12 families and 29 subfamilies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 describe genomic analysis results for D. purpureum CYP genes. The analysis appears methodologically sound and is supported by supplementary data (Supplementary file 4). This provides comparative context for understanding TPS-CYP clusters across Dictyostelium species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "614510ed-765c-4f4e-9931-791fe6f6a3bb",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparative analysis shows that D. purpureum lacks an ortholog of CYP521A1 and likely does not produce discodiene, while DdTPS3-CYP515A1 and DpTPS5-CYP515A1_Dp form an orthologous pair, suggesting both shared and species-specific terpenoid biosynthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 are supported by phylogenetic analysis and volatile profiling data (Chen et al., 2018). The absence of CYP521A1 ortholog in D. purpureum is consistent with the lack of discodiene in volatile profiles. The identification of orthologous TPS-CYP pairs provides evolutionary context for understanding cluster conservation and divergence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "a952c438-1129-4c22-8c72-0e50cab72351",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DdTPS8 shares mechanistic features with plant terpene synthases despite being a microbial enzyme. Convergent evolution has occurred between D. discoideum and plants for biosynthesis of similar terpenes (discoidol and jinkoh-eremol), as these organisms use distantly related terpene synthase families.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C63 are supported by mechanistic analysis and phylogenetic relationships. The mechanistic similarities (protonation-induced cyclization, hydride shifts, methyl migration) are documented, and the phylogenetic distance between microbial and plant terpene synthases is established (Jia et al., 2016). The structural similarity of products from distantly related enzymes supports convergent evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "69818e15-3dc0-4f90-a8a7-a099437304d8",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Oxidative dealkylation reactions like that catalyzed by CYP521A1 are known from other cytochrome P450s in plants, including angelicin synthase, secologanin synthase, DMNT/TMTT synthase, and psoralene synthase. Geosmin biosynthesis involves a bifunctional terpene synthase with oxidative cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 provide literature context for the CYP521A1 reaction mechanism. All claims are supported by appropriate citations. This contextualizes the novel finding within known biochemistry and suggests mechanistic precedents, though the specific mechanism for CYP521A1 remains to be fully elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "f2db092c-ed27-443f-b67d-4264e01c56f5",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Discodiene is a volatile compound that may function as a component of the volatile bouquet regulating D. discoideum development. Other metabolites known to regulate Dictyostelium development include polyketides, GABA, cyclic diguanylate, discadenine, and steroids, but discodiene differs in being volatile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 provide context for interpreting the developmental phenotype. The claim that discodiene is volatile is supported by its detection in headspace analysis. The incomplete developmental block in the DdTPS8 mutant (C74) suggests discodiene is not absolutely required but may modulate developmental timing. The comparison to other developmental regulators is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "28707247-5dd7-4e87-8c83-34cd647b8f61",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The organization of terpene synthase and CYP genes as metabolic gene clusters has been documented in bacteria, fungi, and plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 provide literature context showing that TPS-CYP clustering is a known phenomenon across multiple kingdoms. This is appropriately cited and contextualizes the D. discoideum findings within broader patterns of secondary metabolite gene organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "fde5169f-05ee-4146-a479-7c6478db5d4b",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on terpenoid diversity and Dictyostelium biology: Terpenoids are the largest class of natural products (>80,000 structures), found mainly in plants but also in bacteria, fungi, and dictyostelid social amoebae. D. discoideum and D. purpureum produce species-specific sesquiterpenes during multicellular development, but their biological functions are unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide background context supported by appropriate citations. These establish the significance of studying terpenoid biosynthesis in Dictyostelium and frame the research questions. All claims are either cited to prior literature or represent established knowledge about Dictyostelium biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "c826d720-bed1-4aff-ac71-5410fde1c1df",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior characterization of D. discoideum terpene synthases: The genome contains nine DdTPS genes, all expressed during multicellular development. Biochemical characterization showed terpene synthase activity for all enzymes, and products of DdTPS1-7 and DdTPS9 were detected in vivo. DdTPS8 has sesquiterpene synthase activity and high expression, but its product was not detected in volatiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C21 summarize prior work (primarily Chen et al., 2016) that motivated the current study. The discrepancy between DdTPS8's high expression and the absence of its product in volatile profiles (C20-C21) provides the key observation leading to the hypothesis that the product is modified in vivo.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "1628c6af-28f1-4d8b-bfec-c9e9bb38f8b9",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Main findings summary: CYPs catalyze oxidative reactions on terpenoid substrates. DdTPS8 and CYP521A1 are physically clustered on chromosome 6, and CYP521A1 modifies the DdTPS8 product to produce discodiene. A DdTPS8 knockout shows slower developmental progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 and C27 summarize the main findings of the manuscript. These are supported by the detailed experimental evidence presented in other claim groups. C22-C23 provide biochemical context, while C24-C25 and C27 state the key discoveries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    },
+    {
+      "id": "42966854-f94f-4b4d-82ab-7011630cd702",
+      "content_id": "685b45d6-c43a-4871-87b8-c80439de0ea8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Methods and materials: The D. discoideum genome contains 40 PKS genes. The DdTPS8 mutant was obtained from the GWDI Project and contains a blasticidin resistance cassette insertion at nucleotide 544-545 of the DdTPS8 ORF, verified by sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 describe methodological details. The mutant characterization (C83-C84) is supported by sequencing data (Figure 2A and supplement). C82 provides context about the potential for natural product diversity in D. discoideum by citing the number of PKS genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:59:38.512759Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "017860fd-c305-4471-adb9-f9fd566bff5c",
+      "result_id": "36350362-9c6c-4b0c-ad67-d66814fa768c"
+    },
+    {
+      "claim_id": "ea65e42c-15a0-4869-a0f1-f6ced46b7b05",
+      "result_id": "36350362-9c6c-4b0c-ad67-d66814fa768c"
+    },
+    {
+      "claim_id": "40b937ee-5da3-46eb-8471-426d850906e5",
+      "result_id": "36350362-9c6c-4b0c-ad67-d66814fa768c"
+    },
+    {
+      "claim_id": "457ba3bc-88a2-4eae-80dc-e7f1ce81635d",
+      "result_id": "36350362-9c6c-4b0c-ad67-d66814fa768c"
+    },
+    {
+      "claim_id": "a95bfa75-8e19-4279-9120-b69019e57b34",
+      "result_id": "36350362-9c6c-4b0c-ad67-d66814fa768c"
+    },
+    {
+      "claim_id": "adc60a61-a37f-4e45-b1f4-d637b6a2e694",
+      "result_id": "25903fff-3c40-4a0b-bb7f-bfd8baed775a"
+    },
+    {
+      "claim_id": "12d13008-8eeb-4f34-b707-88c5ff6ba7a5",
+      "result_id": "25903fff-3c40-4a0b-bb7f-bfd8baed775a"
+    },
+    {
+      "claim_id": "f81b0e11-0d0b-4dc6-89ff-a29087122cc7",
+      "result_id": "25903fff-3c40-4a0b-bb7f-bfd8baed775a"
+    },
+    {
+      "claim_id": "277bb512-6bc5-49a8-a34f-9364e0f4e4c4",
+      "result_id": "1daec18c-b01f-4f49-a42b-3d1381f5ecfc"
+    },
+    {
+      "claim_id": "dad77691-7d97-4128-ac04-9d90d506e7d6",
+      "result_id": "1daec18c-b01f-4f49-a42b-3d1381f5ecfc"
+    },
+    {
+      "claim_id": "0c466d7b-eba7-46ab-b063-f89fe439675d",
+      "result_id": "1daec18c-b01f-4f49-a42b-3d1381f5ecfc"
+    },
+    {
+      "claim_id": "f8e3242c-2451-468f-a4be-377220800435",
+      "result_id": "1daec18c-b01f-4f49-a42b-3d1381f5ecfc"
+    },
+    {
+      "claim_id": "d3246ca0-2a27-4039-82d3-e74403d57de1",
+      "result_id": "1daec18c-b01f-4f49-a42b-3d1381f5ecfc"
+    },
+    {
+      "claim_id": "be0bbca6-999e-4d7e-ba66-af0a3f83cc0f",
+      "result_id": "1daec18c-b01f-4f49-a42b-3d1381f5ecfc"
+    },
+    {
+      "claim_id": "88de539d-00ac-4ef6-aacf-b4f3d123c591",
+      "result_id": "dc64c938-d10d-4cc1-9a6b-0c85fc374e2e"
+    },
+    {
+      "claim_id": "8d3ec622-9646-4754-9cdd-f14cb4a40ea9",
+      "result_id": "dc64c938-d10d-4cc1-9a6b-0c85fc374e2e"
+    },
+    {
+      "claim_id": "66ef64bf-1f17-4f1c-a7b6-7bf73bb9ab89",
+      "result_id": "dc64c938-d10d-4cc1-9a6b-0c85fc374e2e"
+    },
+    {
+      "claim_id": "95515ec3-eb2c-4a15-beb4-d71ffbf4fc6f",
+      "result_id": "ec7a196c-3b4e-43db-a5d7-22c7ecfa27cc"
+    },
+    {
+      "claim_id": "44cb616c-13d2-4826-8b01-4690b7a393c5",
+      "result_id": "ec7a196c-3b4e-43db-a5d7-22c7ecfa27cc"
+    },
+    {
+      "claim_id": "30f2b170-d114-4119-aa0a-5653fb8fcbab",
+      "result_id": "ec7a196c-3b4e-43db-a5d7-22c7ecfa27cc"
+    },
+    {
+      "claim_id": "c0308bd7-f5f6-4fa4-b73d-81f8964a9a6f",
+      "result_id": "7216789e-2426-456c-8378-ec9d2e838fdc"
+    },
+    {
+      "claim_id": "ee0fc788-1053-425f-bc92-27c68eb40b44",
+      "result_id": "7216789e-2426-456c-8378-ec9d2e838fdc"
+    },
+    {
+      "claim_id": "ce111a01-a4fe-4a06-b58f-a89827c68709",
+      "result_id": "7216789e-2426-456c-8378-ec9d2e838fdc"
+    },
+    {
+      "claim_id": "7d08588c-6b05-4f9b-a862-4213bc56e2d1",
+      "result_id": "7216789e-2426-456c-8378-ec9d2e838fdc"
+    },
+    {
+      "claim_id": "39e5bcf0-d4c4-487e-bfab-e60d74732029",
+      "result_id": "7216789e-2426-456c-8378-ec9d2e838fdc"
+    },
+    {
+      "claim_id": "0db4753e-0777-4be3-8c7c-e1581e65aace",
+      "result_id": "7216789e-2426-456c-8378-ec9d2e838fdc"
+    },
+    {
+      "claim_id": "bc38478b-8943-4d07-bba0-90901f1f160f",
+      "result_id": "7216789e-2426-456c-8378-ec9d2e838fdc"
+    },
+    {
+      "claim_id": "f048fb37-0a78-49b8-a58e-3270eb85d04e",
+      "result_id": "03007f50-e100-4cc1-b39d-fa32a1c30288"
+    },
+    {
+      "claim_id": "30ddd8ac-2754-4c79-aa3d-cea6800650e6",
+      "result_id": "03007f50-e100-4cc1-b39d-fa32a1c30288"
+    },
+    {
+      "claim_id": "3d68dd67-1cfa-4a1e-96bc-89f2938770bf",
+      "result_id": "03007f50-e100-4cc1-b39d-fa32a1c30288"
+    },
+    {
+      "claim_id": "1f525cfa-d6b8-44df-9f9a-4e2bac015ce0",
+      "result_id": "1c48f0ed-75d8-48b1-9ed2-d3e9afa16938"
+    },
+    {
+      "claim_id": "e62dc696-175e-44d8-bec1-57eb7d737473",
+      "result_id": "1c48f0ed-75d8-48b1-9ed2-d3e9afa16938"
+    },
+    {
+      "claim_id": "76da2824-4494-4eb3-adaf-8d1a1778ee75",
+      "result_id": "1c48f0ed-75d8-48b1-9ed2-d3e9afa16938"
+    },
+    {
+      "claim_id": "945a49e5-8678-4b2d-a12f-ffdea3ad0bb2",
+      "result_id": "614510ed-765c-4f4e-9931-791fe6f6a3bb"
+    },
+    {
+      "claim_id": "1ab53fee-1af7-4f8f-84d4-67e68ccb9ee5",
+      "result_id": "614510ed-765c-4f4e-9931-791fe6f6a3bb"
+    },
+    {
+      "claim_id": "2242fe54-c350-4392-bf2a-9f3bbc20a648",
+      "result_id": "614510ed-765c-4f4e-9931-791fe6f6a3bb"
+    },
+    {
+      "claim_id": "bd7bf659-c546-4b76-ba08-6079f0d38098",
+      "result_id": "614510ed-765c-4f4e-9931-791fe6f6a3bb"
+    },
+    {
+      "claim_id": "faef6ed0-9a8c-4ea3-849c-b5e96e8b8312",
+      "result_id": "a952c438-1129-4c22-8c72-0e50cab72351"
+    },
+    {
+      "claim_id": "adda634c-342f-4be0-8f08-bd7d5f9c90a0",
+      "result_id": "a952c438-1129-4c22-8c72-0e50cab72351"
+    },
+    {
+      "claim_id": "e9042fa6-cead-4971-9e8d-df011722e9c0",
+      "result_id": "a952c438-1129-4c22-8c72-0e50cab72351"
+    },
+    {
+      "claim_id": "09117e8d-063c-4283-ba75-25c92bef9734",
+      "result_id": "69818e15-3dc0-4f90-a8a7-a099437304d8"
+    },
+    {
+      "claim_id": "a3877f39-a759-435a-b080-395b6070fadb",
+      "result_id": "69818e15-3dc0-4f90-a8a7-a099437304d8"
+    },
+    {
+      "claim_id": "11cd1e44-64d1-47d0-a974-930d67a410be",
+      "result_id": "69818e15-3dc0-4f90-a8a7-a099437304d8"
+    },
+    {
+      "claim_id": "b2a4bf89-3f5e-4e77-9598-1b599a7eed85",
+      "result_id": "69818e15-3dc0-4f90-a8a7-a099437304d8"
+    },
+    {
+      "claim_id": "c9e2c518-b899-4696-a62c-6d74881ead74",
+      "result_id": "69818e15-3dc0-4f90-a8a7-a099437304d8"
+    },
+    {
+      "claim_id": "2450133f-23e6-4f01-a22a-d506e694ebda",
+      "result_id": "69818e15-3dc0-4f90-a8a7-a099437304d8"
+    },
+    {
+      "claim_id": "c4a42ed6-6ea4-4a00-af0d-3cc2238b9712",
+      "result_id": "f2db092c-ed27-443f-b67d-4264e01c56f5"
+    },
+    {
+      "claim_id": "25863836-d034-49c5-948c-80e8c658b40a",
+      "result_id": "f2db092c-ed27-443f-b67d-4264e01c56f5"
+    },
+    {
+      "claim_id": "802a7fe3-9347-464c-b45d-2d1a129ee8cb",
+      "result_id": "f2db092c-ed27-443f-b67d-4264e01c56f5"
+    },
+    {
+      "claim_id": "98e0b386-c9e4-42ce-9857-4863146c6f13",
+      "result_id": "f2db092c-ed27-443f-b67d-4264e01c56f5"
+    },
+    {
+      "claim_id": "d7807f01-4748-4dc2-b7e2-10fdfbc8964a",
+      "result_id": "f2db092c-ed27-443f-b67d-4264e01c56f5"
+    },
+    {
+      "claim_id": "6d625cb6-e776-4d94-b308-a63e68294d22",
+      "result_id": "28707247-5dd7-4e87-8c83-34cd647b8f61"
+    },
+    {
+      "claim_id": "da5fef7c-6857-475f-a131-389a5555d06f",
+      "result_id": "28707247-5dd7-4e87-8c83-34cd647b8f61"
+    },
+    {
+      "claim_id": "79576a1a-767b-4791-b44d-e5bd28e4edb6",
+      "result_id": "28707247-5dd7-4e87-8c83-34cd647b8f61"
+    },
+    {
+      "claim_id": "48b849fb-9fcd-44f4-9584-c18c410134dd",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "06701408-38ae-4ce8-9c18-7b9612ca86da",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "6e342c0b-e10f-4bd2-bf0e-2e3e1dd79059",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "24f9ad8c-b19b-4b4f-881f-35da3b7a8596",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "74f2ffe0-153b-4ee1-9a61-a5c2e04687b0",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "fa4e37dc-7723-4ed6-b3f1-c2decc623131",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "8f31c6cc-ce42-484f-b185-98c9e636e582",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "6fa1388e-8fac-4a5c-8ec6-f8d4d1f29ad6",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "fe6032e9-5712-4fd4-a9b3-285c42e893d7",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "41527d2b-6e1e-499c-8b32-cddc0cd560e9",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "55eb2852-da8f-4fd8-8494-5a508bb603ff",
+      "result_id": "fde5169f-05ee-4146-a479-7c6478db5d4b"
+    },
+    {
+      "claim_id": "73920390-764f-4ca2-9fea-b4a8fdbc3edf",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "809bb6d7-b23b-4a8e-a743-5f03bc796abe",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "3940a1c2-0515-4951-bd70-3f003e5566d8",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "89d422db-d5fa-4da7-811a-157ee3257378",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "3c664f17-d7a0-430d-b441-f1349a561789",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "2a564589-13ab-4d62-b5fa-d51cdf3fe876",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "4eac23d3-6834-411d-a3d3-21f6d32e5f03",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "b51c3146-fed8-4cac-aa0b-c6b50a77cfb5",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "4ab01358-74fa-49a2-a078-d5b6896120af",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "dbf8c3d7-8187-46d1-a58c-b27fc6f92572",
+      "result_id": "c826d720-bed1-4aff-ac71-5410fde1c1df"
+    },
+    {
+      "claim_id": "1aceeb2e-84b0-4acb-8d0a-6bfa7c59f94c",
+      "result_id": "1628c6af-28f1-4d8b-bfec-c9e9bb38f8b9"
+    },
+    {
+      "claim_id": "4a2487f8-b9bf-4110-8156-7e1fc5114af9",
+      "result_id": "1628c6af-28f1-4d8b-bfec-c9e9bb38f8b9"
+    },
+    {
+      "claim_id": "cdb21260-2cf6-4724-913e-43a12410da71",
+      "result_id": "1628c6af-28f1-4d8b-bfec-c9e9bb38f8b9"
+    },
+    {
+      "claim_id": "83cc1019-48ee-4e50-afb8-f523ff641866",
+      "result_id": "1628c6af-28f1-4d8b-bfec-c9e9bb38f8b9"
+    },
+    {
+      "claim_id": "44e05b7f-3772-4389-b94e-7b8c1eeaf3a1",
+      "result_id": "1628c6af-28f1-4d8b-bfec-c9e9bb38f8b9"
+    },
+    {
+      "claim_id": "4ab66cd1-7762-44ee-a0ce-04412a4bde3e",
+      "result_id": "42966854-f94f-4b4d-82ab-7011630cd702"
+    },
+    {
+      "claim_id": "cf42ebc7-edba-4976-baa6-5dfbd2a9f842",
+      "result_id": "42966854-f94f-4b4d-82ab-7011630cd702"
+    },
+    {
+      "claim_id": "fb4c6d97-c68b-4c37-8bce-6e2974e50ed9",
+      "result_id": "42966854-f94f-4b4d-82ab-7011630cd702"
+    }
+  ],
+  "comparisons": []
+}

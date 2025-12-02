@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors established a dynamic SILAC labeling system in primary hippocampal neurons where cells were grown in light medium for 18-19 DIV, then switched to heavy medium containing isotopically labeled arginine and lysine. Neurons were treated with BIC (to induce down-scaling) or TTX (to induce up-scaling) for 1, 3, or 7 days, and heavy peptides could be robustly detected and quantified even after 1 day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 describe the experimental methodology using dynamic SILAC labeling. The approach is well-established (C2, C6 cite prior work), the treatments are appropriately chosen based on literature (C3, C4), and the time points are clearly defined (C5). This represents a sound methodological foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Electrophysiological validation confirmed that BIC treatment induced homeostatic down-scaling (significantly decreased mEPSC amplitudes, p=0.009) and TTX treatment induced homeostatic up-scaling (significantly increased mEPSC amplitudes, p=0.005) after 7 days, demonstrating sustained homeostatic scaling throughout the experiment duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 provide critical validation that the pharmacological treatments produced the expected physiological effects. The electrophysiological measurements with appropriate statistical tests (unpaired t-tests with significant p-values) and sustained effects over 7 days strongly support that homeostatic scaling was successfully induced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Protein half-life analysis revealed that under basal conditions the median protein half-life was 5.3 days (consistent with prior work), which significantly shifted to longer half-lives during TTX-induced up-scaling (5.7 days, p<0.001) and even more during BIC-induced down-scaling (6.1 days, p<0.001), demonstrating that neuronal proteome dynamics are affected by homeostatic scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 present statistically significant changes in protein half-lives with appropriate statistical tests (Mann-Whitney) and consistency with prior literature (C10). The conclusion that proteome dynamics are affected by homeostatic scaling (C13) is well-supported by the quantitative data showing significant shifts in half-life distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "During BIC-induced homeostatic down-scaling, 7150 proteins were identified total, with 3596 quantified after filtering. Of these, 43% showed changes in protein synthesis and/or degradation, with regulation biased toward decreased synthesis (703 proteins) and decreased degradation (496 proteins), while only 18 proteins showed increased synthesis. This suggests that reduced protein degradation and synthesis are the preferred mechanisms for down-scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 provide comprehensive quantitative data on protein regulation during down-scaling. The large dataset (7150 proteins identified, 3596 quantified after stringent filtering) and clear quantification of different regulation patterns support the conclusion (C23) that decreased synthesis/degradation are preferred mechanisms. The data quality appears robust with appropriate filtering criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "During TTX-induced homeostatic up-scaling, 31% of quantified proteins (3609 total) showed changes in synthesis and/or degradation. Similar to down-scaling, the largest groups were proteins with decreased synthesis (503 proteins) and decreased degradation (332 proteins), suggesting that reduced protein degradation and synthesis might be generally preferred mechanisms for long-term proteomic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 demonstrate similar regulatory patterns during up-scaling as observed during down-scaling. The quantitative data (C24-C26) support the interpretation (C27-C28) that decreased synthesis/degradation are generally preferred mechanisms. However, C27-C28 are somewhat speculative as they generalize beyond the specific experimental conditions tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Western blot analysis using AHA labeling confirmed that protein synthesis was significantly reduced during BIC-induced down-scaling after 24 hr, and slightly (non-significantly) decreased during TTX-induced up-scaling. This correlated with significantly increased phosphorylation of eIF2\u03b1 at Ser51 after 24 hr of both BIC (p<0.001) and TTX (p<0.01) treatment, consistent with the known role of eIF2\u03b1 phosphorylation in translation inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 provide orthogonal validation of the SILAC-MS findings using western blot analysis. The eIF2\u03b1 phosphorylation data (C31-C32) with significant p-values provide a mechanistic explanation for the observed decrease in protein synthesis. The correlation between eIF2\u03b1 phosphorylation and decreased synthesis (C34) is well-supported, and the established knowledge about eIF2\u03b1 function (C33) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Despite general translation inhibition by eIF2\u03b1 phosphorylation, mRNAs containing upstream open reading frames (uORFs) in their 5'-UTRs show paradoxically increased translation. Consistent with this, uORF-containing genes were significantly over-represented among proteins showing increased synthesis during TTX treatment (p<0.05) and significantly under-represented among proteins not showing increased synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 connect established molecular mechanisms (C35, from literature) with the current findings. The enrichment analysis (C36-C37) with significant p-values supports the hypothesis that eIF2\u03b1 phosphorylation selectively enhances translation of uORF-containing transcripts. This provides mechanistic insight into how specific proteins can be upregulated despite global translation inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "No changes in proteasome activity or ongoing autophagy were detected during homeostatic scaling. Visual inspection showed no signs of cellular stress or apoptosis, and analysis of the apoptotic marker Caspase-3 showed no increased degradation in treated cultures, indicating that treatments did not impair cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide important negative controls demonstrating that the observed changes in protein degradation are not due to global changes in degradation machinery or cellular stress/apoptosis. The multiple lines of evidence (proteasome assay, autophagy markers, visual inspection, Caspase-3 analysis) strengthen confidence that the observed effects are specific to homeostatic scaling rather than general cellular dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C96",
+      "C97"
+    ],
+    "result": "Synaptic proteins were especially affected by homeostatic scaling, with 59% (177/301 proteins) showing changes during BIC-induced down-scaling and 52% (158/302 proteins) during TTX-induced up-scaling. Most synaptic proteins were down-regulated during BIC treatment, primarily through decreased protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47, C96-C97 demonstrate that synaptic proteins are disproportionately affected by homeostatic scaling. The quantitative data showing >50% of synaptic proteins regulated is substantial and supports the conclusion that synaptic proteins are 'especially affected.' The mechanism of regulation (primarily decreased synthesis during down-scaling) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The AMPAR subunits GluA1 and GluA3 showed decreased synthesis during BIC-induced down-scaling but no significant change in degradation. With basal half-lives of 2.8 and 3.5 days respectively, long-lasting changes in AMPAR surface expression during down-scaling are likely accomplished by continuous degradation at unchanged rates combined with decreased supply of newly synthesized proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 provide specific mechanistic insight into AMPAR regulation during homeostatic scaling. The data on synthesis changes (C48), lack of degradation changes (C49), and measured half-lives (C50-C51) support the mechanistic interpretation (C52). This is consistent with prior literature on AMPAR surface expression changes (C48 cites relevant work) and provides new molecular detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "During TTX-induced up-scaling, increased synthesis was observed for GluA1 (but not GluA2/GluA3), and vGluT1 was up-regulated by both increased synthesis and decreased degradation while vGluT2 showed increased synthesis. During BIC-induced down-scaling, vGluT1 synthesis decreased, potentially lowering vesicular neurotransmitter levels and contributing to decreased mEPSC amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe specific regulation of key synaptic proteins (AMPARs and glutamate transporters) with patterns consistent with the physiological outcomes (increased/decreased mEPSC amplitudes). The data are consistent with prior literature on AMPAR surface expression (C53 cites relevant work) and vGluT function in presynaptic mechanisms. The interpretation linking vGluT1 decrease to mEPSC amplitude changes (C55) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C114"
+    ],
+    "result": "The strongest up-regulation during BIC-induced down-scaling was observed for Bdnf and Pcdh8, both showing increased synthesis and decreased degradation. Bdnf is an established regulator of homeostatic scaling that negatively regulates up-scaling, while Pcdh8 binds N-cadherin to promote endocytosis and weaken synaptic connections. The data suggest Pcdh8 expression might bidirectionally regulate synaptic strength during homeostatic scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60, C114 identify specific proteins with strong regulation and connect them to established functions in synaptic plasticity. The data on Bdnf and Pcdh8 regulation (C56-C57) are clear, and the cited literature (C58-C60) supports their known roles. The interpretation about Pcdh8's bidirectional role (C114) is reasonable given the observed opposite regulation during up- vs down-scaling, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Analysis of protein abundance changes revealed 208 proteins decreased and 185 increased during BIC-induced down-scaling, while 459 increased and 493 decreased during TTX-induced up-scaling. Fewer proteins showed significant abundance changes compared to synthesis/degradation analysis because many proteins showed coordinated changes in both synthesis and degradation (leading to slower turnover without abundance changes), and because independent analysis of nascent/pre-existing proteomes is more sensitive to small changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 explain an important observation about the relationship between synthesis/degradation changes and abundance changes. The quantitative data (C61-C62) are clear, and the explanations (C64-C65) for why fewer proteins show abundance changes are logical and well-reasoned. This demonstrates the value of separately analyzing synthesis and degradation rather than only measuring abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Comparison of BIC and TTX treatments revealed distinct protein sets regulated exclusively by each treatment (197 for BIC, 735 for TTX), but significantly more proteins than expected by chance (194 proteins) were regulated by both treatments. Proteins showing the same regulation in both conditions might be 'general plasticity proteins' sensing activity offsets regardless of direction, while those showing opposite regulation might be 'polarity proteins' determining the direction of compensatory scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 provide important insights into common vs. specific mechanisms of homeostatic scaling. The quantitative data (C66, C68-C72) with statistical testing (Fisher's exact test, C68) support the observation of both shared and distinct regulation. The interpretations about 'general plasticity proteins' (C73) and 'polarity proteins' (C74) are reasonable hypotheses based on the data, though somewhat speculative and would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Analysis of regulation patterns revealed that most over-represented combinations involve changes in protein synthesis for both treatments, suggesting that changes in the nascent proteome mainly drive homeostatic scaling and determine its polarity, consistent with the requirement for protein synthesis in homeostatic scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 synthesizes the regulation pattern data to propose that protein synthesis changes are the primary driver of homeostatic scaling. This is supported by the enrichment analysis showing synthesis changes in most over-represented combinations, and is consistent with prior literature showing protein synthesis is required for homeostatic scaling (cited in C75). The conclusion is well-supported though the relative importance of synthesis vs. degradation could be debated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Temporal analysis revealed distinct dynamics during BIC vs. TTX treatment. After 1 day of BIC treatment, >600 proteins showed changed synthesis with ~20% average reduction, and synthesis regulation decreased over time while degradation regulation increased. During TTX treatment, numbers of proteins with regulated synthesis increased over time, showing average decreases with strongest effects at 3 days, while degradation regulation strength increased over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 describe temporal dynamics of protein regulation during homeostatic scaling. The quantitative data are clearly presented with specific numbers and time points. The opposite temporal patterns for BIC (early synthesis changes, later degradation changes) vs. TTX (increasing synthesis changes over time) suggest different temporal mechanisms for up- vs. down-scaling. The data are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Clustering analysis of temporal profiles identified distinct groups of proteins with different regulation patterns. During BIC-induced down-scaling, 192 proteins showed persistent decreased synthesis (e.g., PSD-95), 184 showed early transient changes (e.g., Cpg2), and 337 showed intermediate peak changes (e.g., DAP-2), with no cluster showing increasing regulation strength over time. During TTX-induced up-scaling, no persistent or early peak clusters were observed, but proteins showed intermediate (231), intermediate-late (287), or late (294) peak changes, with 135 proteins showing increasing regulation strength over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C94 present results from clustering analysis revealing temporal heterogeneity in protein regulation. The quantitative data on cluster sizes and specific protein examples are clearly presented. The contrasting temporal patterns between BIC (early changes, decreasing strength) and TTX (later changes, increasing strength) suggest fundamentally different temporal mechanisms. The clustering approach is appropriate for identifying patterns in complex temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C98",
+      "C99",
+      "C144",
+      "C145"
+    ],
+    "result": "The study demonstrates that the neuronal proteome was massively remodeled during both homeostatic up- and down-scaling, with large fractions showing changes in protein synthesis and/or degradation. Most proteins exhibited decreased synthesis or degradation, while only a few showed increased synthesis rates. More than half of quantified synaptic proteins were regulated, including both pre- and postsynaptic proteins with diverse functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C98-C99, C144-C145 summarize the major findings of the study. These high-level conclusions are well-supported by the extensive quantitative data presented throughout the manuscript (43% of proteins regulated during down-scaling, 31% during up-scaling, >50% of synaptic proteins regulated). The characterization as 'massive remodeling' is justified by the scale of changes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors propose that decreased protein synthesis or degradation might be a generally preferred mechanism for long-term proteomic changes in neurons because it is more energy-saving than increased synthesis or degradation. This is relevant because the brain's energy budget is limited, with most energy required for signaling, and reduced housekeeping costs (including protein synthesis/degradation) provide a cognitive advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C103 present an energy-based hypothesis to explain the observed preference for decreased synthesis/degradation. While the observation of this preference is well-supported by the data, the energy-saving explanation (C101) is speculative and not directly tested. The general statements about brain energetics (C102-C103, citing Engl and Attwell 2015) are established knowledge, but the specific connection to the observed protein regulation patterns is inferential and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors place their findings in context of prior work showing that eIF2\u03b1 phosphorylation underlies mGluR-LTD, that bidirectional transcriptional regulation occurs after BIC/TTX treatment, and that microRNAs critically regulate homeostatic up- and down-scaling by controlling the pool of translatable mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 cite relevant prior literature to contextualize the current findings. These are accurate representations of established knowledge from the cited papers. This contextual information helps interpret the current results within the broader framework of synaptic plasticity mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The authors infer that protein degradation is regulated at the level of ubiquitin ligation by specific E3 ligases during homeostatic scaling, based on the observation that degradation changes occur without changes in proteasome activity or autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 presents a reasonable inference from the negative results for proteasome activity and autophagy (C38-C39). If degradation rates change but the degradation machinery is unchanged, regulation must occur at the substrate selection level (E3 ligases). This is a logical deduction, though direct evidence for E3 ligase involvement would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study observed extensive changes in both postsynaptic and presynaptic proteins, suggesting both sides of the synapse are modified during homeostatic scaling. While postsynaptic AMPAR regulation is well-established, presynaptic mechanisms (such as enhanced vGluT expression enabling increased neurotransmitter packaging) also contribute to homeostatic scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 synthesize the findings on pre- and postsynaptic protein regulation with established knowledge. The observation of extensive pre- and postsynaptic changes (C109) is supported by the data in Figures 4-5. The contextual information about established mechanisms (C110-C113) accurately represents prior literature and helps interpret the significance of observing both pre- and postsynaptic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors note that GluA2-lacking receptors have higher Ca2+ permeability and conductance than GluA2-containing receptors, and increased GluA2-lacking AMPAR contribution has been observed during activity blockade. They also identify Nos1 (required for LTP) as up-regulated during TTX-induced up-scaling and suggest Nos1/NO signaling might link presynaptic and postsynaptic mechanisms of homeostatic scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 connect specific protein regulation findings (differential regulation of AMPAR subunits, Nos1 upregulation) with established functional properties from the literature. The data on Nos1 regulation (C118) are clear, and the speculation about its role linking pre- and postsynaptic mechanisms (C119) is reasonable given NO's known signaling properties, though functional validation would strengthen this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "The authors propose that proteins regulated only at early time points or showing decreasing regulation strength (e.g., Bdnf) might play roles in initiating homeostatic scaling, while proteins permanently regulated (e.g., PSD-95) might be involved in maintaining the scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 present reasonable hypotheses about functional roles based on temporal regulation patterns. The temporal data supporting these patterns are well-documented (e.g., C88 for Bdnf, C85 for PSD-95). The functional interpretations are logical but speculative and would require experimental manipulation (e.g., temporal knockdown experiments) to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors emphasize methodological advantages of their approach: the semi-heavy internal standard enabled correction for experimental variation, yielding a high-precision dataset that could quantify even small changes with statistical significance. They argue that small changes detected in whole-cell lysates might be biologically relevant due to strong local impacts in specific neuron types or subcellular locations, and note that many regulated proteins were previously implicated in synaptic plasticity while others represent novel candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 discuss methodological strengths and interpretation of findings. The use of internal standards (C122) is a well-established approach for improving quantification precision. The argument about biological relevance of small changes (C124) is reasonable though speculative. The validation by prior literature (C125) and identification of novel candidates (C126) are supported by the data and appropriate literature citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The introduction establishes that long-lasting synaptic changes require protein synthesis and degradation (demonstrated by inhibitor studies blocking memory formation), that homeostatic scaling is a compensatory mechanism adjusting synaptic strength via AMPAR trafficking, and that while candidate-based studies have examined specific proteins, systematic analysis of synthesis and degradation contributions to proteome changes during synaptic plasticity has been lacking. The authors position their work as the most comprehensive analysis of proteome dynamics during homeostatic scaling to date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C143 provide background context from the literature and position the current study. The cited prior work (C127-C141) accurately represents established knowledge about protein synthesis/degradation requirements, homeostatic scaling mechanisms, and prior proteomic studies. The identification of a gap in systematic analysis (C142) is accurate, and the claim of comprehensiveness (C143) is supported by the scale of the dataset (7150 proteins identified, temporal analysis, separate quantification of synthesis and degradation).",
+    "result_type": "MINOR"
+  }
+]

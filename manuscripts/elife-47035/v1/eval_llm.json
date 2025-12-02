@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors developed an Orientation Variance (OV) model that computes variance across spatially pooled orientation channels within a population receptive field (pRF). This model accurately predicts narrowband gamma oscillation amplitude across 86 images, explaining 75% of cross-validated variance across electrodes, significantly outperforming the SOC model (62%) and a mean model (26%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C46-C53, C57-C59 collectively demonstrate the development and validation of the OV model. The model's computational approach is clearly described (C46, C49-C51), parameters are specified (C53, C57), and quantitative performance metrics with statistical significance are provided (C52, C58-C59). Cross-validation was used to prevent overfitting, and the model significantly outperforms alternatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C26",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Narrowband gamma responses are much sparser than broadband ECoG responses, being large only for high-contrast gratings and relatively small or within experimental noise for most other stimuli (noise patterns, curved textures). This sparseness was consistently observed across all 15 electrodes from three subjects spanning V1-V3, and differs dramatically from both broadband ECoG and fMRI BOLD responses which show robust responses to most high-contrast stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C26, C32-C34, C36-C39, C41-C42, C68-C72 provide converging evidence for the sparseness of gamma responses. The finding is replicated across all electrodes (C72), includes appropriate controls showing broadband responses to the same stimuli (C70-C71), uses statistical testing (C39), and demonstrates consistency across subjects and visual areas. The comparison with broadband and BOLD responses strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C43",
+      "C44",
+      "C45",
+      "C60",
+      "C61"
+    ],
+    "result": "The Second-Order Contrast (SOC) model, previously developed for fMRI, accurately predicts broadband ECoG responses, explaining 80% of cross-validated variance across 15 electrodes. This model significantly outperforms the OV model (24%) and a mean model (41%) for broadband responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C43-C45, C60-C61 demonstrate that the SOC model successfully predicts broadband responses. The model is well-established (C43-C44), quantitative performance metrics are provided (C45, C60-C61), cross-validation was used, and statistical significance is reported (C60-C61). The strong performance and model comparison support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C27",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The differential performance of the SOC and OV models for broadband versus gamma responses suggests that fundamentally different computations underlie these two signal types. The models differ in their order of operations: SOC sums across orientation then computes spatial variance (blind to orientation variance), while OV sums across space within orientation bands then computes variance across orientations (blind to spatial variance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C27, C76-C82 provide a clear mechanistic explanation for why different models are needed. The computational differences are well-described (C77-C80), the models share a common first stage (C76), and their distinct sensitivities are explained (C79-C82). The model comparison results (from previous result group) provide strong empirical support for this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Gamma oscillations in visual cortex serve as a biomarker of gain control rather than being a fundamental mechanism for communicating visual information. Large-amplitude gamma oscillations are found for stimuli with high contrast, large spatial extent, and few orientations\u2014all properties associated with gain control or suppression in neuronal circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C109-C118 link the stimulus properties that drive gamma (from empirical results) to known mechanisms of gain control. Multiple lines of evidence connect each stimulus property to gain control mechanisms (C111-C115), with support from prior literature (C111-C115, C117-C118). However, the authors appropriately acknowledge that correlation does not establish causation (C119-C120), making this a well-supported but cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C55"
+    ],
+    "result": "The OV model is sensitive to the distribution of contrast energy across orientations within the pRF but not to image structure remote from the pRF, making it critical to consider the precise receptive field location when investigating gamma oscillations. Stimuli varying systematically in spatial position (images 1-38) induced very little gamma response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C55 describe an important property of the OV model and its implications. The model's spatial specificity is demonstrated by the lack of gamma response to spatially varying stimuli (C55), which also explains why pRF parameters couldn't be fit from gamma responses alone. Figure 8 provides visual evidence supporting the importance of pRF location (C64).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "When applied to natural images, the OV model predicts that gamma oscillations are generally strikingly low compared to high-contrast gratings, though natural images occasionally have oriented high-contrast energy within the pRF that gives rise to large OV output. For most natural gray-scale images, relatively low levels of gamma oscillations are expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe model predictions for natural images, supported by simulations shown in Figure 9. The predictions are conditional on the model's accuracy (C67 explicitly states this), and the findings are consistent with prior observations of gamma responses to natural images (C65 cites relevant work). The conclusion is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The highly specific stimulus selectivity of narrowband gamma raises questions about proposed cognitive functions. If gamma oscillations were a leading cause of visual awareness or feedforward communication, oscillations should be observed for any clearly visible stimulus. However, stimuli like circular patterns that elicit robust fMRI/broadband signals and would be expected to elicit strong multiunit responses show no detectable gamma, yet evoke large BOLD signals in higher visual areas like hV4, suggesting gamma is unlikely to be the primary means of communicating long-range feedforward visual information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 present a logical argument against certain functional theories of gamma oscillations. The reasoning is sound: visible stimuli that drive downstream areas but lack gamma responses (C101-C104) challenge theories requiring gamma for visual communication (C100, C105). The authors appropriately acknowledge limitations (C106-C107) and note that large oscillations likely have some functional impact (C108), making this a balanced critical evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "ECoG data were recorded from 15 electrodes (6, 2, and 7 from three subjects) over V1-V3 in human subjects viewing 86 grayscale images. The ECoG response was separated into broadband (30-200 Hz) and narrowband gamma (30-80 Hz) components by modeling the log-power/log-frequency spectrum as the sum of a linear baseline, a constant, and a Gaussian. These components overlap in frequency but are distinguished by spectral patterns and do not depend on one another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C28-C31, C142-C147 describe the experimental methods and analytical approach. The sample size is clearly stated (C28, C142), the signal separation method is described and referenced to prior work (C29), and the independence of the two components is explained (C31). The methods are appropriate for the research question, though the modest sample size (3 subjects, 15 electrodes) is acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "For all three signal types (gamma, broadband, BOLD), responses increased with stimulus contrast for a given pattern. However, percent signal change in gamma responses is much larger than for broadband responses. This difference reflects that broadband arises from asynchronous activity (with substantial cancellation), while narrowband gamma reflects synchronous activity that can produce larger macroscopic field potentials even from smaller neuronal populations. The large field potential from gamma does not imply high neuronal population activity in terms of energy demand or spike rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C90-C97 explain an important observation about signal amplitudes. The contrast sensitivity is consistent across signal types (C40), the amplitude difference is documented (C90), and the mechanistic explanation is supported by citations to prior work on signal generation (C91-C93, C96-C97). The interpretation that large gamma field potentials don't necessarily indicate high population activity is well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C35"
+    ],
+    "result": "The fMRI BOLD response was large for all stimuli with high contrast in the pRF and tended to be larger for curved patterns than for gratings, similar to broadband ECoG responses. This similarity in stimulus selectivity between fMRI and broadband is consistent with numerous other studies indicating good agreement between the two signal types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C35 describe the similarity between BOLD and broadband responses. The comparison is based on data from a prior fMRI study (C35, C73), and the consistency with other studies is supported by subsequent citations in the text (C74). The use of previously published fMRI data for comparison is appropriate and strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C56"
+    ],
+    "result": "The pRF center and size for the OV model could not be robustly obtained by fitting to gamma responses across the 86 images, so the x and y position were fixed based on SOC fits to broadband data from the same electrode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe a methodological decision necessitated by the data. The inability to fit pRF parameters from gamma responses is explained by the lack of gamma response to spatially varying stimuli (C55), and using broadband-derived pRF parameters is a reasonable solution given the known spatial correspondence between broadband and anatomical receptive fields.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Using well-controlled stimuli, the data show that image contrast (first-order) and variations in contrast (second-order) are not sufficient to elicit robust gamma oscillations. The advantage of carefully controlled stimulus properties is that interpretation is more straightforward than studies using natural images, which have widespread unmodeled correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 present a methodological argument and conclusion. The finding that first- and second-order contrast are insufficient is supported by the experimental data showing sparse gamma responses (C84). The methodological justification for using controlled stimuli is sound (C86-C87), and the authors appropriately note that concurrent work using natural images reached opposite conclusions (C85).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The method of separating the ECoG measurement into broadband and narrowband components was important for revealing the sparseness of gamma responses. Studies that do not explicitly separate these components might draw conclusions about narrowband oscillations when the signals measured could reflect broadband responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 make an important methodological point. The importance of signal separation is demonstrated by the example in Figure 1 showing that noise patterns increase power in the gamma frequency band but this is better characterized as broadband (C88). The cautionary statement about other studies (C89) is appropriate given the demonstrated overlap between the two signal types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Conclusions about gamma oscillations in human visual cortex cannot be directly transferred to other systems without careful testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is a reasonable cautionary statement about generalizability. The authors appropriately note that different brain regions and even different areas within the same region may have distinct types of gamma rhythms with different properties, as supported by the discussion of gamma in other systems and the citation to work showing distinct gamma types in mouse V1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Increasing the number of superimposed gratings decreases OV output and narrowband gamma power, yet causes an increase in cross-orientation suppression in visual cortex. This exception to the link between inhibition and gamma power may reflect that cross-orientation suppression is inherited feedforward, while surround suppression depends on intra-cortical connections. Large gamma oscillations may reflect locally implemented inhibition but not inherited suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C124 identify an important exception and propose a speculative explanation. The observation is well-supported by data (C121, Figure 3) and prior work on cross-orientation suppression. However, the mechanistic explanation (C123-C124) is explicitly speculative and lacks direct experimental support. The distinction between feedforward and local inhibition is plausible but requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The same image properties associated with gain control can also be described as signatures of image redundancy or predictability. Gamma oscillations can thus be described as increasing in the presence of image redundancy, consistent with early proposals that surround suppression is part of a coding strategy to compress signals from natural images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 present an alternative interpretation of the findings. The reframing of gain control in terms of redundancy is conceptually sound (C125-C126) and supported by a citation to early theoretical work (C127). This provides a useful alternative perspective on the same empirical findings, though it remains an interpretation rather than a directly tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "While the circuitry underlying inhibitory mechanisms associated with gamma oscillations is not firmly established, several circuit models have been proposed. Normalization could be implemented as shunting inhibition or via inhibition-stabilized networks where gain control paradoxically results from withdrawal of inhibition. The OV model does not describe the neuronal circuitry producing oscillations, and a more complete understanding will require a unified account that both generalizes to arbitrary images and specifies the underlying circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C141 provide a balanced discussion of circuit mechanisms. The authors acknowledge uncertainty about underlying circuitry (C128), present alternative implementations with appropriate citations (C129-C133, C135-C138), acknowledge limitations of their model (C140), and identify future directions (C141). The discussion appropriately distinguishes between established findings and speculative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior work has established that gamma oscillations have been hypothesized to be critical for perception, cognition, and information transfer, though observations vary widely across studies. Image-computable models exist for fMRI BOLD and single-neuron spiking, but not for gamma oscillations. Gamma responses are known to increase with stimulus size and contrast, decrease with noise or multiple orientations, and differ in selectivity from BOLD and spike rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C22 summarize prior work in the field. These are background claims supported by appropriate citations to the literature. The characterization of the state of the field appears accurate and provides necessary context for the current work. The variability in gamma observations across studies (C2) motivates the need for the current systematic investigation.",
+    "result_type": "MINOR"
+  }
+]

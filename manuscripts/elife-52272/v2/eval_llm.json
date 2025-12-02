@@ -1,0 +1,508 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "C. crescentus is an alpha-proteobacterium that serves as a model for cell cycle regulation and asymmetric cell division, producing two dissimilar daughter cells: a stalked S-phase cell and a piliated/flagellated G1-phase swarmer cell with distinct polar structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C13-C18 describe well-established characteristics of C. crescentus that are supported by extensive prior literature (as indicated by citations) and general knowledge in the field. These are foundational background claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Polar scaffolding proteins including TipN, PodJ, and PopZ dictate organelle placement at cell poles, and polarity determinants affect cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by multiple citations to prior work and represent established knowledge about C. crescentus polar organization. These provide necessary background for understanding the genetic interactions explored in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Tn-Seq analysis reveals that proteolytic adaptors CpdR, RcdA, and PopA are synthetically lethal with \u0394tipN, with double mutants showing severe viability defects, cell elongation, and altered cell cycle profiles with reduced G1 populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 are well-supported by Tn-Seq data (Figure 1B, Figure 1\u2014figure supplement 1A-B), EOP assays (Figure 1C), microscopy (Figure 1D), and FACS analysis (Figure 1D). The genetic interactions are confirmed through multiple independent approaches with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "\u0394tipN; \u0394cpdR double mutant cells exhibit strongly reduced CtrA-dependent reporter activity (pilA::PpilA-GFP and pilA::PpilA-nptII), indicating CtrA insufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by fluorescence microscopy quantification (Figure 2A) and growth assays on kanamycin plates (Figure 2B). The data consistently show reduced CtrA activity in the double mutant, though the interpretation of 'insufficiency' is somewhat paradoxical given the known function of CpdR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The paradoxical CtrA insufficiency in \u0394tipN; \u0394cpdR cells is explained by accumulation of KidO, a ClpXP substrate that negatively regulates CtrA; Tn-Seq identified kidO insertions enriched 19-fold in the double mutant, and genetic manipulation of KidO levels confirms its role in the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 are well-supported by Tn-Seq data (Figure 1\u2014figure supplement 2A), expression of non-degradable KidO (Figure 1\u2014figure supplement 2B), and kidO deletion experiments (Figure 1\u2014figure supplement 2B). The logic is sound and the experimental evidence converges on KidO as the indirect mediator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A genetic screen identified citA as a suppressor of the \u0394tipN; \u0394cpdR phenotype; both citA::Tn and \u0394citA mutations restore PpilA activity, correct cell size abnormalities, and increase G1 cell populations in the double mutant background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by the genetic screen results, growth assays (Figure 2B), microscopy (Figure 2C, Figure 2\u2014figure supplement 1A), and FACS analysis (Figure 2C). Multiple independent alleles (Tn insertion and clean deletion) show consistent phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "C. crescentus CitA shares 65% identity with E. coli GltA and 32% with B. subtilis CitA, and functionally complements glutamate auxotrophy in E. coli \u0394gltA cells, confirming it encodes a functional citrate synthase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by sequence analysis (stated percentages) and heterologous complementation data (Figure 3B). The complementation experiment provides direct functional evidence for citrate synthase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Metabolomic profiling of citA mutants shows no significant changes in citrate and isocitrate levels, but reveals a small increase in acetyl-CoA, suggesting some TCA cycle flux alteration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by LC-MS data (Figure 3\u2014figure supplement 1B, Figure 3C). The lack of major TCA metabolite changes is surprising but clearly documented, while the acetyl-CoA increase is consistent with reduced citrate synthase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "C. crescentus encodes two additional putative citrate synthase genes (citB and citC); CitB (30% identity to CitA) is functional and complements E. coli \u0394gltA, while CitC does not, explaining why CitA is non-essential on PYE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are supported by BLAST searches, sequence analysis, heterologous complementation (Figure 3B), and citation to prior Tn-Seq data. The functional redundancy explanation is logical and experimentally supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "\u0394citBC cells cannot accept citA::Tn or \u0394citA by generalized transduction while accepting other markers normally, demonstrating that C. crescentus requires at least one functional citrate synthase for viability on PYE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by transduction experiments (Figure 3D, 3E) showing synthetic lethality. The control transductions with other markers confirm the specificity of the effect, providing strong evidence for the essential nature of citrate synthase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "\u0394citA cells exhibit slow growth on PYE, cannot grow on minimal M2G medium, are smaller than WT cells, and show a dramatic increase in G1-phase population (68-69% vs 36% in WT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by EOP assays, growth curves (Figure 4A), microscopy measurements (Figure 4B), and FACS analysis (Figure 4B). The data are quantitative and consistent across multiple approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The citA mutant phenotypes are not corrected by exogenous glutamine addition, indicating they are not due to glutamine auxotrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by growth assays and FACS analysis with glutamine supplementation (Figure 4\u2014figure supplement 1A, B). This control experiment is important for distinguishing metabolic from regulatory effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The citA mutant phenotypes are not complemented by citB or E. coli gltA but are rescued by WT citA, demonstrating that CitA has a specific cell cycle function distinct from its enzymatic activity that other citrate synthases cannot provide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by complementation experiments with FACS analysis (Figure 4C). The specificity of complementation by CitA but not other functional citrate synthases is a key finding supporting the moonlighting enzyme hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Catalytically inactive CitA variants (CitAH303W and CitAH303A) lack citrate synthase activity but restore normal cell cycle progression to \u0394citA cells, demonstrating that CitA's catalytic activity is dispensable for its developmental function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are strongly supported by complementation assays in E. coli (Figure 4\u2014figure supplement 1C), immunoblotting showing equivalent expression (Figure 4\u2014figure supplement 1D, E), and FACS/microscopy in C. crescentus (Figure 4D). This is a critical result establishing CitA as a moonlighting enzyme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Synchronized cell cycle experiments show WT G1 cells enter S-phase at 30 minutes while citA mutants are delayed until 90 minutes, with ~60% remaining in G1 even after 260 minutes, as confirmed by ParB-GFP focus duplication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are supported by FACS analysis of synchronized cells (Figure 4\u2014figure supplement 1G) and time-lapse microscopy with ParB-GFP (Figure 4E). The data clearly demonstrate both delayed and incomplete G1\u2192S transition in citA mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "citA G1 cells develop long stalks (marked by StpX-GFP) and show SpmX-mCherry foci despite remaining in G1, suggesting polar remodeling and chromosome replication are uncoupled in the absence of CitA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by fluorescence microscopy (Figure 4F, Figure 5\u2014figure supplement 1C). The presence of stalked-cell markers in G1-arrested cells is unusual and supports the uncoupling hypothesis, though this is somewhat interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Inactivation of citA increases activity of multiple CtrA-activated promoters, elevates phosphorylated CtrA (CtrA~P) levels, and stabilizes CtrA protein to levels similar to a non-degradable variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by \u03b2-galactosidase assays (Figure 5A), Phos-tag PAGE immunoblotting (Figure 5B, C), and chloramphenicol chase experiments (Figure 5D, E). Multiple independent assays converge on increased CtrA activity and stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "ChIP-Seq analysis reveals increased RNAP occupancy at many CtrA-dependent promoters in citA cells, with the highest increases at G1-phase activated promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by ChIP-Seq data (Figure 5F, G, Figure 5\u2014figure supplement 1D). The genome-wide analysis provides strong evidence for transcriptional effects, and the G1-phase promoter specificity is notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "CitA protein levels remain constant throughout the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by immunoblotting of synchronized cells (Figure 4\u2014figure supplement 1F). This observation is important for ruling out cell cycle-dependent regulation of CitA abundance as the mechanism of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Spontaneous suppressors of citA mutants have frameshift mutations in ptsP, which encodes an inhibitor of SpoT (p)ppGpp hydrolase; loss of (p)ppGpp production (\u0394spoT or \u0394ptsP) suppresses citA phenotypes including elevated CtrA~P.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by whole-genome sequencing of suppressors, FACS analysis (Figure 6A), and immunoblotting (Figure 5B-E). The genetic suppression by multiple independent mutations in the (p)ppGpp pathway provides strong evidence for pathway convergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "(p)ppGpp levels are not elevated in citA mutants, yet (p)ppGpp is required for the citA phenotype, suggesting CitA and (p)ppGpp pathways converge on the same target with CitA acting negatively on CtrA~P.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by TLC quantification of (p)ppGpp (Figure 6B) and genetic suppression data. The lack of (p)ppGpp elevation combined with requirement for (p)ppGpp presence is a key mechanistic insight, though the exact convergence point remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Ectopic (p)ppGpp induction delays G1\u2192S transition and prevents CtrA turnover; (p)ppGpp is required for citA phenotype manifestation; the authors propose CitA and (p)ppGpp pathways converge to regulate active CtrA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 combine prior knowledge (C96, supported by citations) with experimental results (C97) to propose a model (C98). The proposal is reasonable given the data, though the exact mechanism of convergence is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "RNAP is a well-known target of (p)ppGpp in bacteria including alpha-proteobacteria, suggesting the effect of (p)ppGpp on CtrA is mediated by transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by citations to prior literature and represent a reasonable mechanistic hypothesis based on established (p)ppGpp biology. The ChIP-Seq data showing RNAP occupancy changes support this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "While CtrA stability is normally controlled by CpdR/RcdA/PopA adaptors, the citA mutation was isolated as a suppressor from \u0394tipN \u0394cpdR background, and CtrA reporter activities are reduced (not elevated) in \u0394 popA and \u0394cpdR mutants, arguing against CitA acting through this proteolytic pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by the genetic screen design (C103), \u03b2-galactosidase assays (Figure 5\u2014figure supplement 1E), and logical reasoning. This analysis effectively rules out a simple model of CitA acting through the proteolytic adaptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "CitA integrates central energy metabolism with cell cycle regulation by affecting CtrA; this function is unique to CitA (not shared by CitB or GltA), is not due to metabolic deficiency, and is retained by catalytically inactive variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 synthesize multiple experimental results into an overarching conclusion. The evidence from complementation specificity, metabolomics, glutamine supplementation, and catalytic mutants collectively support this moonlighting enzyme model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Other TCA cycle enzymes are essential in C. crescentus, but redundancy in citrate synthase activities may have allowed CitA's appropriation as a moonlighting checkpoint regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 combine cited data on TCA enzyme essentiality with evolutionary speculation. While C109 is well-supported by citation, C110 is more speculative but represents a reasonable evolutionary hypothesis given the functional redundancy demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Multiple citrate synthases are found in other bacterial lineages; citrate synthases have been implicated in virulence (K. pneumoniae), persister formation (S. aureus), sporulation (B. subtilis), and development (S. coelicolor), with developmental defects persisting despite metabolic rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 are supported by phylogenetic analysis (Figure 3\u2014figure supplement 1C) and multiple citations to prior literature. These comparative observations strengthen the case that citrate synthase moonlighting functions may be widespread.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Central metabolic enzymes serve as ideal checkpoint mechanisms coupling developmental gene expression to central energy metabolism in bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is a broad conclusion supported by the collective evidence from this study and cited literature. While somewhat speculative, it represents a reasonable synthesis of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In eukaryotes, citrate synthase paralogs are compartmentalized (S. cerevisiae CIT1 in mitochondria for TCA, CIT2 in peroxisomes for glyoxylate cycle), and in P. anserina, citrate synthase affects meiosis independently of catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 are supported by citations to prior literature and provide evolutionary context showing that citrate synthase moonlighting functions exist across domains of life.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Cellular redox potential and metabolites fluctuate during the C. crescentus cell cycle; multiple metabolic enzymes (KidO, GdhZ, CitA) that bind NAD(H) or participate in central metabolism execute cell cycle control functions, indicating multi-level integration of metabolism and cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 synthesize findings from this study with cited prior work on KidO and GdhZ. The pattern of multiple metabolic enzymes serving regulatory roles is well-documented and supports the broader conclusion about metabolism-cell cycle integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The moonlighting functions of KidO, GdhZ, and CitA are not apparent from primary structure; GdhZ was found by yeast two-hybrid, while KidO and CitA emerged from forward genetic screens for cell cycle mutants affecting PpilA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 are supported by citations describing the discovery methods for these proteins. This observation highlights the value of unbiased genetic approaches for discovering moonlighting functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "CtrA regulates promoters controlling envelope, developmental, and metabolic functions, suggesting the molecular and genetic interplay between metabolism and cell cycle control may be more profound than anticipated in C. crescentus and related bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are supported by citations to prior CtrA regulon studies. While C132 is speculative, it represents a reasonable extrapolation from the findings and prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "CitA is a Krebs cycle citrate synthase that functions as a checkpoint regulator controlling G1\u2192S transition; loss of CitA promotes accumulation of active CtrA in a (p)ppGpp-dependent manner; CitA's enzymatic activity is dispensable and functional paralogs cannot replace it, indicating CitA functions as a moonlighting enzyme linking metabolism with S-phase entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C10 represent the core findings of the paper. They are supported by extensive experimental evidence including genetic screens, enzymatic assays, complementation studies, catalytic mutant analysis, and epistasis experiments. This is the central discovery of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Moonlighting enzymes are metabolic enzymes appropriated for regulatory functions that serve as ideal coupling factors to coordinate regulatory changes in response to metabolic fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 define moonlighting enzymes based on cited literature and provide the conceptual framework for interpreting CitA's function. These are well-established concepts in the field.",
+    "result_type": "MINOR"
+  }
+]

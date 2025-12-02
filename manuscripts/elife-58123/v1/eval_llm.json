@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C92"
+    ],
+    "result": "BCL9 proteins sustain \u03b2-catenin action independently of PYGO in intestinal homeostasis, regeneration, and cancer. Pygo1/2-KO mice show normal intestinal architecture and proliferation, while Bcl9/9l-KO mice exhibit defects in Lgr5 expression, DSS-induced regeneration, and tumor gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims collectively demonstrate through multiple experimental approaches (histology, qRT-PCR, DSS treatment, tumor analysis) that BCL9/9L function independently of PYGO1/2 in intestinal contexts. The data show consistent phenotypic differences between Bcl9/9l-KO and Pygo1/2-KO mice with appropriate statistical support (C27, C28) and proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C95"
+    ],
+    "result": "The HD1 domain of BCL9/9L, previously thought to interact only with PYGO1/2, mediates PYGO-independent functions. HD1 deletion suppresses tumor metastasis, downregulates Wnt/EMT/stemness genes, and causes forelimb malformations. TBX3 was identified as a HD1-interacting protein by mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims demonstrate that HD1 has PYGO-independent functions through genetic experiments showing differential phenotypes between HD1 deletion and Pygo1/2-KO (C32, C35, C36, C78). The identification of TBX3 by mass spectrometry (C34) provides a mechanistic candidate, though the interaction appears indirect (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "TBX3 is identified as a tissue-specific member of the \u03b2-catenin transcriptional complex. ChIP-seq in developing forelimbs shows BCL9 occupies ~2/3 of TBX3-bound regions (1454 overlapping peaks). Motif analysis reveals TCF/LEF and Homeobox motifs at common peaks, but not TBX motifs, suggesting indirect DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-seq data (C40, C70-C74) provide robust genomic evidence for BCL9-TBX3 co-occupancy. The motif analysis (C41, C43) supports the interpretation that TBX3 is recruited via the Wnt complex rather than direct DNA binding. PLA confirms proximity (C38), though co-IP suggests no stable direct interaction (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Bcl9/9l mutations affect TBX3 target gene expression in vivo. RNA-seq of Bcl9/9l-\u03941/\u03942 forelimbs shows 1143 differentially expressed genes, with significant enrichment (p=1.4e-6) of TBX3 ChIP-seq targets (28.4% overlap), particularly among downregulated genes, including limb development regulators Meis2, Irx3, and Eya2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq and ChIP-seq integration (C45-C50) provides strong correlative evidence linking BCL9 and TBX3 function. The statistical enrichment (C48) is significant, and the enrichment among downregulated genes (C49) supports a transcriptional activation role. However, this is correlative and does not prove direct functional interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C85",
+      "C86",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "TBX3 modulates Wnt target gene transcription in a \u03b2-catenin- and TCF/LEF-dependent manner. TBX3 acts as a repressor in basal conditions but switches to activator upon Wnt stimulation. This activity is lost in \u03b2-catenin and TCF/LEF knockout cells, demonstrated by luciferase reporter assays and qRT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The luciferase reporter assays (C51-C53) and qRT-PCR data (C54, C89-C91) consistently demonstrate TBX3's context-dependent transcriptional activity. The loss of function in knockout cells (C53) provides strong evidence for \u03b2-catenin/TCF/LEF dependence. The experiments include appropriate controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C87",
+      "C88",
+      "C96"
+    ],
+    "result": "BCL9/9L recruit TBX3 to Wnt-responsive elements. ChIP-qPCR shows TBX3 enrichment on AXIN2 promoter and enhancer is lost in BCL9/9L, \u03b2-catenin, and TCF/LEF knockout cells. Enhancer enrichment occurs only upon pathway stimulation, suggesting enhancer-promoter looping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-qPCR data (C55, C56, C58) provide direct evidence for BCL9-dependent TBX3 recruitment to WREs. The loss of enrichment in multiple knockout backgrounds (C55, C58) supports the model. However, the interpretation of enhancer looping (C88) is speculative and would require additional validation (e.g., 3C/Hi-C experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "TBX3 overexpression enhances metastatic potential of Wnt-dependent colorectal cancer cells. Zebrafish xenografts show TBX3-overexpressing HCT116 cells display increased metastasis to the caudal hematopoietic plexus (p=0.0285) and elevated AXIN2 expression, indicating enhanced Wnt/\u03b2-catenin transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The zebrafish xenograft experiments (C59, C62) provide in vivo functional evidence for TBX3's role in cancer metastasis. The correlation with AXIN2 expression (C61) supports a Wnt-dependent mechanism. However, the authors acknowledge (C62) that TBX3 may also act independently of BCL9/\u03b2-catenin, limiting mechanistic certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "TBX3 acts as a tissue-specific component of the Wnt/\u03b2-catenin transcriptional complex in developmental and disease contexts, suggesting a paradigm where tissue-specific co-factors determine transcriptional outputs. TBX3 or its effectors could be therapeutic targets in CRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are interpretive and speculative claims (C64, C66) that extend beyond the experimental data. While the data support TBX3's involvement in Wnt signaling in specific contexts, the generalization to a 'new paradigm' (C64) and therapeutic implications (C66) require additional validation in other tissues and cancer models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C37",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C75",
+      "C93",
+      "C94"
+    ],
+    "result": "Background knowledge claims about Wnt signaling, BCL9/PYGO function, colorectal cancer, and TBX3 are established in the literature and properly cited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field and are appropriately supported by citations. They provide necessary context for interpreting the novel findings but do not constitute new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C97",
+      "C98"
+    ],
+    "result": "BCL9 has functions beyond Wnt/\u03b2-catenin signaling. Motif analysis shows BCL9 exclusive peaks are enriched for KLF family transcription factors rather than TCF/LEF motifs, suggesting predominant non-Wnt genomic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The motif analysis (C97, C98) provides evidence for BCL9's Wnt-independent functions. This is consistent with prior work (cited in C97) and supported by the ChIP-seq data. However, this is a secondary finding that supports the main conclusion but is not the primary focus of the study.",
+    "result_type": "MINOR"
+  }
+]

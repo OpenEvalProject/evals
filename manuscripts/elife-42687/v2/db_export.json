@@ -1,0 +1,2020 @@
+{
+  "submission": {
+    "id": "55cabb37-4522-4ed2-b7bb-0b5e1949e6e6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:35:39.247294Z",
+    "updated_at": "2025-12-02T08:35:39.247294Z"
+  },
+  "content": [
+    {
+      "id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "submission_id": "55cabb37-4522-4ed2-b7bb-0b5e1949e6e6",
+      "content_type": "manuscript",
+      "content_text": "# Brain-wide cellular resolution imaging of Cre transgenic zebrafish lines for functional circuit-mapping\n\n## Authors\n\n- Kathryn M Tabor<sup>1</sup> ([ORCID: 0000-0003-3696-4584](https://orcid.org/0000-0003-3696-4584))\n- Gregory D Marquart<sup>1</sup> ([ORCID: 0000-0001-9811-5372](https://orcid.org/0000-0001-9811-5372))\n- Christopher Hurt<sup>1</sup>\n- Trevor S Smith<sup>1</sup>\n- Alexandra K Geoca<sup>1</sup>\n- Ashwin A Bhandiwad<sup>1</sup>\n- Abhignya Subedi<sup>4</sup>\n- Jennifer L Sinclair<sup>1</sup>\n- Hannah M Rose<sup>1</sup>\n- Nicholas F Polys<sup>3</sup>\n- Harold A Burgess<sup>1</sup> ([ORCID: 0000-0003-1966-7801](https://orcid.org/0000-0003-1966-7801)) \u2020\n\n### Affiliations\n\n1. Division of Developmental Biology Eunice Kennedy Shriver National Institute of Child Health and Human Development Bethesda United States\n2. Neuroscience and Cognitive Science Program University of Maryland College Park United States\n3. Advanced Research Computing, Department of Computer Science Virginia Polytechnic Institute and State University Blacksburg United States\n4. Postdoctoral Research Associate Training Program National Institute of General Medical Sciences Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDecoding the functional connectivity of the nervous system is facilitated by transgenic methods that express a genetically encoded reporter or effector in specific neurons; however, most transgenic lines show broad spatiotemporal and cell-type expression. Increased specificity can be achieved using intersectional genetic methods which restrict reporter expression to cells that co-express multiple drivers, such as Gal4 and Cre. To facilitate intersectional targeting in zebrafish, we have generated more than 50 new Cre lines, and co-registered brain expression images with the Zebrafish Brain Browser, a cellular resolution atlas of 264 transgenic lines. Lines labeling neurons of interest can be identified using a web-browser to perform a 3D spatial search (zbbrowser.com). This resource facilitates the design of intersectional genetic experiments and will advance a wide range of precision circuit-mapping studies.\n\n## Introduction\n\nElucidating the functional circuitry of the brain requires methods to visualize neuronal cell types and to reproducibly control and record activity from identified neurons. Genetically encoded reporters and effectors enable non-invasive manipulations in neurons but are limited by the precision with which they can be targeted. While gene regulatory elements are often exploited to direct transgene expression, very few transgenic lines strongly express reporter genes in a single cell type within a spatially restricted domain. Precise targeting of optogenetic reagents can be achieved using spatially restricted illumination in immobilized or optic-fiber implanted animals (Aravanis et al., 2007; Arrenberg et al., 2009; Wyart et al., 2009; Zhu et al., 2012). However, non-invasive genetic methods that confine expression to small groups of neurons enable analysis of behavior in freely moving animals. Such methods include intersectional genetic strategies, where reporter expression is controlled by multiple independently-expressed activators (Dymecki et al., 2010; Gohl et al., 2011).\n\nIn zebrafish, intersectional control of transgene expression has been achieved by combining the Gal4/UAS and Cre/lox systems (F\u00f6rster et al., 2017; Satou et al., 2013; Tabor et al., 2018). Gal4-Cre intersectional systems take advantage of hundreds of existing Gal4 lines which are already widely used in zebrafish circuit neuroscience (Asakawa et al., 2008; Bergeron et al., 2012; Scott et al., 2007), but are limited by the relatively poor repertoire of existing Cre lines, and difficulty in identifying pairs of driver lines that co-express in neurons of interest. The first version of the Zebrafish Brain Browser (ZBB) atlas provided a partial solution to these problems by co-aligning high resolution image stacks of more than 100 transgenic lines, with an accuracy approaching the limit of biological variability (Marquart et al., 2017; Marquart et al., 2015). ZBB enabled users to conduct a 3D spatial search for lines with reporter expression in areas of interest and predict the area of intersection between Gal4 and Cre lines, aiding the design of intersectional genetic experiments. However, ZBB software required local installation and only included 9 Cre lines, limiting opportunities for intersectional targeting.\n\nHere, we describe the ZBB2 atlas, which comprises whole-brain expression patterns for 264 transgenic lines, including 65 Cre lines, and 158 Gal4 lines. We generated more than 100 new enhancer trap lines that express Cre or Gal4 in diverse subsets of neurons, then registered a high resolution image of each to the original ZBB atlas. For 3D visualization of expression patterns and to facilitate spatial searches for experimentally useful lines, we now provide an online interface to the atlas. Collectively, ZBB2 labels almost all cellular regions within the brain and will facilitate the reproducible targeting of neuronal subsets for circuit-mapping studies.\n\n## Results\n\nTo accelerate discovery of functional circuits we generated a library of transgenic lines that express Cre in restricted patterns within the brain and built an online 3D atlas (Figure 1). New Cre lines were generated through an enhancer trap screen: we injected embryos with a Cre vector containing a basal promoter that includes a neuronal-restrictive silencing element to suppress expression outside the nervous system, and tol2 transposon arms for high efficiency transgenesis (REx2-SCP1:BGi-Cre-2a-Cer) (Bergeron et al., 2012; Kawakami, 2007; Marquart et al., 2015). In injected G0 embryos, the reporter randomly integrates into the genome such that Cre expression is directed by local enhancer elements. To isolate lines with robust brain expression in relatively restricted domains, we visually screened progeny of G0 adults crossed to the \u03b2actin:Switch transgenic line that expresses red fluorescent protein (RFP) in cells with Cre (Horstick et al., 2015). We retained 52 new lines that express Cre in restricted brain regions at 6 days post-fertilization (dpf), the stage most frequently used for behavioral experiments and circuit-mapping. We then used a confocal microscope to scan brain-wide GFP and RFP fluorescence from et-Cre, \u03b2actin:Switch larvae at high resolution, aligned the merged signal to the ZBB \u03b2actin:GFP pattern and applied the resulting transformation matrix to the RFP signal alone. To obtain a representative image of Cre expression, we averaged registered brain scans from 3 to 10 larvae and masked expression outside the brain. Cre lines reported here for the first time are shown in Figure 2, and an overview of all 65 Cre lines that can be searched using ZBB2 is summarized in Supplementary file 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42687/elife-42687-fig1-v2.jpg)\n\n**Figure 1.:** Inset schematics: neuronal-restrictive silencing element (NRSE) sites in the enhancer trap construct are targets for the REST protein, which suppresses Cre expression outside the brain.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42687/elife-42687-fig2-v2.jpg)\n\n**Figure 2.:** Horizontal maximum projection of 52 new Cre enhancer trap lines, with color indicating depth along the dorsal-ventral dimension (huC counter-label, grey).\n\nWe previously isolated more than 200 Gal4 lines with expression in subregions of the brain; however, the original ZBB atlas represented only those that showed expression restricted to the nervous system. The subsequent development of a synthetic untranslated region (UTR.zb3) that suppresses non-neuronal expression has mitigated issues associated with Gal4 driving effector genes in non-neuronal tissues (Marquart et al., 2015). We therefore imaged 45 additional Gal4 lines in which robust brain expression is accompanied by expression in non-neural tissues. We visualized Gal4 expression using the UAS:Kaede transgenic line and registered patterns to ZBB by co-imaging vglut2a:DsRed expression. New Gal4 lines reported here are shown in Figure 3. We also aligned 20 high resolution brain scans of Gal4 lines performed by either the Dorsky or Baier laboratories by adapting a method for multi-channel registration of the Z-Brain and ZBB atlases (F\u00f6rster et al., 2017; Marquart et al., 2017; Otsuna et al., 2015). In total, ZBB2 includes the spatial pattern of expression for 158 Gal4 lines. Supplementary file 2 summarizes all Gal4 enhancer traps generated by our laboratory that can be searched in ZBB2. The relative expression of each transgenic line within 20 \u00b5m-side bins is reported in Supplementary file 3. In total, ZBB2 describes the expression pattern for 264 transgenic lines, more than doubling the number in the original atlas (Table 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42687/elife-42687-fig3-v2.jpg)\n\n**Figure 3.:** Horizontal maximum projection of 45 new Gal4 enhancer trap lines (depth coded; huC counter-label, grey).\n\n**Table 1.**\n Summary of transgenic lines in ZBB2.Total numbers of enhancer trap lines, and transgenic lines (made using promoter fragments from genes, or through BAC recombination), broken down by type: Gal4, Cre or fluorescent protein (FP).\u00a0Right columns total the number of lines where genomic information driving the expression pattern is available. This information inherently exists for transgenic lines, and was derived through integration site mapping for enhancer trap lines.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">All lines (n\u00a0=\u00a0264)</th>\n      <th></th>\n      <th colspan=\"3\">Mapped (n\u00a0=\u00a0171)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Gal4</th>\n      <th>Cre</th>\n      <th>FP</th>\n      <th></th>\n      <th>Gal4</th>\n      <th>Cre</th>\n      <th>FP</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Enhancer trap</td>\n      <td>138</td>\n      <td>65</td>\n      <td>5</td>\n      <td></td>\n      <td>96</td>\n      <td>15</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Transgenic</td>\n      <td>20</td>\n      <td>0</td>\n      <td>36</td>\n      <td></td>\n      <td>20</td>\n      <td>0</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>158</td>\n      <td>65</td>\n      <td>41</td>\n      <td></td>\n      <td>116</td>\n      <td>15</td>\n      <td>40</td>\n    </tr>\n  </tbody>\n</table>\n\nEnhancer traps randomly integrate into the genome and it is not usually possible to determine the identity of the cells labeled by their spatial pattern of expression alone. However, cell-type information for enhancer trap lines can be inferred from co-localization with reporters whose expression is directed by a defined promoter, or through integration into a bacterial artificial chromosome. ZBB2 contains expression data for 56 such transgenic lines, including reporters for most major neurotransmitters. The relative mean expression intensity for nine major cell-type markers within neuroanatomic. Additional cell-type information in enhancer trap lines may be revealed by integration site mapping, because enhancer traps often recapitulate, at least in part, the expression pattern of genes close to the site of transgene integration. We therefore developed a new method to efficiently map integration sites, using an oligonucleotide to hybridize with the enhancer trap tol2 arms and capture flanking genomic DNA fragments for sequencing (see Materials\u00a0and\u00a0methods for detail). We recovered the integration site for 55 Gal4 and Cre enhancer trap lines (detailed in ). Altogether 171 of the lines in ZBB2 either use a defined promoter, or have a known genomic integration site, providing molecular genetic information on cell-type identity (Table 1).\n\nTo assess how useful the lines represented in ZBB2 will be for circuit-mapping studies, we calculated the selectivity of each line. For this, we first estimated the volume of the brain that includes cell bodies \u2014 using transgenic markers of cell bodies and neuropil (Figure 4A) \u2014 then calculated the percent of the cell body volume labeled by each line. For Cre lines, median coverage of the cell body volume was 6% (range 0.1% to 48%, Figure 4B,D). As we estimate that there are\u00a0~92,000 neurons in the six dpf brain (see Materials\u00a0and\u00a0methods), this equates to a median of around 5500 neurons per line. In total, 96% of the cellular volume is labeled by at least one Cre line, with an average of 6 lines per voxel. However, Cre lines provide limited access to the midbrain tegmentum, posterior tuberculum and trigeminal ganglion (Figure 4B). Gal4 lines tend to have more restricted expression than Cre lines, with a median coverage of 1% (range 0.02% to 29%,~900 neurons per line). Collectively Gal4 lines label 91% of the cell body volume (Figure 4C,D). Salient areas that are not labeled include a rostro-dorsal domain of the optic tectum, the caudal lobe of the cerebellum, and a medial area within rhombomeres 3\u20134 of the medulla oblongata. Despite Gal4 lines having more restricted expression, few show tightly confined expression, highlighting the importance of intersectional approaches for precise targeting.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42687/elife-42687-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Horizontal (left), coronal (top right), sagittal (bottom right) sections showing huC:nls-mCar (cell bodies, red) and huC:Gal4,UAS:syp-RFP (neuropil, cyan) from ZBB (huC counter-label, gray), illustrating the separation of cell bodies and neuropil in six dpf brains. (B\u2013C) Horizontal sections (at the levels indicated in A) of heat-maps showing the number of et-Cre (B) and et-Gal4 (C) lines that label each voxel within the cellular area of the brain (scale bar, right). Voxels that lack coverage indicated in green. Coverage for Cre lines is highest in the pallium (Pa). Gal4 lines conspicuously lack coverage in the anterior optic tectum (TeO) and in a medial zone of the medulla oblongata (MO). (D) Histogram of the cellular-region coverage for et-Cre (red) and et-Gal4 (green) lines.\n\nWe envisaged using Cre lines to select experimentally useful subdomains of Gal4 expression patterns. To test this, we selected pairs of Cre and Gal4 lines with overlapping expression in spatially restricted regions, then analyzed reporter expression in triple transgenic Gal4/Cre/UAS:Switch larvae. As any given brain region likely contains multiple intermingled cell types, Gal4 and Cre lines that appear to overlap, may actually label distinct neurons. Nevertheless, intersectional patterns observed closely matched predicted intersects, labeling relatively small clusters of neurons (Figure 5). In general, intersectional expression in individual larvae is more restricted than predicted. In part, this may be because UAS transgenics are susceptible to silencing, reducing the extent of expression.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42687/elife-42687-fig5-v2.jpg)\n\n**Figure 5.:** Maximum projections for et-Gal4 and et-Cre lines predicted to show co-expression in small domains of neurons, and of the resulting pattern of expression in a triple transgenic et-Gal4, et-Cre, UAS:KillSwitch larva.\u00a0Scale bar 100 \u00b5m. (A) Horizontal (top) and sagittal (bottom) maximum projections for (left to right): y318-Gal4 expression, y481-Cre expression, predicted reporter distribution in cells that co-express y318 and y481, actual RFP expression in an individual y318, y481, UAS:KillSwitch larva. Closed arrowhead indicates the cerebellar eminentia granularis (Eg), which is labeled in both lines and the intersect. Open arrowhead indicates descending fiber tract from Eg neurons. (B) As for (A) with y393-Gal4 and y528-Cre lines. Closed arrowheads indicate the lateral habenula (black) and trigeminal ganglion (grey). Open arrowhead indicates central projections from the trigeminal ganglion.\n\nFor the first release of the ZBB atlas, we provided downloadable Brain Browser software that allowed users to conduct a 3D spatial search for transgenic lines that label neurons within a specific Z-Brain defined neuroanatomic region (Randlett et al., 2015) or selected volume. For ZBB2, we have imported all the new lines into the original Brain Browser. However, recognizing that requiring a locally installed IDL runtime platform posed a limit to accessibility, we implemented an online version that can be accessed using a web-browser (http://zbbrowser.com). The online version includes key features of the original Brain Browser, including 3D spatial search, prediction of the area of intersectional expression between selected lines, partial/maximal/3D projections, information about the neuroanatomical identity of any selected voxel and ability to load user-generated image data (Figure 6). Additionally, the online version features an integrated virtual reality viewer for Google cardboard. We used X3DOM libraries to achieve rapid volume rendering and enable users to select data resolution that best matches their connection speed, so that the browser-based implementation remains highly responsive (Arbelaiz et al., 2017b; Arbelaiz et al., 2017a). Both local and web-based versions include hyper-links to PubMed, UCSC Genome Browser and Zfin, so that users can quickly retrieve publications describing each line, its integration site, and ordering information, respectively.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/42687/elife-42687-fig6-v2.jpg)\n\n**Figure 6.:** Panel size can be adjusted to best fit screen dimensions with the Settings menu.\n\n## Discussion\n\nThe ZBB2 atlas provides cellular resolution imaging data for 65 Cre lines, and 158 Gal4 lines, enabling small clusters of neurons to be genetically addressed through intersectional targeting. To aid in the design of such experiments, we have implemented a web-based interface that allows users to perform a spatial search for lines that express Cre or Gal4 in any selected 3D volume, and thereby identify transgenic lines for intersectional visualization or manipulation of selected neurons (Tabor et al., 2018). We anticipate that the ZBB2 lines will also facilitate structural mapping of the zebrafish brain because many strongly label discrete neuroanatomical entities.\n\nIn Drosophila, intersectional genetic targeting is often achieved using 'split' systems (Gal4, lexA and Q) in which the DNA-binding domain and transactivation domain of a transcription factor are separately expressed ensuring that activity is reconstituted only in neurons that express both protein domains during the same time interval (Pfeiffer et al., 2010; Ting et al., 2011; Wei et al., 2012). We did not pursue this approach because of the investment needed to create and maintain numerous 'half' lines which can not be used alone. In contrast, Gal4 and Cre lines are independently useful and Cre lines can be used intersectionally with hundreds of existing zebrafish Gal4 lines. Several intersectional reporter lines have already been generated to visualize cells that co-express Cre and Gal4 (F\u00f6rster et al., 2017; Satou et al., 2013). In addition, the UAS:KillSwitch line enables selective ablation of neurons that co-express Gal4 and Cre, and the UAS:DoubleSwitch line sparsely labels neurons within a Gal4/Cre co-expression domain for morphological reconstruction (Tabor et al., 2018).\n\nNew Gal4 and Cre lines described here were generated through enhancer trap screening, a high throughput method that facilitates the isolation of strongly expressing transgenic reporters in diverse anatomical regions and cell types. An alternative is to use CRISPR or TALEN based methods to insert transgenes into genes known to mark useful cell types or anatomical regions (Auer et al., 2014; Kimura et al., 2014). These methods are moderate throughput, and have the advantage of providing more reliable cell type information on the resulting transgene expression patterns. Limitations are that expression from an endogenous locus may not be sufficient to drive experimentally useful levels of Gal4 or Cre, and that an insertion may depress expression of the endogenous protein from the targeted allele. Given that many neurological disorders are associated with haploinsufficiency, reporter lines generated in this way may therefore perturb brain development or function. BAC transgenesis is a third method that has been widely used to make new Gal4 and Cre lines, that also exploits known gene expression patterns, while avoiding potentially disruptive insertions (F\u00f6rster et al., 2017). However BAC transgenesis is low throughput, and as for targeted insertions, can not guarantee robust reporter expression. Thus future efforts at generating new transgenic reporters will likely be best served through enhancer traps and CRISPR-mediated transgene insertion.\n\nA limitation of the Cre system is that insufficient expression may lead to stochastic activity at target loxP sites and consequent mosaic reporter expression (F\u00f6rster et al., 2017; Schmidt-Supprian and Rajewsky, 2007). We therefore only retained lines with strong expression across multiple animals. Conversely Cre is toxic at high levels \u2014 in some cases, mosaic expression may be due to the death of a subset of cells (Bersell et al., 2013). While we cannot readily assess the toxicity of our lines, confounding effects can be experimentally addressed with the proper controls. Our enhancer trap Cre lines tend to have broader expression than Gal4 lines, likely because (1) Cre expression in progenitor cells labels all offspring, expanding the domain of expression, and (2) switch reporters remain active after transient Cre expression, whereas Gal4 must be continually expressed to drive UAS reporters. Occasionally we have observed UAS:Switch expression in neurons outside the domain of Cre expression in the ZBB2 atlas. This may be because the 14xUAS-E1b promoter is stronger than the \u03b2-actin promoter present in the switch reporter used to build the atlas. Additionally, most brain regions contain multiple cell types with biological variability in their precise position. Thus predicted overlapping expression based on co-registered brain scans must be experimentally verified.\n\nThe ZBB2 atlas advances mapping of the zebrafish brain at single cell resolution by comprehensively describing the cellular-resolution pattern of brain expression for 264 transgenic lines and providing a user-friendly web-browser based interface for searching and visualizing the expression in each. New Cre and Gal4 enhancer trap lines are freely available and we anticipate will advance circuit-mapping studies by providing essential reagents for intersectional targeting of neurons. We expect that this database and the associated transgenic lines will drive exploration of structure/function relations in the vertebrate brain.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y234</td>\n      <td>PMID:23100441</td>\n      <td>ZFIN:ZDB-ALT-121114\u201310</td>\n      <td>ZFIN symbol:y234Et; Et(SCP1:Gal4ff)y234</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y236</td>\n      <td>PMID:23293587</td>\n      <td>ZFIN:ZDB-ALT-130214\u20132</td>\n      <td>ZFIN symbol:y236Et; Et(REx2-cfos:kGal4ff)y236</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y237</td>\n      <td>PMID:23293587</td>\n      <td>ZFIN:ZDB-ALT-130214\u20133</td>\n      <td>ZFIN symbol:y237Et; Et(REx2-cfos:kGal4ff)y237</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y241</td>\n      <td>PMID:24203884</td>\n      <td>ZFIN:ZDB-ALT-131007\u20131</td>\n      <td>ZFIN symbol:y241Et; Et(REx2-SCP1:kGal4ff)y241</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y242</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-130214\u20135</td>\n      <td>ZFIN symbol:y242Et; Et(REx2-SCP1:Gal4)y242</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y244</td>\n      <td>PMID:23293587</td>\n      <td>ZFIN:ZDB-ALT-130214\u20137</td>\n      <td>ZFIN symbol:y244Et; Et(REx2-SCP1:kGal4ff)y244</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y252</td>\n      <td>PMID:25224259</td>\n      <td>ZFIN:ZDB-ALT-151117\u20131</td>\n      <td>ZFIN symbol:y252Et; Et(REx2-SCP1:kGal4ff)y252</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y264</td>\n      <td>PMID:24848468</td>\n      <td>ZFIN:ZDB-ALT-141111\u20132</td>\n      <td>ZFIN symbol:y264Et; Et(SCP1:Gal4ff)y264</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y265</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201310</td>\n      <td>ZFIN symbol:y265Et; Et(SCP1:Gal4ff)y265</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y269</td>\n      <td>PMID:24848468</td>\n      <td>ZFIN:ZDB-ALT-141111\u20133</td>\n      <td>ZFIN symbol:y269Et; Et(REx2-cfos:kGal4ff)y269</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y270</td>\n      <td>PMID:24848468</td>\n      <td>ZFIN:ZDB-ALT-141111\u20134</td>\n      <td>ZFIN symbol:y270Et; Et(REx2-cfos:kGal4ff)y270</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y271</td>\n      <td>PMID:25628360</td>\n      <td>ZFIN:ZDB-ALT-150721\u20134</td>\n      <td>ZFIN symbol:y271Et; Et(SCP1:kGal4ff)y271</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y274</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201311</td>\n      <td>ZFIN symbol:y274Et; Et(SCP1:Gal4ff)y274</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y348</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201312</td>\n      <td>ZFIN symbol:y348Et; Et(REx2-SCP1:kGal4ff)y348</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y387</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201314</td>\n      <td>ZFIN symbol:y387Et; Et(tph2:Gal4ff)y387</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y394</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201316</td>\n      <td>ZFIN symbol:y394Et; Et(cfos:Gal4ff)y394</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y396</td>\n      <td>PMID:26635538</td>\n      <td>ZFIN:ZDB-ALT-170320\u201313</td>\n      <td>ZFIN symbol:y396Et; Et(SCP1:Gal4ff)y396</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y412</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201320</td>\n      <td>ZFIN symbol:y412Et; Et(cfos:Gal4ff)y412</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y416</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201321</td>\n      <td>ZFIN symbol:y416Et; Et(cfos:Gal4ff)y416</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y420</td>\n      <td>PMID:26635538</td>\n      <td>ZFIN:ZDB-ALT-180717\u201323</td>\n      <td>ZFIN symbol:y420Et; Et(REx2-cfos:Gal4ff)y420</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y421</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201324</td>\n      <td>ZFIN symbol:y421Et; Et(REx2-cfos:Gal4)y421</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y433</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-151125\u201310</td>\n      <td>ZFIN symbol:y433Et; Et(cfos:kGal4ff)y433</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y436</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-151125\u201313</td>\n      <td>ZFIN symbol:y436Et; Et(cfos:Gal4ff)y436</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y441</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201327</td>\n      <td>ZFIN symbol:y441Et; Et(cfos:Gal4ff)y441</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y444</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201328</td>\n      <td>ZFIN symbol:y444Et; Et(SCP1:Gal4ff)y444</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y445</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201329</td>\n      <td>ZFIN symbol:y445Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y445</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y456</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201330</td>\n      <td>ZFIN symbol:y456Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y456</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y457</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201331</td>\n      <td>ZFIN symbol:y457Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y457</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y458</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201332</td>\n      <td>ZFIN symbol:y458Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y458</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y459</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201333</td>\n      <td>ZFIN symbol:y459Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y459</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y465</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201334</td>\n      <td>ZFIN symbol:y465Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y465</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y467</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201335</td>\n      <td>ZFIN symbol:y467Et; Et(tph2:Gal4ff)y467</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y468</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201336</td>\n      <td>ZFIN symbol:y468Et; Et(cfos:Gal4ff)y468</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y469</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201337</td>\n      <td>ZFIN symbol:y469Et; Et(cfos:Gal4ff)y469</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y470</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201338</td>\n      <td>ZFIN symbol:y470Et; Et(REx2-SCP1:Gal4ff)y470</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y471</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201339</td>\n      <td>ZFIN symbol:y471Et; Et(REx2-SCP1:Gal4ff)y471</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y472</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201340</td>\n      <td>ZFIN symbol:y472Et; Et(REx2-SCP1:Gal4ff)y472</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y473</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201341</td>\n      <td>ZFIN symbol:y473Et; Et(cfos:Gal4ff)y473</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y477</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201343</td>\n      <td>ZFIN symbol:y477Et; Et(cfos:Gal4ff)y477</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y478</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201344</td>\n      <td>ZFIN symbol:y478Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y478</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y479</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201345</td>\n      <td>ZFIN symbol:y479Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y479</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y480</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201346</td>\n      <td>ZFIN symbol:y480Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y480</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y481</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201347</td>\n      <td>ZFIN symbol:y481Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y481</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y483</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201348</td>\n      <td>ZFIN symbol:y483Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y483</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y484</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201349</td>\n      <td>ZFIN symbol:y484Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y484</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y485</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201350</td>\n      <td>ZFIN symbol:y485Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y485</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y486</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201351</td>\n      <td>ZFIN symbol:y486Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y486</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y487</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201352</td>\n      <td>ZFIN symbol:y487Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y487</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y488</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201353</td>\n      <td>ZFIN symbol:y488Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y488</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y489</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201354</td>\n      <td>ZFIN symbol:y489Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y489</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y490</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201355</td>\n      <td>ZFIN symbol:y490Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y490</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y492</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB- ALT-180717\u201356</td>\n      <td>ZFIN symbol:y492Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y492</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y493</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201357</td>\n      <td>ZFIN symbol:y493Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y493</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y494</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201358</td>\n      <td>ZFIN symbol:y494Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y494</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y495</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201359</td>\n      <td>ZFIN symbol:y495Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y495</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y511</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201360</td>\n      <td>ZFIN symbol:y511Et; Et(cfos:Gal4ff)y511</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y512</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201361</td>\n      <td>ZFIN symbol:y512Et; Et(SCP1:Gal4)y512</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y514</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201363</td>\n      <td>ZFIN symbol:y514Et; Et(REx2-cfos:kGal4ff)y514</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y515</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201364</td>\n      <td>ZFIN symbol:y515Et; Et(REx2-cfos:kGal4ff)y515</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y519</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201365</td>\n      <td>ZFIN symbol:y519Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y519</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y520</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201366</td>\n      <td>ZFIN symbol:y520Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y520</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y521</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201367</td>\n      <td>ZFIN symbol:y521Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y521</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y523</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201368</td>\n      <td>ZFIN symbol:y523Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y523</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y524</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201369</td>\n      <td>ZFIN symbol:y524Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y524</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y526</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201370</td>\n      <td>ZFIN symbol:y526Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y526</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y528</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201371</td>\n      <td>ZFIN symbol:y528Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y528</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y532</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201372</td>\n      <td>ZFIN symbol:y532Et; Et(cfos:Gal4ff)y532</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y533</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201373</td>\n      <td>ZFIN symbol:y533Et; Et(SCP1:Gal4ff)y533</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y541</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201374</td>\n      <td>ZFIN symbol:y541Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y541</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y542</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201375</td>\n      <td>ZFIN symbol:y542Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y542</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y543</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201376</td>\n      <td>ZFIN symbol:y543Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y543</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y544</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201377</td>\n      <td>ZFIN symbol:y544Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y544</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y545</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201378</td>\n      <td>ZFIN symbol:y545Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y545</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y546</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201379</td>\n      <td>ZFIN symbol:y546Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y546</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y547</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201380</td>\n      <td>ZFIN symbol:y547Et; Et(REx2-SCP1:BGi-Cre)y547</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y548</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201381</td>\n      <td>ZFIN symbol:y548Et; Et(REx2-SCP1:BGi-Cre)y548</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y549</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201382</td>\n      <td>ZFIN symbol:y549Et; Et(REx2-SCP1:BGi-Cre)y549</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y550</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201383</td>\n      <td>ZFIN symbol:y550Et; Et(REx2-SCP1:BGi-Cre)y550</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y551</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201384</td>\n      <td>ZFIN symbol:y551Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y551</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y552</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201385</td>\n      <td>ZFIN symbol:y552Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y552</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y554</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201387</td>\n      <td>ZFIN symbol:y554Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y554</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y555</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201388</td>\n      <td>ZFIN symbol:y555Et; Et(REx2-SCP1:BGi-Cre)y555</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y556</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201389</td>\n      <td>ZFIN symbol:y556Et; Et(REx2-SCP1:BGi-Cre)y556</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y557</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201390</td>\n      <td>ZFIN symbol:y557Et; Et(REx2-SCP1:BGi-Cre)y557</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y558</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201391</td>\n      <td>ZFIN symbol:y558Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y558</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y559</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201392</td>\n      <td>ZFIN symbol:y559Et; Et(REx2-SCP1:BGi-Cre)y559</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y564</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201393</td>\n      <td>ZFIN symbol:y564Et; Et(SCP1:Gal4ff)y564</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y565</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201394</td>\n      <td>ZFIN symbol:y565Et; Et(REx2-SCP1:Gal4ff)y565</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y566</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201395</td>\n      <td>ZFIN symbol:y566Et; Et(REx2-cfos:Gal4ff)y566</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y567</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201396</td>\n      <td>ZFIN symbol:y567Et; Et(REx2-cfos:Gal4ff)y567</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y568</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201397</td>\n      <td>ZFIN symbol:y568Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y568</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y569</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201398</td>\n      <td>ZFIN symbol:y569Et; Et(REx2-SCP1:BGi-Cre)y569</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y570</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u201399</td>\n      <td>ZFIN symbol:y570Et; Et(REx2-SCP1:BGi-Cre)y570</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y571</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u2013100</td>\n      <td>ZFIN symbol:y571Et; Et(R2R6-hoxa2-CNE-SCP1:BGi-Cre-2a-Cer)y571</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y574</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u2013101</td>\n      <td>ZFIN symbol:y574Et; Et(REx2-SCP1:BGi-Cre)y574</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y575</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u2013102</td>\n      <td>ZFIN symbol:y575Et; Et(cfos:Gal4)y575</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>y576</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ALT-180717\u2013103</td>\n      <td>ZFIN symbol:y576Et; Et(cfos:Gal4)y576</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>\u03b2actin:Switch; y272</td>\n      <td>PMID:25628360</td>\n      <td>ZFIN:ZDB-ALT-150721\u20138</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>vglut2a:DsRed; nns14</td>\n      <td>PMID:22302816</td>\n      <td>ZFIN:ZDB-ALT-110413\u20135</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>UAS:KillSwitch; y518</td>\n      <td>PMID:30078569</td>\n      <td>ZFIN:ZDB-ALT-181218\u20135</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>UAS:Kaede; s1999t</td>\n      <td>PMID:17335798</td>\n      <td>ZFIN:ZDB-ALT-070314\u20131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>elavl3:h2b-GCaMP6; jf5</td>\n      <td>PMID:25068735</td>\n      <td>ZFIN:ZDB-ALT-141023\u20132</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>\n      <td>PMID:26635538</td>\n      <td>ZFIN:ZDB-ETCONSTRCT-151102\u20131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>REx2-SCP1:BGi-Cre</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ETCONSTRCT-180514\u20132</td>\n      <td>Progenitors:REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>REx2-SCP1:BGi-Cre-2a-Cer.zf3 (plasmid)</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ETCONSTRCT-180518\u20131</td>\n      <td>Progenitors:REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>attP-REx2-SCP1:BGi-Cre-2a-Cer-attP</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ETCONSTRCT-151102\u20132</td>\n      <td>Progenitors:REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>R2R6-hoxa2-CNE-SCP1:BGi-Cre-2a-Cer</td>\n      <td>This paper</td>\n      <td>ZFIN:ZDB-ETCONSTRCT-180514\u20131</td>\n      <td>Progenitors:REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>tol2-arrm pulldown oligonucleotide</td>\n      <td>This paper</td>\n      <td></td>\n      <td>5-CTCAAGTGAAAGTACAAGTACTTAGGGAAAATTTTACTCAATTAAAAGTAAAAGTATCTGGCTAGAATCTTACTTGAGTAAAAGTAAAAAAGTACTCCATTAAAATTGTACTTGAGTATT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>tol2-arrm pulldown oligonucleotide</td>\n      <td>This paper</td>\n      <td></td>\n      <td>5-TGTAATTAAGTAAAAGTAAAAGTATTGATTTTTAATTGTACTCAAGTAAAGTAAAAATCCCCAAAAATAATACTTAAGTACAGTAATCAAGTAAAATTACTCAAGTACTTTACACCTCTG</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Advanced Normalization Tools</td>\n      <td>PMID:17659998</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Zebrafish Brain Browser (desktop)</td>\n      <td>PMID:26635538</td>\n      <td></td>\n      <td>Download at https://science.nichd.nih.gov/confluence/display/burgess/Brain+Browser</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Zebrafish Brain Browser (online)</td>\n      <td>This paper</td>\n      <td>GitHub:BurgessLab/ZebrafishBrainBrowser</td>\n      <td>zbbrowser.com; Githhub hosts javascript code using X3DOM to render image files</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>ImageJ</td>\n      <td>PMID:22930834</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Confocal images for ZBB2 lines</td>\n      <td>This paper</td>\n      <td>Dryad:doi:10.5061/dryad.tk467n8</td>\n      <td>Compressed archives containing 16-bit NIFTI format scans of individual larvae</td>\n    </tr>\n  </tbody>\n</table>\n\n### Husbandry\n\nZebrafish (Danio rerio) were maintained on a Tubingen long fin strain background. Larval zebrafish were raised on 14/10 hr light/dark cycle at 28\u00b0C in E3h medium (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgSO4, 1.5 mM HEPES, pH 7.3) with 300 \u00b5M N-Phenylthiourea (PTU, Sigma) to suppress melanogenesis for imaging. Experiments were conducted with larvae at 6 days post fertilization (dpf), before sex differentiation. Experimental procedures were approved by the NICHD animal care and use committee.\n\n### Zebrafish lines\n\nEnhancer trap lines that express Cre (et-Cre lines) were initially isolated through enhancer trap screening using a tol2 vector containing a REx2-SCP1:BGi-Cre-2a-Cer cassette (286 adult fish screened) (Marquart et al., 2015). Although the fluorescent protein Cerulean is co-expressed with Cre in this vector, it was rarely strong enough to visualize directly, and we instead screened using the \u03b2actin:Switch transgenic line (Horstick et al., 2015). Thus subsequently, we removed the 2a-Cer cassette from the enhancer trap vector for generating new lines and injected a vector with a REx2-SCP1:BGi-Cre cassette (75 adult fish screened). At least 50 (usually over 100) offspring of injected fish were visually screened for RFP fluorescence from the \u03b2actin:Switch (Tg(actb2:loxP-eGFP-loxP-ly-TagRFPT)y272) reporter line (Horstick et al., 2015). As around 10% of injected animals transmitted more than a single expression pattern, likely reflecting several integration loci, we bred each line for multiple generations to isolate a single heritable transgene. Gal4 lines newly described here have been maintained for at least seven generations, in all cases with the UAS:Kaede reporter for visualizing expression. New Cre lines have been maintained for at least three generations, with the \u03b2actin:Switch reporter. Because we only retained lines with restricted areas of brain expression, we ultimately kept lines from around 20% of injected fish. For maintenance, Cre lines were crossed to fish heterozygous for the \u03b2actin:Switch transgene. Outcrossing to \u03b2actin:Switch was necessary because, as in other systems, leaky Cre expression recombines lox sites that are transmitted through the same gamete (Schmidt-Supprian and Rajewsky, 2007). Consequently, in clutches from et-Cre;\u03b2actin:Switch crossed to \u03b2actin:Switch, we discarded\u00a0~25% of embryos that showed ubiquitous RFP expression due to complete recombination of the Switch reporter in gametes also containing the Cre transgene. We also imaged previously described Cre lines with rhombomere-specific expression (Tabor et al., 2018). Gal4 enhancer trap lines were isolated as previously described (Bergeron et al., 2012). UAS reporter transgenes are susceptible to silencing leading to variegated expression. To minimize silencing, we raise single insertion UAS reporters with a broadly expressed Gal4 transgene. In each generation, we outcross to wildtype stock, and raise only double transgenic individuals with the brightest and most complete expression (typically around 20% of fluorescent protein positive embryos).\n\nOther zebrafish lines in this study were: UAS:Kaede (Tg(UAS-E1b:Kaede)s1999t (Davison et al., 2007), UAS:KillSwitch (Tg(14xUAS-E1b:BGi-lox-GFP-sv40-loxepNTR-TagRFPT)y518) (Tabor et al., 2018), y379-Cre and y484-Cre (Marquart et al., 2017), vglut2a:DsRed (TgBAC(slc17a6b:loxP-DsRed-loxP-GFP)nns9) (Satou et al., 2013), Tg(gata1:dsRed)sd2 (Traver et al., 2003), Tg(\u22124.9sox10:EGFP)ba2 (Wada et al., 2005), Tg(\u22128.4neurog1:GFP)sb1 (Blader et al., 2003), Tg(kctd15a:GFP)y534 (Heffer et al., 2017), Tg(pou4f3:gap43-GFP)s356t (Xiao et al., 2005), Et(\u22121.5hsp70l:Gal4-VP16)s1156t and Et(fos:Gal4-VP16)s1181t (Scott and Baier, 2009), TgBAC(neurod:EGFP)nl1 (Obholzer et al., 2008), Tg(mnx1:GFP)ml2 (Flanagan-Steet et al., 2005), and y271-Gal4 (Horstick et al., 2015). For counting neurons in the brain, we used huC:h2b-GCaMP6 (Tg(elavl3:h2b-GCaMP6)jf5) (Vladimirov et al., 2014), which has multiple transgene integrations, minimizing effects of variable expression and silencing.\n\n### Brain imaging and processing\n\nFor imaging, six dpf larvae were embedded in 1.5\u20133.5% agarose in E3h and oriented dorsal to the objective. Each larval brain was scanned in two image stacks (anterior and posterior halves, 1 \u00d7 1\u00d72 \u00b5m resolution) with an inverted Leica TCS-SP5 II confocal with a 25X, 0.95 NA objective, while adjusting laser power during scans to compensate for intensity loss with depth. Gal4 expression was visualized using UAS:Kaede and Cre expression using RFP expression from \u03b2actin:Switch. Color channels were usually acquired simultaneously and crosstalk removed in post-processing using a Leica dye separation algorithm. Substacks were connected using the pairwise stitching plugin in ImageJ (Preibisch et al., 2009; Schneider et al., 2012).\n\nImage registration was performed using affine and diffeomorphic algorithms in ANTs (Avants et al., 2011) with parameters optimized for live embryonic zebrafish brain scans that produce alignments with an accuracy of approximately one cell diameter (8 \u00b5m) (Marquart et al., 2017). For registration, each image stack required a reference image previously registered to the ZBB coordinate system. Reference channels were vglut2a:DsRed for Gal4 lines and \u03b2actin:Switch GFP for Cre lines. Other transgenic lines and patterns were registered using either vglut2a:dsRed or vglut2a:GFP where appropriate. For Cre lines, we merged the \u03b2actin:Switch GFP and RFP signals into a combined pattern to provide a channel for registration. We then applied the resulting transformation matrix to the RFP channel alone. Next, we averaged registered brain images from at least three larvae per line, using the ANTs AverageImages command, to create a representative image of each line. Mean images were masked to remove expression outside the brain, except where inner ear hair cells or neuromasts were labeled. Next, we normalized intensity to saturate the top 0.01% of pixels, and downsampled to 8-bit to reduce file size and facilitate distribution. We manually defined fluorescent intensity thresholds for each line that best distinguished cellular expression from neuropil or background to facilitate spatial search for lines that express in selected cell populations. Mean images were also aligned to Z-Brain using a previously described bridging transformation matrix (Marquart et al., 2017).\n\nBecause registration using the \u03b2actin:Switch bridging channel proved more accurate than our previous bridging registration with HuC:Cer, we re-imaged and registered the Cre lines recovered in our pilot screen. Gal4 lines generated and imaged by the Dorsky lab (Otsuna et al., 2015) were registered using two channels: the nuclear counter-stain channel (TO-PRO\u22123) and immunolabeling for myosin heavy chain, aligned to HuC:nls-mCar and tERK in ZBB respectively. We also used multichannel registration to align brain scans performed by the Baier lab (F\u00f6rster et al., 2017), taking advantage of three expression patterns present in both datasets: vglut2a:dsRed, isl2b:GFP and gad1b:GFP.\n\n### Integration site mapping\n\nTo efficiently map enhancer trap integration sites we extracted genomic DNA from embryos from each line (Qiagen DNeasy Blood and Tissue Kit) and generated a barcoded library. We hybridized the library to biotinylated 120 bp primers (IDT ultramers) designed against the tol2 sequence arms and enriched for genomic integration sites using avidin-pulldown. Enriched libraries were combined into 15 pools such that each pool contained a unique combination of five transgenic lines and each line was exclusively represented in two pools. Pooled libraries were sequenced using an Illumina MiSeq (Illumina) which produced 250 bp paired-end reads. Reads were aligned against the biotinylated primer sequence, then unique sequences within each read subsequently aligned to a zebrafish reference genome (danRer10). Sequences common to all pools were assumed to be off-target and removed from analysis. Remaining reads from each pool were cross-referenced to the combination of embryos in each pool. Regions that had high and specific enrichment in both pools containing DNA from a particular sample were assigned as candidate insertion sites for that sample. To validate this procedure, we confirmed the map position for four lines through direct PCR genotyping.\n\n### Expression analysis\n\nTo assess the selectivity of transgene expression, we manually set an intensity threshold for each line to distinguish cell body labeling from background, and calculated the proportion of voxels in the total cell body volume with a super-threshold signal. In assessing total brain coverage by the Cre library, we excluded y457-Cre which has extremely broad (possibly pan-neuronal) expression. To quantitatively describe transgene expression patterns, we created 20\u00a0\u00d7\u00a020\u00a0\u00d7\u00a020 \u00b5m cubic bins (total 1804 bins) that were each entirely within the left hemisphere of the brain. For each line, we measured the mean expression within each bin and its corresponding volume on the right hemisphere. The resulting 1804 element vector was re-scaled in the range 0 to 1.0 to describe the relative intensity of transgene expression in each bin. Supplementary file 3 reports these values together with the location of center voxel for each bin (Horizontal: dorsal to ventral; Transverse: Anterior to Posterior; Sagittal: Left to Right). In the downloadable version of ZBB2, this position can be recalled by using View \u2192 Jump to Frame, then entering the coordinates provided in first three columns in Supplementary file 3 (e.g. 230, 90, 210 to access the center position for the first volume in the Table).\n\nTo estimate the total number of cells at six dpf, we dissected brains and counted dissociated cells using a cell sorter, yielding a total of 124700\u00a0\u00b1\u00a02200 cells per brain (mean and standard error, N\u00a0=\u00a09), including mature and immature neurons, glia and non-neural cells (e.g. connective tissue and vasculature).\n\nFor this procedure, brains were dissected at room temperature in 1x PBS (K-D Medical), dissociated in papain (Papain Dissociation System, Worthington Biochemical) by incubation in 20 U/mL papain for 20 min then triturated and 0.005% DNAse added. The final volume was adjusted to 200 \u00b5L in DMEM fluorobrite (Gibco) and immediately counted using a BD FACSCalibur (BD Biosciences), using a custom gate to include single cells in the forward and side scattered area. To minimize cell death, the entire process was completed within 45 min per brain.\n\nWe estimated the number of differentiated neurons by manually counting fluorescently labeled post-mitotic neurons in brain images. For this, we first imaged huC:h2b-GCaMP6 transgenic brains at high-resolution (0.5\u00a0\u00d7\u00a00.5\u00a0\u00d7\u00a00.5 \u03bcm per voxel). In this line, nuclear-localized GCaMP fluorescence provides a discrete signal that facilitates identification of single neurons even in dense regions. We assigned all voxels in the brain to five neuronal-density bins based on the ratio of huC:nls-mCar (somas), and huC:Gal4, UAS:syp-RFP (synapses; see Figure 4A) and identified five representative volumes (30\u00a0\u00d7\u00a030\u00a0\u00d7\u00a030 \u03bcm each) for each of the five bins. We then counted neurons in huC:h2b-GCaMP6 brain scans in each of the 25 volumes. Finally, we scaled the mean number of neurons in each bin by the relative fraction of the brain that each bin covers to obtain an estimate of the total neuron number. Using this procedure, we estimated that there are 92,000\u00a0\u00b1\u00a03000 mature neurons in the six dpf brain (N\u00a0=\u00a03 larvae).\n\nTo analyze the regional distribution of cell types based on molecular marker expression, we calculated the mean transgene expression intensity for 72 manually annotated anatomical structures (Z-Brain, Supplementary file 4) and for 168 computational defined brain regions (subset of Pajevic 180 regions, excluding narrow regions on the perimeter of the brain, Supplementary\u00a0file 5) (Gupta et al., 2018; Randlett et al., 2015). For each line analyzed, voxel expression values were scaled 0\u20131, and means thus reflect the relative intensity of expression for regions within each maker and can not be compared between markers.\n\n### Zebrafish Brain Browser software\n\nThe lines scanned and registered here were incorporated into the locally run Zebrafish Brain Browser, which requires downloading and installing the free IDL runtime environment. ZBB2 (including software and full resolution datasets) can be downloaded from our website (https://science.nichd.nih.gov/confluence/display/burgess/Brain+Browser).\n\nTo increase accessibility we also implemented an online version of ZBB2 that does not require downloading, and runs in any javascript-enabled web-browser (http://zbbrowser.com). We used Bootstrap (http://getbootstrap.com/) for interface design and jQuery for event-handling (https://jquery.com/). For rendering of 2D slices and 3D projections, we used X3DOM, a powerful set of open-source 3D graphics libraries for web development which integrates the X3D file format into the HTML5 DOM (Behr et al., 2009; Congote, 2012; John et al., 2008; Polys and Wood, 2012). ZBB2 uses X3DOM\u2019s built in MPRVolumeStyle and BoundaryEnhancementVolumeStyle functions to render 2D image files (texture atlases) in 3D space. The MPRVolumeStyle is used for the X, Y and Z slicer views to display a single slice from a 3D volume along a defined axis. We modified X3DOM source code for this volume style to support additional features including color selection, contrast and brightness controls, rendering of crosshairs, spatial search boxes and intersections between selected lines. The BoundaryEnhancementVolumeStyle renders the 3D projection. We also modified this function's source code, including additions of color, contrast, and brightness values. Other minor changes were made to the X3DOM libraries including a hardcoded override to allow additive blending of line colors. The online ZBB2 loads images of each line as a single 2D texture atlas. Image volumes for each line were converted to a montage, downsampling by taking every 4th plane in the z-dimension, and to 0.25, 0.5, and 0.75 their original size for low, medium, and high resolutions respectively to ensure rapid loading time. Texture atlas images were then referenced using X3DOM\u2019s \u2018ImageTextureAtlas\u2019 node, and its \u2018numberOfSlices\u2019, \u2018slicesOverX\u2019, and \u2018slicesOverY\u2019 attributes were specified as 100, 10, and 10, respectively. These atlases were then referenced by \u2018VolumeData\u2019 nodes, along with an MPRVolumeStyle or BoundaryEnhancementVolumeStyle node, to build the volumes visible on the screen.\n\nTo implement the 3D spatial search in the online edition of ZBB2, we first binarized and 4x-downsampled the resolution of each line. The data for each line was then parsed into a single array (width, height, depth). We compressed adjacent binary values into a single byte using bit shifting operators, downsampling the data once again by eight times. While greatly downsized, the entire dataset was still much too large to quickly download. We therefore fragmented the array for each line into 8 \u00d7 8\u00d78 blocks of 64 bytes each, and concatenated blocks for every line, creating a single array of around 17 kb for a specific sub-volume of the brain. After the user defines the search volume, relevant volume fragments are downloaded and searched. Data from each fragment file is passed to a JavaScript Web Worker, allowing each file to be searched in a separate thread. This procedure facilitates minimal search times, with the main limitation being that thousands of binary files must be regenerated whenever a new line is added to the library.\n\n### Quantification and statistical analysis\n\nAnalysis was performed with IDL (http://www.harrisgeospatial.com/SoftwareTechnology/IDL.aspx), Gnumeric (http://projects.gnome.org/gnumeric/) and Matlab (Mathworks).\n\n### Resource sharing\n\nMost enhancer trap lines are available from Zebrafish International Resource Center (https://zebrafish.org), with all others available from the authors upon request. Registered individual confocal brain scans can be downloaded from Dryad\u00a0(https://doi.org/10.5061/dryad.tk467n8). Brain browser javascript code can be downloaded from GitHub (Hurt et al., 2018; copy archived at https://github.com/elifesciences-publications/ZebrafishBrainBrowser).\n",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "9c064ca3-ed49-4520-a97e-22d08b8aa088",
+      "submission_id": "55cabb37-4522-4ed2-b7bb-0b5e1949e6e6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Indira M Raman, Northwestern University United States\n\nReviewers:\n- Claire Wyart, H\u00f4pital Piti\u00e9-Salp\u00eatri\u00e8re, Sorbonne Universit\u00e9s, UPMC Univ Paris 06, Inserm, CNRS France\n\n## Review text\n\nDOI: [10.7554/eLife.42687.018](https://doi.org/10.7554/eLife.42687.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Brain-wide cellular resolution imaging of Cre transgenic zebrafish lines for functional circuit-mapping\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Didier Stainier as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Claire Wyart (Reviewer #1). The other reviewers remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis tool/resource provides a large set of zebrafish Cre and Gal4 lines for use by the zebrafish research community for the generation of specific lines through intersectional genetics. The data are organized into an online platform that makes the content readily accessible to investigators.\n\nEssential revisions:\n\nThe reviewers expressed enthusiasm about the platform as well as the care that went into the work. These comments are listed below under \"general assessments\" from each reviewer. Two points of concern/interest were raised.\n\n1) Reviewer 3 brought up the point that it is not clear whether the intersectional approach will work well or not with fish in which both Gal4 and cCre are expressed in only a small number of neurons. The idea here is that it should, but evidence is not provided that it does. (Reasons for questioning whether it does are given in the reviewer's comments, but include stochastic activity at target loxP sites for Cre, and variable expression and silencing for Gal4.) In the consultation, the other reviewers agreed with reviewer 3's concern, and therefore suggest that an example or two be provided. We realize this will require some breeding time if no such data is already in hand; please let us know if this is feasible.\n\n2) Reviewer 1 suggested that the utility of the resource could be greatly increased by a somewhat deeper analysis of the existing data, e.g., by providing information on neurotransmitter type by quantifying overlap with transgenic lines targeting specific neurotransmitter types. This would not require new data, but additional information on the existing data.\n\nThese points are more fully spelled out in the collected major comments from the reviewers, which are listed below, with editorial indications in square brackets.\n\nGeneral assessments:\n\nReviewer #1:\n\nThe manuscript of Tabor et al. provide a very important set of cre and gal4 lines that will be extremely useful for intersectional genetics in the field of zebrafish neuronal circuits, together with a novel online platform, which is extremely convenient to analyse the profile of expression online using ZBB2. I believe that this effort is determinant for the expansion of the field of the investigation of neuronal circuits underlying behavior in zebrafish larvae.\n\nReviewer #2:\n\nThis paper is a resources and tools contribution that presents many (100ish) new zebrafish CRE and gal4 lines to facilitate intersectional genetic strategies in fish. Importantly, the lines are presented in a beautiful online (or downloadable) browser that makes it very easy to explore them to decide which ones are useful, while learning about the larval fish brain at the same time. Accessibility and easy evaluation of the lines is as important as the lines themselves. The combination of lines with the ability to easily explore them and their relationships and intersection with other lines makes for a strong contribution. I have no substantive issues with a well presented and very useful tool. All the materials and fish are made accessible.\n\nReviewer #3:\n\nIn this manuscript Tabor et al. have generated more than 50 enhancer trap lines that express Cre in defined population of cells in the CNS. The authors obtained high-resolution images of these new lines along with 45 Gal4 enhancer trap lines that have not yet been reported. The authors then registered these images with the Zebrafish Brain Browser (ZBB) atlas, software that was created by the authors in a previous study (Marquart et al., 2015). Together with the images that have already been reported (109 lines), the new database (ZBB2) now include 65 Cre lines and 158 Gal4 lines. Additionally, the authors provide an online interface to the atlas. There is no doubt that these resources will be very useful for the zebrafish neuroscience community.\n\nMajor comments [concatenated and reordered, from all reviewers]:\n\n1) [Related to Essential revision 1] Throughout the manuscript, the words, \"cellular resolution\", \"single cell resolution\", and \"intersectional targeting\" are used multiple times. With these words, readers would expect the following experiments: searching for Cre and Gal4 lines in the database, finding small numbers of neurons in which Cre and Gal4 expression overlap, and expressing reporter/effecter genes in these neurons. Nowhere in the manuscript, however, are examples of such experiments are provided. Thus, it is not clear whether targeting expression of reporter genes with cellular resolution is possible with the combination of Cre and Gal4. There are several potential concerns for the intersectional targeting of small numbers of neurons. These include stochastic activity at target loxP sites for Cre, and variable expression and silencing for Gal4. The authors cite the Current Biology paper (Tabor et al., 2018) as an example of intersectional targeting, but the Cre lines used in that study are broad expression lines (Cre expression in particular rhombomeres). So, the study does not serve as an example of intersectional targeting at cellular resolution. There is one place in the paper where the authors mention UAS:Switch expression experiments (in Discussion). However, it is written in a negative context: \"Occasionally, we have observed UAS:Switch expression in neurons outside the domain of Cre expression in the ZBB2 atlas\". In any case, the authors need to show clear examples of intersectional targeting in small numbers of neurons where Cre and Gal4 expression overlap in the ZBB2database.\n\n2) [Related to Essential revision 2] While I do not request more experiments to the authors, I think an in-depth analysis of the distribution of interneurons types based on neurotransmitter and neuromodulator expressions per brain area, which seems amenable to the authors based on the data acquired, would provide more relevant information to the reader and the field. In particular, it would be useful to take it a step further and analyze out of the ~92 000 neurons in the brain the putative distribution as a function of neurotransmitter, neuromodulator and/or neuropeptide types. This effort would constitute a critical resource for the field and seems possible to estimate with ZBB2 and the collection of transgenic lines mapped in the 6 dpf zebrafish larval brain.\n\n3) [Related to Essential revision 2] Related to Figure 3: Seeing images of the lines or 3D views online is very nice qualitatively. Naive question here: I wonder if we could take it one step further to reach a quantitative representation of the expression over the entire brain space of the larva. Do the authors have a simple way to converge on a physical 3D map indexed in a matrix with absolute coordinates that we could refer to in publications from different labs?\n\n4) [Related to Essential revision 2] In order to locate with absolute coordinates the expression of transgenes better than by eye on the atlas: could the authors come up with a matrix of ~1000 bins (containing on average 10 neurons) for which each index corresponds to a graded value of expression on a 0-1 scale?\n",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "57c17c23-93cd-4f28-b661-276eac7df6db",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C1",
+      "claim": "The ZBB2 atlas comprises whole-brain expression patterns for 264 transgenic lines, including 65 Cre lines and 158 Gal4 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe the ZBB2 atlas, which comprises whole-brain expression patterns for 264 transgenic lines, including 65 Cre lines, and 158 Gal4 lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the composition of the ZBB2 atlas with specific numbers of transgenic lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "0ce06c42-f45c-4da3-bdde-171f2410d34e",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C2",
+      "claim": "More than 50 new Cre lines were generated for the ZBB2 atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate intersectional targeting in zebrafish, we have generated more than 50 new Cre lines, and co-registered brain expression images with the Zebrafish Brain Browser, a cellular resolution atlas of 264 transgenic lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of new Cre lines generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "c497f5a8-96e8-458d-9f84-fe1379cdd24a",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C3",
+      "claim": "The ZBB2 atlas can be accessed using a web-browser at zbbrowser.com.",
+      "claim_type": "EXPLICIT",
+      "source": "Lines labeling neurons of interest can be identified using a web-browser to perform a 3D spatial search (zbbrowser.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides the web address for accessing the atlas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "0f1df0bd-a738-47a8-8ef8-c7b93fe9cdc7",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C4",
+      "claim": "Very few transgenic lines strongly express reporter genes in a single cell type within a spatially restricted domain.",
+      "claim_type": "EXPLICIT",
+      "source": "While gene regulatory elements are often exploited to direct transgene expression, very few transgenic lines strongly express reporter genes in a single cell type within a spatially restricted domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation about transgenic lines in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "3d23f302-4706-4033-9efd-b15b468a21a1",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C5",
+      "claim": "Intersectional genetic strategies enable reporter expression to be controlled by multiple independently-expressed activators.",
+      "claim_type": "EXPLICIT",
+      "source": "Such methods include intersectional genetic strategies, where reporter expression is controlled by multiple independently-expressed activators (Dymecki et al., 2010; Gohl et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work describing intersectional genetic strategies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "898027c8-8f41-40ef-a730-9a77cd013061",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C6",
+      "claim": "In zebrafish, intersectional control of transgene expression has been achieved by combining the Gal4/UAS and Cre/lox systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, intersectional control of transgene expression has been achieved by combining the Gal4/UAS and Cre/lox systems (F\u00f6rster et al., 2017; Satou et al., 2013; Tabor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies demonstrating this approach in zebrafish.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "ee6a8c33-0f07-4227-b3af-7683b2d450bb",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C7",
+      "claim": "The first version of the Zebrafish Brain Browser (ZBB) atlas provided co-aligned high resolution image stacks of more than 100 transgenic lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The first version of the Zebrafish Brain Browser (ZBB) atlas provided a partial solution to these problems by co-aligning high resolution image stacks of more than 100 transgenic lines, with an accuracy approaching the limit of biological variability (Marquart et al., 2017; Marquart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous publications describing the first version of ZBB.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "b236ee7b-1bc3-4778-86df-cf91e52ca9dd",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C8",
+      "claim": "The first version of ZBB only included 9 Cre lines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ZBB software required local installation and only included 9 Cre lines, limiting opportunities for intersectional targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the limitation of the first ZBB version.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "88c833de-936c-4775-9957-89940628b99b",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C9",
+      "claim": "More than 100 new enhancer trap lines that express Cre or Gal4 in diverse subsets of neurons were generated.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated more than 100 new enhancer trap lines that express Cre or Gal4 in diverse subsets of neurons, then registered a high resolution image of each to the original ZBB atlas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of new enhancer trap lines generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "064dcaff-0137-4138-b5f7-99fa8d261405",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C10",
+      "claim": "ZBB2 labels almost all cellular regions within the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, ZBB2 labels almost all cellular regions within the brain and will facilitate the reproducible targeting of neuronal subsets for circuit-mapping studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes this claim about the coverage of ZBB2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "cc5b5b12-4301-4071-8f8b-724260e0d089",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C11",
+      "claim": "52 new lines that express Cre in restricted brain regions at 6 days post-fertilization (dpf) were retained.",
+      "claim_type": "EXPLICIT",
+      "source": "We retained 52 new lines that express Cre in restricted brain regions at 6 days post-fertilization (dpf), the stage most frequently used for behavioral experiments and circuit-mapping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of new Cre lines retained and the developmental stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "aa744ee8-92ec-4852-9920-2150482363ce",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C12",
+      "claim": "6 days post-fertilization is the stage most frequently used for behavioral experiments and circuit-mapping in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "We retained 52 new lines that express Cre in restricted brain regions at 6 days post-fertilization (dpf), the stage most frequently used for behavioral experiments and circuit-mapping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a rationale for the developmental stage chosen.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "2c4b53ce-3e56-43c3-9bb7-88f6470c4f44",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C13",
+      "claim": "The enhancer trap construct contains a neuronal-restrictive silencing element to suppress expression outside the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "New Cre lines were generated through an enhancer trap screen: we injected embryos with a Cre vector containing a basal promoter that includes a neuronal-restrictive silencing element to suppress expression outside the nervous system, and tol2 transposon arms for high efficiency transgenesis (REx2-SCP1:BGi-Cre-2a-Cer) (Bergeron et al., 2012; Kawakami, 2007; Marquart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the construct design and cites supporting references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "22c8cd28-ee06-4bca-ba11-c74be4556401",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C14",
+      "claim": "The enhancer trap construct contains tol2 transposon arms for high efficiency transgenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "New Cre lines were generated through an enhancer trap screen: we injected embryos with a Cre vector containing a basal promoter that includes a neuronal-restrictive silencing element to suppress expression outside the nervous system, and tol2 transposon arms for high efficiency transgenesis (REx2-SCP1:BGi-Cre-2a-Cer) (Bergeron et al., 2012; Kawakami, 2007; Marquart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the construct design and cites supporting references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "15157f1e-ce65-4cbc-9dab-880797118d3f",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C15",
+      "claim": "The reporter randomly integrates into the genome such that Cre expression is directed by local enhancer elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In injected G0 embryos, the reporter randomly integrates into the genome such that Cre expression is directed by local enhancer elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the mechanism of enhancer trap transgenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "3b4794ff-8bd9-44a1-b585-5ca26d99eeb7",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C16",
+      "claim": "The \u03b2actin:Switch transgenic line expresses red fluorescent protein (RFP) in cells with Cre.",
+      "claim_type": "EXPLICIT",
+      "source": "To isolate lines with robust brain expression in relatively restricted domains, we visually screened progeny of G0 adults crossed to the \u03b2actin:Switch transgenic line that expresses red fluorescent protein (RFP) in cells with Cre (Horstick et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the reporter line used for screening and cites the source.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "61c4197d-2dc5-4a6b-908a-fa181c298c91",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C17",
+      "claim": "A representative image of Cre expression was obtained by averaging registered brain scans from 3 to 10 larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain a representative image of Cre expression, we averaged registered brain scans from 3 to 10 larvae and masked expression outside the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the image processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "9ed05d1c-0464-47e6-80c8-c467f49b52a2",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C18",
+      "claim": "45 additional Gal4 lines in which robust brain expression is accompanied by expression in non-neural tissues were imaged.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore imaged 45 additional Gal4 lines in which robust brain expression is accompanied by expression in non-neural tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of additional Gal4 lines imaged.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "af00f021-0e5f-43ac-999a-a0c4f4456204",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C19",
+      "claim": "The synthetic untranslated region (UTR.zb3) suppresses non-neuronal expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent development of a synthetic untranslated region (UTR.zb3) that suppresses non-neuronal expression has mitigated issues associated with Gal4 driving effector genes in non-neuronal tissues (Marquart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous publication describing UTR.zb3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "61ce5c94-3963-46d3-b9b7-e74d1f327caa",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C20",
+      "claim": "Gal4 expression was visualized using the UAS:Kaede transgenic line.",
+      "claim_type": "EXPLICIT",
+      "source": "We visualized Gal4 expression using the UAS:Kaede transgenic line and registered patterns to ZBB by co-imaging vglut2a:DsRed expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the method for visualizing Gal4 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "605c3d90-4006-4c17-ae50-627f5b4d16a3",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C21",
+      "claim": "20 high resolution brain scans of Gal4 lines performed by either the Dorsky or Baier laboratories were aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "We also aligned 20 high resolution brain scans of Gal4 lines performed by either the Dorsky or Baier laboratories by adapting a method for multi-channel registration of the Z-Brain and ZBB atlases (F\u00f6rster et al., 2017; Marquart et al., 2017; Otsuna et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of scans aligned from other laboratories and cites the sources.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "f33c9496-1ee1-449d-a156-fa4fe0e39fac",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C22",
+      "claim": "ZBB2 includes the spatial pattern of expression for 158 Gal4 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, ZBB2 includes the spatial pattern of expression for 158 Gal4 lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the total number of Gal4 lines in ZBB2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "912941b1-777e-4b3d-a4ee-9ec701bc682b",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C23",
+      "claim": "ZBB2 describes the expression pattern for 264 transgenic lines, more than doubling the number in the original atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, ZBB2 describes the expression pattern for 264 transgenic lines, more than doubling the number in the original atlas (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the total number of lines and compares to the original atlas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "85dee8d2-0efd-4e6a-a619-985c3a1e7aa3",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C24",
+      "claim": "ZBB2 contains expression data for 56 transgenic lines whose expression is directed by a defined promoter or through integration into a bacterial artificial chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "ZBB2 contains expression data for 56 such transgenic lines, including reporters for most major neurotransmitters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of transgenic lines with defined promoters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "d986e75d-1faf-4011-ab93-1e4e621f702a",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C25",
+      "claim": "A new method was developed to efficiently map integration sites using an oligonucleotide to hybridize with the enhancer trap tol2 arms and capture flanking genomic DNA fragments for sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore developed a new method to efficiently map integration sites, using an oligonucleotide to hybridize with the enhancer trap tol2 arms and capture flanking genomic DNA fragments for sequencing (see Materials and methods for detail).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the development of a new method for integration site mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "fc5f6b9c-a184-47f8-b2fe-291f231de64b",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C26",
+      "claim": "The integration site for 55 Gal4 and Cre enhancer trap lines was recovered.",
+      "claim_type": "EXPLICIT",
+      "source": "We recovered the integration site for 55 Gal4 and Cre enhancer trap lines (detailed in ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of integration sites recovered.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "a45ebb53-78b3-441c-9053-e107a758cc7d",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C27",
+      "claim": "171 of the lines in ZBB2 either use a defined promoter or have a known genomic integration site.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether 171 of the lines in ZBB2 either use a defined promoter, or have a known genomic integration site, providing molecular genetic information on cell-type identity (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of lines with genomic information and references Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "ad54e4e1-e07f-400f-b820-821061d15e16",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C28",
+      "claim": "There are approximately 92,000 neurons in the six dpf zebrafish brain.",
+      "claim_type": "EXPLICIT",
+      "source": "As we estimate that there are ~92,000 neurons in the six dpf brain (see Materials and methods), this equates to a median of around 5500 neurons per line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an estimate of neuron number based on their methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "5163af96-25ca-48c9-8779-46ca38b544c8",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C29",
+      "claim": "For Cre lines, median coverage of the cell body volume was 6% (range 0.1% to 48%).",
+      "claim_type": "EXPLICIT",
+      "source": "For Cre lines, median coverage of the cell body volume was 6% (range 0.1% to 48%, Figure 4B,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative data on Cre line coverage and references Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "d00e260e-bad2-42fa-adb3-f40ff41de649",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C30",
+      "claim": "The median coverage of 6% for Cre lines equates to a median of around 5500 neurons per line.",
+      "claim_type": "EXPLICIT",
+      "source": "As we estimate that there are ~92,000 neurons in the six dpf brain (see Materials and methods), this equates to a median of around 5500 neurons per line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript calculates the number of neurons based on the coverage percentage and total neuron estimate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "86e611b4-f317-4354-8f63-24ae990d2a3c",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C31",
+      "claim": "96% of the cellular volume is labeled by at least one Cre line.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 96% of the cellular volume is labeled by at least one Cre line, with an average of 6 lines per voxel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative data on the coverage of Cre lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "d3289001-1a27-4a6a-8c23-18c4f2d0fdea",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C32",
+      "claim": "Cre lines provide limited access to the midbrain tegmentum, posterior tuberculum and trigeminal ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cre lines provide limited access to the midbrain tegmentum, posterior tuberculum and trigeminal ganglion (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies specific brain regions with limited Cre line coverage and references Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "c176c9b9-fb1b-480c-893e-4f344abc146c",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C33",
+      "claim": "Gal4 lines tend to have more restricted expression than Cre lines, with a median coverage of 1% (range 0.02% to 29%, ~900 neurons per line).",
+      "claim_type": "EXPLICIT",
+      "source": "Gal4 lines tend to have more restricted expression than Cre lines, with a median coverage of 1% (range 0.02% to 29%,~900 neurons per line).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative comparison between Gal4 and Cre line coverage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "3df74a67-e686-40c6-8e7c-d153177746f3",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C34",
+      "claim": "Collectively Gal4 lines label 91% of the cell body volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively Gal4 lines label 91% of the cell body volume (Figure 4C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides quantitative data on Gal4 line coverage and references Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "8ae74fcf-d9ee-4247-929d-290b515ec334",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C35",
+      "claim": "Salient areas that are not labeled by Gal4 lines include a rostro-dorsal domain of the optic tectum, the caudal lobe of the cerebellum, and a medial area within rhombomeres 3\u20134 of the medulla oblongata.",
+      "claim_type": "EXPLICIT",
+      "source": "Salient areas that are not labeled include a rostro-dorsal domain of the optic tectum, the caudal lobe of the cerebellum, and a medial area within rhombomeres 3\u20134 of the medulla oblongata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies specific brain regions not covered by Gal4 lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "1da38555-5b53-4d9e-8fb2-13f848fc30ac",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C36",
+      "claim": "Intersectional patterns observed closely matched predicted intersects, labeling relatively small clusters of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, intersectional patterns observed closely matched predicted intersects, labeling relatively small clusters of neurons (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the validation of predicted intersectional expression and references Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "019c96e4-b623-4fb1-950c-b9af34c55b05",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C37",
+      "claim": "Intersectional expression in individual larvae is more restricted than predicted.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, intersectional expression in individual larvae is more restricted than predicted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes an observation about intersectional expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "9381d920-6273-4d88-a012-30901a587c8b",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C38",
+      "claim": "UAS transgenics are susceptible to silencing, reducing the extent of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In part, this may be because UAS transgenics are susceptible to silencing, reducing the extent of expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an explanation for the observation about intersectional expression.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "f8d0f846-b9e1-4ebd-a1ba-83276a202e36",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C39",
+      "claim": "An online version of ZBB2 can be accessed using a web-browser at http://zbbrowser.com.",
+      "claim_type": "EXPLICIT",
+      "source": "For ZBB2, we have imported all the new lines into the original Brain Browser. However, recognizing that requiring a locally installed IDL runtime platform posed a limit to accessibility, we implemented an online version that can be accessed using a web-browser (http://zbbrowser.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the development of an online version and provides the URL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "3555967f-c515-4459-80cb-3f5e974ca67b",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C40",
+      "claim": "The online version of ZBB2 includes key features of the original Brain Browser, including 3D spatial search, prediction of the area of intersectional expression between selected lines, partial/maximal/3D projections, information about the neuroanatomical identity of any selected voxel and ability to load user-generated image data.",
+      "claim_type": "EXPLICIT",
+      "source": "The online version includes key features of the original Brain Browser, including 3D spatial search, prediction of the area of intersectional expression between selected lines, partial/maximal/3D projections, information about the neuroanatomical identity of any selected voxel and ability to load user-generated image data (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript lists the features of the online version and references Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "495103b4-82c5-4086-aacc-9703486d37aa",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C41",
+      "claim": "The online version features an integrated virtual reality viewer for Google cardboard.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the online version features an integrated virtual reality viewer for Google cardboard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes an additional feature of the online version.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "5c1d7cd3-55f2-48de-b529-14cb684c8819",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C42",
+      "claim": "X3DOM libraries were used to achieve rapid volume rendering and enable users to select data resolution that best matches their connection speed.",
+      "claim_type": "EXPLICIT",
+      "source": "We used X3DOM libraries to achieve rapid volume rendering and enable users to select data resolution that best matches their connection speed, so that the browser-based implementation remains highly responsive (Arbelaiz et al., 2017b; Arbelaiz et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the technical implementation and cites supporting references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "6e8ac5ef-cb62-4d3e-ae83-1f4c996f7c6e",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C43",
+      "claim": "Both local and web-based versions include hyper-links to PubMed, UCSC Genome Browser and Zfin.",
+      "claim_type": "EXPLICIT",
+      "source": "Both local and web-based versions include hyper-links to PubMed, UCSC Genome Browser and Zfin, so that users can quickly retrieve publications describing each line, its integration site, and ordering information, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes features common to both versions of the browser.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "dc7ecbc5-dbfb-4107-a89b-0103d6aed264",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C44",
+      "claim": "The ZBB2 atlas provides cellular resolution imaging data for 65 Cre lines and 158 Gal4 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The ZBB2 atlas provides cellular resolution imaging data for 65 Cre lines, and 158 Gal4 lines, enabling small clusters of neurons to be genetically addressed through intersectional targeting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the content of the ZBB2 atlas in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "c29d380a-d887-4171-968d-e57c3c89853a",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C45",
+      "claim": "The ZBB2 lines will facilitate structural mapping of the zebrafish brain because many strongly label discrete neuroanatomical entities.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that the ZBB2 lines will also facilitate structural mapping of the zebrafish brain because many strongly label discrete neuroanatomical entities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes a prediction about the utility of the lines.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "58b430de-2ee4-41cd-ab46-4aef9290170d",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C46",
+      "claim": "In Drosophila, intersectional genetic targeting is often achieved using 'split' systems (Gal4, lexA and Q) in which the DNA-binding domain and transactivation domain of a transcription factor are separately expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, intersectional genetic targeting is often achieved using 'split' systems (Gal4, lexA and Q) in which the DNA-binding domain and transactivation domain of a transcription factor are separately expressed ensuring that activity is reconstituted only in neurons that express both protein domains during the same time interval (Pfeiffer et al., 2010; Ting et al., 2011; Wei et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes alternative approaches used in Drosophila and cites supporting references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "f29d2bea-0672-4b8c-bc16-58154c38ece8",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C47",
+      "claim": "Gal4 and Cre lines are independently useful and Cre lines can be used intersectionally with hundreds of existing zebrafish Gal4 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Gal4 and Cre lines are independently useful and Cre lines can be used intersectionally with hundreds of existing zebrafish Gal4 lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a rationale for the approach taken.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "b611ca1e-3e24-4e6c-9d43-c0ba0942cd3f",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C48",
+      "claim": "Several intersectional reporter lines have already been generated to visualize cells that co-express Cre and Gal4.",
+      "claim_type": "EXPLICIT",
+      "source": "Several intersectional reporter lines have already been generated to visualize cells that co-express Cre and Gal4 (F\u00f6rster et al., 2017; Satou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work on intersectional reporter lines.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "e31ccee0-91d8-4f45-83fc-0f5becc0202c",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C49",
+      "claim": "The UAS:KillSwitch line enables selective ablation of neurons that co-express Gal4 and Cre.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the UAS:KillSwitch line enables selective ablation of neurons that co-express Gal4 and Cre, and the UAS:DoubleSwitch line sparsely labels neurons within a Gal4/Cre co-expression domain for morphological reconstruction (Tabor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the function of the UAS:KillSwitch line and cites the source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "b3261877-6c3e-4321-83b3-1afa99e9d626",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C50",
+      "claim": "The UAS:DoubleSwitch line sparsely labels neurons within a Gal4/Cre co-expression domain for morphological reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the UAS:KillSwitch line enables selective ablation of neurons that co-express Gal4 and Cre, and the UAS:DoubleSwitch line sparsely labels neurons within a Gal4/Cre co-expression domain for morphological reconstruction (Tabor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the function of the UAS:DoubleSwitch line and cites the source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "4a432427-afb8-43da-b637-55e97b4a7ade",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C51",
+      "claim": "Enhancer trap screening is a high throughput method that facilitates the isolation of strongly expressing transgenic reporters in diverse anatomical regions and cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "New Gal4 and Cre lines described here were generated through enhancer trap screening, a high throughput method that facilitates the isolation of strongly expressing transgenic reporters in diverse anatomical regions and cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the advantages of enhancer trap screening.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "6daf09b3-4586-404a-9774-2a5538271334",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C52",
+      "claim": "CRISPR or TALEN based methods can be used to insert transgenes into genes known to mark useful cell types or anatomical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative is to use CRISPR or TALEN based methods to insert transgenes into genes known to mark useful cell types or anatomical regions (Auer et al., 2014; Kimura et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes alternative methods and cites supporting references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "079686a6-798d-43c0-8173-0d389fe9f37b",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C53",
+      "claim": "CRISPR or TALEN based methods are moderate throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods are moderate throughput, and have the advantage of providing more reliable cell type information on the resulting transgene expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript characterizes the throughput of these methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "47fdd436-a8eb-4c2c-a5b5-7250813eb9d8",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C54",
+      "claim": "Expression from an endogenous locus may not be sufficient to drive experimentally useful levels of Gal4 or Cre.",
+      "claim_type": "EXPLICIT",
+      "source": "Limitations are that expression from an endogenous locus may not be sufficient to drive experimentally useful levels of Gal4 or Cre, and that an insertion may depress expression of the endogenous protein from the targeted allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes limitations of targeted insertion methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "df58493f-2755-43d8-96f0-5078bffe266a",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C55",
+      "claim": "An insertion may depress expression of the endogenous protein from the targeted allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Limitations are that expression from an endogenous locus may not be sufficient to drive experimentally useful levels of Gal4 or Cre, and that an insertion may depress expression of the endogenous protein from the targeted allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes limitations of targeted insertion methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "58aaeb60-d3cf-4c3a-ad2e-2a1889abc0a0",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C56",
+      "claim": "Many neurological disorders are associated with haploinsufficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that many neurological disorders are associated with haploinsufficiency, reporter lines generated in this way may therefore perturb brain development or function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites general knowledge about neurological disorders.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "6bfdbb45-85fb-4256-957e-e21e5d8c019e",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C57",
+      "claim": "BAC transgenesis is a third method that has been widely used to make new Gal4 and Cre lines.",
+      "claim_type": "EXPLICIT",
+      "source": "BAC transgenesis is a third method that has been widely used to make new Gal4 and Cre lines, that also exploits known gene expression patterns, while avoiding potentially disruptive insertions (F\u00f6rster et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes BAC transgenesis and cites a supporting reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "934208fa-0749-4d43-8dd6-5eefcf1d4403",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C58",
+      "claim": "BAC transgenesis is low throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "However BAC transgenesis is low throughput, and as for targeted insertions, can not guarantee robust reporter expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript characterizes the throughput of BAC transgenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "37dbf64f-4f08-4d58-8438-363b04cac1a9",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C59",
+      "claim": "Insufficient Cre expression may lead to stochastic activity at target loxP sites and consequent mosaic reporter expression.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of the Cre system is that insufficient expression may lead to stochastic activity at target loxP sites and consequent mosaic reporter expression (F\u00f6rster et al., 2017; Schmidt-Supprian and Rajewsky, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a limitation of the Cre system and cites supporting references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "3336d6db-13a0-4d07-84da-e02726828532",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C60",
+      "claim": "Cre is toxic at high levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely Cre is toxic at high levels \u2014 in some cases, mosaic expression may be due to the death of a subset of cells (Bersell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes Cre toxicity and cites a supporting reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "4ce74b9b-f2d4-4dfb-b1da-907830783aab",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C61",
+      "claim": "Enhancer trap Cre lines tend to have broader expression than Gal4 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our enhancer trap Cre lines tend to have broader expression than Gal4 lines, likely because (1) Cre expression in progenitor cells labels all offspring, expanding the domain of expression, and (2) switch reporters remain active after transient Cre expression, whereas Gal4 must be continually expressed to drive UAS reporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes an observation and provides explanations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "e1a37d22-24b2-4223-ace5-3adc959c7f9b",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C62",
+      "claim": "Cre expression in progenitor cells labels all offspring, expanding the domain of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our enhancer trap Cre lines tend to have broader expression than Gal4 lines, likely because (1) Cre expression in progenitor cells labels all offspring, expanding the domain of expression, and (2) switch reporters remain active after transient Cre expression, whereas Gal4 must be continually expressed to drive UAS reporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an explanation for the broader expression of Cre lines.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "d9bb7000-d287-4642-9699-59df8d6acdbd",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C63",
+      "claim": "Switch reporters remain active after transient Cre expression, whereas Gal4 must be continually expressed to drive UAS reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our enhancer trap Cre lines tend to have broader expression than Gal4 lines, likely because (1) Cre expression in progenitor cells labels all offspring, expanding the domain of expression, and (2) switch reporters remain active after transient Cre expression, whereas Gal4 must be continually expressed to drive UAS reporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an explanation for the broader expression of Cre lines.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "54164673-cdaf-4346-8089-d714e27bacec",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C64",
+      "claim": "The 14xUAS-E1b promoter is stronger than the \u03b2-actin promoter present in the switch reporter used to build the atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be because the 14xUAS-E1b promoter is stronger than the \u03b2-actin promoter present in the switch reporter used to build the atlas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an explanation for observed expression outside predicted domains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "541b6fda-ddeb-4a3e-97e2-7f13b5c89079",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C65",
+      "claim": "Most brain regions contain multiple cell types with biological variability in their precise position.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, most brain regions contain multiple cell types with biological variability in their precise position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a general principle about brain organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "5565f545-48c2-40dc-a37b-e56486cd1fec",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C66",
+      "claim": "Predicted overlapping expression based on co-registered brain scans must be experimentally verified.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus predicted overlapping expression based on co-registered brain scans must be experimentally verified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a recommendation based on the limitations discussed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "cd069e2e-f120-4421-a068-b5d0ce2295b1",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C67",
+      "claim": "The ZBB2 atlas advances mapping of the zebrafish brain at single cell resolution by comprehensively describing the cellular-resolution pattern of brain expression for 264 transgenic lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The ZBB2 atlas advances mapping of the zebrafish brain at single cell resolution by comprehensively describing the cellular-resolution pattern of brain expression for 264 transgenic lines and providing a user-friendly web-browser based interface for searching and visualizing the expression in each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the contribution of ZBB2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "8dfb7c27-3bca-4152-bab4-2cfa9cad2282",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C68",
+      "claim": "New Cre and Gal4 enhancer trap lines are freely available.",
+      "claim_type": "EXPLICIT",
+      "source": "New Cre and Gal4 enhancer trap lines are freely available and we anticipate will advance circuit-mapping studies by providing essential reagents for intersectional targeting of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the availability of the lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "21d1b506-2412-43f1-91ff-eacb321ec89b",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C69",
+      "claim": "The database and associated transgenic lines will drive exploration of structure/function relations in the vertebrate brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that this database and the associated transgenic lines will drive exploration of structure/function relations in the vertebrate brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes a prediction about the impact of the resource.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "852a6a6a-a3ae-42b7-8e8c-003d43ab3f99",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C70",
+      "claim": "Zebrafish were maintained on a Tubingen long fin strain background.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish (Danio rerio) were maintained on a Tubingen long fin strain background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the zebrafish strain used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "86e3a1d3-ee16-4b82-a51e-16b12808e642",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C71",
+      "claim": "Larval zebrafish were raised on 14/10 hr light/dark cycle at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval zebrafish were raised on 14/10 hr light/dark cycle at 28\u00b0C in E3h medium (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgSO4, 1.5 mM HEPES, pH 7.3) with 300 \u00b5M N-Phenylthiourea (PTU, Sigma) to suppress melanogenesis for imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the husbandry conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "b7b61951-f3a8-4955-a173-75c529fc52ed",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C72",
+      "claim": "Experiments were conducted with larvae at 6 days post fertilization (dpf), before sex differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were conducted with larvae at 6 days post fertilization (dpf), before sex differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript specifies the developmental stage used for experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "2b159b38-02c6-4c8c-9d31-bcc239cba86a",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C73",
+      "claim": "Experimental procedures were approved by the NICHD animal care and use committee.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental procedures were approved by the NICHD animal care and use committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "ba7ae857-b35b-459f-9a21-0a824e5cefba",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C74",
+      "claim": "286 adult fish were screened for the initial Cre enhancer trap lines using the REx2-SCP1:BGi-Cre-2a-Cer cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancer trap lines that express Cre (et-Cre lines) were initially isolated through enhancer trap screening using a tol2 vector containing a REx2-SCP1:BGi-Cre-2a-Cer cassette (286 adult fish screened) (Marquart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the number of fish screened and cites the source of the construct.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "dac30d06-2ff0-4506-8fc4-977c5ec0f313",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C75",
+      "claim": "75 adult fish were screened using the REx2-SCP1:BGi-Cre cassette without the 2a-Cer element.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus subsequently, we removed the 2a-Cer cassette from the enhancer trap vector for generating new lines and injected a vector with a REx2-SCP1:BGi-Cre cassette (75 adult fish screened).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the number of fish screened with the modified construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "f3cbc5b5-bad0-4be0-a551-65a9b7d5c021",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C76",
+      "claim": "At least 50 (usually over 100) offspring of injected fish were visually screened for RFP fluorescence from the \u03b2actin:Switch reporter line.",
+      "claim_type": "EXPLICIT",
+      "source": "At least 50 (usually over 100) offspring of injected fish were visually screened for RFP fluorescence from the \u03b2actin:Switch (Tg(actb2:loxP-eGFP-loxP-ly-TagRFPT)y272) reporter line (Horstick et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the screening procedure and cites the reporter line source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "726f59b5-f21d-4885-b538-ce8143ad3ca8",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C77",
+      "claim": "Around 10% of injected animals transmitted more than a single expression pattern, likely reflecting several integration loci.",
+      "claim_type": "EXPLICIT",
+      "source": "As around 10% of injected animals transmitted more than a single expression pattern, likely reflecting several integration loci, we bred each line for multiple generations to isolate a single heritable transgene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an observation about the frequency of multiple integrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "b56ef446-d2b7-49c4-a6df-2b2c3a0fe81d",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C78",
+      "claim": "New Gal4 lines have been maintained for at least seven generations with the UAS:Kaede reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Gal4 lines newly described here have been maintained for at least seven generations, in all cases with the UAS:Kaede reporter for visualizing expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the maintenance of Gal4 lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "fdca721a-f9bf-4830-980d-9c432e235b9b",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C79",
+      "claim": "New Cre lines have been maintained for at least three generations with the \u03b2actin:Switch reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "New Cre lines have been maintained for at least three generations, with the \u03b2actin:Switch reporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the maintenance of Cre lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "ead986af-073c-441f-8b75-7a4dd41c79f1",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C80",
+      "claim": "Lines were ultimately kept from around 20% of injected fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we only retained lines with restricted areas of brain expression, we ultimately kept lines from around 20% of injected fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the success rate of line generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "8287ffdd-9fc5-4c98-bfa3-81edfc2c3709",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C81",
+      "claim": "Leaky Cre expression recombines lox sites that are transmitted through the same gamete.",
+      "claim_type": "EXPLICIT",
+      "source": "Outcrossing to \u03b2actin:Switch was necessary because, as in other systems, leaky Cre expression recombines lox sites that are transmitted through the same gamete (Schmidt-Supprian and Rajewsky, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the breeding strategy and cites a supporting reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "5363400e-3022-45ea-806a-331cfb3ad411",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C82",
+      "claim": "In clutches from et-Cre;\u03b2actin:Switch crossed to \u03b2actin:Switch, approximately 25% of embryos showed ubiquitous RFP expression due to complete recombination of the Switch reporter in gametes also containing the Cre transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, in clutches from et-Cre;\u03b2actin:Switch crossed to \u03b2actin:Switch, we discarded ~25% of embryos that showed ubiquitous RFP expression due to complete recombination of the Switch reporter in gametes also containing the Cre transgene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes an observation from the breeding strategy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "51084dfb-1907-4a33-8747-ba852f7962bf",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C83",
+      "claim": "UAS reporter transgenes are susceptible to silencing leading to variegated expression.",
+      "claim_type": "EXPLICIT",
+      "source": "UAS reporter transgenes are susceptible to silencing leading to variegated expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a known issue with UAS reporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "4ba8c007-ca28-43d8-af65-4c2a80616348",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C84",
+      "claim": "To minimize silencing, single insertion UAS reporters are raised with a broadly expressed Gal4 transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize silencing, we raise single insertion UAS reporters with a broadly expressed Gal4 transgene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a strategy to minimize silencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "f3729b9e-b7fe-4633-a3ee-2b02ff68cbc6",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C85",
+      "claim": "In each generation, only double transgenic individuals with the brightest and most complete expression (typically around 20% of fluorescent protein positive embryos) are outcrossed to wildtype stock.",
+      "claim_type": "EXPLICIT",
+      "source": "In each generation, we outcross to wildtype stock, and raise only double transgenic individuals with the brightest and most complete expression (typically around 20% of fluorescent protein positive embryos).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the selection strategy for maintaining lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "bf479318-ac42-4bd8-a438-bd71e7ffbc39",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C86",
+      "claim": "Each larval brain was scanned in two image stacks (anterior and posterior halves, 1 \u00d7 1\u00d72 \u00b5m resolution) with an inverted Leica TCS-SP5 II confocal with a 25X, 0.95 NA objective.",
+      "claim_type": "EXPLICIT",
+      "source": "Each larval brain was scanned in two image stacks (anterior and posterior halves, 1 \u00d7 1\u00d72 \u00b5m resolution) with an inverted Leica TCS-SP5 II confocal with a 25X, 0.95 NA objective, while adjusting laser power during scans to compensate for intensity loss with depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the imaging methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "5aec0aea-9932-4f0a-a0be-42061a3967d2",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C87",
+      "claim": "Image registration was performed using affine and diffeomorphic algorithms in ANTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Image registration was performed using affine and diffeomorphic algorithms in ANTs (Avants et al., 2011) with parameters optimized for live embryonic zebrafish brain scans that produce alignments with an accuracy of approximately one cell diameter (8 \u00b5m) (Marquart et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the registration methodology and cites supporting references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "92e987bc-75b8-4b8c-a12d-0c519a923492",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C88",
+      "claim": "The registration accuracy is approximately one cell diameter (8 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "Image registration was performed using affine and diffeomorphic algorithms in ANTs (Avants et al., 2011) with parameters optimized for live embryonic zebrafish brain scans that produce alignments with an accuracy of approximately one cell diameter (8 \u00b5m) (Marquart et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a quantitative measure of registration accuracy and cites the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "3d157c08-538f-424b-81b3-ce6f1d0cbba7",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C89",
+      "claim": "Mean images were normalized to saturate the top 0.01% of pixels and downsampled to 8-bit to reduce file size.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we normalized intensity to saturate the top 0.01% of pixels, and downsampled to 8-bit to reduce file size and facilitate distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the image processing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "cdba58fc-caff-43a8-80fe-e00f8b4e81f8",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C90",
+      "claim": "Fluorescent intensity thresholds were manually defined for each line to distinguish cellular expression from neuropil or background.",
+      "claim_type": "EXPLICIT",
+      "source": "We manually defined fluorescent intensity thresholds for each line that best distinguished cellular expression from neuropil or background to facilitate spatial search for lines that express in selected cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the thresholding procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "413455ba-89fa-4ee9-8b57-10af3f56982e",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C91",
+      "claim": "Genomic DNA was extracted from embryos from each line and a barcoded library was generated for integration site mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "To efficiently map enhancer trap integration sites we extracted genomic DNA from embryos from each line (Qiagen DNeasy Blood and Tissue Kit) and generated a barcoded library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the method for integration site mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "362be533-1564-49bb-a627-820d689518c3",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C92",
+      "claim": "The library was hybridized to biotinylated 120 bp primers designed against the tol2 sequence arms and enriched for genomic integration sites using avidin-pulldown.",
+      "claim_type": "EXPLICIT",
+      "source": "We hybridized the library to biotinylated 120 bp primers (IDT ultramers) designed against the tol2 sequence arms and enriched for genomic integration sites using avidin-pulldown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the enrichment procedure for integration site mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "8a05b9d9-0677-4597-8220-9865ca02f76a",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C93",
+      "claim": "Enriched libraries were combined into 15 pools such that each pool contained a unique combination of five transgenic lines and each line was exclusively represented in two pools.",
+      "claim_type": "EXPLICIT",
+      "source": "Enriched libraries were combined into 15 pools such that each pool contained a unique combination of five transgenic lines and each line was exclusively represented in two pools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the pooling strategy for sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "ae8f8091-6d57-4dca-9aa5-88fb8e20b020",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C94",
+      "claim": "Pooled libraries were sequenced using an Illumina MiSeq which produced 250 bp paired-end reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooled libraries were sequenced using an Illumina MiSeq (Illumina) which produced 250 bp paired-end reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the sequencing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "0967aea8-2547-49fb-b2bb-edbb4f890c48",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C95",
+      "claim": "The map position for four lines was confirmed through direct PCR genotyping to validate the integration site mapping procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this procedure, we confirmed the map position for four lines through direct PCR genotyping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes validation of the integration site mapping method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "d5039847-f349-4251-8542-313e35558189",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C96",
+      "claim": "y457-Cre was excluded from the assessment of total brain coverage by the Cre library because it has extremely broad (possibly pan-neuronal) expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In assessing total brain coverage by the Cre library, we excluded y457-Cre which has extremely broad (possibly pan-neuronal) expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains an exclusion from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "9c5bd28b-241b-4d90-92ae-44c148362abd",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C97",
+      "claim": "1804 cubic bins (20 \u00d7 20 \u00d7 20 \u00b5m each) were created that were each entirely within the left hemisphere of the brain for quantitative description of transgene expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantitatively describe transgene expression patterns, we created 20 \u00d7 20 \u00d7 20 \u00b5m cubic bins (total 1804 bins) that were each entirely within the left hemisphere of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the method for quantifying expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "9ec68378-9bf6-4973-9e96-bea6e497fb65",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C98",
+      "claim": "The total number of cells at six dpf was estimated by dissecting brains and counting dissociated cells using a cell sorter, yielding 124700 \u00b1 2200 cells per brain (mean and standard error, N = 9).",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate the total number of cells at six dpf, we dissected brains and counted dissociated cells using a cell sorter, yielding a total of 124700 \u00b1 2200 cells per brain (mean and standard error, N = 9), including mature and immature neurons, glia and non-neural cells (e.g. connective tissue and vasculature).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the method and results for estimating total cell number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "adaa2ba3-3ca5-4c68-abd7-0a88cc5f260c",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C99",
+      "claim": "The estimate of 92,000 \u00b1 3000 mature neurons in the six dpf brain was obtained by manually counting fluorescently labeled post-mitotic neurons in brain images (N = 3 larvae).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this procedure, we estimated that there are 92,000 \u00b1 3000 mature neurons in the six dpf brain (N = 3 larvae).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the estimate and sample size for neuron counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "36ba7c86-65d5-4cba-87f4-51d88eceeb3c",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C100",
+      "claim": "The huC:h2b-GCaMP6 transgenic line has multiple transgene integrations, minimizing effects of variable expression and silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "For counting neurons in the brain, we used huC:h2b-GCaMP6 (Tg(elavl3:h2b-GCaMP6)jf5) (Vladimirov et al., 2014), which has multiple transgene integrations, minimizing effects of variable expression and silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the rationale for using this line and cites the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "c110ffd5-6579-45df-bdad-22ee5fd5920f",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C101",
+      "claim": "X3DOM is a powerful set of open-source 3D graphics libraries for web development which integrates the X3D file format into the HTML5 DOM.",
+      "claim_type": "EXPLICIT",
+      "source": "For rendering of 2D slices and 3D projections, we used X3DOM, a powerful set of open-source 3D graphics libraries for web development which integrates the X3D file format into the HTML5 DOM (Behr et al., 2009; Congote, 2012; John et al., 2008; Polys and Wood, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes X3DOM and cites supporting references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "483157f7-118c-4050-8be7-a1045399a43e",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C102",
+      "claim": "Most enhancer trap lines are available from Zebrafish International Resource Center (ZIRC).",
+      "claim_type": "EXPLICIT",
+      "source": "Most enhancer trap lines are available from Zebrafish International Resource Center (https://zebrafish.org), with all others available from the authors upon request.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the availability of the lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "7cf4ff50-9e28-4c60-a4e2-7607370f2af8",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C103",
+      "claim": "Registered individual confocal brain scans can be downloaded from Dryad.",
+      "claim_type": "EXPLICIT",
+      "source": "Registered individual confocal brain scans can be downloaded from Dryad (https://doi.org/10.5061/dryad.tk467n8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the data repository location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "db7b427d-8304-4cdc-9067-6ac81de94bfe",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "claim_id": "C104",
+      "claim": "Brain browser javascript code can be downloaded from GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain browser javascript code can be downloaded from GitHub (Hurt et al., 2018; copy archived at https://github.com/elifesciences-publications/ZebrafishBrainBrowser).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the code repository location and cites the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f97ac089-1540-405f-a843-39dd4a5914b8",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The ZBB2 atlas comprises whole-brain expression patterns for 264 transgenic lines, including 65 Cre lines and 158 Gal4 lines, more than doubling the number in the original atlas. The authors generated more than 100 new enhancer trap lines expressing Cre or Gal4, retained 52 new Cre lines with restricted brain expression at 6 dpf, and incorporated 45 additional Gal4 lines and 20 scans from other laboratories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9, C11, C22, C23, C44, and C67 collectively provide consistent quantitative data on the composition of ZBB2. The numbers are explicitly stated and internally consistent (52 new + 13 previous Cre lines = 65 total; multiple sources of Gal4 lines sum to 158). The manuscript provides detailed methodology for line generation, imaging, and registration (C13-C17, C86-C90), supporting the validity of the atlas construction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "dff9843e-e76d-4901-82ef-2ce9ba46aa63",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An online version of ZBB2 was developed and can be accessed at zbbrowser.com. The online version includes key features such as 3D spatial search, prediction of intersectional expression, multiple projection views, neuroanatomical information, user data upload capability, and an integrated virtual reality viewer. X3DOM libraries were used for rapid volume rendering with adjustable resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39-C43, C101, and C104 describe the development and features of the online ZBB2 interface. The manuscript provides technical details about implementation (C42, C101) and lists specific features (C40). The URL is provided and the code is made available on GitHub (C104), supporting reproducibility. The technical approach using X3DOM is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "cd980fef-53d1-4263-9dca-55c003de51fb",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "New Cre lines were generated through enhancer trap screening using a construct containing a neuronal-restrictive silencing element and tol2 transposon arms. A total of 361 adult fish were screened (286 with REx2-SCP1:BGi-Cre-2a-Cer, 75 with REx2-SCP1:BGi-Cre), with offspring screened using the \u03b2actin:Switch reporter. Lines were maintained for multiple generations to isolate single heritable transgenes, with approximately 20% of injected fish yielding retained lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 and C74-C80 provide detailed methodology for Cre line generation with specific numbers of fish screened, screening procedures, and success rates. The approach is well-documented with appropriate citations (C13, C14, C16, C74, C76). The observation that ~10% of injected animals transmitted multiple patterns (C77) and the 20% retention rate (C80) are consistent with enhancer trap methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "a48f742c-8ab6-4be9-afdd-34b888bb8fc9",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "45 additional Gal4 lines with robust brain expression accompanied by non-neural expression were imaged, and 20 high-resolution brain scans from the Dorsky and Baier laboratories were aligned to ZBB2. Gal4 expression was visualized using UAS:Kaede and registered using vglut2a:DsRed co-imaging. The development of UTR.zb3 has mitigated issues with non-neuronal Gal4 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 describe the incorporation of additional Gal4 lines into ZBB2. Specific numbers are provided (C18, C21) and the methodology for visualization and registration is detailed (C20). The rationale for including lines with non-neural expression is explained by referencing UTR.zb3 (C19), which is appropriately cited. The multi-channel registration approach for external data (C21) is described with citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A new method was developed to efficiently map enhancer trap integration sites using biotinylated oligonucleotides to capture flanking genomic DNA for sequencing. Integration sites were recovered for 55 enhancer trap lines. Combined with 56 transgenic lines using defined promoters, 171 of the 264 lines in ZBB2 have molecular genetic information on cell-type identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 and C91-C95 describe the integration site mapping methodology and results. The new method is detailed (C25, C91-C94) with specific technical parameters. The validation through PCR genotyping of four lines (C95) supports the reliability of the approach. The numbers are internally consistent: 55 mapped enhancer traps + 56 defined promoter lines + 60 unmapped enhancer traps = 171 with genomic information out of 264 total lines (C27).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "ddebb4af-a251-444e-a937-c68aa71ebe82",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors estimated ~92,000 neurons in the six dpf zebrafish brain through manual counting of fluorescently labeled neurons. Cre lines showed median coverage of 6% of cell body volume (~5,500 neurons per line), with 96% of cellular volume labeled by at least one Cre line. Gal4 lines showed more restricted expression with median coverage of 1% (~900 neurons per line), collectively labeling 91% of cell body volume. Specific brain regions with limited coverage were identified for both line types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C35 and C96-C100 provide quantitative analysis of transgene expression coverage. The neuron counting methodology is detailed (C98-C100) with appropriate sample sizes (N=3 for neuron counts, N=9 for total cell counts). The coverage calculations are based on defined 20\u00d720\u00d720 \u03bcm bins (C97). The exclusion of y457-Cre from coverage analysis is justified (C96). The data are presented with ranges and medians, and specific under-represented regions are identified (C32, C35), demonstrating thorough analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "ba6373ea-4b34-4b78-b78a-62eab82b3670",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Intersectional expression patterns observed in triple transgenic larvae closely matched predicted intersects based on co-registered brain scans, labeling small clusters of neurons. However, intersectional expression in individual larvae was generally more restricted than predicted, possibly due to UAS transgene silencing or the stronger 14xUAS-E1b promoter. The authors recommend experimental verification of predicted overlapping expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 and C64-C66 describe validation of intersectional targeting with appropriate caveats. The manuscript provides experimental evidence through triple transgenic crosses (C36) and references Figure 5. The observation that actual expression is more restricted than predicted (C37) is explained by known biological phenomena (C38, C64). The recommendation for experimental verification (C66) appropriately acknowledges limitations related to biological variability (C65) and technical factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "792cd1c0-b457-43c3-9aa3-1f2083ba1110",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Brains were imaged using confocal microscopy at 1\u00d71\u00d72 \u03bcm resolution in two stacks per brain. Image registration was performed using ANTs with accuracy of approximately one cell diameter (8 \u03bcm). Images were processed by averaging 3-10 registered scans per line, normalizing intensity, downsampling to 8-bit, and manually defining thresholds to distinguish cellular expression from background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 provide detailed imaging and processing methodology. The imaging parameters are specific (C86), the registration approach is well-documented with appropriate citations (C87, C88), and the processing steps are clearly described (C89, C90). The registration accuracy of ~8 \u03bcm (C88) is reasonable given the biological variability in zebrafish brains and is supported by cited prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "6b617d7b-e141-4485-acc7-a21fbf678d6c",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Leaky Cre expression recombines lox sites transmitted through the same gamete, necessitating outcrossing to \u03b2actin:Switch for line maintenance. Approximately 25% of embryos from et-Cre;\u03b2actin:Switch crosses showed ubiquitous RFP expression and were discarded. To minimize UAS reporter silencing, lines were maintained with a broadly expressed Gal4 transgene, selecting only the brightest 20% of fluorescent embryos each generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 describe breeding strategies with appropriate citations for known phenomena (C81, C83). The observation of ~25% ubiquitous expression (C82) is consistent with Mendelian genetics for germline recombination. The strategy to minimize silencing (C84, C85) is reasonable and the 20% selection rate (C85) is quantified. These are standard practices in transgenic zebrafish maintenance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "42c9669e-c346-4bdf-b4a9-5eea7d8d3144",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Very few transgenic lines strongly express reporters in single cell types within spatially restricted domains. Intersectional genetic strategies using multiple activators (such as Gal4/UAS and Cre/lox systems) have been developed to address this limitation. The first version of ZBB provided co-aligned images of >100 lines but only included 9 Cre lines, limiting intersectional targeting opportunities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 establish the rationale for the study by describing the problem (C4) and existing solutions (C5, C6) with appropriate citations. The limitations of the first ZBB version (C7, C8) are clearly stated and provide justification for developing ZBB2. These claims accurately represent prior work and the motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "2473f2bf-480d-445b-8b40-7b6537d03452",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors anticipate that ZBB2 labels almost all cellular regions within the brain and will facilitate reproducible targeting of neuronal subsets for circuit-mapping studies. They expect the lines will also facilitate structural mapping of the zebrafish brain and drive exploration of structure/function relations in the vertebrate brain. The new lines are freely available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10, C45, C68, and C69 make forward-looking statements about the utility and impact of ZBB2. While C10 is partially supported by the coverage data (C31, C34 showing 96% and 91% coverage), the claims about facilitating circuit-mapping (C10, C68) and structural mapping (C45) are anticipatory. The statement about driving exploration of structure/function relations (C69) is speculative. The availability of lines (C68) is factual and supported by C102.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "a3f97aee-9026-4578-8268-8d91d55d5bb1",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors discuss alternative approaches to generating transgenic lines, including Drosophila split systems, CRISPR/TALEN-based targeted insertions, and BAC transgenesis. They justify their enhancer trap approach as high-throughput and compatible with existing Gal4 lines, while acknowledging that alternative methods have different throughput levels and trade-offs regarding expression strength, cell-type information, and potential disruption of endogenous genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C58 provide a balanced discussion of alternative methodologies with appropriate citations. The comparison of approaches (C46-C47, C51-C53, C57-C58) accurately characterizes throughput levels. The discussion of limitations (C54-C56) is reasonable and appropriately caveated. The rationale for choosing enhancer trap screening (C51) is well-justified in the context of the study's goals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "a09a2843-c92c-482a-813c-d837164ae7f4",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors discuss limitations of the Cre system, including that insufficient expression may lead to mosaic reporter expression, while high levels can be toxic. They explain that enhancer trap Cre lines tend to have broader expression than Gal4 lines because Cre expression in progenitor cells labels all offspring and switch reporters remain active after transient Cre expression, whereas Gal4 must be continually expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 discuss known limitations and characteristics of the Cre system with appropriate citations (C59, C60). The explanation for broader Cre expression (C61-C63) is biologically sound and consistent with the observed data (C29, C33 showing 6% vs 1% median coverage). The mechanistic explanations (C62, C63) are reasonable inferences based on the biology of the systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "72968dbf-e360-43d6-8415-ab1c4b8014ad",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Zebrafish were maintained on a Tubingen long fin strain background and raised at 28\u00b0C on a 14/10 hr light/dark cycle. Experiments were conducted at 6 days post-fertilization, before sex differentiation. Experimental procedures were approved by the NICHD animal care and use committee.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 provide standard husbandry and ethical information. The details are specific and appropriate for the experimental design. The developmental stage (6 dpf, C72) is justified as commonly used for behavioral and circuit-mapping studies (C12). Ethical approval is documented (C73).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    },
+    {
+      "id": "67fc42f8-2213-4503-88b3-d33b769d6d8e",
+      "content_id": "8218f7bd-2ac3-4227-9825-564cdb4bb132",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Most enhancer trap lines are available from the Zebrafish International Resource Center (ZIRC), with others available from the authors upon request. Registered individual confocal brain scans can be downloaded from Dryad.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102 and C103 describe resource availability with specific repositories and URLs provided. This supports reproducibility and community access to the resource. The data deposition in Dryad (C103) follows best practices for data sharing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:35:39.247294Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "57c17c23-93cd-4f28-b661-276eac7df6db",
+      "result_id": "f97ac089-1540-405f-a843-39dd4a5914b8"
+    },
+    {
+      "claim_id": "0ce06c42-f45c-4da3-bdde-171f2410d34e",
+      "result_id": "f97ac089-1540-405f-a843-39dd4a5914b8"
+    },
+    {
+      "claim_id": "88c833de-936c-4775-9957-89940628b99b",
+      "result_id": "f97ac089-1540-405f-a843-39dd4a5914b8"
+    },
+    {
+      "claim_id": "cc5b5b12-4301-4071-8f8b-724260e0d089",
+      "result_id": "f97ac089-1540-405f-a843-39dd4a5914b8"
+    },
+    {
+      "claim_id": "f33c9496-1ee1-449d-a156-fa4fe0e39fac",
+      "result_id": "f97ac089-1540-405f-a843-39dd4a5914b8"
+    },
+    {
+      "claim_id": "912941b1-777e-4b3d-a4ee-9ec701bc682b",
+      "result_id": "f97ac089-1540-405f-a843-39dd4a5914b8"
+    },
+    {
+      "claim_id": "dc7ecbc5-dbfb-4107-a89b-0103d6aed264",
+      "result_id": "f97ac089-1540-405f-a843-39dd4a5914b8"
+    },
+    {
+      "claim_id": "cd069e2e-f120-4421-a068-b5d0ce2295b1",
+      "result_id": "f97ac089-1540-405f-a843-39dd4a5914b8"
+    },
+    {
+      "claim_id": "c497f5a8-96e8-458d-9f84-fe1379cdd24a",
+      "result_id": "dff9843e-e76d-4901-82ef-2ce9ba46aa63"
+    },
+    {
+      "claim_id": "f8d0f846-b9e1-4ebd-a1ba-83276a202e36",
+      "result_id": "dff9843e-e76d-4901-82ef-2ce9ba46aa63"
+    },
+    {
+      "claim_id": "3555967f-c515-4459-80cb-3f5e974ca67b",
+      "result_id": "dff9843e-e76d-4901-82ef-2ce9ba46aa63"
+    },
+    {
+      "claim_id": "495103b4-82c5-4086-aacc-9703486d37aa",
+      "result_id": "dff9843e-e76d-4901-82ef-2ce9ba46aa63"
+    },
+    {
+      "claim_id": "5c1d7cd3-55f2-48de-b529-14cb684c8819",
+      "result_id": "dff9843e-e76d-4901-82ef-2ce9ba46aa63"
+    },
+    {
+      "claim_id": "6e8ac5ef-cb62-4d3e-ae83-1f4c996f7c6e",
+      "result_id": "dff9843e-e76d-4901-82ef-2ce9ba46aa63"
+    },
+    {
+      "claim_id": "c110ffd5-6579-45df-bdad-22ee5fd5920f",
+      "result_id": "dff9843e-e76d-4901-82ef-2ce9ba46aa63"
+    },
+    {
+      "claim_id": "db7b427d-8304-4cdc-9067-6ac81de94bfe",
+      "result_id": "dff9843e-e76d-4901-82ef-2ce9ba46aa63"
+    },
+    {
+      "claim_id": "2c4b53ce-3e56-43c3-9bb7-88f6470c4f44",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "22c8cd28-ee06-4bca-ba11-c74be4556401",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "15157f1e-ce65-4cbc-9dab-880797118d3f",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "3b4794ff-8bd9-44a1-b585-5ca26d99eeb7",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "ba7ae857-b35b-459f-9a21-0a824e5cefba",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "dac30d06-2ff0-4506-8fc4-977c5ec0f313",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "f3cbc5b5-bad0-4be0-a551-65a9b7d5c021",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "726f59b5-f21d-4885-b538-ce8143ad3ca8",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "b56ef446-d2b7-49c4-a6df-2b2c3a0fe81d",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "fdca721a-f9bf-4830-980d-9c432e235b9b",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "ead986af-073c-441f-8b75-7a4dd41c79f1",
+      "result_id": "cd980fef-53d1-4263-9dca-55c003de51fb"
+    },
+    {
+      "claim_id": "9ed05d1c-0464-47e6-80c8-c467f49b52a2",
+      "result_id": "a48f742c-8ab6-4be9-afdd-34b888bb8fc9"
+    },
+    {
+      "claim_id": "af00f021-0e5f-43ac-999a-a0c4f4456204",
+      "result_id": "a48f742c-8ab6-4be9-afdd-34b888bb8fc9"
+    },
+    {
+      "claim_id": "61ce5c94-3963-46d3-b9b7-e74d1f327caa",
+      "result_id": "a48f742c-8ab6-4be9-afdd-34b888bb8fc9"
+    },
+    {
+      "claim_id": "605c3d90-4006-4c17-ae50-627f5b4d16a3",
+      "result_id": "a48f742c-8ab6-4be9-afdd-34b888bb8fc9"
+    },
+    {
+      "claim_id": "85dee8d2-0efd-4e6a-a619-985c3a1e7aa3",
+      "result_id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193"
+    },
+    {
+      "claim_id": "d986e75d-1faf-4011-ab93-1e4e621f702a",
+      "result_id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193"
+    },
+    {
+      "claim_id": "fc5f6b9c-a184-47f8-b2fe-291f231de64b",
+      "result_id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193"
+    },
+    {
+      "claim_id": "a45ebb53-78b3-441c-9053-e107a758cc7d",
+      "result_id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193"
+    },
+    {
+      "claim_id": "413455ba-89fa-4ee9-8b57-10af3f56982e",
+      "result_id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193"
+    },
+    {
+      "claim_id": "362be533-1564-49bb-a627-820d689518c3",
+      "result_id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193"
+    },
+    {
+      "claim_id": "8a05b9d9-0677-4597-8220-9865ca02f76a",
+      "result_id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193"
+    },
+    {
+      "claim_id": "ae8f8091-6d57-4dca-9aa5-88fb8e20b020",
+      "result_id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193"
+    },
+    {
+      "claim_id": "0967aea8-2547-49fb-b2bb-edbb4f890c48",
+      "result_id": "f5d7632b-ad58-46e1-9b9e-7fe8534aa193"
+    },
+    {
+      "claim_id": "ad54e4e1-e07f-400f-b820-821061d15e16",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "5163af96-25ca-48c9-8779-46ca38b544c8",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "d00e260e-bad2-42fa-adb3-f40ff41de649",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "86e611b4-f317-4354-8f63-24ae990d2a3c",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "d3289001-1a27-4a6a-8c23-18c4f2d0fdea",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "c176c9b9-fb1b-480c-893e-4f344abc146c",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "3df74a67-e686-40c6-8e7c-d153177746f3",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "8ae74fcf-d9ee-4247-929d-290b515ec334",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "d5039847-f349-4251-8542-313e35558189",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "9c5bd28b-241b-4d90-92ae-44c148362abd",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "9ec68378-9bf6-4973-9e96-bea6e497fb65",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "adaa2ba3-3ca5-4c68-abd7-0a88cc5f260c",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "36ba7c86-65d5-4cba-87f4-51d88eceeb3c",
+      "result_id": "ddebb4af-a251-444e-a937-c68aa71ebe82"
+    },
+    {
+      "claim_id": "1da38555-5b53-4d9e-8fb2-13f848fc30ac",
+      "result_id": "ba6373ea-4b34-4b78-b78a-62eab82b3670"
+    },
+    {
+      "claim_id": "019c96e4-b623-4fb1-950c-b9af34c55b05",
+      "result_id": "ba6373ea-4b34-4b78-b78a-62eab82b3670"
+    },
+    {
+      "claim_id": "9381d920-6273-4d88-a012-30901a587c8b",
+      "result_id": "ba6373ea-4b34-4b78-b78a-62eab82b3670"
+    },
+    {
+      "claim_id": "54164673-cdaf-4346-8089-d714e27bacec",
+      "result_id": "ba6373ea-4b34-4b78-b78a-62eab82b3670"
+    },
+    {
+      "claim_id": "541b6fda-ddeb-4a3e-97e2-7f13b5c89079",
+      "result_id": "ba6373ea-4b34-4b78-b78a-62eab82b3670"
+    },
+    {
+      "claim_id": "5565f545-48c2-40dc-a37b-e56486cd1fec",
+      "result_id": "ba6373ea-4b34-4b78-b78a-62eab82b3670"
+    },
+    {
+      "claim_id": "bf479318-ac42-4bd8-a438-bd71e7ffbc39",
+      "result_id": "792cd1c0-b457-43c3-9aa3-1f2083ba1110"
+    },
+    {
+      "claim_id": "5aec0aea-9932-4f0a-a0be-42061a3967d2",
+      "result_id": "792cd1c0-b457-43c3-9aa3-1f2083ba1110"
+    },
+    {
+      "claim_id": "92e987bc-75b8-4b8c-a12d-0c519a923492",
+      "result_id": "792cd1c0-b457-43c3-9aa3-1f2083ba1110"
+    },
+    {
+      "claim_id": "3d157c08-538f-424b-81b3-ce6f1d0cbba7",
+      "result_id": "792cd1c0-b457-43c3-9aa3-1f2083ba1110"
+    },
+    {
+      "claim_id": "cdba58fc-caff-43a8-80fe-e00f8b4e81f8",
+      "result_id": "792cd1c0-b457-43c3-9aa3-1f2083ba1110"
+    },
+    {
+      "claim_id": "8287ffdd-9fc5-4c98-bfa3-81edfc2c3709",
+      "result_id": "6b617d7b-e141-4485-acc7-a21fbf678d6c"
+    },
+    {
+      "claim_id": "5363400e-3022-45ea-806a-331cfb3ad411",
+      "result_id": "6b617d7b-e141-4485-acc7-a21fbf678d6c"
+    },
+    {
+      "claim_id": "51084dfb-1907-4a33-8747-ba852f7962bf",
+      "result_id": "6b617d7b-e141-4485-acc7-a21fbf678d6c"
+    },
+    {
+      "claim_id": "4ba8c007-ca28-43d8-af65-4c2a80616348",
+      "result_id": "6b617d7b-e141-4485-acc7-a21fbf678d6c"
+    },
+    {
+      "claim_id": "f3729b9e-b7fe-4633-a3ee-2b02ff68cbc6",
+      "result_id": "6b617d7b-e141-4485-acc7-a21fbf678d6c"
+    },
+    {
+      "claim_id": "0f1df0bd-a738-47a8-8ef8-c7b93fe9cdc7",
+      "result_id": "42c9669e-c346-4bdf-b4a9-5eea7d8d3144"
+    },
+    {
+      "claim_id": "3d23f302-4706-4033-9efd-b15b468a21a1",
+      "result_id": "42c9669e-c346-4bdf-b4a9-5eea7d8d3144"
+    },
+    {
+      "claim_id": "898027c8-8f41-40ef-a730-9a77cd013061",
+      "result_id": "42c9669e-c346-4bdf-b4a9-5eea7d8d3144"
+    },
+    {
+      "claim_id": "ee6a8c33-0f07-4227-b3af-7683b2d450bb",
+      "result_id": "42c9669e-c346-4bdf-b4a9-5eea7d8d3144"
+    },
+    {
+      "claim_id": "b236ee7b-1bc3-4778-86df-cf91e52ca9dd",
+      "result_id": "42c9669e-c346-4bdf-b4a9-5eea7d8d3144"
+    },
+    {
+      "claim_id": "064dcaff-0137-4138-b5f7-99fa8d261405",
+      "result_id": "2473f2bf-480d-445b-8b40-7b6537d03452"
+    },
+    {
+      "claim_id": "c29d380a-d887-4171-968d-e57c3c89853a",
+      "result_id": "2473f2bf-480d-445b-8b40-7b6537d03452"
+    },
+    {
+      "claim_id": "8dfb7c27-3bca-4152-bab4-2cfa9cad2282",
+      "result_id": "2473f2bf-480d-445b-8b40-7b6537d03452"
+    },
+    {
+      "claim_id": "21d1b506-2412-43f1-91ff-eacb321ec89b",
+      "result_id": "2473f2bf-480d-445b-8b40-7b6537d03452"
+    },
+    {
+      "claim_id": "58b430de-2ee4-41cd-ab46-4aef9290170d",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "f29d2bea-0672-4b8c-bc16-58154c38ece8",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "b611ca1e-3e24-4e6c-9d43-c0ba0942cd3f",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "e31ccee0-91d8-4f45-83fc-0f5becc0202c",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "b3261877-6c3e-4321-83b3-1afa99e9d626",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "4a432427-afb8-43da-b637-55e97b4a7ade",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "6daf09b3-4586-404a-9774-2a5538271334",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "079686a6-798d-43c0-8173-0d389fe9f37b",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "47fdd436-a8eb-4c2c-a5b5-7250813eb9d8",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "df58493f-2755-43d8-96f0-5078bffe266a",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "58aaeb60-d3cf-4c3a-ad2e-2a1889abc0a0",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "6bfdbb45-85fb-4256-957e-e21e5d8c019e",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "934208fa-0749-4d43-8dd6-5eefcf1d4403",
+      "result_id": "a3f97aee-9026-4578-8268-8d91d55d5bb1"
+    },
+    {
+      "claim_id": "37dbf64f-4f08-4d58-8438-363b04cac1a9",
+      "result_id": "a09a2843-c92c-482a-813c-d837164ae7f4"
+    },
+    {
+      "claim_id": "3336d6db-13a0-4d07-84da-e02726828532",
+      "result_id": "a09a2843-c92c-482a-813c-d837164ae7f4"
+    },
+    {
+      "claim_id": "4ce74b9b-f2d4-4dfb-b1da-907830783aab",
+      "result_id": "a09a2843-c92c-482a-813c-d837164ae7f4"
+    },
+    {
+      "claim_id": "e1a37d22-24b2-4223-ace5-3adc959c7f9b",
+      "result_id": "a09a2843-c92c-482a-813c-d837164ae7f4"
+    },
+    {
+      "claim_id": "d9bb7000-d287-4642-9699-59df8d6acdbd",
+      "result_id": "a09a2843-c92c-482a-813c-d837164ae7f4"
+    },
+    {
+      "claim_id": "852a6a6a-a3ae-42b7-8e8c-003d43ab3f99",
+      "result_id": "72968dbf-e360-43d6-8415-ab1c4b8014ad"
+    },
+    {
+      "claim_id": "86e3a1d3-ee16-4b82-a51e-16b12808e642",
+      "result_id": "72968dbf-e360-43d6-8415-ab1c4b8014ad"
+    },
+    {
+      "claim_id": "b7b61951-f3a8-4955-a173-75c529fc52ed",
+      "result_id": "72968dbf-e360-43d6-8415-ab1c4b8014ad"
+    },
+    {
+      "claim_id": "2b159b38-02c6-4c8c-9d31-bcc239cba86a",
+      "result_id": "72968dbf-e360-43d6-8415-ab1c4b8014ad"
+    },
+    {
+      "claim_id": "483157f7-118c-4050-8be7-a1045399a43e",
+      "result_id": "67fc42f8-2213-4503-88b3-d33b769d6d8e"
+    },
+    {
+      "claim_id": "7cf4ff50-9e28-4c60-a4e2-7607370f2af8",
+      "result_id": "67fc42f8-2213-4503-88b3-d33b769d6d8e"
+    }
+  ],
+  "comparisons": []
+}

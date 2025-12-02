@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C27"
+    ],
+    "result": "Larval fruit flies adapt their navigational turn decisions to changes in variance of visual and olfactory inputs. The linear filter kernels remain nearly identical at high and low variance, but the nonlinear rate function becomes steeper at low variance, indicating increased sensitivity. This adaptation pattern is observed across multiple sensory modalities including visual stimuli and activation of various olfactory receptor neurons (Or42a, Or42b, Or59a, Or35a, Gr21a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 and C26-C27 provide consistent experimental evidence from Figures 1 and 3 showing that larvae adapt to variance through changes in the nonlinear rate function while maintaining stable linear filters. The data span multiple genotypes and sensory modalities, demonstrating generality. The experimental design appropriately controls for variance by using stimulus derivatives as model input, and the reverse correlation methodology is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Variance adaptation in larvae is best characterized by rescaling of the sensory input rather than rescaling of the output. Input rescaling provides a significantly better fit to the data (\u0394BIC = -759 for visual, -384 for olfactory) and better predicts held-out data compared to output rescaling models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 demonstrate through rigorous model comparison using BIC and jackknife cross-validation (Figure 2) that input rescaling is the superior model. The statistical evidence is strong with \u0394BIC < -10 indicating highly significant preference. The jackknife analysis on held-out data provides additional validation. Claim C24 provides the mechanistic insight explaining why input rescaling is preferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C32",
+      "C4",
+      "C37"
+    ],
+    "result": "The temporal dynamics of variance adaptation are asymmetric: larvae adapt rapidly to increases in variance but more gradually to decreases. This asymmetry is consistent with optimal Bayesian variance estimation and indicates an input sampling rate of approximately 1.2-1.5 Hz for both visual and olfactory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C32 document the asymmetric adaptation dynamics across multiple experiments (Figures 3c, 4c). Claims C4 and C37 connect these observations to optimal estimation theory through comparison with Bayesian estimators (Figure 6). The best-fit parameters (\u0394t = 0.7-0.85 s) are consistent across modalities and correspond to the claimed sampling rate. The control analysis showing symmetric adaptation for instantaneous switching validates that the asymmetry reflects biological adaptation rather than analysis artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39"
+    ],
+    "result": "In multisensory contexts with simultaneous visual and olfactory stimuli, larvae adapt independently to variance in each sensory modality. Only the stimulus with changing variance shows adaptation while the fixed-variance stimulus maintains constant turn-rate, indicating that variance adaptation occurs on a unisensory basis prior to multisensory combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are directly supported by the multisensory experiments in Figure 7 (top two rows) where only the switching stimulus shows adaptation. The experimental design is clever: by holding one modality constant while varying the other, the authors can definitively localize adaptation to unisensory pathways. The inference in C39 logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C40"
+    ],
+    "result": "Portions of the navigational pathway that encode mixed odor and light signals are also capable of variance adaptation. When correlated visual and olfactory stimuli are presented with changing combined variance, adaptation is observed, indicating that downstream multisensory circuit elements can also adapt to variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C40 are supported by the correlated stimulus experiments in Figure 7 (bottom row). The experimental design is sophisticated: by correlating stimuli of constant individual variance but changing combined variance, the authors isolate adaptation in multisensory pathways. The adaptation is less pronounced than unisensory adaptation, which is acknowledged. The inference that this requires multisensory circuit elements is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Multiplication is proposed as a mechanism for odor-light integration in larvae. This model reconciles unisensory variance adaptation (which requires nonlinearity) with previous findings of linear multisensory integration. Reanalysis of previous multisensory data shows that multiplicative integration provides statistically significantly better fits than early linear combination models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C46 show that multiplicative integration fits the reanalyzed data better than linear combination (Figure 8 supplements), with significant \u0394BIC values. However, the improvement is modest and the predicted turn-triggered ensembles differ by \u226410% in high probability regions. The theoretical argument in C42 about preserving linearity is compelling but relies on the absence of opponent pathways (C43), which is stated as negative evidence. The model is presented as a suggestion rather than definitive proof. Additional experiments specifically designed to distinguish multiplication from addition would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Larvae adapt to variance when presented with stimuli having uncorrelated random values (rather than uncorrelated derivatives), showing that variance adaptation is not specific to the Brownian random walk stimulus structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by Figure 4 showing similar adaptation patterns with a different stimulus structure. This control experiment strengthens the generality of the findings by demonstrating that adaptation is not an artifact of the specific stimulus statistics used in the main experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C56",
+      "C57"
+    ],
+    "result": "Visual and olfactory stimuli are filtered with similar temporal dynamics, and sensory input appears to be filtered to match the frequency of the larva's own peristaltic motion. The consistent adaptation rates across modalities and their match to the filter bandwidth support this interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 document the similar filter shapes across modalities (Figures 1d, 3a). Claim C56 connects the consistent adaptation rates to the hypothesis that filtering matches motor output frequency. Claim C57 provides a speculative but logical explanation for why filter temporal structure doesn't adapt. The argument is internally consistent and supported by the data, though the connection to motor frequency is somewhat indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Visual responses are insensitive to fluctuations in CO\u2082 background, consistent with modality-specific variance adaptation occurring before multisensory integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by Figure 9b showing no change in visual response with varying CO\u2082 background. This result is consistent with the multisensory findings in Figure 7 and provides additional validation using natural odor stimuli rather than optogenetic activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establishing the theoretical framework and prior work on variance adaptation in sensory systems, including efficient coding theory, variance adaptation across species and modalities, and behavioral consequences of adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C15) provide appropriate context from established literature. They are properly cited and accurately represent the prior work. These are standard background claims that frame the current study within the broader field of sensory adaptation and efficient coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Drosophila larvae navigate through runs and turns, and the turn decision can be modeled using a Linear-Nonlinear-Poisson cascade characterized through reverse correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe established knowledge about larval navigation and the LNP modeling framework. These are well-cited methodological foundations from prior work (including the authors' previous studies) that are appropriate for this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Rate functions calculated using variance-specific filters are nearly identical to those using a single shared kernel, justifying the use of a pooled filter for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by Figure 1\u2014figure supplement 2 showing minimal differences between approaches. This methodological validation justifies the simplified analysis approach used throughout the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Discussion claims about the relationship between sensory filtering timescales and motor output frequency, supported by comparison to electrophysiological recordings in olfactory sensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide interpretive discussion connecting behavioral observations to sensory neuron properties. Claim C54 cites electrophysiological evidence showing similar filtering dynamics in olfactory neurons. The logical argument in C53 and C55 about matching sensory and motor timescales is reasonable, though somewhat speculative.",
+    "result_type": "MINOR"
+  }
+]

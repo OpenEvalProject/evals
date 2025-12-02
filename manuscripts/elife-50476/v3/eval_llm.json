@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Tuvan singers produce biphonic sound characterized by a low-frequency fundamental pitch and a high-frequency whistle-like tone focused in the 1.5\u20132 kHz range. In the focused state, overtones in this narrow band are greatly enhanced (by 15\u201365 dB relative to adjacent overtones), while energy below 500 Hz remains constant and energy above 500 Hz becomes narrowly focused.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, C52\u2013C59 collectively demonstrate the acoustic characteristics of Khoomei through spectral analysis shown in Figure 1. The quantitative measurements of attenuation (15\u201335 dB for \u00b11 overtones, 35\u201365 dB for \u00b12 overtones) and the focused frequency range (1.5\u20132 kHz) are directly supported by the spectrograms and spectral data. The description of energy distribution across frequency ranges is consistent with the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C69",
+      "C70"
+    ],
+    "result": "The transition from normal singing to the focused biphonic state occurs rapidly (~40\u201360 ms), with similarly fast transitions occurring within the focused state as singers melodically modulate the filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C69, C70 describe the temporal dynamics of transitions, which are directly measured from audio recordings and shown in Figure 1 and appendix figures. The specific timing measurement (~40\u201360 ms) provides quantitative support for the rapid nature of these transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Singer T2 produced multiple focused formants that are not harmonically related, with the first focused state varying between 1.5\u20132 kHz (by 30%) while the second remained constant at 3\u20133.5 kHz (changing <1%). This singer also exhibited more energy in higher overtones compared to other singers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64\u2013C67 describe unique characteristics of singer T2 observed in spectral analysis (Figure 1, middle panels). The independence of the two focused states is demonstrated by their different frequency trajectories, and the quantitative measurements of frequency variation support the claim that they are not harmonically related. The observation of higher energy in upper overtones is visible in the spectrograms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "During Khoomei production, the vocal tract exhibits two distinct constrictions at the uvula and alveolar ridge, with an expansion anterior to the alveolar ridge. The retroflex tongue position creates a constriction at 14 cm and opens a sublingual space. The degree of constriction at these two locations is hypothesized to control the frequency of the focused formant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78\u2013C81 describe vocal tract morphology observed in MRI data (Figures 3, 4). The identification of two constrictions and the expanded region are directly visible in the imaging data. However, C81 is stated as a hypothesis rather than a demonstrated fact, which slightly weakens the overall support, though the hypothesis is well-grounded in the empirical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "During normal singing, no strong vocal tract constrictions are observed. After transition to the focused state, a strong constriction appears near the alveolar ridge in all singers, and a variable constriction near the uvula whose degree of constriction co-varies with the frequency of the focused formant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94\u2013C97 describe dynamic changes in vocal tract morphology observed by comparing MRI data with simultaneous audio recordings. The co-variation between uvular constriction and focused formant frequency (C97) provides strong evidence for a causal relationship, though the temporal resolution of MRI (3.6 Hz) limits the precision of this correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C106",
+      "C107"
+    ],
+    "result": "Tuvan singers achieve biphonation through precise vocal tract control that merges two formants (F\u2082 and F\u2083) to create a focused filter state at 1\u20132 kHz. This biphonation arises from linear filtering rather than nonlinear source mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3\u2013C5, C106\u2013C107 represent the central conclusion of the study. The formant merging mechanism is supported by spectral analysis (Figure 2), MRI data (Figures 3\u20135), and computational modeling. The linear filtering explanation is supported by the stability of the harmonic structure (C127, C128) and the success of linear models in reproducing the acoustic effects (C102, C130\u2013C132). However, the claim that biphonation arises from linear filtering 'rather than' nonlinear sources is somewhat overstated, as transient nonlinear features are acknowledged (C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C90",
+      "C102",
+      "C103"
+    ],
+    "result": "A linear source/filter computational model using area functions derived from MRI data successfully captures the acoustic characteristics of Khoomei, including formant merging and rapid transitions into the focused state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82\u2013C87, C90, C102\u2013C103 describe the modeling approach and its success. The model is based on established methods (with appropriate citations) and uses MRI-derived constraints. The claim that the model 'reasonably captures' the transitions (C102) is supported by appendix figures, though 'reasonably' suggests some limitations. The model's ability to explain articulatory-acoustic relationships (C103) is a logical inference from the combined empirical and modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Overtone singers can select specific harmonics by generating a tight constriction near the alveolar ridge and then modulating the uvular constriction to vary the focused formant position, thereby creating melodic structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104\u2013C105 synthesize the mechanism inferred from MRI observations (C95\u2013C97) and modeling results (C102\u2013C103). This represents a mechanistic explanation supported by the co-variation data (C97) and the modeling demonstrations. However, this is an inference about the control strategy rather than a directly measured result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "A linear source/filter framework is sufficient to explain Khoomei biphonation, including sudden transitions. The harmonic structure remains stable through transitions with little evidence of subharmonics, and precise motor control of articulators in a linear framework accounts for the acoustic effects without requiring nonlinearities or a second source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110\u2013C112, C127\u2013C128, C130\u2013C133 argue for linear mechanisms based on: (1) stable harmonic structure (C127, observed in Figure 1), (2) absence of subharmonics (C128), and (3) success of linear modeling (C130\u2013C131). However, this conclusion is somewhat overstated given the acknowledgment of transient nonlinear features (C135) and the fact that the model makes simplifying assumptions (e.g., circular cross-sections, exclusion of piriform sinuses). The claim is better characterized as 'linear mechanisms are sufficient' rather than 'nonlinearities are absent.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C121",
+      "C122",
+      "C125"
+    ],
+    "result": "The present data are inconsistent with prior source-based explanations for Khoomei. The overtone structure is highly stable (arguing against mode changes in glottal pulse generation), a single sharp harmonic is insufficient for the focused state percept, and subharmonics are not observed in Sygyt-style singing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118\u2013C119, C121\u2013C122, C125 critique prior work based on the current data. The stability of overtone structure (C119) is clearly visible in Figure 1. The argument against a single harmonic being sufficient (C122) is supported by observations in appendix figures. The absence of subharmonics (C125) is consistent with the spectral data for Sygyt style, though the authors acknowledge this differs from Kargyraa style (C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C116"
+    ],
+    "result": "The focused state concept is mostly consistent with prior filter-based explanations for biphonation, and the results are broadly consistent with Adachi and Yamada (1999) regarding the importance of a constricted rear cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C116 compare the current findings to prior literature. The consistency with filter-based explanations is supported by the formant merging mechanism. However, the authors also note differences from prior work (e.g., C31, C35), so the agreement is partial rather than complete. The comparison to Adachi and Yamada is appropriate but acknowledges differences in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C72",
+      "C73"
+    ],
+    "result": "The study used MRI to acquire volumetric 3D vocal tract shape during biphonation and dynamic midsagittal images capturing transitions from tonal to biphonic singing, with simultaneous audio recordings. These data were used to guide computational modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39\u2013C41, C72\u2013C73 describe the methodological approach. The acquisition of both static volumetric and dynamic 2D MRI data is documented in the methods section and shown in Figures 3\u20135. The integration of MRI, audio, and modeling represents a strength of the study, though only one singer (T2) participated in MRI (C179), limiting generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C183"
+    ],
+    "result": "Due to artifacts from a dental post affecting 3D reconstructions, cross-sectional area functions were measured from midsagittal slices using a circular approximation rather than direct 3D measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88\u2013C89, C183 describe a methodological limitation and the workaround employed. The dental artifact is visible in Figure 4, and the use of midsagittal measurements is clearly documented. However, this represents a limitation as the circular approximation may not accurately capture the complex 3D geometry of the vocal tract, and the authors acknowledge uncertainty about the appropriate scaling parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Transient features in spectrograms provide hints of source nonlinearity (e.g., brief subharmonics). Further analysis of audio recordings may better capture focused filter sharpness and secondary focused states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135\u2013C136 acknowledge limitations and suggest future work. The observation of transient subharmonics (C135) is shown in appendix figures and represents an important caveat to the linear framework conclusion. The suggestion for further analysis (C136) is appropriate given the model's limitations in fully capturing all observed features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C154",
+      "C157",
+      "C158",
+      "C162",
+      "C163"
+    ],
+    "result": "The narrow focused formant may lead the auditory system to perceive it as a separate tone through a combination of bottom-up (cochlear representation as a single spectral peak) and top-down factors (rapid onsets, frequency modulation differences, and expectations about formant characteristics).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151\u2013C152, C154, C157\u2013C158, C162\u2013C163 propose perceptual mechanisms for biphonation, but these are largely speculative. The study did not include perceptual experiments (acknowledged in C142), so these claims are hypotheses supported by citations to prior auditory research rather than direct evidence from the current study. The mechanisms proposed are plausible but unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C179"
+    ],
+    "result": "The study included three Tuvan singers performing Sygyt-style Khoomei (T1\u2013T3) and one performing non-Sygyt style (T4), but only subject T2 participated in MRI recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C179 describe the study participants. This is clearly stated in the methods and results. However, the limitation that only one singer underwent MRI represents a significant constraint on generalizability, as individual variation in vocal tract morphology could be substantial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Audio recordings were made in an acoustic isolation booth at 96 kHz sampling rate. MRI data were acquired on a 3T scanner with both static (11 s, 1.2 mm\u00b3 voxels) and dynamic (27.75 s, 3.6 Hz frame rate) sequences, with simultaneous audio recording using a noise-cancelling microphone (24 ms latency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166\u2013C178 provide detailed methodological information that is clearly documented. The methods are appropriate for the research questions, though the dynamic MRI frame rate (3.6 Hz) is relatively slow compared to the rapid transitions observed (~40\u201360 ms), potentially limiting temporal resolution for tracking articulatory changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C184",
+      "C185"
+    ],
+    "result": "The frequency response was calculated using a transmission line approach including energy losses, but piriform sinuses were not considered in detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184\u2013C185 describe modeling methods and limitations. The transmission line approach is well-established (with appropriate citations), but the exclusion of piriform sinuses (which are visible in Figure 3B) represents a simplification that could affect accuracy, particularly for higher formants.",
+    "result_type": "MINOR"
+  }
+]

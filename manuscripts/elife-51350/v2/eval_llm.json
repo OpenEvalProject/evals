@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Substance P increases inspiratory burst frequency by 31.9% without altering the refractory period, instead reducing the inter-burst interval duration and variability through differential modulation of the percolation phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide converging experimental evidence from optogenetic stimulation experiments (n=6) showing that SP increases frequency while the refractory period remains unchanged (non-linear regression, p>0.05). The shortened and less variable IBI (paired t-tests, p<0.0002 and p<0.0139) supports the conclusion that SP differentially modulates the percolation phase rather than the refractory phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "PreB\u00f6tC neurons can be classified into distinct functional types based on spiking patterns: excitatory neurons with pre-inspiratory activity (n=9), excitatory neurons without pre-inspiratory activity (n=13), and inhibitory neurons (n=7), each with characteristic spike frequencies, burst durations, and onset variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 present comprehensive characterization of 29 recorded neurons with detailed quantification of spike frequencies, burst durations, and temporal patterns. The statistical analysis (one-way ANOVA with Bonferroni post hoc tests) demonstrates significant differences in burst onset variability among neuron types (p<0.001), supporting the functional classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Substance P has phase-dependent effects on pre-inspiratory neurons: it does not significantly alter spiking during inspiratory bursts but increases inter-burst interval spiking frequency and pre-inspiratory ramp slope, with the ramp slope inversely predicting IBI duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 demonstrate phase-specific modulation with appropriate statistical tests (paired t-tests, linear regression). The lack of change during bursts (p>0.05) contrasts with significant IBI changes (p<0.01), and the inverse relationship between ramp slope and IBI duration is supported by linear regression analysis of 180 cycles (20 cycles \u00d7 9 neurons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Substance P recruits a subpopulation of excitatory neurons (5/13) to develop pre-inspiratory activity without changing their burst spiking, thereby increasing the number of neurons participating in the percolation phase while maintaining the refractory period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 provide clear experimental evidence showing recruitment of neurons to pre-I activity (5/13 neurons, p<0.01) with no change in burst properties (p>0.05). The recruited neurons exhibit pre-I ramps that inversely correlate with IBI duration (linear regression, n=5 neurons, 20 cycles each), supporting the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Inhibitory preB\u00f6tC neurons show no change in spiking activity during either inspiratory bursts or inter-burst intervals in response to substance P, suggesting they do not contribute to SP-induced frequency facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 present consistent negative results from n=7 inhibitory neurons with appropriate statistical analysis (paired t-tests, p>0.05 for both burst frequency and duration). The lack of change throughout the inspiratory cycle logically supports the conclusion that these neurons are unlikely to mediate SP effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Substance P increases burst onset stochasticity specifically in excitatory neurons without pre-inspiratory activity (p<0.05), which is reflected at the network level as increased population burst duration and halfwidth (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 demonstrate cell-type-specific effects on onset jitter with appropriate statistical tests (paired t-tests). The increase in jitter among non-pre-I excitatory neurons (n=13, p<0.05) but not pre-I neurons (n=9, p>0.05) or inhibitory neurons (n=7, p>0.05) is consistent with network-level changes in burst duration and halfwidth (n=29 slices, p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Rostral inspiratory neurons show heterogeneous responses to substance P: excitatory neurons (n=5) show reduced burst spiking (p<0.05), while inhibitory neurons (n=7) show variable responses with increased inter-burst interval spiking that lacks pre-inspiratory ramp characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77 present detailed characterization of rostral neurons with appropriate sample sizes and statistical tests. The consistent reduction in excitatory neuron spiking (all 5/5 neurons, p<0.05) contrasts with heterogeneous inhibitory responses (p>0.05 on average). The lack of pre-I ramp in rostral inhibitory neurons (slope p>0.05) supports the interpretation that they are not regulated by preB\u00f6tC pre-I neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Substance P does not affect spiking frequency of excitatory or inhibitory preB\u00f6tC neurons during inspiratory bursts, suggesting the balance of excitatory and inhibitory inputs is maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is supported by experimental data from Figures 3-5, but C90 acknowledges this is an inference from current clamp recordings and explicitly states that voltage-clamp experiments would be needed for direct assessment. The conclusion about E/I balance is reasonable but requires additional validation as noted by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Substance P increases burst onset timing variability among inspiratory neurons, particularly excitatory neurons lacking pre-inspiratory activity, which may impair network synchronization and maintain E/I balance during bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are supported by experimental data (n=29 neurons), but C100 is explicitly presented as a proposed mechanism with acknowledgment that other mechanisms may contribute. The authors note this is speculative and would benefit from computational modeling to directly test the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Substance P increases the magnitude and slope of pre-inspiratory ramps and recruits additional neurons to pre-inspiratory activity, accelerating recurrent excitation during the percolation phase, which underlies increased breathing frequency and reduced variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 synthesize experimental findings from Figures 3-4 showing increased pre-I ramp parameters and neuron recruitment. The inverse relationship between ramp slope and IBI duration (linear regression analysis) supports the mechanistic interpretation. The conclusion integrates multiple lines of evidence consistently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors propose a conceptual framework in which three distinct phases of inspiratory rhythm (burst, refractory, and percolation) can be differentially modulated to control breathing dynamics, with potential regulatory input from regions outside the preB\u00f6tC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 present a conceptual framework well-supported by the experimental findings throughout the manuscript. C122 is appropriately presented as speculation about broader regulatory control, supported by relevant citations. The framework synthesizes the experimental results into a coherent model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The preB\u00f6tC is an autorhythmic, sparsely connected network that is necessary and sufficient for inspiration, with glutamatergic synaptic interactions obligatory for rhythmogenesis and inhibitory neurons critical for limiting synchronization and refractoriness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 establish the background knowledge about the preB\u00f6tC network, all supported by appropriate citations to prior work. These claims provide the foundation for understanding the experimental results but represent established knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Substance P is a neuromodulator that regulates respiratory rhythm stability and frequency through NK1R, which is enriched in the preB\u00f6tC and couples to voltage-independent cation channels including Nalcn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 establish background on substance P and NK1R, all supported by appropriate citations. These provide context for why SP was chosen as a tool to study dynamic breathing control but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Inspiratory neurons are distributed along the ventral respiratory column, with rostral neurons conditionally recruited to participate in the rhythm, and their recruitment associated with increased E/I ratio, longer refractory times, and slower frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 establish background on the spatial organization of the inspiratory network, supported by appropriate citations including the authors' prior work (Baertsch et al., 2019). This provides context for examining rostral neurons but represents established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Changes in brainstem neuromodulatory systems are linked to respiratory control disorders, and distinct phases of rhythmogenesis can be differentially regulated by neuromodulation to control breathing frequency and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C78 is supported by citations to prior work. C79 introduces the conceptual framework that is then tested experimentally. This represents the central hypothesis of the paper and is supported by the experimental results, though it is presented here as an introduction to the concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Inspiratory bursts are assembled stochastically through the 'rhythmogenic triangle' of excitatory/inhibitory synaptic interactions and intrinsic bursting properties, with neuromodulators regulating both components, as demonstrated in invertebrate systems and the mammalian preB\u00f6tC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 establish the theoretical framework for understanding neuromodulation of rhythmic networks, all supported by appropriate citations to prior work. This provides important context for interpreting the experimental results but represents established principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The contribution of rostral inspiratory neurons to SP-induced frequency increase is modest, with NK1R preferentially expressed in the preB\u00f6tC compared to rostral regions, explaining the heterogeneous effects of SP on rostral neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by citations to prior work (Baertsch et al., 2019). C93 is a reasonable inference from established knowledge. C94-C95 integrate prior knowledge with the current experimental findings showing heterogeneous rostral responses, providing a mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Inspiratory burst assembly is stochastic, with onset jitter related to sparse functional connectivity within the preB\u00f6tC network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 establish background on stochastic burst assembly, both supported by citation to Carroll and Ramirez, 2013. This provides context for understanding the onset jitter measurements but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The refractory period arises from presynaptic depression and hyperpolarizing currents, manifests as reduced probability of evoking bursts, and continues to constrain IBIs in substance P, potentially preventing the network from being driven out of its physiological frequency range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 establish the nature of the refractory period, supported by experimental data and citations. C106-C107 integrate this with the current SP findings. C108 is appropriately presented as speculation about functional significance. The claims logically connect prior knowledge with new findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Neuronal networks must maintain stability despite heterogeneous components and converging neuromodulatory inputs. During the percolation phase, excitatory neurons with depolarized membrane potentials fire action potentials that percolate through recurrently connected networks, likely involving Dbx1 neurons and INaP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C109 is supported by citation to Marder et al., 2014. C110-C112 describe the percolation process, supported by experimental data (Figure 3) and multiple citations. These claims establish the mechanistic framework for understanding how SP modulates the percolation phase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The conceptual framework of three distinct phases may provide a foundation for understanding breathing in physiological and pathological conditions and serve as a guide for understanding dynamic control of rhythm generating networks in general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C124 are appropriately presented as speculation about broader implications of the work. While the framework is well-supported by the experimental data, these claims about future applications are speculative and would require additional work to validate.",
+    "result_type": "MINOR"
+  }
+]

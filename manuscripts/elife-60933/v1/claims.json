@@ -1,0 +1,860 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The latent reservoir is a major barrier to HIV cure.",
+    "claim_type": "EXPLICIT",
+    "source": "The latent reservoir is a major barrier to HIV cure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract and is supported by citations to foundational studies on HIV latency.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Latently infected cells cannot be phenotyped directly.",
+    "claim_type": "EXPLICIT",
+    "source": "As latently infected cells cannot be phenotyped directly, the features of the in vivo reservoir have remained elusive.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement in the abstract explaining the challenge in studying latent cells.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The reservoir is not randomly distributed among cell subsets.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results suggest that, contrary to common assumptions, the reservoir is not randomly distributed among cell subsets, and is remarkably conserved between individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by PP-SLIDE analysis and FlowSOM clustering showing non-random distribution with chi-squared test p<0.01.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The reservoir is remarkably conserved between individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results suggest that, contrary to common assumptions, the reservoir is not randomly distributed among cell subsets, and is remarkably conserved between individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by data showing kNN latent cells from different donors residing in similar tSNE regions and expressing similar markers.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Reservoir composition differs between tissues and blood.",
+    "claim_type": "EXPLICIT",
+    "source": "However, reservoir composition differs between tissues and blood, as do cells successfully reactivated by different latency reversing agents.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by CyTOF data showing different marker expression patterns in blood versus FNA and gut specimens.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Cells successfully reactivated by different latency reversing agents differ.",
+    "claim_type": "EXPLICIT",
+    "source": "However, reservoir composition differs between tissues and blood, as do cells successfully reactivated by different latency reversing agents.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by Euclidean distance calculations showing PMA/ionomycin-reactivatable cells differ from anti-CD3/CD28 and Romidepsin/PEP005-reactivatable cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "By selecting 8\u201310 CyTOF markers, highly purified populations of unstimulated in vivo latent cells can be isolated.",
+    "claim_type": "EXPLICIT",
+    "source": "By selecting 8\u201310 of our 39 original CyTOF markers, we were able to isolate highly purified populations of unstimulated in vivo latent cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by sorting strategies designed for each donor and validated by viral outgrowth assays.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Purified populations were highly enriched for replication-competent provirus.",
+    "claim_type": "EXPLICIT",
+    "source": "These purified populations were highly enriched for replication-competent and intact provirus, transcribed HIV, and displayed clonal expansion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by viral outgrowth assay data showing robust outgrowth in enriched but not disenriched populations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Purified populations were highly enriched for intact provirus.",
+    "claim_type": "EXPLICIT",
+    "source": "These purified populations were highly enriched for replication-competent and intact provirus, transcribed HIV, and displayed clonal expansion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by FLIPS data showing enriched populations harbored higher frequencies of intact p24 sequences, with PID5003 showing 65.2% fully intact proviruses.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Purified populations were highly enriched for transcribed HIV.",
+    "claim_type": "EXPLICIT",
+    "source": "These purified populations were highly enriched for replication-competent and intact provirus, transcribed HIV, and displayed clonal expansion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by HIV transcriptional profiling data showing enriched populations had more initiated HIV transcripts in 7/8 cases.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Purified populations displayed clonal expansion.",
+    "claim_type": "EXPLICIT",
+    "source": "These purified populations were highly enriched for replication-competent and intact provirus, transcribed HIV, and displayed clonal expansion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by FLIPS data showing expanded identical sequences (EIS) with intact p24 were preferentially present in enriched populations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Combination antiretroviral therapy (ART) suppresses HIV replication but does not eliminate the latent reservoir.",
+    "claim_type": "EXPLICIT",
+    "source": "Combination antiretroviral therapy (ART) suppresses HIV replication but does not eliminate the latent reservoir, which persists for decades in CD4+ T cells and forms a major barrier to HIV cure (Chun et al., 1997; Finzi et al., 1997; Wong et al., 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-established fact in HIV research supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The latent reservoir persists for decades in CD4+ T cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Combination antiretroviral therapy (ART) suppresses HIV replication but does not eliminate the latent reservoir, which persists for decades in CD4+ T cells and forms a major barrier to HIV cure (Chun et al., 1997; Finzi et al., 1997; Wong et al., 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by cited foundational studies on HIV latency.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The lack of a universal surface biomarker makes it impossible to directly identify latent cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Our understanding of the phenotypic features of latent cells in vivo is limited, in large part because the lack of a universal surface biomarker makes it impossible to directly identify these cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the current limitation in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "A vast majority of infected cells in virally suppressed individuals harbor defective HIV genomes.",
+    "claim_type": "EXPLICIT",
+    "source": "A vast majority of infected cells in virally suppressed individuals harbor defective HIV genomes (Hiener et al., 2017; Ho et al., 2013; Imamichi et al., 2016; Lee et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple cited studies on proviral sequencing.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "qVOA has not identified significant differences in the amount of replication-competent HIV in central memory (Tcm), effector memory (Tem), and transitional memory (Ttm) CD4+ T cells.",
+    "claim_type": "EXPLICIT",
+    "source": "qVOA has not identified significant differences in the amount of replication-competent HIV in the most commonly studied subsets of memory CD4+ T cells \u2013 central memory (Tcm), effector memory (Tem), and transitional memory (Ttm) (Buzon et al., 2014; Kwon et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by cited studies using qVOA.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Sequencing of near full-length HIV provirus has identified Th1 and Tem, particularly those that are HLADR+, as subsets preferentially harboring intact viral genomes.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, sequencing of near full-length HIV provirus has identified Th1 and Tem, particularly those that are HLADR+, as subsets preferentially harboring intact viral genomes (Hiener et al., 2017; Horsburgh et al., 2020; Lee et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by cited proviral sequencing studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Many intact proviruses are found within clonally expanded populations, particularly within the Tem and Th1 subsets, and those expressing Ox40 or CD161.",
+    "claim_type": "EXPLICIT",
+    "source": "Viral sequencing has also revealed many intact proviruses within clonally expanded populations, particularly within the Tem and Th1 subsets, and those expressing Ox40 or CD161 (De Scheerder et al., 2019; Hiener et al., 2017; Kuo et al., 2018; Lee et al., 2017; Li et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple cited proviral sequencing studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Clonal expansion plays a major role in maintaining the long-lived HIV reservoir.",
+    "claim_type": "EXPLICIT",
+    "source": "These and many other studies (Cohn et al., 2020; Liu et al., 2020) have solidified the view that clonal expansion plays a major role in maintaining the long-lived HIV reservoir.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple cited studies and is now a well-established concept in the field.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Current methods for phenotyping reservoir cells require ex vivo stimulation before phenotyping.",
+    "claim_type": "EXPLICIT",
+    "source": "However, one important limitation with these methods is that they require ex vivo stimulation before phenotyping as viral proteins are not typically expressed at detectable levels in unstimulated latent cells (Baxter et al., 2016; Cohn et al., 2018; Pardons et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the limitation of current methods, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Stimulation induces phenotypic changes associated with T cell activation.",
+    "claim_type": "EXPLICIT",
+    "source": "This stimulation will induce phenotypic changes associated with T cell activation, and expression of HIV accessory genes from reactivation will result in host cell remodeling (e.g. downregulation of cell-surface CD4), which will further alter the phenotypes of the cells (Cavrois et al., 2017; Ma et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by cited studies on HIV-induced cell remodeling.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "There is at present no methodology to directly assess the phenotypes of individual latent cells in their original dormant state.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, although current methods enable phenotyping of reactivated cells, there is at present no methodology to directly assess the phenotypes of individual latent cells in their original dormant state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the current gap in the field that this study addresses.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "PP-SLIDE correctly identifies the unstimulated precursor of reactivated J-Lat 6.3 cells 99.2% of the time.",
+    "claim_type": "EXPLICIT",
+    "source": "PP-SLIDE correctly identifies the unstimulated precursor of reactivated 6.3 cells, 99.2% of the time.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the J-Lat validation experiment shown in Figure 1B, where the error rate was 0.8%.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The mean frequency of reactivated cells was 11.3 per million memory CD4+ T cells (range 5.6\u201317.6).",
+    "claim_type": "EXPLICIT",
+    "source": "We identified between 20 and 96 reactivated cells per specimen, corresponding to a mean frequency of 11.3 per million memory (CD45RA-CD45RO+) CD4+ T cells (range 5.6\u201317.6, Figure 2B, Figure 2\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement from the CyTOF data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "kNN latent cells are non-randomly distributed among memory CD4+ T cells as confirmed by chi-squared test.",
+    "claim_type": "EXPLICIT",
+    "source": "We found large clusters lacking kNN latent cells as well as small clusters harboring kNN latent cells, consistent with a non-random distribution of latent cells, which was confirmed using a chi-squared test (Figure 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by FlowSOM clustering analysis and statistical testing shown in Figure 2D with p<0.01 for all four donors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The contribution of Tem to the reservoir was greater than its contribution to total memory CD4+ T cells in all four donors.",
+    "claim_type": "EXPLICIT",
+    "source": "In all four donors, the contribution of Tem to the reservoir was greater than its contribution to total memory CD4+ T cells (Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplement 1 comparing Tcm/Tem/Ttm proportions in kNN latent cells versus total memory CD4+ T cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "kNN latent cells consistently expressed higher levels of CCR5 relative to total memory CD4+ T cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Proteins consistently expressed at higher levels on kNN latent cells than on the total population included immune checkpoint molecules (PD1, CTLA4) and the HIV co-receptors CCR5 and CXCR4.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3B with statistical significance (p<0.05).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "kNN latent cells consistently expressed higher levels of CXCR4 relative to total memory CD4+ T cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Proteins consistently expressed at higher levels on kNN latent cells than on the total population included immune checkpoint molecules (PD1, CTLA4) and the HIV co-receptors CCR5 and CXCR4.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "kNN latent cells consistently expressed higher levels of Ox40 relative to total memory CD4+ T cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Some markers of Tfh (PD1, ICOS) but not others (CXCR5) were consistently elevated.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3B with statistical significance (p<0.01).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "kNN latent cells consistently expressed higher levels of ICOS relative to total memory CD4+ T cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Some markers of Tfh (PD1, ICOS) but not others (CXCR5) were consistently elevated.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3B with statistical significance (p<0.01).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The Tcm marker CD27 was expressed at low levels on kNN latent cells.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, the Tcm marker CD27 was expressed at low levels on kNN latent cells.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3B with statistical significance (p<0.05).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Intra-individual variability in kNN latent cells is less than inter-individual variability.",
+    "claim_type": "EXPLICIT",
+    "source": "The median distances were lower between specimens from the same donor than from different donors (Figure 3\u2014figure supplement 3C), demonstrating that despite the similarity of kNN latent cells between donors, the kNN latent cells differ more between donors than within a donor.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by Euclidean distance calculations shown in Figure 3\u2014figure supplement 3C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "PMA/ionomycin-reactivatable kNN latent cells from different collection time points were more similar to each other than to anti-CD3/CD28-reactivatable kNN latent cells from the same time point.",
+    "claim_type": "EXPLICIT",
+    "source": "Euclidean distance calculations (Figure 3\u2014figure supplement 3A) revealed that PMA/ionomycin-reactivatable kNN latent cells from different collection time points were more similar to each other than to anti-CD3/CD28-reactivatable kNN latent cells from the same time point (Figure 3\u2014figure supplement 3D,E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by Euclidean distance calculations shown in Figure 3\u2014figure supplement 3E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Romdepsin/PEP005 reactivates only a subset of latent cells reactivatable by broad-spectrum mitogens such as PMA/ionomycin.",
+    "claim_type": "EXPLICIT",
+    "source": "These data suggest that Romdepsin/PEP005 reactivates only a subset of latent cells reactivatable by broad-spectrum mitogens such as PMA/ionomycin, although these findings should be confirmed with longitudinal specimens from additional donors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by tSNE visualization and Euclidean distance calculations shown in Figure 4A-B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "CD27 was more highly expressed on FNA kNN latent cells than blood kNN latent cells.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, CD27, an antigen expressed on Tcm cells, and CD69, a marker of activation in blood but a T resident memory (Trm) marker in tissues (Cantero-P\u00e9rez et al., 2019), were more highly expressed on FNA kNN latent cells (Figure 4D, Figure 4\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "CD69 was more highly expressed on FNA kNN latent cells than blood kNN latent cells.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, CD27, an antigen expressed on Tcm cells, and CD69, a marker of activation in blood but a T resident memory (Trm) marker in tissues (Cantero-P\u00e9rez et al., 2019), were more highly expressed on FNA kNN latent cells (Figure 4D, Figure 4\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "PD1 and CXCR5 were expressed at especially high levels on kNN latent cells from FNAs.",
+    "claim_type": "EXPLICIT",
+    "source": "PD1 and CXCR5, markers of Tfh that are preferentially expressed in latent cells particularly in tissues (Banga et al., 2016), were also expressed at especially high levels on kNN latent cells from FNAs (Figure 4D, Figure 4\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4D and Figure 4\u2014figure supplement 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "ICOS was expressed at high levels on kNN latent cells exclusively in FNAs.",
+    "claim_type": "EXPLICIT",
+    "source": "The co-stimulatory molecule ICOS was expressed at high levels on kNN latent cells exclusively in FNAs, while the exhaustion marker TIGIT was more variably expressed (Figure 4D, Figure 4\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4D and Figure 4\u2014figure supplement 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "kNN latent cells from the gut were mostly CD69hiCD27lo.",
+    "claim_type": "EXPLICIT",
+    "source": "kNN latent cells from the gut were mostly CD69hiCD27lo, while those from blood exhibited a much more variable expression pattern of these two antigens (Figure 4\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "kNN latent cells from both the gut and blood expressed high levels of PD1 but relatively low levels of CXCR5.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, kNN latent cells from both the gut and blood expressed high levels of PD1 but relatively low levels of CXCR5 (Figure 4\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "CTLA4 and CCR6 were both highly expressed in kNN latent cells from the gut and blood.",
+    "claim_type": "EXPLICIT",
+    "source": "Another similarity was that CTLA4 and CCR6, previously reported to be preferentially expressed on latent cells from tissues (Gosselin et al., 2017; McGary et al., 2017), were both highly expressed in kNN latent cells from the gut and blood.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text and supported by Figure 4\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "kNN latent cells from FNA and gut tended to cluster more closely together, away from those from blood.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, kNN latent cells from FNA and gut tended to cluster more closely together, away from those from blood, which we also confirmed by Euclidean distance calculations (Figure 4E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4E by tSNE visualization and Euclidean distance calculations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "kNN latent cells from FNAs included both na\u00efve and memory cells, while those from the gut only included memory cells.",
+    "claim_type": "EXPLICIT",
+    "source": "That said, a notable difference was that kNN latent cells from FNAs included both na\u00efve and memory cells, while those from the gut only included memory cells, potentially due to the under-representation of na\u00efve cells within the gut compartment (Figure 4\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Enriched populations harbored more replication-competent HIV than disenriched populations in all four donors.",
+    "claim_type": "EXPLICIT",
+    "source": "Both scoring methods revealed strikingly more outgrowth in the enriched relative to both disenriched populations in all four donors (Figure 6A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6A by viral outgrowth assay data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Most disenriched populations did not result in any outgrowth even at the highest concentration tested (200,000 cells/well).",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, most disenriched populations did not result in any outgrowth even at the highest concentration tested (200,000 cells/well).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The enriched populations harbored more replication-competent HIV than total memory CD4+ T cells.",
+    "claim_type": "EXPLICIT",
+    "source": "The enriched populations also harbored more replication-competent HIV than total memory CD4+ T cells (Figure 6\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6\u2014figure supplement 2 by viral outgrowth assay data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "In 7/8 cases, the enriched populations initiated more HIV transcription than their disenriched counterparts.",
+    "claim_type": "EXPLICIT",
+    "source": "In the absence of stimulation, HIV transcriptional activity was observed in the sorted cells, with more transcription initiation in the enriched than disenriched ones in 7/8 instances (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6B by HIV transcriptional profiling data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Enriched cells harbored higher frequencies of intact p24 sequences than disenriched ones.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with the PP-SLIDE and outgrowth results, enriched cells harbored higher frequencies of intact p24 sequences than disenriched ones (Figure 6C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6C by FLIPS data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The proportions of EIS with intact p24 sequences were consistently higher in the enriched populations than disenriched ones.",
+    "claim_type": "EXPLICIT",
+    "source": "EIS were prominent in both populations, but the proportions of EIS with intact p24 sequences were consistently higher in the enriched ones (Figure 6\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "65.2% of the enriched population from PID5003 was fully intact, compared to only 0.9% for the disenriched population.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, 65.2% of the enriched population was fully intact, compared to only 0.9% for the disenriched population (Figure 6D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6D by FLIPS data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The overall frequency of intact provirus in the enriched PID5003 population was 214 per million cells, compared to only two per million in the disenriched population.",
+    "claim_type": "EXPLICIT",
+    "source": "This corresponded to an overall frequency of 214 full-length intact sequences per million in the enriched population, as compared to only two per million in the disenriched population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 6D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "95.5% of the proviruses in the disenriched population harbored large internal deletions.",
+    "claim_type": "EXPLICIT",
+    "source": "The vast majority (95.5%) of the proviruses in the disenriched population harbored large internal deletions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 6D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Among the EIS in the enriched population from PID5003, 66.7% were fully intact, compared to 0% in the disenriched population.",
+    "claim_type": "EXPLICIT",
+    "source": "Among the EIS in the enriched population, 66.7% were fully intact, compared to 0% in the disenriched population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text and shown in Figure 6E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Fully-intact EIS in the enriched population from PID5003 comprised two groups, suggesting two major expansions of replication-competent reservoir cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Fully-intact EIS in the enriched population comprised two groups, suggesting two major expansions of replication-competent reservoir cells in this population of cells highly enriched for replication-competent HIV (Figure 6E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6E by phylogenetic analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The universal panel enriches for the replication-competent reservoir in four untested donors.",
+    "claim_type": "EXPLICIT",
+    "source": "Viral outgrowth assays revealed robust outgrowth in the enriched but not disenriched populations (Figure 6F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6F by viral outgrowth assay data from four new donors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "TIGIT is not a marker of latent cells shared between donors.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the TIGIThigh population harbored more viruses in some donors and the TIGITmed/low one in others, validating the notion that TIGIT is not a marker of latent cells shared between donors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by viral outgrowth data shown in Figure 6F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "On average only 2\u20133% of sequences from infected individuals treated during chronic infection are intact.",
+    "claim_type": "EXPLICIT",
+    "source": "To put these numbers in perspective, on average only 2\u20133% of sequences from infected individuals treated during chronic infection are intact (Bruner et al., 2016; Hiener et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by cited proviral sequencing studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The frequency of intact provirus in Tem ranges from 1\u201326 per million, with a median of 13 per million.",
+    "claim_type": "EXPLICIT",
+    "source": "The overall frequency of intact provirus in the enriched PID5003 population was also extremely high: at 214 per million cells, it was more than an order of magnitude higher than what is observed in Tem (range = 1\u201326, median, 13 per million), the subset with the highest frequencies of intact provirus as assessed by FLIPS (Hiener et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a cited proviral sequencing study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Blood, lymph nodes, and gut are the major sources of HIV dissemination in ART-suppressed individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Given recent findings that blood, lymph nodes, and gut are the major sources of HIV dissemination in ART-suppressed individuals (Chaillon et al., 2020), targeting latent cells in the compartments analyzed in this study may be sufficient to make a meaningful reduction in the reservoir.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a cited study on HIV dissemination.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The IUPM from the gut specimen PID1223 was 0.265, with 95% confidence intervals between 0.0216 and 1.400.",
+    "claim_type": "EXPLICIT",
+    "source": "The IUPM from this analysis was 0.265, with 95% confidence intervals between 0.0216 and 1.400.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement from the DEVO assay.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "PMA/ionomycin stimulation of T cells for 2 days does not induce proliferation.",
+    "claim_type": "EXPLICIT",
+    "source": "PMA/ionomycin stimulation of T cells for 2 days does not induce proliferation.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 2\u2014figure supplement 2B by CFSE dilution assay.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Proliferation begins to occur on day 3 post-stimulation with PMA/ionomycin.",
+    "claim_type": "EXPLICIT",
+    "source": "The results demonstrate that proliferation begins to occur on day 3 post-stimulation.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 2\u2014figure supplement 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "A combination cocktail of ART fully suppresses HIV infection.",
+    "claim_type": "EXPLICIT",
+    "source": "A combination cocktail of ART fully suppresses HIV infection.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 2\u2014figure supplement 2A by infection assay.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

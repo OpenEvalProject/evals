@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C40",
+      "C46",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "ACE2 and TMPRSS2, the canonical cell entry mediators for SARS-CoV-2, are negligibly co-expressed in human placental tissues across all three trimesters of pregnancy. Using single-cell RNA-seq, single-nucleus RNA-seq, and microarray data, the authors found fewer than 1/10,000 cells co-expressing both genes, with TMPRSS2 largely undetected in bulk tissue analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37, C38, C40, C46, C48, C49, and C50 converge on the same finding using multiple complementary methodologies (scRNA-seq, snRNA-seq, and microarray). The quantitative threshold (1 transcript per cell) is explicitly stated (C38), and the finding is consistent across trimesters and tissue types. The use of snRNA-seq addresses potential technical bias from scRNA-seq (C41-C46), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors developed and applied single-nucleus RNA-seq (snRNA-seq) to placental tissues to address dissociation bias against large syncytiotrophoblast cells in scRNA-seq studies. This represents the first snRNA-seq study of placental tissues and successfully captured a larger fraction of syncytiotrophoblast cells compared to scRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 describe a methodological innovation addressing a known technical limitation. The rationale (C41-C42), implementation (C43-C44), and validation (C45) are clearly presented. Figure 1 shows the increased STB fraction, supporting the claim that snRNA-seq reduces dissociation bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "Receptors for viruses known to cause congenital infections (CMV and ZIKV) are highly expressed in placental cell types. CMV receptors (NRP2, PDFGRA, CD46) and the ZIKV receptor AXL show high expression across multiple placental cell types throughout gestation, contrasting with the minimal expression of SARS-CoV-2 receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69-C74, and C78 demonstrate high expression of CMV and ZIKV receptors using the same analytical pipeline that showed minimal SARS-CoV-2 receptor expression. This internal positive control validates the methodology and supports the biological interpretation. Figure 2 provides visual evidence of the expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C76",
+      "C77",
+      "C79"
+    ],
+    "result": "The placenta minimally expresses canonical SARS-CoV-2 cell-entry mediators, suggesting low likelihood of vertical transmission. The minimal co-expression of ACE2 and TMPRSS2 contrasts with high expression in COVID-19 target tissues (airways, lungs, gastrointestinal tract), indicating the placenta is not a likely route for vertical transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50-C52, C76-C77, and C79 represent the main conclusion, directly supported by the expression data (C4, C37-C40, C46, C48-C49). The comparison to COVID-19 target tissues (C51) provides important context. The authors appropriately acknowledge limitations (transcript vs. protein levels in C79) and potential exceptions (C52, C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Alternative SARS-CoV-2 entry mediators (BSG, CTSL, FURIN, SIGLEC1, ADAM17) are expressed in placental tissues, but their role in placental infection remains uncertain. While BSG, CTSL, and FURIN are highly expressed, BSG's ubiquitous expression and the requirement for TMPRSS2 (not ADAM17) for efficient viral entry suggest these alternative pathways are likely less efficient than the canonical ACE2/TMPRSS2 route.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C68 document expression of alternative entry mediators but appropriately note uncertainty about their functional significance. The widespread expression of BSG (C56) undermines its specificity as an entry mediator (C57). Evidence from SARS-CoV-1 studies (C60, C67) may not directly apply to SARS-CoV-2. The inference that these pathways are less efficient (C68) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The first-trimester findings of minimal ACE2 expression at the maternal-fetal interface agree with a prior report by Zheng et al., 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 appropriately contextualizes the study's findings within existing literature, noting agreement with prior work. This strengthens confidence in the first-trimester results through independent replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Expression of ACE2 and TMPRSS2 might be higher in individuals with pregnancy complications related to the renin-angiotensin-aldosterone system (RAAS), which can alter ACE2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is speculative and acknowledges a potential limitation of the study. The samples analyzed may not represent pathological pregnancies where RAAS dysregulation could alter receptor expression. This caveat is appropriately noted but not tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior literature shows no consistent evidence for vertical transmission of SARS-CoV-2, though rare cases of neonatal infection and detection of viral RNA in amniotic fluid and placental tissues have been reported. Most neonates born to COVID-19 positive mothers test negative and remain asymptomatic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C34 accurately summarize the state of knowledge from prior literature regarding vertical transmission. The citations support the claims about clinical outcomes, serological findings, and rare case reports. This background contextualizes the study's investigation of receptor expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36"
+    ],
+    "result": "SARS-CoV-2 canonically utilizes ACE2 and TMPRSS2 for cell entry, as established in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35, and C36 accurately represent established knowledge about SARS-CoV-2 cell entry mechanisms, supported by appropriate citations. This provides the scientific rationale for investigating these specific receptors in placental tissues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "32 placental villi/decidua samples from the third trimester were pooled for snRNA-seq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 describes a methodological detail that is clearly stated and referenced to supplementary materials. Pooling samples increases statistical power but may mask individual variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "snRNA-seq has higher background compared to scRNA-seq, which is a known technical limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 accurately describes a known limitation of snRNA-seq methodology. The authors appropriately note this does not affect their co-expression analysis since co-expression was not observed even with potentially elevated background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background information on COVID-19 pandemic, clinical characteristics in pregnant women, and comparison to other viral infections during pregnancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C23 provide epidemiological and clinical context from prior literature and public health data. These claims are appropriately cited and establish the rationale for studying SARS-CoV-2 and pregnancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The placenta serves multiple physiological functions and, together with chorioamniotic membranes, provides protection against most maternal pathogens, though some viruses (Toxoplasma, Rubella, HSV, CMV, ZIKV) can cross the placenta and cause congenital disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 accurately summarize established knowledge about placental function and vertical transmission of pathogens, supported by appropriate citations. This provides biological context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Cellular receptors and mechanisms exploited by SARS-CoV-2 are still under investigation, and single-cell atlases can help identify susceptible cell types based on transcriptional profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 appropriately acknowledge ongoing research and the utility of single-cell approaches. This contextualizes the study's contribution within the broader research landscape.",
+    "result_type": "MINOR"
+  }
+]

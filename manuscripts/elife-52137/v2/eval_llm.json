@@ -1,0 +1,453 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C45"
+    ],
+    "result": "The mean number of docking/release sites per synapse is 3.6, determined by variance-mean analysis of synaptic vesicle counts. This value remains constant across different experimental conditions including TEA application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C35, and C45 provide consistent measurements of N=3.6 sites per synapse using variance-mean analysis. The finding that N remains constant upon TEA application (C45) strengthens the reliability of this measurement and supports the interpretation that changes in synaptic strength are mediated by changes in release probability rather than site number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C51",
+      "C52",
+      "C57",
+      "C58",
+      "C59",
+      "C127",
+      "C144"
+    ],
+    "result": "At physiological calcium concentration (1.5 mM), synaptic output saturates at 0.22 vesicles per site when release probability is maximized with TEA, reflecting incomplete docking site occupancy (\u03b4 = 0.22) at rest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51, C52, C57, and C127 provide converging experimental evidence that P1 saturates near 0.22 despite increasing TEA concentration. Claims C5, C59, and C144 interpret this saturation as reflecting \u03b4=0.22, which is logically consistent with the model P1=\u03b4p when p approaches 1. The interpretation is well-supported by the observation that further increases in calcium entry (5 mM TEA) do not increase P1 beyond this limit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C127",
+      "C128",
+      "C141"
+    ],
+    "result": "At elevated calcium concentration (3 mM), the maximum output per site increases to 0.47, indicating that docking site occupancy (\u03b4) increases as a function of external calcium concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C63-C68, and C127 provide direct experimental measurements showing higher P1 and Pmax values at 3 mM calcium compared to 1.5 mM. Claims C8, C128, and C141 interpret this as an increase in \u03b4 from 0.22 to 0.47. The interpretation is supported by the observation that combining high calcium with TEA produces even higher P values (C67-C68), suggesting both \u03b4 and p increase with elevated calcium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C71",
+      "C73",
+      "C82"
+    ],
+    "result": "TEA increases release probability by broadening action potential duration and increasing calcium entry, but does not change docking site occupancy at constant external calcium concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 demonstrate that TEA increases AP duration, decreases K+ currents, and increases synaptic responses. Claim C46 shows the effect is mediated entirely by changes in P (not N). Claims C71, C73, and C82 interpret this as TEA affecting p but not \u03b4, which is consistent with the observation that facilitation persists in TEA (C48, C78), a pattern predicted when \u03b4 remains low.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Elevated external calcium increases miniature EPSC frequency without changing amplitude, suggesting an increase in presynaptic resting calcium that may enhance docking site occupancy through calcium-dependent vesicle replenishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 provide direct measurements showing increased miniature frequency at 3 mM calcium without amplitude changes. Claims C87 and C89 correctly infer this reflects elevated presynaptic calcium. Claims C90-C91 provide a mechanistic link to docking site occupancy through cited evidence that replenishment is calcium-dependent. However, C91 is appropriately cautious ('plausible') as this is an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Variance-mean analysis using peak EPSC amplitudes systematically overestimates release probability and underestimates site number and quantal size compared to synaptic vesicle counting methods, likely due to receptor saturation and synaptic jitter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 provide direct paired comparisons showing systematic differences between methods (P1: 0.294 vs 0.612; N: 3.94 vs 2.19; q: 217 vs 147 pA). Claim C108 correctly summarizes these findings and attributes them to known methodological limitations (C95, C96). Claim C109 appropriately suggests this may explain discrepancies with prior literature. The statistical significance (p<0.001 to p<0.05) supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Calcium imaging reveals that calcium entry increases with TEA concentration, but discrepancies between calcium entry and release probability indicate that factors beyond calcium entry (specifically docking site occupancy) limit synaptic output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 provide direct measurements of calcium entry increases with TEA. Claims C114-C117 identify critical discrepancies: P1 does not increase from 1 to 5 mM TEA despite increased calcium entry, and P1 differs between conditions with similar calcium entry. These observations logically support the conclusion that \u03b4, not just p, limits release probability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "Computational modeling shows that the dose-response relationship between calcium and release probability differs substantially between step calcium increases (Hill coefficient n=3) and action potential stimulation (n=1.7), reflecting complex calcium dynamics during physiological stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 present clear modeling results showing different Hill coefficients for different stimulation modes. Claim C122 provides a mechanistic explanation involving calcium diffusion and buffering. Claims C125-C126 show that experimental data cannot be fit with a single scaling factor, requiring calcium-dependent changes in \u03b4. The modeling appropriately uses established models (Lou et al., 2005) adapted for this preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Addition of 4-AP to TEA further increases calcium entry and Pmax but not P1, confirming that P1 remains limited by docking site occupancy even with very high calcium entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 provide experimental measurements showing that 4-AP increases Pmax (0.263 to 0.550) but P1 remains similar after correction for 2-step release (0.140 vs 0.125). Claims C137-C138 correctly interpret this as P1 being limited by \u03b4 while increased replenishment during trains allows higher Pmax. This provides strong independent confirmation of the main hypothesis using a different pharmacological approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Correcting for docking site occupancy reveals that the actual release probability of docked vesicles (p) is substantially higher than apparent release probability (P1): p=0.39 at 1.5 mM calcium and p=0.60 at 3 mM calcium, approaching p\u22481 in the presence of TEA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147 present straightforward calculations using the relationship P1=\u03b4p with measured values. Claim C148 correctly notes this reveals higher p values than would appear without correction. Claim C149 shows p approaches 1 in TEA (0.85-0.95), validating the assumption that TEA saturates p. Claim C150 concludes that P1 in TEA approximates \u03b4, which is logically sound when p\u22481.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C48",
+      "C49",
+      "C50",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Short-term synaptic plasticity patterns differ between conditions: facilitation is prominent at 1.5 mM calcium (with and without TEA) but becomes weak or absent at 3 mM calcium, consistent with changes in docking site occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 establish baseline facilitation at 1.5 mM calcium. Claims C48-C50 show facilitation persists in TEA. Claims C78-C81 document the shift to depression at 3 mM calcium. These observations are internally consistent and align with model predictions (C74-C77) that facilitation can persist at high p if \u03b4 is low, but disappears when \u03b4 increases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C38",
+      "C39",
+      "C139",
+      "C140",
+      "C142"
+    ],
+    "result": "The study establishes that release probability per site (P) is the product of docking site occupancy (\u03b4) and release probability of docked vesicles (p), and that P1 has a maximum value dependent on external calcium concentration, providing a method to estimate resting docking site occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 establish the experimental observations of variable responses. Claim C38 presents the theoretical framework P=\u03b4p from established models. Claim C39 cites evidence that plasticity follows changes in \u03b4. Claims C139-C140 summarize the main finding and interpretation. Claim C142 states the methodological advance. These claims form a coherent framework supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "PF-MLI synapses belong to the 'tonic synapse' category with low docking site occupancy (\u03b4=0.22) and facilitating properties, contrasting with 'phasic synapses' like MLI-MLI connections that have higher occupancy (\u03b4=0.5-0.7) and depressing properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 apply the current findings to explain prior observations at PF-Purkinje synapses. Claims C153-C154 cite the conceptual framework of synaptic diversity. Claims C155-C157 classify the studied synapses within this framework using both current data and prior literature. The classification is well-supported and provides useful context for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C164"
+    ],
+    "result": "The moderate maximum P values found in this study are compatible with earlier studies reporting higher values, as those studies typically used high calcium conditions (which increase \u03b4) and may have been affected by uncorrected methodological errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 accurately cite prior literature showing P values of 0.5-1 obtained at high calcium. Claim C161 logically reconciles this with current findings by noting \u03b4 increases with calcium. Claim C162 adds that methodological errors may also contribute. Claim C164 appropriately concludes the findings are compatible with prior work. This provides important context and addresses potential concerns about discrepancies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The mechanism by which elevated external calcium increases docking site occupancy likely involves increased presynaptic resting calcium that enhances calcium-dependent vesicle docking and replenishment, potentially mediated by molecules such as synaptotagmin-1, Munc13, or actomyosin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C167 present reasonable mechanistic speculation based on established principles (C166 is well-cited). Claims C168-C170 cite relevant studies suggesting molecular mechanisms. However, these are largely speculative proposals (appropriately qualified with 'likely,' 'may,' 'could') rather than directly tested hypotheses. The mechanism remains uncertain and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Changes in docking site occupancy driven by presynaptic calcium may represent a general mechanism for neuromodulation, potentially explaining effects of subthreshold depolarization, presynaptic receptor activation, and analog signaling observed in various preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C172-C175 cite multiple examples of neuromodulation involving presynaptic calcium increases. Claims C176-C177 speculate these may involve changes in \u03b4. While this is an interesting hypothesis consistent with the current findings, it remains speculative. The cited studies did not measure \u03b4, and alternative mechanisms could explain their observations. This represents a testable prediction for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on synaptic vesicle release: vesicles undergo docking and priming at active zones, mature through SNARE complex formation, and fuse following calcium-triggered conformational changes in synaptotagmin, with established models predicting maximum release probability of 1 at high calcium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C17) summarize well-established background knowledge about synaptic vesicle release, appropriately supported by citations to foundational literature. They provide necessary context for understanding why the current findings (that P does not reach 1) are significant and challenge prior assumptions (C2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Recent studies indicate that docking/priming steps can occur on fast timescales (milliseconds) and may involve calcium-dependent vesicle movement, suggesting integration between preparatory steps and exocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 accurately summarize recent literature on the dynamics of docking and priming, appropriately citing TIRF microscopy (C18), electrophysiology (C20), and electron microscopy studies (C21-C22). These provide important context for the current study's focus on docking site occupancy and its calcium dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prior work on simple synapses has provided evidence for partial docking site occupancy at rest, though estimates remain tentative, and model simulations indicate this parameter strongly influences synaptic plasticity and release statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 appropriately cite prior work from the authors' group on simple synapses. Claim C29 honestly acknowledges limitations of prior estimates. Claims C30-C31 cite modeling work and present the logical prediction that motivates the current study. This provides appropriate context and justification for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Models predict that increasing docking site occupancy (\u03b4) to maximum causes all synapses to become depressing, while increasing release probability of docked vesicles (p) to maximum allows synapses with low \u03b4 to remain facilitating due to replenishment of initially empty sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 present model predictions that are well-supported by cited prior modeling work (C74: Pulido and Marty, 2018). The mechanistic explanation in C77 is logically sound. These predictions are used to interpret the experimental observations of plasticity changes and are validated by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Variance-mean parabolas in this study were incomplete, with maximum P values not exceeding 0.66, contrasting with many prior studies reporting P\u22650.9, which may reflect methodological limitations in traditional peak EPSC analysis including receptor saturation and synaptic jitter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 accurately describe the observations and contrast with literature. Claims C95-C99 cite established methodological concerns and note that corrections are difficult to implement. This provides important context for the methodological comparison (Figure 2) and helps explain discrepancies with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Current models assume action potentials induce brief, high-amplitude local calcium transients that trigger fast cooperative calcium binding to 4-5 sites on synaptotagmin, followed by irreversible exocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 accurately summarize established models of calcium-triggered release, appropriately citing foundational papers. This provides necessary background for the modeling work in Figure 4 and helps explain why the dose-response relationship differs between stimulation modes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The relationship P1 = \u03b4p is used as a framework for interpreting experimental data, where P1 is the measured release probability, \u03b4 is docking site occupancy, and p is the release probability of docked vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 restates the fundamental theoretical relationship used throughout the analysis. This relationship is well-established in the field (cited in C38) and provides the mathematical framework for separating \u03b4 from p. The repeated statement emphasizes its importance for data interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "In MLI terminals and calyx of Held, 4-AP increases synaptic transmission more effectively than TEA, with 4-AP markedly increasing calcium entry while TEA alone is relatively ineffective, and combining both produces even larger calcium elevations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 accurately cite prior literature comparing effects of 4-AP and TEA on calcium entry and synaptic transmission. This provides important context for the 4-AP experiments in Figure 4\u2014figure supplement 1 and explains why this manipulation was tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "The current results confirm earlier suggestions that docking site occupancy is less than 1 at PF-MLI synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 appropriately notes that the current findings (\u03b4=0.22-0.47) confirm prior suggestions of incomplete occupancy, citing the authors' earlier work. This provides continuity with prior studies while noting the current work provides more definitive estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C163"
+    ],
+    "result": "The climbing fiber-Purkinje cell synapse represents an extreme case of phasic synapses with P values above 0.9 at normal calcium concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C163 cites a well-established example (Silver et al., 1998) of a synapse with very high release probability. This provides useful context by identifying an exception to the pattern of moderate P values, suggesting that very high \u03b4 values can occur in specialized synapses.",
+    "result_type": "MINOR"
+  }
+]

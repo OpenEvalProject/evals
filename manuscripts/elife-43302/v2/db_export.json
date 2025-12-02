@@ -1,0 +1,1599 @@
+{
+  "submission": {
+    "id": "b0476799-cfe8-4d0b-b501-9b328fa38487",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:04:22.038742Z",
+    "updated_at": "2025-12-02T14:04:22.038742Z"
+  },
+  "content": [
+    {
+      "id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "submission_id": "b0476799-cfe8-4d0b-b501-9b328fa38487",
+      "content_type": "manuscript",
+      "content_text": "# Cell-based HTS identifies a chemical chaperone for preventing ER protein aggregation and proteotoxicity\n\n## Authors\n\n- Keisuke Kitakaze<sup>1</sup> ([ORCID: 0000-0002-4852-1257](https://orcid.org/0000-0002-4852-1257))\n- Shusuke Taniuchi<sup>1</sup>\n- Eri Kawano<sup>1</sup>\n- Yoshimasa Hamada<sup>1</sup>\n- Masato Miyake<sup>1</sup>\n- Miho Oyadomari<sup>1</sup>\n- Hirotatsu Kojima<sup>5</sup>\n- Hidetaka Kosako<sup>2</sup>\n- Tomoko Kuribara<sup>6</sup>\n- Suguru Yoshida<sup>6</sup> ([ORCID: 0000-0001-5888-9330](https://orcid.org/0000-0001-5888-9330))\n- Takamitsu Hosoya<sup>6</sup>\n- Seiichi Oyadomari<sup>1</sup> ([ORCID: 0000-0001-6766-1485](https://orcid.org/0000-0001-6766-1485)) \u2020\n\n### Affiliations\n\n1. Division of Molecular Biology, Institute for Genome Research, Institute of Advanced Medical Sciences Tokushima University Tokushima Japan\n2. Fujii Memorial Institute of Medical Sciences, Institute of Advanced Medical Sciences Tokushima University Tokushima Japan\n3. Department of Pharmacology Kawasaki Medical School Kurashiki Japan\n4. Department of Molecular Research, Diabetes Therapeutics and Research Center, Institute of Advanced Medical Sciences Tokushima University Tokushima Japan\n5. Drug Discovery Initiative (DDI) The University of Tokyo Tokyo Japan\n6. Laboratory of Chemical Bioscience, Institute of Biomaterials and Bioengineering Tokyo Medical and Dental University (TMDU) Tokyo Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe endoplasmic reticulum (ER) is responsible for folding secretory and membrane proteins, but disturbed ER proteostasis may lead to protein aggregation and subsequent cellular and clinical pathologies. Chemical chaperones have recently emerged as a potential therapeutic approach for ER stress-related diseases. Here, we identified 2-phenylimidazo[2,1-b]benzothiazole derivatives (IBTs) as chemical chaperones in a cell-based high-throughput screen. Biochemical and chemical biology approaches revealed that IBT21 directly binds to unfolded or misfolded proteins and inhibits protein aggregation. Finally, IBT21 prevented cell death caused by chemically induced ER stress and by a proteotoxin, an aggression-prone prion protein. Taken together, our data show the promise of IBTs as potent chemical chaperones that can ameliorate diseases resulting from protein aggregation under ER stress.\n\n## Introduction\n\nProteins are responsible for many tasks in cellular life, and having a correct three-dimensional protein structure is essential for their function. Molecular chaperones are proteins that assist the covalent folding or unfolding of proteins and the assembly or disassembly of protein complexes. One major function of chaperones is to prevent both newly synthesized polypeptide chains and assembled subunits from aggregating into non-functional structures. The accumulation of unfolded or misfolded proteins in the endoplasmic reticulum (ER) is called ER stress. The cell has an adaptive system against ER stress called the unfolded protein response (UPR), which is the coordinated transcriptional upregulation of ER chaperones and folding enzymes that prevents the aggregation of unfolded and incompletely folded proteins (Mori, 2000; Walter and Ron, 2011; Han and Kaufman, 2017). The UPR is initiated by the activation of the following three signal transducers located in the ER: IRE1\u03b1, PERK and ATF6. Disturbance of the UPR has important pathological consequences, including diabetes, neurodegenerative disease and cancer (Hotamisligil, 2010; Mart\u00ednez et al., 2018; Clarke et al., 2014).\n\nTo overcome ER stress-related diseases, the following two pharmacological strategies can be applied: the modulation of ER protein folding environments (by UPR modulators) and a reduction in the accumulation of unfolded or misfolded ER proteins (by chemical chaperones). With the past decade of research, encouraging progress has been made in this area through the identification of several compounds. Several UPR modulators that show therapeutic benefits in mouse disease models have been developed. KIRA6, an inhibitor of the UPR regulator IRE1, and azoramide, an ER calcium modulator, have shown potent anti-diabetic efficacy (Ghosh et al., 2014; Fu et al., 2015). Both Sephin1, a PPP1R15A inhibitor, and ISRIB, an eIF2B activator, modulate PERK signalling and have been reported to exert neuroprotective effects in mouse models of amyotrophic lateral sclerosis (ALS) and prion disease (Das et al., 2015; Halliday et al., 2015). In contrast, several chemical chaperones that have shown therapeutic benefits in mouse disease models have also been developed. 4-Phenylbutyrate (4PBA) and taurourso-deoxycholic acid (TUDCA) have been reported to function as chemical chaperones and have shown therapeutic benefits for a wide variety of diseases, such as diabetes, ALS and Alzheimer's disease (Ozcan et al., 2006; Cudkowicz et al., 2009; Nunes et al., 2012). These data indicate that pharmacological intervention to alleviate ER stress is a promising approach for treating a range of diseases.\n\nAlthough chemical chaperones represent an interesting potential novel class of therapeutics, due to limitations including high concentration treatment of currently known chemical chaperones, identifying novel chemical classes of chemical chaperones is desirable. Several approaches for the high-throughput screening (HTS) of small molecules have been used. First, a cell survival-based HTS approach to identify small molecules that protect cells against ER stress-induced cell death was attempted. Indeed, salubrinal (Boyce et al., 2005) and compound 13d (Duan et al., 2017) were identified by HTS as small molecules to protect neuronal cells or pancreatic \u03b2-cells against ER stress-induced apoptosis, respectively. However, this phenotypic HTS has challenges in compound target identification. A molecular target-based approach for drug discovery was also attempted. For example, KIRAs (Wang et al., 2012), the PERK inhibitor GSK2656157 (Axten et al., 2012), and the IRE1/PERK activator IPA (Mendez et al., 2015) were identified or developed from an initial screening hit by structure-based design. Undoubtedly, molecular target-based screening has some advantages over phenotypic screenings, as a molecular target assay is often required for subsequent chemical optimization of lead compounds from HTS hit compounds. However, target-based drug discovery may have limitations because multiple targets and signalling pathways can be involved in pathological conditions. Having the best features of phenotypic and molecular target-based HTS, signalling pathway HTS has gained momentum for identifying UPR modulators. For instance, the PERK inhibitors GSK2606414 (Axten et al., 2012) and ISRIB (Sidrauski et al., 2013), the IRE1 inhibitors STF-083010 (Papandreou et al., 2011) and 4\u03bc8c (Cross et al., 2012), the ATF6 inhibitor Ceapins (Gallagher and Walter, 2016) and the ATF6 activator AA147 (Plate et al., 2016) were identified using PERK, IRE1 and ATF6 reporter assays, respectively.\n\nOne of the key obstacles of HTS for chemical chaperones is the lack of a quantitative assay to directly monitor ER protein folding. We attempted to tackle this obstacle by utilizing a UPR signalling assay. Here, we employed a cell-based HTS with a highly sensitive UPR signalling reporter and discovered 2-phenylimidazo[2,1-b]benzothiazole derivatives (IBTs) as chemical chaperones. Biochemical and chemical biology approaches revealed that IBT21 directly binds unfolded or misfolded proteins to inhibit protein aggregation. Finally, IBT21 prevented cell death caused by chemically induced ER stress and a proteotoxin, an aggression-prone prion protein, indicating that IBT21, as a chemical chaperone, alleviates ER stress.\n\n## Results\n\n### Cell-based high-throughput screen for chemical chaperones\n\nThe UPR is mainly mediated by the following three transcription factors: XBP1 for the IRE1 pathway, ATF4 for the PERK pathway and ATF6 for the ATF6 pathway. Activation of each branch of the UPR can be reported by transcriptional reporters containing ER stress response element-2 (ERSE2) (Kokame et al., 2001), unfolded protein response element (UPRE) (Yoshida et al., 2001) and amino acid response element (AARE) (Bruhat et al., 2000), which are ATF6, XBP1 and ATF4 binding sequences, respectively. We established a UPR activation EGFP reporter (EUA-EGFP) cell line containing ten tandem repeats of ERSE2 (10X ERSE2), ten tandem repeats of UPRE (10X UPRE) and five tandem repeats of AARE (5X AARE) in the region upstream of a minimal promoter (Figure 1A). The EUA-EGFP reporter cells can simultaneously monitor the activation of the three branches of the UPR with high sensitivity and specificity using the specific ER stressor tunicamycin (Tm), an inhibitor of N-linked glycosylation (Figure 1B and Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the UPR activation reporter (EUA-EGFP) in our HTS that can sense the three branches of the UPR using three stress response elements. ERSE2, ER stress response element-2; UPRE, unfolded protein response element; AARE, amino acid response element. (B) Activation of EUA-EGFP in HEK293A cells treated with the indicated concentration of tunicamycin (Tm) treatment overnight. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04). (C) HTS protocol for chemical chaperone identification. (D) Flow diagram for the identification of chemical chaperones. The hit selection criteria and criteria used for prioritizing compounds are shown. (E) Results of the primary screen. Four compounds with a common scaffold among the top 10 hit compounds are colored red. (F) Chemical structure of the four compounds with a common scaffold among the top 10 hit compounds. The 2-phenylimidazo[2,1-b]benzothiazole skeletal formula, which was the common scaffold, is shown in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Inhibition of the EUA-EGFP reporter in HEK293A cells treated with 0.2 \u03bcg/mL Tm in the presence of PERK inhibitor I (GSK2606414), IRE1 inhibitor I (STF083010) or Site-1-protease inhibitor (PF429242).\u00a0(B\u2013C) EUA-EGFP reporter activity and viability per well in the 1 st screen were counted.\n\nER chemical chaperones are small molecules that prevent protein aggregation, thereby theoretically suppressing UPR activation under ER stress conditions. We hypothesized that chemical chaperones could be identified by monitoring UPR activation for reductions under ER stress conditions. The EUA-EGFP reporter cells allowed us to perform 384-well HTS via a sensitive (signal-to-background ratio\u00a0=\u00a05.09\u00a0\u00b1\u00a01.28) and robust (Z\u2019 factor\u00a0=\u00a00.78\u00a0\u00b1\u00a00.06) homogeneous assay using a microplate reader (Figure 1C). We screened the 217,765-compound chemical library from the Drug Discovery Initiative at the University of Tokyo. The small molecule inhibition of EUA-EGFP cells was normalized to the untreated control (assigned to be 100% inhibition), as was the cell viability, allowing comparisons between the screening plates. A first screening was carried out with all compounds at a concentration of 5 \u00b5M. We identified 1920 compounds for which the % EUA-EGFP inhibition was greater than the average + 5 SD of the Tm-treated control (hit cut-off\u00a0=\u00a037%) and the % viability was greater than the average + 3 SD of the Tm-treated control (hit cut-off\u00a0=\u00a078%) (Figure 1D and E). Confirmation screening was carried out with all compounds at a concentration of 0.5 \u00b5M in the second screening round. To decrease the number of compounds for follow-up, we chose the top 10 inhibition hits. A maximum common substructure search identified a common scaffold in 4 of 10 compounds: the 2-phenylimidazo[2,1-b]benzothiazole skeleton (shown in red) (Figure 1D and F). Although the other six compounds had the same high activity, they were all singletons with no common chemical structure. Therefore, we prioritized the analysis of the compounds with the 2-phenylimidazo[2,1-b]benzothiazole scaffold. The other six compounds remain to be analyzed in future studies.\n\n### Structure-activity relationship study of imidazo[2,1-b]benzothiazole derivatives (IBTs)\n\nTo define the common scaffold of the hits, a structure-activity relationship (SAR) study was conducted for the 28 compounds considered imidazo[2,1-b]benzothiazole derivatives (IBTs). The 50% inhibitory concentration (IC50) for UPR activation was calculated using a five-point dose-response curve for the 28 compounds. Hierarchical structure clustering analysis revealed four major clusters in the dendrogram (Figure 2 and Figure 2\u2014figure supplement 1). The active compounds belonged to two clusters, suggesting that both R1 and R2 in the IBTs are important for the observed activity. Removal of the phenyl group at the R1 position completely abolished UPR inhibition, indicating that the phenyl group is necessary for potency. Preferred substituents at the p-position of the R1 phenyl group include hydrogen groups (IBT6, IBT9, IBT15, IBT19 and IBT21), halogen groups (IBT2, IBT17 and IBT22), an ethyl group (IBT14) and a methoxy group (IBT3, IBT5, IBT8 and IBT12). In contrast, methyl groups (IBT4 and IBT10) and amino groups (IBT18) were not preferred. To investigate whether the activity decrease at R2 is caused by an amide bond or by bulkiness, we designed and synthesized a methyl-substituted amide-containing IBT (IBT29). IBT29 exhibited higher activity than IBT21 (Figure 2\u2014figure supplement 2).Thus, for R2, a short substituent, particularly methylamide, endowed the scaffold with the desired activity. We observed that the preferred substituents at R2 are hydrogen groups (IBT1, IBT11, IBT12, IBT13, IBT17 and IBT20), methylsulphonyl groups (IBT21 and IBT22), a methoxycarbonyl group (IBT14 and IBT15) and a methylamide group (IBT29). Non-preferred substituent is carboxy group (IBT16).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig2-v2.jpg)\n\n**Figure 2.:** The dendrogram for the hierarchical structural clustering of 28 IBTs is shown with the LogP, maximum activity (%),IC50 (\u03bcM) of EUA-EGFP and viability (%) of the cells treated with 0.2 \u03bcg/mL Tm overnight relative to that of the untreated cells. The top compound (IBT21) is highlighted in red and the 2nd to 5th compounds are highlighted in orange. n.d.: not-determined.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04\u20135).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Chemical structure of 7-(methylaminocarbonyl)\u22122-phenylimidazo[2,1-b]benzothiazole (IBT29).\u00a0(B) Inhibition of the EUA-EGFP reporter in HEK293A cells treated with 0.2 \u03bcg/mL Tm in the presence of IBT21 or IBT29. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04).\n\nFor the next step, we needed to select one compound from the top five inhibitory IBTs (IBT14, IBT15, IBT17, IBT21 and IBT22) as a lead compound for further characterization of the IBT mechanism of action. One of the limitations of the current screening is that the target proteins of the hit compounds were unidentified. Since small molecule\u2013target interaction profiles are useful for structure-based drug design to improve the lead compound, this compound should be capable of linker attachment to pull down a target protein. To obtain a bioactive IBT probe for pulldown, R1 could be an appropriate site for linker attachment because the SAR results predicted that linker attachment at the R2 position might lead to loss of activity. IBT21 is the only compound that has no substituent at the R1 phenyl group 2-position among the top five compounds. In terms of pharmacokinetics and bioavailability, a compound with a lower logP value is preferred, and IBT21 was the compound with the lowest logP value. Given these considerations, we decided to further characterize IBT21, and synthesized IBT21 ourselves and confirmed its structure and activity.\n\n### Comparison of IBT21 and the validated UPR modulator and chemical chaperone\n\nSeveral compounds have been reported to mitigate ER stress, such as UPR modulators or chemical chaperones. To the best of our knowledge, IBT21 has a unique structure compared with previously reported UPR modulators or chemical chaperones (Figure 3A). According to a database search, IBT21 was registered in PubChem (CID: 735314, https://pubchem.ncbi.nlm.nih.gov/) and SciFinder (CAS Registry Number 692744-81-3, https://scifinder.cas.org/). Moreover, there were 3042 types of 2-phenyl IBT scaffold compounds in PubChem and 9878 types in SciFinder as of February 24, 2019, but no chemical chaperone-like activity has been reported. To assess the effects of IBT21, we next aimed to compare the activity of IBT21 to that of a validated UPR modulator and a chemical chaperone, azoramide (AZO) and 4PBA, respectively. To evaluate the activity with more information including the cell morphology, we first established a UPR inhibition assay using the EUA-EGFP reporter and high content image analysis. Cell morphology and EUA-EGFP reporter activation can be evaluated simultaneously with high sensitivity (signal-to-background ratio\u00a0=\u00a015.3) and robustness (Z\u2019 factor\u00a0=\u00a00.75) (Figure 3B,C and D). At 10 \u00b5M IBT21, Tm-induced UPR activation was inhibited 91.8% by IBT21 in 293A cells (Figure 3B\u2013D), as well as in another human cell line, Hap1 cells (Figure 3\u2014figure supplement 1). We utilized our high content image analysis to investigate the potential UPR modulation by small molecules. IBT21 demonstrated an IC50 value of 0.95 \u03bcM, consistent with the IC50 (0.61 \u03bcM) obtained from the HTS assay (Figure 3E). However, compared with IBT21, AZO and 4PBA showed much higher IC50 values of 86 \u03bcM and greater than 5,000 \u03bcM, respectively (Figure 3E). We concluded that our phenotypic screening approach identified a new and more potent small molecule, IBT21.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig3-v2.jpg)\n\n**Figure 3.:** (A) Chemical structure of IBT21, azoramide (AZO) and 4PBA. (B) Representative images of HEK293A-EUA-EGFP cells treated with 0.2 \u03bcg/mL Tm in the presence or absence of 10 \u03bcM IBT21. DPC: digital phase contrast. The scale bar represents 200 \u03bcm. (C) GFP fluorescence intensities of the EUA-EGFP reporter with 0.2 \u03bcg/mL Tm in the presence or absence of 10 \u03bcM IBT21. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04). Data were analyzed using one-way ANOVA with Tukey\u2019s post hoc test, **p<0.01. (D) Distribution of GFP fluorescence from the EUA-EGFP reporter with 0.2 \u03bcg/mL Tm in the presence or absence of 10 \u03bcM IBT21. (E) Inhibition of the EUA-EGFP reporter in HEK293A cells treated with 0.2 \u03bcg/mL Tm in the presence of IBT21, AZO or 4PBA. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative images of Hap1-EUA-EGFP cell line treated with 0.2 \u03bcg/mL Tm in the presence or absence of 10 \u03bcM IBT21.\u00a0The scale bar shows 200 \u03bcm. (B) GFP fluorescence intensities of the Hap1-EUA-EGFP reporter with 0.2 \u03bcg/mL Tm in the presence or absence of 10 \u03bcM IBT21. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a05). Data were analyzed using one-way ANOVA with Tukey\u2019s post hoc test, **p<0.01. (C) Distribution of GFP fluorescence for the Hap1-EUA-EGFP reporter with 0.2 \u03bcg/mL Tm in the presence or absence of 10 \u03bcM IBT21.\n\n### Inhibitory effects of IBT21 on activation of the three UPR branches under ER stress conditions\n\nTo rule out the possibility that IBT21 exerts its UPR inhibitory effect by suppressing one major branch of the UPR, we explored its effects on the three UPR branches. To directly monitor each branch of the UPR, we established EGFP reporter cell lines containing twenty-five tandem repeats of ERSE2, UPRE or AARE in the region upstream of a minimal promoter to detect the activation of the ATF6, IRE1 or PERK branches of the UPR, respectively. As expected, IBT21 suppressed the Tm-induced activation of all three reporters in a dose-dependent manner (Figure 4A\u2013C). Indeed, the IC50 values for ERSE2 (0.24 \u03bcM), UPRE (0.33 \u03bcM) and AARE (0.46 \u03bcM) were similar to that of EUA-EGFP (0.61 \u03bcM), producing a similar dose-response curve. To further rule out off-target effects through which IBT21 might induce a pseudo-response to the reporter, we assessed the effects of IBT21 by examining the expression levels of UPR downstream target genes by immunoblot analyses. As expected, the levels of ATF4, GADD34 and CHOP, markers of PERK branch signalling, were increased by Tm, and IBT21 treatment abolished these increases in a dose-dependent manner (Figure 4D,E and Figure 4\u2014figure supplement 1). Additionally, IBT21 decreased the levels of DNAJB9, a marker of IRE1 branch signalling, and SEL1L and HERPUD1, markers of ATF6 branch signalling, which were induced by Tm. By contrast, the UPR modulator AZO did not decrease any markers in the UPR by Tm, consistent with the previous report (Fu et al., 2015). These results indicated that IBT21 works as a chemical chaperone rather than a UPR modulator.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Inhibition of the 25X ERSE2-EGFP (A), 25X UPRE-EGFP (B) or 25X AARE-EGFP (C) reporters in HEK293A cells treated with 0.2 \u03bcg/mL Tm in the presence or absence of IBT21.\u00a0Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04). (D) Representative immunoblots of ATF4, GADD34, CHOP, DNAJB9, SEL1L and HERPUD1 in HEK293A cells treated with 0.2 \u03bcg/mL Tm overnight in the presence or absence of IBT21 or AZO. \u03b2-actin was used as a loading control. (E) Representative immunoblots of ATF4, GADD34, CHOP, DNAJB9, SEL1L and HERPUD1 in HEK293A cells treated with 0.2 \u03bcg/mL Tm overnight in the presence or absence of 10 \u03bcM IBT21, 1 \u03bcM PERK inhibitor I (GSK2606414), 200 \u03bcM IRE1 inhibitor I (STF083010) or 2 \u03bcM Site-1-protease inhibitor (PF429242). \u03b2-actin was used as a loading control.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Densitometry quantification of the immunoblot analysis in Figure 4D.\u00a0Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04). Data were analyzed by one-way ANOVA with Tukey\u2019s post hoc test, *p<0.05 and **p<0.01. (B) Densitometry quantification of the immunoblot analysis in Figure 4E. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04\u20135). Data were analyzed by one-way ANOVA with Tukey\u2019s post hoc test, *p<0.05 and **p<0.01.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative immunoblots of ATF4, CHOP and 4E-BP1 in HEK293T cells overexpressing human ATF4 incubated with 10 \u03bcM IBT21 for 24 hr.\u00a0\u03b2-actin was used as a loading control. (B) Densitometry quantification of the immunoblot analysis in A. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04). Data were analyzed by one-way ANOVA with Tukey\u2019s post hoc test, *p<0.05 and **p<0.01. n.s.: not significant. (C) Representative immunoblots of the nuclear form of ATF6 [ATF6 (N)] and BiP in HEK293A cells overexpressing human ATF6 (N) incubated with 10 \u03bcM IBT21 for 12 or 24 hr. \u03b2-actin was used as a loading control. (D) Densitometry quantification of the immunoblot analysis in C. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04). Data were analyzed by one-way ANOVA with Tukey\u2019s post hoc test, *p<0.05 and **p<0.01. n.s.: not significant.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Representative immunoblots of puromycin in HEK293A cells treated with 10 \u03bcg/mL cycloheximide (CHX) or 10 \u03bcM IBT21 for 1\u20134 hr.\u00a0Ponceau S was used as a loading control. (B) Densitometry quantification of the immunoblot analysis in A. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04). Data were analyzed by one-way ANOVA with Tukey\u2019s post hoc test, **p<0.01.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Representative images of HEK293A-EUA-EGFP cells treated with 5 mM DTT for 4 hr in the presence or absence of 10 \u03bcM IBT21.\u00a0Compounds were washed out and incubated overnight. DPC: digital phase contrast. The scale bar shows 100 \u03bcm. (B) GFP fluorescence intensities of the EUA-EGFP reporter with 5 mM DTT in the presence or absence of 10 \u03bcM IBT21. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a05). Data were analyzed using one-way ANOVA with Tukey\u2019s post hoc test, *p<0.05 and **p<0.01.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Schematic of the heat shock reporter (HSE-EGFP).\u00a0HSE, heat shock element. (B) Representative images of HEK293A-HSE-EGFP cells exposed to hyperthermia at 42\u00b0C for 4 hr in the presence or absence of the indicated concentration of IBT21. DPC: digital phase contrast. The scale bar shows 100 \u03bcm. (C) Activation of HSE-EGFP in HEK293A cells exposed to hyperthermia at 42\u00b0C for 4 hr with the indicated concentration of IBT21. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a07). Data were analyzed using one-way ANOVA with Tukey\u2019s post hoc test, **p<0.01. n.s.: not significant.\n\nHowever, one might say that IBT21 may influence many of the observed readouts by reducing transcription/translation, rather than by functioning as a chemical chaperone. To demonstrate the chemical chaperone activity of IBT21, we conducted several experiments. First, we overexpressed active UPR transcription factor and examined the effects of IBT21 on transcriptional induction of UPR target genes (Figure 4\u2014figure supplement 2). IBT21 did not change the expression of CHOP or 4E-BP1, downstream targets of ATF4, in the ATF4-overexpressing cells. Additionally, IBT21 did not change the expression of BiP in the cells overexpressing an active form of ATF6 [ATF6 (N)], These data show that IBT21 does not affect the ability to induce UPR target genes. Next, we assessed the effects of IBT21 on protein translation by measuring protein synthesis based on the incorporation of puromycin into newly synthesized proteins through its detection with anti-puromycin antibodies (Figure 4\u2014figure supplement 3). We evaluated that IBT21 does not affect protein translation. Furthermore, we tested whether IBT21 can also reduce ER stress caused by dithiothreitol (DTT), which does not require protein translation to induce ER stress (Figure 4\u2014figure supplement 4). We showed that IBT21 modestly reduced DTT-induced ER stress by monitoring the activation of EUA-EGFP reporter cells. In contrast, IBT21 could not suppress the induction of heat-shock response by heat shock (Figure 4\u2014figure supplement 5). These data support a chemical chaperone function of IBT21 during ER stress but not all proteostasis stress.\n\n### In vivo effects of IBT21 on protein aggregation during ER stress\n\nTo directly address whether IBT21 exerted its effects though chemical chaperone activity, we investigated the effects of IBT21 on reducing protein aggregation during ER stress. To monitor protein aggregation in vivo, we first took advantage of the ProteoStat dye, a molecular rotor that binds selectively to aggregated proteins (Shen et al., 2011). Proteasomal inhibition is known to lead to the accumulation of ubiquitin-conjugated proteins organized in perinuclear structures termed \u2018aggresomes\u2019. As expected, aggregated protein cargo was visualized with a punctate red fluorescence pattern in cells treated with the proteasome inhibitor MG132. When we treated cells with Tm, diffuse cytoplasmic staining was observed that differed between the control cells and MG132-treated cells with discrete punctuate staining, indicating the accumulation of aggregated proteins in the ER (Figure 5A). Quantification of the ProteoStat dye staining within cells revealed increased fluorescence intensity in the Tm-treated cells (2.29-fold of untreated (UT)) and MG132-treated cells (2.33-fold of UT), and lower fluorescence intensity in the cells co-treated with Tm and IBT21 (0.87-fold of UT), showing that IBT21 prevented protein aggregation induced by Tm (Figure 5B). To validate the direct effect of IBT21 on protein aggregation inhibition, an in vitro protein aggregation assay was performed using human insulin and the ProteoStat dye. Human insulin was challenged to be denatured by overnight incubation of DTT with or with IBT, 4PBA or AZO. As expected, IBT21 and 4PBA inhibited protein aggregation, indicating a direct function as chemical chaperones, though the UPR modulator AZO did not (Figure 5C). Notably, IBT21 inhibited protein aggregation at a concentration of 10 \u00b5M, which is 100-fold lower than that of 4PBA.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative immunofluorescence images of protein aggregates stained with ProteoStat dye in HEK293A-EUA-EGFP cells treated with 0.2 \u03bcg/mL Tm in the presence or absence of 10 \u03bcM IBT21. MG132 was used as an aggregation control. The scale bar represents 50 \u03bcm. (B) Relative fluorescence intensities of aggresome staining in A. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a08). One-way ANOVA with Tukey\u2019s post hoc test, **p<0.01. (C) Relative fluorescence intensities of insulin aggregates induced by DTT treatment and stained with ProteoStat dye with or without the indicated concentration of IBT21, 4PBA or AZO. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03). One-way ANOVA with Tukey\u2019s post hoc test, **p<0.01. (D) Protocol for high molecular weight (HMW) detergent-resistant complex separation. HEK293A cells treated with 0.2 \u03bcg/mL Tm in the presence or absence of 10 \u03bcM IBT21 were lysed in lysis buffer, adjusted to 0.8% SDS, loaded on separation buffer and then ultracentrifuged at 100,000\u00a0\u00d7\u00a0g for 55 min. The pellet fraction (SDS-resistant HMW complex) was considered aggregated proteins (AGGREGATED). (E) Representative immunoblots of BiP in the AGGREGATED SDS-resistant HMW complexes and in the INPUT. (F) Densitometry quantification of the immunoblot analysis in E. The protein levels of BiP in the AGGREGATED and INPUT were normalized to \u03b2-actin levels in the INPUT. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a03). One-way ANOVA with Tukey\u2019s post hoc test, *p<0.05, **p<0.01. n.s: not significant. (G) Bubble plot representation of HMW detergent-resistant aggregated proteins. The X-axis denotes the Tm to UT abundance ratio in the absence of IBT21. The Y-axis denotes the Tm to Tm+IBT21 abundance ratio. Each threshold is 1.5-fold-change. Representative hit proteins, such as HSPA5, PDIA4, ANXA1 and TAGLN2, are indicated. Peptide-spectrum matches (PSMs) are correlated with the size of the circle. (H\u2013I) Functional classification of proteins protected from aggregation by IBT21. Aggregated proteins that were suppressed by IBT21 (Tm/UT\u00a0>\u00a01.5 and Tm/Tm+IBT21\u00a0>1.5) were categorized on the basis of cellular components (H) and biological processes (I) through Gene Ontology (GO) annotation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Reproducibility of Figure 5.\u00a0Bubble plot representation of HMW detergent-resistant aggregated proteins. The threshold on the X-axis (Tm to UT abundance ratio) and Y-axis (Tm to Tm+IBT21 abundance ratio) are 1.5-fold changes. Representative hit proteins, such as HSPA5, PDIA4, ANXA1 and TAGLN2, are indicated with colors. Peptide-spectrum matches (PSMs) are correlated with the size of the circle. (B\u2013C) Aggregated proteins that were suppressed by IBT21 (Tm/UT\u00a0>\u00a01.5 and Tm/Tm+IBT21\u00a0>1.5) were categorized on the basis of cellular components (B) and biological processes (C) through Gene Ontology (GO) annotation.\n\nFor further assessment of IBT21, we performed a biochemical assay to detect misfolded or aggregated proteins. Misfolded or aggregated proteins are prone to forming stable, detergent-insoluble, high molecular weight (HMW) oligomers together with molecular chaperones (Johnston et al., 1998). We previously developed and modified a method to estimate the amount of misfolded or aggregated protein in the ER based on the levels of the molecular chaperone BiP (also known as HSPA5) in SDS-resistant HMW complexes (AGGREGATED) (Marciniak et al., 2004; Hisanaga et al., 2018) (Figure 5D). Compared with the levels of BiP in the INPUT fraction, the levels of BiP in the AGGREGATED fraction corresponding to misfolded or aggregated proteins in the ER were increased by Tm treatment (3.1-fold of UT), and this increase was significantly suppressed by IBT21 treatment (1.7-fold of UT) (Figure 5E and F). IBT21 treatment did not change the levels of BiP under ER stress conditions (Figure 5E and F) or under basal conditions (Figure 4\u2014figure supplement 2C,D), indicating that IBT21 did not lead to reduced expression or enhanced degradation of BiP. Having established that IBT21 reduced the levels of the SDS-resistant HMW BiP-containing complex induced by Tm, we next determined the profile of proteins in the SDS-resistant HMW BiP-containing complex to directly monitor proteostasis changes. The AGGREGATED fraction samples containing the SDS-resistant HMW BiP-containing complex were subjected to mass spectrometry analysis, and 1233 proteins were detected by this LC-MS/MS analysis. To avoid false positive protein identification, we filtered 598 proteins identified with\u00a0\u22652 unique peptides per protein and\u00a0\u22655 peptide-spectrum matches. Then, to determine the proteins modulated by IBT21, we analyzed the differentially expressed proteins among the 598 proteins with the following criteria: 1) 1.5-fold enrichment in the Tm-treated samples compared to the UT samples and 2) 1.5-fold enrichment in the Tm-treated samples compared to the Tm- and IBT21-treated samples. We found that 211 of 598 proteins (35.3%) were affected by Tm, and 125 of those 211 proteins (59.2%) were affected by IBT21 (IBT-SENSITIVE proteins), suggesting that IBT21 prevents Tm-induced protein misfolding (Figure 5G, Figure 5\u2014figure supplement 1A). Furthermore, their subcellular localization and cellular functions were classified by Gene Ontology (GO) annotation. Extracellular compartments were highly enriched in the category of cellular components (Figure 5H Figure 5\u2014figure supplement 1B). These enrichments support that IBT21 acts on the folding of proteins synthesized in the ER because secreted and membrane-bound proteins are synthesized in the ER. For example, the proteins we identified included Annexin A1 (ANXA1) and Transgelin-2 (TAGLN2), and these proteins represent the protein group affected by Tm and IBT21, as ANXA1 (Goulet et al., 1992) and TAGLN2 (Liu et al., 2018) were reported or predicted to have N-linked glycosylation sites for secretion (Figure 5G and Figure 5\u2014figure supplement 1A). In addition to ER client proteins, proteins required for proteostasis could also be affected by Tm and IBT21. As expected, protein folding was highly enriched in the category of biological function, as the representative proteins from the AGGREGATED fraction included the molecular chaperone HSPA5 and the ER folding enzyme PDIA4 (Figure 5G,I, Figure 5\u2014figure supplement 1A,C). Thus far, our observations support that IBT21 has chemical chaperone activity against ER stress.\n\n### In vivo target protein identification of IBT21 during ER stress\n\nTo examine the direct binding of IBT21 to unfolded or misfolded proteins in vivo, we took advantage of diazido photoaffinity labelling probes, which allow a chemical biology approach for profiling IBT21-binding proteins (Hosoya et al., 2004; Hosoya et al., 2005). We designed a diazido-functionalized IBT21 analogue, diazido-IBT21, as a candidate photoaffinity labelling probe (Figure 6A). The activity of diazido-IBT21 was comparable to that of IBT21, and we used the more potent compound IBT22 as a competitor (Figure 6B). With a promising diazido-IBT21 probe in hand, we performed in vivo target protein identification experiments (Figure 6C). In principle, the target proteins were specifically captured by covalent bonding via photoreaction of the probe aromatic azido group. The remaining probe aliphatic azido group was subsequently subjected to biotin labelling via Cu-catalysed azide alkyne cycloaddition (CuAAC) for pulldown of the target proteins. In total, 1441 proteins were detected as IBT-BOUNDED proteins and were classified with the following criteria: 1) 1.5-fold change in the probe-treated samples compared to the probe- and competitor-treated samples (competed) and 2) 1.5-fold change in the probe-treated samples compared to the UT samples (selective) (Figure 6D). The IBT-BOUNDED proteins were categorized into the following four groups: Competed and Selective (1205 proteins), Competed (11 proteins), Selective (185 proteins) and Non-Specific (40 proteins) (Figure 6E). The Competed and Selective proteins were the majority (84%) of the IBT-BOUNDED proteins. To characterize the IBT21-targeted proteins to corresponding chemical chaperone activity, we analyzed the Overlapped proteins observed in both the IBT-SENSITIVE proteins and the Competed and Selective proteins. As expected, the Overlapped proteins included ANXA1 and TAGLN2, which were also identified as IBT21-rescued aggregation-prone proteins (IBT-SENSITIVE proteins), as shown in Figure 5 (Figure 6G). The GO enrichment analysis revealed that groups of extracellular components were highly enriched in the Overlapped proteins (Figure 6\u2014figure supplement 1A). GO enrichment results of the IBT-SENSITIVE proteins were different from that of the IBT-bonded Competed and Selective proteins (Figure 6\u2014figure supplement 1B\u2013C) because IBT21 is stabilizing many more proteins that cannot be detected in the experiment that determined IBT-sensitive compounds. Nevertheless, the Overlapped proteins contained approximately 60% of the IBT-SENSITIVE proteins in each enriched GO group, indicating that the Competed and Selective proteins largely cover the IBT21-targeted proteins corresponding to chemical chaperone activity (Figure 6H). Taken together, these results support that IBT21 directly binds unfolded or misfolded proteins to prevent protein aggregation in vivo.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig6-v2.jpg)\n\n**Figure 6.:** (A) Chemical structure of the diazido-IBT21 probe. (B) Inhibition of the EUA-EGFP reporter in HEK293A cells treated with 0.2 \u03bcg/mL Tm in the presence of IBT21, diazido-IBT21 or IBT22. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04). (C) Protocol for IBT-BONDED protein identification. HEK293A cells treated with 0.2 \u03bcg/mL Tm and 1 \u03bcM diazido-IBT21 probe were crosslinked to interacting proteins and labelled with biotin. (D) Bubble plot representation of the IBT-BONDED proteins. The X-axis denotes the abundance ratio of IBT competitor to no competitor. The Y-axis denotes the abundance ratio of diazido-IBT21 probe to no probe. Each threshold represents a 1.5-fold-change. Peptide-spectrum matches (PSMs) are correlated with the size of the circle. (E) Pie chart representation for the categorization of the IBT-BONDED proteins identified in experiments comparing cells treated with probe/no-probe and probe/probe + competitor. Each threshold represents a 1.5-fold-change. (F) Flow diagram for the comparison between the IBT-SENSITIVE and Competed and Selective proteins. (G) Bubble plot representation of the Overlapped proteins. The X-axis denotes the abundance ratio of diazido-IBT21 probe to no probe. The Y-axis denotes the abundance ratio of IBT competitor to no competitor. Each threshold represents a 1.5-fold-change. Representative hit proteins, such as ANXA1 and TAGLN2, are indicated in blue. Peptide-spectrum matches (PSMs) are correlated with the size of the circle. (D) Functional classification of the Overlapped proteins.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Overlapped proteins were categorized on the basis of cellular components.\u00a0(B\u2013C) Competed and Selective proteins were categorized on the basis of cellular components (B) and biological processes (C) through Gene Ontology (GO) annotation.\n\n### Cytoprotective effect of IBT21 during ER stress\n\nWe finally tested whether IBT21 could ameliorate ER stress. We first evaluated the effects of IBT21 on cell proliferation under ER stress conditions, as measured by cell confluency using the high content imaging system. Tm treatment almost completely inhibited cell proliferation, as was observed in cells treated with the cytotoxic alkaloid camptothecin (cell death control). Treatment with 1 \u00b5M IBT21 restored the cell growth inhibited by Tm up to 69.8% of the growth of the UT cells (Figure 7A and B). Surprisingly, cell growth was significantly stimulated to 112.7 or 115.8% of that of UT cells by the addition of 5 or 10 \u03bcM IBT21, respectively, even in the presence of Tm. In contrast, 40 \u03bcM AZO treatment led to a significant but modest growth recovery up to 58.1% of that of the UT cells. We next evaluated the effects of IBT21 on cell viability or cytotoxicity as measured by intracellular ATP levels and lactate dehydrogenase release. The cytoprotective effects of IBT21 were also evident in biochemical measurements. Consistent with the results of the proliferation assays, IBT21 treatment attenuated viability loss and cell death in a dose-dependent manner (Figure 7C and D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig7-v2.jpg)\n\n**Figure 7.:** (A) Representative bright-field images of HEK293A cells treated with 0.2 \u03bcg/mL Tm in the presence or absence of compounds for the indicated times. Camptothecin (CPT) was used as a cell death control. The scale bar represents 100 \u03bcm. (B) Cell growth curve of HEK293A cells treated with 0.2 \u03bcg/mL Tm in the presence or absence of compounds for the indicated times. (n\u00a0=\u00a03); two-way ANOVA with Holm\u2019s post hoc test, *p<0.05. (C\u2013D) HEK293A cells were treated with 0.2 \u03bcg/mL Tm in the presence or absence of compounds for 48 hr. Cell viability was determined by an intracellular ATP assay (C) or LDH activity (D). Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a04). One-way ANOVA with Tukey\u2019s post hoc test, *p<0.05 and **p<0.01. (E) Representative bright-field and YFP images of HEK293T cells overexpressing YFP-tagged WT or YFP-tagged mutant prion protein (PrP) in the presence or absence of 5 \u03bcM IBT21 for the indicated times. The scale bar represents 100 \u03bcm. (F) Cell growth curve of HEK293T cells overexpressing YFP-tagged WT or YFP-tagged mutant prion protein (PrP) in the presence or absence of 5 \u03bcM IBT21 for the indicated times (n\u00a0=\u00a06). Two-way ANOVA with Holm\u2019s post hoc test, *p<0.05. (G) Intracellular ATP assay of HEK293T cells overexpressing YFP-tagged WT or YFP-tagged mutant prion protein (PrP) in the presence or absence of 5 \u03bcM IBT21 for the indicated times. Error bars show the mean\u00a0\u00b1\u00a0SD (n\u00a0=\u00a06). One-way ANOVA with Tukey\u2019s post hoc test, *p<0.05 and **p<0.01.\n\nTo corroborate the cytoprotective effects of IBT21, we next evaluated the effects of IBT21 against an ER proteotoxin. Prion disease is a neurodegenerative disorder characterized by the accumulation of an abnormally folded and protease-resistant form of prion protein (PrP). As a secretory protein, PrP is synthesized in the ER, and approximately 10% of PrP is naturally misfolded (Yedidia et al., 2001). Accumulating evidence suggests that perturbations in ER homeostasis may contribute to neurodegeneration in prion disease (Shi and Dong, 2011; Torres et al., 2015). Therefore, we chose mutant PrP, which was previously reported to cause ER stress, as an ER proteotoxin (Satpute-Krishnan et al., 2014). To monitor the expression levels of PrP, EGFP was fused to wild-type PrP (WT PrP) or mutant PrP (mut PrP). Overexpression of mut PrP inhibited cell proliferation, and 5 \u03bcM IBT21 treatment restored the cell growth inhibition caused by mutant PrP overexpression (Figure 7E and F). Consistent with the results from the proliferation assays using the high content imaging system, the recovery of viability loss by IBT21 treatment in the mutant PrP-overexpressing cells was also confirmed by a biochemical assay with CellTiter-Glo. Collectively, these data provide in vivo evidence that IBT21 protects cells against ER stress conditions.\n\n## Discussion\n\nIn the current study, we aimed to identify a potent chemical chaperone through the HTS of a small molecule chemical library. We discovered that IBTs function as chemical chaperones and directly bind unfolded or misfolded proteins to inhibit protein aggregation using the compound IBT21. Consistent with the protective nature of chemical chaperones, IBT21 protected cells from death caused by ER stress. The observed effects cannot be explained by a simple mechanism because these compounds have a planar conjugated ring system similar to many DNA intercalators; however, IBTs are promising scaffolds for chemical chaperones. Furthermore, based on our SAR studies, we might predict more potent IBT compounds. The combination of the methoxy group at the m-position of IBT3 or the chloro group at the p-position of IBT17 for R1 and the methoxycarbonyl group of IBT15 or methylamide group of IBT29 for R2 seems to be ideal. In addition to assessing the absorption, distribution, metabolism, and excretion properties of IBTs, we will pursue lead compound optimization in future studies.\n\nChemical chaperones can be divided into the following two groups: osmoprotectants and pharmacological chaperones. Osmoprotectants are generally considered to stabilize protein structure by altering solvent properties. The major osmoprotectants can be categorized in the following three chemical classes: polyols, such as glycerol and sucrose; free amino acid derivatives, such as taurine and \u03b2-alanine; and methyl-amines, such as DMSO and trimethylamine N-oxide (TMAO) (Cortez and Sim, 2014). Among these osmoprotectants, TMAO is the most efficient and has been the most studied over the past two decades. For example, TMAO has been shown to prevent the conversion of the normal cellular form of prion protein (PrPC) into its infectious form (PrPSC) in scrapies-infected mouse neuroblastoma ScN2a cells (Tatzelt et al., 1996). However, osmoprotectants are effective at high concentrations which may lead to toxicity. Thus, despite the high efficiency of the anti-aggregation properties of osmoprotectants, very few osmoprotectants have been applied in clinical trials. Another class of chemical chaperones is pharmacological chaperones, which are able to bind to and stabilize unfolded or misfolded proteins. Structurally, IBT21 was not particularly similar to osmoprotectants, and IBT21 was observed to preferably bind to unfolded or misfolded proteins in combined analyses such as the ER stress-induced aggregated protein profile and the IBT21-targeted protein profile. Therefore, we considered that IBT21 acted as a pharmacological chaperone. In unfolded or misfolded proteins, the hydrophobic region tends to be exposed, and protein aggregation occurs when the exposed hydrophobic portions of a protein interact with the exposed hydrophobic segment of other unfolded proteins. Pharmacological chaperones may prohibit protein aggregation by binding and masking hydrophobic parts of unfolded or misfolded proteins. The IBT21 core possesses hydrophobicity comparable to that of 4PBA and TUDCA, which are known to be hydrophobic compounds. This similarity supports the hypothesis that the hydrophobic core of IBT21 may interact with the exposed hydrophobic segments of unfolded or misfolded proteins. Currently, 4PBA and TUDCA are the only two pharmacological chaperones for proteotoxins approved by the FDA for human use. Notably, IBT21 shows much higher chaperone-like activity than 4PBA. In future studies, we will further examine the therapeutic effects of IBTs in model mice with a disease involving ER stress.\n\nIn theory, pharmacological chaperones for proteotoxin have one of the following three mechanisms of action: preventing protein aggregation by masking the aggregation-prone region (group I), increasing the folding rate by stabilizing the folding transition state (group II) or decreasing the misfolding rate by stabilizing the native state (group III). We demonstrated that IBT21 directly prevents protein aggregation in an in vitro aggregation inhibition assay, but the second and third mechanisms remain elusive. A recent report suggests that the action of chemical chaperones is determined by the proteins to be folded and the folding environment, as a chemical chaperone that behaves as a group II chaperone for one protein might behave as a group III chaperone for another (Dandage et al., 2015). Notably, heat shock response is not influenced by IBT21. It would be difficult to generalize the mechanism of action of pharmacological chaperones based on their effect in one test stress condition or on one test protein. Hence, further characterization of IBT21 appears to require testing on disease-related misfolding-prone proteins and on disease-related stress conditions.\n\nThe chemical properties of IBTs that enable them to preferably bind to unfolded or misfolded proteins might be useful for developing diagnostic tools for ER stress-related diseases. Several positron emission tomography (PET) and single photon emission computed tomography (SPECT) tracers for imaging \u03b2-amyloid deposits in Alzheimer\u2019s disease have been used clinically or in a clinical trial. Alagille et al. designed and synthesized a series of 2-aryl-imidazo[2,1-b]benzothiazoles by a combination of the benzothiazole motif and the 2-arylimidazo motif from two potent \u03b2-amyloid imaging agents, PIB and IMPY, respectively (Alagille et al., 2011). Yousefi et al. demonstrated that 11C-labelled IBTs have high in vitro and in vivo binding affinities for \u03b2-amyloid aggregates (Alagille et al., 2011) and that 18F-labelled IBTs allow high-contrast PET imaging of \u03b2-amyloids in Alzheimer\u2019s disease model mice (Yousefi et al., 2011). Together with our results, these findings indicate that IBT21 could be effective for PET and SPECT imaging of ER stress-related diseases.\n\nTargeting improper protein folding and aggregate accumulation, which are the most upstream events in ER stress-related diseases, is an obvious therapeutic strategy with chemical chaperones. It is generally accepted that neurodegenerative disorders such as Alzheimer\u2019s disease, Huntington disease and prion disease are caused by the accumulation of neurotoxic protein aggregates, and chemical chaperones have the potential to separate these neurotoxic aggregates. In the case of prion disease, the osmoprotectant TMAO was first applied for preventing PrPSC formation in vitro as a chemical chaperone in the late 1990 s (Tatzelt et al., 1996). PrPSC toxicity was reported to cause ER stress by increasing the intracellular calcium released from the ER (Hetz et al., 2003). Indeed, a reduction in the levels of the ER molecular chaperone BiP accelerates prion pathogenesis in vivo, indicating that the accumulation of the misfolded form of PrP in the ER is a key event in prion propagation (Park et al., 2017). Prion replication has been shown to cause sustained UPR induction with persistent eIF2\u03b1 phosphorylation (Moreno et al., 2012). Repression of protein synthesis diminished the load of unfolded proteins in the ER, but overactivation of eIF2\u03b1 phosphorylation leads to synaptic failure, spongiosis and neuronal loss. Pharmacological inhibition of PERK by the compound GSK2606414 mitigated neurodegeneration and clinical prion disease in mice (Moreno et al., 2013). In this study, we demonstrated that IBT21 presents the most effective treatment effect and that the best treatment regimen may involve a combination of compounds, some of which fine-tune protein synthesis, such as GSK2606414, and others that reduce protein aggregates, such as the chemical chaperone IBT21. More studies with these promising compounds need to be performed to design therapies to treat prion diseases and possibly other neurodegenerative diseases associated with ER stress.\n\n## Materials and methods\n\n### Chemical compounds\n\nA total of 217,765 library compounds were provided by the Drug Discovery Initiative at the University of Tokyo (Tokyo, Japan). 7-Methylsulphonyl-2-phenylimidazo[2,1-b]benzothiazole (IBT21) was purchased from Butt Park (Devon, UK). 2-(4-Chlorophenyl)\u22127-methylsulphonylimidazo[2,1-b]benzothiazole (IBT22) was purchased from Specs (Zoetermeer, Netherlands). Azoramide was purchased from Axon Medchem (Groningen, Netherlands). 4-Phenylbutyric acid was purchased from Tokyo Chemical Industry (Tokyo, Japan). Camptothecin was purchased from FUJIFILM Wako Pure Chemical (Osaka, Japan). PERK Inhibitor I (GSK2606414) was purchased from Merck Millipore (MA, USA). IRE1 Inhibitor I (STF083010) was purchased from Toronto Research Chemicals (Ontario, Canada). Site one protease inhibitor (PF429242) was purchased from R and D Systems (MN, USA). Twenty-eight compounds for the SAR study were provided by the Drug Discovery Initiative at the University of Tokyo and quality controlled using an ACQUITY UPLC (Waters, MA, USA) equipped with an ACQUITY UPLC BEH C18 column to determine the purity. The column temperature was 40\u00b0C. Mobile phase A consisted of 5.0 mM ammonium acetate in water. Mobile phase B consisted of acetonitrile (ACN). The gradient conditions were as follows: 5% mobile phase B at the time of injection; linear increase to 95% B at 1.00 min; and maintain 95% B until 1.50 min. The flow rate was 0.7 mL/min. The purity measurements were determined by measuring the peak area at 230 nm, and the purity was calculated based on the observed target peak area as a percentage of the total area. All compounds assayed were\u00a0\u226595% pure. 7-(methylaminocarbonyl)\u22122-phenylimidazo[2,1-b]benzothiazole (IBT29) was synthesized from 4-(methylaminocarbonyl)aniline and phenacyl bromide. More detailed information is shown in the Supplemental information.\n\n### Establishment of reporter cell lines\n\nThe HEK293A cell line was provided by Thermo Fisher Scientific (MA, USA) and maintained in DMEM (Nissui Pharmaceutical, Tokyo, Japan) supplemented with 10% (v/v) foetal bovine serum (Thermo Fisher Scientific). The Hap1 cell line was provided by Horizon Genomics (Vienna, Austria) and maintained in IMDM (GE Healthcare, IL, USA) supplemented with 10% (v/v) foetal bovine serum. Cells were cultured at 37\u00b0C in a humidified incubator continuously flushed with a mixture of 5% CO2 and 95% air. Cells were authenticated with a morphology check by microscopy and using growth curve analysis with an Operetta CLS instrument (PerkinElmer, MA, USA). All cell lines were confirmed to be mycoplasma-free.\n\nTandem ER stress response element-2 (ERSE2), unfolded protein response element (UPRE), amino acid response element (AARE) and heat-shock element (HSE) were assembled by Golden Gate cloning with the Multiplex CRISPR/Cas9 Assembly System Kit (Addgene Kit # 1000000055, MA, USA). 10X ERSE2-10X UPRE-5X AARE (EUA), 25X ERSE2, 25X UPRE, 25X AARE and 5X HSE-EGFP reporter vectors were constructed based on the lenti-Cas9-blast vector (gift from Feng Zhang [Addgene plasmid # 52962]). The DNA sequence of each construct was verified on an ABI 3130 DNA sequencer (Thermo Fisher Scientific). HEK293A and Hap1 cells stably expressing the reporter gene were sorted with an S3e Cell Sorter (Bio-Rad, CA, USA).\n\n### Reporter assay\n\nHEK293A-EUA-EGFP, ERSE2-EGFP, UPRE-EGFP and AARE-EGFP cells were seeded onto 96- or 384-well plates (Greiner Bio-One, Kremsm\u00fcnster, Austria). Tunicamycin (Tm; Merck Millipore) was added in the presence or absence of chemical compounds, followed by incubation overnight. For the dithiothreitol (DTT) experiments, HEK293A-EUA-EGFP cells were treated with 5 mM DTT (FUJIFILM Wako Pure Chemical) for 4 hr in the presence or absence of 10 \u03bcM IBT21. Then, the compounds were washed out, followed by incubation at 37\u00b0C overnight. For the heat-shock experiments, HEK293A-HSE-EGFP cells were exposed to hyperthermia in a CO2 incubator at 42\u00b0C for 4 hr, followed by incubation at 37\u00b0C overnight. Intracellular EGFP fluorescence was measured with Cytation3 (Ex 485 nm, Em 528 nm, BioTek, VT, USA) or Operetta CLS (Ex 475\u00a0\u00b1\u00a015 nm, Em 525\u00a0\u00b1\u00a025 nm). Cell viability was measured using the alamarBlue Cell Viability Reagent (Thermo Fisher Scientific) with Cytation3 (Ex 560 nm, Em 590 nm). Data analyses were performed using Harmony 4.6 (PerkinElmer) and TIBCO Spotfire Analyst (ver. 7.6.1, TIBCO Software, CA, USA). Structure clustering was performed with ChemFinder ultra (ver. 16.0.1.4, PerkinElmer). The partition coefficient (LogP) was calculated by ChemDraw professional (ver. 16.0.1.4, PerkinElmer). The mean signal-background ratio (S/B) was calculated as (Tm treatment)/(no-ER stress control). The mean Z\u2032 was calculated as 1\u2212(3 [\u03c3 Tm + \u03c3 DMSO]/[\u03bc Tm\u2212\u03bc DMSO]).\n\n### Immunoblot analysis\n\nCells were washed in ice-cold PBS and lysed in RIPA buffer containing 50 mM Tris-HCl (pH 7.4), 150 mM NaCl, 2 mM EDTA, 1% (v/v) NP-40% and 0.1% (w/v) SDS with protease inhibitor cocktail (Bimake, TX, USA), phosphatase inhibitor cocktail (Bimake) and 10 \u03bcM MG132 (Enzo Life Sciences, NY, USA). The protein concentrations of lysates were measured using the Protein Assay Bicinchoninate Kit (Nacalai Tesque, Kyoto, Japan). Immunoblot analysis was performed as described previously (Taniuchi et al., 2016) using Blocking One (Nacalai Tesque) and Immobilon Western HRP (Merck Millipore). Protein was visualized using Ez-Capture II (ATTO, Tokyo, Japan), and the signal intensities were quantified using the ImageJ software program (version 1.51) (Schneider et al., 2012). The antibodies for immunoblotting were as follows: anti-ATF4 (10835\u20131-AP, Proteintech, IL, USA), anti-SEL1L (ab78298, Abcam, Cambridge, UK), anti-HERPUD1 (26730S, Cell Signalling Technology, MA, USA), anti-DNAJB9 (13157\u20131-AP, Proteintech), anti-4E-BP1 (9644S, Cell Signalling Technology), anti-ATF6\u03b1 (73\u2013505, BioAcademia, Osaka, Japan), anti-\u03b2-actin (PM053, Medical and Biological Laboratories, Aichi, Japan) and anti-KDEL (M181-3, Medical and Biological Laboratories) antibodies. Anti-CHOP and anti-GADD34 antibodies were kindly gifted by Dr. David Ron (Cambridge Institute for Medical Research, Cambridge, UK).\n\n### Overexpression of UPR transcription factors\n\nThe pcDNA3.1-human ATF4 plasmid was introduced into the HEK293T cell line (ATCC, VA, USA) by transfection with polyethylenimine (Polysciences, PA, USA), followed by incubation at 37\u00b0C for 24 hr, after which the cells were incubated in the presence or absence of 10 \u03bcM IBT21 for 24 hr. The pcDNA3.1-human ATF6 (N) plasmid was introduced into the HEK293A cell line by transfection with polyethylenimine, followed by incubation at 37\u00b0C for 24 hr, after which the cells were incubated in the presence or absence of 10 \u03bcM IBT21 for 12 or 24 hr.\n\n### Nonradioactive measurements of protein synthesis\n\nTo measure protein synthesis, we used the nonradioactive surface sensing of translation (SUNsET) technique. Briefly, 293A-EUA-EGFP cells were pre-treated with 10 \u03bcg/mL cycloheximide (Nacalai Tesque) or 10 \u03bcM IBT21 for 1\u20134 hr, followed by 2 \u03bcg/mL puromycin (GoldBio, MO, USA) treatment for 30 min. Total protein was extracted and immunoblot analysis was performed with an anti-puromycin antibody (EQ0001, Kerafast, MA, USA). Ponceau S (Sigma-Aldrich, MO, USA) was used as a loading control.\n\n### Aggregated protein detection\n\nAn aggregated protein detection assay was performed with the ProteoStat Aggresome Detection Kit (Enzo Life Sciences) according to the manufacturer's instructions. For cell analyses, the specimens were viewed with a BZ-X700 device (Ex 545\u00a0\u00b1\u00a012.5 nm, Em 605\u00a0\u00b1\u00a035 nm, Keyence, Osaka, Japan) and Operetta CLS (Ex 475\u00a0\u00b1\u00a015 nm, Em 610\u00a0\u00b1\u00a040 nm). For in vitro analysis, 5 mg/mL human recombinant insulin (FUJIFILM Wako Pure Chemical) was incubated at 37\u00b0C overnight with 100 mM DTT and 10% (v/v) DMSO in the presence or absence of IBT21, azoramide or 4PBA. Insulin aggregation was quantified with an EnVision2102 (Ex 480 nm, Em 595 nm, PerkinElmer).\n\n### High molecular weight detergent-resistant complex detection\n\nHigh molecular weight detergent-resistant complex detection was performed as described previously (Hisanaga et al., 2018). Briefly, cultured cells were incubated for 5 min in ice-cold PBS containing 20 mM N-ethylmaleimide (Sigma-Aldrich) and then collected by scraping in lysis buffer (0.5% Triton X-100, 20 mM HEPES [pH 7.4], 250 mM sucrose, 100 mM NaCl and 2.5 mM CaCl2) with protease inhibitors. Equal amounts of protein were adjusted to 0.8% SDS, layered upon separation buffer (0.5% Triton X-100, 0.8% SDS, 20 mM HEPES [pH 7.4], and 20% glycerol) and centrifuged at 100,000\u00a0\u00d7\u00a0g for 55 min with an Optima Ultracentrifuge (Beckman Coulter, CA, USA). For immunoblot analysis, the resulting pellet was dissolved in urea loading buffer (9.6 M urea, 1.36% SDS, 40 mM Tris [pH 6.8], 12% glycerol, 100 mM DTT and 0.002% [w/v] bromophenol blue), boiled for 5 min and then subjected to SDS-PAGE. For mass spectrometry analysis, the pellet was rinsed with ice-cold 50 mM ammonium bicarbonate (Sigma-Aldrich) and centrifuged at 100,000\u00a0\u00d7\u00a0g for 80 min. Proteins in the pellet were dissolved in 8 M urea and 50 mM Tris (pH 8.0), reduced, alkylated, diluted to 1 M urea and digested with trypsin/Lys-C mix (Promega, WI, USA) at 37\u00b0C for 16 hr. The digests were desalted using GL-Tip SDB (GL Sciences, Tokyo, Japan). LC-MS/MS analysis of the resultant peptides was carried out on an EASY\u2010nLC 1200 UHPLC connected to a Q Exactive Plus mass spectrometer through a nanoelectrospray ion source (Thermo Fisher Scientific). The peptides were separated on a 75 \u00b5m inner diameter\u00a0\u00d7150 mm C18 reversed-phase column (Nikkyo Technos, Tokyo, Japan) with a linear gradient ranging from 4\u201328% ACN for min 0\u2013100, followed by an increase to 80% ACN for min 100\u2013110. The mass spectrometer was operated in data-dependent acquisition mode with a top 10 MS/MS method. MS1 spectra were measured with a resolution of 70,000, an automatic gain control (AGC) target of 1\u00a0\u00d7\u00a0106 and a mass range from 350 to 1,500 m/z. MS/MS spectra were triggered at a resolution of 17,500, an AGC target of 5\u00a0\u00d7\u00a0104, an isolation window of 2.0 m/z, a maximum injection time of 60 ms and a normalized collision energy of 27. Dynamic exclusion was set to 10 s. Raw data were directly analyzed against the SwissProt database restricted to H. sapiens using Proteome Discoverer version 2.2 (Thermo Fisher Scientific) for identification and label-free precursor ion quantification. GO enrichment was performed with Genomatix Genome Analyzer (Genomatix, M\u00fcnchen, Germany).\n\n### Synthesis of the diazido-IBT21 probe\n\nIBT21 and diazido-IBT21 were synthesized from 6-(methylsulphonyl)benzo[d]thiazol-2-amine and phenacyl bromide or 3-azido-5-(azidomethyl)phenacyl bromide, respectively. More detailed information is shown in the Supplemental information.\n\n### Identification of proteins interacting with the diazido-IBT21 probe\n\nHEK293A cells were treated with 0.2 \u03bcg/mL Tm for 18 hr, followed by the addition of 1 \u03bcM diazido-IBT21 probe in the presence or absence of 10 \u03bcM IBT22 (competitor) for 3 hr at 37\u00b0C. Photo-irradiation was performed at room temperature for 180 s using UVG-54 (254 nm, 6 W, from a distance of 1 cm, UVP, CA USA). Cell lysates were prepared in 20 mM HEPES (pH 7.4), 150 mM NaCl, 1.5 mM MgCl2, 1% NP-40, 2 M urea and protease inhibitors on ice. For each sample, 800 \u03bcg of lysate was reacted with the Click-iT Protein Reaction Buffer Kit (Thermo Fisher Scientific) and biotin-alkyne (PEG4 carboxamide-Propargyl Biotin, Thermo Fisher Scientific) according to the manufacturer's instructions. Labelled proteins were precipitated with Streptavidin Sepharose High Performance (GE Healthcare), resuspended in 50 mM ammonium bicarbonate and digested with trypsin/Lys-C mix for 16 hr at 37\u00b0C. The digests were desalted using GL-Tip SDB. LC-MS/MS analysis of the resultant peptides was carried out on a Dionex UltiMate 3000 UHPLC system connected to an Orbitrap Fusion mass spectrometer through a nanoelectrospray ion source (Thermo Fisher Scientific). The peptides were separated on a 75 \u00b5m inner diameter\u00a0\u00d7120 mm C18 reversed-phase column with a linear gradient ranging from 4\u201340% ACN for min 10\u2013110, followed by an increase to 80% ACN for min 110\u2013120. The mass spectrometer was operated in data-dependent acquisition mode with a maximum duty cycle of 3 s. MS1 spectra were measured with a resolution of 120,000, an AGC target of 4\u00a0\u00d7\u00a0105 and a mass range from 375 to 1,500 m/z. HCD MS/MS spectra were acquired at a resolution of 15,000, an AGC target of 5\u00a0\u00d7\u00a0104, an isolation window of 4.0 m/z, a maximum injection time of 54 ms and a normalized collision energy of 30. Dynamic exclusion was set to 10 s. Raw data were directly analyzed against the SwissProt database restricted to H. sapiens using Proteome Discoverer version 2.2 for identification and label-free precursor ion quantification.\n\n### Viability assay\n\nHEK293A cells were seeded on a 384-well plate. Tunicamycin was added in the presence or absence of compounds and then incubated for 48 hr. Cell viability was measured using CellTiter-Glo (Promega) and Cytotoxicity LDH Assay Kit-WST (Abs 490 nm, FUJIFILM Wako Pure Chemical) with Cytation3. Cell images were viewed with Operetta CLS and analyzed with Harmony 4.6.\n\n### Overexpression of mutant prion protein\n\nThe mutant PrP (YFP-PrP C179A/S232W) expression vector was kindly gifted by Dr. Ramanujan S. Hegde (MRC Laboratory of Molecular Biology, Cambridge, UK). Each plasmid was introduced into the HEK293T cell line by transfection with polyethylenimine in the presence or absence of 5 \u03bcM IBT21. Cell images were viewed with Operetta CLS and analysed with Harmony 4.6.\n\n### Statistical analysis\n\nThe data shown in each figure are expressed as the means\u00a0\u00b1\u00a0standard deviations. The statistical analyses were performed using the StatFlex software (Ver. 6.0, Artech, Osaka, Japan). In comparisons of 3 or more groups, we used a one-way ANOVA with Tukey\u2019s post hoc test or two-way ANOVA with the Holm\u2019s test. A p value less than 0.05 was considered significant.\n\n#### Synthesis of 7-methylsulphonyl-2-phenylimidazo[2,1-b]benzothiazole (IBT21) and 7-methylsulphonyl-2-(3-azido-5-(azidomethyl)phenyl) imidazo[2,1-b]benzothiazole (diazido-IBT21) photoaffinity labelling probes\n\nAll reactions were performed with dry glassware under an argon atmosphere unless otherwise noted. Analytical thin-layer chromatography (TLC) was performed on precoated (0.25 mm) silica gel plates (Silica Gel 60 F254, Merck Chemicals). Column chromatography was conducted using Biotage SNAP Ultra 50 g with medium pressure liquid chromatography (W-Prep 2XY A-type, Yamazen, Osaka, Japan). Preparative TLC was performed on silica gel (Wakogel B-5F, FUJIFILM Wako Pure Chemical). Melting point (mp) values were measured on an OptiMelt MPA100 automated melting point apparatus (Stanford Research Systems, CA, USA) and are uncorrected. Infrared (IR) spectra were measured by the diffuse reflectance method on an IRPrestige-21 spectrometer (Shimadzu, Kyoto, Japan) attached to a DRS-8000A accessory with the absorption band given in cm\u20131. 1H NMR spectra were measured by a Bruker AVANCE 500 spectrometer or a Bruker AVANCE 400 spectrometer (Bruker, MA, USA) at 500 or 400 MHz, respectively. 13C NMR spectra were measured by a Bruker AVANCE 500 spectrometer at 126 MHz. CDCl3 (Kanto Chemical, Tokyo, Japan) or DMSO-d6 (Cambridge Isotope Laboratories, MA, USA) was used as a solvent for obtaining NMR spectra. Chemical shifts (\u03b4) are given in parts per million (ppm) downfield from (CH3)4Si (\u03b4 0.00 for 1H NMR in CDCl3) or the solvent peak (\u03b4 77.0 for 13C NMR in CDCl3, \u03b4 2.49 for 1H NMR and \u03b4 39.5 for 13C NMR in DMSO-d6) as an internal reference with coupling constants (J) in hertz (Hz). The abbreviations s, d, and br signify singlet, doublet, and broad, respectively.\n\n### Step 1\u00a0(Scheme 1)\n\n![Scheme 1.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig8-v2.jpg)\n\n3-Azido-5-(azidomethyl)benzoic acid (S1) was prepared according to the previous report (Yoshida et al., 2014). A solution of oxalyl chloride (2.05 g, 16.2 mmol) in dichloromethane (6.0 mL) at 0\u00b0C was added to a solution of 3-azido-5-(azidomethyl)benzoic acid (S1) (1.75 g, 8.02 mmol) and N,N-dimethylformamide (DMF) (59.7 mg, 0.817 mmol) in dichloromethane (6.0 mL). After stirring for 3 hr at room temperature, the mixture was concentrated under reduced pressure. The residue was dissolved in a mixed solvent of acetonitrile (MeCN) (5.0 mL) and tetrahydrofuran (THF) (5.0 mL), and a solution of trimethylsilyl diazomethane (TMSCHN2) in diethyl ether (2.0 M, 16.0 mL, 32 mmol) at 0\u00b0C was added to the solution. After stirring for 17 hr at room temperature, the mixture was filtered through a plug of cotton, and the filtrate was concentrated under reduced pressure. The residue was purified by flash column chromatography (n-hexane/dichloromethane\u00a0=\u00a076/24 to 55/45) to give 3'-azido-5'-(azidomethyl)-\u03b1-diazoacetophenone (S2) (1.01 g, 4.17 mmol, 52.0% from S1) as a yellow solid. Mp 57\u201358\u00b0C; TLC Rf 0.21 (n-hexane/ethyl acetate\u00a0=\u00a05/1); 1H NMR (CDCl3, 500 MHz) \u03b4 4.42 (s, 2H), 5.91 (s, 1H), 7.13\u20137.15 (m, 1H), 7.38\u20137.40 (m, 1H), 7.43\u20137.45 (m, 1H); 13C NMR (CDCl3, 126 MHz) \u03b4 53.9 (1C), 54.9 (1C), 117.0 (1C), 122.1 (1C), 122.3 (1C), 138.2 (1C), 138.7 (1C), 141.6 (1C), 184.7 (1C); IR (KBr, cm\u20131) 740, 1177, 1236, 1307, 1366, 1442, 1589, 2107; Anal. calcd. for C9H6N8O: C, 44.63; H, 2.50; N, 46.27%; Found: C, 44,71; H, 2,49; N, 46.33%.\n\nAqueous hydrobromic acid (48%, 0.57 mL, 5.0 mmol) at 0\u00b0C was added to a solution of 3'-azido-5'-(azidomethyl)-\u03b1-diazoacetophenone (S2) (401 mg, 1.66 mmol) in acetic acid (AcOH) (2.5 mL). After stirring for 70 min at room temperature, saturated aqueous sodium bicarbonate was added to the mixture to adjust the pH to 8. The mixture was extracted with ethyl acetate (20 mL\u00a0\u00d73), and the combined organic extract was washed with brine (20 mL) and dried (Na2SO4). After filtration, the filtrate was concentrated under reduced pressure. The residue was purified by flash column chromatography (n-hexane/ethyl acetate\u00a0=\u00a092/8) to give 3-azido-5-(azidomethyl)phenacyl bromide (S3) (413 mg, 1.40 mmol, 84.5%) as a brown oil. TLC Rf 0.51 (n-hexane/ethyl acetate\u00a0=\u00a05/1); 1H NMR (CDCl3, 500 MHz) \u03b4 4.44 (s, 2H), 4.46 (s, 2H), 7.20\u20137.23 (m, 1H), 7.57\u20137.59 (m, 1H), 7.66\u20137.68 (m, 1H); 13C NMR (CDCl3, 126 MHz) \u03b4 30.5 (1C), 53.7 (1C), 118.8 (1C), 123.3 (1C), 124.4 (1C), 135.8 (1C), 138.5 (1C), 141.8 (1C), 190.1 (1C); IR (KBr, cm\u20131) 851, 1261, 1312, 1347, 1443, 1592, 1688, 2108; HRMS (ESI+) m/z 316.9760 ([M+Na]+, C9H779BrN6NaO+ requires 316.9757).\n\n### Step 2\u00a0(Scheme 2)\n\n![Scheme 2.](https://cdn.elifesciences.org/articles/43302/elife-43302-fig9-v2.jpg)\n\nBromine (0.26 mL, 5.04 mmol) at 0\u00b0C was slowly added to a solution of 4-(methylsulphonyl)aniline (S4) (858 mg, 5.01 mmol) and potassium isothiocyanate (2.43 g, 25.0 mmol) in acetic acid (15 mL). After stirring for 3 days with gradual warming to room temperature, saturated aqueous sodium bicarbonate (100 mL) and sodium bicarbonate (25 g) were added to the mixture at 0\u00b0C to neutralize the mixture. After filtration of the mixture and washing with water (150 mL), the filtrate was extracted with ethyl acetate (5 mL\u00a0\u00d710). The combined organic extract was concentrated under reduced pressure to give 6-(methylsulphonyl)benzo[d]thiazol-2-amine (S5) (45.4 mg, 0.198 mmol, 58.2%) as a yellow solid. Mp 210\u2013212\u00b0C; TLC Rf 0.17 (dichloromethane/methanol\u00a0=\u00a030/1); 1H NMR (DMSO-d6, 500 MHz) \u03b4 3.17 (s, 3H), 7.47 (d, J\u00a0=\u00a08.0 Hz, 1H), 7.71 (dd, J\u00a0=\u00a08.0, 2.0 Hz, 1H), 8.00 (br s, 2H), 7.71 (d, J\u00a0=\u00a02.0 Hz, 1H); 13C NMR (DMSO-d6, 126 MHz) \u03b4 44.2 (1C), 117.3 (1C), 120.7 (1C), 124.8 (1C), 131.5 (1C), 132.4 (1C), 156.8 (1C), 170.2 (1C); IR (KBr, cm\u20131) 968, 1140, 1258, 1452, 1529, 1643, 3067, 3399; HRMS (ESI+) m/z 250.9912 ([M+Na]+, C8H8N2NaO2S2+ requires 250.9919).\n\nA suspension of 6-(methylsulphonyl)benzo[d]thiazol-2-amine (S5) (45.3 mg, 0.198 mmol) and phenacyl bromide (S6) (47.6 mg, 0.239 mmol) in 2-methoxyethanol (0.75 mL) was refluxed (bath temperature: 135\u00b0C) for 3.5 hr. Aqueous ammonia (10%, 2 mL) at 0\u00b0C was added to the mixture. After stirring for 15 min at room temperature and filtration, the precipitate was collected and washed with water (20 mL) and cold ethanol (1 mL). The collected solid was dried under reduced pressure. The crude product was purified by preparative TLC (dichloromethane/methanol\u00a0=\u00a050/1) and reprecipitated with ethyl acetate and dichloromethane to give 7-methylsulphonyl-2-phenylimidazo[2,1-b]benzothiazole (IBT21) (9.9 mg, 34 \u00b5mol, 17%) as a pale yellow solid. Mp 245\u2013247\u00b0C; TLC Rf 0.64 (dichloromethane/methanol\u00a0=\u00a030/1); 1H NMR (CDCl3, 500 MHz) \u03b4 3.14 (s, 3H), 7.31\u20137.37 (AA'BB'C, 1H), 7.42\u20137.48 (AA'BB'C, 2H), 7.71 (d, J\u00a0=\u00a08.4 Hz, 1H), 7.86\u20137.90 (AA'BB'C, 2H), 8.04 (s, 1H), 8.06 (dd, J\u00a0=\u00a08.4, 2.0 Hz, 1H), 8.34 (d, J\u00a0=\u00a02.0 Hz, 1H); 13C NMR (CDCl3, 126 MHz) \u03b4 44.9 (1C), 107.1 (1C), 113.0 (1C), 124.3 (1C), 125.4 (2C), 125.8 (1C), 128.1 (1C), 128.9 (2C), 131.6 (1C), 133.1 (1C), 135.4 (1C), 137.0 (1C), 148.8 (1C), 149.0 (1C); IR (KBr, cm\u20131) 800, 951, 1096, 1145, 1209, 1273, 1298, 1312, 1503; HRMS (ESI+) m/z 351.0230 ([M+Na]+, C16H12N2NaO2S2+ requires 351.0230).\n\nA suspension of 6-(methylsulphonyl)benzo[d]thiazol-2-amine (S5) (22.8 mg, 0.100 mmol) and 3-azido-5-(azidomethyl)phenacyl bromide (S3) (35.4 mg, 0.120 mmol) in 2-methoxyethanol (0.37 mL) was refluxed (bath temperature: 135\u00b0C) for 1.5 hr. Aqueous ammonia (2%, 6 mL) at 0\u00b0C was added to the mixture. After stirring for 15 min at room temperature and filtration, the precipitate was collected and washed with water (30 mL). The collected solid was dried under reduced pressure and then dissolved in dichloromethane (20 mL). After filtration of the mixture, the filtrate was concentrated to afford a brown solid involving a small amount of impurity. The crude solid was purified by preparative TLC (dichloromethane/methanol\u00a0=\u00a070/1) to give 7-methylsulphonyl-2-(3-azido-5-(azidomethyl)phenyl)imidazo[2,1-b]benzothiazole (diazido-IBT21) (4.6 mg, 11 \u00b5mol, 11%) as a pale yellow solid. Mp 207\u00b0C (decomp.); TLC Rf 0.55 (dichloromethane/methanol\u00a0=\u00a030/1); 1H NMR (CDCl3, 500 MHz) \u03b4 3.14 (s, 3H), 4.42 (s, 2H), 6.95 (dd, J\u00a0=\u00a01.8, 1.8 Hz, 1H), 7.53 (dd, J\u00a0=\u00a01.8, 1.8 Hz, 1H), 7.62 (dd, J\u00a0=\u00a01.8, 1.8 Hz, 1H), 7.81 (d, J\u00a0=\u00a08.4 Hz, 1H), 8.08 (dd, J\u00a0=\u00a08.4, 1.6 Hz, 1H), 8.10 (s, 1H), 8.36 (d, J\u00a0=\u00a01.6 Hz, 1H); 13C NMR (CDCl3, 126 MHz) \u03b4 44.9 (1C), 54.3 (1C), 108.0 (1C), 113.1 (1C), 115.6 (1C), 118.0 (1C), 121.4 (1C), 124.4 (1C), 126.0 (1C), 131.6 (1C), 135.2 (1C), 135.5 (1C), 137.4 (1C), 138.1 (1C), 141.4 (1C), 147.4 (1C), 149.1 (1C); IR (KBr, cm\u20131) 750, 1150, 1303, 1501, 2110; HRMS (ESI+) m/z 447.0402 ([M+Na]+, C17H12N8NaO2S2+ requires 447.0417).\n",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "84392d3e-a1ae-4266-8ddd-386b9799a8a7",
+      "submission_id": "b0476799-cfe8-4d0b-b501-9b328fa38487",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthew D Shoulders, Massachusetts Institute of Technology United States\n\nReviewers:\n- Claudio Hetz, University of Chile United States\n\n## Review text\n\nDOI: [10.7554/eLife.43302.sa1](https://doi.org/10.7554/eLife.43302.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this work, Kitakaze et al. apply cell-based high throughput screening and extensive mechanistic follow-up to identify a new class of chemical chaperones based on the imidazo[2,1-b]benzothiazole scaffold that can specifically address ER proteostasis defects, providing a new type of tool to modulate proteostasis that has multiple advantages over other known chemical chaperones, including applicability at lower concentrations. The work will be relevant to laboratories studying protein misfolding and aggregation diseases, as well as those with general interests in proteostasis and stress responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cell-based HTS identifies a chemical chaperone for preventing ER protein aggregation and proteotoxicity\" for consideration by eLife. Your article has been reviewed by Vivek Malhotra as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Claudio Hetz (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Kitakaze et al., use cell-based high throughput screening to identify new compounds that can mitigate tunicamycin (Tm)-induced ER stress. Using this approach, they identify a series of compounds containing the IBT substructure. They go on to demonstrate that their compounds have improved potency compared to other UPR modulators/chemical chaperones and that administration of their compounds attenuates UPR signaling in response to Tm-induced ER stress. Furthermore, they demonstrate that administration of their compound IBT21 attenuates Tm-induced protein aggregation in cells and DTT induced protein aggregation in vitro. Similarly, IBT21 improved cellular stress-resistance to two different proteotoxic insults (Tm and prion protein aggregation). These results are consistent with IBTs acting as chemical chaperones. Lastly, they use an MS/photocrosslinking approach to discern potential targets of IBT21, identifying numerous aggregation-prone proteins. Together, these results suggest that IBT21 functions as a chemical chaperone to attenuate ER stress.\n\nEssential revisions:\n\n1) A major issue with the authors' central conclusion is that IBT21 may influence many of the observed readouts by reducing transcription/translation, rather than by functioning as a chemical chaperone. The authors primarily use Tm to induce ER stress in this manuscript. Tm requires new protein synthesis to induce ER stress. Thus, if IBT21 (or other compounds) reduce transcription or translation the stress would also be mitigated. The authors must conclusively address this possibility before the conclusion that IBT21 functions as a chemical chaperone can be properly evaluated. Three key experiments that are required are: (1) to overexpress an active UPR transcription factor and show that the compound does not affect the ability to induce UPR target genes; (2) demonstrate that IBT21 does not influence translation during ER stress using [35S] metabolic labeling or the like; (3) show that IBT21 can also reduce ER stress caused by Tg or DTT, two compounds that do not require protein translation to induce ER protein misfolding/aggregation. It is possible that the chemical chaperoning mechanism is correct, but especially considering that these compounds have a planar conjugated ring system similar to many DNA intercalators, it is important to really demonstrate that the observed effects cannot be explained by a simpler mechanism.\n\n2) Similarly, in the experiment evaluating levels of BiP in the aggregated fraction (Figure 5E), the authors must evaluate whether compound treatment decreases total BiP to rule out changes in expression or degradation of BiP leading to the change in the aggregated fraction.\n\n3) Is IBT21 chemical chaperone activity restricted to ER proteins? It seems unlikely that it would be, if the chemical chaperoning mechanism is correct. The authors should assess IBT21 effects on protein misfolding induced by heat shock or other cytosolic stressors. Does IBT21 suppress induction of heat shock factor I target genes induced by heat or proteotoxic compounds?\n\n4) The azoramide positive control is not working in Figure 4D. This experiment should be repeated using alternative compounds, such as those employed in Figure 1\u2014figure supplement 1.\n\n5) Another major issue is that the described SAR trends are not well-supported by the data. A key and important example is the claim that a 'short substituent endowed the scaffold with the desired activity.' All compounds that contain an extended R2 substituent have an amide bond and it is unclear from SAR whether the amide bond is the issue or the long chain. To justify such a claim, a control with a methyl-substituted amide is needed or, alternatively, the authors could append longer chains onto a sulfonyl or ester. The authors should also moderate other SAR claims as needed based on the data.\n\n6) From the ten inhibitor hits chosen, the authors mention they reduce it to four with a shared scaffold, but they never mention if the other six have higher or lower biological activities, nor do they disclose the structures in the manuscript. This information should be provided, along with further discussion regarding why they were discarded.\n\n7) In the MS experiments conducted to identify all proteins in the aggregated fraction and those that are IBT21-sensitive (Figure 5G), reproducibility needs to be addressed in independent MS experiments and/or by immunoblotting of selected proteins. For the corresponding GO analysis, the authors need to show that the GO results are different for the entire 1200 proteins compared to just IBT-sensitive for the results to be meaningful.\n\n8) In the MS experiment shown in Figure 6E that is measuring the ability of IBT22 to block labeling of proteins by the photocrosslinking probe, the data presentation makes it difficult to determine which targets are the most significantly blocked from labeling and by how many fold compared to DMSO. It would be helpful if the authors would adopt a more standard presentation of the data such as that shown in Lanning et al., 2014). The authors must clarify what threshold (fold-change) is being used to determine a protein is a bona fide target versus nonspecific target. Furthermore, how many total proteins from Figure 6E overlap with those in the IBT-sensitive fraction from Figure 5G?\n\n9) Finally, the authors must assess whether the IBT compound series functions similarly to ameliorate ER stress in other cell lines \u2013 preferably primary cells.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cell-based HTS Identifies a chemical chaperone for preventing ER protein aggregation and proteotoxicity\" for further consideration at eLife. Your revised article has been favorably evaluated by Vivek Malhotra (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nEssential Revisions:\n\n1) New experiments are only included as supplementary figures. Selected key data, and instances in which experiments were repeated with more appropriate controls, should be incorporated into the main figures.\n\n2) In the Discussion section, please add a section addressing the surprising finding that the heat shock response is not influenced by their compounds.\n\n3) There are 58 overlapped proteins for the Competed and Selective (1205 proteins) and IBT-sensitive (125 proteins) groups. However, only two are highlighted and they are not among the strongest hits from either group. Can anything be learned from overlapping stronger hits? Does this data suggest IBT has over 1000 off-targets (a lot) or is the conclusion that it is stabilizing many more proteins that are not detected in the experiment that determined IBT-sensitive compounds?\n\n4) For the SAR discussion, it would be useful to highlight what is preferred and what is not preferred as opposed to just what is preferred.\n",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a3aeb9a5-240f-4593-8a90-bef524a2ab06",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C1",
+      "claim": "The endoplasmic reticulum (ER) is responsible for folding secretory and membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The endoplasmic reticulum (ER) is responsible for folding secretory and membrane proteins, but disturbed ER proteostasis may lead to protein aggregation and subsequent cellular and clinical pathologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ER function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "7146450c-9221-4f23-b1d7-7e3974282532",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C2",
+      "claim": "Disturbed ER proteostasis may lead to protein aggregation and subsequent cellular and clinical pathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "The endoplasmic reticulum (ER) is responsible for folding secretory and membrane proteins, but disturbed ER proteostasis may lead to protein aggregation and subsequent cellular and clinical pathologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific understanding and cited literature in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "a7ab6776-a64d-43b0-a27d-832eb1488d6b",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C3",
+      "claim": "2-phenylimidazo[2,1-b]benzothiazole derivatives (IBTs) were identified as chemical chaperones in a cell-based high-throughput screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identified 2-phenylimidazo[2,1-b]benzothiazole derivatives (IBTs) as chemical chaperones in a cell-based high-throughput screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by the HTS data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "474dfdf7-34c9-422a-b894-b4877533f477",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C4",
+      "claim": "IBT21 directly binds to unfolded or misfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical and chemical biology approaches revealed that IBT21 directly binds to unfolded or misfolded proteins and inhibits protein aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by photoaffinity labeling experiments and mass spectrometry data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "c94dd7cd-ef81-48d5-8452-a309d0b22bb3",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C5",
+      "claim": "IBT21 inhibits protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical and chemical biology approaches revealed that IBT21 directly binds to unfolded or misfolded proteins and inhibits protein aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ProteoStat dye assays and in vitro aggregation assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "cd582ffb-e191-4321-b9f1-de1d2f90367f",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C6",
+      "claim": "IBT21 prevented cell death caused by chemically induced ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, IBT21 prevented cell death caused by chemically induced ER stress and by a proteotoxin, an aggression-prone prion protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell viability and proliferation assays shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "83c0abe5-e6f7-4367-932f-90201d1b142e",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C7",
+      "claim": "IBT21 prevented cell death caused by an aggression-prone prion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, IBT21 prevented cell death caused by chemically induced ER stress and by a proteotoxin, an aggression-prone prion protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments with mutant prion protein overexpression shown in Figure 7E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "293b02d8-f51e-4633-9ec3-ed4d354b0fd3",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C8",
+      "claim": "The UPR is initiated by the activation of three signal transducers located in the ER: IRE1\u03b1, PERK and ATF6.",
+      "claim_type": "EXPLICIT",
+      "source": "The UPR is initiated by the activation of the following three signal transducers located in the ER: IRE1\u03b1, PERK and ATF6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations (Mori, 2000; Walter and Ron, 2011; Han and Kaufman, 2017).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "da020fd7-e6f9-460b-a64a-5070558ab4bd",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C9",
+      "claim": "Disturbance of the UPR has important pathological consequences, including diabetes, neurodegenerative disease and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Disturbance of the UPR has important pathological consequences, including diabetes, neurodegenerative disease and cancer (Hotamisligil, 2010; Mart\u00ednez et al., 2018; Clarke et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "cc872652-c055-4e59-95c9-fc8b144f17dd",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C10",
+      "claim": "KIRA6, an inhibitor of the UPR regulator IRE1, has shown potent anti-diabetic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "KIRA6, an inhibitor of the UPR regulator IRE1, and azoramide, an ER calcium modulator, have shown potent anti-diabetic efficacy (Ghosh et al., 2014; Fu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "8e5538ea-5285-434d-8466-a9bcd8be0597",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C11",
+      "claim": "Azoramide, an ER calcium modulator, has shown potent anti-diabetic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "KIRA6, an inhibitor of the UPR regulator IRE1, and azoramide, an ER calcium modulator, have shown potent anti-diabetic efficacy (Ghosh et al., 2014; Fu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "cef4dcb8-1035-4c9a-a4fb-c92b90c8b74f",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C12",
+      "claim": "Sephin1, a PPP1R15A inhibitor, modulates PERK signalling and has been reported to exert neuroprotective effects in mouse models of amyotrophic lateral sclerosis (ALS).",
+      "claim_type": "EXPLICIT",
+      "source": "Both Sephin1, a PPP1R15A inhibitor, and ISRIB, an eIF2B activator, modulate PERK signalling and have been reported to exert neuroprotective effects in mouse models of amyotrophic lateral sclerosis (ALS) and prion disease (Das et al., 2015; Halliday et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "6b38fd85-87d6-4618-a86a-983310369dd9",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C13",
+      "claim": "ISRIB, an eIF2B activator, modulates PERK signalling and has been reported to exert neuroprotective effects in mouse models of prion disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Sephin1, a PPP1R15A inhibitor, and ISRIB, an eIF2B activator, modulate PERK signalling and have been reported to exert neuroprotective effects in mouse models of amyotrophic lateral sclerosis (ALS) and prion disease (Das et al., 2015; Halliday et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "2613bade-f882-4d4a-af62-33376aabad7c",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C14",
+      "claim": "4-Phenylbutyrate (4PBA) and taurourso-deoxycholic acid (TUDCA) have been reported to function as chemical chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "4-Phenylbutyrate (4PBA) and taurourso-deoxycholic acid (TUDCA) have been reported to function as chemical chaperones and have shown therapeutic benefits for a wide variety of diseases, such as diabetes, ALS and Alzheimer's disease (Ozcan et al., 2006; Cudkowicz et al., 2009; Nunes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "1ee1748c-235c-4b9f-bbaa-01f24815e3b2",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C15",
+      "claim": "4PBA and TUDCA have shown therapeutic benefits for diabetes, ALS and Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "4-Phenylbutyrate (4PBA) and taurourso-deoxycholic acid (TUDCA) have been reported to function as chemical chaperones and have shown therapeutic benefits for a wide variety of diseases, such as diabetes, ALS and Alzheimer's disease (Ozcan et al., 2006; Cudkowicz et al., 2009; Nunes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "5513ebfd-b332-4bbe-b824-6c8da0855fc7",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C16",
+      "claim": "The EUA-EGFP reporter cells can simultaneously monitor the activation of the three branches of the UPR with high sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The EUA-EGFP reporter cells can simultaneously monitor the activation of the three branches of the UPR with high sensitivity and specificity using the specific ER stressor tunicamycin (Tm), an inhibitor of N-linked glycosylation (Figure 1B and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "a8a620d5-a76f-4dce-86d0-7ede9b55f2ef",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C17",
+      "claim": "The EUA-EGFP reporter assay has a signal-to-background ratio of 5.09 \u00b1 1.28.",
+      "claim_type": "EXPLICIT",
+      "source": "The EUA-EGFP reporter cells allowed us to perform 384-well HTS via a sensitive (signal-to-background ratio = 5.09 \u00b1 1.28) and robust (Z' factor = 0.78 \u00b1 0.06) homogeneous assay using a microplate reader (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "c4175d56-e2b3-42c0-9168-3ea32b3f35a3",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C18",
+      "claim": "The EUA-EGFP reporter assay has a Z' factor of 0.78 \u00b1 0.06.",
+      "claim_type": "EXPLICIT",
+      "source": "The EUA-EGFP reporter cells allowed us to perform 384-well HTS via a sensitive (signal-to-background ratio = 5.09 \u00b1 1.28) and robust (Z' factor = 0.78 \u00b1 0.06) homogeneous assay using a microplate reader (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "005d0dbe-3432-45a5-9386-8ae4d9d75523",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C19",
+      "claim": "217,765 compounds were screened from the Drug Discovery Initiative at the University of Tokyo chemical library.",
+      "claim_type": "EXPLICIT",
+      "source": "We screened the 217,765-compound chemical library from the Drug Discovery Initiative at the University of Tokyo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the screening campaign.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "c7fb00cd-1e07-4eed-a1d0-1739102f7f0d",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C20",
+      "claim": "1920 compounds were identified in the first screening with % EUA-EGFP inhibition greater than the average + 5 SD and % viability greater than the average + 3 SD.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 1920 compounds for which the % EUA-EGFP inhibition was greater than the average + 5 SD of the Tm-treated control (hit cut-off = 37%) and the % viability was greater than the average + 3 SD of the Tm-treated control (hit cut-off = 78%) (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the screening data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "35861cd6-13ce-4829-b7e5-e39c3c2b514a",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C21",
+      "claim": "Four of the top 10 hit compounds share a common 2-phenylimidazo[2,1-b]benzothiazole scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "A maximum common substructure search identified a common scaffold in 4 of 10 compounds: the 2-phenylimidazo[2,1-b]benzothiazole skeleton (shown in red) (Figure 1D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "34799166-6afd-42f5-a89a-c0713ace4f21",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C22",
+      "claim": "Removal of the phenyl group at the R1 position completely abolished UPR inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of the phenyl group at the R1 position completely abolished UPR inhibition, indicating that the phenyl group is necessary for potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SAR data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "b4a762b0-1cbd-44a4-b548-d73229344568",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C23",
+      "claim": "IBT29 exhibited higher activity than IBT21.",
+      "claim_type": "EXPLICIT",
+      "source": "IBT29 exhibited higher activity than IBT21 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "f67fe496-e556-4b75-b7b9-73d37f7a8499",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C24",
+      "claim": "At 10 \u00b5M IBT21, Tm-induced UPR activation was inhibited 91.8% in 293A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At 10 \u00b5M IBT21, Tm-induced UPR activation was inhibited 91.8% by IBT21 in 293A cells (Figure 3B\u2013D), as well as in another human cell line, Hap1 cells (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "fcc05203-1799-4cea-bc39-9fbf03541bc9",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C25",
+      "claim": "IBT21 demonstrated an IC50 value of 0.95 \u03bcM in the high content image analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "IBT21 demonstrated an IC50 value of 0.95 \u03bcM, consistent with the IC50 (0.61 \u03bcM) obtained from the HTS assay (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "5f9045b8-20ef-4991-94be-0032587a7968",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C26",
+      "claim": "AZO showed an IC50 value of 86 \u03bcM in the high content image analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, compared with IBT21, AZO and 4PBA showed much higher IC50 values of 86 \u03bcM and greater than 5,000 \u03bcM, respectively (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "f8ba842f-4b2c-434a-9f4d-3e058636d48c",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C27",
+      "claim": "4PBA showed an IC50 value greater than 5,000 \u03bcM in the high content image analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, compared with IBT21, AZO and 4PBA showed much higher IC50 values of 86 \u03bcM and greater than 5,000 \u03bcM, respectively (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "e9bc1d06-2239-4106-bf51-166e263a30b5",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C28",
+      "claim": "IBT21 suppressed Tm-induced activation of all three UPR branch reporters in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, IBT21 suppressed the Tm-induced activation of all three reporters in a dose-dependent manner (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "32bf71ad-c6b0-4139-9c11-5f71476231c0",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C29",
+      "claim": "The IC50 values for IBT21 on ERSE2, UPRE and AARE reporters were 0.24 \u03bcM, 0.33 \u03bcM and 0.46 \u03bcM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the IC50 values for ERSE2 (0.24 \u03bcM), UPRE (0.33 \u03bcM) and AARE (0.46 \u03bcM) were similar to that of EUA-EGFP (0.61 \u03bcM), producing a similar dose-response curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are quantitative measurements from experimental data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "441ea850-4cc7-489a-91cd-3e352e01fa47",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C30",
+      "claim": "IBT21 treatment abolished Tm-induced increases in ATF4, GADD34 and CHOP levels in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the levels of ATF4, GADD34 and CHOP, markers of PERK branch signalling, were increased by Tm, and IBT21 treatment abolished these increases in a dose-dependent manner (Figure 4D,E and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "98cd1358-b77f-44d8-8d3c-f0f0fa311788",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C31",
+      "claim": "IBT21 decreased the levels of DNAJB9, a marker of IRE1 branch signalling, which were induced by Tm.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, IBT21 decreased the levels of DNAJB9, a marker of IRE1 branch signalling, and SEL1L and HERPUD1, markers of ATF6 branch signalling, which were induced by Tm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "6387e574-fff1-401e-9288-575c05ba6c8b",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C32",
+      "claim": "IBT21 decreased the levels of SEL1L and HERPUD1, markers of ATF6 branch signalling, which were induced by Tm.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, IBT21 decreased the levels of DNAJB9, a marker of IRE1 branch signalling, and SEL1L and HERPUD1, markers of ATF6 branch signalling, which were induced by Tm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "a7761fa1-f7ff-4a87-beb5-e8ee470c36a6",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C33",
+      "claim": "AZO did not decrease any UPR markers induced by Tm.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the UPR modulator AZO did not decrease any markers in the UPR by Tm, consistent with the previous report (Fu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 4D and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "d344a26f-da07-4a46-a923-a278041581c6",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C34",
+      "claim": "IBT21 works as a chemical chaperone rather than a UPR modulator.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that IBT21 works as a chemical chaperone rather than a UPR modulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing effects on all three UPR branches and comparison with AZO.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "7995698a-820b-4636-bfbe-e9f5d6dc08a7",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C35",
+      "claim": "IBT21 does not affect the ability to induce UPR target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that IBT21 does not affect the ability to induce UPR target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments with overexpressed UPR transcription factors shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "e927174e-142c-46a3-961a-ccce8e34a4e6",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C36",
+      "claim": "IBT21 does not affect protein translation.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated that IBT21 does not affect protein translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by puromycin incorporation assays shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "df2c4083-4ced-4669-9f4d-644ca305a223",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C37",
+      "claim": "IBT21 modestly reduced DTT-induced ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that IBT21 modestly reduced DTT-induced ER stress by monitoring the activation of EUA-EGFP reporter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "68afbe30-287b-4b95-82f3-d8095e4e55bb",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C38",
+      "claim": "IBT21 could not suppress the induction of heat-shock response by heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, IBT21 could not suppress the induction of heat-shock response by heat shock (Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "c406222e-75cc-4a0b-9a27-0b4ebf32d33d",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C39",
+      "claim": "IBT21 prevented protein aggregation induced by Tm as measured by ProteoStat dye staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the ProteoStat dye staining within cells revealed increased fluorescence intensity in the Tm-treated cells (2.29-fold of untreated (UT)) and MG132-treated cells (2.33-fold of UT), and lower fluorescence intensity in the cells co-treated with Tm and IBT21 (0.87-fold of UT), showing that IBT21 prevented protein aggregation induced by Tm (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ProteoStat dye staining data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "ebb3ac40-c5e7-4bd2-a753-9f318727f6ad",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C40",
+      "claim": "IBT21 inhibited protein aggregation in an in vitro assay using human insulin at a concentration of 10 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, IBT21 and 4PBA inhibited protein aggregation, indicating a direct function as chemical chaperones, though the UPR modulator AZO did not (Figure 5C). Notably, IBT21 inhibited protein aggregation at a concentration of 10 \u00b5M, which is 100-fold lower than that of 4PBA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro aggregation assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "58c082ac-8d1a-4c70-ba90-1f7513d72320",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C41",
+      "claim": "IBT21 inhibits protein aggregation at a concentration 100-fold lower than that of 4PBA.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, IBT21 inhibited protein aggregation at a concentration of 10 \u00b5M, which is 100-fold lower than that of 4PBA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison based on in vitro aggregation assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "f8aa5da7-4bdd-47d3-8db9-01ef58357f9a",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C42",
+      "claim": "4PBA inhibited protein aggregation in an in vitro assay using human insulin.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, IBT21 and 4PBA inhibited protein aggregation, indicating a direct function as chemical chaperones, though the UPR modulator AZO did not (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro aggregation assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "9898ce69-475c-4395-91ba-e97b4c78b592",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C43",
+      "claim": "AZO did not inhibit protein aggregation in an in vitro assay using human insulin.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, IBT21 and 4PBA inhibited protein aggregation, indicating a direct function as chemical chaperones, though the UPR modulator AZO did not (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro aggregation assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "ade56ace-86b8-4771-80be-efbe5de9a1bd",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C44",
+      "claim": "The levels of BiP in the AGGREGATED fraction were increased by Tm treatment (3.1-fold of UT) and this increase was significantly suppressed by IBT21 treatment (1.7-fold of UT).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the levels of BiP in the INPUT fraction, the levels of BiP in the AGGREGATED fraction corresponding to misfolded or aggregated proteins in the ER were increased by Tm treatment (3.1-fold of UT), and this increase was significantly suppressed by IBT21 treatment (1.7-fold of UT) (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "eb1e97d0-090e-4b09-bc29-a42f995cf5fe",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C45",
+      "claim": "211 of 598 proteins (35.3%) in the AGGREGATED fraction were affected by Tm.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 211 of 598 proteins (35.3%) were affected by Tm, and 125 of those 211 proteins (59.2%) were affected by IBT21 (IBT-SENSITIVE proteins), suggesting that IBT21 prevents Tm-induced protein misfolding (Figure 5G, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "47bf46c1-01c5-4d70-8682-cd52e9e16f0c",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C46",
+      "claim": "125 of 211 Tm-affected proteins (59.2%) were affected by IBT21 (IBT-SENSITIVE proteins).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 211 of 598 proteins (35.3%) were affected by Tm, and 125 of those 211 proteins (59.2%) were affected by IBT21 (IBT-SENSITIVE proteins), suggesting that IBT21 prevents Tm-induced protein misfolding (Figure 5G, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "2b87b3ae-b65c-44d3-9642-1af86a38a8cc",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C47",
+      "claim": "Extracellular compartments were highly enriched in the IBT-SENSITIVE proteins based on Gene Ontology annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular compartments were highly enriched in the category of cellular components (Figure 5H Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "cceaa67a-779f-44f7-9d0e-852f196ea5e5",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C48",
+      "claim": "Protein folding was highly enriched in the category of biological function for IBT-SENSITIVE proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to ER client proteins, proteins required for proteostasis could also be affected by Tm and IBT21. As expected, protein folding was highly enriched in the category of biological function, as the representative proteins from the AGGREGATED fraction included the molecular chaperone HSPA5 and the ER folding enzyme PDIA4 (Figure 5G,I, Figure 5\u2014figure supplement 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "be4bd350-dacc-43a0-af2b-13bcba47b1d2",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C49",
+      "claim": "The activity of diazido-IBT21 was comparable to that of IBT21.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of diazido-IBT21 was comparable to that of IBT21, and we used the more potent compound IBT22 as a competitor (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "85c7b4ad-f19d-4ff6-bd55-c7365dcb0dc2",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C50",
+      "claim": "1441 proteins were detected as IBT-BOUNDED proteins in the photoaffinity labeling experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 1441 proteins were detected as IBT-BOUNDED proteins and were classified with the following criteria: 1) 1.5-fold change in the probe-treated samples compared to the probe- and competitor-treated samples (competed) and 2) 1.5-fold change in the probe-treated samples compared to the UT samples (selective) (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "a739619c-af0c-4597-8939-2c7fff935255",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C51",
+      "claim": "1205 proteins were categorized as Competed and Selective IBT-BOUNDED proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The IBT-BOUNDED proteins were categorized into the following four groups: Competed and Selective (1205 proteins), Competed (11 proteins), Selective (185 proteins) and Non-Specific (40 proteins) (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "a8e23757-49a7-47d4-91c7-d69971cd66bc",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C52",
+      "claim": "The Competed and Selective proteins were the majority (84%) of the IBT-BOUNDED proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The Competed and Selective proteins were the majority (84%) of the IBT-BOUNDED proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "c375b119-85e6-47a2-8d7b-2de37b855110",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C53",
+      "claim": "58 proteins were identified as Overlapped proteins observed in both the IBT-SENSITIVE proteins and the Competed and Selective proteins.",
+      "claim_type": "IMPLICIT",
+      "source": "To characterize the IBT21-targeted proteins to corresponding chemical chaperone activity, we analyzed the Overlapped proteins observed in both the IBT-SENSITIVE proteins and the Competed and Selective proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the flow diagram in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "2df413b0-2864-4223-b4d5-dce94e46da57",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C54",
+      "claim": "The Overlapped proteins contained approximately 60% of the IBT-SENSITIVE proteins in each enriched GO group.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the Overlapped proteins contained approximately 60% of the IBT-SENSITIVE proteins in each enriched GO group, indicating that the Competed and Selective proteins largely cover the IBT21-targeted proteins corresponding to chemical chaperone activity (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "a3df7059-02aa-4d23-b9ad-582160108003",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C55",
+      "claim": "Treatment with 1 \u00b5M IBT21 restored the cell growth inhibited by Tm up to 69.8% of the growth of the untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with 1 \u00b5M IBT21 restored the cell growth inhibited by Tm up to 69.8% of the growth of the UT cells (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell proliferation data shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "859660d6-20b6-433c-8866-f7092640b950",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C56",
+      "claim": "Cell growth was significantly stimulated to 112.7 or 115.8% of that of UT cells by the addition of 5 or 10 \u03bcM IBT21, respectively, even in the presence of Tm.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, cell growth was significantly stimulated to 112.7 or 115.8% of that of UT cells by the addition of 5 or 10 \u03bcM IBT21, respectively, even in the presence of Tm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell proliferation data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "8cb96591-2b07-4cb5-8f02-17adba5903f1",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C57",
+      "claim": "40 \u03bcM AZO treatment led to a significant but modest growth recovery up to 58.1% of that of the UT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 40 \u03bcM AZO treatment led to a significant but modest growth recovery up to 58.1% of that of the UT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell proliferation data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "46c747ab-f941-49f5-9919-ebdeda54d14d",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C58",
+      "claim": "IBT21 treatment attenuated viability loss and cell death in a dose-dependent manner under ER stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results of the proliferation assays, IBT21 treatment attenuated viability loss and cell death in a dose-dependent manner (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ATP and LDH assay data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "18fd0c53-94a3-46c5-a3a7-bb07a60398eb",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C59",
+      "claim": "5 \u03bcM IBT21 treatment restored the cell growth inhibition caused by mutant PrP overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of mut PrP inhibited cell proliferation, and 5 \u03bcM IBT21 treatment restored the cell growth inhibition caused by mutant PrP overexpression (Figure 7E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell proliferation data shown in Figure 7E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "835592e4-a007-4ad7-a484-15265937c575",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C60",
+      "claim": "The recovery of viability loss by IBT21 treatment in the mutant PrP-overexpressing cells was confirmed by CellTiter-Glo assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results from the proliferation assays using the high content imaging system, the recovery of viability loss by IBT21 treatment in the mutant PrP-overexpressing cells was also confirmed by a biochemical assay with CellTiter-Glo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by viability assay data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "34f5ddc3-b035-4808-824d-c5cb10ce2d3d",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C61",
+      "claim": "IBTs are promising scaffolds for chemical chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed effects cannot be explained by a simple mechanism because these compounds have a planar conjugated ring system similar to many DNA intercalators; however, IBTs are promising scaffolds for chemical chaperones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the collective experimental data presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "0320b2e8-0e7c-48c6-a5ad-c413ad4e44a2",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C62",
+      "claim": "IBT21 acted as a pharmacological chaperone.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, IBT21 was not particularly similar to osmoprotectants, and IBT21 was observed to preferably bind to unfolded or misfolded proteins in combined analyses such as the ER stress-induced aggregated protein profile and the IBT21-targeted protein profile. Therefore, we considered that IBT21 acted as a pharmacological chaperone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural analysis and binding data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "2d5a7f02-55e0-40de-9983-ce73728db9f0",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C63",
+      "claim": "The IBT21 core possesses hydrophobicity comparable to that of 4PBA and TUDCA.",
+      "claim_type": "EXPLICIT",
+      "source": "The IBT21 core possesses hydrophobicity comparable to that of 4PBA and TUDCA, which are known to be hydrophobic compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chemical structure analysis and comparison.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "8dc7a522-0676-420a-8ff5-1e860a31318b",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C64",
+      "claim": "4PBA and TUDCA are the only two pharmacological chaperones for proteotoxins approved by the FDA for human use.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, 4PBA and TUDCA are the only two pharmacological chaperones for proteotoxins approved by the FDA for human use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about FDA-approved drugs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "2fa9ac6a-c3bc-438f-9208-366dd07539ad",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C65",
+      "claim": "IBT21 shows much higher chaperone-like activity than 4PBA.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, IBT21 shows much higher chaperone-like activity than 4PBA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative experimental data shown in Figure 3E and Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "eec81ab8-89b0-41f7-a1c8-c7d5c412e600",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C66",
+      "claim": "Pharmacological chaperones for proteotoxin have one of three mechanisms of action: preventing protein aggregation by masking the aggregation-prone region (group I), increasing the folding rate by stabilizing the folding transition state (group II) or decreasing the misfolding rate by stabilizing the native state (group III).",
+      "claim_type": "EXPLICIT",
+      "source": "In theory, pharmacological chaperones for proteotoxin have one of the following three mechanisms of action: preventing protein aggregation by masking the aggregation-prone region (group I), increasing the folding rate by stabilizing the folding transition state (group II) or decreasing the misfolding rate by stabilizing the native state (group III).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about chemical chaperone mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "45d7bd59-dc0a-4669-8fb3-c47179272984",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C67",
+      "claim": "IBT21 directly prevents protein aggregation in an in vitro aggregation inhibition assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that IBT21 directly prevents protein aggregation in an in vitro aggregation inhibition assay, but the second and third mechanisms remain elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro aggregation assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "e87b27e1-b7a4-4b50-b3fc-0a0ae6822cf6",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C68",
+      "claim": "Heat shock response is not influenced by IBT21.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, heat shock response is not influenced by IBT21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "f1a5e730-3ca6-46c3-90ce-b4ed19504d8a",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C69",
+      "claim": "Alagille et al. designed and synthesized a series of 2-aryl-imidazo[2,1-b]benzothiazoles by a combination of the benzothiazole motif and the 2-arylimidazo motif from two potent \u03b2-amyloid imaging agents, PIB and IMPY.",
+      "claim_type": "EXPLICIT",
+      "source": "Alagille et al. designed and synthesized a series of 2-aryl-imidazo[2,1-b]benzothiazoles by a combination of the benzothiazole motif and the 2-arylimidazo motif from two potent \u03b2-amyloid imaging agents, PIB and IMPY, respectively (Alagille et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "f0f200d5-3203-487d-bc2c-d5a08c83a608",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C70",
+      "claim": "11C-labelled IBTs have high in vitro and in vivo binding affinities for \u03b2-amyloid aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Yousefi et al. demonstrated that 11C-labelled IBTs have high in vitro and in vivo binding affinities for \u03b2-amyloid aggregates (Alagille et al., 2011) and that 18F-labelled IBTs allow high-contrast PET imaging of \u03b2-amyloids in Alzheimer's disease model mice (Yousefi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "7a67afa3-68a7-46fe-a0df-aaa84d08ea29",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C71",
+      "claim": "18F-labelled IBTs allow high-contrast PET imaging of \u03b2-amyloids in Alzheimer's disease model mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Yousefi et al. demonstrated that 11C-labelled IBTs have high in vitro and in vivo binding affinities for \u03b2-amyloid aggregates (Alagille et al., 2011) and that 18F-labelled IBTs allow high-contrast PET imaging of \u03b2-amyloids in Alzheimer's disease model mice (Yousefi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "a21e14e2-00ff-455b-abfa-1cb3188fc7df",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C72",
+      "claim": "IBT21 could be effective for PET and SPECT imaging of ER stress-related diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our results, these findings indicate that IBT21 could be effective for PET and SPECT imaging of ER stress-related diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the chemical properties of IBT21 and cited literature on related compounds.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "52baca69-ac44-4353-88e6-e92fed06e5a7",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C73",
+      "claim": "Neurodegenerative disorders such as Alzheimer's disease, Huntington disease and prion disease are caused by the accumulation of neurotoxic protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally accepted that neurodegenerative disorders such as Alzheimer's disease, Huntington disease and prion disease are caused by the accumulation of neurotoxic protein aggregates, and chemical chaperones have the potential to separate these neurotoxic aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "e53f66fb-aa5d-4a65-bbec-cf9d1ea7e48f",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C74",
+      "claim": "TMAO was first applied for preventing PrPSC formation in vitro as a chemical chaperone in the late 1990s.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of prion disease, the osmoprotectant TMAO was first applied for preventing PrPSC formation in vitro as a chemical chaperone in the late 1990 s (Tatzelt et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "2af4f9aa-0764-45d0-a49f-c72bea1eea84",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C75",
+      "claim": "PrPSC toxicity was reported to cause ER stress by increasing the intracellular calcium released from the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "PrPSC toxicity was reported to cause ER stress by increasing the intracellular calcium released from the ER (Hetz et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "f66743ae-7548-479a-815c-2f8a5776760b",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C76",
+      "claim": "A reduction in the levels of the ER molecular chaperone BiP accelerates prion pathogenesis in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a reduction in the levels of the ER molecular chaperone BiP accelerates prion pathogenesis in vivo, indicating that the accumulation of the misfolded form of PrP in the ER is a key event in prion propagation (Park et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "6027d6e6-3ee8-4c8f-bb6d-5e68fbd522e7",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C77",
+      "claim": "Prion replication has been shown to cause sustained UPR induction with persistent eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Prion replication has been shown to cause sustained UPR induction with persistent eIF2\u03b1 phosphorylation (Moreno et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "101b7382-aa1b-49ba-965b-af0f0c25d5ec",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C78",
+      "claim": "Pharmacological inhibition of PERK by GSK2606414 mitigated neurodegeneration and clinical prion disease in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of PERK by the compound GSK2606414 mitigated neurodegeneration and clinical prion disease in mice (Moreno et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "4f776612-ae50-4071-987f-76eacd06894c",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "claim_id": "C79",
+      "claim": "The best treatment regimen for prion disease may involve a combination of compounds that fine-tune protein synthesis and reduce protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrated that IBT21 presents the most effective treatment effect and that the best treatment regimen may involve a combination of compounds, some of which fine-tune protein synthesis, such as GSK2606414, and others that reduce protein aggregates, such as the chemical chaperone IBT21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental results and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2201774e-5b46-4cfb-b48c-e5dd59fdcfcd",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A cell-based high-throughput screen using an EUA-EGFP reporter system identified 2-phenylimidazo[2,1-b]benzothiazole derivatives (IBTs) as chemical chaperones. The screen of 217,765 compounds yielded 1920 hits, with 4 of the top 10 compounds sharing the IBT scaffold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The HTS methodology is well-characterized with appropriate metrics (Z' factor = 0.78 \u00b1 0.06, S/B ratio = 5.09 \u00b1 1.28) indicating a robust assay. The screening cascade from 217,765 compounds to 1920 hits to 10 top compounds with structural analysis is clearly documented with appropriate statistical cutoffs (mean + 5 SD for inhibition, mean + 3 SD for viability). The identification of a common scaffold in 4/10 top hits provides strong evidence for a genuine structure-activity relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "0bccb62e-e53d-4cd7-9d9e-c5ff9a719c48",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Structure-activity relationship studies of 28 IBT derivatives revealed that the phenyl group at R1 is essential for activity, and specific substituents at R2 modulate potency, with IC50 values ranging from 0.24-0.46 \u03bcM for the most active compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The SAR study systematically evaluated 28 compounds with hierarchical clustering analysis. The claim that removal of the R1 phenyl group abolishes activity is supported by Figure 2 data. The IC50 values for the three UPR branch reporters (ERSE2: 0.24 \u03bcM, UPRE: 0.33 \u03bcM, AARE: 0.46 \u03bcM) are consistent and support the conclusion. The finding that IBT29 has higher activity than IBT21 validates the SAR predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "f3965ca5-288c-44ea-9f37-fafa9be1e98e",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "IBT21 demonstrates superior potency compared to existing chemical chaperones, with an IC50 of 0.95 \u03bcM versus 86 \u03bcM for azoramide and >5,000 \u03bcM for 4PBA in high-content imaging assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparative potency data is well-documented with consistent IC50 measurements across different assay formats (HTS: 0.61 \u03bcM, high-content imaging: 0.95 \u03bcM). The >100-fold improvement over 4PBA and >90-fold improvement over AZO represents a substantial advance. The data is supported by multiple independent measurements (n=4) with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "cccfea11-5e27-448a-af5d-d255fdc7fe3a",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IBT21 suppresses all three branches of the UPR (ATF6, IRE1, PERK) in a dose-dependent manner, as demonstrated by reporter assays and immunoblot analysis of UPR markers, indicating it functions as a chemical chaperone rather than a UPR modulator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The multi-pronged approach using both reporter assays (Figure 4A-C) and immunoblot analysis of endogenous UPR markers (Figure 4D-E) provides strong convergent evidence. The dose-dependent suppression of all three branches with similar IC50 values (0.24-0.46 \u03bcM) supports a common upstream mechanism. The contrast with AZO, which did not decrease UPR markers, strengthens the conclusion that IBT21 acts as a chemical chaperone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "3349a6af-63b6-42d0-924a-c48e185e6aa8",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IBT21 does not affect UPR transcription factor activity or protein translation, modestly reduces DTT-induced ER stress, but does not suppress heat shock response, supporting its specific role as an ER chemical chaperone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mechanistic control experiments are appropriate and well-executed. The overexpression studies (Figure 4\u2014supplement 2) demonstrate that IBT21 does not inhibit transcription downstream of UPR activation. The puromycin incorporation assay (Figure 4\u2014supplement 3) rules out general translation inhibition. The specificity for ER stress (modest DTT effect) versus heat shock (no effect) supports the proposed mechanism. These negative controls are essential for validating the chemical chaperone hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "d08e5da7-a543-4b8d-811a-8514932048bb",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IBT21 prevents protein aggregation both in cells (ProteoStat assay) and in vitro (insulin aggregation assay) at concentrations 100-fold lower than 4PBA, while the UPR modulator AZO shows no anti-aggregation activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dual approach of cellular (Figure 5A-B) and cell-free (Figure 5C) aggregation assays provides strong evidence for direct anti-aggregation activity. The quantitative comparison showing IBT21 is effective at 10 \u03bcM versus 1000 \u03bcM for 4PBA represents a 100-fold improvement. The negative control with AZO (a UPR modulator) appropriately distinguishes chemical chaperone activity from UPR modulation. The ProteoStat fluorescence quantification shows statistically significant differences (p<0.01).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "23471635-51d1-4ee9-8590-f74011388ab4",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mass spectrometry analysis of SDS-resistant high molecular weight complexes revealed that IBT21 reduces aggregation of 125 proteins (59.2% of Tm-affected proteins), enriched for extracellular compartment proteins and protein folding functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The biochemical fractionation approach combined with quantitative mass spectrometry provides robust proteome-wide evidence. The BiP immunoblot validation (3.1-fold increase with Tm, reduced to 1.7-fold with IBT21) supports the MS data. The identification of 598 proteins with \u22652 unique peptides and \u22655 PSMs represents appropriate quality filtering. The GO enrichment for extracellular compartments and protein folding is consistent with ER client proteins and validates the mechanism. The 59.2% coverage of Tm-affected proteins by IBT21 is substantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "64666585-e348-44a8-8b35-64f9d75819b3",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Photoaffinity labeling with diazido-IBT21 identified 1,441 IBT-binding proteins, with 1,205 (84%) classified as competed and selective. Analysis of 58 overlapping proteins between IBT-sensitive and IBT-bound datasets confirms that IBT21 directly binds unfolded/misfolded proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The photoaffinity labeling approach with appropriate controls (competitor IBT22) provides direct evidence of protein binding. The classification scheme (competed and selective) is rigorous and the 84% majority in this category indicates specific binding. The overlap analysis showing ~60% coverage of IBT-sensitive proteins in each GO category (Figure 6H) validates that the binding targets correspond to the proteins protected from aggregation. The identification of ANXA1 and TAGLN2 in both datasets provides specific examples supporting the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "c9f7ab8d-d3df-4038-8364-facb8d0f2622",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "IBT21 protects cells from ER stress-induced death, restoring cell growth to 69.8% at 1 \u03bcM and stimulating growth to 112.7-115.8% at 5-10 \u03bcM, significantly outperforming azoramide (58.1% recovery at 40 \u03bcM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cytoprotective effects are demonstrated through multiple complementary assays: cell proliferation (high-content imaging), ATP levels (CellTiter-Glo), and LDH release. The dose-dependent protection with statistical significance (p<0.05) and the surprising growth stimulation above baseline at higher concentrations is well-documented. The comparison with AZO at 40 \u03bcM (requiring 40-fold higher concentration for inferior protection) strengthens the conclusion. The time-course data (Figure 7A-B) shows sustained protection over 48 hours.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "f126a5de-9614-4b8d-8c88-7fb6b79a5741",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IBT21 (5 \u03bcM) rescues cell growth inhibition and viability loss caused by overexpression of aggregation-prone mutant prion protein, demonstrating efficacy against a disease-relevant proteotoxin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mutant PrP model provides a disease-relevant validation of IBT21's therapeutic potential. The rescue of both cell proliferation (Figure 7E-F) and viability (Figure 7G) with statistical significance (p<0.05) demonstrates efficacy against a specific aggregation-prone protein. The use of YFP-tagged constructs allows monitoring of protein expression, and the comparison with wild-type PrP provides an appropriate control. This result extends the findings beyond chemical ER stress to a pathologically relevant protein misfolding scenario.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "c2b29ece-c47a-44ed-9712-a4f1dbacc4aa",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IBTs represent a promising new scaffold for pharmacological chaperones that directly prevent protein aggregation (group I mechanism), with hydrophobicity comparable to FDA-approved chaperones 4PBA and TUDCA but superior potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The classification of IBT21 as a pharmacological chaperone is well-supported by: (1) structural analysis showing hydrophobicity comparable to 4PBA/TUDCA, (2) preferential binding to unfolded/misfolded proteins demonstrated by photoaffinity labeling and aggregation profiling, (3) direct demonstration of group I mechanism (preventing aggregation) in vitro, and (4) superior potency (100-fold over 4PBA). The acknowledgment that group II and III mechanisms remain elusive is appropriately cautious. The planar conjugated ring system similarity to DNA intercalators is noted as a limitation requiring further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "defee5a5-a8c4-4c78-a059-f31527be73d9",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish that the ER is responsible for protein folding, disturbed ER proteostasis leads to pathologies, and the UPR is initiated by three signal transducers (IRE1\u03b1, PERK, ATF6) with disturbances linked to diabetes, neurodegeneration, and cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established facts in the field, appropriately cited with key references (Mori, 2000; Walter and Ron, 2011; Han and Kaufman, 2017; Hotamisligil, 2010; Mart\u00ednez et al., 2018; Clarke et al., 2014). These background claims provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "e926e26a-ab1c-4638-b565-4c80ad445b47",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has identified several UPR modulators (KIRA6, azoramide, Sephin1, ISRIB) and chemical chaperones (4PBA, TUDCA) with therapeutic benefits in disease models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior literature with appropriate citations. They establish the rationale for seeking improved chemical chaperones but are not findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "08d90def-20a2-40e7-895c-6dd4a1ed342f",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "4PBA and TUDCA are the only FDA-approved pharmacological chaperones for proteotoxins. IBT21 does not affect heat shock response, and related IBT compounds have been used for \u03b2-amyloid imaging, suggesting potential for PET/SPECT imaging of ER stress-related diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The FDA approval status of 4PBA and TUDCA is factual. The heat shock specificity data (C68) is well-supported. However, the speculation about PET/SPECT imaging potential (C72) is based on analogy to related compounds rather than direct evidence. While the chemical similarity to imaging agents is noted, no imaging studies with IBT21 are presented. This represents reasonable speculation for future work but lacks experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    },
+    {
+      "id": "014e74c8-6042-4e09-a619-bbe1d144694f",
+      "content_id": "b3baa058-4f9b-4d45-8b67-96f8af1114c6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Neurodegenerative diseases involve protein aggregate accumulation, and in prion disease specifically, ER stress plays a key role. Prior work showed PERK inhibition (GSK2606414) mitigates prion disease in mice, suggesting combination therapy with chemical chaperones like IBT21 may be optimal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The background on prion disease and ER stress is well-supported by appropriate citations (Tatzelt et al., 1996; Hetz et al., 2003; Park et al., 2017; Moreno et al., 2012, 2013). The proposal for combination therapy (C79) is reasonable speculation based on the current results with mutant PrP and prior literature, but represents a hypothesis for future testing rather than a demonstrated result. The mutant PrP rescue data provides preliminary support but in vivo validation would be needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:04:22.038742Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a7ab6776-a64d-43b0-a27d-832eb1488d6b",
+      "result_id": "2201774e-5b46-4cfb-b48c-e5dd59fdcfcd"
+    },
+    {
+      "claim_id": "5513ebfd-b332-4bbe-b824-6c8da0855fc7",
+      "result_id": "2201774e-5b46-4cfb-b48c-e5dd59fdcfcd"
+    },
+    {
+      "claim_id": "a8a620d5-a76f-4dce-86d0-7ede9b55f2ef",
+      "result_id": "2201774e-5b46-4cfb-b48c-e5dd59fdcfcd"
+    },
+    {
+      "claim_id": "c4175d56-e2b3-42c0-9168-3ea32b3f35a3",
+      "result_id": "2201774e-5b46-4cfb-b48c-e5dd59fdcfcd"
+    },
+    {
+      "claim_id": "005d0dbe-3432-45a5-9386-8ae4d9d75523",
+      "result_id": "2201774e-5b46-4cfb-b48c-e5dd59fdcfcd"
+    },
+    {
+      "claim_id": "c7fb00cd-1e07-4eed-a1d0-1739102f7f0d",
+      "result_id": "2201774e-5b46-4cfb-b48c-e5dd59fdcfcd"
+    },
+    {
+      "claim_id": "35861cd6-13ce-4829-b7e5-e39c3c2b514a",
+      "result_id": "2201774e-5b46-4cfb-b48c-e5dd59fdcfcd"
+    },
+    {
+      "claim_id": "34799166-6afd-42f5-a89a-c0713ace4f21",
+      "result_id": "0bccb62e-e53d-4cd7-9d9e-c5ff9a719c48"
+    },
+    {
+      "claim_id": "b4a762b0-1cbd-44a4-b548-d73229344568",
+      "result_id": "0bccb62e-e53d-4cd7-9d9e-c5ff9a719c48"
+    },
+    {
+      "claim_id": "32bf71ad-c6b0-4139-9c11-5f71476231c0",
+      "result_id": "0bccb62e-e53d-4cd7-9d9e-c5ff9a719c48"
+    },
+    {
+      "claim_id": "f67fe496-e556-4b75-b7b9-73d37f7a8499",
+      "result_id": "f3965ca5-288c-44ea-9f37-fafa9be1e98e"
+    },
+    {
+      "claim_id": "fcc05203-1799-4cea-bc39-9fbf03541bc9",
+      "result_id": "f3965ca5-288c-44ea-9f37-fafa9be1e98e"
+    },
+    {
+      "claim_id": "5f9045b8-20ef-4991-94be-0032587a7968",
+      "result_id": "f3965ca5-288c-44ea-9f37-fafa9be1e98e"
+    },
+    {
+      "claim_id": "f8ba842f-4b2c-434a-9f4d-3e058636d48c",
+      "result_id": "f3965ca5-288c-44ea-9f37-fafa9be1e98e"
+    },
+    {
+      "claim_id": "2fa9ac6a-c3bc-438f-9208-366dd07539ad",
+      "result_id": "f3965ca5-288c-44ea-9f37-fafa9be1e98e"
+    },
+    {
+      "claim_id": "e9bc1d06-2239-4106-bf51-166e263a30b5",
+      "result_id": "cccfea11-5e27-448a-af5d-d255fdc7fe3a"
+    },
+    {
+      "claim_id": "441ea850-4cc7-489a-91cd-3e352e01fa47",
+      "result_id": "cccfea11-5e27-448a-af5d-d255fdc7fe3a"
+    },
+    {
+      "claim_id": "98cd1358-b77f-44d8-8d3c-f0f0fa311788",
+      "result_id": "cccfea11-5e27-448a-af5d-d255fdc7fe3a"
+    },
+    {
+      "claim_id": "6387e574-fff1-401e-9288-575c05ba6c8b",
+      "result_id": "cccfea11-5e27-448a-af5d-d255fdc7fe3a"
+    },
+    {
+      "claim_id": "a7761fa1-f7ff-4a87-beb5-e8ee470c36a6",
+      "result_id": "cccfea11-5e27-448a-af5d-d255fdc7fe3a"
+    },
+    {
+      "claim_id": "d344a26f-da07-4a46-a923-a278041581c6",
+      "result_id": "cccfea11-5e27-448a-af5d-d255fdc7fe3a"
+    },
+    {
+      "claim_id": "7995698a-820b-4636-bfbe-e9f5d6dc08a7",
+      "result_id": "3349a6af-63b6-42d0-924a-c48e185e6aa8"
+    },
+    {
+      "claim_id": "e927174e-142c-46a3-961a-ccce8e34a4e6",
+      "result_id": "3349a6af-63b6-42d0-924a-c48e185e6aa8"
+    },
+    {
+      "claim_id": "df2c4083-4ced-4669-9f4d-644ca305a223",
+      "result_id": "3349a6af-63b6-42d0-924a-c48e185e6aa8"
+    },
+    {
+      "claim_id": "68afbe30-287b-4b95-82f3-d8095e4e55bb",
+      "result_id": "3349a6af-63b6-42d0-924a-c48e185e6aa8"
+    },
+    {
+      "claim_id": "c406222e-75cc-4a0b-9a27-0b4ebf32d33d",
+      "result_id": "d08e5da7-a543-4b8d-811a-8514932048bb"
+    },
+    {
+      "claim_id": "ebb3ac40-c5e7-4bd2-a753-9f318727f6ad",
+      "result_id": "d08e5da7-a543-4b8d-811a-8514932048bb"
+    },
+    {
+      "claim_id": "58c082ac-8d1a-4c70-ba90-1f7513d72320",
+      "result_id": "d08e5da7-a543-4b8d-811a-8514932048bb"
+    },
+    {
+      "claim_id": "f8aa5da7-4bdd-47d3-8db9-01ef58357f9a",
+      "result_id": "d08e5da7-a543-4b8d-811a-8514932048bb"
+    },
+    {
+      "claim_id": "9898ce69-475c-4395-91ba-e97b4c78b592",
+      "result_id": "d08e5da7-a543-4b8d-811a-8514932048bb"
+    },
+    {
+      "claim_id": "ade56ace-86b8-4771-80be-efbe5de9a1bd",
+      "result_id": "23471635-51d1-4ee9-8590-f74011388ab4"
+    },
+    {
+      "claim_id": "eb1e97d0-090e-4b09-bc29-a42f995cf5fe",
+      "result_id": "23471635-51d1-4ee9-8590-f74011388ab4"
+    },
+    {
+      "claim_id": "47bf46c1-01c5-4d70-8682-cd52e9e16f0c",
+      "result_id": "23471635-51d1-4ee9-8590-f74011388ab4"
+    },
+    {
+      "claim_id": "2b87b3ae-b65c-44d3-9642-1af86a38a8cc",
+      "result_id": "23471635-51d1-4ee9-8590-f74011388ab4"
+    },
+    {
+      "claim_id": "cceaa67a-779f-44f7-9d0e-852f196ea5e5",
+      "result_id": "23471635-51d1-4ee9-8590-f74011388ab4"
+    },
+    {
+      "claim_id": "be4bd350-dacc-43a0-af2b-13bcba47b1d2",
+      "result_id": "64666585-e348-44a8-8b35-64f9d75819b3"
+    },
+    {
+      "claim_id": "85c7b4ad-f19d-4ff6-bd55-c7365dcb0dc2",
+      "result_id": "64666585-e348-44a8-8b35-64f9d75819b3"
+    },
+    {
+      "claim_id": "a739619c-af0c-4597-8939-2c7fff935255",
+      "result_id": "64666585-e348-44a8-8b35-64f9d75819b3"
+    },
+    {
+      "claim_id": "a8e23757-49a7-47d4-91c7-d69971cd66bc",
+      "result_id": "64666585-e348-44a8-8b35-64f9d75819b3"
+    },
+    {
+      "claim_id": "c375b119-85e6-47a2-8d7b-2de37b855110",
+      "result_id": "64666585-e348-44a8-8b35-64f9d75819b3"
+    },
+    {
+      "claim_id": "2df413b0-2864-4223-b4d5-dce94e46da57",
+      "result_id": "64666585-e348-44a8-8b35-64f9d75819b3"
+    },
+    {
+      "claim_id": "474dfdf7-34c9-422a-b894-b4877533f477",
+      "result_id": "64666585-e348-44a8-8b35-64f9d75819b3"
+    },
+    {
+      "claim_id": "a3df7059-02aa-4d23-b9ad-582160108003",
+      "result_id": "c9f7ab8d-d3df-4038-8364-facb8d0f2622"
+    },
+    {
+      "claim_id": "859660d6-20b6-433c-8866-f7092640b950",
+      "result_id": "c9f7ab8d-d3df-4038-8364-facb8d0f2622"
+    },
+    {
+      "claim_id": "8cb96591-2b07-4cb5-8f02-17adba5903f1",
+      "result_id": "c9f7ab8d-d3df-4038-8364-facb8d0f2622"
+    },
+    {
+      "claim_id": "46c747ab-f941-49f5-9919-ebdeda54d14d",
+      "result_id": "c9f7ab8d-d3df-4038-8364-facb8d0f2622"
+    },
+    {
+      "claim_id": "cd582ffb-e191-4321-b9f1-de1d2f90367f",
+      "result_id": "c9f7ab8d-d3df-4038-8364-facb8d0f2622"
+    },
+    {
+      "claim_id": "18fd0c53-94a3-46c5-a3a7-bb07a60398eb",
+      "result_id": "f126a5de-9614-4b8d-8c88-7fb6b79a5741"
+    },
+    {
+      "claim_id": "835592e4-a007-4ad7-a484-15265937c575",
+      "result_id": "f126a5de-9614-4b8d-8c88-7fb6b79a5741"
+    },
+    {
+      "claim_id": "83c0abe5-e6f7-4367-932f-90201d1b142e",
+      "result_id": "f126a5de-9614-4b8d-8c88-7fb6b79a5741"
+    },
+    {
+      "claim_id": "34f5ddc3-b035-4808-824d-c5cb10ce2d3d",
+      "result_id": "c2b29ece-c47a-44ed-9712-a4f1dbacc4aa"
+    },
+    {
+      "claim_id": "0320b2e8-0e7c-48c6-a5ad-c413ad4e44a2",
+      "result_id": "c2b29ece-c47a-44ed-9712-a4f1dbacc4aa"
+    },
+    {
+      "claim_id": "2d5a7f02-55e0-40de-9983-ce73728db9f0",
+      "result_id": "c2b29ece-c47a-44ed-9712-a4f1dbacc4aa"
+    },
+    {
+      "claim_id": "eec81ab8-89b0-41f7-a1c8-c7d5c412e600",
+      "result_id": "c2b29ece-c47a-44ed-9712-a4f1dbacc4aa"
+    },
+    {
+      "claim_id": "45d7bd59-dc0a-4669-8fb3-c47179272984",
+      "result_id": "c2b29ece-c47a-44ed-9712-a4f1dbacc4aa"
+    },
+    {
+      "claim_id": "a3aeb9a5-240f-4593-8a90-bef524a2ab06",
+      "result_id": "defee5a5-a8c4-4c78-a059-f31527be73d9"
+    },
+    {
+      "claim_id": "7146450c-9221-4f23-b1d7-7e3974282532",
+      "result_id": "defee5a5-a8c4-4c78-a059-f31527be73d9"
+    },
+    {
+      "claim_id": "293b02d8-f51e-4633-9ec3-ed4d354b0fd3",
+      "result_id": "defee5a5-a8c4-4c78-a059-f31527be73d9"
+    },
+    {
+      "claim_id": "da020fd7-e6f9-460b-a64a-5070558ab4bd",
+      "result_id": "defee5a5-a8c4-4c78-a059-f31527be73d9"
+    },
+    {
+      "claim_id": "cc872652-c055-4e59-95c9-fc8b144f17dd",
+      "result_id": "e926e26a-ab1c-4638-b565-4c80ad445b47"
+    },
+    {
+      "claim_id": "8e5538ea-5285-434d-8466-a9bcd8be0597",
+      "result_id": "e926e26a-ab1c-4638-b565-4c80ad445b47"
+    },
+    {
+      "claim_id": "cef4dcb8-1035-4c9a-a4fb-c92b90c8b74f",
+      "result_id": "e926e26a-ab1c-4638-b565-4c80ad445b47"
+    },
+    {
+      "claim_id": "6b38fd85-87d6-4618-a86a-983310369dd9",
+      "result_id": "e926e26a-ab1c-4638-b565-4c80ad445b47"
+    },
+    {
+      "claim_id": "2613bade-f882-4d4a-af62-33376aabad7c",
+      "result_id": "e926e26a-ab1c-4638-b565-4c80ad445b47"
+    },
+    {
+      "claim_id": "1ee1748c-235c-4b9f-bbaa-01f24815e3b2",
+      "result_id": "e926e26a-ab1c-4638-b565-4c80ad445b47"
+    },
+    {
+      "claim_id": "8dc7a522-0676-420a-8ff5-1e860a31318b",
+      "result_id": "08d90def-20a2-40e7-895c-6dd4a1ed342f"
+    },
+    {
+      "claim_id": "e87b27e1-b7a4-4b50-b3fc-0a0ae6822cf6",
+      "result_id": "08d90def-20a2-40e7-895c-6dd4a1ed342f"
+    },
+    {
+      "claim_id": "f1a5e730-3ca6-46c3-90ce-b4ed19504d8a",
+      "result_id": "08d90def-20a2-40e7-895c-6dd4a1ed342f"
+    },
+    {
+      "claim_id": "f0f200d5-3203-487d-bc2c-d5a08c83a608",
+      "result_id": "08d90def-20a2-40e7-895c-6dd4a1ed342f"
+    },
+    {
+      "claim_id": "7a67afa3-68a7-46fe-a0df-aaa84d08ea29",
+      "result_id": "08d90def-20a2-40e7-895c-6dd4a1ed342f"
+    },
+    {
+      "claim_id": "a21e14e2-00ff-455b-abfa-1cb3188fc7df",
+      "result_id": "08d90def-20a2-40e7-895c-6dd4a1ed342f"
+    },
+    {
+      "claim_id": "52baca69-ac44-4353-88e6-e92fed06e5a7",
+      "result_id": "014e74c8-6042-4e09-a619-bbe1d144694f"
+    },
+    {
+      "claim_id": "e53f66fb-aa5d-4a65-bbec-cf9d1ea7e48f",
+      "result_id": "014e74c8-6042-4e09-a619-bbe1d144694f"
+    },
+    {
+      "claim_id": "2af4f9aa-0764-45d0-a49f-c72bea1eea84",
+      "result_id": "014e74c8-6042-4e09-a619-bbe1d144694f"
+    },
+    {
+      "claim_id": "f66743ae-7548-479a-815c-2f8a5776760b",
+      "result_id": "014e74c8-6042-4e09-a619-bbe1d144694f"
+    },
+    {
+      "claim_id": "6027d6e6-3ee8-4c8f-bb6d-5e68fbd522e7",
+      "result_id": "014e74c8-6042-4e09-a619-bbe1d144694f"
+    },
+    {
+      "claim_id": "101b7382-aa1b-49ba-965b-af0f0c25d5ec",
+      "result_id": "014e74c8-6042-4e09-a619-bbe1d144694f"
+    },
+    {
+      "claim_id": "4f776612-ae50-4071-987f-76eacd06894c",
+      "result_id": "014e74c8-6042-4e09-a619-bbe1d144694f"
+    }
+  ],
+  "comparisons": []
+}

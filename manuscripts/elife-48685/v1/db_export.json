@@ -1,0 +1,1755 @@
+{
+  "submission": {
+    "id": "ce4c7091-061c-4a4b-8cb3-dea3cbf40ada",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:45:37.936702Z",
+    "updated_at": "2025-12-02T15:45:37.936702Z"
+  },
+  "content": [
+    {
+      "id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "submission_id": "ce4c7091-061c-4a4b-8cb3-dea3cbf40ada",
+      "content_type": "manuscript",
+      "content_text": "# Adaptation of hydroxymethylbutenyl diphosphate reductase enables volatile isoprenoid production\n\n## Authors\n\n- Mareike Bongers<sup>1</sup> ([ORCID: 0000-0003-4739-3852](https://orcid.org/0000-0003-4739-3852)) \u2020\n- Jordi Perez-Gil<sup>2</sup> ([ORCID: 0000-0002-5632-9556](https://orcid.org/0000-0002-5632-9556))\n- Mark P Hodson<sup>2</sup> ([ORCID: 0000-0002-5436-1886](https://orcid.org/0000-0002-5436-1886))\n- Lars Schr\u00fcbbers<sup>1</sup>\n- Tune Wulff<sup>1</sup> ([ORCID: 0000-0002-8822-1048](https://orcid.org/0000-0002-8822-1048))\n- Morten OA Sommer<sup>1</sup>\n- Lars K Nielsen<sup>1</sup> ([ORCID: 0000-0001-8191-3511](https://orcid.org/0000-0001-8191-3511))\n- Claudia E Vickers<sup>2</sup> ([ORCID: 0000-0002-0792-050X](https://orcid.org/0000-0002-0792-050X)) \u2020\n\n### Affiliations\n\n1. Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark Lyngby Denmark\n2. Australian Institute for Bioengineering and Nanotechnology, The University of Queensland Brisbane Australia\n3. Centre for Research in Agricultural Genomics (CRAG) CSIC-IRTA-UAB-UB, Campus UAB Bellaterra Barcelona Spain\n4. Metabolomics Australia, Australian Institute for Bioengineering and Nanotechnology, The University of Queensland Brisbane Australia\n5. School of Pharmacy, The University of Queensland Brisbane Australia\n6. CSIRO Synthetic Biology Future Science Platform Brisbane Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nVolatile isoprenoids produced by plants are emitted in vast quantities into the atmosphere, with substantial effects on global carbon cycling. Yet, the molecular mechanisms regulating the balance between volatile and non-volatile isoprenoid production remain unknown. Isoprenoids are synthesised via sequential condensation of isopentenyl pyrophosphate (IPP) to dimethylallyl pyrophosphate (DMAPP), with volatile isoprenoids containing fewer isopentenyl subunits. The DMAPP:IPP ratio could affect the balance between volatile and non-volatile isoprenoids, but the plastidic DMAPP:IPP ratio is generally believed to be similar across different species. Here we demonstrate that the ratio of DMAPP:IPP produced by hydroxymethylbutenyl diphosphate reductase (HDR/IspH), the final step of the plastidic isoprenoid production pathway, is not fixed. Instead, this ratio varies greatly across HDRs from phylogenetically distinct plants, correlating with isoprenoid production patterns. Our findings suggest that adaptation of HDR plays a previously unrecognised role in determining in vivo carbon availability for isoprenoid emissions, directly shaping global biosphere-atmosphere interactions.\n\n## Introduction\n\nBiogenic volatile organic compounds (BVOCs) emitted from the biosphere have significant effects on global climate and air quality (Loreto and Fares, 2013). Short-chain isoprenoids such as isoprene, a C5 hydrocarbon, contribute more than 80% of BVOCs, totalling about 650 million tonnes of carbon per year (Sindelarova et al., 2014). The vast quantity and high reactivity of emitted volatile isoprenoids affect the oxidative capacity of the troposphere (Thompson, 1992; Wennberg et al., 2018), impact the residence time of the greenhouse gas methane (Fehsenfeld et al., 1992), and contribute to air pollution through formation of secondary organic aerosols, surface-level ozone and carbon monoxide (Claeys et al., 2004; Poisson et al., 2000; Granier et al., 2000; Figure 1). The effects of isoprenoid emissions may be exacerbated by climate change and shifts in land use (Pe\u00f1uelas and Staudt, 2010), warranting a better understanding of how plants accomplish and regulate these vast emissions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48685/elife-48685-fig1-v1.jpg)\n\n**Figure 1.:** The MEP pathway makes IPP and DMAPP simultaneously through the action of HDR (pink box), and produces the bulk of volatile isoprenoids, contributing >80 % of total BVOCs\u00a0(Sindelarova et al., 2014)\u00a0. Non-volatile isoprenoids are essential and synthesised by all organisms, while volatile isoprenoid production is non-essential and highly species-dependent. The cytosolic MVA pathway contributes most sesquiterpenes (<3 % of BVOCs), but is omitted here for clarity. Emitted volatile isoprenoids are rapidly oxidised, resulting in complex atmospheric photochemistry impacting aerosol and cloud condensation nuclei formation, extension of methane residence time, ozonolysis as well as surface-level ozone formation in the presence of mono-nitrogen oxide (NOx) pollutants\u00a0(Wennberg et al., 2018). BVOCs, biogenic organic volatile compounds; DMAPP, dimethylallyl pyrophosphate; DXS, deoxyxylulose synthase; IDI, isopentenyl diphosphate isomerase; IPP, isopentenyl pyrophosphate; IspS, isoprene synthase; HDR, hydroxymethylbutenyl diphosphate reductase.\n\nAll isoprenoids are made from the C5 isomers isopentenyl pyrophosphate (IPP) and dimethylallyl pyrophosphate (DMAPP) (Figure 1). Two non-homologous metabolic pathways produce DMAPP and IPP in plants: the cytosolic mevalonic acid (MVA) and the plastidic methylerythritol phosphate (MEP) pathways, the latter contributing almost all volatile isoprenoids (Pulido et al., 2012). The final step of the MEP pathway is catalyzed by the enzyme hydroxymethylbutenyl diphosphate reductase (HDR/IspH), which produces both IPP and DMAPP (Figure 1). Isoprenoid chain length is initially determined by how many units of IPP are condensed with one molecule of DMAPP, before terpene synthases and other modifying enzymes convert these intermediates into isoprenoids. The resulting compounds are classified by carbon chain length.\n\nIn plants, longer-chain isoprenoids (C15 and higher) serve many essential roles, e.g. as membrane components and parts of the photosynthetic apparatus (Pulido et al., 2012; Figure 1). Short-chain isoprenoids (C5, C10, and some C15 compounds) are volatile under physiological conditions, and their functions are generally not essential for plant survival (Vickers et al., 2009). It is currently unknown how plants control carbon allocation between short-chain and long-chain isoprenoids in the chloroplast. While the demand for essential isoprenoids (for example, photosynthetic pigments) is assumed to be relatively similar across plants (Monson et al., 2013), different species produce markedly different amounts of non-essential, short-chain volatile isoprenoids (Wiedinmyer et al., 2020). For example, some oak (Quercus) species produce vast amounts of isoprene, while closely related oaks produce little or none at all (Wiedinmyer et al., 2020). Synthesis of isoprenoids with different chain lengths requires different DMAPP:IPP substrate ratios. Much more IPP than DMAPP is needed for long-chain isoprenoid production, so presumably high relative IPP concentrations are necessary for chain elongation while an excess of DMAPP and insufficient IPP could favour short-chain isoprenoid production. Isoprene synthase (IspS) uses only DMAPP, but not IPP, as a substrate.\n\nVolatile isoprenoid emissions can represent a significant loss of carbon; for example, up to 20% of recently fixed carbon can be emitted as isoprene in high-emitting plants (Sharkey and Loreto, 1993). Isoprene synthase (IspS) has a high Km for its substrate DMAPP (0.5\u20138 mM; BRENDA, 2020); despite this, it successfully competes with prenyl phosphate synthases, which typically have KM(DMAPP) values 10- to 100-fold lower (BRENDA, 2020). Similarly, monoterpene synthases, which also show lower affinity for the substrates (BRENDA, 2020), compete with downstream prenyl phosphate synthases. Hence, the relative abundance of DMAPP may determine the balance between volatile and non-volatile isoprenoids.\n\nHere we examined HDR as a potential mechanism to provide variability in the DMAPP:IPP ratio. Previous studies in diverse organisms (Escherichia coli, the bacterium Aquifex aeolicus, red pepper chromoplasts, and cultured tobacco cells) all found that HDR produces DMAPP:IPP ratios between 1:4 and 1:6\u00a0(Rohdich et al., 2003;\u00a0Altincicek et al., 2002;\u00a0Adam et al., 2002;\u00a0Tritsch et al., 2010). Consequently, it has been assumed that HDR has a fixed product ratio of about 1:5. However, none of these species produce significant amounts of volatile isoprenoids (Wiedinmyer et al., 2020). Isopentenyl diphosphate isomerase (IDI) interconverts DMAPP and IPP, but the reaction is slow (Jonnalagadda et al., 2012) and IDI is rate-limiting for isoprenoid production generally, including isoprene (Vickers et al., 2014). We hypothesised that HDR enzymes from species that emit large amounts of short-chain volatile isoprenoids produce a higher ratio of DMAPP to IPP, which could support production of volatiles like isoprene.\n\n## Results and discussion\n\nWe selected HDR genes from the bacterium E. coli, Synechococcus sp. strain PCC 7002 (a photosynthetic prokaryote) and eight species from diverse taxa of the plant kingdom (Table 1). Many plants harbour more than one annotated HDR gene, some of which may be pseudogenes. Therefore, we first identified functional HDR genes by their ability to complement an otherwise lethal knockout of the ispH/HDR gene in E. coli (Altincicek et al., 2001). We found at least one functional gene from each species (Figure 2\u2014figure supplement 1a); however, severe dose-dependent growth defects were observed when overexpressing certain HDR genes, possibly due to toxicity of prenyl phosphates (George et al., 2018; Figure 2\u2014figure supplement 1b). This precluded accurate steady-state metabolite quantification and required alleviating toxicity by the introduction of a metabolic sink for IPP and DMAPP. Here we used a lycopene (C40 isoprenoid) biosynthetic pathway, including expression of a heterologous idi (Cunningham et al., 1994). Deoxyxylulose synthase (DXS), the primary rate-limiting step of the MEP pathway, was also overexpressed in order to achieve intracellular IPP and DMAPP concentrations above quantification limits in E. coli.\n\n**Table 1.**\n Genetic information and volatile isoprenoid emission profiles for species studied in this work.Key: blank cell indicates species has not been tested, or genome sequence (or other information) not available; Y indicates significant emissions of isoprene or isoprenoids have been detected, or gene/transcript has been identified; N indicates significant emissions of isoprene or isoprenoids have NOT been detected, or gene/transcript has NOT been identified; MTs, monoterpenes; IspS, isoprene synthase; TPS, terpene synthase.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"9\"></th>\n      <th colspan=\"2\">Emissions</th>\n      <th colspan=\"2\">Gene/transcript*</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th>Kingdom</th>\n      <th>Phylum/Clade</th>\n      <th>Clade</th>\n      <th>Genus, species</th>\n      <th>Common Name</th>\n      <th></th>\n      <th>HDR protein accession number</th>\n      <th>E. coli construct Genbank ID</th>\n      <th>Complements?\u2020</th>\n      <th>Isoprene (C5)</th>\n      <th>MTs (C10)</th>\n      <th>IspS</th>\n      <th>Short chain TPS</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Plantae</td>\n      <td>Angiosperms</td>\n      <td>Eudicots</td>\n      <td>Ricinus communis</td>\n      <td>castor bean plant</td>\n      <td></td>\n      <td>XP_002519102.1</td>\n      <td>MH605331</td>\n      <td>yes</td>\n      <td>N</td>\n      <td>Y</td>\n      <td>N</td>\n      <td>Y</td>\n      <td>Wiedinmyer et al., 2020;\u00a0Kadri et al., 2011;\u00a0Xie et al., 2012)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Plantae</td>\n      <td rowspan=\"2\">Angiosperms</td>\n      <td rowspan=\"2\">Eudicots</td>\n      <td rowspan=\"2\">Populus trichocarpa\u2021</td>\n      <td rowspan=\"2\">black cottonwood</td>\n      <td>1</td>\n      <td>ACD70402</td>\n      <td>MH605329</td>\n      <td>yes</td>\n      <td rowspan=\"2\">Y</td>\n      <td rowspan=\"2\">Y</td>\n      <td>Y</td>\n      <td rowspan=\"2\">Y</td>\n      <td>Wiedinmyer et al., 2020;\u00a0Tuskan, 2006)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>PNT41333.1</td>\n      <td>MH605330</td>\n      <td>no</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Plantae</td>\n      <td>Angiosperms</td>\n      <td>Eudicots</td>\n      <td>Prunus persica</td>\n      <td>peach</td>\n      <td></td>\n      <td>XP_007199828.1</td>\n      <td>MH605326</td>\n      <td>yes</td>\n      <td>N</td>\n      <td>Y</td>\n      <td>N</td>\n      <td>Y</td>\n      <td>Wiedinmyer et al., 2020;\u00a0Verde et al., 2013)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Plantae</td>\n      <td rowspan=\"2\">Angiosperms</td>\n      <td rowspan=\"2\">Eudicots</td>\n      <td rowspan=\"2\">Eucalyptus grandis</td>\n      <td rowspan=\"2\">flooded gum</td>\n      <td>1</td>\n      <td>XP_010028563.1</td>\n      <td>MH605323</td>\n      <td>yes</td>\n      <td rowspan=\"2\">Y</td>\n      <td rowspan=\"2\">Y</td>\n      <td rowspan=\"2\">Y</td>\n      <td rowspan=\"2\">Y</td>\n      <td rowspan=\"2\">Wiedinmyer et al., 2020;\u00a0Myburg et al., 2014</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>XP_010047332.1</td>\n      <td>MH605324</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td>Plantae</td>\n      <td>Angiosperms</td>\n      <td>Eudicots</td>\n      <td>Theobroma cacao</td>\n      <td>cacao tree</td>\n      <td></td>\n      <td>XP_007042717.1</td>\n      <td>MH605333</td>\n      <td>yes</td>\n      <td>N</td>\n      <td>Y</td>\n      <td>N</td>\n      <td>Y</td>\n      <td>Wiedinmyer et al., 2020;\u00a0Argout et al., 2008</td>\n    </tr>\n    <tr>\n      <td>Plantae</td>\n      <td>Angiosperms</td>\n      <td>Eudicots</td>\n      <td>Arabidopsis thaliana</td>\n      <td>thale cress</td>\n      <td></td>\n      <td>AEE86362.1</td>\n      <td>MH605322</td>\n      <td>yes</td>\n      <td>N</td>\n      <td>Y</td>\n      <td>N</td>\n      <td>Y</td>\n      <td>Sharkey et al., 2005;\u00a0Chen et al., 2004;\u00a0Bohlmann et al., 2000</td>\n    </tr>\n    <tr>\n      <td>Plantae</td>\n      <td>Angiosperms</td>\n      <td>Monocots</td>\n      <td>Elaeis guineensis</td>\n      <td>oil palm</td>\n      <td></td>\n      <td>XP_010909277.1</td>\n      <td>MH605325</td>\n      <td>yes</td>\n      <td>Y</td>\n      <td></td>\n      <td></td>\n      <td>Y</td>\n      <td>Wiedinmyer et al., 2020; Wilkinson et al., 2006</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Plantae</td>\n      <td rowspan=\"2\">Gymnosperms</td>\n      <td rowspan=\"2\">Pinophyta</td>\n      <td rowspan=\"2\">Picea sitchensis</td>\n      <td rowspan=\"2\">Sitka spruce</td>\n      <td>1</td>\n      <td>ACN40284.1</td>\n      <td>MH605327</td>\n      <td>yes</td>\n      <td rowspan=\"2\">Y</td>\n      <td rowspan=\"2\">Y</td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\">Y</td>\n      <td rowspan=\"2\">Wiedinmyer et al., 2020;\u00a0Hayward et al., 2004</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>ACN39959.1</td>\n      <td>MH605328</td>\n      <td>yes \u2013 toxic</td>\n    </tr>\n    <tr>\n      <td>Bacteria</td>\n      <td>Cyanobacteria</td>\n      <td></td>\n      <td>Synechococcus sp. PCC 7002</td>\n      <td>Synechococcus</td>\n      <td></td>\n      <td>ACA98524.1</td>\n      <td>MH605332</td>\n      <td>yes</td>\n      <td>N</td>\n      <td></td>\n      <td>N</td>\n      <td>N</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*\u00a0Identified from data/genomes available on NCBI (https://www.ncbi.nlm.nih.gov/) and literature search (references noted).\u2020 Whether protein expression was able to functionally complement an E. coli \u0394ispH knockout in this study.\u2021 Also known as Populus balsamifera ssp. trichocarpa._\n\nA spectrum of DMAPP:IPP ratios was observed, ranging from almost exclusive IPP production (Picea sitchensis HDR1) to almost exclusive DMAPP production (Populus trichocarpa and Ricinus communis, Figure 2a). A control without HDR overexpression (labelled (-) in Figure 2a) showed a DMAPP:IPP ratio of\u00a0~1.5 to 1 in our experimental setup, serving as a reference point. Overexpressing the E. coli HDR shifted the ratio slightly towards IPP, in agreement with previous reports (Rohdich et al., 2002). However, HDR enzymes from species known to emit volatile isoprenoids produced considerably more DMAPP - a noteworthy exception being P. sitchensis HDR1 (PsHDR1, Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48685/elife-48685-fig2-v1.jpg)\n\n**Figure 2.:** (a) In vivo ratio of DMAPP:IPP measured via LC-MS/MS in E. coli overexpressing HDR genes from different species, in the genetic context of dxs and lycopene biosynthetic pathway overexpression. Filled circles and squares indicate that the HDR source species natively emits C5 or C10 isoprenoids. Open symbols indicate no emission, and no symbol indicates no data or conflicting data. (b) Isoprene production in E. coli when the HDR enzymes shown in panel (a) are overexpressed with dxs and an isoprene synthase. (c) Comparison of DMAPP:IPP ratios between selected HDRs co-expressed with dxs and with expression of either lycopene or isoprene as the metabolic sink. (d) Comparison of DMAPP:IPP ratios in E. coli overexpressing Picea sitchensis (Ps) HDR1 or HDR2 in the context of dxs and lycopene biosynthetic pathway overexpression. (e) Isoprene production in E. coli overexpressing P. sitchensis HDR1 or HDR2 along with dxs and an isoprene synthase. (f) The maximum specific growth rate (\u00b5max) of E. coli expressing selected HDRs in the context of dxs and lycopene biosynthetic pathway overexpression, with or without induction of HDR expression by addition of IPTG. All data shown as mean \u00b1 SD from > 3 biological replicates; (-) indicates the control strain without HDR overexpression.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48685/elife-48685-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) An E. coli strain with a \u2206ispH knockout and a heterologously expressed lower mevalonate (MVA) pathway depends on mevalonate for survival. When a functional ispH/HDR gene is expressed from a plasmid, growth can be restored in the absence of mevalonate. (-), empty vector negative control; (+), plasmid expressing E. coli ispH as a positive control. E. grandis HDR2 and P. trichocarpa HDR2 did not complement the \u2206ispH knockout. MVA, mevalonate. (b) Toxicity of P. sitchensis HDR2 in E. coli \u2206ispH. Plasmid-encoded HDR genes are expressed from the trc promoter which can be induced with IPTG or partially repressed with glucose. P. sitchensis HDR2-associated toxicity can be alleviated by adding glucose to repress HDR expression, and is strongest under full IPTG induction. Arabinose, which induces the genomically encoded lower MVA pathway, including a heterologous idi gene, partly alleviates IPTG-induced toxicity. (-), empty vector negative control; (+), plasmid expressing E. coli HDR as a positive control. IPTG, Isopropyl \u03b2-D-1-thiogalactopyranoside; MVA, mevalonate.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48685/elife-48685-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Relative protein abundance in E. coli overexpressing HDR genes from different species, in the genetic context of dxs and lycopene biosynthetic pathway overexpression. Proteins were quantified using untargeted proteomics via LC-MS/MS, and data represent the three most abundant peptide counts from each protein, normalized across all samples. (a) E. coli native Idi shows no significant difference between strains (one-way ANOVA, p = 0.536). (b) E. coli native HDR quantification. Only the EcHDR overexpression strain is significantly different to the \u2018no HDR overexpression\u2019 (-) control (Welch\u2019s one-way ANOVA, p = 0.0048), no significant difference were observed between the other strains (p \u2265 0.743). (c) Overexpressed, heterologous HDR proteins. Comparison of protein abundance between different HDR proteins is not possible due to a lack of shared tryptic peptides across all HDRs. Unique peptides for all overexpressed HDR proteins were detected with high abundance in the respective strains. (d) Plasmid-encoded lycopene biosynthetic pathway proteins. No significant differences were detected across strains for CrtI and CrtB (ordinary or Welch\u2019s ANOVA, respectively, p \u2265 0.05). For Idi and CrtE, differences with p < 0.05 were detected between selected strains (e.g. E. grandis vs. R. communis CrtE p = 0.034); however, no significant differences were observed when comparing any of the strains to the negative control (p \u2265 0.78 for Idi, Welch\u2019s one-way ANOVA; p \u2265 0.46 for CrtE, ordinary one-way ANOVA). For Idi and CrtE, a total of only 3 peptides each were detected in our proteomics analysis, indicating low protein abundance and potentially explaining the higher variability between strains. Data represent means +/- SD from n \u2265 3. All p-values were corrected for multiple hypothesis testing using Dunnett\u2019s method.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48685/elife-48685-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Absolute quantification of intracellular DMAPP and IPP in E. coli overexpressing HDR genes from different species, in the genetic context of dxs and lycopene biosynthetic pathway overexpression. The difference in product ratio between HDRs at opposite ends of the graph is driven by both an increase in DMAPP and a decrease in IPP concentration. Data represent means +/- SD from n \u2265 3. (b) Representative chromatograms of matrix-matched calibration standards for DMAPP and IPP, including mevalonate-5-phosphate as internal standard (IS). Due to a slow, consistent drift in retention time over the HPLC column lifetime, no fixed retention times are given for DMAPP and IPP; however, with the presented method the analytes remain baseline-separated as shown here.\n\nThese values do not represent direct product ratios of the examined HDRs due to the presence of the heterologously expressed lycopene pathway and idi. However, they show that product ratios vary up to 40-fold between HDRs, and that the assumed fixed 1:5 DMAPP to IPP ratio is in fact an exception, rather than the rule. Using LC-MS proteomics, we tested whether the observed phenotypes were influenced by differences in expression of the native E. coli HDR, IDI, or the plasmid-encoded lycopene production pathway. We found no difference in protein levels in any of the HDR overexpression strains compared to the no HDR overexpression control (one-way ANOVA, p>0.05), except for the anticipated increase in E. coli HDR in the respective overexpression strain (Welch\u2019s ANOVA, Dunnett\u2019s post hoc test p<0.005; Figure 2\u2014figure supplement 2). Because no shared proteotypic peptides exist across all heterologous HDRs, quantitative comparison of HDR protein levels across strains is not possible. However, we confirmed that all tested HDRs were strongly overexpressed (Figure 2\u2014figure supplement 2c), and that there was no correlation between HDR abundance and the DMAPP:IPP ratio (rho\u00a0=\u00a0\u22120.488, data not shown). Taken together, these data demonstrate that different HDR enzymes produce vastly different DMAPP:IPP ratios, with some plant HDRs producing a ratio significantly shifted towards more DMAPP than previously recognized.\n\nTo test whether an increased in vivo DMAPP:IPP ratio would favour isoprene production, we replaced the lycopene pathway with an overexpressed isoprene synthase (IspS) as a metabolic sink. A high DMAPP:IPP ratio was indeed closely associated with isoprene production (Figure 2b). To confirm that differences in DMAPP:IPP ratios are robust when changing from lycopene (C40) to isoprene (C5) production, we compared selected HDR product ratios with both downstream metabolic sinks (Figure 2c). While the absolute values shifted towards DMAPP (left y-axis; lycopene requires 6 IPP and 2 DMAPP) or IPP (right y-axis; isoprene is made only from DMAPP) depending on downstream requirements, the relative difference between HDRs remained similar, demonstrating that our experimental setup captures representative differences between the enzymes.\n\nIsoprene was not produced in the presence of Theobroma cacao,\u00a0Arabidopsis thalianaor E. coli HDR (all species that do not emit short-chain isoprenoids), presumably because the available DMAPP was insufficient for IspS to compete with downstream enzymes (Figure 2b). All HDRs from isoprenoid-emitting species enabled isoprene production, supporting our hypothesis. Interestingly, a high DMAPP:IPP ratio and high isoprene production was also observed with HDRs from P. persica and R. communis, species that emit some monoterpenes but not isoprene (Wiedinmyer et al., 2020; Kadri et al., 2011). PpHDR and RcHDR have high (>87%) sequence identity with HDR proteins from high isoprene-emitting species P. trichocarpa and Hevea brasiliensis, respectively (Figure 3), but R. communis and P. persica do not have an isoprene synthase (Table 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48685/elife-48685-fig3-v1.jpg)\n\n**Figure 3.:** Where known, each species\u2019 C5 (isoprene) and C10 (monoterpenes) emission spectra are shown\u00a0(Wiedinmyer et al., 2020). High DMAPP-producing HDR proteins (from P. trichocarpa, R. communis and P. persica) cluster together based on high sequence similarity. Homologues within species, such as P. trichocarpa, tend to be highly similar; except for in gymnosperms where two separate groups of likely paralogous HDRs exist. Proteins analysed in this study are highlighted in bold. The Asterids clade is collapsed for clarity. Tree generated from BLAST sequence alignment with A. thaliana HDR against all land plants, using maximum likelihood phylogeny. Empty symbol, no volatile emission; filled symbol, volatile emission; no symbol, no or conflicting data available.\n\nTogether, these data suggest that HDR from different plant species has adapted to produce differing ratios of DMAPP to IPP, and that an increased DMAPP:IPP ratio is an important prerequisite for production of isoprene and perhaps other non-essential, short-chain isoprenoids. Our data indicate that a high DMAPP:IPP ratio is a necessary, but not a sufficient requirement for volatile isoprenoid emission. This places HDR at a key junction in the evolution of isoprene emission, a trait that appeared and disappeared several times across the plant kingdom (Dani et al., 2014).\n\nPicea sitchensis (Sitka spruce) is a coniferous gymnosperm that emits both isoprene and monoterpenes (Hayward et al., 2004), but contrary to our expectation PsHDR1 produced the highest relative amount of IPP and showed very low isoprene production in E. coli (Figure 2a and b). Recently, the HDR from another gymnosperm, Ginkgo biloba (GbHDR1), was shown to produce an even lower DMAPP to IPP ratio in vitro (Shin et al., 2017). Most sequenced gymnosperms have two or more HDR isoforms which fall into two distinct classes based on sequence similarity (Kim et al., 2008; Figure 3). Interestingly, transcriptional studies (Celedon et al., 2017;\u00a0Kim et al., 2009) suggest that gymnosperm Type II HDRs are particularly abundant at the site of monoterpene-rich resin formation and are generally expressed at higher levels than Type I HDRs (Celedon et al., 2017) (such as PsHDR1 and GbHDR1). It was therefore tempting to speculate that HDR adaptation in gymnosperms has resulted in paralogues with complementary functions: Type I HDRs, which primarily produce IPP, show basal expression throughout the plant, and are important for long-chain isoprenoid production; and Type II HDRs, which primarily produce DMAPP and are expressed where short-chain isoprenoids are made. This prompted us to investigate the Type II HDR from P. sitchensis (Figure 2d\u2013f).\n\nPsHDR2 failed in our initial complementation assay (data not shown), most likely due to toxicity as no metabolic sink was present for IPP/DMAPP. Indeed, even in the presence of a sink, overexpression of PsHDR2 reduced E. coli growth rate by about 50% (Figure 2f), a level of toxicity exceeding that of other high DMAPP-producing HDRs. Interestingly, PsHDR2 produced a\u00a0>\u00a010 fold excess of DMAPP over IPP, while PsHDR1 had a ratio shifted towards more IPP (DMAPP:IPP\u00a0=\u00a00.447 +/-\u00a00.19; Figure 2d). PsHDR2 also enabled higher isoprene production than PsHDR1 (Figure 2e), albeit at a lower yield than the other high DMAPP-producing enzymes, which is most likely an effect of the high toxicity in E. coli. The complementary product ratios of PsHDR1 and PsHDR2 strongly suggest functional specialization of these genes, making them paralogues in P. sitchensis.\n\nWhile many plants encode more than one HDR gene (Figure 3), these homologues are often closely related and thus likely arose from relatively recent large-scale genome duplications (Saladi\u00e9 et al., 2014). In gymnosperms, the two HDR homologues are phylogenetically more distant (Figure 3) and likely define functionally specialised paralogues. Hence, we propose that two different strategies might have been employed to adapt HDR to isoprenoid production spectra: either using a single HDR and shifting the DMAPP:IPP ratio to allow production of specific isoprenoid profiles (Figure 2a), or having two functionally distinct HDRs each dedicated to the synthesis of one isomer (Figure 2d). Whether adaptation of HDR is a result of a change in the demand for DMAPP, or whether it is a driver of its release as isoprene and other volatile isoprenoids, is a fascinating question that remains to be answered.\n\nThe discovery of HDR enzymes with different product ratios has important implications for heterologous production of industrially valuable isoprenoids such as biofuels, fragrances and pharmaceuticals (Vickers, 2015) in engineered microorganisms. We have shown that only certain HDR enzymes enable production of isoprene in our engineered E. coli, and our data indicate that the choice of HDR is important to ensure availability of DMAPP and IPP at appropriate relative concentrations to achieve balanced pathway flux towards the product of interest and to avoid DMAPP toxicity. The presented LC-MS/MS method for separation and absolute quantification of the two isomers (Figure 2\u2014figure supplement 3) proved crucial for our discovery, and will enable a deeper understanding of the processes regulating isoprenoid biosynthesis in nature and biotechnology.\n\nDemands from downstream metabolism may determine IPP and DMAPP requirements, and could form an evolutionary driver for enzymatic activities that impact their ratio. Our data suggest that the adaptation of HDR to generate different DMAPP:IPP ratios allows for the production of large amounts of short-chain isoprenoids in certain species or tissues. Our findings illuminate the molecular mechanism underlying how plants emit isoprene and suggest a central role for HDR in determining the spectrum of isoprenoids produced by plants, including isoprenoid BVOCs. Unravelling the mechanism by which plants distribute carbon between volatile and non-volatile isoprenoids will help resolve the complex interplay between BVOC emissions, land-use management and climate change.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Escherichia coli)</td>\n      <td>ispH/HDR</td>\n      <td>NCBI \u2018Gene\u2019</td>\n      <td>Gene_ID:944777; EcoGene:EG11081; ECK0030; lytB</td>\n      <td>hydroxymethylbutenyl diphosphate reductase</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Escherichia coli W</td>\n      <td>ATCC</td>\n      <td>ATCC:9637</td>\n      <td>obtained from L. Nielsen lab, Australia</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Escherichia coli)</td>\n      <td>E. coli W\u2206cscR, lacZ::PtDXS, arsB::PaISPS</td>\n      <td>This paper and PMID: 21782859 (Arifin et al., 2011)</td>\n      <td></td>\n      <td>knockout of cscR, knock-in of PtDXS and PaISPS</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Escherichia coli)</td>\n      <td>E.\u00a0coli\u00a0W\u0394cscR, lacZ::MVA, \u2206ispH</td>\n      <td>This paper and PMID: 11115399 (Campos et al., 2001)</td>\n      <td></td>\n      <td>knock-in of MVA pathway, knockout of ispH</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Populus trichocarpa)</td>\n      <td>DXS</td>\n      <td>NCBI \u2018Reference Sequence\u2019</td>\n      <td>XP_006378082.1</td>\n      <td>Deoxyxylulose phosphate synthase, gene was truncated for expression in E. coli</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Populus alba)</td>\n      <td>ISPS(del2-52,A3T,L70R,S288C)</td>\n      <td>Patent WO2012058494 (Beck et al., 2011)</td>\n      <td></td>\n      <td>Isoprene synthase (Genbank:EF638224) variant, truncated and mutated</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLacZ-KIKO(cm) plasmid</td>\n      <td>PMID: 23799955 (Sabri et al., 2013)</td>\n      <td>Addgene:46764</td>\n      <td>used to integrate PtDXS into the genome</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pArsBKIKO(cm) plasmid</td>\n      <td>PMID: 23799955 (Sabri et al., 2013)</td>\n      <td>Addgene:46763</td>\n      <td>used to integrate PaISPS into the genome</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pT-HDR plasmids</td>\n      <td>This paper</td>\n      <td>derived from pTrc99a</td>\n      <td>all HDR genes were cloned into this expression vector</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAC-LYC04</td>\n      <td>PMID: 7919981 (Cunningham et al., 1994)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Ricinus communis HDR expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605331</td>\n      <td>HDR protein XP_002519102.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Populus trichocarpa HDR 1 expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605329</td>\n      <td>HDR protein ACD70402</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Populus trichocarpa HDR 2 expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605330</td>\n      <td>HDR protein PNT41333.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Prunus persica HDR expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605326</td>\n      <td>HDR protein XP_007199828.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Eucalyptus grandis HDR 1 expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605323</td>\n      <td>HDR protein XP_010028563.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Eucalyptus grandis HDR 2 expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605324</td>\n      <td>HDR protein XP_010047332.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Theobroma cacao HDR expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605333</td>\n      <td>HDR protein XP_007042717.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Arabidopsis thaliana HDR expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605322</td>\n      <td>HDR protein AEE86362.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Elaeis guineensis HDR expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605325</td>\n      <td>HDR protein XP_010909277.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Picea sitchensis HDR 1 expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605327</td>\n      <td>HDR protein ACN40284.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Picea sitchensis HDR 2 expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605328</td>\n      <td>HDR protein ACN39959.1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Synechococcus sp. PCC 7002 HDR expression plasmid</td>\n      <td>Genbank</td>\n      <td>MH605332</td>\n      <td>HDR protein ACA98524.1</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Astec Cyclobond I2000 chiral HPLC column</td>\n      <td>Sigma Aldrich</td>\n      <td>20024AST</td>\n      <td>HPLC column used for IPP/DMAPP separation</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Isoprene</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. # I19551</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Isopentenyl pyrophosphate</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. # I0503</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dimethylallyl pyrophosphate</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. # D4287</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(\u00b1)-Mevalonic acid 5-phosphate</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. # 79849</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Mevalonolactone</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. # M4667</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CLC Main Workbench</td>\n      <td>Qiagen</td>\n      <td>RRID:SCR_000354</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>iTOL</td>\n      <td>PMID: 27095192 (Letunic and Bork, 2016)</td>\n      <td>https://itol.embl.de/</td>\n      <td>Interactive Tree of Life</td>\n    </tr>\n  </tbody>\n</table>\n\n### Chemicals and reagents\n\nIsoprene (Cat. No I19551), IPP (Ca. No I0503), DMAPP (Ca. No D4287), Isopropyl \u03b2-D-thiogalactoside (IPTG, Cat. No I6758), (\u00b1)-Mevalonic acid 5-phosphate (MVA-P, Ca. No 79849) were purchased from Sigma Aldrich. Mevalonate (MVA) was prepared from (\u00b1)-mevalonolactone (Sigma Aldrich, Cat. No M4667) through base-catalyzed hydrolysis (Campos et al., 2001). Ammonium acetate was purchased from Sigma Aldrich (Ca. No 73594\u201325 G-F). Acetonitrile hypergrade for LC-MS LiChrosolv (Ca. No 1000292500) and Methanol hypergrade for LC-MS LiChrosolv (Ca. No 1060352500) was purchased from Merck Millipore. Milli-Q water was generated via a Merck Millipore Integral 3 water purification system.\n\n### Gene, plasmid and\u00a0E. coli\u00a0strain construction\n\nE. coli Top10 (Cat. No C404050, Thermo Fischer Scientific) was used for cloning. For all other experiments, E. coli W (ATCC 9637) with a knock-out in the csc operon (E. coli W\u2206cscR Arifin et al., 2011) was used. Plant HDR chloroplast targeting peptides were predicted using the ChloroP 1.1 server (http://www.cbs.dtu.dk/services/ChloroP/). Genes were truncated to remove chloroplast targeting peptides, codon-optimised for E. coli (http://idtdna.com/CodonOpt) and synthesised by Integrated DNA Technologies (Singapore). All plant genes were placed under control of the IPTG-inducible trc promoter in a pTrc99-derived (Amann et al., 1988) vector, generating the pT-HDR series of plasmids. The DXS gene from Populus trichocarpa (Genbank Accession No. XP_006378082.1) was integrated into the genome using the pLacZ-KIKO(cm) vector (Sabri et al., 2013). The chloramphenicol resistance gene was removed from the genome using pCP20 (Datsenko and Wanner, 2000). The resulting strain (E. coli W\u2206cscR, lacZ::PtDXS) was transformed with each of the pT-HDR plasmids and pAC-LYC04 (Cunningham et al., 1994) for IPP and DMAPP measurements. For isoprene production experiments, an engineered ISPS gene from Populus alba (Genbank Accession No. EF638224) was integrated into the genome of E. coli W\u2206cscR, lacZ::PtDXS using pArsBKIKO(cm). Apart from removal of the chloroplast-targeting sequence, this gene was also engineered to contain three mutations to enhance specific activity: ISPS(del2-52,A3T,L70R,S288C) (Beck et al., 2011).\n\n### Bacterial growth media\n\nLB medium contained 10 g/L tryptone, 5 g/L yeast extract and 10 g/L NaCl. TB medium contained 12 g/L tryptone, 24 g/L yeast extract, 0.4% (v/v) glycerol, 2 mM MgSO4, 1 mM thiamine, 17 mM KH2PO4, 7.2 mM K2HPO4. Where indicated, media were supplemented with 1 mM mevalonate and 1 mM L-arabinose for induction of the MVA pathway operon, or with 0.2% (w/v) glucose or 0.1 mM IPTG for repression or induction of the trc promoter. All cultures were grown at 37\u00b0C with 250 rpm shaking unless stated otherwise.\n\n### Complementation of the ispH/HDR knockout mutant in E. coli\n\nA partial MVA pathway under control of the arabinose-inducible PBAD promoter (Campos et al., 2001) was cloned into a pLacZ-KIKO(cm) vector and integrated into the E. coli W\u0394cscR genome. This strain (W\u0394cscR, lacZ::MVA) was used to knock out ispH using recombineering (Datsenko and Wanner, 2000), making growth dependent on supplementation with mevalonate and arabinose. Each pT-HDR plasmid was transformed into this strain and tested for its ability to grow in the absence of mevalonate and arabinose.\n\n### Growth rate measurements\n\nCells were grown in LB medium; glucose, mevalonate or IPTG were added where indicated. Precultures were grown at 37\u00b0C with 250 rpm shaking in 96-well plates (Corning, Cat No. CLS3799) until stationary phase. Cultures were diluted to a starting optical density (OD600) of 0.05 and the growth was monitored in a microplate reader (BioTek ELx808) at 37\u00b0C with 700 rpm double-orbital shaking, measuring OD600 every 10 min. All bacterial cultures for quantification of specific growth rates, metabolites and isoprene were grown at least in biological triplicates (from 3 single colonies of the same strain), and means +/-\u00a0standard deviations are shown.\n\n### Fermentations for metabolite measurements\n\nStrains harbouring the different pT-HDR plasmids and pAC-LYC04 were grown for determination of IPP and DMAPP concentrations. Chloramphenicol (30 mg L\u22121) and ampicillin (250 mg L\u22121) were added to the media for plasmid maintenance. Precultures were grown in LB medium as described above. A culture volume of 10 ml of TB medium was inoculated with an overnight preculture in 100 ml baffled flasks to a starting OD600 of 0.05. Protein expression was induced with 0.1 mM IPTG at an OD600 of 0.5. When an OD600 of 5 was reached (exponential growth phase in TB medium), cultures were harvested for metabolite quantification.\n\n### Quantification of IPP and DMAPP\n\nIntracellular metabolites were quenched and extracted using a method adapted from Bongers et al. (2015). To harvest, the equivalent of 1 ml of culture of an optical density of OD600\u00a0=\u00a05 was centrifuged at 4\u00b0C for 20 s at 13,000 x g, the supernatant was discarded and the pellet snap-frozen in liquid nitrogen. The pellet was resuspended in 95 \u00b5l of 90% acetonitrile (v/v) in water and metabolites were extracted by vortexing for 10 min at room temperature. Cell debris was removed by centrifugation at 4\u00b0C for 15 min at 13,000 x g. Extracts were transferred into HPLC vials, 5 \u00b5l internal standard (MVA-P) was added at a final concentration of 16 \u00b5M for analysis using liquid chromatography tandem mass spectrometry (LC-MS/MS).\n\nLC-MS/MS data were acquired on an Advance UHPLC system (Bruker Daltonics, Fremont, CA, USA) equipped with a binary pump, degasser and PAL HTC-xt autosampler (CTC Analytics AG, Switzerland) coupled to an EVOQ Elite triple quadrupole mass spectrometer (Bruker Daltonics, Fremont, CA, USA). Separation of the structural isomers IPP and DMAPP was achieved by adapting a method from K\u00f6hling et al.\u00a0(2014), by injecting 5 \u03bcl onto an Astec Cyclobond I2000 chiral HPLC column (250 mm\u00a0\u00d74.6 mm; 5 \u03bcm particle size) (Sigma Aldrich) with an injection loop size of 2 \u00b5L. The column oven temperature was controlled and maintained at 35\u00b0C throughout the acquisition and the mobile phases were as follows: 50 mM aqueous ammonium acetate (eluent A) and 90:10 (% v/v) acetonitrile:purified water (eluent B). The mobile phase flow rate was maintained at 600 \u03bcL/min and was introduced directly into the mass spectrometer with no split. The mobile phase gradient profile was as follows: Starting condition 100% eluent B, 0.0\u20131.0 min: 100% B to 25% B, 1.0\u201322.0 min: 25% B, 22.0\u201322.5 min: 25% B to 0% B, 22.5\u201323.0 min: 0% B, 23.0\u201324.0 min: 0% B to 100% B, 24.0\u201330.0 min: 100% B. The mass spectrometer was controlled by MS Workstation 8.2.1 software (Bruker Daltonics) using electrospray ionization operated in negative ion mode. The following parameters were used to acquire Multiple Reaction Monitoring (MRM) data: spray voltage: 3.0 kV, cone temperature: 350\u00b0C, cone gas flow 20, probe gas flow: 50, nebulizer gas flow: 50, heated probe temperature: 350\u00b0C, exhaust gas: on, CID: 1.5 mTorr. The MRM scan time was set to 1000 ms for DMAPP and IPP, and 200 ms for MVA-P with standard resolution for all transitions. The collision energy (CE) was optimised for each transition. The quantifier was m/z 245.0 \u2192 79 (CE: 16 eV) and qualifier m/z 245.0\u2192 159 (CE: 16 eV) for both DMAPP and IPP. For the internal standard MVA-P the quantifier was m/z 227.0 \u2192 79 (CE: 24 eV) and qualifier m/z 227.0\u2192 97 (CE: 13 eV). Initial retention times (RT) were 14.1 min (MVA-P) 19.2 min (DMAPP) and 23.6 min (IPP) but shifted to less retention as the column presumably deteriorated during the runs. For quality control (QC) and to ensure correct peak integration a 1 \u03bcM standard DMAPP/IPP mix was injected every 12th sample. The RTs decreased in a linear fashion from the first 1 \u03bcM QC standard to the last QC standard (n\u00a0=\u00a052) with 0.024 min, 0.044 min, and 0.061 min per injection for MVA-P, DMAPP, and IPP respectively (R2\u00a0=\u00a00.990, R2\u00a0=\u00a00.991, R2\u00a0=\u00a00.989). Analytes were integrated manually.\n\nTo obtain quantitative data, a matrix-matched internal standard calibration was used. Analyte stock solutions were prepared in 90% (v/v) acetonitrile and were diluted with blank matrix extract, extracted with 90:10 (% v/v) acetonitrile:Milli-Q water). The internal standard was added to the final HPLC vial at a concentration of 16 \u03bcM. The calibration curve ranged from 0.25 \u03bcM to 10 \u03bcM with R2 values of 0.968 and 0.981 for DMAPP and IPP, respectively. For both calibration curves a 1/x2 weighting factor was applied. Sample concentrations lower than the lowest standard were obtained through extrapolation of the calibration curve. The limit of quantification (LOQ) was approximated, using the lowest standard as reference (0.25 \u03bcM, n\u00a0=\u00a04), as 10x the signal-to-noise ratio. The LOQ estimate was 0.033 and 0.045 \u03bcM for DMAPP and IPP respectively. The 1 \u03bcM QC standard (n\u00a0=\u00a08) recovery was 85.6 (RSD 18.7%) and 93.2 (RSD 15.9%) for DMAPP and IPP respectively. Additionally, five standards with different DMAPP/IPP ratios were injected to verify the ratio accuracy. DMAPP:IPP ratios fortified were 10, 2, 1, 0.5, and 0.1, while ratios found were 11.1, 1.8, 0.96, 0.56, and 0.10 (bias ranging from \u22129.9 to 12.5% with a mean bias of 1.9%).\n\n### Protein quantification\n\nCells were harvested for proteomics analyses at the same time point as metabolomics samples. Cell pellets corresponding to 1 ml of cultures of an optical density of OD600\u00a0=\u00a05 were processed according to Rennig et al. (2019), both regarding preparation of samples, the applied gradient on the CapLC system and the settings for Orbitrap HF_X mass spectrometer. Here, a total of 1 \u00b5g of peptides/sample was injected into the mass spectrometer. After acquisition the raw files were analysed using Proteome Discoverer 2.3 (P.D. 2.3) in order to identify and quantify detected proteins. The following software settings were used: Fixed modification: Carbamidomethyl (C) and Variable modifications: oxidation of methionine residues. First search mass tolerance 10 ppm and a MS/MS tolerance of 0.02 Da., trypsin as proteolytic enzyme and allowing two missed cleavages. FDR was set at 0.1%. For match between runs the \u0394RT was set to 0.2 min and the minimum peptide length was set to 7. As database for the searches the E. coli W proteome (UP000008525) was used combined with a contaminant database (cRAP) and the sequences of heterologous HDRs (see Table 1) and lycopene production proteins Idi (Genbank ID AAC32208.1), CrtE (WP026199135.1), CrtI (AAA64981.1), and CrtB (WP020503292.1). Normalization of the data across samples was done with P.D. 2.3. using total peptide amount, meaning all identified peptides in the individual samples are used for normalization, while using one file as master file to which all other counts are normalized. For quantification only unique peptides were used, and for all HDR proteins, hits were manually inspected to ensure correct identification and quantification. HDR overexpression strains were compared by analysing normalized peptide counts using one-way analysis of variance (ANOVA) or Welch\u2019s ANOVA test in case of unequal variances, respectively. Where reported, p-values were adjusted for multiple comparison testing using Dunnett\u2019s method, n\u00a0\u2265\u00a03 biological replicates.\n\n### Isoprene production\n\nThe different pT-HDR plasmids were transformed into E. coli W\u2206cscR, lacZ::Pt-DXS, arsB::PaISPS(del2-52,A3T,L70R,S288C). All growth media contained 250 mg L\u22121 ampicillin for plasmid maintenance. Strains were grown in LB medium until stationary phase, then diluted in 0.5 ml TB medium containing 0.1 mM IPTG to a starting OD600 of 0.1, and grown at 30\u00b0C, with 250 rpm shaking. Cultures were grown in 20 ml sealed gas chromatography vials and isoprene was quantified after 48 hr as described previously (Vickers et al., 2015).\n\n### Sequence alignments and generation of phylogenetic trees\n\nHDR protein sequences were downloaded from the results of a BLASTP search with A. thaliana HDR against land plants (taxid: 3193), manually removing identical duplicates and obvious pseudogenes (deletions or mutations in highly conserved regions). Sequences were truncated to remove N-terminal chloroplast targeting sequences and aligned using CLC Main Workbench (Qiagen). HDR phylogenetic tree (unrooted) was generated using maximum likelihood phylogeny, neighbour-joining method, WAG protein substitution model, and bootstrap analysis with 100 replicates, also in CLC Main Workbench. Phylogenetic trees were visualised using Interactive Tree of Life (iTOL) v3 (Letunic and Bork, 2016).\n",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "62c51adf-f6f1-44ee-896b-5cf2c4ac78df",
+      "submission_id": "ce4c7091-061c-4a4b-8cb3-dea3cbf40ada",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joerg Bohlmann, University of British Columbia Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48685.sa1](https://doi.org/10.7554/eLife.48685.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Adaptation of hydroxymethylbutenyl diphosphate reductase enables volatile isoprenoid production\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nBased on the reviews below, we regret to inform you that your work will not be considered further for publication in eLife. While both reviewers found the work very interesting, they also expressed some major concerns. Reviewer 1 highlights a number of factors that would need to be better controlled to support the authors conclusions. To overcome these concerns additional experiments would be required.\n\nReviewer #1:\n\nThe architecture of the isoprenoid pathway requires fusion of two different C5 intermediates, DMADP and IDP, to produce all but the simplest products. Since the formation of the growing prenyl diphosphate chains is initiated with the allylic substrate DMADP and followed by multiple additions of the homo-allylic IDP, different ratios of DMADP:IDP are needed for different length isoprenoid products. Thus the ratio of DMADP:IDP available could control the rate of formation of different isoprenoid classes.\n\nThe authors of this contribution have discovered that for C5 intermediates derived from the MEP pathway, the ratio of DMADP:IDP is not fixed at 1:5 by the last enzyme of the pathway (hydroxymethylbutenyl diphosphate reductase- HDR) as once believed. Different HDR enzymes in different species seem to make a range of ratios, which might be important in controlling the formation of various isoprenoids, especially the gaseous isoprene, which is a product of DMADP solely. The finding of two apparent HDR paralogs in some gymnosperms is also fascinating as it suggests that plants might regulate DMADP:IDP ratios in different ways in distinct cell types depending on the varying spectrum of isoprenoids needed. This is an exciting story, but I have two concerns with the results reported.\n\n1) The major concern is that the authors have not really measured the direct product ratio of the enzyme in a standard way by characterizing the isolated enzyme in vitro. Instead they have measured the concentrations of DMADP and IDP in living E. coli cells in which the enzymes have been over-expressed. This is partly understandable as HDR, like other Fe-S cluster proteins, is oxygen-sensitive and considered hard to assay in vitro. However, many other processes affect the in vivo concentrations of DMADP and IDP in living cells, and so the authors might do a better job of controlling these factors to make a stronger case that the differences they see in the HDRs of various species are real.\n\nThe authors have over-expressed these HDRs in cells with over-expressed DXS (\"to achieve intracellular IDP and DMADP concentrations above the quantification limits\", DXS is supposed to be the rate-controlling step of the pathway), and with a new IDI enzyme and an additional biosynthetic pathway for the carotenoid lycopene (apparently to provide a sink for all of the excess IDP and DMADP, which are toxic). The result seems a very artificial, high flux environment for any isoprenoid synthesizing process, and it is hard to know if the ratios measured really reflect the intrinsic properties of the HDR, particularly since the expressed HDR is always mixed with the E. coli HDR.\n\nEach HDR was expressed in the same cassette with the same promoter, but the ratios could vary depending on the level of expression of the E. coli enzyme vs. the heterologous HDR. Can the authors verify (by proteomics) that the protein levels of the tested HDRs in each experiment were the same? This might help show that the in vivo pools reflect real differences among the enzymes. One might expect that the host E. coli HDR responds in a varying way to the expression of heterologous enzymes, and so its level should be measured also. Hopefully, its contribution is also constant.\n\nAnother approach might be to down-regulate the E. coli HDR when the foreign HDR to be tested is over-expressed. This might avoid the toxic effects, and allow the foreign HDR to be tested with less competition.\n\nThe authors might additionally determine not only the ratio of DMADP to IDP, but also the absolute amounts of the two compounds to see if they are in the range expected in a cell, considering all of the genetic manipulations being carried out.\n\nI realise that all of these suggestions require additional work. Perhaps there is another way to validate such in vivo measurements as representing the real characteristics of the enzyme when tested in vitro. Maybe an attempt could be made to try expression, purification and in vitro assay of say two of the HDRs from opposite ends of the DMADP:IDP scale.\n\n2) One of the authors' most impressive achievements was to develop an HPLC separation scheme for IDP and DMADP. But as this procedure has never been formally published in the refereed literature, the authors should provide chromatograms with accompanying mass spectra to verify their separation. Also, the previously published retention times vary greatly from those reported here (subsection \u201cQuantification of IPP and DMAPP\u201d), which seems to deserve some comment.\n\nReviewer #2:\n\nThis manuscript describes mechanistically interesting novel data on the important role of hydroxymethylbutenyl diphosphate reductase (HDR/IspH) regulating the ratio of DMAPP and IPP as prerequisite for enhanced metabolic flux to isoprene (and monoterpenes) or long-chain terpenoids such as lycopene.\n\nThe authors have chosen an elegant molecular biological approach for their investigations: In addition to HDR genes from E. coli and Synechococcus, they investigated 8 HDR genes from plant species of originating from different taxa of the plant. In a first step, functional HDR genes were identified by complementing lethal knockout mutants of HDR/IspH in E. coli. It was found that the overexpression of some HDR genes led to growth inhibition in E. coli, which was attributed to the toxicity of accumulating prenyl phosphates.\n\nFor the main investigations, the E. coli metabolism was modified in which an overexpressed DXR gene led to an increased metabolic flow of the MEP pathway; a lycopene synthase or an isoprene synthase were incorporated to produce a metabolic sink to higher terpenoids (C40) and volatile (C5) hemiterpenes. In addition, a heterologous IPP isomerase (IDI) was incorporated to ensure sufficient IPP for the biosynthesis of longer chain terpenoids.\n\nDMAPP and IPP were measured with directed LC-MS/MS which is state-of-the-art.\n\nIt is impressive to see how different the DMAPP/IPP ratios are adjusted by the different HDR enzymes. Enzymes from plants with naturally high isoprene emission have very high DMAPP/IPP ratios. Enzymes from organisms without isoprene emission show very low ratios, similar to HDR enzymes from gymnosperms.\n\nVery interesting is the result shown in Figure S4 that the DMAPP/IPP ratios in vivo depend on the end product of the metabolism: higher at isoprene emission, lower at lycopene accumulation. I would suggest to show this result in the main text. I would also like to see a more detailed discussion of this observation. A point that is also a bit neglected in the discussion is the role of IDI in the fine tuning of DMAPP/IPP ratios. As rightly noted, the DMAPP/IPP ratio measured in vivo does not correspond to the (not measured) in vitro ratio, but is changed by the activity of the IDI. For isoprene emitting oaks it was shown that the activity of the IDI correlates positively with ISPS and isoprene emission (Br\u00fcggemann and Schnitzler, 2002), which indicates a rate-limiting role of the IPI as mentioned.\n\nTo understand the fine tuning of the DMAPP/IPP ratio between HDR/IspH, IDI and the sinks towards the different soluble and volatile end products additional information on IDI is necessary: i.e. what is the in vitro (in vivo) ratio of the IDI used in the present experiments? I'm wondering why no experiments without overexpressed (and knocked out) IDI have been performed. How does the absence of this enzyme (absence of overexpression) influence the in vivo ratios of DMAPP/IPP in the different systems (lycopene vs isoprene)? I hope the authors can provide this information from experiments not yet shown.\n\nOverall a very interesting novel work demonstrating the potential role of HDR/IspH to control the ratio of C5 terpenoid intermediates central for the channeling of metabolites to the higher terpenoids/isoprenoids and or volatile compounds, such as isoprene and monoterpenes. Beside understanding the metabolic regulation within the MEP pathway in natural systems knowledge on the ratio of the enzyme products of HDR/IspH also will provide the avenue for much more efficient biotechnological system for all type of terpenoids.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your revised article \"Adaptation of hydroxymethylbutenyl diphosphate reductase enables volatile isoprenoid production\" for consideration by eLife.\n\nYour article has been reviewed by one of the two reviewers who have seen the original submission. The second reviewer was unfortunately no longer available to assess the revised paper. The evaluation has been overseen by a Reviewing Editor, Joerg Bohlmann, and Ian Baldwin as the Senior Editor. The reviewer has opted to remain anonymous.\n\nWe find that paper has been substantially improved, but there are a few remaining concerns in the external reviewer's report.\n\nReviewer #1:\n\nThe authors have made extensive revisions and significantly improved their manuscript. In particular, the new proteomics measurements help to assure that the activity of the over-expressed HDR proteins is not affected by the native E. coli protein or the expression of the genes on the lycopene plasmid. Obtaining in vitro assay data on these proteins would clearly be the \"gold standard\" for comparison among them, but I can accept that this is just not yet technically attainable, and they have done what they can to increase the accuracy of their in vivo measurements. I also appreciated the chromatograms to verify the DMADP-IDP separation.\n\nTwo minor concerns that could be addressed:\n\n1) Compared to the first submission, the DMADP:IDP ratio for Prunus persica has now decreased by 10 fold, while the ratios for other species have declined by more than 50%. Since these are the core data of the paper, such big changes do not inspire confidence in the analytical methods. Is there a reason for such variance from the previous version, such as a change in the analysis protocol or a change in calibrating factors?\n\n2) In subsection \u201cIsoprene production\u201d it states that \"isoprene was quantified as described previously\", but the reference given is incorrect. Please correct this.\n",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7867d4d7-f9c0-4fbb-ab8f-4d9c1c60dce0",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C1",
+      "claim": "Volatile isoprenoids produced by plants are emitted in vast quantities into the atmosphere, with substantial effects on global carbon cycling.",
+      "claim_type": "EXPLICIT",
+      "source": "Volatile isoprenoids produced by plants are emitted in vast quantities into the atmosphere, with substantial effects on global carbon cycling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about volatile isoprenoid emissions and their effects, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "330ab7c6-db58-40e7-9d6c-38b56e1e2438",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C2",
+      "claim": "The molecular mechanisms regulating the balance between volatile and non-volatile isoprenoid production remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the molecular mechanisms regulating the balance between volatile and non-volatile isoprenoid production remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap in the field, representing the state of understanding prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "d1ad066c-4858-4279-84d7-34250167626a",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C3",
+      "claim": "Isoprenoids are synthesised via sequential condensation of isopentenyl pyrophosphate (IPP) to dimethylallyl pyrophosphate (DMAPP), with volatile isoprenoids containing fewer isopentenyl subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Isoprenoids are synthesised via sequential condensation of isopentenyl pyrophosphate (IPP) to dimethylallyl pyrophosphate (DMAPP), with volatile isoprenoids containing fewer isopentenyl subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established biochemical pathway for isoprenoid synthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "8cd3100e-6764-4cc0-a072-10f852b089c7",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C4",
+      "claim": "The plastidic DMAPP:IPP ratio is generally believed to be similar across different species.",
+      "claim_type": "EXPLICIT",
+      "source": "but the plastidic DMAPP:IPP ratio is generally believed to be similar across different species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing assumption in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "8d33f7b5-5f78-4848-a759-0cc461db30e3",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C5",
+      "claim": "The ratio of DMAPP:IPP produced by hydroxymethylbutenyl diphosphate reductase (HDR/IspH) is not fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that the ratio of DMAPP:IPP produced by hydroxymethylbutenyl diphosphate reductase (HDR/IspH), the final step of the plastidic isoprenoid production pathway, is not fixed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental measurements shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "ba5718e1-5911-4900-b0a8-927866e9283e",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C6",
+      "claim": "The DMAPP:IPP ratio varies greatly across HDRs from phylogenetically distinct plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, this ratio varies greatly across HDRs from phylogenetically distinct plants, correlating with isoprenoid production patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing different DMAPP:IPP ratios for different plant HDRs (Figure 2a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "08a86e31-3443-4bed-9952-08de9ca86d74",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C7",
+      "claim": "The DMAPP:IPP ratio produced by HDR correlates with isoprenoid production patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, this ratio varies greatly across HDRs from phylogenetically distinct plants, correlating with isoprenoid production patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This correlation is demonstrated by comparing DMAPP:IPP ratios (Figure 2a) with isoprene production (Figure 2b) and known emission profiles (Table 1).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "0dad7a8d-5ad3-405f-9cda-17eb119969fd",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C8",
+      "claim": "Adaptation of HDR plays a previously unrecognised role in determining in vivo carbon availability for isoprenoid emissions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that adaptation of HDR plays a previously unrecognised role in determining in vivo carbon availability for isoprenoid emissions, directly shaping global biosphere-atmosphere interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings showing variable HDR product ratios and their correlation with volatile isoprenoid production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "8a7dca23-81e6-4c29-9aa8-ca837e78ae23",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C9",
+      "claim": "Short-chain isoprenoids such as isoprene contribute more than 80% of BVOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-chain isoprenoids such as isoprene, a C5 hydrocarbon, contribute more than 80% of BVOCs, totalling about 650 million tonnes of carbon per year (Sindelarova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sindelarova et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "14893429-7ecf-41e2-b830-47ab0c3b258a",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C10",
+      "claim": "Volatile isoprenoids total about 650 million tonnes of carbon per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-chain isoprenoids such as isoprene, a C5 hydrocarbon, contribute more than 80% of BVOCs, totalling about 650 million tonnes of carbon per year (Sindelarova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantitative estimate is supported by citation to Sindelarova et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "2d4c5c0f-ccbb-4f3d-a896-62c4fe3873c5",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C11",
+      "claim": "The vast quantity and high reactivity of emitted volatile isoprenoids affect the oxidative capacity of the troposphere.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast quantity and high reactivity of emitted volatile isoprenoids affect the oxidative capacity of the troposphere (Thompson, 1992; Wennberg et al., 2018), impact the residence time of the greenhouse gas methane (Fehsenfeld et al., 1992), and contribute to air pollution through formation of secondary organic aerosols, surface-level ozone and carbon monoxide (Claeys et al., 2004; Poisson et al., 2000; Granier et al., 2000; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "9b2d9afa-a115-4caf-9ccc-1d3cd8d04619",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C12",
+      "claim": "Volatile isoprenoids impact the residence time of the greenhouse gas methane.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast quantity and high reactivity of emitted volatile isoprenoids affect the oxidative capacity of the troposphere (Thompson, 1992; Wennberg et al., 2018), impact the residence time of the greenhouse gas methane (Fehsenfeld et al., 1992), and contribute to air pollution through formation of secondary organic aerosols, surface-level ozone and carbon monoxide (Claeys et al., 2004; Poisson et al., 2000; Granier et al., 2000; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Fehsenfeld et al., 1992 and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "3ff2e836-ecbd-4b03-8e4f-951743a1f31b",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C13",
+      "claim": "Volatile isoprenoids contribute to air pollution through formation of secondary organic aerosols, surface-level ozone and carbon monoxide.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast quantity and high reactivity of emitted volatile isoprenoids affect the oxidative capacity of the troposphere (Thompson, 1992; Wennberg et al., 2018), impact the residence time of the greenhouse gas methane (Fehsenfeld et al., 1992), and contribute to air pollution through formation of secondary organic aerosols, surface-level ozone and carbon monoxide (Claeys et al., 2004; Poisson et al., 2000; Granier et al., 2000; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations (Claeys et al., 2004; Poisson et al., 2000; Granier et al., 2000) and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "c9635a7d-928d-481a-ba05-73793ef2c4f4",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C14",
+      "claim": "All isoprenoids are made from the C5 isomers isopentenyl pyrophosphate (IPP) and dimethylallyl pyrophosphate (DMAPP).",
+      "claim_type": "EXPLICIT",
+      "source": "All isoprenoids are made from the C5 isomers isopentenyl pyrophosphate (IPP) and dimethylallyl pyrophosphate (DMAPP) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established biochemical knowledge illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "fba18036-2d9e-4297-ab16-85270a656ce1",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C15",
+      "claim": "Two non-homologous metabolic pathways produce DMAPP and IPP in plants: the cytosolic mevalonic acid (MVA) and the plastidic methylerythritol phosphate (MEP) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Two non-homologous metabolic pathways produce DMAPP and IPP in plants: the cytosolic mevalonic acid (MVA) and the plastidic methylerythritol phosphate (MEP) pathways, the latter contributing almost all volatile isoprenoids (Pulido et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about plant isoprenoid biosynthesis, supported by citation to Pulido et al., 2012.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "a28a86cf-7dbe-4648-869b-e0df3005da65",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C16",
+      "claim": "The MEP pathway contributes almost all volatile isoprenoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Two non-homologous metabolic pathways produce DMAPP and IPP in plants: the cytosolic mevalonic acid (MVA) and the plastidic methylerythritol phosphate (MEP) pathways, the latter contributing almost all volatile isoprenoids (Pulido et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pulido et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "9c4482ce-0465-421d-95bd-b45c380dd2aa",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C17",
+      "claim": "The final step of the MEP pathway is catalyzed by the enzyme hydroxymethylbutenyl diphosphate reductase (HDR/IspH), which produces both IPP and DMAPP.",
+      "claim_type": "EXPLICIT",
+      "source": "The final step of the MEP pathway is catalyzed by the enzyme hydroxymethylbutenyl diphosphate reductase (HDR/IspH), which produces both IPP and DMAPP (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established biochemical knowledge illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "20f39c43-fa24-4942-9902-d513bb82085c",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C18",
+      "claim": "Longer-chain isoprenoids (C15 and higher) serve many essential roles in plants, e.g. as membrane components and parts of the photosynthetic apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, longer-chain isoprenoids (C15 and higher) serve many essential roles, e.g. as membrane components and parts of the photosynthetic apparatus (Pulido et al., 2012; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citation to Pulido et al., 2012 and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "47176bf1-095a-492e-b258-ced086215da8",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C19",
+      "claim": "Short-chain isoprenoids (C5, C10, and some C15 compounds) are volatile under physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-chain isoprenoids (C5, C10, and some C15 compounds) are volatile under physiological conditions, and their functions are generally not essential for plant survival (Vickers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Vickers et al., 2009.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "83c055d4-290f-4060-a5ea-c423d052f135",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C20",
+      "claim": "The functions of short-chain isoprenoids are generally not essential for plant survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-chain isoprenoids (C5, C10, and some C15 compounds) are volatile under physiological conditions, and their functions are generally not essential for plant survival (Vickers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vickers et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "7bacf0f2-7901-4452-bc70-7ce009307463",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C21",
+      "claim": "It is currently unknown how plants control carbon allocation between short-chain and long-chain isoprenoids in the chloroplast.",
+      "claim_type": "EXPLICIT",
+      "source": "It is currently unknown how plants control carbon allocation between short-chain and long-chain isoprenoids in the chloroplast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a knowledge gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "9ed2aa6b-570b-48bd-9f97-04462fbd8df3",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C22",
+      "claim": "The demand for essential isoprenoids is assumed to be relatively similar across plants.",
+      "claim_type": "EXPLICIT",
+      "source": "While the demand for essential isoprenoids (for example, photosynthetic pigments) is assumed to be relatively similar across plants (Monson et al., 2013), different species produce markedly different amounts of non-essential, short-chain volatile isoprenoids (Wiedinmyer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This assumption is supported by citation to Monson et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "d1e1b80e-044e-46bd-9797-413636acec2e",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C23",
+      "claim": "Different species produce markedly different amounts of non-essential, short-chain volatile isoprenoids.",
+      "claim_type": "EXPLICIT",
+      "source": "While the demand for essential isoprenoids (for example, photosynthetic pigments) is assumed to be relatively similar across plants (Monson et al., 2013), different species produce markedly different amounts of non-essential, short-chain volatile isoprenoids (Wiedinmyer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wiedinmyer et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "11364053-02fa-49a0-b5da-860ec82bdea9",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C24",
+      "claim": "Some oak (Quercus) species produce vast amounts of isoprene, while closely related oaks produce little or none at all.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, some oak (Quercus) species produce vast amounts of isoprene, while closely related oaks produce little or none at all (Wiedinmyer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This example is supported by citation to Wiedinmyer et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "1af732fc-fad1-4399-93e9-d207ab09359b",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C25",
+      "claim": "Isoprene synthase (IspS) uses only DMAPP, but not IPP, as a substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Isoprene synthase (IspS) uses only DMAPP, but not IPP, as a substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about the substrate specificity of IspS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "0cd05e8f-4347-44ba-bef8-685eb8bf5c75",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C26",
+      "claim": "Up to 20% of recently fixed carbon can be emitted as isoprene in high-emitting plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Volatile isoprenoid emissions can represent a significant loss of carbon; for example, up to 20% of recently fixed carbon can be emitted as isoprene in high-emitting plants (Sharkey and Loreto, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantitative estimate is supported by citation to Sharkey and Loreto, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "c6d065a9-3733-4efd-9ea6-ca16be0cb4c4",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C27",
+      "claim": "Isoprene synthase (IspS) has a high Km for its substrate DMAPP (0.5\u20138 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "Isoprene synthase (IspS) has a high Km for its substrate DMAPP (0.5\u20138 mM; BRENDA, 2020); despite this, it successfully competes with prenyl phosphate synthases, which typically have KM(DMAPP) values 10- to 100-fold lower (BRENDA, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This kinetic parameter is supported by citation to BRENDA database, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "ce3254f2-ce5f-45e0-a5ce-0e52bf6b79ea",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C28",
+      "claim": "Prenyl phosphate synthases typically have KM(DMAPP) values 10- to 100-fold lower than isoprene synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "Isoprene synthase (IspS) has a high Km for its substrate DMAPP (0.5\u20138 mM; BRENDA, 2020); despite this, it successfully competes with prenyl phosphate synthases, which typically have KM(DMAPP) values 10- to 100-fold lower (BRENDA, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citation to BRENDA database, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "dd79680b-bff8-4b35-8bdb-6033093d7908",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C29",
+      "claim": "Isoprene synthase successfully competes with prenyl phosphate synthases despite having a much higher Km for DMAPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Isoprene synthase (IspS) has a high Km for its substrate DMAPP (0.5\u20138 mM; BRENDA, 2020); despite this, it successfully competes with prenyl phosphate synthases, which typically have KM(DMAPP) values 10- to 100-fold lower (BRENDA, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is inferred from the fact that isoprene is produced in significant quantities despite the kinetic disadvantage.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "1dd99032-4cb8-4b13-9df5-f0b64936347d",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C30",
+      "claim": "Previous studies in diverse organisms found that HDR produces DMAPP:IPP ratios between 1:4 and 1:6.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in diverse organisms (Escherichia coli, the bacterium Aquifex aeolicus, red pepper chromoplasts, and cultured tobacco cells) all found that HDR produces DMAPP:IPP ratios between 1:4 and 1:6 (Rohdich et al., 2003; Altincicek et al., 2002; Adam et al., 2002; Tritsch et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summary of previous findings is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "5e9d4481-91f1-4d63-962e-ea5e96f23d7c",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C31",
+      "claim": "It has been assumed that HDR has a fixed product ratio of about 1:5.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, it has been assumed that HDR has a fixed product ratio of about 1:5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the prevailing assumption based on previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "2562f561-e5a1-469c-a015-a587da8ac153",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C32",
+      "claim": "None of the species previously studied for HDR product ratios produce significant amounts of volatile isoprenoids.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of these species produce significant amounts of volatile isoprenoids (Wiedinmyer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citation to Wiedinmyer et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "7d09b5f1-46c4-420c-8bd5-a2f6073274c7",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C33",
+      "claim": "Isopentenyl diphosphate isomerase (IDI) interconverts DMAPP and IPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Isopentenyl diphosphate isomerase (IDI) interconverts DMAPP and IPP, but the reaction is slow (Jonnalagadda et al., 2012) and IDI is rate-limiting for isoprenoid production generally, including isoprene (Vickers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about IDI function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "02df9a49-aba8-4dd0-aeff-3fde8aa3a214",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C34",
+      "claim": "The IDI reaction is slow.",
+      "claim_type": "EXPLICIT",
+      "source": "Isopentenyl diphosphate isomerase (IDI) interconverts DMAPP and IPP, but the reaction is slow (Jonnalagadda et al., 2012) and IDI is rate-limiting for isoprenoid production generally, including isoprene (Vickers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jonnalagadda et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "75b18ab1-a338-4616-9466-76144d4f118d",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C35",
+      "claim": "IDI is rate-limiting for isoprenoid production generally, including isoprene.",
+      "claim_type": "EXPLICIT",
+      "source": "Isopentenyl diphosphate isomerase (IDI) interconverts DMAPP and IPP, but the reaction is slow (Jonnalagadda et al., 2012) and IDI is rate-limiting for isoprenoid production generally, including isoprene (Vickers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vickers et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "f6e10be0-5ecb-486c-904e-56ff1d1e1c75",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C36",
+      "claim": "At least one functional HDR gene was found from each species tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We found at least one functional gene from each species (Figure 2\u2014figure supplement 1a); however, severe dose-dependent growth defects were observed when overexpressing certain HDR genes, possibly due to toxicity of prenyl phosphates (George et al., 2018; Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by complementation assay data shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "b5fb143d-6d87-4d5c-8965-35f35e454a38",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C37",
+      "claim": "Severe dose-dependent growth defects were observed when overexpressing certain HDR genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found at least one functional gene from each species (Figure 2\u2014figure supplement 1a); however, severe dose-dependent growth defects were observed when overexpressing certain HDR genes, possibly due to toxicity of prenyl phosphates (George et al., 2018; Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by data shown in Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "a34c5637-8189-4bac-8177-69a64c507ecd",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C38",
+      "claim": "The growth defects from HDR overexpression are possibly due to toxicity of prenyl phosphates.",
+      "claim_type": "EXPLICIT",
+      "source": "We found at least one functional gene from each species (Figure 2\u2014figure supplement 1a); however, severe dose-dependent growth defects were observed when overexpressing certain HDR genes, possibly due to toxicity of prenyl phosphates (George et al., 2018; Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explanation is speculative but supported by citation to George et al., 2018.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "c489cd9f-6423-40ac-9b25-13151d4f5207",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C39",
+      "claim": "A spectrum of DMAPP:IPP ratios was observed, ranging from almost exclusive IPP production (Picea sitchensis HDR1) to almost exclusive DMAPP production (Populus trichocarpa and Ricinus communis).",
+      "claim_type": "EXPLICIT",
+      "source": "A spectrum of DMAPP:IPP ratios was observed, ranging from almost exclusive IPP production (Picea sitchensis HDR1) to almost exclusive DMAPP production (Populus trichocarpa and Ricinus communis, Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "e9ae0f42-e416-4944-9dd7-7f23bdf23edc",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C40",
+      "claim": "A control without HDR overexpression showed a DMAPP:IPP ratio of ~1.5 to 1 in the experimental setup.",
+      "claim_type": "EXPLICIT",
+      "source": "A control without HDR overexpression (labelled (-) in Figure 2a) showed a DMAPP:IPP ratio of ~1.5 to 1 in our experimental setup, serving as a reference point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "74e0e361-e530-40d5-8a50-7ec09bdbc57a",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C41",
+      "claim": "Overexpressing the E. coli HDR shifted the ratio slightly towards IPP, in agreement with previous reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing the E. coli HDR shifted the ratio slightly towards IPP, in agreement with previous reports (Rohdich et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by experimental data and citation to Rohdich et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "3a0e398a-781d-448d-8955-17cc6f55cb8f",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C42",
+      "claim": "HDR enzymes from species known to emit volatile isoprenoids produced considerably more DMAPP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, HDR enzymes from species known to emit volatile isoprenoids produced considerably more DMAPP - a noteworthy exception being P. sitchensis HDR1 (PsHDR1, Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "08781297-f821-4789-831a-738d00a178f2",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C43",
+      "claim": "P. sitchensis HDR1 is a noteworthy exception to the pattern of high DMAPP production in volatile isoprenoid-emitting species.",
+      "claim_type": "EXPLICIT",
+      "source": "However, HDR enzymes from species known to emit volatile isoprenoids produced considerably more DMAPP - a noteworthy exception being P. sitchensis HDR1 (PsHDR1, Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "0813b5a4-b21b-4841-893d-47c3bc42e3d8",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C44",
+      "claim": "Product ratios vary up to 40-fold between HDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "These values do not represent direct product ratios of the examined HDRs due to the presence of the heterologously expressed lycopene pathway and idi. However, they show that product ratios vary up to 40-fold between HDRs, and that the assumed fixed 1:5 DMAPP to IPP ratio is in fact an exception, rather than the rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantitative comparison is based on experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "a6dfd759-7391-47d3-9242-c8d47ec4f3fd",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C45",
+      "claim": "The assumed fixed 1:5 DMAPP to IPP ratio is in fact an exception, rather than the rule.",
+      "claim_type": "EXPLICIT",
+      "source": "These values do not represent direct product ratios of the examined HDRs due to the presence of the heterologously expressed lycopene pathway and idi. However, they show that product ratios vary up to 40-fold between HDRs, and that the assumed fixed 1:5 DMAPP to IPP ratio is in fact an exception, rather than the rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental data showing variable HDR product ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "2381a203-efc5-40ba-ab1c-19ca981f6929",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C46",
+      "claim": "No difference in protein levels was found in any of the HDR overexpression strains compared to the no HDR overexpression control for native E. coli HDR, IDI, or the plasmid-encoded lycopene production pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no difference in protein levels in any of the HDR overexpression strains compared to the no HDR overexpression control (one-way ANOVA, p>0.05), except for the anticipated increase in E. coli HDR in the respective overexpression strain (Welch's ANOVA, Dunnett's post hoc test p<0.005; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteomics data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "7095d7a7-c13f-4ef8-9033-2731f098fe58",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C47",
+      "claim": "All tested HDRs were strongly overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we confirmed that all tested HDRs were strongly overexpressed (Figure 2\u2014figure supplement 2c), and that there was no correlation between HDR abundance and the DMAPP:IPP ratio (rho = \u22120.488, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteomics data shown in Figure 2\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "9c1102ef-81e2-40bd-bf3a-92c320c577a9",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C48",
+      "claim": "There was no correlation between HDR abundance and the DMAPP:IPP ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we confirmed that all tested HDRs were strongly overexpressed (Figure 2\u2014figure supplement 2c), and that there was no correlation between HDR abundance and the DMAPP:IPP ratio (rho = \u22120.488, data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statistical analysis (rho = \u22120.488) indicates no significant correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "c5c03389-719e-4c7e-860e-b00f0e050ac4",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C49",
+      "claim": "Different HDR enzymes produce vastly different DMAPP:IPP ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that different HDR enzymes produce vastly different DMAPP:IPP ratios, with some plant HDRs producing a ratio significantly shifted towards more DMAPP than previously recognized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental data from Figure 2a and proteomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "5332e502-01c3-4772-807f-953e39091609",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C50",
+      "claim": "Some plant HDRs produce a ratio significantly shifted towards more DMAPP than previously recognized.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that different HDR enzymes produce vastly different DMAPP:IPP ratios, with some plant HDRs producing a ratio significantly shifted towards more DMAPP than previously recognized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing high DMAPP:IPP ratios for certain plant HDRs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "fe81f927-6569-4cbd-ad8b-bb9355aef8ec",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C51",
+      "claim": "A high DMAPP:IPP ratio was closely associated with isoprene production.",
+      "claim_type": "EXPLICIT",
+      "source": "A high DMAPP:IPP ratio was indeed closely associated with isoprene production (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is demonstrated by comparing Figure 2a and Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "c0db20e8-1a0c-4d82-ba23-2118ad4f1b91",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C52",
+      "claim": "The relative difference between HDRs remained similar when changing from lycopene to isoprene production as the downstream metabolic sink.",
+      "claim_type": "EXPLICIT",
+      "source": "While the absolute values shifted towards DMAPP (left y-axis; lycopene requires 6 IPP and 2 DMAPP) or IPP (right y-axis; isoprene is made only from DMAPP) depending on downstream requirements, the relative difference between HDRs remained similar, demonstrating that our experimental setup captures representative differences between the enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "a883512e-deff-4726-91be-d98a35d349f0",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C55",
+      "claim": "All HDRs from isoprenoid-emitting species enabled isoprene production.",
+      "claim_type": "EXPLICIT",
+      "source": "All HDRs from isoprenoid-emitting species enabled isoprene production, supporting our hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "03a22ed4-baaa-432f-b88f-2daf71a6520d",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C56",
+      "claim": "A high DMAPP:IPP ratio and high isoprene production was observed with HDRs from P. persica and R. communis, species that emit some monoterpenes but not isoprene.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a high DMAPP:IPP ratio and high isoprene production was also observed with HDRs from P. persica and R. communis, species that emit some monoterpenes but not isoprene (Wiedinmyer et al., 2020; Kadri et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by experimental data (Figure 2a, 2b) and citations about emission profiles.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "3c085309-bbe3-427b-ad2a-0126d84641d7",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C57",
+      "claim": "PpHDR and RcHDR have high (>87%) sequence identity with HDR proteins from high isoprene-emitting species P. trichocarpa and Hevea brasiliensis, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "PpHDR and RcHDR have high (>87%) sequence identity with HDR proteins from high isoprene-emitting species P. trichocarpa and Hevea brasiliensis, respectively (Figure 3), but R. communis and P. persica do not have an isoprene synthase (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This sequence similarity is shown in Figure 3 and the absence of isoprene synthase is documented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "0375ad2b-499f-4134-b268-78411525c6c1",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C58",
+      "claim": "R. communis and P. persica do not have an isoprene synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "PpHDR and RcHDR have high (>87%) sequence identity with HDR proteins from high isoprene-emitting species P. trichocarpa and Hevea brasiliensis, respectively (Figure 3), but R. communis and P. persica do not have an isoprene synthase (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is documented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "59bed0b5-d56e-4465-ad6c-9753373b2ab0",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C59",
+      "claim": "HDR from different plant species has adapted to produce differing ratios of DMAPP to IPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that HDR from different plant species has adapted to produce differing ratios of DMAPP to IPP, and that an increased DMAPP:IPP ratio is an important prerequisite for production of isoprene and perhaps other non-essential, short-chain isoprenoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental data showing variable HDR product ratios across species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "688c4919-26e6-49a3-ac8b-5434d64a8a1c",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C60",
+      "claim": "An increased DMAPP:IPP ratio is an important prerequisite for production of isoprene and perhaps other non-essential, short-chain isoprenoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that HDR from different plant species has adapted to produce differing ratios of DMAPP to IPP, and that an increased DMAPP:IPP ratio is an important prerequisite for production of isoprene and perhaps other non-essential, short-chain isoprenoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the correlation between high DMAPP:IPP ratios and isoprene production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "1292c2ce-01d1-4e9b-98af-dc5e6e402877",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C61",
+      "claim": "A high DMAPP:IPP ratio is a necessary, but not a sufficient requirement for volatile isoprenoid emission.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that a high DMAPP:IPP ratio is a necessary, but not a sufficient requirement for volatile isoprenoid emission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on observations that some species with high DMAPP-producing HDRs (like R. communis and P. persica) do not emit isoprene because they lack isoprene synthase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "f9d6e40f-f5c8-4a7c-b633-d45a3e1e320e",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C62",
+      "claim": "HDR is at a key junction in the evolution of isoprene emission.",
+      "claim_type": "EXPLICIT",
+      "source": "This places HDR at a key junction in the evolution of isoprene emission, a trait that appeared and disappeared several times across the plant kingdom (Dani et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings and supported by citation to Dani et al., 2014 about the evolutionary pattern of isoprene emission.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "8061f640-05fc-4fa4-90e9-2868b25de22a",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C63",
+      "claim": "Isoprene emission is a trait that appeared and disappeared several times across the plant kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "This places HDR at a key junction in the evolution of isoprene emission, a trait that appeared and disappeared several times across the plant kingdom (Dani et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dani et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "2018ee8f-80f1-46d2-8a3b-7cc1b0548ac8",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C64",
+      "claim": "Picea sitchensis (Sitka spruce) is a coniferous gymnosperm that emits both isoprene and monoterpenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Picea sitchensis (Sitka spruce) is a coniferous gymnosperm that emits both isoprene and monoterpenes (Hayward et al., 2004), but contrary to our expectation PsHDR1 produced the highest relative amount of IPP and showed very low isoprene production in E. coli (Figure 2a and b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hayward et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "4e28cf86-1e32-4f39-811b-3bc28c58d2ce",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C65",
+      "claim": "PsHDR1 produced the highest relative amount of IPP and showed very low isoprene production in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Picea sitchensis (Sitka spruce) is a coniferous gymnosperm that emits both isoprene and monoterpenes (Hayward et al., 2004), but contrary to our expectation PsHDR1 produced the highest relative amount of IPP and showed very low isoprene production in E. coli (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by experimental data shown in Figure 2a and 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "cc3c39c2-670d-4ac6-af50-35ad6fb4e1f0",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C66",
+      "claim": "The HDR from Ginkgo biloba (GbHDR1) was shown to produce an even lower DMAPP to IPP ratio in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the HDR from another gymnosperm, Ginkgo biloba (GbHDR1), was shown to produce an even lower DMAPP to IPP ratio in vitro (Shin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "970f3e2f-02fd-4480-95f9-3afedee32c04",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C67",
+      "claim": "Most sequenced gymnosperms have two or more HDR isoforms which fall into two distinct classes based on sequence similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most sequenced gymnosperms have two or more HDR isoforms which fall into two distinct classes based on sequence similarity (Kim et al., 2008; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Kim et al., 2008 and illustrated in Figure 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "5760a1b6-a42d-4d2d-8a59-99cdbd24d6d4",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C68",
+      "claim": "Gymnosperm Type II HDRs are particularly abundant at the site of monoterpene-rich resin formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, transcriptional studies (Celedon et al., 2017; Kim et al., 2009) suggest that gymnosperm Type II HDRs are particularly abundant at the site of monoterpene-rich resin formation and are generally expressed at higher levels than Type I HDRs (Celedon et al., 2017) (such as PsHDR1 and GbHDR1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to transcriptional studies (Celedon et al., 2017; Kim et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "1f69c7da-8816-4b48-ae0f-eb8ab5856efa",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C69",
+      "claim": "Gymnosperm Type II HDRs are generally expressed at higher levels than Type I HDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, transcriptional studies (Celedon et al., 2017; Kim et al., 2009) suggest that gymnosperm Type II HDRs are particularly abundant at the site of monoterpene-rich resin formation and are generally expressed at higher levels than Type I HDRs (Celedon et al., 2017) (such as PsHDR1 and GbHDR1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Celedon et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "cc5c1254-c9e6-41e9-8550-bae84bf84b32",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C70",
+      "claim": "PsHDR2 failed in the initial complementation assay, most likely due to toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "PsHDR2 failed in our initial complementation assay (data not shown), most likely due to toxicity as no metabolic sink was present for IPP/DMAPP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observation and subsequent experiments showing toxicity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "5800172a-8e45-47ea-a321-415cf0bb642b",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C71",
+      "claim": "Overexpression of PsHDR2 reduced E. coli growth rate by about 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, even in the presence of a sink, overexpression of PsHDR2 reduced E. coli growth rate by about 50% (Figure 2f), a level of toxicity exceeding that of other high DMAPP-producing HDRs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "fce716bf-e416-4d07-b823-08d60e59e7eb",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C72",
+      "claim": "PsHDR2 produced a > 10 fold excess of DMAPP over IPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PsHDR2 produced a > 10 fold excess of DMAPP over IPP, while PsHDR1 had a ratio shifted towards more IPP (DMAPP:IPP = 0.447 +/- 0.19; Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "1af62818-d9ed-4edc-923b-18d639009f57",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C73",
+      "claim": "PsHDR1 had a ratio shifted towards more IPP (DMAPP:IPP = 0.447 +/- 0.19).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PsHDR2 produced a > 10 fold excess of DMAPP over IPP, while PsHDR1 had a ratio shifted towards more IPP (DMAPP:IPP = 0.447 +/- 0.19; Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "fc62ba11-6faf-4f31-917a-f57fc645c0bc",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C74",
+      "claim": "PsHDR2 enabled higher isoprene production than PsHDR1.",
+      "claim_type": "EXPLICIT",
+      "source": "PsHDR2 also enabled higher isoprene production than PsHDR1 (Figure 2e), albeit at a lower yield than the other high DMAPP-producing enzymes, which is most likely an effect of the high toxicity in E. coli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "1f019fd6-ab4a-4e89-b508-06239784dd81",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C75",
+      "claim": "The complementary product ratios of PsHDR1 and PsHDR2 strongly suggest functional specialization of these genes, making them paralogues in P. sitchensis.",
+      "claim_type": "EXPLICIT",
+      "source": "The complementary product ratios of PsHDR1 and PsHDR2 strongly suggest functional specialization of these genes, making them paralogues in P. sitchensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental data showing complementary DMAPP:IPP ratios for the two enzymes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "bd987e58-c65f-4bb5-92b9-e597cec3ccdc",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C76",
+      "claim": "Many plants encode more than one HDR gene.",
+      "claim_type": "EXPLICIT",
+      "source": "While many plants encode more than one HDR gene (Figure 3), these homologues are often closely related and thus likely arose from relatively recent large-scale genome duplications (Saladi\u00e9 et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3 and supported by citation to Saladi\u00e9 et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "5460a2aa-6088-4795-81fb-3f6c050449c8",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C77",
+      "claim": "Plant HDR homologues are often closely related and thus likely arose from relatively recent large-scale genome duplications.",
+      "claim_type": "EXPLICIT",
+      "source": "While many plants encode more than one HDR gene (Figure 3), these homologues are often closely related and thus likely arose from relatively recent large-scale genome duplications (Saladi\u00e9 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Saladi\u00e9 et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "62e46209-dc1c-47e3-a696-78577e683aa8",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C78",
+      "claim": "In gymnosperms, the two HDR homologues are phylogenetically more distant.",
+      "claim_type": "EXPLICIT",
+      "source": "In gymnosperms, the two HDR homologues are phylogenetically more distant (Figure 3) and likely define functionally specialised paralogues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "edd3e253-791f-4415-85a9-3b2228b7d38b",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C79",
+      "claim": "Gymnosperm HDR homologues likely define functionally specialised paralogues.",
+      "claim_type": "EXPLICIT",
+      "source": "In gymnosperms, the two HDR homologues are phylogenetically more distant (Figure 3) and likely define functionally specialised paralogues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phylogenetic distance and the experimental data showing different product ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "f801463a-aec5-46d2-a7bb-314aebf8b9c0",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C80",
+      "claim": "Two different strategies might have been employed to adapt HDR to isoprenoid production spectra: either using a single HDR and shifting the DMAPP:IPP ratio, or having two functionally distinct HDRs each dedicated to the synthesis of one isomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we propose that two different strategies might have been employed to adapt HDR to isoprenoid production spectra: either using a single HDR and shifting the DMAPP:IPP ratio to allow production of specific isoprenoid profiles (Figure 2a), or having two functionally distinct HDRs each dedicated to the synthesis of one isomer (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the experimental data from Figure 2a and 2d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "caec2863-65fd-4456-9576-beae42ea6a46",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C81",
+      "claim": "Only certain HDR enzymes enable production of isoprene in engineered E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that only certain HDR enzymes enable production of isoprene in our engineered E. coli, and our data indicate that the choice of HDR is important to ensure availability of DMAPP and IPP at appropriate relative concentrations to achieve balanced pathway flux towards the product of interest and to avoid DMAPP toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "8e1fd690-896e-4dbb-b6a3-86ecd20d6a9b",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C82",
+      "claim": "The choice of HDR is important to ensure availability of DMAPP and IPP at appropriate relative concentrations to achieve balanced pathway flux towards the product of interest and to avoid DMAPP toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that only certain HDR enzymes enable production of isoprene in our engineered E. coli, and our data indicate that the choice of HDR is important to ensure availability of DMAPP and IPP at appropriate relative concentrations to achieve balanced pathway flux towards the product of interest and to avoid DMAPP toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations of variable isoprene production and toxicity with different HDRs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "e5d0f56a-8d53-424e-93ab-2b8ee37bf83d",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C83",
+      "claim": "The MEP pathway makes IPP and DMAPP simultaneously through the action of HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "The MEP pathway makes IPP and DMAPP simultaneously through the action of HDR (pink box), and produces the bulk of volatile isoprenoids, contributing >80 % of total BVOCs (Sindelarova et al., 2014)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "5a00cc84-fdbf-448b-bb34-1d11b1c99a0f",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C84",
+      "claim": "Non-volatile isoprenoids are essential and synthesised by all organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-volatile isoprenoids are essential and synthesised by all organisms, while volatile isoprenoid production is non-essential and highly species-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about isoprenoid biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "08fc8ca1-2e81-458a-a8f3-9c6ccc59d483",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C85",
+      "claim": "Volatile isoprenoid production is non-essential and highly species-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-volatile isoprenoids are essential and synthesised by all organisms, while volatile isoprenoid production is non-essential and highly species-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about isoprenoid biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "b4635fd3-a39e-481b-a172-f32dec0e9d40",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C86",
+      "claim": "The cytosolic MVA pathway contributes most sesquiterpenes (<3 % of BVOCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The cytosolic MVA pathway contributes most sesquiterpenes (<3 % of BVOCs), but is omitted here for clarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the figure legend.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "46f108dd-5e0f-43f8-946a-c7c3be2b5ccd",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C87",
+      "claim": "Emitted volatile isoprenoids are rapidly oxidised, resulting in complex atmospheric photochemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "Emitted volatile isoprenoids are rapidly oxidised, resulting in complex atmospheric photochemistry impacting aerosol and cloud condensation nuclei formation, extension of methane residence time, ozonolysis as well as surface-level ozone formation in the presence of mono-nitrogen oxide (NOx) pollutants (Wennberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wennberg et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "0b772c55-bc77-4445-a37a-97fee961c290",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C88",
+      "claim": "Volatile isoprenoid oxidation impacts aerosol and cloud condensation nuclei formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Emitted volatile isoprenoids are rapidly oxidised, resulting in complex atmospheric photochemistry impacting aerosol and cloud condensation nuclei formation, extension of methane residence time, ozonolysis as well as surface-level ozone formation in the presence of mono-nitrogen oxide (NOx) pollutants (Wennberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wennberg et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "66ba4d1f-3e1f-4d18-8e34-5730acc68e2f",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C90",
+      "claim": "High DMAPP-producing HDR proteins (from P. trichocarpa, R. communis and P. persica) cluster together based on high sequence similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "High DMAPP-producing HDR proteins (from P. trichocarpa, R. communis and P. persica) cluster together based on high sequence similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "7acbf11c-c304-426c-8a79-050dfb74d505",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C91",
+      "claim": "Homologues within species tend to be highly similar, except for in gymnosperms where two separate groups of likely paralogous HDRs exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologues within species, such as P. trichocarpa, tend to be highly similar; except for in gymnosperms where two separate groups of likely paralogous HDRs exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "fe6dc138-d472-42df-a282-0da2bab53bb5",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C92",
+      "claim": "Demands from downstream metabolism may determine IPP and DMAPP requirements, and could form an evolutionary driver for enzymatic activities that impact their ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Demands from downstream metabolism may determine IPP and DMAPP requirements, and could form an evolutionary driver for enzymatic activities that impact their ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about evolutionary mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "6726aaa1-553c-4bae-a6c3-a53f4235f74d",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C93",
+      "claim": "The adaptation of HDR to generate different DMAPP:IPP ratios allows for the production of large amounts of short-chain isoprenoids in certain species or tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the adaptation of HDR to generate different DMAPP:IPP ratios allows for the production of large amounts of short-chain isoprenoids in certain species or tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental data showing correlation between HDR product ratios and volatile isoprenoid production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "9aee06bf-02b1-4824-a398-7c5bde4f10ec",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "claim_id": "C94",
+      "claim": "HDR plays a central role in determining the spectrum of isoprenoids produced by plants, including isoprenoid BVOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings illuminate the molecular mechanism underlying how plants emit isoprene and suggest a central role for HDR in determining the spectrum of isoprenoids produced by plants, including isoprenoid BVOCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HDR enzymes from different plant species produce vastly different DMAPP:IPP ratios, ranging from almost exclusive IPP production to almost exclusive DMAPP production, with up to 40-fold variation. This variability is intrinsic to the HDR enzymes themselves and not due to differences in expression levels of other pathway components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C39, C44, C49, and C50 are directly supported by experimental data in Figure 2a showing variable DMAPP:IPP ratios across HDR enzymes. Claims C46-C48 provide critical proteomics controls demonstrating that the observed differences are not artifacts of differential expression of native E. coli enzymes or pathway components. The 40-fold variation (C44) is quantitatively supported by the data, and the conclusion that the 1:5 ratio is an exception (C45) logically follows from the observed spectrum.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "484b0a96-71a7-421d-8012-b533f9720217",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "High DMAPP:IPP ratios produced by HDR correlate with volatile isoprenoid emission patterns and enable isoprene production. HDR enzymes from species known to emit volatile isoprenoids produce considerably more DMAPP, and this increased DMAPP:IPP ratio is an important prerequisite for isoprene production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C42, C51, and C55 are supported by experimental data comparing DMAPP:IPP ratios (Figure 2a) with isoprene production (Figure 2b) and known emission profiles (Table 1). The correlation is demonstrated across multiple species. Claims C59 and C60 represent reasonable inferences from this data, though the causal relationship is demonstrated in a heterologous system rather than in planta.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "cfae612d-a9b2-4d71-be55-2fbf1c5da36b",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A high DMAPP:IPP ratio is necessary but not sufficient for volatile isoprenoid emission in vivo. Species like P. persica and R. communis have HDRs that produce high DMAPP:IPP ratios and enable isoprene production in E. coli, but do not emit isoprene naturally because they lack isoprene synthase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by experimental data (Figure 2a, 2b) showing high DMAPP production and isoprene production in E. coli, combined with Table 1 documenting the absence of isoprene synthase in these species. Claim C61 is a logical inference that is well-supported by this evidence, demonstrating that HDR adaptation is necessary but requires the presence of appropriate downstream enzymes for volatile emission.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "a4f269fd-dd5e-47be-af5f-7435484b5322",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gymnosperms employ a different strategy for HDR adaptation, with two phylogenetically distant HDR paralogues showing functional specialization. In P. sitchensis, HDR1 produces predominantly IPP while HDR2 produces predominantly DMAPP (>10-fold excess), with complementary product ratios suggesting tissue-specific roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 are directly supported by experimental data in Figure 2d-e showing complementary DMAPP:IPP ratios for PsHDR1 and PsHDR2. Claims C67, C78 are supported by phylogenetic analysis (Figure 3). Claims C68-C69 are supported by citations to transcriptional studies. The proposed model of functional specialization (C75, C79, C80) is a reasonable inference from the experimental data and phylogenetic patterns, though direct in planta validation is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "dc4de46b-1967-414a-9486-9bf3821c9434",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The relative differences in DMAPP:IPP ratios between HDR enzymes remain consistent when changing the downstream metabolic sink from lycopene to isoprene production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by experimental data in Figure 2c comparing selected HDRs with both lycopene and isoprene as metabolic sinks. While absolute values shift based on substrate requirements, the relative ordering of HDRs remains similar, validating that the experimental system captures representative enzyme differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "504a8e83-27c8-4729-a6ed-43480f7a2b1e",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Functional HDR genes were identified from all tested species through complementation assays, though some HDRs showed dose-dependent toxicity when overexpressed, possibly due to prenyl phosphate accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by complementation data (Figure 2\u2014figure supplement 1a-b). Claim C71 is supported by growth rate data (Figure 2f). Claim C38 and C70 represent reasonable speculation supported by citation to George et al., 2018, though the mechanism of toxicity is not directly demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "01c292e7-01e2-41b5-8623-a2e92c2aea9c",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The choice of HDR enzyme is important for metabolic engineering applications to ensure appropriate DMAPP:IPP ratios for balanced pathway flux and to avoid substrate toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 are supported by the experimental observations showing that only certain HDRs enable isoprene production (Figure 2b) and that some HDRs cause toxicity (Figure 2f). This represents a practical application of the findings for biotechnology, though the claim is somewhat inferential regarding optimal pathway design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "296b7894-2e93-4504-a6de-53e500467a65",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Previous studies in diverse organisms found HDR produces DMAPP:IPP ratios between 1:4 and 1:6, leading to the assumption of a fixed ~1:5 ratio. However, none of these previously studied species produce significant amounts of volatile isoprenoids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 accurately summarize prior literature with appropriate citations (Rohdich et al., 2003; Altincicek et al., 2002; Adam et al., 2002; Tritsch et al., 2010; Wiedinmyer et al., 2020). This establishes the knowledge gap that motivated the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "e3a64c76-9aaa-4282-90e1-37753b81dacc",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis reveals that high DMAPP-producing HDR proteins cluster together based on sequence similarity, with homologues within angiosperm species being highly similar, while gymnosperms have two separate groups of likely paralogous HDRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 are supported by phylogenetic analysis shown in Figure 3. The clustering of high DMAPP-producing HDRs and the distinct gymnosperm paralogue groups are clearly demonstrated in the phylogenetic tree.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "0ab1394f-5052-44c4-af7f-69ab6d6d4525",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Many plants encode more than one HDR gene, with homologues often being closely related and likely arising from relatively recent large-scale genome duplications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by phylogenetic data (Figure 3) and citation to Saladi\u00e9 et al., 2014. The observation of multiple HDR genes and their evolutionary origin through genome duplication is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "09a1c0e9-a4e9-4b14-91b6-8dfe4ce00d9e",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HDR adaptation plays a previously unrecognized role in determining carbon availability for isoprenoid emissions and represents a key junction in the evolution of volatile isoprenoid production, with implications for global biosphere-atmosphere interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While claims C8, C93, and C94 represent reasonable inferences from the experimental data, they extend beyond what is directly demonstrated. The experiments were conducted in E. coli, not in planta, so the in vivo role in plants remains to be validated. Claim C62 about evolutionary significance is supported by citation to Dani et al., 2014 regarding the evolutionary pattern of isoprene emission, but the causal role of HDR in this evolution is inferential. The global implications require additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on volatile isoprenoid emissions, their atmospheric impacts, biosynthetic pathways, and the knowledge gap regarding carbon allocation between volatile and non-volatile isoprenoids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the scientific context and are supported by appropriate citations to established literature. They accurately represent current knowledge about isoprenoid biosynthesis, emissions, and atmospheric chemistry. The knowledge gap identified (C2, C21) motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    },
+    {
+      "id": "da560730-cde4-476a-bc49-706ee9a164e5",
+      "content_id": "28673c49-b520-45fa-8597-bb41c6908f0a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Demands from downstream metabolism may determine IPP and DMAPP requirements and could form an evolutionary driver for HDR enzymatic activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C92 is explicitly speculative and represents a hypothesis about evolutionary mechanisms. While plausible given the experimental findings, this claim lacks direct experimental support and would require evolutionary studies to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:37.936702Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8d33f7b5-5f78-4848-a759-0cc461db30e3",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "ba5718e1-5911-4900-b0a8-927866e9283e",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "c489cd9f-6423-40ac-9b25-13151d4f5207",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "0813b5a4-b21b-4841-893d-47c3bc42e3d8",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "a6dfd759-7391-47d3-9242-c8d47ec4f3fd",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "2381a203-efc5-40ba-ab1c-19ca981f6929",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "7095d7a7-c13f-4ef8-9033-2731f098fe58",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "9c1102ef-81e2-40bd-bf3a-92c320c577a9",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "c5c03389-719e-4c7e-860e-b00f0e050ac4",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "5332e502-01c3-4772-807f-953e39091609",
+      "result_id": "1045ad8f-dbae-4b66-88f6-3f4bd897ea3b"
+    },
+    {
+      "claim_id": "08a86e31-3443-4bed-9952-08de9ca86d74",
+      "result_id": "484b0a96-71a7-421d-8012-b533f9720217"
+    },
+    {
+      "claim_id": "3a0e398a-781d-448d-8955-17cc6f55cb8f",
+      "result_id": "484b0a96-71a7-421d-8012-b533f9720217"
+    },
+    {
+      "claim_id": "fe81f927-6569-4cbd-ad8b-bb9355aef8ec",
+      "result_id": "484b0a96-71a7-421d-8012-b533f9720217"
+    },
+    {
+      "claim_id": "a883512e-deff-4726-91be-d98a35d349f0",
+      "result_id": "484b0a96-71a7-421d-8012-b533f9720217"
+    },
+    {
+      "claim_id": "59bed0b5-d56e-4465-ad6c-9753373b2ab0",
+      "result_id": "484b0a96-71a7-421d-8012-b533f9720217"
+    },
+    {
+      "claim_id": "688c4919-26e6-49a3-ac8b-5434d64a8a1c",
+      "result_id": "484b0a96-71a7-421d-8012-b533f9720217"
+    },
+    {
+      "claim_id": "03a22ed4-baaa-432f-b88f-2daf71a6520d",
+      "result_id": "cfae612d-a9b2-4d71-be55-2fbf1c5da36b"
+    },
+    {
+      "claim_id": "3c085309-bbe3-427b-ad2a-0126d84641d7",
+      "result_id": "cfae612d-a9b2-4d71-be55-2fbf1c5da36b"
+    },
+    {
+      "claim_id": "0375ad2b-499f-4134-b268-78411525c6c1",
+      "result_id": "cfae612d-a9b2-4d71-be55-2fbf1c5da36b"
+    },
+    {
+      "claim_id": "1292c2ce-01d1-4e9b-98af-dc5e6e402877",
+      "result_id": "cfae612d-a9b2-4d71-be55-2fbf1c5da36b"
+    },
+    {
+      "claim_id": "2018ee8f-80f1-46d2-8a3b-7cc1b0548ac8",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "4e28cf86-1e32-4f39-811b-3bc28c58d2ce",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "970f3e2f-02fd-4480-95f9-3afedee32c04",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "5760a1b6-a42d-4d2d-8a59-99cdbd24d6d4",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "1f69c7da-8816-4b48-ae0f-eb8ab5856efa",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "fce716bf-e416-4d07-b823-08d60e59e7eb",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "1af62818-d9ed-4edc-923b-18d639009f57",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "fc62ba11-6faf-4f31-917a-f57fc645c0bc",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "1f019fd6-ab4a-4e89-b508-06239784dd81",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "62e46209-dc1c-47e3-a696-78577e683aa8",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "edd3e253-791f-4415-85a9-3b2228b7d38b",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "f801463a-aec5-46d2-a7bb-314aebf8b9c0",
+      "result_id": "a4f269fd-dd5e-47be-af5f-7435484b5322"
+    },
+    {
+      "claim_id": "c0db20e8-1a0c-4d82-ba23-2118ad4f1b91",
+      "result_id": "dc4de46b-1967-414a-9486-9bf3821c9434"
+    },
+    {
+      "claim_id": "f6e10be0-5ecb-486c-904e-56ff1d1e1c75",
+      "result_id": "504a8e83-27c8-4729-a6ed-43480f7a2b1e"
+    },
+    {
+      "claim_id": "b5fb143d-6d87-4d5c-8965-35f35e454a38",
+      "result_id": "504a8e83-27c8-4729-a6ed-43480f7a2b1e"
+    },
+    {
+      "claim_id": "a34c5637-8189-4bac-8177-69a64c507ecd",
+      "result_id": "504a8e83-27c8-4729-a6ed-43480f7a2b1e"
+    },
+    {
+      "claim_id": "cc5c1254-c9e6-41e9-8550-bae84bf84b32",
+      "result_id": "504a8e83-27c8-4729-a6ed-43480f7a2b1e"
+    },
+    {
+      "claim_id": "5800172a-8e45-47ea-a321-415cf0bb642b",
+      "result_id": "504a8e83-27c8-4729-a6ed-43480f7a2b1e"
+    },
+    {
+      "claim_id": "caec2863-65fd-4456-9576-beae42ea6a46",
+      "result_id": "01c292e7-01e2-41b5-8623-a2e92c2aea9c"
+    },
+    {
+      "claim_id": "8e1fd690-896e-4dbb-b6a3-86ecd20d6a9b",
+      "result_id": "01c292e7-01e2-41b5-8623-a2e92c2aea9c"
+    },
+    {
+      "claim_id": "1dd99032-4cb8-4b13-9df5-f0b64936347d",
+      "result_id": "296b7894-2e93-4504-a6de-53e500467a65"
+    },
+    {
+      "claim_id": "5e9d4481-91f1-4d63-962e-ea5e96f23d7c",
+      "result_id": "296b7894-2e93-4504-a6de-53e500467a65"
+    },
+    {
+      "claim_id": "2562f561-e5a1-469c-a015-a587da8ac153",
+      "result_id": "296b7894-2e93-4504-a6de-53e500467a65"
+    },
+    {
+      "claim_id": "66ba4d1f-3e1f-4d18-8e34-5730acc68e2f",
+      "result_id": "e3a64c76-9aaa-4282-90e1-37753b81dacc"
+    },
+    {
+      "claim_id": "7acbf11c-c304-426c-8a79-050dfb74d505",
+      "result_id": "e3a64c76-9aaa-4282-90e1-37753b81dacc"
+    },
+    {
+      "claim_id": "bd987e58-c65f-4bb5-92b9-e597cec3ccdc",
+      "result_id": "0ab1394f-5052-44c4-af7f-69ab6d6d4525"
+    },
+    {
+      "claim_id": "5460a2aa-6088-4795-81fb-3f6c050449c8",
+      "result_id": "0ab1394f-5052-44c4-af7f-69ab6d6d4525"
+    },
+    {
+      "claim_id": "0dad7a8d-5ad3-405f-9cda-17eb119969fd",
+      "result_id": "09a1c0e9-a4e9-4b14-91b6-8dfe4ce00d9e"
+    },
+    {
+      "claim_id": "f9d6e40f-f5c8-4a7c-b633-d45a3e1e320e",
+      "result_id": "09a1c0e9-a4e9-4b14-91b6-8dfe4ce00d9e"
+    },
+    {
+      "claim_id": "6726aaa1-553c-4bae-a6c3-a53f4235f74d",
+      "result_id": "09a1c0e9-a4e9-4b14-91b6-8dfe4ce00d9e"
+    },
+    {
+      "claim_id": "9aee06bf-02b1-4824-a398-7c5bde4f10ec",
+      "result_id": "09a1c0e9-a4e9-4b14-91b6-8dfe4ce00d9e"
+    },
+    {
+      "claim_id": "7867d4d7-f9c0-4fbb-ab8f-4d9c1c60dce0",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "330ab7c6-db58-40e7-9d6c-38b56e1e2438",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "8a7dca23-81e6-4c29-9aa8-ca837e78ae23",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "14893429-7ecf-41e2-b830-47ab0c3b258a",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "2d4c5c0f-ccbb-4f3d-a896-62c4fe3873c5",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "9b2d9afa-a115-4caf-9ccc-1d3cd8d04619",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "3ff2e836-ecbd-4b03-8e4f-951743a1f31b",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "c9635a7d-928d-481a-ba05-73793ef2c4f4",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "fba18036-2d9e-4297-ab16-85270a656ce1",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "a28a86cf-7dbe-4648-869b-e0df3005da65",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "9c4482ce-0465-421d-95bd-b45c380dd2aa",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "20f39c43-fa24-4942-9902-d513bb82085c",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "47176bf1-095a-492e-b258-ced086215da8",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "83c055d4-290f-4060-a5ea-c423d052f135",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "7bacf0f2-7901-4452-bc70-7ce009307463",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "9ed2aa6b-570b-48bd-9f97-04462fbd8df3",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "d1e1b80e-044e-46bd-9797-413636acec2e",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "11364053-02fa-49a0-b5da-860ec82bdea9",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "1af732fc-fad1-4399-93e9-d207ab09359b",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "0cd05e8f-4347-44ba-bef8-685eb8bf5c75",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "c6d065a9-3733-4efd-9ea6-ca16be0cb4c4",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "ce3254f2-ce5f-45e0-a5ce-0e52bf6b79ea",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "dd79680b-bff8-4b35-8bdb-6033093d7908",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "7d09b5f1-46c4-420c-8bd5-a2f6073274c7",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "02df9a49-aba8-4dd0-aeff-3fde8aa3a214",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "75b18ab1-a338-4616-9466-76144d4f118d",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "8061f640-05fc-4fa4-90e9-2868b25de22a",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "e5d0f56a-8d53-424e-93ab-2b8ee37bf83d",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "5a00cc84-fdbf-448b-bb34-1d11b1c99a0f",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "08fc8ca1-2e81-458a-a8f3-9c6ccc59d483",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "b4635fd3-a39e-481b-a172-f32dec0e9d40",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "46f108dd-5e0f-43f8-946a-c7c3be2b5ccd",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "0b772c55-bc77-4445-a37a-97fee961c290",
+      "result_id": "fd218cf6-5de8-4b21-9f1c-07948ee0f586"
+    },
+    {
+      "claim_id": "fe6dc138-d472-42df-a282-0da2bab53bb5",
+      "result_id": "da560730-cde4-476a-bc49-706ee9a164e5"
+    }
+  ],
+  "comparisons": []
+}

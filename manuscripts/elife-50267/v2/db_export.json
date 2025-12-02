@@ -1,0 +1,2128 @@
+{
+  "submission": {
+    "id": "1921d6ac-8a01-493b-a276-2fdbaa124ce0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:36:08.470493Z",
+    "updated_at": "2025-12-02T14:36:08.470493Z"
+  },
+  "content": [
+    {
+      "id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "submission_id": "1921d6ac-8a01-493b-a276-2fdbaa124ce0",
+      "content_type": "manuscript",
+      "content_text": "# CNApp, a tool for the quantification of copy number alterations and integrative analysis revealing clinical implications\n\n## Authors\n\n- Sebasti\u00e0 Franch-Exp\u00f3sito<sup>1</sup> ([ORCID: 0000-0002-4542-1701](https://orcid.org/0000-0002-4542-1701))\n- Laia Bassaganyas<sup>2</sup>\n- Maria Vila-Casades\u00fas<sup>3</sup>\n- Eva Hern\u00e1ndez-Ill\u00e1n<sup>1</sup>\n- Roger Esteban-Fabr\u00f3<sup>2</sup>\n- Marcos D\u00edaz-Gay<sup>1</sup> ([ORCID: 0000-0003-0658-0467](https://orcid.org/0000-0003-0658-0467))\n- Juan Jos\u00e9 Lozano<sup>3</sup>\n- Antoni Castells<sup>1</sup> ([ORCID: 0000-0001-8431-2033](https://orcid.org/0000-0001-8431-2033))\n- Josep Maria Llovet<sup>2</sup>\n- Sergi Castellv\u00ed-Bel<sup>1</sup> \u2020\n- Jordi Camps<sup>1</sup> ([ORCID: 0000-0003-2929-4228](https://orcid.org/0000-0003-2929-4228)) \u2020\n\n### Affiliations\n\n1. Gastrointestinal and Pancreatic Oncology Team Institut D'Investigacions Biom\u00e8diques August Pi i Sunyer (IDIBAPS), Hospital Cl\u00ednic de Barcelona, Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Enfermedades Hep\u00e1ticas y Digestivas (CIBEREHD), Universitat de Barcelona Barcelona Spain\n2. Liver Cancer Translational Research Group, Liver Unit Institut D'Investigacions Biom\u00e8diques August Pi i Sunyer (IDIBAPS), Hospital Cl\u00ednic de Barcelona, Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Enfermedades Hep\u00e1ticas y Digestivas (CIBEREHD), Universitat de Barcelona Barcelona Spain\n3. Bioinformatics Unit CIBEREHD Barcelona Spain\n4. Mount Sinai Liver Cancer Program, Division of Liver Diseases, Tisch Cancer Institute Icahn School of Medicine at Mount Sinai New York United States\n5. Instituci\u00f3 Catalana de Recerca i Estudis Avan\u00e7ats (ICREA) Barcelona Spain\n6. Unitat de Biologia Cel\u00b7lular i Gen\u00e8tica M\u00e8dica, Departament de Biologia Cel\u00b7lular, Fisiologia i Immunologia, Facultat de Medicina Universitat Aut\u00f2noma de Barcelona Bellaterra Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nSomatic copy number alterations (CNAs) are a hallmark of cancer, but their role in tumorigenesis and clinical relevance remain largely unclear. Here, we developed CNApp, a web-based tool that allows a comprehensive exploration of CNAs by using purity-corrected segmented data from multiple genomic platforms. CNApp generates genome-wide profiles, computes CNA scores for broad, focal and global CNA burdens, and uses machine learning-based predictions to classify samples. We applied CNApp to the TCGA pan-cancer dataset of 10,635 genomes showing that CNAs classify cancer types according to their tissue-of-origin, and that each cancer type shows specific ranges of broad and focal CNA scores. Moreover, CNApp reproduces recurrent CNAs in hepatocellular carcinoma and predicts colon cancer molecular subtypes and microsatellite instability based on broad CNA scores and discrete genomic imbalances. In summary, CNApp facilitates CNA-driven research by providing a unique framework to identify relevant clinical implications. CNApp is hosted at https://tools.idibaps.org/CNApp/.\n\n## Introduction\n\nThe presence of somatic copy number alterations (CNAs) is a ubiquitous feature in cancer. In fact, the distribution of CNAs is sufficiently tissue-specific to distinguish tumor entities (Ried et al., 2012), and allows the identification of tumors responsive to particular therapies (Cairncross et al., 2013; Davoli et al., 2017). Moreover, high levels of CNAs, which result from chromosome instability, are generally associated with high-grade tumors and poor prognosis (Hieronymus et al., 2018; Sansregret et al., 2018; Smith and Sheltzer, 2018; Stopsack et al., 2019).\n\nTwo main subtypes of CNAs can be discerned: broad CNAs, which are defined as whole-chromosome and chromosomal arm-level alterations, and focal CNAs, which are alterations of limited size ranging from part of a chromosome-arm to few kilobases (Krijgsman et al., 2014; Zack et al., 2013). Recently, it has been uncovered that while focal events mainly correlate with cell cycle and proliferation markers, broad aberrations are mainly associated with immune evasion markers, suggesting that tumor immune features might be determined by mechanisms related to overall gene dosage imbalance rather than specific actionable genes (Buccitelli et al., 2017; Davoli et al., 2017; Taylor et al., 2018). Furthermore, it has been shown that broad CNAs involving whole-chromosome arms may confer high risk of lethal disease in prostate cancer (Stopsack et al., 2019). Nevertheless, the precise role of CNAs in tumor initiation and progression, as well as their clinical relevance and therapeutic implications in most cancer types remain still poorly understood.\n\nInterpretation and visualization of CNAs is time-consuming and very often requires complex analyses with clinical and molecular information. Well-established CNA algorithms, such as the gold-standard circular binary segmentation, define the genomic boundaries of copy number gains and losses based on signal intensities or read depth obtained from array comparative genomic hybridization and SNP-array or next-generation sequencing data, respectively (Olshen et al., 2004). However, the tumor-derived genomic complexity may cause an under- or overestimation of CNAs. This complexity is represented by tumor purity, tumor aneuploidy, and intratumor heterogeneity, which imply high levels of subclonal alterations. Thus, recent segmentation methods improved the accuracy to identify copy number segments in tumor samples either by considering the B allele frequency (BAF), such as ExomeCNV (Sathirapongsasuti et al., 2011), Control-FREEC (Boeva et al., 2012) and SAAS-CNV (Zhang and Hao, 2015), or through adjusting by sample purity and ploidy estimates, such as GAP (Popova et al., 2009), ASCAT (Van Loo et al., 2010) and ABSOLUTE (Carter et al., 2012). However, the state-of-the-art computational approach for CNA analysis in cancer is GISTIC2.0 (Mermel et al., 2011), which is a gene-centered probabilistic method that enables to define the boundaries of recurrent putative driver CNAs in large cohorts (Beroukhim et al., 2010). Nevertheless, despite ongoing progress on identifying CNAs, to our knowledge none of the existing software packages is readily available for integrative analyses to unveil their biological and clinical implications.\n\nTo address this issue, we developed CNApp, the first open-source application to quantify CNAs and integrate genomic profiles with molecular and clinical variables. CNApp is a web-based tool that provides the user with high-quality interactive plots and statistical correlations between CNAs and annotated variables in a fast and easy-to-explore interface. In particular, CNApp uses purity-corrected genomic segmented data from multiple genomic platforms to redefine CNA profiles, to compute CNA scores based on the number, length and amplitude of broad and focal genomic alterations, to assess differentially altered genomic regions, and to perform machine learning-based predictions to classify tumor samples. To exemplify the applicability and performance of CNApp, we used publicly available segmented data from The Cancer Genome Atlas (TCGA) to (i) measure the burden of global, broad, and focal CNAs as well as generate CNA profiles in a pan-cancer dataset spanning 33 cancer types, (ii) identify cohort-based recurrent CNAs in hepatocellular carcinoma and compare them with previously reported data, and (iii) assess predicting models for colon cancer molecular subtypes and microsatellite instability status based on CNA scores and specific genomic imbalances. CNApp is hosted at https://tools.idibaps.org/CNApp/ and the source code is freely available at GitHub (Franch-Exp\u00f3sito, 2020 ; copy archived at https://github.com/elifesciences-publications/CNApp).\n\n## Results\n\n### Implementation\n\nCNApp comprises three main sections: 1- Re-Seg and Score: re-segmentation, CNA scores computation, variable association and survival analysis, 2- Region profile: genome-wide CNA profiling, CNA frequencies, correlation profiles and descriptive regions, and 3- Classifier model: machine learning classification model predictions (Figure 1). Each of these sections and their key functions are described below. The input file consists of a data frame with copy number segments provided by any segmentation algorithm. Mandatory fields and column headers are sample name (ID), chromosome (chr), start (loc.start) and end (loc.end) genomic positions, and the log2 ratio of the copy number amplitude (seg.mean) for each segment. Section one incorporates the correction for tumor purity (i.e. fraction of tumor cells in the sample) to measure the actual magnitude of CNAs. Thus, when available, the input file will also include sample purity estimations (purity) and BAF values (BAF), which correct the accuracy of CNA calls and provide copy number neutral loss-of-heterozygosity (CN-LOH) events. Ploidy values, if known, might also be indicated as an independent variable. Annotation of variables can be included in the input file (tagged in every segment from each sample) or by uploading an additional file indicating new variables per sample.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig1-v2.jpg)\n\n**Figure 1.:** The diagram depicts the overall processes performed by CNApp and indicates the output for each section.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Broad CNA Score (BCS) and fractions of altered genome affected by broad CNA events (whole chromosome and arm-level alterations) in each respective sample (Figure 1\u2014figure supplment 1\u2014source data 1). (B) Focal CNA Score (FCS) and the fraction of altered genome by focal CNA events in each respective sample (Figure 1\u2014figure supplment 1\u2014source data 1). (C) Global CNA Score (GCS) and the overall fraction of altered genome in each respective sample (Figure 1\u2014figure supplment 1\u2014source data 1). (TIFF 572 KB).\n\n#### Re-Seg and score: re-segmentation, CNA scores computation, variable association and survival analysis\n\nFirst, CNApp applies a re-segmentation approach to adjust for amplitude divergence due to technical variability and correct for estimated tumor purity. Default re-segmentation settings include minimum segment length (100 Kbp), minimum amplitude (seg.mean) deviation from segment to zero (0.16), maximum distance between segments (1 Mb), maximum amplitude (seg.mean) deviation between segments (0.16), and maximum BAF deviation between segments (0.1). These parameters can be customized by the user to better adjust the re-segmentation for each particular dataset. Re-segmented data are then used to calculate the broad (BCS), focal (FCS) and global (GCS) CNA scores, which provide three different quantifications of CNA levels for each sample. To compute these scores, CNApp classifies and weights CNAs based on their length and amplitude. For each sample, BCS is computed by considering broad (chromosome and arm-level) segment weights according to the amplitude value. Likewise, calculation of FCS takes into account weighted focal CNAs corrected by the amplitude and length of the segment. Finally, GCS is computed by considering the sum of normalized BCS and FCS, providing an overall assessment of the CNA burden.\n\nTo assess the reliability of CNA scores, we compared each score with the corresponding fraction of altered genome using a TCGA pan-cancer set of 10,635 samples. Both BCS (ranging from 0 to 44) and FCS (values ranging from 5 to 2466) highly correlated with the fraction of altered genome by broad and focal copy number changes, respectively (Spearman's rank correlation for BCS\u00a0=\u00a00.957 and for FCS\u00a0=\u00a00.938) (Figure 1\u2014figure supplment 1A\u00a0and\u00a0B\u2014source data 1). As expected, GCS (values ranged from \u22121.93 to 12.60) highly correlated with the fraction of altered genome affected by both broad and focal CNAs (Spearman\u2019s rank correlation for GCS\u00a0=\u00a00.963 (Figure 1\u2014figure supplment 1C\u2014source data 1). Parametric and non-parametric statistical tests are used to establish associations between CNA scores and annotated variables from the input file. Additionally, Kaplan-Meier survival curves are computed using either CNA scores or additional variables.\n\n#### Region profile: genome-wide CNA profiling\n\nThis section transforms segmented data (either re-segmented data from section one or original segments uploaded by the user) into genomic region profiles to allow sample-to-sample comparisons. Different genomic windows can be selected to compute the genomic profiles (i.e. chromosome arms, half-arms, cytobands, sub-cytobands or 40\u20131 Mb windows). All segments, or either only broad or only focal can be selected for this analysis. Length-relative means are computed for each window by considering amplitude values from those segments included in each specific window. Default cutoffs for low-level copy number gains and losses (i.e., |0.2|) are used to infer CNA frequencies. Genomic profiles are presented in genome-wide heatmaps to visualize general copy number patterns. Up to six annotation tracks can be added and plotted simultaneously allowing visual comparison and correlation between CNA profiles and different variables, including the CNA scores obtained in section 1. CNA frequency summaries by genomic region and by sample are represented as stacked bar plots. Correlation values and hierarchical clusters are optional.\n\nImportantly, assessing differentially altered regions between sample groups might contribute to discover genomic regions associated with annotated variables and thus unveil the biological significance of specific CNAs. To do so, CNApp interrogates descriptive regions associated with any sample-specific annotation variable provided in the input file. Default statistical significance is set to p-value lower than 0.1. However, p-value thresholds can be defined by the user and adjusted p-value is optional. A heatmap plot allows the visualization and interpretation of which genomic regions are differentially altered between sample groups. By selecting a region of interest, box plots and stacked bar plots are generated comparing seg.mean values and alteration counts in Student\u2019s t-test and Fisher\u2019s test tabs, respectively. Additionally, genes comprised in the selected genomic region are indicated.\n\n#### Classifier model: Machine learning classification model predictions\n\nThis section allows the user to generate machine learning-based classifier models by choosing a variable to define sample groups and one or multiple classifier variables. To do so, CNApp incorporates the randomForest R package (Liaw and Wiener, 2002). The model construction is performed 50-times, in which training sets of 75% of samples are used in each permutation and the remaining 25% are classified by applying the trained model. By default, annotation variables from the input file are loaded and can be used either by defining sample groups or as a classifier. If Re-Seg and Score and/or Region profile sections have been previously completed, the user can upload data from these sections (i.e. CNA scores and genomic regions). Predictions for the model performance are generated and the global accuracy is computed along with sensitivity and specificity by group. Classifier models can be useful to point out candidate clinical or molecular variables to classify sample subgroups. Nevertheless, the output from the Classifier model would need to be further validated using alternative prediction algorithms and/or independent datasets. A summary of the data distribution and plots for real and model-predicted groups are visualized. A table with prediction rates throughout the 50-times iteration model and real tags by sample is displayed and can be downloaded.\n\n### Characterization of cancer types based on CNA scores\n\nFirst, we evaluated the ability of CNApp to analyze and classify cancer types according to CNA scores, and assessed whether CNApp was able to reproduce specific CNA patterns across different cancer types. To do so, by using CNApp default parameters we obtained re-segmented data, CNA scores and cancer-specific CNA profiles for 10,635 tumor samples spanning 33 cancer types from the TCGA pan-cancer dataset. The distribution of BCS, FCS and GCS confirmed the existence of distinct CNA burdens across cancer types (Figure 2A\u2014source data 1). While cancer types such as acute myeloid leukemia (LAML), thyroid carcinoma (THCA) or thymoma (THYM) showed low levels of broad and focal events (GCS median values of \u22121.67 for LAML, \u22121.68 for THCA, and \u22121.52 for THYM), uterine carcinosarcoma (UCS), ovarian cancer (OV) and lung squamous cell carcinoma (LUSC) displayed high levels of both types of genomic imbalances (GCS median values of 2.55, 2.44, and 0.97 for UCS, OV, and LUSC, respectively). Some cancer types displayed a preference for either broad or focal CNAs. For example, kidney chromophobe (KICH) tumors showed the highest levels of broad events (median BCS value of 27), while focal CNAs in this cancer type were very low (median FCS value of 49). In contrast, breast cancer (BRCA) samples displayed high FCS values (median FCS value of 150), while BCS values were only intermediate (median BCS value of 7). Overall correlations between CNA scores were assessed by computing Spearman\u2019s rank test, obtaining values of 0.59 between BCS and FCS, 0.90 between BCS and GCS, and 0.85 between FCS and GCS. In addition, we further assessed the correlation between BCS and FCS for each individual BCS value. While tumors with low BCS displayed a positive correlation between broad and focal alterations, tumors did not maintain such correlation in higher BCS values (Figure 2\u2014figure supplement 1A and B). This correlation between BCS and FCS is maintained across the 33 cancer types (Figure 2\u2014figure supplement 1C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig2-v2.jpg)\n\n**Figure 2.:** CNApp outputs to characterize pan-cancer 10,635 samples including 33 TCGA cancer types. (A) Broad, Focal and Global CNA scores (BCS, FCS and GCS, respectively) distribution across the 33 cancer types (Figure 2\u2014source data 1). (B) Genome-wide chromosome arm CNA profile heatmap for 10,635 samples considering broad and focal events. Annotation tracks for FCS, BCS and GCS are presented. (C) Arm regions frequencies as percentages relative to the TCGA pan-cancer dataset (red for gains and blue for losses). (D) Heatmap plot showing 20 out of the 33 TCGA cancer type profile correlations, by Pearson's method, hierarchically clustered by tissue of origin. Gastrointestinal, gynecological and squamous cancers are clustering consistently in their respective groups.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0BCS values (x-axis) and FCS values (y-axis) scatterplot for 10,635 samples from pan-cancer cohort. Scatterplot smoothing by loess regression curve (in blue) and confidence interval. (B) Correlation plot showing broad and focal CNA score values for the TCGA pan-cancer dataset. Spearman\u2019s rank correlation test between broad and focal CNA scores (BCS and FCS, respectively) was performed. Sample subsets were computed by selecting 500 random samples from those displaying BCS\u00a0\u00b15 for each BCS value. Values of BCS and FCS for each subset of samples were correlated. (C) Scatterplots for the 33 cancer types with BCS values (x axis) and FCS values (y axis) in samples. Scatterplot smoothing by loess regression curve (in blue) and confidence interval. (TIFF 3.7 MB).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A)\u00a0Heatmap analysis showing mean chromosome arm region profiles taking into account both broad and focal alterations, spanning 20 cancer type, for 8653 samples from the TCGA pan-cancer dataset. Cancer types were indicated in the column ID from the input file. Annotation track displays tumor types, including squamous cell carcinomas, gynecological cancers, gastrointestinal cancers, and others. (B) Heatmap analysis showing mean 5 Mb region profiles taking into account only focal alterations, spanning 20 cancer type, for 8653 samples from the TCGA pan-cancer dataset. Cancer types were indicated in the column ID from the input file. Annotation track displays tumor types, including squamous cell carcinomas, gynecological cancers, gastrointestinal cancers, and others. (C) Heatmap plot showing 20 out of the 33 TCGA cancer type profile (by 5 Mb genomic regions and accounting only for focal alterations) correlations, by Pearson's method, hierarchically clustered by tissue of origin. Gastrointestinal, gynecological and squamous cancers are clustering consistently in their respective groups. (TIFF 2.8 MB).\n\nSubsequent analysis aimed at generating genome-wide patterns for each cancer type based on chromosome-arm genomic windows and the overall corresponding frequencies. In agreement with previous studies (Beroukhim et al., 2010), cancer type-specific patterns of genomic gains and losses determined the tissue-of-origin (Figure 2B). Additionally, we found that chromosome arms altered in more than 25% across all samples were 1q, 7 p, 7q, 8q and 20q for copy number gains, and 8 p and 17 p for copy number losses. Conversely, chromosome arms affected by CNAs in less than 10% of all cancer types included chromosome arms 2q and 19 p (Figure 2C). By using a subset of 20 out of the 33 cancer types for which tumor type information was available, we asked CNApp to compute the average arm-region for each cancer type to assess if they clustered according to their CNA profiles (Figure 2\u2014figure supplement 2A). Our analysis showed that correlation values resulting from Pearson\u2019s test hierarchically clustered according to the tissue-of-origin from the tumor. Gastrointestinal (colon, rectum, stomach and pancreatic), gynecological (ovarian and uterine) and squamous (cervical, head and neck, and lung) cancers clustered together based on specific CNA profiles for each group (Figure 2D). Intriguingly, correlation profiles using 5 Mb windows and only considering focal alterations showed a very similar degree of clustering based on the tissue of origin (Figure 2\u2014figure supplement 2B&C).\n\n### Identification of recurrent CNAs in hepatocellular carcinoma: Benchmark with other available tools\n\nNext, we attempted to test the ability of CNApp to identify recurrent broad and focal CNAs in a large cohort, and to assess the impact of the customizable parameters to describe CNA profiles. For that reason, we chose to perform CNA analysis of 370 samples from TCGA corresponding to the Liver Hepatocellular Carcinoma (LIHC) cohort. The pattern of recurrent broad and focal CNAs identified by GISTIC2.0 in the TCGA study (Ally et al., 2017) was similar to earlier reports, confirming the suitability of this cohort and the consistent identification of a CNA profile for hepatocellular carcinoma (HCC) (Chiang et al., 2008; Guichard et al., 2012; Schulze et al., 2015; Totoki et al., 2014; Wang et al., 2013).\n\nBy applying the default parameters of CNApp to the LIHC dataset and selecting chromosome arms as genomic regions to assess broad events, we consistently found copy number gains at 1q (56%) and 8q (46%), and copy number losses at 8 p (62%) and 17 p (47%) as the most frequent alterations (Figure 3A). These CNAs are the same as those identified by GISTIC2.0; however, frequencies were slightly lower (Supplementary file 1). Similarly, GISTIC2.0 detected significant gains with rates between 25\u201340% on eight additional chromosome-arms, including 5 p, 5q, 6 p, 20 p, 20q, 7 p, 7q, and 17q, which were also identified by CNApp, but in 20\u201330% of the samples. Likewise, GISTIC2.0 detected significant broad deletions at a frequency between 20%\u00a0and\u00a040% on 18 additional chromosome-arms, of which 4q, 6q, 9 p, 13q, 16 p, and 16q losses were observed at frequencies\u00a0\u2265\u00a020% by CNApp, and the rest of them displayed rates between 10%\u00a0and\u00a020%. Therefore, the identification of CNAs in CNApp is very consistent with those described by GISTIC2.0. Differences in frequencies might be expected due to the lower copy number amplitude thresholds used by GISTIC2.0 in comparison with CNApp default cutoffs (|0.1| vs. |0.2|, corresponding to\u00a0~2.14/1.8 copies vs. 2.3/1.7 copies, respectively). Indeed, previous reports analyzing CNAs in other HCC cohorts and using greater copy number thresholds, showed frequencies of alterations much more similar to those estimated by CNApp (Chiang et al., 2008; Guichard et al., 2012; Schulze et al., 2015; Wang et al., 2013). To assess the impact of modifying CNApp amplitude thresholds, we analyze the same dataset dropping the cutoff to |0.1|. By doing so, the overall number of broad CNAs increased, reaching frequency values similar or even higher than those reported by GISTIC2.0 (Figure 3B and Supplementary file 1). Of note, such drop from |0.2| to |0.1| might result in the identification of subclonal genomic imbalances, which are very frequent in tumor samples (McGranahan and Swanton, 2017), and it would also be of utility to compensate for low tumor purities. To evaluate the impact of other customizable parameters of CNApp to the results, we also tested whether the identification of broad events was affected by: (i) the relative length to classify a segment as arm-level alteration, and (ii) the re-segmentation provided by CNApp. As expected, increasing the percentage of chromosome arm required to classify a CNA segment as arm-level (from\u00a0\u226550% to\u226570%) or skipping the re-segmentation step led to an underestimation of some broad events, whereas decreasing the percentage of chromosome arm (from\u00a0\u226550% to\u226540%) resulted in the opposite (Figure 3\u2014figure supplement 1A\u2013C and Supplementary file 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig3-v2.jpg)\n\n**Figure 3.:** Calculation of broad and focal CNA frequencies using several parameters in CNApp in order to describe the genomic landscape of LIHC. (A) CNApp frequencies for chromosome arm regions using default cutoffs, corresponding to 2.3/1.7 copies for gains and losses, respectively. (B) CNApp frequencies for chromosome arm regions relaxing cutoffs to make them equivalent to those of GISTIC2.0. (C) CNApp frequencies of focal events using default thresholds and sub-cytobands genomic regions. (D) Frequencies of focal events from moderate- to high-amplitude levels using sub-cytobands genomic regions.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0The threshold of the relative length to the chromosome arm was set at\u00a0\u226570% to classify segments as chromosome arm-level. (B) Lowering the threshold of the relative length to the chromosome arm to\u00a0\u226540%. (C) Frequency plot using input data without the re-segmentation step. (TIFF 721 KB).\n\nAs far as focal CNAs are concerned, CNApp and GISTIC2.0 use different strategies to quantify their recurrence. Therefore, the comparison between the two methods was evaluated in a more indirect manner. GISTIC2.0 generates minimal common regions (also known as \u2018peaks\u2019) that are likely to be altered at high frequencies in the cohort, which are scored using a Q-value and may present a wide variety of genomic lengths (Mermel et al., 2011). Instead, CNApp allows dividing the genome in windows of different sizes, calculating average copy number amplitudes for all segments included within each window. We reasoned that considering the length of GISTIC2.0 reported \u2018peaks\u2019, CNApp might also be capable of identifying recurrent focal altered regions by dividing the genome in smaller windows. To test our hypothesis, we asked CNApp to calculate the frequency of focal gains and losses by dividing the genome by sub-cytobands. As a result, CNApp consistently localized the most frequently altered sub-cytobands, including gains at 1q21.3 (25%), 8q24.21 (17%, MYC), 5p15.33 (13%, TERT), 11q13.3 (12%, CCND1/FGF19) and 6p21.1 (11%, VEGFA), and losses at 13q14.2 (20%, RB1), 1p36.11 (18%, ARID1A), 4q35.1 (17%, IRF2) and 9p21.3 (14%, CDKN2A), which are in agreement with previous studies in HCC (Figure 3C and Supplementary file 2) (Chiang et al., 2008; Guichard et al., 2012; Schulze et al., 2015; Wang et al., 2013). Compared to GISTIC2.0, CNApp reported 14 of the 27 significant amplifications and 14 of the 34 significant deletions at rates\u00a0>\u00a010%, and the remaining alterations displaying rates between 4\u201310% (Supplementary file 3) (Wang et al., 2013). Most importantly, regions with the highest frequency detected by CNApp showed a good match with lowest GISTIC2.0 Q-residual values, indicating that the most significant \u2018peaks\u2019 identified by GISTIC2.0 were actually included in the most recurrently altered sub-cytobands reported by CNApp.\n\nRecurrent focal alterations occur at lower frequencies than broad events (Beroukhim et al., 2010). Previous studies describing the genomic landscape of HCC mostly focused on focal high-amplitude CNAs (>3 copies for gains and\u00a0<1.3 copies for losses), thus reporting lower frequencies than those estimated by CNApp using default thresholds (Chiang et al., 2008; Guichard et al., 2012; Schulze et al., 2015). In our analysis, excluding the low-level alterations and evaluating only the moderate and high-amplitude events (\u22653 and\u22641 copies), amplifications reached maximum rates of 11%, whereas high-level losses only reached\u00a0~2% (Figure 3D and Supplementary file 2). Top recurrent focal gains involved sub-cytobands 1q21.3 (11%), 8q24.21 (11%, MYC), 11q13.3 (7%, CCND1/FGF19), and 5p15.33 (5%, TERT). Recurrent losses estimated at\u00a0~2% of the samples included 13q14.2 (RB1), 9p21.3 (CDKN2A), 4q35.1 (IRF2), and 8p23.1. Although slight discrepancies between frequencies might be explained by minimal variability in the copy number threshold, CNApp results are highly consistent with previous reports (Chiang et al., 2008; Guichard et al., 2012; Schulze et al., 2015).\n\nIn order to assess genomic differences between independent sample sets, CNApp determines significance based on regression analysis and statistical tests such as Student's t-test or Fisher's exact test, which allow association of genomic regions based on the seg.mean value or the presence of alterations with specific samples, respectively. To test the suitability of our method, we analyzed a subset of 100 randomly selected samples from the LIHC (n\u00a0=\u00a050) and COAD (n\u00a0=\u00a050) TCGA cohorts and we compared our results with those obtained by the recently published tool CoNVaQ (Larsen et al., 2018). Fourteen CNAs (5 gains and 9 losses) showing significant differences between COAD and LIHC were identified by CoNVaQ with a Q\u00a0<\u00a00.05. The lengths of these CNAs ranged from 38 to 133 Mb, with an average of 67 Mb, suggesting that they were mainly broad events. Consequently, in CNApp, we selected genomic windows corresponding to chromosome arms, and used the default CNA cut-offs (i.e. |0.2|) and maximum number of base pairs allowed for merging adjacent segments (i.e. 1,000,000 bp) for comparison. By doing so, 9 out of 14 events identified by CoNVaQ were also detected by CNApp with an adjusted p<0.05 (Fisher\u2019s exact test). For the remaining five events, four of them were found with an adjusted p=0.06\u20130.1, thus suggesting a good correlation between CNApp and CoNVaQ when considering broad CNAs.\n\n### Classification of colon cancer according to CNA scores and genomic regions\n\nA proposed taxonomy of colorectal cancer (CRC) includes four consensus molecular subtypes (CMS), mainly based on differences in gene expression signatures (Guinney et al., 2015). Briefly, CMS1 includes the majority of hypermutated tumors showing microsatellite instability (MSI), high CpG island methylator phenotype (CIMP), and low levels of CNAs; CMS2 and CMS4 typically comprise microsatellite stable (MSS) tumors with high levels of CNAs; and finally, mixed MSI status and low levels of CNAs and CIMP are associated with CMS3 tumors. A representative cohort of 309 colon cancers from the TCGA Colon Adenocarcinoma (COAD) cohort (Cancer et al., 2012) with known CMS classification (CMS1, N\u00a0=\u00a064; CMS2 N\u00a0=\u00a0112; CMS3 N\u00a0=\u00a051; CMS4 N\u00a0=\u00a082) and MSI status (MSI, N\u00a0=\u00a072; MSS, N\u00a0=\u00a0225) was analyzed by using CNApp. In agreement with Guinney and colleagues, survival curves generated by CNApp indicated that CMS1 patients after relapse showed the worst survival rates as compared to CMS2 patients (Figure 4\u2014figure supplement 1A) (Guinney et al., 2015). Next, we asked CNApp to perform the re-segmentation step using the default copy number thresholds and excluding segments smaller than 500 Kbp to avoid technical background noise. Then, broad CNAs were considered to generate genomic region profiles using chromosome-arm windows. As expected, the CNA frequency plot displayed the most commonly altered genomic regions in sporadic CRC (Figure 4\u2014figure supplement 1B) (Camps et al., 2008; Cancer et al., 2012; Meijer et al., 1998; Nakao et al., 2004; Ried et al., 1996). Most frequently altered chromosome arms included gains of 7 p, 7q, 8q, 13q, 20 p, and 20q, and losses of 8 p, 17 p, 18 p, and 18q, occurring in more than 30% of the samples (Figure 4A). On the other hand, focal CNA patterns were obtained by generating genomic profiles by sub-cytobands. Of note, five out of six losses and five out of 18 gains were also identified by GISTIC2.0 in the COAD TCGA cohort (Cancer et al., 2012).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Arm-region frequencies of 309 colon cancer samples using CNApp default thresholds for CNAs. (B) BCS distribution by CMS sample groups (Figure 4\u2014source data 1). FCS distribution by CMS sample groups is presented in Figure 4\u2014figure supplement 1C. Wilcoxon rank-sum test significance is shown as p-value\u22640.001 (***); p-value\u22640.01 (**); p-value\u22640.05 (*); p-value>0.05 (ns). (C) Number of gained and lost chromosome arms for each sample distributed according to the BCS values. Note that a cutoff at four is indicated with a black line. Annotation tracks for microsatellite instability (msi), BRAF mutated samples (braf_mut), CMS groups (cms_label), FCS and BCS are displayed. (D) Genome-wide profiling by chromosome arms distributed according to the CMS group. Annotation tracks for microsatellite instability (msi), BRAF mutated samples (braf_mut), CMS groups (cms_label), FCS and BCS are displayed. Sample-to-sample correlation heatmap plot by Pearson\u2019s method is shown below. (E) Differentially altered chromosome arm regions between CMS groups (CMS1, CMS2, CMS3 and CMS4). Heatmap plot displaying the significance between CMS groups paired comparisons. Student\u2019s T-test was applied and multiple testing correction by BH method was used to assess differences in chromosome arm values between groups. Adjusted p-values are displayed.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Kaplan-Meier survival analysis across CMS groups for overall survival (see Materials\u00a0and\u00a0methods section for clinical data extracted from TCGA data portal).\u00a0(B) CNA profile bar plot with CNA alterations frequencies of 462 colon adenocarcinoma (TCGA-COAD cohort) and 164 rectum adenocarcinoma (TCGA-READ) samples using CNApp default thresholds (read for gains and blue for losses). (C) Box plot showing the distribution of FCS according to the CMS groups for 309 colon adenocarcinoma samples (Figure 4\u2014figure supplement 1\u2014source data 1). Wilcoxon rank-sum test was performed for each pair of groups to assess significant differences. Significance is expressed as: p-value\u22640.001 (***); p -value\u00a0\u2264\u00a00.01 (**); p -value\u00a0\u2264\u00a00.05 (*); p -value\u00a0>\u00a00.05 (ns). (D) BCS values density plot for MSI (brown) and MSS (green) sample groups after Classifier model section implementation selecting BCS as classifier variable (N\u00a0=\u00a0297 colon cancer samples). Vertical blue line at BCS\u00a0=\u00a04.75, as interception value between groups. (E) Sensitivity and specificity curves in ROC analysis across BCS threshold values showing the intersection value of 3.75 (green vertical line). The blue line shows our proposed threshold of BCS\u00a0=\u00a04. (F) Distribution of chromosome arm 20q copy-number amplitude values according to the CMS groups. Wilcoxon rank-sum test was performed for each pair of groups to assess significant differences. Significance is shown as p-value\u22640.001 (***); p-value\u22640.01 (**); p-value\u22640.05 (*); p-value>0.05 (ns). (TIFF 664 KB).\n\nSubsequently, we performed integrative analysis of genomic imbalances, CMS groups, and CNA scores. By using CNApp, we assessed whether CNA scores were able to classify colon cancer samples according to their CMS. While BCS established significant differences between CMS paired comparisons (p\u22640.0001, Student\u2019s t-test), FCS poorly discerned CMS1 from three and CMS2 from 4 (Figure 4B\u2014source data 1 and Figure 4\u2014figure supplement 1C\u2014source data 1). Thus, we reasoned that broad CNAs rather than focal were able to better discriminate between different CMS groups. In fact, the distribution of CMS groups based on BCS resembled the distribution of somatic CNA counts defined by GISTIC2.0 (Guinney et al., 2015).\n\nNext, we integrated the BCS and the CMS groups with the microsatellite status. Our results showed an average BCS of 1.51\u00a0\u00b1\u00a02.11 and 10.25\u00a0\u00b1\u00a05.92 for MSI (N\u00a0=\u00a072) and MSS (N\u00a0=\u00a0225) tumors, respectively. By applying CNApp's Classifier model to the COAD cohort, we chose MSI and MSS status (72 MSI and 225 MSS samples). Global accuracy in average for the 50-permutation in the RandomForest model was 82.2%. Re-classification of MSI and MSS samples was successfully achieved and distribution of BCS values across MSI and MSS-predicted samples is plotted in Figure 4\u2014figure supplement 1D. Intersection between predicted MSI and MSS groups resulted in a BCS value of 4.75, and further analysis by ROC curve implementation between MSI and MSS groups with BCS values as classifier proxy resulted in an AUC of 0.917. In addition, the intersection between sensitivity and specificity from ROC analysis resulted in a BCS value of 3.5 (Figure 4\u2014figure supplement 1E). Altogether, we decided to implement a BCS value of 4 as a threshold to re-classify samples according to their MSI status. In order to validate that a BCS value of 4 was able to predict microsatellite status, we used a completely independent CRC cohort (Berg et al., 2019). The validation dataset consisted of segmented data from 147 samples with known microsatellite status and CMS annotation (MSI, N\u00a0=\u00a028; MSS, N\u00a0=\u00a0119; CMS1, N\u00a0=\u00a027; CMS2, N\u00a0=\u00a061; CMS3, N\u00a0=\u00a029; CMS4, N\u00a0=\u00a030). We then ran CNApp to obtain BCS values for each sample and applied our BCS of 4 as the threshold to re-classify samples (i.e. MSI if BCS\u00a0\u22644, and MSS if BCS\u00a0>4) using the Classifier model. By doing so, we obtained a global accuracy of 81%, which is similar to the accuracy obtained in the COAD dataset (82.2%), thus suggesting that a BCS equal to four might be considered as a universal threshold to determine microsatellite status in CRC.\n\nApplying the cutoff of 4 to the COAD cohort, 186 out of 225 (83%) of MSS tumors showed BCS values greater than 4 (Figure 4C). In contrast, 39 (17%) MSS tumors showed a BCS of 4 or lower, corresponding to three CMS1, six CMS2, 18 CMS3 and 12 CMS4 tumors, further demonstrating the existence of MSS tumors with a very low CNA burden. On the other hand, seven MSI tumors showed BCS higher than 4. Among them, five samples displayed genomic imbalances typically associated with the CRC canonical pathway, including a focal amplification of MYC, unveiling tumors with co-occurrence of MSI and extensive genomic alterations (Trautmann et al., 2006). Our dataset comprised nine out of 51 CMS3 tumors with MSI. Intriguingly, two of them showed focal deletions on chromosome two involving MSH2 and MSH6, suggesting the inactivation of these mismatch repair genes through a focal genomic imbalance. In fact, 46% of CMS3 MSS tumors showed BCS below 4, in agreement with the finding that CMS3 tumors display low levels of somatic CNAs.\n\nMoreover, CNApp enabled the identification of possible sample misclassifications by integrating CMS annotation and BRAF-mutated sample status. As expected, CMS1 cases were enriched for BRAF mutation, although two CMS4 samples also showed mutations in BRAF. One of these samples showed a BCS of 11, displaying canonical CNAs. In contrast, the other CMS4 BRAF-mutated sample showed MSI and a BCS of 0, similar features as CMS1. Likewise, four BRAF-wt samples, classified within the CMS4 group, displayed MSI and a BCS of 0, thus being candidates to be labeled as CMS1 based on the levels of CNAs (Figure 4D). These disparities are of utmost importance since recent studies reported that high copy number alterations correlate with reduced response to immunotherapy (Davoli et al., 2017). Importantly, it has been suggested that MSI status might be predictive of positive immune checkpoint blockade response in advanced CRC, probably due to the low levels of CNA usually presented by MSI tumors (Le et al., 2015).\n\nWe then asked CNApp to compare differentially represented genomic regions between all CMS groups based on a Student's t-test or Fisher's test with adjusted p-value. By applying a Student's t-test, we observed that CMS1 resembled CMS3, except for the gain of chromosome seven and the loss of 18q, which were regions commonly altered in CMS3 samples with BCS above 4 (adjusted p\u22640.001, Student's t-test) (Figure 4E). Even though only subtle CNA differences between CMS2 and CMS4 were identified, the loss of 14q was significantly more detected in CMS2 (42%) than in CMS4 (17.1%) (adjusted p\u22640.005, Student's t-test). The gain of 12q was more frequently associated with CMS1 than CMS2 (adjusted p\u22640.005, Student's t-test), in agreement with previous studies reporting that the gain of chromosome 12 is associated with microsatellite unstable tumors (Figure 4E) (Trautmann et al., 2006). Intriguingly, the gain of the chromosome arm 20q alone mimicked the distribution of somatic CNAs defined by GISTIC2.0 across consensus subtype samples (Figure 4\u2014figure supplement 1F) (Guinney et al., 2015).\n\nFinally, applying machine learning-based prediction models to classify samples by the most discriminative descriptive regions across CMS groups (i.e. 13q, 17 p, 18, and 20q), CNApp reached 55% of accuracy to correctly predict CMS. In fact, the occurrence of these genomic alterations was able to differentiate CMS2 from CMS4 with an accuracy of 70%, and CMS1 from CMS3 with a 72.3% accuracy. As expected, this set of genomic alterations distinguished CMS1 from CMS2 samples with an accuracy of 95%.\n\n## Discussion\n\nHere, we present CNApp, a web-based computational tool that provides a unique framework to comprehensively analyze and integrate CNAs associated with molecular and clinical variables, assisting data-driven research in the biomedical context. Although CNApp has been developed using segmented genomic copy number data obtained from SNP-arrays, the software is also able to accommodate segmented data from any next-generation sequencing platform.\n\nCNApp transforms segmented data into genomic profiles, allowing sample-by-sample comparison and the assessment of differentially altered genomic regions, which can then be selected by the user to assess classifier variables by computing machine learning-based models. Importantly, besides identifying the impact of specific CNAs, CNApp provides the unique opportunity to establish associations between the burden of genomic alterations and any clinical or molecular variable. To do so, CNApp calculates CNA scores, a quantification of the broad (BCS), focal (FCS) and global (GCS) levels of genomic imbalances for each individual sample. The fact that high levels of aneuploidy may correlate with tumor immune evasion markers and that CNA burdens may be an independent prognostic factor for cancer-specific lethality in some cancers exemplifies the potential association of CNA scores with clinical outcomes (Buccitelli et al., 2017; Davoli et al., 2017; Hieronymus et al., 2018; Taylor et al., 2018). To note, CNA scores are calculated after an optional process of re-segmentation that enables to redefine CNA boundaries and to adjust sample-specific copy number thresholds by correcting for tumor purity estimates.\n\nIn agreement with recently reported findings (Beroukhim et al., 2010; Hoadley et al., 2018; Taylor et al., 2018), CNApp was benchmarked by analyzing 10,635 samples spanning 33 cancer types from the TCGA pan-cancer dataset, and was able to cluster major tumor types according to CNA patterns. Moreover, the software successfully reproduced the well-characterized genomic profile of HCC and CRC, considering both broad and focal events, demonstrating the reliability of CNApp in identifying regions encompassing the most recurrent CNAs (Ally et al., 2017; Cancer et al., 2012).\n\nFinally, applying CNApp to the TCGA colon cancer sample set, for which MSI status and CMS classification was well annotated, we determined that a BCS value of 4 discriminates MSI from MSS tumors with high accuracy, reinforcing the utmost significance of quantifying the CNA burdens. Most importantly, due to the inverse correlation between MSI and aneuploidy in CRC, our results suggest that this BCS value could be established as a cutoff to define the edge between low and high aneuploid tumors. In fact, while high aneuploid tumors show poor response to immunotherapy, it has been suggested that CMS1 microsatellite unstable tumors are likely to show a positive response to immune checkpoints inhibitors (Kalyan et al., 2018; Le et al., 2015). However, BCS was not associated with overall survival in patients after relapse (data not shown). Moreover, specific genomic regions defined by CNApp contributed to classify the CMS groups, confirming the functional importance of specific genomic imbalances in the pathogenesis of this disease and providing insights into the classification of CRC based on CNA profiles.\n\nIn summary, although our results ought to be further validated in independent cohorts, here we show that CNApp enables not only the fundamental analysis of CNA profiles, but also the functional understanding of CNAs in the context of clinical outcome and their potential use as biomarkers, thus becoming an asset to the cancer genomics community.\n\n## Materials and methods\n\n### Data availability\n\n#### Pan-cancer cohort and clinical annotation\n\nAffymetrix SNP6.0 array copy number segmented data (Level 3) from 10,635 samples spanning 33 cancer types from TCGA pan-cancer dataset were downloaded from the Genomic Data Commons Data Portal (GDC Data Portal, RRID:SCR_014514) (Grossman et al., 2016). This dataset included the 370 Liver Cancer-Hepatocellular Carcinoma (LIHC) samples used for the analysis of recurrent CNAs and the subset of 309 samples from Colon Adenocarcinoma (COAD) for which the colorectal cancer consensus molecular subtype (CMS) was known (Guinney et al., 2015).\n\nClinical annotation for the 309 COAD samples was retrieved by using TCGAbiolinks R package (TCGAbiolinks, RRID:SCR_017683) in order to extract survival information for each sample (Colaprico et al., 2016).\n\n#### GISTIC data from TCGA: LIHC cohort\n\nGISTIC 2.0.22 (Ally et al., 2017) copy number results from 370 LIHC samples included in the TCGA (The Cancer Genome Atlas, RRID:SCR_003193), were downloaded from the Broad Institute GDAC Firehose (https://gdac.broadinstitute.org/). Parameters used for the analysis are detailed in the same GDAC repository. Specifically, parameters conditioning the definition of the CNAs and of interest for our comparison were publicly reported with the following values: amplification and deletion thresholds: 0.1; broad length cutoff: 0.7; joint segment size: 4.\n\n### Software and tool availability\n\nCNApp can be accessed at https://tools.idibaps.org/CNApp/. It was developed using Shiny R package (version 1.1.0), from R-Studio (Shiny, RRID:SCR_001626) (Chang et al., 2018). The tool was applied and benchmarked while using R version 3.4.2 (2017-09-28) -- \u2018Short Summer\u2019. List of packages, libraries and base coded are freely available at GitHub, and instructions for local installation are also specified.\n\n### Baseline adjustment of seg.mean values by sample purity\n\nThe amount of non-aberrant cell admixture may differ between cancer samples, necessitating separate adjustment of copy number thresholds for each assayed sample. To homogenize the analysis, purity estimations are used by CNApp to apply a baseline adjustment of the seg.means before the subsequent CNA calling by CNA amplitude thresholds. This adjustment allows for subsequent sample-to-sample comparison. Seg.mean values (n) by sample (x), when purity (r) available, are re-computed into new seg.mean values (N) as follows:\n\n$$\nN(x)=2^{n(x)+(r(x)-1)}\n$$\n\nWhen purity is not provided, 100% purity (r\u00a0=\u00a01) is assumed. Minimal purity accepted is 40% (r\u00a0=\u00a00.4), setting to 40% all purities below. Threshold of 40% also sets the negative capping value (C) as the maximal loss possible when heterozygous deletion happens (from 2 copies to one copy):\n\n$$\nC=log_{2}\\frac{1}{2}\u00b70.4=-2.32\n$$\n\n### CNA scores computation\n\nSegments resulting from re-segmentation (or original segments from input file when re-segmentation is skipped) are classified in chromosomal, arm-level and focal events by considering the relative length of each segment to the whole-chromosome or chromosome arm. Using default parameters, segments are tagged as chromosomal when 90% or more of the chromosome is affected; as arm-level when 50% or more of the chromosome arm is affected; and as focal when affecting less than 50% of the chromosome arm. Percentages for relative lengths are customizable.\n\nBroad (chromosomal and arm-level) and focal alterations are then weighted according to their amplitude values (seg.mean) and taking into account copy number amplitude ranges defined by CNA calling thresholds. Default amplitude thresholds to define these ranges, CNA levels and their corresponding absolute copy number are presented in Table 1.\n\n**Table 1.**\n Corresponding weights (A) for each threshold, CNA level and its absolute copy number.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Thresholds (Log2ratio values)</th>\n      <th>CNA level</th>\n      <th>Copy number</th>\n      <th>Weights (A)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>High-level gain</td>\n      <td>\u22654 copies</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.58</td>\n      <td>Medium-level gain</td>\n      <td>[3\u20134) copies</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>0.2</td>\n      <td>Low-level gain</td>\n      <td>[2.3\u20133] copies</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>\u22120.2</td>\n      <td>Low-level loss</td>\n      <td>(1\u20131.7] copies</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>-1</td>\n      <td>Medium-level loss</td>\n      <td>(0.6\u20131] copies</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>\u22121.74</td>\n      <td>High-level loss</td>\n      <td>\u22640.6 copies</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>[\u22120.2\u20130.2]</td>\n      <td>Copy-neutral loss-of-heterozygosity (CN-LOH)</td>\n      <td>[1.7\u20132.3] copies BAF\u00a0\u2265\u00a00.25</td>\n      <td>2</td>\n    </tr>\n  </tbody>\n</table>\n\nIn order to take into account the relative chromosome length from each segment when FCS is computed, coverage punctuation for focal events is implemented as specified in Table 2.\n\n**Table 2.**\n Coverage punctuation (L) for focal events.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>% chromosome-arm coverage</th>\n      <th>Coverage punctuation (L)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u22645%</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>&gt;5% to\u226415%</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>&gt;15% to\u226430%</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>&gt;30%</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>\n\nBroad CNA Score (BCS): for a total N of broad events in a sample (x), it equals to the summation of segments weights (A) in that corresponding sample and being i the corresponding segment:\n\n$$\nBCS(x)=\\sumi=1NA_{i}\n$$\n\nFocal CNA Score (FCS): same as in BCS, with an additional pondering value L included to the summation, which captures the relative size of the chromosome-arm coverage of each focal CNA):\n\n$$\nFCS(x)=\\sumi=1NA_{i}\u00b7L_{i}\n$$\n\nGlobal CNA Score (GCS): for a sample x, it is calculated as the summation of normalized BCS and FCS values, where meanBCS and meanFCS stand for mean values of BCS and FCS from total samples, respectively, and sdBCS and sdFCS stand for standard deviation values of BCS and FCS from total samples, respectively:\n\n$$\nnormBCSx=\\frac{BCSx-meanBCS}{sdBCS}normFCSx=\\frac{FCSx-meanFCS}{sdFCS}\n$$\n\n\n\n$$\nGCSx=normBCS(x)+normFCS(x)\n$$\n\n### Correlation between CNA scores and the fraction of genome altered\n\nCorrelation between broad, focal and global CNA scores (BCS, FCS and GCS, respectively) was assessed by computing Spearman\u2019s rho statistic. The TCGA pan-cancer dataset including 10,635 samples spanning 33 cancer types was used to perform these associations. This data was downloaded from the Genomic Data Commons Data Portal (GDC Data Portal, RRID:SCR_014514) (Grossman et al., 2016).\n\nTo evaluate the applicability of the CNA scores when it comes to sample CNA level assessment, we performed correlation analyses between CNA scores and the altered genome fraction. BCS and FCS were specifically correlated to the altered genome fraction by broad (i.e., chromosomal and arm-level events) and focal alterations, respectively. To do so, we applied the re-segmentation procedure and CNA scores computation on a TCGA dataset comprised by 10,635 primary tumors from 33 TCGA projects analyzed by Affymetrix 6.0 SNP-array and DNACopy (DNAcopy, RRID:SCR_012560) (Venkatraman and Olshen, 2007). Global altered genome fraction (altFract) was computed, for each sample (x), by the summation of all copy number events lengths (l) and divided by total length of human genome (hgLength).\n\n$$\naltFract(x)=\\frac{\\sumi=1Nl_{i}}{hgLength}\n$$\n\nAltered genome fractions for broad and focal events were computed, for each sample (x), by the summation of broad and focal alterations lengths (l), respectively, and divided by total length of human genome (hgLength).\n\n$$\nBroadaltFract(x)=\\frac{\\sumi=1Nl_{i(Broad)}}{hgLength}\n$$\n\n\n\n$$\nFocalaltFract(x)=\\frac{\\sumi=1Nl_{i(Focal)}}{hgLength}\n$$\n\nCorrelation tests were performed by applying Spearman\u2019s rho statistic to estimate a rank-based measure of association.\n\n### Associations between CNA scores and annotated variables\n\nAnnotated variables from input file are statistically associated with CNA scores computed by CNApp in Re-Seg and Score section. Different association tests are applied according to variable class (i.e. categoric or numerical), as described in Table 3. Both parametric and non-parametric tests are computed to present p-values in order to assess statistical significance for each association.\n\n**Table 3.**\n Statistical tests used in CNApp.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Parametric</th>\n      <th>Non-parametric</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Categoric</td>\n      <td>n\u00a0=\u00a02</td>\n      <td>Student\u2019s T-test</td>\n      <td>Wilcoxon rank-sum test</td>\n    </tr>\n    <tr>\n      <td>n\u00a0&gt;\u00a02</td>\n      <td>ANOVA</td>\n      <td>ANOVA: Kruskal test</td>\n    </tr>\n    <tr>\n      <td>Numerical</td>\n      <td></td>\n      <td>Pearson's rank correlation</td>\n      <td>Spearman's rank correlation</td>\n    </tr>\n  </tbody>\n</table>\n\n_n\u00a0=\u00a0groups defined by annotation variable._\n\n### Survival analysis\n\nSurvival analysis by Kaplan-Meier was performed using survival and survminer R packages (CRAN, RRID:SCR_003005).\n\n### Genomic region profiles computation\n\nRegion profiling section allows genome segmentation analysis by user-selected windows (i.e. arms, half-arms, cytobands, sub-cytobands, and 40 Mb till 1 Mb). In order to do that, windows files were generated for each option and genome build (hg19 and hg38). Cytobands file cytoBand.txt from UCSC page and for both genome builds was used as mold to compute regions (Tyner et al., 2017).\n\nSegmented samples are transformed into genome region profiles using genomic windows selected by user. Segments from each sample are consulted to assess whether or not overlap with the window region. Thus, window-means (W) are computed for each genomic window by collecting segments (t) overlapping with window-region (i). Segments with loc.start or loc.end position falling within the region are collected, as well as those segments embedding the entire region. At this point, the summation of each segment-mean (S) corrected by the relative window-length (L) affected by the segment length (l) is performed:\n\n$$\nW(i)=\\sumt=1nS_{t}\u00b7\\frac{l_{t}}{L(i)}\n$$\n\n### Descriptive regions assessment\n\nPotential descriptive regions between groups defined by the annotated variables provided in the input file can be studied and p-values are presented to evaluate significance in differentially altered regions between those groups. The alterations can be considered as (1) numerical continuous (seg.mean values) and (2) categorical variables (gains, losses and non-altered). In the first case, to assess statistical significance between groups Student\u2019s T-test is applied, whereas in the second situation the significance is assessed by applying the Fisher\u2019s exact test. False discovery rate (FDR) adjustment is performed using the Benjamini-Hochberg (BH) procedure in both cases and corrected p-values (Adj.p-value) or non-corrected p-values (p-values) are displayed by user selection.\n\n### Clustering analysis\n\nCorrelation and clustering methods can be applied into heatmap plots in CNApp Region profile section. Accepted correlation methods are Pearson\u2019s, Spearman\u2019s and Kendall\u2019s tests. Hierarchical cluster analysis is applied when clusters are computed in heatmaps.\n\n### Machine learning-based classifier models\n\nWe used the randomForest R package (RandomForest Package in R, RRID:SCR_015718) (Liaw and Wiener, 2002) to compute machine learning classifier models. Variables to define sample groups must be selected, as well as at least one classifier variable. Model construction is performed 50-times and training set is changed by iteration. In order to compute model and select training set, multiple steps and conditions have to be accomplished:\n\nAfter model computation, contingency matrix with prediction and reference values by group is created to compute accuracy, specificity and sensitivity by group.\n",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "5f5f4627-b6a8-4846-89eb-40f9de0c0bf8",
+      "submission_id": "1921d6ac-8a01-493b-a276-2fdbaa124ce0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- C Daniela Robles-Espinoza, International Laboratory for Human Genome Research Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.50267.sa1](https://doi.org/10.7554/eLife.50267.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nCNApp is an interactive tool that allows users to visualise whole-genome copy-number profiles from data generated from a number of different platforms, and facilitates performing different analyses such as computation of copy-number alteration scores and sample classification to aid biological interpretation of results. We think it is of utmost importance to provide users with tools for interpreting large amounts of data in an easy manner, and here it is done supplying extensive support for how to use such software. We believe that bench biologists and medical professionals will be interested in this work, as well as bioinformaticians and data analysts.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"CNApp: quantification of copy number alterations in cancer and integrative analysis to unravel clinical implications\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kathryn Cheah as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Franch-Exp\u00f3sito et al. describe a new app, CNApp, that facilitates the analysis of large datasets of copy number variation. As a proof of principle, they apply it to TCGA SNP-chip datasets and do three different analyses (overall TCGA, hepatocellular carcinoma and colon cancer). Overall, the reviewers find that the app seems to work, and that the analysis performed is reasonable. In broad terms, they show concordance with other published results, with some differences. However, a number of essential revisions must be performed before the work can be accepted for publication.\n\nEssential revisions:\n\n1) Two of the reviewers mentioned problems when using CNApp in different browsers (one mentioned problems with Safari and Firefox, the other one with Chrome and Safari). Please make sure that the app works with all major browsers (preferably), or at the very least indicate the preferred settings for using it.\n\n2) The major advantage that CNApp would offer is the ability to perform large-scale analyses of copy number variation easily for non-bioinformaticians. However, in the current manuscript it is only compared against GISTIC2.0, but even though there seem to be substantial differences between the results of both CN callers, no effort seems to have been made to indicate that CNApp's calls are more accurate, or why users should trust its output. Please compare the results of CNApp not only against GISTIC2.0 but also against other copy number callers, such as CoNVaQ (Larsen et al., 2018) and CNspector (Markham, Sci Rep, 2019), and offer an analysis of the accuracy of CNApp. The use of simulated datasets is suggested for this purpose (For example, see Mermel et al., 2011).\n\n3) Please justify the boundary between focal and broad CNAs, and why that particular boundary was chosen. On the same note, a BCS value of 4 is suggested to be able to distinguish between tumour subtypes in section \"Classification of colon cancer according to CNA scores and genomic regions\", however no validation in any external datasets is shown to indicate that this is a reliable value. Can the authors please explain if we should expect to see this replicated in other datasets?\n\n4) Please justify the choice of a random forest classification model, and offer a clear explanation of when this analysis is suitable. The ability to \"establish associations between the burden of genomic alterations and any clinical or molecular variable\" in a user's dataset could lead to spurious correlations and false positive results, given that the tool is aimed at non-experts.\n\n5) Please explain how the CNApp tool deals with whole-genome duplication events.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"CNApp, a tool for the quantification of copy number alterations and integrative analysis revealing clinical implications\" for further consideration by eLife. Your revised article has been evaluated by Kathryn Cheah (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) In the subsection \u201c, please change the word 'capacity' for 'ability'.\n\n2) Please add labels for the Y-axis in all three plots in Figure 2A.\n\n3) Please be more specific when describing the data shown in supplementary files, adding a description of what columns mean.\n\n4) In legend for Figure 4B, do you mean Wilcoxon rank sum test?\n\n5) In the third paragraph of the subsection \u201cClassification of colon cancer according to CNA scores and genomic regions\u201d, do you mean Figure 4\u2014figure supplement 1E? It is not clear that Figure 4\u2014figure supplement 1F refers to what is specified in the text.\n",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f28a7fe-656d-41ef-b892-e6024fd44fb7",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C1",
+      "claim": "Somatic copy number alterations (CNAs) are a hallmark of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic copy number alterations (CNAs) are a hallmark of cancer, but their role in tumorigenesis and clinical relevance remain largely unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about CNAs being a hallmark of cancer, which is established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "991f2434-6999-429d-969d-6c797e1522d5",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C2",
+      "claim": "The role of CNAs in tumorigenesis and clinical relevance remain largely unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic copy number alterations (CNAs) are a hallmark of cancer, but their role in tumorigenesis and clinical relevance remain largely unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge regarding CNAs, based on inference from the literature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "6dac04ee-12f0-4e7f-ba56-59f445bab5d1",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C3",
+      "claim": "CNApp is a web-based tool that allows a comprehensive exploration of CNAs by using purity-corrected segmented data from multiple genomic platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we developed CNApp, a web-based tool that allows a comprehensive exploration of CNAs by using purity-corrected segmented data from multiple genomic platforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development and capabilities of CNApp as presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "2892d022-56f2-4d8b-bd90-6fec5759af7d",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C4",
+      "claim": "CNApp generates genome-wide profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "CNApp generates genome-wide profiles, computes CNA scores for broad, focal and global CNA burdens, and uses machine learning-based predictions to classify samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of CNApp as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "4a7f6d23-8284-47b5-af21-36af67d67c8d",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C5",
+      "claim": "CNApp computes CNA scores for broad, focal and global CNA burdens.",
+      "claim_type": "EXPLICIT",
+      "source": "CNApp generates genome-wide profiles, computes CNA scores for broad, focal and global CNA burdens, and uses machine learning-based predictions to classify samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of CNApp as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "b0236a4f-8c8e-4bd5-89a5-97bbce5c81d1",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C6",
+      "claim": "CNApp uses machine learning-based predictions to classify samples.",
+      "claim_type": "EXPLICIT",
+      "source": "CNApp generates genome-wide profiles, computes CNA scores for broad, focal and global CNA burdens, and uses machine learning-based predictions to classify samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of CNApp as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "83046f5d-0852-468d-92d4-37bfa7f72d45",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C7",
+      "claim": "CNApp was applied to the TCGA pan-cancer dataset of 10,635 genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied CNApp to the TCGA pan-cancer dataset of 10,635 genomes showing that CNAs classify cancer types according to their tissue-of-origin, and that each cancer type shows specific ranges of broad and focal CNA scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the application of CNApp to a specific dataset as performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "6e30e37d-c592-4363-a856-c69936efab4b",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C8",
+      "claim": "CNAs classify cancer types according to their tissue-of-origin.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied CNApp to the TCGA pan-cancer dataset of 10,635 genomes showing that CNAs classify cancer types according to their tissue-of-origin, and that each cancer type shows specific ranges of broad and focal CNA scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "4fdf1856-5856-4622-8431-37ac7ca05f79",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C9",
+      "claim": "Each cancer type shows specific ranges of broad and focal CNA scores.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied CNApp to the TCGA pan-cancer dataset of 10,635 genomes showing that CNAs classify cancer types according to their tissue-of-origin, and that each cancer type shows specific ranges of broad and focal CNA scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "75efdce2-93b3-4eff-8463-22aa2a258e8c",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C10",
+      "claim": "CNApp reproduces recurrent CNAs in hepatocellular carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CNApp reproduces recurrent CNAs in hepatocellular carcinoma and predicts colon cancer molecular subtypes and microsatellite instability based on broad CNA scores and discrete genomic imbalances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the application of CNApp to hepatocellular carcinoma data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "404ac49b-1e2e-4dcf-9d69-7ffefe5dee14",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C11",
+      "claim": "CNApp predicts colon cancer molecular subtypes based on broad CNA scores and discrete genomic imbalances.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CNApp reproduces recurrent CNAs in hepatocellular carcinoma and predicts colon cancer molecular subtypes and microsatellite instability based on broad CNA scores and discrete genomic imbalances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the application of CNApp to colon cancer data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "a638d484-a7fe-4206-b7ea-80400d1027fb",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C12",
+      "claim": "CNApp predicts microsatellite instability based on broad CNA scores and discrete genomic imbalances.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CNApp reproduces recurrent CNAs in hepatocellular carcinoma and predicts colon cancer molecular subtypes and microsatellite instability based on broad CNA scores and discrete genomic imbalances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the application of CNApp to colon cancer data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "8556ed18-ccd5-4aed-89c6-3e200d50dd54",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C13",
+      "claim": "CNApp facilitates CNA-driven research by providing a unique framework to identify relevant clinical implications.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, CNApp facilitates CNA-driven research by providing a unique framework to identify relevant clinical implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the utility of CNApp based on the authors' work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "a3467337-c374-492b-b494-90e697e75ba5",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C14",
+      "claim": "CNApp is hosted at https://tools.idibaps.org/CNApp/.",
+      "claim_type": "EXPLICIT",
+      "source": "CNApp is hosted at https://tools.idibaps.org/CNApp/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about where CNApp can be accessed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "cedaa348-08f6-4dec-a338-d132701f6474",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C15",
+      "claim": "The distribution of CNAs is sufficiently tissue-specific to distinguish tumor entities.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the distribution of CNAs is sufficiently tissue-specific to distinguish tumor entities (Ried et al., 2012), and allows the identification of tumors responsive to particular therapies (Cairncross et al., 2013; Davoli et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ried et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "2c7ecfd6-025c-446c-b22b-4ad822949d3f",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C16",
+      "claim": "CNAs allow the identification of tumors responsive to particular therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the distribution of CNAs is sufficiently tissue-specific to distinguish tumor entities (Ried et al., 2012), and allows the identification of tumors responsive to particular therapies (Cairncross et al., 2013; Davoli et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cairncross et al., 2013 and Davoli et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "0e155d17-22c5-4a7b-9ba9-faba5e2dacd7",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C17",
+      "claim": "High levels of CNAs, which result from chromosome instability, are generally associated with high-grade tumors and poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, high levels of CNAs, which result from chromosome instability, are generally associated with high-grade tumors and poor prognosis (Hieronymus et al., 2018; Sansregret et al., 2018; Smith and Sheltzer, 2018; Stopsack et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "6bc2a4c1-db3c-46ab-9f06-8a853108724e",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C18",
+      "claim": "Broad CNAs are defined as whole-chromosome and chromosomal arm-level alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Two main subtypes of CNAs can be discerned: broad CNAs, which are defined as whole-chromosome and chromosomal arm-level alterations, and focal CNAs, which are alterations of limited size ranging from part of a chromosome-arm to few kilobases (Krijgsman et al., 2014; Zack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to Krijgsman et al., 2014 and Zack et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "ca7bc172-e878-4e51-93f6-949c92ebbaa8",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C19",
+      "claim": "Focal CNAs are alterations of limited size ranging from part of a chromosome-arm to few kilobases.",
+      "claim_type": "EXPLICIT",
+      "source": "Two main subtypes of CNAs can be discerned: broad CNAs, which are defined as whole-chromosome and chromosomal arm-level alterations, and focal CNAs, which are alterations of limited size ranging from part of a chromosome-arm to few kilobases (Krijgsman et al., 2014; Zack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to Krijgsman et al., 2014 and Zack et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "5677aa87-8bb3-44d2-aa8c-6829c243ea21",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C20",
+      "claim": "Focal events mainly correlate with cell cycle and proliferation markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been uncovered that while focal events mainly correlate with cell cycle and proliferation markers, broad aberrations are mainly associated with immune evasion markers, suggesting that tumor immune features might be determined by mechanisms related to overall gene dosage imbalance rather than specific actionable genes (Buccitelli et al., 2017; Davoli et al., 2017; Taylor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "9a71cff1-c004-4e7b-a955-0e3740111cb4",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C21",
+      "claim": "Broad aberrations are mainly associated with immune evasion markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been uncovered that while focal events mainly correlate with cell cycle and proliferation markers, broad aberrations are mainly associated with immune evasion markers, suggesting that tumor immune features might be determined by mechanisms related to overall gene dosage imbalance rather than specific actionable genes (Buccitelli et al., 2017; Davoli et al., 2017; Taylor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "59dfabed-0230-4e5e-9854-905409392da8",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C22",
+      "claim": "Tumor immune features might be determined by mechanisms related to overall gene dosage imbalance rather than specific actionable genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been uncovered that while focal events mainly correlate with cell cycle and proliferation markers, broad aberrations are mainly associated with immune evasion markers, suggesting that tumor immune features might be determined by mechanisms related to overall gene dosage imbalance rather than specific actionable genes (Buccitelli et al., 2017; Davoli et al., 2017; Taylor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "888df8f0-8af1-466c-82a0-1e8398fdebd5",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C23",
+      "claim": "Broad CNAs involving whole-chromosome arms may confer high risk of lethal disease in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been shown that broad CNAs involving whole-chromosome arms may confer high risk of lethal disease in prostate cancer (Stopsack et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stopsack et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "77b0c694-7461-4fa1-8d92-8b87a0c28cb7",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C24",
+      "claim": "The precise role of CNAs in tumor initiation and progression, as well as their clinical relevance and therapeutic implications in most cancer types remain still poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the precise role of CNAs in tumor initiation and progression, as well as their clinical relevance and therapeutic implications in most cancer types remain still poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "a4836671-b673-4491-b2d0-aa363358f643",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C25",
+      "claim": "Interpretation and visualization of CNAs is time-consuming and very often requires complex analyses with clinical and molecular information.",
+      "claim_type": "EXPLICIT",
+      "source": "Interpretation and visualization of CNAs is time-consuming and very often requires complex analyses with clinical and molecular information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges in CNA analysis based on the authors' experience and knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "b64a2079-5128-4718-8055-5441a65d530f",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C26",
+      "claim": "Circular binary segmentation is a gold-standard algorithm for defining genomic boundaries of copy number gains and losses.",
+      "claim_type": "EXPLICIT",
+      "source": "Well-established CNA algorithms, such as the gold-standard circular binary segmentation, define the genomic boundaries of copy number gains and losses based on signal intensities or read depth obtained from array comparative genomic hybridization and SNP-array or next-generation sequencing data, respectively (Olshen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Olshen et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "8e79c3ce-a5bf-41e7-a5b0-22f58380223a",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C27",
+      "claim": "Tumor-derived genomic complexity may cause an under- or overestimation of CNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the tumor-derived genomic complexity may cause an under- or overestimation of CNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a known issue in CNA analysis based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "6d8ebe00-612f-4a52-9e80-dddf3b4bd8ca",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C28",
+      "claim": "Tumor-derived genomic complexity is represented by tumor purity, tumor aneuploidy, and intratumor heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "This complexity is represented by tumor purity, tumor aneuploidy, and intratumor heterogeneity, which imply high levels of subclonal alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about factors contributing to tumor complexity based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "e54cad27-81e5-4cbc-b4a0-abdc429d4521",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C29",
+      "claim": "ExomeCNV is a segmentation method that considers the B allele frequency (BAF).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, recent segmentation methods improved the accuracy to identify copy number segments in tumor samples either by considering the B allele frequency (BAF), such as ExomeCNV (Sathirapongsasuti et al., 2011), Control-FREEC (Boeva et al., 2012) and SAAS-CNV (Zhang and Hao, 2015), or through adjusting by sample purity and ploidy estimates, such as GAP (Popova et al., 2009), ASCAT (Van Loo et al., 2010) and ABSOLUTE (Carter et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sathirapongsasuti et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "83cd0148-1c79-4d2f-a957-086972d040fc",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C30",
+      "claim": "Control-FREEC is a segmentation method that considers the B allele frequency (BAF).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, recent segmentation methods improved the accuracy to identify copy number segments in tumor samples either by considering the B allele frequency (BAF), such as ExomeCNV (Sathirapongsasuti et al., 2011), Control-FREEC (Boeva et al., 2012) and SAAS-CNV (Zhang and Hao, 2015), or through adjusting by sample purity and ploidy estimates, such as GAP (Popova et al., 2009), ASCAT (Van Loo et al., 2010) and ABSOLUTE (Carter et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Boeva et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "10148a04-a360-4fc6-80e1-4f8857264745",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C31",
+      "claim": "SAAS-CNV is a segmentation method that considers the B allele frequency (BAF).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, recent segmentation methods improved the accuracy to identify copy number segments in tumor samples either by considering the B allele frequency (BAF), such as ExomeCNV (Sathirapongsasuti et al., 2011), Control-FREEC (Boeva et al., 2012) and SAAS-CNV (Zhang and Hao, 2015), or through adjusting by sample purity and ploidy estimates, such as GAP (Popova et al., 2009), ASCAT (Van Loo et al., 2010) and ABSOLUTE (Carter et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhang and Hao, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "921bef0a-bdf0-482e-b85f-effcc21f1031",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C32",
+      "claim": "GAP is a segmentation method that adjusts by sample purity and ploidy estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, recent segmentation methods improved the accuracy to identify copy number segments in tumor samples either by considering the B allele frequency (BAF), such as ExomeCNV (Sathirapongsasuti et al., 2011), Control-FREEC (Boeva et al., 2012) and SAAS-CNV (Zhang and Hao, 2015), or through adjusting by sample purity and ploidy estimates, such as GAP (Popova et al., 2009), ASCAT (Van Loo et al., 2010) and ABSOLUTE (Carter et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Popova et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "b6f0630c-910c-4c93-8d2d-ce6ac92ab4a7",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C33",
+      "claim": "ASCAT is a segmentation method that adjusts by sample purity and ploidy estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, recent segmentation methods improved the accuracy to identify copy number segments in tumor samples either by considering the B allele frequency (BAF), such as ExomeCNV (Sathirapongsasuti et al., 2011), Control-FREEC (Boeva et al., 2012) and SAAS-CNV (Zhang and Hao, 2015), or through adjusting by sample purity and ploidy estimates, such as GAP (Popova et al., 2009), ASCAT (Van Loo et al., 2010) and ABSOLUTE (Carter et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Van Loo et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "2c4febab-3468-4b49-824d-9e1677caf368",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C34",
+      "claim": "ABSOLUTE is a segmentation method that adjusts by sample purity and ploidy estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, recent segmentation methods improved the accuracy to identify copy number segments in tumor samples either by considering the B allele frequency (BAF), such as ExomeCNV (Sathirapongsasuti et al., 2011), Control-FREEC (Boeva et al., 2012) and SAAS-CNV (Zhang and Hao, 2015), or through adjusting by sample purity and ploidy estimates, such as GAP (Popova et al., 2009), ASCAT (Van Loo et al., 2010) and ABSOLUTE (Carter et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Carter et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "93da8e9a-2fae-463a-9984-b40f9c880caa",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C35",
+      "claim": "GISTIC2.0 is the state-of-the-art computational approach for CNA analysis in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the state-of-the-art computational approach for CNA analysis in cancer is GISTIC2.0 (Mermel et al., 2011), which is a gene-centered probabilistic method that enables to define the boundaries of recurrent putative driver CNAs in large cohorts (Beroukhim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mermel et al., 2011 and Beroukhim et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "c83e1969-7f12-4256-970e-cdd665fe7b49",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C36",
+      "claim": "GISTIC2.0 is a gene-centered probabilistic method that enables to define the boundaries of recurrent putative driver CNAs in large cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the state-of-the-art computational approach for CNA analysis in cancer is GISTIC2.0 (Mermel et al., 2011), which is a gene-centered probabilistic method that enables to define the boundaries of recurrent putative driver CNAs in large cohorts (Beroukhim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mermel et al., 2011 and Beroukhim et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "c44b7f8d-6396-47da-a263-d10b97272707",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C37",
+      "claim": "None of the existing software packages is readily available for integrative analyses to unveil biological and clinical implications of CNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, despite ongoing progress on identifying CNAs, to our knowledge none of the existing software packages is readily available for integrative analyses to unveil their biological and clinical implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of available software based on the authors' knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "3ac79d8d-2c55-48ce-b66f-ac1e360dacd5",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C38",
+      "claim": "CNApp is the first open-source application to quantify CNAs and integrate genomic profiles with molecular and clinical variables.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this issue, we developed CNApp, the first open-source application to quantify CNAs and integrate genomic profiles with molecular and clinical variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of CNApp based on the authors' development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "8d5abdf5-cddc-46fa-a792-951aa1be30db",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C39",
+      "claim": "CNApp provides the user with high-quality interactive plots and statistical correlations between CNAs and annotated variables in a fast and easy-to-explore interface.",
+      "claim_type": "EXPLICIT",
+      "source": "CNApp is a web-based tool that provides the user with high-quality interactive plots and statistical correlations between CNAs and annotated variables in a fast and easy-to-explore interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the features of CNApp as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "ae3b7408-bf89-4717-9676-5292a422cc0f",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C40",
+      "claim": "CNApp uses purity-corrected genomic segmented data from multiple genomic platforms to redefine CNA profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CNApp uses purity-corrected genomic segmented data from multiple genomic platforms to redefine CNA profiles, to compute CNA scores based on the number, length and amplitude of broad and focal genomic alterations, to assess differentially altered genomic regions, and to perform machine learning-based predictions to classify tumor samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of CNApp as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "a6815394-5ddf-475a-83d0-60d2f36dcb59",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C41",
+      "claim": "CNApp computes CNA scores based on the number, length and amplitude of broad and focal genomic alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CNApp uses purity-corrected genomic segmented data from multiple genomic platforms to redefine CNA profiles, to compute CNA scores based on the number, length and amplitude of broad and focal genomic alterations, to assess differentially altered genomic regions, and to perform machine learning-based predictions to classify tumor samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of CNApp as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "68b48cac-b1a0-4703-8a25-deb33e1c5d21",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C42",
+      "claim": "CNApp assesses differentially altered genomic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CNApp uses purity-corrected genomic segmented data from multiple genomic platforms to redefine CNA profiles, to compute CNA scores based on the number, length and amplitude of broad and focal genomic alterations, to assess differentially altered genomic regions, and to perform machine learning-based predictions to classify tumor samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of CNApp as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "597eed6f-5cab-4575-8bfa-9ffa98e71384",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C43",
+      "claim": "CNApp performs machine learning-based predictions to classify tumor samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CNApp uses purity-corrected genomic segmented data from multiple genomic platforms to redefine CNA profiles, to compute CNA scores based on the number, length and amplitude of broad and focal genomic alterations, to assess differentially altered genomic regions, and to perform machine learning-based predictions to classify tumor samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of CNApp as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "3259932b-4e57-4c63-8edd-08cecd42fec6",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C44",
+      "claim": "The source code of CNApp is freely available at GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "CNApp is hosted at https://tools.idibaps.org/CNApp/ and the source code is freely available at GitHub (Franch-Exp\u00f3sito, 2020 ; copy archived at https://github.com/elifesciences-publications/CNApp).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the availability of the source code.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "e983ffce-f789-42dc-86d2-81fff1ce286d",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C45",
+      "claim": "CNApp comprises three main sections: Re-Seg and Score, Region profile, and Classifier model.",
+      "claim_type": "EXPLICIT",
+      "source": "CNApp comprises three main sections: 1- Re-Seg and Score: re-segmentation, CNA scores computation, variable association and survival analysis, 2- Region profile: genome-wide CNA profiling, CNA frequencies, correlation profiles and descriptive regions, and 3- Classifier model: machine learning classification model predictions (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structure of CNApp as shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "0d8fe1f6-fc64-4277-981f-efe106fcbbbb",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C46",
+      "claim": "The input file for CNApp consists of a data frame with copy number segments provided by any segmentation algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The input file consists of a data frame with copy number segments provided by any segmentation algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the input requirements for CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "90d00180-a79c-415e-a475-1e6ef4a34b92",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C47",
+      "claim": "Mandatory fields for CNApp input are sample name (ID), chromosome (chr), start (loc.start) and end (loc.end) genomic positions, and the log2 ratio of the copy number amplitude (seg.mean) for each segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mandatory fields and column headers are sample name (ID), chromosome (chr), start (loc.start) and end (loc.end) genomic positions, and the log2 ratio of the copy number amplitude (seg.mean) for each segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mandatory input fields for CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "7af90ae3-2b2c-4456-9f5a-2d038e4d93c4",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C48",
+      "claim": "CNApp incorporates correction for tumor purity to measure the actual magnitude of CNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Section one incorporates the correction for tumor purity (i.e. fraction of tumor cells in the sample) to measure the actual magnitude of CNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "21962745-4383-4e43-9eeb-4c29c5d676d5",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C49",
+      "claim": "BCS highly correlated with the fraction of altered genome by broad copy number changes (Spearman's rank correlation = 0.957).",
+      "claim_type": "EXPLICIT",
+      "source": "Both BCS (ranging from 0 to 44) and FCS (values ranging from 5 to 2466) highly correlated with the fraction of altered genome by broad and focal copy number changes, respectively (Spearman's rank correlation for BCS = 0.957 and for FCS = 0.938) (Figure 1\u2014figure supplment 1A and B\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the analysis of the TCGA pan-cancer dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "cc301faf-6723-4f36-9987-4826bc51dec0",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C50",
+      "claim": "FCS highly correlated with the fraction of altered genome by focal copy number changes (Spearman's rank correlation = 0.938).",
+      "claim_type": "EXPLICIT",
+      "source": "Both BCS (ranging from 0 to 44) and FCS (values ranging from 5 to 2466) highly correlated with the fraction of altered genome by broad and focal copy number changes, respectively (Spearman's rank correlation for BCS = 0.957 and for FCS = 0.938) (Figure 1\u2014figure supplment 1A and B\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the analysis of the TCGA pan-cancer dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "bd697fb1-02a9-4981-ad19-0f4bf4a7afc1",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C51",
+      "claim": "GCS highly correlated with the fraction of altered genome affected by both broad and focal CNAs (Spearman's rank correlation = 0.963).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, GCS (values ranged from \u22121.93 to 12.60) highly correlated with the fraction of altered genome affected by both broad and focal CNAs (Spearman's rank correlation for GCS = 0.963 (Figure 1\u2014figure supplment 1C\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the analysis of the TCGA pan-cancer dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "666e7596-5fe3-473c-b732-25869c56dc99",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C52",
+      "claim": "Acute myeloid leukemia (LAML) showed low levels of broad and focal events (GCS median value of \u22121.67).",
+      "claim_type": "EXPLICIT",
+      "source": "While cancer types such as acute myeloid leukemia (LAML), thyroid carcinoma (THCA) or thymoma (THYM) showed low levels of broad and focal events (GCS median values of \u22121.67 for LAML, \u22121.68 for THCA, and \u22121.52 for THYM), uterine carcinosarcoma (UCS), ovarian cancer (OV) and lung squamous cell carcinoma (LUSC) displayed high levels of both types of genomic imbalances (GCS median values of 2.55, 2.44, and 0.97 for UCS, OV, and LUSC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "13e9fde5-6804-4106-8f79-8a66ec356e5b",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C53",
+      "claim": "Thyroid carcinoma (THCA) showed low levels of broad and focal events (GCS median value of \u22121.68).",
+      "claim_type": "EXPLICIT",
+      "source": "While cancer types such as acute myeloid leukemia (LAML), thyroid carcinoma (THCA) or thymoma (THYM) showed low levels of broad and focal events (GCS median values of \u22121.67 for LAML, \u22121.68 for THCA, and \u22121.52 for THYM), uterine carcinosarcoma (UCS), ovarian cancer (OV) and lung squamous cell carcinoma (LUSC) displayed high levels of both types of genomic imbalances (GCS median values of 2.55, 2.44, and 0.97 for UCS, OV, and LUSC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "e6a59777-4af9-44c0-bbca-d4c757fcf637",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C54",
+      "claim": "Thymoma (THYM) showed low levels of broad and focal events (GCS median value of \u22121.52).",
+      "claim_type": "EXPLICIT",
+      "source": "While cancer types such as acute myeloid leukemia (LAML), thyroid carcinoma (THCA) or thymoma (THYM) showed low levels of broad and focal events (GCS median values of \u22121.67 for LAML, \u22121.68 for THCA, and \u22121.52 for THYM), uterine carcinosarcoma (UCS), ovarian cancer (OV) and lung squamous cell carcinoma (LUSC) displayed high levels of both types of genomic imbalances (GCS median values of 2.55, 2.44, and 0.97 for UCS, OV, and LUSC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "27ad8da7-6250-49d4-b7a3-73f70abc7186",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C55",
+      "claim": "Uterine carcinosarcoma (UCS) displayed high levels of both broad and focal genomic imbalances (GCS median value of 2.55).",
+      "claim_type": "EXPLICIT",
+      "source": "While cancer types such as acute myeloid leukemia (LAML), thyroid carcinoma (THCA) or thymoma (THYM) showed low levels of broad and focal events (GCS median values of \u22121.67 for LAML, \u22121.68 for THCA, and \u22121.52 for THYM), uterine carcinosarcoma (UCS), ovarian cancer (OV) and lung squamous cell carcinoma (LUSC) displayed high levels of both types of genomic imbalances (GCS median values of 2.55, 2.44, and 0.97 for UCS, OV, and LUSC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "0cc01881-47ba-4a4f-bd04-0f42ea24d0ae",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C56",
+      "claim": "Ovarian cancer (OV) displayed high levels of both broad and focal genomic imbalances (GCS median value of 2.44).",
+      "claim_type": "EXPLICIT",
+      "source": "While cancer types such as acute myeloid leukemia (LAML), thyroid carcinoma (THCA) or thymoma (THYM) showed low levels of broad and focal events (GCS median values of \u22121.67 for LAML, \u22121.68 for THCA, and \u22121.52 for THYM), uterine carcinosarcoma (UCS), ovarian cancer (OV) and lung squamous cell carcinoma (LUSC) displayed high levels of both types of genomic imbalances (GCS median values of 2.55, 2.44, and 0.97 for UCS, OV, and LUSC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "b6ad17f1-26c1-4383-8988-c744dc7f257b",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C57",
+      "claim": "Lung squamous cell carcinoma (LUSC) displayed high levels of both broad and focal genomic imbalances (GCS median value of 0.97).",
+      "claim_type": "EXPLICIT",
+      "source": "While cancer types such as acute myeloid leukemia (LAML), thyroid carcinoma (THCA) or thymoma (THYM) showed low levels of broad and focal events (GCS median values of \u22121.67 for LAML, \u22121.68 for THCA, and \u22121.52 for THYM), uterine carcinosarcoma (UCS), ovarian cancer (OV) and lung squamous cell carcinoma (LUSC) displayed high levels of both types of genomic imbalances (GCS median values of 2.55, 2.44, and 0.97 for UCS, OV, and LUSC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "8039c745-f906-44c3-b9ec-6e6a4346b184",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C58",
+      "claim": "Kidney chromophobe (KICH) tumors showed the highest levels of broad events (median BCS value of 27).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, kidney chromophobe (KICH) tumors showed the highest levels of broad events (median BCS value of 27), while focal CNAs in this cancer type were very low (median FCS value of 49).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "dcf2f079-7fc0-4fa3-8839-0b09691084e4",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C59",
+      "claim": "Focal CNAs in kidney chromophobe (KICH) tumors were very low (median FCS value of 49).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, kidney chromophobe (KICH) tumors showed the highest levels of broad events (median BCS value of 27), while focal CNAs in this cancer type were very low (median FCS value of 49).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "0d430138-f611-409b-8f54-91743e79fae0",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C60",
+      "claim": "Breast cancer (BRCA) samples displayed high FCS values (median FCS value of 150).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, breast cancer (BRCA) samples displayed high FCS values (median FCS value of 150), while BCS values were only intermediate (median BCS value of 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "c1269d94-1aa6-4d62-80f4-f9fd2b7ef800",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C61",
+      "claim": "Breast cancer (BRCA) samples showed intermediate BCS values (median BCS value of 7).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, breast cancer (BRCA) samples displayed high FCS values (median FCS value of 150), while BCS values were only intermediate (median BCS value of 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "b2295555-a4be-4ade-b24e-7bdaaa5ed72a",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C62",
+      "claim": "Overall correlation between BCS and FCS was 0.59 (Spearman's rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall correlations between CNA scores were assessed by computing Spearman's rank test, obtaining values of 0.59 between BCS and FCS, 0.90 between BCS and GCS, and 0.85 between FCS and GCS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis of the TCGA pan-cancer dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "100fddf9-a541-4976-b583-c04e0f535a99",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C63",
+      "claim": "Overall correlation between BCS and GCS was 0.90 (Spearman's rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall correlations between CNA scores were assessed by computing Spearman's rank test, obtaining values of 0.59 between BCS and FCS, 0.90 between BCS and GCS, and 0.85 between FCS and GCS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis of the TCGA pan-cancer dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "843318d6-c21f-49d9-a615-18140e78b2db",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C64",
+      "claim": "Overall correlation between FCS and GCS was 0.85 (Spearman's rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall correlations between CNA scores were assessed by computing Spearman's rank test, obtaining values of 0.59 between BCS and FCS, 0.90 between BCS and GCS, and 0.85 between FCS and GCS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis of the TCGA pan-cancer dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "d5910166-23ed-4192-a9c6-3c1ec1b59fd4",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C65",
+      "claim": "Tumors with low BCS displayed a positive correlation between broad and focal alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "While tumors with low BCS displayed a positive correlation between broad and focal alterations, tumors did not maintain such correlation in higher BCS values (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 2\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "58724cfb-ab25-48d2-a117-fbfbadc89f6c",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C66",
+      "claim": "Tumors did not maintain correlation between broad and focal alterations in higher BCS values.",
+      "claim_type": "EXPLICIT",
+      "source": "While tumors with low BCS displayed a positive correlation between broad and focal alterations, tumors did not maintain such correlation in higher BCS values (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 2\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "515bcfcc-81e0-4e9e-8131-2ae7f9c49db0",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C67",
+      "claim": "Chromosome arms altered in more than 25% across all samples were 1q, 7p, 7q, 8q and 20q for copy number gains.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that chromosome arms altered in more than 25% across all samples were 1q, 7 p, 7q, 8q and 20q for copy number gains, and 8 p and 17 p for copy number losses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "6a72fa1a-1727-485e-a879-cb39bfd7b0c9",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C68",
+      "claim": "Chromosome arms altered in more than 25% across all samples were 8p and 17p for copy number losses.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that chromosome arms altered in more than 25% across all samples were 1q, 7 p, 7q, 8q and 20q for copy number gains, and 8 p and 17 p for copy number losses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the TCGA pan-cancer dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "0538977d-bf0c-4889-82bb-b2cae4fdfdda",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C69",
+      "claim": "Chromosome arms affected by CNAs in less than 10% of all cancer types included chromosome arms 2q and 19p.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, chromosome arms affected by CNAs in less than 10% of all cancer types included chromosome arms 2q and 19 p (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "f4ee36f0-7e6e-4975-8ea9-66aa6ec56e8d",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C70",
+      "claim": "Gastrointestinal (colon, rectum, stomach and pancreatic), gynecological (ovarian and uterine) and squamous (cervical, head and neck, and lung) cancers clustered together based on specific CNA profiles for each group.",
+      "claim_type": "EXPLICIT",
+      "source": "Gastrointestinal (colon, rectum, stomach and pancreatic), gynecological (ovarian and uterine) and squamous (cervical, head and neck, and lung) cancers clustered together based on specific CNA profiles for each group (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "7b4b5d27-0549-4e1c-a0c8-16499644cf14",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C71",
+      "claim": "Copy number gains at 1q (56%) and 8q (46%) are the most frequent alterations in hepatocellular carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying the default parameters of CNApp to the LIHC dataset and selecting chromosome arms as genomic regions to assess broad events, we consistently found copy number gains at 1q (56%) and 8q (46%), and copy number losses at 8 p (62%) and 17 p (47%) as the most frequent alterations (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of the LIHC dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "e48a6ae0-0da2-4f9b-a2a8-def53bf59c33",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C72",
+      "claim": "Copy number losses at 8p (62%) and 17p (47%) are the most frequent alterations in hepatocellular carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying the default parameters of CNApp to the LIHC dataset and selecting chromosome arms as genomic regions to assess broad events, we consistently found copy number gains at 1q (56%) and 8q (46%), and copy number losses at 8 p (62%) and 17 p (47%) as the most frequent alterations (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of the LIHC dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "84a824b7-ae7b-41ac-aa38-3dcf2599a366",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C73",
+      "claim": "The most frequently altered chromosome arms in sporadic CRC include gains of 7p, 7q, 8q, 13q, 20p, and 20q, and losses of 8p, 17p, 18p, and 18q, occurring in more than 30% of the samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Most frequently altered chromosome arms included gains of 7 p, 7q, 8q, 13q, 20 p, and 20q, and losses of 8 p, 17 p, 18 p, and 18q, occurring in more than 30% of the samples (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of the COAD dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "7834ce5b-6091-4d07-82ee-af697d6516bd",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C74",
+      "claim": "BCS established significant differences between CMS paired comparisons (p\u22640.0001, Student's t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "While BCS established significant differences between CMS paired comparisons (p\u22640.0001, Student's t-test), FCS poorly discerned CMS1 from three and CMS2 from 4 (Figure 4B\u2014source data 1 and Figure 4\u2014figure supplement 1C\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the analysis of the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "59796f91-2b99-4810-9e80-c1065a9a67a7",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C75",
+      "claim": "FCS poorly discerned CMS1 from CMS3 and CMS2 from CMS4.",
+      "claim_type": "EXPLICIT",
+      "source": "While BCS established significant differences between CMS paired comparisons (p\u22640.0001, Student's t-test), FCS poorly discerned CMS1 from three and CMS2 from 4 (Figure 4B\u2014source data 1 and Figure 4\u2014figure supplement 1C\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "4149be60-3ec7-440f-a5ef-6b4c2c78fe57",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C76",
+      "claim": "Broad CNAs rather than focal were able to better discriminate between different CMS groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we reasoned that broad CNAs rather than focal were able to better discriminate between different CMS groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the analysis of BCS and FCS in relation to CMS groups.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "304030bd-090d-45b8-81e5-9136b07e279b",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C77",
+      "claim": "MSI tumors showed an average BCS of 1.51 \u00b1 2.11.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed an average BCS of 1.51 \u00b1 2.11 and 10.25 \u00b1 5.92 for MSI (N = 72) and MSS (N = 225) tumors, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis of the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "5a13cd9e-2c1b-4f7a-a35a-2fe4e86cec52",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C78",
+      "claim": "MSS tumors showed an average BCS of 10.25 \u00b1 5.92.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed an average BCS of 1.51 \u00b1 2.11 and 10.25 \u00b1 5.92 for MSI (N = 72) and MSS (N = 225) tumors, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis of the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "1729f68e-b7bb-4c63-b152-c0d267da5bec",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C79",
+      "claim": "Global accuracy in average for the 50-permutation in the RandomForest model was 82.2% for predicting MSI/MSS status.",
+      "claim_type": "EXPLICIT",
+      "source": "Global accuracy in average for the 50-permutation in the RandomForest model was 82.2%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the machine learning analysis using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "847d8788-0466-4f0d-b335-eb6c1c4b85d8",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C80",
+      "claim": "A BCS value of 4 was implemented as a threshold to re-classify samples according to their MSI status.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we decided to implement a BCS value of 4 as a threshold to re-classify samples according to their MSI status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a decision based on the analysis of BCS values and MSI status.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "90f8d257-fd02-47c1-ae43-460f6b8f8419",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C81",
+      "claim": "Using a BCS threshold of 4 to predict microsatellite status in an independent CRC cohort resulted in a global accuracy of 81%.",
+      "claim_type": "EXPLICIT",
+      "source": "By doing so, we obtained a global accuracy of 81%, which is similar to the accuracy obtained in the COAD dataset (82.2%), thus suggesting that a BCS equal to four might be considered as a universal threshold to determine microsatellite status in CRC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result using an independent dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "1e299e4a-b261-492c-ba59-99d034f41f52",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C82",
+      "claim": "A BCS equal to four might be considered as a universal threshold to determine microsatellite status in CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "By doing so, we obtained a global accuracy of 81%, which is similar to the accuracy obtained in the COAD dataset (82.2%), thus suggesting that a BCS equal to four might be considered as a universal threshold to determine microsatellite status in CRC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on the validation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "f21b281f-9a90-49ec-8277-509f4fc022ee",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C83",
+      "claim": "186 out of 225 (83%) of MSS tumors showed BCS values greater than 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying the cutoff of 4 to the COAD cohort, 186 out of 225 (83%) of MSS tumors showed BCS values greater than 4 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the BCS threshold to the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "294f5c8e-0cb2-464f-87ee-b3b480b12d04",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C84",
+      "claim": "39 (17%) MSS tumors showed a BCS of 4 or lower.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 39 (17%) MSS tumors showed a BCS of 4 or lower, corresponding to three CMS1, six CMS2, 18 CMS3 and 12 CMS4 tumors, further demonstrating the existence of MSS tumors with a very low CNA burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from applying the BCS threshold to the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "3e43d5e8-fb2f-412d-bc23-15e6943db558",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C85",
+      "claim": "There exist MSS tumors with a very low CNA burden.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 39 (17%) MSS tumors showed a BCS of 4 or lower, corresponding to three CMS1, six CMS2, 18 CMS3 and 12 CMS4 tumors, further demonstrating the existence of MSS tumors with a very low CNA burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "30f08a80-0555-48cc-b913-449312474ebe",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C86",
+      "claim": "Seven MSI tumors showed BCS higher than 4.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, seven MSI tumors showed BCS higher than 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from applying the BCS threshold to the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "d961dc41-dc6d-4101-9620-f9e2b455c485",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C87",
+      "claim": "Five MSI tumors with BCS higher than 4 displayed genomic imbalances typically associated with the CRC canonical pathway, including a focal amplification of MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, five samples displayed genomic imbalances typically associated with the CRC canonical pathway, including a focal amplification of MYC, unveiling tumors with co-occurrence of MSI and extensive genomic alterations (Trautmann et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the COAD dataset, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "b411da0f-1216-44dc-9798-e51a99d797e9",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C88",
+      "claim": "46% of CMS3 MSS tumors showed BCS below 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, 46% of CMS3 MSS tumors showed BCS below 4, in agreement with the finding that CMS3 tumors display low levels of somatic CNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "abe07810-ba76-441f-9dbb-0b7aba7d0308",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C89",
+      "claim": "CMS3 tumors display low levels of somatic CNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, 46% of CMS3 MSS tumors showed BCS below 4, in agreement with the finding that CMS3 tumors display low levels of somatic CNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known finding that is consistent with the authors' results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "fbadb12a-49f8-4016-b8af-5a1149fe8ccb",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C90",
+      "claim": "CMS1 cases were enriched for BRAF mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, CMS1 cases were enriched for BRAF mutation, although two CMS4 samples also showed mutations in BRAF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "74b7cf00-7dee-4dad-8786-08d0558da8ea",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C91",
+      "claim": "High copy number alterations correlate with reduced response to immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "These disparities are of utmost importance since recent studies reported that high copy number alterations correlate with reduced response to immunotherapy (Davoli et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Davoli et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "8c655cac-719e-40a5-8582-d17ac6cd5ed6",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C92",
+      "claim": "MSI status might be predictive of positive immune checkpoint blockade response in advanced CRC, probably due to the low levels of CNA usually presented by MSI tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it has been suggested that MSI status might be predictive of positive immune checkpoint blockade response in advanced CRC, probably due to the low levels of CNA usually presented by MSI tumors (Le et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Le et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "1df092a6-fc00-4aba-a1d7-f4470e292d8f",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C93",
+      "claim": "The loss of 14q was significantly more detected in CMS2 (42%) than in CMS4 (17.1%) (adjusted p\u22640.005, Student's t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Even though only subtle CNA differences between CMS2 and CMS4 were identified, the loss of 14q was significantly more detected in CMS2 (42%) than in CMS4 (17.1%) (adjusted p\u22640.005, Student's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis of the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "12fde01b-9558-4543-8651-1c32fd52c284",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C94",
+      "claim": "The gain of 12q was more frequently associated with CMS1 than CMS2 (adjusted p\u22640.005, Student's t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "The gain of 12q was more frequently associated with CMS1 than CMS2 (adjusted p\u22640.005, Student's t-test), in agreement with previous studies reporting that the gain of chromosome 12 is associated with microsatellite unstable tumors (Figure 4E) (Trautmann et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the analysis of the COAD dataset, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "0bf23d13-7a41-436a-866f-d6221a7f1d18",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C95",
+      "claim": "The gain of chromosome 12 is associated with microsatellite unstable tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The gain of 12q was more frequently associated with CMS1 than CMS2 (adjusted p\u22640.005, Student's t-test), in agreement with previous studies reporting that the gain of chromosome 12 is associated with microsatellite unstable tumors (Figure 4E) (Trautmann et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Trautmann et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "47ca8c42-8825-48f1-a13c-493a114925a4",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C96",
+      "claim": "CNApp reached 55% of accuracy to correctly predict CMS using the most discriminative descriptive regions across CMS groups (i.e. 13q, 17p, 18, and 20q).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, applying machine learning-based prediction models to classify samples by the most discriminative descriptive regions across CMS groups (i.e. 13q, 17 p, 18, and 20q), CNApp reached 55% of accuracy to correctly predict CMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the machine learning analysis using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "419b2514-c709-4cf5-9caa-158ea8f5d644",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C97",
+      "claim": "The occurrence of genomic alterations at 13q, 17p, 18, and 20q was able to differentiate CMS2 from CMS4 with an accuracy of 70%.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the occurrence of these genomic alterations was able to differentiate CMS2 from CMS4 with an accuracy of 70%, and CMS1 from CMS3 with a 72.3% accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the machine learning analysis using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "ee7440f3-0c96-41ac-8630-2173844d93b6",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C98",
+      "claim": "The occurrence of genomic alterations at 13q, 17p, 18, and 20q was able to differentiate CMS1 from CMS3 with a 72.3% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the occurrence of these genomic alterations was able to differentiate CMS2 from CMS4 with an accuracy of 70%, and CMS1 from CMS3 with a 72.3% accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the machine learning analysis using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "9d6e0c52-49b4-477b-8f70-af46aceb7e29",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C99",
+      "claim": "The set of genomic alterations at 13q, 17p, 18, and 20q distinguished CMS1 from CMS2 samples with an accuracy of 95%.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this set of genomic alterations distinguished CMS1 from CMS2 samples with an accuracy of 95%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the machine learning analysis using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "f4e9a009-7c9b-45dc-88eb-ea4100a44d33",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C100",
+      "claim": "CNApp is able to accommodate segmented data from any next-generation sequencing platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CNApp has been developed using segmented genomic copy number data obtained from SNP-arrays, the software is also able to accommodate segmented data from any next-generation sequencing platform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flexibility of CNApp in terms of input data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "658bb269-f79d-4dab-952e-e308aed63631",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C101",
+      "claim": "CNApp transforms segmented data into genomic profiles, allowing sample-by-sample comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "CNApp transforms segmented data into genomic profiles, allowing sample-by-sample comparison and the assessment of differentially altered genomic regions, which can then be selected by the user to assess classifier variables by computing machine learning-based models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "d339293e-d0bb-4133-87b0-b9a9a81ac863",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C102",
+      "claim": "CNApp provides the unique opportunity to establish associations between the burden of genomic alterations and any clinical or molecular variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, besides identifying the impact of specific CNAs, CNApp provides the unique opportunity to establish associations between the burden of genomic alterations and any clinical or molecular variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a unique capability of CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "81ed1fca-3dcf-4484-a68a-62664b1ea90a",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C103",
+      "claim": "High levels of aneuploidy may correlate with tumor immune evasion markers.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that high levels of aneuploidy may correlate with tumor immune evasion markers and that CNA burdens may be an independent prognostic factor for cancer-specific lethality in some cancers exemplifies the potential association of CNA scores with clinical outcomes (Buccitelli et al., 2017; Davoli et al., 2017; Hieronymus et al., 2018; Taylor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "183bf978-d9ad-4e21-be3f-84f742ee9b9a",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C104",
+      "claim": "CNA burdens may be an independent prognostic factor for cancer-specific lethality in some cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that high levels of aneuploidy may correlate with tumor immune evasion markers and that CNA burdens may be an independent prognostic factor for cancer-specific lethality in some cancers exemplifies the potential association of CNA scores with clinical outcomes (Buccitelli et al., 2017; Davoli et al., 2017; Hieronymus et al., 2018; Taylor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "b3d0af3e-29a8-42c0-b739-9d0e90f5014d",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C105",
+      "claim": "CNA scores are calculated after an optional process of re-segmentation that enables to redefine CNA boundaries and to adjust sample-specific copy number thresholds by correcting for tumor purity estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "To note, CNA scores are calculated after an optional process of re-segmentation that enables to redefine CNA boundaries and to adjust sample-specific copy number thresholds by correcting for tumor purity estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific feature of CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "42e03289-7205-4da1-af5a-8c1820cc866a",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C106",
+      "claim": "CNApp successfully reproduced the well-characterized genomic profile of HCC and CRC, considering both broad and focal events.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the software successfully reproduced the well-characterized genomic profile of HCC and CRC, considering both broad and focal events, demonstrating the reliability of CNApp in identifying regions encompassing the most recurrent CNAs (Ally et al., 2017; Cancer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the benchmarking of CNApp, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "8f3c3586-7bfe-42d1-9f0d-a42ccff52f0f",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C107",
+      "claim": "A BCS value of 4 discriminates MSI from MSS tumors with high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, applying CNApp to the TCGA colon cancer sample set, for which MSI status and CMS classification was well annotated, we determined that a BCS value of 4 discriminates MSI from MSS tumors with high accuracy, reinforcing the utmost significance of quantifying the CNA burdens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the COAD dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "217e0d34-acce-4866-90b3-68d9791c0a5c",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C108",
+      "claim": "Due to the inverse correlation between MSI and aneuploidy in CRC, a BCS value of 4 could be established as a cutoff to define the edge between low and high aneuploid tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, due to the inverse correlation between MSI and aneuploidy in CRC, our results suggest that this BCS value could be established as a cutoff to define the edge between low and high aneuploid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on the analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "2308d745-147c-4424-afd5-ad62383fa3fd",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C109",
+      "claim": "High aneuploid tumors show poor response to immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, while high aneuploid tumors show poor response to immunotherapy, it has been suggested that CMS1 microsatellite unstable tumors are likely to show a positive response to immune checkpoints inhibitors (Kalyan et al., 2018; Le et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kalyan et al., 2018 and Le et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "f4f87b0d-1d44-41df-a9ec-dd73d41a3d48",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C110",
+      "claim": "CMS1 microsatellite unstable tumors are likely to show a positive response to immune checkpoints inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, while high aneuploid tumors show poor response to immunotherapy, it has been suggested that CMS1 microsatellite unstable tumors are likely to show a positive response to immune checkpoints inhibitors (Kalyan et al., 2018; Le et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kalyan et al., 2018 and Le et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "be345638-400c-4886-ab40-a433c3127e74",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C111",
+      "claim": "BCS was not associated with overall survival in patients after relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "However, BCS was not associated with overall survival in patients after relapse (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the survival analysis of the COAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "dea0467a-6ed3-42c1-82f7-62af33a85b7f",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C112",
+      "claim": "Specific genomic regions defined by CNApp contributed to classify the CMS groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, specific genomic regions defined by CNApp contributed to classify the CMS groups, confirming the functional importance of specific genomic imbalances in the pathogenesis of this disease and providing insights into the classification of CRC based on CNA profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the COAD dataset using CNApp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "ebb1cab4-39b7-47d5-862b-efa33fc88ec0",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C113",
+      "claim": "Specific genomic imbalances have functional importance in the pathogenesis of CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, specific genomic regions defined by CNApp contributed to classify the CMS groups, confirming the functional importance of specific genomic imbalances in the pathogenesis of this disease and providing insights into the classification of CRC based on CNA profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "b7a6abd3-7ade-40bf-923a-ff7b5fd44afa",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "claim_id": "C114",
+      "claim": "CNApp enables not only the fundamental analysis of CNA profiles, but also the functional understanding of CNAs in the context of clinical outcome and their potential use as biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, although our results ought to be further validated in independent cohorts, here we show that CNApp enables not only the fundamental analysis of CNA profiles, but also the functional understanding of CNAs in the context of clinical outcome and their potential use as biomarkers, thus becoming an asset to the cancer genomics community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the capabilities of CNApp based on the authors' work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CNApp is a novel web-based tool for comprehensive CNA analysis that uses purity-corrected segmented data, computes broad/focal/global CNA scores, generates genome-wide profiles, assesses differentially altered regions, and performs machine learning-based sample classification. The tool is open-source and accepts input from multiple genomic platforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6, C38-C48, C100-C102, and C105 collectively describe CNApp's implementation and capabilities. The tool's functionality is demonstrated through its application to TCGA datasets, and the source code availability (C44) supports reproducibility. The methodological descriptions in the Materials and Methods section provide sufficient technical detail to support these implementation claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "c3b2b270-1043-4566-adfc-c5933caa9575",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The three CNA scores (BCS, FCS, GCS) computed by CNApp show very high correlation with the corresponding fractions of altered genome (Spearman's rho = 0.957, 0.938, and 0.963 respectively) in the TCGA pan-cancer dataset of 10,635 samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 report strong statistical correlations with specific values and appropriate statistical tests (Spearman's rank correlation). The correlations are visualized in Figure 1\u2014figure supplement 1A-C, and the high correlation values (>0.93) validate that the CNA scores accurately capture genomic alteration burden. The large sample size (N=10,635) provides robust statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of 10,635 TCGA pan-cancer samples reveals that CNAs classify cancer types according to tissue-of-origin, with each cancer type showing specific ranges of broad and focal CNA scores. Cancer types cluster by tissue lineage (gastrointestinal, gynecological, squamous), and specific chromosome arms show recurrent alterations across cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C70 describe comprehensive pan-cancer CNA patterns with specific quantitative values (e.g., GCS medians, BCS/FCS values for specific cancer types). The clustering analysis (C70, Figure 2D) and correlation analyses (C62-C64) are appropriately performed with stated statistical methods. The findings are consistent with prior knowledge (C15) and visualized in multiple figures (Figure 2A-D), providing strong support for tissue-specific CNA patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "d0ea039f-c84c-4467-87e6-7616200fd2db",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CNApp successfully reproduces the well-characterized genomic profile of hepatocellular carcinoma (HCC), identifying the most frequent alterations as gains at 1q (56%) and 8q (46%), and losses at 8p (62%) and 17p (47%), consistent with previous studies and GISTIC2.0 results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C71-C72, and C106 demonstrate CNApp's ability to replicate known HCC CNA patterns. The frequencies are compared with GISTIC2.0 results and prior literature (Supplementary file 1, citations to Ally et al. 2017, Chiang et al. 2008, etc.). The benchmarking analysis in Figure 3 and detailed comparison with multiple prior studies provides strong validation of CNApp's accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "33cf85a5-e01a-484f-80a2-67144767b35b",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CNApp predicts colon cancer microsatellite instability (MSI) status with 82.2% accuracy using broad CNA scores (BCS), with a BCS threshold of 4 discriminating MSI from MSS tumors. This threshold was validated in an independent cohort with 81% accuracy, suggesting BCS=4 as a universal cutoff for MSI status in CRC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C73-C88, C107-C108 describe MSI prediction with specific accuracy metrics (82.2% training, 81% validation), appropriate statistical tests (Student's t-test, p\u22640.0001), and validation in an independent cohort (Berg et al. 2019, N=147). The BCS threshold of 4 is derived from multiple analyses (RandomForest model, ROC curves, intersection analysis) and successfully validated. However, the claim of 'universal threshold' (C82, C108) is somewhat overstated as it's only validated in one additional CRC cohort.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "35a7624a-2a31-4609-9070-39418dfe1486",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Specific genomic regions (13q, 17p, 18, 20q) differentiate CMS groups in colon cancer, with CNApp achieving 55% overall accuracy for CMS prediction, 70% for CMS2 vs CMS4, 72.3% for CMS1 vs CMS3, and 95% for CMS1 vs CMS2. The loss of 14q distinguishes CMS2 from CMS4, and gain of 12q is associated with CMS1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C99, C112-C113 report specific classification accuracies with appropriate statistical tests (adjusted p\u22640.005, Student's t-test). The differential CNA patterns between CMS groups are visualized in Figure 4E and supported by machine learning analysis. However, the overall 55% accuracy for 4-way CMS classification is modest, and the claim about 'functional importance' (C113) is an inference that extends beyond what the classification accuracy alone demonstrates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "f3714124-7e64-47f7-8f1a-0fdf6aa43a55",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CMS1 cases were enriched for BRAF mutations, but BCS was not associated with overall survival in patients after relapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C111 report specific findings from the COAD dataset analysis. C90 is supported by the data shown in Figure 4C-D. C111 explicitly states that data is not shown, which is appropriate for a negative result. Both claims are straightforward observations from the dataset without overinterpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "9e9b61a4-8b88-4369-87a1-075cea1cb178",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript provides background on CNAs in cancer, including their tissue-specificity, clinical relevance, classification into broad and focal types, associations with immune markers and prognosis, and the limitations of existing analysis tools. This establishes the rationale for developing CNApp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C15-C37 are primarily literature review and background statements supported by appropriate citations. These claims establish established knowledge in the field (CNAs as cancer hallmarks, existing segmentation methods, GISTIC2.0 as state-of-the-art) and identify the gap that CNApp addresses (C37). The citations appear appropriate and the characterization of prior work is reasonable, though we cannot verify the accuracy of all cited work without examining the original sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "c2e3c01b-2d6b-4724-8d79-a8bf10ff23c5",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CNApp facilitates CNA-driven research by providing a unique framework to identify clinical implications and understand CNAs in the context of clinical outcomes and biomarker potential. The tool is publicly accessible at https://tools.idibaps.org/CNApp/.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14, C114 are summary statements about CNApp's utility and accessibility. C14 is a factual statement about web hosting. C13 and C114 are reasonable conclusions based on the demonstrated capabilities of the tool, though they represent the authors' interpretation of the tool's potential impact rather than empirically tested outcomes. The caveat in C114 that results 'ought to be further validated' appropriately acknowledges limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    },
+    {
+      "id": "2474cf7e-71e6-4c6f-8fc1-deaa970fffb2",
+      "content_id": "8039febd-2725-4396-a5c5-01089c7fb43a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript cites prior work showing that CMS3 tumors display low CNA levels, high CNAs correlate with poor immunotherapy response, MSI status may predict positive immune checkpoint response, high aneuploidy correlates with immune evasion, and CNA burden may be an independent prognostic factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89, C91-C92, C103-C104, C109-C110 are statements about prior work supported by appropriate citations (Davoli et al. 2017, Le et al. 2015, Kalyan et al. 2018, Buccitelli et al. 2017, Hieronymus et al. 2018, Taylor et al. 2018). These claims provide context for interpreting the CNApp results but are not novel findings of this study. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:08.470493Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6dac04ee-12f0-4e7f-ba56-59f445bab5d1",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "2892d022-56f2-4d8b-bd90-6fec5759af7d",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "4a7f6d23-8284-47b5-af21-36af67d67c8d",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "b0236a4f-8c8e-4bd5-89a5-97bbce5c81d1",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "3ac79d8d-2c55-48ce-b66f-ac1e360dacd5",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "8d5abdf5-cddc-46fa-a792-951aa1be30db",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "ae3b7408-bf89-4717-9676-5292a422cc0f",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "a6815394-5ddf-475a-83d0-60d2f36dcb59",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "68b48cac-b1a0-4703-8a25-deb33e1c5d21",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "597eed6f-5cab-4575-8bfa-9ffa98e71384",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "3259932b-4e57-4c63-8edd-08cecd42fec6",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "e983ffce-f789-42dc-86d2-81fff1ce286d",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "0d8fe1f6-fc64-4277-981f-efe106fcbbbb",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "90d00180-a79c-415e-a475-1e6ef4a34b92",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "7af90ae3-2b2c-4456-9f5a-2d038e4d93c4",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "f4e9a009-7c9b-45dc-88eb-ea4100a44d33",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "658bb269-f79d-4dab-952e-e308aed63631",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "d339293e-d0bb-4133-87b0-b9a9a81ac863",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "b3d0af3e-29a8-42c0-b739-9d0e90f5014d",
+      "result_id": "e8f7ef41-0fd9-427c-8945-a4eafae8e882"
+    },
+    {
+      "claim_id": "21962745-4383-4e43-9eeb-4c29c5d676d5",
+      "result_id": "c3b2b270-1043-4566-adfc-c5933caa9575"
+    },
+    {
+      "claim_id": "cc301faf-6723-4f36-9987-4826bc51dec0",
+      "result_id": "c3b2b270-1043-4566-adfc-c5933caa9575"
+    },
+    {
+      "claim_id": "bd697fb1-02a9-4981-ad19-0f4bf4a7afc1",
+      "result_id": "c3b2b270-1043-4566-adfc-c5933caa9575"
+    },
+    {
+      "claim_id": "83046f5d-0852-468d-92d4-37bfa7f72d45",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "6e30e37d-c592-4363-a856-c69936efab4b",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "4fdf1856-5856-4622-8431-37ac7ca05f79",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "666e7596-5fe3-473c-b732-25869c56dc99",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "13e9fde5-6804-4106-8f79-8a66ec356e5b",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "e6a59777-4af9-44c0-bbca-d4c757fcf637",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "27ad8da7-6250-49d4-b7a3-73f70abc7186",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "0cc01881-47ba-4a4f-bd04-0f42ea24d0ae",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "b6ad17f1-26c1-4383-8988-c744dc7f257b",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "8039c745-f906-44c3-b9ec-6e6a4346b184",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "dcf2f079-7fc0-4fa3-8839-0b09691084e4",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "0d430138-f611-409b-8f54-91743e79fae0",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "c1269d94-1aa6-4d62-80f4-f9fd2b7ef800",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "b2295555-a4be-4ade-b24e-7bdaaa5ed72a",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "100fddf9-a541-4976-b583-c04e0f535a99",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "843318d6-c21f-49d9-a615-18140e78b2db",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "d5910166-23ed-4192-a9c6-3c1ec1b59fd4",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "58724cfb-ab25-48d2-a117-fbfbadc89f6c",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "515bcfcc-81e0-4e9e-8131-2ae7f9c49db0",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "6a72fa1a-1727-485e-a879-cb39bfd7b0c9",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "0538977d-bf0c-4889-82bb-b2cae4fdfdda",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "f4ee36f0-7e6e-4975-8ea9-66aa6ec56e8d",
+      "result_id": "479f7ef5-d05f-44d2-b7eb-2e9ab8b421c6"
+    },
+    {
+      "claim_id": "75efdce2-93b3-4eff-8463-22aa2a258e8c",
+      "result_id": "d0ea039f-c84c-4467-87e6-7616200fd2db"
+    },
+    {
+      "claim_id": "7b4b5d27-0549-4e1c-a0c8-16499644cf14",
+      "result_id": "d0ea039f-c84c-4467-87e6-7616200fd2db"
+    },
+    {
+      "claim_id": "e48a6ae0-0da2-4f9b-a2a8-def53bf59c33",
+      "result_id": "d0ea039f-c84c-4467-87e6-7616200fd2db"
+    },
+    {
+      "claim_id": "42e03289-7205-4da1-af5a-8c1820cc866a",
+      "result_id": "d0ea039f-c84c-4467-87e6-7616200fd2db"
+    },
+    {
+      "claim_id": "404ac49b-1e2e-4dcf-9d69-7ffefe5dee14",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "a638d484-a7fe-4206-b7ea-80400d1027fb",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "84a824b7-ae7b-41ac-aa38-3dcf2599a366",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "7834ce5b-6091-4d07-82ee-af697d6516bd",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "59796f91-2b99-4810-9e80-c1065a9a67a7",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "4149be60-3ec7-440f-a5ef-6b4c2c78fe57",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "304030bd-090d-45b8-81e5-9136b07e279b",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "5a13cd9e-2c1b-4f7a-a35a-2fe4e86cec52",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "1729f68e-b7bb-4c63-b152-c0d267da5bec",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "847d8788-0466-4f0d-b335-eb6c1c4b85d8",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "90f8d257-fd02-47c1-ae43-460f6b8f8419",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "1e299e4a-b261-492c-ba59-99d034f41f52",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "f21b281f-9a90-49ec-8277-509f4fc022ee",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "294f5c8e-0cb2-464f-87ee-b3b480b12d04",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "3e43d5e8-fb2f-412d-bc23-15e6943db558",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "30f08a80-0555-48cc-b913-449312474ebe",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "d961dc41-dc6d-4101-9620-f9e2b455c485",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "b411da0f-1216-44dc-9798-e51a99d797e9",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "8f3c3586-7bfe-42d1-9f0d-a42ccff52f0f",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "217e0d34-acce-4866-90b3-68d9791c0a5c",
+      "result_id": "33cf85a5-e01a-484f-80a2-67144767b35b"
+    },
+    {
+      "claim_id": "1df092a6-fc00-4aba-a1d7-f4470e292d8f",
+      "result_id": "35a7624a-2a31-4609-9070-39418dfe1486"
+    },
+    {
+      "claim_id": "12fde01b-9558-4543-8651-1c32fd52c284",
+      "result_id": "35a7624a-2a31-4609-9070-39418dfe1486"
+    },
+    {
+      "claim_id": "0bf23d13-7a41-436a-866f-d6221a7f1d18",
+      "result_id": "35a7624a-2a31-4609-9070-39418dfe1486"
+    },
+    {
+      "claim_id": "47ca8c42-8825-48f1-a13c-493a114925a4",
+      "result_id": "35a7624a-2a31-4609-9070-39418dfe1486"
+    },
+    {
+      "claim_id": "419b2514-c709-4cf5-9caa-158ea8f5d644",
+      "result_id": "35a7624a-2a31-4609-9070-39418dfe1486"
+    },
+    {
+      "claim_id": "ee7440f3-0c96-41ac-8630-2173844d93b6",
+      "result_id": "35a7624a-2a31-4609-9070-39418dfe1486"
+    },
+    {
+      "claim_id": "9d6e0c52-49b4-477b-8f70-af46aceb7e29",
+      "result_id": "35a7624a-2a31-4609-9070-39418dfe1486"
+    },
+    {
+      "claim_id": "dea0467a-6ed3-42c1-82f7-62af33a85b7f",
+      "result_id": "35a7624a-2a31-4609-9070-39418dfe1486"
+    },
+    {
+      "claim_id": "ebb1cab4-39b7-47d5-862b-efa33fc88ec0",
+      "result_id": "35a7624a-2a31-4609-9070-39418dfe1486"
+    },
+    {
+      "claim_id": "fbadb12a-49f8-4016-b8af-5a1149fe8ccb",
+      "result_id": "f3714124-7e64-47f7-8f1a-0fdf6aa43a55"
+    },
+    {
+      "claim_id": "be345638-400c-4886-ab40-a433c3127e74",
+      "result_id": "f3714124-7e64-47f7-8f1a-0fdf6aa43a55"
+    },
+    {
+      "claim_id": "0f28a7fe-656d-41ef-b892-e6024fd44fb7",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "991f2434-6999-429d-969d-6c797e1522d5",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "cedaa348-08f6-4dec-a338-d132701f6474",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "2c7ecfd6-025c-446c-b22b-4ad822949d3f",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "0e155d17-22c5-4a7b-9ba9-faba5e2dacd7",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "6bc2a4c1-db3c-46ab-9f06-8a853108724e",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "ca7bc172-e878-4e51-93f6-949c92ebbaa8",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "5677aa87-8bb3-44d2-aa8c-6829c243ea21",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "9a71cff1-c004-4e7b-a955-0e3740111cb4",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "59dfabed-0230-4e5e-9854-905409392da8",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "888df8f0-8af1-466c-82a0-1e8398fdebd5",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "77b0c694-7461-4fa1-8d92-8b87a0c28cb7",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "a4836671-b673-4491-b2d0-aa363358f643",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "b64a2079-5128-4718-8055-5441a65d530f",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "8e79c3ce-a5bf-41e7-a5b0-22f58380223a",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "6d8ebe00-612f-4a52-9e80-dddf3b4bd8ca",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "e54cad27-81e5-4cbc-b4a0-abdc429d4521",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "83cd0148-1c79-4d2f-a957-086972d040fc",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "10148a04-a360-4fc6-80e1-4f8857264745",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "921bef0a-bdf0-482e-b85f-effcc21f1031",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "b6f0630c-910c-4c93-8d2d-ce6ac92ab4a7",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "2c4febab-3468-4b49-824d-9e1677caf368",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "93da8e9a-2fae-463a-9984-b40f9c880caa",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "c83e1969-7f12-4256-970e-cdd665fe7b49",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "c44b7f8d-6396-47da-a263-d10b97272707",
+      "result_id": "9e9b61a4-8b88-4369-87a1-075cea1cb178"
+    },
+    {
+      "claim_id": "8556ed18-ccd5-4aed-89c6-3e200d50dd54",
+      "result_id": "c2e3c01b-2d6b-4724-8d79-a8bf10ff23c5"
+    },
+    {
+      "claim_id": "a3467337-c374-492b-b494-90e697e75ba5",
+      "result_id": "c2e3c01b-2d6b-4724-8d79-a8bf10ff23c5"
+    },
+    {
+      "claim_id": "b7a6abd3-7ade-40bf-923a-ff7b5fd44afa",
+      "result_id": "c2e3c01b-2d6b-4724-8d79-a8bf10ff23c5"
+    },
+    {
+      "claim_id": "abe07810-ba76-441f-9dbb-0b7aba7d0308",
+      "result_id": "2474cf7e-71e6-4c6f-8fc1-deaa970fffb2"
+    },
+    {
+      "claim_id": "74b7cf00-7dee-4dad-8786-08d0558da8ea",
+      "result_id": "2474cf7e-71e6-4c6f-8fc1-deaa970fffb2"
+    },
+    {
+      "claim_id": "8c655cac-719e-40a5-8582-d17ac6cd5ed6",
+      "result_id": "2474cf7e-71e6-4c6f-8fc1-deaa970fffb2"
+    },
+    {
+      "claim_id": "81ed1fca-3dcf-4484-a68a-62664b1ea90a",
+      "result_id": "2474cf7e-71e6-4c6f-8fc1-deaa970fffb2"
+    },
+    {
+      "claim_id": "183bf978-d9ad-4e21-be3f-84f742ee9b9a",
+      "result_id": "2474cf7e-71e6-4c6f-8fc1-deaa970fffb2"
+    },
+    {
+      "claim_id": "2308d745-147c-4424-afd5-ad62383fa3fd",
+      "result_id": "2474cf7e-71e6-4c6f-8fc1-deaa970fffb2"
+    },
+    {
+      "claim_id": "f4f87b0d-1d44-41df-a9ec-dd73d41a3d48",
+      "result_id": "2474cf7e-71e6-4c6f-8fc1-deaa970fffb2"
+    }
+  ],
+  "comparisons": []
+}

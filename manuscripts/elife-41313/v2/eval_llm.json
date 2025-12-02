@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C63",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The C-terminal tail of Twinfilin contains a CPI-like motif that binds to CP at a site overlapping with CARMIL's CPI motif binding site. Sequence alignment shows homology between Twinfilin tail regions and CPI motifs across species. Mutation of conserved residues (K325A in mTwf1 tail, or R15A/Y79A in CP) reduces binding affinity by 20-30 fold. HDX-MS data demonstrates that mTwf1 binding protects the N-terminal stalk region of CP from deuterium exchange, similar to CARMIL binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence converge: sequence homology (C63, Figure 2A), mutagenesis showing specific residues are critical for binding (C67, C69), competition assays demonstrating overlapping binding sites (C72), and structural data from HDX-MS confirming similar binding regions for Twinfilin and CARMIL (C93-C95, Figure 5). The data are internally consistent and use appropriate controls including mutants that disrupt binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C70",
+      "C71"
+    ],
+    "result": "Twinfilin and CARMIL compete for binding to CP. Fluorescence anisotropy assays show that unlabeled CARMIL CBR peptide competes with fluorescent mTwf1 tail peptide for CP binding, and specifically the CPI motif (not CSI motif) of CARMIL mediates this competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Direct competition is demonstrated by fluorescence anisotropy (C70, Figure 2D) with appropriate controls distinguishing CPI from CSI motifs (C72). The competitive binding is consistent with the overlapping binding site data from HDX-MS and mutagenesis studies. The experimental design appropriately uses labeled and unlabeled peptides to demonstrate competition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Twinfilin protects CP from CARMIL-mediated displacement from actin filament barbed ends. In pyrene actin assembly assays and TIRF microscopy, increasing concentrations of mTwf1 attenuate CARMIL-induced uncapping in a concentration-dependent manner. This protection requires direct Twinfilin-CP interaction, as the mTwf1-11 mutant (which cannot bind CP) fails to protect CP from CARMIL uncapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by two independent assay types (pyrene fluorescence and TIRF microscopy, C74-C77, Figures 3A-C) showing concentration-dependent effects. Critical controls include the mTwf1-11 mutant demonstrating the requirement for direct CP binding (C78-C79, Figures 3D-E), and similar effects observed with the mTwf2a isoform (C80). The data are quantitative and reproducible across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Twinfilin accelerates dissociation of the CP inhibitor V-1 from CP, restoring CP to an active capping state. This effect is concentration-dependent, requires direct Twinfilin-CP interaction (mTwf1-11 has no effect), and occurs via an allosteric mechanism rather than direct competition, as V-1 does not compete with mTwf1 for CP binding even at 1000-fold excess.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays support this result: pyrene actin elongation assays show functional restoration of capping (C84-C85, Figure 4A-B), fluorescence anisotropy demonstrates lack of direct competition (C86, Figure 4C), and stopped-flow kinetics quantify accelerated V-1 dissociation (C89-C90, Figure 4D-E). The mTwf1-11 control confirms the requirement for direct CP binding (C90-C91). The allosteric mechanism is a reasonable inference given the non-overlapping binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C60",
+      "C101"
+    ],
+    "result": "The mTwf1 tail binds to CP with high affinity (Kd = 50 nM). Full-length mTwf1 competes with labeled mTwf1 tail for CP binding, while the mTwf1-11 mutant (K332A, R333A) does not compete, effectively uncoupling mTwf1 binding to CP. The mTwf1 tail binds equally well to wild-type CP and CP\u03b1\u039428 (a capping-deficient mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Fluorescence anisotropy provides quantitative binding data (C50, C101, Figure 1B) with appropriate controls including the mTwf1-11 mutant that specifically disrupts CP binding (C51-C53, Figure 1C). The CP\u03b1\u039428 control (C60) demonstrates that the tail binding is independent of CP's capping function. The Kd value is precisely determined and the mutant provides a clean separation-of-function tool used throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "CP blocks Twinfilin-mediated barbed end depolymerization by sterically occluding barbed end access, independent of direct Twinfilin-CP interaction. Both wild-type mTwf1 and the mTwf1-11 mutant (which cannot bind CP) accelerate depolymerization by 2-3 fold, but CP blocks this activity for both proteins. CP\u03b1\u039428 (which binds mTwf1 but cannot cap) does not affect mTwf1 depolymerization activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "TIRF microscopy provides direct visualization and quantification of depolymerization rates (C54-C58, Figures 1D-E). The key insight comes from the mTwf1-11 mutant: it has wild-type depolymerization activity but cannot bind CP, yet CP still blocks its activity, demonstrating steric occlusion (C58-C59). The CP\u03b1\u039428 control confirms that CP binding to mTwf1 doesn't alter depolymerization activity (C61-C62, Figure 1F-G). The logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Knockdown of either mTwf1 or CP causes similar morphological defects in B16F10 cells, characterized by increased density of peripheral protrusions/microspikes and loss of lamellipodial surfaces. Expression of wild-type mTwf1 rescues the mTwf1 knockdown phenotype, but mTwf1-11 does not, demonstrating that cellular functions of mTwf1 critically depend on its interaction with CP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNAi knockdown experiments show similar phenotypes for mTwf1 and CP depletion (C6, C103, Figure 6F-G), suggesting functional interdependence. The rescue experiments provide strong evidence: wild-type mTwf1 rescues but mTwf1-11 does not (C105-C106), directly demonstrating the requirement for CP binding (C107). Quantification of microspike density provides objective measurements. The use of RNAi-refractive constructs is appropriate methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Elevated Twinfilin expression rescues morphological defects caused by CARMIL1 overexpression in B16F10 cells. CARMIL1 overexpression causes defects similar to CP loss, and co-expression of mTwf1 rescues these defects, while mTwf1 alone causes no significant morphological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence and quantification show that CARMIL1 overexpression phenocopies CP loss, and mTwf1 co-expression rescues this phenotype (C113-C114, Figure 7A-B). The control showing mTwf1 alone has no effect (C115) is important for interpretation. This result provides in vivo validation of the biochemical competition between Twinfilin and CARMIL for CP binding (C116). Statistical analysis shows significant differences (p\u22640.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "Twinfilin and CP strongly colocalize throughout B16F10 cells with enrichment at actin-rich leading and trailing edges. Quantitative western blotting shows they are present at ~1:2 molar ratio, with CP at ~1 \u00b5M and mTwf1 at ~0.5 \u00b5M. Given the high affinity interaction (Kd = 50 nM), mTwf1 is likely associated with a substantial fraction of cellular CP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence demonstrates colocalization with quantitative Mander's correlation coefficients (C97, Figure 6A-B). Quantitative western blotting provides stoichiometry data (C98, Figure 6C), and concentrations are based on prior literature (C99). The inference about association (C102) is reasonable given the Kd (50 nM) is 10-fold lower than the estimated cellular concentrations. The quantitative approach strengthens the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Knockdown of CP causes a dramatic reduction in Twinfilin protein levels in cells, confirmed with two independent siRNAs and observed across multiple cell lines (B16F10, Neuro-2A, NIH-3T3). Forced expression of mTwf1 partially rescues defects associated with CP depletion, suggesting some of the CP knockdown phenotype is due to accompanying Twinfilin loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blotting and immunofluorescence demonstrate reduced Twinfilin upon CP knockdown (C108, Figure 6D), confirmed with a second siRNA (C109) and in multiple cell lines (C110, Figure 6\u2014figure supplement 1). The partial rescue by mTwf1 overexpression (C111-C112) supports the interpretation. This is an important observation that may require reinterpretation of prior CP knockdown studies. The use of multiple siRNAs and cell lines strengthens confidence in the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Twinfilin is defined as the first 'pro-capping' ligand of CP and a new member of the CPI-motif family. Unlike other CPI-motif proteins, Twinfilin binds CP without reducing its affinity for barbed ends and antagonizes the negative regulatory effects of other CPI proteins (CARMIL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a summary interpretation (C8, C117-C119) based on the collective experimental evidence showing: (1) Twinfilin has a CPI-like motif, (2) it protects CP from CARMIL and V-1 rather than inhibiting CP, and (3) it maintains CP's capping activity. The 'pro-capping' designation is justified by the functional data. This represents a conceptual advance in understanding CP regulation, distinguishing Twinfilin from other CPI-motif proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "mTwf1-induced conformational changes in CP at the actin-binding interface are less extensive than those induced by CARMIL, consistent with CARMIL (but not mTwf1) weakening CP binding to actin barbed ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference from HDX-MS data (C96, Figure 5) is consistent with the functional differences between Twinfilin and CARMIL: CARMIL displaces CP from barbed ends while Twinfilin does not. The HDX-MS data show differential protection patterns at the actin-binding interface. This structural observation provides a mechanistic explanation for the functional differences observed in other experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "A revised model for the CP regulatory cycle is proposed in which: (1) Twinfilin protects CP from V-1, maintaining a larger pool of active Twinfilin-CP complexes in the cytosol; (2) V-1 maintains a reservoir of inactive CP that can be mobilized by Twinfilin or CARMIL; (3) Twinfilin-CP complexes provide stable capping while CARMIL-CP complexes provide transient capping at the membrane; (4) Twinfilin-CP association primes filaments for disassembly, with CARMIL potentially displacing CP to leave Twinfilin at barbed ends for depolymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative model (C123-C129, Figure 7D) that integrates the experimental findings but extends beyond what is directly demonstrated. While the model is consistent with the data and provides testable hypotheses, key aspects remain unproven: the relative pools of different CP complexes in cells, the spatial organization of these pools, and the proposed mechanism of priming for disassembly. The model represents reasonable speculation but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A structural model suggests that the Twinfilin tail is long enough to allow simultaneous binding of its CPI motif to CP and its C-terminal ADFH domain to an actin subunit at the barbed end, with no steric clashes. CP and Twinfilin can associate with barbed ends individually or as a complex, with distinct functional consequences. CP-Twinfilin complexes may stably cap barbed ends similar to CP alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural model (C134-C135, Figure 7\u2014figure supplement 1) is based on docking known structures and is plausible but not experimentally validated. The proposal that CP-Twinfilin complexes can simultaneously bind barbed ends (C136, C138) is speculative and not directly tested. While the model is consistent with the linker length and known structures, it requires experimental validation such as cryo-EM or direct functional assays of the ternary complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on Twinfilin: It is one of five proteins in the ADF-H domain family, unique in containing two ADF-H domains. Initially characterized as an actin monomer sequestering factor, it was later shown to interact with barbed ends and accelerate depolymerization. Both yeast and mammalian Twinfilins bind CP with high affinity (~10 nM for yeast), mediated by conserved C-terminal tail sequences, though previous studies found no significant effects of Twinfilin on CP capping activity or vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are literature review claims (C9-C27) supported by appropriate citations to prior work. They establish the context and prior knowledge state before the current study. The apparent paradox of high-affinity binding without functional consequences (C25-C27) motivates the current investigation. These claims are properly attributed to prior work and provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Background on CP and its regulation: CP is an obligate heterodimer that stably caps barbed ends with sub-nanomolar affinity and slow dissociation (t1/2 ~30 min). It is ubiquitous, highly conserved, and present at 1-3 \u00b5M in cells. CP inhibitors fall into two classes: steric inhibitors (V-1) that block CP binding to barbed ends, and allosteric inhibitors (CPI-motif proteins like CARMIL) that catalyze CP dissociation and reduce its affinity ~100-fold. Prior to this study, no 'pro-capping' factors that antagonize CP inhibitors had been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are literature review claims (C28-C49) establishing the state of knowledge about CP regulation prior to this study. They are supported by appropriate citations and provide essential context. The statement that no pro-capping factors were known (C49) sets up the novelty of the current findings. These background claims are accurate representations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C88"
+    ],
+    "result": "Background on V-1 mechanism: V-1 does not displace CP from barbed ends but sequesters CP and blocks it from binding filament ends. V-1 binds CP on the opposite face from CARMIL, sterically blocking barbed end binding. CARMIL can form a transient ternary complex with V-1 and CP, accelerating V-1 dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are literature review claims (C81-C82, C88) supported by appropriate citations to prior structural and functional studies. They provide important mechanistic context for understanding how Twinfilin's effects on V-1 (demonstrated in this study) relate to CARMIL's known effects. The citations are appropriate and the claims accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Summary and evolutionary conservation: The functions of mammalian Twinfilin and CP are closely intertwined, and this relationship likely extends to other species given sequence conservation and the conserved nature of the Twinfilin-CP interaction. S. cerevisiae Aim21 was recently identified as the first yeast CPI motif-containing protein that regulates CP at cortical actin patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The summary statement (C130) is justified by the collective experimental data. The evolutionary conservation argument (C131) is reasonable given the sequence alignment data (Figure 2A) and known conservation of the interaction. The reference to yeast Aim21 (C132-C133) provides relevant context showing that CPI-mediated CP regulation exists in yeast, supporting the evolutionary conservation argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Broader implications: When Twinfilin alone associates with barbed ends, it drives processive depolymerization while blocking assembly. Despite differences in their barbed end associations, CP and Twinfilin each inhibit filament growth, explaining why Twinfilin can replace CP in reconstituted motility assays. Actin dynamics are controlled by complex multi-component mechanisms at barbed ends, allowing rapid transitions through different functional states. These mechanisms are more elaborate than previously thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion points (C139-C144) integrate the current findings with broader knowledge of actin regulation. The statement about Twinfilin driving depolymerization (C139) is supported by prior citations. The functional similarity between CP and Twinfilin in blocking growth (C140-C141) is a reasonable inference that explains prior observations. The broader perspective on actin regulation (C142-C144) is appropriate synthesis and speculation based on the findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1397 @@
+{
+  "submission": {
+    "id": "2a24a609-cf92-42d0-8381-f521598c3410",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:13:33.883478Z",
+    "updated_at": "2025-12-02T14:13:33.883478Z"
+  },
+  "content": [
+    {
+      "id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "submission_id": "2a24a609-cf92-42d0-8381-f521598c3410",
+      "content_type": "manuscript",
+      "content_text": "# Subcellular drug targeting illuminates local kinase action\n\n## Authors\n\n- Paula J Bucko<sup>1</sup> ([ORCID: 0000-0002-0889-5465](https://orcid.org/0000-0002-0889-5465))\n- Chloe K Lombard<sup>2</sup>\n- Lindsay Rathbun<sup>3</sup>\n- Irvin Garcia<sup>1</sup>\n- Akansha Bhat<sup>1</sup>\n- Linda Wordeman<sup>4</sup>\n- F Donelson Smith<sup>1</sup> ([ORCID: 0000-0002-8080-7589](https://orcid.org/0000-0002-8080-7589))\n- Dustin J Maly<sup>2</sup> ([ORCID: 0000-0003-0094-0177](https://orcid.org/0000-0003-0094-0177))\n- Heidi Hehnly<sup>3</sup> ([ORCID: 0000-0001-6660-5254](https://orcid.org/0000-0001-6660-5254))\n- John D Scott<sup>1</sup> ([ORCID: 0000-0002-0367-8146](https://orcid.org/0000-0002-0367-8146)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology University of Washington Seattle United States\n2. Department of Chemistry University of Washington Seattle United States\n3. Department of Biology Syracuse University Syracuse United States\n4. Department of Physiology and Biophysics University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDeciphering how signaling enzymes operate within discrete microenvironments is fundamental to understanding biological processes. A-kinase anchoring proteins (AKAPs) restrict the range of action of protein kinases within intracellular compartments. We exploited the AKAP targeting concept to create genetically encoded platforms that restrain kinase inhibitor drugs at distinct subcellular locations. Local Kinase Inhibition (LoKI) allows us to ascribe organelle-specific functions to broad specificity kinases. Using chemical genetics, super resolution microscopy, and live-cell imaging we discover that centrosomal delivery of Polo-like kinase 1 (Plk1) and Aurora A (AurA) inhibitors attenuates kinase activity, produces spindle defects, and prolongs mitosis. Targeted inhibition of Plk1 in zebrafish embryos illustrates how centrosomal Plk1 underlies mitotic spindle assembly. Inhibition of kinetochore-associated pools of AurA blocks phosphorylation of microtubule-kinetochore components. This versatile precision pharmacology tool enhances investigation of local kinase biology.\n\n## Introduction\n\nProtein kinase inhibitor drugs are an emerging class of therapeutics for a variety of clinical indications (Ferguson and Gray, 2018). These small molecules are also powerful research tools that can be used to discover new aspects of kinase signaling (Caunt et al., 2015). While \u2018drugging\u2019 individual kinases can establish their role in cellular events, this global approach cannot discriminate where or when these signaling enzymes operate inside the cell. Thus, designing pharmacological strategies that influence the spatial and temporal action of kinases is at the frontier of precision medicine.\n\nPolo-like kinase 1 (Plk1) and Aurora A (AurA) are important regulators of cell division (Barr et al., 2004; Combes et al., 2017; Lens et al., 2010). Accordingly, ATP-competitive drugs that block their activity, such as BI2536 and MLN8237, ascribe functions to these kinases and are promising anticancer therapies (Steegmaier et al., 2007; Tang et al., 2017; L\u00e9n\u00e1rt et al., 2007; Asteriti et al., 2014; Manfredi et al., 2011). However, elucidating the individual spatial and temporal actions of Plk1 and AurA remains challenging as these enzymes continually change their location and activity throughout mitosis (Bruinsma et al., 2015; Joukov and De Nicolo, 2018; Lera et al., 2016). As a result, global drug delivery strategies mask the unique contributions of each kinase at distinct mitotic structures. Moreover, standard drug regimens that saturate dividing cells with these compounds may increase off-target effects and toxicity (Klaeger et al., 2017).\n\nPlk1 and AurA have been implicated in the control of mitotic progression (Barr et al., 2004; Combes et al., 2017; Lens et al., 2010). The anchoring protein Gravin/AKAP12 participates in this process by forming a macromolecular complex with these enzymes (Hehnly et al., 2015). A-kinase anchoring proteins (AKAPs) are scaffolding proteins that limit the scope of cell signaling events at distinct cellular locations (Scott and Pawson, 2009; Langeberg and Scott, 2015; Esseltine and Scott, 2013). For example, anchored protein kinase A action is constrained to within 200\u2013400 angstroms of the AKAP (Smith et al., 2013; Smith et al., 2017). This has led to the formulation of a signaling island model where catalytic activity of anchored kinases is restricted to the immediate vicinity of select substrates (Scott and Pawson, 2009; Langeberg and Scott, 2015; Esseltine and Scott, 2013). Likewise, anchoring of Plk1 and AurA occurs on a phosphorylated species of Gravin at Threonine 766 (Canton et al., 2012; Hehnly et al., 2015; Colicino et al., 2018). Consequently, loss or disruption of this scaffold abrogates Plk1 and AurA organization at centrosomes and promotes mitotic delay (Hehnly et al., 2015). Yet, an outstanding question that remains is exactly how do centrosome-localized pools of Gravin-anchored Plk1 and AurA coordinate mitotic signaling events.\n\nIn the present study,\u00a0we first establish that Gravin is required for localizing active pools of Plk1 and AurA at mitotic centrosomes. We then develop a novel chemical-biology tool, LoKI (Local Kinase Inhibition), to probe the actions of Plk1 and AurA at defined subcellular locations. Finally, we demonstrate that local inhibition of Plk1 and AurA kinases at centrosomes and kinetochores disrupts substrate phosphorylation, spindle organization, and mitotic duration. Together, these studies decipher how activities of individual kinases at precisely defined microenvironments contribute to the global signaling events that underlie mitosis.\n\n## Results\n\n### Gravin loss perturbs duration of mitosis and accumulation of Plk1 and AurA at centrosomes\n\nGravin depletion via shRNA-mediated knockdown perturbs mitotic progression (Hehnly et al., 2015). Here,\u00a0we test whether complete loss of Gravin also prolong mitosis. We used time-lapse video microscopy to monitor mouse embryonic fibroblasts (MEFs) from wild-type and Gravin knockout (KO) mice (Figure 1A, Figure 1\u2014figure supplement 1A). Live-cell imaging of wild-type MEFs expressing GFP-tagged histone 2B (Figure 1\u2014video 1) established a baseline mitotic duration (nuclear envelope breakdown to anaphase) as 32.6 min (Figure 1B). In contrast, mitosis was delayed by 11.9 min in Gravin KO cells (Figure 1B). These data further establish that Gravin promotes timely progression of cells through mitosis (Gelman, 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig1-v1.jpg)\n\n**Figure 1.:** (A) Representative time-lapse images of primary MEFs derived from wildtype (top) and Gravin knockout (bottom) cells. Cells transiently expressing GFP-H2B were monitored through mitosis. (B) Quantification of time-lapse experiments depicts duration of mitosis from nuclear envelope breakdown to the onset of anaphase; Wildtype, n\u00a0=\u00a0199, Gravin KO, n\u00a0=\u00a0121, ****p<0.0001. (C, D) Structured illumination microscopy (SIM) of representative mitotic HEK293 cells stably expressing Control or Gravin shRNA. Composite images (left) depict cells stained for \u03b1-tubulin (green) and DNA (blue). Immunofluorescence of pT210-Plk1 (C) and pT288-AurA (D) as an index of kinase activity (mid) and 5X magnification of centrosomal pT210-Plk1 (C) and pT288-AurA (D) signals (insets). (E, F) Quantification of centrosomal pT210-Plk1 (E) and pT288-AurA (F) immunofluorescence. Points represent individual cells (n). Data are normalized to Con shRNA; (E) Con shRNA, n\u00a0=\u00a045, Gra shRNA, n\u00a0=\u00a046, **p=0.0036; (F) Con shRNA, n\u00a0=\u00a062, Gra shRNA, n\u00a0=\u00a066, ****p<0.0001. Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m. (G) SIM micrographs of Gravin (top, gray and magenta) in interphase and pT766-Gravin (bottom, gray and magenta) in mitotic U2OS cells. Composite images (right) also depict \u03b1-tubulin (green) and DNA (blue). (H) Schematic of global drug distribution (gray) vs drug targeting to centrosomes (green). Gravin scaffolds centrosome-localized pools of Plk1 and AurA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Immunoblot confirming Gravin expression (top) in wildtype (WT) but not Gravin knockout (KO) primary MEFs. GAPDH loading controls (bottom). (B) Matched controls pertaining to Figure 1G. SIM micrographs of Gravin (top, gray and magenta) in mitotic and pT766-Gravin (bottom, gray and magenta) in interphase U2OS cells. Composite images (right) also depict \u03b1-tubulin (green) and DNA (blue).\n\nGravin is required for organization of Plk1 and AurA at mitotic centrosomes (Hehnly et al., 2015). Whether Gravin loss reduces active pools of Plk1 and AurA at this location remains unclear. To test this,\u00a0we explored whether activity of centrosome-localized Plk1 and AurA is perturbed in cells lacking Gravin. We examined pT210-Plk1 and pT288-AurA immunofluorescence (measures of Plk1 and AurA activity, respectively) in HEK293 cells stably expressing a control or Gravin shRNA (Figure 1C,D). Gravin depletion reduced immunofluorescence of pT210-Plk1% to 80.2% of control shRNA-expressing cells (Figure 1C,E). Strikingly, pT288-AurA signal in Gravin-depleted cells dropped to 58.5% of control cell immunofluorescence (Figure 1D,F). These findings reveal that Gravin is required for localizing active pools of Plk1 and AurA at mitotic centrosomes.\n\n### LoKI platforms direct kinase inhibitor drugs to specific subcellular locations\n\nTo decipher how Gravin-associated pools of Plk1 and AurA coordinate mitotic signaling events, we needed to selectively target drugs to this location without disrupting the Gravin-Plk1-AurA macromolecular complex. During interphase Gravin is dispersed throughout the cell (Figure 1G, Figure 1\u2014figure supplement 1B). In mitosis, however, pT766-Gravin accumulates at centrosomes, a major hub of Plk1 and AurA signaling (Figure 1G, Figure 1\u2014figure supplement 1B). This provided the impetus to pharmacologically inhibit mitotic kinases at centrosomes (Figure 1H). A key advance in our studies came with the development of the LoKI tool which allows us to target kinase inhibitor drugs to specific subcellular locations. We fused a pericentrin AKAP450 centrosomal-targeting (PACT) domain (Gillingham and Munro, 2000) to a SNAP-tag moiety which can be covalently labeled with chloropyrimidine (CLP)-linked substrates inside cells (Keppler et al., 2003) (Figure 2A). A CLP-conjugated analog of BI2536 (CLP-BI2536) was generated to selectively target Plk1 (Figure 2A,B, Figure 2\u2014figure supplement 1A). In vitro kinase activity measurements demonstrated that CLP-BI2536 potently inhibits Plk1 (IC50\u00a0=\u00a049\u00a0\u00b1\u00a026 nM; Figure 2C, Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of a centrosome-directed LoKI platform. SNAP-PACT fusion proteins conjugate CLP-linked Plk1 inhibitors at centrosomes. Inset depicts BI2536 in the ATP-binding pocket of Plk1. (B) Chemical structure of CLP-BI2536. (C) Dose-response curve of in vitro Plk1 inhibition with CLP-BI2536. (D) Structured illumination microscopy (SIM) of a LoKI-on U2OS cell labeled with CLP-fluorescein. Immunofluorescent detection of \u03b1-tubulin (green), DNA (blue), mCherry-SNAP-PACT (magenta) and CLP-fluorescein (yellow). Magnification of SNAP and CLP-fluorescein co-distribution at a centrosome (inset). (E) SIM micrographs of LoKI-off (left) and LoKI-on (right) U2OS cells. SNAP expression (top, magenta), CLP-fluorescein conjugation (mid, yellow) and composite images (bottom) are depicted. (F) Pulse-chase experiments measuring CLP-BI2536\u2019s ability to block CLP-rhodamine conjugation to LoKI-on. In-gel rhodamine fluorescence (top), immunoblot of SNAP loading controls (mid), and fluorescence quantification of pulse-chase experiments (bottom). (G, H) Immunofluorescence of representative mitotic LoKI-off (G) and LoKI-on (H) U2OS cells treated with DMSO or 250 nM CLP-BI2536 for 4 hr. Composite images (left) show \u03b1-tubulin (green), DNA (blue), and SNAP (magenta). Immunofluorescent detection of pT210-Plk1 (mid, gray) as an index of kinase activity. 5X magnification of centrosomal pT210-Plk1 signals and surface plots measuring integrated intensity of pT210-Plk1 signal (insets). (I, J) Quantification of centrosomal pT210-Plk1 immunofluorescence for LoKI-expressing cells. Points represent individual cells (n). Data normalized to DMSO. Application of DMSO or CLP-BI2536 for 4 hr, (I) 100 nM, LoKI-off, n\u00a0=\u00a046, LoKI-on, n\u00a0=\u00a059, **p=0.0059; 250 nM, LoKI-off, n\u00a0=\u00a046, LoKI-on, n\u00a0=\u00a046, ****p<0.0001 and drug treatment followed by 1 hr washout (J) 250 nM, LoKI-off, n\u00a0=\u00a024, LoKI-on, n\u00a0=\u00a042, ****p<0.0001. Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m. NS, not significant. Source files for analysis of pulse-chase experiments are available in Figure 2\u2014source data 1 and for quantification of pT210-Plk1 are available in Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Full chemical structure of CLP-BI2536. (B) Dose-response curve depicting in vitro Plk1 inhibition with increasing concentrations of CLP-BI2536 conjugated to purified SNAP. (C) Schematic of LoKI viral construct with mCherry-SNAP-PACT under control of a doxycycline-inducible promoter. (D) Immunoblot confirming SNAP-PACT (top) expression after induction with doxycycline for 72 hr and GAPDH loading controls (bottom). (E) Immunoblot of SNAP-PACT (top) expression at selected time points after removal of doxycycline and GAPDH loading controls (bottom). Quantification of amalgamated data is presented below. (F) Immunofluorescent detection of interphase (top) and mitotic (bottom) U2OS cells showing \u03b1-tubulin (left and green), DNA (mid and blue), and SNAP (right and magenta). (G, H) Diagram of centrosomal LoKI-on (G) platform with drugs conjugated and LoKI-off (H) platform containing a mutation that occludes CLP binding. Experiments were conducted at least two times (N\u00a0=\u00a02\u20133). Data are mean\u00a0\u00b1\u00a0s.e.m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A, B) Pulse-chase experiments carried out in U2OS cells after 1 hr (A) or 2 hr (B) treatment with CLP-BI2536. In-gel rhodamine fluorescence (top), immunoblot of SNAP loading controls (mid), and fluorescence quantification of pulse-chase experiments (bottom). Experiments were conducted at least three times (N\u00a0=\u00a03). Data are mean\u00a0\u00b1\u00a0s.e.m. Source files for analysis of pulse-chase experiments are available in Figure 2\u2014figure supplement 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Immunofluorescence detection of pT210-Plk1 as an index of kinase activity in parental U2OS cells treated with DMSO or unconjugated BI2536 for 4 hr. (B) Quantification of centrosomal pT210-Plk1 immunofluorescence collected from parental U2OS cells. (C) Quantification of total Plk1 immunofluorescence at centrosomes in LoKI-expressing cells after 4 hr CLP-BI2536 treatment; 250 nM, LoKI-off, n\u00a0=\u00a055, LoKI-on, n\u00a0=\u00a047, *p=0.0217; 500 nM, LoKI-off, n\u00a0=\u00a052, LoKI-on, n\u00a0=\u00a051, *p=0.0295. (D) Quantification of pT210-Plk1 immunofluorescence in control cells lacking SNAP expression (not induced with doxycycline) after 4 hr CLP-BI2536 treatment. (E) Immunoblot detection of pT210-Plk1 (blot 2) and pT288-AurA (blot 4) in LoKI-off and LoKI-on expressing cells collected via mitotic shake-off. Cells were treated for 16 hr with nocodazole and 4 hr with nocodazole plus DMSO, 250 nM CLP-BI2536, or 100 nM CLP-MLN8237. Total Plk1 (blot 3), AurA (blot 5), SNAP-PACT (blot 1), and GAPDH (blot 6) are also depicted. (F) Immunoblot confirming SNAP-PACT (top) expression after induction with doxycycline for 72 hr in RPE and HeLa cells and GAPDH loading controls (bottom). (G\u2013J) Immunofluorescence detection of pT210-Plk1 at centrosomes in LoKI-off (top) and LoKI-on (bottom) RPE (G) and HeLa (I) cells treated with 250 nM CLP-BI2536 for 4 hr. Quantification of pT210-Plk1 immunofluorescence at centrosomes in RPE (H) 250 nM, LoKI-off, n\u00a0=\u00a070, LoKI-on, n\u00a0=\u00a047, ****p<0.0001 and HeLa (J) 250 nM, LoKI-off, n\u00a0=\u00a042, LoKI-on, n\u00a0=\u00a046, ****p<0.0001 LoKI-expressing cells after 4 hr CLP-BI2536 treatment. Points represent individual cells (n). Data normalized to DMSO. Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m. NS, not significant.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Quantification of non-normalized pT210-Plk1 immunofluorescence signal at centrosomes in U2OS (A) RPE (B) and HeLa (C) LoKI-expressing cells after treatment with indicated concentrations of CLP-BI2536 for 4 hr. Points represent individual cells (n). Experiments were conducted at least three times (N\u00a0=\u00a03). Data are mean\u00a0\u00b1\u00a0s.e.m.\n\nTo generate stable cell lines, U2OS osteosarcoma cells were infected with lentiviral constructs encoding the SNAP-PACT moieties fused to an mCherry reporter (Figure 2\u2014figure supplement 1C). Inducible protein expression was accomplished by a doxycycline-inducible promoter (Figure 2\u2014figure supplement 1D). Immunoblot detection of mCherry-SNAP-PACT persisted up to 4 hr upon removal of doxycycline (Figure 2\u2014figure supplement 1E). As anticipated, mCherry-SNAP-PACT associates with centrosomes during interphase and mitosis (Figure 2\u2014figure supplement 1F). Super-resolution structured illumination (SIM) imaging revealed that the SNAP-PACT construct (magenta) was labeled by CLP-fluorescein (yellow) at centrosomes (Figure 2D,E, Figure 2\u2014video 1). Counterstaining with \u03b1-tubulin (green) revealed the mitotic spindle and DAPI (blue) detected DNA (Figure 2D, Figure 2\u2014video 2). Collectively these results demonstrate that centrosomal targeting of SNAP-PACT creates a platform for the delivery of CLP-conjugates (Figure 2\u2014figure supplement 1G). This new drug targeting method is herein referred to as LoKI-on (Local Kinase Inhibition-on). In parallel, a LoKI-off vector containing an inactivating mutation (C144A) in SNAP-tag was constructed (Figure 2\u2014figure supplement 1H). LoKI-off is unable to incorporate CLP-conjugates and serves as the control platform (Figure 2\u2014figure supplement 1H).\n\nPulse-chase experiments were used to determine how efficiently CLP-BI2536 labeled SNAP-PACT. U2OS cells were treated with CLP-BI2536 (over a range of concentrations) to block CLP-rhodamine conjugation (Figure 2F). Incubation with 250 nM CLP-BI2536 for 4 hr at 37\u00b0C was defined as the optimal drug regimen (~50% labeling of SNAP-PACT; Figure 2F, Figure 2\u2014figure supplement 2A,B). Next, we measured the pT210-Plk1 immunofluorescence signal as an index of active kinase (Lee and Erikson, 1997) (Figure 2\u2014figure supplement 3A,B). In mitotic cells expressing LoKI-off, incubation with 250 nM CLP-BI2536 reduced pT210-Plk1 immunofluorescence to 58.1% of DMSO-treated controls (Figure 2G,I). Strikingly, the pT210-Plk1 signal was reduced to 21.4% in cells expressing LoKI-on (Figure 2H,I). This trend persisted with lower CLP-BI2536 concentrations and even after a 1 hr washout of drug (Figure 2I,J). Further validation confirmed that the reduction of pT210-Plk1 does not result from a loss in total Plk1 protein at centrosomes (Figure 2\u2014figure supplement 3C). Additional controls established that inducible expression of LoKI-on was necessary to attenuate the pT210-Plk1 signal (Figure 2\u2014figure supplement 3D). Immunoblot analyses of nocodazole-synchronized cells collected via mitotic shake-off further support these findings (Figure 2\u2014figure supplement 3E). Parallel analyses were conducted in HeLa and hTERT-immortalized RPE retinal pigment epithelial cells (Figure 2\u2014figure supplement 3F\u2013J). We note that due to clonal cell line differences between LoKI-off and LoKI-on cells, baseline immunofluorescence signal was normalized to DMSO-treated controls (Figure 2\u2014figure supplement 4). Collectively, these findings establish LoKI as a new pharmacological tool to selectively block Plk1 activity at centrosomes.\n\n### Targeting Plk1 inhibitor drugs to centrosomes perturbs early mitotic events\n\nCorrect assembly of bipolar spindles ensures the fidelity of chromosome segregation into daughter cells (Prosser and Pelletier, 2017). Abrogation of Plk1 activity has been linked to mitotic spindle defects that include abnormal bipolar and monopolar structures (Sunkel and Glover, 1988; Lane and Nigg, 1996; Sumara et al., 2004) (Figure 3A). Spindle classification measurements were carried out to assess if centrosomal inhibition of Plk1 induces these morphological anomalies (Figure 3B). Analysis in U2OS cells revealed that application of CLP-BI2536 in LoKI-on cells increased the incidence of abnormal bipolar (green) and monopolar (purple) spindles by 24.6% as compared to LoKI-off controls (10.3%; Figure 3B,C, Figure 3\u2014figure supplement 1A). More pronounced spindle defects were observed when local drug delivery experiments were repeated in RPE cells (Figure 3D, Figure 3\u2014figure supplement 1B). Interestingly, local delivery of CLP-BI2536 did not further exacerbate defective spindle organization in Hela cells, which naturally exhibit a high incidence of aberrant spindles (Figure 3E, Figure 3\u2014figure supplement 1C). Thus, targeting Plk1 inhibitor drugs to centrosomes promotes mitotic spindle defects in various cell types.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic depicting bipolar (top), abnormal bipolar (mid), and monopolar (bottom) mitotic spindle classifications. (B) Representative composite (left) images show \u03b1-tubulin (green), DNA (blue), and SNAP (magenta) or \u03b1-tubulin (right, gray) staining alone for each spindle type in U2OS cells. (C\u2013E) Spindle profile measurements of U2OS (C) RPE (D) and HeLa (E) cells treated with 250 nM CLP-BI2536 for 4 hr. Spindle profiling indicates the % of each spindle type in drug-treated LoKI-on and LoKI-off cells. Number of cells analyzed per condition are indicated; (C) n\u00a0=\u00a03, *p=0.0214; (D) n\u00a0=\u00a03, *p=0.0269. (F) Schematic depicting that Plk1 phosphorylation of pericentriolar substrates facilitates accumulation of \u03b3-tubulin at centrosomes and microtubule nucleation. (G, H) Representative composite (left) images show \u03b3-tubulin (yellow) and DNA (blue) in U2OS cells expressing LoKI-off (G) and LoKI-on (H) treated with 250 nM CLP-BI2536 for 4 hr, followed by a 1 hr washout. 5X magnified grayscale images of centrosomal \u03b3-tubulin (right). (I) Quantification of centrosomal \u03b3-tubulin immunofluorescence in LoKI-expressing cells. Points represent individual cells (n). Data normalized to DMSO. A ROUT (Q\u00a0=\u00a01%) outlier test was performed and two values were removed prior to performing statistical tests;\u00a0LoKI-off, n\u00a0=\u00a066, LoKI-on, n\u00a0=\u00a074, ****p<0.0001. Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m. NS, not significant. Source files for spindle profile analyses are available in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Mitotic spindle classifications for LoKI-expressing U2OS (A) RPE (B) and HeLa (C) cells treated with DMSO for 4 hr. Profiling indicates the % of each defined spindle type in drug treated LoKI-on and LoKI-off cells. Number of cells analyzed per condition are indicated. (D) Quantification of \u03b3-tubulin immunofluorescence at centrosomes in LoKI-expressing U2OS cells treated with DMSO, followed by a 1 hr washout. Points represent individual cells (n). Data normalized to DMSO. Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m. NS, not significant. Source files for control spindle profile analyses are available in Figure 3\u2014source data 1.\n\nSpindle assembly relies on \u03b3-tubulin, a protein that interacts with \u03b1/\u03b2-tubulin polymers (Moritz et al., 1995; Zheng et al., 1995). Plk1 phosphorylates pericentriolar substrates that coordinate \u03b3-tubulin accumulation at mitotic centrosomes to facilitate microtubule nucleation (Lane and Nigg, 1996; Haren et al., 2009; Xu and Dai, 2011) (Figure 3F). Accordingly, we monitored centrosomal accumulation of \u03b3-tubulin in U2OS cell after application of CLP-BI2536 for 4 hr followed by a 1 hr washout (Figure 3G\u2013I, Figure 3\u2014figure supplement 1D). The \u03b3-tubulin signal (yellow) accumulated at centrosomes in LoKI-off controls (Figure 3G,I). However, \u03b3-tubulin levels were drastically reduced when LoKI-on cells were exposed to the same drug regimen (Figure 3H,I). Amalgamated data from five independent experiments are presented (Figure 3I). These findings indicate that targeting CLP-BI2536 to centrosomes impairs accumulation of \u03b3-tubulin at this location.\n\n### Targeting AurA inhibitors to centrosomes suppresses AurA activity\n\nA versatile feature of the LoKI system is the ability to compartmentalize a variety of drug analogs. The AurA inhibitor MLN8237 was a logical candidate to highlight the broad applicability of this approach. CLP-MLN8237 was synthesized (Figure 4A, Figure 4\u2014figure supplement 1A). In vitro kinase activity measurements demonstrated that CLP-MLN8237 potently inhibits AurA (IC50\u00a0<9.5 nM; Figure 4B, Figure 4\u2014figure supplement 1B). Cell-based characterization established that treatment with 100 nM CLP-MLN8237 for 4 hr at 37\u00b0C was sufficient to label\u00a0~50% of drug binding sites (Figure 4C). Next, we used immunofluorescent detection of pT288-AurA as an index of kinase activity (Figure 4\u2014figure supplement 2A,B). In mitotic cells expressing LoKI-off, incubation with 100 nM CLP-MLN8237 reduced pT288-AurA immunofluorescence to 27.8% of DMSO-treated controls (Figure 4\u2014figure supplement 2C). Importantly, the pT288-AurA signal was further reduced to 14.2% in cells expressing LoKI-on (Figure 4D,E). Thus, increasing the local concentration of MLN8237 enhances drug action by approximately 2-fold at this subcellular location. These data demonstrate the versatility of the LoKI system as a pharmacological platform to block distinct kinases that operate at mitotic centrosomes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig4-v1.jpg)\n\n**Figure 4.:** (A) Chemical structure of AurA kinase inhibitor CLP-MLN8237. (B) Dose-response curve of in vitro AurA kinase inhibition with CLP-MLN8237. (C) Pulse-chase experiments measuring CLP-MLN8237\u2019s ability to block CLP-rhodamine conjugation to LoKI-on. In-gel rhodamine fluorescence (top), immunoblot of SNAP loading controls (mid), and fluorescence quantification of pulse-chase experiments (bottom). (D) Immunofluorescence of representative mitotic LoKI-on U2OS cells treated with DMSO or 100 nM CLP-MLN8237 for 4 hr. Composite images (left) show \u03b1-tubulin (green), DNA (blue), and SNAP (magenta). Immunofluorescent detection of pT288-AurA (right, gray) as an index of kinase activity is depicted. (E) Quantification of centrosomal pT288-AurA immunofluorescence after 4 hr CLP-MLN8237 treatment;\u00a050 nM, LoKI-off, n\u00a0=\u00a018, LoKI-on, n\u00a0=\u00a053, **p=0.0014; 100 nM, LoKI-off, n\u00a0=\u00a018, LoKI-on, n\u00a0=\u00a048, **p=0.0026. (F) Schematic of dual LoKI-on moiety conjugated to CLP-BI2536 and CLP-MLN8237. Inset depicts MLN8237 in the ATP-binding pocket of AurA. (G) Representative time-lapse images of mitotic LoKI-off (top) and LoKI-on (bottom) cells transiently expressing GFP-H2B. Cells were treated with a combination (both drugs) of 250 nM CLP-BI2536 and 100 nM CLP-MLN8237 and monitored for 18 hr. (H) Quantification of time-lapse experiments depicts duration of mitosis from nuclear envelope breakdown to the onset of anaphase; DMSO, LoKI-off, n\u00a0=\u00a0264, both drugs, LoKI-off n\u00a0=\u00a0353, ****p<0.0001; DMSO, LoKI-on, n\u00a0=\u00a0292, both drugs, LoKI-on n\u00a0=\u00a0331, ****p<0.0001; both drugs, LoKI-off, n\u00a0=\u00a0353, both drugs, LoKI-on, n\u00a0=\u00a0331, ****p<0.0001. Points in (E) and (H) represent individual cells (n). Points in (E) are normalized to DMSO. Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m. NS, not significant. Source files for analysis of pulse-chase experiments are available in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Full chemical structure of CLP-MLN8237. (B) Graph depicting in vitro AurA kinase inhibition with increasing concentrations of CLP-MLN8237 conjugated to purified SNAP. Experiments were conducted at least three times (N\u00a0=\u00a03). Data are mean\u00a0\u00b1\u00a0s.e.m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Immunofluorescence detection of pT288-AurA as an index of kinase activity in parental U2OS cells treated with DMSO or unconjugated MLN8237 for 4 hr. (B) Quantification of centrosomal pT210-AurA immunofluorescence collected from parental U2OS cells. Data normalized to DMSO. Points represent individual cells (n). Experiments were conducted at least three times (N\u00a0=\u00a03). Data are mean\u00a0\u00b1\u00a0s.e.m. (C) Immunofluorescence of representative mitotic LoKI-off U2OS cells treated with DMSO or 100 nM CLP-MLN8237 for 4 hr. Composite images (left) show \u03b1-tubulin (green), DNA (blue), and SNAP (magenta). Immunofluorescent detection of pT288-AurA (right, gray) as an index of kinase activity is depicted. (D) Representative time-lapse images of mitotic LoKI-off (top) and LoKI-on (bottom) cells transiently expressing GFP-H2B. Cells were treated with DMSO and monitored for 18 hr.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A, B) Quantification of time-lapse experiments depicts duration of mitosis from nuclear envelope breakdown to the onset of anaphase in cells treated with CLP-BI2536 (A) DMSO, LoKI-off, n\u00a0=\u00a0196, 250 nM, LoKI-off n\u00a0=\u00a0216, ****p<0.0001; DMSO, LoKI-on, n\u00a0=\u00a0211, 250 nM, LoKI-on n\u00a0=\u00a0211, ****p<0.0001 or CLP-MLN8237 (B) DMSO, LoKI-on, n\u00a0=\u00a0257, 100 nM, LoKI-on n\u00a0=\u00a0325, ****p<0.0001; 100 nM, LoKI-off, n\u00a0=\u00a0237, 100 nM, LoKI-on n\u00a0=\u00a0325, ****p<0.0001. Points represent individual cells (n). Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m. NS, not significant.\n\n### Combined Plk1 and AurA suppression at centrosomes more profoundly delays mitosis than global kinase inhibition\n\nTo investigate the coordinate activities of Plk1 and AurA at the centrosome (Asteriti et al., 2015) we took advantage of another feature of the LoKI-on platform, the ability to co-localize CLP-drug combinations via a dual SNAP conjugation moiety (Figure 4F). Live-cell imaging of U2OS cells expressing GFP-tagged histone 2B (Figure 4G, Figure 4\u2014figure supplement 2D, Figure 4\u2014videos 1 and 2) was used to calculate a baseline for mitotic timing (nuclear envelope breakdown to anaphase) as 35.1 min (Figure 4H). Mitosis was delayed by 19.4 min when CLP-BI2536 (250 nM) and CLP-MLN8237 (100 nM) were simultaneously applied to LoKI-off cells (Figure 4G,H). However, the same combination treatment prolonged mitosis 3-fold (59 min delay) when experiments were repeated in LoKI-on cells (Figure 4G,H). Moreover, the mitotic duration observed in LoKI-on cells after combination treatment extended beyond what was seen with either inhibitor alone (Figure 4\u2014figure supplement 3A,B). These data accentuate the utility of LoKI-on as a means to direct drug combinations to defined cellular locations in space and time.\n\n### Implementation of LoKI in live zebrafish embryos implicates Plk1 activity at centrosomes in coordinating mitoses during early development\n\nZebrafish provide an excellent model organism to test local drug action using the LoKI system because their transparency simplifies imaging analysis (Zon and Peterson, 2005). Zebrafish embryos were microinjected with mCherry-LoKI-on mRNA and allowed to develop for 5 hr until they reached\u00a0~50% epiboly (Figure 5A,B). Detection of mCherry fluorescence confirmed expression of the local drug-targeting construct (Figure 5B). Higher resolution imaging of fixed embryos confirmed accumulation of LoKI-on at centrosomes during interphase and mitosis (Figure 5\u2014figure supplement 1A). Co-distribution of the SNAP moiety (magenta) with CLP-647 dye (yellow) confirmed assembly of the drug-targeting platform at centrosomes (Figure 5\u2014figure supplement 1B). Microinjection of the Plk1 inhibitor adduct CLP-BI2536 (250 nM) permitted local drug delivery. Live-cell imaging 5 hr post injection exposed a range of adverse mitotic phenotypes. Mitotic spindles were visualized using a microtubule binding protein, EMTB-3xGFP (Figure 5C). Multipolar spindles, spindle orientation defects, and prolonged mitoses were evident in drug-treated embryos expressing LoKI-on (Figure 5C, Figure 5\u2014video 1). Fixed-cell imaging of whole embryos revealed intact microtubule organization and few mitotic cells in LoKI-off embryos treated with CLP-BI2536 (Figure 5D). In contrast, drug-treated LoKI-on embryos exhibited microtubule abnormalities and a higher incidence of mitotic cells (Figure 5E). Fluorescent detection of the SNAP moiety confirmed centrosomal targeting of LoKI platforms (Figure 5D,E). Additional analyses correlated centrosomal inhibition of Plk1 with increased mitotic indices in LoKI-on embryos (Figure 5F). Conversely, control experiments in LoKI-off embryos showed that CLP-BI2536 had minimal effect, as indicated by a significantly higher proportion of interphase cells (Figure 5F). Thus, targeted delivery of kinase inhibitor drugs to mitotic centrosomes induces a range of adverse mitotic phenotypes in developing embryos relative to global drug application.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of experimental scheme. Microinjection of LoKI mRNAs into zebrafish embryos occurs at the 1\u20132 cell stage. Live-cell imaging is conducted at\u00a0~50% epiboly. (B) Zebrafish embryos (left, brightfield) depicting regional expression of SNAP (mid, magenta) at\u00a0~50% epiboly. Composite images (right) depict expression of SNAP only in the cells of the zebrafish embryos. (C) Centrosomal delivery of Plk1 inhibitors perturb cell division in zebrafish embryos. Time-lapse images of dividing cells embedded in LoKI-on zebrafish embryos 5 hr post application of 250 nM CLP-BI2536. Representative examples of normal bipolar spindles (top) multipolar spindles (mid) and spindle orientation defects (bottom) are presented. Composite images show microtubule marker EMTB-3xGFP (white) and SNAP (magenta). (D, E) 3D-rendered images depict incidence of mitotic cells and general organization of whole LoKI-off (D) or LoKI-on (E) zebrafish embryos treated with 250 nM CLP-BI2536. EMTB (white and top inset), SNAP (magenta and mid inset), and mitotic cells (cyan and bottom inset) are shown. (F) Graph depicting mitotic index measurements for LoKI-expressing embryos; LoKI-off, n\u00a0=\u00a023, LoKI-on, n\u00a0=\u00a020, ****p<0.0001. Each point represents % of cells per individual embryo (n). Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Confocal micrograph of an embryo expressing LoKI-on (magenta) counterstained for DNA (cyan). Magnification of cells (insets) at interphase (upper) and mitosis (lower). Grayscale images reveal localization of the centrosomal LoKI-on platform. (B) In vivo validation of drug delivery. Immunofluorescent detection of microtubule marker EMTB-3xGFP (green), SNAP (magenta) and CLP-647 dye (yellow) in a cell embedded in a living zebrafish embryo.\n\n### Targeting CLP-MLN8237 to kinetochores reveals that AurA-mediated Hec1 phosphorylation is a local event\n\nKinetochores are proteinaceous structures that ensure the proper attachment of spindle microtubules to the centromeric region of condensed chromatin (Hinshaw and Harrison, 2018) (Figure 6A). To further demonstrate the versatility of the LoKI system, we utilized a targeting domain from the kinetochore protein Mis12 (Goshima et al., 2003) (Figure 6A). Inducible expression of the mCherry-tagged fusion was accomplished by a doxycycline-inducible promoter (Figure 6B, Figure 6\u2014figure supplement 1A). Immunoblot detection of Mis12-LoKI-on persisted up to 4 hr upon removal of doxycycline (Figure 6\u2014figure supplement 1B). Immunofluorescent staining revealed that mCherry-tagged Mis12-LoKI-on co-localized with centromeric DNA (anti-centromere antibodies (ACA), cyan) at kinetochores during mitosis (Figure 6C, Figure 6\u2014video 1). Counterstaining with \u03b1-tubulin antibodies (green) revealed the mitotic spindle (Figure 6C). SIM imaging revealed that a CLP-dye (CLP-647, yellow) accumulated with the SNAP moiety (magenta) at kinetochores of Mis12-LoKI-on cells (Figure 6D). In contrast, recruitment of CLP-647 was not evident in Mis12-LoKI-off cells (Figure 6D). Line plot analyses of the CLP-647 signal in selected kinetochores emphasizes this result (Figure 6E). Pulse-chase experiments established that incubation with 100\u2013250 nM of the AurA inhibitor adduct CLP-MLN8237 for 4 hr at 37\u00b0C was the optimal drug regimen (~50% of drug binding sites occupied; Figure 6F). Parallel, validation studies were performed with CLP-BI2536 (Figure 6\u2014figure supplement 1C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic of microtubule association with centromeric chromatin at kinetochores. Diagram of LoKI-Mis12 securing CLP-linked inhibitors to kinetochores (inset). (B) Immunoblot confirming SNAP-Mis12 (top) expression after induction with doxycycline for 72 hr and GAPDH loading controls (bottom). (C) Representative SIM micrograph depicting \u03b1-tubulin (green), mCherry-SNAP-Mis12 (magenta) and centromeric DNA marker ACA (cyan) in U2OS cells. Composite image depicts co-distribution of LoKI-Mis12 with ACA. (D) SIM micrographs of LoKI-off (left) and LoKI-on (right) U2OS cells. SNAP expression (top, magenta), CLP-647 conjugation (mid, yellow) and composite images (bottom) are depicted. Line on CLP-dye was used to generate panel E plot. (E) Line plot of CLP-dye signal from a representative kinetochore in panel D. (F) Pulse-chase experiments measuring CLP-MLN8237\u2019s ability to block CLP-rhodamine conjugation to LoKI-on. In-gel rhodamine fluorescence (top), immunoblot of SNAP loading controls (mid), and fluorescence quantification of pulse-chase experiments (bottom). (G, H) Immunofluorescence of representative mitotic LoKI-off (G) and LoKI-on (H) U2OS cells treated with DMSO or 100 nM CLP-MLN8237 for 4 hr. Composite images (left) show \u03b1-tubulin (green) and DNA (blue). Immunofluorescence detection of pS69-Hec1 (mid and top right insets, gray). Heat maps (bottom right) depict maximum intensity measurements of pS69-Hec1 signal from representative insets. (I) Quantification of pS69-Hec1 immunofluorescence at kinetochores after 4 hr CLP-MLN8237 treatment; 100 nM, LoKI-off, n\u00a0=\u00a040, LoKI-on, n\u00a0=\u00a039, ****p<0.0001; 175 nM, LoKI-off, n\u00a0=\u00a029, LoKI-on, n\u00a0=\u00a029, *p=0.0212. Points represent individual cells (n). Data normalized to DMSO. Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m. NS, not significant. (J) Implementation of LoKI at other subcellular locations shows SNAP targeting to plasma membrane via AKAP79 and mitochondrial localization via d-AKAP1. Source files for analysis of pulse-chase experiments are available in Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Schematic depicting the Mis12-LoKI viral construct with mCherry-SNAP-Mis12 under the control of a doxycycline-inducible promoter. (B) Immunoblot of SNAP-Mis12 (top) expression at selected time points after removal of doxycycline and GAPDH loading controls (bottom). Quantification of amalgamated data is presented below. (C) Pulse-chase experiments measuring CLP-MLN8237\u2019s ability to block CLP-rhodamine conjugation to LoKI-on. In-gel rhodamine fluorescence (top), immunoblot of SNAP loading controls (mid), and fluorescence quantification of pulse-chase experiments (bottom). Experiments were conducted at least two times (N\u00a0=\u00a02\u20133). Data are mean\u00a0\u00b1\u00a0s.e.m. Source files for analysis of pulse-chase experiments are available in Figure 6\u2014figure supplement 1\u2014source data 1.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Quantification of pS69-Hec1 immunofluorescence at centrosomes after 4 hr CLP-MLN8237 treatment. (B) Immunoblot detection of pS69-Hec1 (blot 2) and pT288-AurA (blot 3) in Mis12-LoKI-off and Mis12-LoKI-on expressing cells collected via mitotic shake-off. Cells were treated for 16 hr with nocodazole and 4 hr with nocodazole plus DMSO or 100 nM CLP-MLN8237. Total AurA (blot 3), SNAP-PACT (blot 1), and GAPDH (blot 5) are also depicted. (C) Quantification of pS69-Hec1 immunofluorescence at kinetochores after 4 hr CLP-MLN8237 treatment in SNAP-PACT expressing U2OS cells. Points in (A) and (C) represent individual cells (n). Data normalized to DMSO. Experiments were conducted at least three times (N\u00a0=\u00a03) and P values were calculated by unpaired two-tailed Student\u2019s t-test. Data are mean\u00a0\u00b1\u00a0s.e.m. NS, not significant.\n\nRoles for AurA at centrosomes and mitotic spindles are well documented (Nikonova et al., 2013). However, recent reports have implicated AurA as a modulator of microtubule attachment to kinetochores (Chm\u00e1tal et al., 2015; Ye et al., 2015). At this location AurA phosphorylates serine 69 in Hec1, a subunit of the NDC80 complex (DeLuca et al., 2018). This local phosphorylation stabilizes microtubule-kinetochore interaction to safeguard chromosome segregation (DeLuca et al., 2018). However, the proximity of centrosomes to kinetochores in early mitosis has hampered attempts to resolve the contribution of discrete AurA pools. Therefore, immunofluorescent detection of pS69-Hec1 served as an index for local AurA kinase activity at kinetochores (Figure 6G,H). As before, counterstaining for \u03b1-tubulin (green) and DNA (blue) revealed the mitotic spindle (Figure 6G,H). In cells expressing Mis12-LoKI-off, incubation with 100 nM CLP-MLN8237 caused a negligible decrease in pS69-Hec1 signal as compared to DMSO-treated controls (Figure 6G,I). Conversely, in Mis12-LoKI-on cells the pS69-Hec1 signal was reduced to 59.8% (Figure 6H,I). Representative heat maps further illustrate this phenomenon (Figure 6G,H). Importantly, the pS69-Hec1 signal at centrosomes was unaffected by drug treatments (Figure 6G,H, Figure 6\u2014figure supplement 2A). Amalgamated data from three independent experiments reveal that this trend persisted even at higher concentrations (Figure 6I). Immunoblot analyses of nocodazole-synchronized cells collected via mitotic shake-off further support our findings (Figure 6\u2014figure supplement 2B). Finally, when SNAP-PACT LoKI-expressing cells were used to sequester CLP-MLN8237 at centrosomes, we no longer observed a reduction in pS69-Hec1 signal at kinetochores (Figure 6\u2014figure supplement 2C). These data further support a role for AurA at the kinetochore. Ultimately, our findings illustrate how LoKI platforms can be adapted to pharmacologically investigate kinase signaling at distinct subcellular locations within the mitotic cell.\n\n## Discussion\n\nCells have evolved a highly organized architecture that is segregated into functionally distinct microenvironments (Figure 6J). However, traditional methods of drug delivery do not account for this exquisite degree of molecular organization. Conventional approaches flood cells with bioactive compounds, masking the unique contributions of individual kinases at distinct subcellular locations. Although it is well established that Plk1 and AurA coordinate various aspects of cell division, current drug-targeting strategies limit our ability to decode the spatiotemporal regulation of these events (Barr et al., 2004; Combes et al., 2017; Lens et al., 2010). Studying molecular scaffolds that form complexes with these key mitotic enzymes provides important mechanistic insight into how these processes are coordinated (Figure 1; Hehnly et al., 2015). Moreover, designing pharmacological tools that restrict the spatial and temporal action of kinase inhibitor drugs is paramount to deciphering local kinase action. In this study, we discovered that the anchoring protein Gravin is required for organizing active pools of Plk1 and AurA at centrosomes (Figure 1C,D). These data support previous findings in which Gravin loss led to increased Plk1 mobility and aberrant CEP215 phosphorylation (Canton et al., 2012; Hehnly et al., 2015; Colicino et al., 2018). Thus, we suggest that Gravin constrains enzymes in a signaling island to provide spatiotemporal control of kinase activity. Conversely, depletion of this anchoring protein alters Gravin-Plk1 and Gravin-AurA protein-protein interactions which underlie healthy cellular function. This further emphasizes a need for designing strategies that inhibit kinase activity locally. For this reason, we developed a novel chemical-biology tool, LoKI, to more precisely probe the actions of Plk1 and AurA at centrosomes and kinetochores. Previous work from Gower and colleagues utilized antibody mimetics to target promiscuous inhibitor drugs to specific kinases (Gower et al., 2016). Our strategy advances this technology by combining AKAP-targeting domains with SNAP-tagging technologies. Additionally, we direct selective ATP-competitive inhibitors to specific subcellular locations to achieve local kinase inhibition. By combining biochemical approaches, quantitative imaging, and live-cell microscopy we reveal that local targeting of Plk1 and AurA kinase inhibitor drugs disrupts substrate phosphorylation, spindle organization, and mitotic duration more profoundly than global drug distribution. Thus organellar targeting of drugs offers a new means to advance the investigation of broad-spectrum kinases at precise locations.\n\nPrevious studies suggest that Plk1 phosphorylates pericentriolar substrates that coordinate \u03b3-tubulin accumulation at mitotic centrosomes to facilitate microtubule nucleation (Lane and Nigg, 1996; Haren et al., 2009; Xu and Dai, 2011). We advance this concept and extend these findings by demonstrating that centrosomal inhibition of Plk1 prevents accumulation of \u03b3-tubulin and correct organization of bipolar mitotic spindles (Figure 3). Thus, by using the LoKI system we are able to definitively establish that Plk1 activity at mitotic centrosomes is a driver in these processes. Furthermore, the utility of LoKI drug targeting was underscored by our in vivo studies using zebrafish embryos. We provide evidence that embryos treated with centrosome-targeted Plk1 inhibitors have more microtubule abnormalities than those treated with a non-localized inhibitor (Figure 5C\u2013E). These data implicate centrosome-localized pools of Plk1 in coordinating mitotic events such as spindle organization and mitotic progression during early zebrafish development. In a broader context, we show that local targeting of Plk1 inhibitors in developing organisms offers an innovative precision technique to probe local drug action.\n\nAnother key advance in our studies came with the discovery that AurA-mediated Hec1 phosphorylation is a spatially-coordinated event that occurs at kinetochores. We provide quantitative imaging (Figure 6G\u2013I, Figure 6\u2014figure supplement 2C) and biochemical (Figure 6\u2014figure supplement 2B) data that implicates AurA activity at this mitotic substructure. Although this kinase was originally thought to reside exclusively at centrosomes and mitotic spindles, our findings extend recent evidence for the existence of an AurA pool at kinetochores (DeLuca, 2017). We reveal that kinetochore-targeted MLN8237 reduces pS69-Hec1 signal more drastically than globally distributed drug (Figure 6H\u2013I). Our data suggest that even during prometaphase, when kinetochores may encounter centrosome-associated AurA, this phosphorylation is solely a kinetochore-associated event. Furthermore, when we target the AurA inhibitor to centrosomes and measure pS69-Hec1 at kinetochores we no longer see a loss of pS69-Hec1 signal (Figure 6\u2014figure supplement 2C). Thus, we show that centrosome-associated AurA is not likely responsible for this phosphorylation event as has been previously suggested (Chm\u00e1tal et al., 2015; Ye et al., 2015). More importantly, these findings uncover that S69-Hec1 phosphorylation is a local event that depends on AurA activity at kinetochores. This allows us to postulate that isolated pockets of AurA may act independently and concurrently to orchestrate complex cellular events.\n\nThe versatility of this new chemical-biology platform is demonstrated in three ways. First, this approach works in a variety of cell types and microinjection of LoKI mRNA into live zebrafish embryos permits local drug targeting in vivo (Figure 5). We foresee that LoKI platforms will be adapted to acutely probe local signaling in other genetically tractable organisms. Second, while derivatized Plk1 and AurA drugs delineate roles for each mitotic kinase, conjugation of chloropyrimidine (CLP) to other ATP analogs offers a general method to synthesize localizable inhibitors for additional members of the kinome (Gower et al., 2016). However, it is worth noting that the reduced cell permeability of certain CLP-drug conjugates, including CLP-BI2536, may necessitate their use at approximately 10-fold higher concentrations than the unmodified drugs (Figure 2I versus Figure 2\u2014figure supplement 3B, Figure 4E versus Figure 4\u2014figure supplement 2B). Additionally, derivatization of certain inhibitors may sterically hinder their access to the ATP-binding pockets of some kinases or, as is the case of the PKA antagonist H89, the lack of a functional group prevents CLP derivatization. Third, plasma membrane and mitochondrial targeting domains from AKAP79 and dAKAP1 expand the repertoire of subcellular compartments reached by LoKI platforms (Figure 6J).\n\nAlthough our strategy uncovers local contributions of anchored kinase pools within the cell, certain limitations to our current approach exist. For example, we treat cells for 4 hr with CLP-conjugated drug adducts to achieve sufficient inhibitor targeting (~50% of drug binding sites occupied; Figure 2F, Figure 6F). This is a relatively long time period in the context of measuring cell-cycle events. Likewise, in cells we find that high concentrations of CLP-drug (100 nM) are required to produce equivalent effects as 10 nM of non-derivatized MLN8237 (Figure 4E versus Figure 4\u2014figure supplement 2B). We postulate that reduced cell permeability of certain CLP-drug conjugates may account for both of the aforementioned findings. As a result, this necessitates long incubation periods and application of higher concentrations of drug. Finally, it is possible that kinase inhibitor drugs directed to centrosomes have off-target effects at nearby structures such as spindle microtubules. We envision that future advancements of this platform would include photo-caged inhibitors that are inert until they are ready to be released at the site of desired inhibition (Ellis-Davies, 2007). Employing this strategy would more strictly define the range of inhibitor action, provide another level of control to the LoKI system, and allow us to better delineate the effects of global versus local inhibition.\n\nOne exciting feature of our LoKI platform is the ability to co-localize CLP-drug combinations via a dual SNAP conjugation moiety (Figure 4F). Although in our study this allowed combined inhibition of Plk1 and AurA at centrosomes, we hope that future work will advance on our strategy and provide a system that utilizes multiple self-labeling enzymes to deliver distinct inhibitors to the same location. Employing orthogonal tagging systems such as CLIP-tag or Halo-tag in tandem with SNAP-tag could eliminate the possibility that CLP-BI2536 and CLP-MLN8237 compete for conjugation to the same targeting moiety. Nonetheless, by exploiting our knowledge of how AKAPs compartmentalize signaling enzymes we have developed tools that define the local kinase terrain at the angstrom level. This will allow investigators to probe local signaling events at a level of precision that has not been possible before.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Alpha-tubulin, clone DM1A</td>\n      <td>Sigma Aldrich</td>\n      <td>T9026 Mouse monoclonal RRID:AB_477593</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alpha-tubulin-FITC, clone DM1A</td>\n      <td>Sigma Aldrich</td>\n      <td>F2168 Mouse monoclonal RRID:AB_477593</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Amersham ECL Mouse IgG, HRP-linked F(ab')\u2082 fragment (from sheep)</td>\n      <td>GE Life Sciences</td>\n      <td>NA9310</td>\n      <td>WB (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Amersham ECL Rabbit IgG, HRP-linked F(ab')\u2082 fragment (from donkey)</td>\n      <td>GE Life Sciences</td>\n      <td>NA9340</td>\n      <td>WB (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Aurora A</td>\n      <td>Sigma Aldrich</td>\n      <td>SAB2500135 Goat polyclonal</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Centromere (ACA)</td>\n      <td>Antibodies Inc.</td>\n      <td>15-234-0001 Human polyclonal</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-Aurora A (T288), clone C39D8</td>\n      <td>Cell Signaling</td>\n      <td>3079 Rabbit polyclonal</td>\n      <td>IF (1:500); WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-goat IgG-HRP</td>\n      <td>Santa Cruz</td>\n      <td>sc-2020</td>\n      <td>WB (1:10000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Mouse IgG, Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>A-21202</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Mouse IgG, Alexa Fluor 555</td>\n      <td>Invitrogen</td>\n      <td>A-31570</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Mouse IgG, Alexa Fluor 647</td>\n      <td>Invitrogen</td>\n      <td>A-11126</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Rabbit IgG, Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>A-21206</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Rabbit IgG, Alexa Fluor 555</td>\n      <td>Invitrogen</td>\n      <td>A-31572</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Rabbit IgG, Alexa Fluor 647</td>\n      <td>Invitrogen</td>\n      <td>A-31573</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>DyLight 405 AffiniPure Donkey Anti-Human IgG (H+L)</td>\n      <td>Jackson Labs</td>\n      <td>RRID: AB_2340553</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GAPDH-HRP</td>\n      <td>Novus</td>\n      <td>NB110-40405 Mouse monoclonal RRID: AB_669249</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Gamma-tubulin</td>\n      <td>Abcam</td>\n      <td>11317 Rabbit polyclonal RRID: AB_297921</td>\n      <td>IF (1:1500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Gravin, clone JP74</td>\n      <td>Sigma Aldrich</td>\n      <td>G3795 Mouse monoclonal</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Gravin, clone R3698</td>\n      <td>(Nauert et al., 1997)</td>\n      <td>Rabbit polyclonal</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-Gravin (T766)</td>\n      <td>(Canton et al., 2012)</td>\n      <td>Rabbit polyclonal</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-Hec1 (S69)</td>\n      <td>(DeLuca et al., 2018)</td>\n      <td>Rabbit polyclonal</td>\n      <td>IF (1:3000) WB (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-Plk1 (T210)</td>\n      <td>Biolegend</td>\n      <td>628901 Rabbit polycolonal RRID: AB_439786</td>\n      <td>IF (1:500); WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Plk1, clone 35\u2013206</td>\n      <td>Millipore</td>\n      <td>05\u2013844 Mouse monoclonal RRID:AB_11213632</td>\n      <td>IF (1:500); WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>SNAP-tag</td>\n      <td>New England Biolabs</td>\n      <td>P9310S Rabbit polyclonal</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapein)</td>\n      <td>HEK293 Control shRNA stable cell line</td>\n      <td>(Canton et al., 2012)</td>\n      <td></td>\n      <td>Maintained in Scott lab in DMEM supplemented with 10% FBS under 4 ug/mL Puromycin selection</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapein)</td>\n      <td>HEK293 Gravin shRNA stable cell line</td>\n      <td>(Canton et al., 2012)</td>\n      <td></td>\n      <td>Maintained in Scott lab in DMEM supplemented with 10% FBS under under 4 ug/mL Puromycin selection</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapein)</td>\n      <td>HeLa</td>\n      <td>From L. Wordeman lab, origin ATCC</td>\n      <td></td>\n      <td>Maintained in the Scott Lab in DMEM supplemented with 10% FBS</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapein)</td>\n      <td>hTERT-RPE</td>\n      <td>Gift from P. Jallepalli lab, origin ATCC</td>\n      <td></td>\n      <td>Maintained in the Scott Lab in DMEM/F-12, Hepes with 10% FBS</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>MEF Gravin wildtype</td>\n      <td>(Hehnly et al., 2015)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>MEF Gravin knockout</td>\n      <td>(Hehnly et al., 2015)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapein)</td>\n      <td>U2OS</td>\n      <td>ATCC</td>\n      <td>HTB-96</td>\n      <td>Maintained in the Scott Lab in DMEM supplemented with 10% FBS</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alisertib, MLN8237</td>\n      <td>AdooQ</td>\n      <td>A10004-10nM-D</td>\n      <td>Manufacturer\u2019s instructions</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BI2536</td>\n      <td>AdooQ</td>\n      <td>A10134-50</td>\n      <td>Manufacturer\u2019s instructions</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Beta-mercaptoethanol (BME)</td>\n      <td>Sigma Aldrich</td>\n      <td>M6250</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CLP-BI2536</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018synthesis of CLP-reagents\u2019</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CLP-MLN8237</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018synthesis of CLP-reagents\u2019</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CLP-rhodamine</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See \u2018synthesis of CLP-reagents\u2019</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>Thermo Fisher</td>\n      <td>62248</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dimethylsulfoxide (DMSO)</td>\n      <td>Pierce</td>\n      <td>TS-20688</td>\n      <td>Manufacturer\u2019s instructions</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM FluoroBrite</td>\n      <td>Life Technologies</td>\n      <td>A1896701</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM/F-12 Hepes</td>\n      <td>Life Technologies</td>\n      <td>11330057</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM, high glucose</td>\n      <td>Life Technologies</td>\n      <td>11965118</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Doxycycline hyclate</td>\n      <td>Sigma Aldrich</td>\n      <td>24390-14-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fetal Bovine Serum</td>\n      <td>Thermo Fisher</td>\n      <td>A3382001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lipofectamine 2000 Transfection Reagent</td>\n      <td>Invitrogen</td>\n      <td>11668027</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NuPAGE LDS Sample Buffer 4X</td>\n      <td>Thermo Fisher</td>\n      <td>NP0008</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Opti-MEM I Reduced Serum Medium, no phenol red</td>\n      <td>Life Technologies</td>\n      <td>11058021</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ProLong Diamond Antifade Mountant</td>\n      <td>Life Technologies</td>\n      <td>P36961</td>\n      <td>Manufacturer\u2019s instructions</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polybrene</td>\n      <td>Santa Cruz</td>\n      <td>134220</td>\n      <td>Manufacturer\u2019s instructions</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Puromycin dihydrochloride</td>\n      <td>Santa Cruz</td>\n      <td>58-58-2</td>\n      <td>4 ug/mL</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SNAP-Cell Fluorescein</td>\n      <td>New England Biolabs</td>\n      <td>S9107S</td>\n      <td>Manufacturer\u2019s instructions</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SNAP-Cell 647-SiR</td>\n      <td>New England Biolabs</td>\n      <td>S9102S</td>\n      <td>Manufacturer\u2019s instructions</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SuperSignal West Dura Extended Duration Substrate</td>\n      <td>Thermo Fisher</td>\n      <td>34075</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TransIT-LT1 Transfection Reagent</td>\n      <td>Mirus</td>\n      <td>MIR2300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trypsin-EDTA (0.25%), phenol red</td>\n      <td>Gibco</td>\n      <td>25200056</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BCA Protein Assay Kit</td>\n      <td>Thermo Fisher</td>\n      <td>23227</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QuikChange II XL kit</td>\n      <td>Aligent</td>\n      <td>200522</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>GeneJET Genomic DNA purification kit</td>\n      <td>Thermo Fisher</td>\n      <td>K0721</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Aurora A, active</td>\n      <td>Invitrogen</td>\n      <td>PV3612</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Plk1, active</td>\n      <td>SignalChem</td>\n      <td>P41-10H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>EMTB-3XGFP</td>\n      <td>Addgene</td>\n      <td></td>\n      <td>pCS2+ backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GFP-H2B</td>\n      <td>Addgene</td>\n      <td></td>\n      <td>pEGFP-N1 backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>His6-SNAP-tag</td>\n      <td>Addgene</td>\n      <td></td>\n      <td>pMCSG7 backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMD2.G</td>\n      <td></td>\n      <td>RRID: Addgene_12259</td>\n      <td>gift from Didier Trono; Addgene plasmid #12259</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>psPAX2</td>\n      <td></td>\n      <td>RRID: Addgene_12260</td>\n      <td>gift from Didier Trono; Addgene plasmid #12259</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SNAP-PACT</td>\n      <td>This paper</td>\n      <td></td>\n      <td>In-house modified pLIX402 backbone (gift from David Root; Addgene plasmid #41394)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SNAP-PACT (C144A)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>In-house modified pLIX402 backbone (gift from David Root; Addgene plasmid #41394)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SNAP-Mis12</td>\n      <td>This paper</td>\n      <td></td>\n      <td>In-house modified pLIX402 backbone (gift from David Root; Addgene plasmid #41394)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SNAP-Mis12 (C144A)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>In-house modified pLIX402 backbone (gift from David Root; Addgene plasmid #41394)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SNAP-AKAP79</td>\n      <td>This paper</td>\n      <td></td>\n      <td>In-house modified pcDNA3.1+ backbone (Life Technologies)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SNAP-dAKAP1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>In-house modified pcDNA3.1+ backbone (Life Technologies)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji/ImageJ</td>\n      <td>ImageJ (http://imagej.nih.gov/ij/)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad Prism (https://graphpad.com)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris</td>\n      <td>Bitplane</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SoftWoRx</td>\n      <td>GE Healthcare</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>1.5 poly-D-lysine coated coverslips</td>\n      <td>neuVitro</td>\n      <td>GG-12\u20131.5-pdl</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>AnykD Criterion TGX Precast Midi Protein Gel</td>\n      <td>Biorad</td>\n      <td>5671124</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Bolt 4\u201312% Bis-Tris Plus Gels</td>\n      <td>Invitrogen</td>\n      <td>NW04120BOX</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Scienceware cloning discs</td>\n      <td>Sigma Aldrich</td>\n      <td>Z374431</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>\u03bc-Slide 4 Well Glass Bottom: # 1.5H (170 \u03bcm +\u00a0/-\u00a05 \u03bcm) D 263 M Schott glass</td>\n      <td>(Ibidi)Pierce</td>\n      <td>80426</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmid constructs\n\nSNAP, mCherry, eGFP, PACT, Mis12, AKAP79, and dAKAP1 components and were individually PCR amplified with overlapping ends and/or Gateway \u2018att\u2019 sites and assembled using Gibson Cloning. Gateway cloning was carried out to subclone SNAP constructs into pLIX402 (a gift from David Root; Addgene plasmid #41394) for PACT and Mis12 studies or pcDNA3.1+ (Life Technologies) for AKAP79 and dAKAP1. To generate mutant SNAP, site-directed mutagenesis was performed with a QuikChange II XL kit (Aligent). GFP-H2B and EMTB-3xGFP constructs were used for live-cell imaging studies. Constructs were verified by Sanger sequencing.\n\n### Cell culture and virus generation\n\nCells used to generate stable cell lines in this study originated as follows: U2OS (purchased from ATCC), HeLa (from L. Wordeman lab and maintained in-house), and hTERT-RPE (gift from P. Jallepalli lab and maintained in-house). HeLa and hTERT-RPE cells were tested by STR at ATCC. Chang Liver cells, a HeLa contaminant, were detected in the HeLa line while hTERT-RPE cells were an exact match to ATCC cell line CRL-4000 (hTERT-RPE-1). U2OS, HeLa, and hTERT-RPE cells tested negative for mycoplasma contamination as assessed by the Universal Mycoplasma Detection Kit (ATCC 30-1012K).\u00a0U2OS, HeLa, Control and Gravin shRNA HEK293 (Canton et al., 2012), and immortalized MEF (generated as described in Hehnly et al. (2015) and maintained in-house) cells were maintained in DMEM, high glucose and hTERT-RPE cells were maintained in DMEM/F-12, Hepes (Life Technologies) at 37\u00b0C and 5% CO2. All media was supplemented with 10% FBS. Infections for generation of stable SNAP cells were performed using lentiviral particles created in-house. In brief, SNAP pLIX402 vectors were transfected alongside pMD2.G and psPAX2 plasmids (gifts from Didier Trono; Addgene plasmid #12259 [RRID:Addgene_12259] and plasmid #12260 [RRID:Addgene_12260])) into HEK293 cells using Lipofectamine 2000 reagent (Invitrogen) in Opti-MEM (Life Technologies) media. Virus-containing supernatant was collected, passed through a. 45 \u00b5m filter, and transduced into cells in the presence of 1 \u00b5g/ul Polybrene (Santa Cruz). Cells were selected and maintained in supplemented media with 4 \u00b5g/mL Puromycin dihydrochloride (Santa Cruz). Single clones were isolated using Scienceware cloning discs (Sigma-Aldrich). Infections for generation of stable knockdown in HEK293 cells were performed with shRNA lentiviral particles (Santa Cruz Biotech) as described in Canton et al.\u00a0(2012). For expression of AKAP79, dAKAP1, and Gravin constructs in U2OS cells, transient transfections were performed using TransIT-LT1 reagent (Mirus) in Opti-MEM (Life Technologies) media according to manufacturer\u2019s instructions.\n\n### Synthesis of CLP-reagents\n\n#### CLP-linker synthesis\n\n![Chemical structure 1.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig7-v1.jpg)\n\n1a CLP-Amine, created as previously described (Hill et al., 2012), 1 Eq of 1a (0.2 M) and 1.1 Eq of 1b (Abachemscene) were dissolved in DMF at RT. The reaction was placed on ice. While stirring, 1.3 Eq HOAt (1-Hydroxy-7-azabenzotriazole) and 3 Eq DIEA (N,N-Diisopropylethylamine) were added. After 5 min on ice, 1.3 Eq of EDCI (1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide) was added. The reaction was allowed to stir for 24 hr (letting the ice melt and the reaction slowly come to RT). Reaction was dissolved in ethyl acetate, washed with NaHCO3 and brine, and dried with Na2SO4. Remaining solvent and DMF were removed via rotovaping and lyophilization. 1 c was deprotected with 30% TFA in DCM (0.2 M 1 c final). Solid 1 c was dissolved in CH2Cl2 and cooled on ice. TFA was added dropwise until it reached 30% v/v. Reaction was stirred for 1 hr at RT. Toluene was added (to help remove TFA) and the reaction was rotovapped to near dryness. Reaction was dissolved in ethyl acetate, washed with K2CO3, dried Na2SO4 and dried via rotovapping and lyophilization. Identity at each step was verified with MS.\n\n### BI2536 functionalization (+CLP-linker)\n\n![Chemical structure 2.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig8-v1.jpg)\n\n1 Eq 1d (0.2 M) and 1.1 Eq of 2a (Chem Scene) were dissolved in DMF at RT. The reaction was placed on ice. While stirring, 1.3 Eq HOAt and 3 Eq DIEA were added. After 5 min on ice, 1.3 Eq of EDCI was added. The reaction was allowed to stir for 24 hr (letting the ice melt and the reaction slowly come to RT). DMF was removed and 2b (BI2536-CLP) was purified with HPLC. Identity was verified with MS. [M+H]+\u00a0=\u00a0817.7 m/z.\n\n### MLN8237 functionalization (+CLP-linker)\n\n![Chemical structure 3.](https://cdn.elifesciences.org/articles/52220/elife-52220-fig9-v1.jpg)\n\n1 Eq 1d (0.2 M) and 1.1 Eq of 3a (MLN8237) were dissolved in DMF at RT. The reaction was placed on ice. While stirring, 2 Eq HOAt and 3 Eq DIEA were added. After 5 min on ice, 1.2 Eq of EDCI was added. The reaction was allowed to stir for 24 hr (letting the ice melt and the reaction slowly come to RT). DMF was removed and 3b (MLN8237-CLP) was purified with HPLC. Identity was verified with MS. [M+H]+\u00a0=\u00a0911.0 m/z. CLP-rhodamine Preparation: 1 Eq 1a (0.2 M) and 1 Eq 5(6)-carboxytetramethylrhodamine N-succinimidyl ester (Thermo Fisher) were dissolved in DMF at RT. While stirring, 3 Eq DIEA were added. The reaction was allowed to stir for 24 hr. DMF was removed and product was purified with HPLC. Identity was verified with MS. [M+H]+ = 676.2 m/z.\n\n### Protein expression and purification\n\nHis6-SNAP-tag in pMCSG7 (Addgene) was expressed in Escherichia coli BL21(DE3) cells in 250 mL LB Miller broth. The evening prior to expression, 5 mL LB Miller broth, containing 50 \u03bcg/mL Ampicillin, was inoculated with transformed cells, and they were grown at 37\u00b0C overnight. The following day, the starter culture was used to seed 250 mL LB Miller broth in a 500 mL baffle flask. Cells were grown to OD600\u00a0~0.3 and the temperature was then reduced to 20\u00b0C. Cells were allowed to grow to OD600\u00a0~0.8, and then induced with 500 \u03bcM isopropyl \u03b2-D-thiogalactopyranoside. Induced cells were grown at 20\u00b0C overnight. Subsequent purification steps were carried out at 4\u00b0C. Cells were spun down at 6500 g, suspended in 10 mL of wash/lysis buffer [50 mM HEPES (pH 7.5), 300 mM NaCl, 20 mM imidazole, and 1 mM phenylmethanesulfonyl fluoride], and lysed via sonication. The lysate was centrifuged at 10000 g for 20 min, and the supernatant was allowed to batch bind with 0.7 mL of Ni-NTA (Ni2+-nitrilotriacetate) beads for 60 min. The resin was collected by centrifugation at 500 g for 5 min and washed with 10 mL of wash/lysis buffer. The wash step was repeated three times. The Ni-NTA/His6-SNAP-tag was added to a BioRad purification column, and washing was continued until the wash showed no remaining protein by Bradford. The protein was eluted using \u223c 5 mL of elution buffer [50 mM HEPES (pH 7.5), 300 mM NaCl, 200 mM imidazole]. The eluate was dialyzed against 50 mM HEPES (pH 7.5), 200 mM NaCl, 5% glycerol, and 1 mM fresh dithiothreitol (DTT). Protein was aliquoted, flash-frozen in liquid N2, and stored at \u2212 80\u00b0C.\n\n### SNAP labeling experiments and pulse-chase labeling assays\n\n#### In vitro labeling\n\n50 \u03bcM SNAP-tag was incubated with 75 \u03bcM CLP-linker-inhibitors (or DMSO alone for control reactions) [2.5% (v/v) final DMSO concentration] in buffer [20 mM Tris-Cl (pH 8), 200 mM NaCl, 1 mM DTT (added fresh)] at 26\u00b0C for 1.5 hr. The reactions were purified using Zeba columns (Thermo Fisher) and exchanged into a MS compatible buffer (50 mM NH4HCO3, 0.2% HCO2H). Ratios of unlabeled to labeled protein were determined using Native MS (Thermo Scientific LTQ Orbitrap XL/Bruker Esquire LC-Ion Trap). Cellular labeling: SNAP expressing (dox-induced) cells were treated with SNAP-Cell Fluorescein or SNAP-Cell 647-SiR (NEB) for 30 min in serum free DMEM at 37\u00b0C and 5% CO2. Cells were washed one time and incubated in fresh serum free DMEM for 30 min. Cells were fixed and stained as described under \u2018immunofluorescence\u2019. For pulse-chase labeling experiments, SNAP expressing (dox-induced) cells were treated with DMSO or increasing doses of CLP-BI2536 or CLP-MLN8237 for 1, 2, or 4 hr in serum free DMEM at 37\u00b0C and 5% CO2. Cells were washed one time and incubated in fresh serum free DMEM for 30 min. Cells were treated with 3 \u00b5M CLP-rhodamine (made in-house) in serum free DMEM for 30 min. Cells were washed one time and incubated in fresh serum free DMEM for 30 min. One wash with PBS was carried out and cells were lysed using immunoblotting protocol. Samples were resolved on an AnykD Criterion TGX Precast Midi Protein Gel (Biorad). Gels were scanned and fluorescence was measured with a GE Typhoon FLA 9000 scanner. Fluorescence measurements and densitometry was performed using NIH ImageJ (Fiji) software. Total SNAP labeling was determined by normalizing fluorescence signal of rhodamine bands to total SNAP protein expression as determined by densitometry.\n\n% SNAPs Labeled by CLP-rhodamine\u00a0=\u00a0CLP rhodamine signal/SNAP western blot signal\n\n% SNAPs Labeled by CLP-inhibitor\u00a0=\u00a0100 % SNAPs Labeled by CLP-rhodamine\n\n### In vitro kinase assays\n\n#### Plk1 assays\n\nThe kinase activity of purified Plk1 (SignalChem) was profiled using Casein as the substrate (0.2 mg/mL). Reactions contained 25 mM MOPS, pH 7.2; 12.5 mM \u03b2-glycerol-phosphate; 25 mM MgCl2; 2 mM EGTA; 2 mM Na3VO4; 2 mM BME (\u03b2-mercaptoethanol); and 0.05 mg/mL BSA. Serial dilutions (1:3) of 25X compounds in DMSO [4% (v/v) final concentration in the assay] were used. For SNAP-inhibitor titrations, serial dilutions (1:3) were made in assay buffer, and an equivalent amount of DMSO [4% (v/v) final concentration in the assay] was later added to each well. Reciprocally, in assays where 25X inhibitor was added in DMSO, assay buffer was first added to each well (equivalent to the volume of SNAP-inhibitor in buffer). The last two wells in each row served as control reactions (+Kinase/No Inhibitor; and No Kinase/No Inhibitor) and received DMSO or buffer in place of inhibitor or kinase, respectively. After addition and mixing of the above components, kinase stock dilutions (10 nM final) were added to each well (except for the last well in each row, which served as the No Kinase/No Inhibitor control). Next, ATP-[\u03b3 32P] (final assay concentration: 0.012 \u03bcCi/\u03bcl) and unlabeled-ATP (final assay concentration: 40 \u03bcM) were added to the reactions. Plk1 was preincubated with ATP-competitive inhibitors and ATP-[\u03b3 32P]/unlabeled ATP for 30 min. To initiate the reactions, Casein was added. The reactions were incubated for 1 hr at RT. Aurora A assays: The kinase activity of purified Aurora A (Invitrogen) was profiled using myelin basic protein (MBP) as the substrate (0.2 mg/mL). Reactions contained 30 mM HEPES, pH 7.5; 10 mM MgCl2; 0.6 mM EGTA; 2 mM Na3VO4; 2 mM BME; and 0.05 mg/mL BSA. Serial dilutions (1:3) of 25X compounds in DMSO [4% (v/v) final concentration in the assay] were used. For SNAP-inhibitor titrations, serial dilutions (1:3) were made in assay buffer, and an equivalent amount of DMSO [4% (v/v) final concentration in the assay] was later added to each well. Reciprocally, in assays where 25X inhibitor was added in DMSO, assay buffer was first added to each well (equivalent to the volume of SNAP-inhibitor in buffer). The last two wells in each row served as control reactions (+Kinase/No Inhibitor; and No Kinase/No Inhibitor) and received DMSO or buffer in place of inhibitor or kinase, respectively. After addition and mixing of the above components, kinase stock dilutions (15 nM final) were added to each well (except for the last well in each row, which served as the No Kinase/No Inhibitor control). To initiate the reactions, ATP-[\u03b3 32P] (final assay concentration: 0.006 \u03bcCi/\u03bcl) was added to the reactions. The reactions were incubated for 4 hr at RT. All assays: Assays were quenched by spotting 4.6 \u03bcL of each reaction mixture onto phosphocellulose membranes (Reaction Biology). The membranes were subjected to three sequential washes in 0.5% phosphoric acid for 10 min, dried, and exposed overnight to a phosphor screen (GE Healthcare). Blots were scanned using a phosphor scanner (GE Typhoon FLA 9000). Raw data were processed with the GraphPad Prism software package (V5.0a) using the One site - Fit logIC50 function for curve fitting. Spots were quantified using ImageQuant. The kinase activity was first determined to be linear under assay conditions for Plk1 experiments at 10 nM Plk1 and at 15 nM Aurora A for Aurora A experiments, before conducting inhibitor titrations.\n\n### Drug treatments\n\nFor induction of SNAP expression cells were treated for 48\u201372 hr in FBS-supplemented DMEM with 1 \u00b5g/mL (for SNAP-PACT) or 4 \u00b5g/mL (for SNAP-Mis12) doxycycline hyclate (Sigma-Aldrich) prior to inhibitor treatments. For degradation assays, cells were dox-induced for 72 hr after which doxycycline was washed out (cells were incubated in normal media). At selected time point plates were collected, cells were washed once with PBS, plates were dried quickly, and frozen at \u221280\u00b0C until lysis. For nocodazole synchronization experiments, dox-induced cells were treated for 16 hr with nocodazole and 4 hr with nocodazole plus DMSO, 250 nM CLP-BI2536, or 100 nM CLP-MLN8237. Cells were washed once with PBS, collected via mitotic shake-off, and spun at 2000 rpm for 5 min at 4\u00b0C. Supernatants were discarded and pellets were kept for lysis. All lysates were prepared as described under \u2018immunoblotting\u2019. For fixed cell experiments, both dox-induced and non-induced cells were grown on 1.5 poly-D-lysine coated coverslips (neuVitro) for at least 16 hr in complete DMEM and then treated with DMSO or CLP-compounds in serum-free DMEM for 1\u20134 hr. For washout experiments (pT210-Plk1 1 hr washout and \u03b3-tubulin data), cells were incubated in serum-free DMEM without inhibitors for an additional 1 hr. Cells were washed once with PBS prior to fixation. For live-imaging experiments, cells were treated with CLP-compounds for 18 hr (see \u2018microscopy\u2019 for more details).\n\n### Zebrafish studies\n\nZebrafish were bred and embryos were collected. Embryos were injected with EMTB-3xGFP (100 pg mRNA or 20 pg pCS2 plasmid construct), SNAP-Cell Fluorescein (300 \u00b5M final embryo concentration), and/or CLP-BI2536 (250 nM final embryo concentration), and/or SNAP-PACT active or dead (200 pg mRNA) at the 2 cell stage using a microinjector (Warner Instruments PLI-100A) with a Kanatec magnetic base (MB-B), and a micromanipulator (Marzhauser Wetzlar MM33). Embryos were raised at 30\u00b0C until\u00a0~50% epiboly, at which point they were imaged on stereoscope, mounted in 2% agarose for live confocal imaging, or fixed using 4% paraformaldehyde + 0.5% Triton-X overnight at 4\u00b0C. Embryos were dechorionated in PBST (phosphate buffered saline + 0.1% Tween-20) and incubated in DAPI solution (1 \u00b5g/mL in PBS) for 2 hr at room temperature. Fixed embryos were then mounted in 2% agarose and imaged on confocal microscope.\n\n### Immunoblotting\n\nCells were lysed in RIPA lysis buffer (50 mM Tris HCl pH 7.4, 1% Triton X-100, 0.5% Sodium Deoxycholate, 0.1% SDS, 50 mM NaF, 120 mM NaCl, 5 mM \u03b2-glycerophosphate) supplemented with protease and phosphatase inhibitors (1 mM benzamidine, 1 mM AEBSF, 2 \u00b5g/mL leupeptin, 100 nM microcystin-LR). Lysed samples were boiled for 5 min at 95\u00b0C in NuPAGE LDS Sample Buffer 4X (Thermo Fisher) + 5% BME (Sigma-Aldrich). Protein concentration was determined using a Pierce BCA Protein Assay Kit (Thermo Fisher). Samples were resolved on Bolt 4\u201312% Bis-Tris Plus Gels (Invitrogen) or AnykD Criterion TGX Precast Midi Protein Gel (Biorad). Proteins were transferred to nitrocellulose for immunoblotting and probed with Anti-SNAP-tag rabbit antibody (NEB) and Anti-GAPDH\u2212HRP mouse mAb, (Novus). Detection was achieved with a HRP-conjugated rabbit secondary antibody (GE Healthcare) followed by enhanced chemiluminescence with SuperSignal West Dura Extended Duration Substrate (Thermo Fisher). Densitometry was performed using NIH ImageJ (Fiji) software.\n\n### Immunofluorescence\n\nCells grown on 1.5 poly-D-lysine coated coverslips (neuVitro) for at least 16 hr were fixed for 10 min in 4% paraformaldehyde in PBS or in ice-cold methanol. Cells were permeabilized and blocked in PBS with 0.5% Triton X-100% and 1% BSA (PBSAT) for 30 min. Primary antibodies were diluted in PBSAT and cells were stained for 1 hr. Secondary antibodies conjugated to Alexa Fluor dyes (Invitrogen) were diluted in PBSAT and applied for 1 hr. Staining with FITC-tubulin antibodies and/or DAPI staining always followed secondary incubation step and was carried out for 10\u201345 min in PBSAT. Washes (quick on and off) with PBSAT were carried out 10X between antibody and/or dye incubation steps and prior to mounting. Coverslips were mounted on slides using ProLong Diamond Antifade Mountant (Life Technologies).\n\n### Spindle classification measurements\n\nTo de-identify cell type and dox-treatment conditions and allow for blinded analysis of mitotic spindle differences, all identifying information on microscope slides was masked by a third-party individual. All mitotic cells within a coverslip were classified as either having normal bipolar, abnormal bipolar, or monopolar spindles based on morphology of the DNA and microtubules.\n\n### Microscopy\n\n#### Fixed cell\n\nSuper-resolution 3D-SIM images were acquired on a Deltavision OMX V4 (GE Healthcare) system equipped with a 60x/1.42 NA PlanApo oil immersion lens (Olympus), 405-, 488-, 568-, and 642 nm solid-state lasers and sCMOS cameras (pco.edge). For SIM,15 images per optical slice (3 angles and five phases) were acquired. For both SIM and widefield (conventional) acquisitions, image stacks of 2.5\u20137 um with 0.125 um optical thick z-sections were acquired using immersion oil with a refractive index 1.516 or 1.518. Z-stacks were generated using the SNAP-PACT or SNAP-Mis12 channel to define the upper and lower regions of the plane with a 0.5 \u00b5M step size. SIM images were reconstructed using Wiener filter settings of 0.003 and optical transfer functions measured specifically for each channel with SoftWoRx software (GE Healthcare) to obtain super-resolution images with a twofold increase in resolution both axially and laterally. Images from different color channels were registered using parameters generated from a gold grid registration slide (GE Healthcare) and SoftWoRx. Widefield images were deconvolved using SoftWoRx. Live-cell: For LoKI experiments cells were first induced with doxycycline for 48\u201372 hr prior to transfection. For all time-lapse experiments cells were reverse transfected with GFP-H2B plasmid and plated onto \u03bc-Slide 4 Well Glass Bottom: # 1.5H (170 \u03bcm +\u00a0/-\u00a05 \u03bcm) D 263 M Schott glass (Ibidi) in complete DMEM. Transient transfections were performed using TransIT-LT1 reagent (Mirus) with Opti-MEM (Life Technologies) media. The next day all cells were treated with 2 mM thymidine for 24 hr. The following day thymidine was washed out and after 4 hours cells were incubated with DMSO or CLP-inhibitors (LoKI experiments) or with no reagents (WT/KO Gravin experiments) in serum-free FluoroBrite DMEM. Time-lapse images were acquired on a Keyence BZ-X710 microscope using a 10X objective with 25% transmitted light and 100% aperture stop, with 1/60 s exposure for 488 channel. Images were captured every 5 min for 18 hr. Zebrafish imaging: Images were acquired on a Leica DMi8 (Leica, Bannockburn, IL) equipped with a Crest Optics X-light v2 Confocal Unit spinning disk, an 89 North \u2013 LDI laser with a Photometrics Prime-95B camera using a Nikon 40\u00a0\u00d7\u00a01.15 N.A. Lamda S LWD objective. Stereoscope images were acquired on a Leica M165 FC stereoscope with a DFC9000 GT camera and a PLANAPO 10X objective.\n\n### Image analysis\n\nMaximum intensity projections from z-stack images were generated using SoftWoRx (GE Healthcare) or NIH ImageJ (Fiji) software. All immunofluorescence signal measures were carried out using Fiji software. Sum slice 32-bit Tiff projections were generated from z-stack images for analysis of immunofluorescence at centrosomes. For kinetochore measurements the ImageJ \u2018SubtractMeasuredBackground\u2019 macro was first applied and sum slice 32-bit Tiff projections were generated. For centrosomes measurements, the oval selection tool in Fiji was used to draw a circle (ROI) around the centrosome in the 568 (SNAP-PACT) channel. The area of the circle remained consistent for all measurements and all replicates of an experiment. Measurements were taken in the 647 channel (which contained pT210-Plk1, Total Plk1, pT288-AurA, or \u03b3-tubulin) using the predefined centrosome ROI. Using the measure function in Fiji, with \u2018Area\u2019 and \u2018Raw Integrated Density\u2019 predefined as measurements, values were determined for each centrosome and for an arbitrarily selected background region. The raw integrated density was recorded for each centrosome and the background. The average raw integrated density for the centrosomes was determined by adding together the raw integrated densities for each centrosome in a cell and dividing that value by 2. The integrated density for the background was subtracted from the average centrosome integrated density to yield a background-subtracted average integrated density signal for a centrosome. If the signal value was negative (signal at centrosome was lower than at background) the value was replaced with a 0. For kinetochore measurements, the selection tool in Fiji was used to draw an arbitrary region (ROI) around the kinetochore in the 405 (ACA, centromeric DNA) channel or in the 568 (SNAP-Mis12) channel. Measurements were taken in the 647 channel (which contained pS69-Hec1) using the predefined kinetochore ROI. Using the measure function in Fiji, with \u2018Area\u2019 and \u2018Raw Integrated Density\u2019 predefined as measurements, values were determined for each kinetochore. The raw integrated density was recorded for each kinetochore. For both centrosome and kinetochore experiments and average was calculated for each control and experimental condition. To do this the normalized average integrated densities were added together and divided by the total number of cells for that condition. This yielded a value that represents the background-normalized average integrated density at a centrosome or at the kinetochore for a particular condition. Values for drug-treated cells were then normalized to their respective DMSO-treated control. Integrated intensity surface plots were generated from sum-slice 32-bit Tiff projections of representative images using the 3D Surface Plot function in Fiji software. Maximum intensity heat maps were generated from maximum projection representative images using the 3D Surface Plot function with Fire LUT in Fiji software. Zebrafish three-dimensional renderings: Three-dimensional renderings were created using Imaris software (Bitplane). Individual mitotic cells were isolated and assigned a new color channel using the \u2018Surfaces\u2019 function to create a surface rendering. Surface renderings were created through the use of the Isoline function, where regions of individual mitotic cells were isolated based on intensity. Completed surface renderings were then merged and masked to create a channel that encompassed the mitotic cells of each embryo.\n\n### Statistical analysis\n\nStatistics were performed using an unpaired two-tailed Student's t-test in GraphPad Prism software. All values are reported as mean\u00a0\u00b1\u00a0standard error of the mean (s.e.m) with p-values less than 0.05 considered statistically significant. Number of independent experiments (N) and number of individual points over several experiments (n) are presented. For \u03b3-tubulin experiments a ROUT (Q\u00a0=\u00a01%) outlier test was performed and two values were removed prior to performing an unpaired Student\u2019s t-test.\n\n### Sample size and replicates\n\nThe sample size was not statistically determined. Where applicable, n\u00a0>\u00a015 independent measurements were conducted across N\u00a0\u2265\u00a03 independent experiments. For doxycycline removal experiments (Figure 2\u2014figure supplement 1E, Figure 6\u2014figure supplement 1B) at least 2\u20133 independent experiments were conducted per time point.\n",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "e04348d6-eefd-4f54-b369-e0b264ab693f",
+      "submission_id": "2a24a609-cf92-42d0-8381-f521598c3410",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ivan Dikic, Goethe University Frankfurt Germany\n\nReviewers:\n- Ivan Dikic, Goethe University Frankfurt Germany\n- Vincent S Tagliabracci, University of California, San Diego United States\n\n## Review text\n\nDOI: [10.7554/eLife.52220.sa1](https://doi.org/10.7554/eLife.52220.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper explores the idea of combining AKAP targeting domains and SNAP-tagging technologies to inhibit kinases at specific subcellular locations. The authors demonstrate the feasibility of this platform by targeting AurA and Plk1 inhibitors to centromeres or kinetochores. This strategy provides evidence clarifying the actions of centrosome- or kinetochore-localized AurA and Plk1. The strategy demonstrated in this paper is novel and exciting and will be of broad interest to the kinase field.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Subcellular drug targeting illuminates local kinase action\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Ivan Dikic as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jonathan Cooper as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Vincent S Tagliabracci (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper explores the idea of combining AKAP targeting domains and SNAP-tagging technologies to inhibit kinases at specific subcellular locations. The authors demonstrate the feasibility of this platform by targeting AurA and Plk1 inhibitors to centromeres or kinetochores. This strategy provides evidence clarifying the actions of centrosome- or kinetochore-localized AurA and Plk1. Overall, this is an interesting chemical biology study addressing the issue of local inhibition of protein kinases. The authors have gone a long way to exemplify a solution in cells and a model organism. The strategy demonstrated in this paper is exciting and will be of broad interest to the kinase field. We recommend publication in eLife, but have a couple of comments that the authors should consider when preparing a revised manuscript.\n\nEssential revisions:\n\n1) Combined AurA and Plk1 inhibitions were done using a dual SNAP conjugation moiety (Figure 4F). In theory, it is hard to ensure that both CLP-MLN8237 and CLP-BI2536 would be recruited by a dual SNAP moiety. If technically feasible, it would be good if the authors can use orthogonal tagging strategies in tandem, such as SNAP-tag plus CLIP-tag, to demonstrate this point. Also, the authors should show the effect of either single drug in Figure 4H, which should be included as additional controls.\n\n2) The authors claim that the LoKI platform can achieve local kinase inhibition. While the authors do provide evidence that 1) pS69-Hec1 signal at centrosomes was not affected if CLP-MLN8237 was directed to kinetochores (Figure 6G, H; representative images shown but better quantified) and 2) pS69-Hec1 signal at kinetochores was not affected if CLP-MLN8237 was directed to centrosomes (Figure 6\u2014figure supplement 1E), it would be good if the authors can perform off-target assessment using TPX2 phosphorylation in the condition that CLP-MLN8237 is directed to centrosomes. TPX2 phosphorylation by AurA occurs at spindle microtubules in the neighbourhood of centrosomes, and thus TPX2 phosphorylation presumably would be a better index to tell how local/leaky the LoKI platform is. This is also related to the fact that in vitro kinase assays showed that CLP-inhibitor conjugates work to inhibit their cognate kinase at around 100nM, which is c. 10-fold worse than the unconjugated inhibitor. When raising the CLP-drug concentration then inhibition becomes independent of the SNAP targeting protein. The authors should discuss these points in the manuscript.\n\n3) One general concern is that the limitations of the approach are not discussed, giving the sense of an ultimate solution which is not the case. It would have been instructive to have had discussion of the timing problem \u2013 4h is a long period of drug exposure and somewhat undermines the need for acute local intervention, particularly in these cell cycle associated events. Additionally, it is evident that effects are observable in relatively narrow windows in order to distinguish between global inhibition and local inhibition. This does not undermine the study but appropriate discussion would give direction to those following on. It is recommended that the authors comment and discuss the advance in technology from the work by Gower et al., 2016. Some comment is needed to address that Gravin knockdown leads to increased Plk1 mobility and CEP215 phosphorylation (10.1091/mbc.E17-08-0524). This relates to the principle of insulation of signalling (i.e. by sequestration). This emphasizes the need to be able to inhibit locally rather than just remove/mutate the scaffold responsible.\n",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dad31f8b-76e6-4d27-98aa-405bb0e68459",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C1",
+      "claim": "Gravin knockout MEFs exhibit prolonged mitosis compared to wildtype MEFs, with mitosis delayed by 11.9 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mitosis was delayed by 11.9 min in Gravin KO cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse video microscopy data showing mitotic duration measurements in wildtype versus Gravin KO MEFs, presented in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "5562dcda-086d-48e1-913b-e4eb803cc522",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C2",
+      "claim": "Baseline mitotic duration in wild-type MEFs expressing GFP-tagged histone 2B is 32.6 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-cell imaging of wild-type MEFs expressing GFP-tagged histone 2B (Figure 1\u2014video 1) established a baseline mitotic duration (nuclear envelope breakdown to anaphase) as 32.6 min (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data measuring time from nuclear envelope breakdown to anaphase in wildtype MEFs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "30a3c68e-6db5-4efe-9c8f-2bbee87d6ed7",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C3",
+      "claim": "Gravin depletion reduces pT210-Plk1 immunofluorescence at centrosomes to 80.2% of control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Gravin depletion reduced immunofluorescence of pT210-Plk1% to 80.2% of control shRNA-expressing cells (Figure 1C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structured illumination microscopy and quantification of pT210-Plk1 signal at centrosomes in Gravin-depleted versus control cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "3d945f2a-679f-4472-ab18-7a2ff84799ca",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C4",
+      "claim": "Gravin depletion reduces pT288-AurA immunofluorescence at centrosomes to 58.5% of control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, pT288-AurA signal in Gravin-depleted cells dropped to 58.5% of control cell immunofluorescence (Figure 1D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structured illumination microscopy and quantification of pT288-AurA signal at centrosomes in Gravin-depleted versus control cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "8b55a0c4-fbb7-4fd1-aa22-4a8ce8915bd2",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C5",
+      "claim": "Gravin is required for localizing active pools of Plk1 and AurA at mitotic centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal that Gravin is required for localizing active pools of Plk1 and AurA at mitotic centrosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing reduced pT210-Plk1 and pT288-AurA signals at centrosomes upon Gravin depletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "ca61d803-0062-4988-9a3c-54949f62c4df",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C6",
+      "claim": "During interphase, Gravin is dispersed throughout the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "During interphase Gravin is dispersed throughout the cell (Figure 1G, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SIM micrographs showing Gravin localization in interphase U2OS cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "45f42d35-faf1-4499-826e-7f36561e9133",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C7",
+      "claim": "In mitosis, pT766-Gravin accumulates at centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In mitosis, however, pT766-Gravin accumulates at centrosomes, a major hub of Plk1 and AurA signaling (Figure 1G, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SIM micrographs showing pT766-Gravin localization in mitotic U2OS cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "b8d8432d-5ae0-46c9-9d9a-05d7a8596eaa",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C8",
+      "claim": "CLP-BI2536 potently inhibits Plk1 with an IC50 of 49 \u00b1 26 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro kinase activity measurements demonstrated that CLP-BI2536 potently inhibits Plk1 (IC50 = 49 \u00b1 26 nM; Figure 2C, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro kinase assay data measuring Plk1 inhibition with increasing concentrations of CLP-BI2536.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "43db941a-135e-4703-9648-4029bad538b3",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C9",
+      "claim": "Incubation with 250 nM CLP-BI2536 for 4 hours at 37\u00b0C results in approximately 50% labeling of SNAP-PACT.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation with 250 nM CLP-BI2536 for 4 hr at 37\u00b0C was defined as the optimal drug regimen (~50% labeling of SNAP-PACT; Figure 2F, Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pulse-chase experiments measuring CLP-BI2536's ability to block CLP-rhodamine conjugation to SNAP-PACT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "a86c83aa-9e4c-4ebf-b3f3-7b2ebd25b68b",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C10",
+      "claim": "In mitotic cells expressing LoKI-off, incubation with 250 nM CLP-BI2536 reduced pT210-Plk1 immunofluorescence to 58.1% of DMSO-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In mitotic cells expressing LoKI-off, incubation with 250 nM CLP-BI2536 reduced pT210-Plk1 immunofluorescence to 58.1% of DMSO-treated controls (Figure 2G,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification of pT210-Plk1 signal at centrosomes in LoKI-off cells treated with CLP-BI2536.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "abfac472-69bb-4fc1-a627-40e7659a292e",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C11",
+      "claim": "In mitotic cells expressing LoKI-on, incubation with 250 nM CLP-BI2536 reduced pT210-Plk1 immunofluorescence to 21.4% of DMSO-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the pT210-Plk1 signal was reduced to 21.4% in cells expressing LoKI-on (Figure 2H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification of pT210-Plk1 signal at centrosomes in LoKI-on cells treated with CLP-BI2536.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "8bf50acf-18f8-46c4-8190-b6ed09ece2ca",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C12",
+      "claim": "Application of CLP-BI2536 in LoKI-on U2OS cells increased the incidence of abnormal bipolar and monopolar spindles by 24.6% compared to LoKI-off controls (10.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis in U2OS cells revealed that application of CLP-BI2536 in LoKI-on cells increased the incidence of abnormal bipolar (green) and monopolar (purple) spindles by 24.6% as compared to LoKI-off controls (10.3%; Figure 3B,C, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spindle classification measurements in U2OS cells treated with CLP-BI2536.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "e4fe8d18-3a8a-4a76-82c0-425c2f55ee44",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C13",
+      "claim": "Targeting CLP-BI2536 to centrosomes impairs accumulation of \u03b3-tubulin at this location.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that targeting CLP-BI2536 to centrosomes impairs accumulation of \u03b3-tubulin at this location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing drastically reduced \u03b3-tubulin levels at centrosomes in LoKI-on cells exposed to CLP-BI2536 followed by washout.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "5d914a7e-ed05-4aa8-bf5c-e7e91596d3c9",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C14",
+      "claim": "CLP-MLN8237 potently inhibits AurA with an IC50 less than 9.5 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro kinase activity measurements demonstrated that CLP-MLN8237 potently inhibits AurA (IC50 <9.5 nM; Figure 4B, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro kinase assay data measuring AurA inhibition with increasing concentrations of CLP-MLN8237.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "8392250e-ad7f-4fed-abef-11074f376752",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C15",
+      "claim": "Treatment with 100 nM CLP-MLN8237 for 4 hours at 37\u00b0C is sufficient to label approximately 50% of drug binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-based characterization established that treatment with 100 nM CLP-MLN8237 for 4 hr at 37\u00b0C was sufficient to label ~50% of drug binding sites (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pulse-chase experiments measuring CLP-MLN8237's ability to block CLP-rhodamine conjugation to SNAP-PACT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "84f0254e-e627-4cef-a88a-5118e534ffc3",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C16",
+      "claim": "In mitotic cells expressing LoKI-off, incubation with 100 nM CLP-MLN8237 reduced pT288-AurA immunofluorescence to 27.8% of DMSO-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In mitotic cells expressing LoKI-off, incubation with 100 nM CLP-MLN8237 reduced pT288-AurA immunofluorescence to 27.8% of DMSO-treated controls (Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification of pT288-AurA signal at centrosomes in LoKI-off cells treated with CLP-MLN8237.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "efe4cc36-e258-4afc-b5de-154a43eaffe8",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C17",
+      "claim": "In mitotic cells expressing LoKI-on, incubation with 100 nM CLP-MLN8237 reduced pT288-AurA immunofluorescence to 14.2% of DMSO-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the pT288-AurA signal was further reduced to 14.2% in cells expressing LoKI-on (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification of pT288-AurA signal at centrosomes in LoKI-on cells treated with CLP-MLN8237.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "111b0e67-bc1f-4991-91c4-2a29dc0c3e91",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C18",
+      "claim": "Increasing the local concentration of MLN8237 enhances drug action by approximately 2-fold at centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, increasing the local concentration of MLN8237 enhances drug action by approximately 2-fold at this subcellular location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of pT288-AurA reduction in LoKI-on versus LoKI-off cells treated with CLP-MLN8237.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "84afcfbf-0259-4450-a116-a97fcb30efda",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C19",
+      "claim": "Baseline mitotic timing in U2OS cells expressing GFP-tagged histone 2B is 35.1 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-cell imaging of U2OS cells expressing GFP-tagged histone 2B (Figure 4G, Figure 4\u2014figure supplement 2D, Figure 4\u2014videos 1 and 2) was used to calculate a baseline for mitotic timing (nuclear envelope breakdown to anaphase) as 35.1 min (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data measuring time from nuclear envelope breakdown to anaphase in U2OS cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "f582c136-6efb-4545-aac2-b9e3e892dcfb",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C20",
+      "claim": "Simultaneous application of CLP-BI2536 (250 nM) and CLP-MLN8237 (100 nM) to LoKI-off cells delayed mitosis by 19.4 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitosis was delayed by 19.4 min when CLP-BI2536 (250 nM) and CLP-MLN8237 (100 nM) were simultaneously applied to LoKI-off cells (Figure 4G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data measuring mitotic duration in LoKI-off cells treated with combination of CLP-BI2536 and CLP-MLN8237.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "cbdfe67e-d8b2-4955-8c39-23d36f4b8043",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C21",
+      "claim": "Simultaneous application of CLP-BI2536 (250 nM) and CLP-MLN8237 (100 nM) to LoKI-on cells prolonged mitosis 3-fold with a 59 minute delay.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same combination treatment prolonged mitosis 3-fold (59 min delay) when experiments were repeated in LoKI-on cells (Figure 4G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data measuring mitotic duration in LoKI-on cells treated with combination of CLP-BI2536 and CLP-MLN8237.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "9eb30422-fd0f-4eea-875f-a01659ebd024",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C22",
+      "claim": "Multipolar spindles, spindle orientation defects, and prolonged mitoses are evident in drug-treated zebrafish embryos expressing LoKI-on.",
+      "claim_type": "EXPLICIT",
+      "source": "Multipolar spindles, spindle orientation defects, and prolonged mitoses were evident in drug-treated embryos expressing LoKI-on (Figure 5C, Figure 5\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging of zebrafish embryos microinjected with LoKI-on mRNA and CLP-BI2536.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "f9dd2eb2-7a18-424a-8695-d7152d42700f",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C23",
+      "claim": "Drug-treated LoKI-on zebrafish embryos exhibited microtubule abnormalities and a higher incidence of mitotic cells compared to LoKI-off embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, drug-treated LoKI-on embryos exhibited microtubule abnormalities and a higher incidence of mitotic cells (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fixed-cell imaging of whole zebrafish embryos showing microtubule organization and mitotic cell counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "024e2241-0caf-45d8-b6a2-a71fff0d9cdb",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C24",
+      "claim": "Centrosomal inhibition of Plk1 correlates with increased mitotic indices in LoKI-on zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional analyses correlated centrosomal inhibition of Plk1 with increased mitotic indices in LoKI-on embryos (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mitotic index measurements in LoKI-expressing zebrafish embryos treated with CLP-BI2536.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "b60d4ca6-6810-4a48-b8e6-27c190a35fd8",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C25",
+      "claim": "In cells expressing Mis12-LoKI-off, incubation with 100 nM CLP-MLN8237 caused a negligible decrease in pS69-Hec1 signal compared to DMSO-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing Mis12-LoKI-off, incubation with 100 nM CLP-MLN8237 caused a negligible decrease in pS69-Hec1 signal as compared to DMSO-treated controls (Figure 6G,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification of pS69-Hec1 signal at kinetochores in Mis12-LoKI-off cells treated with CLP-MLN8237.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "0b3082e9-124c-4458-a7d6-cae83d4c0f03",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C26",
+      "claim": "In Mis12-LoKI-on cells, incubation with 100 nM CLP-MLN8237 reduced pS69-Hec1 signal to 59.8% of DMSO-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in Mis12-LoKI-on cells the pS69-Hec1 signal was reduced to 59.8% (Figure 6H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification of pS69-Hec1 signal at kinetochores in Mis12-LoKI-on cells treated with CLP-MLN8237.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "45a3c427-b551-4483-a242-8e4dfe741a3a",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C27",
+      "claim": "The pS69-Hec1 signal at centrosomes was unaffected by CLP-MLN8237 treatment in Mis12-LoKI cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the pS69-Hec1 signal at centrosomes was unaffected by drug treatments (Figure 6G,H, Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification showing no change in pS69-Hec1 signal at centrosomes in drug-treated Mis12-LoKI cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "a96db663-5051-4bc1-bbdb-66aa4c2be5bc",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C28",
+      "claim": "When SNAP-PACT LoKI-expressing cells were used to sequester CLP-MLN8237 at centrosomes, no reduction in pS69-Hec1 signal at kinetochores was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, when SNAP-PACT LoKI-expressing cells were used to sequester CLP-MLN8237 at centrosomes, we no longer observed a reduction in pS69-Hec1 signal at kinetochores (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification of pS69-Hec1 signal at kinetochores in SNAP-PACT LoKI cells treated with CLP-MLN8237.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "646dfe12-7172-4eef-a89b-143611313e58",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C29",
+      "claim": "S69-Hec1 phosphorylation is a local event that depends on AurA activity at kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, these findings uncover that S69-Hec1 phosphorylation is a local event that depends on AurA activity at kinetochores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing that kinetochore-targeted MLN8237 reduces pS69-Hec1 at kinetochores but centrosome-targeted MLN8237 does not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "cc17f0fe-15e3-4d8b-9577-4cf094602cf4",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C30",
+      "claim": "Plk1 and AurA are important regulators of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Polo-like kinase 1 (Plk1) and Aurora A (AurA) are important regulators of cell division (Barr et al., 2004; Combes et al., 2017; Lens et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature establishing roles of Plk1 and AurA in cell division.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "163c7cf2-c563-46b3-8cf3-df906b0fb72a",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C31",
+      "claim": "ATP-competitive drugs BI2536 and MLN8237 block Plk1 and AurA activity and are promising anticancer therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, ATP-competitive drugs that block their activity, such as BI2536 and MLN8237, ascribe functions to these kinases and are promising anticancer therapies (Steegmaier et al., 2007; Tang et al., 2017; L\u00e9n\u00e1rt et al., 2007; Asteriti et al., 2014; Manfredi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature describing BI2536 and MLN8237 as kinase inhibitors and anticancer agents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "9e0b49e4-2c51-4817-98f2-b6db537301a7",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C32",
+      "claim": "Plk1 and AurA continually change their location and activity throughout mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, elucidating the individual spatial and temporal actions of Plk1 and AurA remains challenging as these enzymes continually change their location and activity throughout mitosis (Bruinsma et al., 2015; Joukov and De Nicolo, 2018; Lera et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature describing dynamic localization and activity of Plk1 and AurA during mitosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "134d0180-84b7-48b5-8237-a296f75a490c",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C33",
+      "claim": "The anchoring protein Gravin/AKAP12 forms a macromolecular complex with Plk1 and AurA.",
+      "claim_type": "EXPLICIT",
+      "source": "The anchoring protein Gravin/AKAP12 participates in this process by forming a macromolecular complex with these enzymes (Hehnly et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature describing Gravin's interaction with Plk1 and AurA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "926c057a-93d8-451e-9d25-7644a8463819",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C34",
+      "claim": "A-kinase anchoring proteins (AKAPs) are scaffolding proteins that limit the scope of cell signaling events at distinct cellular locations.",
+      "claim_type": "EXPLICIT",
+      "source": "A-kinase anchoring proteins (AKAPs) are scaffolding proteins that limit the scope of cell signaling events at distinct cellular locations (Scott and Pawson, 2009; Langeberg and Scott, 2015; Esseltine and Scott, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature describing the function of AKAPs as scaffolding proteins.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "bd69bd3b-9186-4121-b7f6-464c1f067134",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C35",
+      "claim": "Anchored protein kinase A action is constrained to within 200\u2013400 angstroms of the AKAP.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, anchored protein kinase A action is constrained to within 200\u2013400 angstroms of the AKAP (Smith et al., 2013; Smith et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature measuring the spatial range of anchored PKA activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "aeb58dcd-ddd4-4ce6-bc92-756d26006d52",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C36",
+      "claim": "Anchoring of Plk1 and AurA occurs on a phosphorylated species of Gravin at Threonine 766.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, anchoring of Plk1 and AurA occurs on a phosphorylated species of Gravin at Threonine 766 (Canton et al., 2012; Hehnly et al., 2015; Colicino et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature describing phosphorylation-dependent anchoring of Plk1 and AurA to Gravin.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "845cf56b-6b07-4937-8355-c4f4fc74a951",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C37",
+      "claim": "Loss or disruption of Gravin scaffold abrogates Plk1 and AurA organization at centrosomes and promotes mitotic delay.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, loss or disruption of this scaffold abrogates Plk1 and AurA organization at centrosomes and promotes mitotic delay (Hehnly et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature describing effects of Gravin loss on Plk1/AurA localization and mitotic timing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "f5818d11-d626-4457-8b6b-d7430bba6c02",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C38",
+      "claim": "Plk1 phosphorylates pericentriolar substrates that coordinate \u03b3-tubulin accumulation at mitotic centrosomes to facilitate microtubule nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Plk1 phosphorylates pericentriolar substrates that coordinate \u03b3-tubulin accumulation at mitotic centrosomes to facilitate microtubule nucleation (Lane and Nigg, 1996; Haren et al., 2009; Xu and Dai, 2011) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to published literature describing Plk1's role in \u03b3-tubulin recruitment and microtubule nucleation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "5794e203-8d56-46fa-9f4f-99b289226ffd",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C39",
+      "claim": "\u03b3-tubulin is a protein that interacts with \u03b1/\u03b2-tubulin polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindle assembly relies on \u03b3-tubulin, a protein that interacts with \u03b1/\u03b2-tubulin polymers (Moritz et al., 1995; Zheng et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature describing \u03b3-tubulin's interaction with tubulin polymers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "a606a39b-acb2-4c4a-86ac-72bc8b5db8cf",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C40",
+      "claim": "At kinetochores, AurA phosphorylates serine 69 in Hec1, a subunit of the NDC80 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "At this location AurA phosphorylates serine 69 in Hec1, a subunit of the NDC80 complex (DeLuca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature describing AurA-mediated phosphorylation of Hec1 at S69.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "c08caf35-3d57-4889-bc96-8b9b330f6039",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C41",
+      "claim": "Local phosphorylation of S69-Hec1 stabilizes microtubule-kinetochore interaction to safeguard chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "This local phosphorylation stabilizes microtubule-kinetochore interaction to safeguard chromosome segregation (DeLuca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature describing the functional consequence of S69-Hec1 phosphorylation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "90825638-a1ef-431a-8f5d-9f80f6859882",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C42",
+      "claim": "Gravin depletion via shRNA-mediated knockdown perturbs mitotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Gravin depletion via shRNA-mediated knockdown perturbs mitotic progression (Hehnly et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature describing effects of Gravin knockdown on mitosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "56b9d2b4-268a-49b1-93f6-0f5e724d785a",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C43",
+      "claim": "Abrogation of Plk1 activity has been linked to mitotic spindle defects that include abnormal bipolar and monopolar structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Abrogation of Plk1 activity has been linked to mitotic spindle defects that include abnormal bipolar and monopolar structures (Sunkel and Glover, 1988; Lane and Nigg, 1996; Sumara et al., 2004) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to published literature describing spindle defects resulting from Plk1 inhibition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "4405c6c0-e341-4cf9-9fbd-c38bce9c86e6",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C44",
+      "claim": "Centrosome-localized pools of Gravin-anchored Plk1 and AurA coordinate mitotic signaling events.",
+      "claim_type": "IMPLICIT",
+      "source": "Yet, an outstanding question that remains is exactly how do centrosome-localized pools of Gravin-anchored Plk1 and AurA coordinate mitotic signaling events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Implied as a research question that the study aims to address through development and application of the LoKI system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "5925a951-0480-4916-bcba-dd02ebe4b6d6",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C45",
+      "claim": "Local inhibition of Plk1 and AurA kinases at centrosomes and kinetochores disrupts substrate phosphorylation, spindle organization, and mitotic duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate that local inhibition of Plk1 and AurA kinases at centrosomes and kinetochores disrupts substrate phosphorylation, spindle organization, and mitotic duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple experimental results showing effects of localized kinase inhibition on various mitotic parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "813a59ab-8bb7-4806-a70f-fe8d85e233d0",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C46",
+      "claim": "Activities of individual kinases at precisely defined microenvironments contribute to the global signaling events that underlie mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these studies decipher how activities of individual kinases at precisely defined microenvironments contribute to the global signaling events that underlie mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the collective findings of the study demonstrating location-specific kinase functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "7ed36139-2314-49de-a6ef-18fb3c7eaa42",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C47",
+      "claim": "Gravin constrains enzymes in a signaling island to provide spatiotemporal control of kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we suggest that Gravin constrains enzymes in a signaling island to provide spatiotemporal control of kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing Gravin's requirement for localizing active Plk1 and AurA at centrosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "081c6919-78fe-4d36-9d5d-aa64082f8452",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C48",
+      "claim": "Depletion of Gravin alters Gravin-Plk1 and Gravin-AurA protein-protein interactions which underlie healthy cellular function.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, depletion of this anchoring protein alters Gravin-Plk1 and Gravin-AurA protein-protein interactions which underlie healthy cellular function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing effects of Gravin depletion on kinase localization and mitotic timing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "5ba14c70-d9e2-4723-812b-197fcc7862ac",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C49",
+      "claim": "Organellar targeting of drugs offers a new means to advance the investigation of broad-spectrum kinases at precise locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus organellar targeting of drugs offers a new means to advance the investigation of broad-spectrum kinases at precise locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the successful application of the LoKI system to probe local kinase functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "fbf7a11b-4bf0-49d4-ad94-bb0a46b22fe9",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C50",
+      "claim": "Using the LoKI system, we are able to definitively establish that Plk1 activity at mitotic centrosomes is a driver in \u03b3-tubulin accumulation and correct organization of bipolar mitotic spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by using the LoKI system we are able to definitively establish that Plk1 activity at mitotic centrosomes is a driver in these processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing that centrosomal inhibition of Plk1 prevents \u03b3-tubulin accumulation and correct spindle organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "eec2de72-6faf-4248-9e80-50c620a2ab0e",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C51",
+      "claim": "Embryos treated with centrosome-targeted Plk1 inhibitors have more microtubule abnormalities than those treated with a non-localized inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that embryos treated with centrosome-targeted Plk1 inhibitors have more microtubule abnormalities than those treated with a non-localized inhibitor (Figure 5C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data from zebrafish embryos comparing LoKI-on versus LoKI-off drug treatment effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "a3d56a2c-e32d-4f90-8343-991b43cc5fc3",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C52",
+      "claim": "Centrosome-localized pools of Plk1 coordinate mitotic events such as spindle organization and mitotic progression during early zebrafish development.",
+      "claim_type": "EXPLICIT",
+      "source": "These data implicate centrosome-localized pools of Plk1 in coordinating mitotic events such as spindle organization and mitotic progression during early zebrafish development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from zebrafish embryo data showing effects of centrosome-targeted Plk1 inhibition on mitotic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "360b6204-7831-46ba-bdc5-c6c624068d3a",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C53",
+      "claim": "Even during prometaphase, when kinetochores may encounter centrosome-associated AurA, S69-Hec1 phosphorylation is solely a kinetochore-associated event.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that even during prometaphase, when kinetochores may encounter centrosome-associated AurA, this phosphorylation is solely a kinetochore-associated event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing that kinetochore-targeted MLN8237 reduces pS69-Hec1 while centrosome-targeted MLN8237 does not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "62b49f5c-0190-4945-9209-6c9b6803011a",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C54",
+      "claim": "Centrosome-associated AurA is not likely responsible for S69-Hec1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we show that centrosome-associated AurA is not likely responsible for this phosphorylation event as has been previously suggested (Chm\u00e1tal et al., 2015; Ye et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing no reduction in pS69-Hec1 at kinetochores when AurA is inhibited at centrosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "a2029df3-5f31-4eef-b356-542f02ac7011",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C55",
+      "claim": "Isolated pockets of AurA may act independently and concurrently to orchestrate complex cellular events.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows us to postulate that isolated pockets of AurA may act independently and concurrently to orchestrate complex cellular events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on findings showing distinct effects of AurA inhibition at different subcellular locations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "15035681-30f4-4f39-a316-9f3b286348fd",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C56",
+      "claim": "LoKI platforms can be adapted to acutely probe local signaling in other genetically tractable organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We foresee that LoKI platforms will be adapted to acutely probe local signaling in other genetically tractable organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about future applications based on successful use in zebrafish embryos.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "bf16726b-bb26-4dcf-b355-2f4e4f872a7e",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C57",
+      "claim": "Conjugation of chloropyrimidine (CLP) to other ATP analogs offers a general method to synthesize localizable inhibitors for additional members of the kinome.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, while derivatized Plk1 and AurA drugs delineate roles for each mitotic kinase, conjugation of chloropyrimidine (CLP) to other ATP analogs offers a general method to synthesize localizable inhibitors for additional members of the kinome (Gower et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature and demonstration of CLP conjugation to multiple inhibitors in this study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "0f5291eb-957f-42ce-a9d5-a220853da57b",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C58",
+      "claim": "The reduced cell permeability of certain CLP-drug conjugates may necessitate their use at approximately 10-fold higher concentrations than the unmodified drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is worth noting that the reduced cell permeability of certain CLP-drug conjugates, including CLP-BI2536, may necessitate their use at approximately 10-fold higher concentrations than the unmodified drugs (Figure 2I versus Figure 2\u2014figure supplement 3B, Figure 4E versus Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of effective concentrations between CLP-conjugated and unconjugated drugs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "811bf844-0601-4e97-883b-e3963c8dd95d",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C59",
+      "claim": "Plasma membrane and mitochondrial targeting domains from AKAP79 and dAKAP1 expand the repertoire of subcellular compartments reached by LoKI platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, plasma membrane and mitochondrial targeting domains from AKAP79 and dAKAP1 expand the repertoire of subcellular compartments reached by LoKI platforms (Figure 6J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by demonstration of SNAP targeting to plasma membrane and mitochondria using AKAP79 and dAKAP1 domains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "559ea374-95d7-4033-b39f-16ce4c8c71fd",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C60",
+      "claim": "Reduced cell permeability of certain CLP-drug conjugates may account for the requirement of long incubation periods and application of higher concentrations of drug.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that reduced cell permeability of certain CLP-drug conjugates may account for both of the aforementioned findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed requirement of 4-hour incubation and high drug concentrations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "759a1df0-c96c-47c9-b3d6-540fa6c293fd",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C61",
+      "claim": "It is possible that kinase inhibitor drugs directed to centrosomes have off-target effects at nearby structures such as spindle microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is possible that kinase inhibitor drugs directed to centrosomes have off-target effects at nearby structures such as spindle microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledged as a potential limitation of the current approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "e60824c9-c7ca-4312-8d38-18b76cc16952",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C62",
+      "claim": "Future advancements of the LoKI platform could include photo-caged inhibitors that are inert until they are ready to be released at the site of desired inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that future advancements of this platform would include photo-caged inhibitors that are inert until they are ready to be released at the site of desired inhibition (Ellis-Davies, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative proposal for future improvements supported by citation to photo-caging technology.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "dcdccff9-4838-4ede-b453-4b097cbdf3ac",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C63",
+      "claim": "Employing photo-caged inhibitors would more strictly define the range of inhibitor action, provide another level of control to the LoKI system, and allow better delineation of the effects of global versus local inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Employing this strategy would more strictly define the range of inhibitor action, provide another level of control to the LoKI system, and allow us to better delineate the effects of global versus local inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about anticipated benefits of incorporating photo-caging technology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "4661db4b-b81e-4b57-8d5d-acc67f36e009",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C64",
+      "claim": "Future work could advance the LoKI strategy by providing a system that utilizes multiple self-labeling enzymes to deliver distinct inhibitors to the same location.",
+      "claim_type": "EXPLICIT",
+      "source": "Although in our study this allowed combined inhibition of Plk1 and AurA at centrosomes, we hope that future work will advance on our strategy and provide a system that utilizes multiple self-labeling enzymes to deliver distinct inhibitors to the same location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative proposal for future improvements to enable simultaneous delivery of multiple distinct inhibitors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "2fba544d-73ad-4785-a31b-44d5dce57ff5",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C65",
+      "claim": "Employing orthogonal tagging systems such as CLIP-tag or Halo-tag in tandem with SNAP-tag could eliminate the possibility that CLP-BI2536 and CLP-MLN8237 compete for conjugation to the same targeting moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Employing orthogonal tagging systems such as CLIP-tag or Halo-tag in tandem with SNAP-tag could eliminate the possibility that CLP-BI2536 and CLP-MLN8237 compete for conjugation to the same targeting moiety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative proposal for addressing potential competition between different CLP-conjugated drugs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "cd3d0a15-cb28-493f-807c-6f8b946a85a8",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C66",
+      "claim": "By exploiting knowledge of how AKAPs compartmentalize signaling enzymes, tools have been developed that define the local kinase terrain at the angstrom level.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, by exploiting our knowledge of how AKAPs compartmentalize signaling enzymes we have developed tools that define the local kinase terrain at the angstrom level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement integrating AKAP biology knowledge with the LoKI technology development.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "be00f28f-f2f0-41c1-b7ee-d38b75742938",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "claim_id": "C67",
+      "claim": "The LoKI system allows investigators to probe local signaling events at a level of precision that has not been possible before.",
+      "claim_type": "EXPLICIT",
+      "source": "This will allow investigators to probe local signaling events at a level of precision that has not been possible before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluding statement about the significance and novelty of the LoKI approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "645ba563-00d6-41e1-bb84-d0fb21a68031",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Gravin knockout MEFs exhibit prolonged mitosis (11.9 min delay) compared to wildtype MEFs (32.6 min baseline), and Gravin is required for localizing active pools of Plk1 and AurA at mitotic centrosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 provide quantitative live-cell imaging data establishing baseline mitotic duration and the delay in Gravin KO cells. Claims C3-C5 demonstrate reduced active kinase pools (pT210-Plk1 and pT288-AurA) at centrosomes upon Gravin depletion using super-resolution microscopy and quantification. The data converge to support Gravin's role in organizing active kinase pools and timely mitotic progression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "03336a8a-1130-4033-bfac-36185a949690",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gravin exhibits cell cycle-dependent localization, dispersed during interphase but accumulating at centrosomes as phosphorylated pT766-Gravin during mitosis, where it constrains Plk1 and AurA in a signaling island to provide spatiotemporal control of kinase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 provide imaging evidence of Gravin's dynamic localization. Claim C36 cites prior work establishing phosphorylation-dependent anchoring at T766. Claims C47-C48 interpret these findings to propose a signaling island model. The data and interpretation are consistent and well-supported by imaging and prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "98337cee-25e4-4e4c-9eca-e8fd82f70be3",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CLP-BI2536 potently inhibits Plk1 (IC50 = 49 \u00b1 26 nM) and when targeted to centrosomes via LoKI-on, reduces pT210-Plk1 to 21.4% of control, compared to 58.1% with LoKI-off, demonstrating enhanced local inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 provides in vitro kinase assay data confirming potency. Claim C9 establishes optimal labeling conditions (~50% at 250 nM, 4 hr). Claims C10-C11 show differential effects of localized versus non-localized drug delivery on active Plk1 at centrosomes. The data demonstrate proof-of-concept for the LoKI system with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "8285f1ce-ddf0-4981-ab10-52b774b73914",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Centrosomal targeting of CLP-BI2536 via LoKI-on increases abnormal spindle incidence (24.6% vs 10.3% in controls) and impairs \u03b3-tubulin accumulation at centrosomes, definitively establishing that Plk1 activity at mitotic centrosomes drives \u03b3-tubulin accumulation and correct bipolar spindle organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 provide spindle classification and \u03b3-tubulin quantification data showing effects of localized Plk1 inhibition. Claims C38 and C43 cite prior work establishing Plk1's role in these processes. Claim C50 synthesizes these findings. The data support the conclusion, though the authors acknowledge potential off-target effects at nearby structures (C61).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "7946c838-0c19-4271-9a35-fb2ebffc9e92",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CLP-MLN8237 potently inhibits AurA (IC50 <9.5 nM) and when targeted to centrosomes via LoKI-on, reduces pT288-AurA to 14.2% of control compared to 27.8% with LoKI-off, demonstrating approximately 2-fold enhancement of drug action at centrosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 provides in vitro kinase assay data. Claim C15 establishes labeling conditions. Claims C16-C18 demonstrate enhanced local inhibition of AurA at centrosomes. The data are consistent and demonstrate the versatility of the LoKI platform for targeting different kinases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "d8ba525d-20ff-4b88-9532-db5cffb62e11",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Combined centrosomal delivery of CLP-BI2536 and CLP-MLN8237 via LoKI-on prolongs mitosis 3-fold (59 min delay) compared to LoKI-off (19.4 min delay), demonstrating coordinate activities of Plk1 and AurA at centrosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 provide live-cell imaging data with baseline mitotic timing and effects of combined drug treatment. The 3-fold difference between LoKI-on and LoKI-off demonstrates enhanced local inhibition. However, the authors acknowledge that CLP-BI2536 and CLP-MLN8237 may compete for the same SNAP-tag (C65), which could affect interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "05cc19b3-cfa5-408a-a7d6-b334f2a3e813",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In zebrafish embryos, centrosome-targeted Plk1 inhibition via LoKI-on causes multipolar spindles, spindle orientation defects, prolonged mitoses, and increased mitotic indices compared to LoKI-off controls, implicating centrosome-localized Plk1 in coordinating mitotic events during early development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 provide live and fixed imaging data from zebrafish embryos showing mitotic defects and increased mitotic indices with LoKI-on. Claims C51-C52 interpret these findings. The in vivo validation strengthens the LoKI platform's utility, though the authors note the requirement for long incubation times (4 hr) and high drug concentrations (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "82d9f3ea-acfa-4d0c-bc16-610291dfa301",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Kinetochore-targeted CLP-MLN8237 via Mis12-LoKI-on reduces pS69-Hec1 to 59.8% of control, while centrosome-targeted CLP-MLN8237 via SNAP-PACT does not affect pS69-Hec1 at kinetochores, demonstrating that S69-Hec1 phosphorylation is a local event dependent on AurA activity specifically at kinetochores, not at centrosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 provide complementary experiments showing that kinetochore-targeted but not centrosome-targeted AurA inhibition affects pS69-Hec1. Claims C29, C53-C54 interpret these findings to challenge prior models suggesting centrosomal AurA phosphorylates kinetochore substrates. The spatial specificity demonstrated by orthogonal targeting experiments strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "71295981-d69d-4882-a6da-33dc05924499",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The LoKI system enables local inhibition of Plk1 and AurA at defined subcellular locations, revealing that activities of individual kinases at precisely defined microenvironments contribute to global mitotic signaling events, and offering a new precision pharmacology tool to probe local kinase biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 summarize the collective findings demonstrating location-specific kinase functions. Claims C49, C66-C67 interpret the significance of the LoKI platform. The multiple lines of evidence from different experimental systems (cultured cells, zebrafish embryos) and targeting different kinases and locations support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "7cdeadfb-6d58-4dda-b828-20f1be15f741",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Plasma membrane and mitochondrial targeting domains from AKAP79 and dAKAP1 expand the repertoire of subcellular compartments accessible to LoKI platforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by demonstration of SNAP targeting to plasma membrane and mitochondria using AKAP79 and dAKAP1 domains (Figure 6J). This demonstrates the versatility and expandability of the LoKI platform beyond centrosomes and kinetochores.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "0625d29e-947c-4a71-8586-57d6278f5fda",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Gravin depletion reduces pT210-Plk1 to 80.2% and pT288-AurA to 58.5% of control levels at centrosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 provide quantitative immunofluorescence data from structured illumination microscopy showing reduced active kinase pools at centrosomes upon Gravin depletion. The measurements are well-controlled and statistically significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "1be39edd-bc74-4afe-b5c9-1d3777397003",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CLP conjugation to ATP analogs offers a general method to synthesize localizable kinase inhibitors, though reduced cell permeability may necessitate use at approximately 10-fold higher concentrations than unmodified drugs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by successful CLP conjugation to both BI2536 and MLN8237, with citation to prior work. Claim C58 acknowledges a limitation supported by comparison of effective concentrations. This represents an honest assessment of the platform's current limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "68e11d7a-60ef-4b17-a8b2-e1025857de11",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about Plk1, AurA, Gravin, AKAPs, and their roles in mitosis based on published literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C30-C43) cite published literature to establish the scientific context and prior knowledge. They are appropriately referenced and provide necessary background for interpreting the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    },
+    {
+      "id": "94e1eb26-7d75-4bc6-b763-3a86eb39650d",
+      "content_id": "76ae79f1-7e7a-4035-9deb-914c4ff3c8c8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Speculative claims about future applications and potential improvements to the LoKI platform, including photo-caged inhibitors, orthogonal tagging systems, and adaptation to other organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C55-C56, C60-C65) are explicitly speculative statements about future work and potential improvements. While they are reasonable extrapolations based on the current findings, they represent proposals rather than demonstrated results. Claim C60 offers a speculative explanation for observed limitations, and C61 acknowledges a potential confound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:13:33.883478Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dad31f8b-76e6-4d27-98aa-405bb0e68459",
+      "result_id": "645ba563-00d6-41e1-bb84-d0fb21a68031"
+    },
+    {
+      "claim_id": "5562dcda-086d-48e1-913b-e4eb803cc522",
+      "result_id": "645ba563-00d6-41e1-bb84-d0fb21a68031"
+    },
+    {
+      "claim_id": "8b55a0c4-fbb7-4fd1-aa22-4a8ce8915bd2",
+      "result_id": "645ba563-00d6-41e1-bb84-d0fb21a68031"
+    },
+    {
+      "claim_id": "90825638-a1ef-431a-8f5d-9f80f6859882",
+      "result_id": "645ba563-00d6-41e1-bb84-d0fb21a68031"
+    },
+    {
+      "claim_id": "ca61d803-0062-4988-9a3c-54949f62c4df",
+      "result_id": "03336a8a-1130-4033-bfac-36185a949690"
+    },
+    {
+      "claim_id": "45f42d35-faf1-4499-826e-7f36561e9133",
+      "result_id": "03336a8a-1130-4033-bfac-36185a949690"
+    },
+    {
+      "claim_id": "aeb58dcd-ddd4-4ce6-bc92-756d26006d52",
+      "result_id": "03336a8a-1130-4033-bfac-36185a949690"
+    },
+    {
+      "claim_id": "7ed36139-2314-49de-a6ef-18fb3c7eaa42",
+      "result_id": "03336a8a-1130-4033-bfac-36185a949690"
+    },
+    {
+      "claim_id": "081c6919-78fe-4d36-9d5d-aa64082f8452",
+      "result_id": "03336a8a-1130-4033-bfac-36185a949690"
+    },
+    {
+      "claim_id": "b8d8432d-5ae0-46c9-9d9a-05d7a8596eaa",
+      "result_id": "98337cee-25e4-4e4c-9eca-e8fd82f70be3"
+    },
+    {
+      "claim_id": "43db941a-135e-4703-9648-4029bad538b3",
+      "result_id": "98337cee-25e4-4e4c-9eca-e8fd82f70be3"
+    },
+    {
+      "claim_id": "a86c83aa-9e4c-4ebf-b3f3-7b2ebd25b68b",
+      "result_id": "98337cee-25e4-4e4c-9eca-e8fd82f70be3"
+    },
+    {
+      "claim_id": "abfac472-69bb-4fc1-a627-40e7659a292e",
+      "result_id": "98337cee-25e4-4e4c-9eca-e8fd82f70be3"
+    },
+    {
+      "claim_id": "8bf50acf-18f8-46c4-8190-b6ed09ece2ca",
+      "result_id": "8285f1ce-ddf0-4981-ab10-52b774b73914"
+    },
+    {
+      "claim_id": "e4fe8d18-3a8a-4a76-82c0-425c2f55ee44",
+      "result_id": "8285f1ce-ddf0-4981-ab10-52b774b73914"
+    },
+    {
+      "claim_id": "f5818d11-d626-4457-8b6b-d7430bba6c02",
+      "result_id": "8285f1ce-ddf0-4981-ab10-52b774b73914"
+    },
+    {
+      "claim_id": "56b9d2b4-268a-49b1-93f6-0f5e724d785a",
+      "result_id": "8285f1ce-ddf0-4981-ab10-52b774b73914"
+    },
+    {
+      "claim_id": "fbf7a11b-4bf0-49d4-ad94-bb0a46b22fe9",
+      "result_id": "8285f1ce-ddf0-4981-ab10-52b774b73914"
+    },
+    {
+      "claim_id": "5d914a7e-ed05-4aa8-bf5c-e7e91596d3c9",
+      "result_id": "7946c838-0c19-4271-9a35-fb2ebffc9e92"
+    },
+    {
+      "claim_id": "8392250e-ad7f-4fed-abef-11074f376752",
+      "result_id": "7946c838-0c19-4271-9a35-fb2ebffc9e92"
+    },
+    {
+      "claim_id": "84f0254e-e627-4cef-a88a-5118e534ffc3",
+      "result_id": "7946c838-0c19-4271-9a35-fb2ebffc9e92"
+    },
+    {
+      "claim_id": "efe4cc36-e258-4afc-b5de-154a43eaffe8",
+      "result_id": "7946c838-0c19-4271-9a35-fb2ebffc9e92"
+    },
+    {
+      "claim_id": "111b0e67-bc1f-4991-91c4-2a29dc0c3e91",
+      "result_id": "7946c838-0c19-4271-9a35-fb2ebffc9e92"
+    },
+    {
+      "claim_id": "84afcfbf-0259-4450-a116-a97fcb30efda",
+      "result_id": "d8ba525d-20ff-4b88-9532-db5cffb62e11"
+    },
+    {
+      "claim_id": "f582c136-6efb-4545-aac2-b9e3e892dcfb",
+      "result_id": "d8ba525d-20ff-4b88-9532-db5cffb62e11"
+    },
+    {
+      "claim_id": "cbdfe67e-d8b2-4955-8c39-23d36f4b8043",
+      "result_id": "d8ba525d-20ff-4b88-9532-db5cffb62e11"
+    },
+    {
+      "claim_id": "9eb30422-fd0f-4eea-875f-a01659ebd024",
+      "result_id": "05cc19b3-cfa5-408a-a7d6-b334f2a3e813"
+    },
+    {
+      "claim_id": "f9dd2eb2-7a18-424a-8695-d7152d42700f",
+      "result_id": "05cc19b3-cfa5-408a-a7d6-b334f2a3e813"
+    },
+    {
+      "claim_id": "024e2241-0caf-45d8-b6a2-a71fff0d9cdb",
+      "result_id": "05cc19b3-cfa5-408a-a7d6-b334f2a3e813"
+    },
+    {
+      "claim_id": "eec2de72-6faf-4248-9e80-50c620a2ab0e",
+      "result_id": "05cc19b3-cfa5-408a-a7d6-b334f2a3e813"
+    },
+    {
+      "claim_id": "a3d56a2c-e32d-4f90-8343-991b43cc5fc3",
+      "result_id": "05cc19b3-cfa5-408a-a7d6-b334f2a3e813"
+    },
+    {
+      "claim_id": "b60d4ca6-6810-4a48-b8e6-27c190a35fd8",
+      "result_id": "82d9f3ea-acfa-4d0c-bc16-610291dfa301"
+    },
+    {
+      "claim_id": "0b3082e9-124c-4458-a7d6-cae83d4c0f03",
+      "result_id": "82d9f3ea-acfa-4d0c-bc16-610291dfa301"
+    },
+    {
+      "claim_id": "45a3c427-b551-4483-a242-8e4dfe741a3a",
+      "result_id": "82d9f3ea-acfa-4d0c-bc16-610291dfa301"
+    },
+    {
+      "claim_id": "a96db663-5051-4bc1-bbdb-66aa4c2be5bc",
+      "result_id": "82d9f3ea-acfa-4d0c-bc16-610291dfa301"
+    },
+    {
+      "claim_id": "646dfe12-7172-4eef-a89b-143611313e58",
+      "result_id": "82d9f3ea-acfa-4d0c-bc16-610291dfa301"
+    },
+    {
+      "claim_id": "360b6204-7831-46ba-bdc5-c6c624068d3a",
+      "result_id": "82d9f3ea-acfa-4d0c-bc16-610291dfa301"
+    },
+    {
+      "claim_id": "62b49f5c-0190-4945-9209-6c9b6803011a",
+      "result_id": "82d9f3ea-acfa-4d0c-bc16-610291dfa301"
+    },
+    {
+      "claim_id": "5925a951-0480-4916-bcba-dd02ebe4b6d6",
+      "result_id": "71295981-d69d-4882-a6da-33dc05924499"
+    },
+    {
+      "claim_id": "813a59ab-8bb7-4806-a70f-fe8d85e233d0",
+      "result_id": "71295981-d69d-4882-a6da-33dc05924499"
+    },
+    {
+      "claim_id": "5ba14c70-d9e2-4723-812b-197fcc7862ac",
+      "result_id": "71295981-d69d-4882-a6da-33dc05924499"
+    },
+    {
+      "claim_id": "cd3d0a15-cb28-493f-807c-6f8b946a85a8",
+      "result_id": "71295981-d69d-4882-a6da-33dc05924499"
+    },
+    {
+      "claim_id": "be00f28f-f2f0-41c1-b7ee-d38b75742938",
+      "result_id": "71295981-d69d-4882-a6da-33dc05924499"
+    },
+    {
+      "claim_id": "811bf844-0601-4e97-883b-e3963c8dd95d",
+      "result_id": "7cdeadfb-6d58-4dda-b828-20f1be15f741"
+    },
+    {
+      "claim_id": "30a3c68e-6db5-4efe-9c8f-2bbee87d6ed7",
+      "result_id": "0625d29e-947c-4a71-8586-57d6278f5fda"
+    },
+    {
+      "claim_id": "3d945f2a-679f-4472-ab18-7a2ff84799ca",
+      "result_id": "0625d29e-947c-4a71-8586-57d6278f5fda"
+    },
+    {
+      "claim_id": "bf16726b-bb26-4dcf-b355-2f4e4f872a7e",
+      "result_id": "1be39edd-bc74-4afe-b5c9-1d3777397003"
+    },
+    {
+      "claim_id": "0f5291eb-957f-42ce-a9d5-a220853da57b",
+      "result_id": "1be39edd-bc74-4afe-b5c9-1d3777397003"
+    },
+    {
+      "claim_id": "cc17f0fe-15e3-4d8b-9577-4cf094602cf4",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "163c7cf2-c563-46b3-8cf3-df906b0fb72a",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "9e0b49e4-2c51-4817-98f2-b6db537301a7",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "134d0180-84b7-48b5-8237-a296f75a490c",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "926c057a-93d8-451e-9d25-7644a8463819",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "bd69bd3b-9186-4121-b7f6-464c1f067134",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "aeb58dcd-ddd4-4ce6-bc92-756d26006d52",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "845cf56b-6b07-4937-8355-c4f4fc74a951",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "f5818d11-d626-4457-8b6b-d7430bba6c02",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "5794e203-8d56-46fa-9f4f-99b289226ffd",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "a606a39b-acb2-4c4a-86ac-72bc8b5db8cf",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "c08caf35-3d57-4889-bc96-8b9b330f6039",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "90825638-a1ef-431a-8f5d-9f80f6859882",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "56b9d2b4-268a-49b1-93f6-0f5e724d785a",
+      "result_id": "68e11d7a-60ef-4b17-a8b2-e1025857de11"
+    },
+    {
+      "claim_id": "a2029df3-5f31-4eef-b356-542f02ac7011",
+      "result_id": "94e1eb26-7d75-4bc6-b763-3a86eb39650d"
+    },
+    {
+      "claim_id": "15035681-30f4-4f39-a316-9f3b286348fd",
+      "result_id": "94e1eb26-7d75-4bc6-b763-3a86eb39650d"
+    },
+    {
+      "claim_id": "559ea374-95d7-4033-b39f-16ce4c8c71fd",
+      "result_id": "94e1eb26-7d75-4bc6-b763-3a86eb39650d"
+    },
+    {
+      "claim_id": "759a1df0-c96c-47c9-b3d6-540fa6c293fd",
+      "result_id": "94e1eb26-7d75-4bc6-b763-3a86eb39650d"
+    },
+    {
+      "claim_id": "e60824c9-c7ca-4312-8d38-18b76cc16952",
+      "result_id": "94e1eb26-7d75-4bc6-b763-3a86eb39650d"
+    },
+    {
+      "claim_id": "dcdccff9-4838-4ede-b453-4b097cbdf3ac",
+      "result_id": "94e1eb26-7d75-4bc6-b763-3a86eb39650d"
+    },
+    {
+      "claim_id": "4661db4b-b81e-4b57-8d5d-acc67f36e009",
+      "result_id": "94e1eb26-7d75-4bc6-b763-3a86eb39650d"
+    },
+    {
+      "claim_id": "2fba544d-73ad-4785-a31b-44d5dce57ff5",
+      "result_id": "94e1eb26-7d75-4bc6-b763-3a86eb39650d"
+    }
+  ],
+  "comparisons": []
+}

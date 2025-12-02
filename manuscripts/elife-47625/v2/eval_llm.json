@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C29",
+      "C30",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C67",
+      "C68",
+      "C71",
+      "C73",
+      "C74",
+      "C77"
+    ],
+    "result": "Shh signaling controls an intrinsic cell cycle timer in polarizing region cells through antagonistic regulation of Cyclin D2 and p27kip1. Cyclin D2 is specifically expressed in the polarizing region and requires Shh signaling for its expression, promoting proliferation. p27kip1 is also specifically expressed in the polarizing region and its expression is maintained by Shh signaling (lost 30h after cyclopamine treatment but not at 8h), acting to restrain proliferation. This temporal regulation creates an autoregulatory feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by expression data (Figures 2, 3) showing specific localization of Cyclin D2 and p27kip1 to the polarizing region, temporal dynamics of their expression following Shh inhibition, and functional data demonstrating their roles in proliferation control. The inference that these antagonistic regulators form an autoregulatory timer is reasonable given the temporal dynamics observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C28"
+    ],
+    "result": "Blocking Shh signaling with cyclopamine causes polarizing region cells to initially slow proliferation (increased G1 cells at 24h), then over-proliferate (24-48h), leading to formation of an extra posterior digit with patterns of 1-2-2-2 or 1-2-2-3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biphasic proliferation response is clearly documented in Figure 1 with flow cytometry data showing initial G1 increase followed by acute proliferation stimulation. The digit phenotypes are documented in previous work (Pickering and Towers, 2016) and confirmed in current experiments (Figure 5). The temporal correlation between over-proliferation and digit formation is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C5"
+    ],
+    "result": "D cyclin inhibition with PD0332991 prevents the over-proliferation and extra digit formation caused by Shh signaling blockade. PD0332991 increases G1 cells, reduces wing bud expansion, and decreases the incidence of four-digit wings from 50% (cyclopamine alone) to 8% (cyclopamine + PD0332991).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by comprehensive data including flow cytometry (Figure 4a-c), morphometric measurements (Figure 4d-h), and skeletal preparations (Figure 5). Statistical analyses are appropriate (chi-square and t-tests with p<0.0001). The dose-response validation and temporal controls strengthen the conclusions. The rescue of the cyclopamine phenotype by D cyclin inhibition provides strong functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C4",
+      "C69"
+    ],
+    "result": "Bmp2 acts downstream of Shh signaling to control p27kip1 expression and prevent polarizing region over-proliferation. Bmp2-soaked beads restore p27kip1 expression in cyclopamine-treated wings, increase G1 cells, reduce wing bud expansion, and prevent extra digit formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by expression data (Figure 6a-b), flow cytometry (Figure 6c-d), morphometric analysis (Figure 6e-i), and digit phenotypes (Figure 7). The specificity of p27kip1 induction in the polarizing region (not other regions around the bead) is important. Statistical analyses are appropriate. The temporal relationship (Bmp2 lost within 8h of cyclopamine, p27kip1 lost at 30h) supports the intermediate role of Bmp2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C70",
+      "C83",
+      "C84"
+    ],
+    "result": "Bmp2 specifies antero-posterior positional values by restoring posterior digit 3 identity in the absence of Shh signaling. Bmp2 application increases the incidence of digit 3 from 53% to 94% in cyclopamine-treated wings, supporting that Bmps function downstream of Shh in digit specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The digit identity data (Figure 7) clearly demonstrate that Bmp2 can restore digit 3 formation in cyclopamine-treated wings. The increase from 53% to 94% is statistically significant (p<0.0001). The contralateral control design is appropriate. However, the mechanism by which Bmp2 specifies digit 3 identity (versus just preventing over-proliferation) could be more directly demonstrated. The claim that this represents positional value specification is an inference, though reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C79",
+      "C95",
+      "C107"
+    ],
+    "result": "The autoregulatory cell cycle timer mechanism integrating growth and specification is proposed to be widely applicable to many tissues, with implications for understanding overgrowth syndromes like MPPH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the mechanism is well-demonstrated in the polarizing region, the claims about broad applicability are speculative. The comparison to oligodendrocyte progenitor cells provides some support, but direct evidence in other tissues is lacking. The connection to MPPH syndrome is interesting but inferential. These are reasonable hypotheses for future work but not directly supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "p21cip1 and p57kip2 are not detectably expressed in the chick wing bud, while p27kip1 becomes undetectable in posterior mesenchyme at later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression data (Figure 2e-h, l) clearly show absence of p21cip1 and p57kip2 expression and temporal restriction of p27kip1. This is important for establishing p27kip1 as the relevant Cip/Kip inhibitor. However, the sensitivity limits of in situ hybridization should be acknowledged - low levels of expression might not be detected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C72",
+      "C75",
+      "C76"
+    ],
+    "result": "Cyclin D1 is expressed throughout the posterior wing bud and its expression is maintained independently of Shh signaling, likely driving over-proliferation when both Cyclin D2 and p27kip1 are lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about Cyclin D1 expression are supported by citations to previous work (Towers et al., 2008). The inference that Cyclin D1 drives over-proliferation in the absence of Cyclin D2 and p27kip1 is logical given that: (1) D cyclins are rate-limiting for G1-S transition, (2) Cyclin D1 expression persists after cyclopamine treatment, and (3) PD0332991 (which inhibits all D cyclins) prevents over-proliferation. However, this is indirect evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C93",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "Shh signaling specifies two growth compartments: long-range signaling promotes anterior digit-forming field expansion (likely via Cyclin D1), while short-range signaling restricts posterior polarizing region expansion (via Cyclin D2/p27kip1). Shh functions primarily as a mitogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-compartment model is supported by the current data on polarizing region control and previous work on anterior field expansion (Towers et al., 2008). The differential effects on anterior versus posterior regions are well-documented. However, the molecular mechanisms distinguishing long-range versus short-range responses (proposed to involve Gli factor distribution) are speculative. The conclusion that Shh functions primarily as a mitogen is reasonable but somewhat overstated given its clear role in gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript discusses the relationship between Shh and Bmp signaling in digit patterning, addressing apparent contradictions with previous work and proposing that Bmp signaling encodes positional memory that is interpreted at later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This discussion synthesizes various observations but is largely speculative. The explanations for why Bmp2 fails to duplicate digits when applied anteriorly (requires Shh-dependent growth field) and why Bmp knockout mice lack obvious digit identity defects (cryptic anterior character) are plausible but not directly tested. These represent hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27"
+    ],
+    "result": "Background claims establishing the context of cell cycle timers in development, the polarizing region system, and previous work on Shh signaling control of proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately supported by citations to published literature. They establish the necessary background for understanding the current work. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Discussion of the broader implications of cell cycle timing mechanisms, including comparisons to other developmental systems, mouse knockout phenotypes, and human overgrowth syndromes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion points are appropriately supported by citations to relevant literature. The comparisons to oligodendrocyte progenitor cells, mouse knockouts, and MPPH syndrome provide useful context. The explanations for apparent discrepancies (e.g., lack of limb defects in p27kip1 knockout mice) are speculative but reasonable. The connection to MPPH syndrome is particularly interesting given the polydactyly phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Evolutionary and comparative discussion of Shh/Hedgehog signaling in vertebrate versus Drosophila wing development, proposing that gene family expansion enabled multiple growth responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis is well-supported by appropriate citations. The observation that vertebrates have expanded Gli, D cyclin, and Cip/Kip families compared to Drosophila is factually correct. The inference that this expansion enabled more complex spatial and temporal control is reasonable but speculative. This provides useful evolutionary context.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1471 @@
+{
+  "submission": {
+    "id": "8ffab009-828c-42e5-8f17-90b973499040",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:27:23.125979Z",
+    "updated_at": "2025-12-02T10:27:23.125979Z"
+  },
+  "content": [
+    {
+      "id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "submission_id": "8ffab009-828c-42e5-8f17-90b973499040",
+      "content_type": "manuscript",
+      "content_text": "# An integrative genomic analysis of the Longshanks selection experiment for longer limbs in mice\n\n## Authors\n\n- Jo\u00e3o PL Castro<sup>1</sup>\n- Michelle N Yancoskie<sup>1</sup>\n- Marta Marchini<sup>2</sup>\n- Stefanie Belohlavy<sup>3</sup>\n- Layla Hiramatsu<sup>1</sup> ([ORCID: 0000-0001-6298-6109](https://orcid.org/0000-0001-6298-6109))\n- Marek Ku\u010dka<sup>1</sup>\n- William H Beluch<sup>1</sup>\n- Ronald Naumann<sup>4</sup>\n- Isabella Skuplik<sup>2</sup>\n- John Cobb<sup>2</sup> ([ORCID: 0000-0002-1053-2604](https://orcid.org/0000-0002-1053-2604))\n- Nicholas H Barton<sup>3</sup> ([ORCID: 0000-0002-8548-5240](https://orcid.org/0000-0002-8548-5240))\n- Campbell Rolian<sup>2</sup> ([ORCID: 0000-0002-7242-342X](https://orcid.org/0000-0002-7242-342X)) \u2020\n- Yingguang Frank Chan<sup>1</sup> ([ORCID: 0000-0001-6292-9681](https://orcid.org/0000-0001-6292-9681)) \u2020\n\n### Affiliations\n\n1. Friedrich Miescher Laboratory of the Max Planck Society T\u00fcbingen Germany\n2. University of Calgary Calgary Canada\n3. Institute of Science and Technology (IST) Austria Klosterneuburg Austria\n4. Max Planck Institute for Molecular Cell Biology and Genetics Dresden Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nEvolutionary studies are often limited by missing data that are critical to understanding the history of selection. Selection experiments, which reproduce rapid evolution under controlled conditions, are excellent tools to study how genomes evolve under selection. Here we present a genomic dissection of the Longshanks selection experiment, in which mice were selectively bred over 20 generations for longer tibiae relative to body mass, resulting in 13% longer tibiae in two replicates. We synthesized evolutionary theory, genome sequences and molecular genetics to understand the selection response and found that it involved both polygenic adaptation and discrete loci of major effect, with the strongest loci tending to be selected in parallel between replicates. We show that selection may favor de-repression of bone growth through inactivating two limb enhancers of an inhibitor, Nkx3-2. Our integrative genomic analyses thus show that it is possible to connect individual base-pair changes to the overall selection response.\n\n## Introduction\n\nUnderstanding how populations adapt to a changing environment is an urgent challenge of global significance. The problem is especially acute for mammal populations, which are often small and fragmented due to widespread habitat loss. Such populations often show increased inbreeding, leading to the loss of genetic diversity (Hoffmann and Sgr\u00f2, 2011). Because beneficial alleles in mammals typically come from standing genetic variation rather than new mutations like in microbes, this loss of diversity would ultimately impose a limit on the ability of small populations to adapt. Nonetheless, mammals respond readily to selection in many traits, both in nature and in the laboratory (Darwin, 1859; Gingerich, 2001; Garland and Rose, 2009; Keightley et al., 2001). In quantitative genetics, such traits are interpreted as the overall effect from a large set of loci, each with an infinitesimally small (and undetectable) effect (\u2018infinitesimal model\u2019). Broadly speaking, the infinitesimal model has performed remarkably well across a wide range of selection experiments, and the model is the basis for commercial breeding (Walsh and Lynch, 2018). However, it remains unclear what type of genomic change is associated with rapid response to selection, especially in small populations where allele frequency changes can be dominated by random genetic drift.\n\nWhile a large body of theory exists to describe the birth, rise and eventual fixation of adaptive variants under diverse selection scenarios (Maynard Smith and Haigh, 1974; Barton, 1995; Otto and Barton, 2001; Weissman and Barton, 2012; Crow and Kimura, 1965; Hill and Robertson, 1966), few empirical datasets capture sufficient detail on the founding conditions and selection regime to allow full reconstruction of the selection response. This is particularly problematic in nature, where historical samples, environmental measurements and replicates are often missing. Selection experiments, which reproduce rapid evolution under controlled conditions, are therefore excellent tools to understand response to selection\u2014and by extension\u2014adaptive evolution in nature (Garland and Rose, 2009).\n\nHere we describe an integrative, multi-faceted investigation into an artificial selection experiment, called Longshanks, in which mice were selected for increased tibia length relative to body mass (Marchini et al., 2014). The mammalian limb is an ideal model to study the dynamics of complex traits under selection: it is both morphologically complex and functionally diverse, reflecting its adaptive value; and limb development has been studied extensively in mammals, birds and fishes as a genetic and evolutionary paradigm (Petit et al., 2017). The Longshanks selection experiment thus offers the opportunity to study selection response not only from a quantitative and population genetics perspective, but also from a developmental (Marchini and Rolian, 2018) and genomic perspective.\n\nBy design, the Longshanks experiment preserves a nearly complete archive of the phenotype (trait measurements) and genotype (via tissue samples) in the pedigree. Previously, Marchini et al. investigated how selection was able to overcome correlation between tibia length and body mass and produced independent changes in tibia length during the first 14 generations of the Longshanks experiment (Marchini et al., 2014). Importantly, that study focused on the phenotypes and inferred genetic correlations indirectly using the pedigree. The current genomic analysis was initiated when the on-going experiment reached generation 17 and extends the previous study by integrating both phenotypic and genetic aspects of the Longshanks experiment. By sequencing the initial and final genomes, the current analysis benefits from direct and highly resolved genetic information. Here, with essentially complete information, we wish to answer a number of important questions regarding the factors that determine and constrain rapid adaptation: Are the observed changes in gene frequency due to selection or random drift? Does rapid selection response of a complex trait proceed through innumerable loci of infinitesimally small effect, or through a few loci of large effect? What type of signature of selection may be associated with this process? Finally, when the same trait changes occur independently, do these depend on changes in the same gene(s) or the same pathways (parallelism)?\n\n## Results\n\n### Longshanks selection for longer tibiae\n\nAt the start of the Longshanks experiment, we established three base populations with 14 pairs each by sampling from a genetically diverse, commercial mouse stock (Hsd:ICR, also known as CD-1; derived from mixed breeding of classical laboratory mice [Yalcin et al., 2010]). In two replicate \u2018Longshanks\u2019 lines (LS1 and LS2), we bred mice by pairing 16 males and females (and excluding sibling pairs) with the longest tibia relative to the cube root of body mass for each sex. This corresponds to 15\u201320% of all offspring (only details essential to understanding our analysis are summarized here. See Marchini et al., 2014 for a detailed description of the breeding scheme). We kept a third Control line (Ctrl) using an identical breeding scheme, except that breeders were selected at random. In LS1 and LS2, we observed a strong and significant response to selection in tibia length (0.29 and 0.26 Haldane or standard deviations (s.d.) per generation, from a selection differential of 0.73 s.d. in LS1 and 0.62 s.d. in LS2). Over 20 generations, selection for longer relative tibia length produced increases of 5.27 and 4.81 s.d. in LS1 and LS2, respectively (or 12.7% and 13.1% in tibia length), with a modest decrease in body mass (\u22121.5% in LS1 and \u22123.7% in LS2; Student\u2019s t-test, p<2\u00a0\u00d7\u00a010\u22124 and p<1\u00a0\u00d7\u00a010\u22128, respectively; Figure 1B and C; Figure 1\u2014figure supplement 1; n.b. this relationship was in part biased by the F1 generation, which were fed a different diet and phenotyped three weeks later than later generations, see Marchini et al., 2014 for details). By contrast, Ctrl showed no directional change in tibia length or body mass (Figure 1C; Student\u2019s t-test, p>0.05). This approximately 5 s.d. change in 20 generations is rapid compared to typical rates observed in nature (Hendry and Kinnison, 1999, but see Grant and Grant, 2002) but is in line with responses seen in selection experiments (Gingerich, 2001; Keightley et al., 2001; Falconer and Mackay, 1996; Pitchers et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig1-v2.jpg)\n\n**Figure 1.:** (A and B) Tibia length varies as a quantitative trait among outbred mice derived from the Hsd:ICR (also known as CD-1) commercial stock. Selective breeding for mice with the longest tibiae relative to body mass within families has produced a strong selection response in tibia length over 20 generations in Longshanks mice (13%, blue arrow, LS1). (C) Both LS1 and LS2 produced replicated rapid increase in tibia length (blue and red; line and shading show mean\u00a0\u00b1s.d.) compared to random-bred Controls (gray). Arrowheads along the x-axis mark sequenced generations F0 and F17. See Figure 1\u2014figure supplement 1 for body mass data. Lower panel: Representative tibiae from the Ctrl, LS1 and LS2 after 20 generations of selection. (D) Analysis of sequence diversity data (linked variants or haplotypes: lines; variants: dots) may detect signatures of selection, such as selective sweeps (F17 in LS1 and LS2) that result from selection favoring a particular variant (dots), compared to neutral or background patterns (Ctrl). Alternatively, selection may elicit a polygenic response, which may involve minor shifts in allele frequency at many loci and therefore may leave a very different selection signature from the one shown here.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Rapid response to selection produced mice with progressively longer tibiae (A) and slightly lower body weight (B) within 20 generations. Having complete records throughout the selection experiment makes it possible to reconstruct the selection response for both phenotypes and genotypes in detail. Individuals varied in tibia length in both Longshanks lines (LS1, left; LS2, right). Lines connect parents to their offspring. The actual selection depended on the within-family and within-sex rank order of the tibia length-to-body mass (cube root) ratio (see\u00a0Marchini et al., 2014 for details). The overall selection response was immediate and rapid for tibia length (A), suggesting a selection response that depended on standing variation among the founders (black lines show the best fitting quadratic function, with shading indicating 95% confidence interval; adjusted R2 = 0.61 for LS1; 0.43 for LS2). Strong selection response led to rapid increase in tibia length. In contrast, there was only minor decrease in body weight over the course of the experiment. (C) Trajectory in selection response shows decoupling of correlation between tibia length and body mass. Despite overall correlation between tibia length and body mass (gray arrow and major axes in confidence envelopes), cumulative trait displacement over the 20 generations (expressed in s. d. units at F1; arrows, dots and 95% confidence envelopes, color-coded according to generation) showed persistent increase in tibia length with only minor change in body mass along the general direction of selection pressure (black arrows from F1; vector length and directions based on logistic regression). This shows that the Longshanks selection experiment was successful in specifically selecting for increased tibia length while keeping relatively unchanged body mass. (D) Despite persistent and strong selection, heritability for the composite trait $ln(TB^{\u22120.57})$\u00a0($T$\u00a0= tibia length in mm; $B$\u00a0= cube-root body mass in $\\sqrt[3]{g}$) (see Simulating selection response: infinitesimal model with linkage in main text) was maintained over 20 generations. Heritability was estimated by a linear mixed \u201canimal model\u201d in which the phenotypic variance was partitioned as VP = fixed effects + VA + VR, where fixed effects were sex, age, and litter size, VA was additive genetic variance, and VR was residual variance. Heritability was estimated as h2 = VA /(VA + VR). Each tested block used the full pedigree but only phenotypic information from individuals within the block. We tested an alternate model for each block using truncated pedigrees wherein the first generation of each block was assumed to be unrelated, but found similar results.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** This figure summarizes the results from our analyses to determine parameters used in the simulations. For full detail, see Appendix, section \u2018Major considerations in constructing the simulations\u2019. (A) Finding the correct $\u03d5$ value for the composite trait $ln(TB^{\u03d5})$. In each simulated family, offspring are split by sex and ranked by their composite trait. Due to occasional use of back-up crosses, the average rank of actual breeders is greater than 1. We vary $\u03d5$ to find the value where actual breeders in the LS lines have the best (lowest) rank. We find $\u03d5$ = -0.571 to show the best match for males and -0.605 for females. For subsequent analyses we set $\u03d5$ to be -0.57. (B) Increase in inbreeding over the course of the Longshanks experiment. The lines show the change in identity between two alleles between diploid individuals, $F_{b}$, over 20 generations, as calculated from the pedigree (light shade); the average of 50 neutral simulations without selection (dotted line); or the average of 50 simulation replicates with selection intensity at $V_{s}/V_{e}$ = 0.584 ($\\theta=1$; thick, dark line). While the $F_{b}$ trajectories based on pedigree or neutral simulations are indistinguishable, inbreeding increases slightly faster under selection (thick line). The black line shows the increase in identity expected under a Wright\u2013Fisher model with the actual population sizes; under this model, $F_{w}$ and $F_{b}$ are close to each other, and to $1\u2212(1\u2212\\frac{1}{2N_{e}})^{t}$, with $N_{e}$ equal to the harmonic mean, 24.8. The large dot (with error bar showing the interquartile range among chromosomes) at right show the actual $F_{b}$, estimated from the decline in average $2p(1\u2212p)$ over 17 generations. Small filled dots show the estimates from each of the 20 chromosomes. Open dots show 40 replicate simulations, made with the same pedigree and the same selection response $\\theta=1$ and sub-sampling from the simulated chromosome according to the actual map length of each of the mouse chromosomes (Cox et al., 2009). The simulation agrees well with the observed genome-wide average. Most of the observed data from chromosomes fall within a range comparable to simulated replicates (compare large dot with open dots), with LD being the likely source of this excess variance. (C) Three different schemes to seed founder haplotypes. We simulate founder haplotypes that are consistent with observed genotypes (shown here as black, white and gray dots as the two homozygous and the heterozygous states) by directly sampling from founder individuals in each LS line. Under the linkage equilibrium scheme, we sample from the list of allele counts at all SNPs. This produces founder haplotypes that carry no linkage disequilibrium (\u2018no LD'). Under the random assignment scheme, we sample according to each individual (shown as \u2018diplotypes' within the box for easy comparison). At heterozygote sites in each individual (arrowheads), we randomly assign the alleles to the two haplotypes. This produces founder haplotypes that show minimal LD that is consistent with the observed genotypes (\u2018min LD'). Under the \u2018max LD' assignment scheme, we also sample according to each individual, except that we consistently assign its haplotypes 1 and 2 with reference (white) and alternate (black) alleles, respectively. This maximizes LD in the founder haplotypes (\u2018max LD'). (D) Simulated vs. expected allele frequency shifts. The distribution of minor allele frequencies q0 at generation 17 is compared with the distribution expected with no selection (blue) or with selection (red), given a frequency of 1, 4, 12 or 28 minor alleles out of 56 founding alleles. The black line shows the diffusion limit, calculated for scaled time $\\frac{17}{N_{e}}$, with $N_{e}$ estimated to be 51.7 and 48 in LS1 and LS2 respectively, from the rate of increase in $F$, calculated from the pedigree in panel A above. (E) Significance threshold values under varying LD from 100 simulated replicates (blue: no selection; red: observed selection response in the actual experiment, $\\theta=1$; see panel C on LD assignment methods). In order to account for non-independence of adjacent windows due to linkage, a distribution of genome-wide maximum \u2206z2 was used to determine the significance threshold at each LD level. \u2206z2 is the square of arcsine transformed allele frequency difference between F0 and F17; this has an expected variance of 1/2Ne per generation, independent of starting frequency, and ranges from 0 to \u03c02. As seen in previous panels, increasing selection pressure does produce greater shifts in \u2206z2 despite using the same pedigree due to a relatively greater proportion of additive genetic variance $V_{s}$. However, a far greater impact on \u2206z2 is due to changes in LD. This is because weak associations between large numbers of SNP can greatly inflate the variance of \u2206z2. Of the three LD levels, \u2018max LD' likely produced overly conservative thresholds, whereas \u2018min LD' may lead to higher false positives. We have opted conservatively to use maximal LD in our analysis.\n\n### Simulating selection response: infinitesimal model with linkage\n\nThe rapid but generally smooth increase in tibia length in Longshanks is typically interpreted as evidence for a highly dispersed genetic architecture with no individually important loci contributing to the selection response. This is classically described under quantitative genetics as the infinitesimal model. Crucially, the appropriate null hypothesis for the genomic response here should capture \u201cpolygenic adaptation\u201d rather than a neutral model. We therefore developed a simulation that faithfully recapitulates the artificial selection experiment by integrating the trait measurements, selection regime, pedigree and genetic diversity of the Longshanks selection experiment, in order to generate an accurate expectation for the genomic response. Using the actual pedigree and trait measurements, we mapped fitness onto tibia length $T$\u00a0and cube-root body mass $B$\u00a0as a single composite trait\u00a0$lnTB^{\u03d5}$. We estimated $\u03d5$\u00a0from actual data as \u22120.57, such that the ranking of breeders closely matched the actual composite ranking used to select breeders in the selection experiment, based on $T$\u00a0and $B$\u00a0separately (Marchini et al., 2014) (Figure 1\u2014figure supplement 2A). We assumed a maximally polygenic genetic architecture using an \u201cinfinitesimal model with linkage\u201d (abbreviated here as HINF), under which the trait is controlled by very many loci, each of infinitesimally small effect (see Appendix for details). Results from simulations seeded with actual genotypes or haplotypes showed that overall, the predicted increase in inbreeding closely matched the observed data (Figure 1\u2014figure supplement 2B). We tested models with varying selection intensity and initial linkage disequilibrium (LD), and for each, ran 100 simulated replicates to determine the significance of changes in allele frequency (Figure 1\u2014figure supplement 2C-E). This flexible quantitative genetics framework allowed us to explore possible changes in genetic diversity over 17 generations of breeding under strong selection.\n\nIn simulations, we followed blocks of genomes as they were passed down the pedigree. In order to compare with observations, we seeded the initial genomes with single nucleotide polymorphisms (SNPs) in the same number and initial frequencies as the data. We observed much more variation between chromosomes in overall inbreeding (Figure 1\u2014figure supplement 2B) and in the distribution of allele frequencies (Figure 2\u2014figure supplement 1B) than expected from simulations in which the ancestral SNPs were initially in linkage equilibrium. This can be explained by linkage disequilibrium (LD) between the ancestral SNPs, which greatly increases random variation. Therefore, we based our significance threshold tests on simulations that were seeded with SNPs drawn with LD consistent with the initial haplotypes (Figure 1\u2014figure supplement 2C and E; see Appendix).\n\nBecause our simulations assume infinitesimal effects of loci, allele frequency shifts exceeding this stringent threshold would\u00a0suggest that discrete loci contribute significantly to the selection response. An excess of such loci in either a single LS replicate or in parallel would thus imply a mixed genetic architecture of a few large-effect loci amid an infinitesimal background.\n\n### Sequencing the Longshanks mice reveals genomic signatures of selection\n\nTo detect the genomic changes in the actual Longshanks experiment, we sequenced all individuals of the founder (F0) and 17th generation (F17) to an average of 2.91-fold coverage (range: 0.73\u201320.6\u00d7; n\u00a0=\u00a0169 with\u00a0<10% missing F0 individuals; Supplementary file 1). Across the three lines, we found similar levels of diversity, with an average of 6.7 million (M) segregating SNPs (approximately 0.025%, or 1 SNP per four kbp; Supplementary file 2; Figure 2\u2014figure supplement 1A and Figure 2\u2014figure supplement 2). We checked the founder populations to confirm negligible divergence between the three founder populations (across-line FST on the order of 1\u00a0\u00d7\u00a010\u22124), which increased to 0.18 at F17 (Supplementary file 2). This is consistent with random sampling from an outbred breeding stock. By F17, the number of segregating SNPs dropped to around 5.8 M (Supplementary file 2). This 13% drop in diversity (0.9M SNPs genome-wide) is predicted by drift. Our simulations confirmed this and moreover, showed that selection contributed negligibly to the drop in diversity (Appendix, Figure 1\u2014figure supplement 2B, D).\n\nWe conclude that despite the strong selection on the LS lines, there was little perturbation to genome-wide diversity. Indeed, the changes in diversity in 17 generations were remarkably similar in all three lines, despite Ctrl not having experienced selection on relative tibia length (Figure 2\u2014figure supplement 1A). Hence, and consistent with our simulation results (Figure 1\u2014figure supplement 2B,D), changes in global genome diversity had little power to distinguish selection from neutral drift despite the strong phenotypic selection response.\n\nWe next asked whether specific loci reveal more definitive differences between the LS replicates and Ctrl (and from infinitesimal predictions). We calculated \u2206z2, the square of an arcsine transformed allele frequency difference between F0 and F17; this has an expected variance of 1/2Ne per generation, independent of starting frequency, and ranges from 0 to \u03c02. We averaged \u2206z2 within 10 kbp windows (see Methods for details), and found 169 windows belonging to eight clusters (i.e., loci) that had significant shifts in allele frequency in LS1 and/or LS2 (corresponding to 9 and 164 clustered windows respectively at p\u22640.05 under HINF, max LD; \u2206z2\u00a0\u22650.33 \u03c02; genome-wide \u2206z2\u00a0=\u00a00.02\u00a0\u00b1\u00a00.03 \u03c02; Figure 2; Figure 1\u2014figure supplement 2D, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3; see Methods for details) and 8 windows in three clusters in Ctrl (genome-wide \u2206z2\u00a0=\u00a00.01\u00a0\u00b1\u00a00.02 \u03c02). The eight loci in Longshanks\u00a0each overlapped between 2 to 179 genes and together contained 11 candidate genes with known roles in bone, cartilage and/or limb development (e.g., Nkx3-2 and Sox9; Table 1; Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4). Four out of the eight loci contain genes with a \u2018short tibia\u2019 or \u2018short limb\u2019 knockout phenotype (Table 1; p\u22640.032 from 1000 permutations, see Methods for details). Of the broader set of genes at these loci with any limb knockout phenotypes, only fibrillin 2 (Fbn2) is polymorphic for SNPs coding for different amino acids, suggesting that for the majority of loci with large shifts in allele frequency, gene regulation was likely important in the selection response (Figure 2\u2014figure supplement 4; Supplementary file 3; see Appendix for further analyses on enrichment in gene functions, protein-coding vs. cis-acting changes and clustering with loci affecting human height).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig2-v2.jpg)\n\n**Figure 2.:** Allele frequency shifts between generations F0 and F17 in LS1, LS2 and Ctrl lines are shown as \u2206z2 profiles across the genome (plotted here as fraction of its range from 0 to \u03c02). The Ctrl \u2206z2 profile (gray) confirmed our expectation from theory and simulation that drift, inbreeding and genetic linkage could combine to generate large \u2206z2 shifts even without selection. Nonetheless the LS1 (blue) and LS2 (red) profiles show a greater number of strong and parallel shifts than Ctrl. These selective sweeps provide support for the contribution of discrete loci to selection response (arrowheads, blue: LS1; red: LS2; purple: parallel; see also Figure 1\u2014figure supplement 2E, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3) beyond a polygenic background, which may explain a majority of the selection response and yet leave little discernible selection signature. Candidate genes are highlighted (Table 1). An additional a priori candidate limb regulator Gli3 is indicated with a black arrowhead.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Shown are the site frequency spectra from LS1, LS2 and Control lines at F0 (top; folded based on a global minor allele frequency or MAF\u00a0\u22640.5) and F17 (bottom; unfolded, but tracking the same minor alleles as in F0). Overall the spectra were very similar to each other within each generation. The Control population was mostly intermediate in the decay in the rarer alleles. After 17 generations, the same alleles were generally more spread out, leading to more broadly distributed spectra. There was again little overall difference between the Longshanks and Control lines. (B) Variations between chromosomes (separate same-colored lines) shown in each population and generation. The unfolded site frequency spectrum is shown based on the MAF assigned as in A. There is substantial variation between chromosomes, which shows increased distortions in F17. (C) Allele frequencies between the founder populations were very similar. Joint minor allele frequencies shown as box plots in 2% bands between the Control and LS1 (blue), LS2 (red); or the two LS lines (purple). Outliers were omitted for clarity. The overall trends follow closely the parity line (gray line along the diagonal), except at frequencies very close to 0.5. Similar to the site frequency spectra in panel A, a small number of sites have a MAF above 0.5 (gray box), because of the use of an overall MAF\u00a0\u22640.5 to determine minor allele status to enable comparisons across lines. Correlations between all pairwise combinations were around 0.93.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Histogram of within-line \u2206z2 values in 10 kbp windows across the genome in LS1, LS2, and Control. Overall similarity is high across all three lines, but there was an excess of large \u2206z2 value starting from as low as\u00a0<0.1 \u03c02. This pattern becomes clearly distinct above the threshold value of 0.125, which corresponds to the lenient significance threshold p\u22640.05 under HINF, no LD (inset). There was clearly an excess of windows in LS2 above the more stringent p\u22640.05 threshold under HINF, max LD. This excess supports discrete loci contributing to selection response in LS2 that give rise to greater distortion of \u2206z2 spectra.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** For each significant locus, \u2206z2 profiles are shown for Ctrl (gray), LS1 (blue) and LS2 (red). Plots are shaded if the locus is significant in a given line. TADs within 250 kbp of the significant signals are shown as gray bars above each locus. Above the TADs are highlighted genes whose knockout phenotypes belong to the following categories: \u2018abnormal tibia morphology\u2019, \u2018short limb\u2019, \u2018short tibia\u2019, \u2018abnormal cartilage morphology\u2019, \u2018abnormal osteoblast morphology\u2019. The gene symbols are colored according to the gene function(s) in limb development (green), bone development (purple) or both (boxed). Gene symbols marked by asterisks (*) have specifically reported \u2018short tibia\u2019 or \u2018short limb\u2019 knockout phenotypes. All of the above categories show significant enrichment at the eight loci (number of genes per category: 4\u20137, nominal p\u22640.03, see Appendix, section \u2018Enrichment for genes with functional impact on limb development\u2019 for details on the permutation), except \u2018abnormal cartilage morphology\u2019, with four genes and a nominal P-value of 0.083. No overlap was found with any gene in these categories from the three significant loci from the Ctrl line.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Gene set enrichment analysis of knock-out phenotypes (KO) showed that selection response (here shown as \u2206z2 cut-off values, see Supplementary Methods for details on cut-off values and inclusion criteria) were found among topologically associating domains (TADs) containing limb and tail developmental genes (red solid lines) or genes with limb expression (red dotted lines) in LS lines (top) but not in Ctrl (bottom). Among KO phenotypes, limb defects show the greatest excess out of 28 phenotypic categories (other gray lines, with other extreme categories labeled, the \u2018normal\u2019 category is excluded here). Among developmental enhancers for limb, heart, liver and brain tissue, we also observed an association with \u2206z2 peaks in LS lines (top) for limb but not in Ctrl lines (bottom). The simulated significance thresholds based on HINF, max LD are also shown for reference (vertical gray lines). The data from the LS lines suggest that enrichment started to increase around the\u00a0p\u22640.5 threshold and remained largely stable at p\u22640.05, corresponding\u00a0to a cut-off of around 0.33 \u03c02. (B) Coding vs. regulatory impact. Frequency of moderate to major coding changes (top panels, amino acid changes, frame-shifts or stop codons), or average conservation score of regulatory sequences immediately flanking SNPs (based on conservation among 60 eutherian mammals; bottom panels) were used as proxies to estimate the functional impact of coding and regulatory mutations, respectively. In LS1, major coding changes became more common at high \u2206z2 ranges; however the number of SNPs with potentially major phenotypic consequences did not increase in LS2 and in fact seemed to decrease in Ctrl. In contrast, regulatory changes showed increased conservation associated with greater allele frequency shifts or \u2206z2 in all three lines, except that SNPs with large shifts and strong conservation were more abundant in LS1 and LS2. Trend lines are shown with LOESS regression but statistical comparisons were performed using linear regressions.\n\n**Table 1.**\n Major loci likely contributing to the selection response.These eight loci show significant allele frequency shifts in \u2206z2 and are ordered according to their estimated selection coefficients according to Haldane (1932). Shown for each locus are the full hitchhiking spans, peak location and their size covering the core windows, the overlapping TAD and the number of genes found in it. The two top-ranked loci show shifts in parallel in both LS1 and LS2, with the remaining six showing line-specific response (LS1: 1; LS2: 5). Candidate genes found within the TAD with limb, cartilage, or bone developmental knockout phenotype functions are shown, with asterisks (*) marking those with a \u2018short tibia\u2019 knockout phenotype (see also Figure 2\u2014figure supplement 3 and Supplementary file 3 for full table).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Rk</th>\n      <th rowspan=\"2\">Chr</th>\n      <th rowspan=\"2\">Span (Mbp)</th>\n      <th rowspan=\"2\">Peak</th>\n      <th rowspan=\"2\">Core (kbp)</th>\n      <th rowspan=\"2\">TAD (kbp)</th>\n      <th rowspan=\"2\">Genes</th>\n      <th colspan=\"3\">\u2206q</th>\n      <th colspan=\"2\"></th>\n    </tr>\n    <tr>\n      <th>LS1</th>\n      <th>LS2</th>\n      <th>Ctrl</th>\n      <th>Type</th>\n      <th>Candidate genes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>5</td>\n      <td>38.95\u201345.13</td>\n      <td>41.77</td>\n      <td>900</td>\n      <td>720</td>\n      <td>3</td>\n      <td>0.69</td>\n      <td>0.86</td>\n      <td>\u22120.14</td>\n      <td>Parallel</td>\n      <td>Nkx3-2</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>10</td>\n      <td>77.47\u201387.69</td>\n      <td>81.07</td>\n      <td>5360</td>\n      <td>6520</td>\n      <td>175</td>\n      <td>0.79</td>\n      <td>0.88</td>\n      <td>\u22120.04</td>\n      <td>Parallel</td>\n      <td>Sbno5, Aes, Adamtsl5*, Chst11*, Cry1, Prdm4*</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>18</td>\n      <td>53.63\u201363.50</td>\n      <td>58.18</td>\n      <td>220</td>\n      <td>520</td>\n      <td>4</td>\n      <td>0.05</td>\n      <td>0.78</td>\n      <td>\u22120.06</td>\n      <td>LS2-specific</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>13</td>\n      <td>35.59\u201355.21</td>\n      <td>48.65</td>\n      <td>70</td>\n      <td>2600</td>\n      <td>22</td>\n      <td>0.24</td>\n      <td>0.80</td>\n      <td>\u22120.03</td>\n      <td>LS2-specific</td>\n      <td>Id4</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>1</td>\n      <td>53.16\u201357.13</td>\n      <td>55.27</td>\n      <td>10</td>\n      <td>720</td>\n      <td>4</td>\n      <td>0.65</td>\n      <td>0.01</td>\n      <td>\u22120.23</td>\n      <td>LS1-specific</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>15</td>\n      <td>31.92\u201344.43</td>\n      <td>41.54</td>\n      <td>10</td>\n      <td>680</td>\n      <td>3</td>\n      <td>\u22120.23</td>\n      <td>0.66</td>\n      <td>0.02</td>\n      <td>LS2-specific</td>\n      <td>Rspo2*</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>6</td>\n      <td>118.65\u2013125.25</td>\n      <td>120.30</td>\n      <td>130</td>\n      <td>1360</td>\n      <td>12</td>\n      <td>\u22120.03</td>\n      <td>0.79</td>\n      <td>\u22120.15</td>\n      <td>LS2-specific</td>\n      <td>Wnt5b*</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>11</td>\n      <td>111.10\u2013115.06</td>\n      <td>113.42</td>\n      <td>10</td>\n      <td>2120</td>\n      <td>2</td>\n      <td>\u22120.14</td>\n      <td>0.66</td>\n      <td>\u22120.15</td>\n      <td>LS2-specific</td>\n      <td>Sox9*</td>\n    </tr>\n  </tbody>\n</table>\n\n_Rk,\u00a0Rank.Chr,\u00a0Chromosome.Core,\u00a0Span of 10 kbp windows above HINF, max LD\u00a0p\u22640.05 significance threshold.TAD,\u00a0Merged span of topologically associating domains (TAD) overlapping the core span. TADs mark segments along a chromosome that share a common regulatory mechanism. Data from Dixon et al. (2012).Candidate genes,\u00a0Genes within the TAD span showing \u2018short tibia\u2019, \u2018short limbs\u2019, \u2018abnormal osteoblast morphology\u2019 or \u2018abnormal cartilage morphology\u2019 knockout phenotypes are listed, with * marking those with \u2018short tibia\u2019._\n\nTaken together, two major observations stand out from our genomic survey. One, a polygenic, infinitesimal selection model with strong LD among marker SNPs performed better than moderate LD or no LD (Figure 1\u2014figure supplement 2E); and two, we nevertheless find more discrete loci in LS1 and LS2 than in Ctrl, beyond the significance threshold set by the infinitesimal model (Figure 2; Figure 2\u2014figure supplement 2). Thus, we conclude that although the genetic basis of the selection response in the Longshanks experiment may be largely polygenic, evidence strongly suggests discrete loci with major effect, even when each line is considered separately.\n\nWe next tested the repeatability of the selection response at the gene/locus level using the two LS replicates. If the founding populations shared the same selectively favored variants, we may observe parallelism or co-incident selective sweeps, as long as selection could overcome random drift. Indeed, the \u2206z2 profiles of LS1 and LS2 were more similar to each other than to Ctrl (Figure 2 and 3A; Figure 3\u2014figure supplement 1; Pearson\u2019s correlation in \u2206z2 from 10 kbp windows: LS1\u2013LS2: 0.21 vs. LS1\u2013Ctrl: 0.06 and LS2\u2013Ctrl: 0.05). Whereas previous genomic studies with multiple natural or artificial selection replicates focused mainly on detecting parallel loci (Burke et al., 2010; Jones et al., 2012; Chan et al., 2012; Kelly and Hughes, 2018), here we have the possibility to quantify parallelism and determine the selection value of a given locus. Six out of eight significant loci at the HINF, max LD threshold were line-specific, even though all eight selected alleles were present in the F0 generation in both lines. This prevalence of line-specific loci was consistent under different significance thresholds. However, the two remaining loci that ranked first and second by selection coefficient were parallel, both with s\u00a0>\u00a00.3 (Figure 3B; note that as outliers, the selection coefficient may be substantially overestimated, but their rank order should remain the same), supporting the idea that the probability of parallelism can be high among those loci with the greatest selection advantage (Orr, 2005).\n\nFinding just two parallel loci out of 8 discrete loci may appear to be low, given the genetic similarity in the founding generation and the identical selection applied to both Longshanks replicates. However, one should bear in mind the very many genetic paths to increasing tibia length under an infinitesimal model, and that the effect of drift is expected to be very strong in these small populations. In larger populations, the shift in the balance from drift to selection should result in selection being able to favor increasingly subtle variants and thus produce a greater proportion of parallel loci. However, we expect the trend of parallelism being enriched among the top loci to hold.\n\nIn contrast to the subtle differences within each line in changes in global diversity over 17 generations (Figure 2 and Figure 2\u2014figure supplement 2), we found the signature of parallelism to be significantly enriched in the comparison between the selected replicates (\u03c72 test, LS1\u2013LS2: p\u22641\u00a0\u00d7\u00a010\u221210), as opposed to comparisons between each selected line and Ctrl (LS1\u2013Ctrl: p>0.01 and LS2\u2013Ctrl: p>0.2, both non-significant after correcting for multiple testing), or between simulated replicates (Figure 3\u2014figure supplement 1; see Appendix for details). Because the parallel selected loci between LS1 and LS2 have the highest selection coefficients and parallelism is not generally expected in our populations, these loci provide the strongest evidence for the role of discrete major loci. As such, the top-ranked parallel locus is the prime candidate for molecular dissection (see Figure 4\u2014figure supplement 1 and Appendix \u2018Molecular dissection of Gli3\u2019 for an additional a priori candidate locus with known limb function).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig3-v2.jpg)\n\n**Figure 3.:** (A) Allele frequencies showed greater shifts in LS2 (red) than in Ctrl (gray; left panel; diamonds: peak windows; dots: other 10 kbp windows; see Figure 3\u2014figure supplement 1 for Ctrl vs. LS1 and Appendix for details). Changes in the two lines were not correlated with each other. In contrast, there were many more parallel changes in a comparison between LS1 (blue) vs. LS2 (red; middle panel; adjacent windows appear as clusters due to hitchhiking). The overall distribution closely matches simulated results under the infinitesimal model with maximal linkage disequilibrium (HINF, max LD; right heatmap summarizes the percentage seen in 100 simulated replicates), with most of the windows showing little to no shift (red hues near 0; see also Figure 3\u2014figure supplement 1 for an example replicate). Tick marks along the axes show genome-wide maximum \u2206z2 shifts in each of 100 replicate simulations in LS1 (x-axis, blue) and LS2 (y-axis, red), from which we derived line-specific thresholds at the p\u22640.05 significance level. While the frequency shifts from simulations matched the bulk of the observed data well, no simulation recovered the strong parallel shifts observed between LS1 and LS2 (compare middle to right panel, points along the diagonal). (B) Genome-wide ranking based on estimated selection coefficients s among the candidate discrete loci at p\u22640.05 under HINF, max LD. While six out of eight total loci showed significant shifts in only LS1 or LS2, the two loci with the highest selection coefficients were likely selected in parallel in both LS1 and LS2 (also see middle panel in A).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Shown are changes in \u2206z2 in individual 10 kbp windows (all windows: circles; peak windows: diamonds). Generally there were no clear differences in \u2206z2 along the axes except a slight skew toward higher values in LS2. When taken as a joint LS1\u2013LS2 comparison, however, we observed that many windows show shifts in both LS1 and LS2 (left panel; in purple). In contrast, very few windows show parallelism in Ctrl\u2013LS2 and Ctrl\u2013LS1 comparisons (middle two panels). The right panel shows a single selected simulated replicate (selection pressure\u00a0$\\frac{V_{s}}{V_{e}}=0.58$; maximum LD) found to have among the greatest extent of parallel \u2206z2 among the replicates. The excess in parallel loci in observed results is clear both among the significant loci at p\u2264 0.05 under HINF, max LD and highly significant at the more relaxed HINF, no LD threshold.\n\n### Molecular dissection of the Nkx3-2 locus highlights cis-acting changes\n\nBetween the two major parallel loci, we chose the locus on chromosome 5 (Chr5) at 41\u201342 Mbp for functional validation because it showed the strongest estimated selection coefficient, its signature of selection was clear, and crucially for functional characterization, it contains only three genes, including Nkx3-2 (also known as Bapx1), a known regulator of bone maturation (Figure 2 and 4A) (Provot et al., 2006). At this locus, the pattern of variation resembles a selective sweep spanning 1 Mbp (Figure 4A). Comparison between F0 and F17 individuals revealed no recombinant in this entire region (Figure 5\u2014figure supplement 1A, top panel), precluding fine-mapping using recombinants. We then analyzed the genes in this region to identify the likely target(s) of selection. First, we determined that no coding changes existed for either Rab28 or Nkx3-2, the two genes located within the topologically associating domain (TAD, which mark chromosome segments with shared gene regulatory logic) (Dixon et al., 2012). We then performed in situ hybridization and detected robust expression of Nkx3-2 and Rab28 in the developing fore- and hind\u00a0limb buds of Ctrl, LS1 and LS2 E12.5, in a domain broadly overlapping the presumptive zeugopod, the region including the tibia (Figure 4\u2014figure supplement 2B). A third gene, Bod1l, straddled the TAD boundary with its promoter located in the neighboring TAD, making its regulation by sequences in the selected locus unlikely. Consistent with this, Bod1l showed only weak or undetectable expression in the developing limb bud (Figure 4\u2014figure supplement 2A). We next combined ENCODE chromatin profiles and our own ATAC-Seq data to identify limb enhancers in the focal TAD. Here we found three novel enhancer candidates (N1, N2 and N3) carrying three, one and three SNPs respectively, all of which showed significant allele frequency shifts in LS1 and LS2 (Figure 4B and C; Figure 5\u2014figure supplement 1A). Chromosome conformation capture assays showed that the N1\u00a0and\u00a0N3 sequences formed long-range looping contacts with the Nkx3-2 promoter\u2014a hallmark of enhancers\u2014despite as much as 600 kbp of intervening sequence (Figure 4B). We next used transgenic reporter assays to determine whether these sequences could drive expression in the limbs. Here, we were not only interested in whether the sequence encoded enhancer activity, but specifically whether the SNPs would affect the activity (Figure 4C and D). An examination of the predicted transcription factor binding sites showed that both the N1 and N3 enhancers contain multiple SNPs with consistent directional impact on the putative enhancer activity (Figure 4C). In contrast, the N2 enhancer contains only a single SNP and is predicted to have inconsistent effect on its activity. We therefore excluded the N2 enhancer from further testing. We found that the F0 alleles of the N1 and N3 enhancers (three SNPs each in about one kbp) drove robust and consistent lacZ expression in the developing limb buds (N1 and N3) as well as in expanded trunk domains (N3) at E12.5 (Figure 4E). In contrast, transgenic reporters carrying the selected F17 alleles of the N1 and N3 enhancers drove consistently weak, nearly undetectable lacZ expression (Figure 4E). Thus, switching from the F0 to the F17 enhancer alleles led to a nearly complete loss in activity (\u2018loss-of-function\u2019) at developmental stage E12.5. This is consistent with the role of Nkx3-2 as a repressor in long bone maturation (Provot et al., 2006). It should be noted that even though our selective regime favored an increase in the target phenotype (tibia length), at the molecular level we expect advantageous loss- and gain-of-function variants to be equally likely favored by selection. In fact, in an additional functional validation example at the Gli3 locus, we found a gain-of-function enhancer variant that may have been favored at that locus (see Figure 4\u2014figure supplement 1 and Appendix \u2018Molecular dissection of Gli3\u2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig4-v2.jpg)\n\n**Figure 4.:** (A) \u2206z2 in this region of chromosome five showed strong parallel differentiation spanning 1 Mbp in both Longshanks but not in the Control line. This 1 Mbp region contains three genes: Nkx3-2, Rab28 and Bod1l (whose promoter lies outside the TAD boundary, shown as gray boxes). Although an originally rare allele in all lines, this region swept almost to fixation by generation 17 in LS2 (Figure 5\u2014figure supplement 1A). (B) Chromatin profiles [ATAC-Seq, red, (Buenrostro et al., 2013); ENCODE histone modifications, purple] from E14.5 developing limb buds revealed five putative limb enhancers (gray and red shading) in the TAD, three of which contained SNPs showing significant frequency shifts. Chromosome conformation capture assays (4C-Seq) from E14.5 limb buds from the N1, N2 and N3 enhancer viewpoints (bi-directional arrows) showed significant long-range looping between the enhancers and sequences around the Nkx3-2 promoter (heat-map from gray to red showing increasing contacts; Promoters are shown with black arrows and blue vertical shading). (C) Selected alleles at 7 SNPs found within the N1, N2, and N3 enhancers increased\u00a0~0.75 in frequency in both LS1 and LS2. Selected alleles at three of these sites are predicted to lead to loss (red inhibition circles) of transcription factor binding sites in the Nkx3-2 pathway (including a SNP in N3 causing loss of two adjoining Nkx3-2 binding sites) and thus reduce enhancer activity in N1 and N3. (D, E) Transient transgenic reporter assays of the N1 and N3 enhancers showed that the F0 alleles drove robust and consistent expression at centers of future cartilage condensation (N1) and broader domains of Nkx3-2 expression (N3) in E12.5 fore- and hind limb buds (FL, HL; ti: tibia). Fractions indicate the\u00a0number of embryos showing similar lacZ staining out of all transgenic embryos. Substituting the F17 enhancer allele (i.e.,\u00a0replacing three positions each in N1 and N3) led to little observable limb bud expression in both the N1/F17 and N3/F17 embryos, suggesting that selection response for longer tibia involved de-repression of bone maturation through a loss-of-function regulatory allele of Nkx3-2 at this locus. Scale bar: 1 mm for both magnifications.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) LS1 showed elevated \u2206z2 in the intergenic region containing Gli3. (B) Putative limb enhancers (gray bars) were identified through peaks from ATAC-Seq (top) and histone modifications (bottom tracks, data from ENCODE project). Four of the enhancers contain mutations (in parentheses) with significant allele frequency shifts between F0 and F17 in LS1 (red shading). One of the enhancers located close to the peak \u2206z2 signal (G2, arrowhead) containing 10 bp differences was chosen for transgenic reporter assay. (C) Analysis of individual mutations showed an average increase of 0.33 in allele frequency, with six mutated positions affecting predicted binding of transcription factors in the Gli3 pathway (including three additional copies of Gli3 binding sites), all of which are predicted to boost the G2 enhancer activity. (D) The F17 G2 enhancer variants together drove robust and consistent lacZ reporter gene expression at E12.5, recapitulating Gli3 expression in the developing fore- and hind\u00a0limb buds (right; see also Figure 4\u2014figure supplement 2). Substitution of 10 positions (F0 haplotype) led to little observable expression in the limb buds (left). These G2 enhancer gain-of-function mutations (contrasting the major allele between F0 and F17) may confer an advantage under selection for increased tibia length. Scale bars: 1 mm for both magnifications.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Gli3 expression was determined using in situ hybridization. Gli3 was robustly expressed during limb development in both developing fore- and hindlimb buds, especially in the autopod (hand/foot plate). Lower panels show expression of Nkx3-2 and its neighboring genes Rab28 and Bod1l. The stronger expression of Nkx3-2 in the developing limb buds as well as the known role of Nkx3-2 in bone maturation (Sivakamasundari et al., 2012) strongly argues for Nkx3-2 being the gene underlying the selection response at the chromosome\u00a05 locus. Scale bars: 1 mm for whole-mounts; 0.5 mm for limb buds. FL, forelimb; HL, hind limb; unless otherwise indicated by \u2018L\u2019, all images were taken from the right side. (B) We collected E12.5 embryos from each line and performed in situ hybridization to determine the sites and level of expression of Nkx3-2 and Rab28 in the Longshanks (right columns) and Control (left column) lines. Both genes are expressed in similar sites overall and specifically in the developing fore- and hind\u00a0limb buds in the region of the presumptive zeugopods. These data indicate common sites of expression and rule out qualitative presence/absence differences in expression. Note that although the N1 enhancer pattern appear to differ from endogenous Nkx3-2 expression (Figure 4E, details in limb buds), it matches the pattern of early Nkx3-2 expression, detectable through the use of lineage-tracing via the combined effect of a Nkx3-2 Cre-driver line and the lacZ reporter line Rosa26R (see Figure\u00a02B\u00a0in Sivakamasundari et al., 2012).\n\nAt the Nkx3-2 locus, we hypothesize that the F17 allele causes de-repression of bone and/or cartilage\u00a0formation by reducing enhancer activity and Nkx3-2 expression. Crucially, the F0 N1 enhancer showed activity that presages future long bone cartilage condensation in the limb (Figure 4E). That is, the observed expression pattern recalls previous results that suggest that undetected early expression of Nkx3-2 may mark the boundaries and size of limb bone precursors, including the tibia (Sivakamasundari et al., 2012). Conversely, over-expression of Nkx3-2 has been shown to cause shortened tibia (even loss) in mice (Bren-Mattison et al., 2011; Tribioli and Lufkin, 2006). In humans, homozygous frameshift mutations in NKX3-2 cause the rare disorder spondylo-megaepiphyseal-metaphyseal dysplasia (SMMD; OMIM: 613330), which is characterized by short-trunk, long-limbed dwarfism and bow-leggedness (Hellemans et al., 2009). The affected bones in SMMD patients broadly correspond to the expression domains of the two novel N1 (limbs) and N3 (limbs and trunk) enhancers. Instead of wholesale loss of Nkx3-2 expression, which would have been lethal in mice (Akazawa et al., 2000) or likely cause major defects similar to SMMD patients (Hellemans et al., 2009), our in situ hybridization data did not reveal qualitative differences in Nkx3-2 expression domains between Ctrl or LS embryos (Figure 4\u2014figure supplement 2B). Taken together, our results recapitulate the key features of a cis-acting mode of adaptation: Nkx3-2 is a broadly expressed pleiotropic transcription factor that\u00a0is\u00a0lethal when knocked out (Akazawa et al., 2000). We found no amino acid changes between the F0 and F17 alleles that could impact protein function. Rather, selection favored changes in tissue-specific expression by modular enhancers. By combining population genetics, functional genomics and developmental genetic techniques, we were able to dissect a megabase-long locus and present data supporting the identification of up to six candidate quantitative trait nucleotides (QTNs). In mice, this represents a rare example of genetic dissection of a trait to the base-pair level.\n\n### Linking molecular mechanisms to evolutionary consequence\n\nWe next aimed to determine the evolutionary relevance of the Nkx3-2 enhancer variants at the molecular and the population levels. At the strongly expressed N3/F0 \u2018trunk and limb\u2019 enhancer, we note that the SNPs in the F17 selected allele lead to disrupted Nkx3-1 and Nkx3-2 binding sites (Figure 4C and 5A; UNIPROBE database [Berger et al., 2008]). This suggests that the selected SNPs may disrupt an auto-feedback loop to decrease Nkx3-2 activity in the limb bud and trunk domains (Figure 5A). Using a GFP transgenic reporter assay in stickleback fish embryos, we found that the mouse N1/F0 enhancer allele was capable of driving expression in the distal cells but not in the fin rays of the developing fins (Figure 5A). This pattern recapitulates fin expression of nkx3.2 in fish, which gives rise to endochondral radials (homologous to ulna/tibia in mice) (Crotwell and Mabee, 2007). Our results suggest that strong selection may have favored the weaker N1/F17 and N3/F17 enhancer alleles in the context of the Longshanks selection regime despite the deep functional conservation of the F0 variants.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig5-v2.jpg)\n\n**Figure 5.:** (A) At the Nkx3-2 locus, we identified two long-range enhancers, N1 and N3 (circles), located 600 and 230 kbp away, respectively. During development, they drive partially overlapping expression domains in limbs (N1 and N3) and trunk (N3), which are body regions that may correlate positively (tibia length) and possibly negatively (trunk with body mass) with the Longshanks selection regime. For both enhancers, the selected F17 alleles carry loss-of-function variants (gray crosses). Two out of three SNPs in the N3 F17 enhancer are predicted to disrupt an auto-feedback loop, likely reducing Nkx3-2 expression in the trunk and limb regions. Conversely, the enhancer function of the strong N1 F0 allele is evolutionarily conserved in fishes, demonstrated by its ability to drive consistent GFP expression (green) in the pectoral fins (pf, outlined) and branchial arches (white arrowhead, left) in transgenic stickleback embryos at 11 days post-fertilization. The N1 enhancer can recapitulate nkx3.2 expression in distal cells specifically in the endochondral radial domain in developing fins (black arrowheads, right). Scale bar: 250 \u00b5m for both magnifications. (B) Allele frequency of the selected allele (minor allele\u00a0at\u00a0F0, q) at N3 over 20 generations (blue: LS1; red: LS2; gray broken line: Ctrl; results from N1 were nearly identical due to tight linkage). Observed frequencies from genotyped generations in the Ctrl line are marked with filled circles. Dashed lines indicate missing Ctrl generations. Open circles at generations 0 and 17 indicate allele frequencies from whole genome sequencing. The allele frequency fluctuated in Ctrl due to random drift but followed a generally linear increase in the selected lines from around 0.17 to 0.85 (LS1) and 0.98 (LS2) by generation 17. Shaded contours mark expected allelic trajectories under varying selection coefficients starting from 0.17 (red horizontal line; the average starting allele frequency between LS1 and LS2 founders). The gray shaded region marks the 95% confidence interval under random drift.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42014/elife-42014-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Raw genotypes from the F0 and F17 generations from LS1 (left) and LS2 (right) are shown, clearly indicating the area under the selective sweep. The genotype classes are shown as C57BL/6J homozygous (BL6, white), heterozygous (black) and alternate homozygous (dark gray). Lower Panel: Tracking MAF from both lines show that the originally rare F0 allele (thin line) rose to high frequency at F17 (thick lines). The plateau profile from both lines suggested that the same originally rare allele was segregating at in both founder populations and became very common by F17 in both lines (see raw genotypes). Note that in LS2 F17 the region is nearly\u00a0fixed for the BL6 allele except in\u00a0the bottom-most individual. (B) The log likelihood of the selection coefficient, s, for LS1 and LS2 (blue and red, respectively), based on transition probabilities for a Wright\u2013Fisher population with the appropriate Ne. The horizontal red line shows a loss of log likelihood of 2 units, which sets conventional 2-unit support limits. (C) Simulations of an additive allele with effect A on the trait; 40 replicates for each value of A. Left: The selection coefficient, estimated from the change in mean allele frequency, as a function of\u00a0$A/\\sqrt{V_{e}}$; the line shows the least-squares fit $s=0.41A/\\sqrt{V_{e}}$. Middle: dots show the mean allele frequency at generation 17; the line shows the prediction from the single-locus Wright\u2013Fisher model, given\u00a0$s=0.41A/\\sqrt{V_{e}}$. Right: the same, but for the standard deviation of allele frequency.\n\nUsing theory and simulations, we went beyond qualitative molecular dissection to quantitatively estimate the selection coefficient at the Nkx3-2 locus and its contribution to the total selection response in the Longshanks mice. We retraced the selective sweep of the Nkx3-2 N1 and N3 alleles through targeted genotyping in 1569 mice across all 20 generations. The selected allele steadily increased from around 0.17 to 0.85 in LS1 and 0.98 in LS2 but fluctuated around 0.25 in Ctrl (Figure 5B). We estimated that such a change of around 0.7 in allele frequency would correspond to a selection coefficient s of\u00a0~0.24\u00a0\u00b1\u00a00.12 at this locus (Figure 5\u2014figure supplement 1B; see Appendix section on \u2018Estimating selection coefficient of the top-ranking locus, Nkx3-2, from changes in allele frequency\u2019). By extending our simulation framework to allow for a major locus against an infinitesimal background, we find that the Nkx3-2 locus would contribute 9.4% of the total selection response (limits 3.6\u201315.5%; see Appendix section \u2018Estimating selection coefficient\u2019 for details) in order to produce a shift of 0.7 in allele frequency over 17 generations. To avoid inflation stemming from estimating from outliers, we also independently estimated the contribution of the Nkx3-2 locus using a linear mixed animal model based on the full genotyped series mentioned above (see Appendix section \u2018Estimating selection coefficient, animal model\u2019 for details). Using this alternative approach, we estimated that each selected allele increases tibia length by 0.36% (N\u00a0=\u00a01569, 95% conf. int.:\u00a00.07\u20130.64%, p=0.0171). Multiplying the effect with the increase in the allele frequency suggests that the Nkx3-2 locus alone would account for approximately 4% of the overall 12.9% increase in tibia length. This lower estimate of around 4% is nonetheless within the bounds of the estimate from simulations. Together, both approaches indicate that the Nkx3-2 locus contributes substantially to the selection response.\n\n## Discussion\n\nA defining task of our time is to understand the factors that determine and constrain how small populations respond to sudden environmental changes. Here, we analyze the replicated and controlled Longshanks experiment to characterize the genomic changes that occur as small experimental populations respond to selection.\n\nAn important conclusion from the Longshanks experiment is that selection response can be steady and robust even in extremely bottlenecked populations. That is, we found that tibia length increased readily and repeatedly in response to selection even with as few as 14\u201316 breeding pairs per generation. The sustained response was possible because the lines were founded with enough standing variation, and generation 17 was still only a fraction of the way to the expected limit for the selection response at\u00a0~2Ne generations (Robertson, 1960), estimated here to be around 90 (see legend for Figure 1\u2014figure supplement 2B; Appendix on \u2018Estimating the selection coefficient\u2019). Although other selective breeding studies using a similar base population of mice encountered selection limits at around generation 20\u201325 (possibly due to countervailing selection rather than loss of genetic variance) for high voluntary wheel running behavior (Careau et al., 2013) and for nest-building behavior (Bult and Lynch, 2000), here all evidence suggests that the Longshanks mice should continue to show increases in tibia length for many more generations.\n\nThe estimated Ne of 46 in the Longshanks experiment, while small, is comparable to those in natural populations like the Soay sheep (McRae et al., 2005), Darwin\u2019s finches (Grant and Grant, 1992) or Tasmanian devils (Epstein et al., 2016) (this last study documents a rapid and parallel evolutionary response to transmissible tumors). These populations span a wide range of time in sustained bottlenecking, from the most recent in Tasmanian devils, to likely many millions of years in Darwin\u2019s finches. Accordingly, we also expect very different dynamics during short- vs. long-term selection response: for a short bout of selection, such as the 20 generations analyzed in this study, selection response depends overwhelmingly on standing genetic variation, with little to no contribution from de novo mutations (Hill, 1982; Weber and Diggins, 1990). Over the long term, however, de novo mutations would contribute increasingly to selection response. In the Longshanks experiment, we observe a robust early response to selection (Figure 1B and Figure 1\u2014figure supplement 1), and a gradual decrease in sequence diversity, consistent with the effect of drift (Figure 1\u2014figure supplement 2B and Figure 2\u2014figure supplement 1A, Supplementary file 2). There has long been broad empirical support for adaptation from standing genetic variation in nature (Jones et al., 2012; Epstein et al., 2016; Hancock et al., 2011) and breeding (Sheng et al., 2015). At least in the short-run, our result demonstrating robust selection response in the Longshanks experiment provides grounds for some optimism regarding the ability of populations to respond rapidly to changes in their environment.\n\nBy combining pedigree records with sequencing of founder individuals, our data had sufficient detail to allow precise modeling of trait response, with predicted shifts in allele frequency distribution that closely matched our results (e.g. Figure 1\u2014figure supplement 2D). Furthermore, we functionally validated loci that showed allele frequency shifts outside the model\u2019s predictions and found key enhancers of major effect. Connecting trait changes to allele frequency changes at specific loci has been a longstanding objective in selection experiments, with a number of notable early attempts (e.g.,\u00a0Keightley et al., 1996). To date, we know of only a few studies that attempt to explicitly link traits with changes in allele frequencies (Kessner and Novembre, 2015; Rice and Townsend, 2012; Chen et al., 2019; Nuzhdin et al., 1999) and none have systematically tested the underlying architecture against an infinitesimal background. Here, our results imply a mixed genetic architecture with a few discrete loci of large effect amid an infinitesimal background. It remains to be seen whether other evolve-and-resequence (E&R) studies, with different selection pressures and population parameters, may reveal similar results.\n\nTo put our finding of a mixed genetic architecture into perspective, it is worth noting that the infinitesimal model is still the most predictive model by far in practical quantitative genetics, for diverse domesticated species from cattle to crops, despite its intrinsically unrealistic assumptions (Hill et al., 2008; Lynch and Walsh, 1998; Hill and Zhang, 2012). In general, current genomic data for many traits is consistent with a very large number of loci, each with a small effect. From a practical point of view, however, the use of an infinitesimal model does not preclude the presence or indeed the importance of a\u00a0few major effect loci. Rather, it simply assumes that they are rare enough to allow reasonable model fit (Walsh and Lynch, 2018, page 878). Here, we note that it is actually not clear how one might parameterize a generally applicable predictive oligogenic model with more than a single major effect locus. In this study, while we consider the most likely genetic architecture underlying selection response for\u00a0tibia length\u00a0to be a small number of major effect loci together with a polygenic background, we cannot reject other alternative models that could also account for the observed response, such as an effectively infinitesimal model with linkage, as well as models with a few major trait loci.\n\nAmong other classical examples of complex traits, such as height or body weight, that may have been subjected to selection, we observe a range of genetic architectures in ways often tightly connected to their population size and/or selection history. Height in humans is often cited as the classical complex trait under possible selection of unknown (and much debated) intensity (see Turchin et al., 2012; Berg and Coop, 2014; Barton et al., 2019). It shows high heritability and a highly dispersed genetic architecture (with the top-ranked locus accounting for only 0.8% of the variation explained in cosmopolitan European populations) (Weedon et al., 2007; Wood et al., 2014). In contrast, as few as 4 to 6 loci account for 83% and 50% of the variation in height in horses and dogs, respectively (Makvandi-Nejad et al., 2012; Rimbault et al., 2013). In both horses and dogs, selection has been strong and sustained, and breed-specific populations tend to be small. Interestingly, and in line with our experiment, the major allele at the IGF1 locus stems from a standing genetic variant, despite many factors that may theoretically favor large-effect de novo mutations (Sutter et al., 2007). In chickens, modern breeding practice and selection from large populations yielded a highly polygenic genetic architecture for body weight, with some of the best empirical evidence for epistasis (Carlborg et al., 2006; Wahlberg et al., 2009; Rubin et al., 2010; Pettersson et al., 2013). Similarly, results from many selection experiments in Drosophila suggest that the genetic architecture underlying selection response may involve many genes (Jha et al., 2015; Reeves and Tautz, 2017; Orozco-terWengel et al., 2012; Turner et al., 2011). By contrast, the extreme tail of the effect size distribution (as inferred from \u2206z2) from the Longshanks experiment appears to account for a substantial part of the selection response, presumably due to the combined effects of relatively low diversity in commercial mouse stocks and the small founding populations. But unlike these previous QTL studies or selection experiments, in which either the genetic architecture of a trait or the selection value were estimated separately, sometimes from only few parental individuals or lines, E&R studies sample a much broader pool of alleles and continually compete them against each other. Thus, our approach allowed simultaneous inference of genetic architecture and distribution of effect sizes, is more likely to be representative of the population at large, and is more akin to genome-wide association studies (GWAS), except that here we can also directly connect a trait to its selective value and capture the trajectory of any given allele.\n\nParallel evolution is often seen as a hallmark for detecting selection (Chan et al., 2012; Schluter et al., 2004; Chan et al., 2010; Martin and Orgogozo, 2013). We investigated the factors that contribute to parallelism in allele frequency shifts over 17 generations by contrasting the two Longshanks replicates against the Control line. However, we observed little parallelism between selected lines and Ctrl, or between simulated replicates under selection, even though the simulated haplotypes were sampled directly from actual founders. This underscores that parallelism depends on both shared selection pressure (absent in Ctrl) and the availability of large-effect loci that confer a substantial selection advantage (absent under the infinitesimal model; Figure 3; Figure 3\u2014figure supplement 1). With increasing population size, selection would be better able to detect variants with more subtle effects. This would in turn lower the threshold beyond which the selective advantage of an allele would become deterministic, that\u00a0is, exhibit parallelism.\n\nThrough in-depth dissection of the Nkx3-2 locus, our data show in fine detail how the selective value of standing variants depends strongly on the selection regime: the originally common F0 variant of the N1 enhancer shows deep functional conservation and can evidently recapitulate fin nkx3.2 expression in fishes (Figure 5A). Yet, in the Longshanks experiment selection strongly favored the weaker allele (Figure 5B). In fact, our molecular dissection of two loci show that both gain-of-function (Gli3) and loss-of-function (Nkx3-2) variants could be favored by selection (Figure 4E and 5A; Figure 4\u2014figure supplement 1D). Through synthesis of multiple lines of evidence, our work uncovered the key role of Nkx3-2, which was not an obvious candidate gene like Gli3 due to the lack of abnormal limb phenotype in Nkx3-2 knockout mice. To our surprise, the same loss of NKX3-2 function in human SMMD patients manifests in opposite ways in different bone types as short trunk and long limbs (Hellemans et al., 2009). This matches the expression domains of our N1 (limb) and N3 (limb and trunk) enhancers (Figure 5A). Evidently, in the absence of lethal coding mutations, the F17 haplotype was doubly beneficial at both enhancers for the limb and potentially also trunk target tissues under the novel selection regime in the Longshanks selection experiment. We estimate that these enhancer variants, along with any other tightly linked beneficial SNPs, segregate as a single locus, which in turn contributes\u00a0~10% of the overall selection response.\n\nDespite our efforts to uncover the mechanism underlying the selective advantage of the Nkx3-2 locus, much remains unknown. For example, it remains unclear how such a major allele could segregate in the general mouse stock (and as the reference C57BL/6J allele, no less). It could be that this allele has the same effect in the general mouse population but is conditionally neutral under non-selective breeding and simply escaped notice. However, our preliminary exploration in a panel of C57BL/6-by-DBA/2 (\u2018BXD\u2019) mice suggested otherwise: mapping of tibia length or mineral density did not reveal this locus as a major QTL determining tibia length (unpublished data kindly provided by Weikuan Gu), suggesting that this allele\u2019s effect on tibia length may depend on the genetic background. Alternatively, the broader C57BL/6 allele could be linked to a compensatory mutation that became uncoupled among the founders of the Longshanks lines. Finally, although we do observe the specific N1 and N3 SNP positions as variable across the rodent and indeed the broader mammalian lineages, further work is needed to determine their effect, if any, on limb development.\n\n### Conclusion\n\nUsing the Longshanks selection experiment and synthesizing theory, empirical data and molecular genetics, we show that it is possible to identify some of the individual SNPs that have contributed to the response to selection on morphology. In particular, discrete, large-effect loci are revealed by their parallel response. Further work should focus on dissecting the mechanisms behind the dynamics of selective sweeps and/or polygenic adaptation by re-sequencing the entire selection pedigree, testing how the selection response depends on the genetic architecture, and the extent to which linkage places a fundamental limit on our inference of selection. Improved understanding in these areas may have broad implications for conservation, rapid adaptation to climate change and quantitative genetics in medicine, agriculture and in nature.\n\n## Materials and methods\n\n### Animal care and use\n\nAll experimental procedures described in this study have been approved by the applicable University institutional ethics committee for animal welfare at the University of Calgary (HSACC Protocols M08146 and AC13-0077); or local competent authority: Landesdirektion Sachsen, Germany, permit number 24\u20139168.11-9/2012-5.\n\n### Reference genome assembly\n\nAll co-ordinates in the mouse genome refer to Mus musculus reference mm10, which is derived from GRCm38.\n\n### Code and data availability\n\nSequence data have been deposited in the SRA database under accession number SRP165718 and GEO under GSE121564, GSE121565 and GSE121566. Non-sequence data have been deposited at Dryad, doi:10.5061/dryad.0q2h6tk. Analytical code and additional notes have been deposited in the following repository: https://github.com/evolgenomics/Longshanks (Evolgenomics, 2019;\u00a0copy archived at https://github.com/elifesciences-publications/Longshanks).\u00a0Additional raw data and code are hosted via our institute's FTP servers at http://ftp.tuebingen.mpg.de/fml/ag-chan/Longshanks/.\n\n### Pedigree data\n\nTibia length and body weight phenotypes were measured as previously described (Marchini et al., 2014). A total of 1332 Control, 3054 LS1, and 3101 LS2 individuals were recorded. Five outlier individuals with a skeletal dysplasia of unknown etiology were removed from LS2 and excluded from further analysis. Missing data in LS2 were filled in with random individuals that best matched the pedigree. Trait data were analyzed to determine response to selection based on the measured traits and their rank orders based on the selection index.\n\n### Simulations\n\nSimulations were based on the actual pedigree and selection scheme, following one chromosome at a time. Each chromosome was represented by a set of junctions, which recorded the boundaries between genomes originating from different founder genomes; at the end, the SNP genotype was reconstructed by seeding each block of genome with the appropriate ancestral haplotype. This procedure is much more efficient than following each of the very large number of SNP markers. Crossovers were uniformly distributed, at a rate equal to the map length (Cox et al., 2009). Trait value was determined by a component due to an infinitesimal background (Vg); a component determined by the sum of effects of 104 evenly spaced discrete loci (Vs); and a Gaussian non-genetic component (Ve). The two genetic components had variance proportional to the corresponding map length, and the heritability was estimated from the observed trait values (see Appendix section \u2018Major considerations\u2019). In each generation, the actual number of male and female offspring were generated from each breeding pair, and the male and female with the largest trait value were chosen to breed.\n\nSNP genotypes were assigned to the founder genomes with their observed frequencies. However, to reproduce the correct variability requires that we assign founder haplotypes. This is not straightforward, because low-coverage individual genotypes cannot be phased reliably, and heterozygotes are frequently mis-called as homozygotes. We compared three procedures, which were applied within intervals that share the same ancestry: assigning haplotypes in linkage equilibrium (LE, or \u2018no LD\u2019); assigning the two alleles at heterozygous sites in each individual to its two haplotypes at random, which minimizes linkage disequilibrium but is consistent with observed diploid genotypes (\u2018min LD\u2019); and assigning alleles at heterozygous sites in each individual to the \u2018reference\u2019 and \u2018alternate\u2019 haplotype consistently within an interval, which maximizes linkage disequilibrium (\u2018max LD\u2019) (Figure 1\u2014figure supplement 2C). For details, see legend in Figure 1\u2014figure supplement 2.\n\n### Significance thresholds\n\nTo obtain significance thresholds, we summarized the genome-wide maximum \u2206z2 shift for each replicate of the simulated LS1 and LS2 lines, averaged within 10 kb windows, and grouped by the selection intensity and extent of linkage disequilibrium (LD). From this distribution of genome-wide maximum \u2206z2 we obtained the critical value for the corresponding significance threshold (typically the 95th quantile or p=0.05) under each selection and LD model (Figure 3A; Figure 1\u2014figure supplement 2E). This procedure controls for the effect of linkage and hitchhiking, line-specific pedigree structure, and selection strength.\n\n### Sequencing, genotyping and phasing pipeline\n\nSequencing libraries for high-throughput sequencing were generated using TruSeq or Nextera DNA Library Prep Kits (Illumina, Inc, San Diego, USA) according to manufacturer\u2019s recommendations or using equivalent Tn5 transposase expressed in-house as previously described (Picelli et al., 2014). Briefly, genomic DNA was extracted from ear clips by standard Protease K digestion (New England Biolabs GmbH, Frankfurt am Main, Germany) followed by AmpureXP bead (Beckman Coulter GmbH, Krefeld, Germany) purification. Extracted high-molecular weight DNA was sheared with a Covaris S2 (Woburn, MA, USA) or \u2018tagmented\u2019 by commercial or purified Tn5-transposase according to manufacturer\u2019s recommendations. Each sample was individually barcoded (single-indexed as N501 with N7XX variable barcodes; all oligonucleotides used in this study were synthesized by Integrated DNA Technologies, Coralville, Iowa, USA) and pooled for high-throughput sequencing by a HiSeq 3000 (Illumina) at the Genome Core Facility at the MPI T\u00fcbingen Campus. Sequenced data were pre-processed using a pipeline consisting of data clean-up, mapping, base-calling and analysis from software fastQC v0.10.1 (Andrews, 2016); trimmomatic v0.33 (Bolger et al., 2014); bwa v0.7.10-r789 (Li and Durbin, 2010); GATK v3.4\u20130-gf196186 modules BQSR, MarkDuplicates, IndelRealignment (McKenna et al., 2010; DePristo et al., 2011). Genotype calls were performed using the GATK HaplotypeCaller under the GENOTYPE_GIVEN_ALLELES mode using a set of high-quality SNP calls made available by the Wellcome Trust Sanger Centre (Mouse Genomes Project version three dbSNP v137 release [Keane et al., 2011]), after filtering for sites segregating among inbred lines that may have contributed to the original seven female and two male CD-1 founders, namely 129S1/SvImJ, AKR/J, BALB/cJ, BTBR T+Itpr3 tf/J, C3H/HeJ, C57BL/6NJ, CAST/EiJ, DBA/2J, FVB/NJ, KK/HiJ, MOLF/EiJ, NOD/ShiLtJ, NZO/HlLtJ, NZW/LacJ, PWK/PhJ and WSB/EiJ based on (Yalcin et al., 2010). We consider a combined\u00a0~100x coverage sufficient to recover any of the 18 CD-1 founding haplotypes still segregating at a given locus. The raw genotypes were phased with Beagle v4.1 (Browning and Browning, 2016) based on genotype posterior likelihoods using a genetic map interpolated from the mouse reference map (Cox et al., 2009) and imputed from the same putative CD-1 source lines as the reference panel. The site frequency spectra (SFS) were evaluated to ensure genotype quality (Figure 2\u2014figure supplement 1A).\n\n### Population genetics summary statistics\n\nSummary statistics of the F0 and F17 samples were calculated genome-wide (Weir\u2013Cockerham FST, \u03c0, heterozygosity, allele frequencies p and q) in adjacent 10 kbp windows or on a per site basis using VCFtools v0.1.14 (Danecek et al., 2011). The summary statistic \u2206z2 was the squared within-line difference in arcsine square-root transformed MAF q; it ranges from 0 to \u03c02. The resulting data were further processed by custom bash, Perl and R v3.2.0 (R Development Core Team, 2015) scripts.\n\n### Peak loci and filtering for hitchhiking windows\n\nPeak loci were defined by a descending rank ordering of all 10 kbp windows, and from each peak signal the windows were extended by 100 SNPs to each side, until no single SNP rising above a \u2206z2 shift of 0.2 \u03c02 was detected. A total of 810 peaks were found with a \u2206z2 shift\u00a0\u22650.2 for LS1 and LS2. Following the same procedure, we found 766 peaks in Ctrl.\n\n### Candidate genes\n\nTo determine whether genes with related developmental roles were associated with the selected variants, the topologically associating domains (TADs) derived from mouse embryonic stem cells as defined elsewhere (Dixon et al., 2012) were re-mapped onto mm10 co-ordinates. Genes within the TAD overlapping within 500 kbp of the peak window (\u2018core span\u2019) were then cross-referenced against annotated knockout phenotypes (Mouse Genome Informatics, http://www.informatics.jax.org). This broader overlap was chosen to include genes whose regulatory sequences (e.g., enhancers), but not necessarily their gene bodies, fall close to the peak window. We highlight candidate genes showing limb- and bone-related phenotypes, e.g., with altered limb bone lengths or epiphyseal growth plate morphology, as observed in Longshanks mice (Marchini and Rolian, 2018), of the following categories (along with their Mammalian Phenotype Ontology term and the number of genes): \u2018abnormal tibia morphology/MP:0000558\u2019 (212 genes), \u2018short limbs/MP:0000547\u2019 and \u2018short tibia/MP:0002764\u2019 (223 genes), \u2018abnormal cartilage morphology/MP:0000163\u2019 (321 genes), \u2018abnormal osteoblast morphology/MP:0004986\u2019 (122 genes). Note that we excluded compound mutants or those conditional mutant phenotypes involving transgenes. To determine if the overlap with these genes wassignificant, we performed 1000 permutations of the core span using bedtools v2.22.1 shuffle with the -noOverlapping option (Quinlan and Hall, 2010) and excluding ChrY, ChrM and unassembled scaffolds. We then followed the exact procedure as above to determine the number of genes in the overlapping TAD belonging to each category. We reported the quantile rank as the P-value, ignoring ties. To determine other genes in the region, we list all genes falling within the entire hitchhiking window (Supplementary file 3).\n\n### Identification of putative limb enhancers\n\nWe downloaded publicly available chromatin profiles, derived from E14.5 limbs, for the histone H3 lysine-4 (K4) or lysine-27 (K27) mono-/tri-methylation or acetylation marks (H3K4me1, H3K4me3 and H3K27ac) generated by the ENCODE Consortium (Shen et al., 2012). We intersected the peak calls for the enhancer-associated marks H3K4me1 and H3K27ac and filtered out peaks overlapping promoters (H3K4me3 and promoter annotation according to the FANTOM5 Consortium [Forrest et al., 2014]).\n\n### Enrichment analysis\n\nTo calculate enrichment through the whole range of \u2206z2, a similar procedure was taken as in Candidate genes above. For knockout gene functions, genes contained in TADs within 500 kbp of peak windows were included in the analysis. We used the complete database of annotated knockout phenotypes for genes or spontaneous mutations, after removing phenotypes reported under conditional or polygenic mutants. For gene expression data, we retained all genes which have been reported as being expressed in any of the limb structures, by tracing each anatomy ontological term through its parent terms, up to the top-level groupings, e.g., \u2018limb\u2019, in the Mouse Genomic Informatics Gene Expression Database (Finger et al., 2017). For E14.5 enhancers, we used a raw 500 kbp overlap with the peak windows because enhancers, unlike genes, may not have intermediaries and may instead represent direct selection targets.\n\nFor coding mutations, we first annotated all SNPs for their putative effects using snpEff v4.0e (Cingolani et al., 2012). To accurately capture the per-site impact of coding mutations, we used per-site \u2206z2 instead of the averaged 10 kbp window. For each population, we divided all segregating SNPs into up to 0.02 bands based on per-site \u2206z2. We then tracked the impact of coding mutations in genes known to be expressed in limbs, as above. We reported the sum of all missense (\u2018moderate\u2019 impact), frame-shift, stop codon gain or loss sites (\u2018high impact\u2019). A linear regression was used to evaluate the relationship between \u2206z2 and the average impact of coding SNPs (SNPs with high or moderate impact to all coding SNPs).\n\nFor regulatory mutations, we used the same bins spanning the range of \u2206z2, but focused on the subset of SNPs falling within the ENCODE E14.5 limb enhancers. We then obtained a weighted average conservation score based on an averaged phastCons (Pollard et al., 2010) or phyloP (Siepel et al., 2005) score in \u00b1250 bp flanking the SNP, calculated from a 60-way alignment between placental mammal genomes (downloaded from the UCSC Genome Browser [Kent et al., 2002]). We reported the average conservation score of all SNPs within the bin and fitted a linear regression on log-scale. In particular, phastCons scores range from 0 (un-conserved) to 1 (fully conserved), whereas phyloP is the $log_{10}$ of the P-value of the phylogenetic tree, expressed as a positive score for conservation and a negative score for lineage-specific accelerated change. We favored using phastCons for its simpler interpretation.\n\n### Impact of coding variants\n\nUsing the same SNP effect annotations described in the section above, we checked whether any specific SNP with significant site-wise \u2206z2 in either LS1 or LS2 cause amino acid changes or protein disruptions and are known to cause limb defects when knocked out. For each position we examined outgroup sequences using the 60-way placental mammal alignment to determine the ancestral amino acid state and whether the selected variant was consistent with purifying vs. diversifying selection. The resulting 12 genes that matched these criteria are listed in Supplementary file 4.\n\n### Association with human height loci\n\nWe downloaded the set of 697 SNPs associated with loci for human height (Wood et al., 2014) to test if these loci cluster with the selected loci in the Longshanks lines. In order to facilitate mapping to mouse co-ordinates, each human SNP was expanded to 100 kbp centering on the SNP and converted to mm10 positions using the liftOver tool with the multiple mapping option disabled (Kent et al., 2002). We were able to assign positions in 655 out of the 697 total SNPs. Then for each of the 810 loci above the HINF, no LD threshold in the selected Longshanks lines, the minimal distance to any of the mapped human loci was determined using bedtools closest with the -d option (Quinlan and Hall, 2010). When a region actually overlapped, a distance of 0 bp was assigned. To generate a permuted set, the 810 loci were randomly shuffled across the mouse autosomes using the bedtools shuffle program with the -noOverlapping option. Then the exact same procedure as the actual data was followed to determine the closest interval. The resulting permuted intervals followed an approximately normal distribution, with observed results falling completely below the range of permuted results, that\u00a0is, closer to height-associated human SNPs.\n\n### In situ hybridization\n\nDetection of specific gene transcripts were performed as previously described in Brown et al., 2005. Probes against Nkx3-2, Rab28, Bod1l and Gli3 were amplified from cDNA from wildtype C57BL/6NJ mouse embryos (Supplementary file 5). Amplified fragments were cloned into pJET1.2/blunt plasmid backbones in both sense and anti-sense orientations using the CloneJET PCR Kit (Thermo Fisher Scientific, Schwerte, Germany) and confirmed by Sanger sequencing using the included forward and reverse primers. Probe plasmids have also been deposited with Addgene. In vitro transcription from the T7 promoter was performed using the MAXIscript T7 in vitro Transcription Kit (Thermo Fisher Scientific) supplemented with Digoxigenin-11-UTP (Sigma-Aldrich) (MPI T\u00fcbingen), or with T7 RNA polymerase (Promega) in the presence of DIG RNA labeling mix (Roche) (University of Calgary). Following TURBO DNase (Thermo Fisher Scientific) digestion, probes were cleaned using SigmaSpin Sequencing Reaction Clean-Up columns (Sigma-Aldrich) (MPI T\u00fcbingen), or using Illustra MicroSpin G-50 columns (GE Healthcare) (University of Calgary). During testing of probe designs, sense controls were used in parallel reactions to establish background non-specific binding.\n\n### ATAC-seq library preparation and sequencing pipeline\n\nATAC-seq was performed on dissected C57BL/6NJ E14.5 forelimb and hindlimb. Nuclei preparation and tagmentation were performed as previously described in Buenrostro et al. (2013), with the following modifications. To minimize endogenous protease activity, cells were strictly limited to 5\u00a0+\u00a05 min of collagenase A treatment at 37\u00b0C, with frequent pipetting to aid dissociation into single-cell suspensions. Following wash steps and cell lysis, 50,000 nuclei were tagmented with expressed Tn5 transposase. Each tagmented sample was then purified by MinElute columns (Qiagen) and amplified with Q5 High-Fidelity DNA Polymerase (New England Biolabs) using a uniquely barcoded i7-index primer (N701-N7XX) and the N501 i5-index primer. PCR thermocycler programs were 72\u00b0C for 4 min, 98\u00b0C for 30 s, 6 cycles of 98\u00b0C for 10 s, 65\u00b0C for 30 s, 72\u00b0C for 1 min, and final extension at 72\u00b0C for 4 min. PCR-enriched samples were taken through a double size selection with PEG-based SPRI beads (Beckman Coulter) first with 0.5X ratio of PEG/beads to remove DNA fragments longer than 600 bp, followed by 1.8X PEG/beads ratio in order to select for Fraction A as described in Milani et al. (2016). Pooled libraries were run on the HiSeq 3000 (Illumina) at the Genome Core Facility at the MPI T\u00fcbingen Campus to obtain 150 bp paired end reads, which were aligned to mouse mm10 genome using bowtie2 v.2.1.0 (Langmead and Salzberg, 2012). Peaks were called using MACS14 v.2.1 (Zhang et al., 2008).\n\n### Multiplexed chromosome conformation capture (4C-Seq)\n\nChromosome conformation capture (3C) template was prepared from pooled E14.5 liver, forelimb and hindlimb buds (n\u00a0=\u00a05\u20136 C57BL/6NJ embryos per replicate), with improvements to the primer extension and library amplification steps following (Sexton et al., 2012). The template was amplified with Q5 High-Fidelity Polymerase (New England Biolabs GmbH, Frankfurt am Main, Germany) using a 4C adapter-specific primer and a pool of 6 Nkx3-2 enhancer viewpoint primers (and, in a separate experiment, a pool of 8 Gli3 enhancer-specific viewpoint primers; Supplementary file 6). Amplified fragments were prepared for Illumina sequencing by ligation of TruSeq adapters, followed by PCR enrichment. Pooled libraries were sequenced by a HiSeq 3000 (Illumina) at the Genome Core Facility at the MPI T\u00fcbingen Campus with single-end, 150 bp reads. Sequence data were processed using a pipeline consisting of data clean-up, mapping, and analysis based upon cutadapt v1.10 (Martin, 2011); bwa v0.7.10-r789 (Li and Durbin, 2010); samtools v1.2 (Li et al., 2009); bedtools (Quinlan and Hall, 2010) and R v3.2.0 (R Development Core Team, 2015). Alignments were filtered for ENCODE blacklisted regions (ENCODE Project Consortium, 2012) and those with MAPQ scores below 30 were excluded from analysis. Filtered alignments were binned into genome-wide BglII fragments, normalized to Reads Per Kilobase of transcript per Million mapped reads (RPKM), and plotted and visualized in R.\n\n### Plasmid construction\n\nPutative limb enhancers corresponding to the F0 and F17 alleles of the Gli3 G2 and Nkx3-2 N1 and N3 enhancers were amplified from genomic DNA of Longshanks mice from the LS1 F0 (nine mice) and F17 (10 mice) generations and sub-cloned into pJET1.2/blunt plasmid backbone using the CloneJET PCR Kit (Thermo Fisher Scientific) and alleles were confirmed by Sanger sequencing using the included forward and reverse primers (Supplementary file 7). Each allele of each enhancer was then cloned as tandem duplicates with junction SalI and XhoI sites upstream of a \u03b2-globin minimal promoter in our reporter vector (see below). Constructs were screened for the enhancer variant using Sanger sequencing. All SNPs were further confirmed against the rest of the population through direct amplicon sequencing.\n\nThe base reporter construct pBeta-lacZ-attBx2 consists of a \u03b2-globin minimal promoter followed by a lacZ reporter gene derived from pRS16, with the entire reporter cassette flanked by double attB sites. The pBeta-lacZ-attBx2 plasmid and its full sequence have been deposited and is available at Addgene.\n\n### Pronuclear injection of F0 and F17 enhancer-reporter constructs in mice\n\nThe reporter constructs containing the appropriate allele of each of the three enhancers were linearized with ScaI (or BsaI in the case of the N3 F0 allele due to the gain of a ScaI site) and purified. Microinjection into mouse zygotes was performed essentially as described (DiLeone et al., 2000).\n\nAt 12 d after the embryo transfer, the gestation was terminated and embryos were individually dissected, fixed in 4% paraformaldehyde for 45 min and stored in PBS. All manipulations were performed by R.N. or under R.N.\u2019s supervision at the Transgenic Core Facility at the Max Planck Institute of Molecular\u00a0Cell Biology and Genetics, Dresden, Germany. Yolk sacs from embryos were separately collected for genotyping and all embryos were stained for lacZ expression as previously described (Mortlock et al., 2003). Embryos were scored for lacZ staining, with positive expression assigned if the pattern was consistently observed in at least two embryos.\n\n### Genotyping of time series at the Nkx3-2 N3 locus\n\nAllele-specific primers terminating on SNPs that discriminate between the F0 from the F17 N3 enhancer alleles were designed (rs33219710 and rs33600994; Supplementary file 8). The amplicons were optimized as a qPCR reaction to give allele-specific, present/absent amplifications (typically no amplification for the absent allele, otherwise average \u2206Ct\u00a0>10). Genotyping on the entire breeding pedigree of LS1 (n\u00a0=\u00a0602), LS2 (n\u00a0=\u00a0579) and Ctrl (n\u00a0=\u00a0389) was performed in duplicates for each allele on a Bio-Rad CFX384 Touch instrument (Bio-Rad Laboratories GmbH, Munich, Germany) with SYBR Select Master Mix for CFX (Thermo Fisher Scientific) and the following qPCR program: 50\u00b0C for 2 min, 95\u00b0C for 2 min, 40 cycles of 95\u00b0C for 15 s, 58\u00b0C for 10 s, 72\u00b0C for 10 s. In each qPCR run we included individuals of each genotype (LS F17 selected homozygotes, heterozygotes and F0 major allele homozygotes). For the few samples with discordant results between replicates, DNA was re-extracted and re-genotyped or otherwise excluded.\n\n### Transgenic reporter assays in stickleback fish\n\nIn sticklebacks, transgenic reporter assays were carried out using the reporter construct pBHR (Chan et al., 2010). The reporter consists of a zebrafish heat shock protein 70 (Hsp70) promoter followed by an eGFP reporter gene, with the entire reporter cassette flanked by tol2 transposon sequences for transposase-directed genomic integration. The Nkx3-2 N1/F0 enhancer allele was cloned as tandem duplicates using the NheI and EcoRV restriction sites upstream of the Hsp70 promoter. Enhancer orientation and sequence was confirmed by Sanger sequencing. Transient transgenic stickleback embryos were generated by co-microinjecting the plasmid (final concentration: 10 ng/\u00b5l) and tol2 transposase mRNA (40 ng/\u00b5l) into freshly fertilized eggs at the one-cell stage as described in Chan et al. (2010).\n",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "9ca303a9-cdb2-4fd3-93bd-bee62e08657a",
+      "submission_id": "8ffab009-828c-42e5-8f17-90b973499040",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Magnus Nordborg, Austrian Academy of Sciences Austria\n\nReviewers:\n- Matthew V Rockman, New York University United States\n- John Kelly, University of Kansas United States\n\n## Review text\n\nDOI: [10.7554/eLife.42014.048](https://doi.org/10.7554/eLife.42014.048)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"An integrative genomic analysis of the Longshanks selection experiment for longer limbs in mice\" for consideration by eLife. Your article has been reviewed by Patricia Wittkopp as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Matthew V Rockman (Reviewer #2); John Kelly (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper uses a combination of theoretical and empirical population genetics, functional genomics, and developmental genetics to elucidate the molecular basis for the response in a long-term selection experiment for mice with longer limbs. The authors demonstrate the contribution of major loci (one of which, Nkx3-2, is identified) as well as a polygenic background, providing one of the most detailed analyses of a selection response to date.\n\nEssential revisions:\n\nStandard eLife practice is to provide a condensed decision letter instead of individual reviews, but because the reviews in this case are very well written and in perfect agreement (not to mention positive!), doing so would be a disservice to the authors. Thus, we attach the full reviews and simply list the essential revisions here.\n\nFirst, it must be made clearer which data are new, and which were previously published (presumably in Marchini et al., 2014).\n\nSecond, although the polygenic analysis is an important part of this paper, we noted that no formal comparison with a simpler QTL model is included. How much of the selection response was due to each? Either add some analysis along these (perhaps test how adding more loci improves cross-replicate prediction?), or tone down the language.\n\nReviewer #1:\n\nThe manuscript by Castro et al., dissects the genomic signatures underlying the phenotypic response to artificial selection in the Longshank experiment. The authors find that the response to selection is a composite of subtle allele frequency changes across the whole genome (polygenic response) and major allele frequency changes in some individual loci. Interestingly, they find that only two of such \"major effect\" loci are found in both replicates, with rest of them being unique to each replicate line. They focus on one of the major effect loci, and dissect it down to three SNPs that result in a de-repression of bone growth.\n\nThis is a well written and easy to read manuscript, with a very interesting and rigorously explored dataset. I particularly like the way the authors push the story from a \"signature of selection\" perspective to explore the relative importance of polygenic vs major-effect-loci underlying rapid response to selection. The array of assays and datasets used across the paper were very well integrated. In particular, I find that the use of TADs to define candidate regions added more meaning to such definition than the traditionally-used LD blocks. I think the evolutionary community, in general, will be interested in this manuscript.\n\n1) This study is based on the selection experiment by Marchini et al., (2014). However, in the text it is never clear which data are new and which are from Marchini, 2014 (e.g. there they explore mice up to the thirteenth generation). The only hint is in the Introduction. The way the text is currently written suggests the Lonshank experiment is a new contribution of this manuscript.\n\n2) The authors claim that an infinitesimal model with linkage \"best fits the observed data\" (subsection \u201cSequencing the Longshanks mice reveals genomic signatures of selection\u201d). However, it is not clear from the text or the supplement which other models (e.g. few genes of major effect, or a combination of polygenic and major effect loci), besides the infinitesimal model, were tested. The simulations regarding selection coefficients and LD are clear, but I couldn't find any other model regarding the general architecture of the trait.\n\n3) The paper highlights the importance of standing genetic variation in rapid adaptive responses, and the validation of the candidate SNPs exemplifies this beautifully. However, nothing is mentioned about de novo mutations and the role they could play. A discussion about the relative importance of these two factors, or at least the mention of how many de novo SNPs were found in F17 is warranted. I acknowledge that it is not possible to test whether de novo SNPs increased in frequency in the population given that only F0 and F17 were sequenced.\n\n4) The results are very interesting but poorly discussed. The Discussion section is focused more on highlighting the results than in actually discussing the findings in the context of previous selection studies. I would like to see the data discussed in the framework of what we expect or have seen before regarding e.g. the role of standing variation vs de novo mutations, polygenic vs major-loci signatures of selection, coding vs non-coding changes, etc. These are current (and old) debates in evolutionary biology that will benefit a lot from the results of this paper. Also, the fact that only two loci are replicated between LS1 and LS2, and that everything else, including other major-effect loci are unique to each line is mentioned in pass in the results but never discussed.\n\n5) Related to the above point. In the Discussion section the effect size of the major loci is mentioned to be 10%, is this a high, low? Expected? There's no discussion about the effect sizes in terms of what other studies might have found. If 10% is the effect of a single locus how much is attributed to the polygenic component? Is there something else left to be explained? If modelling uses only standing-variation, is there a role for de novo mutations?\n\nReviewer #2:\n\nI think this is really beautiful work at several levels, and in particular the very careful analysis of expectations under polygeny is exceptional. The clear demonstration that polygenic adaptation would leave almost no signature in data of this type is terrific.\n\nMy one substantive concern is that the authors conclude that polygeny played an important role in the evolution of their focal trait (e.g., line 188-190, and in the abstract), but it's not actually clear to me how much evidence there is to support that conclusion. Most of the genome is similar to their polygenic null expectation, but not all: they detected eight genome-wide significant loci, and they show an excess of signal below that threshold (e.g., Figure 2\u2014figure supplement 2, maybe Figure 3A, maybe Figure 6A). Further, there's not obviously a test that compares their results to a qtls-but-no-polygenes null. I'd like to see more explicit accounting of *how much* variation is explained by polygenic effects.\n\nA second very modest concern has to do with the circular mating scheme, which is mentioned only deep in the supplementary methods. I'd like to see this explained more. As I understand it, each mouse mates only once, yielding a single brood. In that case, circular mating involves lots of obligate first-cousin matings, preserving F-sub-B at the expense of F-sub-W. The higher frequency of autozygosity under this scheme will slightly reduce effective recombination relative to the genetic map. I *think* that the simulations account for this as they use the actual pedigree, but that should be stated more clearly. The increased autozygosity also changes the potential role of dominance in the estimation of the selection coefficient for Nkx3-2, although I'm sure it's a very slight effect.\n\nReviewer #3:\n\nIn this paper, Castro et al., analyze genomic data from a selection of mice. Two replicate populations were selected for long legs for 20 generations and compared to a single control population. There was a moderate response to selection, parallel in both replicates at the phenotype scale. Castro et al., follow-up on one major locus with functional genetic experiments. These provide evidence for the involvement of the gene Nkx3-2 in the response to selection. The dissection of the QTL down to 6 candidate quantitative trait nucleotides (QTNs) is a noteworthy advance for this kind of work in mice.\n\nAs a model for nature, the results apply only to very small populations. Perhaps this is the intention as these would be under greatest conservation threat. The result that parallel evolution was limited to loci of largest effect is entirely expected given the small population size. As population size increases, selection would become increasingly deterministic and parallel change more likely.\n\nA strong feature of the experiment is that the full pedigree of the population is known. This allows the simulation modeling based directly on the pedigree of the population. However, several things here need to be further developed or clarified. Regarding the pedigree, why not use this to test for a change in the additive variance over the course of the experiment. The most important practical effect of having large effect loci for quantitative traits is that additive (co)variances change on the same time scale as means with selection. Figure 1B,C does suggest a slowing of response in the latter half of experiment. Can this be attributed to a reduction in the additive variance? If estimated, can the change be explained in terms of the allele frequency shifts at the 'major' loci?\n\nRelated to this, the text in subsection \u201cLinking molecular mechanisms to evolutionary consequence\u201d suggests that 1569 mice were genotyped at the major locus. The authors look at allele frequency change. However, the paper suggests that they also have individual phenotypes for each of these same mice. If so, the authors can estimate QTL effect on phenotype directly. An estimate for the average effect could be coupled with the known strength of selection on the phenotype to produce an independent prediction for allele frequency change. This procedure would not be associated with the \"winner's curse\" problem (effect overestimation of outliers) that the authors correctly note about the cumulative \u03b4 p estimate.\n",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "be87c0c8-c3f5-424e-a5ba-0f4b95b6633c",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C1",
+      "claim": "The Longshanks selection experiment selected mice over 20 generations for longer tibiae relative to body mass, resulting in 13% longer tibiae in two replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present a genomic dissection of the Longshanks selection experiment, in which mice were selectively bred over 20 generations for longer tibiae relative to body mass, resulting in 13% longer tibiae in two replicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the experimental design and outcome with specific quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "36f72178-623e-4378-a717-d1ef0586a7c7",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C2",
+      "claim": "The selection response in the Longshanks experiment involved both polygenic adaptation and discrete loci of major effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We synthesized evolutionary theory, genome sequences and molecular genetics to understand the selection response and found that it involved both polygenic adaptation and discrete loci of major effect, with the strongest loci tending to be selected in parallel between replicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents findings from the genomic analysis showing mixed genetic architecture.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "75b4a5f9-a869-46cb-a04b-386dc23b3817",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C3",
+      "claim": "The strongest loci tended to be selected in parallel between replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "We synthesized evolutionary theory, genome sequences and molecular genetics to understand the selection response and found that it involved both polygenic adaptation and discrete loci of major effect, with the strongest loci tending to be selected in parallel between replicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "8749e731-9358-427b-bf69-963668844ec4",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C4",
+      "claim": "Selection may favor de-repression of bone growth through inactivating two limb enhancers of Nkx3-2.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that selection may favor de-repression of bone growth through inactivating two limb enhancers of an inhibitor, Nkx3-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a finding from molecular genetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "5e5916fa-165c-4fe4-9a6b-f1140e02bec6",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C5",
+      "claim": "It is possible to connect individual base-pair changes to the overall selection response.",
+      "claim_type": "EXPLICIT",
+      "source": "Our integrative genomic analyses thus show that it is possible to connect individual base-pair changes to the overall selection response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract concludes with this statement based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "2ed990c5-7c2b-4738-911b-8dae5f507866",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C6",
+      "claim": "Beneficial alleles in mammals typically come from standing genetic variation rather than new mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because beneficial alleles in mammals typically come from standing genetic variation rather than new mutations like in microbes, this loss of diversity would ultimately impose a limit on the ability of small populations to adapt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "abe46d96-209c-41e7-892a-c6d9c0ed942d",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C7",
+      "claim": "Mammals respond readily to selection in many traits, both in nature and in the laboratory.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, mammals respond readily to selection in many traits, both in nature and in the laboratory (Darwin, 1859; Gingerich, 2001; Garland and Rose, 2009; Keightley et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "b8e629bd-a2e1-4acf-9d5b-4b5ae0baf991",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C8",
+      "claim": "The infinitesimal model has performed remarkably well across a wide range of selection experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly speaking, the infinitesimal model has performed remarkably well across a wide range of selection experiments, and the model is the basis for commercial breeding (Walsh and Lynch, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Walsh and Lynch, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "3c19df3f-fe09-49d4-a0a5-d4f9e4193e4b",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C9",
+      "claim": "The mammalian limb is an ideal model to study the dynamics of complex traits under selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian limb is an ideal model to study the dynamics of complex traits under selection: it is both morphologically complex and functionally diverse, reflecting its adaptive value; and limb development has been studied extensively in mammals, birds and fishes as a genetic and evolutionary paradigm (Petit et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reasoning and a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "80f7344a-3e33-4701-a189-56354abd0796",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C10",
+      "claim": "Three base populations were established with 14 pairs each by sampling from Hsd:ICR commercial mouse stock.",
+      "claim_type": "EXPLICIT",
+      "source": "At the start of the Longshanks experiment, we established three base populations with 14 pairs each by sampling from a genetically diverse, commercial mouse stock (Hsd:ICR, also known as CD-1; derived from mixed breeding of classical laboratory mice [Yalcin et al., 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup with specific details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "bf119cfd-e05a-40a6-beb3-5cf9db0db401",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C11",
+      "claim": "In LS1 and LS2, breeders were selected for the longest tibia relative to the cube root of body mass, corresponding to 15\u201320% of all offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "In two replicate 'Longshanks' lines (LS1 and LS2), we bred mice by pairing 16 males and females (and excluding sibling pairs) with the longest tibia relative to the cube root of body mass for each sex. This corresponds to 15\u201320% of all offspring (only details essential to understanding our analysis are summarized here. See Marchini et al., 2014 for a detailed description of the breeding scheme).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection protocol with specific quantitative details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "2c27e54e-11ca-4759-be52-241b49d910b1",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C12",
+      "claim": "LS1 and LS2 showed a strong and significant response to selection in tibia length of 0.29 and 0.26 Haldane per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "In LS1 and LS2, we observed a strong and significant response to selection in tibia length (0.29 and 0.26 Haldane or standard deviations (s.d.) per generation, from a selection differential of 0.73 s.d. in LS1 and 0.62 s.d. in LS2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents quantitative results from the selection experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "e661d294-91b9-42cf-b447-edfd49a25532",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C13",
+      "claim": "Over 20 generations, selection produced increases of 5.27 and 4.81 s.d. in LS1 and LS2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 20 generations, selection for longer relative tibia length produced increases of 5.27 and 4.81 s.d. in LS1 and LS2, respectively (or 12.7% and 13.1% in tibia length), with a modest decrease in body mass (\u22121.5% in LS1 and \u22123.7% in LS2; Student's t-test, p<2 \u00d7 10\u22124 and p<1 \u00d7 10\u22128, respectively; Figure 1B and C; Figure 1\u2014figure supplement 1; n.b. this relationship was in part biased by the F1 generation, which were fed a different diet and phenotyped three weeks later than later generations, see Marchini et al., 2014 for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents quantitative results with statistical tests and references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "b46422e3-94e6-43b1-83c2-a47aace3b280",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C14",
+      "claim": "The Control line showed no directional change in tibia length or body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Ctrl showed no directional change in tibia length or body mass (Figure 1C; Student's t-test, p>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a negative result with statistical test and figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "d6f3dbf9-d275-4900-ae3d-4db0f82955a9",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C15",
+      "claim": "The approximately 5 s.d. change in 20 generations is rapid compared to typical rates observed in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "This approximately 5 s.d. change in 20 generations is rapid compared to typical rates observed in nature (Hendry and Kinnison, 1999, but see Grant and Grant, 2002) but is in line with responses seen in selection experiments (Gingerich, 2001; Keightley et al., 2001; Falconer and Mackay, 1996; Pitchers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the observed rate to literature values with multiple citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "4fc68fbb-7ba1-4a3a-9026-60733b10a2d7",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C16",
+      "claim": "The simulation framework faithfully recapitulates the artificial selection experiment by integrating trait measurements, selection regime, pedigree and genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore developed a simulation that faithfully recapitulates the artificial selection experiment by integrating the trait measurements, selection regime, pedigree and genetic diversity of the Longshanks selection experiment, in order to generate an accurate expectation for the genomic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology developed for the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "54a69af1-0448-41a6-8d85-89fbb808c797",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C18",
+      "claim": "The predicted increase in inbreeding closely matched the observed data.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from simulations seeded with actual genotypes or haplotypes showed that overall, the predicted increase in inbreeding closely matched the observed data (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares simulation results to observed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "33114c9c-eaa9-4e9b-9ef1-529d236725ba",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C19",
+      "claim": "Allele frequency shifts exceeding the infinitesimal model threshold would suggest that discrete loci contribute significantly to the selection response.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our simulations assume infinitesimal effects of loci, allele frequency shifts exceeding this stringent threshold would suggest that discrete loci contribute significantly to the selection response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the simulation framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "7f2d5184-304c-456b-a561-5ab1f03f3175",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C20",
+      "claim": "All individuals of the founder (F0) and 17th generation (F17) were sequenced to an average of 2.91-fold coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "To detect the genomic changes in the actual Longshanks experiment, we sequenced all individuals of the founder (F0) and 17th generation (F17) to an average of 2.91-fold coverage (range: 0.73\u201320.6\u00d7; n = 169 with <10% missing F0 individuals; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing methodology with specific coverage values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "2eb5c185-42e7-42a1-9048-e011e98b872b",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C21",
+      "claim": "Across the three lines, an average of 6.7 million segregating SNPs were found.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the three lines, we found similar levels of diversity, with an average of 6.7 million (M) segregating SNPs (approximately 0.025%, or 1 SNP per four kbp; Supplementary file 2; Figure 2\u2014figure supplement 1A and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents quantitative results from sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "68a220d7-0b43-49ae-8948-94b58cb6a3c6",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C22",
+      "claim": "The founder populations showed negligible divergence with across-line FST on the order of 1 \u00d7 10\u22124.",
+      "claim_type": "EXPLICIT",
+      "source": "We checked the founder populations to confirm negligible divergence between the three founder populations (across-line FST on the order of 1 \u00d7 10\u22124), which increased to 0.18 at F17 (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents population genetic statistics from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "cc5a9c6c-a202-4527-98d1-ea84b284f17d",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C23",
+      "claim": "By F17, the number of segregating SNPs dropped to around 5.8 M.",
+      "claim_type": "EXPLICIT",
+      "source": "By F17, the number of segregating SNPs dropped to around 5.8 M (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents a quantitative result from sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "0f4b09ae-587e-4af2-b361-4296d02003f6",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C24",
+      "claim": "The 13% drop in diversity (0.9M SNPs genome-wide) is predicted by drift.",
+      "claim_type": "EXPLICIT",
+      "source": "This 13% drop in diversity (0.9M SNPs genome-wide) is predicted by drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interprets the observed data in light of population genetic theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "6959bf96-398d-45d2-90f0-6951fa417fd0",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C25",
+      "claim": "Simulations confirmed that selection contributed negligibly to the drop in diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations confirmed this and moreover, showed that selection contributed negligibly to the drop in diversity (Appendix, Figure 1\u2014figure supplement 2B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "303ae811-dd83-44bd-b2c2-49d74c1c2637",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C26",
+      "claim": "169 windows belonging to eight clusters showed significant shifts in allele frequency in LS1 and/or LS2.",
+      "claim_type": "EXPLICIT",
+      "source": "We averaged \u2206z2 within 10 kbp windows (see Methods for details), and found 169 windows belonging to eight clusters (i.e., loci) that had significant shifts in allele frequency in LS1 and/or LS2 (corresponding to 9 and 164 clustered windows respectively at p\u22640.05 under HINF, max LD; \u2206z2 \u22650.33 \u03c02; genome-wide \u2206z2 = 0.02 \u00b1 0.03 \u03c02; Figure 2; Figure 1\u2014figure supplement 2D, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3; see Methods for details) and 8 windows in three clusters in Ctrl (genome-wide \u2206z2 = 0.01 \u00b1 0.02 \u03c02).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents quantitative results from the genomic analysis with statistical thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "788b8f4d-65c4-4f36-9e6e-950db590ba25",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C27",
+      "claim": "The eight loci in Longshanks each overlapped between 2 to 179 genes and together contained 11 candidate genes with known roles in bone, cartilage and/or limb development.",
+      "claim_type": "EXPLICIT",
+      "source": "The eight loci in Longshanks each overlapped between 2 to 179 genes and together contained 11 candidate genes with known roles in bone, cartilage and/or limb development (e.g., Nkx3-2 and Sox9; Table 1; Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from gene annotation analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "19234079-8764-4bc4-96e5-2c53fc5f91a1",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C28",
+      "claim": "Four out of the eight loci contain genes with a 'short tibia' or 'short limb' knockout phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Four out of the eight loci contain genes with a 'short tibia' or 'short limb' knockout phenotype (Table 1; p\u22640.032 from 1000 permutations, see Methods for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from enrichment analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "905d2ce2-c1bb-4f96-b2ea-cc26a1c41564",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C29",
+      "claim": "Only fibrillin 2 (Fbn2) is polymorphic for SNPs coding for different amino acids among genes at these loci with limb knockout phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the broader set of genes at these loci with any limb knockout phenotypes, only fibrillin 2 (Fbn2) is polymorphic for SNPs coding for different amino acids, suggesting that for the majority of loci with large shifts in allele frequency, gene regulation was likely important in the selection response (Figure 2\u2014figure supplement 4; Supplementary file 3; see Appendix for further analyses on enrichment in gene functions, protein-coding vs. cis-acting changes and clustering with loci affecting human height).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from coding variant analysis and draws an inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "d0aa041d-c0e8-451a-848c-14d2c11812c0",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C30",
+      "claim": "The \u2206z2 profiles of LS1 and LS2 were more similar to each other than to Ctrl.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the \u2206z2 profiles of LS1 and LS2 were more similar to each other than to Ctrl (Figure 2 and 3A; Figure 3\u2014figure supplement 1; Pearson's correlation in \u2206z2 from 10 kbp windows: LS1\u2013LS2: 0.21 vs. LS1\u2013Ctrl: 0.06 and LS2\u2013Ctrl: 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents quantitative correlation analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "9a6e8d3c-353c-4692-b984-40e845661c12",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C31",
+      "claim": "Six out of eight significant loci at the HINF, max LD threshold were line-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Six out of eight significant loci at the HINF, max LD threshold were line-specific, even though all eight selected alleles were present in the F0 generation in both lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents results from the parallelism analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "c3a863b3-3ad1-47b9-b8e9-231c24d7c675",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C32",
+      "claim": "The two parallel loci ranked first and second by selection coefficient, both with s > 0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the two remaining loci that ranked first and second by selection coefficient were parallel, both with s > 0.3 (Figure 3B; note that as outliers, the selection coefficient may be substantially overestimated, but their rank order should remain the same), supporting the idea that the probability of parallelism can be high among those loci with the greatest selection advantage (Orr, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents quantitative results and cites supporting theory.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "f39131f9-061c-4b7f-b5b2-efa336ed2552",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C33",
+      "claim": "The signature of parallelism was significantly enriched in the comparison between the selected replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the subtle differences within each line in changes in global diversity over 17 generations (Figure 2 and Figure 2\u2014figure supplement 2), we found the signature of parallelism to be significantly enriched in the comparison between the selected replicates (\u03c72 test, LS1\u2013LS2: p\u22641 \u00d7 10\u221210), as opposed to comparisons between each selected line and Ctrl (LS1\u2013Ctrl: p>0.01 and LS2\u2013Ctrl: p>0.2, both non-significant after correcting for multiple testing), or between simulated replicates (Figure 3\u2014figure supplement 1; see Appendix for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents statistical test results comparing parallelism across different comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "4cf17973-15fb-426b-a53a-8392f9098e14",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C34",
+      "claim": "The locus on chromosome 5 at 41\u201342 Mbp showed the strongest estimated selection coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Between the two major parallel loci, we chose the locus on chromosome 5 (Chr5) at 41\u201342 Mbp for functional validation because it showed the strongest estimated selection coefficient, its signature of selection was clear, and crucially for functional characterization, it contains only three genes, including Nkx3-2 (also known as Bapx1), a known regulator of bone maturation (Figure 2 and 4A) (Provot et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explains the rationale for selecting this locus for functional validation with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "19171486-b2c3-4615-b566-140c479bda09",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C35",
+      "claim": "The pattern of variation at the Chr5 locus resembles a selective sweep spanning 1 Mbp.",
+      "claim_type": "EXPLICIT",
+      "source": "At this locus, the pattern of variation resembles a selective sweep spanning 1 Mbp (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the observed pattern in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "0ceb2c5b-ea1b-420a-bb98-a4599d84f205",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C36",
+      "claim": "No recombinant was found in the entire 1 Mbp region between F0 and F17 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison between F0 and F17 individuals revealed no recombinant in this entire region (Figure 5\u2014figure supplement 1A, top panel), precluding fine-mapping using recombinants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a negative result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "761cf578-ac2a-4402-b4c0-8e2d7d329de0",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C37",
+      "claim": "No coding changes existed for either Rab28 or Nkx3-2 within the topologically associating domain.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we determined that no coding changes existed for either Rab28 or Nkx3-2, the two genes located within the topologically associating domain (TAD, which mark chromosome segments with shared gene regulatory logic) (Dixon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents a negative result from sequence analysis with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "17a66cd5-428f-4f10-9787-98b3b3dcbebd",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C38",
+      "claim": "Nkx3-2 and Rab28 showed robust expression in the developing fore- and hind limb buds at E12.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed in situ hybridization and detected robust expression of Nkx3-2 and Rab28 in the developing fore- and hind limb buds of Ctrl, LS1 and LS2 E12.5, in a domain broadly overlapping the presumptive zeugopod, the region including the tibia (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from in situ hybridization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "b54465d4-6ae1-46a9-8a40-bc4152234f5a",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C39",
+      "claim": "Bod1l showed only weak or undetectable expression in the developing limb bud.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, Bod1l showed only weak or undetectable expression in the developing limb bud (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from in situ hybridization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "90ae59cf-3b0f-4ff5-9584-bbd3d90e5926",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C40",
+      "claim": "Three novel enhancer candidates (N1, N2 and N3) were identified carrying three, one and three SNPs respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we found three novel enhancer candidates (N1, N2 and N3) carrying three, one and three SNPs respectively, all of which showed significant allele frequency shifts in LS1 and LS2 (Figure 4B and C; Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from chromatin profiling and variant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "a5fa423c-a7be-4823-86e7-eac4f898ee3a",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C41",
+      "claim": "The N1 and N3 sequences formed long-range looping contacts with the Nkx3-2 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome conformation capture assays showed that the N1 and N3 sequences formed long-range looping contacts with the Nkx3-2 promoter\u2014a hallmark of enhancers\u2014despite as much as 600 kbp of intervening sequence (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from 4C-Seq experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "b1618c9a-8e4f-4a19-b67c-1212aab6150e",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C42",
+      "claim": "The F0 alleles of the N1 and N3 enhancers drove robust and consistent lacZ expression in the developing limb buds at E12.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the F0 alleles of the N1 and N3 enhancers (three SNPs each in about one kbp) drove robust and consistent lacZ expression in the developing limb buds (N1 and N3) as well as in expanded trunk domains (N3) at E12.5 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from transgenic reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "66cef510-0d60-4842-aa25-c21e9b976337",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C43",
+      "claim": "The F17 alleles of the N1 and N3 enhancers drove consistently weak, nearly undetectable lacZ expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, transgenic reporters carrying the selected F17 alleles of the N1 and N3 enhancers drove consistently weak, nearly undetectable lacZ expression (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from transgenic reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "0f0870c0-16b9-499a-ad81-17922cb51eef",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C44",
+      "claim": "Switching from the F0 to the F17 enhancer alleles led to a nearly complete loss in activity at developmental stage E12.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, switching from the F0 to the F17 enhancer alleles led to a nearly complete loss in activity ('loss-of-function') at developmental stage E12.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the transgenic reporter assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "d2bc0f8e-a7b4-4ac0-85f3-6cd83079598a",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C45",
+      "claim": "The loss-of-function at the Nkx3-2 enhancers is consistent with the role of Nkx3-2 as a repressor in long bone maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the role of Nkx3-2 as a repressor in long bone maturation (Provot et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the experimental results to known biology with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "69f18ef9-facd-4570-9b0c-76c4aa20d531",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C46",
+      "claim": "The selected allele steadily increased from around 0.17 to 0.85 in LS1 and 0.98 in LS2 but fluctuated around 0.25 in Ctrl.",
+      "claim_type": "EXPLICIT",
+      "source": "The selected allele steadily increased from around 0.17 to 0.85 in LS1 and 0.98 in LS2 but fluctuated around 0.25 in Ctrl (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from targeted genotyping across all generations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "81e9a5f4-84f0-42de-8a65-bd2404aed0f9",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C47",
+      "claim": "A change of around 0.7 in allele frequency would correspond to a selection coefficient s of ~0.24 \u00b1 0.12 at the Nkx3-2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that such a change of around 0.7 in allele frequency would correspond to a selection coefficient s of ~0.24 \u00b1 0.12 at this locus (Figure 5\u2014figure supplement 1B; see Appendix section on 'Estimating selection coefficient of the top-ranking locus, Nkx3-2, from changes in allele frequency').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents an estimated parameter value from population genetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "89822560-71c4-4bbf-b543-eacdd754770d",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C48",
+      "claim": "The Nkx3-2 locus would contribute 9.4% of the total selection response (limits 3.6\u201315.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "By extending our simulation framework to allow for a major locus against an infinitesimal background, we find that the Nkx3-2 locus would contribute 9.4% of the total selection response (limits 3.6\u201315.5%; see Appendix section 'Estimating selection coefficient' for details) in order to produce a shift of 0.7 in allele frequency over 17 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents results from simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "cb58de0e-4f03-4900-89d4-78993f9fbba0",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C49",
+      "claim": "Each selected allele at the Nkx3-2 locus increases tibia length by 0.36% (95% conf. int.: 0.07\u20130.64%, p=0.0171).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this alternative approach, we estimated that each selected allele increases tibia length by 0.36% (N = 1569, 95% conf. int.: 0.07\u20130.64%, p=0.0171).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents results from a linear mixed animal model analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "9bc9f4d5-dc03-4fd6-96a1-5290ecf32a06",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C50",
+      "claim": "The Nkx3-2 locus alone would account for approximately 4% of the overall 12.9% increase in tibia length.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiplying the effect with the increase in the allele frequency suggests that the Nkx3-2 locus alone would account for approximately 4% of the overall 12.9% increase in tibia length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the animal model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "040af8a9-32f8-4cd7-bf75-3ad4c89ca2f5",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C51",
+      "claim": "Selection response can be steady and robust even in extremely bottlenecked populations.",
+      "claim_type": "EXPLICIT",
+      "source": "An important conclusion from the Longshanks experiment is that selection response can be steady and robust even in extremely bottlenecked populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "c1d01f89-0ab3-41f3-a9f8-111a3ab229da",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C52",
+      "claim": "Tibia length increased readily and repeatedly in response to selection even with as few as 14\u201316 breeding pairs per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, we found that tibia length increased readily and repeatedly in response to selection even with as few as 14\u201316 breeding pairs per generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the experimental design and outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "3c230124-6c33-4f51-af07-cb46494ccff9",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C53",
+      "claim": "Generation 17 was still only a fraction of the way to the expected limit for the selection response at ~2Ne generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The sustained response was possible because the lines were founded with enough standing variation, and generation 17 was still only a fraction of the way to the expected limit for the selection response at ~2Ne generations (Robertson, 1960), estimated here to be around 90 (see legend for Figure 1\u2014figure supplement 2B; Appendix on 'Estimating the selection coefficient').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interprets the results in light of quantitative genetic theory with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "4661e5b7-7e52-4878-8a05-243ea564f065",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C54",
+      "claim": "The estimated Ne of 46 in the Longshanks experiment is comparable to those in natural populations like the Soay sheep, Darwin's finches or Tasmanian devils.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated Ne of 46 in the Longshanks experiment, while small, is comparable to those in natural populations like the Soay sheep (McRae et al., 2005), Darwin's finches (Grant and Grant, 1992) or Tasmanian devils (Epstein et al., 2016) (this last study documents a rapid and parallel evolutionary response to transmissible tumors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the experimental parameter to natural populations with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "414e1c7e-28c0-49dc-8d8f-39178355ed1a",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C55",
+      "claim": "For a short bout of selection, selection response depends overwhelmingly on standing genetic variation, with little to no contribution from de novo mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we also expect very different dynamics during short- vs. long-term selection response: for a short bout of selection, such as the 20 generations analyzed in this study, selection response depends overwhelmingly on standing genetic variation, with little to no contribution from de novo mutations (Hill, 1982; Weber and Diggins, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical expectation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "19973c3c-ab2c-4dad-bb29-38d09f664bd9",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C56",
+      "claim": "Over the long term, de novo mutations would contribute increasingly to selection response.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the long term, however, de novo mutations would contribute increasingly to selection response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical expectation about long-term evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "aa39d764-2aea-47ce-ba70-e5d65c8d0f31",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C57",
+      "claim": "There has long been broad empirical support for adaptation from standing genetic variation in nature and breeding.",
+      "claim_type": "EXPLICIT",
+      "source": "There has long been broad empirical support for adaptation from standing genetic variation in nature (Jones et al., 2012; Epstein et al., 2016; Hancock et al., 2011) and breeding (Sheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the literature supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "6f30e6f7-5da7-4fd3-b95a-f2d9c42db1ba",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C58",
+      "claim": "The infinitesimal model is still the most predictive model by far in practical quantitative genetics for diverse domesticated species.",
+      "claim_type": "EXPLICIT",
+      "source": "To put our finding of a mixed genetic architecture into perspective, it is worth noting that the infinitesimal model is still the most predictive model by far in practical quantitative genetics, for diverse domesticated species from cattle to crops, despite its intrinsically unrealistic assumptions (Hill et al., 2008; Lynch and Walsh, 1998; Hill and Zhang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the field supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "ae4bd643-1de6-45f2-8359-c9719f64a493",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C59",
+      "claim": "Current genomic data for many traits is consistent with a very large number of loci, each with a small effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, current genomic data for many traits is consistent with a very large number of loci, each with a small effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of genomic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "33f2a9f1-f6fa-4c10-bc44-1e68e255298d",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C60",
+      "claim": "Height in humans shows high heritability and a highly dispersed genetic architecture with the top-ranked locus accounting for only 0.8% of the variation explained.",
+      "claim_type": "EXPLICIT",
+      "source": "Height in humans is often cited as the classical complex trait under possible selection of unknown (and much debated) intensity (see Turchin et al., 2012; Berg and Coop, 2014; Barton et al., 2019). It shows high heritability and a highly dispersed genetic architecture (with the top-ranked locus accounting for only 0.8% of the variation explained in cosmopolitan European populations) (Weedon et al., 2007; Wood et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about human genetics supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "1cf195c1-4804-4585-99f0-c64f002e4ef6",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C61",
+      "claim": "As few as 4 to 6 loci account for 83% and 50% of the variation in height in horses and dogs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, as few as 4 to 6 loci account for 83% and 50% of the variation in height in horses and dogs, respectively (Makvandi-Nejad et al., 2012; Rimbault et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about animal genetics supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "b17ed89d-cca1-4627-8526-2d4f687a114c",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C62",
+      "claim": "The major allele at the IGF1 locus in dogs stems from a standing genetic variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, and in line with our experiment, the major allele at the IGF1 locus stems from a standing genetic variant, despite many factors that may theoretically favor large-effect de novo mutations (Sutter et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about dog genetics supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "7862e656-086e-4d2f-83c1-cd90e404fe71",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C63",
+      "claim": "Parallel evolution is often seen as a hallmark for detecting selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel evolution is often seen as a hallmark for detecting selection (Chan et al., 2012; Schluter et al., 2004; Chan et al., 2010; Martin and Orgogozo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about evolutionary biology supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "bbc910a3-ea84-43a7-a81a-6734d160ef9b",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C64",
+      "claim": "Little parallelism was observed between selected lines and Ctrl, or between simulated replicates under selection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed little parallelism between selected lines and Ctrl, or between simulated replicates under selection, even though the simulated haplotypes were sampled directly from actual founders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents results from the parallelism analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "0d750f06-be0e-47e1-b22d-ddd587de7ce5",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C65",
+      "claim": "Parallelism depends on both shared selection pressure and the availability of large-effect loci that confer a substantial selection advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "This underscores that parallelism depends on both shared selection pressure (absent in Ctrl) and the availability of large-effect loci that confer a substantial selection advantage (absent under the infinitesimal model; Figure 3; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the parallelism analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "4263f746-a16e-4fe4-9c16-c18f8c5a187a",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C66",
+      "claim": "The originally common F0 variant of the N1 enhancer shows deep functional conservation and can recapitulate fin nkx3.2 expression in fishes.",
+      "claim_type": "EXPLICIT",
+      "source": "Through in-depth dissection of the Nkx3-2 locus, our data show in fine detail how the selective value of standing variants depends strongly on the selection regime: the originally common F0 variant of the N1 enhancer shows deep functional conservation and can evidently recapitulate fin nkx3.2 expression in fishes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from transgenic assays in stickleback fish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "01d51bcd-583d-4dff-8617-f37c222116fa",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C67",
+      "claim": "In the Longshanks experiment selection strongly favored the weaker allele at the N1 enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, in the Longshanks experiment selection strongly favored the weaker allele (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents results from the allele frequency trajectory analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "4ae8516e-9e97-4dcd-a582-2a12f641d1c8",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C68",
+      "claim": "Both gain-of-function (Gli3) and loss-of-function (Nkx3-2) variants could be favored by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, our molecular dissection of two loci show that both gain-of-function (Gli3) and loss-of-function (Nkx3-2) variants could be favored by selection (Figure 4E and 5A; Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This summarizes results from functional validation of two loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "a6b53328-acef-4af5-aeea-8da9ab559c09",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C69",
+      "claim": "Loss of NKX3-2 function in human SMMD patients manifests in opposite ways in different bone types as short trunk and long limbs.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, the same loss of NKX3-2 function in human SMMD patients manifests in opposite ways in different bone types as short trunk and long limbs (Hellemans et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about human genetics supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "9458bbb1-8d33-4f06-b969-b840df5530c5",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C70",
+      "claim": "The expression domains of the N1 (limb) and N3 (limb and trunk) enhancers match the affected bones in SMMD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "This matches the expression domains of our N1 (limb) and N3 (limb and trunk) enhancers (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This connects the experimental results to human disease phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "bdb4f106-654c-4feb-abe8-1f907efadb53",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C71",
+      "claim": "The F17 haplotype was doubly beneficial at both enhancers for the limb and potentially also trunk target tissues under the novel selection regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, in the absence of lethal coding mutations, the F17 haplotype was doubly beneficial at both enhancers for the limb and potentially also trunk target tissues under the novel selection regime in the Longshanks selection experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the functional validation results and human disease data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "7a46d7d3-e2ac-44fc-a04c-66c3eccbec84",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C72",
+      "claim": "The Nkx3-2 locus contributes ~10% of the overall selection response.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that these enhancer variants, along with any other tightly linked beneficial SNPs, segregate as a single locus, which in turn contributes ~10% of the overall selection response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative estimate from simulation and animal model analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "097960fb-d9a2-4cd7-a826-4478be736b8a",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C73",
+      "claim": "It is possible to identify some of the individual SNPs that have contributed to the response to selection on morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Longshanks selection experiment and synthesizing theory, empirical data and molecular genetics, we show that it is possible to identify some of the individual SNPs that have contributed to the response to selection on morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "a4243c24-a17d-4231-96b6-fbd87b87ea50",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "claim_id": "C74",
+      "claim": "Discrete, large-effect loci are revealed by their parallel response.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, discrete, large-effect loci are revealed by their parallel response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the parallelism analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cb570450-f9ba-47a1-8722-140395bca004",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Longshanks selection experiment successfully produced a rapid and significant increase in tibia length over 20 generations in two replicate lines (LS1 and LS2), with 12.7% and 13.1% increases respectively, while a Control line showed no directional change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C15 collectively establish the experimental design, selection protocol, and phenotypic outcomes with specific quantitative measurements and statistical tests. The data show strong, replicated selection response in tibia length in LS1 and LS2 but not in Control, with appropriate statistical validation (p-values, effect sizes) and comparison to literature rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "330a3f70-bdf7-4dcb-8975-b43867ffee71",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A simulation framework based on the infinitesimal model with linkage accurately recapitulated the selection experiment, predicting inbreeding and diversity changes, and established significance thresholds for detecting discrete loci beyond polygenic background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C18-C19, C24-C25 describe the simulation methodology and validation. The simulations matched observed inbreeding patterns (C18) and correctly predicted that the 13% drop in diversity was due to drift rather than selection (C24-C25), providing a rigorous null model for identifying major-effect loci.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "b7cca495-9371-4463-9811-cec3350e7135",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Whole-genome sequencing of F0 and F17 generations revealed similar initial diversity across lines (~6.7M SNPs) with negligible founder divergence (FST ~10^-4), and a 13% reduction in diversity by F17 consistent with drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 present sequencing coverage, diversity metrics, and population structure statistics. The data show appropriate sequencing depth (2.91\u00d7 average), high initial diversity, minimal founder differentiation, and diversity loss consistent with theoretical predictions from drift in small populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "71918725-c40e-483b-9f80-538fdfafc7d0",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The selection response involved both polygenic adaptation and discrete loci of major effect, with eight significant loci identified in Longshanks lines containing candidate genes enriched for bone/limb developmental functions, predominantly involving regulatory rather than coding changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C26-C29 establish a mixed genetic architecture. The identification of 169 windows in 8 loci with significant allele frequency shifts (C26), enrichment for limb/bone genes (C27-C28, p\u22640.032), and predominance of regulatory variants (C29) collectively support the conclusion of discrete major loci against a polygenic background.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "644f2d34-e38f-4a04-9b08-2a1c8919f6ff",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Parallel selection between replicates was significantly enriched (p\u22641\u00d710^-10) and concentrated among the strongest loci, with the two top-ranked loci (s>0.3) showing parallel selection while six of eight loci were line-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C30-C33 demonstrate that parallelism depends on both selection pressure and large effect sizes. The correlation analysis (C30), statistical tests (C33), and ranking by selection coefficient (C32) show that parallelism is enriched in selected lines and concentrated among loci with greatest selective advantage, consistent with theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "b574acb2-7de3-4b84-9b15-d4ca421f92f6",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The chromosome 5 locus at 41-42 Mbp, containing Nkx3-2, showed the strongest selection signature with a 1 Mbp selective sweep, no recombination, no coding changes, and robust limb expression of Nkx3-2 and Rab28 but not Bod1l.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 characterize the top-ranked locus through multiple lines of evidence: selection coefficient estimation, sweep pattern, recombination analysis, coding variant screening, and expression analysis. The convergent evidence from genomic and expression data supports Nkx3-2 as the likely target gene.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "059274cc-d346-498b-a78c-c56fbb8374da",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Three enhancer candidates (N1, N2, N3) were identified at the Nkx3-2 locus, with N1 and N3 showing long-range contacts with the Nkx3-2 promoter and loss-of-function in F17 alleles compared to F0 alleles in transgenic reporter assays, consistent with Nkx3-2's role as a bone maturation repressor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 provide functional validation through chromatin profiling (C40), 4C-Seq (C41), and transgenic reporter assays (C42-C44). The nearly complete loss of enhancer activity in F17 alleles (C43-C44) is consistent with known Nkx3-2 function (C45), providing strong mechanistic support for regulatory changes driving selection response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "c53432ed-e2a4-4015-912a-37d963fcf762",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Nkx3-2 locus showed steady allele frequency increase from ~0.17 to 0.85-0.98 in selected lines, corresponding to a selection coefficient of ~0.24\u00b10.12 and contributing approximately 4-9.4% of the total selection response based on two independent estimation methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 quantify the evolutionary impact through targeted genotyping (C46), population genetic modeling (C47-C48), and animal model analysis (C49-C50). The convergence of two independent methods (simulation: 9.4%, animal model: 4%) provides robust estimates of the locus's contribution, though the range suggests some uncertainty in the exact magnitude.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "e0bd67b3-d580-4db6-8055-6a6d7b3e3039",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Selection response can be steady and robust in extremely bottlenecked populations (14-16 breeding pairs, Ne~46), comparable to natural populations, because generation 17 was only a fraction of the way to the expected selection limit at ~2Ne generations (~90 generations).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 interpret the experimental results in the context of population genetic theory and natural populations. The sustained response despite small population size is explained by sufficient standing variation and distance from theoretical limits (C53), with appropriate comparisons to natural populations (C54) and theoretical expectations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "909022a2-4ed0-4a02-955d-d68fdca85ab1",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For short-term selection (20 generations), the response depends overwhelmingly on standing genetic variation with little contribution from de novo mutations, consistent with broad empirical support from nature and breeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 place the results in theoretical context with appropriate citations. The distinction between short-term (standing variation) and long-term (de novo mutations) dynamics is well-established in the literature (C55-C56), and the claim of broad empirical support is appropriately cited (C57).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "6bb21851-7c4f-423d-88a4-bb792389451f",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The mixed genetic architecture observed in Longshanks (polygenic background with major-effect loci) contrasts with highly polygenic human height but resembles domesticated animals (horses, dogs) where strong selection in small populations has concentrated effects in fewer loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 contextualize the findings through comparisons with other species. The contrast between human height (highly polygenic, C60) and domesticated animals (few major loci, C61-C62) is well-documented in cited literature and provides appropriate context for interpreting the Longshanks results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "9ba33616-7a3e-4b75-9358-d67b7592f56b",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Parallelism depends on both shared selection pressure and availability of large-effect loci, as demonstrated by significant parallelism between selected replicates but not between selected lines and Control or between simulated replicates under the infinitesimal model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 establish the conditions for parallelism through empirical observation and comparison to simulations. The lack of parallelism in Control comparisons (C64) and infinitesimal simulations (C65) demonstrates that both selection and large-effect loci are necessary, consistent with evolutionary theory (C63).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "5ae6c67c-0ce8-435b-bd5b-540d7268d138",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The F0 N1 enhancer allele shows deep functional conservation (recapitulates fish fin expression) yet was disfavored in Longshanks selection, demonstrating that selective value depends on selection regime; both loss-of-function (Nkx3-2) and gain-of-function (Gli3) variants were favored, matching tissue-specific effects in human SMMD patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 demonstrate context-dependent selective value through cross-species functional validation (C66), allele frequency trajectories (C67), functional characterization of two loci (C68), and connection to human disease (C69-C71). The convergence of evolutionary, functional, and clinical data provides strong support for the tissue-specific regulatory model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    },
+    {
+      "id": "e5ff4b05-9fa5-4756-8f0b-775c9a7d1c1c",
+      "content_id": "fe7a0552-dd51-4131-b890-3fb28fc0f713",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "It is possible to connect individual base-pair changes to overall selection response, with selection favoring de-repression of bone growth through inactivating Nkx3-2 limb enhancers, and discrete large-effect loci revealed by their parallel response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C72-C74 represent the study's main conclusions, synthesizing the genomic, functional, and evolutionary analyses. The identification of specific SNPs affecting enhancer function (C4), quantification of their contribution (C72), and demonstration that parallelism reveals major loci (C74) collectively support the conclusion that base-pair changes can be connected to selection response (C5, C73).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:27:23.125979Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "be87c0c8-c3f5-424e-a5ba-0f4b95b6633c",
+      "result_id": "cb570450-f9ba-47a1-8722-140395bca004"
+    },
+    {
+      "claim_id": "80f7344a-3e33-4701-a189-56354abd0796",
+      "result_id": "cb570450-f9ba-47a1-8722-140395bca004"
+    },
+    {
+      "claim_id": "bf119cfd-e05a-40a6-beb3-5cf9db0db401",
+      "result_id": "cb570450-f9ba-47a1-8722-140395bca004"
+    },
+    {
+      "claim_id": "2c27e54e-11ca-4759-be52-241b49d910b1",
+      "result_id": "cb570450-f9ba-47a1-8722-140395bca004"
+    },
+    {
+      "claim_id": "e661d294-91b9-42cf-b447-edfd49a25532",
+      "result_id": "cb570450-f9ba-47a1-8722-140395bca004"
+    },
+    {
+      "claim_id": "b46422e3-94e6-43b1-83c2-a47aace3b280",
+      "result_id": "cb570450-f9ba-47a1-8722-140395bca004"
+    },
+    {
+      "claim_id": "d6f3dbf9-d275-4900-ae3d-4db0f82955a9",
+      "result_id": "cb570450-f9ba-47a1-8722-140395bca004"
+    },
+    {
+      "claim_id": "4fc68fbb-7ba1-4a3a-9026-60733b10a2d7",
+      "result_id": "330a3f70-bdf7-4dcb-8975-b43867ffee71"
+    },
+    {
+      "claim_id": "54a69af1-0448-41a6-8d85-89fbb808c797",
+      "result_id": "330a3f70-bdf7-4dcb-8975-b43867ffee71"
+    },
+    {
+      "claim_id": "33114c9c-eaa9-4e9b-9ef1-529d236725ba",
+      "result_id": "330a3f70-bdf7-4dcb-8975-b43867ffee71"
+    },
+    {
+      "claim_id": "0f4b09ae-587e-4af2-b361-4296d02003f6",
+      "result_id": "330a3f70-bdf7-4dcb-8975-b43867ffee71"
+    },
+    {
+      "claim_id": "6959bf96-398d-45d2-90f0-6951fa417fd0",
+      "result_id": "330a3f70-bdf7-4dcb-8975-b43867ffee71"
+    },
+    {
+      "claim_id": "7f2d5184-304c-456b-a561-5ab1f03f3175",
+      "result_id": "b7cca495-9371-4463-9811-cec3350e7135"
+    },
+    {
+      "claim_id": "2eb5c185-42e7-42a1-9048-e011e98b872b",
+      "result_id": "b7cca495-9371-4463-9811-cec3350e7135"
+    },
+    {
+      "claim_id": "68a220d7-0b43-49ae-8948-94b58cb6a3c6",
+      "result_id": "b7cca495-9371-4463-9811-cec3350e7135"
+    },
+    {
+      "claim_id": "cc5a9c6c-a202-4527-98d1-ea84b284f17d",
+      "result_id": "b7cca495-9371-4463-9811-cec3350e7135"
+    },
+    {
+      "claim_id": "36f72178-623e-4378-a717-d1ef0586a7c7",
+      "result_id": "71918725-c40e-483b-9f80-538fdfafc7d0"
+    },
+    {
+      "claim_id": "303ae811-dd83-44bd-b2c2-49d74c1c2637",
+      "result_id": "71918725-c40e-483b-9f80-538fdfafc7d0"
+    },
+    {
+      "claim_id": "788b8f4d-65c4-4f36-9e6e-950db590ba25",
+      "result_id": "71918725-c40e-483b-9f80-538fdfafc7d0"
+    },
+    {
+      "claim_id": "19234079-8764-4bc4-96e5-2c53fc5f91a1",
+      "result_id": "71918725-c40e-483b-9f80-538fdfafc7d0"
+    },
+    {
+      "claim_id": "905d2ce2-c1bb-4f96-b2ea-cc26a1c41564",
+      "result_id": "71918725-c40e-483b-9f80-538fdfafc7d0"
+    },
+    {
+      "claim_id": "75b4a5f9-a869-46cb-a04b-386dc23b3817",
+      "result_id": "644f2d34-e38f-4a04-9b08-2a1c8919f6ff"
+    },
+    {
+      "claim_id": "d0aa041d-c0e8-451a-848c-14d2c11812c0",
+      "result_id": "644f2d34-e38f-4a04-9b08-2a1c8919f6ff"
+    },
+    {
+      "claim_id": "9a6e8d3c-353c-4692-b984-40e845661c12",
+      "result_id": "644f2d34-e38f-4a04-9b08-2a1c8919f6ff"
+    },
+    {
+      "claim_id": "c3a863b3-3ad1-47b9-b8e9-231c24d7c675",
+      "result_id": "644f2d34-e38f-4a04-9b08-2a1c8919f6ff"
+    },
+    {
+      "claim_id": "f39131f9-061c-4b7f-b5b2-efa336ed2552",
+      "result_id": "644f2d34-e38f-4a04-9b08-2a1c8919f6ff"
+    },
+    {
+      "claim_id": "4cf17973-15fb-426b-a53a-8392f9098e14",
+      "result_id": "b574acb2-7de3-4b84-9b15-d4ca421f92f6"
+    },
+    {
+      "claim_id": "19171486-b2c3-4615-b566-140c479bda09",
+      "result_id": "b574acb2-7de3-4b84-9b15-d4ca421f92f6"
+    },
+    {
+      "claim_id": "0ceb2c5b-ea1b-420a-bb98-a4599d84f205",
+      "result_id": "b574acb2-7de3-4b84-9b15-d4ca421f92f6"
+    },
+    {
+      "claim_id": "761cf578-ac2a-4402-b4c0-8e2d7d329de0",
+      "result_id": "b574acb2-7de3-4b84-9b15-d4ca421f92f6"
+    },
+    {
+      "claim_id": "17a66cd5-428f-4f10-9787-98b3b3dcbebd",
+      "result_id": "b574acb2-7de3-4b84-9b15-d4ca421f92f6"
+    },
+    {
+      "claim_id": "b54465d4-6ae1-46a9-8a40-bc4152234f5a",
+      "result_id": "b574acb2-7de3-4b84-9b15-d4ca421f92f6"
+    },
+    {
+      "claim_id": "90ae59cf-3b0f-4ff5-9584-bbd3d90e5926",
+      "result_id": "059274cc-d346-498b-a78c-c56fbb8374da"
+    },
+    {
+      "claim_id": "a5fa423c-a7be-4823-86e7-eac4f898ee3a",
+      "result_id": "059274cc-d346-498b-a78c-c56fbb8374da"
+    },
+    {
+      "claim_id": "b1618c9a-8e4f-4a19-b67c-1212aab6150e",
+      "result_id": "059274cc-d346-498b-a78c-c56fbb8374da"
+    },
+    {
+      "claim_id": "66cef510-0d60-4842-aa25-c21e9b976337",
+      "result_id": "059274cc-d346-498b-a78c-c56fbb8374da"
+    },
+    {
+      "claim_id": "0f0870c0-16b9-499a-ad81-17922cb51eef",
+      "result_id": "059274cc-d346-498b-a78c-c56fbb8374da"
+    },
+    {
+      "claim_id": "d2bc0f8e-a7b4-4ac0-85f3-6cd83079598a",
+      "result_id": "059274cc-d346-498b-a78c-c56fbb8374da"
+    },
+    {
+      "claim_id": "69f18ef9-facd-4570-9b0c-76c4aa20d531",
+      "result_id": "c53432ed-e2a4-4015-912a-37d963fcf762"
+    },
+    {
+      "claim_id": "81e9a5f4-84f0-42de-8a65-bd2404aed0f9",
+      "result_id": "c53432ed-e2a4-4015-912a-37d963fcf762"
+    },
+    {
+      "claim_id": "89822560-71c4-4bbf-b543-eacdd754770d",
+      "result_id": "c53432ed-e2a4-4015-912a-37d963fcf762"
+    },
+    {
+      "claim_id": "cb58de0e-4f03-4900-89d4-78993f9fbba0",
+      "result_id": "c53432ed-e2a4-4015-912a-37d963fcf762"
+    },
+    {
+      "claim_id": "9bc9f4d5-dc03-4fd6-96a1-5290ecf32a06",
+      "result_id": "c53432ed-e2a4-4015-912a-37d963fcf762"
+    },
+    {
+      "claim_id": "040af8a9-32f8-4cd7-bf75-3ad4c89ca2f5",
+      "result_id": "e0bd67b3-d580-4db6-8055-6a6d7b3e3039"
+    },
+    {
+      "claim_id": "c1d01f89-0ab3-41f3-a9f8-111a3ab229da",
+      "result_id": "e0bd67b3-d580-4db6-8055-6a6d7b3e3039"
+    },
+    {
+      "claim_id": "3c230124-6c33-4f51-af07-cb46494ccff9",
+      "result_id": "e0bd67b3-d580-4db6-8055-6a6d7b3e3039"
+    },
+    {
+      "claim_id": "4661e5b7-7e52-4878-8a05-243ea564f065",
+      "result_id": "e0bd67b3-d580-4db6-8055-6a6d7b3e3039"
+    },
+    {
+      "claim_id": "414e1c7e-28c0-49dc-8d8f-39178355ed1a",
+      "result_id": "909022a2-4ed0-4a02-955d-d68fdca85ab1"
+    },
+    {
+      "claim_id": "19973c3c-ab2c-4dad-bb29-38d09f664bd9",
+      "result_id": "909022a2-4ed0-4a02-955d-d68fdca85ab1"
+    },
+    {
+      "claim_id": "aa39d764-2aea-47ce-ba70-e5d65c8d0f31",
+      "result_id": "909022a2-4ed0-4a02-955d-d68fdca85ab1"
+    },
+    {
+      "claim_id": "6f30e6f7-5da7-4fd3-b95a-f2d9c42db1ba",
+      "result_id": "6bb21851-7c4f-423d-88a4-bb792389451f"
+    },
+    {
+      "claim_id": "ae4bd643-1de6-45f2-8359-c9719f64a493",
+      "result_id": "6bb21851-7c4f-423d-88a4-bb792389451f"
+    },
+    {
+      "claim_id": "33f2a9f1-f6fa-4c10-bc44-1e68e255298d",
+      "result_id": "6bb21851-7c4f-423d-88a4-bb792389451f"
+    },
+    {
+      "claim_id": "1cf195c1-4804-4585-99f0-c64f002e4ef6",
+      "result_id": "6bb21851-7c4f-423d-88a4-bb792389451f"
+    },
+    {
+      "claim_id": "b17ed89d-cca1-4627-8526-2d4f687a114c",
+      "result_id": "6bb21851-7c4f-423d-88a4-bb792389451f"
+    },
+    {
+      "claim_id": "7862e656-086e-4d2f-83c1-cd90e404fe71",
+      "result_id": "9ba33616-7a3e-4b75-9358-d67b7592f56b"
+    },
+    {
+      "claim_id": "bbc910a3-ea84-43a7-a81a-6734d160ef9b",
+      "result_id": "9ba33616-7a3e-4b75-9358-d67b7592f56b"
+    },
+    {
+      "claim_id": "0d750f06-be0e-47e1-b22d-ddd587de7ce5",
+      "result_id": "9ba33616-7a3e-4b75-9358-d67b7592f56b"
+    },
+    {
+      "claim_id": "4263f746-a16e-4fe4-9c16-c18f8c5a187a",
+      "result_id": "5ae6c67c-0ce8-435b-bd5b-540d7268d138"
+    },
+    {
+      "claim_id": "01d51bcd-583d-4dff-8617-f37c222116fa",
+      "result_id": "5ae6c67c-0ce8-435b-bd5b-540d7268d138"
+    },
+    {
+      "claim_id": "4ae8516e-9e97-4dcd-a582-2a12f641d1c8",
+      "result_id": "5ae6c67c-0ce8-435b-bd5b-540d7268d138"
+    },
+    {
+      "claim_id": "a6b53328-acef-4af5-aeea-8da9ab559c09",
+      "result_id": "5ae6c67c-0ce8-435b-bd5b-540d7268d138"
+    },
+    {
+      "claim_id": "9458bbb1-8d33-4f06-b969-b840df5530c5",
+      "result_id": "5ae6c67c-0ce8-435b-bd5b-540d7268d138"
+    },
+    {
+      "claim_id": "bdb4f106-654c-4feb-abe8-1f907efadb53",
+      "result_id": "5ae6c67c-0ce8-435b-bd5b-540d7268d138"
+    },
+    {
+      "claim_id": "8749e731-9358-427b-bf69-963668844ec4",
+      "result_id": "e5ff4b05-9fa5-4756-8f0b-775c9a7d1c1c"
+    },
+    {
+      "claim_id": "5e5916fa-165c-4fe4-9a6b-f1140e02bec6",
+      "result_id": "e5ff4b05-9fa5-4756-8f0b-775c9a7d1c1c"
+    },
+    {
+      "claim_id": "7a46d7d3-e2ac-44fc-a04c-66c3eccbec84",
+      "result_id": "e5ff4b05-9fa5-4756-8f0b-775c9a7d1c1c"
+    },
+    {
+      "claim_id": "097960fb-d9a2-4cd7-a826-4478be736b8a",
+      "result_id": "e5ff4b05-9fa5-4756-8f0b-775c9a7d1c1c"
+    },
+    {
+      "claim_id": "a4243c24-a17d-4231-96b6-fbd87b87ea50",
+      "result_id": "e5ff4b05-9fa5-4756-8f0b-775c9a7d1c1c"
+    }
+  ],
+  "comparisons": []
+}

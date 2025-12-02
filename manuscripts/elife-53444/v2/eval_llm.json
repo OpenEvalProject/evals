@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Lam/GramD1 proteins are a family of ER membrane proteins with sterol-binding StARkin domains implicated in intracellular sterol homeostasis. The family includes six members (Lam1\u2013Lam6) in yeast and three members (GramD1a\u2013GramD1c) in mammals, which localize to ER\u2013PM contact sites and play roles in sterol homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C21\u2013C27 collectively establish the identity, composition, and function of the Lam/GramD1 protein family. These claims are supported by multiple citations to prior work and are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Yeast cells lacking Lam proteins are hypersensitive to polyene antibiotics and show delayed sterol esterification, indicating alterations in PM sterol content/organization and PM\u2013ER sterol transport. Similarly, GramD1b knockout mice show severe reductions in adrenal cholesteryl ester content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28\u2013C34 describe phenotypes of Lam/GramD1-deficient cells and organisms that support their role in sterol homeostasis. These claims are well-supported by citations to prior experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Crystal structures of Lam4S2 reveal an \u03b1/\u03b2 helix-grip fold with a capacious binding pocket that admits sterol head-first through an aperture. The binding pocket has a surprisingly polar interior surface and a unique longitudinal fracture that exposes bound sterol to solvent. The \u03a91 loop partially occludes the entryway and is functionally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35\u2013C47 describe structural features of Lam4S2 based on crystal structures and are supported by citations to prior work and structural data shown in figures. The unique fracture feature is a key structural observation that distinguishes Lam/GramD1 domains from other StARkin family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "MD simulations reveal that Lam4S2 docks onto anionic membranes via two modes. Mode 2 (~15% frequency), involving the \u03a91 loop and C-terminal helix, is physiologically relevant, while Mode 1 (~85% frequency) is likely an artifact of simulating the isolated domain. The K163D/K167D double mutant destabilizes Mode 2 and is functionally inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73\u2013C85 describe membrane binding modes identified through MD simulations and validated by mutagenesis experiments. The computational predictions are supported by experimental data showing that the K163D/K167D mutant binds membranes but cannot transport sterol, confirming Mode 1 is non-functional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "MD simulations reveal the mechanistic steps of cholesterol release from Lam4S2. The process begins with widening of the side-entrance via separation of D61 and S181, accompanied by progressive hydration of the binding pocket. Cholesterol remains stably bound initially but becomes destabilized as rising hydration disrupts interactions with Q121.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86\u2013C91 describe the initial steps of sterol release identified through extensive MD simulations (37.5 \u03bcs cumulative time) and tICA analysis. The mechanistic steps are well-characterized through multiple independent trajectories, with 5 out of 100 simulations capturing the complete process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Residues D61, S181, and K89 together stabilize the closed conformation of the side-entrance to the binding pocket. D61 engages in electrostatic interactions with K89, and this interaction is maintained during initial translocation stages but becomes unstable as hydration increases after cholesterol exits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92\u2013C96 identify key residues that control the side-opening and are supported by detailed analysis of MD simulation trajectories. The dynamic behavior of these residues during sterol release is well-documented in the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "MD simulations of K89A, D61A, and S181A mutants show rapid hydration of the sterol-binding site and destabilization of bound cholesterol. The K89A mutant shows the most pronounced effect, with sterol being unstable in all but one replicate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97\u2013C99 describe computational predictions for mutant behavior based on MD simulations (1.5 \u03bcs per mutant). The predictions are consistent with the proposed mechanism and are later validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PMF calculations reveal that cholesterol release from wild-type Lam4S2 requires overcoming an energy barrier of ~6 kcal/mole and proceeds through two major steps. The K89A mutation lowers this barrier to ~3 kcal/mole (approximately half) due to greater hydration of the binding site even when cholesterol is interacting with Q121.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100\u2013C107 present quantitative energetic analysis from umbrella sampling MD simulations. The PMF calculations are methodologically sound, with good overlap between windows and appropriate error analysis. The ~6 kcal/mole barrier is reasonably consistent with experimental estimates of ~10\u201315 kcal/mole (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Cell-based assays show that lam2\u0394 yeast cells are sensitive to nystatin, and this phenotype is rescued by wild-type GFP\u2013Lam4S2. The K89A mutant fails to rescue nystatin sensitivity, while D61A and S181A mutants rescue the phenotype similarly to wild-type. All variants are expressed at equivalent levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108\u2013C116 present functional validation of computational predictions using a well-established yeast phenotype. The experimental design includes appropriate controls (empty vector, wild-type protein) and confirms equivalent expression levels, supporting the conclusion that K89A has a functional deficit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "In vitro sterol extraction assays show that the S181A mutant extracts only ~50% of sterol compared to wild-type, while the K89A mutant has essentially no ability to extract sterol from membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117\u2013C118 present quantitative in vitro data on sterol extraction. The assays are well-controlled, with membrane binding confirmed to be equivalent for all variants, isolating the extraction defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "In vitro sterol exchange assays show that wild-type Lam4S2 increases DHE exchange rate ~7-fold over spontaneous rate. The S181A mutant performs similarly to wild-type, while the K89A mutant has essentially no sterol exchange activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119\u2013C121 present quantitative functional data from FRET-based sterol exchange assays. The data are consistent with the extraction assay results and computational predictions, showing K89A is non-functional while S181A retains activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Three functional tests (nystatin rescue, sterol extraction, sterol exchange) collectively demonstrate that the K89A mutant is compromised in sterol handling and cannot extract or transfer sterol, accounting for its inability to rescue nystatin sensitivity. The S181A mutant's partial extraction defect does not affect its exchange activity or rescue ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122\u2013C126 synthesize results from multiple experimental approaches that converge on consistent conclusions. The functional outcomes align with computational predictions, providing strong validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The mechanism of cholesterol release involves: (1) stochastic widening of the side-opening with water penetration, destabilizing cholesterol by ~4\u20135 kcal/mole; (2) repositioning of the \u03a91 loop to fully expose the binding pocket; (3) overcoming a total energy barrier of ~6 kcal/mole. This computational estimate is in reasonable agreement with experimental estimates of ~10\u201315 kcal/mole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48\u2013C60 present a comprehensive mechanistic model supported by extensive MD simulations and PMF calculations. The agreement between computational (~6 kcal/mole) and experimental estimates (~10\u201315 kcal/mole) is reasonable given the assumptions and approximations involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The K89A mutation lowers the energy barrier for cholesterol release by ~2-fold and is experimentally non-functional. The S181A mutant is partially compromised in sterol binding but retains ability to rescue nystatin sensitivity and exchange sterols. The D61A mutant performs as well as wild-type in rescuing nystatin sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61\u2013C66 integrate computational predictions with experimental validation. The K89A results show strong agreement between prediction and experiment. The S181A results reveal an interesting disconnect between binding and function that warrants further investigation but does not undermine the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "K89 and S181 are highly conserved in the Lam/GramD1 family. The corresponding residue K910 in Lam2S1 is positioned differently in sterol-bound vs. apo structures, leading to speculation about its role in sterol movement. MD simulations confirm that K89 in Lam4S2 repositions during cholesterol release as part of larger-scale dynamic changes involving D61 and S181.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67\u2013C72 connect structural observations from other family members to the current findings, strengthening the generalizability of the mechanism. The conservation analysis and structural comparisons support the functional importance of these residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Lam/GramD1 StARkin domains specifically bind sterols and admit/export them through an aperture at the end of their long axis. The mechanism of sterol egress controlled by water entry via the lateral fracture is potentially general for all Lam/GramD1 StARkin domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127\u2013C130 present the main conclusion of the study. The mechanism is well-supported by the combination of structural data, extensive MD simulations, and experimental validation. The generalizability is supported by structural comparisons showing the fracture is present in all Lam/GramD1 domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The StARkin domain has an aperture for sterol entry/exit and a longitudinally fractured wall exposing bound sterol to solvent. MD simulations reveal sterol egress involves fracture widening, water penetration, and sterol destabilization. Polar residues along the fracture are important for sterol release, and their alanine replacement affects sterol binding, inter-vesicular exchange, and nystatin-sensitivity rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3\u2013C11 summarize the main findings presented in the abstract. These are supported by the detailed structural, computational, and experimental data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Cholesterol is synthesized in the ER and transported to the PM by non-vesicular mechanisms using lipid transport proteins that operate as molecular ferries. StART domain-containing proteins constitute a major family of such transporters, moving glycerophospholipids, ceramide, and sterol between membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14\u2013C20 provide established background knowledge supported by appropriate citations. These claims set the context for the study but do not represent new findings.",
+    "result_type": "MINOR"
+  }
+]

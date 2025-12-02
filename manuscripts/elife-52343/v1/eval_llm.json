@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C89",
+      "C140",
+      "C141"
+    ],
+    "result": "The authors discovered an anion-dependent conformational switch in the CK1 activation loop that controls substrate selectivity between the FASP and Degron sites on PER2, thereby regulating PER2 stability and circadian timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C32-C34, C89, C140-C141 collectively demonstrate the activation loop switch mechanism through crystallographic structures (C32, C89), kinase assays showing differential substrate selectivity (C3, C33-C34), and PER2 stability measurements (C4). The structural and functional data converge to support this central finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C60",
+      "C62"
+    ],
+    "result": "The tau mutation (R178C) inverts CK1 substrate selectivity, exhibiting reduced activity on the stabilizing FASP region while showing increased activity on the destabilizing Degron site, both in vitro and in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C44-C48, C51-C53, C56-C57, C60, C62 provide convergent evidence from multiple assay types (radioactive kinase assays, NMR, ELISA, Western blots) demonstrating tau's inverted substrate preference. The consistency across in vitro peptide assays and cellular experiments strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C91"
+    ],
+    "result": "The tau mutation disrupts anion binding at Site 1 and unexpectedly causes loss of anion binding at Site 2 through an alternate activation loop conformation initiated by a backbone rotation at G175.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C91 are supported by crystallographic data showing the structural changes in tau. The 2Fo-Fc omit maps (referenced in supplementary figures) and the clear structural differences at both anion binding sites provide strong evidence for this allosteric mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The CK1 activation loop switch is an intrinsic property of the kinase, with both 'loop up' and 'loop down' conformations observed in crystal structures, though the 'loop up' conformation is rare and has only been captured in tau and one WT structure (PDB: 1CKJ).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C83-C85 are supported by crystallographic analysis of multiple structures. The survey of 68 chains from 26 structures (C85) provides strong statistical evidence that the 'loop up' conformation is rare, and the good electron density for both conformations (C79) validates the structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Molecular dynamics simulations reveal that the 'loop down' conformation is intrinsically stable in both WT and tau, but tau better tolerates the 'loop up' conformation with fewer conformational transitions compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by GaMD simulation data showing RMSD trajectories. The simulations used appropriate methodology (5 replicas of 500 ns each) and the RMSD analysis clearly demonstrates differential stability of the activation loop conformations between WT and tau.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C107"
+    ],
+    "result": "In tau, the 'loop down' conformation of the activation loop causes allosteric disorganization of loop L-EF, which in turn closes the substrate binding cleft, providing a mechanism for tau's reduced activity on FASP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101, C107 are supported by MD simulation data showing increased RMSD of loop L-EF in tau (Figure 4G-H) and volumetric analysis demonstrating substrate binding cleft closure (Figure 4K). The allosteric mechanism is well-supported by the computational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Site 2 mutants (R127E, K154E, K171E) that disrupt anion binding show modest decreases in FASP activity but significant increases in Degron activity, making them functionally similar to tau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by kinase assay data (Figure 2G, Supplementary file 1b) and structural data (Figure 2\u2014figure supplement 1). The ~25% decrease in FASP activity and ~50% increase in Degron activity for R127E are quantified with appropriate replicates (n=3-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Short period mutants from humans and Drosophila (T44A, H46R, P47S, K224D) exhibit differential effects on FASP and Degron phosphorylation, with some retaining FASP priming activity while enhancing Degron phosphorylation through distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129, C132-C134 are supported by Western blot data (Figure 7A-D) and NMR data (Figure 7E) showing site-specific phosphorylation patterns. The distinction between tau (affecting both priming and downstream phosphorylation) and K224D (affecting only downstream consensus sites) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C138",
+      "C139"
+    ],
+    "result": "There is a significant correlation (R\u00b2=0.75) between the ratio of CK1 enzyme efficiency on FASP versus Degron sites and PER2::LUC half-life, demonstrating that activation loop dynamics directly control PER2 stability through the phosphoswitch mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136, C138-C139 are supported by PER2::LUC half-life measurements (Figure 7G) and correlation analysis (Figure 7H). The significant correlation with appropriate statistical analysis (n=4 for half-life, n=3-4 for enzyme efficiencies) provides strong evidence linking kinase substrate selectivity to PER2 stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Principal component analysis of MD simulations reveals that WT CK1 samples more open conformations (PC1) and extended loop L-EF conformations (PC2) compared to tau, which favors closed and collapsed conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 are supported by PCA analysis of GaMD trajectories (Figure 5). The analysis appropriately identifies the principal modes of motion and quantifies the differential sampling between WT and tau through histogram analysis of PC projections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Volumetric analysis of MD simulations shows that the substrate binding cleft and Site 2 accessibility are differentially regulated by activation loop conformation in WT versus tau, with tau showing more consistent cleft opening in the 'loop up' state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by volumetric analysis using POVME 3.0 (Figure 4I-L). The methodology is appropriate and the results clearly demonstrate differential accessibility patterns between WT and tau in different activation loop states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C145",
+      "C146"
+    ],
+    "result": "The surface-exposed area linking anion binding sites and the substrate binding cleft shows \u226595% sequence identity across 20 species from humans to unicellular algae, suggesting broad conservation of the activation loop switch mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122, C145-C146 are supported by sequence alignment data (Figure 6\u2014figure supplement 1). The high conservation is well-documented, though C146 (broad applicability) is somewhat speculative. The conservation data strongly supports potential generalizability but does not directly demonstrate function in other organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C46",
+      "C50"
+    ],
+    "result": "CK1 phosphorylates the FASP region through a two-step mechanism: slow priming at S659 followed by rapid sequential phosphorylation of downstream consensus sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C46, C50 are supported by citations to previous work by the authors (Narasimamurthy et al., 2018) and confirmed by kinase assay data in the current manuscript. This establishes the mechanistic framework for understanding tau's effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The phosphoswitch mechanism remains functional in tau, as evidenced by increased Degron phosphorylation in the S659A mutant that eliminates FASP phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by Western blot data (Figure 1L) showing that both WT and tau respond to the S659A mutation with increased Degron phosphorylation. This demonstrates that tau can still be regulated by the phosphoswitch despite its altered substrate preference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Residues coordinating anion binding are broadly conserved in the CK1 family, and anions are found bound at Sites 1, 2, and 3 in other CK1 family kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by sequence analysis (Supplementary file 1c) and structural comparisons with other CK1 family members. The conservation data is well-documented and supports the generalizability of the anion binding mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Nearly all previous CK1 structures were crystallized with high concentrations of sulfate or citrate anions, which likely disfavored observation of the alternate 'loop up' conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by citations to previous structural studies and the logical inference that high anion concentrations would stabilize the 'loop down' conformation. The inference is reasonable given the structural incompatibility of anion binding at Site 2 with the 'loop up' conformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Y225 displays more conformational freedom in tau compared to WT and may coordinate the activation loop conformation with activity at Site 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is supported by MD simulation data (Figure 4\u2014figure supplement 1), but C98 is speculative. While Y225's position adjacent to K224 and its contact with L173 suggest a potential coordinating role, no direct functional evidence is provided to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Drosophila DBT mutations show period-altering phenotypes similar to mammalian CK1, with mutations mapping to catalytically important regions and the activation loop, and mammalian CK1 with tau or dbtS mutations can rescue fly circadian phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 are supported by citations to previous studies and structural mapping (Figure 6). The conservation of function across species is well-documented in the literature, though the current study does not provide new experimental data on Drosophila.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Regulatory anion binding at conserved sites could arise from phosphorylated CK1 itself (in cis via autoinhibitory tail) or from phosphorylated substrates (in trans), and changes in the autoinhibitory tail could alter circadian period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C149 are speculative hypotheses supported by citations to previous work on CK1 autoinhibition but not directly tested in this study. While the speculation is reasonable given the structural findings, no experimental evidence is provided to test these specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "The conformational equilibrium of the activation loop may contribute to temperature-compensated activity of CK1\u03b4/\u03b5 linked to loop L-EF dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C151 is speculative, connecting the current findings to previous observations about temperature compensation (Shinohara et al., 2017). While the connection is plausible given loop L-EF's involvement in both mechanisms, no temperature-dependent experiments are performed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims establishing the role of CK1 and PER2 in circadian rhythm regulation, including the phosphoswitch mechanism and clinical relevance of mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C27 are background knowledge supported by extensive citations to previous literature. These establish the scientific context for the current study and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Discussion claims about the broader implications of CK1 regulation, including its role in other cellular processes and the importance of low kinase activity for slow circadian timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C158 are discussion points supported by citations to previous literature. These contextualize the findings within broader biological questions, though some aspects (C157) are somewhat speculative. The citations provide adequate support for the general statements.",
+    "result_type": "MINOR"
+  }
+]

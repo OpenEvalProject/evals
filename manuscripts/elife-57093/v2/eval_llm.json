@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "A tracking microscope system was developed that collects brightfield images at 20 Hz and 1.4 \u03bcm/pixel resolution, maintains animals in view for hours to days via closed-loop tracking, and enables storage of approximately 1.7 million images per animal per day through live data compression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe the technical specifications and capabilities of the tracking microscope platform. The imaging parameters (C1), tracking duration (C2), and data storage capacity (C3) are explicitly stated with specific quantitative values. These are methodological claims about the instrument's performance that are directly verifiable from the manuscript's description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Analysis of C. elegans motor programs reveals coordination between different behaviors: egg-laying events predominate during rapid forward locomotion, defecation events occur most commonly during slow or reverse movement, body postures co-vary considerably with velocity, and both egg-laying and defecation occur during stereotyped posture and locomotion changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 describe correlations between different motor programs observed in the behavioral data. The manuscript presents these relationships based on analysis of velocity-binned data (Figure 1F) and event-triggered averages (Figure 1\u2014figure supplement 3), with C7 citing previous reports of similar observations. The data support these descriptive findings about behavioral coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Unsupervised classification using a Hidden Markov Model with nine hidden states identified one roaming state (high velocity, low angular speed, lasting tens of seconds to minutes) and eight dwelling sub-modes with lower velocities but maintained pumping and defecation rates. The dwelling sub-modes displayed distinct stereotyped postures, averaged ~10 s in duration, and animals transitioned between them in a non-random fashion. The posture-HMM provided a significantly better match to actual animal data than alternative continuous models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 describe the HMM analysis and its results. The nine-state model was selected based on BIC criteria (C8), with one state matching previously defined roaming (C9) and eight dwelling sub-modes characterized by specific behavioral parameters (C10-C14). The model validation (C15) compared the HMM to alternative models. The statistical approach is appropriate, model convergence was verified (Figure 2\u2014figure supplement 2E-F), and the results are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Motor programs differ across behavioral states: egg-laying rates are highest during roaming with smaller but significant differences among dwelling sub-modes, defecation rates differ significantly between states while feeding rates remain constant, and animals display universally higher egg-laying rates during roaming compared to dwelling even when matched for velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe state-dependent differences in motor program outputs. The manuscript presents quantitative data on egg-laying, defecation, and feeding rates across the nine HMM states (Figure 2E). Critically, C18 describes a velocity-matched analysis (Figure 2F) that controls for the confounding effect of speed, demonstrating that the roaming-dwelling difference in egg-laying persists independent of velocity. This analysis strengthens the conclusion about state-dependent coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Genetic analysis of neuromodulator mutants reveals that serotonin (tph-1), PDF (pdfr-1), tyramine/octopamine (tdc-1, tbh-1) are not specifically required for coupling egg-laying to roaming states. tph-1 mutants show reduced dwelling and feeding but intact egg-laying coupling to roaming; pdfr-1 mutants have broad roaming deficits that may explain their egg-laying phenotype; tdc-1 and tbh-1 mutants maintain higher egg-laying during roaming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe negative results from neuromodulator mutant screens. The manuscript presents behavioral data for each mutant (Figure 3A-B) showing that while these neuromodulators affect various aspects of behavior, the coupling of egg-laying to roaming remains largely intact. The interpretations (C20, C22) are reasonable given the data, though C22 appropriately notes uncertainty about whether pdfr-1 effects are direct or indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Dopamine-deficient cat-2 mutants display a striking loss of coupling between egg-laying and roaming: they show robust roaming states with dramatically reduced egg-laying during roaming but unaltered egg-laying during dwelling. The mutants travel at higher velocity than wild-type while roaming but display the same postures, and show only modest overall reduction in egg-laying because dwelling is more prevalent. The phenotype was confirmed with a second independent allele and rescued by transgenic cat-2 expression, demonstrating that dopamine is necessary for proper coupling of egg-laying to the roaming state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34 describe the key cat-2 mutant phenotype. The manuscript presents comprehensive data including behavioral measurements across states (Figure 3A), two independent alleles (C31, Figure 3C-D), and genetic rescue (C32, Figure 3\u2014figure supplement 1C). The control experiment with egl-1 mutants (C34) rules out floor effects. The state-specific nature of the phenotype (reduced egg-laying during roaming but not dwelling) is well-documented and supports the conclusion about dopamine's role in motor program coupling (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Dopamine receptor analysis reveals that none of the seven single dopamine receptor mutants show egg-laying phenotypes, but animals lacking both D2-like receptors dop-2 and dop-3 display reduced egg-laying during roaming but not dwelling, closely matching the cat-2 phenotype. The dop-2;dop-3 double mutants display normal velocities during roaming, indicating the egg-laying effect is not due to indirect locomotion changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 describe the dopamine receptor screen. The manuscript presents data for all seven receptors (Figure 3E, Figure 3\u2014figure supplement 1E, Figure 3\u2014figure supplement 2) showing that only the dop-2;dop-3 double mutant phenocopies cat-2. The observation that dop-2;dop-3 mutants have normal roaming velocity but reduced egg-laying (C38) is critical for ruling out indirect effects and is supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The coupling of egg-laying to roaming increases egg dispersal across the food source: eggs laid during roaming are farther apart than those laid during dwelling, and dopamine-defective mutants (cat-2 and dop-2;dop-3) show significantly reduced egg dispersal and lay a higher fraction of eggs during dwelling. This coupling could have important implications for progeny survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 describe the functional consequences of state-dependent egg-laying. The manuscript presents two complementary analyses: nearest-neighbor distances (C39, Figure 4A) and spatial dispersal across explored area (C40, Figure 4B-C). Both metrics show greater dispersal during roaming, and both dopamine pathway mutants show reduced dispersal (C41-C42). The interpretation about adaptive significance (C43) is appropriately presented as speculative ('could have important implications').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Optogenetic silencing of dopaminergic neurons (dat-1::GtACR2) causes lower egg-laying rates that persist during light exposure, with effects specific to roaming states (reduced egg-laying during roaming but only mild, non-significant effects during dwelling). The manipulation has no significant effects on feeding or defecation and only small, transient effects on locomotion, suggesting dopaminergic neurons acutely promote egg-laying in adult roaming animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe optogenetic silencing experiments. The manuscript presents data showing reduced egg-laying during light exposure (Figure 5A-B) with state-specific analysis demonstrating effects primarily during roaming (C45). Controls show minimal effects on other behaviors (C46, Figure 5\u2014figure supplement 1B-E), supporting the specificity of the manipulation. The conclusion (C47) is appropriately drawn from these acute manipulation experiments combined with the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Optogenetic activation of dopaminergic neurons (dat-1::CoChR) for three minutes causes elevated egg-laying rates that persist throughout light exposure but are not time-locked to light onset (unlike HSN activation which triggers egg-laying within seconds). Light exposure elevates egg-laying during dwelling but not during roaming, arguing against a model where downstream circuits only respond to dopamine during roaming. The lack of enhancement during roaming may reflect an occlusion effect due to already high egg-laying rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 describe optogenetic activation experiments. The manuscript presents data showing increased egg-laying during light exposure (Figure 5C-D) with state-specific effects (C52). The comparison to HSN activation (C50) provides important context for interpreting the temporal dynamics. The interpretation that activation during dwelling increases egg-laying (C53) is well-supported, while the explanation for lack of effect during roaming (C54) is appropriately presented as speculative ('may reflect').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Optogenetic silencing and activation of dopaminergic neurons cause opposite effects on egg-laying but the same velocity changes (transient decrease at light onset, transient increase at light offset), demonstrating that the egg-laying effects cannot be explained as indirect consequences of altering locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 describe a critical control analysis. The manuscript shows that both manipulations produce similar transient velocity changes (Figure 5\u2014figure supplement 1A) despite opposite effects on egg-laying. This dissociation strongly supports the conclusion that dopamine's effects on egg-laying are not mediated indirectly through locomotion changes, addressing a key alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Animals have dramatically lower egg-laying rates off food, and dopamine signaling is thought to be elevated in the presence of food. Optogenetic activation of dopaminergic neurons (dat-1::CoChR) can drive animals to lay eggs in the absence of food at significantly higher rates. Together, these data suggest that native dopaminergic neuron activity increases egg-laying probability during roaming states, and exogenous dopaminergic activity during dwelling or off food is sufficient to enhance egg-laying rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe off-food optogenetics experiments and overall conclusions. The background claims (C57-C58) are supported by citations. The off-food activation experiment (C59, Figure 5E-F) demonstrates that dopamine can promote egg-laying even in the absence of food, a condition where egg-laying is normally suppressed. The summary conclusions (C60-C61) appropriately integrate the genetic and optogenetic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Among dopaminergic neurons, CEPD, CEPV, and ADE have static calcium levels during food exploration without locomotion speed-dependent dynamics, while PDE neurons display robust calcium dynamics. PDE neurons have ciliated sensory dendrites on the dorsal posterior body and axons traveling along the ventral nerve cord, making PDE the only dopaminergic neuron whose neurite passes close to the egg-laying circuit and vulval muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe calcium imaging of dopaminergic neurons. The manuscript presents data showing that three neuron types (CEPD, CEPV, ADE) lack speed-dependent dynamics (C62, Figure 6\u2014figure supplement 1A) while PDE shows robust dynamics (C63, Figure 6A-B). The anatomical descriptions (C64-C66) are stated as established knowledge about C. elegans neuroanatomy and are relevant for interpreting PDE's potential role in egg-laying.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "PDE calcium dynamics are significantly increased during high-speed movement, particularly during roaming, and are highly correlated with body curvature (most active when dorsal posterior muscles are contracted). This correlation is present during both roaming and dwelling, causing PDE activity to oscillate during roaming with significant elevation during a specific phase of each sinusoidal propagating wave. PDE displays reduced dynamics during forward locomotion off food, and the posture-fluorescence relationships are not due to motion artifacts (verified with PDE::GFP control).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 describe detailed characterization of PDE activity patterns. The manuscript presents quantitative data on speed-dependence (Figure 6A), posture correlations (Figure 6B-C), phase-locking during roaming (Figure 6D-E), food-dependence (Figure 6\u2014figure supplement 1D), and motion artifact controls (Figure 6\u2014figure supplement 1E-F). The comprehensive analysis with appropriate controls supports these conclusions about PDE dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Egg-laying events are strongly biased to a specific phase of the sinusoidal wave during roaming, with the phase of maximal PDE activity overlapping with and shortly preceding the phase of maximal egg-laying. The postural changes preceding egg-laying during roaming are distinct from those during dwelling, even though animals adopt similar postures at the moment of egg-laying. The animal's gait during roaming leads to unique coupling of body curvature to egg-laying that causes PDE activity to shortly precede the typical egg-laying posture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 describe the temporal relationship between PDE activity and egg-laying. The manuscript presents data on phase-dependence of egg-laying (Figure 6F) and the temporal relationship to PDE activity (C75). The observation about distinct postural trajectories (C76, Figure 6\u2014figure supplement 1G) provides important context. The interpretation (C77) reasonably integrates these observations to explain the mechanistic relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Dopamine-deficient cat-2 mutants show a significant decrease in phase-dependence of egg-laying during roaming, and this difference is not due to general changes in body postures during roaming (wild-type and cat-2 mutants display similar postures during forward propagating waves). These data suggest that dopaminergic PDE neuron activity is phase-locked to egg-laying events during roaming and that dopamine signaling is required for proper coordination of body posture and egg-laying during roaming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe the effect of dopamine deficiency on phase-dependent egg-laying. The manuscript presents data showing reduced phase-dependence in cat-2 mutants (Figure 6G) and rules out the confound that this is due to altered postures (C79, Figure 6\u2014figure supplement 1H-I). The conclusion (C80) appropriately integrates the PDE imaging and cat-2 mutant data to support the role of dopamine in coordinating posture and egg-laying.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Optogenetic activation of dopaminergic neurons (dat-1::CoChR) still elevates egg-laying in acr-2 mutants (suggesting cholinergic transmission in ventral cord neurons is not essential), but has reduced effects in egl-1 and lin-39 mutants and fails to elevate egg-laying in unc-25 mutants. The requirement for HSN and VCs is not surprising given their central role in egg-laying, but the role of GABAergic signaling in egg-laying has not been well-studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 describe genetic epistasis experiments to identify downstream effectors. The manuscript presents data for multiple mutant backgrounds (Figure 7A) showing differential requirements for different circuit components. The interpretation (C84) appropriately contextualizes the HSN/VC requirement, while noting (C85) that the GABA requirement is more novel and warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In C. elegans, GABA is produced by neurons in the head/tail and by VD/DD motor neurons in the ventral cord. Optogenetic activation of dopaminergic neurons fails to elevate egg-laying in unc-30 mutants (which lack GABA in VD/DD neurons), indicating GABA production by VD/DD neurons is critical. Previous work showed that muscimol (GABAA agonist) inhibits egg-laying, but effects of reducing GABAergic signaling on egg-laying had not been previously examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 describe the GABAergic system and its role in dopamine-dependent egg-laying. The anatomical description (C86) is established knowledge. The unc-30 experiment (C87) localizes the GABA requirement to VD/DD neurons. The citations to previous work (C88-C89) appropriately contextualize the novelty of examining loss-of-function effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "unc-25 mutants (deficient in GABA synthesis) have slightly lower brood size (~220 vs ~280 eggs) and extended egg-laying period (5-6 vs 3-4 days), resulting in lower egg production on day 1 but higher production on days 5-6. One-day-old unc-25 mutants show relatively increased egg-laying during dwelling compared to roaming (after adjusting for lower production) and elevated egg-laying off food. These results indicate that native GABAergic signaling regulates egg-laying, playing an inhibitory role during dwelling and off food, consistent with previous muscimol findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 describe the characterization of unc-25 mutants. The manuscript presents data on brood size and timing (Figure 7B), state-dependent egg-laying (Figure 7C), and off-food egg-laying (Figure 7D). The conclusion about GABA's inhibitory role (C94) is well-supported by the data, and the connection to previous work (C95) is appropriate. The analysis appropriately accounts for the reduced overall egg production when assessing state-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "One possible explanation for the requirement of GABAergic signaling for dopamine-dependent egg-laying is that dopamine release may inhibit GABAergic neurons that function to inhibit egg-laying.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 proposes a speculative mechanistic model. While this is a reasonable hypothesis given that (1) GABA appears to inhibit egg-laying and (2) GABA is required for dopamine-dependent egg-laying, the manuscript does not provide direct evidence for this specific circuit architecture. The claim is appropriately presented as speculative ('one possible explanation'), but additional experiments would be needed to test this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Background on C. elegans nervous system and behavioral states: The nervous system consists of 302 neurons acting on 143 muscle cells, generating motor programs for locomotion, egg-laying, feeding, defecation, and postural changes. Animals display various behavioral states including sleep-like states, roaming/dwelling states on food, and area-restricted search/dispersal states off food. These states last minutes to hours with abrupt transitions. Neuromodulators including serotonin, PDF, dopamine, tyramine, octopamine, and various neuropeptides regulate these states, with command-like neurons (NSM for dwelling, ALA for sleep) capable of driving state changes. Individual neuromodulators can have cell-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C111 provide background information about C. elegans neurobiology and behavioral states. These claims are well-supported by extensive citations to previous literature and represent established knowledge in the field. The manuscript appropriately uses this background to contextualize the current study's focus on motor program coordination across behavioral states.",
+    "result_type": "MINOR"
+  }
+]

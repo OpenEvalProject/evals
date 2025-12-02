@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "HDR enzymes from different plant species produce vastly different DMAPP:IPP ratios, ranging from almost exclusive IPP production to almost exclusive DMAPP production, with up to 40-fold variation. This variability is intrinsic to the HDR enzymes themselves and not due to differences in expression levels of other pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C39, C44, C49, and C50 are directly supported by experimental data in Figure 2a showing variable DMAPP:IPP ratios across HDR enzymes. Claims C46-C48 provide critical proteomics controls demonstrating that the observed differences are not artifacts of differential expression of native E. coli enzymes or pathway components. The 40-fold variation (C44) is quantitatively supported by the data, and the conclusion that the 1:5 ratio is an exception (C45) logically follows from the observed spectrum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C51",
+      "C55",
+      "C59",
+      "C60"
+    ],
+    "result": "High DMAPP:IPP ratios produced by HDR correlate with volatile isoprenoid emission patterns and enable isoprene production. HDR enzymes from species known to emit volatile isoprenoids produce considerably more DMAPP, and this increased DMAPP:IPP ratio is an important prerequisite for isoprene production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C42, C51, and C55 are supported by experimental data comparing DMAPP:IPP ratios (Figure 2a) with isoprene production (Figure 2b) and known emission profiles (Table 1). The correlation is demonstrated across multiple species. Claims C59 and C60 represent reasonable inferences from this data, though the causal relationship is demonstrated in a heterologous system rather than in planta.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C61"
+    ],
+    "result": "A high DMAPP:IPP ratio is necessary but not sufficient for volatile isoprenoid emission in vivo. Species like P. persica and R. communis have HDRs that produce high DMAPP:IPP ratios and enable isoprene production in E. coli, but do not emit isoprene naturally because they lack isoprene synthase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by experimental data (Figure 2a, 2b) showing high DMAPP production and isoprene production in E. coli, combined with Table 1 documenting the absence of isoprene synthase in these species. Claim C61 is a logical inference that is well-supported by this evidence, demonstrating that HDR adaptation is necessary but requires the presence of appropriate downstream enzymes for volatile emission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Gymnosperms employ a different strategy for HDR adaptation, with two phylogenetically distant HDR paralogues showing functional specialization. In P. sitchensis, HDR1 produces predominantly IPP while HDR2 produces predominantly DMAPP (>10-fold excess), with complementary product ratios suggesting tissue-specific roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are directly supported by experimental data in Figure 2d-e showing complementary DMAPP:IPP ratios for PsHDR1 and PsHDR2. Claims C67, C78 are supported by phylogenetic analysis (Figure 3). Claims C68-C69 are supported by citations to transcriptional studies. The proposed model of functional specialization (C75, C79, C80) is a reasonable inference from the experimental data and phylogenetic patterns, though direct in planta validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The relative differences in DMAPP:IPP ratios between HDR enzymes remain consistent when changing the downstream metabolic sink from lycopene to isoprene production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by experimental data in Figure 2c comparing selected HDRs with both lycopene and isoprene as metabolic sinks. While absolute values shift based on substrate requirements, the relative ordering of HDRs remains similar, validating that the experimental system captures representative enzyme differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C70",
+      "C71"
+    ],
+    "result": "Functional HDR genes were identified from all tested species through complementation assays, though some HDRs showed dose-dependent toxicity when overexpressed, possibly due to prenyl phosphate accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by complementation data (Figure 2\u2014figure supplement 1a-b). Claim C71 is supported by growth rate data (Figure 2f). Claim C38 and C70 represent reasonable speculation supported by citation to George et al., 2018, though the mechanism of toxicity is not directly demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The choice of HDR enzyme is important for metabolic engineering applications to ensure appropriate DMAPP:IPP ratios for balanced pathway flux and to avoid substrate toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by the experimental observations showing that only certain HDRs enable isoprene production (Figure 2b) and that some HDRs cause toxicity (Figure 2f). This represents a practical application of the findings for biotechnology, though the claim is somewhat inferential regarding optimal pathway design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Previous studies in diverse organisms found HDR produces DMAPP:IPP ratios between 1:4 and 1:6, leading to the assumption of a fixed ~1:5 ratio. However, none of these previously studied species produce significant amounts of volatile isoprenoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 accurately summarize prior literature with appropriate citations (Rohdich et al., 2003; Altincicek et al., 2002; Adam et al., 2002; Tritsch et al., 2010; Wiedinmyer et al., 2020). This establishes the knowledge gap that motivated the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Phylogenetic analysis reveals that high DMAPP-producing HDR proteins cluster together based on sequence similarity, with homologues within angiosperm species being highly similar, while gymnosperms have two separate groups of likely paralogous HDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by phylogenetic analysis shown in Figure 3. The clustering of high DMAPP-producing HDRs and the distinct gymnosperm paralogue groups are clearly demonstrated in the phylogenetic tree.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Many plants encode more than one HDR gene, with homologues often being closely related and likely arising from relatively recent large-scale genome duplications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by phylogenetic data (Figure 3) and citation to Saladi\u00e9 et al., 2014. The observation of multiple HDR genes and their evolutionary origin through genome duplication is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C62",
+      "C93",
+      "C94"
+    ],
+    "result": "HDR adaptation plays a previously unrecognized role in determining carbon availability for isoprenoid emissions and represents a key junction in the evolution of volatile isoprenoid production, with implications for global biosphere-atmosphere interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C8, C93, and C94 represent reasonable inferences from the experimental data, they extend beyond what is directly demonstrated. The experiments were conducted in E. coli, not in planta, so the in vivo role in plants remains to be validated. Claim C62 about evolutionary significance is supported by citation to Dani et al., 2014 regarding the evolutionary pattern of isoprene emission, but the causal role of HDR in this evolution is inferential. The global implications require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C33",
+      "C34",
+      "C35",
+      "C63",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Background information on volatile isoprenoid emissions, their atmospheric impacts, biosynthetic pathways, and the knowledge gap regarding carbon allocation between volatile and non-volatile isoprenoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are supported by appropriate citations to established literature. They accurately represent current knowledge about isoprenoid biosynthesis, emissions, and atmospheric chemistry. The knowledge gap identified (C2, C21) motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Demands from downstream metabolism may determine IPP and DMAPP requirements and could form an evolutionary driver for HDR enzymatic activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is explicitly speculative and represents a hypothesis about evolutionary mechanisms. While plausible given the experimental findings, this claim lacks direct experimental support and would require evolutionary studies to validate.",
+    "result_type": "MINOR"
+  }
+]

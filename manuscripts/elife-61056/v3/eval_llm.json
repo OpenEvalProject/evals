@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on JCPyV and PML: JCPyV is a prevalent human virome member that causes PML, a fatal demyelinating brain disease, particularly in immunocompromised individuals. JCPyV-PML variants contain mutations in the noncoding control region (NCCR) and VP1 capsid protein, with common VP1 mutations including L54F and S268F/Y. These mutations have been reported to alter receptor binding and evade neutralizing antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 establish well-documented background information about JCPyV, PML, and associated viral mutations, all supported by appropriate citations to prior literature. These claims provide essential context for the study but represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "MuPyV as a model system: MuPyV shares key features with JCPyV including persistent infection, kidney tropism, and immune control. Both viruses have similar structural properties with ~45 nm capsids composed of VP1 pentamers. The S268 residue of JCPyV corresponds to V296 of MuPyV VP1, mapping to the same capsid position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 establish the rationale for using MuPyV as a model system and provide structural context, all supported by appropriate citations. The correspondence between JCPyV S268 and MuPyV V296 (C23) is critical for the study design and is properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "V296F mutation impairs kidney but not brain tropism: MuPyV carrying the V296F VP1 mutation showed significantly reduced kidney infection (4 dpi and 7 dpi) but equivalent brain infection compared to parental A2 virus. In competitive infections, A2.V296F was outcompeted in kidney and bone marrow but maintained 1:1 ratios with A2 in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C37 present a major finding with strong experimental support from multiple approaches (single infections, competitive infections, different routes of inoculation). The data consistently demonstrate organ-specific tropism differences. Statistical significance is reported (p<0.0001 for kidney differences, p>0.05 for brain equivalence), and multiple time points and experimental designs support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "V296F retains CNS pathology: Both A2 and A2.V296F induced comparable hydrocephalus, ependymal damage, choroid plexus dysplasia, and immune cell infiltration at 30 days post-infection, demonstrating that the V296F mutation preserves the encephalogenic properties of the parental virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are well-supported by histological and immunofluorescence data (Figure 2). Statistical analysis shows no significant difference between A2 and A2.V296F in hydrocephalus (p=0.9806) or vimentin+ region thickness (p=0.4626), supporting the conclusion that CNS pathology is retained despite the mutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "V296F confers resistance to neutralizing antibody 8A7H5: The V296F mutation rendered MuPyV completely resistant to neutralization by mAb 8A7H5 in vitro and in vivo. Substitutions to tyrosine or tryptophan also conferred resistance, while alanine or isoleucine did not. The 8A7H5 epitope overlaps with the dominant endogenous antibody response, as demonstrated by competition assays showing 8A7H5 blocks >80% of polyclonal anti-VP1 IgG binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 demonstrate antibody escape with multiple lines of evidence: in vitro neutralization assays, viral spread assays, in vivo passive immunization experiments, and competition ELISAs. The structure-function relationship is explored through systematic mutagenesis. Statistical significance is consistently demonstrated (p<0.0001 for most comparisons), and the findings are internally consistent across different experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "High-resolution cryo-EM structure reveals antibody epitope: The MuPyV:Fab complex was resolved to 3.2 \u00c5 resolution using sub-particle refinement, revealing 360 possible epitopes (6 per asymmetric unit). The epitope consists of 13 residues from BC and HI loops of VP1 plus 3 residues from adjacent VP1, includes a predicted salt-bridge between VP1 R77 and Fab D99, and overlaps with receptor-binding residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C51-C58 present high-quality structural data with appropriate resolution metrics and validation. The sub-particle refinement approach improved resolution from 4.2 \u00c5 to 3.2 \u00c5, enabling identification of specific contact residues. The structural findings are internally consistent and provide mechanistic insight into antibody recognition. However, the 'predicted' salt-bridge (C57) should be experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Structural mechanism of antibody escape: The V296F mutation places a bulky phenylalanine sidechain directly within the Fab-virus interface, likely causing steric hindrance that disrupts CDR loop H3 interaction. This results in significantly reduced 8A7H5 binding to A2.V296F. Despite 360 potential binding sites, no steric clashes occur between neighboring Fabs, allowing complete capsid saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 integrate structural and functional data to explain the mechanism of escape. The structural model (C60) is supported by binding assays (C61, p<0.0001) and attachment assays (C59). The observation of no steric clashes (C62) is surprising but well-documented structurally. The mechanistic explanation is logical and consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Additional PML-equivalent mutations show similar tropism patterns but variable antibody sensitivity: Mutations A2.V296Y, A2.N293F, and A2.N293Y all showed kidney infection defects but retained brain tropism. However, only V296Y conferred complete 8A7H5 resistance, while N293F/Y remained sensitive. Avidity measurements revealed that R77N and H139R mutations reduced 8A7H5 binding to similar extents as V296F.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 extend the findings to additional mutations with consistent experimental approaches. The data demonstrate that impaired kidney tropism is common to multiple PML-equivalent mutations, but antibody escape is mutation-specific. Statistical significance is reported for key comparisons. The avidity assay provides quantitative support for predicted escape mutations based on the structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Selection of escape mutants in vitro: Serial passage of A2 in the presence of 8A7H5 yielded three escape mutants: N80K, \u0394294, and \u0394295. All three conferred complete resistance to 8A7H5 neutralization. However, these mutations had varying effects on tropism: A2.\u0394294 showed elevated kidney infection, while A2.N80K and A2.\u0394295 showed reduced kidney infection, and all three had reduced brain infection compared to A2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 demonstrate that antibody pressure selects for escape mutations, validating the structural predictions. The varying tropism effects (C74-C76) indicate that not all antibody escape mutations are equivalent, which is an important finding. Statistical significance is reported for key comparisons. However, the disconnect between antibody escape and CNS tropism for these variants (C76) contrasts with V296F and suggests additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C96"
+    ],
+    "result": "V296F shows poor urinary shedding despite viremia and antibody escape: In \u03bcMT mice infected with 1:1 A2:A2.V296F and treated with 8A7H5, virus in urine was heavily biased toward A2 despite high A2.V296F levels in blood and brain. This demonstrates that impaired kidney replication limits urinary shedding of V296F even under antibody escape conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C96 provide critical in vivo evidence linking antibody escape to viremia while demonstrating the fitness cost of the mutation. The experimental design cleverly mimics the clinical scenario where WT virus is found in urine but mutant virus in blood/CSF. Statistical significance is strong (p<0.0001 for blood vs. urine). This result integrates multiple findings into a coherent model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C98",
+      "C99",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "VP1 mutations enable antibody escape at the cost of kidney tropism, facilitating neurovirulence through preserved CNS replication: The study demonstrates that VP1 mutations concomitantly enable evasion of the nAb response and facilitate neurovirulence by preserving CNS replication while impairing kidney infection. This supports the model that antibody escape is a requisite first step in PML pathogenesis, with viremia by nAb-resistant variants being critical for CNS invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C98-C99, C105-C107 represent the major conclusions of the study, integrating findings from tropism, antibody escape, structural, and in vivo competition experiments. The conclusions are well-supported by the data presented. However, these are interpretive claims that extend beyond direct observations to propose a model of PML pathogenesis. While the MuPyV data strongly support this model, direct confirmation in JCPyV/human system is not possible due to species specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Structural basis of neutralization and escape mechanisms: The Fab heavy chain makes primary contacts with VP1, while the light chain interacts with adjacent VP1. The mechanism of neutralization involves blocking the receptor-binding site. Specific escape mechanisms include: loss of R77-D99 salt-bridge (R77N), deletion/reorganization of the HI loop (\u0394294, \u0394295), and introduction of positive charge/longer sidechain (N80K). The antibody may also stabilize the virus and prevent uncoating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C88 provide mechanistic interpretations of structural data. While C81-C82 are directly supported by the structure, claims C83-C88 involve varying degrees of inference. C83 (blocking receptor binding) is well-supported by overlap with receptor-binding residues and attachment assays. C84-C86 are logical inferences from structure but lack direct experimental validation. C87 (stabilization/prevention of uncoating) is speculative (noted as 'may'). C88 (mimicking receptor interaction) is supported by citation but represents an interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "Mechanistic hypotheses for differential tropism and evolutionary selection: Loss of kidney tropism may result from differential receptor expression, decoy receptor binding, or altered receptor specificity (with WT JCPyV binding both sialylated glycans and GAGs, while mutants bind only GAGs). VP1 mutations are typically detrimental to fitness, but antibody evasion provides strong selective pressure. Selection is driven by antibody responses sufficient to control WT but not mutant virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C97 present mechanistic hypotheses and interpretations. C89-C91 are explicitly speculative ('may be explained,' 'could skew'). C92 is supported by citation to prior work. C93-C95 represent reasonable inferences from the data and literature. C97 integrates current findings with prior reports. While these claims provide valuable discussion and context, they are largely speculative or interpretive rather than directly demonstrated by the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Context for CNS invasion routes: JCPyV viremia occurs in natalizumab-treated MS patients. JCPyV infects choroid plexus epithelial cells, and infected choroid plexi are found in PML brains. Both A2 and A2.V296F infect ependyma. Ventricular enlargement has been reported in PML.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 provide relevant context from prior literature (C100-C102, C104) and the current study (C103). These claims support the discussion of potential CNS invasion routes but represent background information and minor observations rather than major findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

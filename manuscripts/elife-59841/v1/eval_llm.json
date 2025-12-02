@@ -1,0 +1,430 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Monte Carlo simulations reveal that illumination intensity in brain tissue does not decline monotonically with depth but instead peaks at ~300-400 \u00b5m below the pia due to scattering effects. When scattering is eliminated from the model, intensity declines exponentially, but with scattering present, photon propagation angles are randomized over ~800 \u00b5m (consistent with calculated transport length of 826 \u00b5m), concentrating photons in superficial layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 are directly supported by simulation data shown in Figure 1A-C. The counterintuitive finding that illumination peaks below the surface is demonstrated through systematic manipulation of model parameters (removing scattering or absorption), providing mechanistic insight. The consistency between simulated transport length (~800 \u00b5m) and calculated value (826 \u00b5m) validates the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C81",
+      "C82",
+      "C136",
+      "C137"
+    ],
+    "result": "Intact skull randomizes photon propagation angles at the brain surface, eliminating the superficial increase in illumination intensity and shifting the depth profile toward monotonic decay. This weights excitation and collection toward more superficial fluorophore molecules and layer 1, though resolution (surface distribution) is minimally affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 and C81-C82 are supported by simulation results in Figures 1C-D and 3D, with skull properties cited from literature (C47-C49). The finding that skull affects depth weighting but not lateral resolution is counterintuitive and well-demonstrated. The mechanism (randomization of propagation angles) is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Collection efficiency peaks at ~400 \u00b5m depth (0.58% at surface, equal at 1 mm depth) due to scattering. Fluorescence from point sources spreads extensively at the tissue surface, with diameters of 10 \u00b5m (surface source, 50% of photons) to 860 \u00b5m (1 mm deep source, 50% of photons), and 2.6-3.9 mm for 95% of photons, causing nearby sources to produce overlapping surface distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 are directly supported by simulation data in Figure 2A-C. The extensive lateral spread is a key finding with major implications for spatial resolution. Quantitative values are clearly stated and visualized. The claim about overlapping distributions (C62) is a logical inference from the spread data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Experimental validation using fluorescent beads injected into mouse cortex confirms that the model accurately predicts surface distribution of photons, though it slightly overestimates spread at the edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by experimental data in Figure 2D-F comparing model predictions with measurements from three experiments at different depths (165, 190, 310 \u00b5m). The validation strengthens confidence in the simulation results, though the acknowledged overestimation at edges indicates model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Changing the focal plane depth has no effect on illumination intensity, collection efficiency by depth, or fluorescence distribution at the tissue surface (though it affects photon distribution on the camera chip). This finding is consistent with prior work by Tian et al., 2011.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are directly supported by simulation results in Figure 3A. The consistency with published work (C69-C70) strengthens the finding. The caveat about camera chip distribution (C68) is appropriately noted. This counterintuitive result has important practical implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Numerical aperture (tested range 0.1-0.5) has negligible effect on illumination, depth-dependent collection weighting, or surface fluorescence distribution. Peak illumination and collection remain at ~0.3-0.4 mm across numerical apertures, consistent with published results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by simulation data in Figure 3B. The finding is counterintuitive and practically important. Consistency with Tian et al., 2011 (C76) provides external validation. However, NA does affect total collection efficiency (noted elsewhere), which should be distinguished from depth weighting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C85"
+    ],
+    "result": "Reducing field of view from 11 to 4.4 mm (\u00d72 to \u00d710 magnification) has no effect on illumination but reduces collection efficiency and surface fluorescence spread through vignetting. Combined with increased NA from higher magnification, this can increase collection efficiency and limit effective point spread function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by Figure 3C data. The vignetting interpretation (C80) is a reasonable inference. Claim C85 about combined effects is logical but represents inference beyond direct simulation. The practical implications for objective selection are clearly articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Blood vessels reduce illumination and collection locally, but tissue under vessels still receives substantial illumination due to randomized photon propagation in deep layers. For a 250 \u00b5m radius vessel, fluorescence is reduced to ~5% at 500 \u00b5m depth directly below and ~45% at 1 mm, with less effect laterally. Even at low NA, tissue under vessels contributes substantially to widefield fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by simulation data in Figure 4A-D. The model uses simplified vessel geometry (complete absorption) which likely overestimates effects (C91), appropriately acknowledged. The Beer-Lambert calculations (C89-C90) support the absorption assumptions. The finding that deep tissue under vessels is still illuminated is important and well-explained mechanistically (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Analysis of six GCaMP mouse lines reveals that fluorescence contributions from somatic layers range from 26-90%, highest for superficial expression (Slc17a7-Ai93: 90%, Cux2-Ai93: 76%) and lowest for deep expression (Rorb-Ai93: 26%, Rbp4-Ai93: 26%). Layer 1 contributes >10% only in Cux2-Ai93 mice. For all lines, the largest contributions originate from deeper layers (layer 2/3 or below), with dendrites and axons in all layers making these upper bounds for somatic contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 are supported by combining expression data from Allen Brain Observatory (Figure 5A-B) with simulation results for illumination and collection. The quantitative percentages are clearly stated. The inference that values represent upper bounds (C109) is appropriate given neuronal morphology. The modest layer 1 contribution (C110-C111) is well-explained by lower illumination, collection, and expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The model predicts layer 1 contributes a minority of both resting and dynamic fluorescence in most mouse lines, apparently conflicting with Allen et al., 2017. However, this discrepancy may be explained by differences between steady-state fluorescence (modeled here) versus \u0394F/F (Allen et al.), differential calcium dynamics in axons/dendrites versus somata, and higher neuropil fraction in layer 1. Calculations show that even 10\u00d7 greater \u0394F/F in neuropil increases layer 1 contribution modestly (to 6.9% in Slc17a7-Ai93), while 10\u00d7 greater \u0394F/F in all of layer 1 would be required for 39% contribution, which seems unlikely based on published calcium dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C125 address an apparent conflict with published work through quantitative analysis. The steady-state versus \u0394F/F distinction (C114) is valid. Citations support differential calcium dynamics (C115, C122-C123) and neuropil fractions (C117). Calculations (C119-C120) are presented clearly. The speculation that 10\u00d7 difference is unlikely (C121) is reasonable but acknowledged as such. Alternative explanations for the Allen et al. discrepancy are appropriately discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Fluorescence at each surface location originates from extremely large tissue volumes (1.08-1.97 mm\u00b3 for 95% of photons, depending on expression pattern) due to scattering. The most compact volume is 1.08 mm\u00b3 in Cux2-Ai93 mice; the largest is 1.97 mm\u00b3 in Fezf2-Ai148 and Ntsr1-Ai148 mice, extending through full cortical depth with >1 mm radius in deep layers. Only pixels >~1 mm apart sample non-overlapping tissue volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 are supported by analysis combining expression, illumination, and collection data (Figure 5D). The quantitative volume estimates are clearly stated and have major implications for spatial resolution. The inference about overlapping volumes (C130-C131) is logical. The interpretive statements (C132-C133) appropriately emphasize the significance and practical implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Summary of key findings: Illumination and collection peak at ~300-400 \u00b5m depth (layer 2/3) when imaging through cranial windows, not at the surface. Contributing tissue volume is ~1-2 mm\u00b3, with lateral spread >1 mm (up to >2 mm diameter for deep sources), resulting in millimeter-scale resolution. Main fluorescence sources are somatic layers for layer 2/3 expression and non-somatic layers for layer 4-6 expression. Fluorescence represents weighted averages across multiple cortical columns and often multiple cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C142 and C156-C158 summarize major findings that are well-supported by the simulation and analysis results presented throughout. These summary statements accurately reflect the data and provide important context by comparing dimensions to cortical anatomy (column width, area size). The conclusions have significant implications for interpreting widefield imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The model indicates no simple optical modifications can provide fine (<1 mm) spatial precision in widefield imaging. Higher magnification objectives reduce measured spread through vignetting but may shift apparent tissue location. Restricted surface illumination will not limit excitation volume (analogous to >1 mm opsin activation from laser spots). Limiting indicator expression to <1 mm could provide precision but would sacrifice wide-field monitoring capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 is a reasonable inference from simulation results showing fundamental limitations. Claims C144-C145 about vignetting effects are supported by Figure 3C data, though the speculation about shifted location is appropriately qualified. Claim C146 is supported by analogy to cited work (C147). Claims C148-C149 about restricted expression represent reasonable speculation about potential solutions and trade-offs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "While the Monte Carlo model does not simulate temporal dynamics, temporal information can help locate active tissue. Fast indicators can track activity expansion from initiation sites or convergence at borders with high spatial precision (tens of micrometers for area borders with appropriate stimuli). However, the model indicates that locating borders from activity on only one side is imprecise (~1 mm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C150 acknowledges a model limitation. Claims C151-C154 about temporal approaches are supported by citations to published work demonstrating these capabilities. Claim C155 is a reasonable inference from the spatial spread results, though it represents extrapolation beyond direct simulation. The discussion appropriately distinguishes what the model can and cannot address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The Monte Carlo random-walk model was implemented in Python, adapted from previous studies, modeling tissue as spatially homogeneous with wavelength-dependent scattering and absorption. The simulation volume was typically 8 mm radius \u00d7 4 mm depth with 10 \u00b5m voxels. Optical parameters were from literature (in vivo measurements), with cranial window modeled as 7.5 mm coverslip and skull as 150 \u00b5m bone layer. Sensitivity analysis with higher scattering coefficient (21.1 mm\u207b\u00b9 from Yona et al., 2016) yielded similar results but with peak illumination at 130 \u00b5m depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 and C159-C171 describe methodology with appropriate citations. The homogeneous tissue model is justified as computationally tractable and accurate for multiple scattering lengths (C31-C32). Model parameters are clearly specified (C163-C167) with literature sources (C168). Sensitivity analysis (C169-C170) demonstrates robustness. The calculated transport length (C171) matches simulation results, validating implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The model simulated typical widefield imaging optics: low-magnification, low-NA objectives (primarily TL2X-SAP: NA 0.1, 11 mm field) with optical axis perpendicular to tissue surface. Photons entered tissue at maximum 5.74\u00b0 angle. Collection was simulated for central field locations; peripheral collection efficiency depends on objective front window size, with dissecting microscope and camera lenses offering more consistent collection over large fields due to larger (tens of mm) front windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C179 describe optical modeling parameters. The choice of representative objectives is appropriate and well-specified (C172-C174). The angle calculation (C174) is correct. The discussion of peripheral collection effects (C175-C179) appropriately acknowledges limitations and explains how different objective types would perform, based on optical principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Optical parameters (focal depth, NA, field of view) typically have modest individual effects on widefield fluorescence, but changing to higher magnification objectives combines increased NA and reduced field of view, which together can increase collection efficiency and limit effective point spread function through vignetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 appropriately summarizes findings from Figure 3 simulations. Claims C84-C85 correctly describe typical objective properties and their combined effects, integrating results from multiple simulations. This synthesis is useful for practical applications, though it represents inference beyond individual parameter tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Widefield fluorescence microscopy is widely used with calcium indicators to monitor neuronal population activity in mouse neocortex. Key challenges include: lack of optical sectioning allows fluorescence from all cortical depths; relative contributions from somata, dendrites, and axons are often unknown; and scattering affects lateral resolution by deflecting photons en route to the camera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C16 establish context and motivation, supported by multiple citations to published work. These statements accurately describe the technique, its applications, and known limitations that motivate the modeling study. The claims represent established knowledge in the field rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C29"
+    ],
+    "result": "Monte Carlo random-walk models provide accurate, computationally tractable solutions to photon propagation in scattering media and have been extensively used in biomedical optics applications including photodynamic therapy, diffuse reflectance tomography, and optogenetics. Spatially detailed models offer single-neuron resolution but require substantial computational resources; homogeneous medium models are more tractable and accurate for multiple scattering lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 and C28-C29 review prior applications of Monte Carlo modeling, all supported by appropriate citations. This establishes the methodological foundation and justifies the modeling approach chosen. The statements represent accurate summaries of published work rather than novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Widefield fluorescence involves photons from an incoherent source propagating into tissue where they are attenuated by absorption and scattering, exciting fluorophore molecules. Emitted fluorescence photons propagate in random directions, subject to absorption and scattering before exiting the brain and being collected by the objective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe the basic physics of widefield fluorescence imaging. These statements represent established knowledge about light-tissue interactions and fluorescence processes, providing necessary background for interpreting the simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Blood vessel diameter and content are dynamic in vivo. Vessel dilation can cause substantial fluorescence changes (\u226510% \u0394F/F) in both 2-photon imaging of underlying neurons and widefield imaging near large surface vessels. These hemodynamic signals can be largely separated from tissue fluorescence with appropriate measurements and calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 discuss dynamic vascular effects, with C100-C102 supported by citations to published work. These statements provide important context for interpreting the static vessel simulations and acknowledge that hemodynamic artifacts are a known issue with established correction methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Many mouse lines have fluorophore expression in neuronal sub-populations with somata in specific cortical layers, but axons and dendrites extend into other layers where they may contribute to widefield fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 describe available mouse lines and neuronal morphology, representing established knowledge that motivates the expression pattern analysis. These statements set up the question of which cellular compartments contribute to widefield signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C180",
+      "C181"
+    ],
+    "result": "Animal experiments were performed in accordance with NIH guidelines and Allen Institute IACUC protocol 1806.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C181 document ethical compliance for the experimental validation studies. These are standard reporting requirements rather than scientific findings.",
+    "result_type": "MINOR"
+  }
+]

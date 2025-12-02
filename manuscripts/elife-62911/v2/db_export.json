@@ -1,0 +1,1827 @@
+{
+  "submission": {
+    "id": "a10840a3-fc50-41bc-9c64-8b0169205d61",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:09:37.556958Z",
+    "updated_at": "2025-12-02T20:09:37.556958Z"
+  },
+  "content": [
+    {
+      "id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "submission_id": "a10840a3-fc50-41bc-9c64-8b0169205d61",
+      "content_type": "manuscript",
+      "content_text": "# Ribosomal profiling during prion disease uncovers progressive translational derangement in glia but not in neurons\n\n## Authors\n\n- Claudia Scheckel<sup>1</sup> ([ORCID: 0000-0002-1649-8486](https://orcid.org/0000-0002-1649-8486)) \u2020\n- Marigona Imeri<sup>1</sup>\n- Petra Schwarz<sup>1</sup> ([ORCID: 0000-0003-1686-8624](https://orcid.org/0000-0003-1686-8624))\n- Adriano Aguzzi<sup>1</sup> ([ORCID: 0000-0002-0344-6708](https://orcid.org/0000-0002-0344-6708)) \u2020\n\n### Affiliations\n\n1. Institute of Neuropathology, University of Zurich Zurich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrion diseases are caused by PrPSc, a self-replicating pathologically misfolded protein that exerts toxicity predominantly in the brain. The administration of PrPSc causes a robust, reproducible and specific disease manifestation. Here, we have applied a combination of translating ribosome affinity purification and ribosome profiling to identify biologically relevant prion-induced changes during disease progression in a cell-type-specific and genome-wide manner. Terminally diseased mice with severe neurological symptoms showed extensive alterations in astrocytes and microglia. Surprisingly, we detected only minor changes in the translational profiles of neurons. Prion-induced alterations in glia overlapped with those identified in other neurodegenerative diseases, suggesting that similar events occur in a broad spectrum of pathologies. Our results suggest that aberrant translation within glia may suffice to cause severe neurological symptoms and may even be the primary driver of prion disease.\n\n## Introduction\n\nPrion diseases (PrD) are fatal neurodegenerative diseases that are caused by transmissible proteinaceous particles termed prions (Scheckel and Aguzzi, 2018). Prions consist primarily of PrPSc, pathological aggregates of the cellular prion protein (PrPC) and can be highly infective. PrDs are conventionally classified as acquired, genetic and sporadic forms of the disease. While the cause of PrPC aggregation differs, all PrDs show a similar disease progression characterized by a pronounced vacuolation phenotype, activation of microglia and astrocytes, and ultimately neuronal loss. Prions are most efficiently transmitted within one and the same animal species, yet PrDs have been described in numerous mammals and are remarkably similar. In particular, mouse models of PrD appear to recapitulate most aspects of the human disease including transcriptomic changes \u2013 a finding that sets them apart from other murine models of neurodegenerative disease (Burns et al., 2015). Importantly, PrDs share many hallmarks with other more common neurodegenerative diseases including Alzheimer\u2019s and Parkinson\u2019s disease, and genes linked to neurodegeneration in humans have been shown to be conspicuously downregulated in PrD mice (Burns et al., 2015). This suggests that lessons learned from the PrD mouse model may be relevant to our understanding as well as to the development of diagnostics and therapeutics in other neurodegenerative diseases.\n\nSeveral techniques have aimed at characterizing the molecular changes underlying neurodegeneration. One major hurdle when studying pathologies of the central nervous system (CNS) is selective vulnerability: the brain consists of many different cell types, yet most diseases only affect a subset of cells. The isolation of specific cell types followed by bulk sequencing (Zamanian et al., 2012) and single-cell sequencing (Keren-Shaul et al., 2017) is often used to characterize CNS diseases and injuries, and has identified disease-associated signatures in different cell types. Yet, single-cell sequencing only allows for the assessment of highly-expressed genes. Moreover, all of these approaches require prolonged dissociation and cell sorting protocols, which can introduce artefacts. Alternatively, cell-type-specific profiles can be generated from mice expressing tagged ribosomes in the cell type of interest via translating ribosome affinity purification (TRAP) followed by RNA sequencing (Heiman et al., 2014). RiboTag (RT) mice expressing HA tagged ribosomes in a Cre recombinase-dependent manner (Sanz et al., 2009), have been used to profile multiple CNS cell populations without tissue manipulation procedures (Boisvert et al., 2018; Furlanis et al., 2019; Haimon et al., 2018). The datasets generated from these experiments are likely to reflect the endogenous expression of mRNA very closely.\n\nHere, we have characterized cell-type-specific molecular changes in PrD using a combination of TRAP and ribosome profiling. The select expression and isolation of tagged ribosomes, followed by the generation and sequencing of ribosome-protected fragments (RPFs) without any preanalytical manipulations enables the assessment of endogenous translation in a quantitative, genome-wide and cell-type-specific manner. Profiling of control and PrD mice throughout disease progression revealed vast prion-induced translational changes in microglia and astrocytes, but surprisingly few changes in neurons. This suggests that the prion-induced molecular phenotypes reflect major glia alterations, whereas the behavioral phenotypes may be ascribed to just few neuronal changes or changes that were undetectable in our assay such as altered neuronal connectivity.\n\n## Results\n\n### Generation of mice that express GFP-tagged ribosomes in PrD-relevant cells\n\nTo characterize cell-type-specific molecular changes during PrD progression in a genome-wide manner, we used a mouse strain that expresses a GFP-tagged version of a large ribosomal protein, RPL10a, in a Cre-dependent manner (Zhou et al., 2013). We bred this strain with several \u2018Cre driver lines\u2019, expressing Cre recombinase under the control of the Camk2a, Pvalb, Gfap or Cx3cr1 promoters (Fuchs et al., 2007; Gregorian et al., 2009; Tsien et al., 1996; Yona et al., 2013), to induce the expression of GFP-tagged ribosomes in excitatory CamKIIa neurons, inhibitory parvalbumin (PV) neurons, astrocytes or microglia, respectively (Figure 1a). Double-transgene-positive mice were intraperitoneally injected with RML6 prions or control brain homogenates and sacrificed at the indicated time points during disease progression (Figure 1a and Supplementary file 1). Brains or brain regions were dissected and immediately flash frozen in liquid nitrogen for cell-type-specific ribosome profiling, or formalin-fixed and paraffin-embedded for immunohistochemical analyses.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic displaying which cell types were analyzed at which time point during prion disease (PrD) progression.\u00a0(b) Brain sections of control (ctrl) and terminally PrD CamKIIa/Rpl10a:GFP mice were stained for GFP and CamKIIa or NeuN. A subset of NeuN+ cells and all CamKIIa+ cells showed Rpl10a:GFP expression in the hippocampus. No GFP signal was detectable in Rpl10a:GFP mice (not bred with a Cre expressing strain).\u00a0(c) Brain sections of ctrl and PrD PV/Rpl10a:GFP mice were stained for GFP and PV or NeuN. Cells that were NeuN-negative and PV+ showed Rpl10a:GFP expression in the cerebellum. No GFP signal was detectable in Rpl10a:GFP mice (not bred with a Cre expressing strain).\u00a0(d) Brain sections of ctrl and PrD mice expressing Rpl10a:GFP in GFAP+ cells were stained for GFP and GFAP. (e) Brain sections of terminally diseased and control mice expressing Rpl10a:GFP in Cx3cr1+ cells were stained for GFP and IBA1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Brain sections of control (ctrl) and terminally prion-diseased (PrD) CamKIIa/Rpl10a:GFP mice were stained for GFP and CamKIIa or NeuN. A subset of NeuN+ cells and all CamKIIa+ cells showed Rpl10a:GFP expression in the cortex. No GFP signal was detectable in Rpl10a:GFP mice (not bred with a Cre expressing strain).\u00a0(b\u2013c) Brain sections of ctrl and PrD PV/Rpl10a:GFP mice were stained for GFP and PV or NeuN. Cells that were NeuN-negative and PV+ showed Rpl10a:GFP expression in the hippocampus (b) and cortex (c). No GFP signal was detectable in Rpl10a:GFP mice not bred with a Cre expressing strain (PV expression in these mice was not assessed). (d) Brain sections of ctrl and PrD mice expressing Rpl10a:GFP in GFAP+ cells were stained for GFP and GFAP. (e) Brain sections of terminally diseased and control mice expressing Rpl10a:GFP in Cx3cr1+ cells were stained for GFP and IBA1.\n\nTo confirm a cell-type-specific expression of GFP-tagged ribosomes, we examined the brains of mice by immunofluorescence with anti-GFP antibodies. Neuronal CamKIIa and PV Cre drivers have previously been shown to specifically label the corresponding neuronal subpopulation. Consistently, the CamKIIa-driven GFP expression was detectable in all CamKIIa-positive neurons in hippocampus and cortex (Figure 1b and Figure 1\u2014figure supplement 1a) and PV-driven GFP expression was seen in all PV+ cells, most prominently in the cerebellum (Figure 1c and Figure 1\u2014figure supplement 1b\u2013c). Co-staining with the neuronal marker NeuN, which is expressed in most neurons, confirmed that the CamKIIa promoter induced GFP expression in only a subset of NeuN+ neurons. In contrast, GFP-expressing PV neurons were typically NeuN negative. These results show that neuronal GFP expression was limited to the cell type of interest in different brain regions. Importantly, the expression of GFP was strictly Cre-dependent (Figure 1b\u2013c and Figure 1\u2014figure supplement 1) indicating that the GFP:Rpl10a mouse strain does not exhibit leaky constitutive GFP expression.\n\nGlia-specific Cre drivers have proven more difficult to generate, and many of them show extensive neuronal expression. The mGFAP line 77.6 utilized in this study performs better than other astrocytic Cre drivers and expresses Cre almost exclusively in astrocytes (Gregorian et al., 2009). Indeed, we predominantly observed GFP expression in astrocytes (Figure 1d and Figure 1\u2014figure supplement 1d) and, to a lower extent, in neurons (arrows in Figure 1d). Also, the microglia Cre driver line, Cx3cr1Cre has been shown to display Cre-induced rearrangements not only in microglia but also in neurons, most likely due to Cx3cr1 promoter activity during neuronal development (Haimon et al., 2018). We therefore utilized an inducible Cx3cr1CreER line and activated Cre expression in microglia by treating adult mice for four weeks with tamoxifen-containing chow. While these mice showed GFP expression in microglia and not in neurons (Figure 1e and Figure 1\u2014figure supplement 1e), they have been reported to additionally express Cre in non-parenchymal macrophages (Goldmann et al., 2016), corresponding to roughly\u00a0~1% of Cre-positive cells in Cx3cr1CreER mice (Haimon et al., 2018). The expression of GFP in non-glia cell types, was taken into consideration in subsequent analyses.\n\nWe further assessed expression changes of GFP and different cell markers between control and prion-injected brains at the terminal stage of PrD. Hallmarks of PrD include neuronal loss as well as pronounced micro- and astrogliosis. Consistently, glial GFP, IBA-1 (microglia marker) and GFAP (astrocyte marker) levels were markedly increased in terminal PrD brains. In contrast, we did not observe a clear difference in neuronal GFP, NeuN, CamKIIa or PV expression (Figure 1 and Figure 1\u2014figure supplement 1). This is consistent with previous observations from our lab, where no or only a minor decrease in neuronal cell number was evident at the terminal PrD stage in mice.\n\n### Analysis of different CNS cells via cell-type-specific ribosome profiling\n\nTypically, mice expressing tagged ribosomes are analyzed via immunoprecipitation and RNA sequencing to identify which transcripts are translated in a given cell (Heiman et al., 2014). In contrast, ribosome profiling yields an additional layer of information by determining the number of ribosome-protected fragments (RPFs). The number of RPFs is linked to the number of ribosomes per transcript and therefore to the translation rate. The combination of tagged ribosome immunoprecipitation and ribosome profiling thus allows the quantitative assessment of mRNA translation specifically in the cell types of interest. We therefore investigated mice expressing GFP-tagged ribosomes in different PrD-relevant cells at multiple disease stages via cell-type-specific ribosome profiling (all analyzed samples are detailed in Supplementary file 1). Briefly, RPFs were isolated via partial RNase digestion and GFP immunoprecipitation and subjected to library preparation and high-throughput sequencing (Figure 2a). Unique molecular identifiers (UMIs) were attached to each cDNA molecule to eliminate PCR duplicates, and only unique reads were included in all downstream analyses. To analyze PV neurons, microglia and astrocytes, we utilized one hemisphere per library. Pooled cortices and hippocampi of one mouse were assessed to examine CamKIIa neurons. We additionally profiled cortex, hippocampus and hemispheres of Cre-negative mice, which did not express any GFP. We typically obtained 5\u201310 million unique reads per library (Figure 2\u2014figure supplement 1a and Supplementary file 1), of which only a minority (\u226410%) mapped to ribosomal RNA (Figure 2\u2014figure supplement 1b and Supplementary file 1). Most aligned reads were coding sequence (CDS) reads (Figure 2b and Supplementary file 1), which is consistent with the ribosome occupancy of transcripts. Importantly, despite the increase in glia cells at the terminal stage, the libraries of all terminally diseased mice (green data points in Figure 2 and Figure 2\u2014figure supplement 1) were non-distinguishable from other libraries. One single library did not pass our quality criteria (>106 unique reads and\u00a0>70% of CDS reads) and was excluded from downstream analyses (encircled in pink in Figure 2 and Figure 2\u2014figure supplement 1). While representative Cre+ libraries showed a strong increase in RPF coverage at the translational start codon that tailed off, the excluded library showed a pattern that was more similar to Cre-negative libraries (Figure 2\u2014figure supplement 1c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic depicting the workflow of cell-type-specific ribosome profiling. After partial RNase digestion, GFP ribosome protected fragments (RPF) were isolated via GFP immunoprecipitation and ultracentrifugation, and subjected to 3\u2019 linker ligation, reverse transcription, circularization and PCR amplification before being submitted for high-throughput sequencing.\u00a0(b) Beeswarm plots displaying the % of reads mapping to the coding sequence (CDS). Samples are grouped according to analyzed regions and Cre drivers. Only Cre+ samples with a minimum of 70% CDS reads (indicated by a dashed pink line) were analyzed. One Cre+ sample did not pass quality control and was therefore excluded (encircled in pink). Terminal PrD samples are colored in green. (c) Principal component analysis of noCre samples and control samples at 2 weeks post-inoculation (wpi) based on rlog transformed RPF counts per gene revealing a separation according to Cre driver (~cell type), a resemblance of GFAP samples and noCre samples and similarities between neuronal cell types. (d) Hierarchical clustering of noCre samples and control samples at two wpi based on Euclidean distances. Heatmaps depicting the sample distance at each time point based on rlog transformed RPF counts per gene. Samples cluster according to Cre driver (~cell type) and noCre samples are clearly distinguishable.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Beeswarm plots displaying million unique reads. Samples are grouped according to analyzed regions and Cre driver. Only Cre+ samples with at least one million unique reads (indicated by a dashed pink line) were analyzed. One Cre+ samples did not pass quality control and was therefore excluded (encircled in pink). Terminal PrD samples are colored in green.\u00a0(b) Beeswarm plots displaying the % of reads mapping to ribosomal RNA (rRNA). Samples are grouped according to analyzed regions and Cre drivers. One Cre+ samples did not pass quality control (>one million unique reads and\u00a0>70% of reads mapping to the coding sequence) and was therefore excluded (encircled in pink). Terminal PrD samples are colored in green.\u00a0(c) Density plots displaying the ribosome protected fragments (RPF) coverage relative to the translational start (left) and stop (right). RPF counts were normalized for transcript abundance and the number of transcripts represented at each position. Shown are representative samples of the different cell types and a Cre-negative sample as well the excluded Cre+ sample.\n\nWe proceeded with summarized RPF counts per gene, referred to as RNA translation throughout the manuscript. Focusing initially on libraries generated from control mice at the earliest time point (~3 months old mice), we visualized the relationship between the different libraries. A principal-component analysis (PCA) and hierarchical clustering based on Euclidean distances revealed a segregation of the different cell types as well as a similarity between the analyzed neuronal cell types (Figure 2c\u2013d and Supplementary file 2). Cre-negative samples most likely recapitulate the average translation in the analyzed region. With astrocytes being a highly abundant cell type in the CNS (Miller, 2018), it was not surprising that Cre-negative samples were most similar to GFAP samples (Figure 2c). Cre-negative samples were nonetheless clearly distinguishable from GFAP and other Cre+ samples (Figure 2d).\n\n### Identification of preferentially translated transcripts in different cell types\n\nTo confirm that we profiled the desired cell population, we compared our data with previously published studies. We defined the top 100 enriched genes in neurons (N), endothelial cells (EC), oligodendrocytes (OL), astrocytes (AS) and microglia (MG) based on RNA sequencing data generated from these cell populations (Zhang et al., 2014). These cell types were purified from P7 mouse brains via cell dissociation, immunopanning and FACS, and were analyzed via RNAseq. In contrast, our datasets were generated via ribosome profiling of flash-frozen brain regions from 13-week-old mice. Nonetheless, we observed that the top 100 enriched genes showed the highest translation in the corresponding RP dataset (Figure 3a and Supplementary file 3). We additionally assessed cell-type-specific markers, defined by single-cell sequencing of the visual cortex from 2-month-old mice (Hrvatin et al., 2018). As expected, marker genes for excitatory neurons, PV neurons, astrocytes and microglia showed the highest translation in the respective cell type (Figure 3\u2014figure supplement 1 and Supplementary file 3). The comparison further revealed that we predominantly profiled subsets of excitatory neurons (L23, L5_1 and L5_3) and microglia (Micro_1). Additionally, macrophage markers were highly translated in the Cx3cr1 RP dataset, confirming previous observations that a minor fraction of Cx3cr1CreER-positive cells are non-parenchymal macrophages. Collectively, these results indicate that we indeed analyzed the desired cell population.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig3-v2.jpg)\n\n**Figure 3.:** (a) Boxplots displaying the translation (log2 transformed fpkm values) of the top 100 genes in neurons (N), endothelial cells (EC), oligodendrocytes (OL), astrocytes (AS) and microglia (MG) in the indicated cell type. Boxes containing genes expected to be highly translated are shaded in a darker tone. (b) Identification of genes that were differentially translated (|log2FC|\u00a0>\u00a02 and FDR\u00a0<\u00a00.05) between two different cell types (numbers on lines) and of preferentially translated genes (PTGs) that were differentially translated in one versus all other cell types (numbers in colored hexagons). (c) Heatmap displaying the translation (log2 transformed fpkm values) of 2692 PTGs, revealing a clustering of samples according to cell type. (d) Scatterplots comparing the translation (log2 transformed fpkm values) and the expression (assessed via ribosome immunoprecipitation followed by sequencing; log2 transformed fpkm values) in the indicated cell type. Translation and expression of CamKIIa- and Cx3cr1-positive cells were assessed in corresponding brain regions. In contrast, PV and GFAP translation was examined in the whole brain, whereas PV expression was analyzed in neocortex and GFAP expression corresponds to the averaged expression across multiple regions (motor/somatosensory/visual cortex, cerebellum and hypothalamus). Linear regression lines are indicated and PTGs in the respective cell types are colored.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Boxplots displaying the translation of marker genes for excitatory neurons (L23/4/5_1/5_2/5_3/6), inhibitory neurons (Cck/Npy/Pv/Sst/Vip) and other cell types (Ref) in the indicated cell type. Boxes containing genes expected to be highly translated are shaded in a darker tone.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** MA plots showing the log2FC in translation between indicated cell types over the mean of normalized RPFs per gene. Genes that are differentially translated (FDR\u00a0<\u00a00.05) are colored in pink and the corresponding numbers are indicated.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Cross-correlation plot comparing ribosome profiling (RP; samples #1\u20135) and ribotag (RT; samples #6\u201314) data. Pearson correlation coefficients are indicated. RP and RT samples generated from the same cell type showed the highest correlation and the comparisons are highlighted in the corresponding color. (b) Boxplots displaying the expression (according to RT data) of preferentially translated genes (PTGs). PTGs showed the highest expression in the corresponding RT datasets.\n\nWe next identified genes that were differentially translated between the different cell types using DESeq2 (Figure 3\u2014figure supplement 2 and Supplementary file 2). We defined preferentially translated genes (PTGs) in a specific cell type if they showed an absolute log2 fold change |log2FC| of more than two and an FDR of less than 0.05 in one cell type compared to the four other cell types. This yielded a total of 2692 PTGs, including 57 CamKIIa_CX, 50 CamKIIa_HC, 299 PV, 963 GFAP and 1323 Cx3Cr1 PTGs (Figure 3b). A heatmap displaying the translation of the 2692 PTGs shows a preferential translation of these genes in the respective cell type and that samples clustered according to cell type (Figure 3c).\n\nSeveral studies have previously assessed ribosome-associated RNAs in the same cell types (Boisvert et al., 2018; Furlanis et al., 2019; Haimon et al., 2018). Using the RiboTag (RT) mouse, which expresses HA-tagged ribosomes in a Cre-dependent manner the authors sequenced the immunoprecipitated RNA directly. In contrast, the combination of ribosome immunoprecipitation and ribosome profiling (RP) allowed us to assess cell-type specific translation in a quantitative manner. When comparing all RT and RP datasets with each other (Supplementary file 3) we observed the highest correlation between datasets that were generated from the same cell type (Figure 3d and colored comparisons in Figure 3\u2014figure supplement 3a), and PTGs were most highly expressed in the corresponding cell type (Figure 3\u2014figure supplement 3b). While RT and RP datasets of each cell type were overall highly correlated (Figure 3d), we also observed that a number of genes deviated from the linear regression line, including several PTGs (colored in Figure 3d). On one hand this might reflect differences linked to the analyzed tissue or the library preparation, yet some are likely to correspond to genes that are characterized by a high or low translation rate. The deviation of RT and RP datasets was particularly evident for PV and Cx3cr1+ cells, which for PV can be at least partially ascribed to the analysis of different tissues (neocortex for RT vs a whole hemisphere for RP). In contrast, the same tissue (whole hemispheres) was analyzed to assess Cx3cr1+ cells via RT and RP, and, our RP dataset showed a higher correlation with an RNAseq dataset generated from sorted microglia than with the RT dataset from the same study. This indicates that the GFP immunoprecipitation followed by ribosome profiling might yield more specific results compared to HA immunoprecipitation followed by direct sequencing.\n\n### Cell-type-specific changes become only evident at late PrD stages\n\nTo discover PrD-related molecular changes, we identified differentially translated genes (DTGs: |log2FC|\u00a0>\u00a01 and FDR\u00a0<\u00a00.05) in the previously mentioned cell types at different stages during disease progression (Figure 1a and Supplementary files 4\u20138). Prion-induced changes only became evident at later disease time points, and except for few individual genes we could not detect any DTGs in any of the cell types at 2, 4, 8, and 16 weeks post prion inoculation (wpi). A PCA revealed a clear separation of control and PrD samples only at the terminal time point, most strikingly in GFAP and Cx3cr1+ cells (Figure 4\u2014figure supplement 1). Consistently, we observed most prion-induced changes in GFAP+ and Cx3cr1+ cells at the terminal stage (Figure 4a and Figure 4\u2014figure supplement 2; all significantly changing genes are colored in Figure 4\u2014figure supplement 2; significantly changing genes with |log2FC|\u00a0>\u00a01 are summarized in Figure 4a). Both of these cell types already showed several translational changes at the pre-terminal stage, 24 wpi. Upon comparing prion-induced changes at the last two time points, we observed a correlation in both GFAP+ and Cx3cr1+ cells and a high overlap between the changes at the two time points, especially among upregulated genes (Figure 4b\u2013c). This indicates that the pronounced translational changes in astrocytes and microglia become evident 2 months before the terminal stage, long before any PrD-related symptoms manifest. Both astrocyte activation and microglia proliferation are hallmarks of PrD, yet due to the nature of our assay, these changes reflect translational changes within the respective cell type and are not due to any differences in cell numbers.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic depicting numbers of differentially translated genes (DTGs: |log2FC|\u00a0>\u00a01 and FDR\u00a0<\u00a00.05) in the indicated cell types at different stages during disease progression (in the corresponding Figure 4\u2014figure supplement 2 all genes with an FDR\u00a0<\u00a00.05 are colored, independent of their log2FC). (b) Scatterplot comparing prion-induced changes in GFAP+ cells at the pre-terminal (24 weeks post-inoculation (wpi)) and terminal time points. Genes changing at one or both time points are indicated. (c) Scatterplot comparing prion-induced changes in Cx3cr1+ cells at the pre-terminal (24 wpi) and terminal time points. Genes changing at one or both time points are indicated. (d) Boxplots displaying translational changes of neurotoxic (A1 signature) and neuroprotective (A2 signature) genes in GFAP+ cells during prion disease (PrD) progression. (e) Boxplots displaying translational changes of disease-associated microglia (DAM) and homeostatic microglia genes in Cx3cr1+ cells during PrD progression.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Principal component analysis of control (ctrl) and prion disease (PrD) samples at different time points during disease progression. The principal components 1 and 2 are plotted on the x and y axes, respectively. The % of variance explained by these principal components is indicated. Ctrl and PrD samples showed a clear separation only at the terminal stage, most prominently in GFAP and Cx3cr1+ cells.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** MA plots showing the log2FC in translation between prion disease (PrD) vs control (ctrl) samples over the mean of normalized RPFs per gene. Genes that are differentially translated (FDR\u00a0<\u00a00.05) are colored in pink and the corresponding numbers are indicated.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a-c) Scatterplots comparing prion-induced changes at the pre-terminal (24 weeks post inoculation (wpi)) and terminal time points in CamKIIa cortical (a), and hippocampal (b) neurons and in PV neurons (c). Genes changing at one or both time points are indicated.\n\nBoth glia cell types have been linked to numerous diseases and display characteristic transcriptional signatures in response to disease or other stimuli. Reactive A1 astrocytes are induced upon lipopolysaccharide treatment, microglia activation and ischemia, are characterized by the upregulation of complement cascade genes and are thought to contribute to neuronal death (Liddelow et al., 2017; Zamanian et al., 2012). Not surprisingly, we found A1 signature genes to increase with disease progression (Figure 4d and Supplementary file 7). We also observed an increase in A2 signature genes, corresponding to neurotrophic factors (Liddelow et al., 2017; Zamanian et al., 2012). The categorization of microglia into homeostatic and disease-associated (as well as other) microglia has largely replaced the initial categorization into pro-inflammatory M1 and anti-inflammatory M2 microglia (Dubbelaar et al., 2018). We have therefore opted for the more current categorization. Consistent with our observations for A1 genes, disease-associated microglia (DAM) genes increased during disease progression. In contrast, homeostatic microglia markers started to show a slight decrease at 24 wpi, that was more pronounced at the terminal stage of the disease (Figure 4e and Supplementary file 8). Similar observations have been reported for multiple neurodegenerative diseases (Keren-Shaul et al., 2017), confirming that the appearance of DAMs and the concomitant loss of homeostatic microglia are hallmarks of multiple neurodegenerative diseases.\n\nSurprisingly, neuronal cell types displayed very few translational changes even at the terminal stage (Figure 4a), and we observed only a low correlation of prion-induced changes at the last two time points (Figure 4\u2014figure supplement 3). This is particularly interesting as PrD is a neurodegenerative disease. As previously mentioned, our protocol does not allow us to assess the total number of analyzed cells, suggesting that the CamKIIa and PV neurons which are present in terminally diseased mice, show only minor translational changes, especially compared to astrocytes and microglia. Several of the genes that changed in neurons at 24 wpi were enriched in either astrocytes and/or microglia and these changes might reflect a glia contamination. Yet Sik1 (changing in CamKIIa cortical neurons) and Cyp2s1 and Oprm1 (both changing in PV neurons) were highest expressed in neurons, and it is possible that even such few changes are sufficient to induce neuronal dysfunction and symptoms.\n\n### Different cell types display distinct PrD-related changes\n\nWe next focused on the terminal disease stage. Hierarchical clustering based on Euclidean distances and a PCA revealed a segregation of the terminal samples according to both cell type and treatment (Figure 5a\u2013b). We observed a low correlation between the translational changes in the different cell types (Figure 5\u2014figure supplement 1a) and found that most prion-induced changes are cell-type-specific (Figure 5c and Supplementary file 9). Yet, five genes showed an increase in translation in all analyzed cell types: Gfap, Serpina3n, Apod, Mt1, and Lgals3bp (Figure 5\u2014figure supplement 1b). All five genes are highly translated in astrocytes, microglia or both (Figure 5\u2014figure supplement 1b and Supplementary file 9), indicating that the increase in neuronal translation of these common genes is likely a contamination and reflects the pronounced astro- and microgliosis at the terminal PrD stage.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig5-v2.jpg)\n\n**Figure 5.:** (a) Hierarchical clustering of control and PrD samples at the terminal stage based on Euclidean distances. Heatmaps depicting the sample distance at each time point based on rlog transformed RPF counts per gene show a clustering of samples according to treatment and Cre driver (~cell type). (b) Principal component analysis of control (ctrl) and prion disease (PrD) samples at the terminal stage based on rlog transformed RPF counts per gene revealing a separation according to Cre driver (~cell type). (c) Table showing the number of total and cell-type-specific (unique) changes in the different cell types at the terminal stage. (d) Scatterplot comparing prion-induced changes between cortical and hippocampal CamKIIa+ cells at the terminal time point. Genes changing in one or both cell types are indicated. Genes that change in all cell types are shown in green. (e) Scatterplot comparing prion-induced changes in GFAP- and Cx3cr1+ cells at the terminal time point. Genes changing in one or both cell types are indicated. Genes that change in all cell types are shown in green.\u00a0(f) Table displaying top enriched GO terms among genes changing only in GFAP+ cells, only in Cx3cr1+ cells or in both glia cell types.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Cross-correlation plot comparing prion-induced translational changes in different cell types. Pearson correlation coefficients are indicated. Genes that change in all five datasets are colored in grey. (b) Bars represent the translational change and the translation in the different cell types. Shown are genes that change in all five datasets. (c) Comparison of prion-induced translational changes in Cx3cr1+ cells vs the enrichment in the indicated cell type over Cx3cr1+ cells. Genes changing specifically in Cx3cr1+ cells or in both analyzed glia cell types are indicated. Genes that specifically decreased in Cx3cr1+ cells show an enrichment in neuronal cell types over Cx3cr1+ cells. (d) Comparison of prion-induced translational changes in GFAP+ cells vs the enrichment in the indicated cell type over GFAP+ cells. Genes changing specifically in GFAP+ cells or in both analyzed glia cell types are indicated. GFAP-specific changes are not enriched in any of the analyzed cell types.\n\nInterestingly, we detected pronounced regional differences in translation within one and the same cell type. The CamKIIa changes between cortex and hippocampus did not correlate (Figure 5d) and, apart from the common genes discussed above, only one additional gene was shared between the CamKIIa datasets. Similarly, most glia changes were specific to either astrocytes or microglia (Figure 5e). Yet, we also identified 170 genes that changed in both glia cell types, with most of them (n\u00a0=\u00a0153) changing in the same direction. We analyzed the gene ontology (GO) terms associated with genes that increased specifically in astrocytes (n\u00a0=\u00a0692), microglia (n\u00a0=\u00a0442) or in both cell types (n\u00a0=\u00a0136). We found an enrichment of immune response genes among all three groups of genes and, among astrocyte-specific increasing genes, an enrichment of terms related to cell adhesion and extracellular matrix organization, indicating that these processes might be affected in astrocytes (Figure 5f and Supplementary file 10). In contrast, many decreasing genes that are astrocyte-specific (n\u00a0=\u00a0184) or shared (n\u00a0=\u00a017) have been linked to sterol and cholesterol biosynthesis, respectively, whereas microglia-specific decreasing genes (n\u00a0=\u00a0640) were enriched for neuronal terms including synaptic transmission (Figure 5f and Supplementary file 10).\n\nAs stated earlier, microglia proliferation and neuronal loss are hallmarks of PrD, complicating the interpretation of microglia-specific decreasing genes. To address if some microglia changes are an artefact, we compared the translational change in microglia to the translational enrichment in different cell types compared to microglia (Figure 5\u2014figure supplement 1c). Indeed, we observed a negative correlation between the translational change in microglia and neuronal enrichment: many microglia-specific decreasing genes (colored in blue) were strongly enriched in neuronal cell types (Figure 5\u2014figure supplement 1c: first three panels). We did not observe such a relationship for genes that were enriched in astrocytes compared to microglia (Figure 5\u2014figure supplement 1c: fourth panel) nor for genes that changed in astrocytes (Figure 5\u2014figure supplement 1d). The decrease in neuronal-enriched genes specifically in microglia is thus likely an artefact and reflects a change in the composition of analyzed cell types, namely the increase in microglia relative to neurons. We believe that astrocyte-enriched genes are less affected by an increase in microglia since astrocytes are a lot more abundant than specific neuronal subtypes. We therefore only consider microglia-specific decreasing genes that are enriched in neurons to be an artifact and have flagged these genes in Supplementary file 9.\n\n### Cell-type-specific ribosome profiling identifies novel PrD-induced changes\n\nWe previously published an extensive database of RNA expression changes in the hippocampus upon intracerebral and intraperitoneal prion inoculation (Sorce et al., 2020), and intersected the intraperitoneal RNAseq datasets with the cell-type-specific ribosome profiling data (Supplementary files 9 and 11). While we did not observe a correlation between mRNA abundance and cell-type-specific translational changes at 8\u00a0wpi (Figure 6\u2014figure supplement 1a), the datasets correlated at the terminal stage (Figure 6\u2014figure supplement 1b), and many genes changed in both mRNA abundance and cell-type-specific translation (Figure 6a).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig6-v2.jpg)\n\n**Figure 6.:** (a) Table displaying the number of changes in the different cell types at the terminal stage and how many of them are preferentially translated genes (PTGs). Shown are numbers of genes that change either in the ribosome profiling (RP) or the RNAseq or in both datasets. (d) Boxplots displaying terminal RNA expression changes in the hippocampus of all expressed genes and PTGs. (c) Scatterplot comparing prion-induced RNA expression changes in the hippocampus and translational changes in GFAP+ cells. GFAP PTGs and genes that change only in the RP but not the RNAseq dataset are indicated. (d) Scatterplot comparing prion-induced RNA expression changes in the hippocampus and translational changes in Cx3cr1+ cells. Cx3cr1 PTGs and genes that change only in the RP but not the RNAseq dataset are indicated. (e) Bars represent the translation (log2 average of normalized counts per gene; DESeq2 output) and translational change (log2FC; DESeq2 output) in the different cell types. Shown are genes that are enriched in astrocytes (Glul and Gfap) and microglia (Aif1 encoding for IBA1, and Mmp9). Significant changes (Benjamini Hochberg adjusted p value\u00a0<\u00a00.05; derived from DESeq2 analyses) are marked with an asterisk. (f) Western blot and its quantification showing protein levels of astrocyte (GLUL and GFAP) and microglia (IBA1 and MMP9) enriched genes in control (ctrl) and terminal prion disease (PrD) samples (*p<0.05; **p<0.01; ***p<0.001; two-tailed t test comparing terminal PrD vs ctrl samples; error bars: standard deviation). (g) Western blot and its quantification showing neuronal protein levels (NeuN in cortex and hippocampus, PV in whole brain) in ctrl and terminal PrD samples (ns\u00a0=\u00a0not significant; two-tailed t test comparing terminal PrD vs ctrl samples; error bars: standard deviation).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Comparison between prion-induced cell-type-specific translational changes and RNA expression changes in the hippocampus at 8 weeks post-inoculation (wpi). Pearson correlation coefficients are indicated. (b) Comparison between prion-induced cell-type-specific translational changes and RNA expression changes in the hippocampus at the terminal stage. Pearson correlation coefficients are indicated. Genes that change in either expression (n\u00a0=\u00a01451; grey circles) or in translation (colored circles) or in both datasets (colored stars, the corresponding numbers are displayed) are indicated.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/62911/elife-62911-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) Western blot showing protein levels of Calnexin, used for the quantification in Figure 6. (b) Western blot and its quantification showing protein levels in control (ctrl) and terminal prion disease (PrD) GFAP Cre/Rpl10a mice (*p<0.05; ns\u00a0=\u00a0not significant; two-tailed t test comparing terminal PrD vs ctrl samples; error bars: standard deviation). (c) Western blot and its quantification showing protein levels in ctrl and terminal PrD Cx3cr1 Cre/Rpl10a mice (*p<0.05; **p<0.01; two-tailed t test comparing terminal PrD vs ctrl samples; error bars: standard deviation).\n\nWe previously reported that terminal mRNA abundance changes correspond to genes enriched in microglia and astrocytes. Consistently, we observed that microglia PTGs showed a strong increase in the RNAseq dataset (Figure 6b), and that more than a third of the genes changing in mRNA abundance are microglia PTGs (566 out of 1451), most of which specifically changed in the RNAseq dataset (Figure 6a, n\u00a0=\u00a0411). The RNAseq dataset showed the highest correlation with GFAP translational changes (Figure 6c and Figure 6\u2014figure supplement 1b), which is consistent with astrocytes being the most abundant cell type. Yet, many genes that increased in mRNA abundance were enriched in microglia (Figure 6d), and thus reflect microglia proliferation rather than an increase in microglia-gene expression on a cellular level. We specifically focused on four genes that were enriched in astrocytes (Glul and Gfap) and microglia (Aif1 encoding for IBA1, and Mmp9). While we observed no change in cell-type-specific translation nor protein expression in whole brain extracts for Glul, the protein expression and the translation in all assessed cell types strongly increased for Gfap (Figure 6e\u2013f and Figure 6\u2014figure supplement 2a). This indicates that the number of astrocytes does not change during PrD, yet specific genes such as Gfap are strongly upregulated in astrocytes during PrD progression. In contrast, we observed an increase in both IBA1 and MMP9 protein expression, whereas Aif1 translation did not change and Mmp9 translation even decreased, specifically in microglia (Figure 6e\u2013f and Figure 6\u2014figure supplement 2a). The increased microglia proliferation therefore not only accounts for the increase in IBA1 protein levels (no cell-type specific change in translation was detectable), but also\u00a0additionally masks the microglia-specific decrease in Mmp9 translation. We additionally assessed NeuN expression in hippocampal and cortical lysates as well as PV expression in whole brain lysates but did not observe a decrease in neuronal markers in PrD (Figure 6g and Figure 6\u2014figure supplement 2a). These results support our initial observation (Figure 1 and Figure 1\u2014figure supplement 1) that terminally diseased PrD mice showed no or only little neuronal loss and explain why neuronal enriched genes show no or only a minor decrease in the RNAseq dataset (Figure 6a).\n\nSince terminally sick PrD mice show an upregulation of GFAP and an increase in microglia, we determined the levels of Rpl10a:GFP in mice bred with GFAP Cre and Cx3cr1 Cre lines. promoters. GFP levels remained constant in GFAP Cre/Rpl10a:GFP mice (Figure 6\u2014figure supplement 2b), indicating that an increased GFAP promoter activity does not lead to additional Cre recombination events. In contrast, GFP levels increased in Cx3cr1 Cre/Rpl10a:GFP mice (Figure 6\u2014figure supplement 2c), most likely reflecting the increase in microglia numbers. These results are consistent with our ribosome profiling data and suggests that a difference in GFP expression does not impact our analyses. Collectively, our data highlights the importance of studying individual cell types, allowing us to identify\u00a0~1500 novel genes that showed PrD-dependent translational changes, which were missed with more conventional approaches such as RNAseq of brain regions.\n\n## Discussion\n\nGenome-wide prion-induced transcriptional changes were previously investigated in large brain regions through RNAseq (Kanata et al., 2019; Sorce et al., 2020). While these analyses can identify prominent changes in RNA expression, splicing and editing, they do not possess the resolution necessary to identify cell-type specific changes. Moreover, the assessment of entire brain regions cannot discriminate between RNA expression changes within one cell type and an altered cellular composition. A recent report described prion-induced molecular changes in neuronal-enriched microdissected regions in the hippocampus and cerebellum via microarrays and identified changes linked to neuronal function (Majer et al., 2019). Yet, microdissection can fail to capture events occurring within neuronal processes or synapses and, crucially, may induce gene expression changes during the isolation procedure. Additionally, any differences in mRNA abundance do not necessarily translate into altered protein expression. In fact post-transcriptional regulation seems to be particularly important in the nervous system, and numerous RNA-binding proteins are expressed in a neuron-specific manner (Darnell, 2013), the dysregulation of mRNA translation has been linked to multiple neurodegenerative diseases (Kapur et al., 2017), and an activation of the unfolded protein response (UPR) in PrD mice has been shown to specifically affect the translation rather than the expression of RNAs (Moreno et al., 2012).\n\nHere, we have addressed these limitations by investigating PrD-relevant cell types throughout disease progression. We have identified preferentially translated genes (PTGs) and prion-induced changes in the analyzed cell types. We assessed astrocytes and microglia due to their activation being characteristics of PrD, PV neurons because they have previously been shown to be severely affected in PrD (Ferrer et al., 1993; Guentchev et al., 1998), and CamKIIa-positive pyramidal neurons in the cortex and hippocampus as major glutamatergic neuronal subtypes.\n\nDifferently from single-cell sequencing, cell-type-specific ribosome profiling assesses mRNA translation rather than expression, allows the identification of genome-wide changes and not only changes of highly expressed genes, and does not require manipulations likely to induce artefacts. One caveat of our approach lies within the unspecific pulldown of highly expressed genes, especially if they are expressed in an abundant cell type. Yet only 5 out of 2185 terminal changes changed in all 5 investigated cell types, indicating that the vast majority of changes are detectable in one or few cell types. In contrast, many neuronal-enriched genes appeared to decrease specifically in microglia. The latter observation most likely reflects a contamination of neuronal genes combined with an altered cellular composition (fewer neurons compared to microglia are present at the terminal stage). Importantly, our data allows us to identify such situations and take them into account when interpreting quantitative data. Collectively, our approach enables the assessment of biologically relevant cell-type-specific translation in a genome-wide manner, thereby complementing transcriptomic approaches.\n\nThe murine PrD model assessed here did not show a major decrease in neurons at the terminal stage. While this observation is consistent with previous reports, they are in stark contrast to the pathological changes characteristic for human PrD patients. Compared to humans, whose lives can be somewhat prolonged due to medical interventions, mice must be euthanized at a relatively early endpoint, well ahead of terminal disease, in order to comply with animal-welfare regulations. While these rules may have some justification, they render it legally impossible to investigate the true endpoint of mouse prion models. Consequently, the difference in neuronal loss is likely to reflect a difference in the disease stage. Interestingly, we observed only minor translational changes in different neuronal populations, although terminal PrD mice displayed pronounced neurological symptoms including piloerection, hind limb clasping, kyphosis and ataxia. It is possible that even few translational changes in neurons suffice to induce neurological dysfunction and symptoms. Additionally, our approach did not allow us to assess the impact of non-translated RNAs. Alternatively, neurological changes are evoked by subtle differences affecting neuronal connectivity, which may be induced by the widespread glia alterations described above but may escape translational analyses.\n\nTranslation of mRNA has previously been shown to be affected in a PrD mouse model which overexpresses PrP and are thus characterized by an accelerated PrD progression with pronounced loss of synapses and neurons (Moreno et al., 2012). These mice show a protracted UPR activation leading to increased phosphorylation of PERK and eIF2\u03b1, a global decrease in translation (including of Actb, Snap25, and Psd95), as well as increased ATF4/CHOP expression and apoptosis. While it remains unclear in which cell types these changes occur, neuronal overexpression of GADD34 globally decreased eIF2\u03b1 phosphorylation in hippocampal extracts, rescued the reduced translation and neuronal loss, and increased survival. More recently, the same group could show that also astrocytic overexpression of GADD34 was neuroprotective and increased survival (Smith et al., 2020), highlighting the importance of astrocytes in neurodegeneration. Interestingly, in our PrD mouse model none of the analyzed cell types showed a differential translation of Actb, Snap25, Psd95 (Dlg4), or Chop and only microglia showed an increased translation of Atf4. In addition, while Moreno et al. did not observe an increased expression of GADD34 in hippocampal extracts, we observed an increase in Gadd34 translation specifically in astrocytes, presumably leading to a reduced UPR. Considering the differences in UPR marker expression and neuronal loss between the different PrD mouse models, it is plausible that a reduced UPR activation in our mouse model might contribute to a less pronounced neurodegeneration.\n\nPreviously identified glia signatures increased in our dataset, including disease associated microglia (DAM) genes as well as neurotoxic (A1) astrocyte genes. In contrast, homeostatic microglia genes decreased during PrD progression. Neurotoxic A1 astrocytes are induced by activated microglia and are highly abundant in several neurodegenerative diseases (Liddelow et al., 2017). Yet, while preventing A1 formation after acute CNS injury reduced the loss of axotomized neurons (Liddelow et al., 2017), A1-astrocyte ablation in prion-inoculated mice accelerated disease progression (Hartmann et al., 2019), indicates that A1 astrocytes in PrD could be neuroprotective. Combined with our observations that neurotrophic (A2) astrocyte genes and Gadd34 increase in astrocytes, these results suggest that astrocytes might play a central role in limiting prion toxicity.\n\n## Materials and methods\n\n### Mice\n\nAnimal experiments were performed in compliance with the Swiss Animal Protection Law, under the approval of the Veterinary office of the Canton Zurich (animal permits ZH040/15, ZH139/16). Mice were kept in a conventional hygienic grade facility, constantly monitored by a sentinel program aimed at screening the presence of all bacterial, parasitic, and viral pathogens listed in the Federation of European Laboratory Animal Associations (FELASA). The light/dark cycle consisted of 12/12 hr with artificial light (40 Lux in the cage) from 07:00 to 19:00 hr. The temperature in the room was 21 \u00b1 1\u00b0C, with a relative humidity of 50 \u00b1 5%. The air pressure was controlled at 50 Pa, with 15 complete changes of filtered air per hour (HEPA H 14 filter; Vokes-Air, Uster, Switzerland). Up to five mice were housed in IVC type II long cages with autoclaved dust-free Lignocel SELECT Premium Hygiene Einstreu (140\u2013160 g/cage) (J. Rettenmaier and S\u00f6hne GmbH), autoclaved 20 \u00d7 21 cm paper tissues (Zellstoff), autoclaved hay and a carton refuge mouse hut as nesting material. Individual housing was avoided, and all efforts were made to prevent or minimize animal discomfort and suffering. Prion-inoculated and control-injected mice were regularly monitored for the development of clinical signs and humane termination criteria were employed.\n\nThe following mouse strains were used in this study: Rpl10a:GFP (RRID:IMSR_JAX:022367), Camk2a Cre (RRID:IMSR_JAX:005359), Cx3cr1CreER (RRID:IMSR_JAX:021160), GFAP Cre (RRID:IMSR_JAX:024098), and Pvalb Cre (MGI: 3798581). To induce Cre recombinase expression, 3-week-old Cx3cr1CreER mice received Tamoxifen chow (400 mg/kg; TD.55125.I) for 4 weeks. Eleven-week-old mice were intraperitoneally injected with 100 \u03bcl of RML6 prions (passage 6 of Rocky Mountain Laboratory strain mouse-adapted scrapie prions) containing 8.02 log LD50 of infectious units per ml. Control inoculations were performed using 100 \u00b5l of non-infectious brain homogenate (NBH) from CD-1 mice at the same dilution. After inoculation, mice were initially monitored three times per week. After clinical onset, mice were monitored daily. Mice were sacrificed at pre-defined time points (corresponding to an age of 13 to 35 weeks) at the same time of the day. Prion-inoculated mice allocated to the terminal group were sacrificed upon clear signs of terminal PrD including piloerection, hind limb clasping, kyphosis and ataxia (corresponding to an age of 42 to 43 weeks). This time point corresponds to the last time point when mice can be humanely euthanized and is reached 31\u201332 weeks post -ntraperitoneal prion inoculation. Control-injected mice assigned to the latest time point group were sacrificed at the same time as terminally ill mice.\n\nMice were sacrificed by carbon-dioxide-induced deep anesthesia followed by decapitation, and brains were immediately dissected. For ribosome profiling, brain regions (cortex and hippocampus) and hemispheres were dissected and flash frozen in liquid nitrogen. For immunohistochemistry, whole brains were fixed overnight in formalin at 4 \u00b0C, and prion-decontaminated at RT (1 hr in 100% formic acid, followed by a post-fixation step of 2 hr in formalin) before being paraffin embedded.\n\n### Immunohistochemistry\n\nHistological analyses were performed on 2-\u00b5m-thick sections from formalin fixed, formic acid treated, paraffin-embedded brain tissues. Sections were subjected to deparaffinization through graded alcohols, followed by heat-induced antigen retrieval performed in 10 mM citrate buffer (pH6). Stainings were performed with the following antibodies: IBA1 (1:125, Wako, 019\u20131974, RRID:AB_839504), GFAP (1:250, Dako, Z0334, RRID:AB_10013382), GFP (1:250, Rockland Immunochemicals, 600-101-215, RRID:AB_218182), NeuN (1:250, Merck Millipore, ABN78, RRID:AB_10807945), PV (1:500, Sigma Aldrich, P3088, RRID:AB_477329) and CamKlla (1:100, Santa Cruz Biotechnology, sc-5306, RRID:AB_626788). The following secondary antibodies were used: anti-goat Alexa 488 IgG (H+L) (1:1000, A11055, Invitrogen, RRID:AB_2534102), anti-mouse Alexa 555 IgG (H+L) (1:1000, A21422, Invitrogen, RRID:AB_2535844) and anti-rabbit Alexa 555 IgG (H+L) (1:1000, A31572, Invitrogen, RRID:AB_162543). Images were acquired using the Olympus BX61 Upright Fluorescence Microscope.\n\n### Western blot analysis\n\nSamples were lysed in 1 ml cell-lysis buffer (20 mM Hepes-KOH, pH 7.4, 150 mM KCl, 5 mM MgCl2, 1% IGEPAL) supplemented with protease inhibitor cocktail (Roche 11873580001), homogenized at 5000 rpm (15 s) with a Precellys24 Sample Homogenizer (LABGENE Scientific SA, BER300P24), incubated on ice for 20 min and cleared by centrifugation at 20,000 g, 4\u00b0 C for 10 min in a tabletop centrifuge (Eppendorf 5417 R). Whole protein concentrations were measured with a BCA assay (Thermo Scientific). Samples were boiled in 4 x LDS (Invitrogen, supplemented with 10 mM DTT) at 95\u00b0C for 10 min. Of total protein per sample, 20\u00a0\u00b5g\u00a0were loaded on a gradient of 4\u201312% Novex Bis-Tris Gel (Invitrogen) for electrophoresis at 80 V for 15 min, followed by constant voltage of 160 V. After transfer to PVDF or Nitrocellulose membranes with the iBlot system (Life Technologies), the membranes were blocked with 5% Sureblock (LubioScience) in PBS-T (PBS + 0.2% Tween-20) for 1 hr at room temperature. Primary antibodies were incubated overnight in PBS-T with 5% Sureblock at 4\u00b0C. The membranes were washed thrice with PBS-T for 10 min before incubating with secondary antibodies coupled to horseradish peroxidase for 1 hr at room temperature. Membranes were washed thrice with PBS-T for 10 min and developed with a Crescendo chemiluminescence substrate system (Millipore). Signal was detected using a LAS-3000 Luminescent Image Analyzer (Fujifilm), and analyzed with Quantity One (Bio-Rad, RRID:SCR_014280). The same membranes were then reprobed by incubating them for 30 min at room temperature in Restore Western Blot Stripping Buffer (Thermo Fischer Scientific), followed by washing thrice with PBS-T for 10 min and overnight incubation with the primary antibody anti-Calnexin (1:2000, Enzo Life Sciences, ADI-SPA-865, RRID:AB_10618434) at 4\u00b0C. Secondary antibody incubation, development and detection were performed as described above.\n\nThe following primary antibodies were used for western blot analysis: anti-IBA1 (1:1000, Wako, 019\u20131974, RRID:AB_839504), anti-GFAP (1:1000, Dako, Z0334, RRID:AB_10013382), anti-GFP (1:1000, Rockland Immunochemicals, 600-101-215, RRID:AB_218182), anti-Calnexin (1:2000, Enzo Life Sciences, ADI-SPA-865, RRID:AB_10618434), anti-NeuN (1:2000, Merck Millipore, ABN78, RRID:AB_10807945), anti-MMP9 (1:1000, Abcam, ab38898, RRID:AB_776512), anti-Glutamine Synthetase (1:1000, Abcam, ab176562, RRID:AB_2868472) and anti-PV (1:500, Swant, PV27, RRID:AB_2631173). The following secondary antibodies were used: HRP-tagged goat anti-rabbit IgG (H+L) (1:3000, 111.035.045, Jackson ImmunoResearch, RRID:AB_2337938) and HRP-tagged donkey anti-goat IgG (H+L) (1:3000, Jackson ImmunoResearch, 705-035-147, RRID:AB_2313587).\n\n### Ribosome profiling\n\nSamples were lysed at 5000 rpm (15 s) with a Precellys24 Sample Homogenizer (LABGENE Scientific SA, BER300P24) in 1 ml lysis buffer (20 mM Hepes-KOH, pH 7.4, 150 mM KCl, 5 mM MgCl2, 1% IGEPAL, 0.5 mM DTT, 40 U/ml RNAsin Plus (Promega N2615), 100 \u00b5g/ml cycloheximide, one Complete EDTA-Free Protease Inhibitor Cocktail tablet (Roche 11873580001) per 10 ml). Lysates were incubated for 30 min on ice and centrifuged at 20,000 g (10 min at 4\u00b0C) before being subjected to partial RNA digestion via 45 min incubation at RT with CaCl2 (1 mM final) and 300U micrococcal nuclease (0.3 U/ml; Thermo Scientific EN0181). The reaction was stopped by placing samples on ice and adding EGTA (10 mM final). GFP-tagged ribosomes were immunoprecipitated with a 1:1 mixture of monoclonal GFP antibodies (Memorial Sloan Kettering Monoclonal Antibody Facility, 19F7 and 19C8, RRID:AB_2716736 and RRID:AB_2716737). 200 \u00b5l protein G beads (Invitrogen 10004D), were coupled with 25 \u00b5g of each antibody, incubated with brain lysates for 1 hr at 4\u00b0C and washed thrice with wash buffer (50 mM Tris, pH7.5, 500 mM KCl, 5 mM MgCl2, 1% IGEPAL, 0.5 mM DTT, 40 U/ml RNAsin Plus, 100 \u00b5g/ml cycloheximide). RPFs were isolated by incubating beads for 15 min in release buffer (20 mM Hepes-KOH, pH 7.4, 100 mM NaCl, 30 mM EDTA, 0.5 mM DTT, 40 U/ml RNAsin Plus), addition of NaCl (0.5M final) and 10 min incubation, and ultracentrifugation at 200,000 g (2 hr at 4 \u00b0C). The RPF-containing supernatant was run over G25 columns (GE Healthcare 95017\u2013621) and incubated with 4U alkaline phosphatase (Roche 10713023001) to remove 3\u2019 phosphates. RPFs were extracted with Trizol LS (Invitrogen 10296\u2013028) according to the manufacturer\u2019s recommendations and subjected to ligation (2 hr at RT) with a pre-adenylated 3\u2019 linker (2 \u00b5M final) and a truncated T4 ligase (NEB M0373L). Ligated RPFs of 50\u201370 nucleotides (nt) were size selected by Urea PAGE electrophoresis and eluted by incubating crushed gel pieces at 1200 rpm (45 min at 50 \u00b0C) with 1M NaOAc (pH 5.2) and 1 mM EDTA. Gel pieces were removed with filter tubes (Corning 8160), and RNA was precipitated before being reverse transcribed with SSIII (Invitrogen 18080\u2013044) in the presence of BrdUTP (Sigma B0631, RRID:AB_306886). RT primers and the cloning and isolation of BrdUTP-labeled footprints have previously been described (Hwang et al., 2016; Weyn-Vanhentenryck et al., 2014). Briefly, the RT primer contains a 14-nt degenerate linker (a 3-nt degenerate sequence, a 4-nt multiplexing index, and a 7-nt unique molecular identifier), a 5\u2019linker for PCR amplification, a spacer to prevent rolling circle amplification after circularization, and the reverse-complementary sequence of the 3\u2019linker for reverse transcription. BrdUTP-labeled cDNA was specifically isolated via two sequential BrdUTP immunoprecipitations (with Abcam AB8955) and circularized with CircLigase II (Epicentre CL9025K). RPF libraries were PCR amplified with Phusion High-Fidelity DNA Polymerase (NEB M0530A) and the primer set DP5-PE/SP3-PE. The addition of SYBR Green (Invitrogen S7563) to the PCR reaction allowed us to track and stop library amplifications as soon as sufficient DNA had been generated to prevent overamplification-related PCR artifacts. Ribosome profiling libraries were isolated with AMPure XP beads (Agencourt A63880), quantified using the QIAxcel DNA High Resolution Kit for pooling. The quality and quantity of the pooled libraries were validated using Tapestation (Agilent, Waldbronn, Germany). The libraries were diluted to 10 nM in 10 mM Tris-Cl, pH 8.5 containing 0.1% Tween 20. The TruSeq SR Cluster Kit v4-cBot-HS (Illumina, Inc, California, USA) was used for cluster generation and sequencing was performed on a Illumina HiSeq 2500 single end 50 bp using the TruSeq SBS Kit v4-HS (Illumina, Inc, California, USA).\n\n### Primer sequences\n\nPre-adenylated 3\u2019 linker:\n\nRT primer #1:\n\nRT primer #2:\n\nRT primer #3:\n\nRT primer #4:\n\nRT primer #5:\n\nRT primer #6:\n\nRT primer #7:\n\nRT primer #8:\n\nDP5-PE:\n\nSP3-PE:\n\n### Data analysis\n\nRibosome profiling reads were processed with CTK (RRID:SCR_019034; Shah et al., 2017) and the FASTX-Toolkit (RRID:SCR_019035). Fastq files were de-multiplexed based on the 4-nt multiplexing index and filtered based on quality score (minimum of 20 from nt 1\u201314, mean of 20 from nt 15\u201340). The 3\u2032\u00a0linker was removed, exact sequences were collapsed, and the 14-nt adaptor was trimmed. Reads were aligned to the GRCm38.p5 build of the mouse genome and uniquely aligned reads were summarized per gene using STAR v2.6.0c (RRID:SCR_015899; Dobin et al., 2013). STAR gene count output files were analyzed in R (www.r-project.org, RRID:SCR_001905; Ihaka and Gentleman, 1996), using Bioconductor (RRID:SCR_006442; Gentleman et al., 2004), and the packages \u2018DESeq2\u2019 (RRID:SCR_015687; Love et al., 2014) and \u2018ggplot2\u2019 (RRID:SCR_014601; Wickham, 2016). Data discussed in this manuscript has been deposited in the GEO database and is accessible through accession number GSE149805.\n\nGene Ontology analyses were performed with GORILLA (RRID:SCR_006848; http://cbl-gorilla.cs.technion.ac.il). We compared genes specifically decreasing (164 out of 184 were present in the GO database) or increasing (634 out of 692 were present) in astrocytes to astrocyte-expressed genes (12,888 out of 14,280 were present). Genes specifically decreasing (600 out of 640 were present in the GO database) or increasing (422 out of 442 were present) in microglia were compared to microglia-expressed genes (11,164 out of 11,919 were present), and genes decreasing (13 out of 17 were present) or increasing (126 out of 136 were present) in both astrocytes and microglia were compared to genes expressed in both cell types (13,329 out of 14,837 were present).\n",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "bf1998e6-b503-4d39-8e9b-f0db5670631b",
+      "submission_id": "a10840a3-fc50-41bc-9c64-8b0169205d61",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J Paul Taylor, St Jude Children's Research Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62911.sa1](https://doi.org/10.7554/eLife.62911.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n\nAcceptance summary:\n\nThis paper combines two complementary approaches, translating ribosome affinity purification (TRAP) and ribosome profiling, to provide the first quantitative insight into the impact of PrPSc on cell type-specific translation. Surprisingly few translational changes were detected in neurons. In contrast, substantial alterations to translation were evident in astrocytes and microglia prior to manifestation of prion disease features, suggesting that aberrant translation in these cell types may be a primary driver of neurodegeneration.\n",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4e78cd9e-a168-44f2-ac3f-9052373e0a23",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C1",
+      "claim": "Prion diseases are caused by PrPSc, a self-replicating pathologically misfolded protein that exerts toxicity predominantly in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Prion diseases are caused by PrPSc, a self-replicating pathologically misfolded protein that exerts toxicity predominantly in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that represents established knowledge about prion diseases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "c9f67901-6b1a-4c70-a1c1-52ace9596daf",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C2",
+      "claim": "Terminally diseased mice with severe neurological symptoms showed extensive alterations in astrocytes and microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Terminally diseased mice with severe neurological symptoms showed extensive alterations in astrocytes and microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the ribosome profiling data presented in the manuscript showing differential translation in these cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "4c150a94-5376-431d-848e-be1aad2afe16",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C3",
+      "claim": "Only minor changes were detected in the translational profiles of neurons during prion disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we detected only minor changes in the translational profiles of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ribosome profiling data showing few differentially translated genes in neuronal populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "0591cbd8-1bd4-46e2-9f9a-2e94ae2e7126",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C4",
+      "claim": "Prion-induced alterations in glia overlapped with those identified in other neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Prion-induced alterations in glia overlapped with those identified in other neurodegenerative diseases, suggesting that similar events occur in a broad spectrum of pathologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with published signatures from other neurodegenerative diseases mentioned in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "96d6fc2c-4ea8-46d8-999d-c123935aa574",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C5",
+      "claim": "Aberrant translation within glia may suffice to cause severe neurological symptoms and may be the primary driver of prion disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that aberrant translation within glia may suffice to cause severe neurological symptoms and may even be the primary driver of prion disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the finding of extensive glia changes but minimal neuronal changes in the presence of severe symptoms.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "204f6e72-e04a-4e76-90f1-0e2f4534db44",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C6",
+      "claim": "Prions consist primarily of PrPSc, pathological aggregates of the cellular prion protein (PrPC).",
+      "claim_type": "EXPLICIT",
+      "source": "Prions consist primarily of PrPSc, pathological aggregates of the cellular prion protein (PrPC) and can be highly infective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about prion composition cited from the literature (Scheckel and Aguzzi, 2018).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "d2aade48-0e48-4c1b-ba58-01363f63c863",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C7",
+      "claim": "All prion diseases show a similar disease progression characterized by pronounced vacuolation phenotype, activation of microglia and astrocytes, and ultimately neuronal loss.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cause of PrPC aggregation differs, all PrDs show a similar disease progression characterized by a pronounced vacuolation phenotype, activation of microglia and astrocytes, and ultimately neuronal loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about prion disease pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "19296c67-47f4-46e1-9e9c-11d296d45fe0",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C8",
+      "claim": "Mouse models of prion disease recapitulate most aspects of human disease including transcriptomic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, mouse models of PrD appear to recapitulate most aspects of the human disease including transcriptomic changes \u2013 a finding that sets them apart from other murine models of neurodegenerative disease (Burns et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Burns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "565d7b25-95f6-4560-ba32-a209c5830520",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C9",
+      "claim": "Genes linked to neurodegeneration in humans are conspicuously downregulated in prion disease mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, PrDs share many hallmarks with other more common neurodegenerative diseases including Alzheimer's and Parkinson's disease, and genes linked to neurodegeneration in humans have been shown to be conspicuously downregulated in PrD mice (Burns et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Burns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "c651e5f2-2d2a-4190-8874-f56d1ce9ae4d",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C10",
+      "claim": "RiboTag mice expressing HA tagged ribosomes in a Cre recombinase-dependent manner have been used to profile multiple CNS cell populations without tissue manipulation procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "RiboTag (RT) mice expressing HA tagged ribosomes in a Cre recombinase-dependent manner (Sanz et al., 2009), have been used to profile multiple CNS cell populations without tissue manipulation procedures (Boisvert et al., 2018; Furlanis et al., 2019; Haimon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations describing the use of RiboTag mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "786c4baa-f7e7-49c8-ac79-e0d7baf69903",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C11",
+      "claim": "The CamKIIa promoter induced GFP expression in only a subset of NeuN+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-staining with the neuronal marker NeuN, which is expressed in most neurons, confirmed that the CamKIIa promoter induced GFP expression in only a subset of NeuN+ neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "1ada9db9-0c7d-494f-82ef-4f252987e42f",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C12",
+      "claim": "GFP-expressing PV neurons were typically NeuN negative.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GFP-expressing PV neurons were typically NeuN negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "63d70eae-5f93-4bf3-91f7-7732f2e3f247",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C13",
+      "claim": "The GFP:Rpl10a mouse strain does not exhibit leaky constitutive GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the expression of GFP was strictly Cre-dependent (Figure 1b\u2013c and Figure 1\u2014figure supplement 1) indicating that the GFP:Rpl10a mouse strain does not exhibit leaky constitutive GFP expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the absence of GFP signal in Cre-negative mice shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "de9e0076-3aae-40bd-8d27-b409dc7372f7",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C14",
+      "claim": "The mGFAP line 77.6 expresses Cre almost exclusively in astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The mGFAP line 77.6 utilized in this study performs better than other astrocytic Cre drivers and expresses Cre almost exclusively in astrocytes (Gregorian et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gregorian et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "872cfcc5-6181-4454-8c32-9ab200fa08de",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C15",
+      "claim": "The Cx3cr1CreER line displays Cre-induced rearrangements in microglia and neurons due to Cx3cr1 promoter activity during neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the microglia Cre driver line, Cx3cr1Cre has been shown to display Cre-induced rearrangements not only in microglia but also in neurons, most likely due to Cx3cr1 promoter activity during neuronal development (Haimon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Haimon et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "68901f65-90b3-4d73-9a93-f996674f7af6",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C16",
+      "claim": "Cx3cr1CreER mice express Cre in non-parenchymal macrophages corresponding to roughly ~1% of Cre-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While these mice showed GFP expression in microglia and not in neurons (Figure 1e and Figure 1\u2014figure supplement 1e), they have been reported to additionally express Cre in non-parenchymal macrophages (Goldmann et al., 2016), corresponding to roughly ~1% of Cre-positive cells in Cx3cr1CreER mice (Haimon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Goldmann et al., 2016 and Haimon et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "9ab5ff38-4cd5-43f4-8da1-76b34c7d8423",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C17",
+      "claim": "Glial GFP, IBA-1, and GFAP levels were markedly increased in terminal prion disease brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, glial GFP, IBA-1 (microglia marker) and GFAP (astrocyte marker) levels were markedly increased in terminal PrD brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "4fa867f4-eaae-4204-b6ca-8c1b3dce234c",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C18",
+      "claim": "No clear difference in neuronal GFP, NeuN, CamKIIa or PV expression was observed between control and terminal prion disease brains.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we did not observe a clear difference in neuronal GFP, NeuN, CamKIIa or PV expression (Figure 1 and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "9be11ace-1052-45a9-9937-89e542396312",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C19",
+      "claim": "No or only a minor decrease in neuronal cell number was evident at the terminal prion disease stage in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous observations from our lab, where no or only a minor decrease in neuronal cell number was evident at the terminal PrD stage in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous observations from the authors' laboratory.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "ba74e0e2-b8af-4094-88a1-596020775707",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C20",
+      "claim": "The number of ribosome-protected fragments is linked to the number of ribosomes per transcript and therefore to the translation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of RPFs is linked to the number of ribosomes per transcript and therefore to the translation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about ribosome profiling methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "be87fe38-48a7-4435-b7c3-dc3a748a9ffb",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C21",
+      "claim": "Libraries typically obtained 5\u201310 million unique reads per library.",
+      "claim_type": "EXPLICIT",
+      "source": "We typically obtained 5\u201310 million unique reads per library (Figure 2\u2014figure supplement 1a and Supplementary file 1), of which only a minority (\u226410%) mapped to ribosomal RNA (Figure 2\u2014figure supplement 1b and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1a and Supplementary file 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "3902ea31-3de0-44b6-8264-6062758e9c1c",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C22",
+      "claim": "Only a minority (\u226410%) of aligned reads mapped to ribosomal RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We typically obtained 5\u201310 million unique reads per library (Figure 2\u2014figure supplement 1a and Supplementary file 1), of which only a minority (\u226410%) mapped to ribosomal RNA (Figure 2\u2014figure supplement 1b and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1b and Supplementary file 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "d74f2520-86ae-49e4-be21-6b761db7ba4a",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C23",
+      "claim": "Most aligned reads were coding sequence (CDS) reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Most aligned reads were coding sequence (CDS) reads (Figure 2b and Supplementary file 1), which is consistent with the ribosome occupancy of transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2b and Supplementary file 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "fc16c8d7-6fa2-4984-9e57-421de3e3ae49",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C24",
+      "claim": "Libraries of all terminally diseased mice were non-distinguishable from other libraries despite the increase in glia cells at the terminal stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, despite the increase in glia cells at the terminal stage, the libraries of all terminally diseased mice (green data points in Figure 2 and Figure 2\u2014figure supplement 1) were non-distinguishable from other libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quality control data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "7cd1b22b-6ef4-4bb4-9ee8-7251beec01c0",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C25",
+      "claim": "Principal-component analysis and hierarchical clustering revealed a segregation of different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "A principal-component analysis (PCA) and hierarchical clustering based on Euclidean distances revealed a segregation of the different cell types as well as a similarity between the analyzed neuronal cell types (Figure 2c\u2013d and Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PCA and clustering data shown in Figure 2c-d.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "40020e8a-7a06-4fdc-81c3-e871b9374ec2",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C26",
+      "claim": "Cre-negative samples were most similar to GFAP samples.",
+      "claim_type": "EXPLICIT",
+      "source": "With astrocytes being a highly abundant cell type in the CNS (Miller, 2018), it was not surprising that Cre-negative samples were most similar to GFAP samples (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PCA data shown in Figure 2c and citation to Miller, 2018.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "1c15c874-8075-4fcb-abc7-7bf564c85e2e",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C27",
+      "claim": "The top 100 enriched genes in neurons, endothelial cells, oligodendrocytes, astrocytes and microglia showed the highest translation in the corresponding ribosome profiling dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined the top 100 enriched genes in neurons (N), endothelial cells (EC), oligodendrocytes (OL), astrocytes (AS) and microglia (MG) based on RNA sequencing data generated from these cell populations (Zhang et al., 2014). These cell types were purified from P7 mouse brains via cell dissociation, immunopanning and FACS, and were analyzed via RNAseq. In contrast, our datasets were generated via ribosome profiling of flash-frozen brain regions from 13-week-old mice. Nonetheless, we observed that the top 100 enriched genes showed the highest translation in the corresponding RP dataset (Figure 3a and Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with published data from Zhang et al., 2014 shown in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "316c4d71-95ce-4b32-8201-8f6050178a48",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C28",
+      "claim": "Cell-type-specific markers showed the highest translation in the respective cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally assessed cell-type-specific markers, defined by single-cell sequencing of the visual cortex from 2-month-old mice (Hrvatin et al., 2018). As expected, marker genes for excitatory neurons, PV neurons, astrocytes and microglia showed the highest translation in the respective cell type (Figure 3\u2014figure supplement 1 and Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with published data from Hrvatin et al., 2018 shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "780fba05-21ad-45af-8832-3d2ef779ef87",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C29",
+      "claim": "The ribosome profiling predominantly profiled subsets of excitatory neurons (L23, L5_1 and L5_3) and microglia (Micro_1).",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison further revealed that we predominantly profiled subsets of excitatory neurons (L23, L5_1 and L5_3) and microglia (Micro_1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with single-cell sequencing markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "ef129a9d-178a-43b6-a18c-2858e7eb2323",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C30",
+      "claim": "Macrophage markers were highly translated in the Cx3cr1 ribosome profiling dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, macrophage markers were highly translated in the Cx3cr1 RP dataset, confirming previous observations that a minor fraction of Cx3cr1CreER-positive cells are non-parenchymal macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of marker gene translation and confirms previous observations.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "fa65c843-18a3-4017-9e65-7d0e4667616f",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C31",
+      "claim": "A total of 2692 preferentially translated genes were identified, including 57 CamKIIa_CX, 50 CamKIIa_HC, 299 PV, 963 GFAP and 1323 Cx3Cr1 PTGs.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded a total of 2692 PTGs, including 57 CamKIIa_CX, 50 CamKIIa_HC, 299 PV, 963 GFAP and 1323 Cx3Cr1 PTGs (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by differential expression analysis shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "04ebe3e5-28a8-47b6-94e5-1442ed0d03c3",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C32",
+      "claim": "Ribosome profiling and RiboTag datasets of each cell type were overall highly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "While RT and RP datasets of each cell type were overall highly correlated (Figure 3d), we also observed that a number of genes deviated from the linear regression line, including several PTGs (colored in Figure 3d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "77bd1d98-b55b-48dc-a520-55a33ce24ab5",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C33",
+      "claim": "Prion-induced changes only became evident at later disease time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Prion-induced changes only became evident at later disease time points, and except for few individual genes we could not detect any DTGs in any of the cell types at 2, 4, 8, and 16 weeks post prion inoculation (wpi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by differential expression analysis across time points shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "08eaf03b-a6d8-40fa-8e27-c6404ae13946",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C34",
+      "claim": "A clear separation of control and prion disease samples was observed only at the terminal time point, most strikingly in GFAP and Cx3cr1+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A PCA revealed a clear separation of control and PrD samples only at the terminal time point, most strikingly in GFAP and Cx3cr1+ cells (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PCA data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "35b5c97b-9940-4610-ba2a-a2f170e3702c",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C35",
+      "claim": "Both GFAP+ and Cx3cr1+ cells showed several translational changes at the pre-terminal stage, 24 weeks post inoculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these cell types already showed several translational changes at the pre-terminal stage, 24 wpi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by differential expression analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "3d6f0100-7ddc-4e5c-b9d0-4fb624d655e8",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C36",
+      "claim": "There was a high overlap between the changes at 24 weeks post inoculation and terminal time points in GFAP+ and Cx3cr1+ cells, especially among upregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon comparing prion-induced changes at the last two time points, we observed a correlation in both GFAP+ and Cx3cr1+ cells and a high overlap between the changes at the two time points, especially among upregulated genes (Figure 4b\u2013c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison data shown in Figure 4b-c.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "417c1465-ddc0-4661-bc42-7478ee8a20e1",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C37",
+      "claim": "Pronounced translational changes in astrocytes and microglia become evident 2 months before the terminal stage, long before any prion disease-related symptoms manifest.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the pronounced translational changes in astrocytes and microglia become evident 2 months before the terminal stage, long before any PrD-related symptoms manifest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the timing of changes at 24 wpi relative to terminal disease.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "f9202c3a-3a80-4141-a0f8-1a2a13896461",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C38",
+      "claim": "A1 signature genes increased with disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, we found A1 signature genes to increase with disease progression (Figure 4d and Supplementary file 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of A1 signature genes shown in Figure 4d.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "f8b7e30a-3adf-49f4-918c-f31623d00f41",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C39",
+      "claim": "A2 signature genes increased with disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed an increase in A2 signature genes, corresponding to neurotrophic factors (Liddelow et al., 2017; Zamanian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of A2 signature genes shown in Figure 4d and citations.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "204ea119-56ee-4e64-b26b-0a0a771195dd",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C40",
+      "claim": "Disease-associated microglia (DAM) genes increased during disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observations for A1 genes, disease-associated microglia (DAM) genes increased during disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of DAM signature genes shown in Figure 4e.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "3f7e0bf3-a81c-4376-a2d0-cbf2404900a9",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C41",
+      "claim": "Homeostatic microglia markers started to show a slight decrease at 24 weeks post inoculation, that was more pronounced at the terminal stage of the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, homeostatic microglia markers started to show a slight decrease at 24 wpi, that was more pronounced at the terminal stage of the disease (Figure 4e and Supplementary file 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of homeostatic microglia genes shown in Figure 4e.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "5a76bf5e-8955-49f1-a067-b13ab97795a2",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C42",
+      "claim": "The appearance of disease-associated microglia and the concomitant loss of homeostatic microglia are hallmarks of multiple neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations have been reported for multiple neurodegenerative diseases (Keren-Shaul et al., 2017), confirming that the appearance of DAMs and the concomitant loss of homeostatic microglia are hallmarks of multiple neurodegenerative diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Keren-Shaul et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "611d41f2-885a-4977-af80-c162c4a7b736",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C43",
+      "claim": "Neuronal cell types displayed very few translational changes even at the terminal stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, neuronal cell types displayed very few translational changes even at the terminal stage (Figure 4a), and we observed only a low correlation of prion-induced changes at the last two time points (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by differential expression analysis shown in Figure 4a and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "c765b912-3e23-49ff-917f-99710e463c1e",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C44",
+      "claim": "Several genes that changed in neurons at 24 weeks post inoculation were enriched in either astrocytes and/or microglia, suggesting these changes might reflect glia contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of the genes that changed in neurons at 24 wpi were enriched in either astrocytes and/or microglia and these changes might reflect a glia contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from analysis of cell-type enrichment of changing genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "37f0dca1-81e6-4818-806f-f150e5183dbf",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C45",
+      "claim": "Sik1, Cyp2s1, and Oprm1 were highest expressed in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet Sik1 (changing in CamKIIa cortical neurons) and Cyp2s1 and Oprm1 (both changing in PV neurons) were highest expressed in neurons, and it is possible that even such few changes are sufficient to induce neuronal dysfunction and symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of gene expression patterns and represents speculation about functional consequences.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "0f6889aa-b565-49b4-9475-8f699249d5b8",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C46",
+      "claim": "Five genes showed an increase in translation in all analyzed cell types: Gfap, Serpina3n, Apod, Mt1, and Lgals3bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, five genes showed an increase in translation in all analyzed cell types: Gfap, Serpina3n, Apod, Mt1, and Lgals3bp (Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis shown in Figure 5\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "21fc9e52-896e-474c-beaf-e0a7bb7b63c8",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C47",
+      "claim": "All five genes that changed in all cell types are highly translated in astrocytes, microglia or both.",
+      "claim_type": "EXPLICIT",
+      "source": "All five genes are highly translated in astrocytes, microglia or both (Figure 5\u2014figure supplement 1b and Supplementary file 9), indicating that the increase in neuronal translation of these common genes is likely a contamination and reflects the pronounced astro- and microgliosis at the terminal PrD stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of cell-type-specific translation patterns shown in Figure 5\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "27909d03-6dc6-4007-8592-5bfcd7ccadd3",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C48",
+      "claim": "Pronounced regional differences in translation were detected within one and the same cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we detected pronounced regional differences in translation within one and the same cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of CamKIIa changes between cortex and hippocampus shown in Figure 5d.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "2440deec-b46f-4ae6-ad69-17de1785dd7f",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C49",
+      "claim": "The CamKIIa changes between cortex and hippocampus did not correlate.",
+      "claim_type": "EXPLICIT",
+      "source": "The CamKIIa changes between cortex and hippocampus did not correlate (Figure 5d) and, apart from the common genes discussed above, only one additional gene was shared between the CamKIIa datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison shown in Figure 5d.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "11513796-bf2f-4bf8-9d4c-041df360bce9",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C50",
+      "claim": "170 genes changed in both glia cell types, with most of them (n = 153) changing in the same direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, we also identified 170 genes that changed in both glia cell types, with most of them (n = 153) changing in the same direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis shown in Figure 5e.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "8f3cd9c7-4513-4a6e-84d4-96ccf35b2fe8",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C51",
+      "claim": "Immune response genes were enriched among genes that increased specifically in astrocytes, microglia, or in both cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an enrichment of immune response genes among all three groups of genes and, among astrocyte-specific increasing genes, an enrichment of terms related to cell adhesion and extracellular matrix organization, indicating that these processes might be affected in astrocytes (Figure 5f and Supplementary file 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene ontology analysis shown in Figure 5f.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "e2ae352b-199c-4646-8838-e4797804a7cb",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C52",
+      "claim": "Many decreasing genes that are astrocyte-specific or shared have been linked to sterol and cholesterol biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, many decreasing genes that are astrocyte-specific (n = 184) or shared (n = 17) have been linked to sterol and cholesterol biosynthesis, respectively, whereas microglia-specific decreasing genes (n = 640) were enriched for neuronal terms including synaptic transmission (Figure 5f and Supplementary file 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene ontology analysis shown in Figure 5f.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "e66b5e64-0f02-4e6d-81bc-69557138c082",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C53",
+      "claim": "Microglia-specific decreasing genes were enriched for neuronal terms including synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, many decreasing genes that are astrocyte-specific (n = 184) or shared (n = 17) have been linked to sterol and cholesterol biosynthesis, respectively, whereas microglia-specific decreasing genes (n = 640) were enriched for neuronal terms including synaptic transmission (Figure 5f and Supplementary file 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene ontology analysis shown in Figure 5f.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "a3f25f1f-7313-424c-8bed-fdaec19bf0f2",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C54",
+      "claim": "Many microglia-specific decreasing genes were strongly enriched in neuronal cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed a negative correlation between the translational change in microglia and neuronal enrichment: many microglia-specific decreasing genes (colored in blue) were strongly enriched in neuronal cell types (Figure 5\u2014figure supplement 1c: first three panels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis shown in Figure 5\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "920eaad4-221a-4dcb-b34f-b22c0ffaa5f7",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C55",
+      "claim": "The decrease in neuronal-enriched genes specifically in microglia is likely an artefact and reflects a change in the composition of analyzed cell types, namely the increase in microglia relative to neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in neuronal-enriched genes specifically in microglia is thus likely an artefact and reflects a change in the composition of analyzed cell types, namely the increase in microglia relative to neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between microglia changes and neuronal enrichment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "c2e27ea0-c044-4955-8aca-da5ce2728271",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C56",
+      "claim": "The datasets correlated at the terminal stage between mRNA abundance and cell-type-specific translation.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not observe a correlation between mRNA abundance and cell-type-specific translational changes at 8 wpi (Figure 6\u2014figure supplement 1a), the datasets correlated at the terminal stage (Figure 6\u2014figure supplement 1b), and many genes changed in both mRNA abundance and cell-type-specific translation (Figure 6a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with RNAseq data shown in Figure 6\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "41e2e7e3-8c55-4ebc-b786-a7af42ee7f28",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C57",
+      "claim": "Microglia preferentially translated genes showed a strong increase in the RNAseq dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that terminal mRNA abundance changes correspond to genes enriched in microglia and astrocytes. Consistently, we observed that microglia PTGs showed a strong increase in the RNAseq dataset (Figure 6b), and that more than a third of the genes changing in mRNA abundance are microglia PTGs (566 out of 1451), most of which specifically changed in the RNAseq dataset (Figure 6a, n = 411).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with RNAseq data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "5fa2ce01-549e-4308-84e9-9125ba587297",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C58",
+      "claim": "The RNAseq dataset showed the highest correlation with GFAP translational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNAseq dataset showed the highest correlation with GFAP translational changes (Figure 6c and Figure 6\u2014figure supplement 1b), which is consistent with astrocytes being the most abundant cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 6c and Figure 6\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "89070c30-35b3-47a4-b3e3-82942acc8a7a",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C59",
+      "claim": "Many genes that increased in mRNA abundance were enriched in microglia and thus reflect microglia proliferation rather than an increase in microglia-gene expression on a cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, many genes that increased in mRNA abundance were enriched in microglia (Figure 6d), and thus reflect microglia proliferation rather than an increase in microglia-gene expression on a cellular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of RNAseq and cell-type-specific translation data shown in Figure 6d.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "56768496-8933-4018-b116-2de59704c573",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C60",
+      "claim": "No change in cell-type-specific translation nor protein expression in whole brain extracts was observed for Glul.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed no change in cell-type-specific translation nor protein expression in whole brain extracts for Glul, the protein expression and the translation in all assessed cell types strongly increased for Gfap (Figure 6e\u2013f and Figure 6\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by translation and western blot data shown in Figure 6e-f.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "54904df3-8fa2-4bd2-8de8-35a9b01f95e8",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C61",
+      "claim": "The protein expression and the translation in all assessed cell types strongly increased for Gfap.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed no change in cell-type-specific translation nor protein expression in whole brain extracts for Glul, the protein expression and the translation in all assessed cell types strongly increased for Gfap (Figure 6e\u2013f and Figure 6\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by translation and western blot data shown in Figure 6e-f.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "69613af1-3b6e-4f13-8f94-df463795cab2",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C62",
+      "claim": "The number of astrocytes does not change during prion disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the number of astrocytes does not change during PrD, yet specific genes such as Gfap are strongly upregulated in astrocytes during PrD progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Glul does not change while Gfap increases.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "f4f02a7b-50a5-41d1-86ee-fb1266c10ebb",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C63",
+      "claim": "An increase in both IBA1 and MMP9 protein expression was observed, whereas Aif1 translation did not change and Mmp9 translation even decreased, specifically in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed an increase in both IBA1 and MMP9 protein expression, whereas Aif1 translation did not change and Mmp9 translation even decreased, specifically in microglia (Figure 6e\u2013f and Figure 6\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by translation and western blot data shown in Figure 6e-f.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "83c8d07c-a898-48a6-b4b5-329bdd4e1f56",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C64",
+      "claim": "The increased microglia proliferation accounts for the increase in IBA1 protein levels and additionally masks the microglia-specific decrease in Mmp9 translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased microglia proliferation therefore not only accounts for the increase in IBA1 protein levels (no cell-type specific change in translation was detectable), but also additionally masks the microglia-specific decrease in Mmp9 translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discrepancy between protein levels and cell-type-specific translation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "6a22c3de-08ab-44ce-8ee9-2cb2ab521bef",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C65",
+      "claim": "No decrease in neuronal markers was observed in prion disease.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally assessed NeuN expression in hippocampal and cortical lysates as well as PV expression in whole brain lysates but did not observe a decrease in neuronal markers in PrD (Figure 6g and Figure 6\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 6g.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "217c1f8f-ed03-4c80-aa81-fcf6b2244040",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C66",
+      "claim": "Terminally sick prion disease mice show no or only little neuronal loss.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support our initial observation (Figure 1 and Figure 1\u2014figure supplement 1) that terminally diseased PrD mice showed no or only little neuronal loss and explain why neuronal enriched genes show no or only a minor decrease in the RNAseq dataset (Figure 6a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot and immunohistochemistry data.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "1f5fa04f-a9e1-4a94-b478-4e914e4551e8",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C67",
+      "claim": "GFP levels remained constant in GFAP Cre/Rpl10a:GFP mice.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP levels remained constant in GFAP Cre/Rpl10a:GFP mice (Figure 6\u2014figure supplement 2b), indicating that an increased GFAP promoter activity does not lead to additional Cre recombination events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 6\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "bc2b3a99-9d0c-4037-b059-8a624c7c5587",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C68",
+      "claim": "GFP levels increased in Cx3cr1 Cre/Rpl10a:GFP mice, most likely reflecting the increase in microglia numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GFP levels increased in Cx3cr1 Cre/Rpl10a:GFP mice (Figure 6\u2014figure supplement 2c), most likely reflecting the increase in microglia numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 6\u2014figure supplement 2c and represents inference about the cause.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "f32af5db-8c57-44e0-83fa-a8a12219fcdc",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C69",
+      "claim": "Cell-type-specific ribosome profiling identified ~1500 novel genes that showed prion disease-dependent translational changes, which were missed with more conventional approaches such as RNAseq of brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data highlights the importance of studying individual cell types, allowing us to identify ~1500 novel genes that showed PrD-dependent translational changes, which were missed with more conventional approaches such as RNAseq of brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison between ribosome profiling and RNAseq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "d3c418c6-e851-4992-aba0-969973380d99",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C70",
+      "claim": "The murine prion disease model assessed did not show a major decrease in neurons at the terminal stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The murine PrD model assessed here did not show a major decrease in neurons at the terminal stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemistry and western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "8f241615-3ebe-4906-b528-bb121dbde0e3",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C71",
+      "claim": "The difference in neuronal loss between mice and humans is likely to reflect a difference in the disease stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to humans, whose lives can be somewhat prolonged due to medical interventions, mice must be euthanized at a relatively early endpoint, well ahead of terminal disease, in order to comply with animal-welfare regulations. While these rules may have some justification, they render it legally impossible to investigate the true endpoint of mouse prion models. Consequently, the difference in neuronal loss is likely to reflect a difference in the disease stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the constraints of animal welfare regulations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "ed9eb42f-6ef9-432e-b0c1-9622b2b1dd53",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C72",
+      "claim": "It is possible that even few translational changes in neurons suffice to induce neurological dysfunction and symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that even few translational changes in neurons suffice to induce neurological dysfunction and symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional consequences of the observed changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "90bd876f-c353-441d-8517-3c3d57c9f56e",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C73",
+      "claim": "Neurological changes may be evoked by subtle differences affecting neuronal connectivity, which may be induced by the widespread glia alterations but may escape translational analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, neurological changes are evoked by subtle differences affecting neuronal connectivity, which may be induced by the widespread glia alterations described above but may escape translational analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about alternative mechanisms that could explain the symptoms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "819d5925-a3e7-48a0-b133-d63fb38aff1e",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C74",
+      "claim": "Mice overexpressing PrP show a protracted UPR activation leading to increased phosphorylation of PERK and eIF2\u03b1, a global decrease in translation, as well as increased ATF4/CHOP expression and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation of mRNA has previously been shown to be affected in a PrD mouse model which overexpresses PrP and are thus characterized by an accelerated PrD progression with pronounced loss of synapses and neurons (Moreno et al., 2012). These mice show a protracted UPR activation leading to increased phosphorylation of PERK and eIF2\u03b1, a global decrease in translation (including of Actb, Snap25, and Psd95), as well as increased ATF4/CHOP expression and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Moreno et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "f8a7d25d-847f-44d5-ac67-e85a49bdc79f",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C75",
+      "claim": "Neuronal overexpression of GADD34 globally decreased eIF2\u03b1 phosphorylation in hippocampal extracts, rescued the reduced translation and neuronal loss, and increased survival.",
+      "claim_type": "EXPLICIT",
+      "source": "While it remains unclear in which cell types these changes occur, neuronal overexpression of GADD34 globally decreased eIF2\u03b1 phosphorylation in hippocampal extracts, rescued the reduced translation and neuronal loss, and increased survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work from the same group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "efca6682-13de-4b5b-b832-00b9bdb4da0a",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C76",
+      "claim": "Astrocytic overexpression of GADD34 was neuroprotective and increased survival.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, the same group could show that also astrocytic overexpression of GADD34 was neuroprotective and increased survival (Smith et al., 2020), highlighting the importance of astrocytes in neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Smith et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "d2a3a0a5-9e75-43bb-ae8a-09668256aa4d",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C77",
+      "claim": "In the prion disease mouse model used in this study, none of the analyzed cell types showed a differential translation of Actb, Snap25, Psd95 (Dlg4), or Chop.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in our PrD mouse model none of the analyzed cell types showed a differential translation of Actb, Snap25, Psd95 (Dlg4), or Chop and only microglia showed an increased translation of Atf4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ribosome profiling data from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "dc6e6f09-f1ac-4073-ac6a-924183fd6e80",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C78",
+      "claim": "Only microglia showed an increased translation of Atf4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in our PrD mouse model none of the analyzed cell types showed a differential translation of Actb, Snap25, Psd95 (Dlg4), or Chop and only microglia showed an increased translation of Atf4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ribosome profiling data from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "39d60add-1515-4ffa-81c2-4b380c6ab1db",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C79",
+      "claim": "An increase in Gadd34 translation was observed specifically in astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, while Moreno et al. did not observe an increased expression of GADD34 in hippocampal extracts, we observed an increase in Gadd34 translation specifically in astrocytes, presumably leading to a reduced UPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ribosome profiling data from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "0c3354ce-8a57-4c80-85ed-84edb2574bf2",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C80",
+      "claim": "A reduced UPR activation in the mouse model used in this study might contribute to a less pronounced neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the differences in UPR marker expression and neuronal loss between the different PrD mouse models, it is plausible that a reduced UPR activation in our mouse model might contribute to a less pronounced neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on comparison with other models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "d7289781-4b4a-43d4-bc01-be066ab94662",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C81",
+      "claim": "Previously identified glia signatures increased in the dataset, including disease associated microglia (DAM) genes as well as neurotoxic (A1) astrocyte genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously identified glia signatures increased in our dataset, including disease associated microglia (DAM) genes as well as neurotoxic (A1) astrocyte genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of known signatures in the ribosome profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "29bb6f9b-7f4d-4199-abd9-847ef5331969",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C82",
+      "claim": "Homeostatic microglia genes decreased during prion disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, homeostatic microglia genes decreased during PrD progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of homeostatic microglia signatures in the ribosome profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "67c4d675-14d5-4999-ab14-be2edf3bdc56",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C83",
+      "claim": "A1-astrocyte ablation in prion-inoculated mice accelerated disease progression, indicating that A1 astrocytes in prion disease could be neuroprotective.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, while preventing A1 formation after acute CNS injury reduced the loss of axotomized neurons (Liddelow et al., 2017), A1-astrocyte ablation in prion-inoculated mice accelerated disease progression (Hartmann et al., 2019), indicates that A1 astrocytes in PrD could be neuroprotective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Liddelow et al., 2017 and Hartmann et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "e3f00bae-781d-4959-b801-9a63f537dcca",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C84",
+      "claim": "Astrocytes might play a central role in limiting prion toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with our observations that neurotrophic (A2) astrocyte genes and Gadd34 increase in astrocytes, these results suggest that astrocytes might play a central role in limiting prion toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of data showing A2 gene increases and Gadd34 increases in astrocytes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "bfbd0d76-9268-42a8-8b7c-87e1edc0a7f1",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C85",
+      "claim": "Eleven-week-old mice were intraperitoneally injected with 100 \u03bcl of RML6 prions containing 8.02 log LD50 of infectious units per ml.",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven-week-old mice were intraperitoneally injected with 100 \u03bcl of RML6 prions (passage 6 of Rocky Mountain Laboratory strain mouse-adapted scrapie prions) containing 8.02 log LD50 of infectious units per ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "ede8fe3d-6dc3-455d-8a04-68c583d01819",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C86",
+      "claim": "Prion-inoculated mice allocated to the terminal group were sacrificed upon clear signs of terminal prion disease including piloerection, hind limb clasping, kyphosis and ataxia.",
+      "claim_type": "EXPLICIT",
+      "source": "Prion-inoculated mice allocated to the terminal group were sacrificed upon clear signs of terminal PrD including piloerection, hind limb clasping, kyphosis and ataxia (corresponding to an age of 42 to 43 weeks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure and endpoint criteria used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "cac64210-3c96-4635-8182-a56f329f0c4a",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "claim_id": "C87",
+      "claim": "The terminal time point corresponds to the last time point when mice can be humanely euthanized and is reached 31\u201332 weeks post-intraperitoneal prion inoculation.",
+      "claim_type": "EXPLICIT",
+      "source": "This time point corresponds to the last time point when mice can be humanely euthanized and is reached 31\u201332 weeks post -ntraperitoneal prion inoculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the timing of the terminal endpoint in the experimental model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4ac80752-ddd9-40d7-b2a0-e0e4af4aa845",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study validated cell-type-specific expression of GFP-tagged ribosomes in different Cre driver lines. CamKIIa and PV Cre drivers showed specific neuronal expression, while GFAP and Cx3cr1CreER drivers showed predominantly astrocytic and microglial expression, respectively, with some known limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 are supported by immunofluorescence data (Figure 1) and citations to prior characterization studies. The authors appropriately acknowledge known limitations of the Cre lines (e.g., minor neuronal expression in GFAP line, macrophage expression in Cx3cr1CreER line) and demonstrate Cre-dependent GFP expression (C13).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "8bc4f8a0-4228-4366-96e2-7d186f79f0e2",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Terminal prion disease mice showed marked increases in glial markers (GFAP, IBA-1) but no clear changes in neuronal markers (NeuN, CamKIIa, PV), indicating pronounced gliosis without substantial neuronal loss at the terminal stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19, C65-C66, and C70 are consistently supported by immunohistochemistry (Figure 1) and western blot data (Figure 6g). The findings are internally consistent across multiple assays and brain regions, though the authors acknowledge this may reflect the early endpoint required by animal welfare regulations (C71).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "e7c18582-0a1e-46da-bde8-0e2d4af74d89",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ribosome profiling libraries showed high quality metrics with 5-10 million unique reads per library, low ribosomal RNA contamination (\u226410%), and predominantly coding sequence reads, with terminal disease samples indistinguishable from controls in quality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by quality control data in Figure 2 and supplementary files. The metrics are appropriate for ribosome profiling and demonstrate technical consistency across samples, including those from diseased animals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "5dd28a38-0c7e-4505-a2d3-5cce2b682e82",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Principal component analysis and hierarchical clustering revealed segregation of different cell types, with Cre-negative samples most similar to GFAP samples, consistent with astrocytes being highly abundant in the CNS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by PCA and clustering data (Figure 2c-d). The interpretation that Cre-negative samples resemble GFAP samples due to astrocyte abundance is reasonable and supported by citation (Miller, 2018).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "b9075ba2-2393-43ff-9c16-365de97d9d28",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cell-type-specific ribosome profiling successfully captured the expected cell populations, as validated by comparison with published cell-type markers from bulk and single-cell RNA sequencing studies. The study identified 2,692 preferentially translated genes across five cell populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by systematic comparison with published datasets (Zhang et al., 2014; Hrvatin et al., 2018) shown in Figure 3 and supplementary files. The validation approach is rigorous and demonstrates that the method captured the intended cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "02449a74-58af-460b-a3a6-01bd61af646d",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ribosome profiling (RP) and RiboTag (RT) datasets showed overall high correlation for each cell type, though some genes deviated from the linear relationship, potentially reflecting differences in translation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by correlation analysis in Figure 3d and Figure 3\u2014figure supplement 3a. The observation of deviations is appropriately interpreted as potentially reflecting biological differences in translation efficiency, which is the key advantage of ribosome profiling over RiboTag.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "12ed0f9b-9766-47a8-b0a4-a8ef772057db",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prion-induced translational changes became evident only at late disease stages (24 weeks post-inoculation and terminal), with the most pronounced changes in GFAP+ and Cx3cr1+ cells. Changes at 24 wpi showed high overlap with terminal changes, indicating alterations begin 2 months before terminal disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are supported by differential expression analysis across time points (Figure 4a) and correlation analysis between time points (Figure 4b-c). The temporal progression is clearly demonstrated, though the claim that changes occur \"long before any PrD-related symptoms manifest\" (C37) may be overstated as symptom onset timing is not explicitly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "f1b6db7c-f8b4-49d9-8f66-369fae345312",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Previously identified disease-associated signatures increased during prion disease progression, including A1 and A2 astrocyte signatures and disease-associated microglia (DAM) genes, while homeostatic microglia markers decreased. These patterns are consistent with other neurodegenerative diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 and C81-C82 are supported by analysis of known gene signatures (Figure 4d-e) and comparison with published literature (Keren-Shaul et al., 2017; Liddelow et al., 2017). The findings validate the model and demonstrate consistency with broader neurodegenerative disease biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "c435d6fc-261a-45b4-b054-c58e03c638c6",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neuronal cell types (CamKIIa and PV neurons) displayed very few translational changes even at terminal disease, in stark contrast to extensive glial alterations. Some neuronal changes at 24 wpi may reflect glial contamination, though a few genes (Sik1, Cyp2s1, Oprm1) showed genuine neuronal changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C43-C45 are supported by differential expression analysis (Figure 4a, Figure 4\u2014figure supplement 3). The interpretation of potential glial contamination (C44) is appropriately cautious, and the authors acknowledge that even few changes might be functionally significant (C45), though this remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "ea7cf962-0588-4b9a-ab37-07e8ce8e1488",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Five genes (Gfap, Serpina3n, Apod, Mt1, Lgals3bp) showed increased translation in all analyzed cell types, but these are highly translated in astrocytes/microglia, indicating the neuronal changes likely reflect contamination from pronounced gliosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by analysis in Figure 5\u2014figure supplement 1b. The interpretation that these represent contamination rather than genuine pan-cellular changes is reasonable given the cell-type enrichment patterns and the known gliosis in the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "3b22864d-48a9-4216-b830-c424c8bee718",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pronounced regional differences in translation were detected within CamKIIa neurons, with cortical and hippocampal changes showing no correlation and sharing only one gene (besides common contaminating genes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by comparison data in Figure 5d. This finding highlights the regional heterogeneity of disease effects and demonstrates the value of analyzing specific brain regions separately.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "248a4844-5cfb-4e70-b1d0-7d359c556031",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Most prion-induced changes were cell-type-specific, but 170 genes changed in both glia types. Gene ontology analysis revealed immune response enrichment in increasing genes across glia types, while decreasing genes were enriched for sterol/cholesterol biosynthesis in astrocytes and synaptic transmission in microglia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by comparative analysis (Figure 5e) and gene ontology analysis (Figure 5f, Supplementary file 10). The functional enrichments provide biological insight into cell-type-specific disease mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "caa526e0-f86a-43dd-a272-9d939aa47615",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Many microglia-specific decreasing genes were strongly enriched in neuronal cell types, indicating these changes are likely an artifact reflecting increased microglia relative to neurons rather than genuine downregulation in microglia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by analysis in Figure 5\u2014figure supplement 1c showing negative correlation between microglia translational changes and neuronal enrichment. This is an important methodological insight that appropriately identifies a technical artifact arising from cell composition changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "1c8842ce-e7ce-4df0-aaf3-0bf1446f6601",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cell-type-specific ribosome profiling identified ~1,500 novel genes with prion disease-dependent translational changes that were missed by conventional RNAseq of brain regions. Many RNAseq changes reflected microglia proliferation rather than cellular-level gene expression changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 and C69 are supported by comparison between ribosome profiling and RNAseq datasets (Figure 6, Figure 6\u2014figure supplement 1). The analysis clearly demonstrates the added value of cell-type-specific approaches and appropriately distinguishes between cell number changes and per-cell expression changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "32a8b89b-79e5-45aa-ac4d-b34ad37a3a7e",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Glul showed no change in cell-type-specific translation or protein expression, while Gfap showed strong increases in both translation and protein levels across all cell types, indicating astrocyte number remains constant while Gfap is upregulated per cell during prion disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by ribosome profiling data (Figure 6e) and western blot validation (Figure 6f). The inference about constant astrocyte numbers (C62) is reasonable based on the differential behavior of Glul (a general astrocyte marker) versus Gfap (a reactive marker).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "6e0733b9-070c-47b7-a718-2b67d5ade4f1",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "IBA1 and MMP9 protein levels increased despite no change (Aif1) or decreased (Mmp9) translation in microglia, indicating that microglia proliferation accounts for increased protein levels and masks cell-specific translational decreases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by ribosome profiling (Figure 6e) and western blot data (Figure 6f). This demonstrates how bulk tissue analysis can be misleading when cell numbers change, validating the need for cell-type-specific approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "80ef6e6e-7b1c-4f98-9bc6-2b3bddc0b732",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "GFP levels remained constant in GFAP Cre/Rpl10a:GFP mice but increased in Cx3cr1 Cre/Rpl10a:GFP mice, consistent with stable astrocyte numbers but increased microglia numbers during disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by western blot data (Figure 6\u2014figure supplement 2b-c). These findings validate the interpretation that observed changes reflect cellular composition differences and demonstrate that the GFAP promoter activity increase does not cause additional Cre recombination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "ef3edef7-2166-4a08-9e5a-23ad73d67658",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors propose that aberrant translation within glia may suffice to cause severe neurological symptoms and may be the primary driver of prion disease, though they acknowledge alternative explanations including that few neuronal changes might be sufficient or that changes in neuronal connectivity may escape detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C72, and C73 represent speculative interpretations of the data. While the extensive glial changes and minimal neuronal changes are well-documented, the causal relationship between these observations and neurological symptoms is not directly tested. The authors appropriately present these as possibilities rather than established facts, but definitive evidence would require functional manipulation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "4e8237af-4320-4dd8-b9c3-ab5813ff8dd8",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The difference in neuronal loss between mice and humans likely reflects differences in disease stage, as mice must be euthanized at an earlier endpoint due to animal welfare regulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is speculative and not directly testable given regulatory constraints. While the reasoning is plausible, the authors cannot definitively establish whether mice would eventually show neuronal loss comparable to humans if allowed to progress further. This represents a limitation of the model rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "b83bae2a-b088-49f2-9736-e9d6906687a4",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The prion disease model used in this study showed different UPR marker expression compared to PrP-overexpressing models, with no differential translation of Actb, Snap25, Psd95, or Chop, only microglia showing increased Atf4 translation, and astrocytes showing increased Gadd34 translation. This reduced UPR activation might contribute to less pronounced neurodegeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C80 are supported by comparison with published literature (Moreno et al., 2012; Smith et al., 2020) and the current ribosome profiling data. The interpretation that reduced UPR activation contributes to less neurodegeneration (C80) is speculative but reasonable given the comparative data. This highlights important model differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "7f253579-2358-46a5-9162-e6f6f8c11a59",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "A1-astrocyte ablation accelerated prion disease progression in prior studies, suggesting A1 astrocytes may be neuroprotective in prion disease. Combined with increased A2 genes and Gadd34 in astrocytes, this suggests astrocytes might play a central role in limiting prion toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are supported by citations (Liddelow et al., 2017; Hartmann et al., 2019) and the current data showing increased A2 and Gadd34 in astrocytes. The inference about astrocyte neuroprotection (C84) is reasonable but represents an interpretation rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "25ddd2c7-fa14-467f-8d0f-5fa0b2f80692",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Prion-induced alterations in glia overlapped with those identified in other neurodegenerative diseases, including disease-associated microglia and reactive astrocyte signatures, suggesting similar events occur across a broad spectrum of pathologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C42 are supported by comparison with published signatures from other neurodegenerative diseases (Keren-Shaul et al., 2017; Liddelow et al., 2017). This demonstrates the translational relevance of prion disease models for understanding broader neurodegenerative mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    },
+    {
+      "id": "9c8c0d74-28c2-46d7-a96e-190dc3cfdffc",
+      "content_id": "66256d69-2df9-44fc-ae07-18069a1d667a",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The experimental design involved intraperitoneal injection of RML6 prions (8.02 log LD50/ml) into 11-week-old mice, with terminal disease mice sacrificed upon clear neurological signs at 42-43 weeks of age (31-32 weeks post-inoculation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 describe the experimental procedures and are supported by the Methods section. These details are clearly documented and appropriate for the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:37.556958Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "786c4baa-f7e7-49c8-ac79-e0d7baf69903",
+      "result_id": "4ac80752-ddd9-40d7-b2a0-e0e4af4aa845"
+    },
+    {
+      "claim_id": "1ada9db9-0c7d-494f-82ef-4f252987e42f",
+      "result_id": "4ac80752-ddd9-40d7-b2a0-e0e4af4aa845"
+    },
+    {
+      "claim_id": "63d70eae-5f93-4bf3-91f7-7732f2e3f247",
+      "result_id": "4ac80752-ddd9-40d7-b2a0-e0e4af4aa845"
+    },
+    {
+      "claim_id": "de9e0076-3aae-40bd-8d27-b409dc7372f7",
+      "result_id": "4ac80752-ddd9-40d7-b2a0-e0e4af4aa845"
+    },
+    {
+      "claim_id": "872cfcc5-6181-4454-8c32-9ab200fa08de",
+      "result_id": "4ac80752-ddd9-40d7-b2a0-e0e4af4aa845"
+    },
+    {
+      "claim_id": "68901f65-90b3-4d73-9a93-f996674f7af6",
+      "result_id": "4ac80752-ddd9-40d7-b2a0-e0e4af4aa845"
+    },
+    {
+      "claim_id": "9ab5ff38-4cd5-43f4-8da1-76b34c7d8423",
+      "result_id": "8bc4f8a0-4228-4366-96e2-7d186f79f0e2"
+    },
+    {
+      "claim_id": "4fa867f4-eaae-4204-b6ca-8c1b3dce234c",
+      "result_id": "8bc4f8a0-4228-4366-96e2-7d186f79f0e2"
+    },
+    {
+      "claim_id": "9be11ace-1052-45a9-9937-89e542396312",
+      "result_id": "8bc4f8a0-4228-4366-96e2-7d186f79f0e2"
+    },
+    {
+      "claim_id": "6a22c3de-08ab-44ce-8ee9-2cb2ab521bef",
+      "result_id": "8bc4f8a0-4228-4366-96e2-7d186f79f0e2"
+    },
+    {
+      "claim_id": "217c1f8f-ed03-4c80-aa81-fcf6b2244040",
+      "result_id": "8bc4f8a0-4228-4366-96e2-7d186f79f0e2"
+    },
+    {
+      "claim_id": "d3c418c6-e851-4992-aba0-969973380d99",
+      "result_id": "8bc4f8a0-4228-4366-96e2-7d186f79f0e2"
+    },
+    {
+      "claim_id": "be87fe38-48a7-4435-b7c3-dc3a748a9ffb",
+      "result_id": "e7c18582-0a1e-46da-bde8-0e2d4af74d89"
+    },
+    {
+      "claim_id": "3902ea31-3de0-44b6-8264-6062758e9c1c",
+      "result_id": "e7c18582-0a1e-46da-bde8-0e2d4af74d89"
+    },
+    {
+      "claim_id": "d74f2520-86ae-49e4-be21-6b761db7ba4a",
+      "result_id": "e7c18582-0a1e-46da-bde8-0e2d4af74d89"
+    },
+    {
+      "claim_id": "fc16c8d7-6fa2-4984-9e57-421de3e3ae49",
+      "result_id": "e7c18582-0a1e-46da-bde8-0e2d4af74d89"
+    },
+    {
+      "claim_id": "7cd1b22b-6ef4-4bb4-9ee8-7251beec01c0",
+      "result_id": "5dd28a38-0c7e-4505-a2d3-5cce2b682e82"
+    },
+    {
+      "claim_id": "40020e8a-7a06-4fdc-81c3-e871b9374ec2",
+      "result_id": "5dd28a38-0c7e-4505-a2d3-5cce2b682e82"
+    },
+    {
+      "claim_id": "1c15c874-8075-4fcb-abc7-7bf564c85e2e",
+      "result_id": "b9075ba2-2393-43ff-9c16-365de97d9d28"
+    },
+    {
+      "claim_id": "316c4d71-95ce-4b32-8201-8f6050178a48",
+      "result_id": "b9075ba2-2393-43ff-9c16-365de97d9d28"
+    },
+    {
+      "claim_id": "780fba05-21ad-45af-8832-3d2ef779ef87",
+      "result_id": "b9075ba2-2393-43ff-9c16-365de97d9d28"
+    },
+    {
+      "claim_id": "ef129a9d-178a-43b6-a18c-2858e7eb2323",
+      "result_id": "b9075ba2-2393-43ff-9c16-365de97d9d28"
+    },
+    {
+      "claim_id": "fa65c843-18a3-4017-9e65-7d0e4667616f",
+      "result_id": "b9075ba2-2393-43ff-9c16-365de97d9d28"
+    },
+    {
+      "claim_id": "04ebe3e5-28a8-47b6-94e5-1442ed0d03c3",
+      "result_id": "02449a74-58af-460b-a3a6-01bd61af646d"
+    },
+    {
+      "claim_id": "77bd1d98-b55b-48dc-a520-55a33ce24ab5",
+      "result_id": "12ed0f9b-9766-47a8-b0a4-a8ef772057db"
+    },
+    {
+      "claim_id": "08eaf03b-a6d8-40fa-8e27-c6404ae13946",
+      "result_id": "12ed0f9b-9766-47a8-b0a4-a8ef772057db"
+    },
+    {
+      "claim_id": "35b5c97b-9940-4610-ba2a-a2f170e3702c",
+      "result_id": "12ed0f9b-9766-47a8-b0a4-a8ef772057db"
+    },
+    {
+      "claim_id": "3d6f0100-7ddc-4e5c-b9d0-4fb624d655e8",
+      "result_id": "12ed0f9b-9766-47a8-b0a4-a8ef772057db"
+    },
+    {
+      "claim_id": "417c1465-ddc0-4661-bc42-7478ee8a20e1",
+      "result_id": "12ed0f9b-9766-47a8-b0a4-a8ef772057db"
+    },
+    {
+      "claim_id": "f9202c3a-3a80-4141-a0f8-1a2a13896461",
+      "result_id": "f1b6db7c-f8b4-49d9-8f66-369fae345312"
+    },
+    {
+      "claim_id": "f8b7e30a-3adf-49f4-918c-f31623d00f41",
+      "result_id": "f1b6db7c-f8b4-49d9-8f66-369fae345312"
+    },
+    {
+      "claim_id": "204ea119-56ee-4e64-b26b-0a0a771195dd",
+      "result_id": "f1b6db7c-f8b4-49d9-8f66-369fae345312"
+    },
+    {
+      "claim_id": "3f7e0bf3-a81c-4376-a2d0-cbf2404900a9",
+      "result_id": "f1b6db7c-f8b4-49d9-8f66-369fae345312"
+    },
+    {
+      "claim_id": "5a76bf5e-8955-49f1-a067-b13ab97795a2",
+      "result_id": "f1b6db7c-f8b4-49d9-8f66-369fae345312"
+    },
+    {
+      "claim_id": "d7289781-4b4a-43d4-bc01-be066ab94662",
+      "result_id": "f1b6db7c-f8b4-49d9-8f66-369fae345312"
+    },
+    {
+      "claim_id": "29bb6f9b-7f4d-4199-abd9-847ef5331969",
+      "result_id": "f1b6db7c-f8b4-49d9-8f66-369fae345312"
+    },
+    {
+      "claim_id": "c9f67901-6b1a-4c70-a1c1-52ace9596daf",
+      "result_id": "c435d6fc-261a-45b4-b054-c58e03c638c6"
+    },
+    {
+      "claim_id": "4c150a94-5376-431d-848e-be1aad2afe16",
+      "result_id": "c435d6fc-261a-45b4-b054-c58e03c638c6"
+    },
+    {
+      "claim_id": "611d41f2-885a-4977-af80-c162c4a7b736",
+      "result_id": "c435d6fc-261a-45b4-b054-c58e03c638c6"
+    },
+    {
+      "claim_id": "c765b912-3e23-49ff-917f-99710e463c1e",
+      "result_id": "c435d6fc-261a-45b4-b054-c58e03c638c6"
+    },
+    {
+      "claim_id": "37f0dca1-81e6-4818-806f-f150e5183dbf",
+      "result_id": "c435d6fc-261a-45b4-b054-c58e03c638c6"
+    },
+    {
+      "claim_id": "0f6889aa-b565-49b4-9475-8f699249d5b8",
+      "result_id": "ea7cf962-0588-4b9a-ab37-07e8ce8e1488"
+    },
+    {
+      "claim_id": "21fc9e52-896e-474c-beaf-e0a7bb7b63c8",
+      "result_id": "ea7cf962-0588-4b9a-ab37-07e8ce8e1488"
+    },
+    {
+      "claim_id": "27909d03-6dc6-4007-8592-5bfcd7ccadd3",
+      "result_id": "3b22864d-48a9-4216-b830-c424c8bee718"
+    },
+    {
+      "claim_id": "2440deec-b46f-4ae6-ad69-17de1785dd7f",
+      "result_id": "3b22864d-48a9-4216-b830-c424c8bee718"
+    },
+    {
+      "claim_id": "11513796-bf2f-4bf8-9d4c-041df360bce9",
+      "result_id": "248a4844-5cfb-4e70-b1d0-7d359c556031"
+    },
+    {
+      "claim_id": "8f3cd9c7-4513-4a6e-84d4-96ccf35b2fe8",
+      "result_id": "248a4844-5cfb-4e70-b1d0-7d359c556031"
+    },
+    {
+      "claim_id": "e2ae352b-199c-4646-8838-e4797804a7cb",
+      "result_id": "248a4844-5cfb-4e70-b1d0-7d359c556031"
+    },
+    {
+      "claim_id": "e66b5e64-0f02-4e6d-81bc-69557138c082",
+      "result_id": "248a4844-5cfb-4e70-b1d0-7d359c556031"
+    },
+    {
+      "claim_id": "a3f25f1f-7313-424c-8bed-fdaec19bf0f2",
+      "result_id": "caa526e0-f86a-43dd-a272-9d939aa47615"
+    },
+    {
+      "claim_id": "920eaad4-221a-4dcb-b34f-b22c0ffaa5f7",
+      "result_id": "caa526e0-f86a-43dd-a272-9d939aa47615"
+    },
+    {
+      "claim_id": "c2e27ea0-c044-4955-8aca-da5ce2728271",
+      "result_id": "1c8842ce-e7ce-4df0-aaf3-0bf1446f6601"
+    },
+    {
+      "claim_id": "41e2e7e3-8c55-4ebc-b786-a7af42ee7f28",
+      "result_id": "1c8842ce-e7ce-4df0-aaf3-0bf1446f6601"
+    },
+    {
+      "claim_id": "5fa2ce01-549e-4308-84e9-9125ba587297",
+      "result_id": "1c8842ce-e7ce-4df0-aaf3-0bf1446f6601"
+    },
+    {
+      "claim_id": "89070c30-35b3-47a4-b3e3-82942acc8a7a",
+      "result_id": "1c8842ce-e7ce-4df0-aaf3-0bf1446f6601"
+    },
+    {
+      "claim_id": "f32af5db-8c57-44e0-83fa-a8a12219fcdc",
+      "result_id": "1c8842ce-e7ce-4df0-aaf3-0bf1446f6601"
+    },
+    {
+      "claim_id": "56768496-8933-4018-b116-2de59704c573",
+      "result_id": "32a8b89b-79e5-45aa-ac4d-b34ad37a3a7e"
+    },
+    {
+      "claim_id": "54904df3-8fa2-4bd2-8de8-35a9b01f95e8",
+      "result_id": "32a8b89b-79e5-45aa-ac4d-b34ad37a3a7e"
+    },
+    {
+      "claim_id": "69613af1-3b6e-4f13-8f94-df463795cab2",
+      "result_id": "32a8b89b-79e5-45aa-ac4d-b34ad37a3a7e"
+    },
+    {
+      "claim_id": "f4f02a7b-50a5-41d1-86ee-fb1266c10ebb",
+      "result_id": "6e0733b9-070c-47b7-a718-2b67d5ade4f1"
+    },
+    {
+      "claim_id": "83c8d07c-a898-48a6-b4b5-329bdd4e1f56",
+      "result_id": "6e0733b9-070c-47b7-a718-2b67d5ade4f1"
+    },
+    {
+      "claim_id": "1f5fa04f-a9e1-4a94-b478-4e914e4551e8",
+      "result_id": "80ef6e6e-7b1c-4f98-9bc6-2b3bddc0b732"
+    },
+    {
+      "claim_id": "bc2b3a99-9d0c-4037-b059-8a624c7c5587",
+      "result_id": "80ef6e6e-7b1c-4f98-9bc6-2b3bddc0b732"
+    },
+    {
+      "claim_id": "96d6fc2c-4ea8-46d8-999d-c123935aa574",
+      "result_id": "ef3edef7-2166-4a08-9e5a-23ad73d67658"
+    },
+    {
+      "claim_id": "ed9eb42f-6ef9-432e-b0c1-9622b2b1dd53",
+      "result_id": "ef3edef7-2166-4a08-9e5a-23ad73d67658"
+    },
+    {
+      "claim_id": "90bd876f-c353-441d-8517-3c3d57c9f56e",
+      "result_id": "ef3edef7-2166-4a08-9e5a-23ad73d67658"
+    },
+    {
+      "claim_id": "8f241615-3ebe-4906-b528-bb121dbde0e3",
+      "result_id": "4e8237af-4320-4dd8-b9c3-ab5813ff8dd8"
+    },
+    {
+      "claim_id": "819d5925-a3e7-48a0-b133-d63fb38aff1e",
+      "result_id": "b83bae2a-b088-49f2-9736-e9d6906687a4"
+    },
+    {
+      "claim_id": "f8a7d25d-847f-44d5-ac67-e85a49bdc79f",
+      "result_id": "b83bae2a-b088-49f2-9736-e9d6906687a4"
+    },
+    {
+      "claim_id": "efca6682-13de-4b5b-b832-00b9bdb4da0a",
+      "result_id": "b83bae2a-b088-49f2-9736-e9d6906687a4"
+    },
+    {
+      "claim_id": "d2a3a0a5-9e75-43bb-ae8a-09668256aa4d",
+      "result_id": "b83bae2a-b088-49f2-9736-e9d6906687a4"
+    },
+    {
+      "claim_id": "dc6e6f09-f1ac-4073-ac6a-924183fd6e80",
+      "result_id": "b83bae2a-b088-49f2-9736-e9d6906687a4"
+    },
+    {
+      "claim_id": "39d60add-1515-4ffa-81c2-4b380c6ab1db",
+      "result_id": "b83bae2a-b088-49f2-9736-e9d6906687a4"
+    },
+    {
+      "claim_id": "0c3354ce-8a57-4c80-85ed-84edb2574bf2",
+      "result_id": "b83bae2a-b088-49f2-9736-e9d6906687a4"
+    },
+    {
+      "claim_id": "67c4d675-14d5-4999-ab14-be2edf3bdc56",
+      "result_id": "7f253579-2358-46a5-9162-e6f6f8c11a59"
+    },
+    {
+      "claim_id": "e3f00bae-781d-4959-b801-9a63f537dcca",
+      "result_id": "7f253579-2358-46a5-9162-e6f6f8c11a59"
+    },
+    {
+      "claim_id": "0591cbd8-1bd4-46e2-9f9a-2e94ae2e7126",
+      "result_id": "25ddd2c7-fa14-467f-8d0f-5fa0b2f80692"
+    },
+    {
+      "claim_id": "5a76bf5e-8955-49f1-a067-b13ab97795a2",
+      "result_id": "25ddd2c7-fa14-467f-8d0f-5fa0b2f80692"
+    },
+    {
+      "claim_id": "bfbd0d76-9268-42a8-8b7c-87e1edc0a7f1",
+      "result_id": "9c8c0d74-28c2-46d7-a96e-190dc3cfdffc"
+    },
+    {
+      "claim_id": "ede8fe3d-6dc3-455d-8a04-68c583d01819",
+      "result_id": "9c8c0d74-28c2-46d7-a96e-190dc3cfdffc"
+    },
+    {
+      "claim_id": "cac64210-3c96-4635-8182-a56f329f0c4a",
+      "result_id": "9c8c0d74-28c2-46d7-a96e-190dc3cfdffc"
+    }
+  ],
+  "comparisons": []
+}

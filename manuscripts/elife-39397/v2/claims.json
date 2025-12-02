@@ -1,0 +1,897 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Restricted Boltzmann Machines (RBM) can efficiently model protein families from sequence information.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that Restricted Boltzmann Machines (RBM), designed to learn complex high-dimensional data and their statistical features, can efficiently model protein families from sequence information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary finding stated in the abstract, supported by the experimental results presented throughout the manuscript for 20 protein families.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "RBM were applied to 20 protein families in this study.",
+    "claim_type": "EXPLICIT",
+    "source": "We here apply RBM to 20 protein families, and present detailed results for two short protein domains (Kunitz and WW), one long chaperone protein (Hsp70), and synthetic lattice proteins for benchmarking.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explicitly stated in the abstract as a description of the study scope.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Features inferred by RBM are related to protein structure, including residue-residue tertiary contacts.",
+    "claim_type": "EXPLICIT",
+    "source": "The features inferred by the RBM are biologically interpretable: they are related to structure (residue-residue tertiary contacts, extended secondary motifs (\u03b1-helixes and \u03b2-sheets) and intrinsically disordered regions), to function (activity and ligand specificity), or to phylogenetic identity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by specific examples throughout the manuscript, such as Weight 1 for Kunitz domain showing contacts between sites 45 and 49.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Features inferred by RBM are related to protein function, including activity and ligand specificity.",
+    "claim_type": "EXPLICIT",
+    "source": "The features inferred by the RBM are biologically interpretable: they are related to structure (residue-residue tertiary contacts, extended secondary motifs (\u03b1-helixes and \u03b2-sheets) and intrinsically disordered regions), to function (activity and ligand specificity), or to phylogenetic identity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated with examples like Weight 4 for Kunitz domain relating to trypsin inhibitory activity and Weights 3 and 4 for WW domain relating to ligand specificity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "RBM can be used to design new protein sequences with putative properties by composing and modulating different modes.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, we use RBM to design new protein sequences with putative properties by composing and 'turning up' or 'turning down' the different modes at will.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 5 where conditional sampling is used to generate sequences with specific features.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Sequencing of many organisms' genomes has led to the collection of a huge number of protein sequences catalogued in databases such as UniProt or PFAM.",
+    "claim_type": "EXPLICIT",
+    "source": "In recent years, the sequencing of many organisms' genomes has led to the collection of a huge number of protein sequences, which are catalogued in databases such as UniProt or PFAM Finn et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current state of biological databases, supported by citation to Finn et al., 2014.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Sequences that share a common ancestral origin define a protein family and are likely to code for proteins with similar functions and structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Sequences that share a common ancestral origin, defining a family (Figure 1A), are likely to code for proteins with similar functions and structures, providing a unique window into the relationship between genotype (sequence content) and phenotype (biological features).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a fundamental principle in evolutionary biology, stated as background knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Maximum-entropy methods rely on computation of direct couplings between sites reproducing pairwise coevolution statistics in sequence data.",
+    "claim_type": "EXPLICIT",
+    "source": "Considerable progress was brought by maximum-entropy methods, which rely on the computation of direct couplings between sites reproducing the pairwise coevolution statistics in the sequence data Lapedes et al., 1999; Weigt et al., 2009; Jones et al., 2012; Cocco et al., 2018.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes existing methods in the field, supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Direct couplings provide very good estimators of contacts in protein structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Direct couplings provide very good estimators of contacts Morcos et al., 2011; Hopf et al., 2012; Kamisetty et al., 2013; Ekeberg et al., 2014 and capture the pairwise epistasis effects necessary to model the fitness changes that result from mutations Mann et al., 2014; Figliuzzi et al., 2016; Hopf et al., 2017.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the performance of existing methods, supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "RBM are unsupervised and generative machine learning models.",
+    "claim_type": "EXPLICIT",
+    "source": "RBM are a powerful concept coming from machine learning Ackley et al., 1987; Hinton, 2012; they are unsupervised (sequence data need not be annotated) and generative (able to generate new data).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes fundamental properties of RBM as a machine learning method, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The Kunitz domain is a protease inhibitor with a length of about 50-60 residues.",
+    "claim_type": "EXPLICIT",
+    "source": "The Kunitz domain, with a length of about 50\u201360 residues (protein family PF00014 Finn et al., 2014)) is present in several genes and its main function is to inhibit serine proteases such as trypsin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the Kunitz domain based on established knowledge and database information.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Cysteine-cysteine disulfide bridges largely contribute to the thermodynamic stability of the Kunitz domain.",
+    "claim_type": "EXPLICIT",
+    "source": "cysteine-cysteine disulfide bridges largely contribute to the thermodynamic stability of the domain, as frequently observed in small proteins.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a structural property of the Kunitz domain, based on general knowledge about small proteins.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The structure of BPTI was the first protein structure ever resolved.",
+    "claim_type": "EXPLICIT",
+    "source": "The structure of BPTI was the first one ever resolved (Ascenzi et al., 2003, and is often used to benchmark folding predictions on the basis of simulations Levitt and Warshel, 1975) and coevolutionary approaches Morcos et al., 2011; Hopf et al., 2012; Kamisetty et al., 2013; Cocco et al., 2013; Haldane et al., 2018.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical fact about protein structure determination, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Hidden unit 4 in Kunitz domain possibly separates domains with trypsin-like protease inhibitory activity from others.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, hidden unit 4 possibly separates the Kunitz domains that have trypsin-like protease inhibitory activity from the others.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation based on the RBM analysis and comparison with known functional annotations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Mutation R12A on the first domain of HAI-1 destroyed its inhibitory activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Kirchhofer et al. (2003) showed that mutation R12A on the first domain (out of two) of HAI-1 destroyed its inhibitory activity",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a cited experimental result from the literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Weight 5 for Kunitz domain is characteristic of a cluster of closely related sequences corresponding to the protein Bikunin.",
+    "claim_type": "EXPLICIT",
+    "source": "For hidden unit 5, the distances between those top-input sequences are smaller than those between random sequences in the MSA, suggesting that weight 5 is characteristic of a cluster of closely related sequences. Here, these sequences correspond to the protein Bikunin, which is present in most mammals and some other vertebrates Shigetomi et al., 2010.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the RBM analysis combined with biological annotation, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The WW domain is a protein-protein interaction domain found in many eukaryotes and human signaling proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "WW is a protein\u2013protein interaction domain, found in many eukaryotes and human signaling proteins, that is involved in essential cellular processes such as transcription, RNA processing, protein trafficking, and receptor signaling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is background information about the WW domain based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The WW domain name stems from two conserved tryptophans (W) at positions 5-28.",
+    "claim_type": "EXPLICIT",
+    "source": "The domain name stems from the two conserved tryptophans (W) at positions 5\u201328 (Figure 3A), which serve as anchoring sites for the ligands.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This explains the naming of the WW domain, shown in Figure 3A.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "WW domains can be divided into four groups based on their preferential binding affinity to different proline-rich peptide ligands.",
+    "claim_type": "EXPLICIT",
+    "source": "WW domains bind to a variety of proline (P)-rich peptide ligands, and can be divided into four groups on the basis of their preferential binding affinity (Sudol and Hunter, 2000. Group I binds specifically to the PPXY motif, where X is any amino acid; Group II to PPLP motifs; Group III to proline-arginine-containing sequences (PR); Group IV to phosphorylated serine/threonine-proline sites (p(S/T)P).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a classification scheme for WW domains based on binding specificity, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "There is no clear distinction between Type II and Type III WW domains based on the RBM analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "(iii) there is no clear distinction between Type II and Type III domains",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the RBM analysis of WW domains.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "70-kDa heat shock proteins (Hsp70) form a highly-conserved family represented in essentially all organisms.",
+    "claim_type": "EXPLICIT",
+    "source": "70-kDa heat shock proteins (Hsp70) form a highly-conserved family that is represented in essentially all organisms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is background information about Hsp70 based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Hsp70 proteins perform various essential functions including assisting folding and assembly of newly synthesized proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "Hsp70, together with other chaperone proteins, perform a variety of essential functions in the cell: they can assist the folding and assembly of newly synthetized proteins, trigger refolding cycles of misfolded proteins, transport unfolded proteins through organelle membranes, and when necessary, deliver non-functional proteins to the proteasome, endosome or lysosome for recycling Bukau and Horwich, 1998; Young et al., 2004; Zuiderweg et al., 2017.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the biological functions of Hsp70, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "There are 13 HSP70 protein-encoding genes in humans.",
+    "claim_type": "EXPLICIT",
+    "source": "There are 13 HSP70s protein-encoding genes in humans, differing by where (nucleus/cytoplasm, mitochondria or endoplasmic reticulum) and when they are expressed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specific fact about human Hsp70 genes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Hsc70 can make up to 3% of the total mass of proteins within the cell.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, Hsc70 can make up to 3% of the total total mass of proteins within the cell, and thus is one of its most important housekeeping genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative statement about Hsc70 abundance in cells.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Weight 1 for Hsp70 encodes a variability of the length of the loop within the IIB subdomain of the NBD.",
+    "claim_type": "EXPLICIT",
+    "source": "Weight 1 encodes a variability of the length of the loop within the IIB subdomain of the NBD, see stretch of gaps from sites 301 to 306.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the RBM analysis of Hsp70, shown in Figure 4C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Weight 1 for Hsp70 separates prokaryotic DNaK proteins from most eukaryotic Hsp70 proteins and prokaryotic HscA based on loop length.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 4D (projection along x axis), it separates prokaryotic DNaK proteins (for which the loop is 4\u20135 sites longer) from most eukaryotic Hsp70 proteins and from prokaryotic HscA.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the RBM analysis, shown in Figure 4D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The structural difference in loop length between DNaK, eukaryotic Hsp70, and HscA families was previously reported and is of high functional importance to the NBD.",
+    "claim_type": "EXPLICIT",
+    "source": "This structural difference between the three families was previously reported and is of high functional importance to the NBD (Buchberger et al., 1994; Brehmer et al., 2001.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This connects the RBM finding to existing literature, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Weight 3 for Hsp70 captures inter-domain coevolution between the SBD and the LID domains.",
+    "claim_type": "EXPLICIT",
+    "source": "RBM can also extract collective modes of coevolution spanning multiple domains, as shown by Weight 3 (Appendix 1\u2014figure 21). The residues supporting Weight 3 (green spheres in Figure 4A and B) are physically contiguous in the ADP conformation, but not in the ATP conformation. Hence, Weight 3 captures inter-domain coevolution between the SBD and the LID domains.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the RBM results shown in Figure 4A and B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Weight 4 for Hsp70 codes for a wide, inter-domain collective mode localized at the interface between the SBD and the NBD domains.",
+    "claim_type": "EXPLICIT",
+    "source": "Weight 4 (sequence logo in Appendix 1\u2014figure 21) also codes for a wide, inter\u2013domain collective mode, which is localized at the interface between the SBD and the NBD domains.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the RBM analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Seven positions carrying the top entries of Weight 3 for Hsp70 were previously identified as important sites for allostery in E. coli DNaK.",
+    "claim_type": "EXPLICIT",
+    "source": "Several mutational studies have highlighted 21 important sites for allostery within E. coli DNaK Smock et al., 2010; seven of these positions carry the top entries of Weight 3",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This connects the RBM findings to existing experimental literature, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Sequences with combinations of activities not encountered in the natural MSA can be engineered using RBM.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, sequences with combinations of activities that are not encountered in the natural MSA can be engineered.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated with examples for both WW and Kunitz domains in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "For Kunitz domains, the property 'no 11-35 disulfide bond' holds only for some sequences of nematode organisms, whereas the Bikunin-AMBP gene is present only in vertebrates.",
+    "claim_type": "EXPLICIT",
+    "source": "For Kunitz domains, the property 'no 11\u201335 disulfide bond' holds only for some sequences of nematode organisms, whereas the Bikunin-AMBP gene is present only in vertebrates; the two corresponding motifs are thus never observed simultaneously in natural sequences.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the natural distribution of features in Kunitz domains.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Sequences designed by RBM are far away from all natural sequences in the MSA but have comparable probabilities.",
+    "claim_type": "EXPLICIT",
+    "source": "The sequences designed by RBM are far away from all natural sequences in the MSA, but have comparable probabilities (see Figure 5E (WW) and Figure 5F (Kunitz)).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5E and F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The RBM framework can be modified to design sequences with very high probabilities by appropriate duplication of hidden units.",
+    "claim_type": "EXPLICIT",
+    "source": "Our RBM framework can also be modified to design sequences with very high probabilities, even larger than in the MSA, by appropriate duplication of the hidden units (see 'Materials and methods').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is described in the text and shown in Figure 5E and F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "RBM can be used to derive effective pairwise interactions between sites that serve as estimators for contacts.",
+    "claim_type": "EXPLICIT",
+    "source": "To extract structural information in a systematic way, we use our RBM to derive effective pairwise interactions between sites, which can then serve as estimators for contacts as approaches that are based on direct-coupling Cocco et al., 2018.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a method for contact prediction using RBM, with citation to related work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The quality of contact map prediction with RBM is comparable to state-of-the-art methods based on direct couplings for the Kunitz and WW domains.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 6 shows that the quality of the prediction of the contact maps of the Kunitz (Figure 6B) and the WW (Figure 6C) domains with RBM is comparable to state-of-the-art methods based on direct couplings (Morcos et al., 2011)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6B and C, comparing RBM to other methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The computational cost of training RBM is substantially higher than plmDCA.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that performances are comparable to those of plmDCA, but the computational cost of training RBM is substantially higher.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of computational efficiency stated in the text.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Various structural lattice protein features are encoded by the RBM weights, including complex negative-design related modes.",
+    "claim_type": "EXPLICIT",
+    "source": "Various structural LP features are encoded by the weights as in real proteins, including complex negative-design related modes (see Figure 7C and D and the remaining weights in 'Supporting Information').",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7C and D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The performances of RBM in terms of contact predictions for lattice proteins are comparable to state-of-the-art methods.",
+    "claim_type": "EXPLICIT",
+    "source": "The performances in terms of contact predictions are comparable to state-of-the art methods on LP (see Appendix 1\u2014figure 11).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated in the text with reference to a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Designed lattice protein sequences are diverse and have large fitnesses comparable to those of the MSA sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "These designed sequences are diverse and have large fitnesses, comparable to those of the MSA sequences and even higher when generated by duplicated RBM (Figure 7F)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Each RBM was trained on 80% of sequences in the MSA, with the remaining 20% used for validation.",
+    "claim_type": "EXPLICIT",
+    "source": "Each RBM was trained on a randomly chosen subset of 80% of the sequences in the MSA, while the remaining 20% (the test set) were used for validation of its predictive power.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the cross-validation procedure used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The dReLU potential is consistently better than quadratic and Bernoulli potentials individually.",
+    "claim_type": "EXPLICIT",
+    "source": "The dReLU potential, which includes quadratic and Bernoulli (another popular choice for RBM) potentials as special cases, is consistently better than the quadratic and Bernoulli potentials individually.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a finding from the cross-validation analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "For sparse-enough weights, the RBM is driven into the compositional representation regime.",
+    "claim_type": "EXPLICIT",
+    "source": "For sparse-enough weights, the RBM is driven into the compositional representation regime (see Tubiana and Monasson, 2017) of Figure 8E, in which each hidden unit encodes a limited portion of a sequence and the representation of a sequence is defined by the set of hidden units with strong inputs.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is explained in the text with reference to Figure 8E and a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "RBM weights may code for pairwise contacts between residues in 3D structure.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, inferring sparse weights makes their comparison across many different protein families easier. In Figure 9 and 10, we show some representative weights that were obtained after training RBMs with the MSAs of the 16 families considered by Ekeberg et al. (2014) (the 17th family, the Kunitz domain, is shown in Figure 2), which were chosen to illustrate the broad classes of encountered motifs; see 'Supporting information' for the other top weights of the 16 families. We find that weights may code for a variety of structural properties:",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figures 9 and 10 with multiple examples.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "RBM weights may code for extended secondary structure motifs such as \u03b1-helices and \u03b2-sheets.",
+    "claim_type": "IMPLICIT",
+    "source": "We find that weights may code for a variety of structural properties:",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is implied by the discussion of structural features and shown in examples in Figures 9 and 10.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "RBM weights may reflect non-structural properties such as phylogenetic clustering.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, weights may also reflect non-structural properties, such as:",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the text following the discussion of structural features.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Sparsity facilitates the biological interpretation of weights.",
+    "claim_type": "EXPLICIT",
+    "source": "Sparsity facilitates the biological interpretation of weights and, thus, emphasizes the correspondence between representation and phenotypic spaces (Figure 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a stated benefit of imposing sparsity regularization.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Training RBM requires intensive sampling.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the algorithmic improvements developed in the present work (see 'Materials and methods'), training RBM is challenging as it requires intensive sampling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the computational challenges of RBM training.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "RBM is an extension of direct-coupling-based approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "Our work differs in several impo rtant points: our RBM is an extension of direct-based coupling approaches",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This positions RBM in relation to existing methods.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "RBM requires much less hidden units than VAE approaches (about 10 to 50 times fewer).",
+    "claim_type": "EXPLICIT",
+    "source": "requires much less hidden units (about 10 to 50 times fewer than were used in Sinai et al., 2017 and Riesselman et al., 2018)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with alternative approaches, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "RBM has a simple architecture with two layers carrying sequences and representations.",
+    "claim_type": "EXPLICIT",
+    "source": "has a simple architecture with two layers carrying sequences and representations",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architectural simplicity of RBM.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "RBM infers interpretable weights with biological relevance.",
+    "claim_type": "EXPLICIT",
+    "source": "infers interpretable weights with biological relevance",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claimed advantage of RBM demonstrated throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "RBM can be easily tweaked to design sequences with desired statistical properties.",
+    "claim_type": "EXPLICIT",
+    "source": "and can be easily tweaked to design sequences with desired statistical properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the sequence design section (Figure 5).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "RBM can successfully model small domains of a few tens of amino acids as well as much longer proteins of several hundreds of residues.",
+    "claim_type": "EXPLICIT",
+    "source": "We have shown that RBM can successfully model small domains (of a few tens of amino acids) as well as much longer proteins (of several hundreds of residues).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated with examples ranging from WW domain (31 sites) to Hsp70 (675 sites).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "RBM unifies and extends previous approaches in the context of protein coevolutionary analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "From a computational biology point of view, RBM unifies and extends previous approaches in the context of protein coevolutionary analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim about the contribution of RBM to the field.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Features extracted by RBM identify 'collective modes' that control the biological functionalities of the protein, similar to sectors extracted by statistical coupling analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "From the one hand, the features extracted by RBM identify 'collective modes' that control the biological functionalities of the protein, in a similar way to the so-called sectors extracted by statistical coupling analysis (Halabi et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This compares RBM features to sectors from another method, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Contrary to sectors, the collective modes extracted by RBM are not disjoint: a site may participate in different features depending on the value of the residue it carries.",
+    "claim_type": "EXPLICIT",
+    "source": "However, contrary to sectors, the collective modes are not disjoint: a site may participate in different features, depending on the value of the residue it carries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This highlights a difference between RBM features and sectors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The presence of high-order interactions in RBM allows for a significantly better description of gap modes, multiple long-range couplings due to ligand binding, and outlier sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "The presence of high-order interactions allows for a significantly better description of gap modes Feinauer et al., 2014, of multiple long-range couplings due to ligand binding, and of outliers sequences (Appendix 1\u2014figure 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes advantages of RBM over pairwise models, with citation and reference to supplementary figure.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "RBM outperforms the Hopfield-Potts framework for protein modeling.",
+    "claim_type": "EXPLICIT",
+    "source": "RBM also outperforms the Hopfield-Potts framework Cocco et al., 2013, an approach previously introduced to capture both collective and localized structural modes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with another method, supported by citation and reference to supplementary figures.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The weights shown in Figures 2B, 3B and 4B are stable with respect to subsampling.",
+    "claim_type": "EXPLICIT",
+    "source": "The weights shown in Figures 2B, 3B and 4B are stable with respect to subsampling (Appendix 1\u2014figure 13)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement about the robustness of the inferred weights, with reference to supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The biological significance of some of the inferred features remains unclear and would require experimental investigation.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the biological significance of some of the inferred features remains unclear, and would require experimental investigation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges limitations in the interpretation of some RBM features.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The capability of RBM to design new functional sequences needs experimental validation besides comparison with past design experiments and benchmarking on in silico proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, the capability of RBM to design new functional sequences need experimental validation besides the comparison with past design experiments (Figure 5E) and the benchmarking on in silico proteins (Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This acknowledges the need for experimental validation of designed sequences.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Traditional protein design approaches cut sequences into fragments at fixed positions based on secondary structure considerations.",
+    "claim_type": "EXPLICIT",
+    "source": "Although recombining different parts of natural proteins sequences from different organisms is a well recognized procedure for protein design (Stemmer, 1994; Khersonsky and Fleishman, 2016, RBM innovates in a crucial aspect. Traditional approaches cut sequences into fragments at fixed positions on the basis of secondary structure considerations",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes existing protein design approaches, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "In RBM models, protein parts are learned and need not be contiguous along the primary sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "but such parts are learned and need not be contiguous along the primary sequence in RBM models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This highlights an innovation of RBM over traditional design approaches.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Protein design with computational modeling methods such as Rosetta could be efficiently guided by RBM-based approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "We believe that protein design with detailed computational modeling methods, such as Rosetta (Simons et al., 1997; Khersonsky and Fleishman, 2016, could be efficiently guided by our RBM-based approach, in much the same way as protein folding greatly benefited from the inclusion of long-range contacts found by direct-coupling analysis (Marks et al., 2011; Hopf et al., 2012.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about future applications of RBM, supported by citations to related work.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The Python 2.7 package for training and visualizing RBMs is available at https://github.com/jertubiana/ProteinMotifRBM.",
+    "claim_type": "EXPLICIT",
+    "source": "The Python 2.7 package for training and visualizing RBMs, which was used to obtain the results reported in this work, is available at https://github.com/jertubiana/ProteinMotifRBM (Tubiana, 2019; copy archived at https://github.com/elifesciences-publications/ProteinMotifRBM).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides information about code availability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

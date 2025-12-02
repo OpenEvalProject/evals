@@ -1,0 +1,1705 @@
+{
+  "submission": {
+    "id": "7118a070-6ab1-402e-a03c-c38446d3c96e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:30:26.872423Z",
+    "updated_at": "2025-12-02T13:30:26.872423Z"
+  },
+  "content": [
+    {
+      "id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "submission_id": "7118a070-6ab1-402e-a03c-c38446d3c96e",
+      "content_type": "manuscript",
+      "content_text": "# High-throughput microcircuit analysis of individual human brains through next-generation multineuron patch-clamp\n\n## Authors\n\n- Yangfan Peng<sup>1</sup> ([ORCID: 0000-0002-0317-1353](https://orcid.org/0000-0002-0317-1353)) \u2020\n- Franz Xaver Mittermaier<sup>1</sup> ([ORCID: 0000-0003-2258-3051](https://orcid.org/0000-0003-2258-3051))\n- Henrike Planert<sup>1</sup>\n- Ulf Christoph Schneider<sup>3</sup>\n- Henrik Alle<sup>1</sup>\n- J\u00f6rg Rolf Paul Geiger<sup>1</sup> ([ORCID: 0000-0001-9552-4322](https://orcid.org/0000-0001-9552-4322)) \u2020\n\n### Affiliations\n\n1. Institute of Neurophysiology Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin Berlin Germany\n2. Department of Neurology Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin Berlin Germany\n3. Department of Neurosurgery Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nComparing neuronal microcircuits across different brain regions, species and individuals can reveal common and divergent principles of network computation. Simultaneous patch-clamp recordings from multiple neurons offer the highest temporal and subthreshold resolution to analyse local synaptic connectivity. However, its establishment is technically complex and the experimental performance is limited by high failure rates, long experimental times and small sample sizes. We introduce an in vitro multipatch setup with an automated pipette pressure and cleaning system facilitating recordings of up to 10 neurons simultaneously and sequential patching of additional neurons. We present hardware and software solutions that increase the usability, speed and data throughput of multipatch experiments which allowed probing of 150 synaptic connections between 17 neurons in one human cortical slice and screening of over 600 connections in tissue from a single patient. This method will facilitate the systematic analysis of microcircuits and allow unprecedented assessment of inter-individual variability.\n\n## Introduction\n\nNeuronal microcircuits represent the backbone for computations of the brain. While it is well established that feedforward information flow between the cortical layers is rather stereotypical (Douglas and Martin, 2004), intralaminar connectivity between different classes of neurons is more complicated and heterogeneous across brain regions (Jiang et al., 2015; Peng et al., 2017; Steiner et al., 2019; Song et al., 2005). Furthermore, it remains as yet unclear how observed microcircuit topologies generalize across species, or whether inter-individual variability can be observed at the level of neuronal microcircuits.\n\nCortical resections from epilepsy or tumor patients represent a unique opportunity to analyze the human cortical microcircuit. While specific cellular and synaptic properties in the human central nervous system have been described (Kalmbach et al., 2018; Moln\u00e1r et al., 2016; Szegedi et al., 2016), distinctive features at the microcircuit level have yet to be resolved (Seeman et al., 2018). Availability of human brain tissue is scarce, making it, at present, necessary to pool data across patients. This is problematic considering the high diversity between patients with respect to different environmental and genetic background, medical history and medication. Therefore, it is essential that we develop more efficient ways to generate large sample sizes from single patients to assess inter-individual variability. This could then lead to the identification of invariant parameters pointing toward common principles of the human cortex, while parameters with high inter-individual variability should be subject to further investigation. Apart from that, in non-human studies, increasing the data yield from individual animals would efficiently promote the ethical principle to replace, reduce and refine animal experiments (Russell et al., 1959).\n\nTo dissect microcircuits, multiple whole-cell patch-clamp recordings (multipatch)\u00a0still represent the gold standard method compared to various other approaches (Hochbaum et al., 2014; Packer et al., 2015). This method can reliably detect unitary excitatory and inhibitory synaptic connections due to its sub-millisecond and subthreshold resolution (Geiger et al., 1997). In addition, it allows for detailed electrophysiological and morphological characterization of recorded neurons and can be used across species without the need for genetic modifications in contrast to optogenetics or calcium imaging (Markram et al., 2004). These conditions enable the investigation of connection probabilities, synaptic strength, plasticity and higher order network statistics incorporating distance-dependencies (Song et al., 2005; Thomson and Lamy, 2007). Increasing the number of simultaneously recorded neurons can increase the number of probed synaptic connections considerably and generate larger sample sizes from fewer experiments.\n\nMultipatch setups increase the complexity and time of experiments, necessitating automation. Various groups were able to increase the number of simultaneous recordings (Guzman et al., 2016; Jiang et al., 2015; Peng et al., 2017; Perin et al., 2011; Perin and Markram, 2013; Wang et al., 2015), but the operation of multiple manipulators is challenging. To address this, several approaches have been reported that automate the patch-clamp process, utilizing automated pressure control systems and algorithms for manipulator movements guided by visual or electrical signals (Kodandaramaiah et al., 2018; Kodandaramaiah et al., 2016; Kodandaramaiah et al., 2012; Perin and Markram, 2013; Wu et al., 2016; Kolb et al., 2019). However, while simultaneous recordings of up to four neurons are becoming increasingly popular, eight or more manipulators on one setup are currently used by only a few labs, missing out on the opportunity to maximize the potential of this method.\n\nCleaning pipettes for immediate reuse increases the size of recorded neuron clusters and enables a more complete view of the microcircuit. The maximum number of simultaneously recorded neurons is highly limited by the spatial constraints imposed by the manipulators. Furthermore, the success of a whole-cell recording depends on mechanical interference, deterioration of recording quality during prolonged experimental time and tissue quality. These factors are aggravated when the number of pipettes is increased. Cleaning pipettes for immediate reuse enables recording of additional neurons in one experimental session without manual replacement (Kolb et al., 2016). This technique has already been implemented for automated patch-clamp of single neurons in\u00a0vivo (Kodandaramaiah et al., 2018) and in\u00a0vitro (Kolb et al., 2019). Applying pipette cleaning to in-vitro multipatch setups has the potential to increase the number of pipettes with successful recordings and therefore the experimental yield. Sequential recordings from multiple cells using the same pipette would also overcome the limitation on maximum cluster size given by the number of manipulators in use. This will provide a more complete view of the microcircuit enabling the analysis of more complex network motifs and higher degree distributions (Perin et al., 2011; Song et al., 2005; Vegu\u00e9 et al., 2017).\n\nWe introduce an in\u00a0vitro multipatch approach with an automated pipette pressure and cleaning system to record up to 10 neurons simultaneously. Here, we show that this approach and further optimizations increase the rate of complete clusters, decrease experimental time and enable sequential patching of additional neurons. We demonstrate that probing of up to 600 synaptic connections in human brain slices in one day is possible with two setups, allowing analysis of microcircuits at the level of individual patients.\n\n## Methods\n\nWe first provide technical instructions for establishing a multipatch setup and how to address specific challenges when using up to 10 manipulators. We then describe an automated pressure device for multiple pipettes and how to implement a pipette cleaning protocol. Finally, we show that these technical improvements enable a high data yield allowing extensive connectivity analysis in slices of human cortical resections and higher degree analysis of individual cells far exceeding the capacity of conventional multipatch setups.\n\n### Arrangement of hardware components\n\nExpanding a setup from a single or dual patch-clamp configuration to one with more patch pipettes is primarily an issue of spatial arrangement of the micromanipulators. The upscaling of multipatch setups has been accomplished with manipulator systems from different commercial manufacturers such as Luigs and Neumann (Guzman et al., 2016; Jiang et al., 2015; Wang et al., 2015; Winterer et al., 2017) and Scientifica (Cossell et al., 2015; Peng et al., 2017). Crucial to any multipatch setup is the spatial arrangement of the manipulators which we found most easy to address by using a custom stage even though there are also commercial solutions available, such as from Luigs and Neumann and Scientifica. We arranged 10 Sensapex uMp-Micromanipulators on a setup with a Nikon Eclipse FN1 microscope using a custom-made stage which was fabricated by a commercial metal workshop (Figure 1A\u2013C). We also successfully established a setup with 8 Scientifica PatchStar manipulators on a custom-made stage with a Scientifica SliceScope microscope (Figure 1D; Peng et al., 2017). Our custom stages consist of a 10 mm aluminium sheet for stability glued to a 1 mm stainless steel sheet to create a ferromagnetic surface for cable routing using magnets. The stage is supported by platforms mounted onto poles, which enable flexible height adjustment. For exact dimensions of the stage, see Appendix 3\u2014figures 4 and 5.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig1-v2.jpg)\n\n**Figure 1.:** (A) Overview of essential components of a 10-manipulator setup with Sensapex micromanipulators. (B) Side view depicting the spatial arrangement of a manipulator including headstage and pipette relative to the recording chamber which is elevated above the condensor. The dashed outline shows the manipulator with pipette tip immersed in the cleaning solution. (C) Top view of 10 Sensapex manipulators with headstages and their angles to each other on the custom-made stage. (D) Top view of 8 Scientifica PatchStar manipulators with headstages and their angles to each other on a custom-made ring-shaped stage. (E) Photograph of the 10-manipulator setup. (F) Photograph of the eight-manipulator setup.\n\nAnother crucial aspect is the distance and angle of the pipettes to the recording chamber (Figure 1B). A shallow approach angle increases the range of motion in the x-axis which is important to reach both the centre of the recording well and the outside well containing the cleaning solution. However, the angle needs to be sufficiently steep to allow the pipette tip to reach into the slice in the z-axis while avoiding touching the wall of the centre well. We found 27\u00b0 to be optimal for our custom-made recording chamber, which is positioned on an elevated platform. To increase stability, the distance of the manipulator to the recording chamber should be minimized. At the same time, sufficient space between headstages must be maintained to allow the necessary range of motion.\n\nDigitizers with sufficient recording and stimulation channels in one device combined with the respective software solution offer a higher experimental flexibility and easier implementation than separate devices. On the 10-manipulator setup, five MultiClamp 700B amplifiers (Molecular Devices) were connected to one digitizer (Power1401-3A with Signal extension from Cambridge Electronic Design) enabling simultaneous recording of 10 channels within the corresponding commercial software Signal (Table 1). Amplifier settings were controlled manually through multiple instances of the MultiClamp 700B Commander software (Molecular Devices). Since there is currently no commercial hardware solution that incorporates more than eight digital-to-analogue converter (DAC) output channels with the same number of analogue input channels in one device, we needed to increase the number of DAC output channels from 8 to 10 on the 10-manipulator setup. We achieved this by a simple routing device that can switch between channels enabling four headstages to receive stimulation from only two DAC outputs (for details and limitations of the routing device see Appendix 3\u2014figure 11).\n\n**Table 1.**\n Hardware components of 10-manipulator setup.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Hardware</th>\n      <th>Manufacturer</th>\n      <th>Model</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>five dual patch-clamp amplifiers</td>\n      <td>Molecular Devices</td>\n      <td>MultiClamp 700B CV-7B headstage</td>\n    </tr>\n    <tr>\n      <td>Data acquisition system</td>\n      <td>Cambridge Electronic Design</td>\n      <td>Power1401-3A + Signal Expansion (2701\u20135)</td>\n    </tr>\n    <tr>\n      <td>Stimulation routing device</td>\n      <td>Custom-made</td>\n      <td>Design in supplement</td>\n    </tr>\n    <tr>\n      <td>10 Micromanipulators</td>\n      <td>Sensapex</td>\n      <td>u-Mp Micromanipulator</td>\n    </tr>\n    <tr>\n      <td>Microscope</td>\n      <td>Nikon</td>\n      <td>Eclipse FN1</td>\n    </tr>\n    <tr>\n      <td>Motorized stage for microscope</td>\n      <td>Scientifica</td>\n      <td>UMS-2550P for x-/y-axis Stepper motor for z-axis drive</td>\n    </tr>\n    <tr>\n      <td>Camera</td>\n      <td>Hamamatsu</td>\n      <td>Orca-Flash 4.0</td>\n    </tr>\n    <tr>\n      <td>LED infrared light source</td>\n      <td>Thorlabs</td>\n      <td>M780L3</td>\n    </tr>\n    <tr>\n      <td>four height adjustable poles</td>\n      <td>Thorlabs</td>\n      <td>P250/M, PB1, C1515/M</td>\n    </tr>\n    <tr>\n      <td>Active vibration isolation table</td>\n      <td>Accurion</td>\n      <td>Halcyonics_i4large</td>\n    </tr>\n    <tr>\n      <td>Peristaltic pump</td>\n      <td>Gilson</td>\n      <td>Minipuls 3</td>\n    </tr>\n    <tr>\n      <td>Thermostat</td>\n      <td>Multichannel systems</td>\n      <td>TC01</td>\n    </tr>\n    <tr>\n      <td>Stage for manipulators</td>\n      <td>Custom-made</td>\n      <td>Design in supplement</td>\n    </tr>\n    <tr>\n      <td>Recording chamber</td>\n      <td>Custom-made</td>\n      <td>Design in supplement</td>\n    </tr>\n  </tbody>\n</table>\n\n### Pressure control system\n\nWe adapted the use of solenoid valves and pressure regulators to our in\u00a0vitro multipatch approach. Throughout the process of patching a cell, variable pressure levels are required. Conventionally, this is achieved with pressurized chambers, a three-way valve and a mouthpiece or a syringe. Since control of pressure in multiple pipettes via manual setting of valves becomes complex and error-prone, an automated pressure system is of advantage. A previous report has demonstrated an electrically controlled pressure system for a multipatch setup (Perin and Markram, 2013). Other groups have also implemented automatic pressure devices together with pipette movement algorithms for automated in\u00a0vivo patch-clamp (Desai et al., 2015; Kodandaramaiah et al., 2016; Kodandaramaiah et al., 2012). The Autopatcher by Kodandaramaiah et al. has also been developed for multi-neuron in\u00a0vivo recordings with four pipettes (Kodandaramaiah et al., 2018). We adapted the described automatic pressure system to our setup and scaled it up to 10 pipettes, with different components that are cost-efficient and widely available. It also enables the simultaneous application of multiple pressure levels to individual pipettes. A detailed component list with price estimates and construction manual with illustrated step-by-step instructions for the automated pressure system can be found in appendix 1. It can be built within a week with basic electrical equipment and does not require extensive technical skills. We believe that the easy-to-build modular construction approach is useful for labs that want to implement this tool and adjust it to their needs.\n\nMultiple pressure regulators were connected to a compressed air outlet to generate different adjustable pressure levels to the pipettes (Figure 2A). We set one pressure regulator at 20 mbar (LOW) for continuous outflow of pipette solution during the idle state in the bath to prevent clogging of the tip. We apply 70 mbar (HIGH) for moving through the slice to approach the cell. Since HIGH pressure is only applied to the active pipette and will always be followed by the pressure of a mouth piece or syringe (PATCH), these two pressure levels share one output. In the PATCH mode, we wait for the formation of the gigaseal, apply light suction when needed and apply a stronger suction to break into the cell. We believe that this is a crucial part of the patching process which needs fine adjustment regarding the duration and strength of suction to achieve maximum success rate (up to 88% on six-manipulator setup, see results on performance below). Compared to this, reports on fully automated in-vitro patch-clamp algorithms have reported a relatively low success rate of 43% using a single pipette (Wu and Chubykin, 2017). After successful establishment of a whole-cell configuration, the pressure in the pipette will be switched to atmospheric pressure (ATMOSPHERE). The fifth pressure channel is implemented for the pipette cleaning process described below (CLEAN).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig2-v2.jpg)\n\n**Figure 2.:** (A) Tubing scheme between the different pneumatic components. Top row depicts pressure regulators and their set pressure for each path. 2/2 valves are solenoid valves with two ports and two positions (open or closed). 3/2 valves are miniature solenoid valves with three ports and can switch between two positions connecting either inlet to one outlet. An illustrated step-by-step assembly guide of the pressure system can be found in Appendix 1. (B) Screenshot of Matlab GUI controlling the pressure system. It communicates with an Arduino microcontroller board which in turn has digital outputs connecting onto a relay board. For further details of wiring scheme see Figure 2\u2014figure supplement 1. For more information on GUI see appendix 2. (C) Photograph of an assembled pressure system.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Top: Electrical circuit wiring diagram for valves, relays and Arduino board.\u00a0This wiring diagram shows that all solenoid valves (z, v) and the two 16-channel relay board (b) are powered through the 12 V DC power supply (80 W, 12 V / 6,67 A). The four-channel relay is powered through the Arduino board which receives a 5 V power supply from the USB cable. The gray boxes indicate that this circuit is replicated for each valve in parallel. The relays receive digital signals from the Arduino boards (dotted lines) and switch the contacts from NC (normally closed) to NO (normally open) which brings the solenoid valve into a different state. A flyback diode is necessary for the 2/2 solenoid valves to protect from voltage spikes. Bottom: Photographic wiring scheme of circuit. (1) Ground conductor is connected to all black lines through the soldered screw block on the stripboard (k, l). (2) The 12 V phase conductor (red) is connected to all yellow lines through the other soldered screw terminal block. These yellow wires carry 12 V to power the 16-channel relay board (b), the individual 3/2 solenoid valves (z) and the 2/2 solenoid valves (v). (3) The 4-channel relay board (a) is powered through the 5 V output pin of the Arduino board (c) which is supplied through the USB-cable from the PC.\n\nBy arranging three miniature solenoid valves in a tree structure for each pipette, we are able to direct these different pressure levels to each pipette individually (Figure 2A). The solenoid valves are electrically operated using commercially available 12 V relays which are controlled by the digital outputs of an Arduino Mega microcontroller board. To control the pressure system through the Arduino board, we developed a graphical user interface in MATLAB (Figure 2B, further instructions are provided\u00a0in Appendix 2, MATLAB code available ). This open-source and affordable pressure system is applicable to any other patch-clamp setup. It can reduce experimental errors, increase the experimental speed and help the experimenter to concentrate on the other tasks essential for successful operation of a multipatch setup.\n\n### Cleaning system\n\nWe added a pipette cleaning protocol to the in\u00a0vitro multipatch setup which enables immediate retry after a failed patch attempt and recording of additional neurons through sequential patching. A recent study has shown that dipping the tip of a patch pipette in a specific detergent solution (Alconox) and applying a sequence of pressure and suction could clean a pipette for immediate reuse (Kolb et al., 2016). In this study, more than 10 successful \u2018repatches\u2019 using the same patch pipette were possible while no change in the electrophysiological properties of the cells was observed. We implemented this protocol to our multipatch approach, because it was able to increase the success rate of establishing good recordings. To incorporate a well for the detergent solution, we constructed a custom recording chamber with an outer circular well which is separated to the inner recording well (Figure 3A, see appendix 3 for detailed construction designs and how wicking and overflow of the detergent is prevented). With the optimal angle and positioning of the manipulators (Figure 1B), all pipettes can access the brain slice and the cleaning solution without mechanical interference.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig3-v2.jpg)\n\n**Figure 3.:** (A) Design of custom-made recording chamber with one centre well for the brain slice and recording solution and another circular outer well for the cleaning solution, see construction design in Appendix 1\u2014figure 1 and 2. (B\u2013H) Experimental steps for pipette cleaning. Tree diagrams on the top left depict the configuration of the pressure system with the following pressure levels: LOW, ATMOSPHERE, HIGH, PATCH, CLEAN. (B) Pipettes are moved into the recording solution with LOW pressure. (C) Cells are approached with HIGH pressure. (D) Formation of gigaseal and membrane rupture with pressures applied through the PATCH channel with either mouth piece or syringe. (E) Cells are kept at ATMOSPHERE pressure after successful patch. (F) Pipettes are moved into the cleaning solution and switched to CLEAN pressure. (G) Cleaning pressure sequence is applied in the outer well. (H) Pipettes are moved back into the recording solution above the slice and switched to LOW pressure. (I) Current clamp traces at resting membrane potential exhibiting spontaneous EPSPs recorded using the same pipette before (blue) and after cleaning (red and yellow). (J) Box plots of cellular, synaptic and recording properties of cells recorded with fresh (blue, n\u00a0=\u00a025, except n\u00a0=\u00a023 for synaptic parameters) and cleaned pipettes (red, n\u00a0=\u00a021 and yellow, n\u00a0=\u00a021). (K) Action potential firing patterns elicited through step current injection and enlarged action potential traces recorded on the same pipette before (blue) and after cleaning (red and yellow). (L) Box plots of action potential properties of cells recorded with fresh (blue, n\u00a0=\u00a025) and cleaned pipettes (red and yellow, n\u00a0=\u00a021). Further statistical information and analysis are shown in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Boxplots depict the intrinsic electrophysiological properties of different human neurons patched either with fresh pipettes (blue, n\u00a0=\u00a024) or cleaned pipettes (red, n\u00a0=\u00a09). Further statistical data in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Left panel with line plots shows the intrinsic electrophysiological properties of the same human neuron (each line) patched with a fresh pipette (\u2018P1\u2019, blue) and repatched with the same pipette after cleaning (\u2018RE\u2019, red). Right panel shows the relative change for each neuron. Out of 15 neurons, 9 were included (black lines and circles) and 6 were excluded due to depolarised resting membrane potential after repatch (gray lines and circles). Further statistical data in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Left panel with line plots shows the intrinsic electrophysiological properties of the same human neuron (n\u00a0=\u00a05, each line) patched with a fresh pipette (\u2018P1\u2019, blue) and repatched with another fresh pipette (\u2018RE\u2019, blue). Right panel shows the relative change for each neuron. Further statistical data in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Left panel with line plots shows the intrinsic electrophysiological properties of the same human neuron (each line) patched with a fresh pipette in fresh ACSF (\u2018Before\u2019, blue) and consecutively held in ACSF which has been subject to rinsing during the cleaning of two other pipettes (\u2018After\u2019, red). Right panel shows the relative change for each neuron. Out of 22 neurons, 19 were included (black lines and circles) and three were excluded due to depolarised resting membrane potential in the initial recording (gray lines and circles). Further statistical data in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Boxplots show distribution of individual excitatory postsynaptic potential amplitudes acquired from connected human neuronal pairs (n\u00a0=\u00a020 individual sweeps). Seven synaptic pairs were recorded in fresh ACSF (blue) and again recorded in ACSF which has been subject to rinsing during the cleaning of other pipettes (red). Synaptic pair two showed a significant increase, while synaptic pair three showed a significant decrease in amplitude (Mann-Whitney U Test). Overall, neither a significant trend toward increasing or decreasing amplitudes were found. Further statistical data in Figure 3\u2014source data 2.\n\nTo clean the pipettes automatically, both the sequence of pipette pressure and manipulator movement need to be automated and coordinated. We programmed the movements of our Sensapex and Scientifica micromanipulators in Matlab and integrated them into the GUI of the pressure system. We recommend custom development of these manipulator movements due to the specific parameters of each setup. Example code and key aspects of manipulator programming can be found in the Github repository (link provided in appendix 2). Using the CLEAN channel, the automated pressure system is now able to apply positive and negative pressure as described in the protocol by Kolb et al. (2016). We used a pressure regulator connected to the compressed air outlet to generate 1 bar for expulsion and another pressure regulator coupled with a vacuum ejector to generate \u2212350 mbar for suction at the pipette tip (Figure 2A). The pressure regulators and the vacuum generator are connected to downstream solenoid valves which control and alternate the pressure.\n\nIncorporating automated manipulator movements, pressure control and the cleaning protocol make the experimental steps easier and faster (Video 1). At the beginning of the experiment pipettes are sequentially moved into the recording well to their dedicated position in the field of view approximately 2 mm above the slice. Small manual adjustments under visual control are necessary for each pipette due to variation in pipette length. The pipette pressure is set to LOW (20 mbar) to avoid clogging of the tip (Figure 3B). To speed up this process and avoid collisions, we semi-automated it by developing a pipette finding algorithm which we discuss further below. After positioning of all pipettes around approximately 200 \u00b5m above the slice, cells are approached and patched sequentially under visual guidance. To prevent contamination of the pipette tip while moving through the slice, the HIGH pressure (70 mbar) is applied to the pipette (Figure 3C). When a dimple on the cell surface can be seen, the pressure is released by switching to the PATCH channel. Manual application of suction either through a mouth piece or manually through a syringe is then needed to obtain a good seal and to break through the membrane to establish the whole-cell configuration (Figure 3D). Pipettes with successfully patched cells are switched to atmospheric pressure (ATMOSPHERE, Figure 3E). A similar hybrid approach of manual and automatic pressure control has also been implemented in a previous multipatch study (Seeman et al., 2018). If the sealing process is unsuccessful or the whole-cell recording deteriorates, even multiple pipettes can now be cleaned simultaneously through an automated process. The cleaning process starts with the automated retraction of the pipettes to a position outside of the chamber above the outer well (Figure 3F). They are then lowered into the detergent solution (Figure 3G). After the pipette pressure is switched to the CLEAN channel, suction (\u2212350 mbar, 1 s) and pressure (1 bar, 1 s) are applied for five cycles, followed by a long expulsion sequence (1 bar, 10 s). Please note that the expelled volume is minimal relative to the total volume inside the pipette. For the next step, the pipettes are moved to the outer rim of the recording well into the recording solution for a final expulsion sequence (1 bar, 10 s) and are then moved to the initial position above the slice while the pressure is set to LOW (Figure 3H).\n\n![Video 1.](https://cdn.elifesciences.org/articles/48178/elife-48178-video1.mp4.jpg)\n\n**Video 1.:** The main image depicts a front view of the 10-manipulator setup with all manipulators subject to automated movements during a pipette cleaning sequence. The insert on the bottom left corner shows a close-up view of the pipettes and the recording chamber. For better overview, the two front manipulators were moved aside. The insert on the bottom right corner shows the DIC microscope view with a 4x objective. At the end of the sequence, all pipettes are out of focus, due to different final z-positions. The time stamp in the middle shows the elapsed time in seconds. Roughly 20 s of alternating pressure sequence was cut (second 13 to 32). The last 8 s sequence shows the pressure system while switching between pressure levels. The clicking noise is generated by the relais switches.\n\nThe final expulsion sequence does not necessarily require additional wells containing aCSF. To ensure access of all pipettes to the cleaning solution and due to limited range of motion of the manipulators, we omitted the second well that was introduced in the original protocol for the final expelling sequence (Kolb et al., 2016). Thus, in our approach the final expelling sequence might introduce traces of Alconox solution into the extracellular recording solution. Alconox contains 10\u201320% sodium linear alkylbenzene sulfonate (LAS), which affects Glycin-, GABAA- and GluR6-mediated currents at concentrations around 0.001% (Machu et al., 1998). Since it has already been shown that no significant amount of LAS could be detected in the pipette solution after the cleaning cycles (Kolb et al., 2016), the remaining potential source of contamination is residual detergent adhering to the outside surface of the pipette tip. A volume of at least 25 \u00b5l Alconox would be needed to reach the critical LAS concentration of 0.001% in the extracellular solution, assuming a recording bath volume of 1 ml and a LAS concentration of 20% in the 2% Alconox solution. We estimate the adherent Alconox solution on a pipette tip to be less than 0.2 \u00b5l, considering that the total volume of intracellular solution inside a pipette is usually less than 15 \u00b5l. We thus believe that this high degree of dilution and the continuous flow of extracellular solution at more than 2 ml/min prevents impact on the synaptic and electrophysiological properties.\n\nTo test possible effects of pipette cleaning solution on cellular and synaptic properties, we performed dedicated experiments in rat brain slices (see method section for experimental details and exclusion criteria). We compared the cellular properties (resting membrane potential and input resistance), synaptic properties (spontaneous EPSP frequency and amplitude), action potential kinetics (threshold, amplitude, half-width, depolarisation and repolarisation rate) and recording quality (access resistance) of 67 rat pyramidal neurons before (n\u00a0=\u00a025), and after cleaning (n\u00a0=\u00a021 after first cleaning and n\u00a0=\u00a021 after second cleaning, Figure 3I\u2013L). While we observed some variability between different recordings, we found no evidence for a systematic change in cellular or synaptic physiology (p>0.05 in all comparisons using repeated measures ANOVA, Figure 3\u2014source data 1). The mean relative difference for all parameters were between 0% and 10%. We also calculated the 90% confidence intervals of the relative mean difference which indicates the boundaries of statistically significant equivalence in these parameters (within\u00a0\u00b120% for cellular and action potential properties, within\u00a0\u00b125% for spontaneous EPSP properties, Figure 3\u2014source data 1).\n\nWe further assessed the effect of pipette cleaning in human brain slices. We first compared intrinsic properties of human neurons patched with fresh (n\u00a0=\u00a024) and cleaned pipettes (n\u00a0=\u00a09, Figure 3\u2014figure supplement 1). The mean relative difference for all parameters were within 13% (p>0.05, Figure 3\u2014source data 1). We also repatched the same neurons with the same, but cleaned pipette (n\u00a0=\u00a09, Figure 3\u2014figure supplement 2) or another fresh pipette (n\u00a0=\u00a05, Figure 3\u2014figure supplement 3). The mean relative differences in these conditions were within 14% (p>0.05), except for a 25% decrease in input resistance (p=0.01) and 20% decrease in access resistance (p=0.36) in cells repatched with a cleaned pipette. Multiple factors could contribute to the variability in these neurons, such as the effect of repatching itself or time passed. These cleaning-independent changes are reflected in the variability also found in neurons repatched with fresh pipettes (Figure 3\u2014figure supplement 3).\n\nAs we have shown that the pipette itself has no systematic effect on the intrinsic properties of human neurons, we have also addressed the possibility that the extracellular solution, in which the pipettes were rinsed, could have an effect. We have therefore patched clusters of neurons (n\u00a0=\u00a019) and compared their properties (Figure 3\u2014figure supplement 4) and synaptic connections (n\u00a0=\u00a07, Figure 3\u2014figure supplement 5) before and after the cleaning of other pipettes to simulate changes in the extracellular solution after the rinsing. We found that the resting membrane potential and action potential kinetics remained very stable (mean relative difference within 2%, p>0.05) while the input and access resistance increased (input resistance 23%, p<0.001; access resistance 24%, p=0.26). We further did not see a specific trend in the postsynaptic amplitudes between these two conditions which showed both increase and decrease (n\u00a0=\u00a07, mean relative change within \u221225% to +26%, Figure 3\u2014figure supplement 5 and Figure 3\u2014source data 2).\n\nOverall, these results in rat and human neurons strongly suggest that our cleaning procedure does not alter the physiological properties in a systematic way and that it is therefore suitable to analyse synaptic connectivity. However, we did see that the input resistance decreased in cells repatched with a cleaned pipette and increased in cells recorded in ACSF after rinsing. While we did not detect these differences on the population level and despite the fact that repatching, recording time and neuronal variability could affect these parameters, we cannot definitely exclude an effect of pipette cleaning in these cases. We therefore emphasize that these validation experiments are limited to our setup and research questions and that any implementation of our cleaning procedure by others should be thoroughly tested for the specific experimental setting, especially when effects on the level of ion channels or receptors are to be studied. As the amount and possible effect of adhering detergent on the pipette can depend on multiple factors, we recommend fine-tuning of bath and detergent volumes in the chambers, ACSF flow rate, time and pressure for the second expulsion sequence and position of pipettes during rinsing combined with own control experiments.\n\nThe entire cleaning process takes approximately 1 minute and can be executed for multiple pipettes at the same time. Since mechanical interference is minimal, pipettes failing to establish a good recording can be subject to immediate cleaning in parallel with the patch attempt of another pipette. This greatly increases the success rate of obtaining recordings and thus the yield of a single experiment. Please note, however, that we do not recommend recording traces during ongoing patch attempts due to reasons we discuss further below. After recording of a full cluster, multiple pipettes can be cleaned, and additional cells can be patched and included in the analysis. We also believe that the possibility to repetitively perform patch attempts without manual replacement of the pipettes increases the speed of learning and performance of novel experimentalists, thus lowering the barrier to establish multipatch setups.\n\n### Preparation of pipettes\n\nWith increasing pipette numbers, preparations take up significant experimental time which we addressed by additional optimizations such as a multi-pipette filling device and semi-automated positioning of pipettes. Before the pipettes are positioned above the slice and ready for patching, multiple time-consuming preparatory steps are necessary, such as pipette pulling, filling and positioning. We therefore designed a device which can hold and fill multiple pipettes at the same time (see appendix 3 for construction designs). It uses the prefill approach to suck intracellular solution through the tip. Backfilling using a syringe might still be necessary when prefilling is not sufficient. This approach reduced the time to fill and mount all pipettes to 11\u201313 min, while the time during prefilling can be used for other preparations (Figure 4C). We also optimized the procedure to find and position the pipettes in a new region of interest (Video 2). Manipulator coordinates were matched to the microscope coordinates using a rotation matrix and anchored to a common reference point (Perin and Markram, 2013). A semi-automated algorithm determines optimal positions of each pipette and all pipettes are moved to roughly 200 \u00b5m above the slice. The specific steps are explained in detail in Appendix 2\u2014figures 2 to 9. This semi-automated approach reduces the risk of breaking pipette tips and the time needed to complete pipette positioning to 7\u20139 min (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig4-v2.jpg)\n\n**Figure 4.:** (A) Bar graphs depicting maximum number of testable connections for increasing number of simultaneously recorded cells. (B) Dot plot of number of simultaneously recorded cells from rodent brain slice experiments using different multipatch setups. Black crosses indicate mean and standard deviation. (C) Performance parameters derived from B. Average success rate represents the average size of recorded clusters in relation to the maximally possible cell number given the available pipettes on each setup. Average numbers of tested connections are derived from the number of tested connections from each experiment. Note the decrease in success rate and slowing increase of tested connections when the number of pipettes is increased. (D) Stacked bar graph of time needed for individual preparatory steps of single experiments for the eight-manipulator setup (n\u00a0=\u00a09) and the 10-manipulator setup (n\u00a0=\u00a09). Source data provided in Figure 4\u2014source data 1 and Figure 5\u2014source data 1.\n\n![Video 2.](https://cdn.elifesciences.org/articles/48178/elife-48178-video2.mp4.jpg)\n\n**Video 2.:** This video shows the pipette movements during the positioning phase under the DIC microscope. The first sequence is in a 5x time lapse with the 4x objective. Pipettes are moved in and out automatically, note the small manual adjustments in between. The second sequence is played in real time and shows all pipettes moving to their adjusted target position underneath the 40x objective.\n\n## Results\n\n### Performances achievable with multipatch setups\n\nWhen more neurons (n) are recorded simultaneously, the number of tested synaptic connections (c) scales according to $c=n\\times(n-1)$ (Figure 4A). However, increasing the number of pipettes lowers the rate of obtaining a full cluster with successful recordings on all pipettes, even for skilled experimenters. This is not only due to more patch attempts, but also due to the increased risk of losing established recordings through mechanical interference or deterioration of recording quality during the prolonged total time of approaching and patching cells. Generally, to minimize the distortion of the tissue during movement of the pipette through the slice, we recommend to first patch the cells furthest from the slice surface and to approach the target cell along the longitudinal axis of the pipette. In rare cases, slight readjustments of pipettes between patch attempts can be necessary. To provide an estimate for the performance of different setup configurations, we analyzed our multipatch experiments on rodent slices from previous and ongoing studies without pipette cleaning (B\u00f6hm et al., 2015; Peng et al., 2017). Success rate of patch-clamp recordings can vary greatly depending on tissue health, species, brain region and cell type. For our performance analysis, we focused on experiments in the mouse subiculum, rat presubiculum and rat motor cortex to present an applicable use case for labs working with rodent slices.\n\nOn a setup with six manipulators, we obtained on average 5.3\u00a0\u00b1\u00a00.7 successful recordings per cluster with an average of 23\u00a0\u00b1\u00a07 tested connections (mean\u00a0\u00b1\u00a0standard deviation, n\u00a0=\u00a030). This corresponds to an average success rate of 88 \u00b1 12% which is calculated as the ratio of successfully recorded cells to the maximum number of pipettes available per cluster (Figure 4B). We refrained from manual replacement of failed pipettes due to the risk of losing the other recordings. After scaling up to eight pipettes, we could record from 6.8\u00a0\u00b1\u00a01 cells on average (success rate 85 \u00b1 13%) which increased the mean number of tested connections to 41\u00a0\u00b1\u00a013 (n\u00a0=\u00a033). On our setup with 10 pipettes, we recorded on average from 7.9\u00a0\u00b1\u00a01.1 neurons with 56\u00a0\u00b1\u00a017 tested connections which represents a further drop of the success rate to 79 \u00b1 11% (n\u00a0=\u00a010). Concurrently, the total experimental time needed before the start of recording the electrophysiological properties of the neurons rose from 36.6\u00a0\u00b1\u00a02.3 min (eight pipettes) to 46.1\u00a0\u00b1\u00a04.6 min (10 pipettes), mostly due to increasing time needed to approach and patch the cells (16.8\u00a0\u00b1\u00a02.7 min vs 25.8\u00a0\u00b1\u00a02.2 min, Figure 4D). Considering this drop in success rate and increased experimental time, the upscaling of a conventional multipatch setup will become impractical at a certain point.\n\nRecording neurons simultaneously to ongoing patch attempts is hindered by several practical limitations. The outflow of high-potassium intracellular solution depolarises the other cells during the patch attempt which would affect ongoing nearby recordings. Furthermore, to monitor the gigaseal formation, we would need to set the respective channel to voltage clamp mode while synaptic connections are recorded in the current clamp mode, both with different stimulation protocols. To implement this for n channels would require 2n different stimulation protocols and restarting the recording for every newly patched neuron would also create multiple dissimilar recording files. However, these issues could be addressed through automated generation of recording protocols and data analysis. In our connectivity experiments, after patching all cells, we switch all channels to current clamp mode, manually adjust the bridge balance and capacitance compensation and then record the electrophysiological parameters including firing patterns. This initial assessment takes up to 5 min. Afterwards, we perform a connectivity screening protocol which records up to 50 sweeps in 10 to 12.5 min depending on the number of neurons in the cluster.\n\n### Pipette cleaning strategies for multipatch experiments\n\nThe automated pipette cleaning system can be applied in different ways to improve multipatch experiments. As demonstrated above, multipatch setups will often fail to achieve their full potential due to a decreasing success rate with increasing pipette numbers. The automated pressure and cleaning system can solve this problem and increase the yield through more complete cluster recordings. Pipettes from failed recording attempts can be subject to immediate cleaning and reuse, even simultaneously to ongoing patch attempts with the next pipette (Figure 5A). This clean-to-complete strategy increased the average cluster size on our setups with 8 and 10 pipettes to 7.8\u00a0\u00b1\u00a00.4 (97% \u00b1 5% success rate, n\u00a0=\u00a016) and 9.2\u00a0\u00b1\u00a00.6 (92% \u00b1 6% success rate, n\u00a0=\u00a09), respectively (Figure 5B). After recording of a full cluster, the cleaning system can be used to probe synaptic connections to cells outside of the initial cluster (clean-to-extend, Figure 5D). Multiple pipettes can be selected and cleaned to establish new patch-clamp recordings with other cells of interest (Figure 5E). This clean-to-extend approach allows screening of many additional synaptic connections with minimal time investment. The number of additionally probed connections (cnew) is dependent on the number of newly patched (nnew) and maintained neurons (nold): $c_{new}=2\\timesn_{new}\\timesn_{old}+n_{new}(n_{new}-1)$. Using both strategies during rodent experiments on the eight-pipette setup with two to recorded slices per animal, we could increase the number of tested connections from 140\u00a0\u00b1\u00a024 to 244\u00a0\u00b1\u00a052 on average per animal (Figure 5D, mean\u00a0\u00b1\u00a0standard deviation, n\u00a0=\u00a06 animals). To assess possible bias through the locations of repatched cells, we analyzed the distances of 1324 probed connections (662 pairs) from these experiments and compared them across different rounds of recording after performing up to two clean-to-extend sessions (Figure 5\u2014figure supplement 1). The distance distribution in the initial cluster (median 84 \u00b5m, IQR 61\u2013110 \u00b5m, 278 pairs) was similar and not systematically shifted compared to the second (median 85 \u00b5m, IQR 62\u2013109 \u00b5m, 218 pairs) and third round of recording (median 84 \u00b5m, IQR 60\u2013107 \u00b5m, 166 pairs). Clean-to-extend can also be used to selectively patch more cells of interest while a set of cells are maintained. This would enable exploration of specific connectivity patterns and a more elaborate degree analysis of specific cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig5-v2.jpg)\n\n**Figure 5.:** (A) Scheme of successful whole-cell recordings on six pipettes (blue circles with action potentials) and failed patch attempts on two pipettes (white circles without action potentials). (B) Clean-to-complete: The two failed pipettes were cleaned and successful recordings were established from two neighbouring cells. Red circles represent a cluster that has been subject to pipette cleaning after failed patch attempts and the red lines indicate the tested synaptic connections. (C) Dot plot comparing the number of successfully recorded neurons in clusters without cleaning (blue) and with cleaning (red). Black crosses indicate mean and standard deviation. See Figure 5\u2014source data 1. (D) Clean-to-extend: After recording of a cluster, individual pipettes can be cleaned and used to patch additional cells (yellow circles). Yellow lines indicate the synaptic connections that could be tested due to this approach. (E) Stacked bar graph depicting the number of tested connections of the initially recorded cluster with clean-to-complete (red) and the number of additionally tested connections after clean-to-extend (yellow) from five animals. Data were extracted from experiments in the rat presubiculum on the 8-manipulator setup. Two to three slices were analyzed from each animal in a time window of 5 to 6 hr. Intersomatic distance distribution of these experiments are shown in the figure supplement to this figure. Source data provided in Figure 5\u2014source datas 1 and 2.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Red indicates first round of experiments only utilizing clean2complete strategy (n\u00a0=\u00a0278 pairs). Probed connections after once (n\u00a0=\u00a0218 pairs) or twice (n\u00a0=\u00a0166 pairs) clean2extend are shown in yellow.\n\nCombining multipatch setups with the optimizations and cleaning strategies allows for extensive and efficient analysis of human microcircuits. Due to the scarce availability of human tissue from epilepsy resection surgery, a highly efficient usage of this material is desirable. With two rounds of clean-to-extend, we were able to record electrophysiological properties and the synaptic connections of up to 17 neighboring neurons in one human slice (Figure 6A). In this experiment, we maintained two neurons (1.1 and 1.2) across all further patch attempts providing information about their out- and in-connections to the other 16 neurons, respectively. This approach can unveil complex connectivity patterns between local neurons exceeding simple pairwise statistics (Figure 6B\u2013D). Using two setups simultaneously, we were able to record from up to 99 neurons and thereby probe 300 to 700 potential synaptic connections from individual patients within the first 24 hr after slicing. These sample sizes acquired from single patients are comparable to datasets on connectivity within single cortical layers that were generated by pooling several animals or patients (Lefort et al., 2009; Jiang et al., 2015; Seeman et al., 2018). We found excitatory connectivity between pyramidal cells in human cortical layer 2/3 ranging from 12.9% to 17.7% which is similar to those reported previously (Boldog et al., 2018; Seeman et al., 2018; Szegedi et al., 2016). The inter-individual differences were not statistically different from each other (Pat. 1 vs 2, p=0.08; Pat. 1 vs 3, p=0.26; Pat. 2 vs 3, p=0.41) while they were statistically equivalent within a range of \u22125 and 9.5% (Pat. 1 vs 2, 4.9% [0.3% 9.5%], Pat. 1 vs 3, 3.1% [-1.5% 7.7%], Pat. 2 vs 3, \u22121.8% [\u22125% 1.5%], proportion difference [90% confidence interval of difference]). This substantial improvement in multipatch experiment yield has the potential to facilitate systematic analysis of complex network properties at the level of individuals in humans and other species.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48178/elife-48178-fig6-v2.jpg)\n\n**Figure 6.:** (A) Matrix of averaged voltage traces from 17 neurons in one acute human slice recorded on the -manipulator setup with two rounds of clean-to-extend. Left column shows the firing pattern of the recorded neurons. In the first session eight neurons were patched simultaneously (cells numbered 1.1\u20138.1). Traces recorded from one cell are shown in a row with the same color. Four action potentials were elicited in each neuron consecutively (diagonal of the matrix). The postsynaptic responses of the other neurons are aligned in the same column. After recording of the first full cluster of 8eight neurons, four pipettes were cleaned and additional neurons in the vicinity were patched and recorded with the same stimulation protocol (9.2\u201312.2). After the second recording session, another five pipettes were subject to cleaning and five new neurons were patched, while the pipettes on neuron 1.1, 2.1 and 12.2 were not removed. This allowed screening of additional connections among the neurons from the third recording session (13.3\u201317.3) and also connections between neurons from previous recording sessions (1.1, 2.1 and 12.2). Scale bar: Horizontal 1.5 s for firing pattern, 250 ms for connection screening. Vertical 100 mV for action potentials, 2 mV for postsynaptic traces. (B) Connectivity scheme of all neurons from the first recording session with arrows indicating a detected synaptic connection. (C) Scheme of connections after first cleaning round. Colored arrows and circles indicate neurons and connections recorded in the second session. Neurons and connections of the first recording session are shown in gray. (D) Scheme of all recorded neurons and detected connections after two cleaning rounds. Neurons and connections recorded in this third session are colored. Neurons and connections from previous recording sessions are shown in gray. In this slice, a total of 38 synaptic connections were detected out of 150 tested connections. (E) Bar graphs depicting number of recorded interneurons and pyramidal cells from three patients recorded within the first 24 hr after slicing. (F) Number of tested connections in each patient recorded within the first 24 hr. (G) Connection probability between pyramidal cells calculated by the number of found to tested connections recorded within the first 24 hr. See Figure 6\u2014source data 1.\n\n## Discussion\n\nIn this report, we demonstrate that equipping an in\u00a0vitro multipatch setup with an automated pipette cleaning system and adding further optimizations increases the experimental yield and generates sufficient data for microcircuit analysis within single patients. This represents a substantial increase in performance and experimental output compared to previous studies on synaptic connectivity, which usually require pooling of data across multiple subjects to achieve statistically significant results (Seeman et al., 2018; Thomson and Lamy, 2007). With 300 to 600 probed connections per patient, variant and invariant parameters can be identified and motivate studies that correlate microcircuit properties to individual patient characteristics as has been shown for dendritic morphology and action potential kinetics (Goriounova et al., 2018). Applied to animal studies, this approach can reduce the number of animals needed to reach statistically significant findings. This is especially important when investigating animal models where ethical considerations prohibit large cohorts due to harmful interventions.\n\nThe possibility to further explore the connectivity of neurons through clean-to-extend allows microcircuit analysis on a larger scale. While manual replacement of pipettes is possible, the risk of mechanical disruption of the recordings up to now prevented extensive practice of patching cells sequentially. Therefore, studies on synaptic connectivity have been limited by the number of available manipulators. Increasing the sample size of recorded neurons and tested synaptic connections through clean-to-extend now enables a more comprehensive analysis of the microcircuit. This is especially relevant as theoretical work has identified higher order network parameters such as triadic motifs and simplices as relevant topological constraints for microcircuit computation (Perin et al., 2011; Reimann et al., 2017; Song et al., 2005). A minimum of to four neurons per cluster is necessary for triplet analyses, while increasing the number leads to larger sample sizes and enables higher dimensional parameters. This increase in sample size per cluster also enables a better assessment of slice to slice variability, which can help to control for methodological artefacts or confounding biological parameters. However, our impression is that increasing setups beyond 10 manipulators would come with a serious trade-off regarding experimental time and success rate. Clean-to-extend enables increasing the number of probed connections of neurons beyond this limitation which is important for network statistics such as the sample degree correlation and can be utilized for further novel graph statistics (Vegu\u00e9 et al., 2017).\n\nUnderestimation of synaptic connectivity in slice experiments is an important concern and subject to ongoing debate (Jiang et al., 2015; Jiang et al., 2016; Barth et al., 2016). Axons and dendrites of neurons close to the slice surface can be severed in the slicing process, potentially leading to false negatives. Anatomical reconstructions can help to assess the extent of axon cutting and refine the optimal slicing angle while simulations of slicing effects on connection probability have shown a correction factor between 1.3 to 1.7 (Levy and Reyes, 2012; Jiang et al., 2016). On the other hand, in\u00a0vivo recordings with no cutting effects found a connection probability of 6.7% between pyramidal cells in the mouse barrel cortex compared to 9.3% in slice experiments (Jouhanneau et al., 2018; Lefort et al., 2009). Another potential limitation stems from missing very weak synaptic potentials when the signal-to-noise ratio is low. To address this, a previous study has used simulations of background noise to determine the detection limits, reporting a correction factor of 1.1 for connection probability (Seeman et al., 2018). To generate valid estimates of connection probabilities in slice recordings, it is therefore important to avoid superficial cells near the slice surface, control for intersomatic distances and ensure good recording quality.\n\nWe addressed technical challenges in establishing and operating a highly advanced multipatch setup and provide extensive documentation on how to implement optimizations making this method easier to handle. Patch-clamp electrophysiology is a widespread and established method, but operating multiple manipulators still requires skilled researchers with long training. The low-cost and user-friendly solutions presented here can be used to upgrade existing patch-clamp setups with single or multiple manipulators. This could enable other labs to adopt the multi-neuron approach and use the optimizations to reduce experimental errors and generate results faster. Additionally, semi-automated pipette positioning as well as repetitive pipette cleaning without the need for manual replacement can help novel experimentalists to focus on the crucial steps of cell patching and may reduce the training time.\n\nWhile fully automated approaches have been introduced for in\u00a0vitro and in\u00a0vivo patch-clamp experiments (Annecchino et al., 2017; Desai et al., 2015; Kodandaramaiah et al., 2018; Kodandaramaiah et al., 2012; Kolb et al., 2019; Suk et al., 2017), the advantage for fully automated multipatch is less clear. We found that manual adjustments during the visually guided approach of the cell and the fine-tuned application of pressure to obtain a whole-cell configuration yielded higher success rates (88%/85 % / 79% on the 6-/8-/10-manipulator setup) compared to a fully automated system with pipette cleaning and machine vision which reported a success rate of 43% to 51% (Wu et al., 2016; Kolb et al., 2019). Our semi-automated pipette positioning approach was faster (53/55 s per pipette on 8-/10-manipulator setup) than the fully automated method described in Wu et al.\u00a0(2016) (103 s using one pipette) while the time needed to manually approach the cell and establish a whole-cell configuration was slightly higher (126/154 s per pipette on 8-/10-manipulator setup vs 120 s). Further optimized algorithms with better performance could be combined with pipette cleaning to improve the success rate and speed of multipatch experiments. However, we currently believe that fully automated multipatch experiments would require a disproportionate amount of effort for the resulting increase in performance. Also, slice exchange and cell selection would still require human presence.\n\nBy overcoming the presented technical limitations, other aspects of the experimental pipeline become a bottleneck and need to be addressed. Automated data analysis is an essential step to leverage the increased experimental throughput. However, as this report highlights technical developments that should be applicable to other groups, we refrained from detailing our data analysis which is still an ongoing effort. For connectivity studies, a previous study has demonstrated an automatic synapse detection algorithm using a support vector machine classifier that achieved an accuracy of 95% (Seeman et al., 2018). Alternatively, semi-automated commercial solutions such as the batch analysis function of pClamp 11 (Molecular Devices) or custom Signal scripts (Cambridge Electronic Design) can be used but necessitate manual curation. After the primary trace analysis, adjacency matrices or lists representing the synaptic connections in each cluster can be generated. Further properties, such as synaptic strength or latency of these connections, can also be represented in adjacency matrices or lists. Another list containing the cell identities and properties (anatomical position and physiological parameters) should be generated for each cluster. Such data formats can be used for further graph analysis and represent a suitable intermediate format for data sharing on databases, such as Neurodata without borders (Teeters et al., 2015). Furthermore, several steps during the experiment need manual setting through the MultiClamp 700B Commander (Molecular Devices), such as switching between voltage and current clamp mode or compensation of bridge balance and pipette capacitance. To allow fully automated setting of the amplifiers and running of specific stimulation protocols, custom-written programs need to be able to control the amplifiers and the data acquisition board. We believe that using commercially available software allows greater experimental flexibility with minimal time investment while further automation would be worth considering for standardized high-throughput experiments.\n\nCompared to other methods, the multipatch approach provides superior access to cellular and synaptic properties with a trade-off regarding the size of the sampled network. All-optical approaches using channelrhodopsins to stimulate individual neurons and fluorescent calcium or voltage indicators to measure their responses can be used to probe connectivity of a higher number of cells than the multipatch approach (Emiliani et al., 2015). Simultaneous optical stimulation and recording using calcium indicators have been performed in up to 20 neurons (Packer et al., 2015). However, calcium transients cannot resolve single action potentials or subthreshold postsynaptic signals, potentially missing monosynaptic connections. Voltage indicators can resolve subthreshold signals with higher temporal resolution than calcium imaging and have been shown to detect monosynaptic connections combined with optical stimulation in organotypical slices (Hochbaum et al., 2014). But technical challenges such as imaging speed and high illumination intensities still limit its application for large network investigations in acute brain slices. While calcium imaging can also be applied in\u00a0vivo, multipatch in this condition is technically very challenging and thus far limited to a maximum of four pipettes (Jouhanneau et al., 2018; Kodandaramaiah et al., 2018). Patch-clamp recordings can furthermore be combined with presynaptic stimulation using extracellular electrodes, channelrhodopsin or glutamate uncaging to further map synaptic inputs from more neurons. Stimulation through a high-density multielectrode array or two-photon glutamate uncaging allows mapping of monosynaptic inputs from 10 to 50 presynaptic neurons onto a single patched neuron (Fino and Yuste, 2011; J\u00e4ckel et al., 2017), while two-photon optogenetic stimulation can probe connections from up to 200 presynaptic neurons in a single experiment (Izquierdo-Serra et al., 2018). These approaches do not resolve electrophysiological and anatomical properties and further connectivity of the presynaptic neurons, but they can be used to complement the multipatch approach. Furthermore, other fundamental properties of synaptic transmission such as synaptic strength and plasticity are only accessible through postsynaptic patch-clamp recording and presynaptic electrical or optogenetic stimulation. Finally, multipatch experiment do not need genetically modified cells and can be applied on brain slices from a variety of species.\n\nTaken together, the experimental advances presented here enables highly efficient extraction of microcircuit parameters from human cortical tissue even at the level of individual patients. The potential to analyzse reciprocal connections of more than 10 neurons in one cluster will help to develop more sophisticated subgraph metrics, strengthening the inference onto the underlying microcircuit. Finally, this versatile method can be applied to various species to uncover overarching principles of microcircuit topology.\n\n## Materials and methods\n\n### Human and animal tissue\n\nHuman tissue was acquired from temporal lobe resections of patients with pharmacoresistant temporal lobe epilepsy. All patients gave a written consent for the scientific use of the resected tissue. All procedures adhered to ethical requirements and were in accordance to the respective ethical approval (EA2/111/14).\n\nPerformance data of rodent multipatch experiments without cleaning were extracted from previous studies on mouse subiculum (six-pipette setup; B\u00f6hm et al., 2018) and rat presubiculum (eight-pipette setup; Peng et al., 2017). Performance data with cleaning on the eight-manipulator setup were extracted from unpublished rat presubiculum experiments and all performance data on the 10-manipulator setup were extracted from unpublished rat motor cortex experiments. Experimental times were documented during a subset of experiments. Acute brain slices were prepared from 19 to 35 days old transgenic Wistar rats expressing Venus-YFP under the VGAT promotor (Peng et al., 2017; Uematsu et al., 2008) or from 21 to 42 days old male C57BL/6N mice (B\u00f6hm et al., 2015). Animal handling and all procedures were carried out in accordance with guidelines of local authorities (Berlin, [T0215/11], [T0109/10]), the German Animal Welfare Act and the European Council Directive 86/609/EEC.\n\n### Slice preparation\n\nExperimental procedure on human tissue was as previously described (Lehnhoff et al., 2019). In brief, tissue samples were collected at the operating theatre and transferred to the laboratory within 30 to 40 min in cooled sucrose based aCSF enriched with carbogen (95% O2, 5% CO2). They were cut in ice-cold sucrose aCSF containing (in mM): 87 NaCl, 2.5 KCl, 3 MgCl2, 0.5 CaCl2, 10 glucose, 75 sucrose, 1.25 NaH2PO4, and 25 NaHCO3 (310 mOsm), enriched with carbogen (95% O2, 5% CO2). After removal of residual pia, the tissue was cut into 300\u00a0to\u00a0400-\u00b5m-thick slices and subsequently stored in sucrose aCSF solution heated to 34\u00b0C for 30 min recovery. Slice thickness was 400 \u00b5m. In a subset of experiments, an antibiotic was added to the incubation solution (minocycline 2 nM). Subsequently and until recording, the slices were stored at room temperature. Whole-cell recordings were performed at 34\u00b0C under submerged conditions, the bath chamber was perfused with an aCSF solution containing (in mM): 125 NaCl, 2.5 KCl, 1 MgCl2, 2 CaCl2, 10 glucose, 1.25 NaH2PO4, and 25 NaHCO3 (300 mOsm). Patch pipettes were pulled from borosilicate glass capillaries (2 mm outer/1 mm inner diameter; Hilgenberg) on a horizontal puller (P-97, Sutter Instrument Company) and filled with intracellular solution containing (in mM): 130 K-gluconate, 2 MgCl2, 0.2 EGTA, 10 Na2-phosphocreatine, 2 Na2ATP, 0.5 Na2GTP, 10 HEPES buffer and 0.1% biocytin (290\u2013295 mOsm, pH adjusted to 7.2 with KOH).\n\nThe rat experiments were performed as previously reported (Peng et al., 2017). After isoflurane anaesthesia, decapitation and removing parts of the skin and skull, the brain was submerged in an ice-cold sucrose artificial cerebrospinal fluid solution containing (in mM): 80 NaCl, 2.5 KCl, 3 MgCl2, 0.5 CaCl2, 25 glucose, 85 sucrose, 1.25 NaH2PO4 and 25 NaHCO3(320\u2013330 mOsm), enriched with carbogen (95% O2, 5% CO2). Brain slices of 300 \u00b5m thickness were cut on a Leica VT1200 vibratome (Leica Biosystems) and subsequently stored in the sucrose aCSF solution. After a recovery period of 30 min at 30\u00b0C, the slices were stored at room temperature. Whole-cell recordings were performed under submerged conditions, the bath chamber was perfused with an aCSF solution containing (in mM): 125 NaCl, 2.5 KCl, 1 MgCl2, 2 CaCl2, 25 glucose, 1.25 NaH2PO4, and 25 NaHCO3 (310\u2013320mOsm). The solution was enriched with carbogen (95% O2, 5% CO2) and heated to 34\u00b0C. Patch pipettes were pulled in the same way as for the human slice experiments and filled with intracellular solution containing (in mM): 130 K-gluconate, 6 KCl, 2 MgCl2, 0.2 EGTA, 5 Na2-phosphocreatine, 2 Na2ATP, 0.5 Na2GTP, 10 HEPES buffer and 0.1% biocytin (290\u2013300 mOsm, pH adjusted to 7.2 with KOH).\n\n### Recording protocol and data analysis\n\nHardware components used for visualization and electrophysiological recordings are listed in Table 1. Data were low-pass filtered at 6 kHz using the built in four-pole Bessel filter and digitized at a sampling rate of 20 kHz. For synaptic connectivity screening, all cells were recorded in current clamp mode and held near \u201360 mV by means of constant and adjusting current injection. Four action potentials were elicited in each cell at 20 Hz with 1\u20134 nA for 1\u20133 ms and postsynaptic responses in the other cells were detected in the averaged traces from 30 to 50 sweeps. The current amplitude and duration needed to elicit a single action potential was determined in a separate stimulation adjustment protocol: We applied increasing current from 0.5 to 4 nA at 0.5 nA steps. Stimulation duration was increased when no action potential could be elicited at 1 ms. The second lowest amplitude at the specific duration that could elicit an action potential was chosen and manually entered in the connectivity screening protocol. Successful recordings were defined by a sufficiently high seal-resistance, resting membrane potentials of the cells more negative than \u221250 mV (not corrected for liquid junction potential), long-term recording stability, and the ability of the neurons to produce characteristic action potential patterns during sustained step depolarisations.\n\nControl experiments in rodent tissue for comparing electrophysiological properties before and after pipette cleaning were performed in layer 2/3 motor cortex of 21- and 22-day-old Wistar rats. We recorded 81 neurons in 12 brain slices using 28 pipettes with up to two sequential cleaning rounds and analyzed the cellular and synaptic physiology of these cells. To guarantee a homogeneous sample of comparable and healthy pyramidal neurons, we excluded interneurons and nine pyramidal neurons with a resting membrane potential more positive than \u221260 mV. These nine depolarised cells were detected with equal probability on fresh and cleaned pipettes (3/28 cells with fresh pipettes, 2/28 cells after first cleaning and 4/28 cells after second cleaning). One recording after the second cleaning was discarded due to high access resistance (129 M\u03a9), in all other 80 patch attempts, we were able to establish a giga-ohm seal resistance and acquire a stable whole-cell configuration with an access resistance below 40 M\u03a9. Thus, the success rate of patch attempts after cleaning in these experiments was 98% (53 successful whole-cell recordings out of 54 patch attempts).\n\nControl experiments in human tissue were acquired from two epilepsy patients undergoing frontal and temporal cortical resection. For the comparison between different cells recorded with fresh and cleaned pipettes, 33 cells were included from five slices in which both conditions were measured. For the comparison between cells recorded with fresh pipettes and repatched with cleaned pipettes we recorded 15 cells in five slices. To guarantee a homogenous sample of comparable and healthy neurons, we excluded six neurons with a resting membrane potential more positive than \u221260 mV after repatch. We believe that this deterioration is more likely due to the repatching procedure than the pipette cleaning. Comparison between five cells recorded with fresh pipettes and repatched with freshly pulled new pipettes were acquired from one slice. Comparison of properties of the same neuron recorded before and after rinsing in ACSF were acquired from 22 neurons from four slices. Here, we patched clusters of five to six neurons with fresh pipettes and recorded their intrinsic properties and the synaptic connections between them. Then, we simulated a typical experiment by subjecting the pipettes with no cells patched to the cleaning procedure. Afterwards, we recorded the intrinsic properties and the synaptic connections again between the cells that were kept on the respective pipettes. Here, we excluded three neurons with a resting membrane potential more positive than \u221260 mV that were patched in the fresh ACSF to ensure a sample of comparable and healthy neurons.\n\nExperiments were performed on the eight-manipulator setup with Scientifica PatchStar manipulators, Digidata 1550 digitizer and pClamp 10 acquisition software (Molecular Devices) and on the 10-manipulator setup with Sensapex manipulators, Power1401-3A digitizer and the Signal acquisition software (Cambridge Electronic Design). All trace analysis for the cellular and resistance parameters were performed using custom written scripts in the Signal 6\u00a0software (Cambridge Electronic Design). Signal scripts can be found at https://github.com/neurocharite/multipatch.\u00a0(Peng and Mittermaier, 2019; copy archived at https://github.com/elifesciences-publications/multipatch).\u00a0Access and input resistance were measured in voltage clamp configuration using the peak and steady state value elicited by a 200 ms long 10 mV pulse. The resting membrane potential was determined using a 100 ms baseline. Action potential parameters were analyzed based on the second action potential at the rheobase. The voltage value at the point where the trace exceeds a slope of 10 mV/ms relative to the baseline was determined as the action potential threshold. The action potential amplitude was calculated as the difference between the action potential peak and the threshold. Spontaneous EPSPs were analysed in a 2 s current clamp trace at resting membrane potential using the Stimfit software (Version 0.15.8, Guzman et al., 2014). To detect spontaneous EPSPs, we performed template matching based on a template scaling method (Clements and Bekkers, 1997) with subsequent manual curation of false-positive and false-negative events. For each cell, the median EPSP amplitude and mean EPSP frequency was determined.\n\n### Statistical analysis\n\nTo assess the changes in physiological properties before and after pipette cleaning, we calculated the mean relative difference and the 90% confidence interval of it to determine the level of statistically significant equivalence. Statistical difference for independent samples was assessed using the Mann-Whitney U test while comparison of dependent samples was analyzed with the Wilcoxon signed-rank test. Changes in properties across three conditions (rat slices: fresh pipette, 1x cleaning, 2x cleaning) were statistically tested using a repeated measures ANOVA. Data processing and analysis was performed using MATLAB R2018a (MathWorks) and an online available code allowing the two one-sided test (TOST) for equivalence (Rogers et al., 1993). Statistical comparison between connection probabilities were analyzed using the Fisher\u2019s exact test. The confidence interval for the difference as the range of statistically significant equivalence was calculated through a simple asymptotic method without continuity correction (\u2018Wald method\u2019, Newcombe, 1998):\n\n$$\nconfidenceintervalfordifference=(p_{1}\u2212p_{2})\\pmz\\sqrt{\\frac{p_{1}(1\u2212p_{1})}{n_{1}}+\\frac{p_{2}(1\u2212p_{2})}{n_{2}}}\n$$\n",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "cdeb3937-bfe4-4c3b-949c-25b9de91db77",
+      "submission_id": "7118a070-6ab1-402e-a03c-c38446d3c96e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Huguenard, Stanford University School of Medicine United States\n\nReviewers:\n- Tim Jarsky, Allen Institute for Brain Science United States\n\n## Review text\n\nDOI: [10.7554/eLife.48178.sa1](https://doi.org/10.7554/eLife.48178.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nPeng et al. have adopted and optimized recent innovations such as patch pipette cleaning, multiple amplifiers and automated pressure control to create a very high throughput semi-automated method for simultaneous multiple patch clamp recordings from precious tissue, such as resected brain tissue from epilepsy surgeries. Here they show their robotic system can obtain high numbers of successful paired recordings in part due to a system that allows for cleaning and reusing patch electrodes for multiple serial recordings. This approach yields hundreds of potential neural pairs per patient sample, which will undoubtedly yield novel insights on altered synaptic connectivity relevant to epileptic networks. Detailed plans and control software source code are provided, and the overall approach is validated in both rat and human brain slices. This paper should be a valuable and accessible resource for those needing to optimize the yield of paired intracellular recordings from precious tissue.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"High-throughput microcircuit analysis of individual human brains through next-generation multineuron patch-clamp\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Tim Jarsky (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis Tools and Resource paper describes a low cost, high throughput, multipatching system designed to optimize discovery from precious live brain material, such as that obtained in human epilepsy surgery. The approach utilizes and acknowledges a number of advances developed by other research groups, and the authors provide early results indicating that the approach will highly leverage what can be gained from such precious materials. The methodology is well laid out, with appropriate drawings, photos, parts lists, and videos. It should be an accessible method that would be utilized by exactly those that would most benefit.\n\nEssential revisions:\n\n1) One major concern is the pipette cleaning system the authors adapted. Based on the CR Forest's original protocol, an additional step is needed to clear the residual detergent adhering to the outside surface of the pipette tip with aCSF before moving pipettes into the recording chamber for patch attempt, yet Peng and colleagues omitted this step. There is a good practical reason for omitting this step, as stated by the authors, but little or no data are provided to support this practice. They claim that there were not differences in recording quality or electrophysiological properties between pipettes at first and after cleaning, but these claims should be supported with the data. In particular it would be important to report how the membrane potential, input resistance, synaptic events, and action potential parameters (amplitude, width et al) change over time after patching and repatching.\n\n2) The article overemphasizes connectivity analysis and ignores its limitations, e.g., false negatives. The authors may wish, instead, to emphasize that multipatch recordings are currently the only technique available to assay the strength and short-term plasticity of monosynaptic connectivity.\n\n3) Important missing experimental details include specifying if it is possible to patch cells while recording from other cells, the time that is taken to probe connectivity and an analysis of the distance distribution of recorded cells (e.g., is the distance distribution of cells obtained to extend recordings the same as those obtained initially?).\n\n4) The authors emphasize some benefits of the semi-automated approach but do not identify other aspects of multipatch experiments that could benefit from automation \u2013 for example, data acquisition and online QC, and real-time connection detection. With the potential for so much data gathering, data format (e.g. Neurodata without borders), data sharing, automation of connection detection and analysis, should be addressed.\n\n5) While taking advantage of rare live human tissue and especially to increase the data yield from each sample is a valid rationale for developing multi-patching systems, it may it is not known yet whether this will be sufficient yet to probe the difference between individuals. When discussing difference across human individuals, what kind of differences were observed? Cell types, connections? I would suggest the authors to tone down this claim.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"High-throughput microcircuit analysis of individual human brains through next-generation multineuron patch-clamp\" for further consideration by eLife. Your revised article has been evaluated by Eve Marder as the Senior Editor, and a Reviewing Editor.\n\nThe manuscript has been very much improved but there is one remaining issue that need to be addressed before acceptance, as outlined below:\n\nRegarding the new experiments on repatching following Alconox treatment without Alconox rinsing (subsection \u201cThe final expulsion sequence does not require additional wells containing aCSF\u201d). These are convincing and show that in young rat brain tissue that in general there is little cumulative effect of the cleaning process on subsequent neuronal health. There are two points that need clarification here.\n\n1) Do the authors expect that the results with mature human brain tissue will be equivalent to that with young rat brain tissue? Is there any limitation we should be aware of in this validation experiment.\n\n2) Were the same neurons ever repatched following cleaning? This would allow for direct comparison of neuronal properties before and after patch pipette cleaning.\n\nIn addition, since each patch electrode was used more than once, arguably the relevant statistical comparison here is repeated measures ANOVA, rather than group population statistics, as appears to have been reported in Figure 3J, K and L.\n",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e4e37676-6efd-433a-b628-e5e4768b51c2",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C1",
+      "claim": "Simultaneous patch-clamp recordings from multiple neurons offer the highest temporal and subthreshold resolution to analyse local synaptic connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous patch-clamp recordings from multiple neurons offer the highest temporal and subthreshold resolution to analyse local synaptic connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract about the capabilities of multipatch recordings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "eb680a49-88e5-4ff7-baee-8f0eaad0cee5",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C2",
+      "claim": "The multipatch setup can record up to 10 neurons simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduce an in vitro multipatch setup with an automated pipette pressure and cleaning system facilitating recordings of up to 10 neurons simultaneously and sequential patching of additional neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract as a capability of the introduced system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "2991ee6f-26d4-4789-b29f-a94e823b087f",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C3",
+      "claim": "The method allowed probing of 150 synaptic connections between 17 neurons in one human cortical slice.",
+      "claim_type": "EXPLICIT",
+      "source": "This method will facilitate the systematic analysis of microcircuits and allow unprecedented assessment of inter-individual variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 6A showing recordings from 17 neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "a914ee48-135f-40cc-834d-3dcf4bc66af6",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C4",
+      "claim": "The method enabled screening of over 600 connections in tissue from a single patient.",
+      "claim_type": "EXPLICIT",
+      "source": "We present hardware and software solutions that increase the usability, speed and data throughput of multipatch experiments which allowed probing of 150 synaptic connections between 17 neurons in one human cortical slice and screening of over 600 connections in tissue from a single patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract and supported by data in Figure 6F showing 336-694 tested connections per patient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "cd0ad068-c171-4eaa-80ba-209537c01915",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C5",
+      "claim": "Feedforward information flow between cortical layers is stereotypical.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is well established that feedforward information flow between the cortical layers is rather stereotypical (Douglas and Martin, 2004), intralaminar connectivity between different classes of neurons is more complicated and heterogeneous across brain regions (Jiang et al., 2015; Peng et al., 2017; Steiner et al., 2019; Song et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Douglas and Martin, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "70c5b218-604e-4156-9823-a668cc49fa9a",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C6",
+      "claim": "Intralaminar connectivity between different classes of neurons is more complicated and heterogeneous across brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is well established that feedforward information flow between the cortical layers is rather stereotypical (Douglas and Martin, 2004), intralaminar connectivity between different classes of neurons is more complicated and heterogeneous across brain regions (Jiang et al., 2015; Peng et al., 2017; Steiner et al., 2019; Song et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations (Jiang et al., 2015; Peng et al., 2017; Steiner et al., 2019; Song et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "48ac753d-52d2-4430-a1d2-37439d1ba260",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C7",
+      "claim": "It remains unclear how observed microcircuit topologies generalize across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it remains as yet unclear how observed microcircuit topologies generalize across species, or whether inter-individual variability can be observed at the level of neuronal microcircuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "7b286bf9-4121-4d1b-bba8-21f49293fbfd",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C8",
+      "claim": "Specific cellular and synaptic properties in the human central nervous system have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "While specific cellular and synaptic properties in the human central nervous system have been described (Kalmbach et al., 2018; Moln\u00e1r et al., 2016; Szegedi et al., 2016), distinctive features at the microcircuit level have yet to be resolved (Seeman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kalmbach et al., 2018; Moln\u00e1r et al., 2016; Szegedi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "8b5f2629-9f66-4fdc-9686-5edf2ebdcad6",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C9",
+      "claim": "Distinctive features at the microcircuit level in humans have yet to be resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "While specific cellular and synaptic properties in the human central nervous system have been described (Kalmbach et al., 2018; Moln\u00e1r et al., 2016; Szegedi et al., 2016), distinctive features at the microcircuit level have yet to be resolved (Seeman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a knowledge gap with citation to Seeman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "13e1ba9b-28d5-4706-8a87-15b3b4a4a5c9",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C10",
+      "claim": "Availability of human brain tissue is scarce.",
+      "claim_type": "EXPLICIT",
+      "source": "Availability of human brain tissue is scarce, making it, at present, necessary to pool data across patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a practical constraint in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "693dbbff-d612-4b16-92a8-7b8c7505639e",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C11",
+      "claim": "Pooling data across patients is problematic considering the high diversity between patients with respect to different environmental and genetic background, medical history and medication.",
+      "claim_type": "EXPLICIT",
+      "source": "This is problematic considering the high diversity between patients with respect to different environmental and genetic background, medical history and medication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a logical concern based on known patient variability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "e2849044-4d44-4fdc-aadf-42f4072bf715",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C12",
+      "claim": "Multiple whole-cell patch-clamp recordings represent the gold standard method to dissect microcircuits compared to various other approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "To dissect microcircuits, multiple whole-cell patch-clamp recordings (multipatch) still represent the gold standard method compared to various other approaches (Hochbaum et al., 2014; Packer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an established fact with citations to Hochbaum et al., 2014; Packer et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "a7827c5d-1c87-40ac-9842-1e30057383da",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C13",
+      "claim": "Multipatch can reliably detect unitary excitatory and inhibitory synaptic connections due to its sub-millisecond and subthreshold resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This method can reliably detect unitary excitatory and inhibitory synaptic connections due to its sub-millisecond and subthreshold resolution (Geiger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a capability with citation to Geiger et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "f8f58541-cdef-49e2-9a62-a6e4a07320c2",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C14",
+      "claim": "Multipatch allows for detailed electrophysiological and morphological characterization of recorded neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it allows for detailed electrophysiological and morphological characterization of recorded neurons and can be used across species without the need for genetic modifications in contrast to optogenetics or calcium imaging (Markram et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a capability with citation to Markram et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "4bbe200b-65c3-445b-8505-68b7ed15c539",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C15",
+      "claim": "Multipatch can be used across species without the need for genetic modifications in contrast to optogenetics or calcium imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it allows for detailed electrophysiological and morphological characterization of recorded neurons and can be used across species without the need for genetic modifications in contrast to optogenetics or calcium imaging (Markram et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an advantage with citation to Markram et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "78bc81be-7d48-481c-906e-a13dfcca4ff9",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C16",
+      "claim": "Increasing the number of simultaneously recorded neurons can increase the number of probed synaptic connections considerably.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the number of simultaneously recorded neurons can increase the number of probed synaptic connections considerably and generate larger sample sizes from fewer experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a logical consequence and demonstrated in Figure 4A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "3345b2b2-d703-4da0-a390-fca182c83cd0",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C17",
+      "claim": "Various groups were able to increase the number of simultaneous recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Various groups were able to increase the number of simultaneous recordings (Guzman et al., 2016; Jiang et al., 2015; Peng et al., 2017; Perin et al., 2011; Perin and Markram, 2013; Wang et al., 2015), but the operation of multiple manipulators is challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations (Guzman et al., 2016; Jiang et al., 2015; Peng et al., 2017; Perin et al., 2011; Perin and Markram, 2013; Wang et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "3393bc5d-226c-4e5c-84d1-5770caecf944",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C18",
+      "claim": "The operation of multiple manipulators is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Various groups were able to increase the number of simultaneous recordings (Guzman et al., 2016; Jiang et al., 2015; Peng et al., 2017; Perin et al., 2011; Perin and Markram, 2013; Wang et al., 2015), but the operation of multiple manipulators is challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a practical challenge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "ec043a65-4275-4e96-afb6-4d8985cc2c97",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C19",
+      "claim": "Several approaches have been reported that automate the patch-clamp process, utilizing automated pressure control systems and algorithms for manipulator movements.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, several approaches have been reported that automate the patch-clamp process, utilizing automated pressure control systems and algorithms for manipulator movements guided by visual or electrical signals (Kodandaramaiah et al., 2018; Kodandaramaiah et al., 2016; Kodandaramaiah et al., 2012; Perin and Markram, 2013; Wu et al., 2016; Kolb et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations (Kodandaramaiah et al., 2018; Kodandaramaiah et al., 2016; Kodandaramaiah et al., 2012; Perin and Markram, 2013; Wu et al., 2016; Kolb et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "5af4881b-eb2f-4260-b8e3-05508c11551e",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C20",
+      "claim": "Eight or more manipulators on one setup are currently used by only a few labs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while simultaneous recordings of up to four neurons are becoming increasingly popular, eight or more manipulators on one setup are currently used by only a few labs, missing out on the opportunity to maximize the potential of this method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation about current practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "ebb9e4d3-9516-4067-b62e-71e0086c3af1",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C21",
+      "claim": "Cleaning pipettes for immediate reuse increases the size of recorded neuron clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleaning pipettes for immediate reuse increases the size of recorded neuron clusters and enables a more complete view of the microcircuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a benefit and demonstrated in Figure 5B-C showing increased cluster sizes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "ebebd802-e5ab-4d16-928c-1e4f5d5d98b1",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C22",
+      "claim": "The maximum number of simultaneously recorded neurons is highly limited by the spatial constraints imposed by the manipulators.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum number of simultaneously recorded neurons is highly limited by the spatial constraints imposed by the manipulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a practical limitation in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "52c83f9e-6d61-439a-9136-fcaf7148bde7",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C23",
+      "claim": "Pipette cleaning has been implemented for automated patch-clamp of single neurons in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique has already been implemented for automated patch-clamp of single neurons in vivo (Kodandaramaiah et al., 2018) and in vitro (Kolb et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kodandaramaiah et al., 2018 and Kolb et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "a9a239b1-1e71-42e5-9d98-d95f97d032f7",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C24",
+      "claim": "Sequential recordings from multiple cells using the same pipette would overcome the limitation on maximum cluster size given by the number of manipulators in use.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential recordings from multiple cells using the same pipette would also overcome the limitation on maximum cluster size given by the number of manipulators in use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a logical benefit of the pipette cleaning approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "e03294a2-44fe-4663-b7a6-4fe97e943439",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C25",
+      "claim": "The approach increases the rate of complete clusters and decreases experimental time.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that this approach and further optimizations increase the rate of complete clusters, decrease experimental time and enable sequential patching of additional neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding and supported by data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "c4d89772-dc5c-4a7a-acdc-f37a45369dae",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C26",
+      "claim": "Probing of up to 600 synaptic connections in human brain slices in one day is possible with two setups.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that probing of up to 600 synaptic connections in human brain slices in one day is possible with two setups, allowing analysis of microcircuits at the level of individual patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a demonstration and supported by data in Figure 6F showing 336-694 tested connections per patient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "622ea974-a168-472c-8b53-8227bf5f394a",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C27",
+      "claim": "Ten Sensapex uMp-Micromanipulators were arranged on a setup with a Nikon Eclipse FN1 microscope using a custom-made stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We arranged 10 Sensapex uMp-Micromanipulators on a setup with a Nikon Eclipse FN1 microscope using a custom-made stage which was fabricated by a commercial metal workshop (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the methods and shown in Figure 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "9d6ed1cf-ce5b-497d-978b-f70eb05c8fd2",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C28",
+      "claim": "A setup with 8 Scientifica PatchStar manipulators was successfully established on a custom-made stage with a Scientifica SliceScope microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "We also successfully established a setup with 8 Scientifica PatchStar manipulators on a custom-made stage with a Scientifica SliceScope microscope (Figure 1D; Peng et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the methods with citation to Peng et al., 2017 and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "a17fba29-a999-4549-bf73-4527e018edb5",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C29",
+      "claim": "The custom stages consist of a 10 mm aluminium sheet for stability glued to a 1 mm stainless steel sheet to create a ferromagnetic surface for cable routing using magnets.",
+      "claim_type": "EXPLICIT",
+      "source": "Our custom stages consist of a 10 mm aluminium sheet for stability glued to a 1 mm stainless steel sheet to create a ferromagnetic surface for cable routing using magnets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing the custom stage construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "4679bce9-1b18-47f3-8b14-de76de2f9dc3",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C30",
+      "claim": "A 27\u00b0 approach angle was found to be optimal for the custom-made recording chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 27\u00b0 to be optimal for our custom-made recording chamber, which is positioned on an elevated platform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an empirical finding in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "acdfa0c6-89e1-4797-9efb-5dfccbff7e97",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C31",
+      "claim": "Five MultiClamp 700B amplifiers were connected to one digitizer enabling simultaneous recording of 10 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "On the 10-manipulator setup, five MultiClamp 700B amplifiers (Molecular Devices) were connected to one digitizer (Power1401-3A with Signal extension from Cambridge Electronic Design) enabling simultaneous recording of 10 channels within the corresponding commercial software Signal (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing the hardware configuration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "d4142868-e3c1-43ea-8878-e2450ba1af1d",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C32",
+      "claim": "A routing device was developed to increase the number of DAC output channels from 8 to 10 on the 10-manipulator setup.",
+      "claim_type": "EXPLICIT",
+      "source": "We achieved this by a simple routing device that can switch between channels enabling four headstages to receive stimulation from only two DAC outputs (for details and limitations of the routing device see Appendix 3\u2014figure 11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing the solution to hardware limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "103f0db7-96e3-4cd7-82fc-f6d88abd640b",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C33",
+      "claim": "The automated pressure system can be built within a week with basic electrical equipment and does not require extensive technical skills.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be built within a week with basic electrical equipment and does not require extensive technical skills.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a practical assessment of the construction requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "4891111c-9d61-4dea-a650-3a5f49c6c121",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C34",
+      "claim": "LOW pressure is set at 20 mbar for continuous outflow of pipette solution during the idle state in the bath to prevent clogging of the tip.",
+      "claim_type": "EXPLICIT",
+      "source": "We set one pressure regulator at 20 mbar (LOW) for continuous outflow of pipette solution during the idle state in the bath to prevent clogging of the tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing the pressure system settings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "2fc967d8-2130-42af-b48d-4e0c62e3c74a",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C35",
+      "claim": "HIGH pressure of 70 mbar is applied for moving through the slice to approach the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply 70 mbar (HIGH) for moving through the slice to approach the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing the pressure system settings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "2ceda16b-4b46-48f4-9e66-5729639db4e7",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C36",
+      "claim": "Fine adjustment of suction duration and strength is crucial to achieve maximum success rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that this is a crucial part of the patching process which needs fine adjustment regarding the duration and strength of suction to achieve maximum success rate (up to 88% on six-manipulator setup, see results on performance below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an assessment based on experience and supported by success rate data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "74a5e889-8f03-4107-842f-76ee79f8d361",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C37",
+      "claim": "Fully automated in-vitro patch-clamp algorithms have reported a relatively low success rate of 43% using a single pipette.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to this, reports on fully automated in-vitro patch-clamp algorithms have reported a relatively low success rate of 43% using a single pipette (Wu and Chubykin, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wu and Chubykin, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "15e205fb-9295-4106-ace3-74e3e1c4ef25",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C38",
+      "claim": "The entire cleaning process takes approximately 1 minute and can be executed for multiple pipettes at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire cleaning process takes approximately 1 minute and can be executed for multiple pipettes at the same time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a practical characteristic of the cleaning procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "667b5fd7-642c-4997-a6b9-8e295e819b85",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C39",
+      "claim": "Alconox contains 10\u201320% sodium linear alkylbenzene sulfonate (LAS), which affects Glycin-, GABAA- and GluR6-mediated currents at concentrations around 0.001%.",
+      "claim_type": "EXPLICIT",
+      "source": "Alconox contains 10\u201320% sodium linear alkylbenzene sulfonate (LAS), which affects Glycin-, GABAA- and GluR6-mediated currents at concentrations around 0.001% (Machu et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Machu et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "3bcb52d6-3fbd-4884-a6f8-6a0e0d9a04b4",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C40",
+      "claim": "No significant amount of LAS could be detected in the pipette solution after the cleaning cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it has already been shown that no significant amount of LAS could be detected in the pipette solution after the cleaning cycles (Kolb et al., 2016), the remaining potential source of contamination is residual detergent adhering to the outside surface of the pipette tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kolb et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "d821354c-d6fa-4a58-81e8-2f869bc29ca0",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C41",
+      "claim": "At least 25 \u00b5l Alconox would be needed to reach the critical LAS concentration of 0.001% in the extracellular solution, assuming a recording bath volume of 1 ml and a LAS concentration of 20% in the 2% Alconox solution.",
+      "claim_type": "EXPLICIT",
+      "source": "A volume of at least 25 \u00b5l Alconox would be needed to reach the critical LAS concentration of 0.001% in the extracellular solution, assuming a recording bath volume of 1 ml and a LAS concentration of 20% in the 2% Alconox solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a calculation based on known concentrations and volumes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "0b64054e-756b-4e35-941c-d53f0323cd7e",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C42",
+      "claim": "The adherent Alconox solution on a pipette tip is estimated to be less than 0.2 \u00b5l.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate the adherent Alconox solution on a pipette tip to be less than 0.2 \u00b5l, considering that the total volume of intracellular solution inside a pipette is usually less than 15 \u00b5l.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an estimate based on pipette volume considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "e44fa541-e373-4922-b2e7-4f40cf08d1cb",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C43",
+      "claim": "No evidence was found for a systematic change in cellular or synaptic physiology after pipette cleaning in rat neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed some variability between different recordings, we found no evidence for a systematic change in cellular or synaptic physiology (p>0.05 in all comparisons using repeated measures ANOVA, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from control experiments with statistical support (p>0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "799bb40a-5cd2-4bc6-9311-b04a9b127d6a",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C44",
+      "claim": "The mean relative difference for all parameters were between 0% and 10% after pipette cleaning in rat neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean relative difference for all parameters were between 0% and 10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a quantitative finding from the control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "ae9c2d2c-20b7-4ce6-aa46-37171a3dad17",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C45",
+      "claim": "More than 10 successful 'repatches' using the same patch pipette were possible while no change in the electrophysiological properties of the cells was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, more than 10 successful 'repatches' using the same patch pipette were possible while no change in the electrophysiological properties of the cells was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from a previous study (Kolb et al., 2016) that was implemented in this work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "b8d9b885-73a0-4a30-9717-85ef6b4732bd",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C46",
+      "claim": "The success rate of patch attempts after cleaning in rat experiments was 98%.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the success rate of patch attempts after cleaning in these experiments was 98% (53 successful whole-cell recordings out of 54 patch attempts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a calculated result from the control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "00db10aa-7545-4ff7-ae1d-ad1e55bd43b5",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C47",
+      "claim": "On a setup with six manipulators, an average of 5.3 \u00b1 0.7 successful recordings per cluster were obtained with an average of 23 \u00b1 7 tested connections.",
+      "claim_type": "EXPLICIT",
+      "source": "On a setup with six manipulators, we obtained on average 5.3 \u00b1 0.7 successful recordings per cluster with an average of 23 \u00b1 7 tested connections (mean \u00b1 standard deviation, n = 30).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a quantitative finding from performance analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "93ccbaf5-720b-496c-806d-b085bb4c5f64",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C48",
+      "claim": "The six-manipulator setup achieved an average success rate of 88 \u00b1 12%.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to an average success rate of 88 \u00b1 12% which is calculated as the ratio of successfully recorded cells to the maximum number of pipettes available per cluster (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a calculated result and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "2b382911-ba4b-4e60-9706-384e93237719",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C49",
+      "claim": "After scaling up to eight pipettes, an average of 6.8 \u00b1 1 cells were recorded (success rate 85 \u00b1 13%) which increased the mean number of tested connections to 41 \u00b1 13.",
+      "claim_type": "EXPLICIT",
+      "source": "After scaling up to eight pipettes, we could record from 6.8 \u00b1 1 cells on average (success rate 85 \u00b1 13%) which increased the mean number of tested connections to 41 \u00b1 13 (n = 33).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a quantitative finding from performance analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "3b2446fd-0f45-4ac6-9c48-05258c9b2912",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C50",
+      "claim": "On the setup with 10 pipettes, an average of 7.9 \u00b1 1.1 neurons were recorded with 56 \u00b1 17 tested connections, representing a success rate of 79 \u00b1 11%.",
+      "claim_type": "EXPLICIT",
+      "source": "On our setup with 10 pipettes, we recorded on average from 7.9 \u00b1 1.1 neurons with 56 \u00b1 17 tested connections which represents a further drop of the success rate to 79 \u00b1 11% (n = 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a quantitative finding from performance analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "8812d369-5200-4bba-ada4-6e91bad3cff0",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C51",
+      "claim": "The total experimental time needed before the start of recording rose from 36.6 \u00b1 2.3 min (eight pipettes) to 46.1 \u00b1 4.6 min (10 pipettes).",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, the total experimental time needed before the start of recording the electrophysiological properties of the neurons rose from 36.6 \u00b1 2.3 min (eight pipettes) to 46.1 \u00b1 4.6 min (10 pipettes), mostly due to increasing time needed to approach and patch the cells (16.8 \u00b1 2.7 min vs 25.8 \u00b1 2.2 min, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a quantitative finding and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "e178f8dd-ec9f-4be1-b283-28ab605d2a0f",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C52",
+      "claim": "The clean-to-complete strategy increased the average cluster size on setups with 8 and 10 pipettes to 7.8 \u00b1 0.4 (97% \u00b1 5% success rate) and 9.2 \u00b1 0.6 (92% \u00b1 6% success rate), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This clean-to-complete strategy increased the average cluster size on our setups with 8 and 10 pipettes to 7.8 \u00b1 0.4 (97% \u00b1 5% success rate, n = 16) and 9.2 \u00b1 0.6 (92% \u00b1 6% success rate, n = 9), respectively (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a quantitative finding and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "5ee691f5-d47f-4a73-8e10-f765db842f5c",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C53",
+      "claim": "Using both cleaning strategies during rodent experiments on the eight-pipette setup with two recorded slices per animal, the number of tested connections increased from 140 \u00b1 24 to 244 \u00b1 52 on average per animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Using both strategies during rodent experiments on the eight-pipette setup with two to recorded slices per animal, we could increase the number of tested connections from 140 \u00b1 24 to 244 \u00b1 52 on average per animal (Figure 5D, mean \u00b1 standard deviation, n = 6 animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a quantitative finding and shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "ddd809f9-2889-4340-8fc6-d9a77aa95c59",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C54",
+      "claim": "The distance distribution in the initial cluster (median 84 \u00b5m, IQR 61\u2013110 \u00b5m) was similar and not systematically shifted compared to the second (median 85 \u00b5m, IQR 62\u2013109 \u00b5m) and third round of recording (median 84 \u00b5m, IQR 60\u2013107 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "The distance distribution in the initial cluster (median 84 \u00b5m, IQR 61\u2013110 \u00b5m, 278 pairs) was similar and not systematically shifted compared to the second (median 85 \u00b5m, IQR 62\u2013109 \u00b5m, 218 pairs) and third round of recording (median 84 \u00b5m, IQR 60\u2013107 \u00b5m, 166 pairs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a quantitative finding from distance analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "f0e3ff4c-e90e-40b2-8cbf-8db3ae2a1ad7",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C55",
+      "claim": "With two rounds of clean-to-extend, up to 17 neighboring neurons were recorded in one human slice.",
+      "claim_type": "EXPLICIT",
+      "source": "With two rounds of clean-to-extend, we were able to record electrophysiological properties and the synaptic connections of up to 17 neighboring neurons in one human slice (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "9946e1e0-523c-42c5-9c9d-0637cf3dd221",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C56",
+      "claim": "Using two setups simultaneously, up to 99 neurons were recorded and 300 to 700 potential synaptic connections were probed from individual patients within the first 24 hr after slicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Using two setups simultaneously, we were able to record from up to 99 neurons and thereby probe 300 to 700 potential synaptic connections from individual patients within the first 24 hr after slicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding and supported by data in Figure 6E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "a64a2401-e20d-491d-a70c-2925e5591d48",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C57",
+      "claim": "Excitatory connectivity between pyramidal cells in human cortical layer 2/3 ranged from 12.9% to 17.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "We found excitatory connectivity between pyramidal cells in human cortical layer 2/3 ranging from 12.9% to 17.7% which is similar to those reported previously (Boldog et al., 2018; Seeman et al., 2018; Szegedi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding with comparison to previous studies (Boldog et al., 2018; Seeman et al., 2018; Szegedi et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "df500dd7-8412-4af7-b0c3-b4d0aa2f1aea",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C58",
+      "claim": "The inter-individual differences in connectivity were not statistically different from each other (Pat. 1 vs 2, p=0.08; Pat. 1 vs 3, p=0.26; Pat. 2 vs 3, p=0.41).",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-individual differences were not statistically different from each other (Pat. 1 vs 2, p=0.08; Pat. 1 vs 3, p=0.26; Pat. 2 vs 3, p=0.41) while they were statistically equivalent within a range of \u22125 and 9.5% (Pat. 1 vs 2, 4.9% [0.3% 9.5%], Pat. 1 vs 3, 3.1% [-1.5% 7.7%], Pat. 2 vs 3, \u22121.8% [\u22125% 1.5%], proportion difference [90% confidence interval of difference]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a statistical finding from the human connectivity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "8af0ce02-39a2-4241-adcb-0c819a1d3d3a",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C59",
+      "claim": "Manual adjustments during the visually guided approach of the cell and the fine-tuned application of pressure yielded higher success rates (88%/85%/79% on the 6-/8-/10-manipulator setup) compared to a fully automated system with pipette cleaning and machine vision which reported a success rate of 43% to 51%.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that manual adjustments during the visually guided approach of the cell and the fine-tuned application of pressure to obtain a whole-cell configuration yielded higher success rates (88%/85 % / 79% on the 6-/8-/10-manipulator setup) compared to a fully automated system with pipette cleaning and machine vision which reported a success rate of 43% to 51% (Wu et al., 2016; Kolb et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison with citations to Wu et al., 2016 and Kolb et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "b95f4787-7cae-4752-91e6-310e97c8b5d7",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C60",
+      "claim": "The semi-automated pipette positioning approach was faster (53/55 s per pipette on 8-/10-manipulator setup) than the fully automated method described in Wu et al. (2016) (103 s using one pipette).",
+      "claim_type": "EXPLICIT",
+      "source": "Our semi-automated pipette positioning approach was faster (53/55 s per pipette on 8-/10-manipulator setup) than the fully automated method described in Wu et al. (2016) (103 s using one pipette) while the time needed to manually approach the cell and establish a whole-cell configuration was slightly higher (126/154 s per pipette on 8-/10-manipulator setup vs 120 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison with citation to Wu et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "0c6f8894-e7d6-4ae8-978e-74a975807590",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C61",
+      "claim": "A previous study has demonstrated an automatic synapse detection algorithm using a support vector machine classifier that achieved an accuracy of 95%.",
+      "claim_type": "EXPLICIT",
+      "source": "For connectivity studies, a previous study has demonstrated an automatic synapse detection algorithm using a support vector machine classifier that achieved an accuracy of 95% (Seeman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Seeman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "3e45a43b-2e71-4d64-aa14-a1fbc8b62d53",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C62",
+      "claim": "Underestimation of synaptic connectivity in slice experiments is an important concern and subject to ongoing debate.",
+      "claim_type": "EXPLICIT",
+      "source": "Underestimation of synaptic connectivity in slice experiments is an important concern and subject to ongoing debate (Jiang et al., 2015; Jiang et al., 2016; Barth et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known issue with citations to Jiang et al., 2015; Jiang et al., 2016; Barth et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "517b3088-b22a-4ed6-8738-de49f9705ea5",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C63",
+      "claim": "Simulations of slicing effects on connection probability have shown a correction factor between 1.3 to 1.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical reconstructions can help to assess the extent of axon cutting and refine the optimal slicing angle while simulations of slicing effects on connection probability have shown a correction factor between 1.3 to 1.7 (Levy and Reyes, 2012; Jiang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Levy and Reyes, 2012 and Jiang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "bfcdd2d6-4449-4881-ac79-41ef2896edf8",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C64",
+      "claim": "In vivo recordings with no cutting effects found a connection probability of 6.7% between pyramidal cells in the mouse barrel cortex compared to 9.3% in slice experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in vivo recordings with no cutting effects found a connection probability of 6.7% between pyramidal cells in the mouse barrel cortex compared to 9.3% in slice experiments (Jouhanneau et al., 2018; Lefort et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jouhanneau et al., 2018 and Lefort et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "571ca8f7-875b-40ac-9e62-e3137f337522",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C65",
+      "claim": "A previous study used simulations of background noise to determine the detection limits, reporting a correction factor of 1.1 for connection probability.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, a previous study has used simulations of background noise to determine the detection limits, reporting a correction factor of 1.1 for connection probability (Seeman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Seeman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "91bb4419-e784-417d-a90a-0b8bec6b3390",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C66",
+      "claim": "All-optical approaches using channelrhodopsins to stimulate individual neurons and fluorescent calcium or voltage indicators to measure their responses can be used to probe connectivity of a higher number of cells than the multipatch approach.",
+      "claim_type": "EXPLICIT",
+      "source": "All-optical approaches using channelrhodopsins to stimulate individual neurons and fluorescent calcium or voltage indicators to measure their responses can be used to probe connectivity of a higher number of cells than the multipatch approach (Emiliani et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison with citation to Emiliani et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "c3552cf0-5daa-4c4a-ad03-8891d678dc91",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C67",
+      "claim": "Simultaneous optical stimulation and recording using calcium indicators have been performed in up to 20 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous optical stimulation and recording using calcium indicators have been performed in up to 20 neurons (Packer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Packer et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "1e109c10-df18-4bdc-84d6-07c522e53116",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C68",
+      "claim": "Calcium transients cannot resolve single action potentials or subthreshold postsynaptic signals, potentially missing monosynaptic connections.",
+      "claim_type": "EXPLICIT",
+      "source": "However, calcium transients cannot resolve single action potentials or subthreshold postsynaptic signals, potentially missing monosynaptic connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of calcium imaging based on known properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "86013178-2cd9-4113-b697-907e0e224d5a",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C69",
+      "claim": "Voltage indicators can resolve subthreshold signals with higher temporal resolution than calcium imaging and have been shown to detect monosynaptic connections combined with optical stimulation in organotypical slices.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage indicators can resolve subthreshold signals with higher temporal resolution than calcium imaging and have been shown to detect monosynaptic connections combined with optical stimulation in organotypical slices (Hochbaum et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hochbaum et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "6dcf2f29-ff39-45a9-99fd-0a06fbe0bff9",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C70",
+      "claim": "Multipatch in vivo is technically very challenging and thus far limited to a maximum of four pipettes.",
+      "claim_type": "EXPLICIT",
+      "source": "While calcium imaging can also be applied in vivo, multipatch in this condition is technically very challenging and thus far limited to a maximum of four pipettes (Jouhanneau et al., 2018; Kodandaramaiah et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a technical limitation with citations to Jouhanneau et al., 2018 and Kodandaramaiah et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "d584cec5-2ac9-4b0d-a915-49c69217487b",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C71",
+      "claim": "Two-photon glutamate uncaging allows mapping of monosynaptic inputs from 10 to 50 presynaptic neurons onto a single patched neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation through a high-density multielectrode array or two-photon glutamate uncaging allows mapping of monosynaptic inputs from 10 to 50 presynaptic neurons onto a single patched neuron (Fino and Yuste, 2011; J\u00e4ckel et al., 2017), while two-photon optogenetic stimulation can probe connections from up to 200 presynaptic neurons in a single experiment (Izquierdo-Serra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fino and Yuste, 2011 and J\u00e4ckel et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "15ece785-f4b1-4f58-9cff-34ce0cf86fa0",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C72",
+      "claim": "Two-photon optogenetic stimulation can probe connections from up to 200 presynaptic neurons in a single experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation through a high-density multielectrode array or two-photon glutamate uncaging allows mapping of monosynaptic inputs from 10 to 50 presynaptic neurons onto a single patched neuron (Fino and Yuste, 2011; J\u00e4ckel et al., 2017), while two-photon optogenetic stimulation can probe connections from up to 200 presynaptic neurons in a single experiment (Izquierdo-Serra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Izquierdo-Serra et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "aac7b421-02c9-42ca-b15b-dbc1371b4423",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C73",
+      "claim": "Human tissue was acquired from temporal lobe resections of patients with pharmacoresistant temporal lobe epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Human tissue was acquired from temporal lobe resections of patients with pharmacoresistant temporal lobe epilepsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "34851c69-b135-48c6-ae47-25b45f890f93",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C74",
+      "claim": "All patients gave written consent for the scientific use of the resected tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "All patients gave a written consent for the scientific use of the resected tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section regarding ethical procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "dee799d1-c7f6-4b6b-8eed-13d83146884d",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C75",
+      "claim": "All procedures adhered to ethical requirements and were in accordance to the respective ethical approval (EA2/111/14).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures adhered to ethical requirements and were in accordance to the respective ethical approval (EA2/111/14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section regarding ethical procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "080915ec-bf68-468e-bf94-718941fa4a43",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C76",
+      "claim": "Acute brain slices were prepared from 19 to 35 days old transgenic Wistar rats expressing Venus-YFP under the VGAT promotor.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute brain slices were prepared from 19 to 35 days old transgenic Wistar rats expressing Venus-YFP under the VGAT promotor (Peng et al., 2017; Uematsu et al., 2008) or from 21 to 42 days old male C57BL/6N mice (B\u00f6hm et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section with citations to Peng et al., 2017 and Uematsu et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "24420228-173f-4da7-944c-1f6176810a4b",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C77",
+      "claim": "Acute brain slices were prepared from 21 to 42 days old male C57BL/6N mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute brain slices were prepared from 19 to 35 days old transgenic Wistar rats expressing Venus-YFP under the VGAT promotor (Peng et al., 2017; Uematsu et al., 2008) or from 21 to 42 days old male C57BL/6N mice (B\u00f6hm et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section with citation to B\u00f6hm et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "c1069f08-ed5f-4075-8986-5e092499959c",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C78",
+      "claim": "Tissue samples were transferred to the laboratory within 30 to 40 min in cooled sucrose based aCSF enriched with carbogen.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, tissue samples were collected at the operating theatre and transferred to the laboratory within 30 to 40 min in cooled sucrose based aCSF enriched with carbogen (95% O2, 5% CO2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing slice preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "e7014203-ceea-49d8-8f54-7d9b87936732",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C79",
+      "claim": "Slice thickness was 400 \u00b5m for human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Slice thickness was 400 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing slice preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "dcb68a67-e905-4c52-9af6-cca565aa68f7",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C80",
+      "claim": "Brain slices of 300 \u00b5m thickness were cut for rat experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain slices of 300 \u00b5m thickness were cut on a Leica VT1200 vibratome (Leica Biosystems) and subsequently stored in the sucrose aCSF solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing rat slice preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "1345aea6-15b8-4e17-a432-4fcc157266b1",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C81",
+      "claim": "Whole-cell recordings were performed at 34\u00b0C under submerged conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell recordings were performed at 34\u00b0C under submerged conditions, the bath chamber was perfused with an aCSF solution containing (in mM): 125 NaCl, 2.5 KCl, 1 MgCl2, 2 CaCl2, 10 glucose, 1.25 NaH2PO4, and 25 NaHCO3 (300 mOsm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing recording conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "d8e1e844-ff00-492f-aa62-e2790ef1bc5f",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C82",
+      "claim": "Data were low-pass filtered at 6 kHz using the built in four-pole Bessel filter and digitized at a sampling rate of 20 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were low-pass filtered at 6 kHz using the built in four-pole Bessel filter and digitized at a sampling rate of 20 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing data acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "2cf130f8-a430-42dc-8750-7435dc98c424",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C83",
+      "claim": "Four action potentials were elicited in each cell at 20 Hz for synaptic connectivity screening.",
+      "claim_type": "EXPLICIT",
+      "source": "For synaptic connectivity screening, all cells were recorded in current clamp mode and held near \u201360 mV by means of constant and adjusting current injection. Four action potentials were elicited in each cell at 20 Hz with 1\u20134 nA for 1\u20133 ms and postsynaptic responses in the other cells were detected in the averaged traces from 30 to 50 sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing the recording protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "c114f846-3f37-4e3e-b4aa-8d8683ab49dc",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C84",
+      "claim": "Postsynaptic responses were detected in the averaged traces from 30 to 50 sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "Four action potentials were elicited in each cell at 20 Hz with 1\u20134 nA for 1\u20133 ms and postsynaptic responses in the other cells were detected in the averaged traces from 30 to 50 sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section describing the recording protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "5c7c5b9f-22d0-471b-a189-b28eb840f6e2",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "claim_id": "C85",
+      "claim": "Successful recordings were defined by a sufficiently high seal-resistance, resting membrane potentials of the cells more negative than \u221250 mV, long-term recording stability, and the ability of the neurons to produce characteristic action potential patterns during sustained step depolarisations.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful recordings were defined by a sufficiently high seal-resistance, resting membrane potentials of the cells more negative than \u221250 mV (not corrected for liquid junction potential), long-term recording stability, and the ability of the neurons to produce characteristic action potential patterns during sustained step depolarisations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section defining quality criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e40b09f0-f8ce-40ce-b237-ac636f4cefcb",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a multipatch setup capable of recording up to 10 neurons simultaneously using custom-made stages and hardware configurations. Ten Sensapex manipulators were arranged on a custom stage with a Nikon microscope, and an 8-manipulator setup was established with Scientifica equipment. The custom stages used aluminum and steel construction with optimized 27\u00b0 approach angles, and hardware solutions included five amplifiers connected to enable 10-channel recording with a custom routing device to overcome DAC limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C27-C32 provide detailed technical specifications and are supported by explicit descriptions in the methods section and visual evidence in Figure 1. The hardware configuration is thoroughly documented with specific component details, demonstrating the feasibility of the 10-channel recording system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "b92d8124-ea5c-424c-a672-84768d9a68c4",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An automated pressure control system was developed that can be built within a week using basic equipment. The system uses specific pressure levels (20 mbar LOW, 70 mbar HIGH) for different experimental phases, with fine adjustment of suction being crucial for achieving high success rates (up to 88%). The cleaning process takes approximately 1 minute and can be executed for multiple pipettes simultaneously.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 are well-supported by detailed methods descriptions and Figure 2 showing the pressure system design. The success rate data (C36) is supported by performance results (C48), and the comparison to automated systems (C37) is properly cited. The practical characteristics are explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "c5fec536-46df-433f-81aa-de08ef76e2c9",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pipette cleaning using Alconox detergent does not systematically alter cellular or synaptic physiology in rat neurons. Control experiments showed no significant changes (p>0.05) in cellular and synaptic parameters after cleaning, with mean relative differences between 0-10%. The estimated adherent Alconox volume (<0.2 \u00b5l) is far below the amount needed to reach critical concentrations, and a 98% success rate was achieved after cleaning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 are strongly supported by control experiments in rat tissue with appropriate statistical analysis (repeated measures ANOVA, p>0.05) and data shown in Figure 3. The calculations regarding detergent concentration (C41-C42) are based on reasonable assumptions. The high success rate (C46) provides additional validation of the method's effectiveness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "c7985b05-bec5-4871-b420-26770558103e",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Performance analysis of multipatch setups without cleaning showed that success rates decreased as the number of manipulators increased: 88\u00b112% for 6 pipettes (5.3\u00b10.7 cells, 23\u00b17 connections), 85\u00b113% for 8 pipettes (6.8\u00b11 cells, 41\u00b113 connections), and 79\u00b111% for 10 pipettes (7.9\u00b11.1 cells, 56\u00b117 connections). Experimental time increased from 36.6\u00b12.3 min to 46.1\u00b14.6 min when scaling from 8 to 10 pipettes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 are supported by quantitative data from rodent experiments (n=30, 33, and 10 for different configurations) shown in Figure 4B-D. The trend of decreasing success rates with increasing pipette numbers is clearly documented with appropriate statistics (mean\u00b1SD). This establishes baseline performance for comparison with cleaning strategies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "e2cd22c1-bccc-49ba-a474-9700901fc8d3",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The clean-to-complete strategy dramatically increased cluster completion rates to 97\u00b15% (8 pipettes) and 92\u00b16% (10 pipettes). Combined cleaning strategies (clean-to-complete and clean-to-extend) increased tested connections from 140\u00b124 to 244\u00b152 per animal on the 8-pipette setup. This approach overcomes spatial limitations and increases experimental yield while decreasing experimental time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C24-C25, C52-C53 are well-supported by data in Figure 5B-D showing substantial improvements in success rates and connection numbers. The clean-to-complete strategy addresses the declining success rates documented in C47-C50, and the quantitative improvements are clearly demonstrated with appropriate sample sizes (n=16, 9, and 6 animals).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "e7b93d3f-46fa-44b6-af3e-1297a2d2d573",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The distance distribution of tested connections remained consistent across multiple rounds of recording with clean-to-extend, with median distances of 84 \u00b5m (IQR 61-110 \u00b5m) for initial clusters, 85 \u00b5m (IQR 62-109 \u00b5m) for second round, and 84 \u00b5m (IQR 60-107 \u00b5m) for third round.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by analysis of 1324 connections (662 pairs) showing no systematic shift in distance distributions across recording rounds. This addresses potential bias concerns about the clean-to-extend approach and validates that the method samples similar spatial scales across sessions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "fd788785-967d-4618-b94c-62c2be2da6eb",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The method enabled recording of up to 17 neurons in a single human slice (150 tested connections) and screening of 300-700 connections per patient within 24 hours using two setups simultaneously. This represents a substantial increase in throughput allowing microcircuit analysis at the individual patient level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C26, C55-C56 are strongly supported by data in Figure 6A showing the 17-neuron recording and Figure 6F showing 336-694 tested connections across three patients. This demonstrates the practical application of the method to human tissue and validates the claimed throughput improvements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "b1e6d8af-8fb9-4d9a-bc4c-df9063d8bd83",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Excitatory connectivity between pyramidal cells in human cortical layer 2/3 ranged from 12.9% to 17.7% across three patients. Inter-individual differences were not statistically different (p>0.05 for all comparisons) but were statistically equivalent within a range of -5% to 9.5%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by connectivity data from three patients with appropriate statistical analysis (Fisher's exact test and equivalence testing). The connection probabilities are consistent with prior studies (properly cited), and the equivalence analysis provides evidence for limited inter-individual variability in this parameter.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "539f3906-2d48-4fcd-b11c-f34ec22baf47",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The semi-automated approach achieved higher success rates (88%/85%/79% on 6-/8-/10-manipulator setups) compared to fully automated systems (43-51%) and was faster for pipette positioning (53-55 s per pipette) than fully automated methods (103 s), though manual cell approach took slightly longer (126-154 s vs 120 s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by performance data from this study compared to properly cited prior work (Wu et al., 2016; Kolb et al., 2019). The comparison demonstrates advantages of the semi-automated approach, though the slightly longer manual approach time is acknowledged. The success rate advantage is substantial and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "8b5caa4b-3458-4cd3-95c8-cc258f76cc44",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Multipatch recordings represent the gold standard for microcircuit analysis, offering sub-millisecond and subthreshold resolution to reliably detect unitary synaptic connections, detailed electrophysiological and morphological characterization, and applicability across species without genetic modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C15 are supported by established knowledge and appropriate citations (Hochbaum et al., 2014; Packer et al., 2015; Geiger et al., 1997; Markram et al., 2004). These claims establish the rationale for the multipatch approach and are consistent with the field's understanding of the method's capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "17e5dc32-9725-4feb-b7c9-9142c8ecacec",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "While feedforward cortical connectivity is stereotypical, intralaminar connectivity is heterogeneous across brain regions. Distinctive microcircuit features in humans remain unresolved, and the scarcity of human tissue necessitates pooling data across patients, which is problematic given high inter-individual variability in genetic background, medical history, and medication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C11 establish the scientific context and motivation for the study. They are supported by appropriate citations (Douglas and Martin, 2004; Jiang et al., 2015; Peng et al., 2017; Seeman et al., 2018) and represent accurate characterizations of knowledge gaps and practical constraints in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "5283d7fb-0931-4293-ad0f-2c120e8b2dc0",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Increasing the number of simultaneously recorded neurons substantially increases testable connections, but operating multiple manipulators is challenging due to spatial constraints. While various groups have increased recording numbers and developed automation approaches, setups with 8+ manipulators are used by only a few labs. Pipette cleaning has been implemented for single-neuron automated patch-clamp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20, C22-C23 are supported by appropriate citations and logical reasoning. The scaling relationship for connections (C16) is demonstrated in Figure 4A. The practical challenges (C18, C22) and limited adoption of large setups (C20) represent accurate characterizations of the field, and prior automation work (C19, C23) is properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "561f104c-98f6-4a7f-98f0-5687c1ea64b1",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Underestimation of synaptic connectivity in slice experiments is an ongoing concern. Simulations suggest correction factors of 1.3-1.7 for slicing effects, though in vivo recordings found lower connectivity (6.7%) than slice experiments (9.3%) in mouse barrel cortex. Detection limits from background noise suggest a correction factor of 1.1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 accurately characterize methodological limitations and are supported by appropriate citations (Seeman et al., 2018; Jiang et al., 2015, 2016; Barth et al., 2016; Levy and Reyes, 2012; Jouhanneau et al., 2018; Lefort et al., 2009). These claims provide important context for interpreting connectivity measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "753de53d-dc1b-4c94-8edb-04007e313bdc",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Alternative optical and stimulation methods can probe connectivity in more neurons than multipatch but have limitations. All-optical approaches with calcium imaging (up to 20 neurons) cannot resolve single action potentials or subthreshold signals. Voltage indicators offer better resolution but face technical challenges. Multipatch in vivo is limited to 4 pipettes. Glutamate uncaging and optogenetic stimulation can map inputs from 10-200 presynaptic neurons but lack reciprocal connectivity information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72 provide accurate comparisons to alternative methods with appropriate citations (Emiliani et al., 2015; Packer et al., 2015; Hochbaum et al., 2014; Jouhanneau et al., 2018; Kodandaramaiah et al., 2018; Fino and Yuste, 2011; J\u00e4ckel et al., 2017; Izquierdo-Serra et al., 2018). The limitations and capabilities of each method are fairly characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    },
+    {
+      "id": "6e877056-efeb-43eb-9436-f168c81e7567",
+      "content_id": "93997505-5ed6-4635-ae26-99d65ebe20fd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Human tissue was obtained from epilepsy patients with written consent and ethical approval (EA2/111/14). Rodent experiments used transgenic rats (19-35 days) and C57BL/6N mice (21-42 days) with appropriate ethical approvals. Detailed slice preparation, recording conditions (34\u00b0C, specific aCSF compositions, 400 \u00b5m human/300 \u00b5m rodent slices), and data acquisition parameters (6 kHz filtering, 20 kHz sampling, 4 APs at 20 Hz, 30-50 sweeps) are specified. Quality criteria for successful recordings are defined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C85 provide comprehensive methodological details that are explicitly stated in the methods section. These technical specifications are essential for reproducibility and are appropriately documented with specific parameters, ethical approvals, and quality criteria. The methods are consistent with standard practices in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:30:26.872423Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eb680a49-88e5-4ff7-baee-8f0eaad0cee5",
+      "result_id": "e40b09f0-f8ce-40ce-b237-ac636f4cefcb"
+    },
+    {
+      "claim_id": "622ea974-a168-472c-8b53-8227bf5f394a",
+      "result_id": "e40b09f0-f8ce-40ce-b237-ac636f4cefcb"
+    },
+    {
+      "claim_id": "9d6ed1cf-ce5b-497d-978b-f70eb05c8fd2",
+      "result_id": "e40b09f0-f8ce-40ce-b237-ac636f4cefcb"
+    },
+    {
+      "claim_id": "a17fba29-a999-4549-bf73-4527e018edb5",
+      "result_id": "e40b09f0-f8ce-40ce-b237-ac636f4cefcb"
+    },
+    {
+      "claim_id": "4679bce9-1b18-47f3-8b14-de76de2f9dc3",
+      "result_id": "e40b09f0-f8ce-40ce-b237-ac636f4cefcb"
+    },
+    {
+      "claim_id": "acdfa0c6-89e1-4797-9efb-5dfccbff7e97",
+      "result_id": "e40b09f0-f8ce-40ce-b237-ac636f4cefcb"
+    },
+    {
+      "claim_id": "d4142868-e3c1-43ea-8878-e2450ba1af1d",
+      "result_id": "e40b09f0-f8ce-40ce-b237-ac636f4cefcb"
+    },
+    {
+      "claim_id": "103f0db7-96e3-4cd7-82fc-f6d88abd640b",
+      "result_id": "b92d8124-ea5c-424c-a672-84768d9a68c4"
+    },
+    {
+      "claim_id": "4891111c-9d61-4dea-a650-3a5f49c6c121",
+      "result_id": "b92d8124-ea5c-424c-a672-84768d9a68c4"
+    },
+    {
+      "claim_id": "2fc967d8-2130-42af-b48d-4e0c62e3c74a",
+      "result_id": "b92d8124-ea5c-424c-a672-84768d9a68c4"
+    },
+    {
+      "claim_id": "2ceda16b-4b46-48f4-9e66-5729639db4e7",
+      "result_id": "b92d8124-ea5c-424c-a672-84768d9a68c4"
+    },
+    {
+      "claim_id": "74a5e889-8f03-4107-842f-76ee79f8d361",
+      "result_id": "b92d8124-ea5c-424c-a672-84768d9a68c4"
+    },
+    {
+      "claim_id": "15e205fb-9295-4106-ace3-74e3e1c4ef25",
+      "result_id": "b92d8124-ea5c-424c-a672-84768d9a68c4"
+    },
+    {
+      "claim_id": "667b5fd7-642c-4997-a6b9-8e295e819b85",
+      "result_id": "c5fec536-46df-433f-81aa-de08ef76e2c9"
+    },
+    {
+      "claim_id": "3bcb52d6-3fbd-4884-a6f8-6a0e0d9a04b4",
+      "result_id": "c5fec536-46df-433f-81aa-de08ef76e2c9"
+    },
+    {
+      "claim_id": "d821354c-d6fa-4a58-81e8-2f869bc29ca0",
+      "result_id": "c5fec536-46df-433f-81aa-de08ef76e2c9"
+    },
+    {
+      "claim_id": "0b64054e-756b-4e35-941c-d53f0323cd7e",
+      "result_id": "c5fec536-46df-433f-81aa-de08ef76e2c9"
+    },
+    {
+      "claim_id": "e44fa541-e373-4922-b2e7-4f40cf08d1cb",
+      "result_id": "c5fec536-46df-433f-81aa-de08ef76e2c9"
+    },
+    {
+      "claim_id": "799bb40a-5cd2-4bc6-9311-b04a9b127d6a",
+      "result_id": "c5fec536-46df-433f-81aa-de08ef76e2c9"
+    },
+    {
+      "claim_id": "ae9c2d2c-20b7-4ce6-aa46-37171a3dad17",
+      "result_id": "c5fec536-46df-433f-81aa-de08ef76e2c9"
+    },
+    {
+      "claim_id": "b8d9b885-73a0-4a30-9717-85ef6b4732bd",
+      "result_id": "c5fec536-46df-433f-81aa-de08ef76e2c9"
+    },
+    {
+      "claim_id": "00db10aa-7545-4ff7-ae1d-ad1e55bd43b5",
+      "result_id": "c7985b05-bec5-4871-b420-26770558103e"
+    },
+    {
+      "claim_id": "93ccbaf5-720b-496c-806d-b085bb4c5f64",
+      "result_id": "c7985b05-bec5-4871-b420-26770558103e"
+    },
+    {
+      "claim_id": "2b382911-ba4b-4e60-9706-384e93237719",
+      "result_id": "c7985b05-bec5-4871-b420-26770558103e"
+    },
+    {
+      "claim_id": "3b2446fd-0f45-4ac6-9c48-05258c9b2912",
+      "result_id": "c7985b05-bec5-4871-b420-26770558103e"
+    },
+    {
+      "claim_id": "8812d369-5200-4bba-ada4-6e91bad3cff0",
+      "result_id": "c7985b05-bec5-4871-b420-26770558103e"
+    },
+    {
+      "claim_id": "e178f8dd-ec9f-4be1-b283-28ab605d2a0f",
+      "result_id": "e2cd22c1-bccc-49ba-a474-9700901fc8d3"
+    },
+    {
+      "claim_id": "5ee691f5-d47f-4a73-8e10-f765db842f5c",
+      "result_id": "e2cd22c1-bccc-49ba-a474-9700901fc8d3"
+    },
+    {
+      "claim_id": "ebb9e4d3-9516-4067-b62e-71e0086c3af1",
+      "result_id": "e2cd22c1-bccc-49ba-a474-9700901fc8d3"
+    },
+    {
+      "claim_id": "a9a239b1-1e71-42e5-9d98-d95f97d032f7",
+      "result_id": "e2cd22c1-bccc-49ba-a474-9700901fc8d3"
+    },
+    {
+      "claim_id": "e03294a2-44fe-4663-b7a6-4fe97e943439",
+      "result_id": "e2cd22c1-bccc-49ba-a474-9700901fc8d3"
+    },
+    {
+      "claim_id": "ddd809f9-2889-4340-8fc6-d9a77aa95c59",
+      "result_id": "e7b93d3f-46fa-44b6-af3e-1297a2d2d573"
+    },
+    {
+      "claim_id": "2991ee6f-26d4-4789-b29f-a94e823b087f",
+      "result_id": "fd788785-967d-4618-b94c-62c2be2da6eb"
+    },
+    {
+      "claim_id": "a914ee48-135f-40cc-834d-3dcf4bc66af6",
+      "result_id": "fd788785-967d-4618-b94c-62c2be2da6eb"
+    },
+    {
+      "claim_id": "c4d89772-dc5c-4a7a-acdc-f37a45369dae",
+      "result_id": "fd788785-967d-4618-b94c-62c2be2da6eb"
+    },
+    {
+      "claim_id": "f0e3ff4c-e90e-40b2-8cbf-8db3ae2a1ad7",
+      "result_id": "fd788785-967d-4618-b94c-62c2be2da6eb"
+    },
+    {
+      "claim_id": "9946e1e0-523c-42c5-9c9d-0637cf3dd221",
+      "result_id": "fd788785-967d-4618-b94c-62c2be2da6eb"
+    },
+    {
+      "claim_id": "a64a2401-e20d-491d-a70c-2925e5591d48",
+      "result_id": "b1e6d8af-8fb9-4d9a-bc4c-df9063d8bd83"
+    },
+    {
+      "claim_id": "df500dd7-8412-4af7-b0c3-b4d0aa2f1aea",
+      "result_id": "b1e6d8af-8fb9-4d9a-bc4c-df9063d8bd83"
+    },
+    {
+      "claim_id": "8af0ce02-39a2-4241-adcb-0c819a1d3d3a",
+      "result_id": "539f3906-2d48-4fcd-b11c-f34ec22baf47"
+    },
+    {
+      "claim_id": "b95f4787-7cae-4752-91e6-310e97c8b5d7",
+      "result_id": "539f3906-2d48-4fcd-b11c-f34ec22baf47"
+    },
+    {
+      "claim_id": "e4e37676-6efd-433a-b628-e5e4768b51c2",
+      "result_id": "8b5caa4b-3458-4cd3-95c8-cc258f76cc44"
+    },
+    {
+      "claim_id": "e2849044-4d44-4fdc-aadf-42f4072bf715",
+      "result_id": "8b5caa4b-3458-4cd3-95c8-cc258f76cc44"
+    },
+    {
+      "claim_id": "a7827c5d-1c87-40ac-9842-1e30057383da",
+      "result_id": "8b5caa4b-3458-4cd3-95c8-cc258f76cc44"
+    },
+    {
+      "claim_id": "f8f58541-cdef-49e2-9a62-a6e4a07320c2",
+      "result_id": "8b5caa4b-3458-4cd3-95c8-cc258f76cc44"
+    },
+    {
+      "claim_id": "4bbe200b-65c3-445b-8505-68b7ed15c539",
+      "result_id": "8b5caa4b-3458-4cd3-95c8-cc258f76cc44"
+    },
+    {
+      "claim_id": "cd0ad068-c171-4eaa-80ba-209537c01915",
+      "result_id": "17e5dc32-9725-4feb-b7c9-9142c8ecacec"
+    },
+    {
+      "claim_id": "70c5b218-604e-4156-9823-a668cc49fa9a",
+      "result_id": "17e5dc32-9725-4feb-b7c9-9142c8ecacec"
+    },
+    {
+      "claim_id": "48ac753d-52d2-4430-a1d2-37439d1ba260",
+      "result_id": "17e5dc32-9725-4feb-b7c9-9142c8ecacec"
+    },
+    {
+      "claim_id": "7b286bf9-4121-4d1b-bba8-21f49293fbfd",
+      "result_id": "17e5dc32-9725-4feb-b7c9-9142c8ecacec"
+    },
+    {
+      "claim_id": "8b5f2629-9f66-4fdc-9686-5edf2ebdcad6",
+      "result_id": "17e5dc32-9725-4feb-b7c9-9142c8ecacec"
+    },
+    {
+      "claim_id": "13e1ba9b-28d5-4706-8a87-15b3b4a4a5c9",
+      "result_id": "17e5dc32-9725-4feb-b7c9-9142c8ecacec"
+    },
+    {
+      "claim_id": "693dbbff-d612-4b16-92a8-7b8c7505639e",
+      "result_id": "17e5dc32-9725-4feb-b7c9-9142c8ecacec"
+    },
+    {
+      "claim_id": "78bc81be-7d48-481c-906e-a13dfcca4ff9",
+      "result_id": "5283d7fb-0931-4293-ad0f-2c120e8b2dc0"
+    },
+    {
+      "claim_id": "3345b2b2-d703-4da0-a390-fca182c83cd0",
+      "result_id": "5283d7fb-0931-4293-ad0f-2c120e8b2dc0"
+    },
+    {
+      "claim_id": "3393bc5d-226c-4e5c-84d1-5770caecf944",
+      "result_id": "5283d7fb-0931-4293-ad0f-2c120e8b2dc0"
+    },
+    {
+      "claim_id": "ec043a65-4275-4e96-afb6-4d8985cc2c97",
+      "result_id": "5283d7fb-0931-4293-ad0f-2c120e8b2dc0"
+    },
+    {
+      "claim_id": "5af4881b-eb2f-4260-b8e3-05508c11551e",
+      "result_id": "5283d7fb-0931-4293-ad0f-2c120e8b2dc0"
+    },
+    {
+      "claim_id": "ebebd802-e5ab-4d16-928c-1e4f5d5d98b1",
+      "result_id": "5283d7fb-0931-4293-ad0f-2c120e8b2dc0"
+    },
+    {
+      "claim_id": "52c83f9e-6d61-439a-9136-fcaf7148bde7",
+      "result_id": "5283d7fb-0931-4293-ad0f-2c120e8b2dc0"
+    },
+    {
+      "claim_id": "0c6f8894-e7d6-4ae8-978e-74a975807590",
+      "result_id": "561f104c-98f6-4a7f-98f0-5687c1ea64b1"
+    },
+    {
+      "claim_id": "3e45a43b-2e71-4d64-aa14-a1fbc8b62d53",
+      "result_id": "561f104c-98f6-4a7f-98f0-5687c1ea64b1"
+    },
+    {
+      "claim_id": "517b3088-b22a-4ed6-8738-de49f9705ea5",
+      "result_id": "561f104c-98f6-4a7f-98f0-5687c1ea64b1"
+    },
+    {
+      "claim_id": "bfcdd2d6-4449-4881-ac79-41ef2896edf8",
+      "result_id": "561f104c-98f6-4a7f-98f0-5687c1ea64b1"
+    },
+    {
+      "claim_id": "571ca8f7-875b-40ac-9e62-e3137f337522",
+      "result_id": "561f104c-98f6-4a7f-98f0-5687c1ea64b1"
+    },
+    {
+      "claim_id": "91bb4419-e784-417d-a90a-0b8bec6b3390",
+      "result_id": "753de53d-dc1b-4c94-8edb-04007e313bdc"
+    },
+    {
+      "claim_id": "c3552cf0-5daa-4c4a-ad03-8891d678dc91",
+      "result_id": "753de53d-dc1b-4c94-8edb-04007e313bdc"
+    },
+    {
+      "claim_id": "1e109c10-df18-4bdc-84d6-07c522e53116",
+      "result_id": "753de53d-dc1b-4c94-8edb-04007e313bdc"
+    },
+    {
+      "claim_id": "86013178-2cd9-4113-b697-907e0e224d5a",
+      "result_id": "753de53d-dc1b-4c94-8edb-04007e313bdc"
+    },
+    {
+      "claim_id": "6dcf2f29-ff39-45a9-99fd-0a06fbe0bff9",
+      "result_id": "753de53d-dc1b-4c94-8edb-04007e313bdc"
+    },
+    {
+      "claim_id": "d584cec5-2ac9-4b0d-a915-49c69217487b",
+      "result_id": "753de53d-dc1b-4c94-8edb-04007e313bdc"
+    },
+    {
+      "claim_id": "15ece785-f4b1-4f58-9cff-34ce0cf86fa0",
+      "result_id": "753de53d-dc1b-4c94-8edb-04007e313bdc"
+    },
+    {
+      "claim_id": "aac7b421-02c9-42ca-b15b-dbc1371b4423",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "34851c69-b135-48c6-ae47-25b45f890f93",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "dee799d1-c7f6-4b6b-8eed-13d83146884d",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "080915ec-bf68-468e-bf94-718941fa4a43",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "24420228-173f-4da7-944c-1f6176810a4b",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "c1069f08-ed5f-4075-8986-5e092499959c",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "e7014203-ceea-49d8-8f54-7d9b87936732",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "dcb68a67-e905-4c52-9af6-cca565aa68f7",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "1345aea6-15b8-4e17-a432-4fcc157266b1",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "d8e1e844-ff00-492f-aa62-e2790ef1bc5f",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "2cf130f8-a430-42dc-8750-7435dc98c424",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "c114f846-3f37-4e3e-b4aa-8d8683ab49dc",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    },
+    {
+      "claim_id": "5c7c5b9f-22d0-471b-a189-b28eb840f6e2",
+      "result_id": "6e877056-efeb-43eb-9436-f168c81e7567"
+    }
+  ],
+  "comparisons": []
+}

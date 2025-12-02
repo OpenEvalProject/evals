@@ -1,0 +1,1483 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The study profiled 179 sorted neuronal populations and 15 nonneuronal populations.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, we profiled 179 sorted neuronal populations and 15 nonneuronal populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract and introduction of the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Each sample of sorted cells may contain more than one 'atomic' cell type.",
+    "claim_type": "EXPLICIT",
+    "source": "Because each sample of sorted cells may contain more than one 'atomic' cell type, we refer to these as genetically- and anatomically-identified cell populations (GACPs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explicitly stated as a caveat about the methodology.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The sorted cell populations have a comparable level of homogeneity to publicly available single-cell datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "To assess homogeneity, we quantitatively compared our sorted cell populations to publicly available single-cell datasets, which revealed a comparable level of homogeneity, but a much lower level of noise in the sorted population profiles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This comparison is based on NNLS decomposition analysis presented in Figure 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The sorted cell populations have a much lower level of noise than publicly available single-cell datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "To assess homogeneity, we quantitatively compared our sorted cell populations to publicly available single-cell datasets, which revealed a comparable level of homogeneity, but a much lower level of noise in the sorted population profiles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the analysis comparing sorted populations to single-cell datasets.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Homeobox transcription factors have extremely low transcriptional noise.",
+    "claim_type": "EXPLICIT",
+    "source": "Short homeobox transcription factors distinguish neuronal populations combinatorially, and exhibit extremely low transcriptional noise, enabling highly robust expression differences.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by OFF noise analysis in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Long neuronal effector genes contribute disproportionately to neuronal diversity based on their patterns of expression differences.",
+    "claim_type": "EXPLICIT",
+    "source": "Long neuronal effector genes, such as channels and cell adhesion molecules, contribute disproportionately to neuronal diversity, based on their patterns rather than robustness of expression differences.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by DEF analysis as a function of gene length shown in Figure 7A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The study sequenced 2.3 trillion bp in 565 libraries.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, we sequenced 2.3 trillion bp in 565 libraries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement about the scale of sequencing performed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The 50% detection sensitivity of the assay was 23 copy*kbp.",
+    "claim_type": "EXPLICIT",
+    "source": "Amplified RNA libraries had an average sensitivity (50% detection) of 23 copy*kbp of ERCC spike-ins across all libraries (Figure 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on ERCC spike-in analysis shown in Figure 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The pipeline had the sensitivity to detect a single copy of a transcript per cell 80% of the time.",
+    "claim_type": "EXPLICIT",
+    "source": "Since manually sorted samples had 132 \u00b1 16 cells (mean \u00b1 SEM), this indicates our pipeline had the sensitivity to detect a single copy of a transcript per cell 80% of the time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is calculated from the ERCC sensitivity and the number of cells per sample.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Manual sorting produced extremely clean data with minimal contamination.",
+    "claim_type": "EXPLICIT",
+    "source": "As previously shown (Okaty et al., 2011), manual sorting produced, in general, extremely clean data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of nonneuronal marker genes shown in Figure 1\u2014figure supplement 2B and cited literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "NNLS decomposition can be used to reliably decompose mixtures of cellular profiles.",
+    "claim_type": "EXPLICIT",
+    "source": "These results indicate that NNLS can be used to reliably decompose mixtures of cellular profiles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on validation experiments including cross-validation (Figure 2\u2014figure supplement 1) and recovery of cell type numbers (Figure 2\u2014figure supplement 2).",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Similar average coefficients were obtained for decompositions of the NeuroSeq data by SC datasets and by decomposing these datasets by each other.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar average coefficients (i.e. similar purity) were obtained for decompositions of the NeuroSeq data by SC datasets and by decomposing these datasets by each other (Figure 2, Figure 2\u2014figure supplement 3\u20136).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in the NNLS decomposition results in Figure 2 and supplementary figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The heterogeneity in sorted samples is comparable to the inaccuracies introduced by clustering SC profiles.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence our decomposition results indicate that although heterogeneity may exist in some of our sorted samples, it is comparable to the inaccuracies introduced by clustering SC profiles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the NNLS decomposition and purity analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The clusters of sorted population samples were much more cleanly separable than SC clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, the clusters of sorted population samples, which are averages across one hundred cells or more, were much more cleanly separable than SC clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on separability analysis shown in Figure 2\u2014figure supplement 7.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Pan-neuronal genes include Eno2, Slc2a3, and Atp1a3.",
+    "claim_type": "EXPLICIT",
+    "source": "Extracted pan-neuronal genes contain well-known genes such as Eno2 (Enolase2), which is the neuronal form of Enolase required for the Krebs cycle, Slc2a3 (chloride transporter) required for inhibitory transmission, and Atp1a3 (ATPase Na+/K + transporting subunit alpha 3), which belongs to the complex responsible for maintaining electrochemical gradients across the membrane",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "These genes were identified as pan-neuronal through the analysis shown in Figure 1\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Some synaptic genes are expressed in all neuronal populations, including Syn1, Stx1b, Stxbp1, Sv2a, and Vamp2.",
+    "claim_type": "EXPLICIT",
+    "source": "Synaptic genes are often differentially expressed among neurons, but interestingly, some were included in this pan-neuronal list such as Syn1, Stx1b, Stxbp1, Sv2a, and Vamp2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the pan-neuronal gene analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "DEF is closely related to the Gini-Simpson diversity index.",
+    "claim_type": "EXPLICIT",
+    "source": "This differentially expressed fraction (DEF) is closely related to the Gini-Simpson diversity index (Simpson, 1949) widely used in ecology to measure species diversity in a community (see Appendix 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This relationship is explained in the text and Appendix 1.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "DEF approximates the mutual information between expression levels and cell populations.",
+    "claim_type": "EXPLICIT",
+    "source": "DEF is easy to calculate and approximates the mutual information (MI) between expression levels and cell populations (Appendix 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 3\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "FCR indicates the robustness of pair distinctions but is independent of the number of pairs distinguished.",
+    "claim_type": "EXPLICIT",
+    "source": "This fold-change ratio (FCR) indicates the robustness of pair distinctions but is independent of the number of pairs distinguished.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explained in the definition of FCR in the methods and Figure 3.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "ANOVA F-values are affected by both MI and SNR.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike DEF and FCR, variance-based methods like ANOVA F-values and CV are either affected by both MI and SNR (ANOVA; Figure 4A\u2013C and Figure 3\u2014figure supplement 1) or by neither (CV; Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations in Figure 3\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "High DEF genes are enriched for neuronal effector genes including receptors, ion channels and cell adhesion molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "High DEF genes are enriched for neuronal effector genes including receptors, ion channels and cell adhesion molecules (Figure 4E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by overrepresentation analysis in Figure 4E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Homeobox genes are enriched among genes that have both low OFF noise and at least moderate ON expression levels.",
+    "claim_type": "EXPLICIT",
+    "source": "We quantified this 'OFF noise' for all genes and found that homeobox genes are enriched among genes that have both low OFF noise and at least moderate ON expression levels (red dashed region in Figure 5B; see also Figure 5\u2014figure supplements 1 and 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in the OFF noise analysis in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Genes with low OFF noise had fewer and smaller peaks within the vicinity of their transcription start site and gene body compared to high-noise genes.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, compared to high-noise genes (Figure 5C bottom), genes with low OFF noise had fewer and smaller peaks within the vicinity of their transcription start site (TSS) and gene body (Figure 5C top, Figure 5D), consistent with the idea that chromatin accessibility contributes to their low OFF noise.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on ATAC-seq data shown in Figure 5C and 5D.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Homeobox TFs and GPCRs have the greatest orthogonality between cell types among HUGO groups.",
+    "claim_type": "EXPLICIT",
+    "source": "This analysis (Figure 5E) reveals that homeobox TFs and GPCRs have the greatest orthogonality between cell types among HUGO groups (as well as in PANTHER families, Figure 5\u2014figure supplement 1E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by orthogonality analysis in Figure 5E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The homeobox family can distinguish more than 99% of GACP pairs.",
+    "claim_type": "EXPLICIT",
+    "source": "Related to this, we found that the homeobox family can distinguish more than 99% of GACP pairs, suggesting these TFs comprise a combinatorial code for the cell populations profiled.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 5\u2014figure supplement 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "A set of as few as 8 homeobox TFs could distinguish 99% of GACP pairs.",
+    "claim_type": "EXPLICIT",
+    "source": "To illustrate this, we computed the minimum set of homeobox TFs needed to distinguish the populations studied and found that a set of as few as 8 could distinguish 99% of GACP pairs (Figure 5\u2014figure supplement 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5\u2014figure supplement 2A and 2B using a minimal gene set algorithm.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Branch probabilities at most sites of alternative splicing are highly bimodal.",
+    "claim_type": "EXPLICIT",
+    "source": "Branch probabilities are highly bimodal (Figure 6A bottom), suggesting that most branch point choices are made consistently, in an all-or-none fashion, for any given cell population.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in the distribution of branch probabilities in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "RNA binding proteins, especially splicing related factors, are highly alternatively spliced among neuronal cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "Using this combined splice DEF, we found that RNA binding proteins, especially splicing related factors (such as Pcbp2 and Mbnl2) are highly alternatively spliced among neuronal cell types (Zheng and Black, 2013), but over-represented categories also included other families such as Glutamate receptors and G-protein modulators (Figure 6C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by enrichment analysis of genes with high splice DEF in Figure 6C.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Nearly 70% of alternative sites lead to differential inclusion of a known Pfam domain or NMD.",
+    "claim_type": "EXPLICIT",
+    "source": "Altogether, nearly 70% of alternative sites lead to differential inclusion of a known Pfam domain or NMD (Figure 6E), and thus to functional or quantitative diversity across cell types.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in the pie chart in Figure 6E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Most alternative sites contain branches that can lead to NMD.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with previous observations (Yan et al., 2015; Mauger and Scheiffele, 2017), we noticed that most alternative sites contain branches that can lead to NMD (Figure 6E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6E and supported by cited literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "DEF is significantly correlated with gene length.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with this, DEF, which approximates the mutual information (MI) between expression levels and cell populations, is significantly correlated with length (Figure 7A; correlation coefficient = 0.19; p=7.5e-189), reaching a maximum for the very longest genes.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7A with statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "FCR is higher for shorter genes, reaching a maximum for genes below 10 kbp in length.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, FCR, which measures the signal-to-noise or robustness of expression differences, is higher for shorter genes, reaching a maximum for genes below 10 kbp in length (Figure 7B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The long gene bias is broadly observable across publicly available single-cell datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Analyzing publicly available single-cell data confirms that this bias is broadly observable (Figure 7\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7\u2014figure supplement 1 analyzing five SC datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Splice DEF increases with gene length.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, DEF calculated from differential splicing also increased with gene length (Figure 7D), although the slope was more gradual and the maximum DEF value achieved was less than that for gene expression (Figure 7A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The average alternatively spliced gene distinguishes only 1.4% of cell populations, while distinctions based on expression of these same genes were nearly 10 times more common (13.9%).",
+    "claim_type": "EXPLICIT",
+    "source": "This revealed that for the current dataset, the average alternatively spliced gene distinguishes only 1.4% of cell populations, but distinctions based on expression of these same genes were nearly 10 times more common (13.9%, Figure 7E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7E comparing splice-only and expression-only distinctions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The strongest long gene expression is in forebrain regions, with weaker expression evident in hindbrain.",
+    "claim_type": "EXPLICIT",
+    "source": "The results confirm strong differences between neurons and nonneurons and show the strongest long gene expression in forebrain regions, with weaker expression evident in hindbrain (Figure 7F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7F analyzing long gene expression across brain regions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The median fraction of significant long gene bins (0.89) greatly exceeded the fraction of short gene bins (0.1).",
+    "claim_type": "EXPLICIT",
+    "source": "The median fraction of significant long gene bins (0.89) greatly exceeded the fraction of short gene bins (0.1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 7\u2014figure supplement 2D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "This effort (NeuroSeq) constitutes the largest and most diverse single collection of genetically identified cell populations profiled by RNA-seq.",
+    "claim_type": "EXPLICIT",
+    "source": "This effort (NeuroSeq) constitutes the largest and most diverse single collection of genetically identified cell populations profiled by RNA-seq.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement about the scope of the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The raw data is deposited to NCBI GEO (GSE79238).",
+    "claim_type": "EXPLICIT",
+    "source": "The raw data is deposited to NCBI GEO (GSE79238).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about data availability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The processed data, including anatomical atlases, RNA-seq coverage, and TPM are available at http://neuroseq.janelia.org.",
+    "claim_type": "EXPLICIT",
+    "source": "The processed data, including anatomical atlases, RNA-seq coverage, and TPM are available at http://neuroseq.janelia.org (Figure 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statement about data availability shown in Figure 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Manually sorted samples had 132 \u00b1 16 cells (mean \u00b1 SEM).",
+    "claim_type": "EXPLICIT",
+    "source": "Since manually sorted samples had 132 \u00b1 16 cells (mean \u00b1 SEM), this indicates our pipeline had the sensitivity to detect a single copy of a transcript per cell 80% of the time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement of the number of cells per sample.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The average expression levels of homeobox genes (~30 FPKM) are significantly lower than those of neuropeptides (~90 FPKM).",
+    "claim_type": "EXPLICIT",
+    "source": "Homeobox genes are not among the most abundantly expressed genes. Their average expression levels (~30 FPKM) are significantly lower than, for example, those of neuropeptides (~90 FPKM).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on expression level analysis of different gene classes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The high FCRs of homeobox TFs depend more on low noise than high signal.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that the high FCRs of homeobox TFs depend more on low noise than high signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the observation that homeobox genes have low average expression but high FCR.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Many homeobox TFs have uniformly low expression in OFF cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, many homeobox TFs have uniformly low expression in OFF cell types (Figure 5A top).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in the example expression pattern in Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The enrichment of homeoboxes in low OFF noise genes was observable in two of the single-cell datasets encompassing multiple brain regions.",
+    "claim_type": "EXPLICIT",
+    "source": "The enrichment of homeoboxes was also observable in two of the single-cell datasets encompassing multiple brain regions (Figure 5\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5\u2014figure supplement 3 analyzing SC datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Chromatin accessibility contributes to the low OFF noise of homeobox genes.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, compared to high-noise genes (Figure 5C bottom), genes with low OFF noise had fewer and smaller peaks within the vicinity of their transcription start site (TSS) and gene body (Figure 5C top, Figure 5D), consistent with the idea that chromatin accessibility contributes to their low OFF noise.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is inferred from ATAC-seq data showing reduced chromatin accessibility at low OFF noise genes.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Tight control of homeobox TF expression may reflect their importance as determinants of cell identity.",
+    "claim_type": "EXPLICIT",
+    "source": "Functionally, the tight control of homeobox TF expression levels may reflect their known importance as determinants of cell identity, and that establishing and maintaining robust differences between cell types may require tight ON/OFF regulation rather than graded regulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a functional interpretation based on the observed tight regulation and known roles of homeobox TFs.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Different homeobox subfamilies differed in their OFF noise and FCR values.",
+    "claim_type": "EXPLICIT",
+    "source": "The different homeobox subfamilies differed in their OFF noise and hence in their FCR values. Some families (e.g. HOXL, NKL, PRD) had very low OFF noise and high FCR, while others (e.g. CERS, PROS, CUT) had higher OFF noise and lower FCR (Figure 5\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5\u2014figure supplement 4 analyzing homeobox subfamilies.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Homeobox TFs play an important role in specifying cell types in the brain, similar to other tissues.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, we found that many homeobox genes are expressed with a very high SNR and are one of the groups of genes with the most orthogonal expression patterns. This suggests that, similar to other tissues (Pereira et al., 2015; Gendrel et al., 2016; Zheng et al., 2015; Dasen and Jessell, 2009; Philippidou and Dasen, 2013), homeobox TFs play an important role in specifying cell types in the brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the high SNR and orthogonality of homeobox TFs, supported by cited literature on their roles in other tissues.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Alternative splicing of Aplp2 regulates inclusion of a BPTI Kunitz domain.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternative splicing of Amyloid precursor-like protein 2 (Aplp2) is known to regulate inclusion of a bovine pancreatic trypsin inhibitor (BPTI) Kunitz domain (Sandbrink et al., 1997) and this domain is known to regulate proteolysis of the related protein APP, the amyloid precursor protein implicated in Alzheimer's disease (Beckmann et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature and confirmed in the current dataset.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Splicing of Aplp2 at the Kunitz domain site in hippocampal interneurons differs from that in forebrain excitatory neurons and other forebrain inhibitory neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Intriguingly, we found that splicing at this site in hippocampal interneurons differs not only from that in forebrain excitatory neurons, but also from other forebrain inhibitory neurons in neocortex and striatum.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in the splicing analysis in Figure 6D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Kalirin is a RhoGEF kinase implicated in Huntington's disease, schizophrenia and synaptic plasticity.",
+    "claim_type": "EXPLICIT",
+    "source": "Kalirin (Kalrn) is a RhoGEF kinase implicated in Huntington's disease, schizophrenia and synaptic plasticity (Penzes and Jones, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Kalrn is regulated via binding of adaptor proteins to its SH3 domains, which is regulated by alternative splicing.",
+    "claim_type": "EXPLICIT",
+    "source": "Kalrn is known to be regulated via binding of adaptor proteins to its SH3 (SRC homology 3) domains (Schiller et al., 2006) which is regulated by alternative splicing of this domain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature and confirmed in the current dataset.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The data reveal a detailed quantitative view of hundreds of thousands of known and unknown cell-type-specific splicing events.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, the data reveal a detailed quantitative view of hundreds of thousands of known and unknown cell-type-specific splicing events, providing an unmatched resource for investigating their functional significance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about the scope of splicing data in the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Alternative splicing may contribute to diversity defined on the basis of transcript abundance through NMD.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that alternative splicing may contribute not only to the diversity of isoforms present, but also to diversity defined on the basis of transcript abundance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the observation that many alternative sites lead to NMD.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Coupling of regulated splicing to NMD is an important mechanism for regulating protein abundance.",
+    "claim_type": "EXPLICIT",
+    "source": "Coupling of regulated splicing to NMD is believed to be an important mechanism for regulating protein abundance (Lewis et al., 2003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Long genes are expressed at higher levels in neurons than in nonneuronal cells in the nervous system.",
+    "claim_type": "EXPLICIT",
+    "source": "Long genes are expressed at higher levels in neurons than in nonneuronal cells in the nervous system, a bias that was also present in SC datasets (Figure 7\u2014figure supplements 1 and 2) and that has been reported previously (Sugino et al., 2014; Gabel et al., 2015; Zylka et al., 2015).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7F and supplementary figures, and supported by cited literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Long genes tend to have larger numbers of exons and are likely to be expressed in a larger number of distinct isoforms as a result of alternative splicing.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to being differentially expressed, long genes are likely to have a larger number of exons and hence a greater potential for differential splicing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference based on the structure of long genes.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Long genes are enriched in signaling molecules, receptors, ion channels, and cell adhesion molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "Long genes are enriched in the signaling molecules, receptors and ion channels responsible for input/output transformations in neurons, and the cell adhesion molecules that specify neuronal connectivity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on functional enrichment analysis of long genes.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Long genes are rich in sequences derived from transposons and other retroelements.",
+    "claim_type": "EXPLICIT",
+    "source": "These genes are long because of long introns that are rich in sequences derived from transposons and other retroelements (Grishkevich and Yanai, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Long neuronal genes are disrupted in forms of autism spectrum disorder.",
+    "claim_type": "EXPLICIT",
+    "source": "it is intriguing that these long genes are disrupted in forms of autism spectrum disorder (Zylka et al., 2015; Wei et al., 2016) and in the related developmental disorder Rett Syndrome (Sugino et al., 2014; Gabel et al., 2015)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Loss of Mecp2 leads to selective upregulation of long neuronal genes in a highly cell-type-specific fashion.",
+    "claim_type": "EXPLICIT",
+    "source": "in the related developmental disorder Rett Syndrome (Sugino et al., 2014; Gabel et al., 2015), where loss of the chromatin protein Mecp2 leads to selective upregulation of long neuronal genes in a highly cell-type-specific fashion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Low noise, high FCR genes are frequently critical for early development.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to long neuronal effector genes, which tend to be expressed later in development as neurons mature phenotypically (Okaty et al., 2009), low noise, high FCR genes are frequently critical for early development.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature and general knowledge about developmental gene expression.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Hox genes are remarkably transposon impoverished.",
+    "claim_type": "EXPLICIT",
+    "source": "These genes, such as many of the homeobox TFs, are often quite short and, at least in the case of the Hox genes, are known to be remarkably transposon impoverished (Waterston et al., 2002; Simons et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Low OFF noise genes were nearly six times shorter than high OFF noise genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with this view, low OFF noise genes were nearly six times shorter than high OFF noise genes (Figure 5\u2014figure supplement 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5\u2014figure supplement 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Highly restrictive chromatin at low OFF noise genes may be established early in development to protect them from disruptive transposition.",
+    "claim_type": "EXPLICIT",
+    "source": "Highly restrictive chromatin at these genes may be established early in development to protect them from disruptive transposition (Montavon and Soshnikova, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on cited literature about chromatin regulation.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The tightly closed chromatin state at low OFF noise genes is maintained in postmitotic neurons to prevent transcriptional signals associated with inappropriate neural identities.",
+    "claim_type": "EXPLICIT",
+    "source": "If so, this tightly closed state is maintained in postmitotic neurons where it may also prevent transcriptional signals associated with inappropriate neural identities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on the observed chromatin state and functional considerations.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The families with the highest FCR and lowest noise also had the shortest length among homeobox subfamilies.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, however, the families with the highest FCR and lowest noise also had the shortest length, while those with higher noise expression (and lower FCR) were longer (Figure 5\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5\u2014figure supplement 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The observation that long genes contribute disproportionately to neuronal transcriptional diversity is surprising because of the increased metabolic cost of expressing them.",
+    "claim_type": "EXPLICIT",
+    "source": "The observation that long genes contribute disproportionately to neuronal transcriptional diversity is surprising both because of the increased metabolic cost of expressing them (Castillo-Davis et al., 2002), and since these genes are frequent sites of genome instability associated with genetic lesions leading to autism and other developmental disorders (Wei et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a discussion point based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Long genes are frequent sites of genome instability associated with genetic lesions leading to autism and other developmental disorders.",
+    "claim_type": "EXPLICIT",
+    "source": "The observation that long genes contribute disproportionately to neuronal transcriptional diversity is surprising both because of the increased metabolic cost of expressing them (Castillo-Davis et al., 2002), and since these genes are frequent sites of genome instability associated with genetic lesions leading to autism and other developmental disorders (Wei et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Length itself may confer some advantages that outweigh other disadvantages, either through benefits provided by the diversification of alternative splicing or through regulatory features contained within intronic sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternatively, length itself may confer some advantages that outweigh other disadvantages. This could occur either through benefits provided by the diversification of alternative splicing, or through regulatory features contained within intronic sequences (Zhao et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative hypothesis about potential advantages of gene length.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The approach employed in this study provides a complementary view of neuronal diversity to that afforded by SC sequencing.",
+    "claim_type": "EXPLICIT",
+    "source": "The approach employed in this study provides a complementary view of neuronal diversity to that afforded by SC sequencing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about the methodological contribution of the study.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "By sorting and pooling ~100 cells chosen based on genetic and anatomical similarity, the study generated profiles with low noise and high depth.",
+    "claim_type": "EXPLICIT",
+    "source": "By sorting and pooling \u223c100 cells chosen based on genetic and anatomical similarity, we generated profiles with low noise and high depth, but, where tested, with a comparable degree of homogeneity, as that obtained in recent SC studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the methodological approach and its outcomes.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The fact that each transcriptome corresponds to a genetically (or retrogradely) labeled population will foster reproducible studies across investigators.",
+    "claim_type": "EXPLICIT",
+    "source": "The fact that each transcriptome corresponds to a genetically (or retrogradely) labeled population will foster reproducible studies across investigators.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the utility of the dataset for reproducibility.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The optimal granularity with which cell types may be distinguished remains an open question.",
+    "claim_type": "EXPLICIT",
+    "source": "The optimal granularity with which cell types may be distinguished remains an open question.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement acknowledging uncertainty in the field.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Pooling cell profiles either prior to sequencing or after sequencing at the clustering phase risks compromising profile homogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "Pooling cell profiles either prior to sequencing, as in this study, or after sequencing at the clustering phase, as in SC studies, risks compromising profile homogeneity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a discussion of methodological trade-offs.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Over-fragmenting clusters risks reducing the reliability and reproducibility with which populations can be distinguished across studies.",
+    "claim_type": "EXPLICIT",
+    "source": "However, over-fragmenting clusters risks the opposite problem of reducing the reliability and reproducibility with which populations can be distinguished across studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a discussion of methodological trade-offs.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Further integration of sorted cell and single-cell approaches with other modalities, such as FISH, are needed to accurately profile the full census of brain cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "Given the complementary advantages of improved reproducibility and separability afforded by pooling profiles, and of reduced heterogeneity afforded by maximally separating profiles, further integration of these approaches with other modalities, such as FISH (Moffitt et al., 2016) are needed to accurately profile the full census of brain cell types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation for future research based on the current findings.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The present dataset provides a useful resource for efforts to integrate different cell typing approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "By linking these efforts to genetically identified neurons, the present dataset provides a useful resource for these efforts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the utility of the dataset.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "FCR and DEF better separate signal-to-noise and mutual information compared to variance-based metrics like ANOVA and CV.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, they capture independent components of the differences captured by variance-based metrics like ANOVA and CV (Figure 4A, Figure 3\u2014figure supplement 1). Metrics like ANOVA are influenced jointly by signal-to-noise and mutual information, while FCR and DEF better separate them (Figure 3\u2014figure supplement 1)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations in Figure 3\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "FCR and DEF may be more broadly useful when making genome-wide comparisons across many populations.",
+    "claim_type": "EXPLICIT",
+    "source": "and so these metrics may be more broadly useful when making genome-wide comparisons across many populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion about the broader utility of the metrics.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Homeobox TFs combinatorially regulate neuronal identity in Drosophila and C. elegans.",
+    "claim_type": "EXPLICIT",
+    "source": "Historically, homeobox TFs are well known to combinatorially regulate neuronal identity in Drosophila and C. elegans (Pereira et al., 2015; Gendrel et al., 2016) and the vertebrate brainstem and spinal cord (Dasen and Jessell, 2009; Philippidou and Dasen, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Homeobox TFs combinatorially regulate neuronal identity in the vertebrate brainstem and spinal cord.",
+    "claim_type": "EXPLICIT",
+    "source": "Historically, homeobox TFs are well known to combinatorially regulate neuronal identity in Drosophila and C. elegans (Pereira et al., 2015; Gendrel et al., 2016) and the vertebrate brainstem and spinal cord (Dasen and Jessell, 2009; Philippidou and Dasen, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The results suggest a broader importance of homeobox TFs throughout the mammalian nervous system.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results suggest a broader importance of homeobox TFs throughout the mammalian nervous system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the finding that homeobox TFs can distinguish 99% of profiled cell populations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Continued expression of homeobox TFs in adult neurons suggests they likely contribute to the maintenance of neuronal identity.",
+    "claim_type": "EXPLICIT",
+    "source": "Continued expression of these factors in adult neurons suggests that they likely also contribute to the maintenance of neuronal identity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the observation of continued expression in adult neurons.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Differences in transcript length can bias differential expression analysis of RNA-seq data.",
+    "claim_type": "EXPLICIT",
+    "source": "Previously, it was reported that differences in transcript length can bias differential expression analysis of RNA-seq data (Oshlack and Wakefield, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The study used counts of reads only from within the one kbp-long 3' ends of genes for calculating expression values to avoid length bias.",
+    "claim_type": "EXPLICIT",
+    "source": "To ensure that we avoided this bias, we used counts of reads only from within the one kbp-long 3' ends of the genes for calculating expression values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological choice to avoid known biases.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The observed length biases remain highly significant even within the statistical framework proposed by Raman et al. (2018).",
+    "claim_type": "EXPLICIT",
+    "source": "Despite concerns about the rigor of this analysis (manuscript in preparation), we found that the observed length biases remain highly significant, even within this statistical framework (Figure 7\u2014figure supplement 2), suggesting that they are robust features of the transcriptional differences between neuronal populations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7\u2014figure supplement 2 applying the Raman et al. test.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The study did not measure cell-type-specific protein expression, so it cannot be sure that the long gene bias extends to the level of neuronal proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we and others did not measure cell-type-specific protein expression, and so cannot be sure that the long gene bias extends to the level of neuronal proteins.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of a limitation of the study.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Branch probabilities at most sites of alternative splicing were highly bimodal, a finding previously reported in single immune cells but not found in some single neuron studies.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, branch probabilities at most sites of alternative splicing were highly bimodal (Figure 6A), suggesting that within each GACP, splicing is largely all or none, a finding previously reported in single immune cells (Shalek et al., 2013) but not found in some single neuron studies (Gokce et al., 2016).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on the current data and comparison to cited literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The study did not directly test the contribution of NMD to transcript abundance.",
+    "claim_type": "EXPLICIT",
+    "source": "We did not directly test the contribution of NMD to transcript abundance, but our splicing results are consistent with the idea that this may be an important mechanism for regulating transcript stability and hence transcript abundance across different cell populations (Yan et al., 2015; Traunm\u00fcller et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of a limitation and a hypothesis based on the data and cited literature.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Deeper sequencing could increase the apparent contribution of differential splicing to distinguishing cell populations.",
+    "claim_type": "EXPLICIT",
+    "source": "Deeper sequencing could increase the apparent contribution of this component of neuronal diversity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about how increased sequencing depth might affect the results.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The sensitivity to detect splicing differences depends on an adequate number of junctional reads.",
+    "claim_type": "EXPLICIT",
+    "source": "the sensitivity to detect splicing differences depends on an adequate number of junctional reads.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a methodological limitation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The finding that long genes play an important role in diversifying cortical interneurons is sensible in light of the phenotypic diversity required for neuronal communication and connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "The finding that these genes play an important role in diversifying cortical interneurons (Paul et al., 2017), as well as distinguishing the larger set of populations studied here, is sensible in light of the phenotypic diversity required for neuronal communication and connectivity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the findings in the context of neuronal function, supported by cited literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Long genes may be subject to distinct modes of regulation with particular significance for neuronal diversity.",
+    "claim_type": "EXPLICIT",
+    "source": "These studies suggest the possibility that long neuronal genes are subject to distinct modes of regulation, with particular significance for neuronal diversity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation based on the observed properties of long genes and their disruption in disease.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Low noise, high FCR genes tend to be expressed later in development as neurons mature phenotypically.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to long neuronal effector genes, which tend to be expressed later in development as neurons mature phenotypically (Okaty et al., 2009), low noise, high FCR genes are frequently critical for early development.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The transposon impoverishment of Hox genes may reflect selection against transposon insertion or chromatin that is non-permissive for insertion in germ cells and the early embryo.",
+    "claim_type": "EXPLICIT",
+    "source": "This may reflect selection against transposon insertion, but may also reflect chromatin that is non-permissive for insertion in germ cells and the early embryo, where heritable transposition occurs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis about the mechanism underlying transposon impoverishment.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The high FCR/low OFF noise of many low noise genes may reflect a transcriptional signature of genes with restrictive chromatin.",
+    "claim_type": "EXPLICIT",
+    "source": "The high FCR/low OFF noise of many of these genes detected here may reflect a transcriptional signature of this class of genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis linking chromatin state to transcriptional properties.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "PcG proteins are bound to over 100 homeobox TFs in ES cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Although this regulation has been studied most extensively at Hox genes, genome-wide ChIP studies reveal that PcG proteins are bound to over 100 homeobox TFs in ES cells (Boyer et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Strong cell-type-specific repression of homeobox TFs persists in the adult brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results indicate that strong cell-type-specific repression persists in the adult brain, presumably due to the continued functional importance of preventing even partial activation of inappropriate programs of neuronal identity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the low OFF noise observed in adult neurons.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Individually, homeobox TFs contain less information about cell types than long neuronal effector genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Although individually, homeobox TFs contain less information about cell types than long neuronal effector genes, their patterns of expression are highly orthogonal and therefore their joint expression pattern is highly informative.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on comparing DEF values of individual genes to the combined DEF of homeobox TFs.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The dataset includes several Purkinje and hippocampal pyramidal cell groups that may actually represent duplicate examples of the same cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "(Note this includes several Purkinje and hippocampal pyramidal cell groups that may actually represent duplicate examples of the same cell types).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an acknowledgment of potential redundancy in the dataset.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The flip and flop variants of the AMPA receptor subunit Gria2 are known examples of alternative splicing.",
+    "claim_type": "EXPLICIT",
+    "source": "The list includes known examples like the site of the flip and flop variants of the AMPA receptor subunit Gria2 (Sommer et al., 1990).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature and confirmed in the current dataset.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Mbnl2 is known to regulate splicing in the developing brain and is known to be spliced at multiple sites.",
+    "claim_type": "EXPLICIT",
+    "source": "Another previously known example is the splicing regulator muscleblind like splicing factor 2 (Mbnl2), which is known to regulate splicing in the developing brain (Charizanis et al., 2012) and is known to be spliced at multiple sites, including the one shown in Figure 6B (Pascual et al., 2006).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on cited literature and confirmed in the current dataset.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The BPTI Kunitz domain in Aplp2 is known to regulate proteolysis of APP, the amyloid precursor protein implicated in Alzheimer's disease.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternative splicing of Amyloid precursor-like protein 2 (Aplp2) is known to regulate inclusion of a bovine pancreatic trypsin inhibitor (BPTI) Kunitz domain (Sandbrink et al., 1997) and this domain is known to regulate proteolysis of the related protein APP, the amyloid precursor protein implicated in Alzheimer's disease (Beckmann et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on cited literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Differential inclusion of the Kunitz domain exon in Aplp2 is known to occur between neurons and nonneurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Differential inclusion of this exon is known to occur between neurons and nonneurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on prior knowledge, likely from cited literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "The study expanded the number of known Kalrn variants and revealed their detailed distribution across profiled neural populations.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to expanding the number of known variants (blue exons and junctions in Figure 6D) we reveal their detailed distribution across the profiled set of neural populations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on the splicing analysis shown in Figure 6D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

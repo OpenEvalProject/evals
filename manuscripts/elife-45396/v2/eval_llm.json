@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "Codon composition affects mRNA stability in human cells, with codon regulatory properties (optimal vs. non-optimal) correlating well across multiple human cell lines (293T, HeLa, RPE, K562) and showing conservation with zebrafish and mouse. This was demonstrated using three independent methods: endogenous mRNA decay (Actinomycin D treatment), ORFome library, and SLAM-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C64 collectively demonstrate that codon composition affects mRNA stability across multiple human cell lines using three independent methodologies (Figures 1B, 1C). The strong correlations between CSC scores across cell types and methods (C56-C58, C60), including validation with published TimeLapse-seq data (C57), provide robust convergent evidence. The ORFome approach (C52) successfully isolates codon effects from UTR-mediated regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The regulatory information affecting mRNA stability is encoded in codon identity rather than nucleotide sequence. This was demonstrated using frameshift reporters that differ by a single nucleotide insertion, converting optimal to non-optimal codon composition while maintaining nearly identical nucleotide composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C65-C74 provide strong evidence through elegant frameshift reporter experiments (Figure 2A-D). The single-nucleotide frameshift design effectively isolates codon identity from nucleotide composition. Results are consistent across multiple controls: different frameshift nucleotides (C70), different fluorescent proteins (C71), different coding sequences (C72), and multiple cell lines (C73). The GFP internal control (C69) rules out toxicity artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C136"
+    ],
+    "result": "The codon-mediated mechanism depends on active translation. Translation-competent reporters enriched in optimal codons show increased stability, mRNA abundance, and protein expression compared to translation-deficient counterparts, while the opposite is true for non-optimal codons. Cycloheximide treatment dampens codon-mediated effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C75-C86 demonstrate translation-dependence through premature stop codon experiments (Figure 2E-H) and cycloheximide treatment (Figure 2\u2014supplement 1F-G). The bidirectional effects (optimal codons increase stability when translated, non-optimal decrease it) and pharmacological validation with cycloheximide provide strong mechanistic evidence. Results are consistent across multiple cell lines (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C162",
+      "C163"
+    ],
+    "result": "Synonymous codons have different effects on mRNA stability in human cells. Most amino acids possess synonymous codons with different regulatory properties (optimal vs. non-optimal), demonstrated through both endogenous mRNA analysis and reporter assays with synonymous mutations and mini-genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C109 and C162-C163 provide comprehensive evidence that codon identity, not amino acid identity, drives the effect. The data show that most amino acids have both optimal and non-optimal synonymous codons (C92, C162), validated through synonymous reporter assays (C100-C102, Figure 3C-D) and high-resolution mini-gene experiments (C103-C108, Figure 3F). The consistency across approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C164"
+    ],
+    "result": "Stabilizing (optimal) codons tend to be associated with higher tRNA levels. tRNA levels measured by two independent techniques (Hydro-tRNA-seq and TGIRT-seq) correlate with codon stability coefficients (CSC), though the correlations are modest and the two tRNA measurement methods do not strongly correlate with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C110-C114, and C164 show correlation between tRNA levels and CSC scores (Figure 3G), but acknowledge weak correlations (C112) and poor agreement between tRNA measurement methods (C113). While the correlation is statistically significant, the authors correctly note that measuring tRNA levels is challenging (C114). The modest correlation suggests tRNA levels are one factor but not the sole determinant of codon optimality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C115",
+      "C116",
+      "C117",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Stabilizing codons are associated with higher charged/total tRNA ratios. The ratio of charged tRNA to total tRNA correlates with CSC scores, with serine tRNAs being the most poorly charged and serine codons being non-optimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C115-C117, and C166-C168 demonstrate correlation between tRNA charging ratios and codon optimality (Figure 3H). The serine example (C117, C167) provides a compelling case where all nuclear-encoded serine tRNAs are poorly charged and serine codons are non-optimal across species. This suggests tRNA quality (charging state) contributes to codon optimality beyond just tRNA abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C127",
+      "C128",
+      "C129",
+      "C180"
+    ],
+    "result": "mRNAs enriched in destabilizing (non-optimal) codons tend to possess shorter poly(A)-tails. This correlation was observed in multiple human cell lines using different methods (polyadenylation status, PAL-seq, TAIL-seq).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C127-C129, and C180 demonstrate correlation between codon composition and poly(A)-tail length using multiple independent approaches (Figure 4A-B). The consistency across different cell lines and measurement techniques (polyadenylation status ratio, PAL-seq, TAIL-seq) provides robust evidence for this correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C181",
+      "C182"
+    ],
+    "result": "The poly(A)-tail is not required for codon-mediated mRNA stability. Histone-tailed reporters lacking poly(A)-tails still show codon-dependent differences in mRNA levels and protein expression in both human cells and zebrafish embryos, suggesting poly(A)-tail shortening is a consequence rather than cause of codon-mediated destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C130-C135, C181-C182 provide strong evidence through histone-tailed reporter experiments (Figure 4C-F). The reporters have precise 3' ends without poly(A)-tails (C130) yet still show codon-dependent effects (C131-C132). The consistency across human cells and zebrafish embryos (C133) and the logical inference that poly(A)-tail changes are downstream (C135, C182) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C188"
+    ],
+    "result": "The number of ribosomes loaded onto an mRNA modulates codon-mediated effects on gene expression. Reporters with UTRs driving higher translation rates show enhanced codon-mediated differences in both mRNA and protein levels compared to reporters with lower translation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C140-C144, and C188 demonstrate that translation level modulates codon effects through systematic testing of different UTRs and uORFs (Figure 5A-C). The dose-response relationship between translation rate and magnitude of codon effects (C142-C143) provides strong mechanistic insight. The experimental design with paired optimal/non-optimal reporters across different translation contexts is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "HSV-1 viral infection, which globally reduces endogenous mRNA translation, dampens the differences in mRNA levels between genes enriched in optimal versus non-optimal codons. During infection, optimal-codon-enriched genes are downregulated while non-optimal-codon-enriched genes are upregulated relative to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C150 demonstrate that global translation changes affect codon-mediated regulation using HSV-1 infection as a model (Figure 5D, Figure 5\u2014supplement 1D-F). The observation that infection dampens codon-optimality differences (C147) and causes differential regulation of optimal vs. non-optimal genes (C148-C149) is consistent with the ribosome-load hypothesis. The use of published data (C145) adds credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C153",
+      "C154",
+      "C161"
+    ],
+    "result": "Translation strongly affects mRNA stability in a codon-dependent manner in human cells, thus dictating mRNA and protein levels at homeostasis. This represents the main conclusion integrating all experimental approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C153-C154, and C161 represent the overarching conclusion supported by the comprehensive experimental evidence from multiple orthogonal approaches (endogenous decay, ORFome, SLAM-seq, reporter assays). The convergence of evidence from different methodologies, cell lines, and experimental designs provides strong support for this central claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C159",
+      "C160"
+    ],
+    "result": "The ORFome approach enables dissection of regulatory activities from coding regions versus UTRs. ORFome mRNAs show narrower expression distribution than endogenous mRNAs due to shared regulatory elements, and m6A target effects are diminished in ORFome compared to endogenous mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55, C159-C160 validate the ORFome methodology (Figure 1D-F). The narrower distribution (C50) is explained by shared promoter/UTRs (C51), and the m6A target experiment (C53-C54) demonstrates the approach successfully isolates coding sequence effects from UTR-mediated regulation. This methodological validation is important for interpreting ORFome results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "mRNAs previously defined as targets of the m6A pathway display increased decay compared to control mRNAs in SLAM-seq experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 provides validation of the SLAM-seq methodology by recapitulating known m6A effects (Figure 1F). This serves as a positive control demonstrating the technique can detect known regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Amino acid stability coefficients (ASC) show correlations with mRNA decay, but these correlations are strongly affected by removing the most abundant synonymous codon for most amino acids. For amino acids like leucine and isoleucine, the most abundant codon dominates the ASC calculation, and both would be classified as non-optimal after removing it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 provide important analysis showing that apparent amino acid effects are largely driven by the most abundant synonymous codon (Figure 3\u2014supplement 1B). This analysis strengthens the argument that codon identity, not amino acid identity, is the primary determinant. The leucine/isoleucine example (C95-C97) is particularly illustrative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C165",
+      "C169"
+    ],
+    "result": "Both tRNA level and quality (charging state) contribute to the available 'tRNA ready to go' that might dictate codon-mediated regulation of mRNA stability. Particular amino acids like serine may contribute to codon-mediated mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120, C165, and C169 synthesize the tRNA data into a mechanistic model. The 'tRNA ready to go' concept (C120, C169) integrates both abundance and charging state. While speculative elements exist (C119), the model is well-supported by the tRNA level and charging data (Figures 3G-H).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "Translational elongation, which may be influenced by tRNA abundance, is correlated with mRNA stability kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 represent reasonable inferences from the data and prior literature. The correlation between tRNA levels and codon optimality (Figure 3G), combined with translation-dependence (Figure 2), supports this mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C170"
+    ],
+    "result": "There is a wealth of regulatory information residing within the coding sequence, and this study provides insight on the regulatory role of core components such as tRNAs and ribosomes. tRNAs are master gene regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 and C170 represent valid conclusions from the study's findings. The demonstration that coding sequences contain regulatory information beyond amino acid specification (C156) and that tRNAs and ribosomes play regulatory roles (C157, C170) are well-supported by the comprehensive data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C184",
+      "C185"
+    ],
+    "result": "Codon-mediated mRNA stability can be affected by altering translational level through either global changes in translation efficiency (viral infection) or specific UTR sequences, suggesting an alternative way for cells to differentially regulate gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C185 synthesize the UTR and viral infection experiments (Figure 5) into a broader regulatory model. The evidence from both cis-acting (UTRs) and trans-acting (viral infection) modulators of translation supports this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Codon optimality might be a slowness-mediated decay (SMD) mechanism similar to slow-go-decay (SGD), distinct from no-go-decay (NGD). The molecular mechanisms remain poorly characterized, and the role of DDX6 (vertebrate ortholog of yeast Dhh1p) in codon optimality is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C173-C179 discuss mechanistic models and knowledge gaps. While the SMD/SGD model (C173-C174) is proposed based on prior work, the authors acknowledge the mechanisms are poorly characterized (C177) and the role of DDX6 is unclear (C179). These represent reasonable speculation but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C87",
+      "C88",
+      "C89",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C137",
+      "C151",
+      "C152",
+      "C155"
+    ],
+    "result": "Background claims establishing prior knowledge about mRNA translation, stability, degradation, and codon optimality in model organisms, as well as general facts about mRNA structure and ribosome function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C45, C87-C89, C121-C126, C137, C151-C152, and C155 represent established knowledge from prior literature, properly cited throughout. These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C59",
+      "C158",
+      "C171",
+      "C172",
+      "C183",
+      "C186",
+      "C187",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Statements about future research directions, including the need to understand tRNA regulation, explore disease relevance, investigate molecular mechanisms, and integrate multiple regulatory layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59, C158, C171-C172, C183, C186-C187, C189-C192 represent speculation about future research directions. While reasonable based on the findings, these are proposals rather than demonstrated results and should not be evaluated as supported or unsupported findings.",
+    "result_type": "MINOR"
+  }
+]

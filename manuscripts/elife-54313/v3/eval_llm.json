@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Monkeys performed a value-based decision-making task where visual stimuli predicted juice rewards of different amounts and types. Behavioral analysis showed that monkeys chose higher-value options >90% of the time, with value (not reward type) being the primary driver of choice, and reaction times decreased with increasing value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging behavioral evidence that the task was learned and value was the primary decision variable. Statistical analyses with specific coefficients and p-values support that reward type had minimal influence on choice compared to value, and reaction time data confirm value expectations were maintained across delays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Neural recordings were obtained from OFC (798 units) and ACC (315 units) across multiple sessions in two monkeys, with data pooled across subjects after confirming similar basic encoding and decoding results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 describe the neurophysiological recording methods and data pooling procedures. The sample sizes are clearly stated, and the justification for pooling data (similar results across monkeys except for type encoding in ACC) is provided with reference to supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The majority of OFC (73.2%) and ACC (77.8%) neurons encoded value after the reward-predicting cue, with encoding peaking after cue presentation and decreasing until reward. Reward type was weakly encoded (29.8% OFC, 37.1% ACC). Value encoding onset was earlier in OFC than ACC by ~100ms, with significantly shorter latencies in OFC for both value and type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 provide comprehensive single-unit encoding results with specific percentages and statistical tests. The temporal dynamics are well-characterized with appropriate statistical comparisons between regions (chi-square, Kruskal-Wallis tests with specific p-values). Results are replicated across monkeys (C18), strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Population decoding with a ridge classifier showed significant value decoding throughout the delay in both regions, with OFC showing earlier (100ms) and higher peak accuracy (93.5% vs 77.6%) compared to ACC. The sensitivity index d' was higher in OFC (0.26) than ACC (0.22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 present population-level decoding results with appropriate statistical validation (permutation testing, p<0.01). Specific accuracy values and timing differences between regions are provided. The d' analysis (C22) provides mechanistic insight into why OFC shows better decoding. Results were replicated in each monkey independently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Value encoding showed sequential organization with different neurons encoding at different times during the delay (tiling pattern). This pattern was consistent between training and testing data, with peak encoding times significantly correlated and not uniformly distributed, consistent with sequential encoding models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 demonstrate sequential encoding through sorting analyses validated with train-test splits. The correlation between training and testing peak encoding times (C29) provides statistical support. The non-uniform distribution (C27-C28) is interpreted in the context of theoretical models with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Most neurons encoded value for only a small fraction of the delay: only 6.9% (OFC) and 10.2% (ACC) encoded for >50% of the delay, and <1% encoded type for that duration. The distribution of encoding duration did not differ between regions for value but showed a tendency for longer type encoding in ACC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 quantify encoding duration with specific percentages and statistical tests (Kolmogorov-Smirnov). The finding that most neurons have transient encoding is well-supported by the data, though the regional difference for type encoding (C34) is noted as a tendency with marginal significance (p=0.025).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cross-temporal decoding revealed mixed dynamics: OFC showed somewhat stable representation from 500ms after cue until response cue, but remained dynamic before and after. Population trajectory speed analysis showed dynamic activity triggered by task events with stable periods between events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 describe population dynamics using cross-temporal decoding and trajectory speed analyses. The characterization of mixed stable/dynamic periods is supported by the data, though the interpretation (C38) is somewhat qualitative. The methods are appropriate for assessing representational stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A three-dimensional value subspace combined with ensemble selection (107/798 OFC units, 71/315 ACC units) extracted highly stable value representations across time. The combination of subspace and ensemble methods yielded the most stable representations, demonstrating that stable representations exist within the population despite apparent dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 describe sophisticated analysis methods that successfully extract stable representations. The nested cross-validation approach (mentioned in methods) ensures independence of training/testing data. The finding that smaller ensembles perform better (C41-C42) is well-explained. This is a key methodological and conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Dynamic ensembles optimized for temporal locality showed strongly local value representations confined to the diagonal in cross-temporal decoding. These dynamic ensembles had chance-level overlap with stable ensembles (\u03c7\u00b2 test, p\u22640.01), demonstrating that stable and dynamic representations coexist in separate subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 demonstrate that dynamic representations can be extracted from the same population using different optimization criteria. The statistical test of ensemble overlap (C49) with appropriate multiple testing correction provides strong evidence for independence of stable and dynamic subpopulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Time could be accurately predicted from neural population activity using linear regression, supporting robust temporal encoding in both OFC and ACC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 provides direct evidence for temporal encoding through regression analysis shown in Figure 6B. This complements the dynamic encoding findings and supports the interpretation that populations encode both value and time information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Single-unit encoding strength and duration correlated with value subspace weights, with a combined stability measure showing the strongest correlation. Contributions to stable ensembles correlated with encoding properties, while contributions to dynamic ensembles did not correlate (but were not anti-correlated) with stability measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 link single-unit properties to population-level contributions using Spearman correlations. The analyses appropriately use rank-based methods and the lack of anti-correlation (C55) provides insight that dynamic contributions are not simply the absence of stable encoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study proposes that mixed dynamics\u2014with both stable and temporally-specific value representations\u2014provide a critical mechanism for flexible cognition. Stable representations allow reliable readout at any time, while dynamic representations enable temporal anticipation and behavioral preparation. These may represent extremes of a continuous spectrum of dynamical regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C74 present the main theoretical interpretation of the findings. While the data support the existence of mixed dynamics (C66), the functional claims (C67-C72) are largely speculative. The proposal of a continuous spectrum (C73) is reasonable but not directly tested. Citation to previous work on diverse time constants (C74) provides some support but the functional significance remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C113"
+    ],
+    "result": "Value signals were robust in both regions, while reward type was weakly represented. Approximately 13% of units showed non-linear value encoding. Value representations follow a similar format to other continuous variables (time, space, numerosity) with both monotonic and non-monotonic encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80, C82, C113 characterize the heterogeneity of value encoding. The quantification of non-linear encoding (13%) is specific and the comparison to other continuous variables (C82) is well-supported by citations. The observation of individual differences in type encoding (C79) is noted but appropriately qualified as suggestive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "OFC and ACC show similar mixed dynamics but differ in timing: value encoding was ~100ms earlier in OFC, and OFC showed higher initial decoding accuracy while ACC had more neurons encoding during the delay. Despite these differences, both regions encode value in time-sensitive and time-insensitive manners, suggesting similar underlying mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 provide a comparative analysis of the two regions. The temporal differences (C106-C107) are well-supported by the data. The interpretation that underlying mechanisms are similar (C110) is reasonable given the similar mixed dynamics (C109), though this remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Value representations remained stable until the joystick instruction cue in standard CTD, but subspace methods extracted representations stable across the intervening task. This differs from previous studies where intervening tasks disrupted representations, possibly due to the non-overlapping nature of value and joystick information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 address the robustness of value representations to intervening tasks. The finding that subspace methods extract stable representations (C100) is well-supported. The comparison to previous work (C102-C103) and proposed explanation (C104) are reasonable, though the mechanistic explanation remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Sequential activity patterns were observed, particularly early in the delay, which may coincide with stimulus processing. This type of sequential encoding has not been previously reported in primate prefrontal cortex during working memory tasks, possibly because it has not been the focus of analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C96 discuss sequential encoding in the context of previous literature. While the tiling patterns (shown in earlier claims) support some sequential organization, the characterization as true sequential activity (C89-C90) and the novelty claim (C92) are somewhat uncertain. The interpretation linking sequencing to stimulus processing (C95) is speculative though supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C75",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study is contextualized within competing theories of working memory: persistent/stable activity, dynamic/activity-silent encoding, and sequential activation. Previous computational models have shown these properties can be combined in single networks, and recent theories suggest the balance depends on task requirements rather than architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65, C75, C81, C84-C88 provide theoretical background with appropriate citations. These are primarily literature review claims that accurately represent the state of the field and provide context for the current findings. The citations appear appropriate and the characterizations are fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Rich representations of expected values are critical for adaptive learning, and the mixed dynamics could play an important role in conveying both general and temporally specific value expectations to areas involved in goal-directed behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 make broad functional claims about the importance of the findings. While plausible, these claims are speculative and not directly tested. The proposed role in conveying information to downstream areas (C112) is reasonable but remains hypothetical without connectivity or causal manipulation data.",
+    "result_type": "MAJOR"
+  }
+]

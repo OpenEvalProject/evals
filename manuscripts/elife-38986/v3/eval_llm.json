@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "CCPAP tumors were identified as metabolic outliers in a ccRCC dataset through t-SNE analysis, confirmed by pathological review, and distinguished by approximately 30-fold accumulation of sorbitol. Validation in an independent cohort showed CCPAP samples form a distinct metabolic cluster from ccRCC, with clustering driven by metabolic features beyond sorbitol alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from discovery (C1-C3) and validation (C4-C5) cohorts. The t-SNE analysis is supported by visual data (Figures 1A-B), pathological confirmation (C2), and metabolomic measurements (C3). The control experiment with high-sorbitol ccRCC samples (C5) strengthens the conclusion that CCPAP's distinct clustering reflects broader metabolic differences beyond sorbitol alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "CCPAP exhibits a distinct metabolic profile with 200 differentially abundant metabolites compared to ccRCC (152 vs. normal tissue), characterized by elevated sorbitol (8.5-fold vs. ccRCC, 36-fold vs. normal), other sugar alcohols (4-fold), glutathione (>12-fold), and ophthalmate (4-fold), alongside broad downregulation of glycerophosphoethanolamines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 are supported by comprehensive metabolomic profiling with appropriate statistical testing (Mann-Whitney with FDR correction, q<0.1). The measurements are quantitative, internally consistent, and show clear patterns of metabolic reprogramming. Multiple independent metabolite classes support the conclusion of distinct CCPAP metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CCPAP tumors show distinct glycolytic and polyol pathway metabolism compared to ccRCC: normal levels of upper glycolysis metabolites (G6P, F6P) but >30-fold elevation of polyol pathway metabolites (sorbitol, fructose) and elevated NADH/NAD ratio, suggesting preferential carbon flux through the polyol pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by metabolomic measurements mapped onto metabolic pathways (Figure 2B). The pattern of normal upper glycolysis with elevated polyol pathway metabolites and NADH/NAD ratio is internally consistent and supported by additional analysis of NAD-dependent reactions (Figure 2\u2014supplement 2). However, the authors appropriately note that metabolite abundance does not directly measure flux.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CCPAP tumors exhibit severe mitochondrial dysfunction characterized by mtDNA depletion (among lowest 4 samples in TCGA), >2-fold reduction in mtRNA vs. ccRCC, >3-fold reduction vs. normal tissue, downregulation of 411 nuclear-encoded mitochondrial genes, and downregulation of oxidative phosphorylation gene sets with upregulation of hypoxic response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 provide multiple converging lines of evidence for mitochondrial dysfunction from TCGA data: mtDNA copy number (C22), mtRNA expression (C23-C24), nuclear-encoded mitochondrial gene expression (C25), and pathway analysis (C20-C21). The statistical tests are appropriate (Mann-Whitney p=0.016, t-test p=0.0002 and p=10^-6), and the findings are internally consistent across different analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "CCPAP tumors show reduced levels of mitochondria-dependent metabolites: 3.5-fold reduction in aspartate and 4-fold reduction in fumarate relative to normal tissue, consistent with impaired mitochondrial respiratory chain function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by metabolomic measurements (Figure 3D) and are consistent with the broader pattern of mitochondrial dysfunction established by other claims. The metabolites selected (aspartate, fumarate) are appropriate markers of mitochondrial function, and the reductions are substantial and statistically significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "CCPAP tumors have a remarkably quiet nuclear genome characterized by low mutational burden compared to ccRCC, wild-type VHL and TCEB1 in all samples, no recurrently mutated genes, and minimal copy number alterations (no arm-level changes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by comprehensive genomic analysis including WGS (n=5) and WES (n=5 including TCGA). The findings are visualized in Figure 4A-C and show consistent patterns across samples. The FACETS algorithm for copy number analysis is appropriate and well-cited. The absence of recurrent alterations is a negative finding but is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CCPAP tumors show ~10-fold mtDNA depletion relative to normal kidney without evidence of causative genetic alterations: no mutations in mtDNA maintenance genes, no differential expression of maintenance genes, and <1 non-synonymous mtDNA mutation per tumor (all missense, non-deleterious) by ultra-deep sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 systematically rule out common genetic causes of mtDNA depletion through multiple approaches: nuclear gene mutations (C33), gene expression changes (C34), and mtDNA mutations (C35-C36). The ultra-deep duplex sequencing (C35) is a rigorous method for detecting low-frequency variants. The ~10-fold depletion (C32) is well-quantified from sequencing data. The negative findings are appropriately interpreted as suggesting cryptic or non-genetic mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "CCPAP tumors co-localize with adjacent-normal kidney tissue rather than ccRCC tumors in principal components analysis of DNA methylation data, suggesting CCPAP resembles normal kidney from a methylation perspective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by PCA analysis of TCGA 450K methylation data (Figure 5\u2014supplement 1B) from 4 CCPAP samples. The analysis is appropriate and the finding is clearly visualized. However, the sample size is small (n=4) and the interpretation is limited to methylation patterns at CpG islands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "CCPAP tumors show significantly reduced protein expression of both mtDNA-encoded (MT-CO1) and nuclear-encoded mitochondrial (TOM20) proteins by immunohistochemistry, with CCPAP having the lowest MT-CO1 H-score among RCC subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by quantitative IHC analysis (Figure 5A-B) with appropriate statistical testing (t-test, p<0.01 to p<0.0001). The findings validate the transcriptomic and metabolomic evidence of mitochondrial dysfunction at the protein level. The tissue microarray analysis (C39) provides broader context across RCC subtypes (n=11 CCPAP, n=7 ccRCC, n=2 pRCC, n=4 chRCC, n=4 oncocytoma).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CCPAP tumors exhibit elevated oxidative stress markers including upregulated miR200 family, highest 8-oxo-dG H-score among RCC subtypes by IHC, but without enrichment of C:G>A:T mutations, suggesting oxidative stress is being managed by cellular stress responses without causing excess oxidative DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide converging evidence for oxidative stress (C40-C42) with an important caveat about mutation signatures (C43). The miRNA analysis (C40) is consistent with prior literature, IHC quantification (C41-C42) shows significant differences (p<0.05), and mutation signature analysis (C43) appropriately distinguishes oxidative stress from oxidative DNA damage. The interpretation that stress responses prevent mutagenesis is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CCPAP and ccRCC both contain cytoplasmic glycogen (PAS/PAS-diastase positive), but CCPAP tumors are Oil Red O negative and depleted of lipid classes by metabolomics, indicating cytoplasmic clarity in CCPAP arises from glycogen rather than lipid accumulation as in ccRCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 integrate histochemical staining (C44-C45, Figure 5E) with metabolomic data (C46-C47) to explain the morphological feature of cytoplasmic clarity. The evidence is internally consistent: both tumor types have glycogen, but only ccRCC has lipids. The conclusion (C48) is well-supported by the combination of techniques, though it is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "CCPAP tumors do not show elevated lactate or other glycolytic intermediates relative to normal tissue or ccRCC, indicating absence of compensatory upregulation of glycolysis despite mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by metabolomic measurements (Figure 2, source data 1). This negative finding is important as it distinguishes CCPAP from classical Warburg metabolism and is consistent with the indolent nature of these tumors. The measurement is straightforward and the interpretation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "CCPAP tumors resemble collecting duct cells based on transcriptomic comparison with microdissected mouse kidney regions, consistent with positive staining for collecting duct marker 34BE12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by transcriptomic correlation analysis (Figure 5\u2014supplement 3) and prior IHC literature (C70). The approach of comparing tumor profiles to normal kidney cell types is reasonable for inferring cell-of-origin. However, the cross-species comparison (human tumors to mouse kidney) introduces some uncertainty, and the IHC evidence (C70) is from prior literature rather than this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CCPAP tumors exhibit a comprehensive molecular phenotype characterized by severe mtDNA/mtRNA depletion, high oxidative stress, distinct sorbitol accumulation, and shift away from respiratory metabolism, despite a largely wild-type nuclear genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 represent summary statements integrating multiple lines of evidence from other claim groups. Each component is well-supported by the detailed claims: mtDNA/RNA depletion (C22-C25, C32), oxidative stress (C11-C12, C40-C42), sorbitol accumulation (C3, C8-C9, C77), and respiratory dysfunction (C20-C27). The integration is appropriate and represents the major conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Prior literature establishes CCPAP as a rare, indolent RCC subtype initially described in ESRD but also occurring in normal kidney function, characterized by distinctive morphology (linear nuclear orientation, low-grade features), absence of VHL/3p deletion and pRCC-associated chromosomal changes, with no identified genetic drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 summarize prior literature on CCPAP clinical and molecular features. All claims are appropriately cited to peer-reviewed publications (Tickoo 2006, Rohan 2011, Gobbo 2008, Williamson 2013, Ross 2012, Adam 2011, Lawrie 2014). This background information provides essential context for the current study's findings. The citations appear appropriate and the characterization is consistent with the referenced literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Nearly 8% of tumors in the institution's prospective sequencing cohort show no alterations in 341 cancer-associated genes, illustrating the prevalence of cancers without identifiable genetic drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by data from the institution's MSK-IMPACT clinical sequencing cohort (Zehir et al., 2017). This provides important context for why non-genomic profiling approaches are valuable. The statistic is clearly stated and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Prior literature establishes that metabolic enzyme mutations (FH, SDH, IDH) and mitochondrial dysfunction are recurrent themes in cancer biology, with specific relevance to RCC subtypes (ccRCC with VHL/HIF, chRCC/oncocytomas with mtDNA mutations), and that mtDNA depletion can result from nuclear gene mutations in hereditary disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 provide literature context on metabolic reprogramming in cancer and RCC. All claims are appropriately cited to peer-reviewed publications (Wallace 2012, Warburg 1956, Vyas 2016, Zong 2016, Grandhi 2017, Joshi 2015, El-Hattab 2013, Esterhuizen 2017). This background establishes the conceptual framework for interpreting CCPAP's metabolic phenotype within the broader context of cancer metabolism and RCC biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Prior literature shows CCPAP displays HIF activation despite wild-type VHL/TCEB1, with speculation that oxidative stress could inhibit PHD activity to stabilize HIF, and that both HIF activation and oxidative stress can cause mtDNA depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is supported by prior literature (Rohan 2011), but C72 is explicitly speculative (\"Conceivably...\") and based on cited mechanisms (Mansfield 2005, Pan 2007) rather than direct evidence in CCPAP. Claim C73 cites literature on causes of mtDNA depletion but doesn't demonstrate these mechanisms operate in CCPAP. The causal relationships proposed are plausible but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Elevated glutathione is observed across many RCC histologies, but the oxidative stress response is particularly pronounced in CCPAP tumors, though this cannot distinguish CCPAP from other RCC subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 appropriately contextualize the glutathione findings. C79 is well-cited to prior literature (Hakimi 2016, Gopal 2018, Priolo 2018), and C80 is supported by the metabolomic and IHC data in this study (C11-C12, C41-C42). The authors appropriately note the limitation that oxidative stress markers alone cannot distinguish CCPAP from other RCC types.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1601 @@
+{
+  "submission": {
+    "id": "cff69646-388c-41d2-9d10-80fe9cccdf3f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:50:08.079508Z",
+    "updated_at": "2025-12-02T10:50:08.079508Z"
+  },
+  "content": [
+    {
+      "id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "submission_id": "cff69646-388c-41d2-9d10-80fe9cccdf3f",
+      "content_type": "manuscript",
+      "content_text": "# Hemodynamic-mediated endocardial signaling controls in vivo myocardial reprogramming\n\n## Authors\n\n- Manuel G\u00e1lvez-Santisteban<sup>1</sup> ([ORCID: 0000-0003-3804-1513](https://orcid.org/0000-0003-3804-1513))\n- Danni Chen<sup>1</sup>\n- Ruilin Zhang<sup>2</sup>\n- Ricardo Serrano<sup>3</sup>\n- Cathleen Nguyen<sup>3</sup>\n- Long Zhao<sup>4</sup>\n- Laura Nerb<sup>1</sup>\n- Evan M Masutani<sup>1</sup>\n- Julien Vermot<sup>5</sup> ([ORCID: 0000-0002-8924-732X](https://orcid.org/0000-0002-8924-732X))\n- Charles Geoffrey Burns<sup>4</sup> ([ORCID: 0000-0002-5812-6621](https://orcid.org/0000-0002-5812-6621))\n- Caroline E Burns<sup>4</sup>\n- Juan C del \u00c1lamo<sup>3</sup>\n- Neil C Chi<sup>1</sup> ([ORCID: 0000-0003-2324-3796](https://orcid.org/0000-0003-2324-3796)) \u2020\n\n### Affiliations\n\n1. Department of Medicine, Division of Cardiology University of California, San Diego La Jolla United States\n2. State Key Laboratory of Genetic Engineering, School of Life Sciences Fudan University Shanghai China\n3. Mechanical and Aerospace Engineering Department University of California, San Diego La Jolla United States\n4. Department of Medicine, Cardiovascular Research Center Massachusetts General Hospital and Harvard Medical School Charlestown United States\n5. Institut de G\u00e9n\u00e9tique et de Biologie Mol\u00e9culaire et Cellulaire Centre National de la Recherche Scientifique, UMR7104, INSERM U964, Universit\u00e9 de Strasbourg Illkirch France\n6. Institute for Engineering in Medicine University of California, San Diego La Jolla United States\n7. Institute of Genomic Medicine University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLower vertebrate and neonatal mammalian hearts exhibit the remarkable capacity to regenerate through the reprogramming of pre-existing cardiomyocytes. However, how cardiac injury initiates signaling pathways controlling this regenerative reprogramming remains to be defined. Here, we utilize in vivo biophysical and genetic fate mapping zebrafish studies to reveal that altered hemodynamic forces due to cardiac injury activate a sequential endocardial-myocardial signaling cascade to direct cardiomyocyte reprogramming and heart regeneration. Specifically, these altered forces are sensed by the endocardium through the mechanosensitive channel Trpv4 to control Klf2a transcription factor expression. Consequently, Klf2a then activates endocardial Notch signaling which results in the non-cell autonomous initiation of myocardial Erbb2 and BMP signaling to promote cardiomyocyte reprogramming and heart regeneration. Overall, these findings not only reveal how the heart senses and adaptively responds to environmental changes due to cardiac injury, but also provide insight into how flow-mediated mechanisms may regulate cardiomyocyte reprogramming and heart regeneration.\n\n## Introduction\n\nWhen confronted with pathological or physiological stress, tissues and organs can respond through the adaptive reprogramming of differentiated cell-types, which leads to repair in some instances and disease in others (Jessen et al., 2015; Lin et al., 2017; Yui et al., 2018). In the case of the heart, which experiences a vast array of environmental demands throughout life, cardiomyocytes (CM) also retain the capacity to adaptively reprogram and alter their fate in response to myocardial damage (Bloomekatz et al., 2016). In mammals, this reprogramming can lead to CM de-differentiation by activating cardiac developmental transcription factors to adaptively create more CMs for regenerating neonatal hearts via proliferation (Porrello et al., 2011). Moreover, while zebrafish ventricular CMs can de-differentiate to produce more of these CMs during heart regeneration in a manner similar to neonatal mammalian hearts (Jopling et al., 2010; Kikuchi et al., 2010), zebrafish atrial CMs also retain sufficient plasticity to trans-differentiate in order to create new ventricular CMs for regenerating cardiac ventricles (Zhang et al., 2013). Although several signaling cues including Notch, BMP and Erbb2 participate in modulating heart regeneration (D'Uva et al., 2015; Gemberling et al., 2015; Mahmoud et al., 2015; M\u00fcnch et al., 2017; Polizzotti et al., 2015; Wu et al., 2016; Xiang et al., 2016; Zhang et al., 2013; Zhao et al., 2014), how cardiac injury activates these pathways to initiate CM reprogramming and heart regeneration remains to be elucidated.\n\nRecent studies have revealed that biomechanical forces generated by blood flow can contribute significantly to heart development through modulating Notch, BMP and Erbb2 signaling pathways (Dietrich et al., 2014; Goddard et al., 2017; Heckel et al., 2015; Lee et al., 2016; Peshkovsky et al., 2011; Rasouli and Stainier, 2017; Samsa et al., 2015; Steed et al., 2016; Vermot et al., 2009). During mammalian and zebrafish cardiac valve development, hemodynamic forces activate the endocardial flow-sensitive transcription factor Klf2 as well as Notch signaling to sculpt the atrio-ventricular valve (Goddard et al., 2017; Heckel et al., 2015; Steed et al., 2016; Vermot et al., 2009). Additionally, these forces regulate not only endocardial Notch signaling but also myocardial Erbb2 signaling to promote the proliferation and migration of CMs during cardiac trabeculation (Lee et al., 2016; Peshkovsky et al., 2011; Rasouli and Stainier, 2017; Samsa et al., 2015). Based on these findings, we thus further explored whether altered blood flow forces during cardiac injury may similarly activate these signaling pathways to control myocardial reprogramming and regeneration. Employing in vivo imaging and biophysical assays, we precisely monitored the dynamic intracardiac blood flow changes in the injured zebrafish heart, and furthermore, measured their biophysical impact on the cardiac chamber walls using hemodynamic-responsive transgenic reporters. Consequently, we discovered that zebrafish ventricle-injured hearts display altered oscillatory hemodynamic flow, which can be sensed by the endocardium through the mechanosensitive channel Trpv4 and transduced to activate Notch signaling. This endocardial Notch signaling can in turn non-cell autonomously initiate myocardial Erbb2 and BMP signaling to promote cardiomyocyte reprogramming and heart regeneration, whereas its inhibition through either using tissue-specific genetic-based strategies or altering blood flow impairs this reparative event. Altogether, these results reveal a Trpv4-mediated biomechanical signaling pathway that is able to sense and transduce hemodynamic alterations during cardiac injury to activate cardiomyocyte reprogramming responses that mediate cardiac regeneration.\n\n## Results\n\n### Endocardial Notch signaling controls myocardial reprogramming\n\nBecause recent studies have suggested that Notch signaling may be initiated early in response to cardiac injury in order to regulate heart regeneration (M\u00fcnch et al., 2017; Zhang et al., 2013; Zhao et al., 2014), we investigated how cardiac injury may activate Notch signaling and furthermore how this signaling pathway controls CM reprogramming and heart regeneration. Using a Tg(Tp1:eGFP) Notch reporter line, we initially examined the activation of Notch signaling in vmhc:mCherry-nitroreductase (NTR) hearts that were ventricle-ablated with metronidazole (MTZ) treatment at 5 dpf. Consistent with previous studies (Zhang et al., 2013), MTZ treatment results initially in extensive CM death within the ventricle as detected by TUNEL staining (Figure 1\u2014figure supplement 1A\u2013C), and then a subsequent CM proliferative response in both ventricle and atrium as detected by both phospho-histone H3 studies and EdU staining (Figure 1A\u2013E,L\u2013P, Figure 1\u2014figure supplement 1D\u2013F). As a result, this CM proliferation leads to recovery of both ventricular tissue and contractile function at 96 hr post-MTZ treatment (hpt) (Figure 1\u2014figure supplement 1G,H). Moreover, while differentiated atrial CMs cannot contribute to uninjured hearts at this stage (Foglia et al., 2016) (Figure 1\u2014figure supplement 2), they do trans-differentiate into new ventricular CMs which help to recover the injured ventricle as previously reported (Zhang et al., 2013) (Figure 1G,H). In line with previous Notch signaling studies during cardiac regeneration (Zhang et al., 2013), we discovered elevated Tp1:eGFP Notch reporter signaling activity throughout these vmhc:mCherry-NTR ventricle-ablated hearts (Figure 1\u2014figure supplement 3A,B). To further examine the dynamic activity of Notch signaling, we then utilized a Tg(Tp1:d2GFP) Notch reporter line, which expresses a destabilized d2GFP as previously reported (Han et al., 2016), together with the kdrl:ras-mCherry endocardial/endothelial reporter line. We observed that endocardial Notch activity is specifically elevated in the endocardium within the AVC and its surrounding atrial and ventricular regions but reduced furthest away from the AVC (Figure 1\u2014figure supplement 3C,D). Confirming these findings, we also detected by in situ hybridization that notch1b is also expressed in a similar pattern in ventricle-injured hearts (Figure 1\u2014figure supplement 3E,F). Moreover, this injury-induced endocardial Notch activity peaks at 24 hpt but diminishes as the heart regenerates (Figure 1\u2014figure supplement 3G). By 96 hpt, this Notch activity in the ablated hearts returns to levels similarly observed in control hearts (Figure 1\u2014figure supplement 3G) and correlates to when ventricular tissue and contractility have recovered (Figure 1\u2014figure supplement 1G,H).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013D, L\u2013O) Confocal microscopy imaging of heat-shocked/HS (A, B, L, M) vmhc:mCherry-NTR, (C, D) vmhc:mCherry-NTR; hsp70l:dnM and (N, O) vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM hearts reveals that (D) global or (O) endocardial-specific dnMAML (dnM) Notch inhibition inhibits CM proliferation in ventricle-ablated hearts at 48 hpt (7 dpf) when compared to (B, M) CM proliferation in control ventricle-ablated (no dnMAML) hearts. White \u2013 anti-phospho-histone H3 immunostaining; red \u2013 anti-MF-20 immunostaining. Arrows point to proliferating CMs. (E, P) Quantitation of anti-phospho-histone H3+ CMs in these hearts confirms that (E) global or (P) endocardial-specific dnM Notch inhibition prevents CMs from proliferating in injured hearts (n\u00a0=\u00a023, control dnM-; 31, MTZ dnM-; 10, control dnM+; 18, MTZ dnM+; 16, control RSdnM-; 16, MTZ RSdnM-; 15, Control RSdnM+; 15, MTZ RSdnM-). Red bars \u2013 ventricle; green bars \u2013 atrium; dark bars \u2013 control sham-ablated hearts; light bars \u2013 ventricle-ablated hearts. (F, Q) Quantitation of the percentage of heat-shocked vmhc:mCherry-NTR, vmhc:mCherry-NTR; hsp70l:dnM and vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM ventricle-ablated hearts that display recovered ventricular tissue and contractility (black bars) at 96 hpt (nine dpf) shows that (F) global or (Q) endocardial-specific Notch inhibition between 0\u00a0and\u00a01 dpt leads to the greatest inhibitory effect on overall recovery from ventricle injury. The number of fish analyzed for each condition is indicated above each column. (G\u2013K) To examine the effects of Notch signaling on cardiac reprogramming, (G, H) vmhc:mCherry-NTR; amhc:CreERT2; myl7:CSY and (I, J) vmhc:mCherry-NTR; amhc:CreERT2; myl7:CSY; hsp70l: dnMAML (dnM) hearts were exposed to tamoxifen at 5 dpf to genetically\u00a0label atrial CMs with YFP (c-aYFP), then (G, I) sham-ablated (control) or (H, J) ventricle-ablated, and finally heat-shocked to (I, J) induce dnM expression. Confocal microscopy imaging at 72 hpt (8 dpf) reveals that (J) heat-shock induction of dnM inhibited the ability of genetically\u00a0labeled c-aYFP+ atrial CMs to contribute to the regeneration of ventricle-ablated hearts when compared to (H) heat-shock control ventricle-ablated hearts. Yellow channel \u2013 (G\u2019\u2013J\u2019) genetically\u00a0labeled c-aYFP+ atrial CMs. (K) Quantitation of the percentage of ventricular area covered with c-aYFP+ CMs supports that dnMAML Notch inhibition prevents atrial CMs from regenerating the injured ventricle (n\u00a0=\u00a08 hsp70:dnM-, seven hsp70l:dnM+). All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post MTZ/DMSO treatment. Dashed lines outline the heart. Bar: 50 \u03bcm. (E, P) Mean\u00a0+\u00a0s.e.m. ANOVA; (K) Mean\u00a0+\u00a0s.d. Student\u2019s t-test; (F, Q) Total numbers, Binomial test (versus 0 dpt); ns: p>0.05; *: p<0.05; **: p<0.01; ***: p<0.001; ****: p<0.0001. The following figure supplements are available for Figure 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Following ventricular ablation, ventricular and atrial cardiomyocyte proliferation leads to cardiac recovery at 96 hpt. (A, B) Confocal maximum intensity projections of Tg(vmhc:mCherry-NTR) fish show extensive cell death as detected by TUNEL staining in the ventricles of (B) MTZ-treated fish when compared with (A) DMSO-treated controls at 24 hpt. (C) Quantitation of TUNEL-positive CMs in the ventricle of control (n\u00a0=\u00a015) and ablated (n\u00a0=\u00a013) fish hearts at 24 hpt confirms cell death is induced by MTZ treatment. (D, E) Confocal maximum intensity projections of Tg(cmlc2:GFP; vmhc:mCherry-NTR) fish show increased proliferation of CMs as detected by EdU+/cmlc2:GFP+ double positive staining (white arrows) in the ventricles and atria of (E) MTZ-treated fish when compared with (D) DMSO-treated controls at 48 hpt. Yellow arrows point to EdU+ proliferating non-cardiomyocytes. (D\u2019, E\u2019) Single confocal sections show EdU+ proliferating cells. (F) Quantitation of EdU+/cmlc2:GFP+ double positive CMs in the ventricle or atrium of control (n\u00a0=\u00a012) and ablated (n\u00a0=\u00a012) fish hearts at 48 hpt confirms increased proliferation in ventricle-ablated hearts. (G) Quantitation of ventricular area shows loss of myocardial ventricular tissue in Tg(vmhc:mCherry-NTR) MTZ-treated fish at 24 hpt (n\u00a0=\u00a012) when compared to control non-ablated fish (n\u00a0=\u00a07). At 96 hpt, Tg(vmhc:mCherry-NTR) MTZ-ablated hearts show recovery of ventricular area (n\u00a0=\u00a08, control; n\u00a0=\u00a09, ablated). (H) Quantitation of ventricular fractional area change (FAC) reveals decreased ventricular function in Tg(vmhc:mCherry-NTR) MTZ-treated fish at 24 hpt (n\u00a0=\u00a09) when compared to control non-ablated fish (n\u00a0=\u00a06). At 96 hpt, Tg(vmhc:mCherry-NTR) MTZ-ablated hearts (n\u00a0=\u00a05) dispaly comparable ventricular function to that of control hearts (n\u00a0=\u00a06). V, ventricle; A, atrium; dpf, days post-fertilization. Dashed lines outline the heart. Bars: 50 \u03bcm. (C) Mean\u00a0+\u00a0s.d. (F\u2013H) Mean\u00a0+\u00a0s.e.m. Student\u2019s t-test, ***, p<0.001; ns, p>0.05.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic representation of the transgenic lines utilized in lineage tracing experiments. Treatment with 4-hydroxytamoxifen (4-OHT) activates the amhc:CreERT2 protein, which causes the recombination of \u03b2-actin2:RSG into \u03b2-actin2:GFP, thus permanently labeling amhc expressing cells in green. (B) vmhc:mCherry-NTR; amhc:CreERT2; \u03b2-actin2:RSG hearts were exposed to tamoxifen at (C) 3, (D) 4 or (E) 5 dpf in order to genetically\u00a0label atrial CMs with GFP (c-aGFP), and then confocal imaged at 7 dpf. These hearts that were genetically\u00a0labeled at (C) 3 (n\u00a0=\u00a021), (D) 4 (n\u00a0=\u00a014) or (E) 5 (n\u00a0=\u00a022) dpf show varying contributions of c-aGFP+ CMs to the ventricles. Green channel \u2013 (C\u2019\u2013E\u2019) genetically\u00a0labeled c-aGFP+ atrial CMs. (F) Quantitation of the percentage of ventricular area covered with c-aGFP+ CMs reveals that although uninjured hearts genetically\u00a0labeled at 3 and 4 dpf exhibit a small contribution of c-aGFP+ CMs to the ventricle, uninjured hearts labeled at 5 dpf do not. All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization. Dashed lines outline the heart. Bars: 50 \u03bcm. Mean\u00a0+\u00a0s.d. ANOVA test, ***, p<0.001.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Confocal microscopy imaging was performed on (A) Tp1:eGFP; vmhc:mCherry-NTR control or (B) ventricle-ablated hearts at 24 hr post-treatment/hpt (6 dpf). Green channel \u2013 (A\u2019, B\u2019) Tp1:eGFP. (C, D) Confocal microscopy imaging was performed on (C) Tp1:d2GFP; kdrl:ras-mCherry control or (D) Tp1:d2GFP; kdrl:ras-mCherry; vmhc:mCherry-NTR ventricle-ablated hearts at 24 hr post-treatment/hpt (6 dpf). Green channel \u2013 (C\u2019, D\u2019) Tp1:d2GFP. (E, F) Whole-mount in situ hybridizations show that notch1b expression is increased in (F) Tp1:d2GFP; vmhc:mCherry-NTR ventricle-ablated hearts (n\u00a0=\u00a016/18) at 24 hpt (6 dpf) compared to (E) control hearts (n\u00a0=\u00a00/20). (G) Quantitation of the average fluorescence intensity of the Tp1:d2GFP signal analyzed in control (black lines) or ventricle-ablated (gray lines) Tp1:d2GFP; vmhc:mCherry-NTR hearts shows that Tp1:d2GFP expression peaks at 24 hpt and gradually decreases as the ventricle regenerates (n\u00a0=\u00a010 control 0\u201396 hpt; 12 MTZ 0\u201396 hpt). All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment; dpt, days post-MTZ treatment. Dashed lines outline the heart. Bars: 50 \u03bcm. Mean\u00a0+\u00a0s.e.m. Student\u2019s t test,*, **, p<0.05 and p<0.01.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A\u2013L) Whole-mount in situ hybridizations of heat-shocked (A, B, E, F, I, J) vmhc:mCherry-NTR or (C, D, G, H, K, L) vmhc:mCherry-NTR; hsp70l:dnM hearts show that dnMAML (dnM) Notch inhibition decreases (D) gata4 (n\u00a0=\u00a03/15), (H) hand2 (n\u00a0=\u00a01/6) and (L) nkx2.5 (n\u00a0=\u00a02/8) reactivation in ventricle-ablated hearts at 48 hpt (seven dpf) when compared to (B, F, J) control ventricle-ablated (no dnM) hearts (n\u00a0=\u00a012/12, gata4; n\u00a0=\u00a05/5, hand2; n\u00a0=\u00a07/7, nkx2.5). (M) Schematic representation of the transgenic lines utilized in endocardial Notch inhibition studies for Figure 1L\u2013Q and Figure 1\u2014figure supplement 4N\u2013Z\u00b4). Heat-shock induction of kdrl:Cre; hsp70l:RS-dnM allows for conditional expression of dnM specifically in endothelial/endocardial cells. (N\u2013O) vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM were heat-shocked at 5 dpf and sham-ablated (control) or MTZ-ablated at 5.5 dpf. Confocal imaging was performed on vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM (N) control and (O) ventricle-ablated hearts at 24 hpt (6.5 dpf). (N\u2019\u2013N\u2019\u2019\u2019, O\u2019\u2013 O\u2019\u2019\u2019) Insets are magnification of boxes in (N and O) and highlight endocardial expression of dnMAML-GFP in the ventricle. Yellow dashed lines indicate boundary between myocardium (myo) and endocardium (end). Green channel \u2013 (N\u2019\u2019, O\u2019\u2019) kdrl:Cre recombined hsp70l:RS-dnM; Red channel \u2013 (N\u2019\u2019\u2019, O\u2019\u2019\u2019) vmhc:mCherry-NTR; Merge \u2013 (N, N\u2019, O, O\u2019). (P\u2013Z\u2019) Whole-mount in situ hybridizations of heat-shocked (P, Q, T, U, X, Y) vmhc:mCherry-NTR or (R, S, V, W, Z, Z\u2019) vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM hearts show that endocardial expression of dnM decreases (S) gata4 (n\u00a0=\u00a02/16), (W) hand2 (n\u00a0=\u00a00/5) and (Z\u2019) nkx2.5 (n\u00a0=\u00a01/7) reactivation in ventricle-ablated hearts at 48 hpt (7 dpf) when compared to (Q, U, Y) control ventricle-ablated (no dnM) hearts (n\u00a0=\u00a016/18, gata4; n\u00a0=\u00a08/8, hand2; n\u00a0=\u00a010/10, nkx2.5). All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment; dpt, days post-MTZ treatment. White dashed lines outline the heart. Bars: 50 \u03bcm.\n\nTo further interrogate the role of Notch signaling in CM reprogramming and heart regeneration, we utilized a combination of heat-shock inducible dominant negative Mastermind-like GFP (dnMAML-GFP/dnM) transgenic tools to genetically inhibit Notch signaling during cardiac injury at 5\u20136 dpf. Heat shock induction of Tg(hsp70l:dnMAML-GFP); Tg(vmhc:mCherry-NTR) ventricle ablated hearts inhibits not only the reactivation of key early cardiac transcriptional regulators such as gata4, hand2 and nkx2.5 (Figure 1\u2014figure supplement 4A\u2013L) but also overall CM proliferation in both the atrium and ventricle (Figure 1A\u2013E), thus leading to reduced post-injury ventricular tissue and contractility recovery (Figure 1F). Through fate mapping genetically\u00a0labeled atrial CMs (c-aYFP+) using a combination of Tg(amhc:CreERT2) and Tg(cmlc2:LoxP-AmCyan-STOP-LoxP-zsYellow) [Tg(myl7:CSY)] \u2018switch\u2019 reporter lines, we additionally discovered that this heat-shock hsp70l:dnMAML-GFP Notch inhibition also prevents the ability of c-aYFP+ atrial CMs to reprogram and transform into ventricle CMs (Figure 1G\u2013K). Because Notch signaling is activated in the endocardium soon after cardiac injury (Zhang et al., 2013) (Figure 1\u2014figure supplement 3), we next blocked Notch signaling specifically in the endocardium by combining Tg(hsp70l:LoxP-mKate2-Stop-LoxP-dnMAML-GFP) [Tg(hsp70l:RS-dnM)] and Tg(kdrl:Cre) lines, which together allow for heat-shock induction of dnMAML-GFP specifically in the endocardium (Figure 1\u2014figure supplement 4M\u2013O), and discovered that heat-shock induced endocardial dnMAML-GFP expression (kdrl:Cre; hsp70l:RS-dnM) after vmhc:mCherry-NTR ventricle MTZ-ablation decreases the activation of gata4, hand2 and nkx2.5 expression (Figure 1\u2014figure supplement 4P\u2013Z\u00b4), as well as injury-induced myocardial proliferation (Figure 1L\u2013P). Furthermore, time-course studies revealed that similar to global hsp70l:dnMAML-GFP Notch inhibition (Figure 1F), endocardial-specific Notch inhibition between 0\u00a0and\u00a01 days post MTZ treatment (dpt) leads to the greatest inhibitory effect on overall recovery from ventricle injury (Figure 1Q), further supporting the early activation and role of endocardial Notch signaling after cardiac injury.\n\n### Ventricular injury alters intra-cardiac hemodynamics\n\nBecause recent studies have shown that regional variations in blood flow can activate endocardial Notch signaling to regulate heart development (Heckel et al., 2015; Lee et al., 2016; Vermot et al., 2009), we explored whether cardiac injury could alter intracardiac blood flow and hemodynamic shear-stress to regulate injury-induced endocardial Notch signaling. Utilizing the Tg(gata1:dsRed) line, which labels red blood cells in dsRed, we visualized and measured in vivo blood flow dynamics by confocal microscopy and particle image velocimetry (PIV) analyses in uninjured (control) and ventricle-injured hearts at six dpf (Figure 2\u2014videos 1\u20134). In contrast to uninjured hearts which exhibit forward blood flow from atrium to ventricle throughout the cardiac cycle (Figure 2A,C, Figure 2\u2014video 1\u00a0and Figure 2\u2014video 3), we discovered that vmhc:mCherry-NTR ventricle-ablated hearts at 24 hpt display retrograde blood flow from the ventricle to the atrium during atrial diastole and ventricular systole (Figure 2B,D, Figure 2\u2014video 2 and Figure 2\u2014video 4). Additional PIV analyses measuring blood flow velocity within various representative regions of these hearts revealed that this altered blood flow in injured hearts results in oscillatory fluctuations of positive (anterograde) and negative (retrograde) intracardiac flow (Figure 2D\u2013D\u2019\u2019\u2019). Through calculating the fundamental harmonic index (FHI\u00a0=\u00a0Q1/Q0, where Q1 is the amplitude of the fundamental frequency flow harmonic and Q0, the time-averaged flow) (Heckel et al., 2015) of blood flow within the atrium, AVC and ventricle, we further quantitated and confirmed that oscillatory blood flow is significantly increased throughout these regions in ventricle-ablated hearts when compared to similar regions in uninjured control hearts (Figure 2E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) High-speed confocal imaging was performed on (A) gata1:DsRed control hearts and (B) vmhc:mCherry-NTR; gata1:DsRed ventricle-ablated hearts at 24 hpt (six dpf). Arrows represent particle image velocimetry (PIV) generated vectors from blood flow at different stages of the heart cycle: (A, B) atrial diastole, (A\u2019, B\u2019) atrial systole, (A\u2019\u2019, B\u2019\u2019) ventricular diastole, (A\u2019\u2019\u2019, B\u2019\u2019\u2019) ventricular systole. (C, D) Schematic representation indicates where flow rate (Q) was calculated in (C\u2019\u2013 C\u2019\u2019\u2019) control and (D\u2019\u2013 D\u2019\u2019\u2019) ventricle-ablated hearts (dotted lines). Graphs show the calculated flow rate (mm/s) in the (C\u2019, D\u2019) ventricle, (C\u2019\u2019, D\u2019\u2019) atrio-ventricular canal (AVC) and (C\u2019\u2019\u2019, D\u2019\u2019\u2019) atrium over time (t[s]). Black dots \u2013 flow rate (Q) in each experimental replicate. Red lines \u2013 average blood flow rate (Q). Experimental replicates\u00a0=\u00a05 control ventricle; 4 control AVC; 4 control atrium; 5 ablated ventricle; 3 ablated AVC; 3 ablated atrium. Colored horizontal bars on the bottom of each graph represent the cardiac cycle period: pink \u2013 atrial diastole; magenta \u2013 atrial systole; light blue \u2013 ventricular diastole; dark blue \u2013 ventricular systole. (E) Fundamental harmonic index (FHI\u00a0=\u00a0Q1/Q0) of the flow rate (Q) in the ventricle, AVC and atrium of control and ventricle-ablated hearts at 24 hpt (6 dpf). n\u00a0=\u00a03 hearts each condition. (F, G) Whole-mount in situ hybridizations show that klf2a expression is increased in (G) vmhc:mCherry-NTR ventricle-ablated hearts (n\u00a0=\u00a012/12) compared to (F) control hearts at 24 hpt (n\u00a0=\u00a00/16) (6 dpf). (H, I) Confocal imaging was performed on klf2a:H2B-GFP; vmhc:mCherry-NTR (H) control and (I) ventricle-ablated hearts at 24 hpt (6\u00a0dpf) (n\u00a0=\u00a020 each condition). (J) Quantitation of the relative average fluorescence intensity of klf2a:H2B-GFP in klf2a:H2B-GFP; vmhc:mCherry-NTR hearts at 24 hpt (6 dpf) confirms that klf2a:H2B-GFP is increased in ventricle-ablated hearts (n\u00a0=\u00a020 each condition). All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; AVC, atrio-ventricular canal; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment. Dashed lines outline the heart. Bars: 50 \u03bcm. (E, J) Mean\u00a0+\u00a0s.e.m. Student\u2019s t-test, *, **, ***, p<0.05, p<0.01, p<0.001. The following figure supplements are available for Figure 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) Schematic spatial representation of the relative average fluorescence intensity of (A) Klf2a:H2B-GFP and (B) Tp1:d2GFP reveals that both signals are increased in the areas of the endocardium subjected to higher hemodynamic forces in ventricle-ablated hearts at 24 hpt (6 dpf) compared to control hearts (n\u00a0=\u00a020 each condition).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A, B) Confocal imaging performed on (A) control and (B) ventricle-ablated klf2a:H2B-GFP; vmhc:mCherry-NTR; Tp1:nls-mCherry hearts at 24 hpt (6 dpf) shows co-expression of Tp1:nls-mCherry (red) in klf2a:H2B-GFP (green) activated cells (maximum intensity projections showed). (A\u2019\u2013A\u2019\u2019\u2019\u2019, B\u2019\u2013B\u2019\u2019\u2019\u2019) Single stacks of the projections in (A, B) show (A\u2019\u2019\u2013B\u2019\u2019) co-expression of Tp1:nls-mCherry and klf2a:H2B-GFP (merged). (A\u2019\u2019-A\u2019\u2019\u2019\u2019-B\u2019\u2019, B\u2019\u2019\u2019\u2019) are magnifications of the area in the yellow dashed box in (A\u2019, B\u2019). (A\u2019\u2019, B\u2019\u2019) merge; (A\u2019\u2019\u2019, B\u2019\u2019\u2019) mCherry \u2013 Red or (A\u2019\u2019\u2019\u2019, B\u2019\u2019\u2019\u2019) GFP \u2013 Green. (C) Quantitation of the number of cells that display Tp1:nls-mCherry only (Tp1+/Klf2a-), Tp1:nls-mCherry and klf2a:H2B-GFP (Tp1+/Klf2a+) or total Tp1:nls-mCherry (Tp1+/Klf2a- and Tp1+/Klf2a+) in A, B) reveals that ventricle-ablated hearts have significantly more Tp1:nls-mCherry/klf2a:H2B-GFP-positive cells than control sham-ablated hearts at 24 hpt (6 dpf) (n\u00a0=\u00a010 each condition). V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment; dpt, days post-MTZ treatment. White dashed lines outline the heart. Bars: 50 \u03bcm. Mean\u00a0+\u00a0s.e.m. Student\u2019s t test, **, p<0.01.\n\nGiven that increased levels of oscillatory flow can affect endothelial and endocardial phenotypes through modulating the expression and activity of hemodynamic responsive factors such as the transcription factor Klf2 (Dekker et al., 2002; Kwon et al., 2016; Lee et al., 2006), we investigated whether Klf2a expression (a zebrafish hemodynamic-sensitive paralog of Klf2) is increased in regions of the heart exhibiting increased oscillatory flow. In situ hybridizations revealed that klf2a expression, which primarily is located in specific regions of the AVC of uninjured hearts (Figure 2F), is expanded in injured hearts and present in both the AVC and the surrounding ventricular and atrial regions (Figure 2G). Using the Tg(klf2a:H2B-GFP) line, which expresses nuclear-GFP in response to changes in hemodynamic flow/stress (Heckel et al., 2015), we not only confirmed these findings (Figure 2H\u2013J) but also created a heat-map showing that klf2a:H2B-GFP expression is increased in those areas of the heart exhibiting increased oscillatory flow including the AVC and its surrounding regions (Figure 2\u2014figure supplement 1A). Furthermore, this klf2a:H2B-GFP signal overlaps with Tp1:d2GFP Notch reporter activity in ablated (and control) hearts (Figure 2\u2014figure supplement 1B), suggesting that these signals may be modulated by blood flow dynamics. Supporting that Klf2a may regulate Notch receptor expression and/or activity in response to hemodynamic flow changes as previously suggested during valve morphogenesis in zebrafish (Vermot et al., 2009), we further observed that nearly all endocardial Tp1:nls-mCherry+ cells in these hearts co-express the klf2a:H2B-GFP reporter (Figure 2\u2014figure supplement 2). Overall, these results reveal that ventricle-injured hearts exhibit increased oscillatory flow that spatially corresponds with Klf2a expression and Notch activation.\n\n### Reducing intra-cardiac hemodynamic forces impairs myocardial reprogramming\n\nBased on these findings that Notch signaling regulates the post-injury activation of myocardial reprogramming and regeneration and furthermore is active in areas of the endocardium experiencing high oscillatory flow, we examined whether altered blood flow and hemodynamic stress in injured hearts affects myocardial reprogramming and regeneration through regulating Klf2a expression and Notch signaling. To this end, we used a combination of different genetic and chemical approaches to alter hemodynamic flow as previously reported (Heckel et al., 2015) to confirm findings. First, we temporally inhibited blood flow after cardiac injury by preventing cardiac contractility using blebbistatin which perturbs cardiac contractility through affecting sarcomeric function. However, because blebbistatin may also potentially impact cell proliferation and migration, we furthermore utilized tricaine, which affects electrical function, to also block cardiac contractility. Utilizing the gata2a mutant, which exhibits decreased blood cells (Galloway et al., 2005), we also lowered hemodynamic stress by reducing overall blood viscosity rather than affecting blood flow dynamics (Boselli et al., 2017). Under each condition, we observed that klf2a:H2B-GFP activity is reduced at the AVC of uninjured hearts as previously reported (Heckel et al., 2015) (Figure 3E, Figure 3\u2014figure supplement 1A\u2013D). Similarly, these conditions also reduce the activation of klf2a:H2B-GFP and klf2a expression throughout ventricle-injured hearts (Figure 3A\u2013I). In line with these results, we further observed that Tp1:d2GFP Notch reporter activity and notch1b expression is also hemodynamic-sensitive in both uninjured (Figure 3\u2014figure supplement 1E\u2013L) and ventricle-ablated hearts (Figure 3J\u2013R). Although Klf2a and Notch reporter and gene expression are significantly reduced after blocking contractility with blebbistatin or tricaine, we observed that they are less affected in gata2a mutants (Figure 3E,N). Based on these Klf2a and Notch findings, we further examined whether myocardial reprogramming and regeneration might also be affected under conditions of altered hemodynamic stress. For each condition, ventricle-ablated hearts display reduced activation of the early cardiac transcription factors gata4, hand2 and nkx2.5 (Figure 4\u2014figure supplement 1) as well as decreased CM proliferation (Figure 4A\u2013E), which significantly impair overall recovery from ventricular injury (Figure 4F). Using a combination of Tg(amhc:CreERT2) and Tg(\u03b2-actin2:loxP-DsRed-STOP-loxP-eGFP) [or Tg(\u03b2-actin2:RSG)] lines to genetically\u00a0label atrial CMs (c-aGFP+), we also discovered that reducing blood flow and viscosity under these conditions significantly reduces the contribution of c-aGFP+ labeled atrial CMs to the ventricle after ventricle ablation (Figure 4G\u2013K). Altogether, these results support the role for hemodynamic forces in controlling post-injury activation of endocardial Notch and subsequent myocardial reprograming and regeneration during cardiac repair.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig3-v1.jpg)\n\n**Figure 3.:** Confocal imaging performed on (A\u2013D) klf2a:H2B-GFP; vmhc:mCherry-NTR or (J\u2013M) Tp1:d2GFP; vmhc:mCherry-NTR ventricle-ablated hearts at 24 hpt (6 dpf) reveals that (D, M) gata2a-/- mutant hearts as well as wild-type hearts treated with (B, K) blebbistatin (Blebb) or (C, L) tricaine (Tric) exhibit reduced klf2a:H2B-GFP or Tp1:d2GFP expression when compared to (A, J) ethanol (EtOH) sham-treated hearts. Quantitation of the relative average fluorescence intensity in control (black bars) and ventricle-ablated (gray bars) hearts confirms reduced (E) klf2a:H2B-GFP or (N) Tp1:d2GFP expression in gata2a-/- mutant hearts as well as wild-type hearts treated with blebbistatin or tricaine (klf2a:H2B-GFP n\u00a0=\u00a012 control EtOh; 5 control Blebb; 7 control Tric; 9 control gata2a-/-; 11 MTZ EtOH; 6 MTZ Blebb; 6 MTZ Tric; 9 MTZ gata2a-/-. Tp1:d2GFP n\u00a0=\u00a012 control EtOh; 6\u00a0control Blebb; 7 control Tric; 9 control gata2a-/-; 11 MTZ EtOH; 6 MTZ Blebb; 6 MTZ Tric; 9 MTZ gata2a-/-). Whole-mount in situ hybridizations at 24 hpt (6 dpf) show that (F\u2013I) klf2a and (O\u2013R) notch1b expression is decreased in vmhc:mCherry-NTR ventricle-ablated hearts treated with (G, P) blebbistatin (n\u00a0=\u00a00/8 klf2a; n\u00a0=\u00a02/12 notch1b) or (H, Q) tricaine (n\u00a0=\u00a00/7 klf2a; n\u00a0=\u00a00/10 notch1b) as well as in (I, R) gata2a-/- ventricle-ablated hearts (n\u00a0=\u00a03/9 klf2a; n\u00a0=\u00a05/12 notch1b) when compared to (F, O) hearts sham-treated with ethanol (n\u00a0=\u00a07/7 klf2a; n\u00a0=\u00a010/10 notch1b). All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ treatment. Dashed lines outline the heart. Bars: 50 \u03bcm. (E, N) Mean\u00a0+\u00a0s.e.m. ANOVA, ns: p>0.05; *: p<0.05; **: p<0.01; ***: p<0.001; ****: p<0.0001. The following figure supplements are available for Figure 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) Confocal imaging performed on klf2a:H2B-GFP; vmhc:mCherry-NTR uninjured hearts at 24 hpt (6 dpf) reveals decreased klf2a:H2B-GFP expression in (B) blebbistatin (Blebb) and (C) tricaine (Tric) treated hearts as well as in (D) gata2a-/- mutant hearts when compared to (A) ethanol (EtOH)-treated control hearts (n\u00a0=\u00a012 control EtOh; 6 control Blebb; 7 control Tric; 9 control gata2a-/-). (E\u2013H) Confocal imaging performed on Tp1:d2GFP; vmhc:mCherry-NTR uninjured hearts at 24 hpt (6 dpf) shows decreased Tp1:d2GFP Notch reporter expression in hearts treated with (F) blebbistatin or (G) tricaine when compared to (E) ethanol-treated control hearts; however, (H) gata2a-/- hearts do not display significant changes as quantitatively assessed in Figure 3N (n\u00a0=\u00a012 control EtOh; 5 control Blebb; 7 control Tric; 9 control gata2a-/-). (I\u2013L) Whole-mount in situ hybridizations reveal decreased notch1b expression in hearts treated with (J) blebbistatin (n\u00a0=\u00a00/9) or (K) tricaine (n\u00a0=\u00a00/5) and in (L) gata2a-/- hearts (n\u00a0=\u00a04/12) when compared to (I) ethanol-treated control hearts (n\u00a0=\u00a010/10) at 24 hpt (6 dpf). All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-DMSO treatment. Dashed lines outline the heart. Bars: 50 \u03bcm.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013D) Confocal microscopy imaging performed on vmhc:mCherry-NTR ventricle-ablated hearts reveals that (B) blebbistatin or (C) tricaine treatment as well as (D) the gata2a-/- mutant allele inhibit CM proliferation at 48 hpt (7 dpf) when compared to CM proliferation of (A) ethanol-treated control hearts. White \u2013 anti-phospho-histone H3 immunostaining; red \u2013 anti-MF-20 immunostaining. Arrows point to proliferating CMs. (E) Quantitation of anti-phospho-histone H3+ CMs in these hearts confirms that blebbistatin or tricaine treatment, and gata2a-/- defects block CM proliferation in injured hearts (n\u00a0=\u00a023,\u00a0control EtOH; 21 MTZ EtOH; 9 control Blebb; 9 MTZ Blebb; 10 control Tric; 10 MTZ Tric; 9 control gata2a-/-; 16 MTZ gata2a-/-). Red bars \u2013 ventricle; green bars \u2013 atrium; dark bars \u2013 control sham-ablated hearts; light bars \u2013 ventricle-ablated hearts. (F) Quantitation of the percentage of vmhc:mCherry-NTR ventricle-ablated hearts that display recovered ventricular tissue and contractility (black bars) at 96 hpt (9 dpf) shows that inhibiting contractility by blebbistatin or tricaine treatment as well as decreasing blood viscosity using gata2a-/- mutants impair heart regeneration. The number of fish analyzed for each condition is indicated above each column. (G\u2013J) Confocal microscopy imaging of vmhc:mCherry-NTR; amhc:CreERT2; \u03b2-actin2:RSG hearts at 60 hpt (7.5 dpf) reveals that (H) blebbistatin-treated, (I) tricaine-treated, or (J) gata2a-/- ventricle-ablated hearts exhibit reduced ability of genetically\u00a0labeled atrial CMs (c-aGFP+) to contribute to the regenerating injured ventricle when compared to (G) ethanol sham-treated hearts. (G\u2019\u2013J\u2019) Green channel \u2013 genetically-labeled c-aGFP+ atrial CMs. (K) Quantitation of the percentage of ventricular area covered with c-aGFP+ CMs confirms the reduced atrial CM contribution to the regenerating injured ventricle in gata2a-/- mutant hearts as well as wild-type hearts treated with blebbistatin or tricaine (n\u00a0=\u00a012 ethanol; 7 blebbistatin; 7 tricaine; 9 gata2a-/-). All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment. Dashed lines outline the heart. Bars: 50 \u03bcm. (E) Mean\u00a0+\u00a0s.e.m. ANOVA; (K) Mean\u00a0+\u00a0s.d. ANOVA; (F) Total numbers, Binomial test (versus EtOH); ns: p>0.05; *: p<0.05; **: p<0.01; ***: p<0.001; ****: p<0.0001. The following figure supplements are available for Figure 4.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Whole-mount in situ hybridizations show increased (A) gata4 (n\u00a0=\u00a09/11), (E) hand2 (n\u00a0=\u00a010/10) and (I) nkx2.5 (n\u00a0=\u00a07/8) expression in vmhc:mCherry-NTR ventricle-ablated (ethanol/EtOH-treated) control hearts at 48 hpt (7 dpf). However, these cardiogenesis factors fail to increase after ventricle-ablation in (B, F, J) blebbistatin (Blebb) (n\u00a0=\u00a00/13 gata4; n\u00a0=\u00a01/10 hand2; n\u00a0=\u00a00/10 nkx2.5) or (C, G, K) tricaine (Tric) (n\u00a0=\u00a00/14 gata4; n\u00a0=\u00a02/10 hand2; n\u00a0=\u00a00/6 nkx2.5) treated hearts as well as in (D, H, L) gata2a-/- hearts (n\u00a0=\u00a05/17 gata4; n\u00a0=\u00a04/11 hand2; n\u00a0=\u00a02/7 nkx2.5). V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-DMSO treatment. Dashed lines outline the heart. Bars: 50 \u03bcm.\n\n### Trpv4 mechanosensation of intra-cardiac blood flow regulates myocardial reprogramming\n\nBecause recent studies have shown that the mechanosensitive channel Trpv4 can sense intracardiac hemodynamic oscillatory flow and activate klf2a expression during cardiac valvulogenesis (Heckel et al., 2015), we utilized trpv4 and klf2a mutants to investigate whether this biomechanical signaling pathway may also sense hemodynamic changes in the heart after ventricle injury to control Notch signaling as well as myocardial reprogramming and regeneration. Consistent with recent studies suggesting that Trpv4 controls klf2a expression (Heckel et al., 2015), we observed that trpv4 mutants, which do not exhibit retrograde blood flow (Figure 5\u2014videos 1, 2), display reduced klf2a:H2B-GFP expression in not only uninjured (control) but also ventricle-ablated hearts (Figure 5A\u2013E). Given that both trpv4 and klf2a mutants also display reduced Tp1:d2GFP Notch reporter and notch1b expression in the uninjured (control) and ventricle-ablated hearts (Figure 5F\u2013L, Figure 5\u2014figure supplement 1), we further examined the ability of these mutants to regenerate ablated ventricles. Similar to reducing hemodynamic blood flow and shear stress, we discovered that klf2a and trpv4 ventricle-injured mutant hearts exhibit reduced activation of early cardiac transcription factors (Figure 5\u2014figure supplement 2) as well as diminished cardiomyocyte proliferation (Figure 5M\u2013P), which leads to overall impaired recovery from ventricular injury (Figure 5Q). Corroborating these findings, lineage tracing studies further reveal that the reprogramming of genetically\u00a0labeled c-aGFP+ atrial CMs into ventricular CMs to regenerate the ventricle is significantly reduced in klf2a and trpv4 mutant hearts when compared to wild-type control hearts (Figure 5R\u2013U). Thus, these results support the role of the mechanosensitive channel Trpv4 in regulating post-injury Notch signaling activation as well as myocardial reprogramming and regeneration through the Klf2a transcription factor.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013D) Confocal imaging of vmhc:mCherry-NTR; klf2a:H2B-GFP hearts shows that klf2a:H2B-GFP expression is activated in (B) wild-type (wt) ventricle-ablated hearts at 24 hpt (6 dpf) compared to (A) control hearts; however, this activation is reduced in (D) trpv4-/- ventricle-ablated hearts. (F\u2013H) Confocal imaging of vmhc:mCherry-NTR; Tp1:d2GFP hearts further reveals that Tp1:d2GFP is decreased in (G) klf2a-/- and (H) trpv4-/- ventricle-ablated hearts at 24 hpt (6 dpf) when compared to (F) wild-type (wt) hearts. (E, I) Quantitation of the relative average fluorescence intensity confirms reduced injury-induced (E) klf2a:H2B-GFP activation in trpv4-/- ventricle-ablated hearts, and (I) Tp1:d2GFP activation in trpv4-/- and klf2a-/- ventricle-ablated hearts when compared to wild-type ventricle-ablated hearts (klf2a:H2B-GFP n\u00a0=\u00a09 control wt; 7 control trpv4-/-; 9 MTZ wt; 10 MTZ trpv4-/-. Tp1:d2GFP n\u00a0=\u00a015 control wt; 18 control trpv4-/-; 20 control klf2a-/-; 22 MTZ wt; 21 MTZ trpv4-/-; 18 MTZ klf2a-/). (J\u2013L) Whole-mount in situ hybridizations show that notch1b is decreased in ventricle-ablated (K) klf2a-/- (n\u00a0=\u00a02/11) and (L) trpv4-/- hearts (n\u00a0=\u00a06/15) at 24 hpt (6 dpf) when compared to (J) wild-type hearts (n\u00a0=\u00a016/18). (M\u2013O) Confocal microscopy performed on vmhc:mCherry-NTR ventricle-ablated hearts reveals that (N) klf2a-/- and (O) trpv4-/- ventricle-ablated hearts display reduced CM proliferative response when compared to (M) wild-type (wt) ventricle-ablated hearts at 48 hpt (7 dpf). White \u2013 anti-phospho-histone H3 immunostaining; red \u2013 anti-MF-20 immunostaining. Arrows point to proliferating CMs. (P) Quantitation of anti-phospho-histone H3+ CMs in these hearts confirms that klf2a-/- and trpv4-/- hearts fail to increase CM proliferation after ventricle-injury (n\u00a0=\u00a015 each condition). Red bars \u2013 ventricle; green bars \u2013 atrium; dark bars \u2013 control sham-ablated hearts; light bars \u2013 ventricle-ablated hearts. (Q) Quantitation of the percentage of vmhc:mCherry-NTR ventricle-ablated hearts that display recovered ventricular tissue and contractility (black bars) at 96 hpt (9 dpf) supports that klf2a-/- and trpv4-/- mutants exhibit impaired heart regeneration. The number of fish analyzed for each condition is indicated above each column. (R\u2013T) Confocal microscopy imaging of vmhc:mCherry-NTR; amhc:CreERT2; \u03b2-actin2:RSG hearts at 72 hpt (8 dpf) shows that (S) klf2a-/-and (T) trpv4-/- ventricle-ablated hearts exhibit reduced contribution of genetically\u00a0labeled atrial CMs (c-aGFP+) to the regenerating injured ventricle when compared to (R) wild-type ventricle-ablated hearts. Green channel \u2013 (R\u2019\u2013T\u2019) genetically\u00a0labeled c-aGFP+ atrial CMs. (U) Quantitation of the percentage of ventricular area covered with c-aGFP+ CMs confirms that klf2a-/- or trpv4-/- hearts display reduced capacity to undergo injury-induced atrial-to-ventricular trans-differentiation during injury and regeneration (n\u00a0=\u00a013 wt; 8 klf2a-/-; 10 trpv4-/-). All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment. Dashed lines outline the heart. Bars: 50 \u03bcm. (E, I, P) Mean\u00a0+\u00a0s.e.m. ANOVA; (Q) Total numbers, Binomial test (versus wild-type); (U) Mean\u00a0+\u00a0s.d. ANOVA; ns: p>0.05; *: p<0.05; **: p<0.01; ***: p<0.001; ****: p<0.0001. The following figure supplements are available for Figure 5.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Confocal microscopy imaging performed on vmhc:mCherry-NTR, Tp1:d2GFP control hearts reveals reduced Tp1:d2GFP activation in (B) klf2a-/- and (C) trpv4-/- hearts at 24 hpt (6 dpf) when compared to (A) wild-type (wt) hearts (n\u00a0=\u00a015 control wt; 18 control trpv4-/-; 20 control klf2a-/-; 22 MTZ wt; 21 MTZ trpv4-/-; 18 MTZ klf2a-/-). (D\u2013F) Whole-mount in situ hybridizations reveal reduced gene expression of notch1b in (E) klf2a-/- (n\u00a0=\u00a04/19) and (F) trpv4-/- (n\u00a0=\u00a014/29) vmhc:mCherry-NTR control hearts at 24 hpt (6 dpf) when compared to (D) wild-type (wt) hearts (n\u00a0=\u00a022/25). All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment. Dashed lines outline the heart. Bars: 50 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013R) Whole-mount in situ hybridizations show increased (B) gata4 (n\u00a0=\u00a021/24), (H) hand2 (n\u00a0=\u00a013/15) and (N) nkx2.5 (n\u00a0=\u00a012/13) expression in vmhc:mCherry-NTR ventricle-ablated wild-type (wt) hearts at 48 hpt (7 dpf) when compared to (A, G, M) sham-ablated control hearts. However, these cardiogenesis transcription factors fail to increase in (D, J, P) klf2a-/- (n\u00a0=\u00a07/21 gata4; n\u00a0=\u00a04/9 hand2; n\u00a0=\u00a05/14 nkx2.5) and (F, L, R) trpv4-/- (n\u00a0=\u00a07/17 gata4; n\u00a0=\u00a05/11 hand2; n\u00a0=\u00a05/12 nkx2.5) ventricle-ablated hearts. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment. Dashed lines outline the heart. Bars: 50 \u03bcm.\n\n### Hemodynamic-mediated endocardial signaling pathways activate BMP and Erbb2 signaling to regulate myocardial reprogramming and regeneration\n\nSince hemodynamic-mediated endocardial signaling pathways can non-cell autonomously initiate BMP and Erbb2 myocardial signaling pathways during cardiac trabeculation (Dietrich et al., 2014; Rasouli and Stainier, 2017; Samsa et al., 2015), we investigated whether injury-induced endocardial signaling similarly activates these myocardial signaling pathways to control CM reprogramming and heart regeneration during cardiac injury. To this end, we initially examined whether BMP and/or Erbb2 signaling regulates both cardiac regeneration and myocardial reprogramming. Consistent with previous cardiac regeneration studies (D'Uva et al., 2015; Gemberling et al., 2015; Mahmoud et al., 2015; Polizzotti et al., 2015; Wu et al., 2016; Xiang et al., 2016), we discovered that blocking either BMP signaling with Dorsomorphin (DM) or Erbb2 signaling with AG1478 as previously described (Han et al., 2016), diminishes not only ventricle injury-induced CM proliferation (Figure 6A\u2013C,E) and activation of early cardiac transcription factors (Figure 6\u2014figure supplement 1), but also the trans-differentiation of genetically\u00a0labeled c-aGFP+ atrial CMs into ventricular CMs (Figure 6F\u2013H,J) when compared to DMSO controls. Confirming these results, we furthermore observed that erbb2-/- mutants exhibit similar injury-response defects compared to those observed in AG1478-treated hearts (Figure 6D,E,I,J). As a result, this inhibition of CM proliferation and reprogramming results in the failure to regenerate the injured heart and recover from ventricle ablation (Figure 6K). To further investigate whether injury-induced endocardial signaling pathways regulate this myocardial BMP and/or Erbb2 signaling activation, we examined components of BMP and Erbb2 signaling pathways in ventricle-ablated hearts after reducing intracardiac hemodynamic flow with blebbistatin or inhibiting Notch signaling with either DAPT or dnMAML-GFP. Using the Tg(BRE:d2GFP) BMP reporter line, which has been previously used to detect BMP signaling in the myocardium of zebrafish hearts (Han et al., 2016), we observed that blocking either hemodynamic flow or Notch signaling decreases the activation of myocardial BMP signaling that occurs after ventricle ablation (Figure 7A\u2013F, Figure 7\u2014figure supplement 1). Furthermore, we examined in injured hearts the expression of bmp10 and nrg1, which are developmentally expressed in the myocardium and endocardium in order to respectively activate BMP and Erbb2 signaling during cardiac trabeculation (Grego-Bessa et al., 2007; Han et al., 2016; Rasouli and Stainier, 2017; Samsa et al., 2015). We found by in situ hybridization analyses that while the expression of these factors are elevated in the heart after ventricle injury, this increased expression is blocked after inhibiting hemodynamic flow and Notch signaling (Figure 7G\u2013R, Figure 7\u2014figure supplement 2), suggesting that these ligands may also regulate BMP and Erbb2 during CM reprogramming and cardiac regeneration. Altogether, these findings support that hemodynamic-mediated endocardial signaling pathways may regulate CM reprogramming and heart regeneration through modulating myocardial BMP and Erbb2 signaling.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013D) Confocal microscopy performed on vmhc:mCherry-NTR ventricle-ablated hearts reveals that (B) dorsomorphin (DM) and (C) AG1478-treated as well as (D) erbb2 loss-of-function mutation (erbb2-/-) ventricle-ablated hearts exhibit reduced CM proliferative response when compared to (A) DMSO-treated ventricle-ablated hearts (control) at 48 hpt (7 dpf). White \u2013 anti-phospho-histone H3 immunostaining; red \u2013 anti-MF-20 immunostaining. Arrows point to proliferating CMs. (E) Quantitation of anti-phospho-histone H3+ CMs in these hearts confirms that dorsomorphin and AG1478 treatments as well as loss of erbb2 function (erbb2-/-) prevent CMs from proliferating in injured hearts (n\u00a0=\u00a015 each condition). Red bars \u2013 ventricle; green bars \u2013 atrium; dark bars \u2013 control sham-ablated hearts; light bars \u2013 ventricle-ablated hearts. (F\u2013I) Confocal imaging of vmhc:mCherry-NTR; amhc:CreERT2; \u03b2-actin2:RSG ventricle-ablated hearts shows that (G) dorsomorphin (DM) or (H) AG1478 treatment as well as (I) erbb2-/- blocks the contribution of genetically-labeled atrial CMs (c-aGFP+) to the regenerating ventricle-ablated hearts when compared to (F) ventricle-ablated DMSO-treated control hearts at 72 hpt (8 dpf). Green channel \u2013 (F\u2019\u2013I\u2019) genetically\u00a0labeled c-aGFP+ atrial CMs. (J) Quantitation of the percentage of ventricular area covered with c-aGFP+ atrial CMs confirms that dorsomorphin or AG1478 treatments as well as loss of erbb2 function (erbb2-/-) prevent atrial CMs from regenerating the injured ventricle (n\u00a0=\u00a011 DMSO; 6\u00a0dorsomorphin; 7 AG1478; 7 erbb2 -/-). (K) Quantitation of the percentage of vmhc:mCherry-NTR ventricle-ablated hearts that display recovered ventricular tissue and contractility (black bars) at 96 hpt (9 dpf) confirms that inhibiting BMP signaling with dorsomorphin or Erbb2 signaling with AG1478 impairs heart regeneration. The number of fish analyzed for each condition is indicated above each column. All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment. Dashed lines outline the heart. Bars: 50 \u03bcm. (E) Mean\u00a0+\u00a0s.e.m. ANOVA; (J) Mean\u00a0+\u00a0s.d. ANOVA; (K) Total numbers, Binomial test (versus DMSO); ns: p>0.05; *: p<0.05; **: p<0.01; ***: p<0.001; ****: p<0.0001. The following figure supplements are available for Figure 6.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Whole-mount in situ hybridizations show increased (B) gata4 (n\u00a0=\u00a019/25), (J) hand2 (n\u00a0=\u00a010/12) and (R) nkx2.5 (n\u00a0=\u00a012/13) expression in vmhc:mCherry-NTR ventricle-ablated hearts at 48 hpt (7 dpf) when compared to (A, I, Q) sham-ablated control hearts. However, these cardiogenesis transcription factors fail to increase in (D, L, T) dorsomorphin (DM) (n\u00a0=\u00a04/21 gata4; n\u00a0=\u00a03/12 hand2; n\u00a0=\u00a04/16 nkx2.5) and (F, N, V) AG1478-treated ventricle-ablated hearts (n\u00a0=\u00a05/20 gata4; n\u00a0=\u00a01/8 hand2; n\u00a0=\u00a03/10 nkx2.5) as well as in (H, P, X) erbb2 loss-of-function mutation (erbb2-/-) (n\u00a0=\u00a04/18 gata4; n\u00a0=\u00a05/24 hand2; n\u00a0=\u00a03/15 nkx2.5). V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment. Dashed lines outline the heart.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013F) Confocal imaging of BRE:d2GFP; vmhc:mCherry-NTR hearts at 48 hpt (7 dpf) shows that (B) BRE:d2GFP is activated after ventricular ablation (n\u00a0=\u00a021/21) when compared to (A) uninjured control hearts (n\u00a0=\u00a00/29); however, (D) blebbistatin (Blebb) (n\u00a0=\u00a00/11) or (F) DAPT (n\u00a0=\u00a00/14) treatment inhibits this BRE:d2GFP injury-induced activation. (G\u2013R) Whole-mount in situ hybridizations reveal that bmp10 and nrg1 expression are increased in vmhc:mCherry\u2013NTR (H, N) ventricle-ablated hearts (n\u00a0=\u00a013/14 bmp10; 7/8 nrg1) at 48 hpt (7 dpf) when compared to (G, M) control uninjured hearts (n\u00a0=\u00a00/18 bmp10; 0/13 nrg1), while treatment with (J, P) blebbistatin (n\u00a0=\u00a02/13 bmp10; 0/6 nrg1) or (L, R) DAPT (n\u00a0=\u00a04/16 bmp10; 0/7 nrg1) inhibits the injury-induced activation of bmp10 and nrg1. All confocal images shown are maximum intensity projections. V, ventricle; A, atrium; dpf, days post fertilization; hpt hours post-MTZ/DMSO treatment. Dashed lines outline the heart. Bars: 50 \u03bcm. The following figure supplements are available for Figure 7.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013F) Confocal single-stacks corresponding to the projections shown in Figure 7A\u2013F show (B\u2013B\u2019\u2019\u2019) BRE:d2GFP is activated in the myocardium of ablated hearts at 48 hpt (seven dpf) (n\u00a0=\u00a021/21), in contrast to (A\u2013A\u2019\u2019\u2019) uninjured controls (n\u00a0=\u00a00/29). (B\u2019\u2013B\u2019\u2019\u2019) Magnifications of the boxed area in (B) show (B\u2019) co-localization (arrowheads) of BRE:d2GFP and vmhc:mCherry-NTR. However, (D\u2013D\u2019\u2019\u2019) blebbistatin (Blebb) (n\u00a0=\u00a00/11) or (F\u2013F\u2019\u2019\u2019) DAPT (n\u00a0=\u00a00/14) treatment inhibits this myocardial BRE:d2GFP injury-induced activation. (A\u2019\u2013F\u2019) merge; (A\u2019\u2019\u2013F\u2019\u2019) Red channel - vmhc:mCherry-NTR; (A\u2019\u2019\u2019\u2013F\u2019\u2019\u2019) Green channel-BRE:d2GFP. V, ventricle; A, atrium. hpt, hours post-MTZ/DMSO treatment.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44816/elife-44816-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Whole-mount in situ hybridizations of heat-shocked (HS) (A, B, E, F) vmhc:mCherry-NTR; hsp70l:RS-dnM or (C, D, G, H) vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM hearts show that dnMAML endocardial expression can block (D, H) bmp10 and nrg1 (n\u00a0=\u00a03/19 bmp10; 0/8 nrg1) activation after ventricle-injury at 48 hpt (7 dpf) when compared to (B, F) ventricle-ablated control hearts (n\u00a0=\u00a021/21 bmp10; n\u00a0=\u00a018/19 nrg1). V, ventricle; A, atrium; dpf, days post-fertilization; hpt, hours post-MTZ/DMSO treatment. Dashed lines outline the heart.\n\n## Discussion\n\nOverall, these findings reveal a cardiac repair signaling mechanism that controls how the heart detects hemodynamic changes during cardiac injury in order to adaptively activate cardiomyocyte reprogramming responses mediating heart repair. These reprogramming responses include not only the re-activation of early cardiogenesis transcription factors that may revert cardiomyocytes back to a precursor state but also the conversion of atrial cardiomyocytes into ventricular cardiomyocyte to repair the injured ventricle as previously reported (Kikuchi et al., 2010; Porrello et al., 2011; Zhang et al., 2013). Furthermore, our results may explain why near complete ablation/injury of the entire heart (i.e. both atrial and ventricular chambers) using a cmlc2:NTR-based system (Curado et al., 2007) may result in significantly reduced heart recovery and fish survival compared to our studies as these hearts may exhibit overall weaker beating and reduced oscillatory flow compared to those where ventricular cardiomyocytes are specifically ablated but atrial cardiomyocytes are spared (Zhang et al., 2013). However, our findings that ventricle-cardiomyocyte ablated hearts are able to recover are in contrast to recent studies reporting that embryonic hearts develop heart failure after select ablation of a specific small population of cardiomyocytes derived from neural crest cells (Abdul-Wajid et al., 2018). The use of different cardiomyocyte ablation lines may potentially account for differences in outcomes between these studies as our vmhc:cherry-NTR lines may not be able to ablate these neural crest-derived cardiomyocytes. Alternatively, we could be ablating these neural crest-derived cardiomyocytes given that not all hearts recover from ventricular injury in our studies.\n\nAlthough inflammatory and hypoxia pathways have been suggested to activate repair responses during heart regeneration (Fang et al., 2013; Jopling et al., 2012; Nakada et al., 2017), we discovered that the injured heart is also able to sense altered intracardiac hemodynamic forces through the endocardial biomechanical sensor Trpv4, thereby activating an endocardial-myocardial signaling pathway that directs cardiomyocyte reprogramming and heart repair. Similar to biomechanical signaling mechanisms deployed during cardiac development (Heckel et al., 2015), Trpv4 can transduce these forces through Klf2 to activate endocardial Notch signaling, which has been recently reported to be crucial for regulating adult zebrafish heart regeneration (M\u00fcnch et al., 2017). In addition to its potential role in regulating inflammatory responses (M\u00fcnch et al., 2017), we discovered that this endocardial Notch signaling may act non-cell autonomously to promote cardiac reprogramming and repair through modulating both myocardial BMP and Erbb2 signaling pathways, thus further illuminating how injury-activated endocardium may mediate myocardial regeneration as previously suggested (Kikuchi et al., 2011; M\u00fcnch et al., 2017; Zhang et al., 2013).\n\nGiven the role of BMP and Erbb2 signaling in not only zebrafish but also mammalian adult heart regeneration (D'Uva et al., 2015; Gemberling et al., 2015; Mahmoud et al., 2015; Polizzotti et al., 2015; Wu et al., 2016; Xiang et al., 2016), our results raise the possibility that this hemodynamic-mediated cardiac repair signaling mechanism may also participate in regulating adaptive cardiac responses during mammalian cardiac injury. Furthermore, they highlight the impact of biomechanical forces in regulating adaptive cardiac regenerative responses and complement recent mouse and zebrafish studies suggesting that cardiomyocytes and epicardial cells may sense the environment to control cardiac tissue regeneration (Bassat et al., 2017; Cao et al., 2017; Morikawa et al., 2017). Thus, future studies are warranted in mammalian model systems including the mouse to explore whether and how hemodynamic forces may impact mammalian heart regeneration through not only modulating BMP and Erbb2 signaling pathways but also interacting with other injury-response mechanisms including hypoxia and inflammation. As a result, such studies may reveal potential new mechanisms for how cardiac tissue may endogenously reprogram and alter their cellular differentiation state and identity to respond and adapt to environmental stresses during cardiac pathologic/disease conditions.\n\n## Materials and methods\n\n### Zebrafish husbandry and generation of transgenic fish lines\n\nZebrafish were raised under standard laboratory conditions at 28\u00b0C. All animal work we approved by the University of California at San Diego Institutional Animal Care and Use Committee (IACUC). We used the following transgenic lines: Tg(vmhc:mCherry-NTR)s957 (Curado et al., 2007); Tg(cmlc2:GFP)mss5 (Dhandapany et al., 2014); Tg(\u03b2-actin2:loxP-DsRed-STOP-loxP-eGFP)s928, abbreviated Tg(\u03b2-actin2:RSG) (Kikuchi et al., 2010); Tg(myl7:loxP-AmCyan-STOP-loxP-ZsYellow)fb2, abbreviated Tg(myl7:CSY) (Zhou et al., 2011); Tg(hsp70l:dnMAML-GFP)fb11, abbreviated Tg(hsp70l:dnM) (Zhao et al., 2014); Tg(cmlc2:CreERT2)pd10(Kikuchi et al., 2010); Tg(EPV.Tp1-Mmu.Hbb:d2GFP)mw43, abbreviated Tg(Tp1:d2GFP) (Clark et al., 2012); Tg(T2KTp1bglob:hmgb1-mCherry)jh11, abbreviated Tg(Tp1:nls-mCherry) (Parsons et al., 2009); Tg(kdrl:ras-mCherry)s896 (Chi et al., 2008); Tg(kdrl:Cre)s898(Bertrand et al., 2010); Tg(klf2a:H2B-GFP) (Heckel et al., 2015); Tg(gata1:DsRed) (Traver et al., 2003); and Tg(BRE-AAVmlp:eGFP)mw30, abbreviated Tg(BRE:d2GFP) (Collery and Link, 2011). We utilized the following lines carrying mutant alleles that were previously described and validated: trpv4sa1671 (Heckel et al., 2015), klf2aig4, (Steed et al., 2016), gata2a um27 (Zhu et al., 2011) and erbb2st50 (Lyons et al., 2005). The hsp70l:loxP-mKate2-STOP-loxP-dnMAML-GFP transgene, abbreviated as Tg(hsp70l:RS-dnM)fb24, was generated as previously described (Han et al., 2016) with the exception that p5E-hsp70l (Kwan et al., 2007) was used as the 5\u2019 entry clone instead of p5E-ubi.\n\n### Genotyping\n\nTrpv4sa1671, klf2aig4 and gata2um27 mutants were genotyped by PCR as described (Galloway et al., 2005; Heckel et al., 2015; Steed et al., 2016). Adult fish, whose age is between 90 days and 2 years (https://zfin.org/zf_info/zfbook/stages/index.html), were genotyped by fin clip as described (Westerfield, 2007). The mutant fish utilized in each experiment were collected after imaging and subsequently genotyped as described (Westerfield, 2007). The erbb2st50 homozygous mutant embryos were identified by the previously characterized aberrant cardiac morphology (Lyons et al., 2005).\n\n### Ventricular ablations\n\nTg(vmhc:mCherry\u2013NTR) zebrafish were treated with 10 mM of Metronidazole (MTZ) (Sigma, St. Louis, MO) in egg water with 0.2% DMSO (dimethylsulphoxide) (Sigma, St. Louis, MO) for 2 hr at 28\u00b0C in the dark at 3, 4 or 5 dpf as previously described (Zhang et al., 2013). Control fish were simultaneously incubated in egg water with 0.2% DMSO. After the incubation, treated zebrafish were washed several times with fresh egg water and further incubated at 28\u00b0C. Efficiency of ventricular ablation and post-injury ventricular recovery was evaluated at 24 and 96 hr post MTZ/DMSO treatment (hpt), respectively. Efficiency of ventricular ablation was assessed by TUNEL cell death quantitation at 24 hpt, and by loss of ventricular tissue and contractility by imaging analyses. Efficiency of ventricular regeneration was assessed by observation of ventricular tissue and contractility by imaging analyses. Recovered fish were quantified as those fish that displayed recovered ventricular tissue and contractility at 96 hpt as previously described (Zhang et al., 2013). Fish that did not recover include those that displayed lack of ventricular tissue integrity and/or impaired contractility as well as fish that did not survive post-ablation.\n\n### Quantitation of cell death\n\nTUNEL staining was performed using the in situ cell death detection kit, fluorescein from Roche (11684795910). Briefly, 24 hpt zebrafish were fixed overnight in 4% PFA at 4\u00b0C, washed in Phosphate Buffered Saline with 0.1% Tween 20 (PBT) and dehydrated through a graded methanol series, and then incubated in 100% methonol at \u221220\u00b0C for at least 2 hr before graded rehydration to PBT. Samples were then incubated in 10 \u03bcg/mL proteinase K for 1 hr at room temperature, washed three times with PBT and refixed in 4% PFA for 20 min. After washing three times in PBT, samples were incubated with TUNEL staining solution overnight at 37\u00b0C and then washed five times with PBT before acquiring images using a Nikon C2 confocal microscope.\n\n### Cardiac contractile analysis\n\nLive zebrafish were embedded in 1% low melting agarose in a glass-bottom culture dish (MatTek), and the heart contraction was recorded by an Andor iXon EMCCD camera at a frame rate of 40 ms/ frame. The fractional area change was calculated as FAC = (End diastolic area-End systolic area)/End diastolic area x 100%.\n\n### Quantitation of ventricular area\n\nTo determine the ventricular area and the subsequent tissue recovery in ablated and DMSO control fish, ablated and control Tg(vmhc:mCherry-NTR) fish hearts were imaged and analyzed at 0 hpt (before ablations), 24 hpt and 96 hpt using a Nikon C2 confocal microscope (Tokyo, Japan) where an average of 25 stacks every 5 \u03bcm were acquired. To specifically determine the ventricular area, 3D reconstructions of these fish hearts were analyzed to calculate the total area covered by vmhc:mCherry-NTR cells using ImageJ imaging analyses (NIH, Bethesda, MD). Total ventricular area was normalized to the average 0 hpt non-ablated heart ventricular area.\n\n### In situ hybridization\n\nWhole-mount in situ hybridizations were performed as previously described (Chi et al., 2008), using the following probes: bmp10, gata4, klf2a, hand2, nkx2.5, notch1b and nrg1. Fish were analyzed under a Leica M205 FA stereo microscope. Magnifications of bright field images of the area containing the fish heart are shown. Blue corresponds with riboprobe staining. Heart shape was outlined based on anatomic observation under the microscope. Quantitation of the number of hearts showing increased staining of the corresponding marker as compared to non-ablated controls (numerator, n) vs total number of observed hearts is provided in each corresponding figure legend (denominator, d) (n/d).\n\n### Heat-shock induction of dnMAML expression\n\nFish containing the hsp70l:dnM or the hsp70l:RS-dnM transgenes were treated with DMSO (control) or MTZ (ablated) as described. Immediately after DMSO/MTZ treatment, fish were heat-shocked for 5 min at 42\u00b0C followed by 1 hr at 37\u00b0C. Heat-shock was repeated every 12 hr until corresponding analysis was performed. Expression of dnMAML-GFP was detected under fluorescence microscopy.\n\n### Immunofluorescence and quantification of proliferation\n\nImmunofluorescence staining was performed as previously described for anti-phospho-histone H3 studies (Zhang et al., 2013). Red fluorescence corresponding to the vmhc:mCherry-NTR transgene was lost after fixation treatment; thus anti-MF20/anti-MHC was used to detect myocardium for these studies. The primary antibodies used in this study include: anti-GFP (chicken; Aves Labs; Tigard, OR); anti-MF20/anti-MHC (mouse; Developmental Studies Hybridoma Bank) (Stainier and Fishman, 1992); and anti-phospho-histone H3 (rabbit; Upstate, Lake Placid, NY). The secondary antibodies used in this study include: Alexa Fluor 594 goat anti-mouse IgG (Invitrogen, Carlsbad, CA), Alexa Fluor 633 goat anti-rabbit IgG (Invitrogen, Carlsbad, CA) and anti-chicken IgY-FITC (Sigma, St. Louis, MO). For EdU staining, we injected 2 nL EdU solution into the circulation of 48 hpt zebrafish as previously described (Hesselson et al., 2009). Detection of incorporated EdU was performed according to the manufacture\u2019s instructions for Click-iT 647 kit from Invitrogen (C10340). Fluorescent images were obtained using a Nikon C2 confocal microscope (Tokyo, Japan) and analyzed with ImageJ (NIH, Bethesda, MD). An average of 25 serial 5 \u03bcm z-stacks was acquired to perform 3D reconstructions of the hearts. Proliferation was evaluated by quantification of phospho-histone H3+/MF20+ double positive or EdU+/cmlc2:GFP+ double postive cells within the ventricle and the atrium of control and ablated fish.\n\n### Tamoxifen treatment and lineage tracing\n\nLineage tracing was performed as previously described (Zhang et al., 2013). Tg(vmhc:mCherry\u2013NTR; amhc:CreERT2; \u03b2-actin2:RSG) or Tg(vmhc:mCherry\u2013NTR; amhc:CreERT2; myl7:CSY) zebrafish were treated with a 10 mM 4-hydroxytamoxifen (4-OHT) solution (Sigma) or with 0.1% ethanol (unlabeled control) at 3, 4 or 5 dpf for 4 hr at 28\u00b0C and subsequently washed with fresh egg water several times. Hearts with GFP/YFP genetically labeled atrial CMs were treated with DMSO (control) or MTZ (ablated) at 12 hr post 4-OHT labeling (3.5, 4.5 or 5.5 dpf) and analyzed under a fluorescent scope every 12 hr up to 4 days. To identify ventricular GFP-positive CMs, hearts from Tg(vmhc:mCherry\u2013NTR; amhc:CreERT2; \u03b2-actin2:RSG) were imaged with a Nikon C2 confocal at 60, 72 or 96 hpt as previously described (Zhang et al., 2013). To identify YFP-positive CMs in heat-shocked Tg(vmhc:mCherry\u2013NTR; amhc:CreERT2; myl7:CSY) or Tg(vmhc:mCherry\u2013NTR; amhc:CreERT2; myl7:CSY; hsp70l:dnM) hearts, zebrafish were imaged with a Nikon C2 spectral detector (Tokyo, Japan) and a 488 laser. YFP signals were obtained by extracting the minimum matching YFP wavelength from spectral data after calibration with YFP only positive controls as previously described (Valm et al., 2016). To determine the percentage of Cre-labeled GFP or YFP cardiomyocytes (c-aGFP/YFP+) in the ventricle, maximum intensity projections of at least 25 serial 5 \u03bcm z-stacks were used to create 3D reconstructions. The ventricles were outlined based on the morphology observed in the bright-field channel. Similarly, the surface area covered by c-aGFP+ or c-aYFP+ CMs was outlined based on presence of GFP or YFP fluorescence. The total surface area of the outlined ventricles and the outlined c-aGFP+ and c-aYFP+ CMs was calculated by ImageJ (NIH, Bethesda, MD). The percentage of the ventricle covered by c-aGFP or c-aYFP was obtained by dividing the c-aGFP or c-aYFP area by the total surface area in the ventricle.\n\n### Quantitation of transgene mean fluorescence intensity\n\nTo determine the mean fluorescence intensity, Tg(Tp1:d2GFP) or Tg(klf2a:H2B:GFP) hearts were imaged with a Nikon C2 confocal microscopy at the indicated time points. An average of 25 serial 5 \u03bcm z-stacks were acquired. Mean fluorescence levels were calculated using methods previously described (McCloy et al., 2014). Maximum intensity projections of confocal images were utilized to determine the region of interest (ROI), which corresponded with the zebrafish heart. Each region of interest (ROI) along with several adjacent background readings were outlined, and the area and mean fluorescence intensities were calculated by ImageJ (NIH, Bethesda, MD). The corrected fluorescence of the ROI was calculated by subtracting the background reading and normalized to the total area of the ROI. To calculate the fold increase, each ROI corrected fluorescence was divided by the corresponding control condition. Images shown are representative pictures of each condition.\n\n### Quantitation of Tp1/Klf2a:H2B-GFP-positive cells\n\nTo determine the number of Tp1:nls-mCherry/klf2a:H2B-GFP double positive cells, Tg(klf2a:H2B:GFP; Tp1:nls-mCherry; vmhc:mCherry-NTR) control and ablated fish hearts were imaged with a Nikon C2 confocal microscopy at the indicated time points. An average of 25 serial 5 \u03bcm z-stacks were taken, and then images were analyzed with ImageJ (NIH, Bethesda, MD). Individual stacks were analyzed to determine the presence of Tp1:nls-mCherry and/or klf2a:H2B-GFP positive nuclei in the atria and the AVC. In the ventricle, Tp1:nls-mCherry positive cells were identified as those nuclei that were anatomically located beneath the myocardial layer. The myocardial layer was identified as vmhc:mCherry-NTR positive/klf2a:H2B-GFP negative.\n\n### High-speed video acquisition\n\nBlood flow videos were obtained by imaging control and ablated Tg(gata1:DsRed; vmhc:mCherry-NTR) fish at six dpf (24 hpt). Fish were imaged with a Leica Sp5 (Wetzlar, Germany) resonance scanner at 50\u2013100 frames per second, at 512 \u00d7 128 pixels of resolution. 10 z-stacks were obtained, each separated by 10 \u03bcm for a total of 2 min. Bright field blood flow videos for two dpf wild-type control and trpv4 -/- mutant were recorded by an Andor iXon EMCCD camera at a frame rate of 40 ms/ frame.\n\n### Multigrid ensemble micro particle image velocimetry\n\nTo determine the velocity of the blood inside the ventricle from obtained microscopy videos, an in-house multigrid ensemble particle image velocimetry (PIV) software was developed, as previously described (Lindken et al., 2009; Adrian and Westerweel, 2011). PIV determines deformation maps from two consecutive images in a time-lapse sequence by dividing each image into smaller interrogation windows, and maximizing the spatial cross-correlation between the matching windows of each image. In our method, the signal-to-noise ratio was improved by averaging the cross-correlation for an ensemble of window pairs coming from the same phase of the cardiac cycle across all the cycles of each video recording (500 frames, approximately 17 cycles). To calculate this ensemble average at each phase of the cardiac cycle, we temporally align frames by maximizing the temporal cross-correlation between whole-image pairs. To increase the spatial resolution, we perform multigrid PIV (multiple PIV passes using progressively smaller interrogation windows, where each pass uses the result from the previous pass to re-center the interrogation windows). We balanced signal-to-noise ratio with resolution, starting with coarse interrogation windows of size 48 \u00d7 48 pixels and a separation of 24 pixels, and progressively refining to 16 \u00d7 16 pixel windows with a four-pixel separation, which yielded a spatial resolution of 7 microns.\n\n### Flow rate calculations\n\nFlow rates through different sections of the cardiac chambers were calculated from the PIV measurements using\n\n$$\nQ=\\int_{a}^{b}v\u2192\u2219n\u2192dl\n$$\n\nwhere $v\u2192$ is the velocity vector obtained by PIV, $n\u2192$\u00a0is the vector normal to the user-drawn cross-section (i.e. lines), and $dl$(= 4 pixels) is the discrete length spacing used to numerically calculate the integral. Multiple lines were drawn in/across the desired regions of the heart (ventricle, atrium or AVC) by selecting two points, a and b, per line and obtaining measurements of flow velocity and direction. Three to five measurements performed in at least two different stacks were used to calculate the average flow velocity and direction in each specific region. The calculated average flow velocity and direction was represented versus time for the total duration of a complete heart cycle. This plot was used to create the specific flow profiles for each region of interest.\n\n### Fundamental harmonic index calculations\n\nThe Fundamental Harmonic Index was computed as the ratio Q1/Q0 between the amplitudes of the fundamental frequency flow harmonic (1st harmonic, Q1) and the time-averaged flow (0th harmonic, Q0) (Heckel et al., 2015). These amplitudes were determined from the first and second coefficients of the Fourier transform of the previously calculated flow profiles from ventricles, AVC and atria, using the FFT function in MATLAB (Mathworks, Natick, MA). The profiles of three different hearts were used for each condition.\n\n### Small molecules and chemical treatments\n\nTo decrease cardiac contractility after MTZ (ablated) or DMSO (control) treatments, fish were immediately incubated in egg water with 1 mg/ml of tricaine (Sigma, St. Louis, MO) or 10 \u03bcM of blebbistatin (Sigma, St. Louis, MO) for 12 hr and then washed three times for analyses. To inhibit BMP or Erbb2 signaling after MTZ (ablated) or DMSO (control) treatments, fish were immediately treated with 10 \u03bcM Dorsomorphin (DM) (Sigma, St. Louis, MO) or 5 \u03bcM AG1478 (Sigma, St. Louis, MO), respectively. Fish were treated for 24, 48, or 72 hr as indicated. To inhibit BMP, Erbb2 or Notch signaling after MTZ (ablated) or DMSO (control) treatments, fish were immediately treated with 10 \u03bcM Dorsomorphin (DM) (Sigma, St. Louis, MO), 5 \u03bcM AG1478 (Sigma, St. Louis, MO), or 10 mM DAPT (Sigma, St. Louis, MO) until indicated time for each experiment.\n\n### Myocardial BMP activation\n\nTo study the myocardial activation of BMP signaling, 5 dpf Tg(BRE:d2GFP; vmhc:mCherry-NTR) fish were treated with DMSO (control) or MTZ (ablated) as described. Fish were subsequently treated with DMSO, DAPT or blebbistatin as described above. To determine the presence of BRE:d2GFP, hearts were imaged with a Nikon C2 confocal microscopy at 48 hpt. An average of 25 serial 5 \u03bcm stacks was acquired for each heart. To identify BRE:d2GFP/vmhc:mCherry-NTR double positive co-expressing cells, individual stacks were analyzed with ImageJ (NIH, Bethesda, MD).\n\n### Statistical analysis\n\nBox plots and statistical analysis were performed using GraphPad Prism 7. ANOVA, un-paired Student\u2019s t or Binomial tests were used as indicated in the corresponding figure legends.\n\n### Ethics\n\nAnimal experimentation: All procedures involving animals were in accordance with the National Institutes of Health Guide for the care and use of Laboratory Animals, and approved by the University of California at San Diego Institutional Animal Care and Use Committee (IACUC) (Protocol number S08316).\n",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "bbd57c3f-3120-47c7-9eac-765aa8976e3d",
+      "submission_id": "cff69646-388c-41d2-9d10-80fe9cccdf3f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, California Institute of Technology United States\n\nReviewers:\n- Ian C Scott, The Hospital for Sick Children Canada\n\n## Review text\n\nDOI: [10.7554/eLife.44816.039](https://doi.org/10.7554/eLife.44816.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your article entitled \"Hemodynamic-mediated endocardial signaling controls in vivo myocardial reprogramming\" for peer review at eLife. Your article is being evaluated by Marianne Bronner as the Senior Editor, a Reviewing Editor, and three reviewers.\n\nAll of the reviewers see merit in the manuscript but also raise issues that will require extensive revisions. Our concern is that these revisions may take a considerable time beyond the two to three months required for a revision in eLife. Given the list of essential revisions, including new experiments, the editors and reviewers invite you to respond within the next two weeks with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a binding recommendation. The reviewers' comments are detailed below.\n\nReviewer #1:\n\nIn this manuscript, Chi and colleagues describe an endocardial to myocardial signalling pathway that mediates cardiomyocyte (CM) reprogramming and proliferation in the embryonic zebrafish ventricular ablation model. Increased oscillatory flow, sensed in part by the Trpv4 mechanosensory channel, is required to activate endocardial Klf2 and Notch activity, which in turn influences Bmp and Erbb2 activity in CMs. While these components have all been shown to influence cardiac development, and in many cases adult cardiac regeneration, this work provides a holistic analysis of this pathway in the embryonic setting.\n\nOverall, the manuscript is clearly written, with well presented and supported experimental results.\n\nComments:\n\n1) The data for the Notch response in Figure 1\u2014figure supplement 2 is somewhat confusing. Heightened Notch reporter activity in the ventricle is shown/discussed (panels A and B), yet Notch1b expression in panel F is clearly atrial, yet called \"throughout the heart\" in the text. This should be clarified.\n\n2) In Figure 1\u2014figure supplement 3 panel L, nkx2.5 appears to be induced in the atrium, but not ventricle, following Notch inhibition. Does this imply incomplete reprogramming of atrial CMs? Again, this should be discussed. Are these representative images?\n\n3) In Figure 2\u2014figure supplement 1, it is unclear what is being counted as a klf2/tp1 (Notch) double-positive cell, especially given the red colour of the NTR transgene as well.\n\n4) The authors present and support a model where alterations/increases in oscillatory flow trigger an endocardial to myocardial cascade that initiates cardiac reprogramming/proliferation. However, regeneration of the embryonic heart following full (cmlc2:NTR-based) CM ablation has been reported (Curado, 2007/2008), where presumable blood flow is minimal.\n\nReviewer #2:\n\nIn this manuscript, G\u00e1lvez-Santisteban et al., use a nice set of biophysical and genetic assays to characterize injury-induced cellular responses in embryonic hearts. The main conclusion is that cardiac injury alters oscillatory blood flow and induces Trpv4-mediated Klf2-Notch signaling in endocardial cells to regulate cardiomyocyte reprogramming and regeneration in erbb2 and bmp dependent manner. While this manuscript is clearly written and the data are nicely presented, a better characterization of the injury model and more robust assays for regeneration are needed before publication.\n\n1) In this study, the assessment of cardiac regeneration is primarily based on pH3 staining (~4 cells per heart). More robust assays for cardiomyocyte proliferation and cardiac function will strengthen the data.\n\n2) A recent study shows that the embryonic heart cannot fully recover from the ablation of a small population of cardiomyocytes. The injured hearts develop trabeculation defects which ultimately lead to heart failure. In this study, the ablation covers the entire ventricle, yet the majority of ablated embryos display recovered ventricular morphology and function at 9 dpf. To clarify the discrepancy, it would be helpful if the authors could elaborate on how they assess the efficiency of ablation and the recovery of function and morphology.\n\nReviewer #3:\n\nThe authors report the consequences of heart injury in the adult zebrafish, after metronidazole mediated ablation of ventricular cardiomyocytes. Using a range of genetically modified fishes and drug treatments, they identify a hemodynamic sensitive repair mechanism, mediated by endocardial Klf2a and Notch signalling, promoting cardiomyocyte proliferation in both the ventricle and atrium, as well as atrial-to-ventricle cardiomyocyte contribution. This response reactivates a pathway involved in myocardium trabeculation, in which endocardial Notch promotes cardiomyocyte proliferation via Bmp and erbb2 signalling.\n\nThe topic of heart repair is of high interest because of the major medical issue, but also the complexity emerging from the growing number of pathways involved in experimental models. By combining sophisticated genetics and hemodynamic measures with standard molecular and cellular analyses, the article identifies a novel repair mechanism. However, there are some important issues to address and the writing of the manuscript requires clarifications.\n\nIt is unclear why the response to injury is qualified as reprogramming. Reprogramming is used in the context of conversion of cardiac fibroblasts into cardiomyocytes, or of cardiomyocytes into pluripotent stem cells, and is associated with an erasure of epigenetic marks in the genome. What is the rationale here to refer to reprogramming and not just activation of proliferation? For example, atrial cardiomyocytes may be \"pushed\" from a crowded chamber to the necrotic ventricular region, where they could start to express vmhc. Is there a precursor state that cardiomyocytes need to revert to, to elicit a response? To which stage in normal development is this precursor state similar? What are the changes at the level of the genome? The observations that gata4, nkx2.5 and hand2 are activated is not convincing, since it is unclear whether this activation is in the endocardium or myocardium and whether it is required for the repair response. Hand2 is known to be activated in the endocardium downstream of Notch during trabeculation (PMID 25497097), gata4 is known to be expressed in endocardial cells (ex PMID 16914500).\n\nThe conclusion on \"regeneration\" is overstated. The quantification shown as \"percentage of fish\" presumably corresponds to the survival rates, whereas a conclusion on regeneration would require the recovery of the tissue to be quantified. How many cardiomyocytes are lost after metronidazole treatment? How many are recovered at 72hpt, and which percentage derives from atrial cells? These quantifications are important to discuss the relative importance of the growing number of repair mechanisms. The effect of ventricular necrosis seen with vmhc:mCherry after 24hpt in Figure 1\u2014figure supplement 3, Figure 3J-M, Figure 5F-H seems less dramatic compared to previous Zhang et al., 2013 publication. So how variable is the injury? Does this affect the valves, which would in itself promote retrograde flow?\n\nThe localisation of the response is always described as \"throughout the heart\". However, images show some degree of regionalisation, which is not discussed. The boundary of the injured area, which is also the valve region, is more affected by klf2a, notch reporter, nrg1 activation. Thus, is the hemodynamic response confined to the boundary zone? Or to the valve region which is competent to activate klf2a? Please explain the discrepancy between the Tp1 Notch reporter, activated in the ventricle, and notch1 expression, more striking in the atrium.\n\nThe interpretation of blebbistatin as a perturbation of hemodynamics is questionable, given that this drug also impacts proliferation (decreased in control hearts) and cell migration. Is the flow oscillatory in gata2 mutants? Is blood flow affected in trpv4 mutants?\n\nThe use of drugs requires control experiments to show the impact on targeted signalling pathways in this context (Figure 6).\n\nThe conclusion that endocardial Notch promotes myocardial Bmp and erbb2 signalling is not demonstrated in this context. Whether Bmp and erbb2 signalling are confined to, or required, in the myocardium is not shown in this context, but only based on literature in the context of trabeculation.\n\nThe Discussion section should be extended to comment the limitations/open questions of the study and the impact of the hemodynamic response for heart regeneration compared to alternative pathways, in terms of quantitative contribution, kinetics or regionalisation. The level of similarities between fish and mouse heart repair can also be discussed, rather than assumed. The last sentence is overstated.\n",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ea973247-814e-4d38-b94e-a9a0beae443f",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C1",
+      "claim": "Lower vertebrate and neonatal mammalian hearts exhibit the capacity to regenerate through the reprogramming of pre-existing cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower vertebrate and neonatal mammalian hearts exhibit the remarkable capacity to regenerate through the reprogramming of pre-existing cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about cardiac regeneration capacity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "bd9742ff-2510-40f6-b5cb-d7bb1e30c8bb",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C2",
+      "claim": "Altered hemodynamic forces due to cardiac injury activate a sequential endocardial-myocardial signaling cascade to direct cardiomyocyte reprogramming and heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we utilize in vivo biophysical and genetic fate mapping zebrafish studies to reveal that altered hemodynamic forces due to cardiac injury activate a sequential endocardial-myocardial signaling cascade to direct cardiomyocyte reprogramming and heart regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study as stated in the abstract, supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "37281c5b-215b-41b1-b971-58a8b6b1ef83",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C3",
+      "claim": "Altered hemodynamic forces are sensed by the endocardium through the mechanosensitive channel Trpv4.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, these altered forces are sensed by the endocardium through the mechanosensitive channel Trpv4 to control Klf2a transcription factor expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data using trpv4 mutants shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "08498c77-7f29-4748-9fb7-64710831ad53",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C4",
+      "claim": "Trpv4 controls Klf2a transcription factor expression in the endocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, these altered forces are sensed by the endocardium through the mechanosensitive channel Trpv4 to control Klf2a transcription factor expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 5 showing reduced klf2a expression in trpv4 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "f6703b9d-a006-4992-a908-23edc756c24c",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C5",
+      "claim": "Klf2a activates endocardial Notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, Klf2a then activates endocardial Notch signaling which results in the non-cell autonomous initiation of myocardial Erbb2 and BMP signaling to promote cardiomyocyte reprogramming and heart regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 5 showing reduced Notch signaling in klf2a mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "a3de82ff-c2c0-43c4-b0c7-bc8c28a19e72",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C6",
+      "claim": "Endocardial Notch signaling initiates myocardial Erbb2 signaling non-cell autonomously.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, Klf2a then activates endocardial Notch signaling which results in the non-cell autonomous initiation of myocardial Erbb2 and BMP signaling to promote cardiomyocyte reprogramming and heart regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 7 showing reduced Erbb2 pathway components after Notch inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "b7aafbb4-98a4-479f-80a7-ce85207dcd52",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C7",
+      "claim": "Endocardial Notch signaling initiates myocardial BMP signaling non-cell autonomously.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, Klf2a then activates endocardial Notch signaling which results in the non-cell autonomous initiation of myocardial Erbb2 and BMP signaling to promote cardiomyocyte reprogramming and heart regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 7 showing reduced BMP signaling after Notch inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "196c2f9b-a50e-4be2-8e16-4ad7f13c0e43",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C8",
+      "claim": "Myocardial Erbb2 and BMP signaling promote cardiomyocyte reprogramming and heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, Klf2a then activates endocardial Notch signaling which results in the non-cell autonomous initiation of myocardial Erbb2 and BMP signaling to promote cardiomyocyte reprogramming and heart regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 6 showing reduced cardiomyocyte proliferation and regeneration after BMP and Erbb2 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "afd0c8c3-92e5-43d0-8ebc-650fa0c5a095",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C9",
+      "claim": "Neonatal mammalian hearts can regenerate through cardiomyocyte de-differentiation and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, this reprogramming can lead to CM de-differentiation by activating cardiac developmental transcription factors to adaptively create more CMs for regenerating neonatal hearts via proliferation (Porrello et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to Porrello et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "bf7de004-fd3a-4b7f-b58b-b5533db7fc60",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C10",
+      "claim": "Zebrafish ventricular cardiomyocytes can de-differentiate to produce more cardiomyocytes during heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while zebrafish ventricular CMs can de-differentiate to produce more of these CMs during heart regeneration in a manner similar to neonatal mammalian hearts (Jopling et al., 2010; Kikuchi et al., 2010), zebrafish atrial CMs also retain sufficient plasticity to trans-differentiate in order to create new ventricular CMs for regenerating cardiac ventricles (Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to Jopling et al., 2010 and Kikuchi et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "7c2c065a-41fc-4467-9c6d-ce0aff4a9bf8",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C11",
+      "claim": "Zebrafish atrial cardiomyocytes can trans-differentiate to create new ventricular cardiomyocytes for regenerating cardiac ventricles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while zebrafish ventricular CMs can de-differentiate to produce more of these CMs during heart regeneration in a manner similar to neonatal mammalian hearts (Jopling et al., 2010; Kikuchi et al., 2010), zebrafish atrial CMs also retain sufficient plasticity to trans-differentiate in order to create new ventricular CMs for regenerating cardiac ventricles (Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to Zhang et al., 2013, and further confirmed by lineage tracing experiments in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "a9635600-7b44-44a4-b487-8396768a2341",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C12",
+      "claim": "Notch, BMP and Erbb2 signaling participate in modulating heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Although several signaling cues including Notch, BMP and Erbb2 participate in modulating heart regeneration (D'Uva et al., 2015; Gemberling et al., 2015; Mahmoud et al., 2015; M\u00fcnch et al., 2017; Polizzotti et al., 2015; Wu et al., 2016; Xiang et al., 2016; Zhang et al., 2013; Zhao et al., 2014), how cardiac injury activates these pathways to initiate CM reprogramming and heart regeneration remains to be elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "dec19e81-7a5d-4002-ace0-e304ddec17a9",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C13",
+      "claim": "Biomechanical forces generated by blood flow can contribute to heart development through modulating Notch, BMP and Erbb2 signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have revealed that biomechanical forces generated by blood flow can contribute significantly to heart development through modulating Notch, BMP and Erbb2 signaling pathways (Dietrich et al., 2014; Goddard et al., 2017; Heckel et al., 2015; Lee et al., 2016; Peshkovsky et al., 2011; Rasouli and Stainier, 2017; Samsa et al., 2015; Steed et al., 2016; Vermot et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "9af8c2b6-d23b-4950-9353-d37ceec82a61",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C14",
+      "claim": "Hemodynamic forces activate the endocardial flow-sensitive transcription factor Klf2 during cardiac valve development.",
+      "claim_type": "EXPLICIT",
+      "source": "During mammalian and zebrafish cardiac valve development, hemodynamic forces activate the endocardial flow-sensitive transcription factor Klf2 as well as Notch signaling to sculpt the atrio-ventricular valve (Goddard et al., 2017; Heckel et al., 2015; Steed et al., 2016; Vermot et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "0fd31b78-e43d-4f43-bfd7-58a6c848fad8",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C15",
+      "claim": "Hemodynamic forces activate Notch signaling during cardiac valve development.",
+      "claim_type": "EXPLICIT",
+      "source": "During mammalian and zebrafish cardiac valve development, hemodynamic forces activate the endocardial flow-sensitive transcription factor Klf2 as well as Notch signaling to sculpt the atrio-ventricular valve (Goddard et al., 2017; Heckel et al., 2015; Steed et al., 2016; Vermot et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "e11fafbf-3ee6-4dfe-9582-16764010062b",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C16",
+      "claim": "Hemodynamic forces regulate endocardial Notch signaling and myocardial Erbb2 signaling to promote cardiomyocyte proliferation and migration during cardiac trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these forces regulate not only endocardial Notch signaling but also myocardial Erbb2 signaling to promote the proliferation and migration of CMs during cardiac trabeculation (Lee et al., 2016; Peshkovsky et al., 2011; Rasouli and Stainier, 2017; Samsa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "824b75f7-3186-45a3-b824-479da5439945",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C17",
+      "claim": "MTZ treatment of vmhc:mCherry-NTR zebrafish results in extensive cardiomyocyte death within the ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Zhang et al., 2013), MTZ treatment results initially in extensive CM death within the ventricle as detected by TUNEL staining (Figure 1\u2014figure supplement 1A\u2013C), and then a subsequent CM proliferative response in both ventricle and atrium as detected by both phospho-histone H3 studies and EdU staining (Figure 1A\u2013E,L\u2013P, Figure 1\u2014figure supplement 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by TUNEL staining data shown in Figure 1\u2014figure supplement 1A-C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "68b37c26-75c5-4a32-83d0-2e88d1119232",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C18",
+      "claim": "MTZ treatment of vmhc:mCherry-NTR zebrafish results in a subsequent cardiomyocyte proliferative response in both ventricle and atrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Zhang et al., 2013), MTZ treatment results initially in extensive CM death within the ventricle as detected by TUNEL staining (Figure 1\u2014figure supplement 1A\u2013C), and then a subsequent CM proliferative response in both ventricle and atrium as detected by both phospho-histone H3 studies and EdU staining (Figure 1A\u2013E,L\u2013P, Figure 1\u2014figure supplement 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by phospho-histone H3 and EdU staining data shown in Figure 1A-E, L-P and Figure 1\u2014figure supplement 1D-F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "f01f05a4-6270-4dcf-b8be-af99e623b15d",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C19",
+      "claim": "Cardiomyocyte proliferation after ventricular ablation leads to recovery of both ventricular tissue and contractile function at 96 hr post-MTZ treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, this CM proliferation leads to recovery of both ventricular tissue and contractile function at 96 hr post-MTZ treatment (hpt) (Figure 1\u2014figure supplement 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by ventricular area and fractional area change measurements shown in Figure 1\u2014figure supplement 1G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "1089618e-5d7c-44bf-89a0-2bfa3e64b9c5",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C20",
+      "claim": "Differentiated atrial cardiomyocytes cannot contribute to uninjured hearts at 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while differentiated atrial CMs cannot contribute to uninjured hearts at this stage (Foglia et al., 2016) (Figure 1\u2014figure supplement 2), they do trans-differentiate into new ventricular CMs which help to recover the injured ventricle as previously reported (Zhang et al., 2013) (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by lineage tracing data in Figure 1\u2014figure supplement 2 and citation to Foglia et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "44a763d7-a0fc-4a25-a275-ff2eab2b116b",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C21",
+      "claim": "Differentiated atrial cardiomyocytes trans-differentiate into new ventricular cardiomyocytes to help recover the injured ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while differentiated atrial CMs cannot contribute to uninjured hearts at this stage (Foglia et al., 2016) (Figure 1\u2014figure supplement 2), they do trans-differentiate into new ventricular CMs which help to recover the injured ventricle as previously reported (Zhang et al., 2013) (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by lineage tracing data in Figure 1G,H and citation to Zhang et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "7d63314c-2dd9-4414-9976-7017325e93ff",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C22",
+      "claim": "Tp1:eGFP Notch reporter signaling activity is elevated throughout vmhc:mCherry-NTR ventricle-ablated hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous Notch signaling studies during cardiac regeneration (Zhang et al., 2013), we discovered elevated Tp1:eGFP Notch reporter signaling activity throughout these vmhc:mCherry-NTR ventricle-ablated hearts (Figure 1\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by imaging data in Figure 1\u2014figure supplement 3A,B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "3a3e6a9a-b5ec-4453-b389-7c1d01bcd459",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C23",
+      "claim": "Endocardial Notch activity is specifically elevated in the endocardium within the AVC and its surrounding atrial and ventricular regions after ventricular injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that endocardial Notch activity is specifically elevated in the endocardium within the AVC and its surrounding atrial and ventricular regions but reduced furthest away from the AVC (Figure 1\u2014figure supplement 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Tp1:d2GFP imaging data in Figure 1\u2014figure supplement 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "5bb4cf0b-22ed-404b-8861-91f46a63da53",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C24",
+      "claim": "notch1b is expressed in a similar pattern to Tp1:d2GFP in ventricle-injured hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming these findings, we also detected by in situ hybridization that notch1b is also expressed in a similar pattern in ventricle-injured hearts (Figure 1\u2014figure supplement 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by in situ hybridization data in Figure 1\u2014figure supplement 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "e4cfc8b2-6f01-4ef3-84f4-9887f5964e3f",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C25",
+      "claim": "Injury-induced endocardial Notch activity peaks at 24 hpt but diminishes as the heart regenerates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this injury-induced endocardial Notch activity peaks at 24 hpt but diminishes as the heart regenerates (Figure 1\u2014figure supplement 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by time-course Tp1:d2GFP quantitation in Figure 1\u2014figure supplement 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "78467650-c3b2-4585-a726-a849034c3e62",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C26",
+      "claim": "By 96 hpt, Notch activity in ablated hearts returns to levels similar to control hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "By 96 hpt, this Notch activity in the ablated hearts returns to levels similarly observed in control hearts (Figure 1\u2014figure supplement 3G) and correlates to when ventricular tissue and contractility have recovered (Figure 1\u2014figure supplement 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Tp1:d2GFP quantitation in Figure 1\u2014figure supplement 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "5f7dc3a9-833f-4cfd-b019-e66ada23872d",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C27",
+      "claim": "Global dnMAML Notch inhibition prevents cardiomyocytes from proliferating in injured hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy imaging of heat-shocked/HS (A, B, L, M) vmhc:mCherry-NTR, (C, D) vmhc:mCherry-NTR; hsp70l:dnM and (N, O) vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM hearts reveals that (D) global or (O) endocardial-specific dnMAML (dnM) Notch inhibition inhibits CM proliferation in ventricle-ablated hearts at 48 hpt (7 dpf) when compared to (B, M) CM proliferation in control ventricle-ablated (no dnMAML) hearts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend and shown in Figure 1A-E with quantitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "0b3566cd-8f1b-47fd-b300-9b04facf56b1",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C28",
+      "claim": "Endocardial-specific dnMAML Notch inhibition prevents cardiomyocytes from proliferating in injured hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy imaging of heat-shocked/HS (A, B, L, M) vmhc:mCherry-NTR, (C, D) vmhc:mCherry-NTR; hsp70l:dnM and (N, O) vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM hearts reveals that (D) global or (O) endocardial-specific dnMAML (dnM) Notch inhibition inhibits CM proliferation in ventricle-ablated hearts at 48 hpt (7 dpf) when compared to (B, M) CM proliferation in control ventricle-ablated (no dnMAML) hearts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend and shown in Figure 1L-P with quantitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "ad00bf3e-30f9-478e-a9e9-f183d0a3459f",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C29",
+      "claim": "Global Notch inhibition between 0 and 1 dpt leads to the greatest inhibitory effect on overall recovery from ventricle injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of the percentage of heat-shocked vmhc:mCherry-NTR, vmhc:mCherry-NTR; hsp70l:dnM and vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM ventricle-ablated hearts that display recovered ventricular tissue and contractility (black bars) at 96 hpt (nine dpf) shows that (F) global or (Q) endocardial-specific Notch inhibition between 0 and 1 dpt leads to the greatest inhibitory effect on overall recovery from ventricle injury.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend and shown in Figure 1F with quantitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "7dd72eb5-2e31-46a8-99f5-3de2a88aa610",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C30",
+      "claim": "Endocardial-specific Notch inhibition between 0 and 1 dpt leads to the greatest inhibitory effect on overall recovery from ventricle injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of the percentage of heat-shocked vmhc:mCherry-NTR, vmhc:mCherry-NTR; hsp70l:dnM and vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM ventricle-ablated hearts that display recovered ventricular tissue and contractility (black bars) at 96 hpt (nine dpf) shows that (F) global or (Q) endocardial-specific Notch inhibition between 0 and 1 dpt leads to the greatest inhibitory effect on overall recovery from ventricle injury.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend and shown in Figure 1Q with quantitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "56277319-f0fb-4580-926b-e3e99415ca65",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C31",
+      "claim": "Heat-shock induction of dnMAML-GFP inhibits the ability of genetically labeled atrial cardiomyocytes to contribute to the regeneration of ventricle-ablated hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy imaging at 72 hpt (8 dpf) reveals that (J) heat-shock induction of dnM inhibited the ability of genetically labeled c-aYFP+ atrial CMs to contribute to the regeneration of ventricle-ablated hearts when compared to (H) heat-shock control ventricle-ablated hearts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend and shown in Figure 1G-K with quantitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "4d660dda-5bd6-430c-94e8-9f5e85751f43",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C32",
+      "claim": "dnMAML Notch inhibition prevents atrial cardiomyocytes from regenerating the injured ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of the percentage of ventricular area covered with c-aYFP+ CMs supports that dnMAML Notch inhibition prevents atrial CMs from regenerating the injured ventricle (n = 8 hsp70:dnM-, seven hsp70l:dnM+).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend and shown in Figure 1K with quantitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "bcbb4777-8f9e-46f6-90db-fd7942646496",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C33",
+      "claim": "Endocardial-specific dnMAML expression decreases gata4, hand2 and nkx2.5 reactivation in ventricle-ablated hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-mount in situ hybridizations of heat-shocked (P, Q, T, U, X, Y) vmhc:mCherry-NTR or (R, S, V, W, Z, Z') vmhc:mCherry-NTR; kdrl:Cre; hsp70l:RS-dnM hearts show that endocardial expression of dnM decreases (S) gata4 (n = 2/16), (W) hand2 (n = 0/5) and (Z') nkx2.5 (n = 1/7) reactivation in ventricle-ablated hearts at 48 hpt (7 dpf) when compared to (Q, U, Y) control ventricle-ablated (no dnM) hearts (n = 16/18, gata4; n = 8/8, hand2; n = 10/10, nkx2.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1\u2014figure supplement 4 legend and shown in Figure 1\u2014figure supplement 4P-Z'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "e8a1e195-b6e4-40f5-bcae-40e9e1922e76",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C34",
+      "claim": "vmhc:mCherry-NTR ventricle-ablated hearts display retrograde blood flow from the ventricle to the atrium during atrial diastole and ventricular systole.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to uninjured hearts which exhibit forward blood flow from atrium to ventricle throughout the cardiac cycle (Figure 2A,C, Figure 2\u2014video 1 and Figure 2\u2014video 3), we discovered that vmhc:mCherry-NTR ventricle-ablated hearts at 24 hpt display retrograde blood flow from the ventricle to the atrium during atrial diastole and ventricular systole (Figure 2B,D, Figure 2\u2014video 2 and Figure 2\u2014video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by PIV analysis shown in Figure 2A-D and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "8106221e-1663-4fd8-88f4-db5fbcdde23b",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C35",
+      "claim": "Altered blood flow in injured hearts results in oscillatory fluctuations of positive (anterograde) and negative (retrograde) intracardiac flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional PIV analyses measuring blood flow velocity within various representative regions of these hearts revealed that this altered blood flow in injured hearts results in oscillatory fluctuations of positive (anterograde) and negative (retrograde) intracardiac flow (Figure 2D\u2013D''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by PIV analysis shown in Figure 2D-D'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "9b41fb6a-d48a-4657-a81e-1ebdc4f40a1a",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C36",
+      "claim": "Oscillatory blood flow is significantly increased throughout the atrium, AVC and ventricle in ventricle-ablated hearts compared to uninjured control hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Through calculating the fundamental harmonic index (FHI = Q1/Q0, where Q1 is the amplitude of the fundamental frequency flow harmonic and Q0, the time-averaged flow) (Heckel et al., 2015) of blood flow within the atrium, AVC and ventricle, we further quantitated and confirmed that oscillatory blood flow is significantly increased throughout these regions in ventricle-ablated hearts when compared to similar regions in uninjured control hearts (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by FHI quantitation shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "66b4fff5-1686-4620-aa8b-33e205b5551f",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C37",
+      "claim": "klf2a expression is expanded in injured hearts and present in both the AVC and the surrounding ventricular and atrial regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridizations revealed that klf2a expression, which primarily is located in specific regions of the AVC of uninjured hearts (Figure 2F), is expanded in injured hearts and present in both the AVC and the surrounding ventricular and atrial regions (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by in situ hybridization data in Figure 2F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "34d69988-aa6f-45cc-ac0e-7f10a2975b8e",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C38",
+      "claim": "klf2a:H2B-GFP expression is increased in areas of the heart exhibiting increased oscillatory flow including the AVC and its surrounding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Tg(klf2a:H2B-GFP) line, which expresses nuclear-GFP in response to changes in hemodynamic flow/stress (Heckel et al., 2015), we not only confirmed these findings (Figure 2H\u2013J) but also created a heat-map showing that klf2a:H2B-GFP expression is increased in those areas of the heart exhibiting increased oscillatory flow including the AVC and its surrounding regions (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by klf2a:H2B-GFP imaging data in Figure 2H-J and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "944c8d79-5074-4f1f-a8e4-d33d261c80c9",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C39",
+      "claim": "klf2a:H2B-GFP signal overlaps with Tp1:d2GFP Notch reporter activity in ablated and control hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this klf2a:H2B-GFP signal overlaps with Tp1:d2GFP Notch reporter activity in ablated (and control) hearts (Figure 2\u2014figure supplement 1B), suggesting that these signals may be modulated by blood flow dynamics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by imaging data in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "e5000153-7777-46c7-8663-fb3031eb8746",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C40",
+      "claim": "Nearly all endocardial Tp1:nls-mCherry+ cells in injured hearts co-express the klf2a:H2B-GFP reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting that Klf2a may regulate Notch receptor expression and/or activity in response to hemodynamic flow changes as previously suggested during valve morphogenesis in zebrafish (Vermot et al., 2009), we further observed that nearly all endocardial Tp1:nls-mCherry+ cells in these hearts co-express the klf2a:H2B-GFP reporter (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by co-localization data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "c63e7289-f693-4ecc-92f8-6b9416d6f3ce",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C41",
+      "claim": "Blebbistatin treatment reduces klf2a:H2B-GFP activity at the AVC of uninjured hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Under each condition, we observed that klf2a:H2B-GFP activity is reduced at the AVC of uninjured hearts as previously reported (Heckel et al., 2015) (Figure 3E, Figure 3\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by imaging data in Figure 3E and Figure 3\u2014figure supplement 1A-D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "3c4dda69-2dde-479f-ad88-d94c0c793fe8",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C42",
+      "claim": "Tricaine treatment reduces klf2a:H2B-GFP activity at the AVC of uninjured hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Under each condition, we observed that klf2a:H2B-GFP activity is reduced at the AVC of uninjured hearts as previously reported (Heckel et al., 2015) (Figure 3E, Figure 3\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by imaging data in Figure 3E and Figure 3\u2014figure supplement 1A-D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "d49a5834-eb03-4271-9ab0-3e226ffa86ac",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C43",
+      "claim": "gata2a mutants reduce klf2a:H2B-GFP activity at the AVC of uninjured hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Under each condition, we observed that klf2a:H2B-GFP activity is reduced at the AVC of uninjured hearts as previously reported (Heckel et al., 2015) (Figure 3E, Figure 3\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by imaging data in Figure 3E and Figure 3\u2014figure supplement 1A-D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "65f1b474-ee9a-4115-b581-b732ff474d08",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C44",
+      "claim": "Blebbistatin, tricaine, and gata2a mutant conditions reduce the activation of klf2a:H2B-GFP and klf2a expression throughout ventricle-injured hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, these conditions also reduce the activation of klf2a:H2B-GFP and klf2a expression throughout ventricle-injured hearts (Figure 3A\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by imaging and in situ hybridization data in Figure 3A-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "aa356185-202b-44c5-a6da-eece45fbbf74",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C45",
+      "claim": "Tp1:d2GFP Notch reporter activity and notch1b expression are hemodynamic-sensitive in both uninjured and ventricle-ablated hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these results, we further observed that Tp1:d2GFP Notch reporter activity and notch1b expression is also hemodynamic-sensitive in both uninjured (Figure 3\u2014figure supplement 1E\u2013L) and ventricle-ablated hearts (Figure 3J\u2013R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by imaging and in situ hybridization data in Figure 3J-R and Figure 3\u2014figure supplement 1E-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "8dc51c48-237f-47b7-bbb4-1556e557518a",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C46",
+      "claim": "Klf2a and Notch reporter and gene expression are significantly reduced after blocking contractility with blebbistatin or tricaine.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Klf2a and Notch reporter and gene expression are significantly reduced after blocking contractility with blebbistatin or tricaine, we observed that they are less affected in gata2a mutants (Figure 3E,N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by quantitation in Figure 3E,N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "828f6ac4-5359-4683-8d55-01282a0a5d8b",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C47",
+      "claim": "Klf2a and Notch reporter and gene expression are less affected in gata2a mutants compared to blebbistatin or tricaine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Klf2a and Notch reporter and gene expression are significantly reduced after blocking contractility with blebbistatin or tricaine, we observed that they are less affected in gata2a mutants (Figure 3E,N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by quantitation in Figure 3E,N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "a31ce062-72ed-4a60-a754-0a24ccefc841",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C48",
+      "claim": "Ventricle-ablated hearts display reduced activation of gata4, hand2 and nkx2.5 under conditions of altered hemodynamic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "For each condition, ventricle-ablated hearts display reduced activation of the early cardiac transcription factors gata4, hand2 and nkx2.5 (Figure 4\u2014figure supplement 1) as well as decreased CM proliferation (Figure 4A\u2013E), which significantly impair overall recovery from ventricular injury (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by in situ hybridization data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "6813acc9-a41e-4e75-971d-ba41a66022ea",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C49",
+      "claim": "Ventricle-ablated hearts display decreased cardiomyocyte proliferation under conditions of altered hemodynamic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "For each condition, ventricle-ablated hearts display reduced activation of the early cardiac transcription factors gata4, hand2 and nkx2.5 (Figure 4\u2014figure supplement 1) as well as decreased CM proliferation (Figure 4A\u2013E), which significantly impair overall recovery from ventricular injury (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by proliferation quantitation in Figure 4A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "8122658f-97d5-4e8f-a4e1-7cbe701f3fec",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C50",
+      "claim": "Altered hemodynamic stress significantly impairs overall recovery from ventricular injury.",
+      "claim_type": "EXPLICIT",
+      "source": "For each condition, ventricle-ablated hearts display reduced activation of the early cardiac transcription factors gata4, hand2 and nkx2.5 (Figure 4\u2014figure supplement 1) as well as decreased CM proliferation (Figure 4A\u2013E), which significantly impair overall recovery from ventricular injury (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by recovery quantitation in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "7b31757a-989a-4530-bd73-eea406d8c3fc",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C51",
+      "claim": "Reducing blood flow and viscosity significantly reduces the contribution of genetically labeled atrial cardiomyocytes to the ventricle after ventricle ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a combination of Tg(amhc:CreERT2) and Tg(\u03b2-actin2:loxP-DsRed-STOP-loxP-eGFP) [or Tg(\u03b2-actin2:RSG)] lines to genetically label atrial CMs (c-aGFP+), we also discovered that reducing blood flow and viscosity under these conditions significantly reduces the contribution of c-aGFP+ labeled atrial CMs to the ventricle after ventricle ablation (Figure 4G\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by lineage tracing data in Figure 4G-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "f5db449b-9468-491b-a69a-c16205bebf82",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C52",
+      "claim": "trpv4 mutants do not exhibit retrograde blood flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recent studies suggesting that Trpv4 controls klf2a expression (Heckel et al., 2015), we observed that trpv4 mutants, which do not exhibit retrograde blood flow (Figure 5\u2014videos 1, 2), display reduced klf2a:H2B-GFP expression in not only uninjured (control) but also ventricle-ablated hearts (Figure 5A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by video data in Figure 5\u2014videos 1, 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "3e735a95-829a-448d-9816-1e4e069d195c",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C53",
+      "claim": "trpv4 mutants display reduced klf2a:H2B-GFP expression in uninjured and ventricle-ablated hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recent studies suggesting that Trpv4 controls klf2a expression (Heckel et al., 2015), we observed that trpv4 mutants, which do not exhibit retrograde blood flow (Figure 5\u2014videos 1, 2), display reduced klf2a:H2B-GFP expression in not only uninjured (control) but also ventricle-ablated hearts (Figure 5A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by imaging data in Figure 5A-E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "64896aac-3451-41ff-a704-9173529edf14",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C54",
+      "claim": "trpv4 and klf2a mutants display reduced Tp1:d2GFP Notch reporter and notch1b expression in uninjured and ventricle-ablated hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that both trpv4 and klf2a mutants also display reduced Tp1:d2GFP Notch reporter and notch1b expression in the uninjured (control) and ventricle-ablated hearts (Figure 5F\u2013L, Figure 5\u2014figure supplement 1), we further examined the ability of these mutants to regenerate ablated ventricles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by imaging and in situ hybridization data in Figure 5F-L and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "26aad202-e8e4-4ef7-a1f3-4b568a922dd5",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C55",
+      "claim": "klf2a and trpv4 ventricle-injured mutant hearts exhibit reduced activation of early cardiac transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to reducing hemodynamic blood flow and shear stress, we discovered that klf2a and trpv4 ventricle-injured mutant hearts exhibit reduced activation of early cardiac transcription factors (Figure 5\u2014figure supplement 2) as well as diminished cardiomyocyte proliferation (Figure 5M\u2013P), which leads to overall impaired recovery from ventricular injury (Figure 5Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by in situ hybridization data in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "9e45bc00-c470-4e10-ae9f-ff83ce09946c",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C56",
+      "claim": "klf2a and trpv4 ventricle-injured mutant hearts exhibit diminished cardiomyocyte proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to reducing hemodynamic blood flow and shear stress, we discovered that klf2a and trpv4 ventricle-injured mutant hearts exhibit reduced activation of early cardiac transcription factors (Figure 5\u2014figure supplement 2) as well as diminished cardiomyocyte proliferation (Figure 5M\u2013P), which leads to overall impaired recovery from ventricular injury (Figure 5Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by proliferation quantitation in Figure 5M-P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "0cee9d7c-413e-41bb-8c11-ec501a73b3d0",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C57",
+      "claim": "klf2a and trpv4 mutants exhibit overall impaired recovery from ventricular injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to reducing hemodynamic blood flow and shear stress, we discovered that klf2a and trpv4 ventricle-injured mutant hearts exhibit reduced activation of early cardiac transcription factors (Figure 5\u2014figure supplement 2) as well as diminished cardiomyocyte proliferation (Figure 5M\u2013P), which leads to overall impaired recovery from ventricular injury (Figure 5Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by recovery quantitation in Figure 5Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "e7844d6f-8729-4403-9585-7a4398a8d5b7",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C58",
+      "claim": "The reprogramming of genetically labeled atrial cardiomyocytes into ventricular cardiomyocytes is significantly reduced in klf2a and trpv4 mutant hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating these findings, lineage tracing studies further reveal that the reprogramming of genetically labeled c-aGFP+ atrial CMs into ventricular CMs to regenerate the ventricle is significantly reduced in klf2a and trpv4 mutant hearts when compared to wild-type control hearts (Figure 5R\u2013U).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by lineage tracing data in Figure 5R-U.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "f4c0a12b-6bff-400f-8418-018bf736a5e1",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C59",
+      "claim": "Blocking BMP signaling with Dorsomorphin diminishes ventricle injury-induced cardiomyocyte proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous cardiac regeneration studies (D'Uva et al., 2015; Gemberling et al., 2015; Mahmoud et al., 2015; Polizzotti et al., 2015; Wu et al., 2016; Xiang et al., 2016), we discovered that blocking either BMP signaling with Dorsomorphin (DM) or Erbb2 signaling with AG1478 as previously described (Han et al., 2016), diminishes not only ventricle injury-induced CM proliferation (Figure 6A\u2013C,E) and activation of early cardiac transcription factors (Figure 6\u2014figure supplement 1), but also the trans-differentiation of genetically labeled c-aGFP+ atrial CMs into ventricular CMs (Figure 6F\u2013H,J) when compared to DMSO controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by proliferation data in Figure 6A-C,E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "aae48b2b-26d4-4136-874d-b8bf06669cd7",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C60",
+      "claim": "Blocking Erbb2 signaling with AG1478 diminishes ventricle injury-induced cardiomyocyte proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous cardiac regeneration studies (D'Uva et al., 2015; Gemberling et al., 2015; Mahmoud et al., 2015; Polizzotti et al., 2015; Wu et al., 2016; Xiang et al., 2016), we discovered that blocking either BMP signaling with Dorsomorphin (DM) or Erbb2 signaling with AG1478 as previously described (Han et al., 2016), diminishes not only ventricle injury-induced CM proliferation (Figure 6A\u2013C,E) and activation of early cardiac transcription factors (Figure 6\u2014figure supplement 1), but also the trans-differentiation of genetically labeled c-aGFP+ atrial CMs into ventricular CMs (Figure 6F\u2013H,J) when compared to DMSO controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by proliferation data in Figure 6A-C,E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "c84b9b4f-5335-4b8a-a55a-9a8ad04d785a",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C61",
+      "claim": "Blocking BMP or Erbb2 signaling diminishes activation of early cardiac transcription factors after ventricular injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous cardiac regeneration studies (D'Uva et al., 2015; Gemberling et al., 2015; Mahmoud et al., 2015; Polizzotti et al., 2015; Wu et al., 2016; Xiang et al., 2016), we discovered that blocking either BMP signaling with Dorsomorphin (DM) or Erbb2 signaling with AG1478 as previously described (Han et al., 2016), diminishes not only ventricle injury-induced CM proliferation (Figure 6A\u2013C,E) and activation of early cardiac transcription factors (Figure 6\u2014figure supplement 1), but also the trans-differentiation of genetically labeled c-aGFP+ atrial CMs into ventricular CMs (Figure 6F\u2013H,J) when compared to DMSO controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by in situ hybridization data in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "6d33108d-6047-4d1a-bdd5-9015f9a1443d",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C62",
+      "claim": "Blocking BMP or Erbb2 signaling diminishes the trans-differentiation of genetically labeled atrial cardiomyocytes into ventricular cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous cardiac regeneration studies (D'Uva et al., 2015; Gemberling et al., 2015; Mahmoud et al., 2015; Polizzotti et al., 2015; Wu et al., 2016; Xiang et al., 2016), we discovered that blocking either BMP signaling with Dorsomorphin (DM) or Erbb2 signaling with AG1478 as previously described (Han et al., 2016), diminishes not only ventricle injury-induced CM proliferation (Figure 6A\u2013C,E) and activation of early cardiac transcription factors (Figure 6\u2014figure supplement 1), but also the trans-differentiation of genetically labeled c-aGFP+ atrial CMs into ventricular CMs (Figure 6F\u2013H,J) when compared to DMSO controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by lineage tracing data in Figure 6F-H,J.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "9ad72fea-89fd-4c8d-b3e2-cc5eb5972f9f",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C63",
+      "claim": "erbb2-/- mutants exhibit similar injury-response defects compared to AG1478-treated hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming these results, we furthermore observed that erbb2-/- mutants exhibit similar injury-response defects compared to those observed in AG1478-treated hearts (Figure 6D,E,I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6D,E,I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "55806107-3434-4d73-971c-097a42444748",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C64",
+      "claim": "Inhibition of cardiomyocyte proliferation and reprogramming results in failure to regenerate the injured heart and recover from ventricle ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, this inhibition of CM proliferation and reprogramming results in the failure to regenerate the injured heart and recover from ventricle ablation (Figure 6K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by recovery quantitation in Figure 6K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "fa53c807-04fe-4ebc-b20f-d5bc153f4439",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C65",
+      "claim": "Blocking hemodynamic flow or Notch signaling decreases the activation of myocardial BMP signaling after ventricle ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Tg(BRE:d2GFP) BMP reporter line, which has been previously used to detect BMP signaling in the myocardium of zebrafish hearts (Han et al., 2016), we observed that blocking either hemodynamic flow or Notch signaling decreases the activation of myocardial BMP signaling that occurs after ventricle ablation (Figure 7A\u2013F, Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by BRE:d2GFP reporter data in Figure 7A-F and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "9137ec0c-8232-481c-8290-0895c82d1730",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C66",
+      "claim": "bmp10 and nrg1 expression are elevated in the heart after ventricle injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We found by in situ hybridization analyses that while the expression of these factors are elevated in the heart after ventricle injury, this increased expression is blocked after inhibiting hemodynamic flow and Notch signaling (Figure 7G\u2013R, Figure 7\u2014figure supplement 2), suggesting that these ligands may also regulate BMP and Erbb2 during CM reprogramming and cardiac regeneration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by in situ hybridization data in Figure 7G-R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "bdd081df-b365-4208-a4f7-ecc884844790",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C67",
+      "claim": "Increased bmp10 and nrg1 expression after ventricle injury is blocked after inhibiting hemodynamic flow and Notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We found by in situ hybridization analyses that while the expression of these factors are elevated in the heart after ventricle injury, this increased expression is blocked after inhibiting hemodynamic flow and Notch signaling (Figure 7G\u2013R, Figure 7\u2014figure supplement 2), suggesting that these ligands may also regulate BMP and Erbb2 during CM reprogramming and cardiac regeneration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by in situ hybridization data in Figure 7G-R and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "0c57fb97-3c36-4afd-b703-cbbc16aadedc",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C68",
+      "claim": "bmp10 and nrg1 may regulate BMP and Erbb2 during cardiomyocyte reprogramming and cardiac regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found by in situ hybridization analyses that while the expression of these factors are elevated in the heart after ventricle injury, this increased expression is blocked after inhibiting hemodynamic flow and Notch signaling (Figure 7G\u2013R, Figure 7\u2014figure supplement 2), suggesting that these ligands may also regulate BMP and Erbb2 during CM reprogramming and cardiac regeneration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text as a suggestion based on the expression data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "681f9431-ea56-49c2-9d81-689171e3e6d6",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C69",
+      "claim": "Hemodynamic-mediated endocardial signaling pathways may regulate cardiomyocyte reprogramming and heart regeneration through modulating myocardial BMP and Erbb2 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these findings support that hemodynamic-mediated endocardial signaling pathways may regulate CM reprogramming and heart regeneration through modulating myocardial BMP and Erbb2 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental findings presented in the results section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "d9a91bce-6f93-4bb8-b593-edb56855d9a0",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C70",
+      "claim": "Near complete ablation of the entire heart using a cmlc2:NTR-based system may result in significantly reduced heart recovery and fish survival compared to ventricular-specific ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results may explain why near complete ablation/injury of the entire heart (i.e. both atrial and ventricular chambers) using a cmlc2:NTR-based system (Curado et al., 2007) may result in significantly reduced heart recovery and fish survival compared to our studies as these hearts may exhibit overall weaker beating and reduced oscillatory flow compared to those where ventricular cardiomyocytes are specifically ablated but atrial cardiomyocytes are spared (Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an interpretation of the findings with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "06c12a3e-ce92-4f76-aabd-ad1ace6409f4",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C71",
+      "claim": "Inflammatory and hypoxia pathways have been suggested to activate repair responses during heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Although inflammatory and hypoxia pathways have been suggested to activate repair responses during heart regeneration (Fang et al., 2013; Jopling et al., 2012; Nakada et al., 2017), we discovered that the injured heart is also able to sense altered intracardiac hemodynamic forces through the endocardial biomechanical sensor Trpv4, thereby activating an endocardial-myocardial signaling pathway that directs cardiomyocyte reprogramming and heart repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "6e905ef5-6b75-4d93-aabc-62bff0b39e4a",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C72",
+      "claim": "The injured heart is able to sense altered intracardiac hemodynamic forces through the endocardial biomechanical sensor Trpv4.",
+      "claim_type": "EXPLICIT",
+      "source": "Although inflammatory and hypoxia pathways have been suggested to activate repair responses during heart regeneration (Fang et al., 2013; Jopling et al., 2012; Nakada et al., 2017), we discovered that the injured heart is also able to sense altered intracardiac hemodynamic forces through the endocardial biomechanical sensor Trpv4, thereby activating an endocardial-myocardial signaling pathway that directs cardiomyocyte reprogramming and heart repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement in the discussion based on the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "b33466b2-ffaf-4aec-bf97-b03684eb8894",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C73",
+      "claim": "Trpv4 can transduce hemodynamic forces through Klf2 to activate endocardial Notch signaling during cardiac regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to biomechanical signaling mechanisms deployed during cardiac development (Heckel et al., 2015), Trpv4 can transduce these forces through Klf2 to activate endocardial Notch signaling, which has been recently reported to be crucial for regulating adult zebrafish heart regeneration (M\u00fcnch et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "12c6e5d8-4834-438e-a1a3-7bfd81c45c41",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C74",
+      "claim": "Endocardial Notch signaling is crucial for regulating adult zebrafish heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to biomechanical signaling mechanisms deployed during cardiac development (Heckel et al., 2015), Trpv4 can transduce these forces through Klf2 to activate endocardial Notch signaling, which has been recently reported to be crucial for regulating adult zebrafish heart regeneration (M\u00fcnch et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation to M\u00fcnch et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "91915274-0169-4ce0-a714-431f64d4585d",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C75",
+      "claim": "Endocardial Notch signaling may act non-cell autonomously to promote cardiac reprogramming and repair through modulating myocardial BMP and Erbb2 signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its potential role in regulating inflammatory responses (M\u00fcnch et al., 2017), we discovered that this endocardial Notch signaling may act non-cell autonomously to promote cardiac reprogramming and repair through modulating both myocardial BMP and Erbb2 signaling pathways, thus further illuminating how injury-activated endocardium may mediate myocardial regeneration as previously suggested (Kikuchi et al., 2011; M\u00fcnch et al., 2017; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "a743001f-0113-4b17-8c36-4a851f5009e0",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C76",
+      "claim": "This hemodynamic-mediated cardiac repair signaling mechanism may participate in regulating adaptive cardiac responses during mammalian cardiac injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the role of BMP and Erbb2 signaling in not only zebrafish but also mammalian adult heart regeneration (D'Uva et al., 2015; Gemberling et al., 2015; Mahmoud et al., 2015; Polizzotti et al., 2015; Wu et al., 2016; Xiang et al., 2016), our results raise the possibility that this hemodynamic-mediated cardiac repair signaling mechanism may also participate in regulating adaptive cardiac responses during mammalian cardiac injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a speculation based on the findings and citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "13dd08e0-2e88-45d7-bf75-f3cbe09dfb48",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "claim_id": "C77",
+      "claim": "Biomechanical forces may impact mammalian heart regeneration through modulating BMP and Erbb2 signaling pathways and interacting with other injury-response mechanisms including hypoxia and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, future studies are warranted in mammalian model systems including the mouse to explore whether and how hemodynamic forces may impact mammalian heart regeneration through not only modulating BMP and Erbb2 signaling pathways but also interacting with other injury-response mechanisms including hypoxia and inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "215e7bcc-61fc-4852-8d0d-dfc342b0bfd1",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MTZ treatment of vmhc:mCherry-NTR zebrafish induces extensive ventricular cardiomyocyte death followed by proliferation in both ventricle and atrium, leading to recovery of ventricular tissue and contractile function by 96 hours post-treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are well-supported by TUNEL staining showing cell death (C17), phospho-histone H3 and EdU staining demonstrating proliferation (C18), and measurements of ventricular area and fractional area change confirming functional recovery (C19). The data are consistent with prior studies and provide appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "e000b5e6-fcf5-4e90-9231-185e0b542a46",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Differentiated atrial cardiomyocytes cannot contribute to uninjured hearts at 5 dpf but trans-differentiate into ventricular cardiomyocytes to regenerate injured ventricles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by lineage tracing experiments using tamoxifen-inducible Cre systems (Figure 1G-H, Figure 1\u2014figure supplement 2). The data show no atrial contribution to uninjured ventricles at 5 dpf but significant contribution after injury, consistent with cited prior work (Zhang et al., 2013).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "1ea86515-f48c-4bd6-9a6d-0e04c8c47fc8",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Notch signaling is activated in the endocardium after ventricular injury, with peak activity at 24 hpt in the AVC and surrounding regions, returning to baseline by 96 hpt as the heart regenerates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 are supported by Tp1:eGFP and Tp1:d2GFP reporter imaging and notch1b in situ hybridization (Figure 1\u2014figure supplement 3). The temporal and spatial patterns are well-documented with appropriate quantitation and correlate with tissue recovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "bc0a6803-8727-4249-b08b-cc142a607212",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Global and endocardial-specific Notch inhibition using dnMAML prevents cardiomyocyte proliferation in injured hearts, with the greatest inhibitory effect on recovery occurring when Notch is blocked between 0 and 1 days post-treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by phospho-histone H3 quantitation (Figure 1A-E, L-P) and recovery assessments (Figure 1F, Q) using both global and tissue-specific Notch inhibition approaches. The time-course experiments provide strong evidence for the critical window of Notch activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "781e2844-d064-4b4f-8bbd-a47f729cbf95",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Notch inhibition prevents atrial cardiomyocyte trans-differentiation into ventricular cardiomyocytes and blocks reactivation of early cardiac transcription factors (gata4, hand2, nkx2.5) during regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by lineage tracing showing reduced atrial contribution to ventricle (Figure 1G-K) and in situ hybridization demonstrating decreased transcription factor expression (Figure 1\u2014figure supplement 4). Both global and endocardial-specific Notch inhibition produce similar effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "ae5f51ea-9890-4f0a-ac47-f90f25dd2dab",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ventricle-ablated hearts display retrograde blood flow and significantly increased oscillatory flow throughout the atrium, AVC, and ventricle compared to uninjured hearts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by particle image velocimetry (PIV) analysis and fundamental harmonic index (FHI) calculations (Figure 2A-E). The methodology is appropriate and the quantitation demonstrates statistically significant increases in oscillatory flow in all cardiac regions after injury.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "588a55f8-2420-4bf4-b933-53dec5c2bff7",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "klf2a expression and klf2a:H2B-GFP reporter activity are expanded in injured hearts, particularly in regions experiencing increased oscillatory flow, and co-localize with Notch reporter activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by in situ hybridization (Figure 2F-G), klf2a:H2B-GFP imaging (Figure 2H-J), heat-map analysis (Figure 2\u2014figure supplement 1A), and co-localization studies (Figure 2\u2014figure supplement 1B, 2). The spatial correlation between flow patterns and klf2a/Notch activity is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "f8e3c7cf-f72a-4585-9d27-536052a60670",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Reducing hemodynamic forces through blebbistatin or tricaine treatment, or reducing blood viscosity in gata2a mutants, decreases klf2a and Notch signaling in both uninjured and ventricle-injured hearts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 are supported by klf2a:H2B-GFP and Tp1:d2GFP reporter imaging, in situ hybridization, and quantitation (Figure 3). Multiple independent approaches to alter hemodynamics produce consistent effects, though gata2a mutants show less pronounced effects than contractility inhibitors, suggesting different mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "19146510-5c66-40e3-9743-a352f89c47ef",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Altered hemodynamic stress reduces activation of early cardiac transcription factors, decreases cardiomyocyte proliferation, impairs atrial-to-ventricular trans-differentiation, and significantly impairs overall recovery from ventricular injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by in situ hybridization (Figure 4\u2014figure supplement 1), proliferation quantitation (Figure 4A-E), lineage tracing (Figure 4G-K), and recovery assessments (Figure 4F). Multiple interventions produce consistent effects on regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "4120763b-6a32-4d83-b632-a27aac9dbb6e",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "trpv4 mutants do not exhibit retrograde blood flow and display reduced klf2a and Notch signaling in both uninjured and ventricle-ablated hearts, demonstrating that Trpv4 mechanosensation controls klf2a expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54, C3-C4 are supported by video analysis (Figure 5\u2014videos 1-2), klf2a:H2B-GFP and Tp1:d2GFP imaging, and in situ hybridization (Figure 5A-L, Figure 5\u2014figure supplement 1). The genetic evidence linking Trpv4 to klf2a and Notch is consistent with cited prior work (Heckel et al., 2015).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "bf03d171-ed44-41c7-9f74-4bc118174adf",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "klf2a and trpv4 mutants exhibit reduced activation of early cardiac transcription factors, diminished cardiomyocyte proliferation, impaired atrial-to-ventricular trans-differentiation, and overall impaired recovery from ventricular injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 are supported by in situ hybridization (Figure 5\u2014figure supplement 2), proliferation quantitation (Figure 5M-P), lineage tracing (Figure 5R-U), and recovery assessments (Figure 5Q). The mutant phenotypes parallel the effects of hemodynamic manipulation, supporting the mechanistic link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "77f495b5-e53c-4466-8d79-a95855404938",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Blocking BMP signaling with Dorsomorphin or Erbb2 signaling with AG1478 or erbb2 mutation diminishes cardiomyocyte proliferation, activation of early cardiac transcription factors, atrial-to-ventricular trans-differentiation, and overall heart regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 are supported by proliferation quantitation (Figure 6A-E), in situ hybridization (Figure 6\u2014figure supplement 1), lineage tracing (Figure 6F-J), and recovery assessments (Figure 6K). Both pharmacological and genetic approaches produce consistent results, confirming the roles of BMP and Erbb2 signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "81b0b96d-3860-4176-bb72-1aabcce8224c",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Blocking hemodynamic flow or Notch signaling decreases myocardial BMP signaling activation and reduces bmp10 and nrg1 expression after ventricular injury, demonstrating that endocardial Notch signaling non-cell autonomously initiates myocardial BMP and Erbb2 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67, C6-C7 are supported by BRE:d2GFP reporter imaging (Figure 7A-F, Figure 7\u2014figure supplement 1) and in situ hybridization (Figure 7G-R, Figure 7\u2014figure supplement 2). Multiple interventions (blebbistatin, DAPT, dnMAML) produce consistent effects, supporting the proposed signaling cascade.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "8cd8634f-9011-43a0-bd54-330340f5f857",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "bmp10 and nrg1 may regulate BMP and Erbb2 signaling during cardiomyocyte reprogramming, and hemodynamic-mediated endocardial signaling pathways may regulate regeneration through modulating myocardial BMP and Erbb2 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 are stated as suggestions based on expression patterns but lack direct functional evidence. While the expression data (Figure 7G-R) show correlation, causality is not demonstrated. Additional experiments manipulating bmp10 and nrg1 would be needed to confirm their roles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "203013bd-f14a-46fc-adc7-25c8a8158d22",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study establishes a mechanistic pathway where altered hemodynamic forces activate Trpv4-Klf2a-Notch signaling in the endocardium, which non-cell autonomously initiates myocardial BMP and Erbb2 signaling to promote cardiomyocyte reprogramming and heart regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative result synthesizing claims C2, C5, C8, C72, C73, C75 is supported by the collective experimental evidence throughout the manuscript. The sequential pathway is demonstrated through hemodynamic manipulation, genetic mutants, tissue-specific inhibition, and downstream signaling analysis, providing a comprehensive mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within established knowledge about cardiac regeneration capacity, cardiomyocyte reprogramming, and the roles of Notch, BMP, and Erbb2 signaling in heart development and regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C16, C71, C74 accurately represent prior work as supported by appropriate citations. The authors correctly attribute findings to previous studies and build upon established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    },
+    {
+      "id": "a5d8f2ab-fe9b-41a8-b428-301bc246bd15",
+      "content_id": "ce864632-5335-4adb-88dd-861421d9ddae",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors speculate that their findings may explain differences in regeneration outcomes with different ablation systems and may be relevant to mammalian cardiac injury, suggesting future research directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70, C76-C77 are speculative interpretations and suggestions for future work. While reasonable hypotheses based on the zebrafish data, these claims lack direct experimental support and represent potential extensions rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:08.079508Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "824b75f7-3186-45a3-b824-479da5439945",
+      "result_id": "215e7bcc-61fc-4852-8d0d-dfc342b0bfd1"
+    },
+    {
+      "claim_id": "68b37c26-75c5-4a32-83d0-2e88d1119232",
+      "result_id": "215e7bcc-61fc-4852-8d0d-dfc342b0bfd1"
+    },
+    {
+      "claim_id": "f01f05a4-6270-4dcf-b8be-af99e623b15d",
+      "result_id": "215e7bcc-61fc-4852-8d0d-dfc342b0bfd1"
+    },
+    {
+      "claim_id": "1089618e-5d7c-44bf-89a0-2bfa3e64b9c5",
+      "result_id": "e000b5e6-fcf5-4e90-9231-185e0b542a46"
+    },
+    {
+      "claim_id": "44a763d7-a0fc-4a25-a275-ff2eab2b116b",
+      "result_id": "e000b5e6-fcf5-4e90-9231-185e0b542a46"
+    },
+    {
+      "claim_id": "7c2c065a-41fc-4467-9c6d-ce0aff4a9bf8",
+      "result_id": "e000b5e6-fcf5-4e90-9231-185e0b542a46"
+    },
+    {
+      "claim_id": "7d63314c-2dd9-4414-9976-7017325e93ff",
+      "result_id": "1ea86515-f48c-4bd6-9a6d-0e04c8c47fc8"
+    },
+    {
+      "claim_id": "3a3e6a9a-b5ec-4453-b389-7c1d01bcd459",
+      "result_id": "1ea86515-f48c-4bd6-9a6d-0e04c8c47fc8"
+    },
+    {
+      "claim_id": "5bb4cf0b-22ed-404b-8861-91f46a63da53",
+      "result_id": "1ea86515-f48c-4bd6-9a6d-0e04c8c47fc8"
+    },
+    {
+      "claim_id": "e4cfc8b2-6f01-4ef3-84f4-9887f5964e3f",
+      "result_id": "1ea86515-f48c-4bd6-9a6d-0e04c8c47fc8"
+    },
+    {
+      "claim_id": "78467650-c3b2-4585-a726-a849034c3e62",
+      "result_id": "1ea86515-f48c-4bd6-9a6d-0e04c8c47fc8"
+    },
+    {
+      "claim_id": "5f7dc3a9-833f-4cfd-b019-e66ada23872d",
+      "result_id": "bc0a6803-8727-4249-b08b-cc142a607212"
+    },
+    {
+      "claim_id": "0b3566cd-8f1b-47fd-b300-9b04facf56b1",
+      "result_id": "bc0a6803-8727-4249-b08b-cc142a607212"
+    },
+    {
+      "claim_id": "ad00bf3e-30f9-478e-a9e9-f183d0a3459f",
+      "result_id": "bc0a6803-8727-4249-b08b-cc142a607212"
+    },
+    {
+      "claim_id": "7dd72eb5-2e31-46a8-99f5-3de2a88aa610",
+      "result_id": "bc0a6803-8727-4249-b08b-cc142a607212"
+    },
+    {
+      "claim_id": "56277319-f0fb-4580-926b-e3e99415ca65",
+      "result_id": "781e2844-d064-4b4f-8bbd-a47f729cbf95"
+    },
+    {
+      "claim_id": "4d660dda-5bd6-430c-94e8-9f5e85751f43",
+      "result_id": "781e2844-d064-4b4f-8bbd-a47f729cbf95"
+    },
+    {
+      "claim_id": "bcbb4777-8f9e-46f6-90db-fd7942646496",
+      "result_id": "781e2844-d064-4b4f-8bbd-a47f729cbf95"
+    },
+    {
+      "claim_id": "e8a1e195-b6e4-40f5-bcae-40e9e1922e76",
+      "result_id": "ae5f51ea-9890-4f0a-ac47-f90f25dd2dab"
+    },
+    {
+      "claim_id": "8106221e-1663-4fd8-88f4-db5fbcdde23b",
+      "result_id": "ae5f51ea-9890-4f0a-ac47-f90f25dd2dab"
+    },
+    {
+      "claim_id": "9b41fb6a-d48a-4657-a81e-1ebdc4f40a1a",
+      "result_id": "ae5f51ea-9890-4f0a-ac47-f90f25dd2dab"
+    },
+    {
+      "claim_id": "66b4fff5-1686-4620-aa8b-33e205b5551f",
+      "result_id": "588a55f8-2420-4bf4-b933-53dec5c2bff7"
+    },
+    {
+      "claim_id": "34d69988-aa6f-45cc-ac0e-7f10a2975b8e",
+      "result_id": "588a55f8-2420-4bf4-b933-53dec5c2bff7"
+    },
+    {
+      "claim_id": "944c8d79-5074-4f1f-a8e4-d33d261c80c9",
+      "result_id": "588a55f8-2420-4bf4-b933-53dec5c2bff7"
+    },
+    {
+      "claim_id": "e5000153-7777-46c7-8663-fb3031eb8746",
+      "result_id": "588a55f8-2420-4bf4-b933-53dec5c2bff7"
+    },
+    {
+      "claim_id": "c63e7289-f693-4ecc-92f8-6b9416d6f3ce",
+      "result_id": "f8e3c7cf-f72a-4585-9d27-536052a60670"
+    },
+    {
+      "claim_id": "3c4dda69-2dde-479f-ad88-d94c0c793fe8",
+      "result_id": "f8e3c7cf-f72a-4585-9d27-536052a60670"
+    },
+    {
+      "claim_id": "d49a5834-eb03-4271-9ab0-3e226ffa86ac",
+      "result_id": "f8e3c7cf-f72a-4585-9d27-536052a60670"
+    },
+    {
+      "claim_id": "65f1b474-ee9a-4115-b581-b732ff474d08",
+      "result_id": "f8e3c7cf-f72a-4585-9d27-536052a60670"
+    },
+    {
+      "claim_id": "aa356185-202b-44c5-a6da-eece45fbbf74",
+      "result_id": "f8e3c7cf-f72a-4585-9d27-536052a60670"
+    },
+    {
+      "claim_id": "8dc51c48-237f-47b7-bbb4-1556e557518a",
+      "result_id": "f8e3c7cf-f72a-4585-9d27-536052a60670"
+    },
+    {
+      "claim_id": "828f6ac4-5359-4683-8d55-01282a0a5d8b",
+      "result_id": "f8e3c7cf-f72a-4585-9d27-536052a60670"
+    },
+    {
+      "claim_id": "a31ce062-72ed-4a60-a754-0a24ccefc841",
+      "result_id": "19146510-5c66-40e3-9743-a352f89c47ef"
+    },
+    {
+      "claim_id": "6813acc9-a41e-4e75-971d-ba41a66022ea",
+      "result_id": "19146510-5c66-40e3-9743-a352f89c47ef"
+    },
+    {
+      "claim_id": "8122658f-97d5-4e8f-a4e1-7cbe701f3fec",
+      "result_id": "19146510-5c66-40e3-9743-a352f89c47ef"
+    },
+    {
+      "claim_id": "7b31757a-989a-4530-bd73-eea406d8c3fc",
+      "result_id": "19146510-5c66-40e3-9743-a352f89c47ef"
+    },
+    {
+      "claim_id": "f5db449b-9468-491b-a69a-c16205bebf82",
+      "result_id": "4120763b-6a32-4d83-b632-a27aac9dbb6e"
+    },
+    {
+      "claim_id": "3e735a95-829a-448d-9816-1e4e069d195c",
+      "result_id": "4120763b-6a32-4d83-b632-a27aac9dbb6e"
+    },
+    {
+      "claim_id": "64896aac-3451-41ff-a704-9173529edf14",
+      "result_id": "4120763b-6a32-4d83-b632-a27aac9dbb6e"
+    },
+    {
+      "claim_id": "37281c5b-215b-41b1-b971-58a8b6b1ef83",
+      "result_id": "4120763b-6a32-4d83-b632-a27aac9dbb6e"
+    },
+    {
+      "claim_id": "08498c77-7f29-4748-9fb7-64710831ad53",
+      "result_id": "4120763b-6a32-4d83-b632-a27aac9dbb6e"
+    },
+    {
+      "claim_id": "26aad202-e8e4-4ef7-a1f3-4b568a922dd5",
+      "result_id": "bf03d171-ed44-41c7-9f74-4bc118174adf"
+    },
+    {
+      "claim_id": "9e45bc00-c470-4e10-ae9f-ff83ce09946c",
+      "result_id": "bf03d171-ed44-41c7-9f74-4bc118174adf"
+    },
+    {
+      "claim_id": "0cee9d7c-413e-41bb-8c11-ec501a73b3d0",
+      "result_id": "bf03d171-ed44-41c7-9f74-4bc118174adf"
+    },
+    {
+      "claim_id": "e7844d6f-8729-4403-9585-7a4398a8d5b7",
+      "result_id": "bf03d171-ed44-41c7-9f74-4bc118174adf"
+    },
+    {
+      "claim_id": "f4c0a12b-6bff-400f-8418-018bf736a5e1",
+      "result_id": "77f495b5-e53c-4466-8d79-a95855404938"
+    },
+    {
+      "claim_id": "aae48b2b-26d4-4136-874d-b8bf06669cd7",
+      "result_id": "77f495b5-e53c-4466-8d79-a95855404938"
+    },
+    {
+      "claim_id": "c84b9b4f-5335-4b8a-a55a-9a8ad04d785a",
+      "result_id": "77f495b5-e53c-4466-8d79-a95855404938"
+    },
+    {
+      "claim_id": "6d33108d-6047-4d1a-bdd5-9015f9a1443d",
+      "result_id": "77f495b5-e53c-4466-8d79-a95855404938"
+    },
+    {
+      "claim_id": "9ad72fea-89fd-4c8d-b3e2-cc5eb5972f9f",
+      "result_id": "77f495b5-e53c-4466-8d79-a95855404938"
+    },
+    {
+      "claim_id": "55806107-3434-4d73-971c-097a42444748",
+      "result_id": "77f495b5-e53c-4466-8d79-a95855404938"
+    },
+    {
+      "claim_id": "fa53c807-04fe-4ebc-b20f-d5bc153f4439",
+      "result_id": "81b0b96d-3860-4176-bb72-1aabcce8224c"
+    },
+    {
+      "claim_id": "9137ec0c-8232-481c-8290-0895c82d1730",
+      "result_id": "81b0b96d-3860-4176-bb72-1aabcce8224c"
+    },
+    {
+      "claim_id": "bdd081df-b365-4208-a4f7-ecc884844790",
+      "result_id": "81b0b96d-3860-4176-bb72-1aabcce8224c"
+    },
+    {
+      "claim_id": "a3de82ff-c2c0-43c4-b0c7-bc8c28a19e72",
+      "result_id": "81b0b96d-3860-4176-bb72-1aabcce8224c"
+    },
+    {
+      "claim_id": "b7aafbb4-98a4-479f-80a7-ce85207dcd52",
+      "result_id": "81b0b96d-3860-4176-bb72-1aabcce8224c"
+    },
+    {
+      "claim_id": "0c57fb97-3c36-4afd-b703-cbbc16aadedc",
+      "result_id": "8cd8634f-9011-43a0-bd54-330340f5f857"
+    },
+    {
+      "claim_id": "681f9431-ea56-49c2-9d81-689171e3e6d6",
+      "result_id": "8cd8634f-9011-43a0-bd54-330340f5f857"
+    },
+    {
+      "claim_id": "bd9742ff-2510-40f6-b5cb-d7bb1e30c8bb",
+      "result_id": "203013bd-f14a-46fc-adc7-25c8a8158d22"
+    },
+    {
+      "claim_id": "f6703b9d-a006-4992-a908-23edc756c24c",
+      "result_id": "203013bd-f14a-46fc-adc7-25c8a8158d22"
+    },
+    {
+      "claim_id": "196c2f9b-a50e-4be2-8e16-4ad7f13c0e43",
+      "result_id": "203013bd-f14a-46fc-adc7-25c8a8158d22"
+    },
+    {
+      "claim_id": "6e905ef5-6b75-4d93-aabc-62bff0b39e4a",
+      "result_id": "203013bd-f14a-46fc-adc7-25c8a8158d22"
+    },
+    {
+      "claim_id": "b33466b2-ffaf-4aec-bf97-b03684eb8894",
+      "result_id": "203013bd-f14a-46fc-adc7-25c8a8158d22"
+    },
+    {
+      "claim_id": "91915274-0169-4ce0-a714-431f64d4585d",
+      "result_id": "203013bd-f14a-46fc-adc7-25c8a8158d22"
+    },
+    {
+      "claim_id": "ea973247-814e-4d38-b94e-a9a0beae443f",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "afd0c8c3-92e5-43d0-8ebc-650fa0c5a095",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "bf7de004-fd3a-4b7f-b58b-b5533db7fc60",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "7c2c065a-41fc-4467-9c6d-ce0aff4a9bf8",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "a9635600-7b44-44a4-b487-8396768a2341",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "dec19e81-7a5d-4002-ace0-e304ddec17a9",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "9af8c2b6-d23b-4950-9353-d37ceec82a61",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "0fd31b78-e43d-4f43-bfd7-58a6c848fad8",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "e11fafbf-3ee6-4dfe-9582-16764010062b",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "06c12a3e-ce92-4f76-aabd-ad1ace6409f4",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "12c6e5d8-4834-438e-a1a3-7bfd81c45c41",
+      "result_id": "6f8fc61e-619e-4576-9717-9cc34a0ba3e1"
+    },
+    {
+      "claim_id": "d9a91bce-6f93-4bb8-b593-edb56855d9a0",
+      "result_id": "a5d8f2ab-fe9b-41a8-b428-301bc246bd15"
+    },
+    {
+      "claim_id": "a743001f-0113-4b17-8c36-4a851f5009e0",
+      "result_id": "a5d8f2ab-fe9b-41a8-b428-301bc246bd15"
+    },
+    {
+      "claim_id": "13dd08e0-2e88-45d7-bf75-f3cbe09dfb48",
+      "result_id": "a5d8f2ab-fe9b-41a8-b428-301bc246bd15"
+    }
+  ],
+  "comparisons": []
+}

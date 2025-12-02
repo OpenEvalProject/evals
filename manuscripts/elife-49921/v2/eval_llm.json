@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C51"
+    ],
+    "result": "The authors generated a reference accessome for Ciona robusta containing 56,090 accessible regions covering 9.25% of the genome. Promoter regions and 5'UTRs were over-represented, and regulatory genes encoding transcription factors and signaling molecules were associated with significantly more peaks than other expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 and C51 are directly supported by ATAC-seq data analysis with appropriate statistical tests (two-tailed binomial test, p<0.001). The findings are consistent with observations in other systems and provide a solid foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Most changes in chromatin accessibility occur between 6 and 10 hpf during the transition from naive Mesp+ mesoderm to multipotent cardiopharyngeal progenitors, with 64.7% of regions showing reduced accessibility. These cardiopharyngeal accessibility profiles are established specifically in the B7.5 lineage and persist in fate-restricted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by correlation analysis and quantitative ATAC-seq data showing temporal dynamics (Figure 1B,C). The inference in C16 is reasonable given the data patterns, though it represents an interpretation rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "FGF-MAPK signaling perturbation identified 2,728 and 2,491 differentially accessible regions following inhibition or activation, respectively. There was a positive correlation (Spearman's \u03c1=0.47) between differential accessibility and gene expression, with 48% of FGF-MAPK-regulated genes associated with at least one element showing consistent differential accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are directly supported by DESeq2 analysis of ATAC-seq data and correlation with microarray data. The statistical methods are appropriate and the correlation coefficient indicates a moderate positive relationship between accessibility and expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors validated multiple cardiopharyngeal enhancers through reporter assays and CRISPR/Cas9 mutagenesis. A DNA fragment in the Nk4/Nkx2-5 intron drove GFP expression in cardiopharyngeal progenitors, and its deletion reduced Nk4/Nkx2-5 expression specifically in TVCs. Of 15 candidate enhancers tested, 8 drove reporter expression in multipotent progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are directly demonstrated by reporter gene assays and CRISPR/Cas9 experiments with FISH validation (Figures 2E,F and supplementary figures). The functional validation strengthens the ATAC-seq predictions, though the success rate (8/15) suggests some false positives in the computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Motif enrichment analysis revealed distinct transcription factor binding signatures: naive Mesp+ mesoderm elements were enriched for Homeodomain, T-box, and Ets motifs, while cardiopharyngeal-specific elements were enriched for Zinc Finger, Fox/Forkhead, and nuclear receptor motifs. Foxf, expressed early in multipotent progenitors, contains key residues conserved with the pioneer factor FOXA, and its enhancer was accessible in naive Mesp+ founder cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by motif enrichment analysis, protein sequence alignments, and ATAC-seq data. The identification of conserved residues with FOXA (C27) and the accessibility pattern of the Foxf enhancer (C28) provide mechanistic insights consistent with pioneer factor function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "CRISPR/Cas9 mutagenesis of Foxf inhibited 52 genes including TVC-expressed genes and primed pan-cardiac and pharyngeal muscle markers, suggesting Foxf promotes multilineage transcriptional priming. Foxf loss-of-function closed known cardiopharyngeal enhancers and reduced T12 enhancer activity. 98% of Foxf-dependent regions were accessible in multipotent progenitors, and 22% of progenitor-specific elements were closed upon Foxf inhibition. FGF-MAPK signaling upregulates Foxf, which opens cardiopharyngeal-specific elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 are supported by RNA-seq, ATAC-seq, and reporter assays following Foxf CRISPR/Cas9 mutagenesis. The data demonstrate Foxf's role in establishing cardiopharyngeal accessibility patterns. The percentages (C34-C36) are directly calculated from the data. The conclusion about the FGF-Foxf pathway (C37) is well-supported by the combined evidence and cited references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "At 18 hpf, 91% of differentially expressed genes were not associated with differentially accessible elements. Only 27%\u00b18% of de novo-expressed pan-cardiac genes were associated with differentially accessible elements. Accessible regions associated with de novo-expressed markers tended to open between 6 and 10 hpf, consistent with FGF- and Foxf-dependent cardiopharyngeal-specific accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are directly calculated from integrated ATAC-seq and RNA-seq data. The findings demonstrate extensive decoupling between early accessibility and late cell-type-specific activity, a key conceptual advance. The temporal patterns (C40) support the priming hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The Lrp4/8 locus contains two intronic elements that opened upon TVC induction in an FGF- and Foxf-dependent manner, prior to Lrp4/8 upregulation. Element KhC4.137 is both necessary and sufficient to activate Lrp4/8 expression in heart precursors, demonstrating decoupling between early accessibility and late cell-type-specific activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are directly demonstrated by ATAC-seq, RNA-seq, reporter assays, and CRISPR/Cas9 experiments (Figure 4C-F). This provides a clear example of the priming phenomenon and validates the concept of spatiotemporal decoupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Putative binding sites for SMAD and homeodomain proteins (Smad4 and Pitx) were enriched among pre-accessible elements associated with cardiac markers, suggesting roles in transcriptional activation consistent with conserved roles in heart development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by motif enrichment analysis and cited references showing conserved roles for Pitx2 and BMP-SMAD signaling. The analysis identifies candidate regulators of late accessibility and/or activity, though direct functional validation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The Ebf locus contains multiple accessible regions with distinct temporal dynamics: elements open in naive Mesp+ mesoderm, cardiopharyngeal-lineage-specific elements opening prior to gene activation, and elements opening de novo in fate-restricted pharyngeal muscle precursors. CRISPR/Cas9 mutagenesis showed each element is necessary for proper Ebf activation, with targeted deletions inducing pharyngeal muscle precursor migration defects in 37\u00b15% of larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are directly supported by ATAC-seq data (Figure 5A,B) and CRISPR/Cas9 experiments with FISH and phenotypic analysis. The demonstration that multiple elements with distinct accessibility patterns are all necessary for proper gene expression is a key finding supporting the 'combined enhancer' model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Multiple copies of the minimal Ebf enhancer KhL24.37 significantly increased reporter expression in pharyngeal muscle precursors (43\u00b13% for 2x, 58\u00b12% for 3x vs. 14\u00b13% for 1x). However, the 3x construct induced precocious expression in STVCs (89\u00b13%) and ectopic expression in the second heart lineage (13\u00b12%), unlike the full-length combined enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are directly demonstrated by reporter gene assays with appropriate statistical analysis (Figure 6). The results show that multimerizing a single element can restore expression levels but at the expense of spatial and temporal accuracy, supporting the combined enhancer hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Using three copies of KhL24.37 to drive Ebf cDNA expression activated the endogenous locus ectopically in ~40% of embryos and induced cells that normally form the second heart lineage to migrate alongside pharyngeal muscles in 38\u00b13% of larvae at 28 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are directly demonstrated by FISH experiments and lineage tracing with morphological analysis (Figure 7). The functional consequences of precocious Ebf expression validate the importance of spatiotemporal accuracy in fate specification and demonstrate that the combined enhancer architecture prevents inappropriate fate transformations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "During embryogenesis, chromatin accessibility profiles control lineage-specific gene expression by modulating transcription. Subsets of cardiac and pharyngeal/head muscles share a common origin in the cardiopharyngeal mesoderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent established knowledge in the field, supported by extensive prior literature. These provide the conceptual framework for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "An FGF-Foxf pathway acts in multipotent progenitors to establish cardiopharyngeal-specific patterns of accessibility, which govern later heart vs. pharyngeal muscle-specific expression profiles. Multiple cis-regulatory elements with distinct chromatin accessibility profiles and motif compositions are required to activate Ebf and Tbx1/10, two key determinants of cardiopharyngeal fate choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the main conclusions of the manuscript, synthesizing multiple lines of evidence from ATAC-seq, RNA-seq, reporter assays, and CRISPR/Cas9 experiments. The FGF-Foxf pathway's role (C3) is supported by claims C17-C37, and the requirement for multiple elements (C4) is supported by claims C44-C50. These are the central findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "In Ciona, cardiopharyngeal lineages arise from naive Mesp+ mesodermal progenitors that emerge at gastrulation onset and are induced by FGF-MAPK signaling. STVCs are multipotent progenitors that upregulate Tbx1/10, and ASMFs activate Ebf, which is necessary and sufficient for pharyngeal muscle specification. Spatially and temporally accurate activation of Tbx1/10 and Ebf is essential for proper cardiopharyngeal lineage emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 describe established knowledge about Ciona cardiopharyngeal development, supported by cited references and Figure 1A. Claim C10 involves some inference but is well-supported by the lineage relationships shown. These provide essential background for interpreting the chromatin accessibility data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Foxf homologs play deeply conserved roles in visceral muscle specification, and GATA motifs are over-represented among cardiopharyngeal-specific elements, consistent with conserved roles in heart development. Combinations of FOX and GATA inputs play well-established roles in early endoderm specification. The majority of cell-type-specific markers expressed de novo are associated with 'primed accessible' elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 place the findings in evolutionary and comparative context, supported by cited references and the ATAC-seq data. Claim C54 is explicitly speculative about evolutionary origins. These claims connect the Ciona findings to broader principles of developmental gene regulation.",
+    "result_type": "MINOR"
+  }
+]

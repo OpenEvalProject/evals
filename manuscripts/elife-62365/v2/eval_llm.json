@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The PPiSeq library construction and experimental design enabled quantification of 1.6 million protein pairs across nine environments. The library contained 1.79 million protein pairs with 6.05 million double barcodes, averaging 3.4 barcodes per protein pair, and was grown under methotrexate selection for 12-18 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, C26, and C27 provide consistent, specific quantitative details about library composition and experimental conditions. The numbers are internally consistent and supported by referenced figures. The experimental design is clearly described with appropriate controls and replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "PPiSeq identified 13,764 PPIs across nine environments, representing a 2.9-fold increase over single-condition detection and 5.6-fold increase over colony-based mDHFR-PCA. The method showed 62% overlap with colony-based mDHFR-PCA but only 7% overlap with other PPI detection methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29, C30, C31, and C32 provide specific, quantitative comparisons with previous methods. The numbers are consistent across claims and supported by Figure 1G. The differential overlap rates with different methods are clearly documented and suggest methodological differences in PPI detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The distribution of PPIs across environments is highly skewed, with mutable PPIs (detected in few environments) far outnumbering immutable PPIs (detected in all environments). Immutable PPIs were more likely to have been previously reported, while highly mutable PPIs represent novel discoveries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, C40, and C41 describe a consistent pattern supported by Figure 3A. The observation that previously unreported PPIs are enriched in mutable categories provides internal validation. However, the high false positive rate in mutable PPIs (C43, C44) raises concerns about whether all mutable PPIs are genuine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Validation experiments revealed that mutable PPIs have lower validation rates (~50% false positives) compared to immutable PPIs, though mean fitness values were consistent across PPIs detected in 1-6 conditions. False-negative rates were also assessed, showing PPIs detected only in SD could be found in an average of 2.5 additional environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C45 acknowledge significant validation issues with mutable PPIs. The ~50% false positive rate for highly mutable PPIs (C44) is concerning and undermines confidence in these calls. While the authors model validation rates (Figure 3\u2014figure supplement 3), the high error rates suggest that the true number of mutable PPIs may be substantially overestimated. Additional orthogonal validation would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Network analysis revealed that immutable PPIs form highly connected 'core' modules while mutable PPIs form a loosely connected 'accessory' module. Three community detection algorithms identified three major communities differing in mutability: two core modules (associated with membranes and actin cytoskeleton) and one accessory module (associated with chromosomes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C46-C53 describe a coherent network organization pattern supported by multiple independent community detection algorithms (C51) and GO enrichment analysis (C52-C53). The convergence of three different algorithms on similar community structures provides strong support. However, the high false positive rate in mutable PPIs (C43-C44) may affect the accessory module composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PPiSeq shows enrichment patterns similar to colony-based mDHFR-PCA, with enrichment for PPIs in membranous compartments and cell division processes. Certain cellular processes show high variability across environments (chromosome-associated, transcription, translation) while others are more stable (endocytosis, transport).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 describe enrichment and variability patterns supported by Figure 2. The similarity to colony-based mDHFR-PCA provides validation. The biological interpretations (C36, C37) are reasonable but somewhat speculative. The patterns are internally consistent and supported by GO analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mutable PPIs are less likely to co-express and co-localize than immutable PPIs. Co-expression mutual rank declines with PPI mutability, and proteins from less mutable PPIs are more likely to co-localize to the same cellular compartment, suggesting localization changes drive some PPI dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C54-C56 describe consistent patterns validated with external datasets (COXPRESdb, fluorescence localization data). The correlations are supported by Figure 4A-B and confirmed in higher confidence PPI sets (Figure 4\u2014figure supplements 2-3). The interpretation that localization changes drive some dynamics (C56) is reasonable but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Proteins in mutable PPIs have distinct properties: mutable hubs have more genetic interactions and larger fitness defects upon deletion, but are not more rapidly evolving. Non-hub proteins in mutable PPIs evolve more quickly. Mutable PPI proteins have lower expression levels, and mutable hubs participate in multiple complexes. Mutable PPIs are enriched for intrinsically disordered regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 describe multiple protein features correlated with PPI mutability, supported by Figure 4C and external datasets. Some findings confirm predictions from co-expression data (C57, C63) while others contradict them (C59), providing nuanced validation. The correlations are binned by PPI degree, showing hub-specific effects. However, correlations do not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Mutable PPIs are less likely to be explained by simple mass action kinetics. Only 19% of heterodimers are explained by a mass-action model using homodimer abundance as a proxy for protein abundance. PPI mutability is the best predictor of poor fit to the model, with high protein abundance also predicting poor fit, suggesting mutable PPIs are subject to more post-translational regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C64-C69 describe modeling results supported by Figure 4D-F. The mass-action kinetics model is simple but appropriate for testing whether protein abundance changes explain PPI dynamics. The finding that only 19% of heterodimers are explained (C65) and that mutability predicts poor fit (C66) supports the conclusion about post-translational regulation (C68). The unexpected finding about high abundance (C67, C69) is interesting but the saturation mechanism is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C63"
+    ],
+    "result": "Proteins in mutable PPIs are more likely to contain intrinsically disordered regions, confirming predictions from co-expression data and suggesting conformational flexibility may promote environment-dependent binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C63 describe the same finding about intrinsically disordered regions, supported by correlation analysis in Figure 4C. This confirms a prediction from prior co-expression studies. The interpretation about conformational changes (C63) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The glucose transporter network shows coordinated rewiring across environments. Most Hxt PPIs were lost in low-glucose (Raffinose) conditions except Hxt5, which maintained its PPIs. In NaCl, Hxt5 PPIs increased in abundance. These changes appear driven primarily by changes in protein expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 describe specific changes in the Hxt network supported by Figure 5 and validated by optical density measurements (Figure 5D). The findings are consistent with known expression patterns from prior studies (C71, C74). The interpretation that changes are driven by protein expression (C75) is supported by the mass-action modeling results but represents only one example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C12",
+      "C79",
+      "C80"
+    ],
+    "result": "The study reveals that environment-dependent association and binding is critical to cellular adaptation. Protein interactomes contain highly dynamic regions that reorganize in response to cellular changes, with major rewiring driven by post-translational regulation rather than protein abundance changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C12, C79, and C80 represent the major interpretive conclusions of the study. These are supported by the collective evidence from network organization (C4-C5, C48-C50), mass-action modeling (C65-C66), and protein properties (C57-C63). However, these are high-level interpretations that go beyond what is directly demonstrated. The causal role of environment-dependent binding in adaptation (C10) is inferred rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "The pan-environment protein interactome is estimated to contain ~10,840 true interactions within the search space, approximately 3-fold more than detected in a single condition. PPI discovery began to saturate after nine environments, indicating most condition-specific PPIs can be captured with limited sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C76-C78 describe size estimates supported by species richness modeling (Figure 6). The saturation analysis (C82) suggests diminishing returns with additional environments. However, the estimate depends on the validation rate model, which has uncertainty due to high false positive rates in mutable PPIs. The conclusion that interactomes are larger than previously thought (C11, C81) is supported but the exact magnitude is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Fitness estimates from PPiSeq are precise for high-fitness strains (putative PPIs) but less precise for low-fitness strains due to noise from growth bottlenecks, PCR, and sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 describes measurement precision supported by Figure 1C and cited methodology (Li et al., 2018). This is an important technical limitation that affects PPI calling thresholds. The acknowledgment of differential precision is appropriate and affects downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The study tested a biased set of proteins previously found to participate in at least one PPI under standard growth conditions, excluding proteins not expressed under standard conditions and PPIs not detectable by mDHFR-PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 acknowledge important limitations of the study design. This bias toward previously known PPI participants is clearly stated and affects the generalizability of findings. The authors appropriately recognize this limitation in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The iSeq platform is capable of building libraries exceeding one billion interactions, making genome-wide interactome coverage feasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 describes platform capabilities supported by prior publications (Liu et al., 2019; Schlecht et al., 2017). This represents future potential rather than current results but is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The relationship between fitness and PPI abundance may be non-linear and PPI-dependent due to saturation effects, substrate accessibility differences, and environmental impacts on methotrexate selective pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 acknowledge important caveats about using fitness as a proxy for PPI abundance. These are reasonable concerns supported by referenced figures, but represent speculative limitations rather than demonstrated effects. The authors appropriately recognize these issues but do not quantify their impact, making it difficult to assess how much they affect conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The PPiSeq library was grown for 21 generations with 1:8 bottlenecking every 48 hours. The fitness cost of 0.5 \u03bcg/mL methotrexate varied considerably between environments, leading to exclusion of five environments with insufficient selective pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 describe experimental protocols and an important technical issue. The variable methotrexate sensitivity across environments (C89) is an unexpected finding that led to excluding some environments (C90). This is appropriately documented and affects the final dataset. The authors recommend tuning methotrexate concentration per environment in future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior work has identified localized PPI rewiring but little is known about global reorganization. Existing high-throughput methods focus on PPI identification rather than quantification. Previous mDHFR-PCA studies found 15-55% of PPIs change across environments, but may provide incomplete views due to bias toward immutable PPIs. Predictions about 'date hubs' from co-expression data have been controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C24 summarize prior work and identify knowledge gaps that motivate the current study. The citations appear appropriate and the characterization of the field is reasonable. The identification of potential bias in single-condition studies (C19-C21) represents the key hypothesis being tested. The controversy about date hubs (C24) is well-documented in the cited literature.",
+    "result_type": "MINOR"
+  }
+]

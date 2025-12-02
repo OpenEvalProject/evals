@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The NES of animal RanBP1 is necessary and sufficient for its interaction with CRM1 in the presence of RanGTP and is crucial for nuclear export. Mutation or deletion of the NES abolishes CRM1 binding and causes nuclear accumulation of RanBP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C24 are supported by multiple complementary experiments including pull-down assays (Figure 1C-E), localization studies (Figure 1F), and competition experiments. The data consistently show that NES is required for CRM1 binding and nuclear export in animals, with appropriate controls including CRM1 inhibitor treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Animal RanBP1 dissociates cargo through its Ran binding domain (RBD) by sequestering RanGTP from nuclear export complexes, not through direct NES competition. The NES of animal RanBP1 is dispensable for cargo dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are well-supported by systematic pull-down experiments (Figure 2A-C) showing that \u0394C and NESmut retain cargo dissociation activity, that high RanGTP inhibits \u0394C activity, and that pre-formed \u0394C-RanGTP complexes cannot dissociate cargo. The logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Yeast RanBP1 dissociates cargo through sequestering CRM1-RanGTP complexes, which is mechanistically distinct from animal RanBP1. Yeast RanBP1-RanGTP remains active for cargo dissociation even in excess RanGTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by parallel experiments with yeast proteins (Figure 2B-D) showing that yeast RanBP1 behavior differs fundamentally from animal RanBP1. The concentration-dependence experiments clearly distinguish the two mechanisms, though the structural basis for yeast mechanism relies on prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CRM1 and NES inhibit RanGTP hydrolysis in both species, but yeast CRM1 partially protects RanGTP-RanBP1 from GAP-mediated hydrolysis while human CRM1 does not. Nuclear export is faster with human proteins when CRM1 is rate-limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by GAP hydrolysis assays (Figure 3B) and semi-permeabilized cell export assays (Figure 3C-D). The experiments are well-controlled with appropriate time courses and statistical analysis. However, C39 acknowledges other possibilities beyond faster GAP hydrolysis may contribute to faster export.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Animal RanBP1 forms a tetrameric complex (RanBP1:CRM1:RanGTP = 1:1:2) when RanGTP is excessive, where RanBP1-RanGTP binds to CRM1-RanGTP through the NES of RanBP1. In contrast, fungi form a trimeric complex (1:1:1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C40-C49 are supported by multiple complementary biophysical methods: size exclusion chromatography with stoichiometry calculations (Figure 4C-D, supplement 1), pull-down with truncated Ran (Figure 4B), and ITC showing biphasic binding for animals vs. monophasic for yeast (Figure 4E-F). The convergence of multiple independent methods strongly supports the stoichiometry difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The RanBP1 tetrameric complex was detected specifically in the nucleus of human cells using BiFC and FRET approaches. Nuclear localization is consistent with the requirement for high RanGTP concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are supported by BiFC experiments with appropriate negative controls (RanCmut that cannot bind RanBP1) and FRET measurements (Figure 5, supplements). The weak signals and requirement for NLS-RanBP1 to enhance signal are consistent with the model. The absence of cytoplasmic signal validates RanGTP-dependence. Statistical significance is demonstrated (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Loss of affinity between RanBP1-RanGTP and CRM1 in animals is due to non-conservation of interface residues in both RanBP1 (N-terminus, A114/V150) and CRM1. Mutations partially rescue trimeric complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C58-C69 are supported by cross-species pull-down experiments (Figure 6A), structural analysis (Figure 6B-C), sequence alignments (Figure 6 supplements), and systematic mutagenesis (Figure 6D). The triple mutant rescuing binding to yeast levels provides strong evidence. However, the structural analysis relies on modeling rather than direct structure determination of animal complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Loss of binding between human CRM1 and yeast RanBP1-RanGTP is due to sequence divergence in both the RanBP1 contact surface (Q742/T753) and Ran contact surfaces (predicted loss of 6 hydrogen bonds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by mutagenesis of CRM1 residues (Figure 6E), structural analysis of hydrogen bonding (Figure 6F, supplements), and domain swap experiments. The convergence of point mutations and domain swaps provides strong evidence. However, C73 involves predicted rather than experimentally determined hydrogen bond losses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Cellular localization and rescue experiments validate that identified mutations (T753Q in yeast CRM1, Q742T in human CRM1) are functionally important for RanBP1 nuclear export and cargo localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 and C83-C85 are supported by microscopy-based localization studies with statistical analysis (Figure 7, p<0.0001). The rescue experiments with mutant CRM1 constructs provide functional validation of the biochemical findings. The observation that hCRM1Q742T is functionally more similar to yeast than yCRM1T753Q is to human supports Q742/T753 as a key residue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Endogenous human RanBP1 knockdown and rescue with various RanBP1 constructs did not change localization of CRM1, NF\u03baB, or GFP-NLS, likely due to functional redundancy with RanBP2 in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by knockdown/rescue experiments (Figure 7 supplement 1) and citations to prior literature about RanBP2 redundancy and yeast RanBP1 essentiality. The interpretation of redundancy is reasonable given the lack of phenotype, though direct evidence for RanBP2 compensation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Mutant yeast proteins that do not form tight trimeric complexes exhibit faster nuclear export rates than wild-type yeast proteins, confirming that nuclear export rate is higher when not forming tight trimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by in vitro nuclear export assays comparing wild-type and mutant yeast proteins (Figure 8A-B). Statistical significance is shown for 15 and 30 minute timepoints (p<0.01). This provides direct experimental support for the proposed advantage of the animal mechanism, though sample sizes are modest (n\u226523 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Nuclear transport efficiency is substantially higher in human cells than in yeast cells, as demonstrated by greater nucleo-cytoplasmic concentration differences for both import and export cargoes. This difference is not due to differences in binding affinity or protein expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by comparative localization studies in human and yeast cells (Figure 8C-D) with statistical analysis (p<0.0001), binding assays showing similar affinities (Figure 8 supplement 1), and protein concentration measurements (Figure 8 supplement 2). The convergence of evidence rules out several alternative explanations, though other possibilities remain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The animal mechanism costs twice the energy (two GTPs vs. one GTP per export cycle) but provides advantages including faster recycling of export machinery and possibly less nuclear pore congestion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is a logical inference from the stoichiometry data and is SUPPORTED. Claim C107 is supported by the GAP hydrolysis data. However, C108 about nuclear pore congestion and faster transport is speculative without direct experimental evidence. The energy cost calculation is sound, but the proposed advantages beyond faster GAP hydrolysis are not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The evolution of NES in animal RanBP1 eliminated the requirement to conserve interface regions, allowing divergence of RanBP1 and CRM1 for other cellular functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is speculative about evolutionary implications and potential undiscovered functions. While the loss of sequence conservation is documented (C6, C64-C65), the claim about participation in other cellular functions lacks experimental support. This is acknowledged as speculation in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The different mechanisms could enable development of anti-fungal inhibitors targeting trimeric complex formation that would be safe for humans since human RanBP1 export does not rely on trimeric complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 are speculative about potential therapeutic applications. While the mechanistic differences are well-established, no inhibitor development or safety testing is presented. This represents a reasonable hypothesis for future work but is not experimentally validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8"
+    ],
+    "result": "RanBP1 is a cytoplasmic-enriched, nuclear-cytoplasmic shuttling protein. Animal RanBP1 contains an NES C-terminal to its RBD that is responsible for cytoplasmic accumulation, unlike fungi RanBP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C8 are supported by established knowledge cited from prior literature and sequence analysis (Figure 1 supplement 1). These are well-established characteristics that provide context for the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Yeast proteins form stable RanBP1-RanGTP-CRM1 complexes at 5:3:1 molar ratio that are unaffected by RanGTP concentration, while animal proteins do not form stable complexes under these conditions but show increased complex formation at higher RanGTP concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are supported by size exclusion chromatography (Figure 1 supplement 2) and pull-down assays at varying RanGTP concentrations (Figure 1B, supplement 3). These initial observations motivated the subsequent detailed mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The manuscript presents a comprehensive model distinguishing fungal and animal RanBP1 nuclear export mechanisms, including differences in complex formation, subcellular localization, and cargo dissociation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C105 represent the integrated discussion and model building based on the experimental results. These claims synthesize the findings into a coherent mechanistic framework. Most are well-supported by the data, though C102 about rapid cytoplasmic disassembly is somewhat speculative. The model is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The study mapped circRNA inventories across mouse embryonic stem cells (mESC), neuronal progenitor cells (mNPC), and differentiated neurons (mN8) using RNA-seq with and without RNase R treatment. Three prediction algorithms (CIRI2, find_circ, CIRCexplorer2) identified 792-2893 circRNAs depending on stage and algorithm, with 1449 high-confidence circRNAs overlapping all three algorithms after RNase R enrichment. Successful differentiation was confirmed by morphological changes and upregulation of neuronal markers (Ntrk2, Map2, Tubb3) alongside downregulation of pluripotency marker Nanog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide specific quantitative data on circRNA identification across differentiation stages, with validation through RNase R resistance (C40-C41) and algorithm overlap (C42-C43). Differentiation was properly validated through multiple markers (C48-C50). The methodological recommendation (C47) is appropriately supported by the observed high false-positive rates in individual algorithms. The use of three independent prediction algorithms and RNase R validation strengthens confidence in the circRNA inventory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Differential expression analysis revealed marked changes in circRNA expression during the 16-day differentiation timecourse, with many circRNAs considerably more abundant than their linear precursors. K-means clustering identified two main expression clusters peaking at mNPC and mN8 stages. Comparison with previous datasets showed substantial conservation: 80% overlap with differentiated murine cells, 75% of top-100 circRNAs found in human datasets, and 45% overlap with human SH-SY5Y cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C51-C52 describe differential expression patterns supported by Figure 1D-E. Conservation analysis (C53-C55, C57) is well-documented with specific overlap percentages and appropriate citations to prior work (Rybak-Wolf et al., 2015). RT-qPCR validation (C54) of selected circRNAs strengthens the RNA-seq findings. The circular-to-linear ratio analysis (C44) and structural features (C45-C46) are consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "A functional screen of 14 candidate circRNAs in human neuroblastoma cells identified circZNF827 as a negative regulator of neuronal differentiation. Knockdown of circZNF827 (achieving <8% remaining in L-AN-5 cells) significantly increased expression of neuronal markers (TUBB3, MAP2, NEFL, NTRK2) at both mRNA and protein levels, without affecting the linear ZNF827 mRNA. Additionally, circZNF827 knockdown reduced S-phase population from 32% to 24% and caused minor G2/M stalling, suggesting repressed proliferation alongside enhanced differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 describe a well-controlled functional screen with appropriate specificity controls (C62 showing linear mRNA unaffected). The phenotypic effects are validated at multiple levels: mRNA (C61), protein (C63), and cell cycle (C64-C65). The choice of L-AN-5 cells over SH-SY5Y is justified by better knockdown efficiency (C58) and more dynamic marker expression (C59-C60). Statistical significance is reported (p-values in figures), and biological replicates (n=3) are indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "circZNF827 knockdown led to moderate but significant upregulation of retinoic acid receptors RARA and RARG (1.5-2.5 fold), though not RARB. Despite circZNF827 being predominantly cytoplasmic (~90%), the upregulation of RARA was not due to changes in mRNA decay rates but rather to increased transcription, as shown by BrU pulse-labeling experiments. However, the moderate transcriptional increase measured at a single timepoint could not fully explain the larger steady-state mRNA changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C70 present data on RAR regulation, but C71 acknowledges a quantitative discrepancy: the 2.5-fold steady-state increase in RARA mRNA is not fully explained by the modest transcriptional upregulation measured at one timepoint. The predominantly cytoplasmic localization (C68) creates a mechanistic puzzle for transcriptional regulation that is not resolved. While mRNA decay rates were ruled out (C69), the incomplete mechanistic explanation and single-timepoint measurement limit confidence in the proposed transcriptional mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Nanostring analysis of 760 neuropathology-related genes revealed that circZNF827 knockdown after differentiation caused differential expression of 135 genes (9 up, 126 down; fold change >2, p<0.05), enriched for neuronal GO terms. NGFR was the most significantly upregulated gene (~3-4 fold at mRNA and protein levels), with upregulation occurring at the transcriptional level (~4-6 fold by BrU pulse-labeling) rather than through altered mRNA decay. In contrast, steady-state changes in PTEN, STAT3, and MAP2 appeared to be mediated post-transcriptionally, as their transcription rates were unchanged or only modestly affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe comprehensive gene expression profiling with appropriate statistical thresholds and GO-term enrichment. The mechanistic dissection of NGFR regulation (C74, C79-C81) is thorough, using both steady-state measurements and pulse-labeling to distinguish transcriptional from post-transcriptional effects. The mRNA decay experiments (C80) properly control for stability changes. The distinction between transcriptional (NGFR, ATP8A2) and post-transcriptional (PTEN, STAT3, MAP2) regulation (C82-C84) is well-supported by orthogonal measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Nuclear depletion of circZNF827 using dicer-independent shRNA (dishRNA) was highly efficient, supporting a direct transcriptional role. NGF stimulation of circZNF827-depleted cells showed significantly increased FOS expression, indicating functional enhancement of NGFR signaling. These results suggest circZNF827 maintains a balance in neuronal differentiation by limiting expression and signaling of RARA and NGFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 demonstrates efficient nuclear knockdown, which is critical for the transcriptional mechanism proposed. The functional validation through NGF stimulation and FOS quantification (C86) provides strong evidence that increased NGFR protein levels translate to enhanced signaling. The integrative conclusion (C88) is well-supported by the combined data on RARA and NGFR regulation. However, the mechanistic link between cytoplasmic circZNF827 (~90%) and nuclear transcriptional effects remains incompletely explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Biotin-labeled circZNF827 pull-down followed by LC-MS/MS identified hnRNP K and hnRNP L as specific interacting proteins. RNA immunoprecipitation (RIP) in L-AN-5 cells showed >100-fold enrichment of circZNF827 with both hnRNP K and hnRNP L antibodies compared to IgG controls, with hnRNP L showing ~18-fold higher specificity for circZNF827 over GAPDH mRNA. RBPmap predicted high-affinity hnRNP L binding sites and one hnRNP K site in the 3' region of circZNF827, located in single-stranded regions. A deletion mutant removing these predicted binding sites abolished hnRNP K/L binding in HEK293 cells expressing circZNF827, confirming these as bona fide interaction sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C102 describe a comprehensive protein interactome analysis using multiple orthogonal approaches: pull-down/MS (C89-C91), endogenous RIP in L-AN-5 cells (C92-C95), exogenous expression in HEK293 cells (C99-C100), and deletion mutagenesis (C101). The convergence of computational prediction (C96-C98) with experimental validation (C101) strongly supports the specificity of hnRNP K/L binding to the 3' region. The >200-fold enrichment of hnRNP L in HEK293 cells (C100) and loss of binding in the deletion mutant (C101) provide compelling evidence for direct, sequence-specific interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Co-immunoprecipitation experiments showed that hnRNP K interacts with hnRNP L and hnRNP U, but these interactions were unaffected by circZNF827 overexpression in HEK293 cells, suggesting circZNF827 does not regulate bulk hnRNP K/L complex assembly. However, circZNF827 knockdown in L-AN-5 cells caused a small but significant increase in cytoplasmic hnRNP K, and overexpression of circZNF827 in HEK293 cells induced accumulation of hnRNP K and hnRNP L in distinct nuclear foci not present in control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 demonstrate that circZNF827 does not affect bulk hnRNP K/L/U complex formation, which is an important negative control. The subcellular fractionation (C110) and immunofluorescence (C112) experiments provide complementary evidence that circZNF827 influences hnRNP K/L localization rather than complex assembly. The nuclear foci formation upon overexpression (C112) is visually documented in Figure 5G. The conclusion (C113) appropriately integrates these findings, though the physiological relevance of the nuclear foci at high circZNF827 levels remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Knockdown of hnRNP K or hnRNP L individually increased NGFR expression at mRNA and protein levels, similar to circZNF827 knockdown. Co-depletion of circZNF827 with either hnRNP K or hnRNP L strongly augmented NGFR expression (4-5 fold higher than individual knockdowns), suggesting synergistic effects. ChIP-seq data from ENCODE showed hnRNP K binds the NGFR promoter in K562 and HepG2 cells, and hnRNP K ChIP in L-AN-5 cells demonstrated decreased NGFR promoter engagement upon circZNF827 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 demonstrate genetic interactions between circZNF827 and hnRNP K/L in NGFR regulation, with the synergistic effect of co-depletion (C116) strongly supporting a functional complex. The use of ENCODE ChIP-seq data (C118) and validation by ChIP in L-AN-5 cells (C119) provide convergent evidence for hnRNP K binding at the NGFR promoter. The decreased promoter engagement upon circZNF827 knockdown (C119) mechanistically links the circRNA to chromatin-associated transcriptional repression. The comparison to GAPDH as a control gene strengthens the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "ZNF827 protein ChIP showed interaction with the NGFR promoter that was significantly diminished upon circZNF827 knockdown, with similar effects at the RARA promoter. ZNF827 immunoprecipitation revealed strong association with hnRNP K and weaker association with hnRNP L in nucleoplasmic extracts, with even stronger hnRNP K association in chromatin-enriched fractions. ZNF827 co-immunoprecipitated circZNF827 with ~18-fold enrichment over IgG and ~19-fold enrichment over GAPDH mRNA. ZNF827 knockdown strongly upregulated NGFR, with further augmentation in a circZNF827 knockdown background, consistent with a model where circZNF827 bridges a hnRNP K/L-containing inhibitory complex to genomic loci via the ZNF827 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 provide comprehensive evidence for ZNF827 protein involvement in the transcriptional repression complex. The ChIP experiments (C121-C122) demonstrate circZNF827-dependent chromatin association at both NGFR and RARA promoters. The co-IP experiments (C123-C125) show ZNF827 interacts with both hnRNP K/L and circZNF827, with stronger association in chromatin fractions (C124) supporting chromatin localization. The genetic epistasis experiment (C126) and the integrative model (C127) are well-supported by the data. However, the model relies on the assumption that ZNF827 has DNA-binding activity, which is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "MS2-tagging experiments demonstrated that circZNF827 itself engages the NGFR promoter. ChIP using FLAG-tagged MS2 coat protein showed significantly higher NGFR promoter signal in HEK293 cells expressing circZNF827-2XMS2 compared to controls, while GAPDH promoter signal remained constant. RIP experiments confirmed that hnRNP K and hnRNP L interact with circZNF827-2XMS2 with similar affinities as wild-type circZNF827. These results suggest circZNF827 nucleates the hnRNP-ZNF827 complex on chromatin to limit NGFR expression and balance neuronal differentiation versus self-renewal/proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 describe a critical MS2-tagging experiment that directly addresses whether circZNF827 is part of the chromatin-bound complex or merely nucleates it in the cytoplasm. The significantly higher NGFR promoter signal with circZNF827-2XMS2 (C128) compared to controls, with constant GAPDH background (C129), provides strong evidence for chromatin engagement. The validation that MS2-tagging does not disrupt hnRNP K/L binding (C130) is essential for interpreting the ChIP results. This experiment elegantly resolves the mechanistic question of how a predominantly cytoplasmic circRNA (~90%) can regulate transcription, though the quantitative contribution of the small nuclear fraction remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C103",
+      "C104",
+      "C105",
+      "C114",
+      "C120",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The introduction and discussion sections provide extensive background on circRNA biology, including their discovery, biogenesis mechanisms, cellular localization, export mechanisms, known functions (miRNA sponging, RBP scaffolding, transcriptional regulation), translation potential, and roles in neuronal differentiation. These claims cite prior literature to establish the context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C38 and C103-C105, C114, C120, C133-C136 are background claims supported by appropriate citations to prior literature. These establish the scientific context and are not primary findings of this study. The citations appear appropriate and the characterizations of prior work are consistent with the cited sources. These claims provide necessary background for interpreting the novel findings but do not constitute original results from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C77",
+      "C78"
+    ],
+    "result": "Background claims about the functions of NGFR, PTEN, STAT3, and NQO1 in neuronal differentiation and cellular stress, supported by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C77-C78 provide functional context for genes identified as differentially expressed in the study. These are appropriately cited background claims that help interpret the significance of the findings but are not original results from this manuscript.",
+    "result_type": "MINOR"
+  }
+]

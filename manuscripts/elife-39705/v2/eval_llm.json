@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C20",
+      "C21",
+      "C26",
+      "C46",
+      "C58",
+      "C76"
+    ],
+    "result": "Protein sequence and structural divergence between ancient orthologs with conserved molecular function significantly slows down after ~1-2 billion years of evolution, with divergence rates decreasing by more than 10-fold. As a result, sequence and structural similarities have not substantially decreased for the past billion years, with orthologs maintaining >25% sequence identity (average ~40%) and <3\u00c5 RMSD at long evolutionary distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C13-C15, C20-C21, C26, C46, C58, and C76 collectively demonstrate a well-supported pattern of divergence slowdown. The statistical evidence from model fitting (F-tests, Wald tests), multiple independent enzyme families (62/64 cases), and both sequence and structural data converge on this conclusion. The quantitative estimates are consistent across different analytical approaches (Models 2 and 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C25"
+    ],
+    "result": "The effective divergence limit of >25% sequence identity between ancient orthologs is explained by an average of less than four acceptable amino acid types per site. This constraint arises from the limited number of amino acids accepted per site combined with back substitutions, rather than from universally conserved sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C16-C19, and C25 provide a mechanistic explanation for the divergence limit that is well-supported by mathematical modeling (Model 2 equivalence to limited amino acid acceptance model) and empirical parameter estimates (Y0 distribution). The interpretation is internally consistent and supported by 95% of enzyme families showing Y0 significantly above random sequence identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C69",
+      "C70"
+    ],
+    "result": "Only 10-20% of protein sites are universally conserved across independent lineages, accounting for approximately 35% of observed sequence identity at long divergence distances. Different sites contribute to the divergence limit in different phylogenetic lineages rather than the same sites being conserved universally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C69-C70 are supported by systematic analysis of site conservation across phylogenetically independent lineages for 30 enzyme families. The quantitative estimates are consistent and the conclusion that lineage-specific rather than universal conservation drives the divergence limit is well-justified by the data in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Protein sites with different fitness effects show distinct temporal divergence patterns. Sites with mild fitness effects show rapid initial divergence followed by ~10-fold slowdown and saturation after ~1.5 billion years, maintaining >25% identity. Sites with large fitness effects diverge slowly but at approximately constant rates throughout evolutionary history, not yet approaching saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C43, and C73-C75 are supported by experimental MAGE data for FolA and InfA proteins combined with computational analysis of ortholog divergence. The distinct patterns for sites grouped by fitness effects are clearly demonstrated in Figure 4, and the qualitative similarity between two independent proteins (FolA and InfA) strengthens the conclusion. The correlation between fitness effects and long-term conservation (C42-C43) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Structural divergence between orthologous enzymes increases with divergence time but rarely exceeds 3\u00c5 C-alpha RMSD even at long evolutionary distances, with a substantial decrease in the rate of structural divergence after ~1.5 billion years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by structural analysis of >1000 orthologous enzyme pairs with known 3D structures. The correlation between RMSD and divergence time is statistically significant (Spearman's r=0.44, p<1e-20), and the pattern parallels sequence divergence, providing independent validation of the divergence slowdown phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "While residues close to active sites are most highly conserved, even distant sites (>20\u00c5 from active site) display substantial divergence limits (~40% sequence identity) at long evolutionary distances, suggesting that spatial constraints required for molecular function propagate throughout the entire protein structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by systematic analysis of site conservation as a function of distance to catalytic residues across multiple enzyme families (Figure 5b). The observation that even distant sites show substantial conservation limits is well-documented, though the mechanistic inference in C50 about constraint propagation, while reasonable, goes slightly beyond what the data directly demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C59"
+    ],
+    "result": "Orthologs sharing only the first three EC digits (partial functional conservation) show significantly lower long-term sequence identity (27% vs 37%) and structural similarity (2.4\u00c5 vs 1.8\u00c5 RMSD) compared to orthologs sharing all four EC digits (full functional conservation). Even at the same structural divergence level, full functional conservation maintains higher sequence identity, indicating that molecular function constrains sequence divergence beyond structural requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 and C59 are supported by statistical comparisons with highly significant p-values (<10^-20) across multiple ortholog pairs. The analysis in Figure 6 demonstrates both the effect of functional specificity on divergence and the additional sequence constraints imposed by full functional conservation beyond structural maintenance. The comparison to proteins with same fold but different functions (C53) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C67",
+      "C68"
+    ],
+    "result": "Conservation of specific molecular function imposes substantially more stringent long-term sequence constraints (~40% identity) than conservation of protein fold alone (~10-15% identity) or protein stability, demonstrating that functional specificity is the primary driver of the observed divergence limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C67-C68 synthesize the major findings and are well-supported by the comparative analysis of divergence limits under different conservation requirements. The quantitative differences between fold conservation (~10-15% identity) and functional conservation (~40% identity) are substantial and consistent across the dataset, providing strong support for the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The analysis used 64 EC numbers from 22 diverse organisms across three domains of life, representing all six major enzyme classes. The results are robust to methodological concerns including homolog detection difficulty, computational functional annotations, and divergence time estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C22-C24 describe the dataset and validation analyses. The breadth of the dataset (64 EC numbers, 22 species, all enzyme classes) and the robustness checks (experimentally validated functions in Figure 1\u2014supplement 3, divergence time sensitivity in Figure 1\u2014supplement 7) provide strong support for the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "For non-enzymatic protein families, Model 2 fitted the data significantly better than Model 1 for the majority (23/29) of families, with Y0 >25% for these families, indicating that the divergence limit phenomenon extends beyond enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by statistical analysis of 29 non-enzymatic protein families (Figure 2b, Figure 1\u2014supplement 5). While the proportion showing the pattern is lower than for enzymes (23/29 vs 62/64), the result demonstrates generalizability beyond enzymatic functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C72"
+    ],
+    "result": "19 orthologous groups, including mitochondrial ribosomal proteins and translation initiation factors, showed differential divergence patterns with eukaryotic orthologs diverging substantially faster than prokaryotic orthologs, potentially due to co-evolution with interaction partners or relaxed selection pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C30 and C72 identify an interesting exception to the general pattern. While the observation of differential divergence is supported by data (Figure 1\u2014supplement 6), the mechanistic explanation (C30, C72) is speculative and based on prior literature rather than direct evidence from this study. The claim requires additional experimental validation to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Different protein families show different probability distributions of identical sites, likely due to diverse structural and functional requirements across protein families leading to family-specific constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by the observed variation in site conservation patterns across protein families (Figure 3\u2014supplement 1). However, the mechanistic explanation is somewhat speculative. The observation itself is well-documented, but the interpretation about family-specific constraints, while reasonable, is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The long-term protein sequence identity between FolA orthologs is ~32%, which is similar to other analyzed enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by data in Figure 1a and comparison to Figure 2a. This justifies the choice of FolA as a representative enzyme for experimental validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C47",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C71"
+    ],
+    "result": "The manuscript contextualizes findings within established knowledge about protein evolution, including fold conservation, catalytic site constraints, enzyme classification, and mechanistic models of functional constraint. These claims establish the theoretical framework and cite relevant prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10, C47, C60-C66, and C71 represent background knowledge and mechanistic models supported by appropriate citations to established literature. These provide necessary context for interpreting the novel findings but are not themselves new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Ancient protein orthologs are still diverging from each other, confirming previous findings by Povolotskaya and Kondrashov (2010).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 confirms a prior result and is supported by the data showing continued (albeit slow) divergence at long timescales. This serves as validation that the analysis reproduces known results while extending them with new insights about divergence rate changes.",
+    "result_type": "MINOR"
+  }
+]

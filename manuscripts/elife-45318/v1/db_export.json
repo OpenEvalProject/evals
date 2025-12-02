@@ -1,0 +1,1330 @@
+{
+  "submission": {
+    "id": "cb6f22d0-c7be-4178-8701-1e1e1dea5309",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:43:13.680143Z",
+    "updated_at": "2025-12-02T10:43:13.680143Z"
+  },
+  "content": [
+    {
+      "id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "submission_id": "cb6f22d0-c7be-4178-8701-1e1e1dea5309",
+      "content_type": "manuscript",
+      "content_text": "# Response to comment on 'Valid molecular dynamics simulations of human hemoglobin require a surprisingly large box size'\n\n## Authors\n\n- Krystel El Hage<sup>1</sup> ([ORCID: 0000-0003-4837-3888](https://orcid.org/0000-0003-4837-3888))\n- Florent H\u00e9din<sup>1</sup> ([ORCID: 0000-0001-6341-7557](https://orcid.org/0000-0001-6341-7557))\n- Prashant K Gupta<sup>1</sup> ([ORCID: 0000-0002-4792-7538](https://orcid.org/0000-0002-4792-7538))\n- Markus Meuwly<sup>1</sup> ([ORCID: 0000-0001-7930-8806](https://orcid.org/0000-0001-7930-8806)) \u2020\n- Martin Karplus<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Chemistry University of Basel Basel Switzerland\n2. Department of Chemistry and Chemical Biology Harvard University Cambridge United States\n3. Laboratoire de Chimie Biophysique ISIS, Universit\u00e9 de Strasbourg Strasbourg France\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe recently reported that molecular dynamics simulations for hemoglobin require a surprisingly large box size to stabilize the T(0) state relative to R(0), as observed in experiments (El Hage et al., 2018). Gapsys and de Groot have commented on this work but do not provide convincing evidence that the conclusions of El Hage et al., 2018 are incorrect. Here we respond to these concerns, argue that our original conclusions remain valid, and raise our own concerns about some of the results reported in the comment by Gapsys and de Groot that require clarification.\n\n## Introduction\n\nOur investigation of the box size dependence of hemoglobin in solution was initiated by the disagreement between the experimentally observed stabilization of the unliganded T state relative to an R-like structure (Edelstein, 1971), and molecular dynamics simulations which found that the unliganded T state (T(0)) was not stable and made a transition to an R-like state in times on the order of a hundred nanoseconds (Hub et al., 2010; Yusuff et al., 2012). We began research to determine what could be wrong with the published simulations and found, after looking at many possibilities, that only a surprisingly large (150 \u00c5) simulation box was able to stabilize the T(0) over at least\u00a0~1.3 microseconds (El Hage et al., 2018; Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig1-v1.jpg)\n\n## Results\n\n### Statistics\n\nTo estimate rates, a sufficient number of samples is required. An explicit example, although not related to hemoglobin but illustrating the effect of insufficient statistics, is to consider reactive MD simulations for the vibrationally induced photodissociation of HSO3Cl to SO3 and HCl (Figure 2). It is evident that with 20 events the distribution of reaction times is far from converged and does not even allow one to guess the true distribution: see Yosa Reyes et al., 2016 for details on the simulations. This is also why from ab initio MD simulations of vibrationally induced photodissociation, no rates were determined because widely different reaction times for individual trajectories were found when only considering\u00a0~100 trajectories (see Figure\u00a02 of Miller and Gerber, 2006). It also remains unclear how the probability of 0.0026 was determined in Gapsys and de Groot (2019) (hereafter referred to as the comment).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig2-v1.jpg)\n\n**Figure 2.:** With 20 trajectories the distribution is far from converged and even with 500 trajectories convergence appears to be incomplete. It\u00a0is\u00a0only for 5000 independent events\u00a0that p(\u03c4) approaches a smooth distribution.\n\n### Hydrophobic effect\n\nAs stated in the abstract of the El Hage et al. (2018): \u2018The results suggest that such a large box is required for the hydrophobic effect, which stabilizes the T(0) tetramer, to be manifested.\u2019 We felt we did not have conclusive evidence for the role of the hydrophobic effect, and have been working with Adam Willard to investigate this point. We note that the comment includes a list of some differences in the simulation setups: these and other differences in the two sets of setups need to be investigated as possible contributors to the difference in the simulation results. A possible problem with the comparisons in Figure\u00a03 of the comment concerns the fact that we only exchanged input files for the 90 \u00c5 box; the authors of the comment constructed the larger boxes used in their simulations. In that regard, it is interesting to note that their observed life time for the 90 \u00c5 box with its error bars essentially includes the one observed in our simulation. Point on which we do not agree with the constructs used in the comment to reanalyze our results include the following:\n\n# The subvolume analysis which attempts to compare the diffusivity in large boxes but restricted to a smaller subvolume needs to introduce \u2018imaginary boundary conditions\u2019 and it is unclear how this was done. Such an approach appears to assume that water outside this artificial volume behaves as bulk water which is not evident. Alternatively, very short analysis times (~2 picoseconds) need to be used to avoid significant displacement of the water molecules (Persson et al., 2017).\n\n# The water-water hydrogen bond network reconfigures when the structure of the protein changes (T vs. R) and from one box size to another box size (see Figure\u00a03 in El Hage et al., 2018). Following a transition in the protein structure these changes occur on the few nanosecond time scale, as a direct response to the protein structure change. This suggests that the protein and water dynamics are coupled and can not be viewed independently.\n\n# As an important test we have solvated the decayed (i.e., R-state) structure from the simulation in the 120 \u00c5 box in the 150 \u00c5 box and observed that the T-state is partially recovered (Figure 3). Apparently, solvation of the decayed structure in the larger water box provides the driving force required to partially recover the T(0) structure. This is an additional indication that, thermodynamically, T(0) is favored over R(0) in the largest water box without, however, providing information concerning a quantitative measure of the underlying energetics. Full recovery would require much longer simulations.\n\n# Technically, it is desirable to carry out simulations in a setup that allows the solvent \u2013 here water \u2013 to behave as a pure liquid for quantities such as g(r) or the average number of H-bonds. With hemoglobin as the solute we find this to be the case for a box size of 150 \u00c5.\n\nThe normalization procedure of the radial distribution functions used in the comment remains unclear. It should be noted that the radial distribution functions in El Hage et al. (2018) follow the expectations for spherical cavities (Chandler, 2005). Figure 5 in El Hage et al. (2018) aims at highlighting that in a box not sufficiently large, water barely reaches bulk properties as judged from the g(r), whereas it readily does so when using a sufficiently large box (e.g. 150 \u00c5). As no hydrophobic effect is expected for ubiquitin it is not\u00a0clear\u00a0what the data in Figure 2\u2014figure supplement 1 of the comment contribute to relating the thermodynamic stability of the T(0) state of hemoglobin with the hydrophobic effect.\n\n### Kinetics as a function of box size\n\nThis section raises questions as to the statistical significance of the results. As mentioned above and in Figure 2, converged reaction time distributions require hundreds to thousands of transitions. Given the fact that the T(0)\u00a0state is unstable in the 90 \u00c5 and 120 \u00c5 boxes it is reasonable that starting from an ensemble of initial structures a distribution of decay times is found. Comparing two such distributions to provide evidence for the presence or absence of a box size dependence requires them to be converged to some degree which probably can not be achieved from 10 to 20 simulations.\n\nIt is stated in the comment that with the setup used in our simulations, 20 simulations were done for 90 \u00c5 and 150 \u00c5 boxes and 10 for a 120 \u00c5 box: however, the results shown in Figure 3 of the comment (that the transition is shorter in the larger boxes) is the inverse of what might be expected. This surprising result could be due to poor statistics, to some inconsistency in the use of our setup, or to something we do not understand. Interestingly, the T(0)\u00a0lifetime in the 90 \u00c5 box, for which we had made input files available, is in the range we found (see Figure\u00a01B in El Hage et al., 2018), whereas this is not the case for the 120 \u00c5 and 150 \u00c5 boxes (for which we did not send input files). We also note a difference in the magnitude of the error bars in Figure\u00a03A of the comment for the different protonation states which requires an explanation. Additional exchanges of information and detailed analyses would serve to clarify these points.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig3-v1.jpg)\n\n**Figure 3.:** The green and red lines report the time series reported in our article (simulation starting from the T(0) state) and the time series of a simulation starting from the decayed T(0) state (i.e., an R(0)\u00a0state structure) from R state in the 120 \u00c5 box, respectively. Cyan and blue arrows indicate the values of the corresponding observables found for the deoxy T(0)(2DN2) and oxy R(4)(2DN3) states, respectively.\n\nWhen we were still collaborating to investigate the origin of some of the results reported in the comment, we exchanged input files they used in their work and our input files. We note that a previous publication by one of the authors of the comment (Hub et al., 2010) does not provide details on the protonation states of the His, except for His146 for which they used either doubly protonated or protonation at \u03b5. In another publication by one of the authors of the comment (Vesper and de Groot, 2013) it appears that the Kovalevsky protonation states that they sent us were not used. Thus we need more information to verify which protonation states were used in the various simulations. Our comparison showed that the protonation states of the histidine residues were very different (Table 1). We note that it is not sufficient to characterize the histidine residues as \u2018protonated\u2019 or \u2018deprotonated\u2019. Rather, it is also relevant whether protonation is at the \u03b4 or \u03b5 positions, for example His143 which should be \u03b5-protonated as it anchors the water network stabilizing His146 (see Figure 6 in El Hage et al., 2018).\n\n**Table 1.**\n Histidine protonation states in hemoglobin as used in simulations by the present authors (Zheng et al., 2013; El Hage et al., 2018), and the histidine protonation states in the files that\u00a0were\u00a0supplied to us by the authors of the comment (originally from Kovalevsky et al., 2010).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Zheng et al., 2013; El Hage et al., 2018</th>\n      <th colspan=\"2\">Kovalevsky et al., 2010</th>\n      <th></th>\n      <th>Zheng et al., 2013; El Hage et al., 2018</th>\n      <th colspan=\"2\">Kovalevsky et al., 2010</th>\n    </tr>\n    <tr>\n      <th>Res.</th>\n      <th>Chain A/C</th>\n      <th>Chain A</th>\n      <th>Chain C</th>\n      <th>Res.</th>\n      <th>Chain B/D</th>\n      <th>Chain B</th>\n      <th>Chain D</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>20</td>\n      <td>HSE</td>\n      <td>HSP</td>\n      <td>HSE</td>\n      <td>2</td>\n      <td>HSE</td>\n      <td>HSE</td>\n      <td>HSE</td>\n    </tr>\n    <tr>\n      <td>45</td>\n      <td>HSE</td>\n      <td>HSE</td>\n      <td>HSE</td>\n      <td>63</td>\n      <td>HSE</td>\n      <td>HSP</td>\n      <td>HSE</td>\n    </tr>\n    <tr>\n      <td>50</td>\n      <td>HSD</td>\n      <td>HSD</td>\n      <td>HSP</td>\n      <td>77</td>\n      <td>HSE</td>\n      <td>HSE</td>\n      <td>HSE</td>\n    </tr>\n    <tr>\n      <td>58</td>\n      <td>HSE</td>\n      <td>HSP</td>\n      <td>HSE</td>\n      <td>92</td>\n      <td>HSD-Fe</td>\n      <td>HSD-Fe</td>\n      <td>HSD-Fe</td>\n    </tr>\n    <tr>\n      <td>72</td>\n      <td>HSD</td>\n      <td>HSP</td>\n      <td>HSP</td>\n      <td>97</td>\n      <td>HSE</td>\n      <td>HSP</td>\n      <td>HSP</td>\n    </tr>\n    <tr>\n      <td>87</td>\n      <td>HSD-Fe</td>\n      <td>HSD -Fe</td>\n      <td>HSD-Fe</td>\n      <td>116</td>\n      <td>HSE</td>\n      <td>HSP</td>\n      <td>HSP</td>\n    </tr>\n    <tr>\n      <td>89</td>\n      <td>HSE</td>\n      <td>HSE</td>\n      <td>HSP</td>\n      <td>117</td>\n      <td>HSE</td>\n      <td>HSE</td>\n      <td>HSE</td>\n    </tr>\n    <tr>\n      <td>103</td>\n      <td>HSE</td>\n      <td>HSP</td>\n      <td>HSP</td>\n      <td>143</td>\n      <td>HSE</td>\n      <td>HSE</td>\n      <td>HSP</td>\n    </tr>\n    <tr>\n      <td>112</td>\n      <td>HSE</td>\n      <td>HSP</td>\n      <td>HSP</td>\n      <td>146</td>\n      <td>HSP</td>\n      <td>HSP</td>\n      <td>HSP</td>\n    </tr>\n    <tr>\n      <td>122</td>\n      <td>HSE</td>\n      <td>HSE</td>\n      <td>HSE</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nFurther differences between the simulations concern the shape of the simulation box (cubic in El Hage et al., 2018 vs. dodecahedral), the center of mass of the protein was constrained to avoid periodic boundary effects (El Hage et al., 2018), and the terms for the dihedral parameters for the Fe-proximal histidine differed. Removing the angular center of mass motion is only warned against if the motion of the center of mass itself is not controlled (i.e., if the solute can cross the boundaries of the periodic box). However, this is not the case in our simulations, but appeared to happen in some of those performed by the authors of the comment. Concerning the effect of the box shape on the proteins simulated under periodic boundary conditions, it has been found that the box type can have a statistically significant effect on the outcome of a simulation, and that the magnitude of the effect depends on the protein considered (Wassenaar and Mark, 2006). Although all of the latter may contribute to the difference in the results, we believe that a possible difference in the His protonation states used in the simulations would play a major role and needs to be examined.\n\n### Kinetics rather than thermodynamics\n\nA necessary but not sufficient criterion for thermodynamic stability is that the structure considered (here T(0)) does not decay on the time scale of the simulations (e.g., to R(0)). However, transition times from T to R can not be determined from such an approach. For this, either a very large number of independent simulations (on the order of hundreds to thousands; see Figure 2) are required, or free energy simulations need to be carried out. As pointed out in El Hage et al. (2018) from the available experimental data, the T(0) to R(0) transition time should be on the order of seconds. The transitions in simulation boxes of 75 \u00c5, 90 \u00c5, and 120 \u00c5 all were under one microsecond and increased with increasing box size (Figure 4). Panels (A), (B), and (D) show that the presence or absence of the Fe-His bond does not lead to substantial changes of the time series as far as they have been followed. Panel (B) also reports the changes for simulations with electrostatic cutoffs (green) and when simulations with the Kovalevsky protonation states were carried out (orange). With finite cutoff the T(0) state is stable for at least 150 nanoseconds, and with the Kovalevsky protonation it decays after 60 nanoseconds, in accord with earlier findings (Hub et al., 2010).\u00a0The radial distribution functions around His146 in our original study (see Figure 6 in El Hage et al., 2018) and from our simulations using the Kovalevsky protonation in the 90 \u00c5 box suggest that with the latter protonation state His146 is typically overhydrated as compared with our (stable) simulation in the 150 \u00c5 box (see middle panel in Figure 5). Moreover, with the Kovalevsky protonation in the 90\u00c5\u00a0box, the height of the first and second peak of g(r) is comparable to that of our own simulation in the 90 \u00c5 box after T(0) has decayed (at 500 nanoseconds and later; see Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig4-v1.jpg)\n\n**Figure 4.:** In (A), (C), and (D) the black line reports the time series published and the red line shows the new time series obtained with the new simulation with the Fe\u2013N bond. In (B) the black trace is from El Hage et al. (2018) the red trace for the bonded Fe\u2013His simulations, the green line from using finite cutoffs for evaluating the electrostatics (cutoff 14 \u00c5), and the orange line from using Kovalevsky protonation states for all histidines.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig5-v1.jpg)\n\nComparisons of simulations with and without a Fe\u2013His bond show that the Fe\u2013His bond lengths are comparable in all four subunits (see Figure 6). As to the Fe\u2013Fe distances between the various heme groups, only the 120 \u00c5 and 150 \u00c5 box simulations gave results in agreement with experiment; the smaller boxes did not.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45318/elife-45318-fig6-v1.jpg)\n\nThe 150 \u00c5 box in a T(0) state was also stable for at least 1.3 microseconds, the length of the simulation (Figure 1).\n\nAn obvious improvement of our initial study is to run multiple simulations for each box, in particular if one is interested in the kinetics of the T-to-R transition. We are doing additional simulations to examine the box size dependence of the lifetime. However, we point out that it is very difficult to do a sufficient number of independent simulations to obtain converged statistical results for a system the size of hemoglobin. In ten simulations for the 120 \u00c5 box reported in the comment, 4 out of the 10 lasted longer than one microsecond, compared with 3 out of 10 for the 90 \u00c5 box. In simulation of kinetics hundreds to thousands of individual, reactive trajectories are required for converged reaction time distributions that can be compared with experiment (Yosa and Meuwly, 2011; Soloviov et al., 2016). The data in Figure\u00a03 of the comment cannot report on the kinetics because the number of events observed is too small (Figure 2).\n\n### Kinetics as a function of box size\n\nWe refer readers to our author response. We also note that previous work (Wassenaar and Mark, 2006) did find a dependence on box shape.\n\n### Thermodynamics as a function of box size\n\nThe results for the other two systems are interesting but there is no reason to expect a box size dependence for the structural changes that were studied. Among other points, the surface area change is small and a hydrophobic effect is unlikely. There is no direct relationship to our findings for hemoglobin.\n\n## Conclusions\n\nWe believe we have demonstrated that the details of our simulations provide evidence that there is a box size dependence in hemoglobin simulations and that it is likely, though not proved, that in a 150 \u00c5 box the unliganded T state is stable. The role of the particular choice of His protonation states in the fast decay presented in the comment remains to be evaluated. Finally, we reiterate that the unliganded T state is known to be stable from experiment: therefore, if our results were not correct, there would have to be a yet unknown problem with simulations of unliganded T state hemoglobin.\n",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "c7872d33-2c39-43ab-92f9-defb193416ff",
+      "submission_id": "cb6f22d0-c7be-4178-8701-1e1e1dea5309",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research United States\n\nReviewers:\n- Wei Yang, United States\n\n## Review text\n\nDOI: [10.7554/eLife.45318.011](https://doi.org/10.7554/eLife.45318.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: the original decision letter was sent on 20 March 2019, and was followed by further letters on 29 April 2019 and 7 May 2019: the point-by-point response by Gapsys and de Groot was attached to the last of these letters.]\n\n20 March 2019:\n\nThank you for submitting your response to the comment by Gapsys and de Groot on your eLife article \"Valid molecular dynamics simulations of human hemoglobin require a surprisingly large box size\". Your response has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor (Yibing Shan), a Senior Editor (John Kuriyan) and the eLife Features Editor (Peter Rodgers).\n\nWe plan to progress this matter as follows:\n\n- i) We will ask Gapsys and de Groot to revise their comment to address the points made by the referees (which include a request to delete some material) and to clarify some of the points raised in your response to their comment.\n\n- ii) The comments of the referees on your response are below. No action with respect to these comments is needed at this stage.\n\n- iii) Once we have received the revised version of the comment from Gapsys and de Groot, we will send it to you so that you can revise your response accordingly. At this stage we will also request some editorial revisions and ask for a point-by-point response to the points in the decision letter (as is our standard practice).\n\n29 April 2019:\n\nFurther to our email of March 20 (above), we have now received the revised version of the comment by Gapsys and de Groot, so we are writing with the details of the revisions that you need to make to your response to this comment. As indicated in the email of March 20, you will need to make: i) editorial changes; ii) changes in response to the reviewer comments; iii) changes to reflect the changes in the comment by Gapsys and de Groot. Please see below for more details.\n\nPlease be aware that if your manuscript is accepted for publication, we will publish the decision letter and your point-by-point response to it (excluding minor comments).\n\n# Editorial changes\n\na) Please change the title to the following (which is the standard format for such articles in eLife):\n\nResponse to comment on 'Valid molecular dynamics simulations of human hemoglobin require a surprisingly large box size'\n\nb) Please revise the abstract so that it better summarizes your manuscript. I would suggest something along the following lines:\n\n\"In a previous paper we reported that [QUERY: Please summarize your original paper and the dependence on box size here] (El Hage et al., 2018). Gapsys and de Groot have expressed a number of concerns about this work, and have argued that the dependence on box size that we reported is not reproducible (Gapsys and de Groot, 2019). Here we respond to these concerns and argue that our original conclusions remain valid.\"\n\nPlease feel free to revise the above, but please avoid stating that Gapsys and de Groot are incorrect. Please also answer the query.\n\nc) Please revise the conclusion so that, again, it better summarizes your manuscript. I would suggest something along the following lines:\n\n\"We continue to believe that our work provides evidence for a dependence on box size in molecular dynamics simulations of human hemoglobin, and that is likely, though not proven, that the unliganded T state of human hemoglobin is stable in a 150 \u00c5 box. We also believe that the role of the His protonation states in the fast decay of the T(0) state [OK?] reported by Gapsys and de Groot remains to be evaluated. Finally, we reiterate that the unliganded T state is known to be stable from experiment: therefore, if our results are not correct, there exists an as yet unknown problem with the simulations of unliganded T state hemoglobin.\"\n\nPlease feel free to revise the above.\n\n# Changes in response to the reviewer comments\n\nThe reviewer comments (which were included in the email of 20 March) are copied below. Of the six points made by reviewer #1, points 1 and 5 are covered below (under the heading \"Changes to reflect the changes in the comment by Gapsys and de Groot\"), and points 2, 3 and 4 do not require a response. The four paragraphs from reviewer #2 do not require a response.\n\nReviewer #1:\n\nThis paper is to reply to the comment by Gapsys and de Groot on the published work \"'Valid molecular dynamics simulations of human hemoglobin require a surprisingly large box size' by El Hage et al. The reply was focused on that (a) the examination work does not invalidate the original conclusion that there is a significant box size effect and (b) several statements in the comment need to be clarified. With careful review of both the comment by Gapsys and de Groot and this reply, by and large, I agree with the general discussion of El Hage et al., particularly on the fact that the observed box size dependency is interesting and needs to be further explored; and it is likely an explanation to the mystery of unexpected fast T-R transition in MD simulations. Given that, I have the following opinions and suggestions:\n\n1) I have suggested some major changes to Gapsys and de Groot regarding their focus of the discussion. Hopefully they will revise the comment accordingly and the authors of this reply can change their reply accordingly.\n\n2) I appreciate the fact that El Hage et al. further clarified the fact that the hydrophobic effect was proposed as an hypothesis rather than a firm conclusion and they are further exploring this effect.\n\n3) I appreciate the fact that El Hage et al. further clarified that the focus of the original paper is to \"demonstrate that the details of the simulations provide evidence that there is a box size dependence in hemoglobin simulations and that is likely, though not proved, that in a 150 \u00c5 box the unliganded T state is stable.\"\n\n4) In my opinion, the importance of the original work even with the above two clarifications still firmly holds and the paper will be an important literature in the field of MD simulation.\n\n5) I agree on the proposal by El Hage et al. that to re-exam their original observation, the simulation details need to be carefully checked. I would like to encourage the authors of both sides to work together to further explore these important observations in the near future.\n\n6) A minor suggestion is that El Hage et al. may consider putting some appreciation comments on the fact that their work has attracted attentions of the authors of the comment; and Gapsys and de Groot have put quite a bit efforts in further looking to this issue and provided some suggestion on some aspect of the analysis. It is a healthy scientific process.\n\nReviewer #2:\n\nWhile it is an interesting and potentially important possibility that simulation box size may affect simulation outcome, I think it is clear that the statistics in the paper by El Hage et al. are insufficient to establish this. In the comment by Gapsys and de Groot, more repeats of the simulation of hemoglobin were reported, but the number of the repeats is not large enough to exclude this possibility, although the simulations appear to be inconsistent with this possibility. The suggested effect of simulation box size is necessarily a subtle one, if it does exist, and the value of the comment, in my assessment, is in pointing out that this is an unresolved issue that require further investigations. This, importantly, is acknowledged by El Hage et al in their reply to the comment.\n\nGapsys and de Groot correctly pointed out that even the transition time is established to be smaller in simulations of a small box than in ones of a big box, one cannot reliably infer that the thermostability of the initial T state is reduces by the small box size. However, this is common knowledge of even beginners of this field, of which surely El Hage et al. are aware. This distinction between kinetics and thermodynamics is peripheral at this point when it is not known for certain whether the transition time is indeed affected by box size. I think this section should be removed from the comment.\n\nGapsys and de Groot proposed an alternative approach to analyze the potential hydrophobic effect associated with box size and showed that such an approach would lead to a different conclusion. This is valid. Neutral statements to this effect would suffice.\n\nThe suggested effect of simulation box size is necessarily a subtle one. Thus the fact that Gapsys and de Groot did not see it in simulations of a number of other systems is not sufficient to exclude this possibility. It seems unnecessary to report these simulations in the comment. Or at least, it should be acknowledged that these additional simulations are not conclusive either way.\n\n# Changes to reflect changes in the Comment by Gapsys and de Groot\n\nPlease address the following points by revising your manuscript and explaining in your point-by-point response how your manuscript has been revised. It is important that you make these changes so that readers of the two articles can get a clear idea of what has been done by both groups.\n\ni) The order of subsections within the Results section of the comment by Gapsys and de Groot has been changed, so please change the order of the subsections within the Results section of your manuscript.\n\nii) Gapsys and de Groot have expanded the \"Statistics\" subsection by revising the sentences that start \"For example, we find.. . \" and \"This is further underscored... \" They have also added eight new sentences to the end of this section, and have added a new figure (Figure 1-figure supplement 1).\n\nPlease consider revising your manuscript to reflect these additions.\n\niii) Gapsys and de Groot have expanded the \"Hydrophobic effect\" subsection by adding six new sentences to the end of this sectio. They have also added a new figure (Figure 2-figure supplement 1).\n\nPlease consider revising your manuscript to reflect these additions.\n\niv) Gapsys and de Groot have added a new sentence to the end of the \"Kinetics rather than thermodynamics\" subsection.\n\nPlease consider revising your manuscript to reflect this addition.\n\nv) We asked Gapsys and de Groot to revise the previous version of this manuscript to better explain how their setups compared to/differed from your setups. Our requests to them are in regular type below; their replies to these requests are in italic type. Please revise your manuscript as necessary in the light of these changes:\n\n\"We note that the setups by El Hage et al and by Gapsys and de Groot are not identical, and the differences in the setups potentially involve several parameters (e.g., how the initial water box was constructed, how long the water molecules were equilibrated before the production runs, whether the protein system was restrained during the water equilibriation, and what types of baro-stat and thermo-stat were used et al.) To clarify these issues, please be explicit about the differences between your setups and the setups used by El Hage et al.\n\nREPLY: We are aware of this issue and therefore had contacted El Hage et al for their setup. The data in our comment that refer to 'El Hage setup' is based on their 90A setup and therefore is identical to that of El Hage et al in all the mentioned aspects of how the initial water box was constructed, how long the water molecules were equilibrated before the production runs, how the protein system was restrained during the water equilibriation, what force field was applied, and what types of barostat and thermostat et al were used. Therefore, the reviewers' assertion above \"We note that the setups by El Hage et al and by Gapsys and de Groot are not identical\" appears incorrect. Based on this setup of the 90A box, we ran 20 simulations of 1 microsecond each. 9 of these did not complete the transition, and thus remain in the T state, which in the El Hage et al. 2018 study had been claimed as an exclusive feature of the 150A box. The fact that we observe the lack of a transition also in equally long simulations in the 90A box thus renders the conclusion of El Hage et al. invalid that the lack of a transition to R (or indeed a valid description of deoxyhemoglobin to remain 'stable' in T) is due to the larger box size in the 150A box.\n\nIn addition, we have also carried out simulations in larger boxes of cubic sizes of 120A and 150A. The 120A and 150A boxes were constructed from the 90A box by adding a water layer (with solvated ions) of 30 and 60A, respectively. These therefore also are identical in terms of protein configuration as well as protein solvation shell to the El Hage et al setup. We have now added this description to the manuscript. That the added solvation has created a setup indistinguishable from the El Hage et al setup for the 120A and 150A boxes is illustrated by the fact that the single trajectory findings of El Hage et al. fall well within the error bars that we provide not only for the 90A box but also for the 120A and 150A boxes. This can be even more clearly seen in our Fig. 1B, that shows that the El Hage et al. simulations fall well within the distributions we find for all the investigated box sizes.\n\nThat other parameters in the setup indeed have an influence on the transition statistics is reflected in Fig. 3A where we show that three different hemoglobin setups in terms of e.g. chosen protonation states or protein-heme interactions show three different types of transition kinetics. In none of these three, we see a systematic effect of the box size, however.\n\nAlso, please revise your manuscript to address the following comments in the response from El Hage et al. a) The comments in the sentence that starts \"A possible problem with the comparisons in their figure 3\u2026\"\n\nREPLY: The setup issue is already addressed above. It was the choice of El Hage et al to only send us their 90A setup (we had before that shared all our setups with them). The only thing we did to construct the 120A and 150A boxes was to add a layer of solvent with ions around the pre-solvated 90A box. In the same paragraph, El Hage et al write: \"In that regard, it is interesting to note that their observed life time for the 90A box with its error bars essentially includes the one observed in our simulation.\" The same is in fact true for the 120A and 150A boxes: the single trajectory findings of El Hage et al. fall well within the error bars that we provide. This can be even more clearly seen in our Fig. 1B, that shows that the El Hage et al. simulations fall well within the distributions we find. There is thus no reason to assume 'A possible problem' with the 120A and 150A boxes.\n\nb) The comments in the sentence that starts \"We also note a difference in the magnitude of the error bars.. . \"\n\nREPLY: the errors are different because the transition times are different. Smaller absolute transition times result in smaller associated absolute errors. We now included this notion in the revised manuscript.\n\nc) The comments in the paragraph that starts \"When we were still collaborating\u2026\"\n\nREPLY: This section is about the effect of protonation states. For the systems labeled 'El Hage' in our comment, the protonation states are identical to the ones of El Hage et al (2018) as the simulations started from the input provided by El Hage et al. In addition, as pointed out in our comment, The El Hage et al protonation states are nearly identical to the ones in our \"Hub\" setup (except for one small difference of a surface histidine of which we argue that it is unlikely to substantially affect the transition kinetics) and therefore it seems odd to state (like El Hage et al do): \"protonation states of the histidine residues were very different\". They are different to the Kovalevsky et al. setup, the effect of which on hemoglobin we had already reported in 2013 (Vesper and de Groot, 2013). This section in the reply of El Hage et al thus seems rather confusing and does not appear to provide novel insight. In addition, the protonation states listed in Table 1 of the El Hage et al reply differ from the setup that was sent to us.\n\nIn total, we tested 3 different hemoglobin setups with different protonation states and observed no box size dependence in any of them.\"\n\n7 May 2019:\n\nThank you for your email. I attach the point-by-point response from Gapsys and de Groot in response to the referee reports on the previous version of their manuscript. Please treat this document in confidence (and please do not quote from it in your revised manuscript).\n\nAs requested in my email of April 29, can you please revise your manuscript to i) address the editorial points outlined in that letter; ii) address the comments from the referees included in that letter; iii) to reflect the changes in the manuscript of Gapsys and De Groot. Please note that it should be possible to address all these points by making textual revisions to your manuscript: that is, we are not asking you to perform further simulation.\n\nYou will be able to use the following link to upload your revised manuscript and your point-by-point response to the email of April 29:\n\nI look forward to receiving your revised manuscript and point-by-point response. It would be helpful if you could submit these within the next two weeks (i.e., by Tuesday 21 May). If you think you will need more time to revise your manuscript, please let me know.\n\nFinally, please note that eLife publishes the decision letter and the point-by-point response it (excluding minor comments) for all papers.\n",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "95c61c75-a443-4910-8276-ac5309c9b60c",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C1",
+      "claim": "Molecular dynamics simulations for hemoglobin require a surprisingly large box size to stabilize the T(0) state relative to R(0), as observed in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that molecular dynamics simulations for hemoglobin require a surprisingly large box size to stabilize the T(0) state relative to R(0), as observed in experiments (El Hage et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El Hage et al., 2018, which is the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "82bc30ff-e3b1-4e59-be59-056f7630f412",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C2",
+      "claim": "The unliganded T state is experimentally observed to be stabilized relative to an R-like structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our investigation of the box size dependence of hemoglobin in solution was initiated by the disagreement between the experimentally observed stabilization of the unliganded T state relative to an R-like structure (Edelstein, 1971)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Edelstein, 1971.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "228841cc-dfed-4288-a774-55e1495917c4",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C3",
+      "claim": "Previous molecular dynamics simulations found that the unliganded T state (T(0)) was not stable and made a transition to an R-like state in times on the order of a hundred nanoseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "molecular dynamics simulations which found that the unliganded T state (T(0)) was not stable and made a transition to an R-like state in times on the order of a hundred nanoseconds (Hub et al., 2010; Yusuff et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hub et al., 2010 and Yusuff et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "a716748f-4e32-4480-8886-881a6ed2fd68",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C4",
+      "claim": "A 150 \u00c5 simulation box was able to stabilize the T(0) state over at least ~1.3 microseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "only a surprisingly large (150 \u00c5) simulation box was able to stabilize the T(0) over at least ~1.3 microseconds (El Hage et al., 2018; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to El Hage et al., 2018 and reference to Figure 1 showing the simulation data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "d799a2c1-aa5a-437a-b71b-c23a552f7cde",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C5",
+      "claim": "With 20 trajectories, the distribution of reaction times is far from converged and does not allow one to guess the true distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that with 20 events the distribution of reaction times is far from converged and does not even allow one to guess the true distribution: see Yosa Reyes et al., 2016 for details on the simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yosa Reyes et al., 2016 and reference to Figure 2 showing the distribution data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "8d0bce14-4b5a-41b9-8a59-5dd365b27874",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C6",
+      "claim": "From ab initio MD simulations of vibrationally induced photodissociation, no rates were determined because widely different reaction times for individual trajectories were found when only considering ~100 trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also why from ab initio MD simulations of vibrationally induced photodissociation, no rates were determined because widely different reaction times for individual trajectories were found when only considering ~100 trajectories (see Figure 2 of Miller and Gerber, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Miller and Gerber, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "ed075071-2bf6-4631-b463-d0d5680e281c",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C7",
+      "claim": "With 500 trajectories, convergence of the reaction time distribution appears to be incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "With 20 trajectories the distribution is far from converged and even with 500 trajectories convergence appears to be incomplete.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "ac0f4cd2-40a7-4e5c-981b-958276db4aa8",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C8",
+      "claim": "It is only for 5000 independent events that p(\u03c4) approaches a smooth distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "It is only for 5000 independent events that p(\u03c4) approaches a smooth distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "5a3b151a-0e42-45d7-846a-9a348ead0e32",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C9",
+      "claim": "A large box is required for the hydrophobic effect, which stabilizes the T(0) tetramer, to be manifested.",
+      "claim_type": "EXPLICIT",
+      "source": "As stated in the abstract of the El Hage et al. (2018): 'The results suggest that such a large box is required for the hydrophobic effect, which stabilizes the T(0) tetramer, to be manifested.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El Hage et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "4eaf2ec3-8f86-42c4-9573-3e4c71518f52",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C10",
+      "claim": "The observed lifetime for the 90 \u00c5 box with its error bars essentially includes the one observed in the authors' simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In that regard, it is interesting to note that their observed life time for the 90 \u00c5 box with its error bars essentially includes the one observed in our simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from comparing results between studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "3d2e2e82-a7a6-4bcb-b419-01a8ed993f9e",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C11",
+      "claim": "The water-water hydrogen bond network reconfigures when the structure of the protein changes (T vs. R) and from one box size to another box size.",
+      "claim_type": "EXPLICIT",
+      "source": "The water-water hydrogen bond network reconfigures when the structure of the protein changes (T vs. R) and from one box size to another box size (see Figure 3 in El Hage et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El Hage et al., 2018 and reference to Figure 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "6fdd1e43-1138-41e4-8e29-40e900fef967",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C12",
+      "claim": "Following a transition in the protein structure, water network changes occur on the few nanosecond time scale, as a direct response to the protein structure change.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a transition in the protein structure these changes occur on the few nanosecond time scale, as a direct response to the protein structure change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the data presented in El Hage et al., 2018.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "9e8d86e5-b3e2-48b6-9cf5-a0d380524e7c",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C13",
+      "claim": "The protein and water dynamics are coupled and cannot be viewed independently.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the protein and water dynamics are coupled and can not be viewed independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed coupling between protein structure changes and water network reconfiguration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "e09bd330-910b-4426-9f1e-24257ee688ee",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C14",
+      "claim": "Solvation of the decayed (R-state) structure from the 120 \u00c5 box in the 150 \u00c5 box results in partial recovery of the T-state.",
+      "claim_type": "EXPLICIT",
+      "source": "As an important test we have solvated the decayed (i.e., R-state) structure from the simulation in the 120 \u00c5 box in the 150 \u00c5 box and observed that the T-state is partially recovered (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "ad123397-451f-428f-912b-83558f51578a",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C15",
+      "claim": "Solvation of the decayed structure in the larger water box provides the driving force required to partially recover the T(0) structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, solvation of the decayed structure in the larger water box provides the driving force required to partially recover the T(0) structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that T-state is partially recovered when R-state is solvated in a larger box.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "f44cc0ff-0505-4675-bd42-ee8827ea66e4",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C16",
+      "claim": "Thermodynamically, T(0) is favored over R(0) in the largest water box.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an additional indication that, thermodynamically, T(0) is favored over R(0) in the largest water box without, however, providing information concerning a quantitative measure of the underlying energetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the partial recovery of T-state in the larger box.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "3ae786b7-cba5-4ebf-aad6-be7b71ce4cf2",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C17",
+      "claim": "Full recovery of the T(0) state would require much longer simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Full recovery would require much longer simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about what would be needed for complete recovery.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "bfdf683d-2e03-4b43-b335-d04d71e93c6e",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C18",
+      "claim": "It is desirable to carry out simulations in a setup that allows the solvent to behave as a pure liquid for quantities such as g(r) or the average number of H-bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Technically, it is desirable to carry out simulations in a setup that allows the solvent \u2013 here water \u2013 to behave as a pure liquid for quantities such as g(r) or the average number of H-bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about simulation best practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "ebaded5f-fa2c-44df-a4e1-3cc6597ac884",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C19",
+      "claim": "With hemoglobin as the solute, water behaves as a pure liquid for a box size of 150 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "With hemoglobin as the solute we find this to be the case for a box size of 150 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the authors' simulation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "c5a44911-5237-4f86-8776-4682e6d7a808",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C20",
+      "claim": "The radial distribution functions in El Hage et al. (2018) follow the expectations for spherical cavities.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the radial distribution functions in El Hage et al. (2018) follow the expectations for spherical cavities (Chandler, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chandler, 2005 and the data in El Hage et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "685242e4-642f-47e0-b3e1-35456f4ebe90",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C21",
+      "claim": "In a box not sufficiently large, water barely reaches bulk properties as judged from the g(r).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 in El Hage et al. (2018) aims at highlighting that in a box not sufficiently large, water barely reaches bulk properties as judged from the g(r), whereas it readily does so when using a sufficiently large box (e.g. 150 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El Hage et al., 2018 and reference to Figure 5.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "d559c96a-7ccb-4276-8313-bccb8b003311",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C22",
+      "claim": "Water readily reaches bulk properties when using a sufficiently large box (e.g. 150 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 in El Hage et al. (2018) aims at highlighting that in a box not sufficiently large, water barely reaches bulk properties as judged from the g(r), whereas it readily does so when using a sufficiently large box (e.g. 150 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El Hage et al., 2018 and reference to Figure 5.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "a1326972-939f-4b36-ab15-fc1b9356bb68",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C23",
+      "claim": "No hydrophobic effect is expected for ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "As no hydrophobic effect is expected for ubiquitin it is not clear what the data in Figure 2\u2014figure supplement 1 of the comment contribute to relating the thermodynamic stability of the T(0) state of hemoglobin with the hydrophobic effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about ubiquitin's properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "1b9e6b77-dceb-4816-979b-8ed9bb7a1c63",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C24",
+      "claim": "Converged reaction time distributions require hundreds to thousands of transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above and in Figure 2, converged reaction time distributions require hundreds to thousands of transitions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "55cf7fdf-0fce-4f27-a2a2-2f7f07f0106b",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C25",
+      "claim": "The T(0) state is unstable in the 90 \u00c5 and 120 \u00c5 boxes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the fact that the T(0) state is unstable in the 90 \u00c5 and 120 \u00c5 boxes it is reasonable that starting from an ensemble of initial structures a distribution of decay times is found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the authors' simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "8383b121-8ec9-4b5a-a553-b9b5be48ceb8",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C26",
+      "claim": "Starting from an ensemble of initial structures, a distribution of decay times is found for the T(0) state in 90 \u00c5 and 120 \u00c5 boxes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the fact that the T(0) state is unstable in the 90 \u00c5 and 120 \u00c5 boxes it is reasonable that starting from an ensemble of initial structures a distribution of decay times is found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the instability of T(0) in smaller boxes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "2170ce1d-2722-4a2e-8e6d-2cf2ce35e220",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C27",
+      "claim": "Comparing two decay time distributions to provide evidence for the presence or absence of a box size dependence requires them to be converged to some degree which probably cannot be achieved from 10 to 20 simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing two such distributions to provide evidence for the presence or absence of a box size dependence requires them to be converged to some degree which probably can not be achieved from 10 to 20 simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the statistical requirements for convergence.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "e59af010-96dd-45c7-84c5-05c99faff182",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C28",
+      "claim": "In the comment, 20 simulations were done for 90 \u00c5 and 150 \u00c5 boxes and 10 for a 120 \u00c5 box using the authors' setup.",
+      "claim_type": "EXPLICIT",
+      "source": "It is stated in the comment that with the setup used in our simulations, 20 simulations were done for 90 \u00c5 and 150 \u00c5 boxes and 10 for a 120 \u00c5 box",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on information from the comment by Gapsys and de Groot.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "689f65e9-dffd-4f96-b2c9-24f48faec198",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C29",
+      "claim": "The results shown in Figure 3 of the comment (that the transition is shorter in the larger boxes) is the inverse of what might be expected.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the results shown in Figure 3 of the comment (that the transition is shorter in the larger boxes) is the inverse of what might be expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from expectations about box size effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "fb9c06ae-0803-4b09-ae72-d1a9c7f28208",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C30",
+      "claim": "The T(0) lifetime in the 90 \u00c5 box from the comment is in the range found by the authors.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the T(0) lifetime in the 90 \u00c5 box, for which we had made input files available, is in the range we found (see Figure 1B in El Hage et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with data in El Hage et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "7e625bbd-f8f7-4fa9-84d6-26f924ce371f",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C31",
+      "claim": "The T(0) lifetime in the 120 \u00c5 and 150 \u00c5 boxes from the comment is not in the range found by the authors.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas this is not the case for the 120 \u00c5 and 150 \u00c5 boxes (for which we did not send input files).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from comparison of results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "1563673f-09bd-4dfe-9621-f146910c8371",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C32",
+      "claim": "Hub et al. (2010) does not provide details on the protonation states of the His, except for His146 for which they used either doubly protonated or protonation at \u03b5.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that a previous publication by one of the authors of the comment (Hub et al., 2010) does not provide details on the protonation states of the His, except for His146 for which they used either doubly protonated or protonation at \u03b5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hub et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "0c867119-3fe2-4d92-80f9-609c9eb00fcc",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C33",
+      "claim": "In Vesper and de Groot (2013), it appears that the Kovalevsky protonation states were not used.",
+      "claim_type": "EXPLICIT",
+      "source": "In another publication by one of the authors of the comment (Vesper and de Groot, 2013) it appears that the Kovalevsky protonation states that they sent us were not used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Vesper and de Groot, 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "dfb54c50-0948-4e85-afcc-6c883f7bd580",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C34",
+      "claim": "It is not sufficient to characterize the histidine residues as 'protonated' or 'deprotonated'; it is also relevant whether protonation is at the \u03b4 or \u03b5 positions.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that it is not sufficient to characterize the histidine residues as 'protonated' or 'deprotonated'. Rather, it is also relevant whether protonation is at the \u03b4 or \u03b5 positions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about histidine chemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "41679136-bbc9-44f7-9852-c86b7539c377",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C35",
+      "claim": "His143 should be \u03b5-protonated as it anchors the water network stabilizing His146.",
+      "claim_type": "EXPLICIT",
+      "source": "for example His143 which should be \u03b5-protonated as it anchors the water network stabilizing His146 (see Figure 6 in El Hage et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El Hage et al., 2018 and reference to Figure 6.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "c1532db0-1781-43e5-8daa-ba91a28978d4",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C36",
+      "claim": "The protonation states of the histidine residues were very different between the authors' simulations and those supplied by the comment authors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our comparison showed that the protonation states of the histidine residues were very different (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "5988703b-d316-4124-b2bb-081c4ca70c7f",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C37",
+      "claim": "Differences between the simulations concern the shape of the simulation box (cubic in El Hage et al., 2018 vs. dodecahedral).",
+      "claim_type": "EXPLICIT",
+      "source": "Further differences between the simulations concern the shape of the simulation box (cubic in El Hage et al., 2018 vs. dodecahedral)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of simulation setups.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "71fc73f3-3a75-49e1-b9a7-5641465a4421",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C38",
+      "claim": "The center of mass of the protein was constrained to avoid periodic boundary effects in El Hage et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "the center of mass of the protein was constrained to avoid periodic boundary effects (El Hage et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El Hage et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "fcc5410a-7436-4451-bfba-b5a88f16980e",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C39",
+      "claim": "The terms for the dihedral parameters for the Fe-proximal histidine differed between the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "and the terms for the dihedral parameters for the Fe-proximal histidine differed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of simulation parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "8f6eaa7f-c136-462f-a508-4433d160fe21",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C40",
+      "claim": "The box type can have a statistically significant effect on the outcome of a simulation, and the magnitude of the effect depends on the protein considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerning the effect of the box shape on the proteins simulated under periodic boundary conditions, it has been found that the box type can have a statistically significant effect on the outcome of a simulation, and that the magnitude of the effect depends on the protein considered (Wassenaar and Mark, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wassenaar and Mark, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "730968a2-3d0c-4717-8dbc-1585b607bc76",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C41",
+      "claim": "A possible difference in the His protonation states used in the simulations would play a major role in the difference in results.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all of the latter may contribute to the difference in the results, we believe that a possible difference in the His protonation states used in the simulations would play a major role and needs to be examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the importance of protonation states.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "e295cc65-c16f-4d66-8f4c-95b1c7c41995",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C42",
+      "claim": "A necessary but not sufficient criterion for thermodynamic stability is that the structure considered (here T(0)) does not decay on the time scale of the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "A necessary but not sufficient criterion for thermodynamic stability is that the structure considered (here T(0)) does not decay on the time scale of the simulations (e.g., to R(0)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about thermodynamic stability criteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "8736642f-f396-4245-80af-e13f8b31ea78",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C43",
+      "claim": "Transition times from T to R cannot be determined from observing that T(0) does not decay on the simulation timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "However, transition times from T to R can not be determined from such an approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about kinetic measurements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "36b9c033-882d-4a92-9e85-c52770e21936",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C44",
+      "claim": "To determine transition times from T to R, either a very large number of independent simulations (on the order of hundreds to thousands) are required, or free energy simulations need to be carried out.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, either a very large number of independent simulations (on the order of hundreds to thousands; see Figure 2) are required, or free energy simulations need to be carried out.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on established knowledge about statistical requirements and is supported by Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "aa892287-ab98-444b-b089-281145e93011",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C45",
+      "claim": "From the available experimental data, the T(0) to R(0) transition time should be on the order of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "As pointed out in El Hage et al. (2018) from the available experimental data, the T(0) to R(0) transition time should be on the order of seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to El Hage et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "d812615e-a00f-43ee-be59-d589932e2b26",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C46",
+      "claim": "The transitions in simulation boxes of 75 \u00c5, 90 \u00c5, and 120 \u00c5 all were under one microsecond and increased with increasing box size.",
+      "claim_type": "EXPLICIT",
+      "source": "The transitions in simulation boxes of 75 \u00c5, 90 \u00c5, and 120 \u00c5 all were under one microsecond and increased with increasing box size (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "437638cd-d0fe-4527-9c74-690d06a5e9ef",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C47",
+      "claim": "The presence or absence of the Fe-His bond does not lead to substantial changes of the time series as far as they have been followed.",
+      "claim_type": "EXPLICIT",
+      "source": "Panels (A), (B), and (D) show that the presence or absence of the Fe-His bond does not lead to substantial changes of the time series as far as they have been followed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4 panels A, B, and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "a3b4c528-c4f1-4176-8622-72ced27af507",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C48",
+      "claim": "With finite cutoff, the T(0) state is stable for at least 150 nanoseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "With finite cutoff the T(0) state is stable for at least 150 nanoseconds",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4B (green line).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "2e344fce-18c3-480b-8899-e122aeed1cd5",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C49",
+      "claim": "With the Kovalevsky protonation, the T(0) state decays after 60 nanoseconds, in accord with earlier findings.",
+      "claim_type": "EXPLICIT",
+      "source": "and with the Kovalevsky protonation it decays after 60 nanoseconds, in accord with earlier findings (Hub et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4B (orange line) and citation to Hub et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "9b5a93d7-b82e-4b27-bd00-2f7001b4a5e4",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C50",
+      "claim": "With the Kovalevsky protonation state, His146 is typically overhydrated as compared with the stable simulation in the 150 \u00c5 box.",
+      "claim_type": "EXPLICIT",
+      "source": "The radial distribution functions around His146 in our original study (see Figure 6 in El Hage et al., 2018) and from our simulations using the Kovalevsky protonation in the 90 \u00c5 box suggest that with the latter protonation state His146 is typically overhydrated as compared with our (stable) simulation in the 150 \u00c5 box (see middle panel in Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5 and citation to El Hage et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "bdcf507f-8397-40a5-bf16-eaabb91562fa",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C51",
+      "claim": "With the Kovalevsky protonation in the 90\u00c5 box, the height of the first and second peak of g(r) is comparable to that of the authors' own simulation in the 90 \u00c5 box after T(0) has decayed.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, with the Kovalevsky protonation in the 90\u00c5 box, the height of the first and second peak of g(r) is comparable to that of our own simulation in the 90 \u00c5 box after T(0) has decayed (at 500 nanoseconds and later; see Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4B and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "f1cb32fe-88b2-409b-a7bf-44add8fc9545",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C52",
+      "claim": "Comparisons of simulations with and without a Fe\u2013His bond show that the Fe\u2013His bond lengths are comparable in all four subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons of simulations with and without a Fe\u2013His bond show that the Fe\u2013His bond lengths are comparable in all four subunits (see Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "9a4832e6-f0a2-45a5-8340-1d5d1dbe1f2f",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C53",
+      "claim": "Only the 120 \u00c5 and 150 \u00c5 box simulations gave Fe\u2013Fe distances between the various heme groups in agreement with experiment; the smaller boxes did not.",
+      "claim_type": "EXPLICIT",
+      "source": "As to the Fe\u2013Fe distances between the various heme groups, only the 120 \u00c5 and 150 \u00c5 box simulations gave results in agreement with experiment; the smaller boxes did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of simulation results with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "3e7b77ad-3611-41a5-babc-15a1324836e4",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C54",
+      "claim": "The 150 \u00c5 box in a T(0) state was stable for at least 1.3 microseconds, the length of the simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 150 \u00c5 box in a T(0) state was also stable for at least 1.3 microseconds, the length of the simulation (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "c5060016-f25c-4ec4-a155-1958040a29a1",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C55",
+      "claim": "In simulation of kinetics, hundreds to thousands of individual, reactive trajectories are required for converged reaction time distributions that can be compared with experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulation of kinetics hundreds to thousands of individual, reactive trajectories are required for converged reaction time distributions that can be compared with experiment (Yosa and Meuwly, 2011; Soloviov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yosa and Meuwly, 2011 and Soloviov et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "9c7310bf-d35b-441f-b0fc-5c5182987442",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C56",
+      "claim": "The data in Figure 3 of the comment cannot report on the kinetics because the number of events observed is too small.",
+      "claim_type": "EXPLICIT",
+      "source": "The data in Figure 3 of the comment cannot report on the kinetics because the number of events observed is too small (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the statistical requirements shown in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "4165d345-65d8-4d8d-bec4-45ca7ace23af",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C57",
+      "claim": "Previous work found a dependence on box shape.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that previous work (Wassenaar and Mark, 2006) did find a dependence on box shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wassenaar and Mark, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "1ae999bf-f13b-4a6b-96af-57dec0a202b1",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C58",
+      "claim": "There is no reason to expect a box size dependence for the structural changes studied in the other two systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The results for the other two systems are interesting but there is no reason to expect a box size dependence for the structural changes that were studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the nature of the structural changes in those systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "100ba146-ff92-422d-959e-db3ffcedb317",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C59",
+      "claim": "Among other points, the surface area change is small and a hydrophobic effect is unlikely for the other two systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other points, the surface area change is small and a hydrophobic effect is unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the properties of the other systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "e090c1e7-48fb-4e63-b969-fc48b59a5017",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C60",
+      "claim": "There is no direct relationship between the findings for the other two systems and the findings for hemoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no direct relationship to our findings for hemoglobin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the relevance of the other systems to hemoglobin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "405ed963-dee4-45e9-a265-c100bd6262ae",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C61",
+      "claim": "The details of the authors' simulations provide evidence that there is a box size dependence in hemoglobin simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe we have demonstrated that the details of our simulations provide evidence that there is a box size dependence in hemoglobin simulations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the simulation results presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "7658243b-a2e6-47a6-aecf-2fa741cd7aca",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C62",
+      "claim": "It is likely, though not proved, that in a 150 \u00c5 box the unliganded T state is stable.",
+      "claim_type": "EXPLICIT",
+      "source": "and that it is likely, though not proved, that in a 150 \u00c5 box the unliganded T state is stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the simulation data showing stability over 1.3 microseconds.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "2df4c216-6a79-43fb-aede-1316710faf81",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C63",
+      "claim": "The unliganded T state is known to be stable from experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we reiterate that the unliganded T state is known to be stable from experiment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established experimental knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "cc20e2c4-0245-4911-ad0a-db9c5698bcb9",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "claim_id": "C64",
+      "claim": "If the authors' results were not correct, there would have to be a yet unknown problem with simulations of unliganded T state hemoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "therefore, if our results were not correct, there would have to be a yet unknown problem with simulations of unliganded T state hemoglobin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference from the experimental stability of the T state.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "78b6d197-ab65-4895-9bd5-3d308fd218bc",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A 150 \u00c5 simulation box is required to stabilize the hemoglobin T(0) state for at least 1.3 microseconds, resolving the discrepancy between experimental observations showing T(0) stability and previous simulations showing rapid T(0) to R-like transitions within hundreds of nanoseconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C54 establish the core finding with appropriate citations to prior work (C2, C3) and simulation data (C4, C54, Figure 1). The 150 \u00c5 box stabilizes T(0) over 1.3 \u03bcs, consistent with experimental expectations, while smaller boxes show rapid decay. This represents a reproducible observation from the authors' previous work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "caad31ef-9d5e-478b-b0d1-ff4d84689935",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Converged reaction time distributions require hundreds to thousands of independent trajectories; with only 20-100 trajectories, distributions are far from converged and cannot reliably characterize kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 and C24 are directly supported by Figure 2 showing convergence behavior with increasing trajectory numbers. Claims C44 and C55 provide appropriate citations establishing this as a general principle in simulation kinetics. The visual evidence clearly demonstrates inadequate convergence with small sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "f9fdafef-1689-402d-ab76-decaf7e79d19",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The comment by Gapsys and de Groot used insufficient simulations (10-20) to assess box size dependence, and their results showing shorter transitions in larger boxes contradict expectations and may reflect poor statistics or methodological inconsistencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 and C56 provide a coherent critique of the comment's statistical power, referencing the convergence requirements established in Figure 2 (C24, C44, C55). The observation that only the 90 \u00c5 results (where input files were shared) match the authors' findings (C30-C31) raises legitimate concerns about simulation setup consistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "846dd2b2-a147-4c1f-85fc-25930601a14e",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Histidine protonation states differ substantially between the authors' simulations and those used by the comment authors, with specific differences in \u03b4 vs. \u03b5 protonation that are functionally important (e.g., His143 anchoring the water network stabilizing His146).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by Table 1 showing systematic differences in protonation states. Claim C34 correctly notes the importance of distinguishing \u03b4 vs. \u03b5 protonation based on established histidine chemistry. Claim C35 is supported by citation to Figure 6 in El Hage et al., 2018. However, C41 is speculative about the relative importance of this factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "653ddb22-d79e-4bd1-a8ca-c356d2c48fe2",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Transition times in 75 \u00c5, 90 \u00c5, and 120 \u00c5 boxes all occur under one microsecond and increase with box size; the presence/absence of Fe-His bonds does not substantially affect these transitions, but using Kovalevsky protonation states leads to rapid T(0) decay (~60 ns) consistent with earlier findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 are directly supported by Figure 4 showing time series data. The Fe-His bond comparison (C47) is demonstrated across multiple panels. The Kovalevsky protonation result (C49) reproduces Hub et al., 2010 findings, providing internal validation. The data clearly show box size dependence on transition times.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "ce2f4f0f-a28f-4ca9-b128-1cb1379ee1ac",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "With Kovalevsky protonation states, His146 is overhydrated compared to the stable 150 \u00c5 simulation, with radial distribution function peaks comparable to those observed after T(0) decay in the 90 \u00c5 box.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by Figure 5 showing radial distribution functions and comparison with Figure 4B time series data. The comparison between different protonation states and their hydration patterns is appropriately documented with visual evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "15d42a1d-dc57-40ac-b34b-fc0440fb5cb9",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fe-His bond lengths are comparable across all four subunits regardless of bonding treatment, but only 120 \u00c5 and 150 \u00c5 boxes reproduce experimental Fe-Fe distances between heme groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by Figure 6 showing Fe-His bond length comparisons. Claim C53 references experimental agreement but lacks explicit presentation of the experimental values or statistical comparison. The result is supported but would benefit from more detailed experimental comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "6fdc795f-76f5-4ad6-a7df-54794e232f16",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Water-water hydrogen bond networks reconfigure in response to protein structural changes (T vs. R) and box size changes on nanosecond timescales, indicating coupled protein-water dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are supported by citation to Figure 3 in El Hage et al., 2018. The inference of coupling (C13) follows logically from the observed rapid water network response (C12) to protein structural changes. This represents a reasonable interpretation of the cited data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "76970d3c-c898-4dc1-a0d0-b8baf82725bb",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Resolvating a decayed R-state structure from a 120 \u00c5 box into a 150 \u00c5 box results in partial recovery of the T-state, suggesting thermodynamic preference for T(0) in the larger box, though full recovery would require longer simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is directly supported by Figure 3 showing the resolvation experiment. Claims C15-C16 represent reasonable inferences from this observation. Claim C17 appropriately acknowledges the limitation that only partial recovery was observed. This is a well-designed control experiment supporting the box size effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "45386940-aae3-4e39-bf98-bbd9afcfd1fa",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Water behaves as a pure liquid (based on g(r) and H-bond properties) in 150 \u00c5 boxes with hemoglobin, following expectations for spherical cavities, while smaller boxes show water that barely reaches bulk properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 are supported by citations to El Hage et al., 2018 Figure 5 and Chandler, 2005 for theoretical expectations. Claim C18 represents established simulation best practices. The radial distribution function analysis provides appropriate evidence for bulk water behavior assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "cb9414b2-b7aa-4d00-b224-7b107f67df00",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multiple simulation setup differences exist between studies including box shape (cubic vs. dodecahedral), center-of-mass constraints, and Fe-His dihedral parameters; box shape can have statistically significant effects on simulation outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 document specific methodological differences. Claims C40 and C57 are supported by citation to Wassenaar and Mark, 2006 establishing that box shape effects are known in the literature. These represent legitimate concerns about comparing results across different simulation protocols.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "c20db4b8-0d8b-481b-b191-d24f803ae79b",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Observing that T(0) does not decay on simulation timescales is necessary but not sufficient for thermodynamic stability; transition times cannot be determined from such observations, and experimental T(0) to R(0) transition times should be on the order of seconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 represent established principles about distinguishing thermodynamic stability from kinetic measurements. Claim C45 is supported by citation to El Hage et al., 2018 and experimental literature. These claims correctly frame the interpretation of simulation stability observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "96704894-35d7-483e-8118-e81b3cc0e485",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The hydrophobic effect may be responsible for T(0) stabilization in large boxes, but this remains speculative; other systems (ubiquitin) show no box size dependence as expected since they lack significant hydrophobic effects or surface area changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C9 is explicitly labeled as speculative in the original work. Claims C58-C60 argue that other systems are not relevant comparisons, which is reasonable given different physical properties. However, the hydrophobic effect mechanism (C9) lacks direct experimental validation and the authors acknowledge ongoing work with collaborators to investigate this.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    },
+    {
+      "id": "34bfa82e-1add-44a1-ba67-81c1053dd2e1",
+      "content_id": "b27ea4ae-55af-4e10-bd13-85787885dab3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors' simulations provide evidence for box size dependence in hemoglobin, with likely (though not proven) T-state stability in 150 \u00c5 boxes; since experimental T-state stability is established, failure to reproduce this would indicate unknown simulation problems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 appropriately acknowledge the evidence while noting limitations (\"likely, though not proved\"). Claim C63 correctly cites experimental knowledge. Claim C64 provides sound logical reasoning: if simulations cannot reproduce known experimental stability, there must be methodological issues. This represents a fair summary of the evidence and its implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:43:13.680143Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95c61c75-a443-4910-8276-ac5309c9b60c",
+      "result_id": "78b6d197-ab65-4895-9bd5-3d308fd218bc"
+    },
+    {
+      "claim_id": "82bc30ff-e3b1-4e59-be59-056f7630f412",
+      "result_id": "78b6d197-ab65-4895-9bd5-3d308fd218bc"
+    },
+    {
+      "claim_id": "228841cc-dfed-4288-a774-55e1495917c4",
+      "result_id": "78b6d197-ab65-4895-9bd5-3d308fd218bc"
+    },
+    {
+      "claim_id": "a716748f-4e32-4480-8886-881a6ed2fd68",
+      "result_id": "78b6d197-ab65-4895-9bd5-3d308fd218bc"
+    },
+    {
+      "claim_id": "3e7b77ad-3611-41a5-babc-15a1324836e4",
+      "result_id": "78b6d197-ab65-4895-9bd5-3d308fd218bc"
+    },
+    {
+      "claim_id": "d799a2c1-aa5a-437a-b71b-c23a552f7cde",
+      "result_id": "caad31ef-9d5e-478b-b0d1-ff4d84689935"
+    },
+    {
+      "claim_id": "8d0bce14-4b5a-41b9-8a59-5dd365b27874",
+      "result_id": "caad31ef-9d5e-478b-b0d1-ff4d84689935"
+    },
+    {
+      "claim_id": "ed075071-2bf6-4631-b463-d0d5680e281c",
+      "result_id": "caad31ef-9d5e-478b-b0d1-ff4d84689935"
+    },
+    {
+      "claim_id": "ac0f4cd2-40a7-4e5c-981b-958276db4aa8",
+      "result_id": "caad31ef-9d5e-478b-b0d1-ff4d84689935"
+    },
+    {
+      "claim_id": "1b9e6b77-dceb-4816-979b-8ed9bb7a1c63",
+      "result_id": "caad31ef-9d5e-478b-b0d1-ff4d84689935"
+    },
+    {
+      "claim_id": "36b9c033-882d-4a92-9e85-c52770e21936",
+      "result_id": "caad31ef-9d5e-478b-b0d1-ff4d84689935"
+    },
+    {
+      "claim_id": "c5060016-f25c-4ec4-a155-1958040a29a1",
+      "result_id": "caad31ef-9d5e-478b-b0d1-ff4d84689935"
+    },
+    {
+      "claim_id": "55cf7fdf-0fce-4f27-a2a2-2f7f07f0106b",
+      "result_id": "f9fdafef-1689-402d-ab76-decaf7e79d19"
+    },
+    {
+      "claim_id": "8383b121-8ec9-4b5a-a553-b9b5be48ceb8",
+      "result_id": "f9fdafef-1689-402d-ab76-decaf7e79d19"
+    },
+    {
+      "claim_id": "2170ce1d-2722-4a2e-8e6d-2cf2ce35e220",
+      "result_id": "f9fdafef-1689-402d-ab76-decaf7e79d19"
+    },
+    {
+      "claim_id": "e59af010-96dd-45c7-84c5-05c99faff182",
+      "result_id": "f9fdafef-1689-402d-ab76-decaf7e79d19"
+    },
+    {
+      "claim_id": "689f65e9-dffd-4f96-b2c9-24f48faec198",
+      "result_id": "f9fdafef-1689-402d-ab76-decaf7e79d19"
+    },
+    {
+      "claim_id": "fb9c06ae-0803-4b09-ae72-d1a9c7f28208",
+      "result_id": "f9fdafef-1689-402d-ab76-decaf7e79d19"
+    },
+    {
+      "claim_id": "7e625bbd-f8f7-4fa9-84d6-26f924ce371f",
+      "result_id": "f9fdafef-1689-402d-ab76-decaf7e79d19"
+    },
+    {
+      "claim_id": "9c7310bf-d35b-441f-b0fc-5c5182987442",
+      "result_id": "f9fdafef-1689-402d-ab76-decaf7e79d19"
+    },
+    {
+      "claim_id": "1563673f-09bd-4dfe-9621-f146910c8371",
+      "result_id": "846dd2b2-a147-4c1f-85fc-25930601a14e"
+    },
+    {
+      "claim_id": "0c867119-3fe2-4d92-80f9-609c9eb00fcc",
+      "result_id": "846dd2b2-a147-4c1f-85fc-25930601a14e"
+    },
+    {
+      "claim_id": "dfb54c50-0948-4e85-afcc-6c883f7bd580",
+      "result_id": "846dd2b2-a147-4c1f-85fc-25930601a14e"
+    },
+    {
+      "claim_id": "41679136-bbc9-44f7-9852-c86b7539c377",
+      "result_id": "846dd2b2-a147-4c1f-85fc-25930601a14e"
+    },
+    {
+      "claim_id": "c1532db0-1781-43e5-8daa-ba91a28978d4",
+      "result_id": "846dd2b2-a147-4c1f-85fc-25930601a14e"
+    },
+    {
+      "claim_id": "730968a2-3d0c-4717-8dbc-1585b607bc76",
+      "result_id": "846dd2b2-a147-4c1f-85fc-25930601a14e"
+    },
+    {
+      "claim_id": "d812615e-a00f-43ee-be59-d589932e2b26",
+      "result_id": "653ddb22-d79e-4bd1-a8ca-c356d2c48fe2"
+    },
+    {
+      "claim_id": "437638cd-d0fe-4527-9c74-690d06a5e9ef",
+      "result_id": "653ddb22-d79e-4bd1-a8ca-c356d2c48fe2"
+    },
+    {
+      "claim_id": "a3b4c528-c4f1-4176-8622-72ced27af507",
+      "result_id": "653ddb22-d79e-4bd1-a8ca-c356d2c48fe2"
+    },
+    {
+      "claim_id": "2e344fce-18c3-480b-8899-e122aeed1cd5",
+      "result_id": "653ddb22-d79e-4bd1-a8ca-c356d2c48fe2"
+    },
+    {
+      "claim_id": "9b5a93d7-b82e-4b27-bd00-2f7001b4a5e4",
+      "result_id": "ce2f4f0f-a28f-4ca9-b128-1cb1379ee1ac"
+    },
+    {
+      "claim_id": "bdcf507f-8397-40a5-bf16-eaabb91562fa",
+      "result_id": "ce2f4f0f-a28f-4ca9-b128-1cb1379ee1ac"
+    },
+    {
+      "claim_id": "f1cb32fe-88b2-409b-a7bf-44add8fc9545",
+      "result_id": "15d42a1d-dc57-40ac-b34b-fc0440fb5cb9"
+    },
+    {
+      "claim_id": "9a4832e6-f0a2-45a5-8340-1d5d1dbe1f2f",
+      "result_id": "15d42a1d-dc57-40ac-b34b-fc0440fb5cb9"
+    },
+    {
+      "claim_id": "3d2e2e82-a7a6-4bcb-b419-01a8ed993f9e",
+      "result_id": "6fdc795f-76f5-4ad6-a7df-54794e232f16"
+    },
+    {
+      "claim_id": "6fdd1e43-1138-41e4-8e29-40e900fef967",
+      "result_id": "6fdc795f-76f5-4ad6-a7df-54794e232f16"
+    },
+    {
+      "claim_id": "9e8d86e5-b3e2-48b6-9cf5-a0d380524e7c",
+      "result_id": "6fdc795f-76f5-4ad6-a7df-54794e232f16"
+    },
+    {
+      "claim_id": "e09bd330-910b-4426-9f1e-24257ee688ee",
+      "result_id": "76970d3c-c898-4dc1-a0d0-b8baf82725bb"
+    },
+    {
+      "claim_id": "ad123397-451f-428f-912b-83558f51578a",
+      "result_id": "76970d3c-c898-4dc1-a0d0-b8baf82725bb"
+    },
+    {
+      "claim_id": "f44cc0ff-0505-4675-bd42-ee8827ea66e4",
+      "result_id": "76970d3c-c898-4dc1-a0d0-b8baf82725bb"
+    },
+    {
+      "claim_id": "3ae786b7-cba5-4ebf-aad6-be7b71ce4cf2",
+      "result_id": "76970d3c-c898-4dc1-a0d0-b8baf82725bb"
+    },
+    {
+      "claim_id": "bfdf683d-2e03-4b43-b335-d04d71e93c6e",
+      "result_id": "45386940-aae3-4e39-bf98-bbd9afcfd1fa"
+    },
+    {
+      "claim_id": "ebaded5f-fa2c-44df-a4e1-3cc6597ac884",
+      "result_id": "45386940-aae3-4e39-bf98-bbd9afcfd1fa"
+    },
+    {
+      "claim_id": "c5a44911-5237-4f86-8776-4682e6d7a808",
+      "result_id": "45386940-aae3-4e39-bf98-bbd9afcfd1fa"
+    },
+    {
+      "claim_id": "685242e4-642f-47e0-b3e1-35456f4ebe90",
+      "result_id": "45386940-aae3-4e39-bf98-bbd9afcfd1fa"
+    },
+    {
+      "claim_id": "d559c96a-7ccb-4276-8313-bccb8b003311",
+      "result_id": "45386940-aae3-4e39-bf98-bbd9afcfd1fa"
+    },
+    {
+      "claim_id": "5988703b-d316-4124-b2bb-081c4ca70c7f",
+      "result_id": "cb9414b2-b7aa-4d00-b224-7b107f67df00"
+    },
+    {
+      "claim_id": "71fc73f3-3a75-49e1-b9a7-5641465a4421",
+      "result_id": "cb9414b2-b7aa-4d00-b224-7b107f67df00"
+    },
+    {
+      "claim_id": "fcc5410a-7436-4451-bfba-b5a88f16980e",
+      "result_id": "cb9414b2-b7aa-4d00-b224-7b107f67df00"
+    },
+    {
+      "claim_id": "8f6eaa7f-c136-462f-a508-4433d160fe21",
+      "result_id": "cb9414b2-b7aa-4d00-b224-7b107f67df00"
+    },
+    {
+      "claim_id": "4165d345-65d8-4d8d-bec4-45ca7ace23af",
+      "result_id": "cb9414b2-b7aa-4d00-b224-7b107f67df00"
+    },
+    {
+      "claim_id": "e295cc65-c16f-4d66-8f4c-95b1c7c41995",
+      "result_id": "c20db4b8-0d8b-481b-b191-d24f803ae79b"
+    },
+    {
+      "claim_id": "8736642f-f396-4245-80af-e13f8b31ea78",
+      "result_id": "c20db4b8-0d8b-481b-b191-d24f803ae79b"
+    },
+    {
+      "claim_id": "aa892287-ab98-444b-b089-281145e93011",
+      "result_id": "c20db4b8-0d8b-481b-b191-d24f803ae79b"
+    },
+    {
+      "claim_id": "5a3b151a-0e42-45d7-846a-9a348ead0e32",
+      "result_id": "96704894-35d7-483e-8118-e81b3cc0e485"
+    },
+    {
+      "claim_id": "a1326972-939f-4b36-ab15-fc1b9356bb68",
+      "result_id": "96704894-35d7-483e-8118-e81b3cc0e485"
+    },
+    {
+      "claim_id": "1ae999bf-f13b-4a6b-96af-57dec0a202b1",
+      "result_id": "96704894-35d7-483e-8118-e81b3cc0e485"
+    },
+    {
+      "claim_id": "100ba146-ff92-422d-959e-db3ffcedb317",
+      "result_id": "96704894-35d7-483e-8118-e81b3cc0e485"
+    },
+    {
+      "claim_id": "e090c1e7-48fb-4e63-b969-fc48b59a5017",
+      "result_id": "96704894-35d7-483e-8118-e81b3cc0e485"
+    },
+    {
+      "claim_id": "405ed963-dee4-45e9-a265-c100bd6262ae",
+      "result_id": "34bfa82e-1add-44a1-ba67-81c1053dd2e1"
+    },
+    {
+      "claim_id": "7658243b-a2e6-47a6-aecf-2fa741cd7aca",
+      "result_id": "34bfa82e-1add-44a1-ba67-81c1053dd2e1"
+    },
+    {
+      "claim_id": "2df4c216-6a79-43fb-aede-1316710faf81",
+      "result_id": "34bfa82e-1add-44a1-ba67-81c1053dd2e1"
+    },
+    {
+      "claim_id": "cc20e2c4-0245-4911-ad0a-db9c5698bcb9",
+      "result_id": "34bfa82e-1add-44a1-ba67-81c1053dd2e1"
+    }
+  ],
+  "comparisons": []
+}

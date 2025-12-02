@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C49",
+      "C50",
+      "C54",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C65",
+      "C104",
+      "C105"
+    ],
+    "result": "EDEM2 is stably disulfide-bonded to TXNDC11 through C558 of EDEM2 and C692 of TXNDC11. C558 is located outside the mannosidase homology domain of EDEM2, and C692 is in the Trx5 domain of TXNDC11, which is the only domain containing the CXXC motif. This disulfide bond is essential for EDEM2's mannose trimming activity and gpERAD function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary experiments support this result: non-reducing SDS-PAGE shows high molecular weight EDEM2-TXNDC11 complexes (C59-C61), immunoprecipitation confirms C558A mutation abolishes TXNDC11 binding (C62, C65), and C692S mutation eliminates complex formation (C105). Functional assays demonstrate that C558A and C692S mutants fail to restore mannose trimming and gpERAD activity (C54-C55, C106-C107). The structural characterization is consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C70",
+      "C75",
+      "C77",
+      "C82",
+      "C83",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The disulfide bond between EDEM2 and TXNDC11 is essential for mannose trimming activity and subsequent gpERAD in HCT116 cells. Loss of this bond (through C558A mutation in EDEM2 or C692S mutation in TXNDC11, or TXNDC11 knockout) abolishes mannose trimming and delays degradation of ERAD substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence converge: gel migration assays show loss of mannose trimming in mutants and knockouts (C52-C55, C82), cycloheximide chase experiments demonstrate delayed degradation of multiple ERAD substrates (ATF6\u03b1, mCD3-\u03b4-\u0394TM-HA) in TXNDC11-KO and mutant cells (C57-C58, C75, C77, C106-C107), and complementation with WT but not mutant proteins restores activity (C54, C82, C108). The consistency across multiple substrates and experimental approaches strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C117",
+      "C138",
+      "C139"
+    ],
+    "result": "Purified EDEM2-TXNDC11 complex exhibits \u03b11,2-mannosidase activity in vitro, converting PA-M9 to PA-M8B in a time-dependent manner. The complex was successfully purified using a soluble M1A variant of TXNDC11, and only the disulfide-bonded complex (not uncomplexed C558A EDEM2) showed enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro mannosidase assay provides direct biochemical evidence: HPLC analysis shows time-dependent conversion of PA-M9 to PA-M8 by the EDEM2-TXNDC11 complex but not by C558A EDEM2 (C112-C113), and the product was confirmed to be M8B isomer (C114). The purification strategy using soluble M1A-TXNDC11 was critical for success (C138-C139), and silver staining confirmed co-purification of both proteins (C109). However, the experiment was completed only once (noted in Figure 7 legend), which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C79"
+    ],
+    "result": "TXNDC11 knockout eliminates high molecular weight EDEM2 complexes without significantly affecting EDEM2 mRNA levels or inducing ER stress. The loss of complex formation results in altered EDEM2 conformation and accumulation of M9 oligosaccharides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qRT-PCR shows EDEM2 mRNA levels and XBP1 splicing are unaffected by TXNDC11 knockout (C67-C69), indicating the effect is post-translational and not due to ER stress. Immunoblotting confirms loss of high molecular weight EDEM2 forms (C70), and trypsin digestion experiments demonstrate conformational differences between complexed and uncomplexed EDEM2 (C73-C74). N-glycan profiling shows M9 accumulation (C79), consistent with loss of mannose trimming activity. The multiple independent measurements support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "TXNDC11 is translated from two alternative start codons (M1 and M58), producing both soluble and membrane-bound forms. The M1A variant can be cleaved by signal peptidase to produce a soluble protein, while the M58A variant remains membrane-bound. Both forms are functional in mannose trimming activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple experiments support alternative translation initiation: M1A and M58A mutants show distinct migration patterns (C90-C91), both are N-glycosylated (C92), and fractionation experiments demonstrate M58A is membrane-bound while M1A is split between membrane and soluble fractions (C94-C95). SignalP predictions support weak signal peptide activity for M1A (C97-C98), and engineered mutants (M1A-\u0394SP, M1A-A87F) confirm the signal peptide function (C99-C101). Both forms restore mannose trimming activity (C93), demonstrating functional equivalence. The convergence of computational prediction, mutagenesis, and fractionation data strongly supports this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C12",
+      "C142"
+    ],
+    "result": "EDEM2 catalyzes the first mannose trimming step (M9 to M8B) in mammalian glycoprotein ERAD and functions as an initiator of gpERAD. This conclusion is supported by both genetic knockout experiments and biochemical in vitro assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result integrates genetic evidence from previous work (C1, C22) with the current biochemical demonstration of in vitro activity (C11-C14). The genetic requirement for EDEM2 in the M9\u2192M8B conversion was established in prior studies (C1, C22), and the current work provides the missing biochemical validation through purification and in vitro assay of the EDEM2-TXNDC11 complex. The convergence of genetic and biochemical evidence firmly establishes EDEM2's role as the initiator of gpERAD (C12, C142). However, the in vitro assay was performed only once, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C140",
+      "C141"
+    ],
+    "result": "This study represents the first clear demonstration of in vitro mannosidase activity of EDEM family proteins toward free oligosaccharides, with activity much clearer than the yeast Htm1p homolog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by the in vitro assay data (C11-C14, C112-C114) showing robust conversion of PA-M9 to PA-M8B. The comparison to Htm1p is reasonable given that Htm1p-Pdi1p complex showed only ~10% conversion and required substrate attached to polypeptides (C35-C36), while EDEM2-TXNDC11 showed clear activity with free oligosaccharides. However, the novelty claim should be qualified: the experiment was performed once, and previous attempts by others may have failed due to technical issues (use of membrane-bound TXNDC11) rather than fundamental lack of activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C122"
+    ],
+    "result": "EDEM2 associates with PDI but not ERp72. PDI likely catalyzes intramolecular disulfide bond formation between C65 and C408 of EDEM2, which are conserved cysteines in the mannosidase homology domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While immunoprecipitation confirms PDI associates with all EDEM2 variants including C558A (C63), and ERp72 does not (C64), the proposed role of PDI in catalyzing C65-C408 disulfide bonding (C122) is speculative. The inference is based on analogy to yeast Htm1p (C120-C121) and the observation that C65A and C408A mutants lose activity (C54-C55), but direct evidence for PDI-catalyzed disulfide bond formation between C65 and C408 is not provided. The association could reflect other functions of PDI in EDEM2 folding or quality control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C73",
+      "C74"
+    ],
+    "result": "A majority of TXNDC11 is disulfide-bonded to EDEM2 in wild-type cells, and this bonding alters EDEM2 conformation to a structure more suitable for mannosidase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Non-reducing SDS-PAGE shows that most TXNDC11 migrates as high molecular weight complexes with EDEM2 in WT cells (C59-C61, C118), and trypsin digestion experiments demonstrate that complexed EDEM2 is more protease-resistant than uncomplexed EDEM2 (C73), indicating conformational differences (C74). The functional data showing that only complexed EDEM2 has mannosidase activity (C83, C112) supports the inference that the conformational change is functionally important (C119). However, the speculation about 'better structure' (C119) is not directly proven\u2014alternative explanations such as TXNDC11 providing substrate binding or catalytic assistance are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C131",
+      "C132"
+    ],
+    "result": "The mechanism of stable EDEM2-TXNDC11 disulfide bond formation involves PDI-mediated oxidation of C558 followed by incomplete reduction by TXNDC11's Trx5 domain, resulting in a trapped disulfide bond between C558 of EDEM2 and C692 of TXNDC11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative mechanistic model (C133-C134) based on the observation that only C692 (not C695) of the CXXC motif is used (C131) and that Trx5 has reductase activity (C132). While the model is plausible and consistent with the data, it lacks direct experimental support. The proposed intermediate disulfide bonds (C558-C488/C464/C487) and the kinetics of reduction are not demonstrated. Alternative mechanisms (e.g., direct oxidation to form C558-C692 bond, or involvement of other oxidoreductases) are not excluded. This represents a reasonable hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Previous failure to demonstrate EDEM2 mannosidase activity in vitro was likely due to use of membrane-bound TXNDC11, which prevented efficient extraction of the EDEM2-TXNDC11 complex. The current study succeeded by using a soluble M1A variant of TXNDC11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about previous failures (C135-C137) is reasonable given the demonstration that M58A (membrane-bound) and M1A (partially soluble) variants have different fractionation properties (C94-C95), and that the current study successfully purified active complex using M1A-TXNDC11 (C138-C139, C109). The explanation is consistent with the observation that N-terminal tagging would force translation from M58 (C136). However, this remains somewhat speculative as the authors did not directly test whether membrane-bound TXNDC11 can form active complexes, and other technical differences in purification methods could also contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "N-glycan profiling revealed accumulation of M9 and GM9 oligosaccharides in TXNDC11-KO cells. GM9 accumulation may be due to culture condition changes or enhanced re-glucosylation activity caused by blocked mannose trimming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "N-glycan profiling data clearly shows M9 accumulation in TXNDC11-KO cells (C79), consistent with loss of EDEM2 activity. The GM9 accumulation is noted with appropriate caveats (C80-C81), acknowledging it was not seen in previous EDEM2-KO HCT116 experiments but was seen in DT40 cells. The alternative explanations (culture conditions vs. enhanced re-glucosylation) are both plausible and appropriately presented as speculative. The N-glycan profiling experiment was completed once (noted in Figure 4 legend), which is a limitation, but the M9 accumulation is the key finding and is consistent with all other data.",
+    "result_type": "MINOR"
+  }
+]

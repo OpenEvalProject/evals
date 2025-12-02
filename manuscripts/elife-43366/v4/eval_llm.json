@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "PARIS is a fully genetically encoded tool that uses an optically controlled actuator in one cell to generate an electrochemical gradient and a fluorescent receiver in an adjacent cell to detect molecule movement across gap junctions, with GJC detected by fluorescence increase in the receiver following optical activation of the actuator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C20 collectively describe the design and principle of PARIS. The tool's components and mechanism are clearly defined and supported by experimental demonstrations throughout the manuscript (Figures 1-5), showing successful implementation in multiple systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ArchT/pHluorin was identified as a functional actuator-receiver pair for PARIS after testing multiple candidates. When co-expressed in HEK293T cells, ArchT activation produces robust pHluorin fluorescence increases dependent on light duration and power, while alternative pairs (BeCylOp/FlincG3 and CsChrimson/GCaMP6s) failed to generate detectable signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 are supported by experimental data in Figure 1\u2014figure supplements 1-2, showing systematic testing of actuator-receiver pairs with appropriate negative controls (ArchTD95N, pHluorin alone). The dose-response relationships and specificity controls validate the ArchT/pHluorin pair selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "PARIS successfully detects gap junctional coupling in HEK293T cells, which endogenously express Cx43 and Cx45. Photoactivation of ArchT in actuator cells induces ~4.3% \u0394F/F0 increase in adjacent receiver cells but not in remote cells, and this signal is significantly decreased by the gap junction blocker carbenoxolone (CBX).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are supported by experimental data in Figure 1B-C with appropriate spatial controls (non-adjacent cells) and pharmacological validation (CBX blockade). The citations supporting endogenous connexin expression in HEK293T cells are appropriate, and the signal specificity is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PARIS signal characteristics are tunable and well-characterized: increasing illumination duration from 1-20 s incrementally increases response from ~2-20% \u0394F/F0. A 4 s pulse produces robust signals (SNR=23\u00b18) with ~10 s half-rise time, while 20 s pulses increase SNR ~4.3-fold with ~21 s half-rise time. Half-decay times are similar for both durations (~61-67 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by quantitative data in Figure 1D-G showing dose-response relationships and kinetic measurements. The temporal resolution claim (~10 s) is directly supported by the half-rise time measurements. Statistical analyses and error bars are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "PARIS signals show spatial gradation in sequentially connected cells, with directly connected cells showing the strongest response and third-order connected cells showing the weakest response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by experimental data in Figure 1\u2014figure supplement 3 demonstrating signal attenuation with distance from the actuator cell, consistent with gap junction-mediated diffusion through multiple cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "pH calibration experiments estimate that 4 s and 20 s laser pulses induce transient intracellular pH increases from 7.35 to 7.45 and 7.80, respectively, in actuator cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by pH calibration data in Figure 1\u2014figure supplement 4 using ratiometric measurements with mTagBFP-pHluorinCAAX. The calibration curve and methodology are appropriate for estimating pH changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Electrophysiological validation demonstrates that light-activated ArchT produces time-locked currents in receiver cells that are blocked by CBX. Voltage steps on actuator cells also elicit non-rectifying, CBX-sensitive currents in receiver cells, with CBX inhibition independent of activation method or measurement approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by patch-clamp data in Figure 2B-E, providing orthogonal validation of PARIS using electrophysiology. The consistency of CBX effects across different stimulation and recording methods strengthens the conclusion that PARIS specifically reports gap junction coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "PARIS demonstrates superior performance compared to FRAP for repeated measurements: PARIS signals remain stable over five sequential pulses while FRAP signals decay considerably in basal fluorescence and SNR. PARIS also shows faster kinetics with ~21 s half-rise time versus ~197 s for FRAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by head-to-head comparison data in Figure 2G-J. The experimental design appropriately compares the two methods under similar conditions, demonstrating PARIS advantages for repeated measurements and temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PARIS can detect pharmacological modulation of gap junctions: TPA (PKC activator) significantly inhibits PARIS signals while 8-Br-cAMP and forskolin (PKA activators) have no obvious effect, suggesting PKC but not PKA activation inhibits GJC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by experimental data in Figure 3A-B with appropriate controls and citations to prior literature. The results are consistent with known gap junction regulation mechanisms, though the conclusion about PKA is based on negative results which should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "PARIS can detect disease-causing mutations in connexin genes: HeLa cells lacking endogenous connexins show no PARIS signal, but expressing wild-type Cx43 (GJA1) produces robust signals. Disease-associated mutations (R202H, R76H) that affect Cx43 trafficking and permeability cause significant reductions in PARIS signals compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by experimental data in Figure 3C-D using HeLa cells as a null background with appropriate negative controls. The approach validates PARIS for studying disease-relevant mutations, though the mechanism of signal reduction (trafficking vs. permeability) is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PARIS successfully detects gap junctional coupling in primary rat cardiomyocytes with ~14 s half-rise and ~21 s half-decay times. The responses are reversibly blocked by heptanol, a gap junction blocker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by experimental data in Figure 3E-H demonstrating PARIS function in a physiologically relevant primary cell system. The reversible blockade by heptanol provides pharmacological validation, and the kinetics are consistent with measurements in cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Expressing and activating PARIS does not affect cardiomyocyte cellular functions, as neither Ca2+ transient rates nor beating rates are altered by ArchT expression or stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by control experiments in Figure 3\u2014figure supplement 1 measuring Ca2+ transients and beating rates. These controls are important for validating that PARIS does not perturb normal cellular physiology, though more extensive functional assays could strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "ArchT and pHluorin produce stable cell-autonomous signals in ex vivo Drosophila brain preparations that can be elicited repeatedly for up to 2 hours with no obvious loss of signal strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by experimental data in Figure 4\u2014figure supplement 1 demonstrating PARIS stability in intact tissue. The repeated measurements over 2 hours validate the tool's suitability for longitudinal studies in complex tissues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PARIS detects electrical coupling between ePNs and eLNs in the Drosophila antennal lobe with ~12 s half-rise and ~29 s half-decay times. The signal is eliminated by CBX pretreatment or in ShakB2 mutant flies lacking functional gap junction proteins, confirming gap junction-mediated coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by experimental data in Figure 4B-C,F-G with appropriate pharmacological (CBX) and genetic (ShakB2) controls. The results are consistent with prior electrophysiological studies (cited), providing validation of PARIS in a complex nervous system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Systematic scanning of four regions of the antennal lobe (dorsal, ventral, medial, lateral) reveals that electrical coupling is a general property between ePNs and eLNs throughout the AL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by experimental data in Figure 4D-E,H showing PARIS signals in all four AL regions. This demonstrates PARIS capability for spatial mapping of gap junction connectivity, though the conclusion of 'general property' is based on sampling four regions rather than comprehensive coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "When tested with ePNs as receivers, activation of iLNs, glial cells, or Kenyon cells as actuators produces no measurable PARIS signals, suggesting ePNs do not form functional gap junctions with these cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 are supported by negative results in Figure 4\u2014figure supplement 3. However, negative results require careful interpretation as they could reflect technical limitations (expression levels, anatomical contact) rather than true absence of gap junctions. The authors appropriately use cautious language ('may not form'), but additional controls (e.g., cis configuration validation in these cell types) would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C7"
+    ],
+    "result": "PARIS achieves subcellular spatial resolution by demonstrating that iPNs and ePNs form functional gap junctions at dendrite-dendrite contacts in the AL but not at axon-axon contacts in the LH, despite both cell types having processes in both regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C82-C87 are supported by experimental data in Figure 5B-D showing differential PARIS signals in AL versus LH with appropriate controls (CBX blockade, cis configuration). This demonstrates a key advantage of PARIS\u2014subcellular resolution that cannot be achieved by traditional methods. The anatomical claims are supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Screening of rhodopsin variants identified Lari, a fungal rhodopsin with superior membrane trafficking and 26-fold greater light sensitivity than ArchT, providing a more powerful actuator for future in vivo PARIS applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by experimental data in Figure 6A-C and Figure 6\u2014figure supplement 1 showing systematic comparison of multiple rhodopsin candidates. The quantitative improvement (26-fold) is clearly demonstrated, though in vivo validation of Lari-based PARIS is not yet shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The failure of BeCylOp/FlincG3 and CsChrimson/GCaMP6s pairs is explained by insufficient signal generation: BeCylOp produces limited cGMP below FlincG3 detection threshold, and CsChrimson-induced Ca2+ influx in HEK293T cells is below GCaMP6s detection limit, though CsChrimson/GCaMP6s works in neurons with voltage-gated Ca2+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95 represent speculative explanations for negative results. While C93 is supported by additional experiments with PDE inhibitor, C94-C95 are deductions without direct supporting data. The claim about hippocampal neurons (C95) lacks shown data, making this result uncertain despite reasonable mechanistic explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "PARIS offers multiple advantages over existing methods: it is virtually non-invasive (light-based), provides subcellular spatial resolution for mapping gap junctions at specific cellular compartments, and is fully reversible without requiring exogenous dyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by comparisons to existing methods with appropriate citations and experimental demonstrations (particularly C97 supported by Figure 5 data). The advantages are clearly demonstrated through head-to-head comparisons (FRAP) and novel applications (subcellular mapping).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "PARIS components are fully genetically encoded by relatively small genes, enabling diverse delivery methods (transfection, viral expression, transgenic labeling) and potential adaptation to other model systems including mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are directly supported by experimental demonstrations using different delivery methods (Figures 1-5). Claims C104-C105 about future applications are reasonable extrapolations based on the genetic nature of the tool and existing transgenic/viral technologies, though actual implementation in mammals is not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "PARIS-induced pH changes are controllable and transient due to cellular pH homeostasis mechanisms. The pH increases (7.35\u21927.45 for 4s, 7.35\u21927.80 for 20s) are compatible with most gap junction types including Cx43 (fully open above pH 7.2) and potentially Cx36 (though sensitive to alkalization), making PARIS broadly applicable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C116 address an important limitation of PARIS. The pH measurements (C44-C45) support the controllability claim, and the discussion of different connexin pH sensitivities is well-supported by citations. However, the conclusion that PARIS works for Cx36 (C115) is based on inference rather than direct testing, and the authors appropriately note caution is needed (C116).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "PARIS requires exclusive expression of actuator and receiver in different cells, and best practices include cis configuration controls to validate actuator function and confirmation of unknown gap junctions through pharmacology, genetics, or complementary methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 represent methodological requirements and recommendations based on the PARIS design principle. These are logical constraints of the approach and represent appropriate scientific caution about interpreting results, particularly for unknown gap junctions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C16",
+      "C17"
+    ],
+    "result": "Current methods for studying gap junctions have significant limitations: they lack either cell-type specificity, high spatiotemporal resolution, or are invasive. Existing methods are either invasive (electrophysiology, dye injection) or require exogenous substrates with background issues (hybrid approaches), and dye-based methods cannot be used for repeated measurements of the same gap junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C16-C17 accurately characterize limitations of existing methods, supported by appropriate citations. These claims establish the rationale for developing PARIS and are consistent with the field's understanding of methodological gaps.",
+    "result_type": "MINOR"
+  }
+]

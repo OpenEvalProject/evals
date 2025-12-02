@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The flp-7tg transgenic line recapitulates the metabolic effects of serotonin signaling without altering other 5-HT-mediated behaviors. The flp-7tg animals show reduced fat stores (C26), increased mitochondrial respiration (C28), both dependent on ATGL-1 (C27, C28), while feeding, locomotion, and egg-laying behaviors remain unchanged (C30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide converging evidence that the flp-7tg line is a valid experimental tool. The data show metabolic changes (fat loss, increased respiration) that are ATGL-1-dependent and match 5-HT treatment effects, while behavioral outputs remain unaltered. This establishes the specificity of the system for studying sustained fat oxidation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Sustained fat oxidation in flp-7tg animals does not alter lifespan but evokes a specific mitochondrial stress response. The flp-7tg animals show no significant lifespan change (C33) but exhibit a two-fold induction of hsp-60 (C34) specifically in the intestine (C36), which is wholly dependent on ATGL-1 (C37), indicating that fat oxidation triggers mitochondrial stress (C38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 demonstrate that increased fat oxidation induces mitochondrial stress without affecting lifespan. The hsp-60 induction is specific (other stress responses absent, C35), tissue-specific (intestine, C36), and mechanistically linked to fat oxidation through ATGL-1 dependence (C37). The p=0.08 for lifespan is appropriately reported as non-significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ATFS-1 is required for both the mitochondrial stress response and for fat oxidation itself, suggesting a reciprocal relationship. Loss of atfs-1 suppresses hsp-60 induction (C42, C44) and also blocks FLP-7-induced fat loss (C47) and atgl-1 transcriptional induction (C48). The lack of additive effects in double mutants (C43, C49) suggests a linear pathway, though ATFS-1 likely regulates atgl-1 indirectly (C51-C53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C53 establish a surprising bidirectional relationship: fat oxidation requires ATFS-1 (C47-C48), and ATFS-1 activation requires fat oxidation (C42). The genetic epistasis data (C43, C49) support a linear pathway model. The indirect regulation mechanism (C51-C53) is appropriately cautious given the lack of direct binding evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "HLH-11 functions as a repressive transcription factor that suppresses atgl-1 expression under basal conditions. Loss of hlh-11 increases atgl-1 expression (C55-C56), causes dramatic fat loss (~70-80%, C59), and increases mitochondrial respiration (C62), all of which are ATGL-1-dependent (C61). The lack of additive effects with flp-7tg (C57, C60) suggests HLH-11 acts in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 provide strong genetic evidence that HLH-11 is a constitutive repressor of atgl-1. The phenotypes are robust (70-80% fat loss), mechanistically linked through ATGL-1 dependence, and the genetic epistasis with flp-7tg supports pathway placement. The inference that HLH-11 is a repressor (C58) is well-supported by the loss-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "HLH-11 overexpression has opposite effects to hlh-11 loss, confirming its instructive role as a negative regulator of fat oxidation. HLH-11ox animals show increased fat stores (~40%, C65), suppression of flp-7tg-induced fat loss (C66), decreased respiration (C67), and reduced atgl-1 mRNA (C68), establishing that HLH-11 plays an instructive role in regulating fat metabolism (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 provide gain-of-function evidence complementing the loss-of-function data. The nuclear localization (C64) supports a transcriptional mechanism, and the phenotypes are opposite to hlh-11 loss, confirming instructive rather than merely permissive function. The data strongly support HLH-11 as a negative regulator of atgl-1 and fat oxidation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "HLH-11 directly binds to the atgl-1 promoter, and this binding is reduced by 5-HT treatment. Two HLH-11 binding sites were identified in the atgl-1 promoter (C70), ChIP-qPCR shows constitutive binding under basal conditions (C71), and 5-HT treatment reduces this binding (C72). Deletion of both binding sites increases atgl-1 expression ~2-fold (C74), confirming direct repression (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 provide molecular evidence for direct transcriptional repression. The ChIP-qPCR data (C71-C72) demonstrate physical binding and its regulation, while the cis-site deletion experiment (C74) functionally validates the binding sites. Together, these establish HLH-11 as a direct repressor of atgl-1, though the ChIP experiment could benefit from additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "A feedback loop exists where FLP-7 represses hlh-11 via ATFS-1, which in turn sustains fat oxidation. FLP-7 reduces HLH-11 expression (C76-C78), and this repression requires atfs-1 (C81) and atgl-1 (C82). The lack of additive effects (C83) and the prior identification of hlh-11 as an ATFS-1 target (C80) support a feedback model where fat oxidation induces ATFS-1, which represses HLH-11 to sustain fat oxidation (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 establish a feedback mechanism linking fat oxidation to its own regulation. The genetic epistasis data (C81-C83) support the pathway order, and the connection to prior ATFS-1 targets (C80) provides independent validation. The feedback model (C85) is a reasonable inference from the data, though it remains somewhat speculative without direct demonstration of the complete loop.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "HLH-11 regulates the mitochondrial stress response through its control of fat oxidation. HLH-11 overexpression decreases hsp-60 (C86), while hlh-11 loss increases hsp-60 (C88), with effects independent of FLP-7 status (C89). The hsp-60 induction in hlh-11 mutants requires both atgl-1 and atfs-1 (C90), indicating that HLH-11-mediated mitochondrial stress is a consequence of fat oxidation (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 demonstrate that HLH-11's effects on mitochondrial stress are mediated through its regulation of fat oxidation. The bidirectional effects (overexpression vs. loss) and the requirement for both atgl-1 and atfs-1 (C90) establish a clear mechanistic link. This connects the transcriptional regulation to the stress response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "ATFS-1-dependent induction of atgl-1 requires hlh-11 repression. While atfs-1 loss alone does not affect atgl-1 (C93), hlh-11;atfs-1 double mutants resemble hlh-11 single mutants (C94), indicating that during increased FLP-7 secretion, ATFS-1 induces atgl-1 by repressing hlh-11 (C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 provide genetic epistasis evidence for the pathway order. The observation that atfs-1 loss alone has no effect (C93) is explained by ATFS-1 being non-functional under basal conditions, while the double mutant analysis (C94) places HLH-11 downstream of ATFS-1. The inference (C95) is well-supported by the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "HLH-11 acts genetically downstream of ATFS-1 in regulating fat oxidation. In flp-7tg animals, hlh-11 loss augments fat loss while atfs-1 loss blocks it (C96), and hlh-11;atfs-1 double mutants resemble hlh-11 single mutants (C97), indicating that ATFS-1's effects on fat oxidation require hlh-11 repression (C98, C100) and that HLH-11 acts downstream of ATFS-1 (C101).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 establish the genetic epistasis relationship between ATFS-1 and HLH-11. The double mutant analysis clearly places HLH-11 downstream of ATFS-1 in the pathway. The slight additional fat loss in the triple mutant (C99) is appropriately noted as potentially involving other ATFS-1 targets, showing appropriate caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Disruption of the ATFS-1/HLH-11 feedback loop in the context of increased fat oxidation shortens lifespan. In flp-7tg animals, loss of both hlh-11 and atfs-1 significantly decreases lifespan (p<0.001, C102), while this effect is not seen in single or double mutants without increased FLP-7 (C103). The modest fat loss in hlh-11;atfs-1 mutants alone is insufficient to affect lifespan (C104), and hlh-11 mutants are protected by the presence of atfs-1 (C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 demonstrate that the feedback loop protects lifespan specifically in the context of increased fat oxidation. The lifespan data are statistically significant (p<0.001), and the context-dependence (requiring flp-7tg background) is well-established. The interpretation that ATFS-1 protects against the life-shortening effects of sustained fat oxidation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "A feedback transcriptional loop coordinates sustained fat oxidation with longevity protection. FLP-7 triggers fat oxidation by repressing hlh-11 (C106), which increases fat oxidation and mitochondrial respiration, generating an ATFS-1-mediated stress response (C107). ATFS-1 then further represses hlh-11 in a feedback loop (C108) that serves dual functions of sustaining fat oxidation and protecting lifespan (C109-C110). This feedback loop shields the organism from life-shortening mitochondrial stress during continuous fat oxidation (C111-C113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 synthesize the experimental findings into a coherent model. The feedback loop model is well-supported by the genetic, molecular, and physiological data presented throughout. The dual function (sustaining fat oxidation and protecting lifespan) is demonstrated by the differential effects of manipulating different pathway components. The model provides a mechanistic explanation for how sustained fat oxidation can occur without shortening lifespan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The relationship between lipid metabolism, adiposity, and longevity is complex and non-linear, with evidence supporting both positive and negative associations depending on context. Prior literature shows that lipid accumulation is associated with metabolic diseases (C1), while fat oxidation has been proposed to benefit longevity (C2-C3). However, caloric restriction and decreased metabolism also increase lifespan (C4-C7), and increased adiposity can co-occur with increased lifespan in some genetic contexts (C8-C10). Human studies show no clear relationship or inverse associations in late life (C11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 accurately summarize the paradoxical state of the field based on cited literature. These claims establish the scientific context and rationale for the study. All claims are supported by appropriate citations to published work. This background establishes the need to investigate sustained fat oxidation in a non-disease context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The FLP-7/NPR-22 tachykinin pathway mediates serotonin's effects on fat metabolism in C. elegans. Serotonin is synthesized in a few neurons (C13) and has wide-ranging effects (C14), including stimulating fat loss (C15) via beta-oxidation (C16). FLP-7 is released from ASI neurons in response to 5-HT (C17-C19), activates NPR-22 in intestinal cells (C20-C21), and transcriptionally activates ATGL-1 (C22-C23), without altering other 5-HT behaviors (C24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C24 summarize the authors' prior work establishing the FLP-7/NPR-22 pathway. All claims are supported by appropriate citations to published literature, including the authors' previous work. This provides essential background for understanding the experimental approach and establishes the validity of using the flp-7tg line as an experimental tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ATFS-1 is a well-characterized mito-nuclear transcription factor that mediates mitochondrial stress responses. Mild reductions in mitochondrial respiration can increase lifespan (C32), and all known mitochondrial stress pathways inducing hsp-60 require ATFS-1 (C39). Under normal conditions, ATFS-1 is degraded in mitochondria (C40), but under stress, it translocates to the nucleus to initiate adaptive transcriptional responses (C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C39-C41 accurately summarize established knowledge about ATFS-1 and mitochondrial stress responses based on cited literature. These claims provide necessary background for understanding the role of ATFS-1 in the study and are appropriately supported by citations to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "hlh-11 is the sole conserved ortholog of the mammalian transcription factor AP4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by citation to published literature (Lee et al., 2009) establishing the orthology relationship. This provides important context for the evolutionary conservation and potential translational relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Under normal conditions, the feedback loop remains latent, and the dissociation between adiposity and longevity may be broadly conserved. The feedback loop is activated under conditions of increased fat oxidation (C114), and the authors speculate that this dissociation may be conserved when mitochondrial function is not compromised (C115).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 is a reasonable inference from the data showing that the feedback loop is activated in flp-7tg animals but not under basal conditions. However, C115 is explicitly speculative and lacks direct experimental support. The speculation is reasonable given the findings but would require testing in other systems to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "HLH-11/AP4 may play a conserved role in intestinal lipid metabolism across species. HLH-11 receives signals from both FLP-7 and ATFS-1 (C116), and the mammalian ortholog AP4 is widely distributed in mammalian intestinal epithelial cells, as is ATGL (C117).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is well-supported by the experimental data showing HLH-11's regulation by both pathways. Claim C117 is supported by citations to published literature on AP4 and ATGL distribution. Together, these suggest potential evolutionary conservation, though direct functional conservation would require experimental validation in mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The study identifies a feedback transcriptional loop involving ATGL-1, ATFS-1, and HLH-11/AP4 that orchestrates dual control of fat oxidation and lifespan. Sustained \u03b2-oxidation via ATGL-1 triggers a feedback loop involving ATFS-1 and HLH-11 (C118), which coordinates fat oxidation with longevity and protects against life-shortening mitochondrial stress (C119).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 accurately summarize the main findings of the study. These summary claims are well-supported by the extensive experimental data presented throughout the manuscript, including genetic, molecular, physiological, and lifespan analyses. The claims appropriately synthesize the key discoveries.",
+    "result_type": "MAJOR"
+  }
+]

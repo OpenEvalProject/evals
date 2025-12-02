@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Tgfbr2;ScxCre mutants develop normally during embryogenesis but exhibit postnatal tenocyte dedifferentiation. Mutant embryos form a complete tendon network by E14.5 with normal expression of tendon markers (Scx, tenomodulin, collagen I) and collagen matrix development. However, starting around P2-P3, mutant tenocytes progressively lose ScxGFP signal, with complete loss by P7, while mutant pups develop physical abnormalities (abducted paws, splayed limbs, movement limitations) by P3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25, C36-C38 demonstrate normal embryonic tendon development with appropriate controls and multiple markers. Claims C4, C27-C28, C32-C33 document the postnatal phenotype with time-course imaging showing gradual loss of differentiation markers. The temporal progression is well-documented with multiple developmental stages examined (E14.5, P0, P2-P3, P7), and the phenotype is consistent across multiple tendons and tissue types (C31). The ScxCre activity pattern (C22-C23) explains why the early developmental requirement for TGF\u03b2 signaling was bypassed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Mutant tenocytes lose differentiation markers and are derived from committed tenocytes through dedifferentiation rather than cell death or replacement. At P7, wild-type tendon cells express ScxGFP, Tnmd, and Col1a1, while most mutant tendon cells lose these markers. Lineage tracing using RosaT Cre reporter demonstrates that ScxGFP-negative cells in mutant tendons are derived from tenocytes, with no detectable cell death or altered proliferation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide direct comparison of marker expression between wild-type and mutant. The critical lineage tracing experiment (C50-C51) definitively demonstrates that marker-negative cells are tenocyte-derived, supported by the RosaT reporter system. Claims C47-C49 exclude alternative explanations (cell death, altered proliferation) using appropriate assays (TUNEL, EdU). This establishes dedifferentiation as the mechanism rather than cell replacement or death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Mutant tenocytes acquire stem/progenitor properties including increased colony-forming capacity and expression of stem/progenitor markers. Mutant tendon cells show an eightfold increase in colony-forming efficiency (p<0.01) compared to controls and acquire expression of Sca-1 and CD44, which are normally expressed in epitenon but not in wild-type tenocytes. These markers are not expressed in embryonic tendon progenitors, suggesting they reflect a generic stemness state rather than reversion to a specific developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 provides quantitative evidence with statistical significance (p<0.01) and appropriate controls (wild-type and heterozygous). Claims C60-C63 document marker expression with spatial specificity (epitenon vs. tenocytes). The developmental analysis (C65-C66) strengthens the interpretation by showing these markers are not characteristic of embryonic tendon progenitors. The colony-forming assay methodology is consistent with published studies (C58 cites Bi et al., 2007; Rui et al., 2010), providing validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Single-cell RNA sequencing reveals distinct molecular profiles of wild-type tenocytes and dedifferentiated mutant cells. Wild-type tenocytes express tendon markers (Scx, Fmod, Col11a1, Col1a1, Tnmd), while mutant cells are enriched for Ly6a (Sca-1) and show 186 differentially expressed genes. Mutant cells upregulate wound healing genes (Serpine2, Serping1, Anxa1, Col3a1, Col5a1) and downregulate collagen synthesis/organization genes. Some upregulated genes (Dpt, Anxa1, Cd34, Cd44, Mgp, Mfap5) were previously reported in embryonic tendon development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 establish clear clustering with appropriate bioinformatic methods (unsupervised hierarchical clustering, tSNE). The differential expression analysis (C74) uses appropriate statistical thresholds (\u22652 fold change, adjusted p<0.05). GO enrichment analysis (C82, C85) provides biological context for the gene expression changes. The validation of CD34 protein expression (C79) confirms the RNA-seq findings. The connection to embryonic development (C80-C81) is supported by citation to Havis et al., 2014. However, the scRNASeq was performed on pooled samples from only two pups per condition, which limits assessment of biological variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Viral reintroduction of Tgfbr2 prevents and rescues tenocyte dedifferentiation in a cell-autonomous manner. AAV-mediated expression of Tgfbr2-V5 in individual mutant tenocytes at E12.5 or E16.5 prevented loss of tendon markers, with 95-98% of infected cells retaining or re-expressing ScxGFP and tenomodulin. Injection at P1 with constitutive Tgfbr2-FLAG rescued dedifferentiated tenocytes, with infected cells expressing tendon markers only within tendons, not in surrounding tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 provide quantitative evidence (95-98% rescue) with appropriate sample size (n=3 pups per stage). The rescue experiments at multiple developmental stages (E12.5, E16.5, P1) demonstrate both prevention and reversal of dedifferentiation. The cell-autonomous nature is supported by the observation that individual infected cells retain markers while surrounded by mutant cells (C8, C95). The context-dependent induction (C96) is an important control showing specificity. However, the total number of infected cells analyzed varies considerably (82 at E12.5, 40 at E16.5, 315 at P1), which may affect the reliability of the quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "Tenocyte dedifferentiation requires both loss of TGF\u03b2 signaling and additional factors associated with ScxCre-mediated targeting. Targeting Tgfbr2 using ubiquitous inducible RosaCreERT2 did not cause tenocyte dedifferentiation, suggesting that loss of TGF\u03b2 signaling alone is insufficient. The authors propose that dedifferentiation results from an interplay between intrinsic loss of TGF\u03b2 signaling and external factors such as altered microenvironment, cell-matrix interactions, or mechanical loading experienced after birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 provides an important negative control showing that ubiquitous Tgfbr2 deletion does not cause dedifferentiation. However, the interpretation (C54-C55, C99-C100) is speculative and not directly tested. The proposed mechanisms (C101-C102, C104) are entirely speculative without experimental support. The difference between ScxCre and RosaCreERT2 outcomes could have alternative explanations: (1) timing differences in receptor loss, (2) incomplete recombination with tamoxifen-inducible system, (3) different cell populations targeted. The manuscript does not provide sufficient data to distinguish between these possibilities or to support the specific proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C35",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Mutant tendons show variable structural outcomes, with some tendons fragmenting while others retain structural integrity despite cellular changes. A few lateral tendons (e.g., extensor carpi radialis longus) undergo fragmentation and disintegration, while most tendons retain structural integrity with loss of ScxGFP signal. Collagen degradation is observed only in older mutant pups (\u2265P7), and epitenon is gradually disrupted. The authors suggest matrix disruption may be secondary to cellular changes and/or movement difficulties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 document the variable tendon phenotypes with appropriate imaging evidence. The temporal analysis (C38-C39) shows that collagen organization is initially normal at P3 despite functional defects, with degradation appearing only at P7 or later. This temporal sequence supports the interpretation that matrix disruption is secondary (C40), though this remains speculative. The epitenon disruption (C41-C42) is documented by TEM. However, the mechanism underlying the differential susceptibility of specific tendons (e.g., why flexor carpi radialis consistently tears at E16.5) is not explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "All Tgfbr2;ScxCre mutants die at or before P14, likely due to ScxCre activity in developing cardiac valves leading to enlarged heart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C34 documents the lethality but the proposed mechanism is speculative. While the citation to Levay et al., 2008 supports ScxCre activity in cardiac valves, the manuscript states that histological analysis was performed but data are not shown. Without presented evidence of cardiac defects, the cause of death remains uncertain. Alternative explanations (e.g., severe movement limitations affecting feeding, respiratory complications) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background information on tendon biology and TGF\u03b2 signaling establishes the context for the study. Scx and Mkx are key transcription factors for tendon cell fate; Tnmd and collagen I are prototypic tendon markers. TGF\u03b2 signaling plays a central role in early tendon development, with TGF\u03b2 being a potent inducer of Scx and disruption of TGF\u03b2 signaling in limb bud mesenchyme causing complete failure of tendon formation. All TGF\u03b2 ligands bind to a single type II receptor, making Tgfbr2 deletion sufficient to abrogate all TGF\u03b2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge supported by appropriate citations (Schweitzer et al., 2001; Ito et al., 2010; Kannus, 2000; Huang et al., 2015; Pryce et al., 2009; Havis et al., 2016; Wolfman et al., 1997; Vander Ark et al., 2018). The information is accurate and provides necessary context for understanding the experimental design and rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background information on cellular dedifferentiation and stem/progenitor markers provides context for interpreting the mutant phenotype. Dedifferentiation has been observed in various systems (amphibian limb regeneration, zebrafish heart, murine hepatocytes, pancreatic \u03b2 cells, skeletal muscle, intestinal epithelium) and typically involves loss of differentiated features and reversion to a progenitor state. Sca-1, CD34, and CD44 are prototypic stem/progenitor markers, with Sca-1 expression induced in various dedifferentiation contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide relevant background supported by appropriate citations (Weinberg et al., 2007; Zhang et al., 2010; Talchai et al., 2012; Tata et al., 2013; McCusker et al., 2015; Poss et al., 2002; Gournay et al., 2002; Mu et al., 2011; Nusse et al., 2018; Holmes and Stanford, 2007; Sung et al., 2008; Hittinger et al., 2013; Sidney et al., 2014; Bi et al., 2007; Mienaltowski et al., 2013). The information accurately represents the current understanding of dedifferentiation and provides appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The epitenon expresses Sca-1 and CD44 and is a possible source of progenitor cells. At E14.5, robust expression of Sca-1 and CD44 was detected in cells surrounding the tendon, likely precursors of the epitenon/paratenon, while differentiating tendon cells showed low or no expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 provide developmental expression data supported by immunofluorescence. Claim C64 regarding the epitenon as a progenitor source is supported by citations to Mendias et al., 2012; Dyment et al., 2013; Mienaltowski et al., 2013; Harvey et al., 2019. This observation provides important context for understanding the marker expression patterns in mutant tenocytes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Speculative discussion of the implications and limitations of the findings. The authors acknowledge that absence of TGF\u03b2 signaling might prevent dedifferentiated cells from acquiring full stemness, that the dramatic changes occur in the context of genetic modification, and that the molecular mechanisms may be generalizable across different dedifferentiation scenarios. They propose that the Tgfbr2;ScxCre mutants provide a unique opportunity to analyze molecular pathways of dedifferentiation, which may be important for understanding tendon pathology and developing treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are primarily speculative (C70, C109-C111) or represent discussion of potential implications (C105-C107) without direct experimental support. While the speculation is reasonable and appropriately qualified, these statements represent hypotheses for future investigation rather than supported conclusions from the current work. Claim C108 is a factual acknowledgment of the experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Discussion of TGF\u03b2 signaling as a key regulator of tendon homeostasis and comparison to other systems. The authors propose that TGF\u03b2 signaling has a continuous role in protecting differentiated tenocytes from dedifferentiation, identifying it as a key regulator of tendon homeostasis. Previous studies have implicated TGF\u03b2 signaling in cell fate maintenance in other tissues (chondrocytes, intestinal cells), but this is the first report of its role in tendon cell fate maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 represent reasonable inferences from the rescue experiments (C6-C8, C90-C95), though they extend beyond what is directly demonstrated. The comparison to other systems (C132) is supported by appropriate citations (Baug\u00e9 et al., 2013; Cammareri et al., 2017). Claim C133 regarding novelty is a factual statement about the literature, appropriately qualified with 'to the best of our knowledge.'",
+    "result_type": "MINOR"
+  }
+]

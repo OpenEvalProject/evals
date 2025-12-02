@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Experiment 1 successfully elicited response-conflict in the Simon task and action-stopping in the stop-signal task. In the Simon task, incongruent trials showed significantly slower reaction times (361 ms vs. 326 ms) and higher error rates (22.67% vs. 10.38%) compared to congruent trials. In the stop-signal task, behavioral measures confirmed adherence to the race model with appropriate stop-signal RT (238 ms) and stopping success rate (52%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 provide comprehensive behavioral validation for Experiment 1. The statistical tests show significant effects with appropriate effect sizes (d = 1.06 for RT, d = 1.4 for errors in Simon task; d = 1.44 for SST race model), and the stop-signal task parameters indicate proper algorithm convergence. These behavioral results establish the necessary foundation for the neural analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Experiment 1 identified a common fronto-central low-frequency (2-8 Hz) EEG component active during both action-stopping and response-conflict. This component showed earlier P3 onset for successful vs. failed stops, correlated with stop-signal RT across subjects, and exhibited increased activity on incongruent Simon trials. Critically, the degree of low-frequency activity on individual incongruent trials directly correlated with trial-by-trial motor slowing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C30-C36 collectively demonstrate a shared neural signature across tasks with appropriate behavioral correlations. The ICA-based component selection used validated criteria from prior work (C30-C31), the frequency specificity was consistent across tasks (C32, C34), and the trial-by-trial correlation with motor slowing (C35-C36) provides strong evidence for functional relevance. The FDR-corrected statistical threshold (p<0.01) is appropriate for the multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Experiment 2 successfully recorded simultaneous STN and M1 activity in nine Parkinson's patients during an auditory Simon task. Patients showed expected behavioral conflict effects (RT: 763 ms vs. 708 ms; errors: 22.84% vs. 13.54%). Electrode placements were validated by characteristic \u03b2-band activity in STN during rest and movement-related \u03b2-desynchronization in M1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 establish the methodological validity of Experiment 2. The behavioral effects replicate Experiment 1 patterns (C39-C40), and the electrode validation using established physiological signatures (\u03b2-band in STN, movement-related desynchronization in M1) provides confidence in recording locations. The small sample size (N=9) is acknowledged but appropriate for this rare intraoperative recording paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Experiment 2 revealed increased \u03b2-band (18-22 Hz) functional connectivity between STN and ipsilateral M1 during response-conflict, occurring 180-240 ms post-stimulus. This connectivity was directional (STN\u2192M1) as shown by Granger analysis, present in all individual subjects, and specific to ipsilateral M1 (representing the incorrect response tendency) with no significant contralateral M1 connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C55 provide converging evidence from two independent connectivity analyses (PLV and Granger prediction) showing consistent time-frequency windows and directionality. The effect was robust (p=0.00076, d=2.08 for PLV; p=0.0022 for Granger), present in individual subjects (C46, C52), and anatomically specific (C47). The null finding for contralateral M1 is appropriately cautious given moderate Bayes Factor evidence. The interpretation that STN influences the incorrect motor representation (C55) is well-supported by the ipsilateral specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Experiment 3.1 (pilot study, N=14) identified the timing of motor system suppression during response-conflict. Using TMS to measure cortico-spinal excitability in a task-unrelated hand muscle during a foot-response Simon task, a significant interaction between trial type and time point was found, with specific CSE suppression on incongruent trials at 250 ms post-stimulus (p=0.012, d=0.52, Bonferroni-corrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 establish the temporal specificity of motor suppression. The behavioral conflict effects replicated prior experiments (C57-C58), and the ANOVA interaction (C59) was driven by a specific time point (C60) that survived multiple comparison correction. The null findings at other time points (C61) strengthen the temporal specificity claim. The pilot nature and modest effect size are appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Experiment 3.2 (N=30) replicated and extended Experiment 3.1, confirming non-selective CSE suppression at 250 ms post-stimulus on incongruent trials (p=0.0005, d=0.24). Incongruent-trial CSE was suppressed below resting baseline (p=0.016), while congruent-trial CSE was not. The degree of CSE suppression correlated with behavioral RT slowing (r=0.345, p=0.031, one-tailed). Critically, an ANOVA showed no interaction with response side, ruling out selective suppression of the non-responding hand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C72 provide strong replication with increased power and critical control analyses. The main effect replicated with better statistics (C65), the baseline comparison (C66-C67) demonstrates true suppression rather than relative differences, and the behavioral correlation (C68) links neural and behavioral measures. The response-side analysis (C69-C70) with adequate power (>0.88) effectively rules out the alternative explanation of selective suppression, supporting the non-selective interpretation (C71-C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The timing of inhibition-related activity was remarkably consistent across all three experiments despite different measurement modalities: fronto-central low-frequency EEG activity began around 200 ms post-stimulus (Experiment 1), STN\u2192M1 connectivity increased around 180-240 ms (Experiment 2), and motor cortex suppression occurred at 250 ms (Experiments 3.1-3.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 synthesize timing data across experiments, showing convergent temporal dynamics within a ~50-80 ms window. This temporal coherence across fundamentally different measurement techniques (scalp EEG, intracranial LFP, TMS-evoked MEPs) strengthens the interpretation of a coordinated inhibitory cascade. The slight temporal offset (cortical activity\u2192STN-M1 communication\u2192motor suppression) is consistent with a causal sequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study's main conclusion is that fronto-basal ganglia networks support action-selection under response-conflict through rapid, non-selective motor inhibition. This mechanism involves fronto-central cortical activity, STN influence on motor cortex representations of incorrect responses, and broad suppression of cortico-spinal excitability. The signatures of this mechanism correlate with conflict-related behavioral slowing across modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C77-C78, C113-C116 represent the integrated interpretation of all experimental findings. The conclusion is well-supported by converging evidence from three complementary experiments showing: (1) shared neural signatures between stopping and conflict (Exp 1), (2) directional STN\u2192M1 communication during conflict (Exp 2), and (3) non-selective motor suppression (Exp 3). The cross-modal behavioral correlations strengthen the functional interpretation. However, the authors appropriately acknowledge the lack of causal evidence (C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "ICA can disentangle motor, sensory, and cognitive processes even when simultaneously active, and can separate sources with overlapping scalp distributions and frequency properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 describes established ICA capabilities supported by appropriate citations to methodological papers (Makeig et al., 1996, 2004). This is standard knowledge in the EEG field and the cited work provides the necessary validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The theoretical background establishes that response-conflict activates multiple incompatible motor tendencies, involves mPFC and basal ganglia, and may be resolved through an inhibitory fronto-BG mechanism. Prior work shows this mechanism involves low-frequency cortical activity, STN \u03b2-band activity, and non-selective CSE suppression during action-stopping, with similar signatures observed during response-conflict.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C22 summarize established literature with appropriate citations throughout. These claims provide the theoretical foundation and prior empirical basis for the current study's hypotheses. The citations are to peer-reviewed work and the characterizations appear accurate based on the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The discussion contextualizes findings within computational models of basal ganglia function, proposing that response-conflict may engage the hyper-direct pathway for rapid motor inhibition. The non-selective suppression may serve as a 'brake' to buy time for more precise control mechanisms, consistent with 'hold your horses' models of STN function during uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C93 present theoretical interpretations and speculations about mechanisms (hyper-direct vs. indirect pathways) and functional benefits. While these interpretations are reasonable and supported by citations to relevant models (C79, C83-C89, C91), they remain speculative (C90-C93). The current data cannot definitively distinguish between pathways or prove functional benefits. The authors appropriately frame these as possibilities and interpretations rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The findings are discussed in the context of a broader theoretical framework where motor inhibition may be a universal mechanism engaged during uncertainty, including surprising events, perceptual ambiguity, decision-conflict, and motor conflict. The results suggest a physiological mechanism for 'global No-Go' commands during action-selection under uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 extend the findings to a broader theoretical framework about uncertainty and cognitive control. While this is an interesting theoretical synthesis supported by relevant citations (C94, C96-C97), it remains speculative. The current study only tested motor response-conflict, not other forms of uncertainty. The connection to prior theoretical work (Frank, 2006) is appropriate (C97), but the generalization requires additional empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study acknowledges key limitations: (1) lack of causal evidence for fronto-BG involvement in conflict resolution, though prior stimulation studies support the network's role; (2) no mechanistic explanation for how low-frequency mPFC-STN interactions translate to \u03b2-band BG-M1 communication, though recent work suggests these may operate at different trial phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 appropriately identify important limitations. The lack of causal evidence (C99) is a valid limitation, though the cited stimulation studies (C100-C101) provide some support. The frequency translation question (C102-C103) is an important gap, and the cited recent work (C104) provides relevant context. These limitations are honestly stated and do not undermine the main correlational findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The discussion addresses alternative interpretations based on arousal, difficulty, or attention. Arousal and difficulty explanations are argued against based on prior CSE findings, while attention is acknowledged as difficult to rule out given its tight link to motor inhibition. However, the observed physiological signatures are more coherent with inhibition than attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 thoughtfully address alternative explanations. The arguments against arousal (C106) and difficulty (C107) are well-supported by citations to prior work showing opposite or inconsistent patterns. The acknowledgment that attention cannot be fully ruled out (C108) is honest, and the argument for inhibition over attention (C109) is reasonable given the physiological signatures observed. This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The absence of STN-contralateral M1 connectivity is discussed with two possible explanations: (1) the correct response representation may still receive excitatory input via the direct pathway, with inhibitory-excitatory competition occurring at subcortical levels; (2) simultaneous excitation and inhibition of contralateral M1 may have countermanding effects that obscure connectivity measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C112 offer speculative explanations for the null finding of contralateral M1-STN connectivity. Both explanations are plausible but cannot be tested with the current data. The speculation is appropriately framed as such, and the cited work (Schmidt et al., 2013) provides some support for subcortical competition (C111). However, these remain untested hypotheses that would require additional experiments to validate.",
+    "result_type": "MINOR"
+  }
+]

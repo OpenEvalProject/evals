@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript establishes the biological context and motivation for studying protein aggregation in liquid compartments. Liquid cellular compartments form by phase separation, are ubiquitous in cells, can enrich proteins and genetic material, and have been implicated in regulating pathological protein aggregation. However, the mechanisms by which weak protein interactions affect aggregate concentration in compartments remain an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 provide well-cited background establishing that liquid compartments exist, form by phase separation, and may regulate aggregation. The knowledge gap (C2, C31) is clearly identified and supported by the literature review. All background claims are appropriately cited to prior experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The model predicts that even weak interactions between protein monomers and liquid compartment molecules are sufficient to enrich aggregate concentration within the liquid compartment by several orders of magnitude relative to homogeneous aggregation. This enrichment emerges because the liquid compartment acts as a continuous sink of monomers, promoting intra-compartment aggregation while suppressing aggregation outside.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C34 present the central finding of the theoretical model. The mechanism is clearly derived from the mathematical framework (Equations 1-3) and supported by analytical solutions and numerical simulations shown in Figure 3. The positive feedback mechanism is logically consistent with the model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Aggregate partitioning is driven by a positive feedback mechanism where enhanced monomer concentration in compartment I causes earlier nucleation and stronger elongation, which increases monomer consumption. This consumption difference drives a flux of monomers into compartment I to maintain phase equilibrium, further promoting aggregation (positive feedback). Simultaneously, compartment II experiences negative feedback by continuously losing monomers, slowing aggregation outside.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C57-C61 describe the mechanistic explanation for aggregate partitioning. The positive feedback mechanism is rigorously derived from the coupled differential equations (Equation 3) and the flux relationship (Equation 3a). The mechanism is illustrated in Figure 3a and supported by analytical solutions in the appendices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C5",
+      "C75",
+      "C79"
+    ],
+    "result": "The model establishes that aggregate partitioning depends on the relative values of reaction orders for primary (n\u2081) and secondary (n\u2082) nucleation, with partitioning more pronounced for larger or smaller compartments depending on whether n\u2082 < n\u2081-1 or n\u2082 > n\u2081-1. Applying experimentally determined reaction orders predicts that tau and yeast prion Ure2p show maximal partitioning in large compartments, while A\u03b240 and A\u03b242 show maximal partitioning in small compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C5, C75, C79 are supported by the analytical derivations (Equations 4-6) and Figure 4, which maps different aggregating systems to optimal compartment sizes based on their experimentally measured reaction orders. The predictions are testable and logically follow from the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Cellular liquid compartments are ideal to control irreversible protein aggregation in space, with compartment volume representing a relevant control parameter for positioning aggregate amount and size within compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are conclusions drawn from the model results showing strong aggregate partitioning (C3, C32) and the dependence on compartment volume (C35, Figure 5). These conclusions are well-supported by the theoretical framework and consistent with the demonstrated feedback mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "The model assumes that diffusion of large aggregates can be safely neglected because fibrillar aggregates experience large hydrodynamic drag, can get entangled with cytoskeletal filaments, and may form solid-like gels. Time scale separation and dilute monomers ensure the compartment coexists at thermodynamic equilibrium while monomer partitioning kinetics may weakly deviate from equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C45 describe key model assumptions that are justified by citations to polymer physics theory (C41) and experimental observations (C42). The assumption of negligible aggregate diffusion is reasonable given the physical arguments, though the authors acknowledge this as a limitation (C88-C89).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Smaller compartments are better at enriching monomer mass concentration, and in the limit of fast monomer diffusion, aggregation kinetics in each compartment is controlled by effective rate parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 follow from the mathematical relationships in Equations 1-2 and the analytical solutions described in Appendix 3. The relationship between partition degree \u03be(\u03c6\u0304) and compartment volume is clearly established in Figure 2b.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C38",
+      "C96",
+      "C97",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The underlying mechanism of aggregate partitioning could be used to confine cytotoxic protein aggregates inside droplet-like compartments and may represent a general principle to spatially control irreversible chemical reactions, including protein precipitation and polymerization of actin and microtubules. Liquid compartments act as ideal biomolecular microreactors that enrich products by dynamically exchanging reactants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C7, C38, C96-C97, C110-C113 are speculative extensions of the model findings. While the generalization is logical and the mechanism could apply to other irreversible reactions, no experimental validation or additional modeling for these other systems is provided. These remain testable hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The model has limitations: it is restricted to time scales when aggregates hardly diffuse and monomer diffusion is unaffected by aggregates. Strong aggregate partitioning may diminish if aggregates significantly diffuse or slow monomer diffusion. Coarsening dynamics, particularly Ostwald ripening, could lower aggregate partitioning, and competition between droplets of different sizes may affect aggregate accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 honestly acknowledge model limitations and potential effects not captured by the current framework. These limitations are clearly stated and their potential impacts are reasonably discussed. The distinction between coalescence (C92) and Ostwald ripening (C93) effects is appropriately made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The model's quantitative predictions of strong aggregate enrichment are experimentally testable using recently developed bulk and microfluidic assays. Synthetic liquid biocompartments of tunable size and composition can be used to test the predictions, with compartment volumes adjustable by initial supersaturation via temperature changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99, C101 propose experimental validation strategies supported by citations to relevant experimental techniques (C99: Faltova et al., 2018; C101: Cohen et al., 2018). The suggestions are concrete and feasible, though no experimental validation is presented in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The model may provide a framework to explain aggregate partitioning phenomena in living cells, such as partitioning of pericentriolar material into centrosomes and spatial organization of aggregates inside stress granules. The propensity of aggregates to solidify compartments could be incorporated through a gel-sol transition, potentially leading to additional volume changes affecting aggregation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C106 are speculative connections to in vivo phenomena. While the cited examples (C103-C104) are relevant, the model has not been validated against these specific biological systems. The gel-sol transition extension (C105-C106) is a reasonable suggestion but remains unimplemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The enrichment of toxic aggregates inside liquid compartments may trigger new directions for drug design, suggesting drugs should be designed considering both their ability to interfere with aggregation kinetics and their partitioning properties into liquid compartments, analogous to the Meyer-Overton correlation for anesthetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 propose potential applications to drug design. While the analogy to the Meyer-Overton correlation (C109) is interesting and appropriately cited, these remain speculative suggestions without experimental validation or computational modeling of drug partitioning. The ideas are plausible but undemonstrated.",
+    "result_type": "MINOR"
+  }
+]

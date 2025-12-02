@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C12",
+      "C13"
+    ],
+    "result": "Mice were trained in a flexible visual categorization task where they categorized spatial frequencies as low or high according to a categorical boundary that switched between blocks without warning. The task involved 7 logarithmically-spaced spatial frequencies, with different stimulus statistics between low-boundary and high-boundary blocks, and mice completed approximately 62 trials per block with about 7 boundary switches per session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8, C12-C13 provide comprehensive methodological details about the task design that are internally consistent and well-documented with figures. The task parameters (number of trials, switches, stimulus frequencies) are explicitly stated with statistical measures (mean \u00b1 SEM, n=10 mice), providing clear quantitative support for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Mice adapted their decision criterion to the boundary contingency, as evidenced by significantly lower subjective categorical boundaries in low-boundary versus high-boundary blocks (p=2\u00d710\u207b\u00b3, n=10), and reversed their choice for the reversing stimulus in approximately 6.41 \u00b1 0.42 trials after boundary switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 demonstrate behavioral adaptation with appropriate statistical testing (Wilcoxon signed rank test) and clear quantitative measures. The significant difference in subjective boundaries between block types (C9) directly supports the interpretation of decision criterion adaptation (C10), and the reversal speed metric (C11) is well-defined and quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A dynamic decision criterion model revealed that mice used current sensory information (\u03b31 significantly >0 in both periods) and sensory history of non-reversing stimuli (\u03b32 significantly >0 in both periods) to guide choices, adopted a lose-shift strategy only in the stable period (\u03b12 significantly >0 in stable but not switching period), and exhibited decision criterion drift toward zero during the switching period (\u03b2 significantly >0 in switching period only).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C26 present a coherent computational modeling framework with consistent statistical support (p-values, n=10 mice, Wilcoxon signed rank tests). The model parameters are well-defined, and the pattern of significant versus non-significant parameters across stable and switching periods provides converging evidence for distinct behavioral strategies. Parameter recovery analyses (Figure 3 supplements) support model validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Model comparison using cross-validated likelihood revealed that \u03b31 (current stimulus weight) was most important for the stable period, while \u03b2 (DC drift), \u03b31, and \u03b32 (sensory history) were critical for the switching period. Choice outcome parameters (\u03b11, \u03b12) were not useful, as model 4 (setting these to zero) performed significantly better than the full model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 provide systematic model comparison with appropriate statistical testing and cross-validation. The finding that model 4 (without outcome history) outperformed the full model (C31) with p=0.037 and 0.02 for stable and switching periods respectively provides strong evidence against the utility of choice outcome parameters, supporting the interpretation in C32.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The dynamic decision criterion model (specifically model 4 without outcome parameters) better accounted for behavior than a reinforcement learning model, particularly during the switching period (p=2\u00d710\u207b\u00b3). Model 4 was the best-fitting model for most mice, and larger \u03b32 values in the switching period correlated with faster choice reversal (r=-0.71, p=0.02), supporting the importance of sensory history over choice-outcome history for boundary adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide strong comparative evidence through model competition, frequency analysis of best-fitting models, and correlation with behavioral performance. The significant correlation between \u03b32 and reversal speed (C36) provides convergent validity for the model's interpretation. However, the conclusion (C37) could benefit from additional mechanistic validation beyond model comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Bilateral chemogenetic inactivation of M2 using hM4D-DREADD specifically impaired performance for the reversing stimulus during the switching period (decreased correct rate p=0.022, decreased response latency p=0.019, increased trials to reverse choice p=0.049) but not during the stable period (p=0.87 and 0.47), without affecting performance on non-reversing stimuli or causing general motor/perceptual deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 provide strong causal evidence through validated chemogenetic manipulation (C39: significant firing rate reduction p<0.001) with appropriate controls and statistical testing (two-way repeated-measures ANOVA with post-hoc tests). The specificity of the effect to the switching period and reversing stimulus, combined with lack of effects on other measures (C44), supports the interpretation of a specific role in adaptive action selection (C46) rather than general impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "M2 inactivation specifically reduced the sensory history parameter \u03b32 in both model 1 and model 4 during the switching period (p=0.02 and 0.014) without affecting \u03b31 (current stimulus weight) or parameters during the stable period, indicating impaired utilization of sensory history to update the decision criterion and slowed decision criterion change during switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 link the behavioral effects of M2 inactivation to specific computational parameters, providing mechanistic insight. The selective reduction of \u03b32 (C49) without effects on \u03b31 (C48) or stable period parameters (C47) supports the specific interpretation (C50, C52). Parameter recovery analysis (Figure 4 supplement 5) validates that these parameter changes can be reliably detected, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Bilateral inactivation of mPFC or OFC did not significantly affect performance for the reversing stimulus, categorical boundary distance, number of switches, or dynamic-DC model parameters (p>0.05 for all measures), demonstrating that the impairment during the switching period was specific to M2 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide important negative controls (mPFC n=13, OFC n=9 mice) that strengthen the specificity of M2's role. However, the authors acknowledge that incomplete inactivation with chemogenetics is a limitation, and the negative results should be interpreted cautiously. The conclusion of specificity (C55) is reasonable but could be strengthened with more complete inactivation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "M2 neuronal activity during stimulus viewing reflected upcoming choice (positive correlation between choice preferences in correct and wrong trials, r=0.36 and 0.24 for stable and switching periods) and was strongly influenced by sensory history, with choice preference in correct trials showing significant negative correlation with previous stimulus preference (r=-0.87 and -0.92) but not in wrong trials (r=-0.15 and 0.08, p>0.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 provide electrophysiological evidence (n=113 neurons for choice analysis, n=72 for history analysis) that complements the behavioral modeling and manipulation results. The strong negative correlations in correct trials (C58) versus lack of correlation in wrong trials (C60) support the interpretation that M2 integrates sensory history for correct action selection (C61). The sliding window analysis (Figure 5 supplement 6) showing coupling to last but not earlier trials strengthens C59.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SVM decoding analysis revealed that M2 representations of upcoming choice and previous stimulus were significantly stronger during the switching period than the stable period for correct trials (p<1.0\u00d710\u207b\u2074 for both comparisons), and accuracy was higher for correct than wrong trials in both periods, corresponding with M2's causal contribution to action selection during stimulus-action remapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 provide population-level neural evidence (n=113 neurons for choice, n=72 for stimulus, 1500 resampled datasets) that aligns with the causal manipulation results. The higher decoding accuracy during switching versus stable periods (C62, C64) and for correct versus wrong trials (C63, C65) supports the interpretation of adaptive neural representations (C66). The correspondence with causal results (C67) is stated but represents an interpretive link rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "M2 causally contributes to flexible action selection during stimulus categorization, with representations of upcoming choice and sensory history regulated by the demand to remap stimulus-action associations. Mice depend on sensory history for correct boundary adaptation, and M2 activity is specifically required during remapping but not when associations are stable, with choice- and sensory history-related signals being adaptive to task requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 represent the main conclusions integrating behavioral modeling (C70), causal manipulation (C71), and neural recording (C72) results. The convergence of evidence across these three approaches strongly supports the causal contribution of M2 (C68) and the regulation of neural representations by task demands (C69). However, C73 includes speculative language ('may account for') acknowledging that the mechanistic link between adaptive encoding and behavioral function remains partially inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The findings are consistent with prior literature showing that rodent M2 is a putative homolog of primate premotor/supplementary motor regions, plays critical roles in action selection, encodes trial history and upcoming choice, exhibits task-dependent activity, and that M2 inactivation slows behavioral transitions without affecting stable performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 appropriately contextualize the current findings within existing literature through proper citations. C78 specifically cites a relevant prior finding (Siniscalchi et al., 2016) that parallels the current results, and C79 explicitly links the current manipulation and recording results. These claims represent accurate knowledge integration rather than novel findings, supporting the interpretation of results within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study used 68 male adult C57BL/6 mice (3-12 months old), including 11 mice for electrophysiological recordings, with animal procedures approved by the institutional animal care committee (approval NA-013-2019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide essential methodological information about subjects and ethical approval. The sample sizes are clearly stated and appropriate for the different experimental approaches. However, the exclusive use of male mice represents a limitation for generalizability, and the age range (3-12 months) is quite broad, which could introduce variability.",
+    "result_type": "MINOR"
+  }
+]

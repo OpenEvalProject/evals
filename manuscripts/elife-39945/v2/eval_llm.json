@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Mice successfully acquired heroin self-administration behavior, discriminating between active and inactive levers, and exhibited drug-seeking behavior after 30 days of withdrawal. This establishes heroin as highly reinforcing and the behavioral paradigm as a valid model for relapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by behavioral data showing robust lever discrimination (144.9\u00b126.0 vs 8.3\u00b12.5 presses after 6 days), stable self-administration over 12 days, and persistent seeking behavior after withdrawal (Figure 1). Statistical analyses confirm significant differences and the model is validated by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Using the dLight1 dopamine sensor, heroin administration rapidly increased dopamine levels in the NAc within minutes, with effect sizes similar to cocaine and specific to dopamine (not serotonin or norepinephrine). This demonstrates that acute heroin exposure increases NAc dopamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 are supported by fiber photometry data showing heroin-induced fluorescence increases (0.133\u00b10.03 dF/F, p=0.0062, n=7) that peaked at 3 minutes, with specificity confirmed by lack of response to citalopram and reboxetine. The dLight1 sensor is validated by citation and optogenetic controls (C5). Statistical analyses are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Heroin infusions increased calcium signals in VTA dopamine neurons, with kinetics similar to NAc dopamine release, demonstrating that first heroin exposure activates VTA DA neurons and increases NAc dopamine release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by GCaMP6m recordings showing significant calcium increases in VTA DA neurons (dF/F 0.22\u00b10.085, p=0.001, n=11) with temporal dynamics matching NAc dopamine signals. The correlation between VTA activity and NAc release (C11) is inferred from temporal similarity but lacks direct simultaneous measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Heroin self-administration preferentially activates dopamine neurons in the medial VTA that project to the medial NAc shell, as demonstrated by cFos mapping and retrograde tracing showing 51.0% of medial shell-projecting neurons were cFos+ versus 20.5% of lateral shell-projecting neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are well-supported by immunohistochemistry showing 27.8% TH+/cFos+ cells in medial VTA after heroin vs 1.5% after saline, combined with retrograde tracing demonstrating topographic organization (1.5% collateralization) and preferential activation of medial projections (51.0% vs 20.5%). The anatomical claims (C14) are appropriately cited. Figures 3b-j provide clear visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Chemogenetic silencing of VTA dopamine neurons both prevented acquisition and disrupted maintenance of heroin self-administration, establishing that VTA DA activity is required for opioid reinforcement from initial exposure through chronic use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are strongly supported by DREADD experiments showing CNO significantly reduced established self-administration (223\u00b160 to 23\u00b19 lever presses, p<0.0001) and prevented acquisition when applied during early sessions. Appropriate controls (DAT-Cre- mice, C21) and reversibility upon CNO cessation strengthen causal interpretation. Statistical analyses are rigorous with two-way RM ANOVA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Heroin dose-dependently occluded optogenetic self-stimulation of VTA dopamine neurons, an effect not explained by sedation as heroin increased locomotor activity. This occlusion indicates shared neural circuits between heroin reinforcement and VTA DA neuron activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by optogenetic data showing dose-dependent reduction in self-stimulation (IC50=6.5 mg/kg) while the same doses increased open-field locomotion, ruling out sedation. The occlusion logic (C25) is sound and parallels established cocaine experiments. However, occlusion alone doesn't definitively prove identical mechanisms\u2014alternative explanations like ceiling effects or downstream convergence exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mice learned to self-inhibit VTA GABA neurons optogenetically, and heroin dose-dependently occluded this behavior with an IC50 (6.9 mg/kg) nearly identical to DA neuron self-stimulation occlusion (6.4 mg/kg). This supports a disinhibitory mechanism where heroin inhibits VTA GABA neurons to activate DA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by novel optogenetic self-inhibition data (293.1\u00b140 lever presses) and heroin occlusion with matching IC50 values. The disinhibitory interpretation (C30) is reasonable given the circuit architecture and matching IC50s, though it remains inferential. This is reportedly the first demonstration of GABA self-inhibition reinforcement (C51), adding novelty. The mechanistic conclusion is logical but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C62"
+    ],
+    "result": "The study demonstrates that heroin activates medial VTA dopamine neurons projecting to medial NAc shell through a disinhibitory mechanism, establishing causal links between this circuit and behavioral reinforcement via chemo- and optogenetic manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C62 synthesize the major findings. The anatomical specificity (C31) is supported by cFos/tracing data, the disinhibitory mechanism (C32) by GABA self-inhibition occlusion, and causality by chemogenetic necessity experiments. Together, these provide converging evidence for the dopamine hypothesis in opioid reinforcement, though some mechanistic details remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The manuscript reviews established VTA anatomy and circuitry, including cellular composition, projection topography, GABAergic afferents, and disinhibitory motifs, providing context for interpreting the experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 are appropriately cited literature reviews establishing VTA cellular composition (60-65% DA, 30-35% GABA), projection topography, and circuit architecture. These provide necessary background but are not novel findings. Citations appear appropriate (Margolis et al., 2006; Lammel et al., 2008, 2011, 2012; Beier et al., 2015; Yang et al., 2018; etc.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The dLight sensor confirms that the first dose of heroin increases dopamine in the NAc shell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 restates findings from C6-C9 and is supported by the same photometry data. This is a confirmatory statement of a major finding already evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "The manuscript discusses alternative DA-independent models involving PPN/LDT pathways but argues these ultimately converge on VTA DA neuron activation, concluding that DA-independent heroin reinforcement is unlikely based on the current data and literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 and C48 review alternative models from literature (appropriately cited: Laviolette et al., 2004; Nader and van der Kooy, 1997; etc.) and provide logical arguments for why they don't support DA-independence. The conclusion (C48) is reasonable given the experimental evidence, though it's an inference rather than direct demonstration. The argument that PPN/LDT pathways converge on DA neurons (C45) is logical but not experimentally tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "After 12 days of chronic heroin self-administration, chemogenetic inhibition of DA neurons still caused reversible decreases in responding behavior, suggesting the same circuits maintain reinforcement during chronic exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by the chemogenetic data from C19 showing continued DA neuron requirement after 12 days. This extends the necessity finding from acute to chronic exposure, though the manuscript doesn't extensively characterize chronic adaptations. The reversibility is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "The occlusion experiments with matching IC50 values for DA neuron self-stimulation and GABA neuron self-inhibition strongly suggest heroin converges on the same cellular mechanisms, with GABA self-inhibition reinforcement being a novel finding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C53 are supported by the optogenetic occlusion data with nearly identical IC50 values (6.4 vs 6.9 mg/kg). The novelty claim (C51) for GABA self-inhibition is stated but not independently verified. The occlusion logic is sound but represents inference about mechanism rather than direct proof of identical pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The manuscript discusses discrepancies with older pharmacological studies and genetic manipulations that challenged the DA hypothesis, offering explanations including insufficient receptor occupancy, developmental adaptations, and methodological limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C60 review conflicting literature and offer speculative explanations (C55, C59 explicitly marked as speculation). While the citations appear accurate (Ettenberg et al., 1982; Pettit et al., 1984; Hnasko et al., 2005; Pisanu et al., 2015), the explanations for discrepancies are not experimentally tested here. The discussion is reasonable but represents interpretation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C63"
+    ],
+    "result": "The study aims to integrate opioid research into the circuit model for addiction and suggests potential translational applications for addiction treatment and developing non-addictive analgesics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C63 state the study's goals and potential implications. C61 is a reasonable summary of the study's contribution. C63 is explicitly speculative about future applications. These are appropriate framing statements but not experimental results requiring evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The introduction reviews the historical development of the dopamine hypothesis, supporting evidence from psychostimulants, challenges from opioid studies, and alternative models, establishing the rationale for using genetic tools to revisit this question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C83 constitute the introduction's literature review, establishing context and rationale. Citations appear appropriate and comprehensive (Olds and Milner, 1954; multiple studies on DA antagonists, lesions, genetic manipulations, etc.). This provides necessary background but represents prior work rather than new findings. The rationale for the current study (C83) is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Opioids suppress VTA GABA interneuron activity through \u03bc-opioid receptor activation, causing hyperpolarization via GIRK channels and reduced release probability via calcium channel inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 reviews established mechanisms from literature (Jalabert et al., 2011; Johnson and North, 1992; Mazei-Robison et al., 2011; Cohen et al., 1992) that provide mechanistic context for the disinhibition model. This is appropriately cited background information, not a novel finding of this study.",
+    "result_type": "MINOR"
+  }
+]

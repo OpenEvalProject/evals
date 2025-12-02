@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors determined a 3.7 \u00c5 cryo-EM structure of unliganded human Fzd5 using a fiducial-assisted approach. A BRIL domain was fused into intracellular loop 3 (ICL3) of hFzd5 and complexed with an anti-BRIL Fab and anti-Fab nanobody to create an asymmetric particle suitable for alignment. The structure reveals defined density for ECL1-2 and the hinge domain (C192-F227), but the CRD and CRD-proximal flexible hinge are missing or ambiguous, indicating flexibility between the 7TM and ligand-binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C27-C40 collectively provide strong evidence for the structure determination. The methodological approach (fiducial marker strategy), resolution (3.7 \u00c5), data processing workflow, and structural features are explicitly described with supporting figures and tables. The flexibility between CRD and 7TM is directly observed in the EM data (C33, C37, C41). The approach is well-justified and the resolution is appropriate for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Analysis of XWnt8/hFzd5 complex particles revealed extreme flexibility between the Wnt/Fzd-CRD and Fzd-TM regions. 2D class averages showed two blurred densities matching Wnt/Fzd size, but severe segmental heterogeneity prevented successful 3D reconstruction. The data suggest the Wnt/Fzd-CRD module is not in intimate contact with the TM regions and unlikely to participate in tightly coupled allosteric signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45-C51 describe consistent observations of flexibility in the Wnt/Fzd complex. The inability to resolve a high-resolution structure (C46, C50) directly supports the conclusion of extreme flexibility (C3). The 2D class averages (C45, C48) provide visual evidence. While the authors acknowledge limitations (missing LRP6, C47), the data consistently point to flexibility and lack of intimate CRD-TM contact (C51), which is a reasonable inference from the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C101",
+      "C102"
+    ],
+    "result": "The structural data reveal that the CRD and 7TM regions of Fzd5 lack intimate structural coupling due to a long, flexible linker. This flexibility suggests Wnt binding to the CRD is unlikely to propagate conformational changes to the 7TM bundle in a manner analogous to authentic GPCRs. This contrasts with Smoothened, which has a more rigid linker allowing allosteric signal transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C101-C102 present a logical inference from the structural observations. The missing/ambiguous density for the CRD and flexible hinge (C41) directly supports the conclusion about lack of structural coupling (C42, C101). The comparison with Smo (C52-C54, C102) is supported by cited structural data. The inference that this flexibility precludes GPCR-like allostery is reasonable given the structural evidence, though it remains an inference rather than direct experimental proof of mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C98",
+      "C99",
+      "C100",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Structure-activity relationship analysis comparing Wnt3a and a surrogate agonist (that cross-links Fzd5 to LRP6) revealed identical response patterns across multiple hFzd5 mutants. Ionic lock mutants (R449A, W520A) abolished or reduced signaling for both agonists, while other mutants showed similar effects. These results strongly imply that Wnt principally acts as a cross-linker rather than initiating conformational changes intrinsic to Wnt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C98-C100, C111-C115 provide convergent evidence from functional assays. The identical structure-activity relationships between natural Wnt3a and synthetic surrogate agonist (C4, C98) across multiple mutants (C111-C115) strongly support the cross-linking mechanism (C100). The data are internally consistent and the logic is sound: if Wnt-specific conformational changes were required, the two agonists should show different mutational sensitivities. The control showing Y507A signals robustly despite low expression (C115) strengthens the interpretation by ruling out expression artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C108"
+    ],
+    "result": "The authors conclude that canonical Wnt/\u03b2-catenin signaling is principally reliant on ligand-induced Fzd/LRP6 heterodimerization rather than allosteric mechanisms seen in class A GPCRs and Smoothened. This represents a unique example of a heterodimerization-driven mechanism by a GPCR-like receptor (Fzd) and a Type-I receptor (LRP5/6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C100-C101, C104-C105, and C108 present the main mechanistic conclusion. This is well-supported by converging lines of evidence: (1) structural flexibility between CRD and 7TM (C41-C42, C101), (2) identical structure-activity relationships for Wnt3a and surrogate agonist (C4, C98-C100), and (3) comparison with other receptor systems (C6, C102). The authors appropriately acknowledge uncertainty about whether LRP6 proximity might induce conformational changes (C104-C105), but conclude these would be receptor-intrinsic rather than Wnt-driven. The conclusion is a reasonable synthesis of the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Structural comparison reveals that Fzd5 belongs to a distinct subfamily from Fzd4 with ~62% TM sequence identity. The Fzd5 structure shows an ECL2 lid comprised of \u03b2-sheets and loops, and the hinge region occludes the orthosteric ligand binding pocket. Neither Fzd5 nor Fzd4 shows large TM openings, and both have constricted pockets (4.9 \u00c5 for Fzd5, 4.2 \u00c5 for Fzd4) with conserved bulky residues (K506, Y507) that likely occlude small molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63, C77-C79 describe structural features directly observable in the cryo-EM map. The sequence identity (C57) is quantifiable, the structural features (C58-C59, C62-C63) are explicitly shown in figures, and the pocket measurements (C79) are specific. The inference that these features would occlude small molecules (C61) is reasonable given the measured pocket dimensions. The comparison with Fzd4 and Smo (C60, C62) is supported by cited structures. These are well-supported structural observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The hinge domains of Fzd5/8 contain five cysteine residues (versus three in other Fzd subclasses), with three unmodeled in the structure. Fzd5 ECL3 has a CXC motif forming disulfide bonds, contrasting with Fzd4 (no ECL3 cysteine) and Smo (intra-ECL3 disulfide). The authors propose that differences in cysteine distribution explain why a chimeric Fzd4 with Fzd5 hinge was inactive to Norrin, suggesting disruption of the disulfide network impaired structural integrity rather than loss of Norrin-hinge interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C76 describe cysteine patterns and propose an alternative explanation for published chimera data. The cysteine counts and patterns (C64, C70-C72) are directly observable in sequences and structures. The proposal that disulfide network disruption explains chimera inactivity (C73, C75) is a reasonable alternative to the original interpretation (C74), supported by clinical mutations (C76). However, this remains a hypothesis that would require experimental validation (e.g., testing individual cysteine mutations). The structural observations are solid, but the mechanistic interpretation is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Alanine substitution of conserved residues K506 or Y507 in the putative druggable pocket severely impaired cell surface expression of full-length hFzd5, suggesting these residues are important for protein stability likely through inter-helical packing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 report mutagenesis data with a mechanistic interpretation. The experimental observation (C80) is explicitly stated and shown in Figure 2\u2014figure supplement 1. The interpretation that these residues are important for stability through inter-helical packing (C81) is reasonable given their location in the structure and the expression phenotype. However, the mechanism (inter-helical packing) is inferred rather than directly demonstrated. The result is supported but the mechanistic detail is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A small population (~5%) of parallel hFzd5 dimers was observed in 2D class averages, with TM4 likely at the dimer interface. However, the role of these dimers in signaling remains unclear since Fzd appears monomeric on live cell surfaces and Wnt/Fzd/LRP6 hetero-trimerization is sufficient for \u03b2-catenin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 report an observation with appropriate caveats. The dimer observation (C34) is explicitly shown in figures with quantification. The inference about TM4 at the interface (C35) is reasonable given the Fab positions and comparison to Fzd4 structure. The authors appropriately acknowledge uncertainty about functional relevance (C36) with supporting citations. This is a well-qualified observation that doesn't overinterpret the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Structural comparison of cytoplasmic TM regions shows TM6 in similar positions in Fzd4 and Fzd5, but Fzd5-TM5 is in an inward position compared to Fzd4-TM5, aligning with inactive Smo-TM5. Fzd5 and Smo have phenylalanine residues (TM5 or TM6) interacting with W3.50 and small aliphatic residues stabilizing the inward conformation, while Fzd4 has L410 and V442 that might result in looser TM5-TM6 packing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 describe structural comparisons of TM regions. The positional observations (C85-C86) and specific residue interactions (C87-C88, C90) are directly observable in the structures. The inference about Fzd4 having looser packing (C89) is speculative but reasonable given the residue identities. These are solid structural observations with appropriate comparative analysis, though the functional implications remain to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The K/R6.32-W7.55 'ionic lock' is a crucial molecular switch in class F GPCRs, with suggested Dvl- versus G protein-biased states corresponding to the interaction being on or off. Fzd5 W520 forms a more extensive \u03c0-cation interaction with R449 than in Fzd4. Mutations of the ionic lock (R449A, W520A) abolished or reduced signaling. Fzd5-H8 undergoes a helical half-turn outward transition compared to Fzd4, and the KTxxxW motif interacts with Dvl PDZ and DEP domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 describe the ionic lock and H8 structure with functional data. The structural observations (C90, C95) are directly from the cryo-EM map. The functional importance is supported by cited mutagenesis data (C93-C94) and the authors' own data (C111). The proposed biased signaling mechanism (C92) is from cited literature. The KTxxxW motif function (C96-C97) is established knowledge. These claims integrate structural observations with established functional data appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "The heterodimerization-driven mechanism opens up the possibility of 'tuning' Wnt signaling through alternative agonist molecules such as antibodies and other dimeric scaffolds for understanding Wnt biology and developing regenerative therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 presents a forward-looking implication of the mechanistic findings. This is a reasonable extrapolation from the demonstrated heterodimerization mechanism (C5, C108) and is supported by citation to prior work on surrogate agonists (C4, Tao et al., 2019). While speculative about future applications, it's a logical consequence of the established mechanism and represents appropriate scientific discussion of implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction provides background on Frizzled receptors as class F GPCRs involved in both G protein and canonical \u03b2-catenin signaling, the Wnt signaling pathway components and mechanism, therapeutic relevance, receptor architecture, and prior structural knowledge. It notes that while Fzd-CRD structures are available, understanding of Fzd-7TM regions has lagged, and the prior hFzd4-7TM structure contains thermostabilizing mutations limiting interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C26 present established background knowledge with appropriate citations. These are literature-based claims that set up the rationale for the study. The characterization of prior work (C18-C19, C25-C26) accurately represents the state of the field and identifies the gap this study addresses. This is standard introductory material that is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The hinge of Fzd8 is ~40 amino acid residues longer than Fzd5, but they share similar Wnt specificity and signaling properties despite different hinge lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 cite published data comparing Fzd5 and Fzd8. The length difference (C43) is quantifiable from sequences, and the functional similarity (C44) is from cited literature (Voloshanenko et al., 2017). This supports the authors' argument that hinge length variation doesn't necessarily correlate with functional differences, reinforcing their interpretation about flexibility. The claims are appropriately cited and used to support the broader argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors speculate that G protein signaling may be more reliant on conformational changes in Fzd, and it remains unclear whether LRP6 proximity induces conformational changes in Fzd through heterodimerization, though if so, this would be driven by receptor-intrinsic properties rather than Wnt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C105 are explicitly speculative (C103, C104) or conditional (C105). The authors appropriately acknowledge these as open questions rather than conclusions. While reasonable hypotheses, there is no experimental data in the manuscript to test these possibilities. These represent appropriate scientific speculation about alternative mechanisms and future directions, but cannot be evaluated as supported or unsupported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "hFzd5ICL3BRIL had an overall 5-fold higher yield after expression and purification compared to hFzd5FL, indirectly suggesting its superior stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 reports a quantitative observation about protein yield. The 5-fold difference is explicitly stated in the Methods section. The interpretation that this suggests superior stability is reasonable but indirect\u2014higher yield could reflect multiple factors including expression level, folding efficiency, or stability during purification. The claim is appropriately qualified as 'indirectly suggesting' rather than proving superior stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The small pockets in Fzd-7TM structures might explain the difficulty of developing small molecule modulators for Wnt/\u03b2-catenin signaling, though the Smo agonist SAG1.3 acted as a partial agonist for Fzd6-Gi signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 propose an explanation for drug development challenges while noting an exception. The pocket size measurements (C79) support the hypothesis about small molecule access (C82). The SAG1.3 activity (C83) is from cited recent work (Kozielewicz et al., 2020). The authors appropriately present this as a possible explanation ('might help to explain') while acknowledging that small molecule modulation remains possible. This is reasonable speculation grounded in structural observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The canonical Wnt system comprises both a 7TM GPCR-like receptor (Fzd) and a single-pass 1TM receptor (LRP5/6), presenting a mechanistic conundrum since GPCRs signal through ligand-induced allostery while single-pass TM receptors signal via ligand-induced dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 present established knowledge about receptor signaling mechanisms with appropriate citation (Wilmes et al., 2020). This sets up the conceptual framework for understanding why the Wnt system is mechanistically interesting\u2014it combines features of two different receptor classes. This is accurate background that frames the significance of the authors' mechanistic conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The shorter ECL3 \u03b1-helix in Fzd5 compared to Smo might favor ligand-induced allostery in Smo that is not seen in Fzd. It has been proposed that during Smo signaling, the long TM6-ECL3 \u03b1-helix interacts with the CRD to sense ligand-induced conformational rearrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is explicitly speculative ('might favor'), while C69 cites a proposed mechanism from literature (Deshpande et al., 2019; Huang et al., 2018). The structural observation about ECL3 length (C67) is supported, but the functional interpretation (C68) is speculative. The cited Smo mechanism (C69) is from other work. These claims appropriately distinguish between structural observations and mechanistic speculation, but the functional implications remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C47",
+      "C55"
+    ],
+    "result": "The authors speculate that LRP6 could stabilize the Wnt/CRD module, and that the freedom of the Fzd-CRD should enable Fzd to 'search' for ligands encountered in the membrane from the side of the receptor, not just from the top.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47 and C55 are explicitly speculative. C47 proposes a role for the missing LRP6 component, which is reasonable but untested. C55 proposes a functional consequence of CRD flexibility, which is plausible but not demonstrated. These represent appropriate scientific speculation about functional implications of structural observations, but lack experimental support in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

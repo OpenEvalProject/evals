@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C41",
+      "C49",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study develops a mathematical framework (interval dN/dS, i-dN/dS) that links dN/dS values to selective coefficients in somatic evolution by integrating clone size distribution analysis with dN/dS measurements. The approach was validated through simulations showing that 8 mutations per gene are sufficient for accurate parameter recovery, with accuracy increasing for higher mutation burdens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39, C41, C49 describe the theoretical contribution, while C54-C57 provide simulation-based validation. The mathematical derivation is presented with equations, validated against simulations (Figure 2a-c), and power calculations demonstrate practical applicability. The approach addresses the identified gap (C3, C22, C33) by accounting for somatic evolution-specific features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Application of i-dN/dS to oesophageal data revealed a broad distribution of fitness effects with TP53 and NOTCH1 mutations showing the largest selective advantages (\u0394 = 0.057 and 0.029 for missense; 0.094 and 0.072 for nonsense, respectively). The DFE is characterized by many small-effect mutations and few large-effect mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C71 collectively describe the oesophageal analysis with specific quantitative findings supported by Figures 2 and 3. The model fits the data well (C60, Figure 2\u2014figure supplement 2), neutral genes show dN/dS \u2248 1 (C64-C65), and gene-specific estimates are provided with confidence intervals. The DFE characterization (C71) is supported by data in Figures 3c-d and comparison to organismal evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Analysis of normal skin data using i-dN/dS revealed selective advantages of \u0394 = 0.001 for missense and \u0394 = 0.004 for nonsense mutations on average. Gene-specific analysis showed NOTCH1 (\u0394 = 0.0149) and TP53 (\u0394 = 0.0054) mutations in patient PD18003, with fitness coefficients similar to oesophagus and a comparable DFE structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 describe skin tissue analysis with quantitative estimates and confidence intervals shown in Figure 4. The consistency between skin and oesophagus (C84) and similar DFE characteristics (C85, Figure 4f) strengthen the findings. However, the analysis was limited by fewer mutations and narrower frequency range compared to oesophagus data, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Site frequency spectrum analysis validated the i-dN/dS approach, showing that the theoretically-derived model (exponential + power law) provided the best fit (lowest WAIC, BF > 10\u00b3). The characteristic frequency N(t) increased with age for non-synonymous mutations, with TP53 and NOTCH1 showing the largest age-dependent increases in clone size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 describe independent validation using site frequency spectra. Model comparison using WAIC (C88, Figure 5b) and Bayes factors (C91) strongly support the theoretical model. Bayesian regression (C92-C93) provides qualitative support with correlation between methods (p=0.004, R\u00b2=0.47). The convergence of multiple analytical approaches strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Hitchhiking analysis showed statistically significant but weak correlations between driver mutations and synonymous mutations (0.05 additional synonymous variants per driver, R\u00b2 < 0.02), suggesting that the majority of synonymous mutations are not hitchhikers and that the assumption of clone independence is reasonable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 describe a critical validation of model assumptions. While statistical significance was found (p<0.001 for NOTCH1, p=0.031 for TP53), the effect size was small (C75) and correlation noisy (C76, R\u00b2<0.02). No significant relationship was found between VAF and driver count (C77, p>0.1). This supports the independence assumption (C79), though the statistical significance with small effect size warrants caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "TP53 and NOTCH1 were consistently the most highly selected genes across both tissues (proliferative bias >1% and >5% respectively). While absolute selective coefficients varied between patients, the comparative rank of fitness coefficients was broadly consistent, with TP53 always showing highest fitness followed by NOTCH1 for missense mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 synthesize findings across tissues and patients. The consistency in gene ranking (C102-C103) despite inter-patient variation (C101) is well-supported by data in Figures 3 and 4. The connection to cancer recurrence patterns (C104) provides biological context through citations. The proposed explanations for variation (mutation location, microenvironment) are reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "NOTCH1 mutations were observed 3-fold more frequently than TP53 mutations in oesophagus and 5-fold more frequently in skin, suggesting higher mutation rate for NOTCH1. Combined with fitness measurements, this predicts transient NOTCH1-mutant repopulation during aging followed by replacement by fitter TP53-mutant clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 report observed mutation frequencies from data. The inference about mutation rates (C107) is reasonable but assumes equal detection and other factors are controlled. The prediction about temporal dynamics (C108) is logical given the mutation rate and fitness data, but is speculative and would require longitudinal validation. This represents a testable hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C109",
+      "C110"
+    ],
+    "result": "The combined dN/dS and clone size distribution approach provides superior quantitative insight into somatic evolution dynamics compared to either method alone, enabling direct inference of selection coefficients. Importantly, point estimates of dN/dS that neglect frequency information do not accurately represent selection coefficient magnitude, and frequency-dependent effects must be corrected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 summarize the methodological contribution supported by the entire study. The superiority of the combined approach is demonstrated through model comparisons (C88, C91) and consistency checks (C93). The cautionary note about frequency-dependence (C109-C110) is supported by theoretical derivations and empirical observations (Figure 1b-c, Figure 1\u2014figure supplement 1). This represents a key conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors acknowledge important limitations: accuracy depends on underlying dN/dS measurement quality (affected by uncharacterized mutation rate variability and uncertain variant pathogenicity), the model assumes well-mixed populations while data comes from spatially structured epithelia, and spatial structure influences clone size distributions through boundary effects and clonal interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 represent honest acknowledgment of limitations with appropriate citations. These are conceptual/theoretical limitations rather than empirical findings. The recognition of these issues (particularly spatial structure, C112-C113) is important for interpreting results, though the authors provide evidence that violations may not be severe (hitchhiking analysis, C74-C79).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Somatic evolution violates Wright-Fisher model assumptions: it is rapid with infrequent fixation, has complex clonal dynamics, non-constant population sizes, and lacks recombination (causing hitchhiking). The known ancestral genome circumvents phylogenetic analysis needs. These violations make dN/dS interpretation problematic and the relationship between dN/dS and selective coefficients uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 establish the motivation for the study by identifying violations of classical assumptions. Each violation is supported by citations (C27-C30, C32). This represents established knowledge synthesized to identify the research gap. The claims are well-supported by prior literature and provide clear rationale for developing new theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study focuses on stem cells because only mutations acquired in stem cells persist long-term in healthy tissue. The population asymmetry model, where stem cell loss through differentiation is compensated by neighboring stem cell replication, is well-established for oesophagus and skin based on lineage tracing studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 establish the biological foundation for the modeling approach. C50 states a biological principle, while C51-C53 are supported by citations to lineage tracing studies (Klein and Simons 2011; Klein et al. 2010; Doup\u00e9 et al. 2012; Alcolea et al. 2014). This represents appropriate use of established knowledge to justify model assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Positive selection causes variants to rise to higher frequency than expected under neutral evolution, while negative selection has the opposite effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 state fundamental principles of population genetics illustrated in Figure 1a. These are well-established theoretical expectations that form the conceptual basis for the dN/dS approach. The claims represent foundational knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C19",
+      "C23",
+      "C24",
+      "C27",
+      "C33",
+      "C39",
+      "C47"
+    ],
+    "result": "The authors develop a theoretical framework showing that viral capsid assembly outcomes depend on three scaled parameters (line tension, chemical potential, and FvK number) and that elastic frustration can lead to incomplete structures. They demonstrate that viruses with high mechanical resistance cannot be directly assembled as spherical structures, justifying the need for maturation steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical analysis (C2, C14, C19, C23, C24, C27) is internally consistent and based on established elasticity theory. The phase diagrams (C24, C47) systematically show how different structures emerge under different parameter regimes. The key conclusion about high FvK preventing direct spherical assembly (C4, C39) follows logically from the energetic analysis showing cylinders dominate at high FvK (C27). The framework is comprehensive and mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36"
+    ],
+    "result": "The authors validate their theoretical predictions using coarse-grained Brownian dynamics simulations, demonstrating that the model can reproduce assembly of spherical shells and confirming the transition from spherical to cylindrical structures at high FvK numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation results (C31, C32) qualitatively confirm the theoretical phase diagrams across widely different parameter values. The ability to relate simulation parameters to elastic constants (C30) provides a rigorous connection between theory and simulation. Figure 4 shows clear agreement between predicted and observed structures. The authors appropriately note quantitative discrepancies due to fixed particle number vs. constant chemical potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors apply their framework to real viruses, showing that CCMV and SV40 have parameters consistent with successful spherical assembly, while mature bacteriophage lambda has high FvK preventing direct assembly, but its procapsid has favorable parameters for initial assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Table 1 provides estimated elastic parameters for real viruses based on experimental measurements from the literature (C38, C40, C41, C42). The comparison with phase diagrams is logical and the conclusions about assembly viability are consistent with known biological behavior (e.g., lambda requiring maturation). However, the authors acknowledge uncertainty in some estimates (e.g., lambda procapsid FvK may be overestimated).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37"
+    ],
+    "result": "The authors propose practical applications including explaining coexistence of tubes and spherical capsids in SV40 assembly, suggesting design principles for artificial viral cages, and identifying potential therapeutic targets to induce viral mis-assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the explanation for SV40 coexistence (C34) is plausible and supported by the phase diagram framework, it remains speculative without direct experimental validation. The design principles (C35) and therapeutic applications (C37) are reasonable extrapolations from the theory but require experimental verification. These represent promising hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors describe how assembly parameters can be experimentally controlled through concentration, temperature, pH, salt concentration, and presence of ions or auxiliary proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C44, C45, C46) represent established knowledge about experimental control of protein assembly conditions, appropriately cited and applied to the context of the study. The connections between experimental variables and theoretical parameters are reasonable, though C46 is noted as presumptive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15"
+    ],
+    "result": "The authors provide background on viral capsid structure, assembly mechanisms, and prior work on geometric frustration and nucleation theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are appropriately supported by citations to established literature (C6, C8, C11, C12, C15). The background accurately represents current understanding of viral assembly and provides necessary foundation for the study. C15 appropriately notes experimental evidence for stable partial capsids that motivated the work.",
+    "result_type": "MINOR"
+  }
+]

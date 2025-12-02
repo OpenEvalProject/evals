@@ -1,0 +1,608 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Human and mouse CARD14 proteins share high sequence homology, with 77% overall amino acid identity and 80% identity in the coiled-coil region containing the E138A mutation site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are explicitly stated in the text and supported by sequence alignment data shown in Figure 1\u2014figure supplement 1A. The high degree of conservation justifies the use of the mouse model to study human CARD14 mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "CARD14-3XFLAG protein is expressed at high levels in skin and gastrointestinal tissues, with lower expression in liver and kidney.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are supported by immunoblotting data in Figure 1A showing tissue-specific expression patterns. This establishes the tissue distribution of CARD14 in the knock-in mouse model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CARD14 is expressed in differentiated keratinocytes in mouse and human skin, contrasting with earlier reports suggesting basal layer expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 are supported by RNAscope data (Figure 1B), in vitro differentiation experiments (Figure 1\u2014figure supplement 1D-F), and consistency with published RNA-seq datasets. The data convincingly demonstrate CARD14 expression increases with keratinocyte differentiation, though this contradicts some prior immunohistochemistry studies (C9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Tamoxifen-induced CARD14E138A expression in heterozygous mice rapidly induces psoriasiform skin inflammation characterized by acanthosis, hyperkeratosis, keratinocyte proliferation, myeloid cell infiltration, altered differentiation, neoangiogenesis, and expression of psoriasis-associated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C27 are well-supported by comprehensive histological analysis (Figure 1D), qRT-PCR data (Figure 1E), and flow cytometry (Figure 1F) at 4-5 days post-tamoxifen. The phenotype is observed in both ears and back skin, with multiple independent measures confirming psoriasis-like inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "CARD14E138A signaling in keratinocytes alone is sufficient to induce skin inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by experiments using Krt14CreERT2 mice (Figure 2A-D), which restrict CARD14E138A expression to keratinocytes. The induction of acanthosis, hyperkeratosis, and inflammatory gene expression demonstrates keratinocyte-intrinsic sufficiency, though the magnitude of response is somewhat lower than with ubiquitous expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Acute skin inflammation induced by CARD14E138A is independent of the adaptive immune system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by experiments in Rag1-/- mice (Figure 2E-H), which lack T and B cells but still develop comparable skin inflammation at 5 days post-tamoxifen. This demonstrates that adaptive immunity is not required for acute CARD14E138A-induced pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Anti-TNF treatment substantially reduces CARD14E138A-induced skin inflammation, including acanthosis, inflammatory gene expression, and immune cell infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by antibody blocking experiments (Figure 3B-D) showing significant reduction in epidermal thickness, inflammatory cytokine/chemokine expression, and neutrophil/DC/eosinophil infiltration. The data demonstrate TNF is a key mediator of acute inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Keratinocytes are the primary source of TNF in CARD14E138A-induced skin inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by RNAscope analysis (Figure 3\u2014figure supplement 2A-B) and co-staining experiments (Figure 3\u2014figure supplement 3A) showing Tnfa mRNA predominantly in suprabasal keratinocytes with some neutrophil contribution but not T cells. This identifies the cellular source of the key inflammatory mediator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "IL-17A plays a less important role than TNF in acute CARD14E138A-induced skin inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by anti-IL-17A blocking experiments (Figure 3B-C, Figure 3\u2014figure supplement 1A-B) showing modest effects on back skin but not ears, and limited impact on inflammatory gene expression. This contrasts with the robust effects of anti-TNF treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Chronic CARD14E138A expression (1 month) produces distinct phenotypes in ears versus back skin, with increased ear acanthosis but reduced back skin inflammation compared to acute (5 day) timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by longitudinal histological analysis (Figure 4A-B) showing temporal and anatomical differences in disease progression. The data suggest tissue-specific responses to chronic CARD14E138A signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The immune cell composition in CARD14E138A-induced skin inflammation changes over time, with minimal \u03b1\u03b2 T cell infiltration at 5 days but substantial increases by 1 month, while \u03b3\u03b4 T cells remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by flow cytometry data (Figure 4C) showing temporal changes in immune cell populations. This demonstrates evolution from innate-dominated to mixed innate/adaptive inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "CARD14E138A expression induces transient systemic inflammation with elevated serum cytokines and weight loss at 5 days that resolves by 1 month.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by serum cytokine measurements (Figure 4D) and weight monitoring (Figure 4E) showing acute systemic effects that normalize over time. This demonstrates the temporal dynamics of systemic inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Chronic skin inflammation induced by CARD14E138A at 1 month is independent of the adaptive immune system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by analysis of Rag1-/- mice at 1 month (Figure 4\u2014figure supplement 1A-I) showing comparable or enhanced inflammation despite absence of T and B cells. This extends the finding of adaptive immune independence to chronic inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "RNA-seq analysis reveals that CARD14E138A expression induces distinct transcriptional programs at 5 days versus 1 month, with 458 genes upregulated and 88 downregulated at 5 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by PCA analysis (Figure 5A) and heatmap visualization (Figure 5B) showing clear separation by genotype and time. The differential gene expression analysis provides molecular insight into disease progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "CARD14E138A strongly upregulates TNF/NF-\u03baB signaling pathways while downregulating extracellular matrix genes at 5 days, with enrichment of keratinization genes especially at 1 month.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by pathway analysis (Figure 5C) showing coordinated changes in functionally related gene sets. This provides mechanistic insight into CARD14E138A-driven inflammation and tissue remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Specific inflammatory genes show temporal dynamics, with acute inflammatory mediators (Il6, Il1a, Osm, etc.) more elevated at 5 days, collagen genes transiently downregulated, cornification genes upregulated at 1 month, and immune cell markers reflecting infiltration patterns, while key psoriasis genes (S100a9, Il1f9, Cxcl2, Il17a, Tnfa) remain elevated at both timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 are supported by detailed gene expression analysis (Figure 5D) showing temporal patterns consistent with flow cytometry data. The persistent elevation of key psoriasis genes suggests their importance in maintaining chronic inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The CARD14E138A mouse skin transcriptome shows modest correlation with human psoriasis vulgaris (PV) transcriptome (R\u00b2=0.255 at 5d, R\u00b2=0.185 at 1m) but shares 30-34% of differentially expressed genes, suggesting mechanistic similarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by comparative transcriptomic analysis (Figure 5\u2014figure supplement 1A-B). The modest R\u00b2 values likely reflect species differences, but the substantial gene overlap supports translational relevance of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The CARD14E138A transcriptome shows low correlation with human PV but high correlation with constitutive CARD14\u0394E138 mouse model, suggesting similar mechanisms between inducible and constitutive models despite species differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by cross-model comparisons (Figure 5\u2014figure supplement 1C-D) showing R\u00b2=0.566-0.656 between mouse models but R\u00b2=0.23 with human PV. This validates the inducible model while highlighting species-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The CARD14E138A skin transcriptome at 5 days strongly correlates with IL-23-induced psoriasiform dermatitis in mice (R\u00b2=0.684), a model considered most similar to human psoriasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by comparative analysis (Figure 5\u2014figure supplement 1E) showing strong correlation with the IL-23 model. This provides additional validation of the CARD14E138A model's relevance to psoriasis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The CARD14E138A mouse model shares more transcriptomic features with generalized pustular psoriasis (GPP) than PV, including upregulation of STEAP1/STEAP4 genes associated with pustular disorders, suggesting it may model aspects of GPP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by comparative analysis (Figure 5\u2014figure supplement 2A-B) showing greater gene overlap with GPP and expression of pustular psoriasis-associated genes. Combined with the independence from adaptive immunity, this suggests GPP-like features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The CARD14E138A transcriptome shows weak correlation with atopic dermatitis (AD) and lacks characteristic AD features (TH2 cytokines, downregulated cornification proteins), while showing psoriasis biomarkers, confirming it models psoriasis-like rather than AD-like inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by comparative analysis with AD transcriptomes (Figure 5\u2014figure supplement 3A-C) showing low correlation, opposite expression patterns for AD markers, and presence of psoriasis biomarkers. This validates disease specificity of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Homozygous CARD14E138A expression induces severe systemic disease with rapid weight loss (20% by day 5), hypothermia, extensive scaling, emaciation, and chapped lips, requiring sacrifice at humane endpoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by clinical observations and weight/temperature monitoring (Figure 6A-B, Figure 6\u2014figure supplement 1). The severe phenotype demonstrates gene dosage effects and suggests homozygous mutations may be incompatible with life, consistent with their rarity in patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Homozygous mice develop hypothermia, diarrhea with fluid-filled intestines, and pale livers, but without gross intestinal tissue damage histologically, along with enlarged stomachs despite appearing emaciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by temperature measurements (Figure 6B), gross pathology observations (Figure 6\u2014figure supplement 2A), and histology (Figure 6C). The disconnect between functional gut symptoms and histological appearance is notable and may reflect barrier dysfunction rather than structural damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Homozygous and heterozygous mice show similar epidermal thickening in ears and back skin at day 5, but homozygous mice have greater body surface involvement, increased neutrophil infiltration, and higher expression of psoriasis-associated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by histology (Figure 6D), flow cytometry (Figure 6E), and qRT-PCR (Figure 6F) showing gene dosage effects on inflammation severity despite comparable acanthosis. This suggests systemic disease involves factors beyond local epidermal thickening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Homozygous mice show significantly increased S100A9+ myeloid cell infiltration in kidney, liver, colon, and lung, elevated inflammatory gene expression in lungs, increased serum TNF and IL-1\u03b1, and elevated serum markers of liver (ALT, GLDH) and kidney (inorganic phosphate) damage, indicating multi-organ dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 are supported by immunohistochemistry (Figure 6C, 6G), qRT-PCR (Figure 6F), serum cytokine analysis (Figure 6H), and biochemistry (Figure 6I). The comprehensive data demonstrate systemic inflammation and organ dysfunction beyond skin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Homozygous CARD14E138A expression causes severe systemic illness with striking similarities to GPP exacerbations in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by the constellation of findings including widespread skin inflammation, hypothermia (mouse equivalent of fever), cheilitis-like lip lesions, multi-organ myeloid infiltration, and organ dysfunction. The phenotype closely resembles human GPP flares.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Card14 is expressed in intestinal epithelial cells with increasing expression from proximal to distal colon, and CARD14E138A induces colonic myeloid cell infiltration and inflammatory gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 are supported by RNAscope (Figure 6\u2014figure supplement 2B-D) and flow cytometry/qRT-PCR (Figure 6\u2014figure supplement 2E-F). This establishes gut expression and inflammatory potential of CARD14E138A in intestinal epithelium.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Gut-specific CARD14E138A expression in VillinCreERT2 mice induces local inflammatory gene expression but does not cause skin disease, organ dysfunction, or histological gut damage, indicating gut CARD14E138A signaling alone is insufficient for systemic disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 are supported by experiments with VillinCreERT2 mice (Figure 7A, Figure 6\u2014figure supplement 2G-I) showing local gut inflammation without systemic effects. This demonstrates tissue-specific requirements for disease manifestation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Keratinocyte-specific CARD14E138A expression in Krt14CreERT2 mice induces severe systemic disease comparable to ubiquitous expression, including weight loss, hypothermia, lung myeloid infiltration, and organ dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are supported by experiments with Krt14CreERT2 mice (Figure 7A-C) showing systemic disease despite keratinocyte-restricted expression. This definitively establishes keratinocyte-intrinsic CARD14E138A signaling as sufficient for systemic inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Systemic disease in homozygous mice is independent of the adaptive immune system, as Rag1-/- mice develop comparable weight loss, hypothermia, and lung myeloid infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by experiments in Rag1-/- mice (Figure 7A-C) showing no amelioration of systemic disease. This extends the adaptive immune independence to severe systemic manifestations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Anti-TNF treatment significantly reduces weight loss, completely prevents hypothermia, reduces myeloid cell infiltration in organs, and decreases expression of neutrophil chemoattractants (Ccl20, Cxcl2, Cxcl3) and S100a9 in homozygous mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 are supported by antibody blocking experiments (Figure 8A-D) showing substantial but incomplete protection from systemic disease. The data identify TNF as a key mediator of systemic inflammation and organ infiltration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Anti-GR1 treatment (depleting neutrophils/monocytes) significantly reduces weight loss, completely prevents hypothermia, reduces organ myeloid infiltration, and normalizes serum markers of organ dysfunction in homozygous mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are supported by anti-GR1 experiments (Figure 8A-C, 8E) showing protection comparable to or exceeding anti-TNF for some parameters. This demonstrates the critical role of myeloid cells in mediating organ dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "CARD14E138A signaling in keratinocytes induces systemic TNF release, which promotes myeloid cell recruitment to organs via chemokine expression, leading to organ dysfunction and severe disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 represent the authors' mechanistic model supported by the collective data from antibody blocking experiments. The model is well-supported by the data showing keratinocyte-intrinsic signaling, TNF production, chemokine expression, myeloid infiltration, and therapeutic effects of blocking TNF or myeloid cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "CARD14 mutations cause plaque psoriasis and GPP in humans, and the effects of CARD14E138A signaling are dose-dependent in mice, with heterozygous expression causing psoriasis-like skin inflammation and homozygous expression causing severe systemic disease, both driven by keratinocyte signaling and dependent on TNF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C149 summarize the main findings of the study. C144-C145 are established background knowledge. C146-C149 are well-supported by the comprehensive experimental data throughout the manuscript demonstrating dose-dependent effects, keratinocyte-intrinsic mechanisms, and TNF dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Previous constitutive CARD14 mutation mouse models develop psoriasiform inflammation partially dependent on IL-17A/IL-23, but their constitutive nature limits study of pathogenesis and the CARD14E138A mutation causes embryonic/perinatal lethality. The inducible model allows study of direct effects without developmental confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C155 accurately summarize prior work and its limitations, and correctly identify advantages of the inducible model. These are supported by citations and logical reasoning about experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The study demonstrates that conditional CARD14E138A expression in adult mice rapidly induces psoriasiform skin inflammation (heterozygous) or severe systemic disease (homozygous), both independent of adaptive immunity, driven by keratinocyte signaling, resembling GPP, and ameliorated by anti-TNF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159 accurately summarize the major findings of the study, which are comprehensively supported by the experimental data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "The findings suggest that blocking CARD14 signaling in keratinocytes could inhibit systemic inflammation in GPP patients, and that keratinocyte-targeted therapies might be effective for early GPP treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C161 are speculative therapeutic implications based on the study findings. While the data support keratinocyte-intrinsic mechanisms and TNF dependence, these are extrapolations to human therapy that require clinical validation. The suggestions are reasonable but remain hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C162",
+      "C163"
+    ],
+    "result": "The homozygous CARD14E138A mice are the first to mimic GPP phenotypes and may be useful for studying GPP etiopathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C162 is supported by the comprehensive phenotypic characterization showing GPP-like features not previously reported in mouse models. Claim C163 is speculative about future utility but reasonable given the model's characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C164",
+      "C165"
+    ],
+    "result": "Current GPP treatments include granulocyte/monocyte apheresis and anti-TNF, suggesting the mouse model could be used for preclinical testing of GPP therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C164 is supported by citations to clinical literature. Claim C165 is a reasonable inference given the model's similarity to human GPP and response to anti-TNF, though actual utility for drug testing remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "Constitutive CARD14E138A activation of NF-\u03baB in keratinocytes is sufficient for skin inflammation and systemic disease, raising the possibility of developing topical CARD14-blocking medicines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C166 is well-supported by the keratinocyte-specific experiments and pathway analysis. Claim C167 is speculative about therapeutic development but represents a reasonable inference from the findings.",
+    "result_type": "MAJOR"
+  }
+]
